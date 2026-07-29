@@ -1,49 +1,223 @@
-// Module ID: 4491
-// Function ID: 39408
+// Module ID: 4514
+// Function ID: 4515
 // Name: _createStripeSetupIntent
-// Dependencies: [5, 653, 507, 2]
+// Dependencies: [5, 676, 530, 2]
 // Exports: createSetupIntentForPaymentElements, createStripeSetupIntent
 
-// Module 4491 (_createStripeSetupIntent)
+// Module 4514 (_createStripeSetupIntent)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
 const require = arg1;
-async function _createStripeSetupIntent() {
-  let iter = (function*(sendMessageOptionsForReply) {
-    let obj = sendMessageOptionsForReply;
-    if (obj === undefined) {
-      obj = {};
-    }
-    yield undefined;
-    const HTTP = outer2_0(outer2_1[2]).HTTP;
-    obj = { url: outer2_3.BILLING_STRIPE_SETUP_INTENT_SECRET, oldFormErrors: true, rejectWithError: true };
-    const merged = Object.assign(obj);
-    return yield HTTP.post(obj).body;
-  })();
-  iter.next();
-  return iter;
+function _createStripeSetupIntent() {
+  const self = this;
+  const tmp = callback(() => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    const iter = (function*(arg0, body) {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === constants) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              let asyncGeneratorStep = tmp5;
+              const table = tmp2;
+              let obj1;
+              if (obj1 === undefined) {
+                obj1 = {};
+              }
+              constants = 1;
+              c4 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj2 = { value: null, done: true };
+              obj2[0] = body;
+              return obj2;
+            } else {
+              const HTTP = obj1(table[2]).HTTP;
+              const obj3 = { url: null, oldFormErrors: true, rejectWithError: true };
+              obj3[0] = constants.BILLING_STRIPE_SETUP_INTENT_SECRET;
+              const merged = Object.assign(obj1);
+              constants = 2;
+              c4 = 1;
+              const obj4 = { value: null, done: false };
+              obj4[0] = HTTP.post(obj3);
+              return obj4;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw body;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj5 = { value: null, done: true };
+            obj5[0] = body;
+            return obj5;
+          } else {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = body.body;
+            return obj;
+          }
+        } catch (tmp14) {
+          c4 = tmp;
+          throw tmp14;
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _createStripeSetupIntent = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-async function _createSetupIntentForPaymentElements() {
-  let iter = (function*(sendMessageOptionsForReply) {
-    let obj = sendMessageOptionsForReply;
-    if (obj === undefined) {
-      obj = {};
-    }
-    yield undefined;
-    const HTTP = outer2_0(outer2_1[2]).HTTP;
-    obj = { url: outer2_3.BILLING_STRIPE_SETUP_INTENT_SECRET_FOR_PAYMENT_ELEMENTS, oldFormErrors: true, rejectWithError: true, failImmediatelyWhenRateLimited: true };
-    const merged = Object.assign(obj);
-    return yield HTTP.post(obj).body;
-  })();
-  iter.next();
-  return iter;
+function _createSetupIntentForPaymentElements() {
+  const self = this;
+  const tmp = callback(() => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    const iter = (function*(arg0, body) {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === constants) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              let asyncGeneratorStep = tmp5;
+              const table = tmp2;
+              let obj1;
+              if (obj1 === undefined) {
+                obj1 = {};
+              }
+              constants = 1;
+              c4 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj2 = { value: null, done: true };
+              obj2[0] = body;
+              return obj2;
+            } else {
+              const HTTP = obj1(table[2]).HTTP;
+              const obj3 = { url: null, oldFormErrors: true, rejectWithError: true, failImmediatelyWhenRateLimited: true };
+              obj3[0] = constants.BILLING_STRIPE_SETUP_INTENT_SECRET_FOR_PAYMENT_ELEMENTS;
+              const merged = Object.assign(obj1);
+              constants = 2;
+              c4 = 1;
+              const obj4 = { value: null, done: false };
+              obj4[0] = HTTP.post(obj3);
+              return obj4;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw body;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj5 = { value: null, done: true };
+            obj5[0] = body;
+            return obj5;
+          } else {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = body.body;
+            return obj;
+          }
+        } catch (tmp14) {
+          c4 = tmp;
+          throw tmp14;
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _createSetupIntentForPaymentElements = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/billing/actions/StripeActionCreators.tsx");
+const result = require("sendRequest").fileFinishedImporting("modules/billing/actions/StripeActionCreators.tsx");
 
 export const createStripeSetupIntent = function createStripeSetupIntent() {
-  return _createStripeSetupIntent(...arguments);
+  const self = this;
+  const apply = _createStripeSetupIntent.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const createSetupIntentForPaymentElements = function createSetupIntentForPaymentElements() {
-  return _createSetupIntentForPaymentElements(...arguments);
+  const self = this;
+  const apply = _createSetupIntentForPaymentElements.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

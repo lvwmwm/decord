@@ -1,42 +1,42 @@
-// Module ID: 11998
-// Function ID: 92608
+// Module ID: 12022
+// Function ID: 12023
 // Name: n
-// Dependencies: [4577, 2]
+// Dependencies: [4599, 2]
 // Exports: TYPING_ENTERING, TYPING_EXITING
 
-// Module 11998 (n)
+// Module 12022 (n)
 let obj = { damping: 35, stiffness: 275, mass: 1, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
 const fn = function n() {
-  let obj = { initialValues: { transform: items, opacity: 0 } };
+  let obj = { initialValues: { transform: items, opacity: 0 }, animations: null };
   items = [{ scale: 0 }];
-  obj = {};
-  obj = {};
-  obj.scale = require(4577) /* withSpring */.withSpring(1, obj);
+  obj = { transform: null, opacity: null };
+  obj = { scale: null };
+  obj[0] = require(4599) /* CONFIG_NEVER_ANIMATE */.withSpring(1, obj);
   const items1 = [obj];
-  obj.transform = items1;
-  const obj4 = require(4577) /* withSpring */;
-  obj.opacity = require(4577) /* withSpring */.withSpring(1, obj);
-  obj.animations = obj;
+  obj[0] = items1;
+  const obj4 = require(4599) /* CONFIG_NEVER_ANIMATE */;
+  obj[1] = require(4599) /* CONFIG_NEVER_ANIMATE */.withSpring(1, obj);
+  obj[1] = obj;
   return obj;
 };
-obj = { withSpring: require("withSpring").withSpring, CHANNEL_SPRING_CONFIG: obj };
+obj = { withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, CHANNEL_SPRING_CONFIG: obj };
 fn.__closure = obj;
 fn.__workletHash = 5885186288311;
 fn.__initData = { code: "function ChannelAnimationConstantsTsx1(){const{withSpring,CHANNEL_SPRING_CONFIG}=this.__closure;return{initialValues:{transform:[{scale:0}],opacity:0},animations:{transform:[{scale:withSpring(1,CHANNEL_SPRING_CONFIG)}],opacity:withSpring(1,CHANNEL_SPRING_CONFIG)}};}" };
 const fn2 = function t() {
-  let obj = { initialValues: { transform: items, opacity: 1 } };
+  let obj = { initialValues: { transform: items, opacity: 1 }, animations: null };
   items = [{ scale: 1 }];
-  obj = {};
-  obj = {};
-  obj.scale = require(4577) /* withSpring */.withSpring(0, obj);
+  obj = { transform: null, opacity: null };
+  obj = { scale: null };
+  obj[0] = require(4599) /* CONFIG_NEVER_ANIMATE */.withSpring(0, obj);
   const items1 = [obj];
-  obj.transform = items1;
-  const obj4 = require(4577) /* withSpring */;
-  obj.opacity = require(4577) /* withSpring */.withSpring(0, obj);
-  obj.animations = obj;
+  obj[0] = items1;
+  const obj4 = require(4599) /* CONFIG_NEVER_ANIMATE */;
+  obj[1] = require(4599) /* CONFIG_NEVER_ANIMATE */.withSpring(0, obj);
+  obj[1] = obj;
   return obj;
 };
-obj = { withSpring: require("withSpring").withSpring, CHANNEL_SPRING_CONFIG: obj };
+obj = { withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, CHANNEL_SPRING_CONFIG: obj };
 fn2.__closure = obj;
 fn2.__workletHash = 1746051409364;
 fn2.__initData = { code: "function ChannelAnimationConstantsTsx2(){const{withSpring,CHANNEL_SPRING_CONFIG}=this.__closure;return{initialValues:{transform:[{scale:1}],opacity:1},animations:{transform:[{scale:withSpring(0,CHANNEL_SPRING_CONFIG)}],opacity:withSpring(0,CHANNEL_SPRING_CONFIG)}};}" };

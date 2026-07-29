@@ -1,46 +1,176 @@
-// Module ID: 10982
-// Function ID: 85148
+// Module ID: 11006
+// Function ID: 11007
 // Name: _sendGiftIntentGif
-// Dependencies: [57, 5, 31, 27, 1348, 653, 4158, 33, 4165, 689, 5695, 5948, 675, 5517, 5193, 566, 7621, 1212, 10983, 9571, 4578, 4372, 5485, 5121, 5552, 2]
+// Dependencies: [32, 5, 19, 17, 1372, 676, 4182, 21, 4189, 712, 5713, 5967, 698, 5535, 5215, 589, 7644, 1236, 11007, 9595, 4600, 4395, 5503, 5143, 5570, 2]
 // Exports: default
 
-// Module 10982 (_sendGiftIntentGif)
+// Module 11006 (_sendGiftIntentGif)
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import module_9595 from "module_9595";
+import { View } from "getSystemLocale";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { AnalyticEvents } from "ME";
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "module_4395";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let unpackModuleId;
 const require = arg1;
 function _sendGiftIntentGif() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    const iter = (function*(arg0) {
+      let c0;
+      let c1;
+      let c2;
+      let c3;
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === url) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              c2 = tmp5;
+              let callback = tmp2;
+              let user;
+              callback = undefined;
+              c2 = undefined;
+              url = undefined;
+              ({ channel: c0, giftIntentType: c1, text: c2, gif: c3 } = user);
+              c4 = undefined;
+              url = 1;
+              c4 = 1;
+              return { value: "ct", done: null };
+            }
+          } else {
+            if (1 === tmp5) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                const obj1 = { value: null, done: true };
+                obj1[0] = arg1;
+                return obj1;
+              } else {
+                c4 = c2.trim().length > 0;
+                if (c4) {
+                  let obj6 = callback(c2[10]);
+                  const id2 = user.id;
+                  let obj7 = callback(c2[11]);
+                  let obj2 = { location: null };
+                  obj2[0] = constants2.GIFTING;
+                  url = 2;
+                  c4 = 1;
+                  let obj3 = { value: null, done: false };
+                  obj3[0] = obj6.sendMessage(id2, obj7.parse(user, c2), true, obj2);
+                  return obj3;
+                }
+              }
+            } else if (2 === tmp5) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                const obj4 = { value: null, done: true };
+                obj4[0] = arg1;
+                return obj4;
+              }
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const obj5 = { gift_intent_type: null, is_custom_message: null, location_stack: null };
+              obj5[0] = callback;
+              obj5[1] = c4;
+              const items = [callback(c2[13]).PREMIUM_GIFT_INTENT_CARD];
+              obj5[2] = items;
+              callback(c2[12]).track(constants.GIFT_INTENT_MESSAGE_SENT, obj5);
+              c4 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+            obj2 = callback(c2[10]);
+            const id = user.id;
+            obj3 = callback(c2[11]);
+            obj6 = { location: null };
+            obj6[0] = constants2.GIFTING;
+            url = 3;
+            c4 = 1;
+            obj7 = { value: null, done: false };
+            obj7[0] = obj2.sendMessage(id, obj3.parse(user, url.url), true, obj6);
+            return obj7;
+          }
+        } catch (tmp33) {
+          c4 = tmp;
+          throw tmp33;
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _sendGiftIntentGif = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function GiftIntentGifModalBody(channelId) {
   channelId = channelId.channelId;
   const giftIntentType = channelId.giftIntentType;
   const onClose = channelId.onClose;
-  let tmp = _createForOfIteratorHelperLoose();
+  let stateFromStores;
+  let ref;
+  let first;
+  let closure_6;
+  const tmp = createCacheKey();
   let obj = channelId(onClose[15]);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getChannel(channelId));
-  const ref = first.useRef(null);
-  const tmp4 = stateFromStores(first.useState(null), 2);
-  first = tmp4[0];
-  let closure_6 = tmp4[1];
+  const items = [ensureGuildLoaded];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_7.getChannel(channelId));
+  ref = first.useRef(null);
+  const tmp7 = stateFromStores(first.useState(null), 2);
+  first = tmp7[0];
+  closure_6 = tmp7[1];
   const items1 = [stateFromStores, giftIntentType, first, onClose];
   const callback = first.useCallback((arg0) => {
     let closure_0 = arg0;
     callback((src) => {
       src = undefined;
-      if (null != src) {
+      if (src != null) {
         src = src.src;
       }
       let tmp2 = null;
@@ -50,140 +180,139 @@ function GiftIntentGifModalBody(channelId) {
       return tmp2;
     });
   }, []);
-  obj = { style: items2 };
+  obj = { style: items2, children: null };
   items2 = [tmp.container, { paddingBottom: giftIntentType(onClose[14])().insets.bottom }];
-  obj = { style: tmp.messageContainer };
+  obj = { style: tmp.messageContainer, children: null };
   const callback1 = first.useCallback(() => {
-    let tmp = null != stateFromStores;
-    if (tmp) {
-      tmp = null != first;
+    let tmp2 = null != stateFromStores;
+    if (tmp2) {
+      tmp2 = null != first;
     }
-    if (tmp) {
-      tmp = 0 !== first.url.length;
+    if (tmp2) {
+      tmp2 = 0 !== first.url.length;
     }
-    if (tmp) {
-      const obj = { channel: stateFromStores, giftIntentType };
+    if (tmp2) {
+      const obj = { channel: null, giftIntentType: null, text: null, gif: null };
+      obj[0] = stateFromStores;
+      obj[1] = giftIntentType;
       const current = ref.current;
-      let text;
-      if (null != current) {
-        text = current.getText();
+      let str;
+      if (current != null) {
+        str = current.getText();
       }
-      let str = "";
-      if (null != text) {
-        str = text;
+      if (str == null) {
+        str = "";
       }
-      obj.text = str;
-      obj.gif = first;
+      obj[2] = str;
+      obj[3] = first;
       !(function sendGiftIntentGif(arg0) {
-        return outer2_14(...arguments);
+        const self = this;
+        const apply = closure_13.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
       })(obj);
       onClose();
     }
   }, items1);
-  const obj1 = { ref };
+  const obj1 = { ref, accessibilityLabel: null, placeholder: null };
   const intl = channelId(onClose[17]).intl;
-  obj1.accessibilityLabel = intl.string(channelId(onClose[17]).t.ZV02cV);
+  obj1[1] = intl.string(channelId(onClose[17]).t.ZV02cV);
   let obj4 = channelId(onClose[18]);
-  obj1.placeholder = obj4.getGiftIntentCustomMessagePlaceholder();
-  obj.children = callback2(channelId(onClose[16]).TextArea, obj1);
+  obj1[2] = obj4.getGiftIntentCustomMessagePlaceholder();
+  obj[1] = callback2(channelId(onClose[16]).TextArea, obj1);
   const items3 = [callback2(closure_6, obj), , ];
-  const obj2 = { style: tmp.pickerContainer };
-  const obj3 = { bottomSheetRef: first.useRef(null), channelId };
+  const obj2 = { style: tmp.pickerContainer, children: null };
+  const obj3 = { bottomSheetRef: first.useRef(null), channelId, guildId: null, initialQuery: null, inActionSheet: false, contentHorizontalPadding: null, selectedGifSrc: null, keyboardDismissMode: "on-drag", onPressGIF: null };
   let guild_id;
   const ref1 = first.useRef(null);
-  const tmp10 = closure_6;
-  const tmp11 = callback2;
-  const tmp12 = closure_6;
-  const tmp13 = callback2;
-  const tmp9 = callback3;
-  if (null != stateFromStores) {
+  let tmp2 = giftIntentType;
+  if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
-  let tmp16;
-  if (null != guild_id) {
-    tmp16 = guild_id;
-  }
-  obj3.guildId = tmp16;
-  const intl2 = channelId(onClose[17]).intl;
-  obj3.initialQuery = intl2.string(channelId(onClose[17]).t.jrtJi4);
-  obj3.inActionSheet = false;
-  obj3.contentHorizontalPadding = giftIntentType(onClose[9]).space.PX_16;
+  obj3[2] = guild_id;
+  const intl2 = tmp4(tmp3[17]).intl;
+  obj3[3] = intl2.string(channelId(onClose[17]).t.jrtJi4);
+  obj3[5] = tmp2(onClose[9]).space.PX_16;
   let src;
-  if (null != first) {
+  if (first != null) {
     src = first.src;
   }
-  obj3.selectedGifSrc = src;
-  obj3.keyboardDismissMode = "on-drag";
-  obj3.onPressGIF = callback;
-  obj2.children = tmp13(giftIntentType(onClose[19]), obj3);
-  items3[1] = tmp11(tmp12, obj2);
-  obj4 = { style: tmp.footer };
-  const obj5 = { grow: true, variant: "primary" };
-  const intl3 = channelId(onClose[17]).intl;
-  obj5.text = intl3.string(channelId(onClose[17]).t.TXNS7S);
-  obj5.onPress = callback1;
-  obj5.disabled = null == first;
+  obj3[6] = src;
+  obj3[8] = callback;
+  obj2[1] = callback2(giftIntentType(onClose[19]), obj3);
+  items3[1] = callback2(closure_6, obj2);
+  obj4 = { style: tmp.footer, children: null };
+  const obj5 = { grow: true, variant: "primary", text: null, onPress: null, disabled: null };
+  const intl3 = tmp4(tmp3[17]).intl;
+  obj5[2] = intl3.string(channelId(onClose[17]).t.TXNS7S);
+  obj5[3] = callback1;
+  obj5[4] = null == first;
   const items4 = [callback2(channelId(onClose[20]).Button, obj5), ];
-  const obj6 = { grow: true, variant: "secondary" };
-  const intl4 = channelId(onClose[17]).intl;
-  obj6.text = intl4.string(channelId(onClose[17]).t["ETE/oC"]);
-  obj6.onPress = onClose;
+  const obj6 = { grow: true, variant: "secondary", text: null, onPress: null };
+  const intl4 = tmp4(tmp3[17]).intl;
+  obj6[2] = intl4.string(channelId(onClose[17]).t["ETE/oC"]);
+  obj6[3] = onClose;
   items4[1] = callback2(channelId(onClose[20]).Button, obj6);
-  obj4.children = items4;
-  items3[2] = callback3(closure_6, obj4);
-  obj.children = items3;
-  return tmp9(tmp10, obj);
+  obj4[1] = items4;
+  items3[2] = closure_11(closure_6, obj4);
+  obj[1] = items3;
+  return closure_11(closure_6, obj);
 }
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.messageContainer = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.pickerContainer = { flex: 1 };
-let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.footer = { gap: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let closure_13 = { GIFT_INTENT_GIF: "GIFT_INTENT_GIF" };
-let obj2 = { gap: require("_createForOfIteratorHelperLoose").space.PX_8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-const result = require("result").fileFinishedImporting("modules/premium/gifting/native/GiftIntentGifModal.tsx");
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { container: null, messageContainer: null, pickerContainer: null, footer: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_8 };
+createCacheKey[2] = { flex: 1 };
+let obj1 = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_8 };
+createCacheKey[3] = { gap: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_15 = { GIFT_INTENT_GIF: "GIFT_INTENT_GIF" };
+let obj2 = { gap: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_8 };
+const result = require("noop").fileFinishedImporting("modules/premium/gifting/native/GiftIntentGifModal.tsx");
 
 export default function GiftIntentGifModal(arg0) {
   let importDefault;
   let onDismiss;
   let require;
   ({ channelId: require, giftIntentType: importDefault, onDismiss } = arg0);
+  let _slicedToArray;
   const items = [onDismiss];
-  let _slicedToArray = React.useCallback(() => {
+  _slicedToArray = React.useCallback(() => {
     let arr = outer1_1(onDismiss[21]);
     arr = arr.pop();
-    if (null != onDismiss) {
+    if (onDismiss != null) {
       onDismiss();
     }
   }, items);
   const tmp = importDefault(onDismiss[22])(() => {
     let obj = {};
-    obj = {};
+    obj = { title: null, headerLeft: null, render: null };
     const intl = outer1_0(onDismiss[17]).intl;
-    obj.title = intl.string(outer1_0(onDismiss[17]).t.PQRuGc);
-    obj.headerLeft = outer1_0(onDismiss[23]).getHeaderCloseButton(_slicedToArray);
-    obj.render = function render() {
-      return outer2_10(outer2_15, { channelId: outer1_0, giftIntentType: outer1_1, onClose: outer1_3 });
+    obj[0] = intl.string(outer1_0(onDismiss[17]).t.PQRuGc);
+    obj[1] = outer1_0(onDismiss[23]).getHeaderCloseButton(_slicedToArray);
+    obj[2] = function render() {
+      return outer1_10(outer1_14, { channelId: closure_0, giftIntentType: closure_1, onClose: _slicedToArray });
     };
-    obj[outer1_13.GIFT_INTENT_GIF] = obj;
+    obj[outer1_15.GIFT_INTENT_GIF] = obj;
     return obj;
   });
   return callback2(require(onDismiss[24]).Navigator, {
     initialRouteName: constants.GIFT_INTENT_GIF,
     screens: importDefault(onDismiss[22])(() => {
       let obj = {};
-      obj = {};
+      obj = { title: null, headerLeft: null, render: null };
       const intl = outer1_0(onDismiss[17]).intl;
-      obj.title = intl.string(outer1_0(onDismiss[17]).t.PQRuGc);
-      obj.headerLeft = outer1_0(onDismiss[23]).getHeaderCloseButton(_slicedToArray);
-      obj.render = function render() {
-        return outer2_10(outer2_15, { channelId: outer1_0, giftIntentType: outer1_1, onClose: outer1_3 });
+      obj[0] = intl.string(outer1_0(onDismiss[17]).t.PQRuGc);
+      obj[1] = outer1_0(onDismiss[23]).getHeaderCloseButton(_slicedToArray);
+      obj[2] = function render() {
+        return outer1_10(outer1_14, { channelId: closure_0, giftIntentType: closure_1, onClose: _slicedToArray });
       };
-      obj[outer1_13.GIFT_INTENT_GIF] = obj;
+      obj[outer1_15.GIFT_INTENT_GIF] = obj;
       return obj;
     })
   });

@@ -1,91 +1,91 @@
-// Module ID: 11388
-// Function ID: 88302
+// Module ID: 11412
+// Function ID: 11413
 // Name: PortalKeyboardPlaceholderInner
-// Dependencies: [31, 27, 33, 4165, 477, 689, 1555, 1557, 6540, 1450, 5196, 8800, 4031, 1823, 2]
+// Dependencies: [19, 17, 21, 4189, 500, 712, 1579, 1581, 6561, 1474, 5218, 8824, 4055, 1847, 2]
 
-// Module 11388 (PortalKeyboardPlaceholderInner)
-import "result";
+// Module 11412 (PortalKeyboardPlaceholderInner)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
 function PortalKeyboardPlaceholderInner(keyboardType) {
-  const rect = importDefault(1557)();
-  const tmp = importDefault(6540)();
-  const tmp2 = importDefault(1450)();
-  let obj = require(8800) /* useGradientBottom */;
-  obj = {};
-  const items = [callback(keyboardType.keyboardType, importDefault(1450)().width - rect.left - rect.right, importDefault(5196)(), tmp).container, obj.useGradientBottom()];
-  obj.style = items;
-  return <closure_3 />;
+  const rect = importDefault(1581)();
+  const tmp = importDefault(6561)();
+  const tmp2 = importDefault(1474)();
+  let obj = require(8824) /* useGradientBottom */;
+  obj = { style: null };
+  const items = [callback(keyboardType.keyboardType, importDefault(1474)().width - rect.left - rect.right, importDefault(5218)(), tmp).container, obj.useGradientBottom()];
+  obj[0] = items;
+  return <closure_3 style={null} />;
 }
-({ View: closure_3, StyleSheet: closure_4 } = get_ActivityIndicator);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1, arg2, arg3) => {
-  let obj = {};
-  obj = {};
+({ View: c3, StyleSheet: c4 } = get_ActivityIndicator);
+let closure_6 = createCacheKey.createStyles((arg0, arg1, arg2, arg3) => {
+  let container = require(500) /* set */;
   let absoluteFillObject = null;
-  if (obj3.isIOS()) {
+  if (container.isIOS()) {
     absoluteFillObject = closure_4.absoluteFillObject;
   }
+  container = {};
   const merged = Object.assign(absoluteFillObject);
-  obj["borderTopWidth"] = closure_4.hairlineWidth;
-  obj["borderTopColor"] = importDefault(689).colors.BORDER_SUBTLE;
+  container.borderTopWidth = closure_4.hairlineWidth;
+  container.borderTopColor = importDefault(712).colors.BORDER_SUBTLE;
   let BORDER_SUBTLE;
   if (arg3) {
-    BORDER_SUBTLE = importDefault(689).colors.BORDER_SUBTLE;
+    BORDER_SUBTLE = tmp7(712).colors.BORDER_SUBTLE;
   }
-  obj["borderRightColor"] = BORDER_SUBTLE;
+  container.borderRightColor = BORDER_SUBTLE;
   let hairlineWidth;
   if (arg3) {
-    hairlineWidth = closure_4.hairlineWidth;
+    hairlineWidth = tmp6.hairlineWidth;
   }
-  obj["borderRightWidth"] = hairlineWidth;
+  container.borderRightWidth = hairlineWidth;
   let BORDER_SUBTLE1;
   if (arg3) {
-    BORDER_SUBTLE1 = importDefault(689).colors.BORDER_SUBTLE;
+    BORDER_SUBTLE1 = tmp7(712).colors.BORDER_SUBTLE;
   }
-  obj["borderLeftColor"] = BORDER_SUBTLE1;
+  container.borderLeftColor = BORDER_SUBTLE1;
   let hairlineWidth1;
   if (arg3) {
-    hairlineWidth1 = closure_4.hairlineWidth;
+    hairlineWidth1 = tmp6.hairlineWidth;
   }
-  obj["borderLeftWidth"] = hairlineWidth1;
-  const APP_LAUNCHER = require(1555) /* KeyboardTypes */.KeyboardTypes.APP_LAUNCHER;
-  obj["backgroundColor"] = importDefault(689).colors.BACKGROUND_BASE_LOW;
-  obj3 = require(477) /* set */;
-  if (obj4.isIOS()) {
-    const tmp16 = arg1;
+  container.borderLeftWidth = hairlineWidth1;
+  const APP_LAUNCHER = tmp(1579).KeyboardTypes.APP_LAUNCHER;
+  container.backgroundColor = importDefault(712).colors.BACKGROUND_BASE_LOW;
+  let tmpResult = tmp(500);
+  if (tmpResult.isIOS()) {
+    const tmp12 = arg1;
   }
-  obj["width"] = tmp16;
-  obj4 = require(477) /* set */;
-  if (obj5.isIOS()) {
-    const tmp19 = arg2;
+  container.width = tmp12;
+  tmpResult = tmp(500);
+  if (tmpResult.isIOS()) {
+    const tmp13 = arg2;
   }
-  obj["height"] = tmp19;
-  obj.container = obj;
-  return obj;
+  container.height = tmp13;
+  return { container };
 });
 const jsxResult = jsx(function PortalKeyboardPlaceholder() {
-  const tmp = importDefault(4031)();
-  let isAndroidResult = importDefault(1823)() > 0;
+  const tmp2 = importDefault(4055)();
+  let isAndroidResult = importDefault(1847)() > 0;
   if (isAndroidResult) {
-    let obj = require(477) /* set */;
+    let obj = require(500) /* set */;
     isAndroidResult = obj.isAndroid();
   }
-  if (tmp !== require(1555) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
-    let tmp7 = null;
+  if (tmp2 !== require(1579) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
+    let tmp6 = null;
     if (!isAndroidResult) {
-      obj = { keyboardType: tmp };
-      tmp7 = <PortalKeyboardPlaceholderInner keyboardType={tmp} />;
+      obj = { keyboardType: null };
+      obj[0] = tmp2;
+      tmp6 = <PortalKeyboardPlaceholderInner keyboardType={null} />;
     }
   } else {
-    tmp7 = null;
-    const obj2 = require(477) /* set */;
+    tmp6 = null;
+    const tmp5Result = require(500) /* set */;
   }
-  return tmp7;
+  return tmp6;
 }, {});
 const result = require("jsxProd").fileFinishedImporting("modules/keyboard/native/PortalKeyboardPlaceholder.tsx");
 

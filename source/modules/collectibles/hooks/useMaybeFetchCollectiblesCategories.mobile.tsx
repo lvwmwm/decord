@@ -1,11 +1,11 @@
-// Module ID: 7934
-// Function ID: 63042
+// Module ID: 7959
+// Function ID: 7960
 // Name: useMaybeFetchCollectiblesCategories
-// Dependencies: [4164, 566, 7935, 2]
+// Dependencies: [4188, 589, 7960, 2]
 // Exports: default
 
-// Module 7934 (useMaybeFetchCollectiblesCategories)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 7959 (useMaybeFetchCollectiblesCategories)
+import getUserAgnosticState from "getUserAgnosticState";
 
 const require = arg1;
 const result = require("useMaybeFetchCollectiblesCategoriesShared").fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchCollectiblesCategories.mobile.tsx");
@@ -14,27 +14,27 @@ export default function useMaybeFetchCollectiblesCategories(paymentGateway) {
   let includeUnpublished;
   let noCache;
   paymentGateway = undefined;
-  if (null != paymentGateway) {
+  if (paymentGateway != null) {
     paymentGateway = paymentGateway.paymentGateway;
   }
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ noCache: outer1_2.get("shop_disable_cache"), includeUnpublished: outer1_2.get("shop_include_unpublished") }));
+  let obj = require(589) /* initialize */;
+  const items = [getUserAgnosticState];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ noCache: store.get("shop_disable_cache"), includeUnpublished: store.get("shop_include_unpublished") }));
   ({ noCache, includeUnpublished } = stateFromStoresObject);
-  obj = { noCache, includeUnpublished, paymentGateway };
+  obj = { noCache, includeUnpublished, paymentGateway, countryCode: null, logPerf: null };
   let countryCode;
-  if (null != paymentGateway) {
+  if (paymentGateway != null) {
     countryCode = paymentGateway.countryCode;
   }
-  obj.countryCode = countryCode;
+  obj[3] = countryCode;
   let logPerf;
-  if (null != paymentGateway) {
+  if (paymentGateway != null) {
     logPerf = paymentGateway.logPerf;
   }
-  obj.logPerf = logPerf;
+  obj[4] = logPerf;
   let noOp;
-  if (null != paymentGateway) {
+  if (paymentGateway != null) {
     noOp = paymentGateway.noOp;
   }
-  return require(7935) /* useMaybeFetchCollectiblesCategoriesShared */.useMaybeFetchCollectiblesCategoriesShared(obj, noOp, arg1);
+  return require(7960) /* useMaybeFetchCollectiblesCategoriesShared */.useMaybeFetchCollectiblesCategoriesShared(obj, noOp, arg1);
 };

@@ -1,52 +1,51 @@
-// Module ID: 8890
-// Function ID: 70205
-// Name: isEmpty
-// Dependencies: [1194, 4237, 4251, 566, 2]
+// Module ID: 8914
+// Function ID: 8915
+// Name: useIsStreamRTCConnectionEmpty
+// Dependencies: [1218, 4261, 4275, 589, 2]
 // Exports: useIsCallRTCConnectionEmpty, useIsStreamRTCConnectionEmpty
 
-// Module 8890 (isEmpty)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 8914 (useIsStreamRTCConnectionEmpty)
+import fetchFingerprint from "fetchFingerprint";
+import createRTCConnection from "createRTCConnection";
+import initialize from "initialize";
 
 const require = arg1;
-function isEmpty(size) {
-  let tmp = 0 === size.size;
-  if (!tmp) {
-    let hasItem = 1 === size.size;
-    if (hasItem) {
-      hasItem = size.has(arg1);
-    }
-    tmp = hasItem;
-  }
-  return tmp;
-}
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/rtc/hooks/useIsEmptyRTCConnection.tsx");
+const result = require("initialize").fileFinishedImporting("modules/rtc/hooks/useIsEmptyRTCConnection.tsx");
 
 export const useIsStreamRTCConnectionEmpty = function useIsStreamRTCConnectionEmpty(stateFromStores4) {
   const _require = stateFromStores4;
-  const items = [closure_4, _isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [initialize, fetchFingerprint];
+  return _require(589).useStateFromStores(items, () => {
     if (null == closure_0) {
       return true;
     } else {
-      const userIds = outer1_4.getUserIds(closure_0);
-      let tmp4 = null == userIds;
-      if (!tmp4) {
-        tmp4 = outer1_5(userIds, outer1_2.getId());
+      const userIds = outer1_4.getUserIds(tmp);
+      let tmp3 = null == userIds;
+      if (!tmp3) {
+        let tmp6 = 0 === userIds.size;
+        if (!tmp6) {
+          tmp6 = 1 === userIds.size && userIds.has(tmp5);
+          const tmp7 = 1 === userIds.size && userIds.has(tmp5);
+        }
+        tmp3 = tmp6;
       }
-      return tmp4;
+      return tmp3;
     }
   });
 };
 export const useIsCallRTCConnectionEmpty = function useIsCallRTCConnectionEmpty() {
-  const items = [closure_3, _isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => {
-    const userIds = outer1_3.getUserIds();
-    let tmp2 = null == userIds;
-    if (!tmp2) {
-      tmp2 = outer1_5(userIds, outer1_2.getId());
+  const items = [createRTCConnection, fetchFingerprint];
+  return require(589) /* initialize */.useStateFromStores(items, () => {
+    userIds = userIds.getUserIds();
+    let tmp = null == userIds;
+    if (!tmp) {
+      let tmp4 = 0 === userIds.size;
+      if (!tmp4) {
+        tmp4 = 1 === userIds.size && userIds.has(tmp3);
+        const tmp5 = 1 === userIds.size && userIds.has(tmp3);
+      }
+      tmp = tmp4;
     }
-    return tmp2;
+    return tmp;
   });
 };

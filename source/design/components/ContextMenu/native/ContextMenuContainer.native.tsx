@@ -1,54 +1,54 @@
-// Module ID: 13187
-// Function ID: 101422
+// Module ID: 13210
+// Function ID: 13211
 // Name: getItemKey
-// Dependencies: [31, 27, 33, 4165, 13188, 9276, 1571, 4512, 4559, 4511, 2]
+// Dependencies: [19, 17, 21, 4189, 13211, 9300, 1595, 4535, 4582, 4534, 2]
 // Exports: ContextMenuContainer
 
-// Module 13187 (getItemKey)
-import result from "result";
+// Module 13210 (getItemKey)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let StyleSheet;
-let closure_4;
+let c4;
 let require = arg1;
 function getItemKey(key) {
   return key.key;
 }
-({ StyleSheet, View: closure_4 } = get_ActivityIndicator);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = {};
+({ StyleSheet, View: c4 } = get_ActivityIndicator);
+createCacheKey = { overlayView: null, wrapperView: null };
+createCacheKey = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-_createForOfIteratorHelperLoose["zIndex"] = 99999;
-_createForOfIteratorHelperLoose.overlayView = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.wrapperView = StyleSheet.absoluteFillObject;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey.zIndex = 99999;
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = StyleSheet.absoluteFillObject;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_7 = [];
 function EMPTY_CALLBACK() {
 
 }
 function renderItem(arg0, menu, transitionState, cleanUp) {
-  return jsx(require(13188) /* ContextMenuDivider */.ContextMenuPopout, { menu, transitionState, cleanUp }, arg0);
+  return jsx(require(13211) /* ContextMenuDivider */.ContextMenuPopout, { menu, transitionState, cleanUp }, arg0);
 }
 const result = require("jsxProd").fileFinishedImporting("design/components/ContextMenu/native/ContextMenuContainer.native.tsx");
 
 export const ContextMenuContainer = function ContextMenuContainer() {
-  let tmp = _createForOfIteratorHelperLoose();
+  let tmp = createCacheKey();
   const require = tmp;
   let obj = require(callback[5]);
   const activeContextMenu = obj.useActiveContextMenu();
   if (null != activeContextMenu) {
     const items = [activeContextMenu];
-    let tmp3 = items;
+    let tmp5 = items;
   } else {
-    tmp3 = closure_7;
+    tmp5 = closure_7;
   }
   let requestClose;
-  if (null != activeContextMenu) {
+  if (activeContextMenu != null) {
     requestClose = activeContextMenu.requestClose;
   }
-  if (null == requestClose) {
+  if (requestClose == null) {
     requestClose = EMPTY_CALLBACK;
   }
   const effect = React.useEffect(() => {
@@ -65,19 +65,16 @@ export const ContextMenuContainer = function ContextMenuContainer() {
   const items2 = [callback, , ];
   ({ overlayView: arr3[1], wrapperView: arr3[2] } = tmp);
   const callback1 = React.useCallback((children) => {
-    let obj = { style: tmp.overlayView };
-    obj = {};
+    let obj = { style: tmp.overlayView, children: null };
     let str = "auto";
     if (0 === arg1.length) {
       str = "none";
     }
-    obj.pointerEvents = str;
-    obj.style = outer1_5.wrapperView;
+    obj = { pointerEvents: str, style: outer1_5.wrapperView, children: tmp(tmp(callback[8]).Dialog, obj) };
     obj = { onDismiss: callback, children };
-    obj.children = outer1_5(outer1_5(callback[8]).Dialog, obj);
-    obj.children = outer1_5(outer1_4, obj);
+    obj[1] = outer1_5(outer1_4, obj);
     return outer1_5(requestClose(callback[7]), obj);
   }, items2);
-  obj = { wrapChildren: callback1, items: tmp3, renderItem, getItemKey };
-  return jsx(require(callback[9]).TransitionGroup, { wrapChildren: callback1, items: tmp3, renderItem, getItemKey });
+  obj = { wrapChildren: callback1, items: tmp5, renderItem, getItemKey };
+  return jsx(require(callback[9]).TransitionGroup, { wrapChildren: callback1, items: tmp5, renderItem, getItemKey });
 };

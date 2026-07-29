@@ -1,25 +1,17 @@
-// Module ID: 8783
-// Function ID: 69309
-// Name: useIsPlanEligibleForGiftingPromotion
-// Dependencies: [57, 31, 6242, 1852, 566, 7932, 8784, 6546, 3981, 1334, 2]
-// Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useFetchClaimableGiftingPromotionRewardSkuIds, useShouldAutoSelectGiftingPromotionReward, useShouldShowSelectFreeSkuStep
+// Module ID: 8807
+// Function ID: 8808
+// Name: useFetchClaimableGiftingPromotionRewardSkuIds
+// Dependencies: [32, 19, 6262, 1876, 589, 7957, 8808, 6567, 4005, 1358, 2]
+// Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useFetchClaimableGiftingPromotionRewardSkuIds, useIsPlanEligibleForGiftingPromotion, useShouldAutoSelectGiftingPromotionReward, useShouldShowSelectFreeSkuStep
 
-// Module 8783 (useIsPlanEligibleForGiftingPromotion)
+// Module 8807 (useFetchClaimableGiftingPromotionRewardSkuIds)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import createEmptyPromotionsByType from "createEmptyPromotionsByType";
 import { SubscriptionPlans } from "GuildFeatures";
 
 const require = arg1;
-function useIsPlanEligibleForGiftingPromotion(id) {
-  const items = [SubscriptionPlans.PREMIUM_YEAR_TIER_2, SubscriptionPlans.PREMIUM_MONTH_TIER_2];
-  id = undefined;
-  if (null != id) {
-    id = id.id;
-  }
-  return items.includes(id);
-}
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/gifting/utils/promotions/GiftingPromotionUtils.tsx");
+let result = require("createEmptyPromotionsByType").fileFinishedImporting("modules/premium/gifting/utils/promotions/GiftingPromotionUtils.tsx");
 
 export const useFetchClaimableGiftingPromotionRewardSkuIds = function useFetchClaimableGiftingPromotionRewardSkuIds() {
   const tmp = purchases(hasPreviouslyFetched.useState(), 2);
@@ -38,13 +30,14 @@ export const useFetchClaimableGiftingPromotionRewardSkuIds = function useFetchCl
       if (!ref.current) {
         if (stateFromStoresArray.length > 0) {
           if (null == fetchPurchasesError) {
-            let found = stateFromStoresArray.filter((arg0) => null == outer1_2.get(arg0));
+            let found = arr.filter((arg0) => null == _slicedToArray.get(arg0));
           } else {
             found = [];
           }
           callback(found);
-          ref.current = true;
+          tmp.current = true;
         }
+        arr = stateFromStoresArray;
       }
     }
   }, items1);
@@ -56,37 +49,59 @@ export const getRewardAssetIdMap = function getRewardAssetIdMap(arr) {
   return map;
 };
 export const useShouldShowSelectFreeSkuStep = function useShouldShowSelectFreeSkuStep(id) {
-  let tmp = arg1;
+  const items = [, ];
+  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1] } = SubscriptionPlans);
+  id = undefined;
+  if (id != null) {
+    id = id.id;
+  }
   let tmp3 = null != arg2;
+  const hasItem = items.includes(id);
   if (tmp3) {
     tmp3 = arg2.length >= 1;
   }
-  if (tmp) {
-    tmp = tmp2;
+  let tmp4 = arg1;
+  if (arg1) {
+    tmp4 = hasItem;
   }
-  if (tmp) {
-    tmp = tmp3;
+  if (tmp4) {
+    tmp4 = tmp3;
   }
-  return tmp;
+  return tmp4;
 };
 export const useShouldAutoSelectGiftingPromotionReward = function useShouldAutoSelectGiftingPromotionReward(id) {
-  let tmp2 = null != arg2;
-  if (tmp2) {
-    tmp2 = 1 === arg2.length;
+  const items = [, ];
+  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1] } = SubscriptionPlans);
+  id = undefined;
+  if (id != null) {
+    id = id.id;
   }
-  if (tmp2) {
-    tmp2 = tmp;
+  let tmp3 = null != arg2;
+  const hasItem = items.includes(id);
+  if (tmp3) {
+    tmp3 = 1 === arg2.length;
   }
-  if (tmp2) {
-    tmp2 = arg1;
+  if (tmp3) {
+    tmp3 = hasItem;
   }
-  return tmp2;
+  if (tmp3) {
+    tmp3 = arg1;
+  }
+  return tmp3;
 };
-export { useIsPlanEligibleForGiftingPromotion };
+export const useIsPlanEligibleForGiftingPromotion = function useIsPlanEligibleForGiftingPromotion(id) {
+  const items = [, ];
+  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1] } = SubscriptionPlans);
+  id = undefined;
+  if (id != null) {
+    id = id.id;
+  }
+  return items.includes(id);
+};
 export const createGradientStyle = function createGradientStyle(gradient) {
-  let obj = arg1;
   if (null != gradient) {
-    if (null == obj) {
+    let obj = arg1;
+    if (arg1 == null) {
       obj = {};
     }
     const reverse = obj.reverse;
@@ -112,15 +127,15 @@ export const createGradientStyle = function createGradientStyle(gradient) {
     if (tmp) {
       result = (angle + 180) % 360;
     }
-    obj = {};
     if (null != colorStops) {
       const mapped = gradient.map((arg0, arg1) => "" + arg0 + " " + colorStops[arg1] + "%");
       let joined = mapped.join(", ");
     } else {
       joined = gradient.join(", ");
     }
+    obj = { background: null };
     const _HermesInternal = HermesInternal;
-    obj.background = "linear-gradient(" + result + "deg, " + joined + ")";
+    obj[0] = "linear-gradient(" + result + "deg, " + joined + ")";
     return obj;
   }
 };
@@ -128,7 +143,7 @@ export const createBackgroundStyle = function createBackgroundStyle(arg0) {
   if (null != arg0) {
     const obj = { backgroundImage: null, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" };
     const _HermesInternal = HermesInternal;
-    obj.backgroundImage = "url(" + arg0 + ")";
+    obj[0] = "url(" + arg0 + ")";
     return obj;
   }
 };
@@ -159,29 +174,29 @@ export const combinePromotionStyles = function combinePromotionStyles(background
   return tmp;
 };
 export const shouldShowGiftPromotionReminderNotice = function shouldShowGiftPromotionReminderNotice() {
-  const GiftPromotionReminderExperiment = require(8784) /* apexExperiment */.GiftPromotionReminderExperiment;
+  const GiftPromotionReminderExperiment = require(8808) /* apexExperiment */.GiftPromotionReminderExperiment;
   if (GiftPromotionReminderExperiment.getConfig({ location: "shouldShowGiftPromotionReminderNotice" }).enabled) {
-    if (null == store.getMarketingComponentByType(require(6546) /* MarketingComponentType */.MarketingComponentType.GIFT_REMINDER_NAGBAR)) {
+    if (null == marketingComponentByType.getMarketingComponentByType(tmp(6567).MarketingComponentType.GIFT_REMINDER_NAGBAR)) {
       return false;
     } else {
-      const giftPromotion = store.getGiftPromotion();
+      const giftPromotion = obj.getGiftPromotion();
       let id;
-      if (null != giftPromotion) {
+      if (giftPromotion != null) {
         id = giftPromotion.id;
       }
-      let tmp6 = null != id;
-      if (tmp6) {
-        const tmp9 = !require(3981) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(require(1334) /* DismissibleContent */.DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
-        let tmp10 = !tmp9;
-        if (!tmp9) {
-          tmp10 = !require(3981) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(require(1334) /* DismissibleContent */.DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
-          const obj2 = require(3981) /* UNSAFE_isDismissibleContentDismissed */;
+      let tmp5 = null != id;
+      if (tmp5) {
+        let tmpResult = tmp(4005);
+        let isDismissed = tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(1358).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
+        if (isDismissed) {
+          tmpResult = tmp(4005);
+          isDismissed = !tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(1358).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
         }
-        tmp6 = tmp10;
-        const obj = require(3981) /* UNSAFE_isDismissibleContentDismissed */;
+        tmp5 = isDismissed;
       }
-      return tmp6;
+      return tmp5;
     }
+    obj = marketingComponentByType;
   } else {
     return false;
   }

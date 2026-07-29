@@ -1,31 +1,16 @@
-// Module ID: 6652
-// Function ID: 58636
-// Name: renderTitleWithNitroLink
-// Dependencies: [33, 4161, 2]
+// Module ID: 6673
+// Function ID: 6674
+// Name: BuyNitroSectionHeader
+// Dependencies: [21, 4185, 2]
 // Exports: default
 
-// Module 6652 (renderTitleWithNitroLink)
+// Module 6673 (BuyNitroSectionHeader)
 import jsxProd from "jsxProd";
 
-let closure_2;
-let closure_3;
-let closure_4;
-function renderTitleWithNitroLink(title) {
-  title = title.title;
-  const index = title.indexOf(Nitro);
-  let tmp2 = title;
-  if (-1 !== index) {
-    let obj = {};
-    const items = [title.slice(0, index), , ];
-    obj = { variant: "text-sm/semibold", color: "text-link", accessibilityRole: "link", onPress: title.onPress, children: Nitro };
-    items[1] = callback(require(4161) /* Text */.Text, obj);
-    items[2] = title.slice(index + 5);
-    obj.children = items;
-    tmp2 = callback2(closure_3, obj);
-  }
-  return tmp2;
-}
-({ jsx: closure_2, Fragment: closure_3, jsxs: closure_4 } = jsxProd);
+let c3;
+let c4;
+let obj1;
+({ jsx: obj1, Fragment: c3, jsxs: c4 } = jsxProd);
 const Nitro = "Nitro";
 const result = require("set").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroSectionHeader.tsx");
 
@@ -39,12 +24,25 @@ export default function BuyNitroSectionHeader(arg0) {
   if (titleRequiresNitroHack === undefined) {
     titleRequiresNitroHack = false;
   }
-  let obj = { variant: "text-sm/semibold", color: "text-default", accessibilityRole: "header", style };
-  let tmp2 = title;
+  let obj = { variant: "text-sm/semibold", color: "text-default", accessibilityRole: "header", style, children: null };
+  let tmp4 = title;
   if (titleRequiresNitroHack) {
-    obj = { title, onPress };
-    tmp2 = renderTitleWithNitroLink(obj);
+    const index = title.indexOf(Nitro);
+    let tmp7 = title;
+    if (-1 !== index) {
+      obj = { children: null };
+      const items = [title.slice(0, index), , ];
+      obj = { variant: "text-sm/semibold", color: "text-link", accessibilityRole: "link", onPress: null, children: null };
+      obj[3] = onPress;
+      obj[4] = tmp5;
+      items[1] = tmp(require(4185) /* Text */.Text, obj);
+      items[2] = title.slice(index + 5);
+      obj[0] = items;
+      tmp7 = callback(closure_3, obj);
+    }
+    tmp4 = tmp7;
+    tmp5 = Nitro;
   }
-  obj.children = tmp2;
-  return closure_2(require(4161) /* Text */.Text, obj);
+  obj[4] = tmp4;
+  return closure_2(require(4185) /* Text */.Text, obj);
 };

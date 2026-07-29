@@ -1,26 +1,27 @@
-// Module ID: 14559
-// Function ID: 111041
+// Module ID: 14584
+// Function ID: 14585
 // Name: Content
-// Dependencies: [57, 31, 27, 33, 4165, 14557, 6821, 8406, 4578, 1324, 4589, 5536, 5537, 7632, 7631, 5155, 5484, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 14582, 6843, 8430, 4600, 1348, 4611, 5554, 5555, 7655, 7654, 5177, 5502, 2]
 // Exports: default
 
-// Module 14559 (Content)
+// Module 14584 (Content)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import noop from "noop";
+import get_ActivityIndicator from "set";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
 function Content() {
-  let tmp10;
-  let tmp9;
-  let tmp = callback3();
+  let tmp11;
+  let tmp12;
+  let tmp = callback2();
+  let obj = first3;
   const tmp2 = first2(first3.useState(true), 2);
   const first = tmp2[0];
   const importDefault = tmp2[1];
@@ -28,148 +29,155 @@ function Content() {
   const first1 = tmp4[0];
   const tmp6 = first2(first3.useState(false), 2);
   first2 = tmp6[0];
-  let obj = first(first1[5]);
-  [tmp9, tmp10] = first2(obj.useCanRotate(), 2);
-  const tmp11 = first2(first3.useState(false), 2);
-  first3 = tmp11[0];
-  const tmp13 = first2(first3.useState("primary"), 2);
-  const first4 = tmp13[0];
-  const tmp15 = first2(first3.useState("none"), 2);
-  const first5 = tmp15[0];
-  const tmp17 = first2(first3.useState("16/9"), 2);
-  const first6 = tmp17[0];
-  let str = "Show tooltip";
+  let obj1 = first(first1[5]);
+  [tmp11, tmp12] = first2(obj1.useCanRotate(), 2);
+  const tmp13 = first2(first3.useState(false), 2);
+  first3 = tmp13[0];
+  const tmp15 = first2(first3.useState("primary"), 2);
+  let str = tmp15[0];
+  const tmp16 = first2(first3.useState("none"), 2);
+  const first4 = tmp16[0];
+  const tmp18 = first2(first3.useState("16/9"), 2);
+  const first5 = tmp18[0];
+  let str2 = "Show tooltip";
   if (first) {
-    str = "Hide tooltip";
+    str2 = "Hide tooltip";
   }
-  const ref = first3.useRef(null);
-  const items = [first3, first2, first, first1, first4, first5, first6];
-  const memo = first3.useMemo(() => {
-    let obj = { title: "Title goes here, and it can get really long so we should handle that", description: "Body copy goes here" };
+  const ref = obj.useRef(null);
+  const items = [first3, first2, first, first1, str, first4, first5];
+  const memo = obj.useMemo(() => {
     let str = "top";
     if (first2) {
       str = "bottom";
     }
-    obj.position = str;
-    obj.visible = first;
-    obj.onDismiss = function onDismiss() {
-      return outer1_1(false);
+    let obj = {
+      title: "Title goes here, and it can get really long so we should handle that",
+      description: "Body copy goes here",
+      position: str,
+      visible: first,
+      onDismiss() {
+        return callback(false);
+      },
+      graphic: null,
+      experimental_withBlurBackground: null,
+      buttonLabel: null,
+      onButtonPress: null,
+      buttonVariant: null,
+      gradientColor: null
     };
-    obj = { type: "image" };
+    obj = { type: "image", src: null, aspectRatio: null };
     obj = { uri: callback(first1[6]) };
-    obj.src = obj;
-    obj.aspectRatio = first6;
-    obj.graphic = obj;
-    obj.experimental_withBlurBackground = first1;
+    obj[1] = obj;
+    obj[2] = first5;
+    obj[5] = obj;
+    obj[6] = first1;
     let str2;
     if (first3) {
       str2 = "Button";
     }
-    obj.buttonLabel = str2;
-    obj.onButtonPress = function onButtonPress() {
-      return outer1_1(false);
+    obj[7] = str2;
+    obj[8] = function onButtonPress() {
+      return callback(false);
     };
-    obj.buttonVariant = first4;
+    obj[9] = str;
     let tmp;
-    if ("none" !== first5) {
-      tmp = first5;
+    if ("none" !== first4) {
+      tmp = first4;
     }
-    obj.gradientColor = tmp;
+    obj[10] = tmp;
     return obj;
   }, items);
-  let obj1 = first(first1[7]);
-  const coachmark = obj1.useCoachmark(ref, memo);
+  const tmp10 = first2(obj1.useCanRotate(), 2);
+  const coachmark = first(first1[7]).useCoachmark(ref, memo);
   obj = {
     ref,
     onPress() {
       callback(!first);
     },
     variant: "primary",
-    text: str,
+    text: str2,
     size: "md"
   };
-  const tmp22 = first6(first(first1[8]).Button, obj);
-  const tmp23 = importDefault(first1[9])("Coachmark");
-  obj = {};
+  const tmp24 = first5(first(first1[8]).Button, obj);
+  const tmp26 = importDefault(first1[9])("Coachmark");
   if (first1) {
-    obj1 = {};
-    const obj2 = { height: 300 };
-    const items1 = [obj2, tmp.container];
-    obj1.style = items1;
-    obj1.start = { x: 0, y: 0 };
-    obj1.end = { x: 1, y: 0 };
-    obj1.colors = ["red", "orange", "yellow", "green", "teal", "blue", "purple"];
-    obj1.children = tmp22;
-    let tmp26Result = tmp26(importDefault(first1[10]), obj1);
+    obj = { style: null, start: null, end: null, colors: null, children: null };
+    const items1 = [{ height: 300 }, tmp.container];
+    obj[0] = items1;
+    obj[1] = { x: 0, y: 0 };
+    obj[2] = { x: 1, y: 0 };
+    obj[3] = ["red", "orange", "yellow", "green", "teal", "blue", "purple"];
+    obj[4] = tmp24;
+    let tmp23Result = tmp23(tmp25(tmp9[10]), obj);
   } else {
-    const obj3 = {};
-    const obj4 = { height: 360 };
-    const items2 = [obj4, tmp.container];
-    obj3.style = items2;
-    obj3.children = tmp22;
-    tmp26Result = tmp26(first4, obj3);
+    obj1 = { style: null, children: null };
+    const items2 = [{ height: 360 }, tmp.container];
+    obj1[0] = items2;
+    obj1[1] = tmp24;
+    tmp23Result = tmp23(str, obj1);
   }
-  const items3 = [tmp26Result, , , , , , , ];
-  const obj5 = { hasIcons: false };
-  const items4 = [first6(first(first1[12]).TableSwitchRow, { label: "Enable Bottom Position", value: first2, onValueChange: tmp6[1] }), first6(first(first1[12]).TableSwitchRow, { label: "Enable Button", value: first3, onValueChange: tmp11[1] })];
-  obj5.children = items4;
-  items3[1] = callback2(first(first1[11]).TableRowGroup, obj5);
-  const obj6 = { style: { marginVertical: 16 } };
-  const obj7 = { title: "Button Variant" };
-  let str2 = "secondary";
-  if (null != first4) {
-    str2 = first4;
+  const items3 = [tmp23Result, , , , , , , ];
+  const obj2 = { hasIcons: false, children: null };
+  const items4 = [first5(first(first1[12]).TableSwitchRow, { label: "Enable Bottom Position", value: first2, onValueChange: tmp6[1] }), first5(first(first1[12]).TableSwitchRow, { label: "Enable Button", value: first3, onValueChange: tmp13[1] })];
+  obj2[1] = items4;
+  items3[1] = closure_8(first(first1[11]).TableRowGroup, obj2);
+  const obj3 = { style: { marginVertical: 16 }, children: null };
+  if (str == null) {
+    str = "secondary";
   }
-  obj7.defaultValue = str2;
-  obj7.onChange = tmp13[1];
-  obj7.hasIcons = false;
+  tmp25 = importDefault;
+  const tmp28 = closure_9;
+  const tmp8Result = first(first1[7]);
   const items5 = ["primary", "secondary", "experimental_premium-primary"];
-  obj7.children = items5.map((value) => first6(first(first1[14]).TableRadioRow, { value, label: value }, value));
-  obj6.children = first6(first(first1[13]).TableRadioGroup, obj7);
-  items3[2] = first6(first4, obj6);
-  let tmp34 = null;
-  if (tmp23) {
-    const obj8 = {};
-    const obj9 = { marginVertical: 16 };
-    obj8.style = obj9;
-    const obj10 = { title: "Gradient Color", defaultValue: first5, onChange: tmp15[1], hasIcons: false };
+  obj3[1] = first5(first(first1[13]).TableRadioGroup, { title: "Button Variant", defaultValue: str, onChange: tmp15[1], hasIcons: false, children: items5.map((value) => first5(first(first1[14]).TableRadioRow, { value, label: value }, value)) });
+  items3[2] = first5(str, obj3);
+  tmp23Result = null;
+  if (tmp26) {
+    const obj5 = { style: null, children: null };
+    obj5[0] = { marginVertical: 16 };
+    const obj6 = { title: "Gradient Color", defaultValue: null, onChange: null, hasIcons: false, children: null };
+    obj6[1] = first4;
+    obj6[2] = tmp16[1];
     const items6 = [{ label: "None", value: "none" }, { label: "Purple", value: "purple" }, { label: "Blue", value: "blue" }, { label: "Green", value: "green" }, { label: "Pink", value: "pink" }, { label: "Nitro Pink", value: "nitro-pink" }, { label: "Nitro Green", value: "nitro-green" }];
-    obj10.children = items6.map((value) => {
+    obj6[4] = items6.map((value) => {
       const label = value.label;
-      return first6(first(first1[14]).TableRadioRow, { value: value.value, label }, label);
+      return first5(first(first1[14]).TableRadioRow, { value: value.value, label }, label);
     });
-    obj8.children = first6(first(first1[13]).TableRadioGroup, obj10);
-    tmp34 = first6(first4, obj8);
+    obj5[1] = tmp23(tmp8(tmp9[13]).TableRadioGroup, obj6);
+    tmp23Result = tmp23(tmp31, obj5);
   }
-  items3[3] = tmp34;
-  let tmp40 = null;
-  if (tmp23) {
-    const obj11 = {};
-    const obj12 = { marginVertical: 16 };
-    obj11.style = obj12;
-    const obj13 = { title: "Aspect Ratio", defaultValue: first6, onChange: tmp17[1], hasIcons: false };
+  items3[3] = tmp23Result;
+  let tmp23Result1 = null;
+  if (tmp26) {
+    const obj7 = { style: null, children: null };
+    obj7[0] = { marginVertical: 16 };
+    const obj8 = { title: "Aspect Ratio", defaultValue: null, onChange: null, hasIcons: false, children: null };
+    obj8[1] = first5;
+    obj8[2] = tmp18[1];
     const items7 = ["21/9", "16/9", "6/4", "2/1", "1/1"];
-    obj13.children = items7.map((value) => first6(first(first1[14]).TableRadioRow, { value, label: value }, value));
-    obj11.children = first6(first(first1[13]).TableRadioGroup, obj13);
-    tmp40 = first6(first4, obj11);
+    obj8[4] = items7.map((value) => first5(first(first1[14]).TableRadioRow, { value, label: value }, value));
+    obj7[1] = tmp23(tmp8(tmp9[13]).TableRadioGroup, obj8);
+    tmp23Result1 = tmp23(tmp31, obj7);
   }
-  items3[4] = tmp40;
-  items3[5] = first6(first(first1[12]).TableSwitchRow, { label: "Enable Blur Background", value: first1, onValueChange: tmp4[1] });
-  items3[6] = first6(first(first1[12]).TableSwitchRow, { label: "Unlock Orientation", value: tmp9, onValueChange: tmp10 });
-  items3[7] = first6(first(first1[5]).TooltipNote, {});
-  obj.children = items3;
-  return callback2(closure_9, obj);
+  const obj9 = { children: null };
+  items3[4] = tmp23Result1;
+  items3[5] = first5(first(first1[12]).TableSwitchRow, { label: "Enable Blur Background", value: first1, onValueChange: tmp4[1] });
+  items3[6] = first5(first(first1[12]).TableSwitchRow, { label: "Unlock Orientation", value: tmp11, onValueChange: tmp12 });
+  items3[7] = first5(first(first1[5]).TooltipNote, {});
+  obj9[0] = items3;
+  return closure_8(tmp28, obj9);
 }
-({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles({ container: { paddingTop: 240, flex: 1, alignItems: "center", justifyContent: "center" }, flex: { flex: 1, padding: 16 } });
+({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll, Fragment: c9 } = jsxProd);
+let closure_10 = createCacheKey.createStyles({ container: { paddingTop: 240, flex: 1, alignItems: "center", justifyContent: "center" }, flex: { flex: 1, padding: 16 } });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemCoachmark.tsx");
 
 export default function UserSettingsDesignSystemCoachmark() {
-  let obj = { style: callback3().flex, bottom: true };
-  obj = {};
-  obj = { children: callback(Content, {}) };
-  obj.children = callback(require(5484) /* Layer */.LayerScope, obj);
-  obj.children = callback(closure_6, obj);
-  return callback(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  let obj = { style: callback2().flex, bottom: true, children: null };
+  obj = { children: null };
+  obj = { children: null };
+  obj[0] = callback(Content, {});
+  obj[0] = callback(require(5502) /* Layer */.LayerScope, obj);
+  obj[2] = callback(closure_6, obj);
+  return callback(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

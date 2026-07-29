@@ -1,47 +1,43 @@
-// Module ID: 15827
-// Function ID: 121922
+// Module ID: 15862
+// Function ID: 15863
 // Name: BaseLeaveActivityButton
-// Dependencies: [31, 5670, 33, 4578, 10687, 1212, 10585, 2]
+// Dependencies: [19, 5688, 21, 4600, 10711, 1236, 10609, 2]
 
-// Module 15827 (BaseLeaveActivityButton)
+// Module 15862 (BaseLeaveActivityButton)
 import { ActivityPanelModes } from "ActivityPanelModes";
 import { jsx } from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
 const require = arg1;
 class BaseLeaveActivityButton {
   constructor(arg0) {
-    obj = { onPress: global.onPress };
-    obj.icon = require("registerAsset");
+    obj = { onPress: global.onPress, icon: null, text: null, accessibilityLabel: null, variant: "destructive", size: "sm", maxFontSizeMultiplier: 1 };
+    obj[1] = require("registerAsset");
     intl = require("getSystemLocale").intl;
-    obj.text = intl.string(require("getSystemLocale").t["Hi1/aQ"]);
+    obj[2] = intl.string(require("getSystemLocale").t["Hi1/aQ"]);
     intl2 = require("getSystemLocale").intl;
-    obj.accessibilityLabel = intl2.string(require("getSystemLocale").t.k0Aph0);
-    obj.variant = "destructive";
-    obj.size = "sm";
-    obj.maxFontSizeMultiplier = 1;
+    obj[3] = intl2.string(require("getSystemLocale").t.k0Aph0);
     return jsx(require("Button").Button, obj);
   }
 }
-const memoResult = require("result").memo(function LeaveActivityButton(arg0) {
+const memoResult = require("noop").memo(function LeaveActivityButton(arg0) {
   let importDefault;
   let require;
   ({ selfEmbeddedActivity: require, setMode: importDefault } = arg0);
   return <BaseLeaveActivityButton onPress={function onPress() {
     callback(outer1_3.DISCONNECTED);
     const timerId = setTimeout(() => {
-      let obj = outer2_1(outer2_2[6]);
-      obj = {};
+      let obj = outer1_1(outer1_2[6]);
       let _location;
-      if (null != outer1_0) {
-        _location = outer1_0.location;
+      if (closure_0 != null) {
+        _location = tmp.location;
       }
-      obj.location = _location;
+      obj = { location: _location, applicationId: null };
       let applicationId;
-      if (null != outer1_0) {
-        applicationId = outer1_0.applicationId;
+      if (closure_0 != null) {
+        applicationId = tmp.applicationId;
       }
-      obj.applicationId = applicationId;
+      obj[1] = applicationId;
       obj.leaveActivity(obj);
     }, 400);
   }} />;

@@ -1,19 +1,16 @@
-// Module ID: 9465
-// Function ID: 73687
-// Name: getQuestUrl
-// Dependencies: [5011, 1212, 8421, 8422, 8426, 5994, 5983, 5525, 2]
-// Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getSortMethodText
+// Module ID: 9489
+// Function ID: 9490
+// Name: getContextualEntrypointHeading
+// Dependencies: [5033, 1236, 8445, 8446, 8450, 6013, 6002, 5543, 2]
+// Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getQuestUrl, getSortMethodText
 
-// Module 9465 (getQuestUrl)
+// Module 9489 (getContextualEntrypointHeading)
 import QuestsExperimentLocations from "QuestsExperimentLocations";
 
-let closure_2;
-let closure_3;
-let closure_4;
-function getQuestUrl(id) {
-  return "" + location.protocol + "//" + location.host + "/quests/" + id;
-}
-({ QuestHomeSortMethods: closure_2, RewardFilterTypes: closure_3, TaskFilterTypes: closure_4 } = QuestsExperimentLocations);
+let c3;
+let c4;
+let obj1;
+({ QuestHomeSortMethods: obj1, RewardFilterTypes: c3, TaskFilterTypes: c4 } = QuestsExperimentLocations);
 let result = require("apexExperiment").fileFinishedImporting("modules/quests/utils/QuestCopyUtils.tsx");
 
 export const getContextualEntrypointHeading = function getContextualEntrypointHeading(taskDetails) {
@@ -22,16 +19,16 @@ export const getContextualEntrypointHeading = function getContextualEntrypointHe
   ({ quest, thirdPartyTaskDetails } = taskDetails);
   const userStatus = quest.userStatus;
   let completedAt;
-  if (null != userStatus) {
+  if (userStatus != null) {
     completedAt = userStatus.completedAt;
   }
   if (null != completedAt) {
-    const intl6 = require(1212) /* getSystemLocale */.intl;
-    return intl6.string(require(1212) /* getSystemLocale */.t.BzFeTF);
+    const intl6 = require(1236) /* getSystemLocale */.intl;
+    return intl6.string(require(1236) /* getSystemLocale */.t.BzFeTF);
   } else {
     const userStatus2 = quest.userStatus;
     let enrolledAt;
-    if (null != userStatus2) {
+    if (userStatus2 != null) {
       enrolledAt = userStatus2.enrolledAt;
     }
     if (null != enrolledAt) {
@@ -40,28 +37,29 @@ export const getContextualEntrypointHeading = function getContextualEntrypointHe
         percentComplete = thirdPartyTaskDetails.percentComplete;
       }
       if (percentComplete >= 0.75) {
-        const intl5 = require(1212) /* getSystemLocale */.intl;
-        let stringResult = intl5.string(require(1212) /* getSystemLocale */.t.gvCR4H);
+        const intl5 = require(1236) /* getSystemLocale */.intl;
+        let stringResult = intl5.string(require(1236) /* getSystemLocale */.t.gvCR4H);
       } else {
         if (percentComplete >= 0.45) {
           if (percentComplete <= 0.55) {
-            const intl4 = require(1212) /* getSystemLocale */.intl;
-            stringResult = intl4.string(require(1212) /* getSystemLocale */.t.JNx8sG);
+            const intl4 = require(1236) /* getSystemLocale */.intl;
+            stringResult = intl4.string(require(1236) /* getSystemLocale */.t.JNx8sG);
           }
         }
         if (percentComplete > 0) {
-          const intl3 = require(1212) /* getSystemLocale */.intl;
-          stringResult = intl3.string(require(1212) /* getSystemLocale */.t.JMbfnc);
+          const intl3 = require(1236) /* getSystemLocale */.intl;
+          stringResult = intl3.string(require(1236) /* getSystemLocale */.t.JMbfnc);
         } else {
-          const intl2 = require(1212) /* getSystemLocale */.intl;
-          stringResult = intl2.string(require(1212) /* getSystemLocale */.t["7e5k7L"]);
+          const intl2 = require(1236) /* getSystemLocale */.intl;
+          stringResult = intl2.string(require(1236) /* getSystemLocale */.t["7e5k7L"]);
         }
       }
       return stringResult;
     } else {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      const obj = { questName: quest.config.messages.questName };
-      return intl.formatToPlainString(require(1212) /* getSystemLocale */.t.EQa7os, obj);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      const obj = { questName: null };
+      obj[0] = quest.config.messages.questName;
+      return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.EQa7os, obj);
     }
   }
 };
@@ -71,31 +69,39 @@ export const getDisclosureText = function getDisclosureText(isTargetedDisclosure
   ({ gamePublisher, cosponsorName } = isTargetedDisclosure);
   if (isTargetedDisclosure.isTargetedDisclosure) {
     if (isTargetedDisclosure.isContextualDisclosure) {
-      const intl5 = require(1212) /* getSystemLocale */.intl;
-      let stringResult = intl5.string(require(1212) /* getSystemLocale */.t.nPg6f1);
+      const intl5 = require(1236) /* getSystemLocale */.intl;
+      let stringResult = intl5.string(require(1236) /* getSystemLocale */.t.nPg6f1);
     } else {
       if (null == cosponsorName) {
-        const intl3 = require(1212) /* getSystemLocale */.intl;
-        let obj = { gamePublisher };
-        let formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.Piihy1, obj);
+        const intl3 = require(1236) /* getSystemLocale */.intl;
+        let obj = { gamePublisher: null };
+        obj[0] = gamePublisher;
+        let formatToPlainStringResult = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.Piihy1, obj);
+        let tmp10 = require;
       } else {
-        const intl2 = require(1212) /* getSystemLocale */.intl;
-        obj = { gamePublisher, cosponsorName };
-        formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.DV47Gy, obj);
+        const intl2 = require(1236) /* getSystemLocale */.intl;
+        obj = { gamePublisher: null, cosponsorName: null };
+        obj[0] = gamePublisher;
+        obj[1] = cosponsorName;
+        formatToPlainStringResult = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.DV47Gy, obj);
+        tmp10 = require;
       }
-      const intl4 = require(1212) /* getSystemLocale */.intl;
+      const intl4 = tmp10(1236).intl;
       const _HermesInternal = HermesInternal;
-      stringResult = "" + formatToPlainStringResult + " " + intl4.string(require(1212) /* getSystemLocale */.t.fEbrT8);
+      stringResult = "" + formatToPlainStringResult + " " + intl4.string(tmp10(1236).t.fEbrT8);
     }
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
+    const intl = require(1236) /* getSystemLocale */.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const t = require(1212) /* getSystemLocale */.t;
+    const t = require(1236) /* getSystemLocale */.t;
     if (tmp) {
-      const obj1 = { gamePublisher };
+      const obj1 = { gamePublisher: null };
+      obj1[0] = gamePublisher;
       let formatToPlainStringResult1 = formatToPlainString(t.rctMRl, obj1);
     } else {
-      obj = { gamePublisher, gameTitle: tmp2 };
+      obj = { gamePublisher: null, gameTitle: null };
+      obj[0] = gamePublisher;
+      obj[1] = tmp2;
       formatToPlainStringResult1 = formatToPlainString(t["5bQWNG"], obj);
     }
     return formatToPlainStringResult1;
@@ -106,65 +112,74 @@ export const getExternalCtaLabel = function getExternalCtaLabel(quest) {
 };
 export const getSortMethodText = function getSortMethodText(arg0) {
   if (constants.SUGGESTED === arg0) {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    return intl4.string(require(1212) /* getSystemLocale */.t.gBfXPZ);
-  } else if (constants.MOST_RECENT === arg0) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    return intl3.string(require(1212) /* getSystemLocale */.t.K6oEu2);
-  } else if (constants.EXPIRING_SOON === arg0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(require(1212) /* getSystemLocale */.t.IB22n3);
-  } else if (constants.RECENTLY_ENROLLED === arg0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["BB+2tX"]);
+    const intl4 = require(1236) /* getSystemLocale */.intl;
+    return intl4.string(require(1236) /* getSystemLocale */.t.gBfXPZ);
+  } else if (tmp.MOST_RECENT === arg0) {
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    return intl3.string(require(1236) /* getSystemLocale */.t.K6oEu2);
+  } else if (tmp.EXPIRING_SOON === arg0) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    return intl2.string(require(1236) /* getSystemLocale */.t.IB22n3);
+  } else if (tmp.RECENTLY_ENROLLED === arg0) {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["BB+2tX"]);
   }
 };
 export const getFilterTypeText = function getFilterTypeText(filter) {
   if (constants2.VIRTUAL_CURRENCY === filter) {
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    return intl5.string(require(1212) /* getSystemLocale */.t.ElYQFS);
-  } else if (constants2.COLLECTIBLE === filter) {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    return intl4.string(require(1212) /* getSystemLocale */.t.Jg17Ut);
-  } else if (constants2.IN_GAME === filter) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    return intl3.string(require(1212) /* getSystemLocale */.t["O/J2kr"]);
+    const intl5 = require(1236) /* getSystemLocale */.intl;
+    return intl5.string(require(1236) /* getSystemLocale */.t.ElYQFS);
+  } else if (tmp.COLLECTIBLE === filter) {
+    const intl4 = require(1236) /* getSystemLocale */.intl;
+    return intl4.string(require(1236) /* getSystemLocale */.t.Jg17Ut);
+  } else if (tmp.IN_GAME === filter) {
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    return intl3.string(require(1236) /* getSystemLocale */.t["O/J2kr"]);
   } else if (constants3.VIDEO === filter) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(require(1212) /* getSystemLocale */.t.e0iISA);
-  } else if (constants3.PLAY === filter) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["1nJR4p"]);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    return intl2.string(require(1236) /* getSystemLocale */.t.e0iISA);
+  } else if (tmp12.PLAY === filter) {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["1nJR4p"]);
   }
 };
 export const getFilterGroupHeadingText = function getFilterGroupHeadingText(arg0) {
   if ("reward" === arg0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(require(1212) /* getSystemLocale */.t.vjLqAU);
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    return intl2.string(require(1236) /* getSystemLocale */.t.vjLqAU);
   } else if ("task" === arg0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.Hufmss);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.Hufmss);
   }
 };
-export { getQuestUrl };
+export const getQuestUrl = function getQuestUrl(id) {
+  return "" + location.protocol + "//" + location.host + "/quests/" + id;
+};
 export const getCtaLink = function getCtaLink(config) {
   return config.ctaConfig.link;
 };
 export const copyShareLink = function copyShareLink(id, ctaContent) {
   ctaContent = ctaContent.ctaContent;
-  let obj = require(8421) /* apexExperiment */;
-  if (obj.shouldMigrateToAdAnalyticsInterface(require(8421) /* apexExperiment */.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "copy_share_link")) {
-    let tmpResult = tmp(8422);
-    obj = { type: tmp(8426).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp(5994).AdCreativeType.QUEST, adCreativeId: id, questContentCTA: ctaContent };
-    ({ content: obj5.surfaceId, sourceQuestContent: obj5.sourceQuestContent, position: obj5.questContentPosition, impressionId: obj5.impressionId } = ctaContent);
+  let obj = require(8445) /* apexExperiment */;
+  if (obj.shouldMigrateToAdAnalyticsInterface(require(8445) /* apexExperiment */.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "copy_share_link")) {
+    let tmpResult = tmp(8446);
+    obj = { type: null, adCreativeType: null, adCreativeId: null, questContentCTA: null, surfaceId: null, sourceQuestContent: null, questContentPosition: null, impressionId: null };
+    obj[0] = tmp(8450).AdUserActionType.CLICK_INTERNAL;
+    obj[1] = tmp(6013).AdCreativeType.QUEST;
+    obj[2] = id;
+    obj[3] = ctaContent;
+    ({ content: obj5[4], sourceQuestContent: obj5[5], position: obj5[6], impressionId: obj5[7] } = ctaContent);
     tmpResult.captureAdUserAction(obj);
   } else {
-    tmpResult = tmp(5983);
-    obj = { questId: id, questContent: ctaContent.content, questContentCTA: ctaContent };
-    ({ position: obj3.questContentPosition, impressionId: obj3.impressionId, sourceQuestContent: obj3.sourceQuestContent } = ctaContent);
+    tmpResult = tmp(6002);
+    obj = { questId: null, questContent: null, questContentCTA: null, questContentPosition: null, impressionId: null, sourceQuestContent: null };
+    obj[0] = id;
+    obj[1] = ctaContent.content;
+    obj[2] = ctaContent;
+    ({ position: obj3[3], impressionId: obj3[4], sourceQuestContent: obj3[5] } = ctaContent);
     const result = tmpResult.trackQuestContentClicked(obj);
   }
-  require(5525) /* _copy */.copy(getQuestUrl(id));
+  require(5543) /* _copy */.copy("" + location.protocol + "//" + location.host + "/quests/" + id);
 };
 export const getDefaultReward = function getDefaultReward(config) {
   if (0 === config.rewardsConfig.rewards.length) {

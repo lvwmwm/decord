@@ -1,35 +1,36 @@
-// Module ID: 14216
-// Function ID: 109168
+// Module ID: 14238
+// Function ID: 14239
 // Name: NavigateForwardButton
-// Dependencies: [31, 33, 4165, 689, 4695, 4161, 1273, 14217, 2]
+// Dependencies: [19, 21, 4189, 712, 4717, 4185, 1297, 14239, 2]
 // Exports: default
 
-// Module 14216 (NavigateForwardButton)
-import "result";
+// Module 14238 (NavigateForwardButton)
+import "noop";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, flexDirection: "row", padding: 16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.text = { flexGrow: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_role_subscriptions/native/components/NavigateForwardButton.tsx");
+({ jsx: c3, jsxs: c4 } = jsxProd);
+createCacheKey = { container: null, text: null };
+createCacheKey = { alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, flexDirection: "row", padding: 16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexGrow: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createCacheKey").fileFinishedImporting("modules/guild_role_subscriptions/native/components/NavigateForwardButton.tsx");
 
 export default function NavigateForwardButton(arg0) {
   let onPress;
   let text;
   ({ onPress, text } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.container, onPress };
+  const tmp = createCacheKey();
+  let obj = { style: tmp.container, onPress, children: null };
   obj = { style: tmp.text, variant: "text-md/semibold", color: "interactive-text-active", children: text };
-  const items = [callback(require(4161) /* Text */.Text, obj), ];
-  obj = { source: importDefault(14217) };
-  items[1] = callback(require(1273) /* Button */.Icon, obj);
-  obj.children = items;
-  return callback2(require(4695) /* PressableBase */.PressableHighlight, obj);
+  const items = [callback(require(4185) /* Text */.Text, obj), ];
+  obj = { source: null };
+  obj[0] = importDefault(14239);
+  items[1] = callback(require(1297) /* Button */.Icon, obj);
+  obj[2] = items;
+  return callback2(require(4717) /* PressableBase */.PressableHighlight, obj);
 };

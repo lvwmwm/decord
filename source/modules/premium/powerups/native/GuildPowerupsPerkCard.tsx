@@ -1,32 +1,32 @@
-// Module ID: 11638
-// Function ID: 90296
+// Module ID: 11662
+// Function ID: 11663
 // Name: GuildPowerupsPerkCard
-// Dependencies: [31, 27, 33, 4165, 689, 4101, 4011, 11635, 11591, 4589, 4161, 11592, 1273, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4125, 4035, 11659, 11615, 4611, 4185, 11616, 1297, 1236, 2]
 // Exports: default
 
-// Module 11638 (GuildPowerupsPerkCard)
-import "result";
+// Module 11662 (GuildPowerupsPerkCard)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.card = { padding: 0, overflow: "hidden" };
-_createForOfIteratorHelperLoose.contentContainer = { gap: require("_createForOfIteratorHelperLoose").space.PX_16, padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.imageContainer = { width: "100%", height: 160 };
-_createForOfIteratorHelperLoose.gradient = { position: "absolute", left: 0, right: 0, top: 0, height: "100%" };
-let obj1 = { gap: require("_createForOfIteratorHelperLoose").space.PX_16, padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.headerContainer = { gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-const obj2 = { gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.badge = { position: "absolute", top: require("_createForOfIteratorHelperLoose").space.PX_12, right: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { position: "absolute", top: require("_createForOfIteratorHelperLoose").space.PX_12, right: require("_createForOfIteratorHelperLoose").space.PX_12 };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null, card: null, contentContainer: null, imageContainer: null, gradient: null, headerContainer: null, badge: null };
+createCacheKey = { marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { padding: 0, overflow: "hidden" };
+createCacheKey[2] = { gap: require("Themes").space.PX_16, padding: require("Themes").space.PX_16 };
+createCacheKey[3] = { width: "100%", height: 160 };
+createCacheKey[4] = { position: "absolute", left: 0, right: 0, top: 0, height: "100%" };
+let obj1 = { gap: require("Themes").space.PX_16, padding: require("Themes").space.PX_16 };
+createCacheKey[5] = { gap: require("Themes").space.PX_4 };
+const obj2 = { gap: require("Themes").space.PX_4 };
+createCacheKey[6] = { position: "absolute", top: require("Themes").space.PX_12, right: require("Themes").space.PX_12 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { position: "absolute", top: require("Themes").space.PX_12, right: require("Themes").space.PX_12 };
 const result = require("jsxProd").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsPerkCard.tsx");
 
 export default function GuildPowerupsPerkCard(arg0) {
@@ -45,62 +45,61 @@ export default function GuildPowerupsPerkCard(arg0) {
     isImageAnimated = true;
   }
   ({ riveComponent, status, badge } = arg0);
-  let obj = { title: 0, description: 0, imageUrl: 0, isImageAnimated: 0, riveComponent: 0, style: 0, onPress: 0, status: 0, badge: 0 };
   ({ style, onPress } = arg0);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(arg0, obj);
-  const tmp3 = _createForOfIteratorHelperLoose();
-  let obj1 = require(4011) /* AccessibilityAnnouncer */;
-  const tmp4 = importDefault(4101)();
-  obj = { containerStyle: items, style: tmp3.card, status, onPress };
-  items = [tmp3.container, style];
-  obj = { style: tmp3.imageContainer };
-  const tmp5 = obj1.isThemeDark(importDefault(4101)()) ? ["#0f101100", "#0f101166"] : ["#0f101100", "#0f10111a"];
-  if (null == riveComponent) {
-    obj1 = {};
-    let str = "";
-    if (null != imageUrl) {
-      str = imageUrl;
+  const merged = Object.assign(arg0, Object.create(null));
+  const tmp2 = createCacheKey();
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  const tmp5 = importDefault(4125)();
+  obj = { containerStyle: items, style: tmp2.card, status, onPress, children: null };
+  items = [tmp2.container, style];
+  obj = { style: tmp2.imageContainer, children: null };
+  let tmp3Result = tmp3(11659);
+  if (riveComponent == null) {
+    tmp3Result = tmp3(11615);
+    if (imageUrl == null) {
+      imageUrl = "";
     }
-    obj1.imageUrl = str;
-    obj1.isAnimated = isImageAnimated;
-    riveComponent = callback(importDefault(11591), obj1);
-    const tmp12 = importDefault(11591);
-    const tmp9 = callback;
+    const obj1 = { imageUrl: null, isAnimated: null };
+    obj1[0] = imageUrl;
+    obj1[1] = isImageAnimated;
+    riveComponent = callback(tmp3Result, obj1);
+    const tmp11 = callback;
   }
-  const items1 = [riveComponent, callback(importDefault(4589), { colors: tmp5, style: tmp3.gradient })];
-  obj.children = items1;
-  const items2 = [callback2(View, obj), , , ];
-  const obj3 = { style: tmp3.contentContainer };
-  const obj4 = { style: tmp3.headerContainer };
-  const items3 = [callback(require(4161) /* Text */.Text, { variant: "heading-md/bold", children: title }), callback(require(4161) /* Text */.Text, { variant: "text-sm/medium", children: description })];
-  obj4.children = items3;
-  const items4 = [callback2(View, obj4), ];
+  const items1 = [riveComponent, ];
+  const tmp7 = obj.isThemeDark(importDefault(4125)()) ? ["#0f101100", "#0f101166"] : ["#0f101100", "#0f10111a"];
+  items1[1] = callback(importDefault(4611), { colors: obj.isThemeDark(importDefault(4125)()) ? ["#0f101100", "#0f101166"] : ["#0f101100", "#0f10111a"], style: tmp2.gradient });
+  obj[1] = items1;
+  const items2 = [closure_5(View, obj), , , ];
+  const obj3 = { style: tmp2.contentContainer, children: null };
+  const obj4 = { style: tmp2.headerContainer, children: null };
+  const items3 = [callback(require(4185) /* Text */.Text, { variant: "heading-md/bold", children: title }), callback(require(4185) /* Text */.Text, { variant: "text-sm/medium", children: description })];
+  obj4[1] = items3;
+  const items4 = [closure_5(View, obj4), ];
   const obj5 = {};
   const merged1 = Object.assign(merged);
-  obj5["status"] = status;
-  items4[1] = callback(require(11592) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, obj5);
-  obj3.children = items4;
-  items2[1] = callback2(View, obj3);
-  let tmp14 = "new" === badge;
-  if (tmp14) {
-    const obj6 = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj6.text = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-    obj6.style = tmp3.badge;
-    tmp14 = callback(require(1273) /* Button */.TextBadge, obj6);
+  obj5.status = status;
+  items4[1] = callback(require(11616) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, obj5);
+  obj3[1] = items4;
+  items2[1] = closure_5(View, obj3);
+  let tmp13Result = "new" === badge;
+  if (tmp13Result) {
+    const obj6 = { text: null, style: null };
+    const intl = tmp6(1236).intl;
+    obj6[0] = intl.string(tmp6(1236).t.y2b7CA);
+    obj6[1] = tmp2.badge;
+    tmp13Result = tmp13(tmp6(1297).TextBadge, obj6);
   }
-  items2[2] = tmp14;
-  let tmp18 = "beta" === badge;
-  if (tmp18) {
-    const obj7 = {};
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj7.text = intl2.string(require(1212) /* getSystemLocale */.t.oW0eUd);
-    obj7.color = require(1273) /* Button */.BadgeColors.BRAND;
-    obj7.style = tmp3.badge;
-    tmp18 = callback(require(1273) /* Button */.TextBadge, obj7);
+  items2[2] = tmp13Result;
+  tmp13Result = "beta" === badge;
+  if (tmp13Result) {
+    const obj7 = { text: null, color: null, style: null };
+    const intl2 = tmp6(1236).intl;
+    obj7[0] = intl2.string(tmp6(1236).t.oW0eUd);
+    obj7[1] = tmp6(1297).BadgeColors.BRAND;
+    obj7[2] = tmp2.badge;
+    tmp13Result = tmp13(tmp6(1297).TextBadge, obj7);
   }
-  items2[3] = tmp18;
-  obj.children = items2;
-  return callback2(importDefault(11635), obj);
+  items2[3] = tmp13Result;
+  obj[4] = items2;
+  return closure_5(tmp3Result, obj);
 };

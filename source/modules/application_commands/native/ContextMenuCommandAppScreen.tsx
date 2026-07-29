@@ -1,19 +1,19 @@
-// Module ID: 15662
-// Function ID: 120630
+// Module ID: 15697
+// Function ID: 15698
 // Name: ContextMenuCommandAppScreen
-// Dependencies: [31, 33, 4165, 689, 5193, 8803, 15661, 9217, 2]
+// Dependencies: [19, 21, 4189, 712, 5215, 8827, 15696, 9241, 2]
 // Exports: default
 
-// Module 15662 (ContextMenuCommandAppScreen)
-import result from "result";
+// Module 15697 (ContextMenuCommandAppScreen)
+import noop from "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.list = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/application_commands/native/ContextMenuCommandAppScreen.tsx");
+createCacheKey = { list: null };
+createCacheKey = { marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createCacheKey").fileFinishedImporting("modules/application_commands/native/ContextMenuCommandAppScreen.tsx");
 
 export default function ContextMenuCommandAppScreen(route) {
   const params = route.route.params;
@@ -40,6 +40,6 @@ export default function ContextMenuCommandAppScreen(route) {
     }, commands[arg1].id);
   }, items1);
   const tmp = section(commands[5])();
-  const tmp4 = _createForOfIteratorHelperLoose();
-  return jsx(section(commands[7]), { style: _createForOfIteratorHelperLoose().list, sections: memo, estimatedListSize: "windowSize", itemSize: tmp, insetEnd: section(commands[4])({ includeKeyboardHeight: true }).insets.bottom, renderItem: callback });
+  const tmp4 = createCacheKey();
+  return jsx(section(commands[7]), { style: createCacheKey().list, sections: memo, estimatedListSize: "windowSize", itemSize: tmp, insetEnd: section(commands[4])({ includeKeyboardHeight: true }).insets.bottom, renderItem: callback });
 };

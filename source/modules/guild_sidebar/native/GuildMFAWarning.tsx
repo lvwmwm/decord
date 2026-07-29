@@ -1,57 +1,130 @@
-// Module ID: 15137
-// Function ID: 115147
+// Module ID: 15170
+// Function ID: 15171
 // Name: handlePress
-// Dependencies: [5, 31, 27, 653, 33, 4165, 689, 9889, 1921, 1935, 3862, 4695, 15138, 4161, 1212, 1273, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4189, 712, 9911, 1945, 1959, 3886, 4717, 15171, 4185, 1236, 1297, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 15137 (handlePress)
-import closure_3 from "_createForOfIteratorHelperLoose";
-import "result";
+// Module 15170 (handlePress)
+import closure_3 from "createCacheKey";
+import "noop";
 import { Image } from "get ActivityIndicator";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
+let Fonts;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function handlePress() {
-  return _handlePress(...arguments);
+  const self = this;
+  const apply = _handlePress.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _handlePress() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback(function*() {
+    if (c3 === 2) {
+      c3 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (0 === paths) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const callback = tmp5;
+            let articleURL = tmp2;
+            articleURL = undefined;
+            paths = 1;
+            c3 = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = outer1_0(paths[9])(paths[8], paths.paths);
+            return obj1;
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          const obj2 = { value: null, done: true };
+          obj2[0] = arg1;
+          return obj2;
+        } else {
+          articleURL = arg1.default;
+          obj = callback(paths[10]);
+          obj.openURL(articleURL.getArticleURL(constants.SETTING_UP_TWO_FACTOR));
+          c3 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp17) {
+        c3 = tmp;
+        throw tmp17;
+      }
+    }
+  });
+  const _handlePress = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-const HelpdeskArticles = ME.HelpdeskArticles;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, padding: 10, alignItems: "center" };
-_createForOfIteratorHelperLoose.MFAWarning = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.MFAWarningIcon = { marginVertical: 10, width: 98, height: 53 };
-_createForOfIteratorHelperLoose.MFAWarningLink = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLUE_345, fontFamily: ME.Fonts.PRIMARY_SEMIBOLD };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.BLUE_345, fontFamily: ME.Fonts.PRIMARY_SEMIBOLD };
+({ HelpdeskArticles: c5, Fonts } = ME);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { MFAWarning: null, MFAWarningIcon: null, MFAWarningLink: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, padding: 10, alignItems: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginVertical: 10, width: 98, height: 53 };
+createCacheKey[2] = { color: require("Themes").unsafe_rawColors.BLUE_345, fontFamily: Fonts.PRIMARY_SEMIBOLD };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { color: require("Themes").unsafe_rawColors.BLUE_345, fontFamily: Fonts.PRIMARY_SEMIBOLD };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_sidebar/native/GuildMFAWarning.tsx");
 
 export default function GuildMFAWarning() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { accessibilityRole: "button", style: tmp.MFAWarning, onPress: handlePress };
-  obj = { style: tmp.MFAWarningIcon, source: importDefault(15138) };
+  const tmp = createCacheKey();
+  let obj = { accessibilityRole: "button", style: tmp.MFAWarning, onPress: handlePress, children: null };
+  obj = { style: tmp.MFAWarningIcon, source: null };
+  obj[1] = importDefault(15171);
   const items = [callback2(Image, obj), ];
-  obj = { variant: "text-xs/medium", color: "text-default" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  const items1 = [intl.string(require(1212) /* getSystemLocale */.t.ZIf8Ag), ];
-  const obj1 = { style: tmp.MFAWarningLink };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  const items2 = [" ", intl2.string(require(1212) /* getSystemLocale */.t.hvVgAZ)];
-  obj1.children = items2;
-  items1[1] = callback3(require(1273) /* Button */.LegacyText, obj1);
-  obj.children = items1;
-  items[1] = callback3(require(4161) /* Text */.Text, obj);
-  obj.children = items;
-  return callback3(require(4695) /* PressableBase */.PressableOpacity, obj);
+  obj = { variant: "text-xs/medium", color: "text-default", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  const items1 = [intl.string(require(1236) /* getSystemLocale */.t.ZIf8Ag), ];
+  const obj1 = { style: tmp.MFAWarningLink, children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  const items2 = [" ", intl2.string(require(1236) /* getSystemLocale */.t.hvVgAZ)];
+  obj1[1] = items2;
+  items1[1] = callback3(require(1297) /* Button */.LegacyText, obj1);
+  obj[2] = items1;
+  items[1] = callback3(require(4185) /* Text */.Text, obj);
+  obj[3] = items;
+  return callback3(require(4717) /* PressableBase */.PressableOpacity, obj);
 };
 export const getScaledGuildMFAWarningHeight = function getScaledGuildMFAWarningHeight(fontScale) {
-  return 83 + 5 * require(9889) /* scaleLineHeight */.scaleTextLineHeight("text-xs/medium", fontScale) + 10 + 10;
+  return 83 + 5 * require(9911) /* map */.scaleTextLineHeight("text-xs/medium", fontScale) + 10 + 10;
 };

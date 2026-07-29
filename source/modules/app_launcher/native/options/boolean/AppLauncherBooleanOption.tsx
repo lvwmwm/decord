@@ -1,20 +1,20 @@
-// Module ID: 11330
-// Function ID: 87935
+// Module ID: 11354
+// Function ID: 11355
 // Name: AppLauncherBooleanOption
-// Dependencies: [57, 31, 33, 4165, 689, 7611, 2]
+// Dependencies: [32, 19, 21, 4189, 712, 7634, 2]
 // Exports: default
 
-// Module 11330 (AppLauncherBooleanOption)
+// Module 11354 (AppLauncherBooleanOption)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", width: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignItems: "center" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { container: null };
+createCacheKey = { flexDirection: "row", width: "100%", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.lg, alignItems: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/options/boolean/AppLauncherBooleanOption.tsx");
 
 export default function AppLauncherBooleanOption(arg0) {
@@ -24,28 +24,32 @@ export default function AppLauncherBooleanOption(arg0) {
   let require;
   let style;
   ({ initialValue: require, onPress: dependencyMap } = arg0);
+  let first;
+  let React;
   ({ style, option, hasError } = arg0);
-  const tmp2 = first(React.useState(() => {
-    let tmp = null != closure_0;
-    if (tmp) {
-      tmp = "text" === closure_0.type;
+  let tmp2 = first(React.useState(() => {
+    let tmp2 = null != closure_0;
+    if (tmp2) {
+      tmp2 = "text" === tmp.type;
     }
-    if (tmp) {
-      tmp = "true" === closure_0.text;
+    if (tmp2) {
+      tmp2 = "true" === tmp.text;
     }
-    return tmp;
+    return tmp2;
   }), 2);
   first = tmp2[0];
   React = tmp2[1];
-  const obj = { start: true, end: true };
-  const items = [_createForOfIteratorHelperLoose().container, style];
-  obj.style = items;
-  obj.hasError = hasError;
-  obj.label = option.displayName;
-  obj.selected = first;
-  obj.onPress = function onPress() {
-    callback2(!first);
-    callback(!first);
-  };
-  return jsx(require(7611) /* Form */.FormCheckboxRow, { start: true, end: true });
+  const items = [createCacheKey().container, style];
+  return jsx(require(7634) /* Form */.FormCheckboxRow, {
+    start: true,
+    end: true,
+    style: items,
+    hasError,
+    label: option.displayName,
+    selected: first,
+    onPress() {
+      callback2(!first);
+      callback(!first);
+    }
+  });
 };

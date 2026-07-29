@@ -1,42 +1,40 @@
-// Module ID: 15056
-// Function ID: 114614
-// Name: trackClick
-// Dependencies: [31, 27, 1908, 1838, 1907, 14289, 653, 33, 4165, 689, 675, 8252, 15057, 1212, 8280, 15058, 8324, 15059, 10039, 11847, 14290, 4161, 2]
+// Module ID: 15086
+// Function ID: 15087
+// Name: HappeningNowCardCreateChannel
+// Dependencies: [19, 17, 1932, 1862, 1931, 14311, 676, 21, 4189, 712, 698, 8276, 15087, 1236, 8304, 15088, 8348, 15089, 10060, 11872, 14312, 4185, 2]
 // Exports: HappeningNowCardCreateChannel, HappeningNowCardCustomizeGuild, HappeningNowCardInvite, HappeningNowStudentHubAddServer
 
-// Module 15056 (trackClick)
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_createForOfIteratorHelperLoose";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 15086 (HappeningNowCardCreateChannel)
+import importAllResult from "registerAsset";
+import get_ActivityIndicator from "registerAsset";
+import comparator from "comparator";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import handleConnectionOpen from "handleConnectionOpen";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Text";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let HAPPENING_NOW_CARD_HEIGHT;
+let c10;
+let c4;
+let c5;
+let c9;
 let closure_12;
-let closure_13;
-let closure_4;
-let closure_5;
+let map1;
+let unpackModuleId;
 const require = arg1;
-function trackClick(type, guild_id) {
-  let obj = importDefault(675);
-  obj = { type, order: 0, guild_id };
-  obj.track(constants.ACTIVITY_CARD_CLICKED, obj);
-}
-({ View: closure_4, Image: closure_5 } = get_ActivityIndicator);
-let closure_9 = HAPPENING_NOW_PANELS_CONTAINER_PADDING.HappeningNowCardTrackingType;
-({ AnalyticEvents: closure_10, InstantInviteSources: closure_11 } = ME);
-({ jsx: closure_12, jsxs: closure_13 } = jsxProd);
-let obj = {};
-obj = { flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 8, borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, height: HAPPENING_NOW_PANELS_CONTAINER_PADDING.HAPPENING_NOW_CARD_HEIGHT, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-obj.actionCard = obj;
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, height: 44, width: "100%", alignItems: "center", justifyContent: "center", marginBottom: 4, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-obj.actionCardImage = _createForOfIteratorHelperLoose;
-let closure_14 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+({ View: c4, Image: c5 } = get_ActivityIndicator);
+({ HappeningNowCardTrackingType: c9, HAPPENING_NOW_CARD_HEIGHT } = HAPPENING_NOW_PANELS_CONTAINER_PADDING);
+({ AnalyticEvents: c10, InstantInviteSources: unpackModuleId } = ME);
+({ jsx: closure_12, jsxs: map1 } = jsxProd);
+let obj = { actionCard: null, actionCardImage: null };
+obj = { flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 8, borderWidth: 1, borderRadius: require("Themes").radii.lg, height: HAPPENING_NOW_CARD_HEIGHT, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderColor: require("Themes").colors.BORDER_SUBTLE };
+obj[0] = obj;
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, height: 44, width: "100%", alignItems: "center", justifyContent: "center", marginBottom: 4, borderRadius: require("Themes").radii.sm };
+obj[1] = createCacheKey;
+let closure_14 = createCacheKey.createStyles(obj);
 let closure_15 = importAllResult.memo((panelVariant) => {
   let imageSource;
   let onPress;
@@ -47,15 +45,14 @@ let closure_15 = importAllResult.memo((panelVariant) => {
     flag = false;
   }
   const tmp = callback3();
-  let obj = { onPress, style: tmp.actionCard, width: "medium", panelVariant: flag };
-  obj = { style: tmp.actionCardImage, children: callback(closure_5, { source: imageSource }) };
-  const items = [callback(closure_4, obj), ];
-  obj = { variant: "text-sm/normal", maxFontSizeMultiplier: 2, children: text };
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
-  return callback2(importDefault(14290), obj);
+  let obj = { onPress, style: tmp.actionCard, width: "medium", panelVariant: flag, children: null };
+  obj = { style: tmp.actionCardImage, children: null };
+  obj[1] = callback(closure_5, { source: imageSource });
+  const items = [callback(closure_4, obj), callback(require(4185) /* Text */.Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2, children: text })];
+  obj[4] = items;
+  return callback2(importDefault(14312), obj);
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowActions.tsx");
+let result = require("comparator").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowActions.tsx");
 
 export const HappeningNowCardCreateChannel = function HappeningNowCardCreateChannel(guildId) {
   guildId = guildId.guildId;
@@ -64,16 +61,18 @@ export const HappeningNowCardCreateChannel = function HappeningNowCardCreateChan
     flag = false;
   }
   const items = [guildId];
-  const obj = {};
+  let obj = { imageSource: null, onPress: null, text: null, panelVariant: null };
   const callback = importAllResult.useCallback(() => {
-    outer1_16(outer1_9.GUILD_ACTION_CREATE_CHANNEL_CARD, guildId);
+    let obj = outer1_1(outer1_2[10]);
+    obj = { type: outer1_9.GUILD_ACTION_CREATE_CHANNEL_CARD, order: 0, guild_id: guildId };
+    obj.track(outer1_10.ACTIVITY_CARD_CLICKED, obj);
     outer1_1(outer1_2[11]).open(null, guildId, null, null);
   }, items);
-  obj.imageSource = importDefault(15057);
-  obj.onPress = callback;
-  const intl = guildId(1212).intl;
-  obj.text = intl.string(guildId(1212).t["fUYU+j"]);
-  obj.panelVariant = flag;
+  obj[0] = importDefault(15087);
+  obj[1] = callback;
+  const intl = guildId(1236).intl;
+  obj[2] = intl.string(guildId(1236).t["fUYU+j"]);
+  obj[3] = flag;
   return callback(closure_15, obj);
 };
 export const HappeningNowCardCustomizeGuild = function HappeningNowCardCustomizeGuild(guildId) {
@@ -83,14 +82,16 @@ export const HappeningNowCardCustomizeGuild = function HappeningNowCardCustomize
     flag = false;
   }
   const items = [guildId];
-  const obj = { text: "Customize" };
+  let obj = { text: "Customize", imageSource: null, onPress: null, panelVariant: null };
   const callback = importAllResult.useCallback(() => {
-    outer1_16(outer1_9.GUILD_ACTION_CUSTOMIZE_CARD, guildId);
+    let obj = outer1_1(outer1_2[10]);
+    obj = { type: outer1_9.GUILD_ACTION_CUSTOMIZE_CARD, order: 0, guild_id: guildId };
+    obj.track(outer1_10.ACTIVITY_CARD_CLICKED, obj);
     outer1_1(outer1_2[14]).open(guildId);
   }, items);
-  obj.imageSource = importDefault(15058);
-  obj.onPress = callback;
-  obj.panelVariant = flag;
+  obj[1] = importDefault(15088);
+  obj[2] = callback;
+  obj[3] = flag;
   return callback(closure_15, obj);
 };
 export const HappeningNowCardInvite = function HappeningNowCardInvite(guildId) {
@@ -100,22 +101,26 @@ export const HappeningNowCardInvite = function HappeningNowCardInvite(guildId) {
     flag = false;
   }
   const items = [guildId];
-  let obj = {};
+  let obj = { imageSource: null, onPress: null, text: null, panelVariant: null };
   const callback = importAllResult.useCallback(() => {
     const guild = outer1_7.getGuild(guildId);
     const channels = outer1_6.getChannels(guildId);
     const channelId = outer1_8.getChannelId(guildId);
     if (null != guild) {
-      outer1_16(outer1_9.GUILD_ACTION_INVITE_CARD, guildId);
-      const obj = guildId(outer1_2[16]);
-      const result = obj.handleOpenInviteActionsheet(guild, channelId, channels, outer1_11.SERVER_PROFILE);
+      let obj = outer1_1(outer1_2[10]);
+      obj = { type: null, order: 0, guild_id: null };
+      obj[0] = outer1_9.GUILD_ACTION_INVITE_CARD;
+      obj[2] = guildId;
+      obj.track(outer1_10.ACTIVITY_CARD_CLICKED, obj);
+      const obj3 = guildId(outer1_2[16]);
+      const result = obj3.handleOpenInviteActionsheet(guild, channelId, channels, outer1_11.SERVER_PROFILE);
     }
   }, items);
-  obj.imageSource = importDefault(15059);
-  obj.onPress = callback;
-  const intl = guildId(1212).intl;
-  obj.text = intl.string(guildId(1212).t.VINpSK);
-  obj.panelVariant = flag;
+  obj[0] = importDefault(15089);
+  obj[1] = callback;
+  const intl = guildId(1236).intl;
+  obj[2] = intl.string(guildId(1236).t.VINpSK);
+  obj[3] = flag;
   return callback(closure_15, obj);
 };
 export const HappeningNowStudentHubAddServer = function HappeningNowStudentHubAddServer(guildId) {
@@ -125,23 +130,27 @@ export const HappeningNowStudentHubAddServer = function HappeningNowStudentHubAd
     flag = false;
   }
   const items = [guildId];
-  let obj = {};
+  let obj = { imageSource: null, onPress: null, text: null, panelVariant: null };
   const callback = importAllResult.useCallback(() => {
     const guild = outer1_7.getGuild(guildId);
     const defaultChannel = outer1_6.getDefaultChannel(guildId);
-    if (tmp3) {
-      outer1_16(outer1_9.GUILD_ACTION_STUDENT_HUB_ADD_SERVER, guildId);
-      let obj = outer1_1(outer1_2[18]);
-      obj = {};
-      ({ id: obj2.directoryGuildId, name: obj2.directoryGuildName } = guild);
-      obj.directoryChannelId = defaultChannel.id;
-      obj.open(obj);
+    if (tmp4) {
+      let obj = outer1_1(outer1_2[10]);
+      obj = { type: null, order: 0, guild_id: null };
+      obj[0] = outer1_9.GUILD_ACTION_STUDENT_HUB_ADD_SERVER;
+      obj[2] = guildId;
+      obj.track(outer1_10.ACTIVITY_CARD_CLICKED, obj);
+      obj = { directoryGuildId: null, directoryGuildName: null, directoryChannelId: null };
+      ({ id: obj4[0], name: obj4[1] } = guild);
+      obj[2] = defaultChannel.id;
+      outer1_1(outer1_2[18]).open(obj);
+      const obj3 = outer1_1(outer1_2[18]);
     }
   }, items);
-  obj.imageSource = importDefault(11847);
-  obj.onPress = callback;
-  const intl = guildId(1212).intl;
-  obj.text = intl.string(guildId(1212).t.emRpdS);
-  obj.panelVariant = flag;
+  obj[0] = importDefault(11872);
+  obj[1] = callback;
+  const intl = guildId(1236).intl;
+  obj[2] = intl.string(guildId(1236).t.emRpdS);
+  obj[3] = flag;
   return callback(closure_15, obj);
 };

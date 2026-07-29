@@ -1,57 +1,58 @@
-// Module ID: 7635
-// Function ID: 60889
+// Module ID: 7658
+// Function ID: 7659
 // Name: FormSliderRow
-// Dependencies: [31, 27, 33, 4165, 5197, 5200, 4161, 7636, 5191, 2]
+// Dependencies: [19, 17, 21, 4189, 5219, 5222, 4185, 7659, 5213, 2]
 // Exports: default
 
-// Module 7635 (FormSliderRow)
-import result from "result";
+// Module 7658 (FormSliderRow)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = jsxProd);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ labels: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, slider: { marginStart: -4, marginTop: 8 } });
+({ jsx: c5, jsxs: closure_6, Fragment: error } = jsxProd);
+let closure_8 = createCacheKey.createStyles({ labels: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, slider: { marginStart: -4, marginTop: 8 } });
 const result = require("jsxProd").fileFinishedImporting("design/void/Form/native/FormSliderRow.tsx");
 
 export default function FormSliderRow(arg0) {
   let label;
   let trailing;
   ({ label, trailing } = arg0);
-  let obj = Object.create(null);
-  obj.label = 0;
-  obj.trailing = 0;
-  const merged = Object.assign(arg0, obj);
-  const context = React.useContext(require(5197) /* context */.RedesignCompatContext);
-  const tmp4 = callback2();
+  const merged = Object.assign(arg0, Object.create(null));
+  const context = React.useContext(require(5219) /* context */.RedesignCompatContext);
+  const tmp5 = callback2();
   if (context) {
-    obj = {};
-    const obj1 = { style: tmp4.labels };
-    const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: label };
-    const items = [callback(require(4161) /* Text */.Text, obj2), trailing];
-    obj1.children = items;
-    const items1 = [tmp5(View, obj1), ];
-    const obj3 = {};
+    let obj = { children: null };
+    obj = { style: null, children: null };
+    obj[0] = tmp5.labels;
+    const obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
+    obj1[2] = label;
+    const items = [callback(tmp2(4185).Text, obj1), trailing];
+    obj[1] = items;
+    const items1 = [tmp6(View, obj), ];
+    const obj2 = {};
     const merged1 = Object.assign(merged);
-    obj3["style"] = tmp4.slider;
-    items1[1] = callback(importDefault(7636), obj3);
-    obj.children = items1;
-    let tmp5Result = tmp5(require(5200) /* getCardBackgroundToken */.Card, obj);
-    const tmp20 = importDefault(7636);
+    obj2.style = tmp5.slider;
+    items1[1] = callback(importDefault(7659), obj2);
+    obj[0] = items1;
+    let tmp6Result = tmp6(tmp2(5222).Card, obj);
+    const tmp18 = importDefault(7659);
   } else {
-    obj = {};
-    const obj4 = { label, trailing };
-    const items2 = [callback(importDefault(5191), obj4), ];
-    const obj5 = {};
+    obj = { children: null };
+    const obj3 = { label: null, trailing: null };
+    obj3[0] = label;
+    obj3[1] = trailing;
+    const items2 = [callback(importDefault(5213), obj3), ];
+    const obj4 = {};
     const merged2 = Object.assign(merged);
-    items2[1] = callback(importDefault(7636), obj5);
-    obj.children = items2;
-    tmp5Result = tmp5(closure_7, obj);
-    const tmp10 = importDefault(7636);
+    items2[1] = callback(importDefault(7659), obj4);
+    obj[0] = items2;
+    tmp6Result = tmp6(closure_7, obj);
+    const tmp10 = importDefault(7659);
   }
-  return tmp5Result;
+  return tmp6Result;
 };

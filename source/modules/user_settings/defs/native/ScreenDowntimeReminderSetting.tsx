@@ -1,35 +1,35 @@
-// Module ID: 14454
-// Function ID: 110361
+// Module ID: 14476
+// Function ID: 14477
 // Name: toggle
-// Dependencies: [10224, 7733, 5838, 13921, 6235, 10099, 1212, 566, 14455, 2]
+// Dependencies: [10245, 7756, 5856, 13942, 6255, 10120, 1236, 589, 14477, 2]
 
-// Module 14454 (toggle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14476 (toggle)
+import DesktopNotificationTypes from "DesktopNotificationTypes";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.z6tZKH);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.z6tZKH);
   },
   useDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.TummoQ);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.TummoQ);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.screenDowntimeReminder);
+    const items = [DesktopNotificationTypes];
+    return require(589) /* initialize */.useStateFromStores(items, () => obj.screenDowntimeReminder);
   },
   onValueChange(screenDowntimeReminder) {
-    return importDefault(14455).setScreenDowntimeReminder(screenDowntimeReminder);
+    return importDefault(14477).setScreenDowntimeReminder(screenDowntimeReminder);
   },
   usePredicate() {
-    let isFamilyCenterV3Enabled = require(5838) /* apexExperiment */.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeReminderSetting" });
-    const obj = require(5838) /* apexExperiment */;
-    const tmp2 = importDefault(13921)();
-    const hasActiveParentLinks = require(6235) /* useUserIdsForLinkStatus */.useHasActiveParentLinks();
+    let isFamilyCenterV3Enabled = require(5856) /* apexExperiment */.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeReminderSetting" });
+    const obj = require(5856) /* apexExperiment */;
+    const tmp2 = importDefault(13942)();
+    const hasActiveParentLinks = require(6255) /* useUserIdsForLinkStatus */.useHasActiveParentLinks();
     if (isFamilyCenterV3Enabled) {
       isFamilyCenterV3Enabled = tmp2;
     }

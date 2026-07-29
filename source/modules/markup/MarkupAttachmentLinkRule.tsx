@@ -1,10 +1,10 @@
-// Module ID: 4611
-// Function ID: 40248
-// Dependencies: [3864, 2]
+// Module ID: 4633
+// Function ID: 4634
+// Dependencies: [3888, 2]
 
-// Module 4611
+// Module 4633
 const re0 = /^https:\/\/(?:(?:media|images)\.discordapp\.net|(?:cdn\.discordapp\.com))\/(?:attachments|ephemeral-attachments)\/\d+\/\d+\/([A-Za-z0-9._-]*[A-Za-z0-9_-])(?:[?][a-zA-Z0-9?&=_-]*)?/;
-let obj = {};
+let obj = { attachmentLink: null };
 obj = {
   order: require("t").defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
@@ -16,7 +16,7 @@ obj = {
     return { type: "attachmentLink", content: items, attachmentUrl: attachmentUrl[0], attachmentName: attachmentUrl[1] };
   }
 };
-obj.attachmentLink = obj;
+obj[0] = obj;
 const result = require("set").fileFinishedImporting("modules/markup/MarkupAttachmentLinkRule.tsx");
 
 export default obj;

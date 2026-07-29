@@ -1,30 +1,41 @@
-// Module ID: 10200
-// Function ID: 78725
+// Module ID: 10221
+// Function ID: 10222
 // Name: computeIsFavoritesGuildEnabled
-// Dependencies: [1351, 10194, 566, 2]
-// Exports: getIsFavoritesGuildEnabled, useIsFavoritesGuildEnabled
+// Dependencies: [1375, 10215, 589, 2]
+// Exports: computeIsFavoritesGuildEnabled, getIsFavoritesGuildEnabled, useIsFavoritesGuildEnabled
 
-// Module 10200 (computeIsFavoritesGuildEnabled)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10221 (computeIsFavoritesGuildEnabled)
+import initializeFromUserSettings from "initializeFromUserSettings";
 
 const require = arg1;
-function computeIsFavoritesGuildEnabled(isFreemium, _isNativeReflectConstruct) {
-  if (isFreemium) {
-    let favoriteGuildEnabled = !_isNativeReflectConstruct.favoriteGuildExplicitlyHidden;
-  } else {
-    favoriteGuildEnabled = _isNativeReflectConstruct.favoriteGuildEnabled;
-  }
-  return favoriteGuildEnabled;
-}
 const result = require("initialize").fileFinishedImporting("modules/favorites/hooks/useIsFavoritesGuildEnabled.tsx");
 
-export { computeIsFavoritesGuildEnabled };
+export const computeIsFavoritesGuildEnabled = function computeIsFavoritesGuildEnabled(isFreemium, favoriteGuildExplicitlyHidden) {
+  if (isFreemium) {
+    let favoriteGuildEnabled = !favoriteGuildExplicitlyHidden.favoriteGuildExplicitlyHidden;
+  } else {
+    favoriteGuildEnabled = favoriteGuildExplicitlyHidden.favoriteGuildEnabled;
+  }
+  return favoriteGuildEnabled;
+};
 export const getIsFavoritesGuildEnabled = function getIsFavoritesGuildEnabled() {
-  return computeIsFavoritesGuildEnabled(require(10194) /* computeFavoritesAccess */.getFavoritesAccess().isFreemium, _isNativeReflectConstruct);
+  if (obj.getFavoritesAccess().isFreemium) {
+    let favoriteGuildEnabled = !tmp.favoriteGuildExplicitlyHidden;
+  } else {
+    favoriteGuildEnabled = tmp.favoriteGuildEnabled;
+  }
+  return favoriteGuildEnabled;
 };
 export const useIsFavoritesGuildEnabled = function useIsFavoritesGuildEnabled() {
-  isFreemium = isFreemium(10194).useFavoritesAccess("useIsFavoritesGuildEnabled").isFreemium;
-  const obj = isFreemium(10194);
-  const items = [_isNativeReflectConstruct];
-  return isFreemium(566).useStateFromStores(items, () => outer1_3(isFreemium, outer1_2));
+  isFreemium = isFreemium(10215).useFavoritesAccess("useIsFavoritesGuildEnabled").isFreemium;
+  const obj = isFreemium(10215);
+  const items = [initializeFromUserSettings];
+  return isFreemium(589).useStateFromStores(items, () => {
+    if (isFreemium) {
+      let favoriteGuildEnabled = !tmp.favoriteGuildExplicitlyHidden;
+    } else {
+      favoriteGuildEnabled = tmp.favoriteGuildEnabled;
+    }
+    return favoriteGuildEnabled;
+  });
 };

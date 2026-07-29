@@ -1,148 +1,197 @@
-// Module ID: 11477
-// Function ID: 89052
+// Module ID: 11501
+// Function ID: 11502
 // Name: ApplicationCommandOptionItem
-// Dependencies: [57, 31, 27, 1918, 33, 4165, 689, 5008, 4695, 1212, 1273, 566, 11367, 5119, 4161, 7611, 8101, 11478, 2]
+// Dependencies: [32, 19, 17, 1942, 21, 4189, 712, 5030, 4717, 1236, 1297, 589, 11391, 5141, 4185, 7634, 8125, 11502, 2]
 // Exports: default
 
-// Module 11477 (ApplicationCommandOptionItem)
+// Module 11501 (ApplicationCommandOptionItem)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import get_ActivityIndicator from "DescriptionEllipsis";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_5;
+let StyleSheet;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_8;
-let closure_9;
+let metroImportAll;
 const require = arg1;
 function ApplicationCommandOptionItem(arg0) {
   let option;
   let optionState;
   ({ option, optionState } = arg0);
-  let obj = Object.create(null);
-  obj.option = 0;
-  obj.optionState = 0;
-  const merged = Object.assign(arg0, obj);
-  const tmp3 = _createForOfIteratorHelperLoose();
-  let isActive;
-  if (null != optionState) {
-    isActive = optionState.isActive;
+  const merged = Object.assign(arg0, Object.create(null));
+  const tmp2 = createCacheKey();
+  let flag;
+  if (optionState != null) {
+    flag = optionState.isActive;
   }
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
+  if (flag == null) {
+    flag = false;
+  }
+  let obj = { accessibilityLabel: null, accessibilityRole: "button", disabled: null, style: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
   obj = { optionName: option.displayName };
-  obj.accessibilityLabel = intl.formatToPlainString(require(1212) /* getSystemLocale */.t.evoEHc, obj);
-  obj.accessibilityRole = "button";
-  obj.disabled = null != isActive && isActive;
-  const items = [tmp3.applicationCommandOption, , ];
-  let activeCommandOption = tmp5;
-  if (null != isActive && isActive) {
-    activeCommandOption = tmp3.activeCommandOption;
+  obj[0] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.evoEHc, obj);
+  obj[2] = flag;
+  const items = [tmp2.applicationCommandOption, , ];
+  let activeCommandOption = flag;
+  if (flag) {
+    activeCommandOption = tmp2.activeCommandOption;
   }
   items[1] = activeCommandOption;
-  let completeCommandOption = !tmp5;
-  if (completeCommandOption) {
+  let completeCommandOption = !flag;
+  if (!flag) {
     let success;
-    if (null != optionState) {
-      if (null != optionState.lastValidationResult) {
+    if (optionState != null) {
+      if (optionState.lastValidationResult != null) {
         success = lastValidationResult.success;
       }
     }
     completeCommandOption = success;
   }
   if (completeCommandOption) {
-    completeCommandOption = tmp3.completeCommandOption;
+    completeCommandOption = tmp2.completeCommandOption;
   }
   items[2] = completeCommandOption;
-  obj.style = items;
+  obj[3] = items;
   const merged1 = Object.assign(merged);
-  const obj1 = {};
-  const items1 = [tmp3.applicationCommandOptionText, , , ];
-  let activeCommandOptionText = tmp5;
-  if (null != isActive && isActive) {
-    activeCommandOptionText = tmp3.activeCommandOptionText;
+  const items1 = [tmp2.applicationCommandOptionText, , , ];
+  let activeCommandOptionText = flag;
+  if (flag) {
+    activeCommandOptionText = tmp2.activeCommandOptionText;
   }
   items1[1] = activeCommandOptionText;
-  let completeCommandOptionText = !tmp5;
-  if (completeCommandOptionText) {
+  let completeCommandOptionText = !flag;
+  if (!flag) {
     let success1;
-    if (null != optionState) {
-      if (null != optionState.lastValidationResult) {
+    if (optionState != null) {
+      if (optionState.lastValidationResult != null) {
         success1 = lastValidationResult2.success;
       }
     }
     completeCommandOptionText = success1;
   }
   if (completeCommandOptionText) {
-    completeCommandOptionText = tmp3.completeCommandOptionText;
+    completeCommandOptionText = tmp2.completeCommandOptionText;
   }
   items1[2] = completeCommandOptionText;
-  let errorCommandOptionText = !tmp5;
-  if (errorCommandOptionText) {
+  let errorCommandOptionText = !flag;
+  if (!flag) {
     let success2;
-    if (null != optionState) {
-      if (null != optionState.lastValidationResult) {
+    if (optionState != null) {
+      if (optionState.lastValidationResult != null) {
         success2 = lastValidationResult3.success;
       }
     }
     errorCommandOptionText = false === success2;
   }
   if (errorCommandOptionText) {
-    errorCommandOptionText = tmp3.errorCommandOptionText;
+    errorCommandOptionText = tmp2.errorCommandOptionText;
   }
+  obj = { style: items1, numberOfLines: 1, children: option.displayName };
   items1[3] = errorCommandOptionText;
-  obj1.style = items1;
-  obj1.numberOfLines = 1;
-  obj1.children = option.displayName;
-  obj["children"] = closure_8(require(1273) /* Button */.LegacyText, obj1);
-  return closure_8(require(4695) /* PressableBase */.PressableOpacity, obj);
+  obj.children = closure_8(require(1297) /* Button */.LegacyText, obj);
+  return closure_8(require(4717) /* PressableBase */.PressableOpacity, obj);
 }
-({ View: closure_5, ScrollView: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "column", backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, borderRadius: require("_createForOfIteratorHelperLoose").modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, borderWidth: require("_createForOfIteratorHelperLoose").modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_FLOATING_ACCESSORY_BORDER, overflow: "hidden" };
-_createForOfIteratorHelperLoose.applicationCommandBar = _createForOfIteratorHelperLoose;
-let obj1 = { width: 24, height: 24, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, marginRight: 16 };
-_createForOfIteratorHelperLoose.applicationIcon = obj1;
-_createForOfIteratorHelperLoose.applicationTopWrapperScrollView = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: 8 };
-_createForOfIteratorHelperLoose.applicationName = { textAlignVertical: "center", marginRight: 12 };
-let obj2 = { width: get_ActivityIndicator.StyleSheet.hairlineWidth, marginVertical: 8, marginHorizontal: 12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_NORMAL, height: "100%" };
-_createForOfIteratorHelperLoose.applicationOptionalOptionsDivider = obj2;
-_createForOfIteratorHelperLoose.applicationOptionalOptionsDividerWithNoRequired = { marginLeft: 4 };
-_createForOfIteratorHelperLoose.applicationOptionalOptionsIndicator = { marginHorizontal: 4, paddingVertical: 8 };
-_createForOfIteratorHelperLoose.applicationDescriptionContainer = { flexShrink: 1 };
-_createForOfIteratorHelperLoose.applicationDescriptionDivider = { marginLeft: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_COMMAND_BAR_DIVIDER };
-let obj4 = { marginHorizontal: 4, padding: 8, fontSize: 12, alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("result").DARK_PRIMARY_800_LIGHT_PRIMARY_300 };
-_createForOfIteratorHelperLoose.applicationCommandOption = obj4;
-let obj3 = { marginLeft: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_COMMAND_BAR_DIVIDER };
-_createForOfIteratorHelperLoose.applicationCommandOptionText = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-let obj5 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.activeCommandOption = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-const obj6 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND };
-_createForOfIteratorHelperLoose.activeCommandOptionText = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.completeCommandOptionText = { opacity: 0.5 };
-let obj7 = { color: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.errorCommandOptionText = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_CRITICAL };
-_createForOfIteratorHelperLoose.optionDescriptionContainer = { overflow: "hidden", paddingHorizontal: 16, paddingVertical: 8, flexDirection: "row" };
-const obj8 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_CRITICAL };
-_createForOfIteratorHelperLoose.descriptionEllipsis = { marginLeft: 10, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
-const obj9 = { marginLeft: 10, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
-_createForOfIteratorHelperLoose.descriptionEllipsisDots = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
-const obj10 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.completeCommandOption = { backgroundColor: require("result").DARK_PRIMARY_660_LIGHT_PRIMARY_300 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c5, ScrollView: closure_6, StyleSheet } = get_ActivityIndicator);
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { applicationCommandBar: null, applicationIcon: null, applicationTopWrapperScrollView: null, applicationName: null, applicationOptionalOptionsDivider: null, applicationOptionalOptionsDividerWithNoRequired: null, applicationOptionalOptionsIndicator: null, applicationDescriptionContainer: null, applicationDescriptionDivider: null, applicationCommandOption: null, applicationCommandOptionText: null, activeCommandOption: null, activeCommandOptionText: null, completeCommandOptionText: null, errorCommandOptionText: null, optionDescriptionContainer: null, descriptionEllipsis: null, descriptionEllipsisDots: null, completeCommandOption: null };
+createCacheKey = { flexDirection: "column", backgroundColor: require("Themes").colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, borderRadius: require("Themes").modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, borderWidth: require("Themes").modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: require("Themes").colors.MOBILE_FLOATING_ACCESSORY_BORDER, overflow: "hidden" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { width: 24, height: 24, borderRadius: require("Themes").radii.md, marginRight: 16 };
+createCacheKey[2] = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: 8 };
+createCacheKey[3] = { textAlignVertical: "center", marginRight: 12 };
+let obj1 = { width: 24, height: 24, borderRadius: require("Themes").radii.md, marginRight: 16 };
+createCacheKey[4] = { width: StyleSheet.hairlineWidth, marginVertical: 8, marginHorizontal: 12, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, height: "100%" };
+createCacheKey[5] = { marginLeft: 4 };
+createCacheKey[6] = { marginHorizontal: 4, paddingVertical: 8 };
+createCacheKey[7] = { flexShrink: 1 };
+let obj2 = { width: StyleSheet.hairlineWidth, marginVertical: 8, marginHorizontal: 12, backgroundColor: require("Themes").colors.BACKGROUND_MOD_NORMAL, height: "100%" };
+createCacheKey[8] = { marginLeft: 0, backgroundColor: require("Themes").colors.MOBILE_COMMAND_BAR_DIVIDER };
+let obj3 = { marginLeft: 0, backgroundColor: require("Themes").colors.MOBILE_COMMAND_BAR_DIVIDER };
+createCacheKey[9] = { marginHorizontal: 4, padding: 8, fontSize: 12, alignItems: "center", borderRadius: require("Themes").radii.xs, backgroundColor: require("result").DARK_PRIMARY_800_LIGHT_PRIMARY_300 };
+let obj4 = { marginHorizontal: 4, padding: 8, fontSize: 12, alignItems: "center", borderRadius: require("Themes").radii.xs, backgroundColor: require("result").DARK_PRIMARY_800_LIGHT_PRIMARY_300 };
+createCacheKey[10] = { color: require("Themes").colors.TEXT_DEFAULT };
+let obj5 = { color: require("Themes").colors.TEXT_DEFAULT };
+createCacheKey[11] = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+const obj6 = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND };
+createCacheKey[12] = { color: require("Themes").colors.WHITE };
+createCacheKey[13] = { opacity: 0.5 };
+const obj7 = { color: require("Themes").colors.WHITE };
+createCacheKey[14] = { color: require("Themes").colors.TEXT_FEEDBACK_CRITICAL };
+createCacheKey[15] = { overflow: "hidden", paddingHorizontal: 16, paddingVertical: 8, flexDirection: "row" };
+const obj8 = { color: require("Themes").colors.TEXT_FEEDBACK_CRITICAL };
+createCacheKey[16] = { marginLeft: 10, backgroundColor: require("Themes").colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
+const obj9 = { marginLeft: 10, backgroundColor: require("Themes").colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND };
+createCacheKey[17] = { backgroundColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+const obj10 = { backgroundColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
+createCacheKey[18] = { backgroundColor: require("result").DARK_PRIMARY_660_LIGHT_PRIMARY_300 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 function ApplicationCommandOptionDescription(option) {
   let c6;
-  let tmp8;
+  let tmp10;
   option = option.option;
   const optionState = option.optionState;
+  let importDefault;
   let first;
+  let callback;
   let first1;
   let closure_5;
   c6 = undefined;
+  let c7;
+  const tmp = createCacheKey();
+  const tmp4 = importDefault(first[16])(option);
+  importDefault = tmp4;
+  const tmp5 = callback(first1.useState(undefined), 2);
+  first = tmp5[0];
+  callback = tmp5[1];
+  const tmp7 = callback(first1.useState(0), 2);
+  first1 = tmp7[0];
+  closure_5 = tmp7[1];
+  [tmp10, c6] = callback(first1.useState(0), 2);
+  const tmp11 = importDefault(first[16])(first1);
+  c7 = tmp11;
+  const items = [tmp4, option, first1, tmp11];
+  const effect = first1.useEffect(() => {
+    if (c1 !== option) {
+      callback2(0);
+      _undefined(0);
+      callback(undefined);
+    } else {
+      let tmp2 = first1 > 0;
+      if (tmp2) {
+        tmp2 = 0 === c7;
+      }
+      if (tmp2) {
+        callback(1);
+      }
+    }
+  }, items);
+  const items1 = [first];
+  let tmp14 = 1 === first;
+  callback = first1.useCallback(() => {
+    _slicedToArray(1);
+  }, items1);
+  if (tmp14) {
+    tmp14 = tmp10 === first1;
+  }
+  let str = "button";
+  if (tmp14) {
+    str = "text";
+  }
+  let obj = { accessibilityRole: str, disabled: tmp14, onPress: callback, children: null };
+  obj = { style: tmp.optionDescriptionContainer, children: null };
+  obj = { style: tmp.applicationDescriptionContainer, children: null };
+  let error;
+  if (optionState != null) {
+    if (optionState.lastValidationResult != null) {
+      error = lastValidationResult.error;
+    }
+  }
   function onDescriptionLayout(nativeEvent) {
     const truncResult = Math.trunc(nativeEvent.nativeEvent.layout.height);
     let tmp2 = undefined === first;
@@ -154,82 +203,37 @@ function ApplicationCommandOptionDescription(option) {
     }
     _undefined(truncResult);
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  let tmp2 = importDefault(first[16])(option);
-  importDefault = tmp2;
-  const tmp3 = callback(first1.useState(undefined), 2);
-  first = tmp3[0];
-  callback = tmp3[1];
-  const tmp5 = callback(first1.useState(0), 2);
-  first1 = tmp5[0];
-  closure_5 = tmp5[1];
-  [tmp8, c6] = callback(first1.useState(0), 2);
-  const tmp9 = importDefault(first[16])(first1);
-  let _isNativeReflectConstruct = tmp9;
-  const items = [tmp2, option, first1, tmp9];
-  const effect = first1.useEffect(() => {
-    if (closure_1 !== option) {
-      callback2(0);
-      _undefined(0);
-      callback(undefined);
-    } else {
-      let tmp2 = first1 > 0;
-      if (tmp2) {
-        tmp2 = 0 === _isNativeReflectConstruct;
-      }
-      if (tmp2) {
-        callback(1);
-      }
-    }
-  }, items);
-  const items1 = [first];
-  let tmp12 = 1 === first;
-  callback = first1.useCallback(() => {
-    _slicedToArray(1);
-  }, items1);
-  if (tmp12) {
-    tmp12 = tmp8 === first1;
-  }
-  let str = "button";
-  if (tmp12) {
-    str = "text";
-  }
-  let obj = { accessibilityRole: str, disabled: tmp12, onPress: callback };
-  obj = { style: tmp.optionDescriptionContainer };
-  obj = { style: tmp.applicationDescriptionContainer };
-  let error;
-  if (null != optionState) {
-    if (null != optionState.lastValidationResult) {
-      error = lastValidationResult.error;
-    }
-  }
   if (null != error) {
-    const obj1 = { lineClamp: first, onLayout: onDescriptionLayout, variant: "text-sm/medium", color: "text-feedback-critical", children: optionState.lastValidationResult.error };
-    let tmp18Result = callback2(option(first[14]).Text, obj1);
+    const obj1 = { lineClamp: null, onLayout: null, variant: "text-sm/medium", color: "text-feedback-critical", children: null };
+    obj1[0] = first;
+    obj1[1] = onDescriptionLayout;
+    obj1[4] = optionState.lastValidationResult.error;
+    let obj2 = obj1;
   } else {
-    const obj2 = { lineClamp: first, onLayout: onDescriptionLayout, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: null != option ? option.displayDescription : option.command.displayDescription };
-    tmp18Result = callback2(option(first[14]).Text, obj2);
-    const tmp18 = callback2;
+    obj2 = { lineClamp: null, onLayout: null, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: null };
+    obj2[0] = first;
+    obj2[1] = onDescriptionLayout;
+    obj2[4] = null != option ? option.displayDescription : option.command.displayDescription;
   }
-  obj.children = tmp18Result;
-  const items2 = [callback2(closure_5, obj), ];
-  let tmp25 = null;
-  if (tmp8 !== first1) {
-    ({ descriptionEllipsis: obj6.style, descriptionEllipsisDots: obj6.dotStyle } = tmp);
-    tmp25 = callback2(importDefault(first[17]), {});
-    const obj3 = {};
+  obj[1] = closure_8(option(first[14]).Text, obj2);
+  const items2 = [closure_8(closure_5, obj), ];
+  let tmp15Result = null;
+  if (tmp10 !== first1) {
+    ({ descriptionEllipsis: obj6[0], descriptionEllipsisDots: obj6[1] } = tmp);
+    tmp15Result = tmp15(importDefault(tmp3[17]), { style: null, dotStyle: null });
+    const obj3 = { style: null, dotStyle: null };
   }
-  items2[1] = tmp25;
-  obj.children = items2;
-  obj.children = closure_10(closure_5, obj);
-  return callback2(option(first[8]).PressableOpacity, obj);
+  items2[1] = tmp15Result;
+  obj[1] = items2;
+  obj[3] = closure_10(closure_5, obj);
+  return closure_8(option(first[8]).PressableOpacity, obj);
 }
 const obj11 = { backgroundColor: require("result").DARK_PRIMARY_660_LIGHT_PRIMARY_300 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/application_commands/native/ApplicationCommandBar.tsx");
 
 export default function _default(command) {
-  let closure_10;
-  let closure_9;
+  let c10;
+  let c9;
   let currentOption;
   let dependencyMap;
   let tmp4;
@@ -239,22 +243,31 @@ export default function _default(command) {
   ({ guildId: dependencyMap, currentOption } = command);
   const optionStates = command.optionStates;
   const onPressOption = command.onPressOption;
+  let c6;
+  let ref;
+  let callback2;
+  c9 = undefined;
+  c10 = undefined;
+  let first;
+  let closure_12;
+  let stateFromStores;
+  let closure_14;
   let tmp = first();
-  let closure_6 = tmp;
-  const ref = optionStates.useRef(null);
-  const callback2 = optionStates.useRef({});
-  [tmp4, closure_9] = currentOption(optionStates.useState(false), 2);
+  c6 = tmp;
+  ref = optionStates.useRef(null);
+  callback2 = optionStates.useRef({});
+  [tmp4, c9] = currentOption(optionStates.useState(false), 2);
   const tmp3 = currentOption(optionStates.useState(false), 2);
-  [tmp6, closure_10] = currentOption(optionStates.useState(false), 2);
+  [tmp6, c10] = currentOption(optionStates.useState(false), 2);
   const tmp7 = currentOption(optionStates.useState(), 2);
   first = tmp7[0];
-  let closure_12 = tmp7[1];
+  closure_12 = tmp7[1];
   const items = [command];
   const effect = optionStates.useEffect(() => {
     let options = false;
     let c1 = false;
     options = options.options;
-    if (null != options) {
+    if (options != null) {
       const item = options.forEach((required) => {
         if (true !== required.required) {
           let c0 = true;
@@ -263,153 +276,147 @@ export default function _default(command) {
         }
       });
     }
-    callback(options);
-    callback2(c1);
+    _undefined2(options);
+    _undefined3(c1);
   }, items);
   const items1 = [currentOption];
   const effect1 = optionStates.useEffect(() => {
     let name;
-    if (null != currentOption) {
+    if (currentOption != null) {
       name = currentOption.name;
     }
     closure_12(name);
   }, items1);
   const items2 = [first, tmp];
   const effect2 = optionStates.useEffect(() => {
-    let tmp = null;
+    let tmp2 = null;
     if (null != first) {
-      tmp = ref.current[first];
+      tmp2 = ref.current[tmp];
     }
-    if (null != tmp) {
+    if (null != tmp2) {
       const current = ref.current;
-      if (null != current) {
-        const obj = { x: tmp.x - tmp.applicationTopWrapperScrollView.paddingHorizontal, animated: true };
+      if (current != null) {
+        const obj = { x: null, animated: true };
+        obj[0] = tmp2.x - _undefined.applicationTopWrapperScrollView.paddingHorizontal;
         current.scrollTo(obj);
       }
     }
   }, items2);
-  let obj = command(566);
+  let obj = command(589);
   const items3 = [ref];
-  const stateFromStores = obj.useStateFromStores(items3, () => {
+  stateFromStores = obj.useStateFromStores(items3, () => {
     if (null != closure_2) {
       let botId;
-      if (null != section) {
-        botId = section.botId;
+      if (section != null) {
+        botId = tmp2.botId;
       }
       if (null != botId) {
-        return ref.getMember(closure_2, section.botId);
+        return ref.getMember(tmp, tmp2.botId);
       }
     }
   });
   const items4 = [section, stateFromStores];
   const memo = optionStates.useMemo(() => command(outer1_2[12]).getApplicationCommandsIconSource(section, stateFromStores), items4);
-  let closure_14 = optionStates.useCallback((nativeEvent, name) => {
+  closure_14 = optionStates.useCallback((nativeEvent, name) => {
     nativeEvent = nativeEvent.nativeEvent;
     const current = ref.current;
     current[name.name] = { x: nativeEvent.layout.x, width: nativeEvent.layout.width };
     ref.current = current;
   }, []);
   let name;
-  if (null != currentOption) {
+  if (currentOption != null) {
     name = currentOption.name;
   }
-  let tmp15;
+  let tmp17;
   if (null != name) {
     let name1;
-    if (null != currentOption) {
+    if (currentOption != null) {
       name1 = currentOption.name;
     }
-    tmp15 = optionStates[name1];
+    tmp17 = optionStates[name1];
   }
-  obj = { style: tmp.applicationCommandBar };
-  obj = { ref, contentContainerStyle: tmp.applicationTopWrapperScrollView, keyboardShouldPersistTaps: "always", showsHorizontalScrollIndicator: false, horizontal: true };
-  let tmp20 = null != memo;
-  if (tmp20) {
-    const obj1 = { style: tmp.applicationIcon, source: memo };
-    tmp20 = callback2(section(5119), obj1);
+  obj = { style: tmp.applicationCommandBar, children: null };
+  obj = { ref, contentContainerStyle: tmp.applicationTopWrapperScrollView, keyboardShouldPersistTaps: "always", showsHorizontalScrollIndicator: false, horizontal: true, children: null };
+  let tmp22 = null != memo;
+  if (tmp22) {
+    const obj1 = { style: null, source: null };
+    obj1[0] = tmp.applicationIcon;
+    obj1[1] = memo;
+    tmp22 = callback2(section(5141), obj1);
   }
-  const items5 = [tmp20, , , ];
-  const obj2 = { style: tmp.applicationName, lineClamp: 1, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: `/ ${command.displayName}` };
-  items5[1] = callback2(command(4161).Text, obj2);
+  const items5 = [tmp22, callback2(command(4185).Text, { style: tmp.applicationName, lineClamp: 1, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: `/ ${command.displayName}` }), , ];
   let options = command.options;
   let mapped;
-  if (null != options) {
+  if (options != null) {
     mapped = options.map((required) => {
       let closure_0 = required;
       let tmp = null;
       if (required.required) {
-        const obj = {
-          option: required,
-          onPress() {
-              let tmp;
-              if (null != outer1_5) {
-                tmp = outer1_5(closure_0);
-              }
-              return tmp;
-            },
-          optionState: optionStates[required.name],
-          onLayout(arg0) {
-              return outer1_14(arg0, closure_0);
-            }
+        const obj = { option: null, onPress: null, optionState: null, onLayout: null };
+        obj[0] = required;
+        obj[1] = function onPress() {
+          let tmpResult;
+          if (outer1_5 != null) {
+            tmpResult = tmp(closure_0);
+          }
+          return tmpResult;
         };
-        tmp = ref(stateFromStores, obj, required.name);
+        obj[2] = optionStates[required.name];
+        obj[3] = function onLayout(arg0) {
+          return outer1_14(arg0, closure_0);
+        };
+        tmp = ref(closure_12, obj, required.name);
       }
       return tmp;
     });
   }
   items5[2] = mapped;
-  let tmp26Result = null;
+  let tmp19Result = null;
   if (tmp4) {
-    const obj3 = {};
-    const obj4 = {};
     const items6 = [tmp.applicationOptionalOptionsDivider, ];
     let applicationOptionalOptionsDividerWithNoRequired = !tmp6;
-    if (applicationOptionalOptionsDividerWithNoRequired) {
+    if (!tmp6) {
       applicationOptionalOptionsDividerWithNoRequired = tmp.applicationOptionalOptionsDividerWithNoRequired;
     }
+    const obj3 = { style: null };
     items6[1] = applicationOptionalOptionsDividerWithNoRequired;
-    obj4.style = items6;
-    const items7 = [callback2(onPressOption, obj4), , ];
-    const obj5 = { style: tmp.applicationOptionalOptionsIndicator, lineClamp: 1, variant: "eyebrow", color: "text-muted" };
-    const intl = command(1212).intl;
-    obj5.children = intl.string(command(1212).t.U19GM3);
-    items7[1] = callback2(command(4161).Text, obj5);
+    obj3[0] = items6;
+    const items7 = [tmp25(tmp20, obj3), , ];
+    const obj4 = { style: null, lineClamp: 1, variant: "eyebrow", color: "text-muted", children: null };
+    obj4[0] = tmp.applicationOptionalOptionsIndicator;
+    const intl = tmp12(1236).intl;
+    obj4[4] = intl.string(tmp12(1236).t.U19GM3);
+    items7[1] = tmp25(tmp12(4185).Text, obj4);
     const options1 = command.options;
     let mapped1;
-    if (null != options1) {
+    if (options1 != null) {
       mapped1 = options1.map((required) => {
         let closure_0 = required;
         let tmp = null;
         if (!required.required) {
-          const obj = {
-            option: required,
-            onPress() {
-                return outer1_5(closure_0);
-              },
-            optionState: optionStates[required.name],
-            onLayout(arg0) {
-                return outer1_14(arg0, closure_0);
-              }
+          const obj = { option: null, onPress: null, optionState: null, onLayout: null };
+          obj[0] = required;
+          obj[1] = function onPress() {
+            return outer1_5(closure_0);
           };
-          tmp = ref(stateFromStores, obj, required.name);
+          obj[2] = optionStates[required.name];
+          obj[3] = function onLayout(arg0) {
+            return outer1_14(arg0, closure_0);
+          };
+          tmp = ref(closure_12, obj, required.name);
         }
         return tmp;
       });
     }
+    const obj5 = { children: null };
     items7[2] = mapped1;
-    obj3.children = items7;
-    tmp26Result = closure_10(closure_9, obj3);
-    const tmp26 = closure_10;
-    const tmp27 = closure_9;
-    const tmp28 = callback2;
-    const tmp29 = onPressOption;
+    obj5[0] = items7;
+    tmp19Result = tmp19(c9, obj5);
+    const tmp28 = c9;
   }
-  items5[3] = tmp26Result;
-  obj.children = items5;
-  const items8 = [closure_10(closure_6, obj), callback2(command(7611).FormDivider, { style: tmp.applicationDescriptionDivider }), , ];
-  const obj7 = { command, option: currentOption, optionState: tmp15 };
-  items8[2] = callback2(closure_12, obj7);
-  items8[3] = callback2(command(7611).FormDivider, { style: tmp.applicationDescriptionDivider });
-  obj.children = items8;
-  return closure_10(onPressOption, obj);
+  items5[3] = tmp19Result;
+  obj[5] = items5;
+  const items8 = [c10(c6, obj), callback2(command(7634).FormDivider, { style: tmp.applicationDescriptionDivider }), callback2(stateFromStores, { command, option: currentOption, optionState: tmp17 }), callback2(command(7634).FormDivider, { style: tmp.applicationDescriptionDivider })];
+  obj[1] = items8;
+  return c10(onPressOption, obj);
 };

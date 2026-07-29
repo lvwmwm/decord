@@ -1,39 +1,37 @@
-// Module ID: 16245
-// Function ID: 125774
+// Module ID: 16280
+// Function ID: 16281
 // Name: useConnectGuardianGate
-// Dependencies: [57, 31, 5775, 566, 5777, 4594, 2]
+// Dependencies: [32, 19, 5793, 589, 5795, 4616, 2]
 // Exports: useConnectGuardianGate
 
-// Module 16245 (useConnectGuardianGate)
+// Module 16280 (useConnectGuardianGate)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/parent_tools/hooks/useConnectGuardianGate.tsx");
+const result = require("freshTeenActivityWithMap").fileFinishedImporting("modules/parent_tools/hooks/useConnectGuardianGate.tsx");
 
 export const useConnectGuardianGate = function useConnectGuardianGate() {
   let expiresAt;
-  let importDefault;
   let linkCode;
   let require;
   let tmp3;
-  let tmp5;
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ linkCode: outer1_5.getLinkCode(), expiresAt: outer1_5.getLinkCodeExpiresAt() }));
+  let obj = require(589) /* initialize */;
+  const items = [freshTeenActivityWithMap];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ linkCode: store.getLinkCode(), expiresAt: store.getLinkCodeExpiresAt() }));
   ({ linkCode, expiresAt } = stateFromStoresObject);
   [tmp3, require] = callback(React.useState(false), 2);
-  let tmp2 = callback(React.useState(false), 2);
-  [tmp5, importDefault] = callback(React.useState(() => {
-    const linkCodeExpiresAt = outer1_5.getLinkCodeExpiresAt();
-    let tmp2 = null != outer1_5.getLinkCode() && null != linkCodeExpiresAt;
+  const tmp4 = callback(React.useState(() => {
+    const linkCodeExpiresAt = store.getLinkCodeExpiresAt();
+    let tmp2 = null != store.getLinkCode() && null != linkCodeExpiresAt;
     if (tmp2) {
       const _Date = Date;
       tmp2 = linkCodeExpiresAt > Date.now();
     }
     return tmp2;
   }), 2);
+  const importDefault = tmp4[1];
   const dependencyMap = React.useRef(0);
   callback = React.useCallback(() => {
     const sum = ref.current + 1;
@@ -62,18 +60,20 @@ export const useConnectGuardianGate = function useConnectGuardianGate() {
       }
     });
   }, []);
-  importDefault(4594)(callback);
+  importDefault(4616)(callback);
   if (tmp3) {
     obj = { state: "error" };
-    let obj2 = obj;
-  } else if (tmp5) {
+  } else if (tmp4[0]) {
     if (null == linkCode) {
       obj = { state: "error" };
     }
-    const obj1 = { state: "gate", linkCode, expiresAt, refresh: callback };
+    const obj1 = { state: "gate", linkCode: null, expiresAt: null, refresh: null };
+    obj1[1] = linkCode;
+    obj1[2] = expiresAt;
+    obj1[3] = callback;
     obj = obj1;
   } else {
-    obj2 = { state: "loading" };
+    obj = { state: "loading" };
   }
-  return obj2;
+  return obj;
 };

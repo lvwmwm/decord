@@ -1,35 +1,36 @@
-// Module ID: 8691
-// Function ID: 68830
+// Module ID: 8715
+// Function ID: 8716
 // Name: memoResult1
-// Dependencies: [31, 27, 5654, 653, 33, 4165, 689, 8637, 5791, 8692, 5792, 8695, 8701, 4161, 1212, 8681, 477, 6632, 6606, 8640, 8676, 1877, 3811, 3869, 4009, 8702, 566, 4589, 8703, 2]
+// Dependencies: [19, 17, 5672, 676, 21, 4189, 712, 8661, 5809, 8716, 5810, 8719, 8725, 4185, 1236, 8705, 500, 6653, 6627, 8664, 8700, 1901, 3835, 3893, 4033, 8726, 589, 4611, 8727, 2]
 
-// Module 8691 (memoResult1)
-import importAllResult from "result";
-import { View } from "LinearGradient";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8715 (memoResult1)
+import importAllResult from "useCurrentUser";
+import { View } from "TagIcon";
+import updateProduct from "updateProduct";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "CollectiblesItemType";
+import createCacheKey from "createCacheKey";
 
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ CurrencyCodes: closure_6, VerticalGradient: closure_7 } = ME);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let obj = {};
-obj = { position: "absolute", height: "45%", width: "100%", padding: 10, flex: 1, bottom: 0, overflow: "hidden", borderBottomLeftRadius: require("_createForOfIteratorHelperLoose").radii.sm, borderBottomRightRadius: require("_createForOfIteratorHelperLoose").radii.sm, display: "flex", flexDirection: "column", justifyContent: "flex-end" };
-obj.regularMetadataContainer = obj;
-obj.assetName = { marginBottom: 4 };
-_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-obj.priceVariantsContainer = _createForOfIteratorHelperLoose;
-obj.priceDescription = { display: "flex", flexDirection: "row", alignItems: "center", flex: 1 };
-obj.text = { flexShrink: 1 };
-obj.discountPercentage = { paddingLeft: 3 };
-obj.wheelIcon = { marginTop: 0, marginRight: 3 };
-obj.androidTextPadding = { paddingBottom: 2 };
-let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+({ CurrencyCodes: closure_6, VerticalGradient: error } = ME);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+let obj = { regularMetadataContainer: null, assetName: null, priceVariantsContainer: null, priceDescription: null, text: null, discountPercentage: null, wheelIcon: null, androidTextPadding: null };
+obj = { position: "absolute", height: "45%", width: "100%", padding: 10, flex: 1, bottom: 0, overflow: "hidden", borderBottomLeftRadius: require("Themes").radii.sm, borderBottomRightRadius: require("Themes").radii.sm, display: "flex", flexDirection: "column", justifyContent: "flex-end" };
+obj[0] = obj;
+obj[1] = { marginBottom: 4 };
+createCacheKey = { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", gap: require("Themes").space.PX_4 };
+obj[2] = createCacheKey;
+obj[3] = { display: "flex", flexDirection: "row", alignItems: "center", flex: 1 };
+obj[4] = { flexShrink: 1 };
+obj[5] = { paddingLeft: 3 };
+obj[6] = { marginTop: 0, marginRight: 3 };
+obj[7] = { paddingBottom: 2 };
+let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((arg0) => {
   let collectibleProductState;
   let discountSource;
@@ -41,11 +42,14 @@ const memoResult = importAllResult.memo((arg0) => {
   let styles;
   ({ product, hasShopDiscount } = arg0);
   ({ styles, collectibleProductState } = arg0);
+  let selectedProduct;
+  let memo;
+  let balance;
   ({ discountSource, isFetchingGoogleSkus, preferVCPrice, isDisabled } = arg0);
   let obj = hasShopDiscount(memo[7]);
   const defaultVariantIndex = obj.useDefaultVariantIndex(product);
   let obj1 = hasShopDiscount(memo[8]);
-  const selectedProduct = obj1.getSelectedProduct(product, defaultVariantIndex);
+  selectedProduct = obj1.getSelectedProduct(product, defaultVariantIndex);
   let obj2 = hasShopDiscount(memo[9]);
   const formattedPriceForCollectiblesProduct = obj2.getFormattedPriceForCollectiblesProduct(selectedProduct, hasShopDiscount, true);
   const items = [selectedProduct, hasShopDiscount];
@@ -62,207 +66,229 @@ const memoResult = importAllResult.memo((arg0) => {
   balance = obj3.useFetchVirtualCurrencyBalance().balance;
   const items3 = [balance, memo];
   const memo3 = balance.useMemo(() => {
-    let tmp = null;
+    let tmp2 = null;
     if (null != memo) {
-      tmp = null;
+      tmp2 = null;
       if (null != balance) {
-        tmp = memo.amount <= balance;
+        tmp2 = tmp.amount <= tmp3;
       }
     }
-    return tmp;
+    return tmp2;
   }, items3);
   if (isFetchingGoogleSkus) {
     if (null == formattedPriceForCollectiblesProduct) {
-      return callback(hasShopDiscount(memo[12]).CollectiblesShopPricePlaceholder, {});
+      return callback(tmp(tmp2[12]).CollectiblesShopPricePlaceholder, {});
     }
   }
   if ("partiallyOwnedBundle" === collectibleProductState) {
-    obj = { style: styles.priceDescription };
-    obj = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: styles.text };
-    const intl6 = hasShopDiscount(memo[14]).intl;
-    obj.children = intl6.string(hasShopDiscount(memo[14]).t.BEjTij);
-    obj.children = callback(hasShopDiscount(memo[13]).Text, obj);
+    obj = { style: null, children: null };
+    obj[0] = styles.priceDescription;
+    obj = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: null, children: null };
+    obj[3] = styles.text;
+    const intl6 = tmp(tmp2[14]).intl;
+    obj[4] = intl6.string(tmp(tmp2[14]).t.BEjTij);
+    obj[1] = callback(tmp(tmp2[13]).Text, obj);
     return callback(View, obj);
   } else if ("purchased" === collectibleProductState) {
-    obj1 = { style: styles.priceDescription };
-    obj2 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: styles.text };
-    const intl5 = hasShopDiscount(memo[14]).intl;
-    obj2.children = intl5.string(hasShopDiscount(memo[14]).t["6cfuDj"]);
-    obj1.children = callback(hasShopDiscount(memo[13]).Text, obj2);
+    obj1 = { style: null, children: null };
+    obj1[0] = styles.priceDescription;
+    obj2 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: null, children: null };
+    obj2[3] = styles.text;
+    const intl5 = tmp(tmp2[14]).intl;
+    obj2[4] = intl5.string(tmp(tmp2[14]).t["6cfuDj"]);
+    obj1[1] = callback(tmp(tmp2[13]).Text, obj2);
     return callback(View, obj1);
   } else if ("nitroUpsell" === collectibleProductState) {
-    obj3 = { style: styles.priceDescription };
-    const obj4 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: styles.text };
-    const intl4 = hasShopDiscount(memo[14]).intl;
-    obj4.children = intl4.string(hasShopDiscount(memo[14]).t.sEAnVH);
-    obj3.children = callback(hasShopDiscount(memo[13]).Text, obj4);
+    obj3 = { style: null, children: null };
+    obj3[0] = styles.priceDescription;
+    const obj4 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: null, children: null };
+    obj4[3] = styles.text;
+    const intl4 = tmp(tmp2[14]).intl;
+    obj4[4] = intl4.string(tmp(tmp2[14]).t.sEAnVH);
+    obj3[1] = callback(tmp(tmp2[13]).Text, obj4);
     return callback(View, obj3);
   } else if ("nitroClaim" === collectibleProductState) {
-    const obj5 = { style: styles.priceDescription };
-    const obj6 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: styles.text };
-    const intl3 = hasShopDiscount(memo[14]).intl;
-    obj6.children = intl3.string(hasShopDiscount(memo[14]).t.rt69oo);
-    obj5.children = callback(hasShopDiscount(memo[13]).Text, obj6);
+    const obj5 = { style: null, children: null };
+    obj5[0] = styles.priceDescription;
+    const obj6 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: null, children: null };
+    obj6[3] = styles.text;
+    const intl3 = tmp(tmp2[14]).intl;
+    obj6[4] = intl3.string(tmp(tmp2[14]).t.rt69oo);
+    obj5[1] = callback(tmp(tmp2[13]).Text, obj6);
     return callback(View, obj5);
   } else {
     if (isDisabled) {
-      const obj7 = { style: styles.priceDescription };
-      const obj8 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: styles.text };
-      const intl2 = hasShopDiscount(memo[14]).intl;
-      obj8.children = intl2.string(hasShopDiscount(memo[14]).t.wu4gyV);
-      obj7.children = callback(hasShopDiscount(memo[13]).Text, obj8);
-      let tmp9Result = callback(View, obj7);
+      const obj7 = { style: null, children: null };
+      obj7[0] = styles.priceDescription;
+      const obj8 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: null, children: null };
+      obj8[3] = styles.text;
+      const intl2 = tmp(tmp2[14]).intl;
+      obj8[4] = intl2.string(tmp(tmp2[14]).t.wu4gyV);
+      obj7[1] = callback(tmp(tmp2[13]).Text, obj8);
+      let tmp11Result = callback(View, obj7);
     } else {
       if (null != memo) {
         if (null != balance) {
           if (true !== preferVCPrice) {
             if (!memo3) {
-              tmp9Result = tmp9(tmp10, obj9);
+              tmp11Result = tmp11(tmp12, obj9);
             }
           }
-          obj9 = {};
           const items4 = [styles.priceDescription, ];
-          const obj10 = {};
           let num = 1;
           if (false === memo3) {
             num = 0.5;
           }
-          obj10.opacity = num;
+          obj9 = { style: null, children: null };
+          const obj10 = { opacity: null };
+          obj10[0] = num;
           items4[1] = obj10;
-          obj9.style = items4;
-          let obj11 = { size: "xxs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-          const items5 = [callback(hasShopDiscount(memo[15]).OrbsIcon, obj11), , ];
-          const obj12 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1 };
-          const intl = hasShopDiscount(memo[14]).intl;
-          const obj13 = { orbAmount: memo.amount };
-          obj12.accessibilityLabel = intl.formatToPlainString(hasShopDiscount(memo[14]).t.W4DfeF, obj13);
+          obj9[0] = items4;
+          const obj11 = { size: "xxs", color: "mobile-text-heading-primary", style: null };
+          obj11[2] = styles.wheelIcon;
+          const items5 = [callback(tmp(tmp2[15]).OrbsIcon, obj11), , ];
+          const obj12 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityLabel: null, style: null, children: null };
+          const intl = tmp(tmp2[14]).intl;
+          const obj13 = { orbAmount: null };
+          obj13[0] = memo.amount;
+          obj12[3] = intl.formatToPlainString(tmp(tmp2[14]).t.W4DfeF, obj13);
           const items6 = [styles.text, ];
-          obj9 = hasShopDiscount(memo[16]);
-          items6[1] = obj9.isAndroid() && styles.androidTextPadding;
-          obj12.style = items6;
-          obj12.children = memo.amount;
-          items5[1] = callback(hasShopDiscount(memo[13]).Text, obj12);
-          let tmp19Result = memo2 >= hasShopDiscount(memo[10]).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
-          if (tmp19Result) {
-            const obj14 = { style: null, color: "text-feedback-positive", variant: "text-xs/semibold", lineClamp: 1 };
+          let tmpResult = tmp(tmp2[16]);
+          items6[1] = tmpResult.isAndroid() && styles.androidTextPadding;
+          obj12[4] = items6;
+          obj12[5] = memo.amount;
+          items5[1] = callback(tmp(tmp2[13]).Text, obj12);
+          let tmp14Result = memo2 >= tmp(tmp2[10]).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+          if (tmp14Result) {
             const items7 = [, , ];
             ({ discountPercentage: arr8[0], text: arr8[1] } = styles);
-            obj11 = hasShopDiscount(memo[16]);
+            tmpResult = tmp(tmp2[16]);
             let androidTextPadding;
-            if (obj11.isAndroid()) {
+            if (tmpResult.isAndroid()) {
               androidTextPadding = styles.androidTextPadding;
             }
+            const obj14 = { style: null, color: "text-feedback-positive", variant: "text-xs/semibold", lineClamp: 1, children: null };
             items7[2] = androidTextPadding;
-            obj14.style = items7;
+            obj14[0] = items7;
             const _HermesInternal = HermesInternal;
-            obj14.children = "-" + memo2 + "%";
-            tmp19Result = callback(hasShopDiscount(memo[13]).Text, obj14);
-            const tmp19 = callback;
+            obj14[4] = "-" + memo2 + "%";
+            tmp14Result = tmp14(tmp(tmp2[13]).Text, obj14);
           }
-          items5[2] = tmp19Result;
-          obj9.children = items5;
-          const tmp12 = callback;
-          const tmp15 = obj9.isAndroid() && styles.androidTextPadding;
+          items5[2] = tmp14Result;
+          obj9[1] = items5;
+          const tmp15 = tmpResult.isAndroid() && styles.androidTextPadding;
         }
       }
-      const obj15 = { style: styles.priceDescription };
+      const obj15 = { style: null, children: null };
+      obj15[0] = styles.priceDescription;
       if (!hasShopDiscount) {
         const items8 = [hasShopDiscount, , ];
-        let obj16 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1 };
         const items9 = [styles.text, ];
-        obj16 = hasShopDiscount(memo[16]);
-        items9[1] = obj16.isAndroid() && styles.androidTextPadding;
-        obj16.style = items9;
-        obj16.children = formattedPriceForCollectiblesProduct;
-        items8[1] = callback(hasShopDiscount(memo[13]).Text, obj16);
-        let tmp42Result = memo1 >= hasShopDiscount(memo[10]).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
-        if (tmp42Result) {
-          const obj17 = { style: null, color: "text-feedback-positive", variant: "text-xs/semibold", lineClamp: 1 };
+        const tmpResult1 = tmp(tmp2[16]);
+        const obj16 = { variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: null, children: null };
+        items9[1] = tmp(tmp2[16]).isAndroid() && styles.androidTextPadding;
+        obj16[3] = items9;
+        obj16[4] = formattedPriceForCollectiblesProduct;
+        items8[1] = callback(tmp(tmp2[13]).Text, obj16);
+        let tmp24Result = memo1 >= tmp(tmp2[10]).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+        if (tmp24Result) {
           const items10 = [, , ];
           ({ discountPercentage: arr11[0], text: arr11[1] } = styles);
-          let obj18 = hasShopDiscount(memo[16]);
           let androidTextPadding1;
-          if (obj18.isAndroid()) {
+          if (tmpResult2.isAndroid()) {
             androidTextPadding1 = styles.androidTextPadding;
           }
+          const obj17 = { style: null, color: "text-feedback-positive", variant: "text-xs/semibold", lineClamp: 1, children: null };
           items10[2] = androidTextPadding1;
-          obj17.style = items10;
+          obj17[0] = items10;
           const _HermesInternal2 = HermesInternal;
-          obj17.children = "-" + memo1 + "%";
-          tmp42Result = callback(hasShopDiscount(memo[13]).Text, obj17);
-          const tmp42 = callback;
+          obj17[4] = "-" + memo1 + "%";
+          tmp24Result = tmp24(tmp(tmp2[13]).Text, obj17);
+          tmpResult2 = tmp(tmp2[16]);
         }
-        items8[2] = tmp42Result;
-        obj15.children = items8;
+        items8[2] = tmp24Result;
+        obj15[1] = items8;
         obj9 = obj15;
-        const tmp35 = callback;
-        const tmp38 = obj16.isAndroid() && styles.androidTextPadding;
-      } else if (discountSource === hasShopDiscount(memo[10]).ShopDiscountSource.THIRDPARTY) {
-        obj18 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-        let tmp30 = callback(hasShopDiscount(memo[17]).TagIcon, obj18);
+        const tmp25 = tmp(tmp2[16]).isAndroid() && styles.androidTextPadding;
+      } else if (discountSource === tmp(tmp2[10]).ShopDiscountSource.THIRDPARTY) {
+        const obj18 = { size: "xs", color: "mobile-text-heading-primary", style: null };
+        obj18[2] = styles.wheelIcon;
+        let tmp21 = callback(tmp(tmp2[17]).TagIcon, obj18);
       } else {
-        const obj19 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-        tmp30 = callback(hasShopDiscount(memo[18]).NitroWheelIcon, obj19);
+        const obj19 = { size: "xs", color: "mobile-text-heading-primary", style: null };
+        obj19[2] = styles.wheelIcon;
+        tmp21 = callback(tmp(tmp2[18]).NitroWheelIcon, obj19);
       }
     }
-    return tmp9Result;
+    return tmp11Result;
   }
 });
+const unpackModuleId = memoResult;
 memoResult.displayName = "PriceDescription";
-const memoResult1 = importAllResult.memo(function CardDetailsV2(product) {
+const memoResult1 = importAllResult.memo(function CardDetailsV2(arg0) {
   let collectibleProductState;
   let hidePrice;
   let isDisabled;
   let preferVCPrice;
-  product = product.product;
-  ({ collectibleProductState, preferVCPrice, isDisabled, hidePrice } = product);
-  const tmp = callback3();
-  let obj = require(8640) /* useCurrentUser */;
+  let product;
+  ({ product, hidePrice } = arg0);
+  ({ collectibleProductState, preferVCPrice, isDisabled } = arg0);
+  const tmp = callback2();
+  let obj = require(8664) /* useCurrentUser */;
   const currentUser = obj.useCurrentUser();
-  let obj1 = require(8676) /* isUserPaidTier2 */;
+  let obj1 = require(8700) /* useCanPurchaseFrames */;
   let isProfileFramesEarlyAccessPhase = obj1.useIsProfileFramesEarlyAccessPhase("CollectiblesShopCardCardDetailsV2");
   if (isProfileFramesEarlyAccessPhase) {
-    let obj2 = require(5791) /* getProductOrbPrice */;
-    const productType = obj2.getProductType(product);
-    isProfileFramesEarlyAccessPhase = productType === require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME;
+    let tmp2Result = tmp2(5809);
+    const productType = tmp2Result.getProductType(product);
+    isProfileFramesEarlyAccessPhase = productType === tmp2(1901).CollectiblesItemType.PROFILE_FRAME;
   }
-  let obj3 = importDefault(3811);
-  const tmp7 = obj3.canUseShopDiscounts(currentUser) || isProfileFramesEarlyAccessPhase;
-  const shopDiscountSource = require(5792) /* getPriceForCollectiblesProduct */.getShopDiscountSource(currentUser);
-  const obj5 = require(5792) /* getPriceForCollectiblesProduct */;
-  const token = require(3869) /* map */.useToken(importDefault(689).colors.BACKGROUND_BASE_LOW);
-  const obj6 = require(3869) /* map */;
-  const obj7 = require(4009) /* hexToRgb */;
-  const obj8 = require(4009) /* hexToRgb */;
-  const hexToRgbaStringResult = obj7.hexToRgbaString(require(4009) /* hexToRgb */.hexWithOpacity(token, 0.9));
-  const obj9 = require(4009) /* hexToRgb */;
-  const obj10 = require(4009) /* hexToRgb */;
-  const hexToRgbaStringResult1 = obj9.hexToRgbaString(require(4009) /* hexToRgb */.hexWithOpacity(token, 0));
-  const productName = require(8702) /* getProductName */.getProductName(product);
-  const obj11 = require(8702) /* getProductName */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_5.isFetchingGoogleSkus());
-  obj = { style: items1, colors: items2, locations: [0, 0.4, 1], start: constants.START, end: constants.END };
+  let obj3 = importDefault(3835);
+  tmp2Result = tmp2(5810);
+  const shopDiscountSource = tmp2Result.getShopDiscountSource(currentUser);
+  const tmp8 = obj3.canUseShopDiscounts(currentUser) || isProfileFramesEarlyAccessPhase;
+  const token = require(3893) /* map */.useToken(tmp7(712).colors.BACKGROUND_BASE_LOW);
+  const tmp2Result1 = require(3893) /* map */;
+  const tmp2Result2 = require(4033) /* hexToRgba */;
+  const tmp2Result3 = require(4033) /* hexToRgba */;
+  const hexToRgbaStringResult = tmp2Result2.hexToRgbaString(require(4033) /* hexToRgba */.hexWithOpacity(token, 0.9));
+  const tmp2Result4 = require(4033) /* hexToRgba */;
+  const tmp2Result5 = require(4033) /* hexToRgba */;
+  const hexToRgbaStringResult1 = tmp2Result4.hexToRgbaString(require(4033) /* hexToRgba */.hexWithOpacity(token, 0));
+  const productName = require(8726) /* getProductName */.getProductName(product);
+  const tmp2Result6 = require(8726) /* getProductName */;
+  const items = [updateProduct];
+  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => fetchingGoogleSkus.isFetchingGoogleSkus());
+  obj = { style: items1, colors: items2, locations: [0, 0.4, 1], start: constants.START, end: constants.END, children: null };
   items1 = [tmp.regularMetadataContainer];
   items2 = [hexToRgbaStringResult1, hexToRgbaStringResult, token];
-  const obj12 = require(566) /* initialize */;
-  const tmp14 = callback2;
+  const tmp2Result7 = require(589) /* initialize */;
   obj = { style: tmp.assetName, variant: "heading-sm/bold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: productName };
-  const items3 = [callback(require(4161) /* Text */.Text, obj), ];
-  let tmp16 = !hidePrice;
-  if (tmp16) {
-    obj1 = { style: tmp.priceVariantsContainer };
-    obj2 = { product, hasShopDiscount: tmp7, discountSource: shopDiscountSource, styles: tmp, collectibleProductState, isFetchingGoogleSkus: stateFromStores, preferVCPrice, isDisabled };
-    const items4 = [callback(closure_11, obj2), ];
-    obj3 = { product };
-    items4[1] = callback(importDefault(8703), obj3);
-    obj1.children = items4;
-    tmp16 = callback2(View, obj1);
+  const items3 = [callback(require(4185) /* Text */.Text, obj), ];
+  let tmp15Result = !hidePrice;
+  if (!hidePrice) {
+    obj1 = { style: null, children: null };
+    obj1[0] = tmp.priceVariantsContainer;
+    const obj2 = { product: null, hasShopDiscount: null, discountSource: null, styles: null, collectibleProductState: null, isFetchingGoogleSkus: null, preferVCPrice: null, isDisabled: null };
+    obj2[0] = product;
+    obj2[1] = tmp8;
+    obj2[2] = shopDiscountSource;
+    obj2[3] = tmp;
+    obj2[4] = collectibleProductState;
+    obj2[5] = stateFromStores;
+    obj2[6] = preferVCPrice;
+    obj2[7] = isDisabled;
+    const items4 = [tmp17(closure_11, obj2), ];
+    obj3 = { product: null };
+    obj3[0] = product;
+    items4[1] = tmp17(tmp7(8727), obj3);
+    obj1[1] = items4;
+    tmp15Result = tmp15(View, obj1);
   }
-  items3[1] = tmp16;
-  obj.children = items3;
-  return tmp14(importDefault(4589), obj);
+  items3[1] = tmp15Result;
+  obj[5] = items3;
+  return closure_9(importDefault(4611), obj);
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardCardDetailsV2.tsx");
+const result = require("updateProduct").fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardCardDetailsV2.tsx");
 
 export default memoResult1;

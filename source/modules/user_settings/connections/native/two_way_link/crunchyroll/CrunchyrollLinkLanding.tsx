@@ -1,46 +1,48 @@
-// Module ID: 8962
-// Function ID: 70677
+// Module ID: 8986
+// Function ID: 8987
 // Name: CrunchyrollLinkLanding
-// Dependencies: [31, 8961, 653, 33, 4165, 1212, 8103, 1456, 8913, 8963, 1921, 2]
+// Dependencies: [19, 8985, 676, 21, 4189, 1236, 8127, 1480, 8937, 8987, 1945, 2]
 // Exports: default
 
-// Module 8962 (CrunchyrollLinkLanding)
-import result from "result";
+// Module 8986 (CrunchyrollLinkLanding)
+import noop from "noop";
 import { CrunchyrollLinkModalScenes as closure_4 } from "CrunchyrollLinkModalScenes";
 import ME from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ HelpdeskArticles: closure_5, PlatformTypes: closure_6 } = ME);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ image: { width: 234, height: 147 } });
+({ HelpdeskArticles: c5, PlatformTypes: closure_6 } = ME);
+let closure_8 = createCacheKey.createStyles({ image: { width: 234, height: 147 } });
 const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkLanding.tsx");
 
 export default function CrunchyrollLinkLanding() {
-  let obj = navigation(1456);
+  let obj = navigation(1480);
   navigation = obj.useNavigation();
   let items = [navigation];
   const memo = React.useMemo(() => {
-    const obj = {};
-    const intl = navigation(outer1_2[5]).intl;
-    obj.label = intl.string(navigation(outer1_2[5]).t["2TXHQd"]);
-    obj.icon = navigation(outer1_2[6]).PlayIcon;
+    const obj = { label: null, icon: null };
+    const intl = navigation(1236).intl;
+    obj[0] = intl.string(navigation(1236).t["2TXHQd"]);
+    obj[1] = navigation(8127).PlayIcon;
     const items = [obj];
     return items;
   }, []);
   const callback = React.useCallback(() => {
     navigation.push(outer1_4.PRE_CONNECT);
   }, items);
-  obj = { platformType: constants2.CRUNCHYROLL, img: importDefault(8963), imgStyle: callback().image };
-  let intl = navigation(1212).intl;
-  obj.headerConnect = intl.string(navigation(1212).t["Da+3NJ"]);
-  const intl2 = navigation(1212).intl;
-  obj.body = intl2.string(navigation(1212).t.MaPpPL);
+  obj = { platformType: constants2.CRUNCHYROLL, img: null, imgStyle: null, headerConnect: null, body: null, learnMoreLink: null, onNext: null, valueProps: null };
+  obj[1] = importDefault(8987);
+  obj[2] = callback().image;
+  let intl = navigation(1236).intl;
+  obj[3] = intl.string(navigation(1236).t["Da+3NJ"]);
+  const intl2 = navigation(1236).intl;
+  obj[4] = intl2.string(navigation(1236).t.MaPpPL);
   const tmp = callback();
-  obj.learnMoreLink = importDefault(1921).getArticleURL(constants.CRUNCHYROLL_CONNECTION);
-  obj.onNext = callback;
-  obj.valueProps = memo;
-  return jsx(navigation(8913).TwoWayLinkLanding, { platformType: constants2.CRUNCHYROLL, img: importDefault(8963), imgStyle: callback().image });
+  obj[5] = importDefault(1945).getArticleURL(constants.CRUNCHYROLL_CONNECTION);
+  obj[6] = callback;
+  obj[7] = memo;
+  return jsx(navigation(8937).TwoWayLinkLanding, { platformType: constants2.CRUNCHYROLL, img: null, imgStyle: null, headerConnect: null, body: null, learnMoreLink: null, onNext: null, valueProps: null });
 };

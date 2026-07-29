@@ -1,36 +1,38 @@
-// Module ID: 15475
-// Function ID: 117949
+// Module ID: 15509
+// Function ID: 15510
 // Name: PollBadge
-// Dependencies: [31, 27, 33, 4165, 689, 1273, 15476, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1297, 15510, 4185, 1236, 2]
 // Exports: default
 
-// Module 15475 (PollBadge)
-import "result";
+// Module 15509 (PollBadge)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round, paddingHorizontal: 8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.text = { marginLeft: 4, textTransform: "uppercase" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null, text: null };
+createCacheKey = { borderRadius: require("Themes").radii.round, paddingHorizontal: 8, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, color: require("Themes").colors.TEXT_MUTED, flexDirection: "row", alignItems: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginLeft: 4, textTransform: "uppercase" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/polls/native/PollBadge.tsx");
 
 export default function PollBadge(style) {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: items };
+  const tmp = createCacheKey();
+  let obj = { style: items, children: null };
   items = [tmp.container, style.style];
-  obj = { size: require(1273) /* Button */.IconSizes.EXTRA_SMALL_10, source: importDefault(15476) };
-  const items1 = [callback(require(1273) /* Button */.Icon, obj), ];
-  obj = { style: tmp.text, variant: "text-xs/semibold" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.RgIi2B);
-  items1[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items1;
+  obj = { size: null, source: null };
+  obj[0] = require(1297) /* Button */.IconSizes.EXTRA_SMALL_10;
+  obj[1] = importDefault(15510);
+  const items1 = [callback(require(1297) /* Button */.Icon, obj), ];
+  obj = { style: tmp.text, variant: "text-xs/semibold", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.RgIi2B);
+  items1[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items1;
   return callback2(View, obj);
 };

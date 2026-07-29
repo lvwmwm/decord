@@ -1,44 +1,45 @@
-// Module ID: 8305
-// Function ID: 66509
+// Module ID: 8329
+// Function ID: 8330
 // Name: GuildEventCardControls
-// Dependencies: [31, 27, 4237, 5761, 1354, 33, 4165, 689, 8201, 5000, 566, 8185, 5200, 6725, 8306, 2]
+// Dependencies: [19, 17, 4261, 5779, 1378, 21, 4189, 712, 8225, 5022, 589, 8209, 5222, 6746, 8330, 2]
 
-// Module 8305 (GuildEventCardControls)
+// Module 8329 (GuildEventCardControls)
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { isGuildScheduledEventActive as closure_5 } from "_isNativeReflectConstruct";
+import createRTCConnection from "createRTCConnection";
+import { isGuildScheduledEventActive as closure_5 } from "scheduledEventSort";
 import { AGE_VERIFICATION_STAGE_CHANNEL_TYPES as closure_6 } from "GUILD_EVENT_MAX_NAME_LENGTH";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function GuildEventCardControls(onCloseAction) {
   let event;
   let isConnected;
   ({ event, isConnected } = onCloseAction);
-  let obj = require(8201) /* useEventRsvpState */;
+  let obj = require(8225) /* usePrimaryActionButtonType */;
   const primaryActionButtonType = obj.usePrimaryActionButtonType(event, isConnected);
-  obj = { direction: "horizontal", style: styles().actionContainer };
-  const items = [callback2(require(8201) /* useEventRsvpState */.GuildEventCardPrimaryAction, { event, onCloseAction: onCloseAction.onCloseAction, isConnected }), , ];
-  let tmp4 = primaryActionButtonType === require(8201) /* useEventRsvpState */.PrimaryActionType.START;
-  if (tmp4) {
-    obj = { event };
-    tmp4 = callback2(require(8201) /* useEventRsvpState */.GuildEventCardRSVPAction, obj);
+  obj = { direction: "horizontal", style: styles().actionContainer, children: null };
+  const items = [callback2(require(8225) /* usePrimaryActionButtonType */.GuildEventCardPrimaryAction, { event, onCloseAction: onCloseAction.onCloseAction, isConnected }), , ];
+  let tmp6Result = primaryActionButtonType === require(8225) /* usePrimaryActionButtonType */.PrimaryActionType.START;
+  if (tmp6Result) {
+    obj = { event: null };
+    obj[0] = event;
+    tmp6Result = tmp6(tmp2(8225).GuildEventCardRSVPAction, obj);
   }
-  items[1] = tmp4;
-  items[2] = callback2(require(8201) /* useEventRsvpState */.GuildEventShareAction, { event });
-  obj.children = items;
-  return closure_8(require(5000) /* ButtonGroup */.ButtonGroup, obj);
+  items[1] = tmp6Result;
+  items[2] = callback2(require(8225) /* usePrimaryActionButtonType */.GuildEventShareAction, { event });
+  obj[2] = items;
+  return closure_8(require(5022) /* ButtonGroup */.ButtonGroup, obj);
 }
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let obj = {};
-obj = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: 0 };
-obj.actionContainer = obj;
-const styles = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo((event) => {
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let obj = { actionContainer: null };
+obj = { paddingTop: require("Themes").space.PX_16, paddingBottom: 0 };
+obj[0] = obj;
+const styles = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo((event) => {
   let hideControls;
   let importDefault;
   let onCloseAction;
@@ -56,14 +57,9 @@ const memoResult = require("result").memo((event) => {
     flag2 = false;
   }
   let channel_id;
-  function handlePress() {
-    if (null != callback) {
-      callback(event);
-    }
-  }
   channel_id = event.channel_id;
   let obj = event(channel_id[10]);
-  const items = [_isNativeReflectConstruct];
+  const items = [createRTCConnection];
   const items1 = [channel_id];
   let stateFromStores = obj.useStateFromStores(items, () => {
     let isConnectedResult = outer1_4.isConnected();
@@ -75,50 +71,55 @@ const memoResult = require("result").memo((event) => {
   if (stateFromStores) {
     stateFromStores = callback(event);
   }
-  let obj1 = event(channel_id[11]);
-  const result = obj1.recurrenceRuleFromServer(event.recurrence_rule);
-  obj = { accessible: false, onPress: handlePress };
-  obj = {};
-  obj1 = { event, isNew: flag2 };
-  const items2 = [callback2(event(channel_id[8]).GuildEventCardHeader, obj1), callback2(event(channel_id[8]).GuildEventCardMetaInfo, { event, onTitlePress: handlePress }), , , , ];
+  function handlePress() {
+    if (closure_1 != null) {
+      tmp(event);
+    }
+  }
+  const result = event(channel_id[11]).recurrenceRuleFromServer(event.recurrence_rule);
+  obj = { accessible: false, onPress: handlePress, children: null };
+  const items2 = [callback2(event(channel_id[8]).GuildEventCardHeader, { event, isNew: flag2 }), callback2(event(channel_id[8]).GuildEventCardMetaInfo, { event, onTitlePress: handlePress }), , , , ];
   let hasItem = !flag;
-  if (hasItem) {
+  if (!flag) {
     hasItem = set.has(event.entity_type);
   }
   if (hasItem) {
-    const obj2 = { noBackground: true, onConfirmPress: onCloseAction, channelId: channel_id };
-    hasItem = callback2(importDefault(channel_id[13]), obj2);
+    obj = { noBackground: true, onConfirmPress: null, channelId: null };
+    obj[1] = onCloseAction;
+    obj[2] = channel_id;
+    hasItem = tmp6(importDefault(tmp2[13]), obj);
   }
   items2[2] = hasItem;
   items2[3] = callback2(event(channel_id[8]).GuildEventSimpleLocation, { event });
-  let tmp12 = null;
+  let tmp6Result = null;
   if (!hideControls) {
-    const obj3 = { event, onCloseAction, isConnected: stateFromStores };
-    tmp12 = callback2(GuildEventCardControls, obj3);
+    const obj1 = { event: null, onCloseAction: null, isConnected: null };
+    obj1[0] = event;
+    obj1[1] = onCloseAction;
+    obj1[2] = stateFromStores;
+    tmp6Result = tmp6(GuildEventCardControls, obj1);
   }
-  items2[4] = tmp12;
-  let tmp15 = null != result;
-  if (tmp15) {
-    const obj4 = {
-      guildId: event.guild_id,
-      recurrenceRule: result,
-      guildEventId: event.id,
-      onRecurrencePress(arg0) {
-          let tmp;
-          if (null != callback) {
-            tmp = callback(event, arg0);
-          }
-          return tmp;
-        }
+  items2[4] = tmp6Result;
+  tmp6Result = null != result;
+  if (tmp6Result) {
+    const obj2 = { guildId: null, recurrenceRule: null, guildEventId: null, onRecurrencePress: null };
+    obj2[0] = event.guild_id;
+    obj2[1] = result;
+    obj2[2] = event.id;
+    obj2[3] = function onRecurrencePress(arg0) {
+      let tmpResult;
+      if (closure_1 != null) {
+        tmpResult = tmp(event, arg0);
+      }
+      return tmpResult;
     };
-    tmp15 = callback2(importDefault(channel_id[14]), obj4);
+    tmp6Result = tmp6(importDefault(tmp2[14]), obj2);
   }
-  items2[5] = tmp15;
-  obj.children = items2;
-  obj.children = closure_8(View, obj);
+  items2[5] = tmp6Result;
+  obj[2] = closure_8(View, { children: items2 });
   return callback2(event(channel_id[12]).Card, obj);
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventCard.tsx");
+let result = require("createRTCConnection").fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventCard.tsx");
 
 export default memoResult;
 export const useGuildEventCardStyles = styles;

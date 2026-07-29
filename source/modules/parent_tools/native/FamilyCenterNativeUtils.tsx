@@ -1,46 +1,52 @@
-// Module ID: 11083
-// Function ID: 85988
+// Module ID: 11107
+// Function ID: 11108
 // Name: FAMILY_CENTER_REQUEST_MODAL_KEY
-// Dependencies: [4383, 5776, 653, 675, 5777, 4372, 11084, 1935, 2]
+// Dependencies: [4406, 5794, 676, 698, 5795, 4395, 11108, 1959, 2]
 // Exports: handleFamilyCenterQRCodeScan, resumeFamilyCenterConnection
 
-// Module 11083 (FAMILY_CENTER_REQUEST_MODAL_KEY)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11107 (FAMILY_CENTER_REQUEST_MODAL_KEY)
+import initialize from "initialize";
 import items from "items";
 import { AnalyticEvents } from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ FAMILY_CENTER_LINK_REQUEST_REGEX: closure_4, FamilyCenterAction: closure_5 } = items);
+({ FAMILY_CENTER_LINK_REQUEST_REGEX: c4, FamilyCenterAction: c5 } = items);
+let c7 = "family-center-request-modal";
 const result = require("ME").fileFinishedImporting("modules/parent_tools/native/FamilyCenterNativeUtils.tsx");
 
 export const FAMILY_CENTER_REQUEST_MODAL_KEY = "family-center-request-modal";
-export const handleFamilyCenterQRCodeScan = function handleFamilyCenterQRCodeScan(c7, FamilyCenterQRCodeScan) {
-  const match = c7.match(closure_4);
+export const handleFamilyCenterQRCodeScan = function handleFamilyCenterQRCodeScan(pathname, FamilyCenterQRCodeScan) {
+  const match = pathname.match(closure_4);
   if (null === match) {
     return null;
   } else {
-    let obj = importDefault(675);
-    obj = { action: ScanQRCode.ScanQRCode, selected_teen_id: match[1], source: FamilyCenterQRCodeScan };
+    let obj = importDefault(698);
+    obj = { action: null, selected_teen_id: null, source: null };
+    obj[0] = ScanQRCode.ScanQRCode;
+    obj[1] = match[1];
+    obj[2] = FamilyCenterQRCodeScan;
     obj.track(AnalyticEvents.FAMILY_CENTER_ACTION, obj);
-    importDefault(5777).setPendingConnection(match[1], match[2]);
-    const obj3 = importDefault(5777);
-    obj = { userId: match[1], linkCode: match[2] };
-    importDefault(4372).pushLazy(require(1935) /* maybeLoadBundle */(11084, dependencyMap.paths), obj, "family-center-request-modal");
+    importDefault(5795).setPendingConnection(match[1], match[2]);
+    const obj3 = importDefault(5795);
+    obj = { userId: null, linkCode: null };
+    obj[0] = match[1];
+    obj[1] = match[2];
+    importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(11108, dependencyMap.paths), obj, c7);
   }
 };
 export const resumeFamilyCenterConnection = function resumeFamilyCenterConnection() {
   pendingConnection = pendingConnection.getPendingConnection();
   let flag = null != pendingConnection;
   if (flag) {
-    let obj = importDefault(4372);
-    obj.popWithKey("family-center-request-modal");
-    obj = {};
-    ({ teenId: obj3.userId, linkCode: obj3.linkCode } = pendingConnection);
-    importDefault(4372).pushLazy(require(1935) /* maybeLoadBundle */(11084, dependencyMap.paths), obj, "family-center-request-modal");
+    let obj = importDefault(4395);
+    obj.popWithKey(c7);
+    obj = { userId: null, linkCode: null };
+    ({ teenId: obj3[0], linkCode: obj3[1] } = pendingConnection);
+    importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(11108, dependencyMap.paths), obj, c7);
     flag = true;
-    const obj2 = importDefault(4372);
+    const obj2 = importDefault(4395);
   }
   return flag;
 };

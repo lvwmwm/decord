@@ -1,88 +1,29 @@
-// Module ID: 8805
-// Function ID: 69469
-// Name: handleCall
-// Dependencies: [31, 27, 4157, 4202, 5929, 1348, 4252, 3802, 8789, 653, 33, 4165, 689, 4175, 44, 8806, 9032, 3865, 9033, 8894, 5930, 566, 1273, 4161, 4004, 9038, 5497, 9062, 1212, 9063, 4119, 4117, 4578, 1833, 9059, 4664, 8335, 1935, 9064, 9065, 6597, 4606, 7721, 4396, 8359, 8356, 8366, 9067, 8428, 9068, 8724, 5198, 2]
+// Module ID: 8829
+// Function ID: 8830
+// Name: UserRowSubLabel
+// Dependencies: [19, 17, 4181, 4226, 5948, 1372, 4276, 3826, 8813, 676, 21, 4189, 712, 4199, 38, 8830, 9056, 3889, 9057, 8918, 5949, 589, 1297, 4185, 4028, 9062, 5515, 9086, 1236, 9087, 4143, 4141, 4600, 1857, 9083, 4686, 8359, 1959, 9088, 9089, 6618, 4628, 7744, 4419, 8383, 8380, 8390, 9091, 8452, 9092, 8748, 5220, 2]
 
-// Module 8805 (handleCall)
-import importAllResult from "CheckmarkLargeIcon";
-import { View } from "getAvatarDecoration";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 8829 (UserRowSubLabel)
+import importAllResult from "handleRelationshipAddError";
+import { View } from "presentAddedFriendToast";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import addApplication from "addApplication";
+import initialize from "initialize";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import sortActivity from "sortActivity";
+import upsertRelationship from "upsertRelationship";
 import { UserRowModes } from "UserRowModes";
 import ME from "ME";
-import jsxProd from "cssValueToNumber";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "initialize";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_15;
 let closure_16;
+let map1;
 const require = arg1;
-function handleCall(id) {
-  let closure_0 = id;
-  let obj = importDefault(4175);
-  importDefault(4175).ensurePrivateChannel(id.id).then((channelId) => {
-    const channel = outer1_8.getChannel(channelId);
-    if (null != channel) {
-      outer1_1(outer1_2[14])(channel.isPrivate(), "must be a DM");
-      const obj4 = outer1_1(outer1_2[15])(channel, false);
-      if (!obj4.inCall) {
-        obj4.onPress();
-      }
-      const tmp8 = outer1_1(outer1_2[14]);
-      const obj = { recipientIds: id.id };
-      outer1_1(outer1_2[13]).openPrivateChannel(obj);
-      const obj2 = outer1_1(outer1_2[13]);
-    }
-  });
-}
-function handleAccept(id, applicationId) {
-  let closure_0 = applicationId;
-  let obj = importDefault(9032);
-  obj = {
-    userId: id.id,
-    applicationId,
-    location: Friends_v2,
-    onConfirm() {
-      if (null != applicationId) {
-        const result = applicationId(outer1_2[17]).presentGameFriendRequestAcceptedToast();
-        const obj2 = applicationId(outer1_2[17]);
-      } else {
-        const result1 = applicationId(outer1_2[17]).presentFriendRequestAcceptedToast();
-        const obj = applicationId(outer1_2[17]);
-      }
-    }
-  };
-  let result = obj.maybeConfirmFriendRequestAccept(obj);
-}
-function handleCancel(id, applicationId) {
-  if (null != applicationId) {
-    let obj = { userId: id.id, applicationId };
-    const result = importDefault(9033).cancelGameFriendRequest(obj);
-    const obj4 = importDefault(9033);
-    const result1 = require(3865) /* presentAddedFriendToast */.presentGameFriendRequestIgnoredToast();
-    const obj6 = require(3865) /* presentAddedFriendToast */;
-  } else {
-    obj = importDefault(8894);
-    obj = { location: Friends_v2 };
-    obj.cancelFriendRequest(id.id, obj);
-    const result2 = require(3865) /* presentAddedFriendToast */.presentFriendRequestIgnoredToast();
-    const obj3 = require(3865) /* presentAddedFriendToast */;
-  }
-}
-function handleAcceptSuggestion(id) {
-  let obj = importDefault(8894);
-  obj = { userId: id.id, context: obj, type: undefined, fromFriendSuggestion: true };
-  obj = { location: Friends_v2 };
-  obj.addRelationship(obj);
-  const result = require(3865) /* presentAddedFriendToast */.presentAddedFriendToast();
-}
 function UserRowSubLabel(arg0) {
   let animate;
   let guildId;
@@ -93,66 +34,69 @@ function UserRowSubLabel(arg0) {
   ({ user, type, applicationId: require } = arg0);
   ({ animate, isGameRelationship, guildId } = arg0);
   let gameIcon = callback2();
-  let obj = require(566) /* initialize */;
-  const items = [closure_6];
+  let obj = require(589) /* initialize */;
+  const items = [addApplication];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getApplication(closure_0));
   if (type !== constants.PENDING_INCOMING) {
-    if (type !== constants.SUGGESTION) {
-      if (type !== constants.PENDING_OUTGOING) {
-        obj = { userId: user.id, guildId, textStyle: gameIcon.activityText, animate };
-        return callback(importDefault(9038), obj);
+    if (type !== tmp3.SUGGESTION) {
+      if (type !== tmp3.PENDING_OUTGOING) {
+        obj = { userId: null, guildId: null, textStyle: null, animate: null };
+        obj[0] = user.id;
+        obj[1] = guildId;
+        obj[2] = gameIcon.activityText;
+        obj[3] = animate;
+        return callback(importDefault(9062), obj);
       }
     }
   }
   if (!isGameRelationship) {
-    obj = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted" };
-    let obj4 = require(4004) /* conceal */;
-    obj.children = obj4.getUserTag(user);
-    callback(require(4161) /* Text */.Text, obj);
+    obj = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: null };
+    obj[3] = tmp(4028).getUserTag(user);
+    callback(tmp(4185).Text, obj);
+    const tmpResult = tmp(4028);
   }
   if (null == stateFromStores) {
-    const obj1 = {};
+    const obj1 = { style: null };
     gameIcon = gameIcon.gameIcon;
-    obj1.style = gameIcon;
+    obj1[0] = gameIcon;
     callback(View, obj1);
   } else {
-    const obj2 = { style: gameIcon.gameContainer };
-    const obj3 = { style: gameIcon.gameIcon, resizeMode: "contain" };
-    obj4 = {};
-    const iconURL = stateFromStores.getIconURL(16);
-    let str = "";
-    if (null != iconURL) {
-      str = iconURL;
+    const obj2 = { style: null, children: null };
+    obj2[0] = gameIcon.gameContainer;
+    const obj3 = { style: null, resizeMode: "contain", source: null, disableColor: true };
+    obj3[0] = gameIcon.gameIcon;
+    let str = stateFromStores.getIconURL(16);
+    if (str == null) {
+      str = "";
     }
-    obj4.uri = str;
-    obj3.source = obj4;
-    obj3.disableColor = true;
-    const items1 = [callback(require(1273) /* Button */.Icon, obj3, stateFromStores.id), ];
-    const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-subtle", children: stateFromStores.name };
-    items1[1] = callback(require(4161) /* Text */.Text, obj5);
-    obj2.children = items1;
+    const obj4 = { uri: null };
+    obj4[0] = str;
+    obj3[2] = obj4;
+    const items1 = [callback(tmp(1297).Icon, obj3, stateFromStores.id), ];
+    const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-subtle", children: null };
+    obj5[3] = stateFromStores.name;
+    items1[1] = callback(tmp(4185).Text, obj5);
+    obj2[1] = items1;
     closure_15(View, obj2);
-    const tmp16 = closure_15;
-    const tmp17 = View;
-    const tmp18 = callback;
+    const tmp11 = closure_15;
+    const tmp12 = View;
   }
 }
-({ RelationshipTypes: closure_12, StatusTypes: closure_13 } = ME);
+let c3 = importAllResult;
+({ RelationshipTypes: closure_12, StatusTypes: map1 } = ME);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
 let closure_17 = { CALL: "call", MESSAGE: "message", ACCEPT: "accept", DECLINE: "decline", CANCEL: "cancel", ACCEPT_SUGGESTION: "accept-suggestion", IGNORE_SUGGESTION: "ignore-suggestion", TOGGLE: "toggle" };
-let closure_18 = _createForOfIteratorHelperLoose.createStyles({ avatar: { flexShrink: 0, flexGrow: 0 }, actions: { flexDirection: "row" }, action: { marginLeft: 12, alignSelf: "center" }, buttonWrapper: { marginLeft: 8 }, labelContainer: { flexDirection: "row", alignItems: "center" }, roleDot: { marginRight: 4, paddingTop: 0 }, usernameLabelContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: 4 }, usernameLabel: { display: "flex", flexShrink: 1 } });
-let obj = {};
-obj = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
-obj.activityText = obj;
-_createForOfIteratorHelperLoose = { flexDirection: "row", gap: 4, cornerRadius: require("_createForOfIteratorHelperLoose").radii.xs };
-obj.gameContainer = _createForOfIteratorHelperLoose;
-obj.gameIcon = { width: 14, height: 14 };
-let closure_19 = _createForOfIteratorHelperLoose.createStyles(obj);
+let closure_18 = createCacheKey.createStyles({ avatar: { flexShrink: 0, flexGrow: 0 }, actions: { flexDirection: "row" }, action: { marginLeft: 12, alignSelf: "center" }, buttonWrapper: { marginLeft: 8 }, labelContainer: { flexDirection: "row", alignItems: "center" }, roleDot: { marginRight: 4, paddingTop: 0 }, usernameLabelContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: 4 }, usernameLabel: { display: "flex", flexShrink: 1 } });
+let obj = { activityText: null, gameContainer: null, gameIcon: null };
+obj = { color: require("Themes").colors.TEXT_SUBTLE };
+obj[0] = obj;
+createCacheKey = { flexDirection: "row", gap: 4, cornerRadius: require("Themes").radii.xs };
+obj[1] = createCacheKey;
+obj[2] = { width: 14, height: 14 };
+let closure_19 = createCacheKey.createStyles(obj);
 const Friends_v2 = "Friends_v2";
 const memoResult = importAllResult.memo(function UserRow(type) {
   let accessibilityActions;
-  let accessibilityActions2;
-  let actions;
   let applicationId;
   let onAccessibilityAction;
   let premiumSince;
@@ -203,9 +147,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   if (flag7 === undefined) {
     flag7 = false;
   }
-  let obj = { type: 0, user: 0, mode: 0, selected: 0, disabled: 0, isOwner: 0, onPress: 0, onLongPress: 0, handleMessage: 0, nickname: 0, usernameColor: 0, roleColors: 0, premiumSince: 0, guildId: 0, trailing: 0, subLabel: 0, label: 0, accessibilityActions: 0, onAccessibilityAction: 0, applicationId: 0, isGameRelationship: 0, isNameplatedRow: 0, canShowDisplayNameStyles: 0, canShowDisplayNameStylesFont: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(type, obj);
+  const merged = Object.assign(type, Object.create(null));
   let c17;
   let analyticsLocations;
   let useReducedMotion;
@@ -216,43 +158,44 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   let stateFromStores1;
   let avatarDecoration;
   let closure_26;
-  actions = undefined;
-  const tmp4 = analyticsLocations();
-  c17 = tmp4;
+  let actions;
+  let tmp3 = analyticsLocations();
+  c17 = tmp3;
   analyticsLocations = user(NONE[26])().analyticsLocations;
-  let obj1 = type(NONE[21]);
+  let obj = type(NONE[21]);
   let items = [onPress];
-  const stateFromStoresObject = obj1.useStateFromStoresObject(items, () => ({ useReducedMotion: onPress.useReducedMotion, roleStyle: onPress.roleStyle }));
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ useReducedMotion: onPress.useReducedMotion, roleStyle: onPress.roleStyle }));
   useReducedMotion = stateFromStoresObject.useReducedMotion;
   roleStyle = stateFromStoresObject.roleStyle;
-  let obj2 = type(NONE[21]);
+  let obj1 = type(NONE[21]);
   let items1 = [usernameColor];
-  const stateFromStoresObject1 = obj2.useStateFromStoresObject(items1, () => ({ isMobileOnline: usernameColor.isMobileOnline(user.id), isVROnline: usernameColor.isVROnline(user.id), status: usernameColor.getStatus(user.id) }));
+  const stateFromStoresObject1 = obj1.useStateFromStoresObject(items1, () => ({ isMobileOnline: usernameColor.isMobileOnline(user.id), isVROnline: usernameColor.isVROnline(user.id), status: usernameColor.getStatus(user.id) }));
   isMobileOnline = stateFromStoresObject1.isMobileOnline;
   isVROnline = stateFromStoresObject1.isVROnline;
   status = stateFromStoresObject1.status;
-  let obj3 = type(NONE[21]);
+  let obj2 = type(NONE[21]);
   let items2 = [premiumSince];
-  stateFromStores = obj3.useStateFromStores(items2, () => {
-    if (null != stateFromStores) {
-      let nickname = stateFromStores;
-    } else {
-      nickname = null;
+  stateFromStores = obj2.useStateFromStores(items2, () => {
+    let tmp = stateFromStores;
+    if (stateFromStores == null) {
+      let nickname = null;
       if (null == guildId) {
         nickname = premiumSince.getNickname(user.id);
       }
+      tmp = nickname;
     }
-    return nickname;
+    return tmp;
   });
-  let obj4 = type(NONE[21]);
+  let obj3 = type(NONE[21]);
   const items3 = [handleMessage];
-  stateFromStores1 = obj4.useStateFromStores(items3, () => handleMessage.getSuggestion(user.id));
-  let obj5 = type(NONE[27]);
-  avatarDecoration = obj5.useAvatarDecoration(user, guildId);
+  stateFromStores1 = obj3.useStateFromStores(items3, () => handleMessage.getSuggestion(user.id));
+  let obj4 = type(NONE[27]);
+  avatarDecoration = obj4.useAvatarDecoration(user, guildId);
+  let obj5 = flag2;
   const items4 = [user, onPress];
   const callback = flag2.useCallback(() => {
-    if (null != onPress) {
-      onPress(user);
+    if (onPress != null) {
+      tmp(user);
     }
   }, items4);
   closure_26 = flag2.useRef(user);
@@ -260,222 +203,359 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   const effect = flag2.useEffect(() => {
     closure_26.current = user;
   }, items5);
-  const items6 = [NONE, type, user, handleMessage, applicationId, tmp4];
+  const items6 = [NONE, type, user, handleMessage, applicationId, tmp3];
   const memo = flag2.useMemo(() => {
     const items = [];
     if (NONE !== guildId.ACTIONS) {
-      let obj = { accessibilityActions: items, actions: undefined };
+      let obj = { accessibilityActions: null, actions: "r" };
+      obj[0] = items;
       return obj;
     } else {
       if (trailing.PENDING_INCOMING === type) {
-        obj = { name: _undefined.DECLINE };
+        obj = { name: null, label: null };
+        obj[0] = _undefined.DECLINE;
         const intl6 = type(NONE[28]).intl;
-        const obj1 = {};
+        const obj1 = { name: null };
         let obj15 = user(NONE[24]);
-        obj1.name = obj15.getName(user);
-        obj.label = intl6.formatToPlainString(type(NONE[28]).t["C9Xe6+"], obj1);
-        const obj2 = { name: _undefined.ACCEPT };
+        obj1[0] = obj15.getName(user);
+        obj[1] = intl6.formatToPlainString(type(NONE[28]).t["C9Xe6+"], obj1);
+        let obj2 = { name: null, label: null };
+        obj2[0] = _undefined.ACCEPT;
         const intl7 = type(NONE[28]).intl;
-        const obj3 = {};
+        let obj3 = { name: null };
         let obj18 = user(NONE[24]);
-        obj3.name = obj18.getName(user);
-        obj2.label = intl7.formatToPlainString(type(NONE[28]).t["6p0yBo"], obj3);
+        obj3[0] = obj18.getName(user);
+        obj2[1] = intl7.formatToPlainString(type(NONE[28]).t["6p0yBo"], obj3);
         items.push(obj, obj2);
-        const obj4 = { style: _undefined.actions };
-        let obj5 = {
-          styles: _undefined.action,
-          IconComponent: type(NONE[30]).XLargeIcon,
-          type: "neutral",
-          onPress() {
-                status(outer1_26.current, outer1_15);
-              }
+        let obj4 = { style: null, children: null };
+        obj4[0] = _undefined.actions;
+        let obj5 = { styles: null, IconComponent: null, type: "neutral", onPress: null, accessibilityLabel: null };
+        obj5[0] = _undefined.action;
+        obj5[1] = type(NONE[30]).XLargeIcon;
+        obj5[3] = function onPress() {
+          const current = closure_26.current;
+          if (null != closure_15) {
+            let obj = { userId: null, applicationId: null };
+            obj[0] = current.id;
+            obj[1] = tmp;
+            const result = outer1_1(outer1_2[18]).cancelGameFriendRequest(obj);
+            const obj4 = outer1_1(outer1_2[18]);
+            const result1 = outer1_0(outer1_2[17]).presentGameFriendRequestIgnoredToast();
+            const obj6 = outer1_0(outer1_2[17]);
+          } else {
+            obj = outer1_1(outer1_2[19]);
+            obj = { location: null };
+            obj[0] = outer1_20;
+            obj.cancelFriendRequest(current.id, obj);
+            const result2 = outer1_0(outer1_2[17]).presentFriendRequestIgnoredToast();
+            const obj3 = outer1_0(outer1_2[17]);
+          }
         };
         const intl8 = type(NONE[28]).intl;
-        const obj6 = {};
+        let obj6 = { name: null };
         let obj22 = user(NONE[24]);
-        obj6.name = obj22.getName(user);
-        obj5.accessibilityLabel = intl8.formatToPlainString(type(NONE[28]).t["C9Xe6+"], obj6);
+        obj6[0] = obj22.getName(user);
+        obj5[4] = intl8.formatToPlainString(type(NONE[28]).t["C9Xe6+"], obj6);
         const items1 = [label(user(NONE[29]), obj5), ];
-        const obj7 = { styles: _undefined.action };
-        const tmp35 = user(NONE[29]);
-        obj7.IconComponent = type(NONE[31]).CheckmarkLargeIcon;
-        obj7.type = "positive";
-        obj7.onPress = function onPress() {
-          isVROnline(outer1_26.current, outer1_15);
+        const obj7 = { styles: null, IconComponent: null, type: "positive", onPress: null, accessibilityLabel: null };
+        obj7[0] = _undefined.action;
+        const tmp29 = user(NONE[29]);
+        obj7[1] = type(NONE[31]).CheckmarkLargeIcon;
+        obj7[3] = function onPress() {
+          let closure_0 = closure_15;
+          let obj = outer1_1(outer1_2[16]);
+          obj = {
+            userId: closure_26.current.id,
+            applicationId: closure_15,
+            location: outer1_20,
+            onConfirm() {
+              if (null != callback) {
+                const result = callback(outer1_2[17]).presentGameFriendRequestAcceptedToast();
+                const obj2 = callback(outer1_2[17]);
+              } else {
+                const result1 = callback(outer1_2[17]).presentFriendRequestAcceptedToast();
+                const obj = callback(outer1_2[17]);
+              }
+            }
+          };
+          let result = obj.maybeConfirmFriendRequestAccept(obj);
         };
         const intl9 = type(NONE[28]).intl;
-        let obj8 = {};
+        let obj8 = { name: null };
         let obj25 = user(NONE[24]);
-        obj8.name = obj25.getName(user);
-        obj7.accessibilityLabel = intl9.formatToPlainString(type(NONE[28]).t["6p0yBo"], obj8);
+        obj8[0] = obj25.getName(user);
+        obj7[4] = intl9.formatToPlainString(type(NONE[28]).t["6p0yBo"], obj8);
         items1[1] = label(user(NONE[29]), obj7);
-        obj4.children = items1;
-        let tmp12 = applicationId(flag3, obj4);
-        const tmp38 = user(NONE[29]);
-      } else if (trailing.PENDING_OUTGOING === tmp40) {
-        const obj9 = { name: _undefined.CANCEL };
+        obj4[1] = items1;
+        let tmp8 = applicationId(flag3, obj4);
+        const tmp30 = user(NONE[29]);
+      } else if (tmp32.PENDING_OUTGOING === tmp31) {
+        const obj9 = { name: null, label: null };
+        obj9[0] = _undefined.CANCEL;
         const intl4 = type(NONE[28]).intl;
-        const obj10 = {};
+        const obj10 = { name: null };
         obj8 = user(NONE[24]);
-        obj10.name = obj8.getName(user);
-        obj9.label = intl4.formatToPlainString(type(NONE[28]).t.JFJ8Cg, obj10);
+        obj10[0] = obj8.getName(user);
+        obj9[1] = intl4.formatToPlainString(type(NONE[28]).t.JFJ8Cg, obj10);
         items.push(obj9);
-        const obj11 = { style: _undefined.actions };
-        let obj12 = {
-          styles: _undefined.action,
-          IconComponent: type(NONE[30]).XLargeIcon,
-          type: "neutral",
-          onPress() {
-                status(outer1_26.current, outer1_15);
-              }
+        const obj11 = { style: null, children: null };
+        obj11[0] = _undefined.actions;
+        let obj12 = { styles: null, IconComponent: null, type: "neutral", onPress: null, accessibilityLabel: null };
+        obj12[0] = _undefined.action;
+        obj12[1] = type(NONE[30]).XLargeIcon;
+        obj12[3] = function onPress() {
+          const current = closure_26.current;
+          if (null != closure_15) {
+            let obj = { userId: null, applicationId: null };
+            obj[0] = current.id;
+            obj[1] = tmp;
+            const result = outer1_1(outer1_2[18]).cancelGameFriendRequest(obj);
+            const obj4 = outer1_1(outer1_2[18]);
+            const result1 = outer1_0(outer1_2[17]).presentGameFriendRequestIgnoredToast();
+            const obj6 = outer1_0(outer1_2[17]);
+          } else {
+            obj = outer1_1(outer1_2[19]);
+            obj = { location: null };
+            obj[0] = outer1_20;
+            obj.cancelFriendRequest(current.id, obj);
+            const result2 = outer1_0(outer1_2[17]).presentFriendRequestIgnoredToast();
+            const obj3 = outer1_0(outer1_2[17]);
+          }
         };
         const intl5 = type(NONE[28]).intl;
-        const obj13 = {};
+        const obj13 = { name: null };
         obj12 = user(NONE[24]);
-        obj13.name = obj12.getName(user);
-        obj12.accessibilityLabel = intl5.formatToPlainString(type(NONE[28]).t.JFJ8Cg, obj13);
-        obj11.children = label(user(NONE[29]), obj12);
-        tmp12 = label(flag3, obj11);
-        const tmp23 = user(NONE[29]);
-      } else if (trailing.SUGGESTION === tmp40) {
-        obj = { name: _undefined.ACCEPT_SUGGESTION };
+        obj13[0] = obj12.getName(user);
+        obj12[4] = intl5.formatToPlainString(type(NONE[28]).t.JFJ8Cg, obj13);
+        obj11[1] = label(user(NONE[29]), obj12);
+        tmp8 = label(flag3, obj11);
+        const tmp18 = user(NONE[29]);
+      } else if (tmp32.SUGGESTION === tmp31) {
+        obj = { name: null, label: null };
+        obj[0] = _undefined.ACCEPT_SUGGESTION;
         const intl = type(NONE[28]).intl;
-        obj.label = intl.string(type(NONE[28]).t["ed99+i"]);
-        const obj14 = { name: _undefined.IGNORE_SUGGESTION };
+        obj[1] = intl.string(type(NONE[28]).t["ed99+i"]);
+        const obj14 = { name: null, label: null };
+        obj14[0] = _undefined.IGNORE_SUGGESTION;
         const intl2 = type(NONE[28]).intl;
-        obj14.label = intl2.string(type(NONE[28]).t["Tw3a/R"]);
+        obj14[1] = intl2.string(type(NONE[28]).t["Tw3a/R"]);
         items.push(obj, obj14);
-        obj15 = { style: _undefined.actions };
-        const obj16 = { style: _undefined.buttonWrapper };
-        const obj17 = { variant: "secondary", size: "sm" };
+        obj15 = { style: null, children: null };
+        obj15[0] = _undefined.actions;
+        const obj16 = { style: null, children: null };
+        obj16[0] = _undefined.buttonWrapper;
+        const obj17 = { variant: "secondary", size: "sm", text: null, onPress: null };
         obj5 = type(NONE[33]);
         const intl3 = type(NONE[28]).intl;
-        obj17.text = obj5.truncateText(intl3.string(type(NONE[28]).t.OYkgVk), 8);
-        obj17.onPress = function onPress() {
-          stateFromStores1(outer1_26.current);
+        obj17[2] = obj5.truncateText(intl3.string(type(NONE[28]).t.OYkgVk), 8);
+        obj17[3] = function onPress() {
+          let obj = outer1_1(outer1_2[19]);
+          obj = { userId: closure_26.current.id, context: obj, type: "HermesInternal", fromFriendSuggestion: null };
+          obj = { location: outer1_20 };
+          obj.addRelationship(obj);
+          const result = outer1_0(outer1_2[17]).presentAddedFriendToast();
         };
-        obj16.children = label(type(NONE[32]).Button, obj17);
-        obj15.children = label(flag3, obj16);
-        tmp12 = label(flag3, obj15);
+        obj16[1] = label(type(NONE[32]).Button, obj17);
+        obj15[1] = label(flag3, obj16);
+        tmp8 = label(flag3, obj15);
       } else {
-        const FRIEND = trailing.FRIEND;
-        obj18 = { name: _undefined.CALL };
+        const FRIEND = tmp32.FRIEND;
+        obj18 = { name: null, label: null };
+        obj18[0] = _undefined.CALL;
         const intl10 = type(NONE[28]).intl;
-        const obj19 = { name: user(NONE[24]).getName(user) };
-        obj18.label = intl10.formatToPlainString(type(NONE[28]).t.Q75ddl, obj19);
-        const obj20 = { name: _undefined.MESSAGE };
+        const obj19 = { name: null };
+        obj19[0] = user(NONE[24]).getName(user);
+        obj18[1] = intl10.formatToPlainString(type(NONE[28]).t.Q75ddl, obj19);
+        const obj20 = { name: null, label: null };
+        obj20[0] = _undefined.MESSAGE;
         const intl11 = type(NONE[28]).intl;
-        const obj21 = {};
+        const obj21 = { name: null };
         const obj31 = user(NONE[24]);
-        obj21.name = user(NONE[24]).getName(user);
-        obj20.label = intl11.formatToPlainString(type(NONE[28]).t.zFfSFQ, obj21);
+        obj21[0] = user(NONE[24]).getName(user);
+        obj20[1] = intl11.formatToPlainString(type(NONE[28]).t.zFfSFQ, obj21);
         items.push(obj18, obj20);
-        obj22 = { style: _undefined.actions };
-        const obj23 = { styles: _undefined.action };
+        obj22 = { style: null, children: null };
+        obj22[0] = _undefined.actions;
+        const obj23 = { styles: null, IconComponent: null, type: "neutral", onPress: null, accessibilityLabel: null };
+        obj23[0] = _undefined.action;
         const obj34 = user(NONE[24]);
-        obj23.IconComponent = type(NONE[34]).PhoneCallIcon;
-        obj23.type = "neutral";
-        obj23.onPress = function onPress() {
-          isMobileOnline(outer1_26.current);
+        obj23[1] = type(NONE[34]).PhoneCallIcon;
+        obj23[3] = function onPress() {
+          const current = closure_26.current;
+          let obj = outer1_1(outer1_2[13]);
+          outer1_1(outer1_2[13]).ensurePrivateChannel(current.id).then((arg0) => {
+            const channel = outer1_8.getChannel(arg0);
+            if (null != channel) {
+              outer1_1(outer1_2[14])(channel.isPrivate(), "must be a DM");
+              const obj4 = outer1_1(outer1_2[15])(channel, false);
+              if (!obj4.inCall) {
+                obj4.onPress();
+              }
+              const tmp4 = outer1_1;
+              const tmp5 = outer1_2;
+              const tmp6 = outer1_1(outer1_2[14]);
+              const obj = { recipientIds: null };
+              obj[0] = current.id;
+              outer1_1(outer1_2[13]).openPrivateChannel(obj);
+              const tmp4Result = outer1_1(outer1_2[13]);
+            }
+          });
         };
         const intl12 = type(NONE[28]).intl;
-        const obj24 = {};
-        const tmp55 = user(NONE[29]);
-        obj24.name = user(NONE[24]).getName(user);
-        obj23.accessibilityLabel = intl12.formatToPlainString(type(NONE[28]).t.Q75ddl, obj24);
-        const items2 = [label(tmp55, obj23), ];
-        obj25 = { styles: _undefined.action };
+        const obj24 = { name: null };
+        const tmp43 = user(NONE[29]);
+        obj24[0] = user(NONE[24]).getName(user);
+        obj23[4] = intl12.formatToPlainString(type(NONE[28]).t.Q75ddl, obj24);
+        const items2 = [label(tmp43, obj23), ];
+        obj25 = { styles: null, IconComponent: null, type: "neutral", onPress: null, accessibilityLabel: null };
+        obj25[0] = _undefined.action;
         const obj38 = user(NONE[24]);
-        obj25.IconComponent = type(NONE[35]).ChatIcon;
-        obj25.type = "neutral";
-        obj25.onPress = function onPress() {
-          let tmp;
-          if (null != outer1_7) {
-            tmp = outer1_7(outer1_26.current);
+        obj25[1] = type(NONE[35]).ChatIcon;
+        obj25[3] = function onPress() {
+          let tmpResult;
+          if (initialize != null) {
+            tmpResult = tmp(closure_26.current);
           }
-          return tmp;
+          return tmpResult;
         };
         const intl13 = type(NONE[28]).intl;
-        const obj26 = {};
-        const tmp58 = user(NONE[29]);
-        obj26.name = user(NONE[24]).getName(user);
-        obj25.accessibilityLabel = intl13.formatToPlainString(type(NONE[28]).t.zFfSFQ, obj26);
-        items2[1] = label(tmp58, obj25);
-        obj22.children = items2;
-        tmp12 = applicationId(flag3, obj22);
+        const obj26 = { name: null };
+        const tmp44 = user(NONE[29]);
+        obj26[0] = user(NONE[24]).getName(user);
+        obj25[4] = intl13.formatToPlainString(type(NONE[28]).t.zFfSFQ, obj26);
+        items2[1] = label(tmp44, obj25);
+        obj22[1] = items2;
+        tmp8 = applicationId(flag3, obj22);
         const obj41 = user(NONE[24]);
       }
-      const obj27 = { accessibilityActions: items, actions: tmp12 };
+      const obj27 = { accessibilityActions: null, actions: null };
+      obj27[0] = items;
+      obj27[1] = tmp8;
       return obj27;
     }
   }, items6);
-  ({ accessibilityActions: accessibilityActions2, actions } = memo);
+  actions = memo.actions;
   const items7 = [user, handleMessage, applicationId];
-  let callback1 = flag2.useCallback((nativeEvent) => {
+  const items8 = [onLongPress, user, analyticsLocations];
+  const callback1 = flag2.useCallback((nativeEvent) => {
     const actionName = nativeEvent.nativeEvent.actionName;
     if (_undefined.CALL === actionName) {
-      isMobileOnline(user);
-    } else if (_undefined.MESSAGE === actionName) {
-      let tmp21;
-      if (null != handleMessage) {
-        tmp21 = handleMessage(user);
+      let closure_0 = user;
+      const obj14 = user(NONE[13]);
+      user(NONE[13]).ensurePrivateChannel(user.id).then((arg0) => {
+        const channel = outer1_8.getChannel(arg0);
+        if (null != channel) {
+          outer1_1(outer1_2[14])(channel.isPrivate(), "must be a DM");
+          const obj4 = outer1_1(outer1_2[15])(channel, false);
+          if (!obj4.inCall) {
+            obj4.onPress();
+          }
+          const tmp4 = outer1_1;
+          const tmp5 = outer1_2;
+          const tmp6 = outer1_1(outer1_2[14]);
+          const obj = { recipientIds: null };
+          obj[0] = current.id;
+          outer1_1(outer1_2[13]).openPrivateChannel(obj);
+          const tmp4Result = outer1_1(outer1_2[13]);
+        }
+      });
+    } else if (tmp.MESSAGE === actionName) {
+      let tmp33Result;
+      if (handleMessage != null) {
+        tmp33Result = tmp33(user);
       }
-      return tmp21;
-    } else if (_undefined.ACCEPT === actionName) {
-      isVROnline(user, applicationId);
+      return tmp33Result;
+    } else if (tmp.ACCEPT === actionName) {
+      closure_0 = applicationId;
+      let obj = { userId: null, applicationId: null, location: null, onConfirm: null };
+      obj[0] = user.id;
+      obj[1] = applicationId;
+      obj[2] = roleStyle;
+      obj[3] = function onConfirm() {
+        if (null != callback) {
+          const result = callback(outer1_2[17]).presentGameFriendRequestAcceptedToast();
+          const obj2 = callback(outer1_2[17]);
+        } else {
+          const result1 = callback(outer1_2[17]).presentFriendRequestAcceptedToast();
+          const obj = callback(outer1_2[17]);
+        }
+      };
+      const result = user(NONE[16]).maybeConfirmFriendRequestAccept(obj);
     } else {
-      if (_undefined.DECLINE !== actionName) {
-        if (_undefined.CANCEL !== actionName) {
-          if (_undefined.ACCEPT_SUGGESTION === actionName) {
-            stateFromStores1(user);
-          } else if (_undefined.IGNORE_SUGGESTION === actionName) {
-            user(NONE[20]).ignore(user.id);
+      if (tmp.DECLINE !== actionName) {
+        if (tmp.CANCEL !== actionName) {
+          if (tmp.ACCEPT_SUGGESTION === actionName) {
+            let obj1 = user(NONE[19]);
+            obj = { userId: null, context: null, type: "HermesInternal", fromFriendSuggestion: null };
+            obj[0] = user.id;
+            obj1 = { location: null };
+            obj1[0] = roleStyle;
+            obj[1] = obj1;
+            obj1.addRelationship(obj);
+            const result1 = type(NONE[17]).presentAddedFriendToast();
+          } else if (tmp.IGNORE_SUGGESTION === actionName) {
+            obj = user(NONE[20]);
+            obj.ignore(user.id);
           }
         }
       }
-      status(user, applicationId);
+      if (null != applicationId) {
+        const obj2 = { userId: null, applicationId: null };
+        obj2[0] = tmp13.id;
+        obj2[1] = tmp14;
+        const result2 = user(NONE[18]).cancelGameFriendRequest(obj2);
+        const obj9 = user(NONE[18]);
+        const result3 = type(NONE[17]).presentGameFriendRequestIgnoredToast();
+        const obj11 = type(NONE[17]);
+      } else {
+        const obj3 = { location: null };
+        obj3[0] = roleStyle;
+        user(NONE[19]).cancelFriendRequest(tmp13.id, obj3);
+        const obj6 = user(NONE[19]);
+        const result4 = type(NONE[17]).presentFriendRequestIgnoredToast();
+        const obj8 = type(NONE[17]);
+      }
     }
   }, items7);
-  const items8 = [onLongPress, user, analyticsLocations];
   const callback2 = flag2.useCallback(() => {
     if (null == onLongPress) {
-      type(NONE[37])(NONE[36], NONE.paths).then((arg0) => arg0.default({ userId: outer1_1.id, localUser: outer1_1, sourceAnalyticsLocations: outer1_18 }));
+      type(NONE[37])(NONE[36], NONE.paths).then((arg0) => arg0.default({ userId: id.id, localUser: id, sourceAnalyticsLocations: closure_18 }));
       const promise = type(NONE[37])(NONE[36], NONE.paths);
     } else {
-      onLongPress(user);
+      tmp(user);
     }
   }, items8);
   let obj6 = type(NONE[38]);
   const nameplate = obj6.useNameplate({ user, guildId });
   const items9 = [usernameColor, roleStyle];
   const memo1 = flag2.useMemo(() => {
-    let tmp;
+    let tmp2;
     if (null != usernameColor) {
       if ("username" === roleStyle) {
-        const obj = { color: usernameColor };
-        tmp = obj;
+        const obj = { color: null };
+        obj[0] = tmp;
+        tmp2 = obj;
       }
     }
-    return tmp;
+    return tmp2;
   }, items9);
-  const items10 = [tmp4.avatar, user, guildId, status, isMobileOnline, isVROnline, avatarDecoration];
+  const items10 = [tmp3.avatar, user, guildId, status, isMobileOnline, isVROnline, avatarDecoration];
   const items11 = [label, type, , , ];
   let name;
   const memo2 = flag2.useMemo(() => {
-    const obj = { style: _undefined.avatar, user, guildId };
-    let tmp2 = null;
+    const obj = { style: _undefined.avatar, user, guildId, status: null, isMobileOnline: null, isVROnline: null, size: null, avatarDecoration: null, autoStatusCutout: true };
+    let tmp4 = null;
     if (subLabel.OFFLINE !== status) {
-      tmp2 = status;
+      tmp4 = status;
     }
-    obj.status = tmp2;
-    obj.isMobileOnline = isMobileOnline;
-    obj.isVROnline = isVROnline;
-    obj.size = type(NONE[22]).AvatarSizes.REFRESH_MEDIUM_32;
-    obj.avatarDecoration = avatarDecoration;
-    obj.autoStatusCutout = true;
+    obj[3] = tmp4;
+    obj[4] = isMobileOnline;
+    obj[5] = isVROnline;
+    obj[6] = type(NONE[22]).AvatarSizes.REFRESH_MEDIUM_32;
+    obj[7] = avatarDecoration;
     return label(type(NONE[22]).Avatar, obj);
   }, items10);
-  if (null != stateFromStores1) {
+  if (stateFromStores1 != null) {
     name = stateFromStores1.name;
   }
   items11[2] = name;
@@ -483,211 +563,215 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   items11[4] = user;
   const memo3 = flag2.useMemo(() => {
     if (undefined !== label) {
-      let name = label;
+      return label;
     } else {
-      if (type === trailing.SUGGESTION) {
-        name = undefined;
-        if (null != stateFromStores1) {
-          name = stateFromStores1.name;
+      let tmp = type;
+      if (type !== trailing.SUGGESTION) {
+        let name = stateFromStores;
+        if (stateFromStores == null) {
+          name = user(NONE[24]).getName(user);
+          const obj = user(NONE[24]);
         }
-        if (null != name) {
-          name = stateFromStores1.name;
-        }
-      }
-      if (null != stateFromStores) {
-        name = stateFromStores;
       } else {
-        name = user(NONE[24]).getName(user);
-        const obj = user(NONE[24]);
+        tmp = stateFromStores1;
+        name = undefined;
+        if (stateFromStores1 != null) {
+          name = tmp.name;
+        }
       }
+      name = tmp.name;
     }
-    return name;
   }, items11);
   const items12 = [label, flag3, premiumSince];
   const items13 = [subLabel, user, type, useReducedMotion, flag4, guildId, applicationId];
-  const memo4 = flag2.useMemo(() => {
+  const memo4 = obj5.useMemo(() => {
     if (undefined === label) {
-      let obj = {};
       let tmp5 = null;
       if (flag3) {
-        obj = { size: "xs", color: user(NONE[12]).colors.TEXT_FEEDBACK_WARNING };
+        let obj = { size: "xs", color: null };
+        obj[1] = user(NONE[12]).colors.TEXT_FEEDBACK_WARNING;
         tmp5 = label(type(NONE[39]).CrownIcon, obj);
       }
       const items = [tmp5, ];
       let tmp11 = null;
       if (null != premiumSince) {
-        obj = { size: "xs", color: user(NONE[12]).unsafe_rawColors.GUILD_BOOSTING_PINK };
+        obj = { size: "xs", color: null };
+        obj[1] = user(NONE[12]).unsafe_rawColors.GUILD_BOOSTING_PINK;
         tmp11 = label(type(NONE[40]).BoostGemIcon, obj);
       }
+      obj = { children: null };
       items[1] = tmp11;
-      obj.children = items;
+      obj[0] = items;
       return applicationId(flag4, obj);
     }
   }, items12);
   const items14 = [trailing, flag2, NONE, actions];
-  const memo5 = flag2.useMemo(() => {
-    if (undefined !== subLabel) {
-      let tmp9 = subLabel;
-    } else {
-      const obj = { user, type, animate: !useReducedMotion, isGameRelationship: flag4, guildId, applicationId };
-      tmp9 = label(avatarDecoration, obj);
+  const memo5 = obj5.useMemo(() => {
+    let tmp = subLabel;
+    if (undefined === subLabel) {
+      const obj = { user: null, type: null, animate: null, isGameRelationship: null, guildId: null, applicationId: null };
+      obj[0] = user;
+      obj[1] = type;
+      obj[2] = !useReducedMotion;
+      obj[3] = flag4;
+      obj[4] = guildId;
+      obj[5] = applicationId;
+      tmp = label(isMobileOnline, obj);
     }
-    return tmp9;
+    return tmp;
   }, items13);
-  const memo6 = flag2.useMemo(() => {
-    if (null != trailing) {
-      let tmp2 = trailing;
-    } else {
-      tmp2 = null;
+  const memo6 = obj5.useMemo(() => {
+    let tmp = trailing;
+    if (null == trailing) {
+      let tmp3 = null;
       if (!flag2) {
-        let tmp5;
+        let tmp6;
         if (NONE === guildId.ACTIONS) {
-          tmp5 = actions;
+          tmp6 = actions;
         }
-        tmp2 = tmp5;
+        tmp3 = tmp6;
       }
+      tmp = tmp3;
     }
-    return tmp2;
+    return tmp;
   }, items14);
-  let tmp24 = user(NONE[41])(guildId, user.id);
-  let obj7 = type(NONE[42]);
-  const processColorStringsArray = obj7.useProcessColorStringsArray(roleColors);
-  if (tmp24) {
-    tmp24 = "username" === roleStyle;
+  let tmp25 = tmp4(tmp5[41])(guildId, user.id);
+  let tmp6Result = tmp6(tmp5[42]);
+  const processColorStringsArray = tmp6Result.useProcessColorStringsArray(roleColors);
+  if (tmp25) {
+    tmp25 = "username" === roleStyle;
   }
-  if (tmp24) {
-    tmp24 = processColorStringsArray.length > 1;
+  if (tmp25) {
+    tmp25 = processColorStringsArray.length > 1;
   }
   obj = { userId: user.id, guildId };
-  const tmp25 = user(NONE[43])(obj);
-  let obj9 = type(NONE[44]);
-  const displayNameStylesFont = obj9.useDisplayNameStylesFont({ displayNameStyles: tmp25 });
-  obj = { lineClamp: 1, variant: "text-md/semibold" };
-  let obj11 = type(NONE[24]);
-  const humanizeStatusResult = obj11.humanizeStatus(status, { isMobile: isMobileOnline, isVR: isVROnline });
+  const tmp26 = user(NONE[43])(obj);
+  tmp6Result = tmp6(tmp5[44]);
+  const displayNameStylesFont = tmp6Result.useDisplayNameStylesFont({ displayNameStyles: tmp26 });
+  const humanizeStatusResult = type(NONE[24]).humanizeStatus(status, { isMobile: isMobileOnline, isVR: isVROnline });
   let combined;
-  if ("string" === typeof memo3) {
+  if (typeof memo3 !== "init") {
     if (null != humanizeStatusResult) {
       const _HermesInternal = HermesInternal;
       combined = "" + memo3 + ", " + humanizeStatusResult;
     }
   }
-  obj1 = { style: tmp4.usernameLabelContainer };
+  obj = { lineClamp: 1, variant: "text-md/semibold" };
+  obj1 = { style: tmp3.usernameLabelContainer, children: null };
   if (flag6) {
-    if (null != tmp25) {
+    if (null != tmp26) {
       if (null == guildId) {
-        obj2 = { userId: user.id, userName: memo3 };
-        const items15 = [tmp4.usernameLabel, memo1];
-        obj2.style = items15;
-        obj2.defaultColor = "mobile-text-heading-primary";
-        obj2.accessibilityLabel = combined;
+        obj2 = { userId: null, userName: null, style: null, defaultColor: "mobile-text-heading-primary", accessibilityLabel: null };
+        obj2[0] = user.id;
+        obj2[1] = memo3;
+        const items15 = [tmp3.usernameLabel, memo1];
+        obj2[2] = items15;
+        obj2[4] = combined;
+        let tmp4Result = tmp4(tmp5[45]);
         const merged1 = Object.assign(obj);
-        let tmp32Result = label(user(NONE[45]), obj2);
-        const tmp39 = user(NONE[45]);
+        let tmp33Result1 = label(tmp4Result, obj2);
+        let tmp33 = label;
       }
-      const items16 = [tmp32Result, memo4, ];
+      const items16 = [tmp33Result1, memo4, ];
       if (user.bot) {
-        obj3 = { verified: user.isVerifiedBot() };
-        const tmp44Result = tmp44(tmp45[46]);
-        obj3.type = type(tmp45[47]).getBotTagTypeFromUser(user);
-        let tmp43Result = tmp43(tmp44Result, obj3);
-        let obj19 = type(tmp45[47]);
+        obj3 = { verified: null, type: null };
+        tmp4Result = tmp4(tmp5[46]);
+        obj3[0] = user.isVerifiedBot();
+        obj3[1] = tmp6(tmp5[47]).getBotTagTypeFromUser(user);
+        let tmp33Result = tmp33(tmp4Result, obj3);
+        const tmp6Result2 = tmp6(tmp5[47]);
       } else {
-        obj4 = { userId: user.id };
-        tmp43Result = tmp43(tmp44(tmp45[48]), obj4);
+        obj4 = { userId: null };
+        obj4[0] = user.id;
+        tmp33Result = tmp33(tmp4(tmp5[48]), obj4);
       }
-      items16[2] = tmp43Result;
-      obj1.children = items16;
-      const tmp30Result = tmp30(tmp31, obj1);
-      let tmp50 = "dot" !== roleStyle;
-      if (!tmp50) {
-        tmp50 = null == usernameColor && null == roleColors;
-        const tmp51 = null == usernameColor && null == roleColors;
+      items16[2] = tmp33Result;
+      obj1[1] = items16;
+      let tmp31Result = tmp31(tmp32, obj1);
+      let tmp45 = "dot" !== roleStyle;
+      if (!tmp45) {
+        tmp45 = null == usernameColor && null == roleColors;
+        const tmp46 = null == usernameColor && null == roleColors;
       }
-      let tmp53Result = tmp30Result;
-      if (!tmp50) {
-        obj5 = { style: tmp4.labelContainer };
-        obj6 = {};
-        let tmp58 = null;
-        if (null != usernameColor) {
-          tmp58 = usernameColor;
+      if (!tmp45) {
+        obj5 = { style: null, children: null };
+        obj5[0] = tmp3.labelContainer;
+        if (usernameColor == null) {
+          usernameColor = null;
         }
-        obj6.color = tmp58;
-        let tmp59 = null;
-        if (null != roleColors) {
-          tmp59 = roleColors;
+        obj6 = { color: null, colors: null, containerStyles: null };
+        obj6[0] = usernameColor;
+        if (roleColors == null) {
+          roleColors = null;
         }
-        obj6.colors = tmp59;
-        obj6.containerStyles = tmp4.roleDot;
-        const items17 = [label(type(NONE[22]).RoleDot, obj6), tmp30Result];
-        obj5.children = items17;
-        tmp53Result = applicationId(flag3, obj5);
-        const tmp53 = applicationId;
-        const tmp54 = flag3;
-        let tmp55 = label;
+        obj6[1] = roleColors;
+        obj6[2] = tmp3.roleDot;
+        const items17 = [tmp33(tmp6(tmp5[22]).RoleDot, obj6), tmp31Result];
+        obj5[1] = items17;
+        tmp31Result = tmp31(tmp32, obj5);
       }
-      obj7 = {};
+      let obj7 = {};
       const merged2 = Object.assign(merged);
-      obj7["disabled"] = flag2;
-      obj7["icon"] = memo2;
-      obj7["onPress"] = callback;
-      obj7["onLongPress"] = callback2;
-      if (null != accessibilityActions) {
-        accessibilityActions2 = accessibilityActions;
+      obj7.disabled = flag2;
+      obj7.icon = memo2;
+      obj7.onPress = callback;
+      obj7.onLongPress = callback2;
+      if (accessibilityActions == null) {
+        accessibilityActions = memo.accessibilityActions;
       }
-      obj7["accessibilityActions"] = accessibilityActions2;
-      if (null != onAccessibilityAction) {
-        callback1 = onAccessibilityAction;
+      obj7.accessibilityActions = accessibilityActions;
+      if (onAccessibilityAction == null) {
+        onAccessibilityAction = callback1;
       }
-      obj7["onAccessibilityAction"] = callback1;
-      obj7["label"] = tmp53Result;
-      obj7["subLabel"] = memo5;
-      obj7["height"] = "100%";
+      obj7.onAccessibilityAction = onAccessibilityAction;
+      obj7.label = tmp31Result;
+      obj7.subLabel = memo5;
+      obj7.height = "100%";
       if (NONE === guildId.TOGGLE) {
         let obj8 = {};
         const merged3 = Object.assign(obj7);
-        obj8["checked"] = flag;
-        let tmp70 = label(type(NONE[49]).TableCheckboxRow, obj8);
+        obj8.checked = flag;
+        tmp33Result = tmp33(tmp6(tmp5[49]).TableCheckboxRow, obj8);
       } else {
         if (null != nameplate) {
           if (flag5) {
-            obj9 = {};
+            let obj9 = {};
             const merged4 = Object.assign(obj7);
-            obj9["trailing"] = memo6;
-            obj9["nameplate"] = nameplate;
-            tmp70 = label(type(NONE[50]).UserNameplateRow, obj9);
+            obj9.trailing = memo6;
+            obj9.nameplate = nameplate;
+            tmp33Result = tmp33(tmp6(tmp5[50]).UserNameplateRow, obj9);
           }
         }
         let obj10 = {};
         const merged5 = Object.assign(obj7);
-        obj10["trailing"] = memo6;
-        tmp70 = label(type(NONE[51]).TableRow, obj10);
+        obj10.trailing = memo6;
+        tmp33Result = tmp33(tmp6(tmp5[51]).TableRow, obj10);
       }
-      return tmp70;
+      return tmp33Result;
     }
   }
-  obj11 = {};
-  let tmp33;
-  if (tmp24) {
-    tmp33 = processColorStringsArray;
+  tmp33 = label;
+  let tmp34;
+  if (tmp25) {
+    tmp34 = processColorStringsArray;
   }
-  obj11.gradientColors = tmp33;
-  obj11.color = "mobile-text-heading-primary";
-  const items18 = [tmp4.usernameLabel, memo1, ];
+  let obj11 = { gradientColors: tmp34, color: "mobile-text-heading-primary", style: null, accessibilityLabel: null };
+  const items18 = [tmp3.usernameLabel, memo1, ];
   if (flag7) {
     flag7 = null != displayNameStylesFont;
   }
   if (flag7) {
-    let obj12 = { fontFamily: displayNameStylesFont };
+    let obj12 = { fontFamily: null };
+    obj12[0] = displayNameStylesFont;
     flag7 = obj12;
   }
   items18[2] = flag7;
-  obj11.style = items18;
-  obj11.accessibilityLabel = combined;
+  obj11[2] = items18;
+  obj11[3] = combined;
   const merged6 = Object.assign(obj);
-  obj11["children"] = memo3;
-  tmp32Result = label(type(NONE[23]).Text, obj11);
+  obj11.children = memo3;
+  tmp33Result1 = tmp33(tmp6(tmp5[23]).Text, obj11);
 });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/UserRow.tsx");
+let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/UserRow.tsx");
 
 export default memoResult;

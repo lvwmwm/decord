@@ -1,11 +1,11 @@
-// Module ID: 13076
-// Function ID: 101021
+// Module ID: 13099
+// Function ID: 13100
 // Name: useGuildActionSheetPermissions
-// Dependencies: [3793, 653, 566, 2]
+// Dependencies: [3817, 676, 589, 2]
 // Exports: useGuildActionSheetPermissions
 
-// Module 13076 (useGuildActionSheetPermissions)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13099 (useGuildActionSheetPermissions)
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";
 
 const require = arg1;
@@ -13,19 +13,17 @@ const result = require("initialize").fileFinishedImporting("modules/guild_action
 
 export const useGuildActionSheetPermissions = function useGuildActionSheetPermissions(guild) {
   const _require = guild;
-  const items = [_isNativeReflectConstruct];
+  const items = [getUncachedChannelPermissions];
   const items1 = [guild];
-  return _require(566).useStateFromStoresObject(items, () => {
+  return _require(589).useStateFromStoresObject(items, () => {
     if (null == closure_0) {
       let obj = { canAccessSettings: false, canEditNickname: false, canManageChannels: false };
     } else {
-      obj = { canAccessSettings: outer1_2.canAccessGuildSettings(closure_0) };
-      let canResult = outer1_2.can(outer1_3.CHANGE_NICKNAME, closure_0);
-      if (!canResult) {
-        canResult = outer1_2.can(outer1_3.MANAGE_NICKNAMES, closure_0);
-      }
-      obj.canEditNickname = canResult;
-      obj.canManageChannels = outer1_2.can(outer1_3.MANAGE_CHANNELS, closure_0);
+      obj = { canAccessSettings: null, canEditNickname: null, canManageChannels: null };
+      obj[0] = outer1_2.canAccessGuildSettings(tmp);
+      obj[1] = outer1_2.can(outer1_3.CHANGE_NICKNAME, tmp) || outer1_2.can(outer1_3.MANAGE_NICKNAMES, tmp);
+      obj[2] = outer1_2.can(outer1_3.MANAGE_CHANNELS, tmp);
+      const tmp3 = outer1_2.can(outer1_3.CHANGE_NICKNAME, tmp) || outer1_2.can(outer1_3.MANAGE_NICKNAMES, tmp);
     }
     return obj;
   }, items1);

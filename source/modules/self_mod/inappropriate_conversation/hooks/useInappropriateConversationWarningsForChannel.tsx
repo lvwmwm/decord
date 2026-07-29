@@ -1,26 +1,20 @@
-// Module ID: 10112
-// Function ID: 78209
+// Module ID: 10133
+// Function ID: 10134
 // Name: useInappropriateConversationWarningsForChannel
-// Dependencies: [9075, 566, 2]
+// Dependencies: [9099, 589, 2]
 // Exports: useInappropriateConversationWarningsForChannel
 
-// Module 10112 (useInappropriateConversationWarningsForChannel)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { SafetyWarningTypes } from "_isNativeReflectConstruct";
+// Module 10133 (useInappropriateConversationWarningsForChannel)
+import handleConnectionOpen from "handleConnectionOpen";
+import { SafetyWarningTypes } from "handleConnectionOpen";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationWarningsForChannel.tsx");
 
 export const useInappropriateConversationWarningsForChannel = function useInappropriateConversationWarningsForChannel(channelId) {
   const _require = channelId;
-  const items = [_isNativeReflectConstruct];
+  const items = [handleConnectionOpen];
   const items1 = [channelId];
-  const stateFromStores = _require(566).useStateFromStores(items, () => outer1_2.getChannelSafetyWarnings(closure_0), items1);
-  return stateFromStores.filter((type) => {
-    let tmp = type.type === outer1_3.INAPPROPRIATE_CONVERSATION_TIER_1;
-    if (!tmp) {
-      tmp = type.type === outer1_3.INAPPROPRIATE_CONVERSATION_TIER_2;
-    }
-    return tmp;
-  });
+  const stateFromStores = _require(589).useStateFromStores(items, () => outer1_2.getChannelSafetyWarnings(closure_0), items1);
+  return stateFromStores.filter((type) => type.type === obj.INAPPROPRIATE_CONVERSATION_TIER_1 || type.type === tmp.INAPPROPRIATE_CONVERSATION_TIER_2);
 };

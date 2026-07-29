@@ -1,16 +1,16 @@
-// Module ID: 4607
-// Function ID: 40222
+// Module ID: 4629
+// Function ID: 4630
 // Name: textRegexp
-// Dependencies: [3864, 2]
+// Dependencies: [3888, 2]
 // Exports: textMarkupPatternWithExclusions
 
-// Module 4607 (textRegexp)
+// Module 4629 (textRegexp)
 import t from "t";
 
 const tmp2 = /^[\s\S]+?(?=[^0-9A-Za-z\s\u00c0-\uffff]|\n\n| {2,}\n|\w+:\S|[0-9]+\.|$)/;
 const obj = {};
 const merged = Object.assign(require("t").defaultRules.text);
-obj["match"] = t.anyScopeRegex(tmp2);
+obj.match = t.anyScopeRegex(tmp2);
 const result = require("set").fileFinishedImporting("modules/markup/MarkupTextRule.tsx");
 
 export default obj;

@@ -1,104 +1,25 @@
-// Module ID: 11217
-// Function ID: 87000
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 5681, 5679, 5680, 11218, 4601, 4602, 5687, 1882, 7990, 8000, 11189, 11220, 22, 7992, 566, 8004, 11219, 11221, 2]
-// Exports: bucketCommandSectionNameContains, bucketCommandSectionNameStartsWith, useGlobalSearchResults, useLocalSearchResults
+// Module ID: 11241
+// Function ID: 11242
+// Name: useApplicationsInContext
+// Dependencies: [32, 19, 5699, 5697, 5698, 11242, 4623, 4624, 5705, 1906, 8015, 8025, 11213, 11244, 12, 8017, 589, 8028, 11243, 11245, 2]
+// Exports: bucketApplicationDescriptionContains, bucketApplicationDescriptionStartsWith, bucketApplicationNameContains, bucketApplicationNameStartsWith, bucketCommandNameContains, bucketCommandOptionNameContains, bucketCommandSectionNameContains, bucketCommandSectionNameStartsWith, bucketFullCommandNameStartsWith, bucketOptionNameStartsWithOrCommandAndOptionStartsWith, bucketRootCommandNameStartsWith, defaultApplicationBucketing, defaultCommandBucketing, defaultCommandsSort, filterApplicationAllowed, filterCommandAllowed, sortCommandsByFreceny, useApplicationCommandsInContext, useGlobalSearchResults, useLocalSearchResults
 
-// Module 11217 (_createForOfIteratorHelperLoose)
+// Module 11241 (useApplicationsInContext)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import closure_6 from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import { FetchState } from "_isNativeReflectConstruct";
+import _getEmbedApplication from "_getEmbedApplication";
+import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
+import getIndexKey from "getIndexKey";
+import closure_11 from "handleUserSettingsProtoStoreChange";
+import getSearchResults from "getSearchResults";
+import { FetchState } from "getSearchResults";
 import { BuiltInSectionId } from "TRUE_OPTION_NAME";
 import { COMMAND_SENTINEL } from "regExp";
 
-let closure_10;
-let closure_7;
-let closure_8;
-let closure_9;
+let c10;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function useApplicationsInContext(allowFetch) {
   let context;
   let onlyWithCommands;
@@ -113,8 +34,8 @@ function useApplicationsInContext(allowFetch) {
   if ("channel" === context.type) {
     channel = context.channel;
   }
-  let obj = onlyWithCommands(5687);
-  const items = [onlyWithCommands(1882).ApplicationCommandType.CHAT];
+  let obj = onlyWithCommands(5705);
+  const items = [onlyWithCommands(1906).ApplicationCommandType.CHAT];
   const hasBaseAccessPermissions = obj.usePermissionContext(channel, items).hasBaseAccessPermissions;
   const tmp2 = callback2(context, hasBaseAccessPermissions, flag);
   let tmp3 = callback3(hasBaseAccessPermissions, flag);
@@ -124,7 +45,7 @@ function useApplicationsInContext(allowFetch) {
     let tmp = null != application;
     if (tmp) {
       let tmp3 = !includeEmbeddedApps;
-      if (!tmp3) {
+      if (includeEmbeddedApps) {
         tmp3 = !onlyWithCommands(outer1_3[10]).isEmbeddedApp(application);
         const obj = onlyWithCommands(outer1_3[10]);
       }
@@ -137,7 +58,7 @@ function useApplicationsInContext(allowFetch) {
         }
         if (tmp7) {
           let tmp11 = !onlyWithCommands;
-          if (!tmp11) {
+          if (onlyWithCommands) {
             const _Object = Object;
             tmp11 = Object.keys(descriptor.commands).length > 0;
           }
@@ -154,51 +75,84 @@ function useApplicationsInContext(allowFetch) {
   if (null != tmp2.result) {
     let _Object = Object;
     let values = Object.values(tmp2.result.sections);
-    for (let num = 0; num < values.length; num = num + 1) {
-      let tmp5 = values[num];
-      let application = tmp5.descriptor.application;
-      let tmp6 = null != application && callback(tmp5);
-      if (tmp6) {
-        let arr = items2.push(application);
-        let addResult = set.add(application.id);
+    for (const item10053 of values) {
+      let application = item10053.descriptor.application;
+      let tmp9 = application;
+      let callbackResult = null != application;
+      if (callbackResult) {
+        let tmp11 = item10053;
+        callbackResult = callback(tmp8);
       }
+      if (callbackResult) {
+        let tmp12 = application;
+        let arr = items2.push(tmp9);
+        let addResult = set.add(tmp9.id);
+      }
+      continue;
     }
   }
   if (null != tmp3.result) {
     const _Object2 = Object;
     values = Object.values(tmp3.result.sections);
-    for (let num2 = 0; num2 < values.length; num2 = num2 + 1) {
-      let tmp9 = values[num2];
-      let application2 = tmp9.descriptor.application;
-      let tmp10 = null != application2 && !set.has(application2.id) && callback(tmp9);
-      if (tmp10) {
-        arr = items2.push(application2);
+    for (const item10070 of values) {
+      let application2 = item10070.descriptor.application;
+      let tmp17 = application2;
+      let callbackResult1 = null != application2;
+      let tmp16 = item10070;
+      if (callbackResult1) {
+        let tmp19 = application2;
+        callbackResult1 = !set.has(tmp17.id);
       }
+      if (callbackResult1) {
+        let tmp20 = item10070;
+        callbackResult1 = callback(tmp16);
+      }
+      if (callbackResult1) {
+        let tmp21 = application2;
+        arr = items2.push(tmp17);
+      }
+      continue;
     }
   }
   if (includeBuiltIn) {
     includeBuiltIn = allowFetch.includeBuiltIn;
   }
   if (includeBuiltIn) {
-    items2.push(onlyWithCommands(7990).FAKE_BUILT_IN_APP);
+    items2.push(onlyWithCommands(8015).FAKE_BUILT_IN_APP);
   }
-  obj = { apps: items2 };
+  obj = { apps: items2, loading: null };
   let fetching;
-  if (null != tmp2) {
+  if (tmp2 != null) {
     fetching = tmp2.fetchState.fetching;
   }
-  let tmp16 = true === fetching;
-  if (!tmp16) {
+  let tmp27 = true === fetching;
+  if (!tmp27) {
     let fetching1;
-    if (null != tmp3) {
+    if (tmp3 != null) {
       fetching1 = tmp3.fetchState.fetching;
     }
-    tmp16 = true === fetching1;
+    tmp27 = true === fetching1;
   }
-  obj.loading = tmp16;
+  obj[1] = tmp27;
   return obj;
 }
-function useApplicationCommandsInContext(context) {
+function sortApplicationFreceny(id, id2) {
+  const scoreWithoutLoadingLatest = store.getScoreWithoutLoadingLatest(id.id);
+  return store.getScoreWithoutLoadingLatest(id2.id) - scoreWithoutLoadingLatest;
+}
+function sortApplicationAlpha(FAKE_BUILT_IN_APP, FAKE_BUILT_IN_APP) {
+  const sectionName = require(8015) /* getShelfBadgeTypeIfActive */.getSectionName(FAKE_BUILT_IN_APP);
+  const obj = require(8015) /* getShelfBadgeTypeIfActive */;
+  return callback(sectionName, require(8015) /* getShelfBadgeTypeIfActive */.getSectionName(FAKE_BUILT_IN_APP));
+}
+function sortCommandsAlpha(displayName, displayName2) {
+  return callback(displayName.displayName, displayName2.displayName);
+}
+({ appLauncherOnlyCompareNames: error, getSection: metroImportAll, useContextIndexState: c9, useUserIndexState: c10 } = getIndexKey);
+let result = require("handleUserSettingsProtoStoreChange").fileFinishedImporting("modules/app_launcher/utils/AppLauncherSearchUtils.tsx");
+
+export { useApplicationsInContext };
+export const useApplicationCommandsInContext = function useApplicationCommandsInContext(context) {
   context = context.context;
   let flag = context.includeBuiltIn;
   if (flag === undefined) {
@@ -210,41 +164,40 @@ function useApplicationCommandsInContext(context) {
   }
   let c2;
   let c3;
-  let tmp = callback2(context, true, flag2);
+  const tmp = callback2(context, true, flag2);
   c2 = tmp;
   const tmp2 = callback3(true, flag2);
   c3 = tmp2;
-  let items = [context, flag, tmp.fetchState.fetching, , , ];
-  let result = tmp.result;
+  const items = [context, flag, tmp.fetchState.fetching, , , ];
+  const result = tmp.result;
   let sections;
-  if (null != result) {
+  if (result != null) {
     sections = result.sections;
   }
   items[3] = sections;
   items[4] = tmp2.fetchState.fetching;
-  let result2 = tmp2.result;
+  const result2 = tmp2.result;
   let sections1;
-  if (null != result2) {
+  if (result2 != null) {
     sections1 = result2.sections;
   }
   items[5] = sections1;
   return React.useMemo(() => {
     let _undefined;
-    let length;
     const result = obj.result;
     let sections;
-    if (null != result) {
+    if (result != null) {
       sections = result.sections;
     }
-    if (null == sections) {
+    if (sections == null) {
       sections = {};
     }
     const result2 = _undefined.result;
     let sections1;
-    if (null != result2) {
+    if (result2 != null) {
       sections1 = result2.sections;
     }
-    if (null == sections1) {
+    if (sections1 == null) {
       sections1 = {};
     }
     let items = [...Object.keys(sections)];
@@ -255,64 +208,61 @@ function useApplicationCommandsInContext(context) {
     }
     items1 = [];
     obj = {};
-    let num = 0;
-    if (0 < items.length) {
-      do {
-        _undefined = items[num];
-        let tmp5Result = tmp5();
-        num = num + 1;
-        length = items.length;
-      } while (num < length);
+    for (const item10038 of items) {
+      _undefined = item10038;
+      let tmp5Result = tmp5();
+      continue;
     }
-    obj = { commands: items1, commandSectionMap: obj };
+    obj = { commands: items1, commandSectionMap: obj, loading: null };
     let tmp7 = true === obj.fetchState.fetching;
     if (!tmp7) {
       tmp7 = true === _undefined.fetchState.fetching;
     }
-    obj.loading = tmp7;
+    obj[2] = tmp7;
     return obj;
   }, items);
-}
-function filterApplicationAllowed(type) {
+};
+export const filterApplicationAllowed = function filterApplicationAllowed(type) {
   const _require = type;
   let channel;
   if ("channel" === type.type) {
     channel = type.channel;
   }
-  const items = [_require(1882).ApplicationCommandType.CHAT, _require(1882).ApplicationCommandType.PRIMARY_ENTRY_POINT];
-  let closure_1 = _require(5687).buildPermissionContext(channel, items);
+  const items = [_require(1906).ApplicationCommandType.CHAT, _require(1906).ApplicationCommandType.PRIMARY_ENTRY_POINT];
+  let closure_1 = _require(5705).buildPermissionContext(channel, items);
   return (id) => {
     let closure_1;
     let closure_2;
+    let context;
+    let isImpersonating;
+    let roleIds;
     let sectionCommands;
-    const context = closure_1.context;
-    const userId = closure_1.userId;
-    const roleIds = closure_1.roleIds;
-    const isImpersonating = closure_1.isImpersonating;
+    let userId;
+    ({ context, userId, roleIds, isImpersonating } = closure_1);
     const tmp = outer1_8(descriptor, id.id);
     descriptor = tmp.descriptor;
     ({ sectionCommands, isGuildInstalled: closure_1, isUserInstalled: closure_2 } = tmp);
     let guild_id;
-    if (null != context) {
+    if (context != null) {
       guild_id = context.guild_id;
     }
     let allowedForUser = null;
     if (null != guild_id) {
       let obj = outer1_2(outer1_3[11]);
       let permissions;
-      if (null != descriptor) {
+      if (descriptor != null) {
         permissions = descriptor.permissions;
       }
       allowedForUser = obj.computeAllowedForUser(permissions, context.guild_id, userId, roleIds, isImpersonating);
     }
     let guild_id1;
-    if (null != context) {
+    if (context != null) {
       guild_id1 = context.guild_id;
     }
     let allowedForChannel = null;
     if (null != guild_id1) {
       let permissions1;
-      if (null != descriptor) {
+      if (descriptor != null) {
         permissions1 = descriptor.permissions;
       }
       allowedForChannel = outer1_2(outer1_3[11]).computeAllowedForChannel(permissions1, context, context.guild_id);
@@ -326,177 +276,226 @@ function filterApplicationAllowed(type) {
     if (tmp17) {
       someResult = sectionCommands.some((arg0) => {
         let obj = outer2_2(outer2_3[11]);
-        obj = { applicationAllowedForUser: allowedForUser, applicationAllowedForChannel: allowedForChannel };
+        obj = { applicationAllowedForUser: allowedForUser, applicationAllowedForChannel: allowedForChannel, commandBotId: null, isGuildInstalled: null, isUserInstalled: null };
         let botId;
-        if (null != descriptor) {
+        if (descriptor != null) {
           botId = descriptor.botId;
         }
-        obj.commandBotId = botId;
-        obj.isGuildInstalled = closure_1;
-        obj.isUserInstalled = closure_2;
+        obj[2] = botId;
+        obj[3] = closure_1;
+        obj[4] = closure_2;
         return obj.hasAccess(arg0, outer1_1, obj) === descriptor(outer2_3[11]).HasAccessResult.ALLOWED;
       });
     }
     return someResult;
   };
-}
-function defaultApplicationBucketing(arg0) {
-  const items = [bucketApplicationNameStartsWith(arg0), bucketApplicationNameContains(arg0), bucketApplicationDescriptionStartsWith(arg0), bucketApplicationDescriptionContains(arg0)];
+};
+export function defaultApplicationBucketing(arg0) {
+  let closure_0 = arg0;
+  const items = [
+    (FAKE_BUILT_IN_APP) => {
+      const sectionName = set(outer1_3[10]).getSectionName(FAKE_BUILT_IN_APP);
+      const obj = set(outer1_3[10]);
+      return sectionName.toLocaleLowerCase().startsWith(set.toLocaleLowerCase());
+    },
+  ,
+  ,
+
+  ];
+  closure_0 = arg0;
+  items[1] = (FAKE_BUILT_IN_APP) => {
+    const sectionName = set(outer1_3[10]).getSectionName(FAKE_BUILT_IN_APP);
+    const obj = set(outer1_3[10]);
+    return sectionName.toLocaleLowerCase().includes(set.toLocaleLowerCase());
+  };
+  closure_0 = arg0;
+  items[2] = (FAKE_BUILT_IN_APP) => {
+    const sectionDescription = set(outer1_3[10]).getSectionDescription(FAKE_BUILT_IN_APP);
+    let toLocaleLowerCaseResult;
+    if (sectionDescription != null) {
+      toLocaleLowerCaseResult = sectionDescription.toLocaleLowerCase();
+    }
+    let flag;
+    if (toLocaleLowerCaseResult != null) {
+      flag = toLocaleLowerCaseResult.startsWith(set.toLocaleLowerCase());
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
+  };
+  closure_0 = arg0;
+  items[3] = (FAKE_BUILT_IN_APP) => {
+    const sectionDescription = set(outer1_3[10]).getSectionDescription(FAKE_BUILT_IN_APP);
+    let toLocaleLowerCaseResult;
+    if (sectionDescription != null) {
+      toLocaleLowerCaseResult = sectionDescription.toLocaleLowerCase();
+    }
+    let flag;
+    if (toLocaleLowerCaseResult != null) {
+      flag = toLocaleLowerCaseResult.includes(set.toLocaleLowerCase());
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
+  };
   return items;
 }
-function bucketApplicationNameStartsWith(arg0) {
+export function bucketApplicationNameStartsWith(arg0) {
   let closure_0 = arg0;
   return (FAKE_BUILT_IN_APP) => {
-    const sectionName = lib(outer1_3[10]).getSectionName(FAKE_BUILT_IN_APP);
-    const obj = lib(outer1_3[10]);
-    return sectionName.toLocaleLowerCase().startsWith(lib.toLocaleLowerCase());
+    const sectionName = set(outer1_3[10]).getSectionName(FAKE_BUILT_IN_APP);
+    const obj = set(outer1_3[10]);
+    return sectionName.toLocaleLowerCase().startsWith(set.toLocaleLowerCase());
   };
 }
-function bucketApplicationNameContains(arg0) {
+export function bucketApplicationNameContains(arg0) {
   let closure_0 = arg0;
   return (FAKE_BUILT_IN_APP) => {
-    const sectionName = lib(outer1_3[10]).getSectionName(FAKE_BUILT_IN_APP);
-    const obj = lib(outer1_3[10]);
-    return sectionName.toLocaleLowerCase().includes(lib.toLocaleLowerCase());
+    const sectionName = set(outer1_3[10]).getSectionName(FAKE_BUILT_IN_APP);
+    const obj = set(outer1_3[10]);
+    return sectionName.toLocaleLowerCase().includes(set.toLocaleLowerCase());
   };
 }
-function bucketApplicationDescriptionStartsWith(arg0) {
+export function bucketApplicationDescriptionStartsWith(arg0) {
   let closure_0 = arg0;
   return (FAKE_BUILT_IN_APP) => {
-    const sectionDescription = lib(outer1_3[10]).getSectionDescription(FAKE_BUILT_IN_APP);
+    const sectionDescription = set(outer1_3[10]).getSectionDescription(FAKE_BUILT_IN_APP);
     let toLocaleLowerCaseResult;
-    if (null != sectionDescription) {
+    if (sectionDescription != null) {
       toLocaleLowerCaseResult = sectionDescription.toLocaleLowerCase();
     }
-    let startsWithResult;
-    if (null != toLocaleLowerCaseResult) {
-      startsWithResult = toLocaleLowerCaseResult.startsWith(lib.toLocaleLowerCase());
+    let flag;
+    if (toLocaleLowerCaseResult != null) {
+      flag = toLocaleLowerCaseResult.startsWith(set.toLocaleLowerCase());
     }
-    return null != startsWithResult && startsWithResult;
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   };
 }
-function bucketApplicationDescriptionContains(arg0) {
+export function bucketApplicationDescriptionContains(arg0) {
   let closure_0 = arg0;
   return (FAKE_BUILT_IN_APP) => {
-    const sectionDescription = lib(outer1_3[10]).getSectionDescription(FAKE_BUILT_IN_APP);
+    const sectionDescription = set(outer1_3[10]).getSectionDescription(FAKE_BUILT_IN_APP);
     let toLocaleLowerCaseResult;
-    if (null != sectionDescription) {
+    if (sectionDescription != null) {
       toLocaleLowerCaseResult = sectionDescription.toLocaleLowerCase();
     }
-    let hasItem;
-    if (null != toLocaleLowerCaseResult) {
-      hasItem = toLocaleLowerCaseResult.includes(lib.toLocaleLowerCase());
+    let flag;
+    if (toLocaleLowerCaseResult != null) {
+      flag = toLocaleLowerCaseResult.includes(set.toLocaleLowerCase());
     }
-    return null != hasItem && hasItem;
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
   };
 }
-function sortApplicationFreceny(id, id2) {
-  const scoreWithoutLoadingLatest = store.getScoreWithoutLoadingLatest(id.id);
-  return store.getScoreWithoutLoadingLatest(id2.id) - scoreWithoutLoadingLatest;
-}
-function sortApplicationAlpha(FAKE_BUILT_IN_APP, FAKE_BUILT_IN_APP) {
-  const sectionName = require(7990) /* _createForOfIteratorHelperLoose */.getSectionName(FAKE_BUILT_IN_APP);
-  const obj = require(7990) /* _createForOfIteratorHelperLoose */;
-  return callback(sectionName, require(7990) /* _createForOfIteratorHelperLoose */.getSectionName(FAKE_BUILT_IN_APP));
-}
-function filterCommandAllowed(type) {
+export { sortApplicationFreceny };
+export { sortApplicationAlpha };
+export const filterCommandAllowed = function filterCommandAllowed(type) {
   const _require = type;
   let channel;
   if ("channel" === type.type) {
     channel = type.channel;
   }
-  const items = [_require(1882).ApplicationCommandType.CHAT];
-  let closure_1 = _require(5687).buildPermissionContext(channel, items);
+  const items = [_require(1906).ApplicationCommandType.CHAT];
+  let closure_1 = _require(5705).buildPermissionContext(channel, items);
   let closure_2 = {};
   return (applicationId) => {
     let applicationAllowedForChannel;
     let applicationAllowedForUser;
+    let context;
     let isGuildInstalled;
     let isGuildInstalled2;
+    let isImpersonating;
     let isUserInstalled;
     let isUserInstalled2;
-    const context = closure_1.context;
-    const userId = closure_1.userId;
-    const roleIds = closure_1.roleIds;
-    const isImpersonating = closure_1.isImpersonating;
-    if (!(applicationId.applicationId in dependencyMap)) {
-      const tmp3 = outer1_8(type, applicationId.applicationId);
-      const descriptor = tmp3.descriptor;
+    let roleIds;
+    let userId;
+    ({ context, userId, roleIds, isImpersonating } = closure_1);
+    if (!(applicationId.applicationId in callback)) {
+      const tmp5 = outer1_8(obj, applicationId.applicationId);
+      const descriptor = tmp5.descriptor;
       let guild_id;
-      ({ isGuildInstalled, isUserInstalled } = tmp3);
-      if (null != context) {
+      ({ isGuildInstalled, isUserInstalled } = tmp5);
+      if (context != null) {
         guild_id = context.guild_id;
       }
       let allowedForUser = null;
       if (null != guild_id) {
-        let obj = dependencyMap(outer1_3[11]);
+        obj = callback(outer1_3[11]);
         let permissions;
-        if (null != descriptor) {
+        if (descriptor != null) {
           permissions = descriptor.permissions;
         }
         allowedForUser = obj.computeAllowedForUser(permissions, context.guild_id, userId, roleIds, isImpersonating);
       }
       let guild_id1;
-      if (null != context) {
+      if (context != null) {
         guild_id1 = context.guild_id;
       }
       let allowedForChannel = null;
       if (null != guild_id1) {
         let permissions1;
-        if (null != descriptor) {
+        if (descriptor != null) {
           permissions1 = descriptor.permissions;
         }
-        allowedForChannel = dependencyMap(outer1_3[11]).computeAllowedForChannel(permissions1, context, context.guild_id);
-        const obj2 = dependencyMap(outer1_3[11]);
+        allowedForChannel = callback(outer1_3[11]).computeAllowedForChannel(permissions1, context, context.guild_id);
+        const obj2 = callback(outer1_3[11]);
       }
-      obj = { descriptor, applicationAllowedForUser: allowedForUser, applicationAllowedForChannel: allowedForChannel, isGuildInstalled, isUserInstalled };
-      dependencyMap[applicationId.applicationId] = obj;
+      obj = { descriptor: null, applicationAllowedForUser: null, applicationAllowedForChannel: null, isGuildInstalled: null, isUserInstalled: null };
+      obj[0] = descriptor;
+      obj[1] = allowedForUser;
+      obj[2] = allowedForChannel;
+      obj[3] = isGuildInstalled;
+      obj[4] = isUserInstalled;
+      tmp2[applicationId.applicationId] = obj;
     }
-    const descriptor2 = tmp21.descriptor;
-    ({ applicationAllowedForChannel, applicationAllowedForUser, isGuildInstalled: isGuildInstalled2, isUserInstalled: isUserInstalled2 } = dependencyMap[applicationId.applicationId]);
-    obj = { applicationAllowedForUser, applicationAllowedForChannel };
+    const descriptor2 = tmp22.descriptor;
+    ({ applicationAllowedForChannel, applicationAllowedForUser, isGuildInstalled: isGuildInstalled2, isUserInstalled: isUserInstalled2 } = callback[applicationId.applicationId]);
+    obj = { applicationAllowedForUser, applicationAllowedForChannel, commandBotId: null, isGuildInstalled: null, isUserInstalled: null };
     let botId;
-    if (null != descriptor2) {
+    if (descriptor2 != null) {
       botId = descriptor2.botId;
     }
-    obj.commandBotId = botId;
-    obj.isGuildInstalled = isGuildInstalled2;
-    obj.isUserInstalled = isUserInstalled2;
-    const obj4 = dependencyMap(outer1_3[11]);
-    const tmp22 = closure_1;
-    return dependencyMap(outer1_3[11]).hasAccess(applicationId, closure_1, obj) === type(outer1_3[11]).HasAccessResult.ALLOWED;
+    obj[2] = botId;
+    obj[3] = isGuildInstalled2;
+    obj[4] = isUserInstalled2;
+    const obj4 = callback(outer1_3[11]);
+    const tmp = closure_1;
+    return callback(outer1_3[11]).hasAccess(applicationId, closure_1, obj) === obj(outer1_3[11]).HasAccessResult.ALLOWED;
   };
-}
-function defaultCommandBucketing(arg0) {
-  const items = [bucketRootCommandNameStartsWith(arg0), bucketFullCommandNameStartsWith(arg0), bucketCommandNameContains(arg0), bucketOptionNameStartsWithOrCommandAndOptionStartsWith(arg0), bucketCommandOptionNameContains(arg0)];
-  return items;
-}
-function bucketRootCommandNameStartsWith(arg0) {
-  let closure_0 = arg0;
-  return (arg0) => {
-    let displayName;
-    let untranslatedName;
-    ({ untranslatedName, displayName } = arg0);
-    let startsWithResult = untranslatedName.startsWith(closure_0);
-    if (!startsWithResult) {
-      startsWithResult = displayName.startsWith(closure_0);
-    }
-    return startsWithResult;
-  };
-}
-function bucketFullCommandNameStartsWith(str) {
+};
+export const defaultCommandBucketing = function defaultCommandBucketing(str) {
+  let closure_0 = str;
+  const items = [
+    (arg0) => {
+      let displayName;
+      let untranslatedName;
+      ({ untranslatedName, displayName } = arg0);
+      return untranslatedName.startsWith(obj) || displayName.startsWith(obj);
+    },
+  ,
+  ,
+  ,
+
+  ];
   let parts;
-  if (null != str) {
+  if (str != null) {
     parts = str.split(" ");
   }
-  let closure_0 = parts[0];
-  let substr = parts.slice(1);
+  closure_0 = parts[0];
+  const substr = parts.slice(1);
   let closure_1 = substr.join(" ");
-  return (arg0) => {
+  items[1] = (arg0) => {
     let displayName;
     let untranslatedName;
     ({ untranslatedName, displayName } = arg0);
-    if (untranslatedName.startsWith(closure_0)) {
+    if (untranslatedName.startsWith(obj)) {
       const parts = untranslatedName.split(" ");
       const substr = parts.slice(1);
       const joined = substr.join(" ");
@@ -504,7 +503,7 @@ function bucketFullCommandNameStartsWith(str) {
         return true;
       }
     }
-    if (displayName.startsWith(closure_0)) {
+    if (displayName.startsWith(obj)) {
       const parts1 = displayName.split(" ");
       const substr1 = parts1.slice(1);
       const joined1 = substr1.join(" ");
@@ -514,157 +513,245 @@ function bucketFullCommandNameStartsWith(str) {
     }
     return false;
   };
-}
-function bucketCommandNameContains(arg0) {
+  closure_0 = str;
+  items[2] = (arg0) => {
+    let displayName;
+    let untranslatedName;
+    ({ untranslatedName, displayName } = arg0);
+    return untranslatedName.includes(obj) || displayName.includes(obj);
+  };
+  closure_0 = str;
+  items[3] = (options) => {
+    options = options.options;
+    if (options == null) {
+      options = [];
+    }
+    const iter = options[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let name = nextResult.name;
+      let tmp2 = name;
+      let serverLocalizedName = nextResult.serverLocalizedName;
+      let tmp3 = obj;
+      if (!name.startsWith(obj)) {
+        let tmp4 = name;
+        let _HermesInternal = HermesInternal;
+        let combined = "" + options.untranslatedName + " " + tmp2;
+        if (!combined.startsWith(tmp3)) {
+          if (null == options.displayName) {
+            let tmp6 = serverLocalizedName;
+            if (null != serverLocalizedName) {
+              let tmp7 = serverLocalizedName;
+              if (!serverLocalizedName.startsWith(tmp3)) {
+                let tmp8 = serverLocalizedName;
+                let _HermesInternal3 = HermesInternal;
+                let combined1 = "" + options.untranslatedName + " " + serverLocalizedName;
+                if (!combined1.startsWith(tmp3)) {
+                  if (null != options.displayName) {
+                    let tmp9 = serverLocalizedName;
+                    let _HermesInternal4 = HermesInternal;
+                    let combined2 = "" + options.displayName + " " + serverLocalizedName;
+                  }
+                }
+              }
+              let tmp10 = iter;
+              iter.return();
+              let flag = true;
+              return true;
+            }
+            continue;
+          } else {
+            let tmp5 = name;
+            let _HermesInternal2 = HermesInternal;
+            let combined3 = "" + options.displayName + " " + tmp2;
+          }
+        }
+      }
+      let tmp11 = iter;
+      iter.return();
+      let flag2 = true;
+      return true;
+    }
+    return false;
+  };
+  closure_0 = str;
+  items[4] = (options) => {
+    let name;
+    let serverLocalizedName;
+    options = options.options;
+    if (options == null) {
+      options = [];
+    }
+    for (const item10008 of options) {
+      ({ name, serverLocalizedName } = item10008);
+      let tmp = obj;
+      if (!name.includes(obj)) {
+        let tmp2 = serverLocalizedName;
+        let hasItem;
+        if (serverLocalizedName != null) {
+          hasItem = serverLocalizedName.includes(tmp);
+        }
+      }
+      let tmp4 = obj;
+      obj.return();
+      let flag = true;
+      return true;
+    }
+    return false;
+  };
+  return items;
+};
+export function bucketRootCommandNameStartsWith(arg0) {
   let closure_0 = arg0;
   return (arg0) => {
     let displayName;
     let untranslatedName;
     ({ untranslatedName, displayName } = arg0);
-    let hasItem = untranslatedName.includes(closure_0);
-    if (!hasItem) {
-      hasItem = displayName.includes(closure_0);
-    }
-    return hasItem;
+    return untranslatedName.startsWith(obj) || displayName.startsWith(obj);
   };
 }
-function bucketOptionNameStartsWithOrCommandAndOptionStartsWith(arg0) {
-  let closure_0 = arg0;
-  return (options) => {
-    let name;
-    let serverLocalizedName;
-    options = options.options;
-    if (null == options) {
-      options = [];
-    }
-    const tmpResult = outer1_16(options);
-    let iter = tmpResult();
-    if (!iter.done) {
-      ({ name, serverLocalizedName } = iter.value);
-      while (!name.startsWith(closure_0)) {
-        let _HermesInternal = HermesInternal;
-        let combined = "" + options.untranslatedName + " " + name;
-        let tmp4 = closure_0;
-        if (combined.startsWith(closure_0)) {
-          break;
-        } else {
-          if (null == options.displayName) {
-            if (null != serverLocalizedName) {
-              let tmp6 = closure_0;
-              if (!serverLocalizedName.startsWith(closure_0)) {
-                let _HermesInternal3 = HermesInternal;
-                let combined1 = "" + options.untranslatedName + " " + serverLocalizedName;
-                let tmp7 = closure_0;
-                if (!combined1.startsWith(closure_0)) {
-                  if (null != options.displayName) {
-                    let _HermesInternal4 = HermesInternal;
-                    let combined2 = "" + options.displayName + " " + serverLocalizedName;
-                    let tmp8 = closure_0;
-                  }
-                }
-              }
-              let flag = true;
-              return true;
-            }
-            let iter2 = tmpResult();
-            iter = iter2;
-          } else {
-            let _HermesInternal2 = HermesInternal;
-            let combined3 = "" + options.displayName + " " + name;
-            let tmp5 = closure_0;
-            if (combined3.startsWith(closure_0)) {
-              break;
-            }
-          }
-          let flag2 = true;
-          return true;
-        }
+export const bucketFullCommandNameStartsWith = function bucketFullCommandNameStartsWith(str) {
+  let parts;
+  if (str != null) {
+    parts = str.split(" ");
+  }
+  let closure_0 = parts[0];
+  const substr = parts.slice(1);
+  let closure_1 = substr.join(" ");
+  return (arg0) => {
+    let displayName;
+    let untranslatedName;
+    ({ untranslatedName, displayName } = arg0);
+    if (untranslatedName.startsWith(obj)) {
+      const parts = untranslatedName.split(" ");
+      const substr = parts.slice(1);
+      const joined = substr.join(" ");
+      if (joined.startsWith(closure_1)) {
+        return true;
       }
     }
-    return false;
-  };
-}
-function bucketCommandOptionNameContains(arg0) {
-  let closure_0 = arg0;
-  return (options) => {
-    let name;
-    let serverLocalizedName;
-    options = options.options;
-    if (null == options) {
-      options = [];
-    }
-    const tmpResult = outer1_16(options);
-    let iter = tmpResult();
-    if (!iter.done) {
-      ({ name, serverLocalizedName } = iter.value);
-      while (!name.includes(closure_0)) {
-        if (null == serverLocalizedName) {
-          let iter2 = tmpResult();
-          iter = iter2;
-        } else {
-          let tmp4 = closure_0;
-          if (serverLocalizedName.includes(closure_0)) {
-            break;
-          }
-        }
-        let flag = true;
+    if (displayName.startsWith(obj)) {
+      const parts1 = displayName.split(" ");
+      const substr1 = parts1.slice(1);
+      const joined1 = substr1.join(" ");
+      if (joined1.startsWith(closure_1)) {
         return true;
       }
     }
     return false;
   };
-}
-function defaultCommandsSort(arg0) {
-  const items = [sortCommandsByFreceny(arg0), sortCommandsAlpha];
-  return items;
-}
-function sortCommandsByFreceny(arg0) {
+};
+export function bucketCommandNameContains(arg0) {
   let closure_0 = arg0;
-  return (arg0, arg1) => {
-    const scoreWithoutLoadingLatest = outer1_6.getScoreWithoutLoadingLatest(closure_0, arg0);
-    return outer1_6.getScoreWithoutLoadingLatest(closure_0, arg1) - scoreWithoutLoadingLatest;
+  return (arg0) => {
+    let displayName;
+    let untranslatedName;
+    ({ untranslatedName, displayName } = arg0);
+    return untranslatedName.includes(obj) || displayName.includes(obj);
   };
 }
-function sortCommandsAlpha(displayName, displayName2) {
-  return callback(displayName.displayName, displayName2.displayName);
+export function bucketOptionNameStartsWithOrCommandAndOptionStartsWith(arg0) {
+  let closure_0 = arg0;
+  return (options) => {
+    options = options.options;
+    if (options == null) {
+      options = [];
+    }
+    const iter = options[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let name = nextResult.name;
+      let tmp2 = name;
+      let serverLocalizedName = nextResult.serverLocalizedName;
+      let tmp3 = obj;
+      if (!name.startsWith(obj)) {
+        let tmp4 = name;
+        let _HermesInternal = HermesInternal;
+        let combined = "" + options.untranslatedName + " " + tmp2;
+        if (!combined.startsWith(tmp3)) {
+          if (null == options.displayName) {
+            let tmp6 = serverLocalizedName;
+            if (null != serverLocalizedName) {
+              let tmp7 = serverLocalizedName;
+              if (!serverLocalizedName.startsWith(tmp3)) {
+                let tmp8 = serverLocalizedName;
+                let _HermesInternal3 = HermesInternal;
+                let combined1 = "" + options.untranslatedName + " " + serverLocalizedName;
+                if (!combined1.startsWith(tmp3)) {
+                  if (null != options.displayName) {
+                    let tmp9 = serverLocalizedName;
+                    let _HermesInternal4 = HermesInternal;
+                    let combined2 = "" + options.displayName + " " + serverLocalizedName;
+                  }
+                }
+              }
+              let tmp10 = iter;
+              iter.return();
+              let flag = true;
+              return true;
+            }
+            continue;
+          } else {
+            let tmp5 = name;
+            let _HermesInternal2 = HermesInternal;
+            let combined3 = "" + options.displayName + " " + tmp2;
+          }
+        }
+      }
+      let tmp11 = iter;
+      iter.return();
+      let flag2 = true;
+      return true;
+    }
+    return false;
+  };
 }
-({ appLauncherOnlyCompareNames: closure_7, getSection: closure_8, useContextIndexState: closure_9, useUserIndexState: closure_10 } = _isNativeReflectConstruct);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_launcher/utils/AppLauncherSearchUtils.tsx");
-
-export { useApplicationsInContext };
-export { useApplicationCommandsInContext };
-export { filterApplicationAllowed };
-export { defaultApplicationBucketing };
-export { bucketApplicationNameStartsWith };
-export { bucketApplicationNameContains };
-export { bucketApplicationDescriptionStartsWith };
-export { bucketApplicationDescriptionContains };
-export { sortApplicationFreceny };
-export { sortApplicationAlpha };
-export { filterCommandAllowed };
-export { defaultCommandBucketing };
-export { bucketRootCommandNameStartsWith };
-export { bucketFullCommandNameStartsWith };
-export { bucketCommandNameContains };
-export { bucketOptionNameStartsWithOrCommandAndOptionStartsWith };
-export { bucketCommandOptionNameContains };
+export function bucketCommandOptionNameContains(arg0) {
+  let closure_0 = arg0;
+  return (options) => {
+    let name;
+    let serverLocalizedName;
+    options = options.options;
+    if (options == null) {
+      options = [];
+    }
+    for (const item10008 of options) {
+      ({ name, serverLocalizedName } = item10008);
+      let tmp = obj;
+      if (!name.includes(obj)) {
+        let tmp2 = serverLocalizedName;
+        let hasItem;
+        if (serverLocalizedName != null) {
+          hasItem = serverLocalizedName.includes(tmp);
+        }
+      }
+      let tmp4 = obj;
+      obj.return();
+      let flag = true;
+      return true;
+    }
+    return false;
+  };
+}
 export function bucketCommandSectionNameStartsWith(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let closure_2 = {};
   return (applicationId) => {
     const lib = applicationId;
-    if (applicationId.applicationId in table) {
-      return table[applicationId.applicationId];
+    if (applicationId.applicationId in closure_2) {
+      return tmp[applicationId.applicationId];
     } else {
       let FAKE_BUILT_IN_APP = lib.find((id) => id.id === applicationId.applicationId);
-      if (null == FAKE_BUILT_IN_APP) {
-        FAKE_BUILT_IN_APP = lib(outer1_3[10]).FAKE_BUILT_IN_APP;
+      if (FAKE_BUILT_IN_APP == null) {
+        FAKE_BUILT_IN_APP = tmp3(tmp4[10]).FAKE_BUILT_IN_APP;
       }
       const sectionName = lib(outer1_3[10]).getSectionName(FAKE_BUILT_IN_APP);
       const obj = lib(outer1_3[10]);
+      tmp3 = lib;
+      tmp4 = outer1_3;
       const startsWithResult = sectionName.toLocaleLowerCase().startsWith(closure_1.toLocaleLowerCase());
-      table[applicationId.applicationId] = startsWithResult;
+      tmp[applicationId.applicationId] = startsWithResult;
       return startsWithResult;
     }
   };
@@ -675,29 +762,50 @@ export function bucketCommandSectionNameContains(arg0, arg1) {
   let closure_2 = {};
   return (applicationId) => {
     const lib = applicationId;
-    if (applicationId.applicationId in table) {
-      return table[applicationId.applicationId];
+    if (applicationId.applicationId in closure_2) {
+      return tmp[applicationId.applicationId];
     } else {
       let FAKE_BUILT_IN_APP = lib.find((id) => id.id === applicationId.applicationId);
-      if (null == FAKE_BUILT_IN_APP) {
-        FAKE_BUILT_IN_APP = lib(outer1_3[10]).FAKE_BUILT_IN_APP;
+      if (FAKE_BUILT_IN_APP == null) {
+        FAKE_BUILT_IN_APP = tmp3(tmp4[10]).FAKE_BUILT_IN_APP;
       }
       const sectionName = lib(outer1_3[10]).getSectionName(FAKE_BUILT_IN_APP);
       const obj = lib(outer1_3[10]);
+      tmp3 = lib;
+      tmp4 = outer1_3;
       const hasItem = sectionName.toLocaleLowerCase().includes(closure_1.toLocaleLowerCase());
-      table[applicationId.applicationId] = hasItem;
+      tmp[applicationId.applicationId] = hasItem;
       return hasItem;
     }
   };
 }
-export { defaultCommandsSort };
-export { sortCommandsByFreceny };
+export function defaultCommandsSort(arg0) {
+  let closure_0 = arg0;
+  const items = [
+    (arg0, arg1) => {
+      const scoreWithoutLoadingLatest = outer1_6.getScoreWithoutLoadingLatest(obj, arg0);
+      return outer1_6.getScoreWithoutLoadingLatest(obj, arg1) - scoreWithoutLoadingLatest;
+    },
+    sortCommandsAlpha
+  ];
+  return items;
+}
+export function sortCommandsByFreceny(arg0) {
+  let closure_0 = arg0;
+  return (arg0, arg1) => {
+    const scoreWithoutLoadingLatest = outer1_6.getScoreWithoutLoadingLatest(obj, arg0);
+    return outer1_6.getScoreWithoutLoadingLatest(obj, arg1) - scoreWithoutLoadingLatest;
+  };
+}
 export { sortCommandsAlpha };
 export const useLocalSearchResults = function useLocalSearchResults(context) {
   context = context.context;
-  let substr = str;
+  let context2 = context;
+  let flag4 = str;
   const commandLimit = context.commandLimit;
+  let c2 = commandLimit;
   const applicationLimit = context.applicationLimit;
+  let dependencyMap = applicationLimit;
   let flag = context.searchesCommands;
   if (flag === undefined) {
     flag = true;
@@ -713,53 +821,333 @@ export const useLocalSearchResults = function useLocalSearchResults(context) {
   let commands;
   let commandSectionMap;
   let apps;
-  let c10;
-  let memo;
+  let callback3;
+  let memo1;
   let tmp = str;
   if (context.query.startsWith("" + COMMAND_SENTINEL)) {
-    substr = str.substring(1);
+    let substr = str.substring(1);
+    flag4 = substr;
     tmp = substr;
   }
-  let tmp3 = useApplicationCommandsInContext({ context, includeBuiltIn: true });
-  commands = tmp3.commands;
-  commandSectionMap = tmp3.commandSectionMap;
-  let loading = tmp3.loading;
-  let obj = { context, onlyWithCommands: true, includeBuiltIn: true, includeEmbeddedApps: flag3, includeNonEmbeddedApps: flag2 };
-  apps = useApplicationsInContext(obj).apps;
-  obj = {};
+  let obj = { context, includeBuiltIn: true };
+  context2 = obj.context;
+  flag4 = obj.includeBuiltIn;
+  if (flag4 === undefined) {
+    flag4 = true;
+  }
+  let flag5 = obj.allowFetch;
+  if (flag5 === undefined) {
+    flag5 = true;
+  }
+  c2 = undefined;
+  dependencyMap = undefined;
+  let tmp3 = apps(context2, true, flag5);
+  c2 = tmp3;
+  let tmp4 = callback3(true, flag5);
+  dependencyMap = tmp4;
+  let items = [context2, flag4, tmp3.fetchState.fetching, , , ];
+  let result = tmp3.result;
+  let sections;
+  if (result != null) {
+    sections = result.sections;
+  }
+  items[3] = sections;
+  items[4] = tmp4.fetchState.fetching;
+  let result2 = tmp4.result;
+  let sections1;
+  if (result2 != null) {
+    sections1 = result2.sections;
+  }
+  items[5] = sections1;
+  const memo = flag2.useMemo(() => {
+    let _undefined;
+    const result = obj.result;
+    let sections;
+    if (result != null) {
+      sections = result.sections;
+    }
+    if (sections == null) {
+      sections = {};
+    }
+    const result2 = _undefined.result;
+    let sections1;
+    if (result2 != null) {
+      sections1 = result2.sections;
+    }
+    if (sections1 == null) {
+      sections1 = {};
+    }
+    let items = [...Object.keys(sections)];
+    const keys = Object.keys(sections1);
+    HermesBuiltin.arraySpread(keys.filter((arg0) => !(arg0 in sections)), tmp);
+    if (items1) {
+      items.push(outer1_14.BUILT_IN);
+    }
+    items1 = [];
+    obj = {};
+    for (const item10038 of items) {
+      _undefined = item10038;
+      let tmp5Result = tmp5();
+      continue;
+    }
+    obj = { commands: items1, commandSectionMap: obj, loading: null };
+    let tmp7 = true === obj.fetchState.fetching;
+    if (!tmp7) {
+      tmp7 = true === _undefined.fetchState.fetching;
+    }
+    obj[2] = tmp7;
+    return obj;
+  }, items);
+  commands = memo.commands;
+  commandSectionMap = memo.commandSectionMap;
+  let loading = memo.loading;
+  apps = useApplicationsInContext({ context, onlyWithCommands: true, includeBuiltIn: true, includeEmbeddedApps: flag3, includeNonEmbeddedApps: flag2 }).apps;
   let guild_id = null;
   if ("channel" === context.type) {
     guild_id = context.channel.guild_id;
   }
-  obj.guildId = guild_id;
-  const tmp4Result = substr(applicationLimit[12])(obj);
-  c10 = tmp4Result;
-  let items = [flag, commands, commandLimit, context, tmp];
-  memo = flag2.useMemo(() => {
+  const tmp8Result = flag4(11213)({ guildId: guild_id });
+  callback3 = tmp8Result;
+  let items1 = [flag, commands, commandLimit, context, tmp];
+  memo1 = obj2.useMemo(() => {
     if (flag) {
-      let obj = context(applicationLimit[13]);
-      obj = { limit: commandLimit };
-      const items = [outer1_28(context)];
-      obj.filterPredicates = items;
-      obj.bucketPredicates = outer1_29(substr);
-      obj = {};
+      let obj = context2(_undefined[13]);
+      obj = { limit: null, filterPredicates: null, bucketPredicates: null, sortComparers: null };
+      obj[0] = closure_2;
+      let closure_1;
+      closure_2 = undefined;
       let channel;
-      if ("channel" === context.type) {
-        channel = context.channel;
+      if ("channel" === obj.type) {
+        channel = tmp5.channel;
       }
-      obj.channel = channel;
-      obj.sortComparers = outer1_35(obj);
+      const items = [context2(_undefined[9]).ApplicationCommandType.CHAT];
+      closure_1 = context2(_undefined[8]).buildPermissionContext(channel, items);
+      closure_2 = {};
+      const items1 = [
+        (applicationId) => {
+            let applicationAllowedForChannel;
+            let applicationAllowedForUser;
+            let context;
+            let isGuildInstalled;
+            let isGuildInstalled2;
+            let isImpersonating;
+            let isUserInstalled;
+            let isUserInstalled2;
+            let roleIds;
+            let userId;
+            ({ context, userId, roleIds, isImpersonating } = closure_1);
+            if (!(applicationId.applicationId in callback)) {
+              const tmp5 = outer1_8(obj, applicationId.applicationId);
+              const descriptor = tmp5.descriptor;
+              let guild_id;
+              ({ isGuildInstalled, isUserInstalled } = tmp5);
+              if (context != null) {
+                guild_id = context.guild_id;
+              }
+              let allowedForUser = null;
+              if (null != guild_id) {
+                obj = callback(outer1_3[11]);
+                let permissions;
+                if (descriptor != null) {
+                  permissions = descriptor.permissions;
+                }
+                allowedForUser = obj.computeAllowedForUser(permissions, context.guild_id, userId, roleIds, isImpersonating);
+              }
+              let guild_id1;
+              if (context != null) {
+                guild_id1 = context.guild_id;
+              }
+              let allowedForChannel = null;
+              if (null != guild_id1) {
+                let permissions1;
+                if (descriptor != null) {
+                  permissions1 = descriptor.permissions;
+                }
+                allowedForChannel = callback(outer1_3[11]).computeAllowedForChannel(permissions1, context, context.guild_id);
+                const obj2 = callback(outer1_3[11]);
+              }
+              obj = { descriptor: null, applicationAllowedForUser: null, applicationAllowedForChannel: null, isGuildInstalled: null, isUserInstalled: null };
+              obj[0] = descriptor;
+              obj[1] = allowedForUser;
+              obj[2] = allowedForChannel;
+              obj[3] = isGuildInstalled;
+              obj[4] = isUserInstalled;
+              tmp2[applicationId.applicationId] = obj;
+            }
+            const descriptor2 = tmp22.descriptor;
+            ({ applicationAllowedForChannel, applicationAllowedForUser, isGuildInstalled: isGuildInstalled2, isUserInstalled: isUserInstalled2 } = callback[applicationId.applicationId]);
+            obj = { applicationAllowedForUser, applicationAllowedForChannel, commandBotId: null, isGuildInstalled: null, isUserInstalled: null };
+            let botId;
+            if (descriptor2 != null) {
+              botId = descriptor2.botId;
+            }
+            obj[2] = botId;
+            obj[3] = isGuildInstalled2;
+            obj[4] = isUserInstalled2;
+            const obj4 = callback(outer1_3[11]);
+            const tmp = closure_1;
+            return callback(outer1_3[11]).hasAccess(applicationId, closure_1, obj) === obj(outer1_3[11]).HasAccessResult.ALLOWED;
+          }
+      ];
+      obj[1] = items1;
+      obj = closure_1;
+      const items2 = [
+        (arg0) => {
+            let displayName;
+            let untranslatedName;
+            ({ untranslatedName, displayName } = arg0);
+            return untranslatedName.startsWith(obj) || displayName.startsWith(obj);
+          },
+    ,
+    ,
+    ,
+
+      ];
+      obj = undefined;
+      closure_1 = undefined;
+      let parts;
+      if (closure_1 != null) {
+        parts = str2.split(" ");
+      }
+      obj = parts[0];
+      let substr = parts.slice(1);
+      closure_1 = substr.join(" ");
+      items2[1] = (arg0) => {
+        let displayName;
+        let untranslatedName;
+        ({ untranslatedName, displayName } = arg0);
+        if (untranslatedName.startsWith(obj)) {
+          const parts = untranslatedName.split(" ");
+          const substr = parts.slice(1);
+          const joined = substr.join(" ");
+          if (joined.startsWith(closure_1)) {
+            return true;
+          }
+        }
+        if (displayName.startsWith(obj)) {
+          const parts1 = displayName.split(" ");
+          const substr1 = parts1.slice(1);
+          const joined1 = substr1.join(" ");
+          if (joined1.startsWith(closure_1)) {
+            return true;
+          }
+        }
+        return false;
+      };
+      obj = str2;
+      items2[2] = (arg0) => {
+        let displayName;
+        let untranslatedName;
+        ({ untranslatedName, displayName } = arg0);
+        return untranslatedName.includes(obj) || displayName.includes(obj);
+      };
+      obj = str2;
+      items2[3] = (options) => {
+        options = options.options;
+        if (options == null) {
+          options = [];
+        }
+        const iter = options[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let name = nextResult.name;
+          let tmp2 = name;
+          let serverLocalizedName = nextResult.serverLocalizedName;
+          let tmp3 = obj;
+          if (!name.startsWith(obj)) {
+            let tmp4 = name;
+            let _HermesInternal = HermesInternal;
+            let combined = "" + options.untranslatedName + " " + tmp2;
+            if (!combined.startsWith(tmp3)) {
+              if (null == options.displayName) {
+                let tmp6 = serverLocalizedName;
+                if (null != serverLocalizedName) {
+                  let tmp7 = serverLocalizedName;
+                  if (!serverLocalizedName.startsWith(tmp3)) {
+                    let tmp8 = serverLocalizedName;
+                    let _HermesInternal3 = HermesInternal;
+                    let combined1 = "" + options.untranslatedName + " " + serverLocalizedName;
+                    if (!combined1.startsWith(tmp3)) {
+                      if (null != options.displayName) {
+                        let tmp9 = serverLocalizedName;
+                        let _HermesInternal4 = HermesInternal;
+                        let combined2 = "" + options.displayName + " " + serverLocalizedName;
+                      }
+                    }
+                  }
+                  let tmp10 = iter;
+                  iter.return();
+                  let flag = true;
+                  return true;
+                }
+                continue;
+              } else {
+                let tmp5 = name;
+                let _HermesInternal2 = HermesInternal;
+                let combined3 = "" + options.displayName + " " + tmp2;
+              }
+            }
+          }
+          let tmp11 = iter;
+          iter.return();
+          let flag2 = true;
+          return true;
+        }
+        return false;
+      };
+      obj = str2;
+      items2[4] = (options) => {
+        let name;
+        let serverLocalizedName;
+        options = options.options;
+        if (options == null) {
+          options = [];
+        }
+        for (const item10008 of options) {
+          ({ name, serverLocalizedName } = item10008);
+          let tmp = obj;
+          if (!name.includes(obj)) {
+            let tmp2 = serverLocalizedName;
+            let hasItem;
+            if (serverLocalizedName != null) {
+              hasItem = serverLocalizedName.includes(tmp);
+            }
+          }
+          let tmp4 = obj;
+          obj.return();
+          let flag = true;
+          return true;
+        }
+        return false;
+      };
+      obj[2] = items2;
+      let channel1;
+      if ("channel" === obj.type) {
+        channel1 = tmp5.channel;
+      }
+      obj = { channel: null };
+      obj[0] = channel1;
+      const items3 = [
+        (arg0, arg1) => {
+            const scoreWithoutLoadingLatest = outer1_6.getScoreWithoutLoadingLatest(obj, arg0);
+            return outer1_6.getScoreWithoutLoadingLatest(obj, arg1) - scoreWithoutLoadingLatest;
+          },
+        outer1_19
+      ];
+      obj[3] = items3;
       let queryDataResult = obj.queryData(commands, obj);
-      const tmp3 = commands;
-      const tmp9 = outer1_35;
+      const obj3 = context2(_undefined[8]);
+      let tmp = context2;
+      let tmp2 = _undefined;
+      let tmp3 = commands;
     } else {
       queryDataResult = [];
     }
     return queryDataResult;
-  }, items);
-  let items1 = [apps, memo, commandSectionMap];
-  const memo1 = flag2.useMemo(() => {
-    if (0 === memo.length) {
+  }, items1);
+  let items2 = [apps, memo1, commandSectionMap];
+  const memo2 = obj2.useMemo(() => {
+    if (0 === memo1.length) {
       return [];
     } else {
       const _Map = Map;
@@ -767,34 +1155,38 @@ export const useLocalSearchResults = function useLocalSearchResults(context) {
         const items = [id.id, id];
         return items;
       }));
-      return substr(applicationLimit[14]).compact(memo.map((applicationId) => {
+      return flag4(_undefined[14]).compact(arr.map((applicationId) => {
         const value = map.get(applicationId.applicationId);
         let tmp2 = null;
         if (null != value) {
-          const obj = { command: applicationId, application: value };
-          let tmp5 = null;
-          if (null != outer1_8[applicationId.id]) {
-            tmp5 = tmp4;
+          const obj = { command: null, application: null, section: null };
+          obj[0] = applicationId;
+          obj[1] = value;
+          let tmp4 = outer1_8[applicationId.id];
+          if (tmp4 == null) {
+            tmp4 = null;
           }
-          obj.section = tmp5;
+          obj[2] = tmp4;
           tmp2 = obj;
         }
         return tmp2;
       }));
     }
-  }, items1);
-  let items2 = [flag2, flag3, applicationLimit, context, tmp, apps, tmp4Result];
-  const memo2 = flag2.useMemo(() => {
+    arr = memo1;
+  }, items2);
+  let items3 = [flag2, flag3, applicationLimit, context, tmp, apps, tmp8Result];
+  const memo3 = obj2.useMemo(() => {
     const items = [];
     if (flag3) {
       const _Set = Set;
       const set = new Set(apps.map((id) => id.id));
+      let type = set;
       const push = items.push;
       const items1 = [];
       HermesBuiltin.arraySpread(apps, 0);
       HermesBuiltin.apply(items1, items);
       const push2 = items.push;
-      const found = _undefined.filter((application) => !set.has(application.application.id));
+      const found = _undefined2.filter((application) => !set.has(application.application.id));
       const items2 = [];
       HermesBuiltin.arraySpread(found.map((application) => application.application), 0);
       HermesBuiltin.apply(items2, items);
@@ -805,25 +1197,141 @@ export const useLocalSearchResults = function useLocalSearchResults(context) {
         tmp2 = apps;
       }
     }
-    let obj = context(applicationLimit[13]);
-    obj = { limit: applicationLimit };
-    const items3 = [outer1_20(set)];
-    obj.filterPredicates = items3;
-    obj.bucketPredicates = outer1_21(substr);
-    const items4 = [outer1_26, outer1_27];
-    obj.sortComparers = items4;
+    let obj = context2(_undefined[13]);
+    obj = { limit: _undefined, filterPredicates: null, bucketPredicates: null, sortComparers: null };
+    let closure_1;
+    let channel;
+    if ("channel" === type.type) {
+      channel = type.channel;
+    }
+    const items3 = [context2(_undefined[9]).ApplicationCommandType.CHAT, context2(_undefined[9]).ApplicationCommandType.PRIMARY_ENTRY_POINT];
+    closure_1 = context2(_undefined[8]).buildPermissionContext(channel, items3);
+    const items4 = [
+      (id) => {
+        let closure_1;
+        let closure_2;
+        let context;
+        let isImpersonating;
+        let roleIds;
+        let sectionCommands;
+        let userId;
+        ({ context, userId, roleIds, isImpersonating } = closure_1);
+        const tmp = outer1_8(descriptor, id.id);
+        descriptor = tmp.descriptor;
+        ({ sectionCommands, isGuildInstalled: closure_1, isUserInstalled: closure_2 } = tmp);
+        let guild_id;
+        if (context != null) {
+          guild_id = context.guild_id;
+        }
+        let allowedForUser = null;
+        if (null != guild_id) {
+          let obj = outer1_2(outer1_3[11]);
+          let permissions;
+          if (descriptor != null) {
+            permissions = descriptor.permissions;
+          }
+          allowedForUser = obj.computeAllowedForUser(permissions, context.guild_id, userId, roleIds, isImpersonating);
+        }
+        let guild_id1;
+        if (context != null) {
+          guild_id1 = context.guild_id;
+        }
+        let allowedForChannel = null;
+        if (null != guild_id1) {
+          let permissions1;
+          if (descriptor != null) {
+            permissions1 = descriptor.permissions;
+          }
+          allowedForChannel = outer1_2(outer1_3[11]).computeAllowedForChannel(permissions1, context, context.guild_id);
+          const obj2 = outer1_2(outer1_3[11]);
+        }
+        let tmp17 = null != sectionCommands;
+        if (tmp17) {
+          tmp17 = sectionCommands.length > 0;
+        }
+        let someResult = !tmp17;
+        if (tmp17) {
+          someResult = sectionCommands.some((arg0) => {
+            let obj = outer2_2(outer2_3[11]);
+            obj = { applicationAllowedForUser: allowedForUser, applicationAllowedForChannel: allowedForChannel, commandBotId: null, isGuildInstalled: null, isUserInstalled: null };
+            let botId;
+            if (descriptor != null) {
+              botId = descriptor.botId;
+            }
+            obj[2] = botId;
+            obj[3] = closure_1;
+            obj[4] = closure_2;
+            return obj.hasAccess(arg0, outer1_1, obj) === descriptor(outer2_3[11]).HasAccessResult.ALLOWED;
+          });
+        }
+        return someResult;
+      }
+    ];
+    obj[1] = items4;
+    type = closure_1;
+    const items5 = [
+      (FAKE_BUILT_IN_APP) => {
+        const sectionName = set(outer1_3[10]).getSectionName(FAKE_BUILT_IN_APP);
+        const obj = set(outer1_3[10]);
+        return sectionName.toLocaleLowerCase().startsWith(set.toLocaleLowerCase());
+      },
+    ,
+    ,
+
+    ];
+    type = closure_1;
+    items5[1] = (FAKE_BUILT_IN_APP) => {
+      const sectionName = set(outer1_3[10]).getSectionName(FAKE_BUILT_IN_APP);
+      const obj = set(outer1_3[10]);
+      return sectionName.toLocaleLowerCase().includes(set.toLocaleLowerCase());
+    };
+    type = closure_1;
+    items5[2] = (FAKE_BUILT_IN_APP) => {
+      const sectionDescription = set(outer1_3[10]).getSectionDescription(FAKE_BUILT_IN_APP);
+      let toLocaleLowerCaseResult;
+      if (sectionDescription != null) {
+        toLocaleLowerCaseResult = sectionDescription.toLocaleLowerCase();
+      }
+      let flag;
+      if (toLocaleLowerCaseResult != null) {
+        flag = toLocaleLowerCaseResult.startsWith(set.toLocaleLowerCase());
+      }
+      if (flag == null) {
+        flag = false;
+      }
+      return flag;
+    };
+    type = closure_1;
+    items5[3] = (FAKE_BUILT_IN_APP) => {
+      const sectionDescription = set(outer1_3[10]).getSectionDescription(FAKE_BUILT_IN_APP);
+      let toLocaleLowerCaseResult;
+      if (sectionDescription != null) {
+        toLocaleLowerCaseResult = sectionDescription.toLocaleLowerCase();
+      }
+      let flag;
+      if (toLocaleLowerCaseResult != null) {
+        flag = toLocaleLowerCaseResult.includes(set.toLocaleLowerCase());
+      }
+      if (flag == null) {
+        flag = false;
+      }
+      return flag;
+    };
+    obj[2] = items5;
+    const items6 = [outer1_17, outer1_18];
+    obj[3] = items6;
     return obj.queryData(tmp2, obj);
-  }, items2);
-  obj = { commandResults: memo1, hasCommandResults: tmp8, applicationResults: memo2, hasApplicationResults: tmp9 };
-  let tmp10 = !tmp8;
-  if (memo1.length <= 0) {
-    tmp10 = !tmp9;
+  }, items3);
+  obj = { commandResults: memo2, hasCommandResults: tmp12, applicationResults: memo3, hasApplicationResults: tmp13, isEmptyState: null, loading: null };
+  let tmp14 = !tmp12;
+  if (memo2.length <= 0) {
+    tmp14 = !tmp13;
   }
-  obj.isEmptyState = tmp10;
+  obj[4] = tmp14;
   if (loading) {
     loading = flag;
   }
-  obj.loading = loading;
+  obj[5] = loading;
   return obj;
 };
 export const useGlobalSearchResults = function useGlobalSearchResults(fetches) {
@@ -842,7 +1350,7 @@ export const useGlobalSearchResults = function useGlobalSearchResults(fetches) {
   let dependencyMap;
   let guild_id;
   let first;
-  let closure_6;
+  let handleUserSettingsProtoStoreChange;
   let ref;
   let fetchState;
   let totalPages;
@@ -853,54 +1361,52 @@ export const useGlobalSearchResults = function useGlobalSearchResults(fetches) {
     substr = query.substring(1);
     tmp = substr;
   }
-  const tmp3 = fetches.entrypoint === substr(7992).AppLauncherEntrypoint.VOICE;
-  dependencyMap = tmp3;
+  const tmp5 = fetches.entrypoint === substr(8017).AppLauncherEntrypoint.VOICE;
+  dependencyMap = tmp5;
   guild_id = undefined;
   if ("channel" === context.type) {
     guild_id = context.channel.guild_id;
   }
-  const tmp5 = guild_id(first.useState(1), 2);
-  first = tmp5[0];
-  closure_6 = tmp5[1];
+  const tmp7 = guild_id(first.useState(1), 2);
+  first = tmp7[0];
+  handleUserSettingsProtoStoreChange = tmp7[1];
   ref = first.useRef(first);
   ref.current = first;
-  let obj = substr(566);
-  const items = [closure_12];
-  const items1 = [tmp, guild_id, first, tmp3];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    let obj = {};
+  const items = [getSearchResults];
+  const items1 = [tmp, guild_id, first, tmp5];
+  const stateFromStoresObject = substr(589).useStateFromStoresObject(items, () => {
+    let obj = { fetchState: null, totalPages: null };
     obj = { query: substr, guildId: guild_id, page: first, integrationType: substr(_undefined[17]).ApplicationIntegrationType.USER_INSTALL, minUserInstallCommandCount: 1, excludeAppsWithCustomInstallUrl: true, excludeNonEmbeddedApps: _undefined, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true, source: substr(_undefined[18]).SearchAppsRequestSource.APP_LAUNCHER };
-    let totalPages;
-    obj.fetchState = outer1_12.getFetchState(obj);
+    obj[0] = outer1_12.getFetchState(obj);
     obj = { query: substr, guildId: guild_id, page: first, integrationType: substr(_undefined[17]).ApplicationIntegrationType.USER_INSTALL, minUserInstallCommandCount: 1, excludeAppsWithCustomInstallUrl: true, excludeNonEmbeddedApps: _undefined, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true, source: substr(_undefined[18]).SearchAppsRequestSource.APP_LAUNCHER };
     const searchResults = outer1_12.getSearchResults(obj);
-    if (null != searchResults) {
-      totalPages = searchResults.totalPages;
+    let num;
+    if (searchResults != null) {
+      num = searchResults.totalPages;
     }
-    let num = 0;
-    if (null != totalPages) {
-      num = totalPages;
+    if (num == null) {
+      num = 0;
     }
-    obj.totalPages = num;
+    obj[1] = num;
     return obj;
   }, items1);
   fetchState = stateFromStoresObject.fetchState;
   totalPages = stateFromStoresObject.totalPages;
-  const items2 = [fetchState, guild_id, tmp, first, tmp3];
+  const items2 = [fetchState, guild_id, tmp, first, tmp5];
   memo = first.useMemo(() => {
-    const obj = {};
     if (fetchState !== outer1_13.FETCHED) {
-      if (fetchState !== outer1_13.ERROR) {
+      if (tmp3 !== outer1_13.ERROR) {
         let diff = first - 1;
       }
-      obj.length = diff;
+      const obj = { length: null };
+      obj[0] = diff;
       return tmp2(obj, (arg0, arg1) => {
+        const searchResults = outer1_12.getSearchResults({ query: closure_0, guildId: _slicedToArray, page: arg1 + 1, integrationType: outer1_0(outer1_3[17]).ApplicationIntegrationType.USER_INSTALL, minUserInstallCommandCount: 1, excludeAppsWithCustomInstallUrl: true, excludeNonEmbeddedApps: closure_3, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true, source: outer1_0(outer1_3[18]).SearchAppsRequestSource.APP_LAUNCHER });
         let results;
-        const searchResults = outer2_12.getSearchResults({ query: outer1_0, guildId: outer1_4, page: arg1 + 1, integrationType: substr(8004).ApplicationIntegrationType.USER_INSTALL, minUserInstallCommandCount: 1, excludeAppsWithCustomInstallUrl: true, excludeNonEmbeddedApps: outer1_3, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true, source: substr(11219).SearchAppsRequestSource.APP_LAUNCHER });
-        if (null != searchResults) {
+        if (searchResults != null) {
           results = searchResults.results;
         }
-        if (null == results) {
+        if (results == null) {
           results = [];
         }
         return results;
@@ -909,25 +1415,25 @@ export const useGlobalSearchResults = function useGlobalSearchResults(fetches) {
     diff = first;
   }, items2);
   const items3 = [fetchState, num, memo, totalPages];
-  const items4 = [tmp3];
+  const items4 = [tmp5];
   const callback = first.useCallback(() => {
-    let tmp = fetchState === outer1_13.FETCHED;
-    if (tmp) {
-      tmp = length === ref.current;
+    let tmp2 = fetchState === outer1_13.FETCHED;
+    if (tmp2) {
+      tmp2 = length === ref.current;
     }
-    if (tmp) {
-      tmp = length > 0;
+    if (tmp2) {
+      tmp2 = length > 0;
     }
-    if (tmp) {
-      tmp = length < totalPages;
+    if (tmp2) {
+      tmp2 = length < totalPages;
     }
-    if (tmp) {
-      tmp = length < num;
+    if (tmp2) {
+      tmp2 = length < num;
     }
-    if (tmp) {
-      tmp = memo[length - 1].length > 0;
+    if (tmp2) {
+      tmp2 = memo[length - 1].length > 0;
     }
-    if (tmp) {
+    if (tmp2) {
       ref.current = ref.current + 1;
       callback((arg0) => arg0 + 1);
     }
@@ -938,15 +1444,18 @@ export const useGlobalSearchResults = function useGlobalSearchResults(fetches) {
     let query;
     ({ query, page, guildId } = arg0);
     let obj = num(_undefined[19]);
-    obj = { query, guildId };
+    obj = { query, guildId, options: null };
     obj = { page, integrationType: substr(_undefined[17]).ApplicationIntegrationType.USER_INSTALL, minUserInstallCommandCount: 1, excludeAppsWithCustomInstallUrl: true, excludeNonEmbeddedApps: _undefined, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true, source: substr(_undefined[18]).SearchAppsRequestSource.APP_LAUNCHER };
-    obj.options = obj;
+    obj[2] = obj;
     obj.search(obj);
   }, items4);
   const items5 = [tmp, guild_id, callback1, first, flag];
   const effect = first.useEffect(() => {
     if (flag) {
-      const obj = { query: substr, page: first, guildId: guild_id };
+      const obj = { query: null, page: null, guildId: null };
+      obj[0] = substr;
+      obj[1] = first;
+      obj[2] = guild_id;
       callback1(obj);
     }
   }, items5);
@@ -954,6 +1463,7 @@ export const useGlobalSearchResults = function useGlobalSearchResults(fetches) {
   const effect1 = first.useEffect(() => {
     callback(1);
   }, items6);
-  obj = { fetchState, applicationResults: memo.flat(), fetchNextPage: callback };
-  return obj;
+  const tmp3 = substr;
+  const tmp3Result = substr(589);
+  return { fetchState, applicationResults: memo.flat(), fetchNextPage: callback };
 };

@@ -1,21 +1,21 @@
-// Module ID: 10157
-// Function ID: 78477
+// Module ID: 10178
+// Function ID: 10179
 // Name: SafetyToolsSafetyTipsActionSheet
-// Dependencies: [31, 27, 10138, 33, 4165, 689, 10145, 1212, 10158, 4161, 2]
+// Dependencies: [19, 17, 10159, 21, 4189, 712, 10166, 1236, 10179, 4185, 2]
 // Exports: default
 
-// Module 10157 (SafetyToolsSafetyTipsActionSheet)
-import "result";
+// Module 10178 (SafetyToolsSafetyTipsActionSheet)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { getInappropriateConversationsSafetyTips as closure_4 } from "LOCATION_CONTEXT_MOBILE";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.safetyTipsContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { safetyTipsContainer: null };
+createCacheKey = { marginHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("LOCATION_CONTEXT_MOBILE").fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsSafetyTipsActionSheet.tsx");
 
 export default function SafetyToolsSafetyTipsActionSheet(arg0) {
@@ -25,20 +25,20 @@ export default function SafetyToolsSafetyTipsActionSheet(arg0) {
   let warningId;
   let warningType;
   ({ channelId, recipientId, warningId, warningType, onClose } = arg0);
-  let obj = { hasHeaderBack: true, recipientId, warningId, warningType };
-  const tmp = _createForOfIteratorHelperLoose();
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.headerTitle = intl.string(require(1212) /* getSystemLocale */.t.EtNxi6);
-  obj.channelId = channelId;
-  obj.onClose = onClose;
-  obj = { style: tmp.safetyTipsContainer };
-  obj = {};
-  const tmp2 = importDefault(10145);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.description = intl2.string(require(1212) /* getSystemLocale */.t.DJMZX6);
-  const tmp3 = importDefault(10158);
-  obj.safetyTips = callback().map((children) => outer1_5(outer1_0(outer1_2[9]).Text, { variant: "text-sm/medium", children }, arg1));
-  obj.children = <tmp3 />;
-  obj.children = <View />;
-  return <tmp2 />;
+  let obj = { hasHeaderBack: true, recipientId, warningId, warningType, headerTitle: null, channelId: null, onClose: null, children: null };
+  const tmp = createCacheKey();
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[4] = intl.string(require(1236) /* getSystemLocale */.t.EtNxi6);
+  obj[5] = channelId;
+  obj[6] = onClose;
+  obj = { style: tmp.safetyTipsContainer, children: null };
+  obj = { description: null, safetyTips: null };
+  const tmp2 = importDefault(10166);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.DJMZX6);
+  const tmp3 = importDefault(10179);
+  obj[1] = callback().map((children) => callback2(callback(table[9]).Text, { variant: "text-sm/medium", children }, arg1));
+  obj[1] = <tmp3 description={null} safetyTips={null} />;
+  obj[7] = <View description={null} safetyTips={null} />;
+  return <tmp2 description={null} safetyTips={null} />;
 };

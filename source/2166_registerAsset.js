@@ -1,11 +1,10 @@
 // Module ID: 2166
-// Function ID: 22575
+// Function ID: 2167
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 2166 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/guild_settings/server_monetization/tags/web", scales: [1], hash: "c3685a2fecec4fcf3399bcc8edd129b0", name: "GuildSettingsTags.compiled.messages", type: "jsona" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", scales: [1], hash: "668c3f066723c41a5d6dd672d9911f0a", name: "es-419.messages.668c3f066723c41a5d6dd672d9911f0a.compiled.messages", type: "jsona" });

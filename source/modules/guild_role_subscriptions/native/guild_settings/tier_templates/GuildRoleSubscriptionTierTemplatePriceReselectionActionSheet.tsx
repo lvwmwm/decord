@@ -1,22 +1,22 @@
-// Module ID: 16593
-// Function ID: 129115
+// Module ID: 16628
+// Function ID: 16629
 // Name: PriceOptionRow
-// Dependencies: [57, 31, 27, 1852, 482, 33, 4165, 689, 3883, 8316, 5119, 16497, 15400, 4161, 1212, 5651, 14226, 1557, 5221, 5223, 1273, 4579, 4133, 2]
+// Dependencies: [32, 19, 17, 1876, 505, 21, 4189, 712, 3907, 8340, 5141, 16532, 15433, 4185, 1236, 5669, 14248, 1581, 5243, 5245, 1297, 4601, 4157, 2]
 // Exports: default
 
-// Module 16593 (PriceOptionRow)
+// Module 16628 (PriceOptionRow)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import BottomSheetModal from "BottomSheetModal";
+import get_ActivityIndicator from "useSafeAreaInsets";
 import { SubscriptionIntervalTypes } from "GuildFeatures";
 import { CurrencyCodes } from "sum";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "CollapsingText";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_9;
 const require = arg1;
 function PriceOptionRow(selected) {
   let accessibilityRole;
@@ -25,90 +25,81 @@ function PriceOptionRow(selected) {
   let price;
   selected = selected.selected;
   ({ price, onPress } = selected);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(3883) /* useCheckboxA11yNative */;
+  const tmp = createCacheKey();
+  let obj = require(3907) /* useCheckboxA11yNative */;
   const radioA11yNative = obj.useRadioA11yNative({ selected });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  obj = {};
   const items = [tmp.rowContainer, ];
   let containerSelected;
   if (selected) {
     containerSelected = tmp.containerSelected;
   }
+  obj = { style: items, accessibilityRole, accessibilityState, onPress, children: null };
   items[1] = containerSelected;
-  obj.style = items;
-  obj.accessibilityRole = accessibilityRole;
-  obj.accessibilityState = accessibilityState;
-  obj.onPress = onPress;
-  obj = { style: tmp.rowStatusIcon };
-  const tmp3 = closure_10;
-  const tmp4 = importDefault(8316);
-  const tmp6 = callback2;
-  const tmp7 = importDefault;
-  if (selected) {
-    let tmp10 = 16497;
-  } else {
-    tmp10 = 15400;
-  }
-  obj.source = tmp7(tmp10);
-  const items1 = [tmp6(importDefault(5119), obj), ];
-  const obj1 = { variant: "text-sm/normal", color: "text-default" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  const obj2 = {};
-  const tmp8 = importDefault(5119);
-  obj2.price = require(5651) /* formatSingleCurrencyPrice */.formatPrice(price, CurrencyCodes.USD);
-  const obj6 = require(5651) /* formatSingleCurrencyPrice */;
-  obj2.interval = require(14226) /* getBenefitKey */.formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
-  obj1.children = intl.format(require(1212) /* getSystemLocale */.t.CgmBaG, obj2);
-  items1[1] = callback2(require(4161) /* Text */.Text, obj1);
-  obj.children = items1;
-  return tmp3(tmp4, obj);
+  obj = { style: tmp.rowStatusIcon, source: null };
+  const tmp5 = closure_10;
+  const tmp7 = importDefault(8340);
+  obj[1] = importDefault(selected ? 16532 : 15433);
+  const items1 = [closure_9(importDefault(5141), obj), ];
+  const obj1 = { variant: "text-sm/normal", color: "text-default", children: null };
+  const intl = tmp2(1236).intl;
+  const obj2 = { price: null, interval: null };
+  let tmp2Result = tmp2(5669);
+  obj2[0] = tmp2Result.formatPrice(price, CurrencyCodes.USD);
+  tmp2Result = tmp2(14248);
+  obj2[1] = tmp2Result.formatPlanInterval({ interval: SubscriptionIntervalTypes.MONTH, interval_count: 1 });
+  obj1[2] = intl.format(require(1236) /* getSystemLocale */.t.CgmBaG, obj2);
+  items1[1] = closure_9(require(4185) /* Text */.Text, obj1);
+  obj[4] = items1;
+  return tmp5(tmp7, obj);
 }
-({ TouchableOpacity: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, padding: 24, borderTopLeftRadius: require("_createForOfIteratorHelperLoose").radii.md, borderTopRightRadius: require("_createForOfIteratorHelperLoose").radii.md };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, flexDirection: "row", alignSelf: "stretch", justifyContent: "flex-start", padding: 12, marginBottom: 12, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED };
-_createForOfIteratorHelperLoose.rowContainer = obj1;
-_createForOfIteratorHelperLoose.containerSelected = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-_createForOfIteratorHelperLoose.rowStatusIcon = { height: 20, width: 20, marginRight: 12 };
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-_createForOfIteratorHelperLoose.confirmButton = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
-_createForOfIteratorHelperLoose.backToTemplates = { alignSelf: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
+({ TouchableOpacity: c5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { container: null, rowContainer: null, containerSelected: null, rowStatusIcon: null, confirmButton: null, backToTemplates: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, padding: 24, borderTopLeftRadius: require("Themes").radii.md, borderTopRightRadius: require("Themes").radii.md };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.sm, flexDirection: "row", alignSelf: "stretch", justifyContent: "flex-start", padding: 12, marginBottom: 12, borderWidth: 1, borderColor: require("Themes").colors.BORDER_MUTED };
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.sm, flexDirection: "row", alignSelf: "stretch", justifyContent: "flex-start", padding: 12, marginBottom: 12, borderWidth: 1, borderColor: require("Themes").colors.BORDER_MUTED };
+createCacheKey[2] = { backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[3] = { height: 20, width: 20, marginRight: 12 };
+let obj2 = { backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[4] = { borderRadius: require("Themes").radii.xs };
+createCacheKey[5] = { alignSelf: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { borderRadius: require("Themes").radii.xs };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet.tsx");
 
 export default function GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet(selectedTemplate) {
+  let c3;
+  let c4;
   let importDefault;
   let newPricesToPick;
   selectedTemplate = selectedTemplate.selectedTemplate;
   ({ handleCreateFromTemplate: importDefault, newPricesToPick } = selectedTemplate);
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = callback(React.useState(0), 2);
-  callback = tmp2[0];
-  React = tmp2[1];
-  let obj = { backdropOpacity: 0.8, startExpanded: true };
-  obj = { style: tmp.container };
-  obj = { contentContainerStyle: { paddingBottom: importDefault(newPricesToPick[17])().bottom } };
-  const obj1 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary" };
+  let callback;
+  let React;
+  const tmp = createCacheKey();
+  [c3, c4] = callback(React.useState(0), 2);
+  let obj = { backdropOpacity: 0.8, startExpanded: true, children: null };
+  obj = { style: tmp.container, children: null };
+  obj = { contentContainerStyle: { paddingBottom: importDefault(newPricesToPick[17])().bottom }, children: null };
+  const obj1 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = selectedTemplate(newPricesToPick[14]).intl;
-  obj1.children = intl.format(selectedTemplate(newPricesToPick[14]).t["5WZ9Ct"], { tierName: selectedTemplate.listings[0].name });
+  obj1[2] = intl.format(selectedTemplate(newPricesToPick[14]).t["5WZ9Ct"], { tierName: selectedTemplate.listings[0].name });
   let items = [callback2(selectedTemplate(newPricesToPick[13]).Text, obj1), callback2(selectedTemplate(newPricesToPick[20]).Spacer, { size: 12 }), , , , , , , ];
-  const obj3 = { variant: "text-sm/normal", color: "text-default" };
+  const obj3 = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = selectedTemplate(newPricesToPick[14]).intl;
-  const obj4 = {};
+  const obj4 = { price: null };
   let obj7 = selectedTemplate(newPricesToPick[15]);
-  obj4.price = obj7.formatPrice(selectedTemplate.listings[0].price_tier, CurrencyCodes.USD);
-  obj3.children = intl2.format(selectedTemplate(newPricesToPick[14]).t["5i7Uhb"], obj4);
+  obj4[0] = obj7.formatPrice(selectedTemplate.listings[0].price_tier, CurrencyCodes.USD);
+  obj3[2] = intl2.format(selectedTemplate(newPricesToPick[14]).t["5i7Uhb"], obj4);
   items[2] = callback2(selectedTemplate(newPricesToPick[13]).Text, obj3);
   items[3] = callback2(selectedTemplate(newPricesToPick[20]).Spacer, { size: 24 });
   items[4] = newPricesToPick.map((price) => {
     let closure_0 = arg1;
     return outer1_9(outer1_12, {
       price,
-      selected: arg1 === _slicedToArray,
+      selected: arg1 === c3,
       onPress() {
         return outer1_4(closure_0);
       }
@@ -123,9 +114,9 @@ export default function GuildRoleSubscriptionTierTemplatePriceReselectionActionS
       const merged = Object.assign(selectedTemplate);
       obj = {};
       const merged1 = Object.assign(selectedTemplate.listings[0]);
-      obj["price_tier"] = newPricesToPick[_slicedToArray];
+      obj.price_tier = newPricesToPick[c3];
       const items = [obj];
-      obj["listings"] = items;
+      obj.listings = items;
       callback(obj, true);
     },
     grow: true
@@ -133,18 +124,19 @@ export default function GuildRoleSubscriptionTierTemplatePriceReselectionActionS
   items[7] = callback2(selectedTemplate(newPricesToPick[20]).Spacer, { size: 24 });
   const obj6 = {
     onPress() {
-      return outer1_1(newPricesToPick[22]).hideActionSheet();
+      return callback(newPricesToPick[22]).hideActionSheet();
     },
     style: tmp.backToTemplates,
-    activeOpacity: 0.5
+    activeOpacity: 0.5,
+    children: null
   };
-  obj7 = { variant: "text-sm/semibold", color: "interactive-text-active" };
+  obj7 = { variant: "text-sm/semibold", color: "interactive-text-active", children: null };
   const intl3 = selectedTemplate(newPricesToPick[14]).intl;
-  obj7.children = intl3.string(selectedTemplate(newPricesToPick[14]).t.h26VOI);
-  obj6.children = callback2(selectedTemplate(newPricesToPick[13]).Text, obj7);
+  obj7[2] = intl3.string(selectedTemplate(newPricesToPick[14]).t.h26VOI);
+  obj6[3] = callback2(selectedTemplate(newPricesToPick[13]).Text, obj7);
   items[8] = callback2(closure_5, obj6);
-  obj.children = items;
-  obj.children = callback3(selectedTemplate(newPricesToPick[19]).BottomSheetScrollView, obj);
-  obj.children = callback2(closure_6, obj);
+  obj[1] = items;
+  obj[1] = callback3(selectedTemplate(newPricesToPick[19]).BottomSheetScrollView, obj);
+  obj[2] = callback2(closure_6, obj);
   return callback2(selectedTemplate(newPricesToPick[18]).BottomSheet, obj);
 };

@@ -1,79 +1,79 @@
-// Module ID: 13756
-// Function ID: 105464
+// Module ID: 13777
+// Function ID: 13778
 // Name: RestrictedAccountRedirect
-// Dependencies: [31, 27, 3802, 1850, 653, 6695, 33, 4165, 689, 13757, 1212, 6590, 566, 9206, 9153, 5198, 4578, 2]
+// Dependencies: [19, 17, 3826, 1874, 676, 6716, 21, 4189, 712, 13778, 1236, 6611, 589, 9230, 9177, 5220, 4600, 2]
 
-// Module 13756 (RestrictedAccountRedirect)
-import importAllResult from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 13777 (RestrictedAccountRedirect)
+import importAllResult from "noop";
+import { View } from "set";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { AnalyticsSections } from "ME";
 import { SafetySettingsNoticeType } from "SafetyToastType";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_9;
+let c10;
+let c9;
 const require = arg1;
 function RestrictedAccountRedirect() {
-  let obj = {
-    label: require(1212) /* getSystemLocale */.t.zqv4nV,
-    labelHook() {
-      let obj = outer1_0(outer1_2[11]);
-      obj = { screen: outer1_7.SETTINGS_CONTENT_AND_SOCIAL };
-      obj.openUserSettings(obj);
-    },
-    noticeType: SafetySettingsNoticeType.RESTRICTED_ACCOUNTS_SETTING_NOTICE
+  let obj = { label: null, labelHook: null, noticeType: null };
+  obj[0] = require(1236) /* getSystemLocale */.t.zqv4nV;
+  obj[1] = function labelHook() {
+    let obj = callback(table[11]);
+    obj = { screen: constants.SETTINGS_CONTENT_AND_SOCIAL };
+    obj.openUserSettings(obj);
   };
-  return callback(importDefault(13757), obj);
+  obj[2] = SafetySettingsNoticeType.RESTRICTED_ACCOUNTS_SETTING_NOTICE;
+  return callback(importDefault(13778), obj);
 }
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-let obj = {};
-obj = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24, gap: require("_createForOfIteratorHelperLoose").space.PX_24 };
-obj.header = obj;
-let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+({ jsx: c9, jsxs: c10 } = jsxProd);
+let obj = { header: null };
+obj = { paddingTop: require("Themes").space.PX_24, gap: require("Themes").space.PX_24 };
+obj[0] = obj;
+let closure_11 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(() => {
-  let obj = require(566) /* initialize */;
-  const items = [closure_6];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getCurrentUser());
-  let obj1 = require(9206) /* handleOpenEmailVerification */;
+  let obj = require(589) /* initialize */;
+  const items = [mergeGuildAvatar];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  let obj1 = require(9230) /* handleOpenEmailVerification */;
   const bannerText = obj1.getBannerText(stateFromStores);
   const tmp = callback2();
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_5.getBlockedOrIgnoredIDs().length > 0);
+  const items1 = [upsertRelationship];
+  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => blockedOrIgnoredIDs.getBlockedOrIgnoredIDs().length > 0);
   const callback = importAllResult.useCallback(() => {
-    outer1_1(outer1_2[14]).open();
+    callback(table[14]).open();
   }, []);
   if (null != bannerText) {
-    obj = { style: tmp.header };
-    let tmp9 = null;
+    obj = { style: null, children: null };
+    obj[0] = tmp.header;
+    let tmp11 = null;
     if (stateFromStores1) {
-      tmp9 = callback(RestrictedAccountRedirect, {});
+      tmp11 = callback(RestrictedAccountRedirect, {});
     }
-    const items2 = [tmp9, ];
-    let tmp12 = null;
+    const items2 = [tmp11, ];
+    let tmp14 = null;
     if (null != bannerText) {
-      obj = { onPress: callback, variant: "danger" };
-      ({ title: obj5.label, title: obj5.accessibilityLabel } = bannerText);
-      obj1 = {};
-      ({ button: obj6.text, button: obj6.accessibilityLabel } = bannerText);
-      obj1.onPress = callback;
-      obj.trailing = callback(require(4578) /* Button */.Button, obj1);
-      obj.start = true;
-      obj.end = true;
-      tmp12 = callback(require(5198) /* TableRowInner */.TableRow, obj);
+      obj = { onPress: null, variant: "danger", label: null, accessibilityLabel: null, trailing: null, start: true, end: true };
+      obj[0] = callback;
+      ({ title: obj5[2], title: obj5[3] } = bannerText);
+      obj1 = { text: null, accessibilityLabel: null, onPress: null };
+      ({ button: obj6[0], button: obj6[1] } = bannerText);
+      obj1[2] = callback;
+      obj[4] = callback(tmp2(4600).Button, obj1);
+      tmp14 = callback(tmp2(5220).TableRow, obj);
     }
-    items2[1] = tmp12;
-    obj.children = items2;
-    let tmp7Result = closure_10(View, obj);
-    const tmp7 = closure_10;
-    const tmp8 = View;
+    items2[1] = tmp14;
+    obj[1] = items2;
+    let tmp9Result = closure_10(View, obj);
+    const tmp10 = View;
+    const tmp9 = closure_10;
   } else {
-    tmp7Result = null;
+    tmp9Result = null;
   }
-  return tmp7Result;
+  return tmp9Result;
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/account/native/SettingsAccountHeader.tsx");
+const result = require("upsertRelationship").fileFinishedImporting("modules/user_settings/account/native/SettingsAccountHeader.tsx");
 
 export default memoResult;

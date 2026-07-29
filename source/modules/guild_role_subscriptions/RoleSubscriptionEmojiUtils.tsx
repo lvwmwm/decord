@@ -1,33 +1,17 @@
-// Module ID: 5031
-// Function ID: 43343
-// Name: isPurchasableRoleSubscriptionEmoji
-// Dependencies: [5027, 2]
-// Exports: isRoleSubscriptionEmoji, isUnusableRoleSubscriptionEmoji
+// Module ID: 5053
+// Function ID: 5054
+// Name: isRoleSubscriptionEmoji
+// Dependencies: [5049, 2]
+// Exports: isPurchasableRoleSubscriptionEmoji, isRoleSubscriptionEmoji, isUnusableRoleSubscriptionEmoji
 
-// Module 5031 (isPurchasableRoleSubscriptionEmoji)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5053 (isRoleSubscriptionEmoji)
+import computeRolesForGuild from "computeRolesForGuild";
 
-function isPurchasableRoleSubscriptionEmoji(customEmojiFromJoinedGuild) {
-  let roles;
-  if (null != customEmojiFromJoinedGuild) {
-    roles = customEmojiFromJoinedGuild.roles;
-  }
-  if (null != roles) {
-    if (0 !== customEmojiFromJoinedGuild.roles.length) {
-      if (null != customEmojiFromJoinedGuild.guildId) {
-        authStore = authStore.getPurchasableSubscriptionRoles(customEmojiFromJoinedGuild.guildId);
-        roles = customEmojiFromJoinedGuild.roles;
-        return roles.some((arg0) => set.has(arg0));
-      }
-    }
-  }
-  return false;
-}
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/RoleSubscriptionEmojiUtils.tsx");
 
 export const isRoleSubscriptionEmoji = function isRoleSubscriptionEmoji(roles, id) {
   roles = undefined;
-  if (null != roles) {
+  if (roles != null) {
     roles = roles.roles;
   }
   if (null != roles) {
@@ -41,28 +25,60 @@ export const isRoleSubscriptionEmoji = function isRoleSubscriptionEmoji(roles, i
   }
   return false;
 };
-export { isPurchasableRoleSubscriptionEmoji };
-export const isUnusableRoleSubscriptionEmoji = function isUnusableRoleSubscriptionEmoji(emoji, arg1) {
+export const isPurchasableRoleSubscriptionEmoji = function isPurchasableRoleSubscriptionEmoji(emoji) {
   let roles;
-  if (null != emoji) {
+  if (emoji != null) {
     roles = emoji.roles;
   }
   if (null != roles) {
     if (0 !== emoji.roles.length) {
       if (null != emoji.guildId) {
-        if (isPurchasableRoleSubscriptionEmoji(emoji)) {
+        authStore = authStore.getPurchasableSubscriptionRoles(emoji.guildId);
+        roles = emoji.roles;
+        return roles.some((arg0) => set.has(arg0));
+      }
+    }
+  }
+  return false;
+};
+export const isUnusableRoleSubscriptionEmoji = function isUnusableRoleSubscriptionEmoji(emoji, guildId) {
+  let roles;
+  if (emoji != null) {
+    roles = emoji.roles;
+  }
+  if (null != roles) {
+    if (0 !== emoji.roles.length) {
+      if (null != emoji.guildId) {
+        let roles1;
+        if (emoji != null) {
+          roles1 = emoji.roles;
+        }
+        let flag2 = false;
+        if (null != roles1) {
+          flag2 = false;
+          if (0 !== emoji.roles.length) {
+            flag2 = false;
+            if (null != emoji.guildId) {
+              authStore = authStore.getPurchasableSubscriptionRoles(emoji.guildId);
+              roles = emoji.roles;
+              flag2 = roles.some((arg0) => set.has(arg0));
+            }
+          }
+        }
+        if (flag2) {
           authStore = authStore.getUserSubscriptionRoles(emoji.guildId);
-          roles = emoji.roles;
-          let userIsAdmin = arg1 === emoji.guildId;
+          const roles2 = emoji.roles;
+          let userIsAdmin = guildId === emoji.guildId;
           if (userIsAdmin) {
-            userIsAdmin = authStore.getUserIsAdmin(emoji.guildId);
+            userIsAdmin = obj.getUserIsAdmin(emoji.guildId);
           }
           if (!someResult) {
             if (!userIsAdmin) {
               return true;
             }
           }
-          someResult = roles.some((arg0) => set.has(arg0));
+          obj = authStore;
+          someResult = roles2.some((arg0) => set.has(arg0));
         }
         return false;
       }

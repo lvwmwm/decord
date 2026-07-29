@@ -1,14 +1,15 @@
-// Module ID: 16623
-// Function ID: 129545
+// Module ID: 16658
+// Function ID: 16659
 // Name: shouldEnableYYTextReplacement
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: shouldEnableYYTextReplacement
 
-// Module 16623 (shouldEnableYYTextReplacement)
+// Module 16658 (shouldEnableYYTextReplacement)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2026-01-yytext-replacement-ios", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-01-yytext-replacement-ios", kind: "user", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/messages/YYTextReplacementExperiment.tsx");
 
 export const shouldEnableYYTextReplacement = function shouldEnableYYTextReplacement(location) {

@@ -1,36 +1,39 @@
-// Module ID: 10413
-// Function ID: 80184
+// Module ID: 10437
+// Function ID: 10438
 // Name: LikelyAtoWarningBanner
-// Dependencies: [31, 9075, 10414, 653, 662, 33, 4165, 689, 10135, 10136, 4372, 10285, 6700, 3862, 10415, 1212, 10418, 1935, 4161, 10422, 2]
+// Dependencies: [19, 9099, 10438, 676, 685, 21, 4189, 712, 10156, 10157, 4395, 10306, 6721, 3886, 10439, 1236, 10442, 1959, 4185, 10446, 2]
 
-// Module 10413 (LikelyAtoWarningBanner)
-import result from "result";
-import { SafetyWarningTypes } from "_isNativeReflectConstruct";
+// Module 10437 (LikelyAtoWarningBanner)
+import LikelyAtoMoreTipsModalActionItems from "LikelyAtoMoreTipsModalActionItems";
+import { SafetyWarningTypes } from "handleConnectionOpen";
 import LIKELY_ATO_MORE_TIPS_MODAL_KEY from "LIKELY_ATO_MORE_TIPS_MODAL_KEY";
 import { AnalyticEvents } from "ME";
 import { MuteUntilSeconds } from "MAX_FAVORITES";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c5;
 let closure_12;
-let closure_5;
 let closure_6;
-let closure_7;
+let error;
+let unpackModuleId;
 const require = arg1;
 class LikelyAtoWarningBanner {
   constructor(arg0) {
     channelId = global.channelId;
     warningId = global.warningId;
     senderId = global.senderId;
+    handleLearnMore = undefined;
+    c4 = undefined;
+    f84639 = undefined;
     handleLearnMore = function handleLearnMore() {
       let obj = channelId(senderId[8]);
       obj = { channelId, warningId, senderId, warningType: callback.LIKELY_ATO, cta: channelId(senderId[8]).CtaEventTypes.USER_MODAL_LEARN_MORE };
       obj.trackCtaEvent(obj);
       warningId(senderId[13]).openURL(outer1_7);
     };
-    handleLearnMore = c13();
+    handleLearnMore = jsxs();
     items = [, , ];
     items[0] = channelId;
     items[1] = warningId;
@@ -49,13 +52,13 @@ class LikelyAtoWarningBanner {
       const obj = channelId(senderId[9]);
       warningId(senderId[10]).popWithKey(handleLearnMore);
     }, items1);
-    SafetyWarningTypes = callback;
+    c4 = callback;
     items2 = [, , , ];
     items2[0] = channelId;
     items2[1] = senderId;
     items2[2] = warningId;
     items2[3] = callback;
-    f80189 = handleLearnMore.useCallback((cta) => {
+    f84639 = handleLearnMore.useCallback((cta) => {
       let obj = channelId(senderId[11]);
       obj = { channelId, guildId: null, muteDurationSeconds: outer1_9.ALWAYS };
       const result = obj.handleMuteSettingPress(obj);
@@ -65,43 +68,42 @@ class LikelyAtoWarningBanner {
       channelId(senderId[8]).trackCtaEvent(obj);
       callback();
     }, items2);
-    obj = { channelId, warningId, senderId, warningType: SafetyWarningTypes.LIKELY_ATO };
+    obj = { channelId, warningId, senderId, warningType: c4.LIKELY_ATO, header: null, description: null, onDismiss: null, buttons: null };
     tmp3 = require("SafetyWarningBanner");
     intl = require("getSystemLocale").intl;
-    obj.header = intl.string(require("getSystemLocale").t.R8UsiI);
+    obj[4] = intl.string(require("getSystemLocale").t.R8UsiI);
     intl2 = require("getSystemLocale").intl;
-    obj.description = intl2.string(require("getSystemLocale").t.lI8nQl);
-    obj.onDismiss = callback;
-    obj = {};
+    obj[5] = intl2.string(require("getSystemLocale").t.lI8nQl);
+    obj[6] = callback;
+    obj = { text: null, variant: "primary", onpress: null };
     intl3 = require("getSystemLocale").intl;
-    obj.text = intl3.string(require("getSystemLocale").t.tC1pvL);
-    obj.variant = "primary";
-    obj.onpress = function onpress() {
+    obj[0] = intl3.string(require("getSystemLocale").t.tC1pvL);
+    obj[2] = function onpress() {
       let obj = warningId(senderId[10]);
-      obj = { modalKey: handleLearnMore, headerStyle: moreTipsHeader.moreTipsHeader, channelId, warningId, senderId };
+      obj = { modalKey: handleLearnMore, headerStyle: moreTipsHeader.moreTipsHeader, channelId, warningId, senderId, description: null, safetyTips: null, actionItems: null, learnMore: null };
       const intl = channelId(senderId[15]).intl;
-      obj.description = intl.string(channelId(senderId[15]).t["/uid3p"]);
+      obj[5] = intl.string(channelId(senderId[15]).t["/uid3p"]);
       const tmp = channelId(senderId[17])(senderId[16], senderId.paths);
-      obj.safetyTips = callback().map((title) => {
-        let obj = {};
-        obj = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: title.title };
-        const items = [outer2_10(channelId(senderId[18]).Text, obj, arg1), ];
-        obj = { variant: "text-xs/medium", color: "text-subtle", children: title.description };
-        items[1] = outer2_10(channelId(senderId[18]).Text, obj, arg1);
-        obj.children = items;
-        return outer2_12(outer2_11, obj);
+      obj[6] = callback().map((children) => {
+        let obj = { children: null };
+        obj = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.title };
+        const items = [callback3(callback(4185).Text, obj, arg1), ];
+        obj = { variant: "text-xs/medium", color: "text-subtle", children: children.description };
+        items[1] = callback3(callback(4185).Text, obj, arg1);
+        obj[0] = items;
+        return callback4(closure_11, obj);
       });
       obj = {
         senderId,
         handleMutePressed() {
-          return outer1_5(channelId(senderId[8]).CtaEventTypes.USER_MODAL_MUTE);
+          return callback2(outer1_0(outer1_2[8]).CtaEventTypes.USER_MODAL_MUTE);
         }
       };
-      obj.actionItems = outer1_10(warningId(senderId[19]), obj);
-      const obj1 = { variant: "text-sm/normal", color: "text-link" };
+      obj[7] = outer1_10(warningId(senderId[19]), obj);
+      const obj1 = { variant: "text-sm/normal", color: "text-link", children: null };
       const intl2 = channelId(senderId[15]).intl;
-      obj1.children = intl2.format(channelId(senderId[15]).t.UkH122, { learnMoreLink: handleLearnMore });
-      obj.learnMore = outer1_10(channelId(senderId[18]).Text, obj1);
+      obj1[2] = intl2.format(channelId(senderId[15]).t.UkH122, { learnMoreLink: handleLearnMore });
+      obj[8] = outer1_10(channelId(senderId[18]).Text, obj1);
       obj.pushLazy(tmp, obj, handleLearnMore);
       const arr = callback();
       const obj2 = { learnMoreLink: handleLearnMore };
@@ -110,24 +112,23 @@ class LikelyAtoWarningBanner {
     };
     items3 = [, ];
     items3[0] = obj;
-    obj1 = {};
+    obj1 = { text: null, variant: "secondary", onpress: null };
     intl4 = require("getSystemLocale").intl;
-    obj1.text = intl4.string(require("getSystemLocale").t.ftIK2A);
-    obj1.variant = "secondary";
-    obj1.onpress = function onpress() {
+    obj1[0] = intl4.string(require("getSystemLocale").t.ftIK2A);
+    obj1[2] = function onpress() {
       return callback(channelId(senderId[8]).CtaEventTypes.USER_BANNER_MUTE);
     };
     items3[1] = obj1;
-    obj.buttons = items3;
+    obj[7] = items3;
     return jsx(tmp3, obj);
   }
 }
-({ getLikelyAtoMoreTips: closure_5, LIKELY_ATO_MORE_TIPS_MODAL_KEY: closure_6, LEARN_MORE_HC_ARTICLE: closure_7 } = LIKELY_ATO_MORE_TIPS_MODAL_KEY);
-({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" };
-_createForOfIteratorHelperLoose.moreTipsHeader = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ getLikelyAtoMoreTips: c5, LIKELY_ATO_MORE_TIPS_MODAL_KEY: closure_6, LEARN_MORE_HC_ARTICLE: error } = LIKELY_ATO_MORE_TIPS_MODAL_KEY);
+({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = jsxProd);
+createCacheKey = { moreTipsHeader: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = require("LIKELY_ATO_MORE_TIPS_MODAL_KEY").fileFinishedImporting("modules/ato_alerts/native/components/LikelyAtoWarningBanner.tsx");
 
 export default LikelyAtoWarningBanner;

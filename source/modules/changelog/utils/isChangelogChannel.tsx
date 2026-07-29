@@ -1,11 +1,11 @@
-// Module ID: 8180
-// Function ID: 65076
+// Module ID: 8204
+// Function ID: 8205
 // Name: isChangelogChannel
-// Dependencies: [1348, 1906, 2]
+// Dependencies: [1372, 1930, 2]
 // Exports: default
 
-// Module 8180 (isChangelogChannel)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8204 (isChangelogChannel)
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { SYSTEM_UPDATES_USER_ID } from "CHANGELOG_MODAL_KEY";
 
 const result = require("set").fileFinishedImporting("modules/changelog/utils/isChangelogChannel.tsx");

@@ -1,70 +1,81 @@
-// Module ID: 12049
-// Function ID: 92942
+// Module ID: 12073
+// Function ID: 12074
 // Name: resolveFieldValue
-// Dependencies: [12050, 12051, 2]
+// Dependencies: [12074, 12075, 2]
 // Exports: bindResolveFieldValue
 
-// Module 12049 (resolveFieldValue)
+// Module 12073 (resolveFieldValue)
 function resolveFieldValue(image, items, applicationAssets) {
   const _require = image;
   applicationAssets = applicationAssets.applicationAssets;
   if (null == image) {
     return null;
-  } else if (image.value_type === _require(12051).ApplicationWidgetFieldValueType.DATA) {
+  } else if (image.value_type === _require(12075).ApplicationWidgetFieldValueType.DATA) {
     let iter = tmp[image.value];
     const presentation_type = image.presentation_type;
     if (null != iter) {
-      if (null != table[presentation_type]) {
-        if (obj4.includes(iter.type)) {
-          if (items.includes(iter.type)) {
-            if ("playtime_hours" === image.value) {
-              let obj = { type: iter.type };
-              const _Math = Math;
-              iter = Math.floor(60 * iter.value * 60 * 1000);
-              obj.value = iter;
-              obj.presentationType = presentation_type;
-            }
-            obj = {};
-            const merged = Object.assign(iter);
-            obj["presentationType"] = presentation_type;
+      let hasItem;
+      if (table[presentation_type] != null) {
+        hasItem = obj4.includes(iter.type);
+      }
+      if (hasItem) {
+        if (items.includes(iter.type)) {
+          if ("playtime_hours" === image.value) {
+            let obj = { type: null, value: null, presentationType: null };
+            obj[0] = iter.type;
+            const _Math = Math;
+            iter = iter.value;
+            obj[1] = Math.floor(60 * iter * 60 * 1000);
+            obj[2] = presentation_type;
           }
+          obj = {};
+          const merged = Object.assign(iter);
+          obj.presentationType = presentation_type;
         }
       }
     }
-    let tmp17 = null;
+    let tmp10 = null;
     if ("fallback" in image) {
-      tmp17 = null;
+      tmp10 = null;
       if (null != image.fallback) {
-        tmp17 = resolveFieldValue(image.fallback, items, applicationAssets);
+        tmp10 = resolveFieldValue(image.fallback, items, applicationAssets);
       }
     }
-    return tmp17;
-  } else if (image.value_type === _require(12051).ApplicationWidgetFieldValueType.CUSTOM_STRING) {
-    let tmp11 = null;
-    if (image.presentation_type === _require(12050).ApplicationWidgetFieldPresentationType.TEXT) {
-      tmp11 = null;
+    return tmp10;
+  } else if (image.value_type === tmp19(12075).ApplicationWidgetFieldValueType.CUSTOM_STRING) {
+    let tmp6 = null;
+    if (image.presentation_type === tmp19(12074).ApplicationWidgetFieldPresentationType.TEXT) {
+      tmp6 = null;
       if (items.includes(obj.STRING)) {
-        const obj1 = { type: obj.STRING, value: image.value, presentationType: _require(12050).ApplicationWidgetFieldPresentationType.TEXT };
-        tmp11 = obj1;
+        const obj1 = { type: null, value: null, presentationType: null };
+        obj1[0] = tmp7.STRING;
+        obj1[1] = image.value;
+        obj1[2] = tmp19(12074).ApplicationWidgetFieldPresentationType.TEXT;
+        tmp6 = obj1;
       }
+      tmp7 = obj;
     }
-    return tmp11;
-  } else if (image.value_type === _require(12051).ApplicationWidgetFieldValueType.APPLICATION_ASSET) {
+    return tmp6;
+  } else if (image.value_type === tmp19(12075).ApplicationWidgetFieldValueType.APPLICATION_ASSET) {
     if (items.includes(obj.MEDIA)) {
       const found = applicationAssets.find((key) => key.key === image.value);
       let tmp5 = null;
       if (null != found) {
-        obj = {};
-        obj.type = obj.MEDIA;
-        const obj2 = { url: tmp2(found), width: found.metadata.width, height: found.metadata.height };
-        obj.media = obj2;
-        obj.presentationType = _require(12050).ApplicationWidgetFieldPresentationType.IMAGE;
+        obj = { type: null, media: null, presentationType: null };
+        obj[0] = tmp3.MEDIA;
+        const obj2 = { url: null, width: null, height: null };
+        obj2[0] = tmp2(found);
+        obj2[1] = found.metadata.width;
+        obj2[2] = found.metadata.height;
+        obj[1] = obj2;
+        obj[2] = tmp19(12074).ApplicationWidgetFieldPresentationType.IMAGE;
         tmp5 = obj;
       }
       return tmp5;
     } else {
       return null;
     }
+    tmp3 = obj;
   } else {
     return null;
   }
@@ -74,7 +85,7 @@ const items = [obj.STRING];
 const items1 = [obj.NUMBER];
 const items2 = [obj.MEDIA];
 const items3 = [obj.NUMBER];
-let closure_3 = { [require(12050).ApplicationWidgetFieldPresentationType.TEXT]: items, [require(12050).ApplicationWidgetFieldPresentationType.NUMBER]: items1, [require(12050).ApplicationWidgetFieldPresentationType.IMAGE]: items2, [require(12050).ApplicationWidgetFieldPresentationType.DURATION]: items3 };
+let closure_3 = { [require(12074).ApplicationWidgetFieldPresentationType.TEXT]: items, [require(12074).ApplicationWidgetFieldPresentationType.NUMBER]: items1, [require(12074).ApplicationWidgetFieldPresentationType.IMAGE]: items2, [require(12074).ApplicationWidgetFieldPresentationType.DURATION]: items3 };
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/resolvedValues.tsx");
 
 export const ResolvedValueType = obj;

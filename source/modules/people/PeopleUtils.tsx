@@ -1,78 +1,12 @@
-// Module ID: 9032
-// Function ID: 70960
-// Name: acceptFriendRequest
-// Dependencies: [3802, 653, 9033, 8894, 3844, 3851, 9034, 9035, 686, 2]
+// Module ID: 9056
+// Function ID: 9057
+// Dependencies: [3826, 676, 9057, 8918, 3868, 3875, 9058, 9059, 709, 2]
 
-// Module 9032 (acceptFriendRequest)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9056
+import upsertRelationship from "upsertRelationship";
 import { AbortCodes } from "ME";
 
 const require = arg1;
-function acceptFriendRequest(location) {
-  let applicationId;
-  let confirmStrangerRequest;
-  let userId;
-  ({ userId, applicationId, confirmStrangerRequest } = location);
-  if (confirmStrangerRequest === undefined) {
-    confirmStrangerRequest = false;
-  }
-  if (null != applicationId) {
-    let obj = { userId, applicationId };
-    let result = importDefault(9033).acceptGameFriendRequest(obj);
-    const obj4 = importDefault(9033);
-  } else {
-    obj = importDefault(8894);
-    obj = { userId, confirmStrangerRequest };
-    const obj1 = { location: location.location };
-    obj.context = obj1;
-    result = obj.acceptFriendRequest(obj);
-  }
-  return result;
-}
-function handleFriendRequestAcceptError(body, userId) {
-  const _require = userId;
-  let code;
-  if (null != body) {
-    body = body.body;
-    if (null != body) {
-      code = body.code;
-    }
-  }
-  if (code === AbortCodes.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
-    let obj = { type: "UPDATE_STRANGER_STATUS", userId: userId.userId, isStranger: true };
-    let flag = true;
-    importDefault(686).dispatch(obj);
-    const obj3 = importDefault(686);
-    obj = {
-      onConfirm() {
-          const obj = {};
-          const merged = Object.assign(userId);
-          obj["confirmStrangerRequest"] = true;
-          outer1_5(obj);
-          if (null != userId.onConfirm) {
-            userId.onConfirm();
-          }
-        },
-      onCancel() {
-          if (null != userId.onCancel) {
-            userId.onCancel();
-          }
-        }
-    };
-    const result = _require(9035).openAcceptFriendRequestConfirmModal(obj);
-    const obj5 = _require(9035);
-  } else {
-    flag = false;
-    if (tmp2) {
-      obj = importDefault(686);
-      const obj1 = { type: "UPDATE_STRANGER_STATUS", userId: userId.userId, isStranger: false };
-      obj.dispatch(obj1);
-      flag = false;
-    }
-    tmp2 = null != body && body.ok;
-  }
-  return flag;
-}
 let result = require("showRequestFailedAlert").fileFinishedImporting("modules/people/PeopleUtils.tsx");
 
 export default {
@@ -81,12 +15,15 @@ export default {
     let userId;
     ({ userId, applicationId } = arg0);
     if (null != applicationId) {
-      let obj = { userId, applicationId };
-      importDefault(9033).removeGameFriend(obj);
-      const obj3 = importDefault(9033);
+      let obj = { userId: null, applicationId: null };
+      obj[0] = userId;
+      obj[1] = applicationId;
+      importDefault(9057).removeGameFriend(obj);
+      const obj3 = importDefault(9057);
     } else {
-      obj = importDefault(8894);
-      obj = { location: tmp };
+      obj = importDefault(8918);
+      obj = { location: null };
+      obj[0] = tmp;
       obj.removeFriend(userId, obj);
     }
   },
@@ -95,102 +32,517 @@ export default {
     let userId;
     ({ userId, applicationId } = arg0);
     if (null != applicationId) {
-      let obj = { userId, applicationId };
-      let result = importDefault(9033).cancelGameFriendRequest(obj);
-      const obj3 = importDefault(9033);
+      let obj = { userId: null, applicationId: null };
+      obj[0] = userId;
+      obj[1] = applicationId;
+      let result = importDefault(9057).cancelGameFriendRequest(obj);
+      const obj3 = importDefault(9057);
     } else {
-      obj = importDefault(8894);
-      obj = { location: tmp };
+      obj = importDefault(8918);
+      obj = { location: null };
+      obj[0] = tmp;
       result = obj.cancelFriendRequest(userId, obj);
     }
     return result;
   },
-  acceptFriendRequest,
+  acceptFriendRequest(location) {
+    let applicationId;
+    let confirmStrangerRequest;
+    let userId;
+    ({ userId, applicationId, confirmStrangerRequest } = location);
+    if (confirmStrangerRequest === undefined) {
+      confirmStrangerRequest = false;
+    }
+    if (null != applicationId) {
+      let obj = { userId: null, applicationId: null };
+      obj[0] = userId;
+      obj[1] = applicationId;
+      let result = importDefault(9057).acceptGameFriendRequest(obj);
+      const obj4 = importDefault(9057);
+    } else {
+      obj = importDefault(8918);
+      obj = { userId: null, confirmStrangerRequest: null, context: null };
+      obj[0] = userId;
+      obj[1] = confirmStrangerRequest;
+      const obj1 = { location: null };
+      obj1[0] = location.location;
+      obj[2] = obj1;
+      result = obj.acceptFriendRequest(obj);
+    }
+    return result;
+  },
   maybeConfirmFriendRequestAccept(userId) {
     let AbortCodes;
-    let acceptFriendRequest;
-    let _isNativeReflectConstruct;
+    let _location2;
+    let applicationId2;
+    let upsertRelationship;
+    let closure_5;
+    let confirmStrangerRequest;
+    let userId2;
     userId = userId.userId;
     const applicationId = userId.applicationId;
     const _location = userId.location;
-    ({ onConfirm: _isNativeReflectConstruct, onCancel: AbortCodes, onFinally: acceptFriendRequest } = userId);
+    ({ onConfirm: upsertRelationship, onCancel: AbortCodes, onFinally: closure_5 } = userId);
     let obj = userId(_location[4]);
-    const result = obj.isSettingTeenByDefault(userId(_location[5]).SettingsDefaultFeature.FRIEND_REQUEST_STRANGER_CONFIRMATION);
-    const result1 = userId(_location[6]).isFriendRequestAlertsV2Enabled("maybeConfirmFriendRequestAccept");
+    let result = obj.isSettingTeenByDefault(userId(_location[5]).SettingsDefaultFeature.FRIEND_REQUEST_STRANGER_CONFIRMATION);
+    let obj1 = userId(_location[6]);
+    const result1 = obj1.isFriendRequestAlertsV2Enabled("maybeConfirmFriendRequestAccept");
     const isStrangerResult = stranger.isStranger(userId);
     if (null == applicationId) {
       if (result) {
         if (false !== isStrangerResult) {
           if (isStrangerResult) {
-            obj = {
-              onConfirm() {
-                        outer1_5({ userId, applicationId, location: _location, confirmStrangerRequest: true });
-                        if (null != callback) {
-                          callback();
-                        }
-                      },
-              onCancel() {
-                        if (null != callback2) {
-                          callback2();
-                        }
-                      },
-              onFinally() {
-                        if (null != callback3) {
-                          callback3();
-                        }
-                      }
+            obj = { onConfirm: null, onCancel: null, onFinally: null };
+            obj[0] = function onConfirm() {
+              if (null != applicationId) {
+                let obj = { userId: null, applicationId: null };
+                obj[0] = tmp;
+                obj[1] = tmp2;
+                const result = applicationId(_location[2]).acceptGameFriendRequest(obj);
+                const obj4 = applicationId(_location[2]);
+              } else {
+                obj = applicationId(_location[3]);
+                obj = { userId: null, confirmStrangerRequest: null, context: null };
+                obj[0] = tmp;
+                obj[1] = true;
+                const obj1 = { location: null };
+                obj1[0] = tmp3;
+                obj[2] = obj1;
+                obj.acceptFriendRequest(obj);
+              }
+              if (upsertRelationship != null) {
+                tmp10();
+              }
             };
-            const result2 = userId(_location[7]).openAcceptFriendRequestConfirmModal(obj);
-            const obj4 = userId(_location[7]);
+            obj[1] = function onCancel() {
+              if (closure_4 != null) {
+                tmp();
+              }
+            };
+            obj[2] = function onFinally() {
+              if (closure_5 != null) {
+                tmp();
+              }
+            };
+            const result2 = userId(tmp2[7]).openAcceptFriendRequestConfirmModal(obj);
+            const tmpResult = userId(tmp2[7]);
           } else {
-            obj = { userId, applicationId, location: _location };
-            const promise = acceptFriendRequest(obj);
-            const nextPromise = acceptFriendRequest(obj).then((arg0) => {
-              let tmp = outer1_6(arg0, { userId, applicationId, location: _location, onConfirm: callback, onCancel: closure_4 });
-              if (!tmp) {
-                tmp = null == callback;
+            obj = { userId: null, applicationId: null, location: null };
+            obj[0] = userId;
+            obj[1] = applicationId;
+            obj[2] = _location;
+            ({ userId: userId2, applicationId: applicationId2, confirmStrangerRequest, location: _location2 } = obj);
+            if (confirmStrangerRequest === undefined) {
+              confirmStrangerRequest = false;
+            }
+            if (null != applicationId2) {
+              let obj6 = applicationId(tmp2[2]);
+              obj1 = { userId: null, applicationId: null };
+              obj1[0] = userId2;
+              obj1[1] = applicationId2;
+              let result3 = obj6.acceptGameFriendRequest(obj1);
+            } else {
+              let obj3 = applicationId(tmp2[3]);
+              const obj2 = { userId: null, confirmStrangerRequest: null, context: null };
+              obj2[0] = userId2;
+              obj2[1] = confirmStrangerRequest;
+              obj3 = { location: null };
+              obj3[0] = _location2;
+              obj2[2] = obj3;
+              result3 = obj3.acceptFriendRequest(obj2);
+            }
+            const nextPromise = result3.then((body) => {
+              obj = { userId: obj, applicationId, location: _location, onConfirm: upsertRelationship, onCancel: closure_4 };
+              let code;
+              if (body != null) {
+                body = body.body;
+                if (body != null) {
+                  code = body.code;
+                }
               }
-              if (!tmp) {
-                callback();
+              if (code === outer1_4.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
+                obj = { type: "UPDATE_STRANGER_STATUS", userId: null, isStranger: true };
+                obj[1] = obj.userId;
+                applicationId(_location[8]).dispatch(obj);
+                const obj4 = applicationId(_location[8]);
+                obj = { onConfirm: null, onCancel: null };
+                obj[0] = function onConfirm() {
+                  let applicationId;
+                  let confirmStrangerRequest;
+                  let userId;
+                  let obj = {};
+                  const merged = Object.assign(obj);
+                  obj.confirmStrangerRequest = true;
+                  ({ userId, applicationId, confirmStrangerRequest } = obj);
+                  if (confirmStrangerRequest === undefined) {
+                    confirmStrangerRequest = false;
+                  }
+                  if (null != applicationId) {
+                    obj = { userId: null, applicationId: null };
+                    obj[0] = userId;
+                    obj[1] = applicationId;
+                    const result = outer1_1(outer1_2[2]).acceptGameFriendRequest(obj);
+                    const obj5 = outer1_1(outer1_2[2]);
+                  } else {
+                    let obj1 = outer1_1(outer1_2[3]);
+                    obj = { userId: null, confirmStrangerRequest: null, context: null };
+                    obj[0] = userId;
+                    obj[1] = confirmStrangerRequest;
+                    obj1 = { location: null };
+                    obj1[0] = obj.location;
+                    obj[2] = obj1;
+                    obj1.acceptFriendRequest(obj);
+                  }
+                  const onConfirm = obj.onConfirm;
+                  if (onConfirm != null) {
+                    onConfirm();
+                  }
+                };
+                obj[1] = function onCancel() {
+                  const onCancel = obj.onCancel;
+                  if (onCancel != null) {
+                    onCancel();
+                  }
+                };
+                const result = userId(_location[7]).openAcceptFriendRequestConfirmModal(obj);
+                let flag = true;
+                const obj6 = userId(_location[7]);
+              } else {
+                let ok;
+                if (body != null) {
+                  ok = body.ok;
+                }
+                flag = false;
+                if (ok) {
+                  let obj1 = applicationId(_location[8]);
+                  obj1 = { type: "UPDATE_STRANGER_STATUS", userId: null, isStranger: false };
+                  obj1[1] = obj.userId;
+                  obj1.dispatch(obj1);
+                  flag = false;
+                }
+              }
+              if (!flag) {
+                if (tmp != null) {
+                  tmp();
+                }
               }
             });
-            acceptFriendRequest(obj).then((arg0) => {
-              let tmp = outer1_6(arg0, { userId, applicationId, location: _location, onConfirm: callback, onCancel: closure_4 });
-              if (!tmp) {
-                tmp = null == callback;
+            result3.then((body) => {
+              obj = { userId: obj, applicationId, location: _location, onConfirm: upsertRelationship, onCancel: closure_4 };
+              let code;
+              if (body != null) {
+                body = body.body;
+                if (body != null) {
+                  code = body.code;
+                }
               }
-              if (!tmp) {
-                callback();
+              if (code === outer1_4.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
+                obj = { type: "UPDATE_STRANGER_STATUS", userId: null, isStranger: true };
+                obj[1] = obj.userId;
+                applicationId(_location[8]).dispatch(obj);
+                const obj4 = applicationId(_location[8]);
+                obj = { onConfirm: null, onCancel: null };
+                obj[0] = function onConfirm() {
+                  let applicationId;
+                  let confirmStrangerRequest;
+                  let userId;
+                  let obj = {};
+                  const merged = Object.assign(obj);
+                  obj.confirmStrangerRequest = true;
+                  ({ userId, applicationId, confirmStrangerRequest } = obj);
+                  if (confirmStrangerRequest === undefined) {
+                    confirmStrangerRequest = false;
+                  }
+                  if (null != applicationId) {
+                    obj = { userId: null, applicationId: null };
+                    obj[0] = userId;
+                    obj[1] = applicationId;
+                    const result = outer1_1(outer1_2[2]).acceptGameFriendRequest(obj);
+                    const obj5 = outer1_1(outer1_2[2]);
+                  } else {
+                    let obj1 = outer1_1(outer1_2[3]);
+                    obj = { userId: null, confirmStrangerRequest: null, context: null };
+                    obj[0] = userId;
+                    obj[1] = confirmStrangerRequest;
+                    obj1 = { location: null };
+                    obj1[0] = obj.location;
+                    obj[2] = obj1;
+                    obj1.acceptFriendRequest(obj);
+                  }
+                  const onConfirm = obj.onConfirm;
+                  if (onConfirm != null) {
+                    onConfirm();
+                  }
+                };
+                obj[1] = function onCancel() {
+                  const onCancel = obj.onCancel;
+                  if (onCancel != null) {
+                    onCancel();
+                  }
+                };
+                const result = userId(_location[7]).openAcceptFriendRequestConfirmModal(obj);
+                let flag = true;
+                const obj6 = userId(_location[7]);
+              } else {
+                let ok;
+                if (body != null) {
+                  ok = body.ok;
+                }
+                flag = false;
+                if (ok) {
+                  let obj1 = applicationId(_location[8]);
+                  obj1 = { type: "UPDATE_STRANGER_STATUS", userId: null, isStranger: false };
+                  obj1[1] = obj.userId;
+                  obj1.dispatch(obj1);
+                  flag = false;
+                }
               }
-            }).catch((arg0) => {
-              outer1_6(arg0, { userId, applicationId, location: _location, onConfirm: _isNativeReflectConstruct, onCancel: closure_4 });
+              if (!flag) {
+                if (tmp != null) {
+                  tmp();
+                }
+              }
+            }).catch((body) => {
+              obj = { userId: obj, applicationId, location: _location, onConfirm: upsertRelationship, onCancel: closure_4 };
+              let code;
+              if (body != null) {
+                body = body.body;
+                if (body != null) {
+                  code = body.code;
+                }
+              }
+              if (code === outer1_4.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
+                obj = { type: "UPDATE_STRANGER_STATUS", userId: null, isStranger: true };
+                obj[1] = obj.userId;
+                applicationId(_location[8]).dispatch(obj);
+                const obj4 = applicationId(_location[8]);
+                obj = { onConfirm: null, onCancel: null };
+                obj[0] = function onConfirm() {
+                  let applicationId;
+                  let confirmStrangerRequest;
+                  let userId;
+                  let obj = {};
+                  const merged = Object.assign(obj);
+                  obj.confirmStrangerRequest = true;
+                  ({ userId, applicationId, confirmStrangerRequest } = obj);
+                  if (confirmStrangerRequest === undefined) {
+                    confirmStrangerRequest = false;
+                  }
+                  if (null != applicationId) {
+                    obj = { userId: null, applicationId: null };
+                    obj[0] = userId;
+                    obj[1] = applicationId;
+                    const result = outer1_1(outer1_2[2]).acceptGameFriendRequest(obj);
+                    const obj5 = outer1_1(outer1_2[2]);
+                  } else {
+                    let obj1 = outer1_1(outer1_2[3]);
+                    obj = { userId: null, confirmStrangerRequest: null, context: null };
+                    obj[0] = userId;
+                    obj[1] = confirmStrangerRequest;
+                    obj1 = { location: null };
+                    obj1[0] = obj.location;
+                    obj[2] = obj1;
+                    obj1.acceptFriendRequest(obj);
+                  }
+                  const onConfirm = obj.onConfirm;
+                  if (onConfirm != null) {
+                    onConfirm();
+                  }
+                };
+                obj[1] = function onCancel() {
+                  const onCancel = obj.onCancel;
+                  if (onCancel != null) {
+                    onCancel();
+                  }
+                };
+                let result = userId(_location[7]).openAcceptFriendRequestConfirmModal(obj);
+                const obj6 = userId(_location[7]);
+              } else {
+                let ok;
+                if (body != null) {
+                  ok = body.ok;
+                }
+                if (ok) {
+                  let obj1 = applicationId(_location[8]);
+                  obj1 = { type: "UPDATE_STRANGER_STATUS", userId: null, isStranger: false };
+                  obj1[1] = obj.userId;
+                  obj1.dispatch(obj1);
+                }
+              }
             }).finally(() => {
-              if (null != callback3) {
-                callback3();
+              if (closure_5 != null) {
+                tmp();
               }
             });
-            const catchPromise = acceptFriendRequest(obj).then((arg0) => {
-              let tmp = outer1_6(arg0, { userId, applicationId, location: _location, onConfirm: callback, onCancel: closure_4 });
-              if (!tmp) {
-                tmp = null == callback;
+            const catchPromise = result3.then((body) => {
+              obj = { userId: obj, applicationId, location: _location, onConfirm: upsertRelationship, onCancel: closure_4 };
+              let code;
+              if (body != null) {
+                body = body.body;
+                if (body != null) {
+                  code = body.code;
+                }
               }
-              if (!tmp) {
-                callback();
+              if (code === outer1_4.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
+                obj = { type: "UPDATE_STRANGER_STATUS", userId: null, isStranger: true };
+                obj[1] = obj.userId;
+                applicationId(_location[8]).dispatch(obj);
+                const obj4 = applicationId(_location[8]);
+                obj = { onConfirm: null, onCancel: null };
+                obj[0] = function onConfirm() {
+                  let applicationId;
+                  let confirmStrangerRequest;
+                  let userId;
+                  let obj = {};
+                  const merged = Object.assign(obj);
+                  obj.confirmStrangerRequest = true;
+                  ({ userId, applicationId, confirmStrangerRequest } = obj);
+                  if (confirmStrangerRequest === undefined) {
+                    confirmStrangerRequest = false;
+                  }
+                  if (null != applicationId) {
+                    obj = { userId: null, applicationId: null };
+                    obj[0] = userId;
+                    obj[1] = applicationId;
+                    const result = outer1_1(outer1_2[2]).acceptGameFriendRequest(obj);
+                    const obj5 = outer1_1(outer1_2[2]);
+                  } else {
+                    let obj1 = outer1_1(outer1_2[3]);
+                    obj = { userId: null, confirmStrangerRequest: null, context: null };
+                    obj[0] = userId;
+                    obj[1] = confirmStrangerRequest;
+                    obj1 = { location: null };
+                    obj1[0] = obj.location;
+                    obj[2] = obj1;
+                    obj1.acceptFriendRequest(obj);
+                  }
+                  const onConfirm = obj.onConfirm;
+                  if (onConfirm != null) {
+                    onConfirm();
+                  }
+                };
+                obj[1] = function onCancel() {
+                  const onCancel = obj.onCancel;
+                  if (onCancel != null) {
+                    onCancel();
+                  }
+                };
+                const result = userId(_location[7]).openAcceptFriendRequestConfirmModal(obj);
+                let flag = true;
+                const obj6 = userId(_location[7]);
+              } else {
+                let ok;
+                if (body != null) {
+                  ok = body.ok;
+                }
+                flag = false;
+                if (ok) {
+                  let obj1 = applicationId(_location[8]);
+                  obj1 = { type: "UPDATE_STRANGER_STATUS", userId: null, isStranger: false };
+                  obj1[1] = obj.userId;
+                  obj1.dispatch(obj1);
+                  flag = false;
+                }
               }
-            }).catch((arg0) => {
-              outer1_6(arg0, { userId, applicationId, location: _location, onConfirm: _isNativeReflectConstruct, onCancel: closure_4 });
+              if (!flag) {
+                if (tmp != null) {
+                  tmp();
+                }
+              }
+            }).catch((body) => {
+              obj = { userId: obj, applicationId, location: _location, onConfirm: upsertRelationship, onCancel: closure_4 };
+              let code;
+              if (body != null) {
+                body = body.body;
+                if (body != null) {
+                  code = body.code;
+                }
+              }
+              if (code === outer1_4.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
+                obj = { type: "UPDATE_STRANGER_STATUS", userId: null, isStranger: true };
+                obj[1] = obj.userId;
+                applicationId(_location[8]).dispatch(obj);
+                const obj4 = applicationId(_location[8]);
+                obj = { onConfirm: null, onCancel: null };
+                obj[0] = function onConfirm() {
+                  let applicationId;
+                  let confirmStrangerRequest;
+                  let userId;
+                  let obj = {};
+                  const merged = Object.assign(obj);
+                  obj.confirmStrangerRequest = true;
+                  ({ userId, applicationId, confirmStrangerRequest } = obj);
+                  if (confirmStrangerRequest === undefined) {
+                    confirmStrangerRequest = false;
+                  }
+                  if (null != applicationId) {
+                    obj = { userId: null, applicationId: null };
+                    obj[0] = userId;
+                    obj[1] = applicationId;
+                    const result = outer1_1(outer1_2[2]).acceptGameFriendRequest(obj);
+                    const obj5 = outer1_1(outer1_2[2]);
+                  } else {
+                    let obj1 = outer1_1(outer1_2[3]);
+                    obj = { userId: null, confirmStrangerRequest: null, context: null };
+                    obj[0] = userId;
+                    obj[1] = confirmStrangerRequest;
+                    obj1 = { location: null };
+                    obj1[0] = obj.location;
+                    obj[2] = obj1;
+                    obj1.acceptFriendRequest(obj);
+                  }
+                  const onConfirm = obj.onConfirm;
+                  if (onConfirm != null) {
+                    onConfirm();
+                  }
+                };
+                obj[1] = function onCancel() {
+                  const onCancel = obj.onCancel;
+                  if (onCancel != null) {
+                    onCancel();
+                  }
+                };
+                let result = userId(_location[7]).openAcceptFriendRequestConfirmModal(obj);
+                const obj6 = userId(_location[7]);
+              } else {
+                let ok;
+                if (body != null) {
+                  ok = body.ok;
+                }
+                if (ok) {
+                  let obj1 = applicationId(_location[8]);
+                  obj1 = { type: "UPDATE_STRANGER_STATUS", userId: null, isStranger: false };
+                  obj1[1] = obj.userId;
+                  obj1.dispatch(obj1);
+                }
+              }
             });
           }
         }
       }
     }
-    const obj2 = userId(_location[6]);
-    return acceptFriendRequest({ userId, applicationId, location: _location, confirmStrangerRequest: true }).then(() => {
-      if (null != callback) {
-        callback();
+    if (null != applicationId) {
+      let obj4 = { userId: null, applicationId: null };
+      obj4[0] = userId;
+      obj4[1] = applicationId;
+      let result4 = applicationId(tmp2[2]).acceptGameFriendRequest(obj4);
+      const obj14 = applicationId(tmp2[2]);
+    } else {
+      let obj5 = { userId: null, confirmStrangerRequest: null, context: null };
+      obj5[0] = userId;
+      obj5[1] = true;
+      obj6 = { location: null };
+      obj6[0] = _location;
+      obj5[2] = obj6;
+      result4 = applicationId(tmp2[3]).acceptFriendRequest(obj5);
+      const obj11 = applicationId(tmp2[3]);
+    }
+    return result4.then(() => {
+      if (upsertRelationship != null) {
+        tmp();
       }
-      if (null != callback3) {
-        callback3();
+      if (closure_5 != null) {
+        tmp3();
       }
     });
   }

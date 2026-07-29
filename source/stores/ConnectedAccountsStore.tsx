@@ -1,184 +1,121 @@
-// Module ID: 4847
-// Function ID: 42209
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4848, 653, 4849, 1387, 4973, 566, 686, 2]
+// Module ID: 4869
+// Function ID: 4870
+// Name: set
+// Dependencies: [4870, 676, 4871, 1411, 4995, 589, 709, 2]
 
-// Module 4847 (_isNativeReflectConstruct)
-import ME from "ME";
-import getPlatformUserUrl from "getPlatformUserUrl";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import set from "_possibleConstructorReturn";
+// Module 4869 (set)
+import toString from "toString";
+import { Store } from "initialize";
+import set from "getPlatformUserUrl";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function updateAccounts(accounts) {
-  let closure_11 = accounts.filter((type) => {
-    let isSupportedResult = !outer1_9.has(type.type);
-    if (isSupportedResult) {
-      isSupportedResult = outer1_1(outer1_2[7]).isSupported(type.type);
-      const obj = outer1_1(outer1_2[7]);
-    }
-    return isSupportedResult;
-  });
-  let closure_12 = accounts.filter((type) => outer1_9.has(type.type));
-  let c10 = false;
-}
-let items = [require("ME").PlatformTypes.CONTACTS];
+const items = [require("ME").PlatformTypes.CONTACTS];
 let set = new Set(items);
-let c10 = true;
-let closure_11 = [];
-let closure_12 = [];
-let closure_13 = {};
+let c5 = true;
+let closure_6 = [];
+let closure_7 = [];
+let closure_8 = {};
 const set1 = new Set();
-let closure_15 = {};
-let closure_16 = {};
-let tmp4 = ((Store) => {
-  class ConnectedAccountsStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, ConnectedAccountsStore);
-      obj = outer1_6(ConnectedAccountsStore);
-      tmp2 = outer1_5;
-      if (outer1_17()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+let closure_10 = {};
+let closure_11 = {};
+class ConnectedAccountsStore extends Store {
+}
+const prototype = ConnectedAccountsStore.prototype;
+prototype["isJoining"] = function isJoining(id) {
+  return table[id] || false;
+};
+prototype["joinErrorMessage"] = function joinErrorMessage(arg0) {
+  return table3[arg0];
+};
+prototype["isFetching"] = function isFetching() {
+  return c5;
+};
+prototype["getAccounts"] = function getAccounts() {
+  return closure_6;
+};
+prototype["getLocalAccounts"] = function getLocalAccounts() {
+  return closure_7;
+};
+prototype["getAccount"] = function getAccount(accountId, SPOTIFY) {
+  let closure_0 = accountId;
+  let closure_1 = SPOTIFY;
+  return closure_6.find((id) => {
+    let tmp2 = null == closure_0 || id.id === tmp;
+    if (tmp2) {
+      tmp2 = id.type === closure_1;
     }
-  }
-  callback2(ConnectedAccountsStore, Store);
-  let obj = {
-    key: "isJoining",
-    value(arg0) {
-      return outer1_13[arg0] || false;
-    }
-  };
-  const items = [obj, , , , , , , , , , ];
-  obj = {
-    key: "joinErrorMessage",
-    value(arg0) {
-      return outer1_16[arg0];
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isFetching",
-    value() {
-      return outer1_10;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getAccounts",
-    value() {
-      return outer1_11;
-    }
-  };
-  items[4] = {
-    key: "getLocalAccounts",
-    value() {
-      return outer1_12;
-    }
-  };
-  items[5] = {
-    key: "getAccount",
-    value(arg0, arg1) {
-      let closure_0 = arg0;
-      let closure_1 = arg1;
-      return outer1_11.find((id) => {
-        let tmp = null == closure_0;
-        if (!tmp) {
-          tmp = id.id === closure_0;
-        }
-        if (tmp) {
-          tmp = id.type === closure_1;
-        }
-        return tmp;
-      });
-    }
-  };
-  items[6] = {
-    key: "getLocalAccount",
-    value(arg0) {
-      let closure_0 = arg0;
-      return outer1_12.find((type) => type.type === closure_0);
-    }
-  };
-  items[7] = {
-    key: "isSuggestedAccountType",
-    value(arg0) {
-      return outer1_15[arg0] || false;
-    }
-  };
-  items[8] = {
-    key: "addPendingAuthorizedState",
-    value(arg0) {
-      outer1_14.add(arg0);
-    }
-  };
-  items[9] = {
-    key: "deletePendingAuthorizedState",
-    value(arg0) {
-      outer1_14.delete(arg0);
-    }
-  };
-  items[10] = {
-    key: "hasPendingAuthorizedState",
-    value(arg0) {
-      return outer1_14.has(arg0);
-    }
-  };
-  return callback(ConnectedAccountsStore, items);
-})(require("initialize").Store);
-tmp4.displayName = "ConnectedAccountsStore";
-tmp4 = new tmp4(require("dispatcher"), {
+    return tmp2;
+  });
+};
+prototype["getLocalAccount"] = function getLocalAccount(CONTACTS) {
+  let closure_0 = CONTACTS;
+  return closure_7.find((type) => type.type === closure_0);
+};
+prototype["isSuggestedAccountType"] = function isSuggestedAccountType(arg0) {
+  return table2[arg0] || false;
+};
+prototype["addPendingAuthorizedState"] = function addPendingAuthorizedState(state) {
+  set1.add(state);
+};
+prototype["deletePendingAuthorizedState"] = function deletePendingAuthorizedState(arg0) {
+  set1.delete(arg0);
+};
+prototype["hasPendingAuthorizedState"] = function hasPendingAuthorizedState(arg0) {
+  return set1.has(arg0);
+};
+ConnectedAccountsStore.displayName = "ConnectedAccountsStore";
+const connectedAccountsStore = new ConnectedAccountsStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(connectedAccounts) {
     connectedAccounts = connectedAccounts.connectedAccounts;
-    updateAccounts(connectedAccounts.map((arg0) => new outer1_8(arg0)));
+    const mapped = connectedAccounts.map((arg0) => new toString(arg0));
+    let closure_6 = mapped.filter((type) => {
+      const hasItem = set.has(type.type);
+      let isSupportedResult = !hasItem;
+      if (!hasItem) {
+        isSupportedResult = callback(table[2]).isSupported(type.type);
+        const obj = callback(table[2]);
+      }
+      return isSupportedResult;
+    });
+    let closure_7 = mapped.filter((type) => set.has(type.type));
+    let c5 = false;
   },
   USER_CONNECTIONS_UPDATE: function handleConnectionsUpdate(local) {
     if (local.local) {
       if (null != local.accounts) {
         const accounts = local.accounts;
-        updateAccounts(accounts.map((integrations) => {
+        const mapped = accounts.map((integrations) => {
           let obj = {};
           let merged = Object.assign(integrations);
           integrations = integrations.integrations;
-          obj["integrations"] = integrations.map((guild) => {
+          obj.integrations = integrations.map((guild) => {
             let obj = {};
             const merged = Object.assign(guild);
             obj = {};
             const merged1 = Object.assign(guild.guild);
-            obj["features"] = [];
-            obj["guild"] = outer2_0(outer2_2[8]).fromGuildBasic(obj);
+            obj.features = [];
+            obj.guild = callback(table[3]).fromGuildBasic(obj);
             return obj;
           });
-          return new outer1_8(obj);
-        }));
+          return new toString(obj);
+        });
+        let closure_6 = mapped.filter((type) => {
+          const hasItem = set.has(type.type);
+          let isSupportedResult = !hasItem;
+          if (!hasItem) {
+            isSupportedResult = callback(table[2]).isSupported(type.type);
+            const obj = callback(table[2]);
+          }
+          return isSupportedResult;
+        });
+        let closure_7 = mapped.filter((type) => set.has(type.type));
+        let c5 = false;
       }
     }
-    const response = importDefault(4973).fetch();
+    const response = importDefault(4995).fetch();
   },
   USER_CONNECTIONS_INTEGRATION_JOINING: function handleJoining(integrationId) {
-    closure_13[integrationId.integrationId] = integrationId.joining;
+    closure_8[integrationId.integrationId] = integrationId.joining;
   },
   USER_CONNECTION_UPDATE: function handleUserConnectionUpdate(arg0) {
     let accessToken;
@@ -186,7 +123,7 @@ tmp4 = new tmp4(require("dispatcher"), {
     let require;
     let revoked;
     ({ platformType: require, id: importDefault, revoked, accessToken } = arg0);
-    const found = closure_11.find((id) => {
+    const found = closure_6.find((id) => {
       let tmp = id.id === closure_1;
       if (tmp) {
         tmp = id.type === closure_0;
@@ -209,7 +146,7 @@ tmp4 = new tmp4(require("dispatcher"), {
     if (undefined !== error.error) {
       str = error.error;
     }
-    closure_16[error.integrationId] = str;
+    closure_11[error.integrationId] = str;
   },
   USER_CONNECTIONS_CALLBACK: function handleUserConnectionsCallback(arg0) {
     let code;
@@ -217,9 +154,9 @@ tmp4 = new tmp4(require("dispatcher"), {
     let provider;
     let state;
     ({ code, state, openid_params, provider } = arg0);
-    importDefault(4973).callback(provider, { code, state, openid_params });
+    importDefault(4995).callback(provider, { code, state, openid_params });
   }
 });
-let result = set.fileFinishedImporting("stores/ConnectedAccountsStore.tsx");
+const result = set.fileFinishedImporting("stores/ConnectedAccountsStore.tsx");
 
-export default tmp4;
+export default connectedAccountsStore;

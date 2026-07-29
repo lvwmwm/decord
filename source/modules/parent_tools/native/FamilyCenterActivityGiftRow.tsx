@@ -1,24 +1,24 @@
-// Module ID: 13915
-// Function ID: 106419
+// Module ID: 13936
+// Function ID: 13937
 // Name: FamilyCenterActivityGiftRow
-// Dependencies: [31, 27, 33, 4165, 689, 7930, 13903, 13912, 13914, 4004, 13913, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 7955, 13924, 13933, 13935, 4028, 13934, 4185, 2]
 // Exports: default
 
-// Module 13915 (FamilyCenterActivityGiftRow)
-import "result";
+// Module 13936 (FamilyCenterActivityGiftRow)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "row", alignItems: "center", borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderBottomWidth: 1, paddingVertical: 12 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.textContainer = { display: "flex", flexDirection: "column", flexShrink: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: null, textContainer: null };
+createCacheKey = { display: "flex", flexDirection: "row", alignItems: "center", borderBottomColor: require("Themes").colors.BORDER_SUBTLE, borderBottomWidth: 1, paddingVertical: 12 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { display: "flex", flexDirection: "column", flexShrink: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityGiftRow.tsx");
 
 export default function FamilyCenterActivityGiftRow(arg0) {
@@ -33,16 +33,16 @@ export default function FamilyCenterActivityGiftRow(arg0) {
   let subscriptionPlanId;
   ({ skuId, subscriptionPlanId } = arg0);
   ({ price, gifterUserId, claimed, offeredAt, claimedAt } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  const product = importDefault(7930)(skuId).product;
-  let obj = require(13903) /* useSelectedTeenUser */;
+  const tmp = createCacheKey();
+  let product = importDefault(7955)(skuId).product;
+  let obj = require(13924) /* useSelectedTeenUser */;
   const teenUserForId = obj.useTeenUserForId(gifterUserId);
-  let obj1 = require(13912) /* getCollectibleTypeName */;
-  let tmp3 = null;
-  if (null != product) {
-    tmp3 = product;
+  let obj1 = require(13933) /* getCollectibleTypeName */;
+  let tmp7 = product;
+  if (product == null) {
+    tmp7 = null;
   }
-  const purchaseDisplayInfo = obj1.getPurchaseDisplayInfo(tmp3, subscriptionPlanId);
+  const purchaseDisplayInfo = obj1.getPurchaseDisplayInfo(tmp7, subscriptionPlanId);
   ({ displayName, isSubscription } = purchaseDisplayInfo);
   if (null != skuId) {
     if (!isSubscription) {
@@ -54,38 +54,41 @@ export default function FamilyCenterActivityGiftRow(arg0) {
   if (null == displayName) {
     return null;
   } else {
-    obj = { claimed, price };
+    obj = { claimed: null, price: null, gifterName: null, offeredAt: null, claimedAt: null };
+    obj[0] = claimed;
+    obj[1] = price;
     let name = null;
     if (null != teenUserForId) {
-      let obj2 = importDefault(4004);
-      name = obj2.getName(teenUserForId);
+      let tmp2Result = tmp2(4028);
+      name = tmp2Result.getName(teenUserForId);
     }
-    obj.gifterName = name;
-    obj.offeredAt = offeredAt;
-    obj.claimedAt = claimedAt;
-    obj = { style: tmp.container };
-    const giftSubtext = require(13914) /* formatGiftDate */.getGiftSubtext(obj);
-    obj1 = { displayName };
-    let tmp15 = null;
-    const obj9 = require(13914) /* formatGiftDate */;
-    const tmp10 = View;
-    const tmp11 = callback;
-    const tmp9 = callback2;
-    if (null != product) {
-      tmp15 = product;
+    obj[2] = name;
+    obj[3] = offeredAt;
+    obj[4] = claimedAt;
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    const giftSubtext = tmp5(13935).getGiftSubtext(obj);
+    obj1 = { displayName: null, product: null, isSubscription: null, subscriptionPlanId: null };
+    obj1[0] = displayName;
+    tmp2Result = tmp2(13934);
+    if (product == null) {
+      product = null;
     }
-    obj1.product = tmp15;
-    obj1.isSubscription = isSubscription;
-    obj1.subscriptionPlanId = subscriptionPlanId;
-    const items = [tmp11(importDefault(13913), obj1), ];
-    obj2 = { style: tmp.textContainer };
-    const obj3 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: displayName };
-    const items1 = [callback(require(4161) /* Text */.Text, obj3), ];
-    const obj4 = { variant: "text-xs/medium", color: "text-muted", children: giftSubtext };
-    items1[1] = callback(require(4161) /* Text */.Text, obj4);
-    obj2.children = items1;
-    items[1] = callback2(View, obj2);
-    obj.children = items;
-    return tmp9(tmp10, obj);
+    obj1[1] = product;
+    obj1[2] = isSubscription;
+    obj1[3] = subscriptionPlanId;
+    const items = [closure_4(tmp2Result, obj1), ];
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.textContainer;
+    const obj3 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: null };
+    obj3[4] = displayName;
+    const items1 = [closure_4(tmp5(4185).Text, obj3), ];
+    const obj4 = { variant: "text-xs/medium", color: "text-muted", children: null };
+    obj4[2] = giftSubtext;
+    items1[1] = closure_4(tmp5(4185).Text, obj4);
+    obj2[1] = items1;
+    items[1] = closure_5(View, obj2);
+    obj[1] = items;
+    return closure_5(View, obj);
   }
 };

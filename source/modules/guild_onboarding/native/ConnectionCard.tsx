@@ -1,12 +1,12 @@
-// Module ID: 5495
-// Function ID: 46797
+// Module ID: 5513
+// Function ID: 5514
 // Name: ConnectionCard
-// Dependencies: [31, 5094, 33, 5496, 5513, 2]
+// Dependencies: [19, 5116, 21, 5514, 5531, 2]
 // Exports: default
 
-// Module 5495 (ConnectionCard)
-import "result";
-import { OnboardingConnectionType } from "_createForOfIteratorHelperLoose";
+// Module 5513 (ConnectionCard)
+import "noop";
+import { OnboardingConnectionType } from "serverPromptToClientPrompt";
 import { jsx } from "jsxProd";
 
 const result = require("jsxProd").fileFinishedImporting("modules/guild_onboarding/native/ConnectionCard.tsx");
@@ -18,11 +18,17 @@ export default function ConnectionCard(arg0) {
   ({ connection, guildId, location: _location } = arg0);
   const connection_type = connection.connection_type;
   if (OnboardingConnectionType.APPLICATION === connection_type) {
-    let obj = { connection, guildId, location: _location };
-    return jsx(importDefault(5496), { connection, guildId, location: _location });
-  } else if (OnboardingConnectionType.PROVIDER_CONNECTED_ACCOUNT === connection_type) {
-    obj = { connection, guildId, location: _location };
-    return jsx(importDefault(5513), { connection, guildId, location: _location });
+    let obj = { connection: null, guildId: null, location: null };
+    obj[0] = connection;
+    obj[1] = guildId;
+    obj[2] = _location;
+    return jsx(importDefault(5514), { connection: null, guildId: null, location: null });
+  } else if (tmp.PROVIDER_CONNECTED_ACCOUNT === connection_type) {
+    obj = { connection: null, guildId: null, location: null };
+    obj[0] = connection;
+    obj[1] = guildId;
+    obj[2] = _location;
+    return jsx(importDefault(5531), { connection: null, guildId: null, location: null });
   } else {
     const connection_type2 = connection.connection_type;
     return null;

@@ -1,13 +1,13 @@
-// Module ID: 13120
-// Function ID: 101244
+// Module ID: 13143
+// Function ID: 13144
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [42, 2]
+// Dependencies: [65, 2]
 
-// Module 13120 (__INTERNAL_VIEW_CONFIG)
-import get from "get";
+// Module 13143 (__INTERNAL_VIEW_CONFIG)
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 const obj = { uiViewClassName: "DCDLocalImageThumbnail", validAttributes: { localImageSource: true } };
-const value = get.get("DCDLocalImageThumbnail", () => obj);
+const value = setRuntimeConfigProvider.get("DCDLocalImageThumbnail", () => obj);
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/LocalImageThumbnailNativeComponent.tsx");
 
 export default value;

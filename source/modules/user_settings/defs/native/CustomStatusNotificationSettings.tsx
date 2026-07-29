@@ -1,53 +1,53 @@
-// Module ID: 14426
-// Function ID: 110274
+// Module ID: 14448
+// Function ID: 14449
 // Name: onChange
-// Dependencies: [7733, 653, 3805, 3838, 1282, 675, 10099, 1212, 2]
+// Dependencies: [7756, 676, 3829, 3862, 1306, 698, 10120, 1236, 2]
 // Exports: onChange
 
-// Module 14426 (onChange)
+// Module 14448 (onChange)
 import { AnalyticEvents } from "ME";
 import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags";
 import createToggle from "createToggle";
 
 function onChange(custom_status_push_notifications) {
-  const CustomStatusPushNotifications = require(3838) /* explicitContentFromProto */.CustomStatusPushNotifications;
-  const CustomStatusPushNotificationType = require(1282) /* _callSuper */.CustomStatusPushNotificationType;
+  const CustomStatusPushNotifications = require(3862) /* explicitContentFromProto */.CustomStatusPushNotifications;
+  const CustomStatusPushNotificationType = require(1306) /* create */.CustomStatusPushNotificationType;
   CustomStatusPushNotifications.updateSetting(custom_status_push_notifications ? CustomStatusPushNotificationType.STATUS_PUSH_ENABLED : CustomStatusPushNotificationType.STATUS_PUSH_DISABLED);
-  let obj = importDefault(675);
+  let obj = importDefault(698);
   obj = { update_type: constants.ACCOUNT, custom_status_push_notifications };
   obj.track(AnalyticEvents.NOTIFICATION_SETTINGS_UPDATED, obj);
 }
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.PTtxi9);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.PTtxi9);
   },
   useDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["/+OQEs"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["/+OQEs"]);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue() {
-    const CustomStatusPushNotifications = require(3838) /* explicitContentFromProto */.CustomStatusPushNotifications;
+    const CustomStatusPushNotifications = require(3862) /* explicitContentFromProto */.CustomStatusPushNotifications;
     const setting = CustomStatusPushNotifications.useSetting();
-    return setting !== require(1282) /* _callSuper */.CustomStatusPushNotificationType.STATUS_PUSH_DISABLED;
+    return setting !== require(1306) /* create */.CustomStatusPushNotificationType.STATUS_PUSH_DISABLED;
   },
   onValueChange: onChange
 });
 let obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.PTtxi9);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.PTtxi9);
   },
   useDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["/+OQEs"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["/+OQEs"]);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue() {
-    const CustomStatusPushNotifications = require(3838) /* explicitContentFromProto */.CustomStatusPushNotifications;
+    const CustomStatusPushNotifications = require(3862) /* explicitContentFromProto */.CustomStatusPushNotifications;
     const setting = CustomStatusPushNotifications.useSetting();
-    return setting !== require(1282) /* _callSuper */.CustomStatusPushNotificationType.STATUS_PUSH_DISABLED;
+    return setting !== require(1306) /* create */.CustomStatusPushNotificationType.STATUS_PUSH_DISABLED;
   },
   onValueChange: onChange
 };

@@ -1,63 +1,63 @@
-// Module ID: 10309
-// Function ID: 79517
+// Module ID: 10330
+// Function ID: 10331
 // Name: NotificationSettingsMessageUnreadActionSheet
-// Dependencies: [31, 27, 4361, 33, 4165, 689, 5221, 10306, 4161, 1212, 7632, 7631, 2]
+// Dependencies: [19, 17, 4386, 21, 4189, 712, 5243, 10327, 4185, 1236, 7655, 7654, 2]
 // Exports: default
 
-// Module 10309 (NotificationSettingsMessageUnreadActionSheet)
-import "result";
+// Module 10330 (NotificationSettingsMessageUnreadActionSheet)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { UnreadSetting } from "ReadStateTypes";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose.sheet = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.header = { padding: 24, paddingTop: 0 };
-_createForOfIteratorHelperLoose.content = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, padding: 16 };
-_createForOfIteratorHelperLoose.form = { marginTop: 8, marginBottom: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER, padding: 16 };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { sheet: null, header: null, content: null, form: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { padding: 24, paddingTop: 0 };
+createCacheKey[2] = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, padding: 16 };
+createCacheKey[3] = { marginTop: 8, marginBottom: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER, padding: 16 };
 const result = require("ReadStateTypes").fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsMessageUnreadActionSheet.tsx");
 
 export default function NotificationSettingsMessageUnreadActionSheet(defaultValue) {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { startExpanded: true, backgroundStyles: tmp.sheet };
-  obj = { style: tmp.header };
+  const tmp = createCacheKey();
+  let obj = { startExpanded: true, backgroundStyles: tmp.sheet, children: null };
+  obj = { style: tmp.header, children: null };
   obj = { unreadSetting: defaultValue.value };
-  obj.children = callback(importDefault(10306), obj);
+  obj[1] = callback(importDefault(10327), obj);
   const items = [callback(View, obj), ];
-  const obj1 = { style: tmp.content };
-  const obj2 = { variant: "text-sm/semibold" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl.string(require(1212) /* getSystemLocale */.t.Tqd1Af);
-  const items1 = [callback(require(4161) /* Text */.Text, obj2), , ];
-  const obj3 = { variant: "text-xs/medium", color: "text-muted" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl2.string(require(1212) /* getSystemLocale */.t.RpQgm5);
-  items1[1] = callback(require(4161) /* Text */.Text, obj3);
-  const obj4 = { style: tmp.form };
-  const obj5 = { defaultValue: defaultValue.value, onChange: defaultValue.onChange, hasIcons: false };
-  const obj6 = {};
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj6.label = intl3.string(require(1212) /* getSystemLocale */.t["HVah/3"]);
-  obj6.value = UnreadSetting.ALL_MESSAGES;
-  const items2 = [callback(require(7631) /* TableRadioRow */.TableRadioRow, obj6), ];
-  const obj7 = { subLabel: defaultValue.disabledMentionOnlyWithReason, disabled: null != defaultValue.disabledMentionOnlyWithReason };
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj7.label = intl4.string(require(1212) /* getSystemLocale */.t["tu+ZWJ"]);
-  obj7.value = UnreadSetting.ONLY_MENTIONS;
-  items2[1] = callback(require(7631) /* TableRadioRow */.TableRadioRow, obj7);
-  obj5.children = items2;
-  obj4.children = callback2(require(7632) /* context */.TableRadioGroup, obj5);
+  const obj1 = { style: tmp.content, children: null };
+  const obj2 = { variant: "text-sm/semibold", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj2[1] = intl.string(require(1236) /* getSystemLocale */.t.Tqd1Af);
+  const items1 = [callback(require(4185) /* Text */.Text, obj2), , ];
+  const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj3[2] = intl2.string(require(1236) /* getSystemLocale */.t.RpQgm5);
+  items1[1] = callback(require(4185) /* Text */.Text, obj3);
+  const obj4 = { style: tmp.form, children: null };
+  const obj5 = { defaultValue: defaultValue.value, onChange: defaultValue.onChange, hasIcons: false, children: null };
+  const obj6 = { label: null, value: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj6[0] = intl3.string(require(1236) /* getSystemLocale */.t["HVah/3"]);
+  obj6[1] = UnreadSetting.ALL_MESSAGES;
+  const items2 = [callback(require(7654) /* TableRadioRow */.TableRadioRow, obj6), ];
+  const obj7 = { subLabel: defaultValue.disabledMentionOnlyWithReason, disabled: null != defaultValue.disabledMentionOnlyWithReason, label: null, value: null };
+  const intl4 = require(1236) /* getSystemLocale */.intl;
+  obj7[2] = intl4.string(require(1236) /* getSystemLocale */.t["tu+ZWJ"]);
+  obj7[3] = UnreadSetting.ONLY_MENTIONS;
+  items2[1] = callback(require(7654) /* TableRadioRow */.TableRadioRow, obj7);
+  obj5[3] = items2;
+  obj4[1] = callback2(require(7655) /* context */.TableRadioGroup, obj5);
   items1[2] = callback(View, obj4);
-  obj1.children = items1;
+  obj1[1] = items1;
   items[1] = callback2(View, obj1);
-  obj.children = items;
-  return callback2(require(5221) /* Background */.BottomSheet, obj);
+  obj[2] = items;
+  return callback2(require(5243) /* Background */.BottomSheet, obj);
 };

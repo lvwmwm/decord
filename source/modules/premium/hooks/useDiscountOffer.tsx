@@ -1,82 +1,149 @@
-// Module ID: 6240
-// Function ID: 55788
+// Module ID: 6260
+// Function ID: 6261
 // Name: useDiscountOffer
-// Dependencies: [57, 31, 1850, 6191, 1852, 566, 3811, 4050, 2]
+// Dependencies: [32, 19, 1874, 6211, 1876, 589, 3835, 4074, 2]
 // Exports: default
 
-// Module 6240 (useDiscountOffer)
+// Module 6260 (useDiscountOffer)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import noop from "noop";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import emitChanges from "emitChanges";
 import GuildFeatures from "GuildFeatures";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: closure_6, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: closure_7 } = GuildFeatures);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/hooks/useDiscountOffer.tsx");
+({ PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: closure_6, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: error } = GuildFeatures);
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/premium/hooks/useDiscountOffer.tsx");
 
 export default function useDiscountOffer(arg0, arg1) {
   const _require = arg0;
-  const items = [_createForOfIteratorHelperLoose];
+  const items = [emitChanges];
   stateFromStores = _require(stateFromStores[5]).useStateFromStores(items, () => outer1_5.getUserDiscountOffer(closure_0));
-  let hasExpiredResult;
-  if (null != stateFromStores) {
-    hasExpiredResult = stateFromStores.hasExpired();
+  let flag;
+  if (stateFromStores != null) {
+    flag = stateFromStores.hasExpired();
   }
-  const tmp4 = first(React.useState(null != hasExpiredResult && hasExpiredResult), 2);
-  first = tmp4[0];
-  React = tmp4[1];
+  if (flag == null) {
+    flag = false;
+  }
+  const tmp3 = first(React.useState(flag), 2);
+  first = tmp3[0];
+  React = tmp3[1];
   const obj = _require(stateFromStores[5]);
-  const tmp3 = null != hasExpiredResult && hasExpiredResult;
-  const items1 = [_isNativeReflectConstruct];
+  const obj3 = React;
+  const tmp = _require;
+  const tmp2 = stateFromStores;
+  const items1 = [mergeGuildAvatar];
   const items2 = [first, stateFromStores];
-  const stateFromStores1 = _require(stateFromStores[5]).useStateFromStores(items1, () => callback(stateFromStores[6]).isPremium(outer1_4.getCurrentUser()));
-  const effect = React.useEffect(() => {
-    if (null != startTimer) {
-      if (startTimer.hasAcknowledged()) {
-        const Timeout = callback(stateFromStores[7]).Timeout;
-        const prototype = Timeout.prototype;
-        const timeout = new Timeout();
-        startTimer = function startTimer() {
-          if (null != startTimer) {
-            if (startTimer.hasAcknowledged()) {
-              let num = 0;
-              if (null != startTimer.expiresAt) {
-                const expiresAt = startTimer.expiresAt;
-                const _Date = Date;
-                const time = expiresAt.getTime();
-                num = time - Date.now();
-              }
-              if (null != timeout) {
-                timeout.start(num, () => {
-                  if (!outer2_2) {
-                    if (startTimer.hasExpired()) {
-                      outer2_3(true);
-                    }
-                  }
-                  outer1_1();
-                });
-              }
+  const stateFromStores1 = _require(stateFromStores[5]).useStateFromStores(items1, () => callback(stateFromStores[6]).isPremium(currentUser.getCurrentUser()));
+  const effect = obj3.useEffect(() => {
+    let hasAcknowledgedResult;
+    if (stateFromStores != null) {
+      hasAcknowledgedResult = obj.hasAcknowledged();
+    }
+    if (hasAcknowledgedResult) {
+      const timeout = new callback(stateFromStores[7]).Timeout();
+      let hasAcknowledgedResult1;
+      if (obj != null) {
+        hasAcknowledgedResult1 = obj.hasAcknowledged();
+      }
+      if (hasAcknowledgedResult1) {
+        let num = 0;
+        if (null != obj.expiresAt) {
+          const expiresAt = obj.expiresAt;
+          const _Date = Date;
+          const time = expiresAt.getTime();
+          num = time - Date.now();
+        }
+        timeout.start(num, () => {
+          if (!outer1_2) {
+            if (outer1_1.hasExpired()) {
+              outer1_3(true);
             }
           }
-        };
-        startTimer();
-        return () => timeout.stop();
+          let obj = outer1_1;
+          let hasAcknowledgedResult;
+          if (outer1_1 != null) {
+            hasAcknowledgedResult = obj.hasAcknowledged();
+          }
+          if (hasAcknowledgedResult) {
+            let num = 0;
+            if (null != obj.expiresAt) {
+              let expiresAt = obj.expiresAt;
+              let _Date = Date;
+              let time = expiresAt.getTime();
+              num = time - Date.now();
+            }
+            if (closure_0 != null) {
+              obj2.start(num, () => {
+                if (!outer1_2) {
+                  if (outer1_1.hasExpired()) {
+                    outer1_3(true);
+                  }
+                }
+                let obj = outer1_1;
+                let hasAcknowledgedResult;
+                if (outer1_1 != null) {
+                  hasAcknowledgedResult = obj.hasAcknowledged();
+                }
+                if (hasAcknowledgedResult) {
+                  let num = 0;
+                  if (null != obj.expiresAt) {
+                    let expiresAt = obj.expiresAt;
+                    let _Date = Date;
+                    let time = expiresAt.getTime();
+                    num = time - Date.now();
+                  }
+                  if (closure_0 != null) {
+                    obj2.start(num, () => {
+                      if (!outer1_2) {
+                        if (outer1_1.hasExpired()) {
+                          outer1_3(true);
+                        }
+                      }
+                      let obj = outer1_1;
+                      let hasAcknowledgedResult;
+                      if (outer1_1 != null) {
+                        hasAcknowledgedResult = obj.hasAcknowledged();
+                      }
+                      if (hasAcknowledgedResult) {
+                        let num = 0;
+                        if (null != obj.expiresAt) {
+                          let expiresAt = obj.expiresAt;
+                          let _Date = Date;
+                          let time = expiresAt.getTime();
+                          num = time - Date.now();
+                        }
+                        if (closure_0 != null) {
+                          obj2.start(num, () => { ... });
+                        }
+                        obj2 = closure_0;
+                      }
+                    });
+                  }
+                  obj2 = closure_0;
+                }
+              });
+            }
+            obj2 = closure_0;
+          }
+        });
       }
+      return () => timeout.stop();
     }
   }, items2);
-  let tmp8 = null;
+  let tmp7 = null;
   if (!first) {
     if (stateFromStores1) {
       if (!arg1) {
         if (arg0 !== closure_6) {
-          tmp8 = null;
+          tmp7 = null;
         }
       }
     }
-    tmp8 = stateFromStores;
+    tmp7 = stateFromStores;
   }
-  return tmp8;
+  return tmp7;
 };

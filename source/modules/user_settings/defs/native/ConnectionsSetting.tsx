@@ -1,15 +1,15 @@
-// Module ID: 13963
-// Function ID: 106714
+// Module ID: 13984
+// Function ID: 13985
 // Name: route
-// Dependencies: [653, 10099, 1212, 13964, 13966, 2]
+// Dependencies: [676, 10120, 1236, 13985, 13987, 2]
 
-// Module 13963 (route)
+// Module 13984 (route)
 import createToggle from "createToggle";
 
 obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["3fe7U5"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["3fe7U5"]);
   },
   parent: null,
   IconComponent: require("PuzzlePieceIcon").PuzzlePieceIcon,
@@ -18,7 +18,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.CONNECTIONS,
   getComponent() {
-    return require(13966) /* onPress */.default;
+    return require(13987) /* onPress */.default;
   }
 };
 const route = createToggle.createRoute(obj);

@@ -1,20 +1,15 @@
-// Module ID: 6071
-// Function ID: 54256
-// Name: updateOptionStates
-// Dependencies: [1194, 6072, 653, 44, 5686, 686, 507, 21, 1882, 2]
-// Exports: fetchCommand, fetchCommands, fetchCommandsForApplication, performAutocomplete, setActiveCommand, setAppLauncherActiveCommand, setPreferredCommandId, updateApplicationGuildCommandPermissions, updateChannelState, updateOptionValidationStates, updateRegistry
+// Module ID: 6089
+// Function ID: 6090
+// Name: setActiveCommand
+// Dependencies: [1218, 6090, 676, 38, 5704, 709, 530, 11, 1906, 2]
+// Exports: fetchCommand, fetchCommands, fetchCommandsForApplication, performAutocomplete, setActiveCommand, setAppLauncherActiveCommand, setPreferredCommandId, updateApplicationGuildCommandPermissions, updateChannelState, updateOptionStates, updateOptionValidationStates, updateRegistry
 
-// Module 6071 (updateOptionStates)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 6089 (setActiveCommand)
+import fetchFingerprint from "fetchFingerprint";
+import handleInit from "handleInit";
 import { Endpoints } from "ME";
 
 let require = arg1;
-function updateOptionStates(id, changedOptionStates) {
-  let obj = importDefault(686);
-  obj = { type: "APPLICATION_COMMAND_UPDATE_OPTIONS", channelId: id, changedOptionStates };
-  obj.dispatch(obj);
-}
 const result = require("ME").fileFinishedImporting("modules/application_commands/ApplicationCommandActionCreators.tsx");
 
 export const setActiveCommand = function setActiveCommand(command) {
@@ -32,26 +27,36 @@ export const setActiveCommand = function setActiveCommand(command) {
   command = command.command;
   ({ channelId, section, location: _location, initialValues, triggerSection, queryLength, sectionName, query, searchResultsPosition, source, commandOrigin } = command);
   if (null != command) {
-    importDefault(44)(command.inputType !== require(5686) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER, "command should not be placeholder");
-    const tmp3 = importDefault(44);
+    importDefault(38)(command.inputType !== require(5704) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER, "command should not be placeholder");
+    const tmp3 = importDefault(38);
   }
-  importDefault(686).dispatch({ type: "APPLICATION_COMMAND_SET_ACTIVE_COMMAND", channelId, command, section, initialValues, location: _location, triggerSection, queryLength, sectionName, query, searchResultsPosition, source, commandOrigin });
+  importDefault(709).dispatch({ type: "APPLICATION_COMMAND_SET_ACTIVE_COMMAND", channelId, command, section, initialValues, location: _location, triggerSection, queryLength, sectionName, query, searchResultsPosition, source, commandOrigin });
 };
 export const setPreferredCommandId = function setPreferredCommandId(channelId, commandId) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "APPLICATION_COMMAND_SET_PREFERRED_COMMAND", channelId, commandId };
   obj.dispatch(obj);
 };
-export { updateOptionStates };
-export const updateOptionValidationStates = function updateOptionValidationStates(id) {
+export const updateOptionStates = function updateOptionStates(id, changedOptionStates) {
+  let obj = importDefault(709);
+  obj = { type: "APPLICATION_COMMAND_UPDATE_OPTIONS", channelId: id, changedOptionStates };
+  obj.dispatch(obj);
+};
+export const updateOptionValidationStates = function updateOptionValidationStates(channelId) {
   const entries = Object.entries(arg1);
-  updateOptionStates(id, Object.fromEntries(entries.map((arg0) => {
-    let tmp;
-    let tmp2;
-    [tmp, tmp2] = arg0;
-    const items = [tmp, { lastValidationResult: tmp2 }];
-    return items;
-  })));
+  let obj = importDefault(709);
+  obj = {
+    type: "APPLICATION_COMMAND_UPDATE_OPTIONS",
+    channelId,
+    changedOptionStates: Object.fromEntries(entries.map((arg0) => {
+      let tmp;
+      let tmp2;
+      [tmp, tmp2] = arg0;
+      const items = [tmp, { lastValidationResult: tmp2 }];
+      return items;
+    }))
+  };
+  obj.dispatch(obj);
 };
 export const updateChannelState = function updateChannelState(arg0) {
   let _location;
@@ -61,43 +66,47 @@ export const updateChannelState = function updateChannelState(arg0) {
   let preferredCommandId;
   let section;
   ({ channelId, command, section, preferredCommandId, location: _location, changedOptionStates } = arg0);
-  importDefault(686).dispatch({ type: "APPLICATION_COMMAND_UPDATE_CHANNEL_STATE", channelId, command, section, preferredCommandId, location: _location, changedOptionStates });
+  importDefault(709).dispatch({ type: "APPLICATION_COMMAND_UPDATE_CHANNEL_STATE", channelId, command, section, preferredCommandId, location: _location, changedOptionStates });
 };
 export const updateApplicationGuildCommandPermissions = function updateApplicationGuildCommandPermissions(arg0, arg1, arg2, permissions) {
-  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+  const HTTP = require(530) /* sendRequest */.HTTP;
   obj = { body: obj, url: Endpoints.APPLICATION_BOT_GUILD_COMMAND_PERMISSIONS(arg0, arg1, arg2), rejectWithError: false };
   obj = { permissions };
   return HTTP.put(obj);
 };
-export const performAutocomplete = function performAutocomplete(command, context, data) {
+export const performAutocomplete = function performAutocomplete(c0, closure_2, arg2) {
   let name;
   let query;
-  importDefault(44)(null != context.autocomplete, "Missing autocomplete context");
-  ({ query, name } = context.autocomplete);
-  let obj = importDefault(21);
+  importDefault(38)(null != closure_2.autocomplete, "Missing autocomplete context");
+  ({ query, name } = closure_2.autocomplete);
+  let obj = importDefault(11);
   const fromTimestampResult = obj.fromTimestamp(Date.now());
   const require = fromTimestampResult;
-  if (null != context.channel) {
-    let obj1 = importDefault(686);
-    obj = { type: "APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST", nonce: fromTimestampResult, channelId: context.channel.id, query, name };
-    obj1.dispatch(obj);
-    if (null == autocompleteChoices.getAutocompleteChoices(context.channel.id, name, query)) {
-      const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-      obj = { url: Endpoints.INTERACTIONS };
-      obj1 = { type: require(1882) /* PermissionOverwriteType */.InteractionTypes.APPLICATION_COMMAND_AUTOCOMPLETE, application_id: command.applicationId };
-      const guild = context.guild;
+  if (null != closure_2.channel) {
+    obj = { type: "APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST", nonce: null, channelId: null, query: null, name: null };
+    obj[1] = fromTimestampResult;
+    obj[2] = closure_2.channel.id;
+    obj[3] = query;
+    obj[4] = name;
+    importDefault(709).dispatch(obj);
+    if (null == autocompleteChoices.getAutocompleteChoices(closure_2.channel.id, name, query)) {
+      const HTTP = require(530) /* sendRequest */.HTTP;
+      obj = { url: null, body: null, timeout: 3000, rejectWithError: true };
+      obj[0] = Endpoints.INTERACTIONS;
+      const obj1 = { type: null, application_id: null, guild_id: null, channel_id: null, session_id: null, data: null, nonce: null };
+      obj1[0] = require(1906) /* PermissionOverwriteType */.InteractionTypes.APPLICATION_COMMAND_AUTOCOMPLETE;
+      obj1[1] = c0.applicationId;
+      const guild = closure_2.guild;
       let id;
-      if (null != guild) {
+      if (guild != null) {
         id = guild.id;
       }
-      obj1.guild_id = id;
-      obj1.channel_id = context.channel.id;
-      obj1.session_id = sessionId.getSessionId();
-      obj1.data = data;
-      obj1.nonce = fromTimestampResult;
-      obj.body = obj1;
-      obj.timeout = 3000;
-      obj.rejectWithError = true;
+      obj1[2] = id;
+      obj1[3] = closure_2.channel.id;
+      obj1[4] = sessionId.getSessionId();
+      obj1[5] = arg2;
+      obj1[6] = fromTimestampResult;
+      obj[1] = obj1;
       HTTP.post(obj).catch(() => {
         let obj = outer1_1(outer1_2[5]);
         obj = { type: "INTERACTION_FAILURE", nonce: closure_0 };
@@ -105,15 +114,16 @@ export const performAutocomplete = function performAutocomplete(command, context
       });
       const postResult = HTTP.post(obj);
     }
+    const tmpResult = importDefault(709);
   }
 };
 export const fetchCommand = function fetchCommand(guildId, channelId, commandId) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "APPLICATION_COMMAND_FETCH", channelId, commandId, guildId };
   obj.dispatch(obj);
 };
 export const fetchCommands = function fetchCommands(guildId, channelId, commandIds) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "APPLICATION_COMMANDS_FETCH", channelId, commandIds, guildId };
   obj.dispatch(obj);
 };
@@ -122,19 +132,19 @@ export const fetchCommandsForApplication = function fetchCommandsForApplication(
   let channelId;
   let guildId;
   ({ guildId, channelId, applicationId } = arg0);
-  importDefault(686).dispatch({ type: "APPLICATION_COMMANDS_FETCH_FOR_APPLICATION", channelId, guildId, applicationId });
+  importDefault(709).dispatch({ type: "APPLICATION_COMMANDS_FETCH_FOR_APPLICATION", channelId, guildId, applicationId });
 };
 export const updateRegistry = function updateRegistry(commands, applications, channelId) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "APPLICATION_COMMAND_REGISTRY_UPDATE", applications, commands, channelId };
   obj.dispatch(obj);
 };
 export const setAppLauncherActiveCommand = function setAppLauncherActiveCommand(id, command) {
   if (null != command) {
-    importDefault(44)(command.inputType !== require(5686) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER, "command should not be placeholder");
-    const tmp3 = importDefault(44);
+    importDefault(38)(command.inputType !== require(5704) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER, "command should not be placeholder");
+    const tmp3 = importDefault(38);
   }
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "APP_LAUNCHER_SET_ACTIVE_COMMAND", channelId: id, command };
   obj.dispatch(obj);
 };

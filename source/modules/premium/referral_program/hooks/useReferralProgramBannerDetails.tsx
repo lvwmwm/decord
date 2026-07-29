@@ -1,36 +1,36 @@
-// Module ID: 12452
-// Function ID: 96469
+// Module ID: 12474
+// Function ID: 12475
 // Name: MAX_REFERRALS_SENT
-// Dependencies: [31, 1850, 6192, 566, 7960, 2]
+// Dependencies: [19, 1874, 6212, 589, 7985, 2]
 // Exports: useReferralProgramBannerDetails
 
-// Module 12452 (MAX_REFERRALS_SENT)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 12474 (MAX_REFERRALS_SENT)
+import noop from "noop";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import emitChanges from "emitChanges";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/referral_program/hooks/useReferralProgramBannerDetails.tsx");
+const result = require("emitChanges").fileFinishedImporting("modules/premium/referral_program/hooks/useReferralProgramBannerDetails.tsx");
 
 export const MAX_REFERRALS_SENT = 3;
 export const useReferralProgramBannerDetails = function useReferralProgramBannerDetails() {
-  let obj = stateFromStoresArray(566);
-  const items = [closure_4];
-  stateFromStoresArray = obj.useStateFromStoresArray(items, () => outer1_4.getSentUserIds());
-  const items1 = [_isNativeReflectConstruct];
+  let obj = stateFromStoresArray(589);
+  const items = [emitChanges];
+  stateFromStoresArray = obj.useStateFromStoresArray(items, () => authStore.getSentUserIds());
+  const items1 = [mergeGuildAvatar];
   const items2 = [stateFromStoresArray];
-  const stateFromStoresArray1 = stateFromStoresArray(566).useStateFromStoresArray(items1, () => {
-    const mapped = stateFromStoresArray.map((arg0) => outer2_3.getUser(arg0));
+  const stateFromStoresArray1 = stateFromStoresArray(589).useStateFromStoresArray(items1, () => {
+    const mapped = stateFromStoresArray.map((arg0) => user.getUser(arg0));
     return mapped.filter((arg0) => null != arg0);
   });
   const effect = React.useEffect(() => {
     const item = stateFromStoresArray.forEach((arg0) => {
-      const user = stateFromStoresArray(outer2_1[4]).getUser(arg0);
+      const user = callback(table[4]).getUser(arg0);
     });
   }, items2);
-  obj = { referralSentUsers: stateFromStoresArray1, hasSentAllReferrals: 3 === stateFromStoresArray.length };
-  const obj2 = stateFromStoresArray(566);
-  const items3 = [closure_4];
-  obj.refreshAt = stateFromStoresArray(566).useStateFromStores(items3, () => outer1_4.getRefreshAt());
+  obj = { referralSentUsers: stateFromStoresArray1, hasSentAllReferrals: 3 === stateFromStoresArray.length, refreshAt: null };
+  const obj2 = stateFromStoresArray(589);
+  const items3 = [emitChanges];
+  obj[2] = stateFromStoresArray(589).useStateFromStores(items3, () => authStore.getRefreshAt());
   return obj;
 };

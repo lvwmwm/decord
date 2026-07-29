@@ -1,24 +1,24 @@
-// Module ID: 8494
-// Function ID: 67489
+// Module ID: 8518
+// Function ID: 8519
 // Name: GameProfileRankPill
-// Dependencies: [31, 27, 33, 4165, 689, 6628, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 6649, 4185, 1236, 2]
 // Exports: default
 
-// Module 8494 (GameProfileRankPill)
-import "result";
+// Module 8518 (GameProfileRankPill)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { flex: 1, flexDirection: "row", alignItems: "flex-end" } };
-_createForOfIteratorHelperLoose = { flexDirection: "row", backgroundColor: require("_createForOfIteratorHelperLoose").colors.WHITE, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
-_createForOfIteratorHelperLoose.gameRankPill = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: { flex: 1, flexDirection: "row", alignItems: "flex-end" }, gameRankPill: null };
+createCacheKey = { flexDirection: "row", backgroundColor: require("Themes").colors.WHITE, borderRadius: require("Themes").radii.round, paddingHorizontal: require("Themes").space.PX_8, alignItems: "center", gap: require("Themes").space.PX_4 };
+const merged = Object.assign(require("Themes").shadows.SHADOW_LOW);
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/game_profile/native/components/GameProfileRankPill.tsx");
 
 export default function GameProfileRankPill(arg0) {
@@ -28,25 +28,26 @@ export default function GameProfileRankPill(arg0) {
   if (compact === undefined) {
     compact = false;
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.container };
-  obj = { style: tmp.gameRankPill };
-  obj = { size: "xxs", color: importDefault(689).colors.BLACK };
-  const items = [callback(require(6628) /* TrophyIcon */.TrophyIcon, obj), ];
-  const obj1 = { variant: "text-xs/bold", color: "text-overlay-dark" };
-  const intl = require(1212) /* getSystemLocale */.intl;
+  const tmp = createCacheKey();
+  let obj = { style: tmp.container, children: null };
+  obj = { style: tmp.gameRankPill, children: null };
+  obj = { size: "xxs", color: null };
+  obj[1] = importDefault(712).colors.BLACK;
+  const items = [callback(require(6649) /* TrophyIcon */.TrophyIcon, obj), ];
+  const intl = require(1236) /* getSystemLocale */.intl;
   const formatToPlainString = intl.formatToPlainString;
-  const t = require(1212) /* getSystemLocale */.t;
+  const t = require(1236) /* getSystemLocale */.t;
   if (compact) {
-    const obj2 = { rank };
-    let str = formatToPlainString(t.UA6RoE, obj2);
+    const obj1 = { rank: null };
+    obj1[0] = rank;
+    let str = formatToPlainString(t.UA6RoE, obj1);
   } else {
-    const obj3 = { rank };
-    str = formatToPlainString(t.ehZXlZ, obj3);
+    const obj2 = { rank: null };
+    obj2[0] = rank;
+    str = formatToPlainString(t.ehZXlZ, obj2);
   }
-  obj1.children = str.toUpperCase();
-  items[1] = callback(require(4161) /* Text */.Text, obj1);
-  obj.children = items;
-  obj.children = closure_5(View, obj);
+  items[1] = callback(require(4185) /* Text */.Text, { variant: "text-xs/bold", color: "text-overlay-dark", children: str.toUpperCase() });
+  obj[1] = items;
+  obj[1] = closure_5(View, obj);
   return callback(View, obj);
 };

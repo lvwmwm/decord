@@ -1,29 +1,29 @@
-// Module ID: 14233
-// Function ID: 109371
+// Module ID: 14255
+// Function ID: 14256
 // Name: GuildRoleSubscriptionMemberPreview
-// Dependencies: [31, 27, 1850, 33, 4165, 689, 1212, 566, 4354, 1392, 5522, 5119, 4161, 665, 1273, 5523, 2]
+// Dependencies: [19, 17, 1874, 21, 4189, 712, 1236, 589, 4379, 1416, 5540, 5141, 4185, 688, 1297, 5541, 2]
 // Exports: GuildRoleSubscriptionMemberPreview
 
-// Module 14233 (GuildRoleSubscriptionMemberPreview)
-import "result";
+// Module 14255 (GuildRoleSubscriptionMemberPreview)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", padding: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.avatar = { width: 40, height: 40, borderRadius: 20 };
-_createForOfIteratorHelperLoose.content = { marginStart: 16 };
-_createForOfIteratorHelperLoose.contextRow = { flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionMemberPreview.tsx");
+({ jsx: closure_6, Fragment: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { container: null, avatar: null, content: null, contextRow: null };
+createCacheKey = { flexDirection: "row", padding: 16, borderRadius: require("Themes").radii.xs, borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { width: 40, height: 40, borderRadius: 20 };
+createCacheKey[2] = { marginStart: 16 };
+createCacheKey[3] = { flexDirection: "row", alignItems: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionMemberPreview.tsx");
 
 export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscriptionMemberPreview(content) {
   let guildId;
@@ -32,77 +32,80 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
   let textStyle;
   content = content.content;
   if (content === undefined) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    content = intl.string(require(1212) /* getSystemLocale */.t["6OSasb"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    content = intl.string(require(1236) /* getSystemLocale */.t["6OSasb"]);
   }
   ({ guildId, role } = content);
   ({ style, textStyle } = content);
-  const tmp3 = _createForOfIteratorHelperLoose();
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getCurrentUser());
-  importDefault(4354);
+  const tmp3 = createCacheKey();
+  let obj = require(589) /* initialize */;
+  const items = [mergeGuildAvatar];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  importDefault(4379);
   if (null == role) {
     return null;
   } else {
+    let tmp6Result = tmp6(1416);
     let avatarURL;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       avatarURL = stateFromStores.getAvatarURL(guildId, 40);
     }
-    if (null == avatarURL) {
-      let obj2 = importDefault(1392);
-      avatarURL = obj2.getDefaultAvatarURL(undefined, undefined);
+    if (avatarURL == null) {
+      tmp6Result = tmp6(1416);
+      avatarURL = tmp6Result.getDefaultAvatarURL(undefined, undefined);
     }
-    const source = importDefault(1392).makeSource(avatarURL);
-    let obj3 = require(5522) /* getRoleIconSource */;
-    const roleIconData = obj3.getRoleIconData(role, 16);
-    obj = {};
+    const source = tmp6Result.makeSource(avatarURL);
+    const roleIconData = tmp4(5540).getRoleIconData(role, 16);
+    obj = { style: null, children: null };
     const items1 = [tmp3.container, style];
-    obj.style = items1;
-    obj = { style: tmp3.avatar, source };
-    const items2 = [callback(importDefault(5119), obj), ];
-    const obj1 = { style: tmp3.content };
-    obj2 = { style: tmp3.contextRow };
-    obj3 = { variant: "text-md/semibold", color: "interactive-text-active" };
-    const obj4 = {};
-    let obj10 = importAll(665);
-    obj4.color = obj10.int2hex(role.color);
-    obj3.style = obj4;
-    obj3.children = tmp5;
-    const items3 = [callback(require(4161) /* Text */.Text, obj3), , , ];
-    let tmp19Result = null;
+    obj[0] = items1;
+    obj = { style: null, source: null };
+    obj[0] = tmp3.avatar;
+    obj[1] = source;
+    const items2 = [callback(tmp6(5141), obj), ];
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp3.content;
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp3.contextRow;
+    const obj3 = { variant: "text-md/semibold", color: "interactive-text-active", style: null, children: null };
+    const obj4 = { color: null };
+    const tmp4Result = tmp4(5540);
+    obj4[0] = importAll(688).int2hex(role.color);
+    obj3[2] = obj4;
+    obj3[3] = tmp8;
+    const items3 = [callback(tmp4(4185).Text, obj3), , , ];
+    let tmp12Result = null;
     if (null != roleIconData) {
-      const obj5 = {};
-      const obj6 = { size: 4 };
-      const items4 = [callback(require(1273) /* Button */.Spacer, obj6), ];
-      const obj7 = { name: role.name };
-      let tmp26;
+      const items4 = [tmp14(tmp4(1297).Spacer, { size: 4 }), ];
+      const obj5 = { name: null, source: null, unicodeEmoji: null, size: 16 };
+      obj5[0] = role.name;
+      let tmp19;
       if (null != roleIconData.customIconSrc) {
-        const obj8 = { uri: roleIconData.customIconSrc };
-        tmp26 = obj8;
+        const obj6 = { uri: null };
+        obj6[0] = roleIconData.customIconSrc;
+        tmp19 = obj6;
       }
-      obj7.source = tmp26;
-      obj7.unicodeEmoji = roleIconData.unicodeEmoji;
-      obj7.size = 16;
-      items4[1] = callback(importDefault(5523), obj7);
-      obj5.children = items4;
-      tmp19Result = closure_8(closure_7, obj5);
-      const tmp19 = closure_8;
-      const tmp20 = closure_7;
-      const tmp21 = callback;
-      const tmp25 = importDefault(5523);
+      const obj7 = { children: null };
+      obj5[1] = tmp19;
+      obj5[2] = roleIconData.unicodeEmoji;
+      items4[1] = tmp14(tmp6(5541), obj5);
+      obj7[0] = items4;
+      tmp12Result = tmp12(closure_7, obj7);
+      const tmp17 = closure_7;
+      const tmp6Result1 = tmp6(5541);
     }
-    items3[1] = tmp19Result;
-    const obj9 = { size: 8 };
-    items3[2] = callback(require(1273) /* Button */.Spacer, obj9);
-    items3[3] = callback(require(4161) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" });
-    obj2.children = items3;
+    items3[1] = tmp12Result;
+    items3[2] = callback(tmp4(1297).Spacer, { size: 8 });
+    items3[3] = callback(tmp4(4185).Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" });
+    obj2[1] = items3;
     const items5 = [closure_8(View, obj2), ];
-    obj10 = { variant: "text-md/normal", color: "text-default", style: textStyle, children: content };
-    items5[1] = callback(require(4161) /* Text */.Text, obj10);
-    obj1.children = items5;
+    const obj8 = { variant: "text-md/normal", color: "text-default", style: null, children: null };
+    obj8[2] = textStyle;
+    obj8[3] = content;
+    items5[1] = callback(tmp4(4185).Text, obj8);
+    obj1[1] = items5;
     items2[1] = closure_8(View, obj1);
-    obj.children = items2;
+    obj[1] = items2;
     return closure_8(View, obj);
   }
 };

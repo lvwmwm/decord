@@ -1,22 +1,22 @@
-// Module ID: 11699
-// Function ID: 90589
+// Module ID: 11723
+// Function ID: 11724
 // Name: useProvisionalAccountApplication
-// Dependencies: [5925, 566, 5503, 2]
+// Dependencies: [5944, 589, 5521, 2]
 // Exports: default
 
-// Module 11699 (useProvisionalAccountApplication)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11723 (useProvisionalAccountApplication)
+import recountRelationshipTypes from "recountRelationshipTypes";
 
 const require = arg1;
 const result = require("useGetOrFetchApplications").fileFinishedImporting("modules/provisional_accounts/hooks/useProvisionalAccountApplication.tsx");
 
 export default function useProvisionalAccountApplication(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = _require(566).useStateFromStores(items, () => {
+  const items = [recountRelationshipTypes];
+  const stateFromStores = _require(589).useStateFromStores(items, () => {
     const gameRelationshipsForUser = outer1_2.getGameRelationshipsForUser(closure_0);
     return 0 !== gameRelationshipsForUser.length ? gameRelationshipsForUser[0].applicationId : undefined;
   });
-  const obj = _require(566);
-  return _require(5503).useGetOrFetchApplication(stateFromStores);
+  const obj = _require(589);
+  return _require(5521).useGetOrFetchApplication(stateFromStores);
 };

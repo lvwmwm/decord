@@ -1,11 +1,11 @@
-// Module ID: 8266
-// Function ID: 66146
+// Module ID: 8290
+// Function ID: 8291
 // Name: BottomSheetTextInput
-// Dependencies: [31, 33, 6724, 6722, 8267, 2]
+// Dependencies: [19, 21, 6745, 6743, 8291, 2]
 // Exports: BottomSheetTextInput
 
-// Module 8266 (BottomSheetTextInput)
-import result from "result";
+// Module 8290 (BottomSheetTextInput)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -17,35 +17,34 @@ export const BottomSheetTextInput = function BottomSheetTextInput(ref) {
   let onFocus;
   let onFocus2;
   ref = ref.ref;
-  let obj = { onFocus: 0, onBlur: 0, ref: 0 };
   ({ onFocus, onBlur } = ref);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(ref, obj);
+  ref = undefined;
+  const merged = Object.assign(ref, Object.create(null));
   ref = React.useRef(null);
-  ({ onFocus: onFocus2, onBlur: onBlur2 } = ref(6724)({ onFocus, onBlur }));
-  const tmp4 = ref(6724)({ onFocus, onBlur });
-  const keyboardBlurring = ref(6722).useKeyboardBlurring(ref);
+  ({ onFocus: onFocus2, onBlur: onBlur2 } = ref(6745)({ onFocus, onBlur }));
+  let obj = ref(6743);
+  const keyboardBlurring = obj.useKeyboardBlurring(ref);
   obj = {
     ref(current) {
       ref.current = current;
-      if ("function" === typeof ref) {
-        ref(current);
-      } else if (null != ref) {
-        ref.current = current;
+      if (typeof ref === "find") {
+        tmp(current);
+      } else if (null != tmp) {
+        tmp.current = current;
       }
     },
     onFocus: onFocus2,
     onBlur: onBlur2
   };
-  const obj2 = ref(6722);
+  const tmp3 = ref(6745)({ onFocus, onBlur });
   const merged1 = Object.assign(merged);
-  return jsx(ref(8267), {
+  return jsx(ref(8291), {
     ref(current) {
       ref.current = current;
-      if ("function" === typeof ref) {
-        ref(current);
-      } else if (null != ref) {
-        ref.current = current;
+      if (typeof ref === "find") {
+        tmp(current);
+      } else if (null != tmp) {
+        tmp.current = current;
       }
     },
     onFocus: onFocus2,

@@ -1,137 +1,72 @@
-// Module ID: 10224
-// Function ID: 78883
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 477, 566, 686, 2]
+// Module ID: 10245
+// Function ID: 10246
+// Name: DesktopNotificationTypes
+// Dependencies: [676, 500, 589, 709, 2]
 
-// Module 10224 (_isNativeReflectConstruct)
-import set from "set";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 10245 (DesktopNotificationTypes)
 import ME from "ME";
+import { DeviceSettingsStore } from "initialize";
 
 let TTSNotificationTypes;
-let closure_8;
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
+let c3;
+const DesktopNotificationTypes = ME.DesktopNotificationTypes;
+({ NotificationPermissionTypes: c3, TTSNotificationTypes } = ME);
+let obj = { desktopType: require("set").isPlatformEmbedded ? DesktopNotificationTypes.ALL : DesktopNotificationTypes.NEVER, disableAllSounds: false, disabledSounds: [], ttsType: TTSNotificationTypes.NEVER, disableUnreadBadge: false, taskbarFlash: true, notifyMessagesInSelectedChannel: false, screenDowntimeReminder: true };
 function handleSetDesktopType(desktopType) {
   obj.desktopType = desktopType.desktopType;
 }
-const DesktopNotificationTypes = ME.DesktopNotificationTypes;
-({ NotificationPermissionTypes: closure_8, TTSNotificationTypes } = ME);
-let obj = { desktopType: require("set").isPlatformEmbedded ? DesktopNotificationTypes.ALL : DesktopNotificationTypes.NEVER, disableAllSounds: false, disabledSounds: [], ttsType: TTSNotificationTypes.NEVER, disableUnreadBadge: false, taskbarFlash: true, notifyMessagesInSelectedChannel: false, screenDowntimeReminder: true };
-let tmp3 = ((DeviceSettingsStore) => {
-  class NotificationSettingsStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, NotificationSettingsStore);
-      obj = outer1_5(NotificationSettingsStore);
-      tmp2 = outer1_4;
-      if (outer1_12()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+class NotificationSettingsStore extends DeviceSettingsStore {
+}
+const prototype = NotificationSettingsStore.prototype;
+prototype["initialize"] = function initialize(arg0) {
+  const obj = {};
+  const merged = Object.assign(obj);
+  const merged1 = Object.assign(arg0);
+};
+prototype["getUserAgnosticState"] = function getUserAgnosticState() {
+  return obj;
+};
+prototype["getDesktopType"] = function getDesktopType() {
+  return obj.desktopType;
+};
+prototype["getTTSType"] = function getTTSType() {
+  return obj.ttsType;
+};
+prototype["getDisabledSounds"] = function getDisabledSounds() {
+  return obj.disabledSounds;
+};
+prototype["getDisableAllSounds"] = function getDisableAllSounds() {
+  return obj.disableAllSounds;
+};
+prototype["getDisableUnreadBadge"] = function getDisableUnreadBadge() {
+  return obj.disableUnreadBadge;
+};
+prototype["getNotifyMessagesInSelectedChannel"] = function getNotifyMessagesInSelectedChannel() {
+  return obj.notifyMessagesInSelectedChannel;
+};
+Object.defineProperty(prototype, "taskbarFlash", {
+  get: function taskbarFlash() {
+    return obj.taskbarFlash;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "screenDowntimeReminder", {
+  get: function screenDowntimeReminder() {
+    return obj.screenDowntimeReminder;
+  },
+  set: undefined
+});
+prototype["isSoundDisabled"] = function isSoundDisabled(message1) {
+  let disableAllSounds = obj.disableAllSounds;
+  if (!disableAllSounds) {
+    const disabledSounds = obj.disabledSounds;
+    disableAllSounds = -1 !== disabledSounds.indexOf(message1);
   }
-  callback2(NotificationSettingsStore, DeviceSettingsStore);
-  let obj = {
-    key: "initialize",
-    value(arg0) {
-      const merged = Object.assign(outer1_10);
-      const merged1 = Object.assign(arg0);
-      const outer1_11 = {};
-    }
-  };
-  const items = [obj, , , , , , , , , , ];
-  obj = {
-    key: "getUserAgnosticState",
-    value() {
-      return outer1_11;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getDesktopType",
-    value() {
-      return outer1_11.desktopType;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getTTSType",
-    value() {
-      return outer1_11.ttsType;
-    }
-  };
-  items[4] = {
-    key: "getDisabledSounds",
-    value() {
-      return outer1_11.disabledSounds;
-    }
-  };
-  items[5] = {
-    key: "getDisableAllSounds",
-    value() {
-      return outer1_11.disableAllSounds;
-    }
-  };
-  items[6] = {
-    key: "getDisableUnreadBadge",
-    value() {
-      return outer1_11.disableUnreadBadge;
-    }
-  };
-  items[7] = {
-    key: "getNotifyMessagesInSelectedChannel",
-    value() {
-      return outer1_11.notifyMessagesInSelectedChannel;
-    }
-  };
-  items[8] = {
-    key: "taskbarFlash",
-    get() {
-      return outer1_11.taskbarFlash;
-    }
-  };
-  items[9] = {
-    key: "screenDowntimeReminder",
-    get() {
-      return outer1_11.screenDowntimeReminder;
-    }
-  };
-  items[10] = {
-    key: "isSoundDisabled",
-    value(arg0) {
-      let disableAllSounds = outer1_11.disableAllSounds;
-      if (!disableAllSounds) {
-        const disabledSounds = outer1_11.disabledSounds;
-        disableAllSounds = -1 !== disabledSounds.indexOf(arg0);
-      }
-      return disableAllSounds;
-    }
-  };
-  return callback(NotificationSettingsStore, items);
-})(require("initialize").DeviceSettingsStore);
-tmp3.displayName = "NotificationSettingsStore";
-tmp3.persistKey = "notifications";
-let items = [
+  return disableAllSounds;
+};
+NotificationSettingsStore.displayName = "NotificationSettingsStore";
+NotificationSettingsStore.persistKey = "notifications";
+const items = [
   (arg0) => {
     const obj = {};
     const merged = Object.assign(arg0);
@@ -146,11 +81,11 @@ let items = [
     if (null != obj.desktopType) {
       return obj;
     } else {
-      obj.desktopType = require(477) /* set */.isPlatformEmbedded ? DesktopNotificationTypes.ALL : DesktopNotificationTypes.NEVER;
+      obj.desktopType = require(500) /* set */.isPlatformEmbedded ? DesktopNotificationTypes.ALL : DesktopNotificationTypes.NEVER;
     }
   }
 ];
-tmp3.migrations = items;
+NotificationSettingsStore.migrations = items;
 obj = {
   NOTIFICATIONS_SET_DESKTOP_TYPE: handleSetDesktopType,
   NOTIFICATIONS_SET_TTS_TYPE: function handleSetTTSType(ttsType) {
@@ -165,11 +100,9 @@ obj = {
   NOTIFICATIONS_SET_PERMISSION_STATE: function handleSetHavePermission(enabled) {
     enabled = enabled.enabled;
     if (enabled === constants.BLOCKED) {
-      let obj = { desktopType: DesktopNotificationTypes.NEVER };
-      handleSetDesktopType(obj);
-    } else if (enabled === constants.ENABLED) {
-      obj = { desktopType: DesktopNotificationTypes.ALL };
-      handleSetDesktopType(obj);
+      obj.desktopType = DesktopNotificationTypes.NEVER;
+    } else if (enabled === tmp.ENABLED) {
+      obj.desktopType = DesktopNotificationTypes.ALL;
     }
   },
   NOTIFICATIONS_SET_DISABLE_UNREAD_BADGE: function handleSetDisableUnreadBadge(disableUnreadBadge) {
@@ -185,7 +118,7 @@ obj = {
     obj.screenDowntimeReminder = screenDowntimeReminder.screenDowntimeReminder;
   }
 };
-tmp3 = new tmp3(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/NotificationSettingsStore.tsx");
+const notificationSettingsStore = new NotificationSettingsStore(require("dispatcher"), obj);
+const result = require("initialize").fileFinishedImporting("stores/NotificationSettingsStore.tsx");
 
-export default tmp3;
+export default notificationSettingsStore;

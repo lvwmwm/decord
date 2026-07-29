@@ -1,25 +1,25 @@
-// Module ID: 16486
-// Function ID: 128470
+// Module ID: 16521
+// Function ID: 16522
 // Name: ApplicationStatusNotice
-// Dependencies: [57, 31, 27, 14200, 653, 16487, 33, 4165, 689, 11359, 1212, 16488, 4161, 16489, 1456, 4133, 16491, 1935, 16491, 7611, 4578, 1273, 4579, 8322, 16499, 16503, 16512, 16515, 16520, 16521, 1457, 8402, 480, 5118, 16485, 3865, 5155, 5119, 16522, 2]
+// Dependencies: [32, 19, 17, 14222, 676, 16522, 21, 4189, 712, 11383, 1236, 16523, 4185, 16524, 1480, 4157, 16526, 1959, 16526, 7634, 4600, 1297, 4601, 8346, 16534, 16538, 16547, 16550, 16555, 16556, 1481, 8426, 503, 5140, 16520, 3889, 5177, 5141, 16557, 2]
 // Exports: default
 
-// Module 16486 (ApplicationStatusNotice)
-import _slicedToArray from "_slicedToArray";
-import trackImpression from "trackImpression";
-import get_ActivityIndicator from "useOnboardingMonetizationEnableFlow";
+// Module 16521 (ApplicationStatusNotice)
+import encodeProperties from "encodeProperties";
+import Form from "Form";
+import get_ActivityIndicator from "asyncRequireImpl";
 import { CREATOR_REVENUE_PORTAL_URL as closure_8 } from "MAX_SUBSCRIPTION_TIERS";
 import { GuildSettingsSections } from "ME";
 import { CreatorMonetizationOnboardingMarketingSection as closure_10 } from "CreatorMonetizationApplicationState";
-import jsxProd from "NAV_BAR_HEIGHT";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Button";
+import createCacheKey from "createCacheKey";
 
-let closure_11;
 let closure_12;
-let closure_13;
 let closure_6;
-let closure_7;
-let require = arg1;
+let error;
+let map1;
+let unpackModuleId;
+const require = arg1;
 function ApplicationStatusNotice(arg0) {
   let createEnableRequest;
   let isApplicationPending;
@@ -30,33 +30,38 @@ function ApplicationStatusNotice(arg0) {
   let style;
   ({ style, resubmissionError, requestRejectedNoticeText, reapplyNoticeText } = arg0);
   ({ resubmittingEnableRequest, createEnableRequest, isApplicationPending } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   if (null != resubmissionError) {
-    let obj = {};
+    let obj = { style: null, children: null };
     const items = [tmp.statusNoticeContainer, style];
-    obj.style = items;
-    obj = { children: resubmissionError.getAnyErrorMessage() };
-    obj.children = callback(importDefault(11359), obj);
+    obj[0] = items;
+    obj = { children: null };
+    obj[0] = resubmissionError.getAnyErrorMessage();
+    obj[1] = callback(importDefault(11383), obj);
     return callback(closure_6, obj);
   } else {
     if (isApplicationPending) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      requestRejectedNoticeText = intl2.string(require(1212) /* getSystemLocale */.t.OrkTBn);
+      const intl2 = require(1236) /* getSystemLocale */.intl;
+      requestRejectedNoticeText = intl2.string(require(1236) /* getSystemLocale */.t.OrkTBn);
     } else if (null == requestRejectedNoticeText) {
       requestRejectedNoticeText = null;
       if (null != reapplyNoticeText) {
-        const intl = require(1212) /* getSystemLocale */.intl;
+        const intl = require(1236) /* getSystemLocale */.intl;
         requestRejectedNoticeText = reapplyNoticeText;
-        const stringResult = intl.string(require(1212) /* getSystemLocale */.t["YKw/NQ"]);
+        const stringResult = intl.string(require(1236) /* getSystemLocale */.t["YKw/NQ"]);
       }
     }
     let tmp7 = null;
     if (null != requestRejectedNoticeText) {
-      obj = {};
+      obj = { style: null, children: null };
       const items1 = [tmp.statusNoticeContainer, style];
-      obj.style = items1;
-      const obj1 = { notice: requestRejectedNoticeText, ctaLabel: stringResult, onClick: createEnableRequest, submitting: resubmittingEnableRequest };
-      obj.children = callback(importDefault(16488), obj1);
+      obj[0] = items1;
+      const obj1 = { notice: null, ctaLabel: null, onClick: null, submitting: null };
+      obj1[0] = requestRejectedNoticeText;
+      obj1[1] = stringResult;
+      obj1[2] = createEnableRequest;
+      obj1[3] = resubmittingEnableRequest;
+      obj[1] = callback(importDefault(16523), obj1);
       tmp7 = callback(closure_6, obj);
     }
     return tmp7;
@@ -66,30 +71,28 @@ class SectionContainer {
   constructor(arg0) {
     footer = global.footer;
     ({ title, children, onLayout } = global);
-    tmp = c14();
-    obj = { onLayout, style: tmp.container };
+    tmp = Fragment();
+    obj = { onLayout, style: tmp.container, children: null };
     obj = { style: tmp.divider };
     tmp2 = jsxs;
     tmp3 = View;
+    tmp4 = jsx;
     items = [, , , ];
     items[0] = jsx(View, obj);
-    obj1 = { style: null, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary" };
-    obj1.style = tmp.sectionTitle;
-    obj1.children = title;
+    tmp5 = closure_0;
+    tmp6 = closure_3;
+    obj1 = { style: tmp.sectionTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: title };
     items[1] = jsx(require("Text").Text, obj1);
     items[2] = children;
-    tmp4 = null != footer;
-    if (tmp4) {
-      tmp5 = jsx;
-      tmp6 = closure_0;
-      tmp7 = closure_3;
-      obj2 = { style: null, variant: "text-sm/normal", color: "text-default" };
-      obj2.style = tmp.sectionFooter;
-      obj2.children = footer;
-      tmp4 = jsx(require("Text").Text, obj2);
+    tmp4Result = null != footer;
+    if (tmp4Result) {
+      obj2 = { style: null, variant: "text-sm/normal", color: "text-default", children: null };
+      obj2[0] = tmp.sectionFooter;
+      obj2[3] = footer;
+      tmp4Result = tmp4(require("Text").Text, obj2);
     }
-    items[3] = tmp4;
-    obj.children = items;
+    items[3] = tmp4Result;
+    obj[2] = items;
     return tmp2(tmp3, obj);
   }
 }
@@ -112,9 +115,9 @@ function StartEarningButton(isTermsAccepted) {
   }
   submitAcceptTermsRequest = undefined;
   let navigation;
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = importDefault(submitAcceptTermsRequest[13])(guildId);
-  ({ error, loading, submitAcceptTermsRequest } = tmp2);
+  const tmp = createCacheKey();
+  const tmp4 = importDefault(submitAcceptTermsRequest[13])(guildId);
+  ({ error, loading, submitAcceptTermsRequest } = tmp4);
   let obj = isTermsAccepted(submitAcceptTermsRequest[14]);
   navigation = obj.useNavigation();
   const items = [submitAcceptTermsRequest];
@@ -125,151 +128,154 @@ function StartEarningButton(isTermsAccepted) {
     obj = {
       eligibility,
       onRequireModeratorMFAClick() {
-        outer1_4.push(outer2_9.SECURITY);
+
       }
     };
     return obj.openLazy(isTermsAccepted(submitAcceptTermsRequest[17])(submitAcceptTermsRequest[16], submitAcceptTermsRequest.paths), isTermsAccepted(submitAcceptTermsRequest[18]).ELIGIBILITY_ACTION_SHEET_KEY, obj);
   }, items1);
-  obj = { style: tmp.tos, leading: callback(isTermsAccepted(submitAcceptTermsRequest[19]).FormRow.Checkbox, { selected: isTermsAccepted }) };
-  obj = { variant: "text-xs/normal", color: "text-default", children: acceptTermsCheckboxText };
-  obj.label = callback(isTermsAccepted(submitAcceptTermsRequest[12]).Text, obj);
-  obj.onPress = function onPress() {
+  obj = { style: tmp.tos, leading: null, label: null, onPress: null };
+  obj[1] = callback(isTermsAccepted(submitAcceptTermsRequest[19]).FormRow.Checkbox, { selected: isTermsAccepted });
+  obj[2] = callback(isTermsAccepted(submitAcceptTermsRequest[12]).Text, { variant: "text-xs/normal", color: "text-default", children: acceptTermsCheckboxText });
+  obj[3] = function onPress() {
     return callback(!isTermsAccepted);
   };
-  const obj1 = { style };
-  let tmp9 = eligibleForMonetization;
+  obj = { style, children: null };
+  let tmp13 = eligibleForMonetization;
   if (eligibleForMonetization) {
-    tmp9 = true === flag && !isTermsAccepted || true !== flag;
-    const tmp10 = true === flag && !isTermsAccepted || true !== flag;
+    tmp13 = true === flag && !isTermsAccepted || true !== flag;
+    const tmp14 = true === flag && !isTermsAccepted || true !== flag;
   }
-  if (tmp9) {
-    tmp9 = tmp6;
+  if (tmp13) {
+    tmp13 = tmp10;
   }
-  const items2 = [tmp9, ];
+  const items2 = [tmp13, ];
+  const obj1 = { style: null, children: null };
   if (eligibleForMonetization) {
-    const obj2 = {};
-    const obj3 = { style: tmp.startEarningButton };
-    const obj4 = { loading };
-    let tmp26 = !isTermsAccepted;
-    if (!tmp26) {
-      tmp26 = !tmp2.canSubmitAcceptance;
+    obj1[0] = tmp.startEarningButton;
+    const obj2 = { loading: null, disabled: null, text: null, onPress: null };
+    obj2[0] = loading;
+    let tmp17 = !isTermsAccepted;
+    if (isTermsAccepted) {
+      tmp17 = !tmp4.canSubmitAcceptance;
     }
-    if (!tmp26) {
-      tmp26 = !eligibleForMonetization;
+    if (!tmp17) {
+      tmp17 = !eligibleForMonetization;
     }
-    obj4.disabled = tmp26;
-    const intl2 = isTermsAccepted(submitAcceptTermsRequest[10]).intl;
-    obj4.text = intl2.string(isTermsAccepted(submitAcceptTermsRequest[10]).t.NL5ZNS);
-    obj4.onPress = callback;
-    obj3.children = callback(isTermsAccepted(submitAcceptTermsRequest[20]).Button, obj4);
-    const items3 = [callback(closure_6, obj3), ];
-    let tmp30 = null != error;
-    if (tmp30) {
-      const obj5 = {};
-      const obj6 = { size: 12 };
-      const items4 = [callback(isTermsAccepted(submitAcceptTermsRequest[21]).Spacer, obj6), ];
-      const obj7 = { children: error.getAnyErrorMessage() };
-      items4[1] = callback(importDefault(submitAcceptTermsRequest[9]), obj7);
-      obj5.children = items4;
-      tmp30 = callback2(closure_13, obj5);
-      const tmp38 = importDefault(submitAcceptTermsRequest[9]);
+    obj2[1] = tmp17;
+    const intl2 = tmp5(tmp3[10]).intl;
+    obj2[2] = intl2.string(tmp5(tmp3[10]).t.NL5ZNS);
+    obj2[3] = callback;
+    obj1[1] = tmp9(tmp5(tmp3[20]).Button, obj2);
+    const items3 = [tmp9(tmp12, obj1), ];
+    let tmp11Result = null != error;
+    if (tmp11Result) {
+      const obj3 = { children: null };
+      const items4 = [tmp9(tmp5(tmp3[21]).Spacer, { size: 12 }), ];
+      const obj4 = { children: null };
+      obj4[0] = error.getAnyErrorMessage();
+      items4[1] = tmp9(tmp2(tmp3[9]), obj4);
+      obj3[0] = items4;
+      tmp11Result = tmp11(tmp16, obj3);
+      const tmp2Result = tmp2(tmp3[9]);
     }
-    items3[1] = tmp30;
-    obj2.children = items3;
-    let tmp19Result = callback2(closure_13, obj2);
-    const tmp19 = callback2;
-    const tmp20 = closure_13;
-    const tmp21 = callback;
-    const tmp22 = closure_6;
-    const tmp23 = callback;
+    const obj5 = { children: null };
+    items3[1] = tmp11Result;
+    obj5[0] = items3;
+    tmp11Result = tmp11(tmp16, obj5);
   } else {
-    const obj8 = { style: tmp.startEarningButton };
-    const obj9 = { loading };
-    const intl = isTermsAccepted(submitAcceptTermsRequest[10]).intl;
-    obj9.text = intl.string(isTermsAccepted(submitAcceptTermsRequest[10]).t.NL5ZNS);
-    const obj10 = { source: importDefault(submitAcceptTermsRequest[23]), color: importDefault(submitAcceptTermsRequest[8]).unsafe_rawColors.WHITE, size: isTermsAccepted(submitAcceptTermsRequest[21]).Icon.Sizes.SMALL_20 };
-    obj9.icon = callback(isTermsAccepted(submitAcceptTermsRequest[21]).Icon, obj10);
-    const obj11 = { backgroundColor: "#EB5D30" };
-    obj9.pillStyle = obj11;
-    obj9.onPress = callback1;
-    obj8.children = callback(isTermsAccepted(submitAcceptTermsRequest[22]).BaseTextButton, obj9);
-    tmp19Result = callback(closure_6, obj8);
+    obj1[0] = tmp.startEarningButton;
+    const obj6 = { loading: null, text: null, icon: null, pillStyle: null, onPress: null };
+    obj6[0] = loading;
+    const intl = tmp5(tmp3[10]).intl;
+    obj6[1] = intl.string(tmp5(tmp3[10]).t.NL5ZNS);
+    const obj7 = { source: null, color: null, size: null };
+    obj7[0] = tmp2(tmp3[23]);
+    obj7[1] = tmp2(tmp3[8]).unsafe_rawColors.WHITE;
+    obj7[2] = tmp5(tmp3[21]).Icon.Sizes.SMALL_20;
+    obj6[2] = tmp9(tmp5(tmp3[21]).Icon, obj7);
+    obj6[3] = { backgroundColor: "#EB5D30" };
+    obj6[4] = callback1;
+    obj1[1] = tmp9(tmp5(tmp3[22]).BaseTextButton, obj6);
+    tmp11Result = tmp9(tmp12, obj1);
   }
-  items2[1] = tmp19Result;
-  obj1.children = items2;
-  return callback2(closure_6, obj1);
+  items2[1] = tmp11Result;
+  obj[1] = items2;
+  return closure_12(closure_6, obj);
 }
 class MarketingSections {
   constructor(arg0) {
     onboardingMarketing = global.onboardingMarketing;
-    obj = {};
+    c0 = undefined;
+    c1 = undefined;
+    obj = { title: null, footer: null, onLayout: null, children: null };
+    tmp = jsx;
     intl = require("getSystemLocale").intl;
-    obj.title = intl.string(require("getSystemLocale").t.R9rNIk);
+    obj[0] = intl.string(require("getSystemLocale").t.R9rNIk);
     intl2 = require("getSystemLocale").intl;
-    obj = { creatorPortalUrl: c8 };
-    obj.footer = intl2.format(require("getSystemLocale").t.oxW30N, obj);
-    obj.onLayout = global.onHowItWorksLayoutChange;
-    obj.children = jsx(require("HowItWorksCard"), {});
-    tmp = jsx(SectionContainer, obj, c10.HOW_IT_WORKS);
-    closure_0 = tmp;
-    obj1 = {};
+    obj = { creatorPortalUrl: ScrollView };
+    obj[1] = intl2.format(require("getSystemLocale").t.oxW30N, obj);
+    obj[2] = global.onHowItWorksLayoutChange;
+    obj[3] = jsx(require("HowItWorksCard"), {});
+    tmp2 = jsx(SectionContainer, obj, GuildSettingsSections.HOW_IT_WORKS);
+    c0 = tmp2;
+    obj1 = { title: null, children: null };
     intl3 = require("getSystemLocale").intl;
-    obj1.title = intl3.string(require("getSystemLocale").t["1QHJaW"]);
-    obj1.children = jsx(require("getGreenTextStyle"), {});
-    tmp2 = jsx(SectionContainer, obj1, c10.BENEFITS);
-    closure_1 = tmp2;
+    obj1[0] = intl3.string(require("getSystemLocale").t["1QHJaW"]);
+    obj1[1] = jsx(require("EarningPreview"), {});
+    tmp3 = jsx(SectionContainer, obj1, GuildSettingsSections.BENEFITS);
+    c1 = tmp3;
     sections = undefined;
-    if (null != onboardingMarketing) {
+    if (onboardingMarketing != null) {
       sections = onboardingMarketing.sections;
     }
     if (null == sections) {
       tmp7 = jsxs;
       tmp8 = Fragment;
-      obj2 = {};
+      obj2 = { children: null };
       items = [, ];
-      items[0] = tmp;
-      items[1] = tmp2;
-      obj2.children = items;
-      tmp6 = jsxs(Fragment, obj2);
+      items[0] = tmp2;
+      items[1] = tmp3;
+      obj2[0] = items;
+      tmpResult = jsxs(Fragment, obj2);
     } else {
-      tmp4 = jsx;
       tmp5 = Fragment;
-      obj3 = {};
+      obj3 = { children: null };
       sections1 = onboardingMarketing.sections;
-      obj3.children = sections1.map((type) => {
+      obj3[0] = sections1.map((type) => {
         type = type.type;
         if (outer1_10.HOW_IT_WORKS === type) {
-          return tmp;
-        } else if (outer1_10.BENEFITS === type) {
-          return tmp2;
-        } else if (outer1_10.OTHER_CREATORS === type) {
-          let obj = {};
-          const intl = tmp(outer1_3[10]).intl;
-          obj.title = intl.string(outer1_11(outer1_3[10]).t["tJp+QV"]);
-          obj = { highlightedCreators: type.creators };
-          obj.children = outer1_11(outer1_16(outer1_3[26]), obj);
-          return outer1_11(outer1_16, obj, outer1_10.OTHER_CREATORS);
+          return _undefined;
+        } else if (tmp.BENEFITS === type) {
+          return _undefined2;
+        } else if (tmp.OTHER_CREATORS === type) {
+          let obj = { title: null, children: null };
+          const intl = _undefined(outer1_3[10]).intl;
+          obj[0] = intl.string(_undefined(outer1_3[10]).t["tJp+QV"]);
+          obj = { highlightedCreators: null };
+          obj[0] = type.creators;
+          obj[1] = outer1_11(_undefined2(outer1_3[26]), obj);
+          return outer1_11(outer1_16, obj, tmp.OTHER_CREATORS);
         }
       });
-      tmp6 = jsx(Fragment, obj3);
+      tmpResult = tmp(Fragment, obj3);
     }
-    return tmp6;
+    return tmpResult;
   }
 }
-({ View: closure_6, ScrollView: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_11, jsxs: closure_12, Fragment: closure_13 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { flex: 1 }, contentContainer: { flex: 1, padding: 24 }, heroImage: { resizeMode: "cover", width: "100%" }, subtitle: { marginTop: 8 } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginTop: 10 };
-_createForOfIteratorHelperLoose.tos = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.startEarningButton = { marginTop: 12 };
-_createForOfIteratorHelperLoose.startEarningButtonContainer = { marginTop: 14 };
-_createForOfIteratorHelperLoose.startEarningFabContainer = { marginHorizontal: 24 };
-let obj1 = { width: "100%", height: 0.8, marginTop: 36, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED };
-_createForOfIteratorHelperLoose.divider = obj1;
-_createForOfIteratorHelperLoose.sectionTitle = { marginTop: 36, marginBottom: 10 };
-_createForOfIteratorHelperLoose.sectionFooter = { marginTop: 36 };
-_createForOfIteratorHelperLoose.statusNoticeContainer = { marginHorizontal: 0, marginTop: 14 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: closure_6, ScrollView: error } = get_ActivityIndicator);
+({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = jsxProd);
+createCacheKey = { container: { flex: 1 }, contentContainer: { flex: 1, padding: 24 }, heroImage: { resizeMode: "cover", width: "100%" }, subtitle: { marginTop: 8 }, tos: null, startEarningButton: null, startEarningButtonContainer: null, startEarningFabContainer: null, divider: null, sectionTitle: null, sectionFooter: null, statusNoticeContainer: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderRadius: require("Themes").radii.sm, marginTop: 10 };
+createCacheKey[4] = createCacheKey;
+createCacheKey[5] = { marginTop: 12 };
+createCacheKey[6] = { marginTop: 14 };
+createCacheKey[7] = { marginHorizontal: 24 };
+createCacheKey[8] = { width: "100%", height: 0.8, marginTop: 36, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
+createCacheKey[9] = { marginTop: 36, marginBottom: 10 };
+createCacheKey[10] = { marginTop: 36 };
+createCacheKey[11] = { marginHorizontal: 0, marginTop: 14 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { width: "100%", height: 0.8, marginTop: 36, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/welcome/GuildSettingsRoleSubscriptionWelcomeView.tsx");
 
 export default function GuildSettingsRoleSubscriptionWelcomeView(guild) {
@@ -282,135 +288,154 @@ export default function GuildSettingsRoleSubscriptionWelcomeView(guild) {
   let isGuildOwner;
   let isLoading;
   let refreshEligibility;
-  let tmp15;
-  let tmp16;
+  let tmp10;
+  let tmp11;
+  let tmp19;
+  let tmp20;
   let wasRejectedInV1;
   guild = guild.guild;
+  refreshEligibility = undefined;
+  let ref;
   let importAll;
   let ref1;
-  let first1;
+  let first;
   let React;
-  let tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let obj = refreshEligibility(ref1[14]);
   const navigation = obj.useNavigation();
-  const tmp2 = ref(ref1[27])(guild);
-  ({ eligibility, refreshEligibility } = tmp2);
-  ({ eligibleForMonetization, acceptTermsCheckboxText, wasRejectedInV1 } = tmp2);
-  ({ isGuildOwner, eligibilityLoading, eligibilityError } = tmp2);
+  const tmp5 = ref(ref1[27])(guild);
+  ({ eligibility, refreshEligibility } = tmp5);
+  ({ eligibleForMonetization, acceptTermsCheckboxText, wasRejectedInV1, isGuildOwner, eligibilityLoading, eligibilityError } = tmp5);
   let obj1 = refreshEligibility(ref1[28]);
   const creatorMonetizationIneligibleReasons = obj1.useCreatorMonetizationIneligibleReasons(eligibility);
+  let obj2 = React;
   ({ isLoading, creatorMonetizationOnboardingMarketing } = ref(ref1[29])(guild.id));
-  const tmp5 = first1(React.useState(false), 2);
-  const first = tmp5[0];
+  const tmp7 = ref(ref1[29])(guild.id);
+  [tmp10, tmp11] = first(React.useState(false), 2);
   ref = React.useRef(true);
-  let obj2 = refreshEligibility(ref1[30]);
+  let obj3 = refreshEligibility(ref1[30]);
   const items = [ref, refreshEligibility];
-  const focusEffect = obj2.useFocusEffect(React.useCallback(() => {
+  const focusEffect = obj3.useFocusEffect(React.useCallback(() => {
     if (!ref.current) {
       refreshEligibility();
     }
   }, items));
   const effect = React.useEffect(() => {
     if (ref.current) {
-      ref.current = false;
+      tmp.current = false;
     }
   }, []);
-  obj = {};
-  const tmp4 = ref(ref1[29])(guild.id);
-  obj.type = refreshEligibility(ref1[32]).ImpressionTypes.PANE;
-  obj.name = refreshEligibility(ref1[32]).ImpressionNames.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING;
-  obj.properties = { guild_id: guild.id, is_owner: isGuildOwner, is_eligible: eligibleForMonetization, ineligible_reasons: creatorMonetizationIneligibleReasons };
+  obj = { type: null, name: null, properties: null };
+  const tmp9 = first(React.useState(false), 2);
+  obj[0] = refreshEligibility(ref1[32]).ImpressionTypes.PANE;
+  obj[1] = refreshEligibility(ref1[32]).ImpressionNames.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING;
+  obj[2] = { guild_id: guild.id, is_owner: isGuildOwner, is_eligible: eligibleForMonetization, ineligible_reasons: creatorMonetizationIneligibleReasons };
   ref(ref1[31])(obj, { disableTrack: null == guild.id || null == eligibility });
-  const tmp11 = ref(ref1[31]);
-  const tmp12 = null == guild.id || null == eligibility;
-  [tmp15, tmp16] = first1(React.useState(false), 2);
-  importAll = tmp16;
-  ref1 = React.useRef(null);
-  const tmp18 = first1(React.useState(), 2);
-  first1 = tmp18[0];
-  React = tmp20;
-  const items1 = [tmp18[1]];
-  const items2 = [tmp16, first1];
-  const callback = React.useCallback((nativeEvent) => {
+  let tmp8Result = tmp8(obj2.useState(false), 2);
+  [tmp19, tmp20] = tmp8Result;
+  importAll = tmp20;
+  ref1 = obj2.useRef(null);
+  tmp8Result = tmp8(obj2.useState(), 2);
+  first = tmp8Result[0];
+  React = tmp24;
+  const items1 = [tmp8Result[1]];
+  const items2 = [tmp20, first];
+  const callback = obj2.useCallback((nativeEvent) => {
     const y = nativeEvent.nativeEvent.layout.y;
-    let tmp = null == ref1;
-    if (!tmp) {
+    if (ref1 != null) {
       const current = ref1.current;
-      tmp = null == current;
-      const obj = current;
-    }
-    if (!tmp) {
-      obj.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
-        const diff = arg5 - refreshEligibility(ref1[33]).STATUS_BAR_HEIGHT;
-        outer1_5(closure_0 + (diff - refreshEligibility(ref1[33]).NAV_BAR_HEIGHT));
-      });
+      if (current != null) {
+        current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
+          const diff = arg5 - refreshEligibility(ref1[33]).STATUS_BAR_HEIGHT;
+          outer1_5(closure_0 + (diff - refreshEligibility(ref1[33]).NAV_BAR_HEIGHT));
+        });
+      }
     }
   }, items1);
   if (!eligibilityLoading) {
     if (null != eligibility) {
       if (!isLoading) {
         if (null != eligibilityError) {
-          let obj4 = importAll(ref1[35]);
-          const intl = refreshEligibility(ref1[10]).intl;
-          obj4.presentFailedToast(intl.string(refreshEligibility(ref1[10]).t.R0RpRX));
+          let obj5 = importAll(tmp3[35]);
+          const intl = tmp2(tmp3[10]).intl;
+          obj5.presentFailedToast(intl.string(tmp2(tmp3[10]).t.R0RpRX));
           navigation.pop();
         }
-        obj = { bottom: true, style: tmp.container };
-        obj1 = { onScroll: tmp22, scrollEventThrottle: 36 };
-        obj2 = { style: tmp.container };
-        const obj3 = { source: ref(ref1[38]), resizeMethod: "scale", style: tmp.heroImage };
-        const items3 = [callback(ref(ref1[37]), obj3), ];
-        obj4 = { ref: ref1, style: tmp.contentContainer, collapsable: false };
-        const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-        const intl2 = refreshEligibility(ref1[10]).intl;
-        obj5.children = intl2.string(refreshEligibility(ref1[10]).t.QYqDQ0);
-        const items4 = [callback(refreshEligibility(ref1[12]).Text, obj5), , , ];
-        const obj6 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default" };
-        const intl3 = refreshEligibility(ref1[10]).intl;
-        obj6.children = intl3.string(refreshEligibility(ref1[10]).t["41wkMc"]);
-        items4[1] = callback(refreshEligibility(ref1[12]).Text, obj6);
+        obj = { bottom: true, style: null, children: null };
+        obj[1] = tmp.container;
+        obj1 = { onScroll: null, scrollEventThrottle: 36, children: null };
+        obj1[0] = tmp26;
+        obj2 = { style: null, children: null };
+        obj2[0] = tmp.container;
+        obj3 = { source: null, resizeMethod: "scale", style: null };
+        obj3[0] = tmp4(tmp3[38]);
+        obj3[2] = tmp.heroImage;
+        const items3 = [callback(tmp4(tmp3[37]), obj3), ];
+        const obj4 = { ref: null, style: null, collapsable: false, children: null };
+        obj4[0] = ref1;
+        obj4[1] = tmp.contentContainer;
+        obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+        const intl2 = tmp2(tmp3[10]).intl;
+        obj5[2] = intl2.string(tmp2(tmp3[10]).t.QYqDQ0);
+        const items4 = [callback(tmp2(tmp3[12]).Text, obj5), , , ];
+        const obj6 = { style: null, variant: "text-sm/normal", color: "text-default", children: null };
+        obj6[0] = tmp.subtitle;
+        const intl3 = tmp2(tmp3[10]).intl;
+        obj6[3] = intl3.string(tmp2(tmp3[10]).t["41wkMc"]);
+        items4[1] = callback(tmp2(tmp3[12]).Text, obj6);
         if (wasRejectedInV1) {
-          const obj7 = { style: tmp.statusNoticeContainer };
-          const merged = Object.assign(tmp2);
-          let tmp42Result = tmp42(ApplicationStatusNotice, obj7);
+          const obj7 = { style: null };
+          obj7[0] = tmp.statusNoticeContainer;
+          const merged = Object.assign(tmp5);
+          let tmp31Result = tmp31(ApplicationStatusNotice, obj7);
         } else {
-          const obj8 = { style: tmp.startEarningButtonContainer, guildId: guild.id, isTermsAccepted: first, setTermsAccepted: tmp7, eligibleForMonetization, eligibility, acceptTermsCheckboxText };
-          tmp42Result = tmp42(StartEarningButton, obj8);
+          const obj8 = { style: null, guildId: null, isTermsAccepted: null, setTermsAccepted: null, eligibleForMonetization: null, eligibility: null, acceptTermsCheckboxText: null };
+          obj8[0] = tmp.startEarningButtonContainer;
+          obj8[1] = guild.id;
+          obj8[2] = tmp10;
+          obj8[3] = tmp11;
+          obj8[4] = eligibleForMonetization;
+          obj8[5] = eligibility;
+          obj8[6] = acceptTermsCheckboxText;
+          tmp31Result = tmp31(StartEarningButton, obj8);
         }
-        items4[2] = tmp42Result;
-        const obj9 = { onboardingMarketing: creatorMonetizationOnboardingMarketing, onHowItWorksLayoutChange: callback };
+        items4[2] = tmp31Result;
+        const obj9 = { onboardingMarketing: null, onHowItWorksLayoutChange: null };
+        obj9[0] = creatorMonetizationOnboardingMarketing;
+        obj9[1] = callback;
         items4[3] = callback(MarketingSections, obj9);
-        obj4.children = items4;
+        obj4[3] = items4;
         items3[1] = closure_12(closure_6, obj4);
-        obj2.children = items3;
-        obj1.children = closure_12(closure_6, obj2);
+        obj2[1] = items3;
+        obj1[2] = closure_12(closure_6, obj2);
         const items5 = [callback(closure_7, obj1), ];
-        if (tmp15) {
-          tmp15 = eligibleForMonetization;
+        if (tmp31Result) {
+          tmp31Result = eligibleForMonetization;
         }
-        if (tmp15) {
-          tmp15 = !wasRejectedInV1;
+        if (tmp31Result) {
+          tmp31Result = !wasRejectedInV1;
         }
-        if (tmp15) {
-          const obj10 = { style: tmp.startEarningFabContainer, guildId: guild.id, isTermsAccepted: first, setTermsAccepted: tmp7, eligibleForMonetization, eligibility, acceptTermsCheckboxText, isFab: true };
-          tmp15 = callback(StartEarningButton, obj10);
+        if (tmp31Result) {
+          const obj10 = { style: null, guildId: null, isTermsAccepted: null, setTermsAccepted: null, eligibleForMonetization: null, eligibility: null, acceptTermsCheckboxText: null, isFab: true };
+          obj10[0] = tmp.startEarningFabContainer;
+          obj10[1] = guild.id;
+          obj10[2] = tmp10;
+          obj10[3] = tmp11;
+          obj10[4] = eligibleForMonetization;
+          obj10[5] = eligibility;
+          obj10[6] = acceptTermsCheckboxText;
+          tmp31Result = tmp31(StartEarningButton, obj10);
         }
-        items5[1] = tmp15;
-        obj.children = items5;
-        let tmp28Result = closure_12(refreshEligibility(ref1[36]).SafeAreaPaddingView, obj);
-        const tmp28 = closure_12;
-        const tmp31 = callback;
+        items5[1] = tmp31Result;
+        obj[2] = items5;
+        let tmp30Result = tmp30(tmp2(tmp3[36]).SafeAreaPaddingView, obj);
         const tmp32 = closure_7;
-        const tmp33 = closure_12;
-        const tmp34 = closure_6;
-        const tmp37 = ref(ref1[37]);
-        const tmp38 = closure_12;
-        const tmp39 = closure_6;
+        const tmp4Result = tmp4(tmp3[37]);
       }
-      return tmp28Result;
+      return tmp30Result;
     }
   }
-  tmp28Result = callback(ref(ref1[34]), {});
+  tmp30Result = callback(tmp4(tmp3[34]), {});
 };
 export { SectionContainer };
 export { MarketingSections };

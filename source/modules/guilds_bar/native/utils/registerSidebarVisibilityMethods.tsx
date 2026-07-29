@@ -1,59 +1,58 @@
-// Module ID: 14993
-// Function ID: 114151
+// Module ID: 15019
+// Function ID: 15020
 // Name: registerGuildVisibilityMethod
-// Dependencies: [8424, 1838, 5005, 2]
+// Dependencies: [8448, 1862, 5027, 2]
 // Exports: registerFastListChannelVisibilityMethod, registerGuildVisibilityMethod
 
-// Module 14993 (registerGuildVisibilityMethod)
+// Module 15019 (registerGuildVisibilityMethod)
 import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { GuildsNodeType } from "_isNativeReflectConstruct";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import insertUnsortedGuilds from "insertUnsortedGuilds";
+import { GuildsNodeType } from "insertUnsortedGuilds";
 
-let closure_0;
+let c0;
 let closure_1;
-({ setGetVisibleChannelIds: closure_0, setGetVisibleGuildIds: closure_1 } = SidebarVisibilityMethodStore);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guilds_bar/native/utils/registerSidebarVisibilityMethods.tsx");
+({ setGetVisibleChannelIds: c0, setGetVisibleGuildIds: closure_1 } = SidebarVisibilityMethodStore);
+const result = require("insertUnsortedGuilds").fileFinishedImporting("modules/guilds_bar/native/utils/registerSidebarVisibilityMethods.tsx");
 
-export const registerGuildVisibilityMethod = function registerGuildVisibilityMethod(fastListRef) {
-  const current = fastListRef.current;
+export const registerGuildVisibilityMethod = function registerGuildVisibilityMethod(listProps) {
+  const current = listProps.current;
   if (null != current) {
     callback2(() => {
-      if (null == store) {
+      if (null == scrollPosition) {
         return [];
       } else {
-        const items = store.getItems();
-        store = store.getScrollPosition();
-        const containerSize = store.containerSize;
+        const items = obj.getItems();
+        scrollPosition = obj.getScrollPosition();
+        const containerSize = obj.containerSize;
         const guilds = outer1_2.getGuilds();
         const guildsTree = outer1_3.getGuildsTree();
         const _Set = Set;
         const set = new Set();
         let item = items.forEach((recyclerKey) => {
-          node = node.getNode(recyclerKey.recyclerKey);
-          if (undefined !== node) {
+          let forEach = node.getNode(recyclerKey.recyclerKey);
+          if (undefined !== forEach) {
             const layoutStart = recyclerKey.layoutStart;
-            let tmp3 = layoutStart + recyclerKey.layoutSize >= closure_0;
-            if (tmp3) {
-              tmp3 = layoutStart <= closure_0 + containerSize;
+            let tmp2 = layoutStart + recyclerKey.layoutSize >= closure_0;
+            if (tmp2) {
+              tmp2 = layoutStart <= tmp + containerSize;
             }
-            if (tmp3) {
-              (function addGuildsInNode(node) {
-                if (node.type === outer3_4.FOLDER) {
-                  let children = node.children;
-                } else {
-                  children = [node];
+            if (tmp2) {
+              if (forEach.type === set.FOLDER) {
+                let children = forEach.children;
+              } else {
+                children = [forEach];
+              }
+              forEach = children.forEach;
+              const item = forEach((type) => {
+                let tmp = type.type === outer1_4.GUILD;
+                if (tmp) {
+                  tmp = type.id in createGuildRecordFromRust;
                 }
-                const item = children.forEach((type) => {
-                  let tmp = type.type === outer4_4.GUILD;
-                  if (tmp) {
-                    tmp = type.id in outer2_2;
-                  }
-                  if (tmp) {
-                    outer2_4.add(type.id);
-                  }
-                });
-              })(node);
+                if (tmp) {
+                  set.add(type.id);
+                }
+              });
             }
           }
         });
@@ -71,35 +70,35 @@ export const registerFastListChannelVisibilityMethod = function registerFastList
       if (null == containerSize) {
         return [];
       } else {
-        const items = containerSize.getItems();
-        const scrollPosition = containerSize.getScrollPosition();
-        containerSize = containerSize.containerSize;
+        const items = obj.getItems();
+        const scrollPosition = obj.getScrollPosition();
+        containerSize = obj.containerSize;
         const items1 = [];
         const item = items.forEach((section) => {
-          channelFromSectionRow = channelFromSectionRow.getChannelFromSectionRow(section.section, section.item);
-          let channel;
-          if (null != channelFromSectionRow) {
-            channel = channelFromSectionRow.channel;
-          }
-          while (true) {
-            let tmp4 = channel;
-            let tmp5 = null;
-            if (null != tmp3) {
-              let layoutStart = section.layoutStart;
-              let tmp7 = channelFromSectionRow;
-              let tmp8 = layoutStart + section.layoutSize >= channelFromSectionRow;
-              let tmp9 = tmp8;
-              if (tmp8) {
-                let tmp10 = layoutStart;
-                let tmp11 = channelFromSectionRow;
-                let tmp12 = containerSize;
-                tmp9 = tmp6 <= channelFromSectionRow + containerSize;
+          try {
+            try {
+              channelFromSectionRow = channelFromSectionRow.getChannelFromSectionRow(section.section, section.item);
+              let channel;
+              if (channelFromSectionRow != null) {
+                channel = channelFromSectionRow.channel;
               }
-              if (tmp9) {
-                let tmp13 = items1;
-                let tmp14 = channel;
-                let arr = items1.push(tmp3.id);
+              if (null != channel) {
+                const layoutStart = section.layoutStart;
+                let tmp12 = layoutStart + section.layoutSize >= channelFromSectionRow;
+                if (tmp12) {
+                  tmp12 = layoutStart <= tmp11 + containerSize;
+                }
+                if (tmp12) {
+                  items1.push(tmp8.id);
+                }
               }
+            } catch (err) {
+            }
+          } catch (tmp17) {
+            if (null == tmp2) {
+              return tmp;
+            } else {
+              throw tmp17;
             }
           }
         });

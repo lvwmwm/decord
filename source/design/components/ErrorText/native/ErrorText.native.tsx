@@ -1,38 +1,37 @@
-// Module ID: 6708
-// Function ID: 59057
+// Module ID: 6729
+// Function ID: 6730
 // Name: ErrorText
-// Dependencies: [31, 33, 3871, 4011, 4576, 6709, 4161, 2]
+// Dependencies: [19, 21, 3895, 4035, 4598, 6730, 4185, 2]
 // Exports: ErrorText
 
-// Module 6708 (ErrorText)
-import result from "result";
+// Module 6729 (ErrorText)
+import noop from "noop";
 import jsxProd from "jsxProd";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+({ jsx: c3, jsxs: c4 } = jsxProd);
 const result = require("getNodeText").fileFinishedImporting("design/components/ErrorText/native/ErrorText.native.tsx");
 
 export const ErrorText = function ErrorText(children) {
   children = children.children;
-  let obj = nodeText(3871);
+  let nodeText;
+  let obj = nodeText(3895);
   nodeText = obj.getNodeText(children);
   const items = [nodeText];
   const effect = React.useEffect(() => {
-    let tmp = null != nodeText;
-    if (tmp) {
-      tmp = "" !== nodeText;
+    let tmp2 = null != nodeText;
+    if (tmp2) {
+      tmp2 = "" !== tmp;
     }
-    if (tmp) {
+    if (tmp2) {
       const AccessibilityAnnouncer = nodeText(outer1_1[3]).AccessibilityAnnouncer;
-      AccessibilityAnnouncer.announce(nodeText);
+      AccessibilityAnnouncer.announce(tmp);
     }
   }, items);
-  obj = { direction: "horizontal", spacing: 4, align: "flex-start", style: children.style };
-  const items1 = [callback(nodeText(6709).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), ];
-  obj = { variant: "text-xs/medium", color: "text-feedback-critical", children };
-  items1[1] = callback(nodeText(4161).Text, obj);
-  obj.children = items1;
-  return callback2(nodeText(4576).Stack, obj);
+  obj = { direction: "horizontal", spacing: 4, align: "flex-start", style: children.style, children: null };
+  const items1 = [callback(nodeText(6730).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), callback(nodeText(4185).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })];
+  obj[4] = items1;
+  return callback2(nodeText(4598).Stack, obj);
 };

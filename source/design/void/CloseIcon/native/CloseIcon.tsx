@@ -1,11 +1,11 @@
-// Module ID: 13109
-// Function ID: 101186
+// Module ID: 13132
+// Function ID: 13133
 // Name: Close
-// Dependencies: [31, 33, 8507, 2]
+// Dependencies: [19, 21, 8531, 2]
 // Exports: default
 
-// Module 13109 (Close)
-import "result";
+// Module 13132 (Close)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -24,15 +24,12 @@ export default function Close(width) {
   if (str === undefined) {
     str = "currentColor";
   }
-  let obj = { width: 0, height: 0, color: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(width, obj);
-  obj = {};
+  const merged = Object.assign(width, Object.create(null));
+  const obj = {};
   const merged1 = Object.assign(merged);
-  obj["width"] = num;
-  obj["height"] = num2;
-  obj["viewBox"] = "0 0 24 24";
-  obj = { fill: str, d: "M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z" };
-  obj["children"] = jsx(require(8507) /* inlineStyles */.Path, { fill: str, d: "M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z" });
-  return jsx(require(8507) /* inlineStyles */.Svg, { fill: str, d: "M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z" });
+  obj.width = num;
+  obj.height = num2;
+  obj.viewBox = "0 0 24 24";
+  obj.children = jsx(require(8531) /* inlineStyles */.Path, { fill: str, d: "M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z" });
+  return jsx(require(8531) /* inlineStyles */.Svg, {});
 };

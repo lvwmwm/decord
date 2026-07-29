@@ -1,31 +1,31 @@
-// Module ID: 6638
-// Function ID: 58525
+// Module ID: 6659
+// Function ID: 6660
 // Name: BuyNitroPlanPriceDetails
-// Dependencies: [31, 27, 5654, 1852, 482, 33, 4165, 689, 566, 5651, 4161, 1212, 2]
+// Dependencies: [19, 17, 5672, 1876, 505, 21, 4189, 712, 589, 5669, 4185, 1236, 2]
 // Exports: default
 
-// Module 6638 (BuyNitroPlanPriceDetails)
-import "result";
+// Module 6659 (BuyNitroPlanPriceDetails)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import updateProduct from "updateProduct";
 import GuildFeatures from "GuildFeatures";
 import { CurrencyCodes } from "sum";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
+let c4;
+let c5;
+let error;
+let metroImportAll;
 const require = arg1;
-({ SubscriptionIntervalTypes: closure_4, SubscriptionPlanInfo: closure_5 } = GuildFeatures);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.centeredText = { textAlign: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroPlanPriceDetails.tsx");
+({ SubscriptionIntervalTypes: c4, SubscriptionPlanInfo: c5 } = GuildFeatures);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { container: null, centeredText: null };
+createCacheKey = { gap: require("Themes").space.PX_4 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { textAlign: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("updateProduct").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroPlanPriceDetails.tsx");
 
 export default function BuyNitroPlanPriceDetails(centered) {
   let discounted;
@@ -39,16 +39,17 @@ export default function BuyNitroPlanPriceDetails(centered) {
     flag = false;
   }
   ({ priceStringByProductId, trialTier, discounted } = planSelection);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   if (flag) {
     const centeredText = tmp.centeredText;
   }
-  let obj = item(566);
-  const items = [_isNativeReflectConstruct];
+  let formatToPlainStringResult = dependencyMap;
+  let obj = item(589);
+  const items = [updateProduct];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const product = outer1_3.getProduct(item.productId);
     let formatted;
-    if (null != product) {
+    if (product != null) {
       formatted = product.currencyCode.toLowerCase();
       const str = product.currencyCode;
     }
@@ -60,67 +61,79 @@ export default function BuyNitroPlanPriceDetails(centered) {
   const value = priceStringByProductId.get(item.productId);
   if (null != trialTier) {
     if (item.premiumTier === trialTier) {
-      let obj8 = item(5651);
-      obj = { style: tmp.container };
-      obj = { variant: "text-xs/semibold", color: "text-default", style: centeredText };
-      const intl3 = item(1212).intl;
-      let obj1 = { price: obj8.formatPrice(0, stateFromStores, { minimumFractionDigits: 0, maximumFractionDigits: 0 }) };
-      obj.children = intl3.formatToPlainString(item(1212).t.hXcaLT, obj1);
-      const items1 = [callback(item(4161).Text, obj), ];
+      let tmp2Result = tmp2(5669);
+      obj = { style: null, children: null };
+      obj[0] = tmp.container;
+      obj = { variant: "text-xs/semibold", color: "text-default", style: null, children: null };
+      obj[2] = centeredText;
+      const intl3 = tmp2(1236).intl;
+      const obj1 = { price: null };
+      obj1[0] = tmp2Result.formatPrice(0, stateFromStores, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+      obj[3] = intl3.formatToPlainString(tmp2(1236).t.hXcaLT, obj1);
+      const items1 = [callback(tmp2(4185).Text, obj), ];
       if (null == value) {
-        items1[1] = tmp27;
-        obj.children = items1;
-        return tmp24(tmp25, obj);
+        items1[1] = tmp17;
+        obj[1] = items1;
+        return tmp14(tmp15, obj);
       } else {
-        let obj2 = { variant: "text-xs/medium", color: "text-subtle", style: centeredText };
-        const intl4 = item(1212).intl;
+        const obj2 = { variant: "text-xs/medium", color: "text-subtle", style: null, children: null };
+        obj2[2] = centeredText;
+        const intl4 = tmp2(1236).intl;
         if (item.interval === constants.YEAR) {
-          let v9QeON = item(1212).t.ECT4A5;
+          let v9QeON = tmp2(1236).t.ECT4A5;
         } else {
-          v9QeON = item(1212).t.v9QeON;
+          v9QeON = tmp2(1236).t.v9QeON;
         }
-        const obj3 = { price: value };
-        obj2.children = intl4.formatToPlainString(v9QeON, obj3);
-        callback(item(4161).Text, obj2);
-        const tmp28 = callback;
+        const obj3 = { price: null };
+        obj3[0] = value;
+        formatToPlainStringResult = intl4.formatToPlainString(v9QeON, obj3);
+        obj2[3] = formatToPlainStringResult;
+        tmp16(tmp2(4185).Text, obj2);
       }
-      const formatPriceResult = obj8.formatPrice(0, stateFromStores, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
-      tmp24 = closure_8;
-      tmp25 = View;
+      const formatPriceResult = tmp2Result.formatPrice(0, stateFromStores, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+      tmp14 = closure_8;
+      tmp15 = View;
+      tmp16 = callback;
     }
   }
   if (item.productId === discounted.id) {
     if (null != discounted.priceString) {
-      let intervalCount;
-      if (null != table[item.basePlanId]) {
-        intervalCount = tmp38.intervalCount;
+      let num;
+      if (table[item.basePlanId] != null) {
+        num = tmp21.intervalCount;
       }
-      let num = 1;
-      if (null != intervalCount) {
-        num = intervalCount;
+      if (num == null) {
+        num = 1;
       }
-      obj1 = item(5651);
+      tmp2Result = tmp2(5669);
       let formatRateResult1 = null;
       if (null != value) {
-        obj2 = item(5651);
-        formatRateResult1 = obj2.formatRate(value, item.interval, num);
+        formatRateResult1 = tmp2(5669).formatRate(value, item.interval, num);
+        const tmp2Result1 = tmp2(5669);
       }
-      const obj4 = { style: tmp.container };
-      const obj5 = { variant: "text-xs/semibold", color: "text-default", style: centeredText };
-      const intl = item(1212).intl;
-      const obj6 = { discountedPrice: obj1.formatRate(discounted.priceString, item.interval, num), numMonths: discounted.numMonths };
-      obj5.children = intl.formatToPlainString(item(1212).t["02Gmgm"], obj6);
-      const items2 = [callback(item(4161).Text, obj5), ];
-      let tmp17 = null != formatRateResult1;
-      if (tmp17) {
-        const obj7 = { variant: "text-xs/medium", color: "text-subtle", style: centeredText };
-        const intl2 = item(1212).intl;
-        obj8 = { regularPrice: formatRateResult1, numMonths: discounted.numMonths };
-        obj7.children = intl2.formatToPlainString(item(1212).t["vZk+c/"], obj8);
-        tmp17 = callback(item(4161).Text, obj7);
+      const obj4 = { style: null, children: null };
+      obj4[0] = tmp.container;
+      const obj5 = { variant: "text-xs/semibold", color: "text-default", style: null, children: null };
+      obj5[2] = centeredText;
+      const intl = tmp2(1236).intl;
+      const obj6 = { discountedPrice: null, numMonths: null };
+      obj6[0] = tmp2Result.formatRate(discounted.priceString, item.interval, num);
+      obj6[1] = discounted.numMonths;
+      obj5[3] = intl.formatToPlainString(tmp2(1236).t["02Gmgm"], obj6);
+      const items2 = [callback(tmp2(4185).Text, obj5), ];
+      let tmp11Result = null != formatRateResult1;
+      if (tmp11Result) {
+        const obj7 = { variant: "text-xs/medium", color: "text-subtle", style: null, children: null };
+        obj7[2] = centeredText;
+        const intl2 = tmp2(1236).intl;
+        const obj8 = { regularPrice: null, numMonths: null };
+        obj8[0] = formatRateResult1;
+        obj8[1] = discounted.numMonths;
+        obj7[3] = intl2.formatToPlainString(tmp2(1236).t["vZk+c/"], obj8);
+        tmp11Result = callback(tmp2(4185).Text, obj7);
       }
-      items2[1] = tmp17;
-      obj4.children = items2;
+      items2[1] = tmp11Result;
+      obj4[1] = items2;
       return closure_8(View, obj4);
     }
   }

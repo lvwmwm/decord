@@ -1,51 +1,135 @@
-// Module ID: 10142
-// Function ID: 78417
+// Module ID: 10163
+// Function ID: 10164
 // Name: _acceptMessageRequest
-// Dependencies: [5, 653, 507, 10143, 686, 5623, 2]
+// Dependencies: [5, 676, 530, 10164, 709, 5641, 2]
 // Exports: acceptMessageRequest, clearMessageRequestState, fetchUserCountryCode, markAsMessageRequest, rejectMessageRequest, rejectMessageRequestBatch
 
-// Module 10142 (_acceptMessageRequest)
-import dispatchLogout from "dispatchLogout";
+// Module 10163 (_acceptMessageRequest)
+import handleLogout from "handleLogout";
 import { Endpoints } from "ME";
 
 const require = arg1;
 function _acceptMessageRequest() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    return (function*(arg0) {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              const table = tmp2;
+              const callback2 = tmp5;
+              const HTTP = callback(outer1_2[2]).HTTP;
+              const obj1 = { url: null, body: null, rejectWithError: null };
+              obj1[0] = c4.CHANNEL_RECIPIENT_ME(callback);
+              const obj2 = { consent_status: null };
+              obj2[0] = callback(outer1_2[3]).MessageRequestConsentStatusTypes.ACCEPTED;
+              obj1[1] = obj2;
+              obj1[2] = callback(outer1_2[2]).rejectWithMigratedError();
+              c3 = 1;
+              c4 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = HTTP.put(obj1);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = arg1;
+            return obj4;
+          } else {
+            obj = callback2(table[4]);
+            const obj5 = { type: "MESSAGE_REQUEST_ACCEPT_OPTIMISTIC", channelId: null };
+            obj5[1] = callback;
+            obj.dispatch(obj5);
+            c4 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp12) {
+          c4 = tmp;
+          throw tmp12;
+        }
+      }
+    })();
+  });
+  const _acceptMessageRequest = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/message_request/MessageRequestActionCreators.tsx");
+const result = require("sendRequest").fileFinishedImporting("modules/message_request/MessageRequestActionCreators.tsx");
 
 export const acceptMessageRequest = function acceptMessageRequest(arg0) {
-  return _acceptMessageRequest(...arguments);
+  const self = this;
+  const apply = _acceptMessageRequest.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const clearMessageRequestState = function clearMessageRequestState(id) {
-  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-  let obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(id) };
-  obj = { consent_status: require(10143) /* MessageRequestConsentStatusTypes */.MessageRequestConsentStatusTypes.UNSPECIFIED };
-  obj.body = obj;
-  obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
+  const HTTP = require(530) /* sendRequest */.HTTP;
+  let obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(id), body: null, rejectWithError: null };
+  obj = { consent_status: require(10164) /* MessageRequestConsentStatusTypes */.MessageRequestConsentStatusTypes.UNSPECIFIED };
+  obj[1] = obj;
+  obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
   return HTTP.put(obj);
 };
 export const markAsMessageRequest = function markAsMessageRequest(id) {
-  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-  let obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(id) };
-  obj = { consent_status: require(10143) /* MessageRequestConsentStatusTypes */.MessageRequestConsentStatusTypes.PENDING };
-  obj.body = obj;
-  obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
+  const HTTP = require(530) /* sendRequest */.HTTP;
+  let obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(id), body: null, rejectWithError: null };
+  obj = { consent_status: require(10164) /* MessageRequestConsentStatusTypes */.MessageRequestConsentStatusTypes.PENDING };
+  obj[1] = obj;
+  obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
   return HTTP.put(obj);
 };
-export const rejectMessageRequest = function rejectMessageRequest(id) {
-  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-  const obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(id), rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
+export const rejectMessageRequest = function rejectMessageRequest(closure_0) {
+  const HTTP = require(530) /* sendRequest */.HTTP;
+  const obj = { url: Endpoints.CHANNEL_RECIPIENT_ME(closure_0), rejectWithError: null };
+  obj[1] = require(530) /* sendRequest */.rejectWithMigratedError();
   return HTTP.del(obj);
 };
-export const rejectMessageRequestBatch = function rejectMessageRequestBatch(value) {
-  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-  obj = { url: Endpoints.CHANNEL_RECIPIENT_REJECT_BATCH(), body: obj };
-  obj = { channel_ids: value, rejectWithError: require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError() };
+export const rejectMessageRequestBatch = function rejectMessageRequestBatch(closure_0) {
+  const HTTP = require(530) /* sendRequest */.HTTP;
+  obj = { url: Endpoints.CHANNEL_RECIPIENT_REJECT_BATCH(), body: obj, rejectWithError: null };
+  obj = { channel_ids: closure_0 };
+  obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
   return HTTP.put(obj);
 };
 export const fetchUserCountryCode = function fetchUserCountryCode() {
-  const locationMetadata = importDefault(5623).getLocationMetadata();
+  const locationMetadata = importDefault(5641).getLocationMetadata();
 };

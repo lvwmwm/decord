@@ -1,12 +1,12 @@
-// Module ID: 16433
-// Function ID: 128087
+// Module ID: 16468
+// Function ID: 16469
 // Name: useGuildSettingsRoleExampleMessage
-// Dependencies: [31, 1858, 653, 4386, 6020, 1212, 7960, 16434, 2]
+// Dependencies: [19, 1882, 676, 4409, 6038, 1236, 7985, 16469, 2]
 // Exports: useGuildSettingsRoleExampleMessage
 
-// Module 16433 (useGuildSettingsRoleExampleMessage)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16468 (useGuildSettingsRoleExampleMessage)
+import noop from "noop";
+import createdAt from "createdAt";
 import { MessageStates } from "ME";
 
 const require = arg1;
@@ -20,18 +20,18 @@ export const useGuildSettingsRoleExampleMessage = function useGuildSettingsRoleE
     obj = {};
     obj = { channelId: "1337", content: intl };
     const merged = Object.assign(outer1_1(outer1_3[4])(obj));
-    obj["state"] = outer1_6.SENT;
-    obj["id"] = "31337";
+    obj.state = outer1_6.SENT;
+    obj.id = "31337";
     const messageRecord = obj.createMessageRecord(obj);
     const obj1 = { id: "313337", username: null, discriminator: "0000", bot: false };
     intl = intl(outer1_3[5]).intl;
-    obj1.username = intl.string(intl(outer1_3[5]).t.cqpybK);
+    obj1[1] = intl.string(intl(outer1_3[5]).t.cqpybK);
     const tmp3 = new outer1_5(obj1);
     messageRecord.author = tmp3;
     const insertStaticUserResult = outer1_2(outer1_3[6]).insertStaticUser(tmp3);
     if (null != insertStaticUserResult) {
       messageRecord.author = insertStaticUserResult;
-      messageRecord.author.getAvatarURL = () => outer2_1(outer2_3[7]);
+      messageRecord.author.getAvatarURL = () => callback(table[7]);
     }
     return messageRecord;
   }, items);

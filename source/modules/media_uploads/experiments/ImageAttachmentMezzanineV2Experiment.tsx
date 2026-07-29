@@ -1,14 +1,13 @@
-// Module ID: 4747
-// Function ID: 41121
+// Module ID: 4769
+// Function ID: 4770
 // Name: getImageAttachmentMezzanineV2Config
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: getImageAttachmentMezzanineV2Config
 
-// Module 4747 (getImageAttachmentMezzanineV2Config)
+// Module 4769 (getImageAttachmentMezzanineV2Config)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2025-09-image-attachment-mezzanine-v2", kind: "user", defaultConfig: { enabled: false }, variations: { [0]: { enabled: false }, [1]: { enabled: true, maxFileSizeBytes: 524288 }, [2]: { enabled: true, maxFileSizeBytes: 262144 } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+let closure_0 = ApexExperiment.createApexExperiment({ name: "2025-09-image-attachment-mezzanine-v2", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true, maxFileSizeBytes: 524288 }, 2: { enabled: true, maxFileSizeBytes: 262144 } } });
 const result = require("set").fileFinishedImporting("modules/media_uploads/experiments/ImageAttachmentMezzanineV2Experiment.tsx");
 
 export const getImageAttachmentMezzanineV2Config = function getImageAttachmentMezzanineV2Config(location) {

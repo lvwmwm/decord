@@ -1,166 +1,26 @@
-// Module ID: 10018
-// Function ID: 77335
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 57, 31, 27, 4178, 10016, 10019, 4183, 4026, 10020, 620, 10021, 10022, 10023, 682, 2]
+// Module ID: 10040
+// Function ID: 10041
+// Name: getTargetCardSize
+// Dependencies: [32, 19, 17, 4202, 10038, 10041, 4207, 4050, 10042, 643, 10043, 10044, 10045, 705, 2]
 // Exports: useCardLayoutCoordsSubscription, useManagerSubscription, useTargetDimensionsSubscription
 
-// Module 10018 (_createForOfIteratorHelperLoose)
-import closure_3 from "VoicePanelModes";
-import closure_4 from "CARD_SIZE";
+// Module 10040 (getTargetCardSize)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { PixelRatio } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import getParticipants from "getParticipants";
 import VoicePanelModes from "VoicePanelModes";
 import CARD_SIZE from "CARD_SIZE";
 import { ParticipantTypes } from "ParticipantTypes";
-import set from "_slicedToArray";
+import set from "get ActivityIndicator";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_13;
-let closure_14;
-let closure_15;
-const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function getOrCreateRow(arg0, arg1, arr) {
-  let tmp = arr[arg0];
-  if (null == tmp) {
-    const _Array = Array;
-    const array = new Array(arg1);
-    const fillResult = array.fill(0);
-    arr.push(fillResult);
-    tmp = fillResult;
-  }
-  return tmp;
-}
-function getTargetAspectRatio(width) {
-  const result = width.width / width.height;
-  let str = "landscape";
-  if (result < 1.3) {
-    let str2 = "square";
-    if (result <= 0.8) {
-      str2 = "portrait";
-    }
-    str = str2;
-  }
-  return str;
-}
-function getGridDimensionsFromAspectRatio(arg0, arg1, fillAspectRatio) {
-  if ("portrait" === arg0) {
-    if (fillAspectRatio.fillAspectRatio) {
-      if (arg1) {
-        let obj = { width: 2, height: 2 };
-      } else {
-        obj = { width: 2 };
-        let num5 = 0;
-        if (arg3) {
-          num5 = 1;
-        }
-        obj.height = 3 + num5;
-      }
-    } else {
-      return { width: 1, height: 2 };
-    }
-  } else if ("landscape" === arg0) {
-    if (fillAspectRatio.fillAspectRatio) {
-      if (arg1) {
-        obj = {};
-        let num = 0;
-        if (arg3) {
-          num = 1;
-        }
-        obj.width = 3 + num;
-        obj.height = 2;
-      } else {
-        obj = { width: 2, height: 2 };
-      }
-    } else {
-      return { width: 2, height: 1 };
-    }
-  } else if ("square" === arg0) {
-    return fillAspectRatio.enlargeSquare ? { width: 2, height: 2 } : { width: 1, height: 1 };
-  }
-}
+let map1;
+let metroImportAll;
+let unpackModuleId;
+let require = arg1;
 function getTargetCardSize(windowWidth) {
   let safeAreaLeft;
   let safeAreaRight;
@@ -170,870 +30,916 @@ function getTargetCardSize(windowWidth) {
   if (windowWidth > windowWidth.windowHeight) {
     num = 4;
   }
-  return Math.max(closure_10, (windowWidth - safeAreaLeft - safeAreaRight - closure_15 * (num - 1)) / num);
+  return Math.max(closure_8, (windowWidth - safeAreaLeft - safeAreaRight - closure_13 * (num - 1)) / num);
 }
 const VoicePanelCardItemType = VoicePanelModes.VoicePanelCardItemType;
-({ BASE_TARGET_CARD_SIZE: closure_10, VoicePanelCTACardDimensionKeys: closure_11, VoicePanelCTACardDimensions: closure_12, VOICE_PANEL_CHUNK_DIVISOR: closure_13 } = VoicePanelModes);
-({ EDGE_GUTTER: closure_14, CALL_TILE_GUTTER: closure_15 } = CARD_SIZE);
-let obj = { id: "invalid", type: VoicePanelCardItemType.PARTICIPANT, x: 0, y: 0, width: 0, height: 0, zIndex: 0 };
+({ BASE_TARGET_CARD_SIZE: metroImportAll, VoicePanelCTACardDimensionKeys: c9, VoicePanelCTACardDimensions: c10, VOICE_PANEL_CHUNK_DIVISOR: unpackModuleId } = VoicePanelModes);
+({ EDGE_GUTTER: closure_12, CALL_TILE_GUTTER: map1 } = CARD_SIZE);
+let closure_15 = { id: "invalid", type: VoicePanelCardItemType.PARTICIPANT, x: 0, y: 0, width: 0, height: 0, zIndex: 0 };
 let set = new Set();
-let closure_19 = { enlargeSquare: false, fillAspectRatio: false };
-obj = { match: new Set(["1,camera", "2,camera", "2,camera,camera"]) };
+let closure_17 = { enlargeSquare: false, fillAspectRatio: false };
+let obj = { match: null, layouts: null, global: true };
+obj[0] = new Set(["1,camera", "2,camera", "2,camera,camera"]);
 let items = [{ enlargeSquare: true, fillAspectRatio: false }];
-obj.layouts = items;
-obj.global = true;
+obj[1] = items;
 let items1 = [obj, ];
-obj = {};
+obj = { match: null, layouts: null };
 let set1 = new Set(["1,camera", "2,camera", "2,camera,camera"]);
-obj.match = new Set(["1,stream", "2,stream", "3,stream", "2,stream,camera", "3,stream,camera", "3,stream,camera,camera", "3,camera", "3,camera,stream"]);
+obj[0] = new Set(["1,stream", "2,stream", "3,stream", "2,stream,camera", "3,stream,camera", "3,stream,camera,camera", "3,camera", "3,camera,stream"]);
 let items2 = [{ enlargeSquare: true, fillAspectRatio: true }, { enlargeSquare: false, fillAspectRatio: false }, { enlargeSquare: false, fillAspectRatio: false }];
-obj.layouts = items2;
+obj[1] = items2;
 items1[1] = obj;
-let set2 = new Set(["1,stream", "2,stream", "3,stream", "2,stream,camera", "3,stream,camera", "3,stream,camera,camera", "3,camera", "3,camera,stream"]);
 let result = set.fileFinishedImporting("modules/voice_panel/native/card/VoicePanelCardLayoutManager.tsx");
-
-export default (() => {
-  class VoicePanelCardLayoutManager {
-    constructor(arg0) {
-      tmp = outer1_3(this, VoicePanelCardLayoutManager);
-      this.dirty = true;
-      map = new Map();
-      this.targetDimensions = map;
-      map1 = new Map();
-      this.cardCoords = map1;
-      map2 = new Map();
-      this.chunkedCoords = map2;
-      this.contentDimensions = { width: 0, height: 0 };
-      set = new Set();
-      this.layoutCallbacks = set;
-      set1 = new Set();
-      this.managerSubscriptions = set1;
-      this.items = [];
-      this.emitItemChanges = true;
-      this.mounted = false;
-      this.layoutKey = 0;
-      this.emitTimeout = -1;
-      this.props = { windowWidth: 0, windowHeight: 0, chunkSize: 0, safeAreaLeft: 0, safeAreaRight: 0, safeAreaTop: 0, safeAreaBottom: 0, gutter: 0, controlBarSize: 0 };
-      this.defaultTargetCoords = { width: 0, height: 0 };
-      this.channelId = arg0;
-      return;
+class VoicePanelCardLayoutManager {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    map = new Map();
+    obj[1] = map;
+    map1 = new Map();
+    obj[2] = map1;
+    map2 = new Map();
+    obj[3] = map2;
+    obj[4] = { width: 0, height: 0 };
+    set = new Set();
+    obj[5] = set;
+    set1 = new Set();
+    obj[6] = set1;
+    obj[7] = [];
+    obj[12] = { windowWidth: 0, windowHeight: 0, chunkSize: 0, safeAreaLeft: 0, safeAreaRight: 0, safeAreaTop: 0, safeAreaBottom: 0, gutter: 0, controlBarSize: 0 };
+    obj[13] = { width: 0, height: 0 };
+    obj.channelId = global;
+    return obj;
+  }
+}
+const prototype = VoicePanelCardLayoutManager.prototype;
+prototype["setDirty"] = function setDirty(arg0) {
+  const self = this;
+  let tmp = arg0;
+  if (arg0) {
+    tmp = !self.dirty;
+  }
+  if (tmp) {
+    self.dirty = true;
+    self.emitItemChanges = true;
+  }
+};
+prototype["handleLayoutEffect"] = function handleLayoutEffect() {
+  this.mounted = true;
+  this.emitLayoutChanges();
+};
+prototype["cleanUp"] = function cleanUp() {
+  this.mounted = false;
+};
+prototype["updateState"] = function updateState(arr, windowHeight) {
+  let controlBarSize;
+  let safeAreaBottom;
+  let safeAreaRight;
+  let safeAreaTop;
+  const self = this;
+  windowHeight = windowHeight.windowHeight;
+  const obj = { windowHeight, windowWidth: windowHeight.windowWidth, chunkSize: windowHeight / closure_11, safeAreaLeft: Math.max(windowHeight.safeAreaLeft, closure_12), safeAreaRight: Math.max(safeAreaRight, closure_12), safeAreaBottom: Math.max(safeAreaBottom, closure_12), safeAreaTop, gutter: closure_13, controlBarSize };
+  ({ safeAreaRight, safeAreaTop, safeAreaBottom, controlBarSize } = windowHeight);
+  if (!importDefault(643)(obj, this.props)) {
+    self.props = obj;
+    self.setDirty(true);
+  }
+  const items = self.items;
+  let tmp2 = arr.length === items.length;
+  if (tmp2) {
+    tmp2 = !arr.some((arg0, arg1) => items[arg1] !== arg0);
+  }
+  self.setDirty(!tmp2);
+  self.items = arr;
+  return self.getContentDimensions();
+};
+prototype["getLayoutKey"] = function getLayoutKey() {
+  return this.layoutKey;
+};
+prototype["getChunk"] = function getChunk(arg0) {
+  const chunkedCoords = this.chunkedCoords;
+  let value = chunkedCoords.get(arg0);
+  if (value == null) {
+    value = set;
+  }
+  return value;
+};
+prototype["getContentDimensions"] = function getContentDimensions() {
+  const cardsLayout = this.computeCardsLayout();
+  return this.contentDimensions;
+};
+prototype["getCardCoords"] = function getCardCoords(closure_0) {
+  const cardsLayout = this.computeCardsLayout();
+  const cardCoords = this.cardCoords;
+  return cardCoords.get(closure_0);
+};
+prototype["getCardCoordsMap"] = function getCardCoordsMap() {
+  const cardsLayout = this.computeCardsLayout();
+  return this.cardCoords;
+};
+prototype["getDefaultTargetDimensions"] = function getDefaultTargetDimensions() {
+  return this.defaultTargetCoords;
+};
+prototype["getTargetDimensions"] = function getTargetDimensions(id) {
+  const self = this;
+  if (null == id) {
+    let defaultTargetCoords = self.defaultTargetCoords;
+  } else if (set.has(id)) {
+    defaultTargetCoords = table[id];
+  } else {
+    const targetDimensions = self.targetDimensions;
+    defaultTargetCoords = targetDimensions.get(id);
+    if (defaultTargetCoords == null) {
+      defaultTargetCoords = self.defaultTargetCoords;
     }
   }
-  let obj = {
-    key: "setDirty",
-    value(arg0) {
-      let tmp = arg0;
-      const self = this;
-      if (arg0) {
-        tmp = !self.dirty;
-      }
-      if (tmp) {
-        self.dirty = true;
-        self.emitItemChanges = true;
-      }
-    }
-  };
-  let items = [obj, , , , , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "handleLayoutEffect",
-    value() {
-      this.mounted = true;
-      this.emitLayoutChanges();
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "cleanUp",
-    value() {
-      this.mounted = false;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "updateState",
-    value(items, windowHeight) {
-      let controlBarSize;
-      let safeAreaBottom;
-      let safeAreaRight;
-      let safeAreaTop;
-      const self = this;
-      windowHeight = windowHeight.windowHeight;
-      const obj = { windowHeight, windowWidth: windowHeight.windowWidth, chunkSize: windowHeight / outer1_13, safeAreaLeft: Math.max(windowHeight.safeAreaLeft, outer1_14), safeAreaRight: Math.max(safeAreaRight, outer1_14), safeAreaBottom: Math.max(safeAreaBottom, outer1_14), safeAreaTop, gutter: outer1_15, controlBarSize };
-      ({ safeAreaRight, safeAreaTop, safeAreaBottom, controlBarSize } = windowHeight);
-      if (!outer1_1(outer1_2[11])(obj, this.props)) {
-        self.props = obj;
-        self.setDirty(true);
-      }
-      self.setDirty(!(function areArraysShallowEqual(arr, items) {
-        let closure_0 = items;
-        return arr.length === items.length && !arr.some((arg0, arg1) => items[arg1] !== arg0);
-      })(items, self.items));
-      self.items = items;
-      return self.getContentDimensions();
-    }
-  };
-  items[4] = {
-    key: "getLayoutKey",
-    value() {
-      return this.layoutKey;
-    }
-  };
-  items[5] = {
-    key: "getChunk",
-    value(arg0) {
-      const chunkedCoords = this.chunkedCoords;
-      let value = chunkedCoords.get(arg0);
-      if (null == value) {
-        value = outer1_18;
-      }
-      return value;
-    }
-  };
-  items[6] = {
-    key: "getContentDimensions",
-    value() {
-      const cardsLayout = this.computeCardsLayout();
-      return this.contentDimensions;
-    }
-  };
-  items[7] = {
-    key: "getCardCoords",
-    value(arg0) {
-      const cardsLayout = this.computeCardsLayout();
-      const cardCoords = this.cardCoords;
-      return cardCoords.get(arg0);
-    }
-  };
-  items[8] = {
-    key: "getCardCoordsMap",
-    value() {
-      const cardsLayout = this.computeCardsLayout();
-      return this.cardCoords;
-    }
-  };
-  items[9] = {
-    key: "getDefaultTargetDimensions",
-    value() {
-      return this.defaultTargetCoords;
-    }
-  };
-  items[10] = {
-    key: "getTargetDimensions",
-    value(arg0) {
-      const self = this;
-      if (null == arg0) {
-        let defaultTargetCoords = self.defaultTargetCoords;
-      } else if (outer1_11.has(arg0)) {
-        defaultTargetCoords = outer1_12[arg0];
-      } else {
-        const targetDimensions = self.targetDimensions;
-        defaultTargetCoords = targetDimensions.get(arg0);
-        if (null == defaultTargetCoords) {
-          defaultTargetCoords = self.defaultTargetCoords;
-        }
-      }
-      return defaultTargetCoords;
-    }
-  };
-  items[11] = {
-    key: "setTargetDimensions",
-    value(arg0, width, height) {
-      const self = this;
-      const size = this.getTargetDimensions(arg0);
-      if (!tmp) {
-        const targetDimensions = self.targetDimensions;
-        const obj = { width, height };
-        const result = targetDimensions.set(arg0, obj);
-        self.setDirty(true);
-        self.deferredLayoutChange();
-      }
-    }
-  };
-  items[12] = {
-    key: "resetTargetDimensions",
-    value(arg0) {
-      const self = this;
-      const targetDimensions = this.targetDimensions;
-      if (targetDimensions.has(arg0)) {
-        const targetDimensions2 = self.targetDimensions;
-        targetDimensions2.delete(arg0);
-        self.setDirty(true);
-        self.deferredLayoutChange();
-      }
-    }
-  };
-  items[13] = {
-    key: "setTargetAspectRatio",
-    value(arg0, arg1) {
-      const self = this;
-      if ("portrait" === arg1) {
-        let size = { width: 1, height: 2 };
-      } else if ("landscape" === arg1) {
-        size = { width: 2, height: 1 };
-      } else if ("square" === arg1) {
-        size = { width: 1, height: 1 };
-      }
-      const size2 = self.getTargetDimensions(arg0);
-      if (!tmp) {
-        const targetDimensions = self.targetDimensions;
-        const result = targetDimensions.set(arg0, size);
-        self.setDirty(true);
-        self.deferredLayoutChange();
-      }
-    }
-  };
-  items[14] = {
-    key: "computeCardsLayout",
-    value() {
-      let controlBarSize;
-      let gutter;
-      let iter5;
-      let iter8;
-      let safeAreaBottom;
-      let safeAreaLeft;
-      let safeAreaRight;
-      let safeAreaTop;
-      let self = this;
-      self = this;
-      self = this;
-      if (this.dirty) {
-        const _Map = Map;
-        const map = new Map();
-        self.cardCoords = map;
-        const _Map2 = Map;
-        const map1 = new Map();
-        self.chunkedCoords = map1;
-        const props = self.props;
-        const windowWidth = props.windowWidth;
-        const windowHeight = props.windowHeight;
-        ({ safeAreaLeft, safeAreaRight, safeAreaBottom, gutter } = props);
-        let _Set = Set;
-        ({ safeAreaTop, controlBarSize } = props);
-        let set = new Set();
-        const _Set2 = Set;
-        const set1 = new Set();
-        const _Set3 = Set;
-        const set2 = new Set();
-        const _Set4 = Set;
-        const set3 = new Set(self.items);
-        const _HermesInternal = HermesInternal;
-        let _isNativeReflectConstruct = "" + self.items.length;
-        let bound2 = 0;
-        function _loop(value) {
-          const participant = outer2_8.getParticipant(self.channelId, value.id);
-          if (value.type === outer2_9.CTA) {
-            const targetDimensions = self.getTargetDimensions(value.id);
-          } else if (null != participant) {
-            if (participant.type === outer2_16.USER) {
-              let defaultTargetCoords = self.defaultTargetCoords;
-            } else {
-              defaultTargetCoords = self.getTargetDimensions(value.id);
-            }
+  return defaultTargetCoords;
+};
+prototype["setTargetDimensions"] = function setTargetDimensions(stateFromStores, width, height) {
+  const self = this;
+  const size = this.getTargetDimensions(stateFromStores);
+  if (!tmp) {
+    const targetDimensions = self.targetDimensions;
+    const obj = { width: null, height: null };
+    obj[0] = width;
+    obj[1] = height;
+    const result = targetDimensions.set(stateFromStores, obj);
+    self.setDirty(true);
+    self.deferredLayoutChange();
+  }
+};
+prototype["resetTargetDimensions"] = function resetTargetDimensions(arg0) {
+  const self = this;
+  const targetDimensions = this.targetDimensions;
+  if (targetDimensions.has(arg0)) {
+    const targetDimensions2 = self.targetDimensions;
+    targetDimensions2.delete(arg0);
+    self.setDirty(true);
+    self.deferredLayoutChange();
+  }
+};
+prototype["setTargetAspectRatio"] = function setTargetAspectRatio(applicationId, landscape) {
+  if ("portrait" === landscape) {
+    let size = { width: 1, height: 2 };
+  } else if ("landscape" === landscape) {
+    size = { width: 2, height: 1 };
+  } else if ("square" === landscape) {
+    size = { width: 1, height: 1 };
+  }
+  const self = this;
+  const size2 = this.getTargetDimensions(applicationId);
+  if (!tmp) {
+    const targetDimensions = self.targetDimensions;
+    const result = targetDimensions.set(applicationId, size);
+    self.setDirty(true);
+    self.deferredLayoutChange();
+  }
+};
+prototype["computeCardsLayout"] = function computeCardsLayout() {
+  let controlBarSize;
+  let gutter;
+  let safeAreaBottom;
+  let safeAreaLeft;
+  let safeAreaRight;
+  let safeAreaTop;
+  let self = this;
+  self = this;
+  self = this;
+  if (this.dirty) {
+    const _Map = Map;
+    const map = new Map();
+    self.cardCoords = map;
+    const _Map2 = Map;
+    const map1 = new Map();
+    self.chunkedCoords = map1;
+    const props = self.props;
+    const windowWidth = props.windowWidth;
+    const windowHeight = props.windowHeight;
+    ({ safeAreaLeft, safeAreaRight, safeAreaBottom, gutter } = props);
+    let _Set = Set;
+    ({ safeAreaTop, controlBarSize } = props);
+    let set = new Set();
+    const _Set2 = Set;
+    const set1 = new Set();
+    const _Set3 = Set;
+    const set2 = new Set();
+    const _Set4 = Set;
+    const set3 = new Set(self.items);
+    const _HermesInternal = HermesInternal;
+    let closure_9 = "" + self.items.length;
+    let columns = 0;
+    for (const item10061 of set3) {
+      if ((function _loop(item10061) {
+        let obj = self;
+        const participant = set1.getParticipant(self.channelId, item10061.id);
+        if (item10061.type === set2.CTA) {
+          const targetDimensions = obj.getTargetDimensions(item10061.id);
+        } else if (null != participant) {
+          if (participant.type === tmp4.USER) {
+            let defaultTargetCoords = obj.defaultTargetCoords;
+          } else {
+            defaultTargetCoords = obj.getTargetDimensions(item10061.id);
           }
-          if (null != targetDimensions) {
-            if (null != participant) {
-              const obj = { type: "custom", item: value, forceSquare: participant.type === outer2_16.USER };
-              const type = participant.type;
-              if (outer2_16.ACTIVITY === type) {
-                set.add(obj);
-              } else if (outer2_16.STREAM === type) {
-                set1.add(obj);
-              } else if (outer2_16.USER === type) {
-                set2.add(obj);
+          tmp4 = outer1_14;
+        }
+        if (null != targetDimensions) {
+          if (null != participant) {
+            obj = { type: "custom", item: null, forceSquare: null };
+            obj[1] = item10061;
+            obj[2] = participant.type === outer1_14.USER;
+            const type = participant.type;
+            if (outer1_14.ACTIVITY === type) {
+              set.add(obj);
+            } else if (tmp17.STREAM === type) {
+              set1.add(obj);
+            } else if (tmp17.USER === type) {
+              set2.add(obj);
+            }
+            let str = "stream";
+            if (participant.type !== outer1_14.STREAM) {
+              let str2 = "activity";
+              if (participant.type === tmp17.USER) {
+                str2 = "camera";
               }
-              let str = "stream";
-              if (participant.type !== outer2_16.STREAM) {
-                let str2 = "activity";
-                if (participant.type === outer2_16.USER) {
-                  str2 = "camera";
-                }
-                str = str2;
-              }
-              _isNativeReflectConstruct = `${_isNativeReflectConstruct},${str}`;
-              set3.delete(value);
+              str = str2;
             }
-          }
-          return 1;
-        }
-        const tmp27 = outer1_21(set3);
-        let iter = tmp27();
-        if (!iter.done) {
-          while (!_loop(iter.value)) {
-            let iter2 = tmp27();
-            iter = iter2;
-            if (iter2.done) {
-              break;
-            }
+            closure_9 = `${closure_9},${str}`;
+            set3.delete(item10061);
           }
         }
-        let found = null;
-        if (0 === set.size) {
-          found = outer1_20.find((arg0) => {
-            const match = arg0.match;
-            return match.has(_isNativeReflectConstruct);
-          });
+        return 1;
+      })(item10061)) {
+        let tmp28 = obj;
+        obj.return();
+        break;
+      }
+      let tmp29 = null;
+      let found = null;
+      if (0 === set.size) {
+        let tmp31 = items1;
+        found = items1.find((arg0) => {
+          const match = arg0.match;
+          return match.has(closure_9);
+        });
+      }
+      let closure_12 = found;
+      let _Math = Math;
+      let tmp32 = self;
+      let tmp33 = windowWidth;
+      let obj = { top: null, left: null, right: null, bottom: null };
+      obj[0] = safeAreaTop;
+      obj[1] = safeAreaLeft;
+      obj[2] = safeAreaRight;
+      obj[3] = safeAreaBottom;
+      let tmp34 = closure_12;
+      let num2 = 120;
+      let bound = Math.max(120, windowHeight - self(windowWidth[11])(obj, closure_12).height - closure_12 - controlBarSize - safeAreaBottom);
+      let _Math2 = Math;
+      if (null == found) {
+        if (set.size <= 0) {
+          let tmp75 = getTargetCardSize;
+          obj = { windowWidth: null, windowHeight: null, safeAreaLeft: null, safeAreaRight: null };
+          obj[0] = windowWidth;
+          obj[1] = windowHeight;
+          obj[2] = safeAreaLeft;
+          obj[3] = safeAreaRight;
+          let num11 = 7;
+          let tmp76 = getTargetCardSize(obj);
+          if (self.items.length < 7) {
+            if (0 !== self.items.length) {
+              let obj1 = { cardCount: null, gutterSize: null, availableWidth: null, availableHeight: null };
+              obj1[0] = self.items.length;
+              obj1[1] = gutter;
+              obj1[2] = tmp36;
+              obj1[3] = bound;
+              let tmp37 = tmp32(tmp33[12])(obj1);
+              columns = tmp37.columns;
+              let cardSize = tmp37.cardSize;
+            }
+          }
+          let _Math3 = Math;
+          let num3 = 1;
+          let bound1 = Math.max((windowWidth - safeAreaLeft - safeAreaRight) / tmp76 | 0, 1);
+          columns = bound1;
+          let tmp40 = set;
+          let tmp41 = closure_13;
+          cardSize = set.roundToNearestPixel((windowWidth - safeAreaLeft - safeAreaRight - closure_13 * (bound1 - 1)) / bound1);
+          let tmp38 = bound1;
         }
-        const _Math = Math;
-        let obj = { top: safeAreaTop, left: safeAreaLeft, right: safeAreaRight, bottom: safeAreaBottom };
-        let bound = Math.max(120, windowHeight - outer1_1(outer1_2[13])(obj, outer1_14).height - outer1_14 - controlBarSize - safeAreaBottom);
-        const _Math2 = Math;
+        let _global;
+        if (found != null) {
+          _global = found.global;
+        }
+        let flag = true;
+        if (true === _global) {
+          let closure_11 = found.layouts[0];
+        }
+        let _Math6 = Math;
+        let num6 = 1;
+        let num7 = 1;
+        let rounded = Math.floor(self.items.length / tmp38);
+        if (self.items.length % tmp38 == 0) {
+          num7 = 0;
+        }
+        let sum = rounded + num7;
+        let diff = cardSize;
         if (null == found) {
-          if (set.size <= 0) {
-            obj = { windowWidth, windowHeight, safeAreaLeft, safeAreaRight };
-            if (self.items.length < 7) {
-              if (0 !== self.items.length) {
-                obj = { cardCount: self.items.length, gutterSize: gutter, availableWidth: tmp35, availableHeight: bound };
-                const tmp38 = outer1_1(outer1_2[14])(obj);
-                const columns = tmp38.columns;
-                bound2 = columns;
-                let cardSize = tmp38.cardSize;
-                let tmp39 = columns;
-                let tmp40 = columns;
-              }
-            }
-            const _Math3 = Math;
-            let bound1 = Math.max((windowWidth - safeAreaLeft - safeAreaRight) / outer1_26(obj) | 0, 1);
-            bound2 = bound1;
-            cardSize = outer1_7.roundToNearestPixel((windowWidth - safeAreaLeft - safeAreaRight - outer1_15 * (bound1 - 1)) / bound1);
-            tmp39 = bound1;
-            tmp40 = bound1;
-            const tmp82 = outer1_26(obj);
-          }
-          let _global;
-          if (null != found) {
-            _global = found.global;
-          }
-          if (true === _global) {
-            let closure_10 = found.layouts[0];
-          }
-          const _Math6 = Math;
-          let num9 = 1;
-          const rounded = Math.floor(self.items.length / tmp40);
-          if (self.items.length % tmp40 == 0) {
-            num9 = 0;
-          }
-          let sum = rounded + num9;
-          const obj1 = {};
-          let diff = cardSize;
-          if (null == found) {
+          diff = cardSize;
+          if (1 === tmp38) {
             diff = cardSize;
-            if (1 === tmp40) {
+            if (sum > 1) {
               diff = cardSize;
-              if (sum > 1) {
-                diff = cardSize;
-                if (0 === set.size) {
-                  diff = windowWidth - safeAreaLeft - safeAreaRight;
-                }
+              if (0 === set.size) {
+                diff = windowWidth - safeAreaLeft - safeAreaRight;
               }
             }
           }
-          obj1.width = diff;
-          let tmp51 = cardSize;
-          if (null == found) {
-            tmp51 = cardSize;
-            if (1 === sum) {
-              tmp51 = cardSize;
-              if (tmp40 > 1) {
-                tmp51 = cardSize;
-                if (0 === set.size) {
-                  tmp51 = bound;
-                }
+        }
+        let obj2 = { width: null, height: null };
+        obj2[0] = diff;
+        let tmp49 = cardSize;
+        if (null == found) {
+          tmp49 = cardSize;
+          if (1 === sum) {
+            tmp49 = cardSize;
+            if (tmp38 > 1) {
+              tmp49 = cardSize;
+              if (0 === set.size) {
+                tmp49 = bound;
               }
             }
           }
-          obj1.height = tmp51;
-          if (!outer1_1(outer1_2[11])(obj1, self.defaultTargetCoords)) {
-            self.defaultTargetCoords = obj1;
-          }
-          const obj2 = { cardWidth: self.defaultTargetCoords.width, cardHeight: self.defaultTargetCoords.height, gutter, totalItems: self.items.length, windowWidth };
-          const _Array = Array;
-          const array = new Array(tmp40);
-          let items = [array.fill(0)];
-          let c14 = -1;
-          let c15 = -1;
-          let closure_16 = -1;
-          let c17 = 0;
-          const items1 = [];
-          function placeItem(id, type, width, height) {
-            let columns;
-            let grid;
-            let height2;
-            let size;
+        }
+        obj2[1] = tmp49;
+        if (!tmp32(tmp33[9])(obj2, self.defaultTargetCoords)) {
+          self.defaultTargetCoords = obj2;
+        }
+        let obj3 = { cardWidth: null, cardHeight: null, gutter: null, totalItems: null, windowWidth: null };
+        obj3[0] = self.defaultTargetCoords.width;
+        obj3[1] = self.defaultTargetCoords.height;
+        obj3[2] = gutter;
+        obj3[3] = self.items.length;
+        obj3[4] = windowWidth;
+        let closure_13 = obj3;
+        let _Array = Array;
+        let tmp50 = new.target;
+        let tmp51 = new.target;
+        let tmp52 = tmp38;
+        let array = new Array(tmp38);
+        let tmp53 = array;
+        let items = [array.fill(0)];
+        let ParticipantTypes = items;
+        let num8 = -1;
+        let closure_15 = -1;
+        set = -1;
+        let closure_17 = -1;
+        let items1 = 0;
+        items1 = [];
+        let getTargetCardSize = items1;
+        let closure_20 = function placeItem(arg0, arg1, arg2, arg3) {
+
+        };
+        let require = 1 === self.items.length;
+        let items2 = [set, set1, set2, set3];
+        let tmp54 = items2;
+        let tmp55 = items2;
+        for (const item10196 of items2) {
+          function _loop2(type) {
+            let dimensions;
+            let height;
+            let item;
+            let size2;
             let startCol;
             let startRow;
-            let obj = { grid: items, lastFullyFilledRow: c14, width, height, columns: bound2 };
-            ({ grid, height, columns } = obj);
-            const bound = Math.min(obj.width, columns);
-            if (1 === columns) {
-              height = 1;
-            }
-            let sum = obj.lastFullyFilledRow + 1;
-            let num = -1;
-            let num2 = -1;
-            while (true) {
-              let tmp6 = outer2_23;
-              let arr = outer2_23(sum, columns, grid);
-              let tmp7 = sum;
-              let num3 = 0;
-              let tmp8 = num;
-              let tmp9 = num2;
-              if (0 < arr.length) {
-                while (true) {
-                  if (1 === arr[num3]) {
-                    num3 = num3 + 1;
-                    tmp8 = num;
-                    tmp9 = num2;
-                    if (num3 >= arr.length) {
-                      break;
+            let width;
+            if ("custom" === type.type) {
+              let tmp6 = closure_11;
+              if (closure_11 == null) {
+                let tmp8;
+                if (layouts != null) {
+                  tmp8 = layouts.layouts[closure_18];
+                }
+                tmp6 = tmp8;
+              }
+              if (tmp6 == null) {
+                tmp6 = outer1_17;
+              }
+              let str2 = "square";
+              if (!type.forceSquare) {
+                const size = self.getTargetDimensions(type.item.id);
+                const result = size.width / size.height;
+                let str3 = "landscape";
+                if (result < 1.3) {
+                  let str4 = "square";
+                  if (result <= 0.8) {
+                    str4 = "portrait";
+                  }
+                  str3 = str4;
+                }
+                str2 = str3;
+              }
+              let obj = { item: null, dimensions: null };
+              obj[0] = type.item;
+              if ("portrait" === str2) {
+                if (!tmp6.fillAspectRatio) {
+                  obj = { width: 1, height: 2 };
+                }
+                if (tmp14) {
+                  let obj1 = { width: 2, height: 2 };
+                } else {
+                  let num5 = 0;
+                  if (tmp15) {
+                    num5 = 1;
+                  }
+                  obj1 = { width: 2, height: null };
+                  obj1[1] = 3 + num5;
+                }
+              } else {
+                if ("landscape" === str2) {
+                  if (tmp6.fillAspectRatio) {
+                    if (tmp14) {
+                      let num3 = 0;
+                      if (tmp15) {
+                        num3 = 1;
+                      }
+                      const obj2 = { width: null, height: 2 };
+                      obj2[0] = 3 + num3;
+                      let obj3 = obj2;
+                    } else {
+                      obj3 = { width: 2, height: 2 };
                     }
                   } else {
-                    tmp8 = sum;
-                    tmp9 = num3;
-                    if (num3 + (bound - 1) < arr.length) {
-                      break;
-                    }
+                    let obj4 = { width: 2, height: 1 };
                   }
-                  break;
+                } else if ("square" === str2) {
+                  obj4 = tmp6.enlargeSquare ? { width: 2, height: 2 } : { width: 1, height: 1 };
                 }
+                obj[1] = obj4;
               }
-              if (-1 !== tmp8) {
-                if (-1 !== tmp9) {
-                  let tmp12 = tmp8;
-                  let tmp13 = tmp9;
-                  let sum2 = tmp8;
-                  let tmp15 = tmp8;
-                  let tmp16 = tmp9;
-                  let tmp17 = tmp8;
-                  if (tmp8 <= tmp8 + (height - 1)) {
-                    while (true) {
-                      let tmp18 = outer2_23;
-                      let tmp19 = outer2_23(sum2, columns, grid);
-                      let tmp20 = sum2;
-                      let sum1 = tmp13;
-                      let num4 = tmp12;
-                      let num5 = tmp13;
-                      let tmp22 = tmp13;
-                      if (tmp13 <= tmp13 + (bound - 1)) {
-                        num4 = -1;
-                        num5 = -1;
-                        tmp22 = sum1;
-                        while (0 === tmp19[sum1]) {
-                          sum1 = sum1 + 1;
-                          num4 = tmp12;
-                          num5 = tmp13;
-                          tmp22 = sum1;
-                          if (sum1 > tmp13 + (bound - 1)) {
-                            break;
+            } else {
+              obj = { item: null, dimensions: null };
+              obj[0] = type;
+              let tmp4 = closure_11;
+              if (closure_11 == null) {
+                tmp4 = outer1_17;
+              }
+              obj[1] = tmp4.enlargeSquare ? { width: 2, height: 2 } : { width: 1, height: 1 };
+              ({ item, dimensions } = obj);
+              let num7 = dimensions.height;
+              const id = item.id;
+              if (typeof closure_20 !== "find") {
+                HermesBuiltin.throwTypeError();
+              }
+              let arr = closure_14;
+              const _Math = Math;
+              const bound = Math.min(dimensions.width, c10);
+              if (1 === c10) {
+                num7 = 1;
+              }
+              let sum = closure_15 + 1;
+              let num11 = -1;
+              let num12 = -1;
+              while (true) {
+                let arr1 = arr[sum];
+                let tmp27 = num11;
+                let tmp28 = num12;
+                let tmp29 = sum;
+                let tmp30 = tmp26;
+                if (null == arr1) {
+                  let _Array = Array;
+                  let tmp31 = new.target;
+                  let tmp32 = new.target;
+                  let tmp33 = tmp21;
+                  let array = new Array(tmp21);
+                  let tmp34 = array;
+                  let fillResult = array.fill(0);
+                  arr = arr.push(fillResult);
+                  arr1 = fillResult;
+                }
+                let num13 = 0;
+                let tmp37 = num11;
+                let tmp38 = num12;
+                if (0 < arr1.length) {
+                  while (true) {
+                    let tmp39 = num13;
+                    if (1 === arr1[num13]) {
+                      num13 = num13 + 1;
+                      tmp37 = num11;
+                      tmp38 = num12;
+                      if (num13 >= arr1.length) {
+                        break;
+                      }
+                    } else {
+                      tmp37 = num13;
+                      tmp38 = sum;
+                      if (num13 + (bound - 1) < arr1.length) {
+                        break;
+                      }
+                    }
+                    break;
+                  }
+                }
+                if (-1 !== tmp38) {
+                  if (-1 !== tmp37) {
+                    let sum2 = tmp38;
+                    let tmp42 = tmp37;
+                    let tmp43 = tmp38;
+                    let tmp44 = tmp37;
+                    let tmp45 = tmp38;
+                    if (tmp38 <= tmp38 + (num7 - 1)) {
+                      while (true) {
+                        let tmp46 = arr[sum2];
+                        let tmp47 = sum2;
+                        let tmp48 = tmp42;
+                        let tmp49 = tmp43;
+                        if (null == tmp46) {
+                          let _Array2 = Array;
+                          let tmp50 = new.target;
+                          let tmp51 = new.target;
+                          let tmp52 = tmp21;
+                          array = new Array(tmp21);
+                          let tmp53 = array;
+                          let fillResult1 = array.fill(0);
+                          arr = arr.push(fillResult1);
+                          tmp46 = fillResult1;
+                        }
+                        let sum1 = tmp42;
+                        let num16 = tmp42;
+                        let num17 = tmp43;
+                        if (tmp42 <= tmp42 + (bound - 1)) {
+                          let tmp57 = sum1;
+                          num16 = -1;
+                          num17 = -1;
+                          while (0 === tmp46[sum1]) {
+                            sum1 = sum1 + 1;
+                            num16 = tmp42;
+                            num17 = tmp43;
+                            if (sum1 > tmp42 + (bound - 1)) {
+                              break;
+                            }
                           }
                         }
-                      }
-                      tmp15 = num4;
-                      tmp16 = num5;
-                      tmp17 = sum2;
-                      let tmp4 = tmp19;
-                      let tmp5 = tmp22;
-                      if (-1 === num5) {
-                        break;
-                      } else {
-                        tmp16 = num5;
-                        tmp17 = sum2;
-                        tmp4 = tmp19;
-                        tmp5 = tmp22;
-                        tmp15 = num4;
-                        if (-1 === num4) {
+                        tmp44 = num16;
+                        tmp45 = num17;
+                        if (-1 === num16) {
                           break;
                         } else {
-                          sum2 = sum2 + 1;
-                          tmp12 = num4;
-                          tmp13 = num5;
-                          tmp15 = num4;
-                          tmp16 = num5;
-                          tmp4 = tmp19;
-                          tmp5 = tmp22;
-                          tmp17 = sum2;
-                          if (sum2 > num4 + (height - 1)) {
+                          tmp44 = num16;
+                          tmp45 = num17;
+                          if (-1 === num17) {
                             break;
+                          } else {
+                            sum2 = sum2 + 1;
+                            tmp42 = num16;
+                            tmp43 = num17;
+                            tmp44 = num16;
+                            tmp45 = num17;
+                            if (sum2 > num17 + (num7 - 1)) {
+                              break;
+                            }
                           }
                         }
                       }
                     }
-                  }
-                  if (-1 !== tmp15) {
-                    if (-1 !== tmp16) {
-                      obj = { startRow: tmp15, startCol: tmp16, width: bound, height };
-                      size = obj;
-                      num = tmp15;
-                      num2 = tmp16;
-                      let tmp24 = tmp17;
-                      let tmp10 = tmp4;
-                      let tmp11 = tmp5;
-                      tmp4 = tmp10;
-                      tmp5 = tmp11;
-                      let tmp3 = size;
-                      if (null != size) {
-                        break;
+                    if (-1 !== tmp45) {
+                      if (-1 !== tmp44) {
+                        let obj5 = { startRow: null, startCol: null, width: null, height: null };
+                        obj5[0] = tmp45;
+                        obj5[1] = tmp44;
+                        obj5[2] = bound;
+                        obj5[3] = num7;
+                        let num14 = tmp44;
+                        let num15 = tmp45;
+                        let sum3 = sum;
+                        size2 = obj5;
+                        num11 = num14;
+                        num12 = num15;
+                        sum = sum3;
+                        tmp26 = size2;
+                        if (null != size2) {
+                          break;
+                        }
                       }
                     }
+                    sum3 = sum + 1;
+                    num14 = tmp44;
+                    num15 = tmp45;
+                    size2 = tmp26;
                   }
-                  sum = sum + 1;
-                  size = tmp3;
-                  num = tmp15;
-                  num2 = tmp16;
-                  let tmp23 = tmp17;
-                  tmp10 = tmp4;
-                  tmp11 = tmp5;
+                }
+                sum3 = sum + 1;
+                num14 = -1;
+                num15 = -1;
+                size2 = tmp26;
+              }
+              let tmp65 = closure_15;
+              ({ startRow, startCol, width, height } = size2);
+              let sum6 = startRow;
+              if (startRow < startRow + height) {
+                do {
+                  let tmp58 = sum6;
+                  let sum4 = startCol;
+                  if (startCol < startCol + width) {
+                    do {
+                      arr[sum6][sum4] = 1;
+                      sum4 = sum4 + 1;
+                      sum5 = startCol + width;
+                    } while (sum4 < sum5);
+                  }
+                  sum6 = sum6 + 1;
+                } while (sum6 < startRow + height);
+              }
+              let sum7 = tmp65 + 1;
+              while (null != arr[sum7]) {
+                if (-1 !== arr3.indexOf(0)) {
+                  break;
+                } else {
+                  sum7 = sum7 + 1;
+                  tmp65 = tmp63;
+                  continue;
                 }
               }
-              sum = sum + 1;
-              size = tmp3;
-              num = -1;
-              num2 = -1;
-              tmp10 = tmp4;
-              tmp11 = tmp5;
-            }
-            let tmp29 = c14;
-            ({ startRow, startCol, width, height: height2 } = size);
-            let sum5 = startRow;
-            if (startRow < startRow + height2) {
-              do {
-                let sum3 = startCol;
-                if (startCol < startCol + width) {
-                  do {
-                    tmp45[sum5][sum3] = 1;
-                    sum3 = sum3 + 1;
-                    sum4 = startCol + width;
-                  } while (sum3 < sum4);
+              closure_15 = tmp65;
+              const _Math2 = Math;
+              const _Math3 = Math;
+              closure_17 = Math.min(Math.max(closure_17, size2.startCol + (size2.width - 1)), tmp21);
+              const obj6 = { id: null, type: null, x: null, y: null, width: null, height: null, zIndex: null };
+              obj6[0] = id;
+              obj6[1] = item.type;
+              obj6[2] = size2.startCol * (closure_13.gutter + closure_13.cardWidth);
+              obj6[3] = size2.startRow * (closure_13.gutter + closure_13.cardHeight);
+              obj6[4] = closure_13.cardWidth * size2.width + (size2.width - 1) * closure_13.gutter;
+              obj6[5] = closure_13.cardHeight * size2.height + (size2.height - 1) * closure_13.gutter;
+              obj6[6] = closure_13.totalItems - closure_18;
+              const y = obj6.y;
+              let tmp69 = self;
+              const chunkSize = self.props.chunkSize;
+              const items = [y / chunkSize | 0, (y + obj6.height) / chunkSize | 0];
+              let first = items[0];
+              if (first <= items[1]) {
+                do {
+                  let tmp71 = self;
+                  let chunkedCoords = self.chunkedCoords;
+                  let value = chunkedCoords.get(first);
+                  let tmp72 = first;
+                  if (null == value) {
+                    let _Set = Set;
+                    let tmp73 = new.target;
+                    let tmp74 = new.target;
+                    let set = new Set();
+                    let tmp76 = set;
+                    let chunkedCoords2 = tmp71.chunkedCoords;
+                    let result1 = chunkedCoords2.set(first, set);
+                    value = set;
+                  }
+                  let addResult = value.add(obj6);
+                  first = first + 1;
+                  tmp69 = tmp71;
+                } while (first <= items[1]);
+              }
+              const cardCoords = tmp69.cardCoords;
+              const result2 = cardCoords.set(id, obj6);
+              const _Math4 = Math;
+              bound1 = Math.max(bound1, size2.startRow + size2.height - 1);
+              if (bound1 !== closure_15) {
+                if (1 === size2.height) {
+                  if (size2.startRow === bound1) {
+                    arr1 = arr.push(id);
+                  }
+                  closure_18 = closure_18 + 1;
                 }
-                sum5 = sum5 + 1;
-              } while (sum5 < startRow + height2);
+              }
+              arr.length = 0;
+              const tmp20 = closure_15;
             }
-            let sum6 = tmp29 + 1;
-            while (null != items[sum6]) {
-              if (-1 !== arr2.indexOf(0)) {
-                break;
-              } else {
-                tmp29 = sum6;
-                sum6 = sum6 + 1;
+          }
+          let tmp56 = item10196;
+          let tmp57 = item10196;
+          for (const item10202 of item10196) {
+            let tmp58 = _loop2;
+            let _loop2Result = _loop2(item10202);
+            continue;
+          }
+          continue;
+        }
+        if (closure_15 !== set) {
+          if (-1 !== closure_15) {
+            let tmp77 = items[set];
+            let flag2 = 0 === tmp77[0];
+            let flag3 = false;
+            let num9 = 0;
+            let tmp78 = tmp77;
+            let tmp60 = tmp77;
+            for (const item10211 of tmp77) {
+              let tmp61 = item10211;
+              let tmp62 = num9;
+              num9 = num9 + item10211;
+              let tmp63 = flag2;
+              if (!flag2) {
+                let tmp64 = item10211;
+                let tmp65 = 1 === tmp61;
+                if (tmp65) {
+                  tmp65 = flag3;
+                }
+                if (tmp65) {
+                  flag2 = true;
+                }
+                let tmp66 = item10211;
+                if (0 === tmp61) {
+                  flag3 = true;
+                }
+              }
+              continue;
+            }
+            if (!flag2) {
+              let diff1 = tmp38 - num9;
+              let tmp68 = set;
+              let num10 = 2;
+              let tmp70 = items1;
+              let tmp71 = items1;
+              for (const item10237 of items1) {
+                let cardCoords = self.cardCoords;
+                let value = cardCoords.get(item10237);
+                let tmp73 = value;
+                if (null != value) {
+                  let tmp74 = value;
+                  tmp73.x = tmp73.x + tmp69;
+                }
                 continue;
               }
             }
-            c14 = tmp29;
-            closure_16 = Math.min(Math.max(closure_16, size.startCol + (size.width - 1)), bound2);
-            obj = { id, type, x: size.startCol * (obj2.gutter + obj2.cardWidth), y: size.startRow * (obj2.gutter + obj2.cardHeight), width: obj2.cardWidth * size.width + (size.width - 1) * obj2.gutter, height: obj2.cardHeight * size.height + (size.height - 1) * obj2.gutter, zIndex: obj2.totalItems - c17 };
-            const y = obj.y;
-            const chunkSize = self.props.chunkSize;
-            items = [y / chunkSize | 0, (y + obj.height) / chunkSize | 0];
-            let first = items[0];
-            if (first <= items[1]) {
-              do {
-                let tmp31 = self;
-                let chunkedCoords = self.chunkedCoords;
-                let value = chunkedCoords.get(first);
-                let tmp32 = first;
-                if (null == value) {
-                  let _Set = Set;
-                  let tmp33 = new.target;
-                  let tmp34 = new.target;
-                  let set = new Set();
-                  let tmp36 = set;
-                  let tmp37 = self;
-                  let chunkedCoords2 = self.chunkedCoords;
-                  let result = chunkedCoords2.set(first, set);
-                  value = set;
-                }
-                let addResult = value.add(obj);
-                first = first + 1;
-              } while (first <= items[1]);
-            }
-            const cardCoords = self.cardCoords;
-            const result1 = cardCoords.set(id, obj);
-            bound1 = Math.max(bound1, size.startRow + size.height - 1);
-            if (bound1 !== c14) {
-              if (1 === size.height) {
-                if (size.startRow === bound1) {
-                  arr = items1.push(id);
-                }
-              }
-            }
-            items1.length = 0;
           }
-          let closure_20 = 1 === self.items.length;
-          const items2 = [set, set1, set2, set3];
-          for (let num12 = 0; num12 < items2.length; num12 = num12 + 1) {
-            let tmp58 = outer1_21;
-            function _loop2(type) {
-              let dimensions;
-              let item;
-              if ("custom" === type.type) {
-                if (null != closure_10) {
-                  let tmp13 = closure_10;
-                } else if (null != found) {
-                  tmp13 = found.layouts[closure_17];
-                }
-                if (null == tmp13) {
-                  tmp13 = outer2_19;
-                }
-                let str2 = "square";
-                if (!type.forceSquare) {
-                  str2 = outer2_24(self.getTargetDimensions(type.item.id));
-                }
-                let obj = { item: type.item, dimensions: outer2_25(str2, windowWidth > windowHeight, tmp13, closure_20) };
-              } else {
-                obj = { item: type };
-                const tmp6 = null != closure_10 ? closure_10 : outer2_19;
-                obj.dimensions = outer2_25("square", windowWidth > windowHeight, tmp6, closure_20);
-              }
-              ({ item, dimensions } = obj);
-              placeItem(item.id, item.type, dimensions.width, dimensions.height);
-              closure_17 = closure_17 + 1;
-            }
-            let tmp59 = outer1_21(items2[num12]);
-            let iter3 = tmp59();
-            if (!iter3.done) {
-              do {
-                let _loop2Result = _loop2(iter3.value);
-                let iter4 = tmp59();
-                iter3 = iter4;
-                done = iter4.done;
-              } while (!done);
-            }
-          }
-          if (c14 !== c15) {
-            if (-1 !== c14) {
-              let flag2 = 0 === tmp85[0];
-              const tmp87 = outer1_21(items[c15]);
-              const iter9 = tmp87();
-              let iter6 = iter9;
-              let flag3 = false;
-              let num13 = 0;
-              let tmp67 = flag2;
-              let num14 = 0;
-              if (!iter9.done) {
-                do {
-                  let value = iter6.value;
-                  let sum1 = num13 + value;
-                  let tmp64 = flag3;
-                  let tmp65 = flag2;
-                  if (!flag2) {
-                    let tmp66 = 1 === value && flag3;
-                    if (tmp66) {
-                      flag2 = true;
-                    }
-                    if (0 === value) {
-                      flag3 = true;
-                    }
-                    tmp64 = flag3;
-                    tmp65 = flag2;
-                  }
-                  iter5 = tmp87();
-                  flag2 = tmp65;
-                  flag3 = tmp64;
-                  iter6 = iter5;
-                  num13 = sum1;
-                  tmp67 = tmp65;
-                  num14 = sum1;
-                } while (!iter5.done);
-              }
-              if (!tmp67) {
-                const diff1 = tmp40 - num14;
-                const tmp72 = outer1_21(items1);
-                let iter7 = tmp72();
-                if (!iter7.done) {
-                  do {
-                    let cardCoords = self.cardCoords;
-                    value = cardCoords.get(iter7.value);
-                    if (null != value) {
-                      value.x = value.x + roundToNearestPixelResult;
-                    }
-                    iter8 = tmp72();
-                    iter7 = iter8;
-                  } while (!iter8.done);
-                }
-                roundToNearestPixelResult = outer1_7.roundToNearestPixel((diff1 * self.defaultTargetCoords.width + diff1 * gutter) / 2);
-              }
-            }
-          }
-          const obj3 = {};
+        }
+        let obj4 = { width: null, height: null };
+        obj4[0] = (() => {
           if (0 === self.items.length) {
-            let sum2 = self.defaultTargetCoords.width * tmp39 + (tmp39 - 1) * gutter;
+            let sum = tmp.defaultTargetCoords.width * c10 + (c10 - 1) * gutter;
           } else {
-            closure_16 = closure_16 + 1;
-            sum2 = self.defaultTargetCoords.width * closure_16 + (closure_16 - 1) * gutter;
+            closure_17 = closure_17 + 1;
+            sum = tmp.defaultTargetCoords.width * closure_17 + (closure_17 - 1) * gutter;
           }
-          obj3.width = sum2;
-          let num16 = 0;
-          if (0 !== self.items.length) {
-            let diff2 = items.length - 1;
-            let tmp79 = diff2;
-            if (diff2 >= 0) {
-              tmp79 = diff2;
-              while (null != items[diff2]) {
-                tmp79 = diff2;
-                if (arr4.indexOf(1) >= 0) {
+          return sum;
+        })();
+        obj4[1] = (() => {
+          if (0 === self.items.length) {
+            return 0;
+          } else {
+            let diff = length.length - 1;
+            let tmp4 = diff;
+            if (0 <= diff) {
+              tmp4 = diff;
+              while (null != length[diff]) {
+                tmp4 = diff;
+                if (arr.indexOf(1) >= 0) {
                   break;
                 } else {
-                  diff2 = diff2 - 1;
-                  tmp79 = diff2;
-                  if (diff2 < 0) {
+                  diff = diff - 1;
+                  tmp4 = diff;
+                  if (0 > diff) {
                     break;
                   }
                 }
               }
             }
-            let sum3 = tmp79 + 1;
-            num16 = sum3 * self.defaultTargetCoords.height + gutter * (sum3 - 1);
+            const sum = tmp4 + 1;
+            return sum * self.defaultTargetCoords.height + gutter * (sum - 1);
           }
-          obj3.height = num16;
-          self.contentDimensions = obj3;
-          self.dirty = false;
-          self.layoutKey = self.layoutKey + 1;
-        }
-        const obj4 = { windowWidth, windowHeight, safeAreaLeft, safeAreaRight };
-        const _Math4 = Math;
-        const _Math5 = Math;
-        bound2 = Math.max(Math.min((windowWidth - safeAreaLeft - safeAreaRight) / outer1_26(obj4) | 0, 4), 1);
-        cardSize = outer1_7.roundToNearestPixel((windowWidth - safeAreaLeft - safeAreaRight - gutter * (bound2 - 1)) / bound2);
-        tmp39 = bound2;
-        tmp40 = bound2;
+        })();
+        self.contentDimensions = obj4;
+        let flag4 = false;
+        self.dirty = false;
+        self.layoutKey = self.layoutKey + 1;
       }
+      let tmp42 = getTargetCardSize;
+      let obj5 = { windowWidth: null, windowHeight: null, safeAreaLeft: null, safeAreaRight: null };
+      obj5[0] = windowWidth;
+      obj5[1] = windowHeight;
+      obj5[2] = safeAreaLeft;
+      obj5[3] = safeAreaRight;
+      let _Math4 = Math;
+      let _Math5 = Math;
+      let num4 = 4;
+      let num5 = 1;
+      let bound2 = Math.max(Math.min((windowWidth - safeAreaLeft - safeAreaRight) / getTargetCardSize(obj5) | 0, 4), 1);
+      columns = bound2;
+      let tmp44 = set;
+      cardSize = set.roundToNearestPixel((windowWidth - safeAreaLeft - safeAreaRight - gutter * (bound2 - 1)) / bound2);
+      tmp38 = bound2;
     }
+    const tmp25 = set3;
+  }
+};
+prototype["subscribeFromItem"] = function subscribeFromItem(arg0) {
+  const self = this;
+  let closure_0 = arg0;
+  this.layoutCallbacks.add(arg0);
+  return () => {
+    self.layoutCallbacks.delete(closure_0);
   };
-  items[15] = {
-    key: "subscribeFromItem",
-    value: function subscribeFromItem(updateSharedValues) {
-      const self = this;
-      let closure_1 = updateSharedValues;
-      this.layoutCallbacks.add(updateSharedValues);
-      return () => {
-        self.layoutCallbacks.delete(closure_1);
-      };
-    }
+};
+prototype["subscribeToManager"] = function subscribeToManager(arg0) {
+  const self = this;
+  let closure_0 = arg0;
+  let managerSubscriptions = this.managerSubscriptions;
+  managerSubscriptions.add(arg0);
+  return () => {
+    const managerSubscriptions = self.managerSubscriptions;
+    managerSubscriptions.delete(closure_0);
   };
-  items[16] = {
-    key: "subscribeToManager",
-    value: function subscribeToManager(arg0) {
-      const self = this;
-      let closure_1 = arg0;
-      let managerSubscriptions = this.managerSubscriptions;
-      managerSubscriptions.add(arg0);
-      return () => {
-        const managerSubscriptions = self.managerSubscriptions;
-        managerSubscriptions.delete(closure_1);
-      };
-    }
-  };
-  items[17] = {
-    key: "emitLayoutChanges",
-    value: function emitLayoutChanges() {
-      let self = this;
-      self = this;
-      if (tmp) {
-        self.emitItemChanges = false;
-        VoicePanelCardLayoutManager(outer1_2[15]).batchUpdates(() => {
-          let done;
-          let done2;
-          const tmp = outer2_21(self.managerSubscriptions);
-          let iter = tmp();
-          if (!iter.done) {
-            do {
-              let valueResult = iter.value();
-              let iter2 = tmp();
-              iter = iter2;
-              done = iter2.done;
-            } while (!done);
-          }
-          const tmp3 = outer2_21(self.layoutCallbacks);
-          let iter3 = tmp3();
-          if (!iter3.done) {
-            do {
-              valueResult = iter3.value();
-              let iter4 = tmp3();
-              iter3 = iter4;
-              done2 = iter4.done;
-            } while (!done2);
-          }
-        });
-        const obj = VoicePanelCardLayoutManager(outer1_2[15]);
+};
+prototype["emitLayoutChanges"] = function emitLayoutChanges() {
+  let self = this;
+  self = this;
+  if (tmp) {
+    self.emitItemChanges = false;
+    self(705).batchUpdates(() => {
+      for (const item10006 of tmp) {
+        let item10006Result = item10006();
+        continue;
       }
-    }
-  };
-  items[18] = {
-    key: "deferredLayoutChange",
-    value: function deferredLayoutChange() {
-      let self = this;
-      self = this;
-      if (tmp) {
-        const _setTimeout = setTimeout;
-        self.emitTimeout = setTimeout(() => {
-          clearTimeout(self.emitTimeout);
-          self.emitTimeout = -1;
-          self.emitLayoutChanges();
-        }, 1);
+      for (const item10015 of tmp3) {
+        let item10015Result = item10015();
+        continue;
       }
-    }
-  };
-  items[19] = {
-    key: "checkDimensionsMismatch",
-    value: function checkDimensionsMismatch(width, height) {
-      const self = this;
-      if (this.props.windowWidth !== width) {
-        const obj = { staleWidth: self.props.windowWidth, staleHeight: self.props.windowHeight, wasDirty: self.dirty };
-        let tmp2 = obj;
-      } else {
-        tmp2 = null;
-      }
-      return tmp2;
-    }
-  };
-  return callback(VoicePanelCardLayoutManager, items);
-})();
+    });
+    const obj = self(705);
+  }
+};
+prototype["deferredLayoutChange"] = function deferredLayoutChange() {
+  let self = this;
+  self = this;
+  if (tmp) {
+    const _setTimeout = setTimeout;
+    self.emitTimeout = setTimeout(() => {
+      clearTimeout(self.emitTimeout);
+      self.emitTimeout = -1;
+      self.emitLayoutChanges();
+    }, 1);
+  }
+};
+prototype["checkDimensionsMismatch"] = function checkDimensionsMismatch(width, height) {
+  const self = this;
+  if (this.props.windowWidth !== width) {
+    const obj = { staleWidth: null, staleHeight: null, wasDirty: null };
+    obj[0] = self.props.windowWidth;
+    obj[1] = self.props.windowHeight;
+    obj[2] = self.dirty;
+    let tmp2 = obj;
+  } else {
+    tmp2 = null;
+  }
+  return tmp2;
+};
+
+export default VoicePanelCardLayoutManager;
 export const useCardLayoutCoordsSubscription = function useCardLayoutCoordsSubscription(id, layoutManager) {
   const _require = id;
   let closure_1 = layoutManager;
-  let obj = _require(sharedValue[9]);
-  obj = {};
+  let obj = _require(sharedValue[7]);
   let cardCoords = layoutManager.getCardCoords(id);
-  if (null == cardCoords) {
-    cardCoords = obj;
+  if (cardCoords == null) {
+    cardCoords = closure_15;
   }
+  obj = {};
   const merged = Object.assign(cardCoords);
   sharedValue = obj.useSharedValue(obj);
   const items = [id, layoutManager, sharedValue];
   const layoutEffect = React.useLayoutEffect(() => {
-    function updateSharedValues() {
-      const cardCoords = outer1_1.getCardCoords(outer1_0);
-      if (null != cardCoords) {
-        callback(sharedValue[10])(outer1_2, cardCoords);
-      }
+    let cardCoords = layoutManager.getCardCoords(closure_0);
+    if (null != cardCoords) {
+      layoutManager(sharedValue[8])(sharedValue, cardCoords);
     }
-    updateSharedValues();
-    return layoutManager.subscribeFromItem(updateSharedValues);
+    return layoutManager.subscribeFromItem(function updateSharedValues() {
+      cardCoords = cardCoords.getCardCoords(closure_0);
+      if (null != cardCoords) {
+        outer1_1(outer1_2[8])(closure_2, cardCoords);
+      }
+    });
   }, items);
   return sharedValue;
 };
 export const useTargetDimensionsSubscription = function useTargetDimensionsSubscription(participantId, layoutManager) {
   const _require = participantId;
   let closure_1 = layoutManager;
-  let obj = _require(sharedValue[9]);
+  let obj = _require(sharedValue[7]);
   obj = {};
   const merged = Object.assign(layoutManager.getTargetDimensions(participantId));
   sharedValue = obj.useSharedValue(obj);
   const items = [participantId, layoutManager, sharedValue];
   const layoutEffect = React.useLayoutEffect(() => {
-    function updateSharedValues() {
-      const targetDimensions = outer1_1.getTargetDimensions(outer1_0);
-      callback(sharedValue[10])(outer1_2, targetDimensions);
-    }
-    updateSharedValues();
-    return layoutManager.subscribeFromItem(updateSharedValues);
+    let targetDimensions = layoutManager.getTargetDimensions(closure_0);
+    layoutManager(sharedValue[8])(sharedValue, targetDimensions);
+    return layoutManager.subscribeFromItem(function updateSharedValues() {
+      targetDimensions = targetDimensions.getTargetDimensions(closure_0);
+      outer1_1(outer1_2[8])(closure_2, targetDimensions);
+    });
   }, items);
   return sharedValue;
 };
-export const useManagerSubscription = function useManagerSubscription(layoutManager) {
+export const useManagerSubscription = function useManagerSubscription(first2) {
   let importDefault;
   let tmp2;
-  let closure_0 = layoutManager;
-  [tmp2, importDefault] = callback2(React.useState(layoutManager.getLayoutKey()), 2);
-  const layoutEffect = React.useLayoutEffect(() => layoutManager.subscribeToManager(() => outer1_1(outer1_0.getLayoutKey())));
+  let closure_0 = first2;
+  [tmp2, importDefault] = callback(React.useState(first2.getLayoutKey()), 2);
+  const layoutEffect = React.useLayoutEffect(() => closure_0.subscribeToManager(() => callback(layoutKey.getLayoutKey())));
   return tmp2;
 };

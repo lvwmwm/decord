@@ -1,54 +1,57 @@
-// Module ID: 15558
-// Function ID: 119478
+// Module ID: 15592
+// Function ID: 15593
 // Name: MediaKeyboardAccessoriesContainer
-// Dependencies: [31, 27, 9544, 33, 477, 4165, 4026, 566, 2]
+// Dependencies: [19, 17, 9568, 21, 500, 4189, 4050, 589, 2]
 // Exports: default
 
-// Module 15558 (MediaKeyboardAccessoriesContainer)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 15592 (MediaKeyboardAccessoriesContainer)
+import noop from "noop";
+import initialize from "initialize";
 import { jsx } from "jsxProd";
 import set from "set";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import set from "_isNativeReflectConstruct";
+import createCacheKey from "createCacheKey";
+import set from "initialize";
 
 const require = arg1;
 set = set.isAndroid();
-set = { androidContainer: { flex: 1 } };
+set = { androidContainer: { flex: 1 }, iosContainer: null };
 set = {};
 let merged = Object.assign(require("get ActivityIndicator").StyleSheet.absoluteFillObject);
-set.iosContainer = set;
-set = _createForOfIteratorHelperLoose.createStyles(set);
+set[1] = set;
+set = createCacheKey.createStyles(set);
 let closure_8 = { code: "function MediaKeyboardAccessoriesContainerTsx1(){const{animateOnMount,initialLayout,animatedIndex,initialPosition,animatedPosition,interpolate,IS_ANDROID}=this.__closure;const animatedMountDisabledAndNotInitialLayout=!animateOnMount&&!initialLayout.get();const animatedSheetIndexOrDefault=animatedMountDisabledAndNotInitialLayout?0:Math.min(animatedIndex.get(),0);const animatedSheetPositionOrDefault=animatedMountDisabledAndNotInitialLayout?initialPosition:animatedPosition.get();const transform=[{translateY:interpolate(animatedSheetIndexOrDefault,[-1,0],[100,0])}];if(IS_ANDROID){return{marginTop:animatedSheetPositionOrDefault,transform:transform};}return{top:animatedSheetPositionOrDefault,transform:transform};}" };
 let result = set.fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardAccessoriesContainer.tsx");
 
-export default function MediaKeyboardAccessoriesContainer(animatedIndex) {
-  animatedIndex = animatedIndex.animatedIndex;
-  const animatedPosition = animatedIndex.animatedPosition;
-  const animateOnMount = animatedIndex.animateOnMount;
-  const initialPosition = animatedIndex.initialPosition;
+export default function MediaKeyboardAccessoriesContainer(children) {
+  const animatedIndex = children.animatedIndex;
+  const animatedPosition = children.animatedPosition;
+  const animateOnMount = children.animateOnMount;
+  const initialPosition = children.initialPosition;
+  let c4;
+  let closure_5;
+  let sharedValue;
   let tmp = set();
-  let _isNativeReflectConstruct = tmp;
+  c4 = tmp;
   let items = [tmp];
   const memo = initialPosition.useMemo(() => {
     const obj = {};
-    const merged = Object.assign(sharedValue ? _isNativeReflectConstruct.androidContainer : _isNativeReflectConstruct.iosContainer);
-    obj["overflow"] = "hidden";
+    const merged = Object.assign(sharedValue ? c4.androidContainer : c4.iosContainer);
+    obj.overflow = "hidden";
     return obj;
   }, items);
-  let closure_5 = initialPosition.useRef(false);
+  closure_5 = initialPosition.useRef(false);
   let obj = animatedIndex(animateOnMount[6]);
-  const sharedValue = obj.useSharedValue(false);
-  let items1 = [sharedValue];
-  const callback = initialPosition.useCallback(() => {
+  sharedValue = obj.useSharedValue(false);
+  const items1 = [sharedValue];
+  const onLayout = initialPosition.useCallback(() => {
     if (!ref.current) {
-      ref.current = true;
+      tmp.current = true;
       const result = sharedValue.set(true);
     }
   }, items1);
   const fn = function _() {
     let tmp = !animateOnMount;
-    if (tmp) {
+    if (!animateOnMount) {
       tmp = !sharedValue.get();
     }
     let num = 0;
@@ -61,21 +64,19 @@ export default function MediaKeyboardAccessoriesContainer(animatedIndex) {
     } else {
       value = animatedPosition.get();
     }
-    let obj = {};
-    const items = [-1, 0];
-    obj.translateY = animatedIndex(animateOnMount[6]).interpolate(num, items, [100, 0]);
-    const items1 = [obj];
-    obj = {};
+    let obj = { translateY: null };
+    obj[0] = animatedIndex(animateOnMount[6]).interpolate(num, [-1, 0], [100, 0]);
+    const items = [obj];
     if (sharedValue) {
-      obj.marginTop = value;
-      obj.transform = items1;
-      let tmp7 = obj;
+      obj = { marginTop: null, transform: null };
+      obj[0] = value;
+      obj[1] = items;
     } else {
-      obj.top = value;
-      obj.transform = items1;
-      tmp7 = obj;
+      obj = { top: null, transform: null };
+      obj[0] = value;
+      obj[1] = items;
     }
-    return tmp7;
+    return obj;
   };
   obj = { animateOnMount, initialLayout: sharedValue, animatedIndex, initialPosition, animatedPosition, interpolate: animatedIndex(animateOnMount[6]).interpolate, IS_ANDROID: sharedValue };
   fn.__closure = obj;
@@ -83,18 +84,12 @@ export default function MediaKeyboardAccessoriesContainer(animatedIndex) {
   fn.__initData = closure_8;
   const animatedStyle = animatedIndex(animateOnMount[6]).useAnimatedStyle(fn);
   const obj2 = animatedIndex(animateOnMount[6]);
-  const items2 = [_isNativeReflectConstruct];
-  const stateFromStores = animatedIndex(animateOnMount[7]).useStateFromStores(items2, () => tmp.isOpen());
-  obj = {};
-  let str;
+  const items2 = [c4];
+  const stateFromStores = animatedIndex(animateOnMount[7]).useStateFromStores(items2, () => _undefined.isOpen());
+  let importantForAccessibility;
   if (stateFromStores) {
-    str = "no-hide-descendants";
+    importantForAccessibility = "no-hide-descendants";
   }
-  obj.importantForAccessibility = str;
-  const items3 = [memo, animatedStyle];
-  obj.style = items3;
-  obj.onLayout = callback;
-  obj.pointerEvents = "box-none";
-  obj.children = animatedIndex.children;
-  return closure_5(animatedPosition(animateOnMount[6]).View, obj);
+  const style = [memo, animatedStyle];
+  return closure_5(animatedPosition(animateOnMount[6]).View, { importantForAccessibility, style, onLayout, pointerEvents: "box-none", children: children.children });
 };

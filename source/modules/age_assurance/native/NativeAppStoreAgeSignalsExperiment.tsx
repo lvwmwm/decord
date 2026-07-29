@@ -1,14 +1,15 @@
-// Module ID: 16251
-// Function ID: 125851
+// Module ID: 16286
+// Function ID: 16287
 // Name: isNativeAppStoreAgeSignalsEnabled
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 // Exports: isNativeAppStoreAgeSignalsEnabled
 
-// Module 16251 (isNativeAppStoreAgeSignalsEnabled)
+// Module 16286 (isNativeAppStoreAgeSignalsEnabled)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { kind: "user", name: "2026-07-native-app-store-age-signals", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+let closure_0 = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-07-native-app-store-age-signals", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/age_assurance/native/NativeAppStoreAgeSignalsExperiment.tsx");
 
 export const isNativeAppStoreAgeSignalsEnabled = function isNativeAppStoreAgeSignalsEnabled(ParentalConsentManager) {

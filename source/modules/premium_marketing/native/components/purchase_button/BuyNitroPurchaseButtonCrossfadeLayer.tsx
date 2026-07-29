@@ -1,12 +1,12 @@
-// Module ID: 6640
-// Function ID: 58538
+// Module ID: 6661
+// Function ID: 6662
 // Name: BuyNitroPurchaseButtonCrossfadeLayer
-// Dependencies: [57, 31, 27, 33, 4026, 4166, 4169, 4578, 2]
+// Dependencies: [32, 19, 17, 21, 4050, 4190, 4193, 4600, 2]
 // Exports: default, useBuyNitroButtonCrossfade
 
-// Module 6640 (BuyNitroPurchaseButtonCrossfadeLayer)
+// Module 6661 (BuyNitroPurchaseButtonCrossfadeLayer)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -19,8 +19,9 @@ export default function BuyNitroPurchaseButtonCrossfadeLayer(arg0) {
   let onDone;
   let snapshot;
   ({ snapshot, onDone } = arg0);
-  let obj = onDone(4026);
-  const sharedValue = obj.useSharedValue(1);
+  let sharedValue;
+  let obj = onDone(4050);
+  sharedValue = obj.useSharedValue(1);
   let fn = function _() {
     return { opacity: sharedValue.get() };
   };
@@ -28,29 +29,32 @@ export default function BuyNitroPurchaseButtonCrossfadeLayer(arg0) {
   fn.__workletHash = 10244393639035;
   fn.__initData = closure_7;
   const items = [sharedValue, onDone];
-  const animatedStyle = onDone(4026).useAnimatedStyle(fn);
+  const animatedStyle = onDone(4050).useAnimatedStyle(fn);
   const effect = React.useEffect(() => {
     let obj = onDone(outer1_2[5]);
     const fn = function t(arg0) {
       if (true === arg0) {
-        onDone(outer2_2[4]).runOnJS(outer1_0)();
-        const obj = onDone(outer2_2[4]);
+        outer1_0(outer1_2[4]).runOnJS(closure_0)();
+        const obj = outer1_0(outer1_2[4]);
       }
     };
-    obj = { runOnJS: onDone(outer1_2[4]).runOnJS, onDone };
+    obj = { runOnJS: null, onDone: null };
+    obj[0] = onDone(outer1_2[4]).runOnJS;
+    obj[1] = onDone;
     fn.__closure = obj;
     fn.__workletHash = 12882875362433;
     fn.__initData = outer1_8;
     const result = sharedValue.set(obj.withTiming(0, onDone(outer1_2[6]).timingStandard, "respect-motion-settings", fn));
   }, items);
-  obj = { style: items1, pointerEvents: "none" };
+  obj = { style: items1, pointerEvents: "none", children: null };
   items1 = [StyleSheet.absoluteFill, animatedStyle];
-  obj = { text: snapshot.ctaText, variant: snapshot.variant, size: "lg", grow: true, onPress: undefined };
-  obj.children = jsx(onDone(4578).Button, { text: snapshot.ctaText, variant: snapshot.variant, size: "lg", grow: true, onPress: undefined });
-  return jsx(sharedValue(4026).View, { text: snapshot.ctaText, variant: snapshot.variant, size: "lg", grow: true, onPress: undefined });
+  obj = { text: snapshot.ctaText, variant: snapshot.variant, size: "lg", grow: true, onPress: "a" };
+  obj[2] = jsx(onDone(4600).Button, { text: snapshot.ctaText, variant: snapshot.variant, size: "lg", grow: true, onPress: "a" });
+  return jsx(sharedValue(4050).View, { text: snapshot.ctaText, variant: snapshot.variant, size: "lg", grow: true, onPress: "a" });
 };
 export const useBuyNitroButtonCrossfade = function useBuyNitroButtonCrossfade(variant, stringResult) {
-  let obj = { variant, ctaText: stringResult };
+  let obj = React;
+  obj = { variant, ctaText: stringResult };
   const tmp = callback(React.useState(obj), 2);
   const first = tmp[0];
   const tmp3 = callback(React.useState(null), 2);
@@ -62,22 +66,22 @@ export const useBuyNitroButtonCrossfade = function useBuyNitroButtonCrossfade(va
   if (!tmp5) {
     if (first.variant !== variant) {
       tmp4((key) => {
-        const obj = { snapshot: first };
-        key = undefined;
-        if (null != key) {
-          key = key.key;
+        const obj = { snapshot: first, key: null };
+        let num;
+        if (key != null) {
+          num = key.key;
         }
-        let num = 0;
-        if (null != key) {
-          num = key;
+        if (num == null) {
+          num = 0;
         }
-        obj.key = num + 1;
+        obj[1] = num + 1;
         return obj;
       });
     }
-    obj = { variant, ctaText: stringResult };
+    obj = { variant: null, ctaText: null };
+    obj[0] = variant;
+    obj[1] = stringResult;
     tmp[1](obj);
   }
-  obj = { outgoing: tmp3[0], onOutgoingDone: React.useCallback(() => tmp4(null), []) };
-  return obj;
+  return { outgoing: tmp3[0], onOutgoingDone: obj.useCallback(() => tmp4(null), []) };
 };

@@ -1,56 +1,56 @@
-// Module ID: 12501
-// Function ID: 96822
+// Module ID: 12523
+// Function ID: 12524
 // Name: Footer
-// Dependencies: [31, 27, 33, 4165, 12502, 5517, 4161, 1212, 4578, 5119, 12503, 2]
+// Dependencies: [19, 17, 21, 4189, 12524, 5535, 4185, 1236, 4600, 5141, 12525, 2]
 // Exports: default
 
-// Module 12501 (Footer)
-import "result";
+// Module 12523 (Footer)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, flexDirection: "column", alignItems: "center", width: "100%" }, footerText: { marginBottom: 24 }, button: { marginBottom: 40 }, easterEggSpacing: { position: "absolute", top: 40 } });
+({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles({ container: { flex: 1, flexDirection: "column", alignItems: "center", width: "100%" }, footerText: { marginBottom: 24 }, button: { marginBottom: 40 }, easterEggSpacing: { position: "absolute", top: 40 } });
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/premium/native/Footer.tsx");
 
 export default function Footer(showSubscribeButton) {
   showSubscribeButton = showSubscribeButton.showSubscribeButton;
-  const tmp = callback3();
-  importDefault(12502)(importDefault(5517).PREMIUM_MARKETING_FOOTER);
-  let obj = { style: items };
+  const tmp = callback2();
+  importDefault(12524)(importDefault(5535).PREMIUM_MARKETING_FOOTER);
+  let obj = { style: items, children: null };
   items = [tmp.container, showSubscribeButton.style];
-  let tmp8 = showSubscribeButton;
+  let tmp8Result = showSubscribeButton;
   if (showSubscribeButton) {
-    obj = {};
-    obj = { style: tmp.footerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.children = intl.string(require(1212) /* getSystemLocale */.t["2bSPbq"]);
-    const items1 = [callback(require(4161) /* Text */.Text, obj), ];
-    const obj1 = { style: tmp.button };
-    const obj2 = { text: tmp5, variant: "primary", size: "lg", onPress: tmp4, grow: true };
-    obj1.children = callback(require(4578) /* Button */.Button, obj2);
-    items1[1] = callback(View, obj1);
-    obj.children = items1;
-    tmp8 = callback2(closure_5, obj);
+    obj = { children: null };
+    obj = { style: null, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+    obj[0] = tmp.footerText;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[3] = intl.string(require(1236) /* getSystemLocale */.t["2bSPbq"]);
+    const items1 = [callback(require(4185) /* Text */.Text, obj), ];
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp.button;
+    const obj2 = { text: null, variant: "primary", size: "lg", onPress: null, grow: true };
+    obj2[0] = tmp7;
+    obj2[3] = tmp6;
+    obj1[1] = callback(require(4600) /* Button */.Button, obj2);
+    items1[1] = callback(tmp9, obj1);
+    obj[0] = items1;
+    tmp8Result = tmp8(closure_5, obj);
   }
-  const items2 = [tmp8, ];
-  const obj3 = {};
+  const items2 = [tmp8Result, ];
   let easterEggSpacing = null;
-  const tmp15 = callback;
-  const tmp2 = importDefault(12502);
-  const tmp6 = callback2;
-  const tmp7 = View;
+  const tmp14 = callback;
+  const tmp4 = importDefault(12524);
   if (!showSubscribeButton) {
     easterEggSpacing = tmp.easterEggSpacing;
   }
-  obj3.style = easterEggSpacing;
-  obj3.source = importDefault(12503);
-  items2[1] = tmp15(importDefault(5119), obj3);
-  obj.children = items2;
-  return tmp6(tmp7, obj);
+  const tmp2Result = importDefault(5141);
+  items2[1] = tmp14(tmp2Result, { style: easterEggSpacing, source: importDefault(12525) });
+  obj[1] = items2;
+  return closure_6(View, obj);
 };

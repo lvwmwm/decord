@@ -1,11 +1,11 @@
-// Module ID: 12042
-// Function ID: 92912
+// Module ID: 12066
+// Function ID: 12067
 // Name: UserProfileWidgetReportButton
-// Dependencies: [31, 27, 33, 1212, 9417, 7669, 9275, 8939, 689, 2]
+// Dependencies: [19, 17, 21, 1236, 9441, 7692, 9299, 8963, 712, 2]
 // Exports: default
 
-// Module 12042 (UserProfileWidgetReportButton)
-import "result";
+// Module 12066 (UserProfileWidgetReportButton)
+import "noop";
 import { Pressable } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -17,45 +17,42 @@ export default function UserProfileWidgetReportButton(arg0) {
   let importDefault;
   let require;
   ({ userId: require, widget: importDefault } = arg0);
-  let obj = {};
-  let intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.string(require(1212) /* getSystemLocale */.t.D4GvHE);
-  obj.variant = "destructive";
-  obj.IconComponent = require(9417) /* FlagIcon */.FlagIcon;
-  obj.action = function action() {
+  let obj = { label: null, variant: "destructive", IconComponent: null, action: null };
+  let intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.D4GvHE);
+  obj[2] = require(9441) /* FlagIcon */.FlagIcon;
+  obj[3] = function action() {
     return outer1_0(outer1_2[5]).showReportModalForWidget(closure_0, closure_1);
   };
   const items = [obj];
   obj = {
     items,
     children(ref) {
-      let obj = Object.create(null);
-      obj.ref = 0;
-      obj = { ref: ref.ref };
-      const merged = Object.assign(Object.assign(ref, obj));
-      obj["hitSlop"] = outer1_5;
-      obj["accessibilityRole"] = "button";
-      const intl = outer1_0(outer1_2[3]).intl;
-      obj["accessibilityLabel"] = intl.string(outer1_0(outer1_2[3]).t.xpSHSk);
-      obj = { size: "sm", color: outer1_1(outer1_2[8]).colors.TEXT_MUTED };
-      obj["children"] = outer1_4(outer1_0(outer1_2[7]).MoreHorizontalIcon, obj);
-      return outer1_4(outer1_3, obj);
+      let obj = { ref: ref.ref };
+      const merged = Object.assign(Object.assign(ref, Object.create(null)));
+      obj.hitSlop = closure_5;
+      obj.accessibilityRole = "button";
+      const intl = callback(1236).intl;
+      obj.accessibilityLabel = intl.string(callback(1236).t.xpSHSk);
+      obj = { size: "sm", color: null };
+      obj[1] = callback2(712).colors.TEXT_MUTED;
+      obj.children = callback3(callback(8963).MoreHorizontalIcon, obj);
+      return callback3(closure_3, obj);
     }
   };
-  return jsx(require(9275) /* ContextMenu */.ContextMenu, {
+  return jsx(require(9299) /* ContextMenu */.ContextMenu, {
     items,
     children(ref) {
-      let obj = Object.create(null);
-      obj.ref = 0;
-      obj = { ref: ref.ref };
-      const merged = Object.assign(Object.assign(ref, obj));
-      obj["hitSlop"] = outer1_5;
-      obj["accessibilityRole"] = "button";
-      const intl = outer1_0(outer1_2[3]).intl;
-      obj["accessibilityLabel"] = intl.string(outer1_0(outer1_2[3]).t.xpSHSk);
-      obj = { size: "sm", color: outer1_1(outer1_2[8]).colors.TEXT_MUTED };
-      obj["children"] = outer1_4(outer1_0(outer1_2[7]).MoreHorizontalIcon, obj);
-      return outer1_4(outer1_3, obj);
+      let obj = { ref: ref.ref };
+      const merged = Object.assign(Object.assign(ref, Object.create(null)));
+      obj.hitSlop = closure_5;
+      obj.accessibilityRole = "button";
+      const intl = callback(1236).intl;
+      obj.accessibilityLabel = intl.string(callback(1236).t.xpSHSk);
+      obj = { size: "sm", color: null };
+      obj[1] = callback2(712).colors.TEXT_MUTED;
+      obj.children = callback3(callback(8963).MoreHorizontalIcon, obj);
+      return callback3(closure_3, obj);
     }
   });
 };

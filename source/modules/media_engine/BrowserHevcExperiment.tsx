@@ -1,13 +1,14 @@
-// Module ID: 12927
-// Function ID: 100275
+// Module ID: 12949
+// Function ID: 12950
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 
-// Module 12927 (apexExperiment)
+// Module 12949 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { name: "2025-08-browser-hevc", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2025-08-browser-hevc", kind: "user", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/media_engine/BrowserHevcExperiment.tsx");
 
 export default apexExperiment;

@@ -1,37 +1,31 @@
-// Module ID: 6721
-// Function ID: 59104
-// Name: collapseNewlines
-// Dependencies: [31, 33, 477, 1324, 6719, 3874, 6722, 3873, 2]
+// Module ID: 6742
+// Function ID: 6743
+// Name: BaseTextField
+// Dependencies: [19, 21, 500, 1348, 6740, 3898, 6743, 3897, 2]
 
-// Module 6721 (collapseNewlines)
-import importAllResult from "result";
+// Module 6742 (BaseTextField)
+import importAllResult from "noop";
 import jsxProd from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-function collapseNewlines(defaultValue) {
-  let replaced = defaultValue;
-  if (null != defaultValue) {
-    replaced = defaultValue.replace(/\r\n?|\n/g, " ");
-  }
-  return replaced;
-}
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-const forwardRefResult = importAllResult.forwardRef((size, photosButtonExternalRef) => {
+let c3 = importAllResult;
+({ jsx: c4, jsxs: c5 } = jsxProd);
+const forwardRefResult = importAllResult.forwardRef((size, ref2) => {
   let autoComplete;
   let focusProps;
   let isFocused;
   let keyboardType;
   let secureTextEntry;
-  let obj = ref(6719);
-  obj = { size: size.size, isRound: size.isRound, hasLeadingIcon: null != size.leadingIcon, isRefreshEnabled: onChangeText(1324)("InputFieldContainer") };
+  let obj = ref(6740);
+  obj = { size: size.size, isRound: size.isRound, hasLeadingIcon: null != size.leadingIcon, isRefreshEnabled: onChangeText(1348)("InputFieldContainer") };
   const inputStyles = obj.useInputStyles(obj);
-  let obj2 = ref(3874);
+  let obj2 = ref(3898);
   const focus = obj2.useFocus();
   ({ focusProps, isFocused } = focus);
   ref = importAllResult.useRef(null);
-  let tmp5 = null;
+  let tmp7 = null;
   if (size.enableAndroidSanitizedInputWorkaround) {
     ({ secureTextEntry, keyboardType, autoComplete } = size);
     if (secureTextEntry === undefined) {
@@ -40,65 +34,76 @@ const forwardRefResult = importAllResult.forwardRef((size, photosButtonExternalR
     if (keyboardType === undefined) {
       keyboardType = "default";
     }
-    obj = {};
+    let tmp3Result = tmp3(500);
     let str = "off";
-    if (!obj5.isAndroid()) {
+    if (!tmp3Result.isAndroid()) {
       str = autoComplete;
     }
-    obj.autoComplete = str;
-    obj5 = ref(477);
-    const tmp10 = !ref(477).isAndroid();
-    let tmp11 = !tmp10;
-    if (tmp10) {
-      tmp11 = secureTextEntry;
-    }
-    obj.secureTextEntry = tmp11;
-    const obj6 = ref(477);
+    obj = { autoComplete: null, secureTextEntry: null, keyboardType: null };
+    obj[0] = str;
+    tmp3Result = tmp3(500);
+    obj[1] = tmp3Result.isAndroid() || secureTextEntry;
+    const tmp8 = tmp3Result.isAndroid() || secureTextEntry;
     let str2 = "visible-password";
-    if (!obj7.isAndroid()) {
+    if (!tmp3Result1.isAndroid()) {
       str2 = keyboardType;
     }
-    obj.keyboardType = str2;
-    tmp5 = obj;
-    obj7 = ref(477);
+    obj[2] = str2;
+    tmp7 = obj;
+    tmp3Result1 = tmp3(500);
   }
   onChangeText = size.onChangeText;
   const items = [onChangeText];
-  const callback = importAllResult.useCallback((arg0) => {
-    const tmp = outer1_6(arg0);
-    if (tmp !== arg0) {
+  const callback = importAllResult.useCallback((str) => {
+    let replaced = str;
+    if (null != str) {
+      replaced = str.replace(/\r\n?|\n/g, " ");
+    }
+    if (replaced !== str) {
       const current = ref.current;
-      if (null != current) {
-        const obj = { text: tmp };
+      if (current != null) {
+        const obj = { text: null };
+        obj[0] = replaced;
         current.setNativeProps(obj);
       }
     }
-    if (null != onChangeText) {
-      onChangeText(tmp);
+    if (onChangeText != null) {
+      tmp4(replaced);
     }
   }, items);
   const obj1 = {};
   const merged = Object.assign(size);
-  obj1["isFocused"] = isFocused;
+  obj1.isFocused = isFocused;
   const items1 = [size.leading, , ];
   obj2 = {};
-  const merged1 = Object.assign(tmp5);
-  let tmp = onChangeText(1324)("InputFieldContainer");
-  const merged2 = Object.assign(ref(3873).mergeProps(size, focusProps));
-  obj2["value"] = collapseNewlines(size.value);
-  obj2["defaultValue"] = collapseNewlines(size.defaultValue);
-  obj2["onChangeText"] = callback;
-  const obj10 = ref(3873);
-  obj2["ref"] = ref(3873).mergeRefs(ref, photosButtonExternalRef);
+  const merged1 = Object.assign(tmp7);
+  const obj4 = importAllResult;
+  const tmp10 = closure_5;
+  const tmp12 = closure_4;
+  const tmp2 = onChangeText(1348)("InputFieldContainer");
+  const merged2 = Object.assign(ref(3897).mergeProps(size, focusProps));
+  let replaced = str3;
+  if (null != size.value) {
+    replaced = str3.replace(/\r\n?|\n/g, " ");
+  }
+  obj2.value = replaced;
+  let replaced1 = str5;
+  if (null != size.defaultValue) {
+    replaced1 = str5.replace(/\r\n?|\n/g, " ");
+  }
+  obj2.defaultValue = replaced1;
+  obj2.onChangeText = callback;
+  const tmp3Result2 = ref(3897);
+  obj2.ref = ref(3897).mergeRefs(ref, ref2);
   const items2 = [, , ];
   ({ padding: arr3[0], text: arr3[1] } = inputStyles);
   items2[2] = size.inputStyle;
-  obj2["style"] = items2;
-  obj2["placeholderTextColor"] = inputStyles.placeholderText.color;
-  items1[1] = callback(ref(6722).NativeTextInput, obj2);
+  obj2.style = items2;
+  obj2.placeholderTextColor = inputStyles.placeholderText.color;
+  items1[1] = tmp12(ref(6743).NativeTextInput, obj2);
   items1[2] = size.trailing;
-  obj1["children"] = items1;
-  return callback2(ref(6719).InputFieldContainer, obj1);
+  obj1.children = items1;
+  return tmp10(ref(6740).InputFieldContainer, obj1);
 });
 const result = require("set").fileFinishedImporting("design/components/TextField/native/BaseTextField.native.tsx");
 

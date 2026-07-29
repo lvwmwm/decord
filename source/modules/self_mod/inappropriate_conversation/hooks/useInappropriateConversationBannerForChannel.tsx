@@ -1,35 +1,35 @@
-// Module ID: 10411
-// Function ID: 80179
+// Module ID: 10435
+// Function ID: 10436
 // Name: useInappropriateConversationBannerForChannel
-// Dependencies: [9075, 10109, 10110, 10112, 10410, 2]
+// Dependencies: [9099, 10130, 10131, 10133, 10434, 2]
 // Exports: useInappropriateConversationBannerForChannel
 
-// Module 10411 (useInappropriateConversationBannerForChannel)
-import { SafetyWarningTypes } from "_isNativeReflectConstruct";
+// Module 10435 (useInappropriateConversationBannerForChannel)
+import { SafetyWarningTypes } from "handleConnectionOpen";
 
 const result = require("useSafetyAlertsSettingOrDefault").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationBannerForChannel.tsx");
 
 export const useInappropriateConversationBannerForChannel = function useInappropriateConversationBannerForChannel(channelId, LOCATION_CONTEXT_MOBILE) {
-  let obj = require(10109) /* InappropriateConversationExperiment */;
+  let obj = require(10130) /* InappropriateConversationExperiment */;
   obj = { location: LOCATION_CONTEXT_MOBILE };
   const isEligibleForInappropriateConversationWarning = obj.useIsEligibleForInappropriateConversationWarning(obj);
-  const safetyAlertsSettingOrDefault = require(10110) /* useSafetyAlertsSettingOrDefault */.useSafetyAlertsSettingOrDefault();
-  const obj3 = require(10110) /* useSafetyAlertsSettingOrDefault */;
-  const inappropriateConversationWarningsForChannel = require(10112) /* useInappropriateConversationWarningsForChannel */.useInappropriateConversationWarningsForChannel(channelId);
-  require(10410) /* useChannelSafetyWarning */;
+  const safetyAlertsSettingOrDefault = require(10131) /* useSafetyAlertsSettingOrDefault */.useSafetyAlertsSettingOrDefault();
+  const obj3 = require(10131) /* useSafetyAlertsSettingOrDefault */;
+  const inappropriateConversationWarningsForChannel = require(10133) /* useInappropriateConversationWarningsForChannel */.useInappropriateConversationWarningsForChannel(channelId);
+  require(10434) /* useChannelSafetyWarning */;
   if (isEligibleForInappropriateConversationWarning) {
     if (safetyAlertsSettingOrDefault) {
       if (0 !== inappropriateConversationWarningsForChannel.length) {
         if (!inappropriateConversationWarningsForChannel.some((type) => {
-          let tmp = type.type === outer1_2.INAPPROPRIATE_CONVERSATION_TIER_1;
-          if (!tmp) {
-            let tmp3 = type.type === outer1_2.INAPPROPRIATE_CONVERSATION_TIER_2;
+          let tmp2 = type.type === obj.INAPPROPRIATE_CONVERSATION_TIER_1;
+          if (!tmp2) {
+            let tmp3 = type.type === tmp.INAPPROPRIATE_CONVERSATION_TIER_2;
             if (tmp3) {
               tmp3 = null != type.dismiss_timestamp;
             }
-            tmp = tmp3;
+            tmp2 = tmp3;
           }
-          return tmp;
+          return tmp2;
         })) {
           return tmp4;
         }

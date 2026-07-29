@@ -1,17 +1,11 @@
-// Module ID: 16273
-// Function ID: 126065
-// Name: setSection
-// Dependencies: [653, 686, 1198, 15549, 2]
+// Module ID: 16308
+// Function ID: 16309
+// Dependencies: [676, 709, 1222, 15583, 2]
 
-// Module 16273 (setSection)
+// Module 16308
 import { Routes } from "ME";
 
-function setSection(section) {
-  let obj = importDefault(686);
-  obj = { type: "FRIENDS_SET_SECTION", section };
-  obj.dispatch(obj);
-}
-const result = require("shouldNavigate").fileFinishedImporting("actions/FriendsActionCreators.tsx");
+const result = require("transitionTo").fileFinishedImporting("actions/FriendsActionCreators.tsx");
 
 export default {
   transitionToSection(PENDING, arg1) {
@@ -24,18 +18,27 @@ export default {
       flag = false;
     }
     if (obj2.getHistory().location.pathname !== Routes.FRIENDS) {
-      require(1198) /* shouldNavigate */.transitionTo(Routes.FRIENDS);
-      const obj3 = require(1198) /* shouldNavigate */;
+      tmp(1222).transitionTo(tmp3.FRIENDS);
+      const tmpResult = tmp(1222);
     }
-    setSection(PENDING);
+    obj2 = require(1222) /* transitionTo */;
+    tmp = require;
+    const tmp5 = importDefault;
+    obj = { type: "FRIENDS_SET_SECTION", section: PENDING };
+    importDefault(709).dispatch(obj);
     if (flag) {
-      obj = { tab_opened: PENDING };
-      importDefault(15549)(obj);
+      obj = { tab_opened: null };
+      obj[0] = PENDING;
+      tmp5(15583)(obj);
     }
   },
-  setSection,
+  setSection(section) {
+    let obj = importDefault(709);
+    obj = { type: "FRIENDS_SET_SECTION", section };
+    obj.dispatch(obj);
+  },
   setInitialSection(section) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "FRIENDS_SET_INITIAL_SECTION", section };
     obj.dispatch(obj);
   }

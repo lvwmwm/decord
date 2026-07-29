@@ -1,13 +1,13 @@
-// Module ID: 9615
-// Function ID: 74836
+// Module ID: 9637
+// Function ID: 9638
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [42, 2]
+// Dependencies: [65, 2]
 
-// Module 9615 (__INTERNAL_VIEW_CONFIG)
-import get from "get";
+// Module 9637 (__INTERNAL_VIEW_CONFIG)
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 const obj = { uiViewClassName: "APNGStickerView", validAttributes: { url: true } };
-const value = get.get("APNGStickerView", () => obj);
+const value = setRuntimeConfigProvider.get("APNGStickerView", () => obj);
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/APNGStickerNativeComponent.tsx");
 
 export default value;

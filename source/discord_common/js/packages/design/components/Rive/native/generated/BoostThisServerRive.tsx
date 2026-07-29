@@ -1,15 +1,16 @@
-// Module ID: 3893
-// Function ID: 32187
+// Module ID: 3917
+// Function ID: 3918
 // Name: BoostThisServerRive
-// Dependencies: [29, 31, 33, 3894, 3944, 3945, 2]
+// Dependencies: [109, 19, 21, 3918, 3968, 3969, 2]
 
-// Module 3893 (BoostThisServerRive)
+// Module 3917 (BoostThisServerRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
-import importAllResult from "result";
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 let closure_3 = ["fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
+let c5 = importAllResult;
 let closure_7 = { "Boost Server": { reducedMotion: "boolean" }, "Boost Crystal": { reducedMotion: "boolean" }, "Crystal Side B": {}, "Crystal Side A": {}, "Boost Saved": { reducedMotion: "boolean" } };
 let closure_8 = { "Boost Server": ["Instance"], "Boost Crystal": ["Instance"], "Crystal Side B": [], "Crystal Side A": [], "Boost Saved": ["Instance"] };
 let closure_9 = {
@@ -18,7 +19,7 @@ let closure_9 = {
     let playIfNeeded;
     let reducedMotionEnabled;
     ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
     return null;
   },
   "Boost Crystal": function BoostCrystalBindings(arg0) {
@@ -26,7 +27,7 @@ let closure_9 = {
     let playIfNeeded;
     let reducedMotionEnabled;
     ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
     return null;
   },
   "Boost Saved": function BoostSavedBindings(arg0) {
@@ -34,7 +35,7 @@ let closure_9 = {
     let playIfNeeded;
     let reducedMotionEnabled;
     ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
     return null;
   }
 };
@@ -59,22 +60,29 @@ let closure_10 = importAllResult.forwardRef(function BoostThisServerRiveInner(de
     if (null != outer1_9[str]) {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["dataBinding"] = dataBinding;
-      obj["onDataBindingChange"] = onDataBindingChange;
+      obj.dataBinding = dataBinding;
+      obj.onDataBindingChange = onDataBindingChange;
       tmp2 = outer1_6(tmp, obj);
     }
     return tmp2;
   }, items);
-  let obj = { ref, src: dataBinding(onDataBindingChange[4]), artboard: str, artboardProperties: closure_7, artboardViewModelInstances: closure_8, defaultViewModelInstance: str2, stateMachine: defaultViewModelInstance.stateMachine, renderDataBinding: callback };
+  let obj = { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null, renderDataBinding: null };
+  obj[1] = dataBinding(onDataBindingChange[4]);
+  obj[2] = str;
+  obj[3] = closure_7;
+  obj[4] = closure_8;
+  obj[5] = str2;
+  obj[6] = defaultViewModelInstance.stateMachine;
+  obj[7] = callback;
   let merged = Object.assign(callback(defaultViewModelInstance, closure_3));
-  return jsx(str(onDataBindingChange[3]).BaseRive, { ref, src: dataBinding(onDataBindingChange[4]), artboard: str, artboardProperties: closure_7, artboardViewModelInstances: closure_8, defaultViewModelInstance: str2, stateMachine: defaultViewModelInstance.stateMachine, renderDataBinding: callback });
+  return jsx(str(onDataBindingChange[3]).BaseRive, { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null, renderDataBinding: null });
 });
 const forwardRefResult = importAllResult.forwardRef(function BoostThisServerRiveWithBoundary(fallback, ref) {
-  let obj = { fallback: fallback.fallback };
+  let obj = { fallback: fallback.fallback, children: null };
   obj = { ref };
   const merged = Object.assign(fallback);
-  obj.children = <closure_10 ref={arg1} />;
-  return jsx(require(3945) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
+  obj[1] = <closure_10 ref={arg1} />;
+  return jsx(require(3969) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/BoostThisServerRive.tsx");
 

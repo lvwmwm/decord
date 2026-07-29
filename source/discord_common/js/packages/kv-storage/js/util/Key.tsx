@@ -1,25 +1,23 @@
-// Module ID: 1889
-// Function ID: 21098
+// Module ID: 1913
+// Function ID: 1914
 // Name: combineKey
-// Dependencies: [1890, 2]
+// Dependencies: [1914, 2]
 // Exports: combineKey, combineKeyPrefix
 
-// Module 1889 (combineKey)
+// Module 1913 (combineKey)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/util/Key.tsx");
 
-export const combineKey = function combineKey(prefix, items) {
-  if (Array.isArray(items)) {
-    items = [];
-    let arraySpreadResult = HermesBuiltin.arraySpread(items, HermesBuiltin.arraySpread(prefix, 0));
+export const combineKey = function combineKey(prefix, key) {
+  if (Array.isArray(key)) {
+    const items = [];
+    HermesBuiltin.arraySpread(key, HermesBuiltin.arraySpread(prefix, 0));
     let items1 = items;
   } else {
     items1 = [];
-    arraySpreadResult = HermesBuiltin.arraySpread(prefix, 0);
-    items1[arraySpreadResult] = items;
-    const sum = arraySpreadResult + 1;
+    items1[HermesBuiltin.arraySpread(prefix, 0)] = key;
   }
   if (items1.length >= 1) {
-    if (items1.length <= require(1890) /* TableId */.MAXIMUM_KEY_BITS) {
+    if (items1.length <= require(1914) /* TableId */.MAXIMUM_KEY_BITS) {
       return items1;
     }
   }
@@ -29,15 +27,13 @@ export const combineKey = function combineKey(prefix, items) {
 export const combineKeyPrefix = function combineKeyPrefix(prefix, items) {
   if (Array.isArray(items)) {
     items = [];
-    let arraySpreadResult = HermesBuiltin.arraySpread(items, HermesBuiltin.arraySpread(prefix, 0));
+    HermesBuiltin.arraySpread(items, HermesBuiltin.arraySpread(prefix, 0));
     let items1 = items;
   } else {
     items1 = [];
-    arraySpreadResult = HermesBuiltin.arraySpread(prefix, 0);
-    items1[arraySpreadResult] = items;
-    const sum = arraySpreadResult + 1;
+    items1[HermesBuiltin.arraySpread(prefix, 0)] = items;
   }
-  if (items1.length <= require(1890) /* TableId */.MAXIMUM_KEY_BITS) {
+  if (items1.length <= require(1914) /* TableId */.MAXIMUM_KEY_BITS) {
     return items1;
   } else {
     const _Error = Error;

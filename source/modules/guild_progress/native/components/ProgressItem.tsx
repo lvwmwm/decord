@@ -1,22 +1,22 @@
-// Module ID: 11546
-// Function ID: 89772
+// Module ID: 11570
+// Function ID: 11571
 // Name: ProgressItem
-// Dependencies: [31, 27, 653, 33, 4165, 689, 4359, 7611, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 4384, 7634, 2]
 // Exports: default
 
-// Module 11546 (ProgressItem)
-import result from "result";
+// Module 11570 (ProgressItem)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = { formCTAContainer: { marginBottom: 8 } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.CARD_BACKGROUND_DEFAULT };
-_createForOfIteratorHelperLoose.formCTA = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.formCTAFullWidth = { width: "100%" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { formCTAContainer: { marginBottom: 8 }, formCTA: null, formCTAFullWidth: null };
+createCacheKey = { backgroundColor: require("Themes").colors.CARD_BACKGROUND_DEFAULT };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { width: "100%" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ME").fileFinishedImporting("modules/guild_progress/native/components/ProgressItem.tsx");
 
 export default function ProgressItem(onPress) {
@@ -31,44 +31,39 @@ export default function ProgressItem(onPress) {
   const analyticsAction = onPress.analyticsAction;
   const renderEndComponent = onPress.renderEndComponent;
   ({ title, source, description, fullWidth, iconStyle } = onPress);
-  let tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const items = [analyticsAction, analyticsSetupType, onPress, isCompleted];
-  let obj = { style: tmp.formCTAContainer };
+  let obj = { style: tmp.formCTAContainer, children: null };
   const callback = analyticsAction.useCallback(() => {
-    let tmp = null != analyticsAction;
-    if (tmp) {
-      tmp = null != analyticsSetupType;
+    let tmp2 = null != analyticsAction;
+    if (tmp2) {
+      tmp2 = null != analyticsSetupType;
     }
-    if (tmp) {
+    if (tmp2) {
       let obj = isCompleted(analyticsSetupType[6]);
-      obj = { setup_type: analyticsSetupType, action: analyticsAction, action_completed: isCompleted };
+      obj = { setup_type: null, action: null, action_completed: null };
+      obj[0] = analyticsSetupType;
+      obj[1] = analyticsAction;
+      obj[2] = isCompleted;
       obj.trackWithMetadata(outer1_5.SERVER_SETUP_CTA_CLICKED, obj);
     }
     onPress();
   }, items);
-  obj = { variant: "row-button" };
   const items1 = [tmp.formCTA, ];
   let formCTAFullWidth;
   if (fullWidth) {
     formCTAFullWidth = tmp.formCTAFullWidth;
   }
+  obj = { variant: "row-button", style: items1, onPress: callback, iconSource: source, iconStyle, title, subtitle: description, completed: isCompleted, trailing: null };
   items1[1] = formCTAFullWidth;
-  obj.style = items1;
-  obj.onPress = callback;
-  obj.iconSource = source;
-  obj.iconStyle = iconStyle;
-  obj.title = title;
-  obj.subtitle = description;
-  obj.completed = isCompleted;
   let renderEndComponentResult;
-  if (null != renderEndComponent) {
+  if (renderEndComponent != null) {
     renderEndComponentResult = renderEndComponent();
   }
-  let tmp7 = null;
-  if (null != renderEndComponentResult) {
-    tmp7 = renderEndComponentResult;
+  if (renderEndComponentResult == null) {
+    renderEndComponentResult = null;
   }
-  obj.trailing = tmp7;
-  obj.children = jsx(onPress(analyticsSetupType[7]).FormCTA, { variant: "row-button" });
-  return <View variant="row-button" />;
+  obj[8] = renderEndComponentResult;
+  obj[1] = jsx(onPress(analyticsSetupType[7]).FormCTA, { variant: "row-button", style: items1, onPress: callback, iconSource: source, iconStyle, title, subtitle: description, completed: isCompleted, trailing: null });
+  return <View variant="row-button" style={items1} onPress={callback} iconSource={source} iconStyle={iconStyle} title={title} subtitle={description} completed={isCompleted} trailing={null} />;
 };

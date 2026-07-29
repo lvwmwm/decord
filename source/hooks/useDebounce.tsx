@@ -1,12 +1,12 @@
-// Module ID: 12454
-// Function ID: 96502
+// Module ID: 12476
+// Function ID: 12477
 // Name: useDebounce
-// Dependencies: [57, 31, 2]
+// Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 12454 (useDebounce)
+// Module 12476 (useDebounce)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("hooks/useDebounce.tsx");
 
@@ -18,8 +18,8 @@ export default function useDebounce(arg0, arg1) {
   const items = [arg0, arg1];
   const effect = React.useEffect(() => {
     const timeout = setTimeout(() => {
-      outer1_2(_slicedToArray);
-    }, result);
+      callback(_slicedToArray);
+    }, noop);
     return () => {
       clearTimeout(_slicedToArray);
     };

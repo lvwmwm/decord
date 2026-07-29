@@ -1,21 +1,21 @@
-// Module ID: 7793
-// Function ID: 61816
+// Module ID: 7816
+// Function ID: 7817
 // Name: isPublicSystemMessage
-// Dependencies: [7794, 653, 7795, 7796, 675, 4359, 2]
+// Dependencies: [7817, 676, 7818, 7819, 698, 4384, 2]
 // Exports: getPublicSystemMessageAvatar, isPublicSystemMessage, trackEnableCommunityFlow
 
-// Module 7793 (isPublicSystemMessage)
+// Module 7816 (isPublicSystemMessage)
 import PUBLIC_SUCCESS_MODAL_SEEN_KEY from "PUBLIC_SUCCESS_MODAL_SEEN_KEY";
 import { AnalyticEvents } from "ME";
 
-let closure_3;
-let closure_4;
-let closure_5;
-({ PUBLIC_GUILD_ANNOUNCEMENTS_GUILD_ID: closure_3, PUBLIC_GUILD_UPDATES_WEBHOOK_USER_ID: closure_4, ENABLE_COMMUNITY_FLOW_MODAL_KEY: closure_5 } = PUBLIC_SUCCESS_MODAL_SEEN_KEY);
+let c3;
+let c4;
+let c5;
+({ PUBLIC_GUILD_ANNOUNCEMENTS_GUILD_ID: c3, PUBLIC_GUILD_UPDATES_WEBHOOK_USER_ID: c4, ENABLE_COMMUNITY_FLOW_MODAL_KEY: c5 } = PUBLIC_SUCCESS_MODAL_SEEN_KEY);
 const result = require("isCrosspost").fileFinishedImporting("modules/public_guilds/PublicGuildsUtils.tsx");
 
 export const isPublicSystemMessage = function isPublicSystemMessage(message) {
-  let tmp = importDefault(7795)(message);
+  let tmp = importDefault(7818)(message);
   if (tmp) {
     tmp = message.messageReference.guild_id === closure_3;
   }
@@ -29,11 +29,11 @@ export const isPublicSystemMessage = function isPublicSystemMessage(message) {
   return tmp;
 };
 export const getPublicSystemMessageAvatar = function getPublicSystemMessageAvatar() {
-  return importDefault(7796);
+  return importDefault(7819);
 };
 export const trackEnableCommunityFlow = function trackEnableCommunityFlow(fromStep) {
-  let obj = importDefault(675);
+  let obj = importDefault(698);
   obj = { flow_type: closure_5, from_step: fromStep.fromStep, to_step: fromStep.toStep };
-  const merged = Object.assign(require(4359) /* _createForOfIteratorHelperLoose */.collectGuildAnalyticsMetadata(fromStep.guildId));
+  const merged = Object.assign(require(4384) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(fromStep.guildId));
   obj.track(AnalyticEvents.USER_FLOW_TRANSITION, obj);
 };

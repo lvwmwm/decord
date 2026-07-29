@@ -1,63 +1,41 @@
-// Module ID: 481
-// Function ID: 6192
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 482, 487, 490, 491, 507, 566, 2]
+// Module ID: 504
+// Function ID: 505
+// Name: idGenerator
+// Dependencies: [505, 510, 513, 514, 530, 589, 2]
 // Exports: analyticsTrackingStoreMaker
 
-// Module 481 (_isNativeReflectConstruct)
-import getLowBits from "getLowBits";
-import extractId from "extractId";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 504 (idGenerator)
 import sum from "sum";
 
-let closure_10;
-let closure_11;
-let closure_12;
-let closure_8;
-let closure_9;
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function incrementMetric(arg0) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 1;
-  }
-  return arg0 + num;
-}
-({ TelemetryEndpoints: closure_8, TelemetryEvents: closure_9 } = sum);
-({ FREQUENCY: closure_10, MIN_DELAY: closure_11, MAX_DELAY: closure_12 } = { FREQUENCY: 3600000, MIN_DELAY: 60000, MAX_DELAY: 3600000 });
-let c13 = 1500;
+let c3;
+let c4;
+({ TelemetryEndpoints: c3, TelemetryEvents: c4 } = sum);
+let c5 = "x-science-test";
+let c6 = 3600000;
+let c7 = 60000;
+let c8 = 3600000;
+let c9 = 1500;
+let c10 = 0;
+let c11 = 0;
+let c12 = 0;
+let c13 = 0;
 let c14 = 0;
-let c15 = 0;
+let c15 = null;
 let c16 = 0;
-let c17 = 0;
 let c18 = 0;
-let c19 = null;
-let c20 = 0;
-let c22 = 0;
-let c23 = 0;
-let c24 = null;
-let c25 = false;
-let c26 = null;
-let c27 = null;
+let c19 = 0;
+let c20 = null;
+let c21 = false;
+let c22 = null;
+let c23 = null;
 let fn = window.requestIdleCallback;
-if (null == fn) {
+if (fn == null) {
   fn = (arg0) => {
     let closure_0 = arg0;
     return setImmediate(() => callback());
   };
 }
-const idGenerator = new require("getLowBits").IdGenerator();
+const idGenerator = new require("generate").IdGenerator();
 let obj = {
   handleConnectionOpen() {
 
@@ -75,17 +53,17 @@ let obj = {
 
   }
 };
-let closure_33 = [];
-let c34 = null;
+let closure_29 = [];
+let c30 = null;
 function defaultGetSessionId() {
-  return Promise.resolve({ sessionId: undefined });
+  return Promise.resolve({ sessionId: "r" });
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("../discord_common/js/packages/analytics-utils/AnalyticsTrackingStore.tsx");
+let result = require("extractId").fileFinishedImporting("../discord_common/js/packages/analytics-utils/AnalyticsTrackingStore.tsx");
 
 export const AnalyticsActionHandlers = obj;
 export const analyticsTrackingStoreMaker = (getLaunchSignature) => {
   let actionHandler;
-  let getLowBits;
+  let closure_3;
   let dependencyMap;
   let dispatcher;
   let drainTimeoutOverride;
@@ -96,224 +74,245 @@ export const analyticsTrackingStoreMaker = (getLaunchSignature) => {
   if (getSessionId === undefined) {
     getSessionId = defaultGetSessionId;
   }
-  ({ TRACKING_URL: dependencyMap, drainTimeoutOverride, waitFor: getLowBits, scheduleWhenIdle } = getLaunchSignature);
+  ({ TRACKING_URL: dependencyMap, drainTimeoutOverride, waitFor: closure_3, scheduleWhenIdle } = getLaunchSignature);
   if (scheduleWhenIdle === undefined) {
     scheduleWhenIdle = fn;
   }
-  const B = getLaunchSignature.getLaunchSignature;
-  if (B === undefined) {
-    class B {
+  const X = getLaunchSignature.getLaunchSignature;
+  if (X === undefined) {
+    class X {
       constructor() {
         return null;
       }
     }
   }
-  let _possibleConstructorReturn = B;
+  let closure_5 = X;
   const submitEvents = getLaunchSignature.submitEvents;
-  function canDrain(AnalyticsTrackingStore, Store) {
-    if (0 === outer1_33.length) {
-      return tmp;
-    } else if (null != outer1_29) {
-      let tmp5 = null != outer1_28;
-    } else {
-      tmp5 = null != callback();
-    }
-  }
   function scheduleDrain(shouldFlushOnNextTick) {
     let flag = shouldFlushOnNextTick.shouldFlushOnNextTick;
     if (flag === undefined) {
       flag = false;
     }
-    let tmp = null == outer1_34;
+    let tmp = null == outer1_30;
     if (tmp) {
-      tmp = canDrain();
+      if (0 === outer1_29.length) {
+        tmp = tmp3;
+      } else if (null != outer1_25) {
+        let tmp6 = null != outer1_24;
+      } else {
+        tmp6 = null != callback();
+      }
     }
     if (tmp) {
       if (flag) {
         const _setTimeout = setTimeout;
         let timerId = setTimeout(drainEventsQueue, 0);
       } else {
-        const obj = { timeout: c13 };
+        const obj = { timeout: null };
+        obj[0] = drainTimeoutOverride;
         timerId = scheduleWhenIdle(drainEventsQueue, obj);
       }
-      outer1_34 = timerId;
+      outer1_30 = timerId;
     }
   }
   function drainEventsQueue() {
-    const outer1_34 = null;
-    if (canDrain()) {
-      const substr = outer1_33.slice();
-      outer1_33 = [];
-      outer1_20 = outer1_37(outer1_20);
-      const _Math = Math;
-      outer1_21 = Math.min(outer1_21, length);
-      const _Math2 = Math;
-      outer1_22 = Math.max(outer1_22, length);
-      outer1_23 = outer1_37(outer1_23, length);
-      const promise = submitEventsImmediately(substr);
-      promise.then(() => {
-        const item = substr.forEach((resolve) => {
-          if (null != resolve.resolve) {
-            resolve.resolve();
-          }
+    const outer1_30 = null;
+    if (0 === outer1_29.length) {
+      if (tmp) {
+        const substr = outer1_29.slice();
+        outer1_29 = [];
+        outer1_16 = outer1_16 + 1;
+        let num2 = substr.length;
+        const _Math = Math;
+        outer1_17 = Math.min(outer1_17, num2);
+        const _Math2 = Math;
+        outer1_18 = Math.max(outer1_18, num2);
+        if (num2 === undefined) {
+          num2 = 1;
+        }
+        outer1_19 = outer1_19 + num2;
+        const promise = drainTimeoutOverride(substr);
+        promise.then(() => {
+          const item = substr.forEach((resolve) => {
+            resolve = resolve.resolve;
+            if (resolve != null) {
+              resolve();
+            }
+          });
+          outer1_12 = outer1_12 + 1;
+        }, (body) => {
+          const items = [...substr];
+          outer1_29.unshift.apply(items);
+          outer1_13 = outer1_13 + 1;
         });
-        outer2_16 = outer2_37(outer2_16);
-      }, (body) => {
-        const items = [...substr];
-        outer2_33.unshift.apply(items);
-        outer2_17 = outer2_37(outer2_17);
-      });
-      return promise;
+        return promise;
+      } else {
+        return Promise.resolve();
+      }
+    } else if (null != outer1_25) {
+      let tmp4 = null != outer1_24;
     } else {
-      return Promise.resolve();
+      tmp4 = null != substr();
     }
   }
-  function submitEventsImmediately(items, CLIENT_TELEMETRY) {
-    let tmp = CLIENT_TELEMETRY;
+  drainTimeoutOverride = function submitEventsImmediately(existingEvents) {
     let closure_0 = Date.now();
-    const mapped = items.map((properties) => {
+    const mapped = existingEvents.map((properties) => {
       let obj = {};
       const merged = Object.assign(properties);
       obj = {};
       const merged1 = Object.assign(properties.properties);
-      obj["client_send_timestamp"] = closure_0;
-      obj["properties"] = obj;
+      obj.client_send_timestamp = closure_0;
+      obj.properties = obj;
       return obj;
     });
     if (null != submitEvents) {
-      return submitEvents(mapped, outer1_28);
+      return tmp2(mapped, outer1_24);
     } else {
-      if (null == tmp) {
-        tmp = closure_2;
+      let tmp3 = arg1;
+      if (arg1 == null) {
+        tmp3 = closure_2;
       }
       let obj = {};
-      if (!outer1_25) {
-        const v4Result = outer1_0(outer1_2[8]).v4();
-        const outer1_27 = v4Result;
-        obj["x-science-test"] = v4Result;
-        outer1_25 = true;
-        const obj2 = outer1_0(outer1_2[8]);
+      if (!outer1_21) {
+        const v4Result = outer1_0(outer1_2[3]).v4();
+        const outer1_23 = v4Result;
+        obj[closure_5] = v4Result;
+        outer1_21 = true;
+        const obj2 = outer1_0(outer1_2[3]);
       }
-      const HTTP = outer1_0(outer1_2[9]).HTTP;
-      obj = { url: tmp };
-      obj.headers = obj;
-      obj = { token: outer1_28, events: mapped };
-      obj.body = obj;
-      obj.retries = 3;
-      obj.rejectWithError = false;
+      const HTTP = outer1_0(outer1_2[4]).HTTP;
+      obj = { url: null, headers: null, body: null, retries: 3, rejectWithError: false };
+      obj[0] = tmp3;
+      obj[1] = obj;
+      obj = { token: null, events: null };
+      obj[0] = outer1_24;
+      obj[1] = mapped;
+      obj[2] = obj;
       return HTTP.post(obj).then((headers) => {
-        if (obj["x-science-test"]) {
-          let prop;
-          if (null != headers) {
+        if (obj[outer1_5]) {
+          let tmp3;
+          if (headers != null) {
             headers = headers.headers;
-            if (null != headers) {
-              prop = headers["x-science-test"];
+            if (headers != null) {
+              tmp3 = headers[tmp];
             }
           }
-          let tmp3 = null;
-          if (null != prop) {
-            tmp3 = prop;
+          if (tmp3 == null) {
+            tmp3 = null;
           }
-          const outer2_26 = tmp3;
+          const outer1_22 = tmp3;
         }
         return headers;
       });
     }
-  }
+  };
   function sendTelemetryEvent() {
-    let obj = { type: drainEventsQueue.CLIENT_TELEMETRY };
-    obj = { client_track_timestamp: Date.now(), rpc_success_count: outer1_16, rpc_failure_count: outer1_17, first_seen_event_sequence_number: outer1_18, last_seen_event_sequence_number: outer1_14, telemetry_period_start_timestamp: outer1_19, telemetry_period_end_timestamp: Date.now(), event_queue_rejection_count: outer1_15, event_queue_batch_count: outer1_20 };
+    let obj = { type: scheduleWhenIdle.CLIENT_TELEMETRY, properties: null };
+    obj = { client_track_timestamp: Date.now(), rpc_success_count: outer1_12, rpc_failure_count: outer1_13, first_seen_event_sequence_number: outer1_14, last_seen_event_sequence_number: sendTelemetryEvent, telemetry_period_start_timestamp: outer1_15, telemetry_period_end_timestamp: Date.now(), event_queue_rejection_count: AnalyticsTrackingStore, event_queue_batch_count: outer1_16, event_queue_batch_min_size: null, event_queue_batch_max_size: null, event_queue_batch_avg_size: null, science_request_id: null, science_response: null, launch_signature: null };
     let num = 0;
-    if (outer1_21 !== Number.MAX_SAFE_INTEGER) {
-      num = outer1_21;
+    if (outer1_17 !== Number.MAX_SAFE_INTEGER) {
+      num = outer1_17;
     }
-    obj.event_queue_batch_min_size = num;
-    obj.event_queue_batch_max_size = outer1_22;
+    obj[9] = num;
+    obj[10] = outer1_18;
     let num2 = 0;
-    if (outer1_20 > 0) {
-      num2 = outer1_23 / outer1_20;
+    if (outer1_16 > 0) {
+      num2 = outer1_19 / tmp;
     }
-    obj.event_queue_batch_avg_size = num2;
-    obj.science_request_id = outer1_27;
-    obj.science_response = outer1_26;
-    obj.launch_signature = B();
-    obj.properties = obj;
-    outer1_15 = 0;
+    obj[11] = num2;
+    obj[12] = outer1_23;
+    obj[13] = outer1_22;
+    obj[14] = X();
+    obj[1] = obj;
+    AnalyticsTrackingStore = 0;
+    outer1_12 = 0;
+    outer1_13 = 0;
     outer1_16 = 0;
-    outer1_17 = 0;
-    outer1_20 = 0;
-    outer1_21 = Number.MAX_SAFE_INTEGER;
-    outer1_22 = 0;
-    outer1_23 = 0;
-    outer1_19 = Date.now();
-    outer1_18 = outer1_14;
+    outer1_17 = Number.MAX_SAFE_INTEGER;
+    outer1_18 = 0;
+    outer1_19 = 0;
+    outer1_15 = Date.now();
+    outer1_14 = sendTelemetryEvent;
     const items = [obj];
-    return submitEventsImmediately(items, scheduleDrain.CLIENT_TELEMETRY);
+    return drainTimeoutOverride(items, outer1_3.CLIENT_TELEMETRY);
   }
-  function stopTelemetryHeartbeat() {
-    if (null != outer1_24) {
-      const type = outer1_24.type;
-      if ("timeout" === type) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(outer1_24.id);
-        outer1_24 = null;
-      } else if ("interval" !== type) {
-        const type2 = outer1_24.type;
-      }
-      const _clearInterval = clearInterval;
-      clearInterval(outer1_24.id);
-    }
-  }
-  if (null != drainTimeoutOverride) {
-    class B {
+  if (drainTimeoutOverride == null) {
+    class X {
       constructor() {
         return null;
       }
     }
   }
-  let c13 = 1500;
   obj.handleConnectionOpen = (arg0) => {
     let analyticsToken;
     let user;
     ({ analyticsToken, user } = arg0);
     if (null != analyticsToken) {
-      const outer1_28 = analyticsToken;
+      const outer1_24 = analyticsToken;
     }
     if (null != user.id) {
-      const outer1_29 = user.id;
+      const outer1_25 = user.id;
     }
-    (function startTelemetryHeartbeat() {
-      if (null == outer2_24) {
-        const _Math = Math;
-        const _Math2 = Math;
-        function scheduleNextHeartbeat() {
-          const result = 0.1 * submitEventsImmediately;
-          const outer3_24 = {
-            type: "timeout",
-            id: setTimeout(() => {
-              outer3_11();
-              outer1_0();
-            }, Math.max(submitEventsImmediately + (Math.floor(Math.random() * result * 2) - result), sendTelemetryEvent))
-          };
-        }
-        const obj = { type: "timeout" };
-        const _setTimeout = setTimeout;
-        obj.id = setTimeout(() => {
-          outer2_11();
-          scheduleNextHeartbeat();
-        }, Math.floor(Math.random() * (stopTelemetryHeartbeat - sendTelemetryEvent) + sendTelemetryEvent));
-        outer2_24 = obj;
+    if (null == outer1_20) {
+      const _Math = Math;
+      const _Math2 = Math;
+      function scheduleNextHeartbeat() {
+
       }
-    })();
+      const obj = { type: "timeout", id: null };
+      const _setTimeout = setTimeout;
+      obj[1] = setTimeout(() => {
+        outer1_10();
+        if (typeof scheduleNextHeartbeat !== "find") {
+          HermesBuiltin.throwTypeError();
+        }
+        const result = 0.1 * submitEvents;
+        const outer2_20 = {
+          type: "timeout",
+          id: setTimeout(() => {
+            outer1_10();
+            if (typeof closure_0 !== "find") {
+              HermesBuiltin.throwTypeError();
+            }
+            let result = 0.1 * outer2_6;
+            outer2_20 = {
+              type: "timeout",
+              id: setTimeout(() => {
+                outer1_10();
+                if (typeof closure_0 !== "find") {
+                  HermesBuiltin.throwTypeError();
+                }
+                let result = 0.1 * outer2_6;
+                outer2_20 = { type: "timeout", id: setTimeout(() => { ... }, Math.max(outer2_6 + (Math.floor(Math.random() * result * 2) - result), outer2_7)) };
+              }, Math.max(outer2_6 + (Math.floor(Math.random() * result * 2) - result), outer2_7))
+            };
+          }, Math.max(submitEvents + (Math.floor(Math.random() * result * 2) - result), scheduleDrain))
+        };
+      }, Math.floor(Math.random() * (drainEventsQueue - scheduleDrain) + scheduleDrain));
+      outer1_20 = obj;
+    }
     scheduleDrain({ shouldFlushOnNextTick: false });
     return false;
   };
   obj.handleConnectionClosed = () => {
     drainEventsQueue();
-    stopTelemetryHeartbeat();
-    const outer1_28 = null;
-    const outer1_29 = null;
-    return false;
+    if (null == outer1_20) {
+      const outer1_24 = null;
+      const outer1_25 = null;
+      return false;
+    } else {
+      const type = outer1_20.type;
+      if ("timeout" === type) {
+        const _clearTimeout = clearTimeout;
+        clearTimeout(outer1_20.id);
+        outer1_20 = null;
+      } else if ("interval" !== type) {
+        const type2 = outer1_20.type;
+      }
+      const _clearInterval = clearInterval;
+      clearInterval(outer1_20.id);
+    }
   };
   obj.handleFingerprint = () => {
     drainEventsQueue();
@@ -322,105 +321,74 @@ export const analyticsTrackingStoreMaker = (getLaunchSignature) => {
   obj.handleTrack = (arg0) => {
     let closure_0;
     let closure_2;
-    let getLowBits;
+    let closure_3;
     let getSessionId;
     let scheduleWhenIdle;
-    ({ event: closure_0, properties: getSessionId, flush: closure_2, fingerprint: getLowBits, resolve: scheduleWhenIdle } = arg0);
+    ({ event: closure_0, properties: getSessionId, flush: closure_2, fingerprint: closure_3, resolve: scheduleWhenIdle } = arg0);
     getSessionId().then((client_heartbeat_session_id) => {
-      let obj = { type: closure_0, fingerprint: getLowBits };
+      let obj = { type: closure_0, fingerprint: closure_3, properties: null, resolve: null };
       obj = { client_track_timestamp: Date.now(), client_heartbeat_session_id: client_heartbeat_session_id.sessionId, event_sequence_number: sum };
-      sum = outer2_14 + 1;
-      outer2_14 = sum;
+      sum = sendTelemetryEvent + 1;
+      sendTelemetryEvent = sum;
       const merged = Object.assign(closure_1);
-      obj.properties = obj;
-      obj.resolve = extractId;
-      if (null != outer2_29) {
-        let extractIdResult = outer2_29;
+      obj[2] = obj;
+      obj[3] = closure_4;
+      if (null != outer2_25) {
+        let extractIdResult = outer2_25;
       } else {
         let fingerprint = obj.fingerprint;
-        if (null == fingerprint) {
+        if (fingerprint == null) {
           fingerprint = outer1_0();
         }
         extractIdResult = null;
         if (null != fingerprint) {
-          extractIdResult = outer2_0(outer2_2[7]).extractId(fingerprint);
-          const obj3 = outer2_0(outer2_2[7]);
+          extractIdResult = outer2_0(outer2_2[2]).extractId(fingerprint);
+          const obj3 = outer2_0(outer2_2[2]);
         }
       }
       if (null != extractIdResult) {
-        obj.properties.client_uuid = outer2_31.generate(extractIdResult);
+        obj.properties.client_uuid = outer2_27.generate(extractIdResult);
       }
-      outer2_33.push(obj);
-      if (outer2_33.length > 10000) {
-        outer2_15 = outer2_37(outer2_15, outer2_33.length - 10000);
-        outer2_33 = outer2_33.slice(-10000);
+      outer2_29.push(obj);
+      if (outer2_29.length > 10000) {
+        AnalyticsTrackingStore = AnalyticsTrackingStore + (outer2_29.length - 10000);
+        outer2_29 = outer2_29.slice(-10000);
       }
-      obj = {};
-      if (closure_2) {
-        obj.shouldFlushOnNextTick = true;
-        let tmp14 = obj;
-      } else {
-        obj.shouldFlushOnNextTick = false;
-        tmp14 = obj;
-      }
-      outer1_8(tmp14);
+      outer1_7(closure_2 ? { shouldFlushOnNextTick: true } : { shouldFlushOnNextTick: false });
     });
     return false;
   };
   obj.handleSetAnalyticsToken = (analyticsToken) => {
     analyticsToken = analyticsToken.analyticsToken;
-    let tmp = null == outer1_28;
+    let tmp = null == outer1_24;
     if (tmp) {
       tmp = null != analyticsToken;
     }
     if (tmp) {
-      outer1_28 = analyticsToken;
-      const outer1_29 = analyticsToken.userId;
-      const obj = { shouldFlushOnNextTick: false };
-      scheduleDrain(obj);
+      outer1_24 = analyticsToken;
+      const outer1_25 = analyticsToken.userId;
+      scheduleDrain({ shouldFlushOnNextTick: false });
     }
     return false;
   };
-  let tmp = ((Store) => {
-    class AnalyticsTrackingStore {
-      constructor(arg0) {
-        self = this;
-        items = [...arguments];
-        tmp = waitFor(this, AnalyticsTrackingStore);
-        items1 = [...items];
-        obj = submitEvents(AnalyticsTrackingStore);
-        tmp2 = B;
-        if (outer2_36()) {
-          tmp4 = globalThis;
-          _Reflect = Reflect;
-          tmp5 = submitEvents;
-          constructResult = Reflect.construct(obj, items1, submitEvents(self).constructor);
-        } else {
-          constructResult = obj.apply(self, items1);
-        }
-        tmp2Result = tmp2(self, constructResult);
-        tmp2Result.submitEventsImmediately = outer1_10;
-        return tmp2Result;
-      }
+  const Store = getSessionId(589).Store;
+  class AnalyticsTrackingStore extends Store {
+    constructor() {
+      applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+      applyArgumentsResult.submitEventsImmediately = c9;
+      return applyArgumentsResult;
     }
-    canDrain(AnalyticsTrackingStore, Store);
-    let items = [
-      {
-        key: "initialize",
-        value: function initialize() {
-          const self = this;
-          if (null != outer1_3) {
-            const waitFor = self.waitFor;
-            const items = [];
-            HermesBuiltin.arraySpread(outer1_3, 0);
-            HermesBuiltin.apply(items, self);
-          }
-        }
-      }
-    ];
-    return scheduleWhenIdle(AnalyticsTrackingStore, items);
-  })(getSessionId(566).Store);
-  tmp.displayName = "AnalyticsTrackingStore";
-  tmp = new tmp(dispatcher, actionHandler);
-  return tmp;
+  }
+  AnalyticsTrackingStore.prototype["initialize"] = function initialize() {
+    if (null != closure_3) {
+      const self = this;
+      const waitFor = this.waitFor;
+      const items = [];
+      HermesBuiltin.arraySpread(tmp, 0);
+      const self2 = this;
+      HermesBuiltin.apply(items, this);
+    }
+  };
+  AnalyticsTrackingStore.displayName = "AnalyticsTrackingStore";
+  return new AnalyticsTrackingStore(dispatcher, actionHandler);
 };

@@ -1,18 +1,18 @@
-// Module ID: 5988
-// Function ID: 53098
+// Module ID: 6007
+// Function ID: 6008
 // Name: keys
-// Dependencies: [621, 2]
+// Dependencies: [644, 2]
 
-// Module 5988 (keys)
+// Module 6007 (keys)
 import keys from "keys";
 
 const obj = keys.create((arg0) => {
   let closure_0 = arg0;
   return {
-    utmSourceCurrent: undefined,
-    utmMediumCurrent: undefined,
-    utmCampaignCurrent: undefined,
-    utmContentCurrent: undefined,
+    utmSourceCurrent: "r",
+    utmMediumCurrent: "disabled",
+    utmCampaignCurrent: "_distance",
+    utmContentCurrent: "isArray",
     setUtmCurrentContext(utmSourceCurrent) {
       return state({ utmSourceCurrent: utmSourceCurrent.utmSourceCurrent, utmMediumCurrent: utmSourceCurrent.utmMediumCurrent, utmCampaignCurrent: utmSourceCurrent.utmCampaignCurrent, utmContentCurrent: utmSourceCurrent.utmContentCurrent });
     },

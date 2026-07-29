@@ -1,22 +1,22 @@
-// Module ID: 9197
-// Function ID: 71990
+// Module ID: 9221
+// Function ID: 9222
 // Name: AuthNavbarPlaceholder
-// Dependencies: [31, 33, 4165, 689, 5121, 2]
+// Dependencies: [19, 21, 4189, 712, 5143, 2]
 // Exports: default
 
-// Module 9197 (AuthNavbarPlaceholder)
-import "result";
+// Module 9221 (AuthNavbarPlaceholder)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.TRANSPARENT, borderBottomWidth: 0 };
-_createForOfIteratorHelperLoose.navBar = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/auth/native/components/atoms/AuthNavbarPlaceholder.tsx");
+createCacheKey = { navBar: null };
+createCacheKey = { backgroundColor: require("Themes").unsafe_rawColors.TRANSPARENT, borderBottomWidth: 0 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createCacheKey").fileFinishedImporting("modules/auth/native/components/atoms/AuthNavbarPlaceholder.tsx");
 
 export default function AuthNavbarPlaceholder() {
-  const tmp = _createForOfIteratorHelperLoose();
-  return jsx(require(5121) /* HeaderBackImage */.FauxHeader, { style: _createForOfIteratorHelperLoose().navBar, children: null });
+  const tmp = createCacheKey();
+  return jsx(require(5143) /* HeaderBackImage */.FauxHeader, { style: createCacheKey().navBar, children: null });
 };

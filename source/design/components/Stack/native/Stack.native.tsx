@@ -1,25 +1,23 @@
-// Module ID: 4576
-// Function ID: 39968
+// Module ID: 4598
+// Function ID: 4599
 // Name: Stack
-// Dependencies: [31, 27, 33, 4165, 2]
+// Dependencies: [19, 17, 21, 4189, 2]
 // Exports: Stack
 
-// Module 4576 (Stack)
-import "result";
+// Module 4598 (Stack)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2 = _createForOfIteratorHelperLoose.createStyles((gap, arg1, alignItems, justifyContent) => {
-  let obj = {};
-  obj = { width: "100%", gap, alignItems, justifyContent };
+let closure_2 = createCacheKey.createStyles((gap, arg1, alignItems, justifyContent) => {
+  const stack = { width: "100%", gap, alignItems, justifyContent, flexDirection: null };
   let str = "column";
   if ("horizontal" === arg1) {
     str = "row";
   }
-  obj.flexDirection = str;
-  obj.stack = obj;
-  return obj;
+  stack[4] = str;
+  return { stack };
 });
 const result = require("jsxProd").fileFinishedImporting("design/components/Stack/native/Stack.native.tsx");
 
@@ -48,10 +46,10 @@ export const Stack = function Stack(spacing) {
     str3 = justify;
   }
   ({ children, style, onLayout } = spacing);
-  const obj = {};
+  const obj = { style: null, onLayout: null, children: null };
   const items = [callback(num, str, str2, str3).stack, style];
-  obj.style = items;
-  obj.onLayout = onLayout;
-  obj.children = children;
-  return <View />;
+  obj[0] = items;
+  obj[1] = onLayout;
+  obj[2] = children;
+  return <View style={null} onLayout={null}>{null}</View>;
 };

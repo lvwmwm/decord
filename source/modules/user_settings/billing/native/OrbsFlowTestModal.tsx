@@ -1,32 +1,32 @@
-// Module ID: 14769
-// Function ID: 112414
+// Module ID: 14795
+// Function ID: 14796
 // Name: BalanceWidgetMenuSection
-// Dependencies: [57, 31, 27, 33, 9085, 5552, 9094, 10163, 4165, 689, 4576, 4161, 14770, 4133, 9794, 1935, 1212, 6706, 4578, 9783, 9793, 5193, 5484, 14772, 2]
+// Dependencies: [32, 19, 17, 21, 9109, 5570, 9118, 10184, 4189, 712, 4598, 4185, 14796, 4157, 9816, 1959, 1236, 6727, 4600, 9805, 9815, 5215, 5502, 14798, 2]
 
-// Module 14769 (BalanceWidgetMenuSection)
+// Module 14795 (BalanceWidgetMenuSection)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
+import importAllResult from "BalanceWidgetPill";
+import get_ActivityIndicator from "TextInput";
+import jsxProd from "useSafeAreaInsetsKeyboardAware";
 import createNativeStackNavigator from "createNativeStackNavigator";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function BalanceWidgetMenuSection() {
   const tmp = callback4();
-  let obj = { spacing: 16, style: tmp.container };
+  let obj = { spacing: 16, style: tmp.container, children: null };
   obj = { variant: "text-lg/semibold", style: tmp.title, children: "Balance Widget Menu" };
-  const items = [callback2(require(4161) /* Text */.Text, obj), callback2(importDefault(14770), {})];
-  obj.children = items;
-  return callback3(require(4576) /* Stack */.Stack, obj);
+  const items = [callback2(require(4185) /* Text */.Text, obj), callback2(importDefault(14796), {})];
+  obj[2] = items;
+  return callback3(require(4598) /* Stack */.Stack, obj);
 }
 function BalanceWidgetPillSection() {
   const tmp = callback4();
-  let tmp2 = callback(importAllResult.useState(1000), 2);
+  const tmp2 = callback(importAllResult.useState(1000), 2);
   const first = tmp2[0];
   let closure_1 = tmp2[1];
   const tmp4 = callback(importAllResult.useState("1000"), 2);
@@ -39,84 +39,82 @@ function BalanceWidgetPillSection() {
   const items1 = [first];
   const callback1 = importAllResult.useCallback(() => {
     const parsed = parseInt(first1, 10);
-    let tmp2 = !isNaN(parsed);
-    if (tmp2) {
-      tmp2 = parsed >= 0;
+    const isNaNResult = isNaN(parsed);
+    let tmp3 = !isNaNResult;
+    if (!isNaNResult) {
+      tmp3 = parsed >= 0;
     }
-    if (tmp2) {
+    if (tmp3) {
       callback(parsed);
     }
   }, items);
   const callback2 = importAllResult.useCallback(() => {
     let obj = callback(first1[13]);
-    obj = { balance: first };
-    obj = {};
+    obj = { balance: first, primaryButtonConfig: null, secondaryButtonConfig: null };
+    obj = { buttonText: null, onButtonPress: null };
     const intl = first(first1[16]).intl;
-    obj.buttonText = intl.string(first(first1[16]).t.cpT0Cq);
-    obj.onButtonPress = function onButtonPress() {
-      callback(first1[13]).hideActionSheet();
+    obj[0] = intl.string(first(first1[16]).t.cpT0Cq);
+    obj[1] = function onButtonPress() {
+      callback2(paths[13]).hideActionSheet();
     };
-    obj.primaryButtonConfig = obj;
-    const obj1 = {};
+    obj[1] = obj;
+    const obj1 = { buttonText: null, onButtonPress: null };
     const intl2 = first(first1[16]).intl;
-    obj1.buttonText = intl2.string(first(first1[16]).t.WAI6xu);
-    obj1.onButtonPress = function onButtonPress() {
-      callback(first1[13]).hideActionSheet();
+    obj1[0] = intl2.string(first(first1[16]).t.WAI6xu);
+    obj1[1] = function onButtonPress() {
+      callback2(paths[13]).hideActionSheet();
     };
-    obj.secondaryButtonConfig = obj1;
-    obj.openLazy(() => first(first1[15])(first1[14], first1.paths).then((arg0) => arg0.default), "OrbsFlowTestModalBalanceWidgetMenuKey", obj);
+    obj[2] = obj1;
+    obj.openLazy(() => callback(paths[15])(paths[14], paths.paths).then((arg0) => arg0.default), "OrbsFlowTestModalBalanceWidgetMenuKey", obj);
   }, items1);
-  let obj = { spacing: 16, style: tmp.container };
+  let obj = { spacing: 16, style: tmp.container, children: null };
   obj = { variant: "text-lg/semibold", style: tmp.title, children: "Balance Widget Pill" };
-  const items2 = [callback2(first(first1[11]).Text, obj), callback2(first(first1[17]).TextInput, { value: first1, onChange: callback, placeholder: "Enter balance amount", keyboardType: "numeric" }), , ];
-  obj = { text: "Apply Balance", variant: "primary", onPress: callback1 };
-  items2[2] = callback2(first(first1[18]).Button, obj);
-  let obj1 = { style: tmp.balancePillContainer };
+  const items2 = [callback2(first(first1[11]).Text, obj), callback2(first(first1[17]).TextInput, { value: first1, onChange: callback, placeholder: "Enter balance amount", keyboardType: "numeric" }), callback2(first(first1[18]).Button, { text: "Apply Balance", variant: "primary", onPress: callback1 }), ];
+  obj = { style: tmp.balancePillContainer, children: null };
   const items3 = [callback2(first(first1[19]).BalanceWidgetPill, { balance: first }), callback2(first(first1[20]).BalanceWidgetPillButton, { balance: first, onPress: callback2 })];
-  obj1.children = items3;
-  items2[3] = callback3(closure_6, obj1);
-  obj.children = items2;
+  obj[1] = items3;
+  items2[3] = callback3(closure_6, obj);
+  obj[2] = items2;
   return callback3(first(first1[10]).Stack, obj);
 }
 function OrbsFlowTest() {
-  const insets = importDefault(5193)({ includeKeyboardHeight: true }).insets;
-  let obj = {};
-  obj = { style: callback4().wrap, contentContainerStyle: obj };
+  const insets = importDefault(5215)({ includeKeyboardHeight: true }).insets;
+  let obj = { children: null };
+  obj = { style: callback4().wrap, contentContainerStyle: obj, children: null };
   obj = { paddingBottom: insets.bottom, paddingTop: insets.top, paddingLeft: insets.left, paddingRight: insets.right };
-  const items = [callback2(BalanceWidgetMenuSection, {}), callback2(BalanceWidgetPillSection, {}), callback2(importDefault(14772), {})];
-  obj.children = items;
-  obj.children = callback3(closure_5, obj);
-  return callback2(require(5484) /* Layer */.LayerScope, obj);
+  const items = [callback2(BalanceWidgetMenuSection, {}), callback2(BalanceWidgetPillSection, {}), callback2(importDefault(14798), {})];
+  obj[2] = items;
+  obj[0] = callback3(closure_5, obj);
+  return callback2(require(5502) /* Layer */.LayerScope, obj);
 }
-({ ScrollView: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+let c4 = importAllResult;
+({ ScrollView: c5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
 createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj.wrap = obj;
-createNativeStackNavigator = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.container = createNativeStackNavigator;
-obj.title = { marginBottom: 8 };
-_createForOfIteratorHelperLoose = { flexDirection: "row", justifyContent: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.balancePillContainer = _createForOfIteratorHelperLoose;
-let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj = { wrap: null, container: null, title: null, balancePillContainer: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[0] = obj;
+createNativeStackNavigator = { padding: require("Themes").space.PX_16 };
+obj[1] = createNativeStackNavigator;
+obj[2] = { marginBottom: 8 };
+createCacheKey = { flexDirection: "row", justifyContent: "center", marginBottom: require("Themes").space.PX_16, gap: require("Themes").space.PX_16 };
+obj[3] = createCacheKey;
+let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function OrbsFlowTestModal() {
-  let obj = _require(5552);
+  let obj = _require(5570);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions(navigation) {
-      let obj = {
+      const obj = {
         headerTitle(children) {
-          let obj = Object.create(null);
-          obj.children = 0;
-          const merged = Object.assign(children, obj);
-          obj = { title: children.children };
+          const merged = Object.assign(children, Object.create(null));
           const merged1 = Object.assign(merged);
-          return outer2_7(callback(outer2_2[6]).GenericHeaderTitle, obj);
+          return callback2(callback(table[6]).GenericHeaderTitle, { title: children.children });
         },
-        headerLeft: callback(outer1_2[6]).getRenderModalCloseImage(navigation.navigation),
+        headerLeft: null,
         headerTitleAlign: "center"
       };
+      obj[1] = callback(outer1_2[6]).getRenderModalCloseImage(navigation.navigation);
       let merged = Object.assign(callback);
       let merged1 = Object.assign(outer1_1(outer1_2[7])());
       return obj;

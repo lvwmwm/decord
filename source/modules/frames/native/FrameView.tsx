@@ -1,114 +1,119 @@
-// Module ID: 15835
-// Function ID: 121950
+// Module ID: 15870
+// Function ID: 15871
 // Name: FrameView
-// Dependencies: [57, 31, 5668, 5669, 4190, 33, 566, 5498, 686, 10611, 10633, 15836, 15837, 10644, 2]
+// Dependencies: [32, 19, 5686, 5687, 4214, 21, 589, 5516, 709, 10619, 10657, 15871, 15872, 10668, 2]
 
-// Module 15835 (FrameView)
+// Module 15870 (FrameView)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importAllResult from "noop";
+import map from "map";
 import { FrameLayoutModes } from "FrameLayoutModes";
 import { ActivityPlatform } from "items3";
 import { jsx } from "jsxProd";
 
 const require = arg1;
+let c4 = importAllResult;
 const memoResult = importAllResult.memo(function FrameViewInner(layoutMode) {
-  let tmp5;
-  let tmp6;
+  let tmp8;
+  let tmp9;
   layoutMode = layoutMode.layoutMode;
   let landscapeSafeAreasConfig = layoutMode.portraitSafeAreasConfig;
+  let stateFromStores;
   let applicationId1;
   let setIsResetting;
   let obj = layoutMode(applicationId1[6]);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getConnectedFrame());
+  const items = [map];
+  stateFromStores = obj.useStateFromStores(items, () => connectedFrame.getConnectedFrame());
   let obj1 = layoutMode(applicationId1[7]);
   let applicationId;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     applicationId = stateFromStores.applicationId;
   }
   const data = obj1.useApplication(applicationId).data;
-  let obj2 = layoutMode(applicationId1[6]);
-  const items1 = [_isNativeReflectConstruct];
+  let tmpResult = tmp(tmp2[6]);
+  const items1 = [map];
   const items2 = [stateFromStores];
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
+  const stateFromStores1 = tmpResult.useStateFromStores(items1, () => {
     let orientationLockStateForApp;
     if (null != stateFromStores) {
-      orientationLockStateForApp = outer1_5.getOrientationLockStateForApp(stateFromStores.applicationId);
+      orientationLockStateForApp = outer1_5.getOrientationLockStateForApp(tmp.applicationId);
     }
     return orientationLockStateForApp;
   }, items2);
   const items3 = [layoutMode];
-  [tmp5, tmp6] = setIsResetting(importAllResult.useState(true), 2);
+  [tmp8, tmp9] = setIsResetting(importAllResult.useState(true), 2);
   const layoutEffect = importAllResult.useLayoutEffect(() => {
     if (null != stateFromStores) {
       let obj = stateFromStores(applicationId1[8]);
-      obj = { type: "FRAME_UPDATE_LAYOUT_MODE", layoutMode, applicationId: stateFromStores.applicationId };
+      obj = { type: "FRAME_UPDATE_LAYOUT_MODE", layoutMode: null, applicationId: null };
+      obj[1] = layoutMode;
+      obj[2] = tmp.applicationId;
       obj.dispatch(obj);
     }
   }, items3);
   applicationId1 = undefined;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     applicationId1 = stateFromStores.applicationId;
   }
   const items4 = [applicationId1];
-  let tmp10 = null == stateFromStores;
+  let tmp13 = null == stateFromStores;
   const callback = importAllResult.useCallback(() => {
     if (null != applicationId1) {
       let obj = stateFromStores(applicationId1[9]);
-      obj = { applicationId: applicationId1 };
+      obj = { applicationId: null };
+      obj[0] = tmp;
       obj.leaveFrame(obj);
     }
   }, items4);
-  if (!tmp10) {
-    tmp10 = tmp5;
+  if (!tmp13) {
+    tmp13 = tmp8;
   }
-  if (!tmp10) {
-    tmp10 = null == applicationId1;
+  if (!tmp13) {
+    tmp13 = null == applicationId1;
   }
-  if (!tmp10) {
-    tmp10 = null == data;
+  if (!tmp13) {
+    tmp13 = null == data;
   }
-  const tmp4 = setIsResetting(importAllResult.useState(true), 2);
-  obj = { orientationLockState: stateFromStores1, showLoadingIndicator: tmp10, setShowLoadingStateForLockingOrientation: tmp6, application: data, setOrientationLockState: layoutMode(applicationId1[11]).setOrientationLockState };
-  const baseActivityView = layoutMode(applicationId1[10]).useBaseActivityView(obj);
+  tmpResult = tmp(tmp2[10]);
+  obj = { orientationLockState: stateFromStores1, showLoadingIndicator: tmp13, setShowLoadingStateForLockingOrientation: tmp9, application: data, setOrientationLockState: tmp(tmp2[11]).setOrientationLockState };
+  const baseActivityView = tmpResult.useBaseActivityView(obj);
   setIsResetting = baseActivityView.setIsResetting;
   if (null == stateFromStores) {
     return null;
   } else {
-    obj = { instance_id: "example-cl-instance", platform: ActivityPlatform.MOBILE };
+    obj = { instance_id: "example-cl-instance", platform: null };
+    obj[1] = ActivityPlatform.MOBILE;
     if (null != stateFromStores.proxyTicket) {
       obj.discord_proxy_ticket = stateFromStores.proxyTicket;
     }
-    obj1 = { wakeLockKey: "FrameActivities", showLoadingIndicator: tmp10, isResetting: tmp12 };
-    obj2 = {
-      onActivityCrash() {
-          setIsResetting(true);
-          const timerId = setTimeout(() => outer1_3(false), 0);
-        },
-      applicationId: applicationId1,
-      activityUrl: stateFromStores.url,
-      queryParams: obj,
-      onLoadError: callback
+    obj1 = { wakeLockKey: "FrameActivities", showLoadingIndicator: null, isResetting: null, children: null };
+    obj1[1] = tmp13;
+    obj1[2] = tmp15;
+    const obj2 = { onActivityCrash: null, applicationId: null, activityUrl: null, queryParams: null, onLoadError: null, allowPopups: null, referrerPolicy: "origin", isPipOrGridMode: null, webViewKey: null, safeAreasConfig: null };
+    obj2[0] = function onActivityCrash() {
+      setIsResetting(true);
+      const timerId = setTimeout(() => callback(false), 0);
     };
-    const tmp18 = stateFromStores(applicationId1[12]);
-    obj2.allowPopups = layoutMode(applicationId1[13]).allowPopups(data);
-    obj2.referrerPolicy = "origin";
-    obj2.isPipOrGridMode = layoutMode === FrameLayoutModes.PIP;
-    obj2.webViewKey = layoutMode(applicationId1[9]).FRAME_WEB_VIEW_KEY;
-    if (tmp13) {
+    obj2[1] = applicationId1;
+    obj2[2] = stateFromStores.url;
+    obj2[3] = obj;
+    obj2[4] = callback;
+    const tmp19 = stateFromStores(tmp2[12]);
+    obj2[5] = tmp(tmp2[13]).allowPopups(data);
+    obj2[7] = layoutMode === FrameLayoutModes.PIP;
+    obj2[8] = tmp(tmp2[9]).FRAME_WEB_VIEW_KEY;
+    if (tmp16) {
       landscapeSafeAreasConfig = layoutMode.landscapeSafeAreasConfig;
     }
-    obj2.safeAreasConfig = landscapeSafeAreasConfig;
-    obj1.children = <tmp18 onActivityCrash={function onActivityCrash() {
-      setIsResetting(true);
-      const timerId = setTimeout(() => outer1_3(false), 0);
-    }} applicationId={applicationId1} activityUrl={stateFromStores.url} queryParams={obj} onLoadError={callback} />;
-    return jsx(layoutMode(applicationId1[10]).BaseActivityView, { wakeLockKey: "FrameActivities", showLoadingIndicator: tmp10, isResetting: tmp12 });
+    obj2[9] = landscapeSafeAreasConfig;
+    obj1[3] = <tmp19 onActivityCrash={null} applicationId={null} activityUrl={null} queryParams={null} onLoadError={null} allowPopups={null} referrerPolicy="origin" isPipOrGridMode={null} webViewKey={null} safeAreasConfig={null} />;
+    return jsx(tmp(tmp2[10]).BaseActivityView, { wakeLockKey: "FrameActivities", showLoadingIndicator: null, isResetting: null, children: null });
   }
-  const obj4 = layoutMode(applicationId1[10]);
+  const obj4 = importAllResult;
+  const tmp3 = map;
+  const tmp7 = setIsResetting(importAllResult.useState(true), 2);
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/frames/native/FrameView.tsx");
+const result = require("map").fileFinishedImporting("modules/frames/native/FrameView.tsx");
 
 export default memoResult;
 export const FrameView = memoResult;

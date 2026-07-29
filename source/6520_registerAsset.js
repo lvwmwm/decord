@@ -1,11 +1,10 @@
 // Module ID: 6520
-// Function ID: 58097
+// Function ID: 6521
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 6520 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 180, height: 108, scales: [2, 3], hash: "fdbdffcc03357c67352ab2f9dff83bf6", name: "img_what_you_lose_profile_tier1_light", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 51, height: 36, scales: [2, 3], hash: "f2d705f9d582bb6c65065afe8639e152", name: "img_classic_error_mobile", type: "png" });

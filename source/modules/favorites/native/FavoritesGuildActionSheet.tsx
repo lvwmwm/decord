@@ -1,70 +1,66 @@
-// Module ID: 15088
-// Function ID: 114826
+// Module ID: 15121
+// Function ID: 15122
 // Name: FavoritesGuildActionSheet
-// Dependencies: [31, 33, 15089, 15090, 5533, 5220, 1212, 5535, 5153, 9190, 4133, 4124, 2]
+// Dependencies: [19, 21, 15122, 15123, 5551, 5242, 1236, 5553, 5175, 9214, 4157, 4148, 2]
 // Exports: openFavoritesGuildActionSheet
 
-// Module 15088 (FavoritesGuildActionSheet)
-import "result";
+// Module 15121 (FavoritesGuildActionSheet)
+import "noop";
 import jsxProd from "jsxProd";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 let require = arg1;
 function FavoritesGuildActionSheet() {
-  const tmp = importDefault(15089)();
-  const require = tmp;
-  const tmp2 = importDefault(15090)();
-  importDefault = tmp2;
-  let obj = {};
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.wMWyci);
-  obj.header = callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
-  obj = { hasIcons: true };
-  const obj1 = { label: tmp.label, subLabel: tmp.subLabel };
-  const obj2 = {};
-  if (tmp.isPreview) {
-    let EyeSlashIcon = tmp7(5153).XSmallIcon;
+  const tmp2 = importDefault(15122)();
+  const require = tmp2;
+  const tmp3 = importDefault(15123)();
+  importDefault = tmp3;
+  let obj = { header: null, children: null };
+  obj = { title: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.wMWyci);
+  obj[0] = callback(require(5242) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj = { label: tmp2.label, subLabel: tmp2.subLabel, icon: null, variant: null, onPress: null };
+  if (tmp2.isPreview) {
+    let EyeSlashIcon = tmp5(5175).XSmallIcon;
   } else {
-    EyeSlashIcon = tmp7(9190).EyeSlashIcon;
+    EyeSlashIcon = tmp5(9214).EyeSlashIcon;
   }
-  obj2.IconComponent = EyeSlashIcon;
-  obj1.icon = callback(require(5535) /* ActionSheetRowIcon */.ActionSheetRow.Icon, obj2);
+  obj[2] = callback(require(5553) /* ActionSheetRowIcon */.ActionSheetRow.Icon, { IconComponent: EyeSlashIcon });
   let str = "danger";
-  if (tmp.isPreview) {
+  if (tmp2.isPreview) {
     str = "default";
   }
-  obj1.variant = str;
-  obj1.onPress = function onPress() {
-    tmp2(outer1_2[10]).hideActionSheet(outer1_5);
-    tmp.perform();
+  obj[3] = str;
+  obj[4] = function onPress() {
+    tmp3(outer1_2[10]).hideActionSheet(outer1_5);
+    tmp2.perform();
   };
-  const items = [callback(require(5535) /* ActionSheetRowIcon */.ActionSheetRow, obj1), ];
-  let tmp9 = null;
-  if (tmp2.isAvailable) {
-    const obj3 = {};
-    ({ label: obj6.label, subLabel: obj6.subLabel } = tmp2);
-    const obj4 = { IconComponent: require(4124) /* TrashIcon */.TrashIcon };
-    obj3.icon = callback(require(5535) /* ActionSheetRowIcon */.ActionSheetRow.Icon, obj4);
-    obj3.variant = "danger";
-    obj3.onPress = function onPress() {
-      tmp2(outer1_2[10]).hideActionSheet(outer1_5);
-      tmp2.perform();
+  const items = [callback(require(5553) /* ActionSheetRowIcon */.ActionSheetRow, obj), ];
+  let tmp4Result = null;
+  if (tmp3.isAvailable) {
+    const obj1 = { label: null, subLabel: null, icon: null, variant: "danger", onPress: null };
+    ({ label: obj4[0], subLabel: obj4[1] } = tmp3);
+    const obj2 = { IconComponent: null };
+    obj2[0] = tmp5(4148).TrashIcon;
+    obj1[2] = tmp4(tmp5(5553).ActionSheetRow.Icon, obj2);
+    obj1[4] = function onPress() {
+      tmp3(outer1_2[10]).hideActionSheet(outer1_5);
+      tmp3.perform();
     };
-    tmp9 = callback(require(5535) /* ActionSheetRowIcon */.ActionSheetRow, obj3);
+    tmp4Result = tmp4(tmp5(5553).ActionSheetRow, obj1);
   }
-  items[1] = tmp9;
-  obj.children = items;
-  obj.children = closure_4(require(5535) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
-  return callback(require(5533) /* ActionSheet */.ActionSheet, obj);
+  items[1] = tmp4Result;
+  obj[1] = closure_4(require(5553) /* ActionSheetRowIcon */.ActionSheetRow.Group, { hasIcons: true, children: items });
+  return callback(require(5551) /* ActionSheet */.ActionSheet, obj);
 }
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+({ jsx: c3, jsxs: c4 } = jsxProd);
 FavoritesGuildActionSheet = "FavoritesGuildActionSheet";
 const result = require("useFavoritesGuildHideAction").fileFinishedImporting("modules/favorites/native/FavoritesGuildActionSheet.tsx");
 
 export const openFavoritesGuildActionSheet = function openFavoritesGuildActionSheet() {
-  let obj = require(4133) /* showActionSheet */;
+  let obj = require(4157) /* ACTION_SHEET_HEIGHT_HALF */;
   obj = { content: callback(FavoritesGuildActionSheet, {}), key: FavoritesGuildActionSheet };
   obj.showActionSheet(obj);
 };

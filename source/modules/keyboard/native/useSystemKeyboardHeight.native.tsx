@@ -1,10 +1,10 @@
-// Module ID: 1823
-// Function ID: 20016
+// Module ID: 1847
+// Function ID: 1848
 // Name: useSystemKeyboardHeight
-// Dependencies: [1453, 1454, 2]
+// Dependencies: [1477, 1478, 2]
 // Exports: default, getSystemKeyboardHeight
 
-// Module 1823 (useSystemKeyboardHeight)
+// Module 1847 (useSystemKeyboardHeight)
 let closure_3 = { excludeSafeAreaInsets: false };
 const result = require("set").fileFinishedImporting("modules/keyboard/native/useSystemKeyboardHeight.native.tsx");
 
@@ -18,10 +18,10 @@ export default function useSystemKeyboardHeight() {
     flag = false;
   }
   let importDefault;
-  importDefault = flag(1453).useAppEntryKey();
-  return importDefault(1454)((arg0) => flag ? arg0.byAppEntry[closure_1].keyboardHeightExcludingSafeAreaInsets : arg0.byAppEntry[closure_1].keyboardHeight);
+  importDefault = flag(1477).useAppEntryKey();
+  return importDefault(1478)((arg0) => flag ? arg0.byAppEntry[closure_1].keyboardHeightExcludingSafeAreaInsets : arg0.byAppEntry[closure_1].keyboardHeight);
 };
-export const getSystemKeyboardHeight = function getSystemKeyboardHeight() {
+export const getSystemKeyboardHeight = function getSystemKeyboardHeight(arg0) {
   let tmp = arg0;
   if (arg0 === undefined) {
     tmp = closure_3;
@@ -32,8 +32,8 @@ export const getSystemKeyboardHeight = function getSystemKeyboardHeight() {
   }
   let DEFAULT_APP_ENTRY_KEY = tmp.appEntryKey;
   if (DEFAULT_APP_ENTRY_KEY === undefined) {
-    DEFAULT_APP_ENTRY_KEY = require(1453) /* context */.DEFAULT_APP_ENTRY_KEY;
+    DEFAULT_APP_ENTRY_KEY = require(1477) /* context */.DEFAULT_APP_ENTRY_KEY;
   }
-  const tmp4 = importDefault(1454).getState().byAppEntry[DEFAULT_APP_ENTRY_KEY];
+  const tmp4 = importDefault(1478).getState().byAppEntry[DEFAULT_APP_ENTRY_KEY];
   return flag ? tmp4.keyboardHeightExcludingSafeAreaInsets : tmp4.keyboardHeight;
 };

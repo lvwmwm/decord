@@ -1,63 +1,63 @@
-// Module ID: 11449
-// Function ID: 88820
+// Module ID: 11473
+// Function ID: 11474
 // Name: useEventsButtonProps
-// Dependencies: [31, 4177, 4360, 4361, 566, 8297, 4654, 9117, 8205, 4133, 11450, 1935, 1212, 11454, 2]
+// Dependencies: [19, 4201, 4385, 4386, 589, 8321, 4676, 9141, 8229, 4157, 11474, 1959, 1236, 11478, 2]
 // Exports: default
 
-// Module 11449 (useEventsButtonProps)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 11473 (useEventsButtonProps)
+import noop from "noop";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { ReadStateTypes } from "ReadStateTypes";
 
 const require = arg1;
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_scheduled_events/native/hooks/useEventsButtonProps.tsx");
+let result = require("updateUserGuildSettingsInternal").fileFinishedImporting("modules/guild_scheduled_events/native/hooks/useEventsButtonProps.tsx");
 
 export default function useEventsButtonProps(id) {
   let hasUnread;
   let mentionCount;
   const _require = id;
-  let obj = _require(566);
-  const items = [_isNativeReflectConstruct];
+  let obj = _require(589);
+  const items = [generateOldThreadCutoff];
   const items1 = [id.id];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ hasUnread: outer1_4.hasUnread(id.id, outer1_6.GUILD_EVENT), mentionCount: outer1_4.getMentionCount(id.id, outer1_6.GUILD_EVENT) }), items1);
   ({ hasUnread, mentionCount } = stateFromStoresObject);
-  const items2 = [closure_5];
-  const stateFromStores = _require(566).useStateFromStores(items2, () => outer1_5.isMuteScheduledEventsEnabled(id.id));
-  const arr4 = importDefault(8297)(id.id);
+  const items2 = [updateUserGuildSettingsInternal];
+  const eventsMuted = _require(589).useStateFromStores(items2, () => outer1_5.isMuteScheduledEventsEnabled(id.id));
+  const arr4 = importDefault(8321)(id.id);
   const items3 = [id];
   const items4 = [id.id];
-  const callback = React.useCallback(() => {
+  const handlePress = React.useCallback(() => {
     if (obj.shouldShowMembershipVerificationGate(id.id)) {
       let tmpResult = tmp(tmp2[7]);
-      let result = tmpResult.openMemberVerificationModal(id.id);
+      let result = tmpResult.openMemberVerificationModal(tmp3.id);
     } else {
       tmpResult = tmp(tmp2[8]);
-      result = tmpResult.openGuildEventListActionSheet(id);
+      result = tmpResult.openGuildEventListActionSheet(tmp3);
     }
     return result;
   }, items3);
-  const callback1 = React.useCallback(() => {
+  const handleLongPress = React.useCallback(() => {
     let obj = outer1_1(outer1_2[9]);
     obj = { guildId: id.id };
     obj.openLazy(id(outer1_2[11])(outer1_2[10], outer1_2.paths), "UpcomingEventsLongPress-" + id.id, obj);
   }, items4);
   if (arr4.length > 0) {
-    const intl2 = _require(1212).intl;
-    obj = { number: arr4.length };
-    let formatToPlainStringResult = intl2.formatToPlainString(_require(1212).t.IBdqSu, obj);
+    const intl2 = tmp(1236).intl;
+    obj = { number: null };
+    obj[0] = arr4.length;
+    let name = intl2.formatToPlainString(tmp(1236).t.IBdqSu, obj);
   } else {
-    const intl = _require(1212).intl;
-    formatToPlainStringResult = intl.string(_require(1212).t.tlopTM);
+    const intl = tmp(1236).intl;
+    name = intl.string(tmp(1236).t.tlopTM);
   }
-  let UNREAD_IMPORTANT = _require(11454).ChannelModes.DEFAULT;
-  let tmp10 = hasUnread;
+  let mode = tmp(11478).ChannelModes.DEFAULT;
+  let tmp8 = hasUnread;
   if (hasUnread) {
-    tmp10 = !stateFromStores;
+    tmp8 = !eventsMuted;
   }
-  if (tmp10) {
-    UNREAD_IMPORTANT = _require(11454).ChannelModes.UNREAD_IMPORTANT;
+  if (tmp8) {
+    mode = tmp(11478).ChannelModes.UNREAD_IMPORTANT;
   }
-  obj = { hasUnread, mentionCount, mode: UNREAD_IMPORTANT, name: formatToPlainStringResult, eventsMuted: stateFromStores, handlePress: callback, handleLongPress: callback1 };
-  return obj;
+  return { hasUnread, mentionCount, mode, name, eventsMuted, handlePress, handleLongPress };
 };

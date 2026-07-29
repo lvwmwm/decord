@@ -1,25 +1,36 @@
-// Module ID: 1876
-// Function ID: 20903
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1859, 2]
+// Module ID: 1900
+// Function ID: 1901
+// Name: fromServer
+// Dependencies: [1883, 2]
 
-// Module 1876 (_isNativeReflectConstruct)
-import set from "set";
-import _defineProperties from "_defineProperties";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "Record";
+// Module 1900 (fromServer)
+import "toJS";
 
-function _isNativeReflectConstruct() {
-  let set = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return set;
-  }
-  const result = _isNativeReflectConstruct();
+let prototype;
+prototype = function BaseCollectiblesItemRecord(skuId) {
+  const tmp = new prototype(new.target);
+  // ThrowIfThisInitialized (0x7c)
+  tmp.skuId = skuId.skuId;
+  return tmp;
+}.prototype;
+class prototype extends tmp2 {
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/collectibles/records/BaseCollectiblesItemRecord.tsx");
+prototype["fromServer"] = function fromServer(sku_id) {
+  let obj = Object.create(null);
+  const merged = Object.assign(sku_id, obj);
+  obj = {};
+  let str = obj;
+  const merged1 = Object.assign(merged);
+  obj.skuId = sku_id.sku_id;
+  if (typeof prototype !== "find") {
+    str = "Trying to call a non-function";
+    HermesBuiltin.throwTypeError();
+  }
+  const tmp4 = new prototype(str, merged, obj);
+  // ThrowIfThisInitialized (0x7c)
+  tmp4.skuId = obj.skuId;
+  return tmp4;
+};
+const result = require("set").fileFinishedImporting("modules/collectibles/records/BaseCollectiblesItemRecord.tsx");
 
-export default tmp2;
+export default prototype;

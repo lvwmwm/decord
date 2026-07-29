@@ -1,228 +1,84 @@
-// Module ID: 5101
-// Function ID: 44093
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 1348, 5102, 4384, 1327, 566, 686, 2]
+// Module ID: 5123
+// Function ID: 5124
+// Name: recomputeFromAppTokens
+// Dependencies: [32, 1372, 5124, 4407, 1351, 589, 709, 2]
 
-// Module 5101 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 5123 (recomputeFromAppTokens)
 import _slicedToArray from "_slicedToArray";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import isConnected from "isConnected";
+import reinjectEphemerals from "reinjectEphemerals";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function recomputeFromAppTokens() {
   const items = [...map.values()];
-  let closure_14 = items.filter((application) => null == application.application.parent_id);
+  let closure_9 = items.filter((application) => null == application.application.parent_id);
 }
 function updateFetchStates(FETCHED, applicationIds) {
-  let done;
   if (null == applicationIds) {
-    let closure_15 = FETCHED;
+    let closure_10 = FETCHED;
     map1.clear();
-    closure_17 = closure_17 + 1;
+    closure_12 = closure_12 + 1;
   } else {
-    const tmp2 = _createForOfIteratorHelperLoose(applicationIds);
-    let iter = tmp2();
-    if (!iter.done) {
-      do {
-        let tmp3 = map1;
-        let result = map1.set(iter.value, FETCHED);
-        let iter2 = tmp2();
-        iter = iter2;
-        done = iter2.done;
-      } while (!done);
+    const tmp2 = applicationIds[Symbol.iterator]();
+    while (tmp2 !== undefined) {
+      let tmp6 = map1;
+      let result = map1.set(tmp4, FETCHED);
+      continue;
     }
-    closure_17 = closure_17 + 1;
+    closure_12 = closure_12 + 1;
   }
 }
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };
 let map = new Map();
-let closure_13 = [];
-let closure_14 = [];
+let closure_8 = [];
+let closure_9 = [];
 let NOT_FETCHED = obj.NOT_FETCHED;
 const map1 = new Map();
-let c17 = 0;
-let tmp4 = ((Store) => {
-  class AuthorizedAppsStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, AuthorizedAppsStore);
-      obj = outer1_5(AuthorizedAppsStore);
-      tmp2 = outer1_4;
-      if (outer1_18()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+let c12 = 0;
+class AuthorizedAppsStore extends Store {
+}
+const prototype = AuthorizedAppsStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(ensureGuildLoaded, isConnected, reinjectEphemerals);
+};
+prototype["getNewestTokenForApplication"] = function getNewestTokenForApplication(id) {
+  let tmp = null;
+  if (null != id) {
+    let value = map.get(id);
+    if (value == null) {
+      value = null;
     }
+    tmp = value;
   }
-  callback2(AuthorizedAppsStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_8, outer1_9, outer1_10);
-    }
-  };
-  const items = [obj, , , , , , ];
-  obj = {
-    key: "getNewestTokenForApplication",
-    value(arg0) {
-      let tmp = null;
-      if (null != arg0) {
-        const value = outer1_12.get(arg0);
-        let tmp4 = null;
-        if (null != value) {
-          tmp4 = value;
-        }
-        tmp = tmp4;
+  return tmp;
+};
+prototype["getNewestTokens"] = function getNewestTokens() {
+  return closure_8;
+};
+prototype["getNewestTokensForNonChildrenApplications"] = function getNewestTokensForNonChildrenApplications() {
+  return closure_9;
+};
+prototype["getFetchState"] = function getFetchState() {
+  return NOT_FETCHED;
+};
+prototype["getFetchStateForApplication"] = function getFetchStateForApplication(applicationId) {
+  if (NOT_FETCHED !== obj.FETCHING) {
+    if (NOT_FETCHED !== tmp.FETCHED) {
+      let value = map1.get(applicationId);
+      if (value == null) {
+        value = NOT_FETCHED;
       }
-      return tmp;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getNewestTokens",
-    value() {
-      return outer1_13;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getNewestTokensForNonChildrenApplications",
-    value() {
-      return outer1_14;
-    }
-  };
-  items[4] = {
-    key: "getFetchState",
-    value() {
-      return outer1_15;
-    }
-  };
-  items[5] = {
-    key: "getFetchStateForApplication",
-    value(arg0) {
-      if (outer1_15 !== outer1_11.FETCHING) {
-        if (outer1_15 !== outer1_11.FETCHED) {
-          let value = outer1_16.get(arg0);
-          if (null == value) {
-            value = outer1_15;
-          }
-        }
-        return value;
-      }
-      value = outer1_15;
-    }
-  };
-  items[6] = {
-    key: "getApplicationFetchStateVersion",
-    value() {
-      return outer1_17;
-    }
-  };
-  return callback(AuthorizedAppsStore, items);
-})(require("initialize").Store);
-tmp4.displayName = "AuthorizedAppsStore";
+    return value;
+  }
+  value = NOT_FETCHED;
+};
+prototype["getApplicationFetchStateVersion"] = function getApplicationFetchStateVersion() {
+  return c12;
+};
+AuthorizedAppsStore.displayName = "AuthorizedAppsStore";
 obj = {
   USER_AUTHORIZED_APPS_REQUEST: function handleUserAuthorizedAppsRequest(request) {
     if ("full" === request.request.type) {
@@ -231,30 +87,21 @@ obj = {
       updateFetchStates(obj.FETCHING, request.request.applicationIds);
     }
   },
-  USER_AUTHORIZED_APPS_REQUEST_CANCELLED: function handleUserAuthorizedAppsRequestCancelled(applicationIds) {
-    let iter3;
-    const tmp = _createForOfIteratorHelperLoose(applicationIds.applicationIds);
-    const iter = tmp();
-    let iter2 = iter;
+  USER_AUTHORIZED_APPS_REQUEST_CANCELLED: function handleUserAuthorizedAppsRequestCancelled(arg0) {
     let flag = false;
-    let flag2 = false;
-    if (!iter.done) {
-      do {
-        let value = iter2.value;
-        let tmp2 = map1;
-        let tmp3 = obj;
-        if (map1.get(value) === obj.FETCHING) {
-          let tmp4 = map1;
-          let deleteResult = map1.delete(value);
-          flag = true;
-        }
-        iter3 = tmp();
-        iter2 = iter3;
-        flag2 = flag;
-      } while (!iter3.done);
+    for (const item10008 of tmp) {
+      let obj = map1;
+      let tmp2 = item10008;
+      let tmp3 = obj;
+      if (map1.get(item10008) === obj.FETCHING) {
+        let tmp4 = item10008;
+        let deleteResult = obj.delete(tmp2);
+        flag = true;
+      }
+      continue;
     }
-    if (flag2) {
-      closure_17 = closure_17 + 1;
+    if (flag) {
+      closure_12 = closure_12 + 1;
     }
   },
   USER_AUTHORIZED_APPS_REQUEST_FAILED: function handleUserAuthorizedAppsRequestFailed(request) {
@@ -265,32 +112,37 @@ obj = {
     }
   },
   USER_AUTHORIZED_APPS_UPDATE: function handleAuthorizedAppsUpdate(isFullFetch) {
-    let tmp6;
-    let tmp7;
+    let tmp12;
+    let tmp13;
     const FETCHED = obj.FETCHED;
     if (isFullFetch.isFullFetch) {
       tmp(FETCHED);
       const _Map = Map;
       const _Object3 = Object;
       const entries = Object.entries(isFullFetch.tokens);
-      const map = new Map(entries.filter(require(1327) /* isDiscordFrontendDevelopment */.isObjectEntryNotNullish));
+      const map = new Map(entries.filter(require(1351) /* isDiscordFrontendDevelopment */.isObjectEntryNotNullish));
       recomputeFromAppTokens();
     } else {
       const _Object = Object;
       tmp(FETCHED, Object.keys(isFullFetch.tokens));
       const _Object2 = Object;
       const entries1 = Object.entries(isFullFetch.tokens);
-      for (let num4 = 0; num4 < entries1.length; num4 = num4 + 1) {
-        let tmp4 = callback3;
-        let tmp5 = callback3(entries1[num4], 2);
-        [tmp6, tmp7] = tmp5;
-        if (null == tmp7) {
-          let tmp10 = map;
-          let deleteResult = map.delete(tmp6);
+      const tmp5 = entries1[Symbol.iterator]();
+      while (tmp5 !== undefined) {
+        let tmp10 = callback;
+        let tmp11 = callback(tmp8, 2);
+        [tmp12, tmp13] = tmp11;
+        if (null == tmp13) {
+          let tmp19 = map;
+          let tmp20 = tmp12;
+          let deleteResult = map.delete(tmp12);
         } else {
-          let tmp8 = map;
-          let result = map.set(tmp6, tmp7);
+          let tmp15 = map;
+          let tmp16 = tmp12;
+          let tmp17 = tmp13;
+          let result = map.set(tmp12, tmp14);
         }
+        continue;
       }
       recomputeFromAppTokens();
     }
@@ -298,29 +150,32 @@ obj = {
   OAUTH2_TOKEN_CREATE: function handleOAuth2TokenCreate(application) {
     application = application.application;
     const result = map.set(application.id, { id: application.id, application, scopes: application.scopes });
-    recomputeFromAppTokens();
+    const items = [...map.values()];
+    let closure_9 = items.filter((application) => null == application.application.parent_id);
   },
   OAUTH2_TOKEN_DELETE: function handleOAuth2TokenDelete(applicationId) {
     const value = map.get(applicationId.applicationId);
     if (null != value) {
       if (value.id === applicationId.id) {
         map.delete(value.application.id);
-        recomputeFromAppTokens();
+        const items = [];
+        HermesBuiltin.arraySpread(map.values(), 0);
+        let closure_9 = items.filter((application) => null == application.application.parent_id);
       }
     }
     return false;
   },
   LOGOUT: function handleLogout() {
     const map = new Map();
-    let closure_13 = [];
-    let closure_14 = [];
+    let closure_8 = [];
+    let closure_9 = [];
     const NOT_FETCHED = obj.NOT_FETCHED;
     map1.clear();
-    closure_17 = closure_17 + 1;
+    closure_12 = closure_12 + 1;
   }
 };
-tmp4 = new tmp4(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/oauth2/AuthorizedAppsStore.tsx");
+const authorizedAppsStore = new AuthorizedAppsStore(require("dispatcher"), obj);
+let result = require("isConnected").fileFinishedImporting("modules/oauth2/AuthorizedAppsStore.tsx");
 
-export default tmp4;
+export default authorizedAppsStore;
 export const FetchState = obj;

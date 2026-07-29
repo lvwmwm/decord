@@ -1,228 +1,257 @@
-// Module ID: 16339
-// Function ID: 127055
+// Module ID: 16374
+// Function ID: 16375
 // Name: getNewAutomodRuleMockId
-// Dependencies: [1194, 16340, 11029, 16342, 16343, 1212, 6160, 5684, 2]
-// Exports: actionTypeToName, createDefaultRule, eventTypeToName, isRuleDefaultKeywordListFilter, isRuleMLSpamFilter, isRuleMentionSpamFilter, isRuleServerPolicyFilter, isRuleUserProfileFilter, triggerTypeToName, validateRuleBeforeSaveOrThrow
+// Dependencies: [1218, 16375, 11053, 16377, 16378, 1236, 6178, 5702, 2]
+// Exports: actionTypeToName, createDefaultRule, eventTypeToName, getNewAutomodRuleMockId, isBackendPersistedRule, isRuleDefaultKeywordListFilter, isRuleKeywordFilter, isRuleMLSpamFilter, isRuleMentionSpamFilter, isRuleServerPolicyFilter, isRuleUserProfileFilter, triggerTypeToName, validateKeywordsOrThrow, validateRegexPatternsOrThrow, validateRuleBeforeSaveOrThrow
 
-// Module 16339 (getNewAutomodRuleMockId)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { getRuleCountByTriggerType } from "useSyncAutomodRules";
+// Module 16374 (getNewAutomodRuleMockId)
+import fetchFingerprint from "fetchFingerprint";
+import { getRuleCountByTriggerType } from "withEqualityFn";
 import AutomodEventType from "AutomodEventType";
 
-let closure_10;
-let closure_11;
+let c10;
+let c4;
+let c5;
+let c9;
 let closure_12;
-let closure_4;
-let closure_5;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-function getNewAutomodRuleMockId(guildId, triggerType) {
-  return "" + guildId + "-" + triggerType + "-new-rule";
-}
-function isRuleKeywordFilter(triggerType) {
+({ AutomodTriggerType: c4, MAX_KEYWORDS_PER_KEYWORD_FILTER: c5, MAX_REGEX_PATTERNS_PER_KEYWORD_FILTER: closure_6, MAX_CHARACTERS_PER_KEYWORD: error, MIN_CHARACTERS_PER_KEYWORD: metroImportAll, MIN_REGEX_PATTERN_LENGTH: c9, MAX_REGEX_PATTERN_LENGTH: c10, AutomodActionType: unpackModuleId, AutomodEventType: closure_12 } = AutomodEventType);
+const result = require("AutomodEventType").fileFinishedImporting("modules/guild_automod/AutomodRuleUtils.tsx");
+
+export const getNewAutomodRuleMockId = function getNewAutomodRuleMockId(arg0, arg1) {
+  return "" + arg0 + "-" + arg1 + "-new-rule";
+};
+export const isRuleKeywordFilter = function isRuleKeywordFilter(triggerType) {
   triggerType = undefined;
-  if (null != triggerType) {
+  if (triggerType != null) {
     triggerType = triggerType.triggerType;
   }
   return triggerType === constants.KEYWORD;
-}
-function validateKeywordsOrThrow(keywordFilter, closure_5) {
-  if (keywordFilter.length > closure_5) {
-    const _Error = Error;
-    let intl = require(1212) /* getSystemLocale */.intl;
-    const obj = { limit: closure_5 };
-    const error = new Error(intl.formatToPlainString(require(1212) /* getSystemLocale */.t.mee4qd, obj));
-    throw error;
-  } else {
-    const item = keywordFilter.forEach((keyword) => {
-      const intl = outer1_0(outer1_1[5]).intl;
-      const invalidKeywordError = new outer1_0(outer1_1[6]).InvalidKeywordError(intl.formatToPlainString(outer1_0(outer1_1[5]).t.rbRvGe, { keyword, max: outer1_7, min: outer1_8 }));
-      throw invalidKeywordError;
-    });
-  }
-}
-function validateRegexPatternsOrThrow(regexPatterns) {
-  if (regexPatterns.length > closure_6) {
-    const _Error = Error;
-    let intl = require(1212) /* getSystemLocale */.intl;
-    const obj = { limit: closure_6 };
-    const error = new Error(intl.formatToPlainString(require(1212) /* getSystemLocale */.t.tDjhF1, obj));
-    throw error;
-  } else {
-    const item = regexPatterns.forEach((regex) => {
-      const intl = outer1_0(outer1_1[5]).intl;
-      const invalidRegexPatternError = new outer1_0(outer1_1[6]).InvalidRegexPatternError(intl.formatToPlainString(outer1_0(outer1_1[5]).t.WR0m9w, { regex, max: outer1_10, min: outer1_9 }));
-      throw invalidRegexPatternError;
-    });
-  }
-}
-function isBackendPersistedRule(id) {
-  id = undefined;
-  if (null != id) {
-    id = id.id;
-  }
-  let str = "INVALID_SNOWFLAKE";
-  if (null != id) {
-    str = id;
-  }
-  return require(5684) /* _createForOfIteratorHelperLoose */.isSnowflake(str);
-}
-({ AutomodTriggerType: closure_4, MAX_KEYWORDS_PER_KEYWORD_FILTER: closure_5, MAX_REGEX_PATTERNS_PER_KEYWORD_FILTER: closure_6, MAX_CHARACTERS_PER_KEYWORD: closure_7, MIN_CHARACTERS_PER_KEYWORD: closure_8, MIN_REGEX_PATTERN_LENGTH: closure_9, MAX_REGEX_PATTERN_LENGTH: closure_10, AutomodActionType: closure_11, AutomodEventType: closure_12 } = AutomodEventType);
-const result = require("AutomodEventType").fileFinishedImporting("modules/guild_automod/AutomodRuleUtils.tsx");
-
-export { getNewAutomodRuleMockId };
-export { isRuleKeywordFilter };
+};
 export const isRuleMLSpamFilter = function isRuleMLSpamFilter(triggerType) {
   triggerType = undefined;
-  if (null != triggerType) {
+  if (triggerType != null) {
     triggerType = triggerType.triggerType;
   }
   return triggerType === constants.ML_SPAM;
 };
 export const isRuleDefaultKeywordListFilter = function isRuleDefaultKeywordListFilter(triggerType) {
   triggerType = undefined;
-  if (null != triggerType) {
+  if (triggerType != null) {
     triggerType = triggerType.triggerType;
   }
   return triggerType === constants.DEFAULT_KEYWORD_LIST;
 };
 export const isRuleMentionSpamFilter = function isRuleMentionSpamFilter(triggerType) {
   triggerType = undefined;
-  if (null != triggerType) {
+  if (triggerType != null) {
     triggerType = triggerType.triggerType;
   }
   return triggerType === constants.MENTION_SPAM;
 };
 export const isRuleServerPolicyFilter = function isRuleServerPolicyFilter(triggerType) {
   triggerType = undefined;
-  if (null != triggerType) {
+  if (triggerType != null) {
     triggerType = triggerType.triggerType;
   }
   return triggerType === constants.SERVER_POLICY;
 };
 export const isRuleUserProfileFilter = function isRuleUserProfileFilter(triggerType) {
   triggerType = undefined;
-  if (null != triggerType) {
+  if (triggerType != null) {
     triggerType = triggerType.triggerType;
   }
   return triggerType === constants.USER_PROFILE;
 };
-export const createDefaultRule = function createDefaultRule(guildId, triggerType) {
-  let obj = require(16342) /* AutomodTriggerType */.triggerConfigs[triggerType];
-  obj = {};
-  const defaultTriggerMetadataForTriggerType = require(16342) /* AutomodTriggerType */.getDefaultTriggerMetadataForTriggerType(triggerType, guildId);
-  obj.id = getNewAutomodRuleMockId(guildId, triggerType);
-  obj.name = obj.getDefaultRuleName();
-  obj.guildId = guildId;
-  obj.eventType = obj.eventType;
-  obj.triggerType = triggerType;
-  obj.triggerMetadata = defaultTriggerMetadataForTriggerType;
-  obj.enabled = true;
-  obj.creatorId = id.getId();
-  const obj2 = require(16342) /* AutomodTriggerType */;
-  obj.actions = require(16343) /* getDefaultActions */.getRuleDefaultActionsFromConfig(obj);
-  obj.position = 0;
-  const obj4 = require(16343) /* getDefaultActions */;
-  obj.exemptChannels = new Set();
+export const createDefaultRule = function createDefaultRule(arg0, arg1) {
+  let obj = require(16377) /* AutomodTriggerType */.triggerConfigs[arg1];
+  obj = { id: null, name: null, guildId: null, eventType: null, triggerType: null, triggerMetadata: null, enabled: true, creatorId: null, actions: null, position: 0, exemptChannels: null, exemptRoles: null };
+  const defaultTriggerMetadataForTriggerType = require(16377) /* AutomodTriggerType */.getDefaultTriggerMetadataForTriggerType(arg1, arg0);
+  obj[0] = "" + arg0 + "-" + arg1 + "-new-rule";
+  obj[1] = obj.getDefaultRuleName();
+  obj[2] = arg0;
+  obj[3] = obj.eventType;
+  obj[4] = arg1;
+  obj[5] = defaultTriggerMetadataForTriggerType;
+  obj[7] = id.getId();
+  const obj2 = require(16377) /* AutomodTriggerType */;
+  obj[8] = require(16378) /* getRuleDefaultActionsFromConfig */.getRuleDefaultActionsFromConfig(obj);
+  const obj4 = require(16378) /* getRuleDefaultActionsFromConfig */;
+  obj[10] = new Set();
   const set = new Set();
-  obj.exemptRoles = new Set();
-  if (isBackendPersistedRule(obj)) {
+  obj[11] = new Set();
+  const set1 = new Set();
+  let str = obj.id;
+  if (str == null) {
+    str = "INVALID_SNOWFLAKE";
+  }
+  if (obj5.isSnowflake(str)) {
     const _Error = Error;
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const error = new Error(intl.string(require(1212) /* getSystemLocale */.t["A/nX8D"]));
+    const intl = tmp(1236).intl;
+    const error = new Error(intl.string(tmp(1236).t["A/nX8D"]));
     throw error;
   } else {
-    const tmp5 = getRuleCountByTriggerType(guildId, triggerType);
-    if (tmp5 > 0) {
+    const tmp7 = getRuleCountByTriggerType(arg0, arg1);
+    if (tmp7 > 0) {
       const _HermesInternal = HermesInternal;
-      obj.name = obj.name + " " + tmp5 + 1;
+      obj.name = obj.name + " " + tmp7 + 1;
     }
     return obj;
   }
-  const set1 = new Set();
+  obj5 = require(5702) /* buildCommand */;
 };
-export { validateKeywordsOrThrow };
-export { validateRegexPatternsOrThrow };
-export const validateRuleBeforeSaveOrThrow = function validateRuleBeforeSaveOrThrow(triggerMetadata) {
-  if (isRuleKeywordFilter(triggerMetadata)) {
-    let keywordFilter = triggerMetadata.triggerMetadata.keywordFilter;
-    if (null == keywordFilter) {
+export const validateKeywordsOrThrow = function validateKeywordsOrThrow(arr) {
+  if (arr.length > arg1) {
+    const _Error = Error;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const obj = { limit: null };
+    obj[0] = arg1;
+    const error = new Error(intl.formatToPlainString(require(1236) /* getSystemLocale */.t.mee4qd, obj));
+    throw error;
+  } else {
+    const item = arr.forEach((keyword) => {
+      const intl = callback(1236).intl;
+      const invalidKeywordError = new callback(6178).InvalidKeywordError(intl.formatToPlainString(callback(1236).t.rbRvGe, { keyword, max: closure_7, min: closure_8 }));
+      throw invalidKeywordError;
+    });
+  }
+};
+export const validateRegexPatternsOrThrow = function validateRegexPatternsOrThrow(arr) {
+  if (arr.length > closure_6) {
+    const _Error = Error;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const obj = { limit: null };
+    obj[0] = tmp;
+    const error = new Error(intl.formatToPlainString(require(1236) /* getSystemLocale */.t.tDjhF1, obj));
+    throw error;
+  } else {
+    const item = arr.forEach((regex) => {
+      const intl = callback(1236).intl;
+      const invalidRegexPatternError = new callback(6178).InvalidRegexPatternError(intl.formatToPlainString(callback(1236).t.WR0m9w, { regex, max: closure_10, min: closure_9 }));
+      throw invalidRegexPatternError;
+    });
+  }
+};
+export const validateRuleBeforeSaveOrThrow = function validateRuleBeforeSaveOrThrow(triggerType) {
+  triggerType = undefined;
+  if (triggerType != null) {
+    triggerType = triggerType.triggerType;
+  }
+  if (triggerType === constants.KEYWORD) {
+    let keywordFilter = triggerType.triggerMetadata.keywordFilter;
+    if (keywordFilter == null) {
       keywordFilter = [];
     }
-    let regexPatterns = triggerMetadata.triggerMetadata.regexPatterns;
-    if (null == regexPatterns) {
+    let regexPatterns = triggerType.triggerMetadata.regexPatterns;
+    if (regexPatterns == null) {
       regexPatterns = [];
     }
     if (0 === keywordFilter.length) {
       if (0 === regexPatterns.length) {
-        const _Error2 = Error;
-        const intl2 = require(1212) /* getSystemLocale */.intl;
-        const error = new Error(intl2.string(require(1212) /* getSystemLocale */.t.kz2Av3));
+        const _Error4 = Error;
+        const intl4 = require(1236) /* getSystemLocale */.intl;
+        const error = new Error(intl4.string(require(1236) /* getSystemLocale */.t.kz2Av3));
         throw error;
       }
     }
-    validateKeywordsOrThrow(keywordFilter, closure_5);
-    validateRegexPatternsOrThrow(regexPatterns);
+    if (keywordFilter.length > closure_5) {
+      const _Error3 = Error;
+      const intl3 = require(1236) /* getSystemLocale */.intl;
+      let obj = { limit: null };
+      obj[0] = tmp2;
+      const error1 = new Error(intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.mee4qd, obj));
+      throw error1;
+    } else {
+      const item = keywordFilter.forEach((keyword) => {
+        const intl = callback(1236).intl;
+        const invalidKeywordError = new callback(6178).InvalidKeywordError(intl.formatToPlainString(callback(1236).t.rbRvGe, { keyword, max: closure_7, min: closure_8 }));
+        throw invalidKeywordError;
+      });
+      if (regexPatterns.length > closure_6) {
+        const _Error2 = Error;
+        const intl2 = require(1236) /* getSystemLocale */.intl;
+        obj = { limit: null };
+        obj[0] = tmp33;
+        const error2 = new Error(intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.tDjhF1, obj));
+        throw error2;
+      } else {
+        const item1 = regexPatterns.forEach((regex) => {
+          const intl = callback(1236).intl;
+          const invalidRegexPatternError = new callback(6178).InvalidRegexPatternError(intl.formatToPlainString(callback(1236).t.WR0m9w, { regex, max: closure_10, min: closure_9 }));
+          throw invalidRegexPatternError;
+        });
+      }
+    }
   }
-  if (0 === triggerMetadata.actions.length) {
+  if (0 === triggerType.actions.length) {
     const _Error = Error;
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const error1 = new Error(intl.string(require(1212) /* getSystemLocale */.t["t+gj5V"]));
-    throw error1;
+    let intl = require(1236) /* getSystemLocale */.intl;
+    const error3 = new Error(intl.string(require(1236) /* getSystemLocale */.t["t+gj5V"]));
+    throw error3;
   }
 };
-export { isBackendPersistedRule };
-export const eventTypeToName = function eventTypeToName(arg0) {
-  if (constants3.MESSAGE_SEND === arg0) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    return intl3.string(require(1212) /* getSystemLocale */.t.NlQW4P);
-  } else if (constants3.GUILD_MEMBER_JOIN_OR_UPDATE === arg0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(require(1212) /* getSystemLocale */.t["Q+68IX"]);
+export const isBackendPersistedRule = function isBackendPersistedRule(id) {
+  let str;
+  if (id != null) {
+    str = id.id;
+  }
+  if (str == null) {
+    str = "INVALID_SNOWFLAKE";
+  }
+  return require(5702) /* buildCommand */.isSnowflake(str);
+};
+export const eventTypeToName = function eventTypeToName(newValue) {
+  if (constants3.MESSAGE_SEND === newValue) {
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    return intl3.string(require(1236) /* getSystemLocale */.t.NlQW4P);
+  } else if (tmp.GUILD_MEMBER_JOIN_OR_UPDATE === newValue) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    return intl2.string(require(1236) /* getSystemLocale */.t["Q+68IX"]);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.SP9BBx);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.SP9BBx);
   }
 };
 export const actionTypeToName = function actionTypeToName(arg0) {
   if (constants2.BLOCK_MESSAGE === arg0) {
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    return intl5.string(require(1212) /* getSystemLocale */.t.d1ab8n);
-  } else if (constants2.FLAG_TO_CHANNEL === arg0) {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    return intl4.string(require(1212) /* getSystemLocale */.t["Y+VmvU"]);
-  } else if (constants2.USER_COMMUNICATION_DISABLED === arg0) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    return intl3.string(require(1212) /* getSystemLocale */.t["6WPxY2"]);
-  } else if (constants2.QUARANTINE_USER === arg0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(require(1212) /* getSystemLocale */.t.NPO8ee);
+    const intl5 = require(1236) /* getSystemLocale */.intl;
+    return intl5.string(require(1236) /* getSystemLocale */.t.d1ab8n);
+  } else if (tmp.FLAG_TO_CHANNEL === arg0) {
+    const intl4 = require(1236) /* getSystemLocale */.intl;
+    return intl4.string(require(1236) /* getSystemLocale */.t["Y+VmvU"]);
+  } else if (tmp.USER_COMMUNICATION_DISABLED === arg0) {
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    return intl3.string(require(1236) /* getSystemLocale */.t["6WPxY2"]);
+  } else if (tmp.QUARANTINE_USER === arg0) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    return intl2.string(require(1236) /* getSystemLocale */.t.NPO8ee);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.SP9BBx);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.SP9BBx);
   }
 };
-export const triggerTypeToName = function triggerTypeToName(arg0) {
-  if (constants.KEYWORD === arg0) {
-    const intl6 = require(1212) /* getSystemLocale */.intl;
-    return intl6.string(require(1212) /* getSystemLocale */.t.ffR2cM);
-  } else if (constants.ML_SPAM === arg0) {
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    return intl5.string(require(1212) /* getSystemLocale */.t["puF/Os"]);
-  } else if (constants.DEFAULT_KEYWORD_LIST === arg0) {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    return intl4.string(require(1212) /* getSystemLocale */.t.LnGhZv);
-  } else if (constants.MENTION_SPAM === arg0) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    return intl3.string(require(1212) /* getSystemLocale */.t.pX7i6n);
-  } else if (constants.USER_PROFILE === arg0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(require(1212) /* getSystemLocale */.t.q1L2v8);
+export const triggerTypeToName = function triggerTypeToName(newValue) {
+  if (constants.KEYWORD === newValue) {
+    const intl6 = require(1236) /* getSystemLocale */.intl;
+    return intl6.string(require(1236) /* getSystemLocale */.t.ffR2cM);
+  } else if (tmp.ML_SPAM === newValue) {
+    const intl5 = require(1236) /* getSystemLocale */.intl;
+    return intl5.string(require(1236) /* getSystemLocale */.t["puF/Os"]);
+  } else if (tmp.DEFAULT_KEYWORD_LIST === newValue) {
+    const intl4 = require(1236) /* getSystemLocale */.intl;
+    return intl4.string(require(1236) /* getSystemLocale */.t.LnGhZv);
+  } else if (tmp.MENTION_SPAM === newValue) {
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    return intl3.string(require(1236) /* getSystemLocale */.t.pX7i6n);
+  } else if (tmp.USER_PROFILE === newValue) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    return intl2.string(require(1236) /* getSystemLocale */.t.q1L2v8);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.SP9BBx);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.SP9BBx);
   }
 };

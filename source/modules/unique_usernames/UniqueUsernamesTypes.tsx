@@ -1,9 +1,9 @@
-// Module ID: 13769
-// Function ID: 105553
+// Module ID: 13790
+// Function ID: 13791
 // Name: NameValidationState
 // Dependencies: [2]
 
-// Module 13769 (NameValidationState)
+// Module 13790 (NameValidationState)
 const result = require("set").fileFinishedImporting("modules/unique_usernames/UniqueUsernamesTypes.tsx");
 
 export const NameValidationState = { AVAILABLE: "AVAILABLE", ERROR: "ERROR", RATE_LIMIT: "RATE_LIMIT", INTERNAL_ERROR: "INTERNAL_ERROR" };

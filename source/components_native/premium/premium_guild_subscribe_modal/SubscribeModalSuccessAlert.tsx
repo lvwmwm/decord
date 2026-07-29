@@ -1,46 +1,46 @@
-// Module ID: 12662
-// Function ID: 97730
+// Module ID: 12684
+// Function ID: 12685
 // Name: PremiumPaymentGuildAnimation
-// Dependencies: [57, 31, 27, 1838, 6207, 33, 4165, 689, 12663, 12664, 566, 4101, 4596, 1212, 4506, 5001, 4589, 668, 4011, 12665, 12666, 4161, 2]
+// Dependencies: [32, 19, 17, 1862, 6227, 21, 4189, 712, 12685, 12686, 589, 4125, 4618, 1236, 4529, 5023, 4611, 691, 4035, 12687, 12688, 4185, 2]
 // Exports: default
 
-// Module 12662 (PremiumPaymentGuildAnimation)
+// Module 12684 (PremiumPaymentGuildAnimation)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import closure_7 from "_createForOfIteratorHelperLoose";
+import registerAsset from "registerAsset";
+import get_ActivityIndicator from "keys";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { Gradients } from "items";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Text";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_9;
 const require = arg1;
 class PremiumPaymentGuildAnimation {
   constructor(arg0) {
     ({ nextScene, onSceneComplete, loop } = global);
-    tmp = c11();
-    obj = { nextScene, onSceneComplete, loop, sceneSegments: idle, style: tmp.animation };
-    tmp2 = require("_isNativeReflectConstruct");
-    obj.source = require("items");
+    tmp = jsxs();
+    obj = { nextScene, onSceneComplete, loop, sceneSegments: idle, style: tmp.animation, source: null };
+    tmp2 = require("componentDidMount");
+    obj[5] = require("module_12686");
     return jsx(tmp2, obj);
   }
 }
-({ View: closure_5, Image: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = { wrapper: { paddingHorizontal: 24, paddingBottom: 16, paddingTop: 4, alignItems: "stretch" }, animation: { width: "auto", height: 112, alignSelf: "center" }, text: { lineHeight: 18, textAlign: "center" } };
-_createForOfIteratorHelperLoose = { padding: 2, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, marginTop: 8 };
-_createForOfIteratorHelperLoose.activated = _createForOfIteratorHelperLoose;
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, paddingVertical: 12, paddingHorizontal: 20, alignItems: "center" };
-_createForOfIteratorHelperLoose.activatedBackground = obj1;
-_createForOfIteratorHelperLoose.activatedImage = { width: 220 };
-_createForOfIteratorHelperLoose.successInfo = { marginTop: 24 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c5, Image: closure_6 } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { wrapper: { paddingHorizontal: 24, paddingBottom: 16, paddingTop: 4, alignItems: "stretch" }, animation: { width: "auto", height: 112, alignSelf: "center" }, text: { lineHeight: 18, textAlign: "center" }, activated: null, activatedBackground: null, activatedImage: null, successInfo: null };
+createCacheKey = { padding: 2, borderRadius: require("Themes").radii.xs, marginTop: 8 };
+createCacheKey[3] = createCacheKey;
+createCacheKey[4] = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, paddingVertical: 12, paddingHorizontal: 20, alignItems: "center" };
+createCacheKey[5] = { width: 220 };
+createCacheKey[6] = { marginTop: 24 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let obj2 = { ENTRY: "entry", IDLE: "idle" };
 let closure_12 = { [obj2.ENTRY]: { BEG: 0, END: 180 }, [obj2.IDLE]: { BEG: 180, END: 360 } };
 PremiumPaymentGuildAnimation.Scenes = obj2;
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, paddingVertical: 12, paddingHorizontal: 20, alignItems: "center" };
 const result = require("get ActivityIndicator").fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/SubscribeModalSuccessAlert.tsx");
 
 export default function SubscribeModalSuccessAlert(arg0) {
@@ -49,87 +49,85 @@ export default function SubscribeModalSuccessAlert(arg0) {
   ({ guildId: require, guildBoostSlots } = arg0);
   let importDefault;
   let dependencyMap;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(566) /* initialize */;
-  const items = [closure_7];
+  const tmp = createCacheKey();
+  let obj = require(589) /* initialize */;
+  const items = [createGuildRecordFromRust];
   let someResult = null != guildBoostSlots;
   const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuild(closure_0));
   if (someResult) {
     someResult = guildBoostSlots.some((premiumGuildSubscription) => null != premiumGuildSubscription.premiumGuildSubscription);
   }
-  let length;
-  if (null != guildBoostSlots) {
-    length = guildBoostSlots.length;
+  let num;
+  if (guildBoostSlots != null) {
+    num = guildBoostSlots.length;
   }
-  let num = 1;
-  if (null != length) {
-    num = length;
+  if (num == null) {
+    num = 1;
   }
-  const tmp5 = callback(React.useState(PremiumPaymentGuildAnimation.Scenes.ENTRY), 2);
-  importDefault = tmp5[1];
-  const tmp6 = callback(React.useState(false), 2);
-  dependencyMap = tmp6[1];
-  obj = { style: tmp.wrapper };
-  const tmp7 = importDefault(4101)();
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.confirmText = intl.string(require(1212) /* getSystemLocale */.t.YKxJCI);
-  obj.onConfirm = function onConfirm() {
-    callback(4506).close();
-    const obj = callback(4506);
-    outer1_0(5001).closeApplyBoostModal();
+  const tmp6 = callback(React.useState(PremiumPaymentGuildAnimation.Scenes.ENTRY), 2);
+  importDefault = tmp6[1];
+  const tmp7 = callback(React.useState(false), 2);
+  dependencyMap = tmp7[1];
+  obj = { style: tmp.wrapper, confirmText: null, onConfirm: null, children: null };
+  const tmp9 = importDefault(4125)();
+  const intl = tmp2(1236).intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.YKxJCI);
+  obj[2] = function onConfirm() {
+    callback2(4529).close();
+    const obj = callback2(4529);
+    callback(5023).closeApplyBoostModal();
   };
   obj = {
-    nextScene: tmp5[0],
-    loop: tmp6[0],
+    nextScene: tmp6[0],
+    loop: tmp7[0],
     onSceneComplete(currentScene) {
       if (outer1_13.Scenes.ENTRY === currentScene) {
-        return callback(outer1_13.Scenes.IDLE);
-      } else if (outer1_13.Scenes.IDLE === currentScene) {
+        return callback2(tmp.Scenes.IDLE);
+      } else if (tmp.Scenes.IDLE === currentScene) {
         return dependencyMap(true);
       }
     }
   };
   const items1 = [callback2(PremiumPaymentGuildAnimation, obj), ];
-  const obj1 = {};
-  const obj2 = { style: tmp.activated };
-  const tmp11 = callback2;
-  const tmp9 = importDefault(4596);
-  obj2.start = require(668) /* keys */.HorizontalGradient.START;
-  obj2.end = require(668) /* keys */.HorizontalGradient.END;
-  obj2.colors = Gradients.PREMIUM_GUILD;
-  const obj3 = { style: tmp.activatedBackground };
-  const obj4 = { style: tmp.activatedImage };
-  let obj7 = require(4011) /* AccessibilityAnnouncer */;
-  if (obj7.isThemeLight(tmp7)) {
-    let tmp16Result = tmp16(12665);
+  const obj1 = { style: tmp.activated, start: null, end: null, colors: null, children: null };
+  const tmp11 = importDefault(4618);
+  obj1[1] = require(691) /* keys */.HorizontalGradient.START;
+  obj1[2] = require(691) /* keys */.HorizontalGradient.END;
+  obj1[3] = Gradients.PREMIUM_GUILD;
+  const obj2 = { style: tmp.activatedBackground, children: null };
+  const obj3 = { style: tmp.activatedImage, source: null };
+  const tmp14 = importDefault(4611);
+  const tmp15 = closure_6;
+  if (tmp2Result.isThemeLight(tmp9)) {
+    let tmp8Result = tmp8(12687);
   } else {
-    tmp16Result = tmp16(12666);
+    tmp8Result = tmp8(12688);
   }
-  obj4.source = tmp16Result;
-  obj3.children = callback2(closure_6, obj4);
-  obj2.children = callback2(closure_5, obj3);
-  const items2 = [tmp11(importDefault(4589), obj2), ];
-  const obj5 = { style: tmp.successInfo };
-  const obj6 = { style: tmp.text, variant: "text-sm/medium" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
+  obj3[1] = tmp8Result;
+  obj2[1] = callback2(tmp15, obj3);
+  obj1[4] = callback2(closure_5, obj2);
+  const items2 = [callback2(tmp14, obj1), ];
+  const obj4 = { style: tmp.successInfo, children: null };
+  const obj5 = { style: tmp.text, variant: "text-sm/medium", children: null };
+  const intl2 = tmp2(1236).intl;
   const string = intl2.string;
-  const t = require(1212) /* getSystemLocale */.t;
+  const t = tmp2(1236).t;
   if (someResult) {
     let stringResult = string(t.RMmWY3);
   } else {
     stringResult = string(t.d81BkZ);
   }
-  obj6.children = stringResult;
-  const items3 = [callback2(require(4161) /* Text */.Text, obj6), ];
-  obj7 = { style: tmp.text, variant: "text-sm/medium" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  const obj8 = { guildName: stateFromStores.name, guildSubscriptionQuantity: num };
-  obj7.children = intl3.format(require(1212) /* getSystemLocale */.t.r0IGsP, obj8);
-  items3[1] = callback2(require(4161) /* Text */.Text, obj7);
-  obj5.children = items3;
-  items2[1] = closure_10(closure_5, obj5);
-  obj1.children = items2;
-  items1[1] = closure_10(closure_5, obj1);
-  obj.children = items1;
-  return closure_10(tmp9, obj);
+  const obj6 = { children: null };
+  obj5[2] = stringResult;
+  const items3 = [callback2(require(4185) /* Text */.Text, obj5), ];
+  const obj7 = { style: tmp.text, variant: "text-sm/medium", children: null };
+  const intl3 = tmp2(1236).intl;
+  obj7[2] = intl3.format(require(1236) /* getSystemLocale */.t.r0IGsP, { guildName: stateFromStores.name, guildSubscriptionQuantity: num });
+  items3[1] = callback2(require(4185) /* Text */.Text, obj7);
+  obj4[1] = items3;
+  items2[1] = closure_10(closure_5, obj4);
+  obj6[0] = items2;
+  items1[1] = closure_10(closure_5, obj6);
+  obj[3] = items1;
+  return closure_10(tmp11, obj);
 };

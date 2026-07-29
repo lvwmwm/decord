@@ -1,26 +1,18 @@
-// Module ID: 4356
-// Function ID: 37986
-// Name: canViewChannel
-// Dependencies: [1348, 1838, 3793, 653, 1355, 4153, 2]
-// Exports: isAccessibleChannelPath, tryParseChannelPath, tryParseDiceRollLink, tryParseEventDetailsPath
+// Module ID: 4381
+// Function ID: 4382
+// Name: ME
+// Dependencies: [1372, 1862, 3817, 676, 1379, 4177, 2]
+// Exports: canViewChannel, isAccessibleChannelPath, tryParseChannelPath, tryParseDiceRollLink, tryParseEventDetailsPath
 
-// Module 4356 (canViewChannel)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 4381 (ME)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
 
-function canViewChannel(isPrivate) {
-  const tmp = !isPrivate.isPrivate();
-  let canResult = !tmp;
-  if (tmp) {
-    canResult = closure_4.can(Permissions.VIEW_CHANNEL, isPrivate);
-  }
-  return canResult;
-}
 ME = ME.ME;
 const Permissions = ME.Permissions;
-const mapped = Array.from(require("set").StaticChannelRoutes).map((arg0) => importDefault(4153).escape(arg0));
+const mapped = Array.from(require("set").StaticChannelRoutes).map((arg0) => importDefault(4177).escape(arg0));
 const joined = mapped.join("|");
 const regExp = new RegExp("^/channels/(\\d+|" + ME + ")(?:/)?(\\d+|" + joined + ")?");
 const regExp1 = new RegExp("^/channels/(\\d+|" + ME + ")(?:/)(\\d+|" + joined + ")(?:/)(\\d+)");
@@ -31,7 +23,7 @@ const regExp5 = new RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?");
 const regExp6 = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+|" + ME + ")(?:/(\\d+|[a-zA-Z-]+))?(?:/(\\d+|[a-zA-Z-]+))?");
 const regExp7 = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)");
 const arr = Array.from(require("set").StaticChannelRoutes);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/links/LinkUtils.tsx");
+const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/links/LinkUtils.tsx");
 
 export const CHANNEL_OR_MESSAGES_URL_RE = regExp6;
 export const MEDIA_POST_URL_RE = regExp7;
@@ -42,26 +34,30 @@ export const tryParseChannelPath = function tryParseChannelPath(pathname) {
     const match = pathname.match(regExp1);
     if (null != match) {
       if (match.length > 3) {
-        let obj = { guildId: match[1], channelId: match[2], messageId: match[3] };
+        let obj = { guildId: null, channelId: null, messageId: null };
+        obj[0] = match[1];
+        obj[1] = match[2];
+        obj[2] = match[3];
         return obj;
       }
     }
     const match1 = pathname.match(regExp2);
     if (null != match1) {
       if (match1.length > 4) {
-        obj = { guildId: match1[1], channelId: match1[2], threadId: match1[3], messageId: match1[4] };
+        obj = { guildId: null, channelId: null, threadId: null, messageId: null };
+        obj[0] = match1[1];
+        obj[1] = match1[2];
+        obj[2] = match1[3];
+        obj[3] = match1[4];
         return obj;
       }
     }
     const match2 = pathname.match(regExp);
     if (null != match2) {
       if (match2.length > 1) {
-        obj = { guildId: match2[1] };
-        let tmp7;
-        if (null != match2[2]) {
-          tmp7 = tmp6;
-        }
-        obj.channelId = tmp7;
+        obj = { guildId: null, channelId: null };
+        obj[0] = match2[1];
+        obj[1] = match2[2];
         let tmp5 = obj;
       }
       return tmp5;
@@ -79,14 +75,23 @@ export const tryParseEventDetailsPath = function tryParseEventDetailsPath(pathna
     if (null != match) {
       tmp2 = null;
       if (match.length > 1) {
-        const obj = { guildId: match[1], guildEventId: match[2], recurrenceId: match[4] };
+        const obj = { guildId: null, guildEventId: null, recurrenceId: null };
+        obj[0] = match[1];
+        obj[1] = match[2];
+        obj[2] = match[4];
         tmp2 = obj;
       }
     }
     return tmp2;
   }
 };
-export { canViewChannel };
+export const canViewChannel = function canViewChannel(channel) {
+  let canResult = channel.isPrivate();
+  if (!canResult) {
+    canResult = getUncachedChannelPermissions.can(Permissions.VIEW_CHANNEL, channel);
+  }
+  return canResult;
+};
 export const isAccessibleChannelPath = function isAccessibleChannelPath(arg0) {
   let channelId;
   let guildId;
@@ -100,37 +105,41 @@ export const isAccessibleChannelPath = function isAccessibleChannelPath(arg0) {
     return true;
   } else {
     channel = channel.getChannel(channelId);
-    let tmp4 = null != channel;
-    if (tmp4) {
-      tmp4 = canViewChannel(channel);
+    let tmp3 = null != channel;
+    if (tmp3) {
+      let canResult = channel.isPrivate();
+      if (!canResult) {
+        canResult = getUncachedChannelPermissions.can(Permissions.VIEW_CHANNEL, channel);
+      }
+      tmp3 = canResult;
     }
-    return tmp4;
+    return tmp3;
   }
 };
-export const tryParseDiceRollLink = function tryParseDiceRollLink(pathname) {
-  if (null == pathname) {
+export const tryParseDiceRollLink = function tryParseDiceRollLink(closure_0) {
+  if (null == closure_0) {
     return null;
   } else {
-    const match = pathname.match(regExp3);
+    const match = closure_0.match(regExp3);
     let tmp = null;
     if (null != match) {
       tmp = null;
       if (match.length > 2) {
-        const obj = {};
+        const obj = { guildId: null, channelId: null, diceCount: null, diceSides: null };
+        obj[0] = match[1];
+        obj[1] = match[2];
         let num2 = 1;
-        obj.guildId = match[1];
-        obj.channelId = match[2];
         if (5 === match.length) {
           const _parseInt = parseInt;
           num2 = parseInt(match[3], 10);
         }
-        obj.diceCount = num2;
-        let num6 = 6;
+        obj[2] = num2;
+        let num5 = 6;
         if (5 === match.length) {
           const _parseInt2 = parseInt;
-          num6 = parseInt(match[4], 10);
+          num5 = parseInt(match[4], 10);
         }
-        obj.diceSides = num6;
+        obj[3] = num5;
         tmp = obj;
       }
     }

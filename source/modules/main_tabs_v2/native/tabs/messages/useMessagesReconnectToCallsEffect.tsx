@@ -1,53 +1,58 @@
-// Module ID: 15018
-// Function ID: 114320
+// Module ID: 15046
+// Function ID: 15047
 // Name: useMessagesReconnectToCallsEffect
-// Dependencies: [57, 31, 4843, 1348, 5636, 686, 2]
+// Dependencies: [32, 19, 4865, 1372, 5654, 709, 2]
 // Exports: default
 
-// Module 15018 (useMessagesReconnectToCallsEffect)
+// Module 15046 (useMessagesReconnectToCallsEffect)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+import noop from "noop";
+import _handleConnectionOpen from "_handleConnectionOpen";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import makeSortedChannel from "makeSortedChannel";
 
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesReconnectToCallsEffect.tsx");
+const result = require("_handleConnectionOpen").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesReconnectToCallsEffect.tsx");
 
 export default function useMessagesReconnectToCallsEffect() {
   const effect = React.useEffect(() => {
     function isGatewayConnectedListener() {
-      const isConnectedResult = outer2_4.isConnected();
-      if (closure_0 !== isConnectedResult) {
-        closure_0 = isConnectedResult;
+      let arr;
+      const isConnectedResult = outer1_4.isConnected();
+      if (callback !== isConnectedResult) {
+        callback = isConnectedResult;
         if (isConnectedResult) {
-          const tmp4 = outer2_2(outer2_6.getSortedChannels(), 2);
-          let num2 = 0;
-          const first = tmp4[0];
-          let arr = tmp4[1];
+          [r10011, arr] = outer1_2(outer1_6.getSortedChannels(), 2);
           const items = [];
           const _Math = Math;
+          let num3 = 0;
           if (0 < Math.min(20, arr.length)) {
             do {
-              let tmp8 = outer2_5;
-              let channel = outer2_5.getChannel(arr[num2].channelId);
-              let tmp9 = null != channel && channel.isGroupDM();
-              if (tmp9) {
-                arr = items.push(arr[num2].channelId);
+              let tmp7 = outer1_5;
+              let channel = outer1_5.getChannel(arr[num3].channelId);
+              let isGroupDMResult = null != channel;
+              let tmp9 = num3;
+              if (isGroupDMResult) {
+                isGroupDMResult = channel.isGroupDM();
               }
-              num2 = num2 + 1;
+              if (isGroupDMResult) {
+                arr = items.push(arr[num3].channelId);
+              }
+              num3 = num3 + 1;
               let _Math2 = Math;
-            } while (num2 < Math.min(20, arr.length));
+            } while (num3 < Math.min(20, arr.length));
           }
-          const obj = { type: "CALL_CONNECT_MULTIPLE", channelIds: items };
-          outer2_0(outer2_1[5]).dispatch(obj);
-          const obj2 = outer2_0(outer2_1[5]);
+          const tmp4 = outer1_2(outer1_6.getSortedChannels(), 2);
+          const obj = { type: "CALL_CONNECT_MULTIPLE", channelIds: null };
+          obj[1] = items;
+          callback(isGatewayConnectedListener[5]).dispatch(obj);
+          const obj2 = callback(isGatewayConnectedListener[5]);
         }
       }
     }
-    let closure_0 = outer1_4.isConnected();
-    outer1_4.addChangeListener(isGatewayConnectedListener);
+    let closure_0 = _handleConnectionOpen.isConnected();
+    _handleConnectionOpen.addChangeListener(isGatewayConnectedListener);
     return () => {
-      outer2_4.removeChangeListener(isGatewayConnectedListener);
+      outer1_4.removeChangeListener(isGatewayConnectedListener);
     };
   }, []);
 };

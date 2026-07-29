@@ -1,31 +1,33 @@
-// Module ID: 1872
-// Function ID: 20878
+// Module ID: 1896
+// Function ID: 1897
 // Name: parseStoreCountry
 // Dependencies: [2]
 // Exports: parseStoreCountry
 
-// Module 1872 (parseStoreCountry)
+// Module 1896 (parseStoreCountry)
 const result = require("set").fileFinishedImporting("modules/billing/utils/StoreCountryUtils.tsx");
 
 export const parseStoreCountry = function parseStoreCountry(storeCountry) {
   let set_at;
   let tmp = storeCountry;
   if (null != storeCountry) {
-    const obj = {};
-    ({ country: obj.country, set_at } = storeCountry);
-    if (null == set_at) {
+    const obj = { country: null, setAt: null, isLocked: null };
+    ({ country: obj[0], set_at } = storeCountry);
+    if (set_at == null) {
       set_at = storeCountry.setAt;
     }
-    let tmp2 = null;
-    if (null != set_at) {
-      tmp2 = set_at;
+    if (set_at == null) {
+      set_at = null;
     }
-    obj.setAt = tmp2;
-    let isLocked = storeCountry.is_locked;
-    if (null == isLocked) {
-      isLocked = storeCountry.isLocked;
+    obj[1] = set_at;
+    let flag = storeCountry.is_locked;
+    if (flag == null) {
+      flag = storeCountry.isLocked;
     }
-    obj.isLocked = null != isLocked && isLocked;
+    if (flag == null) {
+      flag = false;
+    }
+    obj[2] = flag;
     tmp = obj;
   }
   return tmp;

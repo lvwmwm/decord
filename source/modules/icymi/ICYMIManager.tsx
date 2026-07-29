@@ -1,44 +1,70 @@
-// Module ID: 13575
-// Function ID: 104275
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 8161, 664, 686, 8162, 4565, 2]
+// Module ID: 13598
+// Function ID: 13599
+// Name: _initialize
+// Dependencies: [8185, 687, 4368, 709, 8186, 2]
 
-// Module 13575 (_isNativeReflectConstruct)
-import set from "set";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "LifecycleManager";
+// Module 13598 (_initialize)
+import "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let c3 = null;
+class ICYMIManager extends tmp2 {
 }
-function fetchDehydratedData() {
-  let flag = arg0;
-  if (arg0 === undefined) {
-    flag = false;
+const prototype = ICYMIManager.prototype;
+prototype["_initialize"] = function _initialize() {
+  const subscription = importDefault(709).subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+};
+prototype["_terminate"] = function _terminate() {
+  importDefault(709).unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
+};
+prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
+  let obj = require(8186) /* apexExperiment */;
+  if (obj.getICYMIEnabled("ICYMIManager")) {
+    obj = { isInitialLoad: null };
+    obj[0] = true;
+    const dehydrated = importDefault(8185).fetchDehydrated(obj);
+    if (null != timeout) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(timeout);
+    }
+    const _setTimeout = setTimeout;
+    timeout = setTimeout(() => {
+      let dehydrated = callback(table[0]).fetchDehydrated({ isInitialLoad: false });
+      if (null != timeout) {
+        let _clearTimeout = clearTimeout;
+        clearTimeout(timeout);
+      }
+      timeout = setTimeout(() => {
+        let dehydrated = callback(table[0]).fetchDehydrated({ isInitialLoad: false });
+        if (null != timeout) {
+          let _clearTimeout = clearTimeout;
+          clearTimeout(timeout);
+        }
+        timeout = setTimeout(() => {
+          let dehydrated = callback(table[0]).fetchDehydrated({ isInitialLoad: false });
+          if (null != timeout) {
+            let _clearTimeout = clearTimeout;
+            clearTimeout(timeout);
+          }
+          timeout = setTimeout(() => {
+            let dehydrated = callback(table[0]).fetchDehydrated({ isInitialLoad: false });
+            if (null != timeout) {
+              let _clearTimeout = clearTimeout;
+              clearTimeout(timeout);
+            }
+            timeout = setTimeout(() => { ... }, 15 * callback(table[1]).Millis.MINUTE);
+          }, 15 * callback(table[1]).Millis.MINUTE);
+        }, 15 * callback(table[1]).Millis.MINUTE);
+      }, 15 * callback(table[1]).Millis.MINUTE);
+    }, 15 * tmp2(687).Millis.MINUTE);
+    let tmp2Result = tmp2(8185);
+    const guildChannelScores = tmp2Result.getGuildChannelScores();
+    tmp2Result = tmp2(8185);
+    const recommendedGuilds = tmp2Result.getRecommendedGuilds();
+    const obj2 = importDefault(8185);
   }
-  let obj = importDefault(8161);
-  obj = { isInitialLoad: flag };
-  const dehydrated = obj.fetchDehydrated(obj);
-  if (null != timeout) {
-    const _clearTimeout = clearTimeout;
-    clearTimeout(timeout);
-  }
-  timeout = setTimeout(() => {
-    outer1_10();
-  }, 15 * importDefault(664).Millis.MINUTE);
-}
-let c8 = null;
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/icymi/ICYMIManager.tsx");
+};
+const iCYMIManager = new ICYMIManager();
+const result = require("initialize").fileFinishedImporting("modules/icymi/ICYMIManager.tsx");
 
-export default tmp2;
+export default iCYMIManager;

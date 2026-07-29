@@ -1,25 +1,24 @@
-// Module ID: 11738
-// Function ID: 90913
+// Module ID: 11763
+// Function ID: 11764
 // Name: HubProgressHeader
-// Dependencies: [31, 27, 10075, 10041, 33, 4165, 689, 11735, 1282, 1212, 7611, 4133, 11739, 1935, 11830, 2]
+// Dependencies: [19, 17, 10096, 10062, 21, 4189, 712, 11760, 1306, 1236, 7634, 4157, 11764, 1959, 11855, 2]
 // Exports: default
 
-// Module 11738 (HubProgressHeader)
-import "result";
+// Module 11763 (HubProgressHeader)
+import "noop";
 import { View } from "get ActivityIndicator";
 import items from "items";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ HUB_PROGRESS_ACTION_SHEET_ID: closure_4, HUB_PROGRESS_NUM_TOTAL_STEPS: closure_5 } = items);
-_createForOfIteratorHelperLoose = { container: _createForOfIteratorHelperLoose, icon: { width: 48, height: 48 } };
-_createForOfIteratorHelperLoose = { overflow: "hidden", height: require("GuildDirectoryCreate").GUILD_DIRECTORY_PROGRESS_BAR_HEIGHT, padding: 16 };
-let obj1 = { paddingVertical: 8, paddingLeft: 8, paddingRight: 12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.innerContainer = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ HUB_PROGRESS_ACTION_SHEET_ID: c4, HUB_PROGRESS_NUM_TOTAL_STEPS: c5 } = items);
+createCacheKey = { container: { overflow: "hidden", height: require("GuildDirectoryCreate").GUILD_DIRECTORY_PROGRESS_BAR_HEIGHT, padding: 16 }, icon: { width: 48, height: 48 }, innerContainer: null };
+createCacheKey = { paddingVertical: 8, paddingLeft: 8, paddingRight: 12, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[2] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("items").fileFinishedImporting("modules/hub/native/components/progress_bar/HubProgressHeader.tsx");
 
 export default function HubProgressHeader(guild) {
@@ -29,7 +28,7 @@ export default function HubProgressHeader(guild) {
     flag = false;
   }
   let nextHubProgressStep;
-  let tmp = _createForOfIteratorHelperLoose();
+  let tmp = createCacheKey();
   let obj = guild(nextHubProgressStep[7]);
   const hubProgressBarCompletedSteps = obj.useHubProgressBarCompletedSteps(guild);
   let obj1 = guild(nextHubProgressStep[7]);
@@ -39,43 +38,45 @@ export default function HubProgressHeader(guild) {
   } else {
     const size = hubProgressBarCompletedSteps.size;
     if (flag) {
-      flag = nextHubProgressStep === guild(nextHubProgressStep[8]).HubProgressStep.JOIN_GUILD;
+      flag = nextHubProgressStep === tmp2(tmp3[8]).HubProgressStep.JOIN_GUILD;
     }
-    const hubProgressTitleForStep = guild(nextHubProgressStep[7]).getHubProgressTitleForStep(nextHubProgressStep);
+    const hubProgressTitleForStep = tmp2(tmp3[7]).getHubProgressTitleForStep(nextHubProgressStep);
     if (size < closure_5) {
-      const intl2 = guild(nextHubProgressStep[9]).intl;
-      obj = {};
+      const intl2 = tmp2(tmp3[9]).intl;
+      obj = { number: null, total: null };
       const _HermesInternal = HermesInternal;
-      obj.number = "" + size;
-      obj.total = closure_5;
-      let formatToPlainStringResult = intl2.formatToPlainString(guild(nextHubProgressStep[9]).t["9j7xDu"], obj);
+      obj[0] = "" + size;
+      obj[1] = tmp7;
+      let formatToPlainStringResult = intl2.formatToPlainString(tmp2(tmp3[9]).t["9j7xDu"], obj);
     } else {
-      const intl = guild(nextHubProgressStep[9]).intl;
-      formatToPlainStringResult = intl.string(guild(nextHubProgressStep[9]).t["+Gyklt"]);
+      const intl = tmp2(tmp3[9]).intl;
+      formatToPlainStringResult = intl.string(tmp2(tmp3[9]).t["+Gyklt"]);
     }
-    obj = { style: tmp.container };
-    obj1 = {};
-    ({ innerContainer: obj6.style, icon: obj6.iconStyle } = tmp);
-    obj1.onPress = function onPress() {
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj1 = { style: null, iconStyle: null, onPress: null, iconSource: null, title: null, subtitle: null, trailing: null };
+    ({ innerContainer: obj6[0], icon: obj6[1] } = tmp);
+    obj1[2] = function onPress() {
       let tmp = flag;
       if (flag) {
         tmp = nextHubProgressStep === guild(nextHubProgressStep[8]).HubProgressStep.JOIN_GUILD;
       }
       if (!tmp) {
         let obj = flag(nextHubProgressStep[11]);
-        obj = { guild, analyticsSource: "Directory Channel Header" };
+        obj = { guild: null, analyticsSource: "Directory Channel Header" };
+        obj[0] = guild;
         obj.openLazy(guild(nextHubProgressStep[13])(nextHubProgressStep[12], nextHubProgressStep.paths), outer1_4, obj);
       }
     };
-    obj1.iconSource = flag(nextHubProgressStep[14]);
-    obj1.title = hubProgressTitleForStep;
-    obj1.subtitle = formatToPlainStringResult;
-    let tmp22;
+    obj1[3] = flag(tmp3[14]);
+    obj1[4] = hubProgressTitleForStep;
+    obj1[5] = formatToPlainStringResult;
+    let tmp10Result;
     if (flag) {
-      tmp22 = <View />;
+      tmp10Result = tmp10(tmp11, {});
     }
-    obj1.trailing = tmp22;
-    obj.children = jsx(guild(nextHubProgressStep[10]).FormCTA, {});
-    return <View style={tmp.container} />;
+    obj1[6] = tmp10Result;
+    obj[1] = jsx(tmp2(tmp3[10]).FormCTA, { style: null, iconStyle: null, onPress: null, iconSource: null, title: null, subtitle: null, trailing: null });
+    return <View style={null}>{null}</View>;
   }
 };

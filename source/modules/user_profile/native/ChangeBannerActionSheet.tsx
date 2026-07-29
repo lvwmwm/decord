@@ -1,60 +1,60 @@
-// Module ID: 13672
-// Function ID: 104922
+// Module ID: 13693
+// Function ID: 13694
 // Name: ChangeBannerColorRow
-// Dependencies: [5, 31, 27, 7913, 653, 33, 4165, 689, 5497, 3811, 4133, 4709, 5533, 5220, 1212, 6606, 5536, 5198, 7611, 13673, 566, 7926, 7958, 7955, 665, 7916, 13674, 13676, 4161, 1273, 13681, 2]
+// Dependencies: [5, 19, 17, 7938, 676, 21, 4189, 712, 5515, 3835, 4157, 4731, 5551, 5242, 1236, 6627, 5554, 5220, 7634, 13694, 589, 7951, 7983, 7980, 688, 7941, 13695, 13697, 4185, 1297, 13702, 2]
 // Exports: default
 
-// Module 13672 (ChangeBannerColorRow)
+// Module 13693 (ChangeBannerColorRow)
 import closure_3 from "jsxProd";
-import set from "set";
-import { View } from "styles";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import UserProfileUpsellButton from "UserProfileUpsellButton";
+import { View } from "TableRowInner";
+import handleFormOpen from "handleFormOpen";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "getArchivedAvatarURL";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_7;
-let closure_8;
-let closure_9;
+let c10;
+let c9;
+let error;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
 function ChangeBannerColorRow(user) {
+  let pendingAccentColor;
+  let pendingAvatar;
   user = user.user;
   let _require;
-  let num2;
+  pendingAccentColor = undefined;
   let dependencyMap;
-  let tmp = _createForOfIteratorHelperLoose();
-  let obj = _require(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => outer1_6.getPendingChanges());
-  let pendingAccentColor = stateFromStoresObject.pendingAccentColor;
-  let obj1 = _require(7926);
-  obj = { userId: user.id, image: stateFromStoresObject.pendingAvatar };
+  let tmp = createCacheKey();
+  let obj = _require(589);
+  const items = [handleFormOpen];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => pendingChanges.getPendingChanges());
+  ({ pendingAccentColor, pendingAvatar } = stateFromStoresObject);
+  let obj1 = _require(7951);
+  obj = { userId: user.id, image: pendingAvatar };
   let pendingAvatarSrc = obj1.getPendingAvatarSrc(obj);
-  const tmp4 = num2(7958)(user.id);
-  if (null == pendingAvatarSrc) {
+  const tmp7 = pendingAccentColor(7983)(user.id);
+  if (pendingAvatarSrc == null) {
     pendingAvatarSrc = user.getAvatarURL(undefined, 80);
   }
-  let obj3 = _require(7955);
-  let obj4 = _require(665);
-  let obj5 = _require(7955);
-  const rgb2intResult = obj4.rgb2int(obj5.useDominantColorFromImage(pendingAvatarSrc, obj3.memoizedImageSource(pendingAvatarSrc)));
+  let tmp2Result = tmp2(7980);
+  tmp2Result = tmp2(688);
+  const memoizedImageSourceResult = tmp2Result.memoizedImageSource(pendingAvatarSrc);
+  const rgb2intResult = tmp2Result.rgb2int(_require(7980).useDominantColorFromImage(pendingAvatarSrc, memoizedImageSourceResult));
   _require = rgb2intResult;
   if (undefined === pendingAccentColor) {
     let primaryColor;
-    if (null != tmp4) {
-      primaryColor = tmp4.primaryColor;
+    if (tmp7 != null) {
+      primaryColor = tmp7.primaryColor;
     }
     pendingAccentColor = primaryColor;
   }
-  let tmp8 = rgb2intResult;
-  if (null != pendingAccentColor) {
-    tmp8 = pendingAccentColor;
+  if (pendingAccentColor == null) {
+    pendingAccentColor = rgb2intResult;
   }
-  num2 = 0;
-  if (null != tmp8) {
-    num2 = tmp8;
+  if (pendingAccentColor == null) {
+    pendingAccentColor = 0;
   }
   const items1 = [rgb2intResult];
   dependencyMap = React.useCallback((arg0) => {
@@ -62,52 +62,52 @@ function ChangeBannerColorRow(user) {
     if (arg0 === _undefined) {
       tmp = null;
     }
-    let obj = _undefined(7916);
-    obj = { accentColor: tmp };
-    obj.setPendingChanges(obj);
+    _undefined(7941).setPendingChanges({ accentColor: tmp });
   }, items1);
-  obj = {};
-  obj1 = { style: tmp.label };
-  const intl = _require(1212).intl;
-  obj1.text = intl.string(_require(1212).t.xzNfPz);
-  obj.label = callback(_require(7611).FormLabel, obj1);
-  const obj2 = { style: tmp.selectedColor };
-  obj3 = { style: tmp.bannerColor, color: num2 };
-  const items2 = [callback(num2(13676), obj3), , ];
-  obj4 = { style: tmp.selectedColorHex, variant: "text-md/medium", color: "interactive-text-default" };
-  const memoizedImageSourceResult = obj3.memoizedImageSource(pendingAvatarSrc);
-  obj4.children = _require(665).int2hex(num2);
-  items2[1] = callback(_require(4161).Text, obj4);
-  obj5 = { style: tmp.rowArrow, size: _require(1273).Icon.Sizes.CUSTOM, source: num2(13681) };
-  items2[2] = callback(_require(1273).Icon, obj5);
-  obj2.children = items2;
-  obj.trailing = callback2(View, obj2);
-  obj.onPress = function handleChangeColor() {
-    num2(13674)({ color: num2, onSelect: dependencyMap });
+  obj = { label: null, trailing: null, onPress: null };
+  obj1 = { style: tmp.label, text: null };
+  const intl = tmp2(1236).intl;
+  obj1[1] = intl.string(_require(1236).t.xzNfPz);
+  obj[0] = callback(_require(7634).FormLabel, obj1);
+  const obj2 = { style: tmp.selectedColor, children: null };
+  const items2 = [callback(pendingAccentColor(13697), { style: tmp.bannerColor, color: pendingAccentColor }), , ];
+  const obj4 = { style: tmp.selectedColorHex, variant: "text-md/medium", color: "interactive-text-default", children: null };
+  const obj3 = { style: tmp.bannerColor, color: pendingAccentColor };
+  const tmp2Result1 = _require(7980);
+  obj4[3] = _require(688).int2hex(pendingAccentColor);
+  items2[1] = callback(_require(4185).Text, obj4);
+  const obj5 = { style: tmp.rowArrow, size: null, source: null };
+  obj5[1] = _require(1297).Icon.Sizes.CUSTOM;
+  obj5[2] = pendingAccentColor(13702);
+  items2[2] = callback(_require(1297).Icon, obj5);
+  obj2[1] = items2;
+  obj[1] = callback2(View, obj2);
+  obj[2] = function handleChangeColor() {
+    pendingAccentColor(13695)({ color: pendingAccentColor, onSelect: dependencyMap });
   };
-  return callback(_require(5198).TableRow, obj);
+  return callback(_require(5220).TableRow, obj);
 }
-({ AnalyticsObjects: closure_7, UPLOAD_BANNER_SIZE: closure_8 } = ME);
-({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE, alignItems: "center", flexDirection: "row" };
-_createForOfIteratorHelperLoose.label = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.sublabel = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.nitroWheel = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj3 = { borderColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, height: 24, minWidth: 24 };
-_createForOfIteratorHelperLoose.bannerColor = obj3;
-_createForOfIteratorHelperLoose.selectedColor = { flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose.selectedColorHex = { textTransform: "uppercase" };
-_createForOfIteratorHelperLoose.rowArrow = { height: 13, width: 8, marginLeft: 10, marginTop: 2 };
-let obj2 = { marginLeft: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.upsellButton = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj4 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.remove = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_CRITICAL };
-_createForOfIteratorHelperLoose.titleWrapper = { flex: 0 };
-_createForOfIteratorHelperLoose.titleContainer = { justifyContent: "flex-start" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj5 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_CRITICAL };
+({ AnalyticsObjects: error, UPLOAD_BANNER_SIZE: metroImportAll } = ME);
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = jsxProd);
+createCacheKey = { label: null, sublabel: null, nitroWheel: null, bannerColor: null, selectedColor: null, selectedColorHex: null, rowArrow: null, upsellButton: null, remove: null, titleWrapper: null, titleContainer: null };
+createCacheKey = { color: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE, alignItems: "center", flexDirection: "row" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { color: require("Themes").colors.TEXT_DEFAULT };
+let obj1 = { color: require("Themes").colors.TEXT_DEFAULT };
+createCacheKey[2] = { marginLeft: require("Themes").space.PX_8 };
+let obj2 = { marginLeft: require("Themes").space.PX_8 };
+createCacheKey[3] = { borderColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, borderWidth: 1, borderRadius: require("Themes").radii.xs, height: 24, minWidth: 24 };
+createCacheKey[4] = { flexDirection: "row", alignItems: "center" };
+createCacheKey[5] = { textTransform: "uppercase" };
+createCacheKey[6] = { height: 13, width: 8, marginLeft: 10, marginTop: 2 };
+let obj3 = { borderColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, borderWidth: 1, borderRadius: require("Themes").radii.xs, height: 24, minWidth: 24 };
+createCacheKey[7] = { marginTop: require("Themes").space.PX_8 };
+let obj4 = { marginTop: require("Themes").space.PX_8 };
+createCacheKey[8] = { color: require("Themes").colors.TEXT_FEEDBACK_CRITICAL };
+createCacheKey[9] = { flex: 0 };
+createCacheKey[10] = { justifyContent: "flex-start" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj5 = { color: require("Themes").colors.TEXT_FEEDBACK_CRITICAL };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/ChangeBannerActionSheet.tsx");
 
 export default function ChangeBannerActionSheet(isTryItOut) {
@@ -124,109 +124,181 @@ export default function ChangeBannerActionSheet(isTryItOut) {
     flag = false;
   }
   function _handleBannerUploadSelect(arg0) {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = outer1_3(tmp);
-    return obj(...arguments);
+    const self = this;
+    const tmp = outer1_3(function*() {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === originalMd5) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let base64 = tmp5;
+              let lib = tmp2;
+              lib = undefined;
+              base64 = undefined;
+              originalMd5 = undefined;
+              let obj1 = outer1_1(4157);
+              obj1.hideActionSheet();
+              originalMd5 = 1;
+              c3 = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = outer1_1(4731).openImagePicker(outer1_8);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            lib = arg1;
+            base64 = lib.base64;
+            originalMd5 = lib.originalMd5;
+            if (null != base64) {
+              lib(base64, originalMd5);
+            }
+            c3 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp21) {
+          c3 = tmp;
+          throw tmp21;
+        }
+      }
+    });
+    const _handleBannerUploadSelect = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
-  const tmp = _createForOfIteratorHelperLoose();
+  let tmp = createCacheKey();
   if (!flag) {
-    let obj = _handleBannerUploadSelect(3811);
-    flag = obj.canUsePremiumProfileCustomization(user);
+    flag = tmp2(3835).canUsePremiumProfileCustomization(user);
+    const tmp2Result = tmp2(3835);
   }
-  obj = { value: _handleBannerUploadSelect(5497)(isTryItOut.analyticsLocations).analyticsLocations };
-  obj = {};
-  const obj1 = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj1.title = intl.string(require(1212) /* getSystemLocale */.t.Vgdusv);
-  let tmp7 = flag;
+  let obj = { value: _handleBannerUploadSelect(5515)(isTryItOut.analyticsLocations).analyticsLocations, children: null };
+  obj = { title: null, trailing: null, titleWrapperStyle: null, titleContainerStyle: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.Vgdusv);
+  let tmp4Result = flag;
   if (flag) {
-    tmp7 = callback(require(6606) /* NitroWheelIcon */.NitroWheelIcon, {});
+    tmp4Result = tmp4(tmp5(6627).NitroWheelIcon, {});
   }
-  obj1.trailing = tmp7;
-  ({ titleWrapper: obj4.titleWrapperStyle, titleContainer: obj4.titleContainerStyle } = tmp);
-  const items = [callback(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj1), ];
-  const obj2 = { hasIcons: false };
-  let tmp12 = null;
+  obj[1] = tmp4Result;
+  ({ titleWrapper: obj3[2], titleContainer: obj3[3] } = tmp);
+  const items = [closure_9(require(5242) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
+  tmp4Result = null;
   if (!flag) {
-    const obj3 = { user };
-    tmp12 = callback(ChangeBannerColorRow, obj3);
+    let obj1 = { user: null };
+    obj1[0] = user;
+    tmp4Result = tmp4(ChangeBannerColorRow, obj1);
   }
-  const items1 = [tmp12, , ];
-  const obj4 = {};
-  const obj5 = { style: tmp.label };
-  const obj6 = {};
-  const intl2 = require(1212) /* getSystemLocale */.intl;
+  const items1 = [tmp4Result, , ];
+  const obj2 = { style: tmp.label, children: null };
+  const intl2 = tmp5(1236).intl;
   const string = intl2.string;
-  const t = require(1212) /* getSystemLocale */.t;
+  const t = tmp5(1236).t;
   if (showRemoveBanner) {
     let stringResult = string(t.N0bC3P);
   } else {
     stringResult = string(t["70CYsY"]);
   }
-  obj6.text = stringResult;
-  const items2 = [callback(require(7611) /* Form */.FormLabel, obj6), ];
-  let tmp20 = !flag;
-  if (tmp20) {
-    const obj7 = { style: tmp.nitroWheel, size: "sm" };
-    tmp20 = callback(require(6606) /* NitroWheelIcon */.NitroWheelIcon, obj7);
+  const items2 = [closure_9(require(7634) /* Form */.FormLabel, { text: stringResult }), ];
+  let tmp4Result1 = !flag;
+  if (!flag) {
+    const obj3 = { style: null, size: "sm" };
+    obj3[0] = tmp.nitroWheel;
+    tmp4Result1 = tmp4(tmp5(6627).NitroWheelIcon, obj3);
   }
-  items2[1] = tmp20;
-  obj5.children = items2;
-  obj4.label = closure_10(View, obj5);
-  const obj8 = {};
-  const obj9 = { style: tmp.sublabel, numberOfLines: 2 };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
+  const obj4 = { label: closure_10(View, obj2), subLabel: null, onPress: null };
+  items2[1] = tmp4Result1;
+  obj2[1] = items2;
+  const obj5 = { style: tmp.sublabel, numberOfLines: 2, text: null };
+  const intl3 = tmp5(1236).intl;
   const string2 = intl3.string;
-  const t2 = require(1212) /* getSystemLocale */.t;
+  const t2 = tmp5(1236).t;
   if (flag) {
     let string2Result = string2(t2.IhzZlo);
   } else {
     string2Result = string2(t2.NSTmdO);
   }
-  obj9.text = string2Result;
-  const items3 = [callback(require(7611) /* Form */.FormSubLabel, obj9), ];
-  let tmp28 = !flag;
-  if (tmp28) {
-    const obj10 = { style: tmp.upsellButton };
-    const obj11 = { analyticsObject: constants.EDIT_PROFILE_BANNER };
-    obj10.children = callback(_handleBannerUploadSelect(13673), obj11);
-    tmp28 = callback(View, obj10);
+  obj5[2] = string2Result;
+  const items3 = [closure_9(require(7634) /* Form */.FormSubLabel, obj5), ];
+  let tmp4Result2 = !flag;
+  if (!flag) {
+    const obj6 = { style: null, children: null };
+    obj6[0] = tmp.upsellButton;
+    const obj7 = { analyticsObject: null };
+    obj7[0] = constants.EDIT_PROFILE_BANNER;
+    obj6[1] = tmp4(tmp2(13694), obj7);
+    tmp4Result2 = tmp4(tmp10, obj6);
   }
-  items3[1] = tmp28;
-  obj8.children = items3;
-  obj4.subLabel = closure_10(closure_11, obj8);
+  items3[1] = tmp4Result2;
+  obj4[1] = closure_10(closure_11, { children: items3 });
   let handleBannerUploadSelect;
   if (flag) {
     handleBannerUploadSelect = function handleBannerUploadSelect() {
-      return _handleBannerUploadSelect(...arguments);
+      const self = this;
+      const apply = _handleBannerUploadSelect.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     };
   }
-  obj4.onPress = handleBannerUploadSelect;
-  items1[1] = callback(require(5198) /* TableRowInner */.TableRow, obj4);
+  obj4[2] = handleBannerUploadSelect;
+  items1[1] = closure_9(require(5220) /* TableRowInner */.TableRow, obj4);
   if (showRemoveBanner) {
-    const obj12 = {};
-    const obj13 = {};
+    const obj8 = { style: null, text: null };
     const items4 = [, ];
     ({ label: arr5[0], remove: arr5[1] } = tmp);
-    obj13.style = items4;
-    if (null == removeText) {
-      const intl4 = require(1212) /* getSystemLocale */.intl;
-      removeText = intl4.string(require(1212) /* getSystemLocale */.t.tT9n7D);
+    obj8[0] = items4;
+    if (removeText == null) {
+      const intl4 = tmp5(1236).intl;
+      removeText = intl4.string(tmp5(1236).t.tT9n7D);
     }
-    obj13.text = removeText;
-    obj12.label = callback(require(7611) /* Form */.FormLabel, obj13);
-    obj12.onPress = function handleBannerDelete() {
+    const obj9 = { label: null, onPress: null };
+    obj8[1] = removeText;
+    obj9[0] = tmp4(tmp5(7634).FormLabel, obj8);
+    obj9[1] = function handleBannerDelete() {
       callback(null);
       _handleBannerUploadSelect(outer1_2[10]).hideActionSheet();
     };
-    showRemoveBanner = callback(require(5198) /* TableRowInner */.TableRow, obj12);
-    const tmp35 = callback;
-    const tmp38 = callback;
+    showRemoveBanner = tmp4(tmp5(5220).TableRow, obj9);
   }
+  const obj10 = { children: null };
   items1[2] = showRemoveBanner;
-  obj2.children = items1;
-  items[1] = closure_10(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj2);
-  obj.children = items;
-  obj.children = closure_10(require(5533) /* ActionSheet */.ActionSheet, obj);
-  return callback(require(5497) /* mergeLocations */.AnalyticsLocationProvider, obj);
+  items[1] = closure_10(require(5554) /* TableRowGroupTitle */.TableRowGroup, { hasIcons: false, children: items1 });
+  obj10[0] = items;
+  obj[1] = closure_10(require(5551) /* ActionSheet */.ActionSheet, obj10);
+  return closure_9(require(5515) /* context */.AnalyticsLocationProvider, obj);
 };

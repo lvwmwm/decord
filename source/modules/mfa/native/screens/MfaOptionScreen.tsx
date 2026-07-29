@@ -1,17 +1,17 @@
-// Module ID: 14745
-// Function ID: 112191
+// Module ID: 14771
+// Function ID: 14772
 // Name: MFAOptionScreen
-// Dependencies: [27, 33, 9169, 14746, 5155, 4576, 4161, 14747, 9194, 2]
+// Dependencies: [17, 21, 9193, 14772, 5177, 4598, 4185, 14773, 9218, 2]
 // Exports: default
 
-// Module 14745 (MFAOptionScreen)
+// Module 14771 (MFAOptionScreen)
 import { ScrollView } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-({ jsx: closure_4, jsxs: closure_5, Fragment: closure_6 } = jsxProd);
+({ jsx: c4, jsxs: c5, Fragment: closure_6 } = jsxProd);
 const result = require("useWideAuthView").fileFinishedImporting("modules/mfa/native/screens/MfaOptionScreen.tsx");
 
 export default function MFAOptionScreen(arg0) {
@@ -26,58 +26,60 @@ export default function MFAOptionScreen(arg0) {
   let subtitle;
   ({ headerImage, subtitle, screenProps, error } = arg0);
   ({ headerText, input, submit, mfaMethod, content } = arg0);
-  const tmp = importDefault(9169)();
-  let obj = importDefault(14746);
-  const screenStyles = obj.useScreenStyles(tmp);
+  const tmp3 = importDefault(9193)();
+  let obj = importDefault(14772);
+  const screenStyles = obj.useScreenStyles(tmp3);
   const first = screenProps.mfaChallenge.methods[0];
   let type;
-  if (null != first) {
+  if (first != null) {
     type = first.type;
   }
-  let tmp5 = type === mfaMethod;
-  obj = { bottom: !tmp, top: !tmp, style: screenStyles.contentContainer };
-  obj = {};
-  const obj1 = { style: screenStyles.mfaContainerHeader, spacing: 4 };
-  let tmp7 = null != headerImage;
-  if (tmp7) {
-    tmp7 = headerImage;
+  obj = { bottom: !tmp3, top: !tmp3, style: screenStyles.contentContainer, children: null };
+  obj = { style: screenStyles.mfaContainerHeader, spacing: 4, children: null };
+  let tmp9 = null != headerImage;
+  if (tmp9) {
+    tmp9 = headerImage;
   }
-  const items = [tmp7, callback(require(4161) /* Text */.Text, { variant: "heading-xl/extrabold", style: screenStyles.mfaContainerHeaderText, children: headerText }), , ];
-  let tmp8 = null != subtitle;
-  if (tmp8) {
-    const obj3 = { variant: "heading-sm/normal", color: "text-default", children: subtitle };
-    tmp8 = callback(require(4161) /* Text */.Text, obj3);
+  const items = [tmp9, callback(require(4185) /* Text */.Text, { variant: "heading-xl/extrabold", style: screenStyles.mfaContainerHeaderText, children: headerText }), , ];
+  let tmp10Result = null != subtitle;
+  if (tmp10Result) {
+    const obj2 = { variant: "heading-sm/normal", color: "text-default", children: null };
+    obj2[2] = subtitle;
+    tmp10Result = tmp10(tmp8(4185).Text, obj2);
   }
-  items[2] = tmp8;
-  let tmp12 = null != error;
-  if (tmp12) {
-    const obj4 = { variant: "text-sm/normal", color: "text-feedback-critical", children: error };
-    tmp12 = callback(require(4161) /* Text */.Text, obj4);
+  items[2] = tmp10Result;
+  tmp10Result = null != error;
+  if (tmp10Result) {
+    const obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", children: null };
+    obj3[2] = error;
+    tmp10Result = tmp10(tmp8(4185).Text, obj3);
   }
-  items[3] = tmp12;
-  obj1.children = items;
-  const items1 = [closure_5(require(4576) /* Stack */.Stack, obj1), input];
-  obj.children = items1;
-  const items2 = [closure_5(require(4576) /* Stack */.Stack, obj), content, ];
-  const obj5 = { style: screenStyles.submit };
+  let tmp10Result1 = type === mfaMethod;
+  const obj4 = { children: null };
+  items[3] = tmp10Result;
+  obj[2] = items;
+  const items1 = [closure_5(require(4598) /* Stack */.Stack, obj), input];
+  obj4[0] = items1;
+  const items2 = [closure_5(require(4598) /* Stack */.Stack, obj4), content, ];
+  const obj5 = { style: screenStyles.submit, children: null };
   const items3 = [submit, ];
-  if (tmp5) {
-    const obj6 = { props: screenProps };
-    tmp5 = callback(importDefault(14747), obj6);
+  if (tmp10Result1) {
+    const obj6 = { props: null };
+    obj6[0] = screenProps;
+    tmp10Result1 = tmp10(tmp(14773), obj6);
   }
-  items3[1] = tmp5;
-  obj5.children = items3;
-  items2[2] = closure_5(require(4576) /* Stack */.Stack, obj5);
-  obj.children = items2;
-  const tmp6Result = closure_5(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
-  const obj7 = {};
-  const items4 = [callback(importDefault(9194), { backgroundImageCover: false }), ];
-  let tmp23 = tmp6Result;
-  if (tmp) {
-    const obj8 = { keyboardShouldPersistTaps: "handled", children: tmp6Result };
-    tmp23 = callback(ScrollView, obj8);
+  items3[1] = tmp10Result1;
+  obj5[1] = items3;
+  items2[2] = closure_5(require(4598) /* Stack */.Stack, obj5);
+  obj[3] = items2;
+  const tmp7Result = closure_5(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  const children = [callback(importDefault(9218), { backgroundImageCover: false }), ];
+  let tmp10Result2 = tmp7Result;
+  if (tmp3) {
+    const obj7 = { keyboardShouldPersistTaps: "handled", children: null };
+    obj7[1] = tmp7Result;
+    tmp10Result2 = tmp10(ScrollView, obj7);
   }
-  items4[1] = tmp23;
-  obj7.children = items4;
-  return closure_5(closure_6, obj7);
+  children[1] = tmp10Result2;
+  return closure_5(closure_6, { children });
 };

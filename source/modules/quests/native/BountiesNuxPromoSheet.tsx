@@ -1,37 +1,37 @@
-// Module ID: 14070
-// Function ID: 107446
+// Module ID: 14092
+// Function ID: 14093
 // Name: BountiesNuxPromoSheet
-// Dependencies: [31, 27, 33, 4165, 689, 4133, 14069, 6635, 1212, 6868, 4578, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4157, 14091, 6656, 1236, 6890, 4600, 2]
 // Exports: default
 
-// Module 14070 (BountiesNuxPromoSheet)
-import result from "result";
+// Module 14092 (BountiesNuxPromoSheet)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.illustrationContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { illustrationContainer: null };
+createCacheKey = { paddingTop: require("Themes").space.PX_12 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/quests/native/BountiesNuxPromoSheet.tsx");
 
 export default function BountiesNuxPromoSheet() {
   const callback = React.useCallback(() => {
-    outer1_1(outer1_2[5]).hideActionSheet(outer1_0(outer1_2[6]).PROMO_SHEET_KEY);
+    callback2(4157).hideActionSheet(callback(14091).PROMO_SHEET_KEY);
   }, []);
-  let obj = { gradientColor: "purple" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.DDpHZG);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.description = intl2.string(require(1212) /* getSystemLocale */.t["LY+igv"]);
-  obj = { style: _createForOfIteratorHelperLoose().illustrationContainer, children: jsx(require(6868) /* BountiesPosterSpotIllustration */.BountiesPosterSpotIllustration, { width: 273, height: 205 }) };
-  obj.illustration = <View style={_createForOfIteratorHelperLoose().illustrationContainer}>{jsx(require(6868) /* BountiesPosterSpotIllustration */.BountiesPosterSpotIllustration, { width: 273, height: 205 })}</View>;
-  obj = { grow: true, size: "lg", variant: "primary" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.text = intl3.string(require(1212) /* getSystemLocale */.t.cpT0Cq);
-  obj.onPress = callback;
-  obj.actions = jsx(require(4578) /* Button */.Button, { grow: true, size: "lg", variant: "primary" });
-  return jsx(require(6635) /* PromoSheet */.PromoSheet, { grow: true, size: "lg", variant: "primary" });
+  let obj = { gradientColor: "purple", title: null, description: null, illustration: null, actions: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[1] = intl.string(require(1236) /* getSystemLocale */.t.DDpHZG);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl2.string(require(1236) /* getSystemLocale */.t["LY+igv"]);
+  obj = { style: createCacheKey().illustrationContainer, children: jsx(require(6890) /* BountiesPosterSpotIllustration */.BountiesPosterSpotIllustration, { width: 273, height: 205 }) };
+  obj[3] = <View style={createCacheKey().illustrationContainer}>{jsx(require(6890) /* BountiesPosterSpotIllustration */.BountiesPosterSpotIllustration, { width: 273, height: 205 })}</View>;
+  obj = { grow: true, size: "lg", variant: "primary", text: null, onPress: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl3.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
+  obj[4] = callback;
+  obj[4] = jsx(require(4600) /* Button */.Button, { grow: true, size: "lg", variant: "primary", text: null, onPress: null });
+  return jsx(require(6656) /* PromoSheet */.PromoSheet, { grow: true, size: "lg", variant: "primary", text: null, onPress: null });
 };

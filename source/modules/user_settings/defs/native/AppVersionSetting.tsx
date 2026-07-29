@@ -1,8 +1,8 @@
-// Module ID: 14492
-// Function ID: 110633
-// Dependencies: [1554, 1212, 14493, 10099, 9740, 3838, 2]
+// Module ID: 14517
+// Function ID: 14518
+// Dependencies: [1578, 1236, 14518, 10120, 9762, 3862, 2]
 
-// Module 14492
+// Module 14517
 import createToggle from "createToggle";
 import importAllResult from "getConstants";
 
@@ -10,19 +10,19 @@ const require = arg1;
 const constants = require("getConstants").getConstants();
 let obj = {
   useTitle: function useAppVersionSettingTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.H66MEk);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.H66MEk);
   },
   parent: null,
   IconComponent: require("ClydeIcon").ClydeIcon,
   useTrailing: function useAppVersionSettingTrailing() {
-    const clientInfoString = require(14493) /* getClientInfoString */.getClientInfoString(closure_3.ReleaseChannel);
-    const obj = require(14493) /* getClientInfoString */;
-    const obj2 = require(14493) /* getClientInfoString */;
-    const clientInfoString1 = obj2.getClientInfoString(importAll(1554).getBuildNumberLabel());
+    const clientInfoString = require(14518) /* getClientInfo */.getClientInfoString(closure_3.ReleaseChannel);
+    const obj = require(14518) /* getClientInfo */;
+    const obj2 = require(14518) /* getClientInfo */;
+    const clientInfoString1 = obj2.getClientInfoString(importAll(1578).getBuildNumberLabel());
     const hasItem = clientInfoString1.includes("dev");
-    const obj3 = importAll(1554);
-    const clientInfoString2 = require(14493) /* getClientInfoString */.getClientInfoString(closure_3.Version);
+    const obj3 = importAll(1578);
+    const clientInfoString2 = require(14518) /* getClientInfo */.getClientInfoString(closure_3.Version);
     if (hasItem) {
       let combined = concat(clientInfoString2, " (", clientInfoString, ")");
     } else {
@@ -34,19 +34,19 @@ let obj = {
 };
 const createStaticResult = createToggle.createStatic({
   useTitle: function useAppVersionSettingTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.H66MEk);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.H66MEk);
   },
   parent: null,
   IconComponent: require("ClydeIcon").ClydeIcon,
   useTrailing: function useAppVersionSettingTrailing() {
-    const clientInfoString = require(14493) /* getClientInfoString */.getClientInfoString(closure_3.ReleaseChannel);
-    const obj = require(14493) /* getClientInfoString */;
-    const obj2 = require(14493) /* getClientInfoString */;
-    const clientInfoString1 = obj2.getClientInfoString(importAll(1554).getBuildNumberLabel());
+    const clientInfoString = require(14518) /* getClientInfo */.getClientInfoString(closure_3.ReleaseChannel);
+    const obj = require(14518) /* getClientInfo */;
+    const obj2 = require(14518) /* getClientInfo */;
+    const clientInfoString1 = obj2.getClientInfoString(importAll(1578).getBuildNumberLabel());
     const hasItem = clientInfoString1.includes("dev");
-    const obj3 = importAll(1554);
-    const clientInfoString2 = require(14493) /* getClientInfoString */.getClientInfoString(closure_3.Version);
+    const obj3 = importAll(1578);
+    const clientInfoString2 = require(14518) /* getClientInfo */.getClientInfoString(closure_3.Version);
     if (hasItem) {
       let combined = concat(clientInfoString2, " (", clientInfoString, ")");
     } else {
@@ -56,6 +56,6 @@ const createStaticResult = createToggle.createStatic({
   },
   usePredicate: require("explicitContentFromProto").DeveloperMode.useSetting
 });
-const result = require("getClientInfoString").fileFinishedImporting("modules/user_settings/defs/native/AppVersionSetting.tsx");
+const result = require("getClientInfo").fileFinishedImporting("modules/user_settings/defs/native/AppVersionSetting.tsx");
 
 export default createStaticResult;

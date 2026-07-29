@@ -1,41 +1,42 @@
-// Module ID: 13930
-// Function ID: 106495
+// Module ID: 13951
+// Function ID: 13952
 // Name: FamilyCenterRequestorDetails
-// Dependencies: [31, 27, 33, 4165, 1273, 689, 6235, 13902, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 1297, 712, 6255, 13923, 4185, 2]
 // Exports: default
 
-// Module 13930 (FamilyCenterRequestorDetails)
-import "result";
+// Module 13951 (FamilyCenterRequestorDetails)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { display: "flex", flexDirection: "row", flexGrow: 1, flexShrink: 1 } };
-_createForOfIteratorHelperLoose = { borderRadius: require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL] / 2, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.avatar = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.detailsContainer = { paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_12, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_4, flexGrow: 1, flexShrink: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_12, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_4, flexGrow: 1, flexShrink: 1 };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: { display: "flex", flexDirection: "row", flexGrow: 1, flexShrink: 1 }, avatar: null, detailsContainer: null };
+createCacheKey = { borderRadius: null, backgroundColor: null };
+createCacheKey[0] = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL] / 2;
+createCacheKey[1] = require("Themes").colors.BACKGROUND_SURFACE_HIGH;
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { paddingLeft: require("Themes").space.PX_12, paddingRight: require("Themes").space.PX_4, flexGrow: 1, flexShrink: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { paddingLeft: require("Themes").space.PX_12, paddingRight: require("Themes").space.PX_4, flexGrow: 1, flexShrink: 1 };
 const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterRequestorDetails.tsx");
 
 export default function FamilyCenterRequestorDetails(otherUser) {
   otherUser = otherUser.otherUser;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(6235) /* useUserIdsForLinkStatus */;
-  obj = { style: tmp.container };
+  const tmp = createCacheKey();
+  let obj = require(6255) /* useUserIdsForLinkStatus */;
+  obj = { style: tmp.container, children: null };
   const linkTimestampText = obj.useLinkTimestampText(otherUser.id, otherUser.status);
-  obj = { avatarStyle: tmp.avatar, user: otherUser, guildId: undefined, disablePlaceholder: true, avatarDecoration: otherUser.avatarDecoration };
-  const items = [callback(require(1273) /* Button */.Avatar, obj), ];
-  const obj1 = { style: tmp.detailsContainer };
-  const items1 = [callback(importDefault(13902), { user: otherUser }), ];
-  const obj2 = { variant: "text-xs/semibold", color: "text-muted", children: linkTimestampText };
-  items1[1] = callback(require(4161) /* Text */.Text, obj2);
-  obj1.children = items1;
+  obj = { avatarStyle: tmp.avatar, user: otherUser, guildId: "HermesInternal", disablePlaceholder: null, avatarDecoration: "Warning" };
+  obj[4] = otherUser.avatarDecoration;
+  const items = [callback(require(1297) /* Button */.Avatar, obj), ];
+  const obj1 = { style: tmp.detailsContainer, children: null };
+  const items1 = [callback(importDefault(13923), { user: otherUser }), callback(require(4185) /* Text */.Text, { variant: "text-xs/semibold", color: "text-muted", children: linkTimestampText })];
+  obj1[1] = items1;
   items[1] = callback2(View, obj1);
-  obj.children = items;
+  obj[1] = items;
   return callback2(View, obj);
 };

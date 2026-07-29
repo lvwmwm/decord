@@ -1,119 +1,40 @@
-// Module ID: 11548
-// Function ID: 89777
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [31, 27, 4053, 33, 4165, 689, 4076, 11549, 11559, 11579, 1557, 5497, 11584, 11585, 11613, 4372, 4072, 5128, 1212, 2231, 9094, 5121, 11620, 11622, 11630, 11636, 11646, 11655, 2]
+// Module ID: 11572
+// Function ID: 11573
+// Name: GuildPowerupsModal
+// Dependencies: [19, 17, 4077, 21, 4189, 712, 4100, 11573, 11583, 11603, 1581, 5515, 11608, 11609, 11637, 4395, 4096, 5150, 1236, 2255, 9118, 5143, 11644, 11646, 11654, 11660, 11670, 11679, 2]
 // Exports: default
 
-// Module 11548 (_createForOfIteratorHelperLoose)
-import result from "result";
-import get_ActivityIndicator from "GuildPowerupsBoostButton";
+// Module 11572 (GuildPowerupsModal)
+import messagesProxy from "messagesProxy";
+import get_ActivityIndicator from "Background";
 import BoostedGuildTiers from "BoostedGuildTiers";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "HeaderBackImage";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-({ ScrollView: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ BoostInfoType: closure_6, GuildPowerupType: closure_7 } = BoostedGuildTiers);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.headerContainer = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj2 = { flexDirection: "row", justifyContent: "space-between", borderWidth: 1, borderStyle: "solid", borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.boostInfoContainer = obj2;
-let obj3 = { width: 1, height: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-_createForOfIteratorHelperLoose.boostInfoSeparator = obj3;
-let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.scrollView = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_96 };
-let obj5 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, position: "absolute", bottom: 0, left: 0, right: 0 };
-_createForOfIteratorHelperLoose.boostButtonContainer = obj5;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj4 = { paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_96 };
+({ ScrollView: c4, View: c5 } = get_ActivityIndicator);
+({ BoostInfoType: closure_6, GuildPowerupType: error } = BoostedGuildTiers);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { container: null, headerContainer: null, boostInfoContainer: null, boostInfoSeparator: null, scrollView: null, boostButtonContainer: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_8 };
+let obj1 = { paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_8 };
+createCacheKey[2] = { flexDirection: "row", justifyContent: "space-between", borderWidth: 1, borderStyle: "solid", borderColor: require("Themes").colors.BORDER_SUBTLE, marginBottom: require("Themes").space.PX_16 };
+let obj2 = { flexDirection: "row", justifyContent: "space-between", borderWidth: 1, borderStyle: "solid", borderColor: require("Themes").colors.BORDER_SUBTLE, marginBottom: require("Themes").space.PX_16 };
+createCacheKey[3] = { width: 1, height: "100%", backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+let obj3 = { width: 1, height: "100%", backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[4] = { paddingBottom: require("Themes").space.PX_96 };
+let obj4 = { paddingBottom: require("Themes").space.PX_96 };
+createCacheKey[5] = { paddingHorizontal: require("Themes").space.PX_16, position: "absolute", bottom: 0, left: 0, right: 0 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj5 = { paddingHorizontal: require("Themes").space.PX_16, position: "absolute", bottom: 0, left: 0, right: 0 };
 const result = require("BoostedGuildTiers").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsModal.tsx");
 
 export default function GuildPowerupsModal(guildId) {
@@ -133,79 +54,83 @@ export default function GuildPowerupsModal(guildId) {
   let obj1 = guildId(autoOpenRequestId[8]);
   const autoDismissGuildPowerupsNotifications = obj1.useAutoDismissGuildPowerupsNotifications(guildId);
   autoOpenPerkId(autoOpenRequestId[9])(guildId, "GuildPowerupsModal", null != autoOpenPerkId);
-  let tmp5 = _createForOfIteratorHelperLoose();
+  let tmp8 = createCacheKey();
   if (null != analyticsLocation) {
     const items = [analyticsLocation];
     let items1 = items;
   } else {
     items1 = [];
   }
-  let obj2 = guildId(autoOpenRequestId[12]);
-  buildGuildPowerupsSections = obj2.useBuildGuildPowerupsSections(guildId, gameServerEnabled);
+  let tmpResult = tmp(tmp2[12]);
+  buildGuildPowerupsSections = tmpResult.useBuildGuildPowerupsSections(guildId, gameServerEnabled);
   closure_4 = buildGuildPowerupsSections.useRef(undefined);
   const items2 = [autoOpenPerkId, autoOpenRequestId, guildId, buildGuildPowerupsSections];
   const effect = buildGuildPowerupsSections.useEffect(() => {
     if (null != autoOpenPerkId) {
       if (null != autoOpenRequestId) {
-        if (ref.current !== autoOpenRequestId) {
-          const tmp23 = outer1_11(buildGuildPowerupsSections);
-          const iter5 = tmp23();
-          let iter4 = iter5;
-          if (!iter5.done) {
-            while (true) {
-              let tmp = outer1_11;
-              let tmp2 = outer1_11(iter4.value.listings);
-              let iter = tmp2();
-              if (!iter.done) {
-                while (true) {
-                  let value = iter.value;
-                  if ("singlePerk" === value.type) {
-                    let tmp3 = autoOpenPerkId;
-                    if (value.powerup.skuId === autoOpenPerkId) {
-                      break;
-                    }
-                  }
-                  if ("multiPerk" === value.type) {
-                    let tmp4 = autoOpenPerkId;
-                    if (value.group !== autoOpenPerkId) {
-                      let powerups = value.powerups;
-                    }
-                    let tmp6 = ref;
-                    let tmp7 = autoOpenRequestId;
-                    ref.current = autoOpenRequestId;
-                    let tmp8 = autoOpenPerkId;
-                    let tmp9 = autoOpenRequestId;
-                    let num = 14;
-                    let obj = {};
-                    let tmp10 = guildId;
-                    obj.guildId = guildId;
-                    obj.listing = value;
-                    obj.onDismiss = function onDismiss() {
-                      return autoOpenPerkId(autoOpenRequestId[15]).pop();
-                    };
-                    let tmp11 = autoOpenPerkId(autoOpenRequestId[14])(obj);
-                  }
-                  let iter2 = tmp2();
-                  iter = iter2;
-                  let tmp5 = value;
-                  continue;
+        if (ref.current !== tmp33) {
+          const iter = buildGuildPowerupsSections[Symbol.iterator]();
+          while (iter !== undefined) {
+            let listings = iter.next().listings;
+            let tmp3 = listings;
+            let tmp4 = listings;
+            for (const item10011 of listings) {
+              let tmp5 = item10011;
+              if ("singlePerk" === item10011.type) {
+                let tmp6 = item10011;
+                let tmp7 = autoOpenPerkId;
+                if (tmp5.powerup.skuId === autoOpenPerkId) {
+                  let tmp22 = ref;
+                  let tmp23 = autoOpenRequestId;
+                  let tmp24 = autoOpenRequestId;
+                  ref.current = autoOpenRequestId;
+                  let tmp25 = autoOpenPerkId;
+                  let tmp26 = autoOpenRequestId;
+                  let obj = { guildId: null, powerup: null };
+                  let tmp27 = guildId;
+                  obj[0] = guildId;
+                  let tmp28 = item10011;
+                  obj[1] = tmp5.powerup;
+                  let tmp29 = autoOpenPerkId(autoOpenRequestId[13])(obj);
+                  let tmp30 = obj;
+                  obj.return();
+                  let tmp31 = iter;
+                  iter.return();
+                }
+              }
+              let tmp8 = item10011;
+              if ("multiPerk" === tmp5.type) {
+                let tmp9 = item10011;
+                let tmp10 = autoOpenPerkId;
+                if (tmp5.group !== autoOpenPerkId) {
+                  let tmp11 = item10011;
+                  let powerups = tmp5.powerups;
                 }
                 let tmp12 = ref;
                 let tmp13 = autoOpenRequestId;
+                let tmp14 = autoOpenRequestId;
                 ref.current = autoOpenRequestId;
-                let tmp14 = autoOpenPerkId;
-                let tmp15 = autoOpenRequestId;
-                let num2 = 13;
-                obj = {};
-                let tmp16 = guildId;
-                obj.guildId = guildId;
-                obj.powerup = value.powerup;
-                let tmp17 = autoOpenPerkId(autoOpenRequestId[13])(obj);
+                let tmp15 = autoOpenPerkId;
+                let tmp16 = autoOpenRequestId;
+                obj = { guildId: null, listing: null, onDismiss: null };
+                let tmp17 = guildId;
+                obj[0] = guildId;
+                let tmp18 = item10011;
+                obj[1] = tmp5;
+                obj[2] = function onDismiss() {
+                  return callback(table[15]).pop();
+                };
+                let tmp19 = autoOpenPerkId(autoOpenRequestId[14])(obj);
+                let tmp20 = obj;
+                obj.return();
+                let tmp21 = iter;
+                iter.return();
               }
-              let iter3 = tmp23();
-              iter4 = iter3;
+              continue;
             }
+            continue;
           }
+          const tmp36 = buildGuildPowerupsSections;
         }
       }
     }
@@ -214,43 +139,42 @@ export default function GuildPowerupsModal(guildId) {
     let arr = autoOpenPerkId(autoOpenRequestId[15]);
     arr = arr.pop();
   }, []);
-  let tmp6 = autoOpenPerkId(autoOpenRequestId[11]);
+  let tmp9 = autoOpenPerkId(autoOpenRequestId[11]);
   ({ available, spent, total } = autoOpenPerkId(autoOpenRequestId[16])(guildId));
-  obj = { value: tmp6(...items1).analyticsLocations };
-  obj = { style: tmp5.container };
-  obj1 = { style: tmp5.headerContainer };
-  obj2 = {};
-  let intl = guildId(autoOpenRequestId[18]).intl;
-  obj2.title = intl.string(autoOpenPerkId(autoOpenRequestId[19]).hjvcLO);
-  obj2.headerTitle = function headerTitle() {
-    const obj = {};
+  obj = { value: tmp9(...items1).analyticsLocations, children: null };
+  obj = { style: tmp8.container, children: null };
+  obj1 = { style: tmp8.headerContainer, children: null };
+  const obj2 = { title: null, headerTitle: null, headerTitleAlign: "center", headerLeft: null };
+  let intl = tmp(tmp2[18]).intl;
+  obj2[0] = intl.string(autoOpenPerkId(autoOpenRequestId[19]).hjvcLO);
+  obj2[1] = function headerTitle() {
+    const obj = { title: null };
     const intl = guildId(autoOpenRequestId[18]).intl;
-    obj.title = intl.string(autoOpenPerkId(autoOpenRequestId[19]).hjvcLO);
-    return outer1_8(guildId(autoOpenRequestId[20]).GenericHeaderTitle, obj);
+    obj[0] = intl.string(autoOpenPerkId(autoOpenRequestId[19]).hjvcLO);
+    return callback(guildId(autoOpenRequestId[20]).GenericHeaderTitle, obj);
   };
-  obj2.headerTitleAlign = "center";
-  let obj7 = guildId(autoOpenRequestId[21]);
-  obj2.headerLeft = obj7.getHeaderCloseButton(callback);
-  obj1.children = callback(guildId(autoOpenRequestId[17]).Header, obj2);
+  tmpResult = tmp(tmp2[21]);
+  obj2[3] = tmpResult.getHeaderCloseButton(callback);
+  obj1[1] = callback(guildId(autoOpenRequestId[17]).Header, obj2);
   const items3 = [callback(closure_5, obj1), , ];
-  const obj3 = { contentContainerStyle: tmp5.scrollView };
-  const obj4 = { style: tmp5.boostInfoContainer };
-  const items4 = [callback(autoOpenPerkId(autoOpenRequestId[22]), { count: available, type: constants.AVAILABLE }), callback(closure_5, { style: tmp5.boostInfoSeparator }), , , ];
-  obj7 = { count: spent, type: constants.SPENT };
-  items4[2] = callback(autoOpenPerkId(autoOpenRequestId[22]), obj7);
-  items4[3] = callback(closure_5, { style: tmp5.boostInfoSeparator });
-  items4[4] = callback(autoOpenPerkId(autoOpenRequestId[22]), { count: total, type: constants.TOTAL });
-  obj4.children = items4;
+  const obj3 = { contentContainerStyle: tmp8.scrollView, children: null };
+  const obj4 = { style: tmp8.boostInfoContainer, children: null };
+  const items4 = [callback(autoOpenPerkId(autoOpenRequestId[22]), { count: available, type: constants.AVAILABLE }), callback(closure_5, { style: tmp8.boostInfoSeparator }), callback(autoOpenPerkId(autoOpenRequestId[22]), { count: spent, type: constants.SPENT }), callback(closure_5, { style: tmp8.boostInfoSeparator }), callback(autoOpenPerkId(autoOpenRequestId[22]), { count: total, type: constants.TOTAL })];
+  obj4[1] = items4;
   const items5 = [
     callback2(closure_5, obj4),
     callback(autoOpenPerkId(autoOpenRequestId[23]), { guildId }),
     buildGuildPowerupsSections.map((type) => {
       type = type.type;
       if (outer1_7.LEVEL === type) {
-        let obj = { guildId, listings: type.listings };
+        let obj = { guildId: null, listings: null };
+        obj[0] = guildId;
+        obj[1] = type.listings;
         return outer1_8(autoOpenPerkId(autoOpenRequestId[24]), obj, type.type);
-      } else if (outer1_7.PERK === type) {
-        obj = { guildId, listings: type.listings };
+      } else if (tmp.PERK === type) {
+        obj = { guildId: null, listings: null };
+        obj[0] = guildId;
+        obj[1] = type.listings;
         return outer1_8(autoOpenPerkId(autoOpenRequestId[25]), obj, type.type);
       } else {
         return null;
@@ -258,16 +182,17 @@ export default function GuildPowerupsModal(guildId) {
     }),
     callback(autoOpenPerkId(autoOpenRequestId[26]), { guildId })
   ];
-  obj3.children = items5;
+  obj3[1] = items5;
   items3[1] = callback2(closure_4, obj3);
   const obj5 = { count: available, type: constants.AVAILABLE };
-  const obj6 = { style: tmp5.boostInfoSeparator };
-  const obj8 = { style: tmp5.boostInfoSeparator };
+  const obj6 = { style: tmp8.boostInfoSeparator };
+  const obj7 = { count: spent, type: constants.SPENT };
+  const obj8 = { style: tmp8.boostInfoSeparator };
   const obj9 = { count: total, type: constants.TOTAL };
-  let tmp9 = autoOpenPerkId(autoOpenRequestId[16])(guildId);
-  const items6 = [tmp5.boostButtonContainer, { paddingBottom: autoOpenPerkId(autoOpenRequestId[10])().bottom }];
+  let tmp12 = autoOpenPerkId(autoOpenRequestId[16])(guildId);
+  const items6 = [tmp8.boostButtonContainer, { paddingBottom: autoOpenPerkId(autoOpenRequestId[10])().bottom }];
   items3[2] = callback(closure_5, { style: items6, children: callback(guildId(autoOpenRequestId[27]).GuildPowerupsBoostButton, { guildId }) });
-  obj.children = items3;
-  obj.children = callback2(closure_5, obj);
+  obj[1] = items3;
+  obj[1] = callback2(closure_5, obj);
   return callback(guildId(autoOpenRequestId[11]).AnalyticsLocationProvider, obj);
 };

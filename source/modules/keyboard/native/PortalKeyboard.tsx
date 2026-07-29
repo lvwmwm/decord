@@ -1,37 +1,38 @@
-// Module ID: 4035
-// Function ID: 33356
+// Module ID: 4059
+// Function ID: 4060
 // Name: PortalKeyboardState
-// Dependencies: [31, 33, 4016, 477, 4036, 2]
+// Dependencies: [19, 21, 4040, 500, 4060, 2]
 // Exports: PortalKeyboard, PortalKeyboardHost
 
-// Module 4035 (PortalKeyboardState)
-import "result";
+// Module 4059 (PortalKeyboardState)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/keyboard/native/PortalKeyboard.tsx");
+let c3 = "default";
+const modal = "modal";
+const result = require("navigationToRootTabHelper").fileFinishedImporting("modules/keyboard/native/PortalKeyboard.tsx");
 
 export const PortalKeyboardState = { EMPTY: "empty", REQUEST_OPEN: "request_open", OPENING: "opening", OPEN: "open", REQUEST_CLOSE: "request_close", CLOSING: "closing", CLOSED: "closed" };
 export const PORTAL_HOST_NAME_DEFAULT = "default";
 export const PORTAL_HOST_NAME_MODAL = "modal";
 export const PortalKeyboard = function PortalKeyboard(children) {
-  let obj = require(4016) /* _createForOfIteratorHelperLoose */;
-  let str = "default";
+  let obj = require(4040) /* navigationToRootTabHelper */;
   if (obj.useIsModalOpen()) {
-    str = "default";
-    if (obj2.isIOS()) {
-      str = "modal";
+    if (tmpResult.isIOS()) {
+      let tmp3 = modal;
     }
-    obj2 = require(477) /* set */;
+    obj = { hostName: null, children: null };
+    obj[0] = tmp3;
+    obj[1] = children.children;
+    return jsx(tmp(4060).Portal, { hostName: null, children: null });
   }
-  obj = { hostName: str, children: children.children };
-  return jsx(require(4036) /* Portal */.Portal, { hostName: str, children: children.children });
+  tmp3 = c3;
 };
 export const PortalKeyboardHost = function PortalKeyboardHost(name) {
-  let str = name.name;
-  if (str === undefined) {
-    str = "default";
+  name = name.name;
+  if (name === undefined) {
+    name = c3;
   }
-  const obj = { name: str };
-  return jsx(require(4036) /* Portal */.PortalHost, { name: str });
+  return jsx(require(4060) /* Portal */.PortalHost, { name });
 };

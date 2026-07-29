@@ -1,106 +1,104 @@
-// Module ID: 11071
-// Function ID: 85943
+// Module ID: 11095
+// Function ID: 11096
 // Name: AppealIngestionConfirmSubmission
-// Dependencies: [31, 27, 11048, 653, 33, 4165, 566, 11053, 1212, 11063, 11072, 6734, 4161, 4133, 11070, 1935, 686, 11066, 11067, 2]
+// Dependencies: [19, 17, 11072, 676, 21, 4189, 589, 11077, 1236, 11087, 11096, 6755, 4185, 4157, 11094, 1959, 709, 11090, 11091, 2]
 // Exports: default
 
-// Module 11071 (AppealIngestionConfirmSubmission)
-import "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11095 (AppealIngestionConfirmSubmission)
+import "set";
+import { View } from "AppealIngestionActivitySummary";
+import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, paddingHorizontal: 16 }, detailsAction: { marginBottom: 16 } });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/safety_hub/native/AppealIngestionConfirmSubmission.tsx");
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let closure_8 = createCacheKey.createStyles({ container: { flex: 1, paddingHorizontal: 16 }, detailsAction: { marginBottom: 16 } });
+const result = require("handleSafetyHubRequestAgeVerificationResetModalAction").fileFinishedImporting("modules/safety_hub/native/AppealIngestionConfirmSubmission.tsx");
 
 export default function AppealIngestionConfirmSubmission(isDsaEligible) {
   isDsaEligible = isDsaEligible.isDsaEligible;
   const tmp = callback2();
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  let stateFromStores = obj.useStateFromStores(items, () => outer1_4.getAppealClassificationId());
-  let obj1 = require(11053) /* useSafetyHubClassifications */;
-  if (null == stateFromStores) {
+  let obj = require(589) /* initialize */;
+  const items = [handleSafetyHubRequestAgeVerificationResetModalAction];
+  let stateFromStores = obj.useStateFromStores(items, () => store.getAppealClassificationId());
+  let obj1 = require(11077) /* useSafetyHubClassifications */;
+  if (stateFromStores == null) {
     stateFromStores = EMPTY_STRING_SNOWFLAKE_ID;
   }
   const safetyHubClassification = obj1.useSafetyHubClassification(stateFromStores);
-  let obj2 = require(566) /* initialize */;
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => outer1_4.getAppealSignal());
-  let obj3 = require(566) /* initialize */;
-  const items2 = [_isNativeReflectConstruct];
-  const stateFromStores2 = obj3.useStateFromStores(items2, () => outer1_4.getFreeTextAppealReason());
+  let tmp2Result = tmp2(589);
+  const items1 = [handleSafetyHubRequestAgeVerificationResetModalAction];
+  const stateFromStores1 = tmp2Result.useStateFromStores(items1, () => store.getAppealSignal());
+  tmp2Result = tmp2(589);
+  const items2 = [handleSafetyHubRequestAgeVerificationResetModalAction];
+  const stateFromStores2 = tmp2Result.useStateFromStores(items2, () => store.getFreeTextAppealReason());
   const classification = safetyHubClassification.classification;
   let flagged_content;
-  if (null != classification) {
+  if (classification != null) {
     flagged_content = classification.flagged_content;
   }
-  if (null == flagged_content) {
+  if (flagged_content == null) {
     flagged_content = [];
   }
-  const intl = require(1212) /* getSystemLocale */.intl;
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  const stringResult = intl.string(require(1212) /* getSystemLocale */.t["C5q+pW"]);
-  obj = {};
-  const items3 = [callback(require(11063) /* getHeader */.AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(require(1212) /* getSystemLocale */.t["G2g/g5"]) }), ];
-  obj = { style: tmp.container };
-  obj1 = {};
-  const stringResult1 = intl2.string(require(1212) /* getSystemLocale */.t["G2g/g5"]);
-  const tmp8 = View;
-  const tmp9 = importDefault(11072);
-  const items4 = [require(6734) /* parseMessageEmbedForProps */.getAppealSignalDisplayText(stateFromStores1), stateFromStores2];
-  obj1.reasons = items4.filter((arg0) => arg0.length > 0);
-  const items5 = [callback(tmp9, obj1), , , ];
+  const intl = tmp2(1236).intl;
+  const intl2 = tmp2(1236).intl;
+  const stringResult = intl.string(require(1236) /* getSystemLocale */.t["C5q+pW"]);
+  const items3 = [callback(require(11087) /* AppealIngestionModal */.AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(require(1236) /* getSystemLocale */.t["G2g/g5"]) }), ];
+  obj = { style: tmp.container, children: null };
+  obj = { reasons: null };
+  const stringResult1 = intl2.string(require(1236) /* getSystemLocale */.t["G2g/g5"]);
+  const tmp12 = View;
+  const tmp14 = importDefault(11096);
+  const items4 = [require(6755) /* parseMessageEmbedForProps */.getAppealSignalDisplayText(stateFromStores1), stateFromStores2];
+  obj[0] = items4.filter((arg0) => arg0.length > 0);
+  const items5 = [callback(tmp14, obj), , , ];
   if (!isDsaEligible) {
     items5[1] = isDsaEligible;
-    let tmp19 = flagged_content.length > 0;
-    if (tmp19) {
-      obj2 = { flaggedContent: flagged_content };
-      tmp19 = callback(importDefault(11066), obj2);
+    let tmp11Result = flagged_content.length > 0;
+    if (tmp11Result) {
+      obj1 = { flaggedContent: null };
+      obj1[0] = flagged_content;
+      tmp11Result = tmp11(tmp13(11090), obj1);
     }
-    items5[2] = tmp19;
-    obj3 = { classification: safetyHubClassification.classification };
-    items5[3] = callback(importDefault(11067), obj3);
-    obj.children = items5;
-    items3[1] = tmp7(tmp8, obj);
-    obj.children = items3;
-    return tmp7(require(11063) /* getHeader */.AppealIngestionModalScreen, obj);
+    const obj2 = { children: null };
+    items5[2] = tmp11Result;
+    const obj3 = { classification: null };
+    obj3[0] = safetyHubClassification.classification;
+    items5[3] = tmp11(tmp13(11091), obj3);
+    obj[1] = items5;
+    items3[1] = tmp10(tmp12, obj);
+    obj2[0] = items3;
+    return tmp10(tmp2(11087).AppealIngestionModalScreen, obj2);
   } else {
-    const obj4 = {
-      variant: "heading-md/normal",
-      color: "text-link",
-      style: tmp.detailsAction,
-      onPress() {
-          let obj = outer1_1(outer1_2[13]);
-          obj = {
-            onSave(userInput) {
-              let obj = outer2_1(outer2_2[16]);
-              obj = { type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE", userInput };
-              obj.dispatch(obj);
-              outer2_1(outer2_2[13]).hideActionSheet("AppealIngestionFreeTextAppealReasonActionSheet");
-            },
-            onClose() {
-              return outer2_1(outer2_2[13]).hideActionSheet("AppealIngestionFreeTextAppealReasonActionSheet");
-            }
-          };
-          return obj.openLazy(outer1_0(outer1_2[15])(outer1_2[14], outer1_2.paths), "AppealIngestionFreeTextAppealReasonActionSheet", obj);
+    const obj4 = { variant: "heading-md/normal", color: "text-link", style: null, onPress: null, children: null };
+    obj4[2] = tmp.detailsAction;
+    obj4[3] = function onPress() {
+      let obj = callback2(paths[13]);
+      obj = {
+        onSave(userInput) {
+          let obj = callback(709);
+          obj = { type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE", userInput };
+          obj.dispatch(obj);
+          callback(4157).hideActionSheet("AppealIngestionFreeTextAppealReasonActionSheet");
+        },
+        onClose() {
+          return callback(4157).hideActionSheet("AppealIngestionFreeTextAppealReasonActionSheet");
         }
+      };
+      return obj.openLazy(callback(paths[15])(paths[14], paths.paths), "AppealIngestionFreeTextAppealReasonActionSheet", obj);
     };
     if (stateFromStores2.length > 0) {
-      const intl4 = require(1212) /* getSystemLocale */.intl;
-      let stringResult2 = intl4.string(require(1212) /* getSystemLocale */.t.tnE3bZ);
+      const intl4 = tmp2(1236).intl;
+      let stringResult2 = intl4.string(tmp2(1236).t.tnE3bZ);
     } else {
-      const intl3 = require(1212) /* getSystemLocale */.intl;
-      stringResult2 = intl3.string(require(1212) /* getSystemLocale */.t.uoQFIp);
+      const intl3 = tmp2(1236).intl;
+      stringResult2 = intl3.string(tmp2(1236).t.uoQFIp);
     }
-    obj4.children = stringResult2;
-    callback(require(4161) /* Text */.Text, obj4);
-    const tmp10 = callback;
+    obj4[4] = stringResult2;
+    tmp11Result = tmp11(tmp2(4185).Text, obj4);
   }
 };

@@ -1,19 +1,19 @@
-// Module ID: 16177
-// Function ID: 125194
+// Module ID: 16212
+// Function ID: 16213
 // Name: setSoundpack
-// Dependencies: [10251, 653, 675, 686, 2]
+// Dependencies: [10272, 676, 698, 709, 2]
 // Exports: setSoundpack
 
-// Module 16177 (setSoundpack)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16212 (setSoundpack)
+import Soundpacks from "Soundpacks";
 import { AnalyticEvents } from "ME";
 
-const result = require("expandLocation").fileFinishedImporting("modules/soundpacks/SoundpackActions.tsx");
+const result = require("expandEventProperties").fileFinishedImporting("modules/soundpacks/SoundpackActions.tsx");
 
 export const setSoundpack = function setSoundpack(CLASSIC, name) {
-  let obj = importDefault(675);
+  let obj = importDefault(698);
   obj = { soundpack: CLASSIC, previous_soundpack: soundpack.getSoundpack() };
   obj.track(AnalyticEvents.SOUNDPACK_UPDATED, obj);
   obj = { type: "SET_SOUNDPACK", soundpack: CLASSIC, forExperimentId: name };
-  importDefault(686).dispatch(obj);
+  importDefault(709).dispatch(obj);
 };

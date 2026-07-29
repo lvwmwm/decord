@@ -1,19 +1,19 @@
-// Module ID: 10879
-// Function ID: 84273
+// Module ID: 10903
+// Function ID: 10904
 // Name: useScrollHandlers
-// Dependencies: [31, 9286, 3, 4563, 9886, 682, 9441, 9443, 5014, 2]
+// Dependencies: [19, 9310, 3, 4586, 9908, 705, 9465, 9467, 5036, 2]
 // Exports: default
 
-// Module 10879 (useScrollHandlers)
-import result from "result";
-import getChatInputContainerHeight from "getChatInputContainerHeight";
-import importDefaultResult from "SCREEN_READER_ENABLED_GETTER";
+// Module 10903 (useScrollHandlers)
+import noop from "noop";
+import updateChatInputContainerHeight from "updateChatInputContainerHeight";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ updateIsAtBottom: closure_4, updateShouldShowJumpToPresentButton: closure_5 } = getChatInputContainerHeight);
-importDefaultResult = new importDefaultResult("useScrollHandlers");
+({ updateIsAtBottom: c4, updateShouldShowJumpToPresentButton: c5 } = updateChatInputContainerHeight);
+let closure_6 = new require("SCREEN_READER_ENABLED_GETTER")("useScrollHandlers");
+let tmp3 = new require("SCREEN_READER_ENABLED_GETTER")("useScrollHandlers");
 let result = require("timestamp").fileFinishedImporting("modules/messages/native/hooks/useScrollHandlers.tsx");
 
 export default function useScrollHandlers(arg0) {
@@ -24,7 +24,7 @@ export default function useScrollHandlers(arg0) {
   let closure_14;
   let closure_15;
   let closure_16;
-  let result;
+  let noop;
   let closure_4;
   let closure_5;
   let closure_6;
@@ -34,21 +34,14 @@ export default function useScrollHandlers(arg0) {
   let dependencyMap;
   let importDefault;
   let require;
-  ({ chatRef: require, chatManager: importDefault, chatUpdatesQueue: dependencyMap, pendingUpdatesQueueRef: result, animatedRef: closure_4, fetchMoreBefore: closure_5, fetchMoreAfter: closure_6, handleVisibleMessagesChange: closure_7, applyNativeRowsUpdate: closure_8, messages: closure_9, channel: closure_10, channelId: closure_11, screenIndex: closure_12, onScroll: closure_13, useReducedMotion: closure_14, isStaff: closure_15, visibleMessagesWindowHandler: closure_16 } = arg0);
+  ({ chatRef: require, chatManager: importDefault, chatUpdatesQueue: dependencyMap, pendingUpdatesQueueRef: noop, animatedRef: closure_4, fetchMoreBefore: closure_5, fetchMoreAfter: closure_6, handleVisibleMessagesChange: closure_7, applyNativeRowsUpdate: closure_8, messages: closure_9, channel: closure_10, channelId: closure_11, screenIndex: closure_12, onScroll: closure_13, useReducedMotion: closure_14, isStaff: closure_15, visibleMessagesWindowHandler: closure_16 } = arg0);
+  let ref;
   let ref1;
   let ref2;
   let ref3;
   let ref4;
   let ref5;
   let ref6;
-  function loadMoreBefore() {
-    closure_4.current = true;
-    callback();
-  }
-  function loadMoreAfter() {
-    closure_4.current = true;
-    callback2();
-  }
   function handleScrollCallbacks(isNearTop) {
     let eventTimestamp;
     let isAtBottom;
@@ -73,39 +66,43 @@ export default function useScrollHandlers(arg0) {
     if (flag4 === undefined) {
       flag4 = false;
     }
-    if (null != id) {
+    if (null != closure_10) {
       outer1_0(outer1_2[3]);
-      let tmp7 = !closure_9.loadingMore;
-      if (tmp7) {
+      const loadingMore = tmp29.loadingMore;
+      let tmp6 = !loadingMore;
+      if (!loadingMore) {
         if (!flag2) {
           flag2 = flag3;
         }
         if (!flag2) {
           flag2 = tmp5;
         }
-        tmp7 = flag2;
+        tmp6 = flag2;
       }
-      if (tmp7) {
-        tmp7 = 0 === ref.current.length;
+      if (tmp6) {
+        tmp6 = 0 === ref.current.length;
       }
       if (!ref4.current) {
         if (flag) {
-          if (closure_9.hasMoreBefore) {
-            if (tmp7) {
-              loadMoreBefore();
+          if (tmp29.hasMoreBefore) {
+            if (tmp6) {
+              closure_4.current = true;
+              callback();
             }
-            let obj = { isFirstMessageVisible: flag4 };
+            let obj = { isFirstMessageVisible: null };
+            obj[0] = flag4;
             callback5(obj);
-            set.tryFlush();
+            closure_2.tryFlush();
             return true;
           }
         }
       }
       if (!ref3.current) {
         if (isNearBottom) {
-          if (closure_9.hasMoreAfter) {
-            if (tmp7) {
-              loadMoreAfter();
+          if (tmp29.hasMoreAfter) {
+            if (tmp6) {
+              closure_4.current = true;
+              callback2();
             }
           }
         }
@@ -115,63 +112,63 @@ export default function useScrollHandlers(arg0) {
         current = ref1.current;
       }
       if (!current) {
-        obj = outer1_1(outer1_2[4]);
-        id = id.id;
-        let num3 = 0;
+        obj = outer1_1(tmp3[4]);
+        const id = tmp.id;
+        let num = 0;
         if (isAtBottom) {
-          num3 = 1;
+          num = 1;
         }
-        const result = obj.updateChannelDimensions(id, eventTimestamp, num3, 1, 0);
+        const result = obj.updateChannelDimensions(id, eventTimestamp, num, 1, 0);
         ref1.current = true;
       }
+      tmp3 = outer1_2;
     }
     return false;
   }
   function handleScroll(eventTimestamp) {
     const isAtBottom = eventTimestamp.isAtBottom;
-    let flag = eventTimestamp.isNearBottom;
-    if (flag === undefined) {
-      flag = false;
+    let isNearBottom = eventTimestamp.isNearBottom;
+    if (isNearBottom === undefined) {
+      isNearBottom = false;
     }
-    let flag2 = eventTimestamp.isNearTop;
-    if (flag2 === undefined) {
-      flag2 = false;
+    let isNearTop = eventTimestamp.isNearTop;
+    if (isNearTop === undefined) {
+      isNearTop = false;
     }
-    let flag3 = eventTimestamp.dragging;
-    if (flag3 === undefined) {
-      flag3 = false;
+    let dragging = eventTimestamp.dragging;
+    if (dragging === undefined) {
+      dragging = false;
     }
-    let flag4 = eventTimestamp.decelerating;
-    if (flag4 === undefined) {
-      flag4 = false;
+    let decelerating = eventTimestamp.decelerating;
+    if (decelerating === undefined) {
+      decelerating = false;
     }
-    let flag5 = eventTimestamp.shouldShowJumpToPresent;
-    if (flag5 === undefined) {
-      flag5 = false;
+    let shouldShowJumpToPresent = eventTimestamp.shouldShowJumpToPresent;
+    if (shouldShowJumpToPresent === undefined) {
+      shouldShowJumpToPresent = false;
     }
-    let flag6 = eventTimestamp.isFirstMessageVisible;
-    if (flag6 === undefined) {
-      flag6 = false;
+    let isFirstMessageVisible = eventTimestamp.isFirstMessageVisible;
+    if (isFirstMessageVisible === undefined) {
+      isFirstMessageVisible = false;
     }
-    const obj = { eventTimestamp: eventTimestamp.eventTimestamp, isAtBottom, isNearBottom: flag, isNearTop: flag2, dragging: flag3, decelerating: flag4, shouldShowJumpToPresent: flag5, isFirstMessageVisible: flag6 };
-    if (handleScrollCallbacks(obj)) {
+    if (handleScrollCallbacks({ eventTimestamp: eventTimestamp.eventTimestamp, isAtBottom, isNearBottom, isNearTop, dragging, decelerating, shouldShowJumpToPresent, isFirstMessageVisible })) {
       ref2.current = isAtBottom;
-      ref3.current = flag;
-      ref4.current = flag2;
-      ref6.current = flag3;
-      ref5.current = flag4;
+      ref3.current = isNearBottom;
+      ref4.current = isNearTop;
+      ref6.current = dragging;
+      ref5.current = decelerating;
       outer1_0(outer1_2[5]).batchUpdates(() => {
-        let hasMoreAfter = flag5;
-        if (!flag5) {
+        let hasMoreAfter = shouldShowJumpToPresent;
+        if (!shouldShowJumpToPresent) {
           hasMoreAfter = outer1_9.hasMoreAfter;
         }
         outer2_5(outer1_11, outer1_12, hasMoreAfter);
         outer2_4(outer1_12, isAtBottom);
       });
-      const obj2 = outer1_0(outer1_2[5]);
+      const obj = outer1_0(outer1_2[5]);
     }
   }
-  const ref = React.useRef(undefined);
+  ref = React.useRef(undefined);
   ref1 = React.useRef(false);
   ref2 = React.useRef(false);
   ref3 = React.useRef(false);
@@ -186,8 +183,14 @@ export default function useScrollHandlers(arg0) {
     deceleratingRef: ref5,
     draggingRef: ref6,
     firstIgnoredScrollEventTimestampRef: ref,
-    loadMoreBefore,
-    loadMoreAfter,
+    loadMoreBefore() {
+      closure_4.current = true;
+      callback();
+    },
+    loadMoreAfter() {
+      closure_4.current = true;
+      callback2();
+    },
     scrollToTop() {
       let flag = arg0;
       if (arg0 === undefined) {
@@ -216,12 +219,12 @@ export default function useScrollHandlers(arg0) {
       }
     },
     updateNativeRows(isLoadingAtTop) {
-      if (set.isBlocking) {
-        set.add(isLoadingAtTop);
+      if (closure_2.isBlocking) {
+        obj.add(isLoadingAtTop);
       } else if (!isLoadingAtTop.isLoadingAtTop) {
         callback4(isLoadingAtTop);
       } else {
-        set.add(isLoadingAtTop);
+        obj.add(isLoadingAtTop);
       }
     },
     handleScrollCallbacks,
@@ -254,19 +257,36 @@ export default function useScrollHandlers(arg0) {
           outer1_6.log("STAFF-ACK-LOG: Ignoring outdated scroll event.", closure_11, changesetUpdateId, changesetIdForChat, timeStamp);
         }
       } else {
-        obj = { firstVisibleMessageRowIndex: firstVisibleMessageIndex, lastVisibleMessageRowIndex: lastVisibleMessageIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, source: outer1_0(outer1_2[8]).QuestsVisibleMessagesChangedSource.SCROLL };
+        obj = { firstVisibleMessageRowIndex: null, lastVisibleMessageRowIndex: null, firstVisibleMessagePercentVisible: null, lastVisibleMessagePercentVisible: null, source: null };
+        obj[0] = firstVisibleMessageIndex;
+        obj[1] = lastVisibleMessageIndex;
+        obj[2] = firstVisibleMessagePercentVisible;
+        obj[3] = lastVisibleMessagePercentVisible;
+        obj[4] = tmp(tmp2[8]).QuestsVisibleMessagesChangedSource.SCROLL;
         callback3(obj);
-        const current = ref.current;
-        let tmp2 = timeStamp;
-        if (null != current) {
-          tmp2 = current;
+        let current = ref.current;
+        if (current == null) {
+          current = timeStamp;
         }
         ref.current = undefined;
-        obj = { eventTimestamp: tmp2, isAtBottom, isNearBottom, isNearTop, dragging, decelerating, shouldShowJumpToPresent, isFirstMessageVisible };
+        obj = { eventTimestamp: null, isAtBottom: null, isNearBottom: null, isNearTop: null, dragging: null, decelerating: null, shouldShowJumpToPresent: null, isFirstMessageVisible: null };
+        obj[0] = current;
+        obj[1] = isAtBottom;
+        obj[2] = isNearBottom;
+        obj[3] = isNearTop;
+        obj[4] = dragging;
+        obj[5] = decelerating;
+        obj[6] = shouldShowJumpToPresent;
+        obj[7] = isFirstMessageVisible;
         handleScroll(obj);
-        const obj1 = { rows: previousRows._rows, firstVisibleMessageRowIndex: firstVisibleMessageIndex, lastVisibleMessageRowIndex: lastVisibleMessageIndex };
+        const obj1 = { rows: null, firstVisibleMessageRowIndex: null, lastVisibleMessageRowIndex: null };
+        obj1[0] = previousRows._rows;
+        obj1[1] = firstVisibleMessageIndex;
+        obj1[2] = lastVisibleMessageIndex;
         closure_16.handleScrollPosition(obj1);
       }
+      tmp = outer1_0;
+      tmp2 = outer1_2;
     }
   };
 };

@@ -1,26 +1,26 @@
-// Module ID: 10166
-// Function ID: 78519
+// Module ID: 10187
+// Function ID: 10188
 // Name: IconUploader
-// Dependencies: [5, 31, 27, 653, 33, 4165, 4709, 5548, 1392, 10167, 4695, 1212, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4189, 4731, 5566, 1416, 10188, 4717, 1236, 2]
 // Exports: default
 
-// Module 10166 (IconUploader)
-import closure_3 from "_createForOfIteratorHelperLoose";
-import result from "result";
+// Module 10187 (IconUploader)
+import closure_3 from "createCacheKey";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { UPLOAD_MEDIUM_SIZE } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_8;
-let closure_9;
+let metroImportAll;
 const require = arg1;
-({ View: closure_5, Image: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_8, Fragment: closure_9, jsxs: closure_10 } = jsxProd);
-let closure_11 = _createForOfIteratorHelperLoose.createStyles({ uploadIcon: { position: "absolute", right: -7, top: -7 }, avatar: { height: 64, width: 64, borderRadius: 32 } });
+({ View: c5, Image: closure_6 } = get_ActivityIndicator);
+({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
+let closure_11 = createCacheKey.createStyles({ uploadIcon: { position: "absolute", right: -7, top: -7 }, avatar: { height: 64, width: 64, borderRadius: 32 } });
 const result = require("get ActivityIndicator").fileFinishedImporting("components_native/common/IconUploader.tsx");
 
 export default function IconUploader(disabled) {
@@ -46,11 +46,85 @@ export default function IconUploader(disabled) {
   ({ name, icon, onUpload: require, iconStyle, onChangeIconPress: importDefault } = disabled);
   let dependencyMap;
   function _handleChangeIcon(arg0) {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = _handleChangeIcon(tmp);
-    return obj(...arguments);
+    const self = this;
+    const tmp = _handleChangeIcon(function*() {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === ref) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp5;
+              let base64 = tmp2;
+              base64 = undefined;
+              if (outer1_1 != null) {
+                outer1_1();
+              }
+              if (ref.current) {
+                c3 = 3;
+              } else {
+                ref.current = true;
+                let obj1 = outer1_1(ref[6]);
+                obj1 = { size: null };
+                obj1[0] = outer1_7;
+                c3 = 1;
+                const obj2 = { value: null, done: false };
+                obj2[0] = obj1.openImagePicker(obj1);
+                return obj2;
+              }
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            base64 = arg1.base64;
+            if (null != base64) {
+              if (base64 != null) {
+                tmp10(base64);
+              }
+            }
+            ref.current = false;
+          }
+          c3 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } catch (tmp22) {
+          c3 = tmp;
+          throw tmp22;
+        }
+      }
+    });
+    _handleChangeIcon = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
-  const tmp = callback2();
+  let tmp = callback2();
   dependencyMap = React.useRef(false);
   if (null == icon) {
     let fnResult = fn(icon);
@@ -60,41 +134,53 @@ export default function IconUploader(disabled) {
   }
   if ("guild" === str) {
     if (!tmp8) {
-      obj = { style: iconStyle, icon: fnResult, value: name, size: require(5548) /* makeSizeStyle */.GuildIconSizes.XLARGE, animate: true };
-      let tmp7 = callback(importDefault(5548), obj);
-      const tmp12 = importDefault(5548);
+      obj = { style: null, icon: null, value: null, size: null, animate: true };
+      obj[0] = iconStyle;
+      obj[1] = fnResult;
+      obj[2] = name;
+      obj[3] = require(5566) /* GuildIconSizes */.GuildIconSizes.XLARGE;
+      let tmp7 = callback(importDefault(5566), obj);
+      const tmp12 = importDefault(5566);
     }
     tmp8 = null == icon && null == name;
   } else {
-    let obj1 = require(1392) /* getAvatarURL */;
-    obj = {};
+    let obj1 = require(1416) /* getAvatarURL */;
+    obj = { style: null, source: null };
     const items = [tmp.avatar, iconStyle];
-    obj.style = items;
-    obj.source = obj1.makeSource(fnResult);
+    obj[0] = items;
+    obj[1] = obj1.makeSource(fnResult);
     tmp7 = callback(closure_6, obj);
   }
-  obj1 = {};
   const items1 = [tmp7, ];
   let tmp16 = null;
   if (!flag) {
-    const obj2 = { style: tmp.uploadIcon, source: importDefault(10167) };
-    tmp16 = callback(closure_6, obj2);
+    obj1 = { style: null, source: null };
+    obj1[0] = tmp.uploadIcon;
+    obj1[1] = importDefault(10188);
+    tmp16 = callback(closure_6, obj1);
   }
   items1[1] = tmp16;
-  obj1.children = items1;
-  const tmp14Result = closure_10(closure_9, obj1);
+  const tmp14Result = closure_10(closure_9, { children: items1 });
   let tmp22 = tmp14Result;
   if (!flag) {
-    const obj3 = { style: disabled.style };
-    const obj4 = { accessibilityRole: "button" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj4.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t["MsUY/S"]);
-    obj4.onPress = function handleChangeIcon() {
-      return _handleChangeIcon(...arguments);
+    let obj2 = { style: null, children: null };
+    obj2[0] = disabled.style;
+    const obj3 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj3[1] = intl.string(require(1236) /* getSystemLocale */.t["MsUY/S"]);
+    obj3[2] = function handleChangeIcon() {
+      const self = this;
+      const apply = _handleChangeIcon.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     };
-    obj4.children = tmp14Result;
-    obj3.children = callback(require(4695) /* PressableBase */.PressableOpacity, obj4);
-    tmp22 = callback(closure_5, obj3);
+    obj3[3] = tmp14Result;
+    obj2[1] = callback(require(4717) /* PressableBase */.PressableOpacity, obj3);
+    tmp22 = callback(closure_5, obj2);
   }
   return tmp22;
 };

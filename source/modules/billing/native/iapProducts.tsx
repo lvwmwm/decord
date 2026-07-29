@@ -1,89 +1,48 @@
-// Module ID: 6334
-// Function ID: 56798
-// Name: items1
+// Module ID: 6355
+// Function ID: 6356
+// Name: items
 // Dependencies: [2]
 
-// Module 6334 (items1)
+// Module 6355 (items)
 const result = require("set").fileFinishedImporting("modules/billing/native/iapProducts.tsx");
-let obj = { identifier: "premium_tier_2_premium_guild_5_yearly", price: 274.99, currencySymbol: "$", currencyCode: "usd", priceString: "$274.99", countryCode: "US", downloadable: false, description: "Chat perks and 7 Boosts (Yearly Sub)", title: "Nitro + 5 Boosts (Yearly)", discounts: [] };
-const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
-obj = { identifier: "premium_tier_1_premium_guild_1_yearly", price: 84.99, currencySymbol: "$", currencyCode: "usd", priceString: "$84.99", countryCode: "US", downloadable: false, description: "Chat perks and 1 Boost (Yearly Sub)", title: "Nitro Classic + 1 Boost", discounts: [] };
-items[1] = obj;
-const obj1 = { identifier: "premium_tier_0_yearly", price: 29.99, currencySymbol: "$", currencyCode: "usd", priceString: "$29.99", countryCode: "US", downloadable: false, description: "Chat perks (Yearly Sub)", title: "Nitro Basic Yearly" };
+const items = [{ identifier: "premium_tier_2_premium_guild_5_yearly", price: 274.99, currencySymbol: "$", currencyCode: "usd", priceString: "$274.99", countryCode: "US", downloadable: false, description: "Chat perks and 7 Boosts (Yearly Sub)", title: "Nitro + 5 Boosts (Yearly)", discounts: [] }, { identifier: "premium_tier_1_premium_guild_1_yearly", price: 84.99, currencySymbol: "$", currencyCode: "usd", priceString: "$84.99", countryCode: "US", downloadable: false, description: "Chat perks and 1 Boost (Yearly Sub)", title: "Nitro Classic + 1 Boost", discounts: [] }, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
 const items1 = [{ identifier: "premium_tier_0_yearly_likelihood", localizedPrice: "$0.00", numberOfPeriods: "1", type: "SUBSCRIPTION", paymentMode: "FREETRIAL", subscriptionPeriod: "MONTH", price: "0" }];
-obj1.discounts = items1;
-items[2] = obj1;
-const obj2 = { identifier: "premium_tier_2_monthly", price: 9.99, currencySymbol: "$", currencyCode: "usd", priceString: "$9.99", countryCode: "US", downloadable: false, description: "Chat perks and 2 Boosts (Monthly Sub)", title: "Nitro Monthly" };
+items[2] = { identifier: "premium_tier_0_yearly", price: 29.99, currencySymbol: "$", currencyCode: "usd", priceString: "$29.99", countryCode: "US", downloadable: false, description: "Chat perks (Yearly Sub)", title: "Nitro Basic Yearly", discounts: items1 };
 const items2 = [{ numberOfPeriods: "14", type: "SUBSCRIPTION", localizedPrice: "$0.00", identifier: "premium_tier_2_monthly_q4_drop", paymentMode: "FREETRIAL", price: "0", subscriptionPeriod: "DAY" }, { identifier: "premium_tier_2_monthly_reactivation", price: "0", subscriptionPeriod: "MONTH", paymentMode: "FREETRIAL", localizedPrice: "$0.00", type: "SUBSCRIPTION", numberOfPeriods: "1" }, { numberOfPeriods: "14", type: "SUBSCRIPTION", identifier: "premium_tier_2_monthly_referral_trial", price: "0", subscriptionPeriod: "DAY", paymentMode: "FREETRIAL", localizedPrice: "$0.00" }, { localizedPrice: "$0.00", type: "SUBSCRIPTION", numberOfPeriods: "1", identifier: "premium_tier_2_monthly_likelihood", paymentMode: "FREETRIAL", price: "0", subscriptionPeriod: "MONTH" }];
-obj2.discounts = items2;
-items[3] = obj2;
-const obj3 = { identifier: "premium_tier_1_premium_guild_1_monthly", price: 8.49, currencySymbol: "$", currencyCode: "usd", priceString: "$8.49", countryCode: "US", downloadable: false, description: "Chat perks and 1 Boost (Monthly Sub)", title: "Nitro Classic + 1 Boost", discounts: [] };
-items[4] = obj3;
-const obj4 = { identifier: "premium_tier_2_premium_guild_28_monthly", price: 107.99, currencySymbol: "$", currencyCode: "usd", priceString: "$107.99", countryCode: "US", downloadable: false, description: "Chat perks and 30 Boosts (Monthly Sub)", title: "Nitro + 28 Boosts (Monthly)", discounts: [] };
-items[5] = obj4;
-const obj5 = { identifier: "premium_tier_2_premium_guild_3_monthly", price: 20.49, currencySymbol: "$", currencyCode: "usd", priceString: "$20.49", countryCode: "US", downloadable: false, description: "Chat perks and 5 Boosts (Monthly Sub)", title: "Nitro + 3 Boosts (Monthly)", discounts: [] };
-items[6] = obj5;
-const obj6 = { identifier: "premium_month_tier_2.1", price: 9.99, currencySymbol: "$", currencyCode: "usd", priceString: "$9.99", countryCode: "US", downloadable: false, description: "Chat perks and 2 Boosts (Monthly Sub)", title: "Nitro Monthly", discounts: [] };
-items[7] = obj6;
-const obj7 = { identifier: "premium_tier_0_monthly", price: 2.99, currencySymbol: "$", currencyCode: "usd", priceString: "$2.99", countryCode: "US", downloadable: false, description: "Chat perks (Monthly Sub)", title: "Nitro Basic Monthly" };
+items[3] = { identifier: "premium_tier_2_monthly", price: 9.99, currencySymbol: "$", currencyCode: "usd", priceString: "$9.99", countryCode: "US", downloadable: false, description: "Chat perks and 2 Boosts (Monthly Sub)", title: "Nitro Monthly", discounts: items2 };
+items[4] = { identifier: "premium_tier_1_premium_guild_1_monthly", price: 8.49, currencySymbol: "$", currencyCode: "usd", priceString: "$8.49", countryCode: "US", downloadable: false, description: "Chat perks and 1 Boost (Monthly Sub)", title: "Nitro Classic + 1 Boost", discounts: [] };
+items[5] = { identifier: "premium_tier_2_premium_guild_28_monthly", price: 107.99, currencySymbol: "$", currencyCode: "usd", priceString: "$107.99", countryCode: "US", downloadable: false, description: "Chat perks and 30 Boosts (Monthly Sub)", title: "Nitro + 28 Boosts (Monthly)", discounts: [] };
+items[6] = { identifier: "premium_tier_2_premium_guild_3_monthly", price: 20.49, currencySymbol: "$", currencyCode: "usd", priceString: "$20.49", countryCode: "US", downloadable: false, description: "Chat perks and 5 Boosts (Monthly Sub)", title: "Nitro + 3 Boosts (Monthly)", discounts: [] };
+items[7] = { identifier: "premium_month_tier_2.1", price: 9.99, currencySymbol: "$", currencyCode: "usd", priceString: "$9.99", countryCode: "US", downloadable: false, description: "Chat perks and 2 Boosts (Monthly Sub)", title: "Nitro Monthly", discounts: [] };
 const items3 = [{ localizedPrice: "$0.00", paymentMode: "FREETRIAL", subscriptionPeriod: "MONTH", price: "0", numberOfPeriods: "1", type: "SUBSCRIPTION", identifier: "premium_tier_0_monthly_likelihood" }];
-obj7.discounts = items3;
-items[8] = obj7;
-const obj8 = { identifier: "premium_guild_1_monthly", price: 4.99, currencySymbol: "$", currencyCode: "usd", priceString: "$4.99", countryCode: "US", downloadable: false, description: "1 Server Boost (Monthly)", title: "1 Server Boost Monthly", discounts: [] };
-items[9] = obj8;
-const obj9 = { identifier: "premium_month_tier_1.1", price: 4.99, currencySymbol: "$", currencyCode: "usd", priceString: "$4.99", countryCode: "US", downloadable: false, description: "Chat perks like animated emojis (Monthly Sub)", title: "Classic Monthly" };
+items[8] = { identifier: "premium_tier_0_monthly", price: 2.99, currencySymbol: "$", currencyCode: "usd", priceString: "$2.99", countryCode: "US", downloadable: false, description: "Chat perks (Monthly Sub)", title: "Nitro Basic Monthly", discounts: items3 };
+items[9] = { identifier: "premium_guild_1_monthly", price: 4.99, currencySymbol: "$", currencyCode: "usd", priceString: "$4.99", countryCode: "US", downloadable: false, description: "1 Server Boost (Monthly)", title: "1 Server Boost Monthly", discounts: [] };
 const items4 = [{ localizedPrice: "$0.00", identifier: "premium_tier_1_monthly_likelihood", paymentMode: "FREETRIAL", subscriptionPeriod: "MONTH", price: "0", type: "SUBSCRIPTION", numberOfPeriods: "1" }];
-obj9.discounts = items4;
-items[10] = obj9;
-const obj10 = { identifier: "premium_tier_1_yearly", price: 49.99, currencySymbol: "$", currencyCode: "usd", priceString: "$49.99", countryCode: "US", downloadable: false, description: "Chat perks like animated emojis (Yearly Sub)", title: "Nitro Classic Yearly", discounts: [] };
-items[11] = obj10;
-const obj11 = { identifier: "premium_year_tier_1.1", price: 49.99, currencySymbol: "$", currencyCode: "usd", priceString: "$49.99", countryCode: "US", downloadable: false, description: "Chat perks like animated emojis (Yearly Sub)", title: "Classic Yearly", discounts: [] };
-items[12] = obj11;
-const obj12 = { identifier: "premium_tier_2_premium_guild_1_monthly", price: 13.49, currencySymbol: "$", currencyCode: "usd", priceString: "$13.49", countryCode: "US", downloadable: false, description: "Chat perks and 3 Boosts (Monthly Sub)", title: "Nitro + 1 Boost (Monthly)", discounts: [] };
-items[13] = obj12;
-const obj13 = { identifier: "premium_tier_2_premium_guild_2_monthly", price: 16.99, currencySymbol: "$", currencyCode: "usd", priceString: "$16.99", countryCode: "US", downloadable: false, description: "Chat perks and 4 Boosts (Monthly Sub)", title: "Nitro + 2 Boosts (Monthly)", discounts: [] };
-items[14] = obj13;
-const obj14 = { identifier: "premium_tier_2_premium_guild_2_yearly", price: 169.99, currencySymbol: "$", currencyCode: "usd", priceString: "$169.99", countryCode: "US", downloadable: false, description: "Chat perks and 4 Boosts (Yearly Sub)", title: "Nitro + 2 Boosts (Yearly)", discounts: [] };
-items[15] = obj14;
-const obj15 = { identifier: "premium_tier_2_premium_guild_1_yearly", price: 134.99, currencySymbol: "$", currencyCode: "usd", priceString: "$134.99", countryCode: "US", downloadable: false, description: "Chat perks and 3 Boosts (Yearly Sub)", title: "Nitro + 1 Boost (Yearly)", discounts: [] };
-items[16] = obj15;
-const obj16 = { identifier: "premium_tier_2_premium_guild_3_yearly", price: 204.99, currencySymbol: "$", currencyCode: "usd", priceString: "$204.99", countryCode: "US", downloadable: false, description: "Chat perks and 5 Boosts (Yearly Sub)", title: "Nitro + 3 Boosts (Yearly)", discounts: [] };
-items[17] = obj16;
-const obj17 = { identifier: "premium_tier_1_monthly", price: 4.99, currencySymbol: "$", currencyCode: "usd", priceString: "$4.99", countryCode: "US", downloadable: false, description: "Chat perks like animated emojis (Monthly Sub)", title: "Nitro Classic Monthly", discounts: [] };
-items[18] = obj17;
-const obj18 = { identifier: "premium_tier_2_premium_guild_10_monthly", price: 44.99, currencySymbol: "$", currencyCode: "usd", priceString: "$44.99", countryCode: "US", downloadable: false, description: "Chat perks and 12 Boosts (Monthly Sub)", title: "Nitro + 10 Boosts (Monthly)", discounts: [] };
-items[19] = obj18;
-const obj19 = { identifier: "premium_year_tier_2.1", price: 99.99, currencySymbol: "$", currencyCode: "usd", priceString: "$99.99", countryCode: "US", downloadable: false, description: "Chat perks and 2 Boosts (Yearly Sub)", title: "Nitro Yearly", discounts: [] };
-items[20] = obj19;
-const obj20 = { identifier: "premium_guild_2_monthly", price: 9.99, currencySymbol: "$", currencyCode: "usd", priceString: "$9.99", countryCode: "US", downloadable: false, description: "2 Server Boosts (Monthly)", title: "2 Server Boosts Monthly", discounts: [] };
-items[21] = obj20;
-const obj21 = { identifier: "premium_tier_2_premium_guild_5_monthly", price: 27.49, currencySymbol: "$", currencyCode: "usd", priceString: "$27.49", countryCode: "US", downloadable: false, description: "Chat perks and 7 Boosts (Monthly Sub)", title: "Nitro + 5 Boosts (Monthly)", discounts: [] };
-items[22] = obj21;
-const obj22 = { identifier: "api_generic_subscription", price: 4.99, currencySymbol: "$", currencyCode: "usd", priceString: "$4.99", countryCode: "US", downloadable: false, description: "Discord Subscription", title: "Discord Subscription", discounts: [] };
-items[23] = obj22;
-const obj23 = { identifier: "premium_tier_2_yearly", price: 99.99, currencySymbol: "$", currencyCode: "usd", priceString: "$99.99", countryCode: "US", downloadable: false, description: "Chat perks and 2 Boosts (Yearly Sub)", title: "Nitro Yearly" };
+items[10] = { identifier: "premium_month_tier_1.1", price: 4.99, currencySymbol: "$", currencyCode: "usd", priceString: "$4.99", countryCode: "US", downloadable: false, description: "Chat perks like animated emojis (Monthly Sub)", title: "Classic Monthly", discounts: items4 };
+items[11] = { identifier: "premium_tier_1_yearly", price: 49.99, currencySymbol: "$", currencyCode: "usd", priceString: "$49.99", countryCode: "US", downloadable: false, description: "Chat perks like animated emojis (Yearly Sub)", title: "Nitro Classic Yearly", discounts: [] };
+items[12] = { identifier: "premium_year_tier_1.1", price: 49.99, currencySymbol: "$", currencyCode: "usd", priceString: "$49.99", countryCode: "US", downloadable: false, description: "Chat perks like animated emojis (Yearly Sub)", title: "Classic Yearly", discounts: [] };
+items[13] = { identifier: "premium_tier_2_premium_guild_1_monthly", price: 13.49, currencySymbol: "$", currencyCode: "usd", priceString: "$13.49", countryCode: "US", downloadable: false, description: "Chat perks and 3 Boosts (Monthly Sub)", title: "Nitro + 1 Boost (Monthly)", discounts: [] };
+items[14] = { identifier: "premium_tier_2_premium_guild_2_monthly", price: 16.99, currencySymbol: "$", currencyCode: "usd", priceString: "$16.99", countryCode: "US", downloadable: false, description: "Chat perks and 4 Boosts (Monthly Sub)", title: "Nitro + 2 Boosts (Monthly)", discounts: [] };
+items[15] = { identifier: "premium_tier_2_premium_guild_2_yearly", price: 169.99, currencySymbol: "$", currencyCode: "usd", priceString: "$169.99", countryCode: "US", downloadable: false, description: "Chat perks and 4 Boosts (Yearly Sub)", title: "Nitro + 2 Boosts (Yearly)", discounts: [] };
+items[16] = { identifier: "premium_tier_2_premium_guild_1_yearly", price: 134.99, currencySymbol: "$", currencyCode: "usd", priceString: "$134.99", countryCode: "US", downloadable: false, description: "Chat perks and 3 Boosts (Yearly Sub)", title: "Nitro + 1 Boost (Yearly)", discounts: [] };
+items[17] = { identifier: "premium_tier_2_premium_guild_3_yearly", price: 204.99, currencySymbol: "$", currencyCode: "usd", priceString: "$204.99", countryCode: "US", downloadable: false, description: "Chat perks and 5 Boosts (Yearly Sub)", title: "Nitro + 3 Boosts (Yearly)", discounts: [] };
+items[18] = { identifier: "premium_tier_1_monthly", price: 4.99, currencySymbol: "$", currencyCode: "usd", priceString: "$4.99", countryCode: "US", downloadable: false, description: "Chat perks like animated emojis (Monthly Sub)", title: "Nitro Classic Monthly", discounts: [] };
+items[19] = { identifier: "premium_tier_2_premium_guild_10_monthly", price: 44.99, currencySymbol: "$", currencyCode: "usd", priceString: "$44.99", countryCode: "US", downloadable: false, description: "Chat perks and 12 Boosts (Monthly Sub)", title: "Nitro + 10 Boosts (Monthly)", discounts: [] };
+items[20] = { identifier: "premium_year_tier_2.1", price: 99.99, currencySymbol: "$", currencyCode: "usd", priceString: "$99.99", countryCode: "US", downloadable: false, description: "Chat perks and 2 Boosts (Yearly Sub)", title: "Nitro Yearly", discounts: [] };
+items[21] = { identifier: "premium_guild_2_monthly", price: 9.99, currencySymbol: "$", currencyCode: "usd", priceString: "$9.99", countryCode: "US", downloadable: false, description: "2 Server Boosts (Monthly)", title: "2 Server Boosts Monthly", discounts: [] };
+items[22] = { identifier: "premium_tier_2_premium_guild_5_monthly", price: 27.49, currencySymbol: "$", currencyCode: "usd", priceString: "$27.49", countryCode: "US", downloadable: false, description: "Chat perks and 7 Boosts (Monthly Sub)", title: "Nitro + 5 Boosts (Monthly)", discounts: [] };
+items[23] = { identifier: "api_generic_subscription", price: 4.99, currencySymbol: "$", currencyCode: "usd", priceString: "$4.99", countryCode: "US", downloadable: false, description: "Discord Subscription", title: "Discord Subscription", discounts: [] };
 const items5 = [{ subscriptionPeriod: "MONTH", paymentMode: "FREETRIAL", price: "0", type: "SUBSCRIPTION", numberOfPeriods: "1", localizedPrice: "$0.00", identifier: "premium_tier_2_yearly_reactivation" }, { localizedPrice: "$0.00", paymentMode: "FREETRIAL", subscriptionPeriod: "DAY", price: "0", type: "SUBSCRIPTION", numberOfPeriods: "14", identifier: "premium_tier_2_yearly_q4_drop" }, { identifier: "premium_tier_2_yearly_referral_trial", localizedPrice: "$0.00", price: "0", subscriptionPeriod: "DAY", paymentMode: "FREETRIAL", numberOfPeriods: "14", type: "SUBSCRIPTION" }, { localizedPrice: "$0.00", type: "SUBSCRIPTION", numberOfPeriods: "1", subscriptionPeriod: "MONTH", price: "0", paymentMode: "FREETRIAL", identifier: "premium_tier_2_yearly_likelihood" }];
-obj23.discounts = items5;
-items[24] = obj23;
-const obj24 = { identifier: "premium_tier_2_premium_guild_13_monthly", price: 54.99, currencySymbol: "$", currencyCode: "usd", priceString: "$54.99", countryCode: "US", downloadable: false, description: "Chat perks and 15 Boosts (Monthly Sub)", title: "Nitro + 13 Boosts (Monthly)", discounts: [] };
-items[25] = obj24;
-const obj25 = { identifier: "api_generic_consumable", price: 4.99, currencySymbol: "$", currencyCode: "usd", priceString: "$4.99", countryCode: "US", downloadable: false, description: "Profile and Avatar Decorations from the Shop", title: "Discord Collectible", discounts: [] };
-items[26] = obj25;
-const obj26 = { identifier: "premium_month_tier_0", price: 2.99, currencySymbol: "$", currencyCode: "usd", priceString: "$2.99", countryCode: "US", downloadable: false, description: "1 month of sweet chat perks", title: "Nitro Basic (1 Month)", discounts: [] };
-items[27] = obj26;
-const obj27 = { identifier: "premium_month_tier_2.2", price: 9.99, currencySymbol: "$", currencyCode: "usd", priceString: "$9.99", countryCode: "US", downloadable: false, description: "1 month of sweet chat perks and 1 Nitro Boost", title: "Nitro (1 Month)", discounts: [] };
-items[28] = obj27;
-const obj28 = { identifier: "premium_year_tier_1.2", price: 49.99, currencySymbol: "$", currencyCode: "usd", priceString: "$49.99", countryCode: "US", downloadable: false, description: "1 year of sweet chat perks", title: "Nitro Classic (1 Year)", discounts: [] };
-items[29] = obj28;
-const obj29 = { identifier: "premium_month_tier_1.2", price: 4.99, currencySymbol: "$", currencyCode: "usd", priceString: "$4.99", countryCode: "US", downloadable: false, description: "1 month of sweet chat perks", title: "Nitro Classic (1 Month)", discounts: [] };
-items[30] = obj29;
-const obj30 = { identifier: "sticker_pack_199", price: 1.99, currencySymbol: "$", currencyCode: "usd", priceString: "$1.99", countryCode: "US", downloadable: false, description: "A pack of stickers you can use in chat", title: "Discord Sticker Pack", discounts: [] };
-items[31] = obj30;
-const obj31 = { identifier: "premium_year_tier_0", price: 29.99, currencySymbol: "$", currencyCode: "usd", priceString: "$29.99", countryCode: "US", downloadable: false, description: "1 year of sweet chat perks", title: "Nitro Basic (1 Year)", discounts: [] };
-items[32] = obj31;
-const obj32 = { identifier: "sticker_pack_299", price: 2.99, currencySymbol: "$", currencyCode: "usd", priceString: "$2.99", countryCode: "US", downloadable: false, description: "A pack of stickers you can use in chat", title: "Discord Sticker Pack", discounts: [] };
-items[33] = obj32;
-const obj33 = { identifier: "premium_year_tier_2.2", price: 99.99, currencySymbol: "$", currencyCode: "usd", priceString: "$99.99", countryCode: "US", downloadable: false, description: "1 year of sweet chat perks and 1 Nitro Boost", title: "Nitro (1 Year)", discounts: [] };
-items[34] = obj33;
+items[24] = { identifier: "premium_tier_2_yearly", price: 99.99, currencySymbol: "$", currencyCode: "usd", priceString: "$99.99", countryCode: "US", downloadable: false, description: "Chat perks and 2 Boosts (Yearly Sub)", title: "Nitro Yearly", discounts: items5 };
+items[25] = { identifier: "premium_tier_2_premium_guild_13_monthly", price: 54.99, currencySymbol: "$", currencyCode: "usd", priceString: "$54.99", countryCode: "US", downloadable: false, description: "Chat perks and 15 Boosts (Monthly Sub)", title: "Nitro + 13 Boosts (Monthly)", discounts: [] };
+items[26] = { identifier: "api_generic_consumable", price: 4.99, currencySymbol: "$", currencyCode: "usd", priceString: "$4.99", countryCode: "US", downloadable: false, description: "Profile and Avatar Decorations from the Shop", title: "Discord Collectible", discounts: [] };
+items[27] = { identifier: "premium_month_tier_0", price: 2.99, currencySymbol: "$", currencyCode: "usd", priceString: "$2.99", countryCode: "US", downloadable: false, description: "1 month of sweet chat perks", title: "Nitro Basic (1 Month)", discounts: [] };
+items[28] = { identifier: "premium_month_tier_2.2", price: 9.99, currencySymbol: "$", currencyCode: "usd", priceString: "$9.99", countryCode: "US", downloadable: false, description: "1 month of sweet chat perks and 1 Nitro Boost", title: "Nitro (1 Month)", discounts: [] };
+items[29] = { identifier: "premium_year_tier_1.2", price: 49.99, currencySymbol: "$", currencyCode: "usd", priceString: "$49.99", countryCode: "US", downloadable: false, description: "1 year of sweet chat perks", title: "Nitro Classic (1 Year)", discounts: [] };
+items[30] = { identifier: "premium_month_tier_1.2", price: 4.99, currencySymbol: "$", currencyCode: "usd", priceString: "$4.99", countryCode: "US", downloadable: false, description: "1 month of sweet chat perks", title: "Nitro Classic (1 Month)", discounts: [] };
+items[31] = { identifier: "sticker_pack_199", price: 1.99, currencySymbol: "$", currencyCode: "usd", priceString: "$1.99", countryCode: "US", downloadable: false, description: "A pack of stickers you can use in chat", title: "Discord Sticker Pack", discounts: [] };
+items[32] = { identifier: "premium_year_tier_0", price: 29.99, currencySymbol: "$", currencyCode: "usd", priceString: "$29.99", countryCode: "US", downloadable: false, description: "1 year of sweet chat perks", title: "Nitro Basic (1 Year)", discounts: [] };
+items[33] = { identifier: "sticker_pack_299", price: 2.99, currencySymbol: "$", currencyCode: "usd", priceString: "$2.99", countryCode: "US", downloadable: false, description: "A pack of stickers you can use in chat", title: "Discord Sticker Pack", discounts: [] };
+items[34] = { identifier: "premium_year_tier_2.2", price: 99.99, currencySymbol: "$", currencyCode: "usd", priceString: "$99.99", countryCode: "US", downloadable: false, description: "1 year of sweet chat perks and 1 Nitro Boost", title: "Nitro (1 Year)", discounts: [] };
 
 export const copiedIAPProducts = items;

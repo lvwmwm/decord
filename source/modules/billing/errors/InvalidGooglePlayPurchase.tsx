@@ -1,25 +1,16 @@
-// Module ID: 6233
-// Function ID: 55722
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 3833, 2]
+// Module ID: 6253
+// Function ID: 6254
+// Name: prototype
+// Dependencies: [3857, 2]
 
-// Module 6233 (_isNativeReflectConstruct)
-import _defineProperties from "_defineProperties";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "_isNativeReflectConstruct";
+// Module 6253 (prototype)
+import "set";
 
-function _isNativeReflectConstruct() {
-  let _defineProperties = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return _defineProperties;
-  }
-  const result = _isNativeReflectConstruct();
+const prototype = function InvalidGooglePlayPurchase() {
+  return HermesBuiltin.applyArguments(new.target, new.target);
+}.prototype;
+class prototype extends tmp2 {
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/billing/errors/InvalidGooglePlayPurchase.tsx");
+const result = require("set").fileFinishedImporting("modules/billing/errors/InvalidGooglePlayPurchase.tsx");
 
-export default tmp2;
+export default prototype;

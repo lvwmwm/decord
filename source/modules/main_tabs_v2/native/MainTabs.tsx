@@ -1,29 +1,29 @@
-// Module ID: 14890
-// Function ID: 113408
-// Dependencies: [31, 27, 33, 4165, 4012, 8802, 1557, 3877, 4697, 14891, 2]
+// Module ID: 14916
+// Function ID: 14917
+// Dependencies: [19, 17, 21, 4189, 4036, 8826, 1581, 3901, 4719, 14917, 2]
 
-// Module 14890
+// Module 14916
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1 } });
-const memoResult = require("result").memo(function MainTabs() {
-  let obj = require(8802) /* useActiveThemeType */;
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ container: { flex: 1 } });
+const memoResult = require("noop").memo(function MainTabs() {
+  let obj = require(8826) /* useActiveThemeType */;
   const isCustomThemeActive = obj.useIsCustomThemeActive();
-  const tmp = importDefault(4012)();
-  const rect = importDefault(1557)();
-  obj = { style: items };
+  const tmp = importDefault(4036)();
+  const rect = importDefault(1581)();
+  obj = { style: items, children: null };
   items = [callback3().container, { marginLeft: rect.left, marginRight: rect.right }];
-  obj = { gradient: tmp };
-  const items1 = [callback(importDefault(4697), { absolute: true, mix: isCustomThemeActive }), callback(importDefault(14891), {})];
-  obj.children = items1;
-  obj.children = callback2(require(3877) /* ManaContext */.ThemeContextProvider, obj);
+  obj = { gradient: tmp, children: null };
+  const items1 = [callback(importDefault(4719), { absolute: true, mix: isCustomThemeActive }), callback(importDefault(14917), {})];
+  obj[1] = items1;
+  obj[1] = callback2(require(3901) /* ManaContext */.ThemeContextProvider, obj);
   return callback(View, obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/MainTabs.tsx");

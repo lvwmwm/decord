@@ -1,10 +1,10 @@
-// Module ID: 13582
-// Function ID: 104396
+// Module ID: 13605
+// Function ID: 13606
 // Name: createLock
 // Dependencies: [2]
 // Exports: createLock, createObservableLock
 
-// Module 13582 (createLock)
+// Module 13605 (createLock)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/MutexUtils.tsx");
 
 export const createLock = function createLock(_getMessages) {
@@ -27,8 +27,9 @@ export const createObservableLock = function createObservableLock(arg0) {
   ({ onContention: closure_3, onContentionResolved: closure_4, onTimeout: closure_5, timeoutMs: closure_6 } = arg0);
   function mutex(arg0, arg1) {
     let closure_0 = arg0;
-    let arr = arg1;
-    if (arr.length > 0) {
+    let closure_1 = arg1;
+    let arr = closure_1;
+    if (closure_1.length > 0) {
       callback(arg1, arr);
       let timerId = true;
     } else if (timerId) {
@@ -41,18 +42,18 @@ export const createObservableLock = function createObservableLock(arg0) {
       timerId = null;
       if (null != closure_5) {
         const _setTimeout = setTimeout;
-        timerId = setTimeout(() => outer1_5(closure_1, closure_1), closure_6);
+        timerId = setTimeout(() => outer1_5(closure_1, closure_1), tmp7);
       }
     }
     return new Promise((arg0, arg1) => {
       const nextPromise = promise.then(promise);
       promise = promise.then(promise).then(arg0, arg1).then(() => arr.splice(0, 1));
       if (null != timerId) {
-        promise = promise.then(() => clearTimeout(outer1_2));
+        promise = promise.then(() => clearTimeout(closure_2));
       }
     });
   }
-  mutex.isMutexHeld = () => arr.length > 0;
+  mutex.isMutexHeld = () => closure_1.length > 0;
   mutex.getLockHolders = () => closure_1;
   return mutex;
 };

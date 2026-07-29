@@ -1,12 +1,12 @@
-// Module ID: 5496
-// Function ID: 46799
+// Module ID: 5514
+// Function ID: 5515
 // Name: ApplicationConnectionCard
-// Dependencies: [31, 4202, 653, 33, 566, 5497, 5498, 1212, 5500, 5507, 675, 4359, 5512, 2]
+// Dependencies: [19, 4226, 676, 21, 589, 5515, 5516, 1236, 5518, 5525, 698, 4384, 5530, 2]
 // Exports: default
 
-// Module 5496 (ApplicationConnectionCard)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5514 (ApplicationConnectionCard)
+import noop from "noop";
+import addApplication from "addApplication";
 import { AnalyticEvents } from "ME";
 import { jsx } from "jsxProd";
 
@@ -20,14 +20,16 @@ export default function ApplicationConnectionCard(connection) {
   connection = connection.connection;
   const guildId = connection.guildId;
   const _location = connection.location;
+  let stateFromStores;
+  let analyticsLocations;
   let startAuthorization;
   let obj = connection(_location[4]);
   const items = [analyticsLocations];
   const items1 = [connection.application_id];
-  const stateFromStores = obj.useStateFromStores(items, () => {
+  stateFromStores = obj.useStateFromStores(items, () => {
     let application = null;
     if (null != connection.application_id) {
-      application = analyticsLocations.getApplication(connection.application_id);
+      application = analyticsLocations.getApplication(tmp.application_id);
     }
     return application;
   }, items1);
@@ -53,40 +55,33 @@ export default function ApplicationConnectionCard(connection) {
     }
   }, items2);
   let name;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     name = stateFromStores.name;
   }
-  if (null == name) {
-    const intl = connection(_location[7]).intl;
-    name = intl.string(connection(_location[7]).t.cgPbaZ);
+  if (name == null) {
+    const intl = tmp(tmp2[7]).intl;
+    name = intl.string(tmp(tmp2[7]).t.cgPbaZ);
   }
-  const tmp6 = guildId(_location[8])(stateFromStores);
-  startAuthorization = tmp6.startAuthorization;
-  ({ hasAlreadyLinked, canStartAuthorization, fetched } = tmp6);
-  obj = { game: stateFromStores, size: connection(_location[9]).GameIconSizes.SMALL };
+  const tmp7 = guildId(_location[8])(stateFromStores);
+  startAuthorization = tmp7.startAuthorization;
+  ({ hasAlreadyLinked, canStartAuthorization, fetched } = tmp7);
+  obj = { game: stateFromStores, size: null };
+  obj[1] = connection(_location[9]).GameIconSizes.SMALL;
   const items3 = [startAuthorization, guildId, connection.application_id, _location, analyticsLocations];
-  const tmp7 = guildId(_location[9]);
-  const callback = stateFromStores.useCallback(() => {
+  const obj2 = stateFromStores;
+  const tmp4Result = guildId(_location[9]);
+  const callback = obj2.useCallback(() => {
     let obj = guildId(_location[10]);
     obj = {};
     const merged = Object.assign(connection(_location[11]).collectGuildAnalyticsMetadata(guildId));
-    obj["connection_type"] = "application";
+    obj.connection_type = "application";
     const application_id = connection.application_id;
-    let tmp2;
-    if (null != application_id) {
-      tmp2 = application_id;
-    }
-    obj["application_id"] = tmp2;
-    obj["location"] = _location;
+    obj.application_id = application_id;
+    obj.location = _location;
     obj.track(startAuthorization.GUILD_ONBOARDING_CONNECTION_CLICKED, obj);
     obj = { analyticsLocations };
     startAuthorization(obj);
   }, items3);
-  obj = { displayName: name, description: connection.description };
-  obj.icon = jsx(guildId(_location[9]), { displayName: name, description: connection.description });
-  obj.isLoading = !fetched;
-  obj.isConnected = hasAlreadyLinked;
-  obj.canConnect = canStartAuthorization;
-  obj.onConnect = callback;
-  return jsx(guildId(_location[12]), { displayName: name, description: connection.description });
+  obj = { displayName: name, description: connection.description, icon: jsx(guildId(_location[9]), { game: stateFromStores, size: null }), isLoading: !fetched, isConnected: hasAlreadyLinked, canConnect: canStartAuthorization, onConnect: callback };
+  return jsx(guildId(_location[12]), { displayName: name, description: connection.description, icon: jsx(guildId(_location[9]), { game: stateFromStores, size: null }), isLoading: !fetched, isConnected: hasAlreadyLinked, canConnect: canStartAuthorization, onConnect: callback });
 };

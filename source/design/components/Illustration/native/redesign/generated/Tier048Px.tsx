@@ -1,40 +1,63 @@
-// Module ID: 12516
-// Function ID: 96919
+// Module ID: 12538
+// Function ID: 12539
 // Name: getTier048PxSource
-// Dependencies: [31, 27, 33, 6517, 12517, 12518, 12519, 4011, 2]
-// Exports: Tier048Px
+// Dependencies: [19, 17, 21, 6538, 12539, 12540, 12541, 4035, 2]
+// Exports: Tier048Px, getTier048PxSource, useTier048PxSource
 
-// Module 12516 (getTier048PxSource)
-import "result";
+// Module 12538 (getTier048PxSource)
+import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function getTier048PxSource(theme) {
-  let obj = require(6517) /* getIllustrationSource */;
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/Tier048Px.tsx");
+
+export const getTier048PxSource = function getTier048PxSource(theme) {
+  let obj = require(6538) /* getIllustrationSource */;
   obj = {
     dark() {
-      return outer1_0(outer1_1[4]);
+      return callback(12539);
     },
     darker() {
-      return outer1_0(outer1_1[5]);
+      return callback(12540);
     },
     light() {
-      return outer1_0(outer1_1[6]);
+      return callback(12541);
     }
   };
   return obj.getIllustrationSource(theme, obj);
-}
-function useTier048PxSource() {
-  return getTier048PxSource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
-}
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/Tier048Px.tsx");
-
-export { getTier048PxSource };
-export { useTier048PxSource };
+};
+export const useTier048PxSource = function useTier048PxSource() {
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(12539);
+    },
+    darker() {
+      return callback(12540);
+    },
+    light() {
+      return callback(12541);
+    }
+  };
+  return require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+};
 export const Tier048Px = function Tier048Px(arg0) {
-  const obj = {};
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(12539);
+    },
+    darker() {
+      return callback(12540);
+    },
+    light() {
+      return callback(12541);
+    }
+  };
+  obj = {};
+  const illustrationSource = require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
-  obj["source"] = useTier048PxSource();
+  obj.source = illustrationSource;
   return <Image />;
 };

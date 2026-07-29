@@ -1,31 +1,34 @@
-// Module ID: 5484
-// Function ID: 46722
+// Module ID: 5502
+// Function ID: 5503
 // Name: Layer
-// Dependencies: [57, 31, 27, 653, 33, 5485, 5486, 2]
+// Dependencies: [32, 19, 17, 676, 21, 5503, 5504, 2]
 // Exports: LayerScope
 
-// Module 5484 (Layer)
+// Module 5502 (Layer)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { NOOP } from "ME";
 import jsxProd from "jsxProd";
 
-let closure_5;
+let c5;
+let c9;
 let closure_6;
-let closure_8;
-let closure_9;
+let metroImportAll;
 const require = arg1;
 function Layer(zIndex) {
   zIndex = zIndex.zIndex;
-  const context = React.useContext(zIndex(5486).LayerContext);
-  const dependencyMap = callback(React.useState({}), 2)[1];
+  let context;
+  let dependencyMap;
+  let callback;
+  context = React.useContext(zIndex(5504).LayerContext);
+  dependencyMap = callback(React.useState({}), 2)[1];
   callback = React.useRef(null);
   const items = [context];
   const effect = React.useEffect(() => {
-    context.invalidate = () => outer1_2({});
+    context.invalidate = () => callback({});
     return () => {
-      outer1_1.invalidate = () => null;
+      closure_1.invalidate = () => null;
     };
   }, items);
   const items1 = context.items;
@@ -34,7 +37,7 @@ function Layer(zIndex) {
     style: React.useMemo(() => {
       const obj = {};
       const merged = Object.assign(outer1_6.absoluteFillObject);
-      obj["zIndex"] = zIndex;
+      obj.zIndex = zIndex;
       return obj;
     }, items2),
     ref(current) {
@@ -43,11 +46,11 @@ function Layer(zIndex) {
     },
     onLayout: NOOP,
     pointerEvents: "box-none",
-    children: items1.map((children) => outer1_8(outer1_4.Fragment, { children: children.component }, children.key))
+    children: items1.map((children) => callback(React.Fragment, { children: children.component }, children.key))
   });
 }
-({ View: closure_5, StyleSheet: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+({ View: c5, StyleSheet: closure_6 } = get_ActivityIndicator);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
 const result = require("get ActivityIndicator").fileFinishedImporting("design/components/Layers/native/LayerScope.native.tsx");
 
 export const LayerScope = function LayerScope(arg0) {
@@ -55,12 +58,13 @@ export const LayerScope = function LayerScope(arg0) {
   let zIndex;
   ({ children, zIndex } = arg0);
   const obj = {
-    value: importDefault(5485)(() => {
-      const layerContextManager = new outer1_0(outer1_2[6]).LayerContextManager();
+    value: importDefault(5503)(() => {
+      const layerContextManager = new callback(table[6]).LayerContextManager();
       return layerContextManager;
-    })
+    }),
+    children: null
   };
   const items = [children, callback2(Layer, { zIndex })];
-  obj.children = items;
-  return callback3(require(5486) /* LayerContextManager */.LayerContext.Provider, obj);
+  obj[1] = items;
+  return callback3(require(5504) /* add */.LayerContext.Provider, obj);
 };

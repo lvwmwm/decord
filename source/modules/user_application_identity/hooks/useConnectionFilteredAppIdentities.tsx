@@ -1,11 +1,11 @@
-// Module ID: 12165
-// Function ID: 95150
+// Module ID: 12189
+// Function ID: 12190
 // Name: useConnectionFilteredAppIdentities
-// Dependencies: [31, 4850, 12142, 2]
+// Dependencies: [19, 4872, 12166, 2]
 // Exports: default
 
-// Module 12165 (useConnectionFilteredAppIdentities)
-import result from "result";
+// Module 12189 (useConnectionFilteredAppIdentities)
+import noop from "noop";
 import { APPLICATION_IDENTITY_CONNECTIONS_ALLOWED_APPLICATIONS as closure_3 } from "items1";
 
 const require = arg1;
@@ -24,27 +24,33 @@ export default function useConnectionFilteredAppIdentities(arg0) {
   data = userApplicationIdentities.data;
   obj = {
     isLoading: userApplicationIdentities.isLoading,
-    filteredAppIdentities: React.useMemo(() => null != data ? data : [].filter((profile) => {
-      let closure_0 = profile;
-      let someResult = outer2_3.some((applicationId) => {
-        let migrationExperimentEnabled = applicationId.applicationId === profile.application_id;
-        if (migrationExperimentEnabled) {
-          migrationExperimentEnabled = applicationId.getMigrationExperimentEnabled("useConnectionFilteredAppIdentities");
+    filteredAppIdentities: React.useMemo(() => {
+      let items = data;
+      if (data == null) {
+        items = [];
+      }
+      return items.filter((profile) => {
+        let closure_0 = profile;
+        let someResult = outer1_3.some((applicationId) => {
+          let migrationExperimentEnabled = applicationId.applicationId === profile.application_id;
+          if (migrationExperimentEnabled) {
+            migrationExperimentEnabled = applicationId.getMigrationExperimentEnabled("useConnectionFilteredAppIdentities");
+          }
+          return migrationExperimentEnabled;
+        });
+        if (someResult) {
+          someResult = null != profile.profile;
         }
-        return migrationExperimentEnabled;
+        if (someResult) {
+          someResult = null != profile.profile.username;
+        }
+        if (someResult) {
+          someResult = true === profile.profile.connection_visible || closure_0;
+          const tmp4 = true === profile.profile.connection_visible || closure_0;
+        }
+        return someResult;
       });
-      if (someResult) {
-        someResult = null != profile.profile;
-      }
-      if (someResult) {
-        someResult = null != profile.profile.username;
-      }
-      if (someResult) {
-        someResult = true === profile.profile.connection_visible || outer1_0;
-        const tmp4 = true === profile.profile.connection_visible || outer1_0;
-      }
-      return someResult;
-    }), items)
+    }, items)
   };
   items = [data, undefined !== includeHidden && includeHidden];
   return obj;

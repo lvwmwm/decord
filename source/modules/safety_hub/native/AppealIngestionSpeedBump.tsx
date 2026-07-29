@@ -1,27 +1,27 @@
-// Module ID: 11064
-// Function ID: 85913
+// Module ID: 11088
+// Function ID: 11089
 // Name: AppealIngestionSpeedBump
-// Dependencies: [31, 27, 11048, 6735, 653, 33, 4165, 566, 11053, 11065, 1212, 11063, 11066, 11067, 11068, 4161, 2]
+// Dependencies: [19, 17, 11072, 6756, 676, 21, 4189, 589, 11077, 11089, 1236, 11087, 11090, 11091, 11092, 4185, 2]
 // Exports: default
 
-// Module 11064 (AppealIngestionSpeedBump)
-import "result";
+// Module 11088 (AppealIngestionSpeedBump)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import SafetyHubLinks from "SafetyHubLinks";
+import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
+import SafetyHubView from "SafetyHubView";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
+let c9;
 let closure_6;
-let closure_8;
-let closure_9;
+let metroImportAll;
 const require = arg1;
-({ SafetyHubAnalyticsActions: closure_5, SafetyHubLinks: closure_6 } = SafetyHubLinks);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, alignSelf: "stretch", paddingHorizontal: 16 } });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/safety_hub/native/AppealIngestionSpeedBump.tsx");
+({ SafetyHubAnalyticsActions: c5, SafetyHubLinks: closure_6 } = SafetyHubView);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+let closure_10 = createCacheKey.createStyles({ container: { flex: 1, alignSelf: "stretch", paddingHorizontal: 16 } });
+const result = require("handleSafetyHubRequestAgeVerificationResetModalAction").fileFinishedImporting("modules/safety_hub/native/AppealIngestionSpeedBump.tsx");
 
 export default function AppealIngestionSpeedBump(arg0) {
   let classification;
@@ -30,98 +30,98 @@ export default function AppealIngestionSpeedBump(arg0) {
   let isSpam;
   ({ isCoppa, isSpam } = arg0);
   let _require;
-  let obj = _require(566);
-  const items = [_isNativeReflectConstruct];
-  let stateFromStores = obj.useStateFromStores(items, () => outer1_4.getAppealClassificationId());
-  let obj1 = _require(11053);
-  if (null == stateFromStores) {
+  let obj = _require(589);
+  const items = [handleSafetyHubRequestAgeVerificationResetModalAction];
+  let stateFromStores = obj.useStateFromStores(items, () => appealClassificationId.getAppealClassificationId());
+  let obj1 = _require(11077);
+  if (stateFromStores == null) {
     stateFromStores = EMPTY_STRING_SNOWFLAKE_ID;
   }
   const safetyHubClassification = obj1.useSafetyHubClassification(stateFromStores);
-  let obj2 = _require(11065);
-  _require = obj2.useEmitAppealIngestionEvent();
+  const tmp = callback2();
+  _require = _require(11089).useEmitAppealIngestionEvent();
   ({ isDsaEligible, classification } = safetyHubClassification);
-  let explainer_link;
-  if (null != classification) {
-    explainer_link = classification.explainer_link;
+  let str;
+  if (classification != null) {
+    str = classification.explainer_link;
   }
-  let str = "";
-  if (null != explainer_link) {
-    str = explainer_link;
+  if (str == null) {
+    str = "";
   }
   const classification2 = safetyHubClassification.classification;
   let flagged_content;
-  if (null != classification2) {
+  if (classification2 != null) {
     flagged_content = classification2.flagged_content;
   }
-  if (null == flagged_content) {
+  if (flagged_content == null) {
     flagged_content = [];
   }
-  const intl = _require(1212).intl;
-  const tmp = callback2();
-  const intl2 = _require(1212).intl;
-  const stringResult = intl.string(_require(1212).t["C5q+pW"]);
-  obj = {};
-  const items1 = [callback(_require(11063).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(_require(1212).t.URt7VI) }), ];
-  obj = { style: tmp.container };
-  let tmp9 = flagged_content.length > 0;
-  if (tmp9) {
-    obj1 = { flaggedContent: flagged_content };
-    tmp9 = callback(importDefault(11066), obj1);
+  const intl = tmp2(1236).intl;
+  const tmp2Result = _require(11089);
+  const intl2 = tmp2(1236).intl;
+  const stringResult = intl.string(_require(1236).t["C5q+pW"]);
+  const items1 = [callback(_require(11087).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(_require(1236).t.URt7VI) }), ];
+  obj = { style: tmp.container, children: null };
+  let tmp9Result = flagged_content.length > 0;
+  if (tmp9Result) {
+    obj = { flaggedContent: null };
+    obj[0] = flagged_content;
+    tmp9Result = tmp9(importDefault(11090), obj);
   }
-  const items2 = [tmp9, , , , , ];
-  obj2 = { classification: safetyHubClassification.classification };
-  items2[1] = callback(importDefault(11067), obj2);
-  let tmp13 = isCoppa;
+  const items2 = [tmp9Result, , , , , ];
+  obj1 = { classification: safetyHubClassification.classification };
+  items2[1] = callback(importDefault(11091), obj1);
+  tmp9Result = isCoppa;
   if (isCoppa) {
-    const obj3 = {};
-    const intl3 = _require(1212).intl;
-    obj3.text = intl3.string(_require(1212).t["gJs+kf"]);
-    obj3.url = constants.AGE_VERIFICATION_LINK;
-    obj3.onPress = function onPress() {
+    const obj2 = { text: null, url: null, onPress: null };
+    let tmp13Result = tmp13(11092);
+    const intl3 = tmp2(1236).intl;
+    obj2[0] = intl3.string(tmp2(1236).t["gJs+kf"]);
+    obj2[1] = constants.AGE_VERIFICATION_LINK;
+    obj2[2] = function onPress() {
       return callback(outer1_5.ClickAgeVerificationLink);
     };
-    tmp13 = callback(importDefault(11068), obj3);
-    const tmp17 = importDefault(11068);
+    tmp9Result = tmp9(tmp13Result, obj2);
   }
-  items2[2] = tmp13;
+  items2[2] = tmp9Result;
   if (isSpam) {
     isSpam = !isCoppa;
   }
   if (isSpam) {
-    const obj4 = {};
-    const intl4 = _require(1212).intl;
-    obj4.text = intl4.string(_require(1212).t.NBsJvm);
-    obj4.url = constants.SPAM_LINK;
-    obj4.onPress = function onPress() {
+    const obj3 = { text: null, url: null, onPress: null };
+    tmp13Result = tmp13(11092);
+    const intl4 = tmp2(1236).intl;
+    obj3[0] = intl4.string(tmp2(1236).t.NBsJvm);
+    obj3[1] = constants.SPAM_LINK;
+    obj3[2] = function onPress() {
       return callback(outer1_5.ClickSpamWebformLink);
     };
-    isSpam = callback(importDefault(11068), obj4);
-    const tmp23 = importDefault(11068);
+    isSpam = tmp9(tmp13Result, obj3);
   }
   items2[3] = isSpam;
-  let tmp26 = !isCoppa;
-  if (tmp26) {
-    const obj5 = {};
-    const intl5 = _require(1212).intl;
-    obj5.text = intl5.string(_require(1212).t["Vtyn/7"]);
-    obj5.url = str;
-    obj5.onPress = function onPress() {
+  let tmp9Result1 = !isCoppa;
+  if (!isCoppa) {
+    const obj4 = { text: null, url: null, onPress: null };
+    const intl5 = tmp2(1236).intl;
+    obj4[0] = intl5.string(tmp2(1236).t["Vtyn/7"]);
+    obj4[1] = str;
+    obj4[2] = function onPress() {
       return callback(outer1_5.ClickLearnMoreLink);
     };
-    tmp26 = callback(importDefault(11068), obj5);
-    const tmp30 = importDefault(11068);
+    tmp9Result1 = tmp9(tmp13(11092), obj4);
+    const tmp13Result1 = tmp13(11092);
   }
-  items2[4] = tmp26;
+  items2[4] = tmp9Result1;
   if (isDsaEligible) {
-    const obj6 = { variant: "text-xs/normal" };
-    const intl6 = _require(1212).intl;
-    obj6.children = intl6.format(_require(1212).t.WMUgCX, {});
-    isDsaEligible = callback(_require(4161).Text, obj6);
+    const obj5 = { variant: "text-xs/normal", children: null };
+    const intl6 = tmp2(1236).intl;
+    obj5[1] = intl6.format(tmp2(1236).t.WMUgCX, {});
+    isDsaEligible = tmp9(tmp2(4185).Text, obj5);
   }
+  const obj6 = { children: null };
   items2[5] = isDsaEligible;
-  obj.children = items2;
+  obj[1] = items2;
   items1[1] = closure_9(View, obj);
-  obj.children = items1;
-  return closure_9(_require(11063).AppealIngestionModalScreen, obj);
+  obj6[0] = items1;
+  return closure_9(_require(11087).AppealIngestionModalScreen, obj6);
 };

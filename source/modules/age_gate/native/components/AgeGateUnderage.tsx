@@ -1,34 +1,32 @@
-// Module ID: 14874
-// Function ID: 113292
+// Module ID: 14900
+// Function ID: 14901
 // Name: AgeGateUnderage
-// Dependencies: [31, 27, 653, 33, 4165, 689, 9169, 1456, 5121, 5127, 1212, 9194, 9197, 6763, 9193, 4161, 1921, 4578, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 9193, 1480, 5143, 5149, 1236, 9218, 9221, 6785, 9217, 4185, 1945, 4600, 2]
 // Exports: default
 
-// Module 14874 (AgeGateUnderage)
-import result from "result";
-import { View } from "get ActivityIndicator";
+// Module 14900 (AgeGateUnderage)
+import noop from "noop";
+import { View } from "Button";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { alignItems: "center", justifyContent: "center", flex: 1, padding: 16, paddingTop: 0 };
+({ jsx: closure_6, Fragment: error, jsxs: metroImportAll } = jsxProd);
+let closure_9 = createCacheKey.createStyles((arg0) => {
   let num = 0;
   if (arg0) {
     num = 80;
   }
-  obj.paddingBottom = num;
-  obj.backgroundColor = importDefault(689).colors.BACKGROUND_BASE_LOW;
-  obj.container = obj;
-  obj.header = { marginTop: 16 };
-  obj.body = { marginTop: 8, lineHeight: 20, textAlign: "center" };
-  obj.buttonWrapper = { width: "100%", marginTop: 24 };
+  let obj = { container: null, header: null, body: null, buttonWrapper: null };
+  obj = { alignItems: "center", justifyContent: "center", flex: 1, padding: 16, paddingTop: 0, paddingBottom: num, backgroundColor: importDefault(712).colors.BACKGROUND_BASE_LOW };
+  obj[0] = obj;
+  obj[1] = { marginTop: 16 };
+  obj[2] = { marginTop: 8, lineHeight: 20, textAlign: "center" };
+  obj[3] = { width: "100%", marginTop: 24 };
   return obj;
 });
 const result = require("ME").fileFinishedImporting("modules/age_gate/native/components/AgeGateUnderage.tsx");
@@ -50,21 +48,19 @@ export default function AgeGateUnderage(onClose) {
     flag2 = false;
   }
   let navigation;
-  const tmp = existingUser(flag2[6])();
-  const tmp2 = callback3(tmp);
+  const tmp3 = existingUser(flag2[6])();
+  const tmp4 = callback2(tmp3);
   let obj = onClose(flag2[7]);
   navigation = obj.useNavigation();
   const items = [onClose, existingUser, navigation, flag2];
   const layoutEffect = navigation.useLayoutEffect(() => {
-    const obj = {};
     if (existingUser) {
       let fn = () => null;
     } else {
-      fn = onClose(flag2[8]).getHeaderBackButton(onClose);
-      const obj2 = onClose(flag2[8]);
+      let obj = onClose(flag2[8]);
+      fn = obj.getHeaderBackButton(onClose);
     }
-    obj.headerLeft = fn;
-    obj.gestureEnabled = !flag2;
+    obj = { headerLeft: fn, gestureEnabled: !flag2 };
     navigation.setOptions(obj);
   }, items);
   let obj1 = onClose(flag2[9]);
@@ -80,50 +76,51 @@ export default function AgeGateUnderage(onClose) {
   } else {
     stringResult = string(t.nCB6Ga);
   }
-  obj = { style: tmp2.container };
-  let tmp9 = null;
-  if (!tmp) {
-    tmp9 = callback(existingUser(flag2[11]), {});
+  obj = { style: tmp4.container, children: null };
+  let tmp12 = null;
+  if (!tmp3) {
+    tmp12 = callback(tmp(tmp2[11]), {});
   }
-  const items1 = [tmp9, callback(existingUser(flag2[12]), {}), callback(onClose(flag2[13]).ShieldSpotIllustration, {}), , , ];
-  obj = { style: tmp2.header, children: stringResult };
+  const items1 = [tmp12, callback(existingUser(flag2[12]), {}), callback(onClose(flag2[13]).ShieldSpotIllustration, {}), , , ];
+  obj = { style: tmp4.header, children: stringResult };
   items1[3] = callback(existingUser(flag2[14]), obj);
-  obj1 = { style: tmp2.body, variant: "text-md/medium", color: "interactive-text-default" };
-  const intl2 = onClose(flag2[10]).intl;
+  obj1 = { style: tmp4.body, variant: "text-md/medium", color: "interactive-text-default", children: null };
+  const intl2 = tmp5(tmp2[10]).intl;
   if (flag) {
-    let stringResult1 = intl2.string(tmp14(tmp15[10]).t.GDQgHL);
+    let stringResult1 = intl2.string(tmp5(tmp2[10]).t.GDQgHL);
   } else {
-    let obj2 = {};
-    if (null == underageMessage) {
-      const intl3 = onClose(flag2[10]).intl;
-      underageMessage = intl3.string(onClose(flag2[10]).t.WqEH4D);
+    if (underageMessage == null) {
+      const intl3 = tmp5(tmp2[10]).intl;
+      underageMessage = intl3.string(tmp5(tmp2[10]).t.WqEH4D);
     }
-    obj2.underageMessage = underageMessage;
-    let obj6 = existingUser(flag2[16]);
-    obj2.helpURL = obj6.getArticleURL(HelpdeskArticles.AGE_GATE);
-    stringResult1 = intl2.format(tmp14(tmp15[10]).t.b0QzXe, obj2);
+    const obj2 = { underageMessage: null, helpURL: null };
+    obj2[0] = underageMessage;
+    obj2[1] = tmp(tmp2[16]).getArticleURL(HelpdeskArticles.AGE_GATE);
+    stringResult1 = intl2.format(tmp5(tmp2[10]).t.b0QzXe, obj2);
+    const tmpResult = tmp(tmp2[16]);
   }
-  obj1.children = stringResult1;
+  obj1[3] = stringResult1;
   items1[4] = callback(onClose(flag2[15]).Text, obj1);
-  let tmp22 = null;
+  let tmp10Result = null;
   if (existingUser) {
-    const obj3 = {};
-    const obj4 = { style: tmp2.body, variant: "text-md/medium", color: "interactive-text-default" };
-    const intl4 = onClose(flag2[10]).intl;
-    const obj5 = { days: 30 };
-    obj4.children = intl4.format(onClose(flag2[10]).t["3axQdB"], obj5);
-    const items2 = [callback(onClose(flag2[15]).Text, obj4), ];
-    obj6 = { style: tmp2.buttonWrapper };
-    const obj7 = { onPress: onClose };
-    const intl5 = onClose(flag2[10]).intl;
-    obj7.text = intl5.string(onClose(flag2[10]).t.JhDw5o);
-    obj7.grow = true;
-    obj6.children = callback(onClose(flag2[17]).Button, obj7);
-    items2[1] = callback(View, obj6);
-    obj3.children = items2;
-    tmp22 = callback2(closure_7, obj3);
+    const obj3 = { children: null };
+    const obj4 = { style: null, variant: "text-md/medium", color: "interactive-text-default", children: null };
+    obj4[0] = tmp4.body;
+    const intl4 = tmp5(tmp2[10]).intl;
+    obj4[3] = intl4.format(tmp5(tmp2[10]).t["3axQdB"], { days: 30 });
+    const items2 = [tmp14(tmp5(tmp2[15]).Text, obj4), ];
+    const obj5 = { style: null, children: null };
+    obj5[0] = tmp4.buttonWrapper;
+    const obj6 = { onPress: null, text: null, grow: true };
+    obj6[0] = onClose;
+    const intl5 = tmp5(tmp2[10]).intl;
+    obj6[1] = intl5.string(tmp5(tmp2[10]).t.JhDw5o);
+    obj5[1] = tmp14(tmp5(tmp2[17]).Button, obj6);
+    items2[1] = tmp14(tmp11, obj5);
+    obj3[0] = items2;
+    tmp10Result = tmp10(closure_7, obj3);
   }
-  items1[5] = tmp22;
-  obj.children = items1;
-  return callback2(View, obj);
+  items1[5] = tmp10Result;
+  obj[1] = items1;
+  return closure_8(View, obj);
 };

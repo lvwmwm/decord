@@ -1,26 +1,25 @@
-// Module ID: 642
-// Function ID: 7355
+// Module ID: 665
+// Function ID: 666
 // Name: getSystemLocale
-// Dependencies: [27, 643, 2]
+// Dependencies: [17, 666, 2]
 // Exports: getSystemLocale
 
-// Module 642 (getSystemLocale)
+// Module 665 (getSystemLocale)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/i18n/getSystemLocale.tsx");
 
 export const getSystemLocale = function getSystemLocale() {
-  const tmp = require(27) /* get ActivityIndicator */;
-  if ("android" === tmp.Platform.OS) {
-    let LocalizationManager = require(643) /* enforcing */.default;
+  const tmp3 = require(17) /* get ActivityIndicator */;
+  if ("android" === tmp3.Platform.OS) {
+    let LocalizationManager = require(666) /* enforcing */.default;
   } else {
-    LocalizationManager = tmp.NativeModules.LocalizationManager;
+    LocalizationManager = tmp3.NativeModules.LocalizationManager;
   }
-  let Language;
+  let str;
   if (null != LocalizationManager) {
-    Language = LocalizationManager.getConstants().Language;
+    str = LocalizationManager.getConstants().Language;
   }
-  let str = "";
-  if (null != Language) {
-    str = Language;
+  if (str == null) {
+    str = "";
   }
   return str;
 };

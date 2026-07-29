@@ -1,34 +1,38 @@
-// Module ID: 15837
-// Function ID: 121960
+// Module ID: 15872
+// Function ID: 15873
 // Name: FrameWebView
-// Dependencies: [31, 33, 10638, 10611, 2]
+// Dependencies: [19, 21, 10662, 10619, 2]
 // Exports: default
 
-// Module 15837 (FrameWebView)
-import result from "result";
+// Module 15872 (FrameWebView)
+import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/frames/native/FrameWebView.tsx");
+const result = require("getSafeArea").fileFinishedImporting("modules/frames/native/FrameWebView.tsx");
 
 export default function FrameWebView(applicationId) {
   applicationId = applicationId.applicationId;
-  let obj = Object.create(null);
-  obj.applicationId = 0;
-  const merged = Object.assign(applicationId, obj);
-  obj = applicationId(hadInvalidUrlError[2]);
+  const merged = Object.assign(applicationId, Object.create(null));
+  let hasInvalidUrlError;
+  let hadInvalidUrlError;
+  let obj = applicationId(hadInvalidUrlError[2]);
   const hasInvalidUrlErrorState = obj.useHasInvalidUrlErrorState();
-  const hasInvalidUrlError = hasInvalidUrlErrorState.hasInvalidUrlError;
+  hasInvalidUrlError = hasInvalidUrlErrorState.hasInvalidUrlError;
   hadInvalidUrlError = hasInvalidUrlErrorState.hadInvalidUrlError;
   const items = [hasInvalidUrlError, hadInvalidUrlError, applicationId];
   const effect = React.useEffect(() => {
-    let tmp = !hadInvalidUrlError && hasInvalidUrlError;
+    let tmp = !hadInvalidUrlError;
+    if (!hadInvalidUrlError) {
+      tmp = hasInvalidUrlError;
+    }
     if (tmp) {
       tmp = null != applicationId;
     }
     if (tmp) {
       let obj = hasInvalidUrlError(hadInvalidUrlError[3]);
-      obj = { applicationId };
+      obj = { applicationId: null };
+      obj[0] = applicationId;
       obj.leaveFrame(obj);
     }
   }, items);

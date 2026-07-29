@@ -1,10 +1,10 @@
-// Module ID: 8812
-// Function ID: 69571
+// Module ID: 8836
+// Function ID: 8837
 // Name: enforcing
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 // Exports: getInvalidAndroidDevice
 
-// Module 8812 (enforcing)
+// Module 8836 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 let obj = { SPEAKERPHONE: "SPEAKERPHONE", WIRED_HEADSET: "WIRED_HEADSET", EARPIECE: "EARPIECE", BLUETOOTH_HEADSET: "BLUETOOTH_HEADSET", INVALID: "INVALID" };
@@ -14,7 +14,6 @@ const result = require("set").fileFinishedImporting("../discord_common/js/packag
 export default enforcing;
 export const AudioDeviceType = obj;
 export const getInvalidAndroidDevice = function getInvalidAndroidDevice() {
-  const obj = { deviceType: 0, simpleDeviceType: null, deviceId: -1, deviceName: "Invalid" };
-  obj.simpleDeviceType = obj.INVALID;
+  obj = { deviceType: 0, simpleDeviceType: obj.INVALID, deviceId: -1, deviceName: "Invalid" };
   return obj;
 };

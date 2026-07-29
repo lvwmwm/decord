@@ -1,74 +1,75 @@
-// Module ID: 13505
-// Function ID: 103653
+// Module ID: 13528
+// Function ID: 13529
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [4068, 653, 4226, 8150, 10595, 10592, 13506, 2]
+// Dependencies: [4092, 676, 4250, 8174, 10629, 10626, 13529, 2]
 
-// Module 13505 (RPC_LOCAL_SCOPE)
+// Module 13528 (RPC_LOCAL_SCOPE)
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import ME from "ME";
 import { DeviceTypes } from "DesktopSources";
 
+let RPCCommands;
 let RPC_LOCAL_SCOPE;
 let RPC_SCOPE_CONFIG;
+let c3;
 ({ RPC_LOCAL_SCOPE, RPC_SCOPE_CONFIG } = RPC_SCOPE_CONFIG);
-const RPCErrors = ME.RPCErrors;
+({ RPCErrors: c3, RPCCommands } = ME);
 let obj = {};
-obj = {};
+obj = { scope: null, validation: null, handler: null };
 obj = {};
 let items = [require("set").OAuth2Scopes.RPC, RPC_LOCAL_SCOPE];
 obj[RPC_SCOPE_CONFIG.ANY] = items;
-obj.scope = obj;
-obj.validation = function validation(array) {
-  let obj = importDefault(10595)(array);
-  obj = {};
+obj[0] = obj;
+obj[1] = function validation(array) {
+  let obj = importDefault(10629)(array);
+  obj = { devices: null };
   let arrayResult = array.array();
   const requiredResult = obj.required();
-  obj = {};
-  const obj5 = importDefault(10595)(array);
+  obj = { type: null, id: null, vendor: null, model: null, related: null, echo_cancellation: null, noise_suppression: null, automatic_gain_control: null, hardware_mute: null };
+  const obj5 = importDefault(10629)(array);
   const stringResult = array.string();
   const items = [, , ];
   ({ AUDIO_INPUT: arr[0], AUDIO_OUTPUT: arr[1], VIDEO_INPUT: arr[2] } = DeviceTypes);
-  obj.type = array.string().required().valid(items);
+  obj[0] = array.string().required().valid(items);
   const requiredResult1 = array.string().required();
   const stringResult1 = array.string();
-  obj.id = array.string().required().min(1);
+  obj[1] = array.string().required().min(1);
   const requiredResult2 = array.string().required();
-  const obj11 = importDefault(10595)(array);
-  const obj1 = {};
-  const requiredResult3 = importDefault(10595)(array).required();
-  obj1.name = array.string().min(1);
+  const obj11 = importDefault(10629)(array);
+  const obj1 = { name: null, url: null };
+  const requiredResult3 = importDefault(10629)(array).required();
+  obj1[0] = array.string().min(1);
   const stringResult2 = array.string();
-  obj1.url = array.string().min(1);
-  obj.vendor = requiredResult3.keys(obj1);
+  obj1[1] = array.string().min(1);
+  obj[2] = requiredResult3.keys(obj1);
   const stringResult3 = array.string();
-  const obj16 = importDefault(10595)(array);
-  const obj2 = {};
-  const requiredResult4 = importDefault(10595)(array).required();
-  obj2.name = array.string().min(1);
+  const obj16 = importDefault(10629)(array);
+  const obj2 = { name: null, url: null };
+  const requiredResult4 = importDefault(10629)(array).required();
+  obj2[0] = array.string().min(1);
   const stringResult4 = array.string();
-  obj2.url = array.string().min(1);
-  obj.model = requiredResult4.keys(obj2);
+  obj2[1] = array.string().min(1);
+  obj[3] = requiredResult4.keys(obj2);
   arrayResult = array.array();
   const stringResult5 = array.string();
-  obj.related = arrayResult.items(array.string().min(1));
-  obj.echo_cancellation = array.boolean();
-  obj.noise_suppression = array.boolean();
-  obj.automatic_gain_control = array.boolean();
-  obj.hardware_mute = array.boolean();
-  obj.devices = arrayResult.items(obj5.keys(obj));
+  obj[4] = arrayResult.items(array.string().min(1));
+  obj[5] = array.boolean();
+  obj[6] = array.boolean();
+  obj[7] = array.boolean();
+  obj[8] = array.boolean();
+  obj[0] = arrayResult.items(obj5.keys(obj));
   return requiredResult.keys(obj);
 };
-obj.handler = function handler(socket) {
+obj[2] = function handler(socket) {
   socket = socket.socket;
   const devices = socket.args.devices;
   if (null == socket.application.id) {
-    let tmp6 = importDefault(10592);
-    let obj = { errorCode: RPCErrors.INVALID_COMMAND };
-    const prototype = tmp6.prototype;
-    tmp6 = new tmp6(obj, "No application.");
-    throw tmp6;
+    let obj = { errorCode: null };
+    obj[0] = constants.INVALID_COMMAND;
+    const tmp10 = new importDefault(10626)(obj, "No application.");
+    throw tmp10;
   } else {
-    obj = devices(13506);
+    obj = devices(13529);
     obj.setCertifiedDevices(socket.application.id, devices.map((type) => {
       const related = type.related;
       return {
@@ -78,7 +79,7 @@ obj.handler = function handler(socket) {
         model: type.model,
         related: related.filter((arg0) => {
           let closure_0 = arg0;
-          return outer1_0.some((id) => id.id === closure_0);
+          return closure_0.some((id) => id.id === closure_0);
         }),
         echoCancellation: type.echo_cancellation,
         noiseSuppression: type.noise_suppression,
@@ -88,7 +89,7 @@ obj.handler = function handler(socket) {
     }));
   }
 };
-obj[ME.RPCCommands.SET_CERTIFIED_DEVICES] = obj;
+obj[RPCCommands.SET_CERTIFIED_DEVICES] = obj;
 const result = require("DesktopSources").fileFinishedImporting("modules/rpc/server/commands/certifiedDevices.tsx");
 
 export default obj;

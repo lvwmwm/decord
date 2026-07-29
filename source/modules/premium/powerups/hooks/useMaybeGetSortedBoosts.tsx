@@ -1,19 +1,19 @@
-// Module ID: 11647
-// Function ID: 90329
+// Module ID: 11671
+// Function ID: 11672
 // Name: useMaybeGetSortedBoosts
-// Dependencies: [57, 31, 11629, 4993, 1918, 1838, 11648, 566, 11649, 4061, 21, 1212, 2]
+// Dependencies: [32, 19, 11653, 5015, 1942, 1862, 11672, 589, 11673, 4085, 11, 1236, 2]
 // Exports: default, useGetBoostUserConfig
 
-// Module 11647 (useMaybeGetSortedBoosts)
+// Module 11671 (useMaybeGetSortedBoosts)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import noop from "noop";
+import handleModifyingAppliedBoostStart from "handleModifyingAppliedBoostStart";
+import handleConnectionReset from "handleConnectionReset";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/powerups/hooks/useMaybeGetSortedBoosts.tsx");
+const result = require("handleModifyingAppliedBoostStart").fileFinishedImporting("modules/premium/powerups/hooks/useMaybeGetSortedBoosts.tsx");
 
 export default function useMaybeGetSortedBoosts(arg0, arg1) {
   const _require = arg0;
@@ -24,7 +24,7 @@ export default function useMaybeGetSortedBoosts(arg0, arg1) {
   const items1 = [arg0];
   const stateFromStoresArray = _require(expiringBoostsEnabled[7]).useStateFromStoresArray(items, () => {
     let appliedGuildBoostsForGuild = memo.getAppliedGuildBoostsForGuild(closure_0);
-    if (null == appliedGuildBoostsForGuild) {
+    if (appliedGuildBoostsForGuild == null) {
       appliedGuildBoostsForGuild = [];
     }
     return appliedGuildBoostsForGuild;
@@ -32,18 +32,24 @@ export default function useMaybeGetSortedBoosts(arg0, arg1) {
   first = stateFromStoresArray(first.useState(() => Date.now()), 1)[0];
   const items2 = [stateFromStoresArray, arg1, first, expiringBoostsEnabled];
   memo = first.useMemo(() => {
-    const mapped = stateFromStoresArray.map((boost) => {
-      if (outer1_2) {
-        let boostLifecycleInfo = callback(expiringBoostsEnabled[8]).getBoostLifecycleInfo(boost, outer1_4);
-        const obj2 = callback(expiringBoostsEnabled[8]);
+    const mapped = stateFromStoresArray.map((ended) => {
+      if (closure_2) {
+        let boostLifecycleInfo = outer1_0(outer1_2[8]).getBoostLifecycleInfo(ended, noop);
+        const obj2 = outer1_0(outer1_2[8]);
       } else {
         boostLifecycleInfo = { phase: "gave" };
       }
-      const boostLifecycleTimestamp = callback(expiringBoostsEnabled[8]).getBoostLifecycleTimestamp(boost, boostLifecycleInfo);
+      const boostLifecycleTimestamp = outer1_0(outer1_2[8]).getBoostLifecycleTimestamp(ended, boostLifecycleInfo);
       if ("expiring" === boostLifecycleInfo.phase) {
-        let obj = { boost, phase: "expiring", sortKey: boostLifecycleTimestamp, endsAt: boostLifecycleInfo.endsAt };
+        let obj = { boost: null, phase: "expiring", sortKey: null, endsAt: null };
+        obj[0] = ended;
+        obj[2] = boostLifecycleTimestamp;
+        obj[3] = boostLifecycleInfo.endsAt;
       } else {
-        obj = { boost, phase: boostLifecycleInfo.phase, sortKey: boostLifecycleTimestamp };
+        obj = { boost: null, phase: null, sortKey: null };
+        obj[0] = ended;
+        obj[1] = boostLifecycleInfo.phase;
+        obj[2] = boostLifecycleTimestamp;
       }
       return obj;
     });
@@ -66,7 +72,7 @@ export default function useMaybeGetSortedBoosts(arg0, arg1) {
   const items5 = [arg0, stateFromStoresArray1];
   const effect = first.useEffect(() => {
     if (stateFromStoresArray1.length > 0) {
-      const item = stateFromStoresArray1.forEach((id) => stateFromStoresArray1.requestMember(outer1_0, id));
+      const item = stateFromStoresArray1.forEach((id) => outer1_6.requestMember(closure_0, id));
     }
   }, items5);
   const obj3 = _require(expiringBoostsEnabled[7]);
@@ -74,7 +80,7 @@ export default function useMaybeGetSortedBoosts(arg0, arg1) {
   stateFromStores = _require(expiringBoostsEnabled[7]).useStateFromStores(items6, () => {
     const guild = memo1.getGuild(closure_0);
     let prop;
-    if (null != guild) {
+    if (guild != null) {
       prop = guild.premiumSubscriberCount;
     }
     return prop;
@@ -97,7 +103,8 @@ export default function useMaybeGetSortedBoosts(arg0, arg1) {
     }
     if (tmp) {
       let obj = callback(expiringBoostsEnabled[9]);
-      obj = { includeEnded: expiringBoostsEnabled };
+      obj = { includeEnded: null };
+      obj[0] = expiringBoostsEnabled;
       const appliedGuildBoostsForGuild = obj.fetchAppliedGuildBoostsForGuild(callback, obj);
     }
   }, items10);
@@ -105,45 +112,42 @@ export default function useMaybeGetSortedBoosts(arg0, arg1) {
 };
 export const useGetBoostUserConfig = function useGetBoostUserConfig(boost) {
   const _require = boost;
-  let obj = importDefault(21);
+  let obj = importDefault(11);
   const date = new Date(obj.extractTimestamp(boost.id));
-  const items = [closure_7];
+  const items = [trackCommunicationDisabled];
   const items1 = [boost];
-  const stateFromStoresObject = _require(566).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = _require(589).useStateFromStoresObject(items, () => {
     const member = outer1_7.getMember(boost.guildId, boost.userId);
-    const obj = {};
     let nick = outer1_7.getNick(boost.guildId, boost.userId);
-    if (null == nick) {
+    if (nick == null) {
       const user = boost.user;
       let username;
-      if (null != user) {
+      if (user != null) {
         username = user.username;
       }
       nick = username;
     }
-    if (null == nick) {
+    if (nick == null) {
       const intl = boost(outer1_2[11]).intl;
       nick = intl.string(boost(outer1_2[11]).t["30mdIx"]);
     }
-    obj.username = nick;
+    const obj = { username: nick, roleColor: null, roleColorStrings: null };
     let colorString;
-    if (null != member) {
+    if (member != null) {
       colorString = member.colorString;
     }
-    let tmp8 = null;
-    if (null != colorString) {
-      tmp8 = colorString;
+    if (colorString == null) {
+      colorString = null;
     }
-    obj.roleColor = tmp8;
+    obj[1] = colorString;
     let colorStrings;
-    if (null != member) {
+    if (member != null) {
       colorStrings = member.colorStrings;
     }
-    let tmp10 = null;
-    if (null != colorStrings) {
-      tmp10 = colorStrings;
+    if (colorStrings == null) {
+      colorStrings = null;
     }
-    obj.roleColorStrings = tmp10;
+    obj[2] = colorStrings;
     return obj;
   }, items1);
   obj = { timestamp: date, username: stateFromStoresObject.username, roleColor: stateFromStoresObject.roleColor, roleColorStrings: stateFromStoresObject.roleColorStrings };

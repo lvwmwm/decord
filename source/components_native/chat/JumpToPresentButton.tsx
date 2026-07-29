@@ -1,33 +1,32 @@
-// Module ID: 11405
-// Function ID: 88448
+// Module ID: 11429
+// Function ID: 11430
 // Name: JumpToPresentButton
-// Dependencies: [31, 27, 9286, 4843, 4384, 33, 4165, 689, 477, 3869, 1324, 566, 10665, 1212, 11406, 11407, 6661, 11408, 2]
+// Dependencies: [19, 17, 9310, 4865, 4407, 21, 4189, 712, 500, 3893, 1348, 589, 10689, 1236, 11430, 11431, 6682, 11432, 2]
 // Exports: default
 
-// Module 11405 (JumpToPresentButton)
-import "result";
-import { View } from "get ActivityIndicator";
-import getChatInputContainerHeight from "getChatInputContainerHeight";
-import { useChatInputContainerHeight as closure_5 } from "getChatInputContainerHeight";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 11429 (JumpToPresentButton)
+import "noop";
+import { View } from "memoResult1";
+import updateChatInputContainerHeight from "updateChatInputContainerHeight";
+import { useChatInputContainerHeight as closure_5 } from "updateChatInputContainerHeight";
+import _handleConnectionOpen from "_handleConnectionOpen";
+import reinjectEphemerals from "reinjectEphemerals";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
-import set from "getChatInputContainerHeight";
+import set from "updateChatInputContainerHeight";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round, position: "absolute", right: require("_createForOfIteratorHelperLoose").modules.mobile.JUMP_TO_PRESENT_RIGHT_SPACING };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-let obj1 = { bottom: "100%", marginBottom: require("_createForOfIteratorHelperLoose").modules.mobile.JUMP_TO_PRESENT_BOTTOM_SPACING, pointerEvents: "box-none" };
-_createForOfIteratorHelperLoose.containerIOS = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { container: null, containerIOS: null };
+createCacheKey = { borderRadius: require("Themes").radii.round, position: "absolute", right: require("Themes").modules.mobile.JUMP_TO_PRESENT_RIGHT_SPACING };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { bottom: "100%", marginBottom: require("Themes").modules.mobile.JUMP_TO_PRESENT_BOTTOM_SPACING, pointerEvents: "box-none" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_10 = set.isIOS() ? (() => null) : ((arg0) => {
-  let obj = require(3869) /* map */;
-  obj = {};
-  const token = obj.useToken(importDefault(689).modules.mobile.JUMP_TO_PRESENT_BOTTOM_SPACING);
-  obj.bottom = callback2(arg0) + token;
+  let obj = require(3893) /* map */;
+  obj = { bottom: null };
+  const token = obj.useToken(importDefault(712).modules.mobile.JUMP_TO_PRESENT_BOTTOM_SPACING);
+  obj[0] = callback2(arg0) + token;
   return obj;
 });
 const result = set.fileFinishedImporting("components_native/chat/JumpToPresentButton.tsx");
@@ -36,62 +35,70 @@ export default function JumpToPresentButton(channelId) {
   channelId = channelId.channelId;
   const screenIndex = channelId.screenIndex;
   const onJumpToPresent = channelId.onJumpToPresent;
-  const tmp = _createForOfIteratorHelperLoose();
-  let tmp2 = callback3(screenIndex);
-  let obj = channelId(566);
-  const items = [_isNativeReflectConstruct];
-  const dependencyMap = obj.useStateFromStores(items, () => outer1_6.isConnected(), []);
-  let tmp4 = callback((showingAutoComplete) => {
-    let tmp2 = !tmp;
-    if (!!closure_2) {
+  let dependencyMap;
+  let tmp = createCacheKey();
+  const tmp2 = callback3(screenIndex);
+  let tmp3Result = dependencyMap;
+  let obj = channelId(589);
+  const items = [_handleConnectionOpen];
+  dependencyMap = obj.useStateFromStores(items, () => connected.isConnected(), []);
+  const tmp7 = callback((showingAutoComplete) => {
+    let tmp = closure_2;
+    if (tmp) {
       showingAutoComplete = showingAutoComplete.showingAutoComplete;
-      let tmp4 = !showingAutoComplete.get(screenIndex);
-      if (tmp4) {
+      const value = showingAutoComplete.get(screenIndex);
+      let tmp5 = !value;
+      if (!value) {
         const showJumpToPresentButtonChannelId = showingAutoComplete.showJumpToPresentButtonChannelId;
-        tmp4 = showJumpToPresentButtonChannelId.get(screenIndex) === channelId;
+        tmp5 = showJumpToPresentButtonChannelId.get(tmp3) === channelId;
       }
-      tmp2 = tmp4;
+      tmp = tmp5;
+      tmp3 = screenIndex;
     }
-    return tmp2;
+    return tmp;
   });
-  let obj1 = channelId(10665);
+  let obj1 = channelId(10689);
   const isVoicePanelMounted = obj1.useIsVoicePanelMounted(channelId);
-  const tmp3 = screenIndex(1324)("JumpToPresentButton");
-  const isVoicePanelOpen = channelId(10665).useIsVoicePanelOpen(channelId);
-  const obj3 = channelId(10665);
-  const items1 = [closure_7];
-  const stateFromStores = channelId(566).useStateFromStores(items1, () => null != outer1_7.getMessages(channelId).jumpReturnTargetId);
-  if (!tmp4) {
+  let tmp5 = screenIndex(1348)("JumpToPresentButton");
+  const isVoicePanelOpen = channelId(10689).useIsVoicePanelOpen(channelId);
+  const obj3 = channelId(10689);
+  const items1 = [reinjectEphemerals];
+  const stateFromStores = channelId(589).useStateFromStores(items1, () => null != outer1_7.getMessages(channelId).jumpReturnTargetId);
+  if (!tmp7) {
     return null;
   }
   let containerIOS = tmp2;
-  if (null == tmp2) {
+  if (tmp2 == null) {
     containerIOS = tmp.containerIOS;
   }
-  const intl = channelId(1212).intl;
+  const intl = tmp6(1236).intl;
   const string = intl.string;
-  const t = channelId(1212).t;
+  const t = tmp6(1236).t;
   if (stateFromStores) {
     let stringResult = string(t.dpjpOp);
   } else {
     stringResult = string(t.gpoQsB);
   }
-  obj = { style: items2 };
+  obj = { style: items2, children: null };
   items2 = [tmp.container, containerIOS];
-  if (tmp4) {
-    if (tmp3) {
-      obj = { accessibilityLabel: stringResult };
-      stringResult = screenIndex(11407);
-      obj.icon = stringResult;
-      obj.onPress = onJumpToPresent;
-      let tmp12Result = tmp12(screenIndex(11406), obj);
-      const tmp21 = screenIndex(11406);
+  if (tmp7) {
+    if (tmp5) {
+      obj = { accessibilityLabel: null, icon: null, onPress: null };
+      obj[0] = stringResult;
+      tmp3Result = tmp3(11430);
+      tmp3Result = tmp3(11431);
+      obj[1] = tmp3Result;
+      obj[2] = onJumpToPresent;
+      let tmp13Result = tmp13(tmp3Result, obj);
     } else {
-      obj1 = { accessibilityLabel: stringResult, onPress: onJumpToPresent, icon: screenIndex(11407), variant: "primary-overlay" };
-      tmp12Result = tmp12(channelId(6661).IconButton, obj1);
+      obj1 = { accessibilityLabel: null, onPress: null, icon: null, variant: "primary-overlay" };
+      obj1[0] = stringResult;
+      obj1[1] = onJumpToPresent;
+      obj1[2] = tmp3(11431);
+      tmp13Result = tmp13(tmp6(6682).IconButton, obj1);
     }
   } else {
-    obj.children = tmp12(channelId(11408).MemoedVoicePanelDismissChatButton, {});
-    return tmp10(tmp11, obj);
+    obj[1] = tmp13(tmp6(11432).MemoedVoicePanelDismissChatButton, {});
+    return tmp13(tmp14, obj);
   }
 };

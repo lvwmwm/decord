@@ -1,15 +1,15 @@
-// Module ID: 13952
-// Function ID: 106667
+// Module ID: 13973
+// Function ID: 13974
 // Name: route
-// Dependencies: [7733, 653, 10099, 1212, 13953, 2]
+// Dependencies: [7756, 676, 10120, 1236, 13974, 2]
 
-// Module 13952 (route)
+// Module 13973 (route)
 import createToggle from "createToggle";
 
 obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.xrmhRX);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.xrmhRX);
   },
   parent: require("MobileSetting").MobileSetting.AUTHORIZED_APP,
   unsearchable: true,
@@ -18,7 +18,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.AUTHORIZED_APP_PERMISSIONS,
   getComponent() {
-    return require(13953) /* AuthorizedAppPermissionsScreen */.default;
+    return require(13974) /* AuthorizedAppPermissionsScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);

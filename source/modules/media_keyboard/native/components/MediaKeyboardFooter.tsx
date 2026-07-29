@@ -1,59 +1,66 @@
-// Module ID: 9671
-// Function ID: 75261
+// Module ID: 9693
+// Function ID: 9694
 // Name: FOOTER_HEIGHT
-// Dependencies: [31, 27, 33, 4165, 689, 9661, 4161, 1212, 4578, 9672, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 9683, 4185, 1236, 4600, 9694, 2]
 
-// Module 9671 (FOOTER_HEIGHT)
+// Module 9693 (FOOTER_HEIGHT)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ View: closure_3, Image: closure_4, ActivityIndicator: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let obj = {};
-obj = { padding: require("_createForOfIteratorHelperLoose").space.PX_16, height: 280, alignItems: "center" };
-obj.container = obj;
-obj.label = { textAlign: "center", marginBottom: 16 };
-_createForOfIteratorHelperLoose = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_32, height: require("_createForOfIteratorHelperLoose").space.PX_48 };
-obj.buttonWrapper = _createForOfIteratorHelperLoose;
-obj.loadingSpinner = { color: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGHEST, margin: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let closure_8 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj2 = { color: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGHEST, margin: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ View: c3, Image: c4, ActivityIndicator: c5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let obj = { container: null, label: null, buttonWrapper: null, loadingSpinner: null };
+obj = { padding: require("Themes").space.PX_16, height: 280, alignItems: "center" };
+obj[0] = obj;
+obj[1] = { textAlign: "center", marginBottom: 16 };
+createCacheKey = { marginBottom: require("Themes").space.PX_32, height: require("Themes").space.PX_48 };
+obj[2] = createCacheKey;
+obj[3] = { color: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, margin: require("Themes").space.PX_16 };
+let closure_8 = createCacheKey.createStyles(obj);
+let obj2 = { color: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, margin: require("Themes").space.PX_16 };
 const memoResult = importAllResult.memo(function MediaKeyboardFooter(arg0) {
   let disabled;
   let onViewAll;
   ({ disabled, onViewAll } = arg0);
   const tmp = callback3();
-  let obj = importDefault(9661);
+  let obj = importDefault(9683);
   if (obj.useHasReachedEnd()) {
-    obj = { style: tmp.container };
-    obj = { variant: "text-sm/normal", style: tmp.label };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.children = intl.string(require(1212) /* getSystemLocale */.t.mKSwAW);
-    const items = [callback(require(4161) /* Text */.Text, obj), , ];
-    const obj1 = { style: tmp.buttonWrapper };
-    const obj2 = { variant: "primary", size: "sm", onPress: onViewAll };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj2.text = intl2.string(require(1212) /* getSystemLocale */.t.ZT24In);
-    obj2.disabled = disabled;
-    obj1.children = callback(require(4578) /* Button */.Button, obj2);
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj = { variant: "text-sm/normal", style: null, children: null };
+    obj[1] = tmp.label;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[2] = intl.string(require(1236) /* getSystemLocale */.t.mKSwAW);
+    const items = [callback(require(4185) /* Text */.Text, obj), , ];
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp.buttonWrapper;
+    const obj2 = { variant: "primary", size: "sm", onPress: null, text: null, disabled: null };
+    obj2[2] = onViewAll;
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj2[3] = intl2.string(require(1236) /* getSystemLocale */.t.ZT24In);
+    obj2[4] = disabled;
+    obj1[1] = callback(require(4600) /* Button */.Button, obj2);
     items[1] = callback(closure_3, obj1);
-    const obj3 = { source: importDefault(9672) };
+    const obj3 = { source: null };
+    obj3[0] = importDefault(9694);
     items[2] = callback(closure_4, obj3);
-    obj.children = items;
-    let tmp4 = callback2(closure_3, obj);
+    obj[1] = items;
+    let tmp6 = callback2(closure_3, obj);
   } else {
-    const obj4 = { style: tmp.loadingSpinner, size: "large", color: tmp.loadingSpinner.color };
-    tmp4 = callback(closure_5, obj4);
+    const obj4 = { style: null, size: "large", color: null };
+    obj4[0] = tmp.loadingSpinner;
+    obj4[2] = tmp.loadingSpinner.color;
+    tmp6 = callback(closure_5, obj4);
   }
-  return tmp4;
+  return tmp6;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardFooter.tsx");
 

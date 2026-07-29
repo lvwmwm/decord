@@ -1,45 +1,47 @@
-// Module ID: 8436
-// Function ID: 67262
+// Module ID: 8460
+// Function ID: 8461
 // Name: styles
-// Dependencies: [31, 27, 1922, 1194, 1918, 8437, 33, 4165, 689, 566, 6004, 21, 1387, 8438, 8439, 3866, 4133, 6669, 5548, 4161, 4695, 8440, 1212, 2]
+// Dependencies: [19, 17, 1946, 1218, 1942, 8461, 21, 4189, 712, 589, 6022, 11, 1411, 8462, 8463, 3890, 4157, 6690, 5566, 4185, 4717, 8464, 1236, 2]
 // Exports: default
 
-// Module 8436 (styles)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 8460 (styles)
+import Text from "Text";
+import { View } from "transitionToGuild";
+import _getSystemLocale from "_getSystemLocale";
+import fetchFingerprint from "fetchFingerprint";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
 import { getBadgeTooltip } from "getBadgeTooltip";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "GuildBadgeV2";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_9;
+let c10;
+let c9;
 const require = arg1;
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = { header: { paddingHorizontal: 16, marginTop: -32, display: "flex", flexDirection: "column", gap: 0 } };
-_createForOfIteratorHelperLoose = { width: 86, height: 86, borderRadius: 28.666666666666668, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden" };
-_createForOfIteratorHelperLoose.avatarBackground = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.members = { display: "flex", flexDirection: "row", gap: 8 };
-_createForOfIteratorHelperLoose.memberCount = { display: "flex", flexDirection: "row", alignItems: "center", gap: 4 };
-let obj1 = { width: 8, height: 8, borderRadius: 4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_OFFLINE };
-_createForOfIteratorHelperLoose.dot = obj1;
-let obj2 = { width: 8, height: 8, borderRadius: 4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.TEXT_STATUS_ONLINE };
-_createForOfIteratorHelperLoose.dotOnline = obj2;
-_createForOfIteratorHelperLoose.established = { display: "flex" };
-_createForOfIteratorHelperLoose.nameRow = { marginTop: 4, display: "flex", flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose.guildName = { flexShrink: 1 };
-_createForOfIteratorHelperLoose.guildIcon = { marginLeft: 8, height: 24, width: 24 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileHeader.tsx");
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { header: { paddingHorizontal: 16, marginTop: -32, display: "flex", flexDirection: "column", gap: 0 }, avatarBackground: null, members: null, memberCount: null, dot: null, dotOnline: null, established: null, nameRow: null, guildName: null, guildIcon: null };
+createCacheKey = { width: 86, height: 86, borderRadius: 28.666666666666668, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden" };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { display: "flex", flexDirection: "row", gap: 8 };
+createCacheKey[3] = { display: "flex", flexDirection: "row", alignItems: "center", gap: 4 };
+createCacheKey[4] = { width: 8, height: 8, borderRadius: 4, backgroundColor: require("Themes").colors.TEXT_STATUS_OFFLINE };
+let obj1 = { width: 8, height: 8, borderRadius: 4, backgroundColor: require("Themes").colors.TEXT_STATUS_OFFLINE };
+createCacheKey[5] = { width: 8, height: 8, borderRadius: 4, backgroundColor: require("Themes").colors.TEXT_STATUS_ONLINE };
+createCacheKey[6] = { display: "flex" };
+createCacheKey[7] = { marginTop: 4, display: "flex", flexDirection: "row", alignItems: "center" };
+createCacheKey[8] = { flexShrink: 1 };
+createCacheKey[9] = { marginLeft: 8, height: 24, width: 24 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { width: 8, height: 8, borderRadius: 4, backgroundColor: require("Themes").colors.TEXT_STATUS_ONLINE };
+const result = require("_getSystemLocale").fileFinishedImporting("modules/guild_profile/native/components/GuildProfileHeader.tsx");
 
 export default function GuildProfileHeader(icon) {
   const profile = icon.profile;
-  const tmp = _createForOfIteratorHelperLoose();
+  let id;
+  let stateFromStores1;
+  let tmp = createCacheKey();
   let obj = profile(stateFromStores1[9]);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.locale);
+  const items = [_getSystemLocale];
+  const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
   let obj1 = profile(stateFromStores1[10]);
   let obj2 = id(stateFromStores1[11]);
   const establishedDate = obj1.getEstablishedDate(obj2.extractTimestamp(profile.id), stateFromStores);
@@ -51,34 +53,35 @@ export default function GuildProfileHeader(icon) {
     let tooltipTitle;
     let obj = profile(stateFromStores1[12]);
     const fromGuildProfileResult = obj.fromGuildProfile(profile);
+    const tmp = stateFromStores1;
     const guildTraits = profile(stateFromStores1[13]).getGuildTraits(fromGuildProfileResult);
     const obj2 = profile(stateFromStores1[13]);
     const obj3 = profile(stateFromStores1[14]);
     ({ tooltipTitle, tooltipSubtitle } = outer1_8(profile(stateFromStores1[14]).getBadgeCategory(guildTraits), guildTraits.visibility));
-    if (!tmp4) {
-      obj = { key: "guild-badge-tooltip" };
-      if (null != tooltipSubtitle) {
-        tooltipTitle = tooltipSubtitle;
+    if (!tmp5) {
+      if (tooltipSubtitle == null) {
+        tooltipSubtitle = tooltipTitle;
       }
-      obj.content = tooltipTitle;
-      id(stateFromStores1[15]).open(obj);
-      const obj4 = id(stateFromStores1[15]);
+      obj = { key: "guild-badge-tooltip", content: null };
+      obj[1] = tooltipSubtitle;
+      id(tmp[15]).open(obj);
+      const obj4 = id(tmp[15]);
     }
   }, items1);
   let obj4 = profile(stateFromStores1[9]);
-  const items2 = [closure_7, closure_6];
+  const items2 = [trackCommunicationDisabled, fetchFingerprint];
   const items3 = [id];
   stateFromStores1 = obj4.useStateFromStores(items2, () => {
     const member = outer1_7.getMember(id, outer1_6.getId());
     let joinedAt;
-    if (null != member) {
+    if (member != null) {
       joinedAt = member.joinedAt;
     }
     return null != joinedAt;
   }, items3);
   const items4 = [id, stateFromStores1];
-  obj = { style: tmp.header };
-  obj = { style: tmp.avatarBackground };
+  obj = { style: tmp.header, children: null };
+  obj = { style: tmp.avatarBackground, children: null };
   const callback1 = React.useCallback(() => {
     if (stateFromStores1) {
       const _HermesInternal = HermesInternal;
@@ -88,55 +91,51 @@ export default function GuildProfileHeader(icon) {
       const obj2 = profile(stateFromStores1[17]);
     }
   }, items4);
-  obj1 = { icon: icon.guildIconSource };
+  obj1 = { icon: icon.guildIconSource, size: null, animate: true, value: null, selected: false };
   let fromGuildProfileResult = obj3.fromGuildProfile(profile);
-  const tmp10 = callback;
-  obj1.size = profile(stateFromStores1[18]).GuildIconSizes.XXLARGE;
-  obj1.animate = true;
-  obj1.value = profile.name;
-  obj1.selected = false;
-  obj.children = callback(id(stateFromStores1[18]), obj1);
+  const tmp5 = id;
+  obj1[1] = profile(stateFromStores1[18]).GuildIconSizes.XXLARGE;
+  obj1[3] = profile.name;
+  obj[1] = callback(id(stateFromStores1[18]), obj1);
   const items5 = [callback(View, obj), , , ];
-  obj2 = { style: tmp.nameRow };
-  obj3 = { onPress: null, style: null, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", lineClamp: 1 };
-  let tmp12;
+  obj2 = { style: tmp.nameRow, children: null };
+  let tmp15;
   if (stateFromStores1) {
-    tmp12 = callback1;
+    tmp15 = callback1;
   }
-  obj3.onPress = tmp12;
-  obj3.style = tmp.guildName;
-  obj3.children = profile.name;
-  const items6 = [tmp10(profile(stateFromStores1[19]).Text, obj3), ];
-  obj4 = { onPress: callback, children: callback(id(stateFromStores1[21]), { guild: fromGuildProfileResult, style: tmp.guildIcon }) };
+  obj3 = { onPress: tmp15, style: tmp.guildName, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: profile.name };
+  const items6 = [callback(profile(stateFromStores1[19]).Text, obj3), ];
+  obj4 = { onPress: callback, children: null };
+  obj4[1] = callback(tmp5(stateFromStores1[21]), { guild: fromGuildProfileResult, style: tmp.guildIcon });
   items6[1] = callback(profile(stateFromStores1[20]).PressableHighlight, obj4);
-  obj2.children = items6;
-  items5[1] = callback2(View, obj2);
-  const obj6 = { style: tmp.members };
-  const obj7 = { style: tmp.memberCount };
+  obj2[1] = items6;
+  items5[1] = closure_10(View, obj2);
+  const obj6 = { style: tmp.members, children: null };
+  const obj7 = { style: tmp.memberCount, children: null };
   const items7 = [callback(View, { style: tmp.dotOnline }), ];
-  const obj9 = { variant: "text-md/medium", color: "text-default" };
-  const intl = profile(stateFromStores1[22]).intl;
-  obj9.children = intl.format(profile(stateFromStores1[22]).t["LC+S+m"], { membersOnline: profile.onlineCount });
+  const obj9 = { variant: "text-md/medium", color: "text-default", children: null };
+  const intl = tmp2(tmp3[22]).intl;
+  obj9[2] = intl.format(profile(stateFromStores1[22]).t["LC+S+m"], { membersOnline: profile.onlineCount });
   items7[1] = callback(profile(stateFromStores1[19]).Text, obj9);
-  obj7.children = items7;
-  const items8 = [callback2(View, obj7), ];
-  const obj11 = { style: tmp.memberCount };
+  obj7[1] = items7;
+  const items8 = [closure_10(View, obj7), ];
+  const obj11 = { style: tmp.memberCount, children: null };
   const items9 = [callback(View, { style: tmp.dot }), ];
-  const obj13 = { variant: "text-md/medium", color: "text-default" };
-  const intl2 = profile(stateFromStores1[22]).intl;
-  obj13.children = intl2.format(profile(stateFromStores1[22]).t.zRl6XR, { count: profile.memberCount });
+  const obj13 = { variant: "text-md/medium", color: "text-default", children: null };
+  const intl2 = tmp2(tmp3[22]).intl;
+  obj13[2] = intl2.format(profile(stateFromStores1[22]).t.zRl6XR, { count: profile.memberCount });
   items9[1] = callback(profile(stateFromStores1[19]).Text, obj13);
-  obj11.children = items9;
-  items8[1] = callback2(View, obj11);
-  obj6.children = items8;
-  items5[2] = callback2(View, obj6);
-  const obj15 = { style: tmp.established };
-  const obj16 = { variant: "text-md/medium", color: "text-muted" };
-  const intl3 = profile(stateFromStores1[22]).intl;
-  obj16.children = intl3.format(profile(stateFromStores1[22]).t.zb2Q56, { createdAtDate: establishedDate });
-  obj15.children = callback(profile(stateFromStores1[19]).Text, obj16);
+  obj11[1] = items9;
+  items8[1] = closure_10(View, obj11);
+  obj6[1] = items8;
+  items5[2] = closure_10(View, obj6);
+  const obj15 = { style: tmp.established, children: null };
+  const obj16 = { variant: "text-md/medium", color: "text-muted", children: null };
+  const intl3 = tmp2(tmp3[22]).intl;
+  obj16[2] = intl3.format(profile(stateFromStores1[22]).t.zb2Q56, { createdAtDate: establishedDate });
+  obj15[1] = callback(profile(stateFromStores1[19]).Text, obj16);
   items5[3] = callback(View, obj15);
-  obj.children = items5;
-  return callback2(View, obj);
+  obj[1] = items5;
+  return closure_10(View, obj);
 };
-export const useStyles = _createForOfIteratorHelperLoose;
+export const useStyles = createCacheKey;

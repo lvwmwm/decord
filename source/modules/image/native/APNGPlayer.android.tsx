@@ -1,57 +1,56 @@
-// Module ID: 6187
-// Function ID: 55237
+// Module ID: 6207
+// Function ID: 6208
 // Name: useAPNGPlayerControls
-// Dependencies: [31, 33, 6188, 2]
+// Dependencies: [19, 21, 6208, 2]
 // Exports: useAPNGPlayerControls
 
-// Module 6187 (useAPNGPlayerControls)
-import importAllResult from "result";
+// Module 6207 (useAPNGPlayerControls)
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const forwardRefResult = importAllResult.forwardRef((onLoad) => {
+let c3 = importAllResult;
+const forwardRefResult = importAllResult.forwardRef((onLoad, ref) => {
   onLoad = onLoad.onLoad;
-  let obj = Object.create(null);
-  obj.onLoad = 0;
-  const merged = Object.assign(onLoad, obj);
-  const ref = importAllResult.useRef(null);
+  const merged = Object.assign(onLoad, Object.create(null));
+  ref = undefined;
+  ref = importAllResult.useRef(null);
   const items = [onLoad];
   const callback = importAllResult.useCallback((nativeEvent) => {
-    if (null != onLoad) {
-      onLoad(nativeEvent.nativeEvent.url);
+    if (onLoad != null) {
+      tmp(nativeEvent.nativeEvent.url);
     }
   }, items);
-  const imperativeHandle = importAllResult.useImperativeHandle(arg1, () => ({
+  const imperativeHandle = importAllResult.useImperativeHandle(ref, () => ({
     play() {
-      if (null != outer1_1.current) {
-        const Commands = onLoad(outer2_2[2]).Commands;
-        Commands.play(outer1_1.current);
+      if (null != closure_1.current) {
+        const Commands = outer1_0(outer1_2[2]).Commands;
+        Commands.play(tmp.current);
       }
     },
     pause() {
-      if (null != outer1_1.current) {
-        const Commands = onLoad(outer2_2[2]).Commands;
-        Commands.pause(outer1_1.current);
+      if (null != closure_1.current) {
+        const Commands = outer1_0(outer1_2[2]).Commands;
+        Commands.pause(tmp.current);
       }
     },
     stop() {
-      if (null != outer1_1.current) {
-        const Commands = onLoad(outer2_2[2]).Commands;
-        Commands.seek(outer1_1.current, 0);
-        const Commands2 = onLoad(outer2_2[2]).Commands;
-        Commands2.pause(outer1_1.current);
+      if (null != closure_1.current) {
+        const Commands = outer1_0(outer1_2[2]).Commands;
+        Commands.seek(tmp.current, 0);
+        const Commands2 = outer1_0(outer1_2[2]).Commands;
+        Commands2.pause(tmp.current);
       }
     },
     seek(arg0) {
-      if (null != outer1_1.current) {
-        const Commands = onLoad(outer2_2[2]).Commands;
-        Commands.seek(outer1_1.current, arg0);
+      if (null != closure_1.current) {
+        const Commands = outer1_0(outer1_2[2]).Commands;
+        Commands.seek(tmp.current, arg0);
       }
     }
   }));
-  obj = { ref, onLoad: callback };
   const merged1 = Object.assign(merged);
-  return jsx(ref(6188), { ref, onLoad: callback });
+  return jsx(ref(6208), { ref, onLoad: callback });
 });
 const result = require("__INTERNAL_VIEW_CONFIG").fileFinishedImporting("modules/image/native/APNGPlayer.android.tsx");
 
@@ -61,41 +60,41 @@ export const useAPNGPlayerControls = function useAPNGPlayerControls(ref) {
   const items = [ref];
   return importAllResult.useMemo(() => ({
     play() {
-      let current = null == outer1_0.current;
+      let current = null == closure_0.current;
       if (!current) {
-        current = outer1_1.current;
+        current = ref.current;
       }
       if (!current) {
-        const current2 = outer1_0.current;
+        const current2 = closure_0.current;
         current2.play();
-        outer1_1.current = true;
+        ref.current = true;
       }
     },
     pause() {
-      let current = null != outer1_0.current;
+      let current = null != closure_0.current;
       if (current) {
-        current = outer1_1.current;
+        current = ref.current;
       }
       if (current) {
-        const current2 = outer1_0.current;
+        const current2 = closure_0.current;
         current2.pause();
-        outer1_1.current = false;
+        ref.current = false;
       }
     },
     stop() {
-      let current = null != outer1_0.current;
+      let current = null != closure_0.current;
       if (current) {
-        current = outer1_1.current;
+        current = ref.current;
       }
       if (current) {
-        const current2 = outer1_0.current;
+        const current2 = closure_0.current;
         current2.stop();
-        outer1_1.current = false;
+        ref.current = false;
       }
     },
     seek(arg0) {
-      if (null != outer1_0.current) {
-        const current = outer1_0.current;
+      if (null != closure_0.current) {
+        const current = tmp.current;
         current.seek(arg0);
       }
     }

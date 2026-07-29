@@ -1,29 +1,30 @@
-// Module ID: 16129
-// Function ID: 124643
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3982, 1853, 9318, 5112, 2]
+// Module ID: 16164
+// Function ID: 16165
+// Name: handleInteraction
+// Dependencies: [4006, 1877, 5134, 9342, 2]
 
-// Module 16129 (_isNativeReflectConstruct)
-import set from "set";
-import maybeFetchTopEmojisByGuild from "maybeFetchTopEmojisByGuild";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16164 (handleInteraction)
+import handleConnectionOpen from "handleConnectionOpen";
 import { EmojiInteractionPoint } from "set";
-import tmp2 from "AutomaticLifecycleManager";
+import "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class TopEmojisDataManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.actions = { EMOJI_INTERACTION_INITIATED: applyArgumentsResult.handleInteraction };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/emojis/top_emojis/TopEmojisDataManager.tsx");
+TopEmojisDataManager.prototype["handleInteraction"] = function handleInteraction(interaction) {
+  const items = [EmojiInteractionPoint.EmojiButtonMouseEntered];
+  if (items.includes(interaction.interaction)) {
+    guildId = guildId.getGuildId();
+    const result = require(9342) /* maybeFetchTopEmojisByGuild */.maybeFetchTopEmojisByGuild(guildId);
+    const obj = require(9342) /* maybeFetchTopEmojisByGuild */;
+  }
+};
+const topEmojisDataManager = new TopEmojisDataManager();
+let result = require("initialize").fileFinishedImporting("modules/emojis/top_emojis/TopEmojisDataManager.tsx");
 
-export default tmp2;
+export default topEmojisDataManager;

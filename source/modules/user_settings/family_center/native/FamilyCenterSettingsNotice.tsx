@@ -1,11 +1,11 @@
-// Module ID: 13826
-// Function ID: 105868
+// Module ID: 13847
+// Function ID: 13848
 // Name: FamilyCenterSettingsParentalControlsNotice
-// Dependencies: [31, 6695, 33, 6235, 13757, 2199, 5827, 4175, 2]
+// Dependencies: [19, 6716, 21, 6255, 13778, 2223, 5845, 4199, 2]
 // Exports: default
 
-// Module 13826 (FamilyCenterSettingsParentalControlsNotice)
-import "result";
+// Module 13847 (FamilyCenterSettingsParentalControlsNotice)
+import "noop";
 import { SafetySettingsNoticeType } from "SafetyToastType";
 import { jsx } from "jsxProd";
 
@@ -13,28 +13,17 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/family_center/native/FamilyCenterSettingsNotice.tsx");
 
 export default function FamilyCenterSettingsParentalControlsNotice() {
-  let obj = activeLinkUserIds(6235);
+  let obj = activeLinkUserIds(6255);
   activeLinkUserIds = obj.useActiveLinkUserIds();
-  obj = {
-    label: importDefault(2199).i284fU,
-    noticeType: SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE,
-    labelHook() {
-      let obj = activeLinkUserIds(outer1_2[6]);
-      obj.popLayer();
-      obj = { recipientIds: activeLinkUserIds };
-      outer1_1(outer1_2[7]).openPrivateChannel(obj);
-    },
-    count: activeLinkUserIds.length
+  obj = { label: null, noticeType: null, labelHook: null, count: null };
+  obj[0] = importDefault(2223).i284fU;
+  obj[1] = SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE;
+  obj[2] = function labelHook() {
+    let obj = activeLinkUserIds(outer1_2[6]);
+    obj.popLayer();
+    obj = { recipientIds: activeLinkUserIds };
+    outer1_1(outer1_2[7]).openPrivateChannel(obj);
   };
-  return jsx(importDefault(13757), {
-    label: importDefault(2199).i284fU,
-    noticeType: SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE,
-    labelHook() {
-      let obj = activeLinkUserIds(outer1_2[6]);
-      obj.popLayer();
-      obj = { recipientIds: activeLinkUserIds };
-      outer1_1(outer1_2[7]).openPrivateChannel(obj);
-    },
-    count: activeLinkUserIds.length
-  });
+  obj[3] = activeLinkUserIds.length;
+  return jsx(importDefault(13778), { label: null, noticeType: null, labelHook: null, count: null });
 };

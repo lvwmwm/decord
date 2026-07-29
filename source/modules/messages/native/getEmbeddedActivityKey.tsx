@@ -1,10 +1,10 @@
-// Module ID: 9284
-// Function ID: 72602
+// Module ID: 9308
+// Function ID: 9309
 // Name: getEmbeddedActivityKey
 // Dependencies: [2]
 // Exports: default, parseEmbeddedActivityKey
 
-// Module 9284 (getEmbeddedActivityKey)
+// Module 9308 (getEmbeddedActivityKey)
 const result = require("set").fileFinishedImporting("modules/messages/native/getEmbeddedActivityKey.tsx");
 
 export default function getEmbeddedActivityKey(location) {
@@ -14,7 +14,8 @@ export const parseEmbeddedActivityKey = function parseEmbeddedActivityKey(str) {
   const parts = str.split(":");
   let tmp = null;
   if (parts.length >= 3) {
-    const obj = { channelId: parts[0], applicationId: parts[1], instanceId: parts[2] };
+    const obj = { channelId: null, applicationId: null, instanceId: null };
+    [obj[0], obj[1], obj[2]] = parts;
     tmp = obj;
   }
   return tmp;

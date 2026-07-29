@@ -1,32 +1,32 @@
-// Module ID: 16674
-// Function ID: 129916
+// Module ID: 16710
+// Function ID: 16711
 // Name: LogOutDisclaimer
-// Dependencies: [33, 13196, 4161, 1212, 2461, 5623, 2]
+// Dependencies: [21, 13219, 4185, 1236, 2485, 5641, 2]
 // Exports: default
 
-// Module 16674 (LogOutDisclaimer)
+// Module 16710 (LogOutDisclaimer)
 import { jsx } from "jsxProd";
 
 const result = require("Text").fileFinishedImporting("modules/safety_flows/native/LogOutDisclaimer.tsx");
 
 export default function LogOutDisclaimer() {
-  let obj = {};
-  obj = { variant: "text-xs/medium" };
-  const intl = require(1212) /* getSystemLocale */.intl;
+  let obj = { children: null };
+  obj = { variant: "text-xs/medium", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
   obj = {
     handleLogOut() {
-      outer1_1(outer1_2[5]).logout("safety_flows_enter_email_screen");
+      callback(table[5]).logout("safety_flows_enter_email_screen");
     }
   };
-  obj.children = intl.format(importDefault(2461)["0DHxym"], obj);
-  obj.children = jsx(require(4161) /* Text */.Text, {
+  obj[1] = intl.format(importDefault(2485)["0DHxym"], obj);
+  obj[0] = jsx(require(4185) /* Text */.Text, {
     handleLogOut() {
-      outer1_1(outer1_2[5]).logout("safety_flows_enter_email_screen");
+      callback(table[5]).logout("safety_flows_enter_email_screen");
     }
   });
-  return jsx(require(13196) /* ModalDisclaimer */.ModalDisclaimer, {
+  return jsx(require(13219) /* ModalDisclaimer */.ModalDisclaimer, {
     handleLogOut() {
-      outer1_1(outer1_2[5]).logout("safety_flows_enter_email_screen");
+      callback(table[5]).logout("safety_flows_enter_email_screen");
     }
   });
 };

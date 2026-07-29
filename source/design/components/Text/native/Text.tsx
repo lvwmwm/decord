@@ -1,75 +1,80 @@
-// Module ID: 4161
-// Function ID: 34437
+// Module ID: 4185
+// Function ID: 4186
 // Name: Text
-// Dependencies: [31, 27, 482, 33, 4026, 689, 22, 4162, 4163, 4165, 290, 4170, 2]
+// Dependencies: [19, 17, 505, 21, 4050, 712, 12, 4186, 4187, 4189, 299, 4194, 2]
 
-// Module 4161 (Text)
-import importAllResult from "result";
+// Module 4185 (Text)
+import importAllResult from "noop";
 import { Text } from "get ActivityIndicator";
 import { Fonts } from "sum";
 import { jsx } from "jsxProd";
 import { TextVariantsFlat } from "TEXT_VARIANT";
 import useManaTextMigrationHighlight from "useManaTextMigrationHighlight";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "module_4026";
+import createCacheKey from "createCacheKey";
+import importDefaultResult from "module_4050";
 
 const require = arg1;
-let closure_5 = require("module_4026").createAnimatedComponent(Text);
-const keys = Object.keys(require("_createForOfIteratorHelperLoose").colors);
+let closure_5 = require("module_4050").createAnimatedComponent(Text);
+const keys = Object.keys(require("Themes").colors);
 let closure_6 = Object.fromEntries(keys.map((arg0) => {
-  const items = [importDefault(22).kebabCase(arg0), arg0];
+  const items = [importDefault(12).kebabCase(arg0), arg0];
   return items;
 }));
-let closure_7 = { [400]: Fonts.DISPLAY_NORMAL, [500]: Fonts.DISPLAY_MEDIUM, [600]: Fonts.DISPLAY_SEMIBOLD, [700]: Fonts.DISPLAY_BOLD, [800]: Fonts.DISPLAY_EXTRABOLD };
-let closure_8 = { [400]: Fonts.PRIMARY_NORMAL, [500]: Fonts.PRIMARY_MEDIUM, [600]: Fonts.PRIMARY_SEMIBOLD, [700]: Fonts.PRIMARY_BOLD };
-let closure_9 = { [800]: Fonts.GINTO_NORD_EXTRA_BOLD };
-let closure_10 = { [400]: Fonts.CODE_NORMAL, [700]: Fonts.CODE_BOLD };
+let obj = { 400: null, 500: null, 600: null, 700: null, 800: null };
+({ DISPLAY_NORMAL: obj3[400], DISPLAY_MEDIUM: obj3[500], DISPLAY_SEMIBOLD: obj3[600], DISPLAY_BOLD: obj3[700], DISPLAY_EXTRABOLD: obj3[800] } = Fonts);
+obj = { 400: null, 500: null, 600: null, 700: null };
+({ PRIMARY_NORMAL: obj4[400], PRIMARY_MEDIUM: obj4[500], PRIMARY_SEMIBOLD: obj4[600], PRIMARY_BOLD: obj4[700] } = Fonts);
+const obj1 = { 800: null };
+obj1[800] = Fonts.GINTO_NORD_EXTRA_BOLD;
+const obj2 = { 400: null, 700: null };
+({ CODE_NORMAL: obj6[400], CODE_BOLD: obj6[700] } = Fonts);
 const mapped = TextVariantsFlat.map((name) => {
   let fontStack;
   let weight;
   let tmp = null;
   if ("code" !== name.name) {
     const items = [name.name, ];
-    let obj = {};
-    ({ size: obj2.fontSize, lineHeight: obj2.lineHeight } = name);
+    let obj = { fontSize: null, lineHeight: null, textTransform: null, fontFamily: null, includeFontPadding: false, letterSpacing: null };
+    ({ size: obj2[0], lineHeight: obj2[1] } = name);
     let str = "none";
     if (name.uppercase) {
       str = "uppercase";
     }
-    obj.textTransform = str;
+    obj[2] = str;
     ({ weight, fontStack } = name);
-    obj = { headline: closure_9, display: closure_7, primary: closure_8, code: closure_10 };
-    obj.fontFamily = obj[fontStack][weight.toString(weight)];
-    obj.includeFontPadding = false;
+    obj = { headline: null, display: null, primary: null, code: null };
+    obj[0] = obj1;
+    obj[1] = obj;
+    obj[2] = obj;
+    obj[3] = obj2;
+    obj[3] = obj[fontStack][weight.toString(weight)];
     let result;
     if ("letterSpacing" in name) {
       result = name.letterSpacing / 10;
     }
-    obj.letterSpacing = result;
+    obj[5] = result;
     items[1] = obj;
     tmp = items;
   }
   return tmp;
 });
 const fromEntriesResult = Object.fromEntries(mapped.filter(Boolean));
+const unpackModuleId = fromEntriesResult;
 let result = useManaTextMigrationHighlight.withManaTextMigrationHighlight(fromEntriesResult);
-let closure_12 = _createForOfIteratorHelperLoose.createStyles((arg0, arg1) => {
-  let obj = {};
-  obj = {};
+let closure_12 = createCacheKey.createStyles((arg0, arg1) => {
   let tmp;
   if ("none" !== arg0) {
-    tmp = importDefault(689).colors[table[arg0]];
+    tmp = importDefault(712).colors[table[arg0]];
   }
-  obj.color = tmp;
+  const text = { color: tmp, fontVariant: null };
   let items;
   if (arg1) {
     items = ["tabular-nums"];
   }
-  obj.fontVariant = items;
-  obj.text = obj;
-  return obj;
+  text[1] = items;
+  return { text };
 });
-const forwardRefResult = importAllResult.forwardRef((animated, ref) => {
+const forwardRefResult = importAllResult.forwardRef((animated) => {
   let color;
   let ellipsizeMode;
   let includeFontPadding;
@@ -94,54 +99,50 @@ const forwardRefResult = importAllResult.forwardRef((animated, ref) => {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let obj = { variant: 0, color: 0, style: 0, lineClamp: 0, includeFontPadding: 0, ellipsizeMode: 0, tabularNumbers: 0, animated: 0, experimental_useNativeText: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(animated, obj);
-  let str = "text-default";
-  if (null != color) {
-    str = color;
+  const merged = Object.assign(animated, Object.create(null));
+  if (color == null) {
+    color = "text-default";
   }
   if (flag2) {
-    let NativeText = require(290) /* NativeText */.NativeText;
+    let NativeText = require(299) /* NativeText */.NativeText;
   } else {
     NativeText = flag ? closure_5 : Text;
   }
-  const tmp3 = closure_12;
-  const tmp3Result = closure_12(str, tabularNumbers);
-  const typographyVariantRemap = require(4170) /* useTypographyVariantRemap */.useTypographyVariantRemap(variant, false);
-  const obj2 = require(4170) /* useTypographyVariantRemap */;
-  obj = {};
-  const items = [dependencyMap[typographyVariantRemap], tmp3Result.text, , ];
-  const manaTextMigrationHighlight = require(4163) /* useManaTextMigrationHighlight */.useManaTextMigrationHighlight(dependencyMap[typographyVariantRemap], style);
+  let obj = require(4194) /* useTypographyVariantRemap */;
+  const typographyVariantRemap = obj.useTypographyVariantRemap(variant, false);
+  const tmp2 = closure_12;
+  const tmp2Result = closure_12(color, tabularNumbers);
+  const items = [dependencyMap[typographyVariantRemap], tmp2Result.text, , ];
+  const manaTextMigrationHighlight = require(4187) /* useManaTextMigrationHighlight */.useManaTextMigrationHighlight(dependencyMap[typographyVariantRemap], style);
   if (includeFontPadding) {
-    obj = { includeFontPadding };
+    obj = { includeFontPadding: null };
+    obj[0] = includeFontPadding;
     const items1 = [obj];
     let items2 = items1;
   } else {
     items2 = [];
   }
+  obj = { style: null, numberOfLines: null, ellipsizeMode: null, allowFontScaling: true, ref: null };
   const arraySpreadResult = HermesBuiltin.arraySpread(items2, 2);
   items[arraySpreadResult] = style;
   items[arraySpreadResult + 1] = manaTextMigrationHighlight;
-  obj.style = items;
-  obj.numberOfLines = lineClamp;
-  let str2 = "tail";
-  if (null != ellipsizeMode) {
-    str2 = ellipsizeMode;
+  obj[0] = items;
+  obj[1] = lineClamp;
+  if (ellipsizeMode == null) {
+    ellipsizeMode = "tail";
   }
-  obj.ellipsizeMode = str2;
-  obj.allowFontScaling = true;
-  obj.ref = ref;
+  obj[2] = ellipsizeMode;
+  obj[4] = arg1;
   const merged1 = Object.assign(merged);
-  return <NativeText />;
+  return <NativeText style={null} numberOfLines={null} ellipsizeMode={null} allowFontScaling ref={null} />;
 });
 const forwardRefResult1 = importAllResult.forwardRef((variant, ref) => {
-  let obj = require(4170) /* useTypographyVariantRemap */;
+  let obj = require(4194) /* useTypographyVariantRemap */;
   obj = { ref };
   const typographyVariantRemap = obj.useTypographyVariantRemap(variant.variant, true);
   const merged = Object.assign(variant);
-  obj["accessibilityRole"] = "header";
-  obj["variant"] = typographyVariantRemap;
+  obj.accessibilityRole = "header";
+  obj.variant = typographyVariantRemap;
   return <closure_13 ref={arg1} />;
 });
 const result1 = require("sum").fileFinishedImporting("design/components/Text/native/Text.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 566
-// Function ID: 6824
+// Module ID: 589
+// Function ID: 590
 // Name: initialize
-// Dependencies: [567, 568, 619, 570, 626, 2, 627, 625, 624]
+// Dependencies: [590, 591, 642, 593, 649, 2, 650, 648, 647]
 // Exports: destroy, initialize
 
-// Module 566 (initialize)
-import _superPropGet from "_superPropGet";
-import { Store } from "Store";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 589 (initialize)
+import getClass from "getClass";
+import { Store } from "initialize";
+import areStatesEqual from "areStatesEqual";
 
 let DeviceSettingsStore;
 let NO_DATA;
@@ -16,18 +16,18 @@ let createFetchStore;
 function initialize() {
   Store.initialize();
 }
-const PersistedStore = _superPropGet.PersistedStore;
-({ DeviceSettingsStore, OfflineCacheStore } = _superPropGet);
-const obj = { Emitter: require("logger"), Store, PersistedStore, DeviceSettingsStore, OfflineCacheStore, connectStores: require("_callSuper"), initialize };
-({ createFetchStore, NO_DATA } = _isNativeReflectConstruct);
+const PersistedStore = getClass.PersistedStore;
+({ DeviceSettingsStore, OfflineCacheStore } = getClass);
+const obj = { Emitter: require("logger"), Store, PersistedStore, DeviceSettingsStore, OfflineCacheStore, connectStores: require("connectStores"), initialize };
+({ createFetchStore, NO_DATA } = areStatesEqual);
 Object.defineProperty(obj, "initialized", { get: () => Store.initialized, set: undefined });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("../discord_common/js/packages/flux/index.tsx");
+const result = require("areStatesEqual").fileFinishedImporting("../discord_common/js/packages/flux/index.tsx");
 
 export default obj;
 export { NO_DATA };
 export { Store };
-export const Dispatcher = require("_createForOfIteratorHelperLoose").Dispatcher;
-export const BatchedStoreListener = require("BatchedStoreListener").BatchedStoreListener;
+export const Dispatcher = require("setDisplayName").Dispatcher;
+export const BatchedStoreListener = require("attach").BatchedStoreListener;
 export { createFetchStore };
 export const statesWillNeverBeEqual = require("defaultAreStatesEqual").statesWillNeverBeEqual;
 export const useStateFromStores = require("defaultAreStatesEqual").useStateFromStores;

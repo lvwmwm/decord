@@ -1,47 +1,47 @@
-// Module ID: 14799
-// Function ID: 112685
-// Dependencies: [31, 27, 33, 4165, 689, 1456, 1557, 5536, 13615, 5198, 13612, 2]
+// Module ID: 14825
+// Function ID: 14826
+// Dependencies: [19, 17, 21, 4189, 712, 1480, 1581, 5554, 13636, 5220, 13633, 2]
 
-// Module 14799
+// Module 14825
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 const require = arg1;
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.container = obj;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo(function DevToolsPerformanceTestingScreen() {
-  let obj = _require(1456);
+let obj = { container: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, padding: require("Themes").space.PX_16 };
+obj[0] = obj;
+let closure_5 = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo(function DevToolsPerformanceTestingScreen() {
+  let obj = _require(1480);
   _require = obj.useNavigation();
-  obj = { style: callback().container };
-  obj = { paddingBottom: importDefault(1557)().bottom + importDefault(689).space.PX_16 };
-  obj.contentContainerStyle = obj;
-  const obj1 = { hasIcons: true };
-  const entries = Object.entries(_require(13615).PerformanceTestingScreens);
-  obj1.children = entries.map((arg0) => {
+  obj = { style: callback().container, contentContainerStyle: null, children: null };
+  obj = { paddingBottom: null };
+  obj[0] = importDefault(1581)().bottom + importDefault(712).space.PX_16;
+  obj[1] = obj;
+  const obj1 = { hasIcons: true, children: null };
+  const entries = Object.entries(_require(13636).PerformanceTestingScreens);
+  obj1[1] = entries.map((arg0) => {
     let tmp;
     [tmp, ] = arg0;
-    let obj = {
-      label: tmp2,
-      icon: outer1_4(callback(outer1_2[9]).TableRow.Icon, { IconComponent: tmp3 }),
-      arrow: true,
-      onPress() {
-        if (null != outer1_0.push) {
-          outer1_0.push(callback);
-        } else {
-          let obj = callback(outer2_2[10]);
-          obj = { screenKey: callback };
-          obj.navigateToDevTools(obj);
-        }
+    let obj = { label: tmp2, icon: null, arrow: true, onPress: null };
+    obj[1] = outer1_4(callback(outer1_2[9]).TableRow.Icon, { IconComponent: tmp3 });
+    obj[3] = function onPress() {
+      let arr = outer1_0;
+      if (null != outer1_0.push) {
+        arr = arr.push(callback);
+      } else {
+        let obj = callback(outer2_2[10]);
+        obj = { screenKey: null };
+        obj[0] = callback;
+        obj.navigateToDevTools(obj);
       }
     };
     return outer1_4(callback(outer1_2[9]).TableRow, obj, tmp);
   });
-  obj.children = jsx(_require(5536).TableRowGroup, { hasIcons: true });
-  return <ScrollView paddingBottom={importDefault(1557)().bottom + importDefault(689).space.PX_16} />;
+  obj[2] = jsx(_require(5554).TableRowGroup, { hasIcons: true, children: null });
+  return <ScrollView paddingBottom={null} />;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsPerformanceTestingScreen.tsx");
 

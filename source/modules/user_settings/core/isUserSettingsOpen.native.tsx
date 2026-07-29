@@ -1,38 +1,94 @@
-// Module ID: 12791
-// Function ID: 99507
-// Name: isSettingsRoutePresent
-// Dependencies: [57, 31, 4017, 2]
+// Module ID: 12813
+// Function ID: 12814
+// Name: isUserSettingsOpen
+// Dependencies: [32, 19, 4041, 2]
 // Exports: useIsUserSettingsOpen
 
-// Module 12791 (isSettingsRoutePresent)
+// Module 12813 (isUserSettingsOpen)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const require = arg1;
-function isSettingsRoutePresent(rootState) {
-  let routes;
-  if (null != rootState) {
-    routes = rootState.routes;
-  }
-  let someResult = null != routes;
-  if (someResult) {
-    routes = rootState.routes;
-    someResult = routes.some((name) => {
-      let tmp = "settings" === name.name;
-      if (!tmp) {
-        tmp = outer1_4(name.state);
-      }
-      return tmp;
-    });
-  }
-  return someResult;
-}
 function isUserSettingsOpen() {
-  const rootNavigationRef = require(4017) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4041) /* getRootNavigationRef */.getRootNavigationRef();
   const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
   let tmp2 = !tmp;
   if (!tmp) {
-    tmp2 = isSettingsRoutePresent(rootNavigationRef.getRootState());
+    const rootState = rootNavigationRef.getRootState();
+    let routes;
+    if (rootState != null) {
+      routes = rootState.routes;
+    }
+    let someResult = null != routes;
+    if (someResult) {
+      routes = rootState.routes;
+      someResult = routes.some((name) => {
+        let tmp = "settings" === name.name;
+        if (!tmp) {
+          const state = name.state;
+          let routes;
+          if (state != null) {
+            routes = state.routes;
+          }
+          let someResult = null != routes;
+          if (someResult) {
+            routes = state.routes;
+            someResult = routes.some((name) => {
+              let tmp = "settings" === name.name;
+              if (!tmp) {
+                const state = name.state;
+                let routes;
+                if (state != null) {
+                  routes = state.routes;
+                }
+                let someResult = null != routes;
+                if (someResult) {
+                  routes = state.routes;
+                  someResult = routes.some((name) => {
+                    let tmp = "settings" === name.name;
+                    if (!tmp) {
+                      const state = name.state;
+                      let routes;
+                      if (state != null) {
+                        routes = state.routes;
+                      }
+                      let someResult = null != routes;
+                      if (someResult) {
+                        routes = state.routes;
+                        someResult = routes.some((name) => {
+                          let tmp = "settings" === name.name;
+                          if (!tmp) {
+                            const state = name.state;
+                            let routes;
+                            if (state != null) {
+                              routes = state.routes;
+                            }
+                            let someResult = null != routes;
+                            if (someResult) {
+                              routes = state.routes;
+                              someResult = routes.some(() => { ... });
+                            }
+                            tmp = someResult;
+                          }
+                          return tmp;
+                        });
+                      }
+                      tmp = someResult;
+                    }
+                    return tmp;
+                  });
+                }
+                tmp = someResult;
+              }
+              return tmp;
+            });
+          }
+          tmp = someResult;
+        }
+        return tmp;
+      });
+    }
+    tmp2 = someResult;
   }
   return tmp2;
 }
@@ -46,7 +102,49 @@ export const useIsUserSettingsOpen = function useIsUserSettingsOpen() {
   const effect = React.useEffect(() => {
     function handleStateChange() {
       if (null != rootNavigationRef) {
-        rootNavigationRef(outer2_4(rootNavigationRef.getRootState()));
+        const rootState = rootNavigationRef.getRootState();
+        let routes;
+        if (rootState != null) {
+          routes = rootState.routes;
+        }
+        let someResult = null != routes;
+        if (someResult) {
+          routes = rootState.routes;
+          someResult = routes.some((name) => {
+            let tmp = "settings" === name.name;
+            if (!tmp) {
+              const state = name.state;
+              let routes;
+              if (state != null) {
+                routes = state.routes;
+              }
+              let someResult = null != routes;
+              if (someResult) {
+                routes = state.routes;
+                someResult = routes.some((name) => {
+                  let tmp = "settings" === name.name;
+                  if (!tmp) {
+                    const state = name.state;
+                    let routes;
+                    if (state != null) {
+                      routes = state.routes;
+                    }
+                    let someResult = null != routes;
+                    if (someResult) {
+                      routes = state.routes;
+                      someResult = routes.some(() => { ... });
+                    }
+                    tmp = someResult;
+                  }
+                  return tmp;
+                });
+              }
+              tmp = someResult;
+            }
+            return tmp;
+          });
+        }
+        rootNavigationRef(someResult);
       }
     }
     const rootNavigationRef = outer1_0(outer1_1[2]).getRootNavigationRef();

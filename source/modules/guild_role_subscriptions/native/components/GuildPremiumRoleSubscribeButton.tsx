@@ -1,24 +1,23 @@
-// Module ID: 16571
-// Function ID: 128976
+// Module ID: 16606
+// Function ID: 16607
 // Name: GuildPremiumRoleSubscribeButton
-// Dependencies: [31, 33, 4165, 9340, 1212, 2]
+// Dependencies: [19, 21, 4189, 9364, 1236, 2]
 // Exports: GuildPremiumRoleSubscribeButton
 
-// Module 16571 (GuildPremiumRoleSubscribeButton)
-import "result";
+// Module 16606 (GuildPremiumRoleSubscribeButton)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_3 = _createForOfIteratorHelperLoose.createStyles({ crButton: { marginVertical: 16 } });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildPremiumRoleSubscribeButton.tsx");
+let closure_3 = createCacheKey.createStyles({ crButton: { marginVertical: 16 } });
+const result = require("createCacheKey").fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildPremiumRoleSubscribeButton.tsx");
 
 export const GuildPremiumRoleSubscribeButton = function GuildPremiumRoleSubscribeButton(onPress) {
-  const obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.text = intl.string(require(1212) /* getSystemLocale */.t.BEeXib);
-  obj.onPress = onPress.onPress;
-  obj.style = callback().crButton;
-  obj.disabled = true;
-  return jsx(require(9340) /* CreatorRevenueButton */.CreatorRevenueButton, {});
+  const obj = { text: null, onPress: null, style: null, disabled: true };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.BEeXib);
+  obj[1] = onPress.onPress;
+  obj[2] = callback().crButton;
+  return jsx(require(9364) /* CreatorRevenueButton */.CreatorRevenueButton, { text: null, onPress: null, style: null, disabled: true });
 };

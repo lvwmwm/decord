@@ -1,13 +1,13 @@
-// Module ID: 4195
-// Function ID: 35260
+// Module ID: 4219
+// Function ID: 4220
 // Name: getGameMediaRefURL
-// Dependencies: [1832, 1392, 4196, 2]
+// Dependencies: [1856, 1416, 4220, 2]
 // Exports: default
 
-// Module 4195 (getGameMediaRefURL)
+// Module 4219 (getGameMediaRefURL)
 const result = require("isImageProxyURL").fileFinishedImporting("modules/games/getGameMediaRefURL.tsx");
 
-export default function getGameMediaRefURL(id, type, size) {
+export default function getGameMediaRefURL(arg0, type, size) {
   if (null == type) {
     return null;
   } else {
@@ -15,30 +15,31 @@ export default function getGameMediaRefURL(id, type, size) {
     if ("hash" === type) {
       let tmp7 = null;
       if (!obj3.isNullOrEmpty(type.value)) {
-        let obj = { id, hash: type.value };
+        let obj = { id: null, hash: null };
+        obj[0] = arg0;
+        obj[1] = type.value;
         const merged = Object.assign(size);
-        const gameAssetURL = importDefault(1392).getGameAssetURL(obj);
-        let tmp15 = null;
-        if (null != gameAssetURL) {
-          tmp15 = gameAssetURL;
+        let gameAssetURL = importDefault(1416).getGameAssetURL(obj);
+        if (gameAssetURL == null) {
+          gameAssetURL = null;
         }
-        tmp7 = tmp15;
-        const obj4 = importDefault(1392);
+        tmp7 = gameAssetURL;
+        const obj4 = importDefault(1416);
       }
       return tmp7;
     } else if ("url" === type) {
-      obj = require(4196) /* isImageProxyURL */;
-      obj = {};
+      obj = require(4220) /* isImageProxyURL */;
       size = undefined;
-      if (null != size) {
+      if (size != null) {
         size = size.size;
       }
-      obj.size = size;
+      obj = { size: null, keepAspectRatio: null };
+      obj[0] = size;
       let keepAspectRatio;
-      if (null != size) {
+      if (size != null) {
         keepAspectRatio = size.keepAspectRatio;
       }
-      obj.keepAspectRatio = keepAspectRatio;
+      obj[1] = keepAspectRatio;
       return obj.getSizedImageProxyURL(type.value, obj);
     } else {
       return null;

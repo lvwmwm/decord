@@ -1,155 +1,155 @@
-// Module ID: 12137
-// Function ID: 94911
+// Module ID: 12161
+// Function ID: 12162
 // Name: UserProfileApplicationWidgetBottomProgressLayout
-// Dependencies: [31, 27, 33, 4165, 689, 12046, 12134, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 12070, 12158, 4185, 2]
 // Exports: default
 
-// Module 12137 (UserProfileApplicationWidgetBottomProgressLayout)
-import "result";
+// Module 12161 (UserProfileApplicationWidgetBottomProgressLayout)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_2;
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
+let obj1;
 const require = arg1;
-({ Image: closure_2, View: closure_3 } = get_ActivityIndicator);
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.root = _createForOfIteratorHelperLoose;
-let obj1 = { width: 48, height: 48, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, overflow: "hidden", borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
-_createForOfIteratorHelperLoose.image = obj1;
-let obj2 = { flex: 1, gap: require("_createForOfIteratorHelperLoose").space.PX_4, minWidth: 0 };
-_createForOfIteratorHelperLoose.content = obj2;
-let obj3 = { width: "100%", height: 6, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
-_createForOfIteratorHelperLoose.progressContainer = obj3;
-_createForOfIteratorHelperLoose.progress = { height: 6, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, backgroundColor: require("_createForOfIteratorHelperLoose").colors.ICON_STRONG };
-let obj5 = { flexDirection: "row", justifyContent: "space-between", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.textContent = obj5;
-_createForOfIteratorHelperLoose.textLeft = { flex: 1, minWidth: 0 };
-_createForOfIteratorHelperLoose.progressText = { flexShrink: 0 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj4 = { height: 6, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, backgroundColor: require("_createForOfIteratorHelperLoose").colors.ICON_STRONG };
+({ Image: obj1, View: c3 } = get_ActivityIndicator);
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { root: null, image: null, content: null, progressContainer: null, progress: null, textContent: null, textLeft: null, progressText: null };
+createCacheKey = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { width: 48, height: 48, borderRadius: require("Themes").radii.sm, overflow: "hidden", borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+obj1 = { width: 48, height: 48, borderRadius: require("Themes").radii.sm, overflow: "hidden", borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey[2] = { flex: 1, gap: require("Themes").space.PX_4, minWidth: 0 };
+let obj2 = { flex: 1, gap: require("Themes").space.PX_4, minWidth: 0 };
+createCacheKey[3] = { width: "100%", height: 6, borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+let obj3 = { width: "100%", height: 6, borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey[4] = { height: 6, borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.ICON_STRONG };
+let obj4 = { height: 6, borderRadius: require("Themes").radii.md, backgroundColor: require("Themes").colors.ICON_STRONG };
+createCacheKey[5] = { flexDirection: "row", justifyContent: "space-between", gap: require("Themes").space.PX_4 };
+createCacheKey[6] = { flex: 1, minWidth: 0 };
+createCacheKey[7] = { flexShrink: 0 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj5 = { flexDirection: "row", justifyContent: "space-between", gap: require("Themes").space.PX_4 };
 const result = require("jsxProd").fileFinishedImporting("modules/application_widget/native/UserProfileApplicationWidgetBottomProgressLayout.tsx");
 
 export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
   let bottomConfig;
   let resolveFieldValue;
   ({ bottomConfig, resolveFieldValue } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const objective = bottomConfig.components.objective;
   let image;
-  if (null != objective) {
+  if (objective != null) {
     image = objective.fields.image;
   }
-  const items = [require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.MEDIA];
+  const items = [require(12070) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
-  let obj = require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  let obj = require(12070) /* resolvedValuesFromUserApplicationIdentityProfile */;
   const singleStringOrSkeleton = obj.resolveSingleStringOrSkeleton(objective, "name", resolveFieldValue);
-  let obj1 = require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */;
+  let obj1 = require(12070) /* resolvedValuesFromUserApplicationIdentityProfile */;
   const singleStringOrSkeleton1 = obj1.resolveSingleStringOrSkeleton(objective, "description", resolveFieldValue);
   const progress = bottomConfig.components.progress;
   let current;
-  if (null != progress) {
+  if (progress != null) {
     current = progress.fields.current;
   }
-  const items1 = [require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.NUMBER];
+  const items1 = [require(12070) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.NUMBER];
   let iter = resolveFieldValue(current, items1);
   let max;
-  if (null != progress) {
+  if (progress != null) {
     max = progress.fields.max;
   }
-  const items2 = [require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.NUMBER];
+  const items2 = [require(12070) /* resolvedValuesFromUserApplicationIdentityProfile */.ResolvedValueType.NUMBER];
   let iter2 = resolveFieldValue(max, items2);
-  let obj2 = require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */;
-  obj = { style: tmp.root };
-  const progressPercentage = obj2.resolveProgressPercentage(iter, iter2);
+  let tmp3Result = tmp3(12070);
+  obj = { style: tmp.root, children: null };
+  const progressPercentage = tmp3Result.resolveProgressPercentage(iter, iter2);
   if (null != fieldValue) {
-    obj = {};
-    obj1 = { uri: fieldValue.media.url };
-    obj.source = obj1;
-    obj.style = tmp.image;
-    obj.resizeMode = "contain";
+    obj = { source: null, style: null, resizeMode: "contain" };
+    obj1 = { uri: null };
+    obj1[0] = fieldValue.media.url;
+    obj[0] = obj1;
+    obj[1] = tmp.image;
     let tmp14 = callback(closure_2, obj);
+    let tmp15 = callback;
   } else {
-    obj2 = { style: tmp.image };
-    tmp14 = callback(require(12134) /* ImageSkeleton */.ImageSkeleton, obj2);
+    const obj2 = { style: null };
+    obj2[0] = tmp.image;
+    tmp14 = callback(tmp3(12158).ImageSkeleton, obj2);
+    tmp15 = callback;
   }
   const items3 = [tmp14, ];
-  const obj3 = { style: tmp.content };
-  const obj4 = { style: tmp.progressContainer, accessibilityRole: "progressbar" };
-  const obj5 = { min: 0 };
-  let value;
-  if (null != iter2) {
-    value = iter2.value;
+  const obj3 = { style: tmp.content, children: null };
+  const obj4 = { style: tmp.progressContainer, accessibilityRole: "progressbar", accessibilityValue: null, children: null };
+  let num;
+  if (iter2 != null) {
+    num = iter2.value;
   }
-  let num2 = 1;
-  if (null != value) {
-    num2 = value;
+  if (num == null) {
+    num = 1;
   }
-  obj5.max = num2;
-  value = undefined;
-  if (null != iter) {
-    value = iter.value;
+  const obj5 = { min: 0, max: num, now: null };
+  let num2;
+  if (iter != null) {
+    num2 = iter.value;
   }
-  let num3 = 0;
-  if (null != value) {
-    num3 = value;
+  if (num2 == null) {
+    num2 = 0;
   }
-  obj5.now = num3;
-  obj4.accessibilityValue = obj5;
-  const obj6 = {};
+  obj5[2] = num2;
+  obj4[2] = obj5;
+  const obj6 = { style: null };
   const items4 = [tmp.progress, ];
-  let str2 = globalThis;
+  let str = globalThis;
   items4[1] = { width: "" + progressPercentage + "%" };
-  obj6.style = items4;
-  obj4.children = callback(closure_3, obj6);
-  const items5 = [callback(closure_3, obj4), ];
-  const obj8 = { style: tmp.textContent };
-  const obj9 = { style: tmp.textLeft };
+  obj6[0] = items4;
+  obj4[3] = tmp15(closure_3, obj6);
+  const items5 = [tmp15(closure_3, obj4), ];
+  const obj8 = { style: tmp.textContent, children: null };
+  const obj9 = { style: tmp.textLeft, children: null };
   if ("value" === singleStringOrSkeleton.status) {
-    const obj10 = { variant: "heading-sm/medium", lineClamp: 2, children: singleStringOrSkeleton.text };
-    let tmp27 = callback(require(4161) /* Text */.Text, obj10);
+    const obj10 = { variant: "heading-sm/medium", lineClamp: 2, children: null };
+    obj10[2] = singleStringOrSkeleton.text;
+    let tmp15Result = tmp15(tmp3(4185).Text, obj10);
   } else {
-    const obj11 = { variant: "heading-sm/medium" };
-    tmp27 = callback(require(12134) /* ImageSkeleton */.TextSkeleton, obj11);
+    tmp15Result = tmp15(tmp3(12158).TextSkeleton, { variant: "heading-sm/medium" });
   }
-  const items6 = [tmp27, ];
+  const items6 = [tmp15Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
-    const obj12 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 2, children: singleStringOrSkeleton1.text };
-    let tmp34 = callback(require(4161) /* Text */.Text, obj12);
+    const obj11 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 2, children: null };
+    obj11[3] = singleStringOrSkeleton1.text;
+    tmp15Result = tmp15(tmp3(4185).Text, obj11);
   } else {
-    const obj13 = { variant: "text-xs/medium" };
-    tmp34 = callback(require(12134) /* ImageSkeleton */.TextSkeleton, obj13);
+    tmp15Result = tmp15(tmp3(12158).TextSkeleton, { variant: "text-xs/medium" });
   }
-  items6[1] = tmp34;
-  obj9.children = items6;
+  items6[1] = tmp15Result;
+  obj9[1] = items6;
   const items7 = [closure_5(closure_3, obj9), ];
   if (null != iter) {
-    const obj14 = { variant: "text-sm/medium", lineClamp: 1, style: tmp.progressText };
+    const obj12 = { variant: "text-sm/medium", lineClamp: 1, style: null, children: null };
+    obj12[2] = tmp.progressText;
     if (null != iter2) {
       iter = iter2.value;
-      iter2 = str2.HermesInternal.concat;
-      str2 = "/";
+      iter2 = str.HermesInternal.concat;
+      str = "/";
       let iter2Result = iter2(iter.value, "/", iter);
     } else {
+      tmp3Result = tmp3(12070);
       const _HermesInternal = HermesInternal;
-      iter2Result = "" + require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */.decimalToClampedPercentage(iter.value) + "%";
-      const obj20 = require(12046) /* resolvedValuesFromUserApplicationIdentityProfile */;
+      iter2Result = "" + tmp3Result.decimalToClampedPercentage(iter.value) + "%";
     }
-    obj14.children = iter2Result;
-    callback(require(4161) /* Text */.Text, obj14);
-    const tmp41 = callback;
+    obj12[3] = iter2Result;
+    tmp15(tmp3(4185).Text, obj12);
   } else {
-    items7[1] = callback(require(12134) /* ImageSkeleton */.TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
-    obj8.children = items7;
-    items5[1] = tmp23(tmp22, obj8);
-    obj3.children = items5;
-    items3[1] = closure_5(tmp18, obj3);
-    obj.children = items3;
-    return closure_5(closure_3, obj);
+    items7[1] = tmp15(tmp3(12158).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
+    obj8[1] = items7;
+    items5[1] = tmp11(tmp12, obj8);
+    obj3[1] = items5;
+    items3[1] = tmp11(tmp12, obj3);
+    obj[1] = items3;
+    return tmp11(tmp12, obj);
   }
 };

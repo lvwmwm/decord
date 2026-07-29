@@ -1,25 +1,25 @@
-// Module ID: 14347
-// Function ID: 110028
+// Module ID: 14369
+// Function ID: 14370
 // Name: useValue
-// Dependencies: [4157, 7733, 566, 13479, 10099, 1212, 2557, 2]
+// Dependencies: [4181, 7756, 589, 13502, 10120, 1236, 2581, 2]
 // Exports: onValueChange, useValue
 
-// Module 14347 (useValue)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14369 (useValue)
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createToggle from "createToggle";
 
 const require = arg1;
 function useValue() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.displayNameStylesEnabled);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  return require(589) /* initialize */.useStateFromStores(items, () => obj.displayNameStylesEnabled);
 }
 function onValueChange(enabled) {
-  const result = require(13479) /* setFontSize */.setDisplayNameStylesEnabled(enabled);
+  const result = require(13502) /* setFontSize */.setDisplayNameStylesEnabled(enabled);
 }
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2557)["2gFUEw"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2581)["2gFUEw"]);
   },
   parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useValue,

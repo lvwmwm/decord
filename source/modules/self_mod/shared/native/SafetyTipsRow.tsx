@@ -1,20 +1,20 @@
-// Module ID: 7597
-// Function ID: 60700
+// Module ID: 7621
+// Function ID: 7622
 // Name: SafetyTipsRow
-// Dependencies: [31, 27, 33, 4165, 689, 5198, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5220, 4185, 2]
 // Exports: default
 
-// Module 7597 (SafetyTipsRow)
-import "result";
+// Module 7621 (SafetyTipsRow)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { width: 32, height: 32, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, alignItems: "center", justifyContent: "center", marginRight: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.indexContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { indexContainer: null };
+createCacheKey = { width: 32, height: 32, backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center", marginRight: require("Themes").space.PX_4 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/self_mod/shared/native/SafetyTipsRow.tsx");
 
 export default function SafetyTipsRow(arg0) {
@@ -22,26 +22,13 @@ export default function SafetyTipsRow(arg0) {
   let end;
   let index;
   let tip;
+  let _require;
   ({ index, tip, description, end } = arg0);
-  const _require = _createForOfIteratorHelperLoose();
-  let obj = {
-    icon: jsx((index) => {
-      obj = { style: lib.indexContainer, children: outer1_3(lib(outer1_1[6]).Text, obj) };
-      obj = { variant: "heading-md/semibold", color: "text-brand", children: index.index };
-      return outer1_3(outer1_2, obj);
-    }, { index }),
-    label: tip,
-    subLabel: description,
-    end
-  };
-  return jsx(_require(5198).TableRow, {
-    icon: jsx((index) => {
-      obj = { style: lib.indexContainer, children: outer1_3(lib(outer1_1[6]).Text, obj) };
-      obj = { variant: "heading-md/semibold", color: "text-brand", children: index.index };
-      return outer1_3(outer1_2, obj);
-    }, { index }),
-    label: tip,
-    subLabel: description,
-    end
-  });
+  _require = createCacheKey();
+  const obj = { icon: null, label: null, subLabel: null, end: null };
+  obj[0] = jsx((children) => outer1_3(outer1_2, { style: lib.indexContainer, children: outer1_3(lib(outer1_1[6]).Text, { variant: "heading-md/semibold", color: "text-brand", children: children.index }) }), { index });
+  obj[1] = tip;
+  obj[2] = description;
+  obj[3] = end;
+  return jsx(_require(5220).TableRow, { icon: null, label: null, subLabel: null, end: null });
 };

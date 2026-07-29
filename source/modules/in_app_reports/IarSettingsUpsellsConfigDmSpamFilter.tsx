@@ -1,35 +1,39 @@
-// Module ID: 7682
-// Function ID: 61352
+// Module ID: 7705
+// Function ID: 7706
 // Name: items
-// Dependencies: [1212, 7670, 669, 3838, 1282, 2]
+// Dependencies: [1236, 7693, 692, 3862, 1306, 2]
 
-// Module 7682 (items)
+// Module 7705 (items)
 const obj = {
   getTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.vJOqMB);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.vJOqMB);
   },
   getDisabledTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["B5ZvY+"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["B5ZvY+"]);
   },
   getDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["43UEUh"]);
-  }
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["43UEUh"]);
+  },
+  eligibleReportSubtypes: null,
+  eligibleChannelTypes: null,
+  onApply: null,
+  predicate: null
 };
 const items = [require("ReportNames").ReportSubType.SUB_SPAM];
-obj.eligibleReportSubtypes = items;
+obj[3] = items;
 const items1 = [require("set").ChannelTypes.DM, require("set").ChannelTypes.GROUP_DM];
-obj.eligibleChannelTypes = items1;
-obj.onApply = function onApply() {
-  const DmSpamFilterV2 = require(3838) /* explicitContentFromProto */.DmSpamFilterV2;
-  return DmSpamFilterV2.updateSetting(require(1282) /* _callSuper */.DmSpamFilterV2.NON_FRIENDS);
+obj[4] = items1;
+obj[5] = function onApply() {
+  const DmSpamFilterV2 = require(3862) /* explicitContentFromProto */.DmSpamFilterV2;
+  return DmSpamFilterV2.updateSetting(require(1306) /* create */.DmSpamFilterV2.NON_FRIENDS);
 };
-obj.predicate = function predicate() {
-  const DmSpamFilterV2 = require(3838) /* explicitContentFromProto */.DmSpamFilterV2;
+obj[6] = function predicate() {
+  const DmSpamFilterV2 = require(3862) /* explicitContentFromProto */.DmSpamFilterV2;
   const setting = DmSpamFilterV2.getSetting();
-  return setting === require(1282) /* _callSuper */.DmSpamFilterV2.DISABLED;
+  return setting === require(1306) /* create */.DmSpamFilterV2.DISABLED;
 };
 const result = require("set").fileFinishedImporting("modules/in_app_reports/IarSettingsUpsellsConfigDmSpamFilter.tsx");
 

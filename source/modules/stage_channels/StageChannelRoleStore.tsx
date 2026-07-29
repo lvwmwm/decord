@@ -1,170 +1,71 @@
-// Module ID: 4989
-// Function ID: 42666
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 1918, 1911, 1838, 1850, 4181, 4349, 3798, 1356, 22, 4990, 566, 686, 2]
+// Module ID: 5011
+// Function ID: 5012
+// Name: buildStageChannelUserRoles
+// Dependencies: [1372, 1942, 1935, 1862, 1874, 4205, 4374, 3822, 1380, 12, 589, 5012, 709, 2]
 
-// Module 4989 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import useIsStageSpeakingDisabledForCurrentUser from "useIsStageSpeakingDisabledForCurrentUser";
-import dispatcher from "dispatcher";
-import set from "set";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_createForOfIteratorHelperLoose";
-import closure_12 from "_createForOfIteratorHelperLoose";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
+// Module 5011 (buildStageChannelUserRoles)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import updateVoiceState from "updateVoiceState";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function isSpeaker(id, id2) {
-  voiceStateForChannel = voiceStateForChannel.getVoiceStateForChannel(id2, id);
-  const audienceRequestToSpeakState = require(4349) /* getAudienceRequestToSpeakState */.getAudienceRequestToSpeakState(voiceStateForChannel);
-  return audienceRequestToSpeakState === require(4349) /* getAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE;
-}
-function isModerator(id, id2, channel) {
-  let obj = importAll(3798);
-  obj = { permission: require(1356) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS, user: id, context: id2, overwrites: channel.permissionOverwrites, roles: unsafeMutableRoles.getUnsafeMutableRoles(id2.id) };
-  return obj.can(obj);
-}
-function buildStageChannelUserRoles(id, channelId) {
-  let flag = arg2;
-  if (arg2 === undefined) {
+function buildStageChannelUserRoles(id, closure_0, flag) {
+  if (flag === undefined) {
     flag = false;
   }
-  if (null == dependencyMap[channelId]) {
-    dependencyMap[channelId] = {};
+  if (null == dependencyMap[closure_0]) {
+    dependencyMap[closure_0] = {};
   }
   if (flag === undefined) {
     flag = false;
   }
-  const channel = store.getChannel(channelId);
+  const channel = store.getChannel(closure_0);
   let guildId;
-  if (null != channel) {
+  if (channel != null) {
     guildId = channel.getGuildId();
   }
   guild = guild.getGuild(guildId);
   if (null != guild) {
     if (null != channel) {
       if (channel.isGuildStageVoice()) {
-        const obj = {};
-        obj[obj.SPEAKER] = isSpeaker(id, channelId);
-        let tmp8 = null;
+        let obj = {};
+        voiceStateForChannel = voiceStateForChannel.getVoiceStateForChannel(closure_0, id);
+        const audienceRequestToSpeakState = require(4374) /* useAudienceRequestToSpeakState */.getAudienceRequestToSpeakState(voiceStateForChannel);
+        obj[obj.SPEAKER] = audienceRequestToSpeakState === require(4374) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE;
+        let canResult = null;
         if (flag) {
-          tmp8 = isModerator(id, guild, channel);
+          obj = { permission: null, user: null, context: null, overwrites: null, roles: null };
+          obj[0] = tmp8(1380).MODERATE_STAGE_CHANNEL_PERMISSIONS;
+          obj[1] = id;
+          obj[2] = guild;
+          obj[3] = channel.permissionOverwrites;
+          obj[4] = unsafeMutableRoles.getUnsafeMutableRoles(guild.id);
+          canResult = importAll(3822).can(obj);
+          const obj4 = importAll(3822);
         }
-        obj[obj.MODERATOR] = tmp8;
+        obj[obj.MODERATOR] = canResult;
         let tmp4 = obj;
+        const obj3 = require(4374) /* useAudienceRequestToSpeakState */;
+        tmp8 = require;
       }
-      dependencyMap[channelId][id] = tmp4;
+      dependencyMap[closure_0][id] = tmp4;
       return tmp4;
     }
   }
   tmp4 = obj;
 }
 function resetStageChannelRolesForGuild(guildId) {
-  let done;
   const values = Object.values(store.getMutableGuildChannelsForGuild(guildId));
   const found = values.filter((isGuildStageVoice) => isGuildStageVoice.isGuildStageVoice());
-  const tmp3 = _createForOfIteratorHelperLoose(found);
-  let iter = tmp3();
-  if (!iter.done) {
-    do {
-      let tmp4 = closure_16;
-      let id = iter.value.id;
-      delete tmp2[tmp];
-      let iter2 = tmp3();
-      iter = iter2;
-      done = iter2.done;
-    } while (!done);
+  for (const item10015 of found) {
+    let tmp3 = closure_11;
+    let id = item10015.id;
+    delete tmp2[tmp];
+    continue;
   }
   return found.length > 0;
 }
@@ -199,7 +100,7 @@ function handleGuildMemberUpdate(arg0) {
   return flag;
 }
 function handleGuildCreateOrDelete(arg0) {
-  for (const key10005 in closure_16) {
+  for (const key10005 in closure_11) {
     let tmp6 = key10005;
     let tmp7 = store;
     let basicChannel = store.getBasicChannel(key10005);
@@ -210,7 +111,7 @@ function handleGuildCreateOrDelete(arg0) {
     if (tmp4) {
       continue;
     } else {
-      let tmp5 = closure_16;
+      let tmp5 = closure_11;
       delete tmp[tmp2];
       continue;
     }
@@ -218,126 +119,82 @@ function handleGuildCreateOrDelete(arg0) {
   }
 }
 let obj = { SPEAKER: "speaker", MODERATOR: "moderator" };
-let closure_16 = {};
+let closure_11 = {};
 obj = { [obj.SPEAKER]: false, [obj.MODERATOR]: false };
-let tmp2 = ((Store) => {
-  class StageChannelRoleStore {
-    constructor() {
-      self = this;
-      tmp = outer1_4(this, StageChannelRoleStore);
-      obj = outer1_7(StageChannelRoleStore);
-      tmp2 = outer1_6;
-      if (outer1_18()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_7;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+class StageChannelRoleStore extends Store {
+}
+const prototype = StageChannelRoleStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(trackCommunicationDisabled, ensureGuildLoaded, createGuildRecordFromRust, mergeGuildAvatar, updateVoiceState, createGuildRoleRecordFromRust);
+};
+prototype["isSpeaker"] = function isSpeaker(id, channelId) {
+  return this.getPermissionsForUser(id, channelId)[obj.SPEAKER];
+};
+prototype["isModerator"] = function isModerator(id, id2) {
+  let flag = this.getPermissionsForUser(id, id2, true)[obj.MODERATOR];
+  if (flag == null) {
+    flag = false;
   }
-  callback2(StageChannelRoleStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_10, outer1_9, outer1_12, outer1_13, outer1_14, outer1_11);
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "isSpeaker",
-    value(arg0, arg1) {
-      return this.getPermissionsForUser(arg0, arg1)[outer1_15.SPEAKER];
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isModerator",
-    value(arg0, arg1) {
-      const tmp = this.getPermissionsForUser(arg0, arg1, true)[outer1_15.MODERATOR];
-      return null != tmp && tmp;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "isAudienceMember",
-    value(arg0, arg1) {
-      const permissionsForUser = this.getPermissionsForUser(arg0, arg1);
-      let tmp2 = !permissionsForUser[outer1_15.SPEAKER];
-      if (tmp2) {
-        tmp2 = !permissionsForUser[outer1_15.MODERATOR];
+  return flag;
+};
+prototype["isAudienceMember"] = function isAudienceMember(userId, voiceChannelId) {
+  const permissionsForUser = this.getPermissionsForUser(userId, voiceChannelId);
+  let tmp3 = !tmp2;
+  if (!permissionsForUser[obj.SPEAKER]) {
+    tmp3 = !permissionsForUser[obj.MODERATOR];
+  }
+  return tmp3;
+};
+prototype["getPermissionsForUser"] = function getPermissionsForUser(id, closure_0, flag) {
+  if (flag === undefined) {
+    flag = false;
+  }
+  if (null != id) {
+    if (null != closure_0) {
+      currentUser = currentUser.getCurrentUser();
+      id = undefined;
+      if (currentUser != null) {
+        id = currentUser.id;
       }
-      return tmp2;
-    }
-  };
-  items[4] = {
-    key: "getPermissionsForUser",
-    value(arg0, arg1) {
-      let flag = arg2;
-      if (arg2 === undefined) {
-        flag = false;
-      }
-      if (null != arg0) {
-        if (null != arg1) {
-          const currentUser = outer1_13.getCurrentUser();
-          let id;
-          if (null != currentUser) {
-            id = currentUser.id;
-          }
-          if (arg0 === id) {
-            if (obj.isStageSpeakingDisabledForCurrentUser()) {
-              return outer1_17;
-            }
-            obj = StageChannelRoleStore(outer1_3[15]);
-          }
-          let tmp6;
-          if (null != outer1_16[arg1]) {
-            tmp6 = tmp5[arg0];
-          }
-          if (null != tmp6) {
-            let tmp9 = tmp6;
-            if (flag) {
-              tmp9 = tmp6;
-              if (null == tmp6[outer1_15.MODERATOR]) {
-                tmp9 = outer1_23(arg0, arg1, true);
-              }
-            }
-            let tmp8 = tmp9;
-          } else {
-            tmp8 = outer1_23(arg0, arg1, flag);
-          }
-          return tmp8;
+      if (id === id) {
+        const obj = require(5012) /* useIsStageSpeakingDisabledForCurrentUser */;
+        if (obj.isStageSpeakingDisabledForCurrentUser()) {
+          return obj;
         }
       }
-      return outer1_17;
+      let tmp6;
+      if (dependencyMap[closure_0] != null) {
+        tmp6 = tmp5[id];
+      }
+      if (null != tmp6) {
+        let tmp9 = tmp6;
+        if (flag) {
+          tmp9 = tmp6;
+          if (null == tmp6[obj.MODERATOR]) {
+            tmp9 = buildStageChannelUserRoles(id, closure_0, true);
+          }
+        }
+        let tmp8 = tmp9;
+      } else {
+        tmp8 = buildStageChannelUserRoles(id, closure_0, flag);
+      }
+      return tmp8;
     }
-  };
-  return callback(StageChannelRoleStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "StageChannelRoleStore";
+  }
+  return obj;
+};
+StageChannelRoleStore.displayName = "StageChannelRoleStore";
 obj = {
-  CHANNEL_UPDATES: function handleChannelUpdate(channels) {
-    let done;
-    const tmp3 = _createForOfIteratorHelperLoose(channels.channels);
-    let iter = tmp3();
-    if (!iter.done) {
-      do {
-        let tmp4 = closure_16;
-        let id = iter.value.id;
-        delete tmp2[tmp];
-        let iter2 = tmp3();
-        iter = iter2;
-        done = iter2.done;
-      } while (!done);
+  CHANNEL_UPDATES: function handleChannelUpdate(arg0) {
+    for (const item10006 of tmp3) {
+      let tmp4 = closure_11;
+      let id = item10006.id;
+      delete tmp2[tmp];
+      continue;
     }
   },
   CONNECTION_OPEN: function handleConnectionOpen() {
-    let closure_16 = {};
+    let closure_11 = {};
   },
   GUILD_MEMBER_REMOVE: handleGuildMemberUpdate,
   GUILD_MEMBER_UPDATE: handleGuildMemberUpdate,
@@ -349,19 +206,20 @@ obj = {
   },
   VOICE_STATE_UPDATES: function handleVoiceStateUpdates(voiceStates) {
     voiceStates = voiceStates.voiceStates;
-    let reduced = !importDefault(22).isEmpty(closure_16);
-    if (reduced) {
+    const isEmptyResult = importDefault(12).isEmpty(closure_11);
+    let reduced = !isEmptyResult;
+    if (!isEmptyResult) {
       reduced = voiceStates.reduce((arg0, arg1) => {
         let channelId;
         let userId;
         ({ userId, channelId } = arg1);
         let flag = false;
         if (null != channelId) {
-          const channel = outer1_9.getChannel(channelId);
+          channel = channel.getChannel(channelId);
           let num = null == channel || !channel.isGuildStageVoice();
           if (!num) {
             num = 0;
-            if (null != outer1_16[channelId]) {
+            if (table[channelId] != null) {
               delete tmp[tmp2];
               num = 0;
             }
@@ -379,9 +237,9 @@ obj = {
   GUILD_CREATE: handleGuildCreateOrDelete,
   GUILD_DELETE: handleGuildCreateOrDelete
 };
-tmp2 = new tmp2(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/stage_channels/StageChannelRoleStore.tsx");
+const stageChannelRoleStore = new StageChannelRoleStore(require("dispatcher"), obj);
+const result = require("createGuildRoleRecordFromRust").fileFinishedImporting("modules/stage_channels/StageChannelRoleStore.tsx");
 
-export default tmp2;
+export default stageChannelRoleStore;
 export const StagePermissionBuckets = obj;
 export const NO_PERMISSIONS = obj;

@@ -1,22 +1,23 @@
-// Module ID: 15159
-// Function ID: 115254
+// Module ID: 15192
+// Function ID: 15193
 // Name: LimitAndDurationInfo
-// Dependencies: [31, 5767, 1838, 3793, 4177, 4181, 653, 33, 4165, 566, 11209, 5771, 9109, 15160, 15161, 4348, 1273, 15163, 15164, 15073, 4985, 11423, 15074, 15165, 11977, 2]
+// Dependencies: [19, 5785, 1862, 3817, 4201, 4205, 676, 21, 4189, 589, 11233, 5789, 9133, 15193, 15194, 4373, 1297, 15196, 15197, 15106, 5007, 11447, 15107, 15198, 12001, 2]
 // Exports: default
 
-// Module 15159 (LimitAndDurationInfo)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_createForOfIteratorHelperLoose";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 15192 (LimitAndDurationInfo)
+import "SubscriptionGatedChannelIcon";
+import guildHasCommunity from "guildHasCommunity";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
+import updateVoiceState from "updateVoiceState";
 import ME from "ME";
-import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import { jsx } from "useShowConnectedUserLimit";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let Fonts;
+let c9;
+let metroImportAll;
 const require = arg1;
 function LimitAndDurationInfo(channel) {
   let hasMedia;
@@ -25,56 +26,59 @@ function LimitAndDurationInfo(channel) {
   let voiceStatesCount;
   channel = channel.channel;
   ({ voiceStatesCount, selected } = channel);
-  let obj = channel(566);
-  const items = [closure_7, closure_5];
+  let obj = channel(589);
+  const items = [updateVoiceState, getUncachedChannelPermissions];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     let isGuildStageVoiceResult = channel.isGuildStageVoice();
     if (isGuildStageVoiceResult) {
       let obj = channel(outer1_2[20]);
-      isGuildStageVoiceResult = obj.getStageHasMedia(channel.id);
+      isGuildStageVoiceResult = obj.getStageHasMedia(tmp.id);
     }
-    obj = { isLocked: !outer1_5.can(outer1_9.CONNECT, channel), hasVideo: outer1_7.hasVideo(channel.id), hasMedia: isGuildStageVoiceResult };
+    obj = { isLocked: !outer1_5.can(outer1_9.CONNECT, tmp), hasVideo: outer1_7.hasVideo(channel.id), hasMedia: isGuildStageVoiceResult };
     return obj;
   });
   ({ hasVideo, hasMedia } = stateFromStoresObject);
-  obj = { channel, locked: stateFromStoresObject.isLocked };
-  let tmp3 = hasVideo;
+  obj = { channel, locked: stateFromStoresObject.isLocked, video: null, selected: null };
+  let tmp5 = hasVideo;
   if (!hasVideo) {
-    tmp3 = hasMedia;
+    tmp5 = hasMedia;
   }
-  obj.video = tmp3;
-  obj.selected = selected;
-  if (tmp2(obj)) {
-    obj = { userCount: voiceStatesCount };
+  obj[2] = tmp5;
+  obj[3] = selected;
+  if (tmp4(obj)) {
+    obj = { userCount: null, video: null, channel: null };
+    obj[0] = voiceStatesCount;
     if (!hasVideo) {
       hasVideo = hasMedia;
     }
-    obj.video = hasVideo;
-    obj.channel = channel;
-    let tmp4Result = tmp4(channel(15074).ConnectedUserLimit, obj);
+    obj[1] = hasVideo;
+    obj[2] = channel;
+    let tmp6Result = tmp6(channel(15107).ConnectedUserLimit, obj);
   } else {
-    const obj1 = { channel };
-    tmp4Result = tmp4(DurationInfo, obj1);
+    const obj1 = { channel: null };
+    obj1[0] = channel;
+    tmp6Result = tmp6(DurationInfo, obj1);
   }
-  return tmp4Result;
+  return tmp6Result;
 }
 function DurationInfo(channel) {
-  let obj = require(15165) /* useStartTime */;
+  let obj = require(15198) /* useStartTime */;
   const startTime = obj.useStartTime(channel.channel);
-  let tmp3 = null;
+  let tmp5 = null;
   if (null != startTime) {
-    obj = {};
-    obj = { start: startTime };
-    obj.entry = obj;
-    obj.style = tmp.activeTimestamp;
-    tmp3 = jsx(require(11977) /* ActiveTimestamp */.ActiveTimestamp, { start: startTime });
+    obj = { entry: null, style: null };
+    obj = { start: null };
+    obj[0] = startTime;
+    obj[0] = obj;
+    obj[1] = tmp.activeTimestamp;
+    tmp5 = jsx(require(12001) /* ActiveTimestamp */.ActiveTimestamp, { start: null });
   }
-  return tmp3;
+  return tmp5;
 }
-({ GuildFeatures: closure_8, Permissions: closure_9 } = ME);
-_createForOfIteratorHelperLoose = { fontFamily: ME.Fonts.CODE_NORMAL, fontSize: 12, lineHeight: 16 };
-let closure_11 = _createForOfIteratorHelperLoose.createStyles({ activeTimestamp: _createForOfIteratorHelperLoose });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/guild_sidebar/native/ChannelInfo.tsx");
+({ GuildFeatures: metroImportAll, Permissions: c9, Fonts } = ME);
+createCacheKey = { fontFamily: Fonts.CODE_NORMAL, fontSize: 12, lineHeight: 16 };
+let closure_11 = createCacheKey.createStyles({ activeTimestamp: createCacheKey });
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guild_sidebar/native/ChannelInfo.tsx");
 
 export default function ChannelInfo(channel) {
   let enableActivities;
@@ -89,78 +93,88 @@ export default function ChannelInfo(channel) {
   let voiceStates;
   channel = channel.channel;
   ({ isChannelCollapsed, voiceStates, enableConnectedUserLimit, enableActivities, muted, isSubscriptionGated, needSubscriptionToAccess } = channel);
-  let obj = channel(566);
-  const items = [closure_4, closure_6, _isNativeReflectConstruct];
+  let obj = channel(589);
+  const items = [createGuildRecordFromRust, generateOldThreadCutoff, guildHasCommunity];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ guild: outer1_4.getGuild(channel.guild_id), mentionsCount: outer1_6.getMentionCount(channel.id), isMentionLowImportance: outer1_6.getIsMentionLowImportance(channel.id), isNewChannel: outer1_3.shouldIndicateNewChannel(channel.guild_id, channel.id) }));
   ({ guild, mentionsCount, isNewChannel } = stateFromStoresObject);
-  const tmp2 = importDefault(11209)(channel);
-  let obj1 = channel(5771);
+  const tmp5 = importDefault(11233)(channel);
+  let obj1 = channel(5789);
   const optInEnabledForGuild = obj1.useOptInEnabledForGuild(channel.guild_id);
-  let obj2 = channel(9109);
-  const unreadThreadsCountForParent = obj2.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
-  obj = { mentionsCount, isNewChannel, postsWithUnreadsCount: unreadThreadsCountForParent, muted };
-  if (importDefault(15160)(obj)) {
-    obj = { mentionCount: mentionsCount, isMentionLowImportance: stateFromStoresObject.isMentionLowImportance };
+  let obj2 = channel(9133);
+  const postsWithUnreadsCount = obj2.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
+  if (importDefault(15193)({ mentionsCount, isNewChannel, postsWithUnreadsCount, muted })) {
+    obj = { mentionCount: null, isMentionLowImportance: null, isNewChannel: null, postsWithUnreadsCount: null, muted: null };
+    obj[0] = mentionsCount;
+    obj[1] = stateFromStoresObject.isMentionLowImportance;
     if (isNewChannel) {
       isNewChannel = optInEnabledForGuild;
     }
-    obj.isNewChannel = isNewChannel;
-    let tmp28 = null;
+    obj[2] = isNewChannel;
+    let tmp19 = null;
     if (channel.isForumLikeChannel()) {
-      tmp28 = unreadThreadsCountForParent;
+      tmp19 = postsWithUnreadsCount;
     }
-    obj.postsWithUnreadsCount = tmp28;
-    obj.muted = muted;
-    return jsx(importDefault(15161), { mentionCount: mentionsCount, isMentionLowImportance: stateFromStoresObject.isMentionLowImportance });
+    obj[3] = tmp19;
+    obj[4] = muted;
+    let tmp12Result = jsx(tmp4(15194), { mentionCount: null, isMentionLowImportance: null, isNewChannel: null, postsWithUnreadsCount: null, muted: null });
+    const tmp17 = jsx;
+    const tmp4Result = tmp4(15194);
   } else {
     if (null != isChannelCollapsed) {
       if (isChannelCollapsed) {
         let hasItem;
-        if (null != guild) {
+        if (guild != null) {
           const features = guild.features;
           hasItem = features.has(constants.COMMUNITY);
         }
-        if (null != hasItem) {
-          if (hasItem) {
-            if (obj5.hasStream(voiceStates)) {
-              return jsx(channel(1273).LiveTag, {});
-            }
-            obj5 = channel(4348);
+        if (hasItem) {
+          let tmpResult = tmp(4373);
+          if (tmpResult.hasStream(voiceStates)) {
+            tmp12Result = jsx(tmp(1297).LiveTag, {});
           }
         }
       }
     }
     if (null != enableActivities) {
       if (enableActivities) {
-        if (obj6.showChannelItemEmbeddedActivities(tmp2)) {
-          obj1 = { embeddedApps: tmp2, muted };
-          return jsx(importDefault(15164), { embeddedApps: tmp2, muted });
+        tmpResult = tmp(15196);
+        if (tmpResult.showChannelItemEmbeddedActivities(tmp5)) {
+          obj = { embeddedApps: null, muted: null };
+          obj[0] = tmp5;
+          obj[1] = muted;
+          tmp12Result = jsx(tmp4(15197), { embeddedApps: null, muted: null });
         }
-        obj6 = channel(15163);
       }
     }
     if (null != isSubscriptionGated) {
       if (null != needSubscriptionToAccess) {
         if (isSubscriptionGated) {
-          obj2 = { locked: needSubscriptionToAccess };
-          return jsx(importDefault(15073), { locked: needSubscriptionToAccess });
+          obj1 = { locked: null };
+          obj1[0] = needSubscriptionToAccess;
+          tmp12Result = jsx(tmp4(15106), { locked: null });
         }
       }
     }
+    tmp12Result = null;
     if (null != enableConnectedUserLimit) {
+      tmp12Result = null;
       if (enableConnectedUserLimit) {
-        let length;
-        if (null != voiceStates) {
-          length = voiceStates.length;
+        obj2 = { channel: null, voiceStatesCount: null, selected: null };
+        obj2[0] = channel;
+        let num;
+        if (voiceStates != null) {
+          num = voiceStates.length;
         }
-        let num3 = 0;
-        if (null != length) {
-          num3 = length;
+        if (num == null) {
+          num = 0;
         }
-        const obj3 = { channel, voiceStatesCount: num3, selected: channel.isChannelSelected };
-        return <LimitAndDurationInfo channel={channel} voiceStatesCount={num3} selected={arg0.isChannelSelected} />;
+        obj2[1] = num;
+        obj2[2] = channel.isChannelSelected;
+        tmp12Result = <LimitAndDurationInfo channel={null} voiceStatesCount={null} selected={null} />;
+        const tmp12 = jsx;
+        const tmp13 = LimitAndDurationInfo;
       }
     }
-    return null;
   }
+  return tmp12Result;
 };

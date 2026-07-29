@@ -1,25 +1,22 @@
-// Module ID: 11152
-// Function ID: 86608
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 4065, 2]
+// Module ID: 11176
+// Function ID: 11177
+// Name: prototype
+// Dependencies: [4089, 2]
 
-// Module 11152 (_isNativeReflectConstruct)
-import _defineProperties from "_defineProperties";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "_isNativeReflectConstruct";
+// Module 11176 (prototype)
+import "prototype";
 
-function _isNativeReflectConstruct() {
-  let _defineProperties = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return _defineProperties;
+const prototype = function UploaderError(body) {
+  tmp = new tmp(body, arg1, new.target, tmp, new.target);
+  // ThrowIfThisInitialized (0x7c)
+  tmp.attachments = [];
+  if (tmp3) {
+    tmp.attachments = body.body.attachments;
   }
-  const result = _isNativeReflectConstruct();
+  return tmp;
+}.prototype;
+class prototype extends tmp2 {
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/errors/UploaderError.tsx");
+const result = require("set").fileFinishedImporting("modules/errors/UploaderError.tsx");
 
-export default tmp2;
+export default prototype;

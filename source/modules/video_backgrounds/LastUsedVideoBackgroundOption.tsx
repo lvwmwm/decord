@@ -1,59 +1,73 @@
-// Module ID: 8824
-// Function ID: 69724
-// Name: getOptionFromSettingsFiltered
-// Dependencies: [31, 1316, 1850, 8821, 3811, 566, 2]
+// Module ID: 8848
+// Function ID: 8849
+// Name: getLastUsedVideoBackgroundOption
+// Dependencies: [19, 1340, 1874, 8845, 3835, 589, 2]
 // Exports: getLastUsedVideoBackgroundOption, useLastUsedVideoBackgroundOption
 
-// Module 8824 (getOptionFromSettingsFiltered)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 8848 (getLastUsedVideoBackgroundOption)
+import noop from "noop";
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
-function getOptionFromSettingsFiltered(prop, id) {
-  const videoBackgroundOptionFromProto = require(8821) /* isCustomBackgroundOption */.getVideoBackgroundOptionFromProto(prop, id.id);
-  const obj = require(8821) /* isCustomBackgroundOption */;
-  if (!obj2.isCustomBackgroundOption(videoBackgroundOptionFromProto)) {
-    if ("number" !== typeof videoBackgroundOptionFromProto) {
-      let tmp7 = videoBackgroundOptionFromProto;
-    } else {
-      tmp7 = null;
-      const obj4 = require(8821) /* isCustomBackgroundOption */;
-    }
-    let tmp4 = tmp7;
-  } else {
-    tmp4 = null;
-    const obj3 = importDefault(3811);
-  }
-  return tmp4;
-}
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/video_backgrounds/LastUsedVideoBackgroundOption.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/video_backgrounds/LastUsedVideoBackgroundOption.tsx");
 
 export const getLastUsedVideoBackgroundOption = function getLastUsedVideoBackgroundOption(currentUser) {
   const voiceAndVideo = settings.settings.voiceAndVideo;
   let prop;
-  if (null != voiceAndVideo) {
+  if (voiceAndVideo != null) {
     prop = voiceAndVideo.videoBackgroundFilterDesktop;
   }
-  return getOptionFromSettingsFiltered(prop, currentUser);
+  const videoBackgroundOptionFromProto = require(8845) /* isAnimatedBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
+  const obj = require(8845) /* isAnimatedBackgroundOption */;
+  const tmp2 = require;
+  if (!obj2.isCustomBackgroundOption(videoBackgroundOptionFromProto)) {
+    if (typeof videoBackgroundOptionFromProto === "os") {
+      let tmp7 = videoBackgroundOptionFromProto;
+    } else {
+      tmp7 = null;
+      const tmp2Result = tmp2(8845);
+    }
+    let tmp6 = tmp7;
+  } else {
+    tmp6 = null;
+    const obj3 = importDefault(3835);
+  }
+  return tmp6;
 };
 export const useLastUsedVideoBackgroundOption = function useLastUsedVideoBackgroundOption() {
-  let prop;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = stateFromStores1(566).useStateFromStores(items, () => outer1_4.settings);
-  const obj = stateFromStores1(566);
-  const items1 = [closure_5];
-  stateFromStores1 = stateFromStores1(566).useStateFromStores(items1, () => outer1_5.getCurrentUser());
+  const items = [handleConnectionClosedOrResumed];
+  const stateFromStores = stateFromStores1(589).useStateFromStores(items, () => settings.settings);
+  let obj = stateFromStores1(589);
+  const items1 = [mergeGuildAvatar];
+  stateFromStores1 = stateFromStores1(589).useStateFromStores(items1, () => currentUser.getCurrentUser());
   const voiceAndVideo = stateFromStores.voiceAndVideo;
-  if (null != voiceAndVideo) {
+  let prop;
+  if (voiceAndVideo != null) {
     prop = voiceAndVideo.videoBackgroundFilterDesktop;
   }
   const items2 = [prop, stateFromStores1];
   return React.useMemo(() => {
-    let tmp = null;
+    let tmp2 = null;
     if (null != stateFromStores1) {
-      tmp = outer1_6(prop, stateFromStores1);
+      const videoBackgroundOptionFromProto = stateFromStores1(outer1_2[3]).getVideoBackgroundOptionFromProto(prop, tmp.id);
+      const obj = stateFromStores1(outer1_2[3]);
+      const tmp4 = stateFromStores1;
+      if (!obj2.isCustomBackgroundOption(videoBackgroundOptionFromProto)) {
+        if (typeof videoBackgroundOptionFromProto === "os") {
+          let tmp9 = videoBackgroundOptionFromProto;
+        } else {
+          tmp9 = null;
+          const tmp4Result = tmp4(tmp5[3]);
+        }
+        let tmp8 = tmp9;
+      } else {
+        tmp8 = null;
+        const obj3 = prop(tmp5[4]);
+      }
+      tmp2 = tmp8;
+      obj2 = stateFromStores1(outer1_2[3]);
     }
-    return tmp;
+    return tmp2;
   }, items2);
 };

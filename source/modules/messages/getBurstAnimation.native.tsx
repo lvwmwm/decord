@@ -1,216 +1,283 @@
-// Module ID: 6078
-// Function ID: 54363
+// Module ID: 6096
+// Function ID: 6097
 // Name: items
-// Dependencies: [5, 6079, 6080, 6081, 6082, 6083, 6084, 6085, 6086, 6087, 6088, 6089, 6090, 6091, 6092, 6093, 6094, 6095, 6096, 6097, 6098, 6099, 6100, 6101, 6102, 6103, 6104, 6105, 6106, 6107, 6108, 6109, 6110, 6111, 6112, 6113, 6114, 6115, 2]
+// Dependencies: [5, 6097, 6098, 6099, 6100, 6101, 6102, 6103, 6104, 6105, 6106, 6107, 6108, 6109, 6110, 6111, 6112, 6113, 6114, 6115, 6116, 6117, 6118, 6119, 6120, 6121, 6122, 6123, 6124, 6125, 6126, 6127, 6128, 6129, 6130, 6131, 6132, 6133, 2]
+// Exports: getBurstAnimation
 
-// Module 6078 (items)
-import items from "items";
-
-const require = arg1;
+// Module 6096 (items)
+let closure_0 = arg1;
 let obj = {
   load() {
-    return require(6079) /* items */;
+    return callback(6097);
   }
 };
 const items = [
   obj,
   {
     load() {
-      return require(6080) /* items1 */;
+      return callback(6098);
     }
   },
   {
     load() {
-      return require(6081) /* items1 */;
+      return callback(6099);
     }
   },
   {
     load() {
-      return require(6082) /* items */;
+      return callback(6100);
     }
   },
   {
     load() {
-      return require(6083) /* items */;
+      return callback(6101);
     }
   },
   {
     load() {
-      return require(6084) /* items3 */;
+      return callback(6102);
     }
   },
   {
     load() {
-      return require(6085) /* items */;
+      return callback(6103);
     }
   },
   {
     load() {
-      return require(6086) /* items2 */;
+      return callback(6104);
     }
   },
   {
     load() {
-      return require(6087) /* items */;
+      return callback(6105);
     }
   },
   {
     load() {
-      return require(6088) /* items1 */;
+      return callback(6106);
     }
   },
   {
     load() {
-      return require(6089) /* items1 */;
+      return callback(6107);
     }
   },
   {
     load() {
-      return require(6090) /* items3 */;
+      return callback(6108);
     }
   },
   {
     load() {
-      return require(6091) /* items */;
+      return callback(6109);
     }
   },
   {
     load() {
-      return require(6092) /* items */;
+      return callback(6110);
     }
   },
   {
     load() {
-      return require(6093) /* items */;
+      return callback(6111);
     }
   },
   {
     load() {
-      return require(6094) /* items */;
+      return callback(6112);
     }
   },
   {
     load() {
-      return require(6095) /* items2 */;
+      return callback(6113);
     }
   },
   {
     load() {
-      return require(6096) /* items */;
+      return callback(6114);
     }
   }
 ];
 obj = {
   load() {
-    return require(6097) /* items */;
+    return callback(6115);
   }
 };
 const items1 = [
   obj,
   {
     load() {
-      return require(6098) /* items1 */;
+      return callback(6116);
     }
   },
   {
     load() {
-      return require(6099) /* items1 */;
+      return callback(6117);
     }
   },
   {
     load() {
-      return require(6100) /* items */;
+      return callback(6118);
     }
   },
   {
     load() {
-      return require(6101) /* items */;
+      return callback(6119);
     }
   },
   {
     load() {
-      return require(6102) /* items3 */;
+      return callback(6120);
     }
   },
   {
     load() {
-      return require(6103) /* items */;
+      return callback(6121);
     }
   },
   {
     load() {
-      return require(6104) /* items2 */;
+      return callback(6122);
     }
   },
   {
     load() {
-      return require(6105) /* items */;
+      return callback(6123);
     }
   },
   {
     load() {
-      return require(6106) /* items1 */;
+      return callback(6124);
     }
   },
   {
     load() {
-      return require(6107) /* items1 */;
+      return callback(6125);
     }
   },
   {
     load() {
-      return require(6108) /* items3 */;
+      return callback(6126);
     }
   },
   {
     load() {
-      return require(6109) /* items */;
+      return callback(6127);
     }
   },
   {
     load() {
-      return require(6110) /* items */;
+      return callback(6128);
     }
   },
   {
     load() {
-      return require(6111) /* items */;
+      return callback(6129);
     }
   },
   {
     load() {
-      return require(6112) /* items */;
+      return callback(6130);
     }
   },
   {
     load() {
-      return require(6113) /* items2 */;
+      return callback(6131);
     }
   },
   {
     load() {
-      return require(6114) /* items */;
+      return callback(6132);
     }
   }
 ];
-const tmp2 = (() => {
-  let closure_0 = callback(async (arg0, arg1, arg2) => {
-    const iter = (function*(arg0, arg1, arg2) {
-      let flag = arg3;
-      if (flag === undefined) {
-        flag = false;
+closure_0 = require("module_6101")((arg0, arg1, arg2) => {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
+  let closure_3 = arg3;
+  let c6 = 0;
+  let c7 = 0;
+  const iter = (function*(arg0, arg1, arg2) {
+    if (c7 === 2) {
+      c7 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
       }
-      yield undefined;
-      const obj = callback(outer2_1[37]);
-      return flag ? outer2_3 : outer2_4[obj.getBurstAnimationHash(obj, "" + arg0 + arg1 + arg2) % outer2_4.length].load();
-    })();
-    iter.next();
-    return iter;
-  });
-  return function() {
-    return callback(...arguments);
-  };
-})();
-const result = require("items1").fileFinishedImporting("modules/messages/getBurstAnimation.native.tsx");
+    } else {
+      try {
+        c7 = 2;
+        if (0 === c6) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_5 = tmp5;
+            let burstAnimationHash = tmp2;
+            let flag;
+            if (flag === undefined) {
+              flag = false;
+            }
+            burstAnimationHash = undefined;
+            c6 = 1;
+            c7 = 1;
+            return { value: "ct", done: null };
+          }
+        } else if (arg0 === 1) {
+          c7 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c7 = 3;
+          const obj1 = { value: null, done: true };
+          obj1[0] = arg1;
+          return obj1;
+        } else {
+          const _HermesInternal = HermesInternal;
+          burstAnimationHash = callback(table[37]).getBurstAnimationHash("" + callback + table + closure_2);
+          let tmp10 = closure_5;
+          if (flag) {
+            let tmp6 = closure_2;
+          } else {
+            tmp6 = length;
+          }
+          tmp10 = burstAnimationHash;
+          obj = tmp6[burstAnimationHash % length.length];
+          obj.load();
+          c7 = 3;
+          const obj5 = callback(table[37]);
+        }
+      } catch (tmp16) {
+        c7 = tmp;
+        throw tmp16;
+      }
+    }
+  })();
+  iter.next();
+  return iter;
+});
+const result = require("module_6098").fileFinishedImporting("modules/messages/getBurstAnimation.native.tsx");
 
-export const getBurstAnimation = tmp2;
+export const getBurstAnimation = function() {
+  const self = this;
+  const apply = closure_0.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+};

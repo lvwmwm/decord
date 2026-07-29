@@ -1,58 +1,60 @@
-// Module ID: 9785
-// Function ID: 76005
-// Name: OrbLottieAnimation
-// Dependencies: [31, 33, 4101, 4011, 9786, 9789, 2]
+// Module ID: 9807
+// Function ID: 9808
+// Name: forwardRef
+// Dependencies: [19, 21, 4125, 4035, 9808, 9811, 2]
 
-// Module 9785 (OrbLottieAnimation)
-import closure_2 from "result";
-import result from "result";
+// Module 9807 (forwardRef)
+import closure_2 from "noop";
+import noop from "noop";
 import { jsx } from "jsxProd";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
+let forwardRef;
 const require = arg1;
-({ useRef: closure_3, useEffect: closure_4 } = result);
-const forwardRefResult = result.forwardRef((animationType) => {
+({ useRef: c3, useEffect: c4, forwardRef } = noop);
+const forwardRefResult = forwardRef((animationType, ref) => {
   animationType = animationType.animationType;
-  let obj = animationType(4101);
+  let dependencyMap;
+  let obj = animationType(4125);
   const theme = obj.useTheme();
-  const obj2 = animationType(4011);
-  const tmp3 = callback(null);
-  const dependencyMap = tmp3;
+  const obj2 = animationType(4035);
+  const tmp5 = callback(null);
+  dependencyMap = tmp5;
   const items = [animationType];
   callback2(() => {
     if (null !== animationType) {
-      const current = tmp3.current;
-      if (null != current) {
+      const current = _undefined.current;
+      if (current != null) {
         current.play();
       }
     }
   }, items);
-  const imperativeHandle = React.useImperativeHandle(arg1, () => ({
+  const imperativeHandle = React.useImperativeHandle(ref, () => ({
     play() {
-      const current = outer1_1.current;
+      const current = ref.current;
       let playResult;
-      if (null != current) {
+      if (current != null) {
         playResult = current.play();
       }
       return playResult;
     }
   }));
   if (isThemeLightResult) {
-    let SpendEarnOrbsLottie = tmp6(9786).SpendEarnOrbsLightThemeLottie;
+    let SpendEarnOrbsLottie = tmp(9808).SpendEarnOrbsLightThemeLottie;
   } else {
-    SpendEarnOrbsLottie = tmp6(9789).SpendEarnOrbsLottie;
+    SpendEarnOrbsLottie = tmp(9811).SpendEarnOrbsLottie;
   }
-  obj = { ref: tmp3, size: "custom", width: 60, height: 60, opacity: 0.8, animation: null, useLottieDefaultColors: true };
+  obj = { ref: tmp5, size: "custom", width: 60, height: 60, opacity: 0.8, animation: null, useLottieDefaultColors: true };
   let str = "spend";
   if (null != animationType) {
     str = animationType;
   }
-  obj.animation = str;
-  return <SpendEarnOrbsLottie ref={tmp3} size="custom" width={60} height={60} opacity={0.8} animation={null} useLottieDefaultColors />;
+  obj[5] = str;
+  return <SpendEarnOrbsLottie ref={tmp5} size="custom" width={60} height={60} opacity={0.8} animation={null} useLottieDefaultColors />;
 });
 forwardRefResult.displayName = "OrbsLottieAnimation";
-result = require("useTheme").fileFinishedImporting("modules/virtual_currency/native/OrbLottieAnimation.tsx");
+const result = require("useTheme").fileFinishedImporting("modules/virtual_currency/native/OrbLottieAnimation.tsx");
 
 export default forwardRefResult;
 export const OrbLottieAnimation = forwardRefResult;

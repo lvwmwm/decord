@@ -1,55 +1,57 @@
-// Module ID: 14619
-// Function ID: 111411
+// Module ID: 14644
+// Function ID: 14645
 // Name: CollectiblesShopViewAllCategoryItemsHeader
-// Dependencies: [31, 27, 33, 4165, 1456, 6539, 9094, 9098, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 1480, 6560, 9118, 9122, 1236, 2]
 // Exports: default
 
-// Module 14619 (CollectiblesShopViewAllCategoryItemsHeader)
-import "result";
+// Module 14644 (CollectiblesShopViewAllCategoryItemsHeader)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ headerContainer: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: 12, paddingLeft: 8 }, backButton: { flex: 1 }, logo: { flex: 2, height: 36 }, dummyRightButton: { flex: 1 } });
+({ Image: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles({ headerContainer: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingBottom: 12, paddingLeft: 8 }, backButton: { flex: 1 }, logo: { flex: 2, height: 36 }, dummyRightButton: { flex: 1 } });
 const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/CollectiblesShopViewAllCategoryItemsHeader.tsx");
 
 export default function CollectiblesShopViewAllCategoryItemsHeader(arg0) {
   let buttonColor;
   let categoryName;
   let logoUrl;
+  let _require;
   ({ logoUrl, buttonColor, categoryName } = arg0);
-  let obj = _require(1456);
+  let obj = _require(1480);
   _require = obj.useStackNavigation();
   const tmp = callback3();
-  let obj1 = _require(6539);
-  obj = {};
+  let obj1 = _require(6560);
+  obj = { style: null, children: null };
   obj = {};
   const youBarSettingsCustomHeaderPaddingTop = obj1.useYouBarSettingsCustomHeaderPaddingTop();
   const merged = Object.assign(tmp.headerContainer);
-  obj["paddingTop"] = youBarSettingsCustomHeaderPaddingTop;
-  obj.style = obj;
-  obj1 = { style: tmp.backButton };
-  const obj2 = { source: importDefault(9098), color: buttonColor };
-  const intl = _require(1212).intl;
-  obj2.accessibilityLabel = intl.string(_require(1212).t["13/7kX"]);
-  obj2.onPress = function onPress() {
+  obj.paddingTop = youBarSettingsCustomHeaderPaddingTop;
+  obj[0] = obj;
+  obj1 = { style: tmp.backButton, children: null };
+  const obj2 = { source: null, color: null, accessibilityLabel: null, onPress: null };
+  obj2[0] = importDefault(9122);
+  obj2[1] = buttonColor;
+  const intl = _require(1236).intl;
+  obj2[2] = intl.string(_require(1236).t["13/7kX"]);
+  obj2[3] = function onPress() {
     navigation.goBack();
   };
-  obj1.children = callback(_require(9094).HeaderIconButton, obj2);
+  obj1[1] = callback(_require(9118).HeaderIconButton, obj2);
   const items = [callback(closure_4, obj1), , ];
-  const obj3 = { resizeMode: "contain", style: tmp.logo, source: { uri: logoUrl } };
-  const intl2 = _require(1212).intl;
-  obj3.accessibilityLabel = intl2.formatToPlainString(_require(1212).t.FNtLb3, { category: categoryName });
-  obj3.accessibilityRole = "header";
+  const obj3 = { resizeMode: "contain", style: tmp.logo, source: { uri: logoUrl }, accessibilityLabel: null, accessibilityRole: "header" };
+  const intl2 = _require(1236).intl;
+  obj3[3] = intl2.formatToPlainString(_require(1236).t.FNtLb3, { category: categoryName });
   items[1] = callback(closure_3, obj3);
   items[2] = callback(closure_4, { style: tmp.dummyRightButton });
-  obj.children = items;
+  obj[1] = items;
   return callback2(closure_4, obj);
 };

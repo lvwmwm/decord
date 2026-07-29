@@ -1,43 +1,15 @@
-// Module ID: 6160
-// Function ID: 55086
-// Name: _callSuper
-// Dependencies: [7, 6, 15, 17, 18, 162, 1348, 653, 1212, 6127, 2]
+// Module ID: 6178
+// Function ID: 6179
+// Name: getAutomodErrorMessageFromErrorResponse
+// Dependencies: [1372, 676, 1236, 6145, 2]
 // Exports: getAutomodErrorMessage
 
-// Module 6160 (_callSuper)
-import ME from "ME";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import importDefaultResult from "_wrapNativeSuper";
-import closure_7 from "_isNativeReflectConstruct";
+// Module 6178 (getAutomodErrorMessageFromErrorResponse)
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { AbortCodes } from "ME";
-import set from "_possibleConstructorReturn";
+import set from "getSystemLocale";
 
 const require = arg1;
-function _callSuper(arg0, arg1, arg2) {
-  let items = arg2;
-  const obj = callback2(arg1);
-  if (_isNativeReflectConstruct()) {
-    if (!items) {
-      items = [];
-    }
-    let constructResult = Reflect.construct(obj, items, callback2(arg0).constructor);
-  } else {
-    constructResult = obj.apply(arg0, items);
-  }
-  return _possibleConstructorReturn(arg0, constructResult);
-}
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function getAutomodErrorMessageFromErrorResponse(errorResponseBody, id) {
   let code;
   let message;
@@ -52,21 +24,33 @@ function getAutomodErrorMessageFromErrorResponse(errorResponseBody, id) {
         return null;
       } else {
         const channel = store.getChannel(id);
-        if (null != channel) {
-          if (channel.isThread()) {
-            const intl3 = require(1212) /* getSystemLocale */.intl;
-            return intl3.string(require(1212) /* getSystemLocale */.t.DVdG9E);
+        let isThreadResult;
+        if (channel != null) {
+          isThreadResult = channel.isThread();
+        }
+        if (isThreadResult) {
+          const intl3 = require(1236) /* getSystemLocale */.intl;
+          return intl3.string(require(1236) /* getSystemLocale */.t.DVdG9E);
+        } else {
+          let isForumPostResult;
+          if (channel != null) {
+            isForumPostResult = channel.isForumPost();
           }
-        }
-        if (null == channel) {
+          if (isForumPostResult) {
+            if (code === AbortCodes.AUTOMOD_TITLE_BLOCKED) {
+              const intl2 = require(1236) /* getSystemLocale */.intl;
+              return intl2.string(require(1236) /* getSystemLocale */.t.ipgKDg);
+            } else if (code === tmp4.AUTOMOD_MESSAGE_BLOCKED) {
+              const intl = require(1236) /* getSystemLocale */.intl;
+              return intl.string(require(1236) /* getSystemLocale */.t.ipgKDg);
+            }
+          } else {
+            let isForumLikeChannelResult;
+            if (channel != null) {
+              isForumLikeChannelResult = channel.isForumLikeChannel();
+            }
+          }
           return null;
-        }
-        if (code === AbortCodes.AUTOMOD_TITLE_BLOCKED) {
-          const intl2 = require(1212) /* getSystemLocale */.intl;
-          return intl2.string(require(1212) /* getSystemLocale */.t.ipgKDg);
-        } else if (code === AbortCodes.AUTOMOD_MESSAGE_BLOCKED) {
-          const intl = require(1212) /* getSystemLocale */.intl;
-          return intl.string(require(1212) /* getSystemLocale */.t.ipgKDg);
         }
       }
     } else {
@@ -77,50 +61,51 @@ function getAutomodErrorMessageFromErrorResponse(errorResponseBody, id) {
 function getAutomodErrorMessageFromMessageData(message) {
   const channel = store.getChannel(message.message.channelId);
   if (obj2.isMessageDataEdit(message)) {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl4.string(require(1212) /* getSystemLocale */.t.bU6o0z);
+    const intl4 = tmp(1236).intl;
+    let stringResult = intl4.string(tmp(1236).t.bU6o0z);
   } else {
-    if (null != channel) {
-      if (channel.isThread()) {
-        const intl3 = require(1212) /* getSystemLocale */.intl;
-        stringResult = intl3.string(require(1212) /* getSystemLocale */.t.DVdG9E);
+    let isThreadResult;
+    if (channel != null) {
+      isThreadResult = channel.isThread();
+    }
+    if (isThreadResult) {
+      const intl3 = tmp(1236).intl;
+      stringResult = intl3.string(tmp(1236).t.DVdG9E);
+    } else {
+      let isForumPostResult;
+      if (channel != null) {
+        isForumPostResult = channel.isForumPost();
       }
+      if (!isForumPostResult) {
+        let isForumLikeChannelResult;
+        if (channel != null) {
+          isForumLikeChannelResult = channel.isForumLikeChannel();
+        }
+        if (!isForumLikeChannelResult) {
+          const intl = tmp(1236).intl;
+          stringResult = intl.string(tmp(1236).t.zQ69pv);
+        }
+      }
+      const intl2 = tmp(1236).intl;
+      stringResult = intl2.string(tmp(1236).t.ipgKDg);
     }
-    if (null == channel) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl.string(require(1212) /* getSystemLocale */.t.zQ69pv);
-    }
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl2.string(require(1212) /* getSystemLocale */.t.ipgKDg);
   }
   return stringResult;
 }
-let items = [, , ];
+class InvalidKeywordError extends Error {
+}
+const prototype = function InvalidRegexPatternError(intl) {
+  return HermesBuiltin.applyArguments(new.target, new.target);
+}.prototype;
+class prototype extends Error {
+}
+const items = [, , ];
 ({ AUTOMOD_MESSAGE_BLOCKED: arr[0], AUTOMOD_TITLE_BLOCKED: arr[1], AUTOMOD_INVALID_RUST_SERVICE_RESPONSE: arr[2] } = AbortCodes);
-const tmp3 = ((arg0) => {
-  class InvalidKeywordError {
-    constructor() {
-      tmp = outer1_3(this, InvalidKeywordError);
-      return outer1_10(this, InvalidKeywordError, arguments);
-    }
-  }
-  callback3(InvalidKeywordError, arg0);
-  return callback(InvalidKeywordError);
-})(importDefaultResult(Error));
 let set = new Set(items);
-let result = set.fileFinishedImporting("modules/guild_automod/AutomodErrorUtils.tsx");
+const result = set.fileFinishedImporting("modules/guild_automod/AutomodErrorUtils.tsx");
 
-export const InvalidKeywordError = tmp3;
-export const InvalidRegexPatternError = ((arg0) => {
-  class InvalidRegexPatternError {
-    constructor() {
-      tmp = outer1_3(this, InvalidRegexPatternError);
-      return outer1_10(this, InvalidRegexPatternError, arguments);
-    }
-  }
-  callback3(InvalidRegexPatternError, arg0);
-  return callback(InvalidRegexPatternError);
-})(importDefaultResult(Error));
+export { InvalidKeywordError };
+export const InvalidRegexPatternError = prototype;
 export const AUTOMOD_ERROR_CODES = set;
 export { getAutomodErrorMessageFromErrorResponse };
 export { getAutomodErrorMessageFromMessageData };
@@ -129,8 +114,8 @@ export const getAutomodErrorMessage = function getAutomodErrorMessage(messageDat
   if (null != tmp) {
     return tmp;
   } else if (null == messageData) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl.string(require(1212) /* getSystemLocale */.t.zQ69pv);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    let stringResult = intl.string(require(1236) /* getSystemLocale */.t.zQ69pv);
   } else {
     stringResult = getAutomodErrorMessageFromMessageData(messageData);
   }

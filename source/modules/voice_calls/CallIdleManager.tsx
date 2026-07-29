@@ -1,67 +1,115 @@
-// Module ID: 16107
-// Function ID: 124454
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 1347, 1348, 4181, 4238, 5695, 1212, 4979, 4050, 5112, 2]
+// Module ID: 16142
+// Function ID: 16143
+// Name: disconnect
+// Dependencies: [1371, 1372, 4205, 4262, 5713, 1236, 5001, 5134, 4074, 2]
 
-// Module 16107 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16142 (disconnect)
+import participantFromServer from "participantFromServer";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import updateVoiceState from "updateVoiceState";
+import getVoiceStatesForGuild from "getVoiceStatesForGuild";
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function isIdle() {
-  const currentClientVoiceChannelId = store.getCurrentClientVoiceChannelId(null);
-  if (null == currentClientVoiceChannelId) {
-    return false;
-  } else {
+let require = arg1;
+function disconnect() {
+  currentClientVoiceChannelId = currentClientVoiceChannelId.getCurrentClientVoiceChannelId(null);
+  let flag = false;
+  if (null != currentClientVoiceChannelId) {
     channel = channel.getChannel(currentClientVoiceChannelId);
     const tmp3 = null == channel || !channel.isPrivate();
     let tmp4 = !tmp3;
     if (!tmp3) {
-      let tmp6 = !tmp5;
-      if (channel.recipients.length <= 1) {
-        const tmp8 = closure_11.countVoiceStatesForChannel(currentClientVoiceChannelId) > 1;
-        let tmp9 = !tmp8;
-        if (!tmp8) {
-          tmp9 = null == selfEmbeddedActivityForChannel.getSelfEmbeddedActivityForChannel(currentClientVoiceChannelId);
+      let tmp5 = channel.recipients.length <= 1;
+      if (tmp5) {
+        let tmp7 = getVoiceStatesForGuild.countVoiceStatesForChannel(currentClientVoiceChannelId) <= 1;
+        if (tmp7) {
+          tmp7 = null == selfEmbeddedActivityForChannel.getSelfEmbeddedActivityForChannel(currentClientVoiceChannelId);
         }
-        tmp6 = tmp9;
+        tmp5 = tmp7;
       }
-      tmp4 = tmp6;
+      tmp4 = tmp5;
     }
-    return tmp4;
+    flag = tmp4;
+  }
+  if (flag) {
+    const currentClientVoiceChannelId1 = currentClientVoiceChannelId.getCurrentClientVoiceChannelId(null);
+    if (null != currentClientVoiceChannelId1) {
+      const intl = require(1236) /* getSystemLocale */.intl;
+      importDefault(5713).sendBotMessage(currentClientVoiceChannelId1, intl.formatToPlainString(require(1236) /* getSystemLocale */.t.XYof5G, { number: 3 }));
+      const obj3 = importDefault(5713);
+      const voiceChannel = importDefault(5001).selectVoiceChannel(null);
+      const obj4 = importDefault(5001);
+    }
   }
 }
-function disconnect() {
-  if (isIdle()) {
-    const currentClientVoiceChannelId = store.getCurrentClientVoiceChannelId(null);
+let c7 = 180000;
+let prototype = function CallIdleManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  const require = applyArgumentsResult;
+  const timeout = new require(4074) /* start */.Timeout();
+  applyArgumentsResult.idleTimeout = timeout;
+  applyArgumentsResult.handleConnectionClosed = function handleConnectionClosed() {
+    const idleTimeout = applyArgumentsResult.idleTimeout;
+    idleTimeout.stop();
+  };
+  applyArgumentsResult.handleEmbeddedActivityDisconnect = function handleEmbeddedActivityDisconnect() {
+    const currentClientVoiceChannelId = outer1_5.getCurrentClientVoiceChannelId(null);
+    let flag = false;
     if (null != currentClientVoiceChannelId) {
-      let obj = importDefault(5695);
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj = { number: 3 };
-      obj.sendBotMessage(currentClientVoiceChannelId, intl.formatToPlainString(require(1212) /* getSystemLocale */.t.XYof5G, obj));
-      const voiceChannel = importDefault(4979).selectVoiceChannel(null);
-      const obj3 = importDefault(4979);
+      const channel = outer1_4.getChannel(currentClientVoiceChannelId);
+      const tmp3 = null == channel || !channel.isPrivate();
+      let tmp4 = !tmp3;
+      if (!tmp3) {
+        let tmp5 = channel.recipients.length <= 1;
+        if (tmp5) {
+          let tmp7 = outer1_6.countVoiceStatesForChannel(currentClientVoiceChannelId) <= 1;
+          if (tmp7) {
+            tmp7 = null == outer1_3.getSelfEmbeddedActivityForChannel(currentClientVoiceChannelId);
+          }
+          tmp5 = tmp7;
+        }
+        tmp4 = tmp5;
+      }
+      flag = tmp4;
     }
-  }
+    if (flag) {
+      const idleTimeout = applyArgumentsResult.idleTimeout;
+      idleTimeout.start(outer1_7, outer1_8, true);
+    }
+  };
+  applyArgumentsResult.handleVoiceStateUpdates = function handleVoiceStateUpdates() {
+    const currentClientVoiceChannelId = outer1_5.getCurrentClientVoiceChannelId(null);
+    let flag = false;
+    if (null != currentClientVoiceChannelId) {
+      const channel = outer1_4.getChannel(currentClientVoiceChannelId);
+      const tmp3 = null == channel || !channel.isPrivate();
+      let tmp4 = !tmp3;
+      if (!tmp3) {
+        let tmp5 = channel.recipients.length <= 1;
+        if (tmp5) {
+          let tmp7 = outer1_6.countVoiceStatesForChannel(currentClientVoiceChannelId) <= 1;
+          if (tmp7) {
+            tmp7 = null == outer1_3.getSelfEmbeddedActivityForChannel(currentClientVoiceChannelId);
+          }
+          tmp5 = tmp7;
+        }
+        tmp4 = tmp5;
+      }
+      flag = tmp4;
+    }
+    const idleTimeout = applyArgumentsResult.idleTimeout;
+    if (flag) {
+      idleTimeout.start(outer1_7, outer1_8, false);
+    } else {
+      idleTimeout.stop();
+    }
+  };
+  applyArgumentsResult.actions = { VOICE_STATE_UPDATES: applyArgumentsResult.handleVoiceStateUpdates, CONNECTION_CLOSED: applyArgumentsResult.handleConnectionClosed, EMBEDDED_ACTIVITY_CLOSE: applyArgumentsResult.handleEmbeddedActivityDisconnect };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/voice_calls/CallIdleManager.tsx");
+prototype = new prototype();
+const result = require("updateVoiceState").fileFinishedImporting("modules/voice_calls/CallIdleManager.tsx");
 
-export default tmp2;
+export default prototype;

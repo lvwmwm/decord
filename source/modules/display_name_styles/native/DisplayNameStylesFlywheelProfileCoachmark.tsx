@@ -1,36 +1,36 @@
-// Module ID: 15598
-// Function ID: 119893
+// Module ID: 15632
+// Function ID: 15633
 // Name: CoachmarkImage
-// Dependencies: [31, 27, 1850, 1345, 33, 4165, 689, 566, 3811, 1212, 2557, 8406, 6763, 1273, 2]
+// Dependencies: [19, 17, 1874, 1369, 21, 4189, 712, 589, 3835, 1236, 2581, 8430, 6785, 1297, 2]
 // Exports: default
 
-// Module 15598 (CoachmarkImage)
-import result from "result";
+// Module 15632 (CoachmarkImage)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function CoachmarkImage() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.coachmarkImageContainer };
-  const items = [callback(require(6763) /* AccountAgeTier10LargeBadge */.DisplayNameLockeAbstractUI, { width: 160, height: 68, resizeMode: "contain" }), ];
+  const tmp = createCacheKey();
+  let obj = { style: tmp.coachmarkImageContainer, children: null };
+  const items = [callback(require(6785) /* AccountAgeTier10LargeBadge */.DisplayNameLockeAbstractUI, { width: 160, height: 68, resizeMode: "contain" }), ];
   obj = { style: tmp.betaTag };
-  items[1] = callback(require(1273) /* Button */.BetaTag, obj);
-  obj.children = items;
+  items[1] = callback(require(1297) /* Button */.BetaTag, obj);
+  obj[1] = items;
   return callback2(View, obj);
 }
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { alignItems: "center", justifyContent: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.coachmarkImageContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.betaTag = { marginLeft: 0 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesFlywheelProfileCoachmark.tsx");
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { coachmarkImageContainer: null, betaTag: null };
+createCacheKey = { alignItems: "center", justifyContent: "center", gap: require("Themes").space.PX_12 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginLeft: 0 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesFlywheelProfileCoachmark.tsx");
 
 export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
   visible = visible.visible;
@@ -38,26 +38,27 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
   let dependencyMap;
   let React;
   let callback;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = visible(566).useStateFromStores(items, () => outer1_5.getCurrentUser());
-  const obj = visible(566);
-  const result = markAsDismissed(3811).canUsePremiumProfileCustomization(stateFromStores);
-  const intl = visible(1212).intl;
+  const items = [mergeGuildAvatar];
+  const stateFromStores = visible(589).useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj = visible(589);
+  const tmp4 = markAsDismissed;
+  const result = markAsDismissed(3835).canUsePremiumProfileCustomization(stateFromStores);
+  const intl = visible(1236).intl;
   const string = intl.string;
-  const tmp3 = markAsDismissed(2557);
+  const tmp6 = markAsDismissed(2581);
   if (result) {
-    let stringResult = string(tmp3.h6sykk);
+    let stringResult = string(tmp6.h6sykk);
   } else {
-    stringResult = string(tmp3.M5amXH);
+    stringResult = string(tmp6.M5amXH);
   }
   dependencyMap = stringResult;
-  const intl2 = visible(1212).intl;
+  const intl2 = tmp(1236).intl;
   const string2 = intl2.string;
-  const tmp5 = markAsDismissed(2557);
+  const tmp4Result = tmp4(2581);
   if (result) {
-    let string2Result = string2(tmp5.TyUdka);
+    let string2Result = string2(tmp4Result.TyUdka);
   } else {
-    string2Result = string2(tmp5.dluV0R);
+    string2Result = string2(tmp4Result.dluV0R);
   }
   React = string2Result;
   const items1 = [markAsDismissed];
@@ -72,10 +73,10 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
     position: "bottom",
     onDismiss: callback,
     renderImgComponent() {
-      return outer2_7(outer2_10, {});
+      return callback(closure_10, {});
     }
   }), items2);
-  const obj2 = markAsDismissed(3811);
-  const coachmark = visible(8406).useCoachmark(visible.targetRef, memo);
+  const obj2 = markAsDismissed(3835);
+  const coachmark = visible(8430).useCoachmark(visible.targetRef, memo);
   return null;
 };

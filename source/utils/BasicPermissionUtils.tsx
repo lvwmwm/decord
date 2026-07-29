@@ -1,48 +1,27 @@
-// Module ID: 3801
-// Function ID: 28969
-// Name: BasicPermissionUtils
-// Dependencies: [6, 7, 483, 2]
+// Module ID: 3825
+// Function ID: 3826
+// Name: has
+// Dependencies: [506, 2]
 
-// Module 3801 (BasicPermissionUtils)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const tmp2 = (() => {
-  class BasicPermissionUtils {
-    constructor() {
-      tmp = outer1_2(this, BasicPermissionUtils);
-      return;
-    }
+// Module 3825 (has)
+const result = require("set").fileFinishedImporting("utils/BasicPermissionUtils.tsx");
+const prototype = function BasicPermissionUtils() {
+  return Object.create(new.target.prototype);
+}.prototype;
+prototype["has"] = function has(arg0, arg1) {
+  return arg0 & arg1;
+};
+prototype["asBasicFlag"] = function asBasicFlag(permissions) {
+  return importAll(506).asUintN(20, permissions);
+};
+prototype["asBigFlag"] = function asBigFlag(VIEW_CHANNEL) {
+  const self = this;
+  if (!Object.hasOwn(this.cache, VIEW_CHANNEL)) {
+    self.cache[VIEW_CHANNEL] = importAll(506).deserialize(VIEW_CHANNEL);
+    const obj = importAll(506);
   }
-  let obj = {
-    key: "has",
-    value(arg0, arg1) {
-      return arg0 & arg1;
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "asBasicFlag",
-    value(arg0) {
-      return BasicPermissionUtils(outer1_1[2]).asUintN(20, arg0);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "asBigFlag",
-    value(arg0) {
-      const self = this;
-      if (!Object.hasOwn(this.cache, arg0)) {
-        self.cache[arg0] = BasicPermissionUtils(outer1_1[2]).deserialize(arg0);
-        const obj = BasicPermissionUtils(outer1_1[2]);
-      }
-      return self.cache[arg0];
-    }
-  };
-  items[2] = obj;
-  return callback(BasicPermissionUtils, null, items);
-})();
-tmp2.cache = {};
-const result = require("fromHexReverseArray").fileFinishedImporting("utils/BasicPermissionUtils.tsx");
+  return self.cache[VIEW_CHANNEL];
+};
+prototype.cache = {};
 
-export default tmp2;
+export default prototype;

@@ -1,26 +1,28 @@
-// Module ID: 10307
-// Function ID: 79512
+// Module ID: 10328
+// Function ID: 10329
 // Name: ChannelIndicator
-// Dependencies: [27, 4361, 33, 4165, 689, 3869, 2]
+// Dependencies: [17, 4386, 21, 4189, 712, 3893, 2]
 // Exports: default
 
-// Module 10307 (ChannelIndicator)
+// Module 10328 (ChannelIndicator)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { UnreadSetting } from "ReadStateTypes";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-const View = get_ActivityIndicator.View;
-let obj = {};
+let StyleSheet;
+let c3;
+({ View: c3, StyleSheet } = get_ActivityIndicator);
+let obj = { indicatorContainer: null, indicator: null };
 obj = {};
-const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
-obj["top"] = 0;
-obj["bottom"] = 0;
-obj["justifyContent"] = "center";
-obj.indicatorContainer = obj;
-const obj1 = { width: 8, height: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, marginLeft: -4 };
-obj.indicator = obj1;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+obj.top = 0;
+obj.bottom = 0;
+obj.justifyContent = "center";
+obj[0] = obj;
+obj[1] = { width: 8, height: 8, borderRadius: require("Themes").radii.round, marginLeft: -4 };
+let closure_6 = createCacheKey.createStyles(obj);
+const obj1 = { width: 8, height: 8, borderRadius: require("Themes").radii.round, marginLeft: -4 };
 const result = require("jsxProd").fileFinishedImporting("modules/channel_list_v2/native/components/StaticChannelIndicator.tsx");
 
 export default function ChannelIndicator(arg0) {
@@ -29,23 +31,25 @@ export default function ChannelIndicator(arg0) {
   let unread;
   ({ unread, resolvedUnreadSetting, style } = arg0);
   const tmp = callback();
-  require(3869) /* map */;
+  require(3893) /* map */;
   if (resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES) {
-    let CHANNELS_DEFAULT = importDefault(689).colors.INTERACTIVE_TEXT_ACTIVE;
+    let CHANNELS_DEFAULT = importDefault(712).colors.INTERACTIVE_TEXT_ACTIVE;
   } else {
-    CHANNELS_DEFAULT = importDefault(689).colors.CHANNELS_DEFAULT;
+    CHANNELS_DEFAULT = importDefault(712).colors.CHANNELS_DEFAULT;
   }
-  let tmp8 = null;
+  let tmp7 = null;
   if (unread) {
-    let obj = { style: tmp.indicatorContainer };
-    obj = {};
+    let obj = { style: null, children: null };
+    obj[0] = tmp.indicatorContainer;
+    obj = { style: null };
     const items = [tmp.indicator, , ];
-    obj = { backgroundColor: tmp7 };
+    obj = { backgroundColor: null };
+    obj[0] = tmp6;
     items[1] = obj;
     items[2] = style;
-    obj.style = items;
-    obj.children = <View backgroundColor={tmp7} />;
-    tmp8 = <View backgroundColor={tmp7} />;
+    obj[0] = items;
+    obj[1] = <closure_3 backgroundColor={null} />;
+    tmp7 = <closure_3 backgroundColor={null} />;
   }
-  return tmp8;
+  return tmp7;
 };

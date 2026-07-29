@@ -1,237 +1,232 @@
-// Module ID: 4843
-// Function ID: 42009
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5, 1316, 1194, 4844, 1348, 4212, 4237, 4258, 1907, 4845, 4251, 653, 662, 12669, 12713, 3, 587, 8024, 4979, 477, 12705, 22, 4229, 12684, 566, 686, 2]
+// Module ID: 4865
+// Function ID: 4866
+// Name: _handleConnectionOpen
+// Dependencies: [5, 1340, 1218, 4866, 1372, 4236, 4261, 4282, 1931, 4867, 4275, 676, 685, 12691, 12735, 3, 595, 8048, 5001, 500, 12727, 12, 4253, 12706, 589, 709, 2]
 
-// Module 4843 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import MAX_FAVORITES from "MAX_FAVORITES";
-import importDefaultResult1 from "importDefaultResult1";
-import asyncGeneratorStep from "asyncGeneratorStep";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
-import closure_15 from "_isNativeReflectConstruct";
-import closure_16 from "_isNativeReflectConstruct";
-import closure_17 from "_isNativeReflectConstruct";
-import closure_18 from "_isNativeReflectConstruct";
-import closure_19 from "_isNativeReflectConstruct";
+// Module 4865 (_handleConnectionOpen)
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
+import fetchFingerprint from "fetchFingerprint";
+import callConnect from "callConnect";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import closure_9 from "_detectH265HardwareDecode";
+import createRTCConnection from "createRTCConnection";
+import initialize from "initialize";
+import handleConnectionOpen from "handleConnectionOpen";
+import filterPlayingActivities from "filterPlayingActivities";
+import closure_14 from "initialize";
 import ME from "ME";
 import { UserSettingsTypes } from "MAX_FAVORITES";
-import importDefaultResult from "_getPrototypeOf";
+import { Store } from "initialize";
 
-let closure_20;
-let closure_21;
+let closure_15;
+let closure_16;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-async function _handleConnectionOpen(arg0, arg1) {
-  const outer2_25 = Date.now();
-  const outer2_26 = arg0.sessionId;
-  const localPresenceState = outer2_0(outer2_3[18]).localPresenceState;
-  localPresenceState.handleConnectionOpen();
-  let obj = {};
-  const voiceChannelId = outer2_17.getVoiceChannelId();
-  let tmp3 = obj;
-  if (null != voiceChannelId) {
-    const Storage2 = outer2_0(outer2_3[21]).Storage;
-    const value = Storage2.get("discord_watchdog_restart_timestamp");
-    let tmp5 = null != value;
-    if (tmp5) {
-      const _Date = Date;
-      const _parseInt = parseInt;
-      const timestamp = Date.now();
-      tmp5 = timestamp - parseInt(value, 10) < 60000;
-    }
-    const Storage = outer2_0(outer2_3[21]).Storage;
-    Storage.remove("discord_watchdog_restart_timestamp");
-    let type;
-    if (null != window) {
-      const _performance = window.performance;
-      if (null != _performance) {
-        if (null != _performance.getEntriesByType) {
-          const entriesByType = _performance.getEntriesByType("navigation");
-          if (null != entriesByType) {
-            const first = entriesByType[0];
-            if (null != first) {
-              type = first.type;
+function _handleConnectionOpen() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    return (function*(arg0, rendererCrashReason) {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw rendererCrashReason;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = rendererCrashReason;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === dependencyMap) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw rendererCrashReason;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = rendererCrashReason;
+              return obj;
+            } else {
+              let guildId = tmp5;
+              let voiceChannelId = tmp2;
+              let obj2;
+              voiceChannelId = undefined;
+              guildId = undefined;
+              const _Date2 = Date;
+              const outer1_20 = Date.now();
+              const outer1_21 = obj2.sessionId;
+              const localPresenceState = callback(12691).localPresenceState;
+              localPresenceState.handleConnectionOpen();
+              obj2 = {};
+              voiceChannelId = outer1_12.getVoiceChannelId();
+              if (null != voiceChannelId) {
+                const Storage2 = callback(595).Storage;
+                const value = Storage2.get("discord_watchdog_restart_timestamp");
+                let tmp19 = null != value;
+                if (tmp19) {
+                  const _Date = Date;
+                  const _parseInt = parseInt;
+                  const timestamp = Date.now();
+                  tmp19 = timestamp - parseInt(value, 10) < 60000;
+                }
+                const Storage = callback(595).Storage;
+                Storage.remove("discord_watchdog_restart_timestamp");
+                let type;
+                if (window != null) {
+                  const _performance = window.performance;
+                  if (_performance != null) {
+                    const getEntriesByType = _performance.getEntriesByType;
+                    if (getEntriesByType != null) {
+                      const entriesByType = getEntriesByType("navigation");
+                      if (entriesByType != null) {
+                        const first = entriesByType[0];
+                        if (first != null) {
+                          type = first.type;
+                        }
+                      }
+                    }
+                  }
+                }
+                if ("reload" !== type) {
+                  if (!tmp19) {
+                    let lastCrash;
+                    if (outer1_18 != null) {
+                      const processUtils = outer1_18.processUtils;
+                      if (processUtils != null) {
+                        const getLastCrash = processUtils.getLastCrash;
+                        if (getLastCrash != null) {
+                          lastCrash = getLastCrash();
+                        }
+                      }
+                    }
+                    dependencyMap = 1;
+                    c4 = 1;
+                    const obj1 = { value: null, done: false };
+                    obj1[0] = lastCrash;
+                    return obj1;
+                  }
+                }
+                guildId = outer1_8.getChannel(voiceChannelId);
+                if (null != guildId) {
+                  obj2 = { guildId: null, channelId: null };
+                  obj2[0] = guildId.getGuildId();
+                  obj2[1] = voiceChannelId;
+                  callback(8048).muteCustomJoinSound(voiceChannelId);
+                  const obj5 = callback(8048);
+                }
+              }
+              const localVoiceState = callback(12691).localVoiceState;
+              localVoiceState.update(obj2, true);
+              const outer1_22 = false;
+              const outer1_24 = null;
+              c4 = 3;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw rendererCrashReason;
+          } else if (arg0 !== 2) {
+            rendererCrashReason = undefined;
+            if (rendererCrashReason != null) {
+              rendererCrashReason = rendererCrashReason.rendererCrashReason;
+            }
+            if (null == rendererCrashReason) {
+              if (closure_22) {
+                let tmp11 = null;
+                if (null != voiceChannelId) {
+                  tmp11 = voiceChannelId;
+                }
+                const result = lastSessionVoiceChannelId.setLastSessionVoiceChannelId(tmp11);
+                obj = voiceChannelId(5001);
+                const voiceChannel = obj.selectVoiceChannel(null);
+              }
             }
           }
+          c4 = 3;
+          const obj3 = { value: null, done: true };
+          obj3[0] = rendererCrashReason;
+          return obj3;
+        } catch (tmp48) {
+          c4 = tmp;
+          throw tmp48;
         }
       }
-    }
-    if ("reload" !== type) {
-      if (!tmp5) {
-        if (null != outer2_23) {
-          const processUtils = outer2_23.processUtils;
-          if (null != processUtils) {
-            if (null != processUtils.getLastCrash) {
-              const lastCrash = processUtils.getLastCrash();
-            }
-          }
-        }
-        const tmp15 = yield lastCrash;
-        let rendererCrashReason;
-        if (null != tmp15) {
-          rendererCrashReason = tmp15.rendererCrashReason;
-        }
-        if (null == rendererCrashReason) {
-          if (outer2_27) {
-            let tmp19 = null;
-            if (null != voiceChannelId) {
-              tmp19 = voiceChannelId;
-            }
-            const result = outer2_15.setLastSessionVoiceChannelId(tmp19);
-            const voiceChannel = outer2_1(outer2_3[23]).selectVoiceChannel(null);
-            tmp3 = obj;
-            const obj2 = outer2_1(outer2_3[23]);
-          }
-        }
-      }
-    }
-    const channel = outer2_13.getChannel(voiceChannelId);
-    tmp3 = obj;
-    if (null != channel) {
-      obj = { guildId: channel.getGuildId(), channelId: voiceChannelId };
-      outer2_0(outer2_3[22]).muteCustomJoinSound(voiceChannelId);
-      tmp3 = obj;
-      const obj5 = outer2_0(outer2_3[22]);
-    }
+    })();
+  });
+  const _handleConnectionOpen = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  const localVoiceState = outer2_0(outer2_3[18]).localVoiceState;
-  localVoiceState.update(tmp3, true);
-  outer2_27 = false;
-  const outer2_29 = null;
+  return applyArgumentsResult;
 }
 function handleClipsFlags() {
-  const localVoiceState = require(12669) /* importDefaultResult1 */.localVoiceState;
+  const localVoiceState = require(12691) /* handleIdentify */.localVoiceState;
   localVoiceState.update();
 }
 function handleMediaEngineChange() {
-  const localVoiceState = require(12669) /* importDefaultResult1 */.localVoiceState;
+  const localVoiceState = require(12691) /* handleIdentify */.localVoiceState;
   localVoiceState.update();
   return false;
 }
 function handleLocalPresenceChange() {
-  const localPresenceState = require(12669) /* importDefaultResult1 */.localPresenceState;
+  const localPresenceState = require(12691) /* handleIdentify */.localPresenceState;
   localPresenceState.update();
   return false;
 }
-function deleteStream(streamKey) {
-  const socket = require(12669) /* importDefaultResult1 */.socket;
-  if (socket.isSessionEstablished()) {
-    const socket2 = require(12669) /* importDefaultResult1 */.socket;
-    socket2.streamDelete(streamKey);
-  }
+({ RTCConnectionStates: closure_15, AppStates: closure_16 } = ME);
+require("handleIdentify").socket.dispatcher.getDispatchHandler = require("defineSimpleDispatch");
+let closure_19 = new require("callConnect")("ConnectionStore");
+let c20 = 0;
+let c21 = null;
+let c22 = true;
+let c23 = null;
+let c24 = null;
+class GatewayConnectionStore extends Store {
 }
-function cleanupAllStreamsExceptSelf() {
-  let closure_0 = (function getSelfStreamKey() {
-    const allActiveStreamKeys = outer1_19.getAllActiveStreamKeys();
-    return allActiveStreamKeys.find((streamKey) => callback(outer2_3[27]).decodeStreamKey(streamKey).ownerId === outer2_11.getId());
-  })();
-  allActiveStreamKeys = allActiveStreamKeys.getAllActiveStreamKeys();
-  const found = allActiveStreamKeys.filter((arg0) => arg0 !== closure_0);
-  const item = found.forEach((arg0) => {
-    outer1_35(arg0);
-  });
-}
-({ RTCConnectionStates: closure_20, AppStates: closure_21 } = ME);
-require("importDefaultResult1").socket.dispatcher.getDispatchHandler = require("_createForOfIteratorHelperLoose");
-importDefaultResult = new importDefaultResult("ConnectionStore");
-let c25 = 0;
-let c26 = null;
-let c27 = true;
-let c28 = null;
-let c29 = null;
-let tmp5 = ((Store) => {
-  class GatewayConnectionStore {
-    constructor() {
-      self = this;
-      tmp = outer1_4(this, GatewayConnectionStore);
-      obj = outer1_7(GatewayConnectionStore);
-      tmp2 = outer1_6;
-      if (outer1_30()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_7;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(GatewayConnectionStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_11, outer1_12, outer1_13, outer1_14, outer1_15, outer1_16, outer1_17, outer1_18, outer1_19, outer1_10);
-      const items = [outer1_14];
-      this.syncWith(items, outer1_33);
-      const items1 = [outer1_18];
-      this.syncWith(items1, outer1_34);
-    }
-  };
-  let items = [obj, , , , , ];
-  obj = {
-    key: "getSocket",
-    value() {
-      return GatewayConnectionStore(outer1_3[18]).socket;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isTryingToConnect",
-    value() {
-      const socket = GatewayConnectionStore(outer1_3[18]).socket;
-      return !socket.isClosed();
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "isConnected",
-    value() {
-      const socket = GatewayConnectionStore(outer1_3[18]).socket;
-      return socket.isSessionEstablished();
-    }
-  };
-  items[4] = {
-    key: "isConnectedOrOverlay",
-    value() {
-      const socket = GatewayConnectionStore(outer1_3[18]).socket;
-      return socket.isSessionEstablished() || false;
-    }
-  };
-  items[5] = {
-    key: "lastTimeConnectedChanged",
-    value() {
-      return outer1_25;
-    }
-  };
-  return callback(GatewayConnectionStore, items);
-})(require("initialize").Store);
-tmp5.displayName = "GatewayConnectionStore";
-tmp5 = new tmp5(require("dispatcher"), {
+const prototype = GatewayConnectionStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(fetchFingerprint, callConnect, ensureGuildLoaded, closure_9, createRTCConnection, initialize, handleConnectionOpen, filterPlayingActivities, closure_14, handleConnectionClosedOrResumed);
+  const items = [closure_9];
+  this.syncWith(items, handleMediaEngineChange);
+  const items1 = [filterPlayingActivities];
+  this.syncWith(items1, handleLocalPresenceChange);
+};
+prototype["getSocket"] = function getSocket() {
+  return require(12691) /* handleIdentify */.socket;
+};
+prototype["isTryingToConnect"] = function isTryingToConnect() {
+  const socket = require(12691) /* handleIdentify */.socket;
+  return !socket.isClosed();
+};
+prototype["isConnected"] = function isConnected() {
+  const socket = require(12691) /* handleIdentify */.socket;
+  return socket.isSessionEstablished();
+};
+prototype["isConnectedOrOverlay"] = function isConnectedOrOverlay() {
+  const socket = require(12691) /* handleIdentify */.socket;
+  return socket.isSessionEstablished() || false;
+};
+prototype["lastTimeConnectedChanged"] = function lastTimeConnectedChanged() {
+  return c20;
+};
+GatewayConnectionStore.displayName = "GatewayConnectionStore";
+const gatewayConnectionStore = new GatewayConnectionStore(require("dispatcher"), {
   START_SESSION: function handleSessionStart() {
-    const socket = require(12669) /* importDefaultResult1 */.socket;
-    const verbose = importDefaultResult.verbose;
+    const socket = require(12691) /* handleIdentify */.socket;
+    const verbose = tmp3.verbose;
     if (socket.isClosed()) {
       verbose("Socket is reconnecting because of starting new session");
-      const socket2 = require(12669) /* importDefaultResult1 */.socket;
+      const socket2 = require(12691) /* handleIdentify */.socket;
       let flag = socket2.connect();
     } else {
       verbose("Socket is not reconnecting during a new session because it is not closed");
@@ -240,68 +235,74 @@ tmp5 = new tmp5(require("dispatcher"), {
     return flag;
   },
   LOGIN_SUCCESS: function handleSessionRefresh() {
-    const obj = {};
-    const socket = require(12669) /* importDefaultResult1 */.socket;
-    obj.isEstablished = socket.isSessionEstablished();
-    importDefaultResult.verbose("session refresh dispatched", obj);
-    const socket2 = require(12669) /* importDefaultResult1 */.socket;
-    const tmp2 = !socket2.isSessionEstablished();
-    let connectResult = !tmp2;
-    if (!tmp2) {
-      const socket3 = require(12669) /* importDefaultResult1 */.socket;
+    const obj = { isEstablished: null };
+    const socket = require(12691) /* handleIdentify */.socket;
+    obj[0] = socket.isSessionEstablished();
+    tmp3.verbose("session refresh dispatched", obj);
+    const socket2 = require(12691) /* handleIdentify */.socket;
+    let connectResult = socket2.isSessionEstablished();
+    if (connectResult) {
+      const socket3 = tmp(12691).socket;
       socket3.close();
-      const socket4 = require(12669) /* importDefaultResult1 */.socket;
+      const socket4 = tmp(12691).socket;
       connectResult = socket4.connect();
     }
     return connectResult;
   },
   LOGOUT: function handleLogout(isSwitchingAccount) {
     if (isSwitchingAccount.isSwitchingAccount) {
-      const localPresenceState = require(12669) /* importDefaultResult1 */.localPresenceState;
+      const localPresenceState = require(12691) /* handleIdentify */.localPresenceState;
       localPresenceState.handleAccountSwitch();
     }
-    importDefaultResult.verbose("Closing socket because of logout");
-    const socket = require(12669) /* importDefaultResult1 */.socket;
+    tmp3.verbose("Closing socket because of logout");
+    const socket = require(12691) /* handleIdentify */.socket;
     socket.close();
   },
   CLEAR_CACHES: function handleClearCaches(resetSocket) {
     if (resetSocket.resetSocket) {
-      const socket = require(12669) /* importDefaultResult1 */.socket;
+      const socket = require(12691) /* handleIdentify */.socket;
       socket.close();
-      const dispatcher = require(12669) /* importDefaultResult1 */.socket.dispatcher;
+      const dispatcher = require(12691) /* handleIdentify */.socket.dispatcher;
       dispatcher.clear();
-      const socket2 = require(12669) /* importDefaultResult1 */.socket;
+      const socket2 = require(12691) /* handleIdentify */.socket;
       socket2.connect();
     }
     return false;
   },
   CONNECTION_OPEN(arg0) {
     !(function handleConnectionOpen(arg0) {
-      return outer1_31(...arguments);
+      const self = this;
+      const apply = closure_25.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     })(arg0);
   },
   CONNECTION_RESUMED: function handleConnectionResumed() {
-    let c29 = null;
+    let c24 = null;
   },
   CONNECTION_CLOSED: function handleConnectionClosed() {
-    importDefaultResult.verbose("connection closed dispatched");
-    let closure_25 = Date.now();
+    tmp3.verbose("connection closed dispatched");
+    let closure_20 = Date.now();
   },
   RTC_CONNECTION_STATE: function handleRTCConnectionState(state) {
     if (state.state !== constants.DISCONNECTED) {
       return false;
     } else if (state.willReconnect) {
       if (null != state.streamKey) {
-        const socket2 = require(12669) /* importDefaultResult1 */.socket;
+        const socket2 = require(12691) /* handleIdentify */.socket;
         socket2.streamPing(state.streamKey);
       } else {
-        const socket = require(12669) /* importDefaultResult1 */.socket;
+        const socket = require(12691) /* handleIdentify */.socket;
         socket.voiceServerPing();
       }
     }
   },
   VOICE_CHANNEL_SELECT: function handleVoiceChannelSelect(guildId) {
-    const localVoiceState = require(12669) /* importDefaultResult1 */.localVoiceState;
+    const localVoiceState = require(12691) /* handleIdentify */.localVoiceState;
     localVoiceState.update({ guildId: guildId.guildId, channelId: guildId.channelId });
     let channelId = null;
     if (guildId.lockVoiceStateForResume) {
@@ -310,21 +311,21 @@ tmp5 = new tmp5(require("dispatcher"), {
         channelId = guildId.channelId;
       }
     }
-    let isIOSResult = require(477) /* set */.isIOS();
+    let isIOSResult = require(500) /* set */.isIOS();
     if (isIOSResult) {
-      isIOSResult = c28 === constants2.BACKGROUND;
+      isIOSResult = c23 === constants2.BACKGROUND;
     }
     if (isIOSResult) {
       if (null == guildId.channelId) {
-        const socket3 = require(12669) /* importDefaultResult1 */.socket;
+        const socket3 = tmp(12691).socket;
         socket3.close(true);
       } else {
-        const socket = require(12669) /* importDefaultResult1 */.socket;
+        const socket = tmp(12691).socket;
         if (socket.isClosed()) {
-          importAll(12705).setIsPaused(false);
-          const socket2 = require(12669) /* importDefaultResult1 */.socket;
+          importAll(12727).setIsPaused(false);
+          const socket2 = tmp(12691).socket;
           socket2.connect();
-          const obj3 = importAll(12705);
+          const obj3 = importAll(12727);
         }
       }
     }
@@ -333,103 +334,104 @@ tmp5 = new tmp5(require("dispatcher"), {
   VOICE_STATE_UPDATES: function handleVoiceStateUpdates(voiceStates) {
     voiceStates = voiceStates.voiceStates;
     return voiceStates.reduce((arg0, userId) => {
-      if (outer1_11.getId() !== userId.userId) {
+      if (id.getId() !== userId.userId) {
         return arg0;
       } else {
-        if (userId.sessionId === outer1_26) {
-          if (null != outer1_29) {
-            outer1_24.verbose("Ignoring voice state for own session due to VSU lock on channel:", outer1_29);
+        if (userId.sessionId === closure_21) {
+          if (null != closure_24) {
+            closure_19.verbose("Ignoring voice state for own session due to VSU lock on channel:", closure_24);
             return arg0;
           } else {
-            const localVoiceState2 = outer1_0(outer1_3[18]).localVoiceState;
-            const obj = {};
-            ({ guildId: obj.guildId, channelId: obj.channelId } = userId);
+            const localVoiceState2 = callback(12691).localVoiceState;
+            const obj = { guildId: null, channelId: null };
+            ({ guildId: obj[0], channelId: obj[1] } = userId);
             localVoiceState2.setState(obj);
           }
-        } else if (userId.guildId !== outer1_0(outer1_3[18]).localVoiceState.guildId) {
-          return arg0;
         } else {
-          const localVoiceState = outer1_0(outer1_3[18]).localVoiceState;
-          localVoiceState.setState({ guildId: null, channelId: null });
+          if (userId.guildId !== callback(12691).localVoiceState.guildId) {
+            return arg0;
+          } else {
+            const localVoiceState = tmp(12691).localVoiceState;
+            localVoiceState.setState({ guildId: null, channelId: null });
+          }
+          tmp = callback;
         }
         return true;
       }
     }, false);
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
-    if (guild.guild.id === require(12669) /* importDefaultResult1 */.localVoiceState.guildId) {
-      const localVoiceState = require(12669) /* importDefaultResult1 */.localVoiceState;
+    if (guild.guild.id === require(12691) /* handleIdentify */.localVoiceState.guildId) {
+      const localVoiceState = require(12691) /* handleIdentify */.localVoiceState;
       localVoiceState.setState({ guildId: null, channelId: null });
     }
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
-    if (channel.channel.id === require(12669) /* importDefaultResult1 */.localVoiceState.channelId) {
-      const localVoiceState = require(12669) /* importDefaultResult1 */.localVoiceState;
+    if (channel.channel.id === require(12691) /* handleIdentify */.localVoiceState.channelId) {
+      const localVoiceState = require(12691) /* handleIdentify */.localVoiceState;
       localVoiceState.setState({ guildId: null, channelId: null });
     }
   },
   CALL_DELETE: function handleCallDelete(channelId) {
     channelId = channelId.channelId;
-    if (channelId === require(12669) /* importDefaultResult1 */.localVoiceState.channelId) {
-      if (c29 === channelId) {
+    if (channelId === require(12691) /* handleIdentify */.localVoiceState.channelId) {
+      if (c24 === channelId) {
         return false;
       } else {
-        const localVoiceState = require(12669) /* importDefaultResult1 */.localVoiceState;
+        const localVoiceState = require(12691) /* handleIdentify */.localVoiceState;
         localVoiceState.setState({ guildId: null, channelId: null });
       }
     }
   },
   APP_STATE_UPDATE: function handleFocus(arg0) {
     let state = arg0;
+    let socket = require;
     if (obj.isIOS()) {
-      if (!closure_11.isAuthenticated()) {
+      if (!fetchFingerprint.isAuthenticated()) {
         state = state.state;
       } else {
-        let isClosedResult = state === constants2.BACKGROUND;
+        let isClosedResult = state === tmp6.BACKGROUND && state.state === tmp6.ACTIVE;
         if (isClosedResult) {
-          isClosedResult = state.state === constants2.ACTIVE;
-        }
-        if (isClosedResult) {
-          const socket3 = require(12669) /* importDefaultResult1 */.socket;
+          const socket3 = socket(12691).socket;
           isClosedResult = socket3.isClosed();
         }
         if (isClosedResult) {
-          importAll(12705).setIsPaused(false);
-          const socket4 = require(12669) /* importDefaultResult1 */.socket;
+          importAll(12727).setIsPaused(false);
+          const socket4 = socket(12691).socket;
           socket4.connect();
-          const obj2 = importAll(12705);
+          const obj2 = importAll(12727);
         }
       }
-      const socket = require(12669) /* importDefaultResult1 */.socket;
+      socket = socket(12691).socket;
       socket.close(true);
     } else {
       if (state.state === constants2.ACTIVE) {
-        importAll(12705).setIsPaused(false);
-        if (closure_11.isAuthenticated()) {
-          const socket2 = require(12669) /* importDefaultResult1 */.socket;
+        importAll(12727).setIsPaused(false);
+        if (fetchFingerprint.isAuthenticated()) {
+          const socket2 = socket(12691).socket;
           socket2.resetBackoff("App state is active");
         }
-        const obj3 = importAll(12705);
+        const obj3 = importAll(12727);
       }
       return false;
     }
   },
   GUILD_MEMBERS_REQUEST: function handleGuildMembersRequest(userIds) {
     const _require = userIds;
-    let socket = _require(12669).socket;
+    let socket = _require(12691).socket;
     if (socket.isSessionEstablished()) {
       if ("userIds" in userIds) {
-        const obj2 = importDefault(22)(userIds.userIds);
-        const item = importDefault(22)(userIds.userIds).chunk(100).forEach((userIds) => {
-          const socket = userIds(outer1_3[18]).socket;
+        const obj2 = importDefault(12)(userIds.userIds);
+        const item = importDefault(12)(userIds.userIds).chunk(100).forEach((userIds) => {
+          const socket = userIds(outer1_3[13]).socket;
           const guildMembers = socket.requestGuildMembers(userIds.guildIds, { userIds, presences: userIds.presences });
         });
-        const chunkResult = importDefault(22)(userIds.userIds).chunk(100);
+        const chunkResult = importDefault(12)(userIds.userIds).chunk(100);
       } else {
-        const socket2 = _require(12669).socket;
-        const obj = {};
-        ({ query: obj.query, limit: obj.limit } = userIds);
-        obj.presences = userIds.presences;
+        const socket2 = _require(12691).socket;
+        const obj = { query: null, limit: null, presences: null };
+        ({ query: obj[0], limit: obj[1] } = userIds);
+        obj[2] = userIds.presences;
         let guildMembers = socket2.requestGuildMembers(userIds.guildIds, obj);
       }
     }
@@ -440,36 +442,38 @@ tmp5 = new tmp5(require("dispatcher"), {
     let guildId;
     let query;
     ({ guildId, query, continuationToken } = arg0);
-    const socket = require(12669) /* importDefaultResult1 */.socket;
+    const socket = require(12691) /* handleIdentify */.socket;
     if (socket.isSessionEstablished()) {
-      const socket2 = require(12669) /* importDefaultResult1 */.socket;
-      const obj = { query, continuationToken };
+      const socket2 = require(12691) /* handleIdentify */.socket;
+      const obj = { query: null, continuationToken: null };
+      obj[0] = query;
+      obj[1] = continuationToken;
       socket2.searchRecentMembers(guildId, obj);
     }
   },
   GUILD_SUBSCRIPTIONS_FLUSH: function handleGuildSubscriptionsFlush(subscriptions) {
-    const socket = require(12669) /* importDefaultResult1 */.socket;
+    const socket = require(12691) /* handleIdentify */.socket;
     if (socket.isSessionEstablished()) {
-      const socket2 = require(12669) /* importDefaultResult1 */.socket;
+      const socket2 = require(12691) /* handleIdentify */.socket;
       const result = socket2.updateGuildSubscriptions(subscriptions.subscriptions);
     }
     return false;
   },
   CALL_CONNECT: function handleCallConnect(channelId) {
-    const socket = require(12669) /* importDefaultResult1 */.socket;
+    const socket = require(12691) /* handleIdentify */.socket;
     if (socket.isSessionEstablished()) {
-      const socket2 = require(12669) /* importDefaultResult1 */.socket;
+      const socket2 = require(12691) /* handleIdentify */.socket;
       socket2.callConnect(channelId.channelId);
     }
     return false;
   },
   CALL_CONNECT_MULTIPLE: function handleCallConnectMultiple(channelIds) {
     channelIds = channelIds.channelIds;
-    let socket = require(12669) /* importDefaultResult1 */.socket;
+    let socket = require(12691) /* handleIdentify */.socket;
     if (socket.isSessionEstablished()) {
-      const item = channelIds.forEach((channelId) => {
-        const socket = outer1_0(outer1_3[18]).socket;
-        socket.callConnect(channelId);
+      const item = channelIds.forEach((arg0) => {
+        const socket = callback(table[13]).socket;
+        socket.callConnect(arg0);
       });
     }
     return false;
@@ -480,23 +484,23 @@ tmp5 = new tmp5(require("dispatcher"), {
     let guildId;
     let streamType;
     ({ streamType, guildId, channelId } = arg0);
-    const socket = require(12669) /* importDefaultResult1 */.socket;
+    const socket = require(12691) /* handleIdentify */.socket;
     if (socket.isSessionEstablished()) {
       if (null != guildId) {
         channel = channel.getChannel(channelId);
         let rtcRegion;
-        if (null != channel) {
+        if (channel != null) {
           rtcRegion = channel.rtcRegion;
         }
         let region = rtcRegion;
       } else {
         call = call.getCall(channelId);
-        if (null != call) {
+        if (call != null) {
           region = call.region;
         }
       }
-      const socket2 = require(12669) /* importDefaultResult1 */.socket;
-      if (null == region) {
+      const socket2 = require(12691) /* handleIdentify */.socket;
+      if (region == null) {
         region = preferredRegion.getPreferredRegion();
       }
       socket2.streamCreate(streamType, guildId, channelId, region);
@@ -507,33 +511,48 @@ tmp5 = new tmp5(require("dispatcher"), {
     let allowMultiple;
     let streamKey;
     ({ streamKey, allowMultiple } = arg0);
-    const socket = require(12669) /* importDefaultResult1 */.socket;
+    let socket = _require(12691).socket;
     if (socket.isSessionEstablished()) {
       if (!allowMultiple) {
-        cleanupAllStreamsExceptSelf();
+        const allActiveStreamKeys = store.getAllActiveStreamKeys();
+        _require = allActiveStreamKeys.find((streamKey) => callback(4253).decodeStreamKey(streamKey).ownerId === id.getId());
+        const allActiveStreamKeys1 = store.getAllActiveStreamKeys();
+        const found = allActiveStreamKeys1.filter((arg0) => arg0 !== closure_0);
+        const item = found.forEach((streamKey) => {
+          const socket = callback(12691).socket;
+          if (socket.isSessionEstablished()) {
+            const socket2 = callback(12691).socket;
+            socket2.streamDelete(streamKey);
+          }
+        });
       }
-      const socket2 = require(12669) /* importDefaultResult1 */.socket;
+      let socket2 = _require(12691).socket;
       socket2.streamWatch(streamKey);
     }
     return false;
   },
   STREAM_STOP: function handleStreamStop(streamKey) {
-    deleteStream(streamKey.streamKey);
-    handleClipsFlags();
+    const socket = require(12691) /* handleIdentify */.socket;
+    if (socket.isSessionEstablished()) {
+      const socket2 = tmp(12691).socket;
+      socket2.streamDelete(streamKey.streamKey);
+    }
+    const localVoiceState = tmp(12691).localVoiceState;
+    localVoiceState.update();
     return false;
   },
   STREAM_SET_PAUSED: function handleStreamSetPaused(arg0) {
     let paused;
     let streamKey;
     ({ streamKey, paused } = arg0);
-    const socket = require(12669) /* importDefaultResult1 */.socket;
+    const socket = require(12691) /* handleIdentify */.socket;
     if (socket.isSessionEstablished()) {
-      const socket2 = require(12669) /* importDefaultResult1 */.socket;
+      const socket2 = require(12691) /* handleIdentify */.socket;
       socket2.streamSetPaused(streamKey, paused);
     }
   },
   PUSH_NOTIFICATION_CLICK: function handlePushNotificationClick() {
-    const socket = require(12669) /* importDefaultResult1 */.socket;
+    const socket = require(12691) /* handleIdentify */.socket;
     socket.expeditedHeartbeat(5000, "user clicked on notification", true);
     return false;
   },
@@ -542,27 +561,27 @@ tmp5 = new tmp5(require("dispatcher"), {
     let guildId;
     let threads;
     ({ guildId, channelId, threads } = arg0);
-    const socket = require(12669) /* importDefaultResult1 */.socket;
+    const socket = require(12691) /* handleIdentify */.socket;
     const forumUnreads = socket.requestForumUnreads(guildId, channelId, threads);
   },
   REQUEST_SOUNDBOARD_SOUNDS: function handleRequestSoundboardSounds(guildIds) {
-    const socket = require(12669) /* importDefaultResult1 */.socket;
+    const socket = require(12691) /* handleIdentify */.socket;
     const soundboardSounds = socket.requestSoundboardSounds(guildIds.guildIds);
   },
   REMOTE_COMMAND: function handleRemoteCommand(arg0) {
     let payload;
     let sessionId;
     ({ sessionId, payload } = arg0);
-    const socket = require(12669) /* importDefaultResult1 */.socket;
+    const socket = require(12691) /* handleIdentify */.socket;
     if (socket.isSessionEstablished()) {
-      const socket2 = require(12669) /* importDefaultResult1 */.socket;
+      const socket2 = require(12691) /* handleIdentify */.socket;
       socket2.remoteCommand(sessionId, payload);
     }
     return false;
   },
   RESET_SOCKET: function handleResetSocket(args) {
-    if (require(12669) /* importDefaultResult1 */.socket.connectionState !== importDefault(12684).WILL_RECONNECT) {
-      const socket = require(12669) /* importDefaultResult1 */.socket;
+    if (require(12691) /* handleIdentify */.socket.connectionState !== importDefault(12706).WILL_RECONNECT) {
+      const socket = require(12691) /* handleIdentify */.socket;
       const result = socket.resetSocketAndClearCacheOnError(args.args);
     }
   },
@@ -573,16 +592,401 @@ tmp5 = new tmp5(require("dispatcher"), {
     if (tmp) {
       const clips = settings.settings.proto.clips;
       let allowVoiceRecording;
-      if (null != clips) {
+      if (clips != null) {
         allowVoiceRecording = clips.allowVoiceRecording;
       }
       tmp = null != allowVoiceRecording;
     }
     if (tmp) {
-      handleClipsFlags();
+      const localVoiceState = require(12691) /* handleIdentify */.localVoiceState;
+      localVoiceState.update();
     }
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/gateway/GatewayConnectionStore.tsx");
+let obj = {
+  START_SESSION: function handleSessionStart() {
+    const socket = require(12691) /* handleIdentify */.socket;
+    const verbose = tmp3.verbose;
+    if (socket.isClosed()) {
+      verbose("Socket is reconnecting because of starting new session");
+      const socket2 = require(12691) /* handleIdentify */.socket;
+      let flag = socket2.connect();
+    } else {
+      verbose("Socket is not reconnecting during a new session because it is not closed");
+      flag = false;
+    }
+    return flag;
+  },
+  LOGIN_SUCCESS: function handleSessionRefresh() {
+    const obj = { isEstablished: null };
+    const socket = require(12691) /* handleIdentify */.socket;
+    obj[0] = socket.isSessionEstablished();
+    tmp3.verbose("session refresh dispatched", obj);
+    const socket2 = require(12691) /* handleIdentify */.socket;
+    let connectResult = socket2.isSessionEstablished();
+    if (connectResult) {
+      const socket3 = tmp(12691).socket;
+      socket3.close();
+      const socket4 = tmp(12691).socket;
+      connectResult = socket4.connect();
+    }
+    return connectResult;
+  },
+  LOGOUT: function handleLogout(isSwitchingAccount) {
+    if (isSwitchingAccount.isSwitchingAccount) {
+      const localPresenceState = require(12691) /* handleIdentify */.localPresenceState;
+      localPresenceState.handleAccountSwitch();
+    }
+    tmp3.verbose("Closing socket because of logout");
+    const socket = require(12691) /* handleIdentify */.socket;
+    socket.close();
+  },
+  CLEAR_CACHES: function handleClearCaches(resetSocket) {
+    if (resetSocket.resetSocket) {
+      const socket = require(12691) /* handleIdentify */.socket;
+      socket.close();
+      const dispatcher = require(12691) /* handleIdentify */.socket.dispatcher;
+      dispatcher.clear();
+      const socket2 = require(12691) /* handleIdentify */.socket;
+      socket2.connect();
+    }
+    return false;
+  },
+  CONNECTION_OPEN(arg0) {
+    !(function handleConnectionOpen(arg0) {
+      const self = this;
+      const apply = closure_25.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    })(arg0);
+  },
+  CONNECTION_RESUMED: function handleConnectionResumed() {
+    let c24 = null;
+  },
+  CONNECTION_CLOSED: function handleConnectionClosed() {
+    tmp3.verbose("connection closed dispatched");
+    let closure_20 = Date.now();
+  },
+  RTC_CONNECTION_STATE: function handleRTCConnectionState(state) {
+    if (state.state !== constants.DISCONNECTED) {
+      return false;
+    } else if (state.willReconnect) {
+      if (null != state.streamKey) {
+        const socket2 = require(12691) /* handleIdentify */.socket;
+        socket2.streamPing(state.streamKey);
+      } else {
+        const socket = require(12691) /* handleIdentify */.socket;
+        socket.voiceServerPing();
+      }
+    }
+  },
+  VOICE_CHANNEL_SELECT: function handleVoiceChannelSelect(guildId) {
+    const localVoiceState = require(12691) /* handleIdentify */.localVoiceState;
+    localVoiceState.update({ guildId: guildId.guildId, channelId: guildId.channelId });
+    let channelId = null;
+    if (guildId.lockVoiceStateForResume) {
+      channelId = null;
+      if (null != guildId.channelId) {
+        channelId = guildId.channelId;
+      }
+    }
+    let isIOSResult = require(500) /* set */.isIOS();
+    if (isIOSResult) {
+      isIOSResult = c23 === constants2.BACKGROUND;
+    }
+    if (isIOSResult) {
+      if (null == guildId.channelId) {
+        const socket3 = tmp(12691).socket;
+        socket3.close(true);
+      } else {
+        const socket = tmp(12691).socket;
+        if (socket.isClosed()) {
+          importAll(12727).setIsPaused(false);
+          const socket2 = tmp(12691).socket;
+          socket2.connect();
+          const obj3 = importAll(12727);
+        }
+      }
+    }
+    return false;
+  },
+  VOICE_STATE_UPDATES: function handleVoiceStateUpdates(voiceStates) {
+    voiceStates = voiceStates.voiceStates;
+    return voiceStates.reduce((arg0, userId) => {
+      if (id.getId() !== userId.userId) {
+        return arg0;
+      } else {
+        if (userId.sessionId === closure_21) {
+          if (null != closure_24) {
+            closure_19.verbose("Ignoring voice state for own session due to VSU lock on channel:", closure_24);
+            return arg0;
+          } else {
+            const localVoiceState2 = callback(12691).localVoiceState;
+            const obj = { guildId: null, channelId: null };
+            ({ guildId: obj[0], channelId: obj[1] } = userId);
+            localVoiceState2.setState(obj);
+          }
+        } else {
+          if (userId.guildId !== callback(12691).localVoiceState.guildId) {
+            return arg0;
+          } else {
+            const localVoiceState = tmp(12691).localVoiceState;
+            localVoiceState.setState({ guildId: null, channelId: null });
+          }
+          tmp = callback;
+        }
+        return true;
+      }
+    }, false);
+  },
+  GUILD_DELETE: function handleGuildDelete(guild) {
+    if (guild.guild.id === require(12691) /* handleIdentify */.localVoiceState.guildId) {
+      const localVoiceState = require(12691) /* handleIdentify */.localVoiceState;
+      localVoiceState.setState({ guildId: null, channelId: null });
+    }
+  },
+  CHANNEL_DELETE: function handleChannelDelete(channel) {
+    if (channel.channel.id === require(12691) /* handleIdentify */.localVoiceState.channelId) {
+      const localVoiceState = require(12691) /* handleIdentify */.localVoiceState;
+      localVoiceState.setState({ guildId: null, channelId: null });
+    }
+  },
+  CALL_DELETE: function handleCallDelete(channelId) {
+    channelId = channelId.channelId;
+    if (channelId === require(12691) /* handleIdentify */.localVoiceState.channelId) {
+      if (c24 === channelId) {
+        return false;
+      } else {
+        const localVoiceState = require(12691) /* handleIdentify */.localVoiceState;
+        localVoiceState.setState({ guildId: null, channelId: null });
+      }
+    }
+  },
+  APP_STATE_UPDATE: function handleFocus(arg0) {
+    let state = arg0;
+    let socket = require;
+    if (obj.isIOS()) {
+      if (!fetchFingerprint.isAuthenticated()) {
+        state = state.state;
+      } else {
+        let isClosedResult = state === tmp6.BACKGROUND && state.state === tmp6.ACTIVE;
+        if (isClosedResult) {
+          const socket3 = socket(12691).socket;
+          isClosedResult = socket3.isClosed();
+        }
+        if (isClosedResult) {
+          importAll(12727).setIsPaused(false);
+          const socket4 = socket(12691).socket;
+          socket4.connect();
+          const obj2 = importAll(12727);
+        }
+      }
+      socket = socket(12691).socket;
+      socket.close(true);
+    } else {
+      if (state.state === constants2.ACTIVE) {
+        importAll(12727).setIsPaused(false);
+        if (fetchFingerprint.isAuthenticated()) {
+          const socket2 = socket(12691).socket;
+          socket2.resetBackoff("App state is active");
+        }
+        const obj3 = importAll(12727);
+      }
+      return false;
+    }
+  },
+  GUILD_MEMBERS_REQUEST: function handleGuildMembersRequest(userIds) {
+    const _require = userIds;
+    let socket = _require(12691).socket;
+    if (socket.isSessionEstablished()) {
+      if ("userIds" in userIds) {
+        const obj2 = importDefault(12)(userIds.userIds);
+        const item = importDefault(12)(userIds.userIds).chunk(100).forEach((userIds) => {
+          const socket = userIds(outer1_3[13]).socket;
+          const guildMembers = socket.requestGuildMembers(userIds.guildIds, { userIds, presences: userIds.presences });
+        });
+        const chunkResult = importDefault(12)(userIds.userIds).chunk(100);
+      } else {
+        const socket2 = _require(12691).socket;
+        const obj = { query: null, limit: null, presences: null };
+        ({ query: obj[0], limit: obj[1] } = userIds);
+        obj[2] = userIds.presences;
+        let guildMembers = socket2.requestGuildMembers(userIds.guildIds, obj);
+      }
+    }
+    return false;
+  },
+  GUILD_SEARCH_RECENT_MEMBERS: function handleGuildSearchRecentMembers(arg0) {
+    let continuationToken;
+    let guildId;
+    let query;
+    ({ guildId, query, continuationToken } = arg0);
+    const socket = require(12691) /* handleIdentify */.socket;
+    if (socket.isSessionEstablished()) {
+      const socket2 = require(12691) /* handleIdentify */.socket;
+      const obj = { query: null, continuationToken: null };
+      obj[0] = query;
+      obj[1] = continuationToken;
+      socket2.searchRecentMembers(guildId, obj);
+    }
+  },
+  GUILD_SUBSCRIPTIONS_FLUSH: function handleGuildSubscriptionsFlush(subscriptions) {
+    const socket = require(12691) /* handleIdentify */.socket;
+    if (socket.isSessionEstablished()) {
+      const socket2 = require(12691) /* handleIdentify */.socket;
+      const result = socket2.updateGuildSubscriptions(subscriptions.subscriptions);
+    }
+    return false;
+  },
+  CALL_CONNECT: function handleCallConnect(channelId) {
+    const socket = require(12691) /* handleIdentify */.socket;
+    if (socket.isSessionEstablished()) {
+      const socket2 = require(12691) /* handleIdentify */.socket;
+      socket2.callConnect(channelId.channelId);
+    }
+    return false;
+  },
+  CALL_CONNECT_MULTIPLE: function handleCallConnectMultiple(channelIds) {
+    channelIds = channelIds.channelIds;
+    let socket = require(12691) /* handleIdentify */.socket;
+    if (socket.isSessionEstablished()) {
+      const item = channelIds.forEach((arg0) => {
+        const socket = callback(table[13]).socket;
+        socket.callConnect(arg0);
+      });
+    }
+    return false;
+  },
+  STREAM_CREATE: handleClipsFlags,
+  STREAM_START: function handleStreamStart(arg0) {
+    let channelId;
+    let guildId;
+    let streamType;
+    ({ streamType, guildId, channelId } = arg0);
+    const socket = require(12691) /* handleIdentify */.socket;
+    if (socket.isSessionEstablished()) {
+      if (null != guildId) {
+        channel = channel.getChannel(channelId);
+        let rtcRegion;
+        if (channel != null) {
+          rtcRegion = channel.rtcRegion;
+        }
+        let region = rtcRegion;
+      } else {
+        call = call.getCall(channelId);
+        if (call != null) {
+          region = call.region;
+        }
+      }
+      const socket2 = require(12691) /* handleIdentify */.socket;
+      if (region == null) {
+        region = preferredRegion.getPreferredRegion();
+      }
+      socket2.streamCreate(streamType, guildId, channelId, region);
+    }
+    return false;
+  },
+  STREAM_WATCH: function handleStreamWatch(arg0) {
+    let allowMultiple;
+    let streamKey;
+    ({ streamKey, allowMultiple } = arg0);
+    let socket = _require(12691).socket;
+    if (socket.isSessionEstablished()) {
+      if (!allowMultiple) {
+        const allActiveStreamKeys = store.getAllActiveStreamKeys();
+        _require = allActiveStreamKeys.find((streamKey) => callback(4253).decodeStreamKey(streamKey).ownerId === id.getId());
+        const allActiveStreamKeys1 = store.getAllActiveStreamKeys();
+        const found = allActiveStreamKeys1.filter((arg0) => arg0 !== closure_0);
+        const item = found.forEach((streamKey) => {
+          const socket = callback(12691).socket;
+          if (socket.isSessionEstablished()) {
+            const socket2 = callback(12691).socket;
+            socket2.streamDelete(streamKey);
+          }
+        });
+      }
+      let socket2 = _require(12691).socket;
+      socket2.streamWatch(streamKey);
+    }
+    return false;
+  },
+  STREAM_STOP: function handleStreamStop(streamKey) {
+    const socket = require(12691) /* handleIdentify */.socket;
+    if (socket.isSessionEstablished()) {
+      const socket2 = tmp(12691).socket;
+      socket2.streamDelete(streamKey.streamKey);
+    }
+    const localVoiceState = tmp(12691).localVoiceState;
+    localVoiceState.update();
+    return false;
+  },
+  STREAM_SET_PAUSED: function handleStreamSetPaused(arg0) {
+    let paused;
+    let streamKey;
+    ({ streamKey, paused } = arg0);
+    const socket = require(12691) /* handleIdentify */.socket;
+    if (socket.isSessionEstablished()) {
+      const socket2 = require(12691) /* handleIdentify */.socket;
+      socket2.streamSetPaused(streamKey, paused);
+    }
+  },
+  PUSH_NOTIFICATION_CLICK: function handlePushNotificationClick() {
+    const socket = require(12691) /* handleIdentify */.socket;
+    socket.expeditedHeartbeat(5000, "user clicked on notification", true);
+    return false;
+  },
+  REQUEST_FORUM_UNREADS: function handleRequestForumUnreads(arg0) {
+    let channelId;
+    let guildId;
+    let threads;
+    ({ guildId, channelId, threads } = arg0);
+    const socket = require(12691) /* handleIdentify */.socket;
+    const forumUnreads = socket.requestForumUnreads(guildId, channelId, threads);
+  },
+  REQUEST_SOUNDBOARD_SOUNDS: function handleRequestSoundboardSounds(guildIds) {
+    const socket = require(12691) /* handleIdentify */.socket;
+    const soundboardSounds = socket.requestSoundboardSounds(guildIds.guildIds);
+  },
+  REMOTE_COMMAND: function handleRemoteCommand(arg0) {
+    let payload;
+    let sessionId;
+    ({ sessionId, payload } = arg0);
+    const socket = require(12691) /* handleIdentify */.socket;
+    if (socket.isSessionEstablished()) {
+      const socket2 = require(12691) /* handleIdentify */.socket;
+      socket2.remoteCommand(sessionId, payload);
+    }
+    return false;
+  },
+  RESET_SOCKET: function handleResetSocket(args) {
+    if (require(12691) /* handleIdentify */.socket.connectionState !== importDefault(12706).WILL_RECONNECT) {
+      const socket = require(12691) /* handleIdentify */.socket;
+      const result = socket.resetSocketAndClearCacheOnError(args.args);
+    }
+  },
+  CLIPS_SETTINGS_UPDATE: handleClipsFlags,
+  RUNNING_GAMES_CHANGE: handleClipsFlags,
+  USER_SETTINGS_PROTO_UPDATE: function handleUserSettingsProtoUpdate(settings) {
+    let tmp = settings.settings.type === UserSettingsTypes.PRELOADED_USER_SETTINGS;
+    if (tmp) {
+      const clips = settings.settings.proto.clips;
+      let allowVoiceRecording;
+      if (clips != null) {
+        allowVoiceRecording = clips.allowVoiceRecording;
+      }
+      tmp = null != allowVoiceRecording;
+    }
+    if (tmp) {
+      const localVoiceState = require(12691) /* handleIdentify */.localVoiceState;
+      localVoiceState.update();
+    }
+  }
+};
+const tmp3 = new require("callConnect")("ConnectionStore");
+let result = require("fetchFingerprint").fileFinishedImporting("modules/gateway/GatewayConnectionStore.tsx");
 
-export default tmp5;
+export default gatewayConnectionStore;

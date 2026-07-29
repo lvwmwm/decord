@@ -1,30 +1,30 @@
-// Module ID: 13825
-// Function ID: 105859
+// Module ID: 13846
+// Function ID: 13847
 // Name: items
-// Dependencies: [31, 27, 1850, 33, 4165, 689, 5837, 13826, 13827, 3844, 4991, 4382, 13828, 2]
+// Dependencies: [19, 17, 1874, 21, 4189, 712, 5855, 13847, 13848, 3868, 5013, 4405, 13849, 2]
 // Exports: default
 
-// Module 13825 (items)
-import result from "result";
+// Module 13846 (items)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.noticeContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj1 = {};
-let items = [{ order: 100, predicate: require("getActivityTypeTextConfigs").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") }, , ];
-let obj2 = { order: 100, predicate: require("getActivityTypeTextConfigs").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") };
+createCacheKey = { noticeContainer: null };
+createCacheKey = { marginHorizontal: require("Themes").space.PX_16, marginTop: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { SENSITIVE_CONTENT_FILTERS: null, CONTENT_AND_SOCIAL: null, DATA_AND_PRIVACY: null };
+let items = [{ order: 100, predicate: require("getEmptyActivityFormatter").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") }, , ];
+const obj2 = { order: 100, predicate: require("getEmptyActivityFormatter").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") };
 items[1] = {
   order: 300,
   predicate() {
     currentUser = currentUser.getCurrentUser();
     let nsfwAllowed;
-    if (null != currentUser) {
+    if (currentUser != null) {
       nsfwAllowed = currentUser.nsfwAllowed;
     }
     return false === nsfwAllowed;
@@ -36,7 +36,7 @@ const obj3 = {
   predicate() {
     currentUser = currentUser.getCurrentUser();
     let nsfwAllowed;
-    if (null != currentUser) {
+    if (currentUser != null) {
       nsfwAllowed = currentUser.nsfwAllowed;
     }
     return false === nsfwAllowed;
@@ -46,59 +46,59 @@ const obj3 = {
 items[2] = {
   order: 200,
   predicate() {
-    let isFeatureAgeGatedResult = require(3844) /* isFeatureAgeGated */.isFeatureAgeGated(require(4991) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = require(3868) /* isFeatureAgeGated */.isFeatureAgeGated(require(5013) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !require(4382) /* isReactiveCheckEnabled */.isAgeVerified();
-      const obj2 = require(4382) /* isReactiveCheckEnabled */;
+      isFeatureAgeGatedResult = !require(4405) /* useShouldCallReactiveCheck */.isAgeVerified();
+      const tmpResult = require(4405) /* useShouldCallReactiveCheck */;
     }
     return isFeatureAgeGatedResult;
   },
   Component: require("AgeConfirmationNotice")
 };
-obj1.SENSITIVE_CONTENT_FILTERS = items;
+obj1[0] = items;
 const obj4 = {
   order: 200,
   predicate() {
-    let isFeatureAgeGatedResult = require(3844) /* isFeatureAgeGated */.isFeatureAgeGated(require(4991) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = require(3868) /* isFeatureAgeGated */.isFeatureAgeGated(require(5013) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !require(4382) /* isReactiveCheckEnabled */.isAgeVerified();
-      const obj2 = require(4382) /* isReactiveCheckEnabled */;
+      isFeatureAgeGatedResult = !require(4405) /* useShouldCallReactiveCheck */.isAgeVerified();
+      const tmpResult = require(4405) /* useShouldCallReactiveCheck */;
     }
     return isFeatureAgeGatedResult;
   },
   Component: require("AgeConfirmationNotice")
 };
-const items1 = [{ order: 100, predicate: require("getActivityTypeTextConfigs").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") }, ];
-const obj5 = { order: 100, predicate: require("getActivityTypeTextConfigs").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") };
+const items1 = [{ order: 100, predicate: require("getEmptyActivityFormatter").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") }, ];
+const obj5 = { order: 100, predicate: require("getEmptyActivityFormatter").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") };
 items1[1] = {
   order: 200,
   predicate() {
-    let isFeatureAgeGatedResult = require(3844) /* isFeatureAgeGated */.isFeatureAgeGated(require(4991) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = require(3868) /* isFeatureAgeGated */.isFeatureAgeGated(require(5013) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !require(4382) /* isReactiveCheckEnabled */.isAgeVerified();
-      const obj2 = require(4382) /* isReactiveCheckEnabled */;
+      isFeatureAgeGatedResult = !require(4405) /* useShouldCallReactiveCheck */.isAgeVerified();
+      const tmpResult = require(4405) /* useShouldCallReactiveCheck */;
     }
     return isFeatureAgeGatedResult;
   },
   Component: require("AgeConfirmationNotice")
 };
-obj1.CONTENT_AND_SOCIAL = items1;
+obj1[1] = items1;
 const obj6 = {
   order: 200,
   predicate() {
-    let isFeatureAgeGatedResult = require(3844) /* isFeatureAgeGated */.isFeatureAgeGated(require(4991) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = require(3868) /* isFeatureAgeGated */.isFeatureAgeGated(require(5013) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !require(4382) /* isReactiveCheckEnabled */.isAgeVerified();
-      const obj2 = require(4382) /* isReactiveCheckEnabled */;
+      isFeatureAgeGatedResult = !require(4405) /* useShouldCallReactiveCheck */.isAgeVerified();
+      const tmpResult = require(4405) /* useShouldCallReactiveCheck */;
     }
     return isFeatureAgeGatedResult;
   },
   Component: require("AgeConfirmationNotice")
 };
-const items2 = [{ order: 100, predicate: require("getActivityTypeTextConfigs").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") }];
-obj1.DATA_AND_PRIVACY = items2;
-const obj7 = { order: 100, predicate: require("getActivityTypeTextConfigs").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsScreenNotices.tsx");
+const items2 = [{ order: 100, predicate: require("getEmptyActivityFormatter").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") }];
+obj1[2] = items2;
+const obj7 = { order: 100, predicate: require("getEmptyActivityFormatter").isParentallyControlled, Component: require("FamilyCenterSettingsParentalControlsNotice") };
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/user_settings/privacy_and_safety/native/SettingsScreenNotices.tsx");
 
 export default function SettingsScreenNotices(screen) {
   screen = screen.screen;
@@ -115,8 +115,10 @@ export default function SettingsScreenNotices(screen) {
   }, items);
   let tmp3 = null;
   if (null != memo) {
-    const obj = { style: tmp.noticeContainer, children: <memo key={screen} /> };
-    tmp3 = <View style={tmp.noticeContainer}><memo key={screen} /></View>;
+    const obj = { style: null, children: null };
+    obj[0] = tmp.noticeContainer;
+    obj[1] = <memo key={screen} />;
+    tmp3 = <View style={null}>{null}</View>;
   }
   return tmp3;
 };

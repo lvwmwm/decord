@@ -1,20 +1,20 @@
-// Module ID: 12828
-// Function ID: 99683
+// Module ID: 12850
+// Function ID: 12851
 // Name: useSelectedActiveStream
-// Dependencies: [4178, 4184, 566, 2]
+// Dependencies: [4202, 4208, 589, 2]
 // Exports: default
 
-// Module 12828 (useSelectedActiveStream)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 12850 (useSelectedActiveStream)
+import getParticipants from "getParticipants";
+import reset from "reset";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/video_calls/native/useSelectedActiveStream.tsx");
 
 export default function useSelectedActiveStream(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct, closure_3];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [getParticipants, reset];
+  return _require(589).useStateFromStores(items, () => {
     const selectedParticipantId = outer1_2.getSelectedParticipantId(id.id);
     let activeStreamForStreamKey = null;
     if (null != selectedParticipantId) {

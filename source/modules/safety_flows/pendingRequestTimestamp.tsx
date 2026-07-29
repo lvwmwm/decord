@@ -1,24 +1,24 @@
-// Module ID: 16686
-// Function ID: 130001
+// Module ID: 16722
+// Function ID: 16723
 // Name: SENT_TIMESTAMP_FORMATTER
-// Dependencies: [1212, 2461, 5837, 2]
+// Dependencies: [1236, 2485, 5855, 2]
 // Exports: formatPendingRequestSentText
 
-// Module 16686 (SENT_TIMESTAMP_FORMATTER)
+// Module 16722 (SENT_TIMESTAMP_FORMATTER)
 function SENT_TIMESTAMP_FORMATTER() {
-  const obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.seconds = intl.string(importDefault(2461).M4NOO3);
-  obj.minutes = importDefault(2461)["9nem85"];
-  obj.hours = importDefault(2461).sJjWRY;
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.yesterday = intl2.string(importDefault(2461)["7SxW32"]);
-  obj.days = importDefault(2461).tVHevX;
-  obj.date = importDefault(2461).q6jzya;
+  const obj = { seconds: null, minutes: null, hours: null, yesterday: null, days: null, date: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(importDefault(2485).M4NOO3);
+  obj[1] = importDefault(2485)["9nem85"];
+  obj[2] = importDefault(2485).sJjWRY;
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl2.string(importDefault(2485)["7SxW32"]);
+  obj[4] = importDefault(2485).tVHevX;
+  obj[5] = importDefault(2485).q6jzya;
   return obj;
 }
-const result = require("getActivityTypeTextConfigs").fileFinishedImporting("modules/safety_flows/pendingRequestTimestamp.tsx");
+const result = require("getEmptyActivityFormatter").fileFinishedImporting("modules/safety_flows/pendingRequestTimestamp.tsx");
 
 export const formatPendingRequestSentText = function formatPendingRequestSentText(created_at) {
-  return require(5837) /* getActivityTypeTextConfigs */.formatLinkTimestamp(Date.parse(created_at), SENT_TIMESTAMP_FORMATTER);
+  return require(5855) /* getEmptyActivityFormatter */.formatLinkTimestamp(Date.parse(created_at), SENT_TIMESTAMP_FORMATTER);
 };

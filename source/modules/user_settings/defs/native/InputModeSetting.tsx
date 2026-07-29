@@ -1,35 +1,35 @@
-// Module ID: 14243
-// Function ID: 109430
+// Module ID: 14265
+// Function ID: 14266
 // Name: pressable
-// Dependencies: [4212, 7733, 4226, 566, 1212, 10099, 10745, 2]
+// Dependencies: [4236, 7756, 4250, 589, 1236, 10120, 10769, 2]
 
-// Module 14243 (pressable)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14265 (pressable)
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { InputModes } from "DesktopSources";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["pS+K2L"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["pS+K2L"]);
   },
   parent: require("MobileSetting").MobileSetting.VOICE,
   useTrailing: function useInputModeSettingTrailing() {
-    const items = [_isNativeReflectConstruct];
-    if (obj.useStateFromStores(items, () => outer1_2.getMode()) === InputModes.PUSH_TO_TALK) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      let stringResult = intl2.string(require(1212) /* getSystemLocale */.t.Q8gkVL);
+    const items = [_detectH265HardwareDecode];
+    if (obj.useStateFromStores(items, () => mode.getMode()) === InputModes.PUSH_TO_TALK) {
+      const intl2 = tmp(1236).intl;
+      let stringResult = intl2.string(tmp(1236).t.Q8gkVL);
     } else {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      stringResult = intl.string(require(1212) /* getSystemLocale */.t.cHCEOJ);
+      const intl = tmp(1236).intl;
+      stringResult = intl.string(tmp(1236).t.cHCEOJ);
     }
     return stringResult;
   },
   onPress: require("handleInputModePress").handleInputModePress,
   useSearchTerms() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const items = [intl.string(require(1212) /* getSystemLocale */.t.nuFtHH)];
+    const intl = require(1236) /* getSystemLocale */.intl;
+    const items = [intl.string(require(1236) /* getSystemLocale */.t.nuFtHH)];
     return items;
   }
 };

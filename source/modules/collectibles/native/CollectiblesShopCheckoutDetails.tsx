@@ -1,61 +1,69 @@
-// Module ID: 11860
-// Function ID: 91858
+// Module ID: 11884
+// Function ID: 11885
 // Name: ProfileEffectAssetPreview
-// Dependencies: [31, 27, 655, 8015, 33, 4165, 689, 8042, 5119, 11861, 8058, 8670, 8022, 8050, 8032, 1874, 8046, 1877, 656, 8690, 8689, 8043, 1212, 4161, 5791, 8692, 11862, 8640, 3811, 8702, 2]
+// Dependencies: [19, 17, 678, 8039, 21, 4189, 712, 8066, 5141, 11885, 8082, 8694, 8046, 8074, 8056, 1898, 8070, 1901, 679, 8714, 8713, 8067, 1236, 4185, 5809, 8716, 11886, 8664, 3835, 8726, 2]
 // Exports: default
 
-// Module 11860 (ProfileEffectAssetPreview)
-import result from "result";
-import { View } from "useCurrentUser";
+// Module 11884 (ProfileEffectAssetPreview)
+import FRACTIONAL_NITRO_COIN_SIZE from "FRACTIONAL_NITRO_COIN_SIZE";
+import { View } from "CollectiblesItemType";
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items";
 import SAMPLE_PROFILE_ASPECT_RATIO from "SAMPLE_PROFILE_ASPECT_RATIO";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "AvatarDecorationSampleV2";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let SAMPLE_PROFILE_ASPECT_RATIO;
+let closure_6;
+let error;
+let metroImportAll;
 let require = arg1;
 function ProfileEffectAssetPreview(item) {
   const tmp = callback4();
-  const tmp2 = importDefault(8042)(item.item.skuId);
-  let tmp3 = null;
-  if (null != tmp2) {
-    let obj = { style: tmp.profileEffectContainer };
-    obj = {};
-    obj = { uri: importDefault(11861) };
-    obj.source = obj;
-    obj.alt = tmp2.accessibilityLabel;
-    obj.style = tmp.profileEffect;
-    obj.resizeMode = "cover";
-    const items = [callback(importDefault(5119), obj), ];
-    const obj1 = { style: tmp.profileEffect };
-    const obj2 = { uri: tmp2.thumbnailPreviewSrc };
-    obj1.source = obj2;
-    obj1.alt = tmp2.title;
-    obj1.resizeMode = "cover";
-    items[1] = callback(importDefault(5119), obj1);
-    obj.children = items;
-    tmp3 = callback2(View, obj);
-    const tmp9 = importDefault(5119);
+  const tmp4 = importDefault(8066)(item.item.skuId);
+  let tmp5 = null;
+  if (null != tmp4) {
+    let obj = { style: null, children: null };
+    obj[0] = tmp.profileEffectContainer;
+    obj = { source: null, alt: null, style: null, resizeMode: "cover" };
+    obj = { uri: null };
+    obj[0] = tmp2(11885);
+    obj[0] = obj;
+    obj[1] = tmp4.accessibilityLabel;
+    obj[2] = tmp.profileEffect;
+    const items = [callback(tmp2(5141), obj), ];
+    const obj1 = { style: null, source: null, alt: null, resizeMode: "cover" };
+    obj1[0] = tmp.profileEffect;
+    const obj2 = { uri: null };
+    obj2[0] = tmp4.thumbnailPreviewSrc;
+    obj1[1] = obj2;
+    obj1[2] = tmp4.title;
+    items[1] = callback(tmp2(5141), obj1);
+    obj[1] = items;
+    tmp5 = callback2(View, obj);
+    const tmp2Result = tmp2(5141);
   }
-  return tmp3;
+  return tmp5;
 }
 function ProfileFrameAssetPreview(arg0) {
   let height;
   let item;
   let width;
   ({ item, width, height } = arg0);
-  const tmp = importDefault(8058)(item.skuId, "CollectiblesShopCheckoutDetails");
-  let tmp2 = null;
-  if (null != tmp) {
-    const obj = { profileFrame: tmp, previewWidth: width, previewHeight: height, profileBackgroundColor: importDefault(689).colors.BACKGROUND_BASE_LOW };
-    tmp2 = callback(importDefault(8670), obj);
-    const tmp6 = importDefault(8670);
+  const tmp3 = importDefault(8082)(item.skuId, "CollectiblesShopCheckoutDetails");
+  let tmp4 = null;
+  if (null != tmp3) {
+    const obj = { profileFrame: null, previewWidth: null, previewHeight: null, profileBackgroundColor: null };
+    obj[0] = tmp3;
+    obj[1] = width;
+    obj[2] = height;
+    obj[3] = tmp(712).colors.BACKGROUND_BASE_LOW;
+    tmp4 = callback(tmp(8694), obj);
+    const tmpResult = tmp(8694);
   }
-  return tmp2;
+  return tmp4;
 }
 function BundleAssetPreview(height) {
   let firstAvatarDecoration;
@@ -65,15 +73,17 @@ function BundleAssetPreview(height) {
   let width;
   ({ product, width } = height);
   height = height.height;
+  let dependencyMap;
+  let bundleWidth;
   let rounded;
   let c5;
-  const tmp = _createForOfIteratorHelperLoose();
-  const dependencyMap = tmp;
-  let obj = width(8022);
+  const tmp = createCacheKey();
+  dependencyMap = tmp;
+  let obj = width(8046);
   const shopProductItems = obj.useShopProductItems(product);
   ({ firstProfileEffect, firstAvatarDecoration, firstNameplate } = shopProductItems);
-  let obj1 = width(8050);
-  const bundleWidth = BUNDLE_PREVIEW_CONFIG.small.bundleWidth;
+  let obj1 = width(8074);
+  bundleWidth = small.small.bundleWidth;
   rounded = bundleWidth;
   if (!obj1.useCollectiblesMobileFlexibleBundlesExperiment("CollectiblesShopCheckoutDetails").enabled) {
     const _Math = Math;
@@ -84,146 +94,167 @@ function BundleAssetPreview(height) {
   let items = [tmp.bundlePreviewContainer, width, height];
   let items1 = [tmp.bundlePreviewScale, bundleWidth, rounded, result];
   const memo = bundleWidth.useMemo(() => {
-    const items = [tmp.bundlePreviewContainer, { width, height }];
+    const items = [_undefined.bundlePreviewContainer, { width, height }];
     return items;
   }, items);
   const items2 = [width, height];
   const memo1 = bundleWidth.useMemo(() => {
-    const items = [tmp.bundlePreviewScale, ];
+    const items = [_undefined.bundlePreviewScale, ];
     let obj = { width: bundleWidth, height: rounded, transform: items1 };
     obj = { scale: c5 };
     items1 = [obj];
     items[1] = obj;
     return items;
   }, items1);
-  obj = { style: memo };
-  obj = { style: memo1 };
+  obj = { style: memo, children: null };
+  obj = { style: memo1, children: null };
   const memo2 = bundleWidth.useMemo(() => ({ width, height }), items2);
   obj1 = { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, previewAssets: product.previewAssets, disableStaticBackground: true, size: "small", targetSize: memo2, exposureLocation: "CollectiblesShopCheckoutDetails" };
-  obj.children = callback(height(8032), obj1);
-  obj.children = callback(rounded, obj);
+  obj[1] = callback(height(8056), obj1);
+  obj[1] = callback(rounded, obj);
   return callback(rounded, obj);
 }
 function NameplateAssetPreview(item) {
-  let obj = require(1874) /* getNameplateData */;
+  let obj = require(1898) /* getNameplateData */;
   const nameplateData = obj.getNameplateData(item.item);
-  obj = { nameplate: nameplateData, fullOpacity: true, isSquarePreview: true, style: _createForOfIteratorHelperLoose().nameplate };
-  return callback(importDefault(8046), obj);
+  obj = { nameplate: nameplateData, fullOpacity: true, isSquarePreview: true, style: createCacheKey().nameplate };
+  return callback(importDefault(8070), obj);
 }
 function CollectibleProductPreview(arg0) {
   let product;
   let recipientUser;
   ({ product, recipientUser } = arg0);
-  if (product.type === require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT) {
+  if (product.type === require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT) {
     let num = 42;
   } else {
     num = 55;
   }
   let avatarSource;
-  if (null != recipientUser) {
+  if (recipientUser != null) {
     avatarSource = recipientUser.getAvatarSource(undefined, false, num);
   }
-  obj = { style: items, children: callback(CollectibleProductPreviewContent, obj) };
-  items = [_createForOfIteratorHelperLoose().productPreviewContainer, ];
-  obj = { height: 55, width: num };
-  items[1] = obj;
-  obj = { product, width: num, height: 55, userAvatarSource: avatarSource };
-  return callback(View, obj);
+  const tmp = createCacheKey();
+  const tmp2 = require;
+  const items = [tmp.productPreviewContainer, { height: 55, width: num }];
+  return callback(View, { style: items, children: callback(CollectibleProductPreviewContent, { product, width: num, height: 55, userAvatarSource: avatarSource }) });
 }
 function CollectibleProductPreviewContent(userAvatarSource) {
   let height;
   let product;
   let width;
   ({ product, width, height } = userAvatarSource);
-  const ALL = require(656) /* set */.FractionalPremiumSKUsSets.ALL;
+  const ALL = require(679) /* set */.FractionalPremiumSKUsSets.ALL;
   if (ALL.has(product.skuId)) {
-    let obj = { skuId: product.skuId, width: require(8690) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT, height: require(8690) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT };
-    return callback(require(8690) /* FRACTIONAL_NITRO_COIN_SIZE */.FractionalNitroCoinIllustration, obj);
+    let obj = { skuId: null, width: null, height: null };
+    obj[0] = product.skuId;
+    obj[1] = tmp2(8714).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT;
+    obj[2] = tmp2(8714).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT;
+    return callback(tmp2(8714).FractionalNitroCoinIllustration, obj);
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
-    obj = {};
-    const obj1 = { uri: importDefault(8689) };
-    obj.source = obj1;
-    obj.style = tmp.externalProductImage;
-    return callback(importDefault(5119), obj);
+    obj = { source: null, style: null };
+    const obj1 = { uri: null };
+    obj1[0] = importDefault(8713);
+    obj[0] = obj1;
+    obj[1] = tmp.externalProductImage;
+    return callback(importDefault(5141), obj);
   } else {
     const type = product.type;
-    if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
-      const obj2 = { item: product.items[0], size: width, avatarSource: userAvatarSource.userAvatarSource, animate: false };
-      return callback(importDefault(8043), obj2);
-    } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT === type) {
-      const obj3 = { item: product.items[0] };
+    if (tmp2(1901).CollectiblesItemType.AVATAR_DECORATION === type) {
+      const obj2 = { item: null, size: null, avatarSource: null, animate: false };
+      obj2[0] = product.items[0];
+      obj2[1] = width;
+      obj2[2] = userAvatarSource.userAvatarSource;
+      return callback(importDefault(8067), obj2);
+    } else if (tmp2(1901).CollectiblesItemType.PROFILE_EFFECT === type) {
+      const obj3 = { item: null };
+      obj3[0] = product.items[0];
       return callback(ProfileEffectAssetPreview, obj3);
-    } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE === type) {
-      const obj4 = { item: product.items[0] };
+    } else if (tmp2(1901).CollectiblesItemType.NAMEPLATE === type) {
+      const obj4 = { item: null };
+      obj4[0] = product.items[0];
       return callback(NameplateAssetPreview, obj4);
-    } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME === type) {
-      const obj5 = { item: product.items[0], width, height };
+    } else if (tmp2(1901).CollectiblesItemType.PROFILE_FRAME === type) {
+      const obj5 = { item: null, width: null, height: null };
+      obj5[0] = product.items[0];
+      obj5[1] = width;
+      obj5[2] = height;
       return callback(ProfileFrameAssetPreview, obj5);
-    } else if (require(1877) /* CollectiblesItemType */.CollectiblesItemType.BUNDLE === type) {
-      obj = { product, width, height };
+    } else if (tmp2(1901).CollectiblesItemType.BUNDLE === type) {
+      obj = { product: null, width: null, height: null };
+      obj[0] = product;
+      obj[1] = width;
+      obj[2] = height;
       return callback(BundleAssetPreview, obj);
     } else {
       return null;
     }
   }
-  tmp = _createForOfIteratorHelperLoose();
+  tmp = createCacheKey();
 }
 function ProductDetails(product) {
   product = product.product;
   const require = product;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   const items = [, ];
   ({ type: arr[0], skuId: arr[1] } = product);
   const memo = React.useMemo(() => {
     const ALL = product(outer1_2[18]).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      const intl7 = product(outer1_2[22]).intl;
-      return intl7.string(product(outer1_2[22]).t.DFMPWS);
-    } else if (product.skuId === outer1_5.ORB_PROFILE_BADGE) {
-      const intl6 = product(outer1_2[22]).intl;
-      return intl6.string(product(outer1_2[22]).t["0+rBWT"]);
+      const intl7 = tmp(tmp2[22]).intl;
+      return intl7.string(tmp(tmp2[22]).t.DFMPWS);
+    } else if (tmp3.skuId === outer1_5.ORB_PROFILE_BADGE) {
+      const intl6 = tmp(tmp2[22]).intl;
+      return intl6.string(tmp(tmp2[22]).t["0+rBWT"]);
     } else {
-      const type = product.type;
-      if (product(outer1_2[17]).CollectiblesItemType.AVATAR_DECORATION === type) {
-        const intl5 = product(outer1_2[22]).intl;
-        return intl5.string(product(outer1_2[22]).t["7v0T9P"]);
-      } else if (product(outer1_2[17]).CollectiblesItemType.PROFILE_EFFECT === type) {
-        const intl4 = product(outer1_2[22]).intl;
-        return intl4.string(product(outer1_2[22]).t.wR5wOo);
-      } else if (product(outer1_2[17]).CollectiblesItemType.NAMEPLATE === type) {
-        const intl3 = product(outer1_2[22]).intl;
-        return intl3.string(product(outer1_2[22]).t.x5CoXR);
-      } else if (product(outer1_2[17]).CollectiblesItemType.PROFILE_FRAME === type) {
-        const intl2 = product(outer1_2[22]).intl;
-        return intl2.string(product(outer1_2[22]).t.GWrZOd);
-      } else if (product(outer1_2[17]).CollectiblesItemType.BUNDLE === type) {
-        const intl = product(outer1_2[22]).intl;
-        return intl.string(product(outer1_2[22]).t.Zr5tjn);
+      const type = tmp3.type;
+      if (tmp(tmp2[17]).CollectiblesItemType.AVATAR_DECORATION === type) {
+        const intl5 = tmp(tmp2[22]).intl;
+        return intl5.string(tmp(tmp2[22]).t["7v0T9P"]);
+      } else if (tmp(tmp2[17]).CollectiblesItemType.PROFILE_EFFECT === type) {
+        const intl4 = tmp(tmp2[22]).intl;
+        return intl4.string(tmp(tmp2[22]).t.wR5wOo);
+      } else if (tmp(tmp2[17]).CollectiblesItemType.NAMEPLATE === type) {
+        const intl3 = tmp(tmp2[22]).intl;
+        return intl3.string(tmp(tmp2[22]).t.x5CoXR);
+      } else if (tmp(tmp2[17]).CollectiblesItemType.PROFILE_FRAME === type) {
+        const intl2 = tmp(tmp2[22]).intl;
+        return intl2.string(tmp(tmp2[22]).t.GWrZOd);
+      } else if (tmp(tmp2[17]).CollectiblesItemType.BUNDLE === type) {
+        const intl = tmp(tmp2[22]).intl;
+        return intl.string(tmp(tmp2[22]).t.Zr5tjn);
       } else {
         return null;
       }
     }
   }, items);
   if (null == memo) {
-    let obj = { style: tmp.productDetails };
-    obj = { variant: "text-md/semibold", children: product.name };
-    obj.children = callback(require(4161) /* Text */.Text, obj);
-    let tmp8 = callback(View, obj);
+    let obj = { style: null, children: null };
+    obj[0] = tmp.productDetails;
+    obj = { variant: "text-md/semibold", children: null };
+    obj[1] = product.name;
+    obj[1] = callback(require(4185) /* Text */.Text, obj);
+    let tmp7 = callback(View, obj);
   } else {
-    obj = { style: tmp.productDetails };
-    const obj1 = { product, recipientUser: product.recipientUser };
+    obj = { style: null, children: null };
+    obj[0] = tmp.productDetails;
+    const obj1 = { product: null, recipientUser: null };
+    obj1[0] = product;
+    obj1[1] = product.recipientUser;
     const items1 = [callback(CollectibleProductPreview, obj1), ];
-    const obj2 = { style: tmp.productDetailsTextContainer };
-    const obj3 = { variant: "text-md/semibold", children: product.name };
-    const items2 = [callback(require(4161) /* Text */.Text, obj3), ];
-    const obj4 = { variant: "text-sm/medium", children: memo };
-    items2[1] = callback(require(4161) /* Text */.Text, obj4);
-    obj2.children = items2;
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.productDetailsTextContainer;
+    const obj3 = { variant: "text-md/semibold", children: null };
+    obj3[1] = product.name;
+    const items2 = [callback(require(4185) /* Text */.Text, obj3), ];
+    const obj4 = { variant: "text-sm/medium", children: null };
+    obj4[1] = memo;
+    items2[1] = callback(require(4185) /* Text */.Text, obj4);
+    obj2[1] = items2;
     items1[1] = callback2(View, obj2);
-    obj.children = items1;
-    tmp8 = callback2(View, obj);
+    obj[1] = items1;
+    tmp7 = callback2(View, obj);
   }
-  return tmp8;
+  return tmp7;
 }
 function ProductPriceAmountTag(product) {
   product = product.product;
@@ -234,69 +265,74 @@ function ProductPriceAmountTag(product) {
   const memo = React.useMemo(() => {
     if (useOrbPrice) {
       let tmpResult = tmp(tmp2[24]);
-      let obj = { product: closure_0, hasShopDiscount };
-      const productOrbPrice = tmpResult.getProductOrbPrice(obj);
+      const obj = { product: null, hasShopDiscount: null };
+      obj[0] = closure_0;
+      obj[1] = hasShopDiscount;
+      const orbPrice = tmpResult.getProductOrbPrice(obj);
     } else {
       tmpResult = tmp(tmp2[25]);
-      const formattedPriceForCollectiblesProduct = tmpResult.getFormattedPriceForCollectiblesProduct(closure_0, hasShopDiscount, true);
+      const priceText = tmpResult.getFormattedPriceForCollectiblesProduct(closure_0, hasShopDiscount, true);
     }
-    obj = { orbPrice: productOrbPrice, priceText: formattedPriceForCollectiblesProduct };
-    return obj;
+    return { orbPrice, priceText };
   }, items);
-  const orbPrice = memo.orbPrice;
+  let orbPrice = memo.orbPrice;
   if (useOrbPrice) {
-    let obj = {};
     let amount;
-    if (null != orbPrice) {
+    if (orbPrice != null) {
       amount = orbPrice.amount;
     }
-    obj.orbAmount = amount;
+    let obj = { orbAmount: null };
+    obj[0] = amount;
     let tmp3Result = tmp3(hasShopDiscount(useOrbPrice[26]), obj);
     const tmp9 = hasShopDiscount(useOrbPrice[26]);
   } else {
-    obj = { variant: "text-md/semibold", children: tmp2 };
+    obj = { variant: "text-md/semibold", children: null };
+    obj[1] = tmp2;
     tmp3Result = tmp3(require(useOrbPrice[23]).Text, obj);
   }
   return tmp3Result;
 }
-const BUNDLE_PREVIEW_CONFIG = SAMPLE_PROFILE_ASPECT_RATIO.BUNDLE_PREVIEW_CONFIG;
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = { externalProductImage: { width: 45, height: 45 } };
-_createForOfIteratorHelperLoose = { alignItems: "center", justifyContent: "center", overflow: "hidden", borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
-_createForOfIteratorHelperLoose.bundlePreviewContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.bundlePreviewScale = { overflow: "hidden", alignItems: "center", justifyContent: "center" };
-_createForOfIteratorHelperLoose.productContainer = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, flexDirection: "column", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
-let obj2 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.productDetailsContainer = obj2;
-_createForOfIteratorHelperLoose.productPreviewContainer = { justifyContent: "center", alignItems: "center" };
-let obj3 = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.productDetails = obj3;
-let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, flexDirection: "column", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
-_createForOfIteratorHelperLoose.productDetailsTextContainer = { gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-let obj5 = { height: 36, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, justifyContent: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, borderBottomLeftRadius: require("_createForOfIteratorHelperLoose").radii.lg, borderBottomRightRadius: require("_createForOfIteratorHelperLoose").radii.lg };
-_createForOfIteratorHelperLoose.errorContainer = obj5;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { borderWidth: 2 };
-  const colors = importDefault(689).colors;
-  obj.borderColor = arg0 ? colors.BACKGROUND_BRAND : colors.BORDER_FEEDBACK_CRITICAL;
-  obj.marginHorizontal = importDefault(689).space.PX_16;
-  obj.backgroundColor = undefined;
-  obj.giftProductContainer = obj;
+({ BUNDLE_PREVIEW_CONFIG: closure_6, SAMPLE_PROFILE_ASPECT_RATIO } = SAMPLE_PROFILE_ASPECT_RATIO);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { externalProductImage: { width: 45, height: 45 }, bundlePreviewContainer: null, bundlePreviewScale: null, productContainer: null, productDetailsContainer: null, productPreviewContainer: null, productDetails: null, productDetailsTextContainer: null, errorContainer: null };
+createCacheKey = { alignItems: "center", justifyContent: "center", overflow: "hidden", borderRadius: require("Themes").radii.xs };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { overflow: "hidden", alignItems: "center", justifyContent: "center" };
+createCacheKey[3] = { borderRadius: require("Themes").radii.lg, flexDirection: "column", backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+let obj1 = { borderRadius: require("Themes").radii.lg, flexDirection: "column", backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+createCacheKey[4] = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_16 };
+createCacheKey[5] = { justifyContent: "center", alignItems: "center" };
+let obj2 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_16 };
+createCacheKey[6] = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12 };
+let obj3 = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12 };
+createCacheKey[7] = { gap: require("Themes").space.PX_4 };
+let obj4 = { gap: require("Themes").space.PX_4 };
+createCacheKey[8] = { height: 36, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, justifyContent: "center", paddingHorizontal: require("Themes").space.PX_16, borderBottomLeftRadius: require("Themes").radii.lg, borderBottomRightRadius: require("Themes").radii.lg };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_10 = createCacheKey.createStyles((arg0) => {
+  const colors = importDefault(712).colors;
+  if (arg0) {
+    let BORDER_FEEDBACK_CRITICAL = colors.BACKGROUND_BRAND;
+    let tmp4 = tmp;
+  } else {
+    BORDER_FEEDBACK_CRITICAL = colors.BORDER_FEEDBACK_CRITICAL;
+    tmp4 = tmp;
+  }
+  let obj = { giftProductContainer: null };
+  obj = { borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp4(712).space.PX_16, backgroundColor: "HermesInternal" };
+  obj[0] = obj;
   return obj;
 });
-const obj6 = {};
-const obj7 = { position: "relative", width: "100%", height: "100%", borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, overflow: "hidden" };
-obj6.profileEffectContainer = obj7;
-_createForOfIteratorHelperLoose = { position: "absolute", width: "100%", aspectRatio: SAMPLE_PROFILE_ASPECT_RATIO.SAMPLE_PROFILE_ASPECT_RATIO, top: 0 };
-obj6.profileEffect = _createForOfIteratorHelperLoose;
-let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj6);
-_createForOfIteratorHelperLoose = {};
-let obj4 = { gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.nameplate = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj10 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs };
+const obj6 = { profileEffectContainer: null, profileEffect: null };
+let obj5 = { height: 36, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, justifyContent: "center", paddingHorizontal: require("Themes").space.PX_16, borderBottomLeftRadius: require("Themes").radii.lg, borderBottomRightRadius: require("Themes").radii.lg };
+obj6[0] = { position: "relative", width: "100%", height: "100%", borderRadius: require("Themes").radii.xs, overflow: "hidden" };
+obj6[1] = { position: "absolute", width: "100%", aspectRatio: SAMPLE_PROFILE_ASPECT_RATIO, top: 0 };
+let closure_11 = createCacheKey.createStyles(obj6);
+createCacheKey = { nameplate: null };
+createCacheKey = { borderRadius: require("Themes").radii.xs };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj7 = { position: "relative", width: "100%", height: "100%", borderRadius: require("Themes").radii.xs, overflow: "hidden" };
 let result = require("items").fileFinishedImporting("modules/collectibles/native/CollectiblesShopCheckoutDetails.tsx");
 
 export default function CollectiblesShopCheckoutDetails(recipientUser) {
@@ -315,41 +351,40 @@ export default function CollectiblesShopCheckoutDetails(recipientUser) {
     flag3 = false;
   }
   let dependencyMap;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(8640) /* useCurrentUser */;
+  const tmp = createCacheKey();
+  let obj = require(8664) /* useCurrentUser */;
   const currentUser = obj.useCurrentUser();
-  let obj1 = flag2(3811);
+  let obj1 = flag2(3835);
   const canUseShopDiscountsResult = obj1.canUseShopDiscounts(currentUser);
   dependencyMap = canUseShopDiscountsResult;
   const items = [product, flag2, canUseShopDiscountsResult];
-  obj = {};
   const items1 = [tmp.productContainer, ];
   let giftProductContainer = flag3;
   const memo = React.useMemo(() => {
     let obj = product(_undefined[29]);
     const productNameAndTypeLabel = obj.getProductNameAndTypeLabel(closure_0);
     if (flag2) {
-      const intl = tmp2(tmp3[22]).intl;
-      obj = {};
-      let tmp2Result = tmp2(tmp3[24]);
-      obj = { product: closure_0, hasShopDiscount: _undefined };
-      const productOrbPrice = tmp2Result.getProductOrbPrice(obj);
-      let amount;
-      if (null != productOrbPrice) {
-        amount = productOrbPrice.amount;
+      const intl = tmp(tmp2[22]).intl;
+      let tmpResult = tmp(tmp2[24]);
+      obj = { product: null, hasShopDiscount: null };
+      obj[0] = tmp3;
+      obj[1] = _undefined;
+      const productOrbPrice = tmpResult.getProductOrbPrice(obj);
+      let str2;
+      if (productOrbPrice != null) {
+        str2 = productOrbPrice.amount;
       }
-      let str2 = "";
-      if (null != amount) {
-        str2 = amount;
+      if (str2 == null) {
+        str2 = "";
       }
-      obj.orbAmount = str2;
-      let str = intl.formatToPlainString(tmp2(tmp3[22]).t.W4DfeF, obj);
+      obj = { orbAmount: null };
+      obj[0] = str2;
+      let str = intl.formatToPlainString(tmp(tmp2[22]).t.W4DfeF, obj);
     } else {
-      tmp2Result = tmp2(tmp3[25]);
-      const formattedPriceForCollectiblesProduct = tmp2Result.getFormattedPriceForCollectiblesProduct(closure_0, _undefined, true);
-      str = "";
-      if (null != formattedPriceForCollectiblesProduct) {
-        str = formattedPriceForCollectiblesProduct;
+      tmpResult = tmp(tmp2[25]);
+      str = tmpResult.getFormattedPriceForCollectiblesProduct(tmp3, _undefined, true);
+      if (str == null) {
+        str = "";
       }
     }
     return "" + productNameAndTypeLabel + ", " + str;
@@ -357,26 +392,25 @@ export default function CollectiblesShopCheckoutDetails(recipientUser) {
   if (flag3) {
     giftProductContainer = tmp2.giftProductContainer;
   }
+  obj = { style: items1, children: null };
   items1[1] = giftProductContainer;
-  obj.style = items1;
-  obj = { style: tmp.productDetailsContainer, accessibilityLabel: memo, accessible: true };
-  const items2 = [callback(ProductDetails, { product, recipientUser: recipientUser.recipientUser }), ];
-  obj1 = { product, hasShopDiscount: canUseShopDiscountsResult, useOrbPrice: flag2 };
-  items2[1] = callback(ProductPriceAmountTag, obj1);
-  obj.children = items2;
-  const items3 = [callback2(View, obj), ];
+  obj = { style: tmp.productDetailsContainer, accessibilityLabel: memo, accessible: true, children: null };
+  const items2 = [callback(ProductDetails, { product, recipientUser: recipientUser.recipientUser }), callback(ProductPriceAmountTag, { product, hasShopDiscount: canUseShopDiscountsResult, useOrbPrice: flag2 })];
+  obj[3] = items2;
+  const items3 = [closure_8(View, obj), ];
   if (flag3) {
     flag3 = !flag;
   }
   if (flag3) {
-    const obj2 = { style: tmp.errorContainer };
-    const obj3 = { variant: "text-xs/semibold", color: "text-feedback-critical" };
-    let intl = require(1212) /* getSystemLocale */.intl;
-    obj3.children = intl.string(require(1212) /* getSystemLocale */.t["3YfczA"]);
-    obj2.children = callback(require(4161) /* Text */.Text, obj3);
-    flag3 = callback(View, obj2);
+    obj1 = { style: null, children: null };
+    obj1[0] = tmp.errorContainer;
+    const obj2 = { variant: "text-xs/semibold", color: "text-feedback-critical", children: null };
+    let intl = tmp3(1236).intl;
+    obj2[2] = intl.string(tmp3(1236).t["3YfczA"]);
+    obj1[1] = tmp10(tmp3(4185).Text, obj2);
+    flag3 = tmp10(tmp9, obj1);
   }
   items3[1] = flag3;
-  obj.children = items3;
-  return callback2(View, obj);
+  obj[1] = items3;
+  return closure_8(View, obj);
 };

@@ -1,112 +1,189 @@
-// Module ID: 9948
-// Function ID: 76879
+// Module ID: 9970
+// Function ID: 9971
 // Name: DoubleTapEmojiEditNudgeInner
-// Dependencies: [5, 31, 27, 4157, 1451, 653, 1853, 33, 4165, 689, 3838, 7727, 1453, 566, 1392, 9312, 675, 9325, 4161, 1212, 5184, 4695, 2]
+// Dependencies: [5, 19, 17, 4181, 1475, 676, 1877, 21, 4189, 712, 3862, 7750, 1477, 589, 1416, 9336, 698, 9349, 4185, 1236, 5206, 4717, 2]
 // Exports: DoubleTapEmojiEditNudge
 
-// Module 9948 (DoubleTapEmojiEditNudgeInner)
+// Module 9970 (DoubleTapEmojiEditNudgeInner)
 import ME from "ME";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_createForOfIteratorHelperLoose";
+import getSystemLocale from "getSystemLocale";
+import { View } from "ToastEmoji";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import getDimensionsStoreStateForEntry from "getDimensionsStoreStateForEntry";
 import { AnalyticEvents } from "ME";
 import set from "set";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "PressableBase";
+import createCacheKey from "createCacheKey";
 import set from "get ActivityIndicator";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_9;
+let unpackModuleId;
 const require = arg1;
 function DoubleTapEmojiEditNudgeInner(location) {
   const _location = location.location;
   const emoji = location.emoji;
-  let obj = _location(1453);
-  const dependencyMap = obj.useAppEntryKey();
-  let obj1 = _location(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj1.useStateFromStores(items, () => outer1_6.useReducedMotion);
-  const tmp3 = callback3(callback((arg0) => arg0.byAppEntry[closure_2].fontScale));
+  let dependencyMap;
+  let stateFromStores;
+  let obj = _location(1477);
+  dependencyMap = obj.useAppEntryKey();
+  let obj1 = _location(589);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  stateFromStores = obj1.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const tmp5 = callback3(callback((arg0) => arg0.byAppEntry[closure_2].fontScale));
   const items1 = [emoji, stateFromStores];
   const items2 = [_location];
   const memo = React.useMemo(() => {
     if (null != emoji.id) {
-      let obj = emoji(1392);
-      obj = { id: emoji.id, size: outer1_9 };
+      let obj = emoji(1416);
+      obj = { id: null, size: null, animated: null };
+      obj[0] = tmp.id;
+      obj[1] = outer1_9;
       let animated = !stateFromStores;
-      if (animated) {
-        animated = emoji.animated;
+      if (!stateFromStores) {
+        animated = tmp.animated;
       }
-      obj.animated = animated;
+      obj[2] = animated;
       let url = obj.getEmojiURL(obj);
     } else {
-      url = emoji.url;
+      url = tmp.url;
     }
     return url;
   }, items1);
-  obj = { style: tmp3.doubleTapEmojiEditNudgeContainer };
+  obj = { style: tmp5.doubleTapEmojiEditNudgeContainer, children: null };
   callback = React.useCallback(() => {
-    let obj = _location(9312);
-    obj = { pickerIntention: outer1_10.DEFAULT_REACT_EMOJI };
-    // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = stateFromStores(tmp);
-    obj.onPressEmoji = function() {
-      return callback(...arguments);
+    let obj = _location(9336);
+    obj = { pickerIntention: outer1_10.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
+    let closure_0 = stateFromStores((arg0) => {
+      let closure_0 = arg0;
+      let c3 = 0;
+      let c4 = 0;
+      return (function*(arg0) {
+        if (c4 === 2) {
+          c4 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp4 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c4 = 2;
+            if (0 === c3) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let closure_2 = tmp2;
+                let closure_1 = tmp5;
+                const obj1 = { emoji_id: null, emoji_name: null, emoji_animated: null, recommended: false, location: null };
+                ({ id: obj8[0], name: obj8[1], animated: obj8[2] } = callback);
+                obj1[4] = callback;
+                outer2_1(outer2_2[16]).track(outer2_8.DOUBLE_TAP_REACT_EMOJI_UPDATED, obj1);
+                const DoubleTapReactionEmoji = callback(outer2_2[10]).DoubleTapReactionEmoji;
+                ({ id: obj9[0], name: obj9[1], animated: obj9[2] } = callback);
+                c3 = 1;
+                c4 = 1;
+                const obj3 = { value: null, done: false };
+                obj3[0] = DoubleTapReactionEmoji.updateSetting({ emojiId: null, emojiName: null, animated: null, disableDoubleTap: false });
+                return obj3;
+              }
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj4 = { value: null, done: true };
+              obj4[0] = arg1;
+              return obj4;
+            } else {
+              obj = callback(outer2_2[17]);
+              const obj5 = { emoji: null };
+              obj5[0] = callback;
+              const result = obj.showDoubleTapEmojiUpdatedToast(obj5);
+              c4 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } catch (tmp12) {
+            c4 = tmp;
+            throw tmp12;
+          }
+        }
+      })();
+    });
+    obj[1] = function() {
+      const self = this;
+      const apply = closure_0.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     };
-    obj.startExpanded = true;
-    const result = obj.openEmojiPickerActionSheet(obj, "stack");
+    let result = obj.openEmojiPickerActionSheet(obj, "stack");
   }, items2);
-  obj = { color: "text-subtle", variant: "text-sm/normal" };
-  const intl = _location(1212).intl;
-  obj.children = intl.string(_location(1212).t["1EUr/W"]);
-  const items3 = [callback2(_location(4161).Text, obj), , ];
-  obj1 = { style: tmp3.doubleTapEmojiContainer, fastImageStyle: tmp3.doubleTapCustomEmoji, textEmojiStyle: tmp3.doubleTapTextEmoji, src: memo };
+  obj = { color: "text-subtle", variant: "text-sm/normal", children: null };
+  const intl = _location(1236).intl;
+  obj[2] = intl.string(_location(1236).t["1EUr/W"]);
+  const items3 = [callback2(_location(4185).Text, obj), , ];
+  obj1 = { style: tmp5.doubleTapEmojiContainer, fastImageStyle: tmp5.doubleTapCustomEmoji, textEmojiStyle: tmp5.doubleTapTextEmoji, src: memo, name: null };
   let str = "";
-  const tmp = callback((arg0) => arg0.byAppEntry[closure_2].fontScale);
-  const tmp6 = closure_12;
-  const tmp7 = View;
-  const tmp8 = callback2;
+  const tmp3 = callback((arg0) => arg0.byAppEntry[closure_2].fontScale);
+  const tmp8 = closure_12;
+  const tmp9 = View;
   if (null == emoji.id) {
     str = emoji.surrogates;
   }
-  obj1.name = str;
-  items3[1] = tmp8(emoji(5184), obj1);
-  const obj2 = { accessibilityRole: "button", onPress: callback, hitSlop: closure_13, style: tmp3.editButton };
-  const obj3 = { color: "text-brand", variant: "text-sm/normal" };
-  const intl2 = _location(1212).intl;
-  obj3.children = intl2.string(_location(1212).t.bt75uw);
-  obj2.children = callback2(_location(4161).Text, obj3);
-  items3[2] = callback2(_location(4695).PressableOpacity, obj2);
-  obj.children = items3;
-  return tmp6(tmp7, obj);
+  obj1[4] = str;
+  items3[1] = callback2(emoji(5206), obj1);
+  const obj2 = { accessibilityRole: "button", onPress: callback, hitSlop: closure_13, style: tmp5.editButton, children: null };
+  let obj3 = { color: "text-brand", variant: "text-sm/normal", children: null };
+  const intl2 = tmp(1236).intl;
+  obj3[2] = intl2.string(_location(1236).t.bt75uw);
+  obj2[4] = callback2(_location(4185).Text, obj3);
+  items3[2] = callback2(_location(4717).PressableOpacity, obj2);
+  obj[1] = items3;
+  return tmp8(tmp9, obj);
 }
-({ EMOJI_URL_BASE_SIZE: closure_9, EmojiIntention: closure_10 } = set);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+({ EMOJI_URL_BASE_SIZE: c9, EmojiIntention: c10 } = set);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
 let closure_13 = { left: 8, right: 8 };
-let closure_14 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { marginHorizontal: importDefault(689).space.PX_4 };
-  obj.doubleTapEmojiContainer = obj;
-  obj = { fontSize: 12 * arg0, color: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
-  obj.doubleTapTextEmoji = obj;
-  obj.doubleTapCustomEmoji = { height: 16 * arg0, width: 16 * arg0 };
-  const obj2 = { marginTop: importDefault(689).space.PX_8, flexDirection: "row", alignItems: "center", justifyContent: "center", flexWrap: "wrap" };
-  obj.doubleTapEmojiEditNudgeContainer = obj2;
-  obj.editButton = { marginHorizontal: importDefault(689).space.PX_4 };
+let closure_14 = createCacheKey.createStyles((arg0) => {
+  let obj = { doubleTapEmojiContainer: null, doubleTapTextEmoji: null, doubleTapCustomEmoji: null, doubleTapEmojiEditNudgeContainer: null, editButton: null };
+  obj = { marginHorizontal: importDefault(712).space.PX_4 };
+  obj[0] = obj;
+  obj = { fontSize: 12 * arg0, color: importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj[1] = obj;
+  obj[2] = { height: 16 * arg0, width: 16 * arg0 };
+  obj[3] = { marginTop: importDefault(712).space.PX_8, flexDirection: "row", alignItems: "center", justifyContent: "center", flexWrap: "wrap" };
+  const obj1 = { height: 16 * arg0, width: 16 * arg0 };
+  const obj2 = { marginTop: importDefault(712).space.PX_8, flexDirection: "row", alignItems: "center", justifyContent: "center", flexWrap: "wrap" };
+  obj[4] = { marginHorizontal: importDefault(712).space.PX_4 };
   return obj;
 });
 let result = set.fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapEmojiEditNudge.tsx");
 
 export const DoubleTapEmojiEditNudge = function DoubleTapEmojiEditNudge(location) {
   const _location = location.location;
-  const DoubleTapReactionEmoji = setting(3838).DoubleTapReactionEmoji;
+  let setting;
+  const DoubleTapReactionEmoji = setting(3862).DoubleTapReactionEmoji;
   setting = DoubleTapReactionEmoji.useSetting();
   const items = [setting];
   const memo = React.useMemo(() => setting(outer1_2[11]).disambiguatedEmojiFromSettingsValue(setting), items);
-  const memo1 = React.useMemo(() => setting(outer1_2[11]).getFallbackDoubleTapDisambiguatedEmoji(), []);
+  const memo1 = React.useMemo(() => setting(table[11]).getFallbackDoubleTapDisambiguatedEmoji(), []);
   [][0] = setting;
   let tmp5 = null;
   if (true === setting.disableDoubleTap) {
@@ -114,13 +191,17 @@ export const DoubleTapEmojiEditNudge = function DoubleTapEmojiEditNudge(location
   } else {
     if (!tmp4) {
       if (tmp5 != memo1) {
-        let obj = { location: _location, emoji: memo1 };
+        let obj = { location: null, emoji: null };
+        obj[0] = _location;
+        obj[1] = memo1;
         let tmp8 = callback2(DoubleTapEmojiEditNudgeInner, obj);
       }
     }
     tmp5 = null;
     if (tmp9) {
-      obj = { location: _location, emoji: memo };
+      obj = { location: null, emoji: null };
+      obj[0] = _location;
+      obj[1] = memo;
       tmp5 = callback2(DoubleTapEmojiEditNudgeInner, obj);
     }
     tmp8 = tmp5;

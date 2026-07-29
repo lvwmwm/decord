@@ -1,40 +1,39 @@
-// Module ID: 11171
-// Function ID: 86709
+// Module ID: 11195
+// Function ID: 11196
 // Name: num2
-// Dependencies: [31, 27, 33, 4165, 689, 477, 9109, 1212, 4664, 4161, 10355, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 500, 9133, 1236, 4686, 4185, 10376, 2]
 // Exports: default
 
-// Module 11171 (num2)
-import "result";
+// Module 11195 (num2)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
 import set from "set";
 import set from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { tintColor: require("_createForOfIteratorHelperLoose").colors.ICON_MUTED, marginEnd: 4 };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { tintColor: require("Themes").colors.ICON_MUTED, marginEnd: 4, marginTop: null };
 let num = 0;
 if (set.isAndroid()) {
   num = 2;
 }
-_createForOfIteratorHelperLoose.marginTop = num;
-_createForOfIteratorHelperLoose.iconRead = _createForOfIteratorHelperLoose;
-let obj1 = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, marginEnd: 4 };
+createCacheKey = { iconRead: createCacheKey, iconUnread: null, messageUnreadCount: null, container: null };
+createCacheKey[2] = num;
+let obj1 = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, marginEnd: 4, marginTop: null };
 let num2 = 0;
 if (set.isAndroid()) {
   num2 = 2;
 }
-obj1.marginTop = num2;
-_createForOfIteratorHelperLoose.iconUnread = obj1;
-_createForOfIteratorHelperLoose.messageUnreadCount = { marginStart: 4 };
-_createForOfIteratorHelperLoose.container = { flexDirection: "row", alignItems: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+obj1[2] = num2;
+createCacheKey[1] = obj1;
+createCacheKey[2] = { marginStart: 4 };
+createCacheKey[3] = { flexDirection: "row", alignItems: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = set.fileFinishedImporting("modules/forums/native/posts/ForumPostMessageCount.tsx");
 
 export default function ForumPostMessageCount(hasUnreads) {
@@ -46,8 +45,8 @@ export default function ForumPostMessageCount(hasUnreads) {
   let unreadCount;
   hasUnreads = hasUnreads.hasUnreads;
   ({ thread, containerStyle } = hasUnreads);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(9109) /* sortForumPostReactionsByPopularityDesc */;
+  const tmp = createCacheKey();
+  let obj = require(9133) /* useLoadForumUnreadCounts */;
   messageCount = obj.useMessageCount(thread);
   ({ messageCountText, unreadCount } = messageCount);
   let str = "text-muted";
@@ -55,35 +54,41 @@ export default function ForumPostMessageCount(hasUnreads) {
   if (hasUnreads) {
     str = "text-default";
   }
-  obj = { style: items };
+  obj = { style: items, accessibilityLabel: null, children: null };
   items = [tmp.container, containerStyle];
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["8M0DrB"], { count: messageCountText });
-  obj = { size: "xs", style: hasUnreads ? tmp.iconUnread : tmp.iconRead };
+  const intl = tmp2(1236).intl;
+  obj[1] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t["8M0DrB"], { count: messageCountText });
+  obj = { size: "xs", style: hasUnreads ? tmp.iconUnread : tmp.iconRead, color: null };
   let str2 = "icon-muted";
   if (hasUnreads) {
     str2 = "interactive-text-default";
   }
-  obj.color = str2;
-  const items1 = [closure_4(require(4664) /* ChatIcon */.ChatIcon, obj), , ];
+  obj[2] = str2;
+  const items1 = [closure_4(require(4686) /* ChatIcon */.ChatIcon, obj), , ];
   if (isMaxMessageCount) {
-    const obj1 = { variant: "text-sm/semibold", color: str, children: messageCountText };
-    let tmp6Result = tmp6(require(4161) /* Text */.Text, obj1);
+    const obj1 = { variant: "text-sm/semibold", color: null, children: null };
+    obj1[1] = str;
+    obj1[2] = messageCountText;
+    let tmp7Result = tmp7(tmp2(4185).Text, obj1);
   } else {
-    const obj2 = { count: messageCount, textVariant: "text-sm/semibold", textColor: str, animate: false };
-    tmp6Result = tmp6(importDefault(10355), obj2);
+    const obj2 = { count: null, textVariant: "text-sm/semibold", textColor: null, animate: false };
+    obj2[0] = messageCount;
+    obj2[2] = str;
+    tmp7Result = tmp7(importDefault(10376), obj2);
   }
-  items1[1] = tmp6Result;
-  let tmp12 = null != unreadCount;
-  if (tmp12) {
-    const obj3 = { variant: "text-sm/semibold", color: "text-brand", style: tmp.messageUnreadCount };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj4 = { count: unreadCount };
-    const items2 = ["(", intl2.format(require(1212) /* getSystemLocale */.t.z3PEth, obj4), ")"];
-    obj3.children = items2;
-    tmp12 = callback(require(4161) /* Text */.Text, obj3);
+  items1[1] = tmp7Result;
+  let tmp5Result = null != unreadCount;
+  if (tmp5Result) {
+    const obj3 = { variant: "text-sm/semibold", color: "text-brand", style: null, children: null };
+    obj3[2] = tmp.messageUnreadCount;
+    const intl2 = tmp2(1236).intl;
+    const obj4 = { count: null };
+    obj4[0] = unreadCount;
+    const items2 = ["(", intl2.format(tmp2(1236).t.z3PEth, obj4), ")"];
+    obj3[3] = items2;
+    tmp5Result = tmp5(tmp2(4185).Text, obj3);
   }
-  items1[2] = tmp12;
-  obj.children = items1;
-  return callback(View, obj);
+  items1[2] = tmp5Result;
+  obj[2] = items1;
+  return closure_5(View, obj);
 };

@@ -1,11 +1,11 @@
-// Module ID: 11322
-// Function ID: 87881
+// Module ID: 11346
+// Function ID: 11347
 // Name: useAnimationDelayedAutoFocus
-// Dependencies: [31, 11315, 2]
+// Dependencies: [19, 11339, 2]
 // Exports: useAnimationDelayedAutoFocus
 
-// Module 11322 (useAnimationDelayedAutoFocus)
-import result from "result";
+// Module 11346 (useAnimationDelayedAutoFocus)
+import noop from "noop";
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/app_launcher/native/hooks/useAnimationDelayedAutoFocus.tsx");
@@ -13,7 +13,7 @@ const result = require("set").fileFinishedImporting("modules/app_launcher/native
 export const useAnimationDelayedAutoFocus = function useAnimationDelayedAutoFocus(autoFocus, onPress) {
   const _require = autoFocus;
   const dependencyMap = onPress;
-  const awaitAnimationCompletion = _require(11315).useAwaitAnimationCompletion();
+  const awaitAnimationCompletion = _require(11339).useAwaitAnimationCompletion();
   let closure_3 = awaitAnimationCompletion.useRef(false);
   const items = [autoFocus, onPress, awaitAnimationCompletion];
   const effect = awaitAnimationCompletion.useEffect(() => {
@@ -23,7 +23,7 @@ export const useAnimationDelayedAutoFocus = function useAnimationDelayedAutoFocu
     }
     if (tmp) {
       awaitAnimationCompletion(() => {
-        outer1_1();
+        callback();
       });
     }
     ref.current = true;

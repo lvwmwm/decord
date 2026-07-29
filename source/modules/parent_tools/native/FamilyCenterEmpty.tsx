@@ -1,32 +1,30 @@
-// Module ID: 13926
-// Function ID: 106487
+// Module ID: 13947
+// Function ID: 13948
 // Name: FamilyCenterEmpty
-// Dependencies: [31, 27, 33, 4165, 13927, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 13948, 4185, 2]
 // Exports: default
 
-// Module 13926 (FamilyCenterEmpty)
-import "result";
+// Module 13947 (FamilyCenterEmpty)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ art: { marginBottom: 10, width: 243 }, empty: { display: "flex", alignItems: "center" } });
+({ View: c3, Image: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles({ art: { marginBottom: 10, width: 243 }, empty: { display: "flex", alignItems: "center" } });
 const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterEmpty.tsx");
 
-export default function FamilyCenterEmpty(text) {
+export default function FamilyCenterEmpty(children) {
   const tmp = callback3();
-  let obj = { style: tmp.empty };
-  obj = { source: importDefault(13927), style: tmp.art, resizeMethod: "scale" };
-  const items = [callback(closure_4, obj), ];
-  obj = { variant: "text-sm/medium", color: "text-muted", children: text.text };
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  let obj = { style: tmp.empty, children: null };
+  obj = { source: importDefault(13948), style: tmp.art, resizeMethod: "scale" };
+  const items = [callback(closure_4, obj), callback(require(4185) /* Text */.Text, { variant: "text-sm/medium", color: "text-muted", children: children.text })];
+  obj[1] = items;
   return callback2(closure_3, obj);
 };

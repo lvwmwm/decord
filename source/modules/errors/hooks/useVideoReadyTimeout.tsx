@@ -1,15 +1,15 @@
-// Module ID: 10534
-// Function ID: 81513
+// Module ID: 10558
+// Function ID: 10559
 // Name: useVideoReadyTimeout
-// Dependencies: [31, 664, 4050, 10533, 4262, 10535, 10537, 2]
+// Dependencies: [19, 687, 4074, 10557, 4286, 10559, 10561, 2]
 // Exports: default
 
-// Module 10534 (useVideoReadyTimeout)
-import result from "result";
+// Module 10558 (useVideoReadyTimeout)
+import noop from "noop";
 
 const require = arg1;
 let closure_3 = 20 * require("set").Millis.SECOND;
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/errors/hooks/useVideoReadyTimeout.tsx");
+let result = require("start").fileFinishedImporting("modules/errors/hooks/useVideoReadyTimeout.tsx");
 
 export default function useVideoReadyTimeout(streamId) {
   let streamKey;
@@ -24,21 +24,22 @@ export default function useVideoReadyTimeout(streamId) {
   }
   let closure_5;
   let STREAM;
+  let obj = streamKey;
   const timeout = new streamId(userId[2]).Timeout();
   closure_5 = streamKey.useRef(timeout);
   if (videoSpinnerContext !== streamId(userId[3]).VideoSpinnerContext.SELF_STREAM) {
-    if (videoSpinnerContext !== streamId(userId[3]).VideoSpinnerContext.REMOTE_STREAM) {
-      STREAM = streamId(userId[4]).MediaEngineContextTypes.DEFAULT;
+    if (videoSpinnerContext !== tmp(tmp2[3]).VideoSpinnerContext.REMOTE_STREAM) {
+      STREAM = tmp(tmp2[4]).MediaEngineContextTypes.DEFAULT;
     }
     const items = [flag, streamId, loading, STREAM, streamKey, userId];
-    const effect = streamKey.useEffect(() => {
+    const effect = obj.useEffect(() => {
       if (loading) {
         if (!flag) {
           const WindowVisibilityVideoManager = streamId(userId[5]).WindowVisibilityVideoManager;
           if (WindowVisibilityVideoManager.isIncomingVideoEnabled()) {
             const current = ref.current;
             current.start(loading, () => {
-              streamId(userId[6]).videoStreamTimedOut(current, outer1_1, outer1_6, outer1_2);
+              current(outer1_1[6]).videoStreamTimedOut(current, closure_1, closure_6, noop);
             });
             return () => {
               current.stop();
@@ -47,14 +48,14 @@ export default function useVideoReadyTimeout(streamId) {
         }
       }
     }, items);
-    const obj = {};
+    obj = { onReady: null };
     const items1 = [userId, STREAM];
-    obj.onReady = streamKey.useCallback(() => {
+    obj[0] = obj.useCallback(() => {
       const current = ref.current;
       current.stop();
       const result = streamId(userId[6]).clearVideoStreamTimeout(STREAM, userId);
     }, items1);
     return obj;
   }
-  STREAM = streamId(userId[4]).MediaEngineContextTypes.STREAM;
+  STREAM = tmp(tmp2[4]).MediaEngineContextTypes.STREAM;
 };

@@ -1,69 +1,67 @@
-// Module ID: 11470
-// Function ID: 89013
+// Module ID: 11494
+// Function ID: 11495
 // Name: ApplicationSectionHeader
-// Dependencies: [31, 27, 1918, 33, 4165, 689, 566, 11367, 1212, 5119, 4161, 2]
+// Dependencies: [19, 17, 1942, 21, 4189, 712, 589, 11391, 1236, 5141, 4185, 2]
 // Exports: default
 
-// Module 11470 (ApplicationSectionHeader)
-import "result";
+// Module 11494 (ApplicationSectionHeader)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", height: 32, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, paddingHorizontal: 16 };
-_createForOfIteratorHelperLoose.applicationHeaderWrapper = _createForOfIteratorHelperLoose;
-let obj1 = { width: 16, height: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, marginRight: 8 };
-_createForOfIteratorHelperLoose.applicationIcon = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/application_commands/native/ApplicationSectionHeader.tsx");
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { applicationHeaderWrapper: null, applicationIcon: null };
+createCacheKey = { flexDirection: "row", alignItems: "center", height: 32, backgroundColor: require("Themes").colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, paddingHorizontal: 16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { width: 16, height: 16, borderRadius: require("Themes").radii.sm, marginRight: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { width: 16, height: 16, borderRadius: require("Themes").radii.sm, marginRight: 8 };
+const result = require("trackCommunicationDisabled").fileFinishedImporting("modules/application_commands/native/ApplicationSectionHeader.tsx");
 
 export default function ApplicationSectionHeader(section) {
   section = section.section;
   const guildId = section.guildId;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = section(566);
-  const items = [_isNativeReflectConstruct];
+  const tmp = createCacheKey();
+  let obj = section(589);
+  const items = [trackCommunicationDisabled];
   const stateFromStores = obj.useStateFromStores(items, () => {
     if (null != guildId) {
       let botId;
-      if (null != section) {
-        botId = section.botId;
+      if (section != null) {
+        botId = tmp2.botId;
       }
       if (null != botId) {
-        return outer1_4.getMember(guildId, section.botId);
+        return outer1_4.getMember(tmp, tmp2.botId);
       }
     }
   });
-  let obj1 = section(11367);
-  const applicationCommandsIconSource = obj1.getApplicationCommandsIconSource(section, stateFromStores);
+  const applicationCommandsIconSource = section(11391).getApplicationCommandsIconSource(section, stateFromStores);
   let nick;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     nick = stateFromStores.nick;
   }
   if (null != nick) {
     let name = stateFromStores.nick;
-  } else if (null != section) {
+  } else if (section != null) {
     name = section.name;
   }
-  obj = { style: tmp.applicationHeaderWrapper };
-  const intl = section(1212).intl;
-  obj = { applicationName: name };
-  obj.accessibilityLabel = intl.formatToPlainString(section(1212).t["Ocw/sM"], obj);
-  let tmp7 = null != applicationCommandsIconSource;
-  if (tmp7) {
-    obj1 = { style: tmp.applicationIcon, source: applicationCommandsIconSource };
-    tmp7 = callback(guildId(5119), obj1);
+  obj = { style: tmp.applicationHeaderWrapper, accessibilityLabel: null, children: null };
+  const intl = tmp2(1236).intl;
+  obj[1] = intl.formatToPlainString(section(1236).t["Ocw/sM"], { applicationName: name });
+  let tmp9 = null != applicationCommandsIconSource;
+  if (tmp9) {
+    obj = { style: null, source: null };
+    obj[0] = tmp.applicationIcon;
+    obj[1] = applicationCommandsIconSource;
+    tmp9 = callback(guildId(5141), obj);
   }
-  const items1 = [tmp7, ];
-  const obj2 = { variant: "eyebrow", color: "interactive-text-default", children: name };
-  items1[1] = callback(section(4161).Text, obj2);
-  obj.children = items1;
+  const items1 = [tmp9, callback(section(4185).Text, { variant: "eyebrow", color: "interactive-text-default", children: name })];
+  obj[2] = items1;
   return closure_6(View, obj);
 };
 export const APPLICATION_SECTION_HEADER_HEIGHT = 32;

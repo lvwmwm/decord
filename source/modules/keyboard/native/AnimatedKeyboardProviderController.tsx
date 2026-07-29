@@ -1,72 +1,72 @@
-// Module ID: 13605
-// Function ID: 104504
+// Module ID: 10386
+// Function ID: 10387
 // Name: mutable
-// Dependencies: [31, 33, 4026, 1571, 2]
+// Dependencies: [19, 21, 4050, 1595, 2]
 
-// Module 13605 (mutable)
+// Module 10386 (mutable)
 import jsxProd from "jsxProd";
-import module_4026 from "module_4026";
-import mutable from "result";
-import module_4026 from "module_4026";
-import importAllResult from "result";
+import module_4050 from "module_4050";
+import mutable from "noop";
+import module_4050 from "module_4050";
+import importAllResult from "noop";
 
-let closure_2;
-let closure_3;
+let c3;
+let obj1;
 const require = arg1;
-({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
-const mutable1 = module_4026.makeMutable(require("module_4026").KeyboardState.UNKNOWN);
+({ jsx: obj1, jsxs: c3 } = jsxProd);
+const mutable1 = module_4050.makeMutable(require("module_4050").KeyboardState.UNKNOWN);
 let closure_6 = { code: "function AnimatedKeyboardProviderControllerTsx1(e){const{animatedKeyboardState,KeyboardState}=this.__closure;animatedKeyboardState.set(e.height===0?KeyboardState.CLOSED:KeyboardState.OPEN);}" };
 let closure_7 = { code: "function AnimatedKeyboardProviderControllerTsx2(e){const{animatedKeyboardHeight}=this.__closure;animatedKeyboardHeight.set(e.height);}" };
 let closure_8 = { code: "function AnimatedKeyboardProviderControllerTsx3(e){const{animatedKeyboardState,KeyboardState,animatedKeyboardHeight}=this.__closure;animatedKeyboardState.set(e.height===0?KeyboardState.CLOSED:KeyboardState.OPEN);animatedKeyboardHeight.set(e.height);}" };
-let closure_9 = require("result").memo(() => {
-  let obj = require(1571) /* KeyboardChatScrollView */;
-  obj = {};
+let closure_9 = require("noop").memo(() => {
+  let obj = require(1595) /* KeyboardChatScrollView */;
+  obj = { onStart: null, onMove: null, onEnd: null };
   const fn = function o(height) {
     if (0 === height.height) {
-      let OPEN = outer1_0(outer1_1[2]).KeyboardState.CLOSED;
+      let OPEN = callback(4050).KeyboardState.CLOSED;
     } else {
-      OPEN = outer1_0(outer1_1[2]).KeyboardState.OPEN;
+      OPEN = callback(4050).KeyboardState.OPEN;
     }
-    const result = outer1_5.set(OPEN);
+    const result = store2.set(OPEN);
   };
-  obj = { animatedKeyboardState: mutable1, KeyboardState: require(4026).KeyboardState };
+  obj = { animatedKeyboardState: mutable1, KeyboardState: require(4050).KeyboardState };
   fn.__closure = obj;
   fn.__workletHash = 12130162639136;
   fn.__initData = closure_6;
-  obj.onStart = fn;
+  obj[0] = fn;
   const fn2 = function t(height) {
-    const result = outer1_4.set(height.height);
+    const result = store.set(height.height);
   };
   fn2.__closure = { animatedKeyboardHeight: mutable };
   fn2.__workletHash = 1398293011995;
   fn2.__initData = closure_7;
-  obj.onMove = fn2;
+  obj[1] = fn2;
   const fn3 = function e(height) {
     if (0 === height.height) {
-      let OPEN = outer1_0(outer1_1[2]).KeyboardState.CLOSED;
+      let OPEN = callback(4050).KeyboardState.CLOSED;
     } else {
-      OPEN = outer1_0(outer1_1[2]).KeyboardState.OPEN;
+      OPEN = callback(4050).KeyboardState.OPEN;
     }
-    const result = outer1_5.set(OPEN);
-    const result1 = outer1_4.set(height.height);
+    const result = store2.set(OPEN);
+    const result1 = store.set(height.height);
   };
-  fn3.__closure = { animatedKeyboardState: mutable1, KeyboardState: require(4026).KeyboardState, animatedKeyboardHeight: mutable };
+  fn3.__closure = { animatedKeyboardState: mutable1, KeyboardState: require(4050).KeyboardState, animatedKeyboardHeight: mutable };
   fn3.__workletHash = 10688534401196;
   fn3.__initData = closure_8;
-  obj.onEnd = fn3;
+  obj[2] = fn3;
   obj.useKeyboardHandler(obj, []);
   return null;
 });
 let obj = {
   Component(children) {
-    const obj = { enabled: true, navigationBarTranslucent: true, preserveEdgeToEdge: true, statusBarTranslucent: true };
+    const obj = { enabled: true, navigationBarTranslucent: true, preserveEdgeToEdge: true, statusBarTranslucent: true, children: null };
     const items = [children.children, callback(closure_9, {})];
-    obj.children = items;
-    return callback2(require(1571) /* KeyboardChatScrollView */.KeyboardProvider, obj);
+    obj[4] = items;
+    return callback2(require(1595) /* KeyboardChatScrollView */.KeyboardProvider, obj);
   },
   animatedKeyboardHeight: mutable,
   animatedKeyboardState: mutable1
 };
-let result = require("module_4026").fileFinishedImporting("modules/keyboard/native/AnimatedKeyboardProviderController.tsx");
+let result = require("module_4050").fileFinishedImporting("modules/keyboard/native/AnimatedKeyboardProviderController.tsx");
 
 export default obj;

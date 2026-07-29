@@ -1,26 +1,28 @@
-// Module ID: 8283
-// Function ID: 66358
+// Module ID: 8307
+// Function ID: 8308
 // Name: canUseMobileServerTagSettings
-// Dependencies: [1838, 3793, 653, 8284, 7917, 2]
+// Dependencies: [1862, 3817, 676, 8308, 7942, 2]
 // Exports: canUseMobileServerTagSettings, canViewMobileServerTag, isServerTagDraftDirty
 
-// Module 8283 (canUseMobileServerTagSettings)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8307 (canUseMobileServerTagSettings)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";
 
 const require = arg1;
+const GuildSettingsServerTag = "GuildSettingsServerTag";
 const result = require("ME").fileFinishedImporting("modules/guild_settings/GuildSettingsServerTagUtils.tsx");
 
 export const canUseMobileServerTagSettings = function canUseMobileServerTagSettings(guildId) {
   const guild = store.getGuild(guildId);
   let enabled = null != guild;
   if (enabled) {
-    enabled = _isNativeReflectConstruct.can(Permissions.MANAGE_GUILD, guild);
+    enabled = getUncachedChannelPermissions.can(Permissions.MANAGE_GUILD, guild);
   }
   if (enabled) {
-    let obj = importDefault(8284);
-    obj = { location: "GuildSettingsServerTag" };
+    let obj = importDefault(8308);
+    obj = { location: null };
+    obj[0] = GuildSettingsServerTag;
     enabled = obj.getConfig(obj).enabled;
   }
   return enabled;
@@ -29,25 +31,26 @@ export const canViewMobileServerTag = function canViewMobileServerTag(id) {
   const guild = store.getGuild(id);
   let enabled = null != guild;
   if (enabled) {
-    let obj = require(7917) /* getUserPrimaryGuild */;
+    let obj = require(7942) /* guildHasTag */;
     enabled = obj.guildSupportsTags(guild);
   }
   if (enabled) {
-    enabled = require(7917) /* getUserPrimaryGuild */.guildHasTag(guild);
-    const obj2 = require(7917) /* getUserPrimaryGuild */;
+    enabled = require(7942) /* guildHasTag */.guildHasTag(guild);
+    const obj2 = require(7942) /* guildHasTag */;
   }
   if (enabled) {
-    obj = { location: "GuildSettingsServerTag" };
-    enabled = importDefault(8284).getConfig(obj).enabled;
-    const obj3 = importDefault(8284);
+    obj = { location: null };
+    obj[0] = GuildSettingsServerTag;
+    enabled = importDefault(8308).getConfig(obj).enabled;
+    const obj3 = importDefault(8308);
   }
   return enabled;
 };
-export const isServerTagDraftDirty = function isServerTagDraftDirty(closure_31, closure_30) {
-  let tmp = null != closure_31 && null != closure_30;
+export const isServerTagDraftDirty = function isServerTagDraftDirty(closure_9, closure_8) {
+  let tmp = null != closure_9 && null != closure_8;
   if (tmp) {
-    tmp = closure_31.tag !== closure_30.tag || closure_31.badge !== closure_30.badge || closure_31.badgeColorPrimary !== closure_30.badgeColorPrimary || closure_31.badgeColorSecondary !== closure_30.badgeColorSecondary;
-    const tmp2 = closure_31.tag !== closure_30.tag || closure_31.badge !== closure_30.badge || closure_31.badgeColorPrimary !== closure_30.badgeColorPrimary || closure_31.badgeColorSecondary !== closure_30.badgeColorSecondary;
+    tmp = closure_9.tag !== closure_8.tag || closure_9.badge !== closure_8.badge || closure_9.badgeColorPrimary !== closure_8.badgeColorPrimary || closure_9.badgeColorSecondary !== closure_8.badgeColorSecondary;
+    const tmp2 = closure_9.tag !== closure_8.tag || closure_9.badge !== closure_8.badge || closure_9.badgeColorPrimary !== closure_8.badgeColorPrimary || closure_9.badgeColorSecondary !== closure_8.badgeColorSecondary;
   }
   return tmp;
 };

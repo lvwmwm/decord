@@ -1,25 +1,25 @@
-// Module ID: 14036
-// Function ID: 107248
+// Module ID: 14058
+// Function ID: 14059
 // Name: useBountyVideoProgressPersistence
-// Dependencies: [57, 31, 5965, 5011, 10857, 14033, 10861, 2]
+// Dependencies: [32, 19, 5984, 5033, 10881, 14055, 10885, 2]
 // Exports: useBountyVideoProgressPersistence
 
-// Module 14036 (useBountyVideoProgressPersistence)
+// Module 14058 (useBountyVideoProgressPersistence)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import noop from "noop";
+import set from "set";
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
 
 const require = arg1;
 let closure_6 = { timestampSec: 0, maxTimestampSec: 0, duration: 0 };
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/quests/native/BountiesModal/useBountyVideoProgressPersistence.tsx");
+let result = require("set").fileFinishedImporting("modules/quests/native/BountiesModal/useBountyVideoProgressPersistence.tsx");
 
 export const useBountyVideoProgressPersistence = function useBountyVideoProgressPersistence(bountyId) {
   bountyId = bountyId.bountyId;
   const endMode = bountyId.endMode;
   let callback;
   let React;
-  let _createForOfIteratorHelperLoose;
+  let set;
   let QuestsExperimentLocations;
   let closure_6;
   let obj = bountyId(endMode[4]);
@@ -43,13 +43,13 @@ export const useBountyVideoProgressPersistence = function useBountyVideoProgress
     }
   }), 1)[0];
   React = React.useRef(0);
-  _createForOfIteratorHelperLoose = React.useRef(first.timestampSec);
+  set = React.useRef(first.timestampSec);
   QuestsExperimentLocations = React.useRef(first.maxTimestampSec);
   closure_6 = React.useRef(first.duration);
   obj = {
     initialProgress: first,
     handleProgress: React.useCallback((current, current2, current3) => {
-      _createForOfIteratorHelperLoose.current = current3;
+      set.current = current3;
       closure_5.current = current;
       closure_6.current = current2;
       let tmp = c2;
@@ -59,14 +59,20 @@ export const useBountyVideoProgressPersistence = function useBountyVideoProgress
       if (tmp) {
         ref.current = current3 + 1;
         let obj = bountyId(endMode[6]);
-        obj = { timestampSec: current3, maxTimestampSec: current, duration: current2 };
+        obj = { timestampSec: null, maxTimestampSec: null, duration: null };
+        obj[0] = current3;
+        obj[1] = current;
+        obj[2] = current2;
         const result = obj.setBountyVideoProgress(bountyId, obj);
       }
     }, items),
     flushProgress: React.useCallback(() => {
       if (c2) {
         let obj = bountyId(endMode[6]);
-        obj = { timestampSec: ref2.current, maxTimestampSec: ref3.current, duration: ref4.current };
+        obj = { timestampSec: null, maxTimestampSec: null, duration: null };
+        obj[0] = ref2.current;
+        obj[1] = ref3.current;
+        obj[2] = ref4.current;
         const result = obj.setBountyVideoProgress(bountyId, obj);
       }
     }, items1)

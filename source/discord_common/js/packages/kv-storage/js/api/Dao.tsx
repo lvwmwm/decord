@@ -1,205 +1,166 @@
-// Module ID: 1887
-// Function ID: 21031
-// Name: Dao
-// Dependencies: [6, 7, 1888, 1890, 2]
+// Module ID: 1911
+// Function ID: 1912
+// Name: prefix
+// Dependencies: [1912, 1914, 2]
 
-// Module 1887 (Dao)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-const require = arg1;
-const tmp3 = (() => {
-  class DaoTransaction {
-    constructor(arg0) {
-      tmp = outer1_2(this, DaoTransaction);
-      this.transaction = arg0;
-      return;
+// Module 1911 (prefix)
+let Dao;
+class Dao {
+  constructor(arg0, arg1, arg2) {
+    flag = importAll;
+    if (importAll === undefined) {
+      flag = true;
     }
+    obj = Object.create(new.target.prototype);
+    obj.originalPrefix = global;
+    items = [];
+    items[0] = global;
+    table = new require("fromDatabaseTransaction").Table(items, require, importDefault, flag);
+    obj.table = table;
+    return obj;
   }
-  let obj = {
-    key: "put",
-    value(arg0, data) {
-      let Replace = arg2;
-      if (arg2 === undefined) {
-        Replace = DaoTransaction(outer1_1[3]).ConflictOptions.Replace;
-      }
-      const transaction = this.transaction;
-      const items = [arg0];
-      transaction.put({ key: items, data, generation: null }, Replace);
-    }
-  };
-  let items = [obj, ];
-  obj = {
-    key: "delete",
-    value(arg0) {
-      const self = this;
-      if (0 === arguments.length) {
-        const transaction2 = self.transaction;
-        let deleteResult = transaction2.delete();
-      } else {
-        const transaction = self.transaction;
-        const items = [arg0];
-        deleteResult = transaction.delete(items);
-      }
-      return deleteResult;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "fromDatabaseTransaction",
-    value(prefix, tableId, transaction) {
-      const tableTransaction = new DaoTransaction(outer1_1[2]).TableTransaction(prefix, tableId, transaction);
-      return new DaoTransaction(tableTransaction);
-    }
-  };
-  const items1 = [obj];
-  return callback(DaoTransaction, items, items1);
-})();
-let closure_4 = tmp3;
-const tmp2 = (() => {
-  class Dao {
-    constructor(arg0, arg1, arg2) {
-      flag = arg3;
-      self = this;
-      if (arg3 === undefined) {
-        flag = true;
-      }
-      tmp = outer1_2(self, Dao);
-      self.originalPrefix = arg0;
-      items = [];
-      items[0] = arg0;
-      table = new Dao(outer1_1[2]).Table(items, arg1, arg2, flag);
-      self.table = table;
-      return;
-    }
+}
+const prototype = Dao.prototype;
+Object.defineProperty(prototype, "prefix", {
+  get: function prefix() {
+    return this.table.prefix;
+  },
+  set: undefined
+});
+prototype["withoutLogging"] = function withoutLogging() {
+  const originalPrefix = this.originalPrefix;
+  if (typeof Dao !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  let obj = {
-    key: "prefix",
-    get() {
-      return this.table.prefix;
+  const obj = Object.create(Dao.prototype);
+  obj.originalPrefix = originalPrefix;
+  const items = [originalPrefix];
+  const table = new require(1912) /* fromDatabaseTransaction */.Table(items, this.table.tableId, this.table.database, false);
+  obj.table = table;
+  return obj;
+};
+prototype["get"] = function get(arg0) {
+  const table = this.table;
+  const items = [arg0];
+  return table.get(items);
+};
+prototype["getMany"] = function getMany(arg0) {
+  const table = this.table;
+  return table.getMany([], arg0);
+};
+prototype["getRange"] = function getRange(arg0, arg1, arg2) {
+  const table = this.table;
+  const items = [arg0];
+  const items1 = [arg1];
+  return table.getRange(items, items1, arg2);
+};
+prototype["getKvEntries"] = function getKvEntries() {
+  const table = this.table;
+  return table.getKvEntries();
+};
+prototype["getMapEntries"] = function getMapEntries() {
+  const table = this.table;
+  return table.getMapEntries();
+};
+prototype["getIds"] = function getIds() {
+  const table = this.table;
+  return table.getChildIds([]);
+};
+prototype["getParentId"] = function getParentId(arg0) {
+  const table = this.table;
+  const items = [null, arg0];
+  return table.getParentId(items);
+};
+prototype["put"] = function put(arg0, data) {
+  let Replace = arg2;
+  if (arg2 === undefined) {
+    Replace = require(1914) /* TableId */.ConflictOptions.Replace;
+  }
+  const table = this.table;
+  const items = [arg0];
+  return table.put({ key: items, data, generation: null }, Replace);
+};
+prototype["delete"] = function delete(arg0) {
+  const self = this;
+  if (0 === arguments.length) {
+    const table2 = self.table;
+    let deleteResult = table2.delete();
+  } else {
+    const table = self.table;
+    const items = [arg0];
+    deleteResult = table.delete(items);
+  }
+  return deleteResult;
+};
+prototype["transaction"] = function transaction(arg0, arg1) {
+  let closure_0 = arg0;
+  const table = this.table;
+  return table.transaction((transaction) => {
+    if (typeof outer1_2 !== "find") {
+      HermesBuiltin.throwTypeError();
     }
-  };
-  let items = [obj, , , , , , , , , , , , , , ];
-  obj = {
-    key: "withoutLogging",
-    value() {
-      return new Dao(this.originalPrefix, this.table.tableId, this.table.database, false);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "get",
-    value(arg0) {
-      const table = this.table;
-      const items = [arg0];
-      return table.get(items);
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getMany",
-    value(arg0) {
-      const table = this.table;
-      return table.getMany([], arg0);
-    }
-  };
-  items[4] = {
-    key: "getRange",
-    value(arg0, arg1, arg2) {
-      const table = this.table;
-      const items = [arg0];
-      const items1 = [arg1];
-      return table.getRange(items, items1, arg2);
-    }
-  };
-  items[5] = {
-    key: "getKvEntries",
-    value() {
-      const table = this.table;
-      return table.getKvEntries();
-    }
-  };
-  items[6] = {
-    key: "getMapEntries",
-    value() {
-      const table = this.table;
-      return table.getMapEntries();
-    }
-  };
-  items[7] = {
-    key: "getIds",
-    value() {
-      const table = this.table;
-      return table.getChildIds([]);
-    }
-  };
-  items[8] = {
-    key: "getParentId",
-    value(arg0) {
-      const table = this.table;
-      const items = [null, arg0];
-      return table.getParentId(items);
-    }
-  };
-  items[9] = {
-    key: "put",
-    value(arg0, data) {
-      let Replace = arg2;
-      if (arg2 === undefined) {
-        Replace = Dao(outer1_1[3]).ConflictOptions.Replace;
-      }
-      const table = this.table;
-      const items = [arg0];
-      return table.put({ key: items, data, generation: null }, Replace);
-    }
-  };
-  items[10] = {
-    key: "delete",
-    value(arg0) {
-      const self = this;
-      if (0 === arguments.length) {
-        const table2 = self.table;
-        let deleteResult = table2.delete();
-      } else {
-        const table = self.table;
-        const items = [arg0];
-        deleteResult = table.delete(items);
-      }
-      return deleteResult;
-    }
-  };
-  items[11] = {
-    key: "transaction",
-    value(arg0, arg1) {
-      let closure_0 = arg0;
-      const table = this.table;
-      return table.transaction((arg0) => callback(new outer2_4(arg0)), arg1);
-    }
-  };
-  items[12] = {
-    key: "upgradeTransaction",
-    value(arg0) {
-      const table = this.table;
-      return new outer1_4(table.upgradeTransaction(arg0));
-    }
-  };
-  items[13] = {
-    key: "getManySyncUnsafe",
-    value(arg0) {
-      const table = this.table;
-      return table.getManySyncUnsafe([], arg0);
-    }
-  };
-  items[14] = {
-    key: "getMapEntriesSyncUnsafe",
-    value() {
-      const table = this.table;
-      return table.getMapEntriesSyncUnsafe();
-    }
-  };
-  return callback(Dao, items);
-})();
-const result = require("prefixCell").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Dao.tsx");
+    const obj = Object.create(outer1_2.prototype);
+    obj.transaction = transaction;
+    return closure_0(obj);
+  }, arg1);
+};
+prototype["upgradeTransaction"] = function upgradeTransaction(arg0) {
+  const table = this.table;
+  if (typeof DaoTransaction !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const obj = Object.create(DaoTransaction.prototype);
+  obj.transaction = table.upgradeTransaction(arg0);
+  return obj;
+};
+prototype["getManySyncUnsafe"] = function getManySyncUnsafe(arg0) {
+  const table = this.table;
+  return table.getManySyncUnsafe([], arg0);
+};
+prototype["getMapEntriesSyncUnsafe"] = function getMapEntriesSyncUnsafe() {
+  const table = this.table;
+  return table.getMapEntriesSyncUnsafe();
+};
+let DaoTransaction;
+class DaoTransaction {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj.transaction = global;
+    return obj;
+  }
+}
+const prototype2 = DaoTransaction.prototype;
+DaoTransaction["fromDatabaseTransaction"] = function fromDatabaseTransaction(prefix, tableId, transaction) {
+  const tableTransaction = new require(1912) /* fromDatabaseTransaction */.TableTransaction(prefix, tableId, transaction);
+  if (typeof DaoTransaction !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const obj = Object.create(DaoTransaction.prototype);
+  obj.transaction = tableTransaction;
+  return obj;
+};
+prototype2["put"] = function put(arg0, data) {
+  let Replace = arg2;
+  if (arg2 === undefined) {
+    Replace = require(1914) /* TableId */.ConflictOptions.Replace;
+  }
+  const transaction = this.transaction;
+  const items = [arg0];
+  transaction.put({ key: items, data, generation: null }, Replace);
+};
+prototype2["delete"] = function delete(arg0) {
+  const self = this;
+  if (0 === arguments.length) {
+    const transaction2 = self.transaction;
+    let deleteResult = transaction2.delete();
+  } else {
+    const transaction = self.transaction;
+    const items = [arg0];
+    deleteResult = transaction.delete(items);
+  }
+  return deleteResult;
+};
+const result = require("set").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Dao.tsx");
 
-export const Dao = tmp2;
-export const DaoTransaction = tmp3;
+export { Dao };
+export { DaoTransaction };

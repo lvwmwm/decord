@@ -1,59 +1,54 @@
-// Module ID: 13090
-// Function ID: 101117
+// Module ID: 13113
+// Function ID: 13114
 // Name: GuildProgressOverviewView
-// Dependencies: [31, 27, 653, 33, 4165, 689, 11542, 11545, 5530, 1212, 4695, 1273, 4161, 10713, 13091, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 11566, 11569, 5548, 1236, 4717, 1297, 4185, 10737, 13114, 2]
 // Exports: default
 
-// Module 13090 (GuildProgressOverviewView)
-import result from "result";
+// Module 13113 (GuildProgressOverviewView)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
 class GuildProgressOverviewView {
   constructor(arg0) {
     ({ titleStyle, onPress, onLongPress, title, subtitle, percentComplete } = global);
-    tmp = c7();
-    obj = { accessibilityRole: "button", activeOpacity: 0.4 };
-    obj.style = tmp.container;
-    obj.onPress = onPress;
-    obj.onLongPress = onLongPress;
-    obj = { style: tmp.horizontal };
-    obj1 = {};
+    tmp = jsxs();
+    obj = { accessibilityRole: "button", activeOpacity: 0.4, style: tmp.container, onPress, onLongPress, children: null };
+    obj = { style: tmp.horizontal, children: null };
+    obj1 = { children: null };
     items = [, ];
     items[0] = tmp.title;
     items[1] = titleStyle;
     items1 = [, ];
     items1[0] = jsx(require("Button").LegacyText, { style: items, children: title });
-    obj2 = { style: null, variant: "text-xs/medium", color: "text-default" };
-    obj2.style = tmp.step;
-    obj2.children = subtitle;
+    obj2 = { style: tmp.step, variant: "text-xs/medium", color: "text-default", children: subtitle };
     items1[1] = jsx(require("Text").Text, obj2);
-    obj1.children = items1;
+    obj1[0] = items1;
     items2 = [, ];
     items2[0] = jsxs(View, obj1);
-    obj3 = {};
-    obj3.source = require("registerAsset");
+    obj3 = { source: null };
+    obj3[0] = require("registerAsset");
     items2[1] = jsx(require("Button").Icon, obj3);
-    obj.children = items2;
+    obj[1] = items2;
     items3 = [, ];
     items3[0] = jsxs(View, obj);
     obj4 = { style: tmp.progressBar, percent: percentComplete };
     items3[1] = jsx(require("GuildProgressBar"), obj4);
-    obj.children = items3;
+    obj[5] = items3;
     return jsxs(require("PressableBase").PressableOpacity, obj);
   }
 }
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { padding: 16 }, horizontal: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" } };
-_createForOfIteratorHelperLoose = { fontSize: 16, lineHeight: 20, fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, marginBottom: 2 };
-_createForOfIteratorHelperLoose.title = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.step = { lineHeight: 16 };
-_createForOfIteratorHelperLoose.progressBar = { marginTop: 8 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: { padding: 16 }, horizontal: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, title: null, step: null, progressBar: null };
+createCacheKey = { fontSize: 16, lineHeight: 20, fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, marginBottom: 2 };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { lineHeight: 16 };
+createCacheKey[4] = { marginTop: 8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = require("ME").fileFinishedImporting("modules/guild_progress/native/components/GuildProgressOverview.tsx");
 
 export default function GuildProgressOverview(guild) {
@@ -93,17 +88,20 @@ export default function GuildProgressOverview(guild) {
       if (!flag) {
         let obj = guild(completed[8]);
         obj = { key: "GuildProgressOverviewLongPress", options: null, hasIcons: false };
-        obj = {};
+        obj = { label: null, onPress: null };
         const intl = guild(completed[9]).intl;
-        obj.label = intl.string(guild(completed[9]).t.PbNxaW);
-        obj.onPress = function onPress() {
-          flag(completed[7]).dismissProgress(outer1_0.id);
+        obj[0] = intl.string(guild(completed[9]).t.PbNxaW);
+        obj[1] = function onPress() {
+          outer1_1(outer1_2[7]).dismissProgress(id.id);
         };
         const items = [obj];
-        obj.options = items;
+        obj[1] = items;
         const result = obj.showSimpleActionSheet(obj);
       }
-    }
+    },
+    title: null,
+    subtitle: null,
+    percentComplete: null
   };
   let intl = guild(completed[9]).intl;
   const string = intl.string;
@@ -113,9 +111,9 @@ export default function GuildProgressOverview(guild) {
   } else {
     stringResult = string(t.o3HK3d);
   }
-  obj.title = stringResult;
-  obj.subtitle = subtitle;
-  obj.percentComplete = percentComplete;
+  obj[3] = stringResult;
+  obj[4] = subtitle;
+  obj[5] = percentComplete;
   return closure_5(GuildProgressOverviewView, obj);
 };
 export { GuildProgressOverviewView };

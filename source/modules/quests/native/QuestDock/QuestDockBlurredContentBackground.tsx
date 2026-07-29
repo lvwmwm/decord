@@ -1,9 +1,9 @@
-// Module ID: 14162
-// Function ID: 108733
-// Dependencies: [31, 27, 33, 4567, 2]
+// Module ID: 14184
+// Function ID: 14185
+// Dependencies: [19, 17, 21, 4589, 2]
 
-// Module 14162
-import importAllResult from "result";
+// Module 14184
+import importAllResult from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -18,25 +18,22 @@ const memoResult = importAllResult.memo(function QuestDockBlurredContentBackgrou
   }
   const items = [str];
   const items1 = [str];
-  const memo = importAllResult.useMemo(() => {
+  const android_fallbackColor = importAllResult.useMemo(() => {
     let str = "rgba(255, 255, 255, 0.1)";
     if ("dark" === str) {
       str = "rgba(38, 39, 50, 0.65)";
     }
     return str;
   }, items);
-  const memo1 = importAllResult.useMemo(() => {
+  const blurTintRgba = importAllResult.useMemo(() => {
     let str = "rgba(255, 255, 255, 0.1)";
     if ("dark" === str) {
       str = "rgba(38, 39, 50, 0.1)";
     }
     return str;
   }, items1);
-  const obj = { nativeID: "quest-dock-blurred-background", blurTintRgba: memo1, blurAmount: 0.5, blurTheme: "dark", android_fallbackColor: memo };
-  const items2 = [StyleSheet.absoluteFillObject, animatedStyle];
-  obj.style = items2;
-  obj.layout = animatedLayout;
-  return jsx(str(4567), { nativeID: "quest-dock-blurred-background", blurTintRgba: memo1, blurAmount: 0.5, blurTheme: "dark", android_fallbackColor: memo });
+  const style = [StyleSheet.absoluteFillObject, animatedStyle];
+  return jsx(str(4589), { nativeID: "quest-dock-blurred-background", blurTintRgba, blurAmount: 0.5, blurTheme: "dark", android_fallbackColor, style, layout });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBlurredContentBackground.tsx");
 

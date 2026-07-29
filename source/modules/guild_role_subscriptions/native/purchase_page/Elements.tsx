@@ -1,132 +1,133 @@
-// Module ID: 15378
-// Function ID: 117145
+// Module ID: 15411
+// Function ID: 15412
 // Name: TruncatedText
-// Dependencies: [57, 31, 27, 3816, 33, 4165, 689, 4161, 1212, 4695, 1273, 15379, 6551, 14222, 624, 6552, 5651, 2]
+// Dependencies: [32, 19, 17, 3840, 21, 4189, 712, 4185, 1236, 4717, 1297, 15412, 6572, 14244, 647, 6573, 5669, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 15378 (TruncatedText)
+// Module 15411 (TruncatedText)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import get_ActivityIndicator from "set";
+import addSubscriptionPlan from "addSubscriptionPlan";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
+let c10;
+let c9;
 let closure_6;
-let closure_7;
-let closure_9;
+let error;
 const require = arg1;
-({ TouchableOpacity: closure_6, View: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { alignSelf: "flex-start", borderBottomWidth: 0.8, borderColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, marginTop: 2 };
-_createForOfIteratorHelperLoose.toggleTruncateButton = _createForOfIteratorHelperLoose;
-let obj1 = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, height: 40, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_MUTED };
-_createForOfIteratorHelperLoose.arrowButton = obj1;
-_createForOfIteratorHelperLoose.arrowButtonText = { flexGrow: 1, flexShrink: 1 };
-_createForOfIteratorHelperLoose.arrowButtonIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_ACTIVE };
+({ TouchableOpacity: closure_6, View: error } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { toggleTruncateButton: null, arrowButton: null, arrowButtonText: null, arrowButtonIcon: null };
+createCacheKey = { alignSelf: "flex-start", borderBottomWidth: 0.8, borderColor: require("Themes").colors.TEXT_DEFAULT, marginTop: 2 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, height: 40, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
+createCacheKey[2] = { flexGrow: 1, flexShrink: 1 };
+let obj1 = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, height: 40, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_MOD_MUTED };
+createCacheKey[3] = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/Elements.tsx");
 
 export const TruncatedText = function TruncatedText(lineClamp) {
+  let c1;
+  let tmp4;
   let num = lineClamp.lineClamp;
   if (num === undefined) {
     num = 8;
   }
-  let obj = Object.create(null);
-  obj.lineClamp = 0;
-  const merged = Object.assign(lineClamp, obj);
-  let closure_1;
-  let first1;
+  const merged = Object.assign(lineClamp, Object.create(null));
+  c1 = undefined;
+  let first;
   let dependencyMap;
   let callback;
-  const tmp4 = callback(React.useState(false), 2);
-  const first = tmp4[0];
-  let num2 = 1;
-  closure_1 = tmp4[1];
-  const tmp6 = callback(React.useState(false), 2);
-  first1 = tmp6[0];
-  dependencyMap = tmp6[1];
+  const tmp2 = createCacheKey();
+  [tmp4, c1] = callback(React.useState(false), 2);
+  const tmp5 = callback(React.useState(false), 2);
+  first = tmp5[0];
+  dependencyMap = tmp5[1];
   callback = React.useRef(false);
-  if (!first1) {
-    obj = {
-      onPress() {
-          let tmp = first1;
-          if (first1) {
-            tmp = callback((arg0) => !arg0);
-          }
-          return tmp;
-        },
-      accessibilityRole: "togglebutton"
+  if (!first) {
+    let obj = { onPress: null, accessibilityRole: "togglebutton", activeOpacity: null, children: null };
+    obj[0] = function onPress() {
+      let tmp = first;
+      if (first) {
+        tmp = _undefined((arg0) => !arg0);
+      }
+      return tmp;
     };
-    if (first1) {
+    let num2 = 1;
+    if (first) {
       num2 = 0.8;
     }
-    obj.activeOpacity = num2;
-    const obj1 = {};
+    obj[2] = num2;
+    obj = {};
     const merged1 = Object.assign(merged);
-    let tmp24;
-    if (first1) {
-      if (!first) {
-        tmp24 = num;
+    let tmp21;
+    if (first) {
+      if (!tmp4) {
+        tmp21 = num;
       }
     }
-    obj1["lineClamp"] = tmp24;
-    obj1["onTextLayout"] = function onTextLayout(nativeEvent) {
+    obj.lineClamp = tmp21;
+    obj.onTextLayout = function onTextLayout(nativeEvent) {
       if (!ref.current) {
-        ref.current = true;
-        callback2(nativeEvent.nativeEvent.lines.length > num);
+        tmp.current = true;
+        callback(nativeEvent.nativeEvent.lines.length > num);
       }
     };
-    const items = [closure_9(num(4161).Text, obj1), first1];
-    obj.children = items;
+    const items = [closure_9(num(4185).Text, obj), first];
+    obj[3] = items;
     return closure_10(closure_6, obj);
   } else {
-    obj = { style: tmp3.toggleTruncateButton };
-    let obj2 = { variant: "text-sm/medium", color: "text-default" };
-    const intl = num(1212).intl;
+    obj = { style: null, children: null };
+    obj[0] = tmp2.toggleTruncateButton;
+    const intl = num(1236).intl;
     const string = intl.string;
-    JQX_Pb = num(1212).t;
-    if (first) {
-      JQX_Pb = JQX_Pb["JQX/Pb"];
-      let stringResult = string(JQX_Pb);
+    let t = num(1236).t;
+    if (tmp4) {
+      let stringResult = string(t["JQX/Pb"]);
     } else {
-      stringResult = string(JQX_Pb.Fbrd8J);
+      stringResult = string(t.Fbrd8J);
     }
-    obj2.children = stringResult;
-    obj2 = tmp8(num(4161).Text, obj2);
-    obj.children = obj2;
+    const obj1 = { variant: "text-sm/medium", color: "text-default", children: null };
+    obj1[2] = stringResult;
+    t = tmp7(num(4185).Text, obj1);
+    obj[1] = t;
     closure_9(closure_7, obj);
-    const tmp9 = closure_7;
+    const tmp8 = closure_7;
   }
 };
 export const ArrowButton = function ArrowButton(arg0) {
   let onPress;
   let text;
   ({ text, onPress } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { accessibilityRole: "button", style: tmp.arrowButton, onPress };
+  const tmp = createCacheKey();
+  let obj = { accessibilityRole: "button", style: tmp.arrowButton, onPress, children: null };
   obj = { variant: "text-md/semibold", color: "text-default", style: tmp.arrowButtonText, children: text };
-  const items = [callback2(require(4161) /* Text */.Text, obj), ];
-  obj = { size: require(1273) /* Button */.Icon.Sizes.SMALL, source: importDefault(15379), style: tmp.arrowButtonIcon };
-  items[1] = callback2(require(1273) /* Button */.Icon, obj);
-  obj.children = items;
-  return callback3(require(4695) /* PressableBase */.PressableOpacity, obj);
+  const items = [callback2(require(4185) /* Text */.Text, obj), ];
+  obj = { size: null, source: null, style: null };
+  obj[0] = require(1297) /* Button */.Icon.Sizes.SMALL;
+  obj[1] = importDefault(15412);
+  obj[2] = tmp.arrowButtonIcon;
+  items[1] = callback2(require(1297) /* Button */.Icon, obj);
+  obj[3] = items;
+  return callback3(require(4717) /* PressableBase */.PressableOpacity, obj);
 };
 export const useFormattedSubscriptionPlan = function useFormattedSubscriptionPlan(listingId) {
-  const obj = importDefault(6551);
-  const _require = callback(importAll(14222).useSubscriptionPlan(listingId), 1)[0];
-  const obj2 = importAll(14222);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_8.get(id.id));
-  const price = importDefault(6552)(stateFromStores, obj.useNativeIAPPayments().storeFront).price;
+  const obj = importDefault(6572);
+  const _require = callback(importAll(14244).useSubscriptionPlan(listingId), 1)[0];
+  const obj2 = importAll(14244);
+  const tmp2 = _require;
+  const items = [addSubscriptionPlan];
+  const stateFromStores = _require(647).useStateFromStores(items, () => outer1_8.get(id.id));
+  const price = importDefault(6573)(stateFromStores, obj.useNativeIAPPayments().storeFront).price;
   let str = "No Price Available";
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    str = "" + _require(5651).formatPrice(price.amount, price.currency) + "/mo.";
-    const obj4 = _require(5651);
+    str = "" + tmp2(5669).formatPrice(price.amount, price.currency) + "/mo.";
+    const tmp2Result = tmp2(5669);
   }
   return str;
 };

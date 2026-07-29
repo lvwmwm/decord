@@ -1,37 +1,37 @@
-// Module ID: 14598
-// Function ID: 111318
+// Module ID: 14623
+// Function ID: 14624
 // Name: Subblocks
-// Dependencies: [31, 27, 33, 689, 4165, 8639, 14599, 5497, 5517, 2]
+// Dependencies: [19, 17, 21, 712, 4189, 8663, 14624, 5515, 5535, 2]
 // Exports: default
 
-// Module 14598 (Subblocks)
-import "result";
+// Module 14623 (Subblocks)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function Subblocks(style) {
   style = style.style;
   const subblocks = style.featuredBlock.subblocks;
   return subblocks.map((subblock, tilePosition) => {
-    obj = { newValue: obj };
+    obj = { newValue: obj, children: null };
     obj = { tilePosition };
-    obj = { style, children: outer1_4(outer1_1(outer1_2[6]), { subblock }) };
-    obj.children = outer1_4(outer1_3, obj);
+    obj = { style, children: null };
+    obj[1] = outer1_4(outer1_1(outer1_2[6]), { subblock });
+    obj[1] = outer1_4(outer1_3, obj);
     return outer1_4(style(outer1_2[5]).CollectiblesAnalyticsProvider, obj, tilePosition);
   });
 }
-_createForOfIteratorHelperLoose = { display: "flex", width: "100%", flexDirection: "row", flexWrap: "wrap", gap: require("_createForOfIteratorHelperLoose").space.PX_12, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let closure_5 = _createForOfIteratorHelperLoose.createStyles({ container: _createForOfIteratorHelperLoose, featuredSubblock: { flex: 1, flexBasis: 400, maxWidth: "100%" } });
+let closure_5 = createCacheKey.createStyles({ container: { display: "flex", width: "100%", flexDirection: "row", flexWrap: "wrap", gap: require("Themes").space.PX_12, paddingHorizontal: require("Themes").space.PX_16 }, featuredSubblock: { flex: 1, flexBasis: 400, maxWidth: "100%" } });
 const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/FeaturedBlock.tsx");
 
 export default function FeaturedBlock(featuredBlock) {
   const tmp = callback();
-  let obj = { value: importDefault(5497)(importDefault(5517).COLLECTIBLES_SHOP_FEATURED_BLOCK).analyticsLocations };
-  obj = { style: tmp.container };
+  let obj = { value: importDefault(5515)(importDefault(5535).COLLECTIBLES_SHOP_FEATURED_BLOCK).analyticsLocations, children: null };
+  obj = { style: tmp.container, children: null };
   obj = { featuredBlock: featuredBlock.featuredBlock, style: tmp.featuredSubblock };
-  obj.children = <Subblocks featuredBlock={arg0.featuredBlock} style={tmp.featuredSubblock} />;
-  obj.children = <View featuredBlock={arg0.featuredBlock} style={tmp.featuredSubblock} />;
-  return jsx(require(5497) /* mergeLocations */.AnalyticsLocationProvider, { featuredBlock: featuredBlock.featuredBlock, style: tmp.featuredSubblock });
+  obj[1] = <Subblocks featuredBlock={arg0.featuredBlock} style={tmp.featuredSubblock} />;
+  obj[1] = <View featuredBlock={arg0.featuredBlock} style={tmp.featuredSubblock} />;
+  return jsx(require(5515) /* context */.AnalyticsLocationProvider, { featuredBlock: featuredBlock.featuredBlock, style: tmp.featuredSubblock });
 };

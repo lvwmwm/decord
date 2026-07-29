@@ -1,54 +1,57 @@
-// Module ID: 14807
-// Function ID: 112741
+// Module ID: 14833
+// Function ID: 14834
 // Name: BenchmarkResultsList
-// Dependencies: [31, 33, 5536, 5198, 14803, 2]
+// Dependencies: [19, 21, 5554, 5220, 14829, 2]
 // Exports: default
 
-// Module 14807 (BenchmarkResultsList)
-import "result";
+// Module 14833 (BenchmarkResultsList)
+import "noop";
 import jsxProd from "jsxProd";
 
-let closure_2;
-let closure_3;
+let c3;
+let obj1;
 const require = arg1;
-({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
+({ jsx: obj1, jsxs: c3 } = jsxProd);
 const result = require("TableRowGroupTitle").fileFinishedImporting("modules/devtools/native/components/screens/performance/BenchmarkResultsList.tsx");
 
 export default function BenchmarkResultsList(results) {
   results = results.results;
   let tmp2 = null;
   if (0 !== results.length) {
-    let obj = { title: "Results (newest first)", hasIcons: false };
+    let obj = { title: "Results (newest first)", hasIcons: false, children: null };
     const items = [
       results.map((kind) => {
+          let dropped;
           let elapsedMs;
+          let frames;
           if ("mount" === kind.kind) {
-            let obj = {};
-            ({ label: obj.label, elapsedMs } = kind);
+            let obj = { label: null, subLabel: null };
+            ({ label: obj[0], elapsedMs } = kind);
             const _HermesInternal = HermesInternal;
-            obj.subLabel = "" + elapsedMs.toFixed(1) + " ms total";
-            let tmp5 = outer1_2(outer1_0(outer1_1[3]).TableRow, obj, kind.id);
+            obj[1] = "" + elapsedMs.toFixed(1) + " ms total";
+            let tmp5 = callback2(callback(5220).TableRow, obj, kind.id);
           } else {
-            obj = {};
+            obj = { label: null, subLabel: null };
             const meanMs = kind.meanMs;
             const toFixedResult = meanMs.toFixed(1);
             const worstMs = kind.worstMs;
             const _HermesInternal2 = HermesInternal;
-            obj.label = "Scroll \u00B7 mean " + toFixedResult + " ms \u00B7 worst " + worstMs.toFixed(1) + " ms";
-            const dropped = kind.dropped;
-            const FRAME_BUDGET_MS = outer1_0(outer1_1[4]).FRAME_BUDGET_MS;
+            obj[0] = "Scroll \u00B7 mean " + toFixedResult + " ms \u00B7 worst " + worstMs.toFixed(1) + " ms";
+            ({ dropped, frames } = kind);
+            const FRAME_BUDGET_MS = callback(14829).FRAME_BUDGET_MS;
             const _HermesInternal3 = HermesInternal;
-            obj.subLabel = "" + dropped + "/" + kind.frames + " frames over " + FRAME_BUDGET_MS.toFixed(1) + " ms";
-            tmp5 = outer1_2(outer1_0(outer1_1[3]).TableRow, obj, kind.id);
+            obj[1] = "" + dropped + "/" + frames + " frames over " + FRAME_BUDGET_MS.toFixed(1) + " ms";
+            tmp5 = callback2(callback(5220).TableRow, obj, kind.id);
           }
           return tmp5;
         }),
 
     ];
-    obj = { label: "Clear results", variant: "danger", arrow: true, onPress: tmp };
-    items[1] = callback(require(5198) /* TableRowInner */.TableRow, obj);
-    obj.children = items;
-    tmp2 = callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj);
+    obj = { label: "Clear results", variant: "danger", arrow: true, onPress: null };
+    obj[3] = tmp;
+    items[1] = callback(require(5220) /* TableRowInner */.TableRow, obj);
+    obj[2] = items;
+    tmp2 = callback2(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj);
   }
   return tmp2;
 };

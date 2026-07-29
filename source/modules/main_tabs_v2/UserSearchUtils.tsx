@@ -1,30 +1,29 @@
-// Module ID: 5928
-// Function ID: 52455
+// Module ID: 5947
+// Function ID: 5948
 // Name: cleanString
-// Dependencies: [5929, 1918, 3802, 653, 1832, 4004, 2]
-// Exports: getNames, getRelationshipType
+// Dependencies: [5948, 1942, 3826, 676, 1856, 4028, 2]
+// Exports: cleanString, getNames, getRelationshipType
 
-// Module 5928 (cleanString)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 5947 (cleanString)
+import initialize from "initialize";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import upsertRelationship from "upsertRelationship";
 import { RelationshipTypes } from "ME";
 
 const require = arg1;
-function cleanString(globalName) {
-  const obj = require(1832) /* isNullOrEmpty */;
-  return require(1832) /* isNullOrEmpty */.stripDiacritics(globalName.toLocaleLowerCase()).trim();
-}
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/UserSearchUtils.tsx");
+const result = require("upsertRelationship").fileFinishedImporting("modules/main_tabs_v2/UserSearchUtils.tsx");
 
-export { cleanString };
+export const cleanString = function cleanString(toLocaleLowerCase) {
+  const obj = require(1856) /* isNullOrEmpty */;
+  return require(1856) /* isNullOrEmpty */.stripDiacritics(toLocaleLowerCase.toLocaleLowerCase()).trim();
+};
 export const getRelationshipType = function getRelationshipType(id) {
   const relationshipType = store.getRelationshipType(id);
   let SUGGESTION = relationshipType;
   if (relationshipType === RelationshipTypes.NONE) {
     SUGGESTION = relationshipType;
     if (null != suggestion.getSuggestion(id)) {
-      SUGGESTION = RelationshipTypes.SUGGESTION;
+      SUGGESTION = tmp2.SUGGESTION;
     }
   }
   return SUGGESTION;
@@ -33,22 +32,31 @@ export const getNames = function getNames(user) {
   const names = {};
   const nick = store.getNickname(user.id);
   if (null != nick) {
-    names[nick] = cleanString(nick).split(" ");
-    let str = cleanString(nick);
+    const obj3 = names(1856);
+    let str = names(1856).stripDiacritics(nick.toLocaleLowerCase());
+    names[nick] = names(1856).stripDiacritics(nick.toLocaleLowerCase()).trim().split(" ");
+    let str2 = names(1856).stripDiacritics(nick.toLocaleLowerCase()).trim();
   }
-  const globalName = importDefault(4004).getGlobalName(user);
+  const globalName = importDefault(4028).getGlobalName(user);
   if (tmp4) {
-    names[globalName] = cleanString(globalName).split(" ");
-    const str3 = cleanString(globalName);
+    const obj6 = names(1856);
+    const str4 = names(1856).stripDiacritics(globalName.toLocaleLowerCase());
+    names[globalName] = names(1856).stripDiacritics(globalName.toLocaleLowerCase()).trim().split(" ");
+    const str5 = names(1856).stripDiacritics(globalName.toLocaleLowerCase()).trim();
   }
-  const obj2 = importDefault(4004);
+  const username = user.username;
+  const obj4 = importDefault(4028);
   tmp4 = null != globalName && null == names[globalName];
-  names[user.username] = cleanString(user.username).split(" ");
+  const obj7 = names(1856);
+  const str7 = names(1856).stripDiacritics(username.toLocaleLowerCase());
+  names[user.username] = names(1856).stripDiacritics(username.toLocaleLowerCase()).trim().split(" ");
   nicknames = nicknames.getNicknames(user.id);
-  const item = nicknames.forEach((arg0) => {
-    if (null == names[arg0]) {
-      names[arg0] = outer1_7(arg0).split(" ");
-      const str = outer1_7(arg0);
+  const item = nicknames.forEach((toLocaleLowerCase) => {
+    if (null == names[toLocaleLowerCase]) {
+      const obj = names(outer1_2[4]);
+      const str = names(outer1_2[4]).stripDiacritics(toLocaleLowerCase.toLocaleLowerCase());
+      tmp[toLocaleLowerCase] = names(outer1_2[4]).stripDiacritics(toLocaleLowerCase.toLocaleLowerCase()).trim().split(" ");
+      const str2 = names(outer1_2[4]).stripDiacritics(toLocaleLowerCase.toLocaleLowerCase()).trim();
     }
   });
   return { names, nick };

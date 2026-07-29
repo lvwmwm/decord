@@ -1,39 +1,39 @@
-// Module ID: 14687
-// Function ID: 111795
-// Dependencies: [31, 27, 33, 4165, 3878, 1212, 8272, 4576, 4161, 2]
+// Module ID: 14712
+// Function ID: 14713
+// Dependencies: [19, 17, 21, 4189, 3902, 1236, 8296, 4598, 4185, 2]
 
-// Module 14687
-import importAllResult from "result";
+// Module 14712
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ container: { paddingTop: 24, justifyContent: "center", alignItems: "center" }, textContainer: { marginTop: 24 } });
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ container: { paddingTop: 24, justifyContent: "center", alignItems: "center" }, textContainer: { marginTop: 24 } });
 const memoResult = importAllResult.memo(function SettingsSearchEmptyState() {
   const tmp = callback3();
   const effect = importAllResult.useEffect(() => {
-    const AccessibilityAnnouncer = outer1_0(outer1_1[4]).AccessibilityAnnouncer;
-    const intl = outer1_0(outer1_1[5]).intl;
-    AccessibilityAnnouncer.announce(intl.string(outer1_0(outer1_1[5]).t.zihbmv), "polite");
+    const AccessibilityAnnouncer = callback(3902).AccessibilityAnnouncer;
+    const intl = callback(1236).intl;
+    AccessibilityAnnouncer.announce(intl.string(callback(1236).t.zihbmv), "polite");
   }, []);
-  let obj = { style: tmp.container };
-  const items = [callback(require(8272) /* getNoResultsAltSource */.NoResultsAlt, { resizeMode: "contain" }), ];
-  obj = { style: tmp.textContainer, align: "center", justify: "center" };
-  obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary" };
-  let intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.zihbmv);
-  const items1 = [callback(require(4161) /* Text */.Text, obj), ];
-  const obj1 = { variant: "text-xs/medium", color: "text-muted" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj1.children = intl2.string(require(1212) /* getSystemLocale */.t.XclvsB);
-  items1[1] = callback(require(4161) /* Text */.Text, obj1);
-  obj.children = items1;
-  items[1] = callback2(require(4576) /* Stack */.Stack, obj);
-  obj.children = items;
+  let obj = { style: tmp.container, children: null };
+  const items = [callback(require(8296) /* getNoResultsAltSource */.NoResultsAlt, { resizeMode: "contain" }), ];
+  obj = { style: tmp.textContainer, align: "center", justify: "center", children: null };
+  obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
+  let intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.zihbmv);
+  const items1 = [callback(require(4185) /* Text */.Text, obj), ];
+  const obj1 = { variant: "text-xs/medium", color: "text-muted", children: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj1[2] = intl2.string(require(1236) /* getSystemLocale */.t.XclvsB);
+  items1[1] = callback(require(4185) /* Text */.Text, obj1);
+  obj[3] = items1;
+  items[1] = callback2(require(4598) /* Stack */.Stack, obj);
+  obj[1] = items;
   return callback2(View, obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/settings/native/search/components/SettingsSearchEmptyState.tsx");

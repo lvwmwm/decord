@@ -1,28 +1,28 @@
-// Module ID: 11625
-// Function ID: 90194
+// Module ID: 11649
+// Function ID: 11650
 // Name: useGetExpiringGuildPowerups
-// Dependencies: [31, 4052, 566, 11561, 1327, 2]
+// Dependencies: [19, 4076, 589, 11585, 1351, 2]
 // Exports: default
 
-// Module 11625 (useGetExpiringGuildPowerups)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11649 (useGetExpiringGuildPowerups)
+import noop from "noop";
+import calculateAppliedBoosts from "calculateAppliedBoosts";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/premium/powerups/hooks/useGetExpiringGuildPowerups.tsx");
 
 export default function useGetExpiringGuildPowerups(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct];
+  const items = [calculateAppliedBoosts];
   stateFromStores = _require(stateFromStores[2]).useStateFromStores(items, () => outer1_3.getStateForGuild(closure_0));
   const items1 = [stateFromStores];
   return React.useMemo(() => {
     if (null == stateFromStores) {
       return [];
     } else {
-      const allPowerups = stateFromStores.allPowerups;
+      const allPowerups = tmp.allPowerups;
       const _Object = Object;
-      const expiringGuildEntitlements = callback(stateFromStores[3]).getExpiringGuildEntitlements(Object.values(stateFromStores.unlockedPowerups));
+      const expiringGuildEntitlements = callback(stateFromStores[3]).getExpiringGuildEntitlements(Object.values(tmp.unlockedPowerups));
       const mapped = expiringGuildEntitlements.map((arg0) => allPowerups[arg0.sku_id]);
       return mapped.filter(callback(stateFromStores[4]).isNotNullish);
     }

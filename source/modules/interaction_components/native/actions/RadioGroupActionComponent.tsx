@@ -1,131 +1,140 @@
-// Module ID: 16189
-// Function ID: 125305
-// Dependencies: [31, 33, 7868, 4026, 4577, 4581, 7632, 7631, 5198, 5153, 1212, 2]
+// Module ID: 16224
+// Function ID: 16225
+// Dependencies: [19, 21, 7891, 4050, 4599, 4603, 7655, 7654, 5220, 5175, 1236, 2]
 
-// Module 16189
-import importAllResult from "result";
+// Module 16224
+import importAllResult from "noop";
 import jsxProd from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = jsxProd);
+let c3 = importAllResult;
+({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = { code: "function RadioGroupActionComponentTsx1(){const{withSpring,hasValue,SUBTLE_SPRING}=this.__closure;return{maxHeight:withSpring(hasValue?60:0,SUBTLE_SPRING),marginTop:withSpring(hasValue?8:0,SUBTLE_SPRING),opacity:withSpring(hasValue?1:0,SUBTLE_SPRING)};}" };
 const memoResult = importAllResult.memo((type) => {
-  function onChange(value) {
-    if ("" !== value) {
-      if (null == value) {
-        let obj = { type, value: null };
-        executeStateUpdate(obj);
-        const current = ref.current;
-        if (null != current) {
-          current.setValue("");
-        }
-      } else {
-        obj = { type, value };
-        executeStateUpdate(obj);
-      }
-    }
-  }
   type = type.type;
   const options = type.options;
   const required = type.required;
+  let obj = ref;
   ref = ref.useRef(null);
   const items = [options];
   const memo = ref.useMemo(() => {
-    const iter = options.find((arg0) => arg0.default);
     let value;
-    if (null != iter) {
+    const iter = options.find((arg0) => arg0.default);
+    if (iter != null) {
       value = iter.value;
     }
     return value;
   }, items);
-  let obj = type(required[2]);
-  let tmp3;
+  let obj1 = type(required[2]);
+  let tmp5;
   if (null != memo) {
-    obj = { type, value: memo };
-    tmp3 = obj;
+    obj = { type: null, value: null };
+    obj[0] = type;
+    obj[1] = memo;
+    tmp5 = obj;
   }
-  const componentState = obj.useComponentState(type, tmp3);
+  const componentState = obj1.useComponentState(type, tmp5);
   const state = componentState.state;
   const executeStateUpdate = componentState.executeStateUpdate;
   const items1 = [state, type];
-  const memo1 = ref.useMemo(() => {
+  const memo1 = obj.useMemo(() => {
     let type;
-    if (null != state) {
-      type = state.type;
+    if (state != null) {
+      type = iter.type;
     }
     let value = null;
     if (type === type) {
-      value = state.value;
+      value = iter.value;
     }
     return value;
   }, items1);
-  let closure_7 = tmp6;
-  let obj2 = type(required[3]);
+  let closure_7 = tmp8;
   const fn = function p() {
-    const obj = {};
+    let obj = type(required[4]);
     let num = 0;
     if (closure_7) {
       num = 60;
     }
-    obj.maxHeight = type(required[4]).withSpring(num, type(required[5]).SUBTLE_SPRING);
-    const obj2 = type(required[4]);
+    obj = { maxHeight: obj.withSpring(num, tmp(tmp2[5]).SUBTLE_SPRING), marginTop: null, opacity: null };
+    let tmpResult = tmp(tmp2[4]);
     let num2 = 0;
     if (closure_7) {
       num2 = 8;
     }
-    obj.marginTop = type(required[4]).withSpring(num2, type(required[5]).SUBTLE_SPRING);
-    const obj3 = type(required[4]);
+    obj[1] = tmpResult.withSpring(num2, type(required[5]).SUBTLE_SPRING);
+    tmpResult = tmp(tmp2[4]);
     let num3 = 0;
     if (closure_7) {
       num3 = 1;
     }
-    obj.opacity = type(required[4]).withSpring(num3, type(required[5]).SUBTLE_SPRING);
+    obj[2] = tmpResult.withSpring(num3, type(required[5]).SUBTLE_SPRING);
     return obj;
   };
-  obj = { withSpring: type(required[4]).withSpring, hasValue: tmp6, SUBTLE_SPRING: type(required[5]).SUBTLE_SPRING };
+  obj = { withSpring: tmp3(tmp4[4]).withSpring, hasValue: tmp8, SUBTLE_SPRING: tmp3(tmp4[5]).SUBTLE_SPRING };
   fn.__closure = obj;
   fn.__workletHash = 1287549755250;
   fn.__initData = closure_7;
-  const obj1 = {};
-  const animatedStyle = obj2.useAnimatedStyle(fn);
-  obj2 = { hasIcons: false };
-  let str = "";
-  if (null != memo1) {
-    str = memo1;
+  const animatedStyle = type(required[3]).useAnimatedStyle(fn);
+  let str = memo1;
+  if (memo1 == null) {
+    str = "";
   }
-  obj2.defaultValue = str;
-  obj2.onChange = onChange;
-  obj2.groupRef = ref;
-  obj2.children = options.map((label) => state(type(required[7]).TableRadioRow, { label: label.label, subLabel: label.description, value: label.value }, label.value));
-  const items2 = [state(type(required[6]).TableRadioGroup, obj2), ];
+  obj1 = {
+    hasIcons: false,
+    defaultValue: str,
+    onChange(arg0) {
+      if ("" !== arg0) {
+        if (null == arg0) {
+          let obj = { type: null, value: null };
+          obj[0] = type;
+          executeStateUpdate(obj);
+          const current = ref.current;
+          if (current != null) {
+            current.setValue("");
+          }
+        } else {
+          obj = { type: null, value: null };
+          obj[0] = type;
+          obj[1] = arg0;
+          executeStateUpdate(obj);
+        }
+      }
+    },
+    groupRef: ref,
+    children: options.map((label) => state(type(required[7]).TableRadioRow, { label: label.label, subLabel: label.description, value: label.value }, label.value))
+  };
+  const children = [state(type(required[6]).TableRadioGroup, obj1), ];
   let tmp12Result = !required;
-  if (tmp12Result) {
-    let obj3 = { style: animatedStyle, accessibilityElementsHidden: !tmp6 };
+  if (!required) {
+    const obj2 = { style: null, accessibilityElementsHidden: null, importantForAccessibility: null, children: null };
+    obj2[0] = animatedStyle;
+    obj2[1] = !tmp8;
     let str2 = "no-hide-descendants";
-    if (tmp6) {
+    if (tmp8) {
       str2 = "auto";
     }
-    obj3.importantForAccessibility = str2;
-    const obj4 = {};
-    const obj5 = { IconComponent: type(required[9]).XSmallIcon };
-    obj4.icon = state(type(required[8]).TableRow.Icon, obj5);
-    const intl = type(required[10]).intl;
-    obj4.label = intl.string(type(required[10]).t["5uAtZN"]);
-    obj4.onPress = function onPress() {
-      onChange(null);
+    obj2[2] = str2;
+    const obj3 = { icon: null, label: null, onPress: null, start: true, end: true };
+    const obj4 = { IconComponent: null };
+    obj4[0] = tmp3(tmp4[9]).XSmallIcon;
+    obj3[0] = tmp12(tmp3(tmp4[8]).TableRow.Icon, obj4);
+    const intl = tmp3(tmp4[10]).intl;
+    obj3[1] = intl.string(tmp3(tmp4[10]).t["5uAtZN"]);
+    obj3[2] = function onPress() {
+      executeStateUpdate({ type, value: null });
+      const current = ref.current;
+      if (current != null) {
+        current.setValue("");
+      }
     };
-    obj4.start = true;
-    obj4.end = true;
-    obj3.children = state(type(required[8]).TableRow, obj4);
-    tmp12Result = state(options(required[3]).View, obj3);
-    const tmp12 = state;
+    obj2[3] = tmp12(tmp3(tmp4[8]).TableRow, obj3);
+    tmp12Result = tmp12(options(tmp4[3]).View, obj2);
   }
-  items2[1] = tmp12Result;
-  obj1.children = items2;
-  return memo1(executeStateUpdate, obj1);
+  children[1] = tmp12Result;
+  return memo1(executeStateUpdate, { children });
 });
 const result = require("isInteractionComponent").fileFinishedImporting("modules/interaction_components/native/actions/RadioGroupActionComponent.tsx");
 

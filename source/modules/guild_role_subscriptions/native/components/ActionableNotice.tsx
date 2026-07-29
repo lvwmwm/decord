@@ -1,20 +1,20 @@
-// Module ID: 16581
-// Function ID: 129046
+// Module ID: 16616
+// Function ID: 16617
 // Name: ActionableNotice
-// Dependencies: [31, 27, 33, 4165, 4161, 4578, 2]
+// Dependencies: [19, 17, 21, 4189, 4185, 4600, 2]
 // Exports: default
 
-// Module 16581 (ActionableNotice)
-import "result";
+// Module 16616 (ActionableNotice)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-let closure_5 = _createForOfIteratorHelperLoose.createStyles({ container: { flexDirection: "row", paddingVertical: 12, alignItems: "center" }, message: { marginEnd: 27, flex: 3 }, actionButton: { flexGrow: 0, alignSelf: "center" } });
+({ jsx: c3, jsxs: c4 } = jsxProd);
+let closure_5 = createCacheKey.createStyles({ container: { flexDirection: "row", paddingVertical: 12, alignItems: "center" }, message: { marginEnd: 27, flex: 3 }, actionButton: { flexGrow: 0, alignSelf: "center" } });
 const result = require("jsxProd").fileFinishedImporting("modules/guild_role_subscriptions/native/components/ActionableNotice.tsx");
 
 export default function ActionableNotice(arg0) {
@@ -30,19 +30,19 @@ export default function ActionableNotice(arg0) {
     disabled = false;
   }
   const tmp = callback2();
-  let obj = { style: items };
+  let obj = { style: items, children: null };
   items = [style, tmp.container];
   obj = { style: tmp.message, variant: "text-sm/medium", color: "text-default", children: message };
-  const items1 = [callback(require(4161) /* Text */.Text, obj), ];
-  obj = { style: tmp.actionButton };
-  const obj1 = { size: "sm", onPress: onClick };
+  const items1 = [callback(require(4185) /* Text */.Text, obj), ];
+  obj = { style: tmp.actionButton, children: null };
+  const obj1 = { size: "sm", onPress: onClick, disabled: null, text: null };
   if (!submitting) {
     submitting = disabled;
   }
-  obj1.disabled = submitting;
-  obj1.text = ctaMessage;
-  obj.children = callback(require(4578) /* Button */.Button, obj1);
+  obj1[2] = submitting;
+  obj1[3] = ctaMessage;
+  obj[1] = callback(require(4600) /* Button */.Button, obj1);
   items1[1] = callback(View, obj);
-  obj.children = items1;
+  obj[1] = items1;
   return closure_4(View, obj);
 };

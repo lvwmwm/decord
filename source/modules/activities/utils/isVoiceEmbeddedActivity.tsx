@@ -1,43 +1,38 @@
-// Module ID: 10442
-// Function ID: 80379
+// Module ID: 10466
+// Function ID: 10467
 // Name: isVoiceEmbeddedActivity
-// Dependencies: [1194, 1348, 1907, 4181, 669, 2]
+// Dependencies: [1218, 1372, 1931, 4205, 692, 2]
 // Exports: default
 
-// Module 10442 (isVoiceEmbeddedActivity)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 10466 (isVoiceEmbeddedActivity)
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleConnectionOpen from "handleConnectionOpen";
+import updateVoiceState from "updateVoiceState";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/activities/utils/isVoiceEmbeddedActivity.tsx");
+const result = require("handleConnectionOpen").fileFinishedImporting("modules/activities/utils/isVoiceEmbeddedActivity.tsx");
 
-export default function isVoiceEmbeddedActivity(channelId) {
+export default function isVoiceEmbeddedActivity(arg0) {
   let obj = arg1;
-  let tmp = arg2;
   if (arg1 === undefined) {
-    obj = closure_3;
+    obj = ensureGuildLoaded;
   }
-  if (tmp === undefined) {
-    tmp = closure_4;
-  }
-  const channel = obj.getChannel(channelId);
+  const channel = obj.getChannel(arg0);
   let tmp3 = null != channel;
   if (tmp3) {
-    let tmp6 = channel.type === require(669) /* set */.ChannelTypes.GUILD_VOICE;
+    let tmp6 = channel.type === require(692) /* set */.ChannelTypes.GUILD_VOICE;
     if (!tmp6) {
-      const tmp7 = !channel.isPrivate();
-      let tmp8 = !tmp7;
-      if (!tmp7) {
-        let tmp9 = channel.id === tmp2;
-        if (!tmp9) {
+      let isPrivateResult = channel.isPrivate();
+      if (isPrivateResult) {
+        let tmp8 = channel.id === tmp2;
+        if (!tmp8) {
           voiceStatesForChannel = voiceStatesForChannel.getVoiceStatesForChannel(channel.id);
-          tmp9 = null != voiceStatesForChannel[id.getId(id)];
+          tmp8 = null != voiceStatesForChannel[id.getId(id)];
         }
-        tmp8 = tmp9;
+        isPrivateResult = tmp8;
       }
-      tmp6 = tmp8;
+      tmp6 = isPrivateResult;
     }
     tmp3 = tmp6;
   }

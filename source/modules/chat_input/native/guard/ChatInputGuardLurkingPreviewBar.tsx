@@ -1,42 +1,43 @@
-// Module ID: 11502
-// Function ID: 89375
-// Dependencies: [31, 27, 1838, 11131, 653, 33, 4165, 689, 566, 4133, 8429, 1935, 4359, 4695, 5548, 4161, 8440, 1273, 5547, 1212, 11503, 2]
+// Module ID: 11526
+// Function ID: 11527
+// Dependencies: [19, 17, 1862, 11155, 676, 21, 4189, 712, 589, 4157, 8453, 1959, 4384, 4717, 5566, 4185, 8464, 1297, 5565, 1236, 11527, 2]
 
-// Module 11502
-import importAllResult from "result";
-import { View } from "get ActivityIndicator";
-import closure_5 from "_createForOfIteratorHelperLoose";
+// Module 11526
+import importAllResult from "getSystemLocale";
+import { View } from "Button";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { TextAreaCta } from "TextAreaCta";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_7;
-let closure_8;
-let closure_9;
+let c10;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ AnalyticEvents: closure_7, JoinGuildSources: closure_8 } = ME);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_BORDER_RADIUS, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12, gap: require("_createForOfIteratorHelperLoose").space.PX_12, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderWidth: 1 };
-const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_HIGH);
-obj.cardContainer = obj;
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_12 };
-obj.headerRow = _createForOfIteratorHelperLoose;
-obj.guildIcon = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-obj.textColumn = { flex: 1, flexShrink: 1, minWidth: 0 };
-let obj3 = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-obj.nameRow = obj3;
-obj.chevron = { marginLeft: -2 };
-obj.badge = { flexShrink: 0 };
-let closure_11 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
+let c3 = importAllResult;
+({ AnalyticEvents: error, JoinGuildSources: metroImportAll } = ME);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+let obj = { cardContainer: null, headerRow: null, guildIcon: null, textColumn: null, nameRow: null, chevron: null, badge: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, borderRadius: require("Themes").modules.mobile.TABLE_ROW_BORDER_RADIUS, paddingHorizontal: require("Themes").space.PX_12, paddingVertical: require("Themes").space.PX_12, gap: require("Themes").space.PX_12, borderColor: require("Themes").colors.BORDER_SUBTLE, borderWidth: 1 };
+const merged = Object.assign(require("Themes").shadows.SHADOW_HIGH);
+obj[0] = obj;
+createCacheKey = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_12 };
+obj[1] = createCacheKey;
+obj[2] = { borderRadius: require("Themes").radii.md };
+obj[3] = { flex: 1, flexShrink: 1, minWidth: 0 };
+let obj2 = { borderRadius: require("Themes").radii.md };
+obj[4] = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
+obj[5] = { marginLeft: -2 };
+obj[6] = { flexShrink: 0 };
+let closure_11 = createCacheKey.createStyles(obj);
+let obj3 = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_4 };
 const memoResult = importAllResult.memo(function ChatInputGuardLurkingPreviewBar(guildId) {
   guildId = guildId.guildId;
   const tmp = callback3();
-  let obj = guildId(566);
-  const items = [closure_5];
+  let obj = guildId(589);
+  const items = [createGuildRecordFromRust];
   const items1 = [guildId];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getGuild(guildId), items1);
   const items2 = [guildId];
@@ -45,42 +46,57 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurkingPreviewBar
     obj = { guildId };
     obj.openLazy(guildId(outer1_2[11])(outer1_2[10], outer1_2.paths), "GuildProfileActionSheet:" + guildId, obj);
   }, items2);
-  let tmp5 = null;
+  let tmp7 = null;
   if (null != stateFromStores) {
-    obj = { style: tmp.cardContainer };
-    obj = { style: tmp.headerRow, onPress: callback, accessibilityRole: "button", accessibilityLabel: stateFromStores.name };
-    const obj1 = { guild: stateFromStores, size: guildId(5548).GuildIconSizes.LARGE, style: tmp.guildIcon };
-    const items3 = [callback(importDefault(5548), obj1), ];
-    const obj2 = { style: tmp.textColumn };
-    const obj3 = { style: tmp.nameRow };
-    const obj4 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, children: stateFromStores.name };
-    const items4 = [callback(guildId(4161).Text, obj4), , ];
-    const obj5 = {};
-    const tmp12 = importDefault(5548);
-    obj5.size = guildId(1273).Icon.Sizes.SMALL;
-    obj5.guild = stateFromStores;
-    obj5.style = tmp.badge;
-    items4[1] = callback(importDefault(8440), obj5);
-    const obj6 = { size: "xs", color: importDefault(689).colors.TEXT_MUTED, style: tmp.chevron };
-    items4[2] = callback(guildId(5547).ChevronSmallRightIcon, obj6);
-    obj3.children = items4;
+    obj = { style: null, children: null };
+    obj[0] = tmp.cardContainer;
+    obj = { style: null, onPress: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
+    obj[0] = tmp.headerRow;
+    obj[1] = callback;
+    obj[3] = stateFromStores.name;
+    const obj1 = { guild: null, size: null, style: null };
+    obj1[0] = stateFromStores;
+    obj1[1] = tmp2(5566).GuildIconSizes.LARGE;
+    obj1[2] = tmp.guildIcon;
+    const items3 = [callback(importDefault(5566), obj1), ];
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.textColumn;
+    const obj3 = { style: null, children: null };
+    obj3[0] = tmp.nameRow;
+    const obj4 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, children: null };
+    obj4[3] = stateFromStores.name;
+    const items4 = [callback(tmp2(4185).Text, obj4), , ];
+    const obj5 = { size: null, guild: null, style: null };
+    const tmp12 = importDefault(5566);
+    obj5[0] = tmp2(1297).Icon.Sizes.SMALL;
+    obj5[1] = stateFromStores;
+    obj5[2] = tmp.badge;
+    items4[1] = callback(importDefault(8464), obj5);
+    const obj6 = { size: "xs", color: null, style: null };
+    obj6[1] = importDefault(712).colors.TEXT_MUTED;
+    obj6[2] = tmp.chevron;
+    items4[2] = callback(tmp2(5565).ChevronSmallRightIcon, obj6);
+    obj3[1] = items4;
     const items5 = [callback2(View, obj3), ];
-    const obj7 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 1 };
-    const intl = guildId(1212).intl;
-    obj7.children = intl.string(guildId(1212).t.BRSnEj);
-    items5[1] = callback(guildId(4161).Text, obj7);
-    obj2.children = items5;
+    const obj7 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 1, children: null };
+    const intl = tmp2(1236).intl;
+    obj7[3] = intl.string(tmp2(1236).t.BRSnEj);
+    items5[1] = callback(tmp2(4185).Text, obj7);
+    obj2[1] = items5;
     items3[1] = callback2(View, obj2);
-    obj.children = items3;
-    const items6 = [callback2(guildId(4695).PressableOpacity, obj), ];
-    const obj8 = { guildId, joinSource: constants.CHAT_INPUT_BLOCKER, onBeforeJoin: tmp4 };
-    items6[1] = callback(importDefault(11503), obj8);
-    obj.children = items6;
-    tmp5 = callback2(View, obj);
-    const tmp13 = importDefault(8440);
+    obj[4] = items3;
+    const items6 = [callback2(tmp2(4717).PressableOpacity, obj), ];
+    const obj8 = { guildId: null, joinSource: null, onBeforeJoin: null };
+    obj8[0] = guildId;
+    obj8[1] = constants.CHAT_INPUT_BLOCKER;
+    obj8[2] = tmp6;
+    items6[1] = callback(importDefault(11527), obj8);
+    obj[1] = items6;
+    tmp7 = callback2(View, obj);
+    const tmp13 = importDefault(8464);
   }
-  return tmp5;
+  return tmp7;
 });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardLurkingPreviewBar.tsx");
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardLurkingPreviewBar.tsx");
 
 export default memoResult;

@@ -1,348 +1,205 @@
-// Module ID: 9333
-// Function ID: 72909
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 5030, 9315, 9334, 3806, 22, 9316, 1917, 2]
+// Module ID: 9357
+// Function ID: 9358
+// Name: _computeCategories
+// Dependencies: [32, 19, 5052, 9339, 9358, 3830, 12, 9340, 1941, 2]
 // Exports: default
 
-// Module 9333 (_createForOfIteratorHelperLoose)
+// Module 9357 (_computeCategories)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import EmojiCategoryTypes from "EmojiCategoryTypes";
 import { EmojiPickerRenderingDataType as closure_7 } from "IMAGE_SIZE";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function _computeCategories(categories) {
+function _computeCategories(arg0) {
+  let categories;
   let emojis;
   let emojisDisabled;
   let emojisHidden;
   let guild;
   let isNativeEmojiPickerEnabled;
-  let iter3;
   let rowSize;
-  ({ rowSize, isNativeEmojiPickerEnabled } = categories);
+  ({ categories, rowSize, isNativeEmojiPickerEnabled } = arg0);
   const items = [];
-  const tmp = _createForOfIteratorHelperLoose(categories.categories);
-  const iter = tmp();
-  let iter2 = iter;
-  if (!iter.done) {
-    do {
-      let value = iter2.value;
-      let type = value.type;
-      let tmp8 = constants2;
-      if (constants2.TOP_GUILD_EMOJI === type) {
-        emojis = value.emojis;
-        let tmp59 = pushCategory;
-        let obj = { emojiSections: items };
-        obj = {};
-        let tmp60 = constants3;
-        obj.type = constants3.EMOJI;
-        obj.emojis = emojis.slice(0, rowSize);
-        ({ emojisDisabled: obj19.emojisDisabled, name: obj19.label } = value);
-        let tmp61 = constants2;
-        obj.footer = constants2.TOP_GUILD_EMOJI;
-        obj.renderingData = obj;
-        obj.rowSize = rowSize;
-        let tmp62 = pushCategory(obj);
-        let tmp19 = tmp2;
-        let tmp20 = tmp3;
-        let tmp21 = tmp4;
-        let tmp22 = tmp5;
-        let tmp23 = tmp6;
-        let tmp24 = tmp7;
+  const iter = categories[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    let type = nextResult.type;
+    let tmp3 = constants2;
+    if (constants2.TOP_GUILD_EMOJI === type) {
+      let tmp56 = nextResult;
+      emojis = tmp2.emojis;
+      let tmp57 = pushCategory;
+      let obj = { emojiSections: null, renderingData: null, rowSize: null };
+      obj[0] = items;
+      obj = { type: null, emojis: null, emojisDisabled: null, label: null, footer: null };
+      let tmp58 = constants3;
+      obj[0] = constants3.EMOJI;
+      obj[1] = emojis.slice(0, rowSize);
+      ({ emojisDisabled: obj18[2], name: obj18[3] } = tmp2);
+      obj[4] = tmp3.TOP_GUILD_EMOJI;
+      obj[1] = obj;
+      obj[2] = rowSize;
+      let tmp59 = pushCategory(obj);
+    } else if (tmp3.FAVORITES === type) {
+      let tmp52 = pushCategory;
+      let obj1 = { emojiSections: null, renderingData: null, rowSize: null };
+      obj1[0] = items;
+      let obj2 = { type: null, emojis: null, emojisDisabled: null, label: null, footer: null };
+      let tmp53 = constants3;
+      obj2[0] = constants3.EMOJI;
+      let tmp54 = nextResult;
+      ({ emojis: obj16[1], emojisDisabled: obj16[2], name: obj16[3] } = tmp2);
+      obj2[4] = tmp3.FAVORITES;
+      obj1[1] = obj2;
+      obj1[2] = rowSize;
+      let tmp55 = pushCategory(obj1);
+    } else if (tmp3.RECENT === type) {
+      let tmp48 = pushCategory;
+      let obj3 = { emojiSections: null, renderingData: null, rowSize: null };
+      obj3[0] = items;
+      let obj4 = { type: null, emojisDisabled: null, emojis: null, label: null, footer: null };
+      let tmp49 = constants3;
+      obj4[0] = constants3.EMOJI;
+      let tmp50 = nextResult;
+      ({ emojisDisabled: obj14[1], emojis: obj14[2], name: obj14[3] } = tmp2);
+      obj4[4] = tmp3.RECENT;
+      obj3[1] = obj4;
+      obj3[2] = rowSize;
+      let tmp51 = pushCategory(obj3);
+    } else if (tmp3.GUILD === type) {
+      let tmp25 = nextResult;
+      ({ guild, emojis, emojisDisabled, emojisHidden } = tmp2);
+      if (isNativeEmojiPickerEnabled) {
+        let tmp40 = pushNativeCategory;
+        let obj5 = { emojiSections: null, renderingData: null };
+        obj5[0] = items;
+        let obj6 = { type: null, label: null, guildId: null, emojiCount: null, emojisDisabled: null, emojisHidden: null, isSectionNitroLocked: null };
+        let tmp41 = constants3;
+        obj6[0] = constants3.NATIVE_SECTION;
+        let tmp42 = guild;
+        ({ name: obj12[1], id: obj12[2] } = guild);
+        let tmp43 = emojis;
+        obj6[3] = emojis.length;
+        let tmp44 = emojisDisabled;
+        obj6[4] = emojisDisabled;
+        let tmp45 = emojisHidden;
+        obj6[5] = emojisHidden;
+        let tmp46 = nextResult;
+        obj6[6] = tmp2.isNitroLocked;
+        obj5[1] = obj6;
+        let tmp47 = pushNativeCategory(obj5);
       } else {
-        let tmp63 = constants2;
-        if (constants2.FAVORITES === type) {
-          let tmp55 = pushCategory;
-          let obj1 = { emojiSections: items };
-          let obj2 = {};
-          let tmp56 = constants3;
-          obj2.type = constants3.EMOJI;
-          ({ emojis: obj17.emojis, emojisDisabled: obj17.emojisDisabled, name: obj17.label } = value);
-          let tmp57 = constants2;
-          obj2.footer = constants2.FAVORITES;
-          obj1.renderingData = obj2;
-          obj1.rowSize = rowSize;
-          let tmp58 = pushCategory(obj1);
-          tmp19 = tmp2;
-          tmp20 = tmp3;
-          tmp21 = tmp4;
-          tmp22 = tmp5;
-          tmp23 = tmp6;
-          tmp24 = tmp7;
+        let tmp26 = require;
+        let tmp27 = dependencyMap;
+        obj6 = require(9358) /* GuildNSFWContentLevel */;
+        let tmp28 = guild;
+        if (obj6.shouldNSFWGateGuild(guild.id)) {
+          let obj7 = { type: null, label: null, footer: null, emojis: null, isSectionNitroLocked: null };
+          let tmp36 = constants3;
+          obj7[0] = constants3.NSFW;
+          let tmp37 = guild;
+          obj7[1] = guild.name;
+          obj7[2] = tmp3.GUILD;
+          obj7[3] = [];
+          let tmp38 = nextResult;
+          obj7[4] = tmp2.isNitroLocked;
+          let arr = items.push(obj7);
         } else {
-          let tmp64 = constants2;
-          if (constants2.RECENT === type) {
-            let tmp51 = pushCategory;
-            let obj3 = { emojiSections: items };
-            let obj4 = {};
-            let tmp52 = constants3;
-            obj4.type = constants3.EMOJI;
-            ({ emojisDisabled: obj15.emojisDisabled, emojis: obj15.emojis, name: obj15.label } = value);
-            let tmp53 = constants2;
-            obj4.footer = constants2.RECENT;
-            obj3.renderingData = obj4;
-            obj3.rowSize = rowSize;
-            let tmp54 = pushCategory(obj3);
-            tmp19 = tmp2;
-            tmp20 = tmp3;
-            tmp21 = tmp4;
-            tmp22 = tmp5;
-            tmp23 = tmp6;
-            tmp24 = tmp7;
-          } else {
-            let tmp65 = constants2;
-            if (constants2.GUILD === type) {
-              ({ guild, emojis, emojisDisabled, emojisHidden } = value);
-              if (isNativeEmojiPickerEnabled) {
-                let tmp48 = pushNativeCategory;
-                let obj5 = { emojiSections: items };
-                let obj6 = {};
-                let tmp49 = constants3;
-                obj6.type = constants3.NATIVE_SECTION;
-                ({ name: obj13.label, id: obj13.guildId } = guild);
-                obj6.emojiCount = emojis.length;
-                obj6.emojisDisabled = emojisDisabled;
-                obj6.emojisHidden = emojisHidden;
-                obj6.isSectionNitroLocked = value.isNitroLocked;
-                obj5.renderingData = obj6;
-                let tmp50 = pushNativeCategory(obj5);
-                tmp19 = guild;
-                tmp20 = emojis;
-                tmp21 = emojisDisabled;
-                tmp22 = emojisHidden;
-                tmp23 = tmp6;
-                tmp24 = tmp7;
-              } else {
-                let tmp39 = require;
-                let tmp40 = dependencyMap;
-                obj6 = require(9334) /* isNSFWInvite */;
-                if (obj6.shouldNSFWGateGuild(guild.id)) {
-                  let obj7 = { emojiSections: items };
-                  let obj8 = {};
-                  let tmp45 = constants3;
-                  obj8.type = constants3.NSFW;
-                  obj8.label = guild.name;
-                  let tmp46 = constants2;
-                  obj8.footer = constants2.GUILD;
-                  obj8.emojis = [];
-                  obj8.isSectionNitroLocked = value.isNitroLocked;
-                  obj7.renderingData = obj8;
-                  let emojiSections = obj7.emojiSections;
-                  let arr = emojiSections.push(obj7.renderingData);
-                  tmp19 = guild;
-                  tmp20 = emojis;
-                  tmp21 = emojisDisabled;
-                  tmp22 = emojisHidden;
-                  tmp23 = tmp6;
-                  tmp24 = tmp7;
-                } else {
-                  let tmp41 = pushCategory;
-                  let obj9 = { emojiSections: items };
-                  let obj10 = {};
-                  let tmp42 = constants3;
-                  obj10.type = constants3.EMOJI;
-                  obj10.emojis = emojis;
-                  obj10.emojisDisabled = emojisDisabled;
-                  obj10.label = guild.name;
-                  let tmp43 = constants2;
-                  obj10.footer = constants2.GUILD;
-                  obj10.isSectionNitroLocked = value.isNitroLocked;
-                  obj9.renderingData = obj10;
-                  obj9.rowSize = rowSize;
-                  let tmp44 = pushCategory(obj9);
-                  tmp19 = guild;
-                  tmp20 = emojis;
-                  tmp21 = emojisDisabled;
-                  tmp22 = emojisHidden;
-                  tmp23 = tmp6;
-                  tmp24 = tmp7;
-                }
-              }
-            } else {
-              let tmp66 = constants2;
-              tmp19 = tmp2;
-              tmp20 = tmp3;
-              tmp21 = tmp4;
-              tmp22 = tmp5;
-              tmp23 = tmp6;
-              tmp24 = tmp7;
-              if (constants2.UNICODE === type) {
-                let tmp67 = importDefault;
-                let tmp68 = dependencyMap;
-                let obj20 = importDefault(3806);
-                let byCategory = obj20.getByCategory(value.name);
-                if (isNativeEmojiPickerEnabled) {
-                  let obj11 = { emojiSections: items };
-                  let obj12 = {};
-                  let tmp26 = constants3;
-                  obj12.type = constants3.NATIVE_SECTION;
-                  let tmp27 = importDefault;
-                  let tmp28 = dependencyMap;
-                  let tmp25 = pushNativeCategory;
-                  obj5 = importDefault(22);
-                  obj12.label = obj5.capitalize(value.name);
-                  let length;
-                  if (null != byCategory) {
-                    length = byCategory.length;
-                  }
-                  let num = 0;
-                  if (null != length) {
-                    num = length;
-                  }
-                  obj12.emojiCount = num;
-                  let _Set2 = Set;
-                  let tmp30 = new.target;
-                  let tmp31 = new.target;
-                  let set = new Set();
-                  let tmp33 = set;
-                  obj12.emojisDisabled = set;
-                  let _Set3 = Set;
-                  let tmp34 = new.target;
-                  let tmp35 = new.target;
-                  let set1 = new Set();
-                  let tmp37 = set1;
-                  obj12.emojisHidden = set1;
-                  obj11.renderingData = obj12;
-                  let tmp25Result = tmp25(obj11);
-                  tmp19 = tmp2;
-                  tmp20 = tmp3;
-                  tmp21 = tmp4;
-                  tmp22 = tmp5;
-                  tmp23 = byCategory;
-                  tmp24 = length;
-                } else {
-                  obj = { emojiSections: items };
-                  let obj13 = {};
-                  let tmp10 = constants3;
-                  obj13.type = constants3.EMOJI;
-                  let items1 = byCategory;
-                  let tmp9 = pushCategory;
-                  if (null == byCategory) {
-                    items1 = [];
-                  }
-                  obj13.emojis = items1;
-                  let _Set = Set;
-                  let tmp11 = new.target;
-                  let tmp12 = new.target;
-                  let set2 = new Set();
-                  let tmp14 = set2;
-                  obj13.emojisDisabled = set2;
-                  let tmp15 = importDefault;
-                  let tmp16 = dependencyMap;
-                  obj2 = importDefault(22);
-                  obj13.label = obj2.capitalize(value.name);
-                  let tmp17 = constants2;
-                  obj13.footer = constants2.UNICODE;
-                  obj.renderingData = obj13;
-                  obj.rowSize = rowSize;
-                  let tmp9Result = tmp9(obj);
-                  tmp19 = tmp2;
-                  tmp20 = tmp3;
-                  tmp21 = tmp4;
-                  tmp22 = tmp5;
-                  tmp23 = byCategory;
-                  tmp24 = tmp7;
-                }
-              }
-            }
-          }
+          let tmp29 = pushCategory;
+          let obj8 = { emojiSections: null, renderingData: null, rowSize: null };
+          obj8[0] = items;
+          let obj9 = { type: null, emojis: null, emojisDisabled: null, label: null, footer: null, isSectionNitroLocked: null };
+          let tmp30 = constants3;
+          obj9[0] = constants3.EMOJI;
+          let tmp31 = emojis;
+          obj9[1] = emojis;
+          let tmp32 = emojisDisabled;
+          obj9[2] = emojisDisabled;
+          let tmp33 = guild;
+          obj9[3] = guild.name;
+          obj9[4] = tmp3.GUILD;
+          let tmp34 = nextResult;
+          obj9[5] = tmp2.isNitroLocked;
+          obj8[1] = obj9;
+          obj8[2] = rowSize;
+          let tmp35 = pushCategory(obj8);
         }
       }
-      iter3 = tmp();
-      tmp2 = tmp19;
-      tmp3 = tmp20;
-      tmp4 = tmp21;
-      tmp5 = tmp22;
-      tmp6 = tmp23;
-      tmp7 = tmp24;
-      iter2 = iter3;
-    } while (!iter3.done);
+    } else if (tmp3.UNICODE === type) {
+      let tmp60 = importDefault;
+      let tmp61 = dependencyMap;
+      let obj19 = importDefault(3830);
+      let tmp62 = nextResult;
+      let byCategory = obj19.getByCategory(tmp2.name);
+      if (isNativeEmojiPickerEnabled) {
+        let obj10 = { emojiSections: null, renderingData: null };
+        obj10[0] = items;
+        let obj11 = { type: null, label: null, emojiCount: null, emojisDisabled: null, emojisHidden: null };
+        let tmp13 = constants3;
+        obj11[0] = constants3.NATIVE_SECTION;
+        let tmp12 = pushNativeCategory;
+        let tmp60Result = tmp60(12);
+        let tmp14 = nextResult;
+        obj11[1] = tmp60Result.capitalize(tmp2.name);
+        let tmp15 = byCategory;
+        let num;
+        if (byCategory != null) {
+          num = byCategory.length;
+        }
+        if (num == null) {
+          num = 0;
+        }
+        obj11[2] = num;
+        let _Set2 = Set;
+        let tmp16 = new.target;
+        let tmp17 = new.target;
+        let set = new Set();
+        let tmp19 = set;
+        obj11[3] = set;
+        let _Set3 = Set;
+        let tmp20 = new.target;
+        let tmp21 = new.target;
+        let set1 = new Set();
+        let tmp23 = set1;
+        obj11[4] = set1;
+        obj10[1] = obj11;
+        let tmp12Result = tmp12(obj10);
+      } else {
+        obj = { emojiSections: null, renderingData: null, rowSize: null };
+        obj[0] = items;
+        let obj12 = { type: null, emojis: null, emojisDisabled: null, label: null, footer: null };
+        let tmp5 = constants3;
+        obj12[0] = constants3.EMOJI;
+        let items1 = byCategory;
+        let tmp4 = pushCategory;
+        if (byCategory == null) {
+          items1 = [];
+        }
+        obj12[1] = items1;
+        let _Set = Set;
+        let tmp6 = new.target;
+        let tmp7 = new.target;
+        let set2 = new Set();
+        let tmp9 = set2;
+        obj12[2] = set2;
+        tmp60Result = tmp60(12);
+        let tmp10 = nextResult;
+        obj12[3] = tmp60Result.capitalize(tmp2.name);
+        obj12[4] = tmp3.UNICODE;
+        obj[1] = obj12;
+        obj[2] = rowSize;
+        let tmp4Result = tmp4(obj);
+      }
+    }
+    continue;
   }
   return items;
 }
 function _computeSearchResults(emojis) {
-  let iter2;
   let limit;
   let locked;
   let rowSize;
@@ -354,44 +211,40 @@ function _computeSearchResults(emojis) {
     limit = Number.MAX_SAFE_INTEGER;
   }
   const items = [];
-  let obj = { emojiSections: items };
-  obj = { type: constants3.EMOJI };
+  let obj = { emojiSections: items, renderingData: null, rowSize: null };
+  obj = { type: constants3.EMOJI, emojis: null, emojisDisabled: null, label: "", footer: null };
   let substr = unlocked;
   if (unlocked.length > limit) {
     substr = unlocked.slice(0, limit);
   }
-  obj.emojis = substr;
-  obj.emojisDisabled = new Set();
-  obj.label = "";
-  obj.footer = constants2.SEARCH_RESULTS;
-  obj.renderingData = obj;
-  obj.rowSize = rowSize;
+  obj[1] = substr;
+  obj[2] = new Set();
+  obj[4] = constants2.SEARCH_RESULTS;
+  obj[1] = obj;
+  obj[2] = rowSize;
   pushCategory(obj);
   let substr1 = locked;
   if (locked.length > limit) {
     substr1 = locked.slice(0, limit);
   }
   const set1 = new Set();
-  const tmp7 = _createForOfIteratorHelperLoose(locked);
-  let iter = tmp7();
-  if (!iter.done) {
-    do {
-      let value = iter.value;
-      if (null != value.id) {
-        let addResult = set1.add(value.id);
-      }
-      iter2 = tmp7();
-      iter = iter2;
-    } while (!iter2.done);
+  const iter = locked[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    if (null != nextResult.id) {
+      let tmp9 = nextResult;
+      let addResult = set1.add(tmp8.id);
+    }
+    continue;
   }
-  obj = { emojiSections: items };
-  const obj1 = { type: constants3.EMOJI, emojis: substr1, emojisDisabled: set1 };
+  obj = { emojiSections: items, renderingData: null, rowSize: null };
+  const obj1 = { type: constants3.EMOJI, emojis: substr1, emojisDisabled: set1, label: null, footer: null };
   const set = new Set();
   const tmp2 = pushCategory;
-  obj1.label = require(9316) /* _createForOfIteratorHelperLoose */.getStringForEmojiCategory(constants.PREMIUM_UPSELL);
-  obj1.footer = constants2.PREMIUM_UPSELL;
-  obj.renderingData = obj1;
-  obj.rowSize = rowSize;
+  obj1[3] = require(9340) /* initializeSearch */.getStringForEmojiCategory(constants.PREMIUM_UPSELL);
+  obj1[4] = constants2.PREMIUM_UPSELL;
+  obj[1] = obj1;
+  obj[2] = rowSize;
   pushCategory(obj);
   return items;
 }
@@ -410,14 +263,15 @@ function pushNativeCategory(emojiSections) {
   emojiSections = emojiSections.emojiSections;
   emojiSections.push(emojiSections.renderingData);
 }
-({ EmojiCategories: closure_5, EmojiCategoryTypes: closure_6 } = EmojiCategoryTypes);
+({ EmojiCategories: c5, EmojiCategoryTypes: closure_6 } = EmojiCategoryTypes);
 const result = require("EmojiCategoryTypes").fileFinishedImporting("modules/emoji_picker/native/components/useComputeEmojiPickerFunctions.tsx");
 
 export default function useComputeEmojiPickerFunctions() {
   return callback(React.useState(() => {
-    const obj = { computeCategories: outer1_0(outer1_2[8]).cachedFunction(outer1_10) };
-    const obj2 = outer1_0(outer1_2[8]);
-    obj.computeSearchResults = outer1_0(outer1_2[8]).cachedFunction(outer1_11);
+    const obj = { computeCategories: null, computeSearchResults: null };
+    obj[0] = callback(1941).cachedFunction(closure_8);
+    const obj2 = callback(1941);
+    obj[1] = callback(1941).cachedFunction(closure_9);
     return obj;
   }), 1)[0];
 };

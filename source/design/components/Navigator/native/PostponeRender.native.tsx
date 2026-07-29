@@ -1,24 +1,26 @@
-// Module ID: 5616
-// Function ID: 47534
+// Module ID: 5634
+// Function ID: 5635
 // Name: PostponeRender
-// Dependencies: [57, 31, 27, 33, 4165, 689, 4594, 5617, 5618, 5620, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 4616, 5635, 5636, 5638, 2]
 // Exports: PostponeRender
 
-// Module 5616 (PostponeRender)
+// Module 5634 (PostponeRender)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
+let StyleSheet;
+let c5;
 const require = arg1;
-const View = get_ActivityIndicator.View;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = {};
-const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
-_createForOfIteratorHelperLoose["backgroundColor"] = require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER;
-_createForOfIteratorHelperLoose.view = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c5, StyleSheet } = get_ActivityIndicator);
+createCacheKey = { view: null };
+createCacheKey = {};
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+createCacheKey.backgroundColor = require("Themes").colors.BACKGROUND_BASE_LOWER;
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("get ActivityIndicator").fileFinishedImporting("design/components/Navigator/native/PostponeRender.native.tsx");
 
 export const PostponeRender = function PostponeRender(children) {
@@ -26,34 +28,35 @@ export const PostponeRender = function PostponeRender(children) {
   let postpone;
   let viewStyle;
   children = children.children;
+  let first;
+  let importDefault;
+  let dependencyMap;
   ({ postpone, ignoreKeyboard, viewStyle } = children);
   const tmp2 = callback(React.useState(postpone), 2);
-  const first = tmp2[0];
-  const importDefault = tmp2[1];
-  const dependencyMap = React.useRef(undefined);
-  importDefault(4594)(() => {
+  first = tmp2[0];
+  importDefault = tmp2[1];
+  dependencyMap = React.useRef(undefined);
+  importDefault(4616)(() => {
     if (first) {
       table.current = first(table[7]).runAfterInteractions(() => {
-        outer1_1(false);
+        callback(false);
       });
       return () => {
-        const current = outer1_2.current;
-        if (null != current) {
+        const current = ref.current;
+        if (current != null) {
           current.cancel();
         }
       };
     }
   });
   if (first) {
-    children = jsx(first(5618).SceneLoadingIndicator, {});
+    children = jsx(first(5636).SceneLoadingIndicator, {});
   }
   if (ignoreKeyboard) {
-    let tmp10 = View;
+    let tmp4Result = closure_5;
   } else {
-    tmp10 = importDefault(5620);
+    tmp4Result = importDefault(5638);
   }
-  const obj = { style: items };
-  items = [_createForOfIteratorHelperLoose().view, viewStyle];
-  obj.children = children;
-  return <tmp10 style={items} />;
+  const style = [createCacheKey().view, viewStyle];
+  return <tmp4Result style={style}>{children}</tmp4Result>;
 };

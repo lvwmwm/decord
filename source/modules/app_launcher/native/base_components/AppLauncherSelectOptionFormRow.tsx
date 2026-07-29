@@ -1,20 +1,20 @@
-// Module ID: 11329
-// Function ID: 87931
+// Module ID: 11353
+// Function ID: 11354
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [31, 33, 4165, 689, 11322, 7611, 4161, 1273, 5207, 2]
+// Dependencies: [19, 21, 4189, 712, 11346, 7634, 4185, 1297, 5229, 2]
 // Exports: default
 
-// Module 11329 (AppLauncherSelectOptionFormRow)
-import "result";
+// Module 11353 (AppLauncherSelectOptionFormRow)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, alignItems: "center", flex: 1 };
-_createForOfIteratorHelperLoose.formRow = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherSelectOptionFormRow.tsx");
+createCacheKey = { formRow: null };
+createCacheKey = { flexDirection: "row", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.lg, alignItems: "center", flex: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createCacheKey").fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherSelectOptionFormRow.tsx");
 
 export default function AppLauncherSelectOptionFormRow(arg0) {
   let autoFocus;
@@ -24,46 +24,37 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   let style;
   let unselectedSubLabel;
   ({ selected, selectedItemName: require, unselectedSubLabel } = arg0);
-  let obj = { style: 0, option: 0, selected: 0, selectedItemName: 0, unselectedSubLabel: 0, autoFocus: 0 };
   ({ style, option, autoFocus } = arg0);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(arg0, obj);
-  let obj1 = require(11322) /* useAnimationDelayedAutoFocus */;
-  const animationDelayedAutoFocus = obj1.useAnimationDelayedAutoFocus(autoFocus, merged.onPress);
-  obj = { start: true, end: true };
-  const items = [_createForOfIteratorHelperLoose().formRow, style];
-  obj.style = items;
-  obj = {};
+  const merged = Object.assign(arg0, Object.create(null));
+  let obj = require(11346) /* useAnimationDelayedAutoFocus */;
+  const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, merged.onPress);
+  obj = { start: true, end: true, style: items, label: null, subLabel: null, trailing: null };
+  items = [createCacheKey().formRow, style];
   let str = "text-md/medium";
   if (selected) {
     str = "text-sm/medium";
   }
-  obj.variant = str;
+  obj = { variant: str, color: null, lineClamp: 1, children: null };
   let str2 = "text-default";
   if (selected) {
     str2 = "interactive-text-default";
   }
-  obj.color = str2;
-  obj.lineClamp = 1;
-  obj.children = option.displayName;
-  obj.label = jsx(require(4161) /* Text */.Text, {});
+  obj[1] = str2;
+  obj[3] = option.displayName;
+  obj[3] = jsx(require(4185) /* Text */.Text, { variant: str, color: null, lineClamp: 1, children: null });
   if (selected) {
-    let fn = () => {
-      const obj = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: closure_0 };
-      return outer1_3(outer1_0(outer1_2[6]).Text, obj);
-    };
+    let fn = () => outer1_3(outer1_0(outer1_2[6]).Text, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: closure_0 });
   } else {
     fn = null;
     if (null != unselectedSubLabel) {
-      fn = () => {
-        const obj = { variant: "text-sm/normal", color: "text-muted", lineClamp: 1, children: unselectedSubLabel };
-        return outer1_3(outer1_0(outer1_2[6]).Text, obj);
-      };
+      fn = () => outer1_3(outer1_0(outer1_2[6]).Text, { variant: "text-sm/normal", color: "text-muted", lineClamp: 1, children: unselectedSubLabel });
     }
   }
-  obj.subLabel = fn;
-  obj1 = { source: unselectedSubLabel(5207), size: require(1273) /* Button */.IconSizes.SMALL_20 };
-  obj.trailing = jsx(require(1273) /* Button */.Icon, { source: unselectedSubLabel(5207), size: require(1273) /* Button */.IconSizes.SMALL_20 });
+  obj[4] = fn;
+  const obj1 = { source: null, size: null };
+  obj1[0] = unselectedSubLabel(5229);
+  obj1[1] = require(1297) /* Button */.IconSizes.SMALL_20;
+  obj[5] = jsx(require(1297) /* Button */.Icon, { source: null, size: null });
   const merged1 = Object.assign(merged);
-  return jsx(require(7611) /* Form */.FormRow, {});
+  return jsx(require(7634) /* Form */.FormRow, { variant: str, color: null, lineClamp: 1, children: null });
 };

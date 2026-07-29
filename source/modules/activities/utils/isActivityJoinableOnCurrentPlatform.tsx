@@ -1,73 +1,92 @@
-// Module ID: 12004
-// Function ID: 92643
-// Name: getCurrentActivityGamePlatform
-// Dependencies: [653, 478, 1553, 6007, 2]
-// Exports: default
+// Module ID: 12028
+// Function ID: 12029
+// Name: isActivityJoinableOnCurrentPlatform
+// Dependencies: [676, 501, 1577, 6025, 2]
+// Exports: default, getCurrentActivityGamePlatform, isActivityJoinable
 
-// Module 12004 (getCurrentActivityGamePlatform)
+// Module 12028 (isActivityJoinableOnCurrentPlatform)
 import ME from "ME";
 
-let closure_3;
-let closure_4;
-let closure_5;
-function getCurrentActivityGamePlatform() {
-  if (obj.isIOS()) {
-    let META_QUEST = constants2.IOS;
-  } else {
-    if (obj2.isMetaQuest()) {
-      META_QUEST = constants2.META_QUEST;
-    } else {
-      META_QUEST = require(478) /* isWindows */.isAndroid() ? tmp5.ANDROID : tmp5.DESKTOP;
-      const obj3 = require(478) /* isWindows */;
-    }
-    obj2 = require(1553) /* isMetaQuest */;
-  }
-  return META_QUEST;
-}
-function isActivityJoinable(type) {
+let c3;
+let c4;
+let c5;
+({ ActivityFlags: c3, ActivityGamePlatforms: c4, ActivityTypes: c5 } = ME);
+const result = require("isMetaQuest").fileFinishedImporting("modules/activities/utils/isActivityJoinableOnCurrentPlatform.tsx");
+
+export default function isActivityJoinableOnCurrentPlatform(type) {
   let tmp = null == type;
   if (!tmp) {
-    tmp = !importDefault(6007)(type, constants.JOIN);
+    tmp = !importDefault(6025)(type, constants.JOIN);
   }
   if (!tmp) {
     tmp = type.type !== constants3.PLAYING;
   }
-  return !tmp;
-}
-({ ActivityFlags: closure_3, ActivityGamePlatforms: closure_4, ActivityTypes: closure_5 } = ME);
-const result = require("isMetaQuest").fileFinishedImporting("modules/activities/utils/isActivityJoinableOnCurrentPlatform.tsx");
-
-export default function isActivityJoinableOnCurrentPlatform(platform) {
-  if (isActivityJoinable(platform)) {
-    const tmp2 = getCurrentActivityGamePlatform();
-    platform = undefined;
-    if (null != platform) {
-      platform = platform.platform;
-    }
-    if (null != platform) {
-      let DESKTOP = platform.platform;
+  if (!tmp) {
+    if (obj.isIOS()) {
+      let DESKTOP = constants2.IOS;
+      let tmp9 = constants2;
     } else {
-      DESKTOP = constants2.DESKTOP;
+      let tmp6Result = tmp6(1577);
+      if (tmp6Result.isMetaQuest()) {
+        DESKTOP = constants2.META_QUEST;
+        tmp9 = constants2;
+      } else {
+        tmp6Result = tmp6(501);
+        if (tmp6Result.isAndroid()) {
+          DESKTOP = tmp8.ANDROID;
+          tmp9 = tmp8;
+        } else {
+          DESKTOP = tmp8.DESKTOP;
+          tmp9 = tmp8;
+        }
+      }
     }
-    if (DESKTOP === tmp2) {
+    let platform;
+    if (type != null) {
+      platform = type.platform;
+    }
+    if ((null != platform ? type.platform : tmp9.DESKTOP) === DESKTOP) {
       return true;
     } else {
       let supported_platforms;
-      if (null != platform) {
-        supported_platforms = platform.supported_platforms;
+      if (type != null) {
+        supported_platforms = type.supported_platforms;
       }
       let hasItem = null != supported_platforms;
       if (hasItem) {
         hasItem = 0 !== supported_platforms.length;
       }
       if (hasItem) {
-        hasItem = supported_platforms.includes(tmp2);
+        hasItem = supported_platforms.includes(DESKTOP);
       }
       return hasItem;
     }
+    obj = require(501) /* PlatformTypes */;
   } else {
     return false;
   }
 };
-export { getCurrentActivityGamePlatform };
-export { isActivityJoinable };
+export const getCurrentActivityGamePlatform = function getCurrentActivityGamePlatform() {
+  if (obj.isIOS()) {
+    let META_QUEST = constants2.IOS;
+  } else {
+    let tmpResult = tmp(1577);
+    if (tmpResult.isMetaQuest()) {
+      META_QUEST = constants2.META_QUEST;
+    } else {
+      tmpResult = tmp(501);
+      META_QUEST = tmpResult.isAndroid() ? tmp3.ANDROID : tmp3.DESKTOP;
+    }
+  }
+  return META_QUEST;
+};
+export const isActivityJoinable = function isActivityJoinable(type) {
+  let tmp = null == type;
+  if (!tmp) {
+    tmp = !importDefault(6025)(type, constants.JOIN);
+  }
+  if (!tmp) {
+    tmp = type.type !== constants3.PLAYING;
+  }
+  return !tmp;
+};

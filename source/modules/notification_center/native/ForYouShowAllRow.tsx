@@ -1,98 +1,89 @@
-// Module ID: 15282
-// Function ID: 116170
+// Module ID: 15315
+// Function ID: 15316
 // Name: ForYouShowAllRow
-// Dependencies: [31, 27, 653, 11765, 33, 4165, 10264, 689, 477, 1456, 675, 1273, 4584, 15277, 4695, 15278, 13197, 4161, 1212, 5207, 2]
+// Dependencies: [19, 17, 676, 11790, 21, 4189, 10285, 712, 500, 1480, 698, 1297, 4606, 15310, 4717, 15311, 13220, 4185, 1236, 5229, 2]
 // Exports: ForYouSuggestedFriendShowAllRow
 
-// Module 15282 (ForYouShowAllRow)
-import result from "result";
-import { View } from "get ActivityIndicator";
+// Module 15315 (ForYouShowAllRow)
+import registerAsset from "registerAsset";
+import { View } from "Text";
 import { AnalyticEvents } from "ME";
 import { Sections } from "SuggestedFriendSource";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
-let closure_9;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
 function ForYouShowAllRow(panelVariant) {
   let children;
   let count;
   let onPress;
-  let flag = panelVariant.panelVariant;
+  panelVariant = panelVariant.panelVariant;
   ({ children, count, onPress } = panelVariant);
-  if (flag === undefined) {
-    flag = false;
+  if (panelVariant === undefined) {
+    panelVariant = false;
   }
-  let obj = require(10264) /* getLayoutStyles */;
-  const messagesTabLayout = obj.useMessagesTabLayout(flag);
-  const tmp2 = callback2(messagesTabLayout);
-  let obj1 = require(10264) /* getLayoutStyles */;
-  const layoutStyles = obj1.getLayoutStyles(messagesTabLayout);
-  let obj2 = require(4584) /* getFontScale */;
+  let obj = require(10285) /* getLayoutStyles */;
+  const layout = obj.useMessagesTabLayout(panelVariant);
+  const tmp4 = callback2(layout);
+  let obj1 = require(10285) /* getLayoutStyles */;
+  const layoutStyles = obj1.getLayoutStyles(layout);
+  let obj2 = require(4606) /* getFontScale */;
   const fontScale = obj2.useFontScale();
-  let obj3 = require(15277) /* renderChannelPressableWrapper */;
-  obj = { accessibilityRole: "button", underlayColor: tmp2.rowActive.backgroundColor, onPress, style: items };
-  items = [tmp2.pressable, { borderRadius: layoutStyles.container.borderRadius }];
-  let obj5 = require(15278) /* renderChannelWrapper */;
-  obj = {};
-  obj1 = { style: tmp2.avatar };
-  obj2 = {};
-  const obj10 = require(10264) /* getLayoutStyles */;
-  const tmp10 = callback;
-  const tmp5 = callback;
-  const tmp6 = closure_9;
-  const tmp7 = closure_8;
-  const tmp8 = callback;
-  const tmp9 = View;
-  const AvatarSizes = require(1273) /* Button */.AvatarSizes;
-  obj2.size = require(10264) /* getLayoutStyles */.isLayoutCompact(messagesTabLayout) ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL;
-  obj2["aria-label"] = "";
-  obj2.children = children;
-  obj1.children = tmp10(require(13197) /* AvatarDuoPile */.AvatarDuoPile, obj2);
-  const items1 = [tmp8(tmp9, obj1), , ];
-  obj3 = { style: tmp2.textContainer };
-  const obj4 = { lineClamp: 1, variant: layoutStyles.channelName.text.variant, color: "text-brand", style: tmp2.nameText };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj4.children = intl.format(require(1212) /* getSystemLocale */.t.NrzztX, { count });
-  obj3.children = callback(require(4161) /* Text */.Text, obj4);
-  items1[1] = callback(View, obj3);
-  obj5 = { style: tmp2.icon, color: tmp2.iconColor.color, source: importDefault(5207), size: require(1273) /* Button */.IconSizes.CUSTOM };
-  items1[2] = callback(require(1273) /* Button */.Icon, obj5);
-  obj.children = items1;
-  const obj6 = { layout: messagesTabLayout, fontScale, panelVariant: flag };
-  obj.children = obj5.renderChannelWrapper(tmp6(tmp7, obj), obj6);
-  const obj7 = { layout: messagesTabLayout, panelVariant: flag };
-  return obj3.renderChannelPressableWrapper(tmp5(require(4695) /* PressableBase */.PressableHighlight, obj), obj7);
+  let obj3 = require(15310) /* renderChannelPressableWrapper */;
+  obj = { accessibilityRole: "button", underlayColor: tmp4.rowActive.backgroundColor, onPress, style: items, children: null };
+  items = [tmp4.pressable, { borderRadius: layoutStyles.container.borderRadius }];
+  let obj5 = require(15311) /* renderChannelWrapper */;
+  obj = { style: tmp4.avatar, children: null };
+  const obj8 = require(10285) /* getLayoutStyles */;
+  const tmp8 = closure_9;
+  const tmp9 = closure_8;
+  const AvatarSizes = require(1297) /* Button */.AvatarSizes;
+  obj1 = { children: null };
+  obj2 = { size: require(10285) /* getLayoutStyles */.isLayoutCompact(layout) ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL, "aria-label": "", children };
+  obj[1] = closure_7(require(13220) /* AvatarDuoPile */.AvatarDuoPile, obj2);
+  const items1 = [closure_7(View, obj), , ];
+  obj3 = { style: tmp4.textContainer, children: null };
+  const obj4 = { lineClamp: 1, variant: layoutStyles.channelName.text.variant, color: "text-brand", style: tmp4.nameText, children: null };
+  const intl = tmp(1236).intl;
+  obj4[4] = intl.format(require(1236) /* getSystemLocale */.t.NrzztX, { count });
+  obj3[1] = closure_7(require(4185) /* Text */.Text, obj4);
+  items1[1] = closure_7(View, obj3);
+  obj5 = { style: tmp4.icon, color: tmp4.iconColor.color, source: null, size: null };
+  obj5[2] = importDefault(5229);
+  obj5[3] = require(1297) /* Button */.IconSizes.CUSTOM;
+  items1[2] = closure_7(require(1297) /* Button */.Icon, obj5);
+  obj1[0] = items1;
+  obj[4] = obj5.renderChannelWrapper(tmp8(tmp9, obj1), { layout, fontScale, panelVariant });
+  return obj3.renderChannelPressableWrapper(closure_7(require(4717) /* PressableBase */.PressableHighlight, obj), { layout, panelVariant });
 }
-({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles((layout) => {
-  let obj = require(10264) /* getLayoutStyles */;
+({ jsx: error, Fragment: metroImportAll, jsxs: c9 } = jsxProd);
+let closure_10 = createCacheKey.createStyles((layout) => {
+  let obj = require(10285) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout);
-  let obj1 = require(10264) /* getLayoutStyles */;
+  let obj1 = require(10285) /* getLayoutStyles */;
   const sizeStyle = obj1.makeSizeStyle(layoutStyles.icon.wrapper.size);
-  obj = {};
-  obj = { backgroundColor: importDefault(689).colors.BACKGROUND_MOD_MUTED };
-  obj.rowActive = obj;
-  obj.pressable = { flex: 1 };
-  obj1 = { flexDirection: "column", flexGrow: 2, flexShrink: 2, alignSelf: "center", overflow: "hidden", marginTop: -2, marginRight: importDefault(689).space.PX_8 };
-  obj.textContainer = obj1;
-  const obj2 = { flexShrink: 1 };
+  obj = { rowActive: null, pressable: null, textContainer: null, nameText: null, avatar: null, icon: null, iconColor: null };
+  obj = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_MUTED };
+  obj[0] = obj;
+  obj[1] = { flex: 1 };
+  obj1 = { flexDirection: "column", flexGrow: 2, flexShrink: 2, alignSelf: "center", overflow: "hidden", marginTop: -2, marginRight: importDefault(712).space.PX_8 };
+  obj[2] = obj1;
   let num = 0;
-  if (obj7.isAndroid()) {
+  if (obj6.isAndroid()) {
     num = 2;
   }
-  obj2.marginBottom = num;
-  obj.nameText = obj2;
-  const obj3 = { position: "relative", borderRadius: importDefault(689).radii.round, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0 };
+  obj[3] = { flexShrink: 1, marginBottom: num };
+  const obj2 = { position: "relative", borderRadius: importDefault(712).radii.round, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0 };
   const merged = Object.assign(sizeStyle);
-  obj3["marginRight"] = layoutStyles.icon.margin.marginRight + 4;
-  obj.avatar = obj3;
-  const obj4 = { width: 8, height: 32, paddingRight: importDefault(689).space.PX_24 };
-  obj.icon = obj4;
-  obj7 = require(477) /* set */;
-  obj.iconColor = { color: importDefault(689).colors.INTERACTIVE_TEXT_DEFAULT };
+  obj2.marginRight = layoutStyles.icon.margin.marginRight + 4;
+  obj[4] = obj2;
+  obj6 = require(500) /* set */;
+  obj[5] = { width: 8, height: 32, paddingRight: importDefault(712).space.PX_24 };
+  const obj3 = { width: 8, height: 32, paddingRight: importDefault(712).space.PX_24 };
+  obj[6] = { color: importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT };
   return obj;
 });
 const result = require("ME").fileFinishedImporting("modules/notification_center/native/ForYouShowAllRow.tsx");
@@ -120,12 +111,12 @@ export const ForYouSuggestedFriendShowAllRow = function ForYouSuggestedFriendSho
     children: React.useMemo(() => {
       const substr = suggestedFriends.slice(2, 4);
       return substr.map((user) => {
-        const obj = { user: user.user, guildId: undefined };
-        const obj2 = suggestedFriends(messagesTabLayout[6]);
-        const tmp = outer2_7;
-        const AvatarSizes = suggestedFriends(messagesTabLayout[11]).AvatarSizes;
-        obj.size = suggestedFriends(messagesTabLayout[6]).isLayoutCompact(outer1_2) ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL;
-        return tmp(suggestedFriends(messagesTabLayout[11]).Avatar, obj, user.user.id);
+        const obj = { user: user.user, guildId: "Array", size: 2086900762484230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+        const obj2 = outer1_0(outer1_2[6]);
+        const tmp = outer1_7;
+        const AvatarSizes = outer1_0(outer1_2[11]).AvatarSizes;
+        obj[2] = outer1_0(outer1_2[6]).isLayoutCompact(closure_2) ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL;
+        return tmp(outer1_0(outer1_2[11]).Avatar, obj, user.user.id);
       });
     }, items1),
     count: suggestedFriends.length,

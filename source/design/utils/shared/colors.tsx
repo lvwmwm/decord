@@ -1,30 +1,31 @@
-// Module ID: 7947
-// Function ID: 63099
+// Module ID: 7972
+// Function ID: 7973
 // Name: flattenColorOverOpaqueBackground
-// Dependencies: [666, 2]
+// Dependencies: [689, 2]
 // Exports: flattenColorOverOpaqueBackground
 
-// Module 7947 (flattenColorOverOpaqueBackground)
+// Module 7972 (flattenColorOverOpaqueBackground)
 const result = require("set").fileFinishedImporting("design/utils/shared/colors.tsx");
 
-export const flattenColorOverOpaqueBackground = function flattenColorOverOpaqueBackground(arg0, arg1) {
-  const obj = importDefault(666)(arg0);
+export const flattenColorOverOpaqueBackground = function flattenColorOverOpaqueBackground(token, context) {
+  const obj = importDefault(689)(token);
+  const tmp = importDefault;
   const rgbaResult = obj.rgba();
-  const rgbaResult1 = importDefault(666)(arg1).rgba();
+  const rgbaResult1 = importDefault(689)(context).rgba();
   if (1 !== rgbaResult1[3]) {
     const _Error = Error;
     const error = new Error("Expected solid cutout background color to be opaque");
     throw error;
   } else {
-    const diff = 1 - tmp8;
+    const diff = 1 - tmp10;
     const _Math = Math;
     const _Math2 = Math;
-    const rounded = Math.round(rgbaResult[0] * tmp8 + rgbaResult1[0] * diff);
+    const rounded = Math.round(rgbaResult[0] * tmp10 + rgbaResult1[0] * diff);
     const _Math3 = Math;
-    const rounded1 = Math.round(rgbaResult[1] * tmp8 + rgbaResult1[1] * diff);
-    const rounded2 = Math.round(rgbaResult[2] * tmp8 + rgbaResult1[2] * diff);
-    const obj3 = importDefault(666);
-    return importDefault(666).rgb(rounded, rounded1, rounded2).hex();
+    const rounded1 = Math.round(rgbaResult[1] * tmp10 + rgbaResult1[1] * diff);
+    const rounded2 = Math.round(rgbaResult[2] * tmp10 + rgbaResult1[2] * diff);
+    const tmpResult = tmp(689);
+    return tmp(689).rgb(rounded, rounded1, rounded2).hex();
   }
-  const obj2 = importDefault(666)(arg1);
+  const obj2 = importDefault(689)(context);
 };

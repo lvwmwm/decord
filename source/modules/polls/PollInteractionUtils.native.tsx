@@ -1,15 +1,15 @@
-// Module ID: 9936
-// Function ID: 76803
+// Module ID: 9958
+// Function ID: 9959
 // Name: showVotesForAnswer
-// Dependencies: [4133, 9937, 1935, 2]
+// Dependencies: [4157, 9959, 1959, 2]
 // Exports: showVotesForAnswer
 
-// Module 9936 (showVotesForAnswer)
-const result = require("maybeLoadBundle").fileFinishedImporting("modules/polls/PollInteractionUtils.native.tsx");
+// Module 9958 (showVotesForAnswer)
+const result = require("asyncRequireImpl").fileFinishedImporting("modules/polls/PollInteractionUtils.native.tsx");
 
 export const showVotesForAnswer = function showVotesForAnswer(initialAnswerId) {
   const message = initialAnswerId.message;
-  let obj = importDefault(4133);
+  let obj = importDefault(4157);
   obj = { channelId: message.channel_id, messageId: message.id, initialAnswerId: initialAnswerId.initialAnswerId };
-  obj.openLazy(require(1935) /* maybeLoadBundle */(9937, dependencyMap.paths), "PollVotesActionSheet", obj);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(9959, dependencyMap.paths), "PollVotesActionSheet", obj);
 };

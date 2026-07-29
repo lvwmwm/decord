@@ -1,31 +1,32 @@
-// Module ID: 11612
-// Function ID: 90160
+// Module ID: 11636
+// Function ID: 11637
 // Name: GuildPowerupsDisabledWarning
-// Dependencies: [27, 33, 4165, 689, 7606, 4161, 2]
+// Dependencies: [17, 21, 4189, 712, 7629, 4185, 2]
 // Exports: default
 
-// Module 11612 (GuildPowerupsDisabledWarning)
+// Module 11636 (GuildPowerupsDisabledWarning)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let obj = {};
-obj = { flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8, borderColor: require("_createForOfIteratorHelperLoose").colors.STATUS_WARNING_BACKGROUND, borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, padding: require("_createForOfIteratorHelperLoose").space.PX_12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_WARNING };
-obj.container = obj;
-obj.text = { flex: 1 };
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsDisabledWarning.tsx");
+let c4;
+let c5;
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let obj = { container: null, text: null };
+obj = { flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8, borderColor: require("Themes").colors.STATUS_WARNING_BACKGROUND, borderWidth: 1, borderRadius: require("Themes").radii.lg, padding: require("Themes").space.PX_12, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_WARNING };
+obj[0] = obj;
+obj[1] = { flex: 1 };
+let closure_6 = createCacheKey.createStyles(obj);
+const result = require("createCacheKey").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsDisabledWarning.tsx");
 
-export default function GuildPowerupsDisabledWarning(text) {
+export default function GuildPowerupsDisabledWarning(children) {
   const tmp = callback3();
-  let obj = { style: tmp.container };
-  obj = { color: importDefault(689).colors.TEXT_FEEDBACK_WARNING, size: "md" };
-  const items = [callback(require(7606) /* WarningIcon */.WarningIcon, obj), ];
-  obj = { style: tmp.text, variant: "text-md/semibold", color: "text-feedback-warning", children: text.text };
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj.children = items;
+  let obj = { style: tmp.container, children: null };
+  obj = { color: null, size: "md" };
+  obj[0] = importDefault(712).colors.TEXT_FEEDBACK_WARNING;
+  const items = [callback(require(7629) /* WarningIcon */.WarningIcon, obj), ];
+  obj = { style: tmp.text, variant: "text-md/semibold", color: "text-feedback-warning", children: children.text };
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[1] = items;
   return callback2(View, obj);
 };

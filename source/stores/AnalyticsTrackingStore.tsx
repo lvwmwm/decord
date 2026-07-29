@@ -1,61 +1,59 @@
-// Module ID: 5702
-// Function ID: 49031
+// Module ID: 5720
+// Function ID: 5721
 // Name: result
-// Dependencies: [1194, 653, 480, 686, 5703, 675, 673, 2]
+// Dependencies: [1218, 676, 503, 709, 5721, 698, 696, 2]
 
-// Module 5702 (result)
-import importDefaultResult from "_isNativeReflectConstruct";
-import isThrottled from "isThrottled";
+// Module 5720 (result)
+import importDefaultResult from "fetchFingerprint";
+import encodeProperties from "encodeProperties";
 
 const require = arg1;
-isThrottled = {
+encodeProperties = {
   dispatcher: require("dispatcher"),
-  actionHandler: isThrottled,
+  actionHandler: encodeProperties,
   TRACKING_URL: require("ME").Endpoints.TRACK,
   waitFor: items,
   getFingerprint: importDefaultResult.getFingerprint,
   getSessionId() {
-    const session = require(5703) /* stopAnalyticsHeartbeat */.getSession();
+    const session = require(5721) /* trackHeartbeat */.getSession();
     return session.then((uuid) => {
-      const obj = {};
-      uuid = undefined;
-      if (null != uuid) {
-        uuid = uuid.uuid;
+      let sessionId;
+      if (uuid != null) {
+        sessionId = uuid.uuid;
       }
-      obj.sessionId = uuid;
-      return obj;
+      return { sessionId };
     });
   },
   getLaunchSignature() {
-    return require(675) /* expandLocation */.launchSignature;
+    return require(698) /* expandEventProperties */.launchSignature;
   },
   scheduleWhenIdle: require("setOriginWindow").requestSafeIdleCallback
 };
-isThrottled = {
+encodeProperties = {
   CONNECTION_OPEN(arg0) {
-    return require(480) /* isThrottled */.AnalyticsActionHandlers.handleConnectionOpen(arg0);
+    return require(503) /* encodeProperties */.AnalyticsActionHandlers.handleConnectionOpen(arg0);
   },
   OVERLAY_INITIALIZE(arg0) {
-    return require(480) /* isThrottled */.AnalyticsActionHandlers.handleConnectionOpen(arg0);
+    return require(503) /* encodeProperties */.AnalyticsActionHandlers.handleConnectionOpen(arg0);
   },
   CURRENT_USER_UPDATE(arg0) {
-    return require(480) /* isThrottled */.AnalyticsActionHandlers.handleConnectionOpen(arg0);
+    return require(503) /* encodeProperties */.AnalyticsActionHandlers.handleConnectionOpen(arg0);
   },
   CONNECTION_CLOSED() {
-    return require(480) /* isThrottled */.AnalyticsActionHandlers.handleConnectionClosed();
+    return require(503) /* encodeProperties */.AnalyticsActionHandlers.handleConnectionClosed();
   },
   FINGERPRINT() {
-    return require(480) /* isThrottled */.AnalyticsActionHandlers.handleFingerprint();
+    return require(503) /* encodeProperties */.AnalyticsActionHandlers.handleFingerprint();
   },
   TRACK(arg0) {
-    return require(480) /* isThrottled */.AnalyticsActionHandlers.handleTrack(arg0);
+    return require(503) /* encodeProperties */.AnalyticsActionHandlers.handleTrack(arg0);
   },
   SET_ANALYTICS_TOKEN(arg0) {
-    return require(480) /* isThrottled */.AnalyticsActionHandlers.handleSetAnalyticsToken(arg0);
+    return require(503) /* encodeProperties */.AnalyticsActionHandlers.handleSetAnalyticsToken(arg0);
   }
 };
 items = [importDefaultResult];
-isThrottled = isThrottled.analyticsTrackingStoreMaker(isThrottled);
-const result1 = require("isThrottled").fileFinishedImporting("stores/AnalyticsTrackingStore.tsx");
+encodeProperties = encodeProperties.analyticsTrackingStoreMaker(encodeProperties);
+const result1 = require("encodeProperties").fileFinishedImporting("stores/AnalyticsTrackingStore.tsx");
 
-export default isThrottled;
+export default encodeProperties;

@@ -1,75 +1,71 @@
-// Module ID: 11005
-// Function ID: 85422
-// Dependencies: [653, 686, 507, 1212, 2]
+// Module ID: 11029
+// Function ID: 11030
+// Dependencies: [676, 709, 530, 1236, 2]
 
-// Module 11005
+// Module 11029
 import ME from "ME";
 
-let closure_3;
-let closure_4;
-({ Endpoints: closure_3, ME: closure_4 } = ME);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_settings/GuildSettingsModalMembersActionCreators.tsx");
+let c3;
+let c4;
+({ Endpoints: c3, ME: c4 } = ME);
+const result = require("sendRequest").fileFinishedImporting("modules/guild_settings/GuildSettingsModalMembersActionCreators.tsx");
 
 export default {
   startEditingRoles(id, id2) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "GUILD_SETTINGS_MODAL_MEMBERS_START_EDITING", guildId: id, userId: id2 };
     obj.dispatch(obj);
   },
   stopEditingRoles() {
-    importDefault(686).dispatch({ type: "GUILD_SETTINGS_MODAL_MEMBERS_STOP_EDITING" });
+    importDefault(709).dispatch({ type: "GUILD_SETTINGS_MODAL_MEMBERS_STOP_EDITING" });
   },
   toggleRole(roleId, state) {
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj = { type: "GUILD_SETTINGS_MODAL_MEMBERS_TOGGLE_ROLE", roleId, state };
     obj.dispatch(obj);
   },
-  updateMemberRoles(guildId, userId, roles) {
+  updateMemberRoles(guildId, outer1_1, roles) {
     function onEnd() {
-      return outer1_1(outer1_2[1]).dispatch({ type: "GUILD_SETTINGS_MODAL_MEMBERS_ROLES_SAVE_COMPLETE" });
+      return callback(table[1]).dispatch({ type: "GUILD_SETTINGS_MODAL_MEMBERS_ROLES_SAVE_COMPLETE" });
     }
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj.dispatch({ type: "GUILD_SETTINGS_MODAL_MEMBERS_ROLES_SAVE" });
-    const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
-    obj = { url: closure_3.GUILD_MEMBER(guildId, userId), body: obj, oldFormErrors: true, rejectWithError: true };
+    const HTTP = require(530) /* sendRequest */.HTTP;
+    obj = { url: closure_3.GUILD_MEMBER(guildId, outer1_1), body: obj, oldFormErrors: true, rejectWithError: true };
     obj = { roles };
     HTTP.patch(obj).then(onEnd, onEnd);
   },
   startEditingNickname() {
-    importDefault(686).dispatch({ type: "GUILD_SETTINGS_MODAL_MEMBERS_START_EDITING_NICKNAME" });
+    importDefault(709).dispatch({ type: "GUILD_SETTINGS_MODAL_MEMBERS_START_EDITING_NICKNAME" });
   },
-  changeNickname(guildId, userId, nick) {
-    const _require = userId;
-    if (null == userId) {
+  changeNickname(guildId, outer1_1, nick) {
+    const _require = outer1_1;
+    if (null == outer1_1) {
       let GUILD_MEMBER_NICKResult = closure_3.GUILD_MEMBER_NICK(guildId, closure_4);
     } else {
-      GUILD_MEMBER_NICKResult = closure_3.GUILD_MEMBER(guildId, userId);
+      GUILD_MEMBER_NICKResult = closure_3.GUILD_MEMBER(guildId, outer1_1);
     }
-    let obj = importDefault(686);
+    let obj = importDefault(709);
     obj.dispatch({ type: "GUILD_SETTINGS_MODAL_MEMBERS_CHANGE_NICKNAME" });
-    const HTTP = _require(507).HTTP;
-    obj = { url: GUILD_MEMBER_NICKResult };
+    const HTTP = _require(530).HTTP;
+    obj = { url: GUILD_MEMBER_NICKResult, body: obj, oldFormErrors: true, rejectWithError: null };
     obj = { nick };
-    obj.body = obj;
-    obj.oldFormErrors = true;
-    obj.rejectWithError = _require(507).rejectWithMigratedError();
-    const obj4 = _require(507);
+    obj[3] = _require(530).rejectWithMigratedError();
+    const obj4 = _require(530);
     HTTP.patch(obj).then(() => {
-      outer1_1(outer1_2[1]).dispatch({ type: "GUILD_SETTINGS_MODAL_MEMBERS_CHANGE_NICKNAME_SUCCESS" });
+      callback(table[1]).dispatch({ type: "GUILD_SETTINGS_MODAL_MEMBERS_CHANGE_NICKNAME_SUCCESS" });
     }, (status) => {
-      const intl = userId(outer1_2[3]).intl;
-      let stringResult = intl.string(userId(outer1_2[3]).t["5LO/Ss"]);
-      if (null != userId) {
-        const intl2 = userId(outer1_2[3]).intl;
-        stringResult = intl2.string(userId(outer1_2[3]).t.rJfW6S);
+      const intl = outer1_1(outer1_2[3]).intl;
+      let stringResult = intl.string(outer1_1(outer1_2[3]).t["5LO/Ss"]);
+      if (null != outer1_1) {
+        const intl2 = tmp(tmp2[3]).intl;
+        stringResult = intl2.string(tmp(tmp2[3]).t.rJfW6S);
       }
       if (403 === status.status) {
-        const intl3 = userId(outer1_2[3]).intl;
-        stringResult = intl3.formatToMarkdownString(userId(outer1_2[3]).t.Izf9jO, {});
+        const intl3 = tmp(tmp2[3]).intl;
+        stringResult = intl3.formatToMarkdownString(tmp(tmp2[3]).t.Izf9jO, {});
       }
-      let obj = outer1_1(outer1_2[1]);
-      obj = { type: "GUILD_SETTINGS_MODAL_MEMBERS_CHANGE_NICKNAME_FAILURE", error: stringResult };
-      obj.dispatch(obj);
+      outer1_1(outer1_2[1]).dispatch({ type: "GUILD_SETTINGS_MODAL_MEMBERS_CHANGE_NICKNAME_FAILURE", error: stringResult });
     });
   }
 };

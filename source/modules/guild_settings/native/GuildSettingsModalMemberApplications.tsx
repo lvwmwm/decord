@@ -1,52 +1,51 @@
-// Module ID: 15414
-// Function ID: 117375
+// Module ID: 15447
+// Function ID: 15448
 // Name: memoResult1
-// Dependencies: [31, 27, 5696, 33, 4165, 689, 4004, 4161, 15415, 1392, 5198, 1273, 1557, 15420, 3985, 15421, 566, 1212, 6655, 8345, 5483, 2]
+// Dependencies: [19, 17, 5714, 21, 4189, 712, 4028, 4185, 15448, 1416, 5220, 1297, 1581, 15453, 4009, 15454, 589, 1236, 6676, 8369, 5501, 2]
 
-// Module 15414 (memoResult1)
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 15447 (memoResult1)
+import importAllResult from "getNoResultsSource";
+import get_ActivityIndicator from "getSystemLocale";
+import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
-let closure_9;
+let c4;
+let c5;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ ActivityIndicator: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-let obj = {};
-obj = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, flex: 1, marginTop: 16 };
-obj.containerInner = obj;
-obj.spinnerContainer = { padding: 32 };
-obj.footerSpinner = { paddingVertical: 16 };
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND };
-obj.spinner = _createForOfIteratorHelperLoose;
-let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+({ ActivityIndicator: c4, View: c5 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll, Fragment: c9 } = jsxProd);
+let obj = { containerInner: null, spinnerContainer: null, footerSpinner: null, spinner: null };
+obj = { paddingHorizontal: require("Themes").space.PX_12, flex: 1, marginTop: 16 };
+obj[0] = obj;
+obj[1] = { padding: 32 };
+obj[2] = { paddingVertical: 16 };
+createCacheKey = { color: require("Themes").colors.TEXT_BRAND };
+obj[3] = createCacheKey;
+let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((user) => {
   user = user.user;
-  let obj = importDefault(4004);
+  let obj = importDefault(4028);
   const globalName = obj.getGlobalName(user);
-  obj = {};
-  obj = { variant: "text-md/semibold" };
   let username = globalName;
-  if (null == globalName) {
+  if (globalName == null) {
     username = user.username;
   }
-  obj.children = username;
-  const items = [callback(require(4161) /* Text */.Text, obj), ];
-  let tmp5 = null != globalName;
-  if (tmp5) {
-    const obj1 = { variant: "text-xs/medium", children: user.username };
-    tmp5 = callback(require(4161) /* Text */.Text, obj1);
+  const children = [closure_7(require(4185) /* Text */.Text, { variant: "text-md/semibold", children: username }), ];
+  let tmp5Result = null != globalName;
+  if (tmp5Result) {
+    obj = { variant: "text-xs/medium", children: null };
+    obj[1] = user.username;
+    tmp5Result = tmp5(require(4185) /* Text */.Text, obj);
   }
-  items[1] = tmp5;
-  obj.children = items;
-  return closure_8(closure_5, obj);
+  children[1] = tmp5Result;
+  return closure_8(closure_5, { children });
 });
+const unpackModuleId = memoResult;
 let closure_12 = importAllResult.memo((joinRequest) => {
   let end;
   let start;
@@ -62,18 +61,21 @@ let closure_12 = importAllResult.memo((joinRequest) => {
     } else {
       let userAvatarSource = null;
       if (null != user) {
-        let obj = importDefault(1392);
+        let obj = importDefault(1416);
         userAvatarSource = obj.getUserAvatarSource(user);
       }
-      obj = { arrow: true };
-      obj = { source: userAvatarSource, size: joinRequest(1273).AvatarSizes.SMALL };
-      obj.icon = callback(joinRequest(1273).Avatar, obj);
-      const obj1 = { user };
-      obj.label = callback(closure_11, obj1);
-      obj.onPress = tmp;
-      obj.start = start;
-      obj.end = end;
-      return callback(joinRequest(5198).TableRow, obj);
+      obj = { arrow: true, icon: null, label: null, onPress: null, start: null, end: null };
+      obj = { source: null, size: null };
+      obj[0] = userAvatarSource;
+      obj[1] = joinRequest(1297).AvatarSizes.SMALL;
+      obj[1] = callback(joinRequest(1297).Avatar, obj);
+      const obj1 = { user: null };
+      obj1[0] = user;
+      obj[2] = callback(closure_11, obj1);
+      obj[3] = tmp;
+      obj[4] = start;
+      obj[5] = end;
+      return callback(joinRequest(5220).TableRow, obj);
     }
   }
 });
@@ -81,18 +83,23 @@ const memoResult1 = importAllResult.memo(function GuildSettingsModalMemberApplic
   let applicationStatus;
   let guildId;
   ({ guildId, applicationStatus } = arg0);
+  let importDefault;
+  let guildJoinRequests;
+  let fetchNextPage;
+  let stateFromStores;
+  let callback;
   let tmp = callback2();
-  const importDefault = tmp;
+  importDefault = tmp;
   let obj = applicationStatus(guildJoinRequests[13]);
   obj = { guildId, applicationStatus, sortOrder: applicationStatus(guildJoinRequests[14]).GuildJoinRequestSortOrders.TIMESTAMP_DESC };
   guildJoinRequests = obj.useSortedMemberApplications(obj).guildJoinRequests;
   let obj2 = applicationStatus(guildJoinRequests[15]);
-  const fetchNextPage = obj2.usePaginatedMemberApplications({ guildId, guildJoinRequests }).fetchNextPage;
+  fetchNextPage = obj2.usePaginatedMemberApplications({ guildId, guildJoinRequests }).fetchNextPage;
   let obj3 = applicationStatus(guildJoinRequests[16]);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj3.useStateFromStores(items, () => outer1_6.isFetching());
+  const items = [updateSubmittedGuildJoinRequestTotal];
+  stateFromStores = obj3.useStateFromStores(items, () => fetching.isFetching());
   const items1 = [applicationStatus, fetchNextPage];
-  const callback = fetchNextPage.useCallback(() => {
+  callback = fetchNextPage.useCallback(() => {
     fetchNextPage(applicationStatus(guildJoinRequests[14]).GuildJoinRequestSortOrders.TIMESTAMP_DESC, applicationStatus);
   }, items1);
   const items2 = [callback, guildJoinRequests.length];
@@ -109,50 +116,60 @@ const memoResult1 = importAllResult.memo(function GuildSettingsModalMemberApplic
   callback2 = fetchNextPage.useCallback((joinRequestId) => joinRequestId.joinRequestId, []);
   if (stateFromStores) {
     if (0 === guildJoinRequests.length) {
-      obj = { style: tmp.spinnerContainer };
-      const obj1 = { size: "large", color: tmp.spinner.color };
-      obj.children = callback(stateFromStores, obj1);
+      obj = { style: null, children: null };
+      obj[0] = tmp.spinnerContainer;
+      const obj1 = { size: "large", color: null };
+      obj1[1] = tmp.spinner.color;
+      obj[1] = callback(stateFromStores, obj1);
       return callback(callback, obj);
     }
   }
   if (applicationStatus(guildJoinRequests[14]).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
-    const intl2 = applicationStatus(guildJoinRequests[17]).intl;
-    let stringResult = intl2.string(applicationStatus(guildJoinRequests[17]).t["/wqiSv"]);
-  } else if (applicationStatus(guildJoinRequests[14]).GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
-    const intl = applicationStatus(guildJoinRequests[17]).intl;
-    stringResult = intl.string(applicationStatus(guildJoinRequests[17]).t.bv82GS);
-  } else if (applicationStatus(guildJoinRequests[14]).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
-    const intl3 = applicationStatus(guildJoinRequests[17]).intl;
-    stringResult = intl3.string(applicationStatus(guildJoinRequests[17]).t["7YSJ6f"]);
+    const intl2 = tmp4(tmp3[17]).intl;
+    let stringResult = intl2.string(tmp4(tmp3[17]).t["/wqiSv"]);
+  } else if (tmp4(tmp3[14]).GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
+    const intl = tmp4(tmp3[17]).intl;
+    stringResult = intl.string(tmp4(tmp3[17]).t.bv82GS);
+  } else if (tmp4(tmp3[14]).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+    const intl3 = tmp4(tmp3[17]).intl;
+    stringResult = intl3.string(tmp4(tmp3[17]).t["7YSJ6f"]);
   }
-  obj2 = {};
-  obj3 = { style: tmp.containerInner };
+  obj2 = { style: tmp.containerInner, children: null };
   if (0 !== guildJoinRequests.length) {
-    const obj4 = { keyExtractor: callback2, data: guildJoinRequests, renderItem: callback1 };
-    const obj5 = { paddingBottom: importDefault(guildJoinRequests[12])().bottom + importDefault(guildJoinRequests[5]).space.PX_16 };
-    obj4.contentContainerStyle = obj5;
-    obj4.onEndReached = callback;
-    obj4.ListFooterComponent = function ListFooterComponent() {
+    obj3 = { keyExtractor: null, data: null, renderItem: null, contentContainerStyle: null, onEndReached: null, ListFooterComponent: null };
+    obj3[0] = callback2;
+    obj3[1] = guildJoinRequests;
+    obj3[2] = callback1;
+    const obj4 = { paddingBottom: null };
+    obj4[0] = importDefault(guildJoinRequests[12])().bottom + importDefault(tmp3[5]).space.PX_16;
+    obj3[3] = obj4;
+    obj3[4] = callback;
+    obj3[5] = function ListFooterComponent() {
       let tmp = null;
       if (stateFromStores) {
-        let obj = { style: tmp.footerSpinner };
-        obj = { size: "small", color: tmp.spinner.color };
-        obj.children = outer1_7(stateFromStores, obj);
+        let obj = { style: null, children: null };
+        obj[0] = _undefined.footerSpinner;
+        obj = { size: "small", color: null };
+        obj[1] = _undefined.spinner.color;
+        obj[1] = outer1_7(stateFromStores, obj);
         tmp = outer1_7(callback, obj);
       }
       return tmp;
     };
-    let tmp21 = callback(applicationStatus(guildJoinRequests[18]).FlashList, obj4);
+    let tmp13Result = tmp13(tmp4(tmp3[18]).FlashList, obj3);
   } else {
-    const obj6 = { Illustration: applicationStatus(guildJoinRequests[19]).NoResults, body: stringResult };
-    tmp21 = callback(applicationStatus(guildJoinRequests[11]).EmptyState, obj6);
+    const obj5 = { Illustration: null, body: null };
+    obj5[0] = tmp4(tmp3[19]).NoResults;
+    obj5[1] = stringResult;
+    tmp13Result = tmp13(tmp4(tmp3[11]).EmptyState, obj5);
   }
-  obj3.children = tmp21;
-  const items4 = [callback(callback, obj3), callback(applicationStatus(guildJoinRequests[20]).NavScrim, {})];
-  obj2.children = items4;
-  return closure_8(closure_9, obj2);
+  const obj6 = { children: null };
+  obj2[1] = tmp13Result;
+  const items4 = [callback(callback, obj2), callback(applicationStatus(guildJoinRequests[20]).NavScrim, {})];
+  obj6[0] = items4;
+  return closure_8(closure_9, obj6);
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalMemberApplications.tsx");
+const result = require("updateSubmittedGuildJoinRequestTotal").fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalMemberApplications.tsx");
 
 export default memoResult1;
 export const MemberApplicationUser = memoResult;

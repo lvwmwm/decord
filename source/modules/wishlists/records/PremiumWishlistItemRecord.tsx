@@ -1,33 +1,68 @@
-// Module ID: 8654
-// Function ID: 68574
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4204, 8652, 653, 2]
+// Module ID: 8678
+// Function ID: 8679
+// Name: fromServer
+// Dependencies: [4228, 8676, 676, 2]
 // Exports: isPremiumWishlistItemRecord
 
-// Module 8654 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import ME from "ME";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 8678 (fromServer)
+import createFromServer from "createFromServer";
+import "fromServer";
 import { SKUProductLines } from "ME";
-import tmp3 from "_isNativeReflectConstruct";
-import importDefaultResult from "_isNativeReflectConstruct";
 
-function _isNativeReflectConstruct() {
-  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return _isNativeReflectConstruct;
-  }
-  const result = _isNativeReflectConstruct();
+let prototype;
+prototype = function PremiumWishlistItemRecord(sku) {
+  const tmp = new prototype(sku, new.target, new.target);
+  // ThrowIfThisInitialized (0x7c)
+  tmp.skuProductLine = SKUProductLines.PREMIUM;
+  tmp.sku = sku.sku;
+  return tmp;
+}.prototype;
+class prototype extends tmp2 {
 }
-let closure_7 = tmp3;
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/wishlists/records/PremiumWishlistItemRecord.tsx");
+prototype["fromServer"] = function fromServer(sku) {
+  const fromServer = createFromServer.createFromServer(sku.sku);
+  if (null == fromServer) {
+    const _Error = Error;
+    const error = new Error("SKU not found");
+    throw error;
+  } else {
+    const obj = {};
+    const merged = Object.assign(sku);
+    obj.sku = fromServer;
+    if (typeof prototype !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    const tmp11 = new prototype(obj, sku, prototype, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    tmp11.skuProductLine = SKUProductLines.PREMIUM;
+    tmp11.sku = obj.sku;
+    return tmp11;
+  }
+};
+prototype["fromSKU"] = function fromSKU(id) {
+  let tmp = null;
+  if (null != id) {
+    const obj = { sku_id: null, sku_product_line: null, sku_name: null, sku: null };
+    obj[0] = id.id;
+    obj[1] = SKUProductLines.PREMIUM;
+    const name = id.name;
+    obj[2] = name;
+    obj[3] = id;
+    if (typeof prototype !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    const tmp9 = new prototype(obj, name, prototype, new.target, SKUProductLines);
+    // ThrowIfThisInitialized (0x7c)
+    tmp9.skuProductLine = SKUProductLines.PREMIUM;
+    tmp9.sku = obj.sku;
+    tmp = tmp9;
+    const tmp2 = prototype;
+  }
+  return tmp;
+};
+const result = require("ME").fileFinishedImporting("modules/wishlists/records/PremiumWishlistItemRecord.tsx");
 
-export default tmp3;
+export default prototype;
 export const isPremiumWishlistItemRecord = function isPremiumWishlistItemRecord(arg0) {
-  return arg0 instanceof closure_7;
+  return arg0 instanceof prototype;
 };

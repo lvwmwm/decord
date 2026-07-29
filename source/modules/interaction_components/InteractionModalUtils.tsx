@@ -1,285 +1,2370 @@
-// Module ID: 16182
-// Function ID: 125226
-// Name: useApplicationInfo
-// Dependencies: [5, 57, 31, 1194, 1348, 4503, 1918, 3982, 4502, 13439, 7869, 653, 7868, 1882, 1392, 5671, 12595, 566, 5485, 21, 686, 6168, 1212, 44, 4388, 6134, 7873, 4701, 507, 664, 2]
+// Module ID: 16217
+// Function ID: 16218
+// Name: getData
+// Dependencies: [5, 32, 19, 1218, 1372, 4526, 1942, 4006, 4525, 13462, 7892, 676, 7891, 1906, 1416, 5689, 12617, 589, 5503, 11, 709, 6186, 1236, 38, 4411, 6153, 7896, 4723, 530, 687, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 16182 (useApplicationInfo)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 16217 (getData)
+import handleChanged from "handleChanged";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import { DraftType } from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import { InteractionModalState } from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
+import DISCORD_EPOCH from "DISCORD_EPOCH";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import { DraftType } from "handleChanged";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import handleConnectionOpen from "handleConnectionOpen";
+import map from "map";
+import getModalState from "getModalState";
+import { InteractionModalState } from "getModalState";
+import getInteractionComponentStates from "getInteractionComponentStates";
 import { Endpoints } from "ME";
 
 const require = arg1;
-function useApplicationInfo(application) {
-  let closure_0 = application;
-  const items = [, , , ];
-  ({ id: arr[0], icon: arr[1], name: arr[2], bot: arr[3] } = application);
-  return React.useMemo(() => {
-    const guildId = outer1_10.getGuildId();
-    let member;
-    if (null != guildId) {
-      if (null != application.bot) {
-        member = outer1_9.getMember(guildId, application.bot.id);
-      }
-    }
-    let obj = {};
-    obj = { id: application.id, icon: application.icon, botIconFirst: true };
-    let bot;
-    if (null != member) {
-      bot = application.bot;
-    }
-    obj.bot = bot;
-    obj.guildMember = member;
-    obj.applicationIconURL = outer1_1(outer1_2[14]).getApplicationIconURL(obj);
-    let nick;
-    if (null != member) {
-      nick = member.nick;
-    }
-    if (null != nick) {
-      let name = member.nick;
-    } else if (null != application.bot) {
-      name = application.bot.username;
-    } else {
-      name = application.name;
-    }
-    obj.applicationName = name;
-    obj.applicationBaseUrl = outer1_1(outer1_2[15])(application.id);
-    return obj;
-  }, items);
-}
 function getData(arg0, arr) {
   let closure_0 = arg0;
   let closure_1 = arg2;
   return arr.map((type) => {
     type = type.type;
-    if (callback(outer1_2[13]).ComponentType.ACTION_ROW === type) {
-      let obj = { type: type.type, components: outer1_17(callback, type.components, callback2) };
+    if (outer1_0(outer1_2[13]).ComponentType.ACTION_ROW === type) {
+      let obj = { type: null, components: null };
+      obj[0] = type.type;
+      let components = type.components;
+      obj[1] = components.map((type) => {
+        type = type.type;
+        if (outer1_0(outer1_2[13]).ComponentType.ACTION_ROW === type) {
+          let obj = { type: null, components: null };
+          obj[0] = type.type;
+          let components = type.components;
+          obj[1] = components.map((type) => {
+            type = type.type;
+            if (outer1_0(outer1_2[13]).ComponentType.ACTION_ROW === type) {
+              let obj = { type: null, components: null };
+              obj[0] = type.type;
+              let components = type.components;
+              obj[1] = components.map((type) => {
+                type = type.type;
+                if (outer1_0(outer1_2[13]).ComponentType.ACTION_ROW === type) {
+                  let obj = { type: null, components: null };
+                  obj[0] = type.type;
+                  let components = type.components;
+                  obj[1] = components.map(() => { ... });
+                  return obj;
+                } else if (tmp(tmp2[13]).ComponentType.TEXT_INPUT === type) {
+                  let iter3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                  obj = { type: null, custom_id: null, value: null };
+                  ({ type: obj9[0], customId: obj9[1] } = type);
+                  type = undefined;
+                  if (iter3 != null) {
+                    type = iter3.type;
+                  }
+                  let value = null;
+                  if (type === type.type) {
+                    value = iter3.value;
+                  }
+                  obj[2] = value;
+                  return obj;
+                } else if (tmp(tmp2[13]).ComponentType.FILE_UPLOAD === type) {
+                  let interactionComponentState = outer1_14.getInteractionComponentState(closure_0, type.id);
+                  let type1;
+                  if (interactionComponentState != null) {
+                    type1 = interactionComponentState.type;
+                  }
+                  let uploadIds = null;
+                  if (type1 === type.type) {
+                    uploadIds = interactionComponentState.uploadIds;
+                  }
+                  let obj1 = { type: null, custom_id: null, values: null };
+                  ({ type: obj8[0], customId: obj8[1] } = type);
+                  let mapped;
+                  if (uploadIds != null) {
+                    mapped = uploadIds.map(() => { ... });
+                  }
+                  if (mapped == null) {
+                    mapped = null;
+                  }
+                  obj1[2] = mapped;
+                  return obj1;
+                } else if (tmp(tmp2[13]).ComponentType.STRING_SELECT === type) {
+                  let interactionComponentState1 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                  let obj2 = { type: null, custom_id: null, values: null };
+                  ({ type: obj7[0], customId: obj7[1] } = type);
+                  let type2;
+                  if (interactionComponentState1 != null) {
+                    type2 = interactionComponentState1.type;
+                  }
+                  let values = null;
+                  if (type2 === type.type) {
+                    values = interactionComponentState1.values;
+                  }
+                  obj2[2] = values;
+                  return obj2;
+                } else {
+                  if (tmp(tmp2[13]).ComponentType.USER_SELECT !== type) {
+                    if (tmp(tmp2[13]).ComponentType.ROLE_SELECT !== type) {
+                      if (tmp(tmp2[13]).ComponentType.MENTIONABLE_SELECT !== type) {
+                        if (tmp(tmp2[13]).ComponentType.CHANNEL_SELECT !== type) {
+                          if (tmp(tmp2[13]).ComponentType.TEXT_DISPLAY === type) {
+                            let obj3 = { type: null };
+                            obj3[0] = type.type;
+                            return obj3;
+                          } else if (tmp(tmp2[13]).ComponentType.LABEL === type) {
+                            let obj4 = { type: null, component: null };
+                            obj4[0] = type.type;
+                            let items = [type.component];
+                            obj4[1] = items.map(() => { ... })[0];
+                            return obj4;
+                          } else if (tmp(tmp2[13]).ComponentType.RADIO_GROUP === type) {
+                            let iter2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                            let obj5 = { type: null, custom_id: null, value: null };
+                            ({ type: obj3[0], customId: obj3[1] } = type);
+                            let type3;
+                            if (iter2 != null) {
+                              type3 = iter2.type;
+                            }
+                            value = null;
+                            if (type3 === type.type) {
+                              value = iter2.value;
+                            }
+                            obj5[2] = value;
+                            return obj5;
+                          } else if (tmp(tmp2[13]).ComponentType.CHECKBOX_GROUP === type) {
+                            let interactionComponentState2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                            let obj6 = { type: null, custom_id: null, values: null };
+                            ({ type: obj2[0], customId: obj2[1] } = type);
+                            let type4;
+                            if (interactionComponentState2 != null) {
+                              type4 = interactionComponentState2.type;
+                            }
+                            values = null;
+                            if (type4 === type.type) {
+                              values = interactionComponentState2.values;
+                            }
+                            obj6[2] = values;
+                            return obj6;
+                          } else if (tmp(tmp2[13]).ComponentType.CHECKBOX === type) {
+                            let iter = outer1_14.getInteractionComponentState(closure_0, type.id);
+                            obj = { type: null, custom_id: null, value: null };
+                            ({ type: obj[0], customId: obj[1] } = type);
+                            let type5;
+                            if (iter != null) {
+                              type5 = iter.type;
+                            }
+                            obj[2] = type5 === type.type && iter.value;
+                            return obj;
+                          } else {
+                            outer1_1(tmp2[23])(false, "unreachable");
+                          }
+                        }
+                      }
+                    }
+                  }
+                  let interactionComponentState3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                  let obj7 = { type: null, custom_id: null, values: null };
+                  ({ type: obj6[0], customId: obj6[1] } = type);
+                  let type6;
+                  if (interactionComponentState3 != null) {
+                    type6 = interactionComponentState3.type;
+                  }
+                  let mapped1 = null;
+                  if (type6 === type.type) {
+                    let selectedOptions = interactionComponentState3.selectedOptions;
+                    mapped1 = selectedOptions.map(() => { ... });
+                  }
+                  obj7[2] = mapped1;
+                  return obj7;
+                }
+              });
+              return obj;
+            } else if (tmp(tmp2[13]).ComponentType.TEXT_INPUT === type) {
+              let iter3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+              obj = { type: null, custom_id: null, value: null };
+              ({ type: obj9[0], customId: obj9[1] } = type);
+              type = undefined;
+              if (iter3 != null) {
+                type = iter3.type;
+              }
+              let value = null;
+              if (type === type.type) {
+                value = iter3.value;
+              }
+              obj[2] = value;
+              return obj;
+            } else if (tmp(tmp2[13]).ComponentType.FILE_UPLOAD === type) {
+              let interactionComponentState = outer1_14.getInteractionComponentState(closure_0, type.id);
+              let type1;
+              if (interactionComponentState != null) {
+                type1 = interactionComponentState.type;
+              }
+              let uploadIds = null;
+              if (type1 === type.type) {
+                uploadIds = interactionComponentState.uploadIds;
+              }
+              let obj1 = { type: null, custom_id: null, values: null };
+              ({ type: obj8[0], customId: obj8[1] } = type);
+              let mapped;
+              if (uploadIds != null) {
+                mapped = uploadIds.map((arg0) => {
+                  let closure_0 = arg0;
+                  uploads = uploads.uploads;
+                  return uploads.findIndex(() => { ... });
+                });
+              }
+              if (mapped == null) {
+                mapped = null;
+              }
+              obj1[2] = mapped;
+              return obj1;
+            } else if (tmp(tmp2[13]).ComponentType.STRING_SELECT === type) {
+              let interactionComponentState1 = outer1_14.getInteractionComponentState(closure_0, type.id);
+              let obj2 = { type: null, custom_id: null, values: null };
+              ({ type: obj7[0], customId: obj7[1] } = type);
+              let type2;
+              if (interactionComponentState1 != null) {
+                type2 = interactionComponentState1.type;
+              }
+              let values = null;
+              if (type2 === type.type) {
+                values = interactionComponentState1.values;
+              }
+              obj2[2] = values;
+              return obj2;
+            } else {
+              if (tmp(tmp2[13]).ComponentType.USER_SELECT !== type) {
+                if (tmp(tmp2[13]).ComponentType.ROLE_SELECT !== type) {
+                  if (tmp(tmp2[13]).ComponentType.MENTIONABLE_SELECT !== type) {
+                    if (tmp(tmp2[13]).ComponentType.CHANNEL_SELECT !== type) {
+                      if (tmp(tmp2[13]).ComponentType.TEXT_DISPLAY === type) {
+                        let obj3 = { type: null };
+                        obj3[0] = type.type;
+                        return obj3;
+                      } else if (tmp(tmp2[13]).ComponentType.LABEL === type) {
+                        let obj4 = { type: null, component: null };
+                        obj4[0] = type.type;
+                        let items = [type.component];
+                        obj4[1] = items.map((type) => {
+                          type = type.type;
+                          if (outer1_0(outer1_2[13]).ComponentType.ACTION_ROW === type) {
+                            let obj = { type: null, components: null };
+                            obj[0] = type.type;
+                            let components = type.components;
+                            obj[1] = components.map(() => { ... });
+                            return obj;
+                          } else if (tmp(tmp2[13]).ComponentType.TEXT_INPUT === type) {
+                            let iter3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                            obj = { type: null, custom_id: null, value: null };
+                            ({ type: obj9[0], customId: obj9[1] } = type);
+                            type = undefined;
+                            if (iter3 != null) {
+                              type = iter3.type;
+                            }
+                            let value = null;
+                            if (type === type.type) {
+                              value = iter3.value;
+                            }
+                            obj[2] = value;
+                            return obj;
+                          } else if (tmp(tmp2[13]).ComponentType.FILE_UPLOAD === type) {
+                            let interactionComponentState = outer1_14.getInteractionComponentState(closure_0, type.id);
+                            let type1;
+                            if (interactionComponentState != null) {
+                              type1 = interactionComponentState.type;
+                            }
+                            let uploadIds = null;
+                            if (type1 === type.type) {
+                              uploadIds = interactionComponentState.uploadIds;
+                            }
+                            let obj1 = { type: null, custom_id: null, values: null };
+                            ({ type: obj8[0], customId: obj8[1] } = type);
+                            let mapped;
+                            if (uploadIds != null) {
+                              mapped = uploadIds.map(() => { ... });
+                            }
+                            if (mapped == null) {
+                              mapped = null;
+                            }
+                            obj1[2] = mapped;
+                            return obj1;
+                          } else if (tmp(tmp2[13]).ComponentType.STRING_SELECT === type) {
+                            let interactionComponentState1 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                            let obj2 = { type: null, custom_id: null, values: null };
+                            ({ type: obj7[0], customId: obj7[1] } = type);
+                            let type2;
+                            if (interactionComponentState1 != null) {
+                              type2 = interactionComponentState1.type;
+                            }
+                            let values = null;
+                            if (type2 === type.type) {
+                              values = interactionComponentState1.values;
+                            }
+                            obj2[2] = values;
+                            return obj2;
+                          } else {
+                            if (tmp(tmp2[13]).ComponentType.USER_SELECT !== type) {
+                              if (tmp(tmp2[13]).ComponentType.ROLE_SELECT !== type) {
+                                if (tmp(tmp2[13]).ComponentType.MENTIONABLE_SELECT !== type) {
+                                  if (tmp(tmp2[13]).ComponentType.CHANNEL_SELECT !== type) {
+                                    if (tmp(tmp2[13]).ComponentType.TEXT_DISPLAY === type) {
+                                      let obj3 = { type: null };
+                                      obj3[0] = type.type;
+                                      return obj3;
+                                    } else if (tmp(tmp2[13]).ComponentType.LABEL === type) {
+                                      let obj4 = { type: null, component: null };
+                                      obj4[0] = type.type;
+                                      let items = [type.component];
+                                      obj4[1] = items.map(() => { ... })[0];
+                                      return obj4;
+                                    } else if (tmp(tmp2[13]).ComponentType.RADIO_GROUP === type) {
+                                      let iter2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      let obj5 = { type: null, custom_id: null, value: null };
+                                      ({ type: obj3[0], customId: obj3[1] } = type);
+                                      let type3;
+                                      if (iter2 != null) {
+                                        type3 = iter2.type;
+                                      }
+                                      value = null;
+                                      if (type3 === type.type) {
+                                        value = iter2.value;
+                                      }
+                                      obj5[2] = value;
+                                      return obj5;
+                                    } else if (tmp(tmp2[13]).ComponentType.CHECKBOX_GROUP === type) {
+                                      let interactionComponentState2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      let obj6 = { type: null, custom_id: null, values: null };
+                                      ({ type: obj2[0], customId: obj2[1] } = type);
+                                      let type4;
+                                      if (interactionComponentState2 != null) {
+                                        type4 = interactionComponentState2.type;
+                                      }
+                                      values = null;
+                                      if (type4 === type.type) {
+                                        values = interactionComponentState2.values;
+                                      }
+                                      obj6[2] = values;
+                                      return obj6;
+                                    } else if (tmp(tmp2[13]).ComponentType.CHECKBOX === type) {
+                                      let iter = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      obj = { type: null, custom_id: null, value: null };
+                                      ({ type: obj[0], customId: obj[1] } = type);
+                                      let type5;
+                                      if (iter != null) {
+                                        type5 = iter.type;
+                                      }
+                                      obj[2] = type5 === type.type && iter.value;
+                                      return obj;
+                                    } else {
+                                      outer1_1(tmp2[23])(false, "unreachable");
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            let interactionComponentState3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                            let obj7 = { type: null, custom_id: null, values: null };
+                            ({ type: obj6[0], customId: obj6[1] } = type);
+                            let type6;
+                            if (interactionComponentState3 != null) {
+                              type6 = interactionComponentState3.type;
+                            }
+                            let mapped1 = null;
+                            if (type6 === type.type) {
+                              let selectedOptions = interactionComponentState3.selectedOptions;
+                              mapped1 = selectedOptions.map(() => { ... });
+                            }
+                            obj7[2] = mapped1;
+                            return obj7;
+                          }
+                        })[0];
+                        return obj4;
+                      } else if (tmp(tmp2[13]).ComponentType.RADIO_GROUP === type) {
+                        let iter2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                        let obj5 = { type: null, custom_id: null, value: null };
+                        ({ type: obj3[0], customId: obj3[1] } = type);
+                        let type3;
+                        if (iter2 != null) {
+                          type3 = iter2.type;
+                        }
+                        value = null;
+                        if (type3 === type.type) {
+                          value = iter2.value;
+                        }
+                        obj5[2] = value;
+                        return obj5;
+                      } else if (tmp(tmp2[13]).ComponentType.CHECKBOX_GROUP === type) {
+                        let interactionComponentState2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                        let obj6 = { type: null, custom_id: null, values: null };
+                        ({ type: obj2[0], customId: obj2[1] } = type);
+                        let type4;
+                        if (interactionComponentState2 != null) {
+                          type4 = interactionComponentState2.type;
+                        }
+                        values = null;
+                        if (type4 === type.type) {
+                          values = interactionComponentState2.values;
+                        }
+                        obj6[2] = values;
+                        return obj6;
+                      } else if (tmp(tmp2[13]).ComponentType.CHECKBOX === type) {
+                        let iter = outer1_14.getInteractionComponentState(closure_0, type.id);
+                        obj = { type: null, custom_id: null, value: null };
+                        ({ type: obj[0], customId: obj[1] } = type);
+                        let type5;
+                        if (iter != null) {
+                          type5 = iter.type;
+                        }
+                        obj[2] = type5 === type.type && iter.value;
+                        return obj;
+                      } else {
+                        outer1_1(tmp2[23])(false, "unreachable");
+                      }
+                    }
+                  }
+                }
+              }
+              let interactionComponentState3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+              let obj7 = { type: null, custom_id: null, values: null };
+              ({ type: obj6[0], customId: obj6[1] } = type);
+              let type6;
+              if (interactionComponentState3 != null) {
+                type6 = interactionComponentState3.type;
+              }
+              let mapped1 = null;
+              if (type6 === type.type) {
+                let selectedOptions = interactionComponentState3.selectedOptions;
+                mapped1 = selectedOptions.map((value) => value.value);
+              }
+              obj7[2] = mapped1;
+              return obj7;
+            }
+          });
+          return obj;
+        } else if (tmp(tmp2[13]).ComponentType.TEXT_INPUT === type) {
+          let iter3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+          obj = { type: null, custom_id: null, value: null };
+          ({ type: obj9[0], customId: obj9[1] } = type);
+          type = undefined;
+          if (iter3 != null) {
+            type = iter3.type;
+          }
+          let value = null;
+          if (type === type.type) {
+            value = iter3.value;
+          }
+          obj[2] = value;
+          return obj;
+        } else if (tmp(tmp2[13]).ComponentType.FILE_UPLOAD === type) {
+          let interactionComponentState = outer1_14.getInteractionComponentState(closure_0, type.id);
+          let type1;
+          if (interactionComponentState != null) {
+            type1 = interactionComponentState.type;
+          }
+          let uploadIds = null;
+          if (type1 === type.type) {
+            uploadIds = interactionComponentState.uploadIds;
+          }
+          let obj1 = { type: null, custom_id: null, values: null };
+          ({ type: obj8[0], customId: obj8[1] } = type);
+          let mapped;
+          if (uploadIds != null) {
+            mapped = uploadIds.map((arg0) => {
+              let closure_0 = arg0;
+              uploads = uploads.uploads;
+              return uploads.findIndex((id) => id.id === closure_0);
+            });
+          }
+          if (mapped == null) {
+            mapped = null;
+          }
+          obj1[2] = mapped;
+          return obj1;
+        } else if (tmp(tmp2[13]).ComponentType.STRING_SELECT === type) {
+          let interactionComponentState1 = outer1_14.getInteractionComponentState(closure_0, type.id);
+          let obj2 = { type: null, custom_id: null, values: null };
+          ({ type: obj7[0], customId: obj7[1] } = type);
+          let type2;
+          if (interactionComponentState1 != null) {
+            type2 = interactionComponentState1.type;
+          }
+          let values = null;
+          if (type2 === type.type) {
+            values = interactionComponentState1.values;
+          }
+          obj2[2] = values;
+          return obj2;
+        } else {
+          if (tmp(tmp2[13]).ComponentType.USER_SELECT !== type) {
+            if (tmp(tmp2[13]).ComponentType.ROLE_SELECT !== type) {
+              if (tmp(tmp2[13]).ComponentType.MENTIONABLE_SELECT !== type) {
+                if (tmp(tmp2[13]).ComponentType.CHANNEL_SELECT !== type) {
+                  if (tmp(tmp2[13]).ComponentType.TEXT_DISPLAY === type) {
+                    let obj3 = { type: null };
+                    obj3[0] = type.type;
+                    return obj3;
+                  } else if (tmp(tmp2[13]).ComponentType.LABEL === type) {
+                    let obj4 = { type: null, component: null };
+                    obj4[0] = type.type;
+                    let items = [type.component];
+                    obj4[1] = items.map((type) => {
+                      type = type.type;
+                      if (outer1_0(outer1_2[13]).ComponentType.ACTION_ROW === type) {
+                        let obj = { type: null, components: null };
+                        obj[0] = type.type;
+                        let components = type.components;
+                        obj[1] = components.map((type) => {
+                          type = type.type;
+                          if (outer1_0(outer1_2[13]).ComponentType.ACTION_ROW === type) {
+                            let obj = { type: null, components: null };
+                            obj[0] = type.type;
+                            let components = type.components;
+                            obj[1] = components.map(() => { ... });
+                            return obj;
+                          } else if (tmp(tmp2[13]).ComponentType.TEXT_INPUT === type) {
+                            let iter3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                            obj = { type: null, custom_id: null, value: null };
+                            ({ type: obj9[0], customId: obj9[1] } = type);
+                            type = undefined;
+                            if (iter3 != null) {
+                              type = iter3.type;
+                            }
+                            let value = null;
+                            if (type === type.type) {
+                              value = iter3.value;
+                            }
+                            obj[2] = value;
+                            return obj;
+                          } else if (tmp(tmp2[13]).ComponentType.FILE_UPLOAD === type) {
+                            let interactionComponentState = outer1_14.getInteractionComponentState(closure_0, type.id);
+                            let type1;
+                            if (interactionComponentState != null) {
+                              type1 = interactionComponentState.type;
+                            }
+                            let uploadIds = null;
+                            if (type1 === type.type) {
+                              uploadIds = interactionComponentState.uploadIds;
+                            }
+                            let obj1 = { type: null, custom_id: null, values: null };
+                            ({ type: obj8[0], customId: obj8[1] } = type);
+                            let mapped;
+                            if (uploadIds != null) {
+                              mapped = uploadIds.map(() => { ... });
+                            }
+                            if (mapped == null) {
+                              mapped = null;
+                            }
+                            obj1[2] = mapped;
+                            return obj1;
+                          } else if (tmp(tmp2[13]).ComponentType.STRING_SELECT === type) {
+                            let interactionComponentState1 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                            let obj2 = { type: null, custom_id: null, values: null };
+                            ({ type: obj7[0], customId: obj7[1] } = type);
+                            let type2;
+                            if (interactionComponentState1 != null) {
+                              type2 = interactionComponentState1.type;
+                            }
+                            let values = null;
+                            if (type2 === type.type) {
+                              values = interactionComponentState1.values;
+                            }
+                            obj2[2] = values;
+                            return obj2;
+                          } else {
+                            if (tmp(tmp2[13]).ComponentType.USER_SELECT !== type) {
+                              if (tmp(tmp2[13]).ComponentType.ROLE_SELECT !== type) {
+                                if (tmp(tmp2[13]).ComponentType.MENTIONABLE_SELECT !== type) {
+                                  if (tmp(tmp2[13]).ComponentType.CHANNEL_SELECT !== type) {
+                                    if (tmp(tmp2[13]).ComponentType.TEXT_DISPLAY === type) {
+                                      let obj3 = { type: null };
+                                      obj3[0] = type.type;
+                                      return obj3;
+                                    } else if (tmp(tmp2[13]).ComponentType.LABEL === type) {
+                                      let obj4 = { type: null, component: null };
+                                      obj4[0] = type.type;
+                                      let items = [type.component];
+                                      obj4[1] = items.map(() => { ... })[0];
+                                      return obj4;
+                                    } else if (tmp(tmp2[13]).ComponentType.RADIO_GROUP === type) {
+                                      let iter2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      let obj5 = { type: null, custom_id: null, value: null };
+                                      ({ type: obj3[0], customId: obj3[1] } = type);
+                                      let type3;
+                                      if (iter2 != null) {
+                                        type3 = iter2.type;
+                                      }
+                                      value = null;
+                                      if (type3 === type.type) {
+                                        value = iter2.value;
+                                      }
+                                      obj5[2] = value;
+                                      return obj5;
+                                    } else if (tmp(tmp2[13]).ComponentType.CHECKBOX_GROUP === type) {
+                                      let interactionComponentState2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      let obj6 = { type: null, custom_id: null, values: null };
+                                      ({ type: obj2[0], customId: obj2[1] } = type);
+                                      let type4;
+                                      if (interactionComponentState2 != null) {
+                                        type4 = interactionComponentState2.type;
+                                      }
+                                      values = null;
+                                      if (type4 === type.type) {
+                                        values = interactionComponentState2.values;
+                                      }
+                                      obj6[2] = values;
+                                      return obj6;
+                                    } else if (tmp(tmp2[13]).ComponentType.CHECKBOX === type) {
+                                      let iter = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      obj = { type: null, custom_id: null, value: null };
+                                      ({ type: obj[0], customId: obj[1] } = type);
+                                      let type5;
+                                      if (iter != null) {
+                                        type5 = iter.type;
+                                      }
+                                      obj[2] = type5 === type.type && iter.value;
+                                      return obj;
+                                    } else {
+                                      outer1_1(tmp2[23])(false, "unreachable");
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            let interactionComponentState3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                            let obj7 = { type: null, custom_id: null, values: null };
+                            ({ type: obj6[0], customId: obj6[1] } = type);
+                            let type6;
+                            if (interactionComponentState3 != null) {
+                              type6 = interactionComponentState3.type;
+                            }
+                            let mapped1 = null;
+                            if (type6 === type.type) {
+                              let selectedOptions = interactionComponentState3.selectedOptions;
+                              mapped1 = selectedOptions.map(() => { ... });
+                            }
+                            obj7[2] = mapped1;
+                            return obj7;
+                          }
+                        });
+                        return obj;
+                      } else if (tmp(tmp2[13]).ComponentType.TEXT_INPUT === type) {
+                        let iter3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                        obj = { type: null, custom_id: null, value: null };
+                        ({ type: obj9[0], customId: obj9[1] } = type);
+                        type = undefined;
+                        if (iter3 != null) {
+                          type = iter3.type;
+                        }
+                        let value = null;
+                        if (type === type.type) {
+                          value = iter3.value;
+                        }
+                        obj[2] = value;
+                        return obj;
+                      } else if (tmp(tmp2[13]).ComponentType.FILE_UPLOAD === type) {
+                        let interactionComponentState = outer1_14.getInteractionComponentState(closure_0, type.id);
+                        let type1;
+                        if (interactionComponentState != null) {
+                          type1 = interactionComponentState.type;
+                        }
+                        let uploadIds = null;
+                        if (type1 === type.type) {
+                          uploadIds = interactionComponentState.uploadIds;
+                        }
+                        let obj1 = { type: null, custom_id: null, values: null };
+                        ({ type: obj8[0], customId: obj8[1] } = type);
+                        let mapped;
+                        if (uploadIds != null) {
+                          mapped = uploadIds.map((arg0) => {
+                            let closure_0 = arg0;
+                            uploads = uploads.uploads;
+                            return uploads.findIndex(() => { ... });
+                          });
+                        }
+                        if (mapped == null) {
+                          mapped = null;
+                        }
+                        obj1[2] = mapped;
+                        return obj1;
+                      } else if (tmp(tmp2[13]).ComponentType.STRING_SELECT === type) {
+                        let interactionComponentState1 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                        let obj2 = { type: null, custom_id: null, values: null };
+                        ({ type: obj7[0], customId: obj7[1] } = type);
+                        let type2;
+                        if (interactionComponentState1 != null) {
+                          type2 = interactionComponentState1.type;
+                        }
+                        let values = null;
+                        if (type2 === type.type) {
+                          values = interactionComponentState1.values;
+                        }
+                        obj2[2] = values;
+                        return obj2;
+                      } else {
+                        if (tmp(tmp2[13]).ComponentType.USER_SELECT !== type) {
+                          if (tmp(tmp2[13]).ComponentType.ROLE_SELECT !== type) {
+                            if (tmp(tmp2[13]).ComponentType.MENTIONABLE_SELECT !== type) {
+                              if (tmp(tmp2[13]).ComponentType.CHANNEL_SELECT !== type) {
+                                if (tmp(tmp2[13]).ComponentType.TEXT_DISPLAY === type) {
+                                  let obj3 = { type: null };
+                                  obj3[0] = type.type;
+                                  return obj3;
+                                } else if (tmp(tmp2[13]).ComponentType.LABEL === type) {
+                                  let obj4 = { type: null, component: null };
+                                  obj4[0] = type.type;
+                                  let items = [type.component];
+                                  obj4[1] = items.map((type) => {
+                                    type = type.type;
+                                    if (outer1_0(outer1_2[13]).ComponentType.ACTION_ROW === type) {
+                                      let obj = { type: null, components: null };
+                                      obj[0] = type.type;
+                                      let components = type.components;
+                                      obj[1] = components.map(() => { ... });
+                                      return obj;
+                                    } else if (tmp(tmp2[13]).ComponentType.TEXT_INPUT === type) {
+                                      let iter3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      obj = { type: null, custom_id: null, value: null };
+                                      ({ type: obj9[0], customId: obj9[1] } = type);
+                                      type = undefined;
+                                      if (iter3 != null) {
+                                        type = iter3.type;
+                                      }
+                                      let value = null;
+                                      if (type === type.type) {
+                                        value = iter3.value;
+                                      }
+                                      obj[2] = value;
+                                      return obj;
+                                    } else if (tmp(tmp2[13]).ComponentType.FILE_UPLOAD === type) {
+                                      let interactionComponentState = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      let type1;
+                                      if (interactionComponentState != null) {
+                                        type1 = interactionComponentState.type;
+                                      }
+                                      let uploadIds = null;
+                                      if (type1 === type.type) {
+                                        uploadIds = interactionComponentState.uploadIds;
+                                      }
+                                      let obj1 = { type: null, custom_id: null, values: null };
+                                      ({ type: obj8[0], customId: obj8[1] } = type);
+                                      let mapped;
+                                      if (uploadIds != null) {
+                                        mapped = uploadIds.map(() => { ... });
+                                      }
+                                      if (mapped == null) {
+                                        mapped = null;
+                                      }
+                                      obj1[2] = mapped;
+                                      return obj1;
+                                    } else if (tmp(tmp2[13]).ComponentType.STRING_SELECT === type) {
+                                      let interactionComponentState1 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      let obj2 = { type: null, custom_id: null, values: null };
+                                      ({ type: obj7[0], customId: obj7[1] } = type);
+                                      let type2;
+                                      if (interactionComponentState1 != null) {
+                                        type2 = interactionComponentState1.type;
+                                      }
+                                      let values = null;
+                                      if (type2 === type.type) {
+                                        values = interactionComponentState1.values;
+                                      }
+                                      obj2[2] = values;
+                                      return obj2;
+                                    } else {
+                                      if (tmp(tmp2[13]).ComponentType.USER_SELECT !== type) {
+                                        if (tmp(tmp2[13]).ComponentType.ROLE_SELECT !== type) {
+                                          if (tmp(tmp2[13]).ComponentType.MENTIONABLE_SELECT !== type) {
+                                            if (tmp(tmp2[13]).ComponentType.CHANNEL_SELECT !== type) {
+                                              if (tmp(tmp2[13]).ComponentType.TEXT_DISPLAY === type) {
+                                                let obj3 = { type: null };
+                                                obj3[0] = type.type;
+                                                return obj3;
+                                              } else if (tmp(tmp2[13]).ComponentType.LABEL === type) {
+                                                let obj4 = { type: null, component: null };
+                                                obj4[0] = type.type;
+                                                let items = [type.component];
+                                                obj4[1] = items.map(() => { ... })[0];
+                                                return obj4;
+                                              } else if (tmp(tmp2[13]).ComponentType.RADIO_GROUP === type) {
+                                                let iter2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                                let obj5 = { type: null, custom_id: null, value: null };
+                                                ({ type: obj3[0], customId: obj3[1] } = type);
+                                                let type3;
+                                                if (iter2 != null) {
+                                                  type3 = iter2.type;
+                                                }
+                                                value = null;
+                                                if (type3 === type.type) {
+                                                  value = iter2.value;
+                                                }
+                                                obj5[2] = value;
+                                                return obj5;
+                                              } else if (tmp(tmp2[13]).ComponentType.CHECKBOX_GROUP === type) {
+                                                let interactionComponentState2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                                let obj6 = { type: null, custom_id: null, values: null };
+                                                ({ type: obj2[0], customId: obj2[1] } = type);
+                                                let type4;
+                                                if (interactionComponentState2 != null) {
+                                                  type4 = interactionComponentState2.type;
+                                                }
+                                                values = null;
+                                                if (type4 === type.type) {
+                                                  values = interactionComponentState2.values;
+                                                }
+                                                obj6[2] = values;
+                                                return obj6;
+                                              } else if (tmp(tmp2[13]).ComponentType.CHECKBOX === type) {
+                                                let iter = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                                obj = { type: null, custom_id: null, value: null };
+                                                ({ type: obj[0], customId: obj[1] } = type);
+                                                let type5;
+                                                if (iter != null) {
+                                                  type5 = iter.type;
+                                                }
+                                                obj[2] = type5 === type.type && iter.value;
+                                                return obj;
+                                              } else {
+                                                outer1_1(tmp2[23])(false, "unreachable");
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                      let interactionComponentState3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      let obj7 = { type: null, custom_id: null, values: null };
+                                      ({ type: obj6[0], customId: obj6[1] } = type);
+                                      let type6;
+                                      if (interactionComponentState3 != null) {
+                                        type6 = interactionComponentState3.type;
+                                      }
+                                      let mapped1 = null;
+                                      if (type6 === type.type) {
+                                        let selectedOptions = interactionComponentState3.selectedOptions;
+                                        mapped1 = selectedOptions.map(() => { ... });
+                                      }
+                                      obj7[2] = mapped1;
+                                      return obj7;
+                                    }
+                                  })[0];
+                                  return obj4;
+                                } else if (tmp(tmp2[13]).ComponentType.RADIO_GROUP === type) {
+                                  let iter2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                  let obj5 = { type: null, custom_id: null, value: null };
+                                  ({ type: obj3[0], customId: obj3[1] } = type);
+                                  let type3;
+                                  if (iter2 != null) {
+                                    type3 = iter2.type;
+                                  }
+                                  value = null;
+                                  if (type3 === type.type) {
+                                    value = iter2.value;
+                                  }
+                                  obj5[2] = value;
+                                  return obj5;
+                                } else if (tmp(tmp2[13]).ComponentType.CHECKBOX_GROUP === type) {
+                                  let interactionComponentState2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                  let obj6 = { type: null, custom_id: null, values: null };
+                                  ({ type: obj2[0], customId: obj2[1] } = type);
+                                  let type4;
+                                  if (interactionComponentState2 != null) {
+                                    type4 = interactionComponentState2.type;
+                                  }
+                                  values = null;
+                                  if (type4 === type.type) {
+                                    values = interactionComponentState2.values;
+                                  }
+                                  obj6[2] = values;
+                                  return obj6;
+                                } else if (tmp(tmp2[13]).ComponentType.CHECKBOX === type) {
+                                  let iter = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                  obj = { type: null, custom_id: null, value: null };
+                                  ({ type: obj[0], customId: obj[1] } = type);
+                                  let type5;
+                                  if (iter != null) {
+                                    type5 = iter.type;
+                                  }
+                                  obj[2] = type5 === type.type && iter.value;
+                                  return obj;
+                                } else {
+                                  outer1_1(tmp2[23])(false, "unreachable");
+                                }
+                              }
+                            }
+                          }
+                        }
+                        let interactionComponentState3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                        let obj7 = { type: null, custom_id: null, values: null };
+                        ({ type: obj6[0], customId: obj6[1] } = type);
+                        let type6;
+                        if (interactionComponentState3 != null) {
+                          type6 = interactionComponentState3.type;
+                        }
+                        let mapped1 = null;
+                        if (type6 === type.type) {
+                          let selectedOptions = interactionComponentState3.selectedOptions;
+                          mapped1 = selectedOptions.map((value) => value.value);
+                        }
+                        obj7[2] = mapped1;
+                        return obj7;
+                      }
+                    })[0];
+                    return obj4;
+                  } else if (tmp(tmp2[13]).ComponentType.RADIO_GROUP === type) {
+                    let iter2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                    let obj5 = { type: null, custom_id: null, value: null };
+                    ({ type: obj3[0], customId: obj3[1] } = type);
+                    let type3;
+                    if (iter2 != null) {
+                      type3 = iter2.type;
+                    }
+                    value = null;
+                    if (type3 === type.type) {
+                      value = iter2.value;
+                    }
+                    obj5[2] = value;
+                    return obj5;
+                  } else if (tmp(tmp2[13]).ComponentType.CHECKBOX_GROUP === type) {
+                    let interactionComponentState2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                    let obj6 = { type: null, custom_id: null, values: null };
+                    ({ type: obj2[0], customId: obj2[1] } = type);
+                    let type4;
+                    if (interactionComponentState2 != null) {
+                      type4 = interactionComponentState2.type;
+                    }
+                    values = null;
+                    if (type4 === type.type) {
+                      values = interactionComponentState2.values;
+                    }
+                    obj6[2] = values;
+                    return obj6;
+                  } else if (tmp(tmp2[13]).ComponentType.CHECKBOX === type) {
+                    let iter = outer1_14.getInteractionComponentState(closure_0, type.id);
+                    obj = { type: null, custom_id: null, value: null };
+                    ({ type: obj[0], customId: obj[1] } = type);
+                    let type5;
+                    if (iter != null) {
+                      type5 = iter.type;
+                    }
+                    obj[2] = type5 === type.type && iter.value;
+                    return obj;
+                  } else {
+                    outer1_1(tmp2[23])(false, "unreachable");
+                  }
+                }
+              }
+            }
+          }
+          let interactionComponentState3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+          let obj7 = { type: null, custom_id: null, values: null };
+          ({ type: obj6[0], customId: obj6[1] } = type);
+          let type6;
+          if (interactionComponentState3 != null) {
+            type6 = interactionComponentState3.type;
+          }
+          let mapped1 = null;
+          if (type6 === type.type) {
+            let selectedOptions = interactionComponentState3.selectedOptions;
+            mapped1 = selectedOptions.map((value) => value.value);
+          }
+          obj7[2] = mapped1;
+          return obj7;
+        }
+      });
       return obj;
-    } else if (callback(outer1_2[13]).ComponentType.TEXT_INPUT === type) {
-      const iter3 = outer1_14.getInteractionComponentState(callback, type.id);
-      obj = {};
-      ({ type: obj9.type, customId: obj9.custom_id } = type);
+    } else if (tmp(tmp2[13]).ComponentType.TEXT_INPUT === type) {
+      let iter3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+      obj = { type: null, custom_id: null, value: null };
+      ({ type: obj9[0], customId: obj9[1] } = type);
       type = undefined;
-      if (null != iter3) {
+      if (iter3 != null) {
         type = iter3.type;
       }
       let value = null;
       if (type === type.type) {
         value = iter3.value;
       }
-      obj.value = value;
+      obj[2] = value;
       return obj;
-    } else if (callback(outer1_2[13]).ComponentType.FILE_UPLOAD === type) {
-      const interactionComponentState = outer1_14.getInteractionComponentState(callback, type.id);
+    } else if (tmp(tmp2[13]).ComponentType.FILE_UPLOAD === type) {
+      let interactionComponentState = outer1_14.getInteractionComponentState(closure_0, type.id);
       let type1;
-      if (null != interactionComponentState) {
+      if (interactionComponentState != null) {
         type1 = interactionComponentState.type;
       }
       let uploadIds = null;
       if (type1 === type.type) {
         uploadIds = interactionComponentState.uploadIds;
       }
-      const obj1 = {};
-      ({ type: obj8.type, customId: obj8.custom_id } = type);
+      let obj1 = { type: null, custom_id: null, values: null };
+      ({ type: obj8[0], customId: obj8[1] } = type);
       let mapped;
-      if (null != uploadIds) {
+      if (uploadIds != null) {
         mapped = uploadIds.map((arg0) => {
           let closure_0 = arg0;
-          const uploads = outer1_1.uploads;
+          uploads = uploads.uploads;
           return uploads.findIndex((id) => id.id === closure_0);
         });
       }
-      let tmp41 = null;
-      if (null != mapped) {
-        tmp41 = mapped;
+      if (mapped == null) {
+        mapped = null;
       }
-      obj1.values = tmp41;
+      obj1[2] = mapped;
       return obj1;
-    } else if (callback(outer1_2[13]).ComponentType.STRING_SELECT === type) {
-      const interactionComponentState1 = outer1_14.getInteractionComponentState(callback, type.id);
-      const obj2 = {};
-      ({ type: obj7.type, customId: obj7.custom_id } = type);
+    } else if (tmp(tmp2[13]).ComponentType.STRING_SELECT === type) {
+      let interactionComponentState1 = outer1_14.getInteractionComponentState(closure_0, type.id);
+      let obj2 = { type: null, custom_id: null, values: null };
+      ({ type: obj7[0], customId: obj7[1] } = type);
       let type2;
-      if (null != interactionComponentState1) {
+      if (interactionComponentState1 != null) {
         type2 = interactionComponentState1.type;
       }
       let values = null;
       if (type2 === type.type) {
         values = interactionComponentState1.values;
       }
-      obj2.values = values;
+      obj2[2] = values;
       return obj2;
     } else {
-      if (callback(outer1_2[13]).ComponentType.USER_SELECT !== type) {
-        if (callback(outer1_2[13]).ComponentType.ROLE_SELECT !== type) {
-          if (callback(outer1_2[13]).ComponentType.MENTIONABLE_SELECT !== type) {
-            if (callback(outer1_2[13]).ComponentType.CHANNEL_SELECT !== type) {
-              if (callback(outer1_2[13]).ComponentType.TEXT_DISPLAY === type) {
-                const obj3 = { type: type.type };
+      if (tmp(tmp2[13]).ComponentType.USER_SELECT !== type) {
+        if (tmp(tmp2[13]).ComponentType.ROLE_SELECT !== type) {
+          if (tmp(tmp2[13]).ComponentType.MENTIONABLE_SELECT !== type) {
+            if (tmp(tmp2[13]).ComponentType.CHANNEL_SELECT !== type) {
+              if (tmp(tmp2[13]).ComponentType.TEXT_DISPLAY === type) {
+                let obj3 = { type: null };
+                obj3[0] = type.type;
                 return obj3;
-              } else if (callback(outer1_2[13]).ComponentType.LABEL === type) {
-                const obj4 = { type: type.type };
-                const items = [type.component];
-                obj4.component = outer1_17(callback, items, callback2)[0];
+              } else if (tmp(tmp2[13]).ComponentType.LABEL === type) {
+                let obj4 = { type: null, component: null };
+                obj4[0] = type.type;
+                let items = [type.component];
+                obj4[1] = items.map((type) => {
+                  type = type.type;
+                  if (outer1_0(outer1_2[13]).ComponentType.ACTION_ROW === type) {
+                    let obj = { type: null, components: null };
+                    obj[0] = type.type;
+                    let components = type.components;
+                    obj[1] = components.map((type) => {
+                      type = type.type;
+                      if (outer1_0(outer1_2[13]).ComponentType.ACTION_ROW === type) {
+                        let obj = { type: null, components: null };
+                        obj[0] = type.type;
+                        let components = type.components;
+                        obj[1] = components.map((type) => {
+                          type = type.type;
+                          if (outer1_0(outer1_2[13]).ComponentType.ACTION_ROW === type) {
+                            let obj = { type: null, components: null };
+                            obj[0] = type.type;
+                            let components = type.components;
+                            obj[1] = components.map(() => { ... });
+                            return obj;
+                          } else if (tmp(tmp2[13]).ComponentType.TEXT_INPUT === type) {
+                            let iter3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                            obj = { type: null, custom_id: null, value: null };
+                            ({ type: obj9[0], customId: obj9[1] } = type);
+                            type = undefined;
+                            if (iter3 != null) {
+                              type = iter3.type;
+                            }
+                            let value = null;
+                            if (type === type.type) {
+                              value = iter3.value;
+                            }
+                            obj[2] = value;
+                            return obj;
+                          } else if (tmp(tmp2[13]).ComponentType.FILE_UPLOAD === type) {
+                            let interactionComponentState = outer1_14.getInteractionComponentState(closure_0, type.id);
+                            let type1;
+                            if (interactionComponentState != null) {
+                              type1 = interactionComponentState.type;
+                            }
+                            let uploadIds = null;
+                            if (type1 === type.type) {
+                              uploadIds = interactionComponentState.uploadIds;
+                            }
+                            let obj1 = { type: null, custom_id: null, values: null };
+                            ({ type: obj8[0], customId: obj8[1] } = type);
+                            let mapped;
+                            if (uploadIds != null) {
+                              mapped = uploadIds.map(() => { ... });
+                            }
+                            if (mapped == null) {
+                              mapped = null;
+                            }
+                            obj1[2] = mapped;
+                            return obj1;
+                          } else if (tmp(tmp2[13]).ComponentType.STRING_SELECT === type) {
+                            let interactionComponentState1 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                            let obj2 = { type: null, custom_id: null, values: null };
+                            ({ type: obj7[0], customId: obj7[1] } = type);
+                            let type2;
+                            if (interactionComponentState1 != null) {
+                              type2 = interactionComponentState1.type;
+                            }
+                            let values = null;
+                            if (type2 === type.type) {
+                              values = interactionComponentState1.values;
+                            }
+                            obj2[2] = values;
+                            return obj2;
+                          } else {
+                            if (tmp(tmp2[13]).ComponentType.USER_SELECT !== type) {
+                              if (tmp(tmp2[13]).ComponentType.ROLE_SELECT !== type) {
+                                if (tmp(tmp2[13]).ComponentType.MENTIONABLE_SELECT !== type) {
+                                  if (tmp(tmp2[13]).ComponentType.CHANNEL_SELECT !== type) {
+                                    if (tmp(tmp2[13]).ComponentType.TEXT_DISPLAY === type) {
+                                      let obj3 = { type: null };
+                                      obj3[0] = type.type;
+                                      return obj3;
+                                    } else if (tmp(tmp2[13]).ComponentType.LABEL === type) {
+                                      let obj4 = { type: null, component: null };
+                                      obj4[0] = type.type;
+                                      let items = [type.component];
+                                      obj4[1] = items.map(() => { ... })[0];
+                                      return obj4;
+                                    } else if (tmp(tmp2[13]).ComponentType.RADIO_GROUP === type) {
+                                      let iter2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      let obj5 = { type: null, custom_id: null, value: null };
+                                      ({ type: obj3[0], customId: obj3[1] } = type);
+                                      let type3;
+                                      if (iter2 != null) {
+                                        type3 = iter2.type;
+                                      }
+                                      value = null;
+                                      if (type3 === type.type) {
+                                        value = iter2.value;
+                                      }
+                                      obj5[2] = value;
+                                      return obj5;
+                                    } else if (tmp(tmp2[13]).ComponentType.CHECKBOX_GROUP === type) {
+                                      let interactionComponentState2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      let obj6 = { type: null, custom_id: null, values: null };
+                                      ({ type: obj2[0], customId: obj2[1] } = type);
+                                      let type4;
+                                      if (interactionComponentState2 != null) {
+                                        type4 = interactionComponentState2.type;
+                                      }
+                                      values = null;
+                                      if (type4 === type.type) {
+                                        values = interactionComponentState2.values;
+                                      }
+                                      obj6[2] = values;
+                                      return obj6;
+                                    } else if (tmp(tmp2[13]).ComponentType.CHECKBOX === type) {
+                                      let iter = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      obj = { type: null, custom_id: null, value: null };
+                                      ({ type: obj[0], customId: obj[1] } = type);
+                                      let type5;
+                                      if (iter != null) {
+                                        type5 = iter.type;
+                                      }
+                                      obj[2] = type5 === type.type && iter.value;
+                                      return obj;
+                                    } else {
+                                      outer1_1(tmp2[23])(false, "unreachable");
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            let interactionComponentState3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                            let obj7 = { type: null, custom_id: null, values: null };
+                            ({ type: obj6[0], customId: obj6[1] } = type);
+                            let type6;
+                            if (interactionComponentState3 != null) {
+                              type6 = interactionComponentState3.type;
+                            }
+                            let mapped1 = null;
+                            if (type6 === type.type) {
+                              let selectedOptions = interactionComponentState3.selectedOptions;
+                              mapped1 = selectedOptions.map(() => { ... });
+                            }
+                            obj7[2] = mapped1;
+                            return obj7;
+                          }
+                        });
+                        return obj;
+                      } else if (tmp(tmp2[13]).ComponentType.TEXT_INPUT === type) {
+                        let iter3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                        obj = { type: null, custom_id: null, value: null };
+                        ({ type: obj9[0], customId: obj9[1] } = type);
+                        type = undefined;
+                        if (iter3 != null) {
+                          type = iter3.type;
+                        }
+                        let value = null;
+                        if (type === type.type) {
+                          value = iter3.value;
+                        }
+                        obj[2] = value;
+                        return obj;
+                      } else if (tmp(tmp2[13]).ComponentType.FILE_UPLOAD === type) {
+                        let interactionComponentState = outer1_14.getInteractionComponentState(closure_0, type.id);
+                        let type1;
+                        if (interactionComponentState != null) {
+                          type1 = interactionComponentState.type;
+                        }
+                        let uploadIds = null;
+                        if (type1 === type.type) {
+                          uploadIds = interactionComponentState.uploadIds;
+                        }
+                        let obj1 = { type: null, custom_id: null, values: null };
+                        ({ type: obj8[0], customId: obj8[1] } = type);
+                        let mapped;
+                        if (uploadIds != null) {
+                          mapped = uploadIds.map((arg0) => {
+                            let closure_0 = arg0;
+                            uploads = uploads.uploads;
+                            return uploads.findIndex(() => { ... });
+                          });
+                        }
+                        if (mapped == null) {
+                          mapped = null;
+                        }
+                        obj1[2] = mapped;
+                        return obj1;
+                      } else if (tmp(tmp2[13]).ComponentType.STRING_SELECT === type) {
+                        let interactionComponentState1 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                        let obj2 = { type: null, custom_id: null, values: null };
+                        ({ type: obj7[0], customId: obj7[1] } = type);
+                        let type2;
+                        if (interactionComponentState1 != null) {
+                          type2 = interactionComponentState1.type;
+                        }
+                        let values = null;
+                        if (type2 === type.type) {
+                          values = interactionComponentState1.values;
+                        }
+                        obj2[2] = values;
+                        return obj2;
+                      } else {
+                        if (tmp(tmp2[13]).ComponentType.USER_SELECT !== type) {
+                          if (tmp(tmp2[13]).ComponentType.ROLE_SELECT !== type) {
+                            if (tmp(tmp2[13]).ComponentType.MENTIONABLE_SELECT !== type) {
+                              if (tmp(tmp2[13]).ComponentType.CHANNEL_SELECT !== type) {
+                                if (tmp(tmp2[13]).ComponentType.TEXT_DISPLAY === type) {
+                                  let obj3 = { type: null };
+                                  obj3[0] = type.type;
+                                  return obj3;
+                                } else if (tmp(tmp2[13]).ComponentType.LABEL === type) {
+                                  let obj4 = { type: null, component: null };
+                                  obj4[0] = type.type;
+                                  let items = [type.component];
+                                  obj4[1] = items.map((type) => {
+                                    type = type.type;
+                                    if (outer1_0(outer1_2[13]).ComponentType.ACTION_ROW === type) {
+                                      let obj = { type: null, components: null };
+                                      obj[0] = type.type;
+                                      let components = type.components;
+                                      obj[1] = components.map(() => { ... });
+                                      return obj;
+                                    } else if (tmp(tmp2[13]).ComponentType.TEXT_INPUT === type) {
+                                      let iter3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      obj = { type: null, custom_id: null, value: null };
+                                      ({ type: obj9[0], customId: obj9[1] } = type);
+                                      type = undefined;
+                                      if (iter3 != null) {
+                                        type = iter3.type;
+                                      }
+                                      let value = null;
+                                      if (type === type.type) {
+                                        value = iter3.value;
+                                      }
+                                      obj[2] = value;
+                                      return obj;
+                                    } else if (tmp(tmp2[13]).ComponentType.FILE_UPLOAD === type) {
+                                      let interactionComponentState = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      let type1;
+                                      if (interactionComponentState != null) {
+                                        type1 = interactionComponentState.type;
+                                      }
+                                      let uploadIds = null;
+                                      if (type1 === type.type) {
+                                        uploadIds = interactionComponentState.uploadIds;
+                                      }
+                                      let obj1 = { type: null, custom_id: null, values: null };
+                                      ({ type: obj8[0], customId: obj8[1] } = type);
+                                      let mapped;
+                                      if (uploadIds != null) {
+                                        mapped = uploadIds.map(() => { ... });
+                                      }
+                                      if (mapped == null) {
+                                        mapped = null;
+                                      }
+                                      obj1[2] = mapped;
+                                      return obj1;
+                                    } else if (tmp(tmp2[13]).ComponentType.STRING_SELECT === type) {
+                                      let interactionComponentState1 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      let obj2 = { type: null, custom_id: null, values: null };
+                                      ({ type: obj7[0], customId: obj7[1] } = type);
+                                      let type2;
+                                      if (interactionComponentState1 != null) {
+                                        type2 = interactionComponentState1.type;
+                                      }
+                                      let values = null;
+                                      if (type2 === type.type) {
+                                        values = interactionComponentState1.values;
+                                      }
+                                      obj2[2] = values;
+                                      return obj2;
+                                    } else {
+                                      if (tmp(tmp2[13]).ComponentType.USER_SELECT !== type) {
+                                        if (tmp(tmp2[13]).ComponentType.ROLE_SELECT !== type) {
+                                          if (tmp(tmp2[13]).ComponentType.MENTIONABLE_SELECT !== type) {
+                                            if (tmp(tmp2[13]).ComponentType.CHANNEL_SELECT !== type) {
+                                              if (tmp(tmp2[13]).ComponentType.TEXT_DISPLAY === type) {
+                                                let obj3 = { type: null };
+                                                obj3[0] = type.type;
+                                                return obj3;
+                                              } else if (tmp(tmp2[13]).ComponentType.LABEL === type) {
+                                                let obj4 = { type: null, component: null };
+                                                obj4[0] = type.type;
+                                                let items = [type.component];
+                                                obj4[1] = items.map(() => { ... })[0];
+                                                return obj4;
+                                              } else if (tmp(tmp2[13]).ComponentType.RADIO_GROUP === type) {
+                                                let iter2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                                let obj5 = { type: null, custom_id: null, value: null };
+                                                ({ type: obj3[0], customId: obj3[1] } = type);
+                                                let type3;
+                                                if (iter2 != null) {
+                                                  type3 = iter2.type;
+                                                }
+                                                value = null;
+                                                if (type3 === type.type) {
+                                                  value = iter2.value;
+                                                }
+                                                obj5[2] = value;
+                                                return obj5;
+                                              } else if (tmp(tmp2[13]).ComponentType.CHECKBOX_GROUP === type) {
+                                                let interactionComponentState2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                                let obj6 = { type: null, custom_id: null, values: null };
+                                                ({ type: obj2[0], customId: obj2[1] } = type);
+                                                let type4;
+                                                if (interactionComponentState2 != null) {
+                                                  type4 = interactionComponentState2.type;
+                                                }
+                                                values = null;
+                                                if (type4 === type.type) {
+                                                  values = interactionComponentState2.values;
+                                                }
+                                                obj6[2] = values;
+                                                return obj6;
+                                              } else if (tmp(tmp2[13]).ComponentType.CHECKBOX === type) {
+                                                let iter = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                                obj = { type: null, custom_id: null, value: null };
+                                                ({ type: obj[0], customId: obj[1] } = type);
+                                                let type5;
+                                                if (iter != null) {
+                                                  type5 = iter.type;
+                                                }
+                                                obj[2] = type5 === type.type && iter.value;
+                                                return obj;
+                                              } else {
+                                                outer1_1(tmp2[23])(false, "unreachable");
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                      let interactionComponentState3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      let obj7 = { type: null, custom_id: null, values: null };
+                                      ({ type: obj6[0], customId: obj6[1] } = type);
+                                      let type6;
+                                      if (interactionComponentState3 != null) {
+                                        type6 = interactionComponentState3.type;
+                                      }
+                                      let mapped1 = null;
+                                      if (type6 === type.type) {
+                                        let selectedOptions = interactionComponentState3.selectedOptions;
+                                        mapped1 = selectedOptions.map(() => { ... });
+                                      }
+                                      obj7[2] = mapped1;
+                                      return obj7;
+                                    }
+                                  })[0];
+                                  return obj4;
+                                } else if (tmp(tmp2[13]).ComponentType.RADIO_GROUP === type) {
+                                  let iter2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                  let obj5 = { type: null, custom_id: null, value: null };
+                                  ({ type: obj3[0], customId: obj3[1] } = type);
+                                  let type3;
+                                  if (iter2 != null) {
+                                    type3 = iter2.type;
+                                  }
+                                  value = null;
+                                  if (type3 === type.type) {
+                                    value = iter2.value;
+                                  }
+                                  obj5[2] = value;
+                                  return obj5;
+                                } else if (tmp(tmp2[13]).ComponentType.CHECKBOX_GROUP === type) {
+                                  let interactionComponentState2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                  let obj6 = { type: null, custom_id: null, values: null };
+                                  ({ type: obj2[0], customId: obj2[1] } = type);
+                                  let type4;
+                                  if (interactionComponentState2 != null) {
+                                    type4 = interactionComponentState2.type;
+                                  }
+                                  values = null;
+                                  if (type4 === type.type) {
+                                    values = interactionComponentState2.values;
+                                  }
+                                  obj6[2] = values;
+                                  return obj6;
+                                } else if (tmp(tmp2[13]).ComponentType.CHECKBOX === type) {
+                                  let iter = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                  obj = { type: null, custom_id: null, value: null };
+                                  ({ type: obj[0], customId: obj[1] } = type);
+                                  let type5;
+                                  if (iter != null) {
+                                    type5 = iter.type;
+                                  }
+                                  obj[2] = type5 === type.type && iter.value;
+                                  return obj;
+                                } else {
+                                  outer1_1(tmp2[23])(false, "unreachable");
+                                }
+                              }
+                            }
+                          }
+                        }
+                        let interactionComponentState3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                        let obj7 = { type: null, custom_id: null, values: null };
+                        ({ type: obj6[0], customId: obj6[1] } = type);
+                        let type6;
+                        if (interactionComponentState3 != null) {
+                          type6 = interactionComponentState3.type;
+                        }
+                        let mapped1 = null;
+                        if (type6 === type.type) {
+                          let selectedOptions = interactionComponentState3.selectedOptions;
+                          mapped1 = selectedOptions.map((value) => value.value);
+                        }
+                        obj7[2] = mapped1;
+                        return obj7;
+                      }
+                    });
+                    return obj;
+                  } else if (tmp(tmp2[13]).ComponentType.TEXT_INPUT === type) {
+                    let iter3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                    obj = { type: null, custom_id: null, value: null };
+                    ({ type: obj9[0], customId: obj9[1] } = type);
+                    type = undefined;
+                    if (iter3 != null) {
+                      type = iter3.type;
+                    }
+                    let value = null;
+                    if (type === type.type) {
+                      value = iter3.value;
+                    }
+                    obj[2] = value;
+                    return obj;
+                  } else if (tmp(tmp2[13]).ComponentType.FILE_UPLOAD === type) {
+                    let interactionComponentState = outer1_14.getInteractionComponentState(closure_0, type.id);
+                    let type1;
+                    if (interactionComponentState != null) {
+                      type1 = interactionComponentState.type;
+                    }
+                    let uploadIds = null;
+                    if (type1 === type.type) {
+                      uploadIds = interactionComponentState.uploadIds;
+                    }
+                    let obj1 = { type: null, custom_id: null, values: null };
+                    ({ type: obj8[0], customId: obj8[1] } = type);
+                    let mapped;
+                    if (uploadIds != null) {
+                      mapped = uploadIds.map((arg0) => {
+                        let closure_0 = arg0;
+                        uploads = uploads.uploads;
+                        return uploads.findIndex((id) => id.id === closure_0);
+                      });
+                    }
+                    if (mapped == null) {
+                      mapped = null;
+                    }
+                    obj1[2] = mapped;
+                    return obj1;
+                  } else if (tmp(tmp2[13]).ComponentType.STRING_SELECT === type) {
+                    let interactionComponentState1 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                    let obj2 = { type: null, custom_id: null, values: null };
+                    ({ type: obj7[0], customId: obj7[1] } = type);
+                    let type2;
+                    if (interactionComponentState1 != null) {
+                      type2 = interactionComponentState1.type;
+                    }
+                    let values = null;
+                    if (type2 === type.type) {
+                      values = interactionComponentState1.values;
+                    }
+                    obj2[2] = values;
+                    return obj2;
+                  } else {
+                    if (tmp(tmp2[13]).ComponentType.USER_SELECT !== type) {
+                      if (tmp(tmp2[13]).ComponentType.ROLE_SELECT !== type) {
+                        if (tmp(tmp2[13]).ComponentType.MENTIONABLE_SELECT !== type) {
+                          if (tmp(tmp2[13]).ComponentType.CHANNEL_SELECT !== type) {
+                            if (tmp(tmp2[13]).ComponentType.TEXT_DISPLAY === type) {
+                              let obj3 = { type: null };
+                              obj3[0] = type.type;
+                              return obj3;
+                            } else if (tmp(tmp2[13]).ComponentType.LABEL === type) {
+                              let obj4 = { type: null, component: null };
+                              obj4[0] = type.type;
+                              let items = [type.component];
+                              obj4[1] = items.map((type) => {
+                                type = type.type;
+                                if (outer1_0(outer1_2[13]).ComponentType.ACTION_ROW === type) {
+                                  let obj = { type: null, components: null };
+                                  obj[0] = type.type;
+                                  let components = type.components;
+                                  obj[1] = components.map((type) => {
+                                    type = type.type;
+                                    if (outer1_0(outer1_2[13]).ComponentType.ACTION_ROW === type) {
+                                      let obj = { type: null, components: null };
+                                      obj[0] = type.type;
+                                      let components = type.components;
+                                      obj[1] = components.map(() => { ... });
+                                      return obj;
+                                    } else if (tmp(tmp2[13]).ComponentType.TEXT_INPUT === type) {
+                                      let iter3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      obj = { type: null, custom_id: null, value: null };
+                                      ({ type: obj9[0], customId: obj9[1] } = type);
+                                      type = undefined;
+                                      if (iter3 != null) {
+                                        type = iter3.type;
+                                      }
+                                      let value = null;
+                                      if (type === type.type) {
+                                        value = iter3.value;
+                                      }
+                                      obj[2] = value;
+                                      return obj;
+                                    } else if (tmp(tmp2[13]).ComponentType.FILE_UPLOAD === type) {
+                                      let interactionComponentState = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      let type1;
+                                      if (interactionComponentState != null) {
+                                        type1 = interactionComponentState.type;
+                                      }
+                                      let uploadIds = null;
+                                      if (type1 === type.type) {
+                                        uploadIds = interactionComponentState.uploadIds;
+                                      }
+                                      let obj1 = { type: null, custom_id: null, values: null };
+                                      ({ type: obj8[0], customId: obj8[1] } = type);
+                                      let mapped;
+                                      if (uploadIds != null) {
+                                        mapped = uploadIds.map(() => { ... });
+                                      }
+                                      if (mapped == null) {
+                                        mapped = null;
+                                      }
+                                      obj1[2] = mapped;
+                                      return obj1;
+                                    } else if (tmp(tmp2[13]).ComponentType.STRING_SELECT === type) {
+                                      let interactionComponentState1 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      let obj2 = { type: null, custom_id: null, values: null };
+                                      ({ type: obj7[0], customId: obj7[1] } = type);
+                                      let type2;
+                                      if (interactionComponentState1 != null) {
+                                        type2 = interactionComponentState1.type;
+                                      }
+                                      let values = null;
+                                      if (type2 === type.type) {
+                                        values = interactionComponentState1.values;
+                                      }
+                                      obj2[2] = values;
+                                      return obj2;
+                                    } else {
+                                      if (tmp(tmp2[13]).ComponentType.USER_SELECT !== type) {
+                                        if (tmp(tmp2[13]).ComponentType.ROLE_SELECT !== type) {
+                                          if (tmp(tmp2[13]).ComponentType.MENTIONABLE_SELECT !== type) {
+                                            if (tmp(tmp2[13]).ComponentType.CHANNEL_SELECT !== type) {
+                                              if (tmp(tmp2[13]).ComponentType.TEXT_DISPLAY === type) {
+                                                let obj3 = { type: null };
+                                                obj3[0] = type.type;
+                                                return obj3;
+                                              } else if (tmp(tmp2[13]).ComponentType.LABEL === type) {
+                                                let obj4 = { type: null, component: null };
+                                                obj4[0] = type.type;
+                                                let items = [type.component];
+                                                obj4[1] = items.map(() => { ... })[0];
+                                                return obj4;
+                                              } else if (tmp(tmp2[13]).ComponentType.RADIO_GROUP === type) {
+                                                let iter2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                                let obj5 = { type: null, custom_id: null, value: null };
+                                                ({ type: obj3[0], customId: obj3[1] } = type);
+                                                let type3;
+                                                if (iter2 != null) {
+                                                  type3 = iter2.type;
+                                                }
+                                                value = null;
+                                                if (type3 === type.type) {
+                                                  value = iter2.value;
+                                                }
+                                                obj5[2] = value;
+                                                return obj5;
+                                              } else if (tmp(tmp2[13]).ComponentType.CHECKBOX_GROUP === type) {
+                                                let interactionComponentState2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                                let obj6 = { type: null, custom_id: null, values: null };
+                                                ({ type: obj2[0], customId: obj2[1] } = type);
+                                                let type4;
+                                                if (interactionComponentState2 != null) {
+                                                  type4 = interactionComponentState2.type;
+                                                }
+                                                values = null;
+                                                if (type4 === type.type) {
+                                                  values = interactionComponentState2.values;
+                                                }
+                                                obj6[2] = values;
+                                                return obj6;
+                                              } else if (tmp(tmp2[13]).ComponentType.CHECKBOX === type) {
+                                                let iter = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                                obj = { type: null, custom_id: null, value: null };
+                                                ({ type: obj[0], customId: obj[1] } = type);
+                                                let type5;
+                                                if (iter != null) {
+                                                  type5 = iter.type;
+                                                }
+                                                obj[2] = type5 === type.type && iter.value;
+                                                return obj;
+                                              } else {
+                                                outer1_1(tmp2[23])(false, "unreachable");
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                      let interactionComponentState3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                      let obj7 = { type: null, custom_id: null, values: null };
+                                      ({ type: obj6[0], customId: obj6[1] } = type);
+                                      let type6;
+                                      if (interactionComponentState3 != null) {
+                                        type6 = interactionComponentState3.type;
+                                      }
+                                      let mapped1 = null;
+                                      if (type6 === type.type) {
+                                        let selectedOptions = interactionComponentState3.selectedOptions;
+                                        mapped1 = selectedOptions.map(() => { ... });
+                                      }
+                                      obj7[2] = mapped1;
+                                      return obj7;
+                                    }
+                                  });
+                                  return obj;
+                                } else if (tmp(tmp2[13]).ComponentType.TEXT_INPUT === type) {
+                                  let iter3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                  obj = { type: null, custom_id: null, value: null };
+                                  ({ type: obj9[0], customId: obj9[1] } = type);
+                                  type = undefined;
+                                  if (iter3 != null) {
+                                    type = iter3.type;
+                                  }
+                                  let value = null;
+                                  if (type === type.type) {
+                                    value = iter3.value;
+                                  }
+                                  obj[2] = value;
+                                  return obj;
+                                } else if (tmp(tmp2[13]).ComponentType.FILE_UPLOAD === type) {
+                                  let interactionComponentState = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                  let type1;
+                                  if (interactionComponentState != null) {
+                                    type1 = interactionComponentState.type;
+                                  }
+                                  let uploadIds = null;
+                                  if (type1 === type.type) {
+                                    uploadIds = interactionComponentState.uploadIds;
+                                  }
+                                  let obj1 = { type: null, custom_id: null, values: null };
+                                  ({ type: obj8[0], customId: obj8[1] } = type);
+                                  let mapped;
+                                  if (uploadIds != null) {
+                                    mapped = uploadIds.map((arg0) => {
+                                      let closure_0 = arg0;
+                                      uploads = uploads.uploads;
+                                      return uploads.findIndex(() => { ... });
+                                    });
+                                  }
+                                  if (mapped == null) {
+                                    mapped = null;
+                                  }
+                                  obj1[2] = mapped;
+                                  return obj1;
+                                } else if (tmp(tmp2[13]).ComponentType.STRING_SELECT === type) {
+                                  let interactionComponentState1 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                  let obj2 = { type: null, custom_id: null, values: null };
+                                  ({ type: obj7[0], customId: obj7[1] } = type);
+                                  let type2;
+                                  if (interactionComponentState1 != null) {
+                                    type2 = interactionComponentState1.type;
+                                  }
+                                  let values = null;
+                                  if (type2 === type.type) {
+                                    values = interactionComponentState1.values;
+                                  }
+                                  obj2[2] = values;
+                                  return obj2;
+                                } else {
+                                  if (tmp(tmp2[13]).ComponentType.USER_SELECT !== type) {
+                                    if (tmp(tmp2[13]).ComponentType.ROLE_SELECT !== type) {
+                                      if (tmp(tmp2[13]).ComponentType.MENTIONABLE_SELECT !== type) {
+                                        if (tmp(tmp2[13]).ComponentType.CHANNEL_SELECT !== type) {
+                                          if (tmp(tmp2[13]).ComponentType.TEXT_DISPLAY === type) {
+                                            let obj3 = { type: null };
+                                            obj3[0] = type.type;
+                                            return obj3;
+                                          } else if (tmp(tmp2[13]).ComponentType.LABEL === type) {
+                                            let obj4 = { type: null, component: null };
+                                            obj4[0] = type.type;
+                                            let items = [type.component];
+                                            obj4[1] = items.map((type) => {
+                                              type = type.type;
+                                              if (outer1_0(outer1_2[13]).ComponentType.ACTION_ROW === type) {
+                                                let obj = { type: null, components: null };
+                                                obj[0] = type.type;
+                                                let components = type.components;
+                                                obj[1] = components.map(() => { ... });
+                                                return obj;
+                                              } else if (tmp(tmp2[13]).ComponentType.TEXT_INPUT === type) {
+                                                let iter3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                                obj = { type: null, custom_id: null, value: null };
+                                                ({ type: obj9[0], customId: obj9[1] } = type);
+                                                type = undefined;
+                                                if (iter3 != null) {
+                                                  type = iter3.type;
+                                                }
+                                                let value = null;
+                                                if (type === type.type) {
+                                                  value = iter3.value;
+                                                }
+                                                obj[2] = value;
+                                                return obj;
+                                              } else if (tmp(tmp2[13]).ComponentType.FILE_UPLOAD === type) {
+                                                let interactionComponentState = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                                let type1;
+                                                if (interactionComponentState != null) {
+                                                  type1 = interactionComponentState.type;
+                                                }
+                                                let uploadIds = null;
+                                                if (type1 === type.type) {
+                                                  uploadIds = interactionComponentState.uploadIds;
+                                                }
+                                                let obj1 = { type: null, custom_id: null, values: null };
+                                                ({ type: obj8[0], customId: obj8[1] } = type);
+                                                let mapped;
+                                                if (uploadIds != null) {
+                                                  mapped = uploadIds.map(() => { ... });
+                                                }
+                                                if (mapped == null) {
+                                                  mapped = null;
+                                                }
+                                                obj1[2] = mapped;
+                                                return obj1;
+                                              } else if (tmp(tmp2[13]).ComponentType.STRING_SELECT === type) {
+                                                let interactionComponentState1 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                                let obj2 = { type: null, custom_id: null, values: null };
+                                                ({ type: obj7[0], customId: obj7[1] } = type);
+                                                let type2;
+                                                if (interactionComponentState1 != null) {
+                                                  type2 = interactionComponentState1.type;
+                                                }
+                                                let values = null;
+                                                if (type2 === type.type) {
+                                                  values = interactionComponentState1.values;
+                                                }
+                                                obj2[2] = values;
+                                                return obj2;
+                                              } else {
+                                                if (tmp(tmp2[13]).ComponentType.USER_SELECT !== type) {
+                                                  if (tmp(tmp2[13]).ComponentType.ROLE_SELECT !== type) {
+                                                    if (tmp(tmp2[13]).ComponentType.MENTIONABLE_SELECT !== type) {
+                                                      if (tmp(tmp2[13]).ComponentType.CHANNEL_SELECT !== type) {
+                                                        if (tmp(tmp2[13]).ComponentType.TEXT_DISPLAY === type) {
+                                                          let obj3 = { type: null };
+                                                          obj3[0] = type.type;
+                                                          return obj3;
+                                                        } else if (tmp(tmp2[13]).ComponentType.LABEL === type) {
+                                                          let obj4 = { type: null, component: null };
+                                                          obj4[0] = type.type;
+                                                          let items = [type.component];
+                                                          obj4[1] = items.map(() => { ... })[0];
+                                                          return obj4;
+                                                        } else if (tmp(tmp2[13]).ComponentType.RADIO_GROUP === type) {
+                                                          let iter2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                                          let obj5 = { type: null, custom_id: null, value: null };
+                                                          ({ type: obj3[0], customId: obj3[1] } = type);
+                                                          let type3;
+                                                          if (iter2 != null) {
+                                                            type3 = iter2.type;
+                                                          }
+                                                          value = null;
+                                                          if (type3 === type.type) {
+                                                            value = iter2.value;
+                                                          }
+                                                          obj5[2] = value;
+                                                          return obj5;
+                                                        } else if (tmp(tmp2[13]).ComponentType.CHECKBOX_GROUP === type) {
+                                                          let interactionComponentState2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                                          let obj6 = { type: null, custom_id: null, values: null };
+                                                          ({ type: obj2[0], customId: obj2[1] } = type);
+                                                          let type4;
+                                                          if (interactionComponentState2 != null) {
+                                                            type4 = interactionComponentState2.type;
+                                                          }
+                                                          values = null;
+                                                          if (type4 === type.type) {
+                                                            values = interactionComponentState2.values;
+                                                          }
+                                                          obj6[2] = values;
+                                                          return obj6;
+                                                        } else if (tmp(tmp2[13]).ComponentType.CHECKBOX === type) {
+                                                          let iter = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                                          obj = { type: null, custom_id: null, value: null };
+                                                          ({ type: obj[0], customId: obj[1] } = type);
+                                                          let type5;
+                                                          if (iter != null) {
+                                                            type5 = iter.type;
+                                                          }
+                                                          obj[2] = type5 === type.type && iter.value;
+                                                          return obj;
+                                                        } else {
+                                                          outer1_1(tmp2[23])(false, "unreachable");
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                                let interactionComponentState3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                                let obj7 = { type: null, custom_id: null, values: null };
+                                                ({ type: obj6[0], customId: obj6[1] } = type);
+                                                let type6;
+                                                if (interactionComponentState3 != null) {
+                                                  type6 = interactionComponentState3.type;
+                                                }
+                                                let mapped1 = null;
+                                                if (type6 === type.type) {
+                                                  let selectedOptions = interactionComponentState3.selectedOptions;
+                                                  mapped1 = selectedOptions.map(() => { ... });
+                                                }
+                                                obj7[2] = mapped1;
+                                                return obj7;
+                                              }
+                                            })[0];
+                                            return obj4;
+                                          } else if (tmp(tmp2[13]).ComponentType.RADIO_GROUP === type) {
+                                            let iter2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                            let obj5 = { type: null, custom_id: null, value: null };
+                                            ({ type: obj3[0], customId: obj3[1] } = type);
+                                            let type3;
+                                            if (iter2 != null) {
+                                              type3 = iter2.type;
+                                            }
+                                            value = null;
+                                            if (type3 === type.type) {
+                                              value = iter2.value;
+                                            }
+                                            obj5[2] = value;
+                                            return obj5;
+                                          } else if (tmp(tmp2[13]).ComponentType.CHECKBOX_GROUP === type) {
+                                            let interactionComponentState2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                            let obj6 = { type: null, custom_id: null, values: null };
+                                            ({ type: obj2[0], customId: obj2[1] } = type);
+                                            let type4;
+                                            if (interactionComponentState2 != null) {
+                                              type4 = interactionComponentState2.type;
+                                            }
+                                            values = null;
+                                            if (type4 === type.type) {
+                                              values = interactionComponentState2.values;
+                                            }
+                                            obj6[2] = values;
+                                            return obj6;
+                                          } else if (tmp(tmp2[13]).ComponentType.CHECKBOX === type) {
+                                            let iter = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                            obj = { type: null, custom_id: null, value: null };
+                                            ({ type: obj[0], customId: obj[1] } = type);
+                                            let type5;
+                                            if (iter != null) {
+                                              type5 = iter.type;
+                                            }
+                                            obj[2] = type5 === type.type && iter.value;
+                                            return obj;
+                                          } else {
+                                            outer1_1(tmp2[23])(false, "unreachable");
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                  let interactionComponentState3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                                  let obj7 = { type: null, custom_id: null, values: null };
+                                  ({ type: obj6[0], customId: obj6[1] } = type);
+                                  let type6;
+                                  if (interactionComponentState3 != null) {
+                                    type6 = interactionComponentState3.type;
+                                  }
+                                  let mapped1 = null;
+                                  if (type6 === type.type) {
+                                    let selectedOptions = interactionComponentState3.selectedOptions;
+                                    mapped1 = selectedOptions.map((value) => value.value);
+                                  }
+                                  obj7[2] = mapped1;
+                                  return obj7;
+                                }
+                              })[0];
+                              return obj4;
+                            } else if (tmp(tmp2[13]).ComponentType.RADIO_GROUP === type) {
+                              let iter2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                              let obj5 = { type: null, custom_id: null, value: null };
+                              ({ type: obj3[0], customId: obj3[1] } = type);
+                              let type3;
+                              if (iter2 != null) {
+                                type3 = iter2.type;
+                              }
+                              value = null;
+                              if (type3 === type.type) {
+                                value = iter2.value;
+                              }
+                              obj5[2] = value;
+                              return obj5;
+                            } else if (tmp(tmp2[13]).ComponentType.CHECKBOX_GROUP === type) {
+                              let interactionComponentState2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                              let obj6 = { type: null, custom_id: null, values: null };
+                              ({ type: obj2[0], customId: obj2[1] } = type);
+                              let type4;
+                              if (interactionComponentState2 != null) {
+                                type4 = interactionComponentState2.type;
+                              }
+                              values = null;
+                              if (type4 === type.type) {
+                                values = interactionComponentState2.values;
+                              }
+                              obj6[2] = values;
+                              return obj6;
+                            } else if (tmp(tmp2[13]).ComponentType.CHECKBOX === type) {
+                              let iter = outer1_14.getInteractionComponentState(closure_0, type.id);
+                              obj = { type: null, custom_id: null, value: null };
+                              ({ type: obj[0], customId: obj[1] } = type);
+                              let type5;
+                              if (iter != null) {
+                                type5 = iter.type;
+                              }
+                              obj[2] = type5 === type.type && iter.value;
+                              return obj;
+                            } else {
+                              outer1_1(tmp2[23])(false, "unreachable");
+                            }
+                          }
+                        }
+                      }
+                    }
+                    let interactionComponentState3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                    let obj7 = { type: null, custom_id: null, values: null };
+                    ({ type: obj6[0], customId: obj6[1] } = type);
+                    let type6;
+                    if (interactionComponentState3 != null) {
+                      type6 = interactionComponentState3.type;
+                    }
+                    let mapped1 = null;
+                    if (type6 === type.type) {
+                      let selectedOptions = interactionComponentState3.selectedOptions;
+                      mapped1 = selectedOptions.map((value) => value.value);
+                    }
+                    obj7[2] = mapped1;
+                    return obj7;
+                  }
+                })[0];
                 return obj4;
-              } else if (callback(outer1_2[13]).ComponentType.RADIO_GROUP === type) {
-                const iter2 = outer1_14.getInteractionComponentState(callback, type.id);
-                const obj5 = {};
-                ({ type: obj3.type, customId: obj3.custom_id } = type);
+              } else if (tmp(tmp2[13]).ComponentType.RADIO_GROUP === type) {
+                let iter2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                let obj5 = { type: null, custom_id: null, value: null };
+                ({ type: obj3[0], customId: obj3[1] } = type);
                 let type3;
-                if (null != iter2) {
+                if (iter2 != null) {
                   type3 = iter2.type;
                 }
                 value = null;
                 if (type3 === type.type) {
                   value = iter2.value;
                 }
-                obj5.value = value;
+                obj5[2] = value;
                 return obj5;
-              } else if (callback(outer1_2[13]).ComponentType.CHECKBOX_GROUP === type) {
-                const interactionComponentState2 = outer1_14.getInteractionComponentState(callback, type.id);
-                const obj6 = {};
-                ({ type: obj2.type, customId: obj2.custom_id } = type);
+              } else if (tmp(tmp2[13]).ComponentType.CHECKBOX_GROUP === type) {
+                let interactionComponentState2 = outer1_14.getInteractionComponentState(closure_0, type.id);
+                let obj6 = { type: null, custom_id: null, values: null };
+                ({ type: obj2[0], customId: obj2[1] } = type);
                 let type4;
-                if (null != interactionComponentState2) {
+                if (interactionComponentState2 != null) {
                   type4 = interactionComponentState2.type;
                 }
                 values = null;
                 if (type4 === type.type) {
                   values = interactionComponentState2.values;
                 }
-                obj6.values = values;
+                obj6[2] = values;
                 return obj6;
-              } else if (callback(outer1_2[13]).ComponentType.CHECKBOX === type) {
-                const iter = outer1_14.getInteractionComponentState(callback, type.id);
-                obj = {};
-                ({ type: obj.type, customId: obj.custom_id } = type);
+              } else if (tmp(tmp2[13]).ComponentType.CHECKBOX === type) {
+                let iter = outer1_14.getInteractionComponentState(closure_0, type.id);
+                obj = { type: null, custom_id: null, value: null };
+                ({ type: obj[0], customId: obj[1] } = type);
                 let type5;
-                if (null != iter) {
+                if (iter != null) {
                   type5 = iter.type;
                 }
-                obj.value = type5 === type.type && iter.value;
+                obj[2] = type5 === type.type && iter.value;
                 return obj;
               } else {
-                callback2(outer1_2[23])(false, "unreachable");
+                outer1_1(tmp2[23])(false, "unreachable");
               }
             }
           }
         }
       }
-      const interactionComponentState3 = outer1_14.getInteractionComponentState(callback, type.id);
-      const obj7 = {};
-      ({ type: obj6.type, customId: obj6.custom_id } = type);
+      let interactionComponentState3 = outer1_14.getInteractionComponentState(closure_0, type.id);
+      let obj7 = { type: null, custom_id: null, values: null };
+      ({ type: obj6[0], customId: obj6[1] } = type);
       let type6;
-      if (null != interactionComponentState3) {
+      if (interactionComponentState3 != null) {
         type6 = interactionComponentState3.type;
       }
       let mapped1 = null;
       if (type6 === type.type) {
-        const selectedOptions = interactionComponentState3.selectedOptions;
+        let selectedOptions = interactionComponentState3.selectedOptions;
         mapped1 = selectedOptions.map((value) => value.value);
       }
-      obj7.values = mapped1;
+      obj7[2] = mapped1;
       return obj7;
     }
   });
 }
-function getUploadsForModal(arg0, arg1) {
+function getUploadsForModal(id) {
   let closure_0 = arg1;
-  uploads = uploads.getUploads(arg0, DraftType.InteractionModal);
+  uploads = uploads.getUploads(id, DraftType.InteractionModal);
   return uploads.filter((id) => {
-    let containerId;
     const result = callback(outer1_2[24]).deserializeComponentUploadId(id.id);
-    if (null != result) {
+    let containerId;
+    if (result != null) {
       containerId = result.containerId;
     }
     return containerId === callback;
   });
 }
 function submitModal() {
-  return _submitModal(...arguments);
+  const self = this;
+  const apply = _submitModal.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _submitModal() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0, arg1, arg2) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let c5 = 0;
+    let c6 = 0;
+    return (function*(arg0, arg1, arg2) {
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp5 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === DISCORD_EPOCH) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let arr = tmp3;
+              let channel = tmp2;
+              channel = undefined;
+              arr = undefined;
+              DISCORD_EPOCH = undefined;
+              c6 = undefined;
+              const channelId = lib.channelId;
+              channel = outer1_7.getChannel(channelId);
+              callback(table[23])(null != channel, "expected channel");
+              arr = outer1_17(channelId, lib.customId);
+              let tmp7;
+              if (arr.length > 0) {
+                tmp7 = callback(tmp30[25])(arr);
+              }
+              let obj1 = lib(tmp30[26]);
+              obj1 = { data: null, preflight: null };
+              const obj2 = { interactionType: null, applicationId: null };
+              obj2[0] = lib(table[13]).InteractionTypes.MODAL_SUBMIT;
+              obj2[1] = lib.application.id;
+              obj1[0] = obj2;
+              obj1[1] = tmp7;
+              obj1.addQueued(table, obj1);
+              DISCORD_EPOCH = 1;
+              c6 = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = tmp7;
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            DISCORD_EPOCH = arr.map((closure_0, closure_1) => lib(4723).getAttachmentPayload(closure_0, closure_1));
+            const obj4 = { uploads: null };
+            obj4[0] = arr;
+            c6 = callback2(lib.customId, lib.components, obj4);
+            function send() {
+              if (null != channel) {
+                let aborted;
+                if (closure_1 != null) {
+                  aborted = tmp13.aborted;
+                }
+                if (!aborted) {
+                  const HTTP = lib(530).HTTP;
+                  let obj = { url: null, body: null, signal: null, rejectWithError: false };
+                  obj[0] = outer1_15.INTERACTIONS;
+                  obj = { type: null, application_id: null, channel_id: null, guild_id: null, data: null, session_id: null, nonce: null };
+                  obj[0] = lib(1906).InteractionTypes.MODAL_SUBMIT;
+                  obj[1] = lib.application.id;
+                  ({ id: obj2[2], guild_id: obj2[3] } = channel);
+                  obj = { id: null, custom_id: null, components: null, attachments: null };
+                  ({ id: obj3[0], customId: obj3[1] } = lib);
+                  obj[2] = sessionId;
+                  let tmp9;
+                  if (length.length > 0) {
+                    tmp9 = length;
+                  }
+                  obj[3] = tmp9;
+                  obj[4] = obj;
+                  obj[5] = sessionId.getSessionId();
+                  obj[6] = dependencyMap;
+                  obj[1] = obj;
+                  obj[2] = tmp13;
+                  HTTP.post(obj).catch((status) => {
+                    if (429 === status.status) {
+                      const _setTimeout = setTimeout;
+                      const timerId = setTimeout(ensureGuildLoaded, status.body.retry_after * outer1_1(outer1_2[29]).Millis.SECOND);
+                    } else {
+                      outer1_0(outer1_2[26]).setFailed(closure_2);
+                      const obj = outer1_0(outer1_2[26]);
+                    }
+                  });
+                  const postResult = HTTP.post(obj);
+                }
+              }
+            }
+            send();
+            c6 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp10) {
+          c6 = tmp;
+          throw tmp10;
+        }
+      }
+    })();
+  });
+  const _submitModal = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-let result = require("result").fileFinishedImporting("modules/interaction_components/InteractionModalUtils.tsx");
+let result = require("noop").fileFinishedImporting("modules/interaction_components/InteractionModalUtils.tsx");
 
 export const useIsFirstTextInputInModal = function useIsFirstTextInputInModal(id) {
-  const componentStateContext = require(7868) /* isInteractionComponent */.useComponentStateContext();
+  const componentStateContext = require(7891) /* isInteractionComponent */.useComponentStateContext();
   let first;
-  if (null != componentStateContext) {
+  if (componentStateContext != null) {
     const modal = componentStateContext.modal;
-    if (null != modal) {
+    if (modal != null) {
       first = modal.components[0];
     }
   }
   let type;
-  if (null != first) {
+  if (first != null) {
     type = first.type;
   }
-  let tmp4 = type === require(1882) /* PermissionOverwriteType */.ComponentType.ACTION_ROW;
-  if (tmp4) {
-    tmp4 = first.components[0].id === id;
+  let tmp6 = type === require(1906) /* PermissionOverwriteType */.ComponentType.ACTION_ROW;
+  if (tmp6) {
+    tmp6 = first.components[0].id === id;
   }
-  return tmp4;
+  return tmp6;
 };
-export const useModalState = function useModalState(customId) {
+export const useModalState = function useModalState(channelId) {
   let application;
-  let components;
-  let tmp6;
+  let _slicedToArray;
+  let customId;
+  let tmp3;
   let tmp7;
-  const _require = customId;
+  let tmp8;
+  application = channelId;
   const importDefault = arg1;
-  customId = customId.customId;
-  ({ application, components } = customId);
+  ({ application, customId } = channelId);
   const tmp = importDefault(customId[16])();
   let callback = tmp;
+  [tmp3, _slicedToArray] = callback2(first.useState(null), 2);
+  const tmp4 = callback2(first.useState(null), 2);
+  first = tmp4[0];
+  let fetchFingerprint = tmp4[1];
   const tmp2 = callback2(first.useState(null), 2);
-  callback2 = tmp2[1];
-  const tmp3 = callback2(first.useState(null), 2);
-  first = tmp3[0];
-  let closure_6 = tmp3[1];
-  [tmp6, tmp7] = callback2(first.useState({}), 2);
-  let obj = _require(customId[17]);
-  const items = [closure_12];
+  [tmp7, tmp8] = callback2(first.useState({}), 2);
+  let obj = application(customId[17]);
+  const items = [getModalState];
   const items1 = [first];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_12.getModalState(first), items1);
-  const fn = () => new Set();
-  const tmp9 = importDefault(customId[18])(fn);
-  const DraftType = tmp9;
-  // CreateGeneratorClosureLongIndex (0x67)
-  const items2 = [tmp, customId, tmp9];
-  const items3 = [first, stateFromStores, arg1, customId, customId.channelId];
-  callback = first.useCallback(callback(fn), items2);
+  const tmp10 = importDefault(customId[18])(() => new Set());
+  const DraftType = tmp10;
+  const items2 = [tmp, channelId, tmp10];
+  const items3 = [first, stateFromStores, arg1, customId, channelId.channelId];
+  callback = first.useCallback(callback(function*() {
+    if (c0 === 2) {
+      c0 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c0 = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            c0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            outer1_4(null);
+            outer1_6(null);
+            if ((function validate(outer1_8) {
+              let c0 = true;
+              const item = outer1_8.forEach((arg0) => {
+                if (!arg0()) {
+                  let c0 = false;
+                }
+              });
+              return c0;
+            })(outer1_8)) {
+              let obj1 = v0(outer1_2[19]);
+              const _Date = Date;
+              const fromTimestampResult = obj1.fromTimestamp(Date.now());
+              tmp22(fromTimestampResult);
+              v0 = 1;
+              c0 = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = outer1_18(c0, outer1_3, fromTimestampResult);
+              return obj1;
+            }
+            tmp22 = outer1_6;
+          }
+        } else if (arg0 === 1) {
+          c0 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c0 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        }
+        c0 = 3;
+        return { value: "HermesInternal", done: null };
+      } catch (tmp13) {
+        c0 = tmp;
+        throw tmp13;
+      }
+    }
+  }), items2);
   const effect = first.useEffect(() => {
     if (stateFromStores === outer1_13.SUCCEEDED) {
       let obj = callback(customId[20]);
-      obj = { type: "CLEAR_INTERACTION_MODAL_STATE", customId };
+      obj = { type: "CLEAR_INTERACTION_MODAL_STATE", customId: null };
+      obj[1] = customId;
       obj.dispatch(obj);
-      const obj3 = callback(customId[21]);
-      obj3.removeFiles(customId.channelId, outer1_18(customId.channelId, customId).map((id) => id.id), customId.InteractionModal);
+      const application = customId;
+      const uploads = outer1_11.getUploads(application.channelId, tmp10.InteractionModal);
+      const found = uploads.filter((id) => {
+        const result = callback(outer1_2[24]).deserializeComponentUploadId(id.id);
+        let containerId;
+        if (result != null) {
+          containerId = result.containerId;
+        }
+        return containerId === callback;
+      });
+      callback(customId[21]).removeFiles(application.channelId, found.map((id) => id.id), tmp10.InteractionModal);
       callback();
-      const arr = outer1_18(customId.channelId, customId);
+      const obj3 = callback(customId[21]);
     }
     if (stateFromStores === outer1_13.ERRORED) {
-      const intl = customId(customId[22]).intl;
-      callback2(intl.string(customId(customId[22]).t.uJgdEu));
+      const intl = application(customId[22]).intl;
+      callback2(intl.string(application(customId[22]).t.uJgdEu));
     }
   }, items3);
-  const tmp12 = useApplicationInfo(application);
-  obj = { components, applicationIconURL: tmp12.applicationIconURL, applicationName: tmp12.applicationName, submissionState: stateFromStores, error: tmp2[0], validators: tmp9, validationErrors: tmp6, setValidationErrors: tmp7, onSubmit: callback };
+  const items4 = [, , , ];
+  ({ id: arr5[0], icon: arr5[1], name: arr5[2], bot: arr5[3] } = application);
+  const memo = first.useMemo(() => {
+    const guildId = outer1_10.getGuildId();
+    let member;
+    if (null != guildId) {
+      if (null != application.bot) {
+        member = outer1_9.getMember(guildId, tmp3.bot.id);
+      }
+    }
+    let obj = outer1_1(outer1_2[14]);
+    obj = { id: application.id, icon: application.icon, botIconFirst: true, bot: null, guildMember: null };
+    let bot;
+    if (null != member) {
+      bot = tmp7.bot;
+    }
+    obj = { applicationIconURL: obj.getApplicationIconURL(obj), applicationName: null, applicationBaseUrl: null };
+    obj[3] = bot;
+    obj[4] = member;
+    let nick;
+    if (member != null) {
+      nick = member.nick;
+    }
+    if (null != nick) {
+      let name = member.nick;
+    } else if (null != tmp7.bot) {
+      name = tmp7.bot.username;
+    } else {
+      name = tmp7.name;
+    }
+    obj[1] = name;
+    obj[2] = outer1_1(outer1_2[15])(application.id);
+    return obj;
+  }, items4);
+  obj = { components: channelId.components, applicationIconURL: memo.applicationIconURL, applicationName: memo.applicationName, submissionState: stateFromStores, error: tmp3, validators: tmp10, validationErrors: tmp7, setValidationErrors: tmp8, onSubmit: callback };
   return obj;
 };
 export const useIframeModalState = function useIframeModalState(channelId) {
@@ -288,18 +2373,51 @@ export const useIframeModalState = function useIframeModalState(channelId) {
   let applicationName;
   let customId;
   ({ application, customId } = channelId);
-  const tmp = useApplicationInfo(application);
-  const applicationBaseUrl = tmp.applicationBaseUrl;
-  ({ applicationIconURL, applicationName } = tmp);
+  const items = [, , , ];
+  ({ id: arr[0], icon: arr[1], name: arr[2], bot: arr[3] } = application);
+  const memo = React.useMemo(() => {
+    const guildId = outer1_10.getGuildId();
+    let member;
+    if (null != guildId) {
+      if (null != application.bot) {
+        member = outer1_9.getMember(guildId, tmp3.bot.id);
+      }
+    }
+    let obj = outer1_1(outer1_2[14]);
+    obj = { id: application.id, icon: application.icon, botIconFirst: true, bot: null, guildMember: null };
+    let bot;
+    if (null != member) {
+      bot = tmp7.bot;
+    }
+    obj = { applicationIconURL: obj.getApplicationIconURL(obj), applicationName: null, applicationBaseUrl: null };
+    obj[3] = bot;
+    obj[4] = member;
+    let nick;
+    if (member != null) {
+      nick = member.nick;
+    }
+    if (null != nick) {
+      let name = member.nick;
+    } else if (null != tmp7.bot) {
+      name = tmp7.bot.username;
+    } else {
+      name = tmp7.name;
+    }
+    obj[1] = name;
+    obj[2] = outer1_1(outer1_2[15])(application.id);
+    return obj;
+  }, items);
+  const applicationBaseUrl = memo.applicationBaseUrl;
+  ({ applicationIconURL, applicationName } = memo);
   channel = channel.getChannel(channelId.channelId);
-  importDefault(44)(null != channel, "channel should not be null");
+  importDefault(38)(null != channel, "channel should not be null");
   let obj = { instance_id: "" + channelId.channelId + ":" + application.id + ":" + customId, custom_id: customId, channel_id: channelId.channelId };
-  let str = "";
   if (tmp4) {
     obj.guild_id = channel.guild_id;
   }
-  if (null != applicationBaseUrl) {
-    str = applicationBaseUrl;
+  let str = applicationBaseUrl;
+  if (applicationBaseUrl == null) {
+    str = "";
   }
   const str2 = new URL(str);
   str2.pathname = channelId.iframePath;

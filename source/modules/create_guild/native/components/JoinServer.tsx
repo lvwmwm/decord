@@ -1,96 +1,100 @@
-// Module ID: 11786
-// Function ID: 91380
+// Module ID: 11811
+// Function ID: 11812
 // Name: JoinServerContainer
-// Dependencies: [57, 31, 9199, 33, 4165, 5118, 1456, 5121, 11749, 5155, 9198, 1212, 6672, 2]
+// Dependencies: [32, 19, 9223, 21, 4189, 5140, 1480, 5143, 11774, 5177, 9222, 1236, 6693, 2]
 // Exports: default
 
-// Module 11786 (JoinServerContainer)
+// Module 11811 (JoinServerContainer)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ CreateGuildModalStates: closure_5, NUXGuildTemplatesAnalytics: closure_6 } = NUXGuildTemplatesAnalytics);
-_createForOfIteratorHelperLoose = { flex: { flex: 1 } };
-_createForOfIteratorHelperLoose = { marginTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT };
-_createForOfIteratorHelperLoose.contentContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ CreateGuildModalStates: c5, NUXGuildTemplatesAnalytics: closure_6 } = NUXGuildTemplatesAnalytics);
+createCacheKey = { flex: { flex: 1 }, contentContainer: null };
+createCacheKey = { marginTop: require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT };
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("NUXGuildTemplatesAnalytics").fileFinishedImporting("modules/create_guild/native/components/JoinServer.tsx");
 
 export default function JoinServerContainer(initialRoute) {
-  let closure_5;
+  let c5;
   let tmp5;
   initialRoute = initialRoute.initialRoute;
   const onClose = initialRoute.onClose;
   const location = initialRoute.location;
+  let first;
+  let React;
+  c5 = undefined;
+  let closure_6;
+  let navigation;
   const tmp2 = first(React.useState(""), 2);
   first = tmp2[0];
   React = tmp2[1];
-  const tmp = _createForOfIteratorHelperLoose();
-  [tmp5, closure_5] = first(React.useState(false), 2);
+  const tmp = createCacheKey();
+  [tmp5, c5] = first(React.useState(false), 2);
   const tmp6 = first(React.useState(false), 2);
-  let closure_6 = tmp6[1];
+  closure_6 = tmp6[1];
   let obj = initialRoute(location[6]);
-  const navigation = obj.useNavigation();
+  navigation = obj.useNavigation();
   const items = [navigation, initialRoute, onClose];
   const layoutEffect = React.useLayoutEffect(() => {
-    const obj = {};
-    if (initialRoute === outer1_5.JOIN_SERVER) {
+    if (initialRoute === _undefined.JOIN_SERVER) {
       let headerCloseButton = initialRoute(location[7]).getHeaderCloseButton(() => {
-        initialRoute(location[8]).trackNUFStep(constants.STEP_GUILD_JOIN, constants.STEP_FRIEND_LIST, { skip: true });
-        outer1_1();
-      });
-      const obj3 = initialRoute(location[7]);
-    } else {
-      headerCloseButton = initialRoute(location[7]).getHeaderBackButton(() => {
-        outer1_1();
+        outer1_0(outer1_2[8]).trackNUFStep(outer1_6.STEP_GUILD_JOIN, outer1_6.STEP_FRIEND_LIST, { skip: true });
+        callback();
       });
       const obj2 = initialRoute(location[7]);
+    } else {
+      headerCloseButton = initialRoute(location[7]).getHeaderBackButton(() => {
+        callback();
+      });
+      const obj = initialRoute(location[7]);
     }
-    obj.headerLeft = headerCloseButton;
-    navigation.setOptions(obj);
+    navigation.setOptions({ headerLeft: headerCloseButton });
   }, items);
-  obj = { top: true, style: items1 };
+  obj = { top: true, style: items1, children: null };
   items1 = [, ];
   ({ flex: arr2[0], contentContainer: arr2[1] } = tmp);
-  obj = { inviteString: first };
+  obj = { inviteString: first, error: null, submitting: null, onInviteChange: null, onDone: null };
   let stringResult = null;
   const tmp4 = first(React.useState(false), 2);
   if (tmp5) {
-    const intl = initialRoute(location[11]).intl;
-    stringResult = intl.string(initialRoute(location[11]).t.IRq5ah);
+    const intl = tmp7(tmp8[11]).intl;
+    stringResult = intl.string(tmp7(tmp8[11]).t.IRq5ah);
   }
-  obj.error = stringResult;
-  obj.submitting = tmp6[0];
-  obj.onInviteChange = function onInviteChange(arg0) {
+  obj[1] = stringResult;
+  obj[2] = tmp6[0];
+  obj[3] = function onInviteChange(arg0) {
     callback(arg0);
   };
-  obj.onDone = function onDone(arg0) {
+  obj[4] = function onDone(arg0) {
     const str = first.trim();
     if ("" !== str) {
-      callback3(true);
-      callback2(false);
+      callback2(true);
+      _undefined(false);
       const parts = str.split("/");
       let arr = parts.pop();
       let obj = onClose(location[12]);
-      let str3 = "Join Guild Modal";
-      if (null != location) {
-        str3 = location;
+      let str3 = location;
+      if (location == null) {
+        str3 = "Join Guild Modal";
       }
       const invite = obj.resolveInvite(arr, str3);
       invite.then(() => {
-        outer1_6(false);
+        callback(false);
       });
-      obj = { code: arr };
-      arr = navigation.push(outer1_5.ACCEPT_INVITE, obj);
+      obj = { code: null };
+      obj[0] = arr;
+      arr = navigation.push(_undefined.ACCEPT_INVITE, obj);
     } else {
-      callback2(true);
+      _undefined(true);
     }
   };
-  obj.children = navigation(onClose(location[10]), obj);
+  obj[2] = navigation(onClose(location[10]), obj);
   return navigation(initialRoute(location[9]).SafeAreaPaddingView, obj);
 };

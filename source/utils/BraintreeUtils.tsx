@@ -1,48 +1,74 @@
-// Module ID: 3827
-// Function ID: 29669
+// Module ID: 3851
+// Function ID: 3852
 // Name: getBraintreeSDK
-// Dependencies: [3828, 653, 3829, 3832, 1935, 3832, 2]
-// Exports: collectDeviceData
+// Dependencies: [3852, 676, 3853, 3856, 1959, 3856, 2]
+// Exports: collectDeviceData, getBraintreeSDK
 
-// Module 3827 (getBraintreeSDK)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 3851 (getBraintreeSDK)
+import getClient from "getClient";
 import { PaymentSettings } from "ME";
 
 const require = arg1;
-function getBraintreeSDK() {
-  let obj = require(3829);
+const result = require("module_3853").fileFinishedImporting("utils/BraintreeUtils.tsx");
+
+export const getBraintreeSDK = function getBraintreeSDK() {
+  let obj = require(3853);
   obj = {
     createPromise() {
-      return outer1_0(outer1_1[4])(outer1_1[3], outer1_1.paths);
+      return callback(paths[4])(paths[3], paths.paths);
     },
-    webpackId: 3832
+    webpackId: 3856
   };
   return obj.importWithRetry(obj).then((arg0) => arg0.default);
-}
-function getDeviceData(arg0) {
-  let closure_0 = arg0;
-  return getBraintreeSDK().then((dataCollector) => {
-    dataCollector = dataCollector.dataCollector;
-    let obj = { client: closure_0 };
-    obj = dataCollector.create(obj);
-    return obj.then((deviceData) => deviceData.deviceData).catch(() => null);
-  });
-}
-const result = require("module_3829").fileFinishedImporting("utils/BraintreeUtils.tsx");
-
-export { getBraintreeSDK };
+};
 export const collectDeviceData = function collectDeviceData() {
   client = client.getClient();
   if (null == client) {
-    let nextPromise = getBraintreeSDK().then((client) => {
+    let obj = { createPromise: null, webpackId: null };
+    obj[0] = function createPromise() {
+      return callback(paths[4])(paths[3], paths.paths);
+    };
+    obj[1] = 3856;
+    const obj3 = client(3853);
+    let importWithRetryResult = client(3853).importWithRetry(obj);
+    let nextPromise1 = client(3853).importWithRetry(obj).then((arg0) => arg0.default).then((client) => {
       client = client.client;
-      let obj = { authorization: outer1_3.BRAINTREE.KEY };
+      let obj = { authorization: constants.BRAINTREE.KEY };
       obj = client.create(obj);
-      return obj.then((arg0) => outer2_5(arg0)).catch(() => null);
+      return obj.then((arg0) => {
+        const callback = arg0;
+        let obj = callback(3853);
+        obj = {
+          createPromise() {
+            return callback(paths[4])(paths[3], paths.paths);
+          },
+          webpackId: 3856
+        };
+        const importWithRetryResult = obj.importWithRetry(obj);
+        return obj.importWithRetry(obj).then((arg0) => arg0.default).then((dataCollector) => {
+          dataCollector = dataCollector.dataCollector;
+          let obj = { client: closure_0 };
+          obj = dataCollector.create(obj);
+          return obj.then((deviceData) => deviceData.deviceData).catch(() => null);
+        });
+      }).catch(() => null);
     });
-    const promise = getBraintreeSDK();
+    const nextPromise = client(3853).importWithRetry(obj).then((arg0) => arg0.default);
   } else {
-    nextPromise = getDeviceData(client);
+    obj = client(3853);
+    obj = { createPromise: null, webpackId: null };
+    obj[0] = function createPromise() {
+      return callback(paths[4])(paths[3], paths.paths);
+    };
+    obj[1] = 3856;
+    const importWithRetryResult1 = obj.importWithRetry(obj);
+    nextPromise1 = obj.importWithRetry(obj).then((arg0) => arg0.default).then((dataCollector) => {
+      dataCollector = dataCollector.dataCollector;
+      let obj = { client: closure_0 };
+      obj = dataCollector.create(obj);
+      return obj.then((deviceData) => deviceData.deviceData).catch(() => null);
+    });
+    const nextPromise2 = obj.importWithRetry(obj).then((arg0) => arg0.default);
   }
-  return nextPromise;
+  return nextPromise1;
 };

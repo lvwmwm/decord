@@ -1,32 +1,32 @@
-// Module ID: 9883
-// Function ID: 76448
+// Module ID: 9905
+// Function ID: 9906
 // Name: SearchableDestinationList
-// Dependencies: [57, 31, 27, 653, 8789, 33, 4165, 689, 9884, 5617, 6140, 6145, 5928, 1327, 8803, 9889, 9891, 8796, 9892, 1212, 4697, 9215, 2]
+// Dependencies: [32, 19, 17, 676, 8813, 21, 4189, 712, 9906, 5635, 6158, 6163, 5947, 1351, 8827, 9911, 9913, 8820, 9914, 1236, 4719, 9239, 2]
 // Exports: default
 
-// Module 9883 (SearchableDestinationList)
+// Module 9905 (SearchableDestinationList)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import getSystemLocale from "getSystemLocale";
+import get_ActivityIndicator from "Placeholder";
 import { NOOP } from "ME";
 import { UserRowModes } from "UserRowModes";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "SearchField";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_9;
+let unpackModuleId;
 const require = arg1;
-({ View: closure_5, Keyboard: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_9, Fragment: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-_createForOfIteratorHelperLoose.searchBarContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.noResults = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+({ View: c5, Keyboard: closure_6 } = get_ActivityIndicator);
+({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { searchBarContainer: null, noResults: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/share/native/SearchableDestinationList.tsx");
 
 export default function SearchableDestinationList(getRowIsUnavailable) {
@@ -35,11 +35,10 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
   let defaultNoResultsFound;
   let disableGradient;
   let disableSelection;
-  let disableStickySections;
   let disabledDestinations;
   let initialSelectedDestinations;
   let originDestination;
-  let tmp13;
+  let tmp14;
   ({ initialSelectedDestinations, disabledDestinations } = getRowIsUnavailable);
   getRowIsUnavailable = getRowIsUnavailable.getRowIsUnavailable;
   const onSelectedDestinationChange = getRowIsUnavailable.onSelectedDestinationChange;
@@ -65,17 +64,17 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  ({ defaultNoResultsFound, disableSelection } = getRowIsUnavailable);
+  ({ defaultNoResultsFound, disableGradient, disableSelection } = getRowIsUnavailable);
   const disableLongPress = getRowIsUnavailable.disableLongPress;
   let ref;
   first = undefined;
-  let callback;
+  let closure_9;
   let results;
   let updateSearchText;
-  let _createForOfIteratorHelperLoose;
+  let createCacheKey;
   c13 = undefined;
   let closure_14;
-  callback = undefined;
+  let callback;
   let memo1;
   let memo2;
   let callback2;
@@ -85,30 +84,30 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
   let ref1;
   let c23;
   let scaledTextLineHeight;
-  ({ disableGradient, disableStickySections } = getRowIsUnavailable);
-  const tmp6 = _createForOfIteratorHelperLoose();
+  let tmp6 = createCacheKey();
+  let obj = NONE;
   ref = NONE.useRef(null);
-  if (null == initialSelectedDestinations) {
+  if (initialSelectedDestinations == null) {
     initialSelectedDestinations = [];
   }
-  const tmp9 = onSearchTextChange(NONE.useState(initialSelectedDestinations), 2);
-  first = tmp9[0];
-  callback = tmp9[1];
-  let obj = disabledDestinations(onSelectedDestinationChange[8]);
-  const shareSearchResults = obj.useShareSearchResults({ selectedDestinations: first, originDestination, channelFilter, includeMissingDMs: true });
+  const tmp8 = onSearchTextChange(NONE.useState(initialSelectedDestinations), 2);
+  first = tmp8[0];
+  closure_9 = tmp8[1];
+  let obj1 = disabledDestinations(onSelectedDestinationChange[8]);
+  const shareSearchResults = obj1.useShareSearchResults({ selectedDestinations: first, originDestination, channelFilter, includeMissingDMs: true });
   results = shareSearchResults.results;
   updateSearchText = shareSearchResults.updateSearchText;
-  _createForOfIteratorHelperLoose = NONE.useRef("");
-  [tmp13, c13] = onSearchTextChange(NONE.useState(false), 2);
-  closure_14 = NONE.useRef(null);
-  const effect = NONE.useEffect(() => () => {
-    const current = outer1_14.current;
-    if (null != current) {
+  createCacheKey = obj.useRef("");
+  [tmp14, c13] = onSearchTextChange(obj.useState(false), 2);
+  closure_14 = obj.useRef(null);
+  const effect = obj.useEffect(() => () => {
+    const current = ref.current;
+    if (current != null) {
       current.cancel();
     }
   }, []);
   let items = [onSearchTextChange, updateSearchText];
-  callback = NONE.useCallback((current) => {
+  callback = obj.useCallback((current) => {
     let flag = arg1;
     if (arg1 === undefined) {
       flag = false;
@@ -117,18 +116,18 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
       ref.current = current;
       if (flag) {
         current = ref.current;
-        if (null != current) {
+        if (current != null) {
           current.setText(current);
         }
       }
       updateSearchText(current);
-      if (null != onSearchTextChange) {
+      if (onSearchTextChange != null) {
         onSearchTextChange(current);
       }
       _undefined(current.trim().length > 0);
       closure_14.current = disabledDestinations(onSelectedDestinationChange[9]).runAfterInteractions(() => {
-        const current = outer1_22.current;
-        if (null != current) {
+        const current = ref.current;
+        if (current != null) {
           current.scrollToTop(false);
         }
       });
@@ -136,48 +135,48 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
     }
   }, items);
   let items1 = [first, onSelectedDestinationChange, callback];
-  const effect1 = NONE.useEffect(() => {
+  const effect1 = obj.useEffect(() => {
     onSelectedDestinationChange(first);
     const timerId = setTimeout(() => {
-      disableLongPress.dismiss();
+      closure_6.dismiss();
     }, 0);
     const timerId1 = setTimeout(() => {
-      outer1_15("", true);
+      callback("", true);
     }, 50);
   }, items1);
   const items2 = [results.length];
-  const memo = NONE.useMemo(() => {
+  const memo = obj.useMemo(() => {
     const items = [results.length];
     return items;
   }, items2);
   const items3 = [disabledDestinations];
-  const callback1 = NONE.useCallback(() => ({ type: "section", props: { hideTitle: true } }), []);
-  memo1 = NONE.useMemo(() => {
+  const callback1 = obj.useCallback(() => ({ type: "section", props: { hideTitle: true } }), []);
+  memo1 = obj.useMemo(() => {
     let mapped;
-    if (null != disabledDestinations) {
+    if (disabledDestinations != null) {
       mapped = disabledDestinations.map(disabledDestinations(onSelectedDestinationChange[10]).destinationKey);
     }
-    if (null == mapped) {
+    if (mapped == null) {
       mapped = [];
     }
     return mapped;
   }, items3);
   const items4 = [first];
-  memo2 = NONE.useMemo(() => {
+  memo2 = obj.useMemo(() => {
     let mapped;
-    if (null != first) {
+    if (first != null) {
       mapped = first.map(disabledDestinations(onSelectedDestinationChange[10]).destinationKey);
     }
-    if (null == mapped) {
+    if (mapped == null) {
       mapped = [];
     }
     return mapped;
   }, items4);
   const items5 = [disableSelection];
-  callback2 = NONE.useCallback((arg0) => {
+  callback2 = obj.useCallback((arg0) => {
     let closure_0 = arg0;
     callback((arr) => {
-      const findIndexResult = arr.findIndex((id) => id.id === outer1_0.id);
+      const findIndexResult = arr.findIndex((id) => id.id === id.id);
       if (-1 === findIndexResult) {
         if (outer1_5) {
           return arr;
@@ -195,137 +194,140 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
     });
   }, items5);
   const items6 = [callback2];
-  callback3 = NONE.useCallback((id) => callback2({ type: "user", id: id.id }), items6);
+  callback3 = obj.useCallback((id) => callback2({ type: "user", id: id.id }), items6);
   const items7 = [callback2];
-  callback4 = NONE.useCallback((id) => callback2({ type: "channel", id: id.id }), items7);
+  callback4 = obj.useCallback((id) => callback2({ type: "channel", id: id.id }), items7);
   const items8 = [results, getRowIsUnavailable, memo2, memo1, disableSelection, disableLongPress, NONE, callback3, callback4];
-  callback5 = NONE.useCallback((arg0, arg1) => {
+  callback5 = obj.useCallback((arg0, arg1) => {
     let record;
     let type;
     ({ type, record } = results[arg1]);
-    let num = 1;
     const diff = results.length - 1;
     if (type !== disabledDestinations(onSelectedDestinationChange[11]).AutocompleterResultTypes.HEADER) {
-      if (type === disabledDestinations(onSelectedDestinationChange[11]).AutocompleterResultTypes.USER) {
-        let obj2 = disabledDestinations(onSelectedDestinationChange[10]);
-        let obj = { type: "user", id: record.id };
-        let destinationKeyResult = obj2.destinationKey(obj);
+      if (type === tmp2(tmp3[11]).AutocompleterResultTypes.USER) {
+        let tmp2Result = tmp2(tmp3[10]);
+        let obj = { type: "user", id: null };
+        obj[1] = record.id;
+        let destinationKeyResult = tmp2Result.destinationKey(obj);
       } else {
-        obj = disabledDestinations(onSelectedDestinationChange[10]);
-        obj = { type: "channel", id: record.id };
-        destinationKeyResult = obj.destinationKey(obj);
+        tmp2Result = tmp2(tmp3[10]);
+        obj = { type: "channel", id: null };
+        obj[1] = record.id;
+        destinationKeyResult = tmp2Result.destinationKey(obj);
       }
-      let tmp11;
-      if (null != getRowIsUnavailable) {
-        tmp11 = getRowIsUnavailable(record);
+      let tmp6;
+      if (getRowIsUnavailable != null) {
+        tmp6 = getRowIsUnavailable(record);
       }
       const hasItem = memo2.includes(destinationKeyResult);
-      const obj1 = {};
-      let tmp17 = disableSelection;
+      let tmp11 = disableSelection;
       const hasItem1 = memo1.includes(destinationKeyResult);
       if (disableSelection) {
-        tmp17 = !hasItem;
+        tmp11 = !hasItem;
       }
-      if (!tmp17) {
-        tmp17 = hasItem1;
+      if (!tmp11) {
+        tmp11 = hasItem1;
       }
-      if (!tmp17) {
-        tmp17 = null != tmp11;
+      if (!tmp11) {
+        tmp11 = null != tmp6;
       }
-      obj1.disabled = tmp17;
-      obj1.selected = hasItem;
-      if (null != tmp11) {
+      const obj1 = { disabled: null, selected: null, mode: null, subLabel: null, subLabelLineClamp: null, start: null, end: null };
+      obj1[0] = tmp11;
+      obj1[1] = hasItem;
+      if (null != tmp6) {
         const NONE = first.NONE;
       }
-      obj1.mode = NONE;
+      obj1[2] = NONE;
       let label;
-      if (null != tmp11) {
-        label = tmp11.label;
+      if (null != tmp6) {
+        label = tmp6.label;
       }
-      obj1.subLabel = label;
-      let tmp20;
-      if (null != tmp11) {
-        const lineClamp = tmp11.lineClamp;
-        if (null != lineClamp) {
-          num = lineClamp;
+      obj1[3] = label;
+      let tmp14;
+      if (null != tmp6) {
+        let num = tmp6.lineClamp;
+        if (num == null) {
+          num = 1;
         }
-        tmp20 = num;
+        tmp14 = num;
       }
-      obj1.subLabelLineClamp = tmp20;
-      obj1.start = 0 === arg1;
-      obj1.end = arg1 === diff;
-      if (disabledDestinations(onSelectedDestinationChange[11]).AutocompleterResultTypes.USER === type) {
-        obj2 = { type: "user" };
-        const obj3 = {};
+      obj1[4] = tmp14;
+      obj1[5] = 0 === arg1;
+      obj1[6] = arg1 === diff;
+      if (tmp2(tmp3[11]).AutocompleterResultTypes.USER === type) {
+        const obj2 = {};
         const merged = Object.assign(obj1);
-        obj3["user"] = record;
-        obj3["type"] = disabledDestinations(onSelectedDestinationChange[12]).getRelationshipType(record.id);
-        obj3["onPress"] = callback3;
-        let tmp54;
+        obj2.user = record;
+        obj2.type = tmp2(tmp3[12]).getRelationshipType(record.id);
+        obj2.onPress = callback3;
+        let tmp40;
         if (disableLongPress) {
-          const obj4 = { onLongPress: ref };
-          tmp54 = obj4;
+          const obj3 = { onLongPress: null };
+          obj3[0] = ref;
+          tmp40 = obj3;
         }
-        const merged1 = Object.assign(tmp54);
-        obj2.props = obj3;
-        return obj2;
-      } else if (disabledDestinations(onSelectedDestinationChange[11]).AutocompleterResultTypes.GROUP_DM === type) {
-        let obj5 = { type: "gdm" };
-        const obj6 = {};
+        const obj4 = { type: "user", props: null };
+        const merged1 = Object.assign(tmp40);
+        obj4[1] = obj2;
+        return obj4;
+      } else if (tmp2(tmp3[11]).AutocompleterResultTypes.GROUP_DM === type) {
+        const obj5 = {};
         const merged2 = Object.assign(obj1);
-        obj6["channel"] = record;
-        obj6["onPress"] = callback4;
-        let tmp42;
+        obj5.channel = record;
+        obj5.onPress = callback4;
+        let tmp30;
         if (disableLongPress) {
-          const obj7 = { onLongPress: ref };
-          tmp42 = obj7;
+          const obj6 = { onLongPress: null };
+          obj6[0] = ref;
+          tmp30 = obj6;
         }
-        const merged3 = Object.assign(tmp42);
-        obj5.props = obj6;
-        return obj5;
+        const obj7 = { type: "gdm", props: null };
+        const merged3 = Object.assign(tmp30);
+        obj7[1] = obj5;
+        return obj7;
       } else {
-        if (disabledDestinations(onSelectedDestinationChange[11]).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-          if (disabledDestinations(onSelectedDestinationChange[11]).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
-            obj5 = disabledDestinations(onSelectedDestinationChange[13]);
-            return obj5.assertNever(type);
+        if (tmp2(tmp3[11]).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+          if (tmp2(tmp3[11]).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+            return tmp2(tmp3[13]).assertNever(type);
           }
         }
-        const obj8 = { type: "channel" };
-        const obj9 = {};
+        const obj8 = {};
         const merged4 = Object.assign(obj1);
-        obj9["channel"] = record;
-        obj9["onPress"] = callback4;
-        let tmp32;
+        obj8.channel = record;
+        obj8.onPress = callback4;
+        let tmp20;
         if (disableLongPress) {
-          const obj10 = { onLongPress: ref };
-          tmp32 = obj10;
+          const obj9 = { onLongPress: null };
+          obj9[0] = ref;
+          tmp20 = obj9;
         }
-        const merged5 = Object.assign(tmp32);
-        obj8.props = obj9;
-        return obj8;
+        const obj10 = { type: "channel", props: null };
+        const merged5 = Object.assign(tmp20);
+        obj10[1] = obj8;
+        return obj10;
       }
     }
   }, items8);
-  ref1 = NONE.useRef(null);
-  const tmp25 = getRowIsUnavailable(onSelectedDestinationChange[14])();
-  c23 = tmp25;
-  let obj2 = disabledDestinations(onSelectedDestinationChange[15]);
-  scaledTextLineHeight = obj2.useScaledTextLineHeight("text-xs/medium");
-  const items9 = [callback5, tmp25, scaledTextLineHeight];
-  const callback6 = NONE.useCallback((arg0, arg1) => {
+  ref1 = obj.useRef(null);
+  const tmp27 = getRowIsUnavailable(onSelectedDestinationChange[14])();
+  c23 = tmp27;
+  let obj3 = disabledDestinations(onSelectedDestinationChange[15]);
+  scaledTextLineHeight = obj3.useScaledTextLineHeight("text-xs/medium");
+  const items9 = [callback5, tmp27, scaledTextLineHeight];
+  const callback6 = obj.useCallback((arg0, arg1) => {
     const element = callback5(arg0, arg1);
     let type;
-    if (null != element) {
+    if (element != null) {
       type = element.type;
     }
     if ("user" !== type) {
       let type1;
-      if (null != element) {
+      if (element != null) {
         type1 = element.type;
       }
       if ("gdm" !== type1) {
         let type2;
-        if (null != element) {
+        if (element != null) {
           type2 = element.type;
         }
       }
@@ -341,58 +343,64 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
   }, items9);
   const someResult = memo.some((arg0) => arg0 > 0);
   if (someResult) {
-    obj = { ref: ref1, sections: memo, getItemProps: callback5, getSectionProps: callback1 };
-    let tmp39;
+    obj = { ref: null, sections: null, getItemProps: null, getSectionProps: null, getItemSize: null, insetStart: null, insetEnd: null, disableStickySections: null };
+    obj[0] = ref1;
+    obj[1] = memo;
+    obj[2] = callback5;
+    obj[3] = callback1;
+    let tmp36;
     if (null != getRowIsUnavailable) {
-      tmp39 = callback6;
+      tmp36 = callback6;
     }
-    obj.getItemSize = tmp39;
-    obj.insetStart = PX_8;
-    obj.insetEnd = PX_12;
-    obj.disableStickySections = disableStickySections;
-    let tmp29Result = tmp29(disabledDestinations(onSelectedDestinationChange[17]).UsersFastList, obj);
+    obj[4] = tmp36;
+    obj[5] = PX_8;
+    obj[6] = PX_12;
+    obj[7] = getRowIsUnavailable.disableStickySections;
+    let tmp31Result = tmp31(tmp10(tmp11[17]).UsersFastList, obj);
+    let tmp35 = tmp31;
   } else {
-    if (!tmp13) {
+    if (!tmp14) {
       if (null != defaultNoResultsFound) {
-        obj = {};
+        obj = { style: null, children: null };
         const items10 = [tmp6.noResults];
-        obj.style = items10;
-        obj.children = defaultNoResultsFound;
+        obj[0] = items10;
+        obj[1] = defaultNoResultsFound;
       }
-      tmp29Result = tmp29(tmp30, obj);
+      tmp31Result = tmp31(tmp32, obj);
+      tmp35 = tmp31;
     }
-    let obj1 = { style: tmp6.noResults };
-    obj2 = {};
-    const intl = disabledDestinations(onSelectedDestinationChange[19]).intl;
-    obj2.title = intl.string(disabledDestinations(onSelectedDestinationChange[19]).t.V6nAfF);
-    obj1.children = callback(getRowIsUnavailable(onSelectedDestinationChange[18]), obj2);
+    obj1 = { style: null, children: null };
+    obj1[0] = tmp6.noResults;
+    let obj2 = { title: null };
+    const intl = tmp10(tmp11[19]).intl;
+    obj2[0] = intl.string(tmp10(tmp11[19]).t.V6nAfF);
+    obj1[1] = tmp31(tmp26(tmp11[18]), obj2);
     obj = obj1;
-    const tmp34 = getRowIsUnavailable(onSelectedDestinationChange[18]);
+    const tmp26Result = tmp26(tmp11[18]);
   }
-  let obj3 = {};
-  let tmp42 = !disableGradient;
-  if (tmp42) {
-    let obj4 = { absolute: true };
-    tmp42 = callback(getRowIsUnavailable(onSelectedDestinationChange[20]), obj4);
+  let tmp35Result = !disableGradient;
+  if (!disableGradient) {
+    tmp35Result = tmp35(tmp26(tmp11[20]), { absolute: true });
   }
-  const items11 = [tmp42, , ];
+  const items11 = [tmp35Result, , ];
   if (flag2) {
     if (!someResult) {
-      let tmp47Result = null;
+      tmp35Result = null;
     }
-    items11[1] = tmp47Result;
-    items11[2] = tmp29Result;
-    obj3.children = items11;
+    obj3 = { children: null };
+    items11[1] = tmp35Result;
+    items11[2] = tmp31Result;
+    obj3[0] = items11;
     return updateSearchText(results, obj3);
   }
-  let obj5 = { style: tmp6.searchBarContainer };
-  let obj6 = { ref, size: "md", onChange: callback };
+  let obj4 = { style: tmp6.searchBarContainer, children: null };
+  let obj5 = { ref, size: "md", onChange: callback, autoFocus: null, accessibilityLabel: null };
   if (flag) {
     flag = someResult;
   }
-  obj6.autoFocus = flag;
-  const intl2 = disabledDestinations(onSelectedDestinationChange[19]).intl;
-  obj6.accessibilityLabel = intl2.string(disabledDestinations(onSelectedDestinationChange[19]).t.CaEER6);
-  obj5.children = callback(disabledDestinations(onSelectedDestinationChange[21]).SearchField, obj6);
-  tmp47Result = tmp47(disableSelection, obj5);
+  obj5[3] = flag;
+  const intl2 = tmp10(tmp11[19]).intl;
+  obj5[4] = intl2.string(disabledDestinations(onSelectedDestinationChange[19]).t.CaEER6);
+  obj4[1] = tmp35(disabledDestinations(onSelectedDestinationChange[21]).SearchField, obj5);
+  tmp35Result = tmp35(disableSelection, obj4);
 };

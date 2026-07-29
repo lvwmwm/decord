@@ -1,19 +1,19 @@
-// Module ID: 7672
-// Function ID: 61213
+// Module ID: 7695
+// Function ID: 7696
 // Name: set
 // Dependencies: [2]
 
-// Module 7672 (set)
+// Module 7695 (set)
 import set from "set";
 
-const obj = {};
+const obj = { IN_APP: null, REPORT_TO_MOD: null, UNAUTHENTICATED: null, CONSOLE: null };
 let set = new Set(["application", "first_dm", "guild", "guild_directory_entry", "guild_discovery", "guild_scheduled_event", "message", "report_to_mod_message", "stage_channel", "user", "widget"]);
-obj.IN_APP = set;
-obj.REPORT_TO_MOD = new Set(["report_to_mod_message"]);
+obj[0] = set;
+obj[1] = new Set(["report_to_mod_message"]);
 const set1 = new Set(["report_to_mod_message"]);
-obj.UNAUTHENTICATED = new Set(["guild_urf", "media_takedown", "message_urf", "user_urf"]);
+obj[2] = new Set(["guild_urf", "media_takedown", "message_urf", "user_urf"]);
 const set2 = new Set(["guild_urf", "media_takedown", "message_urf", "user_urf"]);
-obj.CONSOLE = new Set(["playstation_console_voice", "xbox_console_voice"]);
+obj[3] = new Set(["playstation_console_voice", "xbox_console_voice"]);
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ReportMenuType.tsx");
 
 export const ReportMenuType = { message: "message", first_dm: "first_dm", guild: "guild", guild_directory_entry: "guild_directory_entry", guild_discovery: "guild_discovery", user: "user", stage_channel: "stage_channel", guild_scheduled_event: "guild_scheduled_event", application: "application", widget: "widget", user_urf: "user_urf", message_urf: "message_urf", guild_urf: "guild_urf", media_takedown: "media_takedown", xbox_console_voice: "xbox_console_voice", playstation_console_voice: "playstation_console_voice", report_to_mod_message: "report_to_mod_message" };

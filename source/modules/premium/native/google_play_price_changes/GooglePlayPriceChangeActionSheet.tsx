@@ -1,88 +1,87 @@
-// Module ID: 15723
-// Function ID: 121120
+// Module ID: 15759
+// Function ID: 15760
 // Name: GooglePlayPriceChangeActionSheet
-// Dependencies: [31, 27, 3817, 15724, 653, 1345, 33, 4165, 689, 566, 3811, 5651, 5221, 4161, 1212, 1921, 4578, 2]
+// Dependencies: [19, 17, 3841, 15760, 676, 1369, 21, 4189, 712, 589, 3835, 5669, 5243, 4185, 1236, 1945, 4600, 2]
 // Exports: default
 
-// Module 15723 (GooglePlayPriceChangeActionSheet)
-import "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 15759 (GooglePlayPriceChangeActionSheet)
+import "noop";
+import { View } from "set";
+import reset from "reset";
+import onInitializeSync from "onInitializeSync";
 import { HelpdeskArticles } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_32, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.textContainer = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-let obj2 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16, alignItems: "center", textAlign: "center" };
-_createForOfIteratorHelperLoose.header = obj2;
-_createForOfIteratorHelperLoose.body = { textAlign: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/native/google_play_price_changes/GooglePlayPriceChangeActionSheet.tsx");
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { container: null, textContainer: null, header: null, body: null };
+createCacheKey = { padding: require("Themes").space.PX_32, paddingTop: require("Themes").space.PX_24 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginBottom: require("Themes").space.PX_24 };
+let obj1 = { marginBottom: require("Themes").space.PX_24 };
+createCacheKey[2] = { marginBottom: require("Themes").space.PX_16, alignItems: "center", textAlign: "center" };
+createCacheKey[3] = { textAlign: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { marginBottom: require("Themes").space.PX_16, alignItems: "center", textAlign: "center" };
+const result = require("reset").fileFinishedImporting("modules/premium/native/google_play_price_changes/GooglePlayPriceChangeActionSheet.tsx");
 
 export default function GooglePlayPriceChangeActionSheet(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = markAsDismissed(566);
-  const items = [closure_5];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.priceChangeRecord);
-  let obj1 = markAsDismissed(566);
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_4.getPremiumSubscription(true));
-  let prop;
-  if (null != stateFromStores1) {
-    prop = stateFromStores1.premiumPlanIdFromItems;
+  const tmp = createCacheKey();
+  let obj = markAsDismissed(589);
+  const items = [onInitializeSync];
+  const stateFromStores = obj.useStateFromStores(items, () => priceChangeRecord.priceChangeRecord);
+  let obj1 = markAsDismissed(589);
+  const items1 = [reset];
+  const stateFromStores1 = obj1.useStateFromStores(items1, () => premiumSubscription.getPremiumSubscription(true));
+  let str;
+  if (stateFromStores1 != null) {
+    str = stateFromStores1.premiumPlanIdFromItems;
   }
-  let str = "";
-  if (null != prop) {
-    str = prop;
+  if (str == null) {
+    str = "";
   }
-  let obj2 = markAsDismissed(3811);
-  const tierDisplayNameByPlanId = obj2.getTierDisplayNameByPlanId(str);
-  let obj3 = markAsDismissed(3811);
-  let obj4 = markAsDismissed(3811);
-  const intervalStringAsNoun = obj4.getIntervalStringAsNoun(obj3.getInterval(str).intervalType);
-  let obj5 = markAsDismissed(5651);
-  const formatPriceResult = obj5.formatPrice(stateFromStores.oldPrice, stateFromStores.oldCurrency);
-  const obj7 = markAsDismissed(5651);
-  obj = {};
-  obj = { style: tmp.container };
-  obj1 = { style: tmp.textContainer };
-  obj2 = { variant: "heading-xl/bold", style: tmp.header };
-  const intl = markAsDismissed(1212).intl;
-  obj2.children = intl.format(markAsDismissed(1212).t.x0bFvn, { subscriptionName: tierDisplayNameByPlanId });
-  const items2 = [callback(markAsDismissed(4161).Text, obj2), ];
-  obj3 = { variant: "text-md/medium", style: tmp.body };
-  const intl2 = markAsDismissed(1212).intl;
-  obj4 = { subscriptionName: tierDisplayNameByPlanId };
-  const formatPriceResult1 = markAsDismissed(5651).formatPrice(stateFromStores.newPrice, stateFromStores.newCurrency);
-  obj4.changeDate = new Date(stateFromStores.expectedChargeTime);
-  obj4.interval = intervalStringAsNoun;
-  obj4.newPrice = formatPriceResult1;
-  obj4.oldPrice = formatPriceResult;
+  let tmp2Result = tmp2(3835);
+  const tierDisplayNameByPlanId = tmp2Result.getTierDisplayNameByPlanId(str);
+  tmp2Result = tmp2(3835);
+  const intervalStringAsNoun = markAsDismissed(3835).getIntervalStringAsNoun(tmp2Result.getInterval(str).intervalType);
+  const tmp2Result1 = markAsDismissed(3835);
+  const tmp2Result2 = markAsDismissed(5669);
+  const formatPriceResult = markAsDismissed(5669).formatPrice(stateFromStores.oldPrice, stateFromStores.oldCurrency);
+  const tmp2Result3 = markAsDismissed(5669);
+  obj = { children: null };
+  obj = { style: tmp.container, children: null };
+  obj1 = { style: tmp.textContainer, children: null };
+  const obj2 = { variant: "heading-xl/bold", style: tmp.header, children: null };
+  const intl = tmp2(1236).intl;
+  obj2[2] = intl.format(markAsDismissed(1236).t.x0bFvn, { subscriptionName: tierDisplayNameByPlanId });
+  const items2 = [callback(markAsDismissed(4185).Text, obj2), ];
+  const obj3 = { variant: "text-md/medium", style: tmp.body, children: null };
+  const intl2 = tmp2(1236).intl;
+  const obj4 = { subscriptionName: tierDisplayNameByPlanId, changeDate: null, interval: null, newPrice: null, oldPrice: null, hc_article_url: null };
+  const formatPriceResult1 = markAsDismissed(5669).formatPrice(stateFromStores.newPrice, stateFromStores.newCurrency);
+  obj4[1] = new Date(stateFromStores.expectedChargeTime);
+  obj4[2] = intervalStringAsNoun;
+  obj4[3] = formatPriceResult1;
+  obj4[4] = formatPriceResult;
   const date = new Date(stateFromStores.expectedChargeTime);
-  obj4.hc_article_url = importDefault(1921).getArticleURL(HelpdeskArticles.SUBSCRIPTION_CANCEL);
-  obj3.children = intl2.format(markAsDismissed(1212).t["n+Hrjb"], obj4);
-  items2[1] = callback(markAsDismissed(4161).Text, obj3);
-  obj1.children = items2;
+  obj4[5] = importDefault(1945).getArticleURL(HelpdeskArticles.SUBSCRIPTION_CANCEL);
+  obj3[2] = intl2.format(markAsDismissed(1236).t["n+Hrjb"], obj4);
+  items2[1] = callback(markAsDismissed(4185).Text, obj3);
+  obj1[1] = items2;
   const items3 = [callback2(View, obj1), ];
-  obj5 = { variant: "primary" };
-  const intl3 = markAsDismissed(1212).intl;
-  obj5.text = intl3.string(markAsDismissed(1212).t.BddRzS);
-  obj5.onPress = function onPress() {
+  const obj5 = { variant: "primary", text: null, onPress: null };
+  const intl3 = tmp2(1236).intl;
+  obj5[1] = intl3.string(markAsDismissed(1236).t.BddRzS);
+  obj5[2] = function onPress() {
     markAsDismissed(outer1_7.USER_DISMISS);
   };
-  items3[1] = callback(markAsDismissed(4578).Button, obj5);
-  obj.children = items3;
-  obj.children = callback2(View, obj);
-  return callback(markAsDismissed(5221).BottomSheet, obj);
+  items3[1] = callback(markAsDismissed(4600).Button, obj5);
+  obj[1] = items3;
+  obj[0] = callback2(View, obj);
+  return callback(markAsDismissed(5243).BottomSheet, obj);
 };

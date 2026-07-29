@@ -1,10 +1,10 @@
-// Module ID: 5833
-// Function ID: 51029
+// Module ID: 5851
+// Function ID: 5852
 // Name: CollectiblesShopPerfCheckpoint
-// Dependencies: [653, 675, 2]
+// Dependencies: [676, 698, 2]
 // Exports: trackShopPerf
 
-// Module 5833 (CollectiblesShopPerfCheckpoint)
+// Module 5851 (CollectiblesShopPerfCheckpoint)
 import { AnalyticEvents } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/collectibles/utils/CollectiblesPerfLogging.tsx");
@@ -17,5 +17,5 @@ export const trackShopPerf = function trackShopPerf(arg0) {
   let tab;
   let unpublishedCategoriesShown;
   ({ sessionId, checkpoint, tab, unpublishedCategoriesShown, cacheDisabled } = arg0);
-  importDefault(675).track(AnalyticEvents.COLLECTIBLES_SHOP_PERF_TRACKED, { page_session_id: sessionId, checkpoint, tab, unpublished_categories_shown: unpublishedCategoriesShown, cache_disabled: cacheDisabled });
+  importDefault(698).track(AnalyticEvents.COLLECTIBLES_SHOP_PERF_TRACKED, { page_session_id: sessionId, checkpoint, tab, unpublished_categories_shown: unpublishedCategoriesShown, cache_disabled: cacheDisabled });
 };

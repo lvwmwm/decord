@@ -1,16 +1,16 @@
-// Module ID: 9896
-// Function ID: 76546
+// Module ID: 9918
+// Function ID: 9919
 // Name: MessagePreview
-// Dependencies: [31, 27, 33, 4165, 689, 4101, 7882, 7690, 9266, 9897, 1882, 9898, 22, 9899, 1212, 9901, 9847, 4679, 9655, 5119, 1449, 7945, 4161, 2685, 7896, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4125, 7905, 7713, 9290, 9919, 1906, 9920, 12, 9921, 1236, 9923, 9869, 4701, 9677, 5141, 1473, 7970, 4185, 2709, 7921, 2]
 // Exports: ForwardPreview
 
-// Module 9896 (MessagePreview)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 9918 (MessagePreview)
+import preload from "preload";
+import { View } from "ImageIcon";
+import jsxProd from "SolidCutout";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
 function MessagePreview(content) {
@@ -19,59 +19,55 @@ function MessagePreview(content) {
   ({ message, attachmentCount } = content);
   let importDefault;
   if (attachmentCount > 0) {
-    let TEXT_SUBTLE = importDefault(689).colors.TEXT_DEFAULT;
+    let TEXT_SUBTLE = tmp(712).colors.TEXT_DEFAULT;
   } else {
-    TEXT_SUBTLE = importDefault(689).colors.TEXT_SUBTLE;
+    TEXT_SUBTLE = tmp(712).colors.TEXT_SUBTLE;
   }
-  let obj = attachmentCount(4165);
-  obj = { seeMoreLabelColor: TEXT_SUBTLE };
-  const tmp6 = obj.createNativeStyleProperties(obj)(importDefault(4101)());
-  importDefault = tmp6;
-  const items = [tmp6.seeMoreLabelColor, attachmentCount];
+  let obj = attachmentCount(4189);
+  const tmp4 = obj.createNativeStyleProperties({ seeMoreLabelColor: TEXT_SUBTLE })(importDefault(4125)());
+  importDefault = tmp4;
+  const items = [tmp4.seeMoreLabelColor, attachmentCount];
   const callback = React.useCallback((message) => {
     message.contextType = attachmentCount(outer1_2[6]).MessageContextType.SEARCH;
-    const obj = { numberOfLines: null, expandable: false, seeMoreLabel: "..." };
     let num = 2;
     if (attachmentCount > 0) {
       num = 1;
     }
-    obj.numberOfLines = num;
-    obj.seeMoreLabelColor = _undefined.seeMoreLabelColor;
-    message.truncation = obj;
+    message.truncation = { numberOfLines: num, expandable: false, seeMoreLabel: "...", seeMoreLabelColor: _undefined.seeMoreLabelColor };
     message.message.edited = "";
   }, items);
   const memo = React.useMemo(() => {
-    let tmp = _undefined(outer1_2[7]);
-    tmp = new tmp();
-    tmp.setOptions({ renderEmbeds: false, renderReactions: false, inlineEmbedMedia: false, inlineAttachmentMedia: false, animateEmoji: true, gifAutoPlay: false, timestampHourCycle: 0, renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderComponents: false, renderThreadEmbeds: false, renderReplies: false, renderCommunicationDisabled: false, renderAttachments: false, renderExecutedCommands: false, renderPolls: false, renderSharedClientTheme: false, renderForumPostActions: false, ignoreMentioned: false, ignoreEmbedDescriptionCache: false, forceHideSimpleEmbedContent: false, enableSwipeActions: false, useAlternateEmbedColors: false });
-    return tmp;
+    const obj = new _undefined(table[7])();
+    obj.setOptions({ renderEmbeds: false, renderReactions: false, inlineEmbedMedia: false, inlineAttachmentMedia: false, animateEmoji: true, gifAutoPlay: false, timestampHourCycle: 0, renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderComponents: false, renderThreadEmbeds: false, renderReplies: false, renderCommunicationDisabled: false, renderAttachments: false, renderExecutedCommands: false, renderPolls: false, renderSharedClientTheme: false, renderForumPostActions: false, ignoreMentioned: false, ignoreEmbedDescriptionCache: false, forceHideSimpleEmbedContent: false, enableSwipeActions: false, useAlternateEmbedColors: false });
+    return obj;
   }, []);
-  obj = { pointerEvents: "none", horizontalOffset: 0, modifyRow: callback };
-  const obj1 = { messageSnapshots: [], content: content.contentMessage.content };
-  let tmp = importDefault(4101)();
-  obj.message = message.merge(obj1);
-  obj.rowGenerator = memo;
-  return callback(importDefault(9266), obj);
+  obj = { pointerEvents: "none", horizontalOffset: 0, modifyRow: callback, message: null, rowGenerator: null };
+  obj = { messageSnapshots: [], content: content.contentMessage.content };
+  const tmp3 = importDefault(4125)();
+  obj[3] = message.merge(obj);
+  obj[4] = memo;
+  return callback(importDefault(9290), obj);
 }
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_12, alignItems: "center" };
-_createForOfIteratorHelperLoose.forwardPreview = _createForOfIteratorHelperLoose;
-let obj1 = { width: 4, height: "100%", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderRadius: 2 };
-_createForOfIteratorHelperLoose.quote = obj1;
-_createForOfIteratorHelperLoose.contentWrapper = { flexDirection: "column", flex: 1, paddingVertical: 4, gap: 6 };
-let obj2 = { position: "relative", width: 56, height: 56, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, overflow: "hidden" };
-_createForOfIteratorHelperLoose.attachmentPreview = obj2;
-_createForOfIteratorHelperLoose.attachmentPreviewVideo = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK };
-_createForOfIteratorHelperLoose.videoThumbnail = { position: "absolute", top: 0, left: 0, opacity: 0.6 };
-_createForOfIteratorHelperLoose.playIcon = { position: "absolute", top: 0, left: 0, margin: 16, zIndex: 100 };
-_createForOfIteratorHelperLoose.attachmentPreviewOverflow = { position: "relative" };
-let obj4 = { position: "absolute", bottom: 0, right: 0, alignItems: "center", justifyContent: "center", textAlign: "center", width: 24, height: 24, lineHeight: 24, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, overflow: "hidden" };
-_createForOfIteratorHelperLoose.overflowCount = obj4;
-_createForOfIteratorHelperLoose.attachmentRow = { flexDirection: "row", alignItems: "center", gap: 6 };
-_createForOfIteratorHelperLoose.largeIcon = { width: 20, height: 20 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let c7 = 56;
+createCacheKey = { forwardPreview: null, quote: null, contentWrapper: null, attachmentPreview: null, attachmentPreviewVideo: null, videoThumbnail: null, playIcon: null, attachmentPreviewOverflow: null, overflowCount: null, attachmentRow: null, largeIcon: null };
+createCacheKey = { flexDirection: "row", gap: require("Themes").space.PX_12, alignItems: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { width: 4, height: "100%", backgroundColor: require("Themes").colors.BORDER_SUBTLE, borderRadius: 2 };
+createCacheKey[2] = { flexDirection: "column", flex: 1, paddingVertical: 4, gap: 6 };
+let obj1 = { width: 4, height: "100%", backgroundColor: require("Themes").colors.BORDER_SUBTLE, borderRadius: 2 };
+createCacheKey[3] = { position: "relative", width: 56, height: 56, borderRadius: require("Themes").radii.sm, overflow: "hidden" };
+let obj2 = { position: "relative", width: 56, height: 56, borderRadius: require("Themes").radii.sm, overflow: "hidden" };
+createCacheKey[4] = { backgroundColor: require("Themes").colors.BLACK };
+createCacheKey[5] = { position: "absolute", top: 0, left: 0, opacity: 0.6 };
+createCacheKey[6] = { position: "absolute", top: 0, left: 0, margin: 16, zIndex: 100 };
+createCacheKey[7] = { position: "relative" };
+let obj3 = { backgroundColor: require("Themes").colors.BLACK };
+createCacheKey[8] = { position: "absolute", bottom: 0, right: 0, alignItems: "center", justifyContent: "center", textAlign: "center", width: 24, height: 24, lineHeight: 24, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, borderRadius: require("Themes").radii.sm, overflow: "hidden" };
+createCacheKey[9] = { flexDirection: "row", alignItems: "center", gap: 6 };
+createCacheKey[10] = { width: 20, height: 20 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj4 = { position: "absolute", bottom: 0, right: 0, alignItems: "center", justifyContent: "center", textAlign: "center", width: 24, height: 24, lineHeight: 24, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, borderRadius: require("Themes").radii.sm, overflow: "hidden" };
 const result = require("jsxProd").fileFinishedImporting("modules/forwarding/native/ForwardPreview.tsx");
 
 export const ForwardPreview = function ForwardPreview(message) {
@@ -83,237 +79,252 @@ export const ForwardPreview = function ForwardPreview(message) {
   let hasContent;
   message = message.message;
   ({ channel, forwardOptions } = message);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(9897) /* useForwardPreviewContent */;
+  const tmp = createCacheKey();
+  let obj = require(9919) /* useForwardPreviewContent */;
   const forwardPreviewContent = obj.useForwardPreviewContent({ message, channel, forwardOptions });
   ({ attachments, embeds, hasContent, contentMessage } = forwardPreviewContent);
   let checkpointData = null;
   if (contentMessage.components.length > 0) {
     checkpointData = null;
-    if (contentMessage.components[0].type === require(1882) /* PermissionOverwriteType */.ComponentType.CHECKPOINT_CARD) {
+    if (contentMessage.components[0].type === tmp2(1906).ComponentType.CHECKPOINT_CARD) {
       checkpointData = contentMessage.components[0].checkpointData;
     }
   }
   let tmp6 = null;
   if (null != checkpointData) {
-    const cardId = checkpointData.cardId;
-    let num3 = 0;
-    if (null != cardId) {
-      num3 = cardId;
+    let num = checkpointData.cardId;
+    if (num == null) {
+      num = 0;
     }
-    tmp6 = require(9898) /* items */.CHECKPOINT_PERSONA_COLORS[num3];
+    tmp6 = tmp2(9920).CHECKPOINT_PERSONA_COLORS[num];
   }
-  if (null != tmp6) {
+  if (tmp6 != null) {
     const primaryColor = tmp6.primaryColor;
   }
   if (attachments.length > 0) {
-    let obj1 = require(22) /* apply */;
-    const countByResult = obj1.countBy(attachments, (proxy_url) => outer1_0(outer1_2[13]).getMosaicMediaTypeForAttachment(proxy_url, true));
-    const IMAGE = countByResult.IMAGE;
-    let num5 = 0;
-    if (null != IMAGE) {
-      num5 = IMAGE;
+    let tmp2Result = tmp2(12);
+    const countByResult = tmp2Result.countBy(attachments, (proxy_url) => callback(table[13]).getMosaicMediaTypeForAttachment(proxy_url, true));
+    let num2 = countByResult.IMAGE;
+    if (num2 == null) {
+      num2 = 0;
     }
-    const VIDEO = countByResult.VIDEO;
-    let num6 = 0;
-    if (null != VIDEO) {
-      num6 = VIDEO;
+    let num3 = countByResult.VIDEO;
+    if (num3 == null) {
+      num3 = 0;
     }
-    if (num5 > 0) {
-      if (num6 > 0) {
-        const intl4 = require(1212) /* getSystemLocale */.intl;
-        obj = { image_count: num5, video_count: num6 };
-        let formatToPlainStringResult = intl4.formatToPlainString(require(1212) /* getSystemLocale */.t.Lr0Top, obj);
-        let AttachmentIcon = require(9901) /* ImagesIcon */.ImagesIcon;
+    if (num2 > 0) {
+      if (num3 > 0) {
+        const intl4 = tmp2(1236).intl;
+        obj = { image_count: null, video_count: null };
+        obj[0] = num2;
+        obj[1] = num3;
+        let formatToPlainStringResult = intl4.formatToPlainString(tmp2(1236).t.Lr0Top, obj);
+        let AttachmentIcon = tmp2(9923).ImagesIcon;
       }
-      if (num6 > 0) {
-        if (length === num6) {
-          obj = {};
+      if (num3 > 0) {
+        if (length === num3) {
+          obj = { style: null, children: null };
           const items = [, ];
           ({ attachmentPreview: arr[0], attachmentPreviewVideo: arr[1] } = tmp);
-          obj.style = items;
-          obj1 = { style: tmp.videoThumbnail };
-          const obj2 = {};
-          let obj17 = importDefault(1449);
-          obj2.uri = obj17.getMobileOptimizedSrc(attachments[0].proxy_url, 56, 56, "png");
-          obj1.source = obj2;
-          obj1.width = 56;
-          obj1.height = 56;
-          const items1 = [callback(importDefault(5119), obj1), ];
-          const obj3 = { style: tmp.playIcon, size: "md", color: "white" };
-          items1[1] = callback(require(9847) /* CirclePlayIcon */.CirclePlayIcon, obj3);
-          obj.children = items1;
-          let tmp11 = callback2(View, obj);
+          obj[0] = items;
+          const obj1 = { style: null, source: null, width: null, height: null };
+          obj1[0] = tmp.videoThumbnail;
+          const obj2 = { uri: null };
+          let obj17 = importDefault(1473);
+          obj2[0] = obj17.getMobileOptimizedSrc(attachments[0].proxy_url, c7, c7, "png");
+          obj1[1] = obj2;
+          obj1[2] = c7;
+          obj1[3] = c7;
+          const items1 = [callback(importDefault(5141), obj1), ];
+          const obj3 = { style: null, size: "md", color: "white" };
+          obj3[0] = tmp.playIcon;
+          items1[1] = callback(tmp2(9869).CirclePlayIcon, obj3);
+          obj[1] = items1;
+          let tmp7 = callback2(View, obj);
+          let tmp8 = AttachmentIcon;
           let tmp9 = formatToPlainStringResult;
-          let tmp10 = AttachmentIcon;
-          const tmp47 = importDefault(5119);
+          const tmp28 = importDefault(5141);
         }
       }
       if (length > 0) {
-        const obj4 = { style: tmp.attachmentPreview };
-        const obj5 = { source: null, width: 56, height: 56 };
-        const obj6 = {};
-        let obj13 = importDefault(1449);
-        obj6.uri = obj13.getMobileOptimizedSrc(attachments[0].proxy_url, 56, 56);
-        obj5.source = obj6;
-        obj4.children = callback(importDefault(5119), obj5);
-        tmp11 = callback(View, obj4);
+        const obj4 = { style: null, children: null };
+        obj4[0] = tmp.attachmentPreview;
+        const obj5 = { source: null, width: null, height: null };
+        const obj6 = { uri: null };
+        let obj13 = importDefault(1473);
+        obj6[0] = obj13.getMobileOptimizedSrc(attachments[0].proxy_url, c7, c7);
+        obj5[0] = obj6;
+        obj5[1] = c7;
+        obj5[2] = c7;
+        obj4[1] = callback(importDefault(5141), obj5);
+        tmp7 = callback(View, obj4);
+        tmp8 = AttachmentIcon;
         tmp9 = formatToPlainStringResult;
-        tmp10 = AttachmentIcon;
-        const tmp41 = importDefault(5119);
+        const tmp22 = importDefault(5141);
       } else {
         const first = embeds[0];
         let proxyURL;
-        if (null != first) {
+        if (first != null) {
           const thumbnail = first.thumbnail;
-          if (null != thumbnail) {
+          if (thumbnail != null) {
             proxyURL = thumbnail.proxyURL;
           }
         }
+        tmp7 = null;
+        tmp8 = AttachmentIcon;
         tmp9 = formatToPlainStringResult;
-        tmp10 = AttachmentIcon;
-        tmp11 = null;
         if (null != proxyURL) {
-          const obj7 = { style: tmp.attachmentPreview };
-          const obj8 = { source: null, width: 56, height: 56 };
-          let obj9 = {};
-          obj9 = importDefault(1449);
-          obj9.uri = obj9.getMobileOptimizedSrc(embeds[0].thumbnail.proxyURL, 56, 56);
-          obj8.source = obj9;
-          obj7.children = callback(importDefault(5119), obj8);
-          tmp11 = callback(View, obj7);
+          const obj7 = { style: null, children: null };
+          obj7[0] = tmp.attachmentPreview;
+          const obj8 = { source: null, width: null, height: null };
+          let obj9 = { uri: null };
+          obj9 = importDefault(1473);
+          obj9[0] = obj9.getMobileOptimizedSrc(embeds[0].thumbnail.proxyURL, c7, c7);
+          obj8[0] = obj9;
+          obj8[1] = c7;
+          obj8[2] = c7;
+          obj7[1] = callback(importDefault(5141), obj8);
+          tmp7 = callback(View, obj7);
+          tmp8 = AttachmentIcon;
           tmp9 = formatToPlainStringResult;
-          tmp10 = AttachmentIcon;
-          const tmp35 = importDefault(5119);
+          const tmp17 = importDefault(5141);
         }
       }
     }
-    if (num6 > 0) {
-      const intl3 = require(1212) /* getSystemLocale */.intl;
-      const obj10 = { count: num6 };
-      formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t.SJ6pPX, obj10);
-      AttachmentIcon = require(9847) /* CirclePlayIcon */.CirclePlayIcon;
-    } else if (num5 > 0) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      const obj11 = { count: num5 };
-      if (1 === num5) {
-        let ImagesIcon = require(4679) /* ImageIcon */.ImageIcon;
+    if (num3 > 0) {
+      const intl3 = tmp2(1236).intl;
+      const obj10 = { count: null };
+      obj10[0] = num3;
+      formatToPlainStringResult = intl3.formatToPlainString(tmp2(1236).t.SJ6pPX, obj10);
+      AttachmentIcon = tmp2(9869).CirclePlayIcon;
+    } else if (num2 > 0) {
+      const intl2 = tmp2(1236).intl;
+      const obj11 = { count: null };
+      obj11[0] = num2;
+      if (1 === num2) {
+        let ImagesIcon = tmp2(4701).ImageIcon;
       } else {
-        ImagesIcon = require(9901) /* ImagesIcon */.ImagesIcon;
+        ImagesIcon = tmp2(9923).ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
-      formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.h4pFfU, obj11);
-      const formatToPlainStringResult1 = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.h4pFfU, obj11);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp2(1236).t.h4pFfU, obj11);
+      const formatToPlainStringResult1 = intl2.formatToPlainString(tmp2(1236).t.h4pFfU, obj11);
     } else {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      const obj12 = { count: length };
-      formatToPlainStringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["89ihS8"], obj12);
-      AttachmentIcon = require(9655) /* AttachmentIcon */.AttachmentIcon;
+      const intl = tmp2(1236).intl;
+      const obj12 = { count: null };
+      obj12[0] = length;
+      formatToPlainStringResult = intl.formatToPlainString(tmp2(1236).t["89ihS8"], obj12);
+      AttachmentIcon = tmp2(9677).AttachmentIcon;
     }
   } else {
+    tmp7 = null;
+    tmp8 = null;
     tmp9 = null;
-    tmp10 = null;
-    tmp11 = null;
   }
-  let tmp51 = tmp11;
+  let tmp33 = tmp7;
   if (attachments.length > 1) {
-    tmp51 = tmp11;
-    if (null != tmp11) {
-      obj13 = { shape: require(7945) /* SolidCutout */.CutoutShape.RoundedRect, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
-      const obj14 = { style: tmp.attachmentPreviewOverflow };
-      const obj15 = {};
+    tmp33 = tmp7;
+    if (null != tmp7) {
+      obj13 = { shape: null, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
+      obj13[0] = tmp2(7970).CutoutShape.RoundedRect;
+      const obj14 = { style: null, children: null };
+      obj14[0] = tmp.attachmentPreviewOverflow;
+      const obj15 = { cutouts: null, children: null };
       const items2 = [obj13];
-      obj15.cutouts = items2;
-      obj15.children = tmp11;
-      const items3 = [callback(importDefault(7945), obj15), ];
-      const obj16 = { style: tmp.overflowCount, variant: "text-xs/semibold", color: "text-default" };
+      obj15[0] = items2;
+      obj15[1] = tmp7;
+      const items3 = [callback(importDefault(7970), obj15), ];
+      const obj16 = { style: null, variant: "text-xs/semibold", color: "text-default", children: null };
+      obj16[0] = tmp.overflowCount;
       const items4 = ["+", length - 1];
-      obj16.children = items4;
-      items3[1] = callback2(require(4161) /* Text */.Text, obj16);
-      obj14.children = items3;
-      tmp51 = callback2(View, obj14);
+      obj16[3] = items4;
+      items3[1] = callback2(tmp2(4185).Text, obj16);
+      obj14[1] = items3;
+      tmp33 = callback2(View, obj14);
     }
   }
-  obj17 = { style: tmp.forwardPreview };
+  obj17 = { style: tmp.forwardPreview, children: null };
   const items5 = [callback(View, { style: tmp.quote }), , , ];
-  const obj19 = { style: tmp.contentWrapper };
-  let tmp54 = null != checkpointData;
-  if (tmp54) {
-    const obj20 = { variant: "text-md/medium" };
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    obj20.children = intl5.string(importDefault(2685).goiR2u);
-    tmp54 = callback(require(4161) /* Text */.Text, obj20);
+  const obj19 = { style: tmp.contentWrapper, children: null };
+  let tmp36Result = null != checkpointData;
+  if (tmp36Result) {
+    const obj20 = { variant: "text-md/medium", children: null };
+    const intl5 = tmp2(1236).intl;
+    obj20[1] = intl5.string(importDefault(2709).goiR2u);
+    tmp36Result = tmp36(tmp2(4185).Text, obj20);
   }
-  const items6 = [tmp54, , ];
-  let tmp59 = hasContent;
+  const items6 = [tmp36Result, , ];
+  tmp36Result = hasContent;
   if (hasContent) {
-    const obj21 = { message, contentMessage, attachmentCount: length };
-    tmp59 = callback(MessagePreview, obj21);
+    const obj21 = { message: null, contentMessage: null, attachmentCount: null };
+    obj21[0] = message;
+    obj21[1] = contentMessage;
+    obj21[2] = length;
+    tmp36Result = tmp36(MessagePreview, obj21);
   }
-  items6[1] = tmp59;
-  let tmp63Result = length > 0;
-  if (tmp63Result) {
-    const obj22 = { style: tmp.attachmentRow };
-    let tmp66Result = null != tmp10;
-    if (tmp66Result) {
-      const obj23 = {};
-      let str3 = "custom";
+  items6[1] = tmp36Result;
+  let tmp34Result = length > 0;
+  if (tmp34Result) {
+    const obj22 = { style: null, children: null };
+    obj22[0] = tmp.attachmentRow;
+    let tmp36Result1 = null != tmp8;
+    if (tmp36Result1) {
+      let str2 = "custom";
       if (hasContent) {
-        str3 = "sm";
+        str2 = "sm";
       }
-      obj23.size = str3;
-      obj23.style = !hasContent && tmp.largeIcon;
-      obj23.color = "text-muted";
-      tmp66Result = callback(tmp10, obj23);
-      const tmp66 = callback;
+      const obj23 = { size: null, style: null, color: "text-muted" };
+      obj23[0] = str2;
+      let largeIcon = !hasContent;
+      if (!hasContent) {
+        largeIcon = tmp.largeIcon;
+      }
+      obj23[1] = largeIcon;
+      tmp36Result1 = tmp36(tmp8, obj23);
     }
-    const items7 = [tmp66Result, ];
-    let tmp68Result = null != tmp9;
-    if (tmp68Result) {
-      const obj24 = {};
-      let str5 = "text-md/medium";
+    const items7 = [tmp36Result1, ];
+    let tmp36Result2 = null != tmp9;
+    if (tmp36Result2) {
+      let str3 = "text-md/medium";
       if (hasContent) {
-        str5 = "text-sm/medium";
+        str3 = "text-sm/medium";
       }
-      obj24.variant = str5;
-      obj24.color = "text-muted";
-      obj24.children = tmp9;
-      tmp68Result = callback(require(4161) /* Text */.Text, obj24);
-      const tmp68 = callback;
+      const obj24 = { variant: null, color: "text-muted", children: null };
+      obj24[0] = str3;
+      obj24[2] = tmp9;
+      tmp36Result2 = tmp36(tmp2(4185).Text, obj24);
     }
-    items7[1] = tmp68Result;
-    obj22.children = items7;
-    tmp63Result = callback2(View, obj22);
-    const tmp63 = callback2;
-    const tmp64 = View;
+    items7[1] = tmp36Result2;
+    obj22[1] = items7;
+    tmp34Result = tmp34(tmp35, obj22);
   }
-  items6[2] = tmp63Result;
-  obj19.children = items6;
+  items6[2] = tmp34Result;
+  obj19[1] = items6;
   items5[1] = callback2(View, obj19);
-  items5[2] = tmp51;
-  let tmp72Result = null != checkpointData;
-  if (tmp72Result) {
-    const obj25 = { style: tmp.attachmentPreview };
-    const obj26 = { style: null, width: 56, height: 56 };
-    const obj27 = { backgroundColor: primaryColor };
-    obj26.style = obj27;
-    const obj28 = {};
-    const tmp72 = callback;
-    const tmp73 = View;
-    const tmp74 = callback;
-    const tmp77 = importDefault(5119);
-    const cardId2 = checkpointData.cardId;
-    let num35 = 0;
-    if (null != cardId2) {
-      num35 = cardId2;
+  items5[2] = tmp33;
+  let tmp36Result3 = null != checkpointData;
+  if (tmp36Result3) {
+    const obj25 = { style: null, children: null };
+    obj25[0] = tmp.attachmentPreview;
+    const obj26 = { style: null, width: null, height: null, source: null };
+    const obj27 = { backgroundColor: null };
+    obj27[0] = primaryColor;
+    obj26[0] = obj27;
+    obj26[1] = c7;
+    obj26[2] = c7;
+    tmp2Result = tmp2(7921);
+    let num5 = checkpointData.cardId;
+    if (num5 == null) {
+      num5 = 0;
     }
-    obj28.uri = require(7896) /* items */.getCardAssetUrl(num35);
-    obj26.source = obj28;
-    obj25.children = tmp74(tmp77, obj26);
-    tmp72Result = tmp72(tmp73, obj25);
-    const obj32 = require(7896) /* items */;
+    const obj28 = { uri: null };
+    obj28[0] = tmp2Result.getCardAssetUrl(num5);
+    obj26[3] = obj28;
+    obj25[1] = tmp36(importDefault(5141), obj26);
+    tmp36Result3 = tmp36(tmp35, obj25);
+    const tmp46 = importDefault(5141);
   }
-  items5[3] = tmp72Result;
-  obj17.children = items5;
+  items5[3] = tmp36Result3;
+  obj17[1] = items5;
   return callback2(View, obj17);
 };

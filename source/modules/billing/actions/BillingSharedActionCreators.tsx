@@ -1,150 +1,482 @@
-// Module ID: 4487
-// Function ID: 39229
+// Module ID: 4510
+// Function ID: 4511
 // Name: _validatePaymentSourceBillingAddress
-// Dependencies: [5, 3815, 4488, 653, 507, 3833, 686, 1212, 675, 4064, 3826, 2]
+// Dependencies: [5, 3839, 4511, 676, 530, 3857, 709, 1236, 698, 4088, 3850, 2]
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 4487 (_validatePaymentSourceBillingAddress)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _callSuper from "_callSuper";
+// Module 4510 (_validatePaymentSourceBillingAddress)
+import set from "set";
+import createFromServer from "createFromServer";
 import { StripeErrorTypes } from "StripeErrorTypes";
 import ME from "ME";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-async function _validatePaymentSourceBillingAddress(arg0, arg1) {
-  const HTTP = outer2_0(outer2_2[4]).HTTP;
-  obj = { url: outer2_7.BILLING_PAYMENT_SOURCES_VALIDATE_BILLING_ADDRESS, body: { billing_address: obj }, rejectWithError: false };
-  obj = { name: arg0.name, line_1: arg0.line1, line_2: arg0.line2, city: arg0.city, state: arg0.state, postal_code: arg0.postalCode, country: arg0.country, email: arg0.email };
-  return yield HTTP.post(obj).body.token;
+function _validatePaymentSourceBillingAddress() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (function*(arg0, body) {
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              const dependencyMap = tmp3;
+              let callback2 = tmp7;
+              let callback;
+              let c4 = 1;
+              const HTTP = callback(outer1_2[4]).HTTP;
+              const obj1 = { url: null, body: null, rejectWithError: false };
+              obj1[0] = outer1_7.BILLING_PAYMENT_SOURCES_VALIDATE_BILLING_ADDRESS;
+              let obj2 = { billing_address: null };
+              let obj3 = { name: null, line_1: null, line_2: null, city: null, state: null, postal_code: null, country: null, email: null };
+              ({ name: obj11[0], line1: obj11[1], line2: obj11[2], city: obj11[3], state: obj11[4], postalCode: obj11[5], country: obj11[6], email: obj11[7] } = callback);
+              obj2[0] = obj3;
+              obj1[1] = obj2;
+              c5 = 2;
+              c6 = 1;
+              const obj4 = { value: null, done: false };
+              obj4[0] = HTTP.post(obj1);
+              return obj4;
+            }
+          } else if (1 === tmp7) {
+            c4 = 0;
+            callback2 = set;
+            obj2 = callback(3857);
+            callback = obj2.parseV8BillingAddressSkemaErrorToBillingError(callback2);
+            obj3 = callback2(709);
+            const obj5 = { type: "BILLING_PAYMENT_SOURCE_CREATE_FAIL", error: null };
+            obj5[1] = callback;
+            obj3.dispatch(obj5);
+            throw callback;
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw body;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            const obj6 = { value: null, done: true };
+            obj6[0] = body;
+            return obj6;
+          } else {
+            c4 = 0;
+            c6 = 3;
+            obj = { value: null, done: true };
+            obj[0] = body.body.token;
+            return obj;
+          }
+        } catch (tmp20) {
+          set = tmp20;
+          if (tmp4 === c4) {
+            c6 = tmp2;
+            throw tmp20;
+          } else {
+            c5 = tmp;
+          }
+        }
+      }
+    })();
+  });
+  const _validatePaymentSourceBillingAddress = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-async function _popupBridgeState(arg0, arg1) {
-  const HTTP = outer2_0(outer2_2[4]).HTTP;
-  let obj = { url: outer2_7.BILLING_POPUP_BRIDGE(arg0), oldFormErrors: true, rejectWithError: true };
-  const state = yield HTTP.post(obj).body.state;
-  obj = { type: "BILLING_POPUP_BRIDGE_STATE_UPDATE", state, paymentSourceType: arg0 };
-  outer2_1(outer2_2[6]).dispatch(obj);
-  return state;
+function _popupBridgeState() {
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    return (function*(arg0, body) {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              const table = tmp2;
+              let state = tmp5;
+              state = undefined;
+              const HTTP = callback(outer1_2[4]).HTTP;
+              const obj1 = { url: null, oldFormErrors: true, rejectWithError: true };
+              obj1[0] = outer1_7.BILLING_POPUP_BRIDGE(callback);
+              c3 = 1;
+              c4 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = HTTP.post(obj1);
+              return obj2;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw body;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = body;
+            return obj3;
+          } else {
+            state = body.body.state;
+            obj = state(table[6]);
+            const obj4 = { type: "BILLING_POPUP_BRIDGE_STATE_UPDATE", state: null, paymentSourceType: null };
+            obj4[1] = state;
+            obj4[2] = callback;
+            obj.dispatch(obj4);
+            c4 = 3;
+            const obj5 = { value: null, done: true };
+            obj5[0] = state;
+            return obj5;
+          }
+        } catch (tmp17) {
+          c4 = tmp;
+          throw tmp17;
+        }
+      }
+    })();
+  });
+  const _popupBridgeState = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-async function _createPaymentSource(arg0, arg1, arg2, arg3, arg4) {
-  let iter = (function*(payment_gateway, token, name, analyticsLocation) {
-    let flag = arg4;
-    if (flag === undefined) {
-      flag = false;
-    }
-    yield undefined;
-    let obj = outer2_1(outer2_2[6]);
-    obj.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_START" });
-    const HTTP = outer2_0(outer2_2[4]).HTTP;
-    obj = { url: outer2_7.BILLING_PAYMENT_SOURCES, query: obj };
-    obj = { location: analyticsLocation.analyticsLocation };
-    const obj1 = { payment_gateway, token, billing_address: obj2, billing_address_token: analyticsLocation.billingAddressToken, bank: analyticsLocation.bank };
-    let tmp3;
-    if (null != analyticsLocation.pix) {
-      const obj3 = { tax_id: analyticsLocation.pix.taxId };
-      tmp3 = obj3;
-    }
-    obj1.pix = tmp3;
-    obj1.return_url = analyticsLocation.returnUrl;
-    obj1.default = flag;
-    obj.body = obj1;
-    obj.rejectWithError = false;
-    const fromServer = outer2_4.createFromServer(yield HTTP.post(obj).body);
-    outer2_1(outer2_2[6]).dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_SUCCESS", paymentSource: fromServer });
-    return fromServer;
-  })();
-  iter.next();
-  return iter;
+function _createPaymentSource() {
+  const self = this;
+  const tmp = callback((arg0, arg1, arg2, arg3) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    let set = arg3;
+    let createFromServer = arg4;
+    let c9 = 0;
+    let c10 = 0;
+    let c8 = 0;
+    const iter = (function*(arg0, arg1, arg2, arg3) {
+      if (c10 === 2) {
+        c10 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c10 = 2;
+          if (0 === c9) {
+            if (arg0 === 1) {
+              c10 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c10 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_6 = tmp3;
+              let body = tmp7;
+              let flag;
+              if (flag === undefined) {
+                flag = false;
+              }
+              body = undefined;
+              closure_6 = undefined;
+              let closure_7;
+              c9 = 1;
+              c10 = 1;
+              return { value: "ct", done: null };
+            }
+          } else if (1 === tmp7) {
+            if (arg0 === 1) {
+              c10 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c10 = 3;
+              const obj1 = { value: null, done: true };
+              obj1[0] = arg1;
+              return obj1;
+            } else {
+              callback2(user[6]).dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_START" });
+              let c8 = 1;
+              const HTTP = callback(user[4]).HTTP;
+              const obj2 = { url: null, query: null, body: null, rejectWithError: false };
+              obj2[0] = closure_7.BILLING_PAYMENT_SOURCES;
+              const obj3 = { location: null };
+              obj3[0] = set.analyticsLocation;
+              obj2[1] = obj3;
+              let obj4 = { payment_gateway: null, token: null, billing_address: null, billing_address_token: null, bank: null, pix: null, return_url: null, default: null };
+              obj4[0] = callback;
+              obj4[1] = callback2;
+              let obj5 = { name: null, line_1: null, line_2: null, city: null, state: null, postal_code: null, country: null, email: null };
+              obj5[0] = user.name;
+              obj5[1] = user.line1;
+              obj5[2] = user.line2;
+              obj5[3] = user.city;
+              obj5[4] = user.state;
+              obj5[5] = user.postalCode;
+              obj5[6] = user.country;
+              obj5[7] = user.email;
+              obj4[2] = obj5;
+              obj4[3] = set.billingAddressToken;
+              obj4[4] = set.bank;
+              let tmp39;
+              if (null != set.pix) {
+                const obj6 = { tax_id: null };
+                obj6[0] = set.pix.taxId;
+                tmp39 = obj6;
+              }
+              obj4[5] = tmp39;
+              obj4[6] = set.returnUrl;
+              obj4[7] = flag;
+              obj2[2] = obj4;
+              c9 = 3;
+              c10 = 1;
+              const obj7 = { value: null, done: false };
+              obj7[0] = HTTP.post(obj2);
+              return obj7;
+            }
+          } else if (2 === tmp7) {
+            c8 = 0;
+            c8 = closure_7;
+            obj4 = callback(user[5]);
+            closure_7 = obj4.parseV8BillingAddressSkemaErrorToBillingError(c8);
+            (function addFieldsToBillingError(closure_7, c8) {
+              let adyen_redirect_url;
+              if (c8 != null) {
+                const body = c8.body;
+                if (body != null) {
+                  adyen_redirect_url = body.adyen_redirect_url;
+                }
+              }
+              if (adyen_redirect_url) {
+                let adyen_redirect_url1;
+                if (c8 != null) {
+                  const body2 = c8.body;
+                  if (body2 != null) {
+                    adyen_redirect_url1 = body2.adyen_redirect_url;
+                  }
+                }
+                closure_7.fields.adyen_redirect_url = adyen_redirect_url1;
+              }
+            })(closure_7, c8);
+            if (closure_7.code !== callback(user[5]).ErrorCodes.CONFIRMATION_REQUIRED) {
+              obj5 = callback2(user[6]);
+              const obj8 = { type: "BILLING_PAYMENT_SOURCE_CREATE_FAIL", error: null };
+              obj8[1] = closure_7;
+              obj5.dispatch(obj8);
+            }
+            throw closure_7;
+          } else if (arg0 === 1) {
+            c10 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c8 = 0;
+            c10 = 3;
+            const obj9 = { value: null, done: true };
+            obj9[0] = arg1;
+            return obj9;
+          } else {
+            body = arg1;
+            closure_6 = flag.createFromServer(body.body);
+            obj = callback2(user[6]);
+            const obj10 = { type: "BILLING_PAYMENT_SOURCE_CREATE_SUCCESS", paymentSource: null };
+            obj10[1] = closure_6;
+            obj.dispatch(obj10);
+            c8 = 0;
+            c10 = 3;
+            const obj11 = { value: null, done: true };
+            obj11[0] = closure_6;
+            return obj11;
+          }
+        } catch (tmp47) {
+          closure_7 = tmp47;
+          if (tmp4 === c8) {
+            c10 = tmp2;
+            throw tmp47;
+          } else {
+            c9 = tmp;
+          }
+        }
+      }
+    })();
+    iter.next();
+    return iter;
+  });
+  const _createPaymentSource = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-({ AnalyticEvents: closure_6, Endpoints: closure_7 } = ME);
+({ AnalyticEvents: closure_6, Endpoints: error } = ME);
 let result = require("StripeErrorTypes").fileFinishedImporting("modules/billing/actions/BillingSharedActionCreators.tsx");
 
-export const validatePaymentSourceBillingAddress = function validatePaymentSourceBillingAddress(email) {
-  return _validatePaymentSourceBillingAddress(...arguments);
+export const validatePaymentSourceBillingAddress = function validatePaymentSourceBillingAddress(closure_0) {
+  const self = this;
+  const apply = _validatePaymentSourceBillingAddress.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const dispatchConfirmationError = function dispatchConfirmationError(error, flag, stringResult, arg3) {
   let payment_method;
-  let message = error;
-  let obj = arg3;
   if (flag === undefined) {
     flag = true;
   }
   if (stringResult === undefined) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1212) /* getSystemLocale */.t.khEaRI);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    stringResult = intl.string(require(1236) /* getSystemLocale */.t.khEaRI);
   }
-  if (obj === undefined) {
+  let obj = arg3;
+  if (arg3 === undefined) {
     obj = {};
   }
-  if (StripeErrorTypes.includes(message.type)) {
+  let message = error;
+  if (StripeErrorTypes.includes(error.type)) {
     let combined = stringResult;
     if (null != message.message) {
       const _HermesInternal = HermesInternal;
       combined = "" + stringResult + ": " + message.message;
     }
-    obj = { failure_message: combined };
-    ({ type: obj3.error_type, code: obj3.failure_code, decline_code: obj3.failure_sub_code, payment_method } = message);
+    obj = { failure_message: null, error_type: null, failure_code: null, failure_sub_code: null, payment_source_type: null };
+    obj[0] = combined;
+    ({ type: obj3[1], code: obj3[2], decline_code: obj3[3], payment_method } = message);
     let type;
-    if (null != payment_method) {
+    if (payment_method != null) {
       type = payment_method.type;
     }
-    obj.payment_source_type = type;
+    obj[4] = type;
     if ("card_error" === message.type) {
-      let obj3 = importDefault(675);
+      let obj3 = importDefault(698);
       obj = {};
       const merged = Object.assign(obj);
       const _Error = Error;
       error = new Error();
-      obj["stacktrace"] = error.stack;
+      obj.stacktrace = error.stack;
       obj3.track(constants.PAYMENT_SOURCE_CREATION_FAILED, obj);
       flag = false;
     }
-    const BillingError2 = require(4064) /* V6OrEarlierAPIError */.BillingError;
-    const prototype3 = BillingError2.prototype;
-    let billingError2 = new BillingError2(combined);
+    let billingError = new require(4088) /* V6OrEarlierAPIError */.BillingError(combined);
     let flag2 = flag;
-    let tmp13 = obj;
+    let tmp12 = obj;
+    let tmp15 = require;
   } else {
-    const obj1 = {};
-    const BillingError = require(4064) /* V6OrEarlierAPIError */.BillingError;
     let tmp6 = message;
-    if ("string" === typeof message) {
+    if (typeof message !== "init") {
       tmp6 = stringResult;
     }
-    const prototype = BillingError.prototype;
-    const billingError = new BillingError(tmp6);
-    ({ message: obj2.failure_message, code: obj2.status_code } = billingError);
+    const obj1 = { failure_message: null, status_code: null };
+    const billingError1 = new require(4088) /* V6OrEarlierAPIError */.BillingError(tmp6);
+    ({ message: obj2[0], code: obj2[1] } = billingError1);
+    tmp12 = obj1;
+    billingError = billingError1;
     flag2 = flag;
-    billingError2 = billingError;
-    tmp13 = obj1;
-    if (429 === billingError.code) {
+    tmp15 = tmp4;
+    if (429 === billingError1.code) {
       flag2 = false;
-      billingError2 = billingError;
-      tmp13 = obj1;
+      tmp12 = obj1;
+      billingError = billingError1;
+      tmp15 = tmp4;
     }
   }
-  const obj2 = { type: "BILLING_PAYMENT_SOURCE_CREATE_FAIL", error: billingError2 };
-  importDefault(686).dispatch(obj2);
-  if ("string" !== typeof message) {
-    message = billingError2.message;
+  importDefault(709).dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_FAIL", error: billingError });
+  if (typeof message !== "y") {
+    message = billingError.message;
   }
   const error1 = new Error(message);
   if (flag2) {
-    obj3 = {};
+    const obj2 = {};
     const merged1 = Object.assign(obj);
-    const obj4 = {};
-    const merged2 = Object.assign(tmp13);
+    obj3 = {};
+    const merged2 = Object.assign(tmp12);
     const merged3 = Object.assign(obj.extra);
-    obj3["extra"] = obj4;
-    const result = require(3826) /* _createGatewayCheckoutContext */.captureBillingException(error1, obj3);
-    const obj8 = require(3826) /* _createGatewayCheckoutContext */;
+    obj2.extra = obj3;
+    const result = tmp15(3850).captureBillingException(error1, obj2);
+    const tmp15Result = tmp15(3850);
   }
   return error1;
 };
 export const popupBridgeState = function popupBridgeState(type) {
-  return _popupBridgeState(...arguments);
+  const self = this;
+  const apply = _popupBridgeState.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
-export const createPaymentSource = function createPaymentSource(STRIPE, id, billingAddressInfo, arg3, arg4) {
-  return _createPaymentSource(...arguments);
+export const createPaymentSource = function createPaymentSource(STRIPE, id, closure_2, arg3, flag) {
+  const self = this;
+  const apply = _createPaymentSource.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

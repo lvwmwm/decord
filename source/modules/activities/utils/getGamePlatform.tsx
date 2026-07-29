@@ -1,15 +1,15 @@
-// Module ID: 15538
-// Function ID: 119282
+// Module ID: 15572
+// Function ID: 15573
 // Name: getGamePlatform
-// Dependencies: [653, 11969, 2]
+// Dependencies: [676, 11993, 2]
 // Exports: default
 
-// Module 15538 (getGamePlatform)
+// Module 15572 (getGamePlatform)
 import ME from "ME";
 
-let closure_2;
-let closure_3;
-({ ActivityTypes: closure_2, ActivityGamePlatforms: closure_3 } = ME);
+let c3;
+let obj1;
+({ ActivityTypes: obj1, ActivityGamePlatforms: c3 } = ME);
 const result = require("set").fileFinishedImporting("modules/activities/utils/getGamePlatform.tsx");
 
 export default function getGamePlatform(type) {
@@ -19,7 +19,7 @@ export default function getGamePlatform(type) {
     if (null != type.type) {
       tmp = null;
       if (type.type === constants.PLAYING) {
-        if (importDefault(11969)(type)) {
+        if (importDefault(11993)(type)) {
           let DESKTOP = constants2.XBOX;
         } else if (null != type.platform) {
           DESKTOP = type.platform;

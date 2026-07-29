@@ -1,44 +1,41 @@
-// Module ID: 15859
-// Function ID: 122230
+// Module ID: 15894
+// Function ID: 15895
 // Name: useSortedGuildIdsForSoundboard
-// Dependencies: [31, 3793, 5005, 1850, 653, 482, 624, 3811, 2]
+// Dependencies: [19, 3817, 5027, 1874, 676, 505, 647, 3835, 2]
 // Exports: useSortedGuildIdsForSoundboard
 
-// Module 15859 (useSortedGuildIdsForSoundboard)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 15894 (useSortedGuildIdsForSoundboard)
+import noop from "noop";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import insertUnsortedGuilds from "insertUnsortedGuilds";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
 import { Permissions } from "sum";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/soundboard/useSortedGuildIdsForSoundboard.tsx");
+const result = require("insertUnsortedGuilds").fileFinishedImporting("modules/soundboard/useSortedGuildIdsForSoundboard.tsx");
 
 export const useSortedGuildIdsForSoundboard = function useSortedGuildIdsForSoundboard(guild_id, arg1) {
   const _require = guild_id;
   let closure_1 = arg1;
-  let items = [closure_6];
-  stateFromStores = _require(stateFromStores[6]).useStateFromStores(items, () => outer1_6.getCurrentUser());
+  let items = [mergeGuildAvatar];
+  stateFromStores = _require(stateFromStores[6]).useStateFromStores(items, () => currentUser.getCurrentUser());
   guild_id = undefined;
-  if (null != guild_id) {
+  if (guild_id != null) {
     guild_id = guild_id.guild_id;
   }
-  if (null == guild_id) {
+  if (guild_id == null) {
     guild_id = EMPTY_STRING_SNOWFLAKE_ID;
   }
-  const obj = _require(stateFromStores[6]);
+  let tmpResult = tmp(tmp2[6]);
   const items1 = [stateFromStores2];
-  const stateFromStores1 = _require(stateFromStores[6]).useStateFromStores(items1, () => stateFromStores2.getFlattenedGuildIds());
-  const obj2 = _require(stateFromStores[6]);
+  const stateFromStores1 = tmpResult.useStateFromStores(items1, () => stateFromStores2.getFlattenedGuildIds());
+  tmpResult = tmp(tmp2[6]);
   const items2 = [stateFromStores1];
-  stateFromStores2 = _require(stateFromStores[6]).useStateFromStores(items2, () => {
-    let canResult = null == guild_id;
+  stateFromStores2 = tmpResult.useStateFromStores(items2, () => {
+    let canResult = null == closure_0 || null == tmp.guild_id;
     if (!canResult) {
-      canResult = null == guild_id.guild_id;
-    }
-    if (!canResult) {
-      canResult = stateFromStores1.can(outer1_8.USE_EXTERNAL_SOUNDS, guild_id);
+      canResult = stateFromStores1.can(outer1_8.USE_EXTERNAL_SOUNDS, tmp);
     }
     return canResult;
   });
@@ -47,7 +44,7 @@ export const useSortedGuildIdsForSoundboard = function useSortedGuildIdsForSound
     if (obj.canUseSoundboardEverywhere(stateFromStores)) {
       if (stateFromStores2) {
         if ("" !== guild_id) {
-          let found = arr2.filter((arg0) => arg0 !== outer1_3);
+          let found = arr2.filter((arg0) => arg0 !== noop);
         } else {
           found = arr2;
         }

@@ -1,12 +1,12 @@
-// Module ID: 7952
-// Function ID: 63124
+// Module ID: 7977
+// Function ID: 7978
 // Name: useAvatarDecorationIfNotExpired
-// Dependencies: [57, 31, 653, 1828, 4050, 2]
+// Dependencies: [32, 19, 676, 1852, 4074, 2]
 // Exports: default
 
-// Module 7952 (useAvatarDecorationIfNotExpired)
+// Module 7977 (useAvatarDecorationIfNotExpired)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { MAX_TIMEOUT_MS } from "ME";
 
 const require = arg1;
@@ -14,35 +14,34 @@ let result = require("ME").fileFinishedImporting("modules/collectibles/avatar_de
 
 export default function useAvatarDecorationIfNotExpired(arg0) {
   let closure_0 = arg0;
-  let tmp;
-  const tmp2 = callback(React.useState(false), 2);
-  const first = tmp2[0];
-  callback = tmp2[1];
+  const tmp = callback(React.useState(false), 2);
+  const first = tmp[0];
+  callback = tmp[1];
   React = React.useRef(null);
   const items = [arg0];
   const effect = React.useEffect(() => {
     function maybeScheduleExpirationCheck() {
       if (null != maybeScheduleExpirationCheck) {
-        if ("expiresAt" in maybeScheduleExpirationCheck) {
-          if (null != maybeScheduleExpirationCheck.expiresAt) {
-            const result = maybeScheduleExpirationCheck(first[3]).isAvatarDecorationExpired(maybeScheduleExpirationCheck);
+        if ("expiresAt" in tmp) {
+          if (null != tmp.expiresAt) {
+            const result = maybeScheduleExpirationCheck(first[3]).isAvatarDecorationExpired(tmp);
             outer1_2(result);
             const _Date = Date;
-            const result1 = 1000 * maybeScheduleExpirationCheck.expiresAt;
+            const result1 = 1000 * tmp.expiresAt;
             const diff = result1 - Date.now();
             if (!result) {
-              if (diff > 0) {
-                const Timeout = maybeScheduleExpirationCheck(first[4]).Timeout;
-                const prototype = Timeout.prototype;
-                const timeout = new Timeout();
+              if (0 < diff) {
+                const timeout = new tmp3(tmp4[4]).Timeout();
                 const _Math = Math;
                 timeout.start(Math.min(outer2_4, diff), () => {
-                  outer1_0();
+                  callback();
                 });
                 outer1_3.current = timeout;
               }
             }
             const obj = maybeScheduleExpirationCheck(first[3]);
+            tmp3 = maybeScheduleExpirationCheck;
+            tmp4 = first;
           }
         }
       }
@@ -50,9 +49,9 @@ export default function useAvatarDecorationIfNotExpired(arg0) {
     }
     let result = maybeScheduleExpirationCheck();
     return () => {
-      const current = outer1_3.current;
+      const current = ref.current;
       let stopResult;
-      if (null != current) {
+      if (current != null) {
         stopResult = current.stop();
       }
       return stopResult;
@@ -62,13 +61,14 @@ export default function useAvatarDecorationIfNotExpired(arg0) {
   const effect1 = React.useEffect(() => {
     if (first) {
       const current = ref.current;
-      if (null != current) {
+      if (current != null) {
         current.stop();
       }
     }
   }, items1);
+  let tmp5;
   if (!first) {
-    tmp = arg0;
+    tmp5 = arg0;
   }
-  return tmp;
+  return tmp5;
 };

@@ -1,11 +1,10 @@
 // Module ID: 8472
-// Function ID: 67437
+// Function ID: 8473
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 8472 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d6b6d301228ff846f051730b4a535337", name: "SteamNeutralIcon", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "76c5454ee97e41c899ae8f5539257d3c", name: "ic_discoverable_guild_badge_light_24px", type: "png" });

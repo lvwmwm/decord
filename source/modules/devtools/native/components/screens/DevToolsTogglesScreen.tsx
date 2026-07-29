@@ -1,34 +1,35 @@
-// Module ID: 14781
-// Function ID: 112526
+// Module ID: 14807
+// Function ID: 14808
 // Name: fuzzySearchToggle
-// Dependencies: [57, 31, 27, 5124, 4164, 33, 5080, 4165, 689, 5198, 3866, 5538, 566, 5536, 14765, 5193, 14782, 4576, 14783, 9215, 2]
+// Dependencies: [32, 19, 17, 5146, 4188, 21, 5102, 4189, 712, 5220, 3890, 5556, 589, 5554, 14791, 5215, 14808, 4598, 14809, 9239, 2]
 // Exports: default
 
-// Module 14781 (fuzzySearchToggle)
+// Module 14807 (fuzzySearchToggle)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { ScrollView } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import { CATEGORY_LABELS } from "_isNativeReflectConstruct";
+import SearchField from "SearchField";
+import { ScrollView } from "Stack";
+import getUserAgnosticState from "getUserAgnosticState";
+import closure_7 from "getUserAgnosticState";
+import { CATEGORY_LABELS } from "getUserAgnosticState";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_9;
+let c10;
+let c9;
 const require = arg1;
 function fuzzySearchToggle(str, str2, str3) {
   let tmp = 0 === str.length;
   if (!tmp) {
     const formatted = str.toLowerCase();
-    let tmp9Result = importDefault(5080)(formatted, str2.toLowerCase());
-    if (!tmp9Result) {
+    let tmp3ResultResult = importDefault(5102)(formatted, str2.toLowerCase());
+    if (!tmp3ResultResult) {
       const formatted1 = str.toLowerCase();
-      tmp9Result = importDefault(5080)(formatted1, str3.toLowerCase());
-      const tmp9 = importDefault(5080);
+      tmp3ResultResult = tmp3(5102)(formatted1, str3.toLowerCase());
+      const tmp3Result = tmp3(5102);
     }
-    tmp = tmp9Result;
-    const tmp4 = importDefault(5080);
+    tmp = tmp3ResultResult;
+    tmp3 = importDefault;
+    const tmp5 = importDefault(5102);
   }
   return tmp;
 }
@@ -48,116 +49,127 @@ function ToggleTableRow(toggleName) {
       obj = { content: description, key: toggleName };
       obj.open(obj);
     },
-    trailing: callback2(toggleName(5538).FormSwitch, { value, onValueChange })
+    trailing: null
   };
-  return callback2(toggleName(5198).TableRow, obj, toggleName);
+  obj[5] = callback2(toggleName(5556).FormSwitch, { value, onValueChange });
+  return callback2(toggleName(5220).TableRow, obj, toggleName);
 }
-function DevTogglesForCategory(category) {
-  const arr = (function useFilteredDevTogglesForCategory(category, query) {
-    let closure_0 = category;
-    let closure_1 = query;
-    const items = [outer1_7];
-    const items1 = [query, category];
-    return outer1_0(outer1_2[12]).useStateFromStores(items, () => outer2_7.allByCategory(closure_0).filter((arg0) => {
+function DevTogglesForCategory(title) {
+  let category;
+  let query;
+  ({ category, query } = title);
+  let obj = category(589);
+  const items = [closure_7];
+  const items1 = [query, category];
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_7.allByCategory(category).filter((arg0) => {
+    let tmp;
+    [tmp, , ] = arg0;
+    return outer1_11(closure_1, tmp, tmp2);
+  }), items1, category(589).statesWillNeverBeEqual);
+  let tmp3 = null;
+  if (0 !== stateFromStores.length) {
+    obj = { title: null, hasIcons: false, children: null };
+    obj[0] = title.title;
+    obj[2] = stateFromStores.map((arg0) => {
       let tmp;
-      [tmp, , ] = arg0;
-      return outer3_12(outer1_1, tmp, tmp2);
-    }), items1, outer1_0(outer1_2[12]).statesWillNeverBeEqual);
-  })(category.category, category.query);
-  let tmp = null;
-  if (0 !== arr.length) {
-    const obj = {
-      title: category.title,
-      hasIcons: false,
-      children: arr.map((arg0) => {
-          let tmp;
-          let tmp2;
-          [tmp, tmp2, ] = arg0;
-          return outer1_9(outer1_13, {
-            toggleName: tmp,
-            description: tmp3,
-            value: tmp2,
-            onValueChange(arg0) {
-              return outer2_0(outer2_2[14]).toggle(closure_0, arg0);
-            }
-          }, tmp);
-        })
-    };
-    tmp = callback2(require(5536) /* TableRowGroupTitle */.TableRowGroup, obj);
+      let tmp2;
+      [tmp, tmp2, ] = arg0;
+      return callback(closure_13, {
+        toggleName: tmp,
+        description: tmp3,
+        value: tmp2,
+        onValueChange(arg0) {
+          return outer1_0(outer1_2[14]).toggle(closure_0, arg0);
+        }
+      }, tmp);
+    });
+    tmp3 = callback2(category(5554).TableRowGroup, obj);
   }
-  return tmp;
+  return tmp3;
 }
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.wrap = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.container = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_16 };
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { wrap: null, container: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, paddingHorizontal: require("Themes").space.PX_16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingVertical: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { paddingVertical: require("Themes").space.PX_16 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsTogglesScreen.tsx");
 
 export default function DevToolsTogglesScreen() {
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = callback(React.useState(""), 2);
-  const first = tmp2[0];
-  let obj = first(14782);
+  let tmp = createCacheKey();
+  let tmp3 = callback(React.useState(""), 2);
+  const first = tmp3[0];
+  let obj = first(14808);
   const manaTextMigrationHighlightRestartNotice = obj.useManaTextMigrationHighlightRestartNotice();
-  let obj1 = first(566);
-  const items = [_isNativeReflectConstruct];
+  let obj1 = first(589);
+  const items = [getUserAgnosticState];
   const items1 = [first];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_6.allWithDescriptions().filter((arg0) => {
-    let tmp;
-    let tmp2;
-    [tmp, , tmp2] = arg0;
-    return outer2_12(outer1_0, tmp, tmp2);
-  }), items1, first(566).statesWillNeverBeEqual);
-  obj = { style: tmp.wrap };
+    let str;
+    let str2;
+    [str, , str2] = arg0;
+    let tmp = 0 === length.length;
+    if (!tmp) {
+      const formatted = str3.toLowerCase();
+      let tmp2ResultResult = outer1_1(outer1_2[6])(formatted, str.toLowerCase());
+      if (!tmp2ResultResult) {
+        const formatted1 = str3.toLowerCase();
+        tmp2ResultResult = tmp2(tmp3[6])(formatted1, str2.toLowerCase());
+        const tmp2Result = tmp2(tmp3[6]);
+      }
+      tmp = tmp2ResultResult;
+      tmp2 = outer1_1;
+      tmp3 = outer1_2;
+      const tmp4 = outer1_1(outer1_2[6]);
+    }
+    return tmp;
+  }), items1, first(589).statesWillNeverBeEqual);
+  obj = { style: tmp.wrap, contentContainerStyle: null, children: null };
   const items2 = [tmp.container, ];
-  obj = { paddingBottom: importDefault(689).space.PX_16 + importDefault(5193)({ includeKeyboardHeight: true }).insets.bottom };
+  obj = { paddingBottom: importDefault(712).space.PX_16 + importDefault(5215)({ includeKeyboardHeight: true }).insets.bottom };
   items2[1] = obj;
-  obj.contentContainerStyle = items2;
-  obj1 = { spacing: 16 };
-  const obj2 = { title: "Actions", hasIcons: false };
-  const obj3 = {
-    label: "Clear All",
-    variant: "danger",
-    onPress() {
-      first(outer1_2[18]).clearAll();
-      const obj = first(outer1_2[18]);
-      first(outer1_2[14]).clearAll();
-    },
-    arrow: true
-  };
-  const items3 = [callback2(first(5198).TableRow, obj3), ];
-  const obj4 = {};
-  const obj5 = { size: "md", placeholder: "Search design toggles", onChange: tmp2[1] };
-  obj4.label = callback2(first(9215).SearchField, obj5);
-  items3[1] = callback2(first(5198).TableRow, obj4);
-  obj2.children = items3;
-  const items4 = [callback3(first(5536).TableRowGroup, obj2), , ];
-  let tmp8 = null;
+  obj[1] = items2;
+  obj1 = { title: "Actions", hasIcons: false, children: null };
+  const items3 = [
+    callback2(first(5220).TableRow, {
+      label: "Clear All",
+      variant: "danger",
+      onPress() {
+        first(14809).clearAll();
+        const obj = first(14809);
+        first(14791).clearAll();
+      },
+      arrow: true
+    }),
+
+  ];
+  const obj3 = { label: null };
+  obj3[0] = callback2(first(9239).SearchField, { size: "md", placeholder: "Search design toggles", onChange: tmp3[1] });
+  items3[1] = callback2(first(5220).TableRow, obj3);
+  obj1[2] = items3;
+  const items4 = [callback3(first(5554).TableRowGroup, obj1), , ];
+  let tmp7Result = null;
   if (stateFromStores.length > 0) {
-    const obj6 = {
-      title: "Design Toggles",
-      hasIcons: false,
-      children: stateFromStores.map((arg0) => {
-          let tmp;
-          let tmp2;
-          let tmp3;
-          [tmp, tmp2, tmp3] = arg0;
-          return outer1_9(outer1_13, {
-            toggleName: tmp,
-            description: tmp3,
-            value: tmp2,
-            onValueChange(arg0) {
-              return first(outer2_2[18]).toggle(closure_0, arg0);
-            }
-          }, tmp);
-        })
-    };
-    tmp8 = callback2(first(5536).TableRowGroup, obj6);
+    const obj4 = { title: "Design Toggles", hasIcons: false, children: null };
+    obj4[2] = stateFromStores.map((arg0) => {
+      let tmp;
+      let tmp2;
+      let tmp3;
+      [tmp, tmp2, tmp3] = arg0;
+      return callback(closure_13, {
+        toggleName: tmp,
+        description: tmp3,
+        value: tmp2,
+        onValueChange(arg0) {
+          return outer1_0(outer1_2[18]).toggle(closure_0, arg0);
+        }
+      }, tmp);
+    });
+    tmp7Result = tmp7(first(5554).TableRowGroup, obj4);
   }
-  items4[1] = tmp8;
+  const obj5 = { spacing: 16, children: null };
+  items4[1] = tmp7Result;
   const entries = Object.entries(CATEGORY_LABELS);
   items4[2] = entries.map((arg0) => {
     let tmp;
@@ -165,7 +177,7 @@ export default function DevToolsTogglesScreen() {
     [tmp, tmp2] = arg0;
     return outer1_9(outer1_14, { category: parseInt(tmp), title: tmp2, query: first }, tmp);
   });
-  obj1.children = items4;
-  obj.children = callback3(first(4576).Stack, obj1);
+  obj5[1] = items4;
+  obj[2] = callback3(first(4598).Stack, obj5);
   return callback2(ScrollView, obj);
 };

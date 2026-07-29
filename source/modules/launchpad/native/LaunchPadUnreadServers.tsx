@@ -1,22 +1,22 @@
-// Module ID: 15760
-// Function ID: 121438
+// Module ID: 15795
+// Function ID: 15796
 // Name: HistorySeparator
-// Dependencies: [31, 27, 1348, 4177, 1850, 653, 33, 4165, 689, 6669, 15761, 566, 1273, 9070, 5119, 11999, 4175, 4173, 9099, 15067, 1324, 1450, 15766, 1212, 7655, 2]
+// Dependencies: [19, 17, 1372, 4201, 1874, 676, 21, 4189, 712, 6690, 15796, 589, 1297, 9094, 5141, 12023, 4199, 4197, 9123, 15100, 1348, 1474, 15801, 1236, 7678, 2]
 
-// Module 15760 (HistorySeparator)
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 15795 (HistorySeparator)
+import importAllResult from "renderCategoryItem";
+import get_ActivityIndicator from "transitionToChannel";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import generateOldThreadCutoff from "generateOldThreadCutoff";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { ChannelTypes } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "useWindowDimensions";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_4;
-let closure_5;
+let c10;
+let c4;
+let c5;
+let unpackModuleId;
 const require = arg1;
 function HistorySeparator() {
   const tmp = callback2();
@@ -27,19 +27,20 @@ function HistorySeparator() {
 function renderHistorySection() {
   return callback(HistorySeparator, {});
 }
-({ Pressable: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-let obj = { listWrapper: { marginTop: 8 }, list: { marginBottom: 4, flexShrink: 0 } };
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj.maskStrokeStyle = obj;
-obj.privateChannelWrapper = { position: "relative", paddingVertical: 2, justifyContent: "center", alignItems: "center" };
-obj.privateChannelIcon = { width: 48, height: 48, borderRadius: 24, overflow: "hidden" };
-obj.badgeWrapper = { position: "absolute", top: "50%", left: "50%", marginLeft: 6, marginTop: 6 };
-obj.guildWrapper = { paddingVertical: 2, justifyContent: "center", alignItems: "center" };
-obj.guildHistorySeparatorWrapper = { flex: 1, justifyContent: "center", alignItems: "center" };
-_createForOfIteratorHelperLoose = { width: 2, height: 32, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
-obj.guildHistorySeparator = _createForOfIteratorHelperLoose;
-let closure_12 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+({ Pressable: c4, View: c5 } = get_ActivityIndicator);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+let obj = { listWrapper: { marginTop: 8 }, list: { marginBottom: 4, flexShrink: 0 }, maskStrokeStyle: null, privateChannelWrapper: null, privateChannelIcon: null, badgeWrapper: null, guildWrapper: null, guildHistorySeparatorWrapper: null, guildHistorySeparator: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[2] = obj;
+obj[3] = { position: "relative", paddingVertical: 2, justifyContent: "center", alignItems: "center" };
+obj[4] = { width: 48, height: 48, borderRadius: 24, overflow: "hidden" };
+obj[5] = { position: "absolute", top: "50%", left: "50%", marginLeft: 6, marginTop: 6 };
+obj[6] = { paddingVertical: 2, justifyContent: "center", alignItems: "center" };
+obj[7] = { flex: 1, justifyContent: "center", alignItems: "center" };
+createCacheKey = { width: 2, height: 32, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
+obj[8] = createCacheKey;
+let closure_12 = createCacheKey.createStyles(obj);
 let closure_13 = importAllResult.memo(function GuildItemInner(guildId) {
   guildId = guildId.guildId;
   const onGuildSelect = guildId.onGuildSelect;
@@ -49,137 +50,156 @@ let closure_13 = importAllResult.memo(function GuildItemInner(guildId) {
   const callback = importAllResult.useCallback(() => {
     onGuildSelect(guildId);
   }, items);
-  let obj = { style: tmp.guildWrapper };
+  let obj = { style: tmp.guildWrapper, children: null };
   const callback1 = importAllResult.useCallback(() => {
     guildId(outer1_2[9]).transitionToGuild(guildId);
   }, items1);
   obj = { size: 48, borderRadius: 16, guildId, selected: guildId.selected, onPress: callback, onLongPress: callback1, backgroundColor: tmp.maskStrokeStyle.backgroundColor };
-  obj.children = callback(onGuildSelect(15761), obj);
+  obj[1] = callback(onGuildSelect(15796), obj);
   return callback(closure_5, obj);
 });
 let closure_14 = importAllResult.memo(function PrivateChannelItemInner(channelId) {
   channelId = channelId.channelId;
+  let stateFromStores;
+  let stateFromStores1;
   const tmp = callback2();
   let obj = channelId(stateFromStores1[11]);
-  let items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getChannel(channelId));
+  let items = [ensureGuildLoaded];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_6.getChannel(channelId));
   let obj2 = channelId(stateFromStores1[11]);
-  const items1 = [closure_8];
+  const items1 = [mergeGuildAvatar];
   stateFromStores1 = obj2.useStateFromStores(items1, () => {
+    let isPrivateResult;
+    if (stateFromStores != null) {
+      isPrivateResult = obj.isPrivate();
+    }
     let user;
-    if (null != stateFromStores) {
-      if (stateFromStores.isPrivate()) {
-        user = outer1_8.getUser(stateFromStores.getRecipientId());
-      }
+    if (isPrivateResult) {
+      user = outer1_8.getUser(obj.getRecipientId());
     }
     return user;
   });
   let obj3 = channelId(stateFromStores1[11]);
-  const items2 = [closure_7];
+  const items2 = [generateOldThreadCutoff];
   const stateFromStores2 = obj3.useStateFromStores(items2, () => {
     let num = 0;
     if (null != stateFromStores) {
-      num = outer1_7.getMentionCount(stateFromStores.id);
+      num = outer1_7.getMentionCount(tmp.id);
     }
     return num;
   });
   let type;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     type = stateFromStores.type;
   }
   if (type === ChannelTypes.DM) {
     if (null != stateFromStores1) {
-      obj = { style: tmp.privateChannelIcon, user: stateFromStores1, guildId: undefined, size: channelId(stateFromStores1[12]).AvatarSizes.LARGE_48 };
-      let tmp5 = callback(channelId(stateFromStores1[12]).Avatar, obj);
+      obj = { style: null, user: null, guildId: "Array", size: "<string:3052339201>" };
+      obj[0] = tmp.privateChannelIcon;
+      obj[1] = stateFromStores1;
+      obj[3] = tmp2(tmp3[12]).AvatarSizes.LARGE_48;
+      let tmp8 = callback(tmp2(tmp3[12]).Avatar, obj);
     }
     const items3 = [stateFromStores1, stateFromStores];
-    let tmp22Result = null;
+    let tmp19Result = null;
     if (null != stateFromStores) {
-      obj = { onPress: tmp20, style: tmp.privateChannelWrapper, accessibilityRole: "button", accessible: true };
-      const items4 = [tmp5, ];
-      let tmp24 = stateFromStores2 > 0;
-      if (tmp24) {
-        const obj1 = { style: tmp.badgeWrapper };
-        obj2 = { value: stateFromStores2, unread: true, backgroundColor: tmp.maskStrokeStyle.backgroundColor };
-        obj1.children = callback(stateFromStores(stateFromStores1[18]), obj2);
-        tmp24 = callback(closure_5, obj1);
+      obj = { onPress: null, style: null, accessibilityRole: "button", accessible: true, children: null };
+      obj[0] = tmp17;
+      obj[1] = tmp.privateChannelWrapper;
+      const items4 = [tmp8, ];
+      let tmp21 = stateFromStores2 > 0;
+      if (tmp21) {
+        const obj1 = { style: null, children: null };
+        obj1[0] = tmp.badgeWrapper;
+        obj2 = { value: null, unread: true, backgroundColor: null };
+        obj2[0] = stateFromStores2;
+        obj2[2] = tmp.maskStrokeStyle.backgroundColor;
+        obj1[1] = callback(stateFromStores(tmp3[18]), obj2);
+        tmp21 = callback(closure_5, obj1);
       }
-      items4[1] = tmp24;
-      obj.children = items4;
-      tmp22Result = closure_11(closure_4, obj);
-      const tmp22 = closure_11;
-      const tmp23 = closure_4;
+      items4[1] = tmp21;
+      obj[4] = items4;
+      tmp19Result = closure_11(closure_4, obj);
+      const tmp19 = closure_11;
+      const tmp20 = closure_4;
     }
-    return tmp22Result;
+    return tmp19Result;
   }
-  if (null != stateFromStores) {
-    if (stateFromStores.isGroupDM()) {
-      obj3 = { channel: stateFromStores, size: channelId(stateFromStores1[12]).AvatarSizes.LARGE_48 };
-      tmp5 = callback(stateFromStores(stateFromStores1[13]), obj3);
-      const tmp14 = stateFromStores(stateFromStores1[13]);
-    }
+  let isGroupDMResult;
+  if (stateFromStores != null) {
+    isGroupDMResult = stateFromStores.isGroupDM();
   }
-  if (null != stateFromStores) {
-    const obj4 = {};
+  if (isGroupDMResult) {
+    obj3 = { channel: null, size: null };
+    obj3[0] = stateFromStores;
+    obj3[1] = tmp2(tmp3[12]).AvatarSizes.LARGE_48;
+    tmp8 = callback(stateFromStores(tmp3[13]), obj3);
+    const tmp14 = stateFromStores(tmp3[13]);
+  } else if (null != stateFromStores) {
+    const obj4 = { style: null, source: null };
     const items5 = [tmp.privateChannelIcon];
-    obj4.style = items5;
-    const tmp9 = stateFromStores(stateFromStores1[14]);
-    obj4.source = channelId(stateFromStores1[15]).getChannelIconSource(stateFromStores);
-    tmp5 = callback(tmp9, obj4);
-    const obj6 = channelId(stateFromStores1[15]);
+    obj4[0] = items5;
+    const tmp11 = stateFromStores(tmp3[14]);
+    obj4[1] = tmp2(tmp3[15]).getChannelIconSource(stateFromStores);
+    tmp8 = callback(tmp11, obj4);
+    const tmp2Result = tmp2(tmp3[15]);
   }
 });
 const memoResult = importAllResult.memo(function LaunchPadUnreadServers(selectedGuildId) {
   selectedGuildId = selectedGuildId.selectedGuildId;
   const setSelectedGuild = selectedGuildId.setSelectedGuild;
-  let num = selectedGuildId.unreadPrivateChannelIds;
+  let prop = selectedGuildId.unreadPrivateChannelIds;
   let unreadGuilds = selectedGuildId.unreadGuilds;
   let guildHistory = selectedGuildId.guildHistory;
   const visible = selectedGuildId.visible;
-  let flag = callback2();
-  let obj = selectedGuildId(num[19]);
-  let categoryStyles = obj.useCategoryStyles();
-  let tmp2 = setSelectedGuild(num[20])("LaunchPadUnreadServers");
-  let str = setSelectedGuild(num[21])().width;
-  let _isNativeReflectConstruct = unreadGuilds.useRef(-1);
+  let ensureGuildLoaded;
+  let callback;
+  let ref;
+  let list = callback2();
+  let AnimatedFastList = selectedGuildId;
+  let tmp = prop;
+  let obj = selectedGuildId(prop[19]);
+  const categoryStyles = obj.useCategoryStyles();
+  ensureGuildLoaded = unreadGuilds.useRef(-1);
   const items = [setSelectedGuild, selectedGuildId];
-  const callback = unreadGuilds.useCallback((arg0) => {
+  callback = unreadGuilds.useCallback((arg0) => {
     if (ref.current < 0) {
-      if (setSelectedGuild(22[22])(arg0)) {
-        let tmp5;
+      if (setSelectedGuild(prop[22])(arg0)) {
+        let tmp6;
         if (arg0 !== selectedGuildId) {
-          tmp5 = arg0;
+          tmp6 = arg0;
         }
-        setSelectedGuild(tmp5);
+        setSelectedGuild(tmp6);
         const _setTimeout = setTimeout;
-        ref.current = setTimeout(() => {
-          clearTimeout(outer1_6.current);
-          outer1_6.current = -1;
+        tmp.current = setTimeout(() => {
+          clearTimeout(ref.current);
+          ref.current = -1;
         }, 400);
       }
     }
     clearTimeout(ref.current);
     ref.current = -1;
-    selectedGuildId(num[9]).transitionToGuild(arg0);
+    selectedGuildId(prop[9]).transitionToGuild(arg0);
   }, items);
-  const effect = unreadGuilds.useEffect(() => () => clearTimeout(outer1_6.current), []);
-  const ref = unreadGuilds.useRef(null);
+  const effect = unreadGuilds.useEffect(() => () => clearTimeout(ref.current), []);
+  ref = unreadGuilds.useRef(null);
   const items1 = [visible];
   const effect1 = unreadGuilds.useEffect(() => {
     if (visible) {
       const current = ref.current;
-      if (null != current) {
+      if (current != null) {
         current.scrollToTop(false);
       }
     }
   }, items1);
-  const items2 = [unreadGuilds, num, selectedGuildId, callback, guildHistory];
-  const items3 = [unreadGuilds.length, num.length, guildHistory.length];
+  const items2 = [unreadGuilds, prop, selectedGuildId, callback, guildHistory];
+  const items3 = [unreadGuilds.length, prop.length, guildHistory.length];
   const callback1 = unreadGuilds.useCallback((arg0, arg1) => {
     if (0 === arg0) {
       let tmp14 = null != tmp12;
       if (tmp14) {
-        let obj = { channelId: tmp12 };
+        let obj = { channelId: null };
+        obj[0] = tmp12;
         tmp14 = outer1_10(outer1_14, obj);
       }
       return tmp14;
@@ -191,7 +211,10 @@ const memoResult = importAllResult.memo(function LaunchPadUnreadServers(selected
       }
       let tmp6 = null != tmp3;
       if (tmp6) {
-        obj = { guildId: tmp3, selected: selectedGuildId === tmp3, onGuildSelect: callback };
+        obj = { guildId: null, selected: null, onGuildSelect: null };
+        obj[0] = tmp3;
+        obj[1] = selectedGuildId === tmp3;
+        obj[2] = callback;
         tmp6 = outer1_10(outer1_13, obj);
       }
       return tmp6;
@@ -204,7 +227,7 @@ const memoResult = importAllResult.memo(function LaunchPadUnreadServers(selected
     if (2 === arg0) {
       num = 0;
       if (guildHistory.length > 0) {
-        if (num.length > 0) {
+        if (prop.length > 0) {
           num = 10;
         } else {
           num = 0;
@@ -213,60 +236,40 @@ const memoResult = importAllResult.memo(function LaunchPadUnreadServers(selected
     }
     return num;
   }, items3);
-  if (!(unreadGuilds.length > 0 || num.length > 0)) {
+  if (!(unreadGuilds.length > 0 || prop.length > 0)) {
     if (guildHistory.length <= 0) {
       return null;
     }
   }
-  obj = { style: flag.listWrapper };
-  let AnimatedFastList = selectedGuildId(num[19]);
-  let renderCategoryItem = AnimatedFastList.renderCategoryItem;
-  obj = {};
-  const intl = selectedGuildId(num[23]).intl;
+  obj = { style: list.listWrapper, children: null };
+  const tmp11 = closure_11;
+  const tmp12 = visible;
+  let tmp3 = setSelectedGuild(prop[20])("LaunchPadUnreadServers");
+  let renderCategoryItem = AnimatedFastList(tmp[19]).renderCategoryItem;
+  const intl = AnimatedFastList(tmp[23]).intl;
   const string = intl.string;
-  let xSY9BH = selectedGuildId(num[23]).t;
-  if (unreadGuilds.length > 0 || num.length > 0) {
-    xSY9BH = xSY9BH.xSY9BH;
-    let stringResult = string(xSY9BH);
+  let t = AnimatedFastList(tmp[23]).t;
+  if (unreadGuilds.length > 0 || prop.length > 0) {
+    let stringResult = string(t.xSY9BH);
   } else {
-    stringResult = string(xSY9BH.kCt2zG);
+    stringResult = string(t.kCt2zG);
   }
-  obj.name = stringResult;
-  obj.styles = categoryStyles;
-  obj.isRefreshEnabled = tmp2;
-  obj = [, ];
-  obj[0] = renderCategoryItem(obj);
-  tmp2 = callback;
-  categoryStyles = num;
-  AnimatedFastList = selectedGuildId(num[24]).AnimatedFastList;
-  const obj1 = { ref, style: flag.list };
-  flag = true;
-  obj1.horizontal = true;
-  obj1.renderItem = callback1;
-  obj1.renderSection = renderHistorySection;
-  obj1.sectionSize = length;
-  length = num.length;
-  const items4 = [length, , ];
+  t = [renderCategoryItem({ name: stringResult, styles: categoryStyles, isRefreshEnabled: tmp3 }), ];
+  renderCategoryItem = callback;
+  AnimatedFastList = AnimatedFastList(tmp[24]).AnimatedFastList;
+  obj = { ref, style: list, horizontal: true, renderItem: callback1, renderSection: renderHistorySection, sectionSize: length, sections: prop, itemSize: 58, headerSize: 19, footerSize: 19, chunkBase: setSelectedGuild(prop[21])().width, showsHorizontalScrollIndicator: false, showsVerticalScrollIndicator: false, stickySectionsVariant: "disabled", keyboardShouldPersistTaps: "always" };
+  list = list.list;
+  length = prop.length;
+  prop = [length, , ];
   unreadGuilds = unreadGuilds.length;
-  items4[1] = unreadGuilds;
+  prop[1] = unreadGuilds;
   guildHistory = guildHistory.length;
-  items4[2] = guildHistory;
-  obj1.sections = items4;
-  num = 58;
-  obj1.itemSize = 58;
-  obj1.headerSize = 19;
-  obj1.footerSize = 19;
-  obj1.chunkBase = str;
-  obj1.showsHorizontalScrollIndicator = false;
-  obj1.showsVerticalScrollIndicator = false;
-  obj1.stickySectionsVariant = "disabled";
-  str = "always";
-  obj1.keyboardShouldPersistTaps = "always";
-  renderCategoryItem = callback(AnimatedFastList, obj1);
-  obj[1] = renderCategoryItem;
-  obj.children = obj;
-  closure_11(visible, obj);
+  prop[2] = guildHistory;
+  tmp = callback(AnimatedFastList, obj);
+  t[1] = tmp;
+  obj[1] = t;
+  tmp11(tmp12, obj);
 });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/launchpad/native/LaunchPadUnreadServers.tsx");
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/launchpad/native/LaunchPadUnreadServers.tsx");
 
 export default memoResult;

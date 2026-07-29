@@ -1,117 +1,91 @@
-// Module ID: 14170
-// Function ID: 108780
-// Name: QuestHomeRoundtripTracker
-// Dependencies: [6, 7, 653, 675, 5849, 5854, 9453, 2]
+// Module ID: 14192
+// Function ID: 14193
+// Name: clearTimeoutTimer
+// Dependencies: [676, 698, 5867, 5872, 9477, 2]
 
-// Module 14170 (QuestHomeRoundtripTracker)
-import canUIRequestGatewaySocket from "canUIRequestGatewaySocket";
-import set from "set";
+// Module 14192 (clearTimeoutTimer)
 import { AnalyticEvents } from "ME";
 
-const require = arg1;
-let tmp2 = (() => {
-  class QuestHomeRoundtripTracker {
-    constructor() {
-      tmp = outer1_3(this, QuestHomeRoundtripTracker);
-      this.startTime = null;
-      this.timeoutTimer = null;
-      return;
-    }
+let c4 = 30000;
+class QuestHomeRoundtripTracker {
+}
+const prototype = QuestHomeRoundtripTracker.prototype;
+prototype["clearTimeoutTimer"] = function clearTimeoutTimer() {
+  const self = this;
+  if (null != this.timeoutTimer) {
+    const _clearTimeout = clearTimeout;
+    clearTimeout(self.timeoutTimer);
+    self.timeoutTimer = null;
   }
-  let obj = {
-    key: "clearTimeoutTimer",
-    value() {
-      const self = this;
-      if (null != this.timeoutTimer) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(self.timeoutTimer);
-        self.timeoutTimer = null;
-      }
-    }
-  };
-  let items = [obj, , , , ];
-  obj = {
-    key: "sendMetric",
-    value(timeout, duration) {
-      let obj = outer1_1(outer1_2[3]);
-      obj = { timeout, duration };
-      obj.track(outer1_5.QUEST_HOME_ROUNDTRIP, obj);
-      if (Math.random() <= 0.1) {
-        obj = { name: QuestHomeRoundtripTracker(outer1_2[5]).MetricEvents.QUEST_HOME_ROUNDTRIP };
-        const _HermesInternal = HermesInternal;
-        const items = ["includes_bounties:" + arg2, ];
-        const _HermesInternal2 = HermesInternal;
-        items[1] = "timeout:" + timeout;
-        obj.tags = items;
-        outer1_1(outer1_2[4]).distribution(obj, duration);
-        const obj3 = outer1_1(outer1_2[4]);
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "startTracking",
-    value() {
-      let obj = arg0;
-      let self = this;
-      self = this;
-      if (arg0 === undefined) {
-        obj = {};
-      }
-      let flag = obj.includesBounties;
-      if (flag === undefined) {
-        flag = false;
-      }
+};
+prototype["sendMetric"] = function sendMetric(timeout, duration) {
+  let obj = importDefault(698);
+  obj = { timeout, duration };
+  obj.track(AnalyticEvents.QUEST_HOME_ROUNDTRIP, obj);
+  if (Math.random() <= 0.1) {
+    obj = { name: null, tags: null };
+    obj[0] = require(5872) /* set */.MetricEvents.QUEST_HOME_ROUNDTRIP;
+    const _HermesInternal = HermesInternal;
+    const items = ["includes_bounties:" + arg2, ];
+    const _HermesInternal2 = HermesInternal;
+    items[1] = "timeout:" + timeout;
+    obj[1] = items;
+    importDefault(5867).distribution(obj, duration);
+    const tmpResult = importDefault(5867);
+  }
+};
+prototype["startTracking"] = function startTracking() {
+  let self = this;
+  self = this;
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  let flag = obj.includesBounties;
+  if (flag === undefined) {
+    flag = false;
+  }
+  self.clearTracking();
+  self.startTime = performance.now();
+  self.timeoutTimer = setTimeout(() => {
+    self.stopTracking({ includesBounties: flag, timeout: true });
+  }, c4);
+};
+prototype["stopTracking"] = function stopTracking() {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  let flag = obj.includesBounties;
+  if (flag === undefined) {
+    flag = false;
+  }
+  let flag2 = obj.timeout;
+  if (flag2 === undefined) {
+    flag2 = false;
+  }
+  const self = this;
+  if (null != this.startTime) {
+    if ("active" !== obj2.getState()) {
       self.clearTracking();
-      self.startTime = performance.now();
-      self.timeoutTimer = setTimeout(() => {
-        self.stopTracking({ includesBounties: flag, timeout: true });
-      }, 30000);
+    } else {
+      if (flag2) {
+        let rounded = c4;
+      } else {
+        const _Math = Math;
+        const _performance = performance;
+        rounded = Math.round(performance.now() - self.startTime);
+      }
+      const _Math2 = Math;
+      self.sendMetric(flag2, Math.min(rounded, c4), flag);
     }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "stopTracking",
-    value() {
-      let obj = arg0;
-      const self = this;
-      if (arg0 === undefined) {
-        obj = {};
-      }
-      let flag = obj.includesBounties;
-      if (flag === undefined) {
-        flag = false;
-      }
-      let flag2 = obj.timeout;
-      if (flag2 === undefined) {
-        flag2 = false;
-      }
-      if (null != self.startTime) {
-        if ("active" === obj2.getState()) {
-          let num2 = 30000;
-          if (!flag2) {
-            const _Math = Math;
-            const _performance = performance;
-            num2 = Math.round(performance.now() - self.startTime);
-          }
-          const _Math2 = Math;
-          self.sendMetric(flag2, Math.min(num2, 30000), flag);
-        }
-        self.clearTracking();
-        obj2 = outer1_1(outer1_2[6]);
-      }
-    }
-  };
-  items[4] = {
-    key: "clearTracking",
-    value() {
-      this.clearTimeoutTimer();
-      this.startTime = null;
-    }
-  };
-  return callback(QuestHomeRoundtripTracker, items);
-})();
-tmp2 = new tmp2();
-const result = require("ME").fileFinishedImporting("modules/quests/QuestHomeRoundtripTracker.tsx");
+    obj2 = importDefault(9477);
+  }
+};
+prototype["clearTracking"] = function clearTracking() {
+  this.clearTimeoutTimer();
+  this.startTime = null;
+};
+const result = require("set").fileFinishedImporting("modules/quests/QuestHomeRoundtripTracker.tsx");
 
-export default tmp2;
+export default Object.create(QuestHomeRoundtripTracker.prototype);

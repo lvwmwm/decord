@@ -1,38 +1,40 @@
-// Module ID: 15880
-// Function ID: 122411
+// Module ID: 15915
+// Function ID: 15916
 // Name: useExternalPipAspectRatioUpdater
-// Dependencies: [31, 10237, 2]
+// Dependencies: [19, 10258, 2]
 // Exports: default
 
-// Module 15880 (useExternalPipAspectRatioUpdater)
-import result from "result";
+// Module 15915 (useExternalPipAspectRatioUpdater)
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/external_pip/useExternalPipAspectRatioUpdater.native.tsx");
 
-export default function useExternalPipAspectRatioUpdater(arg0, arg1, arg2) {
+export default function useExternalPipAspectRatioUpdater(arg0, arg1, stateFromStores) {
   let closure_0 = arg1;
-  let closure_1 = arg2;
-  React = React.useRef(arg2);
+  let closure_1 = stateFromStores;
+  React = React.useRef(stateFromStores);
   const insertionEffect = React.useInsertionEffect(() => {
-    result.current = closure_1;
+    noop.current = closure_1;
   });
   const items = [arg1];
   const effect = React.useEffect(() => {
-    size = size.getTargetDimensions(ref.current);
-    callback(table[1]).setPipAspectRatio(size.width, size.height);
-    return size.subscribeFromItem(() => {
+    lib = lib.getTargetDimensions(ref.current);
+    lib(stateFromStores[1]).setPipAspectRatio(lib.width, lib.height);
+    return lib.subscribeFromItem(() => {
       let height;
       let width;
-      const targetDimensions = size.getTargetDimensions(outer1_2.current);
+      targetDimensions = targetDimensions.getTargetDimensions(outer1_2.current);
       ({ width, height } = targetDimensions);
       let tmp2 = width === obj.width;
       if (tmp2) {
         tmp2 = height === obj.height;
       }
       if (!tmp2) {
-        obj = { width, height };
-        size(table[1]).setPipAspectRatio(width, height);
-        const obj2 = size(table[1]);
+        obj = { width: null, height: null };
+        obj[0] = width;
+        obj[1] = height;
+        targetDimensions(table[1]).setPipAspectRatio(width, height);
+        const obj2 = targetDimensions(table[1]);
       }
     });
   }, items);

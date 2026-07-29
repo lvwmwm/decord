@@ -1,19 +1,19 @@
-// Module ID: 10537
-// Function ID: 81532
+// Module ID: 10561
+// Function ID: 10562
 // Name: videoStreamTimedOut
-// Dependencies: [686, 2]
+// Dependencies: [709, 2]
 // Exports: clearVideoStreamTimeout, videoStreamTimedOut
 
-// Module 10537 (videoStreamTimedOut)
+// Module 10561 (videoStreamTimedOut)
 const result = require("set").fileFinishedImporting("modules/errors/VideoStreamReadyActionCreators.tsx");
 
-export const videoStreamTimedOut = function videoStreamTimedOut(current, outer1_1, outer1_6, outer1_2) {
-  let obj = importDefault(686);
-  obj = { type: "VIDEO_STREAM_READY_TIMEOUT", videoStreamId: current, mediaContext: outer1_6, userId: outer1_1, streamKey: outer1_2 };
+export const videoStreamTimedOut = function videoStreamTimedOut(current, closure_1, closure_6, closure_2) {
+  let obj = importDefault(709);
+  obj = { type: "VIDEO_STREAM_READY_TIMEOUT", videoStreamId: current, mediaContext: closure_6, userId: closure_1, streamKey: closure_2 };
   obj.dispatch(obj);
 };
-export const clearVideoStreamTimeout = function clearVideoStreamTimeout(DEFAULT, userId) {
-  let obj = importDefault(686);
-  obj = { type: "CLEAR_VIDEO_STREAM_READY_TIMEOUT", mediaContext: DEFAULT, userId };
+export const clearVideoStreamTimeout = function clearVideoStreamTimeout(DEFAULT, closure_0) {
+  let obj = importDefault(709);
+  obj = { type: "CLEAR_VIDEO_STREAM_READY_TIMEOUT", mediaContext: DEFAULT, userId: closure_0 };
   obj.dispatch(obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 15850
-// Function ID: 122165
+// Module ID: 15885
+// Function ID: 15886
 // Name: hideLiveChannelNotice
-// Dependencies: [686, 2]
+// Dependencies: [709, 2]
 // Exports: dismissEventBanner, hideLiveChannelNotice, hideUpcomingEventNotice, markUpcomingEventNoticeAsSeen
 
-// Module 15850 (hideLiveChannelNotice)
+// Module 15885 (hideLiveChannelNotice)
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventsNoticesActionCreators.tsx");
 
 export const hideLiveChannelNotice = function hideLiveChannelNotice(arg0) {
@@ -12,23 +12,25 @@ export const hideLiveChannelNotice = function hideLiveChannelNotice(arg0) {
   let stageId;
   ({ eventId, stageId } = arg0);
   if (!tmp) {
-    let obj = importDefault(686);
-    obj = { type: "LIVE_CHANNEL_NOTICE_HIDE", eventId, stageId };
+    let obj = importDefault(709);
+    obj = { type: "LIVE_CHANNEL_NOTICE_HIDE", eventId: null, stageId: null };
+    obj[1] = eventId;
+    obj[2] = stageId;
     obj.dispatch(obj);
   }
 };
 export const hideUpcomingEventNotice = function hideUpcomingEventNotice(eventId) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "UPCOMING_GUILD_EVENT_NOTICE_HIDE", eventId };
   obj.dispatch(obj);
 };
 export const markUpcomingEventNoticeAsSeen = function markUpcomingEventNoticeAsSeen(guildEventId) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "UPCOMING_GUILD_EVENT_NOTICE_SEEN", guildEventId };
   obj.dispatch(obj);
 };
 export const dismissEventBanner = function dismissEventBanner(id) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "EVENT_BANNER_DISMISS", eventId: id };
   obj.dispatch(obj);
 };

@@ -1,14 +1,14 @@
-// Module ID: 5621
-// Function ID: 47555
+// Module ID: 5639
+// Function ID: 5640
 // Name: useNavigationTheme
-// Dependencies: [31, 3869, 689, 4011, 2]
+// Dependencies: [19, 3893, 712, 4035, 2]
 // Exports: useNavigationTheme
 
-// Module 5621 (useNavigationTheme)
-import result from "result";
+// Module 5639 (useNavigationTheme)
+import noop from "noop";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("design/components/Navigator/native/useNavigationTheme.native.tsx");
+const result = require("Themes").fileFinishedImporting("design/components/Navigator/native/useNavigationTheme.native.tsx");
 
 export const useNavigationTheme = function useNavigationTheme(theme) {
   const _require = theme;
@@ -23,9 +23,10 @@ export const useNavigationTheme = function useNavigationTheme(theme) {
   const token4 = _require(token1[1]).useToken(token(token1[2]).colors.BACKGROUND_FEEDBACK_NOTIFICATION, theme);
   const items = [token1, token2, token4, token, token3, theme];
   return token2.useMemo(() => {
-    let obj = { dark: theme(token1[3]).isThemeDark(theme) };
+    let obj = { dark: null, colors: null };
+    obj[0] = theme(token1[3]).isThemeDark(theme);
     obj = { primary: token, background: "transparent", border: token1, card: token2, text: token3, notification: token4 };
-    obj.colors = obj;
+    obj[1] = obj;
     return obj;
   }, items);
 };

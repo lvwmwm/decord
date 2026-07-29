@@ -1,30 +1,30 @@
-// Module ID: 10159
-// Function ID: 78483
+// Module ID: 10180
+// Function ID: 10181
 // Name: SafetyToolsAboutScreen
-// Dependencies: [57, 31, 27, 10138, 653, 33, 4165, 689, 10132, 4133, 10135, 10136, 10160, 1212, 3865, 10145, 4161, 1921, 4578, 2]
+// Dependencies: [32, 19, 17, 10159, 676, 21, 4189, 712, 10153, 4157, 10156, 10157, 10181, 1236, 3889, 10166, 4185, 1945, 4600, 2]
 // Exports: default
 
-// Module 10159 (SafetyToolsAboutScreen)
+// Module 10180 (SafetyToolsAboutScreen)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
+import set from "set";
+import { View } from "combined";
 import { getSafetyToolsActionSheetKey as closure_6 } from "LOCATION_CONTEXT_MOBILE";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_32 };
-_createForOfIteratorHelperLoose.aboutContainer = _createForOfIteratorHelperLoose;
-let obj1 = { alignSelf: "center", textAlign: "center", marginBottom: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.description = obj1;
-let obj2 = { alignSelf: "center", textAlign: "center", marginTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.reportFalsePositive = obj2;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { aboutContainer: null, description: null, reportFalsePositive: null };
+createCacheKey = { marginHorizontal: require("Themes").space.PX_32 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { alignSelf: "center", textAlign: "center", marginBottom: require("Themes").space.PX_24 };
+let obj1 = { alignSelf: "center", textAlign: "center", marginBottom: require("Themes").space.PX_24 };
+createCacheKey[2] = { alignSelf: "center", textAlign: "center", marginTop: require("Themes").space.PX_8 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { alignSelf: "center", textAlign: "center", marginTop: require("Themes").space.PX_8 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsAboutActionSheet.tsx");
 
 export default function SafetyToolsAboutScreen(channelId) {
@@ -32,80 +32,83 @@ export default function SafetyToolsAboutScreen(channelId) {
   const recipientId = channelId.recipientId;
   const warningId = channelId.warningId;
   const warningType = channelId.warningType;
+  let first;
+  let closure_5;
+  let c6;
+  let HelpdeskArticles;
   const tmp = warningType(first.useState(false), 2);
   first = tmp[0];
-  let closure_5 = tmp[1];
-  const tmp3 = _createForOfIteratorHelperLoose();
+  closure_5 = tmp[1];
+  const tmp3 = createCacheKey();
   let obj = channelId(warningId[8]);
   const tmp4 = null != obj.useSafetyToolsButtonTooltipForChannel(channelId);
-  let closure_6 = tmp4;
+  c6 = tmp4;
   const items = [channelId, warningId, warningType, recipientId, tmp4];
   const items1 = [channelId, first];
   const callback = first.useCallback(() => {
     let obj = recipientId(warningId[9]);
-    obj.hideActionSheet(tmp4(channelId));
-    obj = { channelId, warningId, warningType, senderId: recipientId, cta: channelId(warningId[10]).CtaEventTypes.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS_DISMISS, isNudgeWarning: tmp4 };
+    obj.hideActionSheet(_undefined(channelId));
+    obj = { channelId, warningId, warningType, senderId: recipientId, cta: channelId(warningId[10]).CtaEventTypes.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS_DISMISS, isNudgeWarning: _undefined };
     channelId(warningId[10]).trackCtaEvent(obj);
   }, items);
-  const HelpdeskArticles = first.useCallback(() => {
+  HelpdeskArticles = first.useCallback(() => {
     if (!first) {
       callback(true);
       let obj = channelId(warningId[11]);
       const reportFalsePositiveResult = channelId(warningId[11]).reportFalsePositive(channelId);
       channelId(warningId[11]).reportFalsePositive(channelId).then(() => {
-        outer1_5(false);
-        let obj = channelId(warningId[12]);
-        obj = { id: "safety-tools-report-false-positive" };
-        const intl = channelId(warningId[13]).intl;
-        obj.text = intl.string(channelId(warningId[13]).t.FhgVWi);
+        callback(false);
+        let obj = outer1_0(outer1_2[12]);
+        obj = { id: "safety-tools-report-false-positive", text: null };
+        const intl = outer1_0(outer1_2[13]).intl;
+        obj[1] = intl.string(outer1_0(outer1_2[13]).t.FhgVWi);
         obj.showSafetyToast(obj);
-        recipientId(warningId[9]).hideActionSheet(callback(outer1_0));
+        outer1_1(outer1_2[9]).hideActionSheet(outer1_6(closure_0));
       }).catch(() => {
-        outer1_5(false);
-        const intl = channelId(warningId[13]).intl;
-        channelId(warningId[14]).presentError(intl.string(channelId(warningId[13]).t.R0RpRX));
+        callback(false);
+        const intl = outer1_0(outer1_2[13]).intl;
+        outer1_0(outer1_2[14]).presentError(intl.string(outer1_0(outer1_2[13]).t.R0RpRX));
       });
       const nextPromise = channelId(warningId[11]).reportFalsePositive(channelId).then(() => {
-        outer1_5(false);
-        let obj = channelId(warningId[12]);
-        obj = { id: "safety-tools-report-false-positive" };
-        const intl = channelId(warningId[13]).intl;
-        obj.text = intl.string(channelId(warningId[13]).t.FhgVWi);
+        callback(false);
+        let obj = outer1_0(outer1_2[12]);
+        obj = { id: "safety-tools-report-false-positive", text: null };
+        const intl = outer1_0(outer1_2[13]).intl;
+        obj[1] = intl.string(outer1_0(outer1_2[13]).t.FhgVWi);
         obj.showSafetyToast(obj);
-        recipientId(warningId[9]).hideActionSheet(callback(outer1_0));
+        outer1_1(outer1_2[9]).hideActionSheet(outer1_6(closure_0));
       });
     }
   }, items1);
-  obj = { hasHeaderBack: true, recipientId, warningId, warningType };
+  obj = { hasHeaderBack: true, recipientId, warningId, warningType, headerTitle: null, channelId: null, onClose: null, children: null };
   let intl = channelId(warningId[13]).intl;
-  obj.headerTitle = intl.string(channelId(warningId[13]).t.qI14KM);
-  obj.channelId = channelId;
-  obj.onClose = channelId.onClose;
-  obj = { style: tmp3.aboutContainer };
-  const obj1 = { variant: "text-md/medium", style: tmp3.description };
+  obj[4] = intl.string(channelId(warningId[13]).t.qI14KM);
+  obj[5] = channelId;
+  obj[6] = channelId.onClose;
+  obj = { style: tmp3.aboutContainer, children: null };
+  const obj1 = { variant: "text-md/medium", style: tmp3.description, children: null };
   const intl2 = channelId(warningId[13]).intl;
-  const obj2 = {};
+  const obj2 = { learnMoreLink: null };
   let obj5 = recipientId(warningId[17]);
-  obj2.learnMoreLink = obj5.getArticleURL(HelpdeskArticles.SAFETY_ALERTS);
-  obj1.children = intl2.format(channelId(warningId[13]).t["njJ/Cg"], obj2);
+  obj2[0] = obj5.getArticleURL(HelpdeskArticles.SAFETY_ALERTS);
+  obj1[2] = intl2.format(channelId(warningId[13]).t["njJ/Cg"], obj2);
   const items2 = [callback(channelId(warningId[16]).Text, obj1), ];
-  const obj3 = { variant: "secondary", size: "lg", disabled: first };
+  const obj3 = { variant: "secondary", size: "lg", disabled: first, text: null, onPress: null };
   const intl3 = channelId(warningId[13]).intl;
-  obj3.text = intl3.string(channelId(warningId[13]).t.Xb2REN);
-  obj3.onPress = callback;
+  obj3[3] = intl3.string(channelId(warningId[13]).t.Xb2REN);
+  obj3[4] = callback;
   items2[1] = callback(channelId(warningId[18]).Button, obj3);
-  obj.children = items2;
+  obj[1] = items2;
   const items3 = [callback2(closure_5, obj), ];
-  const obj4 = { variant: "text-md/medium", style: tmp3.reportFalsePositive };
+  const obj4 = { variant: "text-md/medium", style: tmp3.reportFalsePositive, children: null };
   const intl4 = channelId(warningId[13]).intl;
   obj5 = {
     reportFalsePositiveHook(children) {
-      const obj = { variant: "text-sm/medium", color: "text-link", disabled: first, onPress: closure_7, children };
-      return outer1_8(channelId(warningId[16]).Text, obj, arg1);
+      return outer1_8(channelId(warningId[16]).Text, { variant: "text-sm/medium", color: "text-link", disabled: first, onPress: closure_7, children }, arg1);
     }
   };
-  obj4.children = intl4.format(channelId(warningId[13]).t["2uYViD"], obj5);
+  obj4[2] = intl4.format(channelId(warningId[13]).t["2uYViD"], obj5);
   items3[1] = callback(channelId(warningId[16]).Text, obj4);
-  obj.children = items3;
+  obj[7] = items3;
   return callback2(recipientId(warningId[15]), obj);
 };

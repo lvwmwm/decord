@@ -1,109 +1,43 @@
-// Module ID: 8017
-// Function ID: 63709
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 3816, 653, 1852, 44, 8018, 3811, 6280, 566, 8020, 3747, 2]
-// Exports: didBeginPurchaseFlowOnFractionalPremium, getOrFetchSubscriptionPlan, getSubscriptionPauseDurations, getSubscriptionSKUs, subscriptionCanDowngrade, useGetOrFetchSubscriptionPlan
+// Module ID: 8041
+// Function ID: 8042
+// Name: getSubscriptionPlans
+// Dependencies: [32, 19, 3840, 676, 1876, 38, 8042, 3835, 6301, 589, 8044, 3771, 2]
+// Exports: didBeginPurchaseFlowOnFractionalPremium, getOrFetchSubscriptionPlan, getSubscriptionPauseDurations, getSubscriptionPlans, getSubscriptionSKUs, subscriptionCanDowngrade, subscriptionCanSwitchImmediately, useGetOrFetchSubscriptionPlan
 
-// Module 8017 (_createForOfIteratorHelperLoose)
+// Module 8041 (getSubscriptionPlans)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import addSubscriptionPlan from "addSubscriptionPlan";
 import ME from "ME";
 import GuildFeatures from "GuildFeatures";
 
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function getSubscriptionPlans(items) {
+({ SubscriptionStatusTypes: closure_6, SubscriptionTypes: error } = ME);
+({ SubscriptionPlans: metroImportAll, SubscriptionPlanInfo: c9 } = GuildFeatures);
+let result = require("addSubscriptionPlan").fileFinishedImporting("utils/SubscriptionUtils.tsx");
+
+export const getSubscriptionPlans = function getSubscriptionPlans(items) {
   items = items.items;
   return items.map((planId) => {
-    const value = outer1_5.get(planId.planId);
-    outer1_1(outer1_2[5])(null != value, "Unable to fetch plan");
+    const value = addSubscriptionPlan.get(planId.planId);
+    callback(table[5])(null != value, "Unable to fetch plan");
     return value;
   });
-}
-function subscriptionCanSwitchImmediately(getCurrentSubscriptionPlanIdForGroup, newPlanId, arr) {
+};
+export const getSubscriptionSKUs = function getSubscriptionSKUs(items) {
+  items = items.items;
+  const mapped = items.map((planId) => {
+    const value = addSubscriptionPlan.get(planId.planId);
+    callback(table[5])(null != value, "Unable to fetch plan");
+    return value;
+  });
+  return mapped.map((skuId) => skuId.skuId);
+};
+export const subscriptionCanSwitchImmediately = function subscriptionCanSwitchImmediately(getCurrentSubscriptionPlanIdForGroup, newPlanId, arr) {
   const currentSubscriptionPlanIdForGroup = getCurrentSubscriptionPlanIdForGroup.getCurrentSubscriptionPlanIdForGroup(arr);
   if (getCurrentSubscriptionPlanIdForGroup.type === constants2.PREMIUM) {
     if (null == currentSubscriptionPlanIdForGroup) {
@@ -112,63 +46,76 @@ function subscriptionCanSwitchImmediately(getCurrentSubscriptionPlanIdForGroup, 
   }
   let obj = { oldPlanId: currentSubscriptionPlanIdForGroup, newPlanId };
   if (null == currentSubscriptionPlanIdForGroup) {
-    const CheckoutError2 = require(8018) /* _isNativeReflectConstruct */.CheckoutError;
-    obj = { message: "Current subscription has no plan in group" };
-    obj.extraSentryInformation = obj;
-    const prototype2 = CheckoutError2.prototype;
-    const checkoutError2 = new CheckoutError2(obj);
-    throw checkoutError2;
+    obj = { message: "Current subscription has no plan in group", extraSentryInformation: null };
+    obj[1] = obj;
+    const checkoutError = new require(8042) /* prototype */.CheckoutError(obj);
+    throw checkoutError;
   } else {
     if (currentSubscriptionPlanIdForGroup === closure_8.PREMIUM_YEAR_TIER_1) {
       if (newPlanId === closure_8.PREMIUM_MONTH_TIER_2) {
-        const CheckoutError = require(8018) /* _isNativeReflectConstruct */.CheckoutError;
-        obj = { message: "Unexpected plan switch" };
-        obj.extraSentryInformation = obj;
-        const prototype = CheckoutError.prototype;
-        const checkoutError = new CheckoutError(obj);
-        throw checkoutError;
+        obj = { message: "Unexpected plan switch", extraSentryInformation: null };
+        obj[1] = obj;
+        const checkoutError1 = new require(8042) /* prototype */.CheckoutError(obj);
+        throw checkoutError1;
       }
     }
     const index = arr.indexOf(currentSubscriptionPlanIdForGroup);
     return index < arr.indexOf(newPlanId);
   }
-}
-({ SubscriptionStatusTypes: closure_6, SubscriptionTypes: closure_7 } = ME);
-({ SubscriptionPlans: closure_8, SubscriptionPlanInfo: closure_9 } = GuildFeatures);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("utils/SubscriptionUtils.tsx");
-
-export { getSubscriptionPlans };
-export const getSubscriptionSKUs = function getSubscriptionSKUs(items) {
-  return getSubscriptionPlans(items).map((skuId) => skuId.skuId);
 };
-export { subscriptionCanSwitchImmediately };
-export const subscriptionCanDowngrade = function subscriptionCanDowngrade(getCurrentSubscriptionPlanIdForGroup, newPlanId, arr) {
-  return !subscriptionCanSwitchImmediately(getCurrentSubscriptionPlanIdForGroup, newPlanId, arr);
+export const subscriptionCanDowngrade = function subscriptionCanDowngrade(getCurrentSubscriptionPlanIdForGroup, arg1, arr) {
+  const currentSubscriptionPlanIdForGroup = getCurrentSubscriptionPlanIdForGroup.getCurrentSubscriptionPlanIdForGroup(arr);
+  if (getCurrentSubscriptionPlanIdForGroup.type !== constants2.PREMIUM) {
+    let obj = { oldPlanId: null, newPlanId: null };
+    obj[0] = currentSubscriptionPlanIdForGroup;
+    obj[1] = arg1;
+    if (null == currentSubscriptionPlanIdForGroup) {
+      obj = { message: "Current subscription has no plan in group", extraSentryInformation: null };
+      obj[1] = obj;
+      const checkoutError = new require(8042) /* prototype */.CheckoutError(obj);
+      throw checkoutError;
+    } else {
+      if (currentSubscriptionPlanIdForGroup === closure_8.PREMIUM_YEAR_TIER_1) {
+        if (arg1 === closure_8.PREMIUM_MONTH_TIER_2) {
+          obj = { message: "Unexpected plan switch", extraSentryInformation: null };
+          obj[1] = obj;
+          const checkoutError1 = new require(8042) /* prototype */.CheckoutError(obj);
+          throw checkoutError1;
+        }
+      }
+      const index = arr.indexOf(currentSubscriptionPlanIdForGroup);
+      let flag = index < arr.indexOf(arg1);
+    }
+  } else {
+    flag = true;
+  }
+  return !flag;
 };
 export const getOrFetchSubscriptionPlan = function getOrFetchSubscriptionPlan(subscriptionPlanId, closure_1) {
-  const value = _isNativeReflectConstruct.get(subscriptionPlanId);
+  const value = addSubscriptionPlan.get(subscriptionPlanId);
   if (null == value) {
     const _HermesInternal = HermesInternal;
-    importDefault(44)(null != table[subscriptionPlanId], "Missing hardcoded subscriptionPlan: " + subscriptionPlanId);
-    const tmp10 = importDefault(44);
-    const tmp11 = null != table[subscriptionPlanId];
-    const result = require(3811) /* _createForOfIteratorHelperLoose */.castPremiumSubscriptionAsSkuId(tmp7.skuId);
-    if (!_isNativeReflectConstruct.isFetchingForSKU(result)) {
-      const subscriptionPlansForSKU = require(6280) /* fetchSubscriptionPlansForSKU */.fetchSubscriptionPlansForSKU(result, closure_1);
-      const obj = require(6280) /* fetchSubscriptionPlansForSKU */;
+    importDefault(38)(null != table[subscriptionPlanId], "Missing hardcoded subscriptionPlan: " + subscriptionPlanId);
+    const tmp12 = require;
+    const tmp8 = importDefault(38);
+    const tmp9 = null != table[subscriptionPlanId];
+    const result = require(3835) /* getPremiumPlanItem */.castPremiumSubscriptionAsSkuId(tmp5.skuId);
+    if (!addSubscriptionPlan.isFetchingForSKU(result)) {
+      const subscriptionPlansForSKU = tmp12(6301).fetchSubscriptionPlansForSKU(result, closure_1);
+      const tmp12Result = tmp12(6301);
     }
-    const obj2 = require(3811) /* _createForOfIteratorHelperLoose */;
+    const obj3 = require(3835) /* getPremiumPlanItem */;
   }
   return value;
 };
 export const useGetOrFetchSubscriptionPlan = function useGetOrFetchSubscriptionPlan(subscriptionPlanId) {
   const _require = subscriptionPlanId;
   let closure_1 = arg1;
-  let items = [_isNativeReflectConstruct];
+  let items = [addSubscriptionPlan];
   const tmp = callback(_require(first[9]).useStateFromStoresArray(items, () => {
     let value = null;
     if (null != closure_0) {
-      value = outer1_5.get(closure_0);
+      value = outer1_5.get(tmp);
     }
     const items = [value, ];
     let isFetchingForSKUResult = null != value;
@@ -186,11 +133,11 @@ export const useGetOrFetchSubscriptionPlan = function useGetOrFetchSubscriptionP
       if (null != subscriptionPlanId) {
         if (!_slicedToArray) {
           const _HermesInternal = HermesInternal;
-          callback(first[5])(null != outer1_9[subscriptionPlanId], "Missing hardcoded subscriptionPlan: " + subscriptionPlanId);
-          const tmp6 = callback(first[5]);
-          const tmp7 = null != outer1_9[subscriptionPlanId];
+          callback(first[5])(null != outer1_9[tmp12], "Missing hardcoded subscriptionPlan: " + tmp12);
+          const tmp5 = callback(first[5]);
+          const tmp6 = null != outer1_9[tmp12];
           const obj = subscriptionPlanId(first[8]);
-          const subscriptionPlansForSKU = obj.fetchSubscriptionPlansForSKU(subscriptionPlanId(first[7]).castPremiumSubscriptionAsSkuId(tmp3.skuId), callback);
+          const subscriptionPlansForSKU = obj.fetchSubscriptionPlansForSKU(subscriptionPlanId(first[7]).castPremiumSubscriptionAsSkuId(tmp2.skuId), callback);
           const obj2 = subscriptionPlanId(first[7]);
         }
       }
@@ -199,46 +146,47 @@ export const useGetOrFetchSubscriptionPlan = function useGetOrFetchSubscriptionP
   return first;
 };
 export const getSubscriptionPauseDurations = function getSubscriptionPauseDurations(status) {
-  let iter2;
-  const keys = Object.keys(require(8020) /* PauseDuration */.PauseDuration);
+  const keys = Object.keys(require(8044) /* PauseDuration */.PauseDuration);
   const found = keys.filter((arg0) => isNaN(Number(arg0)));
   if (status.status !== constants.PAUSED) {
-    let obj = { durations: found, currentDaysPaused: 0 };
+    let obj = { durations: null, currentDaysPaused: 0 };
+    obj[0] = found;
     return obj;
   } else if (null != status.pauseEndsAt) {
-    const tmp4 = importDefault(3747)(status.currentPeriodStart);
+    const tmp6 = importDefault(3771)(status.currentPeriodStart);
     const _Math = Math;
-    const rounded = Math.round(importDefault(3747)(status.pauseEndsAt).diff(tmp4, "days", true));
+    const rounded = Math.round(importDefault(3771)(status.pauseEndsAt).diff(tmp6, "days", true));
     const items = [];
-    const tmp7 = _createForOfIteratorHelperLoose(found);
-    let iter = tmp7();
-    if (!iter.done) {
-      do {
-        let value = iter.value;
-        let tmp8 = require;
-        let tmp9 = dependencyMap;
-        if (require(8020) /* PauseDuration */.PauseDuration[value] > rounded) {
-          let arr = items.push(value);
-        }
-        iter2 = tmp7();
-        iter = iter2;
-      } while (!iter2.done);
+    for (const item10042 of found) {
+      let tmp11 = require;
+      let tmp12 = dependencyMap;
+      let tmp13 = dependencyMap;
+      let tmp10 = item10042;
+      if (require(8044) /* PauseDuration */.PauseDuration[item10042] > rounded) {
+        let tmp14 = item10042;
+        let arr = items.push(tmp10);
+      }
+      continue;
     }
-    obj = { durations: items, currentDaysPaused: rounded };
+    obj = { durations: null, currentDaysPaused: null };
+    obj[0] = items;
+    obj[1] = rounded;
     return obj;
   } else {
-    obj = { durations: [], currentDaysPaused: 0 };
+    obj = { durations: null, currentDaysPaused: 0 };
+    obj[0] = [];
     return obj;
   }
+  const tmp = dependencyMap;
 };
 export const didBeginPurchaseFlowOnFractionalPremium = function didBeginPurchaseFlowOnFractionalPremium(isSameOrAfter) {
   let isMomentResult = null != isSameOrAfter;
   if (isMomentResult) {
-    isMomentResult = importDefault(3747).isMoment(isSameOrAfter);
-    const obj = importDefault(3747);
+    isMomentResult = importDefault(3771).isMoment(isSameOrAfter);
+    const obj = importDefault(3771);
   }
   if (isMomentResult) {
-    isMomentResult = isSameOrAfter.isSameOrAfter(importDefault(3747)());
+    isMomentResult = isSameOrAfter.isSameOrAfter(importDefault(3771)());
   }
   return isMomentResult;
 };

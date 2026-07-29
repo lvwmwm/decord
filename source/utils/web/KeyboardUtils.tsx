@@ -1,10 +1,10 @@
-// Module ID: 12932
-// Function ID: 100284
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 5742, 477, 22, 12933, 12934, 12935, 1327, 2]
-// Exports: areKeyCombosEqual, getRawCodeFromKey, isKeyboardActivatedMouseEvent, toBrowserEvents, toCombo, toString
+// Module ID: 12954
+// Function ID: 12955
+// Name: getCodeToKeyLanguageCorrection
+// Dependencies: [32, 5760, 500, 12, 12955, 12956, 12957, 1351, 2]
+// Exports: areKeyCombosEqual, codeToKey, getEnv, getRawCodeFromKey, isKeyboardActivatedMouseEvent, toBrowserEvents, toCombo, toString
 
-// Module 12932 (_createForOfIteratorHelperLoose)
+// Module 12954 (getCodeToKeyLanguageCorrection)
 import _slicedToArray from "_slicedToArray";
 import items from "items";
 import set from "set";
@@ -15,273 +15,170 @@ import set from "set";
 import set from "set";
 
 let LinuxKeyToCode;
-let closure_5;
+let c5;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function maybePlusConversion(key) {
-  let str = "plus";
-  if ("+" !== key) {
-    str = key;
-  }
-  return str;
-}
 function getCodeToKeyLanguageCorrection(keyCode, key, arg2) {
   if (null != arg2) {
     if (arg2 !== KeyboardEnvs.WINDOWS) {
       return key;
     }
   }
-  const BACKTICK_CODES = require(12934) /* _isNativeReflectConstruct */.BACKTICK_CODES;
+  const BACKTICK_CODES = require(12956) /* normalizeKey */.BACKTICK_CODES;
   if (BACKTICK_CODES.has(keyCode)) {
-    let obj = require(12934) /* _isNativeReflectConstruct */;
-    const layoutMap = obj.getLayoutMap();
-    const value = layoutMap.get("Backquote");
+    let tmp2Result = tmp2(12956);
+    const layoutMap = tmp2Result.getLayoutMap();
+    let value = layoutMap.get("Backquote");
     if (key === value) {
-      return maybePlusConversion(key);
+      let str7 = "plus";
+      if ("+" !== key) {
+        str7 = key;
+      }
+      return str7;
     } else {
-      obj = { key: value, code: "Backquote", keyCode };
-      const exactKeyboardEventMatchFromAny = require(12934) /* _isNativeReflectConstruct */.getExactKeyboardEventMatchFromAny(obj);
+      tmp2Result = tmp2(12956);
+      const obj = { key: null, code: "Backquote", keyCode: null };
+      obj[0] = value;
+      obj[2] = keyCode;
+      const exactKeyboardEventMatchFromAny = tmp2Result.getExactKeyboardEventMatchFromAny(obj);
       if ("\\" === key) {
-        if ("`" === value) {
-          return key;
-        }
+        let tmp6 = key;
+        return tmp6;
       }
       if (null == exactKeyboardEventMatchFromAny) {
-        let tmp10 = key;
-        if (null != value) {
-          tmp10 = value;
+        if (value == null) {
+          value = key;
         }
-        key = tmp10;
+        key = value;
       } else {
         key = exactKeyboardEventMatchFromAny.key;
       }
-      maybePlusConversion(key);
-      const obj3 = require(12934) /* _isNativeReflectConstruct */;
-      const tmp9 = maybePlusConversion;
+      let str5 = "plus";
+      if ("+" !== key) {
+        str5 = key;
+      }
+      tmp6 = str5;
     }
   } else {
     return key;
   }
 }
-function getEnv() {
-  if (obj.isLinux()) {
-    let MACOS = KeyboardEnvs.LINUX;
-  } else {
-    if (obj2.isMac()) {
-      MACOS = KeyboardEnvs.MACOS;
-    } else {
-      MACOS = require(477) /* set */.isWindows() ? tmp5.WINDOWS : tmp5.BROWSER;
-      const obj3 = require(477) /* set */;
+function keyToCode(toLocaleLowerCase) {
+  if (arg1 !== undefined) {
+    let KEYBOARD_KEY = arg2;
+    if (arg2 === undefined) {
+      KEYBOARD_KEY = constants.KEYBOARD_KEY;
     }
-    obj2 = require(477) /* set */;
-  }
-  return MACOS;
-}
-function codeToKey(arg0) {
-  let tmp5;
-  let tmp6;
-  const tmp = callback(arg0, 3);
-  [, tmp5, tmp6] = arg0;
-  if (KeyboardEnvs.LINUX === tmp6) {
-    let tmp11 = invertResult["" + tmp4];
-  } else if (KeyboardEnvs.MACOS === tmp6) {
-    tmp11 = table["" + tmp5];
-  } else {
-    if (KeyboardEnvs.WINDOWS === tmp6) {
-      tmp11 = invertResult1["" + tmp5];
-    } else if (KeyboardEnvs.BROWSER === tmp6) {
-      const tmp15 = importDefault(12933)(tmp5);
+    if (arg1 !== undefined) {
+      if (KEYBOARD_KEY === undefined) {
+        KEYBOARD_KEY = constants.KEYBOARD_KEY;
+      }
       let tmp17 = null;
-      if (null != tmp15) {
-        tmp11 = getKeyConversionForBrowser(tmp15);
-      }
-    } else {
-      tmp11 = set["" + tmp5];
-    }
-    if (null != tmp17) {
-      return getCodeToKeyLanguageCorrection(tmp2, tmp17, tmp3);
-    } else {
-      const keyboardEventShapeFromKeycode = require(12934) /* _isNativeReflectConstruct */.getKeyboardEventShapeFromKeycode(tmp2);
-      let tmp29 = null;
-      if (null != keyboardEventShapeFromKeycode) {
-        tmp29 = getCodeToKeyLanguageCorrection(keyboardEventShapeFromKeycode.keyCode, keyboardEventShapeFromKeycode.key, tmp3);
-      }
-      return tmp29;
-    }
-  }
-  let tmp24 = null;
-  if (null != tmp11) {
-    tmp24 = tmp11;
-  }
-  tmp17 = tmp24;
-}
-function keyToCode(key) {
-  let tmp = arg1;
-  let KEYBOARD_KEY = arg2;
-  if (arg1 === undefined) {
-    tmp = getEnv();
-  }
-  if (KEYBOARD_KEY === undefined) {
-    KEYBOARD_KEY = constants.KEYBOARD_KEY;
-  }
-  if (tmp === undefined) {
-    tmp = getEnv();
-  }
-  if (KEYBOARD_KEY === undefined) {
-    KEYBOARD_KEY = constants.KEYBOARD_KEY;
-  }
-  let tmp6 = null;
-  if (null != key) {
-    let tmp8 = KEYBOARD_KEY === constants.KEYBOARD_KEY;
-    if (!tmp8) {
-      tmp8 = KEYBOARD_KEY === constants.KEYBOARD_MODIFIER_KEY;
-    }
-    let tmp10 = tmp8;
-    if (tmp8) {
-      tmp10 = tmp === KeyboardEnvs.LINUX;
-    }
-    if (tmp10 === true) {
-      let parsed = LinuxKeyToCode[key];
-    } else {
-      let tmp13 = tmp8;
-      if (tmp8) {
-        tmp13 = tmp === KeyboardEnvs.MACOS;
-      }
-      if (tmp13 === true) {
-        parsed = MacosKeyToCode[key];
-      } else {
-        let tmp15 = tmp8;
-        if (tmp8) {
-          tmp15 = tmp === KeyboardEnvs.WINDOWS;
+      if (null != toLocaleLowerCase) {
+        let tmp20 = tmp19;
+        if (KEYBOARD_KEY === constants.KEYBOARD_KEY || KEYBOARD_KEY === constants.KEYBOARD_MODIFIER_KEY) {
+          tmp20 = arg1 === KeyboardEnvs.LINUX;
         }
-        if (tmp15 === true) {
-          if ("+" === key) {
-            let plus = WindowsKeyToCode.plus;
-          } else {
-            plus = WindowsKeyToCode[key];
-          }
-          parsed = plus;
+        if (tmp20 === true) {
+          let parsed = LinuxKeyToCode[toLocaleLowerCase];
         } else {
-          let tmp17 = tmp8;
-          if (tmp8) {
-            tmp17 = tmp === KeyboardEnvs.BROWSER;
+          let tmp23 = tmp19;
+          if (tmp19) {
+            tmp23 = arg1 === KeyboardEnvs.MACOS;
           }
-          if (tmp17 === true) {
-            parsed = importDefault(12933)(getKeyConversionForBrowser(key));
-            const tmp30 = importDefault(12933);
-          } else if (tmp8 === true) {
-            parsed = set[key];
-          } else if (KEYBOARD_KEY === constants.MOUSE_BUTTON === true) {
-            const _parseInt2 = parseInt;
-            parsed = parseInt(key.replace("MOUSE", ""), 10);
-          } else if (KEYBOARD_KEY === constants.GAMEPAD_BUTTON === true) {
-            const _parseInt = parseInt;
-            parsed = parseInt(key.replace("GAMEPAD", ""), 10);
+          if (tmp23 === true) {
+            parsed = MacosKeyToCode[toLocaleLowerCase];
           } else {
-            const _Error = Error;
-            const _HermesInternal = HermesInternal;
-            const error = new Error("Unrecognized DeviceType " + KEYBOARD_KEY + ".");
-            throw error;
+            let tmp25 = tmp19;
+            if (tmp19) {
+              tmp25 = arg1 === KeyboardEnvs.WINDOWS;
+            }
+            if (tmp25 === true) {
+              if ("+" === toLocaleLowerCase) {
+                let plus = WindowsKeyToCode.plus;
+              } else {
+                plus = WindowsKeyToCode[toLocaleLowerCase];
+              }
+              parsed = plus;
+            } else {
+              let tmp27 = tmp19;
+              if (tmp19) {
+                tmp27 = arg1 === KeyboardEnvs.BROWSER;
+              }
+              if (tmp27 === true) {
+                const tmp39 = importDefault(12955);
+                const replaced = toLocaleLowerCase.replace(/^(right|left) (shift|meta|ctrl|alt)$/, "$2").replace("meta", "command");
+                let str13 = "pause/break";
+                if ("pause" !== replaced) {
+                  str13 = "pause/break";
+                  if ("break" !== replaced) {
+                    str13 = replaced;
+                  }
+                }
+                parsed = tmp39(str13);
+                const str8 = toLocaleLowerCase.replace(/^(right|left) (shift|meta|ctrl|alt)$/, "$2");
+              } else if (tmp19 === true) {
+                parsed = set[toLocaleLowerCase];
+              } else if (KEYBOARD_KEY === tmp18.MOUSE_BUTTON === true) {
+                const _parseInt2 = parseInt;
+                parsed = parseInt(toLocaleLowerCase.replace("MOUSE", ""), 10);
+              } else if (KEYBOARD_KEY === tmp18.GAMEPAD_BUTTON === true) {
+                const _parseInt = parseInt;
+                parsed = parseInt(toLocaleLowerCase.replace("GAMEPAD", ""), 10);
+              } else {
+                const _Error = Error;
+                const _HermesInternal = HermesInternal;
+                const error = new Error("Unrecognized DeviceType " + KEYBOARD_KEY + ".");
+                throw error;
+              }
+            }
           }
         }
+        tmp17 = null;
+        if (null != parsed) {
+          tmp17 = parsed;
+        }
+      }
+      if (null != tmp17) {
+        return tmp17;
+      } else {
+        const keyboardEventShapeFromKey = require(12956) /* normalizeKey */.getKeyboardEventShapeFromKey(toLocaleLowerCase);
+        let keyCode = null;
+        if (null != keyboardEventShapeFromKey) {
+          keyCode = keyboardEventShapeFromKey.keyCode;
+        }
+        return keyCode;
+      }
+    } else {
+      if (obj4.isLinux()) {
+        let MACOS2 = KeyboardEnvs.LINUX;
+      } else {
+        let tmp8Result = tmp8(500);
+        if (tmp8Result.isMac()) {
+          MACOS2 = KeyboardEnvs.MACOS;
+        } else {
+          tmp8Result = tmp8(500);
+          MACOS2 = tmp8Result.isWindows() ? tmp10.WINDOWS : tmp10.BROWSER;
+        }
+      }
+      obj4 = require(500) /* set */;
+    }
+  } else {
+    if (obj.isLinux()) {
+      let MACOS = KeyboardEnvs.LINUX;
+    } else {
+      let tmpResult = tmp(500);
+      if (tmpResult.isMac()) {
+        MACOS = KeyboardEnvs.MACOS;
+      } else {
+        tmpResult = tmp(500);
+        MACOS = tmpResult.isWindows() ? tmp3.WINDOWS : tmp3.BROWSER;
       }
     }
-    tmp6 = null;
-    if (null != parsed) {
-      tmp6 = parsed;
-    }
-  }
-  if (null != tmp6) {
-    return tmp6;
-  } else {
-    const keyboardEventShapeFromKey = require(12934) /* _isNativeReflectConstruct */.getKeyboardEventShapeFromKey(key);
-    let keyCode = null;
-    if (null != keyboardEventShapeFromKey) {
-      keyCode = keyboardEventShapeFromKey.keyCode;
-    }
-    return keyCode;
+    obj = require(500) /* set */;
   }
 }
-function getKeyConversionForBrowser(key) {
-  const replaced = key.replace(/^(right|left) (shift|meta|ctrl|alt)$/, "$2").replace("meta", "command");
+function getKeyConversionForBrowser(str) {
+  const replaced = str.replace(/^(right|left) (shift|meta|ctrl|alt)$/, "$2").replace("meta", "command");
   let str2 = "pause/break";
   if ("pause" !== replaced) {
     str2 = "pause/break";
@@ -292,25 +189,22 @@ function getKeyConversionForBrowser(key) {
   return str2;
 }
 function toPrettyKey(str) {
-  let tmp4;
   let tmp5;
-  const tmp = _createForOfIteratorHelperLoose(items);
-  const iter = tmp();
-  let iter2 = iter;
-  if (!iter.done) {
-    [tmp4, tmp5] = callback(iter2.value, 2);
-    while (tmp4 !== str.toUpperCase()) {
-      let iter3 = tmp();
-      iter2 = iter3;
+  let tmp6;
+  const obj = items[Symbol.iterator]();
+  while (obj !== undefined) {
+    let tmp3 = callback;
+    let tmp4 = callback(tmp2, 2);
+    [tmp5, tmp6] = tmp4;
+    if (tmp5 === str.toUpperCase()) {
+      let tmp7 = obj;
+      obj.return();
+      return tmp6;
     }
-    return tmp5;
   }
   return str;
 }
-function toMetaKeyIndexKey(arg0) {
-  return arg0 + "Key";
-}
-({ KeyboardDeviceTypes: closure_5, LinuxKeyToCode } = items);
+({ KeyboardDeviceTypes: c5, LinuxKeyToCode } = items);
 const MacosKeyToCode = items.MacosKeyToCode;
 const WindowsKeyToCode = items.WindowsKeyToCode;
 const KeyboardEnvs = items.KeyboardEnvs;
@@ -329,35 +223,100 @@ if (!set.isLinux()) {
   obj3 = require("set");
 }
 const invertResult = require("apply").invert(LinuxKeyToCode);
+const unpackModuleId = invertResult;
 invertResult[223] = "`";
 const frozen = Object.freeze(invertResult);
 let closure_12 = Object.freeze(require("apply").invert(MacosKeyToCode));
 const invertResult1 = require("apply").invert(WindowsKeyToCode);
 invertResult1[223] = "`";
 const frozen1 = Object.freeze(invertResult1);
-if (null == set) {
+if (set == null) {
   set = {};
 }
 set = require("apply").invert(set);
 if (!set.isMac()) {
   set[223] = "`";
 }
+function getEnv() {
+  if (obj.isLinux()) {
+    let MACOS = KeyboardEnvs.LINUX;
+  } else {
+    let tmpResult = tmp(500);
+    if (tmpResult.isMac()) {
+      MACOS = KeyboardEnvs.MACOS;
+    } else {
+      tmpResult = tmp(500);
+      MACOS = tmpResult.isWindows() ? tmp3.WINDOWS : tmp3.BROWSER;
+    }
+  }
+  return MACOS;
+}
+function codeToKey(items1) {
+  const tmp = callback(items1, 3);
+  const tmp4 = (function _codeToKey(items1) {
+    let tmp;
+    let tmp2;
+    [, tmp, tmp2] = items1;
+    if (constants.LINUX === tmp2) {
+      let tmp5 = table2["" + tmp];
+    } else if (tmp3.MACOS === tmp2) {
+      tmp5 = table3["" + tmp];
+    } else if (tmp3.WINDOWS === tmp2) {
+      tmp5 = table4["" + tmp];
+    } else if (tmp3.BROWSER === tmp2) {
+      const tmp8 = callback(table[4])(tmp);
+      if (null == tmp8) {
+        return null;
+      } else {
+        tmp5 = callback2(tmp8);
+      }
+    } else {
+      tmp5 = table5["" + tmp];
+    }
+    let tmp14 = null;
+    if (null != tmp5) {
+      tmp14 = tmp5;
+    }
+    return tmp14;
+  })(items1);
+  if (null != tmp4) {
+    return getCodeToKeyLanguageCorrection(tmp2, tmp4, tmp3);
+  } else {
+    const keyboardEventShapeFromKeycode = require(12956) /* normalizeKey */.getKeyboardEventShapeFromKeycode(tmp2);
+    let tmp8 = null;
+    if (null != keyboardEventShapeFromKeycode) {
+      tmp8 = getCodeToKeyLanguageCorrection(keyboardEventShapeFromKeycode.keyCode, keyboardEventShapeFromKeycode.key, tmp3);
+    }
+    return tmp8;
+  }
+}
 set = Object.freeze(set);
 items = [["META", "\u2318"], ["CMD", "\u2318"], ["RIGHT META", "RIGHT \u2318"], ["RIGHT CMD", "RIGHT \u2318"], ["SHIFT", "\u21E7"], ["RIGHT SHIFT", "RIGHT \u21E7"], ["ALT", "\u2325"], ["RIGHT ALT", "RIGHT \u2325"], ["CTRL", "\u2303"], ["RIGHT CTRL", "RIGHT \u2303"], ["ENTER", "\u21B5"], ["BACKSPACE", "\u232B"], ["DEL", "\u2326"], ["ESC", "\u238B"], ["PAGEUP", "\u21DE"], ["PAGEDOWN", "\u21DF"], ["UP", "\u2191"], ["DOWN", "\u2193"], ["LEFT", "\u2190"], ["RIGHT", "\u2192"], ["HOME", "\u2196"], ["END", "\u2198"], ["TAB", "\u21E5"], ["SPACE", "\u2423"]];
-const re16 = /shift|meta|ctrl|alt$/;
+const re20 = /shift|meta|ctrl|alt$/;
 const result = set.fileFinishedImporting("utils/web/KeyboardUtils.tsx");
 
 export const getRawCodeFromKey = function getRawCodeFromKey(arg0) {
-  let tmp = arg1;
-  if (arg1 === undefined) {
-    tmp = getEnv();
-  }
-  if (tmp === KeyboardEnvs.BROWSER) {
-    let tmp4 = importDefault(12933)(arg0);
+  if (arg1 !== undefined) {
+    if (arg1 === KeyboardEnvs.BROWSER) {
+      let tmp10 = importDefault(12955)(arg0);
+    } else {
+      tmp10 = set[arg0];
+    }
+    return tmp10;
   } else {
-    tmp4 = set[arg0];
+    if (obj.isLinux()) {
+      let MACOS = KeyboardEnvs.LINUX;
+    } else {
+      let tmpResult = tmp(500);
+      if (tmpResult.isMac()) {
+        MACOS = KeyboardEnvs.MACOS;
+      } else {
+        tmpResult = tmp(500);
+        MACOS = tmpResult.isWindows() ? tmp3.WINDOWS : tmp3.BROWSER;
+      }
+    }
+    obj = require(500) /* set */;
   }
-  return tmp4;
 };
 export { getCodeToKeyLanguageCorrection };
 export { getEnv };
@@ -369,85 +328,134 @@ export const toBrowserEvents = function toBrowserEvents(arr) {
   if (null == arr) {
     let items = [];
   } else {
-    items = arr.reduce((arr) => {
-      const tmp = outer1_22(arg1);
-      let closure_0 = tmp;
-      let obj = {};
+    items = arr.reduce((arr, combo) => {
+      const tmp = outer1_4(combo, 3);
+      const tmp4 = (function _codeToKey(items1) {
+        let tmp;
+        let tmp2;
+        [, tmp, tmp2] = items1;
+        if (constants.LINUX === tmp2) {
+          let tmp5 = table2["" + tmp];
+        } else if (tmp3.MACOS === tmp2) {
+          tmp5 = table3["" + tmp];
+        } else if (tmp3.WINDOWS === tmp2) {
+          tmp5 = table4["" + tmp];
+        } else if (tmp3.BROWSER === tmp2) {
+          const tmp8 = callback(table[4])(tmp);
+          if (null == tmp8) {
+            return null;
+          } else {
+            tmp5 = callback2(tmp8);
+          }
+        } else {
+          tmp5 = table5["" + tmp];
+        }
+        let tmp14 = null;
+        if (null != tmp5) {
+          tmp14 = tmp5;
+        }
+        return tmp14;
+      })(combo);
+      if (null != tmp4) {
+        let tmp8 = outer1_15(tmp2, tmp4, tmp3);
+      } else {
+        let obj = outer1_1(outer1_3[5]);
+        const keyboardEventShapeFromKeycode = obj.getKeyboardEventShapeFromKeycode(tmp2);
+        tmp8 = null;
+        if (null != keyboardEventShapeFromKeycode) {
+          tmp8 = outer1_15(keyboardEventShapeFromKeycode.keyCode, keyboardEventShapeFromKeycode.key, tmp3);
+        }
+      }
+      let closure_0 = tmp8;
+      obj = {};
       const merged = Object.assign(closure_0);
-      if (null == tmp) {
+      if (null == tmp8) {
         obj = {};
         const merged1 = Object.assign(obj);
-        obj["combo"] = arg1;
+        obj.combo = combo;
         arr.push(obj);
         return arr;
       } else {
-        if (outer1_16.test(tmp)) {
-          let tmp3 = "meta" === tmp;
-          if (!tmp3) {
-            tmp3 = "shift" === tmp;
+        if (outer1_20.test(tmp8)) {
+          let tmp13 = "meta" === tmp8;
+          if (!tmp13) {
+            tmp13 = "shift" === tmp8;
           }
-          if (!tmp3) {
-            tmp3 = "alt" === tmp;
+          if (!tmp13) {
+            tmp13 = "alt" === tmp8;
           }
-          if (!tmp3) {
-            tmp3 = "ctrl" === tmp;
+          if (!tmp13) {
+            tmp13 = "ctrl" === tmp8;
           }
-          if (tmp3) {
-            closure_0[outer1_26(tmp)] = true;
+          if (tmp13) {
+            tmp11[tmp8 + "Key"] = true;
             return arr.map((arg0) => {
-              arg0[outer2_26(closure_0)] = true;
+              arg0[closure_0 + "Key"] = true;
               return arg0;
             });
           }
         }
-        const tmp6 = outer1_23(tmp, outer1_9.BROWSER);
-        if (null != tmp6) {
-          obj.keyCode = tmp6;
+        const tmp16 = outer1_16(tmp8, outer1_9.BROWSER);
+        if (null != tmp16) {
+          obj.keyCode = tmp16;
         }
         arr.push(obj);
         return arr;
       }
+      tmp11 = closure_0;
     }, []);
   }
   return items;
 };
 export const toCombo = function toCombo(shortcut) {
-  let tmp = arg1;
-  let KEYBOARD_KEY = arg2;
-  if (arg1 === undefined) {
-    tmp = getEnv();
-  }
-  const global = tmp;
-  if (KEYBOARD_KEY === undefined) {
-    KEYBOARD_KEY = constants.KEYBOARD_KEY;
-  }
-  const str = shortcut.replace(/numpad plus/i, "");
-  const str2 = shortcut.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus");
-  const parts = shortcut.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, KEYBOARD_KEY(12935).modKey).split("+");
-  const mapped = parts.map((str) => str.trim().replace("plus", "+"));
-  return mapped.reduce((arr, str) => {
-    let tmp5;
-    const tmp = outer1_17(outer1_15);
-    const iter = tmp();
-    let iter2 = iter;
-    let formatted = str;
-    if (!iter.done) {
-      [str, tmp5] = outer1_4(iter2.value, 2);
-      while (tmp5 !== str.toUpperCase()) {
-        let iter3 = tmp();
-        iter2 = iter3;
-        formatted = str;
+  if (arg1 !== undefined) {
+    let closure_0 = arg1;
+    let KEYBOARD_KEY = arg2;
+    if (arg2 === undefined) {
+      KEYBOARD_KEY = constants.KEYBOARD_KEY;
+    }
+    const str2 = shortcut.replace(/numpad plus/i, "");
+    const str4 = shortcut.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus");
+    const parts = shortcut.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, KEYBOARD_KEY(12957).modKey).split("+");
+    const mapped = parts.map((str) => str.trim().replace("plus", "+"));
+    return mapped.reduce((arr) => {
+      let tmp3 = outer1_16((function toUglyKey(str) {
+        let tmp5;
+        const obj = dependencyMap[Symbol.iterator]();
+        while (obj !== undefined) {
+          let tmp3 = callback;
+          let tmp4 = callback(tmp2, 2);
+          [str, tmp5] = tmp4;
+          if (tmp5 === str.toUpperCase()) {
+            let tmp6 = str;
+            let tmp8 = obj;
+            let formatted = str.toLowerCase();
+            obj.return();
+            return formatted;
+          }
+        }
+        return str;
+      })(arg1), closure_0, KEYBOARD_KEY);
+      if (null != tmp3) {
+        const items = [KEYBOARD_KEY, tmp3, closure_0];
+        arr.push(items);
       }
-      formatted = str.toLowerCase();
-      const tmp4 = outer1_4(iter2.value, 2);
+      return arr;
+    }, []);
+  } else {
+    if (obj.isLinux()) {
+      let MACOS = KeyboardEnvs.LINUX;
+    } else {
+      let tmpResult = tmp(500);
+      if (tmpResult.isMac()) {
+        MACOS = KeyboardEnvs.MACOS;
+      } else {
+        tmpResult = tmp(500);
+        MACOS = tmpResult.isWindows() ? tmp3.WINDOWS : tmp3.BROWSER;
+      }
     }
-    const tmp6 = outer1_23(formatted, closure_0, KEYBOARD_KEY);
-    if (null != tmp6) {
-      const items = [KEYBOARD_KEY, tmp6, closure_0];
-      arr.push(items);
-    }
-    return arr;
-  }, []);
+    obj = KEYBOARD_KEY(500);
+  }
 };
 export const toString = function toString(arr) {
   let flag = arg1;
@@ -459,37 +467,85 @@ export const toString = function toString(arr) {
     let tmp2;
     let tmp3;
     [tmp, tmp2, tmp3] = arg0;
-    if ("number" !== typeof tmp3) {
-      tmp3 = outer1_21();
-    }
-    if (outer1_5.KEYBOARD_KEY !== tmp) {
-      if (outer1_5.KEYBOARD_MODIFIER_KEY !== tmp) {
-        if (outer1_5.MOUSE_BUTTON === tmp) {
-          const _HermesInternal3 = HermesInternal;
-          return "mouse" + tmp2;
-        } else if (outer1_5.GAMEPAD_BUTTON === tmp) {
-          const _HermesInternal2 = HermesInternal;
-          return "gamepad" + tmp2;
-        } else {
-          const _HermesInternal = HermesInternal;
-          return "dev" + tmp + "," + tmp2;
+    if (typeof tmp3 === "Object") {
+      if (constants.KEYBOARD_KEY !== tmp) {
+        if (tmp8.KEYBOARD_MODIFIER_KEY !== tmp) {
+          if (tmp8.MOUSE_BUTTON === tmp) {
+            const _HermesInternal3 = HermesInternal;
+            return "mouse" + tmp2;
+          } else if (tmp8.GAMEPAD_BUTTON === tmp) {
+            const _HermesInternal2 = HermesInternal;
+            return "gamepad" + tmp2;
+          } else {
+            const _HermesInternal = HermesInternal;
+            return "dev" + tmp + "," + tmp2;
+          }
         }
       }
-    }
-    if (null != tmp3) {
-      const items = [tmp, tmp2, tmp3];
-      let items1 = items;
+      if (null != tmp3) {
+        const items = [tmp, tmp2, tmp3];
+        let items1 = items;
+      } else {
+        items1 = [tmp, tmp2];
+      }
+      let tmp14 = callback2(items1, 3);
+      const tmp17 = (function _codeToKey(items1) {
+        let tmp;
+        let tmp2;
+        [, tmp, tmp2] = items1;
+        if (constants.LINUX === tmp2) {
+          let tmp5 = table2["" + tmp];
+        } else if (tmp3.MACOS === tmp2) {
+          tmp5 = table3["" + tmp];
+        } else if (tmp3.WINDOWS === tmp2) {
+          tmp5 = table4["" + tmp];
+        } else if (tmp3.BROWSER === tmp2) {
+          const tmp8 = callback(table[4])(tmp);
+          if (null == tmp8) {
+            return null;
+          } else {
+            tmp5 = callback2(tmp8);
+          }
+        } else {
+          tmp5 = table5["" + tmp];
+        }
+        let tmp14 = null;
+        if (null != tmp5) {
+          tmp14 = tmp5;
+        }
+        return tmp14;
+      })(items1);
+      if (null != tmp17) {
+        let combined = callback3(tmp15, tmp17, tmp16);
+      } else {
+        const keyboardEventShapeFromKeycode = callback(12956).getKeyboardEventShapeFromKeycode(tmp15);
+        combined = null;
+        if (null != keyboardEventShapeFromKeycode) {
+          combined = callback3(keyboardEventShapeFromKeycode.keyCode, keyboardEventShapeFromKeycode.key, tmp16);
+        }
+        const obj3 = callback(12956);
+      }
+      if (combined == null) {
+        const _HermesInternal4 = HermesInternal;
+        combined = "UNK" + tmp2;
+      }
+      return combined;
     } else {
-      items1 = [tmp, tmp2];
+      if (obj4.isLinux()) {
+        let MACOS = constants2.LINUX;
+      } else {
+        let tmp25Result = tmp25(500);
+        if (tmp25Result.isMac()) {
+          MACOS = constants2.MACOS;
+        } else {
+          tmp25Result = tmp25(500);
+          MACOS = tmp25Result.isWindows() ? tmp4.WINDOWS : tmp4.BROWSER;
+        }
+      }
+      obj4 = callback(500);
     }
-    let combined = outer1_22(items1);
-    if (null == combined) {
-      const _HermesInternal4 = HermesInternal;
-      combined = "UNK" + tmp2;
-    }
-    return combined;
   });
-  const found = mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
+  const found = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
   if (flag) {
     const appVersion = global.navigator.appVersion;
     let mapped1 = found;
@@ -504,8 +560,8 @@ export const toString = function toString(arr) {
   return formatted;
 };
 export const areKeyCombosEqual = function areKeyCombosEqual(arr) {
-  let flag = arg2;
   let closure_0 = arg1;
+  let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
   }
@@ -520,17 +576,17 @@ export const areKeyCombosEqual = function areKeyCombosEqual(arr) {
       tmp5 = tmp2 === tmp4[1];
     }
     if (tmp5) {
-      tmp5 = !flag || tmp3 === tmp4[2];
-      const tmp7 = !flag || tmp3 === tmp4[2];
+      let tmp7 = !flag;
+      if (flag) {
+        tmp7 = tmp3 === tmp4[2];
+      }
+      tmp5 = tmp7;
     }
     return tmp5;
   });
 };
 export const isKeyboardActivatedMouseEvent = function isKeyboardActivatedMouseEvent(nativeEvent) {
-  let tmp = null != nativeEvent;
-  if (tmp) {
-    tmp = "object" === typeof nativeEvent;
-  }
+  let tmp = null != nativeEvent && typeof nativeEvent === "ay";
   if (tmp) {
     tmp = "nativeEvent" in nativeEvent;
   }

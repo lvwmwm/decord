@@ -1,47 +1,35 @@
-// Module ID: 16284
-// Function ID: 126158
-// Name: createRequestToSpeakMessage
-// Dependencies: [653, 686, 21, 2]
+// Module ID: 16319
+// Function ID: 16320
+// Name: sendStageRequestToSpeakEphemeralMessage
+// Dependencies: [676, 709, 11, 2]
 // Exports: sendStageRequestToSpeakEphemeralMessage
 
-// Module 16284 (createRequestToSpeakMessage)
+// Module 16319 (sendStageRequestToSpeakEphemeralMessage)
 import ME from "ME";
 
-let closure_2;
-let closure_3;
-let closure_4;
-function createRequestToSpeakMessage(requestToSpeakTimestamp) {
-  let channelId;
-  let requesterUser;
-  requestToSpeakTimestamp = requestToSpeakTimestamp.requestToSpeakTimestamp;
-  const obj = {};
-  ({ channelId, requesterUser } = requestToSpeakTimestamp);
-  obj.id = importDefault(21).fromTimestamp(Date.parse(requestToSpeakTimestamp));
-  obj.type = constants3.STAGE_RAISE_HAND;
-  obj.flags = constants.EPHEMERAL;
-  obj.content = "";
-  obj.channel_id = channelId;
-  obj.author = requesterUser;
-  obj.attachments = [];
-  obj.embeds = [];
-  obj.pinned = false;
-  obj.mentions = [];
-  obj.mention_channels = [];
-  obj.mention_roles = [];
-  obj.mention_everyone = false;
-  obj.timestamp = requestToSpeakTimestamp;
-  obj.state = constants2.SENT;
-  obj.tts = false;
-  return obj;
-}
-({ MessageFlags: closure_2, MessageStates: closure_3, MessageTypes: closure_4 } = ME);
+let c3;
+let c4;
+let obj1;
+({ MessageFlags: obj1, MessageStates: c3, MessageTypes: c4 } = ME);
 const result = require("DISCORD_EPOCH").fileFinishedImporting("modules/stage_channels/sendStageRequestToSpeakEphemeralMessage.tsx");
 
 export const sendStageRequestToSpeakEphemeralMessage = function sendStageRequestToSpeakEphemeralMessage(channelId, user, requestToSpeakTimestamp) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "MESSAGE_CREATE", channelId, message: null, optimistic: false, sendMessageOptions: null, isPushNotification: false };
-  obj = { channelId, requesterUser: user, requestToSpeakTimestamp };
-  obj.message = createRequestToSpeakMessage(obj);
-  obj.sendMessageOptions = {};
+  obj = { id: null, type: null, flags: null, content: "", channel_id: null, author: null, attachments: null, embeds: null, pinned: false, mentions: null, mention_channels: null, mention_roles: null, mention_everyone: false, timestamp: null, state: null, tts: false };
+  obj[0] = importDefault(11).fromTimestamp(Date.parse(requestToSpeakTimestamp));
+  obj[1] = constants3.STAGE_RAISE_HAND;
+  obj[2] = constants.EPHEMERAL;
+  obj[4] = channelId;
+  obj[5] = user;
+  obj[6] = [];
+  obj[7] = [];
+  obj[9] = [];
+  obj[10] = [];
+  obj[11] = [];
+  obj[13] = requestToSpeakTimestamp;
+  obj[14] = constants2.SENT;
+  obj[2] = obj;
+  obj[4] = {};
   obj.dispatch(obj);
 };

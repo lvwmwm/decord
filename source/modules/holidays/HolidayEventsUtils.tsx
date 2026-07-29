@@ -1,71 +1,76 @@
-// Module ID: 16176
-// Function ID: 125186
-// Name: isEligible
-// Dependencies: [16173, 2]
+// Module ID: 16211
+// Function ID: 16212
+// Name: HolidayEmojiAnimationType
+// Dependencies: [16208, 2]
 
-// Module 16176 (isEligible)
-function isEligible() {
-  const isExperimentEligible = importDefault(16173).getIsExperimentEligible();
-  const obj = importDefault(16173);
-  return isHolidayHappening() && isExperimentEligible;
-}
-function useIsEligible() {
-  const isExperimentEligible = importDefault(16173).useIsExperimentEligible();
-  const obj = importDefault(16173);
-  return isHolidayHappening() && isExperimentEligible;
-}
-function isHolidayHappening() {
-  const timestamp = Date.now();
-  let tmp2 = timestamp >= importDefault(16173).startTimeMs;
-  if (tmp2) {
-    tmp2 = timestamp <= importDefault(16173).endTimeMs;
-  }
-  return tmp2;
-}
+// Module 16211 (HolidayEmojiAnimationType)
 const result = require("set").fileFinishedImporting("modules/holidays/HolidayEventsUtils.tsx");
 
 export default {
-  isEligible,
+  isEligible() {
+    const isExperimentEligible = importDefault(16208).getIsExperimentEligible();
+    const timestamp = Date.now();
+    const obj = importDefault(16208);
+    const tmp = importDefault;
+    return timestamp >= importDefault(16208).startTimeMs && timestamp <= importDefault(16208).endTimeMs && isExperimentEligible;
+  },
   useHolidaySoundpack() {
-    let tmp = null;
-    if (useIsEligible()) {
-      tmp = null;
-      if (null != importDefault(16173).soundpack) {
-        tmp = null;
-        if (null != importDefault(16173).soundpackLabel) {
-          const obj = { soundpack: importDefault(16173).soundpack, soundpackLabel: importDefault(16173).soundpackLabel };
-          tmp = obj;
+    let obj = importDefault(16208);
+    const isExperimentEligible = obj.useIsExperimentEligible();
+    const timestamp = Date.now();
+    let tmp6 = null;
+    if (tmp5) {
+      tmp6 = null;
+      if (null != tmp(16208).soundpack) {
+        tmp6 = null;
+        if (null != tmp(16208).soundpackLabel) {
+          obj = { soundpack: null, soundpackLabel: null };
+          obj[0] = tmp(16208).soundpack;
+          obj[1] = tmp(16208).soundpackLabel;
+          tmp6 = obj;
         }
       }
     }
-    return tmp;
+    return tmp6;
   },
-  useIsEligible,
+  useIsEligible() {
+    const isExperimentEligible = importDefault(16208).useIsExperimentEligible();
+    const timestamp = Date.now();
+    const obj = importDefault(16208);
+    const tmp = importDefault;
+    return timestamp >= importDefault(16208).startTimeMs && timestamp <= importDefault(16208).endTimeMs && isExperimentEligible;
+  },
   getAppSpinnerSources() {
+    const timestamp = Date.now();
     let appSpinnerSources = null;
-    if (isHolidayHappening()) {
-      appSpinnerSources = importDefault(16173).appSpinnerSources;
+    if (tmp4) {
+      appSpinnerSources = tmp2(16208).appSpinnerSources;
     }
     return appSpinnerSources;
   },
   getLoadingTips() {
-    let tmp = null;
-    if (isHolidayHappening()) {
+    const timestamp = Date.now();
+    let tmp5 = null;
+    if (tmp4) {
+      const getLoadingTips = tmp2(16208).getLoadingTips;
       let loadingTips;
-      if (null != importDefault(16173).getLoadingTips) {
-        loadingTips = importDefault(16173).getLoadingTips();
-        const obj = importDefault(16173);
+      if (getLoadingTips != null) {
+        loadingTips = getLoadingTips();
       }
-      tmp = loadingTips;
+      tmp5 = loadingTips;
+      const tmp2Result = tmp2(16208);
     }
-    return tmp;
+    return tmp5;
   },
   getHolidaySoundpack() {
+    const isExperimentEligible = importDefault(16208).getIsExperimentEligible();
+    const timestamp = Date.now();
+    const obj = importDefault(16208);
     let soundpack = null;
-    if (isEligible()) {
+    if (tmp5) {
       soundpack = null;
-      if (null != importDefault(16173).soundpack) {
-        soundpack = importDefault(16173).soundpack;
+      if (null != tmp(16208).soundpack) {
+        soundpack = tmp(16208).soundpack;
       }
     }
     return soundpack;

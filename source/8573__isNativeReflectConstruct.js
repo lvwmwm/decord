@@ -1,27 +1,67 @@
 // Module ID: 8573
-// Function ID: 68019
+// Function ID: 8574
 // Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 8523, 8546]
+// Dependencies: [41, 42, 93, 95, 98, 8547, 8570]
 
 // Module 8573 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _defineProperties from "_defineProperties";
+import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "_isNativeReflectConstruct";
+import importDefaultResult from "_createClass";
 
-const require = arg1;
+const FeComponentTransfer = arg1;
 function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    let closure_0 = !callResult;
+    function _isNativeReflectConstruct() {
+      return closure_0;
+    }
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2.displayName = "FeTurbulence";
-tmp2.defaultProps = Object.assign({}, tmp2.defaultPrimitiveProps);
+class FeComponentTransfer {
+  constructor() {
+    self = this;
+    tmp = _isNativeReflectConstruct(this, FeComponentTransfer);
+    tmp2 = __esModule;
+    obj = __esModule(FeComponentTransfer);
+    tmp3 = __esModule;
+    if (_isNativeReflectConstruct()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+require("_inherits")(FeComponentTransfer, require("_isNativeReflectConstruct"));
+let obj = {
+  key: "render",
+  value: function render() {
+    const result = FeComponentTransfer(8547).warnUnimplementedFilter();
+    return null;
+  }
+};
+const items = [obj];
+const importDefaultResultResult = importDefaultResult(FeComponentTransfer, items);
+importDefaultResultResult.displayName = "FeComponentTransfer";
+obj = {};
+const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+importDefaultResultResult.defaultProps = obj;
 
-export default tmp2;
+export default importDefaultResultResult;

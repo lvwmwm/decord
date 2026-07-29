@@ -1,29 +1,78 @@
-// Module ID: 16220
-// Function ID: 125604
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 4212, 6307, 653, 16221, 8814, 5112, 2]
+// Module ID: 16255
+// Function ID: 16256
+// Name: prototype
+// Dependencies: [4236, 6328, 676, 5134, 16256, 8838, 2]
 
-// Module 16220 (_isNativeReflectConstruct)
-import ME from "ME";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 16255 (prototype)
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import getState from "getState";
 import { AppStates } from "ME";
-import tmp2 from "AutomaticLifecycleManager";
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let prototype = function NativeOnDemandResourceManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  const importDefault = applyArgumentsResult;
+  applyArgumentsResult.actions = {
+    POST_CONNECTION_OPEN() {
+      return applyArgumentsResult.handlePostConnectionOpen();
+    },
+    APP_STATE_UPDATE() {
+      return applyArgumentsResult.handleAppStateUpdate();
+    }
+  };
+  applyArgumentsResult.isPastConnectionOpen = false;
+  applyArgumentsResult.hasFetchedKrisp = false;
+  applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
+    applyArgumentsResult.isPastConnectionOpen = true;
+    applyArgumentsResult.maybeLoadKrisp();
+  };
+  applyArgumentsResult.handleAppStateUpdate = function handleAppStateUpdate() {
+    applyArgumentsResult.maybeLoadKrisp();
+  };
+  applyArgumentsResult.maybeLoadKrisp = function maybeLoadKrisp() {
+    if (mode.isPastConnectionOpen) {
+      if (outer1_3.getState() === outer1_4.ACTIVE) {
+        const obj3 = applyArgumentsResult(outer1_1[4]);
+        let hasOnDemandResourceResult;
+        if (obj3 != null) {
+          hasOnDemandResourceResult = obj3.hasOnDemandResource("krisp");
+        }
+        if (!hasOnDemandResourceResult) {
+          if (!tmp.hasFetchedKrisp) {
+            tmp.hasFetchedKrisp = true;
+            mode = outer1_2.getMode();
+            const autoThreshold = outer1_2.getModeOptions().autoThreshold;
+            let tmp9Result = tmp9(tmp10[5]);
+            tmp9Result.setMode(mode, { autoThreshold: false });
+            tmp9Result = tmp9(tmp10[4]);
+            if (tmp9Result != null) {
+              const onDemandResource = tmp9Result.fetchOnDemandResource("krisp");
+              if (onDemandResource != null) {
+                onDemandResource.then((arg0) => {
+                  let obj = applyArgumentsResult(outer2_1[4]);
+                  if (obj != null) {
+                    const result = obj.isOnDemandResourcingAvailable();
+                  }
+                  if (!arg0) {
+                    if (result) {
+                      mode.hasFetchedKrisp = false;
+                    }
+                  }
+                  obj = { autoThreshold };
+                  applyArgumentsResult(outer2_1[5]).setMode(mode, obj);
+                });
+              }
+            }
+          }
+        }
+      }
+    }
+  };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/native_on_demand/native/NativeOnDemandResourceManager.android.tsx");
+prototype = new prototype();
+let result = require("ME").fileFinishedImporting("modules/native_on_demand/native/NativeOnDemandResourceManager.android.tsx");
 
-export default tmp2;
+export default prototype;

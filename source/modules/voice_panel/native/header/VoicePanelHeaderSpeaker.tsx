@@ -1,112 +1,33 @@
-// Module ID: 15909
-// Function ID: 122661
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [29, 31, 27, 15910, 4179, 15911, 8808, 1348, 4180, 653, 33, 15913, 15886, 8807, 9031, 8905, 624, 9029, 8904, 15917, 477, 8832, 8809, 1212, 8829, 8831, 15918, 8906, 3981, 1334, 5550, 15826, 13153, 2]
+// Module ID: 15944
+// Function ID: 15945
+// Dependencies: [109, 19, 17, 15945, 4203, 15946, 8832, 1372, 4204, 676, 21, 15948, 15921, 8831, 9055, 8929, 647, 9053, 8928, 15952, 500, 8856, 8833, 1236, 8853, 8855, 15953, 8930, 4005, 1358, 5568, 15861, 13176, 2]
 
-// Module 15909 (_createForOfIteratorHelperLoose)
-import DismissibleContent from "DismissibleContent";
-import importAllResult from "module_15826";
-import { NativeModules } from "onConnectToConsole";
+// Module 15944
+import _objectWithoutProperties from "_objectWithoutProperties";
+import importAllResult from "useCanConnect";
+import { NativeModules } from "getConsoleIcon";
 import { setVoiceUpsellDismissed } from "useConsoleVoiceUpsellStore";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
+import set from "set";
+import handleAudioRouteChanged from "handleAudioRouteChanged";
+import closure_10 from "handleAudioRouteChanged";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleUpdate from "handleUpdate";
 import { PlatformTypes } from "ME";
-import jsxProd from "set";
+import jsxProd from "showAudioOutputSelector";
 
 let closure_14;
 let closure_15;
 let closure_16;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 let closure_3 = ["ref"];
+let c5 = importAllResult;
 ({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = jsxProd);
 let closure_17 = [];
 let closure_18 = importAllResult.memo((arg0) => {
   let canShowTooltip;
   let targetRef;
   ({ targetRef, canShowTooltip } = arg0);
-  importDefault(15913)(targetRef, canShowTooltip);
+  importDefault(15948)(targetRef, canShowTooltip);
   return null;
 });
 const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConnectedToVoiceChannel) {
@@ -115,252 +36,255 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConne
   isConnectedToVoiceChannel = isConnectedToVoiceChannel.isConnectedToVoiceChannel;
   const channelId = isConnectedToVoiceChannel.channelId;
   const style = isConnectedToVoiceChannel.style;
+  let c3;
+  let toggleAudio;
   c6 = undefined;
+  let c7;
+  let set;
   let stateFromStores;
   let closure_10;
-  let closure_12;
+  let stateFromStores1;
+  let handleUpdate;
+  let arr5;
   let callback;
   let closure_15;
   let stateFromStores2;
   let ref;
-  function renderButton(arg0) {
-    let tmp = arg0;
-    if (null == arg0) {
-      let obj = { onPress: closure_15, ref: undefined };
-      tmp = obj;
-    }
-    obj = {};
-    obj = { targetRef: ref };
-    let tmp8 = c14;
-    if (c14) {
-      tmp8 = isConnectedToVoiceChannel;
-    }
-    obj.canShowTooltip = tmp8;
-    const items = [c14(outer1_18, obj), ];
-    const obj1 = { style, ref };
-    const tmp3 = toggleAudio(tmp, closure_3);
-    const tmp4 = stateFromStores2;
-    const tmp5 = closure_15;
-    const tmp6 = c14;
-    const tmp7 = outer1_18;
-    const obj2 = { ref: tmp.ref };
-    const tmp10 = channelId(style[30]);
-    const merged = Object.assign(tmp3);
-    obj2["disabled"] = closure_10;
-    let str;
-    if (isConnectedToVoiceChannel) {
-      if (c6) {
-        str = "primary-overlay";
-      }
-    }
-    obj2["overrideVariant"] = str;
-    obj2["loading"] = null != stateFromStores;
-    obj2["icon"] = null != closure_12 ? closure_12 : c5;
-    const intl = isConnectedToVoiceChannel(style[23]).intl;
-    obj2["accessibilityLabel"] = intl.string(isConnectedToVoiceChannel(style[23]).t.dnI0AL);
-    obj1.children = c14(channelId(style[31]), obj2);
-    items[1] = c14(tmp10, obj1);
-    obj.children = items;
-    return tmp4(tmp5, obj);
-  }
-  let tmp = channelId(style[12])();
-  let closure_3 = tmp;
+  const tmp2 = channelId(style[12])();
+  c3 = tmp2;
   let obj = isConnectedToVoiceChannel(style[13]);
   const maskedSpeakerStates = obj.useMaskedSpeakerStates();
-  const toggleAudio = maskedSpeakerStates.toggleAudio;
+  toggleAudio = maskedSpeakerStates.toggleAudio;
   ({ routeSource: c5, isAudioRouteEnabled: c6 } = maskedSpeakerStates);
-  let tmp3 = channelId(style[14])();
-  const setVoiceUpsellDismissed = tmp3;
-  let _isNativeReflectConstruct = channelId(style[15])();
+  let tmp5 = channelId(style[14])();
+  c7 = tmp5;
+  set = channelId(style[15])();
   let obj1 = isConnectedToVoiceChannel(style[16]);
-  let items = [_isNativeReflectConstruct];
+  let items = [set];
   stateFromStores = obj1.useStateFromStores(items, () => awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
   const items1 = [stateFromStores];
   closure_10 = isConnectedToVoiceChannel(style[16]).useStateFromStores(items1, () => stateFromStores.getQueueAudioSwap());
   const obj3 = isConnectedToVoiceChannel(style[16]);
-  const items2 = [closure_12];
-  const stateFromStores1 = isConnectedToVoiceChannel(style[16]).useStateFromStores(items2, () => {
-    let sessionId;
-    if (null != awaitingRemoteSessionInfo) {
-      sessionId = awaitingRemoteSessionInfo.sessionId;
+  const items2 = [handleUpdate];
+  stateFromStores1 = isConnectedToVoiceChannel(style[16]).useStateFromStores(items2, () => {
+    let str;
+    if (awaitingRemoteSessionInfo != null) {
+      str = awaitingRemoteSessionInfo.sessionId;
     }
-    let str = "";
-    if (null != sessionId) {
-      str = sessionId;
+    if (str == null) {
+      str = "";
     }
     return sessionById.getSessionById(str);
   });
   const items3 = [stateFromStores, stateFromStores1];
-  closure_12 = importAllResult.useMemo(() => {
+  handleUpdate = importAllResult.useMemo(() => {
     let type;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       type = stateFromStores.type;
     }
-    if (null == type) {
+    if (type == null) {
       let os;
-      if (null != stateFromStores1) {
+      if (stateFromStores1 != null) {
         const clientInfo = stateFromStores1.clientInfo;
-        if (null != clientInfo) {
+        if (clientInfo != null) {
           os = clientInfo.os;
         }
       }
       type = os;
     }
-    let tmp6 = null;
+    let tmp3 = null;
     if (null != type) {
-      tmp6 = channelId(style[17])(type);
+      tmp3 = channelId(style[17])(type);
     }
-    return tmp6;
+    return tmp3;
   }, items3);
-  const arr5 = channelId(style[18])();
-  let tmp7 = channelId(style[19])(channelId);
-  let tmp8 = tmp7.canConnect && !tmp7.isAtMaxCapacity;
-  if (tmp8) {
-    let tmp9 = isConnectedToVoiceChannel;
+  arr5 = channelId(style[18])();
+  let tmp9 = channelId(style[19])(channelId);
+  let tmp10 = tmp9.canConnect && !tmp9.isAtMaxCapacity;
+  if (tmp10) {
+    let tmp11 = isConnectedToVoiceChannel;
     if (!isConnectedToVoiceChannel) {
-      tmp9 = tmp6;
+      tmp11 = tmp8;
     }
-    tmp8 = tmp9;
+    tmp10 = tmp11;
   }
-  callback = tmp8;
+  callback = tmp10;
   const items4 = [channelId, isConnectedToVoiceChannel, toggleAudio];
-  closure_15 = importAllResult.useCallback(() => {
+  closure_15 = obj5.useCallback(() => {
     if (obj.isAndroid()) {
       const result = isConnectedToVoiceChannel(style[21]).showAudioOutputSelector(channelId, isConnectedToVoiceChannel);
-      const obj2 = isConnectedToVoiceChannel(style[21]);
+      const tmpResult = isConnectedToVoiceChannel(style[21]);
     } else {
       toggleAudio(channelId, isConnectedToVoiceChannel);
     }
   }, items4);
-  const obj4 = isConnectedToVoiceChannel(style[16]);
+  let tmp3Result = tmp3(tmp[16]);
   const items5 = [closure_10];
-  stateFromStores2 = isConnectedToVoiceChannel(style[16]).useStateFromStores(items5, () => currentRouteType.getCurrentRouteType());
-  const items6 = [arr5, channelId, isConnectedToVoiceChannel, stateFromStores2, tmp3];
-  const items7 = [tmp];
-  const memo = importAllResult.useMemo(() => {
-    let done;
+  stateFromStores2 = tmp3Result.useStateFromStores(items5, () => currentRouteType.getCurrentRouteType());
+  const items6 = [arr5, channelId, isConnectedToVoiceChannel, stateFromStores2, tmp5];
+  const items7 = [tmp2];
+  const memo = obj5.useMemo(() => {
     let obj = isConnectedToVoiceChannel(style[20]);
     if (!obj.isAndroid()) {
       if (0 !== arr5.length) {
         let items = [];
-        let tmp5 = closure_7;
-        if (!closure_7) {
-          tmp5 = stateFromStores2 !== isConnectedToVoiceChannel(style[22]).RouteTypes.SPEAKER;
+        let tmp9 = c7;
+        let tmp5 = c7;
+        if (!c7) {
+          tmp5 = stateFromStores2 !== tmp(tmp2[22]).RouteTypes.SPEAKER;
         }
         if (!tmp5) {
-          obj = {};
-          let intl = isConnectedToVoiceChannel(style[23]).intl;
-          obj.label = intl.string(isConnectedToVoiceChannel(style[23]).t.gvQIzx);
-          obj.iconSource = channelId(style[24]);
-          obj.showIconFirst = false;
-          obj.action = function action() {
-            const AudioRoutePicker = c6.AudioRoutePicker;
+          obj = { label: null, iconSource: null, showIconFirst: false, action: null };
+          let intl = tmp(tmp2[23]).intl;
+          obj[0] = intl.string(tmp(tmp2[23]).t.gvQIzx);
+          obj[1] = channelId(tmp2[24]);
+          obj[3] = function action() {
+            const AudioRoutePicker = closure_6.AudioRoutePicker;
             let toggleSpeakerResult;
-            if (null != AudioRoutePicker) {
+            if (AudioRoutePicker != null) {
               toggleSpeakerResult = AudioRoutePicker.toggleSpeaker(false);
             }
             return toggleSpeakerResult;
           };
           items.push(obj);
         }
-        let tmp10 = closure_7;
-        if (!closure_7) {
-          tmp10 = stateFromStores2 !== isConnectedToVoiceChannel(style[22]).RouteTypes.RECEIVER;
+        if (!tmp9) {
+          tmp9 = stateFromStores2 !== tmp(tmp2[22]).RouteTypes.RECEIVER;
         }
-        if (!tmp10) {
-          obj = {};
-          let intl2 = isConnectedToVoiceChannel(style[23]).intl;
-          obj.label = intl2.string(isConnectedToVoiceChannel(style[23]).t.wwTN1g);
-          obj.iconSource = channelId(style[25]);
-          obj.showIconFirst = false;
-          obj.action = function action() {
-            const AudioRoutePicker = c6.AudioRoutePicker;
+        if (!tmp9) {
+          obj = { label: null, iconSource: null, showIconFirst: false, action: null };
+          let intl2 = tmp(tmp2[23]).intl;
+          obj[0] = intl2.string(tmp(tmp2[23]).t.wwTN1g);
+          obj[1] = channelId(tmp2[25]);
+          obj[3] = function action() {
+            const AudioRoutePicker = closure_6.AudioRoutePicker;
             let toggleSpeakerResult;
-            if (null != AudioRoutePicker) {
+            if (AudioRoutePicker != null) {
               toggleSpeakerResult = AudioRoutePicker.toggleSpeaker(true);
             }
             return toggleSpeakerResult;
           };
           items.push(obj);
         }
-        const obj1 = {};
-        const intl3 = isConnectedToVoiceChannel(style[23]).intl;
-        obj1.label = intl3.string(isConnectedToVoiceChannel(style[23]).t.dnI0AL);
-        obj1.iconSource = channelId(style[26]);
-        obj1.showIconFirst = false;
-        obj1.action = function action() {
-          const result = isConnectedToVoiceChannel(style[21]).showAudioOutputSelector(outer1_1, items);
+        const obj1 = { label: null, iconSource: null, showIconFirst: false, action: null };
+        const intl3 = tmp(tmp2[23]).intl;
+        obj1[0] = intl3.string(tmp(tmp2[23]).t.dnI0AL);
+        obj1[1] = channelId(tmp2[26]);
+        obj1[3] = function action() {
+          const result = items(outer1_2[21]).showAudioOutputSelector(closure_1, items);
         };
         items.push(obj1);
-        function _loop(value) {
-          const items = value;
-          if (value.type === arr5.XBOX) {
-            let obj = {};
-            const intl = isConnectedToVoiceChannel(style[23]).intl;
-            obj.label = intl.string(isConnectedToVoiceChannel(style[23]).t["qVE/VF"]);
-            obj.iconSource = channelId(style[17])(value.type);
-            obj.showIconFirst = false;
-            obj.action = function action() {
-              const channel = stateFromStores1.getChannel(outer2_1);
-              if (null != channel) {
-                isConnectedToVoiceChannel(style[27]).onConnectToConsole(channel, closure_0);
-                const obj = isConnectedToVoiceChannel(style[27]);
-              }
-            };
-            items.push(obj);
-          }
-          if (value.type === arr5.PLAYSTATION) {
-            obj = {};
-            const intl2 = isConnectedToVoiceChannel(style[23]).intl;
-            obj.label = intl2.string(isConnectedToVoiceChannel(style[23]).t.vzfxmY);
-            obj.iconSource = channelId(style[17])(value.type);
-            obj.showIconFirst = false;
-            obj.action = function action() {
-              const channel = stateFromStores1.getChannel(outer2_1);
-              if (null != channel) {
-                isConnectedToVoiceChannel(style[27]).onConnectToConsole(channel, closure_0);
-                const obj = isConnectedToVoiceChannel(style[27]);
-              }
-            };
-            items.push(obj);
-          }
-        }
-        const tmp24 = outer1_19(arr5);
-        let iter = tmp24();
-        if (!iter.done) {
-          do {
-            let _loopResult = _loop(iter.value);
-            let iter2 = tmp24();
-            iter = iter2;
-            done = iter2.done;
-          } while (!done);
+        for (const item10074 of tmp3) {
+          let tmp16 = (function _loop(item10074) {
+            const items = item10074;
+            if (item10074.type === arr5.XBOX) {
+              let obj = { label: null, iconSource: null, showIconFirst: false, action: null };
+              const intl = isConnectedToVoiceChannel(style[23]).intl;
+              obj[0] = intl.string(isConnectedToVoiceChannel(style[23]).t["qVE/VF"]);
+              obj[1] = channelId(style[17])(item10074.type);
+              obj[3] = function action() {
+                const channel = outer2_11.getChannel(outer1_1);
+                if (null != channel) {
+                  items(outer2_2[27]).onConnectToConsole(channel, closure_0);
+                  const obj = items(outer2_2[27]);
+                }
+              };
+              items.push(obj);
+            }
+            if (item10074.type === arr5.PLAYSTATION) {
+              obj = { label: null, iconSource: null, showIconFirst: false, action: null };
+              const intl2 = isConnectedToVoiceChannel(style[23]).intl;
+              obj[0] = intl2.string(isConnectedToVoiceChannel(style[23]).t.vzfxmY);
+              obj[1] = channelId(style[17])(item10074.type);
+              obj[3] = function action() {
+                const channel = outer2_11.getChannel(outer1_1);
+                if (null != channel) {
+                  items(outer2_2[27]).onConnectToConsole(channel, closure_0);
+                  const obj = items(outer2_2[27]);
+                }
+              };
+              items.push(obj);
+            }
+          })(item10074);
+          continue;
         }
         return items;
       }
     }
     return ref;
   }, items6);
-  callback = importAllResult.useCallback(() => {
+  callback = obj5.useCallback(() => {
     const result = isConnectedToVoiceChannel(style[28]).UNSAFE_markDismissibleContentAsDismissed(isConnectedToVoiceChannel(style[29]).DismissibleContent.DONUT_MOBILE_NUX);
-    tmp3(true);
-    tmp.lock();
+    _undefined2(true);
+    _undefined.lock();
   }, items7);
-  ref = importAllResult.useRef(null);
-  if (tmp8) {
-    if (!obj6.isAndroid()) {
-      if (tmp6) {
-        obj = {};
-        obj = { targetRef: ref, canShowTooltip: isConnectedToVoiceChannel };
+  ref = obj5.useRef(null);
+  if (tmp10) {
+    function renderButton(arg0) {
+      let tmp = arg0;
+      if (arg0 == null) {
+        let obj = { onPress: null, ref: "r" };
+        obj[0] = closure_15;
+        tmp = obj;
+      }
+      obj = { targetRef: ref, canShowTooltip: null };
+      let tmp9 = c14;
+      if (c14) {
+        tmp9 = isConnectedToVoiceChannel;
+      }
+      obj[1] = tmp9;
+      const items = [c14(outer1_18, obj), ];
+      obj = { style, ref, children: null };
+      const tmp3 = toggleAudio(tmp, c3);
+      const tmp4 = stateFromStores2;
+      const tmp5 = closure_15;
+      const tmp7 = outer1_18;
+      const tmp8 = ref;
+      const obj1 = { ref: tmp.ref };
+      const tmp11 = channelId(style[30]);
+      const merged = Object.assign(tmp3);
+      obj1.disabled = closure_10;
+      let str;
+      if (isConnectedToVoiceChannel) {
+        if (c6) {
+          str = "primary-overlay";
+        }
+      }
+      obj1.overrideVariant = str;
+      obj1.loading = null != stateFromStores;
+      let tmp15 = handleUpdate;
+      if (handleUpdate == null) {
+        tmp15 = c5;
+      }
+      const obj2 = { children: null };
+      obj1.icon = tmp15;
+      const intl = isConnectedToVoiceChannel(tmp10[23]).intl;
+      obj1.accessibilityLabel = intl.string(isConnectedToVoiceChannel(style[23]).t.dnI0AL);
+      obj[2] = c14(channelId(style[31]), obj1);
+      items[1] = c14(tmp11, obj);
+      obj2[0] = items;
+      return tmp4(tmp5, obj2);
+    }
+    tmp3Result = tmp3(tmp[20]);
+    if (!tmp3Result.isAndroid()) {
+      if (tmp8) {
+        obj = { children: null };
+        obj = { targetRef: null, canShowTooltip: null };
+        obj[0] = ref;
+        obj[1] = isConnectedToVoiceChannel;
         const items8 = [callback(closure_18, obj), ];
-        obj1 = { menuItems: memo, position: "bottom", align: "end", onRequestOpen: callback, onRequestClose: tmp.unlock, children: renderButton };
-        items8[1] = callback(isConnectedToVoiceChannel(style[32]).MenuPopout, obj1);
-        obj.children = items8;
+        obj1 = { menuItems: null, position: "bottom", align: "end", onRequestOpen: null, onRequestClose: null, children: null };
+        obj1[0] = memo;
+        obj1[3] = callback;
+        obj1[4] = tmp2.unlock;
+        obj1[5] = renderButton;
+        items8[1] = callback(tmp3(tmp[32]).MenuPopout, obj1);
+        obj[0] = items8;
         let renderButtonResult = stateFromStores2(closure_15, obj);
       }
       return renderButtonResult;
     }
     renderButtonResult = renderButton();
-    obj6 = isConnectedToVoiceChannel(style[20]);
   } else {
     return null;
   }

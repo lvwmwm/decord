@@ -1,166 +1,133 @@
-// Module ID: 13807
-// Function ID: 105762
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 33, 507, 4576, 4161, 6706, 4596, 5620, 2]
+// Module ID: 13828
+// Function ID: 13829
+// Name: renderContent
+// Dependencies: [19, 21, 530, 4598, 4185, 6727, 4618, 5638, 2]
 
-// Module 13807 (_isNativeReflectConstruct)
-import closure_3 from "jsxProd";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 13828 (renderContent)
 import jsxProd from "jsxProd";
-import importAllResult from "result";
+import { PureComponent } from "noop";
+import importAllResult from "noop";
 
-let closure_8;
-let closure_9;
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let closure_10 = { input: "", error: undefined };
-const tmp4 = ((PureComponent) => {
-  class UserSettingsInputAlert {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = outer1_3(this, apply);
-      items1 = [...items];
-      obj = outer1_6(apply);
-      tmp2 = outer1_5;
-      if (outer1_11()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_6;
-        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
+let c3;
+let c4;
+let require = arg1;
+({ jsx: c3, jsxs: c4 } = jsxProd);
+let closure_5 = { input: "", error: "Array" };
+class UserSettingsInputAlert extends PureComponent {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    closure_0 = applyArgumentsResult;
+    applyArgumentsResult.state = jsxs;
+    applyArgumentsResult.close = function close() {
+      const onClose = applyArgumentsResult.props.onClose;
+      if (null != onClose) {
+        onClose();
       }
-      tmp2Result = tmp2(self, constructResult);
-      apply = tmp2Result;
-      tmp2Result.state = outer1_10;
-      tmp2Result.close = () => {
-        const onClose = tmp2Result.props.onClose;
-        if (null != onClose) {
-          onClose();
-        }
-      };
-      tmp2Result.handleSubmit = () => {
-        let closure_0;
-        let closure_1;
-        let closure_2;
-        let closure_3;
-        let isLoading;
-        let onSubmit;
-        ({ isLoading, onSubmit, onSuccess: closure_0, closeOnSuccess: closure_1, onError: closure_2, skipErrorMsgAbortCode: closure_3 } = tmp2Result.props);
-        if (!isLoading) {
-          isLoading = null == onSubmit;
-        }
-        if (!isLoading) {
-          const onSubmitResult = onSubmit(tmp2Result.state.input);
-          onSubmit(tmp2Result.state.input).then(() => {
-            if (null != callback) {
-              callback();
-            }
-            if (closure_1) {
-              outer1_0.close();
-            }
-          }).catch((body) => {
-            if (null != callback2) {
-              callback2(body);
-            }
-            if (body) {
-              if (body.body) {
-                const V6OrEarlierAPIError = UserSettingsInputAlert(outer3_2[7]).V6OrEarlierAPIError;
-                const prototype = V6OrEarlierAPIError.prototype;
-                const v6OrEarlierAPIError = new V6OrEarlierAPIError(body);
-                if (v6OrEarlierAPIError.code !== closure_3) {
-                  const obj = { error: v6OrEarlierAPIError.message };
-                  outer1_0.setState(obj);
-                }
+    };
+    applyArgumentsResult.handleSubmit = function handleSubmit() {
+      let closure_0;
+      let closure_1;
+      let closure_2;
+      let closure_3;
+      let isLoading;
+      let onSubmit;
+      ({ isLoading, onSubmit, onSuccess: closure_0, closeOnSuccess: closure_1, onError: closure_2, skipErrorMsgAbortCode: closure_3 } = applyArgumentsResult.props);
+      if (!isLoading) {
+        isLoading = null == onSubmit;
+      }
+      if (!isLoading) {
+        const onSubmitResult = onSubmit(applyArgumentsResult.state.input);
+        onSubmit(applyArgumentsResult.state.input).then(() => {
+          if (closure_0 != null) {
+            tmp();
+          }
+          if (closure_1) {
+            outer1_0.close();
+          }
+        }).catch((body) => {
+          if (closure_2 != null) {
+            tmp(body);
+          }
+          if (body) {
+            if (body.body) {
+              const v6OrEarlierAPIError = new applyArgumentsResult(outer2_2[2]).V6OrEarlierAPIError(body);
+              if (v6OrEarlierAPIError.code !== closure_3) {
+                const obj = { error: null };
+                obj[0] = v6OrEarlierAPIError.message;
+                outer1_0.setState(obj);
               }
             }
-          });
-          const nextPromise = onSubmit(tmp2Result.state.input).then(() => {
-            if (null != callback) {
-              callback();
-            }
-            if (closure_1) {
-              outer1_0.close();
-            }
-          });
-        }
-      };
-      return tmp2Result;
-    }
+          }
+        });
+        const nextPromise = onSubmit(applyArgumentsResult.state.input).then(() => {
+          if (closure_0 != null) {
+            tmp();
+          }
+          if (closure_1) {
+            outer1_0.close();
+          }
+        });
+      }
+    };
+    return applyArgumentsResult;
   }
-  callback2(UserSettingsInputAlert, PureComponent);
-  let obj = {
-    key: "renderContent",
-    value() {
-      let self = this;
-      self = this;
-      const helpText = this.props.helpText;
-      if (null != this.props.error) {
-        if ("" !== self.props.error) {
-          let error = self.props.error;
-        }
-        let obj = { spacing: 16 };
-        let tmp7 = null != helpText;
-        if (tmp7) {
-          obj = { variant: "text-md/normal", children: helpText };
-          tmp7 = outer1_8(UserSettingsInputAlert(outer1_2[9]).Text, obj);
-        }
-        const items = [tmp7, ];
-        obj = { label: tmp3, placeholder: tmp, secureTextEntry: tmp2, returnKeyType: "done", autoFocus: true };
-        let str4 = "default";
-        if (null != error) {
-          str4 = "error";
-        }
-        obj.status = str4;
-        obj.errorMessage = error;
-        obj.onSubmitEditing = self.handleSubmit;
-        obj.onChange = function onChange(input) {
-          return self.setState({ input });
-        };
-        items[1] = outer1_8(UserSettingsInputAlert(outer1_2[10]).TextInput, obj);
-        obj.children = items;
-        return outer1_9(UserSettingsInputAlert(outer1_2[8]).Stack, obj);
-      }
-      error = self.state.error;
+}
+const prototype = UserSettingsInputAlert.prototype;
+prototype["renderContent"] = function renderContent() {
+  let self = this;
+  self = this;
+  const helpText = this.props.helpText;
+  if (null != this.props.error) {
+    if ("" !== self.props.error) {
+      let error = self.props.error;
     }
-  };
-  let items = [obj, ];
-  obj = {
-    key: "render",
-    value() {
-      let actionText;
-      let cancelText;
-      let confirmColor;
-      let title;
-      let useKeyboardAwareWrapper;
-      ({ title, actionText, cancelText, confirmColor, useKeyboardAwareWrapper } = this.props);
-      let obj = { title, confirmText: actionText, confirmColor, onConfirm: this.handleSubmit, cancelText, onCancel: this.close, children: this.renderContent() };
-      const tmp2 = outer1_8(outer1_1(outer1_2[11]), obj);
-      let tmp3 = tmp2;
-      if (useKeyboardAwareWrapper) {
-        obj = { children: tmp2 };
-        tmp3 = outer1_8(outer1_1(outer1_2[12]), obj);
-      }
-      return tmp3;
+    let tmp7 = null != helpText;
+    if (tmp7) {
+      let obj = { variant: "text-md/normal", children: null };
+      obj[1] = helpText;
+      tmp7 = callback(tmp5(4185).Text, obj);
     }
-  };
-  items[1] = obj;
-  return callback(UserSettingsInputAlert, items);
-})(require("result").PureComponent);
-tmp4.defaultProps = { isLoading: false, useKeyboardAwareWrapper: false, secureTextEntry: true };
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/user_settings/account/native/UserSettingsInputAlert.tsx");
+    const items = [tmp7, ];
+    obj = { label: null, placeholder: null, secureTextEntry: null, returnKeyType: "done", autoFocus: true, status: null, errorMessage: null, onSubmitEditing: null, onChange: null };
+    obj[0] = tmp3;
+    obj[1] = tmp;
+    obj[2] = tmp2;
+    let str2 = "default";
+    if (null != error) {
+      str2 = "error";
+    }
+    obj = { spacing: 16, children: null };
+    obj[5] = str2;
+    obj[6] = error;
+    obj[7] = self.handleSubmit;
+    obj[8] = function onChange(input) {
+      return self.setState({ input });
+    };
+    items[1] = callback(self(6727).TextInput, obj);
+    obj[1] = items;
+    return closure_4(self(4598).Stack, obj);
+  }
+  error = self.state.error;
+};
+prototype["render"] = function render() {
+  let actionText;
+  let cancelText;
+  let confirmColor;
+  let title;
+  let useKeyboardAwareWrapper;
+  ({ title, actionText, cancelText, confirmColor, useKeyboardAwareWrapper } = this.props);
+  let obj = { title, confirmText: actionText, confirmColor, onConfirm: this.handleSubmit, cancelText, onCancel: this.close, children: null };
+  obj[6] = this.renderContent();
+  const tmp5 = callback(importDefault(4618), obj);
+  let tmpResult = tmp5;
+  if (useKeyboardAwareWrapper) {
+    obj = { children: null };
+    obj[0] = tmp5;
+    tmpResult = callback(importDefault(5638), obj);
+  }
+  return tmpResult;
+};
+UserSettingsInputAlert.defaultProps = { isLoading: false, useKeyboardAwareWrapper: false, secureTextEntry: true };
+const result = require("sendRequest").fileFinishedImporting("modules/user_settings/account/native/UserSettingsInputAlert.tsx");
 
-export default tmp4;
+export default UserSettingsInputAlert;

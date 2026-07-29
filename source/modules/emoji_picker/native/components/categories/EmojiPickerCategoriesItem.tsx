@@ -1,40 +1,40 @@
-// Module ID: 9407
-// Function ID: 73246
-// Name: NODE_SIZE
-// Dependencies: [57, 31, 27, 5030, 653, 33, 4165, 689, 4026, 4166, 4169, 4695, 5548, 9408, 4687, 2]
+// Module ID: 9431
+// Function ID: 9432
+// Dependencies: [32, 19, 17, 5052, 676, 21, 4189, 712, 4050, 4190, 4193, 4717, 5566, 9432, 4709, 2]
 
-// Module 9407 (NODE_SIZE)
+// Module 9431
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { EmojiCategoryTypes } from "EmojiCategoryTypes";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 let CATEGORY_ICON_SIZE;
 let NODE_SIZE;
-let closure_7;
-let closure_8;
-let closure_9;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ CATEGORY_ICON_RIPPLE_CONFIG: closure_7, CATEGORY_ICON_SIZE, NODE_SIZE } = ME);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-obj = { itemInner: obj };
+let c4 = importAllResult;
+({ CATEGORY_ICON_RIPPLE_CONFIG: error, CATEGORY_ICON_SIZE, NODE_SIZE } = ME);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+obj = { itemInner: obj, fadedItem: null, activeItem: null, guildItem: null, lockContainer: null, lock: null };
 obj = { justifyContent: "center", alignItems: "center", height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2 };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.ICON_TRANSPARENT };
-obj.fadedItem = _createForOfIteratorHelperLoose;
-obj.activeItem = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_ACTIVE };
-obj.guildItem = { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE, borderRadius: CATEGORY_ICON_SIZE / 2 };
-let obj3 = { width: 12, height: 12, position: "absolute", bottom: 0, end: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, alignItems: "center", justifyContent: "center" };
-obj.lockContainer = obj3;
-let obj4 = { width: 7.5, height: 7.5, tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-obj.lock = obj4;
-let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
+createCacheKey = { backgroundColor: require("Themes").colors.ICON_TRANSPARENT };
+obj[1] = createCacheKey;
+obj[2] = { backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_ACTIVE };
+obj[3] = { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE, borderRadius: CATEGORY_ICON_SIZE / 2 };
+let obj2 = { backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_ACTIVE };
+obj[4] = { width: 12, height: 12, position: "absolute", bottom: 0, end: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center" };
+let obj3 = { width: 12, height: 12, position: "absolute", bottom: 0, end: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center" };
+obj[5] = { width: 7.5, height: 7.5, tintColor: require("Themes").colors.TEXT_DEFAULT };
+let closure_10 = createCacheKey.createStyles(obj);
 let closure_11 = { code: "function EmojiPickerCategoriesItemTsx1(){const{withTiming,categoryIndexActive,index,timingStandard,styleColorActive,styleColorTransparent}=this.__closure;return{opacity:withTiming(categoryIndexActive.get()===index?1:0.5,timingStandard),backgroundColor:categoryIndexActive.get()===index?styleColorActive:styleColorTransparent};}" };
 let closure_12 = { code: "function EmojiPickerCategoriesItemTsx2(){const{categoryIndexActive,index}=this.__closure;return categoryIndexActive.get()===index;}" };
 let closure_13 = { code: "function EmojiPickerCategoriesItemTsx3(active,prev){const{runOnJS,setIsSelected}=this.__closure;if(active!==prev){runOnJS(setIsSelected)(active);}}" };
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_BACKGROUND_ACTIVE };
+let obj4 = { width: 7.5, height: 7.5, tintColor: require("Themes").colors.TEXT_DEFAULT };
 const memoResult = importAllResult.memo(function EmojiPickerCategoriesItem(category) {
   let loadingStyle;
   let style;
@@ -43,21 +43,26 @@ const memoResult = importAllResult.memo(function EmojiPickerCategoriesItem(categ
   const handlePressCategory = category.handlePressCategory;
   const index = category.index;
   let locked = category.locked;
+  let backgroundColor;
+  let backgroundColor2;
+  let EmojiCategoryTypes;
   ({ loadingStyle, style } = category);
-  const tmp = callback2();
-  const backgroundColor = tmp.activeItem.backgroundColor;
-  const backgroundColor2 = tmp.fadedItem.backgroundColor;
+  const tmp = callback();
+  backgroundColor = tmp.activeItem.backgroundColor;
+  backgroundColor2 = tmp.fadedItem.backgroundColor;
   let obj = category(handlePressCategory[8]);
   class T {
     constructor() {
-      obj = {};
-      obj2 = category(handlePressCategory[9]);
+      tmp = category;
+      tmp2 = handlePressCategory;
+      obj = category(handlePressCategory[9]);
+      obj2 = categoryIndexActive;
       num = 0.5;
+      tmp3 = index;
       if (categoryIndexActive.get() === index) {
         num = 1;
       }
-      obj.opacity = obj2.withTiming(num, category(handlePressCategory[10]).timingStandard);
-      obj.backgroundColor = categoryIndexActive.get() === index ? backgroundColor : backgroundColor;
+      obj = { opacity: obj.withTiming(num, tmp(tmp2[10]).timingStandard), backgroundColor: obj2.get() === tmp3 ? backgroundColor : backgroundColor };
       return obj;
     }
   }
@@ -66,8 +71,8 @@ const memoResult = importAllResult.memo(function EmojiPickerCategoriesItem(categ
   T.__workletHash = 3335518235623;
   T.__initData = closure_11;
   const animatedStyle = obj.useAnimatedStyle(T);
-  const tmp3 = index(backgroundColor.useState(() => categoryIndexActive.get() === index), 2);
-  const EmojiCategoryTypes = tmp4;
+  const tmp5 = index(backgroundColor.useState(() => categoryIndexActive.get() === index), 2);
+  EmojiCategoryTypes = tmp6;
   let obj2 = category(handlePressCategory[8]);
   const fn = function p() {
     return categoryIndexActive.get() === index;
@@ -80,50 +85,56 @@ const memoResult = importAllResult.memo(function EmojiPickerCategoriesItem(categ
       if (category !== arg1) {
         tmp = category;
         tmp2 = handlePressCategory;
-        num = 8;
         obj = category(handlePressCategory[8]);
-        tmp3 = closure_6;
-        tmp4 = obj.runOnJS(closure_6)(category);
+        tmp3 = c6;
+        tmp4 = obj.runOnJS(c6)(category);
       }
       return;
     }
   }
-  obj = { runOnJS: category(handlePressCategory[8]).runOnJS, setIsSelected: tmp4 };
+  obj = { runOnJS: category(handlePressCategory[8]).runOnJS, setIsSelected: tmp6 };
   E.__closure = obj;
   E.__workletHash = 6056273557261;
   E.__initData = closure_13;
   const animatedReaction = obj2.useAnimatedReaction(fn, E);
   const items = [handlePressCategory, index, category];
-  const callback = backgroundColor.useCallback(() => handlePressCategory(index, category), items);
-  const obj1 = { androidRippleConfig: closure_7, style, onPress: callback, accessibilityRole: "tab" };
+  callback = backgroundColor.useCallback(() => handlePressCategory(index, category), items);
+  const obj1 = { androidRippleConfig: closure_7, style, onPress: callback, accessibilityRole: "tab", accessibilityLabel: null, accessibilityState: null, children: null };
   if (category.type === EmojiCategoryTypes.GUILD) {
     let name = category.guild.name;
   } else {
     name = category.name;
   }
-  obj1.accessibilityLabel = name;
-  obj1.accessibilityState = { selected: tmp3[0] };
-  obj2 = { style: items1 };
+  obj1[4] = name;
+  obj1[5] = { selected: tmp5[0] };
+  obj2 = { style: items1, children: null };
   items1 = [tmp.itemInner, animatedStyle];
   if (category.type === EmojiCategoryTypes.GUILD) {
-    const obj3 = { guild: category.guild, loadingStyle, size: category(handlePressCategory[12]).GuildIconSizes.XSMALL, style: tmp.guildItem };
-    let tmp12 = callback(categoryIndexActive(handlePressCategory[12]), obj3);
-    const tmp16 = categoryIndexActive(handlePressCategory[12]);
+    const obj3 = { guild: null, loadingStyle: null, size: null, style: null };
+    obj3[0] = category.guild;
+    obj3[1] = loadingStyle;
+    obj3[2] = tmp2(tmp3[12]).GuildIconSizes.XSMALL;
+    obj3[3] = tmp.guildItem;
+    let tmp9Result = tmp9(tmp12(tmp3[12]), obj3);
+    const tmp12Result = tmp12(tmp3[12]);
   } else {
-    const obj4 = { id: category.id };
-    tmp12 = callback(categoryIndexActive(handlePressCategory[13]), obj4);
+    const obj4 = { id: null };
+    obj4[0] = category.id;
+    tmp9Result = tmp9(tmp12(tmp3[13]), obj4);
   }
-  const items2 = [tmp12, ];
+  const items2 = [tmp9Result, ];
   if (locked) {
-    const obj5 = { style: tmp.lockContainer };
-    const obj6 = { style: tmp.lock };
-    obj5.children = callback(category(handlePressCategory[14]).LockIcon, obj6);
-    locked = callback(backgroundColor2, obj5);
+    const obj5 = { style: null, children: null };
+    obj5[0] = tmp.lockContainer;
+    const obj6 = { style: null };
+    obj6[0] = tmp.lock;
+    obj5[1] = tmp9(tmp2(tmp3[14]).LockIcon, obj6);
+    locked = tmp9(backgroundColor2, obj5);
   }
   items2[1] = locked;
-  obj2.children = items2;
-  obj1.children = closure_9(categoryIndexActive(handlePressCategory[8]).View, obj2);
-  return callback(category(handlePressCategory[11]).PressableOpacity, obj1);
+  obj2[1] = items2;
+  obj1[6] = closure_9(categoryIndexActive(handlePressCategory[8]).View, obj2);
+  return closure_8(category(handlePressCategory[11]).PressableOpacity, obj1);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/emoji_picker/native/components/categories/EmojiPickerCategoriesItem.tsx");
 

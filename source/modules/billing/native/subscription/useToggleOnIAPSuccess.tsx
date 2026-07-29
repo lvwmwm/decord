@@ -1,12 +1,12 @@
-// Module ID: 6648
-// Function ID: 58619
+// Module ID: 6669
+// Function ID: 6670
 // Name: useToggleOnIAPSuccess
-// Dependencies: [57, 31, 686, 2]
+// Dependencies: [32, 19, 709, 2]
 // Exports: default
 
-// Module 6648 (useToggleOnIAPSuccess)
+// Module 6669 (useToggleOnIAPSuccess)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const result = require("dispatcher").fileFinishedImporting("modules/billing/native/subscription/useToggleOnIAPSuccess.tsx");
 
@@ -20,7 +20,7 @@ export default function useToggleOnIAPSuccess() {
   const effect = React.useEffect(() => {
     const subscription = outer1_0(toggleFlip[2]).subscribe("IAP_PURCHASE_PRODUCT_SUCCESS", toggleFlip);
     return () => {
-      outer2_0(toggleFlip[2]).unsubscribe("IAP_PURCHASE_PRODUCT_SUCCESS", outer1_1);
+      outer1_0(outer1_1[2]).unsubscribe("IAP_PURCHASE_PRODUCT_SUCCESS", closure_1);
     };
   }, []);
   return tmp2;

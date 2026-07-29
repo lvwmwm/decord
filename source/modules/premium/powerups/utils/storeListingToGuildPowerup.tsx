@@ -1,181 +1,176 @@
-// Module ID: 11558
-// Function ID: 89874
+// Module ID: 11582
+// Function ID: 11583
 // Name: storeListingToGuildPowerup
-// Dependencies: [1852, 4053, 1853, 2]
+// Dependencies: [1876, 4077, 1877, 2]
 // Exports: default
 
-// Module 11558 (storeListingToGuildPowerup)
+// Module 11582 (storeListingToGuildPowerup)
 import GuildFeatures from "GuildFeatures";
 import { GuildPowerupType } from "BoostedGuildTiers";
 import { DEFAULT_EMOJI_SLOTS } from "set";
 
-let closure_0;
+let c0;
 let closure_1;
-({ DEFAULT_SOUND_SLOTS: closure_0, DEFAULT_STICKER_SLOTS: closure_1 } = GuildFeatures);
+({ DEFAULT_SOUND_SLOTS: c0, DEFAULT_STICKER_SLOTS: closure_1 } = GuildFeatures);
 const result = require("set").fileFinishedImporting("modules/premium/powerups/utils/storeListingToGuildPowerup.tsx");
 
 export default function storeListingToGuildPowerup(arr, powerup_metadata) {
   powerup_metadata = powerup_metadata.powerup_metadata;
   let category_type;
-  if (null != powerup_metadata) {
+  if (powerup_metadata != null) {
     category_type = powerup_metadata.category_type;
   }
   if (null != category_type) {
     const sku4 = powerup_metadata.sku;
     powerup_metadata = undefined;
-    if (null != sku4) {
+    if (sku4 != null) {
       powerup_metadata = sku4.powerup_metadata;
     }
     if (null != powerup_metadata) {
-      let obj = { title: powerup_metadata.summary, skuId: powerup_metadata.sku.id, cost: powerup_metadata.boost_price };
+      let obj = { title: null, skuId: null, cost: null, dependencies: null, animatedImageUrl: null, staticImageUrl: null, storeRemovalDate: null, deactivationCooldownPeriodDays: null };
+      obj[0] = powerup_metadata.summary;
+      obj[1] = powerup_metadata.sku.id;
+      obj[2] = powerup_metadata.boost_price;
       if (null != powerup_metadata.sku.dependent_sku_id) {
         const items = [powerup_metadata.sku.dependent_sku_id];
         let items1 = items;
       } else {
         items1 = [];
       }
-      obj.dependencies = items1;
+      obj[3] = items1;
       const powerup_metadata2 = powerup_metadata.powerup_metadata;
       let animated_image_url;
-      if (null != powerup_metadata2) {
+      if (powerup_metadata2 != null) {
         animated_image_url = powerup_metadata2.animated_image_url;
       }
-      if (null == animated_image_url) {
+      if (animated_image_url == null) {
         animated_image_url = powerup_metadata.animated_image_url;
       }
-      obj.animatedImageUrl = animated_image_url;
+      obj[4] = animated_image_url;
       const powerup_metadata3 = powerup_metadata.powerup_metadata;
       let static_image_url;
-      if (null != powerup_metadata3) {
+      if (powerup_metadata3 != null) {
         static_image_url = powerup_metadata3.static_image_url;
       }
-      if (null == static_image_url) {
+      if (static_image_url == null) {
         static_image_url = powerup_metadata.static_image_url;
       }
-      obj.staticImageUrl = static_image_url;
+      obj[5] = static_image_url;
       const powerup_metadata4 = powerup_metadata.powerup_metadata;
       let store_removal_date;
-      if (null != powerup_metadata4) {
+      if (powerup_metadata4 != null) {
         store_removal_date = powerup_metadata4.store_removal_date;
       }
-      obj.storeRemovalDate = store_removal_date;
+      obj[6] = store_removal_date;
       const powerup_metadata5 = powerup_metadata.powerup_metadata;
       let prop;
-      if (null != powerup_metadata5) {
+      if (powerup_metadata5 != null) {
         prop = powerup_metadata5.deactivation_cooldown_period_days;
       }
-      obj.deactivationCooldownPeriodDays = prop;
+      obj[7] = prop;
       if (GuildPowerupType.LEVEL === category_type) {
         const powerup_metadata6 = powerup_metadata.sku.powerup_metadata;
         let guild_features;
-        if (null != powerup_metadata6) {
+        if (powerup_metadata6 != null) {
           guild_features = powerup_metadata6.guild_features;
         }
         if (null != guild_features) {
-          let sum = DEFAULT_EMOJI_SLOTS + guild_features.additional_emoji_slots;
+          const sum = DEFAULT_EMOJI_SLOTS + guild_features.additional_emoji_slots;
           let sum1 = dependent_sku_id + guild_features.additional_sound_slots;
           let sum2 = closure_1 + guild_features.additional_sticker_slots;
           dependent_sku_id = powerup_metadata.sku.dependent_sku_id;
-          let tmp37 = sum;
-          let tmp38 = sum1;
-          let tmp39 = sum2;
-          while (null != dependent_sku_id) {
-            let found = arr.find((sku) => dependent_sku_id === sku.sku.id);
-            let prop1;
-            if (null != found) {
-              let sku = found.sku;
-              let tmp16 = sku;
-              if (null != sku) {
-                let powerup_metadata7 = sku.powerup_metadata;
-                let tmp17 = powerup_metadata7;
-                if (null != powerup_metadata7) {
-                  guild_features = powerup_metadata7.guild_features;
-                  let tmp18 = guild_features;
-                  if (null != guild_features) {
-                    prop1 = guild_features.additional_emoji_slots;
-                    let tmp19 = guild_features;
+          let tmp22 = sum;
+          let tmp23 = sum2;
+          let tmp24 = sum1;
+          let tmp25 = sum;
+          if (null != dependent_sku_id) {
+            do {
+              let found = arr.find((sku) => dependent_sku_id === sku.sku.id);
+              let tmp13 = sum2;
+              let tmp14 = sum1;
+              let tmp15 = tmp22;
+              let num;
+              if (found != null) {
+                let sku = found.sku;
+                if (sku != null) {
+                  let powerup_metadata7 = sku.powerup_metadata;
+                  if (powerup_metadata7 != null) {
+                    guild_features = powerup_metadata7.guild_features;
+                    if (guild_features != null) {
+                      num = guild_features.additional_emoji_slots;
+                    }
                   }
                 }
               }
-            }
-            let num = 0;
-            if (null != prop1) {
-              num = prop1;
-            }
-            let sum3 = sum + num;
-            let prop2;
-            if (null != found) {
-              let sku2 = found.sku;
-              let tmp22 = sku2;
-              if (null != sku2) {
-                let powerup_metadata8 = sku2.powerup_metadata;
-                let tmp23 = powerup_metadata8;
-                if (null != powerup_metadata8) {
-                  let guild_features2 = powerup_metadata8.guild_features;
-                  let tmp24 = guild_features2;
-                  if (null != guild_features2) {
-                    prop2 = guild_features2.additional_sound_slots;
-                    let tmp25 = guild_features2;
+              if (num == null) {
+                num = 0;
+              }
+              let sum3 = tmp22 + num;
+              let num2;
+              if (found != null) {
+                let sku2 = found.sku;
+                if (sku2 != null) {
+                  let powerup_metadata8 = sku2.powerup_metadata;
+                  if (powerup_metadata8 != null) {
+                    let guild_features2 = powerup_metadata8.guild_features;
+                    if (guild_features2 != null) {
+                      num2 = guild_features2.additional_sound_slots;
+                    }
                   }
                 }
               }
-            }
-            let num2 = 0;
-            if (null != prop2) {
-              num2 = prop2;
-            }
-            let sum4 = sum1 + num2;
-            let prop3;
-            if (null != found) {
-              let sku3 = found.sku;
-              let tmp28 = sku3;
-              if (null != sku3) {
-                let powerup_metadata9 = sku3.powerup_metadata;
-                let tmp29 = powerup_metadata9;
-                if (null != powerup_metadata9) {
-                  let guild_features3 = powerup_metadata9.guild_features;
-                  let tmp30 = guild_features3;
-                  if (null != guild_features3) {
-                    prop3 = guild_features3.additional_sticker_slots;
-                    let tmp31 = guild_features3;
+              if (num2 == null) {
+                num2 = 0;
+              }
+              let sum4 = sum1 + num2;
+              let num3;
+              if (found != null) {
+                let sku3 = found.sku;
+                if (sku3 != null) {
+                  let powerup_metadata9 = sku3.powerup_metadata;
+                  if (powerup_metadata9 != null) {
+                    let guild_features3 = powerup_metadata9.guild_features;
+                    if (guild_features3 != null) {
+                      num3 = guild_features3.additional_sticker_slots;
+                    }
                   }
                 }
               }
-            }
-            let num3 = 0;
-            if (null != prop3) {
-              num3 = prop3;
-            }
-            let sum5 = sum2 + num3;
-            dependent_sku_id = undefined;
-            if (null != found) {
-              dependent_sku_id = found.sku.dependent_sku_id;
-            }
-            sum = sum3;
-            sum1 = sum4;
-            sum2 = sum5;
-            tmp37 = sum3;
-            tmp38 = sum4;
-            tmp39 = sum5;
+              if (num3 == null) {
+                num3 = 0;
+              }
+              let sum5 = sum2 + num3;
+              dependent_sku_id = undefined;
+              if (found != null) {
+                dependent_sku_id = found.sku.dependent_sku_id;
+              }
+              sum2 = sum5;
+              sum1 = sum4;
+              tmp22 = sum3;
+              tmp23 = sum5;
+              tmp24 = sum4;
+              tmp25 = sum3;
+            } while (null != dependent_sku_id);
           }
-          obj = { type: GuildPowerupType.LEVEL };
+          obj = { type: null, features: null };
+          obj[0] = GuildPowerupType.LEVEL;
           const obj1 = {};
           const merged = Object.assign(guild_features);
-          obj1["total_emoji_slots"] = tmp37;
-          obj1["total_sound_slots"] = tmp38;
-          obj1["total_sticker_slots"] = tmp39;
-          obj.features = obj1;
+          obj1.total_emoji_slots = tmp25;
+          obj1.total_sound_slots = tmp24;
+          obj1.total_sticker_slots = tmp23;
+          obj[1] = obj1;
           const merged1 = Object.assign(obj);
           return obj;
         }
-      } else if (GuildPowerupType.PERK === category_type) {
-        obj = { type: GuildPowerupType.PERK };
-        const description = powerup_metadata.description;
-        let str = "";
-        if (null != description) {
-          str = description;
+      } else if (tmp7.PERK === category_type) {
+        obj = { type: null, description: null };
+        obj[0] = tmp7.PERK;
+        let str = powerup_metadata.description;
+        if (str == null) {
+          str = "";
         }
-        obj.description = str;
+        obj[1] = str;
         const merged2 = Object.assign(obj);
         return obj;
       }

@@ -1,10 +1,10 @@
-// Module ID: 10023
-// Function ID: 77398
+// Module ID: 10045
+// Function ID: 10046
 // Name: isNewLayoutBetter
 // Dependencies: [2]
 // Exports: default
 
-// Module 10023 (isNewLayoutBetter)
+// Module 10045 (isNewLayoutBetter)
 function isNewLayoutBetter(unusedSpace, unusedSpace2) {
   if (0 !== unusedSpace2.unusedSpace) {
     if (unusedSpace.unusedSpace !== unusedSpace2.unusedSpace) {
@@ -60,51 +60,51 @@ export default function fitCardsInGrid(arg0) {
   let tmp = obj;
   if (1 <= cardCount) {
     do {
-      let result = (availableWidth - (num - 1) * gutterSize) / num;
+      let diff = num - 1;
       let _Math = Math;
-      let result1 = cardCount % num;
+      let diff1 = availableWidth - diff * gutterSize;
+      let result = cardCount % num;
+      let tmp6 = num;
+      let tmp7 = obj;
       let num2 = 0;
       let rounded = Math.floor(cardCount / num);
-      if (result1 > 0) {
+      if (0 < result) {
         num2 = 1;
       }
+      let result1 = diff1 / num;
       let sum = rounded + num2;
-      obj = {};
-      let sum1 = result * sum + (sum - 1) * gutterSize;
-      obj.unusedSpace = availableWidth * availableHeight - (result * num + (num - 1) * gutterSize) * sum1;
-      obj.columns = num;
-      obj.overscroll = availableHeight - sum1;
-      obj.rows = sum;
-      obj.cardSize = result;
-      let tmp7 = isNewLayoutBetter;
-      let tmp8 = obj;
+      obj = { unusedSpace: null, columns: null, overscroll: null, rows: null, cardSize: null };
+      let sum1 = result1 * sum + (sum - 1) * gutterSize;
+      obj[0] = availableWidth * availableHeight - (result1 * num + diff * gutterSize) * sum1;
+      obj[1] = num;
+      obj[2] = availableHeight - sum1;
+      obj[3] = sum;
+      obj[4] = result1;
+      let tmp11 = isNewLayoutBetter;
+      let tmp12 = obj;
       if (isNewLayoutBetter(obj, obj)) {
-        tmp8 = obj;
+        tmp12 = obj;
       }
-      let tmp9 = tmp8;
+      let tmp13 = tmp12;
       if (obj.overscroll < 0) {
         let result2 = (availableHeight - (obj.rows - 1) * gutterSize) / obj.rows;
         let sum2 = result2 * obj.rows + (obj.rows - 1) * gutterSize;
         obj = {};
-        let tmp13 = obj;
-        let tmp14 = obj;
-        let merged = Object.assign(obj);
-        obj["unusedSpace"] = availableWidth * availableHeight - (result2 * obj.columns + (obj.columns - 1) * gutterSize) * sum2;
-        obj["overscroll"] = availableHeight - sum2;
-        obj["cardSize"] = result2;
-        let tmp16 = isNewLayoutBetter;
-        tmp9 = tmp8;
+        let tmp16 = obj;
         let tmp17 = obj;
-        if (isNewLayoutBetter(obj, tmp8)) {
-          tmp9 = obj;
-          let tmp10 = obj;
+        let merged = Object.assign(obj);
+        obj.unusedSpace = availableWidth * availableHeight - (result2 * obj.columns + (obj.columns - 1) * gutterSize) * sum2;
+        obj.overscroll = availableHeight - sum2;
+        obj.cardSize = result2;
+        tmp13 = tmp12;
+        if (tmp11(obj, tmp12)) {
+          tmp13 = obj;
         }
       }
       num = num + 1;
-      obj = tmp9;
-      tmp = tmp9;
+      obj = tmp13;
+      tmp = tmp13;
     } while (num <= cardCount);
   }
-  ({ columns: obj3.columns, cardSize: obj3.cardSize } = tmp);
-  return {};
+  return { columns: tmp.columns, cardSize: tmp.cardSize };
 };

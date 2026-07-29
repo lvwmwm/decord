@@ -1,33 +1,28 @@
-// Module ID: 16124
-// Function ID: 124622
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 653, 16125, 5112, 507, 2]
+// Module ID: 16159
+// Function ID: 16160
+// Name: handleDmSettingsUpsellShow
+// Dependencies: [676, 5134, 16160, 530, 2]
 // Exports: acknowledgeDmSettingsUpsell
 
-// Module 16124 (_isNativeReflectConstruct)
-import module_16125 from "module_16125";
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 16159 (handleDmSettingsUpsellShow)
 import { Endpoints } from "ME";
-import tmp2 from "AutomaticLifecycleManager";
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+class DmSettingsUpsellManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.actions = { DM_SETTINGS_UPSELL_SHOW: applyArgumentsResult.handleDmSettingsUpsellShow };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/dm_settings_upsell/DmSettingsUpsellManager.tsx");
+DmSettingsUpsellManager.prototype["handleDmSettingsUpsellShow"] = function handleDmSettingsUpsellShow(guildId) {
+  const result = importDefault(16160).openDmSettingsUpsellModal(guildId.guildId);
+};
+const dmSettingsUpsellManager = new DmSettingsUpsellManager();
+let result = require("module_16160").fileFinishedImporting("modules/dm_settings_upsell/DmSettingsUpsellManager.tsx");
 
-export default tmp2;
+export default dmSettingsUpsellManager;
 export const acknowledgeDmSettingsUpsell = function acknowledgeDmSettingsUpsell(guildId) {
-  const HTTP = require(507) /* _isNativeReflectConstruct */.HTTP;
+  const HTTP = require(530) /* sendRequest */.HTTP;
   return HTTP.post({ url: Endpoints.DM_SETTINGS_UPSELL_ACK(guildId), rejectWithError: false });
 };

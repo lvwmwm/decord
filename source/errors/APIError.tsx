@@ -1,75 +1,32 @@
-// Module ID: 4065
-// Function ID: 33679
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 653, 1212, 507, 2]
+// Module ID: 4089
+// Function ID: 4090
+// Name: prototype
+// Dependencies: [676, 530, 1236, 2]
 
-// Module 4065 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import getSystemLocale from "getSystemLocale";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 4089 (prototype)
 import { Links } from "ME";
+import { V8APIError } from "sendRequest";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+const prototype = function APIErrorWithDefaultMessage(arg0, arg1) {
+  if (null != arg1) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    let obj = { statusPageURL: null, details: null };
+    obj[0] = Links.STATUS;
+    const _HermesInternal = HermesInternal;
+    obj[1] = "" + arg1;
+    intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.aKRa0Q, obj);
+  } else {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj = { statusPageURL: null };
+    obj[0] = Links.STATUS;
+    intl.formatToPlainString(require(1236) /* getSystemLocale */.t.aTVNes, obj);
   }
-  const result = _isNativeReflectConstruct();
+  tmp = new tmp();
+  // ThrowIfThisInitialized (0x7c)
+  return tmp;
+}.prototype;
+class prototype extends V8APIError {
 }
-const tmp2 = ((V8APIError) => {
-  class APIErrorWithDefaultMessage {
-    constructor(arg0, arg1) {
-      self = this;
-      tmp = APIErrorWithDefaultMessage;
-      tmp2 = outer1_3(this, APIErrorWithDefaultMessage);
-      items = [, , ];
-      items[0] = V8APIError;
-      items[1] = arg1;
-      if (null != arg1) {
-        tmp7 = APIErrorWithDefaultMessage;
-        tmp8 = outer1_1;
-        num2 = 6;
-        intl2 = APIErrorWithDefaultMessage(outer1_1[6]).intl;
-        obj = {};
-        tmp9 = outer1_7;
-        obj.statusPageURL = outer1_7.STATUS;
-        tmp10 = globalThis;
-        _HermesInternal = HermesInternal;
-        str = "";
-        obj.details = "" + arg1;
-        formatToPlainStringResult = intl2.formatToPlainString(APIErrorWithDefaultMessage(outer1_1[6]).t.aKRa0Q, obj);
-      } else {
-        tmp3 = APIErrorWithDefaultMessage;
-        tmp4 = outer1_1;
-        num = 6;
-        intl = APIErrorWithDefaultMessage(outer1_1[6]).intl;
-        obj = {};
-        tmp5 = outer1_7;
-        obj.statusPageURL = outer1_7.STATUS;
-        formatToPlainStringResult = intl.formatToPlainString(APIErrorWithDefaultMessage(outer1_1[6]).t.aTVNes, obj);
-      }
-      items[2] = formatToPlainStringResult;
-      obj3 = outer1_5(tmp);
-      tmp11 = outer1_4;
-      if (outer1_8()) {
-        tmp13 = globalThis;
-        _Reflect = Reflect;
-        tmp14 = outer1_5;
-        constructResult = Reflect.construct(obj3, items, outer1_5(self).constructor);
-      } else {
-        constructResult = obj3.apply(self, items);
-      }
-      return tmp11(self, constructResult);
-    }
-  }
-  callback2(APIErrorWithDefaultMessage, V8APIError);
-  return callback(APIErrorWithDefaultMessage);
-})(require("_isNativeReflectConstruct").V8APIError);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("errors/APIError.tsx");
+const result = require("getSystemLocale").fileFinishedImporting("errors/APIError.tsx");
 
-export default tmp2;
+export default prototype;

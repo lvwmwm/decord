@@ -1,11 +1,11 @@
-// Module ID: 15551
-// Function ID: 119411
+// Module ID: 15585
+// Function ID: 15586
 // Name: useOnMessageSend
-// Dependencies: [31, 653, 686, 2]
+// Dependencies: [19, 676, 709, 2]
 // Exports: default
 
-// Module 15551 (useOnMessageSend)
-import result from "result";
+// Module 15585 (useOnMessageSend)
+import noop from "noop";
 import { MessageStates } from "ME";
 
 const result = require("dispatcher").fileFinishedImporting("modules/messages/useOnMessageSend.tsx");
@@ -16,21 +16,24 @@ export default function useOnMessageSend(arg0) {
   const items = [arg0, arg1];
   const effect = React.useEffect(() => {
     function handleMessage(channelId) {
-      let tmp = undefined !== handleMessageCreate;
-      if (tmp) {
-        tmp = channelId.channelId !== handleMessageCreate;
+      let tmp2 = undefined !== handleMessageCreate;
+      if (tmp2) {
+        tmp2 = channelId.channelId !== tmp;
       }
-      if (!tmp) {
+      if (!tmp2) {
         handleMessage();
       }
     }
     function handleMessageCreate(optimistic) {
       optimistic = optimistic.optimistic;
       if (!optimistic) {
-        optimistic = optimistic.message.state === outer2_3.SENDING;
+        optimistic = optimistic.message.state === outer1_3.SENDING;
       }
       if (optimistic) {
-        handleMessage(optimistic);
+        if (!tmp3) {
+          handleMessage();
+        }
+        tmp3 = undefined !== handleMessageCreate && optimistic.channelId !== tmp2;
       }
     }
     const subscription = callback(tmp[2]).subscribe("MESSAGE_CREATE", handleMessageCreate);

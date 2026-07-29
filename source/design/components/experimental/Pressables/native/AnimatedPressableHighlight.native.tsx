@@ -1,75 +1,70 @@
-// Module ID: 5202
-// Function ID: 45111
+// Module ID: 5224
+// Function ID: 5225
 // Name: AnimatedPressableHighlight
-// Dependencies: [31, 27, 33, 4026, 4695, 5203, 3869, 689, 477, 2]
+// Dependencies: [19, 17, 21, 4050, 4717, 5225, 3893, 712, 500, 2]
 
-// Module 5202 (AnimatedPressableHighlight)
-import result from "result";
+// Module 5224 (AnimatedPressableHighlight)
+import noop from "noop";
 import { Pressable } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import set from "set";
-import importDefaultResult from "module_4026";
+import importDefaultResult from "module_4050";
 import set from "jsxProd";
 
 const require = arg1;
-let closure_6 = require("module_4026").createAnimatedComponent(require("PressableBase").PressableHighlight);
+let closure_6 = require("module_4050").createAnimatedComponent(require("PressableBase").PressableHighlight);
 const result = set.fileFinishedImporting("design/components/experimental/Pressables/native/AnimatedPressableHighlight.native.tsx");
 
 export const AnimatedPressableHighlight = set.isAndroid() ? (function AnimatedPressableHighlightAndroid(children) {
-  let obj = Object.create(null);
-  obj.children = 0;
-  const merged = Object.assign(children, obj);
-  obj = merged(3869);
-  token = obj.useToken(token(689).colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
+  const merged = Object.assign(children, Object.create(null));
+  let token;
+  let obj = merged(3893);
+  token = obj.useToken(token(712).colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
   const items = [token, ];
   let androidRippleConfig = merged.androidRippleConfig;
   let cornerRadius;
-  if (null != androidRippleConfig) {
+  if (androidRippleConfig != null) {
     cornerRadius = androidRippleConfig.cornerRadius;
   }
   items[1] = cornerRadius;
   obj = {
     android_ripple: React.useMemo(() => {
-      const obj = { color: token };
+      const obj = { color: token, cornerRadius: null };
       const androidRippleConfig = merged.androidRippleConfig;
-      let cornerRadius;
-      if (null != androidRippleConfig) {
-        cornerRadius = androidRippleConfig.cornerRadius;
+      let num;
+      if (androidRippleConfig != null) {
+        num = androidRippleConfig.cornerRadius;
       }
-      let num = 12;
-      if (null != cornerRadius) {
-        num = cornerRadius;
+      if (num == null) {
+        num = 12;
       }
-      obj.cornerRadius = num;
+      obj[1] = num;
       return obj;
     }, items)
   };
   const merged1 = Object.assign(merged);
-  obj["children"] = children.children;
+  obj.children = children.children;
   return <Pressable android_ripple={React.useMemo(() => {
-    const obj = { color: token };
+    const obj = { color: token, cornerRadius: null };
     const androidRippleConfig = merged.androidRippleConfig;
-    let cornerRadius;
-    if (null != androidRippleConfig) {
-      cornerRadius = androidRippleConfig.cornerRadius;
+    let num;
+    if (androidRippleConfig != null) {
+      num = androidRippleConfig.cornerRadius;
     }
-    let num = 12;
-    if (null != cornerRadius) {
-      num = cornerRadius;
+    if (num == null) {
+      num = 12;
     }
-    obj.cornerRadius = num;
+    obj[1] = num;
     return obj;
   }, items)} />;
 }) : (function AnimatedPressableHighlightiOS(children) {
-  let obj = Object.create(null);
-  obj.children = 0;
-  const merged = Object.assign(children, obj);
-  obj = require(5203) /* SPRING_CONFIG */;
+  const merged = Object.assign(children, Object.create(null));
+  let obj = require(5225) /* SPRING_CONFIG */;
   const iOSPressEffects = obj.useIOSPressEffects(4);
   obj = { accessibilityRole: "button", onPressIn: iOSPressEffects.onPressIn, onPressOut: iOSPressEffects.onPressOut };
   const merged1 = Object.assign(merged);
   const items = [iOSPressEffects.pressableStyles, merged.style];
-  obj["style"] = items;
-  obj["children"] = children.children;
+  obj.style = items;
+  obj.children = children.children;
   return <closure_6 accessibilityRole="button" onPressIn={iOSPressEffects.onPressIn} onPressOut={iOSPressEffects.onPressOut} />;
 });

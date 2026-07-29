@@ -1,30 +1,16 @@
-// Module ID: 16293
-// Function ID: 126272
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 1348, 1907, 1850, 16294, 653, 7960, 5112, 2]
+// Module ID: 16328
+// Function ID: 16329
+// Name: maybeShowUrgentMessageModal
+// Dependencies: [1372, 1931, 1874, 16329, 676, 7985, 5134, 2]
 
-// Module 16293 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 16328 (maybeShowUrgentMessageModal)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleConnectionOpen from "handleConnectionOpen";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { SYSTEM_USER } from "SYSTEM_USER";
 import { UserFlags } from "ME";
-import tmp2 from "AutomaticLifecycleManager";
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function maybeShowUrgentMessageModal(arg0) {
   const currentUser = authStore2.getCurrentUser();
   if (null != currentUser) {
@@ -32,32 +18,63 @@ function maybeShowUrgentMessageModal(arg0) {
     const dMFromUserId = authStore.getDMFromUserId(SYSTEM_USER);
     if (currentUser.hasUrgentMessages()) {
       if (dMFromUserId !== channelId) {
-        if (!c12) {
-          c12 = true;
+        if (!c7) {
+          c7 = true;
           arg0();
         }
       }
     }
-    const obj = { channelId };
-    maybeClearUrgentMessage(obj);
+    const currentUser1 = authStore2.getCurrentUser();
+    let hasUrgentMessagesResult = null != currentUser1;
+    const dMFromUserId1 = authStore.getDMFromUserId(SYSTEM_USER);
+    if (hasUrgentMessagesResult) {
+      hasUrgentMessagesResult = currentUser1.hasUrgentMessages();
+    }
+    if (hasUrgentMessagesResult) {
+      hasUrgentMessagesResult = channelId === dMFromUserId1;
+    }
+    if (hasUrgentMessagesResult) {
+      c7 = false;
+      importAll(7985).setFlag(UserFlags.HAS_UNREAD_URGENT_MESSAGES, false);
+      const obj5 = importAll(7985);
+    }
   }
 }
 function maybeClearUrgentMessage(channelId) {
   const currentUser = authStore2.getCurrentUser();
   let hasUrgentMessagesResult = null != currentUser;
+  const dMFromUserId = authStore.getDMFromUserId(SYSTEM_USER);
   if (hasUrgentMessagesResult) {
     hasUrgentMessagesResult = currentUser.hasUrgentMessages();
   }
   if (hasUrgentMessagesResult) {
-    hasUrgentMessagesResult = tmp;
+    hasUrgentMessagesResult = channelId.channelId === dMFromUserId;
   }
   if (hasUrgentMessagesResult) {
-    let c12 = false;
-    importAll(7960).setFlag(UserFlags.HAS_UNREAD_URGENT_MESSAGES, false);
-    const obj2 = importAll(7960);
+    let c7 = false;
+    importAll(7985).setFlag(UserFlags.HAS_UNREAD_URGENT_MESSAGES, false);
+    const obj2 = importAll(7985);
   }
 }
-let c12 = false;
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/urgent_system_dm/UrgentSystemDMManagerBase.tsx");
+let c7 = false;
+const prototype = function UrgentSystemDMManagerBase(handleShowUrgentMessageAlert) {
+  const tmp2 = new prototype(tmp, new.target);
+  // ThrowIfThisInitialized (0x7c)
+  const importAll = tmp2;
+  tmp2.actions = {
+    POST_CONNECTION_OPEN() {
+      outer1_8(tmp2.handleShowUrgentMessageAlert);
+    },
+    MESSAGE_CREATE() {
+      outer1_8(tmp2.handleShowUrgentMessageAlert);
+    },
+    CHANNEL_SELECT: maybeClearUrgentMessage
+  };
+  tmp2.handleShowUrgentMessageAlert = handleShowUrgentMessageAlert;
+  return tmp2;
+}.prototype;
+class prototype extends tmp2 {
+}
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/urgent_system_dm/UrgentSystemDMManagerBase.tsx");
 
-export default tmp2;
+export default prototype;

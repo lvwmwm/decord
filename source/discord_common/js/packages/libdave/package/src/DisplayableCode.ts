@@ -1,10 +1,10 @@
-// Module ID: 8855
-// Function ID: 69877
+// Module ID: 8879
+// Function ID: 8880
 // Name: generateDisplayableCode
 // Dependencies: [2]
 // Exports: generateDisplayableCode
 
-// Module 8855 (generateDisplayableCode)
+// Module 8879 (generateDisplayableCode)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/libdave/package/src/DisplayableCode.ts");
 
 export const generateDisplayableCode = function generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize) {
@@ -30,28 +30,31 @@ export const generateDisplayableCode = function generateDisplayableCode(toByteAr
       while (true) {
         let _BigInt = BigInt;
         let BigIntResult = BigInt(0);
-        let tmp2 = BigIntResult;
+        let tmp2 = num;
+        let tmp3 = str2;
+        let tmp4 = BigIntResult;
         let diff = chunkSize;
         if (chunkSize > 0) {
-          let tmp4 = toByteArrayResult[num + (chunkSize - diff)];
-          while (undefined !== tmp4) {
+          let tmp6 = toByteArrayResult[num + (chunkSize - diff)];
+          let tmp7 = diff;
+          let tmp8 = BigIntResult;
+          while (undefined !== tmp6) {
             let _BigInt2 = BigInt;
-            let tmp5 = BigIntResult << 8n;
-            BigIntResult = tmp5 | BigInt(tmp4);
+            let tmp9 = BigIntResult << 8n;
+            BigIntResult = tmp9 | BigInt(tmp6);
             diff = diff - 1;
-            tmp2 = BigIntResult;
-            let tmp6 = tmp4;
+            tmp4 = BigIntResult;
             continue;
           }
           let _Error = Error;
-          let tmp7 = new.target;
+          let tmp10 = new.target;
           let str4 = "Out of bounds access from data array";
-          let tmp8 = new.target;
+          let tmp11 = new.target;
           let error3 = new Error("Out of bounds access from data array");
-          let tmp10 = error3;
+          let tmp13 = error3;
           throw error3;
         }
-        let str = tmp2 % tmp28;
+        let str = tmp4 % tmp32;
         str = str.toString();
         str2 = str2 + str.padStart(chunkSize, "0");
         num = num + chunkSize;

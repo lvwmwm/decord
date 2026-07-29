@@ -1,18 +1,20 @@
-// Module ID: 4730
-// Function ID: 41024
+// Module ID: 4752
+// Function ID: 4753
 // Name: isPhotoKitAsset
-// Dependencies: [477, 4731, 2]
-// Exports: shouldConvertToJPG, shouldForceConvertToJPG
+// Dependencies: [500, 4753, 2]
+// Exports: isHeicUTI, isPhotoKitAsset, shouldConvertToJPG, shouldForceConvertToJPG
 
-// Module 4730 (isPhotoKitAsset)
-function isPhotoKitAsset(uri, filename) {
-  let tmp = null != uri.match(/^ph:\/\//i);
+// Module 4752 (isPhotoKitAsset)
+const result = require("set").fileFinishedImporting("modules/media_uploads/native/ImageConversionDecision.tsx");
+
+export const isPhotoKitAsset = function isPhotoKitAsset(closure_0, outer1_1) {
+  let tmp = null != closure_0.match(/^ph:\/\//i);
   if (tmp) {
-    tmp = null != filename;
+    tmp = null != outer1_1;
   }
   return tmp;
-}
-function isHeicUTI(str) {
+};
+export const isHeicUTI = function isHeicUTI(str) {
   if (null == str) {
     return false;
   } else {
@@ -23,99 +25,110 @@ function isHeicUTI(str) {
     }
     return hasItem;
   }
-}
-const result = require("set").fileFinishedImporting("modules/media_uploads/native/ImageConversionDecision.tsx");
-
-export { isPhotoKitAsset };
-export { isHeicUTI };
-export const shouldForceConvertToJPG = function shouldForceConvertToJPG(uri, filename, arg2) {
-  const tmp = !require(477) /* set */.isIOS();
-  let tmp2 = !tmp;
-  if (!tmp) {
-    const tmp5 = !isHeicUTI(arg2);
-    if (!tmp5) {
-      tmp2 = !tmp5;
-    } else if (isPhotoKitAsset(uri, filename)) {
-      let match;
-      if (null != filename) {
-        match = filename.match(/\.HEI[CF]$/i);
+};
+export const shouldForceConvertToJPG = function shouldForceConvertToJPG(closure_0, outer1_1, outer1_10) {
+  let isIOSResult = require(500) /* set */.isIOS();
+  if (isIOSResult) {
+    let flag = false;
+    if (null != outer1_10) {
+      const formatted = outer1_10.toLowerCase();
+      let hasItem = formatted.includes("heic");
+      if (!hasItem) {
+        hasItem = formatted.includes("heif");
       }
-      let tmp8 = null != match;
+      flag = hasItem;
+    }
+    if (flag) {
+      isIOSResult = tmp5;
     } else {
-      tmp8 = null != uri.match(/^(assets-library|file):\/\/.+(&ext=|\.)(HEI[CF])$/i);
+      if (tmp8) {
+        let match;
+        if (outer1_1 != null) {
+          match = outer1_1.match(/\.HEI[CF]$/i);
+        }
+        let tmp9 = null != match;
+      } else {
+        tmp9 = null != closure_0.match(/^(assets-library|file):\/\/.+(&ext=|\.)(HEI[CF])$/i);
+      }
+      tmp8 = null != closure_0.match(/^ph:\/\//i) && null != outer1_1;
     }
   }
-  return tmp2;
+  return isIOSResult;
 };
-export const shouldConvertToJPG = function shouldConvertToJPG(uri, filename, isLowQuality, mobileLosslessImageEnabled, allowOptimization) {
-  let flag = allowOptimization;
-  if (allowOptimization === undefined) {
+export const shouldConvertToJPG = function shouldConvertToJPG(closure_0, outer1_1, outer1_2, outer1_4, c7) {
+  let flag = c7;
+  if (c7 === undefined) {
     flag = true;
   }
   if (obj.isIOS()) {
-    let lastIndexOfResult;
-    if (null != filename) {
-      lastIndexOfResult = filename.lastIndexOf(".");
+    let num;
+    if (outer1_1 != null) {
+      num = outer1_1.lastIndexOf(".");
     }
-    let num2 = -1;
-    if (null != lastIndexOfResult) {
-      num2 = lastIndexOfResult;
+    if (num == null) {
+      num = -1;
     }
-    if (-1 !== num2) {
-      const formatted = filename.substring(num2 + 1).toLowerCase();
-      const str2 = filename.substring(num2 + 1);
+    if (-1 !== num) {
+      const formatted = outer1_1.substring(num + 1).toLowerCase();
+      const str2 = outer1_1.substring(num + 1);
     }
+    const match = closure_0.match;
     if (flag) {
-      if (isPhotoKitAsset(uri, filename)) {
+      if (tmp8) {
         if (null == formatted) {
           return false;
         } else {
           if ("png" === formatted) {
-            if (mobileLosslessImageEnabled) {
+            if (outer1_4) {
               return true;
-            } else if (isLowQuality) {
+            } else if (outer1_2) {
               return true;
             }
           } else {
             if (obj2.isExtensionAnimated(formatted)) {
               return false;
             } else {
-              const supportedExtensions = importDefault(4731).getSupportedExtensions();
+              const supportedExtensions = tmp14(4753).getSupportedExtensions();
               if (null !== supportedExtensions) {
                 if (supportedExtensions.has(formatted)) {
                   return true;
                 }
               }
-              const obj3 = importDefault(4731);
+              const tmp14Result = tmp14(4753);
             }
-            obj2 = importDefault(4731);
+            obj2 = importDefault(4753);
+            tmp14 = importDefault;
           }
           return false;
         }
       } else {
-        let tmp7 = null != uri.match(/^(assets-library|file):\/\/.+(&ext=|\.)(hei[cf]|jpe?g|dng)$/i);
-        if (!tmp7) {
-          let tmp8 = null == uri.match(/^(assets-library|file):\/\/.+(&ext=|\.)png$/i);
-          if (!tmp8) {
-            tmp8 = !isLowQuality && !mobileLosslessImageEnabled;
-            const tmp9 = !isLowQuality && !mobileLosslessImageEnabled;
+        let tmp11 = null != closure_0.match(/^(assets-library|file):\/\/.+(&ext=|\.)(hei[cf]|jpe?g|dng)$/i);
+        if (!tmp11) {
+          let tmp12 = null == closure_0.match(/^(assets-library|file):\/\/.+(&ext=|\.)png$/i);
+          if (!tmp12) {
+            let tmp13 = !outer1_2;
+            if (!outer1_2) {
+              tmp13 = !outer1_4;
+            }
+            tmp12 = tmp13;
           }
-          tmp7 = !tmp8;
+          tmp11 = !tmp12;
         }
-        return tmp7;
+        return tmp11;
       }
+      tmp8 = null != match(/^ph:\/\//i) && null != outer1_1;
     } else {
-      let tmp5 = "heic" === formatted;
-      if (!tmp5) {
-        tmp5 = "heif" === formatted;
+      let tmp7 = "heic" === formatted;
+      if (!tmp7) {
+        tmp7 = "heif" === formatted;
       }
-      if (!tmp5) {
-        tmp5 = tmp4;
+      if (!tmp7) {
+        tmp7 = tmp6;
       }
-      return tmp5;
+      return tmp7;
     }
   } else {
     return false;
   }
-  obj = require(477) /* set */;
+  obj = require(500) /* set */;
 };

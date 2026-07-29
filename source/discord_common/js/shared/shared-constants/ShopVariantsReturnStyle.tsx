@@ -1,9 +1,9 @@
-// Module ID: 5829
-// Function ID: 50954
+// Module ID: 5847
+// Function ID: 5848
 // Name: ShopVariantsReturnStyle
 // Dependencies: [2]
 
-// Module 5829 (ShopVariantsReturnStyle)
+// Module 5847 (ShopVariantsReturnStyle)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ShopVariantsReturnStyle.tsx");
 
 export const ShopVariantsReturnStyle = { INDIVIDUAL_PRODUCTS: 1, [1]: "INDIVIDUAL_PRODUCTS", VARIANTS_GROUP: 2, [2]: "VARIANTS_GROUP" };

@@ -1,28 +1,169 @@
-// Module ID: 13989
-// Function ID: 106864
+// Module ID: 14010
+// Function ID: 14011
 // Name: pressable
-// Dependencies: [5, 4379, 22, 1553, 4710, 4372, 12983, 1935, 10099, 1212, 13892, 2]
+// Dependencies: [5, 4402, 12, 1577, 4732, 4395, 13006, 1959, 10120, 1236, 13913, 2]
 
-// Module 13989 (pressable)
+// Module 14010 (pressable)
 import { NativePermissionTypes } from "NativePermissionStatus";
-import importDefaultResult from "module_4372";
+import apply from "apply";
+import importDefaultResult from "module_4395";
 import createToggle from "createToggle";
-import debounceResult from "apply";
 
 const require = arg1;
-let apply = arg1(tmp3);
-// CreateGeneratorClosureLongIndex (0x67)
 apply = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.RC0kJz);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.RC0kJz);
   },
   parent: null,
   IconComponent: require("QrCodeIcon").QrCodeIcon,
-  onPress: apply.debounce(require("apply"), 1000, { leading: true, trailing: false }),
+  onPress: apply.debounce(require("module_4395")(function*() {
+    if (c3 === 2) {
+      c3 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const callback = tmp3;
+            let paths = 1;
+            let requestPermission = c3;
+            if (obj3.isMetaQuest()) {
+              let CAMERA = requestPermission.HEADSET_CAMERA;
+            } else {
+              CAMERA = requestPermission.CAMERA;
+            }
+            obj3 = outer1_0(paths[3]);
+            requestPermission = v0(paths[4]).requestPermission;
+            const permission = requestPermission(CAMERA);
+            v0 = 2;
+            c3 = 1;
+            const tmp20 = v0(paths[4]);
+          }
+        } else {
+          if (1 === tmp7) {
+            paths = 0;
+            c3 = 3;
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            if (arg1) {
+              obj = v0(paths[5]);
+              obj.pushLazy(callback(paths[7])(paths[6], paths.paths));
+            }
+            paths = 0;
+          }
+          paths = 0;
+          c3 = 3;
+          const obj1 = { value: null, done: true };
+          obj1[0] = arg1;
+          return obj1;
+        }
+      } catch (tmp22) {
+        if (tmp4 === paths) {
+          c3 = tmp2;
+          throw tmp22;
+        } else {
+          v0 = tmp;
+        }
+      }
+    }
+  }), 1000, { leading: true, trailing: false }),
   withArrow: true
 };
 apply = createToggle.createPressable(apply);
+const debounceResult = apply.debounce(require("module_4395")(function*() {
+  if (c3 === 2) {
+    c3 = 3;
+    HermesBuiltin.throwTypeError();
+  } else if (tmp6 === 3) {
+    if (arg0 === 1) {
+      throw arg1;
+    } else if (arg0 === 2) {
+      let obj = { value: null, done: true };
+      obj[0] = arg1;
+      return obj;
+    } else {
+      return { value: "HermesInternal", done: null };
+    }
+  } else {
+    try {
+      c3 = 2;
+      if (0 === v0) {
+        if (arg0 === 1) {
+          c3 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          const callback = tmp3;
+          let paths = 1;
+          let requestPermission = c3;
+          if (obj3.isMetaQuest()) {
+            let CAMERA = requestPermission.HEADSET_CAMERA;
+          } else {
+            CAMERA = requestPermission.CAMERA;
+          }
+          obj3 = outer1_0(paths[3]);
+          requestPermission = v0(paths[4]).requestPermission;
+          const permission = requestPermission(CAMERA);
+          v0 = 2;
+          c3 = 1;
+          const tmp20 = v0(paths[4]);
+        }
+      } else {
+        if (1 === tmp7) {
+          paths = 0;
+          c3 = 3;
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          if (arg1) {
+            obj = v0(paths[5]);
+            obj.pushLazy(callback(paths[7])(paths[6], paths.paths));
+          }
+          paths = 0;
+        }
+        paths = 0;
+        c3 = 3;
+        const obj1 = { value: null, done: true };
+        obj1[0] = arg1;
+        return obj1;
+      }
+    } catch (tmp22) {
+      if (tmp4 === paths) {
+        c3 = tmp2;
+        throw tmp22;
+      } else {
+        v0 = tmp;
+      }
+    }
+  }
+}), 1000, { leading: true, trailing: false });
 const result = require("apply").fileFinishedImporting("modules/user_settings/defs/native/ScanQrCodeSetting.tsx");
 
 export default apply;

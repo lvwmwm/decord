@@ -1,29 +1,29 @@
-// Module ID: 16468
-// Function ID: 128398
+// Module ID: 16503
+// Function ID: 16504
 // Name: EnableCommunityModalSteps
-// Dependencies: [31, 27, 8281, 653, 33, 4165, 566, 1456, 4563, 4574, 686, 16466, 5618, 5155, 4578, 1212, 2]
+// Dependencies: [19, 17, 8305, 676, 21, 4189, 589, 1480, 4586, 4596, 709, 16501, 5636, 5177, 4600, 1236, 2]
 // Exports: EnableCommunityModalScreen
 
-// Module 16468 (EnableCommunityModalSteps)
-import result from "result";
+// Module 16503 (EnableCommunityModalSteps)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import handleFormInit from "handleFormInit";
 import { GuildFeatures } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-let closure_8;
-let closure_9;
+let c4;
+let c5;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ View: closure_4, ScrollView: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let closure_10 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, height: "100%" }, modal: { height: "100%", flex: 1, justifyContent: "space-between" }, button: { flexGrow: 0, paddingLeft: 16, paddingTop: 16, paddingRight: 16 } });
-_createForOfIteratorHelperLoose = { STEP_1: "STEP_1", STEP_2: "STEP_2", STEP_3: "STEP_3" };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/EnableCommunitySharedNavigation.tsx");
+({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+let closure_10 = createCacheKey.createStyles({ container: { flex: 1, height: "100%" }, modal: { height: "100%", flex: 1, justifyContent: "space-between" }, button: { flexGrow: 0, paddingLeft: 16, paddingTop: 16, paddingRight: 16 } });
+createCacheKey = { STEP_1: "STEP_1", STEP_2: "STEP_2", STEP_3: "STEP_3" };
+const result = require("handleFormInit").fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/EnableCommunitySharedNavigation.tsx");
 
-export const EnableCommunityModalSteps = _createForOfIteratorHelperLoose;
+export const EnableCommunityModalSteps = createCacheKey;
 export const EnableCommunityModalScreen = function EnableCommunityModalScreen(arg0) {
   let buttonText;
   let children;
@@ -32,6 +32,7 @@ export const EnableCommunityModalScreen = function EnableCommunityModalScreen(ar
   let importDefault;
   let require;
   ({ onSuccess: require, buttonText, currentStep: importDefault, headerRef } = arg0);
+  let guild;
   let hasItem;
   let closure_5;
   let isScreenReaderEnabled;
@@ -40,17 +41,17 @@ export const EnableCommunityModalScreen = function EnableCommunityModalScreen(ar
   const tmp = callback2();
   let obj = require(headerRef[6]);
   const items = [isScreenReaderEnabled];
-  const guild = obj.useStateFromStoresObject(items, () => isScreenReaderEnabled.getProps()).guild;
+  guild = obj.useStateFromStoresObject(items, () => isScreenReaderEnabled.getProps()).guild;
   hasItem = undefined;
-  if (null != guild) {
+  if (guild != null) {
     const features = guild.features;
     hasItem = features.has(GuildFeatures.COMMUNITY);
   }
-  let obj1 = require(headerRef[7]);
-  closure_5 = obj1.useNavigation();
-  let obj2 = require(headerRef[8]);
-  isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
-  GuildFeatures = tmp5;
+  let tmp2Result = tmp2(tmp3[7]);
+  closure_5 = tmp2Result.useNavigation();
+  tmp2Result = tmp2(tmp3[8]);
+  isScreenReaderEnabled = tmp2Result.useIsScreenReaderEnabled();
+  GuildFeatures = tmp7;
   const items1 = [isScreenReaderEnabled, null != guild, headerRef];
   const effect = guild.useEffect(() => {
     if (isScreenReaderEnabled) {
@@ -58,8 +59,8 @@ export const EnableCommunityModalScreen = function EnableCommunityModalScreen(ar
         if (null != headerRef) {
           const _setTimeout = setTimeout;
           const timeout = setTimeout(() => {
-            let obj = outer2_0(headerRef[9]);
-            obj = { ref: outer1_2 };
+            let obj = callback(outer1_2[9]);
+            obj = { ref: closure_2 };
             return obj.setAccessibilityFocus(obj);
           }, 100);
           return () => clearTimeout(closure_0);
@@ -70,47 +71,49 @@ export const EnableCommunityModalScreen = function EnableCommunityModalScreen(ar
   const items2 = [hasItem];
   const effect1 = guild.useEffect(() => {
     if (hasItem) {
-      outer1_1(headerRef[10]).wait(() => outer2_1(headerRef[11]).close());
+      outer1_1(headerRef[10]).wait(() => callback(table[11]).close());
       const obj = outer1_1(headerRef[10]);
     }
   }, items2);
   if (null == guild) {
-    let tmp14Result = callback(require(headerRef[12]).SceneLoadingIndicator, {});
+    let tmp12Result = callback(tmp2(tmp3[12]).SceneLoadingIndicator, {});
   } else {
-    obj = { style: tmp.container };
-    obj = { bottom: true, style: tmp.modal };
-    obj1 = {};
-    obj2 = { flexGrow: 1 };
-    obj1.style = obj2;
-    obj1.children = children;
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj = { bottom: true, style: null, children: null };
+    obj[1] = tmp.modal;
+    const obj1 = { style: null, children: null };
+    obj1[0] = { flexGrow: 1 };
+    obj1[1] = children;
     const items3 = [callback(hasItem, obj1), ];
-    const obj3 = { style: tmp.button };
-    const obj4 = { variant: "primary", grow: true };
-    if (null == buttonText) {
-      const intl = require(headerRef[15]).intl;
-      buttonText = intl.string(require(headerRef[15]).t.PDTjLN);
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.button;
+    if (buttonText == null) {
+      const intl = tmp2(tmp3[15]).intl;
+      buttonText = intl.string(tmp2(tmp3[15]).t.PDTjLN);
     }
-    obj4.text = buttonText;
-    obj4.onPress = function onPress() {
+    const obj3 = { variant: "primary", grow: true, text: null, onPress: null, disabled: null };
+    obj3[2] = buttonText;
+    obj3[3] = function onPress() {
       if (null != guild) {
         if (outer1_11.STEP_1 === closure_1) {
-          arr = arr.push(outer1_11.STEP_2);
-        } else if (outer1_11.STEP_2 === tmp) {
-          arr = arr.push(outer1_11.STEP_3);
-        } else if (null != callback) {
-          callback(guild);
+          arr = arr.push(tmp3.STEP_2);
+        } else if (tmp3.STEP_2 === tmp2) {
+          arr = arr.push(tmp3.STEP_3);
+        } else if (closure_0 != null) {
+          tmp4(tmp);
         }
       }
     };
-    obj4.disabled = disableNextStep;
-    obj3.children = callback(require(headerRef[14]).Button, obj4);
-    items3[1] = callback(hasItem, obj3);
-    obj.children = items3;
-    obj.children = closure_9(require(headerRef[13]).SafeAreaPaddingView, obj);
-    tmp14Result = tmp14(closure_5, obj);
-    const tmp15 = closure_5;
-    const tmp16 = closure_9;
-    const tmp19 = hasItem;
+    obj3[4] = disableNextStep;
+    obj2[1] = callback(tmp2(tmp3[14]).Button, obj3);
+    items3[1] = callback(hasItem, obj2);
+    obj[2] = items3;
+    obj[1] = closure_9(tmp2(tmp3[13]).SafeAreaPaddingView, obj);
+    tmp12Result = tmp12(closure_5, obj);
+    const tmp13 = closure_5;
+    const tmp14 = closure_9;
+    const tmp15 = hasItem;
   }
-  return tmp14Result;
+  return tmp12Result;
 };

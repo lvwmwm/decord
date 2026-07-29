@@ -1,78 +1,190 @@
-// Module ID: 14768
-// Function ID: 112390
+// Module ID: 14794
+// Function ID: 14795
 // Name: GiftPurchaseSKUView
-// Dependencies: [5, 57, 31, 27, 1850, 4210, 653, 1852, 33, 3, 1557, 8780, 566, 8021, 5779, 1873, 6279, 11864, 4133, 4506, 5792, 4576, 4161, 5200, 4578, 8753, 491, 6274, 5221, 8740, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 4234, 676, 1876, 21, 3, 1581, 8804, 589, 8045, 5797, 1897, 6300, 11888, 4157, 4529, 5810, 4598, 4185, 5222, 4600, 8777, 514, 6295, 5243, 8764, 2]
 // Exports: default
 
-// Module 14768 (GiftPurchaseSKUView)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14794 (GiftPurchaseSKUView)
+import addSku from "addSku";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "getBaseAnalyticsFields";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+import module_4529 from "module_4529";
+import { View } from "useMobileCollectiblesPurchaseSKU";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import closure_8 from "addSku";
 import { PriceSetAssignmentPurchaseTypes as closure_9 } from "ME";
 import { PremiumTypes } from "GuildFeatures";
-import jsxProd from "jsxProd";
-import importDefaultResult from "get ActivityIndicator";
+import jsxProd from "Stack";
 
-let closure_11;
 let closure_12;
-let require = arg1;
+let unpackModuleId;
+const require = arg1;
 function GiftPurchaseSKUView(selectedSkuId) {
   let giftMessage;
   let giftRecipientId;
-  let tmp12;
-  let tmp13;
+  let tmp16;
+  let tmp17;
   selectedSkuId = selectedSkuId.selectedSkuId;
   ({ giftRecipientId, giftMessage } = selectedSkuId);
+  let first;
+  let dependencyMap;
+  let currentUser;
+  let callback;
   let React;
   let memo;
+  let memo1;
   let closure_8;
   function _submitGiftPurchase() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = currentUser(tmp);
-    return obj(...arguments);
+    const self = this;
+    const tmp = currentUser(function*() {
+      if (c5 === 2) {
+        c5 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp3;
+              let message = tmp7;
+              let c3 = 1;
+              if (null == c5) {
+                outer1_13.error("Cannot proceed with purchase: collectibleProduct is undefined");
+                outer1_1(outer1_2[19]).show({ title: "Product Not Found", body: "The product information could not be loaded. Please try again." });
+                c3 = 0;
+                c5 = 3;
+                let obj1 = { value: null, done: true };
+                obj1[0] = undefined;
+                return obj1;
+              } else {
+                if (null != tmp43.googleSkuIds) {
+                  if (0 !== outer1_6.length) {
+                    c4 = 2;
+                    c5 = 1;
+                    const obj2 = { value: null, done: false };
+                    obj2[0] = outer1_8();
+                    return obj2;
+                  }
+                }
+                const _HermesInternal2 = HermesInternal;
+                outer1_13.error("No Google SKU IDs available for product " + tmp43.skuId);
+                let obj4 = outer1_1(outer1_2[19]);
+                obj4.show({ title: "Product Not Available", body: "This product is not available for purchase on Google Play." });
+                c3 = 0;
+                c5 = 3;
+                const obj3 = { value: null, done: true };
+                obj3[0] = undefined;
+                return obj3;
+              }
+            }
+          } else {
+            if (1 === tmp7) {
+              c3 = 0;
+              message = closure_2;
+              outer1_13.warn("Error creating gift purchase:", message);
+              obj1 = outer1_1(outer1_2[19]);
+              message = undefined;
+              if (message != null) {
+                message = message.message;
+              }
+              if (!message) {
+                const _JSON = JSON;
+                message = JSON.stringify(message);
+              }
+              obj4 = { title: "Gift Purchase Failed", body: null };
+              const _HermesInternal = HermesInternal;
+              obj4[1] = "Error: " + message;
+              obj1.show(obj4);
+              c5 = 3;
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              c3 = 0;
+            }
+            c3 = 0;
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp33) {
+          closure_2 = tmp33;
+          if (tmp4 === c3) {
+            c5 = tmp2;
+            throw tmp33;
+          } else {
+            c4 = tmp;
+          }
+        }
+      }
+    });
+    const _submitGiftPurchase = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
-  const rect = first(1557)();
-  let tmp = callback(React.useState(false), 2);
-  first = tmp[0];
-  const dependencyMap = tmp[1];
-  const currentUser = memo1.getCurrentUser();
+  const rect = first(1581)();
+  let obj = React;
+  const tmp4 = callback(React.useState(false), 2);
+  first = tmp4[0];
+  dependencyMap = tmp4[1];
+  currentUser = memo1.getCurrentUser();
   callback = React.useRef({});
-  let obj = selectedSkuId(8780);
-  const giftStyle = obj.useNativeGiftContext().giftStyle;
-  let obj1 = selectedSkuId(566);
+  let obj1 = selectedSkuId(8804);
+  const giftStyle = obj1.useNativeGiftContext().giftStyle;
+  let obj2 = selectedSkuId(589);
   let items = [closure_8];
-  const stateFromStores = obj1.useStateFromStores(items, () => closure_8.get(selectedSkuId));
-  let obj2 = selectedSkuId(8021);
-  const fetchCollectiblesProduct = obj2.useFetchCollectiblesProduct(selectedSkuId);
+  const stateFromStores = obj2.useStateFromStores(items, () => closure_8.get(selectedSkuId));
+  let obj3 = selectedSkuId(8045);
+  const fetchCollectiblesProduct = obj3.useFetchCollectiblesProduct(selectedSkuId);
   const product = fetchCollectiblesProduct.product;
   React = product;
   let isFetching = fetchCollectiblesProduct.isFetching;
   const items1 = [selectedSkuId];
   const effect = React.useEffect(() => {
     if (null != selectedSkuId) {
-      const collectiblesProduct = selectedSkuId(5779).fetchCollectiblesProduct(selectedSkuId);
-      const obj = selectedSkuId(5779);
+      const collectiblesProduct = selectedSkuId(5797).fetchCollectiblesProduct(tmp);
+      const obj = selectedSkuId(5797);
     }
   }, items1);
   const items2 = [product, currentUser, selectedSkuId];
   memo = React.useMemo(() => {
-    if (null != _undefined) {
-      if (null != _undefined.googleSkuIds) {
-        const googleSkuIds = _undefined.googleSkuIds;
+    if (null != c5) {
+      if (null != tmp.googleSkuIds) {
+        const googleSkuIds = tmp.googleSkuIds;
         if (obj.isPremium(currentUser, outer1_10.TIER_2)) {
-          let tmp = googleSkuIds[tmp12.MOBILE_PREMIUM_TIER_2];
+          let tmp2 = googleSkuIds[tmp10.MOBILE_PREMIUM_TIER_2];
         } else {
-          tmp = googleSkuIds[tmp12.MOBILE];
+          tmp2 = googleSkuIds[tmp10.MOBILE];
         }
-        if (null == tmp) {
-          const items = [tmp];
+        if (null == tmp2) {
+          const items = [tmp2];
           let values = items;
         } else {
           const _Object = Object;
-          values = Object.values(_undefined.googleSkuIds);
+          values = Object.values(tmp.googleSkuIds);
         }
         return values;
       }
@@ -88,42 +200,135 @@ function GiftPurchaseSKUView(selectedSkuId) {
   const items4 = [memo, first, memo1];
   const effect1 = React.useEffect(() => {
     function _loadGoogleSkus() {
-      // CreateGeneratorClosureLongIndex (0x67)
-      const obj = currentUser(tmp);
-      return obj(...arguments);
+      const self = this;
+      const tmp = currentUser(function*() {
+        if (c5 === 2) {
+          c5 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp6 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c5 = 2;
+            if (0 === ref) {
+              if (arg0 === 1) {
+                c5 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c5 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let closure_1 = tmp3;
+                let callback = tmp7;
+                if (null == outer1_7) {
+                  if (0 !== outer1_6.length) {
+                    if (!outer1_1) {
+                      outer1_2(true);
+                      let c3 = 1;
+                      let obj1 = callback(outer2_2[16]);
+                      ref = 2;
+                      c5 = 1;
+                      obj1 = { value: null, done: false };
+                      obj1[0] = obj1.loadInAppSkus(tmp27);
+                      return obj1;
+                    }
+                  }
+                }
+              }
+            } else {
+              if (1 === tmp7) {
+                c3 = 0;
+                callback = closure_2;
+                outer2_13.error("Unable to fetch product IDs from Google Play store:", callback);
+                outer1_2(false);
+              } else if (arg0 === 1) {
+                c5 = 3;
+                throw arg1;
+              } else if (arg0 !== 2) {
+                if (null != outer1_7) {
+                  ref.current[outer1_7] = true;
+                }
+                outer1_2(false);
+                c3 = 0;
+              }
+              c3 = 0;
+              c5 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+            c5 = 3;
+          } catch (tmp33) {
+            closure_2 = tmp33;
+            if (tmp4 === c3) {
+              c5 = tmp2;
+              throw tmp33;
+            } else {
+              ref = tmp;
+            }
+          }
+        }
+      });
+      const _loadGoogleSkus = tmp;
+      const apply = tmp.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     }
     !(function loadGoogleSkus() {
-      return _loadGoogleSkus(...arguments);
+      const self = this;
+      const apply = _loadGoogleSkus.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     })();
   }, items4);
-  let tmp10 = product;
+  let tmp14 = product;
   if (null == product) {
-    obj = { skuId: selectedSkuId, googleSkuIds: {} };
-    tmp10 = obj;
+    obj = { skuId: null, googleSkuIds: null };
+    obj[0] = selectedSkuId;
+    obj[1] = {};
+    tmp14 = obj;
   }
   obj = {
-    product: tmp10,
+    product: tmp14,
     onPurchaseComplete() {
-      first(4133).hideActionSheet();
+      first(4157).hideActionSheet();
     },
     onPurchaseError() {
-      outer1_13.error("Purchase error occurred");
+      logger.error("Purchase error occurred");
     },
     onPurchasePending() {
-      outer1_13.info("Purchase is pending");
+      logger.info("Purchase is pending");
     },
     giftParams: { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } }
   };
-  closure_8 = first(11864)(obj);
+  closure_8 = tmp(11888)(obj);
   const items5 = [product];
-  [tmp12, tmp13] = callback(React.useMemo(() => {
+  [tmp16, tmp17] = callback(obj.useMemo(() => {
     if (null == c5) {
       let items = ["Loading...", "Loading..."];
     } else {
-      items = [selectedSkuId(5792).getFormattedPriceForCollectiblesProduct(c5, true, true), ];
-      const obj = selectedSkuId(5792);
-      items[1] = selectedSkuId(5792).getFormattedPriceForCollectiblesProduct(c5, false, true);
-      const obj2 = selectedSkuId(5792);
+      items = [selectedSkuId(5810).getFormattedPriceForCollectiblesProduct(tmp, true, true), ];
+      const obj = selectedSkuId(5810);
+      items[1] = selectedSkuId(5810).getFormattedPriceForCollectiblesProduct(tmp, false, true);
+      const obj2 = selectedSkuId(5810);
     }
     return items;
   }, items5), 2);
@@ -133,98 +338,91 @@ function GiftPurchaseSKUView(selectedSkuId) {
   if (!isFetching) {
     isFetching = null == product;
   }
-  obj1 = { spacing: 24, style: obj2 };
+  obj1 = { spacing: 24, style: obj2, children: null };
   obj2 = { paddingTop: rect.top, paddingBottom: rect.bottom, paddingHorizontal: 12 };
-  const obj3 = { variant: "text-md/medium", color: "text-overlay-light" };
   let name;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     name = stateFromStores.name;
   }
-  const items6 = ["Gifting ", name, " to ", giftRecipientId, " ", "\n", "Regular price: ", tmp13, " ", "\n", "Premium price: ", tmp12, " ", "\n"];
+  const items6 = ["Gifting ", name, " to ", giftRecipientId, " ", "\n", "Regular price: ", tmp17, " ", "\n", "Premium price: ", tmp16, " ", "\n"];
   let str = "No message";
   if (null != giftMessage) {
     str = "No message";
     if ("" !== giftMessage) {
-      const _HermesInternal = HermesInternal;
+      let _HermesInternal = HermesInternal;
       str = "Message: " + giftMessage;
     }
   }
   items6[14] = str;
-  obj3.children = items6;
-  const items7 = [callback2(selectedSkuId(4161).Text, obj3), , ];
-  const obj4 = {};
-  const obj5 = { variant: "primary" };
+  const items7 = [closure_11(selectedSkuId(4185).Text, { variant: "text-md/medium", color: "text-overlay-light", children: items6 }), , ];
   let str4 = "Send Gift";
   if (isFetching) {
     str4 = "Loading...";
   }
-  obj5.text = str4;
-  obj5.onPress = function submitGiftPurchase() {
-    return _submitGiftPurchase(...arguments);
-  };
-  obj5.disabled = isFetching;
-  obj4.children = callback3(selectedSkuId(4578).Button, obj5);
-  items7[1] = callback3(selectedSkuId(5200).Card, obj4);
-  const obj6 = {};
-  const obj7 = { variant: "text-md/medium", color: "text-overlay-light" };
+  obj3 = { children: tmp21(tmp7(4600).Button, obj4) };
+  items7[1] = closure_12(selectedSkuId(5222).Card, obj3);
+  const obj5 = { children: null };
   const items8 = ["Select style: ", giftStyle];
-  obj7.children = items8;
-  const items9 = [callback2(selectedSkuId(4161).Text, obj7), callback3(first(8753), {})];
-  obj6.children = items9;
-  items7[2] = callback2(selectedSkuId(5200).Card, obj6);
-  obj1.children = items7;
-  return callback2(selectedSkuId(4576).Stack, obj1);
+  const items9 = [closure_11(selectedSkuId(4185).Text, { variant: "text-md/medium", color: "text-overlay-light", children: items8 }), closure_12(first(8777), {})];
+  obj5[0] = items9;
+  items7[2] = closure_11(selectedSkuId(5222).Card, obj5);
+  obj1[2] = items7;
+  return closure_11(selectedSkuId(4598).Stack, obj1);
 }
 function SimpleRequestOTPActionSheet(giftMessage) {
   let giftRecipientId;
   let requestType;
   let selectedSkuId;
   ({ selectedSkuId, requestType, giftRecipientId } = giftMessage);
-  let obj = require(491) /* v1 */;
+  let _require;
+  let obj = _require(514);
   const v4Result = obj.v4();
-  require = v4Result;
+  _require = v4Result;
   [][0] = v4Result;
   if ("giftSku" === requestType) {
     if (null != selectedSkuId) {
       if (null != giftRecipientId) {
-        obj = {
-          basePurchaseAnalytics: tmp2,
-          onClose() {
+        obj = { basePurchaseAnalytics: null, onClose: null, setCurrentAnalyticsStep: null, children: null };
+        obj[0] = tmp4;
+        obj[1] = function onClose() {
 
-                },
-          setCurrentAnalyticsStep(PLAN_SELECT) {
-
-                }
         };
-        obj = { selectedSkuId, giftRecipientId, giftMessage: giftMessage.giftMessage };
-        obj.children = callback3(GiftPurchaseSKUView, obj);
-        let tmp4Result = callback3(require(8780) /* importDefaultResult1 */.NativeGiftContextProvider, obj);
+        obj[2] = function setCurrentAnalyticsStep() {
+
+        };
+        obj = { selectedSkuId: null, giftRecipientId: null, giftMessage: null };
+        obj[0] = selectedSkuId;
+        obj[1] = giftRecipientId;
+        obj[2] = giftMessage.giftMessage;
+        obj[3] = callback2(GiftPurchaseSKUView, obj);
+        let tmp6Result = callback2(tmp(8804).NativeGiftContextProvider, obj);
+        let tmp8 = callback2;
       }
-      const obj1 = { children: tmp4Result };
-      return callback3(require(5221) /* Background */.BottomSheet, obj1);
+      const obj1 = { children: null };
+      obj1[0] = tmp6Result;
+      return tmp8(tmp(5243).BottomSheet, obj1);
     }
   }
-  const obj2 = {};
-  const items = [callback3(require(4161) /* Text */.Text, { variant: "text-lg/bold", color: "text-feedback-warning", children: "Gift purchasing is the only supported feature on Android in this version." }), ];
-  const obj3 = { variant: "text-md/normal", color: "text-feedback-warning" };
+  tmp8 = callback2;
+  const items = [callback2(_require(4185).Text, { variant: "text-lg/bold", color: "text-feedback-warning", children: "Gift purchasing is the only supported feature on Android in this version." }), ];
   let str = "none";
   if (null != requestType) {
     str = requestType;
   }
+  const obj2 = { children: null };
   const items1 = ["Request type: ", str];
-  obj3.children = items1;
-  items[1] = closure_11(require(4161) /* Text */.Text, obj3);
-  obj2.children = items;
-  tmp4Result = closure_11(View, obj2);
+  items[1] = closure_11(_require(4185).Text, { variant: "text-md/normal", color: "text-feedback-warning", children: items1 });
+  obj2[0] = items;
+  tmp6Result = tmp6(View, obj2);
 }
-({ jsxs: closure_11, jsx: closure_12 } = jsxProd);
-importDefaultResult = new importDefaultResult("PaymentFlowTest.android");
-const result = require("result").fileFinishedImporting("modules/billing/native/otp/SimpleRequestOTPActionSheet.tsx");
+({ jsxs: unpackModuleId, jsx: closure_12 } = jsxProd);
+const tmp3 = new require("get ActivityIndicator")("PaymentFlowTest.android");
+const result = require("noop").fileFinishedImporting("modules/billing/native/otp/SimpleRequestOTPActionSheet.tsx");
 
 export default function SimpleCreateOTPActionSheetWrapper(arg0) {
-  let obj = { skuIDs: [], activeSubscription: null };
+  let obj = { skuIDs: [], activeSubscription: null, children: null };
   obj = {};
   const merged = Object.assign(arg0);
-  obj.children = callback3(SimpleRequestOTPActionSheet, obj);
-  return callback3(require(8740) /* NativePaymentContextProvider */.NativePaymentContextProvider, obj);
+  obj[2] = callback2(SimpleRequestOTPActionSheet, obj);
+  return callback2(require(8764) /* NativePaymentContextProvider */.NativePaymentContextProvider, obj);
 };

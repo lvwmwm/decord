@@ -1,48 +1,34 @@
-// Module ID: 15633
-// Function ID: 120357
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5, 31, 1348, 1908, 1838, 3793, 1850, 15634, 653, 33, 4165, 689, 1456, 1392, 5198, 1273, 1212, 21, 4004, 566, 15635, 7614, 15636, 1921, 4161, 15638, 5536, 7611, 4576, 5483, 3877, 2]
+// Module ID: 15668
+// Function ID: 15669
+// Name: WebhookItem
+// Dependencies: [5, 19, 1372, 1932, 1862, 3817, 1874, 15669, 676, 21, 4189, 712, 1480, 1416, 5220, 1297, 1236, 11, 4028, 589, 15670, 7637, 15671, 3901, 1945, 4185, 15673, 5554, 7634, 4598, 5501, 2]
 // Exports: default
 
-// Module 15633 (_isNativeReflectConstruct)
-import result from "result";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_createForOfIteratorHelperLoose";
-import useNavigation from "useNavigation";
-import getAvatarURL from "getAvatarURL";
-import asyncGeneratorStep from "asyncGeneratorStep";
-import importAllResult from "TableRowGroupTitle";
-import closure_10 from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_createForOfIteratorHelperLoose";
-import closure_15 from "_isNativeReflectConstruct";
-import closure_16 from "_isNativeReflectConstruct";
-import closure_17 from "_isNativeReflectConstruct";
+// Module 15668 (WebhookItem)
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import importAllResult from "initialize";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import comparator from "comparator";
+import closure_8 from "comparator";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import closure_10 from "getUncachedChannelPermissions";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import handleWebhookCreateUpdate from "handleWebhookCreateUpdate";
 import ME from "ME";
-import jsxProd from "Stack";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "RowButtonWrapper";
+import createCacheKey from "createCacheKey";
 
-let closure_11;
-let closure_12;
+let closure_14;
+let closure_15;
+let closure_16;
+let closure_17;
 let closure_18;
 let closure_19;
 let closure_20;
-let closure_21;
-let closure_22;
-let closure_23;
-let closure_24;
-let closure_25;
+let closure_6;
+let error;
+let map1;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function WebhookItem(avatar) {
   let user;
   let webhookId;
@@ -53,301 +39,355 @@ function WebhookItem(avatar) {
   const token = avatar.token;
   ({ user, webhookId } = avatar);
   const webhookType = avatar.webhookType;
-  let obj = avatar(guildId[17]);
-  const navigation = obj.useNavigation();
+  let navigation;
+  let obj = avatar(guildId[12]);
+  navigation = obj.useNavigation();
   const items = [webhookId, webhookType, avatar, channel, guildId, name, token, navigation];
   const items1 = [webhookId, avatar];
-  const callback = importAllResult.useCallback(() => {
-    navigation.push(outer1_19.EDIT_WEBHOOK, { webhookId, webhookType, avatar, name, channel, guildId, token });
+  const callback = token.useCallback(() => {
+    navigation.push(outer1_14.EDIT_WEBHOOK, { webhookId, webhookType, avatar, name, channel, guildId, token });
   }, items);
-  const memo = importAllResult.useMemo(() => {
-    let obj = avatar(guildId[18]);
-    obj = { id: webhookId, avatar, discriminator: outer1_20 };
-    return obj.makeSource(avatar(guildId[18]).getUserAvatarURL(obj));
+  const memo = token.useMemo(() => {
+    let obj = avatar(guildId[13]);
+    obj = { id: webhookId, avatar, discriminator: outer1_15 };
+    return obj.makeSource(avatar(guildId[13]).getUserAvatarURL(obj));
   }, items1);
-  obj = { icon: callback4(avatar(guildId[20]).Avatar, { source: memo }), arrow: true, label: name };
+  obj = { icon: null, arrow: true, label: null, subLabel: null, onPress: null };
+  obj[0] = callback(avatar(guildId[15]).Avatar, { source: memo });
+  obj[2] = name;
   if (null != user) {
-    const intl2 = avatar(guildId[21]).intl;
-    obj = { timestamp: channel(guildId[22]).extractTimestamp(webhookId) };
-    const obj6 = channel(guildId[22]);
-    obj.user = channel(guildId[23]).getUserTag(user);
-    let formatToPlainStringResult = intl2.formatToPlainString(avatar(guildId[21]).t["7EcUbr"], obj);
-    const obj7 = channel(guildId[23]);
+    const intl2 = tmp(tmp2[16]).intl;
+    obj = { timestamp: null, user: null };
+    obj[0] = channel(tmp2[17]).extractTimestamp(webhookId);
+    const obj6 = channel(tmp2[17]);
+    obj[1] = channel(tmp2[18]).getUserTag(user);
+    let formatToPlainStringResult = intl2.formatToPlainString(tmp(tmp2[16]).t["7EcUbr"], obj);
+    const obj7 = channel(tmp2[18]);
   } else {
-    const intl = avatar(guildId[21]).intl;
-    const obj1 = { timestamp: channel(guildId[22]).extractTimestamp(webhookId) };
-    formatToPlainStringResult = intl.formatToPlainString(avatar(guildId[21]).t["7mv59O"], obj1);
-    const obj4 = channel(guildId[22]);
+    const intl = tmp(tmp2[16]).intl;
+    const obj1 = { timestamp: null };
+    obj1[0] = channel(tmp2[17]).extractTimestamp(webhookId);
+    formatToPlainStringResult = intl.formatToPlainString(tmp(tmp2[16]).t["7mv59O"], obj1);
+    const obj4 = channel(tmp2[17]);
   }
-  obj.subLabel = formatToPlainStringResult;
-  obj.onPress = callback;
-  return callback4(avatar(guildId[19]).TableRow, obj);
+  obj[3] = formatToPlainStringResult;
+  obj[4] = callback;
+  return callback(avatar(guildId[14]).TableRow, obj);
 }
 function ConnectedWebhookItem(arg0) {
   let importDefault;
   let require;
   ({ channelId: require, user: importDefault } = arg0);
-  let obj = Object.create(null);
-  obj.channelId = 0;
-  obj.user = 0;
-  const merged = Object.assign(arg0, obj);
-  obj = require(566) /* initialize */;
-  const items = [closure_16];
+  const merged = Object.assign(arg0, Object.create(null));
+  let obj = require(589) /* initialize */;
+  const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let id;
-    if (null != id) {
+    if (id != null) {
       id = id.id;
     }
-    return outer1_16.getUser(id);
+    return outer1_11.getUser(id);
   });
-  const items1 = [closure_10];
+  const items1 = [ensureGuildLoaded];
   obj = {};
-  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => outer1_10.getChannel(closure_0));
+  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => outer1_5.getChannel(closure_0));
   const merged1 = Object.assign(merged);
-  obj["user"] = stateFromStores;
-  obj["channel"] = stateFromStores1;
-  return callback4(WebhookItem, obj);
+  obj.user = stateFromStores;
+  obj.channel = stateFromStores1;
+  return callback(WebhookItem, obj);
 }
 function CreateWebhookButton(guild) {
   guild = guild.guild;
   let channel = guild.channel;
-  let obj = guild(navigation[17]);
+  let navigation;
+  let stateFromStores;
+  let obj = guild(navigation[12]);
   navigation = obj.useNavigation();
-  let items = [closure_13, closure_15];
-  const stateFromStores = guild(navigation[24]).useStateFromStores(items, () => {
+  let items = [closure_8, closure_10];
+  stateFromStores = guild(navigation[19]).useStateFromStores(items, () => {
     if (null != channel) {
       return channel;
     } else {
-      const channels = outer1_13.getChannels(guild.id);
+      const channels = outer1_8.getChannels(guild.id);
       const items = [];
-      HermesBuiltin.arraySpread(channels[outer1_12], HermesBuiltin.arraySpread(channels[outer1_11], 0));
-      const found = items.find((channel) => outer2_15.can(outer2_21.MANAGE_WEBHOOKS, channel.channel));
+      HermesBuiltin.arraySpread(channels[outer1_7], HermesBuiltin.arraySpread(channels[outer1_6], 0));
+      const found = items.find((channel) => closure_10.can(constants.MANAGE_WEBHOOKS, channel.channel));
       channel = undefined;
-      if (null != found) {
+      if (found != null) {
         channel = found.channel;
       }
       return channel;
     }
   });
-  // CreateGeneratorClosureLongIndex (0x67)
   const items1 = [stateFromStores, guild.id, navigation];
-  const callback = importAllResult.useCallback(callback3(tmp), items1);
-  obj = {};
-  obj = { IconComponent: guild(navigation[27]).WebhookPlusIcon };
-  obj.icon = callback4(guild(navigation[26]).RowButton.Icon, obj);
-  const intl = guild(navigation[21]).intl;
-  obj.label = intl.string(guild(navigation[21]).t["nrO/HH"]);
-  obj.disabled = null == stateFromStores;
-  obj.onPress = callback;
-  return callback4(guild(navigation[26]).RowButton, obj);
-}
-({ GUILD_SELECTABLE_CHANNELS_KEY: closure_11, GUILD_VOCAL_CHANNELS_KEY: closure_12 } = _isNativeReflectConstruct);
-({ HelpdeskArticles: closure_18, ChannelSettingsSections: closure_19, NON_USER_BOT_DISCRIMINATOR: closure_20, Permissions: closure_21, WebhookTypes: closure_22 } = ME);
-({ jsx: closure_23, Fragment: closure_24, jsxs: closure_25 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
-_createForOfIteratorHelperLoose.form = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.content = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_PADDING };
-let obj1 = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16, paddingHorizontal: require("_createForOfIteratorHelperLoose").modules.mobile.TABLE_ROW_PADDING };
-_createForOfIteratorHelperLoose.hint = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(_createForOfIteratorHelperLoose);
-const tmp6 = ((PureComponent) => {
-  class WebhooksOverview {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, WebhooksOverview);
-      obj = outer1_6(WebhooksOverview);
-      tmp2 = outer1_5;
-      if (outer1_29()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
+  const callback = importAllResult.useCallback(stateFromStores(function*() {
+    if (c4 === 2) {
+      c4 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
       } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
+        return { value: "HermesInternal", done: null };
       }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(WebhooksOverview, PureComponent);
-  let obj = {
-    key: "getHelpText",
-    value() {
-      if (this.props.webhookType === outer1_22.CHANNEL_FOLLOWER) {
-        const intl2 = WebhooksOverview(outer1_2[21]).intl;
-        let obj = { helpdeskArticle: outer1_1(outer1_2[28]).getArticleURL(outer1_18.CHANNEL_FOLLOWING) };
-        let formatResult = intl2.format(WebhooksOverview(outer1_2[21]).t["5u+aV1"], obj);
-        const obj4 = outer1_1(outer1_2[28]);
-      } else {
-        const intl = WebhooksOverview(outer1_2[21]).intl;
-        obj = { articleURL: outer1_1(outer1_2[28]).getArticleURL(outer1_18.WEBHOOKS_INTRODUCTION) };
-        formatResult = intl.format(WebhooksOverview(outer1_2[21]).t["3hX7G+"], obj);
-        const obj2 = outer1_1(outer1_2[28]);
-      }
-      return formatResult;
-    }
-  };
-  let items = [obj, , ];
-  obj = {
-    key: "renderWebhooks",
-    value() {
-      let webhookType;
-      let webhooks;
-      const self = this;
-      ({ webhooks, webhookType } = this.props);
-      let found = webhooks;
-      if (null != webhookType) {
-        found = webhooks.filter((type) => type.type === webhookType);
-      }
-      let obj = {};
-      const helpText = self.getHelpText();
-      obj = { variant: "text-sm/medium", color: "text-muted", children: helpText };
-      const items = [outer1_23(WebhooksOverview(outer1_2[29]).Text, obj), , ];
-      let tmp4 = webhookType === outer1_22.INCOMING;
-      if (tmp4) {
-        obj = { guild: self.props.guild, channel: self.props.channel };
-        tmp4 = outer1_23(outer1_32, obj);
-      }
-      items[1] = tmp4;
-      if (0 === found.length) {
-        const obj1 = { Illustration: WebhooksOverview(outer1_2[30]).WebhookEmpty };
-        if (webhookType === outer1_22.CHANNEL_FOLLOWER) {
-          const intl2 = WebhooksOverview(outer1_2[21]).intl;
-          let stringResult = intl2.string(WebhooksOverview(outer1_2[21]).t.dkHRkE);
-        } else {
-          const intl = WebhooksOverview(outer1_2[21]).intl;
-          stringResult = intl.string(WebhooksOverview(outer1_2[21]).t["4JAVI+"]);
+    } else {
+      try {
+        c4 = 2;
+        if (0 === id) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let arr = tmp5;
+            let closure_1 = tmp2;
+            let user;
+            if (null != id) {
+              let obj1 = outer1_1(outer1_2[20]);
+              id = 1;
+              c4 = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = obj1.create(outer1_0.id, id.id);
+              return obj1;
+            } else {
+              c4 = 3;
+            }
+          }
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          user = arg1;
+          if (null != user) {
+            const obj2 = { webhookId: null, webhookType: null, avatar: null, name: null, channel: null, guildId: null, token: null };
+            obj2[0] = user.id;
+            obj2[1] = user.type;
+            const avatar = user.avatar;
+            user = avatar;
+            if (avatar == null) {
+              user = undefined;
+            }
+            obj2[2] = user;
+            obj2[3] = user.name;
+            obj2[4] = id;
+            obj2[5] = user.id;
+            obj2[6] = user.token;
+            arr = arr.push(outer1_14.EDIT_WEBHOOK, obj2);
+          }
         }
-        obj1.title = stringResult;
-        outer1_23(WebhooksOverview(outer1_2[20]).EmptyState, obj1);
-        const tmp10 = outer1_23;
-      } else {
-        const obj2 = {
-          hasIcons: true,
-          children: found.map((type) => {
-              let avatar;
-              let channel_id;
-              let guild_id;
-              let id;
-              let name;
-              let token;
-              let user;
-              ({ id, avatar } = type);
-              const obj = { webhookId: id, webhookType: type.type };
-              let tmp3;
-              ({ name, user, token, guild_id, channel_id } = type);
-              if (null != avatar) {
-                tmp3 = avatar;
-              }
-              obj.avatar = tmp3;
-              obj.name = name;
-              obj.user = user;
-              obj.channelId = channel_id;
-              obj.token = token;
-              obj.guildId = guild_id;
-              return outer2_23(outer2_31, obj, id);
-            })
-        };
-        items[2] = outer1_23(WebhooksOverview(outer1_2[31]).TableRowGroup, obj2);
-        obj.children = items;
-        return outer1_25(outer1_24, obj);
+        c4 = 3;
+        obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } catch (tmp18) {
+        c4 = tmp;
+        throw tmp18;
       }
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "render",
-    value() {
-      const tmp = outer1_26(this.context);
-      let obj = {};
-      obj = { style: tmp.form, contentContainerStyle: this.props.contentContainerStyle };
-      obj = { spacing: outer1_1(outer1_2[16]).space.PX_24, style: tmp.content, children: this.renderWebhooks() };
-      obj.children = outer1_23(WebhooksOverview(outer1_2[33]).Stack, obj);
-      const items = [outer1_23(WebhooksOverview(outer1_2[32]).Form, obj), outer1_23(WebhooksOverview(outer1_2[34]).NavScrim, {})];
-      obj.children = items;
-      return outer1_25(outer1_24, obj);
+  }), items1);
+  obj = { icon: null, label: null, disabled: null, onPress: null };
+  obj = { IconComponent: null };
+  obj[0] = guild(navigation[22]).WebhookPlusIcon;
+  obj[0] = callback(guild(navigation[21]).RowButton.Icon, obj);
+  const intl = guild(navigation[16]).intl;
+  obj[1] = intl.string(guild(navigation[16]).t["nrO/HH"]);
+  obj[2] = null == stateFromStores;
+  obj[3] = callback;
+  return callback(guild(navigation[21]).RowButton, obj);
+}
+let c4 = importAllResult;
+({ GUILD_SELECTABLE_CHANNELS_KEY: closure_6, GUILD_VOCAL_CHANNELS_KEY: error } = comparator);
+({ HelpdeskArticles: map1, ChannelSettingsSections: closure_14, NON_USER_BOT_DISCRIMINATOR: closure_15, Permissions: closure_16, WebhookTypes: closure_17 } = ME);
+({ jsx: closure_18, Fragment: closure_19, jsxs: closure_20 } = jsxProd);
+createCacheKey = { form: null, content: null, hint: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingTop: require("Themes").space.PX_16, paddingHorizontal: require("Themes").modules.mobile.TABLE_ROW_PADDING };
+let obj1 = { paddingTop: require("Themes").space.PX_16, paddingHorizontal: require("Themes").modules.mobile.TABLE_ROW_PADDING };
+createCacheKey[2] = { paddingHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_16 };
+createCacheKey = createCacheKey.createLegacyClassComponentStyles(createCacheKey);
+const PureComponent = importAllResult.PureComponent;
+class WebhooksOverview extends PureComponent {
+}
+const prototype = WebhooksOverview.prototype;
+prototype["getHelpText"] = function getHelpText() {
+  if (this.props.webhookType === constants2.CHANNEL_FOLLOWER) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    let obj = { helpdeskArticle: null };
+    obj[0] = importDefault(1945).getArticleURL(constants.CHANNEL_FOLLOWING);
+    let formatResult = intl2.format(require(1236) /* getSystemLocale */.t["5u+aV1"], obj);
+    const obj4 = importDefault(1945);
+  } else {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj = { articleURL: null };
+    obj[0] = importDefault(1945).getArticleURL(constants.WEBHOOKS_INTRODUCTION);
+    formatResult = intl.format(require(1236) /* getSystemLocale */.t["3hX7G+"], obj);
+    const obj2 = importDefault(1945);
+  }
+  return formatResult;
+};
+prototype["renderWebhooks"] = function renderWebhooks() {
+  let webhookType;
+  let webhooks;
+  const self = this;
+  ({ webhooks, webhookType } = this.props);
+  let found = webhooks;
+  if (null != webhookType) {
+    found = webhooks.filter((type) => type.type === webhookType);
+  }
+  let dkHRkE = dependencyMap;
+  const helpText = self.getHelpText();
+  const items = [callback(webhookType(4185).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
+  let tmp4Result = webhookType === constants2.INCOMING;
+  if (tmp4Result) {
+    let obj = { guild: null, channel: null };
+    obj[0] = self.props.guild;
+    obj[1] = self.props.channel;
+    tmp4Result = tmp4(CreateWebhookButton, obj);
+  }
+  items[1] = tmp4Result;
+  if (0 === found.length) {
+    obj = { Illustration: null, title: null };
+    obj[0] = tmp5(15673).WebhookEmpty;
+    if (webhookType === constants2.CHANNEL_FOLLOWER) {
+      const intl2 = tmp5(1236).intl;
+      dkHRkE = tmp5(1236).t.dkHRkE;
+      let stringResult = intl2.string(dkHRkE);
+    } else {
+      const intl = tmp5(1236).intl;
+      stringResult = intl.string(tmp5(1236).t["4JAVI+"]);
     }
-  };
-  items[2] = obj;
-  return callback(WebhooksOverview, items);
-})(importAllResult.PureComponent);
-let closure_27 = tmp6;
-tmp6.contextType = require("ManaContext").ThemeContext;
-let closure_28 = [];
-let obj2 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/integration_settings/native/IntegrationsSettingsWebhooksOverview.tsx");
+    obj[1] = stringResult;
+    tmp4Result = tmp4(tmp5(1297).EmptyState, obj);
+  } else {
+    obj = { hasIcons: true, children: null };
+    obj[1] = found.map((type) => {
+      let avatar;
+      let channel_id;
+      let guild_id;
+      let id;
+      let name;
+      let token;
+      let user;
+      ({ id, avatar } = type);
+      const obj = { webhookId: id, webhookType: type.type, avatar: null, name: null, user: null, channelId: null, token: null, guildId: null };
+      ({ name, user, token, guild_id, channel_id } = type);
+      obj[2] = avatar;
+      obj[3] = name;
+      obj[4] = user;
+      obj[5] = channel_id;
+      obj[6] = token;
+      obj[7] = guild_id;
+      return closure_18(closure_23, obj, id);
+    });
+    const obj1 = { children: null };
+    items[2] = tmp4(tmp5(5554).TableRowGroup, obj);
+    obj1[0] = items;
+    return closure_20(closure_19, obj1);
+  }
+};
+prototype["render"] = function render() {
+  const tmp = createCacheKey(this.context);
+  let obj = { children: null };
+  obj = { style: tmp.form, contentContainerStyle: this.props.contentContainerStyle, children: null };
+  obj = { spacing: null, style: null, children: null };
+  obj[0] = importDefault(712).space.PX_24;
+  obj[1] = tmp.content;
+  obj[2] = this.renderWebhooks();
+  obj[2] = callback(require(4598) /* Stack */.Stack, obj);
+  const items = [callback(require(7634) /* Form */.Form, obj), callback(require(5501) /* NavScrim */.NavScrim, {})];
+  obj[0] = items;
+  return callback2(closure_19, obj);
+};
+WebhooksOverview.contextType = require("ManaContext").ThemeContext;
+let closure_26 = [];
+let obj2 = { paddingHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_16 };
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/integration_settings/native/IntegrationsSettingsWebhooksOverview.tsx");
 
 export default function ConnectedWebhooksOverview(channelId) {
   let contentContainerStyle;
   let webhookType;
   channelId = channelId.channelId;
-  let guildId = channelId.guildId;
-  guildId = undefined;
-  channelId = undefined;
+  const guildId = channelId.guildId;
+  let stateFromStores;
+  let id;
+  let id1;
   ({ contentContainerStyle, webhookType } = channelId);
-  let obj = channelId(stateFromStores[24]);
-  const items = [closure_10];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_10.getChannel(channelId));
-  const items1 = [closure_14];
-  const stateFromStores1 = channelId(stateFromStores[24]).useStateFromStores(items1, () => {
+  let obj = channelId(stateFromStores[19]);
+  const items = [ensureGuildLoaded];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_5.getChannel(channelId));
+  const items1 = [createGuildRecordFromRust];
+  const stateFromStores1 = channelId(stateFromStores[19]).useStateFromStores(items1, () => {
     let guild_id;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       guild_id = stateFromStores.guild_id;
     }
-    if (null == guild_id) {
+    if (guild_id == null) {
       guild_id = guildId;
     }
-    return outer1_14.getGuild(guild_id);
+    return outer1_9.getGuild(guild_id);
   });
-  let id;
-  if (null != stateFromStores1) {
+  id = undefined;
+  if (stateFromStores1 != null) {
     id = stateFromStores1.id;
   }
-  if (null != id) {
-    guildId = id;
+  if (id == null) {
+    id = guildId;
   }
-  let id1;
-  if (null != stateFromStores) {
+  id1 = undefined;
+  if (stateFromStores != null) {
     id1 = stateFromStores.id;
   }
-  if (null != id1) {
-    channelId = id1;
+  if (id1 == null) {
+    id1 = channelId;
   }
-  let obj2 = channelId(stateFromStores[24]);
-  const items2 = [closure_17];
-  const items3 = [guildId, channelId];
-  const stateFromStoresArray = channelId(stateFromStores[24]).useStateFromStoresArray(items2, () => {
-    if (null != guildId) {
-      if (null != channelId) {
-        let webhooksForChannel = outer1_17.getWebhooksForChannel(guildId, channelId);
+  let obj2 = channelId(stateFromStores[19]);
+  const tmp = channelId;
+  const tmp2 = stateFromStores;
+  const items2 = [handleWebhookCreateUpdate];
+  const items3 = [id, id1];
+  const stateFromStoresArray = channelId(stateFromStores[19]).useStateFromStoresArray(items2, () => {
+    if (null != id) {
+      if (null != id1) {
+        let webhooksForChannel = outer1_12.getWebhooksForChannel(tmp, tmp2);
       }
       return webhooksForChannel;
     }
-    if (null != guildId) {
-      webhooksForChannel = outer1_17.getWebhooksForGuild(guildId);
+    if (null != id) {
+      webhooksForChannel = outer1_12.getWebhooksForGuild(tmp);
     } else {
-      webhooksForChannel = outer1_28;
+      webhooksForChannel = outer1_26;
     }
   });
-  const effect = importAllResult.useEffect(() => {
-    if (null != guildId) {
-      if (null != channelId) {
-        const forChannel = guildId(stateFromStores[25]).fetchForChannel(guildId, channelId);
-        const obj2 = guildId(stateFromStores[25]);
+  const effect = id1.useEffect(() => {
+    if (null != id) {
+      if (null != id1) {
+        const forChannel = guildId(stateFromStores[20]).fetchForChannel(tmp, tmp2);
+        const obj2 = guildId(stateFromStores[20]);
       }
     }
-    if (null != guildId) {
-      const forGuild = guildId(stateFromStores[25]).fetchForGuild(guildId);
-      const obj = guildId(stateFromStores[25]);
+    if (null != id) {
+      const forGuild = guildId(stateFromStores[20]).fetchForGuild(tmp);
+      const obj = guildId(stateFromStores[20]);
     }
   }, items3);
-  let tmp7 = null;
+  let tmp9 = null;
   if (null != stateFromStores1) {
-    obj = { guild: stateFromStores1, channel: stateFromStores, webhooks: stateFromStoresArray, contentContainerStyle, webhookType };
-    tmp7 = callback4(closure_27, obj);
+    obj = { guild: null, channel: null, webhooks: null, contentContainerStyle: null, webhookType: null };
+    obj[0] = stateFromStores1;
+    obj[1] = stateFromStores;
+    obj[2] = stateFromStoresArray;
+    obj[3] = contentContainerStyle;
+    obj[4] = webhookType;
+    tmp9 = callback(WebhooksOverview, obj);
   }
-  return tmp7;
+  return tmp9;
 };

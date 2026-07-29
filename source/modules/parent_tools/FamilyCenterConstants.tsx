@@ -1,10 +1,10 @@
-// Module ID: 5776
-// Function ID: 50253
+// Module ID: 5794
+// Function ID: 5795
 // Name: items
-// Dependencies: [664, 484, 1212, 2199, 2]
+// Dependencies: [687, 507, 1236, 2223, 2]
 // Exports: ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER, FAMILY_CENTER_REQUEST_QR_CODE_URL, PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER
 
-// Module 5776 (items)
+// Module 5794 (items)
 import getAuthenticationPath from "getAuthenticationPath";
 
 const require = arg1;
@@ -12,63 +12,64 @@ const result = 30 * require("set").Millis.SECOND;
 const result1 = 5 * require("set").Millis.MINUTE;
 const result2 = 5 * require("set").Millis.MINUTE;
 getAuthenticationPath = { USER_ADD: 1, [1]: "USER_ADD", GUILD_ADD: 2, [2]: "GUILD_ADD", USER_INTERACTION: 3, [3]: "USER_INTERACTION", GUILD_INTERACTION: 4, [4]: "GUILD_INTERACTION", USER_CALLED: 5, [5]: "USER_CALLED", TOTAL_VOICE_MINUTES: 6, [6]: "TOTAL_VOICE_MINUTES", PURCHASES: 7, [7]: "PURCHASES", GIFTS: 8, [8]: "GIFTS" };
-const items = [getAuthenticationPath.USER_INTERACTION, ];
-getAuthenticationPath = {
-  priority: 100,
-  tooltipHeader() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2199).kvTgWP);
-  },
-  tooltipDescription(arg0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const string = intl.string;
-    const tmp = importDefault(2199);
-    if (arg0) {
-      let stringResult = string(tmp.w4wmnb);
-    } else {
-      stringResult = string(tmp.foTzbd);
+const items = [
+  getAuthenticationPath.USER_INTERACTION,
+  {
+    priority: 100,
+    tooltipHeader() {
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(importDefault(2223).kvTgWP);
+    },
+    tooltipDescription(arg0) {
+      const intl = require(1236) /* getSystemLocale */.intl;
+      const string = intl.string;
+      const tmp = importDefault(2223);
+      if (arg0) {
+        let stringResult = string(tmp.w4wmnb);
+      } else {
+        stringResult = string(tmp.foTzbd);
+      }
+      return stringResult;
+    },
+    sectionHeader(count) {
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.formatToPlainString(importDefault(2223)["4T3zWT"], { count });
+    },
+    sectionDescription(arg0) {
+      const intl = require(1236) /* getSystemLocale */.intl;
+      const string = intl.string;
+      const tmp = importDefault(2223);
+      if (arg0) {
+        let stringResult = string(tmp.w4wmnb);
+      } else {
+        stringResult = string(tmp.foTzbd);
+      }
+      return stringResult;
+    },
+    timestampFormatter() {
+      const obj = { today: null, yesterday: null, days: null };
+      const intl = require(1236) /* getSystemLocale */.intl;
+      obj[0] = intl.string(importDefault(2223).fLBUx7);
+      const intl2 = require(1236) /* getSystemLocale */.intl;
+      obj[1] = intl2.string(importDefault(2223).cHHgxI);
+      obj[2] = importDefault(2223).qvKjp8;
+      return obj;
     }
-    return stringResult;
-  },
-  sectionHeader(count) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(importDefault(2199)["4T3zWT"], { count });
-  },
-  sectionDescription(arg0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const string = intl.string;
-    const tmp = importDefault(2199);
-    if (arg0) {
-      let stringResult = string(tmp.w4wmnb);
-    } else {
-      stringResult = string(tmp.foTzbd);
-    }
-    return stringResult;
-  },
-  timestampFormatter() {
-    const obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.today = intl.string(importDefault(2199).fLBUx7);
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.yesterday = intl2.string(importDefault(2199).cHHgxI);
-    obj.days = importDefault(2199).qvKjp8;
-    return obj;
   }
-};
-items[1] = getAuthenticationPath;
+];
 const items1 = [items, , , , , , , ];
 const items2 = [
   getAuthenticationPath.USER_CALLED,
   {
     priority: 200,
     tooltipHeader() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2199).D7Sngz);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(importDefault(2223).D7Sngz);
     },
     tooltipDescription(arg0) {
-      const intl = require(1212) /* getSystemLocale */.intl;
+      const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2199);
+      const tmp = importDefault(2223);
       if (arg0) {
         let stringResult = string(tmp.aiAhnQ);
       } else {
@@ -77,13 +78,13 @@ const items2 = [
       return stringResult;
     },
     sectionHeader(count) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(importDefault(2199)["0GE4Ni"], { count });
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.formatToPlainString(importDefault(2223)["0GE4Ni"], { count });
     },
     sectionDescription(arg0) {
-      const intl = require(1212) /* getSystemLocale */.intl;
+      const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2199);
+      const tmp = importDefault(2223);
       if (arg0) {
         let stringResult = string(tmp.aiAhnQ);
       } else {
@@ -92,12 +93,12 @@ const items2 = [
       return stringResult;
     },
     timestampFormatter() {
-      const obj = {};
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj.today = intl.string(importDefault(2199).IHd5cZ);
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      obj.yesterday = intl2.string(importDefault(2199).wOsfxv);
-      obj.days = importDefault(2199).oCk8c4;
+      const obj = { today: null, yesterday: null, days: null };
+      const intl = require(1236) /* getSystemLocale */.intl;
+      obj[0] = intl.string(importDefault(2223).IHd5cZ);
+      const intl2 = require(1236) /* getSystemLocale */.intl;
+      obj[1] = intl2.string(importDefault(2223).wOsfxv);
+      obj[2] = importDefault(2223).oCk8c4;
       return obj;
     }
   }
@@ -108,13 +109,13 @@ const items3 = [
   {
     priority: 300,
     tooltipHeader() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2199).kIcKAj);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(importDefault(2223).kIcKAj);
     },
     tooltipDescription(arg0) {
-      const intl = require(1212) /* getSystemLocale */.intl;
+      const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2199);
+      const tmp = importDefault(2223);
       if (arg0) {
         let stringResult = string(tmp.BkVb1X);
       } else {
@@ -123,13 +124,13 @@ const items3 = [
       return stringResult;
     },
     sectionHeader(count) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(importDefault(2199)["TEvo+H"], { count });
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.formatToPlainString(importDefault(2223)["TEvo+H"], { count });
     },
     sectionDescription(arg0) {
-      const intl = require(1212) /* getSystemLocale */.intl;
+      const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2199);
+      const tmp = importDefault(2223);
       if (arg0) {
         let stringResult = string(tmp.BkVb1X);
       } else {
@@ -138,12 +139,12 @@ const items3 = [
       return stringResult;
     },
     timestampFormatter() {
-      const obj = {};
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj.today = intl.string(importDefault(2199).JUHIYZ);
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      obj.yesterday = intl2.string(importDefault(2199).GiswUW);
-      obj.days = importDefault(2199)["fwQgE/"];
+      const obj = { today: null, yesterday: null, days: null };
+      const intl = require(1236) /* getSystemLocale */.intl;
+      obj[0] = intl.string(importDefault(2223).JUHIYZ);
+      const intl2 = require(1236) /* getSystemLocale */.intl;
+      obj[1] = intl2.string(importDefault(2223).GiswUW);
+      obj[2] = importDefault(2223)["fwQgE/"];
       return obj;
     }
   }
@@ -154,13 +155,13 @@ const items4 = [
   {
     priority: 400,
     tooltipHeader() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2199).uav9Bh);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(importDefault(2223).uav9Bh);
     },
     tooltipDescription(arg0) {
-      const intl = require(1212) /* getSystemLocale */.intl;
+      const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2199);
+      const tmp = importDefault(2223);
       if (arg0) {
         let stringResult = string(tmp.LVNgTD);
       } else {
@@ -169,13 +170,13 @@ const items4 = [
       return stringResult;
     },
     sectionHeader(count) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(importDefault(2199)["7feG7T"], { count });
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.formatToPlainString(importDefault(2223)["7feG7T"], { count });
     },
     sectionDescription(arg0) {
-      const intl = require(1212) /* getSystemLocale */.intl;
+      const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2199);
+      const tmp = importDefault(2223);
       if (arg0) {
         let stringResult = string(tmp.LVNgTD);
       } else {
@@ -191,13 +192,13 @@ const items5 = [
   {
     priority: 500,
     tooltipHeader() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2199).CcrbCw);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(importDefault(2223).CcrbCw);
     },
     tooltipDescription(arg0) {
-      const intl = require(1212) /* getSystemLocale */.intl;
+      const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2199);
+      const tmp = importDefault(2223);
       if (arg0) {
         let stringResult = string(tmp.BLgIrk);
       } else {
@@ -206,13 +207,13 @@ const items5 = [
       return stringResult;
     },
     sectionHeader(count) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(importDefault(2199).rcPInc, { count });
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.formatToPlainString(importDefault(2223).rcPInc, { count });
     },
     sectionDescription(arg0) {
-      const intl = require(1212) /* getSystemLocale */.intl;
+      const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2199);
+      const tmp = importDefault(2223);
       if (arg0) {
         let stringResult = string(tmp.BLgIrk);
       } else {
@@ -228,20 +229,20 @@ const items6 = [
   {
     priority: 175,
     tooltipHeader() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2199).eo4Fxh);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(importDefault(2223).eo4Fxh);
     },
     tooltipDescription() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2199)["O/AElu"]);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(importDefault(2223)["O/AElu"]);
     },
     sectionHeader(count) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(importDefault(2199).eGFWUd, { count });
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.formatToPlainString(importDefault(2223).eGFWUd, { count });
     },
     sectionDescription() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2199)["O/AElu"]);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(importDefault(2223)["O/AElu"]);
     }
   }
 ];
@@ -251,13 +252,13 @@ const items7 = [
   {
     priority: 150,
     tooltipHeader() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2199).NMYKsh);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(importDefault(2223).NMYKsh);
     },
     tooltipDescription(arg0) {
-      const intl = require(1212) /* getSystemLocale */.intl;
+      const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2199);
+      const tmp = importDefault(2223);
       if (arg0) {
         let stringResult = string(tmp.cqIdqZ);
       } else {
@@ -266,13 +267,13 @@ const items7 = [
       return stringResult;
     },
     sectionHeader(amount) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(importDefault(2199).FPViWL, { amount });
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.formatToPlainString(importDefault(2223).FPViWL, { amount });
     },
     sectionDescription(arg0) {
-      const intl = require(1212) /* getSystemLocale */.intl;
+      const intl = require(1236) /* getSystemLocale */.intl;
       const string = intl.string;
-      const tmp = importDefault(2199);
+      const tmp = importDefault(2223);
       if (arg0) {
         let stringResult = string(tmp.cqIdqZ);
       } else {
@@ -288,285 +289,33 @@ const items8 = [
   {
     priority: 600,
     tooltipHeader() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2199).ULUspo);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(importDefault(2223).ULUspo);
     },
     tooltipDescription() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2199).nH8vlc);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(importDefault(2223).nH8vlc);
     },
     sectionHeader(amount) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.formatToPlainString(importDefault(2199)["0R6I/b"], { amount });
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.formatToPlainString(importDefault(2223)["0R6I/b"], { amount });
     },
     sectionDescription() {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      return intl.string(importDefault(2199).nH8vlc);
+      const intl = require(1236) /* getSystemLocale */.intl;
+      return intl.string(importDefault(2223).nH8vlc);
     }
   }
 ];
 items1[7] = items8;
-const obj1 = {
-  priority: 200,
-  tooltipHeader() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2199).D7Sngz);
-  },
-  tooltipDescription(arg0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const string = intl.string;
-    const tmp = importDefault(2199);
-    if (arg0) {
-      let stringResult = string(tmp.aiAhnQ);
-    } else {
-      stringResult = string(tmp["4ufgdz"]);
-    }
-    return stringResult;
-  },
-  sectionHeader(count) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(importDefault(2199)["0GE4Ni"], { count });
-  },
-  sectionDescription(arg0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const string = intl.string;
-    const tmp = importDefault(2199);
-    if (arg0) {
-      let stringResult = string(tmp.aiAhnQ);
-    } else {
-      stringResult = string(tmp["4ufgdz"]);
-    }
-    return stringResult;
-  },
-  timestampFormatter() {
-    const obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.today = intl.string(importDefault(2199).IHd5cZ);
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.yesterday = intl2.string(importDefault(2199).wOsfxv);
-    obj.days = importDefault(2199).oCk8c4;
-    return obj;
-  }
-};
-const obj2 = {
-  priority: 300,
-  tooltipHeader() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2199).kIcKAj);
-  },
-  tooltipDescription(arg0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const string = intl.string;
-    const tmp = importDefault(2199);
-    if (arg0) {
-      let stringResult = string(tmp.BkVb1X);
-    } else {
-      stringResult = string(tmp.mpHHfa);
-    }
-    return stringResult;
-  },
-  sectionHeader(count) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(importDefault(2199)["TEvo+H"], { count });
-  },
-  sectionDescription(arg0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const string = intl.string;
-    const tmp = importDefault(2199);
-    if (arg0) {
-      let stringResult = string(tmp.BkVb1X);
-    } else {
-      stringResult = string(tmp.mpHHfa);
-    }
-    return stringResult;
-  },
-  timestampFormatter() {
-    const obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.today = intl.string(importDefault(2199).JUHIYZ);
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.yesterday = intl2.string(importDefault(2199).GiswUW);
-    obj.days = importDefault(2199)["fwQgE/"];
-    return obj;
-  }
-};
-const obj3 = {
-  priority: 400,
-  tooltipHeader() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2199).uav9Bh);
-  },
-  tooltipDescription(arg0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const string = intl.string;
-    const tmp = importDefault(2199);
-    if (arg0) {
-      let stringResult = string(tmp.LVNgTD);
-    } else {
-      stringResult = string(tmp.TA8GFt);
-    }
-    return stringResult;
-  },
-  sectionHeader(count) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(importDefault(2199)["7feG7T"], { count });
-  },
-  sectionDescription(arg0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const string = intl.string;
-    const tmp = importDefault(2199);
-    if (arg0) {
-      let stringResult = string(tmp.LVNgTD);
-    } else {
-      stringResult = string(tmp.TA8GFt);
-    }
-    return stringResult;
-  }
-};
-const obj4 = {
-  priority: 500,
-  tooltipHeader() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2199).CcrbCw);
-  },
-  tooltipDescription(arg0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const string = intl.string;
-    const tmp = importDefault(2199);
-    if (arg0) {
-      let stringResult = string(tmp.BLgIrk);
-    } else {
-      stringResult = string(tmp.sSJauZ);
-    }
-    return stringResult;
-  },
-  sectionHeader(count) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(importDefault(2199).rcPInc, { count });
-  },
-  sectionDescription(arg0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const string = intl.string;
-    const tmp = importDefault(2199);
-    if (arg0) {
-      let stringResult = string(tmp.BLgIrk);
-    } else {
-      stringResult = string(tmp.sSJauZ);
-    }
-    return stringResult;
-  }
-};
-const obj5 = {
-  priority: 175,
-  tooltipHeader() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2199).eo4Fxh);
-  },
-  tooltipDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2199)["O/AElu"]);
-  },
-  sectionHeader(count) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(importDefault(2199).eGFWUd, { count });
-  },
-  sectionDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2199)["O/AElu"]);
-  }
-};
-const obj6 = {
-  priority: 150,
-  tooltipHeader() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2199).NMYKsh);
-  },
-  tooltipDescription(arg0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const string = intl.string;
-    const tmp = importDefault(2199);
-    if (arg0) {
-      let stringResult = string(tmp.cqIdqZ);
-    } else {
-      stringResult = string(tmp["85PtWu"]);
-    }
-    return stringResult;
-  },
-  sectionHeader(amount) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(importDefault(2199).FPViWL, { amount });
-  },
-  sectionDescription(arg0) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const string = intl.string;
-    const tmp = importDefault(2199);
-    if (arg0) {
-      let stringResult = string(tmp.cqIdqZ);
-    } else {
-      stringResult = string(tmp["85PtWu"]);
-    }
-    return stringResult;
-  }
-};
-const obj7 = {
-  priority: 600,
-  tooltipHeader() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2199).ULUspo);
-  },
-  tooltipDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2199).nH8vlc);
-  },
-  sectionHeader(amount) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.formatToPlainString(importDefault(2199)["0R6I/b"], { amount });
-  },
-  sectionDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2199).nH8vlc);
-  }
-};
 const wrapPathsResult = getAuthenticationPath.wrapPaths(Object.freeze({ FAMILY_CENTER_SETTINGS: "/family-center/settings", FAMILY_CENTER_MY_FAMILY: "/family-center/my-family" }), [":", "?", "@"]);
-const obj8 = { CHECK: 0, [0]: "CHECK", X: 1, [1]: "X" };
-const obj9 = { GENERIC_ERROR: 0, [0]: "GENERIC_ERROR", INELIGIBLE_FOR_FAMILY_CENTER: 1, [1]: "INELIGIBLE_FOR_FAMILY_CENTER", PENDING_REQUEST_EXISTS: 2, [2]: "PENDING_REQUEST_EXISTS", MAX_CONNECTIONS_REACHED: 3, [3]: "MAX_CONNECTIONS_REACHED" };
-const map = new Map(items1);
-const obj10 = { [290000]: obj9.INELIGIBLE_FOR_FAMILY_CENTER, [290002]: obj9.MAX_CONNECTIONS_REACHED, [290005]: obj9.PENDING_REQUEST_EXISTS };
-const obj11 = {
-  header() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2199).nGX8Co);
-  },
-  description() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2199).Uss2dn);
-  },
-  icon: obj8.X
-};
-const obj12 = {
-  header() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2199).tu0MRv);
-  },
-  description(email) {
-    email = email.email;
-    if (null != email) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      const obj = { email };
-      let formatToPlainStringResult = intl2.formatToPlainString(importDefault(2199).xNEkdx, obj);
-    } else {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      formatToPlainStringResult = intl.string(importDefault(2199).Xyjnwn);
-    }
-    return formatToPlainStringResult;
-  },
-  icon: obj8.CHECK
-};
-const obj13 = {
+getAuthenticationPath = { CHECK: 0, [0]: "CHECK", X: 1, [1]: "X" };
+const obj1 = { GENERIC_ERROR: 0, [0]: "GENERIC_ERROR", INELIGIBLE_FOR_FAMILY_CENTER: 1, [1]: "INELIGIBLE_FOR_FAMILY_CENTER", PENDING_REQUEST_EXISTS: 2, [2]: "PENDING_REQUEST_EXISTS", MAX_CONNECTIONS_REACHED: 3, [3]: "MAX_CONNECTIONS_REACHED" };
+({ INELIGIBLE_FOR_FAMILY_CENTER: obj5[290000], MAX_CONNECTIONS_REACHED: obj5[290002], PENDING_REQUEST_EXISTS: obj5[290005] } = obj1);
+const obj5 = {
   header(isAdult) {
-    const intl = require(1212) /* getSystemLocale */.intl;
+    const intl = require(1236) /* getSystemLocale */.intl;
     const string = intl.string;
-    const tmp = importDefault(2199);
+    const tmp = importDefault(2223);
     if (isAdult.isAdult) {
       let stringResult = string(tmp.bS5x94);
     } else {
@@ -575,30 +324,61 @@ const obj13 = {
     return stringResult;
   },
   description(isAdult) {
-    const intl = require(1212) /* getSystemLocale */.intl;
+    const intl = require(1236) /* getSystemLocale */.intl;
     const format = intl.format;
-    const tmp = importDefault(2199);
+    const tmp = importDefault(2223);
     if (isAdult.isAdult) {
-      let obj = { link: "https://support.discord.com/hc/articles/14155043715735" };
-      let formatResult = format(tmp.GKzqWi, obj);
+      let formatResult = format(tmp.GKzqWi, { link: "https://support.discord.com/hc/articles/14155043715735" });
     } else {
-      obj = { link: "https://support.discord.com/hc/articles/14155060633623" };
-      formatResult = format(tmp["69F+eS"], obj);
+      formatResult = format(tmp["69F+eS"], { link: "https://support.discord.com/hc/articles/14155060633623" });
     }
     return formatResult;
   },
-  icon: obj8.X
+  icon: getAuthenticationPath.X
 };
-const obj14 = {
+const map = new Map(items1);
+const obj2 = { 290000: null, 290002: null, 290005: null };
+const obj3 = {
   header() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2199).W9JLJh);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2223).nGX8Co);
   },
   description() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.format(importDefault(2199).On5iRI, { link: "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731" });
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2223).Uss2dn);
   },
-  icon: obj8.X
+  icon: getAuthenticationPath.X
+};
+const obj4 = {
+  header() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2223).tu0MRv);
+  },
+  description(email) {
+    email = email.email;
+    if (null != email) {
+      const intl2 = require(1236) /* getSystemLocale */.intl;
+      const obj = { email: null };
+      obj[0] = email;
+      let formatToPlainStringResult = intl2.formatToPlainString(importDefault(2223).xNEkdx, obj);
+    } else {
+      const intl = require(1236) /* getSystemLocale */.intl;
+      formatToPlainStringResult = intl.string(importDefault(2223).Xyjnwn);
+    }
+    return formatToPlainStringResult;
+  },
+  icon: getAuthenticationPath.CHECK
+};
+const obj6 = {
+  header() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(importDefault(2223).W9JLJh);
+  },
+  description() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.format(importDefault(2223).On5iRI, { link: "https://support.discord.com/hc/requests/new?ticket_form_id=360000029731" });
+  },
+  icon: getAuthenticationPath.X
 };
 const result3 = require("getSystemLocale").fileFinishedImporting("modules/parent_tools/FamilyCenterConstants.tsx");
 
@@ -625,32 +405,32 @@ export const FamilyCenterPageLocation = { SIDENAV: "SIDENAV", SETTINGS: "SETTING
 export const FamilyCenterPageLocationAnalyticsIds = { SIDENAV: 0, [0]: "SIDENAV", SETTINGS: 1, [1]: "SETTINGS" };
 export const FamilyCenterAction = { TabChange: 0, [0]: "TabChange", ShowQRCodeModal: 1, [1]: "ShowQRCodeModal", RevealQRCode: 2, [2]: "RevealQRCode", ScanQRCodeButton: 3, [3]: "ScanQRCodeButton", ScanQRCode: 4, [4]: "ScanQRCode", LoadMore: 5, [5]: "LoadMore", SelectTeen: 6, [6]: "SelectTeen", HideQRCode: 7, [7]: "HideQRCode", NufConsentGateLinkCodeError: 8, [8]: "NufConsentGateLinkCodeError", ShareLink: 9, [9]: "ShareLink", CopyLink: 10, [10]: "CopyLink" };
 export const ACTION_TO_TEXT = map;
-export const FamilyCenterIconType = obj8;
-export const FamilyCenterFailureCode = obj9;
-export const FAMILY_CENTER_ERROR_CODE_TO_FAILURE = obj10;
-export const FAMILY_CENTER_LINK_REQUEST_ERROR_EXPERIENCES = { [obj9.GENERIC_ERROR]: obj11, [obj9.PENDING_REQUEST_EXISTS]: obj12, [obj9.MAX_CONNECTIONS_REACHED]: obj13, [obj9.INELIGIBLE_FOR_FAMILY_CENTER]: obj14 };
+export const FamilyCenterIconType = getAuthenticationPath;
+export const FamilyCenterFailureCode = obj1;
+export const FAMILY_CENTER_ERROR_CODE_TO_FAILURE = obj2;
+export const FAMILY_CENTER_LINK_REQUEST_ERROR_EXPERIENCES = { [obj1.GENERIC_ERROR]: obj3, [obj1.PENDING_REQUEST_EXISTS]: obj4, [obj1.MAX_CONNECTIONS_REACHED]: obj5, [obj1.INELIGIBLE_FOR_FAMILY_CENTER]: obj6 };
 export const CONNECT_GUARDIAN_BOTTOM_SHEET_KEY = "ConnectGuardianBottomSheet";
 export const PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER = () => {
-  const obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.seconds = intl.string(importDefault(2199).CJdoee);
-  obj.minutes = importDefault(2199).InzMn3;
-  obj.hours = importDefault(2199).ErkYCI;
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.yesterday = intl2.string(importDefault(2199).GvfssA);
-  obj.days = importDefault(2199).pWig18;
-  obj.date = importDefault(2199).MP3khg;
+  const obj = { seconds: null, minutes: null, hours: null, yesterday: null, days: null, date: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(importDefault(2223).CJdoee);
+  obj[1] = importDefault(2223).InzMn3;
+  obj[2] = importDefault(2223).ErkYCI;
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl2.string(importDefault(2223).GvfssA);
+  obj[4] = importDefault(2223).pWig18;
+  obj[5] = importDefault(2223).MP3khg;
   return obj;
 };
 export const ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER = () => {
-  const obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.seconds = intl.string(importDefault(2199).Bqsamd);
-  obj.minutes = importDefault(2199).kX3wJg;
-  obj.hours = importDefault(2199).J18GbG;
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.yesterday = intl2.string(importDefault(2199).Ln9zMn);
-  obj.days = importDefault(2199).WRtySz;
-  obj.date = importDefault(2199).Y3ZYtM;
+  const obj = { seconds: null, minutes: null, hours: null, yesterday: null, days: null, date: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(importDefault(2223).Bqsamd);
+  obj[1] = importDefault(2223).kX3wJg;
+  obj[2] = importDefault(2223).J18GbG;
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl2.string(importDefault(2223).Ln9zMn);
+  obj[4] = importDefault(2223).WRtySz;
+  obj[5] = importDefault(2223).Y3ZYtM;
   return obj;
 };

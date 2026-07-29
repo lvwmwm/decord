@@ -1,37 +1,72 @@
-// Module ID: 16279
-// Function ID: 126117
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4212, 1907, 3982, 653, 6669, 4979, 1198, 686, 5112, 2]
+// Module ID: 16314
+// Function ID: 16315
+// Name: handleGuildCreate
+// Dependencies: [4236, 1931, 4006, 676, 5134, 6690, 5001, 1222, 709, 2]
 
-// Module 16279 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import { findFirstVoiceChannelId } from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+// Module 16314 (handleGuildCreate)
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
+import handleConnectionOpen from "handleConnectionOpen";
+import { findFirstVoiceChannelId } from "handleConnectionOpen";
+import closure_6 from "handleConnectionOpen";
 import ME from "ME";
-import tmp3 from "AutomaticLifecycleManager";
+import "initialize";
 
-let closure_12;
-let closure_13;
-let closure_14;
-let closure_15;
+let c10;
+let c9;
+let error;
+let metroImportAll;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+({ ChannelTypes: error, Routes: metroImportAll, ME: c9, NULL_STRING_GUILD_ID: c10 } = ME);
+class SelectedChannelManager extends tmp3 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.actions = { GUILD_CREATE: applyArgumentsResult.handleGuildCreate, CHANNEL_CREATE: applyArgumentsResult.handleChannelCreate, LOGOUT: applyArgumentsResult.handleLogout };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-({ ChannelTypes: closure_12, Routes: closure_13, ME: closure_14, NULL_STRING_GUILD_ID: closure_15 } = ME);
-tmp3 = new tmp3();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/channel/SelectedChannelManager.tsx");
+const prototype = SelectedChannelManager.prototype;
+prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
+  guild = guild.guild;
+  const channelId = store.getChannelId(closure_9);
+  const voiceChannelId = store.getVoiceChannelId();
+  if (guild.id === channelId) {
+    require(6690) /* transitionToGuild */.transitionToGuild(guild.id);
+    const obj = require(6690) /* transitionToGuild */;
+  }
+  let tmp6 = guild.id === voiceChannelId;
+  if (tmp6) {
+    tmp6 = false !== guild.unavailable;
+  }
+  if (tmp6) {
+    tmp6 = null == voiceChannelId;
+  }
+  if (tmp6) {
+    const voiceChannel = importDefault(5001).selectVoiceChannel(findFirstVoiceChannelId(guild.id));
+    const obj2 = importDefault(5001);
+  }
+};
+prototype["handleChannelCreate"] = function handleChannelCreate(channel) {
+  channel = channel.channel;
+  if (channel.type === constants.GROUP_DM) {
+    const originChannelId = channel.originChannelId;
+    const channelId = store.getChannelId(closure_10);
+    if (tmp) {
+      require(1222) /* transitionTo */.transitionTo(closure_8.CHANNEL(closure_9, channel.id));
+      const obj = require(1222) /* transitionTo */;
+    }
+    const obj3 = store;
+    tmp = null == guildId.getGuildId() && null != originChannelId && originChannelId === channelId;
+    if (tmp7) {
+      const voiceChannel = importDefault(5001).selectVoiceChannel(channel.id, videoEnabled.isVideoEnabled());
+      const obj2 = importDefault(5001);
+    }
+    tmp7 = null != originChannelId && originChannelId === store.getVoiceChannelId();
+  }
+};
+prototype["handleLogout"] = function handleLogout() {
+  importDefault(709).dispatch({ type: "VOICE_CHANNEL_SELECT", channelId: null, guildId: null, video: false, currentVoiceChannelId: null, joinVoiceId: null });
+};
+const selectedChannelManager = new SelectedChannelManager();
+const result = require("handleConnectionOpen").fileFinishedImporting("modules/channel/SelectedChannelManager.tsx");
 
-export default tmp3;
+export default selectedChannelManager;

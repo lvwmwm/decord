@@ -1,58 +1,56 @@
-// Module ID: 10931
-// Function ID: 84698
+// Module ID: 10955
+// Function ID: 10956
 // Name: getShouldShowAppAuthPrompt
-// Dependencies: [5101, 5502, 5505, 2]
+// Dependencies: [5123, 5520, 5523, 2]
 // Exports: getShouldShowAppAuthPrompt
 
-// Module 10931 (getShouldShowAppAuthPrompt)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { FetchState } from "_isNativeReflectConstruct";
+// Module 10955 (getShouldShowAppAuthPrompt)
+import recomputeFromAppTokens from "recomputeFromAppTokens";
+import { FetchState } from "recomputeFromAppTokens";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/application_account_linking/native/getShouldShowAppAuthPrompt.tsx");
+const result = require("tokensToAppTokensMap").fileFinishedImporting("modules/application_account_linking/native/getShouldShowAppAuthPrompt.tsx");
 
-export const getShouldShowAppAuthPrompt = function getShouldShowAppAuthPrompt(applicationFromMessage) {
-  if (null == applicationFromMessage) {
+export const getShouldShowAppAuthPrompt = function getShouldShowAppAuthPrompt(application) {
+  if (null == application) {
     return false;
   } else {
-    const authorizationApp = require(5502) /* getAuthorizationApp */.getAuthorizationApp(applicationFromMessage);
+    let response = dependencyMap;
+    const authorizationApp = require(5520) /* getAuthorizationApp */.getAuthorizationApp(application);
     if (null == authorizationApp) {
       return false;
     } else {
       let prop;
-      if (null != authorizationApp) {
+      if (authorizationApp != null) {
         prop = authorizationApp.connectionEntrypointUrl;
       }
       if (null != prop) {
         let parentId;
-        if (null != authorizationApp) {
+        if (authorizationApp != null) {
           parentId = authorizationApp.parentId;
         }
-        if (null == parentId) {
+        if (parentId == null) {
           let id;
-          if (null != authorizationApp) {
+          if (authorizationApp != null) {
             id = authorizationApp.id;
           }
           parentId = id;
         }
         if (null == parentId) {
           return tmp4;
-        } else if (authStore.getFetchStateForApplication(parentId) === FetchState.NOT_FETCHED) {
+        } else if (fetchStateForApplication.getFetchStateForApplication(parentId) === FetchState.NOT_FETCHED) {
           const items = [parentId];
-          const response = importDefault(5505).fetch(items);
+          response = importDefault(5523).fetch(items);
           let flag2 = false;
-          const obj = importDefault(5505);
+          const obj2 = importDefault(5523);
         } else {
-          let tmp9 = authStore.getFetchStateForApplication(parentId) === FetchState.FETCHED;
-          if (tmp9) {
-            tmp9 = null != authStore.getNewestTokenForApplication(parentId);
-          }
-          flag2 = !tmp9;
+          flag2 = !(obj.getFetchStateForApplication(parentId) === tmp5.FETCHED && null != obj.getNewestTokenForApplication(parentId));
+          const tmp6 = obj.getFetchStateForApplication(parentId) === tmp5.FETCHED && null != obj.getNewestTokenForApplication(parentId);
         }
       } else {
         return false;
       }
     }
-    const obj2 = require(5502) /* getAuthorizationApp */;
+    const obj3 = require(5520) /* getAuthorizationApp */;
   }
 };

@@ -1,22 +1,22 @@
-// Module ID: 15773
-// Function ID: 121515
+// Module ID: 15808
+// Function ID: 15809
 // Name: ChannelContent
-// Dependencies: [31, 27, 10263, 4361, 33, 4165, 477, 15768, 4658, 15774, 4161, 4687, 7606, 15073, 2]
+// Dependencies: [19, 17, 10284, 4386, 21, 4189, 500, 15803, 4680, 15809, 4185, 4709, 7629, 15106, 2]
 // Exports: default
 
-// Module 15773 (ChannelContent)
-import result from "result";
+// Module 15808 (ChannelContent)
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth";
 import { UnreadSetting } from "ReadStateTypes";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
 import set from "set";
 import set from "hairlineWidth";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function ChannelContent(arg0) {
   let channel;
@@ -35,196 +35,165 @@ function ChannelContent(arg0) {
   let unread;
   ({ subtitle, resolvedUnreadSetting, locked, muted, lastMessageTimestampString, channel, channelCategoryName, mentionCount, mentionBadge, isSubscriptionGated } = arg0);
   ({ name, unread, connected, needSubscriptionToAccess } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  let tmp3 = null != channel;
-  if (tmp3) {
+  const tmp = createCacheKey();
+  let tmp9Result = null != channel;
+  if (tmp9Result) {
     if (!locked) {
-      locked = importDefault(4658)(channel);
+      locked = tmp2(4680)(channel);
     }
-    tmp3 = locked;
+    tmp9Result = locked;
   }
-  if (null != channel) {
+  if (channel != null) {
     let isNSFWResult = channel.isNSFW();
   }
   const isValidElementResult = validElement.isValidElement(subtitle);
-  let tmp8 = null != lastMessageTimestampString;
-  let tmp9 = tmp8;
-  if (tmp8) {
-    tmp9 = null == mentionBadge;
+  let obj = null != lastMessageTimestampString;
+  let tmp9Result3 = obj;
+  if (obj) {
+    tmp9Result3 = null == mentionBadge;
   }
-  let obj = { style: tmp.channelContent };
-  obj = { style: tmp.channelContainer };
-  obj = {};
+  obj = { style: tmp.channelContent, children: null };
+  obj = { style: tmp.channelContainer, children: null };
   const items = [tmp.leftBox, ];
-  const obj1 = {};
   let str = "center";
   if (isValidElementResult) {
     str = "space-between";
   }
-  obj1.justifyContent = str;
-  items[1] = obj1;
-  obj.style = items;
-  const obj2 = {};
-  const obj3 = { flexDirection: "row", paddingRight: null, alignItems: "center" };
-  let num2 = 0;
-  if (tmp9) {
-    num2 = 30;
+  const obj1 = { style: items, children: null };
+  items[1] = { justifyContent: str };
+  let num = 0;
+  if (tmp9Result3) {
+    num = 30;
   }
-  obj3.paddingRight = num2;
-  obj2.style = obj3;
-  const obj4 = { title: name, muted, unread };
-  const tmp10 = callback;
-  const tmp11 = View;
-  const tmp12 = closure_8;
-  const tmp13 = View;
-  const tmp14 = closure_8;
-  const tmp15 = View;
-  const tmp16 = closure_8;
-  const tmp17 = View;
-  const tmp18 = callback;
-  const tmp2 = importDefault(15768)();
-  if (null == resolvedUnreadSetting) {
+  const obj2 = { style: { flexDirection: "row", paddingRight: num, alignItems: "center" }, children: null };
+  const obj3 = { title: name, muted, unread, resolvedUnreadSetting: null, connected: null };
+  const tmp4 = importDefault(15803)();
+  if (resolvedUnreadSetting == null) {
     resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
   }
-  obj4.resolvedUnreadSetting = resolvedUnreadSetting;
-  obj4.connected = connected;
-  const items1 = [tmp18(importDefault(15774), obj4), , ];
-  let tmp21 = null;
+  obj3[3] = resolvedUnreadSetting;
+  obj3[4] = connected;
+  const items1 = [closure_7(importDefault(15809), obj3), , ];
+  tmp9Result = null;
   if (null != channelCategoryName) {
-    const obj5 = { variant: "text-xs/bold", color: "text-muted" };
-    const obj6 = { marginRight: 4 };
-    obj5.style = obj6;
-    obj5.children = channelCategoryName;
-    tmp21 = callback(require(4161) /* Text */.Text, obj5);
+    const obj4 = { variant: "text-xs/bold", color: "text-muted", style: null, children: null };
+    obj4[2] = { marginRight: 4 };
+    obj4[3] = channelCategoryName;
+    tmp9Result = tmp9(require(4185) /* Text */.Text, obj4);
   }
-  items1[1] = tmp21;
-  let tmp26Result = tmp3;
-  if (!tmp3) {
-    tmp26Result = isNSFWResult;
+  items1[1] = tmp9Result;
+  let tmp11Result = tmp9Result;
+  if (!tmp9Result) {
+    tmp11Result = isNSFWResult;
   }
-  if (tmp26Result) {
-    const obj7 = {};
+  if (tmp11Result) {
     const items2 = [tmp.channelTraits, ];
-    const obj8 = {};
-    let num6 = 1;
-    if (tmp3) {
-      num6 = 1;
+    let num3 = 1;
+    if (tmp9Result) {
+      num3 = 1;
       if (isNSFWResult) {
-        num6 = 2;
+        num3 = 2;
       }
     }
-    obj8.maxWidth = 14 * num6;
-    items2[1] = obj8;
-    obj7.style = items2;
-    if (tmp3) {
-      const obj9 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
-      tmp3 = callback(require(4687) /* LockIcon */.LockIcon, obj9);
+    const obj5 = { style: null, children: null };
+    const obj6 = { maxWidth: null };
+    obj6[0] = 14 * num3;
+    items2[1] = obj6;
+    obj5[0] = items2;
+    if (tmp9Result) {
+      const obj7 = { size: "xxs", color: "icon-muted", style: null };
+      obj7[2] = tmp.channelTraitIcon;
+      tmp9Result = tmp9(require(4709) /* LockIcon */.LockIcon, obj7);
     }
-    const items3 = [tmp3, , ];
+    const items3 = [tmp9Result, , ];
     if (isNSFWResult) {
-      const obj10 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
-      isNSFWResult = callback(require(7606) /* WarningIcon */.WarningIcon, obj10);
+      const obj8 = { size: "xxs", color: "icon-muted", style: null };
+      obj8[2] = tmp.channelTraitIcon;
+      isNSFWResult = tmp9(require(7629) /* WarningIcon */.WarningIcon, obj8);
     }
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
-      const obj11 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = callback(importDefault(15073), obj11);
+      const obj9 = { locked: null, isInMainTabsExperiment: true };
+      obj9[0] = needSubscriptionToAccess;
+      isSubscriptionGated = tmp9(tmp2(15106), obj9);
     }
     items3[2] = isSubscriptionGated;
-    obj7.children = items3;
-    tmp26Result = closure_8(View, obj7);
-    const tmp26 = closure_8;
-    const tmp27 = View;
+    obj5[1] = items3;
+    tmp11Result = tmp11(tmp10, obj5);
   }
-  items1[2] = tmp26Result;
-  obj2.children = items1;
-  const items4 = [tmp16(tmp17, obj2), ];
-  let tmp38Result = null;
+  items1[2] = tmp11Result;
+  obj2[1] = items1;
+  const items4 = [closure_8(View, obj2), ];
+  let tmp9Result1 = null;
   if (isValidElementResult) {
-    const obj12 = {};
-    const obj13 = {};
-    let num11 = 0;
-    if (null != mentionCount) {
-      num11 = mentionCount;
+    if (mentionCount == null) {
+      mentionCount = 0;
     }
-    let num12 = 0;
-    if (num11 > 0) {
-      num12 = 20;
+    let num5 = 0;
+    if (mentionCount > 0) {
+      num5 = 20;
     }
-    obj13.paddingRight = num12;
-    const items5 = [obj13, ];
-    const obj14 = { marginTop: tmp2.messagePreview.margin.marginTop };
-    items5[1] = obj14;
-    obj12.style = items5;
-    obj12.children = subtitle;
-    tmp38Result = callback(View, obj12);
-    const tmp38 = callback;
-    const tmp39 = View;
+    const obj10 = { style: null, children: null };
+    const obj11 = { paddingRight: null };
+    obj11[0] = num5;
+    const items5 = [obj11, ];
+    const obj12 = { marginTop: null };
+    obj12[0] = tmp4.messagePreview.margin.marginTop;
+    items5[1] = obj12;
+    obj10[0] = items5;
+    obj10[1] = subtitle;
+    tmp9Result1 = tmp9(tmp10, obj10);
   }
-  items4[1] = tmp38Result;
-  obj.children = items4;
-  const items6 = [tmp14(tmp15, obj), ];
-  const obj15 = { style: tmp9 ? tmp.rightContentAbsolute : tmp.rightBox };
-  let tmp43Result = tmp8;
-  if (tmp8) {
-    const obj16 = { variant: "text-xs/medium", color: "text-muted", style: null, maxFontSizeMultiplier: 1.75 };
-    const obj17 = { marginLeft: "auto" };
-    let num14 = 1;
+  items4[1] = tmp9Result1;
+  obj1[1] = items4;
+  const items6 = [closure_8(View, obj1), ];
+  const obj13 = { style: tmp9Result3 ? tmp.rightContentAbsolute : tmp.rightBox, children: null };
+  let tmp9Result2 = obj;
+  if (obj) {
+    let num6 = 1;
     if (!muted) {
-      num14 = SUBTITLE_OPACITY_NORMAL;
+      num6 = SUBTITLE_OPACITY_NORMAL;
     }
-    obj17.opacity = num14;
-    obj16.style = obj17;
-    obj16.children = lastMessageTimestampString;
-    tmp43Result = callback(require(4161) /* Text */.Text, obj16);
-    const tmp43 = callback;
+    const obj14 = { variant: "text-xs/medium", color: "text-muted", style: null, maxFontSizeMultiplier: 1.75, children: null };
+    const obj15 = { marginLeft: "auto", opacity: null };
+    obj15[1] = num6;
+    obj14[2] = obj15;
+    obj14[4] = lastMessageTimestampString;
+    tmp9Result2 = tmp9(require(4185) /* Text */.Text, obj14);
   }
-  const items7 = [tmp43Result, , ];
-  const obj18 = {};
+  const items7 = [tmp9Result2, , ];
   const items8 = [{ alignItems: "center", paddingLeft: 4 }, ];
-  if (tmp8) {
-    const obj19 = { marginTop: 5 };
-    tmp8 = obj19;
+  if (obj) {
+    obj = { marginTop: 5 };
   }
-  items8[1] = tmp8;
-  obj18.style = items8;
-  obj18.children = mentionBadge;
-  items7[1] = callback(View, obj18);
-  if (tmp9) {
-    const obj20 = {};
-    const obj21 = { flex: 1 };
-    obj20.style = obj21;
-    tmp9 = callback(View, obj20);
+  items8[1] = obj;
+  items7[1] = closure_7(View, { style: items8, children: mentionBadge });
+  if (tmp9Result3) {
+    const obj16 = { style: null };
+    obj16[0] = { flex: 1 };
+    tmp9Result3 = tmp9(tmp10, obj16);
   }
-  items7[2] = tmp9;
-  obj15.children = items7;
-  items6[1] = closure_8(View, obj15);
-  obj.children = items6;
-  obj.children = tmp12(tmp13, obj);
-  return tmp10(tmp11, obj);
+  items7[2] = tmp9Result3;
+  obj13[1] = items7;
+  items6[1] = closure_8(View, obj13);
+  obj[1] = items6;
+  obj[1] = closure_8(View, obj);
+  return closure_7(View, obj);
 }
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1 };
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let num = -1;
 if (set.isIOS()) {
   num = 2;
 }
-_createForOfIteratorHelperLoose.marginTop = num;
-_createForOfIteratorHelperLoose.channelContent = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.channelContainer = { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-_createForOfIteratorHelperLoose.leftBox = { flexDirection: "column", alignItems: "flex-start", flexShrink: 1 };
-_createForOfIteratorHelperLoose.rightBox = { flexDirection: "column", alignItems: "flex-end" };
-_createForOfIteratorHelperLoose.rightContentAbsolute = { position: "absolute", right: 0, top: 0 };
-_createForOfIteratorHelperLoose.channelTraits = { display: "flex", flexDirection: "row", alignItems: "center" };
-let obj1 = { opacity: SUBTITLE_OPACITY_NORMAL, marginRight: 4 };
+createCacheKey = { channelContent: { flex: 1, marginTop: num }, channelContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, leftBox: { flexDirection: "column", alignItems: "flex-start", flexShrink: 1 }, rightBox: { flexDirection: "column", alignItems: "flex-end" }, rightContentAbsolute: { position: "absolute", right: 0, top: 0 }, channelTraits: { display: "flex", flexDirection: "row", alignItems: "center" }, channelTraitIcon: null };
+createCacheKey = { opacity: SUBTITLE_OPACITY_NORMAL, marginRight: 4, marginTop: null };
 let num2 = 0;
 if (set.isAndroid()) {
   num2 = 2;
 }
-obj1.marginTop = num2;
-_createForOfIteratorHelperLoose.channelTraitIcon = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey[2] = num2;
+createCacheKey[6] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = set.fileFinishedImporting("modules/launchpad/native/shared/renderChannelContent.tsx");
 
 export default function renderChannelContent(arg0) {

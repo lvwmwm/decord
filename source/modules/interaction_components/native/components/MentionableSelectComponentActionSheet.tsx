@@ -1,36 +1,36 @@
-// Module ID: 10989
-// Function ID: 85226
+// Module ID: 11013
+// Function ID: 11014
 // Name: MentionableSelectComponentActionSheet
-// Dependencies: [31, 27, 1911, 1838, 4252, 1850, 653, 33, 4165, 689, 5181, 7876, 10990, 4394, 1273, 5522, 5523, 8262, 10988, 9430, 4161, 10991, 1212, 2]
+// Dependencies: [19, 17, 1935, 1862, 4276, 1874, 676, 21, 4189, 712, 5203, 7899, 11014, 4417, 1297, 5540, 5541, 8286, 11012, 9454, 4185, 11015, 1236, 2]
 // Exports: default
 
-// Module 10989 (MentionableSelectComponentActionSheet)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import closure_5 from "_createForOfIteratorHelperLoose";
-import closure_6 from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 11013 (MentionableSelectComponentActionSheet)
+import DiscordTag from "DiscordTag";
+import { View } from "ShieldUserIcon";
+import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import sortActivity from "sortActivity";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "UserIcon";
+import createCacheKey from "createCacheKey";
 
 let Fonts;
-let closure_10;
-let closure_11;
-let closure_9;
+let c10;
+let c9;
+let unpackModuleId;
 const require = arg1;
-({ Fonts, DEFAULT_ROLE_COLOR_HEX: closure_9 } = ME);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12, lineHeight: 16 };
-_createForOfIteratorHelperLoose.name = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.discriminator = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12 };
-_createForOfIteratorHelperLoose.roleCountContainer = { display: "flex", flexDirection: "row", flexGrow: 1, alignItems: "center", justifyContent: "flex-end", marginRight: 12 };
-_createForOfIteratorHelperLoose.roleCountText = { paddingRight: 4 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12 };
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/interaction_components/native/components/MentionableSelectComponentActionSheet.tsx");
+({ Fonts, DEFAULT_ROLE_COLOR_HEX: c9 } = ME);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { name: null, discriminator: null, roleCountContainer: null, roleCountText: null };
+createCacheKey = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12, lineHeight: 16 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { color: require("Themes").colors.TEXT_MUTED, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12 };
+createCacheKey[2] = { display: "flex", flexDirection: "row", flexGrow: 1, alignItems: "center", justifyContent: "flex-end", marginRight: 12 };
+createCacheKey[3] = { paddingRight: 4 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { color: require("Themes").colors.TEXT_MUTED, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12 };
+const result = require("createGuildRoleRecordFromRust").fileFinishedImporting("modules/interaction_components/native/components/MentionableSelectComponentActionSheet.tsx");
 
 export default function MentionableSelectComponentActionSheet(selectionActionComponent) {
   let allowEmpty;
@@ -45,21 +45,23 @@ export default function MentionableSelectComponentActionSheet(selectionActionCom
   selectionActionComponent = selectionActionComponent.selectionActionComponent;
   const channelId = selectionActionComponent.channelId;
   const guildId = selectionActionComponent.guildId;
-  let closure_5;
+  let React;
+  let guild;
+  let createGuildRoleRecordFromRust;
   ({ labelComponent, containerId, onSubmit, allowEmpty } = selectionActionComponent);
-  const React = _createForOfIteratorHelperLoose();
+  React = createCacheKey();
   guild = guild.getGuild(guildId);
   let id;
-  if (null != guild) {
+  if (guild != null) {
     id = guild.id;
   }
-  closure_5 = channelId(guildId[10])(id, selectionActionComponent(guildId[11]).MIN_REREQUEST_TIME);
+  createGuildRoleRecordFromRust = channelId(guildId[10])(id, selectionActionComponent(tmp3[11]).MIN_REREQUEST_TIME);
   let items = [selectionActionComponent, channelId];
-  const callback = React.useCallback((query) => selectionActionComponent(guildId[11]).queryMentionables(selectionActionComponent.type, query, channelId), items);
-  const tmp5 = channelId(guildId[12])({ selectActionComponent: selectionActionComponent, containerId, guildId, queryOptions: callback, onSubmit });
-  const selectedOptions = tmp5.selectedOptions;
+  const callback = React.useCallback((arg0) => selectionActionComponent(guildId[11]).queryMentionables(selectionActionComponent.type, arg0, channelId), items);
+  let tmp7 = channelId(guildId[12])({ selectActionComponent: selectionActionComponent, containerId, guildId, queryOptions: callback, onSubmit });
+  const selectedOptions = tmp7.selectedOptions;
   const items1 = [guild, guildId];
-  ({ options, isSelected, onPressOptionItem, submitSelection, setQuery } = tmp5);
+  ({ options, isSelected, onPressOptionItem, submitSelection, setQuery } = tmp7);
   const callback1 = React.useCallback((type) => {
     let customIconSrc;
     let unicodeEmoji;
@@ -70,46 +72,51 @@ export default function MentionableSelectComponentActionSheet(selectionActionCom
       } else {
         const isMobileOnlineResult = outer1_7.isMobileOnline(user.id);
         const status = outer1_7.getStatus(user.id);
-        let obj = { user, isMobileOnline: isMobileOnlineResult, isVROnline: outer1_7.isVROnline(user.id), status };
-        let tmp20;
-        if (null != guildId) {
-          tmp20 = guildId;
-        }
-        obj.guildId = tmp20;
-        obj.size = selectionActionComponent(guildId[14]).AvatarSizes.XSMALL;
-        return outer1_10(selectionActionComponent(guildId[14]).Avatar, obj);
+        let obj = { user: null, isMobileOnline: null, isVROnline: null, status: null, guildId: null, size: null };
+        obj[0] = user;
+        obj[1] = isMobileOnlineResult;
+        obj[2] = outer1_7.isVROnline(user.id);
+        obj[3] = status;
+        obj[4] = guildId;
+        obj[5] = tmp(tmp2[14]).AvatarSizes.XSMALL;
+        return outer1_10(tmp(tmp2[14]).Avatar, obj);
       }
-    } else if (type.type === selectionActionComponent(guildId[13]).SelectOptionType.ROLE) {
+    } else if (type.type === tmp(tmp2[13]).SelectOptionType.ROLE) {
       if (null != guild) {
-        const role = store.getRole(guild.id, type.value);
+        const role = store.getRole(tmp3.id, type.value);
       }
       if (null != guild) {
         if (null != role) {
-          if (obj6.canGuildUseRoleIcons(guild, role)) {
-            obj = selectionActionComponent(guildId[15]);
-            let roleIconData = obj.getRoleIconData(role);
-            if (null == roleIconData) {
+          let tmpResult = tmp(tmp2[15]);
+          if (tmpResult.canGuildUseRoleIcons(tmp3, role)) {
+            tmpResult = tmp(tmp2[15]);
+            let roleIconData = tmpResult.getRoleIconData(role);
+            if (roleIconData == null) {
               roleIconData = {};
             }
             ({ customIconSrc, unicodeEmoji } = roleIconData);
-            let tmp9;
+            let tmp7;
             if (null != customIconSrc) {
-              obj = { uri: customIconSrc };
-              tmp9 = obj;
+              obj = { uri: null };
+              obj[0] = customIconSrc;
+              tmp7 = obj;
             }
-            const obj1 = { source: tmp9, unicodeEmoji, size: 24, name: role.name };
-            return outer1_10(channelId(guildId[16]), obj1);
+            const obj1 = { source: null, unicodeEmoji: null, size: 24, name: null };
+            obj1[0] = tmp7;
+            obj1[1] = unicodeEmoji;
+            obj1[3] = role.name;
+            return outer1_10(channelId(tmp2[16]), obj1);
           }
-          const obj2 = {};
           let colorString;
-          if (null != role) {
+          if (role != null) {
             colorString = role.colorString;
           }
-          if (null == colorString) {
+          if (colorString == null) {
             colorString = outer1_9;
           }
-          obj2.color = colorString;
-          return outer1_10(selectionActionComponent(guildId[17]).ShieldUserIcon, obj2);
+          const obj2 = { color: null };
+          obj2[0] = colorString;
+          return outer1_10(tmp(tmp2[17]).ShieldUserIcon, obj2);
         }
       }
       return null;
@@ -121,32 +128,35 @@ export default function MentionableSelectComponentActionSheet(selectionActionCom
     renderDescription(type) {
       if (type.type === selectionActionComponent(guildId[13]).SelectOptionType.USER) {
         const user = outer1_8.getUser(type.value);
-        const obj = { user };
-        ({ name: obj.usernameStyle, discriminator: obj.discriminatorStyle, name: obj.nicknameStyle } = result);
-        return outer1_10(channelId(guildId[19]), obj);
+        const obj = { user: null, usernameStyle: null, discriminatorStyle: null, nicknameStyle: null };
+        obj[0] = user;
+        ({ name: obj[1], discriminator: obj[2], name: obj[3] } = DiscordTag);
+        return outer1_10(channelId(tmp[19]), obj);
       }
+      tmp = guildId;
     },
     renderOptionSuffix(item) {
       if (item.type === selectionActionComponent(guildId[13]).SelectOptionType.ROLE) {
         let role;
         if (null != guild) {
-          role = store.getRole(guild.id, item.value);
+          role = store.getRole(tmp3.id, item.value);
         }
-        let tmp6 = null;
+        let tmp7 = null;
         if (null != role) {
-          let tmp8;
-          if (null != store) {
-            tmp8 = store[role.id];
+          let tmp9;
+          if (store != null) {
+            tmp9 = tmp8[role.id];
           }
-          tmp6 = tmp8;
+          tmp7 = tmp9;
         }
-        if (null != tmp6) {
-          let obj = { style: result.roleCountContainer };
-          obj = { style: result.roleCountText, variant: "text-sm/medium", color: "interactive-text-default", children: tmp6 };
-          const items = [outer1_10(selectionActionComponent(guildId[20]).Text, obj), ];
-          obj = { size: "xs" };
-          items[1] = outer1_10(selectionActionComponent(guildId[21]).UserIcon, obj);
-          obj.children = items;
+        if (null != tmp7) {
+          let obj = { style: null, children: null };
+          obj[0] = DiscordTag.roleCountContainer;
+          obj = { style: null, variant: "text-sm/medium", color: "interactive-text-default", children: null };
+          obj[0] = DiscordTag.roleCountText;
+          obj[3] = tmp7;
+          const items = [outer1_10(tmp(tmp2[20]).Text, obj), outer1_10(tmp(tmp2[21]).UserIcon, { size: "xs" })];
+          obj[1] = items;
           return outer1_11(guild, obj);
         }
       }
@@ -161,32 +171,39 @@ export default function MentionableSelectComponentActionSheet(selectionActionCom
     onQueryChange: setQuery,
     itemAccessibilityLabel(type) {
       if (type.type === selectionActionComponent(guildId[13]).SelectOptionType.USER) {
-        const user = outer1_8.getUser(type.value);
-        if (null != user) {
-          if (user.bot) {
-            const intl3 = selectionActionComponent(guildId[22]).intl;
-            let obj = { username: type.label };
-            let discriminator;
-            if (null != user) {
-              discriminator = user.discriminator;
-            }
-            obj.discriminator = discriminator;
-            let formatToPlainStringResult = intl3.formatToPlainString(selectionActionComponent(guildId[22]).t["zogo/8"], obj);
+        user = user.getUser(type.value);
+        let bot;
+        if (user != null) {
+          bot = user.bot;
+        }
+        const intl2 = tmp(tmp2[22]).intl;
+        const formatToPlainString = intl2.formatToPlainString;
+        const t = tmp(tmp2[22]).t;
+        if (bot) {
+          let obj = { username: null, discriminator: null };
+          obj[0] = type.label;
+          let discriminator;
+          if (user != null) {
+            discriminator = user.discriminator;
           }
-          return formatToPlainStringResult;
+          obj[1] = discriminator;
+          let formatToPlainStringResult = formatToPlainString(t["zogo/8"], obj);
+        } else {
+          obj = { username: null, discriminator: null };
+          obj[0] = type.label;
+          let discriminator1;
+          if (user != null) {
+            discriminator1 = user.discriminator;
+          }
+          obj[1] = discriminator1;
+          formatToPlainStringResult = formatToPlainString(t.AydQ7a, obj);
         }
-        const intl2 = selectionActionComponent(guildId[22]).intl;
-        obj = { username: type.label };
-        let discriminator1;
-        if (null != user) {
-          discriminator1 = user.discriminator;
-        }
-        obj.discriminator = discriminator1;
-        formatToPlainStringResult = intl2.formatToPlainString(selectionActionComponent(guildId[22]).t.AydQ7a, obj);
-      } else if (type.type === selectionActionComponent(guildId[13]).SelectOptionType.ROLE) {
-        const intl = selectionActionComponent(guildId[22]).intl;
-        obj = { roleName: type.label };
-        return intl.formatToPlainString(selectionActionComponent(guildId[22]).t.F6ejkk, obj);
+        return formatToPlainStringResult;
+      } else if (type.type === tmp(tmp2[13]).SelectOptionType.ROLE) {
+        const intl = tmp(tmp2[22]).intl;
+        obj = { roleName: null };
+        obj[0] = type.label;
+        return intl.formatToPlainString(tmp(tmp2[22]).t.F6ejkk, obj);
       }
     },
     channelId,

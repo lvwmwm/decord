@@ -1,33 +1,33 @@
-// Module ID: 14066
-// Function ID: 107437
+// Module ID: 14088
+// Function ID: 14089
 // Name: BountiesModalEndCard
-// Dependencies: [27, 33, 4165, 4026, 4166, 4169, 4589, 14048, 2]
+// Dependencies: [17, 21, 4189, 4050, 4190, 4193, 4611, 14070, 2]
 // Exports: default
 
-// Module 14066 (BountiesModalEndCard)
+// Module 14088 (BountiesModalEndCard)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
-({ StyleSheet: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(() => {
-  let obj = { container: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center", alignItems: "center" } };
+({ StyleSheet: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles(() => {
+  let obj = { container: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center", alignItems: "center" }, backdropTint: null, backdropGradient: null };
   obj = {};
   const merged = Object.assign(closure_3.absoluteFillObject);
-  obj["backgroundColor"] = "rgba(241, 251, 169, 0.15)";
-  obj.backdropTint = obj;
+  obj.backgroundColor = "rgba(241, 251, 169, 0.15)";
+  obj[1] = obj;
   obj = {};
   const merged1 = Object.assign(closure_3.absoluteFillObject);
-  obj.backdropGradient = obj;
+  obj[2] = obj;
   return obj;
 });
 let closure_8 = { code: "function BountiesModalEndCardTsx1(){const{withTiming,visible,timingStandard}=this.__closure;return{opacity:withTiming(visible?1:0,timingStandard)};}" };
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalEndCard.tsx");
+const result = require("createCacheKey").fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalEndCard.tsx");
 
 export default function BountiesModalEndCard(visible) {
   let bounty;
@@ -35,33 +35,38 @@ export default function BountiesModalEndCard(visible) {
   visible = visible.visible;
   ({ bounty, sourceQuestContent } = visible);
   const tmp = callback3();
-  visible(4026);
+  visible(4050);
   const fn = function y() {
-    const obj = {};
+    let obj = visible(outer1_2[4]);
     let num = 0;
     if (visible) {
       num = 1;
     }
-    obj.opacity = visible(outer1_2[4]).withTiming(num, visible(outer1_2[5]).timingStandard);
+    obj = { opacity: obj.withTiming(num, visible(outer1_2[5]).timingStandard) };
     return obj;
   };
-  let obj = { withTiming: visible(4166).withTiming, visible, timingStandard: visible(4169).timingStandard };
+  let obj = { withTiming: visible(4190).withTiming, visible, timingStandard: visible(4193).timingStandard };
   fn.__closure = obj;
   fn.__workletHash = 15062259404736;
   fn.__initData = closure_8;
   if (visible) {
-    obj = {};
-    const items = [tmp.container, tmp3];
-    obj.style = items;
-    obj.pointerEvents = "box-none";
-    obj = { style: tmp.backdropTint };
+    obj = { style: null, pointerEvents: "box-none", children: null };
+    const items = [tmp.container, tmp4];
+    obj[0] = items;
+    obj = { style: null };
+    obj[0] = tmp.backdropTint;
     const items1 = [callback(closure_4, obj), , ];
-    const obj1 = { colors: ["rgba(0, 0, 0, 0.60)", "rgba(0, 0, 0, 1)"], locations: [0, 0.841], style: tmp.backdropGradient };
-    items1[1] = callback(importDefault(4589), obj1);
-    const obj2 = { bounty, sourceQuestContent };
-    items1[2] = callback(importDefault(14048), obj2);
-    obj.children = items1;
-    visible = callback2(importDefault(4026).View, obj);
+    const obj1 = { colors: null, locations: null, style: null };
+    obj1[0] = ["rgba(0, 0, 0, 0.60)", "rgba(0, 0, 0, 1)"];
+    obj1[1] = [0, 0.841];
+    obj1[2] = tmp.backdropGradient;
+    items1[1] = callback(importDefault(4611), obj1);
+    const obj2 = { bounty: null, sourceQuestContent: null };
+    obj2[0] = bounty;
+    obj2[1] = sourceQuestContent;
+    items1[2] = callback(importDefault(14070), obj2);
+    obj[2] = items1;
+    visible = callback2(importDefault(4050).View, obj);
   }
   return visible;
 };

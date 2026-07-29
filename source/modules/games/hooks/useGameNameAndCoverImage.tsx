@@ -1,35 +1,33 @@
-// Module ID: 12039
-// Function ID: 92907
+// Module ID: 12063
+// Function ID: 12064
 // Name: useGameNameAndCoverImage
-// Dependencies: [5888, 1212, 2]
+// Dependencies: [5906, 1236, 2]
 // Exports: default
 
-// Module 12039 (useGameNameAndCoverImage)
+// Module 12063 (useGameNameAndCoverImage)
 const result = require("set").fileFinishedImporting("modules/games/hooks/useGameNameAndCoverImage.tsx");
 
-export default function useGameNameAndCoverImage(arg0, arg1, arg2) {
-  let stringResult = arg1;
-  let obj = require(5888) /* importDefaultResult1 */;
+export default function useGameNameAndCoverImage(arg0, arg1, size) {
+  let obj = require(5906) /* importDefaultResult1 */;
   const game = obj.useGame(arg0);
   const data = game.data;
-  obj = {};
   let coverURL;
-  if (null != data) {
-    coverURL = data.getCoverURL(arg2);
+  if (data != null) {
+    coverURL = data.getCoverURL(size);
   }
-  obj.coverImageUrl = coverURL;
+  obj = { coverImageUrl: coverURL, gameName: null, isLoading: null };
   let name;
-  if (null != data) {
+  if (data != null) {
     name = data.name;
   }
-  if (null != name) {
-    stringResult = name;
+  if (name == null) {
+    name = arg1;
   }
-  if (null == stringResult) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl.string(require(1212) /* getSystemLocale */.t.GIWFlF);
+  if (name == null) {
+    const intl = tmp(1236).intl;
+    name = intl.string(tmp(1236).t.GIWFlF);
   }
-  obj.gameName = stringResult;
-  obj.isLoading = game.isLoading;
+  obj[1] = name;
+  obj[2] = game.isLoading;
   return obj;
 };

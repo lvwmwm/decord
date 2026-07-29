@@ -1,11 +1,10 @@
 // Module ID: 8247
-// Function ID: 65899
+// Function ID: 8248
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 8247 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/guild_scheduled_events/native/images", width: 216, height: 80, scales: [2, 3], hash: "0e2ac412c416f1e5e277ac37a8dd593a", name: "stage-channel-upsell", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [1, 2, 3], hash: "9a9bbdc70f61ec2f6dad7a457855d73e", name: "ic_expand_more_24px", type: "png" });

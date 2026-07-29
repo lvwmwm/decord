@@ -1,113 +1,96 @@
-// Module ID: 1318
-// Function ID: 15501
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 662, 653, 1284, 1282, 1317, 1283, 22, 2]
-// Exports: b64ToPreloadedUserSettingsProto, b64ToProtoWithType, mergeTopLevelFields, mutateUserChannelSettings, protoToB64WithType, runMigrations, serializeUsageHistory
+// Module ID: 1342
+// Function ID: 1343
+// Name: b64ToProto
+// Dependencies: [32, 685, 676, 1307, 1306, 1341, 1335, 12, 2]
+// Exports: b64ToPreloadedUserSettingsProto, b64ToProtoWithType, mergeTopLevelFields, mutateUserChannelSettings, mutateUserChannelSettingsInternal, mutateUserGuildSettings, mutateUserGuildSettingsInternal, protoToB64, protoToB64WithType, runMigrations, serializeUsageHistory
 
-// Module 1318 (_createForOfIteratorHelperLoose)
+// Module 1342 (b64ToProto)
 import _slicedToArray from "_slicedToArray";
-import { UserSettingsTypes } from "MAX_FAVORITES";
 import { ZERO_STRING_GUILD_ID } from "ME";
 
+let FRECENCY_AND_FAVORITES_SETTINGS;
+let PRELOADED_USER_SETTINGS;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function b64ToProto(ProtoClass, settings) {
   if (null == settings) {
     return null;
   } else {
-    const obj = require(1284);
-    return ProtoClass.fromBinary(obj.base64decode(settings), obj);
+    require(1307);
+    try {
+      return ProtoClass.fromBinary(tmp4, obj);
+    } catch (tmp7) {
+      const _Error = Error;
+      const _HermesInternal = HermesInternal;
+      const error = new Error("Settings proto failed to deserialize (potentially corrupt): " + tmp7);
+      throw error;
+    }
   }
 }
-function protoToB64(ProtoClass, protoToSave) {
-  return require(1284).base64encode(ProtoClass.toBinary(protoToSave));
-}
-function mutateUserGuildSettings(guilds, closure_0, closure_1) {
+let obj = {
+  readerFactory(buf) {
+    const textDecoder = new TextDecoder("utf-8");
+    const binaryReader = new require(1307).BinaryReader(buf, textDecoder);
+    return binaryReader;
+  }
+};
+obj = { [PRELOADED_USER_SETTINGS]: require("create").PreloadedUserSettings, [FRECENCY_AND_FAVORITES_SETTINGS]: require("create").FrecencyUserSettings };
+({ PRELOADED_USER_SETTINGS, FRECENCY_AND_FAVORITES_SETTINGS } = require("MAX_FAVORITES").UserSettingsTypes);
+const result = require("ME").fileFinishedImporting("modules/user_settings/UserSettingsUtils.tsx");
+
+export const BINARY_READ_OPTIONS = obj;
+export const b64ToProtoWithType = function b64ToProtoWithType(type, proto) {
+  let tmp = null;
+  if (null != proto) {
+    let tmp4 = null;
+    if (type in obj) {
+      tmp4 = b64ToProto(tmp3[type], proto);
+    }
+    tmp = tmp4;
+  }
+  return tmp;
+};
+export { b64ToProto };
+export const b64ToPreloadedUserSettingsProto = function b64ToPreloadedUserSettingsProto(settings) {
+  return b64ToProto(require(1306) /* create */.PreloadedUserSettings, settings);
+};
+export const protoToB64WithType = function protoToB64WithType(arg0, favoriteGifs) {
+  return require(1307).base64encode(obj[arg0].toBinary(favoriteGifs));
+};
+export const protoToB64 = function protoToB64(ProtoClass, protoToSave) {
+  return require(1307).base64encode(ProtoClass.toBinary(protoToSave));
+};
+export const mergeTopLevelFields = function mergeTopLevelFields(ProtoClass, proto, proto2) {
+  const obj = {};
+  const merged = Object.assign(proto);
+  for (const key10007 in arg2) {
+    let tmp5 = key10007;
+    delete tmp[tmp2];
+    continue;
+  }
+  ProtoClass.mergePartial(obj, proto2);
+  return obj;
+};
+export const mutateUserGuildSettings = function mutateUserGuildSettings(guilds) {
   if (null == guilds.guilds) {
-    const AllGuildSettings = require(1282) /* _callSuper */.AllGuildSettings;
+    const AllGuildSettings = require(1306) /* create */.AllGuildSettings;
     guilds.guilds = AllGuildSettings.create();
   }
-  return mutateUserGuildSettingsInternal(guilds.guilds, closure_0, closure_1);
-}
-function mutateUserGuildSettingsInternal(guilds, closure_0, closure_1) {
+  let tmp3 = arg1;
+  guilds = guilds.guilds;
+  let tmp4 = null != arg1;
+  if (tmp4) {
+    tmp4 = "null" !== tmp3;
+  }
+  if (!tmp4) {
+    tmp3 = ZERO_STRING_GUILD_ID;
+  }
+  if (!(tmp3 in guilds.guilds)) {
+    const GuildSettings = require(1306) /* create */.GuildSettings;
+    guilds.guilds[tmp3] = GuildSettings.create();
+  }
+  return arg2(guilds.guilds[tmp3]);
+};
+export const mutateUserGuildSettingsInternal = function mutateUserGuildSettingsInternal(guilds, closure_0, f69075) {
   let tmp = closure_0;
   let tmp2 = null != closure_0;
   if (tmp2) {
@@ -117,148 +100,119 @@ function mutateUserGuildSettingsInternal(guilds, closure_0, closure_1) {
     tmp = ZERO_STRING_GUILD_ID;
   }
   if (!(tmp in guilds.guilds)) {
-    const GuildSettings = require(1282) /* _callSuper */.GuildSettings;
+    const GuildSettings = require(1306) /* create */.GuildSettings;
     guilds.guilds[tmp] = GuildSettings.create();
   }
-  return closure_1(guilds.guilds[tmp]);
-}
-function mutateUserChannelSettingsInternal(channels, closure_0, closure_1) {
+  return f69075(guilds.guilds[tmp]);
+};
+export const mutateUserChannelSettings = function mutateUserChannelSettings(guilds, arg1, id, arg3) {
+  if (null == guilds.guilds) {
+    const AllGuildSettings = require(1306) /* create */.AllGuildSettings;
+    guilds.guilds = AllGuildSettings.create();
+  }
+  let tmp3 = arg1;
+  guilds = guilds.guilds;
+  let tmp4 = null != arg1;
+  if (tmp4) {
+    tmp4 = "null" !== tmp3;
+  }
+  if (!tmp4) {
+    tmp3 = ZERO_STRING_GUILD_ID;
+  }
+  if (!(tmp3 in guilds.guilds)) {
+    const GuildSettings = require(1306) /* create */.GuildSettings;
+    guilds.guilds[tmp3] = GuildSettings.create();
+  }
+  if (!(id in guilds.guilds[tmp3].channels)) {
+    const ChannelSettings = require(1306) /* create */.ChannelSettings;
+    tmp7.channels[id] = ChannelSettings.create();
+  }
+  return arg3(guilds.guilds[tmp3].channels[id]);
+};
+export const mutateUserChannelSettingsInternal = function mutateUserChannelSettingsInternal(channels, closure_0, f69075) {
   if (!(closure_0 in channels.channels)) {
-    const ChannelSettings = require(1282) /* _callSuper */.ChannelSettings;
+    const ChannelSettings = require(1306) /* create */.ChannelSettings;
     channels.channels[closure_0] = ChannelSettings.create();
   }
-  return closure_1(channels.channels[closure_0]);
-}
-let obj = {
-  readerFactory(buf) {
-    const textDecoder = new TextDecoder("utf-8");
-    const binaryReader = new require(1284).BinaryReader(buf, textDecoder);
-    return binaryReader;
-  }
+  return f69075(channels.channels[closure_0]);
 };
-obj = { [UserSettingsTypes.PRELOADED_USER_SETTINGS]: require("_callSuper").PreloadedUserSettings, [UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS]: require("_callSuper").FrecencyUserSettings };
-const result = require("ME").fileFinishedImporting("modules/user_settings/UserSettingsUtils.tsx");
-
-export const BINARY_READ_OPTIONS = obj;
-export const b64ToProtoWithType = function b64ToProtoWithType(type, proto) {
-  let tmp = null;
-  if (null != proto) {
-    let tmp3 = null;
-    if (type in obj) {
-      tmp3 = b64ToProto(obj[type], proto);
+export const runMigrations = function runMigrations(closure_1, closure_2) {
+  if (null == closure_1.versions) {
+    const Versions = require(1335) /* create */.Versions;
+    closure_1.versions = Versions.create();
+  }
+  let num = 0;
+  const iter = closure_2[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp5 = num;
+    if (nextResult.version <= num) {
+      let tmp7 = globalThis;
+      let _Error = Error;
+      let str = "Migrations are out of order or there is a duplicate version";
+      throw Error("Migrations are out of order or there is a duplicate version");
+    } else {
+      let tmp6 = nextResult;
+      num = tmp4.version;
+      continue;
     }
-    tmp = tmp3;
   }
-  return tmp;
-};
-export { b64ToProto };
-export const b64ToPreloadedUserSettingsProto = function b64ToPreloadedUserSettingsProto(settings) {
-  return b64ToProto(require(1282) /* _callSuper */.PreloadedUserSettings, settings);
-};
-export const protoToB64WithType = function protoToB64WithType(arg0, protoToSave) {
-  return protoToB64(obj[arg0], protoToSave);
-};
-export { protoToB64 };
-export const mergeTopLevelFields = function mergeTopLevelFields(ProtoClass, proto, proto2) {
-  const obj = {};
-  const merged = Object.assign(proto);
-  for (const key10008 in arg2) {
-    let tmp5 = key10008;
-    delete tmp[tmp2];
-    continue;
-  }
-  ProtoClass.mergePartial(obj, proto2);
-  return obj;
-};
-export { mutateUserGuildSettings };
-export { mutateUserGuildSettingsInternal };
-export const mutateUserChannelSettings = function mutateUserChannelSettings(inbox, closure_0, id, arg3) {
-  closure_0 = id;
-  let closure_1 = arg3;
-  return mutateUserGuildSettings(inbox, closure_0, (arg0) => outer1_13(arg0, closure_0, closure_1));
-};
-export { mutateUserChannelSettingsInternal };
-export const runMigrations = function runMigrations(proto, arg1) {
-  let iter5;
-  if (null == proto.versions) {
-    const Versions = require(1283) /* _isNativeReflectConstruct */.Versions;
-    proto.versions = Versions.create();
-  }
-  const tmp3 = _createForOfIteratorHelperLoose(arg1);
-  let iter = tmp3();
-  let num2 = 0;
-  if (!iter.done) {
-    let value = iter.value;
-    while (value.version > num2) {
-      num2 = value.version;
-      let iter2 = tmp3();
-      iter = iter2;
-    }
-    const _Error = Error;
-    throw Error("Migrations are out of order or there is a duplicate version");
-  }
-  const items = [];
-  const tmp6 = _createForOfIteratorHelperLoose(arg1);
-  const iter3 = tmp6();
-  let iter4 = iter3;
   let flag = false;
-  let flag2 = false;
-  if (!iter3.done) {
-    do {
-      value = iter4.value;
-      if (value.version <= proto.versions.clientVersion) {
-        let flag3 = flag;
-        if (tmp5) {
-          flag3 = flag;
-          if (null != value.cleanup) {
-            let cleanupResult = value.cleanup();
-            flag3 = flag;
-          }
-        }
-      } else {
-        proto.versions.clientVersion = value.version;
-        if (false !== value.run(proto)) {
-          flag3 = true;
-          if (null != value.cleanup) {
-            let arr = items.push(value.cleanup);
-            flag3 = true;
-          }
-        } else {
-          flag3 = flag;
-          if (null != value.cleanup) {
-            let cleanupResult1 = value.cleanup();
-            flag3 = flag;
-          }
+  const items = [];
+  const iter2 = closure_2[Symbol.iterator]();
+  const nextResult1 = iter2.next();
+  while (iter2 !== undefined) {
+    let obj = nextResult1;
+    if (nextResult1.version <= closure_1.versions.clientVersion) {
+      if (tmp8) {
+        let tmp16 = nextResult1;
+        let cleanup2 = obj.cleanup;
+        if (cleanup2 != null) {
+          let cleanup2Result = cleanup2();
         }
       }
-      iter5 = tmp6();
-      flag = flag3;
-      iter4 = iter5;
-      flag2 = flag3;
-    } while (!iter5.done);
+    } else {
+      let tmp10 = nextResult1;
+      closure_1.versions.clientVersion = obj.version;
+      if (false !== obj.run(closure_1)) {
+        flag = true;
+        let tmp13 = nextResult1;
+        if (null != obj.cleanup) {
+          let tmp14 = nextResult1;
+          let arr = items.push(obj.cleanup);
+        }
+      } else {
+        let tmp11 = nextResult1;
+        let cleanup = obj.cleanup;
+        if (cleanup != null) {
+          let cleanupResult = cleanup();
+        }
+      }
+    }
+    continue;
   }
-  const obj = { proto, isDirty: flag2, cleanupFuncs: items };
+  obj = { proto: closure_1, isDirty: flag, cleanupFuncs: items };
   return obj;
 };
-export const serializeUsageHistory = function serializeUsageHistory(usageHistory, outer2_18) {
-  let done;
+export const serializeUsageHistory = function serializeUsageHistory(usageHistory, closure_13) {
   let length;
+  let recentUses;
   const entries = Object.entries(usageHistory);
   let tmp = entries;
-  if (entries.length > outer2_18) {
-    let obj = importDefault(22);
+  if (entries.length > closure_13) {
+    let obj = importDefault(12);
     const reversed = obj.sortBy(entries, (arg0) => {
       let tmp;
       [, tmp] = arg0;
       return tmp.recentUses[tmp.recentUses.length - 1];
     }).reverse();
     tmp = reversed;
-    if (reversed.length > outer2_18) {
+    if (reversed.length > closure_13) {
       do {
         let arr = reversed.pop();
         tmp = reversed;
         length = reversed.length;
-      } while (length > outer2_18);
+      } while (length > closure_13);
     }
     const sortByResult = obj.sortBy(entries, (arg0) => {
       let tmp;
@@ -267,36 +221,29 @@ export const serializeUsageHistory = function serializeUsageHistory(usageHistory
     });
   }
   obj = {};
-  const tmp5 = _createForOfIteratorHelperLoose(tmp);
-  let iter = tmp5();
-  if (!iter.done) {
-    do {
-      let tmp6 = callback;
-      let tmp7 = callback(iter.value, 2);
-      let tmp8 = tmp7[1];
-      let tmp9 = require;
-      let tmp10 = dependencyMap;
-      let FrecencyItem = require(1317) /* _callSuper */.FrecencyItem;
-      obj = FrecencyItem.create();
-      obj.frecency = tmp8.frecency;
-      let recentUses = tmp8.recentUses;
-      let found = recentUses.filter((arg0) => {
-        let tmp = null != arg0;
-        if (tmp) {
-          tmp = arg0 > 0;
-        }
-        return tmp;
-      });
-      let _String = String;
-      obj.recentUses = found.map(String);
-      let _Math = Math;
-      obj.score = Math.round(tmp8.score);
-      obj.totalUses = tmp8.totalUses;
-      obj[tmp7[0]] = obj;
-      let iter2 = tmp5();
-      iter = iter2;
-      done = iter2.done;
-    } while (!done);
+  while (tmp5 !== undefined) {
+    let tmp7 = callback;
+    let tmp8 = callback(tmp6, 2);
+    let tmp9 = tmp8[1];
+    let tmp10 = require;
+    let tmp11 = dependencyMap;
+    let FrecencyItem = require(1341) /* create */.FrecencyItem;
+    obj = FrecencyItem.create();
+    ({ frecency: tmp12.frecency, recentUses } = tmp9);
+    let found = recentUses.filter((arg0) => {
+      let tmp = null != arg0;
+      if (tmp) {
+        tmp = arg0 > 0;
+      }
+      return tmp;
+    });
+    let _String = String;
+    obj.recentUses = found.map(String);
+    let _Math = Math;
+    obj.score = Math.round(tmp9.score);
+    obj.totalUses = tmp9.totalUses;
+    obj[tmp8[0]] = obj;
+    continue;
   }
   return obj;
 };

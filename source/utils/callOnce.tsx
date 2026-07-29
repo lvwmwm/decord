@@ -1,16 +1,16 @@
-// Module ID: 5935
-// Function ID: 52500
+// Module ID: 5954
+// Function ID: 5955
 // Name: callOnce
 // Dependencies: [2]
 // Exports: callOnce
 
-// Module 5935 (callOnce)
+// Module 5954 (callOnce)
 const result = require("set").fileFinishedImporting("utils/callOnce.tsx");
 
-export function callOnce(arg0) {
-  let closure_0 = arg0;
+export function callOnce(outer1_1) {
+  let closure_0 = outer1_1;
   let c2 = false;
-  return (arg0) => {
+  return () => {
     const items = [...arguments];
     if (!c2) {
       c2 = true;

@@ -1,32 +1,33 @@
-// Module ID: 6726
-// Function ID: 59139
+// Module ID: 6747
+// Function ID: 6748
 // Name: openIncodeAgeVerificationModal
-// Dependencies: [5, 1850, 6727, 6729, 4379, 6695, 33, 4710, 4372, 6730, 1935, 6700, 1553, 4507, 6746, 6747, 6748, 4382, 3844, 686, 6749, 6750, 7593, 7594, 3862, 2]
+// Dependencies: [5, 1874, 6748, 6750, 4402, 6716, 21, 4732, 4395, 6751, 1959, 6721, 1577, 4530, 6767, 6768, 6769, 4405, 3868, 709, 6770, 6771, 7617, 7618, 3886, 2]
 
-// Module 6726 (openIncodeAgeVerificationModal)
+// Module 6747 (openIncodeAgeVerificationModal)
 import SafetyToastType from "SafetyToastType";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import set from "set";
-import { AGE_VERIFICATION_INCODE_PATH as closure_9 } from "postToNativeWebView";
+import { AGE_VERIFICATION_INCODE_PATH as closure_9 } from "AGE_VERIFICATION_INCODE_PATH";
 import { NativePermissionTypes } from "NativePermissionStatus";
 import { SafetyToastType } from "SafetyToastType";
-import { jsx } from "jsxProd";
+import { jsx } from "MethodsScreen";
 import set from "set";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function openIncodeAgeVerificationModal(arg0) {
   let importDefault;
   let require;
   ({ onClose: require, onComplete: importDefault } = arg0);
+  let combined;
   let WEBAPP_ENDPOINT;
-  if (null != GLOBAL_ENV) {
+  if (GLOBAL_ENV != null) {
     WEBAPP_ENDPOINT = GLOBAL_ENV.WEBAPP_ENDPOINT;
   }
-  let combined = null;
+  combined = null;
   if (null != WEBAPP_ENDPOINT) {
     combined = null;
     if ("" !== WEBAPP_ENDPOINT) {
@@ -47,20 +48,149 @@ function openIncodeAgeVerificationModal(arg0) {
   }
   let flag = null != combined;
   if (flag) {
-    callback(async () => {
-      yield outer2_1(combined[7]).requestPermission(outer2_10.CAMERA, { showAuthorizationError: true });
-      const obj = outer2_1(combined[7]);
-      yield outer2_1(combined[8]).pushLazy(outer2_3(async () => {
-        let closure_0;
-        closure_0 = yield outer4_0(combined[10])(combined[9], combined.paths).default;
-        return () => outer5_12(closure_0, { webviewUrl: outer4_2, onClose: outer4_0, onComplete: outer4_1 });
-      }), {}, outer2_5);
+    callback(function*() {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === v0) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp3;
+              let closure_0 = tmp3;
+              let dependencyMap = 1;
+              v0 = 2;
+              c4 = 1;
+              let obj1 = { value: null, done: false };
+              obj1[0] = outer1_1(4732).requestPermission(outer1_10.CAMERA, { showAuthorizationError: true });
+              return obj1;
+            }
+          } else {
+            if (1 === tmp7) {
+              dependencyMap = 0;
+              outer1_1(6721).showFailedToast(outer1_11.TIGGER_PAWTECT_ERROR);
+              outer1_0();
+              c4 = 3;
+              const obj5 = outer1_1(6721);
+            } else if (2 === tmp7) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                dependencyMap = 0;
+                c4 = 3;
+                let obj2 = { value: null, done: true };
+                obj2[0] = arg1;
+                return obj2;
+              } else {
+                obj1 = outer1_1(4395);
+                v0 = 3;
+                c4 = 1;
+                const obj3 = { value: null, done: false };
+                obj3[0] = obj1.pushLazy(v0(function*() {
+                  if (paths === 2) {
+                    paths = 3;
+                    HermesBuiltin.throwTypeError();
+                  } else if (tmp4 === 3) {
+                    if (arg0 === 1) {
+                      throw arg1;
+                    } else if (arg0 === 2) {
+                      let obj = { value: null, done: true };
+                      obj[0] = arg1;
+                      return obj;
+                    } else {
+                      return { value: "HermesInternal", done: null };
+                    }
+                  } else {
+                    try {
+                      paths = 2;
+                      if (0 === c1) {
+                        if (arg0 === 1) {
+                          paths = 3;
+                          throw arg1;
+                        } else if (arg0 === 2) {
+                          paths = 3;
+                          obj = { value: null, done: true };
+                          obj[0] = arg1;
+                          return obj;
+                        } else {
+                          let closure_0 = tmp2;
+                          closure_0 = undefined;
+                          c1 = 1;
+                          paths = 1;
+                          const obj1 = { value: null, done: false };
+                          obj1[0] = outer1_0(paths[10])(paths[9], paths.paths);
+                          return obj1;
+                        }
+                      } else if (arg0 === 1) {
+                        paths = 3;
+                        throw arg1;
+                      } else if (arg0 === 2) {
+                        paths = 3;
+                        const obj2 = { value: null, done: true };
+                        obj2[0] = arg1;
+                        return obj2;
+                      } else {
+                        closure_0 = arg1.default;
+                        paths = 3;
+                        obj = { value: null, done: true };
+                        obj[0] = () => outer2_12(closure_0, { webviewUrl: c2, onClose: closure_0, onComplete: c1 });
+                        return obj;
+                      }
+                    } catch (tmp9) {
+                      paths = tmp;
+                      throw tmp9;
+                    }
+                  }
+                }), {}, outer1_5);
+                return obj3;
+              }
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              dependencyMap = 0;
+            }
+            dependencyMap = 0;
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp24) {
+          if (tmp4 === dependencyMap) {
+            c4 = tmp2;
+            throw tmp24;
+          } else {
+            v0 = tmp;
+          }
+        }
+      }
     })();
     flag = true;
   }
   return flag;
 }
-({ AGE_VERIFICATION_MODAL_KEY: closure_5, AGE_VERIFICATION_GET_STARTED_MODAL_KEY: closure_6, AGE_VERIFICATION_QUEST_UNSUPPORTED_ALERT_KEY: closure_7, VerificationVendorName: closure_8 } = set);
+({ AGE_VERIFICATION_MODAL_KEY: c5, AGE_VERIFICATION_GET_STARTED_MODAL_KEY: closure_6, AGE_VERIFICATION_QUEST_UNSUPPORTED_ALERT_KEY: error, VerificationVendorName: metroImportAll } = set);
 const result = set.fileFinishedImporting("modules/age_assurance/AgeVerificationActionCreators.native.tsx");
 
 export default {
@@ -69,38 +199,90 @@ export default {
     let webviewUrl;
     let fn = onClose.onClose;
     if (fn === undefined) {
-      fn = function n(arg0) {
+      fn = function o(arg0) {
 
       };
     }
     ({ shouldShowExpressiveModal, webviewUrl } = onClose);
-    let obj = { onClose: 0, shouldShowExpressiveModal: 0, webviewUrl: 0, verificationVendorName: 0, incodeParameters: 0 };
-    Object.setPrototypeOf(null);
-    let merged = Object.assign(onClose, obj);
-    if (obj2.isMetaQuest()) {
-      fn(merged[13]).openAlert(closure_7, jsx(webviewUrl(merged[14]), {}), fn);
+    let merged = Object.assign(onClose, Object.create(null));
+    let obj = fn(merged[12]);
+    if (obj.isMetaQuest()) {
+      let tmp2Result = tmp2(tmp3[13]);
+      tmp2Result.openAlert(closure_7, jsx(webviewUrl(tmp3[14]), {}), fn);
       let flag = true;
-      const obj6 = fn(merged[13]);
     } else {
       if (onClose.verificationVendorName === constants.INCODE) {
-        if (obj3.isAgeVerificationIncodeEnabled(merged.entryPoint)) {
-          obj = { onClose: fn, onComplete: merged.onComplete };
+        tmp2Result = tmp2(tmp3[15]);
+        if (tmp2Result.isAgeVerificationIncodeEnabled(merged.entryPoint)) {
+          obj = { onClose: null, onComplete: null };
+          obj[0] = fn;
+          obj[1] = merged.onComplete;
           flag = openIncodeAgeVerificationModal(obj);
         }
-        obj3 = fn(merged[15]);
       }
       flag = null != webviewUrl;
       if (flag) {
-        webviewUrl(merged[8]).pushLazy(callback(async () => {
-          let closure_0;
-          closure_0 = yield fn(merged[10])(merged[16], merged.paths).default;
-          return () => {
-            const merged = Object.assign(outer2_2);
-            return outer3_12(closure_0, { webviewUrl: outer2_1, onClose: outer2_0 });
-          };
+        webviewUrl(tmp3[8]).pushLazy(callback(function*() {
+          if (paths === 2) {
+            paths = 3;
+            HermesBuiltin.throwTypeError();
+          } else if (tmp4 === 3) {
+            if (arg0 === 1) {
+              throw arg1;
+            } else if (arg0 === 2) {
+              let obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              return { value: "HermesInternal", done: null };
+            }
+          } else {
+            try {
+              paths = 2;
+              if (0 === c1) {
+                if (arg0 === 1) {
+                  paths = 3;
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  paths = 3;
+                  obj = { value: null, done: true };
+                  obj[0] = arg1;
+                  return obj;
+                } else {
+                  let closure_0 = tmp2;
+                  closure_0 = undefined;
+                  c1 = 1;
+                  paths = 1;
+                  const obj1 = { value: null, done: false };
+                  obj1[0] = outer1_0(paths[10])(paths[16], paths.paths);
+                  return obj1;
+                }
+              } else if (arg0 === 1) {
+                paths = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                paths = 3;
+                const obj2 = { value: null, done: true };
+                obj2[0] = arg1;
+                return obj2;
+              } else {
+                closure_0 = arg1.default;
+                paths = 3;
+                obj = { value: null, done: true };
+                obj[0] = () => {
+                  const merged = Object.assign(c2);
+                  return outer2_12(closure_0, { webviewUrl: c1, onClose: closure_0 });
+                };
+                return obj;
+              }
+            } catch (tmp9) {
+              paths = tmp;
+              throw tmp9;
+            }
+          }
         }), {}, closure_5);
         flag = true;
-        const obj4 = webviewUrl(merged[8]);
+        const obj3 = webviewUrl(tmp3[8]);
       }
     }
     return flag;
@@ -111,77 +293,182 @@ export default {
     let dependencyMap;
     let prop;
     let currentUser;
-    function handleClose() {
-      let obj = onClose(_undefined[19]);
-      obj = { type: "CLOSE_AGE_VERIFICATION_MODAL", status: prop };
-      obj.dispatch(obj);
-      if (null != onClose) {
-        onClose();
-      }
-    }
-    let obj = entryPoint(1553);
+    let obj = entryPoint(1577);
     if (obj.isMetaQuest()) {
-      let tmpResult = tmp(4507);
-      tmpResult.openAlert(closure_7, jsx(onClose(6746), {}), onClose);
+      let tmpResult = tmp(4530);
+      tmpResult.openAlert(closure_7, jsx(onClose(6767), {}), onClose);
     } else {
-      tmpResult = tmp(4382);
+      tmpResult = tmp(4405);
       let isAgeVerifiedResult = tmpResult.isAgeVerified();
       if (isAgeVerifiedResult) {
-        isAgeVerifiedResult = entryPoint(3844).hasAgeGatedFeatures();
-        const obj3 = entryPoint(3844);
+        isAgeVerifiedResult = tmp(3868).hasAgeGatedFeatures();
+        const tmpResult1 = tmp(3868);
       }
       dependencyMap = isAgeVerifiedResult;
-      if (obj4.isAgeVerificationIncodeEnabled(entryPoint)) {
+      if (tmpResult2.isAgeVerificationIncodeEnabled(entryPoint)) {
         currentUser = currentUser.getCurrentUser();
         prop = undefined;
-        if (null != currentUser) {
+        if (currentUser != null) {
           prop = currentUser.ageVerificationStatus;
         }
-        obj = { type: "INITIATE_AGE_VERIFICATION" };
-        onClose(686).dispatch(obj);
-        obj = {
-          onClose: handleClose,
-          onComplete() {
+        function handleClose() {
+          let obj = onClose(_undefined[19]);
+          obj = { type: "CLOSE_AGE_VERIFICATION_MODAL", status: prop };
+          obj.dispatch(obj);
+          if (onClose != null) {
+            onClose();
+          }
+        }
+        onClose(709).dispatch({ type: "INITIATE_AGE_VERIFICATION" });
+        obj = { onClose: null, onComplete: null };
+        obj[0] = handleClose;
+        obj[1] = function onComplete() {
 
-              }
         };
         if (!openIncodeAgeVerificationModal(obj)) {
-          handleClose();
+          obj = { type: "CLOSE_AGE_VERIFICATION_MODAL", status: null };
+          obj[1] = prop;
+          onClose(709).dispatch(obj);
+          if (onClose != null) {
+            onClose();
+          }
+          const tmp16Result = onClose(709);
         }
       } else {
-        if (!isAgeVerifiedResult) {
-          if (obj5.isExpressiveModalV2Enabled(entryPoint)) {
-            onClose(4372).pushLazy(prop(async () => {
-              let closure_0;
-              closure_0 = yield entryPoint(c2[10])(c2[21], c2.paths).default;
-              return () => outer3_12(closure_0, {
-                entryPoint: outer2_0,
-                onClose() {
-                  let tmp;
-                  if (null != outer3_1) {
-                    tmp = outer3_1();
+        if (tmpResult3.isExpressiveModalV2Enabled(entryPoint)) {
+          onClose(4395).pushLazy(prop(function*() {
+            if (paths === 2) {
+              paths = 3;
+              HermesBuiltin.throwTypeError();
+            } else if (tmp4 === 3) {
+              if (arg0 === 1) {
+                throw arg1;
+              } else if (arg0 === 2) {
+                let obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                return { value: "HermesInternal", done: null };
+              }
+            } else {
+              try {
+                paths = 2;
+                if (0 === c1) {
+                  if (arg0 === 1) {
+                    paths = 3;
+                    throw arg1;
+                  } else if (arg0 === 2) {
+                    paths = 3;
+                    obj = { value: null, done: true };
+                    obj[0] = arg1;
+                    return obj;
+                  } else {
+                    let closure_0 = tmp2;
+                    closure_0 = undefined;
+                    c1 = 1;
+                    paths = 1;
+                    const obj1 = { value: null, done: false };
+                    obj1[0] = outer1_0(paths[10])(paths[21], paths.paths);
+                    return obj1;
                   }
-                  return tmp;
+                } else if (arg0 === 1) {
+                  paths = 3;
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  paths = 3;
+                  const obj2 = { value: null, done: true };
+                  obj2[0] = arg1;
+                  return obj2;
+                } else {
+                  closure_0 = arg1.default;
+                  paths = 3;
+                  obj = { value: null, done: true };
+                  obj[0] = () => outer2_12(closure_0, {
+                    entryPoint: closure_0,
+                    onClose() {
+                      let tmp;
+                      if (callback != null) {
+                        tmp = callback();
+                      }
+                      return tmp;
+                    }
+                  });
+                  return obj;
                 }
-              });
-            }), {}, closure_6);
-            const obj6 = onClose(4372);
-          }
-          obj5 = entryPoint(6749);
+              } catch (tmp9) {
+                paths = tmp;
+                throw tmp9;
+              }
+            }
+          }), {}, closure_6);
+          const obj8 = onClose(4395);
+        } else {
+          currentUser = tmp(7617).isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint);
+          const tmpResult4 = tmp(7617);
+          onClose(4395).pushLazy(prop(function*() {
+            if (paths === 2) {
+              paths = 3;
+              HermesBuiltin.throwTypeError();
+            } else if (tmp4 === 3) {
+              if (arg0 === 1) {
+                throw arg1;
+              } else if (arg0 === 2) {
+                let obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                return { value: "HermesInternal", done: null };
+              }
+            } else {
+              try {
+                paths = 2;
+                if (0 === c1) {
+                  if (arg0 === 1) {
+                    paths = 3;
+                    throw arg1;
+                  } else if (arg0 === 2) {
+                    paths = 3;
+                    obj = { value: null, done: true };
+                    obj[0] = arg1;
+                    return obj;
+                  } else {
+                    let closure_0 = tmp2;
+                    closure_0 = undefined;
+                    c1 = 1;
+                    paths = 1;
+                    const obj1 = { value: null, done: false };
+                    obj1[0] = outer1_0(paths[10])(paths[23], paths.paths);
+                    return obj1;
+                  }
+                } else if (arg0 === 1) {
+                  paths = 3;
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  paths = 3;
+                  const obj2 = { value: null, done: true };
+                  obj2[0] = arg1;
+                  return obj2;
+                } else {
+                  closure_0 = arg1.default;
+                  paths = 3;
+                  obj = { value: null, done: true };
+                  obj[0] = () => outer2_12(closure_0, { entryPoint: closure_0, isRetry: c2, useEmbeddedMethods: outer1_4 });
+                  return obj;
+                }
+              } catch (tmp9) {
+                paths = tmp;
+                throw tmp9;
+              }
+            }
+          }), {}, closure_6);
+          const obj7 = onClose(4395);
         }
-        currentUser = entryPoint(7593).isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint);
-        const obj7 = entryPoint(7593);
-        onClose(4372).pushLazy(prop(async () => {
-          let closure_0;
-          closure_0 = yield entryPoint(c2[10])(c2[23], c2.paths).default;
-          return () => outer3_12(closure_0, { entryPoint: outer2_0, isRetry: outer2_2, useEmbeddedMethods: outer2_4 });
-        }), {}, closure_6);
-        const obj8 = onClose(4372);
+        tmpResult3 = tmp(6770);
       }
-      obj4 = entryPoint(6747);
+      tmpResult2 = tmp(6768);
     }
   },
   openUrl(arg0) {
-    importDefault(3862).openURL(arg0);
+    importDefault(3886).openURL(arg0);
   }
 };

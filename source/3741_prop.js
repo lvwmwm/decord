@@ -1,23 +1,31 @@
 // Module ID: 3741
-// Function ID: 28196
+// Function ID: 3742
 // Name: prop
 // Dependencies: []
 
 // Module 3741 (prop)
 if (Intl.ListFormat) {
   const _Intl = Intl;
-  if ("function" === typeof Intl.ListFormat.__addLocaleData) {
+  if (typeof Intl.ListFormat.__addLocaleData === "find") {
     const _Intl2 = Intl;
-    let obj = {};
-    obj = {};
-    obj = { long: { end: "{0} v\u00E0 {1}", middle: "{0}, {1}", pair: "{0} v\u00E0 {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} v\u00E0 {1}", middle: "{0}, {1}", pair: "{0} v\u00E0 {1}", start: "{0}, {1}" } };
-    obj.conjunction = obj;
-    const obj1 = { long: { end: "{0} ho\u1EB7c {1}", middle: "{0}, {1}", pair: "{0} ho\u1EB7c {1}", start: "{0}, {1}" }, narrow: { end: "{0} ho\u1EB7c {1}", middle: "{0}, {1}", pair: "{0} ho\u1EB7c {1}", start: "{0}, {1}" }, short: { end: "{0} ho\u1EB7c {1}", middle: "{0}, {1}", pair: "{0} ho\u1EB7c {1}", start: "{0}, {1}" } };
-    obj.disjunction = obj1;
-    const obj2 = { long: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } };
-    obj.unit = obj2;
-    obj.data = obj;
-    obj.locale = "vi";
+    let obj = { data: null, locale: "da" };
+    obj = { conjunction: null, disjunction: null, unit: null };
+    obj = { long: null, narrow: null, short: null };
+    obj[0] = { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" };
+    obj[1] = { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" };
+    obj[2] = { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" };
+    obj[0] = obj;
+    const obj1 = { long: null, narrow: null, short: null };
+    obj1[0] = { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" };
+    obj1[1] = { end: "{0} el. {1}", middle: "{0}, {1}", pair: "{0} el. {1}", start: "{0}, {1}" };
+    obj1[2] = { end: "{0} el. {1}", middle: "{0}, {1}", pair: "{0} el. {1}", start: "{0}, {1}" };
+    obj[1] = obj1;
+    const obj2 = { long: null, narrow: null, short: null };
+    obj2[0] = { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" };
+    obj2[1] = { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" };
+    obj2[2] = { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" };
+    obj[2] = obj2;
+    obj[0] = obj;
     ListFormat.__addLocaleData(obj);
   }
 }
@@ -26,4 +34,4 @@ if (!prop) {
   prop = [];
 }
 globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-prop.push({ data: { conjunction: { long: { end: "{0} v\u00E0 {1}", middle: "{0}, {1}", pair: "{0} v\u00E0 {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} v\u00E0 {1}", middle: "{0}, {1}", pair: "{0} v\u00E0 {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} ho\u1EB7c {1}", middle: "{0}, {1}", pair: "{0} ho\u1EB7c {1}", start: "{0}, {1}" }, narrow: { end: "{0} ho\u1EB7c {1}", middle: "{0}, {1}", pair: "{0} ho\u1EB7c {1}", start: "{0}, {1}" }, short: { end: "{0} ho\u1EB7c {1}", middle: "{0}, {1}", pair: "{0} ho\u1EB7c {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" } } }, locale: "vi" });
+prop.push({ data: { conjunction: { long: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, narrow: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, short: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} eller {1}", middle: "{0}, {1}", pair: "{0} eller {1}", start: "{0}, {1}" }, narrow: { end: "{0} el. {1}", middle: "{0}, {1}", pair: "{0} el. {1}", start: "{0}, {1}" }, short: { end: "{0} el. {1}", middle: "{0}, {1}", pair: "{0} el. {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, narrow: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" }, short: { end: "{0} og {1}", middle: "{0}, {1}", pair: "{0} og {1}", start: "{0}, {1}" } } }, locale: "da" });

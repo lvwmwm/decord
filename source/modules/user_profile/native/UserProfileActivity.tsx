@@ -1,29 +1,30 @@
-// Module ID: 11965
-// Function ID: 92423
+// Module ID: 11989
+// Function ID: 11990
 // Name: ActivityCardText
-// Dependencies: [57, 31, 27, 4202, 4184, 1348, 1838, 3793, 4252, 4845, 4181, 5878, 5545, 653, 33, 4165, 689, 477, 4161, 8176, 11966, 3877, 9055, 1212, 10916, 5119, 1392, 8155, 11463, 4011, 9048, 6006, 11971, 11983, 5497, 5517, 11989, 8451, 8462, 11990, 566, 4695, 5544, 1273, 11976, 11991, 11993, 11969, 12001, 11970, 12004, 7953, 12006, 10787, 4262, 5991, 10744, 12007, 4979, 4344, 4133, 10748, 11994, 4355, 12008, 9058, 8292, 4372, 4376, 6669, 5676, 12009, 12011, 12012, 2]
+// Dependencies: [32, 19, 17, 4226, 4208, 1372, 1862, 3817, 4276, 4867, 4205, 5896, 5563, 676, 21, 4189, 712, 500, 4185, 8200, 11990, 3901, 9079, 1236, 10940, 5141, 1416, 8179, 11487, 4035, 9072, 6024, 11995, 12007, 5515, 5535, 12013, 8475, 8486, 12014, 589, 4717, 5562, 1297, 12000, 12015, 12017, 11993, 12025, 11994, 12028, 7978, 12030, 10811, 4286, 6010, 10768, 12031, 5001, 4369, 4157, 10772, 12018, 4380, 12032, 9082, 8316, 4395, 4399, 6690, 5694, 12033, 12035, 12036, 2]
 // Exports: default
 
-// Module 11965 (ActivityCardText)
-import VoicePanelStreamPreview from "VoicePanelStreamPreview";
-import isEmbeddedActivity from "isEmbeddedActivity";
-import get_ActivityIndicator from "isCrunchyrollActivity";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_createForOfIteratorHelperLoose";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
-import closure_15 from "_isNativeReflectConstruct";
-import closure_16 from "_isNativeReflectConstruct";
+// Module 11989 (ActivityCardText)
+import UserProfileActivityCardBadges from "UserProfileActivityCardBadges";
+import isLinkTrusted from "isLinkTrusted";
+import get_ActivityIndicator from "set";
+import addApplication from "addApplication";
+import reset from "reset";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import sortActivity from "sortActivity";
+import filterPlayingActivities from "filterPlayingActivities";
+import updateVoiceState from "updateVoiceState";
+import createUserWidgetFromServer from "createUserWidgetFromServer";
 import { CARD_PADDING } from "ARBITRARY_LARGE_OFFSET";
 import ME from "ME";
-import jsxProd from "getActivityHeader";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "ManaContext";
+import createCacheKey from "createCacheKey";
 import set from "set";
 import set from "get ActivityIndicator";
 
+let c5;
 let closure_17;
 let closure_18;
 let closure_19;
@@ -31,44 +32,39 @@ let closure_20;
 let closure_21;
 let closure_22;
 let closure_23;
-let closure_5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function ActivityCardText(children) {
-  let obj = Object.create(null);
-  obj.children = 0;
-  const merged = Object.assign(children, obj);
+  const merged = Object.assign(children, Object.create(null));
   let trimmed = str;
-  if ("string" === typeof children.children) {
+  if (typeof children.children !== "init") {
     trimmed = str.trim();
   }
-  let tmp4 = null;
+  let tmp3 = null;
   if (null != trimmed) {
-    tmp4 = null;
+    tmp3 = null;
     if ("" !== trimmed) {
-      obj = {};
+      const obj = {};
       const merged1 = Object.assign(merged);
-      obj["children"] = trimmed;
-      tmp4 = callback(require(4161) /* Text */.Text, obj);
+      obj.children = trimmed;
+      tmp3 = callback(require(4185) /* Text */.Text, obj);
     }
   }
-  return tmp4;
+  return tmp3;
 }
 function MaybeLink(href) {
   href = href.href;
   const children = href.children;
   let tmp = children;
   if (null != href) {
-    let obj = {
-      accessibilityRole: "link",
-      onPress() {
-          let obj = href(outer1_2[19]);
-          obj = { href };
-          return obj.handleClick(obj);
-        },
-      children
+    let obj = { accessibilityRole: "link", onPress: null, children: null };
+    obj[1] = function onPress() {
+      let obj = href(outer1_2[19]);
+      obj = { href };
+      return obj.handleClick(obj);
     };
+    obj[2] = children;
     tmp = callback(closure_5, obj);
   }
   return tmp;
@@ -79,312 +75,299 @@ function ActivityCardBody(user) {
   user = user.user;
   const activity = user.activity;
   const onAction = user.onAction;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
+  let IM4J4e = user;
   let obj = user(onAction[20]);
   const imageForActivity = obj.useImageForActivity(activity, user.application, "user_profile_activity_native");
   ({ largeImage, smallImage } = imageForActivity);
   user(onAction[21]);
-  obj = { style: tmp.body };
-  if (!!user.bot) {
-    const items = [tmp7, ];
-    obj = { style: tmp.content };
-    if (activity(onAction[22])(activity)) {
-      let obj1 = { variant: "text-md/semibold" };
-      const obj2 = {
-        text: activity.details,
-        activity,
-        onPress() {
-              return onAction({ action: "OPEN_SPOTIFY_TRACK" });
-            }
+  obj = { style: tmp.body, children: null };
+  if (user.bot) {
+    const items = [tmp8, ];
+    obj = { style: null, children: null };
+    obj[0] = tmp.content;
+    if (activity(tmp2[22])(activity)) {
+      const obj1 = { variant: "text-md/semibold", children: null };
+      const obj2 = { text: null, activity: null, onPress: null };
+      obj2[0] = activity.details;
+      obj2[1] = activity;
+      obj2[2] = function onPress() {
+        return onAction({ action: "OPEN_SPOTIFY_TRACK" });
       };
-      obj1.children = callback(user(onAction[24]).SpotifyTrack, obj2);
-      let tmp49Result = tmp49(ActivityCardText, obj1);
+      obj1[1] = tmp24(IM4J4e(tmp2[24]).SpotifyTrack, obj2);
+      let tmp24Result = tmp24(ActivityCardText, obj1);
+      let tmp29 = ActivityCardText;
+      let tmp30 = tmp24;
+      let tmp31 = tmp24;
     } else {
-      const obj3 = { href: activity.details_url };
-      const obj4 = { variant: "text-md/semibold" };
-      if (activity(onAction[30])(activity)) {
+      const obj3 = { href: null, children: null };
+      obj3[0] = activity.details_url;
+      if (tmp23(tmp2[30])(activity)) {
         let name = activity.name;
       } else {
         name = activity.details;
-        if (null == name) {
+        if (name == null) {
           name = activity.name;
         }
       }
-      obj4.children = name;
-      obj3.children = callback(ActivityCardText, obj4);
-      tmp49Result = tmp49(MaybeLink, obj3);
-      const tmp50 = MaybeLink;
-      const tmp51 = callback;
-      const tmp52 = ActivityCardText;
+      const obj4 = { variant: "text-md/semibold", children: null };
+      obj4[1] = name;
+      obj3[1] = tmp24(ActivityCardText, obj4);
+      tmp24Result = tmp24(MaybeLink, obj3);
+      tmp29 = tmp26;
+      tmp30 = tmp24;
+      tmp31 = tmp24;
+      const tmp25 = MaybeLink;
     }
-    const items1 = [
-      tmp49Result,
-      (() => {
-          if (activity(onAction[22])(activity)) {
-            let trimmed;
-            if (null != tmp.state) {
-              trimmed = str.trim();
-            }
-            let tmp15 = null;
-            if (null != trimmed) {
-              tmp15 = null;
-              if ("" !== trimmed) {
-                let obj = { variant: "text-xs/medium", lineClamp: 1 };
-                obj = {
-                  artists: trimmed,
-                  activity,
-                  userId: user.id,
-                  onPress() {
-                          return outer1_2({ action: "OPEN_SPOTIFY_ARTIST" });
-                        }
-                };
-                obj.children = outer1_21(user(onAction[24]).SpotifyArtists, obj);
-                tmp15 = outer1_21(outer1_25, obj);
-              }
-            }
-            return tmp15;
-          } else {
-            let state = tmp.details;
-            let tmp4 = activity(onAction[30])(tmp);
-            if (!tmp4) {
-              tmp4 = null == activity.state;
-            }
-            if (!tmp4) {
-              state = activity.state;
-            }
-            obj = { href: activity.state_url };
-            const obj1 = { variant: "text-xs/medium", lineClamp: 1, children: state };
-            obj.children = outer1_21(outer1_25, obj1);
-            return outer1_21(outer1_26, obj);
-          }
-        })(),
-  ,
-
-    ];
-    let tmp70Result = null;
-    if (!activity(onAction[22])(activity)) {
-      tmp70Result = null;
+    const items1 = [tmp24Result, , , ];
+    if (activity(tmp2[22])(activity)) {
+      let trimmed;
+      if (activity.state != null) {
+        trimmed = str.trim();
+      }
+      let tmp30Result = null;
+      if (null != trimmed) {
+        tmp30Result = null;
+        if ("" !== trimmed) {
+          const obj5 = { variant: "text-xs/medium", lineClamp: 1, children: null };
+          const obj6 = { artists: null, activity: null, userId: null, onPress: null };
+          obj6[0] = trimmed;
+          obj6[1] = activity;
+          obj6[2] = user.id;
+          obj6[3] = function onPress() {
+            return onAction({ action: "OPEN_SPOTIFY_ARTIST" });
+          };
+          obj5[2] = tmp30(IM4J4e(tmp2[24]).SpotifyArtists, obj6);
+          tmp30Result = tmp30(tmp29, obj5);
+        }
+      }
+    } else {
+      let state = activity.details;
+      let tmp33 = tmp23(tmp2[30])(activity);
+      if (!tmp33) {
+        tmp33 = null == activity.state;
+      }
+      if (!tmp33) {
+        state = activity.state;
+      }
+      const obj7 = { href: null, children: null };
+      obj7[0] = activity.state_url;
+      const obj8 = { variant: "text-xs/medium", lineClamp: 1, children: null };
+      obj8[2] = state;
+      obj7[1] = tmp30(tmp29, obj8);
+      tmp30Result = tmp30(MaybeLink, obj7);
+    }
+    items1[1] = tmp30Result;
+    let tmp30Result1 = null;
+    if (!activity(tmp2[22])(activity)) {
+      tmp30Result1 = null;
       if (activity.type !== constants.WATCHING) {
-        if (activity(onAction[30])(activity)) {
-          if (!activity(onAction[31])(activity)) {
-            tmp70Result = null;
+        if (tmp23(tmp2[30])(activity)) {
+          if (!tmp23(tmp2[31])(activity)) {
+            tmp30Result1 = null;
           }
         }
-        if (activity(onAction[30])(activity)) {
+        if (tmp23(tmp2[30])(activity)) {
           const party = activity.party;
           let size;
-          if (null != party) {
+          if (party != null) {
             size = party.size;
           }
-          let tmp77 = null != size;
-          if (tmp77) {
-            tmp77 = activity.party.size.length >= 2;
+          let tmp47 = null != size;
+          if (tmp47) {
+            tmp47 = activity.party.size.length >= 2;
           }
-          if (!tmp77) {
-            let obj5 = { variant: "text-xs/medium", lineClamp: 1 };
+          if (!tmp47) {
+            const obj9 = { variant: "text-xs/medium", lineClamp: 1, children: null };
             const items2 = [activity.state, ""];
-            obj5.children = items2.join(" ");
-            tmp70Result = callback(ActivityCardText, obj5);
+            obj9[2] = items2.join(" ");
+            tmp30Result1 = tmp30(tmp29, obj9);
           } else if (0 === activity.party.size[1]) {
-            const intl3 = user(onAction[23]).intl;
-            const obj6 = { count: activity.party.size[0] };
-            let formatToPlainStringResult = intl3.formatToPlainString(user(onAction[23]).t.IM4J4e, obj6);
+            const intl3 = IM4J4e(tmp2[23]).intl;
+            IM4J4e = IM4J4e(tmp2[23]).t.IM4J4e;
+            const obj10 = { count: null };
+            obj10[0] = activity.party.size[0];
+            let formatToPlainStringResult = intl3.formatToPlainString(IM4J4e, obj10);
           } else {
-            const intl2 = user(onAction[23]).intl;
-            const obj7 = { count: activity.party.size[0], max: activity.party.size[1] };
-            formatToPlainStringResult = intl2.formatToPlainString(user(onAction[23]).t["u//9By"], obj7);
+            const intl2 = IM4J4e(tmp2[23]).intl;
+            const obj11 = { count: null, max: null };
+            obj11[0] = activity.party.size[0];
+            obj11[1] = activity.party.size[1];
+            formatToPlainStringResult = intl2.formatToPlainString(IM4J4e(tmp2[23]).t["u//9By"], obj11);
           }
         } else {
-          const obj8 = {};
           const assets3 = activity.assets;
           let large_url;
-          if (null != assets3) {
+          if (assets3 != null) {
             large_url = assets3.large_url;
           }
-          obj8.href = large_url;
-          let obj9 = { variant: "text-xs/medium", lineClamp: 1 };
+          const obj12 = { href: null, children: null };
+          obj12[0] = large_url;
           const assets4 = activity.assets;
           let large_text;
-          if (null != assets4) {
+          if (assets4 != null) {
             large_text = assets4.large_text;
           }
-          obj9.children = large_text;
-          obj8.children = callback(ActivityCardText, obj9);
-          tmp70Result = callback(MaybeLink, obj8);
-          const tmp70 = callback;
-          const tmp71 = MaybeLink;
-          const tmp73 = callback;
-          const tmp74 = ActivityCardText;
+          const obj13 = { variant: "text-xs/medium", lineClamp: 1, children: null };
+          obj13[2] = large_text;
+          obj12[1] = tmp30(tmp29, obj13);
+          tmp30Result1 = tmp30(MaybeLink, obj12);
+          const tmp43 = MaybeLink;
         }
       }
     }
-    items1[2] = tmp70Result;
-    let tmp86 = !user.bot;
-    if (tmp86) {
-      const obj10 = { style: tmp.badges, activity };
-      tmp86 = callback(activity(onAction[32]), obj10);
+    items1[2] = tmp30Result1;
+    const bot = user.bot;
+    let tmp31Result = !bot;
+    if (!bot) {
+      const obj14 = { style: null, activity: null };
+      obj14[0] = tmp.badges;
+      obj14[1] = activity;
+      tmp31Result = tmp31(tmp23(tmp2[32]), obj14);
     }
-    items1[3] = tmp86;
-    obj.children = items1;
-    items[1] = closure_22(closure_7, obj);
-    obj.children = items;
-    return tmp5(tmp6, obj);
+    items1[3] = tmp31Result;
+    obj[1] = items1;
+    items[1] = tmp6(tmp7, obj);
+    obj[1] = items;
+    return tmp6(tmp7, obj);
   } else {
     if (null == largeImage) {
       if (null != largeImage) {
-        const obj11 = {};
-        const items3 = [tmp.imageContainer, activity(onAction[27])(activity) ? tmp.crunchyrollImageAspectRatio : tmp.imageAspectRatio];
-        obj11.style = items3;
-        const obj12 = {};
+        const items3 = [tmp.imageContainer, ];
+        const obj15 = { style: null, children: null };
+        items3[1] = activity(tmp2[27])(activity) ? tmp.crunchyrollImageAspectRatio : tmp.imageAspectRatio;
+        obj15[0] = items3;
         const assets = activity.assets;
         let large_url1;
-        if (null != assets) {
+        if (assets != null) {
           large_url1 = assets.large_url;
         }
-        obj12.href = large_url1;
-        let obj13 = {};
-        obj5 = user(onAction[26]);
-        obj13.source = obj5.makeSource(largeImage.src);
-        obj13.alt = largeImage.alt;
-        obj13.style = tmp.largeImage;
-        obj12.children = callback(activity(onAction[25]), obj13);
-        const items4 = [callback(MaybeLink, obj12), ];
-        let tmp25Result = null != smallImage;
-        if (tmp25Result) {
-          const obj14 = { style: tmp.smallImageBackground };
-          const obj15 = {};
+        const obj16 = { href: null, children: null };
+        obj16[0] = large_url1;
+        const obj17 = { source: null, alt: null, style: null };
+        let tmp12Result = tmp12(tmp2[25]);
+        obj17[0] = IM4J4e(tmp2[26]).makeSource(largeImage.src);
+        obj17[1] = largeImage.alt;
+        obj17[2] = tmp.largeImage;
+        obj16[1] = callback(tmp12Result, obj17);
+        const items4 = [callback(MaybeLink, obj16), ];
+        let tmp13Result = null != smallImage;
+        if (tmp13Result) {
+          const obj18 = { style: null, children: null };
+          obj18[0] = tmp.smallImageBackground;
           const assets2 = activity.assets;
           let small_url;
-          if (null != assets2) {
+          if (assets2 != null) {
             small_url = assets2.small_url;
           }
-          obj15.href = small_url;
-          const obj16 = {};
-          obj9 = user(onAction[26]);
-          obj16.source = obj9.makeSource(smallImage.src);
-          obj16.alt = smallImage.alt;
-          obj16.style = tmp.smallImage;
-          obj15.children = callback(activity(onAction[25]), obj16);
-          obj14.children = callback(MaybeLink, obj15);
-          tmp25Result = callback(closure_7, obj14);
-          const tmp25 = callback;
-          const tmp26 = closure_7;
-          const tmp27 = callback;
-          const tmp28 = MaybeLink;
-          const tmp33 = activity(onAction[25]);
+          const obj19 = { href: null, children: null };
+          obj19[0] = small_url;
+          const obj20 = { source: null, alt: null, style: null };
+          tmp12Result = tmp12(tmp2[25]);
+          obj20[0] = IM4J4e(tmp2[26]).makeSource(smallImage.src);
+          obj20[1] = smallImage.alt;
+          obj20[2] = tmp.smallImage;
+          obj19[1] = tmp13(tmp12Result, obj20);
+          obj18[1] = tmp13(tmp14, obj19);
+          tmp13Result = tmp13(tmp7, obj18);
+          const IM4J4eResult1 = IM4J4e(tmp2[26]);
         }
-        items4[1] = tmp25Result;
-        obj11.children = items4;
-        let tmp90Result = closure_22(closure_7, obj11);
-        const tmp12 = closure_22;
-        const tmp13 = closure_7;
-        const tmp16 = callback;
-        const tmp17 = MaybeLink;
-        const tmp22 = activity(onAction[25]);
+        items4[1] = tmp13Result;
+        obj15[1] = items4;
+        let tmp51Result = tmp6(tmp7, obj15);
+        const IM4J4eResult = IM4J4e(tmp2[26]);
       } else {
-        const obj17 = {};
+        const obj21 = { style: null, children: null };
         const items5 = [, ];
         ({ imageContainer: arr7[0], imageAspectRatio: arr7[1] } = tmp);
-        obj17.style = items5;
-        const obj18 = { size: "custom", style: tmp.largeImage };
-        const obj28 = user(onAction[29]);
-        const tmp90 = callback;
-        const tmp91 = closure_7;
-        const tmp92 = callback;
-        const colors = activity(onAction[16]).colors;
-        obj18.color = user(onAction[29]).isThemeDark(tmp4) ? colors.WHITE : colors.BLACK;
-        obj17.children = tmp92(user(onAction[28]).UnknownGameIcon, obj18);
-        tmp90Result = tmp90(tmp91, obj17);
-        const isThemeDarkResult = user(onAction[29]).isThemeDark(tmp4);
+        obj21[0] = items5;
+        const obj22 = { size: "custom", style: null, color: null };
+        obj22[1] = tmp.largeImage;
+        const IM4J4eResult2 = IM4J4e(tmp2[29]);
+        const colors = activity(tmp2[16]).colors;
+        obj22[2] = IM4J4e(tmp2[29]).isThemeDark(tmp5) ? colors.WHITE : colors.BLACK;
+        obj21[1] = callback(IM4J4e(tmp2[28]).UnknownGameIcon, obj22);
+        tmp51Result = tmp51(tmp7, obj21);
+        const isThemeDarkResult = IM4J4e(tmp2[29]).isThemeDark(tmp5);
       }
+    } else {
+      let tmp10 = activity;
     }
-    const obj19 = { accessibilityRole: "button", accessibilityLabel: largeImage.alt };
-    const intl = user(onAction[23]).intl;
-    obj19.accessibilityHint = intl.string(user(onAction[23]).t.sjjOk2);
-    obj19.onPress = function onPress() {
+    const obj23 = { accessibilityRole: "button", accessibilityLabel: null, accessibilityHint: null, onPress: null, children: null };
+    obj23[1] = largeImage.alt;
+    const intl = IM4J4e(tmp2[23]).intl;
+    obj23[2] = intl.string(IM4J4e(tmp2[23]).t.sjjOk2);
+    obj23[3] = function onPress() {
       onAction({ action: "OPEN_SPOTIFY_ALBUM" });
       user(onAction[24]).openAlbum(activity, user.id);
     };
-    const obj20 = {};
+    const obj24 = { style: null, children: null };
     const items6 = [, ];
     ({ imageContainer: arr3[0], imageAspectRatio: arr3[1] } = tmp);
-    obj20.style = items6;
-    const obj21 = {};
-    obj13 = user(onAction[26]);
-    obj21.source = obj13.makeSource(largeImage.src);
-    obj21.alt = largeImage.alt;
+    obj24[0] = items6;
+    tmp10 = tmp10(tmp2[25]);
+    const obj25 = { source: null, alt: null, style: null };
+    obj25[0] = IM4J4e(tmp2[26]).makeSource(largeImage.src);
+    obj25[1] = largeImage.alt;
     largeImage = tmp.largeImage;
-    obj21.style = largeImage;
-    obj20.children = callback(activity(onAction[25]), obj21);
-    obj19.children = callback(closure_7, obj20);
-    tmp90Result = callback(closure_6, obj19);
-    const tmp43 = activity(onAction[25]);
+    obj25[2] = largeImage;
+    obj24[1] = callback(tmp10, obj25);
+    obj23[4] = callback(tmp7, obj24);
+    tmp51Result = callback(closure_6, obj23);
+    const IM4J4eResult3 = IM4J4e(tmp2[26]);
   }
 }
 function ActivityCard(user) {
   let activity;
+  let currentUser;
   let end;
-  let importDefault;
   let start;
   user = user.user;
-  ({ currentUser: importDefault, activity } = user);
+  ({ currentUser, activity } = user);
   const voiceChannel = user.voiceChannel;
-  let React;
-  let c5;
-  let stateFromStores1;
-  const tmp = _createForOfIteratorHelperLoose();
-  let VoicePanelStreamPreview = tmp;
-  const tmp2 = importDefault(activity[33])(activity);
-  const analyticsLocations = importDefault(activity[34])(importDefault(activity[35]).USER_PROFILE_LIVE_ACTIVITY_CARD).analyticsLocations;
-  let obj = { display: "live" };
+  let dependencyMap;
+  let c3;
+  const tmp = createCacheKey();
+  let obj = dependencyMap;
+  const tmp3 = activity(12007)(activity);
+  const analyticsLocations = activity(5515)(activity(5535).USER_PROFILE_LIVE_ACTIVITY_CARD).analyticsLocations;
   let id;
-  const tmp3 = importDefault(activity[34]);
-  if (null != voiceChannel) {
+  const tmp4 = activity(5515);
+  if (voiceChannel != null) {
     id = voiceChannel.id;
   }
-  obj.voiceChannelId = id;
-  obj.user = user;
-  obj.activity = activity;
-  obj.analyticsLocations = analyticsLocations;
-  const tmp4Result = importDefault(activity[36])(obj);
-  React = tmp4Result;
-  obj = { location: "User Profile Activity Card" };
+  const tmp5Result = activity(12013)({ display: "live", voiceChannelId: id, user, activity, analyticsLocations });
+  dependencyMap = tmp5Result;
   const application_id = activity.application_id;
-  let tmp8;
-  const tmp4 = importDefault(activity[36]);
-  if (null != application_id) {
-    tmp8 = application_id;
-  }
-  obj.applicationId = tmp8;
-  obj.source = user(activity[38]).GameProfileSources.UserProfile;
-  obj.trackEntryPointImpression = true;
-  obj.sourceUserId = user.id;
-  const tmp7Result = importDefault(activity[37])(obj);
-  c5 = tmp7Result;
-  const items = [tmp7Result];
+  let tmp2Result = tmp2(8475);
+  obj = { location: "User Profile Activity Card", applicationId: application_id, source: user(8486).GameProfileSources.UserProfile, trackEntryPointImpression: true, sourceUserId: user.id };
+  let ConnectPlatformButton = user;
+  const tmp2ResultResult = tmp2Result(obj);
+  c3 = tmp2ResultResult;
+  const items = [tmp2ResultResult];
   const callback = React.useCallback(() => {
-    if (null != _undefined) {
-      _undefined();
+    if (null != c3) {
+      tmp();
     }
   }, items);
-  obj = { userId: user.id, onAction: tmp4Result };
-  importDefault(activity[39])(obj);
-  let obj3 = user(activity[40]);
-  const items1 = [closure_11, closure_15, closure_10];
+  obj = { userId: user.id, onAction: tmp5Result };
+  activity(12014)(obj);
+  let obj3 = user(589);
+  const items1 = [createGuildRecordFromRust, updateVoiceState, ensureGuildLoaded];
   const stateFromStores = obj3.useStateFromStores(items1, () => {
-    if (outer1_1(activity[31])(activity)) {
+    if (activity(_undefined[31])(activity)) {
       let session_id;
-      if (null != activity) {
-        session_id = activity.session_id;
+      if (tmp != null) {
+        session_id = tmp.session_id;
       }
       const voiceStateForSession = outer1_15.getVoiceStateForSession(user.id, session_id);
       let channelId;
-      if (null != voiceStateForSession) {
+      if (voiceStateForSession != null) {
         channelId = voiceStateForSession.channelId;
       }
       const channel = outer1_10.getChannel(channelId);
       let guildId;
-      if (null != channel) {
+      if (channel != null) {
         guildId = channel.getGuildId();
       }
       return outer1_11.getGuild(guildId);
@@ -392,140 +375,168 @@ function ActivityCard(user) {
       return null;
     }
   });
-  let obj4 = user(activity[40]);
-  const items2 = [_isNativeReflectConstruct];
-  stateFromStores1 = obj4.useStateFromStores(items2, () => {
+  let obj4 = user(589);
+  const items2 = [addApplication];
+  const stateFromStores1 = obj4.useStateFromStores(items2, () => {
     if (null != activity.application_id) {
-      let application = outer1_8.getApplication(activity.application_id);
+      let application = outer1_8.getApplication(tmp.application_id);
     } else {
       application = null;
-      if (null != activity.name) {
-        application = outer1_8.getApplicationByName(activity.name);
+      if (null != tmp.name) {
+        application = outer1_8.getApplicationByName(tmp.name);
       }
     }
     return application;
   });
-  let tmp35Result = null;
+  let tmp15 = null;
   if (activity.type !== constants.CUSTOM_STATUS) {
-    tmp35Result = null;
-    if (activity.type !== constants.HANG_STATUS) {
-      let obj1 = { value: analyticsLocations };
-      let obj2 = { onPress: callback, disabled: null == tmp7Result, accessibilityRole: "button" };
-      const intl = user(activity[23]).intl;
-      obj3 = { gameName: activity.name };
-      obj2.accessibilityLabel = intl.formatToPlainString(user(activity[23]).t["9sZWVp"], obj3);
-      obj4 = {};
+    tmp15 = null;
+    if (activity.type !== tmp14.HANG_STATUS) {
+      const obj1 = { value: null, children: null };
+      obj1[0] = analyticsLocations;
+      let obj2 = { onPress: null, disabled: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
+      obj2[0] = callback;
+      obj2[1] = null == tmp2ResultResult;
+      const intl = ConnectPlatformButton(1236).intl;
+      obj3 = { gameName: null };
+      obj3[0] = activity.name;
+      obj2[3] = intl.formatToPlainString(ConnectPlatformButton(1236).t["9sZWVp"], obj3);
+      obj4 = { style: null, title: null, titleStyle: null, titleIcon: null, children: null };
       const items3 = [tmp.card, user.style];
-      obj4.style = items3;
-      obj4.title = tmp2.text;
-      obj4.titleStyle = tmp.cardTitle;
-      let tmp15Result = null != tmp2.platformIcon;
-      if (tmp15Result) {
-        let obj5 = { style: tmp.cardTitleIcon };
-        let obj6 = user(activity[26]);
-        const platformIcon = tmp2.platformIcon;
+      obj4[0] = items3;
+      obj4[1] = tmp3.text;
+      obj4[2] = tmp.cardTitle;
+      let tmp34Result = null != tmp3.platformIcon;
+      tmp2Result = tmp2(5562);
+      if (tmp34Result) {
+        const obj5 = { style: null, source: null, size: null, disableColor: true };
+        obj5[0] = tmp.cardTitleIcon;
+        const result = ConnectPlatformButton(1416);
+        const platformIcon = tmp3.platformIcon;
         let whitePNG;
-        if (null != platformIcon) {
+        if (platformIcon != null) {
           whitePNG = platformIcon.whitePNG;
         }
-        obj5.source = obj6.makeSource(whitePNG);
-        obj5.size = user(activity[43]).IconSizes.SMALL_14;
-        obj5.disableColor = true;
-        tmp15Result = callback(user(activity[43]).Icon, obj5);
-        const tmp15 = callback;
+        obj5[1] = result.makeSource(whitePNG);
+        obj5[2] = ConnectPlatformButton(1297).IconSizes.SMALL_14;
+        tmp34Result = tmp34(ConnectPlatformButton(1297).Icon, obj5);
       }
-      obj4.titleIcon = tmp15Result;
-      obj6 = { user, activity, application: stateFromStores1, onAction: tmp4Result };
-      const items4 = [callback(ActivityCardBody, obj6), , , ];
-      let tmp26 = null;
-      if (importDefault(activity[44])(activity)) {
+      obj4[3] = tmp34Result;
+      const obj6 = { user: null, activity: null, application: null, onAction: null };
+      obj6[0] = user;
+      obj6[1] = activity;
+      obj6[2] = stateFromStores1;
+      obj6[3] = tmp5Result;
+      const items4 = [closure_21(ActivityCardBody, obj6), , , ];
+      tmp34Result = null;
+      if (tmp2(12000)(activity)) {
         ({ start, end } = activity.timestamps);
-        const obj7 = { start, end };
-        tmp26 = callback(importDefault(activity[45]), obj7);
+        const obj7 = { start: null, end: null };
+        obj7[0] = start;
+        obj7[1] = end;
+        tmp34Result = tmp34(tmp2(12015), obj7);
       }
-      items4[1] = tmp26;
-      let tmp30 = null;
+      items4[1] = tmp34Result;
+      let tmp34Result1 = null;
       if (null != voiceChannel) {
-        tmp30 = null;
+        tmp34Result1 = null;
         if (null != stateFromStores) {
-          const obj8 = { guild: stateFromStores, channel: voiceChannel, onAction: tmp4Result, style: tmp.voiceChannelDivider };
-          tmp30 = callback(importDefault(activity[46]), obj8);
+          const obj8 = { guild: null, channel: null, onAction: null, style: null };
+          obj8[0] = stateFromStores;
+          obj8[1] = voiceChannel;
+          obj8[2] = tmp5Result;
+          obj8[3] = tmp.voiceChannelDivider;
+          tmp34Result1 = tmp34(tmp2(12017), obj8);
         }
       }
-      items4[2] = tmp30;
-      items4[3] = (() => {
-        if (outer1_1(activity[47])(activity)) {
-          let obj = { type: outer1_19.XBOX, onAction: c4 };
-          return outer1_21(user(activity[48]).ConnectPlatformButton, obj);
-        } else if (outer1_1(activity[49])(activity)) {
-          obj = { type: outer1_19.PLAYSTATION, onAction: c4 };
-          return outer1_21(user(activity[48]).ConnectPlatformButton, obj);
-        } else if (user.id === id.id) {
-          return null;
-        } else if (outer1_1(activity[22])(activity)) {
-          const obj1 = { activity, onAction: c4 };
-          return outer1_21(user(activity[48]).PlayOnSpotifyButton, obj1);
-        } else if (outer1_1(activity[31])(activity)) {
-          const obj2 = { user, currentUser: id, activity, application: stateFromStores1, onAction: c4 };
-          return outer1_21(user(activity[48]).JoinActivityButton, obj2);
-        } else {
-          if (outer1_1(activity[30])(activity)) {
-            obj = user(activity[50]);
-            let _Set = Set;
-            let supported_platforms = activity.supported_platforms;
-            const currentActivityGamePlatform = obj.getCurrentActivityGamePlatform();
-            if (null == supported_platforms) {
-              supported_platforms = [];
-            }
-            const prototype = _Set.prototype;
-            _Set = new _Set(supported_platforms);
-            const hasItem = _Set.has(currentActivityGamePlatform);
-            if (null != stateFromStores1) {
-              const deepLinkUri = stateFromStores1.deepLinkUri;
-            }
-            if (hasItem) {
-              if (tmp24) {
-                if (null != deepLinkUri) {
-                  if (null != activity.session_id) {
-                    if (null != stateFromStores1) {
-                      const obj3 = { user, currentUser: id, activity, application: stateFromStores1, onAction: c4 };
-                      return outer1_21(user(activity[48]).JoinGameActivityButton, obj3);
-                    }
+      items4[2] = tmp34Result1;
+      if (tmp2(11993)(activity)) {
+        ConnectPlatformButton = ConnectPlatformButton(12025).ConnectPlatformButton;
+        obj = { type: null, onAction: null };
+        obj[0] = constants2.XBOX;
+        obj[1] = tmp5Result;
+        let tmp34Result2 = tmp34(ConnectPlatformButton, obj);
+      } else if (tmp2(11994)(activity)) {
+        const obj9 = { type: null, onAction: null };
+        obj9[0] = constants2.PLAYSTATION;
+        obj9[1] = tmp5Result;
+        tmp34Result2 = tmp34(ConnectPlatformButton(12025).ConnectPlatformButton, obj9);
+      } else {
+        tmp34Result2 = null;
+        if (user.id !== currentUser.id) {
+          if (tmp2(9079)(activity)) {
+            const obj10 = { activity: null, onAction: null };
+            obj10[0] = activity;
+            obj10[1] = tmp5Result;
+            tmp34Result2 = tmp34(ConnectPlatformButton(12025).PlayOnSpotifyButton, obj10);
+          } else if (tmp2(6024)(activity)) {
+            const obj11 = { user: null, currentUser: null, activity: null, application: null, onAction: null };
+            obj11[0] = user;
+            obj11[1] = currentUser;
+            obj11[2] = activity;
+            obj11[3] = stateFromStores1;
+            obj11[4] = tmp5Result;
+            tmp34Result2 = tmp34(ConnectPlatformButton(12025).JoinActivityButton, obj11);
+          } else {
+            if (tmp2(9072)(activity)) {
+              const result1 = ConnectPlatformButton(12028);
+              let supported_platforms = activity.supported_platforms;
+              const currentActivityGamePlatform = result1.getCurrentActivityGamePlatform();
+              if (supported_platforms == null) {
+                supported_platforms = [];
+              }
+              const set = new Set(supported_platforms);
+              if (set.has(currentActivityGamePlatform)) {
+                if (null != activity.party) {
+                  let deepLinkUri;
+                  if (stateFromStores1 != null) {
+                    deepLinkUri = stateFromStores1.deepLinkUri;
+                  }
+                  if (null != deepLinkUri) {
+                    const obj12 = { user: null, currentUser: null, activity: null, application: null, onAction: null };
+                    obj12[0] = user;
+                    obj12[1] = currentUser;
+                    obj12[2] = activity;
+                    obj12[3] = stateFromStores1;
+                    obj12[4] = tmp5Result;
+                    tmp34Result2 = tmp34(ConnectPlatformButton(12025).JoinGameActivityButton, obj12);
                   }
                 }
               }
             }
-            tmp24 = null != activity.party;
-          }
-          if (outer1_1(activity[51])(activity)) {
-            const obj4 = { activity, onAction: c4 };
-            let tmp34 = outer1_21(user(activity[48]).WatchActivityButton, obj4);
-          } else {
-            tmp34 = null;
-            if (null != activity.buttons) {
-              tmp34 = null;
-              if (activity.buttons.length > 0) {
-                const obj5 = { style: tmp.customButtons };
-                const buttons = activity.buttons;
-                obj5.children = buttons.map((arg0, index) => outer2_21(user(activity[48]).CustomActivityButton, { index, user: outer1_0, activity: outer1_2, onAction: outer1_4 }, index));
-                tmp34 = outer1_21(outer1_7, obj5);
+            if (tmp2(7978)(activity)) {
+              const obj13 = { activity: null, onAction: null };
+              obj13[0] = activity;
+              obj13[1] = tmp5Result;
+              let tmp34Result3 = tmp34(ConnectPlatformButton(12025).WatchActivityButton, obj13);
+            } else {
+              tmp34Result3 = null;
+              if (null != activity.buttons) {
+                tmp34Result3 = null;
+                if (activity.buttons.length > 0) {
+                  const obj14 = { style: null, children: null };
+                  obj14[0] = tmp.customButtons;
+                  const buttons = activity.buttons;
+                  obj14[1] = buttons.map((arg0, index) => outer1_21(user(_undefined[48]).CustomActivityButton, { index, user, activity, onAction: _undefined }, index));
+                  tmp34Result3 = tmp34(closure_7, obj14);
+                }
               }
             }
+            tmp34Result2 = tmp34Result3;
           }
-          return tmp34;
         }
-      })();
-      obj4.children = items4;
-      obj2.children = closure_22(importDefault(activity[42]), obj4);
-      obj1.children = callback(user(activity[41]).PressableOpacity, obj2);
-      tmp35Result = callback(user(activity[34]).AnalyticsLocationProvider, obj1);
-      const tmp35 = callback;
-      const tmp38 = callback;
-      const tmp39 = closure_22;
-      const tmp41 = importDefault(activity[42]);
+      }
+      items4[3] = tmp34Result2;
+      obj4[4] = items4;
+      obj4 = closure_22(tmp2Result, obj4);
+      obj2[4] = obj4;
+      obj2 = tmp34(ConnectPlatformButton(4717).PressableOpacity, obj2);
+      obj1[1] = obj2;
+      closure_21(ConnectPlatformButton(5515).AnalyticsLocationProvider, obj1);
+      const tmp35 = closure_22;
     }
   }
-  return tmp35Result;
+  return tmp15;
 }
 function StreamActivityCard(user) {
   let effectiveVolume;
@@ -533,157 +544,160 @@ function StreamActivityCard(user) {
   user = user.user;
   const stream = user.stream;
   const activity = user.activity;
+  let stateFromStores;
   let c4;
-  let tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let obj = user(activity[40]);
-  const items = [closure_10];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getChannel(stream.channelId));
+  const items = [ensureGuildLoaded];
+  stateFromStores = obj.useStateFromStores(items, () => outer1_10.getChannel(stream.channelId));
   let obj1 = user(activity[40]);
-  const items1 = [closure_15];
+  const items1 = [updateVoiceState];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => {
     let id;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       id = stateFromStores.id;
     }
     return outer1_15.isInChannel(id);
   });
   let obj2 = user(activity[40]);
-  const items2 = [closure_11];
+  const items2 = [createGuildRecordFromRust];
   const stateFromStores2 = obj2.useStateFromStores(items2, () => outer1_11.getGuild(stream.guildId));
   let obj3 = user(activity[40]);
-  const items3 = [closure_13];
-  const stateFromStores3 = obj3.useStateFromStores(items3, () => outer1_13.findActivity(user.id, (arg0) => {
-    let tmp = stream(activity[30])(arg0);
-    if (tmp) {
-      tmp = !stream(activity[52])(arg0);
-    }
-    return tmp;
-  }));
+  const items3 = [sortActivity];
+  const stateFromStores3 = obj3.useStateFromStores(items3, () => outer1_13.findActivity(user.id, (arg0) => callback(table[30])(arg0) && !callback(table[52])(arg0)));
   let obj4 = user(activity[40]);
-  const items4 = [closure_9];
+  const items4 = [reset];
   const stateFromStores4 = obj4.useStateFromStores(items4, () => outer1_9.getActiveStreamForUser(user.id, undefined));
   let ownerId;
-  if (null != stateFromStores4) {
+  if (stateFromStores4 != null) {
     ownerId = stateFromStores4.ownerId;
   }
-  const tmp7 = stream(activity[53]);
+  const tmp10 = stream(activity[53]);
   ({ effectiveVolume, handleVolumeChange } = stream(activity[53])(ownerId, user(activity[54]).MediaEngineContextTypes.STREAM));
-  let obj5 = user(activity[40]);
-  const items5 = [_isNativeReflectConstruct];
-  const stateFromStores5 = obj5.useStateFromStores(items5, () => {
+  let tmp2Result = tmp2(tmp3[40]);
+  const items5 = [addApplication];
+  const stateFromStores5 = tmp2Result.useStateFromStores(items5, () => {
     let application_id;
-    if (null != activity) {
-      application_id = activity.application_id;
+    if (activity != null) {
+      application_id = tmp.application_id;
     }
     if (null != application_id) {
-      let application = outer1_8.getApplication(activity.application_id);
+      let application = outer1_8.getApplication(tmp.application_id);
     } else {
       let name;
-      if (null != activity) {
-        name = activity.name;
+      if (tmp != null) {
+        name = tmp.name;
       }
       application = null;
       if (null != name) {
-        application = outer1_8.getApplicationByName(activity.name);
+        application = outer1_8.getApplicationByName(tmp.name);
       }
     }
     return application;
   });
-  let obj6 = user(activity[55]);
-  const tmp7Result = stream(activity[53])(ownerId, user(activity[54]).MediaEngineContextTypes.STREAM);
-  const analyticsLocations = stream(activity[34])(stream(activity[35]).USER_PROFILE_LIVE_ACTIVITY_CARD).analyticsLocations;
-  obj = { display: "live" };
+  tmp2Result = tmp2(tmp3[55]);
+  let tmp9Result = tmp9(tmp3[34]);
+  const analyticsLocations = tmp9Result(tmp9(tmp3[35]).USER_PROFILE_LIVE_ACTIVITY_CARD).analyticsLocations;
   let id;
-  const tmp11 = stream(activity[34]);
-  if (null != stateFromStores) {
+  tmp9Result = tmp9(tmp3[36]);
+  if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  obj.voiceChannelId = id;
-  obj.user = user;
-  obj.stream = stream;
-  obj.analyticsLocations = analyticsLocations;
-  const tmp12Result = stream(activity[36])(obj);
-  c4 = tmp12Result;
-  obj = { userId: user.id, onAction: tmp12Result };
+  const tmp9Result1Result = tmp9Result({ display: "live", voiceChannelId: id, user, stream, analyticsLocations });
+  c4 = tmp9Result1Result;
+  obj = { userId: user.id, onAction: tmp9Result1Result };
   stream(activity[39])(obj);
-  let obj9 = stream(activity[56]);
-  obj1 = { value: analyticsLocations };
-  obj2 = { style: items6 };
+  const tmp10Result = stream(activity[53])(ownerId, user(activity[54]).MediaEngineContextTypes.STREAM);
+  obj = { value: analyticsLocations, children: null };
+  obj1 = { style: items6, title: null, titleStyle: null, titleIcon: null, children: null };
   items6 = [tmp.card, user.style];
-  const tmp12 = stream(activity[36]);
-  const tmp16 = callback;
-  const tmp17 = closure_22;
+  const tmp20 = closure_22;
+  const tmp9Result1 = stream(activity[56]);
   if (null != stateFromStores3) {
-    const intl2 = user(activity[23]).intl;
-    obj3 = { name: stateFromStores3.name };
-    let formatToPlainStringResult = intl2.formatToPlainString(user(activity[23]).t["4CQq9Q"], obj3);
+    const intl2 = tmp2(tmp3[23]).intl;
+    obj2 = { name: null };
+    obj2[0] = stateFromStores3.name;
+    let formatToPlainStringResult = intl2.formatToPlainString(tmp2(tmp3[23]).t["4CQq9Q"], obj2);
   } else {
-    const intl = user(activity[23]).intl;
-    formatToPlainStringResult = intl.string(user(activity[23]).t["Jpkr/q"]);
+    const intl = tmp2(tmp3[23]).intl;
+    formatToPlainStringResult = intl.string(tmp2(tmp3[23]).t["Jpkr/q"]);
   }
-  obj2.title = formatToPlainStringResult;
-  obj2.titleStyle = tmp.cardTitle;
-  obj2.titleIcon = callback(user(activity[43]).LiveTag, {});
-  obj4 = { style: tmp.streamPreview, children: callback(user(activity[57]).VoicePanelStreamPreview, obj5) };
-  obj5 = {
-    mode: undefined,
-    stream,
-    disabled: !stateFromStores(obj6.useCanWatchStream(stateFromStores), 1)[0],
-    onPress() {
-      _undefined({ action: "PRESS_IMAGE" });
-      const voiceChannel = stream(activity[58]).selectVoiceChannel(stream.channelId);
-      const obj = stream(activity[58]);
-      const result = user(activity[59]).watchStreamAndTransitionToStream(stream);
-      const obj2 = user(activity[59]);
-      stream(activity[60]).hideActionSheet();
-    }
+  obj1[1] = formatToPlainStringResult;
+  obj1[2] = tmp.cardTitle;
+  obj1[3] = closure_21(user(activity[43]).LiveTag, {});
+  obj3 = { style: tmp.streamPreview, children: tmp19(tmp2(tmp3[57]).VoicePanelStreamPreview, obj4) };
+  obj4 = { mode: "a", stream: "<string:134218590>", disabled: "<string:3087008493>", onPress: "<string:436208454>" };
+  obj4[1] = stream;
+  obj4[2] = !stateFromStores(tmp2Result.useCanWatchStream(stateFromStores), 1)[0];
+  obj4[3] = function onPress() {
+    _undefined({ action: "PRESS_IMAGE" });
+    const voiceChannel = stream(activity[58]).selectVoiceChannel(stream.channelId);
+    const obj = stream(activity[58]);
+    const result = user(activity[59]).watchStreamAndTransitionToStream(stream);
+    const obj2 = user(activity[59]);
+    stream(activity[60]).hideActionSheet();
   };
-  const items7 = [callback(closure_7, obj4), , , , ];
-  let tmp24 = null != stateFromStores4 && !obj9.useConfig({ location: "UserProfileVoiceSettings" }).nonContextualStreamOutputPresent;
-  if (tmp24) {
-    obj6 = { value: effectiveVolume, onValueChange: handleVolumeChange };
-    tmp24 = callback(stream(activity[61]), obj6, "set-stream-volume");
+  const items7 = [closure_21(closure_7, obj3), , , , ];
+  let tmp19Result = null != stateFromStores4 && !tmp9Result1.useConfig({ location: "UserProfileVoiceSettings" }).nonContextualStreamOutputPresent;
+  if (tmp19Result) {
+    const obj5 = { value: null, onValueChange: null };
+    obj5[0] = effectiveVolume;
+    obj5[1] = handleVolumeChange;
+    tmp19Result = tmp19(tmp9(tmp3[61]), obj5, "set-stream-volume");
   }
-  items7[1] = tmp24;
-  let tmp28 = null != activity;
-  if (tmp28) {
-    tmp28 = stream(activity[31])(activity);
+  items7[1] = tmp19Result;
+  tmp19Result = null != activity && tmp9(tmp3[31])(activity);
+  if (tmp19Result) {
+    const obj6 = { user: null, activity: null, application: null, onAction: null };
+    obj6[0] = user;
+    obj6[1] = activity;
+    obj6[2] = stateFromStores5;
+    obj6[3] = tmp9Result1Result;
+    tmp19Result = tmp19(ActivityCardBody, obj6);
   }
-  if (tmp28) {
-    const obj7 = { user, activity, application: stateFromStores5, onAction: tmp12Result };
-    tmp28 = callback(ActivityCardBody, obj7);
+  items7[2] = tmp19Result;
+  let tmp19Result1 = null != stateFromStores2 && null != stateFromStores;
+  if (tmp19Result1) {
+    const obj7 = { guild: null, channel: null, onAction: null, style: null };
+    obj7[0] = stateFromStores2;
+    obj7[1] = stateFromStores;
+    obj7[2] = tmp9Result1Result;
+    obj7[3] = tmp.voiceChannelDivider;
+    tmp19Result1 = tmp19(tmp9(tmp3[46]), obj7);
   }
-  items7[2] = tmp28;
-  let tmp33 = null != stateFromStores2 && null != stateFromStores;
-  if (tmp33) {
-    const obj8 = { guild: stateFromStores2, channel: stateFromStores, onAction: tmp12Result, style: tmp.voiceChannelDivider };
-    tmp33 = callback(stream(activity[46]), obj8);
+  items7[3] = tmp19Result1;
+  let tmp19Result2 = null != stateFromStores;
+  if (tmp19Result2) {
+    const obj8 = { channel: null, isInChannel: null, onAction: null };
+    obj8[0] = stateFromStores;
+    obj8[1] = stateFromStores1;
+    obj8[2] = tmp9Result1Result;
+    tmp19Result2 = tmp19(tmp2(tmp3[48]).VoiceChannelButtons, obj8);
   }
-  items7[3] = tmp33;
-  let tmp37 = null != stateFromStores;
-  if (tmp37) {
-    obj9 = { channel: stateFromStores, isInChannel: stateFromStores1, onAction: tmp12Result };
-    tmp37 = callback(user(activity[48]).VoiceChannelButtons, obj9);
-  }
-  items7[4] = tmp37;
-  obj2.children = items7;
-  obj1.children = tmp17(stream(activity[42]), obj2);
-  return tmp16(user(activity[34]).AnalyticsLocationProvider, obj1);
+  items7[4] = tmp19Result2;
+  obj1[4] = items7;
+  obj[1] = tmp20(stream(activity[42]), obj1);
+  return closure_21(user(activity[34]).AnalyticsLocationProvider, obj);
 }
 function VoiceCallActivityCard(arg0) {
+  let analyticsLocations;
+  let c2;
   let channel;
   let isInChannel;
   let style;
   let user;
   ({ user, channel } = arg0);
+  let stateFromStores;
+  let dependencyMap;
+  let c3;
   ({ isInChannel, style } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp3 = stateFromStores(newestAnalyticsLocation[63])(channel);
-  let obj = channel(newestAnalyticsLocation[40]);
-  const items = [closure_11];
+  const tmp = createCacheKey();
+  const tmp5 = stateFromStores(4380)(channel);
+  let obj = channel(589);
+  const items = [createGuildRecordFromRust];
   stateFromStores = obj.useStateFromStores(items, () => outer1_11.getGuild(channel.guild_id));
-  let obj1 = channel(newestAnalyticsLocation[40]);
-  const items1 = [closure_12];
+  let obj1 = channel(589);
+  const items1 = [getUncachedChannelPermissions];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => {
     let isPrivateResult = channel.isPrivate();
     if (!isPrivateResult) {
@@ -691,23 +705,22 @@ function VoiceCallActivityCard(arg0) {
     }
     return isPrivateResult;
   });
-  const tmp2 = stateFromStores(newestAnalyticsLocation[62])(channel);
-  const tmp6Result = stateFromStores(newestAnalyticsLocation[34])(stateFromStores(newestAnalyticsLocation[35]).USER_PROFILE_VOICE_ACTIVITY_CARD);
-  newestAnalyticsLocation = tmp6Result.newestAnalyticsLocation;
-  obj = { display: "voice", activity: { type: "VOICE" }, voiceChannelId: channel.id, user, analyticsLocations: tmp6Result.analyticsLocations };
-  const tmp8 = stateFromStores(newestAnalyticsLocation[36])(obj);
-  let VoicePanelStreamPreview = tmp8;
-  obj = { userId: user.id, onAction: tmp8 };
-  stateFromStores(newestAnalyticsLocation[39])(obj);
-  obj1 = { style: items2 };
+  const tmp4 = stateFromStores(12018)(channel);
+  const tmp9 = stateFromStores(5515);
+  ({ newestAnalyticsLocation: c2, analyticsLocations } = stateFromStores(5515)(stateFromStores(5535).USER_PROFILE_VOICE_ACTIVITY_CARD));
+  obj = { display: "voice", activity: { type: "VOICE" }, voiceChannelId: channel.id, user, analyticsLocations };
+  const tmp11 = stateFromStores(12013)(obj);
+  c3 = tmp11;
+  obj = { userId: user.id, onAction: tmp11 };
+  stateFromStores(12014)(obj);
+  obj1 = { style: items2, title: null, titleStyle: null, children: null };
   items2 = [tmp.card, style];
-  const tmp10 = callback2;
-  const tmp6 = stateFromStores(newestAnalyticsLocation[34]);
+  const tmp9Result = stateFromStores(5515)(stateFromStores(5535).USER_PROFILE_VOICE_ACTIVITY_CARD);
   if (!channel.isDM()) {
     if (!channel.isGroupDM()) {
-      const intl = channel(newestAnalyticsLocation[23]).intl;
+      const intl = tmp6(1236).intl;
       const string = intl.string;
-      const t = channel(newestAnalyticsLocation[23]).t;
+      const t = tmp6(1236).t;
       if (isGuildStageVoiceResult) {
         let stringResult = string(t.QygGCN);
       } else {
@@ -715,119 +728,129 @@ function VoiceCallActivityCard(arg0) {
       }
       isGuildStageVoiceResult = channel.isGuildStageVoice();
     }
-    obj1.title = stringResult;
-    obj1.titleStyle = tmp.cardTitle;
-    let obj2 = { style: tmp.body };
-    const obj3 = { users: tmp2 };
+    obj1[1] = stringResult;
+    obj1[2] = tmp.cardTitle;
+    let obj2 = { style: null, children: null };
+    obj2[0] = tmp.body;
+    const obj3 = { users: null, guildId: null };
+    obj3[0] = tmp4;
     let id;
-    if (null != stateFromStores) {
+    if (stateFromStores != null) {
       id = stateFromStores.id;
     }
-    obj3.guildId = id;
-    const items3 = [callback(stateFromStores(newestAnalyticsLocation[64]), obj3), ];
-    const obj4 = { style: tmp.voiceCallContent };
+    obj3[1] = id;
+    const items3 = [closure_21(tmp2(12032), obj3), ];
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.voiceCallContent;
     if (stateFromStores1) {
-      const obj5 = { accessibilityRole: "button" };
-      const obj6 = { channel };
-      obj5.accessibilityLabel = stateFromStores(newestAnalyticsLocation[66])(obj6);
-      const intl3 = channel(newestAnalyticsLocation[23]).intl;
-      obj5.accessibilityHint = intl3.string(channel(newestAnalyticsLocation[23]).t["9C444m"]);
-      obj5.onPress = function onPress() {
-        tmp8({ action: "OPEN_VOICE_CHANNEL" });
-        stateFromStores(newestAnalyticsLocation[60]).hideActionSheet();
-        const obj = stateFromStores(newestAnalyticsLocation[60]);
-        stateFromStores(newestAnalyticsLocation[67]).popAll();
-        const obj2 = stateFromStores(newestAnalyticsLocation[67]);
-        channel(newestAnalyticsLocation[68]).openGuildVoiceModal(channel, newestAnalyticsLocation);
+      const obj5 = { accessibilityRole: "button", accessibilityLabel: null, accessibilityHint: null, onPress: null, children: null };
+      const obj6 = { channel: null };
+      obj6[0] = channel;
+      obj5[1] = tmp2(8316)(obj6);
+      const intl3 = tmp6(1236).intl;
+      obj5[2] = intl3.string(tmp6(1236).t["9C444m"]);
+      obj5[3] = function onPress() {
+        _undefined2({ action: "OPEN_VOICE_CHANNEL" });
+        stateFromStores(_undefined[60]).hideActionSheet();
+        const obj = stateFromStores(_undefined[60]);
+        stateFromStores(_undefined[67]).popAll();
+        const obj2 = stateFromStores(_undefined[67]);
+        channel(_undefined[68]).openGuildVoiceModal(channel, _undefined);
       };
-      const obj7 = { variant: "text-md/semibold", color: "mobile-text-heading-primary" };
-      const obj8 = { style: tmp.voiceCallNameIconWrapper };
-      const obj9 = { channel, size: "sm", color: "mobile-text-heading-primary" };
-      obj8.children = callback(stateFromStores(newestAnalyticsLocation[65]), obj9);
-      const items4 = [callback(closure_7, obj8), tmp3];
-      obj7.children = items4;
-      obj5.children = callback2(channel(newestAnalyticsLocation[18]).Text, obj7);
-      let tmp33 = callback(channel(newestAnalyticsLocation[41]).PressableOpacity, obj5);
+      const obj7 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
+      const obj8 = { style: null, children: null };
+      obj8[0] = tmp.voiceCallNameIconWrapper;
+      const obj9 = { channel: null, size: "sm", color: "mobile-text-heading-primary" };
+      obj9[0] = channel;
+      obj8[1] = tmp18(tmp2(9082), obj9);
+      const items4 = [tmp18(tmp17, obj8), tmp5];
+      obj7[2] = items4;
+      obj5[4] = tmp13(tmp6(4185).Text, obj7);
+      let tmp13Result = tmp18(tmp6(4717).PressableOpacity, obj5);
     } else {
-      const obj10 = { variant: "text-md/semibold", color: "mobile-text-heading-primary" };
-      const obj11 = { style: tmp.voiceCallNameIconWrapper };
-      const obj12 = { channel, size: "sm", color: "mobile-text-heading-primary" };
-      obj11.children = callback(stateFromStores(newestAnalyticsLocation[65]), obj12);
-      const items5 = [callback(closure_7, obj11), tmp3];
-      obj10.children = items5;
-      tmp33 = callback2(channel(newestAnalyticsLocation[18]).Text, obj10);
+      const obj10 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
+      const obj11 = { style: null, children: null };
+      obj11[0] = tmp.voiceCallNameIconWrapper;
+      const obj12 = { channel: null, size: "sm", color: "mobile-text-heading-primary" };
+      obj12[0] = channel;
+      obj11[1] = tmp18(tmp2(9082), obj12);
+      const items5 = [tmp18(tmp17, obj11), tmp5];
+      obj10[2] = items5;
+      tmp13Result = tmp13(tmp6(4185).Text, obj10);
     }
-    const items6 = [tmp33, ];
-    let tmp42 = null;
+    const items6 = [tmp13Result, ];
+    let tmp18Result = null;
     if (null != stateFromStores) {
-      const obj13 = { accessibilityRole: "button" };
-      const intl4 = channel(newestAnalyticsLocation[23]).intl;
-      obj13.accessibilityHint = intl4.string(channel(newestAnalyticsLocation[23]).t.KLOhbO);
-      const intl5 = channel(newestAnalyticsLocation[23]).intl;
-      const obj14 = { guildName: stateFromStores.name };
-      obj13.accessibilityLabel = intl5.formatToPlainString(channel(newestAnalyticsLocation[23]).t["hq/Qze"], obj14);
-      obj13.onPress = function onPress() {
-        tmp8({ action: "OPEN_VOICE_GUILD" });
-        channel(newestAnalyticsLocation[69]).transitionToGuild(stateFromStores.id);
-        stateFromStores(newestAnalyticsLocation[70])();
-        const obj = channel(newestAnalyticsLocation[69]);
-        stateFromStores(newestAnalyticsLocation[60]).hideActionSheet();
+      const obj13 = { accessibilityRole: "button", accessibilityHint: null, accessibilityLabel: null, onPress: null, children: null };
+      const intl4 = tmp6(1236).intl;
+      obj13[1] = intl4.string(tmp6(1236).t.KLOhbO);
+      const intl5 = tmp6(1236).intl;
+      const obj14 = { guildName: null };
+      obj14[0] = stateFromStores.name;
+      obj13[2] = intl5.formatToPlainString(tmp6(1236).t["hq/Qze"], obj14);
+      obj13[3] = function onPress() {
+        _undefined2({ action: "OPEN_VOICE_GUILD" });
+        channel(_undefined[69]).transitionToGuild(stateFromStores.id);
+        stateFromStores(_undefined[70])();
+        const obj = channel(_undefined[69]);
+        stateFromStores(_undefined[60]).hideActionSheet();
       };
-      const obj15 = { variant: "text-xs/medium" };
-      const intl6 = channel(newestAnalyticsLocation[23]).intl;
-      const obj16 = { guildName: stateFromStores.name };
-      obj15.children = intl6.format(channel(newestAnalyticsLocation[23]).t["hq/Qze"], obj16);
-      obj13.children = callback(channel(newestAnalyticsLocation[18]).Text, obj15);
-      tmp42 = callback(channel(newestAnalyticsLocation[41]).PressableOpacity, obj13);
+      const obj15 = { variant: "text-xs/medium", children: null };
+      const intl6 = tmp6(1236).intl;
+      const obj16 = { guildName: null };
+      obj16[0] = stateFromStores.name;
+      obj15[1] = intl6.format(tmp6(1236).t["hq/Qze"], obj16);
+      obj13[4] = tmp18(tmp6(4185).Text, obj15);
+      tmp18Result = tmp18(tmp6(4717).PressableOpacity, obj13);
     }
-    items6[1] = tmp42;
-    obj4.children = items6;
-    items3[1] = callback2(closure_7, obj4);
-    obj2.children = items3;
-    const items7 = [callback2(closure_7, obj2), ];
-    const obj17 = { channel, isInChannel, onAction: tmp8 };
-    items7[1] = callback(channel(newestAnalyticsLocation[48]).VoiceChannelButtons, obj17);
-    obj1.children = items7;
-    return tmp10(tmp11, obj1);
+    items6[1] = tmp18Result;
+    obj4[1] = items6;
+    items3[1] = tmp13(closure_7, obj4);
+    obj2[1] = items3;
+    const items7 = [tmp13(closure_7, obj2), ];
+    const obj17 = { channel: null, isInChannel: null, onAction: null };
+    obj17[0] = channel;
+    obj17[1] = isInChannel;
+    obj17[2] = tmp11;
+    items7[1] = closure_21(tmp6(12025).VoiceChannelButtons, obj17);
+    obj1[3] = items7;
+    return tmp13(tmp14, obj1);
   }
-  const intl2 = channel(newestAnalyticsLocation[23]).intl;
-  stringResult = intl2.string(channel(newestAnalyticsLocation[23]).t["9FaEzi"]);
+  const intl2 = tmp6(1236).intl;
+  stringResult = intl2.string(tmp6(1236).t["9FaEzi"]);
 }
-({ TouchableOpacity: closure_5, TouchableWithoutFeedback: closure_6, View: closure_7 } = get_ActivityIndicator);
+({ TouchableOpacity: c5, TouchableWithoutFeedback: closure_6, View: error } = get_ActivityIndicator);
 ({ ActivityTypes: closure_17, Permissions: closure_18, PlatformTypes: closure_19, StatusTypes: closure_20 } = ME);
 ({ jsx: closure_21, jsxs: closure_22, Fragment: closure_23 } = jsxProd);
-_createForOfIteratorHelperLoose = { card: { gap: 12 }, cardTitle: { marginBottom: 0 } };
-_createForOfIteratorHelperLoose = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
+createCacheKey = { card: { gap: 12 }, cardTitle: { marginBottom: 0 }, cardTitleIcon: null, body: null, content: null, imageContainer: null, imageAspectRatio: null, crunchyrollImageAspectRatio: null, largeImage: null, smallImageBackground: null, smallImage: null, badges: null, voiceChannelDivider: null, customButtons: null, streamPreview: null, voiceActivityCard: null, voiceSettings: null, voiceSettingsDivider: null, voiceCallContent: null, voiceCallNameIconWrapper: null };
+createCacheKey = { tintColor: require("Themes").colors.TEXT_SUBTLE };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { flexDirection: "row", alignItems: "center", gap: 16 };
+createCacheKey[4] = { flex: 1 };
+createCacheKey[5] = { position: "relative" };
+createCacheKey[6] = { width: 60, maxHeight: 60, aspectRatio: "1 / 1" };
+createCacheKey[7] = { width: 60, maxHeight: 100, aspectRatio: "2 / 3" };
+createCacheKey[8] = { borderRadius: require("Themes").radii.xs, width: "100%", height: "100%" };
+let obj1 = { borderRadius: require("Themes").radii.xs, width: "100%", height: "100%" };
+createCacheKey[9] = { borderRadius: 16, position: "absolute", right: -4, bottom: -4, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[10] = { width: 24, height: 24, borderRadius: 12 };
+createCacheKey[11] = { marginTop: 4, flexDirection: "row", flexWrap: "wrap", columnGap: 8, rowGap: 0 };
+let obj2 = { borderRadius: 16, position: "absolute", right: -4, bottom: -4, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[12] = { borderTopWidth: 1, borderTopColor: require("Themes").colors.BORDER_SUBTLE, paddingTop: 12 };
+createCacheKey[13] = { flexDirection: "column", gap: 8 };
+let obj3 = { borderTopWidth: 1, borderTopColor: require("Themes").colors.BORDER_SUBTLE, paddingTop: 12 };
+createCacheKey[14] = { aspectRatio: 1.7777777777777777, borderRadius: require("Themes").radii.xs, overflow: "hidden" };
+createCacheKey[15] = { padding: 0 };
+createCacheKey[16] = { padding: 0, marginBottom: -16 };
+let obj4 = { aspectRatio: 1.7777777777777777, borderRadius: require("Themes").radii.xs, overflow: "hidden" };
+createCacheKey[17] = { borderTopWidth: 1, borderTopColor: require("Themes").colors.BORDER_SUBTLE, paddingTop: 16, marginTop: 4, marginHorizontal: -CARD_PADDING, paddingHorizontal: CARD_PADDING };
+createCacheKey[18] = { flex: 1, gap: 4 };
 let num = 16;
-_createForOfIteratorHelperLoose.cardTitleIcon = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.body = { flexDirection: "row", alignItems: "center", gap: 16 };
-_createForOfIteratorHelperLoose.content = { flex: 1 };
-_createForOfIteratorHelperLoose.imageContainer = { position: "relative" };
-_createForOfIteratorHelperLoose.imageAspectRatio = { width: 60, maxHeight: 60, aspectRatio: "1 / 1" };
-_createForOfIteratorHelperLoose.crunchyrollImageAspectRatio = { width: 60, maxHeight: 100, aspectRatio: "2 / 3" };
-let obj1 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, width: "100%", height: "100%" };
-_createForOfIteratorHelperLoose.largeImage = obj1;
-let obj2 = { borderRadius: 16, position: "absolute", right: -4, bottom: -4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.smallImageBackground = obj2;
-_createForOfIteratorHelperLoose.smallImage = { width: 24, height: 24, borderRadius: 12 };
-_createForOfIteratorHelperLoose.badges = { marginTop: 4, flexDirection: "row", flexWrap: "wrap", columnGap: 8, rowGap: 0 };
-let obj3 = { borderTopWidth: 1, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, paddingTop: 12 };
-_createForOfIteratorHelperLoose.voiceChannelDivider = obj3;
-_createForOfIteratorHelperLoose.customButtons = { flexDirection: "column", gap: 8 };
-let obj4 = { aspectRatio: 1.7777777777777777, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, overflow: "hidden" };
-_createForOfIteratorHelperLoose.streamPreview = obj4;
-_createForOfIteratorHelperLoose.voiceActivityCard = { padding: 0 };
-_createForOfIteratorHelperLoose.voiceSettings = { padding: 0, marginBottom: -16 };
-let obj5 = { borderTopWidth: 1, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, paddingTop: 16, marginTop: 4, marginHorizontal: -CARD_PADDING, paddingHorizontal: CARD_PADDING };
-_createForOfIteratorHelperLoose.voiceSettingsDivider = obj5;
-_createForOfIteratorHelperLoose.voiceCallContent = { flex: 1, gap: 4 };
-let obj6 = { width: 22, height: null, justifyContent: "center" };
 if (set.isAndroid()) {
   num = 12;
 }
-obj6.height = num;
-_createForOfIteratorHelperLoose.voiceCallNameIconWrapper = obj6;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey[19] = { width: 22, height: num, justifyContent: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = set.fileFinishedImporting("modules/user_profile/native/UserProfileActivity.tsx");
 
 export default function UserProfileActivity(guildId) {
@@ -838,61 +861,43 @@ export default function UserProfileActivity(guildId) {
   const style = guildId.style;
   let c3;
   stream = undefined;
+  let voiceChannel;
   let voiceActivity;
   let stateFromStores;
-  let items7 = function renderVoiceActivityCard(voiceChannel) {
-    if (null != stream) {
-      if (stream.channelId === voiceChannel.id) {
-        let obj = { user, stream, activity: voiceActivity, style: _undefined.voiceActivityCard };
-        let tmp7 = outer1_21(outer1_29, obj);
-      }
-      return tmp7;
-    }
-    if (null != voiceActivity) {
-      obj = { user, currentUser, activity: voiceActivity, voiceChannel, style: _undefined.voiceActivityCard };
-      tmp7 = outer1_21(outer1_28, obj);
-    } else {
-      obj = { user, channel: voiceChannel, isInChannel: stateFromStores, style: _undefined.voiceActivityCard };
-      tmp7 = outer1_21(outer1_30, obj);
-    }
-  };
-  let tmp = _createForOfIteratorHelperLoose();
+  let addApplication;
+  const tmp = createCacheKey();
   c3 = tmp;
   ({ live, stream } = currentUser(style[71])(user.id));
   let obj = { userId: user.id, guildId: guildId.guildId };
-  const tmp3 = currentUser(style[72])(obj);
-  const voiceChannel = tmp3.voiceChannel;
-  voiceActivity = tmp3.voiceActivity;
+  const tmp5 = currentUser(style[72])(obj);
+  voiceChannel = tmp5.voiceChannel;
+  voiceActivity = tmp5.voiceActivity;
   let obj1 = user(style[40]);
-  const items = [closure_15];
+  const items = [updateVoiceState];
   stateFromStores = obj1.useStateFromStores(items, () => {
     let isInChannelResult = null != voiceChannel;
     if (isInChannelResult) {
-      isInChannelResult = outer1_15.isInChannel(voiceChannel.id);
+      isInChannelResult = outer1_15.isInChannel(tmp.id);
     }
     return isInChannelResult;
   });
-  let _isNativeReflectConstruct = user.id === currentUser.id;
+  addApplication = user.id === currentUser.id;
   let obj2 = user(style[40]);
-  const items1 = [closure_14, closure_13];
+  const items1 = [filterPlayingActivities, sortActivity];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => {
-    if (_isNativeReflectConstruct) {
+    if (addApplication) {
       let status = outer1_14.getStatus();
     } else {
       status = outer1_13.getStatus(user.id);
     }
-    let tmp5 = status === outer1_20.OFFLINE;
-    if (!tmp5) {
-      tmp5 = status === outer1_20.INVISIBLE;
-    }
-    return tmp5;
+    return status === outer1_20.OFFLINE || status === outer1_20.INVISIBLE;
   });
   let obj3 = user(style[40]);
-  const items2 = [closure_16];
+  const items2 = [createUserWidgetFromServer];
   const stateFromStores2 = obj3.useStateFromStores(items2, () => {
     const userProfile = outer1_16.getUserProfile(user.id);
     let _private;
-    if (null != userProfile) {
+    if (userProfile != null) {
       _private = userProfile.private;
     }
     return true === _private;
@@ -900,15 +905,19 @@ export default function UserProfileActivity(guildId) {
   if (stateFromStores1) {
     if (null != voiceChannel) {
       if (stateFromStores) {
-        obj = {};
+        obj = { style: null, children: null };
         const items3 = [tmp.card, style];
-        obj.style = items3;
-        obj = { user, currentUser, channel: voiceChannel };
+        obj[0] = items3;
+        let tmp2Result = tmp2(tmp3[42]);
+        obj = { user: null, currentUser: null, channel: null, style: null };
+        obj[0] = user;
+        obj[1] = currentUser;
+        obj[2] = voiceChannel;
         const items4 = [, ];
         ({ voiceSettings: arr11[0], voiceSettingsDivider: arr11[1] } = tmp);
-        obj.style = items4;
-        obj.children = callback(currentUser(style[73]), obj);
-        return callback(currentUser(style[42]), obj);
+        obj[3] = items4;
+        obj[1] = callback(tmp2(tmp3[73]), obj);
+        return callback(tmp2Result, obj);
       }
     }
   }
@@ -919,60 +928,99 @@ export default function UserProfileActivity(guildId) {
     if (null != voiceActivity) {
       found = live.filter((arg0) => arg0 !== voiceActivity);
     }
-    obj1 = {};
-    let tmp10 = !stateFromStores2;
-    if (tmp10) {
-      tmp10 = null != voiceChannel;
+    let tmp12 = !stateFromStores2;
+    if (!stateFromStores2) {
+      tmp12 = null != voiceChannel;
     }
-    if (!tmp10) {
-      const items5 = [tmp10, , ];
-      let tmp23 = !stateFromStores2 && null != stream;
-      if (tmp23) {
+    if (!tmp12) {
+      const items5 = [tmp12, , ];
+      let tmp20 = !stateFromStores2;
+      if (!stateFromStores2) {
+        tmp20 = null != stream;
+      }
+      if (tmp20) {
         let id;
-        if (null != voiceChannel) {
+        if (voiceChannel != null) {
           id = voiceChannel.id;
         }
-        tmp23 = stream.channelId !== id;
+        tmp20 = stream.channelId !== id;
       }
-      if (tmp23) {
-        obj2 = { user, stream, activity: voiceActivity, style };
-        tmp23 = callback(StreamActivityCard, obj2);
+      if (tmp20) {
+        obj1 = { user: null, stream: null, activity: null, style: null };
+        obj1[0] = user;
+        obj1[1] = stream;
+        obj1[2] = voiceActivity;
+        obj1[3] = style;
+        tmp20 = callback(StreamActivityCard, obj1);
       }
-      items5[1] = tmp23;
+      obj2 = { children: null };
+      items5[1] = tmp20;
       items5[2] = found.map((activity) => {
-        let tmp = arg1;
-        const application_id = activity.application_id;
-        if (null != application_id) {
-          tmp = application_id;
+        let application_id = activity.application_id;
+        if (application_id == null) {
+          application_id = arg1;
         }
-        return outer1_21(outer1_28, { user, currentUser, activity, style }, tmp);
+        return outer1_21(outer1_28, { user, currentUser, activity, style }, application_id);
       });
-      obj1.children = items5;
-      return tmp8(tmp9, obj1);
-    } else if (stateFromStores) {
-      obj3 = {};
-      const items6 = [tmp.card, style];
-      obj3.style = items6;
-      const tmp19 = currentUser(style[42]);
-      items7 = [, ];
-      items7[0] = items7(voiceChannel);
-      const obj4 = { user, currentUser, channel: voiceChannel };
-      const items8 = [, ];
-      ({ voiceSettings: arr8[0], voiceSettingsDivider: arr8[1] } = tmp);
-      obj4.style = items8;
-      items7[1] = callback(currentUser(style[73]), obj4);
-      obj3.children = items7;
-      let tmp15 = callback2(tmp19, obj3);
-      const items7Result = items7(voiceChannel);
+      obj2[0] = items5;
+      return tmp10(tmp11, obj2);
     } else {
-      const obj5 = {};
-      const items9 = [tmp.card, style];
-      obj5.style = items9;
-      obj5.children = items7(voiceChannel);
-      tmp15 = callback(currentUser(style[42]), obj5);
-      const tmp14 = currentUser(style[42]);
+      let items7 = function renderVoiceActivityCard(voiceChannel) {
+        if (null != stream) {
+          if (tmp.channelId === voiceChannel.id) {
+            let obj = { user: null, stream: null, activity: null, style: null };
+            obj[0] = user;
+            obj[1] = tmp;
+            obj[2] = voiceActivity;
+            obj[3] = _undefined.voiceActivityCard;
+            let tmp8 = outer1_21(outer1_29, obj);
+          }
+          return tmp8;
+        }
+        if (null != voiceActivity) {
+          obj = { user: null, currentUser: null, activity: null, voiceChannel: null, style: null };
+          obj[0] = user;
+          obj[1] = currentUser;
+          obj[2] = tmp2;
+          obj[3] = voiceChannel;
+          obj[4] = _undefined.voiceActivityCard;
+          tmp8 = outer1_21(outer1_28, obj);
+        } else {
+          obj = { user: null, channel: null, isInChannel: null, style: null };
+          obj[0] = user;
+          obj[1] = voiceChannel;
+          obj[2] = stateFromStores;
+          obj[3] = _undefined.voiceActivityCard;
+          tmp8 = outer1_21(outer1_30, obj);
+        }
+      };
+      if (stateFromStores) {
+        obj3 = { style: null, children: null };
+        const items6 = [tmp.card, style];
+        obj3[0] = items6;
+        tmp2Result = tmp2(tmp3[42]);
+        items7 = [, ];
+        items7[0] = items7(voiceChannel);
+        const obj4 = { user: null, currentUser: null, channel: null, style: null };
+        obj4[0] = user;
+        obj4[1] = currentUser;
+        obj4[2] = voiceChannel;
+        const items8 = [, ];
+        ({ voiceSettings: arr8[0], voiceSettingsDivider: arr8[1] } = tmp);
+        obj4[3] = items8;
+        items7[1] = callback(tmp2(tmp3[73]), obj4);
+        obj3[1] = items7;
+        let tmp10Result = tmp10(tmp2Result, obj3);
+        const items7Result = items7(voiceChannel);
+      } else {
+        const obj5 = { style: null, children: null };
+        const items9 = [tmp.card, style];
+        obj5[0] = items9;
+        obj5[1] = items7(voiceChannel);
+        tmp10Result = callback(tmp2(tmp3[42]), obj5);
+        const tmp2Result1 = tmp2(tmp3[42]);
+      }
     }
-    tmp8 = callback2;
-    tmp9 = closure_23;
+    tmp11 = closure_23;
   }
 };

@@ -1,53 +1,68 @@
-// Module ID: 14137
-// Function ID: 108066
+// Module ID: 14159
+// Function ID: 14160
 // Name: useVideoSegmentAnalytics
-// Dependencies: [57, 31, 5969, 2]
+// Dependencies: [32, 19, 5988, 2]
 // Exports: default
 
-// Module 14137 (useVideoSegmentAnalytics)
+// Module 14159 (useVideoSegmentAnalytics)
 import _slicedToArray from "_slicedToArray";
-import closure_3 from "result";
-import result from "result";
+import closure_3 from "noop";
+import noop from "noop";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ useRef: closure_4, useCallback: closure_5, useEffect: closure_6 } = result);
-result = require("DEFAULT_VIDEO_VOLUME").fileFinishedImporting("modules/video_player/useVideoSegmentAnalytics.tsx");
+({ useRef: c4, useCallback: c5, useEffect: closure_6 } = noop);
+const result = require("DEFAULT_VIDEO_VOLUME").fileFinishedImporting("modules/video_player/useVideoSegmentAnalytics.tsx");
 
 export default function useVideoSegmentAnalytics(getCurrentVideoTime) {
   getCurrentVideoTime = getCurrentVideoTime.getCurrentVideoTime;
   const onAnalytics = getCurrentVideoTime.onAnalytics;
   const emitIntervalMs = getCurrentVideoTime.emitIntervalMs;
   const minSegmentDurationMs = getCurrentVideoTime.minSegmentDurationMs;
+  let first;
+  let callback;
+  let first1;
+  let closure_7;
+  let first2;
+  let closure_9;
+  let first3;
+  let closure_11;
+  let closure_12;
+  let closure_13;
+  let closure_14;
+  let c15;
+  let c16;
+  let c17;
+  let c18;
   let tmp = emitIntervalMs(minSegmentDurationMs.useState(null), 2);
-  const first = tmp[0];
-  const callback = tmp[1];
+  first = tmp[0];
+  callback = tmp[1];
   let tmp3 = emitIntervalMs(minSegmentDurationMs.useState(false), 2);
-  const first1 = tmp3[0];
-  let closure_7 = tmp3[1];
+  first1 = tmp3[0];
+  closure_7 = tmp3[1];
   const tmp5 = emitIntervalMs(minSegmentDurationMs.useState(false), 2);
-  const first2 = tmp5[0];
-  let closure_9 = tmp5[1];
+  first2 = tmp5[0];
+  closure_9 = tmp5[1];
   const tmp7 = emitIntervalMs(minSegmentDurationMs.useState(false), 2);
-  const first3 = tmp7[0];
-  let closure_11 = tmp7[1];
-  let closure_12 = first(null);
-  let closure_13 = first(Date.now());
-  let closure_14 = first(false);
+  first3 = tmp7[0];
+  closure_11 = tmp7[1];
+  closure_12 = first(null);
+  closure_13 = first(Date.now());
+  closure_14 = first(false);
   const items = [onAnalytics];
-  let tmp9 = callback((segmentEndSec) => {
+  const tmp9 = callback((segmentEndSec) => {
     if (segmentEndSec.segmentEndSec >= segmentEndSec.segmentStartSec) {
-      const obj = {};
-      ({ startTimeMs: obj.start_time, endTimeMs: obj.end_time } = segmentEndSec);
-      obj.duration = segmentEndSec.endTimeMs - segmentEndSec.startTimeMs;
-      ({ segmentStartSec: obj.segment_start_sec, segmentEndSec: obj.segment_end_sec } = segmentEndSec);
-      obj.segment_duration_sec = segmentEndSec.segmentEndSec - segmentEndSec.segmentStartSec;
+      const obj = { start_time: null, end_time: null, duration: null, segment_start_sec: null, segment_end_sec: null, segment_duration_sec: null };
+      ({ startTimeMs: obj[0], endTimeMs: obj[1] } = segmentEndSec);
+      obj[2] = segmentEndSec.endTimeMs - segmentEndSec.startTimeMs;
+      ({ segmentStartSec: obj[3], segmentEndSec: obj[4] } = segmentEndSec);
+      obj[5] = segmentEndSec.segmentEndSec - segmentEndSec.segmentStartSec;
       onAnalytics(obj);
     }
   }, items);
-  let closure_15 = tmp9;
+  c15 = tmp9;
   const items1 = [getCurrentVideoTime, first2, first3];
   const tmp10 = callback(() => {
     const tmp = getCurrentVideoTime();
@@ -56,14 +71,18 @@ export default function useVideoSegmentAnalytics(getCurrentVideoTime) {
         if (first3) {
           const _Date = Date;
           const timestamp = Date.now();
-          const obj = { startTimeMs: timestamp, endTimeMs: timestamp, segmentStartSec: tmp, segmentEndSec: tmp };
+          const obj = { startTimeMs: null, endTimeMs: null, segmentStartSec: null, segmentEndSec: null };
+          obj[0] = timestamp;
+          obj[1] = timestamp;
+          obj[2] = tmp;
+          obj[3] = tmp;
           callback(obj);
           closure_14.current = true;
         }
       }
     }
   }, items1);
-  let closure_16 = tmp10;
+  c16 = tmp10;
   const items2 = [first, tmp9, emitIntervalMs, minSegmentDurationMs, getCurrentVideoTime];
   const tmp11 = callback(() => {
     const tmp = getCurrentVideoTime();
@@ -71,24 +90,29 @@ export default function useVideoSegmentAnalytics(getCurrentVideoTime) {
       if (null != first) {
         const _Date = Date;
         const timestamp = Date.now();
-        let tmp4 = timestamp - ref2.current < emitIntervalMs;
-        if (!tmp4) {
-          tmp4 = tmp - first.segmentStartSec < minSegmentDurationMs / 1000;
+        let tmp3 = timestamp - ref2.current < emitIntervalMs;
+        if (!tmp3) {
+          tmp3 = tmp - tmp11.segmentStartSec < minSegmentDurationMs / 1000;
         }
-        if (!tmp4) {
+        if (!tmp3) {
           let obj = {};
-          const merged = Object.assign(first);
-          obj["endTimeMs"] = timestamp;
-          obj["segmentEndSec"] = tmp;
-          tmp9 = tmp9(obj);
-          obj = { startTimeMs: timestamp, endTimeMs: timestamp, segmentStartSec: tmp, segmentEndSec: tmp };
+          const merged = Object.assign(tmp11);
+          obj.endTimeMs = timestamp;
+          obj.segmentEndSec = tmp;
+          _undefined(obj);
+          obj = { startTimeMs: null, endTimeMs: null, segmentStartSec: null, segmentEndSec: null };
+          obj[0] = timestamp;
+          obj[1] = timestamp;
+          obj[2] = tmp;
+          obj[3] = tmp;
           callback(obj);
-          ref2.current = timestamp;
+          tmp14.current = timestamp;
         }
+        tmp14 = ref2;
       }
     }
   }, items2);
-  let closure_17 = tmp11;
+  c17 = tmp11;
   const items3 = [first2, first3];
   first1(() => {
     let tmp = first2;
@@ -106,18 +130,18 @@ export default function useVideoSegmentAnalytics(getCurrentVideoTime) {
       if (first2) {
         if (first3) {
           if (!ref3.current) {
-            tmp10();
+            _undefined2();
           }
           const _window = window;
           ref.current = window.setInterval(() => {
-            outer1_17();
+            callback();
           }, 200);
         }
         return () => {
-          if (null != outer1_12.current) {
+          if (null != ref.current) {
             const _clearInterval = clearInterval;
-            clearInterval(outer1_12.current);
-            outer1_12.current = null;
+            clearInterval(tmp.current);
+            tmp.current = null;
           }
         };
       }
@@ -126,12 +150,12 @@ export default function useVideoSegmentAnalytics(getCurrentVideoTime) {
     if (null != first) {
       if (null != tmp3) {
         const _Date = Date;
-        if (tmp3 - first.segmentStartSec > 0.2) {
+        if (tmp3 - tmp4.segmentStartSec > 0.2) {
           const obj = {};
-          const merged = Object.assign(first);
-          obj["endTimeMs"] = tmp5;
-          obj["segmentEndSec"] = tmp3;
-          obj(obj);
+          const merged = Object.assign(tmp4);
+          obj.endTimeMs = tmp6;
+          obj.segmentEndSec = tmp3;
+          _undefined(obj);
         }
       }
     }
@@ -139,22 +163,22 @@ export default function useVideoSegmentAnalytics(getCurrentVideoTime) {
     ref3.current = false;
     if (null != ref.current) {
       let _clearInterval = clearInterval;
-      clearInterval(ref.current);
-      ref.current = null;
+      clearInterval(tmp13.current);
+      tmp13.current = null;
     }
   }, items4);
   const items5 = [first, tmp9, getCurrentVideoTime];
-  const tmp14 = callback(() => {
+  let tmp14 = callback(() => {
     const tmp = getCurrentVideoTime();
     if (null != first) {
       if (null != tmp) {
         const _Date = Date;
-        if (tmp - first.segmentStartSec > 0.2) {
+        if (tmp - tmp2.segmentStartSec > 0.2) {
           const obj = {};
-          const merged = Object.assign(first);
-          obj["endTimeMs"] = tmp3;
-          obj["segmentEndSec"] = tmp;
-          tmp9 = tmp9(obj);
+          const merged = Object.assign(tmp2);
+          obj.endTimeMs = tmp4;
+          obj.segmentEndSec = tmp;
+          _undefined(obj);
         }
         callback(null);
         closure_14.current = false;
@@ -162,14 +186,14 @@ export default function useVideoSegmentAnalytics(getCurrentVideoTime) {
     }
   }, items5);
   const tmp15 = first(tmp14);
-  let closure_18 = tmp15;
+  c18 = tmp15;
   tmp15.current = tmp14;
   return {
     handlePlayerStateChange: callback((arg0) => {
       if (getCurrentVideoTime(onAnalytics[2]).VideoPlayerState.PLAYING === arg0) {
         callback2(true);
-      } else if (getCurrentVideoTime(onAnalytics[2]).VideoPlayerState.PAUSED === arg0) {
-        tmp15.current();
+      } else if (tmp(tmp2[2]).VideoPlayerState.PAUSED === arg0) {
+        _undefined3.current();
         callback2(false);
       }
     }, []),
@@ -180,7 +204,7 @@ export default function useVideoSegmentAnalytics(getCurrentVideoTime) {
       callback4(true);
     }, []),
     handleSeek: callback(() => {
-      tmp15.current();
+      _undefined3.current();
     }, [])
   };
 };

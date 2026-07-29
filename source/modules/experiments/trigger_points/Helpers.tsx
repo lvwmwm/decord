@@ -1,62 +1,45 @@
-// Module ID: 6276
-// Function ID: 56263
-// Name: CommonTriggerPointConfiguration
-// Dependencies: [6, 7, 1188, 4080, 2]
+// Module ID: 6297
+// Function ID: 6298
+// Name: registeredExperimentIds
+// Dependencies: [1212, 4104, 2]
 
-// Module 6276 (CommonTriggerPointConfiguration)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 6297 (registeredExperimentIds)
+import initialize from "initialize";
 import { CommonTriggerPoints } from "ExperimentBuckets";
 
-const tmp2 = (() => {
-  class CommonTriggerPointConfiguration {
-    constructor(arg0, arg1, arg2) {
-      tmp = CommonTriggerPointConfiguration(this, CommonTriggerPointConfiguration);
-      this.experiments = arg0;
-      this.triggerPoint = arg1;
-      this.params = arg2;
-      return;
-    }
+let result = require("set").fileFinishedImporting("modules/experiments/trigger_points/Helpers.tsx");
+class CommonTriggerPointConfiguration {
+  constructor(arg0, arg1, arg2) {
+    obj = Object.create(new.target.prototype);
+    obj.experiments = global;
+    obj.triggerPoint = arg1;
+    obj.params = importDefault;
+    return obj;
   }
-  let obj = {
-    key: "registeredExperimentIds",
-    value() {
-      const experiments = this.experiments;
-      return experiments.map((definition) => definition.definition.id);
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "trigger",
-    value() {
-      let obj = arg0;
-      const self = this;
-      if (arg0 === undefined) {
-        obj = {};
-      }
-      const result = outer1_2.trackCommonTriggerPointExposures(self.params.location);
-      obj = {};
-      const merged = Object.assign(self.params);
-      const merged1 = Object.assign(obj);
-      (function triggerCommonExperiments(arg0, experiments, arg2) {
-        let _classCallCheck = arg2;
-        const item = experiments.forEach((trackExposure) => {
-          trackExposure.trackExposure(_classCallCheck);
-        });
-      })(undefined, self.experiments, obj);
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getExperiments",
-    value() {
-      return this.experiments;
-    }
-  };
-  items[2] = obj;
-  return callback(CommonTriggerPointConfiguration, items);
-})();
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/experiments/trigger_points/Helpers.tsx");
+}
+const prototype = CommonTriggerPointConfiguration.prototype;
+prototype["registeredExperimentIds"] = function registeredExperimentIds() {
+  const experiments = this.experiments;
+  return experiments.map((definition) => definition.definition.id);
+};
+prototype["trigger"] = function trigger() {
+  let experiments;
+  let triggerPoint;
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  const result = obj.trackCommonTriggerPointExposures(this.params.location);
+  ({ triggerPoint, experiments } = this);
+  obj = {};
+  const merged = Object.assign(this.params);
+  const merged1 = Object.assign(obj);
+  const item = experiments.forEach((trackExposure) => {
+    trackExposure.trackExposure(obj);
+  });
+};
+prototype["getExperiments"] = function getExperiments() {
+  return this.experiments;
+};
 
-export const CommonTriggerPointConfiguration = tmp2;
+export { CommonTriggerPointConfiguration };

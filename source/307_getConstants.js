@@ -1,0 +1,13 @@
+// Module ID: 307
+// Function ID: 308
+// Name: getConstants
+// Dependencies: [308]
+
+// Module 307 (getConstants)
+for (const key10013 in require("getConstants")) {
+  let tmp2 = key10013;
+  arg5[key10013] = require("getConstants")[key10013];
+  continue;
+}
+
+export { default } from "getConstants";

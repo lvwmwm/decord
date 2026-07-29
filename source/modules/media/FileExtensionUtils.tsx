@@ -1,26 +1,26 @@
-// Module ID: 5178
-// Function ID: 44981
+// Module ID: 5200
+// Function ID: 5201
 // Name: decideFileExtension
-// Dependencies: [1443, 2]
+// Dependencies: [1467, 2]
 // Exports: decideFileExtension
 
-// Module 5178 (decideFileExtension)
+// Module 5200 (decideFileExtension)
 let closure_2 = { "image/avif": "avif", "image/gif": "gif", "image/heic": "heic", "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp", "video/mp4": "mp4", "video/quicktime": "mov", "video/webm": "webm" };
 const result = require("set").fileFinishedImporting("modules/media/FileExtensionUtils.tsx");
 
-export const decideFileExtension = function decideFileExtension(outer1_0, outer1_1, arg2) {
+export const decideFileExtension = function decideFileExtension(closure_0, contentType, arg2) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
   }
   let tmp;
   if (flag) {
-    const toURLSafeResult = importDefault(1443).toURLSafe(outer1_0);
+    const toURLSafeResult = importDefault(1467).toURLSafe(closure_0);
     let formatted;
-    if (null != toURLSafeResult) {
+    if (toURLSafeResult != null) {
       const searchParams = toURLSafeResult.searchParams;
       const str2 = searchParams.get("format");
-      if (null != str2) {
+      if (str2 != null) {
         formatted = str2.toLowerCase();
       }
     }
@@ -35,55 +35,55 @@ export const decideFileExtension = function decideFileExtension(outer1_0, outer1
       }
     }
     tmp = tmp7;
-    const obj = importDefault(1443);
+    const obj = importDefault(1467);
   }
-  if (null == tmp) {
-    let tmp8;
-    if (null != outer1_1) {
-      const str6 = outer1_1.toLowerCase();
+  if (tmp == null) {
+    let tmp9;
+    if (null != contentType) {
+      const str6 = contentType.toLowerCase();
       if (obj2.test(str6)) {
-        tmp8 = table[str6];
-        if (null == tmp8) {
-          const tmp10 = str6.split("/")[1];
+        tmp9 = table[str6];
+        if (null == tmp9) {
+          const tmp11 = str6.split("/")[1];
           let str8 = "jpg";
-          if ("jpeg" !== tmp10) {
-            let tmp11;
-            if (null != tmp10) {
-              tmp11 = tmp10;
+          if ("jpeg" !== tmp11) {
+            let tmp12;
+            if (null != tmp11) {
+              tmp12 = tmp11;
             }
-            str8 = tmp11;
+            str8 = tmp12;
           }
-          tmp8 = str8;
+          tmp9 = str8;
         }
       }
       obj2 = /^(image|video)\//;
     }
-    tmp = tmp8;
+    tmp = tmp9;
   }
-  if (null == tmp) {
-    const toURLSafeResult1 = importDefault(1443).toURLSafe(outer1_0);
-    let tmp14;
+  if (tmp == null) {
+    const toURLSafeResult1 = importDefault(1467).toURLSafe(closure_0);
+    let tmp15;
     if (null != toURLSafeResult1) {
       let formatted1;
-      if (null != toURLSafeResult1.pathname) {
+      if (toURLSafeResult1.pathname != null) {
         const parts = str10.split(".");
-        if (null != parts) {
+        if (parts != null) {
           const str12 = parts.pop();
-          if (null != str12) {
+          if (str12 != null) {
             formatted1 = str12.toLowerCase();
           }
         }
       }
-      let tmp13;
+      let tmp14;
       if (null != formatted1) {
         if (formatted1.length <= 5) {
-          tmp13 = formatted1;
+          tmp14 = formatted1;
         }
       }
-      tmp14 = tmp13;
+      tmp15 = tmp14;
     }
-    tmp = tmp14;
-    const obj3 = importDefault(1443);
+    tmp = tmp15;
+    const obj3 = importDefault(1467);
   }
   return tmp;
 };

@@ -1,32 +1,32 @@
-// Module ID: 5634
-// Function ID: 47719
+// Module ID: 5652
+// Function ID: 5653
 // Name: hideHotspot
-// Dependencies: [653, 675, 686, 2]
+// Dependencies: [676, 698, 709, 2]
 // Exports: clearHotspotOverride, hideHotspot, setHotspotOverride
 
-// Module 5634 (hideHotspot)
+// Module 5652 (hideHotspot)
 import { AnalyticEvents } from "ME";
 
 const result = require("dispatcher").fileFinishedImporting("modules/hotspot/HotspotActionCreators.tsx");
 
 export const hideHotspot = function hideHotspot(GUILD_CAP_INLINE_UPSELL) {
   const importDefault = GUILD_CAP_INLINE_UPSELL;
-  let obj = importDefault(675);
+  let obj = importDefault(698);
   obj = { hotspot_location: GUILD_CAP_INLINE_UPSELL };
   obj.track(AnalyticEvents.HOTSPOT_HIDDEN, obj);
-  importDefault(686).wait(() => {
+  importDefault(709).wait(() => {
     let obj = GUILD_CAP_INLINE_UPSELL(outer1_1[2]);
     obj = { type: "HOTSPOT_HIDE", location: GUILD_CAP_INLINE_UPSELL };
     obj.dispatch(obj);
   });
 };
 export const setHotspotOverride = function setHotspotOverride(location, enabled) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "HOTSPOT_OVERRIDE_SET", location, enabled };
   obj.dispatch(obj);
 };
 export const clearHotspotOverride = function clearHotspotOverride(location) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "HOTSPOT_OVERRIDE_CLEAR", location };
   obj.dispatch(obj);
 };

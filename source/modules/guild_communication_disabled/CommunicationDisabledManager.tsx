@@ -1,95 +1,90 @@
-// Module ID: 11531
-// Function ID: 89559
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1918, 1850, 3782, 686, 5112, 2]
+// Module ID: 11555
+// Function ID: 11556
+// Name: clearGuildMemberTimeout
+// Dependencies: [1942, 1874, 3806, 709, 5134, 2]
 
-// Module 11531 (_isNativeReflectConstruct)
-import closure_3 from "_isNativeReflectConstruct";
-import isCommunicationDisabled from "isCommunicationDisabled";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import tmp3 from "AutomaticLifecycleManager";
+// Module 11555 (clearGuildMemberTimeout)
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import closure_5 from "trackCommunicationDisabled";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import "initialize";
 
-let closure_8;
-let closure_9;
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function clearGuildMemberTimeout(outer1_2, outer1_1) {
-  member = member.getMember(outer1_2, outer1_1);
-  user = user.getUser(outer1_1);
+let c3;
+let c4;
+function clearGuildMemberTimeout(closure_2, closure_1) {
+  member = member.getMember(closure_2, closure_1);
+  user = user.getUser(closure_1);
   if (null != member) {
     if (null != user) {
       if (!obj6.isMemberCommunicationDisabled(member)) {
         let obj = {};
         const merged = Object.assign(member);
-        obj["guildId"] = outer1_2;
+        obj.guildId = closure_2;
         let username = member.nick;
-        if (null == username) {
+        if (username == null) {
           username = user.username;
         }
-        obj["nick"] = username;
+        obj.nick = username;
         const avatar = member.avatar;
+        obj.avatar = avatar;
         let tmp5;
-        if (null != avatar) {
-          tmp5 = avatar;
-        }
-        obj["avatar"] = tmp5;
-        let tmp6;
         if (null != member.avatarDecoration) {
           obj = {};
           const merged1 = Object.assign(member.avatarDecoration);
-          tmp6 = obj;
+          tmp5 = obj;
         }
-        obj["avatarDecoration"] = tmp6;
+        obj.avatarDecoration = tmp5;
         const premiumSince = member.premiumSince;
-        let tmp9;
-        if (null != premiumSince) {
-          tmp9 = premiumSince;
+        obj.premiumSince = premiumSince;
+        let flag = member.isPending;
+        if (flag == null) {
+          flag = false;
         }
-        obj["premiumSince"] = tmp9;
-        const isPending = member.isPending;
-        obj["isPending"] = null != isPending && isPending;
+        obj.isPending = flag;
         obj = {};
         const merged2 = Object.assign(user);
         const email = user.email;
-        let tmp14;
-        if (null != email) {
-          tmp14 = email;
-        }
-        obj["email"] = tmp14;
+        obj.email = email;
         const phone = user.phone;
-        let tmp15;
-        if (null != phone) {
-          tmp15 = phone;
-        }
-        obj["phone"] = tmp15;
-        obj["user"] = obj;
-        obj["communicationDisabledUntil"] = null;
+        obj.phone = phone;
+        obj.user = obj;
+        obj.communicationDisabledUntil = null;
         const obj1 = { type: "GUILD_MEMBER_UPDATE" };
         const merged3 = Object.assign(obj);
-        importDefault(686).dispatch(obj1);
-        const obj4 = importDefault(686);
-        const tmp10 = null != isPending && isPending;
+        importDefault(709).dispatch(obj1);
+        const obj4 = importDefault(709);
       }
-      obj6 = require(3782) /* isCommunicationDisabled */;
+      obj6 = require(3806) /* isCommunicationDisabled */;
     }
   }
 }
-({ getGuildIdFromCommunicationDisabledUserKey: closure_8, getUserIdFromCommunicationDisabledUserKey: closure_9 } = _isNativeReflectConstruct);
-let c12 = null;
-tmp3 = new tmp3();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/guild_communication_disabled/CommunicationDisabledManager.tsx");
+({ getGuildIdFromCommunicationDisabledUserKey: c3, getUserIdFromCommunicationDisabledUserKey: c4 } = trackCommunicationDisabled);
+let c7 = null;
+class CommunicationDisabledManager extends tmp3 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.clearGuildMemberTimeout = clearGuildMemberTimeout;
+    return applyArgumentsResult;
+  }
+}
+const prototype = CommunicationDisabledManager.prototype;
+prototype["_initialize"] = function _initialize() {
+  const interval = setInterval(() => {
+    communicationDisabledUserMap = communicationDisabledUserMap.getCommunicationDisabledUserMap();
+    const keys = Object.keys(communicationDisabledUserMap);
+    const item = keys.forEach((arg0) => {
+      const tmp = outer1_3(arg0);
+      const tmp2 = outer1_4(arg0);
+      if (!obj.isCommunicationDisabled(communicationDisabledUserMap[arg0])) {
+        outer1_8(tmp, tmp2);
+      }
+    });
+  }, 10000);
+};
+prototype["_terminate"] = function _terminate() {
+  clearInterval(c7);
+};
+const communicationDisabledManager = new CommunicationDisabledManager();
+const result = require("isCommunicationDisabled").fileFinishedImporting("modules/guild_communication_disabled/CommunicationDisabledManager.tsx");
 
-export default tmp3;
+export default communicationDisabledManager;

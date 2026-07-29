@@ -1,9 +1,9 @@
-// Module ID: 13669
-// Function ID: 104915
+// Module ID: 13690
+// Function ID: 13691
 // Name: UserProfileEditAutoFocusElement
 // Dependencies: [2]
 
-// Module 13669 (UserProfileEditAutoFocusElement)
+// Module 13690 (UserProfileEditAutoFocusElement)
 const result = require("set").fileFinishedImporting("modules/user_settings/profiles/native/UserProfileEditConstants.tsx");
 
 export const UserProfileEditAutoFocusElement = { AVATAR: "AVATAR", BIO: "BIO" };

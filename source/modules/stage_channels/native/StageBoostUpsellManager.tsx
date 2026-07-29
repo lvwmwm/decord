@@ -1,33 +1,67 @@
-// Module ID: 16282
-// Function ID: 126141
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 3858, 1348, 3793, 1907, 4982, 4133, 4985, 8813, 1356, 4997, 1935, 5112, 2]
+// Module ID: 16317
+// Function ID: 16318
+// Name: handleVoiceChannelSelect
+// Dependencies: [3882, 1372, 3817, 1931, 5004, 5134, 4157, 5007, 8837, 1380, 5019, 1959, 2]
 
-// Module 16282 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import maybeLoadBundle from "maybeLoadBundle";
-import set from "set";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+// Module 16317 (handleVoiceChannelSelect)
+import setContent from "setContent";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import handleConnectionOpen from "handleConnectionOpen";
 import { STAGE_BOOSTING_SHEET_KEY } from "MAX_STAGE_TOPIC_LENGTH";
-import tmp2 from "AutomaticLifecycleManager";
+import "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+let c8 = false;
+class StageBoostUpsellManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    applyArgumentsResult.actions = { VOICE_CHANNEL_SELECT: applyArgumentsResult.handleVoiceChannelSelect, VOICE_STATE_UPDATES: applyArgumentsResult.handleVoiceStateUpdates };
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-let c13 = false;
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/stage_channels/native/StageBoostUpsellManager.tsx");
+const prototype = StageBoostUpsellManager.prototype;
+prototype["handleVoiceChannelSelect"] = function handleVoiceChannelSelect(channelId) {
+  let tmp = null == channelId.channelId;
+  if (tmp) {
+    tmp = key.getKey() === STAGE_BOOSTING_SHEET_KEY;
+  }
+  if (tmp) {
+    importDefault(4157).hideActionSheet(STAGE_BOOSTING_SHEET_KEY);
+    const obj = importDefault(4157);
+  }
+};
+prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates() {
+  if (!c8) {
+    voiceChannelId = voiceChannelId.getVoiceChannelId();
+    if (null != voiceChannelId) {
+      channel = channel.getChannel(voiceChannelId);
+      if (null != channel) {
+        let isGuildStageVoiceResult;
+        if (channel != null) {
+          isGuildStageVoiceResult = channel.isGuildStageVoice();
+        }
+        if (isGuildStageVoiceResult) {
+          let obj = require(5007) /* useStageHasMedia */;
+          if (obj.getStageHasMedia(channel.id)) {
+            if (tmp5Result.getChannelVideoLimit(channel).reachedLimit) {
+              if (getUncachedChannelPermissions.can(tmp5(1380).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel)) {
+                obj = { channel: null };
+                obj[0] = channel;
+                importDefault(4157).openLazy(tmp5(1959)(5019, tmp6.paths), STAGE_BOOSTING_SHEET_KEY, obj);
+                c8 = true;
+                const obj3 = importDefault(4157);
+              }
+            }
+            tmp5Result = tmp5(8837);
+          }
+          tmp6 = dependencyMap;
+        }
+      }
+    }
+  }
+};
+const stageBoostUpsellManager = new StageBoostUpsellManager();
+const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/stage_channels/native/StageBoostUpsellManager.tsx");
 
-export default tmp2;
+export default stageBoostUpsellManager;

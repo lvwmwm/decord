@@ -1,47 +1,45 @@
-// Module ID: 9241
-// Function ID: 72248
+// Module ID: 9265
+// Function ID: 9266
 // Name: ParagraphField
-// Dependencies: [31, 27, 4656, 482, 33, 4165, 5087, 689, 4161, 7621, 1212, 2]
+// Dependencies: [19, 17, 4678, 505, 21, 4189, 5109, 712, 4185, 7644, 1236, 2]
 // Exports: default
 
-// Module 9241 (ParagraphField)
-import "result";
+// Module 9265 (ParagraphField)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { MAX_PARAGRAPH_RESPONSE_LENGTH as closure_3 } from "items";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import importDefaultResult from "createTextStyle";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { marginVertical: 12, flexDirection: "column" } };
-_createForOfIteratorHelperLoose = {};
-const merged = Object.assign(require("createTextStyle")(require("sum").Fonts.DISPLAY_SEMIBOLD, require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY, 16, { uppercase: false }));
-_createForOfIteratorHelperLoose["paddingBottom"] = 16;
-_createForOfIteratorHelperLoose.formHeader = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj1 = { uppercase: false };
+({ jsx: c4, jsxs: c5 } = jsxProd);
+createCacheKey = { container: { marginVertical: 12, flexDirection: "column" }, formHeader: null };
+createCacheKey = {};
+const merged = Object.assign(require("createTextStyle")(require("sum").Fonts.DISPLAY_SEMIBOLD, require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY, 16, { uppercase: false }));
+createCacheKey.paddingBottom = 16;
+createCacheKey[1] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("items").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/ParagraphField.tsx");
 
 export default function ParagraphField(field) {
   field = field.field;
-  const tmp = _createForOfIteratorHelperLoose();
-  const response = field.response;
-  let obj = { style: tmp.container };
+  const tmp = createCacheKey();
+  let str = field.response;
+  let obj = { style: tmp.container, children: null };
   obj = { style: tmp.formHeader, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: field.label };
-  const items = [callback(require(4161) /* Text */.Text, obj), ];
-  obj = { maxLength: closure_3 };
-  let str = "";
-  if (null != response) {
-    str = response;
+  const items = [callback(require(4185) /* Text */.Text, obj), ];
+  obj = { maxLength: closure_3, value: null, placeholder: null, onChange: null };
+  if (str == null) {
+    str = "";
   }
-  obj.value = str;
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.placeholder = intl.string(require(1212) /* getSystemLocale */.t["Sqn+Wh"]);
-  obj.onChange = field.onChange;
-  items[1] = callback(require(7621) /* TextArea */.TextArea, obj);
-  obj.children = items;
+  obj[1] = str;
+  const intl = tmp5(1236).intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t["Sqn+Wh"]);
+  obj[3] = field.onChange;
+  items[1] = callback(require(7644) /* TextArea */.TextArea, obj);
+  obj[1] = items;
   return closure_5(View, obj);
 };

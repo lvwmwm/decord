@@ -1,41 +1,41 @@
-// Module ID: 14357
-// Function ID: 110072
+// Module ID: 14379
+// Function ID: 14380
 // Name: radio
-// Dependencies: [31, 7733, 3841, 3838, 1212, 10099, 2]
+// Dependencies: [19, 7756, 3865, 3862, 1236, 10120, 2]
 
-// Module 14357 (radio)
-import result from "result";
+// Module 14379 (radio)
+import noop from "noop";
 import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.R5nQkS);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.R5nQkS);
   },
   parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useValue: require("explicitContentFromProto").AnimateStickers.useSetting,
   onValueChange: function onAnimateStickerSettingValueChange(arg0) {
-    const AnimateStickers = require(3838) /* explicitContentFromProto */.AnimateStickers;
+    const AnimateStickers = require(3862) /* explicitContentFromProto */.AnimateStickers;
     AnimateStickers.updateSetting(Number(arg0));
   },
   useOptions: function useAnimateStickerSettingOptions() {
     return React.useMemo(() => {
-      let obj = {};
-      const intl = outer1_0(outer1_1[4]).intl;
-      obj.label = intl.string(outer1_0(outer1_1[4]).t["Xp+X2U"]);
-      obj.value = outer1_3.ALWAYS_ANIMATE;
+      let obj = { label: null, value: null };
+      const intl = callback(1236).intl;
+      obj[0] = intl.string(callback(1236).t["Xp+X2U"]);
+      obj[1] = constants.ALWAYS_ANIMATE;
       const items = [obj, , ];
-      obj = {};
-      const intl2 = outer1_0(outer1_1[4]).intl;
-      obj.label = intl2.string(outer1_0(outer1_1[4]).t.IlLT7e);
-      obj.value = outer1_3.ANIMATE_ON_INTERACTION;
+      obj = { label: null, value: null };
+      const intl2 = callback(1236).intl;
+      obj[0] = intl2.string(callback(1236).t.IlLT7e);
+      obj[1] = constants.ANIMATE_ON_INTERACTION;
       items[1] = obj;
-      obj = {};
-      const intl3 = outer1_0(outer1_1[4]).intl;
-      obj.label = intl3.string(outer1_0(outer1_1[4]).t.IGu8x3);
-      obj.value = outer1_3.NEVER_ANIMATE;
+      obj = { label: null, value: null };
+      const intl3 = callback(1236).intl;
+      obj[0] = intl3.string(callback(1236).t.IGu8x3);
+      obj[1] = constants.NEVER_ANIMATE;
       items[2] = obj;
       return items;
     }, []);

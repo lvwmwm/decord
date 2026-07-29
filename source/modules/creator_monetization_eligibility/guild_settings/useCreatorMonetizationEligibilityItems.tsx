@@ -1,20 +1,20 @@
-// Module ID: 16492
-// Function ID: 128535
+// Module ID: 16527
+// Function ID: 16528
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 31, 653, 16493, 16494, 1212, 1921, 3856, 16495, 2]
+// Dependencies: [5, 19, 676, 16528, 16529, 1236, 1945, 3880, 16530, 2]
 // Exports: default
 
-// Module 16492 (useCreatorMonetizationEligibilityItems)
+// Module 16527 (useCreatorMonetizationEligibilityItems)
 import getSystemLocale from "getSystemLocale";
-import result from "result";
+import noop from "noop";
 import { HelpdeskArticles } from "ME";
 
 const require = arg1;
-const result = require("ME").fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useCreatorMonetizationEligibilityItems.tsx");
+let result = require("ME").fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useCreatorMonetizationEligibilityItems.tsx");
 
 export default function useCreatorMonetizationEligibilityItems(arg0) {
-  let obj = arg1;
   const _require = arg0;
+  let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
   }
@@ -28,168 +28,250 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
   const isMFAEnabled = _require(actions[3]).useIsMFAEnabled();
   isUserMFAEnabled = isMFAEnabled.isUserMFAEnabled;
   isModerationMFAEnabled = isMFAEnabled.isModerationMFAEnabled;
-  // CreateGeneratorClosureLongIndex (0x67)
   let items = [isUserMFAEnabled, isModerationMFAEnabled, onEligibilityBecameStale, actions];
-  callback = isUserMFAEnabled.useCallback(sortedByIneligible(obj), items);
+  callback = isUserMFAEnabled.useCallback(sortedByIneligible(function*() {
+    if (c2 === 2) {
+      c2 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c2 = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            c2 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_0 = tmp4;
+            if (outer1_4) {
+              if (!outer1_5) {
+                let result;
+                if (c2 != null) {
+                  const onRequireModeratorMFAClick = c2.onRequireModeratorMFAClick;
+                  if (onRequireModeratorMFAClick != null) {
+                    result = onRequireModeratorMFAClick();
+                  }
+                }
+                c1 = 1;
+                c2 = 1;
+                const obj1 = { value: null, done: false };
+                obj1[0] = result;
+                return obj1;
+              }
+            } else {
+              let onEnableMFAClickResult;
+              if (c2 != null) {
+                const onEnableMFAClick = c2.onEnableMFAClick;
+                if (onEnableMFAClick != null) {
+                  onEnableMFAClickResult = onEnableMFAClick();
+                }
+              }
+              c1 = 2;
+              c2 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = onEnableMFAClickResult;
+              return obj2;
+            }
+          }
+        } else if (1 === tmp4) {
+          if (arg0 === 1) {
+            c2 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          }
+        } else if (arg0 === 1) {
+          c2 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c2 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        }
+        if (c1 != null) {
+          tmp13();
+        }
+        c2 = 3;
+        return { value: "HermesInternal", done: null };
+      } catch (tmp16) {
+        c2 = tmp;
+        throw tmp16;
+      }
+    }
+  }), items);
   let obj2 = _require(actions[3]);
   enableMFAHook = _require(actions[4]).useEnableMFAHook({ onEnableMFAClick: callback });
   const items1 = [arg0, sortedByIneligible, isUserMFAEnabled, actions, isModerationMFAEnabled, enableMFAHook, callback];
   return isUserMFAEnabled.useMemo(() => {
     let minimumOwnerAgeInYears;
     let minimumSize;
-    if (null == lib) {
+    let noRecentViolations;
+    if (null == callback) {
       return null;
     } else {
-      ({ minimumOwnerAgeInYears, minimumSize } = lib);
-      let obj = { key: "no_violations_requirement" };
-      const intl18 = lib(actions[5]).intl;
-      obj.checkedLabel = intl18.string(lib(actions[5]).t["1lGNPZ"]);
-      const intl19 = lib(actions[5]).intl;
-      obj.uncheckedLabel = intl19.string(lib(actions[5]).t["D+gTJt"]);
-      const intl20 = lib(actions[5]).intl;
-      obj = { communityGuidelinesUrl: onEligibilityBecameStale(actions[6]).getArticleURL(isModerationMFAEnabled.PUBLIC_GUILD_GUILDLINES) };
-      obj.description = intl20.format(lib(actions[5]).t.HFY0m6, obj);
-      obj.checked = lib.noRecentViolations;
+      ({ minimumOwnerAgeInYears, minimumSize, noRecentViolations } = tmp);
+      let obj = { key: "no_violations_requirement", checkedLabel: null, uncheckedLabel: null, description: null, checked: null, actionLabel: null, actionHandler: null };
+      const intl18 = callback(actions[5]).intl;
+      obj[1] = intl18.string(callback(actions[5]).t["1lGNPZ"]);
+      const intl19 = callback(actions[5]).intl;
+      obj[2] = intl19.string(callback(actions[5]).t["D+gTJt"]);
+      const intl20 = callback(actions[5]).intl;
+      obj = { communityGuidelinesUrl: null };
+      obj[0] = onEligibilityBecameStale(actions[6]).getArticleURL(isModerationMFAEnabled.PUBLIC_GUILD_GUILDLINES);
+      obj[3] = intl20.format(callback(actions[5]).t.HFY0m6, obj);
+      obj[4] = tmp.noRecentViolations;
       let stringResult;
-      if (!lib.noRecentViolations) {
-        const intl = lib(actions[5]).intl;
-        stringResult = intl.string(lib(actions[5]).t["xU2fl+"]);
+      if (!noRecentViolations) {
+        const intl = tmp23(tmp24[5]).intl;
+        stringResult = intl.string(tmp23(tmp24[5]).t["xU2fl+"]);
       }
-      obj.actionLabel = stringResult;
+      obj[5] = stringResult;
       let fn;
-      if (!lib.noRecentViolations) {
+      if (!noRecentViolations) {
         fn = () => {
-          const tmp = onEligibilityBecameStale(actions[7]);
-          return tmp(onEligibilityBecameStale(actions[6]).getSubmitRequestURL());
+          const tmp = callback(3880);
+          return tmp(callback(1945).getSubmitRequestURL());
         };
       }
-      obj.actionHandler = fn;
+      obj[6] = fn;
       const items = [obj];
-      let tmp4 = null != minimumOwnerAgeInYears;
-      if (tmp4) {
-        tmp4 = null != lib.meetsOwnerAgeRequirement;
-      }
-      if (tmp4) {
-        obj = { key: "owner_age_requirement" };
-        const intl2 = lib(actions[5]).intl;
-        obj.checkedLabel = intl2.string(lib(actions[5]).t["+F8haD"]);
-        const intl3 = lib(actions[5]).intl;
-        obj.uncheckedLabel = intl3.string(lib(actions[5]).t["5BwC/O"]);
-        const intl4 = lib(actions[5]).intl;
-        const obj1 = { minimumOwnerAgeInYears };
-        obj.description = intl4.formatToPlainString(lib(actions[5]).t.DW1Vae, obj1);
-        obj.checked = lib.meetsOwnerAgeRequirement;
+      if (tmp3) {
+        obj = { key: "owner_age_requirement", checkedLabel: null, uncheckedLabel: null, description: null, checked: null };
+        const intl2 = tmp23(tmp24[5]).intl;
+        obj[1] = intl2.string(tmp23(tmp24[5]).t["+F8haD"]);
+        const intl3 = tmp23(tmp24[5]).intl;
+        obj[2] = intl3.string(tmp23(tmp24[5]).t["5BwC/O"]);
+        const intl4 = tmp23(tmp24[5]).intl;
+        const obj1 = { minimumOwnerAgeInYears: null };
+        obj1[0] = minimumOwnerAgeInYears;
+        obj[3] = intl4.formatToPlainString(tmp23(tmp24[5]).t.DW1Vae, obj1);
+        obj[4] = tmp.meetsOwnerAgeRequirement;
         items.push(obj);
       }
-      let tmp10 = null != minimumSize;
-      if (tmp10) {
-        tmp10 = null != lib.hasSufficientMembers;
-      }
-      if (tmp10) {
-        const obj2 = { key: "member_count_requirement" };
-        const intl5 = lib(actions[5]).intl;
-        obj2.checkedLabel = intl5.string(lib(actions[5]).t.j7wXWo);
-        const intl6 = lib(actions[5]).intl;
-        obj2.uncheckedLabel = intl6.string(lib(actions[5]).t.W0suNz);
-        const intl7 = lib(actions[5]).intl;
-        const obj3 = { minimumSize };
-        obj2.description = intl7.formatToPlainString(lib(actions[5]).t.up53zR, obj3);
-        obj2.checked = lib.hasSufficientMembers;
+      if (tmp5) {
+        const obj2 = { key: "member_count_requirement", checkedLabel: null, uncheckedLabel: null, description: null, checked: null };
+        const intl5 = tmp23(tmp24[5]).intl;
+        obj2[1] = intl5.string(tmp23(tmp24[5]).t.j7wXWo);
+        const intl6 = tmp23(tmp24[5]).intl;
+        obj2[2] = intl6.string(tmp23(tmp24[5]).t.W0suNz);
+        const intl7 = tmp23(tmp24[5]).intl;
+        const obj3 = { minimumSize: null };
+        obj3[0] = minimumSize;
+        obj2[3] = intl7.formatToPlainString(tmp23(tmp24[5]).t.up53zR, obj3);
+        obj2[4] = tmp.hasSufficientMembers;
         items.push(obj2);
       }
-      let tmp17 = null != lib.minimumAgeInDays;
-      if (tmp17) {
-        tmp17 = null != lib.meetsServerAgeRequirement;
-      }
-      if (tmp17) {
-        const obj4 = { key: "server_age_requirement" };
-        const intl8 = lib(actions[5]).intl;
-        obj4.checkedLabel = intl8.string(lib(actions[5]).t.mjbvWw);
-        const intl9 = lib(actions[5]).intl;
-        obj4.uncheckedLabel = intl9.string(lib(actions[5]).t["9BV6L6"]);
-        const intl10 = lib(actions[5]).intl;
-        const obj5 = { minimumAge: onEligibilityBecameStale(actions[8])(lib.minimumAgeInDays) };
-        obj4.description = intl10.formatToPlainString(lib(actions[5]).t.Zwv84O, obj5);
-        obj4.checked = lib.meetsServerAgeRequirement;
+      if (tmp7) {
+        const obj4 = { key: "server_age_requirement", checkedLabel: null, uncheckedLabel: null, description: null, checked: null };
+        const intl8 = tmp23(tmp24[5]).intl;
+        obj4[1] = intl8.string(tmp23(tmp24[5]).t.mjbvWw);
+        const intl9 = tmp23(tmp24[5]).intl;
+        obj4[2] = intl9.string(tmp23(tmp24[5]).t["9BV6L6"]);
+        const intl10 = tmp23(tmp24[5]).intl;
+        const obj5 = { minimumAge: null };
+        obj5[0] = onEligibilityBecameStale(tmp24[8])(tmp.minimumAgeInDays);
+        obj4[3] = intl10.formatToPlainString(tmp23(tmp24[5]).t.Zwv84O, obj5);
+        obj4[4] = tmp.meetsServerAgeRequirement;
         items.push(obj4);
       }
-      if (null != lib.weeklyCommunicators) {
-        const obj6 = { key: "weekly_communicator_count_requirement" };
-        const intl21 = lib(actions[5]).intl;
-        obj6.checkedLabel = intl21.string(lib(actions[5]).t.Qw7qv4);
-        const intl22 = lib(actions[5]).intl;
-        obj6.uncheckedLabel = intl22.string(lib(actions[5]).t.b45kGG);
-        const intl23 = lib(actions[5]).intl;
-        obj6.description = intl23.string(lib(actions[5]).t.NbtjEC);
-        obj6.checked = lib.weeklyCommunicators;
+      if (null != tmp.weeklyCommunicators) {
+        const obj6 = { key: "weekly_communicator_count_requirement", checkedLabel: null, uncheckedLabel: null, description: null, checked: null };
+        const intl21 = tmp23(tmp24[5]).intl;
+        obj6[1] = intl21.string(tmp23(tmp24[5]).t.Qw7qv4);
+        const intl22 = tmp23(tmp24[5]).intl;
+        obj6[2] = intl22.string(tmp23(tmp24[5]).t.b45kGG);
+        const intl23 = tmp23(tmp24[5]).intl;
+        obj6[3] = intl23.string(tmp23(tmp24[5]).t.NbtjEC);
+        obj6[4] = tmp.weeklyCommunicators;
         items.push(obj6);
       }
-      if (null != lib.hasMemberRetention) {
-        const obj7 = { key: "member_retention_requirement" };
-        const intl24 = lib(actions[5]).intl;
-        obj7.checkedLabel = intl24.string(lib(actions[5]).t.Qvq39M);
-        const intl25 = lib(actions[5]).intl;
-        obj7.uncheckedLabel = intl25.string(lib(actions[5]).t.azHboI);
-        const intl26 = lib(actions[5]).intl;
-        obj7.description = intl26.string(lib(actions[5]).t.u4rCYO);
-        obj7.checked = lib.hasMemberRetention;
+      if (null != tmp.hasMemberRetention) {
+        const obj7 = { key: "member_retention_requirement", checkedLabel: null, uncheckedLabel: null, description: null, checked: null };
+        const intl24 = tmp23(tmp24[5]).intl;
+        obj7[1] = intl24.string(tmp23(tmp24[5]).t.Qvq39M);
+        const intl25 = tmp23(tmp24[5]).intl;
+        obj7[2] = intl25.string(tmp23(tmp24[5]).t.azHboI);
+        const intl26 = tmp23(tmp24[5]).intl;
+        obj7[3] = intl26.string(tmp23(tmp24[5]).t.u4rCYO);
+        obj7[4] = tmp.hasMemberRetention;
         items.push(obj7);
       }
-      const obj8 = { key: "nsfw_requirement" };
-      const intl11 = lib(actions[5]).intl;
-      obj8.checkedLabel = intl11.string(lib(actions[5]).t.bymfTb);
-      const intl12 = lib(actions[5]).intl;
-      obj8.uncheckedLabel = intl12.string(lib(actions[5]).t["718pRA"]);
-      const intl13 = lib(actions[5]).intl;
-      obj8.description = intl13.string(lib(actions[5]).t["5ZqX+j"]);
-      obj8.checked = lib.notNSFW;
+      const obj8 = { key: "nsfw_requirement", checkedLabel: null, uncheckedLabel: null, description: null, checked: null };
+      const intl11 = tmp23(tmp24[5]).intl;
+      obj8[1] = intl11.string(callback(actions[5]).t.bymfTb);
+      const intl12 = tmp23(tmp24[5]).intl;
+      obj8[2] = intl12.string(callback(actions[5]).t["718pRA"]);
+      const intl13 = tmp23(tmp24[5]).intl;
+      obj8[3] = intl13.string(callback(actions[5]).t["5ZqX+j"]);
+      obj8[4] = tmp.notNSFW;
       items.push(obj8);
-      if (null != lib.hasEnabled2FA) {
-        let tmp31 = !lib.hasEnabled2FA;
-        if (tmp31) {
-          tmp31 = !isUserMFAEnabled;
+      if (null != tmp.hasEnabled2FA) {
+        const hasEnabled2FA2 = tmp.hasEnabled2FA;
+        let tmp11 = !hasEnabled2FA2;
+        if (!hasEnabled2FA2) {
+          tmp11 = !isUserMFAEnabled;
         }
-        if (tmp31) {
+        if (tmp11) {
           let onEnableMFAClick;
-          if (null != actions) {
+          if (actions != null) {
             onEnableMFAClick = actions.onEnableMFAClick;
           }
-          tmp31 = null != onEnableMFAClick;
+          tmp11 = null != onEnableMFAClick;
         }
-        let tmp36 = !lib.hasEnabled2FA;
-        if (tmp36) {
-          tmp36 = !isModerationMFAEnabled;
+        const hasEnabled2FA = tmp.hasEnabled2FA;
+        let tmp13 = !hasEnabled2FA;
+        if (!hasEnabled2FA) {
+          tmp13 = !isModerationMFAEnabled;
         }
-        if (tmp36) {
+        if (tmp13) {
           let prop;
-          if (null != actions) {
+          if (actions != null) {
             prop = actions.onRequireModeratorMFAClick;
           }
-          tmp36 = null != prop;
+          tmp13 = null != prop;
         }
-        if (!tmp31) {
-          tmp31 = tmp36;
+        if (!tmp11) {
+          tmp11 = tmp13;
         }
-        const obj9 = { key: "2fa_requirement" };
-        const intl14 = lib(actions[5]).intl;
-        obj9.checkedLabel = intl14.string(lib(actions[5]).t.NqVyFk);
-        const intl15 = lib(actions[5]).intl;
-        obj9.uncheckedLabel = intl15.string(lib(actions[5]).t.VcDNIV);
-        const intl16 = lib(actions[5]).intl;
-        const obj10 = { enableMFAHook };
-        obj9.description = intl16.format(lib(actions[5]).t["7NzkfV"], obj10);
-        obj9.checked = lib.hasEnabled2FA;
+        const obj9 = { key: "2fa_requirement", checkedLabel: null, uncheckedLabel: null, description: null, checked: null, actionLabel: null, actionHandler: null };
+        const intl14 = tmp23(tmp24[5]).intl;
+        obj9[1] = intl14.string(tmp23(tmp24[5]).t.NqVyFk);
+        const intl15 = tmp23(tmp24[5]).intl;
+        obj9[2] = intl15.string(tmp23(tmp24[5]).t.VcDNIV);
+        const intl16 = tmp23(tmp24[5]).intl;
+        const obj10 = { enableMFAHook: null };
+        obj10[0] = enableMFAHook;
+        obj9[3] = intl16.format(tmp23(tmp24[5]).t["7NzkfV"], obj10);
+        obj9[4] = tmp.hasEnabled2FA;
         let stringResult1;
-        if (tmp31) {
-          const intl17 = lib(actions[5]).intl;
-          stringResult1 = intl17.string(lib(actions[5]).t.BU4Diu);
+        if (tmp11) {
+          const intl17 = tmp23(tmp24[5]).intl;
+          stringResult1 = intl17.string(tmp23(tmp24[5]).t.BU4Diu);
         }
-        obj9.actionLabel = stringResult1;
-        let tmp48;
-        if (tmp31) {
-          tmp48 = callback;
+        obj9[5] = stringResult1;
+        let tmp18;
+        if (tmp11) {
+          tmp18 = callback;
         }
-        obj9.actionHandler = tmp48;
+        obj9[6] = tmp18;
         items.push(obj9);
       }
       if (true === sortedByIneligible) {

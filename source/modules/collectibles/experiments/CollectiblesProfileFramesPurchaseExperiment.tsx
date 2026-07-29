@@ -1,17 +1,15 @@
-// Module ID: 8677
-// Function ID: 68775
+// Module ID: 8701
+// Function ID: 8702
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 
-// Module 8677 (apexExperiment)
+// Module 8701 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { CONTROL: 0, [0]: "CONTROL", OPEN_PURCHASE: 1, [1]: "OPEN_PURCHASE", PAID_PREMIUM_SUBSCRIBERS_ONLY: 2, [2]: "PAID_PREMIUM_SUBSCRIBERS_ONLY" };
-obj = { name: "2026-04-collectibles-profile-frames-purchase", kind: "user" };
-obj.defaultConfig = { bucket: obj.CONTROL };
 obj = { bucket: obj.CONTROL };
-obj.variations = { [0]: obj, [1]: { bucket: obj.OPEN_PURCHASE }, [2]: { bucket: obj.PAID_PREMIUM_SUBSCRIBERS_ONLY } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+obj = { bucket: obj.CONTROL };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-04-collectibles-profile-frames-purchase", kind: "user", defaultConfig: obj, variations: { 0: obj, 1: { bucket: obj.OPEN_PURCHASE }, 2: { bucket: obj.PAID_PREMIUM_SUBSCRIBERS_ONLY } } });
 const result = require("set").fileFinishedImporting("modules/collectibles/experiments/CollectiblesProfileFramesPurchaseExperiment.tsx");
 
 export default apexExperiment;

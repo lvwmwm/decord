@@ -1,33 +1,37 @@
-// Module ID: 16377
-// Function ID: 127339
+// Module ID: 16412
+// Function ID: 16413
 // Name: GuildSettingsStickerCreateModal
-// Dependencies: [31, 33, 9081, 9084, 1212, 16378, 2]
+// Dependencies: [19, 21, 9105, 9108, 1236, 16413, 2]
 // Exports: default
 
-// Module 16377 (GuildSettingsStickerCreateModal)
-import "result";
+// Module 16412 (GuildSettingsStickerCreateModal)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 const result = require("useNavigatorConfirmChangesOnBack").fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/GuildSettingsStickerCreateModal.tsx");
 
 export default function GuildSettingsStickerCreateModal(arg0) {
-  let dependencyMap;
-  let jsx;
+  let c2;
+  let c3;
   let require;
   let stickerId;
   ({ guildId: require, stickerId } = arg0);
-  ({ onGoBack: dependencyMap, ref: jsx } = stickerId(9081)());
-  const obj = { screenKey: "guild-settings-sticker-create" };
-  const tmp = stickerId(9081)();
-  const tmp2 = jsx;
-  const intl = require(1212) /* getSystemLocale */.intl;
+  let dependencyMap;
+  c3 = undefined;
+  ({ onGoBack: c2, ref: c3 } = stickerId(9105)());
+  const tmp2 = stickerId(9105)();
+  const tmp3 = c3;
+  const intl = require(1236) /* getSystemLocale */.intl;
   if (null != stickerId) {
   } else {
   }
-  obj.title = intl.string(_3DzNjU);
-  obj.render = function render() {
-    return outer1_3(stickerId(outer1_2[5]), { ref: closure_3, guildId: closure_0, stickerId, onFinish: closure_2 });
-  };
-  return tmp2(stickerId(9084), obj);
+  const tmp4 = stickerId(9108);
+  return tmp3(tmp4, {
+    screenKey: "guild-settings-sticker-create",
+    title: intl.string(_3DzNjU),
+    render() {
+      return _undefined2(stickerId(_undefined[5]), { ref: _undefined2, guildId: closure_0, stickerId, onFinish: _undefined });
+    }
+  });
 };

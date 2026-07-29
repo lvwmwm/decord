@@ -1,24 +1,24 @@
-// Module ID: 15799
-// Function ID: 121700
+// Module ID: 15834
+// Function ID: 15835
 // Name: useIsActivityPanelFullscreen
-// Dependencies: [1347, 5670, 566, 3783, 10442, 2]
+// Dependencies: [1371, 5688, 589, 3807, 10466, 2]
 // Exports: useIsActivityPanelFullscreen
 
-// Module 15799 (useIsActivityPanelFullscreen)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 15834 (useIsActivityPanelFullscreen)
+import participantFromServer from "participantFromServer";
 import { ActivityPanelModes } from "ActivityPanelModes";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/activities/panel/native/utils/ActivityPanelUtils.tsx");
 
 export const useIsActivityPanelFullscreen = function useIsActivityPanelFullscreen() {
-  const items = [_createForOfIteratorHelperLoose];
-  return require(566) /* initialize */.useStateFromStores(items, () => {
-    const embeddedActivityLocationChannelId = outer1_0(outer1_2[3]).getEmbeddedActivityLocationChannelId(outer1_3.getConnectedActivityLocation());
-    let tmp2 = outer1_3.getActivityPanelMode() === outer1_4.PANEL;
-    if (tmp2) {
-      tmp2 = !outer1_1(outer1_2[4])(embeddedActivityLocationChannelId);
+  const items = [participantFromServer];
+  return require(589) /* initialize */.useStateFromStores(items, () => {
+    const embeddedActivityLocationChannelId = callback(table[3]).getEmbeddedActivityLocationChannelId(store.getConnectedActivityLocation());
+    let tmp3 = store.getActivityPanelMode() === constants.PANEL;
+    if (tmp3) {
+      tmp3 = !callback2(table[4])(embeddedActivityLocationChannelId);
     }
-    return tmp2;
+    return tmp3;
   });
 };

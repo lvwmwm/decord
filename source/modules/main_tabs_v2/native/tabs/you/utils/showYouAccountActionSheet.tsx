@@ -1,24 +1,22 @@
-// Module ID: 15210
-// Function ID: 115621
+// Module ID: 15243
+// Function ID: 15244
 // Name: showYouAccountActionSheet
-// Dependencies: [15211, 4133, 15212, 1935, 2]
+// Dependencies: [15244, 4157, 15245, 1959, 2]
 // Exports: showYouAccountActionSheet
 
-// Module 15210 (showYouAccountActionSheet)
+// Module 15243 (showYouAccountActionSheet)
 import { YOU_ACCOUNT_ACTION_SHEET_KEY as closure_3 } from "YOU_SCREEN_ID";
 
 const result = require("YouStatusRadioGroup").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/utils/showYouAccountActionSheet.tsx");
 
 export const showYouAccountActionSheet = function showYouAccountActionSheet() {
   let flag = arg0;
-  let flag2 = arg1;
   if (arg0 === undefined) {
     flag = false;
   }
-  if (flag2 === undefined) {
+  let flag2 = arg1;
+  if (arg1 === undefined) {
     flag2 = true;
   }
-  let obj = importDefault(4133);
-  obj = { statusOnly: flag, disableHapticOnOpen: flag2 };
-  obj.openLazy(require(1935) /* maybeLoadBundle */(15212, dependencyMap.paths), closure_3, obj);
+  importDefault(4157).openLazy(require(1959) /* asyncRequireImpl */(15245, dependencyMap.paths), closure_3, { statusOnly: flag, disableHapticOnOpen: flag2 });
 };

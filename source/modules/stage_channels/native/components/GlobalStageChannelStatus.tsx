@@ -1,245 +1,309 @@
-// Module ID: 10669
-// Function ID: 82946
-// Name: getText
-// Dependencies: [5, 57, 31, 27, 3858, 1353, 653, 33, 1212, 4165, 689, 4355, 566, 4594, 10670, 7654, 10660, 4990, 6726, 6728, 6694, 6690, 1273, 4161, 4579, 4578, 10662, 10370, 4101, 3875, 6658, 4628, 2]
+// Module ID: 10693
+// Function ID: 10694
+// Name: StageChannelRaiseHandAck
+// Dependencies: [5, 32, 19, 17, 3882, 1377, 676, 21, 1236, 4189, 712, 4380, 589, 4616, 10694, 7677, 10684, 5012, 6747, 6749, 6715, 6711, 1297, 4185, 4601, 4600, 10686, 10394, 4125, 3899, 6679, 4650, 2]
 // Exports: default
 
-// Module 10669 (getText)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _slicedToArray from "_slicedToArray";
-import getThreadChannelIcon from "getThreadChannelIcon";
-import { View } from "useCanCurrentUserSpeakInChannel";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+// Module 10693 (StageChannelRaiseHandAck)
+import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
+import set from "set";
+import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint";
+import { View } from "useIsStageSpeakingDisabledForCurrentUser";
+import setContent from "setContent";
+import closure_9 from "handleStageInstanceCreateOrUpdate";
 import { Fonts } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "openStageChannelSettings";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let unpackModuleId;
 const require = arg1;
-function getText(number, number2) {
-  if (number > 0) {
-    if (number2 > 0) {
-      const intl3 = require(1212) /* getSystemLocale */.intl;
-      let obj = { number: number + number2 };
-      let formatResult = intl3.format(require(1212) /* getSystemLocale */.t["cXaoI+"], obj);
-    }
-    return formatResult;
-  }
-  if (number2 > 0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj = { number: number2 };
-    formatResult = intl2.format(require(1212) /* getSystemLocale */.t["0bU4FO"], obj);
-  } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = { number };
-    formatResult = intl.format(require(1212) /* getSystemLocale */.t.sFzx0G, obj);
-  }
-}
 class StageChannelRaiseHandAck {
   constructor(arg0) {
     channel = global.channel;
-    c1 = undefined;
-    f82952 = undefined;
-    c3 = undefined;
+    _handleAcceptInvite = undefined;
+    f85335 = undefined;
+    useState = undefined;
     _handleAcceptInvite = function _handleAcceptInvite(arg0) {
-      // CreateGeneratorClosureLongIndex (0x67)
-      const obj = _handleAcceptInvite(tmp);
-      return obj(...arguments);
+      const self = this;
+      const tmp = _handleAcceptInvite(function*() {
+        if (c5 === 2) {
+          c5 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp6 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c5 = 2;
+            if (0 === c4) {
+              if (arg0 === 1) {
+                c5 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c5 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let closure_1 = tmp3;
+                let closure_0 = tmp7;
+                if (null != outer1_0) {
+                  if (obj9.shouldAgeVerifyToSpeakForCurrentUser(outer1_0.id)) {
+                    const obj1 = { entryPoint: null };
+                    obj1[0] = tmp42(6749).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND;
+                    const result = outer1_1(6747).showAgeVerificationGetStartedModal(obj1);
+                    const obj4 = outer1_1(6747);
+                  } else {
+                    dependencyMap(true);
+                    dependencyMap = 1;
+                    c4 = 2;
+                    c5 = 1;
+                    const obj2 = { value: null, done: false };
+                    obj2[0] = tmp42(6715).audienceAckRequestToSpeak(outer1_0, false);
+                    return obj2;
+                  }
+                  obj9 = outer1_0(5012);
+                }
+                c5 = 3;
+              }
+            } else if (1 === tmp7) {
+              dependencyMap = 0;
+              outer1_0 = closure_2;
+              dependencyMap(false);
+              throw outer1_0;
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              dependencyMap = 0;
+              dependencyMap(false);
+              if (null == outer1_8.getKey()) {
+                outer1_2(6711).openStageChannel(outer1_0);
+                const obj8 = outer1_2(6711);
+              }
+            }
+            dependencyMap = 0;
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } catch (tmp27) {
+            closure_2 = tmp27;
+            if (tmp4 === dependencyMap) {
+              c5 = tmp2;
+              throw tmp27;
+            } else {
+              c4 = tmp;
+            }
+          }
+        }
+      });
+      _handleAcceptInvite = tmp;
+      const apply = tmp.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     };
-    tmp = c12();
-    stringResult = require("computeDefaultGroupDmNameFromUserIds")(channel);
-    if (null == stringResult) {
-      tmp3 = channel;
-      tmp4 = c3;
-      num = 8;
+    tmp = jsxs();
+    tmp3 = useState;
+    tmp2 = _handleAcceptInvite;
+    stringResult = require("computeChannelName")(channel);
+    if (stringResult == null) {
+      tmp5 = channel;
       intl = require("getSystemLocale").intl;
       stringResult = intl.string(require("getSystemLocale").t["/YzI63"]);
     }
-    c1 = stringResult;
+    _handleAcceptInvite = stringResult;
+    tmp6 = channel;
     obj = require("initialize");
     items = [];
-    items[0] = c9;
+    items[0] = View;
     items1 = [];
     items1[0] = channel.id;
     stateFromStores = obj.useStateFromStores(items, () => outer1_9.getStageInstanceByChannel(channel.id), items1);
-    f82952 = stateFromStores;
-    tmp6 = require("useMountLayoutEffect")(() => {
-      let obj = _undefined(10670);
-      obj = {};
-      const intl = channel(1212).intl;
-      obj = { channelName: _undefined };
+    f85335 = stateFromStores;
+    tmp8 = require("useMountLayoutEffect")(() => {
+      let obj = _undefined(_undefined2[14]);
+      const intl = channel(_undefined2[8]).intl;
+      obj = { channelName: _undefined, channelTopic: null };
       let topic;
-      if (null != stateFromStores) {
+      if (stateFromStores != null) {
         topic = stateFromStores.topic;
       }
-      obj.channelTopic = topic;
-      obj.alertBody = intl.formatToPlainString(channel(1212).t.sqnsSP, obj);
+      obj = { alertBody: intl.formatToPlainString(channel(_undefined2[8]).t.sqnsSP, obj) };
+      obj[1] = topic;
       const result = obj.presentLocalNotification(obj);
     });
-    tmp7 = _slicedToArray(c6.useState(false), 2);
-    first = tmp7[0];
-    c3 = tmp7[1];
+    tmp9 = set(AgeVerificationModalEntryPoint.useState(false), 2);
+    [tmp10, useState] = tmp9;
     obj2 = require("useStageBlockedUsersCount");
     id = undefined;
-    if (null != channel) {
+    if (channel != null) {
       id = channel.id;
     }
     stageBlockedUsersCount = obj2.useStageBlockedUsersCount(id);
-    obj3 = require("useStageBlockedUsersCount");
+    tmp6Result = require("useStageBlockedUsersCount");
     id1 = undefined;
-    if (null != channel) {
+    if (channel != null) {
       id1 = channel.id;
     }
-    stageIgnoredUsersCount = obj3.useStageIgnoredUsersCount(id1);
-    tmp13 = require("CALL_ACTION_BAR_HEIGHT");
-    if (null != channel) {
+    stageIgnoredUsersCount = tmp6Result.useStageIgnoredUsersCount(id1);
+    tmp6Result1 = require("CALL_ACTION_BAR_HEIGHT");
+    if (channel != null) {
       id = channel.id;
     }
-    tmp16Result = null;
+    tmp18Result = null;
     if (null != stateFromStores) {
-      obj = {};
+      tmp18 = jsxs;
+      tmp19 = View;
+      obj = { style: null, children: null };
       items2 = [, ];
       items2[0] = tmp.invitedContainer;
-      obj1 = {};
-      obj1.height = tmp14;
+      obj1 = { height: null };
+      obj1[0] = tmp16;
       items2[1] = obj1;
-      obj.style = items2;
-      tmp18 = jsx;
-      tmp19 = View;
-      obj2 = {};
-      obj2.style = tmp.row;
+      obj[0] = items2;
       tmp20 = jsx;
-      tmp21 = channel;
-      tmp22 = c3;
-      num2 = 22;
-      tmp16 = jsxs;
-      tmp17 = View;
-      obj3 = {};
-      obj3.style = tmp.invitedHeaderText;
-      str = "header";
-      obj3.accessibilityRole = "header";
-      num3 = 8;
+      obj2 = { style: null, children: null };
+      obj2[0] = tmp.row;
+      obj3 = { style: null, accessibilityRole: "header", children: null };
+      obj3[0] = tmp.invitedHeaderText;
       intl2 = require("getSystemLocale").intl;
-      obj3.children = intl2.string(require("getSystemLocale").t.Ul1RJQ);
-      obj2.children = jsx(require("Button").LegacyText, obj3);
+      obj3[2] = intl2.string(require("getSystemLocale").t.Ul1RJQ);
+      obj2[1] = jsx(require("Button").LegacyText, obj3);
       items3 = [, , ];
       items3[0] = jsx(View, obj2);
-      if (stageBlockedUsersCount > 0) {
-        tmp24 = jsx;
-        tmp25 = View;
-        obj4 = {};
-        obj4.style = tmp.row;
-        tmp26 = jsx;
-        tmp27 = channel;
-        tmp28 = c3;
-        num4 = 23;
-        obj5 = { variant: "text-xs/medium", color: "text-overlay-light" };
-        tmp29 = getText;
-        obj5.children = getText(stageBlockedUsersCount, stageIgnoredUsersCount);
-        obj4.children = jsx(require("Text").Text, obj5);
-        tmp23 = jsx(View, obj4);
-      } else {
-        tmp23 = null;
-      }
-      items3[1] = tmp23;
-      tmp30 = jsxs;
-      tmp31 = View;
-      obj6 = {};
-      obj6.style = tmp.row;
-      tmp32 = jsx;
-      tmp33 = View;
-      obj7 = {};
-      obj7.style = tmp.buttonWrapper;
-      tmp34 = jsx;
-      tmp35 = channel;
-      tmp36 = c3;
-      num5 = 24;
-      obj8 = { variant: "secondary", onPress: null, pillStyle: null, size: "sm", text: null, grow: true };
-      obj8.onPress = function handleDeclineInvite() {
-        if (null != channel) {
-          const result = channel(6694).audienceAckRequestToSpeak(channel, true);
-          const obj = channel(6694);
+      num = 0;
+      if (stageBlockedUsersCount <= 0) {
+        tmp21 = null;
+        if (stageIgnoredUsersCount <= 0) {
+          items3[1] = null;
+          obj4 = { style: null, children: null };
+          obj4[0] = tmp.row;
+          obj5 = { style: null, children: null };
+          obj5[0] = tmp.buttonWrapper;
+          obj6 = { variant: "secondary", onPress: null, pillStyle: null, size: "sm", text: null, grow: true };
+          obj6[1] = function handleDeclineInvite() {
+            if (null != channel) {
+              const result = channel(_undefined2[20]).audienceAckRequestToSpeak(tmp, true);
+              const obj = channel(_undefined2[20]);
+            }
+          };
+          obj6[2] = tmp.declineButtonPill;
+          intl6 = require("getSystemLocale").intl;
+          obj6[4] = intl6.string(require("getSystemLocale").t["1YDv7a"]);
+          obj5[1] = tmp20(require("CollapsingText").BaseTextButton, obj6);
+          items4 = [, ];
+          items4[0] = tmp20(tmp19, obj5);
+          obj7 = { style: null, children: null };
+          obj7[0] = tmp.buttonWrapper;
+          obj8 = { variant: "primary-overlay", onPress: null, size: "sm", text: null, loading: null, disabled: null, grow: true };
+          obj8[1] = function handleAcceptInvite() {
+            const self = this;
+            const apply = _handleAcceptInvite.apply;
+            if (typeof apply === "unknown") {
+              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+            } else {
+              applyArgumentsResult = apply(self, arguments);
+            }
+            return applyArgumentsResult;
+          };
+          intl7 = require("getSystemLocale").intl;
+          obj8[3] = intl7.string(require("getSystemLocale").t.MpO0px);
+          obj8[4] = tmp10;
+          obj8[5] = tmp10;
+          obj7[1] = tmp20(require("Button").Button, obj8);
+          items4[1] = tmp20(tmp19, obj7);
+          obj4[1] = items4;
+          items3[2] = tmp18(tmp19, obj4);
+          obj[1] = items3;
+          tmp18Result = tmp18(tmp19, obj);
         }
-      };
-      obj8.pillStyle = tmp.declineButtonPill;
-      intl3 = require("getSystemLocale").intl;
-      obj8.text = intl3.string(require("getSystemLocale").t["1YDv7a"]);
-      flag = true;
-      obj7.children = jsx(require("CollapsingText").BaseTextButton, obj8);
-      items4 = [, ];
-      items4[0] = jsx(View, obj7);
-      tmp37 = jsx;
-      tmp38 = View;
-      obj9 = {};
-      obj9.style = tmp.buttonWrapper;
-      tmp39 = jsx;
-      num6 = 25;
-      obj10 = { variant: "primary-overlay", onPress: null, size: "sm" };
-      obj10.onPress = function handleAcceptInvite() {
-        return _handleAcceptInvite(...arguments);
-      };
-      intl4 = require("getSystemLocale").intl;
-      obj10.text = intl4.string(require("getSystemLocale").t.MpO0px);
-      obj10.loading = first;
-      obj10.disabled = first;
-      obj10.grow = true;
-      obj9.children = jsx(require("Button").Button, obj10);
-      items4[1] = jsx(View, obj9);
-      obj6.children = items4;
-      items3[2] = jsxs(View, obj6);
-      obj.children = items3;
-      tmp16Result = tmp16(tmp17, obj);
+      }
+      obj9 = { style: null, children: null };
+      obj9[0] = tmp.row;
+      if (stageBlockedUsersCount <= 0) {
+        if (stageIgnoredUsersCount > 0) {
+          intl4 = require("getSystemLocale").intl;
+          obj10 = { number: null };
+          obj10[0] = stageIgnoredUsersCount;
+          formatResult = intl4.format(require("getSystemLocale").t["0bU4FO"], obj10);
+        } else {
+          intl3 = require("getSystemLocale").intl;
+          obj11 = { number: null };
+          obj11[0] = stageBlockedUsersCount;
+          formatResult = intl3.format(require("getSystemLocale").t.sFzx0G, obj11);
+        }
+        obj12 = { variant: "text-xs/medium", color: "text-overlay-light", children: null };
+        obj12[2] = formatResult;
+        obj9[1] = tmp20(tmp22, obj12);
+        tmp20Result = tmp20(tmp19, obj9);
+      }
+      intl5 = require("getSystemLocale").intl;
+      obj13 = { number: null };
+      stageIgnoredUsersCount = stageBlockedUsersCount + stageIgnoredUsersCount;
+      obj13[0] = stageIgnoredUsersCount;
+      formatResult = intl5.format(require("getSystemLocale").t["cXaoI+"], obj13);
     }
-    return tmp16Result;
+    return tmp18Result;
   }
 }
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.invitedContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.icon = { marginEnd: require("_createForOfIteratorHelperLoose").space.PX_8, tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-let obj1 = { marginEnd: require("_createForOfIteratorHelperLoose").space.PX_8, tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.activeSpeakerIcon = { marginEnd: require("_createForOfIteratorHelperLoose").space.PX_8, tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-let obj2 = { marginEnd: require("_createForOfIteratorHelperLoose").space.PX_8, tintColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose.activeStageIcon = { marginEnd: require("_createForOfIteratorHelperLoose").space.PX_8, tintColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360 };
-let obj3 = { marginEnd: require("_createForOfIteratorHelperLoose").space.PX_8, tintColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.GREEN_360 };
-_createForOfIteratorHelperLoose.topic = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, fontSize: 14, fontFamily: Fonts.PRIMARY_SEMIBOLD };
-let obj4 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, fontSize: 14, fontFamily: Fonts.PRIMARY_SEMIBOLD };
-_createForOfIteratorHelperLoose.channel = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, fontSize: 14, fontFamily: Fonts.PRIMARY_MEDIUM };
-let obj5 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT, fontSize: 14, fontFamily: Fonts.PRIMARY_MEDIUM };
-_createForOfIteratorHelperLoose.invitedHeaderText = { color: require("_createForOfIteratorHelperLoose").colors.WHITE, fontSize: 14, fontFamily: Fonts.PRIMARY_MEDIUM };
-let obj7 = { alignItems: "center", justifyContent: "center", flexDirection: "row", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: -8, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.noticeContainer = obj7;
-let obj8 = { alignItems: "center", justifyContent: "center", flexDirection: "row", width: "100%", gap: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose.row = obj8;
-let obj6 = { color: require("_createForOfIteratorHelperLoose").colors.WHITE, fontSize: 14, fontFamily: Fonts.PRIMARY_MEDIUM };
-_createForOfIteratorHelperLoose.buttonWrapper = { flexGrow: 1, margin: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj9 = { flexGrow: 1, margin: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.declineButtonPill = { borderColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj10 = { borderColor: require("_createForOfIteratorHelperLoose").colors.WHITE };
-let result = require("result").fileFinishedImporting("modules/stage_channels/native/components/GlobalStageChannelStatus.tsx");
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { invitedContainer: null, icon: null, activeSpeakerIcon: null, activeStageIcon: null, topic: null, channel: null, invitedHeaderText: null, noticeContainer: null, row: null, buttonWrapper: null, declineButtonPill: null };
+createCacheKey = { paddingHorizontal: require("Themes").space.PX_8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginEnd: require("Themes").space.PX_8, tintColor: require("Themes").colors.TEXT_DEFAULT };
+let obj1 = { marginEnd: require("Themes").space.PX_8, tintColor: require("Themes").colors.TEXT_DEFAULT };
+createCacheKey[2] = { marginEnd: require("Themes").space.PX_8, tintColor: require("Themes").colors.WHITE };
+let obj2 = { marginEnd: require("Themes").space.PX_8, tintColor: require("Themes").colors.WHITE };
+createCacheKey[3] = { marginEnd: require("Themes").space.PX_8, tintColor: require("Themes").unsafe_rawColors.GREEN_360 };
+let obj3 = { marginEnd: require("Themes").space.PX_8, tintColor: require("Themes").unsafe_rawColors.GREEN_360 };
+createCacheKey[4] = { color: require("Themes").colors.TEXT_DEFAULT, fontSize: 14, fontFamily: Fonts.PRIMARY_SEMIBOLD };
+let obj4 = { color: require("Themes").colors.TEXT_DEFAULT, fontSize: 14, fontFamily: Fonts.PRIMARY_SEMIBOLD };
+createCacheKey[5] = { color: require("Themes").colors.TEXT_DEFAULT, fontSize: 14, fontFamily: Fonts.PRIMARY_MEDIUM };
+let obj5 = { color: require("Themes").colors.TEXT_DEFAULT, fontSize: 14, fontFamily: Fonts.PRIMARY_MEDIUM };
+createCacheKey[6] = { color: require("Themes").colors.WHITE, fontSize: 14, fontFamily: Fonts.PRIMARY_MEDIUM };
+let obj6 = { color: require("Themes").colors.WHITE, fontSize: 14, fontFamily: Fonts.PRIMARY_MEDIUM };
+createCacheKey[7] = { alignItems: "center", justifyContent: "center", flexDirection: "row", paddingHorizontal: require("Themes").space.PX_8, marginTop: -8, paddingBottom: require("Themes").space.PX_4 };
+let obj7 = { alignItems: "center", justifyContent: "center", flexDirection: "row", paddingHorizontal: require("Themes").space.PX_8, marginTop: -8, paddingBottom: require("Themes").space.PX_4 };
+createCacheKey[8] = { alignItems: "center", justifyContent: "center", flexDirection: "row", width: "100%", gap: require("Themes").space.PX_4 };
+let obj8 = { alignItems: "center", justifyContent: "center", flexDirection: "row", width: "100%", gap: require("Themes").space.PX_4 };
+createCacheKey[9] = { flexGrow: 1, margin: require("Themes").space.PX_8 };
+let obj9 = { flexGrow: 1, margin: require("Themes").space.PX_8 };
+createCacheKey[10] = { borderColor: require("Themes").colors.WHITE };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj10 = { borderColor: require("Themes").colors.WHITE };
+let result = require("noop").fileFinishedImporting("modules/stage_channels/native/components/GlobalStageChannelStatus.tsx");
 
 export default function GlobalStageChannelStatus(arg0) {
   let channel;
   let guild;
   ({ channel, guild } = arg0);
   let id;
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   id = undefined;
-  if (null != channel) {
+  if (channel != null) {
     id = channel.id;
   }
-  let stringResult = importDefault(4355)(channel);
-  if (null == stringResult) {
-    const intl = id(1212).intl;
-    stringResult = intl.string(id(1212).t["/YzI63"]);
+  let stringResult = importDefault(4380)(channel);
+  if (stringResult == null) {
+    const intl = id(1236).intl;
+    stringResult = intl.string(id(1236).t["/YzI63"]);
   }
-  const tmp6 = importDefault(10662)();
-  let invitedHeaderText = importDefault(10370)(id);
-  let obj = id(566);
+  const tmp7 = importDefault(10686)();
+  let invitedHeaderText = tmp3(10394)(id);
+  let obj = id(589);
   const items = [closure_9];
   const items1 = [id];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_9.getStageInstanceByChannel(id), items1);
@@ -249,76 +313,77 @@ export default function GlobalStageChannelStatus(arg0) {
     activeSpeakerIcon = null != stateFromStores ? tmp.activeStageIcon : tmp.icon;
   }
   if (!invitedHeaderText) {
-    if (!tmp6) {
-      let obj1 = id(3875);
+    if (!tmp7) {
+      let tmp8Result = tmp8(3899);
       let str = "dark-content";
     }
     if (null != channel) {
       if (null != guild) {
         const _HermesInternal = HermesInternal;
-        let tmp25 = ": ";
+        let tmp17 = ": ";
         const combined = "" + guild.name + ": " + stringResult;
-        let topic;
-        if (null != stateFromStores) {
-          topic = stateFromStores.topic;
+        let str2;
+        if (stateFromStores != null) {
+          str2 = stateFromStores.topic;
         }
-        let str2 = "";
-        if (null != topic) {
-          str2 = topic;
+        if (str2 == null) {
+          str2 = "";
         }
-        if (tmp6) {
-          obj = { channel };
+        if (tmp7) {
+          obj = { channel: null };
+          obj[0] = channel;
           let tmp13Result = callback2(StageChannelRaiseHandAck, obj);
         } else {
-          obj = { style: tmp.noticeContainer };
-          obj1 = { animated: true, barStyle: str };
-          const items2 = [callback2(importDefault(6658), obj1), , ];
-          const obj2 = { style: activeSpeakerIcon, size: id(1273).Icon.Sizes.REFRESH_SMALL_16 };
-          let obj5 = id(4628);
-          obj2.source = obj5.getChannelIconWithGuild(channel, guild);
-          items2[1] = callback2(id(1273).Icon, obj2);
-          const obj3 = { numberOfLines: 1 };
-          let tmp22Result = "" !== str2;
-          if (tmp22Result) {
-            const obj4 = {};
+          obj = { style: null, children: null };
+          obj[0] = tmp.noticeContainer;
+          const obj1 = { animated: true, barStyle: null };
+          obj1[1] = str;
+          const items2 = [callback2(tmp3(6679), obj1), , ];
+          const obj2 = { style: null, size: null, source: null };
+          obj2[0] = activeSpeakerIcon;
+          obj2[1] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
+          tmp8Result = tmp8(4650);
+          obj2[2] = tmp8Result.getChannelIconWithGuild(channel, guild);
+          items2[1] = callback2(tmp8(1297).Icon, obj2);
+          tmp13Result = "" !== str2;
+          if (tmp13Result) {
             const items3 = [tmp.topic, ];
             let invitedHeaderText2 = invitedHeaderText;
             if (invitedHeaderText) {
               invitedHeaderText2 = tmp.invitedHeaderText;
             }
+            const obj3 = { style: null, children: null };
             items3[1] = invitedHeaderText2;
-            obj4.style = items3;
+            obj3[0] = items3;
             const items4 = [str2, ];
             if (tmp12) {
-              tmp25 = null;
+              tmp17 = null;
             }
-            items4[1] = tmp25;
-            obj4.children = items4;
-            tmp22Result = closure_11(id(1273).LegacyText, obj4);
-            const tmp22 = closure_11;
+            items4[1] = tmp17;
+            obj3[1] = items4;
+            tmp13Result = tmp13(tmp8(1297).LegacyText, obj3);
           }
-          const items5 = [tmp22Result, ];
-          let tmp27Result = !tmp12;
-          if (!tmp12) {
-            obj5 = {};
+          const items5 = [tmp13Result, ];
+          let tmp15Result = !tmp12;
+          if (tmp11 <= 50) {
             const items6 = [tmp.channel, ];
             if (invitedHeaderText) {
               invitedHeaderText = tmp.invitedHeaderText;
             }
+            const obj4 = { style: null, children: null };
             items6[1] = invitedHeaderText;
-            obj5.style = items6;
-            obj5.children = combined;
-            tmp27Result = callback2(id(1273).LegacyText, obj5);
-            const tmp27 = callback2;
+            obj4[0] = items6;
+            obj4[1] = combined;
+            tmp15Result = tmp15(tmp8(1297).LegacyText, obj4);
           }
-          items5[1] = tmp27Result;
-          obj3.children = items5;
-          items2[2] = closure_11(id(1273).LegacyText, obj3);
-          obj.children = items2;
-          tmp13Result = closure_11(View, obj);
-          const tmp13 = closure_11;
+          const obj5 = { numberOfLines: 1, children: null };
+          items5[1] = tmp15Result;
+          obj5[1] = items5;
+          items2[2] = closure_11(tmp8(1297).LegacyText, obj5);
+          obj[1] = items2;
+          tmp13Result = tmp13(View, obj);
           const tmp14 = View;
-          const tmp20 = closure_11;
+          tmp15 = callback2;
         }
         return tmp13Result;
       }

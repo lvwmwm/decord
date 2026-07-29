@@ -1,45 +1,45 @@
-// Module ID: 16400
-// Function ID: 127508
+// Module ID: 16435
+// Function ID: 16436
 // Name: SyncingToGamesItem
-// Dependencies: [31, 3802, 1850, 653, 33, 1456, 5503, 5536, 5198, 4355, 4628, 3869, 689, 16323, 22, 7611, 4576, 5483, 2]
+// Dependencies: [19, 3826, 1874, 676, 21, 1480, 5521, 5554, 5220, 4380, 4650, 3893, 712, 16358, 12, 7634, 4598, 5501, 2]
 // Exports: default
 
-// Module 16400 (SyncingToGamesItem)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 16435 (SyncingToGamesItem)
+import "noop";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { GuildSettingsSections } from "ME";
 import jsxProd from "jsxProd";
 
 let closure_6;
-let closure_7;
-let closure_8;
-let require = arg1;
+let error;
+let metroImportAll;
+const require = arg1;
 function SyncingToGamesItem(channels) {
   channels = channels.channels;
   const isOnlySection = channels.isOnlySection;
-  let obj = channels(1456);
-  const dependencyMap = obj.useNavigation();
-  const getOrFetchApplication = channels(5503).useGetOrFetchApplication(channels.applicationId);
-  let tmp3Result = null;
+  let dependencyMap;
+  let obj = channels(1480);
+  dependencyMap = obj.useNavigation();
+  const getOrFetchApplication = channels(5521).useGetOrFetchApplication(channels.applicationId);
+  let tmp5Result = null;
   if (0 !== channels.length) {
-    obj = {};
     let name;
-    if (null != getOrFetchApplication) {
+    if (getOrFetchApplication != null) {
       name = getOrFetchApplication.name;
     }
-    obj.title = name;
-    obj.hasIcons = true;
-    obj.children = channels.map((id) => {
+    obj = { title: null, hasIcons: true, children: null };
+    obj[0] = name;
+    obj[2] = channels.map((id) => {
       let closure_0 = id;
-      let obj = { label: channels(4355).computeChannelName(id, outer1_4, outer1_3) };
-      obj = {};
-      const obj2 = channels(4355);
-      obj.IconComponent = channels(4628).getChannelIconComponent(id);
-      obj.icon = outer1_6(channels(5198).TableRow.Icon, obj);
-      obj.arrow = true;
-      obj.onPress = function onPress() {
-        const obj = { channel: length };
+      let obj = { label: null, icon: null, arrow: true, onPress: null };
+      obj[0] = channels(4380).computeChannelName(id, outer1_4, outer1_3);
+      obj = { IconComponent: null };
+      const obj2 = channels(4380);
+      obj[0] = channels(4650).getChannelIconComponent(id);
+      obj[1] = outer1_6(channels(5220).TableRow.Icon, obj);
+      obj[3] = function onPress() {
+        const obj = { channel: length, numScreensToPop: null };
         let num = 1;
         if (outer1_1) {
           num = 1;
@@ -47,46 +47,51 @@ function SyncingToGamesItem(channels) {
             num = 2;
           }
         }
-        obj.numScreensToPop = num;
+        obj[1] = num;
         outer1_2.push(outer2_5.EDIT_LINKED_LOBBY, obj);
       };
-      return outer1_6(channels(5198).TableRow, obj, id.id);
+      return outer1_6(channels(5220).TableRow, obj, id.id);
     });
-    tmp3Result = closure_6(channels(5536).TableRowGroup, obj);
-    const tmp3 = closure_6;
+    tmp5Result = closure_6(channels(5554).TableRowGroup, obj);
+    const tmp5 = closure_6;
   }
-  return tmp3Result;
+  return tmp5Result;
 }
-({ jsx: closure_6, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_settings/apps/native/GuildSettingsModalLobbiesLinked.tsx");
+({ jsx: closure_6, Fragment: error, jsxs: metroImportAll } = jsxProd);
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/guild_settings/apps/native/GuildSettingsModalLobbiesLinked.tsx");
 
 export default function GuildSettingsModalLobbiesLinked(arg0) {
   let contentContainerStyle;
   let guildId;
+  let _require;
+  let keys;
   ({ contentContainerStyle, guildId } = arg0);
-  let obj = require(3869) /* map */;
-  const token = obj.useToken(keys(689).modules.mobile.TABLE_ROW_PADDING);
-  let obj1 = require(16323) /* getChannelsAllowedToUnlink */;
+  let obj = _require(3893);
+  const token = obj.useToken(keys(712).modules.mobile.TABLE_ROW_PADDING);
+  let obj1 = _require(16358);
   const channelsAllowedToUnlink = obj1.useChannelsAllowedToUnlink(guildId);
-  let obj2 = keys(22);
+  let obj2 = keys(12);
   const groupByResult = obj2.groupBy(channelsAllowedToUnlink, (linkedLobby) => {
     linkedLobby = linkedLobby.linkedLobby;
     let application_id;
-    if (null != linkedLobby) {
+    if (linkedLobby != null) {
       application_id = linkedLobby.application_id;
     }
     return application_id;
   });
-  require = groupByResult;
+  _require = groupByResult;
   keys = Object.keys(groupByResult);
-  obj = {};
-  obj = {};
-  obj1 = { paddingTop: keys(689).space.PX_16 };
+  obj = { children: null };
+  obj = { contentContainerStyle: null, children: null };
+  obj1 = { paddingTop: null };
+  obj1[0] = keys(712).space.PX_16;
   const items = [obj1, contentContainerStyle];
-  obj.contentContainerStyle = items;
-  obj2 = { style: { paddingHorizontal: token }, spacing: keys(689).space.PX_24, children: keys.map((applicationId) => outer1_6(outer1_9, { applicationId, channels: groupByResult[applicationId], isOnlySection: 1 === keys.length }, applicationId)) };
-  obj.children = callback(require(4576) /* Stack */.Stack, obj2);
-  const items1 = [callback(require(7611) /* Form */.Form, obj), callback(require(5483) /* NavScrim */.NavScrim, {})];
-  obj.children = items1;
+  obj[0] = items;
+  obj2 = { style: { paddingHorizontal: token }, spacing: null, children: null };
+  obj2[1] = keys(712).space.PX_24;
+  obj2[2] = keys.map((applicationId) => outer1_6(outer1_9, { applicationId, channels: _undefined[applicationId], isOnlySection: 1 === keys.length }, applicationId));
+  obj[1] = callback(_require(4598).Stack, obj2);
+  const items1 = [callback(_require(7634).Form, obj), callback(_require(5501).NavScrim, {})];
+  obj[0] = items1;
   return callback2(closure_7, obj);
 };

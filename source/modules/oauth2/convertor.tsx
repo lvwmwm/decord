@@ -1,22 +1,22 @@
-// Module ID: 8933
-// Function ID: 70522
+// Module ID: 8957
+// Function ID: 8958
 // Name: convertOAuth2Authorization
-// Dependencies: [483, 2]
+// Dependencies: [506, 2]
 // Exports: convertOAuth2Authorization
 
-// Module 8933 (convertOAuth2Authorization)
+// Module 8957 (convertOAuth2Authorization)
 const result = require("set").fileFinishedImporting("modules/oauth2/convertor.tsx");
 
-export const convertOAuth2Authorization = function convertOAuth2Authorization(guilds) {
-  let tmp = guilds;
-  if (null != guilds.guilds) {
+export const convertOAuth2Authorization = function convertOAuth2Authorization(closure_0) {
+  let tmp = closure_0;
+  if (null != closure_0.guilds) {
     let obj = {};
-    let merged = Object.assign(guilds);
-    guilds = guilds.guilds;
-    obj["guilds"] = guilds.map((permissions) => {
+    let merged = Object.assign(closure_0);
+    const guilds = closure_0.guilds;
+    obj.guilds = guilds.map((permissions) => {
       const obj = {};
       const merged = Object.assign(permissions);
-      obj["permissions"] = outer1_0(outer1_1[0]).deserialize(permissions.permissions);
+      obj.permissions = callback(table[0]).deserialize(permissions.permissions);
       return obj;
     });
     tmp = obj;

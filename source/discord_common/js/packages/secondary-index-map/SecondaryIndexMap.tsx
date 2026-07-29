@@ -1,240 +1,217 @@
-// Module ID: 3789
-// Function ID: 28777
-// Name: sortedInsert
-// Dependencies: [57, 6, 7, 3790, 2]
+// Module ID: 3813
+// Function ID: 3814
+// Name: version
+// Dependencies: [32, 3814, 2]
 
-// Module 3789 (sortedInsert)
+// Module 3813 (version)
 import _slicedToArray from "_slicedToArray";
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
 
-function sortedInsert(arr) {
-  if (null != arg1) {
-    const tmp3 = importDefault(3790)(arr, arg1, arg3);
-    let tmp4 = tmp3;
-    if (arr[tmp3] !== arg1) {
-      let tmp5 = tmp3;
-      tmp4 = tmp3;
-      if (tmp3 < arr.length - 1) {
-        const sum = tmp5 + 1;
-        tmp4 = sum;
-        while (arr[sum] !== arg1) {
-          tmp5 = sum;
-          tmp4 = sum;
-          if (sum >= arr.length - 1) {
-            break;
-          }
-        }
-      }
+let closure_3 = [];
+let result = require("set").fileFinishedImporting("../discord_common/js/packages/secondary-index-map/SecondaryIndexMap.tsx");
+class SecondaryIndexMap {
+  constructor(arg0, arg1) {
+    fn = importDefault;
+    if (importDefault === undefined) {
+      fn = function n(arg0, arg1) {
+        return arg0 === arg1;
+      };
     }
-    arr.splice(tmp4, 1);
-  }
-  if (null != arg2) {
-    arr.splice(importDefault(3790)(arr, arg2, arg3), 0, arg2);
+    obj = Object.create(new.target.prototype);
+    map = new Map();
+    obj[0] = map;
+    obj[1] = [];
+    obj[2] = {};
+    obj[3] = {};
+    obj.indexBy = global;
+    obj.sortBy = arg1;
+    obj.isEqual = fn;
+    return obj;
   }
 }
-let closure_5 = [];
-let tmp2 = (() => {
-  class SecondaryIndexMap {
-    constructor(arg0, arg1) {
-      fn = arg2;
-      self = this;
-      if (arg2 === undefined) {
-        fn = function l(arg0, arg1) {
-          return arg0 === arg1;
-        };
+const prototype = SecondaryIndexMap.prototype;
+Object.defineProperty(prototype, "version", {
+  get: function version() {
+    return this._version;
+  },
+  set: undefined
+});
+prototype["indexes"] = function indexes(flag) {
+  if (flag === undefined) {
+    flag = false;
+  }
+  const self = this;
+  if (flag) {
+    return self.valueIndexes;
+  } else {
+    if (!flag) {
+      if (self.dirty) {
+        const obj = {};
+        const _Object = Object;
+        const entries = Object.entries(self.valueIndexes);
+        const tmp4 = entries[Symbol.iterator]();
+        while (tmp4 !== undefined) {
+          let tmp8 = callback;
+          let tmp9 = callback(tmp6, 2);
+          let items = [];
+          let tmp10 = items;
+          let num2 = 0;
+          let arraySpreadResult = HermesBuiltin.arraySpread(tmp9[1], 0);
+          obj[tmp9[0]] = items;
+          continue;
+        }
+        self.valueIndexesForGetter = obj;
+        self.dirty = false;
       }
-      tmp = outer1_3(self, SecondaryIndexMap);
-      map = new Map();
-      self.valueMap = map;
-      self.valueArray = [];
-      self.valueIndexes = {};
-      self.valueIndexesForGetter = {};
-      self.dirty = false;
-      self._version = 0;
-      self.indexBy = arg0;
-      self.sortBy = arg1;
-      self.isEqual = fn;
-      return;
+    }
+    return self.valueIndexesForGetter;
+  }
+};
+prototype["keys"] = function keys() {
+  const valueMap = this.valueMap;
+  return valueMap.keys();
+};
+prototype["values"] = function values(arg0, flag) {
+  if (flag === undefined) {
+    flag = false;
+  }
+  const self = this;
+  if (null == arg0) {
+    let valueArray = self.valueArray;
+  } else {
+    valueArray = self.indexes(flag)[arg0];
+    if (valueArray == null) {
+      valueArray = closure_3;
     }
   }
-  let obj = {
-    key: "version",
-    get() {
-      return this._version;
+  return valueArray;
+};
+prototype["size"] = function size(arg0) {
+  const self = this;
+  if (null == arg0) {
+    let num = self.valueArray.length;
+  } else {
+    num = undefined;
+    if (self.valueIndexes[arg0] != null) {
+      num = arr.length;
     }
-  };
-  let items = [obj, , , , , , , , , , ];
-  obj = {
-    key: "indexes",
-    value() {
-      let length;
-      let flag = arg0;
-      const self = this;
-      if (arg0 === undefined) {
-        flag = false;
-      }
-      if (flag) {
-        return self.valueIndexes;
+    if (num == null) {
+      num = 0;
+    }
+  }
+  return num;
+};
+prototype["clear"] = function clear() {
+  const valueMap = this.valueMap;
+  valueMap.clear();
+  this.valueArray = [];
+  this.valueIndexes = {};
+  this.valueIndexesForGetter = {};
+};
+prototype["has"] = function has(arg0) {
+  const valueMap = this.valueMap;
+  return valueMap.has(arg0);
+};
+prototype["get"] = function get(arg0) {
+  const valueMap = this.valueMap;
+  return valueMap.get(arg0);
+};
+prototype["set"] = function set(arg0, value) {
+  let sortBy;
+  let valueArray;
+  let self = this;
+  self = this;
+  const dependencyMap = value;
+  value = this.get(arg0);
+  const importDefault = value;
+  let tmp2 = null != value || null != value;
+  if (tmp2) {
+    let flag = null == value || null == value || !self.isEqual(value, value);
+    if (flag) {
+      if (null != value) {
+        let valueMap = self.valueMap;
+        const result = valueMap.set(arg0, value);
       } else {
-        if (!flag) {
-          if (self.dirty) {
-            const obj = {};
-            const _Object = Object;
-            const entries = Object.entries(self.valueIndexes);
-            let num4 = 0;
-            if (0 < entries.length) {
-              do {
-                let tmp2 = outer1_2;
-                let tmp3 = outer1_2(entries[num4], 2);
-                let items = [];
-                let tmp4 = items;
-                let num5 = 0;
-                let arraySpreadResult = HermesBuiltin.arraySpread(tmp3[1], 0);
-                obj[tmp3[0]] = items;
-                num4 = num4 + 1;
-                length = entries.length;
-              } while (num4 < length);
+        valueMap = self.valueMap;
+        valueMap.delete(arg0);
+      }
+      ({ valueArray, sortBy } = self);
+      if (null != value) {
+        let tmp7 = importDefault(3814)(valueArray, value, sortBy);
+        let tmp8 = tmp7;
+        if (valueArray[tmp7] !== value) {
+          let tmp9 = tmp7;
+          tmp8 = tmp7;
+          if (tmp7 < valueArray.length - 1) {
+            let sum = tmp9 + 1;
+            tmp8 = sum;
+            while (valueArray[sum] !== value) {
+              tmp9 = sum;
+              tmp8 = sum;
+              if (sum >= valueArray.length - 1) {
+                break;
+              }
             }
-            self.valueIndexesForGetter = obj;
-            self.dirty = false;
           }
         }
-        return self.valueIndexesForGetter;
+        valueArray.splice(tmp8, 1);
       }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "keys",
-    value() {
-      const valueMap = this.valueMap;
-      return valueMap.keys();
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "values",
-    value(arg0) {
-      let flag = arg1;
-      const self = this;
-      if (arg1 === undefined) {
-        flag = false;
+      if (null != value) {
+        valueArray.splice(importDefault(3814)(valueArray, value, sortBy), 0, value);
       }
-      if (null == arg0) {
-        let valueArray = self.valueArray;
-      } else {
-        valueArray = self.indexes(flag)[arg0];
-        if (null == valueArray) {
-          valueArray = outer1_5;
-        }
+      if (null != value) {
+        const item = self.indexBy(value).forEach((arg0) => {
+          const index = self.getIndex(arg0);
+          if (null != closure_0) {
+            const tmp5 = value(value[1])(index, tmp, tmp2);
+            let tmp6 = tmp5;
+            if (index[tmp5] !== tmp) {
+              let tmp7 = tmp5;
+              tmp6 = tmp5;
+              if (tmp5 < index.length - 1) {
+                const sum = tmp7 + 1;
+                tmp6 = sum;
+                while (index[sum] !== tmp) {
+                  tmp7 = sum;
+                  tmp6 = sum;
+                  if (sum >= index.length - 1) {
+                    break;
+                  }
+                }
+              }
+            }
+            index.splice(tmp6, 1);
+          }
+        });
+        const indexByResult = self.indexBy(value);
       }
-      return valueArray;
-    }
-  };
-  items[4] = {
-    key: "size",
-    value(arg0) {
-      const self = this;
-      if (null == arg0) {
-        let num = self.valueArray.length;
-      } else {
-        let length;
-        if (null != self.valueIndexes[arg0]) {
-          length = arr.length;
-        }
-        num = 0;
-        if (null != length) {
-          num = length;
-        }
-      }
-      return num;
-    }
-  };
-  items[5] = {
-    key: "clear",
-    value() {
-      const valueMap = this.valueMap;
-      valueMap.clear();
-      this.valueArray = [];
-      this.valueIndexes = {};
-      this.valueIndexesForGetter = {};
-    }
-  };
-  items[6] = {
-    key: "has",
-    value(arg0) {
-      const valueMap = this.valueMap;
-      return valueMap.has(arg0);
-    }
-  };
-  items[7] = {
-    key: "get",
-    value(arg0) {
-      const valueMap = this.valueMap;
-      return valueMap.get(arg0);
-    }
-  };
-  items[8] = {
-    key: "set",
-    value(arg0, value) {
-      let self = this;
-      self = this;
-      let closure_1 = value;
-      value = this.get(arg0);
-      let tmp2 = null != value || null != value;
-      if (tmp2) {
-        let flag = null == value || null == value || !self.isEqual(value, value);
-        if (flag) {
+      if (null != value) {
+        const item1 = self.indexBy(value).forEach((arg0) => {
+          const index = self.getIndex(arg0);
           if (null != value) {
-            let valueMap = self.valueMap;
-            const result = valueMap.set(arg0, value);
-          } else {
-            valueMap = self.valueMap;
-            valueMap.delete(arg0);
+            index.splice(value(value[1])(index, tmp, tmp2), 0, tmp);
           }
-          outer1_6(self.valueArray, value, value, self.sortBy);
-          if (null != value) {
-            const item = self.indexBy(value).forEach((arg0) => {
-              outer2_6(self.getIndex(arg0), _slicedToArray, null, self.sortBy);
-            });
-            const indexByResult = self.indexBy(value);
-          }
-          if (null != value) {
-            const item1 = self.indexBy(value).forEach((arg0) => {
-              outer2_6(self.getIndex(arg0), null, closure_1, self.sortBy);
-            });
-            const indexByResult1 = self.indexBy(value);
-          }
-          self.dirty = true;
-          self._version = self._version + 1;
-          flag = true;
-        }
-        tmp2 = flag;
+        });
+        const indexByResult1 = self.indexBy(value);
       }
-      return tmp2;
+      self.dirty = true;
+      self._version = self._version + 1;
+      flag = true;
     }
-  };
-  items[9] = {
-    key: "delete",
-    value(arg0) {
-      return this.set(arg0, null);
-    }
-  };
-  items[10] = {
-    key: "getIndex",
-    value(arg0) {
-      let tmp2 = this.valueIndexes[arg0];
-      if (null == tmp2) {
-        const items = [];
-        tmp.valueIndexes[arg0] = items;
-        tmp2 = items;
-      }
-      return tmp2;
-    }
-  };
-  return callback(SecondaryIndexMap, items);
-})();
-let result = require("_defineProperties").fileFinishedImporting("../discord_common/js/packages/secondary-index-map/SecondaryIndexMap.tsx");
+    tmp2 = flag;
+  }
+  return tmp2;
+};
+prototype["delete"] = function delete(arg0) {
+  return this.set(arg0, null);
+};
+prototype["getIndex"] = function getIndex(arg0) {
+  let tmp2 = this.valueIndexes[arg0];
+  if (null == tmp2) {
+    const items = [];
+    tmp.valueIndexes[arg0] = items;
+    tmp2 = items;
+  }
+  return tmp2;
+};
 
-export const SecondaryIndexMap = tmp2;
+export { SecondaryIndexMap };

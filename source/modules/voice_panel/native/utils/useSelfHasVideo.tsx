@@ -1,26 +1,22 @@
-// Module ID: 15876
-// Function ID: 122384
+// Module ID: 15911
+// Function ID: 15912
 // Name: useSelfHasVideo
-// Dependencies: [4178, 1194, 4212, 566, 10021, 2]
+// Dependencies: [4202, 1218, 4236, 589, 10043, 2]
 // Exports: default
 
-// Module 15876 (useSelfHasVideo)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 15911 (useSelfHasVideo)
+import getParticipants from "getParticipants";
+import fetchFingerprint from "fetchFingerprint";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/voice_panel/native/utils/useSelfHasVideo.tsx");
+const result = require("_detectH265HardwareDecode").fileFinishedImporting("modules/voice_panel/native/utils/useSelfHasVideo.tsx");
 
 export default function useSelfHasVideo(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct, closure_3, closure_4];
-  return _require(566).useStateFromStores(items, () => {
-    let tmp;
+  const items = [getParticipants, fetchFingerprint, _detectH265HardwareDecode];
+  return _require(589).useStateFromStores(items, () => {
     const participant = outer1_2.getParticipant(callback, outer1_3.getId());
-    if (null != participant) {
-      tmp = participant;
-    }
-    return callback(outer1_1[4]).canRenderParticipantVideo(tmp, outer1_4);
+    return callback(outer1_1[4]).canRenderParticipantVideo(participant, outer1_4);
   });
 };

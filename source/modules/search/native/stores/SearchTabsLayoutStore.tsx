@@ -1,123 +1,33 @@
-// Module ID: 11437
-// Function ID: 88679
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 5857, 11438, 11439, 11440, 10081, 9077, 620, 10082, 566, 686, 2]
+// Module ID: 11461
+// Function ID: 11462
+// Name: handleSearchQuery
+// Dependencies: [1372, 5875, 11462, 11463, 11464, 10102, 9101, 643, 10103, 589, 709, 2]
 
-// Module 11437 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import dispatcher from "dispatcher";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
+// Module 11461 (handleSearchQuery)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleReaction from "handleReaction";
+import search from "search";
+import setAutocompleteOptions from "setAutocompleteOptions";
+import teardown from "teardown";
+import prototype from "prototype";
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import { Store } from "initialize";
 
-let closure_14;
-let closure_15;
-let closure_16;
+let c10;
+let c9;
+let unpackModuleId;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function createInitialState(searchContext) {
-  return { searchContext, wasInitialSearchQuery: true, candidateTabs: closure_17, visibleTabs: closure_17, visibleTabCounts: null };
-}
 function handleSearchQuery(searchContext) {
   searchContext = searchContext.searchContext;
-  const searchContextId = require(10082) /* _createForOfIteratorHelperLoose */.getSearchContextId(searchContext);
+  let obj = require(10103) /* SearchTokenTypes */;
+  const searchContextId = obj.getSearchContextId(searchContext);
   let value = map.get(searchContextId);
-  if (null == value) {
-    value = createInitialState(searchContext);
+  if (value == null) {
+    obj = { searchContext: null, wasInitialSearchQuery: true, candidateTabs: null, visibleTabs: null, visibleTabCounts: null };
+    obj[0] = searchContext;
+    obj[2] = closure_12;
+    obj[3] = closure_12;
+    value = obj;
   }
   const result = map.set(searchContextId, value);
   return computeLayoutForState(value);
@@ -127,220 +37,194 @@ function computeLayoutForState(value) {
   let visibleTabs;
   const _require = value;
   const searchContext = value.searchContext;
-  if (uiStore.isAutocompleteVisible(searchContext)) {
+  if (autocompleteVisible.isAutocompleteVisible(searchContext)) {
     return false;
   } else {
-    const isInitialSearchQueryResult = uiStore.isInitialSearchQuery(searchContext);
+    const isInitialSearchQueryResult = obj.isInitialSearchQuery(searchContext);
     const dependencyMap = isInitialSearchQueryResult;
-    let _isNativeReflectConstruct = uiStore.isTextInputValueEmpty(searchContext);
-    let closure_4 = uiStore.hasUserAddedTags(searchContext);
-    let dispatcher = uiStore.isTagsEmpty(searchContext);
-    const searchResultsQuery = uiStore.getSearchResultsQuery(searchContext);
-    const queryString = uiStore.getQueryString(searchContext);
+    let channel = obj.isTextInputValueEmpty(searchContext);
+    let handleReaction = obj.hasUserAddedTags(searchContext);
+    let search = obj.isTagsEmpty(searchContext);
+    const searchResultsQuery = obj.getSearchResultsQuery(searchContext);
+    const queryString = obj.getQueryString(searchContext);
     if (isInitialSearchQueryResult) {
       let arr = table[searchContext.type];
     } else {
       arr = table2[searchContext.type];
     }
-    channel = channel.getChannel(_require(10082).getChannelIdFromSearchContext(searchContext));
-    let isArchivedThreadResult;
-    if (null != channel) {
-      isArchivedThreadResult = channel.isArchivedThread();
+    channel = channel.getChannel(_require(10103).getChannelIdFromSearchContext(searchContext));
+    let flag;
+    if (channel != null) {
+      flag = channel.isArchivedThread();
     }
-    let _inherits = null != isArchivedThreadResult && isArchivedThreadResult;
+    if (flag == null) {
+      flag = false;
+    }
     const found = arr.filter((arg0) => {
-      if (outer1_14.MEMBERS === arg0) {
-        let tmp6 = !_inherits;
-        if (tmp6) {
-          let tmp7 = closure_2;
+      if (reduced.MEMBERS === arg0) {
+        let tmp4 = !flag;
+        if (!flag) {
+          let tmp5 = closure_2;
           if (!closure_2) {
-            let tmp9 = !closure_4;
-            if (tmp9) {
-              tmp9 = !_isNativeReflectConstruct;
+            let tmp7 = !handleReaction;
+            if (!handleReaction) {
+              tmp7 = !ensureGuildLoaded;
             }
-            tmp7 = tmp9;
+            tmp5 = tmp7;
           }
-          tmp6 = tmp7;
+          tmp4 = tmp5;
         }
-        return tmp6;
+        return tmp4;
       } else {
-        if (outer1_14.RECENT !== arg0) {
-          if (outer1_14.GUILD_CHANNELS !== arg0) {
-            if (outer1_14.PEOPLE !== arg0) {
+        if (tmp.RECENT !== arg0) {
+          if (tmp.GUILD_CHANNELS !== arg0) {
+            if (tmp.PEOPLE !== arg0) {
               return true;
             }
           }
         }
-        return dispatcher;
+        return search;
       }
     });
-    let obj = _require(10082);
-    channel = _require(10082).getSearchContextId(searchContext);
+    let tmp6Result = tmp6(10103);
+    autocompleteVisible = tmp6Result.getSearchContextId(searchContext);
     const reduced = found.reduce((arg0, closure_1) => {
-      if (outer1_14.MEMBERS === closure_1) {
-        arg0[closure_1] = outer1_11.getCount(closure_8);
-      } else if (outer1_14.GUILD_CHANNELS === closure_1) {
-        arg0[closure_1] = outer1_10.getCount(closure_8);
-      } else if (outer1_14.PEOPLE === closure_1) {
-        arg0[closure_1] = outer1_12.getCount(closure_8);
+      if (reduced.MEMBERS === closure_1) {
+        arg0[closure_1] = searchResultsQuery.getCount(prototype);
+      } else if (tmp.GUILD_CHANNELS === closure_1) {
+        arg0[closure_1] = count.getCount(prototype);
+      } else if (tmp.PEOPLE === closure_1) {
+        arg0[closure_1] = flag.getCount(prototype);
       } else {
-        arg0[closure_1] = reduced.getTotalCount(value(isInitialSearchQueryResult[13]).getSearchTabFetchId(searchContext, closure_1, searchResultsQuery));
-        const obj = value(isInitialSearchQueryResult[13]);
+        arg0[closure_1] = totalCount.getTotalCount(value(isInitialSearchQueryResult[8]).getSearchTabFetchId(searchContext, closure_1, searchResultsQuery));
+        const obj = value(isInitialSearchQueryResult[8]);
       }
       return arg0;
     }, {});
-    visibleTabs = found;
+    let flag2 = true;
     visibleTabCounts = null;
-    let flag = true;
+    visibleTabs = found;
     if (!isInitialSearchQueryResult) {
       if (searchResultsQuery !== queryString) {
         visibleTabs = found.filter((arg0) => {
           let wasInitialSearchQuery = value.wasInitialSearchQuery;
           if (!wasInitialSearchQuery) {
-            const visibleTabs = value.visibleTabs;
+            const visibleTabs = tmp.visibleTabs;
             wasInitialSearchQuery = visibleTabs.includes(arg0);
           }
           return wasInitialSearchQuery;
         });
-        flag = false;
+        flag2 = false;
         visibleTabCounts = null;
       } else if (found.every((arg0) => null != reduced[arg0])) {
         visibleTabs = found.filter((arg0) => 0 !== reduced[arg0]);
-        flag = false;
+        flag2 = false;
         visibleTabCounts = reduced;
       } else {
         ({ visibleTabs, visibleTabCounts } = value);
-        flag = tmp20;
+        flag2 = tmp11;
       }
     }
-    const obj3 = _require(10082);
-    let tmp23 = !_require(620).areArraysShallowEqual(value.candidateTabs, found);
-    const obj4 = _require(620);
-    const tmp24 = !_require(620).areArraysShallowEqual(value.visibleTabs, visibleTabs);
+    tmp6Result = tmp6(643);
+    const result = tmp6Result.areArraysShallowEqual(value.candidateTabs, found);
+    let tmp13 = !result;
+    const obj2 = _require(10103);
+    const result1 = _require(643).areArraysShallowEqual(value.visibleTabs, visibleTabs);
     const visibleTabCounts2 = value.visibleTabCounts;
-    let tmp25 = visibleTabCounts2 === visibleTabCounts;
-    if (!tmp25) {
-      let tmp26 = null != visibleTabCounts2 && null != visibleTabCounts;
-      if (tmp26) {
-        tmp26 = searchContext(620)(visibleTabCounts2, visibleTabCounts);
+    let tmp16 = visibleTabCounts2 === visibleTabCounts;
+    if (!tmp16) {
+      let tmp17 = null != visibleTabCounts2 && null != visibleTabCounts;
+      if (tmp17) {
+        tmp17 = searchContext(643)(visibleTabCounts2, visibleTabCounts);
       }
-      tmp25 = tmp26;
+      tmp16 = tmp17;
     }
-    if (tmp23) {
+    if (!result) {
       value.candidateTabs = found;
     }
-    if (tmp24) {
+    if (!result1) {
       value.visibleTabs = visibleTabs;
     }
-    if (!tmp25) {
+    if (!tmp16) {
       value.visibleTabCounts = visibleTabCounts;
     }
-    value.wasInitialSearchQuery = flag;
-    if (!tmp23) {
-      tmp23 = tmp24;
+    value.wasInitialSearchQuery = flag2;
+    if (result) {
+      tmp13 = tmp15;
     }
-    if (!tmp23) {
-      tmp23 = tmp29;
+    if (!tmp13) {
+      tmp13 = tmp19;
     }
-    return tmp23;
+    return tmp13;
   }
 }
 function computeLayoutForAll() {
-  let iter3;
-  const tmp = _createForOfIteratorHelperLoose(map.values());
-  const iter = tmp();
-  let iter2 = iter;
   let flag = false;
-  let flag2 = false;
-  if (!iter.done) {
-    do {
-      let tmp2 = computeLayoutForState;
-      if (computeLayoutForState(iter2.value)) {
-        flag = true;
-      }
-      iter3 = tmp();
-      iter2 = iter3;
-      flag2 = flag;
-    } while (!iter3.done);
+  const values = map.values();
+  while (tmp2 !== undefined) {
+    let tmp4 = computeLayoutForState;
+    if (computeLayoutForState(tmp3)) {
+      flag = true;
+    }
+    continue;
   }
-  return flag2;
+  return flag;
 }
-({ SearchTabs: closure_14, SEARCH_TYPE_TO_SEARCH_INITIAL_TABS: closure_15, SEARCH_TYPE_TO_SEARCH_RESULT_TABS: closure_16 } = SearchAutocompleteSelectAnalyticsActions);
-let closure_17 = [];
+({ SearchTabs: c9, SEARCH_TYPE_TO_SEARCH_INITIAL_TABS: c10, SEARCH_TYPE_TO_SEARCH_RESULT_TABS: unpackModuleId } = SearchAutocompleteSelectAnalyticsActions);
+let closure_12 = [];
 const map = new Map();
-let tmp4 = ((Store) => {
-  class SearchTabsLayoutStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, SearchTabsLayoutStore);
-      obj = outer1_6(SearchTabsLayoutStore);
-      tmp2 = outer1_5;
-      if (outer1_19()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+class SearchTabsLayoutStore extends Store {
+}
+const prototype = SearchTabsLayoutStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(prototype, handleReaction, setAutocompleteOptions, search, teardown, ensureGuildLoaded);
+  const items = [handleReaction, setAutocompleteOptions, search, teardown];
+  this.syncWith(items, computeLayoutForAll);
+};
+prototype["getCandidateTabs"] = function getCandidateTabs(searchContext) {
+  let obj = require(10103) /* SearchTokenTypes */;
+  let value = map.get(obj.getSearchContextId(searchContext));
+  if (value == null) {
+    obj = { searchContext: null, wasInitialSearchQuery: true, candidateTabs: null, visibleTabs: null, visibleTabCounts: null };
+    obj[0] = searchContext;
+    obj[2] = closure_12;
+    obj[3] = closure_12;
+    value = obj;
   }
-  callback2(SearchTabsLayoutStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_13, outer1_9, outer1_11, outer1_10, outer1_12, outer1_8);
-      const items = [outer1_9, outer1_11, outer1_10, outer1_12];
-      this.syncWith(items, outer1_24);
-    }
-  };
-  let items = [obj, , , ];
-  obj = {
-    key: "getCandidateTabs",
-    value(searchContext) {
-      let value = outer1_18.get(SearchTabsLayoutStore(outer1_2[13]).getSearchContextId(searchContext));
-      if (null == value) {
-        value = outer1_22(searchContext);
-      }
-      return value.candidateTabs;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getVisibleTabs",
-    value(searchContext) {
-      let value = outer1_18.get(SearchTabsLayoutStore(outer1_2[13]).getSearchContextId(searchContext));
-      if (null == value) {
-        value = outer1_22(searchContext);
-      }
-      return value.visibleTabs;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getVisibleTabCounts",
-    value(searchContext) {
-      let value = outer1_18.get(SearchTabsLayoutStore(outer1_2[13]).getSearchContextId(searchContext));
-      if (null == value) {
-        value = outer1_22(searchContext);
-      }
-      return value.visibleTabCounts;
-    }
-  };
-  return callback(SearchTabsLayoutStore, items);
-})(require("initialize").Store);
-tmp4.displayName = "SearchTabsLayoutStore";
-tmp4 = new tmp4(require("dispatcher"), {
+  return value.candidateTabs;
+};
+prototype["getVisibleTabs"] = function getVisibleTabs(searchContext) {
+  let obj = require(10103) /* SearchTokenTypes */;
+  let value = map.get(obj.getSearchContextId(searchContext));
+  if (value == null) {
+    obj = { searchContext: null, wasInitialSearchQuery: true, candidateTabs: null, visibleTabs: null, visibleTabCounts: null };
+    obj[0] = searchContext;
+    obj[2] = closure_12;
+    obj[3] = closure_12;
+    value = obj;
+  }
+  return value.visibleTabs;
+};
+prototype["getVisibleTabCounts"] = function getVisibleTabCounts(searchContext) {
+  let obj = require(10103) /* SearchTokenTypes */;
+  let value = map.get(obj.getSearchContextId(searchContext));
+  if (value == null) {
+    obj = { searchContext: null, wasInitialSearchQuery: true, candidateTabs: null, visibleTabs: null, visibleTabCounts: null };
+    obj[0] = searchContext;
+    obj[2] = closure_12;
+    obj[3] = closure_12;
+    value = obj;
+  }
+  return value.visibleTabCounts;
+};
+SearchTabsLayoutStore.displayName = "SearchTabsLayoutStore";
+const searchTabsLayoutStore = new SearchTabsLayoutStore(require("dispatcher"), {
   SEARCH_QUERY_NATIVE_INITIALIZE: handleSearchQuery,
   SEARCH_QUERY_NATIVE_UPDATE: handleSearchQuery,
   SEARCH_QUERY_NATIVE_DELETE: function handleSearchQueryNativeDelete(id) {
     return map.delete(id.id);
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/search/native/stores/SearchTabsLayoutStore.tsx");
+let result = require("search").fileFinishedImporting("modules/search/native/stores/SearchTabsLayoutStore.tsx");
 
-export default tmp4;
+export default searchTabsLayoutStore;

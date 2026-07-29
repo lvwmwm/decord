@@ -1,10 +1,10 @@
-// Module ID: 3852
-// Function ID: 31833
+// Module ID: 3876
+// Function ID: 3877
 // Name: __DiscordCreateDateFormatter
-// Dependencies: [27, 477, 3853, 2]
+// Dependencies: [17, 500, 3877, 2]
 // Exports: supportsSystemDateFormatter
 
-// Module 3852 (__DiscordCreateDateFormatter)
+// Module 3876 (__DiscordCreateDateFormatter)
 if (null != global.__DiscordCreateDateFormatter) {
   let __DiscordCreateDateFormatter = global.__DiscordCreateDateFormatter;
 } else {
@@ -15,9 +15,10 @@ if (null != global.__DiscordCreateDateFormatter) {
     DateFormatUtils = tmp2.DateFormatUtils;
   }
   let activateResult;
-  if (null != DateFormatUtils) {
-    if (null != DateFormatUtils.activate) {
-      activateResult = DateFormatUtils.activate();
+  if (DateFormatUtils != null) {
+    const activate = DateFormatUtils.activate;
+    if (activate != null) {
+      activateResult = activate();
     }
   }
   if (true === activateResult) {
@@ -30,5 +31,5 @@ const result = require("enforcing").fileFinishedImporting("modules/system_date_f
 
 export const makeFormatter = __DiscordCreateDateFormatter;
 export const supportsSystemDateFormatter = function supportsSystemDateFormatter() {
-  return require(477) /* set */.isIOS();
+  return require(500) /* set */.isIOS();
 };

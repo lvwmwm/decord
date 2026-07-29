@@ -1,44 +1,53 @@
-// Module ID: 5722
-// Function ID: 49399
+// Module ID: 5740
+// Function ID: 5741
 // Name: isReadableChannel
-// Dependencies: [1352, 1348, 3793, 653, 2]
-// Exports: isReadableChannelId
+// Dependencies: [1376, 1372, 3817, 676, 2]
+// Exports: isReadableChannel, isReadableChannelId
 
-// Module 5722 (isReadableChannel)
-import { isTextChannel } from "_callSuper";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_2 from "_isNativeReflectConstruct";
+// Module 5740 (isReadableChannel)
+import { isTextChannel } from "createChannelRecord";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
 
 let BasicPermissions;
-let closure_3;
-function isReadableChannel(basicChannel) {
+let c3;
+({ ChannelTypes: c3, BasicPermissions } = ME);
+let closure_4 = BasicPermissions.VIEW_CHANNEL | BasicPermissions.READ_MESSAGE_HISTORY;
+const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/app_database/modules/messages/isReadableChannel.tsx");
+
+export const isReadableChannel = function isReadableChannel(basicChannel) {
   let tmp = null != basicChannel;
   if (tmp) {
-    let tmp3 = basicChannel.type === constants.DM;
-    if (!tmp3) {
-      tmp3 = basicChannel.type === constants.GROUP_DM;
-    }
+    let tmp3 = basicChannel.type === constants.DM || basicChannel.type === tmp2.GROUP_DM;
     if (!tmp3) {
       let canBasicChannelResult = isTextChannel(basicChannel.type);
       if (canBasicChannelResult) {
-        canBasicChannelResult = closure_2.canBasicChannel(closure_4, basicChannel);
+        canBasicChannelResult = getUncachedChannelPermissions.canBasicChannel(closure_4, basicChannel);
       }
       tmp3 = canBasicChannelResult;
     }
     tmp = tmp3;
   }
   return tmp;
-}
-({ ChannelTypes: closure_3, BasicPermissions } = ME);
-let closure_4 = BasicPermissions.VIEW_CHANNEL | BasicPermissions.READ_MESSAGE_HISTORY;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_database/modules/messages/isReadableChannel.tsx");
-
-export { isReadableChannel };
+};
 export const isReadableChannelId = function isReadableChannelId(channelId) {
   let tmp = null != channelId;
   if (tmp) {
-    tmp = isReadableChannel(basicChannel.getBasicChannel(channelId));
+    basicChannel = basicChannel.getBasicChannel(channelId);
+    let tmp4 = null != basicChannel;
+    if (tmp4) {
+      let tmp6 = basicChannel.type === constants.DM || basicChannel.type === tmp5.GROUP_DM;
+      if (!tmp6) {
+        let canBasicChannelResult = isTextChannel(basicChannel.type);
+        if (canBasicChannelResult) {
+          canBasicChannelResult = getUncachedChannelPermissions.canBasicChannel(closure_4, basicChannel);
+        }
+        tmp6 = canBasicChannelResult;
+      }
+      tmp4 = tmp6;
+    }
+    tmp = tmp4;
   }
   return tmp;
 };

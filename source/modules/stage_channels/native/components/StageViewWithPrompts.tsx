@@ -1,25 +1,25 @@
-// Module ID: 10659
-// Function ID: 82889
+// Module ID: 10683
+// Function ID: 10684
 // Name: styles
-// Dependencies: [31, 27, 482, 33, 10660, 4165, 1557, 10661, 6703, 4161, 2]
+// Dependencies: [19, 17, 505, 21, 10684, 4189, 1581, 10685, 6724, 4185, 2]
 // Exports: default
 
-// Module 10659 (styles)
-import "result";
+// Module 10683 (styles)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ThemeTypes } from "sum";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ ScrollView: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
+({ ScrollView: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = require("CALL_ACTION_BAR_HEIGHT").CALL_ACTION_BAR_HEIGHT + 8;
-const styles = _createForOfIteratorHelperLoose.createStyles({ scrollView: { flex: 1 }, container: { paddingHorizontal: 16, alignItems: "center" }, sparkle: { marginTop: 48, marginBottom: 16 }, title: { marginTop: 16, marginBottom: 8, textAlign: "center" }, body: { fontSize: 14, textAlign: "center" }, prompts: { marginTop: 24, display: "flex", flexDirection: "column", width: "100%" } });
+const styles = createCacheKey.createStyles({ scrollView: { flex: 1 }, container: { paddingHorizontal: 16, alignItems: "center" }, sparkle: { marginTop: 48, marginBottom: 16 }, title: { marginTop: 16, marginBottom: 8, textAlign: "center" }, body: { fontSize: 14, textAlign: "center" }, prompts: { marginTop: 24, display: "flex", flexDirection: "column", width: "100%" } });
 const result = require("sum").fileFinishedImporting("modules/stage_channels/native/components/StageViewWithPrompts.tsx");
 
 export default function StageViewWithPrompts(arg0) {
@@ -30,21 +30,15 @@ export default function StageViewWithPrompts(arg0) {
   let top;
   ({ title, body, children } = arg0);
   const tmp = styles();
-  let obj = { style: tmp.scrollView };
+  let obj = { style: tmp.scrollView, contentContainerStyle: null, alwaysBounceVertical: false, children: null };
   const items = [tmp.container, ];
-  obj = { paddingTop: top + require(10661) /* FocusedControlsHeader */.FOCUSED_CONTROLS_HEADER_HEIGHT, paddingBottom: bottom + closure_8 };
-  ({ top, bottom } = importDefault(1557)());
+  obj = { paddingTop: top + require(10685) /* FocusedControlsHeader */.FOCUSED_CONTROLS_HEADER_HEIGHT, paddingBottom: bottom + closure_8 };
+  ({ top, bottom } = importDefault(1581)());
   items[1] = obj;
-  obj.contentContainerStyle = items;
-  obj.alwaysBounceVertical = false;
+  obj[1] = items;
   obj = { style: tmp.sparkle, theme: ThemeTypes.DARK };
-  const items1 = [callback(importDefault(6703), obj), , , ];
-  const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "text-overlay-light", children: title };
-  items1[1] = callback(require(4161) /* Text */.Text, obj1);
-  const obj2 = { style: tmp.body, variant: "text-sm/medium", color: "text-overlay-light", children: body };
-  items1[2] = callback(require(4161) /* Text */.Text, obj2);
-  items1[3] = callback(closure_4, { style: tmp.prompts, children });
-  obj.children = items1;
+  const items1 = [callback(importDefault(6724), obj), callback(require(4185) /* Text */.Text, { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "text-overlay-light", children: title }), callback(require(4185) /* Text */.Text, { style: tmp.body, variant: "text-sm/medium", color: "text-overlay-light", children: body }), callback(closure_4, { style: tmp.prompts, children })];
+  obj[3] = items1;
   return callback2(closure_3, obj);
 };
 export const useStyles = styles;

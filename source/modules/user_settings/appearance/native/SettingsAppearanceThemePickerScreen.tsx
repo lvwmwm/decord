@@ -1,135 +1,120 @@
-// Module ID: 14261
-// Function ID: 109536
-// Name: getThemeOverride
-// Dependencies: [57, 31, 27, 3977, 1322, 1279, 1278, 1280, 1281, 482, 33, 4165, 689, 477, 4165, 1212, 14262, 10359, 14264, 1450, 624, 4098, 1324, 1282, 3979, 3875, 5485, 14178, 1457, 5497, 5517, 5128, 8200, 4026, 4009, 3976, 4166, 4169, 3877, 9101, 4161, 4695, 5127, 14179, 14266, 8731, 14272, 14284, 14293, 5155, 6658, 2]
+// Module ID: 14283
+// Function ID: 14284
+// Name: ThemeTypes
+// Dependencies: [32, 19, 17, 4001, 1346, 1303, 1302, 1304, 1305, 505, 21, 4189, 712, 500, 4189, 1236, 14284, 10380, 14286, 1474, 647, 4122, 1348, 1306, 4003, 3899, 5503, 14200, 1481, 5515, 5535, 5150, 8224, 4050, 4033, 4000, 4190, 4193, 3901, 9125, 4185, 4717, 5149, 14201, 14288, 8755, 14294, 14306, 14315, 5177, 6679, 2]
 // Exports: default
 
-// Module 14261 (getThemeOverride)
-import _slicedToArray from "_slicedToArray";
-import Background from "Background";
-import { View } from "getThemeNameForAnalytics";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 14283 (ThemeTypes)
+import useSegmentedControlState from "useSegmentedControlState";
+import useWindowDimensions from "useWindowDimensions";
+import { View } from "ThemeDarkIcon";
+import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
+import reset from "reset";
+import initialize from "initialize";
+import handleThemeChange from "handleThemeChange";
+import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import SystemThemeState from "SystemThemeState";
 import { ThemeTypes } from "sum";
-import jsxProd from "module_4026";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "getCustomThemesName";
+import createCacheKey from "createCacheKey";
 import set from "set";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 import set from "get ActivityIndicator";
 
-let closure_11;
 let closure_12;
 let closure_14;
 let closure_15;
 let closure_16;
+let unpackModuleId;
 const require = arg1;
-function getThemeOverride(mobileThemes, first1, stateFromStores) {
-  let theme = stateFromStores;
-  let tmp2;
-  if (null != mobileThemes[first1]) {
-    if ("system" !== tmp.theme) {
-      theme = tmp.theme;
-    }
-    tmp2 = theme;
-  }
-  return tmp2;
-}
-let num = 0;
-({ SystemTheme: closure_11, SystemThemeState: closure_12 } = SystemThemeState);
+({ SystemTheme: unpackModuleId, SystemThemeState: closure_12 } = SystemThemeState);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_24 };
+createCacheKey = { flex: 1, paddingHorizontal: require("Themes").space.PX_16, alignItems: "center", gap: require("Themes").space.PX_24, marginBottom: null };
+let num = 0;
 if (!set.isIOS()) {
-  num = require("_createForOfIteratorHelperLoose").space.PX_16;
+  num = require("Themes").space.PX_16;
 }
-_createForOfIteratorHelperLoose.marginBottom = num;
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.landscapeContainer = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.landscapePreview = { flex: 1 };
-_createForOfIteratorHelperLoose.landscapeSelector = { flex: 1, justifyContent: "center", overflow: "hidden" };
-let obj2 = { width: "100%", gap: require("_createForOfIteratorHelperLoose").space.PX_16, alignItems: "center", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.segmentedControlContainer = obj2;
-_createForOfIteratorHelperLoose.textCentered = { textAlign: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { container: createCacheKey, landscapeContainer: null, landscapePreview: null, landscapeSelector: null, segmentedControlContainer: null, textCentered: null };
+createCacheKey[4] = num;
+createCacheKey[1] = { flexDirection: "row", gap: require("Themes").space.PX_16 };
+createCacheKey[2] = { flex: 1 };
+createCacheKey[3] = { flex: 1, justifyContent: "center", overflow: "hidden" };
+set = { width: "100%", gap: require("Themes").space.PX_16, alignItems: "center", paddingHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_16 };
+createCacheKey[4] = set;
+createCacheKey[5] = { textAlign: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let items = [, , , ];
 ({ LIGHT: arr[0], DARKER: arr[1], MIDNIGHT: arr[2], DARK: arr[3] } = ThemeTypes);
 let closure_19 = items.map((theme) => {
-  const internal = importDefault(689).internal;
-  return internal.resolveSemanticColor(theme, importDefault(689).colors.CARD_SECONDARY_BG);
+  const internal = importDefault(712).internal;
+  return internal.resolveSemanticColor(theme, importDefault(712).colors.CARD_SECONDARY_BG);
 });
 let closure_20 = items.map((arg0, arg1) => arg1);
-set = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-let closure_21 = _createForOfIteratorHelperLoose.createAnimatedThemedStyles(set, items);
-let obj1 = { flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let closure_22 = _createForOfIteratorHelperLoose.createAnimatedThemedStyles({ backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE }, items);
-let obj4 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_SUBTLE };
-let closure_23 = _createForOfIteratorHelperLoose.createAnimatedThemedStyles({ backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG }, items);
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGHEST };
-let closure_24 = _createForOfIteratorHelperLoose.createAnimatedThemedStyles(_createForOfIteratorHelperLoose, items);
-let obj5 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG };
-let closure_25 = _createForOfIteratorHelperLoose.createAnimatedThemedStyles({ backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH }, items);
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-let closure_26 = _createForOfIteratorHelperLoose.createAnimatedThemedStyles(_createForOfIteratorHelperLoose, items);
-let obj7 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-let closure_27 = _createForOfIteratorHelperLoose.createAnimatedThemedStyles({ color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY }, items);
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
-let closure_28 = _createForOfIteratorHelperLoose.createAnimatedThemedStyles(_createForOfIteratorHelperLoose, items);
-let obj9 = { color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-let closure_29 = _createForOfIteratorHelperLoose.createAnimatedThemedStyles({ color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED }, items);
-_createForOfIteratorHelperLoose = { borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED };
-let closure_30 = _createForOfIteratorHelperLoose.createAnimatedThemedStyles(_createForOfIteratorHelperLoose, items);
-let obj11 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-let closure_31 = _createForOfIteratorHelperLoose.createAnimatedThemedStyles({ borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG }, items);
-_createForOfIteratorHelperLoose = { borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_NORMAL };
-let closure_32 = _createForOfIteratorHelperLoose.createAnimatedThemedStyles(_createForOfIteratorHelperLoose, items);
-let obj13 = { borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG };
-let closure_33 = _createForOfIteratorHelperLoose.createAnimatedThemedStyles({ tintColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_ACTIVITY_CARD_BADGE_ICON }, items);
-_createForOfIteratorHelperLoose = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE };
-let closure_34 = _createForOfIteratorHelperLoose.createAnimatedThemedStyles(_createForOfIteratorHelperLoose, items);
-const obj15 = { tintColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_ACTIVITY_CARD_BADGE_ICON };
-let closure_35 = _createForOfIteratorHelperLoose.createAnimatedThemedStyles({ tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT }, items);
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_BRAND };
-let closure_36 = _createForOfIteratorHelperLoose.createAnimatedThemedStyles(_createForOfIteratorHelperLoose, items);
+let obj1 = { flexDirection: "row", gap: require("Themes").space.PX_16 };
+let closure_21 = createCacheKey.createAnimatedThemedStyles({ backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW }, items);
+let obj3 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+let closure_22 = createCacheKey.createAnimatedThemedStyles({ backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE }, items);
+let obj4 = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
+let closure_23 = createCacheKey.createAnimatedThemedStyles({ backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG }, items);
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST };
+let closure_24 = createCacheKey.createAnimatedThemedStyles(createCacheKey, items);
+let obj5 = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
+let closure_25 = createCacheKey.createAnimatedThemedStyles({ backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH }, items);
+createCacheKey = { color: require("Themes").colors.TEXT_DEFAULT };
+let closure_26 = createCacheKey.createAnimatedThemedStyles(createCacheKey, items);
+let obj7 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+let closure_27 = createCacheKey.createAnimatedThemedStyles({ color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY }, items);
+createCacheKey = { color: require("Themes").colors.TEXT_SUBTLE };
+let closure_28 = createCacheKey.createAnimatedThemedStyles(createCacheKey, items);
+let obj9 = { color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+let closure_29 = createCacheKey.createAnimatedThemedStyles({ color: require("Themes").colors.TEXT_MUTED }, items);
+createCacheKey = { borderColor: require("Themes").colors.BORDER_MUTED };
+let closure_30 = createCacheKey.createAnimatedThemedStyles(createCacheKey, items);
+let obj11 = { color: require("Themes").colors.TEXT_MUTED };
+let closure_31 = createCacheKey.createAnimatedThemedStyles({ borderColor: require("Themes").colors.BORDER_STRONG }, items);
+createCacheKey = { borderColor: require("Themes").colors.BORDER_NORMAL };
+let closure_32 = createCacheKey.createAnimatedThemedStyles(createCacheKey, items);
+let obj13 = { borderColor: require("Themes").colors.BORDER_STRONG };
+let closure_33 = createCacheKey.createAnimatedThemedStyles({ tintColor: require("Themes").colors.REDESIGN_ACTIVITY_CARD_BADGE_ICON }, items);
+createCacheKey = { tintColor: require("Themes").colors.TEXT_SUBTLE };
+let closure_34 = createCacheKey.createAnimatedThemedStyles(createCacheKey, items);
+const obj15 = { tintColor: require("Themes").colors.REDESIGN_ACTIVITY_CARD_BADGE_ICON };
+let closure_35 = createCacheKey.createAnimatedThemedStyles({ tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT }, items);
+createCacheKey = { color: require("Themes").colors.TEXT_BRAND };
+let closure_36 = createCacheKey.createAnimatedThemedStyles(createCacheKey, items);
 function getSegmentedControlItems() {
-  let obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.string(require(1212) /* getSystemLocale */.t.K2sFfo);
-  obj.id = ThemeTypes.LIGHT;
-  obj.icon = callback(require(14262) /* ThemeLightIcon */.ThemeLightIcon, {});
-  obj.page = null;
+  let obj = { label: null, id: null, icon: null, page: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.K2sFfo);
+  obj[1] = ThemeTypes.LIGHT;
+  obj[2] = callback(require(14284) /* ThemeLightIcon */.ThemeLightIcon, {});
   const items = [obj, , ];
-  obj = {};
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl2.string(require(1212) /* getSystemLocale */.t.b8Cei3);
-  obj.id = ThemeTypes.DARKER;
-  obj.icon = callback(require(10359) /* ThemeDarkIcon */.ThemeDarkIcon, {});
-  obj.page = null;
+  obj = { label: null, id: null, icon: null, page: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.b8Cei3);
+  obj[1] = ThemeTypes.DARKER;
+  obj[2] = callback(require(10380) /* ThemeDarkIcon */.ThemeDarkIcon, {});
   items[1] = obj;
-  obj = {};
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl3.string(require(1212) /* getSystemLocale */.t.pQwSpQ);
-  obj.id = ThemeTypes.MIDNIGHT;
-  obj.icon = callback(require(14264) /* ThemeMidnightIcon */.ThemeMidnightIcon, {});
-  obj.page = null;
+  obj = { label: null, id: null, icon: null, page: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.pQwSpQ);
+  obj[1] = ThemeTypes.MIDNIGHT;
+  obj[2] = callback(require(14286) /* ThemeMidnightIcon */.ThemeMidnightIcon, {});
   items[2] = obj;
   return items;
 }
@@ -137,11 +122,17 @@ let closure_38 = { code: "function SettingsAppearanceThemePickerScreenTsx1(){con
 let closure_39 = { code: "function SettingsAppearanceThemePickerScreenTsx2(activeIndex){const{runOnJS,setPendingThemeIndex}=this.__closure;runOnJS(setPendingThemeIndex)(Math.round(activeIndex));}" };
 let closure_40 = { code: "function SettingsAppearanceThemePickerScreenTsx3(){const{mobileThemes,isClientThemesSelector,currentThemeIndex,themeTypeIndex,ClientThemeType,withTiming,interpolateColor,cardSecondaryStops,cardSecondaryStyles,timingStandard,bgRaised}=this.__closure;const theme=mobileThemes[isClientThemesSelector?currentThemeIndex:themeTypeIndex.get()];if(!isClientThemesSelector||theme.type===ClientThemeType.STANDARD_BACKGROUND_THEME){return{backgroundColor:withTiming(interpolateColor(themeTypeIndex.get(),cardSecondaryStops,cardSecondaryStyles),timingStandard)};}else{return{backgroundColor:withTiming(bgRaised,timingStandard)};}}" };
 function ThemePicker(defaultIndex) {
+  let c14;
+  let c16;
   let canGoBack;
   let deviceHeight;
   let deviceWidth;
   let hasMidnightNux;
   let themeSelector;
+  let tmp12;
+  let tmp16;
+  let tmp22;
+  let tmp23;
   defaultIndex = defaultIndex.defaultIndex;
   const mobileThemes = defaultIndex.mobileThemes;
   const isPreview = defaultIndex.isPreview;
@@ -152,9 +143,13 @@ function ThemePicker(defaultIndex) {
   const onSaveTheme = defaultIndex.onSaveTheme;
   const isRefreshEnabled = defaultIndex.isRefreshEnabled;
   const mode = defaultIndex.mode;
+  let navigation;
+  let analyticsLocations;
+  let first;
+  let closure_13;
   let callback;
   let callback2;
-  let closure_16;
+  c16 = undefined;
   let stateFromStores;
   let c18;
   let activeIndex;
@@ -166,48 +161,48 @@ function ThemePicker(defaultIndex) {
   ({ deviceHeight, themeSelector, hasMidnightNux } = defaultIndex);
   let tmp = stateFromStores();
   let obj = defaultIndex(isPreview[28]);
-  const navigation = obj.useNavigation();
-  const analyticsLocations = mobileThemes(isPreview[29])(mobileThemes(isPreview[30]).CLIENT_THEMES_THEME_SELECTOR).analyticsLocations;
-  const tmp6 = isSynced(canGoBack.useState(defaultIndex), 2);
-  const first = tmp6[0];
-  let num = 1;
-  let closure_13 = tmp6[1];
-  obj1 = defaultIndex(isPreview[25]);
+  navigation = obj.useNavigation();
+  analyticsLocations = mobileThemes(isPreview[29])(mobileThemes(isPreview[30]).CLIENT_THEMES_THEME_SELECTOR).analyticsLocations;
+  obj1 = canGoBack;
+  const tmp9 = isSynced(canGoBack.useState(defaultIndex), 2);
+  first = tmp9[0];
+  closure_13 = tmp9[1];
+  let obj2 = defaultIndex(isPreview[25]);
   let str = "dark-content";
-  if (obj1.isThemeDark(mobileThemes[defaultIndex].theme)) {
+  if (obj2.isThemeDark(mobileThemes[defaultIndex].theme)) {
     str = "light-content";
   }
-  const tmp8 = isSynced(canGoBack.useState(str), 2);
-  callback = tmp8[num];
-  let obj2 = defaultIndex(isPreview[31]);
-  callback2 = tmp10;
-  const headerHeight = obj2.useHeaderHeight();
-  const tmp11 = isSynced(canGoBack.useState(0), 2);
-  closure_16 = tmp11[num];
-  callback = canGoBack.useCallback((nativeEvent) => {
-    callback(nativeEvent.nativeEvent.layout.width);
+  let tmp8Result = tmp8(canGoBack.useState(str), 2);
+  [tmp12, c14] = tmp8Result;
+  let tmp3Result = tmp3(tmp4[31]);
+  callback2 = tmp14;
+  const headerHeight = tmp3Result.useHeaderHeight();
+  tmp8Result = tmp8(obj1.useState(0), 2);
+  [tmp16, c16] = tmp8Result;
+  callback = obj1.useCallback((nativeEvent) => {
+    _undefined(nativeEvent.nativeEvent.layout.width);
   }, []);
   let items = [isRefreshEnabled];
-  const memo = canGoBack.useMemo(getSegmentedControlItems, []);
-  const memo1 = canGoBack.useMemo(() => {
+  const memo = obj1.useMemo(getSegmentedControlItems, []);
+  const memo1 = obj1.useMemo(() => {
     if (mode.theme === lib.DARK) {
       if (!isRefreshEnabled) {
-        let index = _undefined.indexOf(lib.DARKER);
+        let index = _undefined2.indexOf(tmp.DARKER);
       }
       return index;
     }
-    index = _undefined.findIndex((arg0) => arg0 === mode.theme);
+    index = _undefined2.findIndex((arg0) => arg0 === theme.theme);
   }, items);
-  let obj3 = defaultIndex(isPreview[20]);
+  tmp3Result = tmp3(tmp4[20]);
   const items1 = [mode];
-  stateFromStores = obj3.useStateFromStores(items1, () => defaultIndex(isPreview[25]).isThemeLight(mode.systemTheme) ? closure_13.LIGHT : closure_13.DARKER);
-  const tmp16 = isSynced(canGoBack.useState(memo1), 2);
-  const first1 = tmp16[0];
-  c18 = tmp18;
-  let obj4 = defaultIndex(isPreview[32]);
-  const segmentedControlState = obj4.useSegmentedControlState({ items: memo, pageWidth: tmp11[0], defaultIndex: memo1 });
+  stateFromStores = tmp3Result.useStateFromStores(items1, () => defaultIndex(isPreview[25]).isThemeLight(mode.systemTheme) ? closure_13.LIGHT : closure_13.DARKER);
+  const tmp7 = mobileThemes(isPreview[29]);
+  [tmp22, tmp23] = isSynced(obj1.useState(memo1), 2);
+  c18 = tmp23;
+  const tmp8Result1 = isSynced(obj1.useState(memo1), 2);
+  const segmentedControlState = defaultIndex(isPreview[32]).useSegmentedControlState({ items: memo, pageWidth: tmp16, defaultIndex: memo1 });
   activeIndex = segmentedControlState.activeIndex;
-  let obj5 = defaultIndex(isPreview[33]);
+  const tmp3Result1 = defaultIndex(isPreview[32]);
   class Z {
     constructor() {
       return activeIndex.get();
@@ -220,86 +215,87 @@ function ThemePicker(defaultIndex) {
     const obj = defaultIndex(isPreview[33]);
     defaultIndex(isPreview[33]).runOnJS(c18)(Math.round(arg0));
   };
-  obj = { runOnJS: defaultIndex(isPreview[33]).runOnJS, setPendingThemeIndex: tmp18 };
+  obj = { runOnJS: tmp3(tmp4[33]).runOnJS, setPendingThemeIndex: tmp23 };
   fn.__closure = obj;
   fn.__workletHash = 7003433484889;
   fn.__initData = closure_39;
-  const animatedReaction = obj5.useAnimatedReaction(Z, fn);
-  let obj7 = defaultIndex(isPreview[33]);
+  const animatedReaction = defaultIndex(isPreview[33]).useAnimatedReaction(Z, fn);
+  const tmp3Result2 = defaultIndex(isPreview[33]);
+  let num = 1;
   if ("light" === mobileThemes[defaultIndex].theme) {
     num = 0;
   }
   activeIndex2 = segmentedControlState.activeIndex;
   if ("nitro" === themeSelector) {
-    activeIndex2 = obj7.useSharedValue(num);
+    activeIndex2 = tmp3Result3.useSharedValue(num);
   }
-  memo2 = canGoBack.useMemo(() => defaultIndex(isPreview[34]).hexWithOpacity(defaultIndex(isPreview[35]).OverlayColors.LIGHT, defaultIndex(isPreview[35]).OverlayOpacity.LEVEL_1), []);
-  let obj8 = defaultIndex(isPreview[33]);
+  memo2 = obj1.useMemo(() => defaultIndex(isPreview[34]).hexWithOpacity(defaultIndex(isPreview[35]).OverlayColors.LIGHT, defaultIndex(isPreview[35]).OverlayOpacity.LEVEL_1), []);
+  tmp3Result3 = defaultIndex(isPreview[33]);
   class De {
     constructor() {
       tmp = mobileThemes;
-      if (themeSelector) {
-        value = closure_12;
+      tmp2 = c15;
+      if (c15) {
+        value = c12;
       } else {
-        tmp2 = activeIndex;
+        tmp3 = activeIndex;
         value = activeIndex.get();
       }
-      if (themeSelector) {
-        tmp4 = defaultIndex;
-        tmp5 = isPreview;
-        num = 24;
+      if (tmp2) {
+        tmp5 = defaultIndex;
+        tmp6 = isPreview;
         if (tmp[value].type !== defaultIndex(isPreview[24]).ClientThemeType.STANDARD_BACKGROUND_THEME) {
-          obj = {};
-          tmp7 = defaultIndex;
-          tmp8 = isPreview;
-          num2 = 36;
+          obj = { backgroundColor: null };
+          tmp8 = defaultIndex;
+          tmp9 = isPreview;
           obj5 = defaultIndex(isPreview[36]);
-          tmp9 = c21;
-          num3 = 37;
-          obj.backgroundColor = obj5.withTiming(c21, defaultIndex(isPreview[37]).timingStandard);
+          tmp10 = c21;
+          tmp11 = defaultIndex;
+          tmp12 = isPreview;
+          obj[0] = obj5.withTiming(c21, defaultIndex(isPreview[37]).timingStandard);
         }
         return obj;
       }
-      obj = {};
+      obj = { backgroundColor: null };
       obj2 = defaultIndex(isPreview[36]);
       obj3 = defaultIndex(isPreview[33]);
       interpolateColorResult = obj3.interpolateColor(activeIndex.get(), activeIndex, activeIndex);
-      obj.backgroundColor = obj2.withTiming(interpolateColorResult, defaultIndex(isPreview[37]).timingStandard);
+      obj[0] = obj2.withTiming(interpolateColorResult, defaultIndex(isPreview[37]).timingStandard);
       return;
     }
   }
-  obj = { mobileThemes, isClientThemesSelector: tmp10, currentThemeIndex: first, themeTypeIndex: activeIndex2, ClientThemeType: defaultIndex(isPreview[24]).ClientThemeType, withTiming: defaultIndex(isPreview[36]).withTiming, interpolateColor: defaultIndex(isPreview[33]).interpolateColor, cardSecondaryStops: activeIndex2, cardSecondaryStyles: activeIndex, timingStandard: defaultIndex(isPreview[37]).timingStandard, bgRaised: memo2 };
+  obj = { mobileThemes, isClientThemesSelector: tmp14, currentThemeIndex: first, themeTypeIndex: activeIndex2, ClientThemeType: tmp3(tmp4[24]).ClientThemeType, withTiming: tmp3(tmp4[36]).withTiming, interpolateColor: tmp3(tmp4[33]).interpolateColor, cardSecondaryStops: activeIndex2, cardSecondaryStyles: activeIndex, timingStandard: tmp3(tmp4[37]).timingStandard, bgRaised: memo2 };
   De.__closure = obj;
   De.__workletHash = 10807943820408;
   De.__initData = closure_40;
-  obj1 = {};
-  const animatedStyle = obj8.useAnimatedStyle(De);
-  obj1.textNormal = callback4(activeIndex2);
-  obj1.textMuted = callback7(activeIndex2);
-  obj1.textBrand = callback14(activeIndex2);
-  obj1.borderFaint = callback8(activeIndex2);
-  obj1.borderStrong = callback9(activeIndex2);
-  obj1.borderNormal = callback10(activeIndex2);
-  obj1.headerPrimary = callback5(activeIndex2);
-  obj1.headerSecondary = callback6(activeIndex2);
-  obj1.activityIcon = callback11(activeIndex2);
-  obj1.bgModSubtle = obj1(activeIndex2);
-  obj1.bgModStrong = callback1(activeIndex2);
-  obj1.iconHeaderSecondary = callback12(activeIndex2);
-  obj1.iconInteractive = callback13(activeIndex2);
-  obj1.bgBasePrimary = memo2(activeIndex2);
-  obj1.bgSurfaceOverlay = callback2(activeIndex2);
-  obj1.bgSurfaceHigh = callback3(activeIndex2);
-  obj1.bgRaised = animatedStyle;
+  obj1 = { textNormal: null, textMuted: null, textBrand: null, borderFaint: null, borderStrong: null, borderNormal: null, headerPrimary: null, headerSecondary: null, activityIcon: null, bgModSubtle: null, bgModStrong: null, iconHeaderSecondary: null, iconInteractive: null, bgBasePrimary: null, bgSurfaceOverlay: null, bgSurfaceHigh: null, bgRaised: null };
+  const animatedStyle = defaultIndex(isPreview[33]).useAnimatedStyle(De);
+  obj1[0] = callback4(activeIndex2);
+  obj1[1] = callback7(activeIndex2);
+  obj1[2] = callback14(activeIndex2);
+  obj1[3] = callback8(activeIndex2);
+  obj1[4] = callback9(activeIndex2);
+  obj1[5] = callback10(activeIndex2);
+  obj1[6] = callback5(activeIndex2);
+  obj1[7] = callback6(activeIndex2);
+  obj1[8] = callback11(activeIndex2);
+  obj1[9] = obj1(activeIndex2);
+  obj1[10] = callback1(activeIndex2);
+  obj1[11] = callback12(activeIndex2);
+  obj1[12] = callback13(activeIndex2);
+  obj1[13] = memo2(activeIndex2);
+  obj1[14] = callback2(activeIndex2);
+  obj1[15] = callback3(activeIndex2);
+  obj1[16] = animatedStyle;
   const items2 = [first, "nitro" === themeSelector, activeIndex2, onSaveTheme, mobileThemes, isSynced, analyticsLocations, navigation, mode];
-  callback1 = canGoBack.useCallback(() => {
+  callback1 = obj1.useCallback(() => {
     if (c15) {
       let tmp3 = tmp[first];
     } else {
       tmp3 = tmp[activeIndex2.get(activeIndex2)];
     }
     if (null != mode) {
-      const result = defaultIndex(isPreview[27]).handleSaveSyncedModeTheme(tmp3, mode, analyticsLocations);
+      const result = defaultIndex(isPreview[27]).handleSaveSyncedModeTheme(tmp3, tmp5, analyticsLocations);
       const obj2 = defaultIndex(isPreview[27]);
     } else {
       defaultIndex(isPreview[27]).handleSaveTheme(tmp3, analyticsLocations, isSynced);
@@ -308,35 +304,35 @@ function ThemePicker(defaultIndex) {
     if (null == onSaveTheme) {
       navigation.goBack();
     } else {
-      onSaveTheme();
+      tmp15();
     }
   }, items2);
   const items3 = [hasSaveButton, mobileThemes, first, defaultIndex, isPreview, analyticsLocations, isSynced, mode];
-  callback2 = canGoBack.useCallback(() => {
+  callback2 = obj1.useCallback(() => {
     if (!hasSaveButton) {
       if (null != mode) {
-        if (first !== defaultIndex) {
-          const result = defaultIndex(isPreview[27]).handleSaveSyncedModeTheme(tmp, mode, analyticsLocations);
+        if (tmp !== defaultIndex) {
+          const result = defaultIndex(isPreview[27]).handleSaveSyncedModeTheme(tmp2, tmp6, analyticsLocations);
           const obj2 = defaultIndex(isPreview[27]);
         }
       } else {
-        defaultIndex(isPreview[27]).handleSaveTheme(tmp, analyticsLocations, isSynced);
+        defaultIndex(isPreview[27]).handleSaveTheme(tmp2, analyticsLocations, isSynced);
         const obj = defaultIndex(isPreview[27]);
       }
     }
   }, items3);
   const items4 = [navigation, callback2];
-  const effect = canGoBack.useEffect(() => navigation.addListener("beforeRemove", () => {
-    outer1_24();
+  const effect = obj1.useEffect(() => navigation.addListener("beforeRemove", () => {
+    callback();
   }), items4);
   const items5 = [first, callback1, analyticsLocations, mobileThemes, isSynced, isPreview, headerTitle, "nitro" === themeSelector, navigation, , , , , , , ];
   ({ textNormal: arr6[9], textBrand: arr6[10] } = obj1);
   items5[11] = canGoBack;
   items5[12] = onSaveTheme;
   items5[13] = hasSaveButton;
-  items5[14] = first1;
+  items5[14] = tmp22;
   items5[15] = stateFromStores;
-  const effect1 = canGoBack.useEffect(() => {
+  const effect1 = obj1.useEffect(() => {
     let tmp = c15;
     if (c15) {
       tmp = isPreview;
@@ -345,60 +341,73 @@ function ThemePicker(defaultIndex) {
       tmp = mobileThemes[first].type !== defaultIndex(isPreview[24]).ClientThemeType.STANDARD_BACKGROUND_THEME;
     }
     defaultIndex = tmp;
-    let obj = { headerBackground: null, headerTransparent: true, headerBackVisible: false, headerLeft: null, headerTitle: null, headerTitleAlign: "center" };
+    let obj = defaultIndex(isPreview[13]);
     let fn;
-    if (!obj2.isIOS()) {
-      fn = () => callback(hasSaveButton, {});
+    if (!obj.isIOS()) {
+      fn = () => callback(closure_5, {});
     }
-    obj.headerBackground = fn;
-    obj.headerLeft = function headerLeft() {
-      if (outer1_4) {
-        let obj = { theme: outer2_42(outer1_1, outer1_12, outer1_17) };
-        obj = { navigation: outer1_10 };
-        obj.children = callback(mobileThemes(isPreview[39]), obj);
-        return callback(defaultIndex(isPreview[38]).ThemeContextProvider, obj);
-      } else {
-        return null;
-      }
-    };
-    obj.headerTitle = function headerTitle() {
-      const obj = { animated: true, variant: "redesign/heading-18/bold", style: outer1_22.textNormal };
-      if (null != outer1_6) {
-        let stringResult = outer1_6;
-      } else {
-        const intl = defaultIndex(isPreview[15]).intl;
-        stringResult = intl.string(defaultIndex(isPreview[15]).t.XAS5Pi);
-      }
-      obj.children = stringResult;
-      return closure_14(defaultIndex(isPreview[40]).Text, obj);
+    obj = {
+      headerBackground: fn,
+      headerTransparent: true,
+      headerBackVisible: false,
+      headerLeft() {
+        if (useWindowDimensions) {
+          let theme = closure_17;
+          let tmp4;
+          if (null != table[closure_12]) {
+            if ("system" !== tmp3.theme) {
+              theme = tmp3.theme;
+            }
+            tmp4 = theme;
+          }
+          let obj = { theme: null, children: null };
+          obj[0] = tmp4;
+          obj = { navigation: null };
+          obj[0] = CHANNEL_SIDEBAR_WIDTH;
+          obj[1] = outer1_14(outer1_1(outer1_2[39]), obj);
+          return outer1_14(table(outer1_2[38]).ThemeContextProvider, obj);
+        } else {
+          return null;
+        }
+      },
+      headerTitle() {
+        const obj = { animated: true, variant: "redesign/heading-18/bold", style: textNormal.textNormal, children: null };
+        let stringResult = isSyncedModeThemesEnabled;
+        if (isSyncedModeThemesEnabled == null) {
+          const intl = tmp2(tmp3[15]).intl;
+          stringResult = intl.string(tmp2(tmp3[15]).t.XAS5Pi);
+        }
+        obj[3] = stringResult;
+        return outer1_14(outer1_14(outer1_2[40]).Text, obj);
+      },
+      headerTitleAlign: "center",
+      headerRight: null
     };
     let fn2;
     if (hasSaveButton) {
       fn2 = () => {
-        let obj = { hitSlop: 8, disabled: closure_0, onPress: outer1_23 };
-        obj = { animated: true, variant: "text-md/semibold" };
+        let obj = { hitSlop: 8, disabled: closure_0, onPress: outer1_23, children: null };
+        obj = closure_0;
         const items = [outer1_22.textBrand, ];
-        let tmp2 = closure_0;
         if (closure_0) {
           obj = { opacity: 0.4 };
-          tmp2 = obj;
         }
-        items[1] = tmp2;
-        obj.style = items;
-        const intl = defaultIndex(isPreview[15]).intl;
-        obj.children = intl.string(defaultIndex(isPreview[15]).t.i4jeWR);
-        obj.children = closure_14(defaultIndex(isPreview[40]).Text, obj);
-        return closure_14(defaultIndex(isPreview[41]).PressableOpacity, obj);
+        obj = { animated: true, variant: "text-md/semibold", style: items, children: null };
+        items[1] = obj;
+        const intl = tmp2(tmp3[15]).intl;
+        obj[3] = intl.string(defaultIndex(isPreview[15]).t.i4jeWR);
+        obj[3] = c14(defaultIndex(isPreview[40]).Text, obj);
+        return c14(defaultIndex(isPreview[41]).PressableOpacity, obj);
       };
     }
-    obj.headerRight = fn2;
+    obj[6] = fn2;
     navigation.setOptions(obj);
   }, items5);
-  let obj11 = defaultIndex(isPreview[42]);
-  obj11.useNavigatorBackPressHandler(() => !canGoBack);
+  const tmp3Result4 = defaultIndex(isPreview[33]);
+  defaultIndex(isPreview[42]).useNavigatorBackPressHandler(() => !canGoBack);
   const items6 = [first];
   let rounded = deviceWidth;
-  callback3 = canGoBack.useCallback((mobileThemesIndex) => {
+  callback3 = obj1.useCallback((mobileThemesIndex) => {
     if (mobileThemesIndex !== first) {
       lib(mobileThemesIndex);
       const result = defaultIndex(isPreview[43]).updateMobilePendingThemeIndex(mobileThemesIndex);
@@ -410,99 +419,125 @@ function ThemePicker(defaultIndex) {
     rounded = Math.floor(deviceWidth / 2);
   }
   if ("nitro" === themeSelector) {
-    obj2 = { themes: mobileThemes, currentThemeIndex: first, isPreview, isSynced, defaultIndex, deviceWidth: rounded, animatedStyles: obj1, hasMidnightNux, isRefreshEnabled, onThemeSelected: callback3 };
-    let tmp38 = callback(mobileThemes(isPreview[44]), obj2);
+    obj2 = { themes: null, currentThemeIndex: null, isPreview: null, isSynced: null, defaultIndex: null, deviceWidth: null, animatedStyles: null, hasMidnightNux: null, isRefreshEnabled: null, onThemeSelected: null };
+    obj2[0] = mobileThemes;
+    obj2[1] = first;
+    obj2[2] = isPreview;
+    obj2[3] = isSynced;
+    obj2[4] = defaultIndex;
+    obj2[5] = rounded;
+    obj2[6] = obj1;
+    obj2[7] = hasMidnightNux;
+    obj2[8] = isRefreshEnabled;
+    obj2[9] = callback3;
+    let tmp42 = callback(tmp6(tmp4[44]), obj2);
+    let tmp43 = callback;
   } else {
-    obj3 = { style: tmp.segmentedControlContainer, onLayout: callback };
-    obj4 = { theme: getThemeOverride(mobileThemes, first1, stateFromStores) };
-    obj5 = { variant: "experimental_Large", state: segmentedControlState };
-    obj4.children = callback(defaultIndex(isPreview[45]).SegmentedControl, obj5);
-    const items7 = [callback(defaultIndex(isPreview[38]).ThemeContextProvider, obj4), ];
-    const obj6 = { animated: true, variant: "text-xs/medium" };
+    let tmp38;
+    if (null != mobileThemes[tmp22]) {
+      let theme = stateFromStores;
+      if ("system" !== tmp36.theme) {
+        theme = tmp36.theme;
+      }
+      tmp38 = theme;
+    }
+    let obj3 = { style: null, onLayout: null, children: null };
+    obj3[0] = tmp.segmentedControlContainer;
+    obj3[1] = callback;
+    const obj4 = { theme: null, children: null };
+    obj4[0] = tmp38;
+    let obj5 = { variant: "experimental_Large", state: null };
+    obj5[1] = segmentedControlState;
+    obj4[1] = callback(tmp3(tmp4[45]).SegmentedControl, obj5);
+    const items7 = [callback(tmp3(tmp4[38]).ThemeContextProvider, obj4), ];
+    const obj6 = { animated: true, variant: "text-xs/medium", style: null, children: null };
     const items8 = [obj1.headerSecondary, tmp.textCentered];
-    obj6.style = items8;
-    let intl = defaultIndex(isPreview[15]).intl;
-    obj6.children = intl.string(defaultIndex(isPreview[15]).t.d5Gu9A);
-    items7[1] = callback(defaultIndex(isPreview[40]).Text, obj6);
-    obj3.children = items7;
-    tmp38 = callback2(hasSaveButton, obj3);
-    const tmp32 = getThemeOverride(mobileThemes, first1, stateFromStores);
+    obj6[2] = items8;
+    let intl = tmp3(tmp4[15]).intl;
+    obj6[3] = intl.string(tmp3(tmp4[15]).t.d5Gu9A);
+    items7[1] = callback(tmp3(tmp4[40]).Text, obj6);
+    obj3[2] = items7;
+    tmp42 = callback2(hasSaveButton, obj3);
+    tmp43 = callback;
   }
   const items9 = [first, mobileThemes, activeIndex2, stateFromStores, isRefreshEnabled];
-  const effect2 = canGoBack.useEffect(() => {
+  const effect2 = obj1.useEffect(() => {
     if ("system" === mobileThemes[first].theme) {
-      if (null != stateFromStores) {
-        let DARKER2 = stateFromStores;
-      } else {
+      let DARKER2 = stateFromStores;
+      if (stateFromStores == null) {
         DARKER2 = lib.DARKER;
       }
+      let DARKER = DARKER2;
     } else {
-      let DARKER = tmp.theme;
-      if (!tmp7) {
-        DARKER = lib.DARKER;
-      }
-      const result = activeIndex2.set(_undefined.indexOf(DARKER));
-      let str = "light-content";
-      if (DARKER === lib.LIGHT) {
-        str = "dark-content";
-      }
-      closure_14(str);
+      DARKER = tmp.theme;
     }
+    if (!tmp4) {
+      DARKER = lib.DARKER;
+    }
+    const result = activeIndex2.set(_undefined2.indexOf(DARKER));
+    let str = "light-content";
+    if (DARKER === lib.LIGHT) {
+      str = "dark-content";
+    }
+    c14(str);
   }, items9);
-  const memo3 = canGoBack.useMemo(mobileThemes(isPreview[46]), []);
-  obj7 = { themes: mobileThemes, themeIndex: first, animatedStyles: obj1, data: memo3, useGradientBackground: tmp10 };
-  let tmp46 = tmp10;
-  const tmp4 = mobileThemes(isPreview[29]);
-  const tmp44 = callback;
+  const memo3 = obj1.useMemo(tmp6(tmp4[46]), []);
+  const obj7 = { themes: mobileThemes, themeIndex: first, animatedStyles: obj1, data: memo3, useGradientBackground: "nitro" === themeSelector, isNitroLocked: null };
+  let tmp48 = tmp14;
+  const tmp3Result5 = defaultIndex(isPreview[42]);
   if ("nitro" === themeSelector) {
-    tmp46 = isPreview;
+    tmp48 = isPreview;
   }
-  if (tmp46) {
-    tmp46 = mobileThemes[first].type !== defaultIndex(isPreview[24]).ClientThemeType.STANDARD_BACKGROUND_THEME;
+  if (tmp48) {
+    tmp48 = mobileThemes[first].type !== tmp3(tmp4[24]).ClientThemeType.STANDARD_BACKGROUND_THEME;
   }
-  obj7.isNitroLocked = tmp46;
-  const tmp44Result = tmp44(mobileThemes(isPreview[47]), obj7);
-  obj8 = {};
+  obj7[5] = tmp48;
+  let tmp43Result = tmp43(mobileThemes(isPreview[47]), obj7);
   const items10 = [{ width: "100%", height: "100%" }, ];
-  let bgBasePrimary = !tmp10;
+  let bgBasePrimary = !tmp14;
   if ("nitro" !== themeSelector) {
     bgBasePrimary = obj1.bgBasePrimary;
   }
+  const obj8 = { style: items10, children: null };
   items10[1] = bgBasePrimary;
-  obj8.style = items10;
-  let tmp51 = null;
+  tmp43Result = null;
   if ("nitro" === themeSelector) {
-    const obj9 = { themes: mobileThemes, themeIndex: first, isDimmed: true };
-    tmp51 = callback(mobileThemes(isPreview[48]), obj9);
+    const obj9 = { themes: null, themeIndex: null, isDimmed: true };
+    obj9[0] = mobileThemes;
+    obj9[1] = first;
+    tmp43Result = tmp43(tmp6(tmp4[48]), obj9);
   }
-  const items11 = [tmp51, ];
-  const obj10 = { bottom: true };
+  const items11 = [tmp43Result, ];
   const items12 = [tmp.container, , ];
   let landscapeContainer = tmp2;
   if (deviceWidth > deviceHeight) {
     landscapeContainer = tmp.landscapeContainer;
   }
+  const obj10 = { bottom: true, style: items12, children: null };
   items12[1] = landscapeContainer;
   items12[2] = { marginTop: headerHeight };
-  obj10.style = items12;
-  const items13 = [callback(mobileThemes(isPreview[50]), { animated: true, barStyle: tmp8[0] }), ];
-  obj11 = {};
+  const items13 = [tmp43(mobileThemes(isPreview[50]), { animated: true, barStyle: tmp12 }), ];
+  const obj11 = { children: null };
   if (deviceWidth > deviceHeight) {
-    const obj12 = { style: tmp.landscapePreview, children: tmp44Result };
-    const items14 = [callback(hasSaveButton, obj12), ];
-    const obj13 = { style: tmp.landscapeSelector, children: tmp38 };
-    items14[1] = callback(hasSaveButton, obj13);
-    obj11.children = items14;
-    let tmp58 = obj11;
+    const obj12 = { style: null, children: null };
+    obj12[0] = tmp.landscapePreview;
+    obj12[1] = tmp43Result;
+    const items14 = [tmp43(hasSaveButton, obj12), ];
+    const obj13 = { style: null, children: null };
+    obj13[0] = tmp.landscapeSelector;
+    obj13[1] = tmp42;
+    items14[1] = tmp43(hasSaveButton, obj13);
+    obj11[0] = items14;
+    let tmp53 = obj11;
   } else {
-    const items15 = [tmp44Result, tmp38];
-    obj11.children = items15;
-    tmp58 = obj11;
+    const items15 = [tmp43Result, tmp42];
+    obj11[0] = items15;
+    tmp53 = obj11;
   }
-  items13[1] = callback2(closure_16, tmp58);
-  obj10.children = items13;
+  items13[1] = callback2(c16, tmp53);
+  obj10[2] = items13;
   items11[1] = callback2(defaultIndex(isPreview[49]).SafeAreaPaddingView, obj10);
-  obj8.children = items11;
+  obj8[1] = items11;
   return callback2(mobileThemes(isPreview[33]).View, obj8);
 }
 let result = set.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceThemePickerScreen.tsx");
@@ -547,40 +582,40 @@ export default function ConnectedThemePicker(canGoBack) {
   let memo2;
   ({ width, height } = importDefault(userPreset[19])());
   let obj = mode(userPreset[20]);
-  let items = [c6, memo2, closure_10, memo1, memo];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ userPreset: _undefined.gradientPreset, isPreview: _undefined.isPreview, usingSystemTheme: outer1_10.useSystemTheme === outer1_12.ON, isSynced: memo1.shouldSync("appearance"), userTheme: memo2.theme, hasCustomTheme: memo.hasCustomTheme() }));
+  let items = [c6, memo2, CHANNEL_SIDEBAR_WIDTH, memo1, memo];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ userPreset: _undefined.gradientPreset, isPreview: _undefined.isPreview, usingSystemTheme: useSystemTheme.useSystemTheme === constants.ON, isSynced: memo1.shouldSync("appearance"), userTheme: memo2.theme, hasCustomTheme: memo.hasCustomTheme() }));
   ({ usingSystemTheme: c1, userPreset } = stateFromStoresObject);
-  ({ userTheme: c3, hasCustomTheme: c4 } = stateFromStoresObject);
-  ({ isSynced, isPreview } = stateFromStoresObject);
-  let tmp = importDefault(userPreset[19])();
+  ({ userTheme: c3, hasCustomTheme: c4, isSynced, isPreview } = stateFromStoresObject);
+  const tmp = importDefault(userPreset[19])();
   allMobileThemes = mode(userPreset[21]).useAllMobileThemes(mode);
   const tmp4 = importDefault(userPreset[22])("SettingsAppearanceThemePickerScreen");
   c6 = tmp4;
   const items1 = [userPreset, allMobileThemes];
   memo = React.useMemo(() => {
     let id;
-    if (null != userPreset) {
+    if (userPreset != null) {
       id = userPreset.id;
     }
     let closure_0 = id === mode(userPreset[23]).BackgroundGradientPresetId.EASTER_EGG;
     return allMobileThemes.filter((type) => {
-      let tmp = type.type !== mode(userPreset[24]).ClientThemeType.BACKGROUND_GRADIENT_PRESET;
-      if (!tmp) {
-        tmp = type.id !== mode(userPreset[23]).BackgroundGradientPresetId.EASTER_EGG;
+      let tmp3 = type.type !== callback(outer1_2[24]).ClientThemeType.BACKGROUND_GRADIENT_PRESET;
+      if (!tmp3) {
+        tmp3 = type.id !== callback(outer1_2[23]).BackgroundGradientPresetId.EASTER_EGG;
       }
-      if (!tmp) {
-        tmp = closure_0;
+      if (!tmp3) {
+        tmp3 = callback;
       }
-      return tmp;
+      return tmp3;
     });
   }, items1);
   const items2 = [memo, tmp4];
   memo1 = React.useMemo(() => {
     if (c6) {
-      let items = tmp;
+      let items = arr;
     } else {
-      items = [tmp[1], memo[0]];
-      HermesBuiltin.arraySpread(memo.slice(2), 2);
+      items = [, ];
+      [arr2[1], arr2[0]] = arr;
+      HermesBuiltin.arraySpread(arr.slice(2), 2);
     }
     return items;
   }, items2);
@@ -592,13 +627,13 @@ export default function ConnectedThemePicker(canGoBack) {
       found = memo1.filter((theme) => {
         if ("system" === theme.theme) {
           return tmp;
-        } else if (outer1_0 === outer2_11.DARK) {
+        } else if (closure_0 === outer1_11.DARK) {
           theme = theme.theme;
-          let isThemeDarkResult = mode(userPreset[25]).isThemeDark(theme);
-          const obj2 = mode(userPreset[25]);
+          let isThemeDarkResult = outer1_0(outer1_2[25]).isThemeDark(theme);
+          const obj2 = outer1_0(outer1_2[25]);
         } else {
-          isThemeDarkResult = mode(userPreset[25]).isThemeLight(theme.theme);
-          const obj = mode(userPreset[25]);
+          isThemeDarkResult = outer1_0(outer1_2[25]).isThemeLight(theme.theme);
+          const obj = outer1_0(outer1_2[25]);
         }
       });
     }
@@ -607,7 +642,7 @@ export default function ConnectedThemePicker(canGoBack) {
   obj = {
     defaultIndex: importDefault(userPreset[26])(() => {
       if (null != mode) {
-        let syncedModeThemeIndex = mode(userPreset[27]).getSyncedModeThemeIndex(memo2, mode);
+        let syncedModeThemeIndex = mode(userPreset[27]).getSyncedModeThemeIndex(memo2, tmp);
         const obj2 = mode(userPreset[27]);
       } else {
         const obj = mode(userPreset[27]);

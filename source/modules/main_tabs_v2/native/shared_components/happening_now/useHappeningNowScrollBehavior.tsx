@@ -1,12 +1,12 @@
-// Module ID: 15033
-// Function ID: 114465
+// Module ID: 15063
+// Function ID: 15064
 // Name: useHappeningNowScrollBehavior
-// Dependencies: [57, 31, 2]
+// Dependencies: [32, 19, 2]
 // Exports: default, useHappeningNowScrollSnapping
 
-// Module 15033 (useHappeningNowScrollBehavior)
+// Module 15063 (useHappeningNowScrollBehavior)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/useHappeningNowScrollBehavior.tsx");
 
@@ -27,37 +27,41 @@ export default function useHappeningNowScrollBehavior(arg0, arg1) {
 };
 export const useHappeningNowScrollSnapping = function useHappeningNowScrollSnapping(listRef) {
   const current = listRef.current;
-  let length;
-  if (null != current) {
+  let num;
+  if (current != null) {
     const props = current.props;
-    if (null != props) {
+    if (props != null) {
       const data = props.data;
-      if (null != data) {
-        length = data.length;
+      if (data != null) {
+        num = data.length;
       }
     }
   }
-  let num = 0;
-  if (null != length) {
-    num = length;
+  if (num == null) {
+    num = 0;
   }
   const items = [];
   let num2 = 0;
-  for (let num3 = 0; num3 < num; num3 = num3 + 1) {
-    let current2 = listRef.current;
-    let width;
-    if (null != current2) {
-      let layout = current2.getLayout(num3);
-      if (null != layout) {
-        width = layout.width;
+  let num3 = 0;
+  if (0 < num) {
+    do {
+      let current2 = listRef.current;
+      let tmp = num2;
+      let tmp2 = num3;
+      let num4;
+      if (current2 != null) {
+        let layout = current2.getLayout(num2);
+        if (layout != null) {
+          num4 = layout.width;
+        }
       }
-    }
-    let num4 = 0;
-    if (null != width) {
-      num4 = width;
-    }
-    let arr = items.push(num2);
-    num2 = num2 + num4;
+      if (num4 == null) {
+        num4 = 0;
+      }
+      let arr = items.push(num3);
+      num3 = num3 + num4;
+      num2 = num2 + 1;
+    } while (num2 < num);
   }
   return items;
 };

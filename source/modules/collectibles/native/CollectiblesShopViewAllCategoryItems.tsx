@@ -1,34 +1,37 @@
-// Module ID: 14617
-// Function ID: 111403
-// Dependencies: [31, 27, 655, 653, 33, 4165, 689, 9770, 5497, 5517, 1557, 14081, 4026, 4577, 675, 5833, 8639, 8740, 14618, 14619, 14596, 1212, 2]
+// Module ID: 14642
+// Function ID: 14643
+// Dependencies: [19, 17, 678, 676, 21, 4189, 712, 9792, 5515, 5535, 1581, 14103, 4050, 4599, 698, 5851, 8663, 8764, 14643, 14644, 14621, 1236, 2]
 
-// Module 14617
-import importAllResult from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 14642
+import importAllResult from "CollectiblesShopViewAllCategoryItemsHeader";
+import get_ActivityIndicator from "NativePaymentContextProvider";
 import { CollectiblesMobileShopScreen as closure_6 } from "items";
 import { AnalyticEvents } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "getSystemLocale";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
-let closure_8;
-let closure_9;
+let c4;
+let c5;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ View: closure_4, StyleSheet: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let obj = {};
-obj = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj.rootContainer = obj;
-_createForOfIteratorHelperLoose = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-obj.border = _createForOfIteratorHelperLoose;
-let closure_10 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c3 = importAllResult;
+({ View: c4, StyleSheet: c5 } = get_ActivityIndicator);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+let obj = { rootContainer: null, border: null };
+obj = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[0] = obj;
+createCacheKey = { height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+obj[1] = createCacheKey;
+let closure_10 = createCacheKey.createStyles(obj);
 let closure_11 = { code: "function CollectiblesShopViewAllCategoryItemsTsx1(){const{borderOpacity}=this.__closure;return{opacity:borderOpacity.get()};}" };
 const memoResult = importAllResult.memo((category) => {
   let logoUrl;
   let mobileBgUrl;
   category = category.category;
   const analyticsContext = category.analyticsContext;
+  let analyticsLocations;
+  let sharedValue;
   const tmp = callback2();
   ({ mobileBgUrl, logoUrl } = category);
   const backgroundColors = analyticsContext(analyticsLocations[7])(category.styles).backgroundColors;
@@ -38,7 +41,7 @@ const memoResult = importAllResult.memo((category) => {
   obj = { products: category.products };
   const filteredAndSortedProducts = obj.useFilteredAndSortedProducts(obj);
   let obj2 = category(analyticsLocations[12]);
-  const sharedValue = obj2.useSharedValue(0);
+  sharedValue = obj2.useSharedValue(0);
   const items1 = [sharedValue];
   const callback = sharedValue.useCallback((nativeEvent) => {
     let num = 0;
@@ -56,70 +59,60 @@ const memoResult = importAllResult.memo((category) => {
   fn.__initData = closure_11;
   let sessionId;
   const animatedStyle = obj3.useAnimatedStyle(fn);
-  if (null != analyticsContext) {
+  if (analyticsContext != null) {
     sessionId = analyticsContext.sessionId;
   }
   const items2 = [sessionId, analyticsLocations, category.name];
   const effect = sharedValue.useEffect(() => {
     let obj = analyticsContext(analyticsLocations[14]);
-    obj = { location_stack: analyticsLocations };
+    obj = { location_stack: analyticsLocations, page_session_id: null, source: null, page_type: "index", category: null };
     let sessionId;
-    if (null != analyticsContext) {
-      sessionId = analyticsContext.sessionId;
+    if (analyticsContext != null) {
+      sessionId = tmp3.sessionId;
     }
-    obj.page_session_id = sessionId;
-    obj.source = analyticsContext(analyticsLocations[9]).COLLECTIBLES_SHOP;
-    obj.page_type = "index";
-    obj.category = category.name;
+    obj[1] = sessionId;
+    obj[2] = analyticsContext(analyticsLocations[9]).COLLECTIBLES_SHOP;
+    obj[4] = category.name;
     obj.track(outer1_7.COLLECTIBLES_SHOP_VIEWED, obj);
-    obj = {};
     let sessionId1;
-    if (null != analyticsContext) {
-      sessionId1 = analyticsContext.sessionId;
+    if (analyticsContext != null) {
+      sessionId1 = tmp3.sessionId;
     }
-    obj.sessionId = sessionId1;
-    obj.checkpoint = category(analyticsLocations[15]).CollectiblesShopPerfCheckpoint.SHOP_MOUNTED;
-    obj.tab = outer1_6.SHOP_ALL;
-    obj.unpublishedCategoriesShown = false;
-    obj.cacheDisabled = false;
+    obj = { sessionId: sessionId1, checkpoint: category(tmp2[15]).CollectiblesShopPerfCheckpoint.SHOP_MOUNTED, tab: outer1_6.SHOP_ALL, unpublishedCategoriesShown: false, cacheDisabled: false };
     category(analyticsLocations[15]).trackShopPerf(obj);
   }, items2);
-  obj = { value: analyticsLocations };
-  const obj1 = {};
+  obj = { value: analyticsLocations, children: null };
+  const obj1 = { newValue: null, children: null };
   obj2 = {};
   const merged = Object.assign(analyticsContext);
-  obj2["pageCategory"] = category.name;
-  obj1.newValue = obj2;
-  obj3 = { skuIDs: [], activeSubscription: null };
-  const obj4 = { style: tmp.rootContainer };
+  obj2.pageCategory = category.name;
+  obj1[0] = obj2;
+  obj3 = { skuIDs: [], activeSubscription: null, children: null };
+  const obj4 = { style: tmp.rootContainer, children: null };
   const items3 = [callback(category(analyticsLocations[18]).CollectiblesProgressiveImage, { source: { uri: mobileBgUrl }, style: absoluteFill.absoluteFill }), , , ];
-  const obj6 = { logoUrl };
+  const obj6 = { logoUrl, buttonColor: null, categoryName: null };
   let toHexStringResult;
-  const obj5 = { source: { uri: mobileBgUrl }, style: absoluteFill.absoluteFill };
-  const tmp12 = closure_9;
-  const tmp13 = closure_4;
-  const tmp2 = analyticsContext(analyticsLocations[8]);
-  if (null != backgroundColors) {
+  let tmp2Result = tmp2(tmp3[19]);
+  if (backgroundColors != null) {
     const label = backgroundColors.label;
     toHexStringResult = label.toHexString();
   }
-  obj6.buttonColor = toHexStringResult;
-  obj6.categoryName = category.name;
-  items3[1] = callback(analyticsContext(analyticsLocations[19]), obj6);
+  obj6[1] = toHexStringResult;
+  obj6[2] = category.name;
+  items3[1] = callback(tmp2Result, obj6);
   const items4 = [tmp.border, animatedStyle];
   items3[2] = callback(analyticsContext(analyticsLocations[12]).View, { style: items4 });
-  const obj7 = { category, products: filteredAndSortedProducts, scrollEnabled: true, onScroll: callback };
-  const tmp14 = analyticsContext(analyticsLocations[19]);
-  obj7.paddingTop = analyticsContext(analyticsLocations[6]).space.PX_16;
-  obj7.paddingBottom = analyticsContext(analyticsLocations[10])().bottom + analyticsContext(analyticsLocations[6]).space.PX_16;
-  obj7.muteBundleStaticBackground = true;
-  const intl = category(analyticsLocations[21]).intl;
-  obj7.accessibilityLabel = intl.formatToPlainString(category(analyticsLocations[21]).t.FNtLb3, { category: category.name });
-  items3[3] = callback(analyticsContext(analyticsLocations[20]), obj7);
-  obj4.children = items3;
-  obj3.children = tmp12(tmp13, obj4);
-  obj1.children = callback(category(analyticsLocations[17]).NativePaymentContextProvider, obj3);
-  obj.children = callback(category(analyticsLocations[16]).CollectiblesAnalyticsProvider, obj1);
+  const obj7 = { category, products: filteredAndSortedProducts, scrollEnabled: true, onScroll: callback, paddingTop: null, paddingBottom: null, muteBundleStaticBackground: true, accessibilityLabel: null };
+  tmp2Result = tmp2(tmp3[20]);
+  obj7[4] = analyticsContext(analyticsLocations[6]).space.PX_16;
+  obj7[5] = analyticsContext(analyticsLocations[10])().bottom + analyticsContext(analyticsLocations[6]).space.PX_16;
+  const intl = tmp5(tmp3[21]).intl;
+  obj7[7] = intl.formatToPlainString(category(analyticsLocations[21]).t.FNtLb3, { category: category.name });
+  items3[3] = callback(tmp2Result, obj7);
+  obj4[1] = items3;
+  obj3[2] = closure_9(closure_4, obj4);
+  obj1[1] = callback(category(analyticsLocations[17]).NativePaymentContextProvider, obj3);
+  obj[1] = callback(category(analyticsLocations[16]).CollectiblesAnalyticsProvider, obj1);
   return callback(category(analyticsLocations[8]).AnalyticsLocationProvider, obj);
 });
 let result = require("items").fileFinishedImporting("modules/collectibles/native/CollectiblesShopViewAllCategoryItems.tsx");

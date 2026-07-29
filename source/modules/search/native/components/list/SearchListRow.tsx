@@ -1,30 +1,30 @@
-// Module ID: 15456
-// Function ID: 117817
+// Module ID: 15490
+// Function ID: 15491
 // Name: SearchListRow
-// Dependencies: [31, 27, 9077, 33, 4165, 689, 4695, 4161, 2]
+// Dependencies: [19, 17, 9101, 21, 4189, 712, 4717, 4185, 2]
 
-// Module 15456 (SearchListRow)
+// Module 15490 (SearchListRow)
 import { View } from "get ActivityIndicator";
 import { SEARCH_ROW_TAP_STATE_PADDING as closure_4 } from "SearchAutocompleteSelectAnalyticsActions";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_5;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles((marginLeft) => {
-  obj = { pressable: obj, body: { flexDirection: "row", alignItems: "center" }, labels: { justifyContent: "center", flex: 1 } };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles((marginLeft) => {
+  obj = { pressable: obj, body: { flexDirection: "row", alignItems: "center" }, labels: { justifyContent: "center", flex: 1 }, underlayColor: null, text: null, iconContainer: null, extrasContainer: null };
   obj = { paddingHorizontal: 16, paddingVertical: closure_4 };
-  obj = { backgroundColor: importDefault(689).colors.INTERACTIVE_BACKGROUND_ACTIVE };
-  obj.underlayColor = obj;
-  obj.text = { flexShrink: 1 };
-  obj.iconContainer = { marginRight: 12 };
-  obj.extrasContainer = { marginLeft };
+  obj = { backgroundColor: importDefault(712).colors.INTERACTIVE_BACKGROUND_ACTIVE };
+  obj[3] = obj;
+  obj[4] = { flexShrink: 1 };
+  obj[5] = { marginRight: 12 };
+  obj[6] = { marginLeft };
   return obj;
 });
-const memoResult = require("result").memo((accessibilityRole) => {
+const memoResult = require("noop").memo((accessibilityRole) => {
   let accessibilityActions;
   let accessibilityHint;
   let accessibilityLabel;
@@ -50,46 +50,43 @@ const memoResult = require("result").memo((accessibilityRole) => {
   if (str === undefined) {
     str = "button";
   }
-  let num = 0;
   ({ accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, bodyStyle } = accessibilityRole);
-  if (null != iconWidth) {
-    num = iconWidth;
+  if (iconWidth == null) {
+    iconWidth = 0;
   }
-  const tmpResult = closure_7(num);
-  let obj = { accessible, accessibilityRole: str, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction };
-  const items = [tmpResult.pressable, containerStyle];
-  obj.style = items;
-  obj.onPress = onPress;
-  obj.unstable_pressDelay = 130;
-  obj.underlayColor = tmpResult.underlayColor.backgroundColor;
+  const tmpResult = closure_7(iconWidth);
+  let obj = { accessible, accessibilityRole: str, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, style: items, onPress, unstable_pressDelay: 130, underlayColor: tmpResult.underlayColor.backgroundColor, children: null };
+  items = [tmpResult.pressable, containerStyle];
   const items1 = [header, , ];
-  obj = { style: items2 };
+  obj = { style: items2, children: null };
   items2 = [tmpResult.body, bodyStyle];
   const items3 = [tmpResult.iconContainer, iconContainerStyle];
   const items4 = [callback(View, { style: items3, children: icon }), , ];
-  obj = { style: tmpResult.labels };
-  let tmp5 = label;
-  if ("string" === typeof label) {
-    const obj1 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmpResult.text, children: label };
-    tmp5 = callback(require(4161) /* Text */.Text, obj1);
+  obj = { style: tmpResult.labels, children: null };
+  let tmp7Result = label;
+  if (typeof label !== "init") {
+    const obj1 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: null, children: null };
+    obj1[3] = tmpResult.text;
+    obj1[4] = label;
+    tmp7Result = tmp7(require(4185) /* Text */.Text, obj1);
   }
-  const items5 = [tmp5, subLabel];
-  obj.children = items5;
+  const items5 = [tmp7Result, subLabel];
+  obj[1] = items5;
   items4[1] = closure_6(View, obj);
   items4[2] = trailing;
-  obj.children = items4;
+  obj[1] = items4;
   items1[1] = closure_6(View, obj);
-  let tmp9 = null != extras;
-  if (tmp9) {
-    const obj2 = {};
+  tmp7Result = null != extras;
+  if (tmp7Result) {
+    const obj2 = { style: null, children: null };
     const items6 = [tmpResult.extrasContainer];
-    obj2.style = items6;
-    obj2.children = extras;
-    tmp9 = callback(View, obj2);
+    obj2[0] = items6;
+    obj2[1] = extras;
+    tmp7Result = tmp7(tmp6, obj2);
   }
-  items1[2] = tmp9;
-  obj.children = items1;
-  return closure_6(require(4695) /* PressableBase */.PressableHighlight, obj);
+  items1[2] = tmp7Result;
+  obj[10] = items1;
+  return closure_6(require(4717) /* PressableBase */.PressableHighlight, obj);
 });
 const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedImporting("modules/search/native/components/list/SearchListRow.tsx");
 

@@ -1,22 +1,23 @@
-// Module ID: 12967
-// Function ID: 100550
-// Dependencies: [1850, 4372, 12968, 1935, 2]
+// Module ID: 12990
+// Function ID: 12991
+// Dependencies: [1874, 4395, 12991, 1959, 2]
 
-// Module 12967
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12990
+import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
 const result = require("AddFriendModalScene").fileFinishedImporting("components_native/add_friend/AddFriendModalActionCreators.tsx");
 
 export default {
   openAddFriendModalDeeplink() {
-    importDefault(4372).pushLazy(require(1935) /* maybeLoadBundle */(12968, dependencyMap.paths));
+    importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(12991, dependencyMap.paths));
   },
-  openAddFriendModal(sourceMetadata) {
+  openAddFriendModal(arg0) {
     if (null != currentUser.getCurrentUser()) {
-      let obj = importDefault(4372);
-      obj = { sourceMetadata };
-      obj.pushLazy(require(1935) /* maybeLoadBundle */(12968, dependencyMap.paths), obj);
+      let obj = importDefault(4395);
+      obj = { sourceMetadata: null };
+      obj[0] = arg0;
+      obj.pushLazy(require(1959) /* asyncRequireImpl */(12991, dependencyMap.paths), obj);
     }
   }
 };

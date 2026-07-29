@@ -1,42 +1,37 @@
-// Module ID: 16628
-// Function ID: 129565
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 653, 16629, 16213, 5112, 2]
+// Module ID: 16664
+// Function ID: 16665
+// Name: fetchForwardReferencedGuilds
+// Dependencies: [676, 16665, 5134, 16248, 2]
 
-// Module 16628 (_isNativeReflectConstruct)
-import setupLoadFromMessageManagerHandlers from "setupLoadFromMessageManagerHandlers";
-import _fetchBasicGuild from "_fetchBasicGuild";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 16664 (fetchForwardReferencedGuilds)
 import { MessageReferenceTypes } from "ME";
-import tmp2 from "AutomaticLifecycleManager";
+import "initialize";
 
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function fetchForwardReferencedGuilds(message_reference) {
   message_reference = message_reference.message_reference;
   let type;
-  if (null != message_reference) {
+  if (message_reference != null) {
     type = message_reference.type;
   }
   if (type === MessageReferenceTypes.FORWARD) {
     const guild_id = message_reference.message_reference.guild_id;
     if (null != guild_id) {
-      const basicGuild = require(16629) /* _fetchBasicGuild */.fetchBasicGuild(guild_id);
-      const obj = require(16629) /* _fetchBasicGuild */;
+      const basicGuild = require(16665) /* _fetchBasicGuild */.fetchBasicGuild(guild_id);
+      const obj = require(16665) /* _fetchBasicGuild */;
     }
   }
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/forwarding/ForwardGuildBreadcrumbManager.tsx");
+class ForwardGuildBreadcrumbManager extends tmp6 {
+  constructor() {
+    tmp3 = new ForwardGuildBreadcrumbManager(tmp2, tmp, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    tmp4 = require("setupLoadFromMessageManagerHandlers")(tmp3, fetchForwardReferencedGuilds);
+    return tmp3;
+  }
+}
+tmp = new tmp(tmp4, tmp3, tmp2, Object, defineProperty, ForwardGuildBreadcrumbManager, importDefault);
+// ThrowIfThisInitialized (0x7c)
+require("setupLoadFromMessageManagerHandlers")(tmp, fetchForwardReferencedGuilds);
+const result = require("initialize").fileFinishedImporting("modules/forwarding/ForwardGuildBreadcrumbManager.tsx");
 
-export default tmp2;
+export default tmp;

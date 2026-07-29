@@ -1,29 +1,29 @@
-// Module ID: 5119
-// Function ID: 44402
+// Module ID: 5141
+// Function ID: 5142
 // Name: preload
-// Dependencies: [31, 27, 33, 4165, 5120, 477, 2]
+// Dependencies: [19, 17, 21, 4189, 5142, 500, 2]
 
-// Module 5119 (preload)
+// Module 5141 (preload)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
 import set from "jsxProd";
 
-let closure_2;
-let closure_3;
+let c3;
+let obj1;
 class FastImageAndroid {
   constructor(arg0) {
     obj = {};
     merged = Object.assign(global);
-    obj["defaultSource"] = global.placeholder;
-    obj["fadeDuration"] = 0;
+    obj.defaultSource = global.placeholder;
+    obj.fadeDuration = 0;
     return jsx(Image, obj);
   }
 }
-({ Image: closure_2, NativeModules: closure_3 } = get_ActivityIndicator);
-let closure_5 = _createForOfIteratorHelperLoose.createStyles({ base: { overflow: "hidden" } });
-let merged = Object.assign(require("result").memo((fade) => {
+({ Image: obj1, NativeModules: c3 } = get_ActivityIndicator);
+let closure_5 = createCacheKey.createStyles({ base: { overflow: "hidden" } });
+let merged = Object.assign(require("noop").memo((fade) => {
   let enableAnimation;
   let manualPlayback;
   let paused;
@@ -43,7 +43,7 @@ let merged = Object.assign(require("result").memo((fade) => {
     tmp3 = fade;
   }
   const usesSmallCache = fade.usesSmallCache;
-  if ("number" === typeof source) {
+  if (typeof source === "Object") {
     let obj = {};
     const merged = Object.assign(fade);
     return <closure_2 />;
@@ -55,18 +55,18 @@ let merged = Object.assign(require("result").memo((fade) => {
     obj = {};
     const merged1 = Object.assign(fade);
     const items = [tmp.base, style];
-    obj["style"] = items;
+    obj.style = items;
     let uri;
-    if (null != assetSource) {
+    if (assetSource != null) {
       uri = assetSource.uri;
     }
-    obj["placeholder"] = uri;
-    obj["enableAnimation"] = tmp2;
-    obj["paused"] = paused;
-    obj["manualPlayback"] = manualPlayback;
-    obj["fade"] = tmp3;
-    obj["usesSmallCache"] = tmp4;
-    return jsx(importDefault(5120), {});
+    obj.placeholder = uri;
+    obj.enableAnimation = tmp2;
+    obj.paused = paused;
+    obj.manualPlayback = manualPlayback;
+    obj.fade = tmp3;
+    obj.usesSmallCache = tmp4;
+    return jsx(importDefault(5142), {});
   }
   tmp = callback();
   tmp4 = undefined !== usesSmallCache && usesSmallCache;
@@ -74,8 +74,8 @@ let merged = Object.assign(require("result").memo((fade) => {
   preload(arg0) {
     let closure_0 = arg0;
     let promise = new Promise((arg0) => {
-      const DCDFastImageViewManager = outer1_3.DCDFastImageViewManager;
-      DCDFastImageViewManager.preload(closure_0, arg0);
+      const ImageManager = outer1_3.ImageManager;
+      ImageManager.preload(closure_0, arg0);
     });
     const items = [promise, ];
     promise = new Promise((arg0) => setTimeout(arg0, 2000));
@@ -83,7 +83,7 @@ let merged = Object.assign(require("result").memo((fade) => {
     return Promise.race(items);
   }
 });
-FastImageAndroid.preload = (arg0) => closure_2.prefetch(arg0).catch(() => {
+FastImageAndroid.preload = (closure_0) => closure_2.prefetch(closure_0).catch(() => {
 
 });
 if (set.isAndroid()) {

@@ -1,12 +1,13 @@
-// Module ID: 1386
-// Function ID: 16556
+// Module ID: 1410
+// Function ID: 1411
 // Name: date
-// Dependencies: [1387, 2]
+// Dependencies: [1411, 2]
 
-// Module 1386 (date)
+// Module 1410 (date)
 import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields";
 
-const obj = { id: "373", name: "Favorites", description: "The place for all your favorite channels!", joinedAt: new Date(), maxMembers: 500000 };
+const obj = { id: "373", name: "Favorites", description: "The place for all your favorite channels!", joinedAt: null, maxMembers: 500000 };
+obj[3] = new Date();
 const result = fromGuildPropertiesWithAdditionalFields.constructFromPartialGuildRecord(obj);
 const date = new Date();
 const result1 = require("set").fileFinishedImporting("modules/favorites/FavoritesConstants.tsx");

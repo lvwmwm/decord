@@ -1,119 +1,68 @@
-// Module ID: 8156
-// Function ID: 64804
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1838, 8157, 566, 686, 2]
+// Module ID: 8180
+// Function ID: 8181
+// Name: initialize
+// Dependencies: [1862, 8181, 589, 709, 2]
 
-// Module 8156 (_isNativeReflectConstruct)
-import fetchGuildAffinities from "fetchGuildAffinities";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 8180 (initialize)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import { PersistedStore } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let closure_3 = { guildAffinitiesByGuildId: {}, guildAffinities: [], lastFetched: 0 };
+class GuildAffinitiesStore extends PersistedStore {
 }
-function setDefaultState() {
-  let closure_8 = { guildAffinitiesByGuildId: {}, guildAffinities: [], lastFetched: 0 };
-}
-let closure_8 = {};
-setDefaultState();
-let tmp3 = ((PersistedStore) => {
-  class GuildAffinitiesStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, GuildAffinitiesStore);
-      obj = outer1_5(GuildAffinitiesStore);
-      tmp2 = outer1_4;
-      if (outer1_9()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+const prototype = GuildAffinitiesStore.prototype;
+prototype["initialize"] = function initialize(arg0) {
+  if (null != arg0) {
+    let closure_3 = arg0;
   }
-  callback2(GuildAffinitiesStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(arg0) {
-      const self = this;
-      if (null != arg0) {
-        const outer1_8 = arg0;
-      }
-      self.waitFor(outer1_7);
-    }
-  };
-  const items = [obj, , , , ];
-  obj = {
-    key: "getState",
-    value() {
-      return outer1_8;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getGuildAffinity",
-    value(arg0) {
-      return outer1_8.guildAffinitiesByGuildId[arg0];
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "affinities",
-    get() {
-      return outer1_8.guildAffinities;
-    }
-  };
-  items[4] = {
-    key: "hasRequestResolved",
-    get() {
-      return 0 !== outer1_8.lastFetched;
-    }
-  };
-  return callback(GuildAffinitiesStore, items);
-})(require("initialize").PersistedStore);
-tmp3.displayName = "GuildAffinitiesStore";
-tmp3.persistKey = "GuildAffinitiesStore";
-tmp3 = new tmp3(require("dispatcher"), {
+  this.waitFor(createGuildRecordFromRust);
+};
+prototype["getState"] = function getState() {
+  return closure_3;
+};
+prototype["getGuildAffinity"] = function getGuildAffinity(guild_id) {
+  return closure_3.guildAffinitiesByGuildId[guild_id];
+};
+Object.defineProperty(prototype, "affinities", {
+  get: function affinities() {
+    return closure_3.guildAffinities;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "hasRequestResolved", {
+  get: function hasRequestResolved() {
+    return 0 !== closure_3.lastFetched;
+  },
+  set: undefined
+});
+GuildAffinitiesStore.displayName = "GuildAffinitiesStore";
+GuildAffinitiesStore.persistKey = "GuildAffinitiesStore";
+const guildAffinitiesStore = new GuildAffinitiesStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen() {
-    if (Date.now() - lastFetched.lastFetched > 86400000) {
-      const guildAffinities = require(8157) /* fetchGuildAffinities */.fetchGuildAffinities();
-      const obj = require(8157) /* fetchGuildAffinities */;
+    if (Date.now() - closure_3.lastFetched > 86400000) {
+      const guildAffinities = require(8181) /* fetchGuildAffinities */.fetchGuildAffinities();
+      const obj = require(8181) /* fetchGuildAffinities */;
     }
     return false;
   },
   LOAD_GUILD_AFFINITIES_SUCCESS: function handleLoadGuildAffinitiesSuccess(guildAffinities) {
     guildAffinities = guildAffinities.guildAffinities;
-    closure_8.guildAffinities = [];
-    closure_8.guildAffinitiesByGuildId = {};
-    closure_8.lastFetched = Date.now();
+    closure_3.guildAffinities = [];
+    closure_3.guildAffinitiesByGuildId = {};
+    closure_3.lastFetched = Date.now();
     const item = guildAffinities.forEach((guild_id, index) => {
       guild_id = guild_id.guild_id;
       const obj = { score: guild_id.affinity, guildId: guild_id, index };
-      outer1_8.guildAffinitiesByGuildId[guild_id] = obj;
-      const guildAffinities = outer1_8.guildAffinities;
+      closure_3.guildAffinitiesByGuildId[guild_id] = obj;
+      const guildAffinities = closure_3.guildAffinities;
       guildAffinities.push(obj);
     });
   },
   LOGOUT: function handleLogout() {
-    setDefaultState();
+    let closure_3 = { guildAffinitiesByGuildId: {}, guildAffinities: [], lastFetched: 0 };
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/GuildAffinitiesStore.tsx");
+const result = require("initialize").fileFinishedImporting("stores/GuildAffinitiesStore.tsx");
 
-export default tmp3;
+export default guildAffinitiesStore;

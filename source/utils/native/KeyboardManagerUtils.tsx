@@ -1,19 +1,19 @@
-// Module ID: 1820
-// Function ID: 20008
+// Module ID: 1844
+// Function ID: 1845
 // Name: dismissGlobalKeyboard
-// Dependencies: [27, 477, 1821, 2]
+// Dependencies: [17, 500, 1845, 2]
 // Exports: clearCurrentFocusAndDismissKeyboard, dismissGlobalKeyboard, onKeyboardChanged
 
-// Module 1820 (dismissGlobalKeyboard)
+// Module 1844 (dismissGlobalKeyboard)
 import { NativeModules } from "get ActivityIndicator";
 
 let result = require("enforcing").fileFinishedImporting("utils/native/KeyboardManagerUtils.tsx");
 
 export const dismissGlobalKeyboard = function dismissGlobalKeyboard() {
   if (obj.isAndroid()) {
-    if (null != importDefault(1821)) {
-      const result = importDefault(1821).dismissGlobalKeyboard();
-      const obj2 = importDefault(1821);
+    const obj2 = importDefault(1845);
+    if (obj2 != null) {
+      const result = obj2.dismissGlobalKeyboard();
     }
   } else {
     const KeyboardManager = NativeModules.KeyboardManager;
@@ -22,21 +22,24 @@ export const dismissGlobalKeyboard = function dismissGlobalKeyboard() {
 };
 export const clearCurrentFocusAndDismissKeyboard = function clearCurrentFocusAndDismissKeyboard() {
   if (obj.isAndroid()) {
-    if (null != importDefault(1821)) {
-      const result = importDefault(1821).clearCurrentFocusAndDismissKeyboard();
-      const obj2 = importDefault(1821);
+    const obj2 = importDefault(1845);
+    if (obj2 != null) {
+      const result = obj2.clearCurrentFocusAndDismissKeyboard();
     }
   }
 };
 export const onKeyboardChanged = function onKeyboardChanged(open) {
   if (obj.isAndroid()) {
-    if (null != importDefault(1821)) {
-      importDefault(1821).onKeyboardChanged(open);
-      const obj2 = importDefault(1821);
+    const obj2 = importDefault(1845);
+    if (obj2 != null) {
+      obj2.onKeyboardChanged(open);
     }
-  } else if (null != NativeModules.KeyboardManager.onKeyboardChanged) {
+  } else {
     const KeyboardManager = NativeModules.KeyboardManager;
-    open = globalThis.open;
-    KeyboardManager.onKeyboardChanged(globalThis.open);
+    const onKeyboardChanged = KeyboardManager.onKeyboardChanged;
+    if (onKeyboardChanged != null) {
+      open = globalThis.open;
+      onKeyboardChanged(globalThis.open);
+    }
   }
 };

@@ -1,28 +1,31 @@
-// Module ID: 13231
-// Function ID: 101780
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 13224, 13230, 2]
+// Module ID: 13254
+// Function ID: 13255
+// Name: snapshotForBreadcrumbs
+// Dependencies: [13250, 13251, 2]
 
-// Module 13231 (_isNativeReflectConstruct)
-import BaseTelemetryChannel from "BaseTelemetryChannel";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "BaseTelemetryChannel";
+// Module 13254 (snapshotForBreadcrumbs)
+import "append";
+import importDefaultResult1 from "TelemetryChannel";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+let closure_3 = { type: "BYTES", limit: 1048576 };
+class SentryTelemetryImpl extends tmp3 {
+  constructor() {
+    tmp2 = require("TelemetryChannel");
+    items = [];
+    items[0] = require("TelemetryChannel").TelemetryChannel.SENTRY;
+    tmp = new tmp(tmp2, items, closure_1, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    return tmp;
   }
-  const result = _isNativeReflectConstruct();
 }
-let closure_8 = { type: "BYTES", limit: 1048576 };
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/telemetry_ring/native/channels/SentryTelemetry.tsx");
+const prototype = SentryTelemetryImpl.prototype;
+prototype["snapshotForBreadcrumbs"] = function snapshotForBreadcrumbs() {
+  return this.snapshot(-1, closure_3);
+};
+let items = [require("TelemetryChannel").TelemetryChannel.SENTRY];
+// ThrowIfThisInitialized (0x7c)
+const tmp5 = new "snapshotForBreadcrumbs"(importDefaultResult1, items, tmp, prototype, SentryTelemetryImpl, "snapshotForBreadcrumbs", importDefaultResult1);
+const result = require("set").fileFinishedImporting("modules/telemetry_ring/native/channels/SentryTelemetry.tsx");
 
-export default tmp2;
+export default tmp5;

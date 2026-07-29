@@ -1,11 +1,11 @@
-// Module ID: 11623
-// Function ID: 90187
+// Module ID: 11647
+// Function ID: 11648
 // Name: useGuildPowerupTier3OverrideConfig
-// Dependencies: [1838, 653, 566, 1212, 2231, 2]
+// Dependencies: [1862, 676, 589, 1236, 2255, 2]
 // Exports: default
 
-// Module 11623 (useGuildPowerupTier3OverrideConfig)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 11647 (useGuildPowerupTier3OverrideConfig)
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";
 
 const require = arg1;
@@ -13,20 +13,20 @@ const result = require("initialize").fileFinishedImporting("modules/premium/powe
 
 export default function useGuildPowerupTier3OverrideConfig(arg0) {
   const _require = arg0;
-  let obj = _require(566);
-  const items = [_createForOfIteratorHelperLoose];
+  let obj = _require(589);
+  const items = [createGuildRecordFromRust];
   if (obj.useStateFromStores(items, () => {
     const guild = outer1_3.getGuild(closure_0);
     let hasItem;
-    if (null != guild) {
+    if (guild != null) {
       const features = guild.features;
       hasItem = features.has(outer1_4.PREMIUM_TIER_3_OVERRIDE);
     }
     return true === hasItem;
   })) {
-    obj = { shouldShow: true };
-    const intl = _require(1212).intl;
-    obj.text = intl.string(importDefault(2231).l9n4QZ);
+    obj = { shouldShow: true, text: null };
+    const intl = _require(1236).intl;
+    obj[1] = intl.string(importDefault(2255).l9n4QZ);
   } else {
     obj = { shouldShow: false, text: "" };
   }

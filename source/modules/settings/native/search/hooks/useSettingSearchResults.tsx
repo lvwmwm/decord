@@ -1,12 +1,12 @@
-// Module ID: 14684
-// Function ID: 111763
+// Module ID: 14709
+// Function ID: 14710
 // Name: useSettingSearchResults
-// Dependencies: [57, 31, 13659, 13660, 14680, 13664, 14685, 13662, 574, 2]
+// Dependencies: [32, 19, 13680, 13681, 14705, 13685, 14710, 13683, 636, 2]
 // Exports: useSettingSearchResults
 
-// Module 14684 (useSettingSearchResults)
+// Module 14709 (useSettingSearchResults)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import zustandStore from "zustandStore";
 import closure_6 from "zustandStore";
 
@@ -16,8 +16,8 @@ const result = require("zustandStore").fileFinishedImporting("modules/settings/n
 
 export const useSettingSearchResults = function useSettingSearchResults() {
   const memo = memo1.useMemo(() => {
-    let tmp = callback(14685);
-    tmp = new tmp(memo(13662).getSettingSearchableTitles());
+    let tmp = callback(14710);
+    tmp = new tmp(memo(13683).getSettingSearchableTitles());
     return tmp;
   }, []);
   const settings = callback(memo1.useState(closure_7), 2);
@@ -27,32 +27,35 @@ export const useSettingSearchResults = function useSettingSearchResults() {
   const placeholderCount = callback(memo1.useState(10), 2);
   callback = placeholderCount[1];
   const items = [memo];
-  memo1 = memo1.useMemo(() => callback(574)((arg0) => {
-    const field = outer2_6.getField("blocklist");
-    const found = outer1_0.getScoredSearchResults(arg0).filter((setting) => {
+  memo1 = memo1.useMemo(() => callback(636)((arg0) => {
+    let scoredSearchResults = outer1_6.getField("blocklist");
+    scoredSearchResults = scoredSearchResults.getScoredSearchResults(arg0);
+    const found = scoredSearchResults.filter((setting) => {
       setting = setting.setting;
-      let tmp = !callback(14680).isBlocked(setting, closure_0);
-      if (tmp) {
-        tmp = !memo(13664).SETTING_RENDERER_CONFIG[setting].unsearchable;
+      const isBlockedResult = outer1_1(outer1_2[4]).isBlocked(setting, callback);
+      let tmp3 = !isBlockedResult;
+      if (!isBlockedResult) {
+        tmp3 = !callback(outer1_2[5]).SETTING_RENDERER_CONFIG[setting].unsearchable;
       }
-      return tmp;
+      return tmp3;
     });
-    outer1_1(found);
-    outer1_3(Math.max(Math.min(found.length, 10), 5));
-    outer1_2(false);
+    callback(found);
+    callback3(Math.max(Math.min(found.length, 10), 5));
+    callback2(false);
   }, 350), items);
   const items1 = [memo1];
   const effect = memo1.useEffect(() => {
     let closure_0 = outer1_5.subscribe((query) => query.query.trim(), (arg0) => {
       if ("" === arg0) {
-        if (null != outer1_4.cancel) {
-          outer1_4.cancel();
+        const cancel = lib.cancel;
+        if (cancel != null) {
+          cancel();
         }
-        outer1_1(outer2_7);
-        outer1_2(false);
+        callback2(outer1_7);
+        callback3(false);
       } else {
-        outer1_2(true);
-        outer1_4(arg0);
+        callback3(true);
+        lib(arg0);
       }
     }, {
       equalityFn(arg0, arg1) {
@@ -61,8 +64,9 @@ export const useSettingSearchResults = function useSettingSearchResults() {
     });
     return () => {
       callback();
-      if (null != outer1_4.cancel) {
-        outer1_4.cancel();
+      const cancel = outer1_4.cancel;
+      if (cancel != null) {
+        cancel();
       }
     };
   }, items1);

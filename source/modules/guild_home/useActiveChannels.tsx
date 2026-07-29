@@ -1,66 +1,76 @@
-// Module ID: 15031
-// Function ID: 114445
+// Module ID: 15061
+// Function ID: 15062
 // Name: getActiveTextChannels
-// Dependencies: [1352, 1348, 3793, 4360, 12737, 653, 1355, 1327, 2]
+// Dependencies: [1376, 1372, 3817, 4385, 12759, 676, 1379, 1351, 2]
 // Exports: getActiveTextChannels
 
-// Module 15031 (getActiveTextChannels)
-import { isTextChannel } from "_callSuper";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+// Module 15061 (getActiveTextChannels)
+import { isTextChannel } from "createChannelRecord";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+import truncateOldMessageData from "truncateOldMessageData";
 import { Permissions } from "ME";
 import { ChannelFlags } from "set";
 
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_home/useActiveChannels.tsx");
+const result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/guild_home/useActiveChannels.tsx");
 
-export const getActiveTextChannels = function getActiveTextChannels(outer1_1, items5) {
+export const getActiveTextChannels = function getActiveTextChannels(guildId) {
   let obj;
   let obj2;
-  let tmp = items5;
-  if (items5 === undefined) {
-    let items = [_isNativeReflectConstruct, closure_4, closure_6, closure_5];
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    let items = [ensureGuildLoaded, getUncachedChannelPermissions, truncateOldMessageData, updateUserGuildSettingsInternal];
     tmp = items;
   }
   [, , obj, obj2] = tmp;
   let mutedChannels;
-  const activeChannelIds = obj.getActiveChannelIds(outer1_1);
+  const activeChannelIds = obj.getActiveChannelIds(guildId);
   if (null != activeChannelIds) {
     const _Array = Array;
     items = Array.from(activeChannelIds);
   } else {
     items = [];
   }
-  mutedChannels = obj2.getMutedChannels(outer1_1);
-  const mapped = items.map((channelId) => store.getChannel(channelId));
-  const found = mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
+  mutedChannels = obj2.getMutedChannels(guildId);
+  const mapped = items.map((arg0) => store.getChannel(arg0));
+  const found = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
   return found.filter((hasFlag) => {
-    if (null != hasFlag) {
-      if (hasFlag.hasFlag(outer1_8.ACTIVE_CHANNELS_REMOVED)) {
-        return false;
-      }
+    let hasFlagResult;
+    if (hasFlag != null) {
+      hasFlagResult = hasFlag.hasFlag(outer1_8.ACTIVE_CHANNELS_REMOVED);
     }
-    if (set(hasFlag.type)) {
+    if (hasFlagResult) {
+      return false;
+    } else if (set(hasFlag.type)) {
       if (set.has(hasFlag.id)) {
         return false;
       } else {
         if (null != hasFlag.parent_id) {
-          if (set.has(hasFlag.parent_id)) {
+          if (obj.has(hasFlag.parent_id)) {
             return false;
           }
         }
         if (closure_1.can(outer1_7.VIEW_CHANNEL, hasFlag)) {
           const channel = store.getChannel(hasFlag.parent_id);
-          let tmp7 = !hasFlag.isThread() || null == channel || null == channel;
-          if (!tmp7) {
-            tmp7 = !channel.hasFlag(outer1_8.ACTIVE_CHANNELS_REMOVED);
+          const isThreadResult = hasFlag.isThread();
+          let tmp8 = !isThreadResult;
+          if (isThreadResult) {
+            tmp8 = null == channel;
           }
-          return tmp7;
+          if (!tmp8) {
+            let hasFlagResult1;
+            if (channel != null) {
+              hasFlagResult1 = channel.hasFlag(outer1_8.ACTIVE_CHANNELS_REMOVED);
+            }
+            tmp8 = !hasFlagResult1;
+          }
+          return tmp8;
         } else {
           return false;
         }
       }
+      obj = set;
     } else {
       return false;
     }

@@ -1,34 +1,37 @@
-// Module ID: 6235
-// Function ID: 55732
+// Module ID: 6255
+// Function ID: 6256
 // Name: useUserIdsForLinkStatus
-// Dependencies: [31, 1850, 5775, 5776, 624, 6236, 6237, 5837, 2]
-// Exports: getActiveLinkUserIds, useAcceptedRequestsCount, useActiveLinkUsers, useActivityWindowTimeStamp, useHasActiveLinks, useHasActiveParentLinks, useHasMaxConnections, useLinkTimestampText, usePendingRequestCount, useRequiresParentalConsent, useUserQRLinkUrl
+// Dependencies: [19, 1874, 5793, 5794, 647, 6256, 6257, 5855, 2]
+// Exports: getActiveLinkUserIds, useAcceptedRequestsCount, useActiveLinkUserIds, useActiveLinkUsers, useActivityWindowTimeStamp, useHasActiveLinks, useHasActiveParentLinks, useHasMaxConnections, useLinkTimestampText, usePendingRequestCount, useRequiresParentalConsent, useUserIdsForLinkStatus, useUserQRLinkUrl, useUsersForLinkStatus
 
-// Module 6235 (useUserIdsForLinkStatus)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 6255 (useUserIdsForLinkStatus)
+import noop from "noop";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import items from "items";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-function useUserIdsForLinkStatus(ACTIVE) {
-  const _require = ACTIVE;
-  const items = [closure_5];
-  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_5.getLinkedUsers());
-  const items1 = [stateFromStores, ACTIVE];
+({ ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER: closure_6, FAMILY_CENTER_REQUEST_QR_CODE_URL: error, MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: metroImportAll, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: c9, PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER: c10, UserLinkStatus: unpackModuleId, UserLinkType: closure_12 } = items);
+let result = require("freshTeenActivityWithMap").fileFinishedImporting("modules/parent_tools/hooks/useUserLinks.tsx");
+
+export const useUserIdsForLinkStatus = function useUserIdsForLinkStatus(arg0) {
+  const _require = arg0;
+  const items = [freshTeenActivityWithMap];
+  const stateFromStores = _require(647).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  const items1 = [stateFromStores, arg0];
   return React.useMemo(() => {
     const values = Object.values(stateFromStores);
     const found = values.filter((link_status) => {
       let tmp = null != link_status;
       if (tmp) {
-        tmp = link_status.link_status === outer1_0;
+        tmp = link_status.link_status === closure_0;
       }
       return tmp;
     });
@@ -40,28 +43,64 @@ function useUserIdsForLinkStatus(ACTIVE) {
     const mapped = sorted.map((user_id) => user_id.user_id);
     return mapped.filter((arg0) => null != arg0);
   }, items1);
-}
-function useUsersForLinkStatus(ACTIVE) {
-  const _require = useUserIdsForLinkStatus(ACTIVE);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStoresArray = _require(624).useStateFromStoresArray(items, () => closure_0.map((arg0) => outer2_4.getUser(arg0)));
+};
+export const useUsersForLinkStatus = function useUsersForLinkStatus(PENDING) {
+  let _require = PENDING;
+  const items = [freshTeenActivityWithMap];
+  const stateFromStores = _require(647).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  const items1 = [stateFromStores, PENDING];
+  _require = React.useMemo(() => {
+    const values = Object.values(stateFromStores);
+    const found = values.filter((link_status) => {
+      let tmp = null != link_status;
+      if (tmp) {
+        tmp = link_status.link_status === closure_0;
+      }
+      return tmp;
+    });
+    const sorted = found.sort((updated_at, updated_at2) => {
+      const time = new Date(updated_at.updated_at).getTime();
+      const date = new Date(updated_at.updated_at);
+      return time - new Date(updated_at2.updated_at).getTime();
+    });
+    const mapped = sorted.map((user_id) => user_id.user_id);
+    return mapped.filter((arg0) => null != arg0);
+  }, items1);
+  const obj = _require(647);
+  const items2 = [mergeGuildAvatar];
+  const stateFromStoresArray = _require(647).useStateFromStoresArray(items2, () => closure_0.map((arg0) => user.getUser(arg0)));
   return stateFromStoresArray.filter((arg0) => null != arg0);
-}
-function useActiveLinkUserIds() {
-  return useUserIdsForLinkStatus(constants.ACTIVE);
-}
-({ ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER: closure_6, FAMILY_CENTER_REQUEST_QR_CODE_URL: closure_7, MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: closure_8, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: closure_9, PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER: closure_10, UserLinkStatus: closure_11, UserLinkType: closure_12 } = items);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/parent_tools/hooks/useUserLinks.tsx");
-
-export { useUserIdsForLinkStatus };
-export { useUsersForLinkStatus };
-export { useActiveLinkUserIds };
+};
+export const useActiveLinkUserIds = function useActiveLinkUserIds() {
+  const ACTIVE = constants.ACTIVE;
+  let stateFromStores;
+  const items = [freshTeenActivityWithMap];
+  stateFromStores = ACTIVE(647).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  const items1 = [stateFromStores, ACTIVE];
+  return React.useMemo(() => {
+    const values = Object.values(stateFromStores);
+    const found = values.filter((link_status) => {
+      let tmp = null != link_status;
+      if (tmp) {
+        tmp = link_status.link_status === closure_0;
+      }
+      return tmp;
+    });
+    const sorted = found.sort((updated_at, updated_at2) => {
+      const time = new Date(updated_at.updated_at).getTime();
+      const date = new Date(updated_at.updated_at);
+      return time - new Date(updated_at2.updated_at).getTime();
+    });
+    const mapped = sorted.map((user_id) => user_id.user_id);
+    return mapped.filter((arg0) => null != arg0);
+  }, items1);
+};
 export const getActiveLinkUserIds = function getActiveLinkUserIds() {
   const values = Object.values(linkedUsers.getLinkedUsers());
   const found = values.filter((link_status) => {
     let tmp = null != link_status;
     if (tmp) {
-      tmp = link_status.link_status === outer1_11.ACTIVE;
+      tmp = link_status.link_status === constants.ACTIVE;
     }
     return tmp;
   });
@@ -74,35 +113,82 @@ export const getActiveLinkUserIds = function getActiveLinkUserIds() {
   return mapped.filter((arg0) => null != arg0);
 };
 export const useActiveLinkUsers = function useActiveLinkUsers() {
-  return useUsersForLinkStatus(constants.ACTIVE);
+  const ACTIVE = constants.ACTIVE;
+  let _require = ACTIVE;
+  let stateFromStores;
+  const items = [freshTeenActivityWithMap];
+  stateFromStores = _require(647).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  const items1 = [stateFromStores, ACTIVE];
+  _require = React.useMemo(() => {
+    const values = Object.values(stateFromStores);
+    const found = values.filter((link_status) => {
+      let tmp = null != link_status;
+      if (tmp) {
+        tmp = link_status.link_status === closure_0;
+      }
+      return tmp;
+    });
+    const sorted = found.sort((updated_at, updated_at2) => {
+      const time = new Date(updated_at.updated_at).getTime();
+      const date = new Date(updated_at.updated_at);
+      return time - new Date(updated_at2.updated_at).getTime();
+    });
+    const mapped = sorted.map((user_id) => user_id.user_id);
+    return mapped.filter((arg0) => null != arg0);
+  }, items1);
+  const obj = _require(647);
+  const items2 = [mergeGuildAvatar];
+  const stateFromStoresArray = _require(647).useStateFromStoresArray(items2, () => closure_0.map((arg0) => user.getUser(arg0)));
+  return stateFromStoresArray.filter((arg0) => null != arg0);
 };
 export const useHasActiveLinks = function useHasActiveLinks() {
-  return useActiveLinkUserIds().length > 0;
+  const ACTIVE = constants.ACTIVE;
+  let stateFromStores;
+  const items = [freshTeenActivityWithMap];
+  stateFromStores = ACTIVE(647).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  const items1 = [stateFromStores, ACTIVE];
+  return React.useMemo(() => {
+    const values = Object.values(stateFromStores);
+    const found = values.filter((link_status) => {
+      let tmp = null != link_status;
+      if (tmp) {
+        tmp = link_status.link_status === closure_0;
+      }
+      return tmp;
+    });
+    const sorted = found.sort((updated_at, updated_at2) => {
+      const time = new Date(updated_at.updated_at).getTime();
+      const date = new Date(updated_at.updated_at);
+      return time - new Date(updated_at2.updated_at).getTime();
+    });
+    const mapped = sorted.map((user_id) => user_id.user_id);
+    return mapped.filter((arg0) => null != arg0);
+  }, items1).length > 0;
 };
 export const useHasActiveParentLinks = function useHasActiveParentLinks() {
-  const items = [closure_5];
-  stateFromStores = stateFromStores(624).useStateFromStores(items, () => outer1_5.getLinkedUsers());
+  const items = [freshTeenActivityWithMap];
+  stateFromStores = stateFromStores(647).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
   const items1 = [stateFromStores];
   return React.useMemo(() => {
     const values = Object.values(stateFromStores);
     return values.some((link_status) => {
       let tmp = null != link_status;
       if (tmp) {
-        tmp = link_status.link_status === outer2_11.ACTIVE;
+        tmp = link_status.link_status === constants.ACTIVE;
       }
       if (tmp) {
-        tmp = link_status.link_type === outer2_12.PARENT;
+        tmp = link_status.link_type === constants2.PARENT;
       }
       return tmp;
     });
   }, items1);
 };
 export const useUserQRLinkUrl = function useUserQRLinkUrl() {
-  const items = [closure_5];
-  const stateFromStores = require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => outer1_5.getLinkCode());
-  const obj = require(624) /* defaultAreStatesEqual */;
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores1 = require(624) /* defaultAreStatesEqual */.useStateFromStores(items1, () => outer1_4.getCurrentUser());
+  const items = [freshTeenActivityWithMap];
+  const stateFromStores = require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => linkCode.getLinkCode());
+  const obj = require(647) /* defaultAreStatesEqual */;
+  const items1 = [mergeGuildAvatar];
+  const stateFromStores1 = require(647) /* defaultAreStatesEqual */.useStateFromStores(items1, () => currentUser.getCurrentUser());
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;
@@ -113,13 +199,35 @@ export const useUserQRLinkUrl = function useUserQRLinkUrl() {
   return tmp3;
 };
 export const useHasMaxConnections = function useHasMaxConnections() {
-  return useActiveLinkUserIds().length >= (importDefault(6236)() ? closure_8 : closure_9);
+  const ACTIVE = constants.ACTIVE;
+  let stateFromStores;
+  const tmp = stateFromStores(6256)();
+  const items = [freshTeenActivityWithMap];
+  stateFromStores = ACTIVE(647).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  const items1 = [stateFromStores, ACTIVE];
+  return React.useMemo(() => {
+    const values = Object.values(stateFromStores);
+    const found = values.filter((link_status) => {
+      let tmp = null != link_status;
+      if (tmp) {
+        tmp = link_status.link_status === closure_0;
+      }
+      return tmp;
+    });
+    const sorted = found.sort((updated_at, updated_at2) => {
+      const time = new Date(updated_at.updated_at).getTime();
+      const date = new Date(updated_at.updated_at);
+      return time - new Date(updated_at2.updated_at).getTime();
+    });
+    const mapped = sorted.map((user_id) => user_id.user_id);
+    return mapped.filter((arg0) => null != arg0);
+  }, items1).length >= (tmp ? closure_8 : closure_9);
 };
 export const usePendingRequestCount = function usePendingRequestCount() {
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = stateFromStores(624).useStateFromStores(items, () => outer1_4.getCurrentUser());
-  stateFromStores(624);
-  [][0] = closure_5;
+  const items = [mergeGuildAvatar];
+  stateFromStores = stateFromStores(647).useStateFromStores(items, () => currentUser.getCurrentUser());
+  stateFromStores(647);
+  [][0] = freshTeenActivityWithMap;
   let num = 0;
   if (null != stateFromStores) {
     const _Object = Object;
@@ -138,28 +246,52 @@ export const usePendingRequestCount = function usePendingRequestCount() {
   return num;
 };
 export const useRequiresParentalConsent = function useRequiresParentalConsent(id) {
-  const items = [closure_5];
+  const items = [freshTeenActivityWithMap];
   let tmp = null != id;
   if (tmp) {
-    const tmp2 = obj.useStateFromStores(items, () => outer1_5.getLinkedUsers())[id];
-    let prop;
-    if (null != tmp2) {
-      prop = tmp2.teen_requires_parental_consent;
+    const tmp2 = obj.useStateFromStores(items, () => linkedUsers.getLinkedUsers())[id];
+    let flag;
+    if (tmp2 != null) {
+      flag = tmp2.teen_requires_parental_consent;
     }
-    tmp = null != prop && prop;
-    const tmp4 = null != prop && prop;
+    if (flag == null) {
+      flag = false;
+    }
+    tmp = flag;
   }
   return tmp;
 };
 export const useAcceptedRequestsCount = function useAcceptedRequestsCount() {
-  return useActiveLinkUserIds().length;
+  const ACTIVE = constants.ACTIVE;
+  let stateFromStores;
+  const items = [freshTeenActivityWithMap];
+  stateFromStores = ACTIVE(647).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
+  const items1 = [stateFromStores, ACTIVE];
+  return React.useMemo(() => {
+    const values = Object.values(stateFromStores);
+    const found = values.filter((link_status) => {
+      let tmp = null != link_status;
+      if (tmp) {
+        tmp = link_status.link_status === closure_0;
+      }
+      return tmp;
+    });
+    const sorted = found.sort((updated_at, updated_at2) => {
+      const time = new Date(updated_at.updated_at).getTime();
+      const date = new Date(updated_at.updated_at);
+      return time - new Date(updated_at2.updated_at).getTime();
+    });
+    const mapped = sorted.map((user_id) => user_id.user_id);
+    return mapped.filter((arg0) => null != arg0);
+  }, items1).length;
 };
 export const useActivityWindowTimeStamp = function useActivityWindowTimeStamp(activityWindowTimestampFormatter) {
   const _require = activityWindowTimestampFormatter;
-  let closure_1 = _require(6237).useSelectedTeenId();
-  const obj = _require(6237);
-  const items = [closure_5];
-  const stateFromStores = _require(624).useStateFromStores(items, () => {
+  let closure_1 = _require(6257).useSelectedTeenId();
+  const obj = _require(6257);
+  const tmp = _require;
+  const items = [freshTeenActivityWithMap];
+  const stateFromStores = _require(647).useStateFromStores(items, () => {
     let rangeStartTimestamp = null;
     if (null != closure_1) {
       rangeStartTimestamp = outer1_5.getRangeStartTimestamp();
@@ -170,20 +302,20 @@ export const useActivityWindowTimeStamp = function useActivityWindowTimeStamp(ac
   if (null != stateFromStores) {
     const _Date = Date;
     const date = new Date(stateFromStores);
-    result = _require(5837).formatUserActivityTimestamp(date.getTime(), () => closure_0, 7);
-    const obj3 = _require(5837);
+    result = tmp(5855).formatUserActivityTimestamp(date.getTime(), () => closure_0, 7);
+    const tmpResult = tmp(5855);
   }
   return result;
 };
 export const useLinkTimestampText = function useLinkTimestampText(id, status) {
   const _require = id;
-  const items = [closure_5];
-  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_5.getLinkTimestamp(closure_0));
+  const items = [freshTeenActivityWithMap];
+  const stateFromStores = _require(647).useStateFromStores(items, () => outer1_5.getLinkTimestamp(closure_0));
   if (null == stateFromStores) {
     return null;
   } else {
     const _Date = Date;
-    _require(5837).formatLinkTimestamp(Date.parse(stateFromStores), status === constants.PENDING ? closure_10 : closure_6);
-    const obj2 = _require(5837);
+    _require(5855).formatLinkTimestamp(Date.parse(stateFromStores), status === constants.PENDING ? closure_10 : closure_6);
+    const tmpResult = _require(5855);
   }
 };

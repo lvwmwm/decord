@@ -1,19 +1,20 @@
-// Module ID: 15429
-// Function ID: 117525
-// Dependencies: [31, 10081, 9104, 9076, 33, 4165, 11445, 10079, 10080, 11436, 15430, 4695, 1212, 9586, 2]
+// Module ID: 15462
+// Function ID: 15463
+// Dependencies: [19, 10102, 9128, 9100, 21, 4189, 11469, 10100, 10101, 11460, 15463, 4717, 1236, 9607, 2]
 
-// Module 15429
-import importAllResult from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { setIsChannelDetailsSearchActive as closure_5 } from "createChannelState";
+// Module 15462
+import importAllResult from "noop";
+import prototype from "prototype";
+import { setIsChannelDetailsSearchActive as closure_5 } from "useChannelDetailsStore";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let obj = {};
+let c3 = importAllResult;
+let obj = { back: null };
 obj = { justifyContent: "center", height: require("SEARCH_BAR_HEIGHT").SEARCH_BAR_HEIGHT, paddingStart: require("ChannelDetailsNavigatorScreens").CHANNEL_DETAILS_MARGIN, paddingEnd: 8 };
-obj.back = obj;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
+obj[0] = obj;
+let closure_7 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(importAllResult.forwardRef((channelId, ref) => {
   let guildId;
   let onSuggestionsLayoutMesure;
@@ -33,8 +34,8 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((channelId, r
   channelDetailsSearchContext = obj.useChannelDetailsSearchContext(channelId, guildId);
   const items = [channelId, channelDetailsSearchContext];
   const effect = callback.useEffect(() => () => {
-    let obj = onBackPress(channelDetailsSearchContext[8]);
-    obj = { searchContext: outer1_2 };
+    let obj = outer1_1(outer1_2[8]);
+    obj = { searchContext: closure_2 };
     obj.trackSearchClosed(obj);
   }, items);
   const items1 = [channelDetailsSearchContext];
@@ -58,20 +59,21 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((channelId, r
       callback1();
     }
   }, items3);
-  obj = { ref, searchContext: channelDetailsSearchContext, onSuggestionsLayoutMesure, suggestionsDismissed, setSuggestionsDismissed };
-  let tmp9 = null;
+  obj = { ref, searchContext: channelDetailsSearchContext, onSuggestionsLayoutMesure, suggestionsDismissed, setSuggestionsDismissed, backButton: null };
+  let tmp9Result = null;
   const tmp = callback();
-  const tmp7 = jsx;
   if (flag) {
-    obj = { accessibilityRole: "button", onPress: callback2, style: tmp.back };
-    const intl = channelId(channelDetailsSearchContext[12]).intl;
-    obj.accessibilityLabel = intl.string(channelId(channelDetailsSearchContext[12]).t["13/7kX"]);
-    obj.children = jsx(channelId(channelDetailsSearchContext[13]).ChevronLargeLeftIcon, { size: "sm", color: "interactive-text-default" });
-    tmp9 = jsx(channelId(channelDetailsSearchContext[11]).PressableOpacity, { accessibilityRole: "button", onPress: callback2, style: tmp.back });
+    obj = { accessibilityRole: "button", onPress: null, style: null, accessibilityLabel: null, children: null };
+    obj[1] = callback2;
+    obj[2] = tmp.back;
+    const intl = tmp2(tmp3[12]).intl;
+    obj[3] = intl.string(tmp2(tmp3[12]).t["13/7kX"]);
+    obj[4] = tmp9(tmp2(tmp3[13]).ChevronLargeLeftIcon, { size: "sm", color: "interactive-text-default" });
+    tmp9Result = tmp9(tmp2(tmp3[11]).PressableOpacity, obj);
   }
-  obj.backButton = tmp9;
-  return tmp7(onBackPress(channelDetailsSearchContext[10]), obj);
+  obj[5] = tmp9Result;
+  return jsx(onBackPress(channelDetailsSearchContext[10]), { ref, searchContext: channelDetailsSearchContext, onSuggestionsLayoutMesure, suggestionsDismissed, setSuggestionsDismissed, backButton: null });
 }));
-const result = require("createChannelState").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsSearchBar.tsx");
+const result = require("useChannelDetailsStore").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsSearchBar.tsx");
 
 export default memoResult;

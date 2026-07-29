@@ -1,34 +1,33 @@
-// Module ID: 1819
-// Function ID: 19997
-// Dependencies: [3, 478, 2]
+// Module ID: 1843
+// Function ID: 1844
+// Dependencies: [3, 501, 2]
 
-// Module 1819
-import importDefaultResult from "timestamp";
-
+// Module 1843
 const require = arg1;
-importDefaultResult = new importDefaultResult("KeyboardStateDebugging");
-const result = require("set").fileFinishedImporting("modules/keyboard/KeyboardStateDebugging.tsx");
-
-export default {
-  channelSafeAreaBottomLayoutHeightChanged(layoutHeight) {
-    let obj = require(478) /* isWindows */;
+let obj = {
+  channelSafeAreaBottomLayoutHeightChanged(arg0) {
+    let obj = require(501) /* PlatformTypes */;
     if (!obj.isIOS()) {
-      obj = { layoutHeight };
-      importDefaultResult.info("ChannelSafeAreaBottom layout height changed.", obj);
+      obj = { layoutHeight: null };
+      obj[0] = arg0;
+      tmp2.info("ChannelSafeAreaBottom layout height changed.", obj);
     }
   },
-  channelSafeAreaBottomLayoutHeightMismatch(layoutHeight, reportedKeyboardHeight) {
-    let obj = require(478) /* isWindows */;
+  channelSafeAreaBottomLayoutHeightMismatch(arg0, arg1) {
+    let obj = require(501) /* PlatformTypes */;
     if (!obj.isIOS()) {
-      obj = { layoutHeight, reportedKeyboardHeight };
-      importDefaultResult.warn("ChannelSafeAreaBottom layout height mismatch.", obj);
+      obj = { layoutHeight: null, reportedKeyboardHeight: null };
+      obj[0] = arg0;
+      obj[1] = arg1;
+      arg1.warn("ChannelSafeAreaBottom layout height mismatch.", obj);
     }
   },
   keyboardControllerKeyboardWillShow(height) {
-    let obj = require(478) /* isWindows */;
+    let obj = require(501) /* PlatformTypes */;
     if (!obj.isIOS()) {
-      obj = { height };
-      importDefaultResult.info("KeyboardController keyboardWillShow.", obj);
+      obj = { height: null };
+      obj[0] = height;
+      tmp2.info("KeyboardController keyboardWillShow.", obj);
     }
   },
   keyboardControllerKeyboardDidShow(height) {
@@ -36,27 +35,31 @@ export default {
     if (arg1 === undefined) {
       flag = false;
     }
-    let obj = require(478) /* isWindows */;
+    let obj = require(501) /* PlatformTypes */;
     if (!obj.isIOS()) {
-      obj = { height, rootProvider: flag };
-      importDefaultResult.info("KeyboardController keyboardDidShow.", obj);
+      obj = { height: null, rootProvider: null };
+      obj[0] = height;
+      obj[1] = flag;
+      tmp2.info("KeyboardController keyboardDidShow.", obj);
     }
   },
-  keyboardControllerWorkletEvent(arg0, height) {
+  keyboardControllerWorkletEvent(arg0, arg1) {
     let flag = arg2;
     if (arg2 === undefined) {
       flag = false;
     }
-    let obj = require(478) /* isWindows */;
+    let obj = require(501) /* PlatformTypes */;
     if (!obj.isIOS()) {
       const _HermesInternal = HermesInternal;
-      obj = { height, rootProvider: flag };
-      importDefaultResult.info("KeyboardController worklet " + arg0 + ".", obj);
+      obj = { height: null, rootProvider: null };
+      obj[0] = arg1;
+      obj[1] = flag;
+      arg1.info("KeyboardController worklet " + arg0 + ".", obj);
     }
   },
   keyboardControllerKeyboardWillHide() {
     if (!obj.isIOS()) {
-      importDefaultResult.info("KeyboardController keyboardWillHide.");
+      tmp2.info("KeyboardController keyboardWillHide.");
     }
   },
   keyboardControllerKeyboardDidHide() {
@@ -64,29 +67,37 @@ export default {
     if (arg0 === undefined) {
       flag = false;
     }
-    let obj = require(478) /* isWindows */;
+    let obj = require(501) /* PlatformTypes */;
     if (!obj.isIOS()) {
-      obj = { rootProvider: flag };
-      importDefaultResult.info("KeyboardController keyboardDidHide.", obj);
+      obj = { rootProvider: null };
+      obj[0] = flag;
+      tmp2.info("KeyboardController keyboardDidHide.", obj);
     }
   },
   reactNativeKeyboardDidShow(height, KeyboardUIStore) {
-    let obj = require(478) /* isWindows */;
+    let obj = require(501) /* PlatformTypes */;
     if (!obj.isIOS()) {
-      obj = { height, location: KeyboardUIStore };
-      importDefaultResult.info("ReactNativeKeyboard didShow.", obj);
+      obj = { height: null, location: null };
+      obj[0] = height;
+      obj[1] = KeyboardUIStore;
+      KeyboardUIStore.info("ReactNativeKeyboard didShow.", obj);
     }
   },
   reactNativeKeyboardDidHide(KeyboardUIStore) {
-    let obj = require(478) /* isWindows */;
+    let obj = require(501) /* PlatformTypes */;
     if (!obj.isIOS()) {
-      obj = { location: KeyboardUIStore };
-      importDefaultResult.info("ReactNativeKeyboard didHide.", obj);
+      obj = { location: null };
+      obj[0] = KeyboardUIStore;
+      tmp2.info("ReactNativeKeyboard didHide.", obj);
     }
   },
   markPotentialBadState() {
     if (!obj.isIOS()) {
-      importDefaultResult.warn("Marking potential bad state from user, check logs above.");
+      tmp2.warn("Marking potential bad state from user, check logs above.");
     }
   }
 };
+const tmp2 = new require("timestamp")("KeyboardStateDebugging");
+const result = require("set").fileFinishedImporting("modules/keyboard/KeyboardStateDebugging.tsx");
+
+export default obj;

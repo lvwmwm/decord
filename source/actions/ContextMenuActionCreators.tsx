@@ -1,59 +1,54 @@
-// Module ID: 5166
-// Function ID: 44613
-// Name: open
-// Dependencies: [653, 686, 5167, 477, 5170, 2]
+// Module ID: 5188
+// Function ID: 5189
+// Name: openContextMenu
+// Dependencies: [676, 709, 5189, 500, 5192, 2]
 // Exports: closeContextMenu, openContextMenuLazy
 
-// Module 5166 (open)
+// Module 5188 (openContextMenu)
 import { AppContext } from "ME";
 
-function open(contextMenu) {
-  let obj = importDefault(686);
-  obj = { type: "CONTEXT_MENU_OPEN", contextMenu };
-  obj.dispatch(obj);
-}
-function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) {
+function openContextMenu(stopPropagation, arg1, enableSpellCheck, arg3) {
   let bottom;
   let left;
   let pageX;
   let pageY;
   stopPropagation.stopPropagation();
   if (null == stopPropagation.currentTarget.contains) {
-    pageX = 0;
     pageY = 0;
+    pageX = 0;
     if ("pageX" in stopPropagation) {
       ({ pageX, pageY } = stopPropagation);
     }
     let sum1 = pageY;
     let tmp3 = pageX;
     if (0 === pageX) {
-      tmp3 = pageX;
       sum1 = pageY;
+      tmp3 = pageX;
       if (0 === pageY) {
         const target = stopPropagation.target;
         let selection;
-        if (null != target) {
+        if (target != null) {
           const defaultView = target.ownerDocument.defaultView;
-          if (null != defaultView) {
+          if (defaultView != null) {
             selection = defaultView.getSelection();
           }
         }
-        left = pageX;
         bottom = pageY;
+        left = pageX;
         if (null != selection) {
-          left = pageX;
           bottom = pageY;
+          left = pageX;
           if (selection.rangeCount > 0) {
-            left = pageX;
             bottom = pageY;
+            left = pageX;
             if (null != target) {
               const rangeAt = selection.getRangeAt(0);
-              left = pageX;
               bottom = pageY;
+              left = pageX;
               if (target.contains(rangeAt.commonAncestorContainer)) {
                 const boundingClientRect = rangeAt.getBoundingClientRect();
-                left = pageX;
                 bottom = pageY;
+                left = pageX;
                 if (0 !== boundingClientRect.height) {
                   ({ left, bottom } = boundingClientRect);
                 }
@@ -64,14 +59,14 @@ function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) 
         sum1 = bottom;
         tmp3 = left;
         if (0 === left) {
-          tmp3 = left;
           sum1 = bottom;
+          tmp3 = left;
           if (0 === bottom) {
             let size;
-            if (null != target) {
+            if (target != null) {
               size = target.getBoundingClientRect();
             }
-            if (null == size) {
+            if (size == null) {
               size = {};
             }
             const left2 = size.left;
@@ -101,54 +96,63 @@ function openContextMenu(stopPropagation, render, enableSpellCheck, renderLazy) 
         }
       }
     }
-    let obj = { render, renderLazy };
+    let obj = { render: null, renderLazy: null, target: null, rect: null, config: null };
+    obj[0] = arg1;
+    obj[1] = arg3;
     let currentTarget2 = stopPropagation.target;
-    if (null == currentTarget2) {
+    if (currentTarget2 == null) {
       currentTarget2 = stopPropagation.currentTarget;
     }
-    obj.target = currentTarget2;
+    obj[2] = currentTarget2;
     const _DOMRect = DOMRect;
     const dOMRect = new DOMRect(tmp3, sum1, 0, 0);
-    obj.rect = dOMRect;
-    obj = {};
-    let APP = obj(5167).getCurrentlyInteractingAppContext();
-    if (null == APP) {
+    obj[3] = dOMRect;
+    let APP = obj(5189).getCurrentlyInteractingAppContext();
+    if (APP == null) {
       APP = AppContext.APP;
     }
-    obj.context = APP;
+    obj = { context: null };
+    obj[0] = APP;
     const merged = Object.assign(enableSpellCheck);
-    obj.config = obj;
+    obj[4] = obj;
     let nativeEvent = stopPropagation;
     if ("nativeEvent" in stopPropagation) {
       nativeEvent = stopPropagation.nativeEvent;
     }
-    if (null != enableSpellCheck) {
-      if (enableSpellCheck.enableSpellCheck) {
-        if (obj5.isDesktop()) {
-          if (nativeEvent.isTrusted) {
-            let closure_1 = obj(5170).addResultListener(() => {
-              callback();
-              outer1_4(obj);
-            });
-            const obj6 = obj(5170);
-          }
+    enableSpellCheck = undefined;
+    if (enableSpellCheck != null) {
+      enableSpellCheck = enableSpellCheck.enableSpellCheck;
+    }
+    if (enableSpellCheck) {
+      let tmp16Result = tmp16(500);
+      if (tmp16Result.isDesktop()) {
+        if (nativeEvent.isTrusted) {
+          tmp16Result = tmp16(5192);
+          const importDefault = tmp16Result.addResultListener(() => {
+            callback();
+            let obj = callback(outer1_2[1]);
+            obj = { type: "CONTEXT_MENU_OPEN", contextMenu: obj };
+            obj.dispatch(obj);
+          });
         }
-        obj5 = obj(477);
       }
     }
     stopPropagation.preventDefault();
-    open(obj);
-    const obj4 = obj(5167);
+    const obj3 = obj(5189);
+    const obj1 = { type: "CONTEXT_MENU_OPEN", contextMenu: null };
+    obj1[1] = obj;
+    importDefault(709).dispatch(obj1);
+    const obj6 = importDefault(709);
   } else {
     const currentTarget = stopPropagation.currentTarget;
   }
 }
-const result = require("getWindowDispatchForElement").fileFinishedImporting("actions/ContextMenuActionCreators.tsx");
+const result = require("context").fileFinishedImporting("actions/ContextMenuActionCreators.tsx");
 
 export function closeContextMenu() {
 
 }
 export { openContextMenu };
-export const openContextMenuLazy = function openContextMenuLazy(stopPropagation, renderLazy, enableSpellCheck) {
-  openContextMenu(stopPropagation, undefined, enableSpellCheck, renderLazy);
+export const openContextMenuLazy = function openContextMenuLazy(stopPropagation, arg1, enableSpellCheck) {
+  openContextMenu(stopPropagation, undefined, enableSpellCheck, arg1);
 };

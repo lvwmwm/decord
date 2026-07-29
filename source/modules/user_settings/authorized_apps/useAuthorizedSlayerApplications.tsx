@@ -1,13 +1,13 @@
-// Module ID: 14639
-// Function ID: 111544
+// Module ID: 14664
+// Function ID: 14665
 // Name: useAuthorizedSlayerApplications
-// Dependencies: [31, 5101, 566, 10871, 5505, 2]
+// Dependencies: [19, 5123, 589, 10895, 5523, 2]
 // Exports: default
 
-// Module 14639 (useAuthorizedSlayerApplications)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { FetchState } from "_isNativeReflectConstruct";
+// Module 14664 (useAuthorizedSlayerApplications)
+import noop from "noop";
+import recomputeFromAppTokens from "recomputeFromAppTokens";
+import { FetchState } from "recomputeFromAppTokens";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/user_settings/authorized_apps/useAuthorizedSlayerApplications.tsx");
@@ -15,10 +15,10 @@ const result = require("initialize").fileFinishedImporting("modules/user_setting
 export default function useAuthorizedSlayerApplications(arg0, arg1) {
   const _require = arg0;
   let closure_1 = arg1;
+  let items = [recomputeFromAppTokens];
+  const stateFromStores = _require(stateFromStores1[2]).useStateFromStores(items, () => fetchState.getFetchState());
   let obj = _require(stateFromStores1[2]);
-  let items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getFetchState());
-  const items1 = [_isNativeReflectConstruct];
+  const items1 = [recomputeFromAppTokens];
   stateFromStores1 = _require(stateFromStores1[2]).useStateFromStores(items1, () => {
     if (closure_0) {
       let newestTokensForNonChildrenApplications = obj.getNewestTokensForNonChildrenApplications();
@@ -29,11 +29,11 @@ export default function useAuthorizedSlayerApplications(arg0, arg1) {
   });
   const items2 = [stateFromStores1];
   const items3 = [arg1];
-  const memo = React.useMemo(() => {
+  const slayerSdkApplications = React.useMemo(() => {
     if (null == stateFromStores1) {
       let items = [];
     } else {
-      const found = stateFromStores1.filter((application) => callback(stateFromStores1[3]).isSocialLayerSDKAuthorization(application.application, application.scopes));
+      const found = stateFromStores1.filter((application) => callback(table[3]).isSocialLayerSDKAuthorization(application.application, application.scopes));
       items = found.map((application) => application.application);
     }
     return items;
@@ -44,16 +44,13 @@ export default function useAuthorizedSlayerApplications(arg0, arg1) {
       const obj = callback(stateFromStores1[4]);
     }
   }, items3);
-  obj = {};
-  let tmp4 = stateFromStores !== FetchState.FETCHED;
-  if (tmp4) {
+  let showLoadingIndicator = stateFromStores !== FetchState.FETCHED;
+  if (showLoadingIndicator) {
     let tmp6 = null == stateFromStores1;
     if (!tmp6) {
       tmp6 = 0 === stateFromStores1.length;
     }
-    tmp4 = tmp6;
+    showLoadingIndicator = tmp6;
   }
-  obj.showLoadingIndicator = tmp4;
-  obj.slayerSdkApplications = memo;
-  return obj;
+  return { showLoadingIndicator, slayerSdkApplications };
 };

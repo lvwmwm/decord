@@ -1,85 +1,90 @@
-// Module ID: 12204
-// Function ID: 95411
+// Module ID: 12228
+// Function ID: 12229
 // Name: ActionSheetBackdropToast
-// Dependencies: [31, 27, 5222, 33, 477, 4165, 689, 1557, 1450, 5118, 4026, 4166, 4161, 2]
+// Dependencies: [19, 17, 5244, 21, 500, 4189, 712, 1581, 1474, 5140, 4050, 4190, 4185, 2]
 // Exports: ActionSheetBackdropToast
 
-// Module 12204 (ActionSheetBackdropToast)
-import result from "result";
+// Module 12228 (ActionSheetBackdropToast)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ACTION_SHEET_START_HEIGHT_RATIO as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO";
 import { jsx } from "jsxProd";
 import set from "set";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "ACTION_SHEET_START_HEIGHT_RATIO";
 
+let StyleSheet;
+let c4;
 const require = arg1;
-const View = get_ActivityIndicator.View;
+({ View: c4, StyleSheet } = get_ActivityIndicator);
 set = set.isIOS();
+set = { container: null, toast: null };
 set = {};
-set = {};
-const merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
-set["flex"] = 1;
-set["alignItems"] = "center";
-set["justifyContent"] = "center";
-set.container = set;
-_createForOfIteratorHelperLoose = { position: "absolute", bottom: 16, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_TOAST_BACKGROUND_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, paddingTop: 6, paddingBottom: 8, paddingHorizontal: 16 };
-set.toast = _createForOfIteratorHelperLoose;
-set = _createForOfIteratorHelperLoose.createStyles(set);
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+set.flex = 1;
+set.alignItems = "center";
+set.justifyContent = "center";
+set[0] = set;
+createCacheKey = { position: "absolute", bottom: 16, backgroundColor: require("Themes").colors.MOBILE_TOAST_BACKGROUND_DEFAULT, borderRadius: require("Themes").radii.round, paddingTop: 6, paddingBottom: 8, paddingHorizontal: 16 };
+set[1] = createCacheKey;
+set = createCacheKey.createStyles(set);
 let closure_9 = { code: "function ActionSheetBackdropToastTsx1(){const{isInIOS,isExpanded,maxDynamicContentSize,TOAST_BOTTOM_MARGIN,nonExpandedHeight,ACTION_SHEET_START_HEIGHT_RATIO,TOAST_BOTTOM_GAP,positionDelta,TOAST_ANIMATION_Y_DELTA,opacity}=this.__closure;return{bottom:(isInIOS?isExpanded?maxDynamicContentSize+TOAST_BOTTOM_MARGIN:nonExpandedHeight+TOAST_BOTTOM_MARGIN:isExpanded?maxDynamicContentSize+TOAST_BOTTOM_MARGIN:ACTION_SHEET_START_HEIGHT_RATIO*maxDynamicContentSize+TOAST_BOTTOM_GAP)+ +(1-positionDelta.get())*TOAST_ANIMATION_Y_DELTA,opacity:opacity.get()};}" };
 let result = set.fileFinishedImporting("modules/user_profile/native/ActionSheetBackdropToast.tsx");
 
-export const ActionSheetBackdropToast = function ActionSheetBackdropToast(isExpanded) {
-  isExpanded = isExpanded.isExpanded;
+export const ActionSheetBackdropToast = function ActionSheetBackdropToast(children) {
+  const isExpanded = children.isExpanded;
+  let importDefault;
+  let dependencyMap;
+  let sharedValue;
+  let sharedValue1;
   const tmp = set();
-  const height = importDefault(1450)().height;
+  const height = importDefault(1474)().height;
   let result = height * closure_5;
   importDefault = result;
-  const diff = height - isExpanded(5118).NAV_BAR_HEIGHT_MULTILINE - importDefault(1557)().top;
-  const dependencyMap = diff;
-  let obj = isExpanded(4026);
-  const sharedValue = obj.useSharedValue(0);
-  let obj1 = isExpanded(4026);
-  const sharedValue1 = obj1.useSharedValue(0);
+  const diff = height - isExpanded(5140).NAV_BAR_HEIGHT_MULTILINE - importDefault(1581)().top;
+  dependencyMap = diff;
+  let obj = isExpanded(4050);
+  sharedValue = obj.useSharedValue(0);
+  let obj1 = isExpanded(4050);
+  sharedValue1 = obj1.useSharedValue(0);
   const items = [sharedValue, sharedValue1];
   const effect = sharedValue.useEffect(() => {
-    let obj = isExpanded(diff[10]);
-    obj = { duration: 200 };
-    let Easing = isExpanded(diff[10]).Easing;
-    obj.easing = Easing.in(isExpanded(diff[10]).Easing.ease);
-    let result = sharedValue.set(obj.withDelay(100, isExpanded(diff[11]).withTiming(1, obj)));
-    let obj2 = isExpanded(diff[11]);
-    obj = { duration: 300 };
-    const Easing2 = isExpanded(diff[10]).Easing;
-    obj.easing = Easing2.in(isExpanded(diff[10]).Easing.linear);
-    let result1 = sharedValue1.set(isExpanded(diff[11]).withTiming(1, obj));
+    let obj = isExpanded(_undefined[10]);
+    obj = { duration: 200, easing: null };
+    let Easing = isExpanded(_undefined[10]).Easing;
+    obj[1] = Easing.in(isExpanded(_undefined[10]).Easing.ease);
+    let result = sharedValue.set(obj.withDelay(100, isExpanded(_undefined[11]).withTiming(1, obj)));
+    let obj2 = isExpanded(_undefined[11]);
+    obj = { duration: 300, easing: null };
+    const Easing2 = isExpanded(_undefined[10]).Easing;
+    obj[1] = Easing2.in(isExpanded(_undefined[10]).Easing.linear);
+    let result1 = sharedValue1.set(isExpanded(_undefined[11]).withTiming(1, obj));
     return () => {
-      let obj = isExpanded(diff[10]);
-      const result = outer1_3.set(obj.withDelay(200, isExpanded(diff[11]).withTiming(0)));
-      const obj2 = isExpanded(diff[11]);
-      obj = { duration: 200 };
-      const Easing = isExpanded(diff[10]).Easing;
-      obj.easing = Easing.out(isExpanded(diff[10]).Easing.exp);
-      const result1 = outer1_4.set(isExpanded(diff[11]).withTiming(0, obj));
+      let obj = outer1_0(outer1_2[10]);
+      const result = noop.set(obj.withDelay(200, outer1_0(outer1_2[11]).withTiming(0)));
+      const obj2 = outer1_0(outer1_2[11]);
+      obj = { duration: 200, easing: null };
+      const Easing = outer1_0(outer1_2[10]).Easing;
+      obj[1] = Easing.out(outer1_0(outer1_2[10]).Easing.exp);
+      const result1 = closure_4.set(outer1_0(outer1_2[11]).withTiming(0, obj));
     };
   }, items);
-  let obj2 = isExpanded(4026);
   const fn = function x() {
-    const obj = {};
     if (outer1_7) {
       if (tmp) {
-        let sum = closure_2 + 24;
+        let sum = c2 + 24;
       } else {
-        sum = closure_1 + 24;
+        sum = c1 + 24;
       }
     } else {
       if (tmp) {
-        let sum1 = closure_2 + 24;
+        let sum1 = c2 + 24;
       } else {
-        sum1 = outer1_5 * closure_2 + 46;
+        sum1 = outer1_5 * c2 + 46;
       }
-      obj.bottom = sum1 + 15 * (1 - sharedValue.get());
-      obj.opacity = sharedValue1.get();
+      const obj = { bottom: null, opacity: null };
+      obj[0] = sum1 + 15 * (1 - sharedValue.get());
+      obj[1] = sharedValue1.get();
       return obj;
     }
   };
@@ -87,13 +92,12 @@ export const ActionSheetBackdropToast = function ActionSheetBackdropToast(isExpa
   fn.__closure = obj;
   fn.__workletHash = 9630436597435;
   fn.__initData = closure_9;
-  obj = { style: items1, pointerEvents: "none" };
+  obj = { style: items1, pointerEvents: "none", children: null };
   items1 = [tmp.container];
-  const animatedStyle = obj2.useAnimatedStyle(fn);
-  obj1 = { style: items2 };
+  const animatedStyle = isExpanded(4050).useAnimatedStyle(fn);
+  obj1 = { style: items2, children: null };
   items2 = [tmp.toast, animatedStyle];
-  obj2 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: isExpanded.text };
-  obj1.children = jsx(isExpanded(4161).Text, { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: isExpanded.text });
-  obj.children = jsx(importDefault(4026).View, { style: items2 });
-  return <sharedValue1 style={items1} pointerEvents="none" />;
+  obj1[1] = jsx(isExpanded(4185).Text, { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: children.text });
+  obj[2] = jsx(importDefault(4050).View, { style: items2, children: null });
+  return <sharedValue1 style={items1} pointerEvents="none">{null}</sharedValue1>;
 };

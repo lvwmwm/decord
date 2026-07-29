@@ -1,30 +1,30 @@
-// Module ID: 15949
-// Function ID: 123006
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 27, 1347, 4179, 12763, 4184, 1194, 1348, 3793, 4180, 1850, 4181, 4238, 10016, 10019, 653, 12768, 33, 4165, 10022, 689, 10015, 4979, 4344, 4229, 566, 5550, 4161, 1212, 12007, 5503, 3783, 15940, 1450, 4026, 10580, 10617, 10646, 4695, 15938, 4578, 8402, 480, 6709, 8836, 4354, 5198, 9891, 10440, 5497, 5517, 675, 15906, 4577, 4511, 7656, 15828, 15950, 2]
+// Module ID: 15984
+// Function ID: 15985
+// Name: StreamPreview
+// Dependencies: [5, 32, 19, 17, 1371, 4203, 12785, 4208, 1218, 1372, 3817, 4204, 1874, 4205, 4262, 10038, 10041, 676, 12790, 21, 4189, 10044, 712, 10037, 5001, 4369, 4253, 589, 5568, 4185, 1236, 12031, 5521, 3807, 15975, 1474, 4050, 10604, 10640, 10670, 4717, 15973, 4600, 8426, 503, 6730, 8860, 4379, 5220, 9913, 10464, 5515, 5535, 698, 15941, 4599, 4534, 7679, 15863, 15985, 2]
 
-// Module 15949 (_createForOfIteratorHelperLoose)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import module_7656 from "module_7656";
-import importAllResult from "VoicePanelStreamPreview";
-import { StyleSheet } from "initialize";
-import closure_6 from "_createForOfIteratorHelperLoose";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
-import closure_15 from "_isNativeReflectConstruct";
-import closure_16 from "_isNativeReflectConstruct";
+// Module 15984 (StreamPreview)
+import set from "set";
+import useGetOrFetchApplications from "useGetOrFetchApplications";
+import importAllResult from "jsxProd";
+import { StyleSheet } from "ME";
+import participantFromServer from "participantFromServer";
+import closure_7 from "set";
+import init from "init";
+import reset from "reset";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import handleUpdate from "handleUpdate";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import updateVoiceState from "updateVoiceState";
+import getVoiceStatesForGuild from "getVoiceStatesForGuild";
 import { MODE_CHANGE_PHYSICS } from "VoicePanelModes";
 import { EDGE_GUTTER } from "CARD_SIZE";
 import ME from "ME";
 import { VoiceChannelWarningSurfaces as closure_22 } from "GdmWarningMedium";
-import jsxProd from "getEmbeddedActivityLocationChannelId";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "t";
+import createCacheKey from "createCacheKey";
 
 let closure_19;
 let closure_20;
@@ -33,91 +33,14 @@ let closure_23;
 let closure_24;
 let closure_25;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function StreamPreview(channelId) {
   let stream;
   let voiceState;
   ({ voiceState, stream } = channelId);
   channelId = channelId.channelId;
-  const tmp = callback3();
+  let setFocused;
+  let set;
+  const tmp = callback2();
   const context = importAllResult.useContext(channelId(setFocused[23]));
   setFocused = context.setFocused;
   const items = [channelId, stream, setFocused];
@@ -129,493 +52,609 @@ function StreamPreview(channelId) {
     setFocused(stream(setFocused[26]).encodeStreamKey(stream));
   }, items);
   let obj = stream(setFocused[27]);
-  const items1 = [closure_11];
-  let _isNativeReflectConstruct = obj.useStateFromStores(items1, () => outer1_11.getChannel(channelId));
+  const items1 = [ensureGuildLoaded];
+  set = obj.useStateFromStores(items1, () => outer1_11.getChannel(channelId));
   let obj1 = stream(setFocused[27]);
-  const items2 = [closure_12];
-  const stateFromStores = obj1.useStateFromStores(items2, () => outer1_12.can(outer1_21.CONNECT, _isNativeReflectConstruct));
-  obj = { style: tmp.activityInfoWrapper };
-  obj = { variant: "text-sm/semibold", style: tmp.activityInfoHeader, color: "text-default" };
+  const items2 = [getUncachedChannelPermissions];
+  const stateFromStores = obj1.useStateFromStores(items2, () => outer1_12.can(outer1_21.CONNECT, set));
+  obj = { style: tmp.activityInfoWrapper, children: null };
+  obj = { variant: "text-sm/semibold", style: tmp.activityInfoHeader, color: "text-default", children: null };
   const intl = stream(setFocused[30]).intl;
-  obj1 = {};
   let username = voiceState.nick;
-  if (null == username) {
+  if (username == null) {
     username = voiceState.user.username;
   }
-  obj1.username = username;
-  obj.children = intl.format(stream(setFocused[30]).t.I0mOAs, obj1);
-  const items3 = [callback2(stream(setFocused[29]).Text, obj), ];
-  let obj2 = { style: tmp.previewImageWrapper };
-  const tmp5 = closure_24;
-  const tmp6 = channelId(setFocused[28]);
-  const tmp7 = callback2;
-  obj2.children = callback2(stream(setFocused[31]).VoicePanelStreamPreview, { mode: context.mode, disabled: !stateFromStores, stream, onPress: callback });
-  items3[1] = callback2(channelId(setFocused[28]), obj2);
-  obj.children = items3;
-  return tmp5(tmp6, obj);
+  obj[3] = intl.format(stream(setFocused[30]).t.I0mOAs, { username });
+  const items3 = [closure_23(stream(setFocused[29]).Text, obj), ];
+  obj1 = { style: tmp.previewImageWrapper, children: null };
+  const tmp2 = channelId;
+  const tmp6 = stream;
+  const tmp8 = closure_24;
+  const tmp9 = channelId(setFocused[28]);
+  obj1[1] = closure_23(tmp6(setFocused[31]).VoicePanelStreamPreview, { mode: context.mode, disabled: !stateFromStores, stream, onPress: callback });
+  items3[1] = closure_23(channelId(setFocused[28]), obj1);
+  obj[1] = items3;
+  return tmp8(tmp9, obj);
 }
 function ActivityInfo(activity) {
   activity = activity.activity;
   const analyticsLocations = activity.analyticsLocations;
-  const tmp = callback3();
+  let first;
+  let channelId;
+  let windowDimensions;
+  let importAllResult;
+  let embeddedActivityJoinability;
+  let c7;
+  const tmp = callback2();
   const items = [activity.applicationId];
   first = windowDimensions(analyticsLocations(first[32])(items), 1)[0];
   let obj1 = activity(first[33]);
   const embeddedActivityLocationChannelId = obj1.getEmbeddedActivityLocationChannelId(activity.location);
   const context = importAllResult.useContext(analyticsLocations(first[23]));
-  const channelId = context.channelId;
+  channelId = context.channelId;
   windowDimensions = context.windowDimensions;
-  const tmp4 = windowDimensions(importAllResult.useState(() => activity(first[35]).getWindowDimensions().width - 2 * (outer1_18 + 16)), 2);
-  const first1 = tmp4[0];
+  const tmp7 = windowDimensions(importAllResult.useState(() => activity(first[35]).getWindowDimensions().width - 2 * (closure_18 + 16)), 2);
+  importAllResult = tmp9;
+  const first1 = tmp7[0];
   let obj2 = activity(first[36]);
-  const fn = function l() {
+  const fn = function u() {
     return windowDimensions.get().width;
   };
   fn.__closure = { windowDimensions };
   fn.__workletHash = 16837592262556;
-  fn.__initData = closure_28;
-  const fn2 = function s(arg0, arg1) {
+  fn.__initData = closure_29;
+  const fn2 = function c(arg0, arg1) {
     if (arg0 !== arg1) {
-      activity(first[36]).runOnJS(closure_5)(arg0 - 2 * (outer1_18 + 16));
+      activity(first[36]).runOnJS(c5)(arg0 - 2 * (outer1_18 + 16));
       const obj = activity(first[36]);
     }
   };
-  let obj = { runOnJS: activity(first[36]).runOnJS, setActivityPreviewWidth: tmp6, EDGE_GUTTER };
+  let obj = { runOnJS: activity(first[36]).runOnJS, setActivityPreviewWidth: tmp9, EDGE_GUTTER };
   fn2.__closure = obj;
   fn2.__workletHash = 1481130207412;
-  fn2.__initData = closure_29;
+  fn2.__initData = closure_30;
   const animatedReaction = obj2.useAnimatedReaction(fn, fn2);
   let obj4 = activity(first[37]);
   obj = { userId: id.getId(), channelId, application: first };
-  const embeddedActivityJoinability = obj4.useEmbeddedActivityJoinability(obj);
-  const tmp9 = embeddedActivityJoinability === activity(first[37]).EmbeddedActivityJoinability.CAN_JOIN;
-  let closure_7 = tmp9;
-  const items1 = [activity.launchId, analyticsLocations, first, tmp9, channelId, embeddedActivityJoinability];
+  embeddedActivityJoinability = obj4.useEmbeddedActivityJoinability(obj);
+  const tmp12 = embeddedActivityJoinability === activity(first[37]).EmbeddedActivityJoinability.CAN_JOIN;
+  c7 = tmp12;
+  const items1 = [activity.launchId, analyticsLocations, first, tmp12, channelId, embeddedActivityJoinability];
   const callback = importAllResult.useCallback(() => {
-    const obj = { embeddedActivityJoinability };
-    // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = channelId(tmp);
-    obj.handleCanJoin = function() {
-      return callback(...arguments);
+    let obj = { embeddedActivityJoinability, handleCanJoin: null };
+    let closure_0 = channelId(function*() {
+      if (v0 === 2) {
+        v0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v0 = 2;
+          if (0 === num3) {
+            num3 = 1;
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else if (outer1_7) {
+              if (null != outer1_2) {
+                let obj2 = v0(outer2_2[38]);
+                let obj1 = { channelId: null, applicationId: null, launchId: null, inputApplication: null, analyticsLocations: null };
+                obj1[0] = outer1_3;
+                obj1[1] = tmp9.id;
+                obj1[2] = v0.launchId;
+                obj1[3] = tmp9;
+                obj1[4] = c1;
+                v0 = num3;
+                obj2 = { value: null, done: false };
+                obj2[0] = obj2.maybeJoinEmbeddedActivity(obj1);
+                return obj2;
+              }
+            } else {
+              obj1 = outer2_1(outer2_2[24]);
+              const voiceChannel = obj1.selectVoiceChannel(outer1_3);
+            }
+          } else {
+            num3 = 1;
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+          }
+          v0 = 3;
+        } catch (tmp17) {
+          v0 = tmp;
+          throw tmp17;
+        }
+      }
+    });
+    obj[1] = function() {
+      const self = this;
+      const apply = closure_0.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     };
     analyticsLocations(first[38])(obj);
   }, items1);
-  let tmp13Result = null;
+  let tmp16Result = null;
   if (null != first) {
-    obj1 = { style: tmp.activityInfoWrapper };
-    obj2 = { variant: "text-sm/semibold", style: tmp.activityInfoHeader, color: "text-default" };
-    const intl = activity(first[30]).intl;
-    const obj3 = { n: arr2.length };
-    obj2.children = intl.format(activity(first[30]).t["n/IJ6Y"], obj3);
-    const items2 = [callback2(activity(first[29]).Text, obj2), ];
-    obj4 = { activeOpacity: 0.7, onPress: callback, style: tmp.previewImageWrapper, accessible: false };
-    const obj5 = { style: tmp.previewImage };
-    const tmp13 = closure_24;
-    const tmp16 = analyticsLocations(first[28]);
-    const tmp19 = closure_24;
-    const obj6 = { imageBackground: tmp11, aspectRatio: 1.7777777777777777 };
-    obj5.children = callback2(analyticsLocations(first[41]), obj6);
-    const items3 = [callback2(analyticsLocations(first[28]), obj5), ];
-    const obj7 = { style: tmp.joinButtonWrapper };
-    const tmp21 = analyticsLocations(first[28]);
-    const tmp23 = callback2;
-    const obj8 = { text: null, size: "sm", iconPosition: "start", variant: "primary-overlay" };
-    const intl2 = activity(first[30]).intl;
-    const obj9 = { name: first.name };
-    obj8.text = intl2.formatToPlainString(activity(first[30]).t["YV/hE8"], obj9);
-    const obj10 = { variant: "entity" };
-    const obj11 = { uri: null, width: 20, height: 20 };
+    obj1 = { style: null, children: null };
+    obj1[0] = tmp.activityInfoWrapper;
+    let tmp2Result = tmp2(tmp3[28]);
+    obj2 = { variant: "text-sm/semibold", style: null, color: "text-default", children: null };
+    obj2[1] = tmp.activityInfoHeader;
+    const intl = tmp4(tmp3[30]).intl;
+    const obj3 = { n: null };
+    obj3[0] = arr2.length;
+    obj2[3] = intl.format(tmp4(tmp3[30]).t["n/IJ6Y"], obj3);
+    const items2 = [callback(tmp4(tmp3[29]).Text, obj2), ];
+    obj4 = { activeOpacity: 0.7, onPress: null, style: null, accessible: false, children: null };
+    obj4[1] = callback;
+    obj4[2] = tmp.previewImageWrapper;
+    const obj5 = { style: null, children: null };
+    obj5[0] = tmp.previewImage;
+    tmp2Result = tmp2(tmp3[28]);
+    const obj6 = { imageBackground: null, aspectRatio: 1.7777777777777777 };
+    obj6[0] = tmp14;
+    obj5[1] = callback(tmp2(tmp3[41]), obj6);
+    const items3 = [callback(tmp2Result, obj5), ];
+    const obj7 = { style: null, children: null };
+    obj7[0] = tmp.joinButtonWrapper;
+    const obj8 = { text: null, size: "sm", iconPosition: "start", variant: "primary-overlay", icon: null, onPress: null };
+    const intl2 = tmp4(tmp3[30]).intl;
+    const obj9 = { name: null };
+    obj9[0] = first.name;
+    obj8[0] = intl2.formatToPlainString(tmp4(tmp3[30]).t["YV/hE8"], obj9);
     const iconURL = first.getIconURL(20);
-    let tmp28;
-    if (null != iconURL) {
-      tmp28 = iconURL;
-    }
-    obj11.uri = tmp28;
-    obj10.source = obj11;
-    obj8.icon = callback2(activity(first[42]).Button.Icon, obj10);
-    obj8.onPress = callback;
-    obj7.children = callback2(activity(first[42]).Button, obj8);
-    items3[1] = tmp23(analyticsLocations(first[28]), obj7);
-    obj4.children = items3;
-    items2[1] = tmp19(activity(first[40]).PressableOpacity, obj4);
-    obj1.children = items2;
-    tmp13Result = tmp13(tmp16, obj1);
-    const tmp24 = analyticsLocations(first[28]);
-    const tmp25 = callback2;
-    const tmp26 = callback2;
+    const obj10 = { variant: "entity", source: null };
+    const obj11 = { uri: null, width: 20, height: 20 };
+    obj11[0] = iconURL;
+    obj10[1] = obj11;
+    obj8[4] = callback(tmp4(tmp3[42]).Button.Icon, obj10);
+    obj8[5] = callback;
+    obj7[1] = callback(tmp4(tmp3[42]).Button, obj8);
+    items3[1] = callback(tmp2(tmp3[28]), obj7);
+    obj4[4] = items3;
+    items2[1] = closure_24(tmp4(tmp3[40]).PressableOpacity, obj4);
+    obj1[1] = items2;
+    tmp16Result = tmp16(tmp2Result, obj1);
+    const tmp2Result1 = tmp2(tmp3[28]);
   }
-  return tmp13Result;
+  return tmp16Result;
 }
-function RoomMembersSection(arg0) {
+function RoomMembersSection(title) {
+  let dependencyMap;
+  let importDefault;
+  let require;
+  ({ members: require, channelId: importDefault, guildId: dependencyMap } = title);
+  let obj = { title: title.title, hasIcons: true, children: null };
+  obj[2] = (() => {
+    const items = [];
+    const iter = dependencyMap[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp4 = outer1_14;
+      let tmp3 = nextResult;
+      let user = outer1_14.getUser(nextResult);
+      let tmp6 = user;
+      if (null != user) {
+        let tmp7 = outer1_23;
+        let tmp8 = outer1_0;
+        let tmp9 = outer1_2;
+        let obj = { user: null, channelId: null, guildId: null, nick: null };
+        let tmp10 = user;
+        obj[0] = tmp6;
+        let tmp11 = closure_1;
+        obj[1] = closure_1;
+        let tmp12 = closure_2;
+        obj[2] = closure_2;
+        let tmp13 = outer1_1;
+        let obj2 = outer1_1(outer1_2[47]);
+        obj[3] = obj2.getName(closure_2, closure_1, tmp6);
+        let tmp14 = nextResult;
+        let arr = items.push(outer1_23(outer1_0(outer1_2[46]).MemberRowItem, obj, tmp3));
+      }
+      continue;
+    }
+    return items;
+  })();
+  return callback(require(8860) /* VoiceBadges */.VoicePanelFormSection, obj);
+}
+function RoomMembers(members) {
+  let blockedMembers;
+  let streamingMembers;
+  members = members.members;
+  ({ streamingMembers, blockedMembers } = members);
+  const ignoredMembers = members.ignoredMembers;
   let channelId;
   let guildId;
-  let iter2;
-  let members;
-  let title;
-  ({ channelId, guildId } = arg0);
-  ({ title, members } = arg0);
-  let obj = { title, hasIcons: true };
-  const items = [];
-  const tmp2 = _createForOfIteratorHelperLoose(members);
-  let iter = tmp2();
-  if (!iter.done) {
-    do {
-      let value = iter.value;
-      let tmp3 = user;
-      user = user.getUser(value);
-      if (null != user) {
-        let tmp5 = callback2;
-        let tmp6 = require;
-        let tmp7 = dependencyMap;
-        obj = { user, channelId, guildId };
-        let tmp8 = importDefault;
-        let obj3 = importDefault(4354);
-        obj.nick = obj3.getName(guildId, channelId, user);
-        let arr = items.push(callback2(require(8836) /* VoiceBadges */.MemberRowItem, obj, value));
-      }
-      iter2 = tmp2();
-      iter = iter2;
-    } while (!iter2.done);
-  }
-  obj.children = items;
-  return callback2(require(8836) /* VoiceBadges */.VoicePanelFormSection, obj);
-}
-function RoomMembers(arg0) {
-  let blockedMembers;
-  let ignoredMembers;
-  let members;
-  let streamingMembers;
-  ({ members, streamingMembers, blockedMembers, ignoredMembers } = arg0);
-  const context = importAllResult.useContext(first(10015));
-  const channelId = context.channelId;
-  const guildId = context.guildId;
-  const tmp2 = callback(importAllResult.useState(20), 2);
-  first = tmp2[0];
-  const dependencyMap = tmp2[1];
+  let first;
+  let participantFromServer;
+  const context = first.useContext(blockedMembers(ignoredMembers[23]));
+  channelId = context.channelId;
+  guildId = context.guildId;
+  let tmp3 = guildId(first.useState(20), 2);
+  first = tmp3[0];
+  participantFromServer = tmp3[1];
   const sum = blockedMembers.size + ignoredMembers.size;
   const diff = members.length - sum;
-  let obj = {};
-  let tmp8 = sum > 0;
-  if (tmp8) {
-    obj = { channelId, blockedUserIds: blockedMembers, ignoredUserIds: ignoredMembers };
-    tmp8 = callback2(closure_30, obj);
+  let tmp9 = sum > 0;
+  if (tmp9) {
+    let obj = { channelId: null, blockedUserIds: null, ignoredUserIds: null };
+    obj[0] = channelId;
+    obj[1] = blockedMembers;
+    obj[2] = ignoredMembers;
+    tmp9 = callback(closure_32, obj);
   }
-  const items = [
-    tmp8,
+  const children = [
+    tmp9,
     streamingMembers.map((arg0) => {
       let tmp;
       let tmp2;
       [tmp, tmp2] = arg0;
-      return outer1_23(outer1_37, { channelId, voiceState: tmp, stream: tmp2 }, tmp2.ownerId);
+      return outer1_23(outer1_27, { channelId, voiceState: tmp, stream: tmp2 }, tmp2.ownerId);
     }),
   ,
   ,
 
   ];
-  let tmp11 = blockedMembers.size > 0;
-  if (tmp11) {
-    obj = {};
-    const intl = channelId(1212).intl;
-    const obj1 = { n: blockedMembers.size };
-    obj.title = intl.formatToPlainString(channelId(1212).t.pGJ1Qy, obj1);
-    obj.members = blockedMembers;
-    obj.channelId = channelId;
-    obj.guildId = guildId;
-    tmp11 = callback2(RoomMembersSection, obj);
+  let tmp12 = blockedMembers.size > 0;
+  if (tmp12) {
+    obj = { title: null, members: null, channelId: null, guildId: null };
+    const intl = members(tmp[30]).intl;
+    obj = { n: null };
+    obj[0] = blockedMembers.size;
+    obj[0] = intl.formatToPlainString(members(tmp[30]).t.pGJ1Qy, obj);
+    obj[1] = blockedMembers;
+    obj[2] = channelId;
+    obj[3] = guildId;
+    tmp12 = callback(RoomMembersSection, obj);
   }
-  items[2] = tmp11;
+  children[2] = tmp12;
   let tmp16 = ignoredMembers.size > 0;
   if (tmp16) {
-    const obj2 = {};
-    const intl2 = channelId(1212).intl;
-    const obj3 = { n: ignoredMembers.size };
-    obj2.title = intl2.formatToPlainString(channelId(1212).t["/pXOCN"], obj3);
-    obj2.members = ignoredMembers;
-    obj2.channelId = channelId;
-    obj2.guildId = guildId;
-    tmp16 = callback2(RoomMembersSection, obj2);
+    const obj1 = { title: null, members: null, channelId: null, guildId: null };
+    const intl2 = members(tmp[30]).intl;
+    const obj2 = { n: null };
+    obj2[0] = ignoredMembers.size;
+    obj1[0] = intl2.formatToPlainString(members(tmp[30]).t["/pXOCN"], obj2);
+    obj1[1] = ignoredMembers;
+    obj1[2] = channelId;
+    obj1[3] = guildId;
+    tmp16 = callback(RoomMembersSection, obj1);
   }
-  items[3] = tmp16;
-  let tmp22Result = diff > 0;
-  if (tmp22Result) {
-    const obj4 = { hasIcons: true };
+  children[3] = tmp16;
+  let tmp7Result = diff > 0;
+  if (tmp7Result) {
     if (0 === sum) {
-      const intl4 = channelId(1212).intl;
-      const obj5 = { n: members.length };
-      let formatToPlainStringResult = intl4.formatToPlainString(channelId(1212).t.vloEU7, obj5);
+      const intl4 = tmp21(tmp[30]).intl;
+      let obj3 = { n: null };
+      obj3[0] = members.length;
+      let formatToPlainStringResult = intl4.formatToPlainString(tmp21(tmp[30]).t.vloEU7, obj3);
     } else {
-      const intl3 = channelId(1212).intl;
-      const obj6 = { n: diff };
-      formatToPlainStringResult = intl3.formatToPlainString(channelId(1212).t.R0h4pE, obj6);
+      const intl3 = tmp21(tmp[30]).intl;
+      const obj4 = { n: null };
+      obj4[0] = diff;
+      formatToPlainStringResult = intl3.formatToPlainString(tmp21(tmp[30]).t.R0h4pE, obj4);
     }
-    obj4.title = formatToPlainStringResult;
-    const items1 = [];
-    const tmp31 = _createForOfIteratorHelperLoose(members);
-    let iter = tmp31();
-    if (!iter.done) {
-      const value = iter.value;
-      while (items1.length < first) {
-        let tmp32 = blockedMembers.has(value.user.id) || ignoredMembers.has(value.user.id);
-        if (!tmp32) {
-          let tmp33 = callback2;
-          let tmp34 = channelId;
-          let tmp35 = dependencyMap;
-          let obj7 = { user: value.user, channelId, guildId };
-          let tmp36 = first;
-          let obj11 = first(4354);
-          obj7.nick = obj11.getName(guildId, channelId, value.user);
-          let arr = items1.push(callback2(channelId(8836).MemberRowItem, obj7, value.user.id));
-        }
-        let iter2 = tmp31();
-        iter = iter2;
-        if (iter2.done) {
-          break;
-        }
-      }
-    }
-    const items2 = [items1, ];
-    let tmp38 = diff > first;
-    if (tmp38) {
-      const obj8 = {};
-      const intl5 = channelId(1212).intl;
-      obj8.label = intl5.string(channelId(1212).t.F4MCUO);
-      obj8.onPress = function onPress() {
+    const obj5 = { hasIcons: true, title: null, children: null };
+    obj5[1] = formatToPlainStringResult;
+    const items1 = [
+      (() => {
+          const items = [];
+          for (const item10007 of members) {
+            let tmp = item10007;
+            let tmp2 = first;
+            if (items.length >= first) {
+              let tmp14 = obj;
+              obj.return();
+              break;
+            } else {
+              let tmp15 = blockedMembers;
+              let tmp16 = item10007;
+              let hasItem = blockedMembers.has(tmp.user.id);
+              if (!hasItem) {
+                let tmp3 = ignoredMembers;
+                let tmp4 = item10007;
+                hasItem = ignoredMembers.has(tmp.user.id);
+              }
+              if (!hasItem) {
+                let tmp6 = outer1_23;
+                let tmp7 = members;
+                let tmp8 = ignoredMembers;
+                let obj = { user: null, channelId: null, guildId: null, nick: null };
+                let tmp9 = item10007;
+                obj[0] = tmp.user;
+                let tmp10 = channelId;
+                obj[1] = channelId;
+                let tmp11 = guildId;
+                obj[2] = guildId;
+                let tmp12 = blockedMembers;
+                let obj3 = blockedMembers(ignoredMembers[47]);
+                obj[3] = obj3.getName(guildId, channelId, tmp.user);
+                let arr = items.push(outer1_23(members(ignoredMembers[46]).MemberRowItem, obj, tmp.user.id));
+              }
+              continue;
+            }
+            return items;
+          }
+        })(),
+
+    ];
+    let tmp23 = diff > first;
+    if (tmp23) {
+      const obj6 = { label: null, onPress: null };
+      const intl5 = tmp21(tmp[30]).intl;
+      obj6[0] = intl5.string(tmp21(tmp[30]).t.F4MCUO);
+      obj6[1] = function onPress() {
         return callback(first + 20);
       };
-      tmp38 = callback2(channelId(5198).TableRow, obj8);
+      tmp23 = callback(tmp21(tmp[48]).TableRow, obj6);
     }
-    items2[1] = tmp38;
-    obj4.children = items2;
-    tmp22Result = closure_24(channelId(8836).VoicePanelFormSection, obj4);
-    const tmp22 = closure_24;
+    items1[1] = tmp23;
+    obj5[2] = items1;
+    tmp7Result = tmp7(members(tmp[46]).VoicePanelFormSection, obj5);
   }
-  items[4] = tmp22Result;
-  obj.children = items;
-  return closure_24(closure_25, obj);
+  children[4] = tmp7Result;
+  return closure_24(closure_25, { children });
 }
 function PreJoinTransitioner(transitionState) {
   transitionState = transitionState.transitionState;
   const transitionCleanUp = transitionState.transitionCleanUp;
-  let obj = Object.create(null);
-  obj.transitionState = 0;
-  obj.transitionCleanUp = 0;
-  const merged = Object.assign(transitionState, obj);
+  const merged = Object.assign(transitionState, Object.create(null));
+  let windowDimensions;
+  let controlsSpecs;
+  let safeArea;
+  let preJoinContentSize;
+  let useReducedMotion;
   const context = preJoinContentSize.useContext(transitionCleanUp(windowDimensions[23]));
   windowDimensions = context.windowDimensions;
-  const controlsSpecs = context.controlsSpecs;
-  const safeArea = context.safeArea;
+  controlsSpecs = context.controlsSpecs;
+  safeArea = context.safeArea;
   preJoinContentSize = context.preJoinContentSize;
-  const useReducedMotion = context.useReducedMotion;
-  obj = transitionState(windowDimensions[36]);
-  let fn = function o() {
+  useReducedMotion = context.useReducedMotion;
+  let obj = transitionState(windowDimensions[36]);
+  let fn = function l() {
     const height = windowDimensions.get().height;
-    let obj = {};
+    let obj = { paddingBottom: null, opacity: null, transform: null };
     const diff = height - transitionCleanUp(windowDimensions[49])(0.8 * height);
     const sum = diff + controlsSpecs.get().height;
-    obj.paddingBottom = sum + safeArea.get().bottom;
+    obj[0] = sum + safeArea.get().bottom;
     let num = 1;
     let num2 = 1;
     if (transitionState === transitionState(windowDimensions[56]).TransitionStates.YEETED) {
       num2 = 0;
     }
-    obj.opacity = transitionState(windowDimensions[55]).withSpring(num2);
-    obj = {};
-    const obj2 = transitionState(windowDimensions[55]);
-    const obj4 = transitionState(windowDimensions[55]);
+    obj[1] = transitionState(windowDimensions[55]).withSpring(num2);
+    let tmp4Result = tmp4(tmp[55]);
+    tmp4Result = tmp4(tmp[36]);
     if (useReducedMotion.get()) {
       num = 0;
     }
-    const obj5 = transitionState(windowDimensions[36]);
-    const fn = function n() {
+    obj = { translateY: null };
+    const obj2 = transitionState(windowDimensions[55]);
+    const fn = function o() {
       let flag = arg0;
       if (arg0 === undefined) {
         flag = false;
       }
       if (flag) {
-        flag = outer1_0 === transitionState(windowDimensions[56]).TransitionStates.YEETED;
+        flag = closure_0 === outer1_0(outer1_2[56]).TransitionStates.YEETED;
       }
       if (flag) {
-        transitionState(windowDimensions[36]).runOnJS(outer1_1)();
-        const obj = transitionState(windowDimensions[36]);
+        outer1_0(outer1_2[36]).runOnJS(closure_1)();
+        const obj = outer1_0(outer1_2[36]);
       }
     };
-    obj = { transitionState, TransitionStates: transitionState(windowDimensions[56]).TransitionStates, runOnJS: transitionState(windowDimensions[36]).runOnJS, transitionCleanUp };
+    obj = { transitionState: tmp5, TransitionStates: tmp4(tmp[56]).TransitionStates, runOnJS: tmp4(tmp[36]).runOnJS, transitionCleanUp };
     fn.__closure = obj;
     fn.__workletHash = 2541522666097;
-    fn.__initData = outer1_34;
-    obj.translateY = obj4.withSpring(transitionState(windowDimensions[36]).interpolate(num, [0, 1], [0, 400]), outer1_17, "respect-motion-settings", fn);
+    fn.__initData = outer1_38;
+    obj[0] = tmp4Result.withSpring(tmp4Result.interpolate(num, [0, 1], [0, 400]), outer1_17, "respect-motion-settings", fn);
     const items = [obj];
-    obj.transform = items;
+    obj[2] = items;
     return obj;
   };
   obj = { windowDimensions, roundToNearestPixel: transitionCleanUp(windowDimensions[49]), controlsSpecs, safeArea, withSpring: transitionState(windowDimensions[55]).withSpring, transitionState, TransitionStates: transitionState(windowDimensions[56]).TransitionStates, interpolate: transitionState(windowDimensions[36]).interpolate, useReducedMotion, MODE_CHANGE_PHYSICS, runOnJS: transitionState(windowDimensions[36]).runOnJS, transitionCleanUp };
   fn.__closure = obj;
   fn.__workletHash = 16643118377748;
-  fn.__initData = closure_33;
+  fn.__initData = closure_37;
   let items = [preJoinContentSize];
   const animatedStyle = obj.useAnimatedStyle(fn);
   const callback = preJoinContentSize.useCallback((nativeEvent) => {
     const result = preJoinContentSize.set(transitionCleanUp(windowDimensions[49])(nativeEvent.nativeEvent.layout.height));
   }, items);
-  const obj1 = { style: animatedStyle, collapsable: false };
-  const tmp3 = callback3();
-  let obj2 = { onLayout: callback, collapsable: false, style: tmp3.contentWrapper };
-  const obj3 = {};
-  const tmp7 = transitionCleanUp(windowDimensions[57]);
+  obj = { style: animatedStyle, collapsable: false, children: null };
+  const tmp2 = callback2();
+  const obj1 = { onLayout: callback, collapsable: false, style: tmp2.contentWrapper, children: null };
+  let obj2 = {};
+  const tmp6 = transitionCleanUp(windowDimensions[57]);
   const merged1 = Object.assign(merged);
-  obj2.children = callback2(closure_32, obj3);
-  obj1.children = callback2(transitionCleanUp(windowDimensions[28]), obj2);
-  return callback2(tmp7, obj1);
+  obj1[3] = callback(closure_36, obj2);
+  obj[2] = callback(transitionCleanUp(windowDimensions[28]), obj1);
+  return callback(tmp6, obj);
 }
 function renderItem(arg0, arg1, transitionState, transitionCleanUp) {
   const merged = Object.assign(arg1);
-  return callback2(PreJoinTransitioner, { transitionState, transitionCleanUp }, arg0);
+  return callback(PreJoinTransitioner, { transitionState, transitionCleanUp }, arg0);
 }
+let c5 = importAllResult;
 ({ AnalyticEvents: closure_19, AnalyticsSections: closure_20, Permissions: closure_21 } = ME);
 ({ jsx: closure_23, jsxs: closure_24, Fragment: closure_25 } = jsxProd);
-let obj = {};
+let obj = { contentWrapper: null, channelInfoWrapper: null, subheading: null, previewImageWrapper: null, previewImage: null, activityInfoWrapper: null, activityInfoHeader: null, joinButtonWrapper: null, optInChannelsContainer: null, blockedMemberWarning: null, consolePreJoinPadding: null };
 obj = { paddingTop: EDGE_GUTTER + require("t").BASE_VOICE_PANEL_HEADER_HEIGHT + EDGE_GUTTER, gap: 24, paddingBottom: 16 };
-obj.contentWrapper = obj;
-obj.channelInfoWrapper = { paddingHorizontal: 16 };
-obj.subheading = { textAlign: "center", paddingTop: 16, paddingBottom: 16 };
-_createForOfIteratorHelperLoose = { position: "relative", width: "100%", aspectRatio: 1.7777777777777777, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK };
-obj.previewImageWrapper = _createForOfIteratorHelperLoose;
+obj[0] = obj;
+obj[1] = { paddingHorizontal: 16 };
+obj[2] = { textAlign: "center", paddingTop: 16, paddingBottom: 16 };
+createCacheKey = { position: "relative", width: "100%", aspectRatio: 1.7777777777777777, borderRadius: require("Themes").radii.lg, overflow: "hidden", justifyContent: "center", backgroundColor: require("Themes").colors.BLACK };
+obj[3] = createCacheKey;
 let obj2 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
-obj2["opacity"] = 0.5;
-obj.previewImage = obj2;
-obj.activityInfoWrapper = { paddingHorizontal: 16 };
-obj.activityInfoHeader = { marginBottom: 8 };
+obj2.opacity = 0.5;
+obj[4] = obj2;
+obj[5] = { paddingHorizontal: 16 };
+obj[6] = { marginBottom: 8 };
 let obj3 = {};
 let merged1 = Object.assign(StyleSheet.absoluteFillObject);
-obj3["display"] = "flex";
-obj3["alignItems"] = "center";
-obj3["justifyContent"] = "center";
-obj.joinButtonWrapper = obj3;
-obj.optInChannelsContainer = { marginHorizontal: 16 };
-let obj4 = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("_createForOfIteratorHelperLoose").space.PX_8, padding: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, borderColor: require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_WARNING, borderWidth: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_WARNING, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.blockedMemberWarning = obj4;
-obj.consolePreJoinPadding = { height: 36 };
-let closure_26 = _createForOfIteratorHelperLoose.createStyles(obj);
-let closure_27 = importAllResult.memo((hasMembers) => {
-  const tmp = callback3();
+obj3.display = "flex";
+obj3.alignItems = "center";
+obj3.justifyContent = "center";
+obj[7] = obj3;
+obj[8] = { marginHorizontal: 16 };
+obj[9] = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8, padding: require("Themes").space.PX_8, borderRadius: require("Themes").radii.xs, borderColor: require("Themes").colors.ICON_FEEDBACK_WARNING, borderWidth: 1, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_WARNING, marginHorizontal: require("Themes").space.PX_16 };
+obj[10] = { height: 36 };
+let closure_26 = createCacheKey.createStyles(obj);
+let closure_28 = importAllResult.memo((hasMembers) => {
+  const tmp = callback2();
   let tmp2 = null;
   if (!hasMembers.hasMembers) {
-    let obj = { style: tmp.channelInfoWrapper };
-    obj = { variant: "text-sm/medium", color: "text-default", style: tmp.subheading };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.children = intl.string(require(1212) /* getSystemLocale */.t.sS2J0G);
-    obj.children = callback2(require(4161) /* Text */.Text, obj);
-    tmp2 = callback2(importDefault(5550), obj);
-    const tmp6 = importDefault(5550);
+    let obj = { style: null, children: null };
+    obj[0] = tmp.channelInfoWrapper;
+    obj = { variant: "text-sm/medium", color: "text-default", style: null, children: null };
+    obj[2] = tmp.subheading;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj[3] = intl.string(require(1236) /* getSystemLocale */.t.sS2J0G);
+    obj[1] = callback(require(4185) /* Text */.Text, obj);
+    tmp2 = callback(importDefault(5568), obj);
+    const tmp6 = importDefault(5568);
   }
   return tmp2;
 });
-let closure_28 = { code: "function VoicePanelPreJoinContentTsx1(){const{windowDimensions}=this.__closure;return windowDimensions.get().width;}" };
-let closure_29 = { code: "function VoicePanelPreJoinContentTsx2(width,previous){const{runOnJS,setActivityPreviewWidth,EDGE_GUTTER}=this.__closure;if(width===previous)return;runOnJS(setActivityPreviewWidth)(width-(EDGE_GUTTER+16)*2);}" };
-let closure_30 = importAllResult.memo((blockedUserIds) => {
+let closure_29 = { code: "function VoicePanelPreJoinContentTsx1(){const{windowDimensions}=this.__closure;return windowDimensions.get().width;}" };
+let closure_30 = { code: "function VoicePanelPreJoinContentTsx2(width,previous){const{runOnJS,setActivityPreviewWidth,EDGE_GUTTER}=this.__closure;if(width===previous)return;runOnJS(setActivityPreviewWidth)(width-(EDGE_GUTTER+16)*2);}" };
+let closure_32 = importAllResult.memo((blockedUserIds) => {
   let channelId;
   let ignoredUserIds;
   blockedUserIds = blockedUserIds.blockedUserIds;
   ({ channelId, ignoredUserIds } = blockedUserIds);
-  let obj = {};
-  const tmp = callback3();
-  obj.name = require(480) /* isThrottled */.ImpressionNames.VOICE_CHANNEL_BLOCKED_USER_WARNING;
+  let obj = { name: null, properties: null };
+  const tmp = callback2();
+  const tmp2 = importDefault;
+  obj[0] = require(503) /* encodeProperties */.ImpressionNames.VOICE_CHANNEL_BLOCKED_USER_WARNING;
   obj = { channel_id: channelId, blocked_user_ids: Array.from(blockedUserIds), warning_surface: constants2.PRE_JOIN_SHEET };
-  obj.properties = obj;
-  importDefault(8402)(obj);
+  obj[1] = obj;
+  importDefault(8426)(obj);
   const size = ignoredUserIds.size;
   const size2 = blockedUserIds.size;
-  const intl = require(1212) /* getSystemLocale */.intl;
-  const stringResult = intl.string(require(1212) /* getSystemLocale */.t.CjrALd);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  const stringResult = intl.string(require(1236) /* getSystemLocale */.t.CjrALd);
   if (size2 > 0) {
     if (size > 0) {
-      const intl4 = require(1212) /* getSystemLocale */.intl;
-      let stringResult1 = intl4.string(require(1212) /* getSystemLocale */.t.MpRfpC);
+      const intl4 = tmp5(1236).intl;
+      let stringResult1 = intl4.string(tmp5(1236).t.MpRfpC);
     }
-    obj = { style: tmp.blockedMemberWarning };
-    const obj1 = { color: "text-feedback-warning" };
-    const items = [callback2(require(6709) /* CircleErrorIcon */.CircleErrorIcon, obj1), ];
-    const obj2 = { variant: "text-sm/bold", color: "interactive-text-active" };
-    const obj3 = { flexShrink: 1 };
-    obj2.style = obj3;
+    obj = { style: null, children: null };
+    obj[0] = tmp.blockedMemberWarning;
+    const items = [callback(tmp5(6730).CircleErrorIcon, { color: "text-feedback-warning" }), ];
+    const obj1 = { variant: "text-sm/bold", color: "interactive-text-active", style: null, children: null };
+    obj1[2] = { flexShrink: 1 };
     const items1 = [stringResult1, " ", ];
-    let tmp19 = null;
+    let tmp11Result = null;
     if (null != stringResult) {
-      const obj4 = { variant: "heading-sm/semibold", children: stringResult };
-      tmp19 = callback2(require(4161) /* Text */.Text, obj4);
+      const obj2 = { variant: "heading-sm/semibold", children: null };
+      obj2[1] = stringResult;
+      tmp11Result = callback(tmp5(4185).Text, obj2);
     }
-    items1[2] = tmp19;
-    obj2.children = items1;
-    items[1] = closure_24(require(4161) /* Text */.Text, obj2);
-    obj.children = items;
-    return closure_24(importDefault(5550), obj);
+    items1[2] = tmp11Result;
+    obj1[3] = items1;
+    items[1] = closure_24(tmp5(4185).Text, obj1);
+    obj[1] = items;
+    return closure_24(tmp2(5568), obj);
   }
   if (size > 0) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    const obj5 = { n: size };
-    stringResult1 = intl3.format(require(1212) /* getSystemLocale */.t.u9trAZ, obj5);
+    const intl3 = tmp5(1236).intl;
+    const obj3 = { n: null };
+    obj3[0] = size;
+    stringResult1 = intl3.format(tmp5(1236).t.u9trAZ, obj3);
   } else {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj6 = { n: size2 };
-    stringResult1 = intl2.format(require(1212) /* getSystemLocale */.t["6X29zb"], obj6);
+    const intl2 = tmp5(1236).intl;
+    const obj4 = { n: null };
+    obj4[0] = size2;
+    stringResult1 = intl2.format(tmp5(1236).t["6X29zb"], obj4);
   }
 });
-let closure_31 = importAllResult.memo((channelId) => {
+let closure_35 = importAllResult.memo((channelId) => {
   channelId = channelId.channelId;
-  let obj = channelId(566);
-  const items = [closure_10, closure_7, closure_15, closure_13];
+  let obj = channelId(589);
+  const items = [fetchFingerprint, closure_7, updateVoiceState, handleUpdate];
   const items1 = [channelId];
-  let tmp2 = null;
+  let tmp3 = null;
   if (obj.useStateFromStores(items, () => {
     const id = outer1_10.getId();
     const voiceStateForSession = outer1_15.getVoiceStateForSession(id, outer1_7.getRemoteSessionId());
     const awaitingRemoteSessionInfo = outer1_7.getAwaitingRemoteSessionInfo();
     let channelId;
-    if (null != awaitingRemoteSessionInfo) {
+    if (awaitingRemoteSessionInfo != null) {
       channelId = awaitingRemoteSessionInfo.channelId;
     }
     let tmp6 = channelId === channelId;
     if (!tmp6) {
       let channelId1;
-      if (null != tmp3) {
-        channelId1 = tmp3.channelId;
+      if (voiceStateForSession != null) {
+        channelId1 = voiceStateForSession.channelId;
       }
-      let tmp9 = channelId1 === channelId;
-      if (tmp9) {
-        let sessionId;
-        if (null != tmp3) {
-          sessionId = tmp3.sessionId;
+      let tmp8 = channelId1 === tmp5;
+      if (tmp8) {
+        let str;
+        if (voiceStateForSession != null) {
+          str = voiceStateForSession.sessionId;
         }
-        let str = "";
-        if (null != sessionId) {
-          str = sessionId;
+        if (str == null) {
+          str = "";
         }
-        tmp9 = null != outer1_13.getSessionById(str);
+        tmp8 = null != outer1_13.getSessionById(str);
       }
-      tmp6 = tmp9;
+      tmp6 = tmp8;
     }
     return tmp6;
   }, items1)) {
-    obj = { style: tmp.consolePreJoinPadding };
-    tmp2 = callback2(importDefault(5550), obj);
+    obj = { style: null };
+    obj[0] = tmp.consolePreJoinPadding;
+    tmp3 = callback(importDefault(5568), obj);
   }
-  return tmp2;
+  return tmp3;
 });
-let closure_32 = importAllResult.memo(function VoicePanelPreJoinContentInner(streamingMembers) {
+let closure_36 = importAllResult.memo(function VoicePanelPreJoinContentInner(streamingMembers) {
   let activities;
   let blockedMembers;
   let ignoredMembers;
   let members;
   ({ members, blockedMembers, ignoredMembers, activities } = streamingMembers);
+  let channelId;
+  let guildId;
+  let analyticsLocations;
   const context = importAllResult.useContext(guildId(analyticsLocations[23]));
-  const channelId = context.channelId;
+  channelId = context.channelId;
   guildId = context.guildId;
   let obj = channelId(analyticsLocations[27]);
-  const items = [closure_11];
+  const items = [ensureGuildLoaded];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_11.getChannel(channelId));
-  const tmp = callback3();
-  const tmp4 = guildId(analyticsLocations[50])(stateFromStores);
+  const tmp = callback2();
+  const tmp2 = guildId;
+  const tmp3 = analyticsLocations;
+  const tmp6 = guildId(analyticsLocations[50])(stateFromStores);
   analyticsLocations = guildId(analyticsLocations[51])(guildId(analyticsLocations[52]).VOICE_PANEL_PRE_JOIN).analyticsLocations;
   const items1 = [channelId, guildId, analyticsLocations];
   const effect = importAllResult.useEffect(() => {
@@ -623,77 +662,85 @@ let closure_32 = importAllResult.memo(function VoicePanelPreJoinContentInner(str
     obj = { guild_id: guildId, channel_id: channelId, location_stack: analyticsLocations };
     obj.track(outer1_19.VIEW_VOICE_CHANNEL, obj);
   }, items1);
-  obj = {};
   obj = { hasMembers: members.length > 0 };
-  const items2 = [callback2(closure_27, obj), , , , ];
-  let tmp9 = null;
-  if (tmp4) {
-    const obj1 = { style: tmp.optInChannelsContainer, channel: stateFromStores, analyticsSection: constants.CHANNEL };
-    tmp9 = callback2(guildId(analyticsLocations[54]), obj1);
+  const items2 = [callback(closure_28, obj), , , , ];
+  let tmp11Result = null;
+  if (tmp6) {
+    obj = { style: null, channel: null, analyticsSection: null };
+    obj[0] = tmp.optInChannelsContainer;
+    obj[1] = stateFromStores;
+    obj[2] = constants.CHANNEL;
+    tmp11Result = tmp11(tmp2(tmp3[54]), obj);
   }
-  items2[1] = tmp9;
-  items2[2] = activities.map((activity) => outer1_23(outer1_38, { activity, analyticsLocations }, activity.launchId));
-  let tmp14 = members.length > 0 || blockedMembers.size > 0 || ignoredMembers.size > 0;
-  if (tmp14) {
-    const obj2 = { members, streamingMembers: streamingMembers.streamingMembers, blockedMembers, ignoredMembers };
-    tmp14 = callback2(RoomMembers, obj2);
+  items2[1] = tmp11Result;
+  items2[2] = activities.map((activity) => outer1_23(outer1_31, { activity, analyticsLocations }, activity.launchId));
+  tmp11Result = members.length > 0 || blockedMembers.size > 0 || ignoredMembers.size > 0;
+  if (tmp11Result) {
+    const obj1 = { members: null, streamingMembers: null, blockedMembers: null, ignoredMembers: null };
+    obj1[0] = members;
+    obj1[1] = streamingMembers.streamingMembers;
+    obj1[2] = blockedMembers;
+    obj1[3] = ignoredMembers;
+    tmp11Result = tmp11(RoomMembers, obj1);
   }
-  items2[3] = tmp14;
-  items2[4] = callback2(closure_31, { channelId });
-  obj.children = items2;
-  return closure_24(closure_25, obj);
+  const obj2 = { children: null };
+  items2[3] = tmp11Result;
+  items2[4] = callback(closure_35, { channelId });
+  obj2[0] = items2;
+  return closure_24(closure_25, obj2);
 });
-let closure_33 = { code: "function VoicePanelPreJoinContentTsx3(){const{windowDimensions,roundToNearestPixel,controlsSpecs,safeArea,withSpring,transitionState,TransitionStates,interpolate,useReducedMotion,MODE_CHANGE_PHYSICS,runOnJS,transitionCleanUp}=this.__closure;const{height:windowHeight}=windowDimensions.get();return{paddingBottom:windowHeight-roundToNearestPixel(windowHeight*0.8)+controlsSpecs.get().height+safeArea.get().bottom,opacity:withSpring(transitionState===TransitionStates.YEETED?0:1),transform:[{translateY:withSpring(interpolate(!useReducedMotion.get()&&transitionState===TransitionStates.YEETED?1:0,[0,1],[0,400]),MODE_CHANGE_PHYSICS,'respect-motion-settings',function(finished=false){finished&&transitionState===TransitionStates.YEETED&&runOnJS(transitionCleanUp)();})}]};}" };
-let closure_34 = { code: "function VoicePanelPreJoinContentTsx4(finished=false){const{transitionState,TransitionStates,runOnJS,transitionCleanUp}=this.__closure;finished&&transitionState===TransitionStates.YEETED&&runOnJS(transitionCleanUp)();}" };
+let closure_37 = { code: "function VoicePanelPreJoinContentTsx3(){const{windowDimensions,roundToNearestPixel,controlsSpecs,safeArea,withSpring,transitionState,TransitionStates,interpolate,useReducedMotion,MODE_CHANGE_PHYSICS,runOnJS,transitionCleanUp}=this.__closure;const{height:windowHeight}=windowDimensions.get();return{paddingBottom:windowHeight-roundToNearestPixel(windowHeight*0.8)+controlsSpecs.get().height+safeArea.get().bottom,opacity:withSpring(transitionState===TransitionStates.YEETED?0:1),transform:[{translateY:withSpring(interpolate(!useReducedMotion.get()&&transitionState===TransitionStates.YEETED?1:0,[0,1],[0,400]),MODE_CHANGE_PHYSICS,'respect-motion-settings',function(finished=false){finished&&transitionState===TransitionStates.YEETED&&runOnJS(transitionCleanUp)();})}]};}" };
+let closure_38 = { code: "function VoicePanelPreJoinContentTsx4(finished=false){const{transitionState,TransitionStates,runOnJS,transitionCleanUp}=this.__closure;finished&&transitionState===TransitionStates.YEETED&&runOnJS(transitionCleanUp)();}" };
+let obj4 = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8, padding: require("Themes").space.PX_8, borderRadius: require("Themes").radii.xs, borderColor: require("Themes").colors.ICON_FEEDBACK_WARNING, borderWidth: 1, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_WARNING, marginHorizontal: require("Themes").space.PX_16 };
 const memoResult = importAllResult.memo(function VoicePanelPreJoinWrapper() {
-  const context = importAllResult.useContext(guildId(10015));
+  const context = importAllResult.useContext(guildId(10037));
   const channelId = context.channelId;
   guildId = context.guildId;
-  const tmp2 = guildId(15828)(channelId);
+  const tmp2 = guildId(15863)(channelId);
   const dependencyMap = tmp2;
-  let obj = channelId(566);
-  let items = [closure_16, closure_8, closure_6, closure_9];
+  let obj = channelId(589);
+  let items = [getVoiceStatesForGuild, init, participantFromServer, reset];
   let items1 = [tmp2, channelId, guildId];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    let iter3;
     if (!closure_2) {
-      let tmp5;
-      if (null != guildId) {
-        tmp5 = guildId;
-      }
-      const voiceStatesForChannelAlt = outer1_16.getVoiceStatesForChannelAlt(channelId, tmp5);
-      const blockedUsersForVoiceChannel = outer1_8.getBlockedUsersForVoiceChannel(channelId);
-      const ignoredUsersForVoiceChannel = outer1_8.getIgnoredUsersForVoiceChannel(channelId);
-      const items = [];
-      const embeddedActivitiesForChannel = outer1_6.getEmbeddedActivitiesForChannel(channelId);
-      const tmp14 = outer1_35(voiceStatesForChannelAlt);
-      const iter = tmp14();
-      let iter2 = iter;
-      if (!iter.done) {
-        do {
-          let value = iter2.value;
-          if (value.voiceState.selfStream) {
-            let tmp15 = outer1_9;
-            let tmp16 = guildId;
-            let streamForUser = outer1_9.getStreamForUser(value.user.id, guildId);
-            let tmp18 = streamForUser;
+      const voiceStatesForChannelAlt = outer1_16.getVoiceStatesForChannelAlt(tmp2, guildId);
+      const blockedUsersForVoiceChannel = outer1_8.getBlockedUsersForVoiceChannel(tmp2);
+      const ignoredUsersForVoiceChannel = outer1_8.getIgnoredUsersForVoiceChannel(tmp2);
+      const embeddedActivitiesForChannel = outer1_6.getEmbeddedActivitiesForChannel(tmp2);
+      const obj = { members: null, activities: null, streamingMembers: null, blockedMembers: null, ignoredMembers: null };
+      obj[0] = voiceStatesForChannelAlt;
+      obj[1] = embeddedActivitiesForChannel;
+      obj[2] = (() => {
+        const items = [];
+        const iter = voiceStatesForChannelAlt[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp3 = nextResult;
+          if (nextResult.voiceState.selfStream) {
+            let tmp4 = outer2_9;
+            let tmp5 = nextResult;
+            let tmp6 = outer1_1;
+            let streamForUser = outer2_9.getStreamForUser(tmp3.user.id, outer1_1);
             if (null != streamForUser) {
-              let items1 = [value, streamForUser];
+              let tmp9 = nextResult;
+              let items1 = [tmp3, ];
+              let tmp10 = streamForUser;
+              items1[1] = tmp8;
               let arr = items.push(items1);
-              let tmp20 = streamForUser;
             }
           }
-          iter3 = tmp14();
-          iter2 = iter3;
-        } while (!iter3.done);
-      }
-      const obj = { members: voiceStatesForChannelAlt, activities: embeddedActivitiesForChannel, streamingMembers: items, blockedMembers: blockedUsersForVoiceChannel, ignoredMembers: ignoredUsersForVoiceChannel };
+          continue;
+        }
+        return items;
+      })();
+      obj[3] = blockedUsersForVoiceChannel;
+      obj[4] = ignoredUsersForVoiceChannel;
       return obj;
     }
-  }, items1, channelId(15950).areVoicePanelPreJoinContentPropsEqual);
+  }, items1, channelId(15985).areVoicePanelPreJoinContentPropsEqual);
   obj = { item: stateFromStores, renderItem };
-  return callback2(channelId(4511).TransitionItem, obj);
+  return callback(channelId(4534).TransitionItem, obj);
 });
-let result = require("result").fileFinishedImporting("modules/voice_panel/native/prejoin/VoicePanelPreJoinContent.tsx");
+let result = require("noop").fileFinishedImporting("modules/voice_panel/native/prejoin/VoicePanelPreJoinContent.tsx");
 
 export default memoResult;

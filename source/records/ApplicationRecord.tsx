@@ -1,46 +1,18 @@
-// Module ID: 4188
-// Function ID: 35213
-// Name: _callSuper
-// Dependencies: [6, 7, 15, 17, 18, 1859, 4189, 1858, 4190, 4191, 4192, 4193, 1392, 4194, 483, 21, 2]
+// Module ID: 4212
+// Function ID: 4213
+// Name: createExecutable
+// Dependencies: [1883, 4213, 1882, 4214, 4215, 4216, 4217, 1416, 4218, 506, 11, 2]
 
-// Module 4188 (_callSuper)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import DISCORD_EPOCH from "DISCORD_EPOCH";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 4212 (createExecutable)
+import "toJS";
+import createFromServer from "createFromServer";
+import createdAt from "createdAt";
 import items3 from "items3";
 import { ApplicationTypes } from "ApplicationTypes";
-import tmp4 from "Record";
-import importDefaultResult from "Record";
 
 let END_GAME_APPLICATION_ID;
 let POKER_NIGHT_APPLICATION_ID;
 const require = arg1;
-function _callSuper(arg0, arg1, arg2) {
-  let items = arg2;
-  const obj = callback2(arg1);
-  if (_isNativeReflectConstruct()) {
-    if (!items) {
-      items = [];
-    }
-    let constructResult = Reflect.construct(obj, items, callback2(arg0).constructor);
-  } else {
-    constructResult = obj.apply(arg0, items);
-  }
-  return DISCORD_EPOCH(arg0, constructResult);
-}
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function createExecutable(os) {
   const obj = { os: os.os, name: os.name };
   if (null != os.arguments) {
@@ -52,595 +24,668 @@ function createExecutable(os) {
   return obj;
 }
 ({ END_GAME_APPLICATION_ID, POKER_NIGHT_APPLICATION_ID } = items3);
-let closure_12 = { [POKER_NIGHT_APPLICATION_ID]: 7, [END_GAME_APPLICATION_ID]: 12 };
-let tmp5 = ((arg0) => {
-  class ApplicationRecord {
-    constructor(arg0) {
-      tmp = outer1_4(this, ApplicationRecord);
-      items = [];
-      items[0] = arg0;
-      tmp2 = outer1_13(this, ApplicationRecord, items);
-      overlay = arg0.overlay;
-      tmp2.overlay = null != overlay && overlay;
-      overlayWarn = arg0.overlayWarn;
-      tmp2.overlayWarn = null != overlayWarn && overlayWarn;
-      overlayCompatibilityHook = arg0.overlayCompatibilityHook;
-      tmp2.overlayCompatibilityHook = null != overlayCompatibilityHook && overlayCompatibilityHook;
-      DEFAULT = arg0.overlayMethods;
-      if (null == DEFAULT) {
-        tmp3 = ApplicationRecord;
-        tmp4 = outer1_3;
-        num = 13;
-        DEFAULT = ApplicationRecord(outer1_3[13]).ApplicationOverlayMethodFlags.DEFAULT;
+let closure_7 = { [POKER_NIGHT_APPLICATION_ID]: 7, [END_GAME_APPLICATION_ID]: 12 };
+let BasicApplicationRecord;
+class BasicApplicationRecord extends tmp2 {
+  constructor(arg0) {
+    tmp = new BasicApplicationRecord(new.target, global, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    ({ id: tmp.id, name: tmp.name, icon: tmp.icon, splash: tmp.splash, primarySkuId: tmp.primarySkuId, thirdPartySkus } = global);
+    if (thirdPartySkus == null) {
+      thirdPartySkus = [];
+    }
+    tmp.thirdPartySkus = thirdPartySkus;
+    ({ description: tmp.description, bot: tmp.bot, coverImage: tmp.coverImage, type: tmp.type, is_monetized } = global);
+    if (is_monetized == null) {
+      is_monetized = global.isMonetized;
+    }
+    tmp.isMonetized = is_monetized;
+    isVerified = global.is_verified;
+    if (isVerified == null) {
+      isVerified = global.isVerified;
+    }
+    tmp.isVerified = isVerified;
+    roleConnectionsVerificationUrl = global.role_connections_verification_url;
+    if (roleConnectionsVerificationUrl == null) {
+      roleConnectionsVerificationUrl = global.roleConnectionsVerificationUrl;
+    }
+    tmp.roleConnectionsVerificationUrl = roleConnectionsVerificationUrl;
+    parentId = global.parent_id;
+    if (parentId == null) {
+      parentId = global.parentId;
+    }
+    tmp.parentId = parentId;
+    _connectionEntrypointUrl = global.connection_entrypoint_url;
+    if (_connectionEntrypointUrl == null) {
+      _connectionEntrypointUrl = global._connectionEntrypointUrl;
+    }
+    tmp._connectionEntrypointUrl = _connectionEntrypointUrl;
+    contentClassification = global.content_classification;
+    if (contentClassification == null) {
+      contentClassification = global.contentClassification;
+    }
+    tmp.contentClassification = contentClassification;
+    return tmp;
+  }
+}
+const prototype = BasicApplicationRecord.prototype;
+BasicApplicationRecord["createFromServer"] = function createFromServer(bot) {
+  const obj = {};
+  const merged = Object.assign(bot);
+  ({ cover_image: obj.coverImage, primary_sku_id: obj.primarySkuId } = bot);
+  let tmp3 = null;
+  if (null != bot.bot) {
+    tmp3 = new createdAt(bot.bot);
+  }
+  obj.bot = tmp3;
+  ({ third_party_skus: obj.thirdPartySkus, role_connections_verification_url: obj.roleConnectionsVerificationUrl, parent_id: obj.parentId, connection_entrypoint_url: obj._connectionEntrypointUrl, content_classification: obj.contentClassification } = bot);
+  return new BasicApplicationRecord(obj);
+};
+Object.defineProperty(prototype, "connectionEntrypointUrl", {
+  get: function connectionEntrypointUrl(arg0) {
+    const self = this;
+    const items = ["1443349464290168976", "1443350165678198935", "1443033465766281327"];
+    if (!items.includes(this.id)) {
+      let str2 = self._connectionEntrypointUrl;
+    } else if ("1443350165678198935" !== self.id) {
+      str2 = "https://aes.sgp.pvp.net/providers/discord/link/v1?origin=Discord";
+    }
+    return str2;
+  },
+  set: undefined
+});
+prototype["getIconURL"] = function getIconURL(arg0, arg1) {
+  let gameAssetURL = null;
+  if (null != this.icon) {
+    let obj = importDefault(1416);
+    obj = { id: null, hash: null, size: null, format: null };
+    ({ id: obj2[0], icon: obj2[1] } = this);
+    obj[2] = arg0;
+    obj[3] = arg1;
+    gameAssetURL = obj.getGameAssetURL(obj);
+  }
+  return gameAssetURL;
+};
+prototype["getIconSource"] = function getIconSource(arg0, arg1) {
+  let gameAssetSource = null;
+  if (null != this.icon) {
+    let obj = importDefault(1416);
+    obj = { id: null, hash: null, size: null, format: null };
+    ({ id: obj2[0], icon: obj2[1] } = this);
+    obj[2] = arg0;
+    obj[3] = arg1;
+    gameAssetSource = obj.getGameAssetSource(obj);
+  }
+  return gameAssetSource;
+};
+prototype["getSplashURL"] = function getSplashURL(arg0, arg1) {
+  let gameAssetURL = null;
+  if (null != this.splash) {
+    let obj = importDefault(1416);
+    obj = { id: null, hash: null, size: null, keepAspectRatio: true, format: null };
+    ({ id: obj2[0], splash: obj2[1] } = this);
+    obj[2] = arg0;
+    obj[4] = arg1;
+    gameAssetURL = obj.getGameAssetURL(obj);
+  }
+  return gameAssetURL;
+};
+prototype["getCoverImageURL"] = function getCoverImageURL(arg0) {
+  let applicationIconURL = null;
+  if (null != this.coverImage) {
+    let obj = importDefault(1416);
+    obj = { id: null, icon: null, size: null, keepAspectRatio: true };
+    ({ id: obj2[0], coverImage: obj2[1] } = this);
+    obj[2] = arg0;
+    applicationIconURL = obj.getApplicationIconURL(obj);
+  }
+  return applicationIconURL;
+};
+let ApplicationRecord;
+class ApplicationRecord extends BasicApplicationRecord {
+  constructor(arg0) {
+    tmp3 = new ApplicationRecord(global, tmp2, new.target, tmp);
+    // ThrowIfThisInitialized (0x7c)
+    flag = global.overlay;
+    if (flag == null) {
+      flag = false;
+    }
+    tmp3.overlay = flag;
+    flag2 = global.overlayWarn;
+    if (flag2 == null) {
+      flag2 = false;
+    }
+    tmp3.overlayWarn = flag2;
+    flag3 = global.overlayCompatibilityHook;
+    if (flag3 == null) {
+      flag3 = false;
+    }
+    tmp3.overlayCompatibilityHook = flag3;
+    DEFAULT = global.overlayMethods;
+    if (DEFAULT == null) {
+      tmp4 = closure_0;
+      tmp5 = closure_3;
+      DEFAULT = require("ApplicationOverlayMethodFlags").ApplicationOverlayMethodFlags.DEFAULT;
+    }
+    tmp3.overlayMethods = DEFAULT;
+    flag4 = global.hook;
+    if (flag4 == null) {
+      flag4 = true;
+    }
+    tmp3.hook = flag4;
+    aliases = global.aliases;
+    if (aliases == null) {
+      aliases = [];
+    }
+    tmp3.aliases = aliases;
+    publishers = global.publishers;
+    if (publishers == null) {
+      publishers = [];
+    }
+    tmp3.publishers = publishers;
+    developers = global.developers;
+    if (developers == null) {
+      developers = [];
+    }
+    tmp3.developers = developers;
+    ({ storeListingSkuId: tmp3.storeListingSkuId, guildId: tmp3.guildId, guild: tmp3.guild, executables } = global);
+    if (executables == null) {
+      executables = [];
+    }
+    tmp3.executables = executables.map(createExecutable);
+    hashes = global.hashes;
+    if (hashes == null) {
+      hashes = [];
+    }
+    tmp3.hashes = hashes;
+    ({ eulaId: tmp3.eulaId, slug: tmp3.slug } = global);
+    obj = require("fromString");
+    num = global.flags;
+    if (num == null) {
+      num = 0;
+    }
+    tmp3.flags = obj.deserialize(num);
+    tags = global.tags;
+    if (tags == null) {
+      tags = [];
+    }
+    tmp3.tags = tags;
+    ({ maxParticipants: tmp3.maxParticipants, embedded_activity_config } = global);
+    if (embedded_activity_config == null) {
+      embedded_activity_config = global.embeddedActivityConfig;
+    }
+    tmp3.embeddedActivityConfig = embedded_activity_config;
+    ({ team: tmp3.team, integrationTypesConfig: tmp3.integrationTypesConfig, storefront_available: tmp3.storefront_available, termsOfServiceUrl: tmp3.termsOfServiceUrl, privacyPolicyUrl: tmp3.privacyPolicyUrl, is_discoverable } = global);
+    if (is_discoverable == null) {
+      is_discoverable = global.isDiscoverable;
+    }
+    tmp3.isDiscoverable = is_discoverable;
+    customInstallUrl = global.custom_install_url;
+    if (customInstallUrl == null) {
+      customInstallUrl = global.customInstallUrl;
+    }
+    tmp3.customInstallUrl = customInstallUrl;
+    installParams = global.install_params;
+    if (installParams == null) {
+      installParams = global.installParams;
+    }
+    tmp3.installParams = installParams;
+    directoryEntry = global.directory_entry;
+    if (directoryEntry == null) {
+      directoryEntry = global.directoryEntry;
+    }
+    tmp3.directoryEntry = directoryEntry;
+    ({ categories: tmp3.categories, linked_games } = global);
+    mapped = undefined;
+    if (linked_games != null) {
+      mapped = linked_games.map((application) => {
+        const obj = {};
+        const merged = Object.assign(application);
+        let fromServer;
+        if (null != application.application) {
+          fromServer = closure_10.createFromServer(application.application);
+        }
+        obj.application = fromServer;
+        return obj;
+      });
+    }
+    if (mapped == null) {
+      mapped = global.linkedGames;
+    }
+    tmp3.linkedGames = mapped;
+    deeplink_uri = global.deepLinkUri;
+    if (deeplink_uri == null) {
+      deeplink_uri = global.deeplink_uri;
+    }
+    tmp3.deepLinkUri = deeplink_uri;
+    application_account_link_benefit_config = global.applicationAccountLinkBenefitConfig;
+    if (application_account_link_benefit_config == null) {
+      application_account_link_benefit_config = global.application_account_link_benefit_config;
+    }
+    tmp3.applicationAccountLinkBenefitConfig = application_account_link_benefit_config;
+    parent_id = global.parentId;
+    if (parent_id == null) {
+      parent_id = global.parent_id;
+    }
+    tmp3.parentId = parent_id;
+    return tmp3;
+  }
+}
+const prototype2 = ApplicationRecord.prototype;
+ApplicationRecord["createFromServer"] = function createFromServer(bot) {
+  let linked_games;
+  let overlay_methods;
+  let obj = {};
+  let merged = Object.assign(bot);
+  ({ cover_image: obj.coverImage, primary_sku_id: obj.primarySkuId } = bot);
+  let tmp3 = null;
+  if (null != bot.bot) {
+    tmp3 = new createdAt(bot.bot);
+  }
+  obj.bot = tmp3;
+  ({ third_party_skus: obj.thirdPartySkus, role_connections_verification_url: obj.roleConnectionsVerificationUrl, overlay_warn: obj.overlayWarn, overlay_compatibility_hook: obj.overlayCompatibilityHook, overlay_methods } = bot);
+  if (overlay_methods == null) {
+    overlay_methods = require(4218) /* ApplicationOverlayMethodFlags */.ApplicationOverlayMethodFlags.DEFAULT;
+  }
+  obj.overlayMethods = overlay_methods;
+  ({ hook: obj.hook, store_listing_sku_id: obj.storeListingSkuId, guild_id: obj.guildId, guild: obj.guild } = bot);
+  if (null != bot.publishers) {
+    const publishers = bot.publishers;
+    let mapped = publishers.map(createFromServer.createFromServer);
+  } else {
+    mapped = [];
+  }
+  obj.publishers = mapped;
+  if (null != bot.developers) {
+    const developers = bot.developers;
+    let mapped1 = developers.map(createFromServer.createFromServer);
+  } else {
+    mapped1 = [];
+  }
+  obj.developers = mapped1;
+  ({ eula_id: obj.eulaId, slug: obj.slug } = bot);
+  let num = bot.flags_new;
+  if (num == null) {
+    num = bot.flags;
+  }
+  if (num == null) {
+    num = 0;
+  }
+  obj.flags = importAll(506).deserialize(num);
+  ({ max_participants: obj.maxParticipants, tags: obj.tags, embedded_activity_config: obj.embeddedActivityConfig } = bot);
+  let fromEntriesResult;
+  if (null != bot.integration_types_config) {
+    const _Object = Object;
+    const _Object2 = Object;
+    const entries = Object.entries(bot.integration_types_config);
+    fromEntriesResult = Object.fromEntries(entries.map((arg0) => {
+      let obj;
+      let tmp;
+      [tmp, obj] = arg0;
+      const items = [tmp, ];
+      if (obj == null) {
+        obj = {};
       }
-      tmp2.overlayMethods = DEFAULT;
-      hook = arg0.hook;
-      tmp2.hook = null == hook || hook;
-      aliases = arg0.aliases;
-      if (null == aliases) {
-        aliases = [];
+      items[1] = { oauth2InstallParams: obj.oauth2_install_params };
+      return items;
+    }));
+  }
+  obj.integrationTypesConfig = fromEntriesResult;
+  ({ terms_of_service_url: obj.termsOfServiceUrl, privacy_policy_url: obj.privacyPolicyUrl, is_discoverable: obj.isDiscoverable, directory_entry: obj.directoryEntry, categories: obj.categories, linked_games } = bot);
+  let mapped2;
+  if (linked_games != null) {
+    mapped2 = linked_games.map((application) => {
+      const obj = {};
+      const merged = Object.assign(application);
+      let fromServer;
+      if (null != application.application) {
+        fromServer = closure_10.createFromServer(application.application);
       }
-      tmp2.aliases = aliases;
-      publishers = arg0.publishers;
-      if (null == publishers) {
-        publishers = [];
+      obj.application = fromServer;
+      return obj;
+    });
+  }
+  obj.linkedGames = mapped2;
+  ({ deeplink_uri: obj.deepLinkUri, application_account_link_benefit_config: obj.applicationAccountLinkBenefitConfig, parent_id: obj.parentId } = bot);
+  return new ApplicationRecord(obj);
+};
+prototype2["getCanonicalGameId"] = function getCanonicalGameId() {
+  const self = this;
+  if (this.type === ApplicationTypes.GAME) {
+    let castResult = importDefault(11).cast(self.id);
+    const obj = importDefault(11);
+  } else {
+    const linkedGames = self.linkedGames;
+    castResult = undefined;
+    if (linkedGames != null) {
+      const found = linkedGames.find((application) => {
+        application = application.application;
+        let type;
+        if (application != null) {
+          type = application.type;
+        }
+        return type === constants.GAME;
+      });
+      if (found != null) {
+        castResult = found.id;
       }
-      tmp2.publishers = publishers;
-      developers = arg0.developers;
-      if (null == developers) {
-        developers = [];
-      }
-      tmp2.developers = developers;
-      ({ storeListingSkuId: tmp2.storeListingSkuId, guildId: tmp2.guildId, guild: tmp2.guild, executables } = arg0);
-      if (null == executables) {
-        executables = [];
-      }
-      tmp2.executables = executables.map(outer1_15);
-      hashes = arg0.hashes;
-      if (null == hashes) {
-        hashes = [];
-      }
-      tmp2.hashes = hashes;
-      ({ eulaId: tmp2.eulaId, slug: tmp2.slug } = arg0);
-      obj = outer1_2(outer1_3[14]);
-      flags = arg0.flags;
-      num2 = 0;
-      if (null != flags) {
-        num2 = flags;
-      }
-      tmp2.flags = obj.deserialize(num2);
-      tags = arg0.tags;
-      if (null == tags) {
-        tags = [];
-      }
-      tmp2.tags = tags;
-      ({ maxParticipants: tmp2.maxParticipants, embedded_activity_config } = arg0);
-      if (null == embedded_activity_config) {
-        embedded_activity_config = arg0.embeddedActivityConfig;
-      }
-      tmp2.embeddedActivityConfig = embedded_activity_config;
-      ({ team: tmp2.team, integrationTypesConfig: tmp2.integrationTypesConfig, storefront_available: tmp2.storefront_available, termsOfServiceUrl: tmp2.termsOfServiceUrl, privacyPolicyUrl: tmp2.privacyPolicyUrl, is_discoverable } = arg0);
-      if (null == is_discoverable) {
-        is_discoverable = arg0.isDiscoverable;
-      }
-      tmp2.isDiscoverable = is_discoverable;
-      customInstallUrl = arg0.custom_install_url;
-      if (null == customInstallUrl) {
-        customInstallUrl = arg0.customInstallUrl;
-      }
-      tmp2.customInstallUrl = customInstallUrl;
-      installParams = arg0.install_params;
-      if (null == installParams) {
-        installParams = arg0.installParams;
-      }
-      tmp2.installParams = installParams;
-      directoryEntry = arg0.directory_entry;
-      if (null == directoryEntry) {
-        directoryEntry = arg0.directoryEntry;
-      }
-      tmp2.directoryEntry = directoryEntry;
-      ({ categories: tmp2.categories, linked_games } = arg0);
-      mapped = undefined;
-      if (null != linked_games) {
-        mapped = linked_games.map((application) => {
-          const obj = {};
-          const merged = Object.assign(application);
-          let fromServer;
-          if (null != application.application) {
-            fromServer = outer1_0.createFromServer(application.application);
-          }
-          obj["application"] = fromServer;
-          return obj;
-        });
-      }
-      if (null == mapped) {
-        mapped = arg0.linkedGames;
-      }
-      tmp2.linkedGames = mapped;
-      deeplink_uri = arg0.deepLinkUri;
-      if (null == deeplink_uri) {
-        deeplink_uri = arg0.deeplink_uri;
-      }
-      tmp2.deepLinkUri = deeplink_uri;
-      application_account_link_benefit_config = arg0.applicationAccountLinkBenefitConfig;
-      if (null == application_account_link_benefit_config) {
-        application_account_link_benefit_config = arg0.application_account_link_benefit_config;
-      }
-      tmp2.applicationAccountLinkBenefitConfig = application_account_link_benefit_config;
-      parent_id = arg0.parentId;
-      if (null == parent_id) {
-        parent_id = arg0.parent_id;
-      }
-      tmp2.parentId = parent_id;
-      return tmp2;
+    }
+    if (castResult == null) {
+      castResult = null;
     }
   }
-  callback3(ApplicationRecord, arg0);
-  let obj = {
-    key: "getCanonicalGameId",
-    value() {
-      const self = this;
-      if (this.type === outer1_11.GAME) {
-        let castResult = outer1_1(outer1_3[15]).cast(self.id);
-        const obj = outer1_1(outer1_3[15]);
-      } else {
-        const linkedGames = self.linkedGames;
-        let id;
-        if (null != linkedGames) {
-          const found = linkedGames.find((application) => {
-            application = application.application;
-            let type;
-            if (null != application) {
-              type = application.type;
-            }
-            return type === outer2_11.GAME;
-          });
-          if (null != found) {
-            id = found.id;
+  return castResult;
+};
+prototype2["mergeFromApplicationUpdate"] = function mergeFromApplicationUpdate(id) {
+  const self = this;
+  id = id.id;
+  if (id == null) {
+    id = self.id;
+  }
+  let obj = { id, name: null, icon: null, splash: null, overlay: null, overlayWarn: null, overlayCompatibilityHook: null, overlayMethods: null, hook: null, aliases: null, publishers: null, developers: null, primarySkuId: null, storeListingSkuId: null, thirdPartySkus: null, guildId: null, guild: null, executables: null, hashes: null, description: null, eulaId: null, slug: null, coverImage: null, bot: null, flags: null, maxParticipants: null, tags: null, embeddedActivityConfig: null, type: null, team: null, roleConnectionsVerificationUrl: null, _connectionEntrypointUrl: null, integrationTypesConfig: null, isMonetized: null, storefront_available: null, termsOfServiceUrl: null, privacyPolicyUrl: null, isVerified: null, customInstallUrl: null, installParams: null, isDiscoverable: null, directoryEntry: null, categories: null, linkedGames: null, deepLinkUri: null, applicationAccountLinkBenefitConfig: null, contentClassification: null, parentId: null };
+  let name = id.name;
+  if (name == null) {
+    name = self.name;
+  }
+  obj[1] = name;
+  let icon = id.icon;
+  if (icon == null) {
+    icon = self.icon;
+  }
+  obj[2] = icon;
+  let splash = id.splash;
+  if (splash == null) {
+    splash = self.splash;
+  }
+  obj[3] = splash;
+  let overlay = id.overlay;
+  if (overlay == null) {
+    overlay = self.overlay;
+  }
+  obj[4] = overlay;
+  let overlayWarn = id.overlayWarn;
+  if (overlayWarn == null) {
+    overlayWarn = self.overlayWarn;
+  }
+  obj[5] = overlayWarn;
+  let overlayCompatibilityHook = id.overlayCompatibilityHook;
+  if (overlayCompatibilityHook == null) {
+    overlayCompatibilityHook = self.overlayCompatibilityHook;
+  }
+  obj[6] = overlayCompatibilityHook;
+  let overlayMethods = id.overlayMethods;
+  if (overlayMethods == null) {
+    overlayMethods = self.overlayMethods;
+  }
+  obj[7] = overlayMethods;
+  let hook = id.hook;
+  if (hook == null) {
+    hook = self.hook;
+  }
+  obj[8] = hook;
+  let aliases = id.aliases;
+  if (aliases == null) {
+    aliases = self.aliases;
+  }
+  obj[9] = aliases;
+  let publishers = id.publishers;
+  if (publishers == null) {
+    publishers = self.publishers;
+  }
+  obj[10] = publishers;
+  let developers = id.developers;
+  if (developers == null) {
+    developers = self.developers;
+  }
+  obj[11] = developers;
+  let primarySkuId = id.primarySkuId;
+  if (primarySkuId == null) {
+    primarySkuId = self.primarySkuId;
+  }
+  obj[12] = primarySkuId;
+  let storeListingSkuId = id.storeListingSkuId;
+  if (storeListingSkuId == null) {
+    storeListingSkuId = self.storeListingSkuId;
+  }
+  obj[13] = storeListingSkuId;
+  let thirdPartySkus = id.thirdPartySkus;
+  if (thirdPartySkus == null) {
+    thirdPartySkus = self.thirdPartySkus;
+  }
+  obj[14] = thirdPartySkus;
+  let guildId = id.guildId;
+  if (guildId == null) {
+    guildId = self.guildId;
+  }
+  obj[15] = guildId;
+  let guild = id.guild;
+  if (guild == null) {
+    guild = self.guild;
+  }
+  obj[16] = guild;
+  let executables = id.executables;
+  if (executables == null) {
+    executables = self.executables;
+  }
+  obj[17] = executables;
+  let hashes = id.hashes;
+  if (hashes == null) {
+    hashes = self.hashes;
+  }
+  obj[18] = hashes;
+  let description = id.description;
+  if (description == null) {
+    description = self.description;
+  }
+  obj[19] = description;
+  let eulaId = id.eulaId;
+  if (eulaId == null) {
+    eulaId = self.eulaId;
+  }
+  obj[20] = eulaId;
+  let slug = id.slug;
+  if (slug == null) {
+    slug = self.slug;
+  }
+  obj[21] = slug;
+  let coverImage = id.coverImage;
+  if (coverImage == null) {
+    coverImage = self.coverImage;
+  }
+  obj[22] = coverImage;
+  let bot = id.bot;
+  if (bot == null) {
+    bot = self.bot;
+  }
+  obj[23] = bot;
+  let flags = id.flags;
+  if (flags == null) {
+    flags = self.flags;
+  }
+  obj[24] = flags;
+  let maxParticipants = id.maxParticipants;
+  if (maxParticipants == null) {
+    maxParticipants = self.maxParticipants;
+  }
+  obj[25] = maxParticipants;
+  let tags = id.tags;
+  if (tags == null) {
+    tags = self.tags;
+  }
+  obj[26] = tags;
+  let embeddedActivityConfig = id.embeddedActivityConfig;
+  if (embeddedActivityConfig == null) {
+    let tmp2;
+    if (null != self.embeddedActivityConfig) {
+      obj = {};
+      let merged = Object.assign(self.embeddedActivityConfig);
+      tmp2 = obj;
+    }
+    embeddedActivityConfig = tmp2;
+  }
+  obj[27] = embeddedActivityConfig;
+  let type = id.type;
+  if (type == null) {
+    type = self.type;
+  }
+  obj[28] = type;
+  let team = id.team;
+  if (team == null) {
+    team = self.team;
+  }
+  obj[29] = team;
+  let roleConnectionsVerificationUrl = id.roleConnectionsVerificationUrl;
+  if (roleConnectionsVerificationUrl == null) {
+    roleConnectionsVerificationUrl = self.roleConnectionsVerificationUrl;
+  }
+  obj[30] = roleConnectionsVerificationUrl;
+  let _connectionEntrypointUrl = id._connectionEntrypointUrl;
+  if (_connectionEntrypointUrl == null) {
+    _connectionEntrypointUrl = self._connectionEntrypointUrl;
+  }
+  obj[31] = _connectionEntrypointUrl;
+  let integrationTypesConfig = id.integrationTypesConfig;
+  if (integrationTypesConfig == null) {
+    integrationTypesConfig = self.integrationTypesConfig;
+  }
+  obj[32] = integrationTypesConfig;
+  let isMonetized = id.isMonetized;
+  if (isMonetized == null) {
+    isMonetized = self.isMonetized;
+  }
+  obj[33] = isMonetized;
+  let storefront_available = id.storefront_available;
+  if (storefront_available == null) {
+    storefront_available = self.storefront_available;
+  }
+  obj[34] = storefront_available;
+  let termsOfServiceUrl = id.termsOfServiceUrl;
+  if (termsOfServiceUrl == null) {
+    termsOfServiceUrl = self.termsOfServiceUrl;
+  }
+  obj[35] = termsOfServiceUrl;
+  let privacyPolicyUrl = id.privacyPolicyUrl;
+  if (privacyPolicyUrl == null) {
+    privacyPolicyUrl = self.privacyPolicyUrl;
+  }
+  obj[36] = privacyPolicyUrl;
+  let isVerified = id.isVerified;
+  if (isVerified == null) {
+    isVerified = self.isVerified;
+  }
+  obj[37] = isVerified;
+  let customInstallUrl = id.customInstallUrl;
+  if (customInstallUrl == null) {
+    customInstallUrl = self.customInstallUrl;
+  }
+  obj[38] = customInstallUrl;
+  let installParams = id.installParams;
+  if (installParams == null) {
+    installParams = self.installParams;
+  }
+  obj[39] = installParams;
+  let isDiscoverable = id.isDiscoverable;
+  if (isDiscoverable == null) {
+    isDiscoverable = self.isDiscoverable;
+  }
+  obj[40] = isDiscoverable;
+  let directoryEntry = id.directoryEntry;
+  if (directoryEntry == null) {
+    directoryEntry = self.directoryEntry;
+  }
+  obj[41] = directoryEntry;
+  let categories = id.categories;
+  if (categories == null) {
+    categories = self.categories;
+  }
+  obj[42] = categories;
+  let linkedGames = id.linkedGames;
+  linkedGames = self.linkedGames;
+  let tmp5 = linkedGames;
+  if (null != linkedGames) {
+    let mapped = linkedGames;
+    if (null != linkedGames) {
+      mapped = linkedGames.map((application) => {
+        const linkedGames = application;
+        if (null != application.application) {
+          return application;
+        } else {
+          const found = linkedGames.find((id) => id.id === application.id);
+          application = undefined;
+          if (found != null) {
+            application = found.application;
           }
-        }
-        castResult = null;
-        if (null != id) {
-          castResult = id;
-        }
-      }
-      return castResult;
-    }
-  };
-  let items = [obj, , , , , ];
-  obj = {
-    key: "mergeFromApplicationUpdate",
-    value(id) {
-      const self = this;
-      let tmp = linkedGames;
-      let obj = {};
-      id = id.id;
-      if (null == id) {
-        id = self.id;
-      }
-      obj.id = id;
-      let name = id.name;
-      if (null == name) {
-        name = self.name;
-      }
-      obj.name = name;
-      let icon = id.icon;
-      if (null == icon) {
-        icon = self.icon;
-      }
-      obj.icon = icon;
-      let splash = id.splash;
-      if (null == splash) {
-        splash = self.splash;
-      }
-      obj.splash = splash;
-      let overlay = id.overlay;
-      if (null == overlay) {
-        overlay = self.overlay;
-      }
-      obj.overlay = overlay;
-      let overlayWarn = id.overlayWarn;
-      if (null == overlayWarn) {
-        overlayWarn = self.overlayWarn;
-      }
-      obj.overlayWarn = overlayWarn;
-      let overlayCompatibilityHook = id.overlayCompatibilityHook;
-      if (null == overlayCompatibilityHook) {
-        overlayCompatibilityHook = self.overlayCompatibilityHook;
-      }
-      obj.overlayCompatibilityHook = overlayCompatibilityHook;
-      let overlayMethods = id.overlayMethods;
-      if (null == overlayMethods) {
-        overlayMethods = self.overlayMethods;
-      }
-      obj.overlayMethods = overlayMethods;
-      let hook = id.hook;
-      if (null == hook) {
-        hook = self.hook;
-      }
-      obj.hook = hook;
-      let aliases = id.aliases;
-      if (null == aliases) {
-        aliases = self.aliases;
-      }
-      obj.aliases = aliases;
-      let publishers = id.publishers;
-      if (null == publishers) {
-        publishers = self.publishers;
-      }
-      obj.publishers = publishers;
-      let developers = id.developers;
-      if (null == developers) {
-        developers = self.developers;
-      }
-      obj.developers = developers;
-      let primarySkuId = id.primarySkuId;
-      if (null == primarySkuId) {
-        primarySkuId = self.primarySkuId;
-      }
-      obj.primarySkuId = primarySkuId;
-      let storeListingSkuId = id.storeListingSkuId;
-      if (null == storeListingSkuId) {
-        storeListingSkuId = self.storeListingSkuId;
-      }
-      obj.storeListingSkuId = storeListingSkuId;
-      let thirdPartySkus = id.thirdPartySkus;
-      if (null == thirdPartySkus) {
-        thirdPartySkus = self.thirdPartySkus;
-      }
-      obj.thirdPartySkus = thirdPartySkus;
-      let guildId = id.guildId;
-      if (null == guildId) {
-        guildId = self.guildId;
-      }
-      obj.guildId = guildId;
-      let guild = id.guild;
-      if (null == guild) {
-        guild = self.guild;
-      }
-      obj.guild = guild;
-      let executables = id.executables;
-      if (null == executables) {
-        executables = self.executables;
-      }
-      obj.executables = executables;
-      let hashes = id.hashes;
-      if (null == hashes) {
-        hashes = self.hashes;
-      }
-      obj.hashes = hashes;
-      let description = id.description;
-      if (null == description) {
-        description = self.description;
-      }
-      obj.description = description;
-      let eulaId = id.eulaId;
-      if (null == eulaId) {
-        eulaId = self.eulaId;
-      }
-      obj.eulaId = eulaId;
-      let slug = id.slug;
-      if (null == slug) {
-        slug = self.slug;
-      }
-      obj.slug = slug;
-      let coverImage = id.coverImage;
-      if (null == coverImage) {
-        coverImage = self.coverImage;
-      }
-      obj.coverImage = coverImage;
-      let bot = id.bot;
-      if (null == bot) {
-        bot = self.bot;
-      }
-      obj.bot = bot;
-      let flags = id.flags;
-      if (null == flags) {
-        flags = self.flags;
-      }
-      obj.flags = flags;
-      let maxParticipants = id.maxParticipants;
-      if (null == maxParticipants) {
-        maxParticipants = self.maxParticipants;
-      }
-      obj.maxParticipants = maxParticipants;
-      let tags = id.tags;
-      if (null == tags) {
-        tags = self.tags;
-      }
-      obj.tags = tags;
-      let embeddedActivityConfig = id.embeddedActivityConfig;
-      if (null == embeddedActivityConfig) {
-        let tmp2;
-        if (null != self.embeddedActivityConfig) {
-          obj = {};
-          let merged = Object.assign(self.embeddedActivityConfig);
-          tmp2 = obj;
-        }
-        embeddedActivityConfig = tmp2;
-      }
-      obj.embeddedActivityConfig = embeddedActivityConfig;
-      let type = id.type;
-      if (null == type) {
-        type = self.type;
-      }
-      obj.type = type;
-      let team = id.team;
-      if (null == team) {
-        team = self.team;
-      }
-      obj.team = team;
-      let roleConnectionsVerificationUrl = id.roleConnectionsVerificationUrl;
-      if (null == roleConnectionsVerificationUrl) {
-        roleConnectionsVerificationUrl = self.roleConnectionsVerificationUrl;
-      }
-      obj.roleConnectionsVerificationUrl = roleConnectionsVerificationUrl;
-      let _connectionEntrypointUrl = id._connectionEntrypointUrl;
-      if (null == _connectionEntrypointUrl) {
-        _connectionEntrypointUrl = self._connectionEntrypointUrl;
-      }
-      obj._connectionEntrypointUrl = _connectionEntrypointUrl;
-      let integrationTypesConfig = id.integrationTypesConfig;
-      if (null == integrationTypesConfig) {
-        integrationTypesConfig = self.integrationTypesConfig;
-      }
-      obj.integrationTypesConfig = integrationTypesConfig;
-      let isMonetized = id.isMonetized;
-      if (null == isMonetized) {
-        isMonetized = self.isMonetized;
-      }
-      obj.isMonetized = isMonetized;
-      let storefront_available = id.storefront_available;
-      if (null == storefront_available) {
-        storefront_available = self.storefront_available;
-      }
-      obj.storefront_available = storefront_available;
-      let termsOfServiceUrl = id.termsOfServiceUrl;
-      if (null == termsOfServiceUrl) {
-        termsOfServiceUrl = self.termsOfServiceUrl;
-      }
-      obj.termsOfServiceUrl = termsOfServiceUrl;
-      let privacyPolicyUrl = id.privacyPolicyUrl;
-      if (null == privacyPolicyUrl) {
-        privacyPolicyUrl = self.privacyPolicyUrl;
-      }
-      obj.privacyPolicyUrl = privacyPolicyUrl;
-      let isVerified = id.isVerified;
-      if (null == isVerified) {
-        isVerified = self.isVerified;
-      }
-      obj.isVerified = isVerified;
-      let customInstallUrl = id.customInstallUrl;
-      if (null == customInstallUrl) {
-        customInstallUrl = self.customInstallUrl;
-      }
-      obj.customInstallUrl = customInstallUrl;
-      let installParams = id.installParams;
-      if (null == installParams) {
-        installParams = self.installParams;
-      }
-      obj.installParams = installParams;
-      let isDiscoverable = id.isDiscoverable;
-      if (null == isDiscoverable) {
-        isDiscoverable = self.isDiscoverable;
-      }
-      obj.isDiscoverable = isDiscoverable;
-      let directoryEntry = id.directoryEntry;
-      if (null == directoryEntry) {
-        directoryEntry = self.directoryEntry;
-      }
-      obj.directoryEntry = directoryEntry;
-      let categories = id.categories;
-      if (null == categories) {
-        categories = self.categories;
-      }
-      obj.categories = categories;
-      linkedGames = id.linkedGames;
-      linkedGames = self.linkedGames;
-      let tmp5 = linkedGames;
-      if (null != linkedGames) {
-        let mapped = linkedGames;
-        if (null != linkedGames) {
-          mapped = linkedGames.map((application) => {
-            const linkedGames = application;
-            if (null != application.application) {
-              return application;
-            } else {
-              const found = linkedGames.find((id) => id.id === application.id);
-              application = undefined;
-              if (null != found) {
-                application = found.application;
-              }
-              let tmp4 = application;
-              if (null != application) {
-                const obj = {};
-                const merged = Object.assign(application);
-                obj["application"] = found.application;
-                tmp4 = obj;
-              }
-              return tmp4;
-            }
-          });
-        }
-        tmp5 = mapped;
-      }
-      obj.linkedGames = tmp5;
-      let deepLinkUri = id.deepLinkUri;
-      if (null == deepLinkUri) {
-        deepLinkUri = self.deepLinkUri;
-      }
-      obj.deepLinkUri = deepLinkUri;
-      let applicationAccountLinkBenefitConfig = id.applicationAccountLinkBenefitConfig;
-      if (null == applicationAccountLinkBenefitConfig) {
-        applicationAccountLinkBenefitConfig = self.applicationAccountLinkBenefitConfig;
-      }
-      obj.applicationAccountLinkBenefitConfig = applicationAccountLinkBenefitConfig;
-      let contentClassification = id.contentClassification;
-      if (null == contentClassification) {
-        contentClassification = self.contentClassification;
-      }
-      obj.contentClassification = contentClassification;
-      let parentId = id.parentId;
-      if (null == parentId) {
-        parentId = self.parentId;
-      }
-      obj.parentId = parentId;
-      tmp = new tmp(obj);
-      return tmp;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getMaxParticipants",
-    value() {
-      let maxParticipants = this.maxParticipants;
-      if (null == maxParticipants) {
-        maxParticipants = outer1_12[tmp.id];
-      }
-      let num = 0;
-      if (null != maxParticipants) {
-        num = maxParticipants;
-      }
-      return num;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "supportsIntegrationTypes",
-    value(arg0) {
-      const items = [...arguments];
-      const integrationTypesConfig = this.integrationTypesConfig;
-      return null != integrationTypesConfig && items.every((arg0) => arg0 in integrationTypesConfig);
-    }
-  };
-  items[4] = {
-    key: "destinationSkuId",
-    get() {
-      const self = this;
-      return null != this.storeListingSkuId ? self.storeListingSkuId : self.primarySkuId;
-    }
-  };
-  items[5] = {
-    key: "supportsOutOfProcessOverlay",
-    get() {
-      return ApplicationRecord.supportsOutOfProcessOverlay(this.overlayMethods);
-    }
-  };
-  const items1 = [
-    {
-      key: "createFromServer",
-      value(cover_image) {
-        let linked_games;
-        let overlay_methods;
-        let tmp = ApplicationRecord;
-        let obj = {};
-        let merged = Object.assign(cover_image);
-        obj["coverImage"] = cover_image.cover_image;
-        obj["primarySkuId"] = cover_image.primary_sku_id;
-        let tmp3 = null;
-        if (null != cover_image.bot) {
-          const prototype = outer1_10.prototype;
-          tmp3 = new outer1_10(cover_image.bot);
-        }
-        obj["bot"] = tmp3;
-        obj["thirdPartySkus"] = cover_image.third_party_skus;
-        obj["roleConnectionsVerificationUrl"] = cover_image.role_connections_verification_url;
-        obj["overlayWarn"] = cover_image.overlay_warn;
-        ({ overlay_compatibility_hook: obj["overlayCompatibilityHook"], overlay_methods } = cover_image);
-        if (null == overlay_methods) {
-          overlay_methods = ApplicationRecord(outer1_3[13]).ApplicationOverlayMethodFlags.DEFAULT;
-        }
-        obj["overlayMethods"] = overlay_methods;
-        obj["hook"] = cover_image.hook;
-        obj["storeListingSkuId"] = cover_image.store_listing_sku_id;
-        obj["guildId"] = cover_image.guild_id;
-        obj["guild"] = cover_image.guild;
-        if (null != cover_image.publishers) {
-          const publishers = cover_image.publishers;
-          let mapped = publishers.map(outer1_9.createFromServer);
-        } else {
-          mapped = [];
-        }
-        obj["publishers"] = mapped;
-        if (null != cover_image.developers) {
-          const developers = cover_image.developers;
-          let mapped1 = developers.map(outer1_9.createFromServer);
-        } else {
-          mapped1 = [];
-        }
-        obj["developers"] = mapped1;
-        obj["eulaId"] = cover_image.eula_id;
-        obj["slug"] = cover_image.slug;
-        let flags = cover_image.flags_new;
-        if (null == flags) {
-          flags = cover_image.flags;
-        }
-        let num2 = 0;
-        if (null != flags) {
-          num2 = flags;
-        }
-        obj["flags"] = outer1_2(outer1_3[14]).deserialize(num2);
-        obj["maxParticipants"] = cover_image.max_participants;
-        obj["tags"] = cover_image.tags;
-        obj["embeddedActivityConfig"] = cover_image.embedded_activity_config;
-        let fromEntriesResult;
-        if (null != cover_image.integration_types_config) {
-          const _Object = Object;
-          const _Object2 = Object;
-          const entries = Object.entries(cover_image.integration_types_config);
-          fromEntriesResult = Object.fromEntries(entries.map((arg0) => {
-            let obj;
-            let tmp;
-            [tmp, obj] = arg0;
-            const items = [tmp, ];
-            obj = {};
-            if (null == obj) {
-              obj = {};
-            }
-            obj.oauth2InstallParams = obj.oauth2_install_params;
-            items[1] = obj;
-            return items;
-          }));
-        }
-        obj["integrationTypesConfig"] = fromEntriesResult;
-        obj["termsOfServiceUrl"] = cover_image.terms_of_service_url;
-        obj["privacyPolicyUrl"] = cover_image.privacy_policy_url;
-        obj["isDiscoverable"] = cover_image.is_discoverable;
-        obj["directoryEntry"] = cover_image.directory_entry;
-        ({ categories: obj["categories"], linked_games } = cover_image);
-        let mapped2;
-        if (null != linked_games) {
-          mapped2 = linked_games.map((application) => {
+          let tmp4 = application;
+          if (null != application) {
             const obj = {};
             const merged = Object.assign(application);
-            let fromServer;
-            if (null != application.application) {
-              fromServer = outer1_0.createFromServer(application.application);
-            }
-            obj["application"] = fromServer;
-            return obj;
-          });
+            obj.application = found.application;
+            tmp4 = obj;
+          }
+          return tmp4;
         }
-        obj["linkedGames"] = mapped2;
-        obj["deepLinkUri"] = cover_image.deeplink_uri;
-        obj["applicationAccountLinkBenefitConfig"] = cover_image.application_account_link_benefit_config;
-        obj["parentId"] = cover_image.parent_id;
-        tmp = new tmp(obj);
-        return tmp;
-      }
-    },
-    {
-      key: "supportsOutOfProcessOverlay",
-      value(arg0) {
-        const OUT_OF_PROCESS = ApplicationRecord(outer1_3[13]).ApplicationOverlayMethodFlags.OUT_OF_PROCESS;
-        return null != arg0 && (arg0 & OUT_OF_PROCESS) === OUT_OF_PROCESS;
-      }
+      });
     }
-  ];
-  return callback(ApplicationRecord, items, items1);
-})(tmp4);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("records/ApplicationRecord.tsx");
+    tmp5 = mapped;
+  }
+  obj[43] = tmp5;
+  let deepLinkUri = id.deepLinkUri;
+  if (deepLinkUri == null) {
+    deepLinkUri = self.deepLinkUri;
+  }
+  obj[44] = deepLinkUri;
+  let applicationAccountLinkBenefitConfig = id.applicationAccountLinkBenefitConfig;
+  if (applicationAccountLinkBenefitConfig == null) {
+    applicationAccountLinkBenefitConfig = self.applicationAccountLinkBenefitConfig;
+  }
+  obj[45] = applicationAccountLinkBenefitConfig;
+  let contentClassification = id.contentClassification;
+  if (contentClassification == null) {
+    contentClassification = self.contentClassification;
+  }
+  obj[46] = contentClassification;
+  let parentId = id.parentId;
+  if (parentId == null) {
+    parentId = self.parentId;
+  }
+  obj[47] = parentId;
+  return new ApplicationRecord(obj);
+};
+prototype2["getMaxParticipants"] = function getMaxParticipants() {
+  let num = this.maxParticipants;
+  if (num == null) {
+    num = table[tmp.id];
+  }
+  if (num == null) {
+    num = 0;
+  }
+  return num;
+};
+prototype2["supportsIntegrationTypes"] = function supportsIntegrationTypes() {
+  const items = [...arguments];
+  let integrationTypesConfig;
+  integrationTypesConfig = this.integrationTypesConfig;
+  return null != integrationTypesConfig && items.every((arg0) => arg0 in integrationTypesConfig);
+};
+Object.defineProperty(prototype2, "destinationSkuId", {
+  get: function destinationSkuId() {
+    const self = this;
+    return null != this.storeListingSkuId ? self.storeListingSkuId : self.primarySkuId;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype2, "supportsOutOfProcessOverlay", {
+  get: function supportsOutOfProcessOverlay() {
+    return ApplicationRecord.supportsOutOfProcessOverlay(this.overlayMethods);
+  },
+  set: undefined
+});
+ApplicationRecord["supportsOutOfProcessOverlay"] = function supportsOutOfProcessOverlay(arg0) {
+  const OUT_OF_PROCESS = require(4218) /* ApplicationOverlayMethodFlags */.ApplicationOverlayMethodFlags.OUT_OF_PROCESS;
+  return null != arg0 && (arg0 & OUT_OF_PROCESS) === OUT_OF_PROCESS;
+};
+const result = require("createdAt").fileFinishedImporting("records/ApplicationRecord.tsx");
 
-export default tmp5;
+export default ApplicationRecord;
 export { createExecutable };
-export const BasicApplicationRecord = tmp4;
+export { BasicApplicationRecord };

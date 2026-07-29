@@ -1,29 +1,29 @@
-// Module ID: 15292
-// Function ID: 116242
+// Module ID: 15325
+// Function ID: 15326
 // Name: ICYMICustomScoresModal
-// Dependencies: [31, 33, 9085, 4165, 689, 5552, 9094, 1212, 10163, 15293, 15294, 2]
+// Dependencies: [19, 21, 9109, 4189, 712, 5570, 9118, 1236, 10184, 15326, 15327, 2]
 // Exports: default
 
-// Module 15292 (ICYMICustomScoresModal)
-import "result";
+// Module 15325 (ICYMICustomScoresModal)
+import "noop";
 import jsxProd from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
+({ jsx: c3, jsxs: c4 } = jsxProd);
 createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigator();
-createNativeStackNavigator = {};
-createNativeStackNavigator = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-createNativeStackNavigator.header = createNativeStackNavigator;
-createNativeStackNavigator = _createForOfIteratorHelperLoose.createStyles(createNativeStackNavigator);
+createNativeStackNavigator = { header: null };
+createNativeStackNavigator = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createNativeStackNavigator[0] = createNativeStackNavigator;
+createNativeStackNavigator = createCacheKey.createStyles(createNativeStackNavigator);
 const result = require("createNativeStackNavigator").fileFinishedImporting("modules/icymi/native/custom_scores/ICYMICustomScoresModal.tsx");
 
 export default function ICYMICustomScoresModal() {
   const _require = createNativeStackNavigator();
-  let obj = _require(5552);
+  let obj = _require(5570);
   let closure_1 = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions() {
@@ -31,30 +31,28 @@ export default function ICYMICustomScoresModal() {
       return {
         headerStyle: lib.header,
         headerTitle(children) {
-          let obj = Object.create(null);
-          obj.children = 0;
-          const merged = Object.assign(children, obj);
-          obj = { title: children.children };
+          const merged = Object.assign(children, Object.create(null));
           const merged1 = Object.assign(merged);
-          return outer2_3(callback(outer2_2[6]).GenericHeaderTitle, obj);
+          return callback2(callback(table[6]).GenericHeaderTitle, { title: children.children });
         },
         headerTitleAlign: "center"
       };
     },
-    initialRouteName: "default"
+    initialRouteName: "default",
+    children: null
   };
   obj = {
     name: "default",
     options(navigation) {
-      const obj = {};
-      const intl = lib(outer1_2[7]).intl;
-      obj.title = intl.string(lib(outer1_2[7]).t.jVshKt);
-      obj.headerLeft = lib(outer1_2[6]).getRenderModalCloseImage(navigation.navigation);
-      const merged = Object.assign(callback(outer1_2[8])());
+      const obj = { title: null, headerLeft: null };
+      const intl = lib(1236).intl;
+      obj[0] = intl.string(lib(1236).t.jVshKt);
+      obj[1] = lib(9118).getRenderModalCloseImage(navigation.navigation);
+      const merged = Object.assign(callback(10184)());
       return obj;
     },
     getComponent() {
-      return lib(outer1_2[9]).default;
+      return lib(15326).default;
     }
   };
   const items = [
@@ -62,14 +60,15 @@ export default function ICYMICustomScoresModal() {
     callback(createNativeStackNavigator.Screen, {
       name: "guild",
       options(navigation) {
-        const obj = { headerLeft: lib(outer1_2[6]).getRenderModalBackImage(navigation.navigation) };
+        const obj = { headerLeft: null };
+        obj[0] = lib(9118).getRenderModalBackImage(navigation.navigation);
         return obj;
       },
       getComponent() {
-        return lib(outer1_2[10]).default;
+        return lib(15327).default;
       }
     })
   ];
-  obj.children = items;
+  obj[2] = items;
   return callback2(createNativeStackNavigator.Navigator, obj);
 };

@@ -1,12 +1,12 @@
-// Module ID: 9894
-// Function ID: 76534
+// Module ID: 9916
+// Function ID: 9917
 // Name: useShareChatInputActions
-// Dependencies: [57, 31, 1853, 9312, 2]
+// Dependencies: [32, 19, 1877, 9336, 2]
 // Exports: useShareChatInputActions
 
-// Module 9894 (useShareChatInputActions)
+// Module 9916 (useShareChatInputActions)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { EmojiIntention } from "set";
 
 const require = arg1;
@@ -43,7 +43,7 @@ export const useShareChatInputActions = function useShareChatInputActions(setTex
         return sum + arr.slice(outer1_4.current.end);
       });
       const current = ref.current;
-      if (null != current) {
+      if (current != null) {
         current.focus();
       }
     }
@@ -58,7 +58,7 @@ export const useShareChatInputActions = function useShareChatInputActions(setTex
   }, items);
   const callback4 = ref.useCallback(() => {
     const current = ref.current;
-    if (null != current) {
+    if (current != null) {
       current.focus();
     }
   }, []);
@@ -72,20 +72,16 @@ export const useShareChatInputActions = function useShareChatInputActions(setTex
     handleMessageBlur: callback2,
     handlePressEmoji: ref.useCallback(() => {
       const current = ref.current;
-      if (null != current) {
+      if (current != null) {
         current.blur();
       }
       let obj = setText(selectedDestinationChannel[3]);
-      obj = { onPressEmoji: callback3, onClose: callback4, pickerIntention: constants.CHAT, autoFocus: false, startExpanded: false, channel: selectedDestinationChannel, appEntryKey: _slicedToArray };
+      obj = { onPressEmoji: callback3, onClose: callback4, pickerIntention: constants.CHAT, autoFocus: false, startExpanded: false, channel: selectedDestinationChannel, appEntryKey: _slicedToArray, guildId: null };
       let guildId;
-      if (null != selectedDestinationChannel) {
+      if (selectedDestinationChannel != null) {
         guildId = selectedDestinationChannel.getGuildId();
       }
-      let tmp4;
-      if (null != guildId) {
-        tmp4 = guildId;
-      }
-      obj.guildId = tmp4;
+      obj[7] = guildId;
       const result = obj.openEmojiPickerActionSheet(obj);
     }, items1)
   };

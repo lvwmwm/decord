@@ -1,11 +1,11 @@
-// Module ID: 15726
-// Function ID: 121142
+// Module ID: 15762
+// Function ID: 15763
 // Name: markAsDismissed
-// Dependencies: [31, 1852, 653, 1345, 33, 5497, 5517, 675, 6483, 9297, 6196, 5221, 15727, 2]
+// Dependencies: [19, 1876, 676, 1369, 21, 5515, 5535, 698, 6504, 9321, 6216, 5243, 15763, 2]
 // Exports: default
 
-// Module 15726 (markAsDismissed)
-import result from "result";
+// Module 15762 (markAsDismissed)
+import noop from "noop";
 import GuildFeatures from "GuildFeatures";
 import ME from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -14,40 +14,42 @@ import { jsx } from "jsxProd";
 let AnalyticsObjectTypes;
 let AnalyticsPages;
 let AnalyticsSections;
-let closure_4;
-let closure_5;
+let c4;
+let c5;
+let closure_6;
 const require = arg1;
-({ PremiumTypes: closure_4, SubscriptionPlanInfo: closure_5 } = GuildFeatures);
-const AnalyticEvents = ME.AnalyticEvents;
-({ AnalyticsObjectTypes, AnalyticsPages, AnalyticsSections } = ME);
+({ PremiumTypes: c4, SubscriptionPlanInfo: c5 } = GuildFeatures);
+({ AnalyticEvents: closure_6, AnalyticsObjectTypes, AnalyticsPages, AnalyticsSections } = ME);
 let closure_9 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_PREMIUM, objectType: AnalyticsObjectTypes.BUY };
 const result = require("ME").fileFinishedImporting("modules/premium/native/discounts/PremiumDiscountOfferActionSheet.tsx");
 
 export default function _default(markAsDismissed) {
   markAsDismissed = markAsDismissed.markAsDismissed;
   const userDiscountOffer = markAsDismissed.userDiscountOffer;
+  let analyticsLocations;
+  let memo;
   analyticsLocations = userDiscountOffer(analyticsLocations[5])(userDiscountOffer(analyticsLocations[6]).PREMIUM_DISCOUNT_OFFER_ACTION_SHEET).analyticsLocations;
   const items = [userDiscountOffer];
   memo = memo.useMemo(() => {
     let first;
-    if (null != userDiscountOffer) {
+    if (userDiscountOffer != null) {
       const discount = userDiscountOffer.discount;
-      if (null != discount) {
+      if (discount != null) {
         const planIds = discount.planIds;
-        if (null != planIds) {
+        if (planIds != null) {
           first = planIds[0];
         }
       }
     }
-    let tmp3 = null;
+    let tmp2 = null;
     if (null != first) {
-      tmp3 = outer1_5[first];
+      tmp2 = outer1_5[first];
     }
     let premiumType;
-    if (null != tmp3) {
-      premiumType = tmp3.premiumType;
+    if (tmp2 != null) {
+      premiumType = tmp2.premiumType;
     }
-    if (null == premiumType) {
+    if (premiumType == null) {
       premiumType = outer1_4.TIER_2;
     }
     return premiumType;
@@ -55,9 +57,11 @@ export default function _default(markAsDismissed) {
   const effect = memo.useEffect(() => {
     if (null != userDiscountOffer) {
       let obj = userDiscountOffer(analyticsLocations[7]);
-      obj = { location: analyticsLocations, discount_offer_id: userDiscountOffer.id };
+      obj = { location: null, discount_offer_id: null };
+      obj[0] = analyticsLocations;
+      obj[1] = tmp.id;
       obj.track(outer1_6.PREMIUM_DISCOUNT_OFFER_ACTION_SHEET_VIEWED, obj);
-      markAsDismissed(analyticsLocations[8]).acknowledgeUserOffer(undefined, userDiscountOffer);
+      markAsDismissed(analyticsLocations[8]).acknowledgeUserOffer(undefined, tmp);
       const obj3 = markAsDismissed(analyticsLocations[8]);
     }
   }, []);
@@ -71,26 +75,29 @@ export default function _default(markAsDismissed) {
   const items3 = [analyticsLocations, markAsDismissed, userDiscountOffer, memo];
   const callback = memo.useCallback(() => {
     let obj = userDiscountOffer(analyticsLocations[7]);
-    obj = { location: analyticsLocations };
+    obj = { location: analyticsLocations, discount_offer_id: null };
     let id;
-    if (null != userDiscountOffer) {
+    if (userDiscountOffer != null) {
       id = userDiscountOffer.id;
     }
-    obj.discount_offer_id = id;
+    obj[1] = id;
     obj.track(outer1_6.PREMIUM_DISCOUNT_OFFER_ACTION_SHEET_DISMISSED, obj);
     markAsDismissed(outer1_7.USER_DISMISS);
   }, items2);
-  let tmp8Result = null;
+  let tmp10Result = null;
   if (null != userDiscountOffer) {
-    let obj = { startExpanded: true, onDismiss: callback };
-    obj = { discountOffer: userDiscountOffer, onConfirm: tmp6 };
-    obj.children = jsx(userDiscountOffer(analyticsLocations[12]), { discountOffer: userDiscountOffer, onConfirm: tmp6 });
+    let obj = { startExpanded: true, onDismiss: null, children: null };
+    obj[1] = callback;
+    obj = { discountOffer: null, onConfirm: null };
+    obj[0] = userDiscountOffer;
+    obj[1] = tmp8;
+    obj[2] = jsx(userDiscountOffer(tmp2[12]), { discountOffer: null, onConfirm: null });
     let id;
-    if (null != userDiscountOffer) {
+    if (userDiscountOffer != null) {
       id = userDiscountOffer.id;
     }
-    tmp8Result = jsx(markAsDismissed(analyticsLocations[11]).BottomSheet, { discountOffer: userDiscountOffer, onConfirm: tmp6 }, id);
-    const tmp8 = jsx;
+    tmp10Result = jsx(markAsDismissed(tmp2[11]).BottomSheet, { discountOffer: null, onConfirm: null }, id);
+    const tmp10 = jsx;
   }
-  return tmp8Result;
+  return tmp10Result;
 };

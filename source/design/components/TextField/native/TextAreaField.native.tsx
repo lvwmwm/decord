@@ -1,106 +1,109 @@
-// Module ID: 7622
-// Function ID: 60832
-// Name: getLengthRemainingTextColor
-// Dependencies: [31, 27, 33, 4165, 689, 6719, 6713, 3871, 7623, 1212, 6722, 4161, 2]
+// Module ID: 7645
+// Function ID: 7646
+// Name: TextAreaField
+// Dependencies: [19, 17, 21, 4189, 712, 6740, 6734, 3895, 7646, 1236, 6743, 4185, 2]
 
-// Module 7622 (getLengthRemainingTextColor)
+// Module 7645 (TextAreaField)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-function getLengthRemainingTextColor(maxLength, diff) {
-  let str = "text-muted";
-  let str2 = "text-muted";
-  if (null != maxLength) {
-    str2 = str;
-    if (null != diff) {
-      let str3 = "text-feedback-critical";
-      if (diff > 0) {
-        if (diff < maxLength / 9) {
-          str = "text-feedback-warning";
-        }
-        str3 = str;
-      }
-      str2 = str3;
-    }
-  }
-  return str2;
-}
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-let obj = { area: { height: 128, textAlignVertical: "top" } };
-obj = { position: "absolute", bottom: require("_createForOfIteratorHelperLoose").space.PX_4, right: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.maxLengthIndicator = obj;
-let closure_5 = _createForOfIteratorHelperLoose.createStyles(obj);
-const forwardRefResult = require("result").forwardRef((isDisabled) => {
+({ jsx: c3, jsxs: c4 } = jsxProd);
+let obj = { area: { height: 128, textAlignVertical: "top" }, maxLengthIndicator: null };
+obj = { position: "absolute", bottom: require("Themes").space.PX_4, right: require("Themes").space.PX_16 };
+obj[1] = obj;
+let closure_5 = createCacheKey.createStyles(obj);
+const forwardRefResult = require("noop").forwardRef((isDisabled, ref) => {
   let focusProps;
   let innerRef;
   let inputProps;
   let isFocused;
+  let state;
   let label = isDisabled;
-  let obj = require(6719) /* useInputStyles */;
+  let obj = dependencyMap;
+  let obj1 = require(6740) /* useInputStyles */;
   obj = { size: "lg", isRound: false, isDisabled: isDisabled.isDisabled };
-  const inputStyles = obj.useInputStyles(obj);
+  const inputStyles = obj1.useInputStyles(obj);
   const tmp2 = callback2();
   const maxLength = isDisabled.maxLength;
-  let obj2 = require(6713) /* useTextFieldState */;
-  const textField = obj2.useTextField(isDisabled, arg1);
-  ({ inputProps, innerRef } = textField);
-  let obj3 = require(3871) /* getNodeText */;
-  const focus = obj3.useFocus();
+  let obj3 = require(6734) /* useTextFieldState */;
+  const textField = obj3.useTextField(isDisabled, ref);
+  ({ state, inputProps, innerRef } = textField);
+  let obj4 = require(3895) /* getNodeText */;
+  const focus = obj4.useFocus();
   let diff;
   ({ focusProps, isFocused } = focus);
   if (null != maxLength) {
-    diff = maxLength - iter.value.length;
+    diff = maxLength - state.value.length;
   }
-  let obj4 = require(7623) /* useCharacterLimitAnnouncement */;
-  obj = { currentLength: iter.value.length, maxLength };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.message = intl.string(require(1212) /* getSystemLocale */.t.c2Jqed);
-  const characterLimitAnnouncement = obj4.useCharacterLimitAnnouncement(obj);
-  const obj1 = {};
+  const result = _8Q_k1s(7646);
+  obj = { currentLength: state.value.length, maxLength, message: null };
+  const intl = _8Q_k1s(1236).intl;
+  obj[2] = intl.string(_8Q_k1s(1236).t.c2Jqed);
+  const characterLimitAnnouncement = result.useCharacterLimitAnnouncement(obj);
+  obj1 = {};
   const merged = Object.assign(label);
-  obj1["isFocused"] = isFocused;
-  obj2 = {};
-  const merged1 = Object.assign(require(3871) /* getNodeText */.mergeProps(inputProps, focusProps));
-  obj2["ref"] = innerRef;
+  obj1.isFocused = isFocused;
+  const obj2 = {};
+  const result1 = _8Q_k1s(3895);
+  const merged1 = Object.assign(result1.mergeProps(inputProps, focusProps));
+  obj2.ref = innerRef;
   const items = [, , ];
   ({ padding: arr[0], text: arr[1] } = inputStyles);
   items[2] = tmp2.area;
-  obj2["style"] = items;
-  obj2["placeholderTextColor"] = inputStyles.placeholderText.color;
-  obj2["multiline"] = true;
-  const items1 = [callback(require(6722) /* useKeyboardBlurring */.NativeTextInput, obj2), ];
+  obj2.style = items;
+  obj2.placeholderTextColor = inputStyles.placeholderText.color;
+  obj2.multiline = true;
+  const items1 = [callback(_8Q_k1s(6743).NativeTextInput, obj2), ];
   if (null == diff) {
     items1[1] = null;
-    obj1["children"] = items1;
-    return closure_4(require(6719) /* useInputStyles */.InputFieldContainer, obj1);
+    obj1.children = items1;
+    return closure_4(_8Q_k1s(6740).InputFieldContainer, obj1);
   } else {
-    obj3 = { style: tmp2.maxLengthIndicator };
-    obj4 = { variant: "text-xs/semibold", color: getLengthRemainingTextColor(maxLength, diff) };
-    if ("string" === typeof label.label) {
-      const intl3 = require(1212) /* getSystemLocale */.intl;
-      const obj5 = {};
-      label = label.label;
-      obj5.label = label;
-      obj5.remainingCharacters = diff;
-      let formatToPlainStringResult = intl3.formatToPlainString(require(1212) /* getSystemLocale */.t["8Q+k1s"], obj5);
-    } else {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      const obj6 = { remainingCharacters: diff };
-      formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.fR1cof, obj6);
+    obj3 = { style: null, children: null };
+    obj3[0] = tmp2.maxLengthIndicator;
+    let str3 = "text-muted";
+    let str = "text-muted";
+    if (null != maxLength) {
+      str = str3;
+      if (null != diff) {
+        let str2 = "text-feedback-critical";
+        if (diff > 0) {
+          if (diff < maxLength / 9) {
+            str3 = "text-feedback-warning";
+          }
+          str2 = str3;
+        }
+        str = str2;
+      }
     }
-    obj4.accessibilityLabel = formatToPlainStringResult;
-    obj4.children = diff;
-    obj4 = tmp16(require(4161) /* Text */.Text, obj4);
-    obj3.children = obj4;
-    callback(View, obj3);
-    const tmp17 = View;
+    obj4 = { variant: "text-xs/semibold", color: null, accessibilityLabel: null, children: null };
+    obj4[1] = str;
+    if (typeof label.label === "y") {
+      const intl2 = _8Q_k1s(1236).intl;
+      obj = { label: null, remainingCharacters: null };
+      label = label.label;
+      obj[0] = label;
+      obj[1] = diff;
+      let formatToPlainStringResult = intl2.formatToPlainString(_8Q_k1s, obj);
+    } else {
+      const intl3 = _8Q_k1s(1236).intl;
+      const obj5 = { remainingCharacters: null };
+      obj5[0] = diff;
+      formatToPlainStringResult = intl3.formatToPlainString(_8Q_k1s(1236).t.fR1cof, obj5);
+    }
+    obj4[2] = formatToPlainStringResult;
+    obj4[3] = diff;
+    obj4 = tmp9(_8Q_k1s(4185).Text, obj4);
+    obj3[1] = obj4;
+    tmp9(View, obj3);
+    const tmp13 = View;
   }
 });
-const result = require("jsxProd").fileFinishedImporting("design/components/TextField/native/TextAreaField.native.tsx");
+let result = require("jsxProd").fileFinishedImporting("design/components/TextField/native/TextAreaField.native.tsx");
 
 export const TextAreaField = forwardRefResult;

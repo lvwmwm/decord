@@ -1,264 +1,134 @@
-// Module ID: 11441
-// Function ID: 88773
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 27, 1348, 3802, 1850, 8789, 33, 4165, 689, 5080, 4004, 4355, 22, 8791, 1212, 4161, 8794, 8796, 9892, 11442, 2]
-// Exports: default
+// Module ID: 11465
+// Function ID: 11466
+// Name: matchGroupDMRecipients
+// Dependencies: [32, 19, 17, 1372, 3826, 1874, 8813, 21, 4189, 712, 5102, 4028, 4380, 12, 8815, 1236, 4185, 8818, 8820, 9914, 11466, 2]
+// Exports: default, useSearchGDMNames
 
-// Module 11441 (_createForOfIteratorHelperLoose)
+// Module 11465 (matchGroupDMRecipients)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+import NoResults from "NoResults";
+import { View } from "UserFlashListActions";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserRowModes } from "UserRowModes";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
 let closure_12;
+let unpackModuleId;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
+function matchGroupDMRecipients(trimmed1, recipients) {
+  const obj = recipients.recipients[Symbol.iterator]();
+  while (obj !== undefined) {
+    let tmp2 = user;
+    user = user.getUser(tmp);
+    let tmp4 = user;
+    if (null != user) {
+      let tmp17 = user;
+      let username = tmp4.username;
+      let tmp19 = importDefault;
+      let tmp20 = dependencyMap;
+      let toLocaleLowerCaseResult = username.toLocaleLowerCase();
+      if (importDefault(5102)(trimmed1, toLocaleLowerCaseResult)) {
+        let tmp16 = obj;
+        obj.return();
+        let num3 = 1;
+        return 1;
       } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function matchGroupDMRecipients(trimmed, recipients) {
-  const tmp = _createForOfIteratorHelperLoose(recipients.recipients);
-  const iter = tmp();
-  let iter2 = iter;
-  if (!iter.done) {
-    while (true) {
-      let tmp2 = user;
-      user = user.getUser(iter2.value);
-      if (null != user) {
-        let username = user.username;
-        let tmp22 = importDefault;
-        let tmp23 = dependencyMap;
-        let toLocaleLowerCaseResult = username.toLocaleLowerCase();
-        if (importDefault(5080)(trimmed, toLocaleLowerCaseResult)) {
-          let num3 = 1;
-          return 1;
-        } else {
-          let tmp4 = importDefault;
-          let tmp5 = dependencyMap;
-          let obj = importDefault(4004);
-          let globalName = obj.getGlobalName(user);
-          let toLocaleLowerCaseResult1;
-          if (null != globalName) {
-            toLocaleLowerCaseResult1 = globalName.toLocaleLowerCase();
+        let tmp19Result = tmp19(4028);
+        let tmp5 = user;
+        let globalName = tmp19Result.getGlobalName(tmp4);
+        let toLocaleLowerCaseResult1;
+        if (globalName != null) {
+          toLocaleLowerCaseResult1 = globalName.toLocaleLowerCase();
+        }
+        if (null != toLocaleLowerCaseResult1) {
+          let tmp8 = toLocaleLowerCaseResult1;
+          if (tmp19(5102)(trimmed1, tmp7)) {
+            let tmp15 = obj;
+            obj.return();
+            let num2 = 1;
+            return 1;
           }
-          if (null != toLocaleLowerCaseResult1) {
-            let tmp7 = importDefault;
-            let tmp8 = dependencyMap;
-            if (importDefault(5080)(trimmed, toLocaleLowerCaseResult1)) {
-              break;
-            }
-          }
-          let tmp9 = nickname;
-          nickname = nickname.getNickname(user.id);
-          let toLocaleLowerCaseResult2;
-          if (null != nickname) {
-            toLocaleLowerCaseResult2 = nickname.toLocaleLowerCase();
-          }
-          let tmp11 = globalName;
-          let tmp12 = nickname;
-          let tmp13 = toLocaleLowerCaseResult1;
-          let tmp14 = toLocaleLowerCaseResult2;
-          if (null != toLocaleLowerCaseResult2) {
-            let tmp15 = importDefault;
-            let tmp16 = dependencyMap;
-            let tmp17 = globalName;
-            let tmp18 = nickname;
-            let tmp19 = toLocaleLowerCaseResult1;
-            let tmp20 = toLocaleLowerCaseResult2;
-            if (importDefault(5080)(trimmed, toLocaleLowerCaseResult2)) {
-              let num = 1;
-              return 1;
-            }
+        }
+        let tmp9 = nickname;
+        let tmp10 = user;
+        nickname = nickname.getNickname(tmp4.id);
+        let toLocaleLowerCaseResult2;
+        if (nickname != null) {
+          toLocaleLowerCaseResult2 = nickname.toLocaleLowerCase();
+        }
+        if (null != toLocaleLowerCaseResult2) {
+          let tmp13 = toLocaleLowerCaseResult2;
+          if (tmp19(5102)(trimmed1, tmp12)) {
+            let tmp14 = obj;
+            obj.return();
+            let num = 1;
+            return 1;
           }
         }
       }
-      let iter3 = tmp();
-      iter2 = iter3;
     }
-    return 1;
+    continue;
   }
   return 0;
 }
-function matchGroupDM(recipients, trimmed) {
-  if ("" === trimmed) {
+function matchGroupDM(id, trimmed1) {
+  if ("" === trimmed1) {
     return 0;
   } else {
-    const channelName = require(4355) /* computeDefaultGroupDmNameFromUserIds */.computeChannelName(recipients, closure_8, closure_7);
+    const channelName = require(4380) /* computeChannelName */.computeChannelName(id, mergeGuildAvatar, upsertRelationship);
     const toLocaleLowerCaseResult = channelName.toLocaleLowerCase();
-    let num2 = 3;
-    if (!toLocaleLowerCaseResult.startsWith(trimmed)) {
-      let num4 = 2;
-      if (!importDefault(5080)(trimmed, toLocaleLowerCaseResult)) {
-        num4 = matchGroupDMRecipients(trimmed, recipients);
+    let num = 3;
+    if (!toLocaleLowerCaseResult.startsWith(trimmed1)) {
+      let num2 = 2;
+      if (!importDefault(5102)(trimmed1, toLocaleLowerCaseResult)) {
+        num2 = matchGroupDMRecipients(trimmed1, id);
       }
-      num2 = num4;
+      num = num2;
     }
-    return num2;
+    return num;
   }
 }
-function isMatchNewMessageUserListGroupDM(recipients, arg1, trimmed) {
-  if ("" === trimmed) {
+function isMatchNewMessageUserListGroupDM(recipients, arg1, trimmed1) {
+  if ("" === trimmed1) {
     return 0;
   } else if (0 === arg1.length) {
-    return matchGroupDM(recipients, trimmed);
+    return matchGroupDM(recipients, trimmed1);
   } else {
-    const tmp2 = _createForOfIteratorHelperLoose(arg1);
-    let iter = tmp2();
-    if (!iter.done) {
+    const obj = arg1[Symbol.iterator]();
+    while (obj !== undefined) {
       recipients = recipients.recipients;
-      while (recipients.includes(iter.value)) {
-        let iter2 = tmp2();
-        iter = iter2;
+      if (recipients.includes(tmp5)) {
+        continue;
+      } else {
+        let tmp7 = obj;
+        obj.return();
+        return 0;
       }
-      return 0;
     }
-    return matchGroupDMRecipients(trimmed, recipients);
+    return matchGroupDMRecipients(trimmed1, recipients);
   }
 }
 function filterGroupDMs(isGroupDM) {
   return isGroupDM.isGroupDM();
 }
-function useSearchGDMNames(flag9, selectedUserIds, trimmed) {
-  let closure_0 = flag9;
-  let closure_1 = selectedUserIds;
-  let closure_2 = trimmed;
-  const tmp = callback(React.useState([]), 2);
-  callback = tmp[1];
-  let items = [flag9, selectedUserIds, trimmed];
-  const effect = React.useEffect(() => {
-    if (closure_0) {
-      if ("" !== trimmed) {
-        closure_0 = trimmed.toLocaleLowerCase();
-        const _Object = Object;
-        const values = Object.values(outer1_6.getMutablePrivateChannels());
-        const found = values.filter(outer1_20);
-        const mapped = found.map((arg0) => {
-          const items = [arg0, outer2_19(arg0, outer1_1, closure_0)];
-          return items;
-        });
-        const found1 = mapped.filter((arg0) => {
-          let tmp;
-          [, tmp] = arg0;
-          return tmp > 0;
-        });
-        const obj = selectedUserIds(trimmed[13]);
-        callback(selectedUserIds(trimmed[13]).sortBy(found1, (arg0) => {
-          let tmp;
-          [, tmp] = arg0;
-          return -tmp;
-        }).map((arg0) => {
-          let tmp;
-          [tmp] = arg0;
-          return tmp;
-        }));
-        const sortByResult = selectedUserIds(trimmed[13]).sortBy(found1, (arg0) => {
-          let tmp;
-          [, tmp] = arg0;
-          return -tmp;
-        });
-      } else {
-        callback(outer1_13);
-      }
-    } else {
-      callback(outer1_13);
-    }
-  }, items);
-  return tmp[0];
-}
-({ jsx: closure_10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
+({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = jsxProd);
 let closure_13 = [];
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.searchBarRowContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.noResults = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey = { searchBarRowContainer: null, noResults: null };
+createCacheKey = { paddingTop: require("Themes").space.PX_8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/NewMessageUserList.tsx");
 
 export default function NewMessageUserList(selectedUserIds) {
   let autoFocusSearch;
+  let c3;
+  let c5;
   let defaultNoResultsFound;
   let forceSearchResults;
   let headerSize;
@@ -268,11 +138,17 @@ export default function NewMessageUserList(selectedUserIds) {
   let overrideResults;
   let renderHeader;
   let rowMode;
+  let str;
   let tagListInputRef;
+  let tmp10;
   selectedUserIds = selectedUserIds.selectedUserIds;
+  let flag9 = selectedUserIds;
   const disabledUserIds = selectedUserIds.disabledUserIds;
+  selectedUserIds = disabledUserIds;
   const onSelectUser = selectedUserIds.onSelectUser;
+  let trimmed = onSelectUser;
   const onQueryChanged = selectedUserIds.onQueryChanged;
+  let callback = onQueryChanged;
   let actions = selectedUserIds.actions;
   if (actions === undefined) {
     actions = [];
@@ -317,205 +193,305 @@ export default function NewMessageUserList(selectedUserIds) {
   if (flag8 === undefined) {
     flag8 = false;
   }
-  let flag9 = selectedUserIds.withGDMNames;
+  flag9 = selectedUserIds.withGDMNames;
   if (flag9 === undefined) {
     flag9 = false;
   }
   ({ defaultNoResultsFound, overrideResults } = selectedUserIds);
-  let closure_5;
+  c5 = undefined;
   let c6;
   let c7;
   let memo;
   ref = undefined;
   ({ forceSearchResults, onForceSearchResults, onSearchFocus } = selectedUserIds);
-  const tmp2 = _createForOfIteratorHelperLoose();
-  let tmp3 = onQueryChanged(rowMode.useState(""), 2);
-  let num = 0;
-  closure_5 = tmp3[1];
+  const tmp2 = createCacheKey();
+  let obj = rowMode;
+  [str, c5] = callback(rowMode.useState(""), 2);
   let items = [onQueryChanged];
-  const callback = rowMode.useCallback((arg0) => {
-    callback(arg0);
-    if (null != onQueryChanged) {
-      onQueryChanged(arg0);
+  callback = rowMode.useCallback((arg0) => {
+    _undefined2(arg0);
+    if (_undefined != null) {
+      _undefined(arg0);
     }
   }, items);
-  const trimmed = str.trim();
-  let obj = { query: trimmed, withGuildMembers: flag, withAffinitySuggestions: flag2, withFriends: flag3, withGameFriends: flag4, withFriendSuggestions: flag8, withFriendRequests: flag5, withFriendRequestsIncoming: flag6, withFriendRequestsOutgoing: flag7, excludeCurrentUser: true };
-  const tmp6 = disabledUserIds(onSelectUser[14])(obj);
-  c6 = tmp6;
-  const tmp7 = useSearchGDMNames(flag9, selectedUserIds, trimmed);
-  c7 = tmp7;
-  let items1 = [tmp7, tmp6];
+  trimmed = str.trim();
+  let tmp8 = selectedUserIds(trimmed[14])({ query: trimmed, withGuildMembers: flag, withAffinitySuggestions: flag2, withFriends: flag3, withGameFriends: flag4, withFriendSuggestions: flag8, withFriendRequests: flag5, withFriendRequestsIncoming: flag6, withFriendRequestsOutgoing: flag7, excludeCurrentUser: true });
+  c6 = tmp8;
+  callback = undefined;
+  let tmp3 = callback(rowMode.useState(""), 2);
+  [tmp10, c3] = callback(rowMode.useState([]), 2);
+  let items1 = [flag9, selectedUserIds, trimmed];
+  const effect = rowMode.useEffect(() => {
+    if (closure_0) {
+      if ("" !== trimmed) {
+        closure_0 = obj.toLocaleLowerCase();
+        const _Object = Object;
+        const values = Object.values(_undefined3.getMutablePrivateChannels());
+        const found = values.filter(outer1_18);
+        const mapped = found.map((arg0) => {
+          const items = [arg0, outer2_17(arg0, outer1_1, closure_0)];
+          return items;
+        });
+        const found1 = mapped.filter((arg0) => {
+          let tmp;
+          [, tmp] = arg0;
+          return tmp > 0;
+        });
+        const obj2 = selectedUserIds(trimmed[13]);
+        _undefined(selectedUserIds(trimmed[13]).sortBy(found1, (arg0) => {
+          let tmp;
+          [, tmp] = arg0;
+          return -tmp;
+        }).map((arg0) => {
+          let tmp;
+          [tmp] = arg0;
+          return tmp;
+        }));
+        const sortByResult = selectedUserIds(trimmed[13]).sortBy(found1, (arg0) => {
+          let tmp;
+          [, tmp] = arg0;
+          return -tmp;
+        });
+      } else {
+        _undefined(outer1_13);
+      }
+      obj = trimmed;
+    } else {
+      _undefined(outer1_13);
+    }
+  }, items1);
+  c7 = tmp10;
+  const items2 = [tmp10, tmp8];
   memo = rowMode.useMemo(() => {
-    const mapped = _undefined.map((title) => {
+    let obj = _undefined3;
+    const mapped = _undefined3.map((title) => {
       const items = title.items;
       return { title: title.title, items: items.map((data) => ({ type: "UserSearchItem", data })) };
     });
-    if (0 === _undefined2.length) {
+    if (0 === _undefined4.length) {
       return mapped;
     } else {
-      const obj = {};
-      let intl = selectedUserIds(onSelectUser[15]).intl;
-      obj.title = intl.string(selectedUserIds(onSelectUser[15]).t.qGlQrW);
-      obj.items = _undefined2.map((data) => ({ type: "GroupDMChannelRecord", data }));
-      const findIndexResult = _undefined.findIndex((title) => {
-        const intl = selectedUserIds(onSelectUser[15]).intl;
-        return title.title === intl.string(selectedUserIds(onSelectUser[15]).t.y29JXs);
+      obj = { title: null, items: null };
+      let intl = flag9(trimmed[15]).intl;
+      obj[0] = intl.string(flag9(trimmed[15]).t.qGlQrW);
+      obj[1] = arr2.map((data) => ({ type: "GroupDMChannelRecord", data }));
+      const findIndexResult = obj.findIndex((title) => {
+        const intl = callback(1236).intl;
+        return title.title === intl.string(callback(1236).t.y29JXs);
       });
       if (-1 === findIndexResult) {
         let items = [];
-        let arraySpreadResult = HermesBuiltin.arraySpread(mapped, 0);
-        items[arraySpreadResult] = obj;
-        const sum = arraySpreadResult + 1;
+        items[HermesBuiltin.arraySpread(mapped, 0)] = obj;
         let items1 = items;
       } else {
         items1 = [];
-        arraySpreadResult = HermesBuiltin.arraySpread(mapped.slice(0, findIndexResult), 0);
+        let arraySpreadResult = HermesBuiltin.arraySpread(mapped.slice(0, findIndexResult), 0);
         items1[arraySpreadResult] = obj;
-        const sum1 = arraySpreadResult + 1;
-        HermesBuiltin.arraySpread(mapped.slice(findIndexResult), sum1);
+        arraySpreadResult = HermesBuiltin.arraySpread(mapped.slice(findIndexResult), arraySpreadResult + 1);
       }
       return items1;
     }
-  }, items1);
-  const items2 = [memo];
-  const memo1 = rowMode.useMemo(() => memo.map((items) => items.items.length), items2);
+    arr2 = _undefined4;
+  }, items2);
   const items3 = [memo];
-  const items4 = [memo, selectedUserIds, onSelectUser, disabledUserIds, rowMode];
+  const memo1 = rowMode.useMemo(() => memo.map((items) => items.items.length), items3);
+  const items4 = [memo];
+  const items5 = [memo, selectedUserIds, onSelectUser, disabledUserIds, rowMode];
   const callback1 = rowMode.useCallback((arg0) => {
     const props = { title: memo[arg0].title };
     return { type: "section", props };
-  }, items3);
+  }, items4);
   const callback2 = rowMode.useCallback((arg0, arg1) => {
     let firstMatch;
     let user;
-    const tmp3 = arg1 === memo[arg0].items.length - 1;
     const type = tmp.type;
+    const tmp3 = arg1 === memo[arg0].items.length - 1;
     if ("UserSearchItem" === type) {
       const data = tmp.data;
       ({ user, firstMatch } = data);
-      const hasItem = selectedUserIds.includes(user.id);
-      let obj = { type: "user" };
-      obj = { type: data.type, user };
+      const hasItem = flag9.includes(user.id);
+      let obj = { type: null, user: null, nickname: null, onPress: null, disabled: null, selected: null, mode: null, subLabel: null, arrow: null, start: null, end: null };
+      obj[0] = data.type;
+      obj[1] = user;
       let tmp8;
       if (null != firstMatch) {
         if (user.username !== firstMatch) {
           tmp8 = firstMatch;
         }
       }
-      obj.nickname = tmp8;
-      obj.onPress = onSelectUser;
-      let hasItem1;
-      if (null != disabledUserIds) {
-        hasItem1 = disabledUserIds.includes(user.id);
+      obj[2] = tmp8;
+      obj[3] = trimmed;
+      let flag;
+      if (selectedUserIds != null) {
+        flag = obj4.includes(user.id);
       }
-      obj.disabled = null != hasItem1 && hasItem1;
-      obj.selected = hasItem;
-      if (_undefined2.isFriend(user.id)) {
+      if (flag == null) {
+        flag = false;
+      }
+      obj[4] = flag;
+      obj[5] = hasItem;
+      if (_undefined4.isFriend(user.id)) {
         if (hasItem) {
           let TOGGLE = ref.TOGGLE;
         }
-        obj.mode = TOGGLE;
-        const obj1 = { variant: "text-xs/medium", color: "text-muted", children: disabledUserIds(onSelectUser[11]).getUserTag(user) };
-        obj.subLabel = outer1_10(selectedUserIds(onSelectUser[16]).Text, obj1);
-        obj.arrow = !_undefined2.isFriend(user.id);
-        obj.start = tmp2;
-        obj.end = tmp3;
-        obj.props = obj;
+        obj = { type: "user", props: null };
+        obj[6] = TOGGLE;
+        const obj1 = { variant: "text-xs/medium", color: "text-muted", children: null };
+        obj1[2] = selectedUserIds(trimmed[11]).getUserTag(user);
+        obj[7] = outer1_10(flag9(trimmed[16]).Text, obj1);
+        obj[8] = !obj5.isFriend(user.id);
+        obj[9] = tmp2;
+        obj[10] = tmp3;
+        obj[1] = obj;
         return obj;
       }
       TOGGLE = rowMode;
+      obj4 = selectedUserIds;
+      obj5 = _undefined4;
     } else if ("GroupDMChannelRecord" === type) {
-      obj = { type: "gdm" };
-      const obj2 = { channel: tmp.data, onPress: onSelectUser, arrow: true, start: tmp2, end: tmp3 };
-      obj.props = obj2;
+      obj = { type: "gdm", props: null };
+      const obj2 = { channel: null, onPress: null, arrow: true, start: null, end: null };
+      obj2[0] = tmp.data;
+      obj2[1] = trimmed;
+      obj2[3] = tmp2;
+      obj2[4] = tmp3;
+      obj[1] = obj2;
       return obj;
     } else {
       return tmp;
     }
-  }, items4);
+  }, items5);
   ref = rowMode.useRef(null);
-  let obj2 = selectedUserIds(onSelectUser[17]);
-  obj = {};
-  let tmp12;
+  let UsersFastList = flag9;
+  let obj2 = flag9(trimmed[17]);
+  let tmp16;
   if (trimmed.length <= 0) {
-    tmp12 = actions;
+    tmp16 = actions;
   }
-  obj.actions = tmp12;
+  obj = { actions: tmp16, style: null };
   let prop;
   if (trimmed.length <= 0) {
     if (flag3) {
       prop = tmp2.searchBarRowContainer;
     }
   }
-  obj.style = prop;
+  obj[1] = prop;
   const userListActionsProps = obj2.useUserListActionsProps(obj);
-  const items5 = [tmp3[0]];
+  const items6 = [str];
   ({ headerSize, renderHeader } = userListActionsProps);
-  const layoutEffect = rowMode.useLayoutEffect(() => {
+  const layoutEffect = obj.useLayoutEffect(() => {
     const current = ref.current;
-    if (null != current) {
+    if (current != null) {
       current.scrollToTop(false);
     }
-  }, items5);
+  }, items6);
   const someResult = memo1.some((arg0) => arg0 > 0);
   if (null != overrideResults) {
-    obj = {};
-    let obj1 = {};
+    let tmp6Result = tmp6(tmp7[20]);
     if (autoFocusSearch) {
       autoFocusSearch = someResult;
     }
-    obj1.autoFocus = autoFocusSearch;
-    obj1.hasQuery = tmp5;
-    obj1.onChangeText = callback;
-    obj1.onFocus = onSearchFocus;
-    obj1.onForceSearchResults = onForceSearchResults;
-    obj1.onSelectUser = onSelectUser;
-    obj1.selectedUserIds = selectedUserIds;
-    obj1.forceSearchResults = forceSearchResults;
-    obj1.tagListInputRef = tagListInputRef;
-    const items6 = [closure_10(disabledUserIds(onSelectUser[20]), obj1), overrideResults];
-    obj.children = items6;
+    obj = { children: null };
+    let obj1 = { autoFocus: null, hasQuery: null, onChangeText: null, onFocus: null, onForceSearchResults: null, onSelectUser: null, selectedUserIds: null, forceSearchResults: null, tagListInputRef: null };
+    obj1[0] = autoFocusSearch;
+    obj1[1] = tmp5;
+    obj1[2] = callback;
+    obj1[3] = onSearchFocus;
+    obj1[4] = onForceSearchResults;
+    obj1[5] = onSelectUser;
+    obj1[6] = selectedUserIds;
+    obj1[7] = forceSearchResults;
+    obj1[8] = tagListInputRef;
+    const items7 = [closure_10(tmp6Result, obj1), overrideResults];
+    obj[0] = items7;
     return closure_12(closure_11, obj);
   } else if (someResult) {
-    obj2 = { ref, sections: memo1, getItemProps: callback2, getSectionProps: callback1, listHeaderSize: headerSize, renderListHeader: renderHeader, insetStart: num };
-    num = 12;
-    obj2.insetEnd = 12;
-    obj2.disableThemedGradient = true;
-    let tmp36Result = tmp36(selectedUserIds(onSelectUser[18]).UsersFastList, obj2);
+    UsersFastList = UsersFastList(tmp7[18]).UsersFastList;
+    obj2 = { ref: null, sections: null, getItemProps: null, getSectionProps: null, listHeaderSize: null, renderListHeader: null, insetStart: 0, insetEnd: 12, disableThemedGradient: true };
+    obj2[0] = ref;
+    obj2[1] = memo1;
+    obj2[2] = callback2;
+    obj2[3] = callback1;
+    obj2[4] = headerSize;
+    obj2[5] = renderHeader;
+    let tmp32Result = tmp32(UsersFastList, obj2);
   } else {
-    const obj3 = {};
-    if (tmp17) {
-      const items7 = [noResults, ];
+    const obj3 = { style: null, children: null };
+    if (tmp21) {
+      const items8 = [noResults, ];
       let prop1;
       if (flag3) {
         prop1 = tmp2.searchBarRowContainer;
       }
-      items7[1] = prop1;
-      obj3.style = items7;
-      obj3.children = defaultNoResultsFound;
+      items8[1] = prop1;
+      obj3[0] = items8;
+      obj3[1] = defaultNoResultsFound;
       let tmp24 = obj3;
     } else {
-      obj3.style = noResults;
-      const obj4 = {};
-      let intl = selectedUserIds(onSelectUser[15]).intl;
-      obj4.title = intl.string(selectedUserIds(onSelectUser[15]).t.sPAvXU);
-      const intl2 = selectedUserIds(onSelectUser[15]).intl;
-      obj4.subtitle = intl2.string(selectedUserIds(onSelectUser[15]).t.nQ05z2);
-      const obj5 = {};
-      if (null != noResultActions) {
-        actions = noResultActions;
-      }
-      obj5.actions = actions;
-      obj4.children = closure_10(selectedUserIds(onSelectUser[17]).UserFlashListActions, obj5);
-      obj3.children = closure_10(disabledUserIds(onSelectUser[19]), obj4);
+      obj3[0] = noResults;
+      let obj4 = { title: null, subtitle: null, children: null };
+      tmp6Result = tmp6(tmp7[19]);
+      let intl = UsersFastList(tmp7[15]).intl;
+      obj4[0] = intl.string(UsersFastList(tmp7[15]).t.sPAvXU);
+      const intl2 = UsersFastList(tmp7[15]).intl;
+      obj4[1] = intl2.string(UsersFastList(tmp7[15]).t.nQ05z2);
+      let obj5 = { actions: null };
+      obj5[0] = noResultActions;
+      obj4[2] = tmp32(UsersFastList(tmp7[17]).UserFlashListActions, obj5);
+      obj3[1] = tmp32(tmp6Result, obj4);
       tmp24 = obj3;
-      const tmp22 = disabledUserIds(onSelectUser[19]);
     }
-    tmp36Result = tmp36(closure_5, tmp24);
-    const tmp18 = closure_5;
+    tmp32Result = tmp32(c5, tmp24);
+    const tmp22 = c5;
   }
 };
 export { matchGroupDM };
 export { filterGroupDMs };
-export { useSearchGDMNames };
+export const useSearchGDMNames = function useSearchGDMNames(arg0, arg1, arg2) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let closure_2 = arg2;
+  const tmp = callback(React.useState([]), 2);
+  callback = tmp[1];
+  const items = [arg0, arg1, arg2];
+  const effect = React.useEffect(() => {
+    if (closure_0) {
+      if ("" !== trimmed) {
+        closure_0 = obj.toLocaleLowerCase();
+        const _Object = Object;
+        const values = Object.values(_undefined3.getMutablePrivateChannels());
+        const found = values.filter(outer1_18);
+        const mapped = found.map((arg0) => {
+          const items = [arg0, outer2_17(arg0, outer1_1, closure_0)];
+          return items;
+        });
+        const found1 = mapped.filter((arg0) => {
+          let tmp;
+          [, tmp] = arg0;
+          return tmp > 0;
+        });
+        const obj2 = selectedUserIds(trimmed[13]);
+        _undefined(selectedUserIds(trimmed[13]).sortBy(found1, (arg0) => {
+          let tmp;
+          [, tmp] = arg0;
+          return -tmp;
+        }).map((arg0) => {
+          let tmp;
+          [tmp] = arg0;
+          return tmp;
+        }));
+        const sortByResult = selectedUserIds(trimmed[13]).sortBy(found1, (arg0) => {
+          let tmp;
+          [, tmp] = arg0;
+          return -tmp;
+        });
+      } else {
+        _undefined(outer1_13);
+      }
+      obj = trimmed;
+    } else {
+      _undefined(outer1_13);
+    }
+  }, items);
+  return tmp[0];
+};

@@ -1,11 +1,10 @@
 // Module ID: 14366
-// Function ID: 110098
+// Function ID: 14367
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 14366 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "7fa2adf98f26db34178bb30a63dabe8c", name: "de", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ce6df62bb592b89e09867505a632d8fe", name: "EyeDropperIcon", type: "png" });

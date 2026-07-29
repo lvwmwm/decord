@@ -1,27 +1,19 @@
-// Module ID: 11218
-// Function ID: 87066
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 11219, 1362, 566, 686, 2]
+// Module ID: 11242
+// Function ID: 11243
+// Name: getSearchResults
+// Dependencies: [11243, 1386, 589, 709, 2]
 
-// Module 11218 (_isNativeReflectConstruct)
-import priv from "priv";
-import initialize from "initialize";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import importDefaultResult from "priv";
+// Module 11242 (getSearchResults)
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let obj = { FETCHING: 0, [0]: "FETCHING", FETCHED: 1, [1]: "FETCHED", ERROR: 2, [2]: "ERROR" };
+let c3 = new require("priv")({ max: 20 });
+let closure_4 = {};
+class ApplicationDirectorySearchStore extends Store {
 }
-function getCacheKey(arg0) {
+const prototype = ApplicationDirectorySearchStore.prototype;
+prototype["getSearchResults"] = function getSearchResults(arg0) {
   let categoryId;
   let excludeAppsWithCustomInstallUrl;
   let excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand;
@@ -35,79 +27,103 @@ function getCacheKey(arg0) {
   let source;
   ({ query, guildId, page, pageSize, categoryId, integrationType, minUserInstallCommandCount, excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand, source } = arg0);
   if (source === undefined) {
-    source = require(11219) /* SearchAppsRequestSource */.SearchAppsRequestSource.APP_DIRECTORY;
+    source = require(11243) /* SearchAppsRequestSource */.SearchAppsRequestSource.APP_DIRECTORY;
+    const tmp2 = dependencyMap;
   }
-  return "query:'" + query + "' guildId:" + guildId + " page:" + page + " pageSize:" + pageSize + " categoryId:" + categoryId + " integrationType:" + integrationType + " minUserInstallCommandCount:" + minUserInstallCommandCount + " excludeAppsWithCustomInstallUrl:" + excludeAppsWithCustomInstallUrl + " excludeNonEmbeddedApps:" + excludeNonEmbeddedApps + " excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand:" + excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand + " source:" + source;
-}
-let obj = { FETCHING: 0, [0]: "FETCHING", FETCHED: 1, [1]: "FETCHED", ERROR: 2, [2]: "ERROR" };
-obj = { max: 20 };
-importDefaultResult = new importDefaultResult(obj);
-let closure_9 = {};
-let tmp4 = ((Store) => {
-  class ApplicationDirectorySearchStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, ApplicationDirectorySearchStore);
-      obj = outer1_5(ApplicationDirectorySearchStore);
-      tmp2 = outer1_4;
-      if (outer1_10()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+  return tmp2.get("query:'" + query + "' guildId:" + guildId + " page:" + page + " pageSize:" + pageSize + " categoryId:" + categoryId + " integrationType:" + integrationType + " minUserInstallCommandCount:" + minUserInstallCommandCount + " excludeAppsWithCustomInstallUrl:" + excludeAppsWithCustomInstallUrl + " excludeNonEmbeddedApps:" + excludeNonEmbeddedApps + " excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand:" + excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand + " source:" + source);
+};
+prototype["getFetchState"] = function getFetchState(arg0) {
+  let categoryId;
+  let excludeAppsWithCustomInstallUrl;
+  let excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand;
+  let excludeNonEmbeddedApps;
+  let guildId;
+  let integrationType;
+  let minUserInstallCommandCount;
+  let page;
+  let pageSize;
+  let query;
+  let source;
+  ({ query, guildId, page, pageSize, categoryId, integrationType, minUserInstallCommandCount, excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand, source } = arg0);
+  if (source === undefined) {
+    source = require(11243) /* SearchAppsRequestSource */.SearchAppsRequestSource.APP_DIRECTORY;
   }
-  callback2(ApplicationDirectorySearchStore, Store);
-  let obj = {
-    key: "getSearchResults",
-    value(query) {
-      return outer1_8.get(outer1_11({ query: query.query, guildId: query.guildId, page: query.page, pageSize: query.pageSize, categoryId: query.categoryId, integrationType: query.integrationType, minUserInstallCommandCount: query.minUserInstallCommandCount, excludeAppsWithCustomInstallUrl: query.excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps: query.excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: query.excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand, source: query.source }));
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "getFetchState",
-    value(query) {
-      return outer1_9[outer1_11(undefined, { query: query.query, guildId: query.guildId, page: query.page, pageSize: query.pageSize, categoryId: query.categoryId, integrationType: query.integrationType, minUserInstallCommandCount: query.minUserInstallCommandCount, excludeAppsWithCustomInstallUrl: query.excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps: query.excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: query.excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand, source: query.source })];
-    }
-  };
-  items[1] = obj;
-  return callback(ApplicationDirectorySearchStore, items);
-})(require("initialize").Store);
-tmp4.displayName = "ApplicationDirectorySearchStore";
+  return table["query:'" + query + "' guildId:" + guildId + " page:" + page + " pageSize:" + pageSize + " categoryId:" + categoryId + " integrationType:" + integrationType + " minUserInstallCommandCount:" + minUserInstallCommandCount + " excludeAppsWithCustomInstallUrl:" + excludeAppsWithCustomInstallUrl + " excludeNonEmbeddedApps:" + excludeNonEmbeddedApps + " excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand:" + excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand + " source:" + source];
+};
+ApplicationDirectorySearchStore.displayName = "ApplicationDirectorySearchStore";
 obj = {
-  APPLICATION_DIRECTORY_FETCH_SEARCH: function handleSearchFetch(query) {
-    let obj = { query: query.query, guildId: query.guildId, page: query.page, pageSize: query.pageSize, categoryId: query.categoryId, integrationType: query.integrationType, minUserInstallCommandCount: query.minUserInstallCommandCount, excludeAppsWithCustomInstallUrl: query.excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps: query.excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: query.excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand, source: query.source };
-    obj = {};
+  APPLICATION_DIRECTORY_FETCH_SEARCH: function handleSearchFetch(arg0) {
+    let categoryId;
+    let excludeAppsWithCustomInstallUrl;
+    let excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand;
+    let excludeNonEmbeddedApps;
+    let guildId;
+    let integrationType;
+    let minUserInstallCommandCount;
+    let page;
+    let pageSize;
+    let query;
+    let source;
+    ({ query, guildId, page, pageSize, categoryId, integrationType, minUserInstallCommandCount, excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand, source } = arg0);
+    if (source === undefined) {
+      source = require(11243) /* SearchAppsRequestSource */.SearchAppsRequestSource.APP_DIRECTORY;
+    }
+    const obj = {};
+    const combined = "query:'" + query + "' guildId:" + guildId + " page:" + page + " pageSize:" + pageSize + " categoryId:" + categoryId + " integrationType:" + integrationType + " minUserInstallCommandCount:" + minUserInstallCommandCount + " excludeAppsWithCustomInstallUrl:" + excludeAppsWithCustomInstallUrl + " excludeNonEmbeddedApps:" + excludeNonEmbeddedApps + " excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand:" + excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand + " source:" + source;
     const merged = Object.assign(obj);
-    obj[getCacheKey(obj)] = obj.FETCHING;
+    obj[combined] = obj.FETCHING;
   },
-  APPLICATION_DIRECTORY_FETCH_SEARCH_SUCCESS: function handleSearchFetchSuccess(query) {
-    let obj = { query: query.query, guildId: query.guildId, page: query.page, pageSize: query.pageSize, categoryId: query.categoryId, integrationType: query.integrationType, minUserInstallCommandCount: query.minUserInstallCommandCount, excludeAppsWithCustomInstallUrl: query.excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps: query.excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: query.excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand, source: query.source };
-    const tmp = getCacheKey(obj);
-    obj = { lastFetchTimeMs: Date.now() };
-    const merged = Object.assign(query.result);
-    const result = importDefaultResult.set(tmp, obj);
+  APPLICATION_DIRECTORY_FETCH_SEARCH_SUCCESS: function handleSearchFetchSuccess(arg0) {
+    let categoryId;
+    let excludeAppsWithCustomInstallUrl;
+    let excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand;
+    let excludeNonEmbeddedApps;
+    let guildId;
+    let integrationType;
+    let minUserInstallCommandCount;
+    let page;
+    let pageSize;
+    let query;
+    let result;
+    let source;
+    ({ query, guildId, page, pageSize, categoryId, result, integrationType, minUserInstallCommandCount, excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand, source } = arg0);
+    if (source === undefined) {
+      source = require(11243) /* SearchAppsRequestSource */.SearchAppsRequestSource.APP_DIRECTORY;
+      const tmp2 = dependencyMap;
+    }
+    const combined = "query:'" + query + "' guildId:" + guildId + " page:" + page + " pageSize:" + pageSize + " categoryId:" + categoryId + " integrationType:" + integrationType + " minUserInstallCommandCount:" + minUserInstallCommandCount + " excludeAppsWithCustomInstallUrl:" + excludeAppsWithCustomInstallUrl + " excludeNonEmbeddedApps:" + excludeNonEmbeddedApps + " excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand:" + excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand + " source:" + source;
+    let obj = { lastFetchTimeMs: Date.now() };
+    const merged = Object.assign(result);
+    result = tmp2.set(combined, obj);
     obj = {};
     const merged1 = Object.assign(obj);
-    obj[tmp] = obj.FETCHED;
+    obj[combined] = obj.FETCHED;
   },
-  APPLICATION_DIRECTORY_FETCH_SEARCH_FAILURE: function handleSearchFetchFailure(query) {
-    let obj = { query: query.query, guildId: query.guildId, page: query.page, pageSize: query.pageSize, categoryId: query.categoryId, integrationType: query.integrationType, minUserInstallCommandCount: query.minUserInstallCommandCount, excludeAppsWithCustomInstallUrl: query.excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps: query.excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: query.excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand, source: query.source };
-    obj = {};
+  APPLICATION_DIRECTORY_FETCH_SEARCH_FAILURE: function handleSearchFetchFailure(arg0) {
+    let categoryId;
+    let excludeAppsWithCustomInstallUrl;
+    let excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand;
+    let excludeNonEmbeddedApps;
+    let guildId;
+    let integrationType;
+    let minUserInstallCommandCount;
+    let page;
+    let pageSize;
+    let query;
+    let source;
+    ({ query, guildId, page, pageSize, categoryId, integrationType, minUserInstallCommandCount, excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand, source } = arg0);
+    if (source === undefined) {
+      source = require(11243) /* SearchAppsRequestSource */.SearchAppsRequestSource.APP_DIRECTORY;
+    }
+    const obj = {};
+    const combined = "query:'" + query + "' guildId:" + guildId + " page:" + page + " pageSize:" + pageSize + " categoryId:" + categoryId + " integrationType:" + integrationType + " minUserInstallCommandCount:" + minUserInstallCommandCount + " excludeAppsWithCustomInstallUrl:" + excludeAppsWithCustomInstallUrl + " excludeNonEmbeddedApps:" + excludeNonEmbeddedApps + " excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand:" + excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand + " source:" + source;
     const merged = Object.assign(obj);
-    obj[getCacheKey(obj)] = obj.ERROR;
+    obj[combined] = obj.ERROR;
   }
 };
-tmp4 = new tmp4(require("dispatcher"), obj);
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/global_discovery_apps/stores/ApplicationDirectorySearchStore.tsx");
+const applicationDirectorySearchStore = new ApplicationDirectorySearchStore(require("dispatcher"), obj);
+let tmp2 = new require("priv")({ max: 20 });
+const result = require("initialize").fileFinishedImporting("modules/global_discovery_apps/stores/ApplicationDirectorySearchStore.tsx");
 
-export default tmp4;
+export default applicationDirectorySearchStore;
 export const FetchState = obj;

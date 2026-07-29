@@ -1,19 +1,19 @@
-// Module ID: 4506
-// Function ID: 39628
-// Dependencies: [31, 33, 4133, 686, 4507, 1212, 1324, 4510, 4596, 4596, 1935, 2]
+// Module ID: 4529
+// Function ID: 4530
+// Dependencies: [19, 21, 4157, 709, 4530, 1236, 1348, 4533, 4618, 4618, 1959, 2]
 
-// Module 4506
-import "result";
+// Module 4529
+import "noop";
 import jsxProd from "jsxProd";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = jsxProd);
+({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
 let c6 = null;
 let c7 = 0;
-const result = require("showActionSheet").fileFinishedImporting("actions/native/AlertActionCreators.tsx");
+const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("actions/native/AlertActionCreators.tsx");
 
 export default {
   openLazy(hideActionSheet) {
@@ -37,10 +37,10 @@ export default {
   close() {
     if (null != c6) {
       c6 = null;
-      require(4507) /* useAlertStore */.dismissAlert(c6);
-      const obj = require(4507) /* useAlertStore */;
+      require(4530) /* useAlertStore */.dismissAlert(tmp);
+      const obj = require(4530) /* useAlertStore */;
     }
-    importDefault(686).dispatch({ type: "ALERT_CLOSE" });
+    importDefault(709).dispatch({ type: "ALERT_CLOSE" });
   },
   show(hideActionSheet) {
     let body;
@@ -54,106 +54,95 @@ export default {
     let confirmText2;
     let isDismissable;
     let title;
-    const self = this;
     let flag = hideActionSheet.hideActionSheet;
     if (flag === undefined) {
       flag = true;
     }
     ({ isDismissable, confirmText } = hideActionSheet);
     if (confirmText === undefined) {
-      const intl = confirmText(1212).intl;
-      confirmText = intl.string(confirmText(1212).t.BddRzS);
+      const intl = confirmText(1236).intl;
+      confirmText = intl.string(confirmText(1236).t.BddRzS);
     }
-    let obj = { hideActionSheet: 0, isDismissable: 0, confirmText: 0 };
-    Object.setPrototypeOf(null);
-    let merged = Object.assign(hideActionSheet, obj);
+    let merged = Object.assign(hideActionSheet, Object.create(null));
     let dependencyMap;
     let callback;
     c4 = undefined;
     let c5;
-    let obj1 = confirmText(1324);
-    if (obj1.isMobileVisualRefreshEnabled("AlertActionCreators")) {
+    let obj = confirmText(1348);
+    if (obj.isMobileVisualRefreshEnabled("AlertActionCreators")) {
       obj = {};
       let merged1 = Object.assign(merged);
-      obj["confirmText"] = confirmText;
-      obj["isDismissable"] = isDismissable;
+      obj.confirmText = confirmText;
+      obj.isDismissable = isDismissable;
       ({ body, confirmText: confirmText2 } = obj);
-      let tmp8 = null != body;
-      if (tmp8) {
-        tmp8 = "string" !== typeof body;
-      }
-      if (tmp8) {
+      let tmp9 = null != body && typeof body === "init";
+      if (tmp9) {
         const _Array = Array;
-        tmp8 = !Array.isArray(body);
+        tmp9 = !Array.isArray(body);
       }
-      let tmp10 = null == obj.title;
-      if (!tmp10) {
-        tmp10 = "" === obj.title;
+      let tmp11 = null == obj.title;
+      if (!tmp11) {
+        tmp11 = "" === obj.title;
       }
-      if (!tmp10) {
-        let tmp11 = null != confirmText2;
-        if (tmp11) {
-          tmp11 = "string" !== typeof confirmText2;
-        }
-        tmp10 = tmp11;
+      if (!tmp11) {
+        tmp11 = null != confirmText2 && typeof confirmText2 === "init";
+        const tmp12 = null != confirmText2 && typeof confirmText2 === "init";
       }
-      if (!tmp10) {
-        tmp10 = tmp8;
+      if (!tmp11) {
+        tmp11 = tmp9;
       }
-      if (!tmp10) {
-        tmp10 = null != obj.footer;
+      if (!tmp11) {
+        tmp11 = null != obj.footer;
       }
-      if (!tmp10) {
-        tmp10 = null != obj.helpText;
+      if (!tmp11) {
+        tmp11 = null != obj.helpText;
       }
-      if (!tmp10) {
-        tmp10 = null != obj.renderConfirmButton;
+      if (!tmp11) {
+        tmp11 = null != obj.renderConfirmButton;
       }
-      if (!tmp10) {
-        tmp10 = null != obj.renderConfirmIcon;
+      if (!tmp11) {
+        tmp11 = null != obj.renderConfirmIcon;
       }
-      if (!tmp10) {
-        tmp10 = null != obj.renderConfirmRightIcon;
+      if (!tmp11) {
+        tmp11 = null != obj.renderConfirmRightIcon;
       }
-      if (!tmp10) {
-        tmp10 = true === obj.noDefaultButtons;
+      if (!tmp11) {
+        tmp11 = true === obj.noDefaultButtons;
       }
-      if (!tmp10) {
-        tmp10 = null != obj.secondaryConfirmText;
+      if (!tmp11) {
+        tmp11 = null != obj.secondaryConfirmText;
       }
-      if (!tmp10) {
-        tmp10 = null != obj.onConfirmSecondary;
+      if (!tmp11) {
+        tmp11 = null != obj.onConfirmSecondary;
       }
-      if (!tmp10) {
-        tmp10 = true === obj.isConfirmButtonDisabled;
+      if (!tmp11) {
+        tmp11 = true === obj.isConfirmButtonDisabled;
       }
-      if (!tmp10) {
-        tmp10 = null != obj.confirming;
+      if (!tmp11) {
+        tmp11 = null != obj.confirming;
       }
-      if (!tmp10) {
-        tmp10 = null != obj.style;
+      if (!tmp11) {
+        tmp11 = null != obj.style;
       }
-      if (!tmp10) {
-        tmp10 = true === obj.fillCancelText;
+      if (!tmp11) {
+        tmp11 = true === obj.fillCancelText;
       }
-      if (!tmp10) {
-        tmp10 = false === obj.autoCloseOnConfirm;
+      if (!tmp11) {
+        tmp11 = false === obj.autoCloseOnConfirm;
       }
-      if (!tmp10) {
-        tmp10 = null != obj.onClose;
+      if (!tmp11) {
+        tmp11 = null != obj.onClose;
       }
-      if (!tmp10) {
+      if (!tmp11) {
         if (flag) {
-          let obj3 = merged(4133);
-          obj3.hideActionSheet();
+          let obj4 = merged(4157);
+          obj4.hideActionSheet();
         }
         if (null != c6) {
-          let obj4 = confirmText(4507);
-          obj4.dismissAlert(c6);
+          let tmp4Result = tmp4(4530);
+          tmp4Result.dismissAlert(c6);
         }
-        let obj5 = merged(686);
-        obj = { type: "ALERT_CLOSE" };
-        obj5.dispatch(obj);
+        merged(709).dispatch({ type: "ALERT_CLOSE" });
         let closure_7 = tmp24 + 1;
         const text = `legacy-alert-${tmp24}`;
         dependencyMap = text;
@@ -161,96 +150,96 @@ export default {
         ({ cancelText, onConfirm: c3, onCancel: c4 } = merged);
         c5 = false;
         ({ title, body: body2, children, confirmColor } = merged);
-        const obj8 = confirmText(4507);
-        obj1 = { title, content: body2, extraContent: children };
-        const obj2 = {};
-        obj3 = {
-          variant: confirmText(4596).getAlertButtonVariant(confirmColor),
-          text: confirmText,
-          onPress() {
-                let c5 = true;
-                if (null != _undefined2) {
-                  _undefined2();
-                }
-              }
-        };
-        const items = [callback(confirmText(4510).AlertActionButton, obj3), ];
-        let tmp30 = null;
-        if (null != cancelText) {
-          obj4 = {
-            variant: "secondary",
-            text: cancelText,
-            onPress() {
-                    let c5 = true;
-                    if (null != _undefined3) {
-                      _undefined3();
-                    }
-                  }
-          };
-          tmp30 = callback(confirmText(4510).AlertActionButton, obj4);
-        }
-        items[1] = tmp30;
-        obj2.children = items;
-        obj1.actions = c5(c4, obj2);
-        obj5 = { dismissable: true === isDismissable };
-        obj8.openAlert(text, callback(confirmText(4510).AlertModal, obj1), () => {
-          let tmp = c5;
-          if (!c5) {
-            tmp = null == _undefined3;
+        tmp4Result = tmp4(4530);
+        obj = { title: null, content: null, extraContent: null, actions: null };
+        obj[0] = title;
+        obj[1] = body2;
+        obj[2] = children;
+        const obj1 = { variant: null, text: null, onPress: null };
+        const obj7 = merged(709);
+        const tmp27 = c5;
+        const tmp28 = c4;
+        obj1[0] = tmp4(4618).getAlertButtonVariant(confirmColor);
+        obj1[1] = confirmText;
+        obj1[2] = function onPress() {
+          let c5 = true;
+          if (c3 != null) {
+            tmp();
           }
-          if (!tmp) {
-            _undefined3();
+        };
+        const items = [callback(tmp4(4533).AlertActionButton, obj1), ];
+        let tmp26Result = null;
+        if (null != cancelText) {
+          const obj2 = { variant: "secondary", text: null, onPress: null };
+          obj2[1] = cancelText;
+          obj2[2] = function onPress() {
+            let c5 = true;
+            if (c4 != null) {
+              tmp();
+            }
+          };
+          tmp26Result = tmp26(tmp4(4533).AlertActionButton, obj2);
+        }
+        const obj3 = { children: null };
+        items[1] = tmp26Result;
+        obj3[0] = items;
+        obj[3] = tmp27(tmp28, obj3);
+        obj4 = { dismissable: null };
+        obj4[0] = true === isDismissable;
+        tmp4Result.openAlert(text, callback(tmp4(4533).AlertModal, obj), () => {
+          if (!c5) {
+            if (c4 != null) {
+              tmp();
+            }
           }
           if (c6 === c2) {
             c6 = null;
           }
-        }, obj5);
-        const obj12 = confirmText(4596);
-        const tmp27 = callback;
-        const tmp28 = c5;
-        const tmp29 = c4;
+        }, obj4);
+        const tmp4Result1 = tmp4(4618);
       }
     }
     if (null != c6) {
-      confirmText(4507).dismissAlert(c6);
+      tmp4(4530).dismissAlert(c6);
       c6 = null;
-      const obj15 = confirmText(4507);
+      const tmp4Result2 = tmp4(4530);
     }
-    const obj6 = {
+    this.openLazy({
       importer() {
         return confirmText(_undefined[10])(_undefined[9], _undefined.paths).then((arg0) => {
           let closure_0 = arg0.default;
           return (arg0) => {
             const obj = {};
             const merged = Object.assign(arg0);
-            const merged1 = Object.assign(outer2_1);
-            obj["confirmText"] = outer2_0;
-            return callback(closure_0, obj);
+            const merged1 = Object.assign(outer1_1);
+            obj.confirmText = closure_0;
+            return outer2_3(closure_0, obj);
           };
         });
       },
       hideActionSheet: flag,
       isDismissable
-    };
-    self.openLazy(obj6);
+    });
   },
   confirm(arg0) {
     const self = this;
-    let closure_1 = arg0;
+    let closure_0 = arg0;
     return new Promise((arg0) => {
-      const _self = arg0;
+      const callback = arg0;
       const obj = {
         onConfirm() {
           callback(true);
-        }
+        },
+        cancelText: null,
+        onCancel: null
       };
-      const intl = self(outer1_2[5]).intl;
-      obj.cancelText = intl.string(self(outer1_2[5]).t["ETE/oC"]);
-      obj.onCancel = function onCancel() {
+      const intl = callback(outer1_2[5]).intl;
+      obj[1] = intl.string(callback(outer1_2[5]).t["ETE/oC"]);
+      obj[2] = function onCancel() {
         callback(false);
       };
-      const merged = Object.assign(closure_1);
-      _self.show(obj);
+      const merged = Object.assign(callback);
+      self.show(obj);
     });
   }
 };

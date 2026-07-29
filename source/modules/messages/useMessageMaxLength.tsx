@@ -1,26 +1,23 @@
-// Module ID: 6164
-// Function ID: 55115
-// Name: getMaxMessageLength_
-// Dependencies: [1850, 653, 3811, 566, 2]
+// Module ID: 6182
+// Function ID: 6183
+// Name: useMessageMaxLength
+// Dependencies: [1874, 676, 3835, 589, 2]
 // Exports: default, getMaxMessageLength
 
-// Module 6164 (getMaxMessageLength_)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 6182 (useMessageMaxLength)
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-function getMaxMessageLength_(_isNativeReflectConstruct) {
-  return importDefault(3811).canUseIncreasedMessageLength(_isNativeReflectConstruct.getCurrentUser()) ? closure_4 : closure_5;
-}
-({ MAX_MESSAGE_LENGTH_PREMIUM: closure_4, MAX_MESSAGE_LENGTH: closure_5 } = ME);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/messages/useMessageMaxLength.tsx");
+({ MAX_MESSAGE_LENGTH_PREMIUM: c4, MAX_MESSAGE_LENGTH: c5 } = ME);
+const result = require("getPremiumPlanItem").fileFinishedImporting("modules/messages/useMessageMaxLength.tsx");
 
 export default function useMessageMaxLength() {
-  const items = [_isNativeReflectConstruct];
-  return require(566) /* initialize */.useStateFromStores(items, () => outer1_6(outer1_3));
+  const items = [mergeGuildAvatar];
+  return require(589) /* initialize */.useStateFromStores(items, () => callback(table[2]).canUseIncreasedMessageLength(currentUser.getCurrentUser()) ? closure_4 : closure_5);
 };
 export const getMaxMessageLength = function getMaxMessageLength() {
-  return getMaxMessageLength_(_isNativeReflectConstruct);
+  return importDefault(3835).canUseIncreasedMessageLength(currentUser.getCurrentUser()) ? closure_4 : closure_5;
 };

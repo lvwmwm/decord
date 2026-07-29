@@ -1,26 +1,26 @@
-// Module ID: 15013
-// Function ID: 114291
+// Module ID: 15040
+// Function ID: 15041
 // Name: getSuggestedContactNameForSuggestion
 // Dependencies: [2]
 // Exports: getSuggestedContactNameForSuggestion
 
-// Module 15013 (getSuggestedContactNameForSuggestion)
+// Module 15040 (getSuggestedContactNameForSuggestion)
 const result = require("set").fileFinishedImporting("modules/friend_suggestions/FriendSuggestionUtils.tsx");
 
 export const getSuggestedContactNameForSuggestion = function getSuggestedContactNameForSuggestion(friendSuggestionName, suggestedFriend) {
   let contactNames;
-  if (null != suggestedFriend) {
+  if (suggestedFriend != null) {
     contactNames = suggestedFriend.contactNames;
   }
   let tmp2;
   if (null != contactNames) {
     let length;
-    if (null != suggestedFriend) {
+    if (suggestedFriend != null) {
       length = suggestedFriend.contactNames.length;
     }
     if (length >= 2) {
       let trimmed;
-      if (null != suggestedFriend) {
+      if (suggestedFriend != null) {
         const contactNames1 = suggestedFriend.contactNames;
         const substr = contactNames1.slice(0, 2);
         trimmed = substr.join(" ").trim();

@@ -1,25 +1,78 @@
-// Module ID: 6676
-// Function ID: 58900
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1859, 3747, 2]
+// Module ID: 6697
+// Function ID: 6698
+// Name: createFromServer
+// Dependencies: [1883, 3771, 2]
 
-// Module 6676 (_isNativeReflectConstruct)
-import closure_2 from "t";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "Record";
+// Module 6697 (createFromServer)
+import "toJS";
 
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
+let InviteRecord;
+class InviteRecord extends tmp2 {
+  constructor(arg0) {
+    tmp2 = new InviteRecord(tmp, new.target, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    tmp3 = global.code || "";
+    tmp2.code = tmp3;
+    tmp2.temporary = global.temporary || false;
+    tmp2.revoked = global.revoked || false;
+    tmp2.uses = global.uses || 0;
+    tmp2.maxUses = global.maxUses || 0;
+    tmp2.maxAge = global.maxAge || 0;
+    createdAt = global.createdAt;
+    if (!createdAt) {
+      tmp4 = globalThis;
+      _Date = Date;
+      tmp5 = new.target;
+      tmp6 = new.target;
+      createdAt = new Date();
+    }
+    tmp2.createdAt = createdAt;
+    ({ channel: tmp2.channel, guild: tmp2.guild } = global);
+    tmp2.inviter = global.inviter || null;
+    tmp2.targetType = global.targetType || null;
+    tmp2.targetUser = global.targetUser || null;
+    tmp2.targetApplication = global.targetApplication || null;
+    tmp2.type = global.type || null;
+    tmp2.flags = global.flags || 0;
+    tmp2.roles = global.roles || [];
+    return tmp2;
   }
-  const result = _isNativeReflectConstruct();
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("records/InviteRecord.tsx");
+const prototype = InviteRecord.prototype;
+InviteRecord["createFromServer"] = function createFromServer(created_at) {
+  const obj = {};
+  const merged = Object.assign(created_at);
+  ({ max_uses: obj.maxUses, max_age: obj.maxAge } = created_at);
+  created_at = created_at.created_at;
+  obj.createdAt = importDefault(3771)(created_at);
+  ({ target_type: obj.targetType, target_user: obj.targetUser, target_application: obj.targetApplication } = created_at);
+  return new InviteRecord(obj);
+};
+prototype["isExpired"] = function isExpired() {
+  const maxAge = this.maxAge;
+  if (maxAge > 0) {
+    const obj = importDefault(3771)(tmp.createdAt);
+    const _Date = Date;
+    if (addResult.isBefore(Date.now())) {
+      return true;
+    }
+    addResult = importDefault(3771)(tmp.createdAt).add(maxAge, "seconds");
+  }
+  return false;
+};
+prototype["getExpiresAt"] = function getExpiresAt() {
+  const self = this;
+  let num = Infinity;
+  if (this.maxAge > 0) {
+    const obj = importDefault(3771)(self.createdAt);
+    num = importDefault(3771)(self.createdAt).add(self.maxAge, "seconds").toDate();
+    const addResult = importDefault(3771)(self.createdAt).add(self.maxAge, "seconds");
+  }
+  return num;
+};
+prototype["toString"] = function toString() {
+  return this.code;
+};
+const result = require("set").fileFinishedImporting("records/InviteRecord.tsx");
 
-export default tmp2;
+export default InviteRecord;

@@ -1,23 +1,23 @@
-// Module ID: 11530
-// Function ID: 89554
+// Module ID: 11554
+// Function ID: 11555
 // Name: useCommunicationDisabledCountdownCleanup
-// Dependencies: [31, 6214, 11531, 2]
+// Dependencies: [19, 6234, 11555, 2]
 // Exports: useCommunicationDisabledCountdownCleanup
 
-// Module 11530 (useCommunicationDisabledCountdownCleanup)
-import result from "result";
+// Module 11554 (useCommunicationDisabledCountdownCleanup)
+import noop from "noop";
 
-let closure_2;
-let closure_3;
-({ useEffect: closure_2, useRef: closure_3 } = result);
-result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_communication_disabled/useCommunicationDisabledCountdownCleanup.tsx");
+let c3;
+let obj1;
+({ useEffect: obj1, useRef: c3 } = noop);
+let result = require("clearGuildMemberTimeout").fileFinishedImporting("modules/guild_communication_disabled/useCommunicationDisabledCountdownCleanup.tsx");
 
 export const useCommunicationDisabledCountdownCleanup = function useCommunicationDisabledCountdownCleanup(guildMember) {
   let communicationDisabledUntil;
   let userId;
   const importDefault = guildMember;
   let obj = guildMember;
-  if (null == guildMember) {
+  if (guildMember == null) {
     obj = {};
   }
   ({ communicationDisabledUntil, userId } = obj);
@@ -44,14 +44,14 @@ export const useCommunicationDisabledCountdownCleanup = function useCommunicatio
           if (tmp5) {
             const _setTimeout = setTimeout;
             ref.current = setTimeout(() => {
-              const result = callback(userId[2]).clearGuildMemberTimeout(outer1_2, outer1_1);
+              const result = outer1_0(outer1_1[2]).clearGuildMemberTimeout(closure_2, closure_1);
             }, 1000);
           }
           return () => {
-            if (null != outer1_4.current) {
+            if (null != ref.current) {
               const _clearTimeout = clearTimeout;
-              clearTimeout(outer1_4.current);
-              outer1_4.current = null;
+              clearTimeout(tmp.current);
+              tmp.current = null;
             }
           };
         }

@@ -1,55 +1,53 @@
-// Module ID: 11063
-// Function ID: 85885
-// Name: getHeader
-// Dependencies: [5, 57, 31, 27, 11048, 6735, 653, 33, 4165, 689, 4161, 566, 11053, 1456, 6736, 11062, 11054, 6734, 5155, 1212, 4578, 5121, 11064, 480, 11069, 11071, 11073, 11075, 11076, 5485, 5552, 2]
+// Module ID: 11087
+// Function ID: 11088
+// Name: AppealIngestionModal
+// Dependencies: [5, 32, 19, 17, 11072, 6756, 676, 21, 4189, 712, 4185, 589, 11077, 1480, 6757, 11086, 11078, 6755, 5177, 1236, 4600, 5143, 11088, 503, 11093, 11095, 11097, 11099, 11100, 5503, 5570, 2]
 // Exports: AppealIngestionModalHeader, AppealIngestionModalScreen, default
 
-// Module 11063 (getHeader)
-import closure_4 from "SafetyHubLinks";
+// Module 11087 (AppealIngestionModal)
+import closure_4 from "SafetyHubView";
 import _slicedToArray from "_slicedToArray";
-import set from "set";
-import { View } from "AppealIngestionThanks";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import SafetyHubLinks from "SafetyHubLinks";
+import getSystemLocale from "getSystemLocale";
+import { View } from "parseMessageEmbedForProps";
+import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
+import SafetyHubView from "SafetyHubView";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "HeaderBackImage";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
+let c10;
+let c9;
 let closure_12;
-let closure_13;
 let closure_14;
-let closure_9;
+let map1;
 const require = arg1;
-function getHeader(arg0) {
-  return callback2(require(4161) /* Text */.Text, { variant: "text-md/normal", children: undefined });
-}
-({ APPEAL_INGESTION_IMPRESSION_PROPERTIES: closure_9, AppealIngestionSections: closure_10 } = SafetyHubLinks);
-({ jsx: closure_12, jsxs: closure_13, Fragment: closure_14 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.headerContainer = { alignSelf: "stretch", marginTop: 16, marginBottom: 8, paddingHorizontal: 16 };
-_createForOfIteratorHelperLoose.header = { marginBottom: 8, textAlign: "center" };
-_createForOfIteratorHelperLoose.subheader = { lineHeight: 20, marginBottom: 8, textAlign: "center" };
-let obj1 = { height: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, marginVertical: 24 };
-_createForOfIteratorHelperLoose.separator = obj1;
-_createForOfIteratorHelperLoose.footerContainer = { marginBottom: 16 };
-_createForOfIteratorHelperLoose.footerText = { marginBottom: 16, textAlign: "center" };
-_createForOfIteratorHelperLoose.footerButton = { paddingHorizontal: 16 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("result").fileFinishedImporting("modules/safety_hub/native/AppealIngestionModal.tsx");
+({ APPEAL_INGESTION_IMPRESSION_PROPERTIES: c9, AppealIngestionSections: c10 } = SafetyHubView);
+({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
+createCacheKey = { container: null, headerContainer: null, header: null, subheader: null, separator: null, footerContainer: null, footerText: null, footerButton: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { alignSelf: "stretch", marginTop: 16, marginBottom: 8, paddingHorizontal: 16 };
+createCacheKey[2] = { marginBottom: 8, textAlign: "center" };
+createCacheKey[3] = { lineHeight: 20, marginBottom: 8, textAlign: "center" };
+createCacheKey[4] = { height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE, marginVertical: 24 };
+createCacheKey[5] = { marginBottom: 16 };
+createCacheKey[6] = { marginBottom: 16, textAlign: "center" };
+createCacheKey[7] = { paddingHorizontal: 16 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { height: 1, backgroundColor: require("Themes").colors.BORDER_SUBTLE, marginVertical: 24 };
+const result = require("noop").fileFinishedImporting("modules/safety_hub/native/AppealIngestionModal.tsx");
 
 export default function AppealIngestionModal(classificationId) {
+  let c0;
   let classification;
-  let require;
+  let _require;
   let flag;
   let flag2;
-  let obj = require(11053) /* useSafetyHubClassifications */;
+  let obj = _require(11077);
   const safetyHubClassification = obj.useSafetyHubClassification(classificationId.classificationId);
-  ({ isDsaEligible: require, classification } = safetyHubClassification);
+  ({ isDsaEligible: c0, classification } = safetyHubClassification);
   flag = undefined;
-  if (null != classification) {
+  if (classification != null) {
     flag = classification.is_spam;
   }
   if (!flag) {
@@ -57,7 +55,7 @@ export default function AppealIngestionModal(classificationId) {
   }
   const classification2 = safetyHubClassification.classification;
   flag2 = undefined;
-  if (null != classification2) {
+  if (classification2 != null) {
     flag2 = classification2.is_coppa;
   }
   if (!flag2) {
@@ -65,144 +63,152 @@ export default function AppealIngestionModal(classificationId) {
   }
   obj = {
     initialRouteName: constants.SPEED_BUMP,
-    screens: flag(5485)(() => (function getScreens(closure_0, flag, flag2) {
-      let closure_1 = flag;
-      let closure_2 = flag2;
+    screens: flag(5503)(() => {
       let obj = {};
-      obj = {};
-      let obj2 = outer2_0(outer2_3[21]);
-      obj.headerLeft = obj2.getHeaderCloseButton(flag(outer2_3[15]).close);
-      obj.headerTitle = function headerTitle() {
-        return outer3_16();
+      obj = { headerLeft: null, headerTitle: null, render: null, impressionName: null, impressionProperties: null };
+      let obj2 = _undefined(outer1_3[21]);
+      obj[0] = obj2.getHeaderCloseButton(flag(outer1_3[15]).close);
+      obj[1] = function headerTitle() {
+        return callback3(callback(4185).Text, { variant: "text-md/normal", children: "accessibilityRole" });
       };
-      obj.render = function render() {
-        return outer3_12(flag(outer3_3[22]), { isDsaEligible: closure_0, isSpam: closure_1, isCoppa: closure_2 });
+      obj[2] = function render() {
+        return outer1_12(callback2(outer1_3[22]), { isDsaEligible: closure_0, isSpam: callback2, isCoppa: closure_2 });
       };
-      obj.impressionName = outer2_0(outer2_3[23]).ImpressionNames.APPEAL_INGESTION_SPEED_BUMP;
-      obj.impressionProperties = outer2_9;
-      obj[outer2_10.SPEED_BUMP] = obj;
-      obj = {};
-      let obj4 = outer2_0(outer2_3[21]);
-      obj.headerLeft = obj4.getHeaderBackButton();
-      obj.headerTitle = function headerTitle() {
-        return outer3_16();
+      obj[3] = _undefined(outer1_3[23]).ImpressionNames.APPEAL_INGESTION_SPEED_BUMP;
+      obj[4] = outer1_9;
+      obj[outer1_10.SPEED_BUMP] = obj;
+      obj = { headerLeft: null, headerTitle: null, render: null, impressionName: null, impressionProperties: null };
+      let obj4 = _undefined(outer1_3[21]);
+      obj[0] = obj4.getHeaderBackButton();
+      obj[1] = function headerTitle() {
+        return callback3(callback(4185).Text, { variant: "text-md/normal", children: "accessibilityRole" });
       };
-      obj.render = function render() {
-        return outer3_12(flag(outer3_3[24]), { isDsaEligible: closure_0 });
+      obj[2] = function render() {
+        return outer1_12(callback2(outer1_3[24]), { isDsaEligible: closure_0 });
       };
-      obj.impressionName = outer2_0(outer2_3[23]).ImpressionNames.APPEAL_INGESTION_COLLECT_SIGNAL;
-      obj.impressionProperties = outer2_9;
-      obj[outer2_10.COLLECT_SIGNAL] = obj;
-      const obj1 = {
-        headerLeft: outer2_0(outer2_3[21]).getHeaderBackButton(),
-        headerTitle() {
-          return outer3_16();
-        },
-        render() {
-          return outer3_12(flag(outer3_3[25]), { isDsaEligible: closure_0 });
-        },
-        impressionName: outer2_0(outer2_3[23]).ImpressionNames.APPEAL_INGESTION_CONFIRM_SUBMISSION,
-        impressionProperties: outer2_9
+      obj[3] = _undefined(outer1_3[23]).ImpressionNames.APPEAL_INGESTION_COLLECT_SIGNAL;
+      obj[4] = outer1_9;
+      obj[outer1_10.COLLECT_SIGNAL] = obj;
+      const obj1 = { headerLeft: null, headerTitle: null, render: null, impressionName: null, impressionProperties: null };
+      obj1[0] = _undefined(outer1_3[21]).getHeaderBackButton();
+      obj1[1] = function headerTitle() {
+        return callback3(callback(4185).Text, { variant: "text-md/normal", children: "accessibilityRole" });
       };
-      obj[outer2_10.CONFIRM_SUBMISSION] = obj1;
-      obj2 = {};
-      const obj7 = outer2_0(outer2_3[21]);
-      obj2.headerLeft = outer2_0(outer2_3[21]).getHeaderCloseButton(flag(outer2_3[15]).close);
-      obj2.headerTitle = function headerTitle() {
-        return outer3_16();
+      obj1[2] = function render() {
+        return outer1_12(callback2(outer1_3[25]), { isDsaEligible: closure_0 });
       };
-      obj2.render = function render() {
-        return outer3_12(flag(outer3_3[26]), {});
+      obj1[3] = _undefined(outer1_3[23]).ImpressionNames.APPEAL_INGESTION_CONFIRM_SUBMISSION;
+      obj1[4] = outer1_9;
+      obj[outer1_10.CONFIRM_SUBMISSION] = obj1;
+      obj2 = { headerLeft: null, headerTitle: null, render: null, impressionName: null, impressionProperties: null };
+      const obj7 = _undefined(outer1_3[21]);
+      obj2[0] = _undefined(outer1_3[21]).getHeaderCloseButton(flag(outer1_3[15]).close);
+      obj2[1] = function headerTitle() {
+        return callback3(callback(4185).Text, { variant: "text-md/normal", children: "accessibilityRole" });
       };
-      obj2.impressionName = outer2_0(outer2_3[23]).ImpressionNames.APPEAL_INGESTION_REQUEST_SENT;
-      obj2.impressionProperties = outer2_9;
-      obj[outer2_10.REQUEST_SENT] = obj2;
-      const obj3 = {};
-      const obj9 = outer2_0(outer2_3[21]);
-      obj3.headerLeft = outer2_0(outer2_3[21]).getHeaderCloseButton(flag(outer2_3[15]).close);
-      obj3.headerTitle = function headerTitle() {
-        return outer3_16();
+      obj2[2] = function render() {
+        return callback3(callback2(11097), {});
       };
-      obj3.render = function render() {
-        return outer3_12(flag(outer3_3[27]), {});
+      obj2[3] = _undefined(outer1_3[23]).ImpressionNames.APPEAL_INGESTION_REQUEST_SENT;
+      obj2[4] = outer1_9;
+      obj[outer1_10.REQUEST_SENT] = obj2;
+      const obj3 = { headerLeft: null, headerTitle: null, render: null, impressionName: null, impressionProperties: null };
+      const obj9 = _undefined(outer1_3[21]);
+      obj3[0] = _undefined(outer1_3[21]).getHeaderCloseButton(flag(outer1_3[15]).close);
+      obj3[1] = function headerTitle() {
+        return callback3(callback(4185).Text, { variant: "text-md/normal", children: "accessibilityRole" });
       };
-      obj3.impressionName = outer2_0(outer2_3[23]).ImpressionNames.APPEAL_INGESTION_THANKS;
-      obj3.impressionProperties = outer2_9;
-      obj[outer2_10.THANKS] = obj3;
-      obj4 = {};
-      const obj11 = outer2_0(outer2_3[21]);
-      obj4.headerLeft = outer2_0(outer2_3[21]).getHeaderCloseButton(flag(outer2_3[15]).close);
-      obj4.headerTitle = function headerTitle() {
-        return outer3_16();
+      obj3[2] = function render() {
+        return callback3(callback2(11099), {});
       };
-      obj4.render = function render() {
-        return outer3_12(flag(outer3_3[28]), {});
+      obj3[3] = _undefined(outer1_3[23]).ImpressionNames.APPEAL_INGESTION_THANKS;
+      obj3[4] = outer1_9;
+      obj[outer1_10.THANKS] = obj3;
+      obj4 = { headerLeft: null, headerTitle: null, render: null, impressionName: null, impressionProperties: null };
+      const obj11 = _undefined(outer1_3[21]);
+      obj4[0] = _undefined(outer1_3[21]).getHeaderCloseButton(flag(outer1_3[15]).close);
+      obj4[1] = function headerTitle() {
+        return callback3(callback(4185).Text, { variant: "text-md/normal", children: "accessibilityRole" });
       };
-      obj4.impressionName = outer2_0(outer2_3[23]).ImpressionNames.APPEAL_INGESTION_SPAM;
-      obj4.impressionProperties = outer2_9;
-      obj[outer2_10.SPAM] = obj4;
+      obj4[2] = function render() {
+        return callback3(callback2(11100), {});
+      };
+      obj4[3] = _undefined(outer1_3[23]).ImpressionNames.APPEAL_INGESTION_SPAM;
+      obj4[4] = outer1_9;
+      obj[outer1_10.SPAM] = obj4;
       return obj;
-    })(closure_0, flag, flag2))
+    }),
+    headerBackTitle: null,
+    headerTitleAlign: "center"
   };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.headerBackTitle = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-  obj.headerTitleAlign = "center";
-  return callback2(require(5552) /* NavigationStack */.Navigator, obj);
+  const intl = tmp(1236).intl;
+  obj[2] = intl.string(_require(1236).t["13/7kX"]);
+  return callback2(_require(5570).Navigator, obj);
 };
 export const AppealIngestionModalHeader = function AppealIngestionModalHeader(arg0) {
   let headerText;
   let subHeaderText;
   ({ headerText, subHeaderText } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.headerContainer };
+  const tmp = createCacheKey();
+  let obj = { style: tmp.headerContainer, children: null };
   let tmp4 = null != headerText;
   if (tmp4) {
     tmp4 = "" !== headerText;
   }
   if (tmp4) {
-    obj = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: headerText };
-    tmp4 = callback2(require(4161) /* Text */.Text, obj);
+    obj = { style: null, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
+    obj[0] = tmp.header;
+    obj[4] = headerText;
+    tmp4 = callback2(require(4185) /* Text */.Text, obj);
   }
   const items = [tmp4, ];
   let tmp8 = null;
   if (null != subHeaderText) {
     tmp8 = null;
     if (subHeaderText.length > 0) {
-      obj = { style: tmp.subheader, variant: "text-md/medium", color: "text-default", children: subHeaderText };
-      tmp8 = callback2(require(4161) /* Text */.Text, obj);
+      obj = { style: null, variant: "text-md/medium", color: "text-default", children: null };
+      obj[0] = tmp.subheader;
+      obj[3] = subHeaderText;
+      tmp8 = callback2(require(4185) /* Text */.Text, obj);
     }
   }
   items[1] = tmp8;
-  obj.children = items;
+  obj[1] = items;
   return closure_13(View, obj);
 };
 export const AppealIngestionModalScreen = function AppealIngestionModalScreen(children) {
+  let c4;
+  let intl;
+  let safetyHubAppealSignal;
+  let stateFromStores1;
+  let stateFromStores2;
   let navigation;
   let callback;
-  let first1;
+  let first;
   let React;
   callback = undefined;
-  let footerText = _createForOfIteratorHelperLoose();
+  let footerText = createCacheKey();
+  let stringResult = navigation;
   let obj = safetyHubAppealSignal(navigation[11]);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getIsSubmitting());
+  const items = [handleSafetyHubRequestAgeVerificationResetModalAction];
+  const stateFromStores = obj.useStateFromStores(items, () => store.getIsSubmitting());
   let obj1 = safetyHubAppealSignal(navigation[12]);
   safetyHubAppealSignal = obj1.useSafetyHubAppealSignal();
   let obj2 = safetyHubAppealSignal(navigation[11]);
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => outer1_8.getFreeTextAppealReason());
+  const items1 = [handleSafetyHubRequestAgeVerificationResetModalAction];
+  stateFromStores1 = obj2.useStateFromStores(items1, () => store.getFreeTextAppealReason());
   let obj3 = safetyHubAppealSignal(navigation[11]);
-  const items2 = [_isNativeReflectConstruct];
-  const stateFromStores2 = obj3.useStateFromStores(items2, () => outer1_8.getAppealClassificationId());
+  const items2 = [handleSafetyHubRequestAgeVerificationResetModalAction];
+  stateFromStores2 = obj3.useStateFromStores(items2, () => store.getAppealClassificationId());
   let obj4 = safetyHubAppealSignal(navigation[12]);
-  let tmp6 = stateFromStores2;
-  if (null == stateFromStores2) {
-    tmp6 = EMPTY_STRING_SNOWFLAKE_ID;
+  let tmp7 = stateFromStores2;
+  if (stateFromStores2 == null) {
+    tmp7 = EMPTY_STRING_SNOWFLAKE_ID;
   }
-  const safetyHubClassification = obj4.useSafetyHubClassification(tmp6);
+  const safetyHubClassification = obj4.useSafetyHubClassification(tmp7);
   const classification = safetyHubClassification.classification;
   let flag;
-  if (null != classification) {
+  if (classification != null) {
     flag = classification.is_spam;
   }
   if (!flag) {
@@ -210,7 +216,7 @@ export const AppealIngestionModalScreen = function AppealIngestionModalScreen(ch
   }
   const classification2 = safetyHubClassification.classification;
   let flag2;
-  if (null != classification2) {
+  if (classification2 != null) {
     flag2 = classification2.is_coppa;
   }
   if (!flag2) {
@@ -218,109 +224,174 @@ export const AppealIngestionModalScreen = function AppealIngestionModalScreen(ch
   }
   const classification3 = safetyHubClassification.classification;
   let prop;
-  if (null != classification3) {
+  if (classification3 != null) {
     prop = classification3.appeal_ingestion_type;
   }
-  let obj5 = safetyHubAppealSignal(navigation[13]);
-  navigation = obj5.useNavigation();
-  let tmp10 = null != prop;
-  if (tmp10) {
-    tmp10 = prop !== safetyHubAppealSignal(navigation[14]).AppealIngestionType.IN_APP;
-  }
-  if (!tmp10) {
-    tmp10 = flag2;
-  }
-  if (!tmp10) {
-    tmp10 = flag;
-  }
-  const tmp14 = first1(React.useState(""), 2);
-  let first = tmp14[0];
-  callback = tmp14[1];
-  const tmp16 = first1(React.useState(""), 2);
-  first1 = tmp16[0];
-  React = tmp16[1];
+  navigation = safetyHubAppealSignal(stringResult[13]).useNavigation();
+  const tmp11 = null != prop && prop !== safetyHubAppealSignal(stringResult[14]).AppealIngestionType.IN_APP || flag2 || flag;
+  let obj5 = "";
+  const tmp12 = !tmp11;
+  const tmpResult = safetyHubAppealSignal(stringResult[13]);
+  [intl, c4] = first(React.useState(""), 2);
+  const tmp14 = first(React.useState(""), 2);
+  first = tmp14[0];
+  React = tmp14[1];
   const items3 = [navigation];
   const effect = React.useEffect(() => {
     let closure_0 = navigation.addListener("state", () => {
-      outer1_6(outer1_3.getState().routes[outer1_3.getState(outer1_3).routes.length - 1].name);
+      callback(store.getState().routes[store.getState(store).routes.length - 1].name);
     });
     return () => {
       outer1_3.removeListener("state", closure_0);
     };
   }, items3);
-  const items4 = [navigation, first1];
+  const items4 = [navigation, first];
   callback = React.useCallback(() => {
-    if (first1 === outer1_10.SPEED_BUMP) {
-      navigation.push(outer1_10.COLLECT_SIGNAL);
-    } else if (first1 === outer1_10.COLLECT_SIGNAL) {
-      navigation.push(outer1_10.CONFIRM_SUBMISSION);
-    } else if (first1 === outer1_10.CONFIRM_SUBMISSION) {
-      navigation.push(outer1_10.REQUEST_SENT);
+    if (first === outer1_10.SPEED_BUMP) {
+      navigation.push(tmp2.COLLECT_SIGNAL);
+    } else if (tmp === tmp2.COLLECT_SIGNAL) {
+      navigation.push(tmp2.CONFIRM_SUBMISSION);
+    } else if (tmp === tmp2.CONFIRM_SUBMISSION) {
+      navigation.push(tmp2.REQUEST_SENT);
     } else {
       stateFromStores1(navigation[15]).close();
       const obj = stateFromStores1(navigation[15]);
     }
   }, items4);
-  // CreateGeneratorClosureLongIndex (0x67)
   const items5 = [stateFromStores2, safetyHubAppealSignal, stateFromStores1, callback];
-  let string = React.useCallback(callback(tmp), items5);
-  obj = { style: footerText.container };
+  let string = React.useCallback(callback(function*() {
+    if (c5 === 2) {
+      c5 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c5 = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_1 = tmp3;
+            let body = tmp7;
+            if (null !== outer1_2) {
+              let dependencyMap = 1;
+              v0("");
+              v0 = 2;
+              c5 = 1;
+              let obj1 = { value: null, done: false };
+              obj1[0] = outer1_2(11078).requestReview(tmp36, outer1_0, outer1_1);
+              return obj1;
+            }
+          }
+        } else {
+          if (1 === tmp7) {
+            dependencyMap = 0;
+            body = closure_2;
+            obj1 = outer1_0(6755);
+            body = body.body;
+            let code;
+            if (body != null) {
+              code = body.code;
+            }
+            v0(obj1.getRequestReviewErrorFromCode(code));
+            const tmp15 = v0;
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            callback();
+            dependencyMap = 0;
+          }
+          dependencyMap = 0;
+          c5 = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        }
+        c5 = 3;
+      } catch (tmp27) {
+        closure_2 = tmp27;
+        if (tmp4 === dependencyMap) {
+          c5 = tmp2;
+          throw tmp27;
+        } else {
+          v0 = tmp;
+        }
+      }
+    }
+  }), items5);
+  obj = { style: footerText.container, children: null };
   const items6 = [children.children, ];
-  obj = { style: footerText.footerContainer };
+  obj = { style: footerText.footerContainer, children: null };
   obj1 = { style: footerText.separator };
   const items7 = [callback2(callback, obj1), ];
-  if (!!tmp10) {
-    items7[1] = tmp13;
-    obj.children = items7;
-    items6[1] = tmp20(tmp21, obj);
-    obj.children = items6;
-    return tmp20(tmp21, obj);
+  if (tmp11) {
+    items7[1] = tmp12;
+    obj[1] = items7;
+    items6[1] = tmp18(tmp19, obj);
+    obj[1] = items6;
+    return tmp18(tmp19, obj);
   } else {
-    obj2 = { bottom: true, style: footerText.footerButton };
-    if (first1 === constants.CONFIRM_SUBMISSION) {
-      obj3 = {};
-      obj4 = { variant: "text-xs/medium", color: "text-default", style: footerText.footerText };
-      const intl3 = safetyHubAppealSignal(navigation[19]).intl;
-      obj4.children = intl3.string(safetyHubAppealSignal(navigation[19]).t["d6qgY/"]);
-      const items8 = [callback2(safetyHubAppealSignal(navigation[10]).Text, obj4), , ];
-      let tmp38 = `` !== first;
-      if (tmp38) {
-        obj5 = { variant: "text-xs/medium", color: "text-feedback-critical" };
+    obj2 = { bottom: true, style: null, children: null };
+    obj2[1] = footerText.footerButton;
+    if (first === constants.CONFIRM_SUBMISSION) {
+      obj3 = { variant: "text-xs/medium", color: "text-default", style: null, children: null };
+      obj3[2] = footerText.footerText;
+      const intl4 = tmp(stringResult[19]).intl;
+      obj3[3] = intl4.string(tmp(stringResult[19]).t["d6qgY/"]);
+      const items8 = [tmp20(tmp(stringResult[10]).Text, obj3), , ];
+      let tmp20Result = `` !== intl;
+      if (tmp20Result) {
+        obj4 = { variant: "text-xs/medium", color: "text-feedback-critical", style: null, children: null };
         footerText = footerText.footerText;
-        obj5.style = footerText;
-        obj5.children = first;
-        tmp38 = callback2(safetyHubAppealSignal(navigation[10]).Text, obj5);
+        obj4[2] = footerText;
+        obj4[3] = intl;
+        tmp20Result = tmp20(tmp(stringResult[10]).Text, obj4);
       }
-      items8[1] = tmp38;
-      first = safetyHubAppealSignal;
-      const obj6 = { onPress: string };
-      const intl4 = safetyHubAppealSignal(navigation[19]).intl;
-      string = intl4.string;
-      obj6.text = string(safetyHubAppealSignal(navigation[19]).t.geKm7t);
-      obj6.variant = "destructive";
-      obj6.loading = stateFromStores;
-      obj6.disabled = stateFromStores;
-      items8[2] = callback2(safetyHubAppealSignal(navigation[20]).Button, obj6);
-      obj3.children = items8;
-      let tmp45Result = closure_13(closure_14, obj3);
-      const tmp33 = closure_13;
-      const tmp34 = closure_14;
+      obj5 = { children: null };
+      items8[1] = tmp20Result;
+      const obj6 = { onPress: null, text: null, variant: "destructive", loading: null, disabled: null };
+      obj6[0] = string;
+      intl = tmp(stringResult[19]).intl;
+      string = intl.string;
+      stringResult = string(tmp(stringResult[19]).t.geKm7t);
+      obj6[1] = stringResult;
+      obj6[3] = stateFromStores;
+      obj6[4] = stateFromStores;
+      items8[2] = tmp20(tmp(stringResult[20]).Button, obj6);
+      obj5[0] = items8;
+      tmp20Result = tmp18(closure_14, obj5);
+      const tmp24 = closure_14;
     } else {
-      const obj7 = { onPress: callback };
-      if (first1 !== constants.REQUEST_SENT) {
-        if (first1 !== constants.THANKS) {
-          const intl = safetyHubAppealSignal(navigation[19]).intl;
-          let stringResult = intl.string(safetyHubAppealSignal(navigation[19]).t.XiOHRX);
+      const obj7 = { onPress: null, text: null };
+      obj7[0] = callback;
+      if (first !== tmp21.REQUEST_SENT) {
+        if (first !== tmp21.THANKS) {
+          const intl2 = tmp(stringResult[19]).intl;
+          let stringResult1 = intl2.string(tmp(stringResult[19]).t.XiOHRX);
         }
-        obj7.text = stringResult;
-        tmp45Result = tmp45(tmp48, obj7);
+        obj7[1] = stringResult1;
+        tmp20Result = tmp20(tmp27, obj7);
       }
-      const intl2 = safetyHubAppealSignal(navigation[19]).intl;
-      stringResult = intl2.string(safetyHubAppealSignal(navigation[19]).t.i4jeWR);
-      tmp45 = callback2;
+      const intl3 = tmp(stringResult[19]).intl;
+      stringResult1 = intl3.string(tmp(stringResult[19]).t.i4jeWR);
     }
-    obj2.children = tmp45Result;
-    callback2(safetyHubAppealSignal(navigation[18]).SafeAreaPaddingView, obj2);
-    const tmp22 = callback2;
+    obj2[2] = tmp20Result;
+    tmp20(tmp(stringResult[18]).SafeAreaPaddingView, obj2);
   }
 };

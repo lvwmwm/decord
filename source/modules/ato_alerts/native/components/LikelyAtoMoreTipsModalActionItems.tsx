@@ -1,12 +1,12 @@
-// Module ID: 10422
-// Function ID: 80224
+// Module ID: 10446
+// Function ID: 10447
 // Name: LikelyAtoMoreTipsModalActionItems
-// Dependencies: [31, 1850, 33, 566, 4004, 5536, 5198, 1212, 10206, 2]
+// Dependencies: [19, 1874, 21, 589, 4028, 5554, 5220, 1236, 10227, 2]
 // Exports: default
 
-// Module 10422 (LikelyAtoMoreTipsModalActionItems)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10446 (LikelyAtoMoreTipsModalActionItems)
+import noop from "noop";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -14,20 +14,21 @@ const result = require("jsxProd").fileFinishedImporting("modules/ato_alerts/nati
 
 export default function LikelyAtoMoreTipsModalActionItems(senderId) {
   senderId = senderId.senderId;
-  let obj = senderId(566);
-  const items = [_isNativeReflectConstruct];
+  let stateFromStores;
+  let obj = senderId(589);
+  const items = [mergeGuildAvatar];
   const items1 = [senderId];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getUser(senderId), items1);
+  stateFromStores = obj.useStateFromStores(items, () => outer1_4.getUser(senderId), items1);
   const items2 = [stateFromStores];
   const memo = React.useMemo(() => stateFromStores(outer1_2[4]).getName(stateFromStores), items2);
-  obj = { hasIcons: true };
-  obj = {};
-  const intl = senderId(1212).intl;
-  obj.label = intl.formatToPlainString(senderId(1212).t["F/ID+9"], { username: memo });
-  const intl2 = senderId(1212).intl;
-  obj.subLabel = intl2.string(senderId(1212).t.w2ve0t);
-  obj.onPress = senderId.handleMutePressed;
-  obj.icon = jsx(senderId(10206).BellSlashIcon, {});
-  obj.children = jsx(senderId(5198).TableRow, {});
-  return jsx(senderId(5536).TableRowGroup, {});
+  obj = { hasIcons: true, children: null };
+  obj = { label: null, subLabel: null, onPress: null, icon: null };
+  const intl = senderId(1236).intl;
+  obj[0] = intl.formatToPlainString(senderId(1236).t["F/ID+9"], { username: memo });
+  const intl2 = senderId(1236).intl;
+  obj[1] = intl2.string(senderId(1236).t.w2ve0t);
+  obj[2] = senderId.handleMutePressed;
+  obj[3] = jsx(senderId(10227).BellSlashIcon, {});
+  obj[1] = jsx(senderId(5220).TableRow, { label: null, subLabel: null, onPress: null, icon: null });
+  return jsx(senderId(5554).TableRowGroup, { label: null, subLabel: null, onPress: null, icon: null });
 };

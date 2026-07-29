@@ -1,15 +1,12 @@
-// Module ID: 14200
-// Function ID: 109023
+// Module ID: 14222
+// Function ID: 14223
 // Name: MAX_SUBSCRIPTION_TIERS
-// Dependencies: [1852, 482, 2]
+// Dependencies: [1876, 505, 2]
 
-// Module 14200 (MAX_SUBSCRIPTION_TIERS)
+// Module 14222 (MAX_SUBSCRIPTION_TIERS)
 import { SubscriptionIntervalTypes } from "GuildFeatures";
 
-let obj = { interval: SubscriptionIntervalTypes.DAY, interval_count: 1 };
-const items = [obj, ];
-obj = { interval: SubscriptionIntervalTypes.DAY, interval_count: 7 };
-items[1] = obj;
+const items = [{ interval: SubscriptionIntervalTypes.DAY, interval_count: 1 }, { interval: SubscriptionIntervalTypes.DAY, interval_count: 7 }];
 const combined = "https://" + require("sum").PRIMARY_DOMAIN + "/creators";
 const frozen = Object.freeze({ MUST_READ_ARTICLES: "https://discord.com/creators/5-must-read-articles-for-beginners", CREATOR_TO_ADMIN_101: "https://discord.com/creators/creator-to-server-admin-101", CREATOR_TO_ADMIN_201: "https://discord.com/creators/creator-to-server-admin-201" });
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsConstants.tsx");

@@ -1,26 +1,32 @@
-// Module ID: 9588
-// Function ID: 74624
+// Module ID: 9610
+// Function ID: 9611
 // Name: GIFPickerResultsList
-// Dependencies: [57, 31, 33, 9569, 9589, 6655, 9374, 9579, 2]
+// Dependencies: [32, 19, 21, 4189, 9600, 9593, 9611, 6676, 9398, 2]
 // Exports: default
 
-// Module 9588 (GIFPickerResultsList)
+// Module 9610 (GIFPickerResultsList)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { jsx } from "jsxProd";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let obj = { length: 20 };
-let arr = Array.from(obj);
-let closure_6 = arr.map(() => {
+createCacheKey = { list: null };
+createCacheKey = { marginHorizontal: -require("transformFavoriteGifUrl").GIF_PICKER_GUTTER_SPACING / 2 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { length: 20 };
+let arr = Array.from(obj1);
+let closure_7 = arr.map(() => {
 
 });
-arr = Array.from(obj);
-let closure_7 = arr.map(() => ({ width: 100, height: Math.floor(91 * Math.random()) + 90 }));
+arr = Array.from(obj1);
+let closure_8 = arr.map(() => ({ width: 100, height: Math.floor(91 * Math.random()) + 90 }));
 const result = require("jsxProd").fileFinishedImporting("modules/gif_picker/native/GIFPickerResultsList.tsx");
 
 export default function GIFPickerResultsList(columnWidth) {
   let ListFooterComponent;
+  let c0;
   let columns;
   let inActionSheet;
   let keyboardDismissMode;
@@ -28,96 +34,107 @@ export default function GIFPickerResultsList(columnWidth) {
   let onPressGIF;
   let resultItems;
   let selectedGifSrc;
+  let tmp6;
   columnWidth = columnWidth.columnWidth;
+  let _require = columnWidth;
   ({ resultItems, onPressGIF } = columnWidth);
   ({ inActionSheet, selectedGifSrc } = columnWidth);
   let callback;
-  let viewedItemIndexes;
+  let React;
   ({ columns, ListFooterComponent, loading, keyboardDismissMode } = columnWidth);
   if (loading) {
-    resultItems = closure_6;
+    resultItems = closure_7;
   }
   const items = [columnWidth];
-  callback = viewedItemIndexes.useCallback((arg0, arg1) => ({ height: columnWidth / (arg0 / arg1) }), items);
-  const callback1 = viewedItemIndexes.useCallback((src) => {
+  callback = React.useCallback((arg0, arg1) => ({ height: c0 / (arg0 / arg1) }), items);
+  _require = undefined;
+  const callback1 = React.useCallback((src) => {
     src = undefined;
-    if (null != src) {
+    if (src != null) {
       src = src.src;
     }
-    if (null == src) {
+    if (src == null) {
       src = arg1.toString();
     }
     return src;
   }, []);
-  const tmp3 = (function useViewedItemIndexes() {
-    const tmp = callback(viewedItemIndexes.useState(() => new Set()), 2);
-    let closure_0 = tmp[1];
-    return {
-      viewedItemIndexes: tmp[0],
-      onViewableItemsChanged: viewedItemIndexes.useCallback((changed) => {
-        changed = changed.changed;
-        changed((items) => {
-          const set = new Set(items);
-          const item = set.forEach((index) => {
-            index = index.index;
-            if (tmp) {
-              set.add(index);
-            }
-          });
-          return set;
-        });
-      }, [])
-    };
-  })();
-  viewedItemIndexes = tmp3.viewedItemIndexes;
-  const items1 = [viewedItemIndexes, selectedGifSrc];
+  const tmp = createCacheKey();
+  [tmp6, c0] = callback(React.useState(() => new Set()), 2);
+  React = tmp6;
+  const items1 = [tmp6, selectedGifSrc];
+  const callback2 = React.useCallback((changed) => {
+    changed = changed.changed;
+    changed((items) => {
+      const set = new Set(items);
+      const item = set.forEach((index) => {
+        index = index.index;
+        if (tmp) {
+          set.add(index);
+        }
+      });
+      return set;
+    });
+  }, []);
   const items2 = [onPressGIF, callback];
-  const memo = viewedItemIndexes.useMemo(() => ({ viewedItemIndexes, selectedGifSrc }), items1);
-  const callback2 = viewedItemIndexes.useCallback((arg0) => {
+  const memo = React.useMemo(() => ({ viewedItemIndexes: c4, selectedGifSrc }), items1);
+  const callback3 = React.useCallback((arg0) => {
     let extraData;
     let index;
     let item;
     ({ item, index, extraData } = arg0);
     if (null == item) {
-      const size = outer1_7[index];
-      let obj = { height: callback(size.width, size.height).height };
-      return outer1_5(columnWidth(selectedGifSrc[4]).GIFPickerItemPlaceholder, obj);
+      const size = outer1_8[index];
+      let obj = { height: null };
+      obj[0] = callback(size.width, size.height).height;
+      return outer1_5(_undefined(selectedGifSrc[6]).GIFPickerItemPlaceholder, obj);
     } else {
       const height = callback(item.width, item.height).height;
       const viewedItemIndexes = extraData.viewedItemIndexes;
       if (viewedItemIndexes.has(index)) {
-        obj = { height, index, item, onPressGIF };
+        obj = { height: null, index: null, item: null, onPressGIF: null, selected: null };
+        obj[0] = height;
+        obj[1] = index;
+        obj[2] = item;
+        obj[3] = onPressGIF;
         let tmp8;
         if (null != extraData.selectedGifSrc) {
           tmp8 = item.src === extraData.selectedGifSrc;
         }
-        obj.selected = tmp8;
-        let tmp15Result = tmp15(onPressGIF(selectedGifSrc[4]), obj);
-        const tmp6 = onPressGIF(selectedGifSrc[4]);
+        obj[4] = tmp8;
+        let tmp15Result = tmp15(onPressGIF(selectedGifSrc[6]), obj);
+        const tmp6 = onPressGIF(selectedGifSrc[6]);
       } else {
-        obj = { height };
-        tmp15Result = tmp15(columnWidth(selectedGifSrc[4]).GIFPickerItemPlaceholder, obj);
+        obj = { height: null };
+        obj[0] = height;
+        tmp15Result = tmp15(_undefined(selectedGifSrc[6]).GIFPickerItemPlaceholder, obj);
       }
       return tmp15Result;
     }
   }, items2);
-  let tmp6 = columnWidth(selectedGifSrc[5]);
-  let obj = columnWidth(selectedGifSrc[6]);
-  obj = { contentContainerStyle: { paddingBottom: onPressGIF(selectedGifSrc[3])({ hasCategories: false }).safeAreaBottomKeyboardAware }, data: resultItems };
-  const isPortalKeyboardInModal = obj.useIsPortalKeyboardInModal();
-  obj.drawDistance = columnWidth(selectedGifSrc[7]).GIF_PICKER_ITEM_ESIMTATED_HEIGHT;
-  obj.extraData = memo;
-  obj.keyExtractor = callback1;
-  obj.keyboardDismissMode = keyboardDismissMode;
-  obj.keyboardShouldPersistTaps = "always";
-  obj.numColumns = columns;
-  obj.ListFooterComponent = ListFooterComponent;
-  obj.optimizeItemArrangement = true;
-  obj.onViewableItemsChanged = tmp3.onViewableItemsChanged;
+  const tmp11 = _require(selectedGifSrc[7]);
+  if (inActionSheet) {
+    let MasonryFlashList = tmp11.BottomSheetMasonryFlashList;
+    let tmp12 = tmp10;
+  } else {
+    MasonryFlashList = tmp11.MasonryFlashList;
+    tmp12 = tmp10;
+  }
+  const tmp5 = callback(React.useState(() => new Set()), 2);
+  let obj = { contentContainerStyle: { paddingBottom: onPressGIF(selectedGifSrc[5])({ hasCategories: false }).safeAreaBottomKeyboardAware }, data: resultItems, drawDistance: null, extraData: null, keyExtractor: null, keyboardDismissMode: null, keyboardShouldPersistTaps: "always", maintainVisibleContentPosition: null, numColumns: null, ListFooterComponent: null, optimizeItemArrangement: true, onViewableItemsChanged: null, preventNativeModalDismiss: null, renderItem: null, style: null };
+  const isPortalKeyboardInModal = tmp12(selectedGifSrc[8]).useIsPortalKeyboardInModal();
+  obj[2] = tmp12(selectedGifSrc[4]).GIF_PICKER_ITEM_ESIMTATED_HEIGHT;
+  obj[3] = memo;
+  obj[4] = callback1;
+  obj[5] = keyboardDismissMode;
+  obj[7] = { disabled: true };
+  obj[8] = columns;
+  obj[9] = ListFooterComponent;
+  obj[11] = callback2;
   if (inActionSheet) {
     inActionSheet = isPortalKeyboardInModal;
   }
-  obj.preventNativeModalDismiss = inActionSheet;
-  obj.renderItem = callback2;
-  return jsx(inActionSheet ? tmp6.BottomSheetMasonryFlashList : tmp6.MasonryFlashList, { contentContainerStyle: { paddingBottom: onPressGIF(selectedGifSrc[3])({ hasCategories: false }).safeAreaBottomKeyboardAware }, data: resultItems });
+  obj[12] = inActionSheet;
+  obj[13] = callback3;
+  obj[14] = tmp.list;
+  return <MasonryFlashList contentContainerStyle={{ paddingBottom: onPressGIF(selectedGifSrc[5])({ hasCategories: false }).safeAreaBottomKeyboardAware }} data={resultItems} drawDistance={null} extraData={null} keyExtractor={null} keyboardDismissMode={null} keyboardShouldPersistTaps="always" maintainVisibleContentPosition={null} numColumns={null} ListFooterComponent={null} optimizeItemArrangement onViewableItemsChanged={null} preventNativeModalDismiss={null} renderItem={null} style={null} />;
 };

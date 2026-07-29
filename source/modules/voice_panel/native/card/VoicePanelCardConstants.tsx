@@ -1,32 +1,30 @@
-// Module ID: 10019
-// Function ID: 77384
+// Module ID: 10041
+// Function ID: 10042
 // Name: CARD_SIZE
-// Dependencies: [689, 2]
+// Dependencies: [712, 2]
 // Exports: getCallTileGutter, getEdgeGutter
 
-// Module 10019 (CARD_SIZE)
+// Module 10041 (CARD_SIZE)
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/card/VoicePanelCardConstants.tsx");
 
 export const CARD_SIZE = 165;
 export const CALL_TILE_GUTTER = 12;
 export const EDGE_GUTTER = 12;
 export const getCallTileGutter = function getCallTileGutter() {
-  let items = arg0;
+  let enabledExperiments = arg0;
   if (arg0 === undefined) {
-    items = [];
+    enabledExperiments = [];
   }
-  const VOICE_PANEL_GUTTER = importDefault(689).modules.mobile.VOICE_PANEL_GUTTER;
-  const obj = { enabledExperiments: items };
-  return VOICE_PANEL_GUTTER.resolve(obj);
+  const VOICE_PANEL_GUTTER = importDefault(712).modules.mobile.VOICE_PANEL_GUTTER;
+  return VOICE_PANEL_GUTTER.resolve({ enabledExperiments });
 };
 export const getEdgeGutter = function getEdgeGutter() {
-  let items = arg0;
+  let enabledExperiments = arg0;
   if (arg0 === undefined) {
-    items = [];
+    enabledExperiments = [];
   }
-  const VOICE_PANEL_GUTTER = importDefault(689).modules.mobile.VOICE_PANEL_GUTTER;
-  const obj = { enabledExperiments: items };
-  return VOICE_PANEL_GUTTER.resolve(obj);
+  const VOICE_PANEL_GUTTER = importDefault(712).modules.mobile.VOICE_PANEL_GUTTER;
+  return VOICE_PANEL_GUTTER.resolve({ enabledExperiments });
 };
 export const CARD_BACKGROUND_OPACITY_ANDROID = 0.32;
 export const VOICE_PANEL_CONTROLS_OPACITY_ANDROID = 0.54;

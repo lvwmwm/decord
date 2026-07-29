@@ -1,32 +1,32 @@
-// Module ID: 13776
-// Function ID: 105605
+// Module ID: 13797
+// Function ID: 13798
 // Name: pressable
-// Dependencies: [1850, 7733, 566, 9153, 10099, 1212, 2]
+// Dependencies: [1874, 7756, 589, 9177, 10120, 1236, 2]
 
-// Module 13776 (pressable)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13797 (pressable)
+import mergeGuildAvatar from "mergeGuildAvatar";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["w/qqKK"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["w/qqKK"]);
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT,
   useTrailing: function useAccountEmailSettingTrailing() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => {
-      const currentUser = outer1_3.getCurrentUser();
+    const items = [mergeGuildAvatar];
+    return require(589) /* initialize */.useStateFromStores(items, () => {
+      currentUser = currentUser.getCurrentUser();
       let email;
-      if (null != currentUser) {
+      if (currentUser != null) {
         email = currentUser.email;
       }
       return email;
     });
   },
   onPress: function onAccountEmailSettingPress() {
-    importDefault(9153).open(true);
+    importDefault(9177).open(true);
   },
   withArrow: true
 };

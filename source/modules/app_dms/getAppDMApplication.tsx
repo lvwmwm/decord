@@ -1,15 +1,15 @@
-// Module ID: 11346
-// Function ID: 88050
+// Module ID: 11370
+// Function ID: 11371
 // Name: getAppDMApplication
-// Dependencies: [4202, 5878, 1850, 2]
+// Dependencies: [4226, 5896, 1874, 2]
 // Exports: getAppDMApplication
 
-// Module 11346 (getAppDMApplication)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
-import closure_2 from "_isNativeReflectConstruct";
+// Module 11370 (getAppDMApplication)
+import addApplication from "addApplication";
+import createUserWidgetFromServer from "createUserWidgetFromServer";
+import mergeGuildAvatar from "mergeGuildAvatar";
 
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_dms/getAppDMApplication.tsx");
+const result = require("mergeGuildAvatar").fileFinishedImporting("modules/app_dms/getAppDMApplication.tsx");
 
 export const getAppDMApplication = function getAppDMApplication(channel) {
   let recipientId;
@@ -18,28 +18,27 @@ export const getAppDMApplication = function getAppDMApplication(channel) {
   }
   user = user.getUser(recipientId);
   let bot;
-  if (null != user) {
+  if (user != null) {
     bot = user.bot;
   }
   let tmp4;
   if (true === bot) {
     tmp4 = recipientId;
   }
-  const appIdForBotUserId = authStore.getAppIdForBotUserId(tmp4);
-  let tmp6;
+  appIdForBotUserId = appIdForBotUserId.getAppIdForBotUserId(tmp4);
   if (null != tmp4) {
     userProfile = userProfile.getUserProfile(tmp4);
     let id;
-    if (null != userProfile) {
+    if (userProfile != null) {
       const application = userProfile.application;
-      if (null != application) {
+      if (application != null) {
         id = application.id;
       }
     }
-    tmp6 = id;
+    const tmp6 = id;
   }
-  if (null != appIdForBotUserId) {
-    tmp6 = appIdForBotUserId;
+  if (appIdForBotUserId == null) {
+    appIdForBotUserId = tmp6;
   }
-  return authStore.getApplication(tmp6);
+  return appIdForBotUserId.getApplication(appIdForBotUserId);
 };

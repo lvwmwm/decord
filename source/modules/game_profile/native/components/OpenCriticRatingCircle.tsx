@@ -1,10 +1,10 @@
-// Module ID: 8506
-// Function ID: 67544
+// Module ID: 8530
+// Function ID: 8531
 // Name: OpenCriticRatingCircle
-// Dependencies: [33, 8507, 2]
+// Dependencies: [21, 8531, 2]
 // Exports: default
 
-// Module 8506 (OpenCriticRatingCircle)
+// Module 8530 (OpenCriticRatingCircle)
 import { jsx } from "jsxProd";
 
 let result = require("set").fileFinishedImporting("modules/game_profile/native/components/OpenCriticRatingCircle.tsx");
@@ -15,18 +15,16 @@ export default function OpenCriticRatingCircle(size) {
   const result1 = (size - 4) / 2;
   const result2 = 2 * Math.PI * result1;
   const result3 = Math.min(Math.max(size.rating, 0), 100) / 100;
-  let obj = { width: size, height: size };
-  obj = {};
+  let obj = { width: size, height: size, children: null };
+  obj = { transform: null, cx: null, cy: null, r: null, stroke: null, strokeWidth: 2, fill: "none", strokeDasharray: null, strokeDashoffset: null };
   const diff = 1 - result3;
-  obj.transform = "rotate(" + 360 * diff / 2 + " " + result + " " + result + ")";
-  obj.cx = result;
-  obj.cy = result;
-  obj.r = result1;
-  obj.stroke = size.strokeColor;
-  obj.strokeWidth = 2;
-  obj.fill = "none";
-  obj.strokeDasharray = result2;
-  obj.strokeDashoffset = result2 * diff;
-  obj.children = jsx(require(8507) /* inlineStyles */.Circle, {});
-  return jsx(importDefault(8507), {});
+  obj[0] = "rotate(" + 360 * diff / 2 + " " + result + " " + result + ")";
+  obj[1] = result;
+  obj[2] = result;
+  obj[3] = result1;
+  obj[4] = size.strokeColor;
+  obj[7] = result2;
+  obj[8] = result2 * diff;
+  obj[2] = jsx(require(8531) /* inlineStyles */.Circle, { transform: null, cx: null, cy: null, r: null, stroke: null, strokeWidth: 2, fill: "none", strokeDasharray: null, strokeDashoffset: null });
+  return jsx(importDefault(8531), { transform: null, cx: null, cy: null, r: null, stroke: null, strokeWidth: 2, fill: "none", strokeDasharray: null, strokeDashoffset: null });
 };

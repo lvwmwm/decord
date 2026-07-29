@@ -1,15 +1,15 @@
-// Module ID: 6536
-// Function ID: 58192
+// Module ID: 6557
+// Function ID: 6558
 // Name: getBillingInformationStringNative
-// Dependencies: [5, 653, 3811, 478, 1212, 6311, 2]
+// Dependencies: [5, 676, 3835, 501, 1236, 6332, 2]
 // Exports: getBillingInformationStringNative
 
-// Module 6536 (getBillingInformationStringNative)
+// Module 6557 (getBillingInformationStringNative)
 import serializePurchaseResponse from "serializePurchaseResponse";
 import { SubscriptionStatusTypes } from "ME";
 
 const require = arg1;
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/billing/native/subscription/BillingInformation.tsx");
+const result = require("getPremiumPlanItem").fileFinishedImporting("modules/billing/native/subscription/BillingInformation.tsx");
 
 export const getBillingInformationStringNative = function getBillingInformationStringNative(subscription, first, first1, flag, fractionalPremiumInfo) {
   let tmp = first1;
@@ -20,22 +20,79 @@ export const getBillingInformationStringNative = function getBillingInformationS
     flag = false;
   }
   let _require;
-  let obj = _require(3811);
+  let obj = _require(3835);
   let billingInformationString = obj.getBillingInformationString(subscription, first, tmp, flag, fractionalPremiumInfo);
-  let tmp3 = _require(478).isIOS() && subscription.isPurchasedViaApple;
-  if (tmp3) {
-    tmp3 = subscription.status === SubscriptionStatusTypes.ACTIVE;
+  let tmp5 = _require(501).isIOS() && subscription.isPurchasedViaApple;
+  if (tmp5) {
+    tmp5 = subscription.status === SubscriptionStatusTypes.ACTIVE;
   }
-  if (tmp3) {
-    const intl = _require(1212).intl;
-    obj = { renewalDate: first.subscriptionPeriodStart };
-    _require = callback(async () => {
-      yield callback(outer2_1[5]).manageSubscription();
+  if (tmp5) {
+    const intl = tmp2(1236).intl;
+    obj = { renewalDate: null, onSubscriptionManagementClick: null };
+    obj[0] = first.subscriptionPeriodStart;
+    _require = callback(function*() {
+      if (v0 === 2) {
+        v0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v0 = 2;
+          if (0 === table) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let obj1 = v0(table[5]);
+              table = 1;
+              v0 = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = obj1.manageSubscription();
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            v0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            v0 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp7) {
+          v0 = tmp;
+          throw tmp7;
+        }
+      }
     });
-    obj.onSubscriptionManagementClick = function() {
-      return callback(...arguments);
+    obj[1] = function() {
+      const self = this;
+      const apply = closure_0.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     };
-    billingInformationString = intl.format(_require(1212).t.gknRR3, obj);
+    billingInformationString = intl.format(tmp2(1236).t.gknRR3, obj);
   }
   return billingInformationString;
 };

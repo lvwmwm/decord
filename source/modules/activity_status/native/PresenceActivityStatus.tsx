@@ -1,19 +1,19 @@
-// Module ID: 9049
-// Function ID: 71047
+// Module ID: 9073
+// Function ID: 9074
 // Name: PresenceActivityStatus
-// Dependencies: [31, 653, 33, 6006, 8911, 6592, 9050, 9045, 9052, 9044, 9047, 2]
+// Dependencies: [19, 676, 21, 6024, 8935, 6613, 9074, 9069, 9076, 9068, 9071, 2]
 // Exports: default
 
-// Module 9049 (PresenceActivityStatus)
-import "result";
+// Module 9073 (PresenceActivityStatus)
+import "noop";
 import { ActivityTypes } from "ME";
 import jsxProd from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = jsxProd);
+({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
 const result = require("jsxProd").fileFinishedImporting("modules/activity_status/native/PresenceActivityStatus.tsx");
 
 export default function PresenceActivityStatus(hideText) {
@@ -36,39 +36,42 @@ export default function PresenceActivityStatus(hideText) {
       return null;
     }
   }
-  if (importDefault(6006)(activity)) {
-    let AppsIcon = require(6592) /* AppsIcon */.AppsIcon;
+  if (importDefault(6024)(activity)) {
+    let AppsIcon = require(6613) /* AppsIcon */.AppsIcon;
   } else if (activity.type === ActivityTypes.PLAYING) {
-    AppsIcon = require(8911) /* GameControllerIcon */.GameControllerIcon;
-  } else if (activity.type === ActivityTypes.LISTENING) {
-    AppsIcon = require(9050) /* MusicIcon */.MusicIcon;
+    AppsIcon = require(8935) /* GameControllerIcon */.GameControllerIcon;
+  } else if (activity.type === tmp3.LISTENING) {
+    AppsIcon = require(9074) /* MusicIcon */.MusicIcon;
   } else {
-    if (activity.type !== ActivityTypes.WATCHING) {
-      if (activity.type !== ActivityTypes.STREAMING) {
+    if (activity.type !== tmp3.WATCHING) {
+      if (activity.type !== tmp3.STREAMING) {
         AppsIcon = null;
-        if (activity.type === ActivityTypes.COMPETING) {
-          AppsIcon = require(8911) /* GameControllerIcon */.GameControllerIcon;
+        if (activity.type === tmp3.COMPETING) {
+          AppsIcon = require(8935) /* GameControllerIcon */.GameControllerIcon;
         }
       }
     }
-    AppsIcon = require(9045) /* TvIcon */.TvIcon;
+    AppsIcon = require(9069) /* TvIcon */.TvIcon;
   }
-  let obj = {};
-  let tmp18 = !hideIcon;
-  if (tmp18) {
-    tmp18 = null != AppsIcon;
+  let tmp12 = !hideIcon;
+  if (!hideIcon) {
+    tmp12 = null != AppsIcon;
   }
-  if (tmp18) {
-    obj = { icon: AppsIcon, style: iconStyle };
-    tmp18 = callback(importDefault(9044), obj);
+  if (tmp12) {
+    let obj = { icon: null, style: null };
+    obj[0] = AppsIcon;
+    obj[1] = iconStyle;
+    tmp12 = callback(tmp(9068), obj);
   }
-  const items = [tmp18, ];
-  let tmp23 = !flag;
-  if (tmp23) {
-    obj = { style: textStyle, maxFontSizeMultiplier, children: importDefault(9052)(activity, true).text };
-    tmp23 = callback(importDefault(9047), obj);
+  const children = [tmp12, ];
+  let tmp15 = !flag;
+  if (!flag) {
+    obj = { style: null, maxFontSizeMultiplier: null, children: null };
+    obj[0] = textStyle;
+    obj[1] = maxFontSizeMultiplier;
+    obj[2] = importDefault(9076)(activity, true).text;
+    tmp15 = callback(tmp(9071), obj);
   }
-  items[1] = tmp23;
-  obj.children = items;
-  return closure_6(closure_5, obj);
+  children[1] = tmp15;
+  return closure_6(closure_5, { children });
 };

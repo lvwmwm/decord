@@ -1,10 +1,10 @@
-// Module ID: 8469
-// Function ID: 67430
+// Module ID: 8493
+// Function ID: 8494
 // Name: useXboxGamePassStoreUrl
-// Dependencies: [653, 1832, 8461, 2]
+// Dependencies: [676, 1856, 8485, 2]
 // Exports: default
 
-// Module 8469 (useXboxGamePassStoreUrl)
+// Module 8493 (useXboxGamePassStoreUrl)
 import { Distributors } from "ME";
 
 const result = require("XBOX_DISCORD_OCID").fileFinishedImporting("modules/game_profile/hooks/useXboxGamePassStoreUrl.tsx");
@@ -15,21 +15,21 @@ export default function useXboxGamePassStoreUrl(thirdPartySkus) {
   } else {
     thirdPartySkus = thirdPartySkus.thirdPartySkus;
     const found = thirdPartySkus.find((distributor) => {
-      let tmp = distributor.distributor === outer1_2.XBOX_GAME_PASS;
+      let tmp = distributor.distributor === constants.XBOX_GAME_PASS;
       if (tmp) {
-        tmp = !outer1_0(outer1_1[1]).isNullOrEmpty(distributor.id);
-        const obj = outer1_0(outer1_1[1]);
+        tmp = !callback(table[1]).isNullOrEmpty(distributor.id);
+        const obj = callback(table[1]);
       }
       return tmp;
     });
     let id;
-    if (null != found) {
+    if (found != null) {
       id = found.id;
     }
     let xboxGamePassStoreUrl = null;
     if (null != id) {
-      xboxGamePassStoreUrl = require(8461) /* XBOX_DISCORD_OCID */.buildXboxGamePassStoreUrl(found.id);
-      let obj = require(8461) /* XBOX_DISCORD_OCID */;
+      xboxGamePassStoreUrl = require(8485) /* XBOX_DISCORD_OCID */.buildXboxGamePassStoreUrl(found.id);
+      let obj = require(8485) /* XBOX_DISCORD_OCID */;
     }
     return xboxGamePassStoreUrl;
   }

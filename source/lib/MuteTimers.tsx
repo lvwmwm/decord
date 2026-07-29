@@ -1,112 +1,95 @@
-// Module ID: 3796
-// Function ID: 28925
-// Name: MuteTimers
-// Dependencies: [6, 7, 2]
+// Module ID: 3820
+// Function ID: 3821
+// Name: reset
+// Dependencies: [2]
 // Exports: computeIsMuted, isTemporarilyMuted
 
-// Module 3796 (MuteTimers)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-let tmp2 = (() => {
-  class MuteTimers {
-    constructor() {
-      tmp = MuteTimers(this, MuteTimers);
-      this.timers = {};
-      return;
-    }
-  }
-  let obj = {
-    key: "reset",
-    value() {
-      const values = Object.values(this.timers);
-      const item = values.forEach((arg0) => clearTimeout(arg0));
-      this.timers = {};
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "setTimer",
-    value(arg0, end_time) {
-      if (null == arg0) {
-        return false;
-      } else if (null == end_time) {
-        return false;
-      } else {
-        let diff = null;
-        if (null != end_time.end_time) {
-          const _Date = Date;
-          const date = new Date(end_time.end_time);
-          const _Date2 = Date;
-          const time = date.getTime();
-          diff = time - Date.now();
-        }
-        let tmp7 = null != diff;
-        if (tmp7) {
-          let flag = diff <= 0;
-          if (!flag) {
-            const self = this;
-            const _setTimeout = setTimeout;
-            const _Math = Math;
-            this.timers[arg0] = setTimeout(arg2, Math.max(0, diff));
-            flag = false;
-          }
-          tmp7 = flag;
-        }
-        return tmp7;
-      }
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "clearTimer",
-    value(arg0) {
-      const self = this;
-      if (tmp3) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(self.timers[arg0]);
-        const timers = self.timers;
-        delete tmp[tmp2];
-      }
-    }
-  };
-  items[2] = obj;
-  return callback(MuteTimers, items);
-})();
+// Module 3820 (reset)
 const result = require("set").fileFinishedImporting("lib/MuteTimers.tsx");
+class MuteTimers {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    obj.timers = {};
+    return obj;
+  }
+}
+const prototype = MuteTimers.prototype;
+prototype["reset"] = function reset() {
+  const values = Object.values(this.timers);
+  const item = values.forEach((arg0) => clearTimeout(arg0));
+  this.timers = {};
+};
+prototype["setTimer"] = function setTimer(id, muteConfig, arg2) {
+  if (null == id) {
+    return false;
+  } else if (null == muteConfig) {
+    return false;
+  } else {
+    let diff = null;
+    if (null != muteConfig.end_time) {
+      const _Date = Date;
+      const date = new Date(muteConfig.end_time);
+      const _Date2 = Date;
+      const time = date.getTime();
+      diff = time - Date.now();
+    }
+    let tmp7 = null != diff;
+    if (tmp7) {
+      let flag = diff <= 0;
+      if (!flag) {
+        const self = this;
+        const _setTimeout = setTimeout;
+        const _Math = Math;
+        this.timers[id] = setTimeout(arg2, Math.max(0, diff));
+        flag = false;
+      }
+      tmp7 = flag;
+    }
+    return tmp7;
+  }
+};
+prototype["clearTimer"] = function clearTimer(arg0) {
+  const self = this;
+  if (tmp3) {
+    const _clearTimeout = clearTimeout;
+    clearTimeout(self.timers[arg0]);
+    const timers = self.timers;
+    delete tmp[tmp2];
+  }
+};
 
-export default tmp2;
+export default MuteTimers;
 export const computeIsMuted = function computeIsMuted(mute_config) {
   mute_config = mute_config.mute_config;
-  let tmp2 = !tmp;
-  if (!!mute_config.muted) {
-    let tmp4 = null == mute_config || null == mute_config.end_time;
-    if (!tmp4) {
+  let muted = mute_config.muted;
+  if (muted) {
+    let tmp3 = null == mute_config || null == mute_config.end_time;
+    if (!tmp3) {
       const _Date = Date;
       const date = new Date(mute_config.end_time);
       const _Date2 = Date;
       const date1 = new Date();
-      tmp4 = date >= date1;
+      tmp3 = date >= date1;
     }
-    tmp2 = tmp4;
+    muted = tmp3;
   }
-  return tmp2;
+  return muted;
 };
 export const isTemporarilyMuted = function isTemporarilyMuted(mute_config) {
   mute_config = mute_config.mute_config;
-  let tmp2 = !tmp;
-  if (!!mute_config.muted) {
-    tmp2 = null != mute_config;
+  let muted = mute_config.muted;
+  if (muted) {
+    muted = null != mute_config;
   }
-  if (tmp2) {
-    tmp2 = null != mute_config.end_time;
+  if (muted) {
+    muted = null != mute_config.end_time;
   }
-  if (tmp2) {
+  if (muted) {
     const _Date = Date;
     const date = new Date(mute_config.end_time);
     const _Date2 = Date;
     const date1 = new Date();
-    tmp2 = date >= date1;
+    muted = date >= date1;
   }
-  return tmp2;
+  return muted;
 };

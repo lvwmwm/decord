@@ -1,17 +1,17 @@
-// Module ID: 9690
-// Function ID: 75354
+// Module ID: 9712
+// Function ID: 9713
 // Name: PremiumFeaturesPromotionalLogo
-// Dependencies: [57, 31, 4157, 33, 566, 6187, 477, 6646, 5119, 2]
+// Dependencies: [32, 19, 4181, 21, 589, 6207, 500, 6667, 5141, 2]
 // Exports: default
 
-// Module 9690 (PremiumFeaturesPromotionalLogo)
+// Module 9712 (PremiumFeaturesPromotionalLogo)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/native/gifting/PremiumFeaturesPromotionalLogo.tsx");
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/premium/native/gifting/PremiumFeaturesPromotionalLogo.tsx");
 
 export default function PremiumFeaturesPromotionalLogo(arg0) {
   let promoRotatingStyle;
@@ -26,14 +26,14 @@ export default function PremiumFeaturesPromotionalLogo(arg0) {
   let first;
   let React;
   let obj = shouldAnimate(aPNGPlayerControls[4]);
-  const items = [_isNativeReflectConstruct];
-  stateFromStores = obj.useStateFromStores(items, () => outer1_5.useReducedMotion);
+  const items = [maybeApplyNoTextColorForLightCustomTheme];
+  stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   let num = null;
   const ref = React.useRef(null);
   aPNGPlayerControls = shouldAnimate(aPNGPlayerControls[5]).useAPNGPlayerControls(ref);
-  const tmp4 = first(React.useState(false), 2);
-  first = tmp4[0];
-  React = tmp4[1];
+  const tmp6 = first(React.useState(false), 2);
+  first = tmp6[0];
+  React = tmp6[1];
   const items1 = [shouldAnimate, aPNGPlayerControls, stateFromStores];
   const effect = React.useEffect(() => {
     let isAndroidResult = shouldAnimate(aPNGPlayerControls[6]).isAndroid();
@@ -51,6 +51,7 @@ export default function PremiumFeaturesPromotionalLogo(arg0) {
     }
   }, items1);
   const obj2 = shouldAnimate(aPNGPlayerControls[5]);
+  const tmp9 = stateFromStores;
   if (first) {
     num = 100;
   }
@@ -59,13 +60,16 @@ export default function PremiumFeaturesPromotionalLogo(arg0) {
       aPNGPlayerControls.play();
     }
   }, num);
-  const tmp7 = stateFromStores(aPNGPlayerControls[7]);
-  if (obj3.isAndroid()) {
+  const tmp10 = stateFromStores(aPNGPlayerControls[7]);
+  if (tmpResult.isAndroid()) {
     if (!stateFromStores) {
-      obj = { ref, url: rotatingAvatarImageUrl, autoplay: false, style: promoRotatingStyle };
-      let tmp12 = jsx(shouldAnimate(aPNGPlayerControls[5]).APNGPlayer, { ref, url: rotatingAvatarImageUrl, autoplay: false, style: promoRotatingStyle });
+      obj = { ref: null, url: null, autoplay: false, style: null };
+      obj[0] = ref;
+      obj[1] = rotatingAvatarImageUrl;
+      obj[3] = promoRotatingStyle;
+      let tmp13 = jsx(tmp(tmp2[5]).APNGPlayer, { ref: null, url: null, autoplay: false, style: null });
     }
-    return tmp12;
+    return tmp13;
   }
-  tmp12 = jsx(stateFromStores(aPNGPlayerControls[8]), { style: promoRotatingStyle, resizeMode: "contain", source: { uri: rotatingAvatarImageUrl } });
+  tmp13 = jsx(tmp9(tmp2[8]), { style: promoRotatingStyle, resizeMode: "contain", source: { uri: rotatingAvatarImageUrl } });
 };

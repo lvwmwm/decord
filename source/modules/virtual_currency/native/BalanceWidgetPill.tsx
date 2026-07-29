@@ -1,19 +1,30 @@
-// Module ID: 9783
-// Function ID: 75993
+// Module ID: 9805
+// Function ID: 9806
 // Name: BalanceWidgetPill
-// Dependencies: [31, 27, 33, 4165, 4582, 689, 477, 9784, 1212, 9785, 9791, 9792, 2]
+// Dependencies: [19, 17, 21, 4189, 4604, 712, 500, 9806, 1236, 9807, 9813, 9814, 2]
 
-// Module 9783 (BalanceWidgetPill)
-import "result";
+// Module 9805 (BalanceWidgetPill)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
 import set from "jsxProd";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
+({ jsx: c3, jsxs: c4 } = jsxProd);
+createCacheKey = { container: null, orbsLottieContainer: null, balanceCounterContainer: null, balanceText: null };
+createCacheKey = { minHeight: require("MINIMUM_HIT_AREA").SMALL_BUTTON_HEIGHT, borderRadius: require("Themes").radii.round, justifyContent: "center", alignItems: "center", flexDirection: "row", paddingHorizontal: require("Themes").space.PX_12, paddingVertical: require("Themes").space.PX_4, backgroundColor: require("Themes").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, gap: 4 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { position: "relative", height: 18, width: 18, justifyContent: "center", alignItems: "center" };
+createCacheKey[2] = { justifyContent: "center", alignItems: "flex-end" };
+let obj1 = { color: require("Themes").colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, textAlign: "right", lineHeight: null };
+let num;
+if (set.isAndroid()) {
+  num = 14;
+}
 class BalanceWidgetPill {
   constructor(arg0) {
     prop = global.initialRenderedBalance;
@@ -22,65 +33,43 @@ class BalanceWidgetPill {
     }
     balance = global.balance;
     tmp2 = null === prop && null === balance;
+    tmp3 = closure_0;
+    tmp4 = closure_1;
     obj = require("useVirtualCurrencyBalanceAnimationData");
-    obj = {};
-    obj.initialRenderedBalance = prop;
-    obj.balance = balance;
-    virtualCurrencyBalanceAnimationData = obj.useVirtualCurrencyBalanceAnimationData(obj);
+    virtualCurrencyBalanceAnimationData = obj.useVirtualCurrencyBalanceAnimationData({ initialRenderedBalance: prop, balance });
     ({ onValueChange, onValueReached, showInitialRenderedBalance, currentAnimationType, lottieRef } = virtualCurrencyBalanceAnimationData);
-    tmp4 = c5();
-    obj1 = { style: tmp4.container };
-    tmp7 = closure_0;
-    tmp8 = closure_1;
-    tmp5 = jsxs;
-    tmp6 = View;
+    tmp6 = jsx();
+    tmp8 = View;
+    obj = { style: tmp6.container, accessibilityLabel: null, accessibilityState: null, accessible: true, children: null };
+    tmp7 = jsxs;
     intl = require("getSystemLocale").intl;
     if (tmp2) {
       stringResult = intl.string(require("getSystemLocale").t.y0WGqP);
     } else {
-      obj2 = {};
-      obj2.balance = balance;
-      stringResult = intl.formatToPlainString(require("getSystemLocale").t.zPaLL9, obj2);
+      obj1 = { balance: null };
+      obj1[0] = balance;
+      stringResult = intl.formatToPlainString(require("getSystemLocale").t.zPaLL9, obj1);
     }
-    obj1.accessibilityLabel = stringResult;
-    obj1.accessibilityState = { busy: tmp2 };
-    obj1.accessible = true;
-    obj3 = { style: tmp4.orbsLottieContainer, children: jsx(require("OrbLottieAnimation").OrbLottieAnimation, { ref: lottieRef, animationType: currentAnimationType }) };
-    items = [, ];
-    items[0] = jsx(View, obj3);
-    obj4 = { style: tmp4.balanceCounterContainer };
+    obj[1] = stringResult;
+    obj[2] = { busy: tmp2 };
     tmp10 = jsx;
-    tmp11 = View;
-    tmp12 = jsx;
-    obj5 = {};
+    obj2 = { style: tmp6.orbsLottieContainer, children: jsx(require("forwardRef").OrbLottieAnimation, { ref: lottieRef, animationType: currentAnimationType }) };
+    items = [, ];
+    items[0] = jsx(tmp8, obj2);
+    obj3 = { style: tmp6.balanceCounterContainer, children: null };
     if (showInitialRenderedBalance) {
       balance = prop;
     }
-    obj5.value = balance;
-    obj5.onValueChange = onValueChange;
-    obj5.onValueReached = onValueReached;
-    obj5.targetTotalCounterTime = require("EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS").EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS;
-    obj5.style = tmp4.balanceText;
-    obj4.children = tmp12(require("BalanceCounter").BalanceCounter, obj5);
-    items[1] = tmp10(tmp11, obj4);
-    obj1.children = items;
-    return tmp5(tmp6, obj1);
+    obj4 = { value: balance, onValueChange, onValueReached, targetTotalCounterTime: require("EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS").EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS, style: tmp6.balanceText };
+    obj3[1] = tmp10(require("BalanceCounter").BalanceCounter, obj4);
+    items[1] = tmp10(tmp8, obj3);
+    obj[4] = items;
+    return tmp7(tmp8, obj);
   }
 }
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { minHeight: require("getButtonPadding").SMALL_BUTTON_HEIGHT, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, justifyContent: "center", alignItems: "center", flexDirection: "row", paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_4, backgroundColor: require("_createForOfIteratorHelperLoose").colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, gap: 4 };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.orbsLottieContainer = { position: "relative", height: 18, width: 18, justifyContent: "center", alignItems: "center" };
-_createForOfIteratorHelperLoose.balanceCounterContainer = { justifyContent: "center", alignItems: "flex-end" };
-let obj1 = { color: require("_createForOfIteratorHelperLoose").colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, textAlign: "right" };
-let num;
-if (set.isAndroid()) {
-  num = 14;
-}
-obj1.lineHeight = num;
-_createForOfIteratorHelperLoose.balanceText = obj1;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+obj1[2] = num;
+createCacheKey[3] = obj1;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 BalanceWidgetPill.displayName = "BalanceWidgetPill";
 const result = set.fileFinishedImporting("modules/virtual_currency/native/BalanceWidgetPill.tsx");
 

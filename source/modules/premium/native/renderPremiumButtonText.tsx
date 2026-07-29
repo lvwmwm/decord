@@ -1,22 +1,22 @@
-// Module ID: 12579
-// Function ID: 97198
+// Module ID: 12601
+// Function ID: 12602
 // Name: PremiumText
-// Dependencies: [31, 27, 1852, 33, 4165, 4009, 689, 3811, 1212, 1273, 2]
+// Dependencies: [19, 17, 1876, 21, 4189, 4033, 712, 3835, 1236, 1297, 2]
 // Exports: default
 
-// Module 12579 (PremiumText)
-import "result";
+// Module 12601 (PremiumText)
+import "noop";
 import { View } from "get ActivityIndicator";
 import GuildFeatures from "GuildFeatures";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import hexToRgb from "hexToRgb";
+import createCacheKey from "createCacheKey";
+import hexToRgba from "hexToRgba";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function PremiumText(basePlanId) {
   let isCurrentPlan;
@@ -25,8 +25,8 @@ function PremiumText(basePlanId) {
   let style;
   let text;
   ({ style, isCurrentPlan, isGift, product, text } = basePlanId);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = importDefault(3811);
+  const tmp = createCacheKey();
+  let obj = importDefault(3835);
   const intervalType = obj.getInterval(basePlanId.basePlanId).intervalType;
   let combined = null;
   if (intervalType === constants.YEAR) {
@@ -36,75 +36,79 @@ function PremiumText(basePlanId) {
       combined = "-" + closure_4 + "%";
     }
   }
-  if (null != text) {
-    obj = { style: tmp.premiumText };
-    obj = { style, numberOfLines: 1 };
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    const obj1 = {};
+  if (text != null) {
+    obj = { style: null, children: null };
+    obj[0] = tmp.premiumText;
+    obj = { style: null, numberOfLines: 1, accessibilityLabel: null, children: null };
+    obj[0] = style;
+    const intl3 = require(1236) /* getSystemLocale */.intl;
     let title;
-    if (null != product) {
+    if (product != null) {
       title = product.title;
     }
-    obj1.product = title;
-    obj1.description = text;
-    obj.accessibilityLabel = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.E0lS2r, obj1);
-    obj.children = text;
-    const items = [callback(require(1273) /* Button */.LegacyText, obj), ];
-    let tmp22 = null;
+    const obj1 = { product: null, description: null };
+    obj1[0] = title;
+    obj1[1] = text;
+    obj[2] = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.E0lS2r, obj1);
+    obj[3] = text;
+    const items = [closure_7(require(1297) /* Button */.LegacyText, obj), ];
+    let tmp16Result = null;
     if (null != combined) {
-      const obj2 = { style: tmp.discount };
-      const obj3 = { style, numberOfLines: 1, children: combined };
-      obj2.children = callback(require(1273) /* Button */.LegacyText, obj3);
-      tmp22 = callback(View, obj2);
+      const obj2 = { style: null, children: null };
+      obj2[0] = tmp.discount;
+      const obj3 = { style: null, numberOfLines: 1, children: null };
+      obj3[0] = style;
+      obj3[2] = combined;
+      obj2[1] = tmp16(require(1297) /* Button */.LegacyText, obj3);
+      tmp16Result = tmp16(tmp15, obj2);
     }
-    items[1] = tmp22;
-    obj.children = items;
+    items[1] = tmp16Result;
+    obj[1] = items;
     return closure_8(View, obj);
   } else {
     let priceString;
-    if (null != product) {
+    if (product != null) {
       priceString = product.priceString;
     }
-    if (null == priceString) {
+    if (priceString == null) {
       priceString = closure_5;
     }
     if (intervalType !== constants.MONTH) {
-      const intl3 = require(1212) /* getSystemLocale */.intl;
-      const formatToPlainString2 = intl3.formatToPlainString;
+      const intl = require(1236) /* getSystemLocale */.intl;
+      const formatToPlainString = intl.formatToPlainString;
+      let t = require(1236) /* getSystemLocale */.t;
       if (isGift) {
-        const obj4 = { price: priceString };
-        let formatToPlainString2Result = formatToPlainString2(tmp28(1212).t.rm53bV, obj4);
+        const obj4 = { price: null };
+        obj4[0] = priceString;
+        let formatToPlainStringResult = formatToPlainString(t.rm53bV, obj4);
       } else {
-        const t = require(1212) /* getSystemLocale */.t;
-        const obj5 = { price: priceString };
-        formatToPlainString2Result = formatToPlainString2(isCurrentPlan ? t.dFbQCa : t["rS8FA+"], obj5);
+        const obj5 = { price: null };
+        obj5[0] = priceString;
+        formatToPlainStringResult = formatToPlainString(isCurrentPlan ? t.dFbQCa : t["rS8FA+"], obj5);
       }
-      tmp28 = require;
     }
-    let FIjgMp = require;
-    let obj6 = 8;
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const formatToPlainString = intl.formatToPlainString;
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    const formatToPlainString2 = intl2.formatToPlainString;
+    t = require(1236) /* getSystemLocale */.t;
     if (isGift) {
-      FIjgMp = FIjgMp(tmp10[obj6]).t.FIjgMp;
-      obj6 = { price: priceString };
-      let formatToPlainStringResult = formatToPlainString(FIjgMp, obj6);
+      t = { price: null };
+      t[0] = priceString;
+      let formatToPlainString2Result = formatToPlainString2(t.FIjgMp, t);
     } else {
-      const t2 = require(dependencyMap[obj6]).t;
-      const obj7 = { price: priceString };
-      formatToPlainStringResult = formatToPlainString(isCurrentPlan ? t2.V6iX43 : t2.AbOLNu, obj7);
+      const obj6 = { price: null };
+      obj6[0] = priceString;
+      formatToPlainString2Result = formatToPlainString2(isCurrentPlan ? t.V6iX43 : t.AbOLNu, obj6);
     }
-    tmp10 = dependencyMap;
   }
 }
-({ PREMIUM_YEARLY_DISCOUNT_PERCENT: closure_4, PRICE_PLACEHOLDER: closure_5, SubscriptionIntervalTypes: closure_6 } = GuildFeatures);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { borderWidth: 1, borderColor: null, borderRadius: 2, marginLeft: 4, paddingHorizontal: 2 };
-_createForOfIteratorHelperLoose.borderColor = hexToRgb.hexWithOpacity(require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE, 0.3);
-_createForOfIteratorHelperLoose.discount = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.premiumText = { flexDirection: "row" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ PREMIUM_YEARLY_DISCOUNT_PERCENT: c4, PRICE_PLACEHOLDER: c5, SubscriptionIntervalTypes: closure_6 } = GuildFeatures);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { discount: null, premiumText: null };
+createCacheKey = { borderWidth: 1, borderColor: null, borderRadius: 2, marginLeft: 4, paddingHorizontal: 2 };
+createCacheKey[1] = hexToRgba.hexWithOpacity(require("Themes").unsafe_rawColors.WHITE, 0.3);
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexDirection: "row" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("GuildFeatures").fileFinishedImporting("modules/premium/native/renderPremiumButtonText.tsx");
 
 export default function renderPremiumText(arg0) {

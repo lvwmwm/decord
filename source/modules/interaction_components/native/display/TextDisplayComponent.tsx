@@ -1,12 +1,12 @@
-// Module ID: 14790
-// Function ID: 112583
-// Dependencies: [57, 31, 27, 4157, 1907, 7867, 33, 477, 4029, 14791, 7868, 44, 4155, 7853, 566, 3838, 9480, 10881, 2]
+// Module ID: 14816
+// Function ID: 14817
+// Dependencies: [32, 19, 17, 4181, 1931, 7890, 21, 500, 4053, 14817, 7891, 38, 4179, 7876, 589, 3862, 9504, 10905, 2]
 
-// Module 14790
+// Module 14816
 import _slicedToArray from "_slicedToArray";
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+import "noop";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import handleConnectionOpen from "handleConnectionOpen";
 import { TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS as closure_6 } from "TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS";
 import { jsx } from "jsxProd";
 import result from "__INTERNAL_VIEW_CONFIG";
@@ -14,46 +14,49 @@ import result from "__INTERNAL_VIEW_CONFIG";
 const require = arg1;
 if (!set.isAndroid()) {
   if (!obj2.isFabric()) {
-    let result = require("get ActivityIndicator").requireNativeComponent("DCDTextDisplayComponentView");
+    let result = require("onTapMention").requireNativeComponent("DCDTextDisplayComponentView");
   }
+  const metroImportAll = result;
   obj2 = require("isFabric");
   const result1 = require("get ActivityIndicator").fileFinishedImporting("modules/interaction_components/native/display/TextDisplayComponent.tsx");
   exports.default = function TextDisplayComponent(content) {
-    let obj = channelId(7868);
+    let tmp6;
+    let tmp7;
+    let obj = channelId(7891);
     const componentContainerId = obj.useComponentContainerId();
     channelId = channelId.getChannelId();
-    importDefault(44)(channelId, "channelId not available in TextDisplayComponent");
-    let obj1 = importDefault(4155);
-    let obj2 = channelId(7853);
+    importDefault(38)(null != channelId, "channelId not available in TextDisplayComponent");
+    let obj1 = importDefault(4179);
+    let obj2 = channelId(7876);
     obj = { channelId, renderOptions: closure_6 };
     const parseToASTResult = obj1.parseToAST(content.content, true, obj2.getInitialParserState(obj));
-    let items = [_isNativeReflectConstruct];
-    const tmp5 = callback(channelId(566).useStateFromStoresArray(items, () => {
+    let items = [maybeApplyNoTextColorForLightCustomTheme];
+    const obj5 = channelId(589);
+    [tmp6, tmp7] = callback(channelId(589).useStateFromStoresArray(items, () => {
       const items = [, ];
-      ({ roleStyle: arr[0], alwaysShowLinkDecorations: arr[1] } = outer1_4);
+      ({ roleStyle: arr[0], alwaysShowLinkDecorations: arr[1] } = maybeApplyNoTextColorForLightCustomTheme);
       return items;
     }), 2);
-    const first = tmp5[0];
-    const AnimateEmoji = channelId(3838).AnimateEmoji;
-    obj = {};
+    const AnimateEmoji = channelId(3862).AnimateEmoji;
+    obj = { model: null, markdownTextRenderOptions: null, onTapLink: null, onLongPressLink: null, onTapAttachmentLink: null, onLongPressAttachmentLink: null, onTapMention: null, onTapTimestamp: null, onTapInlineCode: null, onTapEmoji: null, style: null };
     obj1 = {};
     const setting = AnimateEmoji.useSetting();
     const merged = Object.assign(content);
-    obj1["content"] = parseToASTResult;
-    obj.model = obj1;
-    obj2 = { containerId: componentContainerId, shouldAnimateEmoji: setting, shouldShowLinkDecorations: tmp5[1], shouldShowRoleDot: "dot" === first, shouldShowRoleOnName: "username" === first };
-    obj.markdownTextRenderOptions = obj2;
-    obj.onTapLink = function onTapLink(nativeEvent) {
+    obj1.content = parseToASTResult;
+    obj[0] = obj1;
+    obj2 = { containerId: componentContainerId, shouldAnimateEmoji: setting, shouldShowLinkDecorations: tmp7, shouldShowRoleDot: "dot" === tmp6, shouldShowRoleOnName: "username" === tmp6 };
+    obj[1] = obj2;
+    obj[2] = function onTapLink(nativeEvent) {
       const result = channelId(outer1_2[16]).handleMessagesTapURLLink(nativeEvent.nativeEvent.data, channelId);
     };
-    obj.onLongPressLink = channelId(10881).contentHandlers.onLongPressLink;
-    obj.onTapAttachmentLink = channelId(10881).contentHandlers.onTapAttachmentLink;
-    obj.onLongPressAttachmentLink = channelId(10881).contentHandlers.onLongPressAttachmentLink;
-    obj.onTapMention = channelId(10881).contentHandlers.onTapMention;
-    obj.onTapTimestamp = channelId(10881).contentHandlers.onTapTimestamp;
-    obj.onTapInlineCode = channelId(10881).contentHandlers.onTapInlineCode;
-    obj.onTapEmoji = channelId(10881).contentHandlers.onTapEmoji;
-    obj.style = { width: "100%" };
-    return <closure_8 />;
+    obj[3] = channelId(10905).contentHandlers.onLongPressLink;
+    obj[4] = channelId(10905).contentHandlers.onTapAttachmentLink;
+    obj[5] = channelId(10905).contentHandlers.onLongPressAttachmentLink;
+    obj[6] = channelId(10905).contentHandlers.onTapMention;
+    obj[7] = channelId(10905).contentHandlers.onTapTimestamp;
+    obj[8] = channelId(10905).contentHandlers.onTapInlineCode;
+    obj[9] = channelId(10905).contentHandlers.onTapEmoji;
+    obj[10] = { width: "100%" };
+    return <closure_8 model={null} markdownTextRenderOptions={null} onTapLink={null} onLongPressLink={null} onTapAttachmentLink={null} onLongPressAttachmentLink={null} onTapMention={null} onTapTimestamp={null} onTapInlineCode={null} onTapEmoji={null} style={null} />;
   };
 }

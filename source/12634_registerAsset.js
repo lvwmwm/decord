@@ -1,11 +1,10 @@
 // Module ID: 12634
-// Function ID: 97628
+// Function ID: 12635
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 12634 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/modules/guild_boosting/native/images", width: 18, height: 15, scales: [2, 3], hash: "dc018ce302b0357451a31422d7180d84", name: "sparkle_star_pointed", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/uikit", width: 24, height: 24, scales: [2, 3], hash: "79585be4d9f723f2272b0b672ab42ccd", name: "ic_settings_white_24px", type: "png" });

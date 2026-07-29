@@ -1,20 +1,20 @@
-// Module ID: 4582
-// Function ID: 39999
-// Name: getButtonPadding
-// Dependencies: [4580, 689, 2]
+// Module ID: 4604
+// Function ID: 4605
+// Name: MINIMUM_HIT_AREA
+// Dependencies: [4602, 712, 2]
 // Exports: getButtonBorderRadius, getButtonDefaultTextVariant, getButtonPadding
 
-// Module 4582 (getButtonPadding)
-import buttonPadding from "module_32";
-import buttonPadding1 from "module_40";
-import buttonPadding2 from "module_48";
+// Module 4604 (MINIMUM_HIT_AREA)
+import IconSizes from "IconSizes";
+import IconSizes from "IconSizes";
+import IconSizes from "IconSizes";
 
-function getButtonPadding(FAB_BUTTON_SIZE, FAB_BUTTON_ICON_SIZE) {
-  return (FAB_BUTTON_SIZE - require(4580) /* getIconSize */.getIconSize(FAB_BUTTON_ICON_SIZE) - 2) / 2;
-}
-const SMALL = require("getIconSize").IconSizes.SMALL;
-const SMALL_20 = require("getIconSize").IconSizes.SMALL_20;
-const MEDIUM = require("getIconSize").IconSizes.MEDIUM;
+const SMALL = require("IconSizes").IconSizes.SMALL;
+const SMALL_20 = require("IconSizes").IconSizes.SMALL_20;
+const MEDIUM = require("IconSizes").IconSizes.MEDIUM;
+const diff = 32 - IconSizes.getIconSize(SMALL);
+const diff1 = 40 - IconSizes.getIconSize(SMALL_20);
+const diff2 = 48 - IconSizes.getIconSize(MEDIUM);
 const result = require("set").fileFinishedImporting("design/components/Button/native/ButtonConstants.native.tsx");
 
 export const MINIMUM_HIT_AREA = 44;
@@ -27,27 +27,29 @@ export const DEFAULT_BUTTON_SIZE = "md";
 export const SMALL_BUTTON_ICON_SIZE = SMALL;
 export const MEDIUM_BUTTON_ICON_SIZE = SMALL_20;
 export const LARGE_BUTTON_ICON_SIZE = MEDIUM;
-export const FAB_BUTTON_ICON_SIZE = require("getIconSize").IconSizes.MEDIUM;
+export const FAB_BUTTON_ICON_SIZE = require("IconSizes").IconSizes.MEDIUM;
 export const SMALL_BUTTON_HORIZONTAL_PADDING = 12;
 export const MEDIUM_BUTTON_HORIZONTAL_PADDING = 20;
 export const LARGE_BUTTON_HORIZONTAL_PADDING = 24;
-export const SMALL_BUTTON_PADDING = buttonPadding;
-export const MEDIUM_BUTTON_PADDING = buttonPadding1;
-export const LARGE_BUTTON_PADDING = buttonPadding2;
+export const SMALL_BUTTON_PADDING = (diff - 2) / 2;
+export const MEDIUM_BUTTON_PADDING = (diff1 - 2) / 2;
+export const LARGE_BUTTON_PADDING = (diff2 - 2) / 2;
 export const BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = 3;
-export function getButtonDefaultTextVariant(closure_0) {
+export function getButtonDefaultTextVariant(size) {
   let str = "text-sm/semibold";
-  if ("lg" === closure_0) {
+  if ("lg" === size) {
     str = "text-md/semibold";
   }
   return str;
 }
-export { getButtonPadding };
+export const getButtonPadding = function getButtonPadding(FAB_BUTTON_SIZE, FAB_BUTTON_ICON_SIZE) {
+  return (FAB_BUTTON_SIZE - require(4602) /* IconSizes */.getIconSize(FAB_BUTTON_ICON_SIZE) - 2) / 2;
+};
 export const getButtonBorderRadius = function getButtonBorderRadius(arg0) {
   if ("lg" === arg0) {
-    let BORDER_RADIUS = importDefault(689).modules.button.BORDER_RADIUS_LG;
+    let BORDER_RADIUS = importDefault(712).modules.button.BORDER_RADIUS_LG;
   } else {
-    BORDER_RADIUS = importDefault(689).modules.button.BORDER_RADIUS;
+    BORDER_RADIUS = importDefault(712).modules.button.BORDER_RADIUS;
   }
   return BORDER_RADIUS;
 };

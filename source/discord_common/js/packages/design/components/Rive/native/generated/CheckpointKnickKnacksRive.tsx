@@ -1,15 +1,16 @@
-// Module ID: 3958
-// Function ID: 32507
+// Module ID: 3982
+// Function ID: 3983
 // Name: CheckpointKnickKnacksRive
-// Dependencies: [29, 31, 33, 3894, 3959, 3945, 2]
+// Dependencies: [109, 19, 21, 3918, 3983, 3969, 2]
 
-// Module 3958 (CheckpointKnickKnacksRive)
+// Module 3982 (CheckpointKnickKnacksRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
-import importAllResult from "result";
+import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 let closure_3 = ["fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
+let c5 = importAllResult;
 let closure_7 = { Preview: { reducedMotion: "boolean", iconColor: "color" }, Friends: { reducedMotion: "boolean", iconColor: "color" }, Globe: { reducedMotion: "boolean", iconColor: "color" }, "Globe Single Line": {}, Emojis: { reducedMotion: "boolean", iconColor: "color" }, "Wave Line": { reducedMotion: "boolean", iconColor: "color" }, Games: { reducedMotion: "boolean", iconColor: "color" }, Voice: { reducedMotion: "boolean", iconColor: "color" }, "Looping Checkboard": { reducedMotion: "boolean", iconColor: "color" }, CheckRow: { reducedMotion: "boolean", iconColor: "color" }, Quests: { reducedMotion: "boolean", iconColor: "color" }, Entry: { reducedMotion: "boolean", iconColor: "color" }, Messages: { reducedMotion: "boolean", iconColor: "color" }, Servers: { reducedMotion: "boolean", iconColor: "color" } };
 let closure_8 = { Preview: ["Pink", "Orange", "Green", "Lavender", "Yellow", "Cyan"], Friends: ["Pink", "Orange", "Green", "Lavender", "Yellow", "Cyan"], Globe: ["Pink", "Orange", "Green", "Lavender", "Yellow", "Cyan"], "Globe Single Line": [], Emojis: ["Pink", "Orange", "Green", "Lavender", "Yellow", "Cyan"], "Wave Line": ["Pink", "Orange", "Green", "Lavender", "Yellow", "Cyan"], Games: ["Pink", "Orange", "Green", "Lavender", "Yellow", "Cyan"], Voice: ["Pink", "Orange", "Green", "Lavender", "Yellow", "Cyan"], "Looping Checkboard": ["Pink", "Orange", "Green", "Lavender", "Yellow", "Cyan"], CheckRow: ["Pink", "Orange", "Green", "Lavender", "Yellow", "Cyan"], Quests: ["Pink", "Orange", "Green", "Lavender", "Yellow", "Cyan"], Entry: ["Pink", "Orange", "Green", "Lavender", "Yellow", "Cyan"], Messages: ["Pink", "Orange", "Green", "Lavender", "Yellow", "Cyan"], Servers: ["Pink", "Orange", "Green", "Lavender", "Yellow", "Cyan"] };
 let closure_9 = {
@@ -19,17 +20,17 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let iconColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       iconColor = dataBinding.iconColor;
     }
     let iconColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       iconColor1 = onDataBindingChange.iconColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
     return null;
   },
   Friends: function FriendsBindings(reducedMotionEnabled) {
@@ -38,17 +39,17 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let iconColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       iconColor = dataBinding.iconColor;
     }
     let iconColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       iconColor1 = onDataBindingChange.iconColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
     return null;
   },
   Globe: function GlobeBindings(reducedMotionEnabled) {
@@ -57,17 +58,17 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let iconColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       iconColor = dataBinding.iconColor;
     }
     let iconColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       iconColor1 = onDataBindingChange.iconColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
     return null;
   },
   Emojis: function EmojisBindings(reducedMotionEnabled) {
@@ -76,17 +77,17 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let iconColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       iconColor = dataBinding.iconColor;
     }
     let iconColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       iconColor1 = onDataBindingChange.iconColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
     return null;
   },
   "Wave Line": function WaveLineBindings(reducedMotionEnabled) {
@@ -95,17 +96,17 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let iconColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       iconColor = dataBinding.iconColor;
     }
     let iconColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       iconColor1 = onDataBindingChange.iconColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
     return null;
   },
   Games: function GamesBindings(reducedMotionEnabled) {
@@ -114,17 +115,17 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let iconColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       iconColor = dataBinding.iconColor;
     }
     let iconColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       iconColor1 = onDataBindingChange.iconColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
     return null;
   },
   Voice: function VoiceBindings(reducedMotionEnabled) {
@@ -133,17 +134,17 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let iconColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       iconColor = dataBinding.iconColor;
     }
     let iconColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       iconColor1 = onDataBindingChange.iconColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
     return null;
   },
   "Looping Checkboard": function LoopingCheckboardBindings(reducedMotionEnabled) {
@@ -152,17 +153,17 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let iconColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       iconColor = dataBinding.iconColor;
     }
     let iconColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       iconColor1 = onDataBindingChange.iconColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
     return null;
   },
   CheckRow: function CheckRowBindings(reducedMotionEnabled) {
@@ -171,17 +172,17 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let iconColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       iconColor = dataBinding.iconColor;
     }
     let iconColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       iconColor1 = onDataBindingChange.iconColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
     return null;
   },
   Quests: function QuestsBindings(reducedMotionEnabled) {
@@ -190,17 +191,17 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let iconColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       iconColor = dataBinding.iconColor;
     }
     let iconColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       iconColor1 = onDataBindingChange.iconColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
     return null;
   },
   Entry: function EntryBindings(reducedMotionEnabled) {
@@ -209,17 +210,17 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let iconColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       iconColor = dataBinding.iconColor;
     }
     let iconColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       iconColor1 = onDataBindingChange.iconColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
     return null;
   },
   Messages: function MessagesBindings(reducedMotionEnabled) {
@@ -228,17 +229,17 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let iconColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       iconColor = dataBinding.iconColor;
     }
     let iconColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       iconColor1 = onDataBindingChange.iconColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
     return null;
   },
   Servers: function ServersBindings(reducedMotionEnabled) {
@@ -247,17 +248,17 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3894) /* useObservedValue */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3894) /* useObservedValue */;
+    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3918) /* BaseRive */;
     let iconColor;
-    if (null != dataBinding) {
+    if (dataBinding != null) {
       iconColor = dataBinding.iconColor;
     }
     let iconColor1;
-    if (null != onDataBindingChange) {
+    if (onDataBindingChange != null) {
       iconColor1 = onDataBindingChange.iconColor;
     }
-    const colorBinding = require(3894) /* useObservedValue */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
+    const colorBinding = require(3918) /* BaseRive */.useColorBinding("iconColor", instance, iconColor, iconColor1, playIfNeeded);
     return null;
   }
 };
@@ -282,22 +283,29 @@ let closure_10 = importAllResult.forwardRef(function CheckpointKnickKnacksRiveIn
     if (null != outer1_9[str]) {
       const obj = {};
       const merged = Object.assign(arg0);
-      obj["dataBinding"] = dataBinding;
-      obj["onDataBindingChange"] = onDataBindingChange;
+      obj.dataBinding = dataBinding;
+      obj.onDataBindingChange = onDataBindingChange;
       tmp2 = outer1_6(tmp, obj);
     }
     return tmp2;
   }, items);
-  let obj = { ref, src: dataBinding(onDataBindingChange[4]), artboard: str, artboardProperties: closure_7, artboardViewModelInstances: closure_8, defaultViewModelInstance: str2, stateMachine: defaultViewModelInstance.stateMachine, renderDataBinding: callback };
+  let obj = { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null, renderDataBinding: null };
+  obj[1] = dataBinding(onDataBindingChange[4]);
+  obj[2] = str;
+  obj[3] = closure_7;
+  obj[4] = closure_8;
+  obj[5] = str2;
+  obj[6] = defaultViewModelInstance.stateMachine;
+  obj[7] = callback;
   let merged = Object.assign(callback(defaultViewModelInstance, closure_3));
-  return jsx(str(onDataBindingChange[3]).BaseRive, { ref, src: dataBinding(onDataBindingChange[4]), artboard: str, artboardProperties: closure_7, artboardViewModelInstances: closure_8, defaultViewModelInstance: str2, stateMachine: defaultViewModelInstance.stateMachine, renderDataBinding: callback });
+  return jsx(str(onDataBindingChange[3]).BaseRive, { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null, renderDataBinding: null });
 });
 const forwardRefResult = importAllResult.forwardRef(function CheckpointKnickKnacksRiveWithBoundary(fallback, ref) {
-  let obj = { fallback: fallback.fallback };
+  let obj = { fallback: fallback.fallback, children: null };
   obj = { ref };
   const merged = Object.assign(fallback);
-  obj.children = <closure_10 ref={arg1} />;
-  return jsx(require(3945) /* _isNativeReflectConstruct */.RiveErrorBoundary, { ref });
+  obj[1] = <closure_10 ref={arg1} />;
+  return jsx(require(3969) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/CheckpointKnickKnacksRive.tsx");
 

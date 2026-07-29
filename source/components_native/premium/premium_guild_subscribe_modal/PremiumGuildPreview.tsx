@@ -1,81 +1,101 @@
-// Module ID: 12649
-// Function ID: 97706
-// Name: getThemedImageSource
-// Dependencies: [31, 27, 1278, 653, 33, 4165, 689, 5008, 4011, 12650, 12651, 12652, 12653, 12654, 12655, 12656, 12657, 1273, 4057, 566, 5548, 2]
+// Module ID: 12671
+// Function ID: 12672
+// Name: PremiumGuildTierPill
+// Dependencies: [19, 17, 1302, 676, 21, 4189, 712, 5030, 4035, 12672, 12673, 12674, 12675, 12676, 12677, 12678, 12679, 1297, 4081, 589, 5566, 2]
 // Exports: default
 
-// Module 12649 (getThemedImageSource)
-import "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12671 (PremiumGuildTierPill)
+import "initialize";
+import get_ActivityIndicator from "Button";
+import handleThemeChange from "handleThemeChange";
 import { BoostedGuildTiers } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_7;
-let closure_8;
+let c3;
+let c4;
+let error;
+let metroImportAll;
 const require = arg1;
-function getThemedImageSource(arg0, arg1, arg2) {
-  let tmp = arg2;
-  if (obj.isThemeDark(arg0)) {
-    tmp = arg1;
+function PremiumGuildTierPill(arg0) {
+  let theme;
+  let tier;
+  ({ tier, theme } = arg0);
+  const tmp = createCacheKey();
+  let obj = { style: tmp.tierPill, children: null };
+  obj = { style: tmp.tierPillImage, source: null };
+  if (BoostedGuildTiers.NONE === tier) {
+    let tmp22 = importDefault(12673);
+    const tmp21 = importDefault(12672);
+    if (obj5.isThemeDark(theme)) {
+      tmp22 = tmp21;
+    }
+    let tmp7 = tmp22;
+    obj5 = require(4035) /* AccessibilityAnnouncer */;
+  } else if (tmp6.TIER_1 === tier) {
+    let tmp17 = importDefault(12675);
+    const tmp16 = importDefault(12674);
+    if (obj4.isThemeDark(theme)) {
+      tmp17 = tmp16;
+    }
+    tmp7 = tmp17;
+    obj4 = require(4035) /* AccessibilityAnnouncer */;
+  } else if (tmp6.TIER_2 === tier) {
+    let tmp12 = importDefault(12677);
+    const tmp11 = importDefault(12676);
+    if (obj3.isThemeDark(theme)) {
+      tmp12 = tmp11;
+    }
+    tmp7 = tmp12;
+    obj3 = require(4035) /* AccessibilityAnnouncer */;
+  } else if (tmp6.TIER_3 === tier) {
+    let tmp8 = importDefault(12679);
+    const tmp26 = importDefault(12678);
+    if (obj8.isThemeDark(theme)) {
+      tmp8 = tmp26;
+    }
+    tmp7 = tmp8;
+    obj8 = require(4035) /* AccessibilityAnnouncer */;
   }
-  return tmp;
+  obj[1] = tmp7;
+  const items = [closure_7(closure_4, obj), ];
+  obj = { style: tmp.tierPillText, children: null };
+  obj[1] = require(4081) /* getGuildTierFromGuild */.getTierName(tier);
+  items[1] = closure_7(require(1297) /* Button */.LegacyText, obj);
+  obj[1] = items;
+  return closure_8(closure_3, obj);
 }
-function getTierIcon(arg0, arg1) {
-  if (BoostedGuildTiers.NONE === arg1) {
-    return getThemedImageSource(arg0, importDefault(12650), importDefault(12651));
-  } else if (BoostedGuildTiers.TIER_1 === arg1) {
-    return getThemedImageSource(arg0, importDefault(12652), importDefault(12653));
-  } else if (BoostedGuildTiers.TIER_2 === arg1) {
-    return getThemedImageSource(arg0, importDefault(12654), importDefault(12655));
-  } else if (BoostedGuildTiers.TIER_3 === arg1) {
-    return getThemedImageSource(arg0, importDefault(12656), importDefault(12657));
-  }
-}
-function PremiumGuildTierPill(tier) {
-  tier = tier.tier;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: tmp.tierPill };
-  obj = { style: tmp.tierPillImage, source: getTierIcon(tier.theme, tier) };
-  const items = [callback(closure_4, obj), ];
-  obj = { style: tmp.tierPillText, children: require(4057) /* _createForOfIteratorHelperLoose */.getTierName(tier) };
-  items[1] = callback(require(1273) /* Button */.LegacyText, obj);
-  obj.children = items;
-  return callback2(closure_3, obj);
-}
-({ View: closure_3, Image: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { padding: 16, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, flexDirection: "row", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH };
-_createForOfIteratorHelperLoose.guild = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.guildInfo = { marginLeft: 16 };
+({ View: c3, Image: c4 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { guild: null, guildInfo: null, guildName: null, tierPill: null, tierPillImage: null, tierPillText: null };
+createCacheKey = { padding: 16, borderRadius: require("Themes").radii.xs, flexDirection: "row", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginLeft: 16 };
+createCacheKey[2] = { fontSize: 16, lineHeight: 20, color: require("result").DARK_WHITE_500_LIGHT_BLACK_500 };
 let obj1 = { fontSize: 16, lineHeight: 20, color: require("result").DARK_WHITE_500_LIGHT_BLACK_500 };
-_createForOfIteratorHelperLoose.guildName = obj1;
-const obj2 = { marginTop: 8, padding: 4, paddingRight: 8, alignSelf: "flex-start", flexDirection: "row", borderRadius: 11, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.tierPill = obj2;
-_createForOfIteratorHelperLoose.tierPillImage = { width: 16, height: 16 };
-const obj3 = { fontSize: 12, lineHeight: 16, marginLeft: 4, color: require("result").DARK_WHITE_500_LIGHT_PRIMARY_660 };
-_createForOfIteratorHelperLoose.tierPillText = obj3;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/PremiumGuildPreview.tsx");
+createCacheKey[3] = { marginTop: 8, padding: 4, paddingRight: 8, alignSelf: "flex-start", flexDirection: "row", borderRadius: 11, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[4] = { width: 16, height: 16 };
+const obj2 = { marginTop: 8, padding: 4, paddingRight: 8, alignSelf: "flex-start", flexDirection: "row", borderRadius: 11, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[5] = { fontSize: 12, lineHeight: 16, marginLeft: 4, color: require("result").DARK_WHITE_500_LIGHT_PRIMARY_660 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { fontSize: 12, lineHeight: 16, marginLeft: 4, color: require("result").DARK_WHITE_500_LIGHT_PRIMARY_660 };
+const result = require("handleThemeChange").fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/PremiumGuildPreview.tsx");
 
 export default function PremiumGuildPreview(guild) {
   guild = guild.guild;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  obj = { style: items1 };
+  const tmp = createCacheKey();
+  let obj = require(589) /* initialize */;
+  const items = [handleThemeChange];
+  obj = { style: items1, children: null };
   items1 = [tmp.guild, guild.style];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_5.theme);
-  obj = { guild, size: require(5548) /* makeSizeStyle */.GuildIconSizes.LARGE, selected: false };
-  const items2 = [callback(importDefault(5548), obj), ];
-  const obj1 = { style: tmp.guildInfo };
-  const items3 = [callback(require(1273) /* Button */.LegacyText, { style: tmp.guildName, children: guild.name }), callback(PremiumGuildTierPill, { tier: guild.premiumTier, theme: stateFromStores })];
-  obj1.children = items3;
+  const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
+  obj = { guild, size: null, selected: false };
+  obj[1] = require(5566) /* GuildIconSizes */.GuildIconSizes.LARGE;
+  const items2 = [callback(importDefault(5566), obj), ];
+  const obj1 = { style: tmp.guildInfo, children: null };
+  const items3 = [callback(require(1297) /* Button */.LegacyText, { style: tmp.guildName, children: guild.name }), callback(PremiumGuildTierPill, { tier: guild.premiumTier, theme: stateFromStores })];
+  obj1[1] = items3;
   items2[1] = callback2(closure_3, obj1);
-  obj.children = items2;
+  obj[1] = items2;
   return callback2(closure_3, obj);
 };

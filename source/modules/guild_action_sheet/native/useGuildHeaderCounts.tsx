@@ -1,83 +1,81 @@
-// Module ID: 13085
-// Function ID: 101075
-// Name: useThrottledDispatch
-// Dependencies: [31, 4086, 13086, 22, 686, 566, 2]
+// Module ID: 13108
+// Function ID: 13109
+// Name: useGuildHeaderCounts
+// Dependencies: [19, 4110, 13109, 12, 709, 589, 2]
 // Exports: useGuildHeaderCounts
 
-// Module 13085 (useThrottledDispatch)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 13108 (useGuildHeaderCounts)
+import noop from "noop";
+import handleInviteData from "handleInviteData";
+import initialize from "initialize";
 
 const require = arg1;
-function useThrottledDispatch(arg0, arg1, arg2) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  let closure_2 = arg2;
-  const items = [arg0, arg1];
-  memo = memo.useMemo(() => callback(table[3]).throttle((count) => {
-    let obj = callback(table[4]);
-    obj = { type: outer1_0, count, guildId: outer1_1 };
-    obj.dispatch(obj);
-  }, 3000), items);
-  const items1 = [memo];
-  const effect = memo.useEffect(() => () => outer1_3.cancel(), items1);
-  const items2 = [memo, arg2];
-  const effect1 = memo.useEffect(() => {
-    if (closure_2 > 0) {
-      memo(closure_2);
-    }
-  }, items2);
-}
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_action_sheet/native/useGuildHeaderCounts.tsx");
+const result = require("initialize").fileFinishedImporting("modules/guild_action_sheet/native/useGuildHeaderCounts.tsx");
 
 export const useGuildHeaderCounts = function useGuildHeaderCounts(id) {
-  const _require = id;
-  let obj = {
-    memberCount: (function useMemberCount(id) {
-      const items = [outer1_4];
-      outer1_6("GUILD_HEADER_MEMBER_COUNT", id, id(outer1_2[5]).useStateFromStores(items, () => {
-        const memberCount = outer2_4.getMemberCount(closure_0);
-        let num = 0;
-        if (null != memberCount) {
-          num = memberCount;
-        }
-        return num;
-      }));
-      const obj = id(outer1_2[5]);
-      const items1 = [outer1_5];
-      return id(outer1_2[5]).useStateFromStores(items1, () => outer2_5.getMemberCount(closure_0));
-    })(id),
-    onlineCount: (function useOnlineCount(id) {
-      const items = [outer1_4];
-      outer1_6("GUILD_HEADER_ONLINE_COUNT", id, id(outer1_2[5]).useStateFromStores(items, () => {
-        const onlineCount = outer2_4.getOnlineCount(closure_0);
-        let num = 0;
-        if (null != onlineCount) {
-          num = onlineCount;
-        }
-        return num;
-      }));
-      const obj = id(outer1_2[5]);
-      const items1 = [outer1_5];
-      return id(outer1_2[5]).useStateFromStores(items1, () => outer2_5.getOnlineCount(closure_0));
-    })(id)
-  };
-  const tmp = (function useMemberCount(id) {
-    const items = [outer1_4];
-    outer1_6("GUILD_HEADER_MEMBER_COUNT", id, id(outer1_2[5]).useStateFromStores(items, () => {
-      const memberCount = outer2_4.getMemberCount(closure_0);
-      let num = 0;
-      if (null != memberCount) {
-        num = memberCount;
-      }
-      return num;
-    }));
-    const obj = id(outer1_2[5]);
-    const items1 = [outer1_5];
-    return id(outer1_2[5]).useStateFromStores(items1, () => outer2_5.getMemberCount(closure_0));
-  })(id);
-  let items = [closure_5];
-  obj.activeChannelsCount = _require(566).useStateFromStores(items, () => outer1_5.getActiveChannelsCount(closure_0));
+  let GUILD_HEADER_ONLINE_COUNT = id;
+  let obj = GUILD_HEADER_ONLINE_COUNT(stateFromStores2[5]);
+  const items = [handleInviteData];
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    let num = outer1_4.getMemberCount(GUILD_HEADER_ONLINE_COUNT);
+    if (num == null) {
+      num = 0;
+    }
+    return num;
+  });
+  GUILD_HEADER_ONLINE_COUNT = "GUILD_HEADER_MEMBER_COUNT";
+  let closure_1 = id;
+  stateFromStores2 = stateFromStores;
+  let memo1;
+  const items1 = ["GUILD_HEADER_MEMBER_COUNT", id];
+  const memo = memo1.useMemo(() => GUILD_HEADER_ONLINE_COUNT(stateFromStores2[3]).throttle((count) => {
+    let obj = outer1_1(outer1_2[4]);
+    obj = { type: closure_0, count, guildId: closure_1 };
+    obj.dispatch(obj);
+  }, 3000), items1);
+  memo1 = memo;
+  const items2 = [memo];
+  const effect = memo1.useEffect(() => () => noop.cancel(), items2);
+  const items3 = [memo, stateFromStores];
+  const effect1 = memo1.useEffect(() => {
+    if (stateFromStores2 > 0) {
+      memo1(tmp);
+    }
+  }, items3);
+  const items4 = [initialize];
+  GUILD_HEADER_ONLINE_COUNT = id;
+  const stateFromStores1 = GUILD_HEADER_ONLINE_COUNT(stateFromStores2[5]).useStateFromStores(items4, () => outer1_5.getMemberCount(GUILD_HEADER_ONLINE_COUNT));
+  const obj2 = GUILD_HEADER_ONLINE_COUNT(stateFromStores2[5]);
+  const items5 = [handleInviteData];
+  stateFromStores2 = GUILD_HEADER_ONLINE_COUNT(stateFromStores2[5]).useStateFromStores(items5, () => {
+    let num = outer1_4.getOnlineCount(GUILD_HEADER_ONLINE_COUNT);
+    if (num == null) {
+      num = 0;
+    }
+    return num;
+  });
+  GUILD_HEADER_ONLINE_COUNT = "GUILD_HEADER_ONLINE_COUNT";
+  closure_1 = id;
+  memo1 = undefined;
+  const items6 = ["GUILD_HEADER_ONLINE_COUNT", id];
+  memo1 = memo1.useMemo(() => GUILD_HEADER_ONLINE_COUNT(stateFromStores2[3]).throttle((count) => {
+    let obj = outer1_1(outer1_2[4]);
+    obj = { type: closure_0, count, guildId: closure_1 };
+    obj.dispatch(obj);
+  }, 3000), items6);
+  const items7 = [memo1];
+  const effect2 = memo1.useEffect(() => () => noop.cancel(), items7);
+  const items8 = [memo1, stateFromStores2];
+  const effect3 = memo1.useEffect(() => {
+    if (stateFromStores2 > 0) {
+      memo1(tmp);
+    }
+  }, items8);
+  const obj3 = GUILD_HEADER_ONLINE_COUNT(stateFromStores2[5]);
+  const items9 = [initialize];
+  obj = { memberCount: stateFromStores1, onlineCount: GUILD_HEADER_ONLINE_COUNT(stateFromStores2[5]).useStateFromStores(items9, () => outer1_5.getOnlineCount(GUILD_HEADER_ONLINE_COUNT)), activeChannelsCount: null };
+  const obj4 = GUILD_HEADER_ONLINE_COUNT(stateFromStores2[5]);
+  const items10 = [initialize];
+  obj[2] = GUILD_HEADER_ONLINE_COUNT(stateFromStores2[5]).useStateFromStores(items10, () => outer1_5.getActiveChannelsCount(GUILD_HEADER_ONLINE_COUNT));
   return obj;
 };

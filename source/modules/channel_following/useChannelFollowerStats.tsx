@@ -1,33 +1,33 @@
-// Module ID: 9856
-// Function ID: 76238
+// Module ID: 9878
+// Function ID: 9879
 // Name: useChannelFollowerStats
-// Dependencies: [57, 31, 9857, 664, 566, 9858, 2]
+// Dependencies: [32, 19, 9879, 687, 589, 9880, 2]
 // Exports: default
 
-// Module 9856 (useChannelFollowerStats)
+// Module 9878 (useChannelFollowerStats)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import getFollowerStatsForChannel from "getFollowerStatsForChannel";
 
 const require = arg1;
 const HOUR = require("set").Millis.HOUR;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/channel_following/useChannelFollowerStats.tsx");
+const result = require("getFollowerStatsForChannel").fileFinishedImporting("modules/channel_following/useChannelFollowerStats.tsx");
 
 export default function useChannelFollowerStats(arg0) {
   const _require = arg0;
   const tmp = stateFromStores(React.useState(false), 2);
   const first = tmp[0];
   const dependencyMap = tmp[1];
-  const items = [_isNativeReflectConstruct];
+  const items = [getFollowerStatsForChannel];
   const items1 = [arg0];
-  stateFromStores = _require(566).useStateFromStores(items, () => outer1_5.getFollowerStatsForChannel(closure_0), items1);
+  stateFromStores = _require(589).useStateFromStores(items, () => outer1_5.getFollowerStatsForChannel(closure_0), items1);
   const items2 = [arg0, stateFromStores, first];
   const effect = React.useEffect(() => {
     if (null == stateFromStores) {
       if (!first) {
         dependencyMap(true);
-        const channelFollowerStats = first(9858).fetchChannelFollowerStats(closure_0);
-        const obj = first(9858);
+        const channelFollowerStats = first(9880).fetchChannelFollowerStats(closure_0);
+        const obj = first(9880);
       }
     } else {
       const _Date = Date;

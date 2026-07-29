@@ -1,46 +1,48 @@
-// Module ID: 13795
-// Function ID: 105701
+// Module ID: 13816
+// Function ID: 13817
 // Name: TwoFASetupLanding
-// Dependencies: [31, 27, 33, 4165, 13796, 13792, 5155, 13797, 4161, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 13817, 13813, 5177, 13818, 4185, 1236, 2]
 // Exports: default
 
-// Module 13795 (TwoFASetupLanding)
-import "result";
+// Module 13816 (TwoFASetupLanding)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 1, alignItems: "center", justifyContent: "center" }, authIcon: { width: 120, height: 120, marginBottom: 32 } });
+({ Image: c3, View: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let closure_7 = createCacheKey.createStyles({ container: { flex: 1, alignItems: "center", justifyContent: "center" }, authIcon: { width: 120, height: 120, marginBottom: 32 } });
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/account/native/mfa_modal_flow/TwoFASetupLanding.tsx");
 
 export default function TwoFASetupLanding() {
   const tmp = callback3();
-  let obj = require(13796) /* styles */;
+  let obj = require(13817) /* styles */;
   const twoFASetupStyles = obj.useTwoFASetupStyles();
-  obj = {};
-  obj = { style: tmp.container };
-  const obj1 = { bottom: true, style: tmp.container };
-  const obj2 = { source: importDefault(13797), style: tmp.authIcon };
+  obj = { children: null };
+  obj = { style: tmp.container, children: null };
+  const obj1 = { bottom: true, style: tmp.container, children: null };
+  const obj2 = { source: null, style: null };
+  obj2[0] = importDefault(13818);
+  obj2[1] = tmp.authIcon;
   const items = [callback(closure_3, obj2), , ];
-  const obj3 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj3.children = intl.string(require(1212) /* getSystemLocale */.t["9E74Dx"]);
-  items[1] = callback(require(4161) /* Text */.Heading, obj3);
-  const obj4 = { variant: "text-md/normal", style: items1 };
+  const obj3 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj3[2] = intl.string(require(1236) /* getSystemLocale */.t["9E74Dx"]);
+  items[1] = callback(require(4185) /* Text */.Heading, obj3);
+  const obj4 = { variant: "text-md/normal", style: items1, children: null };
   items1 = [, ];
   ({ modalBody: arr2[0], text: arr2[1] } = twoFASetupStyles);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj4.children = intl2.format(require(1212) /* getSystemLocale */.t.A7Aehw, { googleAuthURL: "https://support.google.com/accounts/answer/1066447?hl=en", authyURL: "https://www.authy.com/" });
-  items[2] = callback(require(4161) /* Text */.Text, obj4);
-  obj1.children = items;
-  obj.children = callback2(require(5155) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj1);
-  obj.children = callback(closure_4, obj);
-  return callback(require(13792) /* getPageMarker */.TwoFASetupModalScreen, obj);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj4[2] = intl2.format(require(1236) /* getSystemLocale */.t.A7Aehw, { googleAuthURL: "https://support.google.com/accounts/answer/1066447?hl=en", authyURL: "https://www.authy.com/" });
+  items[2] = callback(require(4185) /* Text */.Text, obj4);
+  obj1[2] = items;
+  obj[1] = callback2(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj1);
+  obj[0] = callback(closure_4, obj);
+  return callback(require(13813) /* TwoFAModalSetupSections */.TwoFASetupModalScreen, obj);
 };

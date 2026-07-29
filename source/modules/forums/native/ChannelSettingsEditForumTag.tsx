@@ -1,378 +1,372 @@
-// Module ID: 15647
-// Function ID: 120524
+// Module ID: 15682
+// Function ID: 15683
 // Name: ChannelSettingsEditForumTag
-// Dependencies: [57, 31, 27, 5026, 1348, 1853, 33, 4165, 689, 1456, 566, 4161, 1212, 9111, 6731, 4576, 5536, 5198, 4695, 9312, 5184, 1392, 6555, 1273, 6715, 5537, 4506, 2]
+// Dependencies: [32, 19, 17, 5048, 1372, 1877, 21, 4189, 712, 1480, 589, 4185, 1236, 9135, 6752, 4598, 5554, 5220, 4717, 9336, 5206, 1416, 6576, 1297, 6736, 5555, 4529, 2]
 // Exports: default
 
-// Module 15647 (ChannelSettingsEditForumTag)
+// Module 15682 (ChannelSettingsEditForumTag)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "set";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
+import EMOJI_PICKER_ACTION_SHEET_KEY from "EMOJI_PICKER_ACTION_SHEET_KEY";
+import { View } from "TableRowInner";
+import getEmojiToGroupId from "getEmojiToGroupId";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import set from "set";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "getAvatarURL";
+import createCacheKey from "createCacheKey";
 import set from "get ActivityIndicator";
 
-let closure_10;
-let closure_11;
-let closure_8;
-let closure_9;
+let c10;
+let c9;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-({ EMOJI_URL_BASE_SIZE: closure_8, EmojiIntention: closure_9 } = set);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { display: "flex", flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWER };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.sections = { paddingHorizontal: 12, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.hint = { marginTop: 8 };
-_createForOfIteratorHelperLoose.emojiIconWrapper = { display: "flex", alignItems: "center", justifyContent: "center", height: 24, width: 24 };
-_createForOfIteratorHelperLoose.imageEmoji = { height: 20, width: 20 };
-_createForOfIteratorHelperLoose.textEmoji = { fontSize: 20, lineHeight: 26 };
-_createForOfIteratorHelperLoose.nameInput = { width: "100%", flexGrow: 1 };
-_createForOfIteratorHelperLoose.saveButton = { flex: 0 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ EMOJI_URL_BASE_SIZE: metroImportAll, EmojiIntention: c9 } = set);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { container: null, sections: null, hint: null, emojiIconWrapper: null, imageEmoji: null, textEmoji: null, nameInput: null, saveButton: null };
+createCacheKey = { display: "flex", flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { paddingHorizontal: 12, paddingTop: require("Themes").space.PX_16 };
+createCacheKey[2] = { marginTop: 8 };
+createCacheKey[3] = { display: "flex", alignItems: "center", justifyContent: "center", height: 24, width: 24 };
+createCacheKey[4] = { height: 20, width: 20 };
+createCacheKey[5] = { fontSize: 20, lineHeight: 26 };
+createCacheKey[6] = { width: "100%", flexGrow: 1 };
+createCacheKey[7] = { flex: 0 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = set.fileFinishedImporting("modules/forums/native/ChannelSettingsEditForumTag.tsx");
 
 export default function ChannelSettingsEditForumTag(channelId) {
   channelId = channelId.channelId;
   const tag = channelId.tag;
+  let dependencyMap;
+  let callback;
+  let navigation;
   let first;
-  let _isNativeReflectConstruct;
+  let getEmojiToGroupId;
   let first1;
   let closure_8;
-  let first2;
-  let callback2;
+  let flag;
+  let closure_10;
   let closure_11;
-  let _createForOfIteratorHelperLoose;
+  let createCacheKey;
   let c13;
-  let callback;
+  callback = undefined;
   function handlePressEmoji(id) {
     if (null == id.id) {
       if (null != id.surrogates) {
         if ("" !== id.surrogates) {
           let name = id.surrogates;
         }
-        const obj = { id: id.id };
+        const obj = { id: null, name: null };
+        obj[0] = id.id;
         let tmp2;
         if (null == id.id) {
           tmp2 = name;
         }
-        obj.name = tmp2;
-        _isNativeReflectConstruct(obj);
+        obj[1] = tmp2;
+        getEmojiToGroupId(obj);
       }
     }
     name = id.name;
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  const dependencyMap = tmp;
+  const tmp = createCacheKey();
+  dependencyMap = tmp;
   callback = tmp2;
-  let obj = channelId(1456);
-  const navigation = obj.useNavigation();
-  let tmp5 = null;
+  let obj = channelId(1480);
+  navigation = obj.useNavigation();
+  let obj1 = navigation;
+  let tmp6 = null;
   if (null != tag) {
-    obj = {};
-    ({ emojiId: obj2.id, emojiName: obj2.name } = tag);
-    tmp5 = obj;
+    obj = { id: null, name: null };
+    ({ emojiId: obj3[0], emojiName: obj3[1] } = tag);
+    tmp6 = obj;
   }
-  const tmp6 = callback(navigation.useState(tmp5), 2);
-  first = tmp6[0];
-  _isNativeReflectConstruct = tmp6[1];
-  let name;
-  if (null != tag) {
-    name = tag.name;
+  const tmp8 = callback(navigation.useState(tmp6), 2);
+  first = tmp8[0];
+  getEmojiToGroupId = tmp8[1];
+  let str;
+  if (tag != null) {
+    str = tag.name;
   }
-  let str = "";
-  if (null != name) {
-    str = name;
+  if (str == null) {
+    str = "";
   }
-  const tmp10 = callback(navigation.useState(str), 2);
-  first1 = tmp10[0];
-  closure_8 = tmp10[1];
+  let tmp7Result = tmp7(obj1.useState(str), 2);
+  first1 = tmp7Result[0];
+  closure_8 = tmp7Result[1];
   let moderated;
-  if (null != tag) {
+  if (tag != null) {
     moderated = tag.moderated;
   }
-  const tmp14 = callback(navigation.useState(moderated), 2);
-  first2 = tmp14[0];
-  callback2 = tmp14[1];
-  let obj2 = channelId(566);
+  tmp7Result = tmp7(obj1.useState(moderated), 2);
+  flag = tmp7Result[0];
+  closure_10 = tmp7Result[1];
+  let tmp3Result = tmp3(589);
   const items = [first1];
-  closure_11 = obj2.useStateFromStores(items, () => first1.getChannel(channelId));
-  let obj3 = channelId(566);
-  const items1 = [_isNativeReflectConstruct];
-  const stateFromStores = obj3.useStateFromStores(items1, () => {
+  closure_11 = tmp3Result.useStateFromStores(items, () => first1.getChannel(channelId));
+  tmp3Result = tmp3(589);
+  const items1 = [getEmojiToGroupId];
+  const stateFromStores = tmp3Result.useStateFromStores(items1, () => {
     let id;
-    if (null != first) {
-      id = first.id;
+    if (first != null) {
+      id = tmp.id;
     }
     let usableCustomEmojiById = null;
     if (null != id) {
-      usableCustomEmojiById = usableCustomEmojiById.getUsableCustomEmojiById(first.id);
+      usableCustomEmojiById = usableCustomEmojiById.getUsableCustomEmojiById(tmp.id);
     }
     return usableCustomEmojiById;
   });
-  _createForOfIteratorHelperLoose = navigation.useRef({ emoji: first, tagName: first1, moderated: first2 });
-  const items2 = [first, first1, first2];
-  const effect = navigation.useEffect(() => {
-    closure_12.current = { emoji: first, tagName: first1, moderated: first2 };
+  createCacheKey = obj1.useRef({ emoji: first, tagName: first1, moderated: flag });
+  const items2 = [first, first1, flag];
+  const effect = obj1.useEffect(() => {
+    closure_12.current = { emoji: first, tagName: first1, moderated: flag };
   }, items2);
-  let tmp19 = null != tag;
-  if (tmp19) {
-    let tmp20 = tag.name !== first1;
-    if (!tmp20) {
+  let tmp16 = null != tag;
+  if (tmp16) {
+    let tmp17 = tag.name !== first1;
+    if (!tmp17) {
       let id;
-      if (null != first) {
+      if (first != null) {
         id = first.id;
       }
-      tmp20 = tag.emojiId !== id;
+      tmp17 = tag.emojiId !== id;
     }
-    if (!tmp20) {
-      let name1;
-      if (null != first) {
-        name1 = first.name;
+    if (!tmp17) {
+      let name;
+      if (first != null) {
+        name = first.name;
       }
-      tmp20 = tag.emojiName !== name1;
+      tmp17 = tag.emojiName !== name;
     }
-    if (!tmp20) {
-      tmp20 = tag.moderated !== first2;
+    if (!tmp17) {
+      tmp17 = tag.moderated !== flag;
     }
-    tmp19 = tmp20;
+    tmp16 = tmp17;
   }
   if (null == tag) {
-    let tmp24 = tmp23;
+    let tmp22 = tmp21;
   } else {
-    tmp24 = tmp23;
-    if (!tmp18) {
-      tmp24 = tmp19;
+    tmp22 = tmp21;
+    if (!tmp20) {
+      tmp22 = tmp16;
     }
   }
-  c13 = tmp24;
+  c13 = tmp22;
   const items3 = [navigation, null == tag];
-  const layoutEffect = navigation.useLayoutEffect(() => {
+  const layoutEffect = obj1.useLayoutEffect(() => {
     navigation.setOptions({
       headerTitle() {
-        const obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header" };
-        const intl = channelId(1212).intl;
+        const intl = outer1_0(outer1_2[12]).intl;
         const string = intl.string;
-        const t = channelId(1212).t;
-        if (outer1_3) {
-          let stringResult = string(t["/jubeD"]);
+        const t = outer1_0(outer1_2[12]).t;
+        if (_slicedToArray) {
+          let children = string(t["/jubeD"]);
         } else {
-          stringResult = string(t.zeVg5d);
+          children = string(t.zeVg5d);
         }
-        obj.children = stringResult;
-        return closure_10(channelId(4161).Text, obj);
+        return outer1_10(outer1_0(outer1_2[11]).Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children });
       }
     });
   }, items3);
   const items4 = [null == tag, navigation, channelId, ];
   let id1;
-  if (null != tag) {
+  if (tag != null) {
     id1 = tag.id;
   }
   items4[3] = id1;
-  callback = navigation.useCallback(() => {
+  callback = obj1.useCallback(() => {
     let emoji;
     let moderated;
     let tagName;
     ({ tagName, emoji, moderated } = ref.current);
     if ("" !== tagName) {
-      const obj3 = tag(tmp[13]);
-      if (_slicedToArray) {
-        let obj = { name: tagName };
+      const obj3 = tag(_undefined[13]);
+      if (c3) {
+        let obj = { name: null, emojiId: null, emojiName: null, moderated: null };
+        obj[0] = tagName;
         let id;
-        if (null != emoji) {
+        if (emoji != null) {
           id = emoji.id;
         }
-        obj.emojiId = id;
-        tagName = null == emoji;
-        let name;
-        if (!tagName) {
-          name = emoji.name;
+        obj[1] = id;
+        tagName = undefined;
+        if (emoji != null) {
+          tagName = emoji.name;
         }
-        obj.emojiName = name;
-        obj.moderated = moderated;
+        obj[2] = tagName;
+        obj[3] = moderated;
         const forumTag = obj3.createForumTag(obj, channelId);
       } else {
-        obj = {};
         let id1;
-        if (null != tag) {
+        if (tag != null) {
           id1 = tag.id;
         }
-        obj.id = id1;
-        obj.name = tagName;
+        obj = { id: null, name: null, emojiId: null, emojiName: null, moderated: null };
+        obj[0] = id1;
+        obj[1] = tagName;
         let id2;
-        if (null != emoji) {
+        if (emoji != null) {
           id2 = emoji.id;
         }
-        obj.emojiId = id2;
-        let name1;
-        if (null != emoji) {
-          name1 = emoji.name;
+        obj[2] = id2;
+        let name;
+        if (emoji != null) {
+          name = emoji.name;
         }
-        obj.emojiName = name1;
-        obj.moderated = moderated;
+        obj[3] = name;
+        obj[4] = moderated;
         obj3.updateForumTag(obj, channelId);
       }
       moderated = navigation;
       navigation.pop();
     }
   }, items4);
-  const items5 = [tmp24, navigation, callback, tmp.saveButton];
-  const effect1 = navigation.useEffect(() => {
+  const items5 = [tmp22, navigation, callback, tmp.saveButton];
+  const effect1 = obj1.useEffect(() => {
     const setOptions = navigation.setOptions;
-    let obj = {};
     if (c13) {
-      obj.headerRight = function headerRight() {
-        const obj = { style: outer1_2.saveButton, onPress: outer1_14 };
-        const intl = channelId(1212).intl;
-        obj.text = intl.string(channelId(1212).t["R3BPH+"]);
-        return callback(channelId(6731).HeaderActionButton, obj);
+      let obj = { headerRight: null };
+      obj[0] = function headerRight() {
+        const obj = { style: saveButton.saveButton, onPress: closure_14, text: null };
+        const intl = outer1_0(outer1_2[12]).intl;
+        obj[2] = intl.string(outer1_0(outer1_2[12]).t["R3BPH+"]);
+        return outer1_10(outer1_0(outer1_2[14]).HeaderActionButton, obj);
       };
       setOptions(obj);
     } else {
-      obj.headerRight = undefined;
-      setOptions(obj);
+      setOptions({ headerRight: "r" });
     }
   }, items5);
-  obj = { style: tmp.container };
-  const obj1 = { spacing: 24, style: tmp.sections };
-  obj2 = {};
-  obj3 = { hasIcons: true };
-  const obj4 = {};
-  const obj5 = {
+  obj = { style: tmp.container, children: null };
+  obj1 = { spacing: 24, style: tmp.sections, children: null };
+  const obj2 = {
     style: tmp.emojiIconWrapper,
     accessibilityRole: "button",
     onPress() {
-      let obj = channelId(tmp[19]);
-      obj = { onPressEmoji: handlePressEmoji, pickerIntention: first2.COMMUNITY_CONTENT, channel: closure_11 };
+      let obj = channelId(_undefined[19]);
+      obj = { onPressEmoji: handlePressEmoji, pickerIntention: flag.COMMUNITY_CONTENT, channel: closure_11 };
       const result = obj.openEmojiPickerActionSheet(obj);
-    }
+    },
+    children: null
   };
   if (null != first) {
     if (null == first.name) {
-      obj5.children = tmp34Result;
-      obj4.icon = tmp30(tmp33, obj5);
-      const obj6 = {
-        maxLength: 20,
-        style: tmp.nameInput,
-        value: first1,
-        autoCorrect: false,
-        autoCapitalize: "none",
-        returnKeyType: "done",
-        onChangeText(arg0) {
-              callback(arg0);
-            }
+      let obj3 = { icon: null, label: null, trailing: null };
+      obj2[3] = tmp27Result1;
+      obj3[0] = tmp27(tmp30, obj2);
+      const obj4 = { maxLength: 20, style: null, value: null, autoCorrect: false, autoCapitalize: "none", returnKeyType: "done", onChangeText: null, placeholder: null };
+      obj4[1] = tmp.nameInput;
+      obj4[2] = first1;
+      obj4[6] = function onChangeText(arg0) {
+        callback(arg0);
       };
-      let intl = channelId(1212).intl;
-      obj6.placeholder = intl.string(channelId(1212).t.aMSq0a);
-      obj4.label = callback2(channelId(1273).TextInput, obj6);
+      let intl = tmp3(1236).intl;
+      obj4[7] = intl.string(tmp3(1236).t.aMSq0a);
+      obj3[1] = tmp27(tmp3(1297).TextInput, obj4);
       if (null != first) {
-        const obj7 = {
-          accessibilityRole: "button",
-          onPress() {
-                  usableCustomEmojiById(null);
-                  callback("");
-                }
+        const obj5 = { accessibilityRole: "button", onPress: null, children: null };
+        obj5[1] = function onPress() {
+          usableCustomEmojiById(null);
+          callback("");
         };
-        const obj8 = { size: "xs" };
-        obj7.children = callback2(channelId(6715).CircleXIcon, obj8);
-        let tmp47 = callback2(channelId(4695).PressableOpacity, obj7);
+        obj5[2] = tmp27(tmp3(6736).CircleXIcon, { size: "xs" });
+        let tmp27Result = tmp27(tmp3(4717).PressableOpacity, obj5);
       } else {
-        tmp47 = null;
+        tmp27Result = null;
       }
-      obj4.trailing = tmp47;
-      obj3.children = tmp30(channelId(5198).TableRow, obj4);
-      const items6 = [tmp30(channelId(5536).TableRowGroup, obj3), ];
-      const obj9 = { style: tmp.hint };
-      const obj10 = { variant: "text-sm/medium", color: "text-muted" };
-      let intl2 = channelId(1212).intl;
-      obj10.children = intl2.string(channelId(1212).t["3v8kZH"]);
-      obj9.children = callback2(channelId(4161).Text, obj10);
-      items6[1] = callback2(first, obj9);
-      obj2.children = items6;
-      const items7 = [tmp32(tmp31, obj2), , ];
-      let obj11 = { hasIcons: false };
-      const obj12 = {};
-      let intl3 = channelId(1212).intl;
-      obj12.label = intl3.string(channelId(1212).t["rMH+rt"]);
-      obj12.value = null != first2 && first2;
-      obj12.onValueChange = function onValueChange() {
-        if (first2) {
+      const obj6 = { children: null };
+      const obj7 = { hasIcons: true, children: null };
+      obj3[2] = tmp27Result;
+      obj7[1] = tmp27(tmp3(5220).TableRow, obj3);
+      const items6 = [tmp27(tmp3(5554).TableRowGroup, obj7), ];
+      const obj8 = { style: null, children: null };
+      obj8[0] = tmp.hint;
+      const obj9 = { variant: "text-sm/medium", color: "text-muted", children: null };
+      let intl2 = tmp3(1236).intl;
+      obj9[2] = intl2.string(tmp3(1236).t["3v8kZH"]);
+      obj8[1] = tmp27(tmp3(4185).Text, obj9);
+      items6[1] = tmp27(tmp28, obj8);
+      obj6[0] = items6;
+      const items7 = [tmp29(tmp28, obj6), , ];
+      const obj10 = { label: null, value: null, onValueChange: null };
+      let intl3 = tmp3(1236).intl;
+      obj10[0] = intl3.string(tmp3(1236).t["rMH+rt"]);
+      if (flag == null) {
+        flag = false;
+      }
+      const obj11 = { hasIcons: false, children: null };
+      obj10[1] = flag;
+      obj10[2] = function onValueChange() {
+        let tmp2 = !flag;
+        if (flag) {
           let moderated;
-          if (null != tag) {
+          if (tag != null) {
             moderated = tag.moderated;
           }
-          if (null == moderated) {
-            callback2(undefined);
-          } else {
-            callback2(false);
-          }
-        } else {
-          callback2(true);
+          tmp2 = null == moderated && undefined;
+          const tmp5 = null == moderated && undefined;
         }
+        closure_10(tmp2);
       };
-      obj11.children = callback2(channelId(5537).TableSwitchRow, obj12);
-      items7[1] = callback2(channelId(5536).TableRowGroup, obj11);
-      let tmp55 = null;
+      obj11[1] = tmp27(tmp3(5555).TableSwitchRow, obj10);
+      items7[1] = tmp27(tmp3(5554).TableRowGroup, obj11);
+      tmp27Result = null;
       if (!tmp2) {
-        const obj13 = { hasIcons: false };
-        const obj14 = { variant: "danger" };
-        let intl4 = channelId(1212).intl;
-        obj14.label = intl4.string(channelId(1212).t.huYSMr);
-        obj14.onPress = function onPress() {
-          let obj = tag(tmp[26]);
-          obj = {};
-          const intl = channelId(tmp[12]).intl;
-          obj.title = intl.string(channelId(tmp[12]).t.huYSMr);
-          const intl2 = channelId(tmp[12]).intl;
-          obj.body = intl2.string(channelId(tmp[12]).t.bkAFCf);
-          const intl3 = channelId(tmp[12]).intl;
-          obj.cancelText = intl3.string(channelId(tmp[12]).t.gm1Vej);
-          const intl4 = channelId(tmp[12]).intl;
-          obj.confirmText = intl4.string(channelId(tmp[12]).t.p89ACt);
-          obj.onConfirm = function onConfirm() {
-            if (!outer1_3) {
-              tag(table[13]).deleteForumTag(outer1_0, outer1_1.id);
-              outer1_4.pop();
-              const obj = tag(table[13]);
+        const obj12 = { hasIcons: false, children: null };
+        const obj13 = { variant: "danger", label: null, onPress: null };
+        let intl4 = tmp3(1236).intl;
+        obj13[1] = intl4.string(tmp3(1236).t.huYSMr);
+        obj13[2] = function onPress() {
+          let obj = tag(_undefined[26]);
+          obj = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null };
+          const intl = channelId(_undefined[12]).intl;
+          obj[0] = intl.string(channelId(_undefined[12]).t.huYSMr);
+          const intl2 = channelId(_undefined[12]).intl;
+          obj[1] = intl2.string(channelId(_undefined[12]).t.bkAFCf);
+          const intl3 = channelId(_undefined[12]).intl;
+          obj[2] = intl3.string(channelId(_undefined[12]).t.gm1Vej);
+          const intl4 = channelId(_undefined[12]).intl;
+          obj[3] = intl4.string(channelId(_undefined[12]).t.p89ACt);
+          obj[4] = function onConfirm() {
+            if (!_slicedToArray) {
+              outer1_1(outer1_2[13]).deleteForumTag(closure_0, id.id);
+              arr = arr.pop();
+              const obj = outer1_1(outer1_2[13]);
             }
           };
           obj.show(obj);
         };
-        obj13.children = callback2(channelId(5198).TableRow, obj14);
-        tmp55 = callback2(channelId(5536).TableRowGroup, obj13);
+        obj12[1] = tmp27(tmp3(5220).TableRow, obj13);
+        tmp27Result = tmp27(tmp3(5554).TableRowGroup, obj12);
       }
-      items7[2] = tmp55;
-      obj1.children = items7;
-      obj.children = tmp32(channelId(4576).Stack, obj1);
-      return tmp30(tmp31, obj);
+      items7[2] = tmp27Result;
+      obj1[2] = items7;
+      obj[1] = tmp29(tmp3(4598).Stack, obj1);
+      return tmp27(tmp28, obj);
     }
-    const obj15 = {};
-    ({ textEmoji: obj11.textEmojiStyle, imageEmoji: obj11.fastImageStyle } = tmp);
+    const obj14 = { textEmojiStyle: null, fastImageStyle: null, src: null, name: null };
+    ({ textEmoji: obj9[0], imageEmoji: obj9[1] } = tmp);
     let emojiURL;
     if (null != stateFromStores) {
-      obj11 = tag(1392);
-      const obj16 = {};
-      ({ id: obj13.id, animated: obj13.animated } = stateFromStores);
-      obj16.size = closure_8;
-      emojiURL = obj11.getEmojiURL(obj16);
+      const obj15 = { id: null, animated: null, size: null };
+      ({ id: obj11[0], animated: obj11[1] } = stateFromStores);
+      obj15[2] = closure_8;
+      emojiURL = tmp31(1416).getEmojiURL(obj15);
+      const tmp31Result = tmp31(1416);
     }
-    obj15.src = emojiURL;
-    let name2;
-    if (null != first) {
-      name2 = first.name;
+    obj14[2] = emojiURL;
+    let str2;
+    if (first != null) {
+      str2 = first.name;
     }
-    let str2 = "";
-    if (null != name2) {
-      str2 = name2;
+    if (str2 == null) {
+      str2 = "";
     }
-    obj15.name = str2;
-    tmp34Result = callback2(tag(5184), obj15);
-    const tmp34 = callback2;
-    const tmp37 = tag(5184);
+    obj14[3] = str2;
+    tmp27Result1 = tmp27(tag(5206), obj14);
+    tmp31 = tag;
+    const tmp32 = tag(5206);
   }
-  tmp34Result = callback2(channelId(6555).ReactionIcon, {});
+  tmp27Result1 = tmp27(tmp3(6576).ReactionIcon, {});
 };

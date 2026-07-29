@@ -1,34 +1,32 @@
-// Module ID: 7916
-// Function ID: 62922
+// Module ID: 7941
+// Function ID: 7942
 // Name: setPendingChanges
-// Dependencies: [1918, 1850, 5878, 4311, 7917, 686, 2]
+// Dependencies: [1942, 1874, 5896, 4349, 7942, 709, 2]
 // Exports: setPendingChanges
 
-// Module 7916 (setPendingChanges)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 7941 (setPendingChanges)
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import createUserWidgetFromServer from "createUserWidgetFromServer";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_profile/UserProfileSettingsActionCreators.tsx");
+const result = require("createUserWidgetFromServer").fileFinishedImporting("modules/user_profile/UserProfileSettingsActionCreators.tsx");
 
 export const setPendingChanges = function setPendingChanges(guildId) {
   let bannerOriginalMd5;
   guildId = guildId.guildId;
-  let obj = Object.create(null);
-  obj.guildId = 0;
-  const merged = Object.assign(guildId, obj);
+  const merged = Object.assign(guildId, Object.create(null));
   currentUser = currentUser.getCurrentUser();
   if (null != currentUser) {
-    let userProfile = authStore.getUserProfile(currentUser.id);
+    userProfile = userProfile.getUserProfile(currentUser.id);
     if (null != guildId) {
-      userProfile = authStore.getGuildMemberProfile(currentUser.id, guildId);
+      userProfile = obj5.getGuildMemberProfile(currentUser.id, guildId);
     }
     let member = null;
     if (null != guildId) {
       member = member.getMember(guildId, currentUser.id);
     }
-    obj = {};
+    let obj = {};
     if ("globalName" in merged) {
       if (merged.globalName === currentUser.globalName) {
         obj.pendingGlobalName = undefined;
@@ -38,7 +36,7 @@ export const setPendingChanges = function setPendingChanges(guildId) {
     }
     if ("nickname" in merged) {
       let nick;
-      if (null != member) {
+      if (member != null) {
         nick = member.nick;
       }
       if (merged.nickname === nick) {
@@ -46,7 +44,7 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       } else {
         if ("" === merged.nickname) {
           let nick1;
-          if (null != member) {
+          if (member != null) {
             nick1 = member.nick;
           }
         }
@@ -57,27 +55,26 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       let displayNameStyles = merged.displayNameStyles;
       if (null != guildId) {
         displayNameStyles = undefined;
-        if (null != member) {
+        if (member != null) {
           displayNameStyles = member.displayNameStyles;
         }
-        let displayNameStyles2 = displayNameStyles;
+        let displayNameStyles1 = displayNameStyles;
       } else {
-        displayNameStyles2 = currentUser.displayNameStyles;
+        displayNameStyles1 = currentUser.displayNameStyles;
       }
-      let tmp14 = null;
-      if (null != displayNameStyles) {
-        tmp14 = displayNameStyles;
+      let tmp13 = displayNameStyles;
+      if (displayNameStyles == null) {
+        tmp13 = null;
       }
-      let tmp15 = null;
-      if (null != displayNameStyles2) {
-        tmp15 = displayNameStyles2;
+      if (displayNameStyles1 == null) {
+        displayNameStyles1 = null;
       }
-      obj.pendingDisplayNameStyles = importDefault(4311)(tmp14, tmp15) ? undefined : displayNameStyles;
-      const tmp13 = importDefault(4311);
+      obj.pendingDisplayNameStyles = importDefault(4349)(tmp13, displayNameStyles1) ? undefined : displayNameStyles;
+      const tmp12 = importDefault(4349);
     }
     if ("pronouns" in merged) {
       let pronouns;
-      if (null != userProfile) {
+      if (userProfile != null) {
         pronouns = userProfile.pronouns;
       }
       if (merged.pronouns === pronouns) {
@@ -91,7 +88,7 @@ export const setPendingChanges = function setPendingChanges(guildId) {
         if (null == guildId) {
           const avatar2 = merged.avatar;
           let imageUri;
-          if (null != avatar2) {
+          if (avatar2 != null) {
             imageUri = avatar2.imageUri;
           }
         }
@@ -99,11 +96,11 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       } else {
         let avatar = merged.avatar;
         let imageUri1;
-        if (null != avatar) {
+        if (avatar != null) {
           imageUri1 = avatar.imageUri;
         }
         avatar = undefined;
-        if (null != member) {
+        if (member != null) {
           avatar = member.avatar;
         }
       }
@@ -114,12 +111,12 @@ export const setPendingChanges = function setPendingChanges(guildId) {
         if (null == guildId) {
           const avatarDecoration3 = merged.avatarDecoration;
           let skuId;
-          if (null != avatarDecoration3) {
+          if (avatarDecoration3 != null) {
             skuId = avatarDecoration3.skuId;
           }
           const avatarDecoration4 = currentUser.avatarDecoration;
           let skuId1;
-          if (null != avatarDecoration4) {
+          if (avatarDecoration4 != null) {
             skuId1 = avatarDecoration4.skuId;
           }
         }
@@ -127,13 +124,13 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       } else {
         const avatarDecoration = merged.avatarDecoration;
         let skuId2;
-        if (null != avatarDecoration) {
+        if (avatarDecoration != null) {
           skuId2 = avatarDecoration.skuId;
         }
         let skuId3;
-        if (null != member) {
+        if (member != null) {
           const avatarDecoration2 = member.avatarDecoration;
-          if (null != avatarDecoration2) {
+          if (avatarDecoration2 != null) {
             skuId3 = avatarDecoration2.skuId;
           }
         }
@@ -145,14 +142,14 @@ export const setPendingChanges = function setPendingChanges(guildId) {
         if (null == guildId) {
           const nameplate3 = merged.nameplate;
           let skuId4;
-          if (null != nameplate3) {
+          if (nameplate3 != null) {
             skuId4 = nameplate3.skuId;
           }
           const collectibles2 = currentUser.collectibles;
           let skuId5;
-          if (null != collectibles2) {
+          if (collectibles2 != null) {
             const nameplate4 = collectibles2.nameplate;
-            if (null != nameplate4) {
+            if (nameplate4 != null) {
               skuId5 = nameplate4.skuId;
             }
           }
@@ -161,15 +158,15 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       } else {
         const nameplate = merged.nameplate;
         let skuId6;
-        if (null != nameplate) {
+        if (nameplate != null) {
           skuId6 = nameplate.skuId;
         }
         let skuId7;
-        if (null != member) {
+        if (member != null) {
           const collectibles = member.collectibles;
-          if (null != collectibles) {
+          if (collectibles != null) {
             const nameplate2 = collectibles.nameplate;
-            if (null != nameplate2) {
+            if (nameplate2 != null) {
               skuId7 = nameplate2.skuId;
             }
           }
@@ -180,13 +177,13 @@ export const setPendingChanges = function setPendingChanges(guildId) {
     if ("profileEffect" in merged) {
       const profileEffect = merged.profileEffect;
       let skuId8;
-      if (null != profileEffect) {
+      if (profileEffect != null) {
         skuId8 = profileEffect.skuId;
       }
       let skuId9;
-      if (null != userProfile) {
+      if (userProfile != null) {
         const profileEffect2 = userProfile.profileEffect;
-        if (null != profileEffect2) {
+        if (profileEffect2 != null) {
           skuId9 = profileEffect2.skuId;
         }
       }
@@ -199,13 +196,13 @@ export const setPendingChanges = function setPendingChanges(guildId) {
     if ("profileFrame" in merged) {
       const profileFrame = merged.profileFrame;
       let skuId10;
-      if (null != profileFrame) {
+      if (profileFrame != null) {
         skuId10 = profileFrame.skuId;
       }
       let skuId11;
-      if (null != userProfile) {
+      if (userProfile != null) {
         const profileFrame2 = userProfile.profileFrame;
-        if (null != profileFrame2) {
+        if (profileFrame2 != null) {
           skuId11 = profileFrame2.skuId;
         }
       }
@@ -217,90 +214,82 @@ export const setPendingChanges = function setPendingChanges(guildId) {
     }
     if ("banner" in merged) {
       let banner = merged.banner;
-      let tmp32 = null;
-      if (null != banner) {
-        tmp32 = banner;
+      if (banner == null) {
+        banner = null;
       }
       if (null != guildId) {
-        banner = undefined;
-        if (null != userProfile) {
-          banner = userProfile.banner;
+        let banner1;
+        if (userProfile != null) {
+          banner1 = userProfile.banner;
         }
-        let tmp35 = null;
-        if (null != banner) {
-          tmp35 = banner;
+        if (banner1 == null) {
+          banner1 = null;
         }
-        let tmp33 = tmp35;
+        let banner2 = banner1;
       } else {
-        const banner2 = currentUser.banner;
-        tmp33 = null;
-        if (null != banner2) {
-          tmp33 = banner2;
+        banner2 = currentUser.banner;
+        if (banner2 == null) {
+          banner2 = null;
         }
       }
-      if (tmp32 === tmp33) {
+      if (banner === banner2) {
         obj.pendingBanner = undefined;
         obj.pendingBannerOriginalMd5 = undefined;
       } else {
         ({ banner: obj.pendingBanner, bannerOriginalMd5 } = merged);
-        let tmp36 = null;
-        if (null != bannerOriginalMd5) {
-          tmp36 = bannerOriginalMd5;
+        if (bannerOriginalMd5 == null) {
+          bannerOriginalMd5 = null;
         }
-        obj.pendingBannerOriginalMd5 = tmp36;
+        obj.pendingBannerOriginalMd5 = bannerOriginalMd5;
       }
     }
     if ("accentColor" in merged) {
       let accentColor = merged.accentColor;
-      let tmp37 = null;
-      if (null != accentColor) {
-        tmp37 = accentColor;
+      if (accentColor == null) {
+        accentColor = null;
       }
-      accentColor = undefined;
-      if (null != userProfile) {
-        accentColor = userProfile.accentColor;
+      let accentColor1;
+      if (userProfile != null) {
+        accentColor1 = userProfile.accentColor;
       }
-      let tmp39 = null;
-      if (null != accentColor) {
-        tmp39 = accentColor;
+      if (accentColor1 == null) {
+        accentColor1 = null;
       }
-      let tmp40;
-      if (tmp37 !== tmp39) {
-        tmp40 = tmp37;
+      let tmp35;
+      if (accentColor !== accentColor1) {
+        tmp35 = accentColor;
       }
-      obj.pendingAccentColor = tmp40;
+      obj.pendingAccentColor = tmp35;
     }
     if ("themeColors" in merged) {
       if (null != guildId) {
         if (null != merged.themeColors) {
           if (null == merged.themeColors[0]) {
-            let tmp41 = null;
+            let tmp36 = null;
           }
           let themeColors;
-          if (null != userProfile) {
+          if (userProfile != null) {
             themeColors = userProfile.themeColors;
           }
-          let tmp44 = null;
-          if (null != themeColors) {
-            tmp44 = themeColors;
+          if (themeColors == null) {
+            themeColors = null;
           }
-          if (importDefault(4311)(tmp41, tmp44)) {
+          if (importDefault(4349)(tmp36, themeColors)) {
             obj.pendingThemeColors = undefined;
           } else {
             obj.pendingThemeColors = merged.themeColors;
           }
         }
       }
-      themeColors = merged.themeColors;
-      let tmp42 = null;
-      if (null != themeColors) {
-        tmp42 = themeColors;
+      let themeColors1 = merged.themeColors;
+      if (themeColors1 == null) {
+        themeColors1 = null;
       }
-      tmp41 = tmp42;
+      tmp36 = themeColors1;
     }
     if ("bio" in merged) {
       let bio;
-      if (null != userProfile) {
+      if (userProfile != null) {
         bio = userProfile.bio;
       }
       if (merged.bio === bio) {
@@ -310,24 +299,25 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       }
     }
     if ("primaryGuildId" in merged) {
-      const guildId2 = require(7917) /* getUserPrimaryGuild */.getUserPrimaryGuild(currentUser.primaryGuild).guildId;
-      let tmp50 = null;
-      if (null != guildId2) {
-        tmp50 = guildId2;
+      guildId = require(7942) /* guildHasTag */.getUserPrimaryGuild(currentUser.primaryGuild).guildId;
+      if (guildId == null) {
+        guildId = null;
       }
-      if (merged.primaryGuildId === tmp50) {
+      if (merged.primaryGuildId === guildId) {
         obj.pendingPrimaryGuildId = undefined;
       } else {
         obj.pendingPrimaryGuildId = merged.primaryGuildId;
       }
-      const obj2 = require(7917) /* getUserPrimaryGuild */;
+      const obj2 = require(7942) /* guildHasTag */;
     }
     if ("legacyUsernameDisabled" in merged) {
       obj.pendingLegacyUsernameDisabled = merged.legacyUsernameDisabled;
     }
-    obj = { type: "USER_PROFILE_SETTINGS_SET_PENDING_CHANGES", guildId };
+    obj = { type: "USER_PROFILE_SETTINGS_SET_PENDING_CHANGES", guildId: null };
+    obj[1] = guildId;
     const merged1 = Object.assign(obj);
-    importDefault(686).dispatch(obj);
-    const obj3 = importDefault(686);
+    importDefault(709).dispatch(obj);
+    const obj3 = importDefault(709);
+    obj5 = userProfile;
   }
 };

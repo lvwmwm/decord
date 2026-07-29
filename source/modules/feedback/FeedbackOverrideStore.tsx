@@ -1,82 +1,40 @@
-// Module ID: 16147
-// Function ID: 124827
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 16146, 566, 686, 2]
+// Module ID: 16169
+// Function ID: 16170
+// Name: initialize
+// Dependencies: [16168, 589, 709, 2]
 
-// Module 16147 (_isNativeReflectConstruct)
-import initialize from "initialize";
-import dispatcher from "dispatcher";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 16169 (initialize)
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let closure_2 = {};
+class HotspotStore extends Store {
 }
-let closure_7 = {};
-let tmp2 = ((Store) => {
-  class HotspotStore {
-    constructor() {
-      self = this;
-      tmp = outer1_2(this, HotspotStore);
-      obj = outer1_5(HotspotStore);
-      tmp2 = outer1_4;
-      if (outer1_8()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_5;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_5(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
-  }
-  callback2(HotspotStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
+const prototype = HotspotStore.prototype;
+prototype["initialize"] = function initialize() {
 
-    }
-  };
-  const items = [obj, ];
-  obj = {
-    key: "getFeedbackConfig",
-    value(arg0) {
-      return outer1_7[arg0];
-    }
-  };
-  items[1] = obj;
-  return callback(HotspotStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "FeedbackOverrideStore";
-tmp2.persistKey = "feedbackOverrides";
-tmp2 = new tmp2(require("dispatcher"), {
+};
+prototype["getFeedbackConfig"] = function getFeedbackConfig(ACTIVITY) {
+  return table[ACTIVITY];
+};
+HotspotStore.displayName = "FeedbackOverrideStore";
+HotspotStore.persistKey = "feedbackOverrides";
+const hotspotStore = new HotspotStore(require("dispatcher"), {
   FEEDBACK_OVERRIDE_SET: function handleSetFeedbackOverride(feedbackType) {
     let chance;
     let cooldown;
     feedbackType = feedbackType.feedbackType;
     const obj = {};
     ({ cooldown, chance } = feedbackType);
-    const merged = Object.assign(require(16146) /* _isNativeReflectConstruct */.FeedbackConfig[feedbackType]);
-    obj["cooldown"] = cooldown;
-    obj["chance"] = chance;
-    closure_7[feedbackType] = obj;
+    const merged = Object.assign(require(16168) /* optOutEligibilityCheck */.FeedbackConfig[feedbackType]);
+    obj.cooldown = cooldown;
+    obj.chance = chance;
+    closure_2[feedbackType] = obj;
   },
   FEEDBACK_OVERRIDE_CLEAR: function handleClearFeedbackOverride(arg0) {
     delete tmp[tmp2];
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/feedback/FeedbackOverrideStore.tsx");
+const result = require("dispatcher").fileFinishedImporting("modules/feedback/FeedbackOverrideStore.tsx");
 
-export default tmp2;
+export default hotspotStore;

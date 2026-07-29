@@ -1,19 +1,18 @@
-// Module ID: 7864
-// Function ID: 62546
+// Module ID: 7887
+// Function ID: 7888
 // Name: isContentInventoryFallbackEmbed
-// Dependencies: [653, 1360, 2]
+// Dependencies: [676, 1384, 2]
 // Exports: isContentInventoryFallbackEmbed
 
-// Module 7864 (isContentInventoryFallbackEmbed)
+// Module 7887 (isContentInventoryFallbackEmbed)
 import { MessageEmbedFlags } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/interaction_components/content_inventory_entry/utils.tsx");
 
 export const isContentInventoryFallbackEmbed = function isContentInventoryFallbackEmbed(flags) {
-  flags = flags.flags;
-  let num = 0;
-  if (null != flags) {
-    num = flags;
+  let num = flags.flags;
+  if (num == null) {
+    num = 0;
   }
-  return require(1360) /* hasFlag */.hasFlag(num, MessageEmbedFlags.IS_CONTENT_INVENTORY_ENTRY);
+  return require(1384) /* hasFlag */.hasFlag(num, MessageEmbedFlags.IS_CONTENT_INVENTORY_ENTRY);
 };

@@ -1,0 +1,29 @@
+// Module ID: 418
+// Function ID: 419
+// Name: __INTERNAL_VIEW_CONFIG
+// Dependencies: [19, 80, 26, 106, 65, 114]
+
+// Module 418 (__INTERNAL_VIEW_CONFIG)
+import "noop";
+import processColorElement from "processColorElement";
+import weakSet from "weakSet";
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
+
+const require = arg1;
+let obj = { uiViewClassName: "AndroidSwipeRefreshLayout", directEventTypes: { topRefresh: { registrationName: "onRefresh" } }, validAttributes: null };
+if ("default" in processColorElement) {
+  processColorElement = processColorElement.default;
+}
+obj = { enabled: true, colors: { process: processColorElement }, progressBackgroundColor: require("result").colorAttribute, size: true, progressViewOffset: true, refreshing: true };
+const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onRefresh: true }));
+obj[2] = obj;
+obj = {
+  setNativeRefreshing(_nativeRef, refreshing) {
+    const items = [refreshing];
+    require(114) /* renderElement */.dispatchCommand(_nativeRef, "setNativeRefreshing", items);
+  }
+};
+
+export default setRuntimeConfigProvider.get("AndroidSwipeRefreshLayout", () => obj);
+export const __INTERNAL_VIEW_CONFIG = obj;
+export const Commands = obj;

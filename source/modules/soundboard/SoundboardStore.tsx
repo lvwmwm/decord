@@ -1,119 +1,26 @@
-// Module ID: 4613
-// Function ID: 40254
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 57, 1316, 1850, 4614, 653, 662, 4249, 3747, 22, 675, 4615, 3838, 21, 566, 686, 2]
+// Module ID: 4635
+// Function ID: 4636
+// Name: handleSoundCreateOrUpdate
+// Dependencies: [32, 1340, 1874, 4636, 676, 685, 4273, 3771, 12, 698, 4637, 3862, 11, 589, 709, 2]
 
-// Module 4613 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import perceptualToAmplitude from "perceptualToAmplitude";
-import DISCORD_EPOCH from "DISCORD_EPOCH";
-import initialize from "initialize";
+// Module 4635 (handleSoundCreateOrUpdate)
 import _slicedToArray from "_slicedToArray";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME";
 import { AnalyticEvents } from "ME";
 import { UserSettingsTypes } from "MAX_FAVORITES";
 import module_2026 from "module_2026";
-import importDefaultResult from "DEFAULT_FRECENCY";
-import set from "_possibleConstructorReturn";
+import { Store } from "initialize";
+import set from "mergeGuildAvatar";
 
-let closure_18;
-let closure_19;
+let closure_14;
+let map1;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function handleSoundCreateOrUpdate(sound) {
   sound = sound.sound;
   const value = map.get(sound.guildId);
-  if (null != value) {
+  if (value != null) {
     const findIndexResult = value.findIndex((soundId) => soundId.soundId === sound.soundId);
   }
   if (null != value) {
@@ -127,7 +34,7 @@ function handleSoundCreateOrUpdate(sound) {
     }
   }
   if (null != value) {
-    if (null != value) {
+    if (value != null) {
       value.push(sound);
     }
     const items1 = [];
@@ -135,58 +42,47 @@ function handleSoundCreateOrUpdate(sound) {
     const result1 = map.set(sound.guildId, items1);
   }
 }
-function syncIsSoundboardVolumeMutedFromUserSettings() {
-  const SoundboardSettings = require(3838) /* explicitContentFromProto */.SoundboardSettings;
-  const setting = SoundboardSettings.getSetting();
-  let volume;
-  if (null != setting) {
-    volume = setting.volume;
-  }
-  let closure_26 = 0 === volume;
-}
 function syncLocalSoundboardMutesFromUserSettings(proto) {
-  let iter2;
   let user;
-  if (null != proto) {
+  if (proto != null) {
     const audioContextSettings = proto.audioContextSettings;
-    if (null != audioContextSettings) {
+    if (audioContextSettings != null) {
       user = audioContextSettings.user;
     }
   }
-  if (null == user) {
+  if (user == null) {
     user = {};
   }
   const entries = Object.entries(user);
-  for (let num = 0; num < entries.length; num = num + 1) {
-    let tmp = callback3;
-    let tmp2 = callback3(entries[num], 2);
-    let first = tmp2[0];
+  while (tmp2 !== undefined) {
+    let tmp4 = callback;
+    let tmp5 = callback(tmp3, 2);
+    let first = tmp5[0];
     let obj2 = set;
-    if (tmp2[1].soundboardMuted) {
+    if (tmp5[1].soundboardMuted) {
+      let tmp9 = first;
       let addResult = obj2.add(first);
     } else {
+      let tmp7 = first;
       let deleteResult = obj2.delete(first);
     }
+    continue;
   }
-  const tmp6 = _createForOfIteratorHelperLoose(set.keys());
-  let iter = tmp6();
-  if (!iter.done) {
-    do {
-      let value = iter.value;
-      if (null == user[value]) {
-        let tmp7 = set;
-        let deleteResult1 = set.delete(value);
-      }
-      iter2 = tmp6();
-      iter = iter2;
-    } while (!iter2.done);
+  const keys = set.keys();
+  for (const item10038 of keys) {
+    if (null == user[item10038]) {
+      let tmp13 = set;
+      let tmp14 = item10038;
+      let deleteResult1 = set.delete(tmp12);
+    }
+    continue;
   }
 }
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED" };
 let map = new Map();
-const map1 = new Map();
+map1 = new Map();
 let set = new Set();
-({ NOT_FETCHED: closure_18, NOT_FETCHED: closure_19 } = obj);
+({ NOT_FETCHED: map1, NOT_FETCHED: closure_14 } = obj);
 let set1 = new Set();
 const map2 = new Map();
 obj = {
@@ -215,7 +111,7 @@ obj = {
       }
       return num2;
     }
-    obj = importDefault(3747)();
+    obj = importDefault(3771)();
   },
   lookupKey(arg0) {
     return arg0;
@@ -224,219 +120,138 @@ obj = {
 
   }
 };
-importDefaultResult = new importDefaultResult(obj);
-let closure_24 = [];
-let c25 = false;
-let c26 = false;
-let closure_27 = require("apply").debounce((volume, location_stack) => {
-  let obj = importDefault(675);
-  obj = { volume: Math.round(require(4615) /* perceptualToAmplitude */.amplitudeToPerceptual(volume)), location_stack };
+let closure_18 = new require("DEFAULT_FRECENCY")(obj);
+let closure_19 = [];
+let c20 = false;
+let c21 = false;
+let tmp7 = new require("DEFAULT_FRECENCY")(obj);
+let closure_22 = require("DISCORD_EPOCH").debounce((volume) => {
+  let obj = importDefault(698);
+  obj = { volume: null, location_stack: null };
+  obj[0] = Math.round(require(4637) /* perceptualToAmplitude */.amplitudeToPerceptual(volume));
+  obj[1] = arg1;
   obj.track(AnalyticEvents.UPDATE_SOUNDBOARD_SETTINGS, obj);
-  const SoundboardSettings = require(3838) /* explicitContentFromProto */.SoundboardSettings;
+  const SoundboardSettings = require(3862) /* explicitContentFromProto */.SoundboardSettings;
   obj = { volume };
   SoundboardSettings.updateSetting(obj);
 }, 1000);
-let tmp9 = ((Store) => {
-  class SoundboardStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, SoundboardStore);
-      obj = outer1_6(SoundboardStore);
-      tmp2 = outer1_5;
-      if (outer1_28()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+class SoundboardStore extends Store {
+}
+const prototype = SoundboardStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(settings, mergeGuildAvatar);
+  syncLocalSoundboardMutesFromUserSettings(settings.settings);
+  const SoundboardSettings = require(3862) /* explicitContentFromProto */.SoundboardSettings;
+  const setting = SoundboardSettings.getSetting();
+  let volume;
+  if (setting != null) {
+    volume = setting.volume;
   }
-  callback2(SoundboardStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_9, outer1_10);
-      outer1_32(outer1_9.settings);
-      outer1_31();
-    }
-  };
-  let items = [obj, , , , , , , , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "getOverlaySerializedState",
-    value() {
-      return { soundboardSounds: Object.fromEntries(outer1_15), favoritedSoundIds: Array.from(outer1_20), localSoundboardMutes: Array.from(outer1_17) };
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getSounds",
-    value() {
-      return outer1_15;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getSoundsForGuild",
-    value(arg0) {
-      return outer1_15.get(arg0);
-    }
-  };
-  items[4] = {
-    key: "getSound",
-    value(arg0, arg1) {
-      let closure_0 = arg1;
-      let items = outer1_15.get(arg0);
-      if (null == items) {
-        items = [];
-      }
-      return items.find((soundId) => soundId.soundId === closure_0);
-    }
-  };
-  items[5] = {
-    key: "getSoundById",
-    value(arg0) {
-      let closure_0 = arg0;
-      const arr = Array.from(outer1_15.values());
-      return Array.from(outer1_15.values()).flat().find((soundId) => soundId.soundId === closure_0);
-    }
-  };
-  items[6] = {
-    key: "isFetchingSounds",
-    value() {
-      return outer1_19 === outer1_14.FETCHING;
-    }
-  };
-  items[7] = {
-    key: "isFetchingDefaultSounds",
-    value() {
-      return outer1_18 === outer1_14.FETCHING;
-    }
-  };
-  items[8] = {
-    key: "isFetching",
-    value() {
-      const self = this;
-      return this.isFetchingSounds() || self.isFetchingDefaultSounds();
-    }
-  };
-  items[9] = {
-    key: "shouldFetchDefaultSounds",
-    value() {
-      return outer1_18 === outer1_14.NOT_FETCHED;
-    }
-  };
-  items[10] = {
-    key: "hasFetchedDefaultSounds",
-    value() {
-      return outer1_18 === outer1_14.FETCHED;
-    }
-  };
-  items[11] = {
-    key: "isUserPlayingSounds",
-    value(arg0) {
-      const value = outer1_21.get(arg0);
-      let tmp2 = null != value;
-      if (tmp2) {
-        tmp2 = value > 0;
-      }
-      return tmp2;
-    }
-  };
-  items[12] = {
-    key: "isPlayingSound",
-    value(arg0) {
-      return null != outer1_16.get(arg0);
-    }
-  };
-  items[13] = {
-    key: "isFavoriteSound",
-    value(arg0) {
-      return outer1_20.has(arg0);
-    }
-  };
-  items[14] = {
-    key: "getFavorites",
-    value() {
-      return outer1_20;
-    }
-  };
-  items[15] = {
-    key: "getFrequentlyUsedSoundIds",
-    value() {
-      return outer1_23.frequently;
-    }
-  };
-  items[16] = {
-    key: "hasPendingUsage",
-    value() {
-      return outer1_24.length > 0;
-    }
-  };
-  items[17] = {
-    key: "playedSoundFrecencyWithoutFetchingLatest",
-    get() {
-      return outer1_23;
-    }
-  };
-  items[18] = {
-    key: "isLocalSoundboardMuted",
-    value(arg0) {
-      return outer1_17.has(arg0);
-    }
-  };
-  items[19] = {
-    key: "isSoundboardVolumeMuted",
-    value() {
-      return outer1_26;
-    }
-  };
-  items[20] = {
-    key: "hasHadOtherUserPlaySoundInSession",
-    value() {
-      return outer1_25;
-    }
-  };
-  items[21] = {
-    key: "hasFetchedAllSounds",
-    value() {
-      let tmp = outer1_19 === outer1_14.FETCHED;
-      if (tmp) {
-        tmp = outer1_18 === outer1_14.FETCHED;
-      }
-      return tmp;
-    }
-  };
-  items[22] = {
-    key: "isFetchingAnySounds",
-    value() {
-      let tmp = outer1_19 === outer1_14.FETCHING;
-      if (!tmp) {
-        tmp = outer1_18 === outer1_14.FETCHING;
-      }
-      return tmp;
-    }
-  };
-  return callback(SoundboardStore, items);
-})(require("initialize").Store);
-tmp9.displayName = "SoundboardStore";
+  let closure_21 = 0 === volume;
+};
+prototype["getOverlaySerializedState"] = function getOverlaySerializedState() {
+  return { soundboardSounds: Object.fromEntries(map), favoritedSoundIds: Array.from(set1), localSoundboardMutes: Array.from(set) };
+};
+prototype["getSounds"] = function getSounds() {
+  return map;
+};
+prototype["getSoundsForGuild"] = function getSoundsForGuild(arg0) {
+  return map.get(arg0);
+};
+prototype["getSound"] = function getSound(arg0, arg1) {
+  let closure_0 = arg1;
+  let items = map.get(arg0);
+  if (items == null) {
+    items = [];
+  }
+  return items.find((soundId) => soundId.soundId === closure_0);
+};
+prototype["getSoundById"] = function getSoundById(soundId) {
+  let closure_0 = soundId;
+  const arr = Array.from(map.values());
+  return Array.from(map.values()).flat().find((soundId) => soundId.soundId === closure_0);
+};
+prototype["isFetchingSounds"] = function isFetchingSounds() {
+  return closure_14 === obj.FETCHING;
+};
+prototype["isFetchingDefaultSounds"] = function isFetchingDefaultSounds() {
+  return closure_13 === obj.FETCHING;
+};
+prototype["isFetching"] = function isFetching() {
+  const self = this;
+  return this.isFetchingSounds() || self.isFetchingDefaultSounds();
+};
+prototype["shouldFetchDefaultSounds"] = function shouldFetchDefaultSounds() {
+  return closure_13 === obj.NOT_FETCHED;
+};
+prototype["hasFetchedDefaultSounds"] = function hasFetchedDefaultSounds() {
+  return closure_13 === obj.FETCHED;
+};
+prototype["isUserPlayingSounds"] = function isUserPlayingSounds(closure_0) {
+  const value = map2.get(closure_0);
+  let tmp2 = null != value;
+  if (tmp2) {
+    tmp2 = value > 0;
+  }
+  return tmp2;
+};
+prototype["isPlayingSound"] = function isPlayingSound(soundId) {
+  return null != map1.get(soundId);
+};
+prototype["isFavoriteSound"] = function isFavoriteSound(soundId) {
+  return set1.has(soundId);
+};
+prototype["getFavorites"] = function getFavorites() {
+  return set1;
+};
+prototype["getFrequentlyUsedSoundIds"] = function getFrequentlyUsedSoundIds() {
+  return tmp7.frequently;
+};
+prototype["hasPendingUsage"] = function hasPendingUsage() {
+  return arr.length > 0;
+};
+Object.defineProperty(prototype, "playedSoundFrecencyWithoutFetchingLatest", {
+  get: function playedSoundFrecencyWithoutFetchingLatest() {
+    return closure_18;
+  },
+  set: undefined
+});
+prototype["isLocalSoundboardMuted"] = function isLocalSoundboardMuted(id) {
+  return set.has(id);
+};
+prototype["isSoundboardVolumeMuted"] = function isSoundboardVolumeMuted() {
+  return c21;
+};
+prototype["hasHadOtherUserPlaySoundInSession"] = function hasHadOtherUserPlaySoundInSession() {
+  return c20;
+};
+prototype["hasFetchedAllSounds"] = function hasFetchedAllSounds() {
+  let tmp2 = closure_14 === obj.FETCHED;
+  if (tmp2) {
+    tmp2 = closure_13 === tmp.FETCHED;
+  }
+  return tmp2;
+};
+prototype["isFetchingAnySounds"] = function isFetchingAnySounds() {
+  let tmp2 = closure_14 === obj.FETCHING;
+  if (!tmp2) {
+    tmp2 = closure_13 === tmp.FETCHING;
+  }
+  return tmp2;
+};
+SoundboardStore.displayName = "SoundboardStore";
 obj = {
   LOGOUT: function handleReset() {
-    let closure_18;
-    let closure_19;
+    let closure_13;
+    let closure_14;
     map.clear();
     map1.clear();
     map2.clear();
-    let c25 = false;
-    ({ NOT_FETCHED: closure_19, NOT_FETCHED: closure_18 } = obj);
-    let c26 = false;
-    let closure_24 = [];
-    importDefaultResult.overwriteHistory({});
+    let c20 = false;
+    ({ NOT_FETCHED: closure_14, NOT_FETCHED: closure_13 } = obj);
+    let c21 = false;
+    let closure_19 = [];
+    tmp7.overwriteHistory({});
   },
   GUILD_SOUNDBOARD_FETCH: function handleSoundboardFetch() {
     const FETCHING = obj.FETCHING;
@@ -449,7 +264,7 @@ obj = {
     ({ soundId: require, guildId } = arg0);
     const value = map.get(guildId);
     let findIndexResult;
-    if (null != value) {
+    if (value != null) {
       findIndexResult = value.findIndex((soundId) => soundId.soundId === closure_0);
     }
     let tmp2 = null == value || null == findIndexResult;
@@ -467,54 +282,50 @@ obj = {
     let soundId;
     let userId;
     ({ soundId, userId } = arg0);
-    let value = map1.get(soundId);
-    let num = 0;
-    if (null != value) {
-      num = value;
+    let num = map1.get(soundId);
+    if (num == null) {
+      num = 0;
     }
     const sum = num + 1;
-    value = map2.get(userId);
-    let num2 = 0;
-    if (null != value) {
-      num2 = value;
+    let num2 = map2.get(userId);
+    if (num2 == null) {
+      num2 = 0;
     }
     const sum1 = num2 + 1;
     const result = map1.set(soundId, sum);
     const result1 = map2.set(userId, sum1);
     currentUser = currentUser.getCurrentUser();
     let id;
-    if (null != currentUser) {
+    if (currentUser != null) {
       id = currentUser.id;
     }
     if (userId !== id) {
-      let c25 = true;
+      let c20 = true;
     }
   },
   GUILD_SOUNDBOARD_SOUND_PLAY_END: function handleSoundPlayEnd(arg0) {
     let soundId;
     let userId;
     ({ soundId, userId } = arg0);
-    let value = map1.get(soundId);
-    let num = 0;
-    if (null != value) {
-      num = value;
+    let num = map1.get(soundId);
+    if (num == null) {
+      num = 0;
     }
     const diff = num - 1;
-    value = map2.get(userId);
-    let num2 = 0;
-    if (null != value) {
-      num2 = value;
+    let num2 = map2.get(userId);
+    if (num2 == null) {
+      num2 = 0;
     }
     const diff1 = num2 - 1;
     if (diff <= 0) {
-      map1.delete(soundId);
+      obj.delete(soundId);
     } else {
-      const result = map1.set(soundId, diff);
+      const result = obj.set(soundId, diff);
     }
     if (diff1 <= 0) {
-      map2.delete(userId);
+      obj2.delete(userId);
     } else {
-      const result1 = map2.set(userId, diff1);
+      const result1 = obj2.set(userId, diff1);
     }
   },
   GUILD_SOUNDBOARD_SOUNDS_UPDATE: function handleSoundsUpdate(guildId) {
@@ -522,17 +333,17 @@ obj = {
   },
   USER_SOUNDBOARD_SET_VOLUME: function handleSetLocalVolume(volume) {
     volume = volume.volume;
-    let closure_26 = 0 === volume;
-    lib(volume, volume.location);
-    if (closure_26 !== closure_26) {
-      lib.flush();
+    let closure_21 = 0 === volume;
+    callback2(volume, volume.location);
+    if (closure_21 !== closure_21) {
+      callback2.flush();
     }
   },
   SOUNDBOARD_TRACK_USAGE: function handleTrackUsage(soundId) {
     soundId = soundId.soundId;
-    importDefaultResult.track(soundId);
+    tmp7.track(soundId);
     const obj = { key: soundId, timestamp: Date.now() };
-    importDefaultResult.compute();
+    tmp7.compute();
   },
   VOICE_CHANNEL_SELECT: function handleVoiceChannelSelect() {
     map1.clear();
@@ -543,44 +354,48 @@ obj = {
     let type;
     ({ type, proto } = settings.settings);
     if (UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS === type) {
-      let _Set = Set;
       let soundIds;
-      if (null != proto) {
+      if (proto != null) {
         const favoriteSoundboardSounds = proto.favoriteSoundboardSounds;
-        if (null != favoriteSoundboardSounds) {
+        if (favoriteSoundboardSounds != null) {
           soundIds = favoriteSoundboardSounds.soundIds;
         }
       }
-      if (null == soundIds) {
+      if (soundIds == null) {
         soundIds = [];
       }
-      const prototype = _Set.prototype;
-      _Set = new _Set(soundIds);
+      const set = new Set(soundIds);
       if (tmp) {
-        let closure_24 = [];
+        let closure_19 = [];
       }
       let playedSoundFrecency;
-      if (null != proto) {
+      if (proto != null) {
         playedSoundFrecency = proto.playedSoundFrecency;
       }
       if (null != playedSoundFrecency) {
         let playedSounds = proto.playedSoundFrecency.playedSounds;
-        if (null == playedSounds) {
+        if (playedSounds == null) {
           playedSounds = {};
         }
-        importDefaultResult.overwriteHistory(importDefault(22).mapValues(playedSounds, (recentUses) => {
+        tmp7.overwriteHistory(importDefault(12).mapValues(playedSounds, (recentUses) => {
           const obj = {};
           const merged = Object.assign(recentUses);
           recentUses = recentUses.recentUses;
           const mapped = recentUses.map(Number);
-          obj["recentUses"] = mapped.filter((arg0) => arg0 > 0);
+          obj.recentUses = mapped.filter((arg0) => arg0 > 0);
           return obj;
-        }), closure_24);
-        let obj = importDefault(22);
+        }), closure_19);
+        let obj = importDefault(12);
       }
-    } else if (UserSettingsTypes.PRELOADED_USER_SETTINGS === type) {
+    } else if (tmp2.PRELOADED_USER_SETTINGS === type) {
       syncLocalSoundboardMutesFromUserSettings(proto);
-      syncIsSoundboardVolumeMutedFromUserSettings();
+      const SoundboardSettings = require(3862) /* explicitContentFromProto */.SoundboardSettings;
+      const setting = SoundboardSettings.getSetting();
+      let volume;
+      if (setting != null) {
+        volume = setting.volume;
+      }
+      let closure_21 = 0 === volume;
     }
   },
   SOUNDBOARD_FETCH_DEFAULT_SOUNDS: function handleFetchDefaultSounds() {
@@ -593,7 +408,7 @@ obj = {
   SOUNDBOARD_SOUNDS_RECEIVED: function handleSoundboardSoundsReceived(updates) {
     updates = updates.updates;
     const item = updates.forEach((guildId) => {
-      const result = outer1_15.set(guildId.guildId, guildId.sounds);
+      const result = closure_10.set(guildId.guildId, guildId.sounds);
     });
     const FETCHED = obj.FETCHED;
   },
@@ -610,13 +425,13 @@ obj = {
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(soundboardStoreState) {
     soundboardStoreState = soundboardStoreState.soundboardStoreState;
-    const map = new Map(importDefault(21).entries(soundboardStoreState.soundboardSounds));
+    const map = new Map(importDefault(11).entries(soundboardStoreState.soundboardSounds));
     const set = new Set(soundboardStoreState.favoritedSoundIds);
     const set1 = new Set(soundboardStoreState.localSoundboardMutes);
   }
 };
-tmp9 = new tmp9(require("dispatcher"), obj);
+const soundboardStore = new SoundboardStore(require("dispatcher"), obj);
 let result = set.fileFinishedImporting("modules/soundboard/SoundboardStore.tsx");
 
-export default tmp9;
+export default soundboardStore;
 export const FetchState = obj;

@@ -1,42 +1,39 @@
-// Module ID: 4000
-// Function ID: 32939
-// Name: isPseudoGuildId
-// Dependencies: [654, 1355, 2, 4001]
-// Exports: isValidChannelId, isValidGuildId
+// Module ID: 4024
+// Function ID: 4025
+// Name: RouteParam
+// Dependencies: [677, 1379, 2, 4025]
+// Exports: isPseudoGuildId, isValidChannelId, isValidGuildId
 
-// Module 4000 (isPseudoGuildId)
-import { PSEUDO_GUILD_IDS } from "APP_WITH_INVITE_AND_GUILD_ONBOARDING";
+// Module 4024 (RouteParam)
+import { PSEUDO_GUILD_IDS } from "INVITE";
 import { isStaticChannelRoute } from "set";
 
-function isPseudoGuildId(stateFromStores) {
-  return PSEUDO_GUILD_IDS.includes(stateFromStores);
-}
 const re2 = /^\d+$/;
 const result = require("set").fileFinishedImporting("modules/routing/RouteUtils.tsx");
 
-export const RouteParam = require("paramPattern").RouteParam;
-export { isPseudoGuildId };
+export const RouteParam = require("RouteParam").RouteParam;
+export const isPseudoGuildId = function isPseudoGuildId(stateFromStores) {
+  return PSEUDO_GUILD_IDS.includes(stateFromStores);
+};
 export const isValidGuildId = function isValidGuildId(guildId) {
   let tmp = null != guildId;
   if (tmp) {
-    const tmp3 = !isPseudoGuildId(guildId);
-    let isMatch = !tmp3;
-    if (tmp3) {
-      isMatch = regex.test(guildId);
+    let hasItem = PSEUDO_GUILD_IDS.includes(guildId);
+    if (!hasItem) {
+      hasItem = regex.test(guildId);
     }
-    tmp = isMatch;
+    tmp = hasItem;
   }
   return tmp;
 };
 export const isValidChannelId = function isValidChannelId(channelId) {
   let tmp = null == channelId;
   if (!tmp) {
-    const tmp3 = !regex.test(channelId);
-    let tmp4 = !tmp3;
-    if (tmp3) {
-      tmp4 = isStaticChannelRoute(channelId);
+    let isMatch = regex.test(channelId);
+    if (!isMatch) {
+      isMatch = isStaticChannelRoute(channelId);
     }
-    tmp = tmp4;
+    tmp = isMatch;
   }
   return tmp;
 };

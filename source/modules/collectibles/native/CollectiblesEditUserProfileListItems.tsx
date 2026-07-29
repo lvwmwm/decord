@@ -1,19 +1,19 @@
-// Module ID: 7939
-// Function ID: 63067
+// Module ID: 7964
+// Function ID: 7965
 // Name: EditCollectibleListItem
-// Dependencies: [31, 27, 1850, 655, 33, 4165, 689, 4695, 4134, 4135, 1273, 7940, 4161, 1212, 5497, 5779, 4133, 7941, 7942, 566, 3811, 7930, 5792, 2]
+// Dependencies: [19, 17, 1874, 678, 21, 4189, 712, 4717, 4158, 4159, 1297, 7965, 4185, 1236, 5515, 5797, 4157, 7966, 7967, 589, 3835, 7955, 5810, 2]
 // Exports: EditCollectiblesListItemNone, EditCollectiblesListItemProduct, EditCollectiblesListItemShop
 
-// Module 7939 (EditCollectibleListItem)
-import result from "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 7964 (EditCollectibleListItem)
+import initialize from "initialize";
+import { View } from "registerAsset";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { CollectiblesMobileShopScreen as closure_6 } from "items";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "useCollectiblesData";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 class EditCollectibleListItem {
   constructor(arg0) {
@@ -22,7 +22,7 @@ class EditCollectibleListItem {
     if (accessibilityRole === undefined) {
       accessibilityRole = "button";
     }
-    tmp = c9();
+    tmp = jsxs();
     tmp2 = jsx;
     obj = {
       style: tmp.pressable,
@@ -31,75 +31,73 @@ class EditCollectibleListItem {
             const result = outer1_0(outer1_2[8]).triggerHapticFeedback(outer1_1(outer1_2[9]).IMPACT_LIGHT);
             callback();
           },
-      onLongPress
+      onLongPress,
+      accessibilityRole,
+      accessibilityLabel,
+      accessibilityState: { selected: isSelected },
+      children: null
     };
-    obj.accessibilityRole = accessibilityRole;
-    obj.accessibilityLabel = accessibilityLabel;
-    obj.accessibilityState = { selected: isSelected };
-    obj = {};
     items = [, , , ];
     items[0] = tmp.item;
     selected = null;
-    tmp3 = jsx;
-    tmp4 = View;
+    tmp3 = View;
     if (isSelected) {
       selected = tmp.selected;
     }
     items[1] = selected;
     items[2] = { width: size, height: size };
     items[3] = style;
-    obj.style = items;
-    obj.children = children;
-    obj.children = tmp3(tmp4, obj);
+    obj[7] = tmp2(tmp3, { style: items, children });
     return tmp2(require("PressableBase").PressableOpacity, obj);
   }
 }
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginTop: 10, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.pressable = _createForOfIteratorHelperLoose;
-let obj1 = { borderWidth: 2, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, alignItems: "center", justifyContent: "center" };
-_createForOfIteratorHelperLoose.item = obj1;
-_createForOfIteratorHelperLoose.selected = { borderColor: require("_createForOfIteratorHelperLoose").colors.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE };
-_createForOfIteratorHelperLoose.optionCell = { justifyContent: "center", alignItems: "center" };
-_createForOfIteratorHelperLoose.optionCellText = { marginTop: 4 };
-_createForOfIteratorHelperLoose.newIcon = { position: "absolute", top: -12, right: 5 };
-_createForOfIteratorHelperLoose.lockIcon = { position: "absolute", top: -12, right: -10 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj2 = { borderColor: require("_createForOfIteratorHelperLoose").colors.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/collectibles/native/CollectiblesEditUserProfileListItems.tsx");
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+createCacheKey = { pressable: null, item: null, selected: null, optionCell: null, optionCellText: null, newIcon: null, lockIcon: null };
+createCacheKey = { marginTop: 10, borderRadius: require("Themes").radii.sm };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { borderWidth: 2, borderColor: require("Themes").colors.BORDER_SUBTLE, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, alignItems: "center", justifyContent: "center" };
+let obj1 = { borderWidth: 2, borderColor: require("Themes").colors.BORDER_SUBTLE, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, alignItems: "center", justifyContent: "center" };
+createCacheKey[2] = { borderColor: require("Themes").colors.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE };
+createCacheKey[3] = { justifyContent: "center", alignItems: "center" };
+createCacheKey[4] = { marginTop: 4 };
+createCacheKey[5] = { position: "absolute", top: -12, right: 5 };
+createCacheKey[6] = { position: "absolute", top: -12, right: -10 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj2 = { borderColor: require("Themes").colors.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE };
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/collectibles/native/CollectiblesEditUserProfileListItems.tsx");
 
 export { EditCollectibleListItem };
 export const EditCollectiblesListItemNone = function EditCollectiblesListItemNone(asDefault) {
-  const tmp = _createForOfIteratorHelperLoose();
+  const tmp = createCacheKey();
   let obj = { style: tmp.optionCell };
   const merged = Object.assign(asDefault);
-  obj = { source: importDefault(7940), size: require(1273) /* Button */.IconSizes.LARGE };
-  const items = [callback(require(1273) /* Button */.Icon, obj), ];
-  obj = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp.optionCellText };
-  const intl = require(1212) /* getSystemLocale */.intl;
+  obj = { source: null, size: null };
+  obj[0] = importDefault(7965);
+  obj[1] = require(1297) /* Button */.IconSizes.LARGE;
+  const items = [callback(require(1297) /* Button */.Icon, obj), ];
+  obj = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp.optionCellText, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
   const string = intl.string;
-  const t = require(1212) /* getSystemLocale */.t;
+  const t = require(1236) /* getSystemLocale */.t;
   if (asDefault.asDefault) {
     let stringResult = string(t.CHf9iJ);
   } else {
     stringResult = string(t.PoWNfe);
   }
-  obj.children = stringResult;
-  items[1] = callback(require(4161) /* Text */.Text, obj);
-  obj["children"] = items;
+  obj[3] = stringResult;
+  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj.children = items;
   return closure_8(EditCollectibleListItem, obj);
 };
 export const EditCollectiblesListItemShop = function EditCollectiblesListItemShop(analyticsSource) {
   analyticsSource = analyticsSource.analyticsSource;
-  let obj = Object.create(null);
-  obj.analyticsSource = 0;
-  const merged = Object.assign(analyticsSource, obj);
-  const tmp3 = _createForOfIteratorHelperLoose();
-  analyticsLocations = analyticsLocations(5497)(analyticsSource).analyticsLocations;
+  const merged = Object.assign(analyticsSource, Object.create(null));
+  let analyticsLocations;
+  const tmp2 = createCacheKey();
+  analyticsLocations = analyticsLocations(5515)(analyticsSource).analyticsLocations;
   const items = [analyticsLocations, analyticsSource];
-  obj = {
-    style: tmp3.optionCell,
+  let obj = {
+    style: tmp2.optionCell,
     isSelected: false,
     onPress: React.useCallback(() => {
       let obj = analyticsSource(outer1_2[15]);
@@ -109,63 +107,69 @@ export const EditCollectiblesListItemShop = function EditCollectiblesListItemSho
     }, items)
   };
   const merged1 = Object.assign(merged);
-  obj = { source: analyticsLocations(7941), size: analyticsSource(1273).IconSizes.LARGE };
-  const items1 = [callback(analyticsSource(1273).Icon, obj), , ];
-  const obj1 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp3.optionCellText };
-  const intl = analyticsSource(1212).intl;
-  obj1.children = intl.string(analyticsSource(1212).t.pWG4ze);
-  items1[1] = callback(analyticsSource(4161).Text, obj1);
-  items1[2] = callback(analyticsSource(7942).NewBadge, { style: tmp3.newIcon });
-  obj["children"] = items1;
+  obj = { source: null, size: null };
+  obj[0] = analyticsLocations(7966);
+  obj[1] = analyticsSource(1297).IconSizes.LARGE;
+  const items1 = [callback(analyticsSource(1297).Icon, obj), , ];
+  obj = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp2.optionCellText, children: null };
+  const intl = analyticsSource(1236).intl;
+  obj[3] = intl.string(analyticsSource(1236).t.pWG4ze);
+  items1[1] = callback(analyticsSource(4185).Text, obj);
+  items1[2] = callback(analyticsSource(7967).NewBadge, { style: tmp2.newIcon });
+  obj.children = items1;
   return callback2(EditCollectibleListItem, obj);
 };
 export const EditCollectiblesListItemProduct = function EditCollectiblesListItemProduct(skuId) {
   let children;
   let isSelected;
   let isTryItOut;
+  let product;
+  let purchase;
   skuId = skuId.skuId;
-  let obj = { isSelected: 0, isTryItOut: 0, skuId: 0, children: 0 };
   ({ isSelected, isTryItOut, children } = skuId);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(skuId, obj);
-  const tmp3 = _createForOfIteratorHelperLoose();
-  let obj1 = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj1.useStateFromStores(items, () => outer1_5.getCurrentUser());
-  const obj3 = importDefault(3811);
-  const tmp6 = importDefault(7930)(skuId);
-  const purchase = tmp6.purchase;
-  const canUseCollectiblesResult = importDefault(3811).canUseCollectibles(stateFromStores);
-  const isProductNewResult = require(5792) /* getPriceForCollectiblesProduct */.isProductNew(skuId);
-  const obj4 = require(5792) /* getPriceForCollectiblesProduct */;
-  let result = require(5792) /* getPriceForCollectiblesProduct */.isPremiumCollectiblesProduct(tmp6.product);
+  const merged = Object.assign(skuId, Object.create(null));
+  const tmp2 = createCacheKey();
+  let obj = require(589) /* initialize */;
+  const items = [mergeGuildAvatar];
+  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  let obj1 = importDefault(3835);
+  const canUseCollectiblesResult = obj1.canUseCollectibles(stateFromStores);
+  ({ purchase, product } = importDefault(7955)(skuId));
+  const tmp7 = importDefault(7955)(skuId);
+  const isProductNewResult = require(5810) /* getItemRecordsFromPurchases */.isProductNew(skuId);
+  const obj3 = require(5810) /* getItemRecordsFromPurchases */;
+  let result = require(5810) /* getItemRecordsFromPurchases */.isPremiumCollectiblesProduct(product);
   if (!result) {
-    result = require(5792) /* getPriceForCollectiblesProduct */.isPremiumCollectiblesPurchase(purchase);
-    const obj6 = require(5792) /* getPriceForCollectiblesProduct */;
+    result = tmp3(5810).isPremiumCollectiblesPurchase(purchase);
+    const tmp3Result = tmp3(5810);
   }
   obj = { isSelected };
   const merged1 = Object.assign(merged);
   const items1 = [children, ];
   if (null == purchase) {
     if (!result) {
-      obj = { style: tmp3.lockIcon, isNew: isProductNewResult };
-      let tmp17 = callback(require(7942) /* NewBadge */.LockBadge, obj);
+      obj = { style: null, isNew: null };
+      obj[0] = tmp2.lockIcon;
+      obj[1] = isProductNewResult;
+      let tmp14 = callback(tmp3(7967).LockBadge, obj);
     }
-    items1[1] = tmp17;
-    obj["children"] = items1;
+    items1[1] = tmp14;
+    obj.children = items1;
     return closure_8(EditCollectibleListItem, obj);
   }
-  let tmp18 = null;
+  let tmp15 = null;
   if (result) {
-    tmp18 = null;
+    tmp15 = null;
     if (!isTryItOut) {
       if (null == purchase) {
-        obj1 = { style: tmp3.lockIcon, isNew: isProductNewResult };
-        tmp18 = callback(require(7942) /* NewBadge */.PremiumBadge, obj1);
+        obj1 = { style: null, isNew: null };
+        obj1[0] = tmp2.lockIcon;
+        obj1[1] = isProductNewResult;
+        tmp15 = callback(tmp3(7967).PremiumBadge, obj1);
       } else {
-        tmp18 = null;
+        tmp15 = null;
       }
     }
   }
-  tmp17 = tmp18;
+  tmp14 = tmp15;
 };

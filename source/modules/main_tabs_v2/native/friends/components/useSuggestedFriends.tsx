@@ -1,59 +1,53 @@
-// Module ID: 15016
-// Function ID: 114307
+// Module ID: 15043
+// Function ID: 15044
 // Name: useSuggestedFriends
-// Dependencies: [57, 31, 5929, 11765, 624, 22, 4004, 2]
+// Dependencies: [32, 19, 5948, 11790, 647, 12, 4028, 2]
 // Exports: default
 
-// Module 15016 (useSuggestedFriends)
+// Module 15043 (useSuggestedFriends)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import initialize from "initialize";
 import { SuggestedFriendSource } from "SuggestedFriendSource";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/friends/components/useSuggestedFriends.tsx");
+const result = require("initialize").fileFinishedImporting("modules/main_tabs_v2/native/friends/components/useSuggestedFriends.tsx");
 
 export default function useSuggestedFriends(arg0) {
   let obj = arg0;
-  if (null == arg0) {
+  if (arg0 == null) {
     obj = {};
   }
-  const isConnected = obj.isConnected;
-  const items = [_isNativeReflectConstruct];
-  stateFromStoresArray = stateFromStoresArray(624).useStateFromStoresArray(items, () => outer1_5.getSuggestions());
-  let tmp = callback(React.useState([]), 2);
+  let flag = obj.isConnected;
+  const items = [initialize];
+  stateFromStoresArray = stateFromStoresArray(flag[4]).useStateFromStoresArray(items, () => suggestions.getSuggestions());
+  const tmp = callback(React.useState([]), 2);
   const first = tmp[0];
-  let tmp3 = null == isConnected;
-  if (!tmp3) {
-    tmp3 = isConnected;
+  if (flag == null) {
+    flag = true;
   }
-  const dependencyMap = tmp3;
-  const items1 = [first, stateFromStoresArray, tmp3];
+  const items1 = [first, stateFromStoresArray, flag];
   const memo = React.useMemo(() => {
-    if (tmp3) {
-      const found = first.filter((source) => source.source === outer2_6.USER_SUGGESTIONS);
+    if (flag) {
+      const found = first.filter((source) => source.source === constants.USER_SUGGESTIONS);
       const mapped = stateFromStoresArray.map((user) => {
-        const obj = { user: user.user };
+        const obj = { user: user.user, friendSuggestionName: null, source: null, contactNames: null };
         const name = user.name;
-        let tmp;
-        if (null != name) {
-          tmp = name;
-        }
-        obj.friendSuggestionName = tmp;
-        obj.source = outer2_6.USER_SUGGESTIONS;
-        obj.contactNames = user.contactNames;
+        obj[1] = name;
+        obj[2] = constants.USER_SUGGESTIONS;
+        obj[3] = user.contactNames;
         return obj;
       });
-      let obj = first(stateFromStoresArray[5]);
-      return first(stateFromStoresArray[5]).unionBy(found, mapped, (user) => user.user.id).sort((user, user2) => {
-        const name = first(4004).getName(user.user);
-        const obj = first(4004);
-        return name.localeCompare(first(4004).getName(user2.user));
+      let obj = first(flag[5]);
+      return first(flag[5]).unionBy(found, mapped, (user) => user.user.id).sort((user, user2) => {
+        const name = callback(4028).getName(user.user);
+        const obj = callback(4028);
+        return name.localeCompare(callback(4028).getName(user2.user));
       });
     } else {
       return [];
     }
   }, items1);
-  obj = { added: first, setAdded: tmp[1], friendSuggestions: memo, numFriendSuggestions: tmp3 ? memo.length : stateFromStoresArray.length };
+  obj = { added: first, setAdded: tmp[1], friendSuggestions: memo, numFriendSuggestions: flag ? memo.length : stateFromStoresArray.length };
   return obj;
 };

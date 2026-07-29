@@ -1,11 +1,11 @@
-// Module ID: 8920
-// Function ID: 70356
+// Module ID: 8944
+// Function ID: 8945
 // Name: XboxLinkDiscordConsent
-// Dependencies: [31, 8909, 653, 8921, 33, 1456, 8922, 8950, 2]
+// Dependencies: [19, 8933, 676, 8945, 21, 1480, 8946, 8974, 2]
 // Exports: default
 
-// Module 8920 (XboxLinkDiscordConsent)
-import result from "result";
+// Module 8944 (XboxLinkDiscordConsent)
+import noop from "noop";
 import { XboxLinkModalScenes } from "XboxLinkModalScenes";
 import { PlatformTypes } from "ME";
 import { XBOX_CLIENT_SCOPES } from "XBOX_URL_BASE";
@@ -17,8 +17,9 @@ const result = require("ME").fileFinishedImporting("modules/user_settings/connec
 export default function XboxLinkDiscordConsent(arg0) {
   let callbackCode;
   let callbackState;
+  let navigation;
   ({ callbackCode, callbackState } = arg0);
-  let obj = navigation(1456);
+  let obj = navigation(1480);
   navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
@@ -28,6 +29,10 @@ export default function XboxLinkDiscordConsent(arg0) {
   const callback1 = React.useCallback(() => {
     navigation.push(outer1_3.ERROR);
   }, items1);
-  obj = { platformType: PlatformTypes.XBOX, callbackCode, callbackState, clientId: navigation(8950).ConsoleOAuthApplications.XBOX_APPLICATION_ID, scopes: XBOX_CLIENT_SCOPES, onNext: callback, onError: callback1 };
-  return jsx(navigation(8922).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.XBOX, callbackCode, callbackState, clientId: navigation(8950).ConsoleOAuthApplications.XBOX_APPLICATION_ID, scopes: XBOX_CLIENT_SCOPES, onNext: callback, onError: callback1 });
+  obj = { platformType: PlatformTypes.XBOX, callbackCode, callbackState, clientId: null, scopes: null, onNext: null, onError: null };
+  obj[3] = navigation(8974).ConsoleOAuthApplications.XBOX_APPLICATION_ID;
+  obj[4] = XBOX_CLIENT_SCOPES;
+  obj[5] = callback;
+  obj[6] = callback1;
+  return jsx(navigation(8946).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.XBOX, callbackCode, callbackState, clientId: null, scopes: null, onNext: null, onError: null });
 };

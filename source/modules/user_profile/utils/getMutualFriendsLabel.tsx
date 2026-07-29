@@ -1,28 +1,28 @@
-// Module ID: 11680
-// Function ID: 90510
+// Module ID: 11704
+// Function ID: 11705
 // Name: getMutualFriendsLabel
-// Dependencies: [1212, 2]
+// Dependencies: [1236, 2]
 // Exports: default
 
-// Module 11680 (getMutualFriendsLabel)
+// Module 11704 (getMutualFriendsLabel)
 const result = require("set").fileFinishedImporting("modules/user_profile/utils/getMutualFriendsLabel.tsx");
 
 export default function getMutualFriendsLabel(arg0) {
+  let str = arg0;
   if (undefined === arg0) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    let stringResult = intl3.string(require(1212) /* getSystemLocale */.t["0mTJ3j"]);
-  } else if (0 === arg0) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    stringResult = intl2.string(require(1212) /* getSystemLocale */.t.n9g3ay);
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    let stringResult = intl3.string(require(1236) /* getSystemLocale */.t["0mTJ3j"]);
+  } else if (0 === str) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    stringResult = intl2.string(require(1236) /* getSystemLocale */.t.n9g3ay);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    const obj = {};
-    let str = "";
-    if (null != arg0) {
-      str = arg0;
+    const intl = require(1236) /* getSystemLocale */.intl;
+    if (str == null) {
+      str = "";
     }
-    obj.count = str;
-    stringResult = intl.formatToPlainString(require(1212) /* getSystemLocale */.t["5s9jl+"], obj);
+    const obj = { count: null };
+    obj[0] = str;
+    stringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t["5s9jl+"], obj);
   }
   return stringResult;
 };

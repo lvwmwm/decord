@@ -1,11 +1,11 @@
-// Module ID: 13716
-// Function ID: 105189
+// Module ID: 13737
+// Function ID: 13738
 // Name: UserProfileLegacyUsernameSwitch
-// Dependencies: [31, 33, 3838, 13696, 1212, 9202, 7916, 2]
+// Dependencies: [19, 21, 3862, 13717, 1236, 9226, 7941, 2]
 // Exports: default
 
-// Module 13716 (UserProfileLegacyUsernameSwitch)
-import "result";
+// Module 13737 (UserProfileLegacyUsernameSwitch)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -13,26 +13,28 @@ let result = require("explicitContentFromProto").fileFinishedImporting("modules/
 
 export default function UserProfileLegacyUsernameSwitch(username) {
   const pendingLegacyUsernameDisabled = username.pendingLegacyUsernameDisabled;
-  const LegacyUsernameDisabled = setting(3838).LegacyUsernameDisabled;
+  let setting;
+  const LegacyUsernameDisabled = setting(3862).LegacyUsernameDisabled;
   setting = LegacyUsernameDisabled.useSetting();
-  let tmp2 = setting;
+  let tmp4 = setting;
   if (undefined !== pendingLegacyUsernameDisabled) {
-    tmp2 = pendingLegacyUsernameDisabled;
+    tmp4 = pendingLegacyUsernameDisabled;
   }
-  let obj = { value: !tmp2 };
-  const intl = setting(1212).intl;
-  obj.label = intl.string(setting(1212).t["3cWDuO"]);
-  const intl2 = setting(1212).intl;
-  obj.subLabel = intl2.formatToPlainString(setting(1212).t.aYhclf, { username: username.legacyUsername });
-  obj.onValueChange = function onValueChange(arg0) {
+  let obj = { value: !tmp4, label: null, subLabel: null, onValueChange: null };
+  const intl = tmp(1236).intl;
+  obj[1] = intl.string(setting(1236).t["3cWDuO"]);
+  const intl2 = tmp(1236).intl;
+  obj[2] = intl2.formatToPlainString(setting(1236).t.aYhclf, { username: username.legacyUsername });
+  obj[3] = function onValueChange(arg0) {
     if (!arg0 === setting) {
       const result = setting(outer1_1[5]).resetPendingLegacyUsernameDisabled();
       const obj3 = setting(outer1_1[5]);
     } else {
       let obj = setting(outer1_1[6]);
-      obj = { legacyUsernameDisabled: !arg0 };
+      obj = { legacyUsernameDisabled: null };
+      obj[0] = !arg0;
       obj.setPendingChanges(obj);
     }
   };
-  return jsx(setting(13696).UserProfileEditFormSwitch, { value: !tmp2 });
+  return jsx(setting(13717).UserProfileEditFormSwitch, { value: !tmp4, label: null, subLabel: null, onValueChange: null });
 };

@@ -1,17 +1,17 @@
-// Module ID: 9778
-// Function ID: 75973
+// Module ID: 9800
+// Function ID: 9801
 // Name: useOpenProfileSettings
-// Dependencies: [31, 1850, 9779, 653, 662, 7913, 9780, 9781, 6590, 2]
+// Dependencies: [19, 1874, 9801, 676, 685, 7938, 9802, 9803, 6611, 2]
 // Exports: default
 
-// Module 9778 (useOpenProfileSettings)
-import "_isNativeReflectConstruct";
+// Module 9800 (useOpenProfileSettings)
+import "mergeGuildAvatar";
 import zustandStore from "zustandStore";
 import { UserSettingsSections } from "ME";
 import { ProfileCustomizationSubsection as closure_5 } from "MAX_FAVORITES";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import handleFormOpen from "handleFormOpen";
 
-require("result").useCallback;
+require("noop").useCallback;
 const result = require("zustandStore").fileFinishedImporting("modules/profile_customization/useOpenProfileSettings.tsx");
 
 export default function useOpenProfileSettings() {
@@ -25,16 +25,14 @@ export default function useOpenProfileSettings() {
   return useCallback(() => {
     if (null != guild) {
       let obj = guild(scrollPosition[7]);
-      const guildIdentitySettings = obj.initGuildIdentitySettings(guild.id);
+      const guildIdentitySettings = obj.initGuildIdentitySettings(tmp.id);
     }
-    obj = {};
     if (null != guild) {
       let USER_PROFILE = outer1_5.GUILD;
     } else {
       USER_PROFILE = outer1_5.USER_PROFILE;
     }
-    obj.subsection = USER_PROFILE;
-    obj.scrollPosition = scrollPosition;
+    obj = { subsection: USER_PROFILE, scrollPosition };
     outer1_3.setState(obj);
     obj = { screen: outer1_4.PROFILE_CUSTOMIZATION };
     guild(scrollPosition[8]).openUserSettings(obj);

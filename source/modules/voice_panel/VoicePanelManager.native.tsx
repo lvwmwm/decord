@@ -1,38 +1,42 @@
-// Module ID: 16605
-// Function ID: 129251
-// Name: _isNativeReflectConstruct
-// Dependencies: [7, 6, 15, 17, 18, 4237, 4377, 5112, 2]
+// Module ID: 16640
+// Function ID: 16641
+// Name: prototype
+// Dependencies: [4261, 4400, 5134, 2]
 
-// Module 16605 (_isNativeReflectConstruct)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
+// Module 16640 (prototype)
+import createRTCConnection from "createRTCConnection";
 import withEqualityFn from "withEqualityFn";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "withEqualityFn";
-import tmp2 from "AutomaticLifecycleManager";
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let AutomaticLifecycleManager = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return AutomaticLifecycleManager;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function checkChannelOpened() {
-  channelId = channelId.getChannelId();
-  if (null != channelId) {
-    state = state.getState();
-    const channels = state.channels;
-    if (!channels.has(channelId)) {
-      state.openChannel(channelId);
+let prototype = function VoicePanelManager() {
+  const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+  applyArgumentsResult.actions = {
+    VOICE_CHANNEL_SELECT() {
+      const channelId = store.getChannelId();
+      if (null != channelId) {
+        const state = store2.getState();
+        const channels = state.channels;
+        if (!channels.has(channelId)) {
+          state.openChannel(channelId);
+        }
+      }
+    },
+    RTC_CONNECTION_STATE() {
+      const channelId = store.getChannelId();
+      if (null != channelId) {
+        const state = store2.getState();
+        const channels = state.channels;
+        if (!channels.has(channelId)) {
+          state.openChannel(channelId);
+        }
+      }
     }
-  }
+  };
+  return applyArgumentsResult;
+}.prototype;
+class prototype extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/voice_panel/VoicePanelManager.native.tsx");
+prototype = new prototype();
+const result = require("initialize").fileFinishedImporting("modules/voice_panel/VoicePanelManager.native.tsx");
 
-export default tmp2;
+export default prototype;

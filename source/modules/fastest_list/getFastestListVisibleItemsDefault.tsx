@@ -1,10 +1,10 @@
-// Module ID: 9229
-// Function ID: 72192
+// Module ID: 9253
+// Function ID: 9254
 // Name: getFastestListVisibleItemsDefault
 // Dependencies: [2]
 // Exports: default
 
-// Module 9229 (getFastestListVisibleItemsDefault)
+// Module 9253 (getFastestListVisibleItemsDefault)
 const result = require("set").fileFinishedImporting("modules/fastest_list/getFastestListVisibleItemsDefault.tsx");
 
 export default function getFastestListVisibleItemsDefault(arg0) {
@@ -21,50 +21,51 @@ export default function getFastestListVisibleItemsDefault(arg0) {
   if (listHeaderSize >= estimatedListSize) {
     return obj;
   } else {
-    let num3 = 0;
+    let num2 = 0;
     if (0 < sections.length) {
       while (true) {
+        let tmp4 = num2;
+        let tmp5 = listHeaderSize;
         let sum2 = listHeaderSize;
-        if (0 !== sections[num3]) {
-          obj.sectionEnd = num3;
+        if (0 !== sections[num2]) {
+          obj.sectionEnd = num2;
           obj.itemEnd = 0;
-          let sum = listHeaderSize + (tmp3 ? sectionHeaderSizes[0] : sectionHeaderSizes[num3]);
+          let sum = listHeaderSize + (tmp3 ? sectionHeaderSizes[0] : sectionHeaderSizes[num2]);
           if (sum >= estimatedListSize) {
             break;
           } else {
-            let tmp6 = sum;
             let num = 0;
-            let tmp7 = sum;
-            let num2 = 0;
-            if (0 < sections[num3]) {
+            let tmp8 = sum;
+            let tmp9 = sum;
+            if (0 < sections[num2]) {
               while (true) {
                 obj.itemEnd = num;
+                let tmp10 = num;
+                let tmp11 = tmp8;
                 if (tmp) {
                   let first = itemSizes[0].sizes[0];
                 } else {
-                  first = itemSizes[num3].sizes[num];
+                  first = itemSizes[num2].sizes[num];
                 }
-                let sum1 = tmp6 + first;
+                let sum1 = tmp8 + first;
                 if (sum1 >= estimatedListSize) {
                   break;
                 } else {
                   num = num + 1;
-                  tmp6 = sum1;
-                  tmp7 = sum1;
-                  num2 = num;
+                  tmp8 = sum1;
+                  tmp9 = sum1;
                   continue;
                 }
               }
               return obj;
             }
-            sum2 = tmp7 + (tmp2 ? sectionFooterSizes[0] : sectionFooterSizes[num3]);
-            let tmp10 = num2;
+            sum2 = tmp9 + (tmp2 ? sectionFooterSizes[0] : sectionFooterSizes[num2]);
             if (sum2 >= estimatedListSize) {
               return obj;
             }
           }
         }
-        num3 = num3 + 1;
+        num2 = num2 + 1;
         listHeaderSize = sum2;
       }
       return obj;

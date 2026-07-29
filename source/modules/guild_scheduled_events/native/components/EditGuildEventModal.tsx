@@ -1,57 +1,134 @@
-// Module ID: 8239
-// Function ID: 65825
-// Dependencies: [5, 57, 31, 1354, 33, 4165, 689, 8185, 8199, 1820, 8184, 3878, 1212, 8189, 8240, 8208, 8243, 8289, 8290, 5552, 2]
+// Module ID: 8263
+// Function ID: 8264
+// Dependencies: [5, 32, 19, 1378, 21, 4189, 712, 8209, 8223, 1844, 8208, 3902, 1236, 8213, 8264, 8232, 8267, 8313, 8314, 5570, 2]
 
-// Module 8239
-import closure_4 from "_createForOfIteratorHelperLoose";
+// Module 8263
+import closure_4 from "createCacheKey";
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "NavigationStack";
 import { GuildScheduledEventEntityTypes as closure_7 } from "GUILD_EVENT_MAX_NAME_LENGTH";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj.cardStyle = obj;
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
+let obj = { cardStyle: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[0] = obj;
+let closure_9 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((guild) => {
   let c6;
   let importDefault;
   let initialGuildEvent;
   let tmp6;
   guild = guild.guild;
+  let PREVIEW = guild;
   ({ onCloseModal: importDefault, initialGuildEvent } = guild);
+  let first;
+  let closure_4;
   let first1;
-  function _handleSave(Navigator, arg1) {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = callback(tmp);
-    return obj(...arguments);
+  let jsx;
+  function _handleSave() {
+    const self = this;
+    const tmp = callback(function*() {
+      if (id === 2) {
+        id = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          id = 2;
+          if (0 === v0) {
+            if (arg0 === 1) {
+              id = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              id = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_0 = tmp4;
+              v0 = 1;
+              id = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = outer1_6();
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            id = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            id = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else if (null == arg1) {
+            id = 3;
+            return { value: "HermesInternal", done: null };
+          } else {
+            if (!_slicedToArray) {
+              const AccessibilityAnnouncer = outer1_0(outer1_3[11]).AccessibilityAnnouncer;
+              const intl = outer1_0(outer1_3[12]).intl;
+              AccessibilityAnnouncer.announce(intl.string(outer1_0(outer1_3[12]).t["5HzXO5"]));
+              v0();
+            } else {
+              id = undefined;
+              if (id != null) {
+                id = id.id;
+              }
+            }
+            const AccessibilityAnnouncer2 = outer1_0(outer1_3[11]).AccessibilityAnnouncer;
+            const intl2 = outer1_0(outer1_3[12]).intl;
+            AccessibilityAnnouncer2.announce(intl2.string(outer1_0(outer1_3[12]).t["F9On+q"]));
+          }
+        } catch (tmp26) {
+          id = tmp;
+          throw tmp26;
+        }
+      }
+    });
+    const _handleSave = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
-  let obj = guild(first[7]);
-  let tmp2 = first1(undefined.useState(obj.getInitialGuildEventData(initialGuildEvent, guild.targetChannel)), 2);
+  let obj = PREVIEW(first[7]);
+  const tmp2 = first1(undefined.useState(obj.getInitialGuildEventData(initialGuildEvent, guild.targetChannel)), 2);
   first = tmp2[0];
-  let closure_4 = tmp2[1];
-  let obj1 = guild(first[7]);
+  closure_4 = tmp2[1];
+  let obj1 = PREVIEW(first[7]);
   first1 = first1(importAllResult.useState(obj1.isEditingEvent(initialGuildEvent)), 1)[0];
-  const tmp = callback();
+  let tmp = callback();
   [c6, tmp6] = first1(importDefault(first[8])(() => {
     const result = initialGuildEvent(first[9]).dismissGlobalKeyboard();
     if (first1) {
       let id;
-      if (null != initialGuildEvent) {
-        id = initialGuildEvent.id;
+      if (initialGuildEvent != null) {
+        id = tmp3.id;
       }
       if (null != id) {
-        let saveEventResult = outer1_1(first[10]).saveEvent(initialGuildEvent.id, first, guild.id);
-        const obj3 = outer1_1(first[10]);
+        let saveEventResult = outer1_1(tmp[10]).saveEvent(tmp3.id, first, PREVIEW.id);
+        const obj3 = outer1_1(tmp[10]);
       }
       return saveEventResult;
     }
     const obj = initialGuildEvent(first[9]);
-    saveEventResult = outer1_1(first[10]).createGuildEvent(first, guild.id);
+    saveEventResult = outer1_1(first[10]).createGuildEvent(first, PREVIEW.id);
   }), 2);
-  let closure_7 = {
+  jsx = {
     guild,
     guildEvent: first,
     initialGuildEvent,
@@ -59,31 +136,37 @@ const memoResult = importAllResult.memo((guild) => {
     error: tmp6.error,
     loading: tmp6.loading,
     onSave: function handleSave() {
-      return _handleSave(...arguments);
+      const self = this;
+      const apply = _handleSave.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
     },
     onChange: function handleChange(entityType) {
-      const guild = entityType;
+      const PREVIEW = entityType;
       if (null != entityType.entityType) {
+        const channelTypeFromEntity = PREVIEW(first[13]).getChannelTypeFromEntity(entityType.entityType);
+        const obj = PREVIEW(first[13]);
+        first = first1(PREVIEW(first[14]).getEventChannelsByType(PREVIEW.id, channelTypeFromEntity), 1)[0];
         let id;
-        const channelTypeFromEntity = guild(first[13]).getChannelTypeFromEntity(entityType.entityType);
-        const obj = guild(first[13]);
-        first = first1(guild(first[14]).getEventChannelsByType(guild.id, channelTypeFromEntity), 1)[0];
-        if (null != first) {
+        if (first != null) {
           id = first.id;
         }
-        let tmp2 = null;
-        if (null != id) {
-          tmp2 = id;
+        if (id == null) {
+          id = null;
         }
-        entityType.channelId = tmp2;
-        let tmp4 = entityType.entityType !== constants.EXTERNAL;
-        if (tmp4) {
-          tmp4 = first.entityType === constants.EXTERNAL;
+        entityType.channelId = id;
+        let tmp3 = entityType.entityType !== _handleSave.EXTERNAL;
+        if (tmp3) {
+          tmp3 = first.entityType === tmp2.EXTERNAL;
         }
-        if (tmp4) {
+        if (tmp3) {
           entityType.entityMetadata = null;
         }
-        const obj2 = guild(first[14]);
+        const obj2 = PREVIEW(first[14]);
       }
       callback((arg0) => {
         const merged = Object.assign(arg0);
@@ -92,71 +175,58 @@ const memoResult = importAllResult.memo((guild) => {
       });
     }
   };
-  function getChannelSelectorHeader(CHANNEL_SELECTOR) {
-    let closure_0 = CHANNEL_SELECTOR;
-    return () => _handleSave(outer2_1(first[15]), { screen: closure_0, onClose: outer1_1 });
-  }
   obj = {};
-  obj = {
-    title: "",
-    customNavbar: getChannelSelectorHeader(guild(first[7]).EditGuildEventScreens.CHANNEL_SELECTOR),
-    headerLeft() {
-      return null;
-    },
-    render() {
-      const obj = {};
-      const merged = Object.assign(closure_7);
-      let id;
-      if (null != initialGuildEvent) {
-        id = initialGuildEvent.id;
-      }
-      obj["guildEventId"] = id;
-      return _handleSave(outer1_1(first[16]), obj);
-    },
-    fullscreen: true
+  obj = { title: "", customNavbar: null, headerLeft: null, render: null, fullscreen: true };
+  PREVIEW = PREVIEW(first[7]).EditGuildEventScreens.CHANNEL_SELECTOR;
+  obj[1] = () => jsx(importDefault(8232), { screen: PREVIEW, onClose: outer1_1 });
+  obj[2] = function headerLeft() {
+    return null;
   };
-  obj[guild(first[7]).EditGuildEventScreens.CHANNEL_SELECTOR] = obj;
-  obj1 = {
-    title: "",
-    customNavbar: getChannelSelectorHeader(guild(first[7]).EditGuildEventScreens.DETAILS),
-    render() {
-      const merged = Object.assign(closure_7);
-      return _handleSave(outer1_1(first[17]), {});
-    },
-    fullscreen: true
+  obj[3] = function render() {
+    const obj = {};
+    const merged = Object.assign(closure_8);
+    let id;
+    if (initialGuildEvent != null) {
+      id = initialGuildEvent.id;
+    }
+    obj.guildEventId = id;
+    return closure_8(outer1_1(first[16]), obj);
   };
-  obj[guild(first[7]).EditGuildEventScreens.DETAILS] = obj1;
-  let obj2 = {
-    title: "",
-    customNavbar: getChannelSelectorHeader(guild(first[7]).EditGuildEventScreens.PREVIEW),
-    render() {
-      const merged = Object.assign(closure_7);
-      return _handleSave(outer1_1(first[18]), {});
-    },
-    fullscreen: true
+  obj[PREVIEW(first[7]).EditGuildEventScreens.CHANNEL_SELECTOR] = obj;
+  obj1 = { title: "", customNavbar: null, render: null, fullscreen: true };
+  PREVIEW = PREVIEW(first[7]).EditGuildEventScreens.DETAILS;
+  obj1[1] = () => jsx(importDefault(8232), { screen: PREVIEW, onClose: outer1_1 });
+  obj1[2] = function render() {
+    const merged = Object.assign(callback2);
+    return callback2(outer1_1(first[17]), {});
   };
-  obj[guild(first[7]).EditGuildEventScreens.PREVIEW] = obj2;
-  let obj3 = {
-    screens: obj,
-    initialRouteName: guild(first[7]).EditGuildEventScreens.CHANNEL_SELECTOR,
-    initialRouteStack: first1(undefined.useState(() => {
-      let obj = { name: guild(first[7]).EditGuildEventScreens.CHANNEL_SELECTOR };
-      if (first1) {
-        const items = [obj, ];
-        obj = { name: guild(first[7]).EditGuildEventScreens.DETAILS };
-        items[1] = obj;
-        let items1 = items;
-      } else {
-        items1 = [obj];
-      }
-      return items1;
-    }), 1)[0],
-    cardShadowEnabled: false,
-    cardOverlayEnabled: false,
-    cardStyle: tmp.cardStyle
+  obj[PREVIEW(first[7]).EditGuildEventScreens.DETAILS] = obj1;
+  let obj2 = { title: "", customNavbar: null, render: null, fullscreen: true };
+  PREVIEW = PREVIEW(first[7]).EditGuildEventScreens.PREVIEW;
+  obj2[1] = () => jsx(importDefault(8232), { screen: PREVIEW, onClose: outer1_1 });
+  obj2[2] = function render() {
+    const merged = Object.assign(callback2);
+    return callback2(outer1_1(first[18]), {});
   };
-  return _handleSave(guild(first[19]).Navigator, obj3);
+  obj[PREVIEW(first[7]).EditGuildEventScreens.PREVIEW] = obj2;
+  let obj3 = { screens: obj, initialRouteName: null, initialRouteStack: null, cardShadowEnabled: false, cardOverlayEnabled: false, cardStyle: null };
+  obj3[1] = PREVIEW(first[7]).EditGuildEventScreens.CHANNEL_SELECTOR;
+  obj3[2] = first1(undefined.useState(() => {
+    let obj = { name: PREVIEW(first[7]).EditGuildEventScreens.CHANNEL_SELECTOR };
+    if (first1) {
+      const items = [obj, ];
+      obj = { name: null };
+      obj[0] = PREVIEW(first[7]).EditGuildEventScreens.DETAILS;
+      items[1] = obj;
+      let items1 = items;
+    } else {
+      items1 = [obj];
+    }
+    return items1;
+  }), 1)[0];
+  obj3[5] = tmp.cardStyle;
+  return jsx(PREVIEW(first[19]).Navigator, { screens: obj, initialRouteName: null, initialRouteStack: null, cardShadowEnabled: false, cardOverlayEnabled: false, cardStyle: null });
 });
-let result = require("result").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventModal.tsx");
+let result = require("noop").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventModal.tsx");
 
 export default memoResult;

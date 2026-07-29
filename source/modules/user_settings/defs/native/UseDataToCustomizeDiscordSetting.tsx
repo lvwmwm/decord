@@ -1,51 +1,51 @@
-// Module ID: 13867
-// Function ID: 106160
+// Module ID: 13888
+// Function ID: 13889
 // Name: toggle
-// Dependencies: [5625, 7733, 653, 13834, 566, 4505, 1212, 4596, 13865, 13866, 10099, 2]
+// Dependencies: [5643, 7756, 676, 13855, 589, 4528, 1236, 4618, 13886, 13887, 10120, 2]
 
-// Module 13867 (toggle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 13888 (toggle)
+import hasConsented from "hasConsented";
 import { Consents } from "ME";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.MNKzyg);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.MNKzyg);
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   useValue: function useDataToCustomizeDiscordSettingValue() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_3.hasConsented(outer1_4.PERSONALIZATION));
+    const items = [hasConsented];
+    return require(589) /* initialize */.useStateFromStores(items, () => hasConsented.hasConsented(constants.PERSONALIZATION));
   },
   onValueChange: function handlePersonalizationChange(arg0) {
     if (arg0) {
       let items = [Consents.PERSONALIZATION];
-      const obj3 = require(13865) /* handleRequestSuccess */;
-      require(13865) /* handleRequestSuccess */.setConsents(items, []).catch((message) => outer1_0(outer1_2[9]).showDataPrivacyRateLimitAlert(message.message));
-      const setConsentsResult = require(13865) /* handleRequestSuccess */.setConsents(items, []);
+      const obj3 = require(13886) /* handleRequestSuccess */;
+      require(13886) /* handleRequestSuccess */.setConsents(items, []).catch((message) => callback(13887).showDataPrivacyRateLimitAlert(message.message));
+      const setConsentsResult = require(13886) /* handleRequestSuccess */.setConsents(items, []);
     } else {
-      let obj = importDefault(4505);
-      obj = {};
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj.title = intl.string(require(1212) /* getSystemLocale */.t["9SNpzv"]);
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      obj.body = intl2.string(require(1212) /* getSystemLocale */.t.gJvDDh);
-      const intl3 = require(1212) /* getSystemLocale */.intl;
-      obj.confirmText = intl3.string(require(1212) /* getSystemLocale */.t["9g5UGw"]);
-      const intl4 = require(1212) /* getSystemLocale */.intl;
-      obj.cancelText = intl4.string(require(1212) /* getSystemLocale */.t["+ZLPw9"]);
-      obj.confirmColor = importDefault(4596).Colors.RED;
-      obj.onConfirm = function onConfirm() {
-        const items = [outer1_4.PERSONALIZATION];
-        return outer1_0(outer1_2[8]).setConsents([], items);
+      let obj = importDefault(4528);
+      obj = { title: null, body: null, confirmText: null, cancelText: null, confirmColor: null, onConfirm: null };
+      const intl = require(1236) /* getSystemLocale */.intl;
+      obj[0] = intl.string(require(1236) /* getSystemLocale */.t["9SNpzv"]);
+      const intl2 = require(1236) /* getSystemLocale */.intl;
+      obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.gJvDDh);
+      const intl3 = require(1236) /* getSystemLocale */.intl;
+      obj[2] = intl3.string(require(1236) /* getSystemLocale */.t["9g5UGw"]);
+      const intl4 = require(1236) /* getSystemLocale */.intl;
+      obj[3] = intl4.string(require(1236) /* getSystemLocale */.t["+ZLPw9"]);
+      obj[4] = importDefault(4618).Colors.RED;
+      obj[5] = function onConfirm() {
+        const items = [constants.PERSONALIZATION];
+        return callback(13886).setConsents([], items);
       };
       obj.show(obj);
     }
   },
   useIsDisabled() {
-    return require(13834) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    return require(13855) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
   }
 };
 createToggle = createToggle.createToggle(createToggle);

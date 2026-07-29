@@ -1,25 +1,25 @@
-// Module ID: 11855
-// Function ID: 91836
+// Module ID: 11879
+// Function ID: 11880
 // Name: useInappropriateConversationsTiers
-// Dependencies: [1850, 9075, 10109, 566, 10411, 2]
+// Dependencies: [1874, 9099, 10130, 589, 10435, 2]
 // Exports: useInappropriateConversationsTiers
 
-// Module 11855 (useInappropriateConversationsTiers)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { SafetyWarningTypes } from "_isNativeReflectConstruct";
+// Module 11879 (useInappropriateConversationsTiers)
+import mergeGuildAvatar from "mergeGuildAvatar";
+import { SafetyWarningTypes } from "handleConnectionOpen";
 
 const require = arg1;
 const result = require("InappropriateConversationExperiment").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationsTiers.tsx");
 
 export const useInappropriateConversationsTiers = function useInappropriateConversationsTiers(channel) {
-  let obj = require(10109) /* InappropriateConversationExperiment */;
+  let obj = require(10130) /* InappropriateConversationExperiment */;
   const isEligibleForInappropriateConversationWarning = obj.useIsEligibleForInappropriateConversationWarning({ location: "context-menu-item" });
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_2.getCurrentUser());
-  const obj2 = require(566) /* initialize */;
-  const inappropriateConversationBannerForChannel = require(10411) /* useInappropriateConversationBannerForChannel */.useInappropriateConversationBannerForChannel(channel.id, "context-menu-item");
+  const items = [mergeGuildAvatar];
+  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj2 = require(589) /* initialize */;
+  const inappropriateConversationBannerForChannel = require(10435) /* useInappropriateConversationBannerForChannel */.useInappropriateConversationBannerForChannel(channel.id, "context-menu-item");
   let isStaffResult;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     isStaffResult = stateFromStores.isStaff();
   }
   let tmp4 = null;
@@ -28,18 +28,19 @@ export const useInappropriateConversationsTiers = function useInappropriateConve
     if (isEligibleForInappropriateConversationWarning) {
       tmp4 = null;
       if (channel.isDM()) {
-        obj = {};
         let type;
-        if (null != inappropriateConversationBannerForChannel) {
+        if (inappropriateConversationBannerForChannel != null) {
           type = inappropriateConversationBannerForChannel.type;
         }
-        obj.isTier1 = type === SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1;
+        obj = { isTier1: null, isTier2: null };
+        obj[0] = type === SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1;
         let type1;
-        if (null != inappropriateConversationBannerForChannel) {
+        if (inappropriateConversationBannerForChannel != null) {
           type1 = inappropriateConversationBannerForChannel.type;
         }
-        obj.isTier2 = type1 === SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_2;
+        obj[1] = type1 === SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_2;
         tmp4 = obj;
+        const tmp6 = SafetyWarningTypes;
       }
     }
   }

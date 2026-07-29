@@ -1,28 +1,43 @@
-// Module ID: 6148
-// Function ID: 54921
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1859, 653, 2]
+// Module ID: 6166
+// Function ID: 6167
+// Name: fromPath
+// Dependencies: [1883, 676, 2]
 
-// Module 6148 (_isNativeReflectConstruct)
-import ME from "ME";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 6166 (fromPath)
+import "toJS";
 import { Routes } from "ME";
-import tmp3 from "Record";
-import importDefaultResult from "Record";
 
-function _isNativeReflectConstruct() {
-  let ME = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return ME;
-  }
-  const result = _isNativeReflectConstruct();
+let prototype;
+prototype = function LinkRecord(arg0) {
+  const tmp = new prototype(new.target, new.target);
+  // ThrowIfThisInitialized (0x7c)
+  ({ id: tmp.id, path: tmp.path, inviteCode: tmp.inviteCode } = arg0);
+  return tmp;
+}.prototype;
+class prototype extends tmp2 {
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("records/LinkRecord.tsx");
+prototype["fromPath"] = function fromPath(pathname) {
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const tmp2 = new prototype("Trying to call a non-function", prototype);
+  // ThrowIfThisInitialized (0x7c)
+  ({ id: tmp2.id, path: tmp2.path, inviteCode: tmp2.inviteCode } = { id: pathname, path: pathname });
+  return tmp2;
+};
+prototype["fromInviteCode"] = function fromInviteCode(code) {
+  const combined = "invite:" + code;
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const tmp4 = new prototype("Trying to call a non-function", prototype, new.target, combined);
+  // ThrowIfThisInitialized (0x7c)
+  tmp4.id = combined;
+  tmp4.path = Routes.INVITE(code);
+  tmp4.inviteCode = code;
+  return tmp4;
+};
+const result = require("set").fileFinishedImporting("records/LinkRecord.tsx");
 
-export default tmp3;
-export const LinkRecord = tmp3;
+export default prototype;
+export const LinkRecord = prototype;

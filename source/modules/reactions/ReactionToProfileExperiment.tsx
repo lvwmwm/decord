@@ -1,10 +1,12 @@
-// Module ID: 9429
-// Function ID: 73349
-// Dependencies: [1325, 2]
+// Module ID: 9453
+// Function ID: 9454
+// Name: getUnitId
+// Dependencies: [1349, 2]
 
-// Module 9429
-const obj = { kind: "user", name: "2026-07-mobile-reaction-to-profile", defaultConfig: { reactionToProfileEnabled: false }, variations: { [1]: { reactionToProfileEnabled: true } } };
-const tmp2 = require("getUnitId")(obj);
+// Module 9453 (getUnitId)
+const obj = { 1: null };
+obj[1] = { reactionToProfileEnabled: true };
+const tmp2 = require("getUnitId")({ kind: "user", name: "2026-07-mobile-reaction-to-profile", defaultConfig: { reactionToProfileEnabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/reactions/ReactionToProfileExperiment.tsx");
 
 export default tmp2;

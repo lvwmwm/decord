@@ -1,84 +1,85 @@
-// Module ID: 10984
-// Function ID: 85164
+// Module ID: 11008
+// Function ID: 11009
 // Name: MessageGameIconActionSheet
-// Dependencies: [31, 27, 4202, 653, 33, 4165, 477, 689, 566, 5221, 1273, 4161, 1212, 1921, 2]
+// Dependencies: [19, 17, 4226, 676, 21, 4189, 500, 712, 589, 5243, 1297, 4185, 1236, 1945, 2]
 // Exports: default
 
-// Module 10984 (MessageGameIconActionSheet)
-import "result";
+// Module 11008 (MessageGameIconActionSheet)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import addApplication from "addApplication";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
-import set from "_isNativeReflectConstruct";
+import set from "addApplication";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
+({ jsx: closure_6, jsxs: error } = jsxProd);
 let num = 0;
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingHorizontal: 24, paddingTop: 8 };
 if (set.isAndroid()) {
   num = 16;
 }
-_createForOfIteratorHelperLoose.paddingBottom = num;
-_createForOfIteratorHelperLoose.contentWrapper = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.gameDescriptionWrapper = { flexDirection: "column", justifyContent: "flex-start", flex: 1 };
-let obj1 = { width: 56, height: 56, marginRight: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.gameIcon = obj1;
-_createForOfIteratorHelperLoose.gameDescriptionWrapperOuter = { flexDirection: "row" };
-_createForOfIteratorHelperLoose.timestamp = { marginBottom: 4 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { contentWrapper: { paddingHorizontal: 24, paddingTop: 8, paddingBottom: num }, gameDescriptionWrapper: { flexDirection: "column", justifyContent: "flex-start", flex: 1 }, gameIcon: null, gameDescriptionWrapperOuter: null, timestamp: null };
+createCacheKey = { width: 56, height: 56, marginRight: 8, borderRadius: require("Themes").radii.sm };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { flexDirection: "row" };
+createCacheKey[4] = { marginBottom: 4 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = set.fileFinishedImporting("modules/messages/native/MessageGameIconActionSheet.tsx");
 
 export default function MessageGameIconActionSheet(applicationId) {
   applicationId = applicationId.applicationId;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = applicationId(566);
-  const items = [_isNativeReflectConstruct];
+  const tmp = createCacheKey();
+  let obj = applicationId(589);
+  const items = [addApplication];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getApplication(applicationId));
-  let tmp3Result = null;
+  let tmp5Result = null;
   if (null != stateFromStores) {
-    obj = { startExpanded: true };
-    obj = { style: tmp.contentWrapper };
-    const obj1 = { style: tmp.gameDescriptionWrapperOuter };
-    const obj2 = { style: tmp.gameIcon, resizeMode: "contain" };
-    const obj3 = {};
-    let iconURL;
-    if (null != stateFromStores) {
-      iconURL = stateFromStores.getIconURL(56);
+    obj = { style: null, children: null };
+    obj[0] = tmp.contentWrapper;
+    obj = { style: null, children: null };
+    obj[0] = tmp.gameDescriptionWrapperOuter;
+    const obj1 = { style: null, resizeMode: "contain", source: null, disableColor: true };
+    obj1[0] = tmp.gameIcon;
+    let str;
+    if (stateFromStores != null) {
+      str = stateFromStores.getIconURL(56);
     }
-    let str2 = "";
-    if (null != iconURL) {
-      str2 = iconURL;
+    if (str == null) {
+      str = "";
     }
-    obj3.uri = str2;
-    obj2.source = obj3;
-    obj2.disableColor = true;
-    const items1 = [callback(applicationId(1273).Icon, obj2), ];
-    const obj4 = { style: tmp.gameDescriptionWrapper };
-    const obj5 = { style: tmp.timestamp, variant: "text-xs/medium", color: "text-muted", children: applicationId.messageTimestamp };
-    const items2 = [callback(applicationId(4161).Text, obj5), ];
-    const obj6 = { variant: "text-sm/medium" };
-    const intl = applicationId(1212).intl;
-    const obj7 = { applicationName: stateFromStores.name };
-    const items3 = [intl.format(applicationId(1212).t.J3s8JP, obj7), " ", ];
-    const intl2 = applicationId(1212).intl;
-    const obj8 = { helpdeskArticle: importDefault(1921).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS) };
-    items3[2] = intl2.format(applicationId(1212).t.BPDKoA, obj8);
-    obj6.children = items3;
-    items2[1] = callback2(applicationId(4161).Text, obj6);
-    obj4.children = items2;
-    items1[1] = callback2(View, obj4);
-    obj1.children = items1;
-    obj.children = callback2(View, obj1);
-    obj.children = callback(View, obj);
-    tmp3Result = tmp3(applicationId(5221).BottomSheet, obj);
-    const obj13 = importDefault(1921);
-    const tmp7 = callback2;
+    const obj2 = { startExpanded: true, children: null };
+    const obj3 = { uri: null };
+    obj3[0] = str;
+    obj1[2] = obj3;
+    const items1 = [closure_6(tmp2(1297).Icon, obj1), ];
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.gameDescriptionWrapper;
+    const obj5 = { style: null, variant: "text-xs/medium", color: "text-muted", children: null };
+    obj5[0] = tmp.timestamp;
+    obj5[3] = applicationId.messageTimestamp;
+    const items2 = [closure_6(tmp2(4185).Text, obj5), ];
+    const obj6 = { variant: "text-sm/medium", children: null };
+    const intl = tmp2(1236).intl;
+    const obj7 = { applicationName: null };
+    obj7[0] = stateFromStores.name;
+    const items3 = [intl.format(tmp2(1236).t.J3s8JP, obj7), " ", ];
+    const intl2 = tmp2(1236).intl;
+    const obj8 = { helpdeskArticle: null };
+    obj8[0] = importDefault(1945).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
+    items3[2] = intl2.format(tmp2(1236).t.BPDKoA, obj8);
+    obj6[1] = items3;
+    items2[1] = closure_7(tmp2(4185).Text, obj6);
+    obj4[1] = items2;
+    items1[1] = closure_7(View, obj4);
+    obj[1] = items1;
+    obj[1] = closure_7(View, obj);
+    obj2[1] = closure_6(View, obj);
+    tmp5Result = tmp5(tmp2(5243).BottomSheet, obj2);
+    const obj13 = importDefault(1945);
   }
-  return tmp3Result;
+  return tmp5Result;
 };

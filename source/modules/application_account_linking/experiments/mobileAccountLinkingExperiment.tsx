@@ -1,16 +1,15 @@
-// Module ID: 15132
-// Function ID: 115132
+// Module ID: 15165
+// Function ID: 15166
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 
-// Module 15132 (apexExperiment)
+// Module 15165 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { MEDIUM: "medium", LARGE: "large" };
-obj = { name: "2026-02-mobile-account-linking", kind: "user", defaultConfig: { enabled: false } };
 obj = { enabled: true, bannerSize: obj.LARGE };
-obj.variations = { [0]: { enabled: false }, [1]: obj, [2]: { enabled: true, bannerSize: obj.MEDIUM } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+obj = { enabled: true, bannerSize: obj.MEDIUM };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-02-mobile-account-linking", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: obj, 2: obj } });
 const result = require("set").fileFinishedImporting("modules/application_account_linking/experiments/mobileAccountLinkingExperiment.tsx");
 
 export default apexExperiment;

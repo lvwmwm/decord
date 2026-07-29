@@ -1,107 +1,27 @@
-// Module ID: 10638
-// Function ID: 82726
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 57, 31, 27, 5673, 4190, 653, 33, 4165, 3, 477, 10639, 491, 6738, 1207, 10640, 1554, 10641, 10642, 675, 624, 4505, 1212, 507, 10643, 1443, 10587, 10588, 8101, 4358, 10585, 2]
-// Exports: default
+// Module ID: 10662
+// Function ID: 10663
+// Name: getSafeArea
+// Dependencies: [5, 32, 19, 17, 5691, 4214, 676, 21, 4189, 3, 500, 10663, 514, 6759, 1231, 10664, 1578, 10665, 10666, 698, 647, 4528, 1236, 530, 10667, 1467, 10611, 10622, 8125, 4383, 10609, 2]
+// Exports: default, useHasInvalidUrlErrorState
 
-// Module 10638 (_createForOfIteratorHelperLoose)
+// Module 10662 (getSafeArea)
 import closure_4 from "items3";
 import _slicedToArray from "_slicedToArray";
-import closure_6 from "set";
-import { Linking } from "importDefaultResult1";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import expandEventProperties from "expandEventProperties";
+import { Linking } from "getIFrameSandboxAttributes";
+import initialize from "initialize";
 import items3 from "items3";
 import ME from "ME";
-import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importDefaultResult from "get ActivityIndicator";
+import { jsx } from "set";
+import createCacheKey from "createCacheKey";
 import set from "set";
-import set from "result";
+import set from "noop";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_9;
+let unpackModuleId;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function getSafeArea(arg0, arg1) {
   let override = arg0;
   let num = arg1;
@@ -146,29 +66,33 @@ class BaseActivityWebView {
     channelId = global.channelId;
     guildId = global.guildId;
     activitySessionId = global.activitySessionId;
-    useState = undefined;
+    f85249 = undefined;
     c17 = undefined;
     c18 = undefined;
     useState = undefined;
     c20 = undefined;
     useState = undefined;
-    c22 = undefined;
-    MOBILE = undefined;
-    activityUrl = undefined;
+    f85253 = undefined;
+    queryParams = undefined;
+    concat = undefined;
     useRef = undefined;
-    useCallback = undefined;
+    useStateFromStores = undefined;
     HermesInternal = undefined;
     closure_28 = undefined;
-    useEffect = undefined;
-    useEffect = undefined;
     useState = undefined;
-    releaseFrameId = undefined;
-    useRef = undefined;
-    onLoadError = undefined;
+    useState = undefined;
+    c31 = undefined;
+    c32 = undefined;
+    useCallback = undefined;
+    concat = undefined;
+    obj2 = applicationId;
+    tmp2 = hasFrameId;
+    tmp3 = hasInvalidUrlError;
     tmp = guildId();
     context = applicationId.useContext(require("context").WebViewContext);
+    tmp5 = hadInvalidUrlError;
     first = hadInvalidUrlError(applicationId.useState(() => callback()), 1)[0];
-    useState = first;
+    f85249 = first;
     first1 = hadInvalidUrlError(applicationId.useState(() => {
       if (null != webViewKey) {
         let v4Result = callback2();
@@ -179,23 +103,23 @@ class BaseActivityWebView {
       return v4Result;
     }), 1)[0];
     c17 = first1;
-    tmp5 = hadInvalidUrlError(applicationId.useState(null), 2);
-    url = tmp5[0];
+    tmp8 = hadInvalidUrlError(applicationId.useState(null), 2);
+    url = tmp8[0];
     c18 = url;
-    useState = tmp5[1];
+    useState = tmp8[1];
     items = [];
     items[0] = webViewKey;
     memo = applicationId.useMemo(() => {
       let webViewProxy;
       if (null != webViewKey) {
-        webViewProxy = outer1_0(hasInvalidUrlError[13]).getWebViewProxy(webViewKey);
+        webViewProxy = outer1_0(hasInvalidUrlError[13]).getWebViewProxy(tmp);
         const obj = outer1_0(hasInvalidUrlError[13]);
       }
       return webViewProxy;
     }, items);
     c20 = memo;
-    tmp7 = hadInvalidUrlError(applicationId.useState(null), 2);
-    [str, useState] = tmp7;
+    tmp10 = hadInvalidUrlError(applicationId.useState(null), 2);
+    [str, useState] = tmp10;
     items1 = [, , ];
     items1[0] = first;
     items1[1] = first1;
@@ -207,7 +131,8 @@ class BaseActivityWebView {
       }
       if (!tmp) {
         const ComponentDispatch = outer1_0(hasInvalidUrlError[14]).ComponentDispatch;
-        const obj = { id: first1 };
+        const obj = { id: null };
+        obj[0] = first1;
         ComponentDispatch.dispatch(webViewKey.IFRAME_MOUNT, obj);
       }
     }, items1);
@@ -215,41 +140,181 @@ class BaseActivityWebView {
     items2[0] = webViewKey;
     items2[1] = first1;
     effect1 = applicationId.useEffect(() => () => {
-      if (null == outer1_11) {
-        const ComponentDispatch = outer2_0(hasInvalidUrlError[14]).ComponentDispatch;
-        const obj = { id: outer1_17 };
-        ComponentDispatch.dispatch(webViewKey.IFRAME_UNMOUNT, obj);
+      if (null == closure_11) {
+        const ComponentDispatch = outer1_0(outer1_3[14]).ComponentDispatch;
+        const obj = { id: null };
+        obj[0] = closure_17;
+        ComponentDispatch.dispatch(outer1_11.IFRAME_UNMOUNT, obj);
       }
     }, items2);
-    rect = require("getStableSafeAreaInsets")();
-    c22 = rect;
-    obj2 = require("getConstants");
+    rect = require("useStableSafeAreaInsets")();
+    f85253 = rect;
+    obj3 = require("getConstants");
     obj = {};
-    constants = obj2.getConstants();
+    constants = obj3.getConstants();
     merged = Object.assign(queryParams);
     merged1 = Object.assign(deepLinkQueryParams);
-    obj["frame_id"] = first1;
-    obj["platform"] = referrerPolicy.MOBILE;
-    obj["mobile_app_version"] = constants.Version;
-    tmp13 = require("getIFrameSandboxAttributes")({ allowPopups });
-    MOBILE = tmp13;
+    obj.frame_id = first1;
+    obj.platform = referrerPolicy.MOBILE;
+    obj.mobile_app_version = constants.Version;
+    tmp16 = require("getIFrameSandboxAttributes")({ allowPopups });
+    queryParams = tmp16;
     uRLSearchParams = new URLSearchParams(obj);
     combined = "" + activityUrl + "?" + uRLSearchParams;
-    activityUrl = combined;
+    concat = combined;
     useRef = applicationId.useRef(safeAreasConfig);
     items3 = [, , , ];
     items3[0] = combined;
-    items3[1] = tmp13;
+    items3[1] = tmp16;
     items3[2] = onLoadError;
     items3[3] = referrerPolicy;
     effect2 = applicationId.useEffect(() => {
       function _loadHtml() {
-        // CreateGeneratorClosureLongIndex (0x67)
-        const obj = setHasInvalidUrlError(tmp);
-        return obj(...arguments);
+        const self = this;
+        const tmp = setHasInvalidUrlError(function*() {
+          if (c7 === 2) {
+            c7 = 3;
+            HermesBuiltin.throwTypeError();
+          } else if (tmp5 === 3) {
+            if (arg0 === 1) {
+              throw arg1;
+            } else if (arg0 === 2) {
+              let obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              return { value: "HermesInternal", done: null };
+            }
+          } else {
+            try {
+              c7 = 2;
+              if (0 === c6) {
+                if (arg0 === 1) {
+                  c7 = 3;
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  c7 = 3;
+                  obj = { value: null, done: true };
+                  obj[0] = arg1;
+                  return obj;
+                } else {
+                  let _slicedToArray = tmp3;
+                  let closure_4 = tmp2;
+                  let callback;
+                  const rect = callback(outer2_3[15]).getStableSafeAreaInsets();
+                  const current = outer1_25.current;
+                  let left;
+                  if (current != null) {
+                    left = current.left;
+                  }
+                  let left1;
+                  if (rect != null) {
+                    left1 = rect.left;
+                  }
+                  callback = left1;
+                  if (left1 == null) {
+                    callback = 0;
+                  }
+                  const obj1 = { left: null, right: null, top: null, bottom: null };
+                  obj1[0] = outer2_17(left, callback);
+                  let right;
+                  if (current != null) {
+                    right = current.right;
+                  }
+                  let right1;
+                  if (rect != null) {
+                    right1 = rect.right;
+                  }
+                  let c1 = right1;
+                  if (right1 == null) {
+                    c1 = 0;
+                  }
+                  obj1[1] = outer2_17(right, c1);
+                  let top;
+                  if (current != null) {
+                    top = current.top;
+                  }
+                  let top1;
+                  if (rect != null) {
+                    top1 = rect.top;
+                  }
+                  let c2 = top1;
+                  if (top1 == null) {
+                    c2 = 0;
+                  }
+                  obj1[2] = outer2_17(top, c2);
+                  let bottom;
+                  if (current != null) {
+                    bottom = current.bottom;
+                  }
+                  let bottom1;
+                  if (rect != null) {
+                    bottom1 = rect.bottom;
+                  }
+                  let c3 = bottom1;
+                  if (bottom1 == null) {
+                    c3 = 0;
+                  }
+                  obj1[3] = outer2_17(bottom, c3);
+                  const obj2 = { iFrameUri: null, iFrameSandboxAttributes: null, referrerPolicy: null, insets: null, messageForDisallowedNavigationError: null };
+                  obj2[0] = outer1_24;
+                  obj2[1] = outer1_23;
+                  obj2[2] = outer1_9;
+                  obj2[3] = obj1;
+                  let tmp36;
+                  const obj7 = callback(outer2_3[15]);
+                  const tmp44 = outer2_3;
+                  if (!outer2_16) {
+                    tmp36 = outer2_10;
+                  }
+                  obj2[4] = tmp36;
+                  c6 = 1;
+                  c7 = 1;
+                  const obj3 = { value: null, done: false };
+                  obj3[0] = outer2_1(outer2_3[18])(obj2);
+                  return obj3;
+                }
+              } else if (arg0 === 1) {
+                c7 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c7 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                callback = arg1;
+                if (null != callback) {
+                  outer1_21(outer1_0);
+                } else {
+                  outer1_8();
+                }
+                c7 = 3;
+              }
+            } catch (tmp37) {
+              c7 = tmp;
+              throw tmp37;
+            }
+          }
+        });
+        const _loadHtml = tmp;
+        const apply = tmp.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
       }
       !(function loadHtml() {
-        return _loadHtml(...arguments);
+        const self = this;
+        const apply = _loadHtml.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
       })();
     }, items3);
     items4 = [];
@@ -285,84 +350,174 @@ class BaseActivityWebView {
       }
       onActivityCrash();
     }, items6);
-    obj4 = require("defaultAreStatesEqual");
+    obj5 = require("defaultAreStatesEqual");
     items7 = [];
     items7[0] = onLoadError;
-    stateFromStores = obj4.useStateFromStores(items7, () => onLoadError.getUseActivityUrlOverride());
-    useCallback = stateFromStores;
+    stateFromStores = obj5.useStateFromStores(items7, () => onLoadError.getUseActivityUrlOverride());
+    useStateFromStores = stateFromStores;
     items8 = [, , ];
     items8[0] = combined;
     items8[1] = stateFromStores;
     items8[2] = setHasInvalidUrlError;
     effect3 = applicationId.useEffect(() => {
-      const uRL = new URL(combined);
-      callback3(uRL);
+      try {
+        const _URL = URL;
+        const uRL = new URL(combined);
+        callback3(uRL);
+      } catch (tmp9) {
+        if (stateFromStores) {
+          setHasInvalidUrlError(true);
+        } else {
+          throw tmp9;
+        }
+      }
     }, items8);
     items9 = [, ];
     items9[0] = hadInvalidUrlError;
     items9[1] = hasInvalidUrlError;
     effect4 = applicationId.useEffect(() => {
+      let tmp = !hadInvalidUrlError;
+      if (!hadInvalidUrlError) {
+        tmp = hasInvalidUrlError;
+      }
       if (tmp) {
         let obj = outer1_1(hasInvalidUrlError[21]);
-        obj = {};
+        obj = { title: null, body: null, confirmText: null };
         const intl = outer1_0(hasInvalidUrlError[22]).intl;
-        obj.title = intl.string(outer1_0(hasInvalidUrlError[22]).t.PtobXW);
+        obj[0] = intl.string(outer1_0(hasInvalidUrlError[22]).t.PtobXW);
         const intl2 = outer1_0(hasInvalidUrlError[22]).intl;
-        obj.body = intl2.string(outer1_0(hasInvalidUrlError[22]).t["55iAUT"]);
+        obj[1] = intl2.string(outer1_0(hasInvalidUrlError[22]).t["55iAUT"]);
         const intl3 = outer1_0(hasInvalidUrlError[22]).intl;
-        obj.confirmText = intl3.string(outer1_0(hasInvalidUrlError[22]).t.BddRzS);
+        obj[2] = intl3.string(outer1_0(hasInvalidUrlError[22]).t.BddRzS);
         obj.show(obj);
       }
     }, items9);
     HermesInternal = null;
     if (null == url) {
-      closure_28 = useState;
-      tmp28 = applicationId;
+      tmp30 = f85249;
+      closure_28 = f85249;
       flag = false;
-      tmp27 = useState;
-      tmp29 = hadInvalidUrlError;
-      tmp30 = hadInvalidUrlError(applicationId.useState(false), 2);
-      useEffect = tmp30[1];
-      tmp31 = applicationId;
-      tmp32 = hadInvalidUrlError;
-      tmp33 = hadInvalidUrlError(applicationId.useState([]), 2);
-      first2 = tmp33[0];
-      useEffect = first2;
-      useState = tmp33[1];
-      tmp35 = applicationId;
+      tmp5Result = tmp5(obj2.useState(false), 2);
+      [tmp32, useState] = tmp5Result;
+      tmp5Result1 = tmp5(obj2.useState([]), 2);
+      first2 = tmp5Result1[0];
+      useState = first2;
+      c31 = tmp5Result1[1];
       items10 = [, ];
       items10[0] = applicationId;
-      items10[1] = useState;
-      effect5 = applicationId.useEffect(() => {
-        function parseCsp(arg0, str) {
-          const match = str.match(arg0);
-          if (null !== match) {
-            if (match.length >= 2) {
-              const parts = match[1].split(" ");
-              const found = parts.filter((arg0) => !outer1_0.includes(arg0));
-              str = match[1];
-            }
-            return [];
-          }
-        }
-        function _fetchAndParseCSP() {
-          // CreateGeneratorClosureLongIndex (0x67)
-          const obj = setHasInvalidUrlError(tmp);
-          return obj(...arguments);
-        }
+      items10[1] = f85249;
+      effect5 = obj2.useEffect(() => {
         if (closure_28) {
+          function parseCsp(arg0, str) {
+            const match = str.match(arg0);
+            if (null !== match) {
+              if (match.length >= 2) {
+                const parts = match[1].split(" ");
+                const found = parts.filter((arg0) => !closure_0.includes(arg0));
+                str = match[1];
+              }
+              return [];
+            }
+          }
+          function _fetchAndParseCSP() {
+            const self = this;
+            const tmp = setHasInvalidUrlError(function*() {
+              if (c4 === 2) {
+                c4 = 3;
+                HermesBuiltin.throwTypeError();
+              } else if (tmp5 === 3) {
+                if (arg0 === 1) {
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  let obj = { value: null, done: true };
+                  obj[0] = arg1;
+                  return obj;
+                } else {
+                  return { value: "HermesInternal", done: null };
+                }
+              } else {
+                try {
+                  c4 = 2;
+                  if (0 === c3) {
+                    if (arg0 === 1) {
+                      c4 = 3;
+                      throw arg1;
+                    } else if (arg0 === 2) {
+                      c4 = 3;
+                      obj = { value: null, done: true };
+                      obj[0] = arg1;
+                      return obj;
+                    } else {
+                      let items = tmp3;
+                      content_security_policy = tmp2;
+                      let closure_0;
+                      content_security_policy = undefined;
+                      items = undefined;
+                      const _HermesInternal = HermesInternal;
+                      const combined = "https://" + outer1_6 + ".discordsays.com";
+                      closure_0 = combined;
+                      const HTTP = outer2_0(outer2_3[23]).HTTP;
+                      const obj1 = { url: null, rejectWithError: false };
+                      const _HermesInternal2 = HermesInternal;
+                      obj1[0] = "" + combined + "/.discord/csp";
+                      c3 = 1;
+                      c4 = 1;
+                      const obj2 = { value: null, done: false };
+                      obj2[0] = HTTP.get(obj1);
+                      return obj2;
+                    }
+                  } else if (arg0 === 1) {
+                    c4 = 3;
+                    throw arg1;
+                  } else if (arg0 === 2) {
+                    c4 = 3;
+                    obj = { value: null, done: true };
+                    obj[0] = arg1;
+                    return obj;
+                  } else {
+                    content_security_policy = arg1.headers["content-security-policy"];
+                    items = ["about:blank", "file://*", closure_0];
+                    closure_0 = 3;
+                    closure_0 = HermesBuiltin.arraySpread(content_security_policy(/frame-src (.*?);/, content_security_policy), closure_0);
+                    closure_0 = HermesBuiltin.arraySpread(content_security_policy(/child-src (.*?);/, content_security_policy), closure_0);
+                    outer1_31(items.map((arg0) => "^" + content_security_policy(table[24])(arg0).replace(/\\\*/g, ".*")));
+                    outer1_29(true);
+                    c4 = 3;
+                    return { value: "HermesInternal", done: null };
+                  }
+                } catch (tmp7) {
+                  c4 = tmp;
+                  throw tmp7;
+                }
+              }
+            });
+            const _fetchAndParseCSP = tmp;
+            const apply = tmp.apply;
+            if (typeof apply === "unknown") {
+              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+            } else {
+              applyArgumentsResult = apply(self, arguments);
+            }
+            return applyArgumentsResult;
+          }
           let closure_0 = ["'self'"];
           (function fetchAndParseCSP() {
-            return _fetchAndParseCSP(...arguments);
+            const self = this;
+            const apply = _fetchAndParseCSP.apply;
+            if (typeof apply === "unknown") {
+              let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+            } else {
+              applyArgumentsResult = apply(self, arguments);
+            }
+            return applyArgumentsResult;
           })();
         }
       }, items10);
-      tmp37 = applicationId;
       items11 = [, ];
       items11[0] = null;
       items11[1] = first2;
-      tmp39 = null != null;
-      callback3 = applicationId.useCallback((mainDocumentURL) => {
+      tmp37 = null != null;
+      callback3 = obj2.useCallback((mainDocumentURL) => {
         mainDocumentURL = mainDocumentURL.mainDocumentURL;
         if (null != combined1) {
           if (null != mainDocumentURL) {
@@ -372,77 +527,79 @@ class BaseActivityWebView {
             }
           }
         }
-        const tmp2 = first1(first2);
-        let iter = tmp2();
-        if (!iter.done) {
-          const _RegExp = RegExp;
-          const regExp = new RegExp(iter.value);
-          while (!regExp.test(mainDocumentURL.url)) {
-            let iter2 = tmp2();
-            iter = iter2;
+        const iter = first2[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let _RegExp = RegExp;
+          let tmp3 = new.target;
+          let tmp4 = new.target;
+          let tmp5 = nextResult;
+          let regExp = new RegExp(nextResult);
+          let tmp6 = regExp;
+          if (regExp.test(mainDocumentURL.url)) {
+            let tmp7 = iter;
+            iter.return();
+            let flag = true;
+            return true;
           }
-          return true;
         }
-        const activityUrlOverride = onLoadError.getActivityUrlOverride();
-        let str = "";
-        if (null != activityUrlOverride) {
-          str = activityUrlOverride;
+        let str = onLoadError.getActivityUrlOverride();
+        if (str == null) {
+          str = "";
         }
         const toURLSafeResult = outer1_1(hasInvalidUrlError[25]).toURLSafe(str);
         const obj2 = outer1_1(hasInvalidUrlError[25]);
+        const tmp8 = outer1_1;
+        const tmp9 = hasInvalidUrlError;
         const toURLSafeResult1 = outer1_1(hasInvalidUrlError[25]).toURLSafe(mainDocumentURL.url);
         return null != toURLSafeResult && null != toURLSafeResult1 && toURLSafeResult.origin + toURLSafeResult.pathname === toURLSafeResult1.origin + toURLSafeResult1.pathname;
       }, items11);
-      if (tmp39) {
-        tmp39 = null != url;
+      if (tmp37) {
+        tmp37 = null != url;
       }
-      if (tmp39) {
-        tmp39 = null != str;
+      if (tmp37) {
+        tmp37 = null != str;
       }
-      releaseFrameId = tmp39;
-      tmp40 = applicationId;
-      ref = applicationId.useRef(null);
-      useRef = ref;
-      tmp42 = applicationId;
-      callback4 = applicationId.useCallback((arg0) => {
+      c32 = tmp37;
+      ref = obj2.useRef(null);
+      useCallback = ref;
+      callback4 = obj2.useCallback((arg0) => {
         const current = ref.current;
-        if (null != current) {
+        if (current != null) {
           current.injectJavaScript(outer1_1(hasInvalidUrlError[26])(arg0));
         }
       }, []);
-      onLoadError = callback4;
+      concat = callback4;
       items12 = [, , ];
       items12[0] = webViewKey;
       origin = undefined;
-      tmp44 = applicationId;
-      if (null != url) {
+      if (url != null) {
         origin = url.origin;
       }
       items12[1] = origin;
       items12[2] = callback4;
-      tmp47 = applicationId;
       items13 = [, , , , , ];
       items13[0] = rect;
       items13[1] = isPipOrGridMode;
-      items13[2] = tmp39;
+      items13[2] = tmp37;
       items13[3] = memo;
       items13[4] = callback4;
       items13[5] = safeAreasConfig;
-      callback5 = applicationId.useCallback((nativeEvent) => {
+      callback5 = obj2.useCallback((nativeEvent) => {
         if (null == webViewKey) {
           const _JSON = JSON;
           const parsed = JSON.parse(nativeEvent.nativeEvent.data);
-          let tmp4 = "object" === typeof parsed;
-          if (tmp4) {
+          let tmp2 = typeof parsed === "ay";
+          if (typeof parsed !== "window") {
             let origin;
-            if (null != url) {
+            if (url != null) {
               origin = url.origin;
             }
-            tmp4 = null != origin;
+            tmp2 = null != origin;
           }
-          if (tmp4) {
+          if (tmp2) {
             let origin1;
-            if (null != url) {
+            if (url != null) {
               origin1 = url.origin;
             }
             outer1_1(hasInvalidUrlError[27]).handleMessage(parsed, origin1, callback4);
@@ -450,102 +607,316 @@ class BaseActivityWebView {
           }
         }
       }, items12);
-      effect6 = applicationId.useEffect(() => {
-        function _tryInjectJavaScript() {
-          // CreateGeneratorClosureLongIndex (0x67)
-          const obj = setHasInvalidUrlError(tmp);
-          return obj(...arguments);
-        }
+      effect6 = obj2.useEffect(() => {
         if (c32) {
           if (null != memo) {
+            function _tryInjectJavaScript() {
+              const self = this;
+              const tmp = setHasInvalidUrlError(function*() {
+                if (c9 === 2) {
+                  c9 = 3;
+                  HermesBuiltin.throwTypeError();
+                } else if (tmp7 === 3) {
+                  if (arg0 === 1) {
+                    throw arg1;
+                  } else if (arg0 === 2) {
+                    let obj = { value: null, done: true };
+                    obj[0] = arg1;
+                    return obj;
+                  } else {
+                    return { value: "HermesInternal", done: null };
+                  }
+                } else {
+                  try {
+                    c9 = 2;
+                    if (0 === c8) {
+                      if (arg0 === 1) {
+                        c9 = 3;
+                        throw arg1;
+                      } else if (arg0 === 2) {
+                        c9 = 3;
+                        obj = { value: null, done: true };
+                        obj[0] = arg1;
+                        return obj;
+                      } else {
+                        let _slicedToArray = tmp3;
+                        let closure_4 = tmp5;
+                        let obj2;
+                        if (null != outer1_20) {
+                          if (outer1_10) {
+                            let rect = { top: 0, bottom: 0, left: 0, right: 0 };
+                          } else {
+                            rect = outer1_22;
+                          }
+                          const rect2 = outer1_12;
+                          let left;
+                          if (outer1_12 != null) {
+                            left = rect2.left;
+                          }
+                          let left1;
+                          if (rect != null) {
+                            left1 = rect.left;
+                          }
+                          obj2 = left1;
+                          if (left1 == null) {
+                            obj2 = 0;
+                          }
+                          const obj1 = { left: null, right: null, top: null, bottom: null };
+                          obj1[0] = outer2_17(left, obj2);
+                          let right;
+                          if (rect2 != null) {
+                            right = rect2.right;
+                          }
+                          let right1;
+                          if (rect != null) {
+                            right1 = rect.right;
+                          }
+                          let c1 = right1;
+                          if (right1 == null) {
+                            c1 = 0;
+                          }
+                          obj1[1] = outer2_17(right, c1);
+                          let top;
+                          if (rect2 != null) {
+                            top = rect2.top;
+                          }
+                          let top1;
+                          if (rect != null) {
+                            top1 = rect.top;
+                          }
+                          let c2 = top1;
+                          if (top1 == null) {
+                            c2 = 0;
+                          }
+                          obj1[2] = outer2_17(top, c2);
+                          let bottom;
+                          if (rect2 != null) {
+                            bottom = rect2.bottom;
+                          }
+                          let bottom1;
+                          if (rect != null) {
+                            bottom1 = rect.bottom;
+                          }
+                          let c3 = bottom1;
+                          if (bottom1 == null) {
+                            c3 = 0;
+                          }
+                          obj2 = { type: "safeAreaUpdateEvent", data: null };
+                          const obj3 = { insets: null };
+                          obj1[3] = outer2_17(bottom, c3);
+                          obj3[0] = obj1;
+                          obj2[1] = obj3;
+                          let c7 = 1;
+                          c8 = 2;
+                          c9 = 1;
+                          const obj4 = { value: null, done: false };
+                          obj4[0] = obj8.injectJavaScript(outer2_1(outer2_3[26])(obj2));
+                          return obj4;
+                        }
+                        obj8 = outer1_20;
+                      }
+                    } else {
+                      if (1 === tmp8) {
+                        c7 = 0;
+                        if (null != outer1_33.current) {
+                          outer1_34(outer2_1(outer2_3[26])(outer1_0));
+                        }
+                      } else if (arg0 === 1) {
+                        c9 = 3;
+                        throw arg1;
+                      } else if (arg0 !== 2) {
+                        c7 = 0;
+                      }
+                      c7 = 0;
+                      c9 = 3;
+                      obj = { value: null, done: true };
+                      obj[0] = arg1;
+                      return obj;
+                    }
+                    c9 = 3;
+                  } catch (tmp35) {
+                    let expandEventProperties = tmp35;
+                    if (tmp4 === c7) {
+                      c9 = tmp2;
+                      throw tmp35;
+                    } else {
+                      c8 = tmp;
+                    }
+                  }
+                }
+              });
+              const _tryInjectJavaScript = tmp;
+              const apply = tmp.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
+              }
+              return applyArgumentsResult;
+            }
             (function tryInjectJavaScript() {
-              return _tryInjectJavaScript(...arguments);
+              const self = this;
+              const apply = _tryInjectJavaScript.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
+              }
+              return applyArgumentsResult;
             })();
           }
         }
       }, items13);
       if (null != null) {
         if (null != url) {
-          if (tmp27) {
+          if (tmp30) {
           }
-          obj1 = {};
           left = undefined;
-          tmp49 = useState;
-          if (null != safeAreasConfig) {
+          if (safeAreasConfig != null) {
             left = safeAreasConfig.left;
           }
-          left1 = undefined;
-          if (null != rect) {
-            left1 = rect.left;
+          num = undefined;
+          if (rect != null) {
+            num = rect.left;
           }
-          num = 0;
-          if (null != left1) {
-            num = left1;
+          if (num == null) {
+            num = 0;
           }
-          obj1.left = tmp49(left, num);
+          num2 = num;
+          if (null != left) {
+            num3 = 0;
+            num4 = 0;
+            if (left.disable) {
+              num2 = 0;
+            } else {
+              if (null != left.override) {
+                _Math2 = Math;
+                left = left.override;
+                bound = require("asyncGeneratorStep");
+              } else {
+                bound = num;
+                if (null != left.offset) {
+                  _Math = Math;
+                  bound = require("asyncGeneratorStep");
+                }
+              }
+              tmp45 = bound;
+            }
+          }
+          obj1 = { left: null, right: null, top: null, bottom: null };
+          obj1[0] = num2;
           right = undefined;
-          tmp52 = useState;
-          if (null != safeAreasConfig) {
+          if (safeAreasConfig != null) {
             right = safeAreasConfig.right;
           }
-          right1 = undefined;
-          if (null != rect) {
-            right1 = rect.right;
+          num5 = undefined;
+          if (rect != null) {
+            num5 = rect.right;
           }
-          num2 = 0;
-          if (null != right1) {
-            num2 = right1;
+          if (num5 == null) {
+            num5 = 0;
           }
-          obj1.right = tmp52(right, num2);
+          num6 = num5;
+          if (null != right) {
+            num7 = 0;
+            num8 = 0;
+            if (right.disable) {
+              num6 = 0;
+            } else {
+              if (null != right.override) {
+                _Math4 = Math;
+                right = right.override;
+                bound1 = require("asyncGeneratorStep");
+              } else {
+                bound1 = num5;
+                if (null != right.offset) {
+                  _Math3 = Math;
+                  bound1 = require("asyncGeneratorStep");
+                }
+              }
+              tmp48 = bound1;
+            }
+          }
+          obj1[1] = num6;
           top = undefined;
-          tmp55 = useState;
-          if (null != safeAreasConfig) {
+          if (safeAreasConfig != null) {
             top = safeAreasConfig.top;
           }
-          top1 = undefined;
-          if (null != rect) {
-            top1 = rect.top;
+          num9 = undefined;
+          if (rect != null) {
+            num9 = rect.top;
           }
-          num3 = 0;
-          if (null != top1) {
-            num3 = top1;
+          if (num9 == null) {
+            num9 = 0;
           }
-          obj1.top = tmp55(top, num3);
+          num10 = num9;
+          if (null != top) {
+            num11 = 0;
+            num12 = 0;
+            if (top.disable) {
+              num10 = 0;
+            } else {
+              if (null != top.override) {
+                _Math6 = Math;
+                top = top.override;
+                bound2 = require("asyncGeneratorStep");
+              } else {
+                bound2 = num9;
+                if (null != top.offset) {
+                  _Math5 = Math;
+                  bound2 = require("asyncGeneratorStep");
+                }
+              }
+              tmp51 = bound2;
+            }
+          }
+          obj1[2] = num10;
           bottom = undefined;
-          tmp58 = useState;
-          if (null != safeAreasConfig) {
+          if (safeAreasConfig != null) {
             bottom = safeAreasConfig.bottom;
           }
-          bottom1 = undefined;
-          if (null != rect) {
-            bottom1 = rect.bottom;
+          num13 = undefined;
+          if (rect != null) {
+            num13 = rect.bottom;
           }
-          num4 = 0;
-          if (null != bottom1) {
-            num4 = bottom1;
+          if (num13 == null) {
+            num13 = 0;
           }
-          obj1.bottom = tmp58(bottom, num4);
-          tmp61 = useState;
-          if (useState) {
-            tmp63 = hasFrameId;
-            tmp64 = hasInvalidUrlError;
-            num5 = 18;
-            obj6 = require("safeAreaInitJs");
-            injectedJavascriptForIOS = obj6.createInjectedJavascriptForIOS(obj1);
+          num14 = num13;
+          if (null != bottom) {
+            num15 = 0;
+            num16 = 0;
+            if (bottom.disable) {
+              num14 = 0;
+            } else {
+              if (null != bottom.override) {
+                _Math8 = Math;
+                bottom = bottom.override;
+                bound3 = require("asyncGeneratorStep");
+              } else {
+                bound3 = num13;
+                if (null != bottom.offset) {
+                  _Math7 = Math;
+                  bound3 = require("asyncGeneratorStep");
+                }
+              }
+              tmp54 = bound3;
+            }
           }
-          tmp66Result = null;
+          obj1[3] = num14;
+          if (tmp30) {
+            tmp2Result = require("_createWebviewHtmlFile");
+            injectedJavascriptForIOS = tmp2Result.createInjectedJavascriptForIOS(obj1);
+          }
+          tmp57Result = null;
           if (null != str) {
-            tmp67 = hasFrameId;
-            tmp68 = hasInvalidUrlError;
-            num6 = 13;
-            tmp66 = channelId;
-            obj2 = {};
-            obj2.style = tmp.webView;
-            obj2.ref = ref;
-            obj3 = {};
-            obj3.uri = null;
-            obj2.source = obj3;
-            obj4 = {};
+            tmp57 = channelId;
+            obj2 = { style: null, ref: null, source: null, androidAssetLoaderConfig: null, originWhitelist: null, overScrollMode: "never", scrollEnabled: false, cacheEnabled: true, onError: null, onContentProcessDidTerminate: null, onRenderProcessGone: null, webViewKey: null, temporaryParentNodeTag: null, messagingWithWebViewKeyEnabled: null, onMessage: null, allowFileAccess: null, injectedJavaScript: null, injectedJavaScriptForMainFrameOnly: false, onShouldStartLoadWithRequest: null, mediaPlaybackRequiresUserAction: false, ignoreSilentHardwareSwitch: null, allowsInlineMediaPlayback: true, minimumFontSize: 1, bounces: false, allowsProtectedMedia: true };
+            obj2[0] = tmp.webView;
+            obj2[1] = ref;
+            obj3 = { uri: null };
+            obj3[0] = null;
+            obj2[2] = obj3;
             if ("" === url.port) {
               host = url.host;
             } else {
@@ -553,84 +924,66 @@ class BaseActivityWebView {
               str6 = ":";
               host = "" + url.hostname + ":" + url.port;
             }
-            obj4.domain = host;
+            obj4 = { domain: null, httpAllowed: null, pathHandlers: null };
+            obj4[0] = host;
             str7 = "http:";
-            obj4.httpAllowed = "http:" === url.protocol;
-            obj5 = {};
-            str8 = "internal";
-            obj5.type = "internal";
+            obj4[1] = "http:" === url.protocol;
+            obj5 = { type: "internal", path: null, directory: null };
             _HermesInternal4 = HermesInternal;
-            str9 = "/";
-            obj5.path = "/" + first1 + "/";
-            obj5.directory = require("asyncGeneratorStep");
+            str8 = "/";
+            obj5[1] = "/" + first1 + "/";
+            num17 = 0;
+            obj5[2] = require("asyncGeneratorStep");
             items14 = [];
             items14[0] = obj5;
-            obj4.pathHandlers = items14;
-            obj2.androidAssetLoaderConfig = obj4;
-            obj2.originWhitelist = ["*"];
-            str10 = "never";
-            obj2.overScrollMode = "never";
-            obj2.scrollEnabled = false;
-            flag2 = true;
-            obj2.cacheEnabled = true;
-            obj2.onError = callback;
-            obj2.onContentProcessDidTerminate = callback2;
-            obj2.onRenderProcessGone = callback1;
-            obj2.webViewKey = webViewKey;
-            obj2.temporaryParentNodeTag = context;
-            obj2.messagingWithWebViewKeyEnabled = null != webViewKey;
-            obj2.onMessage = callback5;
-            tmp69 = useState;
-            obj2.allowFileAccess = useState;
-            obj2.injectedJavaScript = injectedJavascriptForIOS;
-            obj2.injectedJavaScriptForMainFrameOnly = false;
-            tmp70 = useState;
-            tmp71 = undefined;
-            if (useState) {
-              tmp71 = callback3;
+            obj4[2] = items14;
+            obj2[3] = obj4;
+            obj2[4] = ["*"];
+            obj2[8] = callback;
+            obj2[9] = callback2;
+            obj2[10] = callback1;
+            obj2[11] = webViewKey;
+            obj2[12] = context;
+            obj2[13] = null != webViewKey;
+            obj2[14] = callback5;
+            obj2[15] = tmp30;
+            obj2[16] = injectedJavascriptForIOS;
+            tmp58 = undefined;
+            if (tmp30) {
+              tmp58 = callback3;
             }
-            obj2.onShouldStartLoadWithRequest = tmp71;
-            obj2.mediaPlaybackRequiresUserAction = false;
-            obj2.ignoreSilentHardwareSwitch = ignoreSilentHardwareSwitch;
-            obj2.allowsInlineMediaPlayback = true;
-            obj2.minimumFontSize = 1;
-            obj2.bounces = false;
-            obj2.allowsProtectedMedia = true;
-            tmp66Result = tmp66(require("WebView").WebView, obj2);
+            obj2[18] = tmp58;
+            obj2[20] = ignoreSilentHardwareSwitch;
+            tmp57Result = tmp57(require("WebView").WebView, obj2);
           }
-          return tmp66Result;
+          return tmp57Result;
         }
       }
       return null;
     } else {
-      tmp23 = useState;
-      if (useState) {
+      tmp26 = f85249;
+      if (f85249) {
         _HermesInternal2 = HermesInternal;
         str5 = "file://";
         combined1 = "file://" + str;
       } else {
         _HermesInternal = HermesInternal;
-        str2 = "/";
-        str3 = "/activity.html";
+        str2 = "/activity.html";
+        str3 = "/";
         str4 = "";
-        tmp24 = first1;
+        tmp27 = first1;
         combined1 = "" + url.origin + "/" + first1 + "/activity.html";
       }
       HermesInternal = combined1;
-      tmp26 = combined1;
+      tmp29 = combined1;
     }
     return;
   }
 }
-function useHasInvalidUrlErrorState() {
-  const tmp = callback(React.useState(false), 2);
-  const first = tmp[0];
-  return { hasInvalidUrlError: first, setHasInvalidUrlError: tmp[1], hadInvalidUrlError: importDefault(8101)(first) };
-}
-({ ActivityPlatform: closure_9, DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY: closure_10 } = items3);
-({ ComponentActions: closure_11, AnalyticEvents: closure_12 } = ME);
-let closure_14 = _createForOfIteratorHelperLoose.createStyles({ webView: { backgroundColor: "transparent" } });
-importDefaultResult = new importDefaultResult("EmbeddedActivityWebView");
+({ ActivityPlatform: c9, DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY: c10 } = items3);
+({ ComponentActions: unpackModuleId, AnalyticEvents: closure_12 } = ME);
+let closure_14 = createCacheKey.createStyles({ webView: { backgroundColor: "transparent" } });
+let closure_15 = new require("get ActivityIndicator")("EmbeddedActivityWebView");
 set = set.isIOS();
 const result = set.fileFinishedImporting("modules/activities/native/EmbeddedActivityWebView.tsx");
 
@@ -638,12 +991,14 @@ export default function EmbeddedActivityWebView(channelId) {
   channelId = channelId.channelId;
   const currentEmbeddedActivity = channelId.currentEmbeddedActivity;
   const applicationId = channelId.applicationId;
-  let obj = { channelId: 0, currentEmbeddedActivity: 0, applicationId: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(channelId, obj);
-  const tmp3 = useHasInvalidUrlErrorState();
-  const hasInvalidUrlError = tmp3.hasInvalidUrlError;
-  const hadInvalidUrlError = tmp3.hadInvalidUrlError;
+  const merged = Object.assign(channelId, Object.create(null));
+  let first;
+  let c4;
+  let obj = React;
+  const tmp2 = callback(React.useState(false), 2);
+  first = tmp2[0];
+  const tmp4 = currentEmbeddedActivity(first[28])(first);
+  c4 = tmp4;
   obj = {};
   if (null != currentEmbeddedActivity) {
     if (null != currentEmbeddedActivity.customId) {
@@ -653,50 +1008,57 @@ export default function EmbeddedActivityWebView(channelId) {
       obj.referrer_id = currentEmbeddedActivity.referrerId;
     }
   }
-  const items = [hasInvalidUrlError, hadInvalidUrlError, channelId, applicationId, currentEmbeddedActivity];
-  const effect = React.useEffect(() => {
+  const items = [first, tmp4, channelId, applicationId, currentEmbeddedActivity];
+  const effect = obj.useEffect(() => {
+    let tmp = !c4;
+    if (!c4) {
+      tmp = first;
+    }
     if (tmp) {
       if (null != channelId) {
-        let obj = currentEmbeddedActivity(hasInvalidUrlError[29]);
-        const participant = obj.selectParticipant(channelId, null);
+        let obj = currentEmbeddedActivity(first[29]);
+        const participant = obj.selectParticipant(tmp2, null);
       }
       let _location;
-      obj = {};
-      if (null != currentEmbeddedActivity) {
+      if (currentEmbeddedActivity != null) {
         _location = currentEmbeddedActivity.location;
       }
-      obj.location = _location;
-      obj.applicationId = applicationId;
-      obj.showFeedback = false;
-      currentEmbeddedActivity(hasInvalidUrlError[30]).leaveActivity(obj);
-      const obj2 = currentEmbeddedActivity(hasInvalidUrlError[30]);
+      obj = { location: null, applicationId: null, showFeedback: false };
+      obj[0] = _location;
+      obj[1] = applicationId;
+      currentEmbeddedActivity(first[30]).leaveActivity(obj);
+      const obj2 = currentEmbeddedActivity(first[30]);
     }
   }, items);
   obj = {
     hasFrameId() {
-      return currentEmbeddedActivity(hasInvalidUrlError[30]).hasFrameId();
+      return currentEmbeddedActivity(first[30]).hasFrameId();
     },
     getOrCreateFrameId() {
-      return currentEmbeddedActivity(hasInvalidUrlError[30]).getOrCreateFrameId();
+      return currentEmbeddedActivity(first[30]).getOrCreateFrameId();
     },
     releaseFrameId() {
-      return currentEmbeddedActivity(hasInvalidUrlError[30]).releaseFrameId();
+      return currentEmbeddedActivity(first[30]).releaseFrameId();
     },
-    hasInvalidUrlError,
-    setHasInvalidUrlError: tmp3.setHasInvalidUrlError,
-    hadInvalidUrlError,
+    hasInvalidUrlError: first,
+    setHasInvalidUrlError: tmp2[1],
+    hadInvalidUrlError: tmp4,
     deepLinkQueryParams: obj,
     applicationId,
     channelId
   };
   const merged1 = Object.assign(merged);
   return <BaseActivityWebView hasFrameId={function hasFrameId() {
-    return currentEmbeddedActivity(hasInvalidUrlError[30]).hasFrameId();
+    return currentEmbeddedActivity(first[30]).hasFrameId();
   }} getOrCreateFrameId={function getOrCreateFrameId() {
-    return currentEmbeddedActivity(hasInvalidUrlError[30]).getOrCreateFrameId();
+    return currentEmbeddedActivity(first[30]).getOrCreateFrameId();
   }} releaseFrameId={function releaseFrameId() {
-    return currentEmbeddedActivity(hasInvalidUrlError[30]).releaseFrameId();
-  }} hasInvalidUrlError={hasInvalidUrlError} setHasInvalidUrlError={tmp3.setHasInvalidUrlError} hadInvalidUrlError={hadInvalidUrlError} deepLinkQueryParams={obj} applicationId={applicationId} channelId={channelId} />;
+    return currentEmbeddedActivity(first[30]).releaseFrameId();
+  }} hasInvalidUrlError={first} setHasInvalidUrlError={tmp2[1]} hadInvalidUrlError={tmp4} deepLinkQueryParams={obj} applicationId={applicationId} channelId={channelId} />;
 };
 export { BaseActivityWebView };
-export { useHasInvalidUrlErrorState };
+export const useHasInvalidUrlErrorState = function useHasInvalidUrlErrorState() {
+  const tmp = callback(React.useState(false), 2);
+  const first = tmp[0];
+  return { hasInvalidUrlError: first, setHasInvalidUrlError: tmp[1], hadInvalidUrlError: importDefault(8125)(first) };
+};

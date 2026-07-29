@@ -1,24 +1,24 @@
-// Module ID: 10645
-// Function ID: 82795
+// Module ID: 10669
+// Function ID: 10670
 // Name: EmbeddedActivityBackgroundImageWithOverlay
-// Dependencies: [57, 31, 27, 33, 4165, 689, 10646, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 10670, 2]
 // Exports: default
 
-// Module 10645 (EmbeddedActivityBackgroundImageWithOverlay)
+// Module 10669 (EmbeddedActivityBackgroundImageWithOverlay)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-({ ImageBackground: closure_4, View: closure_5, StyleSheet: closure_6 } = get_ActivityIndicator);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, opacity: 0.6, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BLACK };
-_createForOfIteratorHelperLoose.overlay = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ ImageBackground: c4, View: c5, StyleSheet: closure_6 } = get_ActivityIndicator);
+createCacheKey = { overlay: null };
+createCacheKey = { flex: 1, opacity: 0.6, backgroundColor: require("Themes").colors.BLACK };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_9 = ["embedded_background"];
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/activities/native/EmbeddedActivityBackgroundImageWithOverlay.tsx");
 
@@ -34,54 +34,48 @@ export default function EmbeddedActivityBackgroundImageWithOverlay(arg0) {
   let importDefault;
   const tmp2 = callback(React.useState(false), 2);
   importDefault = tmp2[1];
-  let obj = {};
-  let id;
-  const tmp = _createForOfIteratorHelperLoose();
-  if (null != application) {
-    id = application.id;
+  let str;
+  const tmp = createCacheKey();
+  if (application != null) {
+    str = application.id;
   }
-  let str = "";
-  if (null != id) {
-    str = id;
+  if (str == null) {
+    str = "";
   }
-  obj.applicationId = str;
-  obj.names = closure_9;
-  obj.size = 1024;
-  const url = importDefault(10646)(obj).url;
-  let tmp10Result = null;
+  let obj = { applicationId: str, names: closure_9, size: 1024 };
+  const url = importDefault(10670)(obj).url;
+  let tmp7Result = null;
   if (!tmp2[0]) {
-    tmp10Result = null;
+    tmp7Result = null;
     if (null != url) {
-      tmp10Result = null;
+      tmp7Result = null;
       if ("" !== url) {
-        obj = { resizeMode };
-        obj = {};
-        let tmp6;
-        if (null != url) {
-          tmp6 = url;
-        }
-        obj.uri = tmp6;
-        obj.source = obj;
-        if (null == dimensionsStyle) {
+        obj = { resizeMode: null, source: null, style: null, imageStyle: null, onError: null, children: null };
+        obj[0] = resizeMode;
+        obj = { uri: null };
+        obj[0] = url;
+        obj[1] = obj;
+        if (dimensionsStyle == null) {
           dimensionsStyle = absoluteFillObject.absoluteFillObject;
         }
-        obj.style = dimensionsStyle;
-        const obj1 = { borderRadius };
-        obj.imageStyle = obj1;
-        obj.onError = function onError() {
+        obj[2] = dimensionsStyle;
+        const obj1 = { borderRadius: null };
+        obj1[0] = borderRadius;
+        obj[3] = obj1;
+        obj[4] = function onError() {
           return callback(true);
         };
-        const obj2 = {};
+        const obj2 = { style: null };
         const items = [tmp.overlay, ];
-        const obj3 = { borderRadius };
+        const obj3 = { borderRadius: null };
+        obj3[0] = borderRadius;
         items[1] = obj3;
-        obj2.style = items;
-        obj.children = <closure_5 />;
-        tmp10Result = <closure_4 />;
-        const tmp10 = jsx;
-        const tmp11 = closure_4;
+        obj2[0] = items;
+        obj[5] = <closure_5 style={null} />;
+        tmp7Result = tmp7(closure_4, obj);
+        const tmp8 = closure_4;
       }
     }
   }
-  return tmp10Result;
+  return tmp7Result;
 };

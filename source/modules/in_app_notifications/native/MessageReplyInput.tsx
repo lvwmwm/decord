@@ -1,33 +1,35 @@
-// Module ID: 10364
-// Function ID: 79905
+// Module ID: 10388
+// Function ID: 10389
 // Name: AnimatedChatInputReplyBar
-// Dependencies: [5, 57, 31, 27, 1348, 1853, 33, 4165, 689, 1324, 4026, 4166, 10365, 5193, 4395, 4355, 6719, 10240, 10319, 4134, 5948, 5695, 9312, 10369, 6661, 9951, 1212, 6722, 6555, 4111, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 1877, 21, 4189, 712, 1348, 4050, 4190, 10389, 4418, 4380, 6740, 10261, 10340, 4158, 5967, 5713, 9336, 10393, 6682, 9973, 1236, 6743, 6576, 4135, 2]
 // Exports: MessageReplyInput
 
-// Module 10364 (AnimatedChatInputReplyBar)
+// Module 10388 (AnimatedChatInputReplyBar)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "useKeyboardBlurring";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import rebuild from "rebuild";
+import get_ActivityIndicator from "InAppNotificationAccessoryTypes";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { EmojiIntention } from "set";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "EMOJI_PICKER_ACTION_SHEET_KEY";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let StyleSheet;
+let c10;
 let closure_6;
-let closure_7;
+let error;
+let unpackModuleId;
 const require = arg1;
 function AnimatedChatInputReplyBar(replying) {
   let onToggleReplyMention;
   let pendingReply;
   let pendingReplyAuthor;
   replying = replying.replying;
+  let sharedValue;
   ({ pendingReply, pendingReplyAuthor, onToggleReplyMention } = replying);
-  let obj = replying(1324);
-  const tmp = _createForOfIteratorHelperLoose();
-  const sharedValue = replying(4026).useSharedValue(0);
+  let obj = replying(1348);
+  const tmp3 = createCacheKey();
+  sharedValue = replying(4050).useSharedValue(0);
   const items = [replying, sharedValue];
   const effect = React.useEffect(() => {
     const withTiming = replying(outer1_2[11]).withTiming;
@@ -38,185 +40,280 @@ function AnimatedChatInputReplyBar(replying) {
       const result1 = set(withTiming(0, obj));
     }
   }, items);
-  const obj2 = replying(4026);
+  const obj2 = replying(4050);
+  const tmp = replying;
   const fn = function y() {
-    const obj = { height: replying(outer1_2[10]).interpolate(sharedValue.get(), [0, 1], [0, 40]), opacity: sharedValue.get() };
+    const obj = { height: null, opacity: null };
+    obj[0] = replying(outer1_2[10]).interpolate(sharedValue.get(), [0, 1], [0, 40]);
+    obj[1] = sharedValue.get();
     return obj;
   };
-  obj = { interpolate: replying(4026).interpolate, sv: sharedValue, REPLY_BAR_HEIGHT: 40 };
+  obj = { interpolate: replying(4050).interpolate, sv: sharedValue, REPLY_BAR_HEIGHT: 40 };
   fn.__closure = obj;
   fn.__workletHash = 878601267127;
   fn.__initData = closure_13;
-  const animatedStyle = replying(4026).useAnimatedStyle(fn);
-  obj = { style: items1 };
-  items1 = [tmp.replyBarContainer, obj.useMobileVisualRefreshConfig({ location: "MessageReplyInput" }).chatInputFloating ? tmp.replyBarRedesign : tmp.replyBarNoRedesign, animatedStyle];
-  obj.children = callback2(replying(10365).ChatInputReplyBar, { pendingReply, pendingReplyAuthor, onToggleReplyMention, chatInputFloatingOverride: true });
-  return callback2(sharedValue(4026).View, obj);
+  const animatedStyle = replying(4050).useAnimatedStyle(fn);
+  const items1 = [tmp3.replyBarContainer, , ];
+  obj = { style: items1, children: null };
+  items1[1] = obj.useMobileVisualRefreshConfig({ location: "MessageReplyInput" }).chatInputFloating ? tmp3.replyBarRedesign : tmp3.replyBarNoRedesign;
+  items1[2] = animatedStyle;
+  obj[1] = closure_10(tmp(10389).ChatInputReplyBar, { pendingReply, pendingReplyAuthor, onToggleReplyMention, chatInputFloatingOverride: true });
+  return closure_10(sharedValue(4050).View, obj);
 }
-({ Keyboard: closure_6, View: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "column", gap: 0, backgroundColor: require("_createForOfIteratorHelperLoose").colors.MOBILE_ALERT_BACKGROUND_DEFAULT, padding: 0, marginHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, marginBottom: require("_createForOfIteratorHelperLoose").space.PX_4, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, overflow: "hidden" };
-_createForOfIteratorHelperLoose.inputContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.iconsContainer = { flexDirection: "row", alignItems: "center", gap: 4 };
-let obj1 = { flex: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.none, border: 0, color: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.input = obj1;
-let obj2 = { flexDirection: "row", alignItems: "center", gap: 8, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose.inputRow = obj2;
-_createForOfIteratorHelperLoose.placeholderText = { color: require("_createForOfIteratorHelperLoose").colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
-let obj4 = { justifyContent: "center", alignContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_MOD_STRONG, borderBottomWidth: get_ActivityIndicator.StyleSheet.hairlineWidth, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_MUTED, overflow: "hidden" };
-_createForOfIteratorHelperLoose.replyBarContainer = obj4;
-let obj3 = { color: require("_createForOfIteratorHelperLoose").colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.replyBarNoRedesign = { paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_12, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj5 = { paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_12, paddingRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.replyBarRedesign = { paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_4 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ Keyboard: closure_6, View: error, StyleSheet } = get_ActivityIndicator);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { inputContainer: null, iconsContainer: null, input: null, inputRow: null, placeholderText: null, replyBarContainer: null, replyBarNoRedesign: null, replyBarRedesign: null };
+createCacheKey = { flexDirection: "column", gap: 0, backgroundColor: require("Themes").colors.MOBILE_ALERT_BACKGROUND_DEFAULT, padding: 0, marginHorizontal: require("Themes").space.PX_16, marginBottom: require("Themes").space.PX_4, borderRadius: require("Themes").radii.lg, overflow: "hidden" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexDirection: "row", alignItems: "center", gap: 4 };
+createCacheKey[2] = { flex: 1, borderRadius: require("Themes").radii.none, border: 0, color: require("Themes").colors.TEXT_DEFAULT };
+let obj1 = { flex: 1, borderRadius: require("Themes").radii.none, border: 0, color: require("Themes").colors.TEXT_DEFAULT };
+createCacheKey[3] = { flexDirection: "row", alignItems: "center", gap: 8, paddingHorizontal: require("Themes").space.PX_12, paddingVertical: require("Themes").space.PX_12 };
+let obj2 = { flexDirection: "row", alignItems: "center", gap: 8, paddingHorizontal: require("Themes").space.PX_12, paddingVertical: require("Themes").space.PX_12 };
+createCacheKey[4] = { color: require("Themes").colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
+let obj3 = { color: require("Themes").colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
+createCacheKey[5] = { justifyContent: "center", alignContent: "center", backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: require("Themes").colors.BORDER_MUTED, overflow: "hidden" };
+let obj4 = { justifyContent: "center", alignContent: "center", backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: require("Themes").colors.BORDER_MUTED, overflow: "hidden" };
+createCacheKey[6] = { paddingLeft: require("Themes").space.PX_12, paddingRight: require("Themes").space.PX_8 };
+let obj5 = { paddingLeft: require("Themes").space.PX_12, paddingRight: require("Themes").space.PX_8 };
+createCacheKey[7] = { paddingLeft: require("Themes").space.PX_4 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_13 = { code: "function MessageReplyInputTsx1(){const{interpolate,sv,REPLY_BAR_HEIGHT}=this.__closure;return{height:interpolate(sv.get(),[0,1],[0,REPLY_BAR_HEIGHT]),opacity:sv.get()};}" };
-let obj6 = { paddingLeft: require("_createForOfIteratorHelperLoose").space.PX_4 };
-let result = require("result").fileFinishedImporting("modules/in_app_notifications/native/MessageReplyInput.tsx");
+let obj6 = { paddingLeft: require("Themes").space.PX_4 };
+let result = require("noop").fileFinishedImporting("modules/in_app_notifications/native/MessageReplyInput.tsx");
 
 export const MessageReplyInput = function MessageReplyInput(notification) {
   let guild;
   notification = notification.notification;
+  let _require = notification;
   const onMessageSent = notification.onMessageSent;
-  const ref = first1.useRef(null);
-  let tmp2 = callback(first1.useState(""), 2);
-  const first = tmp2[0];
-  callback = tmp4;
-  const tmp5 = callback(first1.useState(false), 2);
-  first1 = tmp5[0];
-  let closure_6 = tmp5[1];
-  const tmp7 = callback(first1.useState(false), 2);
-  const first2 = tmp7[0];
-  let _isNativeReflectConstruct = tmp7[1];
-  const tmp9 = callback(first1.useState(true), 2);
-  const first3 = tmp9[0];
-  const callback2 = tmp9[1];
-  const tmp11 = channel();
-  const message = notification.message;
+  let ref;
+  let first;
+  let callback;
+  let first1;
+  let closure_6;
+  let first2;
+  let ensureGuildLoaded;
+  let first3;
+  let callback2;
+  let message;
+  let channel;
+  let memo;
+  let closure_14;
+  ref = first1.useRef(null);
+  const tmp3 = callback(first1.useState(""), 2);
+  first = tmp3[0];
+  callback = tmp5;
+  const tmp6 = callback(first1.useState(false), 2);
+  first1 = tmp6[0];
+  closure_6 = tmp6[1];
+  const tmp8 = callback(first1.useState(false), 2);
+  first2 = tmp8[0];
+  ensureGuildLoaded = tmp8[1];
+  const tmp10 = callback(first1.useState(true), 2);
+  first3 = tmp10[0];
+  callback2 = tmp10[1];
+  const tmp12 = channel();
+  message = notification.message;
   channel = notification.channel;
-  let obj = notification(ref[14]);
+  let obj = _require(ref[13]);
   const nullableMessageAuthor = obj.useNullableMessageAuthor(message);
-  let obj1 = notification(ref[16]);
+  let obj1 = _require(ref[15]);
   const items = [first3, channel, message];
   const inputStyles = obj1.useInputStyles({});
-  const memo = first1.useMemo(() => ({ shouldMention: first3, showMentionToggle: !channel.isPrivate(), channel, message }), items);
+  memo = first1.useMemo(() => ({ shouldMention: first3, showMentionToggle: !channel.isPrivate(), channel, message }), items);
   const layoutEffect = first1.useLayoutEffect(() => {
     const current = ref.current;
-    if (null != current) {
+    if (current != null) {
       current.focus();
     }
   }, []);
+  _require = undefined;
+  _require = first((arg0) => {
+    let closure_0 = arg0;
+    let c2 = 0;
+    let c3 = 0;
+    return (function*(arg0) {
+      if (length === 2) {
+        length = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          length = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              length = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              length = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp2;
+              if (true !== outer1_5) {
+                const id = tmp39.channel.id;
+                if (0 !== length.length) {
+                  if (null != id) {
+                    let getSendMessageOptionsForReply = ref;
+                    let obj1 = callback(ref[16]);
+                    const result = obj1.trackInAppNotificationAccessoryClicked(tmp39, callback(ref[17]).InAppNotificationAccessoryTypes.SEND_MESSAGE_BUTTON);
+                    outer1_6(true);
+                    const result1 = callback(ref[18]).triggerHapticFeedback(callback(ref[18]).HapticFeedbackTypes.IMPACT_MEDIUM);
+                    let tmp20 = onMessageSent;
+                    const obj3 = callback(ref[18]);
+                    const parsed = onMessageSent(ref[19]).parse(channel.getChannel(id), tmp13);
+                    const obj5 = onMessageSent(ref[20]);
+                    if (outer1_7) {
+                      tmp20 = tmp20(getSendMessageOptionsForReply[20]);
+                      getSendMessageOptionsForReply = tmp20.getSendMessageOptionsForReply;
+                      let sendMessageOptionsForReply = getSendMessageOptionsForReply(outer1_13);
+                    } else {
+                      sendMessageOptionsForReply = {};
+                    }
+                    obj1 = {};
+                    const merged = Object.assign(sendMessageOptionsForReply);
+                    obj1.location = "InAppNotification";
+                    obj5.sendMessage(id, parsed, false, obj1);
+                    c2 = 1;
+                    length = 1;
+                    const obj4 = onMessageSent(ref[19]);
+                  }
+                }
+              }
+              length = 3;
+            }
+          } else if (arg0 === 1) {
+            length = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            outer1_1();
+            outer1_6(false);
+            outer1_4("");
+          }
+          length = 3;
+          obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } catch (tmp33) {
+          length = tmp;
+          throw tmp33;
+        }
+      }
+    })();
+  });
   const items1 = [first, onMessageSent, memo, first2, first1];
-  let closure_14 = first1.useCallback((() => {
-    // CreateGeneratorClosureLongIndex (0x67)
-    let closure_0 = first(tmp);
-    return function() {
-      return callback(...arguments);
-    };
-  })(), items1);
+  closure_14 = first1.useCallback(function() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  }, items1);
   const items2 = [, ];
   ({ channel: arr3[0], guild } = notification);
   let id;
-  if (null != guild) {
+  if (guild != null) {
     id = guild.id;
   }
   items2[1] = id;
-  obj = { style: obj };
-  obj = { paddingBottom: onMessageSent(ref[13])({ includeKeyboardHeight: true }).insets.bottom };
-  obj1 = { style: tmp11.inputContainer };
+  obj = { style: tmp12.inputContainer, children: null };
+  obj = {
+    replying: first2,
+    pendingReply: memo,
+    pendingReplyAuthor: nullableMessageAuthor,
+    onToggleReplyMention() {
+      return callback2(!first3);
+    }
+  };
   callback = first1.useCallback(() => {
     closure_6.dismiss();
-    let obj = notification(ref[22]);
+    let obj = lib(ref[21]);
     obj = {
       onPressEmoji(arg0) {
-        let closure_0 = onMessageSent(ref[23])(arg0);
-        outer1_4((arg0) => "" + arg0 + " " + closure_0);
-        const current = outer1_2.current;
-        if (null != current) {
+        let closure_0 = outer1_1(outer1_2[22])(arg0);
+        callback((arg0) => "" + arg0 + " " + closure_0);
+        const current = ref.current;
+        if (current != null) {
           current.focus();
         }
       },
-      pickerIntention: first3.CHAT
+      pickerIntention: first3.CHAT,
+      channel: null,
+      guildId: null,
+      startExpanded: false
     };
-    const channel = notification.channel;
-    let tmp2;
-    if (null != channel) {
-      tmp2 = channel;
-    }
-    obj.channel = tmp2;
-    const guild = notification.guild;
+    const channel = lib.channel;
+    obj[2] = channel;
+    const guild = lib.guild;
     let id;
-    if (null != guild) {
+    if (guild != null) {
       id = guild.id;
     }
-    let tmp4;
-    if (null != id) {
-      tmp4 = id;
-    }
-    obj.guildId = tmp4;
-    obj.startExpanded = false;
+    obj[3] = id;
     const result = obj.openEmojiPickerActionSheet(obj);
   }, items2);
-  const items3 = [
-    callback2(closure_14, {
-      replying: first2,
-      pendingReply: memo,
-      pendingReplyAuthor: nullableMessageAuthor,
-      onToggleReplyMention() {
-        return callback2(!first3);
-      }
-    }),
-
-  ];
-  const obj3 = { style: tmp11.inputRow };
-  const obj4 = {};
+  const items3 = [callback2(closure_14, obj), ];
+  obj1 = { style: tmp12.inputRow, children: null };
   let str = "icon-only";
   if (first2) {
     str = "secondary";
   }
-  obj4.variant = str;
-  obj4.size = "sm";
-  const obj5 = { size: "sm", color: onMessageSent(ref[8]).colors.CHAT_INPUT_ICON_DEFAULT_TINT };
-  obj4.icon = callback2(notification(ref[25]).ArrowAngleLeftUpIcon, obj5);
-  obj4.onPress = function onPress() {
-    const result = notification(ref[17]).trackInAppNotificationAccessoryClicked(notification, notification(ref[18]).InAppNotificationAccessoryTypes.REPLY_TOGGLE);
+  const obj2 = { variant: str, size: "sm", icon: null, onPress: null, accessibilityLabel: null };
+  let obj3 = { size: "sm", color: null };
+  obj3[1] = onMessageSent(ref[8]).colors.CHAT_INPUT_ICON_DEFAULT_TINT;
+  obj2[2] = callback2(_require(ref[24]).ArrowAngleLeftUpIcon, obj3);
+  obj2[3] = function onPress() {
+    const result = lib(ref[16]).trackInAppNotificationAccessoryClicked(lib, lib(ref[17]).InAppNotificationAccessoryTypes.REPLY_TOGGLE);
     callback(!first2);
   };
-  const intl = notification(ref[26]).intl;
-  obj4.accessibilityLabel = intl.string(notification(ref[26]).t["5IEsGx"]);
-  const items4 = [callback2(notification(ref[24]).IconButton, obj4), , ];
-  const obj6 = { ref, style: items5, placeholderTextColor: tmp11.placeholderText.color };
-  items5 = [tmp11.input, inputStyles.text];
-  const intl2 = notification(ref[26]).intl;
-  obj6.placeholder = intl2.formatToPlainString(notification(ref[26]).t["8lzR/R"], { channel: onMessageSent(ref[15])(channel, true) });
-  obj6.autoFocus = true;
-  obj6.value = first;
-  obj6.onChangeText = tmp2[1];
-  items4[1] = callback2(notification(ref[27]).NativeTextInput, obj6);
-  const obj7 = { style: tmp11.iconsContainer };
-  const obj8 = { variant: "icon-only", size: "sm" };
-  const obj9 = { size: "sm", color: onMessageSent(ref[8]).colors.CHAT_INPUT_ICON_DEFAULT_TINT };
-  obj8.icon = callback2(notification(ref[28]).ReactionIcon, obj9);
-  obj8.onPress = callback;
-  const intl3 = notification(ref[26]).intl;
-  obj8.accessibilityLabel = intl3.string(notification(ref[26]).t.sMOuuS);
-  const items6 = [callback2(notification(ref[24]).IconButton, obj8), ];
-  const obj10 = { variant: "primary", size: "sm" };
-  const intl4 = notification(ref[26]).intl;
-  obj10.accessibilityLabel = intl4.string(notification(ref[26]).t.TXNS7S);
-  const obj11 = { size: "sm", color: onMessageSent(ref[8]).colors.WHITE };
-  obj10.icon = callback2(notification(ref[29]).SendMessageIcon, obj11);
-  obj10.onPress = function onPress() {
-    return callback3(notification);
+  const intl = tmp13(tmp14[25]).intl;
+  obj2[4] = intl.string(_require(ref[25]).t["5IEsGx"]);
+  const items4 = [callback2(_require(ref[23]).IconButton, obj2), , ];
+  let obj4 = { ref, style: items5, placeholderTextColor: tmp12.placeholderText.color, placeholder: null, autoFocus: true, value: null, onChangeText: null };
+  items5 = [tmp12.input, inputStyles.text];
+  const intl2 = tmp13(tmp14[25]).intl;
+  obj4[3] = intl2.formatToPlainString(_require(ref[25]).t["8lzR/R"], { channel: onMessageSent(ref[14])(channel, true) });
+  obj4[5] = first;
+  obj4[6] = tmp3[1];
+  items4[1] = callback2(_require(ref[26]).NativeTextInput, obj4);
+  let obj5 = { style: tmp12.iconsContainer, children: null };
+  const obj6 = { variant: "icon-only", size: "sm", icon: null, onPress: null, accessibilityLabel: null };
+  const obj7 = { size: "sm", color: null };
+  obj7[1] = onMessageSent(ref[8]).colors.CHAT_INPUT_ICON_DEFAULT_TINT;
+  obj6[2] = callback2(_require(ref[27]).ReactionIcon, obj7);
+  obj6[3] = callback;
+  const intl3 = tmp13(tmp14[25]).intl;
+  obj6[4] = intl3.string(_require(ref[25]).t.sMOuuS);
+  const items6 = [callback2(_require(ref[23]).IconButton, obj6), ];
+  const obj8 = { variant: "primary", size: "sm", accessibilityLabel: null, icon: null, onPress: null, loading: null };
+  const intl4 = tmp13(tmp14[25]).intl;
+  obj8[2] = intl4.string(_require(ref[25]).t.TXNS7S);
+  const obj9 = { size: "sm", color: null };
+  obj9[1] = onMessageSent(ref[8]).colors.WHITE;
+  obj8[3] = callback2(_require(ref[28]).SendMessageIcon, obj9);
+  obj8[4] = function onPress() {
+    return callback3(closure_0);
   };
-  obj10.loading = first1;
-  items6[1] = callback2(notification(ref[24]).IconButton, obj10);
-  obj7.children = items6;
-  items4[2] = message(first2, obj7);
-  obj3.children = items4;
-  items3[1] = message(first2, obj3);
-  obj1.children = items3;
-  obj.children = message(first2, obj1);
-  return callback2(first2, obj);
+  obj8[5] = first1;
+  items6[1] = callback2(_require(ref[23]).IconButton, obj8);
+  obj5[1] = items6;
+  items4[2] = message(first2, obj5);
+  obj1[1] = items4;
+  items3[1] = message(first2, obj1);
+  obj[1] = items3;
+  return message(first2, obj);
 };

@@ -1,61 +1,58 @@
-// Module ID: 14582
-// Function ID: 111225
+// Module ID: 14607
+// Function ID: 14608
 // Name: useHasExpiredShopBlocks
-// Dependencies: [57, 31, 653, 5811, 2]
+// Dependencies: [32, 19, 676, 5829, 2]
 // Exports: useHasExpiredShopBlocks
 
-// Module 14582 (useHasExpiredShopBlocks)
+// Module 14607 (useHasExpiredShopBlocks)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { MAX_TIMEOUT_MS } from "ME";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ useEffect: closure_3, useState: closure_4 } = result);
-result = require("ME").fileFinishedImporting("modules/collectibles/hooks/useHasExpiredShopBlocks.tsx");
+({ useEffect: c3, useState: c4 } = noop);
+const result = require("ME").fileFinishedImporting("modules/collectibles/hooks/useHasExpiredShopBlocks.tsx");
 
 export const useHasExpiredShopBlocks = (arg0, arg1, arg2) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const callback = arg2;
-  let tmp = callback(callback3(false), 2);
+  const tmp = callback(callback3(false), 2);
   const callback2 = tmp[1];
   const items = [arg1, arg2, arg0];
   callback2(() => {
-    const tmp = (function getNextBlockExpiration(closure_0) {
-      let c0 = null;
-      const item = closure_0.forEach((type) => {
-        if (type.type === _null(5811).ShopBlockType.IMMERSIVE_BANNER) {
-          let time = null;
-          if (null != type.endTime) {
-            const endTime2 = type.endTime;
-            time = endTime2.getTime();
-          }
-          let time1 = time;
-        } else {
-          time1 = null;
-          if (type.type === _null(5811).ShopBlockType.COUNTDOWN_TIMER) {
-            const endTime = type.endTime;
-            time1 = endTime.getTime();
-          }
+    let timeout = null;
+    const item = timeout.forEach((type) => {
+      if (type.type === callback(outer1_1[3]).ShopBlockType.IMMERSIVE_BANNER) {
+        let time = null;
+        if (null != type.endTime) {
+          const endTime2 = type.endTime;
+          time = endTime2.getTime();
         }
-        let tmp5 = null == time1;
-        if (!tmp5) {
-          let tmp6 = null != time1;
-          if (tmp6) {
-            tmp6 = time1 < time1;
-          }
-          tmp5 = tmp6;
+        let time1 = time;
+      } else {
+        time1 = null;
+        if (type.type === callback(outer1_1[3]).ShopBlockType.COUNTDOWN_TIMER) {
+          const endTime = type.endTime;
+          time1 = endTime.getTime();
         }
-      });
-      return c0;
-    })(timeout);
+      }
+      let tmp5 = null == time1;
+      if (!tmp5) {
+        let tmp6 = null != time1;
+        if (tmp6) {
+          tmp6 = time1 < time1;
+        }
+        tmp5 = tmp6;
+      }
+    });
     if (!closure_1) {
       if (!_slicedToArray) {
-        if (null != tmp) {
+        if (null != tmp2) {
           const _Date = Date;
-          const diff = tmp - Date.now();
+          const diff = tmp2 - Date.now();
           if (diff <= 0) {
             callback(true);
           } else {
@@ -63,7 +60,7 @@ export const useHasExpiredShopBlocks = (arg0, arg1, arg2) => {
             const _setTimeout = setTimeout;
             const _Math = Math;
             timeout = setTimeout(() => {
-              outer1_3(true);
+              callback2(true);
             }, Math.min(outer1_5, diff));
             return () => clearTimeout(closure_0);
           }

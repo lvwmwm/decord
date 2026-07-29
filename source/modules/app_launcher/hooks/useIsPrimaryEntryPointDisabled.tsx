@@ -1,12 +1,12 @@
-// Module ID: 11296
-// Function ID: 87650
+// Module ID: 11320
+// Function ID: 11321
 // Name: useIsPrimaryEntryPointDisabled
-// Dependencies: [4188, 3793, 482, 566, 11113, 11207, 7989, 7993, 477, 1212, 2]
+// Dependencies: [4212, 3817, 505, 589, 11137, 11231, 8014, 8018, 500, 1236, 2]
 // Exports: default
 
-// Module 11296 (useIsPrimaryEntryPointDisabled)
-import _callSuper from "_callSuper";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11320 (useIsPrimaryEntryPointDisabled)
+import createExecutable from "createExecutable";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "sum";
 
 const require = arg1;
@@ -22,79 +22,87 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
   if ("channel" === context.type) {
     channel = context.channel;
   }
-  let obj = channel(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_4.can(outer1_5.USE_EMBEDDED_ACTIVITIES, channel));
+  const items = [getUncachedChannelPermissions];
+  const stateFromStores = channel(589).useStateFromStores(items, () => outer1_4.can(outer1_5.USE_EMBEDDED_ACTIVITIES, channel));
+  const obj = channel(589);
   let id;
-  if (null != channel) {
+  if (channel != null) {
     id = channel.id;
   }
-  const embeddedActivityLaunchability = channel(11113).useEmbeddedActivityLaunchability(id);
+  const embeddedActivityLaunchability = channel(11137).useEmbeddedActivityLaunchability(id);
   let flag = false;
-  if (channel(11207).ActivityAction.LEAVE !== activityAction) {
-    if (channel(11207).ActivityAction.START === activityAction) {
+  if (channel(11231).ActivityAction.LEAVE !== activityAction) {
+    if (tmp2(11231).ActivityAction.START === activityAction) {
       flag = false;
       if (null != channel) {
-        if (null != channel) {
-          if (channel.isGuildVoice()) {
-            flag = false;
-            if (embeddedActivityLaunchability !== channel(11113).EmbeddedActivityLaunchability.CAN_LAUNCH) {
-              flag = true;
-            }
+        let isGuildVoiceResult;
+        if (channel != null) {
+          isGuildVoiceResult = channel.isGuildVoice();
+        }
+        if (isGuildVoiceResult) {
+          flag = false;
+          if (embeddedActivityLaunchability !== tmp2(11137).EmbeddedActivityLaunchability.CAN_LAUNCH) {
+            flag = true;
+          }
+        } else {
+          let tmp2Result = tmp2(8014);
+          flag = false;
+          if (!tmp2Result.isActivitiesInTextEnabled(channel)) {
+            flag = true;
           }
         }
-        flag = false;
-        if (!obj4.isActivitiesInTextEnabled(channel)) {
-          flag = true;
-        }
-        obj4 = channel(7989);
       }
     } else {
       flag = false;
-      if (channel(11207).ActivityAction.JOIN === activityAction) {
-        if (null != channel) {
-          if (channel.isGuildVoice()) {
-            flag = !stateFromStores;
+      if (tmp2(11231).ActivityAction.JOIN === activityAction) {
+        let isGuildVoiceResult1;
+        if (channel != null) {
+          isGuildVoiceResult1 = channel.isGuildVoice();
+        }
+        if (isGuildVoiceResult1) {
+          flag = !stateFromStores;
+        } else {
+          tmp2Result = tmp2(8014);
+          flag = false;
+          if (!tmp2Result.isActivitiesInTextEnabled(channel)) {
+            flag = true;
           }
         }
-        flag = false;
-        if (!obj3.isActivitiesInTextEnabled(channel)) {
-          flag = true;
-        }
-        obj3 = channel(7989);
       }
     }
   }
-  let stringResult;
-  let flag2 = flag;
-  if (activityAction !== channel(11207).ActivityAction.LEAVE) {
-    const tmp14 = application instanceof _callSuper ? application.embeddedActivityConfig : application.embedded_activity_config;
-    importDefault(7993);
-    channel(477);
-    if (null != tmp14) {
-      const supported_platforms = tmp14.supported_platforms;
-      if (!supported_platforms.includes(tmp20)) {
-        const intl = channel(1212).intl;
-        stringResult = intl.string(channel(1212).t.z2YTgJ);
-        flag2 = false;
+  let disabled = flag;
+  let reason;
+  if (activityAction !== channel(11231).ActivityAction.LEAVE) {
+    const tmp10 = application instanceof createExecutable ? application.embeddedActivityConfig : application.embedded_activity_config;
+    importDefault(8018);
+    tmp2(500);
+    if (null != tmp10) {
+      const supported_platforms = tmp10.supported_platforms;
+      if (!supported_platforms.includes(tmp14)) {
+        const intl = tmp2(1236).intl;
+        reason = intl.string(tmp2(1236).t.z2YTgJ);
+        disabled = false;
       }
     }
-    flag2 = flag;
-    if (tmp23) {
-      const intl2 = channel(1212).intl;
-      stringResult = intl2.string(channel(1212).t.ddSR3v);
-      flag2 = true;
+    let isThreadResult;
+    if (channel != null) {
+      isThreadResult = channel.isThread();
     }
-    tmp23 = null != channel && channel.isThread();
+    disabled = flag;
+    if (isThreadResult) {
+      const intl2 = tmp2(1236).intl;
+      reason = intl2.string(tmp2(1236).t.ddSR3v);
+      disabled = true;
+    }
   }
-  let tmp26 = flag2;
-  if (flag2) {
-    tmp26 = null == stringResult;
+  let tmp16 = disabled;
+  if (disabled) {
+    tmp16 = null == reason;
   }
-  if (tmp26) {
-    const intl3 = channel(1212).intl;
-    stringResult = intl3.string(channel(1212).t.f41E1g);
+  if (tmp16) {
+    const intl3 = tmp2(1236).intl;
+    reason = intl3.string(tmp2(1236).t.f41E1g);
   }
-  obj = { disabled: flag2, reason: stringResult };
-  return obj;
+  return { disabled, reason };
 };

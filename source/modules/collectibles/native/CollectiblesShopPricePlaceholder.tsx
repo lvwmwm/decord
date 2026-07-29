@@ -1,38 +1,39 @@
-// Module ID: 8701
-// Function ID: 68928
+// Module ID: 8725
+// Function ID: 8726
 // Name: CollectiblesShopPricePlaceholder
-// Dependencies: [31, 33, 4165, 689, 4026, 4166, 2]
+// Dependencies: [19, 21, 4189, 712, 4050, 4190, 2]
 // Exports: CollectiblesShopPricePlaceholder
 
-// Module 8701 (CollectiblesShopPricePlaceholder)
-import result from "result";
+// Module 8725 (CollectiblesShopPricePlaceholder)
+import noop from "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { height: 16, flex: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, backgroundColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
-_createForOfIteratorHelperLoose.skeletonContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { skeletonContainer: null };
+createCacheKey = { height: 16, flex: 1, borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_6 = { code: "function CollectiblesShopPricePlaceholderTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/collectibles/native/CollectiblesShopPricePlaceholder.tsx");
+let result = require("createCacheKey").fileFinishedImporting("modules/collectibles/native/CollectiblesShopPricePlaceholder.tsx");
 
 export const CollectiblesShopPricePlaceholder = function CollectiblesShopPricePlaceholder(style) {
-  const tmp = _createForOfIteratorHelperLoose();
-  sharedValue = sharedValue(4026).useSharedValue(0.3);
+  let sharedValue;
+  const tmp = createCacheKey();
+  sharedValue = sharedValue(4050).useSharedValue(0.3);
   const items = [sharedValue];
   const effect = React.useEffect(() => {
     const obj = sharedValue(outer1_2[4]);
     const result = sharedValue.set(obj.withRepeat(sharedValue(outer1_2[5]).withTiming(1, { duration: 650 }), -1, true));
   }, items);
-  let obj = sharedValue(4026);
+  let obj = sharedValue(4050);
   const fn = function h() {
     return { opacity: sharedValue.get() };
   };
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 10107093534072;
   fn.__initData = closure_6;
-  const animatedStyle = sharedValue(4026).useAnimatedStyle(fn);
+  const animatedStyle = sharedValue(4050).useAnimatedStyle(fn);
   style = [tmp.skeletonContainer, style.style, animatedStyle];
-  return jsx(importDefault(4026).View, { style });
+  return jsx(importDefault(4050).View, { style });
 };

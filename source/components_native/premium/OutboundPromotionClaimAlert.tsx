@@ -1,168 +1,185 @@
-// Module ID: 12567
-// Function ID: 97139
+// Module ID: 12589
+// Function ID: 12590
 // Name: OutboundPromotionClaimAlert
-// Dependencies: [57, 31, 27, 33, 4165, 689, 12568, 5497, 5517, 6545, 12569, 4161, 1212, 4578, 5525, 12570, 4596, 3862, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 12590, 5515, 5535, 6566, 12591, 4185, 1236, 4600, 5543, 12592, 4618, 3886, 2]
 // Exports: default
 
-// Module 12567 (OutboundPromotionClaimAlert)
+// Module 12589 (OutboundPromotionClaimAlert)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+import noop from "noop";
+import get_ActivityIndicator from "module_3886";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_5;
+let c10;
+let c5;
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
 const require = arg1;
-({ ActivityIndicator: closure_5, View: closure_6, Image: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
-({ jsx: closure_9, jsxs: closure_10 } = jsxProd);
-_createForOfIteratorHelperLoose = { loading: { marginVertical: 80 }, body: { alignItems: "center" }, title: { marginBottom: 8 }, errorTitle: { lineHeight: 24, marginBottom: 8 }, bodyText: { textAlign: "center", lineHeight: 20 } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, marginTop: 16, padding: 12, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.copyInputContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.copyInputLabel = { lineHeight: 20, marginBottom: 8 };
-let obj1 = { borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, padding: 8, marginBottom: 8, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-_createForOfIteratorHelperLoose.copyInput = obj1;
-_createForOfIteratorHelperLoose.copyInputCopied = { borderColor: require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_POSITIVE };
-_createForOfIteratorHelperLoose.copyButton = { paddingHorizontal: 8, marginLeft: 8 };
-_createForOfIteratorHelperLoose.promotionArt = { width: 200, height: 100, marginBottom: 20 };
-_createForOfIteratorHelperLoose.errorArt = { width: 141, height: 99, marginBottom: 20 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { borderColor: require("_createForOfIteratorHelperLoose").colors.ICON_FEEDBACK_POSITIVE };
+({ ActivityIndicator: c5, View: closure_6, Image: error, ScrollView: metroImportAll } = get_ActivityIndicator);
+({ jsx: c9, jsxs: c10 } = jsxProd);
+createCacheKey = { loading: { marginVertical: 80 }, body: { alignItems: "center" }, title: { marginBottom: 8 }, errorTitle: { lineHeight: 24, marginBottom: 8 }, bodyText: { textAlign: "center", lineHeight: 20 }, copyInputContainer: null, copyInputLabel: null, copyInput: null, copyInputCopied: null, copyButton: null, promotionArt: null, errorArt: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, marginTop: 16, padding: 12, borderRadius: require("Themes").radii.sm };
+createCacheKey[5] = createCacheKey;
+createCacheKey[6] = { lineHeight: 20, marginBottom: 8 };
+createCacheKey[7] = { borderWidth: 1, borderColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.xs, padding: 8, marginBottom: 8, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+let obj1 = { borderWidth: 1, borderColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.xs, padding: 8, marginBottom: 8, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+createCacheKey[8] = { borderColor: require("Themes").colors.ICON_FEEDBACK_POSITIVE };
+createCacheKey[9] = { paddingHorizontal: 8, marginLeft: 8 };
+createCacheKey[10] = { width: 200, height: 100, marginBottom: 20 };
+createCacheKey[11] = { width: 141, height: 99, marginBottom: 20 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { borderColor: require("Themes").colors.ICON_FEEDBACK_POSITIVE };
 let result = require("get ActivityIndicator").fileFinishedImporting("components_native/premium/OutboundPromotionClaimAlert.tsx");
 
 export default function OutboundPromotionClaimAlert(onCancel) {
-  let closure_5;
-  let tmp5;
+  let c4;
+  let c5;
+  let tmp3;
+  let tmp7;
   onCancel = onCancel.onCancel;
   const onClaim = onCancel.onClaim;
   const code = onCancel.code;
   const outboundPromotion = onCancel.outboundPromotion;
-  const tmp = _createForOfIteratorHelperLoose();
+  let React;
+  c5 = undefined;
+  let c6;
+  let analyticsLocations;
+  const tmp = createCacheKey();
+  [tmp3, c4] = outboundPromotion(React.useState(null), 2);
   const tmp2 = outboundPromotion(React.useState(null), 2);
-  const first = tmp2[0];
-  React = tmp2[1];
-  [tmp5, closure_5] = outboundPromotion(onClaim(code[6])(false, 2000), 2);
-  let closure_6 = tmp6;
-  const tmp4 = outboundPromotion(onClaim(code[6])(false, 2000), 2);
-  const analyticsLocations = onClaim(code[7])(onClaim(code[8]).USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
+  [tmp7, c5] = outboundPromotion(onClaim(code[6])(false, 2000), 2);
+  c6 = tmp8;
+  const tmp6 = outboundPromotion(onClaim(code[6])(false, 2000), 2);
+  analyticsLocations = onClaim(code[7])(onClaim(code[8]).USER_SETTINGS_GIFT_INVENTORY).analyticsLocations;
   const items = [null != code, , , , , ];
   ({ id: arr[1], outboundTitle: arr[2], partnerId: arr[3] } = outboundPromotion);
   items[4] = onClaim;
   items[5] = analyticsLocations;
   const effect = React.useEffect(() => {
-    if (!closure_6) {
+    if (!c6) {
       let obj = onCancel(code[9]);
-      obj = {};
-      ({ id: obj2.promotionId, outboundTitle: obj2.promotionTitle, partnerId: obj2.partnerId } = outboundPromotion);
-      obj.analyticsLocations = analyticsLocations;
+      obj = { promotionId: null, promotionTitle: null, partnerId: null, analyticsLocations: null };
+      ({ id: obj2[0], outboundTitle: obj2[1], partnerId: obj2[2] } = outboundPromotion);
+      obj[3] = analyticsLocations;
       const result = obj.claimOutboundPromotion(obj);
-      result.then((arg0) => outer1_1(arg0)).catch((arg0) => outer1_4(arg0));
-      const nextPromise = result.then((arg0) => outer1_1(arg0));
+      result.then((arg0) => callback(arg0)).catch((arg0) => callback2(arg0));
+      const nextPromise = result.then((arg0) => callback(arg0));
     }
   }, items);
   if (null != code) {
-    let obj = { style: tmp.body };
-    obj = { source: onClaim(code[10]), style: tmp.promotionArt };
+    let obj = { style: null, children: null };
+    obj[0] = tmp.body;
+    obj = { source: null, style: null };
+    obj[0] = tmp4(tmp5[10]);
+    obj[1] = tmp.promotionArt;
     const items1 = [callback(analyticsLocations, obj), , , ];
-    const obj1 = { style: tmp.title, variant: "heading-xl/bold", color: "mobile-text-heading-primary" };
-    const intl = onCancel(code[12]).intl;
-    obj1.children = intl.string(onCancel(code[12]).t["23BfZh"]);
-    items1[1] = callback(onCancel(code[11]).Heading, obj1);
-    let obj2 = { style: tmp.bodyText, variant: "text-md/medium", children: outboundPromotion.outboundRedemptionModalBody };
-    items1[2] = callback(onCancel(code[11]).Text, obj2);
-    let obj3 = { style: tmp.copyInputContainer };
-    const obj4 = { style: tmp.copyInputLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary" };
-    const intl2 = onCancel(code[12]).intl;
-    obj4.children = intl2.string(onCancel(code[12]).t.s9LFQh);
-    const items2 = [callback(onCancel(code[11]).Text, obj4), , ];
-    let obj5 = {};
+    let Text = onCancel;
+    const obj1 = { style: null, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
+    obj1[0] = tmp.title;
+    const intl = onCancel(tmp5[12]).intl;
+    obj1[3] = intl.string(onCancel(tmp5[12]).t["23BfZh"]);
+    items1[1] = callback(onCancel(tmp5[11]).Heading, obj1);
+    let obj2 = { style: null, variant: "text-md/medium", children: null };
+    obj2[0] = tmp.bodyText;
+    obj2[2] = outboundPromotion.outboundRedemptionModalBody;
+    items1[2] = callback(onCancel(tmp5[11]).Text, obj2);
+    let obj3 = { style: null, children: null };
+    obj3[0] = tmp.copyInputContainer;
+    const obj4 = { style: null, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
+    obj4[0] = tmp.copyInputLabel;
+    const intl2 = onCancel(tmp5[12]).intl;
+    obj4[3] = intl2.string(onCancel(tmp5[12]).t.s9LFQh);
+    const items2 = [callback(onCancel(tmp5[11]).Text, obj4), , ];
     const copyInput = tmp.copyInput;
-    if (tmp5) {
-      const obj6 = {};
+    if (tmp7) {
+      const obj5 = {};
       const merged = Object.assign(copyInput);
       const merged1 = Object.assign(tmp.copyInputCopied);
-      let tmp19 = obj6;
+      let tmp18 = obj5;
     } else {
-      tmp19 = copyInput;
+      tmp18 = copyInput;
     }
-    obj5.style = tmp19;
-    const obj7 = { style: null, horizontal: true, showsHorizontalScrollIndicator: false };
-    const obj8 = { flex: 1 };
-    obj7.style = obj8;
-    const obj9 = {
-      onStartShouldSetResponderCapture() {
-          return true;
-        }
+    let obj6 = { style: null, children: null };
+    obj6[0] = tmp18;
+    const obj7 = { style: null, horizontal: true, showsHorizontalScrollIndicator: false, children: null };
+    obj7[0] = { flex: 1 };
+    const obj8 = { onStartShouldSetResponderCapture: null, children: null };
+    obj8[0] = function onStartShouldSetResponderCapture() {
+      return true;
     };
-    const obj10 = { lineClamp: 1, variant: "text-sm/medium", color: "interactive-text-active", children: code };
-    obj9.children = callback(onCancel(code[11]).Text, obj10);
-    obj7.children = callback(closure_6, obj9);
-    let items3 = [callback(closure_8, obj7), ];
-    let obj11 = { style: tmp.copyButton };
-    let obj12 = {};
-    const intl3 = onCancel(code[12]).intl;
+    const obj9 = { lineClamp: 1, variant: "text-sm/medium", color: "interactive-text-active", children: null };
+    obj9[3] = code;
+    obj8[1] = callback(Text(tmp5[11]).Text, obj9);
+    obj7[3] = callback(c6, obj8);
+    const items3 = [callback(closure_8, obj7), ];
+    let obj10 = { style: null, children: null };
+    obj10[0] = tmp.copyButton;
+    const intl3 = Text(tmp5[12]).intl;
     const string = intl3.string;
-    let t5VZ88 = onCancel(code[12]).t;
-    if (tmp5) {
-      t5VZ88 = t5VZ88.t5VZ88;
-      let stringResult = string(t5VZ88);
+    let t = Text(tmp5[12]).t;
+    if (tmp7) {
+      let stringResult = string(t.t5VZ88);
     } else {
-      stringResult = string(t5VZ88.OpuAlK);
+      stringResult = string(t.OpuAlK);
     }
-    obj12.text = stringResult;
-    obj12.size = "sm";
-    obj12.onPress = function onPress() {
+    const obj11 = { text: null, size: "sm", onPress: null };
+    obj11[0] = stringResult;
+    obj11[2] = function onPress() {
       onCancel(code[14]).copy(code);
-      callback(true);
+      _undefined(true);
     };
-    obj12 = tmp25(onCancel(code[13]).Button, obj12);
-    obj11.children = obj12;
-    items3[1] = callback(closure_6, obj11);
-    obj5.children = items3;
-    items2[1] = callback2(closure_6, obj5);
-    obj11 = callback;
-    items3 = onCancel(code[11]).Text;
-    obj5 = callback(items3, { variant: "text-sm/medium", color: "text-muted", children: "This code is included in your confirmation email" });
-    items2[2] = obj5;
-    obj3.children = items2;
-    obj3 = tmp12(tmp13, obj3);
+    t = tmp16(Text(tmp5[13]).Button, obj11);
+    obj10[1] = t;
+    obj10 = tmp16(tmp15, obj10);
+    items3[1] = obj10;
+    obj6[1] = items3;
+    items2[1] = callback2(c6, obj6);
+    Text = Text(tmp5[11]).Text;
+    obj6 = tmp16(Text, { variant: "text-sm/medium", color: "text-muted", children: "This code is included in your confirmation email" });
+    items2[2] = obj6;
+    obj3[1] = items2;
+    obj3 = tmp14(tmp15, obj3);
     items1[3] = obj3;
-    obj.children = items1;
-    callback2(closure_6, obj);
-    const tmp27 = closure_6;
+    obj[1] = items1;
+    callback2(c6, obj);
   } else {
-    obj = { style: tmp.loading };
-    let tmp11 = callback(closure_5, obj);
-    const obj13 = { style: tmp.body };
-    const obj14 = { source: onClaim(code[15]), style: tmp.errorArt };
-    const items4 = [callback(analyticsLocations, obj14), , ];
-    const obj15 = { style: tmp.errorTitle, variant: "text-lg/bold", color: "mobile-text-heading-primary" };
-    const intl4 = onCancel(code[12]).intl;
-    obj15.children = intl4.string(onCancel(code[12]).t.iufib1);
-    items4[1] = callback(onCancel(code[11]).Text, obj15);
-    const obj16 = { style: tmp.bodyText, variant: "text-md/medium" };
-    const intl5 = onCancel(code[12]).intl;
-    obj16.children = intl5.string(onCancel(code[12]).t.eAn6z2);
-    items4[2] = callback(onCancel(code[11]).Text, obj16);
-    obj13.children = items4;
-    const obj17 = { onCancel };
-    const tmp38 = callback;
-    const tmp43 = callback2(closure_6, obj13);
-    if (null != first) {
-      const intl7 = onCancel(code[12]).intl;
-      let stringResult1 = intl7.string(onCancel(code[12]).t.cpT0Cq);
+    obj = { style: null };
+    obj[0] = tmp.loading;
+    let tmp13 = callback(c5, obj);
+    const obj12 = { style: null, children: null };
+    obj12[0] = tmp.body;
+    const obj13 = { source: null, style: null };
+    obj13[0] = tmp4(tmp5[15]);
+    obj13[1] = tmp.errorArt;
+    const items4 = [callback(analyticsLocations, obj13), , ];
+    const obj14 = { style: null, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: null };
+    obj14[0] = tmp.errorTitle;
+    const intl4 = onCancel(tmp5[12]).intl;
+    obj14[3] = intl4.string(onCancel(tmp5[12]).t.iufib1);
+    items4[1] = callback(onCancel(tmp5[11]).Text, obj14);
+    const obj15 = { style: null, variant: "text-md/medium", children: null };
+    obj15[0] = tmp.bodyText;
+    const intl5 = onCancel(tmp5[12]).intl;
+    obj15[2] = intl5.string(onCancel(tmp5[12]).t.eAn6z2);
+    items4[2] = callback(onCancel(tmp5[11]).Text, obj15);
+    obj12[1] = items4;
+    const obj16 = { onCancel: null, confirmText: null, onConfirm: null, cancelText: null, noDefaultButtons: null, children: null };
+    obj16[0] = onCancel;
+    const tmp32 = callback2(c6, obj12);
+    if (null != tmp3) {
+      const intl7 = tmp31(tmp5[12]).intl;
+      let stringResult1 = intl7.string(tmp31(tmp5[12]).t.cpT0Cq);
     } else {
-      const intl6 = onCancel(code[12]).intl;
-      stringResult1 = intl6.string(onCancel(code[12]).t["+zx47d"]);
+      const intl6 = tmp31(tmp5[12]).intl;
+      stringResult1 = intl6.string(tmp31(tmp5[12]).t["+zx47d"]);
     }
-    obj17.confirmText = stringResult1;
-    obj17.onConfirm = function onConfirm() {
+    obj16[1] = stringResult1;
+    obj16[2] = function onConfirm() {
       if (null != code) {
-        const outboundPromotionRedemptionUrl = onCancel(code[9]).getOutboundPromotionRedemptionUrl(code, outboundPromotion);
+        const outboundPromotionRedemptionUrl = onCancel(code[9]).getOutboundPromotionRedemptionUrl(tmp, outboundPromotion);
         const obj = onCancel(code[9]);
         onClaim(code[17]).openURL(outboundPromotionRedemptionUrl);
         const obj2 = onClaim(code[17]);
@@ -170,20 +187,20 @@ export default function OutboundPromotionClaimAlert(onCancel) {
       onCancel();
     };
     let stringResult2;
-    if (null == first) {
-      const intl8 = onCancel(code[12]).intl;
-      stringResult2 = intl8.string(onCancel(code[12]).t.TulDPl);
+    if (null == tmp3) {
+      const intl8 = tmp31(tmp5[12]).intl;
+      stringResult2 = intl8.string(tmp31(tmp5[12]).t.TulDPl);
     }
-    obj17.cancelText = stringResult2;
-    let tmp53 = !tmp6;
-    if (!tmp6) {
-      tmp53 = null == first;
+    obj16[3] = stringResult2;
+    let tmp36 = !tmp8;
+    if (!tmp8) {
+      tmp36 = null == tmp3;
     }
-    obj17.noDefaultButtons = tmp53;
-    if (null != first) {
-      tmp11 = tmp43;
+    obj16[4] = tmp36;
+    if (null != tmp3) {
+      tmp13 = tmp32;
     }
-    obj17.children = tmp11;
-    return tmp38(onClaim(code[16]), obj17);
+    obj16[5] = tmp13;
+    return callback(tmp4(tmp5[16]), obj16);
   }
 };

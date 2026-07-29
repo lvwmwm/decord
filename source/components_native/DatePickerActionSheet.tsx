@@ -1,106 +1,108 @@
-// Module ID: 8229
-// Function ID: 65765
-// Name: closeActionSheet
-// Dependencies: [57, 31, 27, 33, 4165, 689, 4133, 477, 5220, 5534, 8230, 1212, 4574, 4026, 1273, 4166, 4161, 4579, 4101, 8231, 3747, 5221, 8233, 4011, 2]
+// Module ID: 8253
+// Function ID: 8254
+// Name: ActionSheetHeader
+// Dependencies: [32, 19, 17, 21, 4189, 712, 4157, 500, 5242, 5552, 8254, 1236, 4596, 4050, 1297, 4190, 4185, 4601, 4125, 8255, 3771, 5243, 8257, 4035, 2]
 // Exports: default
 
-// Module 8229 (closeActionSheet)
+// Module 8253 (ActionSheetHeader)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import { View } from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import set from "set";
+import { View } from "CollapsingText";
+import jsxProd from "Background";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-function closeActionSheet() {
-  importDefault(4133).hideActionSheet();
-}
 function ActionSheetHeader(handleSubmit) {
   let handleCancel;
   let title;
   ({ title, handleCancel } = handleSubmit);
-  let obj = require(477) /* set */;
-  const BottomSheetTitleHeader = require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader;
+  let obj = require(500) /* set */;
+  const BottomSheetTitleHeader = require(5242) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader;
   if (isAndroidResult) {
-    obj = { title };
-    obj = { onPress: handleCancel };
-    obj.trailing = callback(tmp3(5534).ActionSheetCloseButton, obj);
-    let tmp2Result = tmp2(BottomSheetTitleHeader, obj);
+    obj = { title: null, trailing: null };
+    obj[0] = title;
+    obj = { onPress: null };
+    obj[0] = handleCancel;
+    obj[1] = tmp4(tmp(5552).ActionSheetCloseButton, obj);
+    let tmp4Result = tmp4(BottomSheetTitleHeader, obj);
   } else {
-    const obj1 = { title };
-    const obj2 = { onPress: handleCancel };
-    const intl = tmp3(1212).intl;
-    obj2.label = intl.string(tmp3(1212).t["ETE/oC"]);
-    obj1.leading = callback(tmp3(8230).ActionSheetHeaderPressableText, obj2);
-    const obj3 = { onPress: handleSubmit.handleSubmit };
-    const intl2 = tmp3(1212).intl;
-    obj3.label = intl2.string(tmp3(1212).t["R3BPH+"]);
-    obj1.trailing = callback(tmp3(8230).ActionSheetHeaderPressableText, obj3);
-    tmp2Result = tmp2(BottomSheetTitleHeader, obj1);
+    const obj1 = { title: null, leading: null, trailing: null };
+    obj1[0] = title;
+    const obj2 = { onPress: null, label: null };
+    obj2[0] = handleCancel;
+    const intl = tmp(1236).intl;
+    obj2[1] = intl.string(tmp(1236).t["ETE/oC"]);
+    obj1[1] = tmp4(tmp(8254).ActionSheetHeaderPressableText, obj2);
+    const obj3 = { onPress: null, label: null };
+    obj3[0] = handleSubmit.handleSubmit;
+    const intl2 = tmp(1236).intl;
+    obj3[1] = intl2.string(tmp(1236).t["R3BPH+"]);
+    obj1[2] = tmp4(tmp(8254).ActionSheetHeaderPressableText, obj3);
+    tmp4Result = tmp4(BottomSheetTitleHeader, obj1);
   }
-  return tmp2Result;
+  return tmp4Result;
 }
-function DateRangeError(show) {
-  show = show.show;
-  const tmp = _createForOfIteratorHelperLoose();
-  const ref = React.useRef(null);
+function DateRangeError(children) {
+  const show = children.show;
+  let ref;
+  const tmp = createCacheKey();
+  ref = React.useRef(null);
   const items = [show];
   const effect = React.useEffect(() => {
     let obj = show(outer1_2[12]);
     obj = { ref, delay: 200 };
     const result = obj.setAccessibilityFocus(obj);
   }, items);
-  let obj = show(4026);
+  let obj = show(4050);
   class A {
     constructor() {
-      obj = { easing: show(outer1_2[14]).STANDARD_EASING };
+      obj = { easing: show(outer1_2[14]).STANDARD_EASING, duration: null };
+      tmp = show;
+      tmp2 = outer1_2;
+      tmp3 = show;
       num = 150;
       if (show) {
         num = 200;
       }
-      obj.duration = num;
-      obj = {};
-      obj3 = show(outer1_2[15]);
+      obj[1] = num;
+      tmpResult = tmp(tmp2[15]);
       num2 = 0;
-      if (show) {
+      if (tmp3) {
         num2 = 1;
       }
-      obj.opacity = obj3.withTiming(num2, obj);
-      obj4 = show(outer1_2[15]);
+      obj = { opacity: tmpResult.withTiming(num2, obj), maxHeight: null, paddingVertical: null };
+      tmpResult1 = tmp(tmp2[15]);
       num3 = 0;
-      if (show) {
+      if (tmp3) {
         num3 = 500;
       }
-      obj.maxHeight = obj4.withTiming(num3, obj);
-      obj5 = show(outer1_2[15]);
+      obj[1] = tmpResult1.withTiming(num3, obj);
+      tmpResult2 = tmp(tmp2[15]);
       num4 = 0;
-      if (show) {
+      if (tmp3) {
         num4 = 12;
       }
-      obj.paddingVertical = obj5.withTiming(num4, obj);
+      obj[2] = tmpResult2.withTiming(num4, obj);
       return obj;
     }
   }
-  obj = { STANDARD_EASING: show(1273).STANDARD_EASING, show, withTiming: show(4166).withTiming };
+  obj = { STANDARD_EASING: show(1297).STANDARD_EASING, show, withTiming: show(4190).withTiming };
   A.__closure = obj;
   A.__workletHash = 11991491746736;
-  A.__initData = closure_10;
+  A.__initData = closure_11;
   const animatedStyle = obj.useAnimatedStyle(A);
-  obj = { style: items1, accessibilityElementsHidden: !show };
+  obj = { style: items1, accessibilityElementsHidden: !show, importantForAccessibility: null, children: null };
   items1 = [tmp.rangeErrorContainer, animatedStyle];
   let str = "no-hide-descendants";
   if (show) {
     str = "auto";
   }
-  obj.importantForAccessibility = str;
-  const obj1 = { ref, accessible: true, accessibilityRole: "alert", style: tmp.rangeError };
-  const obj2 = { variant: "text-md/medium", color: "text-overlay-light", children: show.errorText };
-  obj1.children = callback(show(4161).Text, obj2);
-  obj.children = callback(View, obj1);
-  return callback(ref(4026).View, obj);
+  obj[2] = str;
+  obj[3] = closure_6(View, { ref, accessible: true, accessibilityRole: "alert", style: tmp.rangeError, children: closure_6(show(4185).Text, { variant: "text-md/medium", color: "text-overlay-light", children: children.errorText }) });
+  return closure_6(ref(4050).View, obj);
 }
 function ActionSheetFooter(arg0) {
   let canSubmit;
@@ -108,43 +110,45 @@ function ActionSheetFooter(arg0) {
   let handleSubmit;
   ({ handleCancel, handleSubmit, canSubmit } = arg0);
   const tmp = callback3();
-  let obj = require(477) /* set */;
-  let tmp2 = null;
+  let obj = require(500) /* set */;
+  let tmp4 = null;
   if (obj.isAndroid()) {
-    obj = { style: tmp.footer };
-    obj = { shrink: true, size: "md", variant: "secondary" };
-    const obj1 = { variant: "text-md/semibold" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj1.children = intl.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-    obj.textElement = callback(require(4161) /* Text */.Text, obj1);
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t["ETE/oC"]);
-    obj.style = tmp.actionButton;
-    obj.onPress = handleCancel;
-    const items = [callback(require(4579) /* CollapsingText */.BaseTextButton, obj), ];
-    const obj2 = { shrink: true, disabled: !canSubmit, size: "md", variant: "secondary" };
-    const obj3 = { variant: "text-md/semibold" };
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    obj3.children = intl3.string(require(1212) /* getSystemLocale */.t["cY+Oob"]);
-    obj2.textElement = callback(require(4161) /* Text */.Text, obj3);
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    obj2.accessibilityLabel = intl4.string(require(1212) /* getSystemLocale */.t["cY+Oob"]);
-    obj2.style = tmp.actionButton;
-    obj2.onPress = handleSubmit;
-    items[1] = callback(require(4579) /* CollapsingText */.BaseTextButton, obj2);
-    obj.children = items;
-    tmp2 = callback2(View, obj);
+    obj = { style: null, children: null };
+    obj[0] = tmp.footer;
+    obj = { shrink: true, size: "md", variant: "secondary", textElement: null, accessibilityLabel: null, style: null, onPress: null };
+    const obj1 = { variant: "text-md/semibold", children: null };
+    const intl = tmp2(1236).intl;
+    obj1[1] = intl.string(tmp2(1236).t["ETE/oC"]);
+    obj[3] = callback(tmp2(4185).Text, obj1);
+    const intl2 = tmp2(1236).intl;
+    obj[4] = intl2.string(tmp2(1236).t["ETE/oC"]);
+    obj[5] = tmp.actionButton;
+    obj[6] = handleCancel;
+    const items = [callback(tmp2(4601).BaseTextButton, obj), ];
+    const obj2 = { shrink: true, disabled: null, size: "md", variant: "secondary", textElement: null, accessibilityLabel: null, style: null, onPress: null };
+    obj2[1] = !canSubmit;
+    const obj3 = { variant: "text-md/semibold", children: null };
+    const intl3 = tmp2(1236).intl;
+    obj3[1] = intl3.string(tmp2(1236).t["cY+Oob"]);
+    obj2[4] = callback(tmp2(4185).Text, obj3);
+    const intl4 = tmp2(1236).intl;
+    obj2[5] = intl4.string(tmp2(1236).t["cY+Oob"]);
+    obj2[6] = tmp.actionButton;
+    obj2[7] = handleSubmit;
+    items[1] = callback(tmp2(4601).BaseTextButton, obj2);
+    obj[1] = items;
+    tmp4 = callback2(View, obj);
   }
-  return tmp2;
+  return tmp4;
 }
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = { rangeErrorContainer: { justifyContent: "flex-start" } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_FEEDBACK_CRITICAL, padding: 12, marginHorizontal: 12, borderRadius: require("_createForOfIteratorHelperLoose").radii.sm };
-_createForOfIteratorHelperLoose.rangeError = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.datetimePickerContainer = { display: "flex", alignItems: "center" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let closure_9 = _createForOfIteratorHelperLoose.createStyles({ footer: { marginVertical: 6, paddingHorizontal: 12, display: "flex", flexDirection: "row", justifyContent: "flex-end" }, actionButton: { marginLeft: 24 } });
-let closure_10 = { code: "function DatePickerActionSheetTsx1(){const{STANDARD_EASING,show,withTiming}=this.__closure;const animationSettings={easing:STANDARD_EASING,duration:show?200:150};return{opacity:withTiming(show?1:0,animationSettings),maxHeight:withTiming(show?500:0,animationSettings),paddingVertical:withTiming(show?12:0,animationSettings)};}" };
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { rangeErrorContainer: { justifyContent: "flex-start" }, rangeError: null, datetimePickerContainer: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_CRITICAL, padding: 12, marginHorizontal: 12, borderRadius: require("Themes").radii.sm };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { display: "flex", alignItems: "center" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let closure_9 = createCacheKey.createStyles({ footer: { marginVertical: 6, paddingHorizontal: 12, display: "flex", flexDirection: "row", justifyContent: "flex-end" }, actionButton: { marginLeft: 24 } });
+let closure_11 = { code: "function DatePickerActionSheetTsx1(){const{STANDARD_EASING,show,withTiming}=this.__closure;const animationSettings={easing:STANDARD_EASING,duration:show?200:150};return{opacity:withTiming(show?1:0,animationSettings),maxHeight:withTiming(show?500:0,animationSettings),paddingVertical:withTiming(show?12:0,animationSettings)};}" };
 let result = require("get ActivityIndicator").fileFinishedImporting("components_native/DatePickerActionSheet.tsx");
 
 export default function DatePickerActionSheet(mode) {
@@ -155,15 +159,15 @@ export default function DatePickerActionSheet(mode) {
   let maximumDate;
   let onCancel;
   let startDate;
-  let tmp13;
+  let tmp12;
   let str = mode.mode;
   if (str === undefined) {
     str = "date";
   }
   let title = mode.title;
   if (title === undefined) {
-    const intl = maximumDate(1212).intl;
-    title = intl.string(maximumDate(1212).t.epc9sr);
+    const intl = maximumDate(1236).intl;
+    title = intl.string(maximumDate(1236).t.epc9sr);
   }
   ({ startDate, maximumDate } = mode);
   const minimumDate = mode.minimumDate;
@@ -172,42 +176,27 @@ export default function DatePickerActionSheet(mode) {
   let first;
   let callback;
   let first1;
-  let _createForOfIteratorHelperLoose;
+  let createCacheKey;
   c9 = undefined;
   c10 = undefined;
   c11 = undefined;
   let closure_12;
-  function isAboveMin(first) {
-    let tmp = null == minimumDate;
-    if (!tmp) {
-      const time = first.getTime();
-      tmp = time >= minimumDate.getTime();
-    }
-    return tmp;
-  }
-  function isBelowMax(first) {
-    let tmp = null == maximumDate;
-    if (!tmp) {
-      const time = first.getTime();
-      tmp = time <= maximumDate.getTime();
-    }
-    return tmp;
-  }
-  if (null == startDate) {
+  if (startDate == null) {
     const _Date = Date;
     startDate = new Date();
   }
+  let obj = startDate;
   const tmp7 = onCancel(startDate.useState(startDate), 2);
   first = tmp7[0];
   callback = tmp7[1];
-  const tmp9 = onCancel(startDate.useState(!mode.requireDateChanged), 2);
-  first1 = tmp9[0];
-  _createForOfIteratorHelperLoose = tmp9[1];
-  const tmp3 = _createForOfIteratorHelperLoose();
+  const tmp8 = onCancel(startDate.useState(!mode.requireDateChanged), 2);
+  first1 = tmp8[0];
+  createCacheKey = tmp8[1];
+  let tmp3 = createCacheKey();
   [c9, c10] = onCancel(startDate.useState(true), 2);
-  const tmp11 = onCancel(startDate.useState(true), 2);
-  [tmp13, c11] = onCancel(startDate.useState(false), 2);
-  const tmp12 = onCancel(startDate.useState(false), 2);
+  const tmp10 = onCancel(startDate.useState(true), 2);
+  [tmp12, c11] = onCancel(startDate.useState(false), 2);
+  const tmp11 = onCancel(startDate.useState(false), 2);
   closure_12 = startDate.useRef(first);
   let date;
   if (null != maximumDate) {
@@ -220,17 +209,17 @@ export default function DatePickerActionSheet(mode) {
     date1 = new Date(minimumDate.getFullYear(), 0, 1, 0);
   }
   const items = [first];
-  const effect = startDate.useEffect(() => {
+  const effect = obj.useEffect(() => {
     closure_12.current = first;
   }, items);
-  const tmp24 = minimumDate(8231)(() => {
+  const tmp25 = minimumDate(8255)(() => {
     closure_12.current = startDate;
-    if (null != onCancel) {
-      onCancel();
+    if (onCancel != null) {
+      tmp();
     }
-    _undefined();
+    minimumDate(outer1_2[6]).hideActionSheet();
   });
-  const tmp25 = minimumDate(8231)(() => {
+  const tmp26 = minimumDate(8255)(() => {
     let tmp = first1;
     if (first1) {
       tmp = c9;
@@ -239,81 +228,85 @@ export default function DatePickerActionSheet(mode) {
       callback(minimumDate(outer1_2[20])(ref.current));
     }
     if (c9) {
-      _undefined();
+      minimumDate(outer1_2[6]).hideActionSheet();
+      const obj = minimumDate(outer1_2[6]);
     } else {
       _undefined(true);
     }
   });
-  const tmp14 = minimumDate(4101)();
-  let obj = { onDismiss: onCancel };
-  obj = { title, handleCancel: tmp24, handleSubmit: tmp25 };
-  obj.header = callback(closure_12, obj);
-  obj = {};
-  let tmp30 = tmp13;
-  if (tmp13) {
-    tmp30 = !isAboveMin(first);
+  const tmp15 = minimumDate(4125)();
+  obj = { onDismiss: onCancel, header: null, children: null };
+  obj[1] = callback(c10, { title, handleCancel: tmp25, handleSubmit: tmp26 });
+  let tmp32 = tmp12;
+  if (tmp12) {
+    let tmp33 = null == minimumDate;
+    if (!tmp33) {
+      let time = first.getTime();
+      tmp33 = time >= minimumDate.getTime();
+    }
+    tmp32 = !tmp33;
   }
-  obj.show = tmp30;
-  const intl2 = maximumDate(1212).intl;
-  const obj1 = {};
-  let obj4 = minimumDate(3747)(minimumDate);
-  obj1.minDate = obj4.format("L");
-  obj.errorText = intl2.formatToPlainString(maximumDate(1212).t.FsJO55, obj1);
-  const items1 = [callback(isAboveMin, obj), , , ];
-  const obj2 = {};
-  if (tmp13) {
-    tmp13 = !isBelowMax(first);
-  }
-  obj2.show = tmp13;
-  const intl3 = maximumDate(1212).intl;
-  const obj3 = {};
-  const tmp26 = minimumDate(8231)((first) => {
-    if (null != first) {
+  obj = { show: tmp32, errorText: null };
+  const intl2 = tmp29(1236).intl;
+  const obj1 = { minDate: null };
+  const tmp27 = minimumDate(8255)((getTime) => {
+    if (null != getTime) {
       let tmp2 = null == minimumDate;
       if (tmp2) {
         tmp2 = null == maximumDate;
       }
       if (!tmp2) {
-        let tmp6 = isAboveMin(first);
-        if (tmp6) {
-          tmp6 = isBelowMax(first);
+        let tmp4 = null == obj2;
+        if (!tmp4) {
+          const time = getTime.getTime();
+          tmp4 = time >= obj2.getTime();
         }
-        c10(tmp6);
-        const tmp4 = c10;
+        if (tmp4) {
+          let tmp6 = null == maximumDate;
+          if (!tmp6) {
+            const time1 = getTime.getTime();
+            tmp6 = time1 <= obj.getTime();
+          }
+          tmp4 = tmp6;
+          obj = maximumDate;
+        }
+        c10(tmp4);
+        const tmp3 = c10;
       }
       _undefined(false);
       callback3(true);
-      callback2(first);
+      callback2(getTime);
     }
   });
-  const tmp27 = first1;
-  const tmp28 = callback;
-  const tmp29 = isAboveMin;
-  const tmp31 = callback;
-  const tmp32 = isAboveMin;
-  obj3.maxDate = minimumDate(3747)(maximumDate).format("L");
-  obj2.errorText = intl3.formatToPlainString(maximumDate(1212).t.R7r9VN, obj3);
-  items1[1] = tmp31(tmp32, obj2);
-  obj4 = { style: tmp3.datetimePickerContainer };
-  const obj5 = {};
-  const obj8 = minimumDate(3747)(maximumDate);
-  const tmp33 = callback;
-  const tmp34 = first;
-  const tmp35 = callback;
-  const tmp36 = minimumDate(8233);
+  const tmp28 = first1;
+  obj1[0] = minimumDate(3771)(minimumDate).format("L");
+  obj[1] = intl2.formatToPlainString(maximumDate(1236).t.FsJO55, obj1);
+  const items1 = [callback(closure_12, obj), , , ];
+  if (tmp12) {
+    let tmp35 = null == maximumDate;
+    if (!tmp35) {
+      let time1 = first.getTime();
+      tmp35 = time1 <= maximumDate.getTime();
+    }
+  }
+  const obj2 = { show: tmp12, errorText: null };
+  const intl3 = tmp29(1236).intl;
+  const obj3 = { maxDate: null };
+  const obj6 = minimumDate(3771)(minimumDate);
+  obj3[0] = minimumDate(3771)(maximumDate).format("L");
+  obj2[1] = intl3.formatToPlainString(maximumDate(1236).t.R7r9VN, obj3);
+  items1[1] = callback(closure_12, obj2);
+  const obj4 = { style: tmp3.datetimePickerContainer, children: null };
+  const obj9 = minimumDate(3771)(maximumDate);
+  const tmp37 = first;
+  const tmp13Result = minimumDate(8257);
   let str2 = "dark";
-  if (obj11.isThemeLight(tmp14)) {
+  if (tmp29Result.isThemeLight(tmp15)) {
     str2 = "light";
   }
-  obj5.theme = str2;
-  obj5.date = first;
-  obj5.onDateChange = tmp26;
-  obj5.maximumDate = date;
-  obj5.minimumDate = date1;
-  obj5.mode = str;
-  obj4.children = tmp35(tmp36, obj5);
-  items1[2] = tmp33(tmp34, obj4);
-  items1[3] = callback(isBelowMax, { handleCancel: tmp24, handleSubmit: tmp25, canSubmit: first1 });
-  obj.children = items1;
-  return tmp27(maximumDate(5221).BottomSheet, obj);
+  obj4[1] = callback(tmp13Result, { theme: str2, date: first, onDateChange: tmp27, maximumDate: date, minimumDate: date1, mode: str });
+  items1[2] = callback(tmp37, obj4);
+  items1[3] = callback(ActionSheetFooter, { handleCancel: tmp25, handleSubmit: tmp26, canSubmit: first1 });
+  obj[2] = items1;
+  return tmp28(maximumDate(5243).BottomSheet, obj);
 };

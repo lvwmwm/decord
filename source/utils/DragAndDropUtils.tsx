@@ -1,12 +1,10 @@
-// Module ID: 11487
-// Function ID: 89183
+// Module ID: 11511
+// Function ID: 11512
 // Name: calculatePositionDeltas
-// Dependencies: [3, 22, 2]
-// Exports: getPositionUpdates
+// Dependencies: [3, 12, 2]
+// Exports: getPositionUpdates, moveItemFromTo
 
-// Module 11487 (calculatePositionDeltas)
-import importDefaultResult from "timestamp";
-
+// Module 11511 (calculatePositionDeltas)
 function calculatePositionDeltas(arg0) {
   let ascending;
   let existingPositionGetter;
@@ -18,7 +16,7 @@ function calculatePositionDeltas(arg0) {
     ascending = true;
   }
   if (oldOrdering.length !== newOrdering.length) {
-    importDefaultResult.warn("Arrays are not of the same length!", oldOrdering, newOrdering);
+    tmp2.warn("Arrays are not of the same length!", oldOrdering, newOrdering);
     return [];
   } else {
     const mapped = oldOrdering.map(idGetter);
@@ -28,7 +26,7 @@ function calculatePositionDeltas(arg0) {
     const sorted1 = mapped1.sort();
     const joined1 = sorted1.join(":");
     if (joined !== joined1) {
-      importDefaultResult.warn("Object IDs in the old ordering and the new ordering are not the same.", joined, joined1);
+      tmp2.warn("Object IDs in the old ordering and the new ordering are not the same.", joined, joined1);
       return [];
     } else {
       let obj = {};
@@ -37,15 +35,18 @@ function calculatePositionDeltas(arg0) {
         obj[idGetterResult] = existingPositionGetter(oldOrdering[num]);
       }
       const items = [];
-      for (let num3 = 0; num3 < length; num3 = num3 + 1) {
-        let idGetterResult1 = idGetter(newOrdering[num3]);
-        let diff = num3;
+      for (let num2 = 0; num2 < length; num2 = num2 + 1) {
+        let idGetterResult1 = idGetter(newOrdering[num2]);
+        let tmp3 = num2;
+        let diff = num2;
         if (!ascending) {
-          diff = length - 1 - num3;
+          diff = length - 1 - num2;
         }
-        let tmp4 = obj[idGetterResult1] === diff && existingPositionGetter(newOrdering[num3]) === diff;
-        if (!tmp4) {
-          obj = { id: idGetterResult1, position: diff };
+        let tmp5 = obj[idGetterResult1] === diff && existingPositionGetter(newOrdering[num2]) === diff;
+        if (!tmp5) {
+          obj = { id: null, position: null };
+          obj[0] = idGetterResult1;
+          obj[1] = diff;
           let arr = items.push(obj);
         }
       }
@@ -56,10 +57,10 @@ function calculatePositionDeltas(arg0) {
     }
   }
 }
-function moveItemFromTo(c14, closure_2, to) {
-  const items = [...c14];
-  items.splice(closure_2, 1);
-  items.splice(to, 0, c14[closure_2]);
+function moveItemFromTo(c9, arg1, to) {
+  const items = [...c9];
+  items.splice(arg1, 1);
+  items.splice(to, 0, c9[arg1]);
   return items;
 }
 function getPositionUpdates(arg0) {
@@ -69,20 +70,27 @@ function getPositionUpdates(arg0) {
   let idGetter;
   let objectArray;
   let toPosition;
-  ({ objectArray, ascending } = arg0);
-  ({ fromPosition, toPosition, idGetter, existingPositionGetter } = arg0);
+  ({ objectArray, fromPosition, ascending } = arg0);
+  ({ toPosition, idGetter, existingPositionGetter } = arg0);
   if (ascending === undefined) {
     ascending = true;
   }
   let values = objectArray;
   if (!Array.isArray(objectArray)) {
-    let obj = importDefault(22);
+    let obj = importDefault(12);
     values = obj.values(objectArray);
   }
-  obj = { oldOrdering: values, newOrdering: moveItemFromTo(values, fromPosition, toPosition), idGetter, existingPositionGetter, ascending };
+  obj = { oldOrdering: values, newOrdering: null, idGetter: null, existingPositionGetter: null, ascending: null };
+  const items = [...values];
+  items.splice(fromPosition, 1);
+  items.splice(toPosition, 0, values[fromPosition]);
+  obj[1] = items;
+  obj[2] = idGetter;
+  obj[3] = existingPositionGetter;
+  obj[4] = ascending;
   return calculatePositionDeltas(obj);
 }
-importDefaultResult = new importDefaultResult("DragAndDropUtils");
+const tmp2 = new require("timestamp")("DragAndDropUtils");
 const result = require("set").fileFinishedImporting("utils/DragAndDropUtils.tsx");
 
 export default { moveItemFromTo, calculatePositionDeltas, getPositionUpdates };

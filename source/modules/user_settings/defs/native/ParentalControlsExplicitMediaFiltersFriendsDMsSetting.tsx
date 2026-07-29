@@ -1,53 +1,52 @@
-// Module ID: 14664
-// Function ID: 111663
-// Name: getTitle
-// Dependencies: [5775, 7733, 13834, 5844, 13838, 1212, 13831, 1282, 10099, 2]
+// Module ID: 14689
+// Function ID: 14690
+// Name: pressable
+// Dependencies: [5793, 7756, 13855, 5862, 13859, 1236, 13852, 1306, 10120, 2]
 
-// Module 14664 (getTitle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14689 (pressable)
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import createToggle from "createToggle";
 
 const require = arg1;
-function getTitle() {
-  const intl = require(1212) /* getSystemLocale */.intl;
-  return intl.string(require(1212) /* getSystemLocale */.t["+uI23H"]);
-}
 createToggle = {
-  useTitle: getTitle,
+  useTitle: function getTitle() {
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["+uI23H"]);
+  },
   parent: require("MobileSetting").MobileSetting.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useObscuredContentFriendsDmSettingValue() {
-    const parentalControlledExplicitContentSettings = require(13834) /* useParentalControlledExplicitContentSettings */.useParentalControlledExplicitContentSettings();
+    const parentalControlledExplicitContentSettings = require(13855) /* useParentalControlledExplicitContentSettings */.useParentalControlledExplicitContentSettings();
     let prop;
-    if (null != parentalControlledExplicitContentSettings) {
+    if (parentalControlledExplicitContentSettings != null) {
       prop = parentalControlledExplicitContentSettings.explicitContentFriendDm;
     }
-    let tmp3 = null;
+    let tmp5 = null;
     if (null != prop) {
-      tmp3 = require(5844) /* timeoutAttachmentsAndEmbedsForMessage */.redactionSettingToRenderedString(prop)();
-      const obj2 = require(5844) /* timeoutAttachmentsAndEmbedsForMessage */;
+      tmp5 = require(5862) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(prop)();
+      const tmpResult = require(5862) /* redactionSettingToRenderedString */;
     }
-    return tmp3;
+    return tmp5;
   },
   onPress: function onObscuredContentFriendsDmOnPress() {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(13838);
-      const intl = selectedTeenId(1212).intl;
-      const stringResult = intl.string(selectedTeenId(1212).t.GYpoAq);
-      obj = {
-        title: stringResult,
-        subtitle: getTitle(),
-        handlePress(explicitContentFriendDm) {
-            let obj = selectedTeenId(outer1_1[4]);
-            obj = { explicitContentFriendDm };
-            return obj.updateExplicitContentSetting(selectedTeenId, obj);
-          }
+      let obj = selectedTeenId(13859);
+      const intl = selectedTeenId(1236).intl;
+      const stringResult = intl.string(selectedTeenId(1236).t.GYpoAq);
+      obj = { title: null, subtitle: null, handlePress: null, currentValue: null, excluded: null };
+      obj[0] = stringResult;
+      const intl2 = selectedTeenId(1236).intl;
+      obj[1] = intl2.string(selectedTeenId(1236).t["+uI23H"]);
+      obj[2] = function handlePress(explicitContentFriendDm) {
+        let obj = selectedTeenId(outer1_1[4]);
+        obj = { explicitContentFriendDm };
+        return obj.updateExplicitContentSetting(selectedTeenId, obj);
       };
-      obj.currentValue = obj.getExplicitContentSettingOrDefault(selectedTeenId).explicitContentFriendDm;
-      const items = [selectedTeenId(1282).ExplicitContentRedaction.SHOW];
-      obj.excluded = items;
-      const result = selectedTeenId(13831).handleSensitiveMediaFilterPress(obj);
-      const obj2 = selectedTeenId(13831);
+      obj[3] = obj.getExplicitContentSettingOrDefault(selectedTeenId).explicitContentFriendDm;
+      const items = [selectedTeenId(1306).ExplicitContentRedaction.SHOW];
+      obj[4] = items;
+      const result = selectedTeenId(13852).handleSensitiveMediaFilterPress(obj);
+      const obj2 = selectedTeenId(13852);
     }
   },
   unsearchable: true

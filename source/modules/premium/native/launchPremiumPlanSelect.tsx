@@ -1,13 +1,13 @@
-// Module ID: 6525
-// Function ID: 58102
+// Module ID: 6546
+// Function ID: 6547
 // Name: launchPremiumPlanSelect
-// Dependencies: [653, 6230, 4372, 6305, 1935, 6305, 6485, 2]
+// Dependencies: [676, 6250, 4395, 6326, 1959, 6326, 6506, 2]
 // Exports: launchPremiumPlanSelect
 
-// Module 6525 (launchPremiumPlanSelect)
+// Module 6546 (launchPremiumPlanSelect)
 import { UserSettingsSections } from "ME";
 
-let result = require("module_4372").fileFinishedImporting("modules/premium/native/launchPremiumPlanSelect.tsx");
+let result = require("module_4395").fileFinishedImporting("modules/premium/native/launchPremiumPlanSelect.tsx");
 
 export const launchPremiumPlanSelect = function launchPremiumPlanSelect(isBoostPurchaseFlow) {
   let analyticsLocation;
@@ -30,26 +30,51 @@ export const launchPremiumPlanSelect = function launchPremiumPlanSelect(isBoostP
   }
   ({ analyticsLocation, analyticsLocations, planId, applicationId, guildId, onPaymentSuccess, onPaymentDismiss } = isBoostPurchaseFlow);
   function wrappedPredicate(isDeprecated) {
-    let tmp = !outer1_0(outer1_2[1]).shouldAlwaysExcludeFromPlanSelect(isDeprecated);
-    if (tmp) {
-      let tmp4;
-      if (null != callback) {
-        tmp4 = callback(isDeprecated);
+    const result = outer1_0(outer1_2[1]).shouldAlwaysExcludeFromPlanSelect(isDeprecated);
+    let tmp2 = !result;
+    if (!result) {
+      let flag;
+      if (callback != null) {
+        flag = callback(isDeprecated);
       }
-      tmp = null == tmp4 || tmp4;
-      const tmp6 = null == tmp4 || tmp4;
+      if (flag == null) {
+        flag = true;
+      }
+      tmp2 = flag;
     }
-    return tmp;
+    return tmp2;
   }
   const PREMIUM_PLAN_SELECT = UserSettingsSections.PREMIUM_PLAN_SELECT;
   if (null != navigation) {
-    let obj = { predicate: wrappedPredicate, analyticsLocation, analyticsLocations, showCurrentPlan, isBoostPurchaseFlow: flag, planId, applicationId, guildId, onPaymentSuccess, onPaymentDismiss };
+    let obj = { predicate: null, analyticsLocation: null, analyticsLocations: null, showCurrentPlan: null, isBoostPurchaseFlow: null, planId: null, applicationId: null, guildId: null, onPaymentSuccess: null, onPaymentDismiss: null };
+    obj[0] = wrappedPredicate;
+    obj[1] = analyticsLocation;
+    obj[2] = analyticsLocations;
+    obj[3] = showCurrentPlan;
+    obj[4] = flag;
+    obj[5] = planId;
+    obj[6] = applicationId;
+    obj[7] = guildId;
+    obj[8] = onPaymentSuccess;
+    obj[9] = onPaymentDismiss;
     navigation.push(PREMIUM_PLAN_SELECT, obj);
   } else {
-    obj = { initialRoute: PREMIUM_PLAN_SELECT, analyticsLocation, analyticsLocations, predicate: wrappedPredicate, showCurrentPlan, isBoostPurchaseFlow: flag, planId, applicationId, guildId, onBack: tmp, onPaymentSuccess, onPaymentDismiss };
-    const obj3 = importDefault(4372);
-    obj3.pushLazy(require(1935) /* maybeLoadBundle */(6305, dependencyMap.paths), obj, require(6305) /* getScreens */.PREMIUM_KEY);
-    const tmp7 = require(1935) /* maybeLoadBundle */(6305, dependencyMap.paths);
+    obj = { initialRoute: null, analyticsLocation: null, analyticsLocations: null, predicate: null, showCurrentPlan: null, isBoostPurchaseFlow: null, planId: null, applicationId: null, guildId: null, onBack: null, onPaymentSuccess: null, onPaymentDismiss: null };
+    obj[0] = PREMIUM_PLAN_SELECT;
+    obj[1] = analyticsLocation;
+    obj[2] = analyticsLocations;
+    obj[3] = wrappedPredicate;
+    obj[4] = showCurrentPlan;
+    obj[5] = flag;
+    obj[6] = planId;
+    obj[7] = applicationId;
+    obj[8] = guildId;
+    obj[9] = tmp;
+    obj[10] = onPaymentSuccess;
+    obj[11] = onPaymentDismiss;
+    const obj3 = importDefault(4395);
+    obj3.pushLazy(require(1959) /* asyncRequireImpl */(6326, dependencyMap.paths), obj, require(6326) /* PremiumModal */.PREMIUM_KEY);
+    const tmp7 = require(1959) /* asyncRequireImpl */(6326, dependencyMap.paths);
   }
-  const result = require(6485) /* getSanitizedRestrictedGuilds */.trackUserSettingsPaneViewed({ destinationPane: PREMIUM_PLAN_SELECT });
+  let result = require(6506) /* getSanitizedRestrictedGuilds */.trackUserSettingsPaneViewed({ destinationPane: PREMIUM_PLAN_SELECT });
 };

@@ -1,76 +1,78 @@
-// Module ID: 14414
-// Function ID: 110209
+// Module ID: 14436
+// Function ID: 14437
 // Name: useWebBrowserSettingOptions
-// Dependencies: [7733, 4131, 1212, 668, 477, 10099, 2]
+// Dependencies: [7756, 4155, 1236, 691, 500, 10120, 2]
 // Exports: useWebBrowserSettingOptions
 
-// Module 14414 (useWebBrowserSettingOptions)
+// Module 14436 (useWebBrowserSettingOptions)
 import createToggle from "createToggle";
 
 function useWebBrowserSettingOptions() {
-  let obj = require(4131) /* removeInAppBrowserCloseSubscription */;
+  let CHROME = dependencyMap;
+  let obj = require(4155) /* NativeModules */;
   const items = [];
   const browserManagerIsChromeInstalled = obj.useBrowserManagerIsChromeInstalled();
-  let obj1 = require(4131) /* removeInAppBrowserCloseSubscription */;
+  let obj1 = require(4155) /* NativeModules */;
   if (obj1.useBrowserManagerSupportsInAppBrowser()) {
-    obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl.string(require(1212) /* getSystemLocale */.t.YayR6P);
-    obj.value = require(668) /* keys */.WebBrowserType.IN_APP;
+    obj = { label: null, value: null };
+    const intl = tmp(1236).intl;
+    obj[0] = intl.string(tmp(1236).t.YayR6P);
+    obj[1] = tmp(691).WebBrowserType.IN_APP;
     items.push(obj);
   }
-  if (!obj4.isAndroid()) {
-    obj = {};
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.label = intl2.string(require(1212) /* getSystemLocale */.t.kEfv89);
-    obj.value = require(668) /* keys */.WebBrowserType.SAFARI;
+  let tmpResult = tmp(500);
+  if (!tmpResult.isAndroid()) {
+    obj = { label: null, value: null };
+    const intl2 = tmp(1236).intl;
+    obj[0] = intl2.string(tmp(1236).t.kEfv89);
+    obj[1] = tmp(691).WebBrowserType.SAFARI;
     items.push(obj);
   }
   if (!browserManagerIsChromeInstalled) {
     return items;
   } else {
-    obj1 = {};
-    const obj7 = require(477) /* set */;
-    const intl3 = require(1212) /* getSystemLocale */.intl;
+    tmpResult = tmp(500);
+    const intl3 = tmp(1236).intl;
     const string = intl3.string;
-    let t = require(1212) /* getSystemLocale */.t;
+    let t = tmp(1236).t;
     if (isAndroidResult) {
       let stringResult = string(t.kEfv89);
     } else {
       stringResult = string(t.FfjVVt);
     }
-    obj1.label = stringResult;
-    t = dependencyMap;
-    obj1.value = require(668) /* keys */.WebBrowserType.CHROME;
-    obj1 = items.push(obj1);
-    isAndroidResult = require(477) /* set */.isAndroid();
+    obj1 = { label: null, value: null };
+    obj1[0] = stringResult;
+    CHROME = tmp(691).WebBrowserType.CHROME;
+    obj1[1] = CHROME;
+    t = items.push(obj1);
+    isAndroidResult = tmpResult.isAndroid();
   }
 }
 const radio = createToggle.createRadio({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["C+DkPu"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["C+DkPu"]);
   },
   parent: require("MobileSetting").MobileSetting.WEB_BROWSER,
   useValue: function useWebBrowserSettingValue() {
-    return require(4131) /* removeInAppBrowserCloseSubscription */.useBrowserManagerSelectedBrowser();
+    return require(4155) /* NativeModules */.useBrowserManagerSelectedBrowser();
   },
   onValueChange: function onWebBrowserSettingValueChange(arg0) {
-    const result = require(4131) /* removeInAppBrowserCloseSubscription */.browserManagerSelectBrowser(Number(arg0));
+    const result = require(4155) /* NativeModules */.browserManagerSelectBrowser(Number(arg0));
   },
   useOptions: useWebBrowserSettingOptions
 });
 let obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["C+DkPu"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["C+DkPu"]);
   },
   parent: require("MobileSetting").MobileSetting.WEB_BROWSER,
   useValue: function useWebBrowserSettingValue() {
-    return require(4131) /* removeInAppBrowserCloseSubscription */.useBrowserManagerSelectedBrowser();
+    return require(4155) /* NativeModules */.useBrowserManagerSelectedBrowser();
   },
   onValueChange: function onWebBrowserSettingValueChange(arg0) {
-    const result = require(4131) /* removeInAppBrowserCloseSubscription */.browserManagerSelectBrowser(Number(arg0));
+    const result = require(4155) /* NativeModules */.browserManagerSelectBrowser(Number(arg0));
   },
   useOptions: useWebBrowserSettingOptions
 };

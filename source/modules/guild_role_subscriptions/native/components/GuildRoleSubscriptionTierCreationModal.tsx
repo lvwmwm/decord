@@ -1,22 +1,22 @@
-// Module ID: 16545
-// Function ID: 128768
+// Module ID: 16580
+// Function ID: 16581
 // Name: GuildRoleSubscriptionTierCreationModal
-// Dependencies: [5, 57, 31, 16534, 14200, 33, 14222, 3865, 1212, 16546, 16529, 16547, 2]
+// Dependencies: [5, 32, 19, 16569, 14222, 21, 14244, 3889, 1236, 16581, 16564, 16582, 2]
 // Exports: default
 
-// Module 16545 (GuildRoleSubscriptionTierCreationModal)
+// Module 16580 (GuildRoleSubscriptionTierCreationModal)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import noop from "noop";
+import usePriceTiers from "usePriceTiers";
 import MAX_SUBSCRIPTION_TIERS from "MAX_SUBSCRIPTION_TIERS";
 import { jsx } from "jsxProd";
 
-let closure_8;
-let closure_9;
+let c9;
+let metroImportAll;
 const require = arg1;
-({ GuildRoleSubscriptionsTierScenes: closure_8, GUILD_ROLE_SUBSCRIPTION_TIER_CREATION_KEY: closure_9 } = MAX_SUBSCRIPTION_TIERS);
-const result = require("result").fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierCreationModal.tsx");
+({ GuildRoleSubscriptionsTierScenes: metroImportAll, GUILD_ROLE_SUBSCRIPTION_TIER_CREATION_KEY: c9 } = MAX_SUBSCRIPTION_TIERS);
+const result = require("noop").fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierCreationModal.tsx");
 
 export default function GuildRoleSubscriptionTierCreationModal(guildId) {
   let c6;
@@ -29,27 +29,98 @@ export default function GuildRoleSubscriptionTierCreationModal(guildId) {
   let first;
   let callback;
   let React;
+  error = undefined;
   function _handleCreate() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = first(tmp);
-    return obj(...arguments);
+    const self = this;
+    const tmp = first(function*() {
+      if (v0 === 2) {
+        v0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v0 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_0 = tmp4;
+              const obj1 = { guildId: null, editStateId: null, groupListingId: null, onBeforeDispatchNewListing: null };
+              obj1[0] = outer1_0;
+              obj1[1] = outer1_4;
+              obj1[2] = c1;
+              obj1[3] = function onBeforeDispatchNewListing(id) {
+                return callback(id.id);
+              };
+              c1 = 1;
+              v0 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = outer1_6(obj1);
+              return obj2;
+            }
+          } else if (arg0 === 1) {
+            v0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            if (arg1) {
+              outer1_7.resetImperatively();
+              v0();
+              callback();
+            }
+            v0 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp16) {
+          v0 = tmp;
+          throw tmp16;
+        }
+      }
+    });
+    const _handleCreate = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
-  const tmp = callback(React.useState(guildId.editStateId), 2);
+  let tmp = callback(React.useState(guildId.editStateId), 2);
   first = tmp[0];
   callback = tmp[1];
-  let obj = importAll(14222);
+  let obj = importAll(14244);
   const createOrUpdateListingFromEditState = obj.useCreateOrUpdateListingFromEditState();
   ({ handleCreateOrUpdateFromEditState: c6, error } = createOrUpdateListingFromEditState);
   let items = [error];
   const layoutEffect = React.useLayoutEffect(() => {
     if (null != error) {
       let anyErrorMessage = error.getAnyErrorMessage();
-      if (null == anyErrorMessage) {
-        const intl = guildId(outer1_3[8]).intl;
-        anyErrorMessage = intl.string(guildId(outer1_3[8]).t.R0RpRX);
+      if (anyErrorMessage == null) {
+        const intl = tmp(tmp2[8]).intl;
+        anyErrorMessage = intl.string(tmp(tmp2[8]).t.R0RpRX);
       }
       guildId(outer1_3[7]).presentError(anyErrorMessage);
-      const obj = guildId(outer1_3[7]);
+      const obj2 = guildId(outer1_3[7]);
     }
   }, items);
   const memo = React.useMemo(() => {
@@ -57,38 +128,23 @@ export default function GuildRoleSubscriptionTierCreationModal(guildId) {
     ({ DETAILS: arr[0], CHANNEL_BENEFITS: arr[1], INTANGIBLE_BENEFITS: arr[2], DESIGN: arr[3], CONFIRMATION: arr[4] } = _handleCreate);
     return items;
   }, []);
-  obj = { guildId, editStateId: first, groupListingId };
-  obj = {
+  obj = { guildId, editStateId: first, groupListingId, children: null };
+  obj = { guildId, children: null };
+  obj[1] = jsx(groupListingId(16582), {
     guildId,
-    children: jsx(groupListingId(16547), {
-      guildId,
-      modalKey: closure_9,
-      onDone: function handleCreate() {
-        return _handleCreate(...arguments);
-      },
-      steps: memo
-    })
-  };
-  obj.children = jsx(guildId(16529).RoleSubscriptionSettingsDisabledContextProvider, {
-    guildId,
-    children: jsx(groupListingId(16547), {
-      guildId,
-      modalKey: closure_9,
-      onDone: function handleCreate() {
-        return _handleCreate(...arguments);
-      },
-      steps: memo
-    })
+    modalKey: closure_9,
+    onDone: function handleCreate() {
+      const self = this;
+      const apply = _handleCreate.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    },
+    steps: memo
   });
-  return jsx(guildId(16546).EditStateContextProvider, {
-    guildId,
-    children: jsx(groupListingId(16547), {
-      guildId,
-      modalKey: closure_9,
-      onDone: function handleCreate() {
-        return _handleCreate(...arguments);
-      },
-      steps: memo
-    })
-  });
+  obj[3] = jsx(guildId(16564).RoleSubscriptionSettingsDisabledContextProvider, { guildId, children: null });
+  return jsx(guildId(16581).EditStateContextProvider, { guildId, children: null });
 };

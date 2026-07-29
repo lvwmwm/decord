@@ -1,33 +1,33 @@
-// Module ID: 15766
-// Function ID: 121483
+// Module ID: 15801
+// Function ID: 15802
 // Name: isGuildSelectable
-// Dependencies: [1353, 4184, 5902, 4360, 2]
+// Dependencies: [1377, 4208, 5921, 4385, 2]
 // Exports: default
 
-// Module 15766 (isGuildSelectable)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_1 from "_isNativeReflectConstruct";
-import closure_2 from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 15801 (isGuildSelectable)
+import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
+import reset from "reset";
+import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/launchpad/native/isGuildSelectable.tsx");
+const result = require("updateGuildUnreadSentinel").fileFinishedImporting("modules/launchpad/native/isGuildSelectable.tsx");
 
 export default function isGuildSelectable(id) {
   const stageInstancesByGuild = id;
-  let tmp = !muted.isMuted(id);
-  if (tmp) {
-    const tmp3 = !closure_2.hasUnread(id);
-    let tmp4 = !tmp3;
-    if (tmp3) {
+  const isMutedResult = muted.isMuted(id);
+  let tmp2 = !isMutedResult;
+  if (!isMutedResult) {
+    let hasUnreadResult = updateGuildUnreadSentinel.hasUnread(id);
+    if (!hasUnreadResult) {
       const _Object = Object;
       let someResult = Object.keys(stageInstancesByGuild.getStageInstancesByGuild(id)).length > 0;
       if (!someResult) {
         allApplicationStreams = allApplicationStreams.getAllApplicationStreams();
-        someResult = allApplicationStreams.some((guildId) => guildId.guildId === _isNativeReflectConstruct);
+        someResult = allApplicationStreams.some((guildId) => guildId.guildId === handleStageInstanceCreateOrUpdate);
       }
-      tmp4 = someResult;
+      hasUnreadResult = someResult;
     }
-    tmp = tmp4;
+    tmp2 = hasUnreadResult;
   }
-  return tmp;
+  return tmp2;
 };

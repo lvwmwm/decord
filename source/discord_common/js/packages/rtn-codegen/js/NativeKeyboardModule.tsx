@@ -1,9 +1,9 @@
-// Module ID: 1821
-// Function ID: 20012
+// Module ID: 1845
+// Function ID: 1846
 // Name: enforcing
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 
-// Module 1821 (enforcing)
+// Module 1845 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeKeyboardModule");

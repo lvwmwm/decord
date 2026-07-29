@@ -1,17 +1,17 @@
-// Module ID: 13139
-// Function ID: 101298
+// Module ID: 13162
+// Function ID: 13163
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [110, 42, 2]
+// Dependencies: [106, 65, 2]
 
-// Module 13139 (__INTERNAL_VIEW_CONFIG)
+// Module 13162 (__INTERNAL_VIEW_CONFIG)
 import weakSet from "weakSet";
-import get from "get";
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
-let obj = { uiViewClassName: "PassthroughTouchView", directEventTypes: { topTouchDown: { registrationName: "onTouchDown" } } };
+let obj = { uiViewClassName: "PassthroughTouchView", directEventTypes: { topTouchDown: { registrationName: "onTouchDown" } }, validAttributes: null };
 obj = {};
 const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onTouchDown: true }));
-obj.validAttributes = obj;
-const value = get.get("PassthroughTouchView", () => obj);
+obj[2] = obj;
+const value = setRuntimeConfigProvider.get("PassthroughTouchView", () => obj);
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/PassthroughTouchNativeComponent.tsx");
 
 export default value;

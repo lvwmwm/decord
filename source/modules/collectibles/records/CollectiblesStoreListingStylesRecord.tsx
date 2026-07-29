@@ -1,26 +1,48 @@
-// Module ID: 5800
-// Function ID: 50808
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1859, 5790, 665, 2]
+// Module ID: 5818
+// Function ID: 5819
+// Name: fromServer
+// Dependencies: [1883, 5808, 688, 2]
 
-// Module 5800 (_isNativeReflectConstruct)
-import tinycolor from "tinycolor";
-import pad2 from "pad2";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "Record";
+// Module 5818 (fromServer)
+import "toJS";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
+let prototype;
+prototype = function CollectiblesStoreListingStylesRecord(arg0) {
+  const tmp = new prototype(new.target, new.target);
+  // ThrowIfThisInitialized (0x7c)
+  ({ backgroundColors: tmp.backgroundColors, buttonColors: tmp.buttonColors, confettiColors: tmp.confettiColors } = arg0);
+  return tmp;
+}.prototype;
+class prototype extends tmp2 {
 }
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/collectibles/records/CollectiblesStoreListingStylesRecord.tsx");
+prototype["fromServer"] = function fromServer(arg0) {
+  let background_colors;
+  let button_colors;
+  let confetti_colors;
+  ({ background_colors, button_colors, confetti_colors } = arg0);
+  const mapped = background_colors.map((color) => {
+    const tmp = callback2(5808);
+    return tmp(callback(688).int2hex(color));
+  });
+  const mapped1 = button_colors.map((color) => {
+    const tmp = callback2(5808);
+    return tmp(callback(688).int2hex(color));
+  });
+  const mapped2 = confetti_colors.map((color) => {
+    const tmp = callback2(5808);
+    return tmp(callback(688).int2hex(color));
+  });
+  if (typeof prototype !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const tmp5 = new prototype("Trying to call a non-function", confetti_colors, prototype, new.target);
+  // ThrowIfThisInitialized (0x7c)
+  tmp5.backgroundColors = mapped;
+  tmp5.buttonColors = mapped1;
+  tmp5.confettiColors = mapped2;
+  return tmp5;
+};
+const result = require("int2hslRaw").fileFinishedImporting("modules/collectibles/records/CollectiblesStoreListingStylesRecord.tsx");
 
-export default tmp2;
+export default prototype;

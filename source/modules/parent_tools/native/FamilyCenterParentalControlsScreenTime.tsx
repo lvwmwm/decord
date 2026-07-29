@@ -1,16 +1,16 @@
-// Module ID: 13942
-// Function ID: 106568
+// Module ID: 13963
+// Function ID: 13964
 // Name: ScheduleRuleRow
-// Dependencies: [27, 653, 33, 4165, 689, 10226, 5198, 4161, 1212, 2199, 13903, 1456, 5536, 2]
+// Dependencies: [17, 676, 21, 4189, 712, 10247, 5220, 4185, 1236, 2223, 13924, 1480, 5554, 2]
 // Exports: default
 
-// Module 13942 (ScheduleRuleRow)
+// Module 13963 (ScheduleRuleRow)
 import { View } from "get ActivityIndicator";
 import { UserSettingsSections } from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
 function ScheduleRuleRow(rule) {
   let dependencyMap;
@@ -21,42 +21,40 @@ function ScheduleRuleRow(rule) {
   if (readOnly === undefined) {
     readOnly = false;
   }
-  let obj = rule(10226);
+  let obj = rule(10247);
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
-  const obj2 = rule(10226);
-  obj = { label: scheduleRuleDateRange, subLabel: rule(10226).formatDays(rule.days) };
-  obj = { variant: "text-sm/medium", color: "text-subtle" };
-  const intl = rule(1212).intl;
+  const obj2 = rule(10247);
+  obj = { label: scheduleRuleDateRange, subLabel: rule(10247).formatDays(rule.days), trailing: null, arrow: null, onPress: null };
+  const intl = rule(1236).intl;
   const string = intl.string;
-  const tmp5 = importDefault(2199);
+  const tmp4 = importDefault(2223);
   if (rule.enabled) {
-    let stringResult = string(tmp5["8vDHRq"]);
+    let stringResult = string(tmp4["8vDHRq"]);
   } else {
-    stringResult = string(tmp5["4z9fN+"]);
+    stringResult = string(tmp4["4z9fN+"]);
   }
-  obj.children = stringResult;
-  obj.trailing = closure_5(rule(4161).Text, obj);
-  obj.arrow = !readOnly;
+  obj[2] = closure_5(rule(4185).Text, { variant: "text-sm/medium", color: "text-subtle", children: stringResult });
+  obj[3] = !readOnly;
   let fn;
   if (!readOnly) {
     fn = () => {
-      let obj = { teenId: closure_1 };
+      let obj = { teenId: closure_1, rule: null };
       obj = {};
       const merged = Object.assign(rule);
-      obj.rule = obj;
+      obj[1] = obj;
       return navigation.navigate(outer1_4.FAMILY_CENTER_SCHEDULE_DOWNTIME, obj);
     };
   }
-  obj.onPress = fn;
-  return closure_5(rule(5198).TableRow, obj);
+  obj[4] = fn;
+  return closure_5(rule(5220).TableRow, obj);
 }
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-let obj = {};
-obj = { paddingTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-obj.header = obj;
-obj.container = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let closure_7 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, gap: require("_createForOfIteratorHelperLoose").space.PX_8 };
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+let obj = { header: null, container: null };
+obj = { paddingTop: require("Themes").space.PX_24 };
+obj[0] = obj;
+obj[1] = { paddingHorizontal: require("Themes").space.PX_16, gap: require("Themes").space.PX_8 };
+let closure_7 = createCacheKey.createStyles(obj);
+let obj1 = { paddingHorizontal: require("Themes").space.PX_16, gap: require("Themes").space.PX_8 };
 const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalControlsScreenTime.tsx");
 
 export default function FamilyCenterParentalControlsScreenTime(readOnly) {
@@ -72,31 +70,34 @@ export default function FamilyCenterParentalControlsScreenTime(readOnly) {
   let obj1 = flag(id[11]);
   importDefault = obj1.useNavigation();
   id = undefined;
-  if (null != selectedTeenUser) {
+  if (selectedTeenUser != null) {
     id = selectedTeenUser.id;
   }
   let rules;
-  if (null != selectedTeenUser) {
+  if (selectedTeenUser != null) {
     const restrictedSchedule = selectedTeenUser.restrictedSchedule;
-    if (null != restrictedSchedule) {
+    if (restrictedSchedule != null) {
       rules = restrictedSchedule.rules;
     }
   }
-  if (null == rules) {
+  if (rules == null) {
     rules = [];
   }
-  const obj3 = flag(id[5]);
-  let tmp4 = null;
+  const tmp2Result = flag(id[5]);
+  let tmp6 = null;
   if (null != id) {
-    obj = { style: tmp.container };
-    obj = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.header };
-    const intl = flag(id[8]).intl;
-    obj.children = intl.string(importDefault(id[9])["72CmJd"]);
-    const items = [callback(flag(id[7]).Text, obj), ];
-    obj1 = { hasIcons: false, children: sortRulesByStartTimeResult.map((rule) => outer1_5(outer1_8, { rule, teenId: id, navigation: closure_1, readOnly: flag }, rule.ruleId)) };
-    items[1] = callback(flag(id[12]).TableRowGroup, obj1);
-    obj.children = items;
-    tmp4 = callback2(View, obj);
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj = { variant: "text-sm/semibold", color: "text-subtle", style: null, children: null };
+    obj[2] = tmp.header;
+    const intl = tmp2(tmp3[8]).intl;
+    obj[3] = intl.string(importDefault(tmp3[9])["72CmJd"]);
+    const items = [callback(tmp2(tmp3[7]).Text, obj), ];
+    obj1 = { hasIcons: false, children: null };
+    obj1[1] = sortRulesByStartTimeResult.map((rule) => outer1_5(outer1_8, { rule, teenId: id, navigation: closure_1, readOnly: flag }, rule.ruleId));
+    items[1] = callback(tmp2(tmp3[12]).TableRowGroup, obj1);
+    obj[1] = items;
+    tmp6 = callback2(View, obj);
   }
-  return tmp4;
+  return tmp6;
 };

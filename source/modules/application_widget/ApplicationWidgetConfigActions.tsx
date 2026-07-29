@@ -1,136 +1,337 @@
-// Module ID: 12145
-// Function ID: 95016
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 12144, 653, 686, 507, 1184, 10869, 2]
+// Module ID: 12169
+// Function ID: 12170
+// Name: getApplicationsFromConfigs
+// Dependencies: [5, 12168, 676, 709, 530, 1208, 10893, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
-// Module 12145 (_createForOfIteratorHelperLoose)
-import isNonEmptyString from "isNonEmptyString";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import { FetchState } from "_isNativeReflectConstruct";
+// Module 12169 (getApplicationsFromConfigs)
+import module_1208 from "module_1208";
+import updateApplicationConfigs from "updateApplicationConfigs";
+import { FetchState } from "updateApplicationConfigs";
 import { Endpoints } from "ME";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
 function getApplicationsFromConfigs(arg0) {
-  let iter2;
   const map = new Map();
-  const tmp = _createForOfIteratorHelperLoose(arg0);
-  let iter = tmp();
-  if (!iter.done) {
-    do {
-      let value = iter.value;
-      if (null != value.application) {
-        let result = map.set(value.application.id, value.application);
-      }
-      iter2 = tmp();
-      iter = iter2;
-    } while (!iter2.done);
+  const iter = arg0[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    if (null != nextResult.application) {
+      let tmp3 = nextResult;
+      let result = map.set(tmp2.application.id, tmp2.application);
+    }
+    continue;
   }
   return Array.from(map.values());
 }
 function fetchFeaturedWidgetConfigsFromApi() {
-  return _fetchFeaturedWidgetConfigsFromApi(...arguments);
+  const self = this;
+  const apply = _fetchFeaturedWidgetConfigsFromApi.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _fetchFeaturedWidgetConfigsFromApi() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback(function*() {
+    if (c5 === 2) {
+      c5 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let callback = tmp3;
+            let closure_0 = tmp7;
+            closure_0 = undefined;
+            outer1_1(outer1_2[3]).dispatch({ type: "APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_START" });
+            let c3 = 1;
+            const HTTP = outer1_0(outer1_2[4]).HTTP;
+            const obj1 = { url: null, rejectWithError: true };
+            obj1[0] = outer1_6.WIDGET_CONFIGS_FEATURED;
+            c4 = 2;
+            c5 = 1;
+            const obj2 = { value: null, done: false };
+            obj2[0] = HTTP.get(obj1);
+            return obj2;
+          }
+        } else if (1 === tmp7) {
+          c3 = 0;
+          callback = dependencyMap;
+          let obj3 = callback(709);
+          obj3.dispatch({ type: "APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_FAILURE" });
+          let obj4 = callback(1208);
+          obj4.captureException(callback);
+          throw callback;
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 0;
+          c5 = 3;
+          obj3 = { value: null, done: true };
+          obj3[0] = arg1;
+          return obj3;
+        } else {
+          closure_0 = arg1;
+          obj = callback(709);
+          obj4 = { type: "APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_SUCCESS", applications: null, configs: null };
+          obj4[1] = closure_0.body.applications;
+          obj4[2] = closure_0.body.configs;
+          obj.dispatch(obj4);
+          c3 = 0;
+          c5 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp27) {
+        dependencyMap = tmp27;
+        if (tmp4 === c3) {
+          c5 = tmp2;
+          throw tmp27;
+        } else {
+          c4 = tmp;
+        }
+      }
+    }
+  });
+  const _fetchFeaturedWidgetConfigsFromApi = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function fetchDeveloperWidgetConfigsFromApi() {
-  return _fetchDeveloperWidgetConfigsFromApi(...arguments);
+  const self = this;
+  const apply = _fetchDeveloperWidgetConfigsFromApi.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _fetchDeveloperWidgetConfigsFromApi() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback(function*() {
+    if (c5 === 2) {
+      c5 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let callback = tmp3;
+            let closure_0 = tmp7;
+            closure_0 = undefined;
+            outer1_1(outer1_2[3]).dispatch({ type: "APPLICATION_WIDGET_CONFIG_DEVELOPER_FETCH_START" });
+            let c3 = 1;
+            const HTTP = outer1_0(outer1_2[4]).HTTP;
+            const obj1 = { url: null, rejectWithError: true };
+            obj1[0] = outer1_6.WIDGET_CONFIGS_DEVELOPER;
+            c4 = 2;
+            c5 = 1;
+            const obj2 = { value: null, done: false };
+            obj2[0] = HTTP.get(obj1);
+            return obj2;
+          }
+        } else if (1 === tmp7) {
+          c3 = 0;
+          callback = dependencyMap;
+          let obj3 = callback(709);
+          obj3.dispatch({ type: "APPLICATION_WIDGET_CONFIG_DEVELOPER_FETCH_FAILURE" });
+          let obj4 = callback(1208);
+          obj4.captureException(callback);
+          throw callback;
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c3 = 0;
+          c5 = 3;
+          obj3 = { value: null, done: true };
+          obj3[0] = arg1;
+          return obj3;
+        } else {
+          closure_0 = arg1;
+          obj = callback(709);
+          obj4 = { type: "APPLICATION_WIDGET_CONFIG_DEVELOPER_FETCH_SUCCESS", applications: null, configs: null };
+          obj4[1] = closure_0.body.applications;
+          obj4[2] = closure_0.body.configs;
+          obj.dispatch(obj4);
+          c3 = 0;
+          c5 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp27) {
+        dependencyMap = tmp27;
+        if (tmp4 === c3) {
+          c5 = tmp2;
+          throw tmp27;
+        } else {
+          c4 = tmp;
+        }
+      }
+    }
+  });
+  const _fetchDeveloperWidgetConfigsFromApi = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _fetchWidgetConfigsFromApi() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (function*(arg0, body) {
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp6 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              let dependencyMap = tmp3;
+              body = tmp7;
+              body = undefined;
+              const obj1 = { type: "APPLICATION_WIDGET_CONFIG_FETCH_START", applicationId: null };
+              obj1[1] = callback;
+              outer1_1(outer1_2[3]).dispatch(obj1);
+              let c4 = 1;
+              const HTTP = callback(outer1_2[4]).HTTP;
+              const obj2 = { url: null, rejectWithError: true };
+              obj2[0] = c6.APPLICATION_WIDGET_CONFIGS(callback);
+              c5 = 2;
+              c6 = 1;
+              let obj3 = { value: null, done: false };
+              obj3[0] = HTTP.get(obj2);
+              return obj3;
+            }
+          } else if (1 === tmp7) {
+            c4 = 0;
+            dependencyMap = module_1208;
+            obj3 = body(709);
+            const obj4 = { type: "APPLICATION_WIDGET_CONFIG_FETCH_FAILURE", applicationId: null };
+            obj4[1] = callback;
+            obj3.dispatch(obj4);
+            let obj5 = body(1208);
+            obj5.captureException(dependencyMap);
+            throw dependencyMap;
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw body;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            obj5 = { value: null, done: true };
+            obj5[0] = body;
+            return obj5;
+          } else {
+            body = body.body;
+            obj = body(709);
+            const obj6 = { type: "APPLICATION_WIDGET_CONFIG_FETCH_SUCCESS", applicationId: null, applications: null, configs: null };
+            obj6[1] = callback;
+            obj6[2] = callback2(body);
+            obj6[3] = body;
+            obj.dispatch(obj6);
+            c4 = 0;
+            c6 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp30) {
+          module_1208 = tmp30;
+          if (tmp4 === c4) {
+            c6 = tmp2;
+            throw tmp30;
+          } else {
+            c5 = tmp;
+          }
+        }
+      }
+    })();
+  });
+  const _fetchWidgetConfigsFromApi = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-let promiseDeduper = new require("_createForOfIteratorHelperLoose").PromiseDeduper();
-promiseDeduper = new require("_createForOfIteratorHelperLoose").PromiseDeduper();
-const promiseDeduper1 = new require("_createForOfIteratorHelperLoose").PromiseDeduper();
+let promiseDeduper = new require("areArraysShallowlyEqual").PromiseDeduper();
+promiseDeduper = new require("areArraysShallowlyEqual").PromiseDeduper();
+const promiseDeduper1 = new require("areArraysShallowlyEqual").PromiseDeduper();
 let result = require("ME").fileFinishedImporting("modules/application_widget/ApplicationWidgetConfigActions.tsx");
 
 export const fetchFeaturedWidgetConfigs = function fetchFeaturedWidgetConfigs() {
@@ -148,8 +349,7 @@ export const fetchFeaturedWidgetConfigs = function fetchFeaturedWidgetConfigs() 
     }
     return resolved;
   }
-  obj = { force: flag };
-  resolved = promiseDeduper.one(undefined, fetchFeaturedWidgetConfigsFromApi, obj);
+  resolved = promiseDeduper.one(undefined, fetchFeaturedWidgetConfigsFromApi, { force: flag });
 };
 export const fetchDeveloperWidgetConfigs = function fetchDeveloperWidgetConfigs() {
   let obj = arg0;
@@ -166,12 +366,11 @@ export const fetchDeveloperWidgetConfigs = function fetchDeveloperWidgetConfigs(
     }
     return resolved;
   }
-  obj = { force: flag };
-  resolved = promiseDeduper.one(undefined, fetchDeveloperWidgetConfigsFromApi, obj);
+  resolved = promiseDeduper.one(undefined, fetchDeveloperWidgetConfigsFromApi, { force: flag });
 };
-export const fetchWidgetConfigs = function fetchWidgetConfigs(value) {
+export const fetchWidgetConfigs = function fetchWidgetConfigs(item10012) {
+  let closure_0 = item10012;
   let obj = arg1;
-  let closure_0 = value;
   if (arg1 === undefined) {
     obj = {};
   }
@@ -185,8 +384,14 @@ export const fetchWidgetConfigs = function fetchWidgetConfigs(value) {
     }
     return resolved;
   }
-  obj = { force: flag };
-  resolved = promiseDeduper1.one(value, () => (function fetchWidgetConfigsFromApi(closure_0) {
-    return outer2_17(...arguments);
-  })(closure_0), obj);
+  resolved = promiseDeduper1.one(item10012, () => (function fetchWidgetConfigsFromApi(closure_0) {
+    const self = this;
+    const apply = closure_14.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  })(closure_0), { force: flag });
 };

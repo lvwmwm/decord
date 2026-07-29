@@ -1,30 +1,30 @@
-// Module ID: 6237
-// Function ID: 55775
+// Module ID: 6257
+// Function ID: 6258
 // Name: useSelectedTeen
-// Dependencies: [1850, 5775, 624, 2]
+// Dependencies: [1874, 5793, 647, 2]
 // Exports: useSelectedTeen, useSelectedTeenId
 
-// Module 6237 (useSelectedTeen)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 6257 (useSelectedTeen)
+import mergeGuildAvatar from "mergeGuildAvatar";
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 
 const require = arg1;
 const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/parent_tools/hooks/useSelectedTeen.tsx");
 
 export const useSelectedTeen = function useSelectedTeen() {
-  const items = [closure_3];
-  _require = _require(624).useStateFromStores(items, () => outer1_3.getSelectedTeenId());
-  const obj = _require(624);
-  const items1 = [_isNativeReflectConstruct];
-  return _require(624).useStateFromStores(items1, () => {
+  const items = [freshTeenActivityWithMap];
+  _require = _require(647).useStateFromStores(items, () => selectedTeenId.getSelectedTeenId());
+  const obj = _require(647);
+  const items1 = [mergeGuildAvatar];
+  return _require(647).useStateFromStores(items1, () => {
     let user;
     if (null !== closure_0) {
-      user = outer1_2.getUser(closure_0);
+      user = outer1_2.getUser(tmp);
     }
     return user;
   });
 };
 export const useSelectedTeenId = function useSelectedTeenId() {
-  const items = [closure_3];
-  return require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => outer1_3.getSelectedTeenId());
+  const items = [freshTeenActivityWithMap];
+  return require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => selectedTeenId.getSelectedTeenId());
 };

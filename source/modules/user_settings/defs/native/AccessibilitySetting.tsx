@@ -1,11 +1,11 @@
-// Module ID: 14320
-// Function ID: 109834
+// Module ID: 14342
+// Function ID: 14343
 // Name: items
-// Dependencies: [57, 31, 653, 1345, 33, 1334, 8417, 1273, 1212, 10099, 14321, 14323, 2]
+// Dependencies: [32, 19, 676, 1369, 21, 1358, 8441, 1297, 1236, 10120, 14343, 14345, 2]
 
-// Module 14320 (items)
+// Module 14342 (items)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
@@ -14,44 +14,47 @@ const require = arg1;
 let items = [require("DismissibleContent").DismissibleContent.MOBILE_ACCESSIBILITY_COLOR_SETTINGS];
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.G0neg7);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.G0neg7);
   },
   parent: null,
   IconComponent: require("AccessibilityIcon").AccessibilityIcon,
   useTrailing() {
-    let obj = require(8417) /* useSelectedDismissibleContent */;
-    const first = callback(obj.useSelectedDismissibleContent(items), 2)[0];
-    let tmp3 = null;
-    if (null != first) {
+    let tmp4;
+    let obj = require(8441) /* useSelectedDismissibleContent */;
+    [tmp4, r10012] = callback(obj.useSelectedDismissibleContent(items), 2);
+    let tmp5 = null;
+    if (null != tmp4) {
       let hasItem;
-      if (null != items) {
-        hasItem = items.includes(first);
+      if (obj2 != null) {
+        hasItem = obj2.includes(tmp4);
       }
-      tmp3 = null;
+      tmp5 = null;
       if (hasItem) {
-        obj = {};
-        const intl = require(1212) /* getSystemLocale */.intl;
-        obj.text = intl.string(require(1212) /* getSystemLocale */.t.y2b7CA);
-        tmp3 = jsx(require(1273) /* Button */.TextBadge, {});
+        obj = { text: null };
+        const intl = tmp(1236).intl;
+        obj[0] = intl.string(tmp(1236).t.y2b7CA);
+        tmp5 = jsx(tmp(1297).TextBadge, { text: null });
       }
     }
-    return tmp3;
+    return tmp5;
   },
   usePreNavigationAction() {
-    const tmp = callback(first(8417).useSelectedDismissibleContent(items), 2);
+    const tmp = callback(first(8441).useSelectedDismissibleContent(items), 2);
     first = tmp[0];
     const dependencyMap = tmp3;
     items = [tmp[1], first];
     return React.useCallback(() => {
-      let hasItem = null != first;
-      if (hasItem) {
-        hasItem = null != outer1_6;
+      let tmp2 = null != first;
+      if (tmp2) {
+        let hasItem;
+        if (outer1_6 != null) {
+          hasItem = obj.includes(tmp);
+        }
+        tmp2 = hasItem;
+        obj = outer1_6;
       }
-      if (hasItem) {
-        hasItem = outer1_6.includes(first);
-      }
-      if (hasItem) {
+      if (tmp2) {
         tmp3(outer1_4.TAKE_ACTION);
       }
       return true;
@@ -62,7 +65,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.ACCESSIBILITY,
   getComponent() {
-    return require(14323) /* getAccessibilitySettingScreen */.default;
+    return require(14345) /* SettingsAccessibilityScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

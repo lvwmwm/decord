@@ -1,12 +1,12 @@
-// Module ID: 14909
-// Function ID: 113575
+// Module ID: 14935
+// Function ID: 14936
 // Name: useDrawerOpen
-// Dependencies: [57, 31, 1457, 4016, 2]
+// Dependencies: [32, 19, 1481, 4040, 2]
 // Exports: useDrawerOpen
 
-// Module 14909 (useDrawerOpen)
+// Module 14935 (useDrawerOpen)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const require = arg1;
 const result = require("Link").fileFinishedImporting("modules/home_drawer/native/useDrawerState.tsx");
@@ -23,25 +23,24 @@ export const useDrawerOpen = function useDrawerOpen(enableHome) {
     if (flag) {
       const state = navigation.getState();
       let tmp6;
-      if (null != state) {
+      if (state != null) {
         const routes = state.routes;
-        if (null != routes) {
-          let index;
-          if (null != state) {
-            index = state.index;
+        if (routes != null) {
+          let num;
+          if (state != null) {
+            num = state.index;
           }
-          let num2 = 0;
-          if (null != index) {
-            num2 = index;
+          if (num == null) {
+            num = 0;
           }
-          tmp6 = routes[num2];
+          tmp6 = routes[num];
         }
       }
       const coerceGuildsRouteResult = flag(navigation[3]).coerceGuildsRoute(tmp6);
       let drawerOpen;
-      if (null != coerceGuildsRouteResult) {
+      if (coerceGuildsRouteResult != null) {
         const params = coerceGuildsRouteResult.params;
-        if (null != params) {
+        if (params != null) {
           drawerOpen = params.drawerOpen;
         }
       }
@@ -56,28 +55,27 @@ export const useDrawerOpen = function useDrawerOpen(enableHome) {
     function handleStateChange(data) {
       const state = data.data.state;
       let tmp;
-      if (null != state) {
+      if (state != null) {
         const routes = state.routes;
-        if (null != routes) {
-          let index;
-          if (null != state) {
-            index = state.index;
+        if (routes != null) {
+          let num;
+          if (state != null) {
+            num = state.index;
           }
-          let num = 0;
-          if (null != index) {
-            num = index;
+          if (num == null) {
+            num = 0;
           }
           tmp = routes[num];
         }
       }
-      const coerceGuildsRouteResult = flag(navigation[3]).coerceGuildsRoute(tmp);
+      const coerceGuildsRouteResult = handleStateChange(outer1_1[3]).coerceGuildsRoute(tmp);
       if (null != coerceGuildsRouteResult) {
         const params = coerceGuildsRouteResult.params;
         let drawerOpen;
-        if (null != params) {
+        if (params != null) {
           drawerOpen = params.drawerOpen;
         }
-        outer1_2(true === drawerOpen);
+        callback(true === drawerOpen);
       }
     }
     if (handleStateChange) {

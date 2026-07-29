@@ -1,17 +1,17 @@
-// Module ID: 8251
-// Function ID: 65935
-// Dependencies: [4360, 653, 662, 686, 4977, 480, 1361, 507, 5113, 5108, 7665, 2]
+// Module ID: 8275
+// Function ID: 8276
+// Dependencies: [4385, 676, 685, 709, 4999, 503, 1385, 530, 5135, 5130, 7688, 2]
 
-// Module 8251
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8275
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import ME from "ME";
 import { ChannelNotificationSettingsFlags as closure_7 } from "MAX_FAVORITES";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
-({ BITRATE_DEFAULT: closure_4, ChannelTypes: closure_5, Endpoints: closure_6 } = ME);
+({ BITRATE_DEFAULT: c4, ChannelTypes: c5, Endpoints: closure_6 } = ME);
 let result = require("MAX_FAVORITES").fileFinishedImporting("actions/CreateChannelActionCreators.tsx");
 
 export default {
@@ -30,21 +30,21 @@ export default {
       permissionOverwrites = [];
     }
     ({ bitrate, userLimit, parentId, skuId, flags, availableTags } = guildId);
-    let obj = permissionOverwrites(686);
+    let obj = permissionOverwrites(709);
     obj.dispatch({ type: "CREATE_CHANNEL_MODAL_SUBMIT", guildId, channelType: type });
     obj = { type, name: guildId.name, permission_overwrites: permissionOverwrites };
-    let tmp2 = null != bitrate;
-    if (tmp2) {
-      tmp2 = bitrate !== closure_4;
+    let tmp4 = null != bitrate;
+    if (tmp4) {
+      tmp4 = bitrate !== closure_4;
     }
-    if (tmp2) {
+    if (tmp4) {
       obj.bitrate = bitrate;
     }
-    let tmp4 = null != userLimit;
-    if (tmp4) {
-      tmp4 = userLimit > 0;
+    let tmp6 = null != userLimit;
+    if (tmp6) {
+      tmp6 = userLimit > 0;
     }
-    if (tmp4) {
+    if (tmp6) {
       obj.user_limit = userLimit;
     }
     if (null != parentId) {
@@ -53,11 +53,11 @@ export default {
     if (null != flags) {
       obj.flags = flags;
     }
-    let tmp5 = null != availableTags;
-    if (tmp5) {
-      tmp5 = availableTags.length > 0;
+    let tmp7 = null != availableTags;
+    if (tmp7) {
+      tmp7 = availableTags.length > 0;
     }
-    if (tmp5) {
+    if (tmp7) {
       obj.available_tags = availableTags.map((name) => ({ name: name.name, emoji_id: name.emojiId, emoji_name: name.emojiName, moderated: name.moderated }));
     }
     if (type === constants.GUILD_STORE) {
@@ -70,130 +70,126 @@ export default {
         obj.branch_id = guildId.branchId;
       }
     }
-    obj = { url: closure_6.GUILD_CHANNELS(guildId), body: obj, oldFormErrors: true };
-    const obj3 = permissionOverwrites(4977);
-    obj.trackedActionData = {
-      event: guildId(480).NetworkActionNames.CHANNEL_CREATE,
+    obj = { url: closure_6.GUILD_CHANNELS(guildId), body: obj, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
+    const tmp = permissionOverwrites;
+    const tmpResult = permissionOverwrites(4999);
+    obj[3] = {
+      event: guildId(503).NetworkActionNames.CHANNEL_CREATE,
       properties(body) {
         let obj = guildId(outer1_2[6]);
-        obj = { is_private: permissionOverwrites.length > 0 };
+        obj = { is_private: permissionOverwrites.length > 0, channel_id: null, channel_type: null };
         let id;
-        if (null != body) {
+        if (body != null) {
           body = body.body;
-          if (null != body) {
+          if (body != null) {
             id = body.id;
           }
         }
-        obj.channel_id = id;
+        obj[1] = id;
         let type;
-        if (null != body) {
+        if (body != null) {
           const body2 = body.body;
-          if (null != body2) {
+          if (body2 != null) {
             type = body2.type;
           }
         }
-        obj.channel_type = type;
+        obj[2] = type;
         return obj.exact(obj);
       }
     };
     const obj1 = {
-      event: guildId(480).NetworkActionNames.CHANNEL_CREATE,
+      event: guildId(503).NetworkActionNames.CHANNEL_CREATE,
       properties(body) {
         let obj = guildId(outer1_2[6]);
-        obj = { is_private: permissionOverwrites.length > 0 };
+        obj = { is_private: permissionOverwrites.length > 0, channel_id: null, channel_type: null };
         let id;
-        if (null != body) {
+        if (body != null) {
           body = body.body;
-          if (null != body) {
+          if (body != null) {
             id = body.id;
           }
         }
-        obj.channel_id = id;
+        obj[1] = id;
         let type;
-        if (null != body) {
+        if (body != null) {
           const body2 = body.body;
-          if (null != body2) {
+          if (body2 != null) {
             type = body2.type;
           }
         }
-        obj.channel_type = type;
+        obj[2] = type;
         return obj.exact(obj);
       }
     };
-    obj.rejectWithError = guildId(507).rejectWithMigratedError();
-    const obj6 = guildId(507);
-    return obj3.post(obj).then((body) => {
+    obj[4] = guildId(530).rejectWithMigratedError();
+    const obj6 = guildId(530);
+    return tmpResult.post(obj).then((body) => {
       if (outer1_3.isOptInEnabled(guildId)) {
         let obj = permissionOverwrites(outer1_2[8]);
-        obj = { flags: outer1_7.OPT_IN_ENABLED };
-        const result = obj.updateChannelOverrideSettings(guildId, body.body.id, obj, guildId(outer1_2[9]).NotificationLabels.OptedIn);
+        obj = { flags: null };
+        obj[0] = outer1_7.OPT_IN_ENABLED;
+        const result = obj.updateChannelOverrideSettings(tmp, body.body.id, obj, guildId(outer1_2[9]).NotificationLabels.OptedIn);
       }
-      const result1 = permissionOverwrites(outer1_2[10]).checkGuildTemplateDirty(guildId);
+      const result1 = permissionOverwrites(outer1_2[10]).checkGuildTemplateDirty(tmp);
       return body;
     }, (body) => {
-      let obj = permissionOverwrites(outer1_2[3]);
+      let obj = permissionOverwrites(table[3]);
       obj = { type: "CREATE_CHANNEL_MODAL_SUBMIT_FAILURE", errors: body.body };
       obj.dispatch(obj);
       throw body;
     });
   },
   createRoleSubscriptionTemplateChannel(closure_0, name, type, topic) {
-    let obj = importDefault(4977);
-    obj = { url: closure_6.GUILD_CHANNELS(closure_0), body: obj, oldFormErrors: true };
-    obj = {
-      name,
-      type,
-      topic,
-      trackedActionData: {
-        event: require(480) /* isThrottled */.NetworkActionNames.CHANNEL_CREATE,
-        properties(body) {
-          let obj = outer1_0(outer1_2[6]);
-          obj = { is_private: true };
-          let id;
-          if (null != body) {
-            body = body.body;
-            if (null != body) {
-              id = body.id;
-            }
-          }
-          obj.channel_id = id;
-          let type;
-          if (null != body) {
-            const body2 = body.body;
-            if (null != body2) {
-              type = body2.type;
-            }
-          }
-          obj.channel_type = type;
-          return obj.exact(obj);
-        }
-      }
-    };
-    const obj1 = {
-      event: require(480) /* isThrottled */.NetworkActionNames.CHANNEL_CREATE,
+    let obj = importDefault(4999);
+    obj = { url: closure_6.GUILD_CHANNELS(closure_0), body: obj, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
+    obj = { name, type, topic };
+    obj[3] = {
+      event: require(503) /* encodeProperties */.NetworkActionNames.CHANNEL_CREATE,
       properties(body) {
-        let obj = outer1_0(outer1_2[6]);
-        obj = { is_private: true };
+        let obj = callback(table[6]);
         let id;
-        if (null != body) {
+        if (body != null) {
           body = body.body;
-          if (null != body) {
+          if (body != null) {
             id = body.id;
           }
         }
-        obj.channel_id = id;
+        obj = { is_private: true, channel_id: id, channel_type: null };
         let type;
-        if (null != body) {
+        if (body != null) {
           const body2 = body.body;
-          if (null != body2) {
+          if (body2 != null) {
             type = body2.type;
           }
         }
-        obj.channel_type = type;
+        obj[2] = type;
         return obj.exact(obj);
       }
     };
-    obj.rejectWithError = require(507) /* _isNativeReflectConstruct */.rejectWithMigratedError();
+    const obj1 = {
+      event: require(503) /* encodeProperties */.NetworkActionNames.CHANNEL_CREATE,
+      properties(body) {
+        let obj = callback(table[6]);
+        let id;
+        if (body != null) {
+          body = body.body;
+          if (body != null) {
+            id = body.id;
+          }
+        }
+        obj = { is_private: true, channel_id: id, channel_type: null };
+        let type;
+        if (body != null) {
+          const body2 = body.body;
+          if (body2 != null) {
+            type = body2.type;
+          }
+        }
+        obj[2] = type;
+        return obj.exact(obj);
+      }
+    };
+    obj[4] = require(530) /* sendRequest */.rejectWithMigratedError();
     return obj.post(obj);
   }
 };

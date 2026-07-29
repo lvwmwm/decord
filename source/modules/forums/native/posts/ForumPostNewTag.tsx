@@ -1,24 +1,22 @@
-// Module ID: 11168
-// Function ID: 86703
+// Module ID: 11192
+// Function ID: 11193
 // Name: ForumPostNewTag
-// Dependencies: [31, 33, 4165, 689, 1273, 2]
+// Dependencies: [19, 21, 4189, 712, 1297, 2]
 // Exports: default
 
-// Module 11168 (ForumPostNewTag)
-import "result";
+// Module 11192 (ForumPostNewTag)
+import "noop";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { paddingVertical: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BADGE_BACKGROUND_BRAND };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/forums/native/posts/ForumPostNewTag.tsx");
+createCacheKey = { container: null };
+createCacheKey = { paddingVertical: 1, backgroundColor: require("Themes").colors.BADGE_BACKGROUND_BRAND };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("createCacheKey").fileFinishedImporting("modules/forums/native/posts/ForumPostNewTag.tsx");
 
 export default function ForumPostNewTag(containerStyle) {
-  const obj = { containerStyle: null, variant: "text-xs/bold", color: "badge-text-brand" };
-  const items = [containerStyle.containerStyle, _createForOfIteratorHelperLoose().container];
-  obj.containerStyle = items;
-  return jsx(require(1273) /* Button */.NewTag, { containerStyle: null, variant: "text-xs/bold", color: "badge-text-brand" });
+  containerStyle = [containerStyle.containerStyle, createCacheKey().container];
+  return jsx(require(1297) /* Button */.NewTag, { containerStyle, variant: "text-xs/bold", color: "badge-text-brand" });
 };

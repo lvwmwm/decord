@@ -1,74 +1,98 @@
-// Module ID: 12592
-// Function ID: 97247
+// Module ID: 12614
+// Function ID: 12615
 // Name: computeCanEveryoneInGuildSeeRoleSubscriptions
-// Dependencies: [1910, 1838, 653, 7752, 12593, 566, 12594, 12598, 2]
-// Exports: areRoleSubscriptionsVisibleInGuild, useShowRoleSubscriptionsInChannelList
+// Dependencies: [1934, 1862, 676, 7775, 12615, 589, 12616, 12620, 2]
+// Exports: areRoleSubscriptionsVisibleInGuild, useRoleSubscriptionsVisibleInGuild, useShowRoleSubscriptionsInChannelList
 
-// Module 12592 (computeCanEveryoneInGuildSeeRoleSubscriptions)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 12614 (computeCanEveryoneInGuildSeeRoleSubscriptions)
+import initialize from "initialize";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";
 
 const require = arg1;
-function computeCanEveryoneInGuildSeeRoleSubscriptions(guildId) {
+function computeCanEveryoneInGuildSeeRoleSubscriptions(c0) {
   let obj;
   let obj2;
   let tmp = arg1;
   if (arg1 === undefined) {
-    const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
+    const items = [createGuildRecordFromRust, initialize];
     tmp = items;
   }
   [obj, obj2] = tmp;
-  const guild = obj.getGuild(guildId);
+  const guild = obj.getGuild(c0);
   if (null == guild) {
     return false;
   } else {
+    const result = require(7775) /* useIsCreatorMonetizationEnabledGuild */.isCreatorMonetizationEnabledGuild(guild);
     const features = guild.features;
-    const result = require(7752) /* isCreatorMonetizationEnabledGuild */.isCreatorMonetizationEnabledGuild(guild);
-    const tmp9 = !result || !features.has(GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE);
+    let tmp9 = !result;
+    if (result) {
+      tmp9 = !features.has(GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE);
+    }
     let isViewingServerShopResult = !tmp9;
     if (tmp9) {
-      isViewingServerShopResult = obj2.isViewingServerShop(guildId);
+      isViewingServerShopResult = obj2.isViewingServerShop(c0);
     }
     return isViewingServerShopResult;
   }
 }
-function useRoleSubscriptionsVisibleInGuild(id1) {
+let result = require("ME").fileFinishedImporting("modules/guild_role_subscriptions/useRoleSubscriptionsVisibleInGuild.tsx");
+
+export const areRoleSubscriptionsVisibleInGuild = function areRoleSubscriptionsVisibleInGuild(c0, initialize) {
+  let hasRoleSubscriptionsInGuild = computeCanEveryoneInGuildSeeRoleSubscriptions(c0);
+  if (!hasRoleSubscriptionsInGuild) {
+    hasRoleSubscriptionsInGuild = require(12615) /* computeHasRoleSubscriptionsInGuild */.computeHasRoleSubscriptionsInGuild(c0, initialize);
+    const obj = require(12615) /* computeHasRoleSubscriptionsInGuild */;
+  }
+  return hasRoleSubscriptionsInGuild;
+};
+export const useRoleSubscriptionsVisibleInGuild = function useRoleSubscriptionsVisibleInGuild(id1) {
   const _require = id1;
-  const tmp = importDefault(12593)(id1);
-  let items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
+  const tmp = importDefault(12615)(id1);
+  const items = [createGuildRecordFromRust, initialize];
   const items1 = [id1];
-  let stateFromStores = _require(566).useStateFromStores(items, () => {
+  let stateFromStores = _require(589).useStateFromStores(items, () => {
     const items = [outer1_4, outer1_3];
     return outer1_6(closure_0, items);
   }, items1);
-  const obj = _require(566);
-  let tmp3 = !_require(12594).useShouldHideGuildPurchaseEntryPoints(id1).shouldHideGuildPurchaseEntryPoints;
-  if (tmp3) {
+  const obj = _require(589);
+  const shouldHideGuildPurchaseEntryPoints = _require(12616).useShouldHideGuildPurchaseEntryPoints(id1).shouldHideGuildPurchaseEntryPoints;
+  let tmp3 = !shouldHideGuildPurchaseEntryPoints;
+  if (!shouldHideGuildPurchaseEntryPoints) {
     if (!stateFromStores) {
       stateFromStores = tmp;
     }
     tmp3 = stateFromStores;
   }
   return tmp3;
-}
-let result = require("ME").fileFinishedImporting("modules/guild_role_subscriptions/useRoleSubscriptionsVisibleInGuild.tsx");
-
-export const areRoleSubscriptionsVisibleInGuild = function areRoleSubscriptionsVisibleInGuild(guildId, unsafeMutableRoles) {
-  const tmp = computeCanEveryoneInGuildSeeRoleSubscriptions(guildId);
-  let hasRoleSubscriptionsInGuild = tmp;
-  if (!tmp) {
-    hasRoleSubscriptionsInGuild = require(12593) /* _createForOfIteratorHelperLoose */.computeHasRoleSubscriptionsInGuild(guildId, unsafeMutableRoles);
-    const obj = require(12593) /* _createForOfIteratorHelperLoose */;
-  }
-  return hasRoleSubscriptionsInGuild;
 };
-export { useRoleSubscriptionsVisibleInGuild };
 export const useShowRoleSubscriptionsInChannelList = function useShowRoleSubscriptionsInChannelList(id) {
-  let tmp = useRoleSubscriptionsVisibleInGuild(id);
-  if (tmp) {
-    tmp = !obj.useGuildEligibleForGuildProducts(id) || true;
-    const tmp2 = !obj.useGuildEligibleForGuildProducts(id) || true;
+  const _require = id;
+  const tmp2 = importDefault(12615)(id);
+  const tmp3 = _require;
+  let items = [createGuildRecordFromRust, initialize];
+  const items1 = [id];
+  let stateFromStores = _require(589).useStateFromStores(items, () => {
+    const items = [outer1_4, outer1_3];
+    return outer1_6(closure_0, items);
+  }, items1);
+  const obj = _require(589);
+  const shouldHideGuildPurchaseEntryPoints = _require(12616).useShouldHideGuildPurchaseEntryPoints(id).shouldHideGuildPurchaseEntryPoints;
+  let tmp5 = !shouldHideGuildPurchaseEntryPoints;
+  if (!shouldHideGuildPurchaseEntryPoints) {
+    if (!stateFromStores) {
+      stateFromStores = tmp2;
+    }
+    tmp5 = stateFromStores;
   }
-  return tmp;
+  const obj2 = _require(12616);
+  const guildEligibleForGuildProducts = tmp3(12620).useGuildEligibleForGuildProducts(id);
+  if (tmp5) {
+    let flag = !guildEligibleForGuildProducts;
+    if (guildEligibleForGuildProducts) {
+      flag = true;
+    }
+    tmp5 = flag;
+  }
+  return tmp5;
 };

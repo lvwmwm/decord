@@ -1,113 +1,45 @@
-// Module ID: 15950
-// Function ID: 123041
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [620, 2]
+// Module ID: 15985
+// Function ID: 15986
+// Name: areVoicePanelPreJoinContentPropsEqual
+// Dependencies: [643, 2]
 // Exports: areVoicePanelPreJoinContentPropsEqual
 
-// Module 15950 (_createForOfIteratorHelperLoose)
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
+// Module 15985 (areVoicePanelPreJoinContentPropsEqual)
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/prejoin/VoicePanelPreJoinUtils.tsx");
 
 export const areVoicePanelPreJoinContentPropsEqual = function areVoicePanelPreJoinContentPropsEqual(streamingMembers) {
   if (null != streamingMembers) {
     if (null != arg1) {
-      if (importDefault(620)(streamingMembers, arg1, ["streamingMembers"])) {
-        const tmp2 = _createForOfIteratorHelperLoose(streamingMembers.streamingMembers);
-        const iter = tmp2();
-        let iter2 = iter;
-        let num2 = 0;
-        if (!iter.done) {
-          const value = iter2.value;
-          while (null != arg1.streamingMembers[num2]) {
-            if (value[0] === tmp3[0]) {
-              if (value[1] === tmp3[1]) {
-                num2 = num2 + 1;
-                let iter3 = tmp2();
-                iter2 = iter3;
+      if (importDefault(643)(streamingMembers, arg1, ["streamingMembers"])) {
+        let num = 0;
+        streamingMembers = streamingMembers.streamingMembers;
+        for (const item10013 of streamingMembers) {
+          let tmp3 = item10013;
+          let tmp4 = num;
+          let tmp5 = arg1.streamingMembers[num];
+          let tmp6 = tmp5;
+          if (null == tmp5) {
+            let tmp13 = obj;
+            obj.return();
+            let flag3 = false;
+            return false;
+          } else {
+            let tmp7 = item10013;
+            let tmp8 = tmp5;
+            if (tmp3[0] === tmp6[0]) {
+              let tmp9 = item10013;
+              let tmp10 = tmp5;
+              if (tmp3[1] === tmp6[1]) {
+                let tmp11 = num;
+                num = num + 1;
+                continue;
               }
             }
+            let tmp12 = obj;
+            obj.return();
             let flag2 = false;
             return false;
           }
-          return false;
         }
         return true;
       } else {

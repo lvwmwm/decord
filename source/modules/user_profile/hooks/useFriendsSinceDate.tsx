@@ -1,12 +1,12 @@
-// Module ID: 11936
-// Function ID: 92227
+// Module ID: 11960
+// Function ID: 11961
 // Name: useFriendsSinceDate
-// Dependencies: [1922, 3802, 653, 624, 4974, 2]
+// Dependencies: [1946, 3826, 676, 647, 4996, 2]
 // Exports: useFriendsSinceDate
 
-// Module 11936 (useFriendsSinceDate)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 11960 (useFriendsSinceDate)
+import _getSystemLocale from "_getSystemLocale";
+import upsertRelationship from "upsertRelationship";
 import { RelationshipTypes } from "ME";
 
 const require = arg1;
@@ -14,18 +14,18 @@ const result = require("ME").fileFinishedImporting("modules/user_profile/hooks/u
 
 export const useFriendsSinceDate = function useFriendsSinceDate(userId) {
   const _require = userId;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = _require(624).useStateFromStores(items, () => outer1_2.locale);
-  const obj = _require(624);
-  const items1 = [closure_3];
+  const items = [_getSystemLocale];
+  const stateFromStores = _require(647).useStateFromStores(items, () => locale.locale);
+  const obj = _require(647);
+  const items1 = [upsertRelationship];
   const items2 = [userId];
-  const stateFromStores1 = _require(624).useStateFromStores(items1, () => {
+  const stateFromStores1 = _require(647).useStateFromStores(items1, () => {
     let since = null;
     if (outer1_3.getRelationshipType(closure_0) === outer1_4.FRIEND) {
       since = outer1_3.getSince(closure_0);
     }
     return since;
   }, items2);
-  const obj2 = _require(624);
-  return _require(4974).getCreatedAtDate(stateFromStores1, stateFromStores);
+  const obj2 = _require(647);
+  return _require(4996).getCreatedAtDate(stateFromStores1, stateFromStores);
 };

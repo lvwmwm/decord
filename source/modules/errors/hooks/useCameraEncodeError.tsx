@@ -1,24 +1,24 @@
-// Module ID: 15928
-// Function ID: 122888
+// Module ID: 15963
+// Function ID: 15964
 // Name: useCameraEncodeError
-// Dependencies: [1194, 10522, 566, 8828, 2]
+// Dependencies: [1218, 10546, 589, 8852, 2]
 // Exports: default
 
-// Module 15928 (useCameraEncodeError)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 15963 (useCameraEncodeError)
+import fetchFingerprint from "fetchFingerprint";
+import isAVErrorContextOfType from "isAVErrorContextOfType";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/errors/hooks/useCameraEncodeError.tsx");
 
 export default function useCameraEncodeError(arg0) {
   const _require = arg0;
-  const items = [_createForOfIteratorHelperLoose, _isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => {
+  const items = [isAVErrorContextOfType, fetchFingerprint];
+  return _require(589).useStateFromStores(items, () => {
     if (outer1_2.getId() === callback) {
-      let type;
       const first = outer1_3.getActiveErrorsOfType(callback(outer1_1[3]).AVError.CAMERA_SEND_LOW_FPS)[0];
-      if (null != first) {
+      let type;
+      if (first != null) {
         type = first.type;
       }
       return type;

@@ -1,18 +1,18 @@
-// Module ID: 8462
-// Function ID: 67399
+// Module ID: 8486
+// Function ID: 8487
 // Name: GameProfileEmbedAction
-// Dependencies: [8147, 653, 8169, 491, 675, 2]
+// Dependencies: [8171, 676, 8193, 514, 698, 2]
 // Exports: generateViewId, getGuildIdAndVerifiedFromInvite, trackGameProfileAction, trackGameProfileClose, trackGameProfileEmbedAction, trackGameProfileFeedback, trackGameProfileOpen
 
-// Module 8462 (GameProfileEmbedAction)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 8486 (GameProfileEmbedAction)
+import map from "map";
 import ME from "ME";
 import { ContentInventoryFeedKey } from "ContentInventoryFeedKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ AnalyticEvents: closure_4, GuildFeatures: closure_5 } = ME);
+({ AnalyticEvents: c4, GuildFeatures: c5 } = ME);
 const result = require("ContentInventoryFeedKey").fileFinishedImporting("modules/game_profile/GameProfileAnalyticUtils.tsx");
 
 export const GameProfileEmbedAction = { CopyLink: 0, [0]: "CopyLink" };
@@ -20,32 +20,33 @@ export const GameProfileTrackActionActions = { FollowGame: 0, [0]: "FollowGame",
 export const GameProfileSources = { ActivityCard: "activity_card", ActivityCardContextMenu: "activity_card_context_menu", UserProfile: "user_profile", UserProfileApplicationWidget: "user_profile_application_widget", UserProfileCardContextMenu: "user_profile_card_context_menu", SimilarGames: "similar_games", DevTools: "dev_tools", Embed: "embed", GameProfileEmbed: "game_profile_embed", RtcPanel: "rtc_panel", FriendsActivityFeed: "friends_activity_feed", MiniGameProfile: "mini_game_profile", GameMention: "game_mention", GameSheet: "game_sheet", QuestBar: "quest_bar", QuestHome: "quest_home_desktop", QuestInGameModal: "quest_in_game_modal", QuestActivityPanel: "quest_activity_panel", QuestEmbed: "quest_embed", QuestLiveStream: "quest_live_stream", ClipEmbed: "clip_embed", ClipsReminder: "clips_reminder", AnnouncementChannelReturn: "announcement_channel_return", CallTile: "call_tile", InAppBrowserReturn: "in_app_browser_return", Deeplink: "deeplink", DmHeaderActivity: "dm_header_activity", QuickSwitcher: "quick_switcher", GuildProfileGames: "guild_profile_games", GameInvitesChannel: "game_invites_channel" };
 export const GameProfileTypes = { FullProfile: "full_profile", MiniProfile: "mini_profile" };
 export const getGuildIdAndVerifiedFromInvite = function getGuildIdAndVerifiedFromInvite(current) {
-  const obj = {};
   let id;
-  if (null != current) {
+  if (current != null) {
     const guild = current.guild;
-    if (null != guild) {
+    if (guild != null) {
       id = guild.id;
     }
   }
-  let tmp2 = null;
-  if (null != id) {
-    tmp2 = id;
+  if (id == null) {
+    id = null;
   }
-  obj.guildId = tmp2;
-  let hasItem;
-  if (null != current) {
+  const obj = { guildId: id, isVerified: null };
+  let flag;
+  if (current != null) {
     const guild2 = current.guild;
-    if (null != guild2) {
+    if (guild2 != null) {
       const features = guild2.features;
-      hasItem = features.includes(constants2.VERIFIED);
+      flag = features.includes(constants2.VERIFIED);
     }
   }
-  obj.isVerified = null != hasItem && hasItem;
+  if (flag == null) {
+    flag = false;
+  }
+  obj[1] = flag;
   return obj;
 };
 export const generateViewId = function generateViewId() {
-  return require(491) /* v1 */.v4();
+  return require(514) /* v1 */.v4();
 };
 export const trackGameProfileOpen = function trackGameProfileOpen(viewId) {
   let authorId;
@@ -55,7 +56,7 @@ export const trackGameProfileOpen = function trackGameProfileOpen(viewId) {
   let source;
   viewId = viewId.viewId;
   ({ source, gameName, gameId, authorId, profileType } = viewId);
-  let obj = importDefault(675);
+  let obj = importDefault(698);
   obj = { view_id: viewId, source, game_name: gameName, application_id: gameId, author_id: authorId, request_id: store.getFeedRequestId(ContentInventoryFeedKey.GLOBAL_FEED), profile_type: profileType };
   obj.track(constants.GAME_PROFILE_OPEN, obj);
   return viewId;
@@ -70,14 +71,14 @@ export const trackGameProfileClose = function trackGameProfileClose(guildId) {
   let viewId;
   guildId = guildId.guildId;
   ({ viewId, gameName, gameId, playedFriendIds, playedFriendsData, similarGames, isVerified } = guildId);
-  let obj = importDefault(675);
-  obj = { view_id: viewId, game_name: gameName, application_id: gameId, played_friend_ids: playedFriendIds, played_friends_data: playedFriendsData, similar_games: similarGames, request_id: store.getFeedRequestId(ContentInventoryFeedKey.GLOBAL_FEED) };
+  let obj = importDefault(698);
+  obj = { view_id: viewId, game_name: gameName, application_id: gameId, played_friend_ids: playedFriendIds, played_friends_data: playedFriendsData, similar_games: similarGames, request_id: store.getFeedRequestId(ContentInventoryFeedKey.GLOBAL_FEED), official_guild_id: null, guild_id: null };
   let tmp;
   if (isVerified) {
     tmp = guildId;
   }
-  obj.official_guild_id = tmp;
-  obj.guild_id = guildId;
+  obj[7] = tmp;
+  obj[8] = guildId;
   obj.track(constants.GAME_PROFILE_CLOSE, obj);
 };
 export const trackGameProfileAction = function trackGameProfileAction(guildId) {
@@ -91,15 +92,15 @@ export const trackGameProfileAction = function trackGameProfileAction(guildId) {
   let viewId;
   guildId = guildId.guildId;
   ({ gameName, gameId, action, recipientUserId, similarGameId, viewId, isVerified, source } = guildId);
-  let obj = importDefault(675);
-  obj = { game_name: gameName, application_id: gameId, action, recipient_user_id: recipientUserId, similar_game_id: similarGameId, view_id: viewId };
+  let obj = importDefault(698);
+  obj = { game_name: gameName, application_id: gameId, action, recipient_user_id: recipientUserId, similar_game_id: similarGameId, view_id: viewId, official_guild_id: null, guild_id: null, source: null };
   let tmp;
   if (isVerified) {
     tmp = guildId;
   }
-  obj.official_guild_id = tmp;
-  obj.guild_id = guildId;
-  obj.source = source;
+  obj[6] = tmp;
+  obj[7] = guildId;
+  obj[8] = source;
   obj.track(constants.GAME_PROFILE_ACTION, obj);
 };
 export const trackGameProfileEmbedAction = function trackGameProfileEmbedAction(arg0) {
@@ -107,7 +108,7 @@ export const trackGameProfileEmbedAction = function trackGameProfileEmbedAction(
   let gameId;
   let gameName;
   ({ gameName, gameId, action } = arg0);
-  importDefault(675).track(constants.GAME_PROFILE_EMBED_ACTION, { game_name: gameName, application_id: gameId, action });
+  importDefault(698).track(constants.GAME_PROFILE_EMBED_ACTION, { game_name: gameName, application_id: gameId, action });
 };
 export const trackGameProfileFeedback = function trackGameProfileFeedback(arg0) {
   let applicationId;
@@ -117,5 +118,5 @@ export const trackGameProfileFeedback = function trackGameProfileFeedback(arg0) 
   let suggestedGameName;
   let viewId;
   ({ viewId, applicationId, suggestedGameName, suggestedGameApplicationId, feedback, submitted } = arg0);
-  return importDefault(675).track(constants.GAME_PROFILE_FEEDBACK, { view_id, application_id, suggested_game_name, suggested_game_application_id, feedback, submitted });
+  return importDefault(698).track(constants.GAME_PROFILE_FEEDBACK, { view_id, application_id, suggested_game_name, suggested_game_application_id, feedback, submitted });
 };

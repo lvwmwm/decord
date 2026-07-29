@@ -1,28 +1,38 @@
-// Module ID: 16264
-// Function ID: 125954
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4237, 4178, 5112, 2]
+// Module ID: 16299
+// Function ID: 16300
+// Name: handleFocusParticipant
+// Dependencies: [4261, 4202, 5134, 2]
 
-// Module 16264 (_isNativeReflectConstruct)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16299 (handleFocusParticipant)
+import createRTCConnection from "createRTCConnection";
+import getParticipants from "getParticipants";
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let _isNativeReflectConstruct = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return _isNativeReflectConstruct;
+class ParticipantFocusManager extends tmp2 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    map = new Map();
+    applyArgumentsResult.stores = map.set(getParticipants, applyArgumentsResult.handleFocusParticipant);
+    return applyArgumentsResult;
   }
-  const result = _isNativeReflectConstruct();
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/calls/ParticipantFocusManager.tsx");
+ParticipantFocusManager.prototype["handleFocusParticipant"] = function handleFocusParticipant() {
+  channelId = channelId.getChannelId();
+  if (null != channelId) {
+    channelId = store.getSelectedParticipantId(channelId);
+    const videoParticipants = store.getVideoParticipants(channelId);
+    const rTCConnection = channelId.getRTCConnection();
+    if (rTCConnection != null) {
+      const found = videoParticipants.find((id) => id.id === createRTCConnection && !id.localVideoDisabled);
+      let id;
+      if (found != null) {
+        id = found.id;
+      }
+      const result = rTCConnection.setSelectedParticipant(id);
+    }
+  }
+};
+const participantFocusManager = new ParticipantFocusManager();
+let result = require("initialize").fileFinishedImporting("modules/calls/ParticipantFocusManager.tsx");
 
-export default tmp2;
+export default participantFocusManager;

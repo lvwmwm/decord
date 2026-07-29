@@ -1,464 +1,333 @@
-// Module ID: 1871
-// Function ID: 20851
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [6, 7, 15, 17, 18, 1859, 1868, 2]
+// Module ID: 1895
+// Function ID: 1896
+// Name: frozen
+// Dependencies: [1883, 1892, 2]
 // Exports: ensureRestrictedScheduleRecord
 
-// Module 1871 (_createForOfIteratorHelperLoose)
-import _callSuper from "_callSuper";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import importDefaultResult from "Record";
+// Module 1895 (frozen)
+import "toJS";
 
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
+const frozen = Object.freeze({ 0: require("create").DayOfWeek.SUNDAY, 1: require("create").DayOfWeek.MONDAY, 2: require("create").DayOfWeek.TUESDAY, 3: require("create").DayOfWeek.WEDNESDAY, 4: require("create").DayOfWeek.THURSDAY, 5: require("create").DayOfWeek.FRIDAY, 6: require("create").DayOfWeek.SATURDAY });
+let closure_3 = Object.freeze({ [arg1(1892).DayOfWeek.DAY_OF_WEEK_UNSPECIFIED]: 0, [arg1(1892).DayOfWeek.MONDAY]: 1, [arg1(1892).DayOfWeek.TUESDAY]: 2, [arg1(1892).DayOfWeek.WEDNESDAY]: 3, [arg1(1892).DayOfWeek.THURSDAY]: 4, [arg1(1892).DayOfWeek.FRIDAY]: 5, [arg1(1892).DayOfWeek.SATURDAY]: 6, [arg1(1892).DayOfWeek.SUNDAY]: 0 });
+let ScheduleRuleRecord;
+class ScheduleRuleRecord extends tmp2 {
+  constructor(arg0) {
+    tmp = new ScheduleRuleRecord(new.target, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    ({ ruleId: tmp.ruleId, label: tmp.label, startTime: tmp.startTime, endTime: tmp.endTime, days: tmp.days, enabled: tmp.enabled } = global);
+    return tmp;
   }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
+}
+const prototype = ScheduleRuleRecord.prototype;
+ScheduleRuleRecord["fromServer"] = function fromServer(end_time) {
+  let days;
+  let enabled;
+  let label;
+  let rule_id;
+  let start_time;
+  ({ rule_id, label, start_time } = end_time);
+  end_time = end_time.end_time;
+  ({ days, enabled } = end_time);
+  if (typeof ScheduleRuleRecord !== "find") {
+    HermesBuiltin.throwTypeError();
   }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
+  const tmp2 = new ScheduleRuleRecord("Trying to call a non-function", ScheduleRuleRecord, new.target, rule_id, label, start_time, end_time, days, enabled);
+  // ThrowIfThisInitialized (0x7c)
+  tmp2.ruleId = rule_id;
+  tmp2.label = label;
+  tmp2.startTime = start_time;
+  tmp2.endTime = end_time;
+  tmp2.days = days;
+  tmp2.enabled = enabled;
+  return tmp2;
+};
+ScheduleRuleRecord["fromCache"] = function fromCache(arg0) {
+  if (typeof ScheduleRuleRecord !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const tmp2 = new ScheduleRuleRecord("Trying to call a non-function", ScheduleRuleRecord);
+  // ThrowIfThisInitialized (0x7c)
+  ({ ruleId: tmp2.ruleId, label: tmp2.label, startTime: tmp2.startTime, endTime: tmp2.endTime, days: tmp2.days, enabled: tmp2.enabled } = arg0);
+  return tmp2;
+};
+prototype["isActiveAt"] = function isActiveAt(closure_0, c1) {
+  const self = this;
+  if (null != this.startTime) {
+    if (null != self.endTime) {
+      if (0 !== self.days.length) {
+        if (self.enabled) {
+          const startTime = self.startTime;
+          const sum = 60 * startTime.hours + startTime.minutes;
+          const endTime = self.endTime;
+          const sum1 = 60 * endTime.hours + endTime.minutes;
+          const days = self.days;
+          if (days.includes(closure_0)) {
+            if (tmp5) {
+              if (c1 >= sum) {
+                return true;
+              }
+            } else if (c1 >= sum) {
+              if (c1 < sum1) {
+                return true;
+              }
+            }
+          }
+          if (sum > sum1) {
+            if (closure_0 === require(1892) /* create */.DayOfWeek.MONDAY) {
+              let SUNDAY = tmp6(1892).DayOfWeek.SUNDAY;
+            } else {
+              SUNDAY = closure_0 - 1;
+            }
+            const days2 = self.days;
+            if (days2.includes(SUNDAY)) {
+              if (c1 < sum1) {
+                return true;
+              }
+            }
+            tmp6 = require;
+          }
+          return false;
+        }
+      }
+    }
+  }
+  return false;
+};
+prototype["getEndMinutes"] = function getEndMinutes() {
+  let sum = null;
+  if (null != this.endTime) {
+    const endTime = this.endTime;
+    sum = 60 * endTime.hours + endTime.minutes;
+  }
+  return sum;
+};
+prototype["getStartMinutes"] = function getStartMinutes() {
+  let sum = null;
+  if (null != this.startTime) {
+    const startTime = this.startTime;
+    sum = 60 * startTime.hours + startTime.minutes;
+  }
+  return sum;
+};
+let RestrictedScheduleRecord;
+class RestrictedScheduleRecord extends tmp2 {
+  constructor(arg0) {
+    tmp = new RestrictedScheduleRecord(new.target);
+    // ThrowIfThisInitialized (0x7c)
+    tmp.rules = global.rules;
+    return tmp;
+  }
+}
+const prototype2 = RestrictedScheduleRecord.prototype;
+RestrictedScheduleRecord["fromServer"] = function fromServer(rules) {
+  let tmp = null;
+  if (null != rules) {
+    rules = rules.rules;
+    const mapped = rules.map(ScheduleRuleRecord.fromServer);
+    if (typeof RestrictedScheduleRecord !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    const tmp9 = new RestrictedScheduleRecord("Trying to call a non-function", rules, RestrictedScheduleRecord, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    tmp9.rules = mapped;
+    tmp = tmp9;
+    const tmp2 = RestrictedScheduleRecord;
+  }
+  return tmp;
+};
+RestrictedScheduleRecord["fromCache"] = function fromCache(rules) {
+  let tmp = null;
+  if (null != rules) {
+    rules = rules.rules;
+    const mapped = rules.map(ScheduleRuleRecord.fromCache);
+    if (typeof RestrictedScheduleRecord !== "find") {
+      HermesBuiltin.throwTypeError();
+    }
+    const tmp9 = new RestrictedScheduleRecord("Trying to call a non-function", rules, RestrictedScheduleRecord, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    tmp9.rules = mapped;
+    tmp = tmp9;
+    const tmp2 = RestrictedScheduleRecord;
+  }
+  return tmp;
+};
+prototype2["isInRestrictedHours"] = function isInRestrictedHours(date) {
+  if (date === undefined) {
+    const _Date = Date;
+    date = new Date();
+  }
+  let closure_0;
+  let closure_1;
+  if (0 === this.rules.length) {
+    return false;
   } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+    closure_0 = frozen[date.getDay(date)];
+    const result = 60 * date.getHours();
+    closure_1 = result + date.getMinutes();
+    const rules = tmp4.rules;
+    return rules.some((isActiveAt) => isActiveAt.isActiveAt(closure_0, closure_1));
+  }
+};
+prototype2["getNextStartInfo"] = function getNextStartInfo(date) {
+  if (date === undefined) {
+    const _Date = Date;
+    date = new Date();
+  }
+  const self = this;
+  if (0 !== this.rules.length) {
+    if (!self.isInRestrictedHours(date)) {
+      const day = date.getDay();
+      const result = 60 * date.getHours();
+      const sum = result + date.getMinutes();
+      let tmp8 = null;
+      const rules = self.rules;
+      const found = rules.filter((enabled) => enabled.enabled);
+      const iter = found[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let tmp13 = nextResult;
+        let startMinutes = nextResult.getStartMinutes();
+        let tmp15 = startMinutes;
+        if (null != startMinutes) {
+          let tmp30 = nextResult;
+          if (0 !== tmp13.days.length) {
+            let tmp31 = nextResult;
+            let days = tmp13.days;
+            let tmp32 = days;
+            let tmp16 = days;
+            for (const item10043 of days) {
+              let tmp17 = table;
+              let result1 = (table[item10043] - day + 7) % 7;
+              let num4 = result1;
+              let tmp19 = 0 === result1;
+              if (0 === result1) {
+                let tmp20 = startMinutes;
+                tmp19 = tmp15 <= sum;
               }
+              if (tmp19) {
+                num4 = 7;
+              }
+              let tmp21 = num4;
+              let tmp22 = startMinutes;
+              let sum1 = 24 * num4 * 60 - sum + tmp15;
+              let tmp24 = tmp8;
+              let tmp25 = null == tmp8;
+              if (!tmp25) {
+                let tmp26 = sum1;
+                let tmp27 = tmp8;
+                tmp25 = sum1 < tmp8.minutesUntil;
+              }
+              if (tmp25) {
+                let obj = { minutesUntil: null, rule: null };
+                let tmp28 = sum1;
+                obj[0] = sum1;
+                let tmp29 = nextResult;
+                obj[1] = tmp13;
+                tmp8 = obj;
+              }
+              continue;
             }
-            tmp2 = arr;
           }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
         }
+        continue;
       }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
+      return tmp8;
     }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
   }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
+  return null;
+};
+prototype2["getNextEndTime"] = function getNextEndTime() {
+  let date = arg0;
+  if (arg0 === undefined) {
+    const _Date = Date;
+    date = new Date();
   }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function _callSuper(arg0, arg1, arg2) {
-  const obj = callback2(arg1);
-  if (_isNativeReflectConstruct()) {
-    const _Reflect = Reflect;
-    const items = [];
-    let constructResult = Reflect.construct(obj, items, callback2(arg0).constructor);
+  let closure_0;
+  let c1;
+  if (0 === this.rules.length) {
+    return null;
   } else {
-    constructResult = obj.apply(arg0, undefined);
-  }
-  return _possibleConstructorReturn(arg0, constructResult);
-}
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function timeOfDayToMinutes(hours) {
-  return 60 * hours.hours + hours.minutes;
-}
-const frozen = Object.freeze({ [0]: require("_callSuper").DayOfWeek.SUNDAY, [1]: require("_callSuper").DayOfWeek.MONDAY, [2]: require("_callSuper").DayOfWeek.TUESDAY, [3]: require("_callSuper").DayOfWeek.WEDNESDAY, [4]: require("_callSuper").DayOfWeek.THURSDAY, [5]: require("_callSuper").DayOfWeek.FRIDAY, [6]: require("_callSuper").DayOfWeek.SATURDAY });
-let closure_8 = Object.freeze({ [arg1(1868).DayOfWeek.DAY_OF_WEEK_UNSPECIFIED]: 0, [arg1(1868).DayOfWeek.MONDAY]: 1, [arg1(1868).DayOfWeek.TUESDAY]: 2, [arg1(1868).DayOfWeek.WEDNESDAY]: 3, [arg1(1868).DayOfWeek.THURSDAY]: 4, [arg1(1868).DayOfWeek.FRIDAY]: 5, [arg1(1868).DayOfWeek.SATURDAY]: 6, [arg1(1868).DayOfWeek.SUNDAY]: 0 });
-const tmp4 = ((importDefaultResult) => {
-  class ScheduleRuleRecord {
-    constructor(arg0) {
-      tmp = outer1_2(this, ScheduleRuleRecord);
-      tmp2 = outer1_13(this, ScheduleRuleRecord);
-      ({ ruleId: tmp2.ruleId, label: tmp2.label, startTime: tmp2.startTime, endTime: tmp2.endTime, days: tmp2.days, enabled: tmp2.enabled } = importDefaultResult);
-      return tmp2;
-    }
-  }
-  callback3(ScheduleRuleRecord, importDefaultResult);
-  let obj = {
-    key: "isActiveAt",
-    value(arg0, arg1) {
-      const self = this;
-      if (null != this.startTime) {
-        if (null != self.endTime) {
-          if (0 !== self.days.length) {
-            if (self.enabled) {
-              const tmp2 = outer1_15(self.startTime);
-              const tmp3 = outer1_15(self.endTime);
-              const days = self.days;
-              if (days.includes(arg0)) {
-                if (tmp4) {
-                  if (arg1 >= tmp2) {
-                    return true;
-                  }
-                } else if (arg1 >= tmp2) {
-                  if (arg1 < tmp3) {
-                    return true;
-                  }
-                }
-              }
-              if (tmp2 > tmp3) {
-                if (arg0 === ScheduleRuleRecord(outer1_1[6]).DayOfWeek.MONDAY) {
-                  let SUNDAY = ScheduleRuleRecord(outer1_1[6]).DayOfWeek.SUNDAY;
-                } else {
-                  SUNDAY = arg0 - 1;
-                }
-                const days2 = self.days;
-                if (days2.includes(SUNDAY)) {
-                  if (arg1 < tmp3) {
-                    return true;
-                  }
-                }
-              }
-              return false;
-            }
+    closure_0 = frozen[date.getDay(date)];
+    const result = 60 * date.getHours();
+    const sum = result + date.getMinutes();
+    c1 = sum;
+    const rules = tmp4.rules;
+    const found = rules.filter((isActiveAt) => isActiveAt.isActiveAt(closure_0, c1));
+    const iter = found[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let endMinutes = nextResult.getEndMinutes();
+      let tmp8 = endMinutes;
+      let startMinutes = nextResult.getStartMinutes();
+      if (null != endMinutes) {
+        let tmp10 = startMinutes;
+        if (null != startMinutes) {
+          let tmp11 = startMinutes;
+          let tmp12 = startMinutes > endMinutes;
+          let tmp13 = globalThis;
+          let _Date2 = Date;
+          let tmp14 = new.target;
+          let tmp15 = new.target;
+          let tmp16 = date;
+          let date1 = new Date(date);
+          let obj4 = date1;
+          let _Math = Math;
+          let rounded = Math.floor(endMinutes / 60);
+          let result1 = endMinutes % 60;
+          if (tmp12) {
+            tmp12 = sum >= startMinutes;
           }
-        }
-      }
-      return false;
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "getEndMinutes",
-    value() {
-      let tmp2 = null;
-      if (null != this.endTime) {
-        tmp2 = outer1_15(tmp.endTime);
-      }
-      return tmp2;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getStartMinutes",
-    value() {
-      let tmp2 = null;
-      if (null != this.startTime) {
-        tmp2 = outer1_15(tmp.startTime);
-      }
-      return tmp2;
-    }
-  };
-  items[2] = obj;
-  const items1 = [
-    {
-      key: "fromServer",
-      value(ruleId) {
-        let tmp = ScheduleRuleRecord;
-        const obj = { ruleId: ruleId.rule_id, label: ruleId.label };
-        const start_time = ruleId.start_time;
-        let tmp2;
-        if (null != start_time) {
-          tmp2 = start_time;
-        }
-        obj.startTime = tmp2;
-        const end_time = ruleId.end_time;
-        let tmp3;
-        if (null != end_time) {
-          tmp3 = end_time;
-        }
-        obj.endTime = tmp3;
-        ({ days: obj.days, enabled: obj.enabled } = ruleId);
-        tmp = new tmp(obj);
-        return tmp;
-      }
-    },
-    {
-      key: "fromCache",
-      value(arg0) {
-        return new ScheduleRuleRecord(arg0);
-      }
-    }
-  ];
-  return callback(ScheduleRuleRecord, items, items1);
-})(importDefaultResult);
-let closure_9 = tmp4;
-const tmp5 = ((importDefaultResult) => {
-  class RestrictedScheduleRecord {
-    constructor(arg0) {
-      tmp = outer1_2(this, RestrictedScheduleRecord);
-      tmp2 = outer1_13(this, RestrictedScheduleRecord);
-      tmp2.rules = importDefaultResult.rules;
-      return tmp2;
-    }
-  }
-  callback3(RestrictedScheduleRecord, importDefaultResult);
-  let obj = {
-    key: "isInRestrictedHours",
-    value() {
-      let date = arg0;
-      const self = this;
-      if (arg0 === undefined) {
-        const _Date = Date;
-        date = new Date();
-      }
-      let closure_0;
-      let closure_1;
-      if (0 === self.rules.length) {
-        return false;
-      } else {
-        closure_0 = outer1_7[date.getDay(date)];
-        const result = 60 * date.getHours();
-        closure_1 = result + date.getMinutes();
-        const rules = self.rules;
-        return rules.some((isActiveAt) => isActiveAt.isActiveAt(closure_0, closure_1));
-      }
-    }
-  };
-  const items = [obj, , ];
-  obj = {
-    key: "getNextStartInfo",
-    value() {
-      let iter5;
-      let date = arg0;
-      const self = this;
-      if (arg0 === undefined) {
-        const _Date = Date;
-        date = new Date();
-      }
-      if (0 !== self.rules.length) {
-        if (!self.isInRestrictedHours(date)) {
-          const day = date.getDay();
-          const result = 60 * date.getHours();
-          const sum = result + date.getMinutes();
-          const rules = self.rules;
-          const tmp8 = outer1_11(rules.filter((enabled) => enabled.enabled));
-          const iter = tmp8();
-          let iter2 = iter;
-          let tmp10 = null;
-          let tmp15 = null;
-          if (!iter.done) {
-            do {
-              let value = iter2.value;
-              let startMinutes = value.getStartMinutes();
-              let tmp17 = tmp10;
-              let tmp18 = tmp11;
-              let tmp19 = tmp12;
-              let tmp20 = tmp13;
-              let tmp21 = tmp14;
-              if (null != startMinutes) {
-                tmp17 = tmp10;
-                tmp18 = tmp11;
-                tmp19 = tmp12;
-                tmp20 = tmp13;
-                tmp21 = tmp14;
-                if (0 !== value.days.length) {
-                  let tmp27 = outer1_11;
-                  let tmp28 = outer1_11(value.days);
-                  let iter6 = tmp28();
-                  let tmp26 = tmp10;
-                  let iter4 = iter6;
-                  tmp17 = tmp10;
-                  tmp18 = iter6;
-                  tmp19 = tmp28;
-                  tmp20 = tmp13;
-                  tmp21 = tmp14;
-                  if (!iter6.done) {
-                    do {
-                      let tmp22 = outer1_8;
-                      let num4 = (outer1_8[iter4.value] - day + 7) % 7;
-                      let tmp23 = 0 === num4 && startMinutes <= sum;
-                      if (tmp23) {
-                        num4 = 7;
-                      }
-                      let sum1 = 24 * num4 * 60 - sum + startMinutes;
-                      let tmp25 = null == tmp26 || sum1 < tmp26.minutesUntil;
-                      if (tmp25) {
-                        let obj = { minutesUntil: sum1, rule: value };
-                        tmp26 = obj;
-                      }
-                      iter3 = tmp28();
-                      iter4 = iter3;
-                      tmp17 = tmp26;
-                      tmp18 = iter3;
-                      tmp19 = tmp28;
-                      tmp20 = num4;
-                      tmp21 = sum1;
-                    } while (!iter3.done);
-                  }
-                }
-              }
-              iter5 = tmp8();
-              tmp10 = tmp17;
-              tmp11 = tmp18;
-              tmp12 = tmp19;
-              tmp13 = tmp20;
-              tmp14 = tmp21;
-              iter2 = iter5;
-              tmp15 = tmp17;
-            } while (!iter5.done);
+          if (tmp12) {
+            let tmp19 = date1;
+            let num = 1;
+            let setDateResult = obj4.setDate(obj4.getDate() + 1);
           }
-          return tmp15;
-        }
-      }
-      return null;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getNextEndTime",
-    value() {
-      let endMinutes;
-      let startMinutes;
-      let date = arg0;
-      const self = this;
-      if (arg0 === undefined) {
-        const _Date = Date;
-        date = new Date();
-      }
-      let closure_0;
-      let c1;
-      if (0 === self.rules.length) {
-        return null;
-      } else {
-        closure_0 = outer1_7[date.getDay(date)];
-        const result = 60 * date.getHours();
-        const sum = result + date.getMinutes();
-        c1 = sum;
-        const rules = self.rules;
-        const tmp24 = outer1_11(rules.filter((isActiveAt) => isActiveAt.isActiveAt(closure_0, c1)));
-        let iter2 = tmp24();
-        if (!iter2.done) {
-          while (true) {
-            let value = iter2.value;
-            endMinutes = value.getEndMinutes();
-            startMinutes = value.getStartMinutes();
-            if (null != endMinutes) {
-              if (null != startMinutes) {
-                break;
-              }
-            }
-            let iter = tmp24();
-            iter2 = iter;
-          }
-          let tmp6 = startMinutes > endMinutes;
-          const _Date2 = Date;
-          const date1 = new Date(date);
-          const _Math = Math;
-          const rounded = Math.floor(endMinutes / 60);
-          const result1 = endMinutes % 60;
-          if (tmp6) {
-            tmp6 = sum >= startMinutes;
-          }
-          if (tmp6) {
-            date1.setDate(date1.getDate() + 1);
-          }
-          date1.setHours(rounded, result1, 0, 0);
+          let tmp21 = rounded;
+          let tmp22 = result1;
+          let tmp23 = date1;
+          let num2 = 0;
+          let num3 = 0;
+          let setHoursResult = date1.setHours(rounded, result1, 0, 0);
+          let tmp25 = iter;
+          iter.return();
           return date1;
         }
-        return null;
       }
+      continue;
     }
-  };
-  items[2] = obj;
-  const items1 = [
-    {
-      key: "fromServer",
-      value(rules) {
-        let tmp = null;
-        if (null != rules) {
-          const obj = {};
-          rules = rules.rules;
-          obj.rules = rules.map(outer1_9.fromServer);
-          const prototype = RestrictedScheduleRecord.prototype;
-          tmp = new RestrictedScheduleRecord(obj);
-        }
-        return tmp;
-      }
-    },
-    {
-      key: "fromCache",
-      value(rules) {
-        let tmp = null;
-        if (null != rules) {
-          const obj = {};
-          rules = rules.rules;
-          obj.rules = rules.map(outer1_9.fromCache);
-          const prototype = RestrictedScheduleRecord.prototype;
-          tmp = new RestrictedScheduleRecord(obj);
-        }
-        return tmp;
-      }
-    }
-  ];
-  return callback(RestrictedScheduleRecord, items, items1);
-})(importDefaultResult);
-let closure_10 = tmp5;
-let obj = { [0]: require("_callSuper").DayOfWeek.SUNDAY, [1]: require("_callSuper").DayOfWeek.MONDAY, [2]: require("_callSuper").DayOfWeek.TUESDAY, [3]: require("_callSuper").DayOfWeek.WEDNESDAY, [4]: require("_callSuper").DayOfWeek.THURSDAY, [5]: require("_callSuper").DayOfWeek.FRIDAY, [6]: require("_callSuper").DayOfWeek.SATURDAY };
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/parent_tools/FamilyCenterModels.tsx");
+    return null;
+  }
+};
+let obj = { 0: require("create").DayOfWeek.SUNDAY, 1: require("create").DayOfWeek.MONDAY, 2: require("create").DayOfWeek.TUESDAY, 3: require("create").DayOfWeek.WEDNESDAY, 4: require("create").DayOfWeek.THURSDAY, 5: require("create").DayOfWeek.FRIDAY, 6: require("create").DayOfWeek.SATURDAY };
+let result = require("set").fileFinishedImporting("modules/parent_tools/FamilyCenterModels.tsx");
 
 export const JS_DAY_TO_DAY_OF_WEEK = frozen;
-export const ScheduleRuleRecord = tmp4;
-export const RestrictedScheduleRecord = tmp5;
+export { ScheduleRuleRecord };
+export { RestrictedScheduleRecord };
 export const ensureRestrictedScheduleRecord = function ensureRestrictedScheduleRecord(restrictedSchedule) {
   let tmp = null;
   if (null != restrictedSchedule) {
-    if (restrictedSchedule instanceof tmp5) {
-      tmp = restrictedSchedule;
-    } else if (0 === restrictedSchedule.rules.length) {
-      let obj = { rules: [] };
-      const prototype = tmp5.prototype;
-      let fromCacheResult = new tmp5(obj);
+    let tmp2 = restrictedSchedule;
+    if (restrictedSchedule instanceof RestrictedScheduleRecord) {
+      tmp = tmp2;
     } else {
-      obj = tmp5;
-      if ("ruleId" in restrictedSchedule.rules[0]) {
-        fromCacheResult = obj.fromCache(restrictedSchedule);
+      let length = restrictedSchedule.rules.length;
+      if (0 === length) {
+        if (typeof obj !== "find") {
+          HermesBuiltin.throwTypeError();
+        }
+        const items = [];
+        const tmp7 = new RestrictedScheduleRecord("Trying to call a non-function", obj, new.target, items, RestrictedScheduleRecord, length, tmp2);
+        // ThrowIfThisInitialized (0x7c)
+        tmp7.rules = items;
+        length = tmp7;
+      } else if ("ruleId" in restrictedSchedule.rules[0]) {
+        length = obj.fromCache(restrictedSchedule);
       } else {
-        fromCacheResult = obj.fromServer(restrictedSchedule);
+        length = obj.fromServer(restrictedSchedule);
       }
+      tmp2 = length;
     }
   }
   return tmp;

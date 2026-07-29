@@ -1,51 +1,54 @@
-// Module ID: 13009
-// Function ID: 100746
+// Module ID: 13032
+// Function ID: 13033
 // Name: GuildPicker
-// Dependencies: [31, 33, 13010, 13011, 4133, 8222, 1935, 1212, 2]
+// Dependencies: [19, 21, 13033, 13034, 4157, 8246, 1959, 1236, 2]
 // Exports: default
 
-// Module 13009 (GuildPicker)
-import "result";
+// Module 13032 (GuildPicker)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
+const GuildPicker = "GuildPicker";
 const result = require("useFilteredGuilds").fileFinishedImporting("modules/guild_settings_picker/native/components/GuildPicker.tsx");
 
 export default function GuildPicker(isGuildIncluded) {
-  let dependencyMap;
+  let c2;
   let selectedGuild;
   const guildId = isGuildIncluded.guildId;
   const onChange = isGuildIncluded.onChange;
-  ({ options: dependencyMap, selectedGuild } = onChange(13010)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId }));
-  let obj = {};
+  let dependencyMap;
+  ({ options: c2, selectedGuild } = onChange(13033)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId }));
   let name;
-  const tmp = onChange(13010)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId });
-  const tmp2 = jsx;
-  if (null != selectedGuild) {
+  const tmp2 = onChange(13033)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId });
+  const tmp3 = jsx;
+  if (selectedGuild != null) {
     name = selectedGuild.name;
   }
-  obj.label = name;
-  obj.onPress = function onPress() {
-    let obj = onChange(outer1_2[4]);
-    obj = {};
-    const intl = guildId(outer1_2[7]).intl;
-    obj.title = intl.string(guildId(outer1_2[7]).t.etZ9tX);
-    obj.items = closure_2;
-    obj.onItemSelect = function onItemSelect(arg0) {
-      if (null != arg0) {
-        if (null != outer1_1) {
-          outer1_1(arg0);
+  let obj = {
+    label: name,
+    onPress() {
+      let obj = onChange(_undefined[4]);
+      obj = { title: null, items: null, onItemSelect: null, selectedItem: null, hasIcons: false };
+      const intl = guildId(_undefined[7]).intl;
+      obj[0] = intl.string(guildId(_undefined[7]).t.etZ9tX);
+      obj[1] = _undefined;
+      obj[2] = function onItemSelect(arg0) {
+        if (null != arg0) {
+          if (closure_1 != null) {
+            tmp(arg0);
+          }
         }
-      }
-      setImmediate(() => {
-        onChange(outer3_2[4]).hideActionSheet("GuildPicker");
-      });
-    };
-    obj.selectedItem = guildId;
-    obj.hasIcons = false;
-    obj.openLazy(guildId(outer1_2[6])(outer1_2[5], outer1_2.paths), "GuildPicker", obj);
+        setImmediate(() => {
+          callback(table[4]).hideActionSheet(closure_4);
+        });
+      };
+      obj[3] = guildId;
+      obj.openLazy(guildId(_undefined[6])(_undefined[5], _undefined.paths), outer1_4, obj);
+    },
+    placeholder: null
   };
-  let intl = guildId(1212).intl;
-  obj.placeholder = intl.string(guildId(1212).t.etZ9tX);
-  return tmp2(onChange(13011), obj);
+  let intl = guildId(1236).intl;
+  obj[2] = intl.string(guildId(1236).t.etZ9tX);
+  return tmp3(onChange(13034), obj);
 };

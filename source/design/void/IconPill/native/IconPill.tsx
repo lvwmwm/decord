@@ -1,26 +1,26 @@
-// Module ID: 13113
-// Function ID: 101210
+// Module ID: 13136
+// Function ID: 13137
 // Name: IconPill
-// Dependencies: [31, 27, 482, 33, 4165, 689, 4580, 7646, 2]
+// Dependencies: [19, 17, 505, 21, 4189, 712, 4602, 7669, 2]
 // Exports: default
 
-// Module 13113 (IconPill)
-import "result";
+// Module 13136 (IconPill)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("_createForOfIteratorHelperLoose").radii.md, height: 20, paddingHorizontal: 8 };
-_createForOfIteratorHelperLoose.pillContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.pillIcon = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, marginRight: 4 };
-const obj1 = { tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, marginRight: 4 };
-_createForOfIteratorHelperLoose.pillText = { fontFamily: require("sum").Fonts.PRIMARY_NORMAL, color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, fontSize: 14, lineHeight: 18 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj2 = { fontFamily: require("sum").Fonts.PRIMARY_NORMAL, color: require("_createForOfIteratorHelperLoose").colors.TEXT_SUBTLE, fontSize: 14, lineHeight: 18 };
+let c3;
+let c4;
+({ jsx: c3, jsxs: c4 } = jsxProd);
+createCacheKey = { pillContainer: null, pillIcon: null, pillText: null };
+createCacheKey = { flexDirection: "row", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, borderRadius: require("Themes").radii.md, height: 20, paddingHorizontal: 8 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { tintColor: require("Themes").colors.TEXT_SUBTLE, marginRight: 4 };
+const obj1 = { tintColor: require("Themes").colors.TEXT_SUBTLE, marginRight: 4 };
+createCacheKey[2] = { fontFamily: require("sum").Fonts.PRIMARY_NORMAL, color: require("Themes").colors.TEXT_SUBTLE, fontSize: 14, lineHeight: 18 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj2 = { fontFamily: require("sum").Fonts.PRIMARY_NORMAL, color: require("Themes").colors.TEXT_SUBTLE, fontSize: 14, lineHeight: 18 };
 const result = require("sum").fileFinishedImporting("design/void/IconPill/native/IconPill.tsx");
 
 export default function IconPill(IconComponent) {
@@ -31,20 +31,26 @@ export default function IconPill(IconComponent) {
   let textStyle;
   IconComponent = IconComponent.IconComponent;
   ({ text, source, style, textStyle, accessibilityLabel } = IconComponent);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { style: items };
+  const tmp = createCacheKey();
+  let obj = { style: items, children: null };
   items = [tmp.pillContainer, style];
   if (null != IconComponent) {
-    obj = { size: "xxs", style: tmp.pillIcon };
-    let tmp8 = callback(IconComponent, obj);
+    obj = { size: "xxs", style: null };
+    obj[1] = tmp.pillIcon;
+    let tmp9 = callback(IconComponent, obj);
+    let tmp8 = callback;
   } else {
-    obj = { source, size: importDefault(4580).Sizes.EXTRA_SMALL, style: tmp.pillIcon };
-    tmp8 = callback(importDefault(4580), obj);
-    const tmp7 = importDefault(4580);
+    obj = { source: null, size: null, style: null };
+    obj[0] = source;
+    obj[1] = importDefault(4602).Sizes.EXTRA_SMALL;
+    obj[2] = tmp.pillIcon;
+    tmp8 = callback;
+    tmp9 = callback(importDefault(4602), obj);
+    const tmp7 = importDefault(4602);
   }
-  const items1 = [tmp8, ];
+  const items1 = [tmp9, ];
   const items2 = [tmp.pillText, textStyle];
-  items1[1] = callback(importDefault(7646), { style: items2, numberOfLines: 1, accessibilityLabel, children: text });
-  obj.children = items1;
+  items1[1] = tmp8(importDefault(7669), { style: items2, numberOfLines: 1, accessibilityLabel, children: text });
+  obj[1] = items1;
   return closure_4(View, obj);
 };

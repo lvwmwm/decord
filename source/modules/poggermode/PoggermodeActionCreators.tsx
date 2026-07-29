@@ -1,69 +1,70 @@
-// Module ID: 6123
-// Function ID: 54465
+// Module ID: 6141
+// Function ID: 6142
 // Name: updatePoggermodeSettings
-// Dependencies: [1194, 5944, 6124, 686, 6126, 2]
+// Dependencies: [1218, 5963, 6142, 709, 6144, 2]
 // Exports: clearMessageCombo, updateCombo, updateComboOnMessageSend, updatePoggermodeSettings
 
-// Module 6123 (updatePoggermodeSettings)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
+// Module 6141 (updatePoggermodeSettings)
+import fetchFingerprint from "fetchFingerprint";
+import initialize from "initialize";
+import updateCombo from "updateCombo";
 
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/poggermode/PoggermodeActionCreators.tsx");
+const result = require("updateCombo").fileFinishedImporting("modules/poggermode/PoggermodeActionCreators.tsx");
 
 export const updatePoggermodeSettings = function updatePoggermodeSettings(settings) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "POGGERMODE_SETTINGS_UPDATE", settings };
   obj.dispatch(obj);
   obj = {};
   const merged = Object.assign(state.getState());
   const merged1 = Object.assign(settings);
-  importDefault(6126)(obj);
+  importDefault(6144)(obj);
 };
 export const updateCombo = function updateCombo(arg0) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "POGGERMODE_UPDATE_COMBO" };
   const merged = Object.assign(arg0);
   obj.dispatch(obj);
 };
 export const clearMessageCombo = function clearMessageCombo(arg0) {
-  let obj = importDefault(686);
-  obj = { type: "POGGERMODE_UPDATE_MESSAGE_COMBO" };
+  let obj = importDefault(709);
+  obj = { type: "POGGERMODE_UPDATE_MESSAGE_COMBO", comboMessage: null };
   obj = {};
   const merged = Object.assign(arg0);
-  obj["displayed"] = true;
-  obj.comboMessage = obj;
+  obj.displayed = true;
+  obj[1] = obj;
   obj.dispatch(obj);
 };
-export const updateComboOnMessageSend = function updateComboOnMessageSend(outer1_0, id) {
+export const updateComboOnMessageSend = function updateComboOnMessageSend(throwTypeErrorResult, id) {
   id = id.getId();
-  const iter = userCombo.getUserCombo(id, outer1_0);
+  const iter = userCombo.getUserCombo(id, throwTypeErrorResult);
   if (null != iter) {
-    let obj = importDefault(686);
-    obj = { type: "POGGERMODE_UPDATE_MESSAGE_COMBO" };
-    obj = { combo: iter, channelId: outer1_0, messageId: id, displayed: false };
-    obj.comboMessage = obj;
+    let obj = importDefault(709);
+    obj = { type: "POGGERMODE_UPDATE_MESSAGE_COMBO", comboMessage: null };
+    obj = { combo: null, channelId: null, messageId: null, displayed: false };
+    obj[0] = iter;
+    obj[1] = throwTypeErrorResult;
+    obj[2] = id;
+    obj[1] = obj;
     obj.dispatch(obj);
   }
-  let num2 = 1;
+  let num = 1;
   if (null != iter) {
     let value;
-    if (null != iter) {
+    if (iter != null) {
       value = iter.value;
     }
-    num2 = 1;
+    num = 1;
     if (value > 0) {
-      let multiplier;
-      if (null != iter) {
-        multiplier = iter.multiplier;
+      let num3;
+      if (iter != null) {
+        num3 = iter.multiplier;
       }
-      let num4 = 0;
-      if (null != multiplier) {
-        num4 = multiplier;
+      if (num3 == null) {
+        num3 = 0;
       }
-      num2 = num4 + 1;
+      num = num3 + 1;
     }
   }
-  const obj1 = { type: "POGGERMODE_UPDATE_COMBO", channelId: outer1_0, userId: id, multiplier: num2, value: 0 };
-  importDefault(686).dispatch(obj1);
+  importDefault(709).dispatch({ type: "POGGERMODE_UPDATE_COMBO", channelId: throwTypeErrorResult, userId: id, multiplier: num, value: 0 });
 };

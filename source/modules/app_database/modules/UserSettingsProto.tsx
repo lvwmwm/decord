@@ -1,187 +1,237 @@
-// Module ID: 5727
-// Function ID: 49429
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 6, 7, 1316, 1194, 3, 1899, 1883, 22, 2]
+// Module ID: 5745
+// Function ID: 5746
+// Name: getAll
+// Dependencies: [5, 1340, 1218, 3, 1907, 1923, 12, 2]
 
-// Module 5727 (_createForOfIteratorHelperLoose)
-import timestamp from "timestamp";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import importDefaultResult from "_isNativeReflectConstruct";
+// Module 5745 (getAll)
+import databaseName from "databaseName";
+import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
+import fetchFingerprint from "fetchFingerprint";
+import importDefaultResult from "apply";
 
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
+let obj = importDefault;
+let c5 = new require("timestamp")("UserSettingsProto");
+class UserSettingsProto {
+  constructor() {
+    obj = Object.create(new.target.prototype);
+    UserSettingsProto = obj;
+    obj.actions = {
+      CONNECTION_OPEN() {
+            return obj.throttledOnChange();
+          },
+      USER_SETTINGS_PROTO_UPDATE() {
+            return obj.throttledOnChange();
+          },
+      USER_SETTINGS_PROTO_ENQUEUE_UPDATE() {
+            return obj.throttledOnChange();
+          },
+      USER_SETTINGS_PROTO_UPDATE_EDIT_INFO() {
+            return obj.throttledOnChange();
           }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
     };
+    obj.handleUserSettingsProtoChange = function handleUserSettingsProtoChange() {
+      id = id.getId();
+      obj = obj(table[5]);
+      const databaseResult = obj.database(id);
+      if (databaseResult != null) {
+        databaseResult.transaction((database) => {
+          const state = handleConnectionClosedOrResumed.computeState();
+          let obj = callback(1907);
+          const result = obj.userSettingsTransaction(database);
+          for (const key10014 in state) {
+            let tmp3 = key10014;
+            obj = { id: null, value: null };
+            let _Number = Number;
+            obj[0] = Number(key10014);
+            obj[1] = state[key10014];
+            let putResult = result.put(obj);
+            continue;
+          }
+          const versions = handleConnectionClosedOrResumed.settings.versions;
+          let num;
+          if (versions != null) {
+            num = versions.dataVersion;
+          }
+          if (num == null) {
+            num = -1;
+          }
+          const result1 = callback(1907).nonGuildVersionsTransaction(database);
+          result1.put({ id: "user_settings_version", version: num });
+        }, "handleUserSettingsProtoChange");
+      }
+    };
+    obj = require("apply");
+    obj.throttledOnChange = obj.debounce(obj.handleUserSettingsProtoChange, 0);
+    return obj;
   }
 }
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-importDefaultResult = new importDefaultResult("UserSettingsProto");
-let tmp4 = (() => {
-  class UserSettingsProto {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, UserSettingsProto);
-      this.actions = {
-        CONNECTION_OPEN() {
-              return self.throttledOnChange();
-            },
-        USER_SETTINGS_PROTO_UPDATE() {
-              return self.throttledOnChange();
-            },
-        USER_SETTINGS_PROTO_ENQUEUE_UPDATE() {
-              return self.throttledOnChange();
-            },
-        USER_SETTINGS_PROTO_UPDATE_EDIT_INFO() {
-              return self.throttledOnChange();
-            }
-      };
-      this.handleUserSettingsProtoChange = () => {
-        const id = outer2_6.getId();
-        const databaseResult = _self(UserSettingsProto[6]).database(id);
-        if (null != databaseResult) {
-          databaseResult.transaction((arg0) => {
-            const state = outer3_5.computeState();
-            let obj = callback(UserSettingsProto[7]);
-            const result = obj.userSettingsTransaction(arg0);
-            for (const key10015 in state) {
-              let tmp4 = key10015;
-              obj = {};
-              let _Number = Number;
-              obj.id = Number(key10015);
-              obj.value = state[key10015];
-              let putResult = result.put(obj);
+const prototype = UserSettingsProto.prototype;
+prototype["getAll"] = function getAll(arg0) {
+  let closure_0 = arg0;
+  return callback(function*() {
+    if (c7 === 2) {
+      c7 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      while (true) {
+        let num = 2;
+        c7 = 2;
+        if (0 === c6) {
+          if (arg0 === 1) {
+            let num6 = 3;
+            c7 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            let num5 = 3;
+            c7 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let handleConnectionClosedOrResumed = tmp;
+            let databaseName = tmp2;
+            let closure_0;
+            let lib;
+            databaseName = undefined;
+            handleConnectionClosedOrResumed = undefined;
+            let c4;
+            let _performance2 = performance;
+            closure_0 = performance.now();
+            let tmp31 = outer1_0;
+            let tmp32 = outer1_1;
+            let obj6 = outer1_0(outer1_1[4]);
+            let tmp33 = outer1_0;
+            let userSettingsResult = obj6.userSettings(outer1_0);
+            c6 = 1;
+            let num12 = 1;
+            c7 = 1;
+            let obj1 = { value: null, done: false };
+            obj1[0] = userSettingsResult.getMany();
+            return obj1;
+          }
+        } else if (1 === tmp5) {
+          if (arg0 === 1) {
+            let num4 = 3;
+            c7 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            let num3 = 3;
+            c7 = 3;
+            let obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            let tmp22 = databaseName;
+            let tmp23 = handleConnectionClosedOrResumed;
+            lib = arg1;
+            let _performance = performance;
+            databaseName = performance.now();
+            let tmp24 = c5;
+            let tmp25 = databaseName;
+            let tmp26 = closure_0;
+            let tmp27 = lib;
+            let _HermesInternal = HermesInternal;
+            let str5 = "loaded in ";
+            let str6 = "ms (settings: ";
+            let str7 = ")";
+            let verboseResult = c5.verbose("loaded in " + databaseName - closure_0 + "ms (settings: " + lib.length + ")");
+            handleConnectionClosedOrResumed = {};
+            let tmp29 = lib;
+            let tmp30 = lib;
+            closure_0 = lib[Symbol.iterator]();
+            let tmp9 = lib;
+            let tmp10 = closure_0;
+            while (closure_0 !== undefined) {
+              let tmp12 = databaseName;
+              c5 = 1;
+              c4 = tmp11;
+              let tmp13 = handleConnectionClosedOrResumed;
+              let tmp14 = c4;
+              let tmp15 = c4;
+              handleConnectionClosedOrResumed[c4.id] = c4.value;
+              c5 = 0;
               continue;
             }
-            const versions = outer3_5.settings.versions;
-            let dataVersion;
-            if (null != versions) {
-              dataVersion = versions.dataVersion;
-            }
-            let num = -1;
-            if (null != dataVersion) {
-              num = dataVersion;
-            }
-            const result1 = callback(UserSettingsProto[7]).nonGuildVersionsTransaction(arg0);
-            obj = { id: "user_settings_version", version: num };
-            result1.put(obj);
-          }, "handleUserSettingsProtoChange");
+            let tmp16 = databaseName;
+            let num2 = 3;
+            c7 = 3;
+            obj = { value: null, done: true };
+            obj[0] = handleConnectionClosedOrResumed;
+            return obj;
+          }
+        } else {
+          let tmp6 = c4;
+          let tmp7 = c4;
+          c5 = 0;
+          let tmp8 = closure_0;
+          closure_0.return();
+          throw c4;
         }
-      };
-      obj = f49441(UserSettingsProto[8]);
-      this.throttledOnChange = obj.debounce(this.handleUserSettingsProtoChange, 0);
-      return;
+      }
     }
+  })();
+};
+prototype["resetInMemoryState"] = function resetInMemoryState() {
+
+};
+obj = Object.create(UserSettingsProto.prototype);
+obj.actions = {
+  CONNECTION_OPEN() {
+    return obj.throttledOnChange();
+  },
+  USER_SETTINGS_PROTO_UPDATE() {
+    return obj.throttledOnChange();
+  },
+  USER_SETTINGS_PROTO_ENQUEUE_UPDATE() {
+    return obj.throttledOnChange();
+  },
+  USER_SETTINGS_PROTO_UPDATE_EDIT_INFO() {
+    return obj.throttledOnChange();
   }
-  let obj = { key: "getAll" };
-  let closure_0 = callback(async (arg0) => {
-    let done;
-    let obj = callback(UserSettingsProto[7]);
-    const nowResult = performance.now();
-    const arr = yield obj.userSettings(arg0).getMany();
-    outer2_7.verbose("loaded in " + performance.now() - nowResult + "ms (settings: " + arr.length + ")");
-    obj = {};
-    const tmp3 = outer2_8(arr);
-    let iter = tmp3();
-    if (!iter.done) {
-      do {
-        let iter2 = iter.value;
-        obj[iter2.id] = iter2.value;
-        let iter3 = tmp3();
-        iter = iter3;
-        done = iter3.done;
-      } while (!done);
-    }
-    return obj;
-  });
-  obj.value = function getAll() {
-    return callback(...arguments);
-  };
-  const items = [obj, ];
-  obj = {
-    key: "resetInMemoryState",
-    value() {
+};
+obj.handleUserSettingsProtoChange = function handleUserSettingsProtoChange() {
+  id = id.getId();
+  obj = obj(table[5]);
+  const databaseResult = obj.database(id);
+  if (databaseResult != null) {
+    databaseResult.transaction((database) => {
+      const state = handleConnectionClosedOrResumed.computeState();
+      let obj = callback(1907);
+      const result = obj.userSettingsTransaction(database);
+      for (const key10014 in state) {
+        let tmp3 = key10014;
+        obj = { id: null, value: null };
+        let _Number = Number;
+        obj[0] = Number(key10014);
+        obj[1] = state[key10014];
+        let putResult = result.put(obj);
+        continue;
+      }
+      const versions = handleConnectionClosedOrResumed.settings.versions;
+      let num;
+      if (versions != null) {
+        num = versions.dataVersion;
+      }
+      if (num == null) {
+        num = -1;
+      }
+      const result1 = callback(1907).nonGuildVersionsTransaction(database);
+      result1.put({ id: "user_settings_version", version: num });
+    }, "handleUserSettingsProtoChange");
+  }
+};
+const tmp2 = new require("timestamp")("UserSettingsProto");
+obj.throttledOnChange = require("apply").debounce(obj.handleUserSettingsProtoChange, 0);
+let result = require("fetchFingerprint").fileFinishedImporting("modules/app_database/modules/UserSettingsProto.tsx");
 
-    }
-  };
-  items[1] = obj;
-  return callback2(UserSettingsProto, items);
-})();
-tmp4 = new tmp4();
-let result = require("_defineProperties").fileFinishedImporting("modules/app_database/modules/UserSettingsProto.tsx");
-
-export default tmp4;
+export default obj;

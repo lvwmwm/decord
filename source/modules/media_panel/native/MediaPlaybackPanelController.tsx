@@ -1,14 +1,14 @@
-// Module ID: 16006
-// Function ID: 123495
+// Module ID: 16041
+// Function ID: 16042
 // Name: MediaPlaybackPanelController
-// Dependencies: [57, 31, 4157, 1347, 4377, 13568, 5670, 10017, 33, 4026, 1557, 15801, 13567, 566, 16007, 2]
+// Dependencies: [32, 19, 4181, 1371, 4400, 13591, 5688, 10039, 21, 4050, 1581, 15836, 13590, 589, 16042, 2]
 // Exports: default
 
-// Module 16006 (MediaPlaybackPanelController)
+// Module 16041 (MediaPlaybackPanelController)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import noop from "noop";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import participantFromServer from "participantFromServer";
 import withEqualityFn from "withEqualityFn";
 import { MediaPlaybackPanelModes } from "MediaPlaybackPanelModes";
 import { ActivityPanelModes } from "ActivityPanelModes";
@@ -17,94 +17,100 @@ import { jsx } from "jsxProd";
 
 const require = arg1;
 let closure_12 = { code: "function MediaPlaybackPanelControllerTsx1(){const{mode,MediaPlaybackPanelModes,MorphablePanelModes}=this.__closure;switch(mode.get()){case MediaPlaybackPanelModes.PIP:{return MorphablePanelModes.PIP;}default:{return MorphablePanelModes.UNDEFINED;}}}" };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/media_panel/native/MediaPlaybackPanelController.tsx");
+let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/media_panel/native/MediaPlaybackPanelController.tsx");
 
 export default function MediaPlaybackPanelController(children) {
-  let ActivityPanelModes;
-  let MediaPlaybackPanelModes;
-  let canShowPIP;
-  let _slicedToArray;
-  let result;
-  let _isNativeReflectConstruct;
-  let _createForOfIteratorHelperLoose;
-  let dependencyMap;
-  let importDefault;
-  const tmp = (function useCoreState() {
-    let obj = mode(outer1_2[9]);
-    const sharedValue = obj.useSharedValue(outer1_8.PIP);
-    const sharedValue1 = mode(outer1_2[9]).useSharedValue({ height: 0, width: 0 });
-    const obj2 = mode(outer1_2[9]);
-    const sharedValue2 = mode(outer1_2[9]).useSharedValue({ x: -1, y: -1 });
-    const obj3 = mode(outer1_2[9]);
-    const sharedValue3 = mode(outer1_2[9]).useSharedValue(outer1_5.useReducedMotion);
-    const items = [sharedValue3];
-    const effect = outer1_4.useEffect(() => {
-      function onChange() {
-        const useReducedMotion = outer3_5.useReducedMotion;
-        if (useReducedMotion !== outer1_1.get()) {
-          const result = outer1_1.set(useReducedMotion);
-        }
+  let sharedValue;
+  let derivedValue;
+  let sharedValue1;
+  let sharedValue3;
+  let sharedValue2;
+  let useReducedMotion;
+  let sharedValue5;
+  let sharedValue4;
+  let sharedValue6;
+  let closure_9;
+  let closure_10;
+  let first;
+  let c12;
+  let closure_13;
+  let c14;
+  let stateFromStores;
+  sharedValue = undefined;
+  derivedValue = undefined;
+  let obj = sharedValue(sharedValue1[9]);
+  sharedValue = obj.useSharedValue(sharedValue6.PIP);
+  sharedValue1 = sharedValue(sharedValue1[9]).useSharedValue({ height: 0, width: 0 });
+  const obj3 = sharedValue(sharedValue1[9]);
+  sharedValue2 = sharedValue(sharedValue1[9]).useSharedValue({ x: -1, y: -1 });
+  const obj4 = sharedValue(sharedValue1[9]);
+  sharedValue3 = sharedValue(sharedValue1[9]).useSharedValue(useReducedMotion.useReducedMotion);
+  derivedValue = sharedValue3;
+  const items = [sharedValue3];
+  const effect = sharedValue2.useEffect(() => {
+    function onChange() {
+      const useReducedMotion = outer1_5.useReducedMotion;
+      if (useReducedMotion !== closure_1.get()) {
+        const result = closure_1.set(useReducedMotion);
       }
-      let result = outer2_5.addReactChangeListener(onChange);
-      return () => {
-        const result = outer3_5.removeReactChangeListener(onChange);
-      };
-    }, items);
-    const obj4 = mode(outer1_2[9]);
-    const sharedValue4 = mode(outer1_2[9]).useSharedValue(true);
-    const obj5 = mode(outer1_2[9]);
-    const sharedValue5 = mode(outer1_2[9]).useSharedValue(0);
-    const obj6 = mode(outer1_2[9]);
-    const fn = function p() {
-      if (sharedValue.get() === outer2_8.PIP) {
-        let UNDEFINED = constants.PIP;
-      } else {
-        UNDEFINED = constants.UNDEFINED;
-      }
-      return UNDEFINED;
+    }
+    let result = _undefined.addReactChangeListener(onChange);
+    return () => {
+      const result = c5.removeReactChangeListener(onChange);
     };
-    obj = { mode: sharedValue, MediaPlaybackPanelModes: outer1_8, MorphablePanelModes: closure_10 };
-    fn.__closure = obj;
-    fn.__workletHash = 10375114450450;
-    fn.__initData = closure_12;
-    const derivedValue = mode(outer1_2[9]).useDerivedValue(fn);
-    const obj7 = mode(outer1_2[9]);
-    const tmp9 = outer1_1(outer1_2[10])();
-    const tmp10 = outer1_1(outer1_2[11])(outer1_1(outer1_2[10])());
-    const sharedValue6 = mode(outer1_2[9]).useSharedValue(false);
-    const obj9 = mode(outer1_2[9]);
-    obj = { mode: sharedValue, morphablePanelMode: derivedValue, wrapperDimensions: sharedValue1, useReducedMotion: sharedValue3, pipState: sharedValue2, pipAvoidanceSpecs: tmp10, scrollPosition: sharedValue5, canShowPIP: sharedValue4, lockScrolling: sharedValue6, wrapperOffset: mode(outer1_2[9]).useSharedValue({ x: 0, y: 0, gestureActive: false }) };
-    return obj;
-  })();
-  const mode = tmp.mode;
-  ({ morphablePanelMode: importDefault, wrapperDimensions: dependencyMap, useReducedMotion: _slicedToArray, pipState: result, pipAvoidanceSpecs: _isNativeReflectConstruct, scrollPosition: _createForOfIteratorHelperLoose, canShowPIP } = tmp);
-  ({ lockScrolling: MediaPlaybackPanelModes, wrapperOffset: ActivityPanelModes } = tmp);
-  let closure_10 = React.useRef(undefined);
-  let tmp2 = callback(React.useState(mode.get()), 2);
-  const first = tmp2[0];
-  let closure_12 = tmp4;
-  let items = [first, tmp2[1]];
-  let closure_13 = React.useCallback(() => {
-    let flag = first === outer1_8.PIP;
+  }, items);
+  const obj5 = sharedValue(sharedValue1[9]);
+  sharedValue4 = sharedValue(sharedValue1[9]).useSharedValue(true);
+  const obj6 = sharedValue(sharedValue1[9]);
+  sharedValue5 = sharedValue(sharedValue1[9]).useSharedValue(0);
+  const obj7 = sharedValue(sharedValue1[9]);
+  const fn = function p() {
+    if (sharedValue.get() === sharedValue6.PIP) {
+      let UNDEFINED = constants2.PIP;
+    } else {
+      UNDEFINED = constants2.UNDEFINED;
+    }
+    return UNDEFINED;
+  };
+  obj = { mode: sharedValue, MediaPlaybackPanelModes: sharedValue6, MorphablePanelModes: closure_10 };
+  fn.__closure = obj;
+  fn.__workletHash = 10375114450450;
+  fn.__initData = c12;
+  derivedValue = sharedValue(sharedValue1[9]).useDerivedValue(fn);
+  const obj8 = sharedValue(sharedValue1[9]);
+  const tmp8 = derivedValue(sharedValue1[10])();
+  const tmp9 = derivedValue(sharedValue1[11])(derivedValue(sharedValue1[10])());
+  sharedValue6 = sharedValue(sharedValue1[9]).useSharedValue(false);
+  const obj10 = sharedValue(sharedValue1[9]);
+  useReducedMotion = tmp9;
+  closure_9 = sharedValue(sharedValue1[9]).useSharedValue({ x: 0, y: 0, gestureActive: false });
+  closure_10 = sharedValue2.useRef(undefined);
+  const tmp11 = sharedValue3(sharedValue2.useState(sharedValue.get()), 2);
+  first = tmp11[0];
+  c12 = tmp13;
+  const items1 = [first, tmp11[1]];
+  closure_13 = sharedValue2.useCallback(() => {
+    let flag = first === sharedValue6.PIP;
     if (flag) {
-      tmp4(outer1_8.DISMISSED);
-      outer1_1(outer1_2[12]).userDidClosePip();
+      _undefined2(tmp.DISMISSED);
+      derivedValue(sharedValue1[12]).userDidClosePip();
       flag = true;
-      const obj = outer1_1(outer1_2[12]);
+      const obj = derivedValue(sharedValue1[12]);
     }
     return flag;
-  }, items);
-  const tmp5 = canShowPIP((voicePanelsPIP) => voicePanelsPIP.voicePanelsPIP.size > 0);
-  let closure_14 = tmp5;
-  const items1 = [_createForOfIteratorHelperLoose];
-  const stateFromStores = mode(566).useStateFromStores(items1, () => outer1_6.getActivityPanelMode() === outer1_9.PIP);
-  const items2 = [canShowPIP, tmp5, stateFromStores];
-  const layoutEffect = React.useLayoutEffect(() => {
-    let tmp2 = !closure_14;
-    if (tmp2) {
+  }, items1);
+  const tmp14 = sharedValue4((voicePanelsPIP) => voicePanelsPIP.voicePanelsPIP.size > 0);
+  c14 = tmp14;
+  const obj11 = sharedValue(sharedValue1[9]);
+  const items2 = [sharedValue5];
+  stateFromStores = sharedValue(sharedValue1[13]).useStateFromStores(items2, () => sharedValue5.getActivityPanelMode() === constants.PIP);
+  const items3 = [sharedValue4, tmp14, stateFromStores];
+  const layoutEffect = sharedValue2.useLayoutEffect(() => {
+    let tmp2 = !c14;
+    if (!c14) {
       tmp2 = !stateFromStores;
     }
-    const result = canShowPIP.set(tmp2);
-  }, items2);
-  return first(importDefault(16007).Provider, { value: callback(React.useState(() => ({ mode, setMode: closure_12, morphablePanelMode: closure_1, wrapperDimensions: closure_2, useReducedMotion: _slicedToArray, pipState: result, pipAvoidanceSpecs: _isNativeReflectConstruct, dismissToPipGestureRef: closure_10, dismissPanel: closure_13, scrollPosition: _createForOfIteratorHelperLoose, canShowPIP, lockScrolling: closure_8, wrapperOffset: closure_9 })), 1)[0], children: children.children });
+    const result = sharedValue4.set(tmp2);
+  }, items3);
+  return first(derivedValue(sharedValue1[14]).Provider, { value: sharedValue3(sharedValue2.useState(() => ({ mode: sharedValue, setMode: c12, morphablePanelMode: derivedValue, wrapperDimensions: sharedValue1, useReducedMotion: sharedValue3, pipState: sharedValue2, pipAvoidanceSpecs: c5, dismissToPipGestureRef: closure_10, dismissPanel: closure_13, scrollPosition: sharedValue5, canShowPIP: sharedValue4, lockScrolling: sharedValue6, wrapperOffset: closure_9 })), 1)[0], children: children.children });
 };

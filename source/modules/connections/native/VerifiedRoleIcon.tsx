@@ -1,26 +1,26 @@
-// Module ID: 5541
-// Function ID: 47072
+// Module ID: 5559
+// Function ID: 5560
 // Name: VerifiedRoleIcon
-// Dependencies: [31, 27, 653, 33, 689, 4165, 5542, 5521, 4109, 2]
+// Dependencies: [19, 17, 676, 21, 712, 4189, 5560, 5539, 4133, 2]
 // Exports: default
 
-// Module 5541 (VerifiedRoleIcon)
-import "result";
+// Module 5559 (VerifiedRoleIcon)
+import "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ DEFAULT_ROLE_COLOR_HEX: closure_3, EMPTY_STRING_SNOWFLAKE_ID: closure_4 } = ME);
-const WHITE = require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE;
-const PRIMARY_630 = require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_630;
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { alignItems: "center", justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.iconContainer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ DEFAULT_ROLE_COLOR_HEX: c3, EMPTY_STRING_SNOWFLAKE_ID: c4 } = ME);
+const WHITE = require("Themes").unsafe_rawColors.WHITE;
+const PRIMARY_630 = require("Themes").unsafe_rawColors.PRIMARY_630;
+createCacheKey = { iconContainer: null };
+createCacheKey = { alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.round };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("ME").fileFinishedImporting("modules/connections/native/VerifiedRoleIcon.tsx");
 
 export default function VerifiedRoleIcon(arg0) {
@@ -33,49 +33,46 @@ export default function VerifiedRoleIcon(arg0) {
   let style;
   ({ role, roleId, roleColor, size } = arg0);
   ({ guildId, style, displayRoleIcon } = arg0);
-  if (null == roleColor) {
+  if (roleColor == null) {
     let colorString;
-    if (null != role) {
+    if (role != null) {
       colorString = role.colorString;
     }
     roleColor = colorString;
   }
-  if (null == roleColor) {
+  if (roleColor == null) {
     roleColor = closure_3;
   }
-  let obj = require(5542) /* getHigherContrastColor */;
-  obj = { backgroundColor: roleColor };
+  let obj = require(5560) /* getHigherContrastColor */;
   const items = [WHITE, PRIMARY_630];
-  obj.colors = items;
   const diff = size - size / 8 * 2;
-  const higherContrastColor = obj.getHigherContrastColor(obj);
-  let obj2 = require(5521) /* useRoleIcon */;
-  obj = { guildId };
-  if (null == roleId) {
+  const higherContrastColor = obj.getHigherContrastColor({ backgroundColor: roleColor, colors: items });
+  let obj1 = require(5539) /* useRoleIcon */;
+  obj = { guildId, roleId: null, size: null };
+  if (roleId == null) {
     let id;
-    if (null != role) {
+    if (role != null) {
       id = role.id;
     }
     roleId = id;
   }
-  if (null == roleId) {
+  if (roleId == null) {
     roleId = closure_4;
   }
-  obj.roleId = roleId;
-  obj.size = diff;
-  let roleIcon = obj2.useRoleIcon(obj);
-  const obj1 = { style: items1 };
-  items1 = [style, _createForOfIteratorHelperLoose().iconContainer, ];
-  obj2 = { width: size, height: size, backgroundColor: roleColor };
-  items1[2] = obj2;
+  obj[1] = roleId;
+  obj[2] = diff;
+  let roleIcon = obj1.useRoleIcon(obj);
+  obj = { style: items1, children: null };
+  items1 = [style, createCacheKey().iconContainer, { width: size, height: size, backgroundColor: roleColor }];
   if (false === displayRoleIcon) {
-    const obj3 = {};
-    const obj4 = { width: diff, height: diff };
-    obj3.style = obj4;
-    obj3.size = "custom";
-    obj3.color = higherContrastColor;
-    roleIcon = jsx(require(4109) /* LinkIcon */.LinkIcon, {});
+    obj1 = { style: null, size: "custom", color: null };
+    const obj2 = { width: null, height: null };
+    obj2[0] = diff;
+    obj2[1] = diff;
+    obj1[0] = obj2;
+    obj1[2] = higherContrastColor;
+    roleIcon = tmp9(require(4133) /* LinkIcon */.LinkIcon, obj1);
   }
-  obj1.children = roleIcon;
-  return <View style={items1} />;
+  obj[1] = roleIcon;
+  return <View style={items1}>{null}</View>;
 };

@@ -1,20 +1,21 @@
-// Module ID: 15003
-// Function ID: 114239
+// Module ID: 15029
+// Function ID: 15030
 // Name: useCallA11yState
-// Dependencies: [1194, 4844, 566, 2]
+// Dependencies: [1218, 4866, 589, 2]
 // Exports: default
 
-// Module 15003 (useCallA11yState)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 15029 (useCallA11yState)
+import fetchFingerprint from "fetchFingerprint";
+import callConnect from "callConnect";
 
 const require = arg1;
 const result = require("initialize").fileFinishedImporting("modules/calls/useCallA11yState.tsx");
 
 export default function useCallA11yState(arg0) {
   const _require = arg0;
-  const items = [closure_3, _isNativeReflectConstruct];
-  return _require(566).useStateFromStoresObject(items, () => {
+  const items = [callConnect, fetchFingerprint];
+  return _require(589).useStateFromStoresObject(items, () => {
+    let obj = outer1_3;
     const call = outer1_3.getCall(closure_0);
     const id = outer1_2.getId();
     let hasItem = null != call && null != id;
@@ -22,7 +23,8 @@ export default function useCallA11yState(arg0) {
       const ringing = call.ringing;
       hasItem = ringing.includes(id);
     }
-    const obj = { isIncomingCall: hasItem, isOngoingCall: outer1_3.isCallActive(closure_0) && !hasItem };
+    obj = { isIncomingCall: hasItem, isOngoingCall: null };
+    obj[1] = obj.isCallActive(closure_0) && !hasItem;
     return obj;
   });
 };

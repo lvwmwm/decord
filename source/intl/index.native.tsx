@@ -1,71 +1,83 @@
-// Module ID: 1212
-// Function ID: 13915
+// Module ID: 1236
+// Function ID: 1237
 // Name: getSystemLocale
-// Dependencies: [31, 653, 33, 27, 477, 643, 1213, 1250, 1273, 13214, 2, 13215, 13218]
+// Dependencies: [19, 676, 21, 17, 500, 666, 1237, 1274, 1297, 13237, 2, 13238, 13241]
 // Exports: getSystemLocale, useSyncMessages
 
-// Module 1212 (getSystemLocale)
-import "result";
+// Module 1236 (getSystemLocale)
+import "noop";
 import { Fonts } from "ME";
 import { jsx } from "jsxProd";
-import getLanguages from "getLanguages";
-import module_1250 from "module_1250";
+import get_ActivityIndicator from "get ActivityIndicator";
+import set from "set";
+import getAvailableLocales from "getAvailableLocales";
+import module_1274 from "module_1274";
+import set from "jsxProd";
 
 const require = arg1;
+let obj = { fontFamily: Fonts.PRIMARY_SEMIBOLD };
+obj = { fontFamily: Fonts.CODE_NORMAL };
+let closure_3 = { strong: obj, italic: { fontStyle: "italic" }, code: obj, del: { textDecorationLine: "line-through", textDecorationStyle: "solid" } };
+if (set.isAndroid()) {
+  let LocalizationManager = require("enforcing").default;
+} else {
+  LocalizationManager = get_ActivityIndicator.NativeModules.LocalizationManager;
+}
+let str = "en-US";
+if (null != LocalizationManager) {
+  str = LocalizationManager.getConstants().Language;
+}
 function getSystemLocale(arg0) {
-  let Language = arg0;
-  const tmp = require(27) /* get ActivityIndicator */;
+  const tmp = require;
+  const tmp3 = require(17) /* get ActivityIndicator */;
   if (obj.isAndroid()) {
-    let LocalizationManager = require(643) /* enforcing */.default;
+    let LocalizationManager = tmp(666).default;
   } else {
-    LocalizationManager = tmp.NativeModules.LocalizationManager;
+    LocalizationManager = tmp3.NativeModules.LocalizationManager;
   }
+  let Language = arg0;
   if (null != LocalizationManager) {
     Language = LocalizationManager.getConstants().Language;
   }
   return Language;
 }
-let obj = { fontFamily: Fonts.PRIMARY_SEMIBOLD };
-obj = { fontFamily: Fonts.CODE_NORMAL };
-let closure_3 = { strong: obj, italic: { fontStyle: "italic" }, code: obj, del: { textDecorationLine: "line-through", textDecorationStyle: "solid" } };
-const systemLocale = getSystemLocale("en-US");
-const normalizedLocale = getLanguages.getNormalizedLocale(systemLocale, "en-US");
+const normalizedLocale = getAvailableLocales.getNormalizedLocale(str, "en-US");
 obj = {
   $i(children) {
-    return jsx(require(1273) /* Button */.LegacyText, { style: closure_3.italic, children }, arg1);
+    return jsx(require(1297) /* Button */.LegacyText, { style: closure_3.italic, children }, arg1);
   },
   $b(children) {
-    return jsx(require(1273) /* Button */.LegacyText, { style: closure_3.strong, children }, arg1);
+    return jsx(require(1297) /* Button */.LegacyText, { style: closure_3.strong, children }, arg1);
   },
   $del(children) {
-    return jsx(require(1273) /* Button */.LegacyText, { style: closure_3.del, children }, arg1);
+    return jsx(require(1297) /* Button */.LegacyText, { style: closure_3.del, children }, arg1);
   },
   $p(children) {
-    return jsx(require(1273) /* Button */.LegacyText, { children }, arg1);
+    return jsx(require(1297) /* Button */.LegacyText, { children }, arg1);
   },
   $code(children) {
-    return jsx(require(1273) /* Button */.LegacyText, { style: closure_3.code, children }, arg1);
+    return jsx(require(1297) /* Button */.LegacyText, { style: closure_3.code, children }, arg1);
   },
   $link(children) {
     let tmp;
     [tmp] = arg2;
-    return jsx(require(13214) /* IntlLink */.IntlLink, { target: tmp, children }, arg1);
+    return jsx(require(13237) /* IntlLink */.IntlLink, { target: tmp, children }, arg1);
   }
 };
-const reactFormatter = module_1250.makeReactFormatter(obj);
-const intlManager = new require("module_1250").IntlManager({ initialLocale: normalizedLocale, defaultLocale: "en-US" });
-getLanguages = { format: reactFormatter, formatToPlainString: require("module_1250").stringFormatter, formatToMarkdownString: require("module_1250").markdownFormatter, formatToParts: require("module_1250").astFormatter };
-getLanguages = intlManager.withFormatters(getLanguages);
-const result = require("jsxProd").fileFinishedImporting("intl/index.native.tsx");
+const reactFormatter = module_1274.makeReactFormatter(obj);
+const intlManager = new require("module_1274").IntlManager({ initialLocale: normalizedLocale, defaultLocale: "en-US" });
+set = { format: reactFormatter, formatToPlainString: require("module_1274").stringFormatter, formatToMarkdownString: require("module_1274").markdownFormatter, formatToParts: require("module_1274").astFormatter };
+set = intlManager.withFormatters(set);
+const result = set.fileFinishedImporting("intl/index.native.tsx");
 
-export const intl = getLanguages;
+export const intl = set;
 export { getSystemLocale };
-export const getAvailableLocales = require("getLanguages").getAvailableLocales;
-export const getLanguages = require("getLanguages").getLanguages;
+export const getAvailableLocales = require("getAvailableLocales").getAvailableLocales;
+export const getLanguages = require("getAvailableLocales").getLanguages;
 export const useSyncMessages = function useSyncMessages(arg0) {
-  return require(1213) /* getLanguages */.useSyncMessages(arg0, getLanguages);
+  return require(1237) /* getAvailableLocales */.useSyncMessages(arg0, set);
 };
 export const t = require("_defaultMessages")._defaultMessages;
 export const international = require("messagesProxy");
-export { systemLocale };
+export const systemLocale = str;
 export const initialLocale = normalizedLocale;

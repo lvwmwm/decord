@@ -1,378 +1,45 @@
-// Module ID: 9250
-// Function ID: 72331
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 4086, 1838, 3793, 3982, 1850, 653, 664, 9251, 483, 587, 3747, 566, 686, 2]
+// Module ID: 9274
+// Function ID: 9275
+// Name: fetchSurveyIfNeeded
+// Dependencies: [4110, 1862, 3817, 4006, 1874, 676, 687, 9275, 506, 595, 3771, 589, 709, 2]
 
-// Module 9250 (_isNativeReflectConstruct)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "t";
-import dispatcher from "dispatcher";
-import closure_8 from "set";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_createForOfIteratorHelperLoose";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
+// Module 9274 (fetchSurveyIfNeeded)
+import handleInviteData from "handleInviteData";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import handleConnectionOpen from "handleConnectionOpen";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
-import set from "_possibleConstructorReturn";
+import { PersistedStore } from "initialize";
+import set from "getUncachedChannelPermissions";
 
-let closure_14;
-let closure_15;
-let closure_16;
+let c10;
+let c9;
+let unpackModuleId;
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function isSurveyDataStale() {
-  let tmp = null == obj.lastFetched;
-  if (!tmp) {
-    const _Date = Date;
-    tmp = Date.now() - obj.lastFetched >= DAY;
-  }
-  return tmp;
-}
 function fetchSurveyIfNeeded() {
-  let tmp = c23;
-  if (!c23) {
-    const tmp3 = isSurveyDataStale();
-    let tmp4 = !tmp3;
-    if (!tmp3) {
-      tmp4 = null == obj.surveyOverride;
+  let tmp = c18;
+  if (!c18) {
+    let tmp4 = null == obj.lastFetched;
+    if (!tmp4) {
+      const _Date = Date;
+      tmp4 = Date.now() - obj.lastFetched >= DAY;
     }
-    tmp = tmp4;
+    let tmp8 = !tmp4;
+    if (!tmp4) {
+      tmp8 = null == obj.surveyOverride;
+    }
+    tmp = tmp8;
   }
   if (!tmp) {
-    c23 = true;
-    obj = require(9251) /* overrideSurvey */;
+    c18 = true;
+    obj = require(9275) /* overrideSurvey */;
     obj.surveyFetch(obj.surveyOverride, true);
   }
 }
-function meetsSurveyRequirements(c22) {
-  let obj;
-  let guild_requirements = c22.guild_requirements;
-  if (undefined === guild_requirements) {
-    guild_requirements = [];
-  }
-  let guild_size = c22.guild_size;
-  if (undefined === guild_size) {
-    guild_size = [null, null];
-  }
-  let guild_permissions = c22.guild_permissions;
-  if (undefined === guild_permissions) {
-    guild_permissions = [];
-  }
-  let flag = true;
-  if (0 !== guild_requirements.length) {
-    const tmp58 = _createForOfIteratorHelperLoose(guild_requirements);
-    let iter2 = tmp58();
-    if (iter2.done) {
-      const hasItem = guild_requirements.includes(obj.GUILD_SIZE_ALL);
-      const tmp6 = _createForOfIteratorHelperLoose(guildsArray.getGuildsArray());
-      const iter3 = tmp6();
-      let iter4 = iter3;
-      let flag2 = true;
-      let flag3 = true;
-      if (!iter3.done) {
-        while (true) {
-          let value = iter4.value;
-          if (hasItem) {
-            let tmp15 = memberCount;
-            let tmp16 = value;
-            memberCount = memberCount.getMemberCount(value.id);
-            let flag4 = false;
-            let tmp18 = memberCount;
-            let tmp19 = tmp9;
-            let tmp20 = tmp10;
-            let tmp21 = tmp11;
-            let tmp22 = tmp12;
-            let tmp23 = tmp13;
-            if (null == memberCount) {
-              let iter7 = tmp6();
-              flag2 = flag4;
-              let tmp8 = tmp18;
-              tmp9 = tmp19;
-              tmp10 = tmp20;
-              tmp11 = tmp21;
-              tmp12 = tmp22;
-              tmp13 = tmp23;
-              iter4 = iter7;
-              flag3 = flag4;
-              break;
-            } else if (null == guild_size[0]) {
-              tmp8 = memberCount;
-              if (null != guild_size[1]) {
-                tmp8 = memberCount;
-                flag4 = false;
-                tmp18 = memberCount;
-                tmp19 = tmp9;
-                tmp20 = tmp10;
-                tmp21 = tmp11;
-                tmp22 = tmp12;
-                tmp23 = tmp13;
-              }
-            } else {
-              flag4 = false;
-              tmp18 = memberCount;
-              tmp19 = tmp9;
-              tmp20 = tmp10;
-              tmp21 = tmp11;
-              tmp22 = tmp12;
-              tmp23 = tmp13;
-            }
-          } else {
-            let tmp14 = obj;
-          }
-          let tmp24 = obj;
-          if (!guild_requirements.includes(obj.IS_COMMUNITY)) {
-            let tmp27 = obj;
-            if (!guild_requirements.includes(obj.IS_HUB)) {
-              let tmp30 = obj;
-              if (!guild_requirements.includes(obj.GUILD_PERMISSIONS)) {
-                let tmp39 = currentUser;
-                currentUser = currentUser.getCurrentUser();
-                let id;
-                if (null != currentUser) {
-                  id = currentUser.id;
-                }
-                let tmp42 = value;
-                let tmp43 = id === value.ownerId;
-                let tmp44 = closure_11;
-                let tmp45 = constants2;
-                let canResult = closure_11.can(constants2.ADMINISTRATOR, value);
-                let tmp47 = obj;
-                if (!guild_requirements.includes(obj.IS_OWNER)) {
-                  let tmp48 = obj;
-                  if (!guild_requirements.includes(obj.IS_ADMIN)) {
-                    let tmp49 = closure_21;
-                    let tmp50 = null != closure_21 ? closure_21 : {};
-                    closure_21 = tmp50;
-                    if (null == tmp50[c22.key]) {
-                      let tmp51 = closure_21;
-                      closure_21[c22.key] = c22;
-                    }
-                    let tmp52 = guildId;
-                    guildId = guildId.getGuildId();
-                    let tmp54 = null != guildId;
-                    if (tmp54) {
-                      let tmp55 = value;
-                      tmp54 = guildId === value.id;
-                    }
-                    let tmp56 = obj;
-                    if (!guild_requirements.includes(obj.IS_VIEWING)) {
-                      flag4 = flag2;
-                      tmp18 = tmp8;
-                      tmp19 = currentUser;
-                      tmp20 = tmp43;
-                      tmp21 = canResult;
-                      tmp22 = guildId;
-                      tmp23 = tmp54;
-                      flag = true;
-                      if (!hasItem) {
-                        break;
-                      }
-                    } else {
-                      flag4 = flag2;
-                      tmp18 = tmp8;
-                      tmp19 = currentUser;
-                      tmp20 = tmp43;
-                      tmp21 = canResult;
-                      tmp22 = guildId;
-                      tmp23 = tmp54;
-                    }
-                  } else {
-                    flag4 = flag2;
-                    tmp18 = tmp8;
-                    tmp19 = currentUser;
-                    tmp20 = tmp43;
-                    tmp22 = tmp12;
-                    tmp23 = tmp13;
-                    tmp21 = canResult;
-                  }
-                } else {
-                  flag4 = flag2;
-                  tmp18 = tmp8;
-                  tmp19 = currentUser;
-                  tmp20 = tmp43;
-                  tmp21 = canResult;
-                  tmp22 = tmp12;
-                  tmp23 = tmp13;
-                }
-              } else {
-                flag4 = flag2;
-                tmp18 = tmp8;
-                tmp19 = tmp9;
-                tmp20 = tmp10;
-                tmp21 = tmp11;
-                tmp22 = tmp12;
-                tmp23 = tmp13;
-                if (0 !== guild_permissions.length) {
-                  let flag5 = false;
-                  let tmp59 = _createForOfIteratorHelperLoose;
-                  let tmp60 = _createForOfIteratorHelperLoose(guild_permissions);
-                  let tmp61 = tmp60;
-                  let iter8 = tmp60();
-                  let iter6 = iter8;
-                  if (!iter8.done) {
-                    let tmp31 = iter6;
-                    value = iter6.value;
-                    let tmp32 = importAll;
-                    let tmp33 = dependencyMap;
-                    obj = importAll(483);
-                    let tmp34 = value;
-                    let tmp35 = closure_11;
-                    let tmp36 = value;
-                    while (!closure_11.can(obj.deserialize(value), value)) {
-                      do {
-                        let tmp37 = tmp60;
-                        iter5 = tmp61();
-                        iter6 = iter5;
-                      } while (iter5.done);
-                    }
-                    flag5 = true;
-                  }
-                  let tmp38 = flag5;
-                  flag4 = flag2;
-                  tmp18 = tmp8;
-                  tmp19 = tmp9;
-                  tmp20 = tmp10;
-                  tmp21 = tmp11;
-                  tmp22 = tmp12;
-                  tmp23 = tmp13;
-                }
-              }
-            } else {
-              let tmp28 = value;
-              let features2 = value.features;
-              let tmp29 = constants;
-              flag4 = flag2;
-              tmp18 = tmp8;
-              tmp19 = tmp9;
-              tmp20 = tmp10;
-              tmp21 = tmp11;
-              tmp22 = tmp12;
-              tmp23 = tmp13;
-            }
-          } else {
-            let tmp25 = value;
-            let features = value.features;
-            let tmp26 = constants;
-            flag4 = flag2;
-            tmp18 = tmp8;
-            tmp19 = tmp9;
-            tmp20 = tmp10;
-            tmp21 = tmp11;
-            tmp22 = tmp12;
-            tmp23 = tmp13;
-          }
-        }
-      }
-      flag = false;
-      if (hasItem) {
-        flag = false;
-        if (flag3) {
-          flag = true;
-        }
-      }
-    } else {
-      flag = false;
-      while (set.has(iter2.value)) {
-        let iter = tmp58();
-        iter2 = iter;
-        break;
-      }
-    }
-  }
-  return flag;
-}
 function setSurvey(survey) {
   survey = survey.survey;
-  let c23 = false;
+  let c18 = false;
   obj.lastFetched = Date.now();
   if (survey.isActionTriggered) {
     const _Date = Date;
@@ -387,193 +54,640 @@ function setSurvey(survey) {
     tmp4 = null == obj.hiddenSurveys[survey.key];
   }
   if (tmp3) {
-    tmp3 = meetsSurveyRequirements(survey);
+    tmp3 = (function meetsGuildRequirements(c17) {
+      let guild_requirements = c17.guild_requirements;
+      if (undefined === guild_requirements) {
+        guild_requirements = [];
+      }
+      let guild_size = c17.guild_size;
+      if (undefined === guild_size) {
+        guild_size = [null, null];
+      }
+      let guild_permissions = c17.guild_permissions;
+      if (undefined === guild_permissions) {
+        guild_permissions = [];
+      }
+      if (0 === guild_requirements.length) {
+        return true;
+      } else {
+        for (const item10017 of guild_requirements) {
+          let tmp2 = set;
+          if (set.has(item10017)) {
+            continue;
+          } else {
+            let tmp3 = obj3;
+            obj3.return();
+            let flag = false;
+            return false;
+          }
+        }
+        const hasItem = guild_requirements.includes(constants3.GUILD_SIZE_ALL);
+        let flag3 = true;
+        guildsArray = guildsArray.getGuildsArray();
+        const iter = guildsArray[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp14 = nextResult;
+          if (hasItem) {
+            let tmp17 = memberCount;
+            let tmp18 = nextResult;
+            memberCount = memberCount.getMemberCount(tmp14.id);
+            let tmp20 = memberCount;
+            if (null == memberCount) {
+              flag3 = false;
+              continue;
+            } else {
+              if (null != guild_size[0]) {
+                let tmp21 = memberCount;
+                if (tmp20 < guild_size[0]) {
+                  flag3 = false;
+                  continue;
+                }
+              }
+              if (null != guild_size[1]) {
+                let tmp22 = memberCount;
+                if (tmp20 > guild_size[1]) {
+                  flag3 = false;
+                  continue;
+                }
+              }
+            }
+          } else {
+            let tmp15 = constants3;
+            let tmp16 = constants3;
+          }
+          let tmp23 = constants3;
+          let tmp24 = constants3;
+          if (!guild_requirements.includes(constants3.IS_COMMUNITY)) {
+            let tmp27 = tmp23;
+            if (!guild_requirements.includes(tmp24.IS_HUB)) {
+              let tmp30 = tmp23;
+              if (!guild_requirements.includes(tmp24.GUILD_PERMISSIONS)) {
+                let tmp40 = currentUser;
+                currentUser = currentUser.getCurrentUser();
+                let id;
+                if (currentUser != null) {
+                  id = currentUser.id;
+                }
+                let tmp43 = nextResult;
+                let tmp44 = id === tmp14.ownerId;
+                let tmp45 = getUncachedChannelPermissions;
+                let tmp46 = constants2;
+                let canResult = getUncachedChannelPermissions.can(constants2.ADMINISTRATOR, tmp14);
+                let tmp48 = constants3;
+                let tmp49 = constants3;
+                if (!guild_requirements.includes(constants3.IS_OWNER)) {
+                  let tmp51 = tmp48;
+                  if (!guild_requirements.includes(tmp49.IS_ADMIN)) {
+                    if (obj == null) {
+                      obj = {};
+                    }
+                    if (null == obj[c17.key]) {
+                      let tmp53 = obj;
+                      obj[c17.key] = c17;
+                    }
+                    let tmp54 = guildId;
+                    guildId = guildId.getGuildId();
+                    let tmp57 = null != guildId;
+                    if (tmp57) {
+                      let tmp58 = guildId;
+                      let tmp59 = nextResult;
+                      tmp57 = tmp56 === tmp14.id;
+                    }
+                    let tmp61 = tmp48;
+                    let tmp60 = tmp57;
+                    if (!guild_requirements.includes(tmp49.IS_VIEWING)) {
+                      if (!hasItem) {
+                        let tmp63 = iter;
+                        iter.return();
+                        return true;
+                      }
+                    } else {
+                      let tmp62 = tmp57;
+                    }
+                  } else {
+                    let tmp52 = canResult;
+                  }
+                } else {
+                  let tmp50 = tmp44;
+                }
+              } else if (0 === guild_permissions.length) {
+                continue;
+              } else {
+                let flag5 = false;
+                let tmp65 = guild_permissions;
+                let tmp31 = guild_permissions;
+                for (const item10086 of guild_permissions) {
+                  let tmp33 = callback;
+                  let tmp34 = table;
+                  let tmp32 = item10086;
+                  obj = callback(table[8]);
+                  let tmp35 = item10086;
+                  let tmp36 = getUncachedChannelPermissions;
+                  let tmp37 = nextResult;
+                  if (getUncachedChannelPermissions.can(obj.deserialize(tmp32), tmp14)) {
+                    flag5 = true;
+                    let tmp38 = obj4;
+                    obj4.return();
+                    break;
+                  }
+                  continue;
+                }
+                let tmp39 = flag5;
+                continue;
+              }
+              continue;
+            } else {
+              let tmp28 = nextResult;
+              let features2 = tmp14.features;
+              let tmp29 = constants;
+            }
+          } else {
+            let tmp25 = nextResult;
+            let features = tmp14.features;
+            let tmp26 = constants;
+          }
+          continue;
+        }
+        if (hasItem) {
+          if (flag3) {
+            return true;
+          }
+        }
+        return false;
+      }
+    })(survey);
   }
-  let tmp7 = c19;
-  if (!c19) {
-    tmp7 = c20;
+  let tmp6 = c14;
+  if (!c14) {
+    tmp6 = c15;
   }
-  const Storage = require(587) /* Storage */.Storage;
-  const value = Storage.get(closure_16);
+  const Storage = require(595) /* Storage */.Storage;
+  const value = Storage.get(closure_11);
   let tmp9 = null == value;
   if (!tmp9) {
-    obj = importDefault(3747)();
+    obj = importDefault(3771)();
     tmp9 = obj.diff(value, "day") < 7;
   }
-  let tmp12 = null;
+  let tmp11 = null;
   if (tmp4) {
-    tmp12 = null;
+    tmp11 = null;
     if (tmp3) {
-      tmp12 = null;
-      if (!tmp7) {
-        tmp12 = null;
+      tmp11 = null;
+      if (!tmp6) {
+        tmp11 = null;
         if (!tmp9) {
-          tmp12 = survey;
+          tmp11 = survey;
         }
       }
     }
   }
-  let c22 = tmp12;
+  let c17 = tmp11;
 }
 function handleSelectedGuildChange() {
-  if (null != c22) {
-    const tmp3 = meetsSurveyRequirements(c22);
-    let flag = tmp3;
-    if (!tmp3) {
-      c22 = null;
+  if (null != c17) {
+    let flag = (function meetsGuildRequirements(c17) {
+      let guild_requirements = c17.guild_requirements;
+      if (undefined === guild_requirements) {
+        guild_requirements = [];
+      }
+      let guild_size = c17.guild_size;
+      if (undefined === guild_size) {
+        guild_size = [null, null];
+      }
+      let guild_permissions = c17.guild_permissions;
+      if (undefined === guild_permissions) {
+        guild_permissions = [];
+      }
+      if (0 === guild_requirements.length) {
+        return true;
+      } else {
+        for (const item10017 of guild_requirements) {
+          let tmp2 = set;
+          if (set.has(item10017)) {
+            continue;
+          } else {
+            let tmp3 = obj3;
+            obj3.return();
+            let flag = false;
+            return false;
+          }
+        }
+        const hasItem = guild_requirements.includes(constants3.GUILD_SIZE_ALL);
+        let flag3 = true;
+        guildsArray = guildsArray.getGuildsArray();
+        const iter = guildsArray[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp14 = nextResult;
+          if (hasItem) {
+            let tmp17 = memberCount;
+            let tmp18 = nextResult;
+            memberCount = memberCount.getMemberCount(tmp14.id);
+            let tmp20 = memberCount;
+            if (null == memberCount) {
+              flag3 = false;
+              continue;
+            } else {
+              if (null != guild_size[0]) {
+                let tmp21 = memberCount;
+                if (tmp20 < guild_size[0]) {
+                  flag3 = false;
+                  continue;
+                }
+              }
+              if (null != guild_size[1]) {
+                let tmp22 = memberCount;
+                if (tmp20 > guild_size[1]) {
+                  flag3 = false;
+                  continue;
+                }
+              }
+            }
+          } else {
+            let tmp15 = constants3;
+            let tmp16 = constants3;
+          }
+          let tmp23 = constants3;
+          let tmp24 = constants3;
+          if (!guild_requirements.includes(constants3.IS_COMMUNITY)) {
+            let tmp27 = tmp23;
+            if (!guild_requirements.includes(tmp24.IS_HUB)) {
+              let tmp30 = tmp23;
+              if (!guild_requirements.includes(tmp24.GUILD_PERMISSIONS)) {
+                let tmp40 = currentUser;
+                currentUser = currentUser.getCurrentUser();
+                let id;
+                if (currentUser != null) {
+                  id = currentUser.id;
+                }
+                let tmp43 = nextResult;
+                let tmp44 = id === tmp14.ownerId;
+                let tmp45 = getUncachedChannelPermissions;
+                let tmp46 = constants2;
+                let canResult = getUncachedChannelPermissions.can(constants2.ADMINISTRATOR, tmp14);
+                let tmp48 = constants3;
+                let tmp49 = constants3;
+                if (!guild_requirements.includes(constants3.IS_OWNER)) {
+                  let tmp51 = tmp48;
+                  if (!guild_requirements.includes(tmp49.IS_ADMIN)) {
+                    if (obj == null) {
+                      obj = {};
+                    }
+                    if (null == obj[c17.key]) {
+                      let tmp53 = obj;
+                      obj[c17.key] = c17;
+                    }
+                    let tmp54 = guildId;
+                    guildId = guildId.getGuildId();
+                    let tmp57 = null != guildId;
+                    if (tmp57) {
+                      let tmp58 = guildId;
+                      let tmp59 = nextResult;
+                      tmp57 = tmp56 === tmp14.id;
+                    }
+                    let tmp61 = tmp48;
+                    let tmp60 = tmp57;
+                    if (!guild_requirements.includes(tmp49.IS_VIEWING)) {
+                      if (!hasItem) {
+                        let tmp63 = iter;
+                        iter.return();
+                        return true;
+                      }
+                    } else {
+                      let tmp62 = tmp57;
+                    }
+                  } else {
+                    let tmp52 = canResult;
+                  }
+                } else {
+                  let tmp50 = tmp44;
+                }
+              } else if (0 === guild_permissions.length) {
+                continue;
+              } else {
+                let flag5 = false;
+                let tmp65 = guild_permissions;
+                let tmp31 = guild_permissions;
+                for (const item10086 of guild_permissions) {
+                  let tmp33 = callback;
+                  let tmp34 = table;
+                  let tmp32 = item10086;
+                  obj = callback(table[8]);
+                  let tmp35 = item10086;
+                  let tmp36 = getUncachedChannelPermissions;
+                  let tmp37 = nextResult;
+                  if (getUncachedChannelPermissions.can(obj.deserialize(tmp32), tmp14)) {
+                    flag5 = true;
+                    let tmp38 = obj4;
+                    obj4.return();
+                    break;
+                  }
+                  continue;
+                }
+                let tmp39 = flag5;
+                continue;
+              }
+              continue;
+            } else {
+              let tmp28 = nextResult;
+              let features2 = tmp14.features;
+              let tmp29 = constants;
+            }
+          } else {
+            let tmp25 = nextResult;
+            let features = tmp14.features;
+            let tmp26 = constants;
+          }
+          continue;
+        }
+        if (hasItem) {
+          if (flag3) {
+            return true;
+          }
+        }
+        return false;
+      }
+    })(c17);
+    if (!flag) {
+      c17 = null;
       flag = false;
     }
     if (flag) {
       return false;
     }
   }
-  closure_21 = null != closure_21 ? closure_21 : {};
-  const first = Object.values(closure_21)[0];
+  if (obj == null) {
+    obj = {};
+  }
+  const first = Object.values(obj)[0];
   if (null != first) {
-    if (meetsSurveyRequirements(first)) {
-      const obj = { type: "SURVEY_FETCHED", survey: first };
+    if ((function meetsGuildRequirements(c17) {
+      let guild_requirements = c17.guild_requirements;
+      if (undefined === guild_requirements) {
+        guild_requirements = [];
+      }
+      let guild_size = c17.guild_size;
+      if (undefined === guild_size) {
+        guild_size = [null, null];
+      }
+      let guild_permissions = c17.guild_permissions;
+      if (undefined === guild_permissions) {
+        guild_permissions = [];
+      }
+      if (0 === guild_requirements.length) {
+        return true;
+      } else {
+        for (const item10017 of guild_requirements) {
+          let tmp2 = set;
+          if (set.has(item10017)) {
+            continue;
+          } else {
+            let tmp3 = obj3;
+            obj3.return();
+            let flag = false;
+            return false;
+          }
+        }
+        const hasItem = guild_requirements.includes(constants3.GUILD_SIZE_ALL);
+        let flag3 = true;
+        guildsArray = guildsArray.getGuildsArray();
+        const iter = guildsArray[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp14 = nextResult;
+          if (hasItem) {
+            let tmp17 = memberCount;
+            let tmp18 = nextResult;
+            memberCount = memberCount.getMemberCount(tmp14.id);
+            let tmp20 = memberCount;
+            if (null == memberCount) {
+              flag3 = false;
+              continue;
+            } else {
+              if (null != guild_size[0]) {
+                let tmp21 = memberCount;
+                if (tmp20 < guild_size[0]) {
+                  flag3 = false;
+                  continue;
+                }
+              }
+              if (null != guild_size[1]) {
+                let tmp22 = memberCount;
+                if (tmp20 > guild_size[1]) {
+                  flag3 = false;
+                  continue;
+                }
+              }
+            }
+          } else {
+            let tmp15 = constants3;
+            let tmp16 = constants3;
+          }
+          let tmp23 = constants3;
+          let tmp24 = constants3;
+          if (!guild_requirements.includes(constants3.IS_COMMUNITY)) {
+            let tmp27 = tmp23;
+            if (!guild_requirements.includes(tmp24.IS_HUB)) {
+              let tmp30 = tmp23;
+              if (!guild_requirements.includes(tmp24.GUILD_PERMISSIONS)) {
+                let tmp40 = currentUser;
+                currentUser = currentUser.getCurrentUser();
+                let id;
+                if (currentUser != null) {
+                  id = currentUser.id;
+                }
+                let tmp43 = nextResult;
+                let tmp44 = id === tmp14.ownerId;
+                let tmp45 = getUncachedChannelPermissions;
+                let tmp46 = constants2;
+                let canResult = getUncachedChannelPermissions.can(constants2.ADMINISTRATOR, tmp14);
+                let tmp48 = constants3;
+                let tmp49 = constants3;
+                if (!guild_requirements.includes(constants3.IS_OWNER)) {
+                  let tmp51 = tmp48;
+                  if (!guild_requirements.includes(tmp49.IS_ADMIN)) {
+                    if (obj == null) {
+                      obj = {};
+                    }
+                    if (null == obj[c17.key]) {
+                      let tmp53 = obj;
+                      obj[c17.key] = c17;
+                    }
+                    let tmp54 = guildId;
+                    guildId = guildId.getGuildId();
+                    let tmp57 = null != guildId;
+                    if (tmp57) {
+                      let tmp58 = guildId;
+                      let tmp59 = nextResult;
+                      tmp57 = tmp56 === tmp14.id;
+                    }
+                    let tmp61 = tmp48;
+                    let tmp60 = tmp57;
+                    if (!guild_requirements.includes(tmp49.IS_VIEWING)) {
+                      if (!hasItem) {
+                        let tmp63 = iter;
+                        iter.return();
+                        return true;
+                      }
+                    } else {
+                      let tmp62 = tmp57;
+                    }
+                  } else {
+                    let tmp52 = canResult;
+                  }
+                } else {
+                  let tmp50 = tmp44;
+                }
+              } else if (0 === guild_permissions.length) {
+                continue;
+              } else {
+                let flag5 = false;
+                let tmp65 = guild_permissions;
+                let tmp31 = guild_permissions;
+                for (const item10086 of guild_permissions) {
+                  let tmp33 = callback;
+                  let tmp34 = table;
+                  let tmp32 = item10086;
+                  obj = callback(table[8]);
+                  let tmp35 = item10086;
+                  let tmp36 = getUncachedChannelPermissions;
+                  let tmp37 = nextResult;
+                  if (getUncachedChannelPermissions.can(obj.deserialize(tmp32), tmp14)) {
+                    flag5 = true;
+                    let tmp38 = obj4;
+                    obj4.return();
+                    break;
+                  }
+                  continue;
+                }
+                let tmp39 = flag5;
+                continue;
+              }
+              continue;
+            } else {
+              let tmp28 = nextResult;
+              let features2 = tmp14.features;
+              let tmp29 = constants;
+            }
+          } else {
+            let tmp25 = nextResult;
+            let features = tmp14.features;
+            let tmp26 = constants;
+          }
+          continue;
+        }
+        if (hasItem) {
+          if (flag3) {
+            return true;
+          }
+        }
+        return false;
+      }
+    })(first)) {
+      obj = { type: "SURVEY_FETCHED", survey: null };
+      obj[1] = first;
       setSurvey(obj);
     }
   }
-  if (null != c22) {
-    c22 = null;
+  if (null != c17) {
+    c17 = null;
   }
 }
-({ GuildFeatures: closure_14, Permissions: closure_15, FIRST_RUN_DATE_KEY: closure_16 } = ME);
+({ GuildFeatures: c9, Permissions: c10, FIRST_RUN_DATE_KEY: unpackModuleId } = ME);
 let obj = { hiddenSurveys: {}, surveyOverride: null, lastFetched: null, lastSeen: null, lastActionTriggered: null };
-let c19 = false;
-let c20 = false;
-let closure_21 = {};
-let c22 = null;
-let c23 = false;
+let c14 = false;
+let c15 = false;
+let closure_16 = {};
+let c17 = null;
+let c18 = false;
 const DAY = require("set").Millis.DAY;
-let result = 10 * require("set").Millis.HOUR;
+const result = 10 * require("set").Millis.HOUR;
 obj = { IS_OWNER: "is_owner", IS_ADMIN: "is_admin", IS_COMMUNITY: "is_community", GUILD_SIZE: "guild_size", IS_HUB: "is_hub", IS_VIEWING: "is_viewing", GUILD_PERMISSIONS: "guild_permissions", GUILD_SIZE_ALL: "guild_size_all" };
 let set = new Set(Object.values(obj));
-let tmp5 = ((PersistedStore) => {
-  class SurveyStore {
-    constructor() {
-      self = this;
-      tmp = outer1_4(this, SurveyStore);
-      obj = outer1_7(SurveyStore);
-      tmp2 = outer1_6;
-      if (outer1_28()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_7;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_7(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
-    }
+class SurveyStore extends PersistedStore {
+}
+const prototype = SurveyStore.prototype;
+prototype["initialize"] = function initialize(arg0) {
+  const self = this;
+  const tmp = arg0;
+  this.waitFor(handleInviteData, createGuildRecordFromRust, getUncachedChannelPermissions, handleConnectionOpen, mergeGuildAvatar);
+  const items = [handleConnectionOpen];
+  self.syncWith(items, handleSelectedGuildChange);
+};
+prototype["getState"] = function getState() {
+  return obj;
+};
+prototype["getCurrentSurvey"] = function getCurrentSurvey() {
+  let tmp = null == obj.lastFetched;
+  if (!tmp) {
+    const _Date = Date;
+    tmp = Date.now() - obj.lastFetched >= DAY;
   }
-  callback2(SurveyStore, PersistedStore);
-  let obj = {
-    key: "initialize",
-    value(arg0) {
-      let tmp = arg0;
-      const self = this;
-      this.waitFor(outer1_9, outer1_10, outer1_11, outer1_12, outer1_13);
-      if (null == arg0) {
-        tmp = outer1_17;
-      }
-      const outer1_18 = tmp;
-      const items = [outer1_12];
-      self.syncWith(items, outer1_34);
-    }
-  };
-  let items = [obj, , , , , ];
-  obj = {
-    key: "getState",
-    value() {
-      return outer1_18;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getCurrentSurvey",
-    value() {
-      let tmp = null;
-      if (!outer1_31()) {
-        tmp = outer1_22;
-      }
-      return tmp;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getSurveyOverride",
-    value() {
-      return outer1_18.surveyOverride;
-    }
-  };
-  items[4] = {
-    key: "getLastSeenTimestamp",
-    value() {
-      return outer1_18.lastSeen;
-    }
-  };
-  items[5] = {
-    key: "shouldAllowSurveyAction",
-    value() {
-      const lastActionTriggered = outer1_18.lastActionTriggered;
-      let num = 0;
-      const timestamp = Date.now();
-      if (null != lastActionTriggered) {
-        num = lastActionTriggered;
-      }
-      return timestamp - num >= outer1_25;
-    }
-  };
-  return callback(SurveyStore, items);
-})(require("initialize").PersistedStore);
-tmp5.displayName = "SurveyStore";
-tmp5.persistKey = "SurveyStore";
+  let tmp5 = null;
+  if (!tmp) {
+    tmp5 = c17;
+  }
+  return tmp5;
+};
+prototype["getSurveyOverride"] = function getSurveyOverride() {
+  return obj.surveyOverride;
+};
+prototype["getLastSeenTimestamp"] = function getLastSeenTimestamp() {
+  return obj.lastSeen;
+};
+prototype["shouldAllowSurveyAction"] = function shouldAllowSurveyAction() {
+  let num = obj.lastActionTriggered;
+  const timestamp = Date.now();
+  if (num == null) {
+    num = 0;
+  }
+  return timestamp - num >= closure_20;
+};
+SurveyStore.displayName = "SurveyStore";
+SurveyStore.persistKey = "SurveyStore";
 let items = [
   (arg0) => {
     const merged = Object.assign(arg0);
-    // DelByIdLong (0x48)
-    // DelByIdLong (0x48)
-    // DelByIdLong (0x48)
-    // DelByIdLong (0x48)
-    // DelByIdLong (0x48)
+    delete tmp[tmp2];
+    delete tmp[tmp2];
+    delete tmp[tmp2];
+    delete tmp[tmp2];
+    delete tmp[tmp2];
     return {};
   },
   (lastSeen) => {
     const obj = {};
     const merged = Object.assign(lastSeen);
     lastSeen = lastSeen.lastSeen;
-    let tmp2 = null;
-    if (null != lastSeen) {
-      tmp2 = lastSeen;
+    if (lastSeen == null) {
+      lastSeen = null;
     }
-    obj["lastSeen"] = tmp2;
+    obj.lastSeen = lastSeen;
     return obj;
   },
   (hiddenSurveys) => {
     const obj = {};
     const merged = Object.assign(hiddenSurveys);
     hiddenSurveys = hiddenSurveys.hiddenSurveys;
-    if (null == hiddenSurveys) {
+    if (hiddenSurveys == null) {
       hiddenSurveys = {};
     }
-    obj["hiddenSurveys"] = hiddenSurveys;
+    obj.hiddenSurveys = hiddenSurveys;
     return obj;
   }
 ];
-tmp5.migrations = items;
+SurveyStore.migrations = items;
 obj = {
   CONNECTION_OPEN: fetchSurveyIfNeeded,
   CONNECTION_RESUMED: fetchSurveyIfNeeded,
   SURVEY_FETCHED: setSurvey,
   SURVEY_HIDE: function handleSurveyHide(key) {
     obj.hiddenSurveys[key.key] = true;
-    let c22 = null;
-    closure_21 = null != closure_21 ? closure_21 : {};
+    let c17 = null;
+    if (obj == null) {
+      obj = {};
+    }
     delete tmp[tmp2];
   },
   SURVEY_OVERRIDE: function handleSurveyOverride(id) {
@@ -583,14 +697,14 @@ obj = {
       const hiddenSurveys = obj.hiddenSurveys;
       delete tmp[tmp2];
     }
-    obj = require(9251) /* overrideSurvey */;
+    obj = require(9275) /* overrideSurvey */;
     obj.surveyFetch(obj.surveyOverride, true);
   },
   PUSH_NOTIFICATION_CLICK: function handlePushNotificationClick() {
-    let c19 = true;
+    let c14 = true;
   },
   DISPLAYED_INVITE_SHOW: function handleInviteShow() {
-    let c20 = true;
+    let c15 = true;
   },
   LOGOUT: function handleLogout() {
     obj.hiddenSurveys = {};
@@ -599,9 +713,9 @@ obj = {
     obj.lastSeen = Date.now();
   }
 };
-tmp5 = new tmp5(require("dispatcher"), obj);
+const surveyStore = new SurveyStore(require("dispatcher"), obj);
 const result1 = set.fileFinishedImporting("stores/SurveyStore.tsx");
 
-export default tmp5;
+export default surveyStore;
 export const SURVEY_REFETCH_INTERVAL = DAY;
 export const SURVEY_ACTION_INTERVAL = result;

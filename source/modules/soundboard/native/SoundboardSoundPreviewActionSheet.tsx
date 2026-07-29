@@ -1,178 +1,167 @@
-// Module ID: 15867
-// Function ID: 122294
+// Module ID: 15902
+// Function ID: 15903
 // Name: SoundboardSoundPreviewActionSheet
-// Dependencies: [29, 31, 27, 1850, 4613, 653, 33, 4165, 689, 477, 566, 5497, 8024, 10752, 4620, 4583, 5533, 5184, 11104, 4161, 4578, 9395, 9397, 1212, 7661, 4026, 2]
+// Dependencies: [109, 19, 17, 1874, 4635, 676, 21, 4189, 712, 500, 589, 5515, 8048, 10776, 4642, 4605, 5551, 5206, 11128, 4185, 4600, 9419, 9421, 1236, 7684, 4050, 2]
 // Exports: default
 
-// Module 15867 (SoundboardSoundPreviewActionSheet)
+// Module 15902 (SoundboardSoundPreviewActionSheet)
 import _objectWithoutProperties from "_objectWithoutProperties";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+import Text from "Text";
+import get_ActivityIndicator from "Emoji";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
 import { AnalyticsObjects } from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "StarIcon";
+import createCacheKey from "createCacheKey";
 import set from "set";
 import set from "get ActivityIndicator";
 
-let closure_11;
+let StyleSheet;
 let closure_12;
 let closure_6;
-let closure_7;
+let error;
+let unpackModuleId;
 const require = arg1;
 let closure_3 = ["style"];
-({ View: closure_6, Image: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, width: 64, height: 64, alignSelf: "center" };
-_createForOfIteratorHelperLoose.emoji = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.emojiFastImage = { width: 128, height: 128 };
-let obj1 = {};
+({ View: closure_6, Image: error, StyleSheet } = get_ActivityIndicator);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
+createCacheKey = { emoji: null, emojiFastImage: null, emojiText: null, text: null, buttonContainer: null, star: null, border: null, borderPlaying: null };
+createCacheKey = { marginTop: require("Themes").space.PX_16, width: 64, height: 64, alignSelf: "center" };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { width: 128, height: 128 };
 let num;
 if (set.isIOS()) {
   num = 60;
 }
-obj1.fontSize = num;
-obj1.lineHeight = 74;
-_createForOfIteratorHelperLoose.emojiText = obj1;
-_createForOfIteratorHelperLoose.text = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, alignSelf: "center" };
-let obj2 = { marginTop: require("_createForOfIteratorHelperLoose").space.PX_16, alignSelf: "center" };
-_createForOfIteratorHelperLoose.buttonContainer = { gap: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-set = { width: 16, height: 16, tintColor: require("_createForOfIteratorHelperLoose").colors.TEXT_DEFAULT };
-_createForOfIteratorHelperLoose.star = set;
-let obj5 = { borderColor: "transparent", borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, pointerEvents: "none" };
-let merged = Object.assign(get_ActivityIndicator.StyleSheet.absoluteFillObject);
-_createForOfIteratorHelperLoose.border = obj5;
-let obj3 = { gap: require("_createForOfIteratorHelperLoose").space.PX_8, marginTop: require("_createForOfIteratorHelperLoose").space.PX_24 };
-_createForOfIteratorHelperLoose.borderPlaying = { borderColor: require("_createForOfIteratorHelperLoose").colors.TEXT_FEEDBACK_POSITIVE };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey[2] = { fontSize: num, lineHeight: 74 };
+createCacheKey[3] = { marginTop: require("Themes").space.PX_16, alignSelf: "center" };
+let obj1 = { marginTop: require("Themes").space.PX_16, alignSelf: "center" };
+createCacheKey[4] = { gap: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_24 };
+set = { width: 16, height: 16, tintColor: require("Themes").colors.TEXT_DEFAULT };
+createCacheKey[5] = set;
+let obj2 = { gap: require("Themes").space.PX_8, marginTop: require("Themes").space.PX_24 };
+let merged = Object.assign(StyleSheet.absoluteFillObject);
+createCacheKey[6] = { borderColor: "transparent", borderWidth: 1, borderRadius: require("Themes").radii.round, pointerEvents: "none" };
+let obj4 = { borderColor: "transparent", borderWidth: 1, borderRadius: require("Themes").radii.round, pointerEvents: "none" };
+createCacheKey[7] = { borderColor: require("Themes").colors.TEXT_FEEDBACK_POSITIVE };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = set.fileFinishedImporting("modules/soundboard/native/SoundboardSoundPreviewActionSheet.tsx");
 
 export default function SoundboardSoundPreviewActionSheet(channelId) {
   channelId = channelId.channelId;
   const sound = channelId.sound;
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = channelId(566);
-  const items = [_isNativeReflectConstruct];
-  const dependencyMap = obj.useStateFromStores(items, () => {
-    const currentUser = outer1_8.getCurrentUser();
+  let dependencyMap;
+  let analyticsLocations;
+  let borderPlaying;
+  let isFavorite;
+  const tmp = createCacheKey();
+  let obj = channelId(589);
+  const items = [mergeGuildAvatar];
+  dependencyMap = obj.useStateFromStores(items, () => {
+    currentUser = currentUser.getCurrentUser();
     let id;
-    if (null != currentUser) {
+    if (currentUser != null) {
       id = currentUser.id;
     }
     return id;
   });
-  const analyticsLocations = sound(5497)().analyticsLocations;
-  let obj1 = channelId(566);
-  const items1 = [closure_9];
+  analyticsLocations = sound(5515)().analyticsLocations;
+  let obj1 = channelId(589);
+  const items1 = [handleSoundCreateOrUpdate];
   const stateFromStoresObject = obj1.useStateFromStoresObject(items1, () => {
-    const obj = {};
     let isUserPlayingSoundsResult = null != closure_2;
     if (isUserPlayingSoundsResult) {
-      isUserPlayingSoundsResult = outer1_9.isUserPlayingSounds(closure_2);
+      isUserPlayingSoundsResult = outer1_9.isUserPlayingSounds(tmp);
     }
-    obj.isPlayingSound = isUserPlayingSoundsResult;
-    obj.isFavorite = outer1_9.isFavoriteSound(sound.soundId);
-    return obj;
+    return { isPlayingSound: isUserPlayingSoundsResult, isFavorite: outer1_9.isFavoriteSound(sound.soundId) };
   });
-  let borderPlaying = stateFromStoresObject.isPlayingSound;
-  const isFavorite = stateFromStoresObject.isFavorite;
+  borderPlaying = stateFromStoresObject.isPlayingSound;
+  isFavorite = stateFromStoresObject.isFavorite;
   const items2 = [isFavorite, sound, analyticsLocations];
   const items3 = [channelId, sound, borderPlaying];
   const callback = isFavorite.useCallback(() => {
     if (isFavorite) {
-      let tmpResult = tmp(tmp2[12]);
+      let tmpResult = tmp(8048);
       tmpResult.removeFavoriteSound(sound.soundId);
     } else {
-      tmpResult = tmp(tmp2[13]);
-      let obj = { sound };
+      tmpResult = tmp(10776);
+      let obj = { sound: null, location: null };
+      obj[0] = sound;
       obj = {};
       const merged = Object.assign(analyticsLocations);
-      obj["object"] = outer1_10.SOUNDBOARD_SOUND;
-      obj.location = obj;
+      obj.object = outer1_10.SOUNDBOARD_SOUND;
+      obj[1] = obj;
       tmpResult.trackSoundFavorited(obj);
-      tmp(tmp2[12]).addFavoriteSound(sound.soundId);
-      const tmpResult1 = tmp(tmp2[12]);
+      channelId(8048).addFavoriteSound(sound.soundId);
+      const obj4 = channelId(8048);
     }
   }, items2);
   const callback1 = isFavorite.useCallback(() => {
     if (!borderPlaying) {
-      channelId(8024).playSoundLocally(channelId, sound, channelId(4620).LocalSoundTrigger.SOUNDBOARD);
-      const obj = channelId(8024);
+      channelId(8048).playSoundLocally(channelId, sound, channelId(4642).LocalSoundTrigger.SOUNDBOARD);
+      const obj = channelId(8048);
     }
   }, items3);
-  let obj2 = channelId(4583);
+  let obj2 = channelId(4605);
   const buttonPressAnimationProps = obj2.useButtonPressAnimationProps();
-  obj = { startExpanded: true };
-  obj = {};
-  obj1 = { fastImageStyle: items4, textEmojiStyle: items5 };
+  obj = { fastImageStyle: items4, textEmojiStyle: items5, src: null, name: null };
   items4 = [, ];
   ({ emoji: arr5[0], emojiFastImage: arr5[1] } = tmp);
   items5 = [, ];
   ({ emoji: arr6[0], emojiText: arr6[1] } = tmp);
-  const tmp6 = borderPlaying(buttonPressAnimationProps, analyticsLocations);
-  const tmp8 = closure_12;
-  const tmp9 = closure_6;
-  obj1.src = sound(11104)(sound, 64);
-  const emojiName = sound.emojiName;
-  let str = "";
-  if (null != emojiName) {
-    str = emojiName;
+  const tmp9 = borderPlaying(buttonPressAnimationProps, analyticsLocations);
+  obj[2] = sound(11128)(sound, 64);
+  let str = sound.emojiName;
+  if (str == null) {
+    str = "";
   }
-  obj1.name = str;
-  const items6 = [callback(sound(5184), obj1), , ];
-  obj2 = { style: tmp.text, variant: "heading-lg/extrabold", children: sound.name };
-  items6[1] = callback(channelId(4161).Text, obj2);
-  const obj3 = { style: tmp.buttonContainer };
-  const obj4 = { variant: "primary" };
+  obj[3] = str;
+  const items6 = [closure_11(sound(5206), obj), , ];
+  obj = { style: tmp.text, variant: "heading-lg/extrabold", children: sound.name };
+  items6[1] = closure_11(channelId(4185).Text, obj);
+  obj1 = { style: tmp.buttonContainer, children: null };
   if (isFavorite) {
-    let StarOutlineIcon = tmp14(9395).StarIcon;
+    let StarOutlineIcon = tmp2(9419).StarIcon;
   } else {
-    StarOutlineIcon = tmp14(9397).StarOutlineIcon;
+    StarOutlineIcon = tmp2(9421).StarOutlineIcon;
   }
-  obj4.icon = callback(StarOutlineIcon, { style: tmp.star });
-  const intl = channelId(1212).intl;
+  obj2 = { variant: "primary", icon: tmp10(StarOutlineIcon, obj3), text: null, onPress: null };
+  const intl = tmp2(1236).intl;
   const string = intl.string;
-  const t = channelId(1212).t;
+  const t = tmp2(1236).t;
   if (isFavorite) {
     let stringResult = string(t.aBUcp3);
   } else {
     stringResult = string(t.yZFibY);
   }
-  obj4.text = stringResult;
-  obj4.onPress = callback;
-  const items7 = [callback(channelId(4578).Button, obj4), ];
-  const obj6 = {};
-  const obj7 = {};
-  let merged = Object.assign(tmp6);
-  obj7["variant"] = "secondary";
-  const obj5 = { style: tmp.star };
-  const tmp10 = sound(5184);
-  const tmp12 = closure_12;
-  const tmp13 = closure_6;
-  const tmp17 = closure_12;
-  const tmp18 = closure_6;
-  const tmp19 = callback;
-  obj7["icon"] = callback(closure_7, { style: tmp.star, source: sound(7661) });
-  const intl2 = channelId(1212).intl;
-  obj7["text"] = intl2.string(channelId(1212).t.Kd4uxG);
-  obj7["onPress"] = callback1;
-  const items8 = [callback(channelId(4578).Button, obj7), ];
-  const obj9 = {};
+  obj2[2] = stringResult;
+  obj2[3] = callback;
+  const items7 = [closure_11(channelId(4600).Button, obj2), ];
+  let obj4 = {};
+  let merged = Object.assign(tmp9);
+  obj4.variant = "secondary";
+  obj3 = { style: tmp.star };
+  const tmp13 = sound(5206);
+  obj4.icon = closure_11(closure_7, { style: tmp.star, source: sound(7684) });
+  const intl2 = tmp2(1236).intl;
+  obj4.text = intl2.string(channelId(1236).t.Kd4uxG);
+  obj4.onPress = callback1;
+  const items8 = [closure_11(channelId(4600).Button, obj4), ];
   const items9 = [tmp.border, , ];
   if (borderPlaying) {
     borderPlaying = tmp.borderPlaying;
   }
+  const obj6 = { startExpanded: true, children: null };
+  const obj7 = { children: null };
+  const obj8 = { children: null };
   items9[1] = borderPlaying;
   items9[2] = buttonPressAnimationProps.style;
-  obj9.style = items9;
-  items8[1] = tmp19(sound(4026).View, obj9);
-  obj6.children = items8;
-  items7[1] = tmp17(tmp18, obj6);
-  obj3.children = items7;
-  items6[2] = tmp12(tmp13, obj3);
-  obj.children = items6;
-  obj.children = tmp8(tmp9, obj);
-  return callback(channelId(5533).ActionSheet, obj);
+  items8[1] = closure_11(sound(4050).View, { style: items9 });
+  obj8[0] = items8;
+  items7[1] = closure_12(closure_6, obj8);
+  obj1[1] = items7;
+  items6[2] = closure_12(closure_6, obj1);
+  obj7[0] = items6;
+  obj6[1] = closure_12(closure_6, obj7);
+  return closure_11(channelId(5551).ActionSheet, obj6);
 };

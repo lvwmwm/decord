@@ -1,23 +1,23 @@
-// Module ID: 8183
-// Function ID: 65097
+// Module ID: 8207
+// Function ID: 8208
 // Name: openInviteModal
-// Dependencies: [57, 5, 4202, 5761, 5646, 1194, 1918, 1838, 4150, 4384, 1907, 3982, 5005, 653, 655, 5647, 686, 4151, 6672, 8184, 1935, 5083, 5661, 8193, 4149, 4154, 5956, 3856, 675, 10584, 11112, 12256, 5678, 4175, 10619, 12260, 9732, 10469, 1443, 10936, 5016, 12261, 5779, 4359, 4356, 12262, 12264, 2]
+// Dependencies: [32, 5, 4226, 5779, 5664, 1218, 1942, 1862, 4174, 4407, 1931, 4006, 5027, 676, 678, 5665, 709, 4175, 6693, 8208, 1959, 5105, 5679, 8217, 4173, 4178, 5975, 3880, 698, 10608, 11136, 12280, 5696, 4199, 10642, 12284, 9754, 10493, 1467, 10960, 5038, 12285, 5797, 4384, 4381, 7906, 12286, 2]
 // Exports: default
 
-// Module 8183 (openInviteModal)
-import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import "_isNativeReflectConstruct";
-import "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import "_createForOfIteratorHelperLoose";
-import closure_8 from "_isNativeReflectConstruct";
-import "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
+// Module 8207 (openInviteModal)
+import _runPrimaryAppCommandOrJoinEmbeddedActivity from "_runPrimaryAppCommandOrJoinEmbeddedActivity";
+import fetchFingerprint from "fetchFingerprint";
+import addApplication from "addApplication";
+import "scheduledEventSort";
+import "handleUserSettingsStoreUpdate";
+import closure_6 from "fetchFingerprint";
+import trackCommunicationDisabled from "trackCommunicationDisabled";
+import "createGuildRecordFromRust";
+import updateInvite from "updateInvite";
+import "reinjectEphemerals";
+import handleConnectionOpen from "handleConnectionOpen";
+import closure_10 from "handleConnectionOpen";
+import insertUnsortedGuilds from "insertUnsortedGuilds";
 import ME from "ME";
 import items from "items";
 import { isGameShopPath } from "STOREFRONT_MARKETING_GUILD_ID";
@@ -27,89 +27,274 @@ let AppContext;
 let JoinGuildSources;
 let Routes;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_15;
+let map1;
 const require = arg1;
 function openInviteModal() {
-  return _openInviteModal(...arguments);
-}
-async function _openInviteModal(arg0, arg1, arg2, arg3) {
-  let obj = outer2_1(outer2_2[16]);
-  obj = { type: "DISPLAYED_INVITE_SHOW", code: arg1, username: undefined, deeplinkAttemptId: undefined, invite_instance_id: arg2 };
-  yield obj.dispatch(obj);
-}
-async function _handleInviteCodedLink(arg0, arg1, arg2) {
-  let _Set;
-  const code = arg0.code;
-  let obj = outer2_0(outer2_2[17]);
-  const inviteInstanceId = obj.getInviteInstanceId(code, arg1);
-  let invite = outer2_8.getInvite(code);
-  if (null == invite) {
-    obj = { inviteInstanceId };
-    invite = yield outer2_1(outer2_2[18]).resolveInvite(code, "Markdown Link", obj).invite;
-    let tmp6;
-    if (null != invite) {
-      tmp6 = invite;
-    }
-    invite = tmp6;
-    const obj2 = outer2_1(outer2_2[18]);
+  const self = this;
+  const apply = _openInviteModal.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  if (null != invite) {
-    if (invite.state !== outer2_13.EXPIRED) {
-      if (invite.state !== outer2_13.BANNED) {
-        if (invite.state !== outer2_13.ERROR) {
-          const flattenedGuildIds = outer2_11.getFlattenedGuildIds();
-          let id;
-          if (null != invite) {
-            const guild = invite.guild;
-            if (null != guild) {
-              id = guild.id;
+  return applyArgumentsResult;
+}
+function _openInviteModal() {
+  const self = this;
+  const tmp = callback((arg0, arg1, arg2) => {
+    let closure_0 = arg1;
+    let closure_1 = arg2;
+    let c3 = 0;
+    let c2 = 0;
+    return (function*(arg0, arg1, arg2) {
+      if (table === 2) {
+        table = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          table = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              table = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              table = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let obj1 = callback(table[16]);
+              obj1 = { type: "DISPLAYED_INVITE_SHOW", code: null, username: "Array", deeplinkAttemptId: "accessibilityRole", invite_instance_id: "y" };
+              obj1[1] = closure_0;
+              obj1[4] = callback;
+              c3 = 1;
+              table = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = obj1.dispatch(obj1);
+              return obj2;
             }
+          } else if (arg0 === 1) {
+            table = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            table = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            table = 3;
+            return { value: "HermesInternal", done: null };
           }
-          const tmp12 = null != id && flattenedGuildIds.includes(id);
-          let flag = false;
-          if (tmp12) {
-            flag = false;
-            if (null != invite.roles) {
-              flag = false;
-              if (invite.roles.length > 0) {
-                const member = outer2_7.getMember(id, outer2_6.getId());
-                _Set = Set;
-                let roles;
-                if (null != member) {
-                  roles = member.roles;
-                }
-                if (null == roles) {
-                  roles = [];
-                }
-                const prototype = _Set.prototype;
-                _Set = new _Set(roles);
-                roles = invite.roles;
-                flag = roles.some((id) => !_Set.has(id.id));
-              }
-            }
-          }
-          if (tmp12) {
-            if (!flag) {
-              obj = { forceTransition: true };
-              outer2_1(outer2_2[18]).transitionToInvite(invite, obj);
-              const obj5 = outer2_1(outer2_2[18]);
-            }
-          }
-          yield outer2_18(invite, code, inviteInstanceId);
+        } catch (tmp9) {
+          table = tmp;
+          throw tmp9;
         }
       }
-    }
-    return yield outer2_18(invite, code, inviteInstanceId);
+    })();
+  });
+  const _openInviteModal = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
+  return applyArgumentsResult;
 }
-({ AbortCodes, AnalyticEvents: closure_12, AppContext, InviteStates: closure_13, JoinGuildSources, Routes } = ME);
+function _handleInviteCodedLink() {
+  const self = this;
+  const tmp = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c6 = 0;
+    let c7 = 0;
+    return (function*(arg0, invite) {
+      if (member === 2) {
+        member = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp5 === 3) {
+        if (arg0 === 1) {
+          throw invite;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = invite;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          member = 2;
+          if (0 === id) {
+            if (arg0 === 1) {
+              member = 3;
+              throw invite;
+            } else if (arg0 === 2) {
+              member = 3;
+              obj = { value: null, done: true };
+              obj[0] = invite;
+              return obj;
+            } else {
+              let hasItem = tmp2;
+              id = tmp3;
+              let code;
+              let inviteInstanceId;
+              let invite2;
+              let flattenedGuildIds;
+              id = undefined;
+              hasItem = undefined;
+              id = undefined;
+              member = undefined;
+              let roles;
+              let set;
+              code = code.code;
+              inviteInstanceId = callback(outer1_2[17]).getInviteInstanceId(code, inviteInstanceId);
+              invite2 = outer1_8.getInvite(code);
+              let tmp12 = null != invite2;
+              if (tmp12) {
+                tmp12 = invite2.state !== outer1_13.ERROR;
+              }
+              if (tmp12) {
+                if (null != invite2) {
+                  if (outer1_2.state !== constants.EXPIRED) {
+                    if (outer1_2.state !== constants.BANNED) {
+                      if (outer1_2.state !== constants.ERROR) {
+                        flattenedGuildIds = outer1_11.getFlattenedGuildIds();
+                        id = undefined;
+                        if (invite2 != null) {
+                          const guild = invite2.guild;
+                          if (guild != null) {
+                            id = guild.id;
+                          }
+                        }
+                        hasItem = null != id;
+                        if (hasItem) {
+                          hasItem = flattenedGuildIds.includes(id);
+                        }
+                        id = false;
+                        if (hasItem) {
+                          if (null != invite2.roles) {
+                            if (invite2.roles.length > 0) {
+                              member = id.getId();
+                              roles = member.getMember(id, member);
+                              roles = undefined;
+                              if (roles != null) {
+                                roles = roles.roles;
+                              }
+                              flattenedGuildIds = roles;
+                              if (roles == null) {
+                                flattenedGuildIds = [];
+                              }
+                              set = new Set(flattenedGuildIds);
+                              roles = invite2.roles;
+                              id = roles.some((id) => !set.has(id.id));
+                            }
+                          }
+                        }
+                        if (hasItem) {
+                          if (!id) {
+                            inviteInstanceId(invite2[18]).transitionToInvite(invite2, { forceTransition: true });
+                            const obj8 = inviteInstanceId(invite2[18]);
+                          }
+                        }
+                        id = 3;
+                        member = 1;
+                        const obj1 = { value: null, done: false };
+                        obj1[0] = callback3(invite2, code, inviteInstanceId);
+                        return obj1;
+                      }
+                    }
+                  }
+                  id = 2;
+                  member = 1;
+                  const obj2 = { value: null, done: false };
+                  obj2[0] = outer1_17(invite2, code, inviteInstanceId);
+                  return obj2;
+                }
+              } else {
+                let obj3 = callback2(outer1_2[18]);
+                obj3 = { inviteInstanceId: null };
+                obj3[0] = inviteInstanceId;
+                id = 1;
+                member = 1;
+                const obj4 = { value: null, done: false };
+                obj4[0] = obj3.resolveInvite(code, "Markdown Link", obj3);
+                return obj4;
+              }
+              const obj12 = callback(outer1_2[17]);
+            }
+          } else if (1 === tmp6) {
+            if (arg0 === 1) {
+              member = 3;
+              throw invite;
+            } else if (arg0 === 2) {
+              member = 3;
+              const obj5 = { value: null, done: true };
+              obj5[0] = invite;
+              return obj5;
+            } else {
+              invite = invite.invite;
+              invite2 = invite;
+              if (invite == null) {
+                invite2 = undefined;
+              }
+            }
+          } else if (2 === tmp6) {
+            if (arg0 === 1) {
+              member = 3;
+              throw invite;
+            } else if (arg0 === 2) {
+              member = 3;
+              const obj6 = { value: null, done: true };
+              obj6[0] = invite;
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            member = 3;
+            throw invite;
+          } else if (arg0 === 2) {
+            member = 3;
+            obj = { value: null, done: true };
+            obj[0] = invite;
+            return obj;
+          }
+          member = 3;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp66) {
+          member = tmp;
+          throw tmp66;
+        }
+      }
+    })();
+  });
+  const _handleInviteCodedLink = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+({ AbortCodes, AnalyticEvents: closure_12, AppContext, InviteStates: map1, JoinGuildSources, Routes } = ME);
 ({ CollectibleShopTab: closure_14, CollectiblesMobileShopScreen: closure_15 } = items);
-let closure_17 = { skipExtensionCheck: undefined, analyticsLocations: [] };
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("lib/getOnClick.tsx");
+let obj = { skipExtensionCheck: "Array", analyticsLocations: 0 };
+obj[1] = [];
+let result = require("addApplication").fileFinishedImporting("lib/getOnClick.tsx");
 
-export default function getOnClick(outer1_0) {
+export default function getOnClick(url) {
   let channelId;
   let dependencyMap;
   let hash;
@@ -118,25 +303,32 @@ export default function getOnClick(outer1_0) {
   let importDefault;
   let pathname;
   let search;
+  const _require = url;
   let tmp = arg1;
-  const _require = outer1_0;
   if (arg1 === undefined) {
-    tmp = closure_17;
+    tmp = obj;
   }
   ({ analyticsLocations: importDefault, messageId: dependencyMap, channelId } = tmp);
   let c3;
   pathname = undefined;
-  let obj;
-  obj = _require(4149);
-  const findCodedLinkResult = obj.findCodedLink(outer1_0);
+  obj = undefined;
+  obj = _require(4173);
+  const findCodedLinkResult = obj.findCodedLink(url);
   c3 = findCodedLinkResult;
   if (null != findCodedLinkResult) {
     return (preventDefault) => {
-      if (null != preventDefault) {
+      if (preventDefault != null) {
         preventDefault.preventDefault();
       }
       (function handleInviteCodedLink(c3, closure_2) {
-        return outer2_20(...arguments);
+        const self = this;
+        const apply = closure_19.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
       })(c3, closure_2);
       return true;
     };
@@ -145,157 +337,303 @@ export default function getOnClick(outer1_0) {
     return (preventDefault) => {
       let applicationId;
       let skuId;
-      if (null != preventDefault) {
+      if (preventDefault != null) {
         preventDefault.preventDefault();
       }
       const code = _undefined.code;
-      if (_undefined.type !== outer1_0(outer1_2[25]).CodedLinkType.APP_DIRECTORY_PROFILE) {
-        if (_undefined.type !== outer1_0(outer1_2[25]).CodedLinkType.APP_DIRECTORY_STOREFRONT) {
-          let obj = outer1_0(outer1_2[26]);
-          let result = obj.parseStorefrontSkuCodedLink(code);
-          if (null == result) {
-            obj = { applicationId: undefined, skuId: undefined };
-            result = obj;
+      if (_undefined.type !== url(outer1_2[25]).CodedLinkType.APP_DIRECTORY_PROFILE) {
+        if (_undefined.type !== tmp3(tmp4[25]).CodedLinkType.APP_DIRECTORY_STOREFRONT) {
+          let result = tmp3(tmp4[26]).parseStorefrontSkuCodedLink(code);
+          if (result == null) {
+            result = { applicationId: "dispatch", skuId: "isArray" };
           }
+          const tmp3Result = tmp3(tmp4[26]);
         }
         ({ applicationId, skuId } = result);
         const guildId = outer1_10.getGuildId();
-        if (null != guildId) {
-          const tmp9 = guildId;
-        }
         if (null != applicationId) {
-          obj = { application_id: applicationId, device_platform: "mobile_native", guild_id: tmp9, channel_id: outer1_9.getChannelId() };
-          outer1_1(outer1_2[28]).track(outer1_12.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, obj);
-          const obj4 = outer1_1(outer1_2[28]);
+          const obj = { application_id: null, device_platform: "mobile_native", guild_id: null, channel_id: null };
+          obj[0] = applicationId;
+          obj[2] = guildId;
+          obj[3] = outer1_9.getChannelId();
+          outer1_1(tmp4[28]).track(outer1_12.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, obj);
+          const obj3 = outer1_1(tmp4[28]);
         }
-        outer1_1(outer1_2[27])(outer1_0);
+        outer1_1(tmp4[27])(url);
         return true;
       }
-      result = { applicationId: code, skuId: undefined };
+      result = { applicationId: code, skuId: "r" };
     };
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === _require(4154).CodedLinkType.ACTIVITY_BOOKMARK) {
+    if (findCodedLinkResult.type === tmp2(4178).CodedLinkType.ACTIVITY_BOOKMARK) {
       return (preventDefault) => {
-        if (null != preventDefault) {
+        let isCurrentlyInInstance;
+        let obj;
+        if (preventDefault != null) {
           preventDefault.preventDefault();
         }
         const code = _undefined.code;
+        let url = code;
         const application = obj.getApplication(code);
         const uRL = new URL(_undefined.url);
         let searchParams = uRL.searchParams;
         let value = searchParams.get("referrer_id");
-        let tmp5;
-        if (null != value) {
-          tmp5 = value;
-        }
-        let closure_2 = tmp5;
+        let closure_2 = value;
         _undefined = outer1_1(outer1_2[29])();
-        obj = outer1_0(outer1_2[30]);
+        obj = url(outer1_2[30]);
         const playInContext = obj.getPlayInContext(code);
         const currentChannelId = playInContext.currentChannelId;
-        const instanceId = playInContext.instanceId;
+        ({ instanceId: obj, isCurrentlyInInstance } = playInContext);
         if (playInContext.canLaunchInChannel) {
-          let flag2 = !playInContext.isCurrentlyInInstance && null != currentChannelId;
+          let flag2 = !isCurrentlyInInstance;
+          if (!isCurrentlyInInstance) {
+            flag2 = null != currentChannelId;
+          }
           if (flag2) {
             let searchParams2 = uRL.searchParams;
             const searchParams3 = uRL.searchParams;
             value = searchParams2.get("link_id");
-            const customActivityLinkParams = outer1_0(outer1_2[31]).getCustomActivityLinkParams(code, value, searchParams3.get("custom_id"));
-            const obj4 = outer1_0(outer1_2[31]);
-            customActivityLinkParams.then((() => {
-              let closure_0 = pathname(async (arg0) => {
-                const iter = (function*(customId) {
-                  yield undefined;
-                  let obj = callback(outer4_2[32]);
-                  obj = { channelId: outer2_4, applicationId: callback, isStart: null == outer2_5, embeddedActivitiesManager: outer2_3, customId: customId.customId, referrerId: outer2_2, analyticsLocations: uRL };
-                  yield obj.runPrimaryAppCommandOrJoinEmbeddedActivity(obj);
-                })();
-                iter.next();
-                return iter;
-              });
-              return function() {
-                return callback(...arguments);
-              };
-            })()).catch(() => {
+            const customActivityLinkParams = tmp7(tmp6[31]).getCustomActivityLinkParams(code, value, searchParams3.get("custom_id"));
+            url = undefined;
+            url = pathname((arg0) => {
+              let closure_0 = arg0;
+              let c3 = 0;
+              let c4 = 0;
+              const iter = (function*(arg0) {
+                if (c4 === 2) {
+                  c4 = 3;
+                  HermesBuiltin.throwTypeError();
+                } else if (tmp4 === 3) {
+                  if (arg0 === 1) {
+                    throw arg1;
+                  } else if (arg0 === 2) {
+                    let obj = { value: null, done: true };
+                    obj[0] = arg1;
+                    return obj;
+                  } else {
+                    return { value: "HermesInternal", done: null };
+                  }
+                } else {
+                  try {
+                    c4 = 2;
+                    if (0 === c3) {
+                      if (arg0 === 1) {
+                        c4 = 3;
+                        throw arg1;
+                      } else if (arg0 === 2) {
+                        c4 = 3;
+                        obj = { value: null, done: true };
+                        obj[0] = arg1;
+                        return obj;
+                      } else {
+                        let closure_2 = tmp5;
+                        let closure_1 = tmp2;
+                        let customId;
+                        customId = customId.customId;
+                        c3 = 1;
+                        c4 = 1;
+                        return { value: "ct", done: null };
+                      }
+                    } else if (1 === tmp5) {
+                      if (arg0 === 1) {
+                        c4 = 3;
+                        throw arg1;
+                      } else if (arg0 === 2) {
+                        c4 = 3;
+                        const obj1 = { value: null, done: true };
+                        obj1[0] = arg1;
+                        return obj1;
+                      } else {
+                        const obj2 = { channelId: null, applicationId: null, isStart: null, embeddedActivitiesManager: null, customId: null, referrerId: null, analyticsLocations: null };
+                        obj2[0] = c4;
+                        obj2[1] = callback;
+                        obj2[2] = null == outer1_5;
+                        obj2[3] = c3;
+                        obj2[4] = customId;
+                        obj2[5] = outer1_2;
+                        obj2[6] = uRL;
+                        c3 = 2;
+                        c4 = 1;
+                        const obj3 = { value: null, done: false };
+                        obj3[0] = callback(outer3_2[32]).runPrimaryAppCommandOrJoinEmbeddedActivity(obj2);
+                        return obj3;
+                      }
+                    } else if (arg0 === 1) {
+                      c4 = 3;
+                      throw arg1;
+                    } else if (arg0 === 2) {
+                      c4 = 3;
+                      obj = { value: null, done: true };
+                      obj[0] = arg1;
+                      return obj;
+                    } else {
+                      c4 = 3;
+                      return { value: "HermesInternal", done: null };
+                    }
+                  } catch (tmp7) {
+                    c4 = tmp;
+                    throw tmp7;
+                  }
+                }
+              })();
+              iter.next();
+              return iter;
+            });
+            const tmp7Result = tmp7(tmp6[31]);
+            customActivityLinkParams.then(function() {
+              const self = this;
+              const apply = closure_0.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
+              }
+              return applyArgumentsResult;
+            }).catch(() => {
 
             });
             flag2 = true;
-            const nextPromise = customActivityLinkParams.then((() => {
-              let closure_0 = pathname(async (arg0) => {
-                const iter = (function*(customId) {
-                  yield undefined;
-                  let obj = callback(outer4_2[32]);
-                  obj = { channelId: outer2_4, applicationId: callback, isStart: null == outer2_5, embeddedActivitiesManager: outer2_3, customId: customId.customId, referrerId: outer2_2, analyticsLocations: uRL };
-                  yield obj.runPrimaryAppCommandOrJoinEmbeddedActivity(obj);
-                })();
-                iter.next();
-                return iter;
-              });
-              return function() {
-                return callback(...arguments);
-              };
-            })());
+            const nextPromise = customActivityLinkParams.then(function() {
+              const self = this;
+              const apply = closure_0.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
+              }
+              return applyArgumentsResult;
+            });
           }
           return flag2;
         } else {
           let id;
-          if (null != application) {
+          if (application != null) {
             const bot = application.bot;
-            if (null != bot) {
+            if (bot != null) {
               id = bot.id;
             }
           }
           let flag = null != id;
           if (flag) {
-            obj = { recipientIds: id };
-            const obj2 = outer1_1(outer1_2[33]);
-            const openPrivateChannelResult = outer1_1(outer1_2[33]).openPrivateChannel(obj);
-            outer1_1(outer1_2[33]).openPrivateChannel(obj).then((() => {
-              let closure_0 = pathname(async (arg0) => {
-                let obj = callback(outer4_2[31]);
-                const searchParams = outer2_1.searchParams;
-                const searchParams2 = outer2_1.searchParams;
-                const value = searchParams.get("link_id");
-                obj = { targetApplicationId: callback, channelId: arg0, analyticsLocations: uRL, customId: yield obj.getCustomActivityLinkParams(closure_0, value, searchParams2.get("custom_id")).customId, referrerId: outer2_2 };
-                outer4_1(outer4_2[34])(obj);
-              });
-              return function() {
-                return callback(...arguments);
-              };
-            })()).catch(() => {
+            obj = { recipientIds: null };
+            obj[0] = id;
+            const tmp5Result = tmp5(tmp6[33]);
+            url = undefined;
+            url = pathname((arg0) => {
+              let closure_0 = arg0;
+              let c3 = 0;
+              let c4 = 0;
+              return (function*(arg0, customId) {
+                if (c4 === 2) {
+                  c4 = 3;
+                  HermesBuiltin.throwTypeError();
+                } else if (tmp4 === 3) {
+                  if (arg0 === 1) {
+                    throw customId;
+                  } else if (arg0 === 2) {
+                    let obj = { value: null, done: true };
+                    obj[0] = customId;
+                    return obj;
+                  } else {
+                    return { value: "HermesInternal", done: null };
+                  }
+                } else {
+                  try {
+                    c4 = 2;
+                    if (0 === c3) {
+                      if (arg0 === 1) {
+                        c4 = 3;
+                        throw customId;
+                      } else if (arg0 === 2) {
+                        c4 = 3;
+                        obj = { value: null, done: true };
+                        obj[0] = customId;
+                        return obj;
+                      } else {
+                        let closure_2 = tmp5;
+                        customId = tmp2;
+                        customId = undefined;
+                        const searchParams = outer1_1.searchParams;
+                        const searchParams2 = outer1_1.searchParams;
+                        const value = searchParams.get("link_id");
+                        c3 = 1;
+                        c4 = 1;
+                        const obj1 = { value: null, done: false };
+                        obj1[0] = callback(outer3_2[31]).getCustomActivityLinkParams(callback, value, searchParams2.get("custom_id"));
+                        return obj1;
+                      }
+                    } else if (arg0 === 1) {
+                      c4 = 3;
+                      throw customId;
+                    } else if (arg0 === 2) {
+                      c4 = 3;
+                      obj = { value: null, done: true };
+                      obj[0] = customId;
+                      return obj;
+                    } else {
+                      customId = customId.customId;
+                      const obj2 = { targetApplicationId: null, channelId: null, analyticsLocations: null, customId: null, referrerId: null };
+                      obj2[0] = callback;
+                      obj2[1] = callback;
+                      obj2[2] = uRL;
+                      obj2[3] = customId;
+                      obj2[4] = outer1_2;
+                      outer3_1(outer3_2[34])(obj2);
+                      c4 = 3;
+                      return { value: "HermesInternal", done: null };
+                    }
+                  } catch (tmp6) {
+                    c4 = tmp;
+                    throw tmp6;
+                  }
+                }
+              })();
+            });
+            const openPrivateChannelResult = tmp5(tmp6[33]).openPrivateChannel(obj);
+            tmp5(tmp6[33]).openPrivateChannel(obj).then(function() {
+              const self = this;
+              const apply = closure_0.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
+              }
+              return applyArgumentsResult;
+            }).catch(() => {
 
             });
             flag = true;
-            const nextPromise1 = outer1_1(outer1_2[33]).openPrivateChannel(obj).then((() => {
-              let closure_0 = pathname(async (arg0) => {
-                let obj = callback(outer4_2[31]);
-                const searchParams = outer2_1.searchParams;
-                const searchParams2 = outer2_1.searchParams;
-                const value = searchParams.get("link_id");
-                obj = { targetApplicationId: callback, channelId: arg0, analyticsLocations: uRL, customId: yield obj.getCustomActivityLinkParams(closure_0, value, searchParams2.get("custom_id")).customId, referrerId: outer2_2 };
-                outer4_1(outer4_2[34])(obj);
-              });
-              return function() {
-                return callback(...arguments);
-              };
-            })());
+            const nextPromise1 = tmp5(tmp6[33]).openPrivateChannel(obj).then(function() {
+              const self = this;
+              const apply = closure_0.apply;
+              if (typeof apply === "unknown") {
+                let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+              } else {
+                applyArgumentsResult = apply(self, arguments);
+              }
+              return applyArgumentsResult;
+            });
           }
           return flag;
         }
+        tmp5 = outer1_1;
+        tmp7 = url;
       };
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === _require(4154).CodedLinkType.GUILD_PRODUCT) {
+    if (findCodedLinkResult.type === tmp2(4178).CodedLinkType.GUILD_PRODUCT) {
       return (preventDefault) => {
-        if (null != preventDefault) {
+        let closure_0;
+        let closure_1;
+        if (preventDefault != null) {
           preventDefault.preventDefault();
         }
+        [closure_0, closure_1] = _undefined(_undefined.code.split("-"), 2);
+        const str = _undefined.code;
         const tmp2 = _undefined(_undefined.code.split("-"), 2);
-        const outer1_0 = tmp2[0];
-        let closure_1 = tmp2[1];
-        outer1_0(outer1_2[20])(outer1_2[35], outer1_2.paths).then((openGuildProductLink) => {
+        url(outer1_2[20])(outer1_2[35], outer1_2.paths).then((openGuildProductLink) => {
           openGuildProductLink.openGuildProductLink(closure_0, closure_1);
         });
         return true;
@@ -303,101 +641,94 @@ export default function getOnClick(outer1_0) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === _require(4154).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
+    if (findCodedLinkResult.type === tmp2(4178).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
       return (preventDefault) => {
-        if (null != preventDefault) {
+        if (preventDefault != null) {
           preventDefault.preventDefault();
         }
         const str = _undefined.code;
         const tmp2 = _undefined(_undefined.code.split("-"), 2);
-        const result = outer1_0(outer1_2[36]).openSocialLayerStorefrontProductDetailsModal({ skuId: _undefined(_undefined.code.split("-"), 2)[0], analyticsLocations: closure_1 });
+        const result = url(outer1_2[36]).openSocialLayerStorefrontProductDetailsModal({ skuId: _undefined(_undefined.code.split("-"), 2)[0], analyticsLocations: closure_1 });
         return true;
       };
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === _require(4154).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+    if (findCodedLinkResult.type === tmp2(4178).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
       return (preventDefault) => {
-        if (null != preventDefault) {
+        if (preventDefault != null) {
           preventDefault.preventDefault();
         }
         const str = _undefined.code;
         const tmp2 = _undefined(_undefined.code.split("-"), 2);
-        const result = outer1_0(outer1_2[36]).openSocialLayerStorefrontProductDetailsModal({ skuId: _undefined(_undefined.code.split("-"), 2)[0], analyticsLocations: closure_1 });
+        const result = url(outer1_2[36]).openSocialLayerStorefrontProductDetailsModal({ skuId: _undefined(_undefined.code.split("-"), 2)[0], analyticsLocations: closure_1 });
         return true;
       };
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === _require(4154).CodedLinkType.QUESTS_EMBED) {
-      if (obj2.getIsEligibleForQuests()) {
+    if (findCodedLinkResult.type === tmp2(4178).CodedLinkType.QUESTS_EMBED) {
+      let tmp2Result = tmp2(10493);
+      if (tmp2Result.getIsEligibleForQuests()) {
         return (preventDefault) => {
-          if (null != preventDefault) {
+          if (preventDefault != null) {
             preventDefault.preventDefault();
           }
           let obj = outer1_1(outer1_2[38]);
           let toURLSafeResult = obj.toURLSafe(_undefined.url);
-          if (null == toURLSafeResult) {
+          if (toURLSafeResult == null) {
             toURLSafeResult = {};
           }
           const search = toURLSafeResult.search;
-          let tmp2;
-          let tmp3;
+          let tmp4;
+          let tmp5;
           if (null != search) {
             const _URLSearchParams = URLSearchParams;
             const uRLSearchParams = new URLSearchParams(search);
             let value = uRLSearchParams.get("sort");
-            let tmp10;
-            if (null != value) {
-              tmp10 = value;
-            }
             value = uRLSearchParams.get("filter");
-            let tmp12;
-            if (null != value) {
-              tmp12 = value;
-            }
-            tmp3 = tmp12;
-            tmp2 = tmp10;
+            tmp4 = value;
+            tmp5 = value;
           }
-          obj = { scrollToQuestId: _undefined.code };
-          let tmp13 = null;
-          if (null != tmp2) {
-            tmp13 = tmp2;
+          obj = { scrollToQuestId: _undefined.code, sort: null, filter: null, fromContent: null };
+          if (tmp5 == null) {
+            tmp5 = null;
           }
-          obj.sort = tmp13;
-          let tmp14 = null;
-          if (null != tmp3) {
-            tmp14 = tmp3;
+          obj[1] = tmp5;
+          if (tmp4 == null) {
+            tmp4 = null;
           }
-          obj.filter = tmp14;
-          obj.fromContent = outer1_0(outer1_2[40]).QuestContent.QUEST_SHARE_LINK;
-          outer1_0(outer1_2[39]).openQuestHome(obj);
+          obj[2] = tmp4;
+          obj[3] = url(outer1_2[40]).QuestContent.QUEST_SHARE_LINK;
+          url(outer1_2[39]).openQuestHome(obj);
           return true;
         };
       }
-      obj2 = _require(10469);
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === _require(4154).CodedLinkType.COLLECTIBLES_SHOP) {
+    if (findCodedLinkResult.type === tmp2(4178).CodedLinkType.COLLECTIBLES_SHOP) {
       return (preventDefault) => {
-        if (null != preventDefault) {
+        if (preventDefault != null) {
           preventDefault.preventDefault();
         }
-        const enabled = outer1_0(outer1_2[41]).isVirtualCurrencyEnabled().enabled;
-        let obj = outer1_0(outer1_2[41]);
-        outer1_0(outer1_2[20])(outer1_2[42], outer1_2.paths).then((openCollectiblesShopMobile) => {
+        const enabled = url(outer1_2[41]).isVirtualCurrencyEnabled().enabled;
+        let obj = url(outer1_2[41]);
+        url(outer1_2[20])(outer1_2[42], outer1_2.paths).then((openCollectiblesShopMobile) => {
           const tmp3 = callback(outer1_3.code.split("-"), 2)[1];
           if (enabled) {
             if (tmp2 === outer2_14.ORBS) {
               let ORBS = outer2_15.ORBS;
             }
-            const obj = { analyticsSource: outer1_1[outer1_1.length - 1], analyticsLocations: outer1_1, screen: ORBS };
+            const obj = { analyticsSource: null, analyticsLocations: null, screen: null, initialProductSkuId: null };
+            obj[0] = outer1_1[outer1_1.length - 1];
+            obj[1] = outer1_1;
+            obj[2] = ORBS;
             let tmp9;
             if (tmp4) {
               tmp9 = tmp3;
             }
-            obj.initialProductSkuId = tmp9;
+            obj[3] = tmp9;
             const result = openCollectiblesShopMobile.openCollectiblesShopMobile(obj);
           }
           ORBS = tmp4 ? tmp6.SHOP_ALL : tmp6.FEATURED_PAGE;
@@ -406,38 +737,36 @@ export default function getOnClick(outer1_0) {
       };
     }
   }
-  let toURLSafeResult = importDefault(1443).toURLSafe(outer1_0);
-  if (null == toURLSafeResult) {
+  let toURLSafeResult = importDefault(1467).toURLSafe(url);
+  if (toURLSafeResult == null) {
     toURLSafeResult = {};
   }
   ({ host, hostname, pathname } = toURLSafeResult);
   ({ search, hash } = toURLSafeResult);
-  const obj3 = importDefault(1443);
-  let tmp19 = null;
-  if (null != hostname) {
-    tmp19 = hostname;
+  let tmp5Result = tmp5(1467);
+  let tmp6 = hostname;
+  if (hostname == null) {
+    tmp6 = null;
   }
-  let isDiscordHostnameResult = importDefault(1443).isDiscordHostname(tmp19);
+  let isDiscordHostnameResult = tmp5Result.isDiscordHostname(tmp6);
   if (!isDiscordHostnameResult) {
-    let tmp23 = null;
-    if (null != host) {
-      tmp23 = host;
+    tmp5Result = tmp5(1467);
+    if (host == null) {
+      host = null;
     }
-    let tmp24 = null;
-    if (null != hostname) {
-      tmp24 = hostname;
+    if (hostname == null) {
+      hostname = null;
     }
-    isDiscordHostnameResult = importDefault(1443).isDiscordLocalhost(tmp23, tmp24);
-    const obj6 = importDefault(1443);
+    isDiscordHostnameResult = tmp5Result.isDiscordLocalhost(host, hostname);
   }
   if (isDiscordHostnameResult) {
     if (null != pathname) {
       if (isGameShopPath(pathname)) {
         return (preventDefault) => {
-          if (null != preventDefault) {
+          if (preventDefault != null) {
             preventDefault.preventDefault();
           }
-          const result = outer1_0(outer1_2[36]).openSocialLayerStorefrontUnsupportedOnMobileAlert();
+          const result = url(table[36]).openSocialLayerStorefrontUnsupportedOnMobileAlert();
           return true;
         };
       }
@@ -445,7 +774,7 @@ export default function getOnClick(outer1_0) {
   }
   if (null != pathname) {
     if (isDiscordHostnameResult) {
-      if (obj7.isAppRoute(pathname)) {
+      if (tmp5Result1.isAppRoute(pathname)) {
         obj = { navigationReplace: false, openChannel: true };
         if (null != search) {
           obj.search = search;
@@ -454,20 +783,20 @@ export default function getOnClick(outer1_0) {
           obj.hash = hash;
         }
         return (preventDefault) => {
-          if (null != preventDefault) {
+          if (preventDefault != null) {
             preventDefault.preventDefault();
           }
           outer1_1(outer1_2[22])(pathname, obj);
           return true;
         };
       }
-      obj7 = importDefault(1443);
+      tmp5Result1 = tmp5(1467);
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === _require(4154).CodedLinkType.APP_OAUTH2_LINK) {
+    if (findCodedLinkResult.type === tmp2(4178).CodedLinkType.APP_OAUTH2_LINK) {
       let fn = (preventDefault) => {
-        if (null != preventDefault) {
+        if (preventDefault != null) {
           preventDefault.preventDefault();
         }
         let obj = outer1_1(outer1_2[43]);
@@ -479,18 +808,18 @@ export default function getOnClick(outer1_0) {
     }
     return fn;
   }
-  const obj5 = importDefault(1443);
-  let result = _require(4356).tryParseEventDetailsPath(pathname);
+  tmp2Result = tmp2(4381);
+  let result = tmp2Result.tryParseEventDetailsPath(pathname);
   if (!tmp.skipExtensionCheck) {
-    if (null != obj9.isSuspiciousDownload(outer1_0)) {
+    if (null != tmp2Result1.isSuspiciousDownload(url)) {
       fn = (preventDefault) => {
-        if (null != preventDefault) {
+        if (preventDefault != null) {
           preventDefault.preventDefault();
         }
         outer1_1(outer1_2[46]).show(closure_0);
         return true;
       };
     }
-    obj9 = _require(12262);
+    tmp2Result1 = tmp2(7906);
   }
 };

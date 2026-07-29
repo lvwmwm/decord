@@ -1,11 +1,11 @@
-// Module ID: 8213
-// Function ID: 65725
+// Module ID: 8237
+// Function ID: 8238
 // Name: PX_4
-// Dependencies: [689, 2]
+// Dependencies: [712, 2]
 
-// Module 8213 (PX_4)
-const PX_4 = require("_createForOfIteratorHelperLoose").space.PX_4;
-const PX_8 = require("_createForOfIteratorHelperLoose").space.PX_8;
+// Module 8237 (PX_4)
+const PX_4 = require("Themes").space.PX_4;
+const PX_8 = require("Themes").space.PX_8;
 const sum = 2 * PX_8 + PX_4;
 const result = require("set").fileFinishedImporting("design/components/experimental/ActionSheetDragHandle/native/ActionSheetDragHandleConstants.tsx");
 

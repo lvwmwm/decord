@@ -1,19 +1,19 @@
-// Module ID: 8320
-// Function ID: 66618
+// Module ID: 8344
+// Function ID: 8345
 // Name: GuildStageChannelSelection
-// Dependencies: [31, 3802, 1850, 33, 4165, 8224, 4355, 1820, 4133, 8222, 1935, 1212, 4161, 2]
+// Dependencies: [19, 3826, 1874, 21, 4189, 8248, 4380, 1844, 4157, 8246, 1959, 1236, 4185, 2]
 // Exports: default
 
-// Module 8320 (GuildStageChannelSelection)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 8344 (GuildStageChannelSelection)
+import "noop";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ channelText: { marginTop: 8, flexDirection: "row" } });
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/stage_channels/native/modals/GuildStageChannelSelection.tsx");
+let closure_7 = createCacheKey.createStyles({ channelText: { marginTop: 8, flexDirection: "row" } });
+let result = require("mergeGuildAvatar").fileFinishedImporting("modules/stage_channels/native/modals/GuildStageChannelSelection.tsx");
 
 export default function GuildStageChannelSelection(channel) {
   channel = channel.channel;
@@ -23,59 +23,54 @@ export default function GuildStageChannelSelection(channel) {
     let obj = channelsUserCanStartStageIn(handleSelectChannel[7]);
     const result = obj.dismissGlobalKeyboard();
     const mapped = channelsUserCanStartStageIn.map((id) => {
-      const obj = { value: id.id, label: channel(handleSelectChannel[6]).computeChannelName(id, outer2_5, outer2_4, true) };
+      const obj = { value: id.id, label: null };
+      obj[1] = callback(table[6]).computeChannelName(id, mergeGuildAvatar, upsertRelationship, true);
       return obj;
     });
-    obj = {};
+    obj = { title: null, items: null, onItemSelect: null, selectedItem: null, hasIcons: false };
     const obj2 = onChangeChannel(handleSelectChannel[8]);
     const intl = channel(handleSelectChannel[11]).intl;
-    obj.title = intl.string(channel(handleSelectChannel[11]).t["bxw/f7"]);
-    obj.items = mapped;
-    obj.onItemSelect = function onItemSelect(arg0) {
+    obj[0] = intl.string(channel(handleSelectChannel[11]).t["bxw/f7"]);
+    obj[1] = mapped;
+    obj[2] = function onItemSelect(arg0) {
       let closure_0 = arg0;
-      const found = outer1_2.find((id) => id.id === closure_0);
+      const found = closure_2.find((id) => id.id === closure_0);
       if (null != found) {
-        outer1_1(found);
+        callback2(found);
       }
-      onChangeChannel(handleSelectChannel[8]).hideActionSheet();
+      outer1_1(outer1_3[8]).hideActionSheet();
     };
     let id;
-    if (null != channel) {
+    if (channel != null) {
       id = channel.id;
     }
-    let tmp6;
-    if (null != id) {
-      tmp6 = id;
-    }
-    obj.selectedItem = tmp6;
-    obj.hasIcons = false;
+    obj[3] = id;
     obj2.openLazy(channel(handleSelectChannel[10])(handleSelectChannel[9], handleSelectChannel.paths), "SelectUpdatesChannel", obj);
   }
   function renderChannelHook(children) {
-    const obj = { variant: "text-sm/bold", color: "mobile-text-heading-primary", children };
-    return outer1_6(channel(handleSelectChannel[12]).Text, obj, arg1);
+    return callback(channel(handleSelectChannel[12]).Text, { variant: "text-sm/bold", color: "mobile-text-heading-primary", children }, arg1);
   }
   let obj = channel(handleSelectChannel[5]);
   channelsUserCanStartStageIn = obj.useChannelsUserCanStartStageIn(channel.guild);
   const tmp3 = onChangeChannel(handleSelectChannel[6])(channel);
-  obj = { style: callback().channelText, variant: "text-xs/medium", color: "text-default" };
+  obj = { style: callback().channelText, variant: "text-xs/medium", color: "text-default", children: null };
   let intl = channel(handleSelectChannel[11]).intl;
   const format = intl.format;
   const t = channel(handleSelectChannel[11]).t;
   if (tmp2) {
-    obj = {
-      stageName: tmp3,
-      stageHook: renderChannelHook,
-      changeHook(children) {
-          const obj = { onPress: handleSelectChannel, variant: "text-xs/medium", color: "text-link", children };
-          return outer1_6(channel(handleSelectChannel[12]).Text, obj, arg1);
-        }
+    obj = { stageName: null, stageHook: null, changeHook: null };
+    obj[0] = tmp3;
+    obj[1] = renderChannelHook;
+    obj[2] = function changeHook(children) {
+      return outer1_6(channel(handleSelectChannel[12]).Text, { onPress: handleSelectChannel, variant: "text-xs/medium", color: "text-link", children }, arg1);
     };
-    obj.children = format(t.AkzLcV, obj);
+    obj[3] = format(t.AkzLcV, obj);
     let tmp5 = obj;
   } else {
-    const obj1 = { stageName: tmp3, stageHook: renderChannelHook };
-    obj.children = format(t["S+9O7g"], obj1);
+    const obj1 = { stageName: null, stageHook: null };
+    obj1[0] = tmp3;
+    obj1[1] = renderChannelHook;
+    obj[3] = format(t["S+9O7g"], obj1);
     tmp5 = obj;
   }
   return jsx(channel(handleSelectChannel[12]).Text, tmp5);

@@ -1,25 +1,30 @@
-// Module ID: 5968
-// Function ID: 52938
+// Module ID: 5987
+// Function ID: 5988
 // Name: _toPropertyKey
-// Dependencies: [29, 677, 4034, 5969, 682, 5970, 2]
+// Dependencies: [109, 700, 4058, 5988, 705, 5989, 2]
 
-// Module 5968 (_toPropertyKey)
+// Module 5987 (_toPropertyKey)
 import _objectWithoutProperties from "_objectWithoutProperties";
-import useStoreWithEqualityFn from "useStoreWithEqualityFn";
+import identity from "identity";
 import createJSONStorage from "createJSONStorage";
 import createJSONStorage from "createJSONStorage";
 
 const require = arg1;
 function _toPropertyKey(arg0) {
   let StringResult = arg0;
-  if ("object" === typeof arg0) {
+  if (typeof arg0 !== "window") {
     StringResult = arg0;
     if (arg0) {
       const _Symbol = Symbol;
       if (undefined !== arg0[Symbol.toPrimitive]) {
-        const callResult = obj.call(arg0, "string");
+        const call = tmp3.call;
+        if (typeof call === "unknown") {
+          let callResult = tmp3("string");
+        } else {
+          callResult = call(arg0, "string");
+        }
         StringResult = callResult;
-        if ("object" === typeof callResult) {
+        if (typeof callResult !== "window") {
           const _TypeError = TypeError;
           const typeError = new TypeError("@@toPrimitive must return a primitive value.");
           throw typeError;
@@ -31,24 +36,23 @@ function _toPropertyKey(arg0) {
     }
   }
   let text = StringResult;
-  if ("symbol" !== typeof StringResult) {
+  if (typeof StringResult !== "e") {
     text = `${tmp}`;
   }
   return text;
 }
 let obj = { UNKNOWN: "UNKNOWN", NOT_STARTED: "NOT_STARTED", IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED" };
-useStoreWithEqualityFn = useStoreWithEqualityFn.createWithEqualityFn();
-obj = { name: "videoQuestUIState" };
-obj.storage = createJSONStorage.createJSONStorage(() => importDefault(5970));
-obj.partialize = function partialize(volume) {
+identity = identity.createWithEqualityFn();
+obj = { name: "videoQuestUIState", storage: null, partialize: null, version: 0 };
+obj[1] = createJSONStorage.createJSONStorage(() => importDefault(5989));
+obj[2] = function partialize(volume) {
   return { volume: volume.volume, muted: volume.muted, videoProgress: volume.videoProgress };
 };
-obj.version = 0;
-const withEqualityFnResult = useStoreWithEqualityFn(createJSONStorage.persist((arg0, arg1) => {
+const withEqualityFnResult = identity(createJSONStorage.persist((arg0, arg1) => {
   const _require = arg0;
   let closure_1 = arg1;
-  let obj = {
-    volume: _require(5969).DEFAULT_VIDEO_VOLUME,
+  return {
+    volume: _require(5988).DEFAULT_VIDEO_VOLUME,
     muted: false,
     transcriptEnabled: false,
     captionEnabled: false,
@@ -67,22 +71,21 @@ const withEqualityFnResult = useStoreWithEqualityFn(createJSONStorage.persist((a
       const callback2 = arg1;
       let closure_2 = arg2;
       const tmp = callback2().videoProgress[arg0];
-      let maxTimestampSec;
-      if (null != tmp) {
-        maxTimestampSec = tmp.maxTimestampSec;
+      let num;
+      if (tmp != null) {
+        num = tmp.maxTimestampSec;
       }
-      let num = 0;
-      if (null != maxTimestampSec) {
-        num = maxTimestampSec;
+      if (num == null) {
+        num = 0;
       }
       let _objectWithoutProperties = Math.max(num, arg1);
       callback(outer1_2[4]).batchUpdates(() => {
-        let obj = {};
+        let obj = { videoProgress: null };
         obj = {};
         const merged = Object.assign(callback2().videoProgress);
         obj = { timestampSec: callback2, duration: closure_2, maxTimestampSec: _objectWithoutProperties };
         obj[callback] = obj;
-        obj.videoProgress = obj;
+        obj[0] = obj;
         return callback(obj);
       });
     },
@@ -100,13 +103,13 @@ const withEqualityFnResult = useStoreWithEqualityFn(createJSONStorage.persist((a
     getVideoProgressState(arg0) {
       const tmp = callback2().videoProgress[arg0];
       if (null == tmp) {
-        let IN_PROGRESS = outer1_4.UNKNOWN;
+        let IN_PROGRESS = outer1_5.UNKNOWN;
       } else if (0 === tmp.timestampSec) {
-        IN_PROGRESS = outer1_4.NOT_STARTED;
+        IN_PROGRESS = outer1_5.NOT_STARTED;
       } else if (tmp.timestampSec >= tmp.duration) {
-        IN_PROGRESS = outer1_4.COMPLETED;
+        IN_PROGRESS = outer1_5.COMPLETED;
       } else {
-        IN_PROGRESS = outer1_4.IN_PROGRESS;
+        IN_PROGRESS = outer1_5.IN_PROGRESS;
       }
       return IN_PROGRESS;
     },
@@ -114,12 +117,12 @@ const withEqualityFnResult = useStoreWithEqualityFn(createJSONStorage.persist((a
       const callback = questId;
       callback(outer1_2[4]).batchUpdates(() => {
         const items = [questId];
-        questId({ videoProgress: outer2_3(outer1_1().videoProgress, items.map(outer2_5)) });
+        questId({ videoProgress: outer2_3(outer1_1().videoProgress, items.map(outer2_4)) });
       });
     },
     clearState() {
       callback(outer1_2[4]).batchUpdates(() => {
-        outer1_0({ videoProgress: {} });
+        callback({ videoProgress: {} });
       });
     },
     setTranscriptAsset(arg0) {
@@ -129,7 +132,6 @@ const withEqualityFnResult = useStoreWithEqualityFn(createJSONStorage.persist((a
       });
     }
   };
-  return obj;
 }, obj));
 const result = require("createJSONStorage").fileFinishedImporting("modules/quests/VideoQuestUIStore.tsx");
 

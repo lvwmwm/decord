@@ -1,9 +1,9 @@
-// Module ID: 14433
-// Function ID: 110299
+// Module ID: 14455
+// Function ID: 14456
 // Name: toggle
-// Dependencies: [10249, 7733, 10099, 1212, 1553, 2]
+// Dependencies: [10270, 7756, 10120, 1236, 1577, 2]
 
-// Module 14433 (toggle)
+// Module 14455 (toggle)
 import isInAppMessageSoundsEnabled from "isInAppMessageSoundsEnabled";
 import createToggle from "createToggle";
 
@@ -12,12 +12,12 @@ let useInAppMessageSoundsEnabled;
 ({ setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled } = isInAppMessageSoundsEnabled);
 const toggle = createToggle.createToggle({
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.jLCRyj);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.jLCRyj);
   },
   useDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["wls+Ax"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["wls+Ax"]);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: useInAppMessageSoundsEnabled,
@@ -26,12 +26,12 @@ const toggle = createToggle.createToggle({
 });
 const obj = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.jLCRyj);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.jLCRyj);
   },
   useDescription() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["wls+Ax"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["wls+Ax"]);
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: useInAppMessageSoundsEnabled,

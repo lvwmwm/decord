@@ -1,61 +1,72 @@
-// Module ID: 14165
-// Function ID: 108753
-// Name: useGradientColors
-// Dependencies: [31, 27, 33, 4165, 4009, 689, 3869, 4101, 3980, 4589, 5143, 2]
+// Module ID: 14187
+// Function ID: 14188
+// Name: PremiumRewardFillGradient
+// Dependencies: [19, 17, 21, 4189, 4033, 712, 3893, 4125, 4004, 4611, 5165, 2]
 // Exports: default
 
-// Module 14165 (useGradientColors)
-import result from "result";
+// Module 14187 (PremiumRewardFillGradient)
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import hexToRgb from "hexToRgb";
-import hexToRgb from "hexToRgb";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
+import hexToRgba from "hexToRgba";
+import hexToRgba from "hexToRgba";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-function useGradientColors() {
-  token = token(3869).useToken(token1(689).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START);
-  const obj = token(3869);
-  token1 = token(3869).useToken(token1(689).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END);
-  let items = [token, token1];
-  return React.useMemo(() => {
-    const items = [token, token1];
-    return items;
-  }, items);
-}
 function PremiumRewardFillGradient(arg0) {
   let children;
   let style;
+  let transparentBlack;
+  let opaqueBlack;
+  let transparentWhite;
+  let opaqueWhite;
+  let c4;
   ({ children, style } = arg0);
   const tmp = callback3();
-  const tmp3 = callback4();
-  const transparentBlack = tmp3.transparentBlack;
-  const opaqueBlack = tmp3.opaqueBlack;
-  const transparentWhite = tmp3.transparentWhite;
-  const opaqueWhite = tmp3.opaqueWhite;
-  const tmp2 = useGradientColors();
-  let obj = transparentBlack(transparentWhite[8]);
-  const isThemeDarkResult = obj.isThemeDark(opaqueBlack(transparentWhite[7])());
-  let items = [transparentBlack, opaqueBlack, transparentWhite, opaqueWhite, isThemeDarkResult];
-  obj = { style: items1 };
-  items1 = [tmp.wrapper, style];
+  transparentBlack = undefined;
+  opaqueBlack = undefined;
+  let obj = transparentBlack(transparentWhite[6]);
+  const token = obj.useToken(opaqueBlack(transparentWhite[5]).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START);
+  transparentBlack = token;
+  let obj1 = transparentBlack(transparentWhite[6]);
+  const token1 = obj1.useToken(opaqueBlack(transparentWhite[5]).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END);
+  opaqueBlack = token1;
+  let items = [token, token1];
   const memo = opaqueWhite.useMemo(() => {
-    if (closure_4) {
+    const items = [token, token1];
+    return items;
+  }, items);
+  const tmp5 = callback4();
+  transparentBlack = tmp5.transparentBlack;
+  opaqueBlack = tmp5.opaqueBlack;
+  transparentWhite = tmp5.transparentWhite;
+  opaqueWhite = tmp5.opaqueWhite;
+  const tmp6 = opaqueBlack(transparentWhite[7])();
+  const isThemeDarkResult = transparentBlack(transparentWhite[8]).isThemeDark(tmp6);
+  c4 = isThemeDarkResult;
+  let items1 = [transparentBlack, opaqueBlack, transparentWhite, opaqueWhite, isThemeDarkResult];
+  obj = { style: items2, children: null };
+  items2 = [tmp.wrapper, style];
+  const memo1 = opaqueWhite.useMemo(() => {
+    if (c4) {
       const items = [transparentBlack, opaqueBlack];
       let items1 = items;
     } else {
       items1 = [transparentWhite, opaqueWhite];
     }
     return items1;
-  }, items);
-  obj = { style: tmp.fill, colors: tmp2, start: closure_9, end: closure_10, pointerEvents: "none" };
-  const items2 = [callback(opaqueBlack(transparentWhite[9]), obj), callback(opaqueBlack(transparentWhite[9]), { style: tmp.fill, colors: memo, start: closure_11, end: closure_12, pointerEvents: "none" }), children];
-  obj.children = items2;
+  }, items1);
+  obj = { style: tmp.fill, colors: memo, start: closure_9, end: closure_10, pointerEvents: "none" };
+  const items3 = [callback(opaqueBlack(transparentWhite[9]), obj), , ];
+  obj1 = { style: tmp.fill, colors: memo1, start: closure_11, end: closure_12, pointerEvents: "none" };
+  items3[1] = callback(opaqueBlack(transparentWhite[9]), obj1);
+  items3[2] = children;
+  obj[1] = items3;
   return callback2(closure_5, obj);
 }
 function PremiumRewardGlowGradient(arg0) {
@@ -63,44 +74,54 @@ function PremiumRewardGlowGradient(arg0) {
   let style;
   ({ children, style } = arg0);
   const tmp = callback3();
-  const tmp2 = useGradientColors();
-  let obj = require(3980);
-  obj = { style: items };
-  items = [tmp.wrapper, style];
-  const tmp3 = importDefault(4101)();
-  obj = {};
-  const items1 = [tmp.glow, ];
-  let glowLight = !obj.isThemeDark(importDefault(4101)());
-  const isThemeDarkResult = obj.isThemeDark(importDefault(4101)());
-  const tmp5 = closure_7;
-  const tmp6 = closure_5;
-  const tmp7 = callback;
-  if (glowLight) {
+  let token;
+  let token1;
+  let obj = token(3893);
+  token = obj.useToken(token1(712).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START);
+  let obj1 = token(3893);
+  token1 = obj1.useToken(token1(712).colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END);
+  let items = [token, token1];
+  const memo = React.useMemo(() => {
+    const items = [token, token1];
+    return items;
+  }, items);
+  let obj2 = token(4004);
+  const isThemeDarkResult = obj2.isThemeDark(token1(4125)());
+  obj = { style: items1, children: null };
+  items1 = [tmp.wrapper, style];
+  const items2 = [tmp.glow, ];
+  let glowLight = !isThemeDarkResult;
+  const tmp10 = closure_5;
+  const tmp7 = token1(4125)();
+  const tmp9 = closure_7;
+  if (!isThemeDarkResult) {
     glowLight = tmp.glowLight;
   }
-  items1[1] = glowLight;
-  obj.style = items1;
-  obj.maskElement = callback(importDefault(4589), { style: closure_4.absoluteFill, colors: ["transparent", "black"], start: closure_11, end: closure_12 });
-  obj.children = callback(importDefault(4589), { style: closure_4.absoluteFill, colors: tmp2, start: closure_9, end: closure_10 });
-  const items2 = [tmp7(importDefault(5143), obj), children];
-  obj.children = items2;
-  return tmp5(tmp6, obj);
+  obj = { style: items2, maskElement: tmp11(tmp3(4611), obj1), children: tmp11(tmp3(4611), obj2) };
+  items2[1] = glowLight;
+  obj1 = { style: closure_4.absoluteFill, colors: ["transparent", "black"], start: closure_11, end: closure_12 };
+  obj2 = { style: closure_4.absoluteFill, colors: memo, start: closure_9, end: closure_10 };
+  const items3 = [closure_6(token1(5165), obj), children];
+  obj[1] = items3;
+  return tmp9(tmp10, obj);
 }
-({ StyleSheet: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let closure_8 = _createForOfIteratorHelperLoose.createStyles({ wrapper: { position: "relative", overflow: "hidden" }, fill: { position: "absolute", left: 0, right: 0, bottom: 0, height: "100%" }, glow: { position: "absolute", left: 0, right: 0, bottom: 0, height: "50%" }, glowLight: { opacity: 0.5 } });
+({ StyleSheet: c4, View: c5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let closure_8 = createCacheKey.createStyles({ wrapper: { position: "relative", overflow: "hidden" }, fill: { position: "absolute", left: 0, right: 0, bottom: 0, height: "100%" }, glow: { position: "absolute", left: 0, right: 0, bottom: 0, height: "50%" }, glowLight: { opacity: 0.5 } });
 let closure_9 = { x: 0, y: 0.5 };
 let closure_10 = { x: 1, y: 0.5 };
 let closure_11 = { x: 0.5, y: 0 };
 let closure_12 = { x: 0.5, y: 1 };
-const hexOpacityToRgbaResult = hexToRgb.hexOpacityToRgba("#000000", 0);
-let closure_13 = _createForOfIteratorHelperLoose.createStyleProperties({ transparentBlack: hexOpacityToRgbaResult, opaqueBlack: require("_createForOfIteratorHelperLoose").colors.BLACK, transparentWhite: hexToRgb.hexOpacityToRgba("#FFFFFF", 0), opaqueWhite: require("_createForOfIteratorHelperLoose").colors.WHITE });
-const hexOpacityToRgbaResult1 = hexToRgb.hexOpacityToRgba("#FFFFFF", 0);
+const hexOpacityToRgbaResult = hexToRgba.hexOpacityToRgba("#000000", 0);
+let closure_13 = createCacheKey.createStyleProperties({ transparentBlack: hexOpacityToRgbaResult, opaqueBlack: require("Themes").colors.BLACK, transparentWhite: hexToRgba.hexOpacityToRgba("#FFFFFF", 0), opaqueWhite: require("Themes").colors.WHITE });
+const hexOpacityToRgbaResult1 = hexToRgba.hexOpacityToRgba("#FFFFFF", 0);
 const result = require("jsxProd").fileFinishedImporting("modules/quests/native/PremiumRewardGradient.tsx");
 
 export default function QuestPremiumRewardGradientWrapper(visible) {
   if (!visible.visible) {
-    const obj = { style: tmp, children: tmp2 };
+    const obj = { style: null, children: null };
+    obj[0] = tmp;
+    obj[1] = tmp2;
     return tmp3(closure_5, obj);
   }
 };

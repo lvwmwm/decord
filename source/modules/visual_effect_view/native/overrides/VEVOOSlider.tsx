@@ -1,63 +1,49 @@
-// Module ID: 14816
-// Function ID: 112779
-// Dependencies: [31, 33, 4165, 477, 689, 7636, 2]
+// Module ID: 14842
+// Function ID: 14843
+// Dependencies: [19, 21, 4189, 500, 712, 7659, 2]
 
-// Module 14816
+// Module 14842
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
-import importAllResult from "result";
-import set from "_createForOfIteratorHelperLoose";
+import importAllResult from "noop";
+import set from "createCacheKey";
 
 const require = arg1;
 let num = 0;
-let obj = {};
-obj = {};
 if (set.isAndroid()) {
-  num = require("_createForOfIteratorHelperLoose").space.PX_8;
+  num = require("Themes").space.PX_8;
 }
-obj.marginTop = num;
-obj.slider = obj;
-let closure_4 = _createForOfIteratorHelperLoose.createStyles(obj);
+let closure_4 = createCacheKey.createStyles({ slider: { marginTop: num } });
 const result = set.fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOSlider.tsx");
 
-export default require("result").memo(function VEVOOSlider(disabledOpacity) {
+export default require("noop").memo(function VEVOOSlider(disabled) {
   let initialValue;
   let onValueChange;
-  let flag = disabledOpacity.disabledOpacity;
+  let flag = disabled.disabledOpacity;
   if (flag === undefined) {
     flag = false;
   }
-  ({ initialValue, onValueChange } = disabledOpacity);
-  let obj = {};
+  ({ initialValue, onValueChange } = disabled);
   const items = [callback().slider, ];
-  obj = {};
   let num = 1;
   const tmp = callback();
   const tmp2 = jsx;
   if (flag) {
     num = 0.5;
   }
-  obj.opacity = num;
-  items[1] = obj;
-  obj.style = items;
-  obj.disabled = disabledOpacity.disabled;
+  const obj = { style: items, disabled: disabled.disabled, value: null, minimumValue: 0, maximumValue: 1, minimumTrackTintColor: null, maximumTrackTintColor: null, onValueChange: null, onResponderGrant: null };
+  items[1] = { opacity: num };
   const current = initialValue.current;
-  let tmp4;
-  if (null != current) {
-    tmp4 = current;
-  }
-  obj.value = tmp4;
-  obj.minimumValue = 0;
-  obj.maximumValue = 1;
-  obj.minimumTrackTintColor = importDefault(689).unsafe_rawColors.BRAND_500;
-  obj.maximumTrackTintColor = importDefault(689).unsafe_rawColors.PRIMARY_400;
-  obj.onValueChange = onValueChange;
-  const tmp3 = importDefault(7636);
+  obj[2] = current;
+  obj[5] = importDefault(712).unsafe_rawColors.BRAND_500;
+  obj[6] = importDefault(712).unsafe_rawColors.PRIMARY_400;
+  obj[7] = onValueChange;
+  const tmp5 = importDefault(7659);
   let fn;
-  if (obj3.isAndroid()) {
+  if (obj2.isAndroid()) {
     fn = () => true;
   }
-  obj.onResponderGrant = fn;
-  return tmp2(tmp3, obj);
+  obj[8] = fn;
+  return tmp2(tmp5, obj);
 });

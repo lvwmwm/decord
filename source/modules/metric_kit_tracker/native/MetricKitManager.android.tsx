@@ -1,26 +1,21 @@
-// Module ID: 16215
-// Function ID: 125563
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 5112, 2]
+// Module ID: 16250
+// Function ID: 16251
+// Name: _initialize
+// Dependencies: [5134, 2]
 
-// Module 16215 (_isNativeReflectConstruct)
-import set from "set";
-import _defineProperties from "_defineProperties";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "AutomaticLifecycleManager";
+// Module 16250 (_initialize)
+import "initialize";
 
-function _isNativeReflectConstruct() {
-  let set = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return set;
-  }
-  const result = _isNativeReflectConstruct();
+class MetricKitManager extends tmp2 {
 }
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("modules/metric_kit_tracker/native/MetricKitManager.android.tsx");
+const prototype = MetricKitManager.prototype;
+prototype["_initialize"] = function _initialize() {
 
-export default tmp2;
+};
+prototype["_terminate"] = function _terminate() {
+
+};
+const metricKitManager = new MetricKitManager();
+const result = require("set").fileFinishedImporting("modules/metric_kit_tracker/native/MetricKitManager.android.tsx");
+
+export default metricKitManager;

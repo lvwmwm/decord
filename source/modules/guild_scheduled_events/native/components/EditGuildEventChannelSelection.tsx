@@ -1,35 +1,35 @@
-// Module ID: 8244
-// Function ID: 65878
+// Module ID: 8268
+// Function ID: 8269
 // Name: EditGuildEventChannelSelection
-// Dependencies: [31, 27, 3793, 3802, 1850, 5761, 653, 33, 4165, 689, 6719, 8240, 8224, 4355, 566, 4628, 8226, 8227, 1212, 4161, 4695, 1820, 8245, 8205, 4133, 8222, 1935, 1273, 8223, 2]
+// Dependencies: [19, 17, 3817, 3826, 1874, 5779, 676, 21, 4189, 712, 6740, 8264, 8248, 4380, 589, 4650, 8250, 8251, 1236, 4185, 4717, 1844, 8269, 8229, 4157, 8246, 1959, 1297, 8247, 2]
 // Exports: default
 
-// Module 8244 (EditGuildEventChannelSelection)
-import "result";
-import { View } from "Button";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
+// Module 8268 (EditGuildEventChannelSelection)
+import "Text";
+import { View } from "LocationIcon";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import upsertRelationship from "upsertRelationship";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import scheduledEventSort from "scheduledEventSort";
 import ME from "ME";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "dismissGlobalKeyboard";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
+let c10;
+let c9;
 let closure_12;
-let closure_9;
+let unpackModuleId;
 const require = arg1;
-({ ChannelTypes: closure_9, Permissions: closure_10 } = ME);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { flexDirection: "column" } };
-_createForOfIteratorHelperLoose = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", backgroundColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
-_createForOfIteratorHelperLoose.channelSelectorButton = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.channelIcon = { marginRight: 8 };
-_createForOfIteratorHelperLoose.channelTypeText = { flex: 1, marginBottom: 8 };
-_createForOfIteratorHelperLoose.channelNameText = { flex: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventChannelSelection.tsx");
+({ ChannelTypes: c9, Permissions: c10 } = ME);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
+createCacheKey = { container: { flexDirection: "column" }, channelSelectorButton: null, channelIcon: null, channelTypeText: null, channelNameText: null };
+createCacheKey = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", backgroundColor: require("Themes").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { marginRight: 8 };
+createCacheKey[3] = { flex: 1, marginBottom: 8 };
+createCacheKey[4] = { flex: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventChannelSelection.tsx");
 
 export default function EditGuildEventChannelSelection(guild) {
   let View;
@@ -40,136 +40,132 @@ export default function EditGuildEventChannelSelection(guild) {
   ({ channelType, channel } = guild);
   const guildEventId = guild.guildEventId;
   ({ recurrenceId: dependencyMap, onChangeChannel: View } = guild);
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = guild(6719);
+  let c5;
+  let upsertRelationship;
+  let mergeGuildAvatar;
+  let scheduledEventSort;
+  let constants;
+  const tmp = createCacheKey();
+  let obj = guild(6740);
   const inputStyles = obj.useInputStyles({ hasLeadingIcon: true });
-  let _isNativeReflectConstruct = tmp3;
-  let obj1 = guild(8240);
-  let closure_6 = obj1.useGetEventChannelsByType(guild.id, channelType);
-  let obj2 = guild(8224);
-  let closure_7 = obj2.useChannelsUserCanStartStageIn(guild);
-  const tmp4 = channel(4355)(channel);
-  let obj3 = guild(566);
-  const items = [_isNativeReflectConstruct];
-  let closure_8 = obj3.useStateFromStores(items, () => tmp3.can(outer1_10.MANAGE_CHANNELS, guild));
-  let obj4 = guild(566);
-  const items1 = [closure_8];
+  c5 = tmp5;
+  let obj1 = guild(8264);
+  upsertRelationship = obj1.useGetEventChannelsByType(guild.id, channelType);
+  let obj2 = guild(8248);
+  mergeGuildAvatar = obj2.useChannelsUserCanStartStageIn(guild);
+  const tmp7 = channel(4380)(channel);
+  let obj3 = guild(589);
+  const items = [c5];
+  scheduledEventSort = obj3.useStateFromStores(items, () => _undefined.can(outer1_10.MANAGE_CHANNELS, guild));
+  let obj4 = guild(589);
+  const items1 = [scheduledEventSort];
   const items2 = [guildEventId];
-  const constants = obj4.useStateFromStores(items1, () => guildScheduledEvent.getGuildScheduledEvent(guildEventId), items2);
+  constants = obj4.useStateFromStores(items1, () => guildScheduledEvent.getGuildScheduledEvent(guildEventId), items2);
   if (null != channel) {
-    let obj5 = guild(4628);
-    let channelIcon = obj5.getChannelIcon(channel);
+    let tmp2Result = tmp2(4650);
+    let channelIcon = tmp2Result.getChannelIcon(channel);
   } else {
-    channelIcon = channel(8226);
+    channelIcon = tmp6(8250);
   }
   if (null != channel) {
-    let obj6 = guild(4628);
-    let LocationIcon = obj6.getChannelIconComponent(channel);
+    tmp2Result = tmp2(4650);
+    let LocationIcon = tmp2Result.getChannelIconComponent(channel);
   } else {
-    LocationIcon = guild(8227).LocationIcon;
+    LocationIcon = tmp2(8251).LocationIcon;
   }
-  let intl = guild(1212).intl;
+  let intl = tmp2(1236).intl;
   let string = intl.string;
-  let t = guild(1212).t;
+  let t = tmp2(1236).t;
   if (channelType === constants.GUILD_STAGE_VOICE) {
     let stringResult = string(t.S7GjDz);
   } else {
     stringResult = string(t["7RYWCP"]);
   }
-  obj = { style: items3 };
+  obj = { style: items3, children: null };
   items3 = [tmp.container, guild.style];
   obj = { style: tmp.channelTypeText, variant: "text-sm/semibold", color: "text-subtle", children: stringResult };
-  const items4 = [callback(guild(4161).Text, obj), ];
-  obj1 = { accessibilityLabel: stringResult };
-  const intl2 = guild(1212).intl;
-  obj1.accessibilityHint = intl2.string(guild(1212).t.AaXbMD);
-  obj2 = {};
-  let tmp17;
-  if (null != tmp4) {
-    tmp17 = tmp4;
-  }
-  obj2.text = tmp17;
-  obj1.accessibilityValue = obj2;
-  obj1.accessibilityRole = "button";
+  const items4 = [callback(guild(4185).Text, obj), ];
+  obj1 = { accessibilityLabel: stringResult, accessibilityHint: null, accessibilityValue: null, accessibilityRole: "button", style: null, onPress: null, children: null };
+  const intl2 = tmp2(1236).intl;
+  obj1[1] = intl2.string(guild(1236).t.AaXbMD);
+  obj1[2] = { text: tmp7 };
   const items5 = [, , ];
   ({ padding: arr6[0], radius: arr6[1] } = inputStyles);
   items5[2] = tmp.channelSelectorButton;
-  obj1.style = items5;
-  obj1.onPress = function onPress() {
+  obj1[4] = items5;
+  obj1[5] = function onPress() {
     let obj = guildEventId(outer1_3[21]);
     let result = obj.dismissGlobalKeyboard();
-    let tmp3 = null;
-    const mapped = closure_6.map((id) => {
-      const obj = { value: id.id, label: guild(outer2_3[13]).computeChannelName(id, closure_7, closure_6, true) };
+    let tmp4 = null;
+    const mapped = upsertRelationship.map((id) => {
+      const obj = { value: id.id, label: null };
+      obj[1] = callback(table[13]).computeChannelName(id, mergeGuildAvatar, upsertRelationship, true);
       return obj;
     });
     if (0 === length.length) {
-      tmp3 = null;
-      if (closure_8) {
-        obj = {
-          guildId: guild.id,
-          onCreate(channel) {
-                let obj = guild(outer2_3[23]);
-                obj = { channel };
-                let tmp2;
-                if (null != outer1_9) {
-                  tmp2 = outer1_9;
-                }
-                obj.guildEvent = tmp2;
-                obj.recurrenceId = outer1_3;
-                const result = obj.openCreateOrEditGuildEventModal(outer1_0, obj);
-              }
+      tmp4 = null;
+      if (scheduledEventSort) {
+        obj = { guildId: null, onCreate: null };
+        obj[0] = guild.id;
+        obj[1] = function onCreate(channel) {
+          let obj = outer1_0(outer1_3[23]);
+          obj = { channel, guildEvent: null, recurrenceId: null };
+          obj[1] = closure_9;
+          obj[2] = closure_3;
+          const result = obj.openCreateOrEditGuildEventModal(closure_0, obj);
         };
-        tmp3 = outer1_11(channel(outer1_3[22]), obj);
+        tmp4 = outer1_11(channel(tmp[22]), obj);
       }
     }
-    obj = {};
     const obj3 = channel(outer1_3[24]);
-    const intl = guild(outer1_3[18]).intl;
+    const intl = guild(tmp[18]).intl;
     const string = intl.string;
-    const t = guild(outer1_3[18]).t;
-    if (_isNativeReflectConstruct) {
+    const t = guild(tmp[18]).t;
+    if (c5) {
       let stringResult = string(t.S7GjDz);
     } else {
       stringResult = string(t["7RYWCP"]);
     }
-    obj.title = stringResult;
-    obj.items = mapped;
-    obj.body = tmp3;
-    obj.onItemSelect = function onItemSelect(arg0) {
-      let closure_0 = arg0;
-      const found = outer1_6.find((id) => id.id === closure_0);
-      if (null != found) {
-        outer1_4(found);
-      }
-      channel(outer2_3[24]).hideActionSheet();
+    obj = {
+      title: stringResult,
+      items: mapped,
+      body: tmp4,
+      onItemSelect(arg0) {
+        let closure_0 = arg0;
+        const found = upsertRelationship.find((id) => id.id === closure_0);
+        if (null != found) {
+          callback2(found);
+        }
+        outer1_1(outer1_3[24]).hideActionSheet();
+      },
+      selectedItem: null,
+      hasIcons: false
     };
     let id;
-    if (null != channel) {
+    if (channel != null) {
       id = channel.id;
     }
-    let tmp13;
-    if (null != id) {
-      tmp13 = id;
-    }
-    obj.selectedItem = tmp13;
-    obj.hasIcons = false;
+    obj[4] = id;
     obj3.openLazy(guild(outer1_3[26])(outer1_3[25], outer1_3.paths), "SelectUpdatesChannel", obj);
   };
   if (null != LocationIcon) {
-    obj3 = { style: tmp.channelIcon };
-    let tmp21 = callback(LocationIcon, obj3);
+    obj2 = { style: null };
+    obj2[0] = tmp.channelIcon;
+    let tmp12Result = tmp12(LocationIcon, obj2);
   } else {
-    obj4 = { source: channelIcon, style: tmp.channelIcon };
-    tmp21 = callback(guild(1273).Icon, obj4);
+    obj3 = { source: null, style: null };
+    obj3[0] = channelIcon;
+    obj3[1] = tmp.channelIcon;
+    tmp12Result = tmp12(tmp2(1297).Icon, obj3);
   }
-  const items6 = [tmp21, , ];
-  obj5 = { style: tmp.channelNameText, variant: "text-md/medium", color: "interactive-text-active", children: tmp4 };
-  items6[1] = callback(guild(4161).Text, obj5);
-  obj6 = { source: channel(8223) };
-  items6[2] = callback(guild(1273).Icon, obj6);
-  obj1.children = items6;
-  items4[1] = closure_12(guild(4695).PressableOpacity, obj1);
-  obj.children = items4;
+  const items6 = [tmp12Result, , ];
+  obj4 = { style: tmp.channelNameText, variant: "text-md/medium", color: "interactive-text-active", children: tmp7 };
+  items6[1] = callback(guild(4185).Text, obj4);
+  const obj5 = { source: null };
+  obj5[0] = channel(8247);
+  items6[2] = callback(guild(1297).Icon, obj5);
+  obj1[6] = items6;
+  items4[1] = closure_12(guild(4717).PressableOpacity, obj1);
+  obj[1] = items4;
   return closure_12(View, obj);
 };

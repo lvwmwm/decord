@@ -1,37 +1,37 @@
-// Module ID: 8802
-// Function ID: 69457
+// Module ID: 8826
+// Function ID: 8827
 // Name: useActiveThemeType
-// Dependencies: [1280, 3977, 1322, 1281, 566, 4015, 2]
+// Dependencies: [1304, 4001, 1346, 1305, 589, 4039, 2]
 // Exports: useIsClientThemeOrCustomThemeActive, useIsCustomThemeActive
 
-// Module 8802 (useActiveThemeType)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 8826 (useActiveThemeType)
+import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
+import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
+import reset from "reset";
 import SystemThemeState from "SystemThemeState";
 
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function useActiveThemeType() {
-  const items = [closure_5];
-  const stateFromStores = require(566) /* initialize */.useStateFromStores(items, () => outer1_5.hasCustomTheme());
-  const obj = require(566) /* initialize */;
-  const items1 = [closure_4];
-  const stateFromStores1 = require(566) /* initialize */.useStateFromStores(items1, () => null != outer1_4.gradientPreset);
-  const tmp3 = importDefault(4015)();
-  const obj2 = require(566) /* initialize */;
-  const items2 = [_isNativeReflectConstruct];
+  const items = [reset];
+  const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => reset.hasCustomTheme());
+  const obj = require(589) /* initialize */;
+  const items1 = [isSyncedModeThemesEnabled];
+  const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => null != gradientPreset.gradientPreset);
+  const tmp3 = importDefault(4039)();
+  const obj2 = require(589) /* initialize */;
+  const items2 = [CHANNEL_SIDEBAR_WIDTH];
   let type;
-  const stateFromStores2 = require(566) /* initialize */.useStateFromStores(items2, () => outer1_3.useSystemTheme);
-  if (null != tmp3) {
+  const stateFromStores2 = require(589) /* initialize */.useStateFromStores(items2, () => useSystemTheme.useSystemTheme);
+  if (tmp3 != null) {
     type = tmp3.type;
   }
   if ("custom" === type) {
     let DEFAULT = constants2.CUSTOM;
   } else {
     let type1;
-    if (null != tmp3) {
+    if (tmp3 != null) {
       type1 = tmp3.type;
     }
     if ("preset" === type1) {
@@ -48,18 +48,14 @@ function useActiveThemeType() {
   }
   return DEFAULT;
 }
-({ SystemThemeState: closure_6, ActiveThemeType: closure_7 } = SystemThemeState);
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/client_themes/native/useActiveTheme.tsx");
+({ SystemThemeState: closure_6, ActiveThemeType: error } = SystemThemeState);
+const result = require("reset").fileFinishedImporting("modules/client_themes/native/useActiveTheme.tsx");
 
 export const useIsCustomThemeActive = function useIsCustomThemeActive() {
   return useActiveThemeType() === constants2.CUSTOM;
 };
 export const useIsClientThemeOrCustomThemeActive = function useIsClientThemeOrCustomThemeActive() {
   const tmp = useActiveThemeType();
-  let tmp2 = tmp === constants2.CLIENT;
-  if (!tmp2) {
-    tmp2 = tmp === constants2.CUSTOM;
-  }
-  return tmp2;
+  return tmp === constants2.CLIENT || tmp === constants2.CUSTOM;
 };
 export { useActiveThemeType };

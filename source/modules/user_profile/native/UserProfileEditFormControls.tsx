@@ -1,42 +1,44 @@
-// Module ID: 13696
-// Function ID: 105060
+// Module ID: 13717
+// Function ID: 13718
 // Name: FormControlText
-// Dependencies: [57, 31, 27, 33, 4165, 689, 4161, 6707, 4695, 1212, 5205, 477, 5538, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 4185, 6728, 4717, 1236, 5227, 500, 5556, 2]
 // Exports: UserProfileEditFormButton, UserProfileEditFormSwitch
 
-// Module 13696 (FormControlText)
+// Module 13717 (FormControlText)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 let require = arg1;
-function FormControlText(text) {
-  const obj = { variant: "text-sm/medium", color: "text-default", style: _createForOfIteratorHelperLoose().formControlText, children: text.text };
-  return callback2(require(4161) /* Text */.Text, obj);
+function FormControlText(children) {
+  const tmp = createCacheKey();
+  return callback2(require(4185) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", style: createCacheKey().formControlText, children: children.text });
 }
 function FormControlSubtext(text) {
   text = text.text;
   let tmp2 = null;
   if (null != text) {
-    const obj = { variant: "text-xs/medium", color: "text-muted", style: tmp.formControlText, children: text };
-    tmp2 = callback2(require(4161) /* Text */.Text, obj);
+    const obj = { variant: "text-xs/medium", color: "text-muted", style: null, children: null };
+    obj[2] = tmp.formControlText;
+    obj[3] = text;
+    tmp2 = callback2(require(4185) /* Text */.Text, obj);
   }
   return tmp2;
 }
-({ Pressable: closure_4, View: closure_5 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: 12, padding: 12, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG, borderWidth: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-_createForOfIteratorHelperLoose.button = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.buttonTextContainer = { flexGrow: 1, flexShrink: 1, flexDirection: "column" };
-_createForOfIteratorHelperLoose.formControlText = { marginRight: "auto", flexShrink: 1 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ Pressable: c4, View: c5 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+createCacheKey = { button: null, buttonTextContainer: null, formControlText: null };
+createCacheKey = { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: 12, padding: 12, borderColor: require("Themes").colors.BORDER_STRONG, borderWidth: 1, borderRadius: require("Themes").radii.md };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flexGrow: 1, flexShrink: 1, flexDirection: "column" };
+createCacheKey[2] = { marginRight: "auto", flexShrink: 1 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/UserProfileEditFormControls.tsx");
 
 export const UserProfileEditFormButton = function UserProfileEditFormButton(loading) {
@@ -62,28 +64,27 @@ export const UserProfileEditFormButton = function UserProfileEditFormButton(load
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = { label, labelTrailing };
-  obj = { onPress, style: tmp.button, accessibilityRole: "button", accessibilityLabel: label, accessibilityValue };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityHint = intl.string(require(1212) /* getSystemLocale */.t["4lAcxv"]);
-  obj = { disabled, busy: flag };
-  obj.accessibilityState = obj;
-  obj.disabled = disabled;
+  const tmp = createCacheKey();
+  let obj = { label, labelTrailing, children: null };
+  obj = { onPress, style: tmp.button, accessibilityRole: "button", accessibilityLabel: label, accessibilityValue, accessibilityHint: null, accessibilityState: null, disabled: null, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[5] = intl.string(require(1236) /* getSystemLocale */.t["4lAcxv"]);
+  obj[6] = { disabled, busy: flag };
+  obj[7] = disabled;
   const items = [leading, , , ];
-  const obj1 = { style: tmp.buttonTextContainer };
+  obj = { style: tmp.buttonTextContainer, children: null };
   const items1 = [callback2(FormControlText, { text: buttonText }), callback2(FormControlSubtext, { text: buttonSubtext })];
-  obj1.children = items1;
-  items[1] = callback3(closure_5, obj1);
+  obj[1] = items1;
+  items[1] = callback3(closure_5, obj);
   items[2] = trailing;
-  let tmp4 = !flag2;
-  if (tmp4) {
-    tmp4 = callback2(require(5205) /* TableRowArrow */.TableRowArrow, {});
+  let tmp2Result = !flag2;
+  if (!flag2) {
+    tmp2Result = tmp2(require(5227) /* TableRowArrow */.TableRowArrow, {});
   }
-  items[3] = tmp4;
-  obj.children = items;
-  obj.children = callback3(require(4695) /* PressableBase */.PressableHighlight, obj);
-  return callback2(require(6707) /* Input */.Input, obj);
+  items[3] = tmp2Result;
+  obj[8] = items;
+  obj[2] = callback3(require(4717) /* PressableBase */.PressableHighlight, obj);
+  return callback2(require(6728) /* Input */.Input, obj);
 };
 export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0) {
   let accessibilityHint;
@@ -101,56 +102,58 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
     disabled = false;
   }
   let callback;
-  function handleOnPress() {
-    let tmp;
-    if (null != callback) {
-      tmp = callback(!closure_0);
-    }
-    return tmp;
-  }
-  let obj = require(477) /* set */;
+  let obj = require(500) /* set */;
   const isAndroidResult = obj.isAndroid();
-  const tmp3 = callback(React.useState(value), 2);
-  callback = tmp3[1];
+  const tmp5 = callback(React.useState(value), 2);
+  callback = tmp5[1];
   const items = [value];
   const effect = React.useEffect(() => {
-    callback2(closure_0);
+    callback(closure_0);
   }, items);
   if (isAndroidResult) {
-    let PressableHighlight = require(4695) /* PressableBase */.PressableHighlight;
+    let PressableHighlight = tmp2(4717).PressableHighlight;
   } else {
     PressableHighlight = closure_4;
   }
-  obj = { label };
-  obj = {};
+  function handleOnPress() {
+    let tmpResult;
+    if (closure_1 != null) {
+      tmpResult = tmp(!closure_0);
+    }
+    return tmpResult;
+  }
+  obj = { label, children: null };
   let tmp9;
   if (isAndroidResult) {
     tmp9 = handleOnPress;
   }
-  obj.onPress = tmp9;
-  obj.onAccessibilityTap = function onAccessibilityTap() {
-    callback2(!closure_0);
-    const timerId = setTimeout(() => {
-      if (null != outer1_1) {
-        outer1_1(!outer1_0);
-      }
-    });
+  obj = {
+    onPress: tmp9,
+    onAccessibilityTap() {
+      callback(!closure_0);
+      const timerId = setTimeout(() => {
+        if (closure_1 != null) {
+          tmp(!closure_0);
+        }
+      });
+    },
+    style: createCacheKey().button,
+    accessibilityRole: "switch",
+    accessibilityLabel: null,
+    accessibilityHint: null,
+    accessibilityState: null,
+    disabled: null,
+    children: null
   };
-  obj.style = _createForOfIteratorHelperLoose().button;
-  obj.accessibilityRole = "switch";
-  let tmp10 = subLabel;
-  if (null != accessibilityLabel) {
-    tmp10 = accessibilityLabel;
+  if (accessibilityLabel == null) {
+    accessibilityLabel = subLabel;
   }
-  obj.accessibilityLabel = tmp10;
-  obj.accessibilityHint = accessibilityHint;
-  const obj1 = { disabled, checked: tmp3[0] };
-  obj.accessibilityState = obj1;
-  obj.disabled = disabled;
-  const items1 = [callback2(FormControlText, { text: subLabel }), ];
-  const obj2 = { "aria-hidden": true, value, onValueChange: handleOnPress, disabled };
-  items1[1] = callback2(require(5538) /* FormSwitch */.FormSwitch, obj2);
-  obj.children = items1;
-  obj.children = closure_7(PressableHighlight, obj);
-  return callback2(require(6707) /* Input */.Input, obj);
+  obj[4] = accessibilityLabel;
+  obj[5] = accessibilityHint;
+  obj[6] = { disabled, checked: tmp5[0] };
+  obj[7] = disabled;
+  const items1 = [closure_6(FormControlText, { text: subLabel }), closure_6(require(5556) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
+  obj[8] = items1;
+  obj[1] = closure_7(PressableHighlight, obj);
+  return closure_6(require(6728) /* Input */.Input, obj);
 };

@@ -1,21 +1,21 @@
-// Module ID: 10049
-// Function ID: 77595
+// Module ID: 10070
+// Function ID: 10071
 // Name: useAvailableAndAddedGuilds
-// Dependencies: [5, 57, 31, 1838, 3793, 5005, 10043, 653, 566, 4594, 10047, 2]
+// Dependencies: [5, 32, 19, 1862, 3817, 5027, 10064, 676, 589, 4616, 10068, 2]
 // Exports: default
 
-// Module 10049 (useAvailableAndAddedGuilds)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10070 (useAvailableAndAddedGuilds)
+import insertUnsortedGuilds from "insertUnsortedGuilds";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
+import noop from "noop";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import closure_9 from "insertUnsortedGuilds";
+import isFetching from "isFetching";
 import { Permissions } from "ME";
 
 const require = arg1;
-const result = require("result").fileFinishedImporting("modules/directory_channels/useAvailableAndAddedGuilds.tsx");
+const result = require("noop").fileFinishedImporting("modules/directory_channels/useAvailableAndAddedGuilds.tsx");
 
 export default function useAvailableAndAddedGuilds(arg0, arg1) {
   const _require = arg0;
@@ -23,15 +23,15 @@ export default function useAvailableAndAddedGuilds(arg0, arg1) {
   const tmp = callback(React.useState(false), 2);
   let closure_2 = tmp[1];
   let obj = _require(stateFromStores[8]);
-  let items = [closure_10];
+  let items = [isFetching];
   stateFromStores = obj.useStateFromStores(items, () => outer1_10.getAdminGuildEntryIds(closure_1));
-  const items1 = [closure_9, _createForOfIteratorHelperLoose, closure_8];
+  const items1 = [closure_9, createGuildRecordFromRust, getUncachedChannelPermissions];
   const items2 = [arg0];
   const stateFromStoresArray = _require(stateFromStores[8]).useStateFromStoresArray(items1, () => {
     const flattenedGuildIds = outer1_9.getFlattenedGuildIds();
     const items = [];
-    const item = flattenedGuildIds.forEach((guildId) => {
-      const guild = outer2_7.getGuild(guildId);
+    const item = flattenedGuildIds.forEach((arg0) => {
+      const guild = outer2_7.getGuild(arg0);
       let canResult = null != guild;
       if (canResult) {
         canResult = outer2_8.can(outer2_11.ADMINISTRATOR, guild);
@@ -46,21 +46,74 @@ export default function useAvailableAndAddedGuilds(arg0, arg1) {
     return items;
   }, items2);
   importDefault(stateFromStores[9])(() => {
-    // CreateGeneratorClosureLongIndex (0x67)
-    stateFromStoresArray(tmp)();
+    stateFromStoresArray(function*() {
+      if (v0 === 2) {
+        v0 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          v0 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              v0 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              v0 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_0 = tmp2;
+              v0(true);
+              let obj1 = v0(outer1_3[10]);
+              c1 = 1;
+              v0 = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = obj1.fetchGuildEntriesForIds(c1, outer1_4.map((id) => id.id));
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            v0 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            v0 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            v0(false);
+            v0 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp15) {
+          v0 = tmp;
+          throw tmp15;
+        }
+      }
+    })();
   });
   obj = {
     availableGuilds: React.useMemo(() => stateFromStoresArray.filter((id) => {
-      let hasItem = null != outer1_3;
-      if (hasItem) {
-        hasItem = outer1_3.has(id.id);
+      let hasItem;
+      if (closure_3 != null) {
+        hasItem = closure_3.has(id.id);
       }
       return !hasItem;
     }), items3),
     addedGuilds: React.useMemo(() => stateFromStoresArray.filter((id) => {
       let hasItem;
-      if (null != outer1_3) {
-        hasItem = outer1_3.has(id.id);
+      if (closure_3 != null) {
+        hasItem = closure_3.has(id.id);
       }
       return hasItem;
     }), items4),

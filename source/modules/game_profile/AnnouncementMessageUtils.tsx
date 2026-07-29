@@ -1,15 +1,15 @@
-// Module ID: 8627
-// Function ID: 68336
+// Module ID: 8651
+// Function ID: 8652
 // Name: toAnnouncementMessages
-// Dependencies: [3803, 1882, 4393, 4352, 8628, 4386, 7974, 1212, 1443, 2]
+// Dependencies: [3827, 1906, 4416, 4377, 8652, 4409, 7999, 1236, 1467, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 8627 (toAnnouncementMessages)
-import { isMessageComponentsV2 } from "_callSuper";
+// Module 8651 (toAnnouncementMessages)
+import { isMessageComponentsV2 } from "hasFlag";
 
 const re4 = /^#{1,3}\s+(.+)$/;
 const re5 = /^https?:\/\/\S+$/;
-let result = require("toContentScanMetadata").fileFinishedImporting("modules/game_profile/AnnouncementMessageUtils.tsx");
+let result = require("messageAttachmentToUnfurledMediaItem").fileFinishedImporting("modules/game_profile/AnnouncementMessageUtils.tsx");
 
 export const toAnnouncementMessages = function toAnnouncementMessages(messages) {
   return messages.map((reactions) => {
@@ -17,237 +17,245 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
     let color;
     let title;
     let url;
-    let obj = outer1_0(outer1_2[5]);
-    const tmpResult = outer1_1(outer1_2[4])(obj.createMessageRecord(reactions));
-    const arr = (function extractContent(tmpResult) {
-      if (outer2_3(tmpResult)) {
-        const components = tmpResult.components;
-        const found = components.filter((type) => type.type === outer3_0(outer3_2[1]).ComponentType.TEXT_DISPLAY);
-        const mapped = found.map((content) => content.content);
-        return mapped.join("\n");
-      } else {
-        const content = tmpResult.content;
-        if (0 === content.length) {
-          const first = tmpResult.embeds[0];
-          let tmp4 = null;
-          if (null != first) {
-            const items = [];
-            if (null != first.rawTitle) {
-              const _HermesInternal = HermesInternal;
-              items.push("# " + first.rawTitle);
-            }
-            if (null != first.rawDescription) {
-              items.push(first.rawDescription);
-            }
-            let joined = null;
-            if (items.length > 0) {
-              joined = items.join("\n");
-            }
-            tmp4 = joined;
-          }
-          return tmp4;
-        }
-        tmp4 = content;
-      }
-    })(tmpResult);
-    const tmp = outer1_1(outer1_2[4]);
-    const index = arr.indexOf("\n");
-    let str = arr;
-    if (-1 !== index) {
-      str = arr.slice(0, index);
-    }
-    const match = str.match(outer1_4);
-    if (null != match) {
-      obj = { title: match[1].trim() };
-      let str3 = "";
-      if (!tmp5) {
-        const substr = arr.slice(index + 1);
-        str3 = substr.trimStart();
-      }
-      obj.body = str3;
-      const str2 = match[1];
+    let obj = found4(found6[5]);
+    const tmp2Result = found5(found6[4])(obj.createMessageRecord(reactions));
+    if (callback(tmp2Result)) {
+      const components = tmp2Result.components;
+      const found = components.filter((type) => type.type === found4(found6[1]).ComponentType.TEXT_DISPLAY);
+      const mapped = found.map((content) => content.content);
+      let joined = mapped.join("\n");
     } else {
-      obj = { body: arr };
-    }
-    reactions = reactions.reactions;
-    let reduced;
-    ({ title, body } = obj);
-    if (null != reactions) {
-      reduced = reactions.reduce((arg0, count) => arg0 + count.count, 0);
-    }
-    let num4 = 0;
-    if (null != reduced) {
-      num4 = reduced;
-    }
-    let tmp8;
-    if (arr !== tmpResult.content) {
-      if (!outer1_3(tmpResult)) {
-        let first = tmpResult.embeds[0];
-        let tmp10;
+      const content = tmp2Result.content;
+      if (0 === content.length) {
+        const first = tmp2Result.embeds[0];
+        let tmp9 = null;
         if (null != first) {
-          const author = first.author;
-          let name;
-          if (null != author) {
-            name = author.name;
+          const items = [];
+          if (null != first.rawTitle) {
+            const _HermesInternal = HermesInternal;
+            items.push("# " + first.rawTitle);
           }
-          const author2 = first.author;
-          let iconProxyURL;
-          if (null != author2) {
-            iconProxyURL = author2.iconProxyURL;
+          if (null != first.rawDescription) {
+            items.push(first.rawDescription);
           }
-          if (null == iconProxyURL) {
-            const author3 = first.author;
-            let iconURL;
-            if (null != author3) {
-              iconURL = author3.iconURL;
-            }
-            iconProxyURL = iconURL;
+          let joined1 = null;
+          if (items.length > 0) {
+            joined1 = items.join("\n");
           }
-          const footer = first.footer;
-          let text;
-          if (null != footer) {
-            text = footer.text;
-          }
-          if (null == text) {
-            const provider = first.provider;
-            let name1;
-            if (null != provider) {
-              name1 = provider.name;
-            }
-            text = name1;
-          }
-          const footer2 = first.footer;
-          let iconProxyURL1;
-          if (null != footer2) {
-            iconProxyURL1 = footer2.iconProxyURL;
-          }
-          if (null == iconProxyURL1) {
-            const footer3 = first.footer;
-            let iconURL1;
-            if (null != footer3) {
-              iconURL1 = footer3.iconURL;
-            }
-            iconProxyURL1 = iconURL1;
-          }
-          ({ url, color } = first);
-          let tmp18;
-          if (null != color) {
-            tmp18 = color;
-          }
-          let obj1 = { authorName: name, authorIconUrl: iconProxyURL, providerName: text, providerIconUrl: iconProxyURL1, url, color: tmp18 };
-          tmp10 = obj1;
+          tmp9 = joined1;
         }
-        tmp8 = tmp10;
+        if (tmp9 == null) {
+          tmp9 = content;
+        }
+        joined = tmp9;
+      } else {
+        joined = content;
       }
     }
-    let obj2 = {
-      id: tmpResult.id,
-      media: (function extractMedia(tmpResult) {
-        if (outer2_3(tmpResult)) {
-          const components = tmpResult.components;
-          const found = components.find((type) => type.type === outer3_0(outer3_2[1]).ComponentType.MEDIA_GALLERY);
-          let media;
-          if (null != found) {
-            const first = found.items[0];
-            if (null != first) {
-              media = first.media;
-            }
-          }
-          if (null != media) {
-            let obj = outer2_0(outer2_2[2]);
-            const unfurledMediaItemType = obj.getUnfurledMediaItemType(media);
-            if ("INVALID" !== unfurledMediaItemType) {
-              obj = {};
-              const merged = Object.assign(media);
-              obj["type"] = unfurledMediaItemType;
-              obj = { message: tmpResult };
-              obj["sourceMetadata"] = obj;
-              return obj;
-            }
-          }
+    if (callback(tmp2Result)) {
+      const components1 = tmp2Result.components;
+      const found1 = components1.find((type) => type.type === found4(found6[1]).ComponentType.MEDIA_GALLERY);
+      let media;
+      if (found1 != null) {
+        const first1 = found1.items[0];
+        if (first1 != null) {
+          media = first1.media;
         }
-        const attachments = tmpResult.attachments;
-        const found1 = attachments.find((content_type) => outer3_0(outer3_2[3]).isImageContentType(content_type.content_type));
-        if (null != found1) {
-          return outer2_0(outer2_2[2]).messageAttachmentToMediaItem(found1, tmpResult);
+      }
+      if (null != media) {
+        let tmp3Result = tmp3(tmp[2]);
+        const unfurledMediaItemType = tmp3Result.getUnfurledMediaItemType(media);
+        if ("INVALID" !== unfurledMediaItemType) {
+          obj = {};
+          const merged = Object.assign(media);
+          obj.type = unfurledMediaItemType;
+          obj = { message: null };
+          obj[0] = tmp2Result;
+          obj.sourceMetadata = obj;
+          let result = obj;
+        }
+        const index = joined.indexOf("\n");
+        let str9 = joined;
+        if (-1 !== index) {
+          str9 = joined.slice(0, index);
+        }
+        const match = str9.match(closure_4);
+        if (null != match) {
+          const obj1 = { title: null, body: null };
+          obj1[0] = match[1].trim();
+          let str11 = "";
+          if (!tmp28) {
+            const substr = joined.slice(index + 1);
+            str11 = substr.trimStart();
+          }
+          obj1[1] = str11;
+          let obj2 = obj1;
+          const str10 = match[1];
         } else {
-          const attachments1 = tmpResult.attachments;
-          const found2 = attachments1.find((content_type) => outer3_0(outer3_2[3]).isVideoContentType(content_type.content_type));
-          if (null != found2) {
-            return outer2_0(outer2_2[2]).messageAttachmentToMediaItem(found2, tmpResult);
-          } else {
-            let embeds = tmpResult.embeds;
-            const found3 = embeds.find((video) => null != video.video && null != video.thumbnail);
-            let thumbnail;
-            if (null != found3) {
-              thumbnail = found3.thumbnail;
+          obj2 = { body: null };
+          obj2[0] = joined;
+        }
+        reactions = reactions.reactions;
+        let num5;
+        ({ title, body } = obj2);
+        if (reactions != null) {
+          num5 = reactions.reduce((arg0, count) => arg0 + count.count, 0);
+        }
+        if (num5 == null) {
+          num5 = 0;
+        }
+        let tmp32;
+        if (joined !== tmp2Result.content) {
+          if (!tmp5(tmp2Result)) {
+            const first2 = tmp2Result.embeds[0];
+            let tmp34;
+            if (null != first2) {
+              const author = first2.author;
+              let name;
+              if (author != null) {
+                name = author.name;
+              }
+              const author2 = first2.author;
+              let iconProxyURL;
+              if (author2 != null) {
+                iconProxyURL = author2.iconProxyURL;
+              }
+              if (iconProxyURL == null) {
+                const author3 = first2.author;
+                let iconURL;
+                if (author3 != null) {
+                  iconURL = author3.iconURL;
+                }
+                iconProxyURL = iconURL;
+              }
+              const footer = first2.footer;
+              let text;
+              if (footer != null) {
+                text = footer.text;
+              }
+              if (text == null) {
+                const provider = first2.provider;
+                let name1;
+                if (provider != null) {
+                  name1 = provider.name;
+                }
+                text = name1;
+              }
+              const footer2 = first2.footer;
+              let iconProxyURL1;
+              if (footer2 != null) {
+                iconProxyURL1 = footer2.iconProxyURL;
+              }
+              if (iconProxyURL1 == null) {
+                const footer3 = first2.footer;
+                let iconURL1;
+                if (footer3 != null) {
+                  iconURL1 = footer3.iconURL;
+                }
+                iconProxyURL1 = iconURL1;
+              }
+              ({ url, color } = first2);
+              const obj3 = { authorName: null, authorIconUrl: null, providerName: null, providerIconUrl: null, url: null, color: null };
+              obj3[0] = name;
+              obj3[1] = iconProxyURL;
+              obj3[2] = text;
+              obj3[3] = iconProxyURL1;
+              obj3[4] = url;
+              obj3[5] = color;
+              tmp34 = obj3;
             }
-            if (null != thumbnail) {
-              let obj1 = { message: tmpResult };
-              const obj2 = { type: "embed" };
-              const embeds3 = tmpResult.embeds;
-              obj2.embedIndex = embeds3.findIndex((arg0) => arg0 === found3);
-              obj1.identifier = obj2;
-              return outer2_0(outer2_2[2]).embedMediaToMediaItem(found3.thumbnail, obj1, "IMAGE");
-            } else {
-              const embeds1 = tmpResult.embeds;
-              const found4 = embeds1.find((image) => null != image.image);
-              let image;
-              if (null != found4) {
-                image = found4.image;
-              }
-              if (null != image) {
-                let obj4 = outer2_0(outer2_2[2]);
-                const obj3 = { message: tmpResult };
-                obj4 = { type: "embed" };
-                let embeds2 = tmpResult.embeds;
-                obj4.embedIndex = embeds2.findIndex((arg0) => arg0 === found4);
-                obj3.identifier = obj4;
-                return obj4.embedMediaToMediaItem(found4.image, obj3, "IMAGE");
-              } else {
-                embeds2 = tmpResult.embeds;
-                const found5 = embeds2.find((thumbnail) => null != thumbnail.thumbnail);
-                let thumbnail1;
-                if (null != found5) {
-                  thumbnail1 = found5.thumbnail;
-                }
-                let result;
-                if (null != thumbnail1) {
-                  obj1 = outer2_0(outer2_2[2]);
-                  const obj5 = { message: tmpResult };
-                  const obj6 = { type: "embed" };
-                  embeds = tmpResult.embeds;
-                  obj6.embedIndex = embeds.findIndex((arg0) => arg0 === found5);
-                  obj5.identifier = obj6;
-                  result = obj1.embedMediaToMediaItem(found5.thumbnail, obj5, "IMAGE");
-                }
-                return result;
-              }
+            tmp32 = tmp34;
+          }
+        }
+        const obj4 = { id: null, media: null, title: null, body: null, content: null, timestamp: null, reactionCount: null, embedSource: null, poll: null };
+        obj4[0] = tmp2Result.id;
+        obj4[1] = result;
+        obj4[2] = title;
+        obj4[3] = body;
+        obj4[4] = joined;
+        obj4[5] = reactions.timestamp;
+        obj4[6] = num5;
+        obj4[7] = tmp32;
+        obj4[8] = tmp2Result.poll;
+        return obj4;
+      }
+    }
+    const attachments = tmp2Result.attachments;
+    const found2 = attachments.find((content_type) => found4(found6[3]).isImageContentType(content_type.content_type));
+    if (null != found2) {
+      tmp3Result = tmp3(tmp[2]);
+      result = tmp3Result.messageAttachmentToMediaItem(found2, tmp2Result);
+    } else {
+      const attachments1 = tmp2Result.attachments;
+      const found3 = attachments1.find((content_type) => found4(found6[3]).isVideoContentType(content_type.content_type));
+      if (null != found3) {
+        result = tmp3(tmp[2]).messageAttachmentToMediaItem(found3, tmp2Result);
+        const tmp3Result1 = tmp3(tmp[2]);
+      } else {
+        let embeds = tmp2Result.embeds;
+        found4 = embeds.find((video) => null != video.video && null != video.thumbnail);
+        let thumbnail;
+        if (found4 != null) {
+          thumbnail = found4.thumbnail;
+        }
+        if (null != thumbnail) {
+          const obj5 = { message: null, identifier: null };
+          obj5[0] = tmp2Result;
+          const obj6 = { type: "embed", embedIndex: null };
+          const embeds3 = tmp2Result.embeds;
+          obj6[1] = embeds3.findIndex((arg0) => arg0 === found4);
+          obj5[1] = obj6;
+          result = tmp3(tmp[2]).embedMediaToMediaItem(found4.thumbnail, obj5, "IMAGE");
+          const tmp3Result2 = tmp3(tmp[2]);
+        } else {
+          const embeds1 = tmp2Result.embeds;
+          found5 = embeds1.find((image) => null != image.image);
+          let image;
+          if (found5 != null) {
+            image = found5.image;
+          }
+          if (null != image) {
+            const obj7 = { message: null, identifier: null };
+            obj7[0] = tmp2Result;
+            const obj8 = { type: "embed", embedIndex: null };
+            let embeds2 = tmp2Result.embeds;
+            obj8[1] = embeds2.findIndex((arg0) => arg0 === found5);
+            obj7[1] = obj8;
+            result = tmp3(tmp[2]).embedMediaToMediaItem(found5.image, obj7, "IMAGE");
+            const tmp3Result3 = tmp3(tmp[2]);
+          } else {
+            embeds2 = tmp2Result.embeds;
+            found6 = embeds2.find((thumbnail) => null != thumbnail.thumbnail);
+            let thumbnail1;
+            if (found6 != null) {
+              thumbnail1 = found6.thumbnail;
+            }
+            if (null != thumbnail1) {
+              const obj9 = { message: null, identifier: null };
+              obj9[0] = tmp2Result;
+              const obj10 = { type: "embed", embedIndex: null };
+              embeds = tmp2Result.embeds;
+              obj10[1] = embeds.findIndex((arg0) => arg0 === found6);
+              obj9[1] = obj10;
+              result = tmp3(tmp[2]).embedMediaToMediaItem(found6.thumbnail, obj9, "IMAGE");
+              const tmp3Result4 = tmp3(tmp[2]);
             }
           }
         }
-      })(tmpResult),
-      title,
-      body,
-      content: arr,
-      timestamp: reactions.timestamp,
-      reactionCount: num4,
-      embedSource: tmp8,
-      poll: tmpResult.poll
-    };
-    return obj2;
+      }
+    }
   });
 };
 export const getPollExpiryLabel = function getPollExpiryLabel(poll) {
-  let result = require(7974) /* formatExpirationLabel */.formatExpirationLabel(poll.expiry);
-  if (null == result) {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    result = intl.string(require(1212) /* getSystemLocale */.t["e+J3JZ"]);
+  let result = require(7999) /* formatExpirationLabel */.formatExpirationLabel(poll.expiry);
+  if (result == null) {
+    const intl = tmp(1236).intl;
+    result = intl.string(tmp(1236).t["e+J3JZ"]);
   }
   return result;
 };
 export const getPosterUrl = function getPosterUrl(proxyUrl, arg1, c12) {
-  let str = importDefault(1443).toURLSafe(proxyUrl);
+  let str = importDefault(1467).toURLSafe(proxyUrl);
   str = null;
   if (null != str) {
     const searchParams = str.searchParams;

@@ -1,10 +1,10 @@
-// Module ID: 14686
-// Function ID: 111792
+// Module ID: 14711
+// Function ID: 14712
 // Name: calculateJaroWinklerDistance
 // Dependencies: [2]
 // Exports: calculateJaroWinklerSimilarity
 
-// Module 14686 (calculateJaroWinklerDistance)
+// Module 14711 (calculateJaroWinklerDistance)
 function calculateJaroWinklerDistance(formatted, arg1) {
   const diff = Math.floor(Math.max(formatted.length, arg1.length) / 2) - 1;
   const items = [];
@@ -14,84 +14,117 @@ function calculateJaroWinklerDistance(formatted, arg1) {
   if (0 < formatted.length) {
     do {
       let _Math = Math;
-      let bound = Math.max(0, num2 - diff);
+      let bound = Math.max(0, num - diff);
       let _Math2 = Math;
-      let sum = num;
-      if (bound <= Math.min(arg1.length, num2 + diff)) {
+      let sum = num + diff;
+      let tmp4 = num;
+      let tmp5 = num2;
+      let sum1 = num2;
+      if (bound <= Math.min(arg1.length, sum)) {
         while (true) {
-          if (formatted[num2] === arg1[bound]) {
+          let tmp7 = bound;
+          if (formatted[num] === arg1[bound]) {
             if (!items[bound]) {
               break;
             }
           }
           bound = bound + 1;
           let _Math3 = Math;
-          sum = num;
+          sum1 = num2;
         }
         items[bound] = true;
-        sum = num + 1;
+        sum1 = num2 + 1;
       }
-      num2 = num2 + 1;
-      num = sum;
-      num3 = sum;
-    } while (num2 < formatted.length);
+      num = num + 1;
+      num2 = sum1;
+      num3 = sum1;
+    } while (num < formatted.length);
   }
-  if (num3 > 0) {
+  if (0 < num3) {
     const _Math4 = Math;
     const _Math5 = Math;
     const diff1 = Math.floor(Math.max(formatted.length, arg1.length) / 2) - 1;
-    const obj = { a: "", b: "" };
     const items1 = [];
-    for (let num4 = 0; num4 < formatted.length; num4 = num4 + 1) {
-      let _Math6 = Math;
-      let bound1 = Math.max(0, num4 - diff1);
-      let _Math7 = Math;
-      if (bound1 <= Math.min(arg1.length, num4 + diff1)) {
-        while (true) {
-          if (formatted[num4] === arg1[bound1]) {
-            if (!items1[bound1]) {
-              break;
+    let str2 = "";
+    let num4 = 0;
+    let str3 = "";
+    if (0 < formatted.length) {
+      do {
+        let _Math6 = Math;
+        let bound1 = Math.max(0, num4 - diff1);
+        let _Math7 = Math;
+        let sum2 = num4 + diff1;
+        let tmp11 = str2;
+        let tmp12 = num4;
+        let sum3 = str2;
+        if (bound1 <= Math.min(arg1.length, sum2)) {
+          while (true) {
+            let tmp14 = bound1;
+            if (formatted[num4] === arg1[bound1]) {
+              if (!items1[bound1]) {
+                break;
+              }
             }
+            bound1 = bound1 + 1;
+            let _Math8 = Math;
+            sum3 = str2;
           }
-          bound1 = bound1 + 1;
-          let _Math8 = Math;
+          sum3 = str2 + formatted[num4];
+          items1[bound1] = true;
         }
-        obj.a = obj.a + formatted[num4];
-        items1[bound1] = true;
-      }
+        num4 = num4 + 1;
+        str2 = sum3;
+        str3 = sum3;
+      } while (num4 < formatted.length);
     }
     const items2 = [];
-    for (let num5 = 0; num5 < arg1.length; num5 = num5 + 1) {
-      let _Math9 = Math;
-      let bound2 = Math.max(0, num5 - diff1);
-      let _Math10 = Math;
-      if (bound2 <= Math.min(formatted.length, num5 + diff1)) {
-        while (true) {
-          if (arg1[num5] === formatted[bound2]) {
-            if (!items2[bound2]) {
-              break;
+    let str4 = "";
+    let num5 = 0;
+    let str5 = "";
+    if (0 < arg1.length) {
+      do {
+        let _Math9 = Math;
+        let bound2 = Math.max(0, num5 - diff1);
+        let _Math10 = Math;
+        let sum4 = num5 + diff1;
+        let tmp17 = str4;
+        let tmp18 = num5;
+        let sum5 = str4;
+        if (bound2 <= Math.min(formatted.length, sum4)) {
+          while (true) {
+            let tmp20 = bound2;
+            if (arg1[num5] === formatted[bound2]) {
+              if (!items2[bound2]) {
+                break;
+              }
             }
+            bound2 = bound2 + 1;
+            let _Math11 = Math;
+            sum5 = str4;
           }
-          bound2 = bound2 + 1;
-          let _Math11 = Math;
+          sum5 = str4 + arg1[num5];
+          items2[bound2] = true;
         }
-        obj.b = obj.b + arg1[num5];
-        items2[bound2] = true;
-      }
+        num5 = num5 + 1;
+        str4 = sum5;
+        str5 = sum5;
+      } while (num5 < arg1.length);
     }
     let num6 = 0;
     let num7 = 0;
     let num8 = 0;
-    if (0 < obj.a.length) {
+    if (0 < str3.length) {
       do {
-        let sum1 = num6;
-        if (obj.a[num7] !== obj.b[num7]) {
-          sum1 = num6 + 1;
+        let tmp21 = num6;
+        let tmp22 = num7;
+        let sum6 = num7;
+        if (str3[num6] !== str5[num6]) {
+          sum6 = num7 + 1;
         }
-        num7 = num7 + 1;
-        num6 = sum1;
-        num8 = sum1;
-      } while (num7 < obj.a.length);
+        num6 = num6 + 1;
+        num7 = sum6;
+        num8 = sum6;
+      } while (num6 < str3.length);
     }
     const _Math12 = Math;
     const result = (num3 / formatted.length + num3 / arg1.length + (num3 - Math.floor(num8 / 2)) / num3) / 3;
@@ -99,18 +132,18 @@ function calculateJaroWinklerDistance(formatted, arg1) {
     if (result < 0.7) {
       return result;
     } else {
-      let sum3 = num12;
+      let sum8 = num12;
       while (formatted[num12] === arg1[num12]) {
-        let sum2 = num12 + 1;
-        num12 = sum2;
-        if (sum2 < 4) {
+        let sum7 = num12 + 1;
+        num12 = sum7;
+        if (sum7 < 4) {
           continue;
         } else {
-          sum3 = sum2 + 1;
+          sum8 = sum7 + 1;
           break;
         }
         let num13 = 0.1;
-        return result + 0.1 * sum3 * (1 - result);
+        return result + 0.1 * sum8 * (1 - result);
       }
     }
   } else {
@@ -121,7 +154,7 @@ let result = require("set").fileFinishedImporting("modules/search/StringMatchUti
 
 export const calculateJaroWinklerSimilarity = function calculateJaroWinklerSimilarity(c0, str) {
   let obj = arg2;
-  if (null == arg2) {
+  if (arg2 == null) {
     obj = {};
   }
   const caseSensitive = obj.caseSensitive;

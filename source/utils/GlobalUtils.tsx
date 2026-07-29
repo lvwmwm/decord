@@ -1,10 +1,10 @@
-// Module ID: 1327
-// Function ID: 15572
+// Module ID: 1351
+// Function ID: 1352
 // Name: isDiscordFrontendDevelopment
 // Dependencies: [2]
 // Exports: assertNever, isDiscordBackendDevelopment, isDiscordFrontendDevelopment, isIn, isInSet, isNotNullish, isObjectEntryNotNullish
 
-// Module 1327 (isDiscordFrontendDevelopment)
+// Module 1351 (isDiscordFrontendDevelopment)
 let closure_0 = "development" === window.GLOBAL_ENV.PROJECT_ENV;
 const result = require("set").fileFinishedImporting("utils/GlobalUtils.tsx");
 

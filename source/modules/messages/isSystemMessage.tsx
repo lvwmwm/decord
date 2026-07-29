@@ -1,13 +1,13 @@
-// Module ID: 5904
-// Function ID: 51969
+// Module ID: 5923
+// Function ID: 5924
 // Name: isSystemMessage
-// Dependencies: [663, 2]
+// Dependencies: [686, 2]
 // Exports: default
 
-// Module 5904 (isSystemMessage)
+// Module 5923 (isSystemMessage)
 const result = require("set").fileFinishedImporting("modules/messages/isSystemMessage.tsx");
 
 export default function isSystemMessage(type) {
-  const USER_MESSAGE = require(663) /* set */.MessageTypesSets.USER_MESSAGE;
+  const USER_MESSAGE = require(686) /* set */.MessageTypesSets.USER_MESSAGE;
   return !USER_MESSAGE.has(type.type);
 };

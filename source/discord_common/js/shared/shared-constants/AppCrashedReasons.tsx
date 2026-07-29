@@ -1,14 +1,14 @@
-// Module ID: 13233
-// Function ID: 101793
+// Module ID: 13256
+// Function ID: 13257
 // Name: set
 // Dependencies: [2]
 
-// Module 13233 (set)
+// Module 13256 (set)
 import set from "set";
 
-const obj = {};
+const obj = { ALL: null };
 let set = new Set(["socket_crashed", "unhandled_js_error", "unhandled_native_error"]);
-obj.ALL = set;
+obj[0] = set;
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/AppCrashedReasons.tsx");
 
 export const AppCrashedReasons = { UNHANDLED_NATIVE_ERROR: "unhandled_native_error", UNHANDLED_JS_ERROR: "unhandled_js_error", SOCKET_CRASHED: "socket_crashed" };

@@ -1,466 +1,442 @@
-// Module ID: 6135
-// Function ID: 54653
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [5, 6, 7, 15, 17, 18, 653, 4158, 3, 4707, 22, 4741, 4746, 4708, 631, 2]
+// Module ID: 6151
+// Function ID: 6152
+// Name: _fileSize
+// Dependencies: [5, 676, 4182, 3, 652, 12, 4763, 4768, 4729, 4730, 2]
 
-// Module 6135 (_createForOfIteratorHelperLoose)
-import _inherits from "_inherits";
-import ME from "ME";
-import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING";
-import set from "set";
-import _getPrototypeOf from "_getPrototypeOf";
-import closure_8 from "_inherits";
+// Module 6151 (_fileSize)
+import apply from "apply";
 import { AbortCodes } from "ME";
 import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING";
-import importDefaultResult from "_possibleConstructorReturn";
+import { EventEmitter } from "EventEmitter";
 
-const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
+let require = arg1;
+let closure_6 = new require("timestamp")("UploaderBase.tsx");
+class UploaderBase extends EventEmitter {
+  constructor() {
+    tmp3 = new UploaderBase(tmp2, new.target, new.target, tmp);
+    // ThrowIfThisInitialized (0x7c)
+    closure_0 = tmp3;
+    tmp3._aborted = false;
+    tmp3._errored = false;
+    tmp3.files = [];
+    tmp3._lastUpdate = 0;
+    tmp3._loaded = 0;
+    tmp3.alreadyStarted = false;
+    tmp3._handleStart = function _handleStart(_cancel) {
+      tmp3._cancel = _cancel;
+      if (!tmp3.alreadyStarted) {
+        obj.emit("start", obj._file);
       }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
+      tmp3.alreadyStarted = true;
     };
+    tmp3._handleProgress = function _handleProgress(loaded, total, arg2) {
+      const timestamp = Date.now();
+      let obj = tmp3(outer1_2[8]);
+      const rounded = Math.floor((loaded - tmp3._loaded) / ((timestamp - tmp3._lastUpdate) / 1000));
+      if (null != arg2) {
+        const items = obj2._file.items;
+        if (items != null) {
+          const item = items.forEach((item) => {
+            item.item.progress = table[item.id];
+          });
+        }
+      }
+      arg2._lastUpdate = timestamp;
+      arg2._loaded = loaded;
+      obj = {};
+      const merged = Object.assign(obj2._file);
+      obj.currentSize = total;
+      obj.progress = obj.calculateProgress(loaded, total);
+      obj.rate = rounded;
+      arg2._file = obj;
+      arg2.emit("progress", arg2._file);
+    };
+    tmp3._handleException = function _handleException(closure_4) {
+      let obj = { reason: null };
+      obj = { type: outer1_5.ERROR_SOURCE_UNKNOWN, msg: closure_4.toString() };
+      obj[0] = obj;
+      tmp3._handleError(obj);
+    };
+    tmp3._handleAborted = function _handleAborted() {
+      const result = tmp3.clearProcessingMessageInterval();
+    };
+    tmp3._handleError = function _handleError(arg0) {
+      let body;
+      let code;
+      let reason;
+      ({ code, reason, body } = arg0);
+      const result = tmp3.clearProcessingMessageInterval();
+      if (!tmp3._aborted) {
+        obj._errored = true;
+        const _JSON = JSON;
+        const _HermesInternal = HermesInternal;
+        outer1_6.log("_handleError: " + code + " (" + JSON.stringify(reason) + ") for " + obj.id);
+        obj.emit("error", obj._file, code, body, reason);
+        obj.removeAllListeners();
+      }
+    };
+    tmp3._handleComplete = function _handleComplete(arg0) {
+      const result = tmp3.clearProcessingMessageInterval();
+      outer1_6.log("_handleComplete for " + tmp3.id);
+      tmp3.emit("complete", tmp3._file, arg0);
+      tmp3.removeAllListeners();
+    };
+    obj = require("apply");
+    tmp3.id = obj.uniqueId("Uploader");
+    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "channel" };
+    return tmp3;
   }
 }
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-importDefaultResult = new importDefaultResult("UploaderBase.tsx");
-const tmp4 = ((EventEmitter) => {
-  class UploaderBase {
-    constructor() {
-      self = this;
-      tmp = outer1_4(this, UploaderBase);
-      obj = outer1_7(UploaderBase);
-      tmp2 = outer1_6;
-      if (outer1_14()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_7;
-        constructResult = Reflect.construct(obj, [], outer1_7(self).constructor);
+const prototype = UploaderBase.prototype;
+prototype["_fileSize"] = function _fileSize() {
+  const files = this.files;
+  return files.reduce((arg0, currentSize) => {
+    let num = currentSize.currentSize;
+    if (num == null) {
+      num = 0;
+    }
+    return arg0 + num;
+  }, 0);
+};
+prototype["compressAndCheckFileSize"] = function compressAndCheckFileSize() {
+  const self = this;
+  return callback(function*() {
+    if (c9 === 2) {
+      c9 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp8 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
       } else {
-        constructResult = obj.apply(self, undefined);
+        return { value: "HermesInternal", done: null };
       }
-      tmp2Result = tmp2(self, constructResult);
-      apply = tmp2Result;
-      tmp2Result._aborted = false;
-      tmp2Result._errored = false;
-      tmp2Result.files = [];
-      tmp2Result._lastUpdate = 0;
-      tmp2Result._loaded = 0;
-      tmp2Result.alreadyStarted = false;
-      tmp2Result._handleStart = (_cancel) => {
-        tmp2Result._cancel = _cancel;
-        if (!tmp2Result.alreadyStarted) {
-          tmp2Result.emit("start", tmp2Result._file);
-        }
-        tmp2Result.alreadyStarted = true;
-      };
-      tmp2Result._handleProgress = (_loaded, currentSize) => {
-        const timestamp = Date.now();
-        let obj = tmp2Result(UploaderBase[9]);
-        const rounded = Math.floor((_loaded - tmp2Result._loaded) / ((timestamp - tmp2Result._lastUpdate) / 1000));
-        if (null != arg2) {
-          const items = tmp2Result._file.items;
-          if (null != items) {
-            const item = items.forEach((item) => {
-              item.item.progress = table[item.id];
-            });
-          }
-        }
-        arg2._lastUpdate = timestamp;
-        arg2._loaded = _loaded;
-        obj = {};
-        const merged = Object.assign(tmp2Result._file);
-        obj["currentSize"] = currentSize;
-        obj["progress"] = obj.calculateProgress(_loaded, currentSize);
-        obj["rate"] = rounded;
-        arg2._file = obj;
-        arg2.emit("progress", arg2._file);
-      };
-      tmp2Result._handleException = (arg0) => {
-        let obj = {};
-        obj = { type: outer2_10.ERROR_SOURCE_UNKNOWN, msg: arg0.toString() };
-        obj.reason = obj;
-        tmp2Result._handleError(obj);
-      };
-      tmp2Result._handleAborted = () => {
-        const result = tmp2Result.clearProcessingMessageInterval();
-      };
-      tmp2Result._handleError = (arg0) => {
-        let body;
-        let code;
-        let reason;
-        ({ code, reason, body } = arg0);
-        const result = tmp2Result.clearProcessingMessageInterval();
-        if (!tmp2Result._aborted) {
-          tmp2Result._errored = true;
-          const _JSON = JSON;
-          const _HermesInternal = HermesInternal;
-          outer2_11.log("_handleError: " + code + " (" + JSON.stringify(reason) + ") for " + tmp2Result.id);
-          tmp2Result.emit("error", tmp2Result._file, code, body, reason);
-          tmp2Result.removeAllListeners();
-        }
-      };
-      tmp2Result._handleComplete = (arg0) => {
-        const result = tmp2Result.clearProcessingMessageInterval();
-        outer2_11.log("_handleComplete for " + tmp2Result.id);
-        tmp2Result.emit("complete", tmp2Result._file, arg0);
-        tmp2Result.removeAllListeners();
-      };
-      obj2 = f54671(UploaderBase[10]);
-      tmp2Result.id = obj2.uniqueId("Uploader");
-      obj = { id: null, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0 };
-      obj.id = tmp2Result.id;
-      obj.items = undefined;
-      tmp2Result._file = obj;
-      return tmp2Result;
-    }
-  }
-  callback3(UploaderBase, EventEmitter);
-  let obj = {
-    key: "_fileSize",
-    value() {
-      const files = this.files;
-      return files.reduce((arg0, currentSize) => {
-        currentSize = currentSize.currentSize;
-        let num = 0;
-        if (null != currentSize) {
-          num = currentSize;
-        }
-        return arg0 + num;
-      }, 0);
-    }
-  };
-  let items = [obj, , , , , , , , , , ];
-  obj = { key: "compressAndCheckFileSize" };
-  let closure_1 = callback(async function() {
-    const self = this;
-    let obj = callback(UploaderBase[11]);
-    const first = self.files[0];
-    let target;
-    if (null != first) {
-      const item = first.item;
-      if (null != item) {
-        target = item.target;
-      }
-    }
-    const uploadTarget = obj.getUploadTarget(target);
-    let obj2 = uploadTarget;
-    if (self.files.length > uploadTarget.getMaxAttachmentsCount()) {
-      const _HermesInternal2 = HermesInternal;
-      outer2_11.log("Too many attachments for " + self.id);
-      obj = { code: outer2_9.TOO_MANY_ATTACHMENTS };
-      self._handleError(obj);
-      return false;
     } else {
-      obj = { location: "UploaderBase.compressAndCheckFileSize" };
-      const kestrelConfig = callback(UploaderBase[12]).getKestrelConfig(obj);
-      const _HermesInternal3 = HermesInternal;
-      outer2_11.log("compressing files for " + self.id);
-      const tmp34 = outer2_12(self.files);
-      const iter3 = tmp34();
-      let iter2 = iter3;
-      if (!iter3.done) {
-        const value = iter2.value;
-        yield value.reactNativeCompressAndExtractData();
-        while (true) {
-          let tmp6 = value;
-          if (value.isCancelled()) {
-            let tmp13 = outer2_11;
-            let tmp14 = value;
-            let _HermesInternal = HermesInternal;
-            let logResult2 = outer2_11.log("compressAndCheckFileSize() file has been cancelled for compression - " + value.id);
+      try {
+        c9 = 2;
+        if (0 === c8) {
+          if (arg0 === 1) {
+            c9 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c9 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
           } else {
-            let tmp7 = value;
-            let currentSize = value.currentSize;
-            let tmp8 = currentSize;
-            let num = 0;
-            if (null != currentSize) {
-              num = currentSize;
+            let closure_5 = tmp4;
+            let closure_4 = tmp6;
+            let store;
+            let files;
+            let c2;
+            let effectiveKestrelLimit;
+            const first = outer1_0.files[0];
+            let target;
+            if (first != null) {
+              const item = first.item;
+              if (item != null) {
+                target = item.target;
+              }
             }
-            if (0 === num) {
-              break;
+            const uploadTarget = outer1_0(outer1_2[6]).getUploadTarget(target);
+            store = uploadTarget;
+            if (outer1_0.files.length > uploadTarget.getMaxAttachmentsCount()) {
+              const _HermesInternal2 = HermesInternal;
+              outer1_6.log("Too many attachments for " + outer1_0.id);
+              const obj1 = { code: null };
+              obj1[0] = outer1_4.TOO_MANY_ATTACHMENTS;
+              outer1_0._handleError(obj1);
+              c9 = 3;
+              return { value: false, done: true };
             } else {
-              let tmp36 = callback;
-              let tmp37 = UploaderBase;
-              let obj11 = callback(UploaderBase[12]);
-              let tmp38 = kestrelConfig;
-              let tmp39 = uploadTarget;
-              let tmp40 = value;
-              let effectiveKestrelLimit = obj11.getEffectiveKestrelLimit(kestrelConfig, obj2.getMaxFileSize(value.channelId));
-              let currentSize2 = value.currentSize;
-              let tmp42 = currentSize2;
-              let num2 = 0;
-              if (null != currentSize2) {
-                num2 = currentSize2;
-              }
-              let tmp9 = effectiveKestrelLimit;
-              if (num2 > effectiveKestrelLimit) {
-                let obj1 = {};
-                let tmp10 = outer2_9;
-                obj1.code = outer2_9.ENTITY_TOO_LARGE;
-                obj2 = {};
-                let tmp11 = outer2_10;
-                obj2.type = outer2_10.POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE;
-                obj1.reason = obj2;
-                let _handleErrorResult1 = self._handleError(obj1);
-                let flag = false;
-                return false;
+              files = outer1_0(outer1_2[7]).getKestrelConfig({ location: "UploaderBase.compressAndCheckFileSize" });
+              const _HermesInternal3 = HermesInternal;
+              outer1_6.log("compressing files for " + outer1_0.id);
+              files = outer1_0.files;
+              store = files[Symbol.iterator]();
+              const obj15 = outer1_0(outer1_2[7]);
+            }
+            const obj14 = outer1_0(outer1_2[6]);
+          }
+        } else if (1 === tmp9) {
+          let c7 = 0;
+          store.return();
+          throw closure_6;
+        } else if (2 === tmp9) {
+          c7 = 1;
+          closure_4 = closure_6;
+          outer1_0._handleException(closure_4);
+          c7 = 0;
+          store.return();
+          c9 = 3;
+          return { value: false, done: true };
+        } else if (arg0 === 1) {
+          c9 = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          c7 = 0;
+          store.return();
+          c9 = 3;
+          const obj2 = { value: null, done: true };
+          obj2[0] = arg1;
+          return obj2;
+        } else if (c2.isCancelled()) {
+          const _HermesInternal = HermesInternal;
+          outer1_6.log("compressAndCheckFileSize() file has been cancelled for compression - " + c2.id);
+          c7 = 0;
+        } else {
+          const currentSize = c2.currentSize;
+          c2 = currentSize;
+          if (currentSize == null) {
+            c2 = 0;
+          }
+          if (0 === c2) {
+            const obj3 = { code: null };
+            obj3[0] = outer1_4.ENTITY_EMPTY;
+            store._handleError(obj3);
+            c7 = 0;
+            store.return();
+            c9 = 3;
+            return { value: false, done: true };
+          } else {
+            effectiveKestrelLimit = outer1_0(outer1_2[7]).getEffectiveKestrelLimit(files, store.getMaxFileSize(c2.channelId));
+            const currentSize2 = c2.currentSize;
+            effectiveKestrelLimit = currentSize2;
+            if (currentSize2 == null) {
+              effectiveKestrelLimit = 0;
+            }
+            if (effectiveKestrelLimit > effectiveKestrelLimit) {
+              obj = { code: null, reason: null };
+              obj[0] = outer1_4.ENTITY_TOO_LARGE;
+              const obj4 = { type: null };
+              obj4[0] = outer1_5.POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE;
+              obj[1] = obj4;
+              store._handleError(obj);
+              c7 = 0;
+              store.return();
+              c9 = 3;
+              return { value: false, done: true };
+            } else {
+              c7 = 0;
+            }
+            const obj13 = outer1_0(outer1_2[7]);
+          }
+        }
+        if (store === undefined) {
+          let flag = store._fileSize() <= store.getMaxTotalAttachmentSize();
+          if (!flag) {
+            const obj5 = { code: null, reason: null };
+            obj5[0] = outer1_4.ENTITY_TOO_LARGE;
+            const obj6 = { type: null };
+            obj6[0] = outer1_5.POSTCOMPRESSION_SUM_TOO_LARGE;
+            obj5[1] = obj6;
+            outer1_0._handleError(obj5);
+            flag = false;
+          }
+          c9 = 3;
+          const obj7 = { value: null, done: true };
+          obj7[0] = flag;
+          return obj7;
+        } else {
+          c2 = tmp46;
+          c7 = 2;
+          c8 = 3;
+          c9 = 1;
+          const obj8 = { value: null, done: false };
+          obj8[0] = c2.reactNativeCompressAndExtractData();
+          return obj8;
+        }
+      } catch (tmp65) {
+        closure_6 = tmp65;
+        if (tmp5 === c7) {
+          c9 = tmp3;
+          throw tmp65;
+        } else if (tmp2 === tmp67) {
+          c8 = tmp2;
+        } else {
+          c8 = tmp;
+        }
+      }
+    }
+  })();
+};
+prototype["setUploadingTextForUI"] = function setUploadingTextForUI() {
+  const files = this.files;
+  const files2 = this.files;
+  const someResult = files.some((isImage) => isImage.isImage);
+  const _fileSizeResult = this._fileSize();
+  tmp2.log("setUploadingTextForUI - total content: " + _fileSizeResult + " bytes and " + this.files.length + " attachments for " + this.id);
+  const obj = {};
+  const merged = Object.assign(this._file);
+  obj.totalPostCompressionSize = _fileSizeResult;
+  obj.currentSize = _fileSizeResult;
+  obj.hasVideo = files2.some((isVideo) => isVideo.isVideo);
+  obj.hasImage = someResult;
+  obj.attachmentsCount = this.files.length;
+  obj.items = this.files;
+  this._file = obj;
+};
+prototype["_recomputeProgress"] = function _recomputeProgress() {
+  let loaded;
+  let total;
+  const result = this._recomputeProgressTotal();
+  ({ loaded, total } = result);
+  this._handleProgress(loaded, total, this._recomputeProgressByFile());
+};
+prototype["_recomputeProgressTotal"] = function _recomputeProgressTotal() {
+  const obj = { loaded: null, total: null };
+  const files = this.files;
+  obj[0] = files.reduce((arg0, loaded) => {
+    let num = loaded.loaded;
+    if (num == null) {
+      num = 0;
+    }
+    return arg0 + num;
+  }, 0);
+  obj[1] = this._fileSize();
+  return obj;
+};
+prototype["_recomputeProgressByFile"] = function _recomputeProgressByFile() {
+  let obj = {};
+  const files = this.files;
+  const item = files.forEach((id) => {
+    obj = obj(outer1_2[8]);
+    obj[id.id] = obj.calculateProgress(id.loaded, id.currentSize);
+  });
+  return obj;
+};
+prototype["_addAttachmentsToPayload"] = function _addAttachmentsToPayload(arg0, arg1, arg2) {
+  const merged = Object.assign(arg0);
+  importDefault(12);
+  const items = [...arg2];
+  return importDefault(12).set({}, arg1, items);
+};
+prototype["clearProcessingMessageInterval"] = function clearProcessingMessageInterval() {
+  const self = this;
+  if (null != this.processingMessageChangeInterval) {
+    const _clearInterval = clearInterval;
+    clearInterval(self.processingMessageChangeInterval);
+    self.processingMessageChangeInterval = undefined;
+  }
+};
+prototype["cancel"] = function cancel() {
+  const self = this;
+  tmp2.log("cancel() for " + this.id);
+  if (!this._aborted) {
+    self._aborted = true;
+    const _cancel = self._cancel;
+    if (_cancel != null) {
+      _cancel();
+    }
+    const files = self.files;
+    const item = files.forEach((cancel) => cancel.cancel());
+    self._handleComplete();
+  }
+};
+prototype["cancelItem"] = function cancelItem(itemId) {
+  let closure_0 = itemId;
+  const self = this;
+  return callback(function*() {
+    if (c4 === 2) {
+      c4 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp5 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_2 = tmp3;
+            let closure_1 = tmp2;
+            let closure_0;
+            const _HermesInternal = HermesInternal;
+            outer1_6.log("Cancel called for " + outer1_1.id + " for item " + outer1_0);
+            const files = outer1_1.files;
+            const found = files.find((id) => id.id === closure_0);
+            closure_0 = found;
+            if (null != found) {
+              if (!found.isCancelled()) {
+                const files1 = outer1_1.files;
+                const index = files1.indexOf(found);
+                closure_0 = 0;
+                const files2 = outer1_1.files;
+                const items = [];
+                closure_0 = HermesBuiltin.arraySpread(files2.slice(0, index), closure_0);
+                const files3 = outer1_1.files;
+                closure_0 = HermesBuiltin.arraySpread(files3.slice(index + 1), closure_0);
+                outer1_1.files = items;
+                const obj1 = {};
+                const merged = Object.assign(outer1_1._file);
+                obj1.items = outer1_1.files;
+                outer1_1._file = obj1;
+                let obj2 = outer1_0(outer1_2[9]);
+                c3 = 1;
+                c4 = 1;
+                obj2 = { value: null, done: false };
+                obj2[0] = obj2.cancelGetAttachmentFile(found);
+                return obj2;
               }
             }
+            c4 = 3;
           }
-          let tmp16 = tmp34;
-          let iter = tmp35();
-          iter2 = iter;
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          closure_0.cancel();
+          closure_1.emit("cancel-upload-item", closure_1._file);
+          if (0 === closure_1.files.length) {
+            closure_1.cancel();
+          }
         }
-      }
-      const obj9 = callback(UploaderBase[12]);
-      tmp35 = tmp34;
-      let num3 = self._fileSize() > obj2.getMaxTotalAttachmentSize();
-      if (num3) {
-        const obj3 = { code: outer2_9.ENTITY_TOO_LARGE };
-        const obj4 = { type: outer2_10.POSTCOMPRESSION_SUM_TOO_LARGE };
-        obj3.reason = obj4;
-        self._handleError(obj3);
-        num3 = 1;
-      }
-      return !num3;
-    }
-  });
-  obj.value = function compressAndCheckFileSize() {
-    return callback2(...arguments);
-  };
-  items[1] = obj;
-  obj = {
-    key: "setUploadingTextForUI",
-    value() {
-      let files;
-      let files2;
-      ({ files, files: files2 } = this);
-      const someResult = files.some((isImage) => isImage.isImage);
-      const _fileSizeResult = this._fileSize();
-      outer1_11.log("setUploadingTextForUI - total content: " + _fileSizeResult + " bytes and " + this.files.length + " attachments for " + this.id);
-      const obj = {};
-      const merged = Object.assign(this._file);
-      obj["totalPostCompressionSize"] = _fileSizeResult;
-      obj["currentSize"] = _fileSizeResult;
-      obj["hasVideo"] = files2.some((isVideo) => isVideo.isVideo);
-      obj["hasImage"] = someResult;
-      obj["attachmentsCount"] = this.files.length;
-      obj["items"] = this.files;
-      this._file = obj;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "_recomputeProgress",
-    value() {
-      let loaded;
-      let total;
-      const result = this._recomputeProgressTotal();
-      ({ loaded, total } = result);
-      this._handleProgress(loaded, total, this._recomputeProgressByFile());
-    }
-  };
-  items[4] = {
-    key: "_recomputeProgressTotal",
-    value() {
-      const obj = {};
-      const files = this.files;
-      obj.loaded = files.reduce((arg0, loaded) => {
-        loaded = loaded.loaded;
-        let num = 0;
-        if (null != loaded) {
-          num = loaded;
-        }
-        return arg0 + num;
-      }, 0);
-      obj.total = this._fileSize();
-      return obj;
-    }
-  };
-  items[5] = {
-    key: "_recomputeProgressByFile",
-    value() {
-      let obj = {};
-      const files = this.files;
-      const item = files.forEach((id) => {
-        obj = obj(UploaderBase[9]);
-        obj[id.id] = obj.calculateProgress(id.loaded, id.currentSize);
-      });
-      return obj;
-    }
-  };
-  items[6] = {
-    key: "_addAttachmentsToPayload",
-    value(arg0, arg1, arg2) {
-      const merged = Object.assign(arg0);
-      callback2(UploaderBase[10]);
-      const items = [...arg2];
-      return callback2(UploaderBase[10]).set({}, arg1, items);
-    }
-  };
-  items[7] = {
-    key: "clearProcessingMessageInterval",
-    value() {
-      const self = this;
-      if (null != this.processingMessageChangeInterval) {
-        const _clearInterval = clearInterval;
-        clearInterval(self.processingMessageChangeInterval);
-        self.processingMessageChangeInterval = undefined;
+        c4 = 3;
+        obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } catch (tmp31) {
+        c4 = tmp;
+        throw tmp31;
       }
     }
-  };
-  items[8] = {
-    key: "cancel",
-    value() {
-      const self = this;
-      outer1_11.log("cancel() for " + this.id);
-      if (!this._aborted) {
-        self._aborted = true;
-        const _cancel = self._cancel;
-        if (null != _cancel) {
-          _cancel.call(self);
-        }
-        const files = self.files;
-        const item = files.forEach((cancel) => cancel.cancel());
-        self._handleComplete();
-      }
-    }
-  };
-  const obj7 = { key: "cancelItem" };
-  let closure_0 = callback(async function(arg0) {
-    const self = this;
-    const callback = arg0;
-    outer2_11.log("Cancel called for " + self.id + " for item " + arg0);
-    const files = self.files;
-    const found = files.find((id) => id.id === closure_0);
-    if (null != found) {
-      if (!found.isCancelled()) {
-        const files1 = self.files;
-        const index = files1.indexOf(found);
-        const files2 = self.files;
-        const items = [];
-        const files3 = self.files;
-        let arraySpreadResult = HermesBuiltin.arraySpread(files2.slice(0, index), 0);
-        arraySpreadResult = HermesBuiltin.arraySpread(files3.slice(index + 1), arraySpreadResult);
-        self.files = items;
-        const obj = {};
-        const merged = Object.assign(self._file);
-        obj["items"] = self.files;
-        self._file = obj;
-        yield callback(UploaderBase[13]).cancelGetAttachmentFile(found);
-        found.cancel();
-        self.emit("cancel-upload-item", self._file);
-        if (0 === self.files.length) {
-          self.cancel();
-        }
-        const obj3 = callback(UploaderBase[13]);
-      }
-    }
-  });
-  obj7.value = function cancelItem(itemId) {
-    return callback(...arguments);
-  };
-  items[9] = obj7;
-  items[10] = {
-    key: "upload",
-    value(items) {
-      const self = this;
-      if (null != this._cancel) {
-        const _Error = Error;
-        const error = new Error("Uploader.upload(...): An upload is already in progress.");
-        throw error;
-      } else {
-        const _Date = Date;
-        self._lastUpdate = Date.now();
-        self._loaded = 0;
-        const obj = { id: self.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items };
-        self._file = obj;
-      }
-    }
-  };
-  return callback2(UploaderBase, items);
-})(require("EventEmitter").EventEmitter);
-let result = require("_defineProperties").fileFinishedImporting("lib/uploader/UploaderBase.tsx");
+  })();
+};
+prototype["upload"] = function upload(arg0) {
+  const self = this;
+  if (null != this._cancel) {
+    const _Error = Error;
+    const error = new Error("Uploader.upload(...): An upload is already in progress.");
+    throw error;
+  } else {
+    const _Date = Date;
+    self._lastUpdate = Date.now();
+    self._loaded = 0;
+    const obj = { id: null, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: null };
+    obj[0] = self.id;
+    obj[9] = arg0;
+    self._file = obj;
+  }
+};
+const tmp2 = new require("timestamp")("UploaderBase.tsx");
+let result = require("MESSAGE_GROUP_SPACING").fileFinishedImporting("lib/uploader/UploaderBase.tsx");
 
-export default tmp4;
+export default UploaderBase;

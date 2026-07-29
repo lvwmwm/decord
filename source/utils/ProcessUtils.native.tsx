@@ -1,324 +1,280 @@
-// Module ID: 5941
-// Function ID: 52514
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 27, 5942, 2]
+// Module ID: 5960
+// Function ID: 5961
+// Name: getHermesInstrumentedStatsSummary
+// Dependencies: [17, 5961, 2]
 
-// Module 5941 (_isNativeReflectConstruct)
-import ProcessUtils from "ProcessUtils";
-import set from "set";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
+// Module 5960 (getHermesInstrumentedStatsSummary)
 import { NativeModules } from "get ActivityIndicator";
+import { ProcessUtils } from "ElectronProcessType";
 
-function _isNativeReflectConstruct() {
-  let ProcessUtils = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return ProcessUtils;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function getHermesInstrumentedStatsSummary() {
+let c1 = function getHermesInstrumentedStatsSummary() {
   const _HermesInternal = HermesInternal;
   if (null != _HermesInternal) {
-    if ("object" === typeof _HermesInternal) {
+    if (typeof _HermesInternal !== "window") {
       const getInstrumentedStats = _HermesInternal.getInstrumentedStats;
-      if ("function" === typeof getInstrumentedStats) {
-        const instrumentedStats = getInstrumentedStats();
-        if (null != instrumentedStats) {
-          if ("object" === typeof tmp3) {
-            const _Object = Object;
-            const entries = Object.entries(instrumentedStats);
-            const found = entries.filter((arg0) => {
-              let tmp2;
-              [, tmp2] = arg0;
-              let isFiniteResult = tmp3;
-              if ("number" === typeof tmp2) {
-                const _Number = Number;
-                isFiniteResult = Number.isFinite(tmp);
+      if (typeof getInstrumentedStats === "find") {
+        try {
+          const instrumentedStats = getInstrumentedStats();
+          if (null != instrumentedStats) {
+            if (typeof tmp3 !== "window") {
+              const _Object = Object;
+              const entries = Object.entries(instrumentedStats);
+              const found = entries.filter((arg0) => {
+                let tmp;
+                [, tmp] = arg0;
+                let isFiniteResult = typeof tmp === "Object";
+                if (typeof tmp !== "os") {
+                  const _Number = Number;
+                  isFiniteResult = Number.isFinite(tmp);
+                }
+                return isFiniteResult;
+              });
+              const substr = found.slice(0, 6);
+              const mapped = substr.map((arg0) => {
+                let tmp;
+                let tmp2;
+                [tmp, tmp2] = arg0;
+                return "" + tmp + "=" + tmp2;
+              });
+              let joined;
+              if (mapped.length > 0) {
+                joined = mapped.join(", ");
               }
-              return isFiniteResult;
-            });
-            const substr = found.slice(0, 6);
-            const mapped = substr.map((arg0) => {
-              let tmp;
-              let tmp2;
-              [tmp, tmp2] = arg0;
-              return "" + tmp + "=" + tmp2;
-            });
-            let joined;
-            if (mapped.length > 0) {
-              joined = mapped.join(", ");
+              return joined;
             }
-            return joined;
           }
+        } catch (err) {
+          return tmp;
         }
       }
     }
   }
-}
-let tmp2 = ((ProcessUtils) => {
-  class ProcessUtilsIOS {
-    constructor() {
-      self = this;
-      tmp = ProcessUtilsIOS(this, apply);
-      obj = outer1_3(apply);
-      tmp2 = outer1_2;
-      if (outer1_6()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_3;
-        constructResult = Reflect.construct(obj, [], outer1_3(self).constructor);
-      } else {
-        constructResult = obj.apply(self, undefined);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      apply = tmp2Result;
-      tmp2Result.shouldCollectHermesInstrumentedStats = false;
-      prop = undefined;
-      if (null != outer1_5) {
-        tmp8 = outer1_5;
-        prop = outer1_5.SystemResourceManager;
-      }
-      SystemResourceManager = prop;
-      tmp9 = null == prop || null == prop.getCpuCoreCount;
-      if (!tmp9) {
-        cpuCoreCount = prop.getCpuCoreCount((cpuCoreCount) => {
-          ProcessUtils.cpuCoreCount = cpuCoreCount;
+};
+let prop = NativeModules;
+class ProcessUtilsIOS extends ProcessUtils {
+  constructor() {
+    c1 = undefined;
+    tmp5 = new ProcessUtilsIOS(tmp4, tmp3, new.target, new.target, undefined, tmp2, tmp, ProcessUtilsIOS);
+    // ThrowIfThisInitialized (0x7c)
+    c1 = tmp5;
+    tmp5.shouldCollectHermesInstrumentedStats = false;
+    prop = undefined;
+    if (SystemResourceManager != null) {
+      prop = SystemResourceManager.SystemResourceManager;
+    }
+    SystemResourceManager = prop;
+    if (prop != null) {
+      getCpuCoreCount = prop.getCpuCoreCount;
+      if (getCpuCoreCount != null) {
+        cpuCoreCount = getCpuCoreCount((cpuCoreCount) => {
+          tmp.cpuCoreCount = cpuCoreCount;
         });
       }
-      timerId = setInterval(() => {
-        let tmp = null == prop;
-        if (!tmp) {
-          tmp = null == prop.getCurrentCpuUsagePercent;
-        }
-        if (!tmp) {
-          const currentCpuUsagePercent = prop.getCurrentCpuUsagePercent((arg0) => {
-            let tmp2;
-            if (arg0 >= 0) {
-              tmp2 = arg0;
+    }
+    timerId = setInterval(() => {
+      if (prop != null) {
+        const getCurrentCpuUsagePercent = tmp2.getCurrentCpuUsagePercent;
+        if (getCurrentCpuUsagePercent != null) {
+          let currentCpuUsagePercent = getCurrentCpuUsagePercent((arg0) => {
+            let tmp3;
+            if (tmp2 >= 0) {
+              tmp3 = tmp2;
             }
-            outer1_0.cpuPercentage = tmp2;
+            tmp.cpuPercentage = tmp3;
           });
         }
-        let tmp5 = null == prop;
-        if (!tmp5) {
-          tmp5 = null == prop.getCumulativeCpuUsage;
-        }
-        if (!tmp5) {
-          const cumulativeCpuUsage = prop.getCumulativeCpuUsage((usage) => {
-            if (usage >= 0) {
-              const obj = { usage };
+      }
+      if (prop != null) {
+        const getCumulativeCpuUsage = tmp2.getCumulativeCpuUsage;
+        if (getCumulativeCpuUsage != null) {
+          currentCpuUsagePercent = getCumulativeCpuUsage((arg0) => {
+            if (arg0 >= 0) {
+              const obj = { usage: null, sampleTime: null };
+              obj[0] = arg0;
               const _performance = performance;
-              obj.sampleTime = performance.now();
-              outer1_0.cumulativeCpuUsage = obj;
+              obj[1] = performance.now();
+              tmp.cumulativeCpuUsage = obj;
+              throw tmp;
             }
           });
         }
-        let tmp9 = null == prop;
-        if (!tmp9) {
-          tmp9 = null == prop.getCurrentMemoryUsageKb;
-        }
-        if (!tmp9) {
-          const currentMemoryUsageKb = prop.getCurrentMemoryUsageKb((arg0) => {
-            let tmp2;
-            if (arg0 >= 0) {
-              tmp2 = arg0;
+      }
+      if (prop != null) {
+        const getCurrentMemoryUsageKb = tmp2.getCurrentMemoryUsageKb;
+        if (getCurrentMemoryUsageKb != null) {
+          currentCpuUsagePercent = getCurrentMemoryUsageKb((arg0) => {
+            let tmp3;
+            if (tmp2 >= 0) {
+              tmp3 = tmp2;
             }
-            outer1_0.memory = tmp2;
+            tmp.memory = tmp3;
           });
         }
-        let tmp14;
-        if (tmp2Result.shouldCollectHermesInstrumentedStats) {
-          tmp14 = outer2_7();
+      }
+      let tmp4;
+      if (tmp.shouldCollectHermesInstrumentedStats) {
+        tmp4 = _undefined();
+      }
+      currentCpuUsagePercent.hermesInstrumentedStatsSummary = tmp4;
+    }, 1000);
+    return tmp5;
+  }
+}
+const prototype = ProcessUtilsIOS.prototype;
+prototype["getProcessUptime"] = function getProcessUptime() {
+  return null;
+};
+prototype["getCumulativeCPUUsage"] = function getCumulativeCPUUsage() {
+  return this.cumulativeCpuUsage;
+};
+prototype["getCurrentCPUUsagePercent"] = function getCurrentCPUUsagePercent() {
+  return this.cpuPercentage;
+};
+prototype["getCurrentMemoryUsageKB"] = function getCurrentMemoryUsageKB() {
+  return this.memory;
+};
+prototype["setShouldCollectHermesInstrumentedStats"] = function setShouldCollectHermesInstrumentedStats(shouldCollectHermesInstrumentedStats) {
+  this.shouldCollectHermesInstrumentedStats = shouldCollectHermesInstrumentedStats;
+  let tmp;
+  if (shouldCollectHermesInstrumentedStats) {
+    tmp = _undefined();
+  }
+  this.hermesInstrumentedStatsSummary = tmp;
+};
+prototype["getCurrentHermesInstrumentedStatsSummary"] = function getCurrentHermesInstrumentedStatsSummary() {
+  return this.shouldCollectHermesInstrumentedStats ? this.hermesInstrumentedStatsSummary : undefined;
+};
+prototype["enablePerfMemoryHooks"] = function enablePerfMemoryHooks() {
+  return null;
+};
+prototype["disablePerfMemoryHooks"] = function disablePerfMemoryHooks() {
+  return null;
+};
+prototype["getPerfAttributedMemory"] = function getPerfAttributedMemory() {
+  return null;
+};
+prototype["getPerfAttributedMemoryCallstacks"] = function getPerfAttributedMemoryCallstacks() {
+  return null;
+};
+prototype["getPerfAttributedMemoryStats"] = function getPerfAttributedMemoryStats() {
+  return null;
+};
+prototype["startCPUProfiling"] = function startCPUProfiling() {
+  return null;
+};
+prototype["stopCPUProfiling"] = function stopCPUProfiling() {
+  return Promise.resolve(null);
+};
+prototype["enablePAMemoryProfiler"] = function enablePAMemoryProfiler() {
+  return null;
+};
+prototype["disablePAMemoryProfiler"] = function disablePAMemoryProfiler() {
+  return null;
+};
+prototype["getPerfAttributedPAMemory"] = function getPerfAttributedPAMemory() {
+  return null;
+};
+prototype["getPerfAttributedPAMemoryCallstacks"] = function getPerfAttributedPAMemoryCallstacks() {
+  return null;
+};
+prototype["getPartitionAllocatorStats"] = function getPartitionAllocatorStats() {
+  return null;
+};
+prototype["enableProfilingV8Heap"] = function enableProfilingV8Heap() {
+
+};
+prototype["disableProfilingV8Heap"] = function disableProfilingV8Heap() {
+
+};
+prototype["getProfilerV8MemoryCallstacks"] = function getProfilerV8MemoryCallstacks() {
+  return null;
+};
+prototype["getMemoryUsageDetails"] = function getMemoryUsageDetails() {
+  return { 0: this.memory };
+};
+prototype["getMemoryUsageElectronRenderer"] = function getMemoryUsageElectronRenderer() {
+  return null;
+};
+prototype["getMemoryPrivateUsageElectronRenderer"] = function getMemoryPrivateUsageElectronRenderer() {
+  return null;
+};
+prototype["getMemoryUsageElectronRendererUsedHeapSize"] = function getMemoryUsageElectronRendererUsedHeapSize() {
+  return null;
+};
+prototype["getMemoryHeapStats"] = function getMemoryHeapStats() {
+  return null;
+};
+prototype["getBlinkMemoryInfo"] = function getBlinkMemoryInfo() {
+  return null;
+};
+function getMemoryUsageElectronProcessTypeDetails() {
+  return null;
+}
+prototype["getMemoryUsageElectronProcessTypeDetails"] = getMemoryUsageElectronProcessTypeDetails;
+prop = undefined;
+c1 = undefined;
+tmp = new tmp(tmp4, tmp3, tmp2, ProcessUtilsIOS, new.target, undefined, NativeModules, globalThis, getMemoryUsageElectronProcessTypeDetails, require, dependencyMap, exports);
+// ThrowIfThisInitialized (0x7c)
+c1 = tmp;
+tmp.shouldCollectHermesInstrumentedStats = false;
+prop = undefined;
+if (NativeModules != null) {
+  prop = NativeModules.SystemResourceManager;
+}
+if (prop != null) {
+  let getCpuCoreCount = prop.getCpuCoreCount;
+  if (getCpuCoreCount != null) {
+    let cpuCoreCount = getCpuCoreCount((cpuCoreCount) => {
+      tmp.cpuCoreCount = cpuCoreCount;
+    });
+  }
+}
+let timerId = setInterval(() => {
+  if (prop != null) {
+    const getCurrentCpuUsagePercent = tmp2.getCurrentCpuUsagePercent;
+    if (getCurrentCpuUsagePercent != null) {
+      let currentCpuUsagePercent = getCurrentCpuUsagePercent((arg0) => {
+        let tmp3;
+        if (tmp2 >= 0) {
+          tmp3 = tmp2;
         }
-        tmp2Result.hermesInstrumentedStatsSummary = tmp14;
-      }, 1000);
-      return tmp2Result;
+        tmp.cpuPercentage = tmp3;
+      });
     }
   }
-  callback2(ProcessUtilsIOS, ProcessUtils);
-  let obj = {
-    key: "getProcessUptime",
-    value() {
-      return null;
+  if (prop != null) {
+    const getCumulativeCpuUsage = tmp2.getCumulativeCpuUsage;
+    if (getCumulativeCpuUsage != null) {
+      currentCpuUsagePercent = getCumulativeCpuUsage((arg0) => {
+        if (arg0 >= 0) {
+          const obj = { usage: null, sampleTime: null };
+          obj[0] = arg0;
+          const _performance = performance;
+          obj[1] = performance.now();
+          tmp.cumulativeCpuUsage = obj;
+          throw tmp;
+        }
+      });
     }
-  };
-  const items = [obj, , , , , , , , , , , , , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "getCumulativeCPUUsage",
-    value() {
-      return this.cumulativeCpuUsage;
+  }
+  if (prop != null) {
+    const getCurrentMemoryUsageKb = tmp2.getCurrentMemoryUsageKb;
+    if (getCurrentMemoryUsageKb != null) {
+      currentCpuUsagePercent = getCurrentMemoryUsageKb((arg0) => {
+        let tmp3;
+        if (tmp2 >= 0) {
+          tmp3 = tmp2;
+        }
+        tmp.memory = tmp3;
+      });
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "getCurrentCPUUsagePercent",
-    value() {
-      return this.cpuPercentage;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "getCurrentMemoryUsageKB",
-    value() {
-      return this.memory;
-    }
-  };
-  items[4] = {
-    key: "setShouldCollectHermesInstrumentedStats",
-    value(shouldCollectHermesInstrumentedStats) {
-      this.shouldCollectHermesInstrumentedStats = shouldCollectHermesInstrumentedStats;
-      let tmp;
-      if (shouldCollectHermesInstrumentedStats) {
-        tmp = outer1_7();
-      }
-      this.hermesInstrumentedStatsSummary = tmp;
-    }
-  };
-  items[5] = {
-    key: "getCurrentHermesInstrumentedStatsSummary",
-    value() {
-      return this.shouldCollectHermesInstrumentedStats ? this.hermesInstrumentedStatsSummary : undefined;
-    }
-  };
-  items[6] = {
-    key: "enablePerfMemoryHooks",
-    value() {
-      return null;
-    }
-  };
-  items[7] = {
-    key: "disablePerfMemoryHooks",
-    value() {
-      return null;
-    }
-  };
-  items[8] = {
-    key: "getPerfAttributedMemory",
-    value() {
-      return null;
-    }
-  };
-  items[9] = {
-    key: "getPerfAttributedMemoryCallstacks",
-    value() {
-      return null;
-    }
-  };
-  items[10] = {
-    key: "getPerfAttributedMemoryStats",
-    value() {
-      return null;
-    }
-  };
-  items[11] = {
-    key: "startCPUProfiling",
-    value() {
-      return null;
-    }
-  };
-  items[12] = {
-    key: "stopCPUProfiling",
-    value() {
-      return Promise.resolve(null);
-    }
-  };
-  items[13] = {
-    key: "enablePAMemoryProfiler",
-    value() {
-      return null;
-    }
-  };
-  items[14] = {
-    key: "disablePAMemoryProfiler",
-    value() {
-      return null;
-    }
-  };
-  items[15] = {
-    key: "getPerfAttributedPAMemory",
-    value() {
-      return null;
-    }
-  };
-  items[16] = {
-    key: "getPerfAttributedPAMemoryCallstacks",
-    value() {
-      return null;
-    }
-  };
-  items[17] = {
-    key: "getPartitionAllocatorStats",
-    value() {
-      return null;
-    }
-  };
-  items[18] = {
-    key: "enableProfilingV8Heap",
-    value() {
+  }
+  let tmp4;
+  if (tmp.shouldCollectHermesInstrumentedStats) {
+    tmp4 = _undefined();
+  }
+  currentCpuUsagePercent.hermesInstrumentedStatsSummary = tmp4;
+}, 1000);
+const result = require("set").fileFinishedImporting("utils/ProcessUtils.native.tsx");
 
-    }
-  };
-  items[19] = {
-    key: "disableProfilingV8Heap",
-    value() {
-
-    }
-  };
-  items[20] = {
-    key: "getProfilerV8MemoryCallstacks",
-    value() {
-      return null;
-    }
-  };
-  items[21] = {
-    key: "getMemoryUsageDetails",
-    value() {
-      return { [0]: this.memory };
-    }
-  };
-  items[22] = {
-    key: "getMemoryUsageElectronRenderer",
-    value() {
-      return null;
-    }
-  };
-  items[23] = {
-    key: "getMemoryPrivateUsageElectronRenderer",
-    value() {
-      return null;
-    }
-  };
-  items[24] = {
-    key: "getMemoryUsageElectronRendererUsedHeapSize",
-    value() {
-      return null;
-    }
-  };
-  items[25] = {
-    key: "getMemoryHeapStats",
-    value() {
-      return null;
-    }
-  };
-  items[26] = {
-    key: "getBlinkMemoryInfo",
-    value() {
-      return null;
-    }
-  };
-  items[27] = {
-    key: "getMemoryUsageElectronProcessTypeDetails",
-    value() {
-      return null;
-    }
-  };
-  return callback(ProcessUtilsIOS, items);
-})(require("ProcessUtils").ProcessUtils);
-tmp2 = new tmp2();
-let result = require("_possibleConstructorReturn").fileFinishedImporting("utils/ProcessUtils.native.tsx");
-
-export default tmp2;
+export default tmp;

@@ -1,22 +1,22 @@
-// Module ID: 15344
-// Function ID: 116903
+// Module ID: 15377
+// Function ID: 15378
 // Name: AddEmojiButton
-// Dependencies: [5, 57, 31, 27, 5222, 1853, 33, 1212, 4165, 689, 9312, 6057, 4695, 6555, 7884, 8161, 9316, 4012, 8800, 1450, 5533, 4161, 15341, 4697, 3976, 3877, 15337, 5119, 1392, 6706, 4004, 6661, 4111, 14210, 15290, 2]
+// Dependencies: [5, 32, 19, 17, 5244, 1877, 21, 1236, 4189, 712, 9336, 6074, 4717, 6576, 7909, 8185, 9340, 4036, 8824, 1474, 5551, 4185, 15374, 4719, 4000, 3901, 15370, 5141, 1416, 6727, 4028, 6682, 4135, 14232, 15323, 2]
 // Exports: default, getStatusReplyContent
 
-// Module 15344 (AddEmojiButton)
+// Module 15377 (AddEmojiButton)
 import set from "set";
-import _slicedToArray from "_slicedToArray";
-import IconButton from "IconButton";
-import { View } from "preload";
+import SendMessageIcon from "SendMessageIcon";
+import useWindowDimensions from "useWindowDimensions";
+import { View } from "getGuildThemeName";
 import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
 import { EmojiIntention } from "set";
-import jsxProd from "LoadingIndicator";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "Text";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_9;
+let c10;
+let c9;
+let unpackModuleId;
 const require = arg1;
 function AddEmojiButton(channel) {
   channel = channel.channel;
@@ -29,266 +29,404 @@ function AddEmojiButton(channel) {
     obj = { pickerIntention: outer1_8.REACTION, autoFocus: false, startExpanded: false, onPressEmoji, channel, reactionType: channel(onPressEmoji[11]).ReactionTypes.NORMAL };
     const result = obj.openEmojiPickerActionSheet(obj);
   }, items);
-  let obj = { onPress: callback, style: items1, accessible: true };
-  items1 = [_createForOfIteratorHelperLoose().emoji];
+  let obj = { onPress: callback, style: items1, accessible: true, accessibilityLabel: null, disabled: null, children: null };
+  items1 = [createCacheKey().emoji];
   const intl = channel(onPressEmoji[7]).intl;
-  obj.accessibilityLabel = intl.string(channel(onPressEmoji[7]).t.lfIHs4);
-  obj.disabled = channel.disabled;
-  obj.children = callback2(channel(onPressEmoji[13]).ReactionIcon, { size: "md" });
+  obj[3] = intl.string(channel(onPressEmoji[7]).t.lfIHs4);
+  obj[4] = channel.disabled;
+  obj[5] = callback2(channel(onPressEmoji[13]).ReactionIcon, { size: "md" });
   return callback2(channel(onPressEmoji[12]).PressableHighlight, obj);
 }
 function ReactActionSheetBase(content) {
   let author;
   let c10;
   let channel;
-  let tmp18;
+  let tmp14;
   content = content.content;
+  let _require = content;
   const onPressEmoji = content.onPressEmoji;
   const sendMessage = content.sendMessage;
+  let callback;
+  let first;
+  let React;
+  let hotwheels_gaming_activity;
   let first1;
   let c8;
   let ref;
-  let callback3;
+  c10 = undefined;
   let callback1;
   let width;
   ({ author, channel } = content);
   const tmp = width();
-  let callback = tmp;
-  const tmp2 = first(React.useState(false), 2);
-  first = tmp2[0];
-  React = tmp2[1];
+  callback = tmp;
+  let obj = React;
+  const tmp3 = first(React.useState(false), 2);
+  first = tmp3[0];
+  React = tmp3[1];
   let str = "unknown";
-  let hotwheels_gaming_activity = "unknown";
-  const intl = content(sendMessage[7]).intl;
+  hotwheels_gaming_activity = "unknown";
+  const intl = _require(sendMessage[7]).intl;
   const content_type = content.content_type;
-  if (content(sendMessage[14]).ContentInventoryEntryType.TOP_GAME !== content_type) {
-    if (content(sendMessage[14]).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+  if (_require(sendMessage[14]).ContentInventoryEntryType.TOP_GAME !== content_type) {
+    if (tmp5(tmp6[14]).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
       let stringResult1 = stringResult;
-      if (content(sendMessage[14]).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+      if (tmp5(tmp6[14]).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
         hotwheels_gaming_activity = "hotwheels_custom_status";
-        const intl5 = content(sendMessage[7]).intl;
-        stringResult1 = intl5.string(content(sendMessage[7]).t.umDRYM);
+        const intl2 = tmp5(tmp6[7]).intl;
+        stringResult1 = intl2.string(tmp5(tmp6[7]).t.umDRYM);
         str = "hotwheels_custom_status";
       }
     }
-    const tmp10 = first(React.useState(""), 2);
-    first1 = tmp10[0];
-    c8 = tmp11;
-    ref = React.useRef(null);
-    [tmp18, c10] = first(React.useState(null), 2);
-    // CreateGeneratorClosureLongIndex (0x67)
-    let items = [content.id, str, first1, sendMessage];
-    callback = React.useCallback(callback(React.useEffect(() => {
+    let tmp2Result = tmp2(obj.useState(""), 2);
+    first1 = tmp2Result[0];
+    c8 = tmp10;
+    ref = obj.useRef(null);
+    tmp2Result = tmp2(obj.useState(null), 2);
+    [tmp14, c10] = tmp2Result;
+    const effect = obj.useEffect(() => {
       const timerId = setTimeout(() => {
-        const current = outer1_9.current;
+        const current = ref.current;
         let nextPromise;
-        if (null != current) {
-          if (null != current.capture) {
-            nextPromise = current.capture().then((arg0) => outer2_10(arg0));
-            const captureResult = current.capture();
+        if (current != null) {
+          const capture = current.capture;
+          if (capture != null) {
+            nextPromise = capture().then((arg0) => callback(arg0));
+            const captureResult = capture();
           }
         }
         return nextPromise;
       }, 500);
-    }, [])), items);
+    }, []);
+    let items = [content.id, str, first1, sendMessage];
+    _require = undefined;
+    callback = obj.useCallback(callback(function*() {
+      if (dependencyMap === 2) {
+        dependencyMap = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          dependencyMap = 2;
+          if (0 === v0) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_0 = tmp4;
+              outer1_5(true);
+              v0(8185).itemInteracted(outer1_0.id, outer1_6, "press_reply_send");
+              const obj5 = v0(8185);
+              const obj1 = { itemId: null, itemType: null, actionParameters: null };
+              obj1[0] = outer1_0.id;
+              obj1[1] = outer1_6;
+              obj1[2] = { actionGestureType: "press", actionTargetElement: "reply_button", actionIntentType: "reply", actionDestinationType: null };
+              v0(8185).feedItemActioned(obj1);
+              v0 = 1;
+              dependencyMap = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = dependencyMap(outer1_7);
+              return obj2;
+            }
+          } else if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            callback(false);
+            callback2("");
+            dependencyMap = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp10) {
+          dependencyMap = tmp;
+          throw tmp10;
+        }
+      }
+    }), items);
+    _require = callback((arg0) => {
+      let closure_0 = arg0;
+      let c2 = 0;
+      let c3 = 0;
+      return (function*(arg0) {
+        if (c3 === 2) {
+          c3 = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp4 === 3) {
+          if (arg0 === 1) {
+            throw arg1;
+          } else if (arg0 === 2) {
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c3 = 2;
+            if (0 === c2) {
+              if (arg0 === 1) {
+                c3 = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                c3 = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                let closure_1 = tmp2;
+                outer1_5(true);
+                onPressEmoji(sendMessage[15]).itemInteracted(user.id, outer1_6, "press_emoji_send");
+                const obj5 = onPressEmoji(sendMessage[15]);
+                const obj1 = { itemId: null, itemType: null, actionParameters: null };
+                obj1[0] = user.id;
+                obj1[1] = outer1_6;
+                obj1[2] = { actionGestureType: "press", actionTargetElement: "reaction_picker_button", actionIntentType: "open", actionDestinationType: null };
+                onPressEmoji(sendMessage[15]).feedItemActioned(obj1);
+                c2 = 1;
+                c3 = 1;
+                const obj2 = { value: null, done: false };
+                obj2[0] = outer1_1(user);
+                return obj2;
+              }
+            } else if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              outer1_5(false);
+              c3 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } catch (tmp9) {
+            c3 = tmp;
+            throw tmp9;
+          }
+        }
+      })();
+    });
     let items1 = [content.id, str, onPressEmoji];
-    callback1 = React.useCallback((() => {
-      // CreateGeneratorClosureLongIndex (0x67)
-      let closure_0 = tmp(tmp);
-      return function() {
-        return callback(...arguments);
-      };
-    })(), items1);
-    let obj = content(sendMessage[16]);
-    const frequentlyUsedReactionEmojis = obj.useFrequentlyUsedReactionEmojis(null);
-    const tmp17 = first(React.useState(null), 2);
-    let obj1 = content(sendMessage[18]);
-    const clientThemesOverride = obj1.useClientThemesOverride();
-    width = onPressEmoji(sendMessage[19])().width;
+    callback1 = obj.useCallback(function() {
+      const self = this;
+      const apply = closure_0.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    }, items1);
+    let tmp5Result = tmp5(tmp6[16]);
+    const frequentlyUsedReactionEmojis = tmp5Result.useFrequentlyUsedReactionEmojis(null);
+    tmp5Result = tmp5(tmp6[18]);
+    const clientThemesOverride = tmp5Result.useClientThemesOverride();
+    width = onPressEmoji(tmp6[19])().width;
     const items2 = [width];
-    const memo = React.useMemo(() => Math.floor(Math.min(width, first1) / 52), items2);
-    obj = {};
-    obj = { style: tmp.header };
-    obj1 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: stringResult1 };
-    obj.children = ref(content(sendMessage[21]).Text, obj1);
-    obj.header = ref(hotwheels_gaming_activity, obj);
-    let obj2 = { style: tmp.container };
-    let obj3 = {};
+    const memo = obj.useMemo(() => Math.floor(Math.min(width, first1) / 52), items2);
+    obj = { header: null, children: null };
+    obj = { style: null, children: null };
+    obj[0] = tmp.header;
+    let obj1 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
+    obj1[2] = stringResult1;
+    obj[1] = ref(tmp5(tmp6[21]).Text, obj1);
+    obj[0] = ref(hotwheels_gaming_activity, obj);
+    let obj2 = { style: null, children: null };
+    obj2[0] = tmp.container;
     const items3 = [tmp.preview, ];
     let loading = null;
-    if (null == tmp18) {
+    if (null == tmp14) {
       loading = tmp.loading;
     }
+    let obj3 = { style: null, children: null };
     items3[1] = loading;
-    obj3.style = items3;
-    const obj4 = { ref, options: { fileName: "icymi_content", format: "png", quality: 1 } };
-    const obj5 = { style: tmp.base };
-    const tmp28 = onPressEmoji(sendMessage[17])();
-    const tmp32 = ref;
-    const tmp36 = callback3;
-    const tmp37 = hotwheels_gaming_activity;
-    const tmp38 = ref;
-    const tmp39 = hotwheels_gaming_activity;
-    const obj6 = { absolute: true, wide: true, tall: true, mix: true };
-    const obj7 = {};
-    const tmp44 = onPressEmoji(sendMessage[22]);
-    obj7.dark = content(sendMessage[24]).OverlayOpacity.LEVEL_7;
-    obj7.light = content(sendMessage[24]).OverlayOpacity.LEVEL_8;
-    obj6.mixAmount = obj7;
-    const items4 = [ref(onPressEmoji(sendMessage[23]), obj6), ];
-    const obj8 = { gradient: tmp28 };
-    const obj9 = {};
+    obj3[0] = items3;
+    const obj4 = { ref: null, options: null, children: null };
+    obj4[0] = ref;
+    obj4[1] = { fileName: "icymi_content", format: "png", quality: 1 };
+    let obj5 = { style: null, children: null };
+    obj5[0] = tmp.base;
+    let tmp19Result = tmp19(tmp6[22]);
+    const obj6 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
+    const obj7 = { dark: null, light: null };
+    tmp19Result = tmp19(tmp6[23]);
+    obj7[0] = tmp5(tmp6[24]).OverlayOpacity.LEVEL_7;
+    obj7[1] = tmp5(tmp6[24]).OverlayOpacity.LEVEL_8;
+    obj6[4] = obj7;
+    const items4 = [ref(tmp19Result, obj6), ];
+    const obj8 = { gradient: null, children: null };
+    obj8[0] = onPressEmoji(tmp6[17])();
+    const obj9 = { style: null, children: null };
     const items5 = [tmp.contentContainer, clientThemesOverride];
-    obj9.style = items5;
-    const obj10 = { content, renderForScreenshot: true };
-    obj9.children = ref(onPressEmoji(sendMessage[26]), obj10);
-    obj8.children = ref(hotwheels_gaming_activity, obj9);
-    items4[1] = ref(content(sendMessage[25]).ThemeContextProvider, obj8);
-    obj5.children = items4;
-    obj4.children = callback3(hotwheels_gaming_activity, obj5);
-    obj3.children = ref(tmp44, obj4);
-    const items6 = [tmp38(tmp39, obj3), ];
-    if (null != tmp18) {
-      const obj11 = {};
-      const obj12 = {};
+    obj9[0] = items5;
+    const obj10 = { content: null, renderForScreenshot: true };
+    obj10[0] = content;
+    obj9[1] = ref(onPressEmoji(tmp6[26]), obj10);
+    obj8[1] = ref(hotwheels_gaming_activity, obj9);
+    items4[1] = ref(tmp5(tmp6[25]).ThemeContextProvider, obj8);
+    obj5[1] = items4;
+    obj4[2] = c10(hotwheels_gaming_activity, obj5);
+    obj3[1] = ref(tmp19Result, obj4);
+    const items6 = [ref(hotwheels_gaming_activity, obj3), ];
+    if (null != tmp14) {
       const items7 = [tmp.emojis, ];
       let submitting = null;
       if (first) {
         submitting = tmp.submitting;
       }
+      const obj11 = { children: null };
+      const obj12 = { style: null, children: null };
       items7[1] = submitting;
-      obj12.style = items7;
+      obj12[0] = items7;
       const substr = frequentlyUsedReactionEmojis.slice(0, memo - 1);
       const items8 = [
         substr.map((id) => {
-              let closure_0 = id;
+              const lib = id;
               if (null != id.id) {
-                let obj = {
-                  onPress() {
-                      return outer1_11(closure_0);
-                    },
-                  style: ref.emoji,
-                  disabled: first
+                let obj = { onPress: null, style: null, disabled: null, children: null };
+                obj[0] = function onPress() {
+                  return outer1_11(closure_0);
                 };
-                obj = {};
+                obj[1] = _undefined.emoji;
+                obj[2] = first;
+                obj = { style: null, source: null };
                 const items = [, ];
-                ({ defaultEmoji: arr[0], emojiImage: arr[1] } = ref);
-                obj.style = items;
-                obj = {};
+                ({ defaultEmoji: arr[0], emojiImage: arr[1] } = _undefined);
+                obj[0] = items;
+                obj = { uri: null };
                 let obj3 = onPressEmoji(sendMessage[28]);
-                const obj1 = {};
-                ({ id: obj5.id, animated: obj5.animated } = id);
-                obj1.size = 48;
-                obj.uri = obj3.getEmojiURL(obj1);
-                obj.source = obj;
-                obj.children = ref(onPressEmoji(sendMessage[27]), obj, id.id);
-                let tmp9 = ref(content(sendMessage[12]).PressableHighlight, obj);
-                const tmp8 = onPressEmoji(sendMessage[27]);
+                ({ id: obj5[0], animated: obj5[1] } = id);
+                obj[0] = obj3.getEmojiURL({ id: null, animated: null, size: 48 });
+                obj[1] = obj;
+                obj[3] = ref(onPressEmoji(sendMessage[27]), obj, id.id);
+                let tmp11 = ref(lib(sendMessage[12]).PressableHighlight, obj);
+                const obj1 = { id: null, animated: null, size: 48 };
+                const tmp9 = onPressEmoji(sendMessage[27]);
               } else {
-                const obj2 = {
-                  onPress() {
-                      return outer1_11(closure_0);
-                    },
-                  style: tmp.emoji,
-                  disabled: first
+                const obj2 = { onPress: null, style: null, disabled: null, children: null };
+                obj2[0] = function onPress() {
+                  return outer1_11(closure_0);
                 };
-                obj3 = { variant: "text-md/medium", color: "interactive-text-default", style: null, allowFontScaling: false };
+                obj2[1] = _undefined.emoji;
+                obj2[2] = first;
+                obj3 = { variant: "text-md/medium", color: "interactive-text-default", style: null, allowFontScaling: false, children: null };
                 const items1 = [, ];
-                ({ defaultEmoji: arr2[0], emojiText: arr2[1] } = tmp);
-                obj3.style = items1;
-                obj3.children = id.surrogates;
-                obj2.children = ref(content(sendMessage[21]).Text, obj3);
-                tmp9 = ref(content(sendMessage[12]).PressableHighlight, obj2);
+                ({ defaultEmoji: arr2[0], emojiText: arr2[1] } = _undefined);
+                obj3[2] = items1;
+                obj3[4] = id.surrogates;
+                obj2[3] = ref(lib(sendMessage[21]).Text, obj3);
+                tmp11 = ref(lib(sendMessage[12]).PressableHighlight, obj2);
               }
-              return tmp9;
+              return tmp11;
             }),
 
       ];
-      const obj13 = {
-        onOpenPicker() {
-              let obj = onPressEmoji(sendMessage[15]);
-              obj.itemInteracted(content.id, hotwheels_gaming_activity, "press_reply_reaction_picker");
-              obj = { itemId: content.id, itemType: hotwheels_gaming_activity, actionParameters: { actionGestureType: "press", actionTargetElement: "reaction_picker_button", actionIntentType: "open", actionDestinationType: null } };
-              onPressEmoji(sendMessage[15]).feedItemActioned(obj);
-            },
-        channel,
-        onPressEmoji: callback1,
-        disabled: first
+      const obj13 = { onOpenPicker: null, channel: null, onPressEmoji: null, disabled: null };
+      obj13[0] = function onOpenPicker() {
+        let obj = onPressEmoji(sendMessage[15]);
+        obj.itemInteracted(lib.id, hotwheels_gaming_activity, "press_reply_reaction_picker");
+        obj = { itemId: lib.id, itemType: hotwheels_gaming_activity, actionParameters: { actionGestureType: "press", actionTargetElement: "reaction_picker_button", actionIntentType: "open", actionDestinationType: null } };
+        onPressEmoji(sendMessage[15]).feedItemActioned(obj);
       };
-      items8[1] = ref(AddEmojiButton, obj13);
-      obj12.children = items8;
-      const items9 = [callback3(hotwheels_gaming_activity, obj12), ];
-      const obj14 = { style: tmp.inputRow };
-      const obj15 = { containerStyle: tmp.input, grow: true, isRound: true };
-      const intl3 = content(sendMessage[7]).intl;
-      const obj16 = { username: content(sendMessage[30]).getName(author) };
-      obj15.placeholder = intl3.formatToPlainString(content(sendMessage[7]).t.m3dK5W, obj16);
-      obj15.value = first1;
-      obj15.onChange = tmp11;
-      obj15.isDisabled = first;
-      const items10 = [ref(content(sendMessage[29]).TextInput, obj15), ];
-      const obj17 = {};
-      const intl4 = content(sendMessage[7]).intl;
-      obj17.accessibilityLabel = intl4.string(content(sendMessage[7]).t.oeb1vg);
-      const obj18 = { size: "md", color: onPressEmoji(sendMessage[9]).unsafe_rawColors.WHITE };
-      obj17.icon = ref(content(sendMessage[32]).SendMessageIcon, obj18);
-      obj17.size = "md";
-      obj17.onPress = callback;
-      obj17.disabled = 0 === first1.length;
-      obj17.loading = first;
-      items10[1] = ref(content(sendMessage[31]).IconButton, obj17);
-      obj14.children = items10;
-      items9[1] = callback3(hotwheels_gaming_activity, obj14);
-      obj11.children = items9;
-      let tmp58Result = tmp58(callback1, obj11);
-      const obj21 = content(sendMessage[30]);
-      const tmp59 = callback1;
-      const tmp60 = hotwheels_gaming_activity;
+      obj13[1] = channel;
+      obj13[2] = callback1;
+      obj13[3] = first;
+      items8[1] = tmp23(AddEmojiButton, obj13);
+      obj12[1] = items8;
+      const items9 = [tmp25(tmp24, obj12), ];
+      const obj14 = { style: null, children: null };
+      obj14[0] = tmp.inputRow;
+      const obj15 = { containerStyle: null, grow: true, isRound: true, placeholder: null, value: null, onChange: null, isDisabled: null };
+      obj15[0] = tmp.input;
+      const intl4 = tmp5(tmp6[7]).intl;
+      const obj16 = { username: null };
+      obj16[0] = tmp5(tmp6[30]).getName(author);
+      obj15[3] = intl4.formatToPlainString(tmp5(tmp6[7]).t.m3dK5W, obj16);
+      obj15[4] = first1;
+      obj15[5] = tmp10;
+      obj15[6] = first;
+      const items10 = [tmp23(tmp5(tmp6[29]).TextInput, obj15), ];
+      const obj17 = { accessibilityLabel: null, icon: null, size: "md", onPress: null, disabled: null, loading: null };
+      const intl5 = tmp5(tmp6[7]).intl;
+      obj17[0] = intl5.string(tmp5(tmp6[7]).t.oeb1vg);
+      const obj18 = { size: "md", color: null };
+      obj18[1] = tmp19(tmp6[9]).unsafe_rawColors.WHITE;
+      obj17[1] = tmp23(tmp5(tmp6[32]).SendMessageIcon, obj18);
+      obj17[3] = callback;
+      obj17[4] = 0 === first1.length;
+      obj17[5] = first;
+      items10[1] = tmp23(tmp5(tmp6[31]).IconButton, obj17);
+      obj14[1] = items10;
+      items9[1] = tmp25(tmp24, obj14);
+      obj11[0] = items9;
+      let tmp23Result = tmp25(callback1, obj11);
+      const tmp30 = callback1;
+      const tmp5Result1 = tmp5(tmp6[30]);
     } else {
-      tmp58Result = ref(onPressEmoji(sendMessage[33]), {});
+      tmp23Result = tmp23(tmp19(tmp6[33]), {});
     }
-    items6[1] = tmp58Result;
-    obj2.children = items6;
-    obj.children = tmp36(tmp37, obj2);
-    return tmp32(content(sendMessage[20]).ActionSheet, obj);
+    items6[1] = tmp23Result;
+    obj2[1] = items6;
+    obj[1] = c10(hotwheels_gaming_activity, obj2);
+    return ref(tmp5(tmp6[20]).ActionSheet, obj);
   }
   hotwheels_gaming_activity = "hotwheels_gaming_activity";
-  const intl2 = content(sendMessage[7]).intl;
-  stringResult1 = intl2.string(content(sendMessage[7]).t.XC5YE5);
+  const intl3 = tmp5(tmp6[7]).intl;
+  stringResult1 = intl3.string(tmp5(tmp6[7]).t.XC5YE5);
   str = "hotwheels_gaming_activity";
 }
-({ jsx: closure_9, jsxs: closure_10, Fragment: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = { header: { width: "100%", display: "flex", alignItems: "center", padding: 8 }, container: { gap: 12 } };
-_createForOfIteratorHelperLoose = { borderRadius: require("_createForOfIteratorHelperLoose").radii.md, overflow: "hidden", borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BORDER_STRONG };
-_createForOfIteratorHelperLoose.preview = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.loading = { opacity: 0.5 };
-_createForOfIteratorHelperLoose.base = { position: "relative" };
-_createForOfIteratorHelperLoose.contentContainer = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.inputRow = { flexDirection: "row", alignItems: "center", gap: 8 };
-let obj1 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.input = { flex: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.emojis = { flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-_createForOfIteratorHelperLoose.submitting = { opacity: 0.6 };
-let obj2 = { flex: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.emoji = { padding: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
-_createForOfIteratorHelperLoose.defaultEmoji = { width: 24, height: 24 };
-_createForOfIteratorHelperLoose.emojiImage = { resizeMode: "contain", width: 24, height: 24 };
-_createForOfIteratorHelperLoose.emojiText = { lineHeight: 24, fontSize: 20, textAlign: "center", paddingTop: 2 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj3 = { padding: 8, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, backgroundColor: require("_createForOfIteratorHelperLoose").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
-let result = require("result").fileFinishedImporting("modules/icymi/native/content_inventory/ReactActionSheet.tsx");
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = jsxProd);
+createCacheKey = { header: { width: "100%", display: "flex", alignItems: "center", padding: 8 }, container: { gap: 12 }, preview: null, loading: null, base: null, contentContainer: null, inputRow: null, input: null, emojis: null, submitting: null, emoji: null, defaultEmoji: null, emojiImage: null, emojiText: null };
+createCacheKey = { borderRadius: require("Themes").radii.md, overflow: "hidden", borderWidth: 1, borderColor: require("Themes").colors.BORDER_STRONG };
+createCacheKey[2] = createCacheKey;
+createCacheKey[3] = { opacity: 0.5 };
+createCacheKey[4] = { position: "relative" };
+createCacheKey[5] = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[6] = { flexDirection: "row", alignItems: "center", gap: 8 };
+let obj1 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[7] = { flex: 1, borderRadius: require("Themes").radii.round };
+createCacheKey[8] = { flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+createCacheKey[9] = { opacity: 0.6 };
+let obj2 = { flex: 1, borderRadius: require("Themes").radii.round };
+createCacheKey[10] = { padding: 8, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
+createCacheKey[11] = { width: 24, height: 24 };
+createCacheKey[12] = { resizeMode: "contain", width: 24, height: 24 };
+createCacheKey[13] = { lineHeight: 24, fontSize: 20, textAlign: "center", paddingTop: 2 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj3 = { padding: 8, borderRadius: require("Themes").radii.round, backgroundColor: require("Themes").colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
+let result = require("noop").fileFinishedImporting("modules/icymi/native/content_inventory/ReactActionSheet.tsx");
 
 export default function ReactActionSheet(arg0) {
   if (arg0 == null) {
-    HermesBuiltin.throwTypeError("Cannot destructure 'undefined' or 'null'.");
-    throw undefined;
+    HermesBuiltin.throwTypeError();
   } else {
     const merged = Object.assign(arg0, undefined);
-    let obj = {};
+    let obj = { children: null };
     obj = {};
     const merged1 = Object.assign(merged);
-    obj.children = callback2(ReactActionSheetBase, obj);
-    return callback2(require(15290) /* useICYMIContextConstructor */.ICYMIContextProvider, obj);
+    obj[0] = callback2(ReactActionSheetBase, obj);
+    return callback2(require(15323) /* context */.ICYMIContextProvider, obj);
   }
 };
 export const getStatusReplyContent = function getStatusReplyContent(reply) {
@@ -301,28 +439,33 @@ export const getStatusReplyContent = function getStatusReplyContent(reply) {
   if (isForward === undefined) {
     isForward = false;
   }
-  const intl = require(1212) /* getSystemLocale */.intl;
+  const intl = require(1236) /* getSystemLocale */.intl;
   const formatToPlainString = intl.formatToPlainString;
-  const t = require(1212) /* getSystemLocale */.t;
+  const t = require(1236) /* getSystemLocale */.t;
   if (isForward) {
-    let obj = { username };
+    let obj = { username: null };
+    obj[0] = username;
     let formatToPlainStringResult = formatToPlainString(t.S5JNyW, obj);
+    let tmp5 = tmp;
   } else {
-    obj = { username };
+    obj = { username: null };
+    obj[0] = username;
     formatToPlainStringResult = formatToPlainString(t.XPQgL2, obj);
+    tmp5 = tmp;
   }
   const items = [];
   items.push("> -# *" + formatToPlainStringResult + "*");
-  if (tmp3) {
+  if (tmp7) {
     const _HermesInternal = HermesInternal;
     items.push("> " + emojiStr + " " + status);
   }
   if (null != attachments) {
     if (attachments.length > 0) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      obj = { attachmentsCount: attachments.length };
+      const intl2 = tmp5(1236).intl;
+      obj = { attachmentsCount: null };
+      obj[0] = attachments.length;
       const _HermesInternal2 = HermesInternal;
-      items.push("> -# *" + intl2.formatToPlainString(require(1212) /* getSystemLocale */.t["JiNPo+"], obj) + "*");
+      items.push("> -# *" + intl2.formatToPlainString(tmp5(1236).t["JiNPo+"], obj) + "*");
     }
   }
   items.push(reply.reply);

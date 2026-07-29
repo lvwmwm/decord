@@ -1,18 +1,20 @@
-// Module ID: 11843
-// Function ID: 91788
-// Dependencies: [31, 4017, 4016, 9113, 2]
+// Module ID: 11868
+// Function ID: 11869
+// Dependencies: [19, 4041, 4040, 9137, 2]
 
-// Module 11843
-import result from "result";
+// Module 11868
+import noop from "noop";
 
 const require = arg1;
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/forums/ForumPlatformHooks.native.tsx");
+let result = require("navigationToRootTabHelper").fileFinishedImporting("modules/forums/ForumPlatformHooks.native.tsx");
 
 export default {
   useForumChannelSeenManager(guildId) {
     guildId = guildId.guildId;
     const channelId = guildId.channelId;
-    const ref = callback.useRef(null);
+    let ref;
+    let callback;
+    ref = callback.useRef(null);
     const items = [channelId];
     callback = callback.useCallback(() => {
       const rootNavigationRef = guildId(ref[1]).getRootNavigationRef();
@@ -25,10 +27,10 @@ export default {
             tmp5 = coerceChannelRouteResult.params.channelId === channelId;
           }
           const current = ref.current;
-          if (null != current) {
+          if (current != null) {
             const result = current.handleReactNavigationFocus(tmp5);
           }
-          const obj3 = guildId(ref[2]);
+          const tmpResult = guildId(ref[2]);
         }
       }
     }, items);
@@ -45,18 +47,16 @@ export default {
     });
     const items1 = [channelId, guildId, callback];
     const layoutEffect = callback.useLayoutEffect(() => {
-      let tmp = channelId(ref[3]);
-      tmp = new tmp({ guildId, channelId });
-      ref.current = tmp;
+      ref.current = new channelId(ref[3])({ guildId, channelId });
       let current = ref.current;
       current.initialize();
       callback();
       return () => {
-        const current = outer1_2.current;
-        if (null != current) {
+        const current = ref.current;
+        if (current != null) {
           current.terminate();
         }
-        outer1_2.current = null;
+        ref.current = null;
       };
     }, items1);
     return ref.current;

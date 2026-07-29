@@ -1,33 +1,49 @@
-// Module ID: 11423
-// Function ID: 88592
-// Name: formatNumber
-// Dependencies: [653, 8813, 2]
-// Exports: default, useConnectedUserLimitFormatted
+// Module ID: 11447
+// Function ID: 11448
+// Name: useShowConnectedUserLimit
+// Dependencies: [676, 8837, 2]
+// Exports: default, useConnectedUserLimit, useConnectedUserLimitFormatted
 
-// Module 11423 (formatNumber)
+// Module 11447 (useShowConnectedUserLimit)
 import { MAX_STAGE_VOICE_USER_LIMIT as closure_2 } from "ME";
 
-function formatNumber(toFixed) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 1000;
+const result = require("set").fileFinishedImporting("modules/guild_sidebar/useShowConnectedUserLimit.tsx");
+
+export default function useShowConnectedUserLimit(channel) {
+  let considerMaxStageVoiceUserLimit;
+  let locked;
+  let selected;
+  let video;
+  ({ channel, video, considerMaxStageVoiceUserLimit } = { channel: channel.channel, video: channel.video });
+  ({ locked, selected } = channel);
+  if (considerMaxStageVoiceUserLimit === undefined) {
+    considerMaxStageVoiceUserLimit = true;
   }
-  if (toFixed >= num) {
-    const _Math = Math;
-    let str3 = "";
-    const rounded = Math.floor(toFixed / num);
-    if (toFixed % num != 0) {
-      str3 = "+";
+  const limit = importDefault(8837)(channel).limit;
+  let num = -1;
+  if (channel.userLimit > 0) {
+    num = channel.userLimit;
+  }
+  if (video) {
+    video = limit > 0;
+  }
+  let tmp = num;
+  if (video) {
+    let bound = limit;
+    if (num > 0) {
+      const _Math = Math;
+      bound = Math.min(num, limit);
     }
-    const _HermesInternal = HermesInternal;
-    let combined = "" + rounded + "k" + str3;
-  } else {
-    combined = toFixed.toFixed(0).padStart(2, "0");
-    const toFixedResult = toFixed.toFixed(0);
+    tmp = bound;
   }
-  return combined;
-}
-function useConnectedUserLimit(arg0) {
+  if (!considerMaxStageVoiceUserLimit) {
+    let num2 = tmp;
+  } else {
+    num2 = 0;
+  }
+  return num2 > 0 && !locked && !selected;
+};
+export const useConnectedUserLimit = function useConnectedUserLimit(arg0) {
   let channel;
   let considerMaxStageVoiceUserLimit;
   let video;
@@ -35,7 +51,7 @@ function useConnectedUserLimit(arg0) {
   if (considerMaxStageVoiceUserLimit === undefined) {
     considerMaxStageVoiceUserLimit = true;
   }
-  const limit = importDefault(8813)(channel).limit;
+  const limit = importDefault(8837)(channel).limit;
   let num = -1;
   if (channel.userLimit > 0) {
     num = channel.userLimit;
@@ -58,28 +74,85 @@ function useConnectedUserLimit(arg0) {
     num2 = 0;
   }
   return num2;
-}
-const result = require("set").fileFinishedImporting("modules/guild_sidebar/useShowConnectedUserLimit.tsx");
-
-export default function useShowConnectedUserLimit(channel) {
-  let locked;
-  let selected;
-  ({ locked, selected } = channel);
-  return useConnectedUserLimit({ channel: channel.channel, video: channel.video }) > 0 && !locked && !selected;
 };
-export { useConnectedUserLimit };
 export const useConnectedUserLimitFormatted = function useConnectedUserLimitFormatted(channel) {
-  let userCount = channel.userCount;
-  let str = useConnectedUserLimit({ channel: channel.channel, video: channel.video });
+  let considerMaxStageVoiceUserLimit;
+  let video;
+  const userCount = channel.userCount;
+  ({ channel, video, considerMaxStageVoiceUserLimit } = { channel: channel.channel, video: channel.video });
+  if (considerMaxStageVoiceUserLimit === undefined) {
+    considerMaxStageVoiceUserLimit = true;
+  }
+  const limit = importDefault(8837)(channel).limit;
+  let num = -1;
+  if (channel.userLimit > 0) {
+    num = channel.userLimit;
+  }
+  if (video) {
+    video = limit > 0;
+  }
+  let tmp = num;
+  if (video) {
+    let bound = limit;
+    if (num > 0) {
+      const _Math = Math;
+      bound = Math.min(num, limit);
+    }
+    tmp = bound;
+  }
+  if (!considerMaxStageVoiceUserLimit) {
+    let str = tmp;
+  } else {
+    str = 0;
+  }
   if (str <= 0) {
     return null;
-  } else if (null != userCount) {
-    userCount = formatNumber(str);
-    const _HermesInternal = HermesInternal;
-    str = "";
-    let combined = concat(formatNumber(userCount), "/", userCount);
-    const tmp4 = formatNumber(userCount);
   } else {
-    combined = formatNumber(``);
+    if (null == userCount) {
+      if (str >= 1000) {
+        const _Math2 = Math;
+        let str4 = "";
+        const rounded = Math.floor(str / 1000);
+        if (str % 1000 !== 0) {
+          str4 = "+";
+        }
+        const _HermesInternal = HermesInternal;
+        let combined = "" + rounded + "k" + str4;
+      } else {
+        combined = str.toFixed(0).padStart(2, "0");
+        const toFixedResult = str.toFixed(0);
+      }
+    }
+    let num4 = 1000;
+    if (userCount >= 1000) {
+      const _Math3 = Math;
+      let str8 = "";
+      const rounded1 = Math.floor(userCount / num4);
+      if (userCount % num4 !== 0) {
+        str8 = "+";
+      }
+      const _HermesInternal2 = HermesInternal;
+      let combined1 = "" + rounded1 + "k" + str8;
+    } else {
+      combined1 = userCount.toFixed(0).padStart(2, "0");
+      const toFixedResult1 = userCount.toFixed(0);
+    }
+    if (str >= num4) {
+      const _Math4 = Math;
+      const rounded2 = Math.floor(str / num4);
+      num4 = str % num4;
+      let str12 = "";
+      if (num4 !== 0) {
+        str12 = "+";
+      }
+      const _HermesInternal3 = HermesInternal;
+      let combined2 = "" + rounded2 + "k" + str12;
+    } else {
+      combined2 = str.toFixed(0).padStart(2, "0");
+      const toFixedResult2 = str.toFixed(0);
+    }
+    const _HermesInternal4 = HermesInternal;
+    str = "/";
+    const combined3 = "" + combined1 + "/" + combined2;
   }
 };

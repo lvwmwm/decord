@@ -1,75 +1,75 @@
-// Module ID: 10103
-// Function ID: 78153
+// Module ID: 10124
+// Function ID: 10125
 // Name: NewBadge
-// Dependencies: [57, 31, 27, 1345, 33, 1334, 4165, 689, 4161, 1212, 8417, 8406, 2]
+// Dependencies: [32, 19, 17, 1369, 21, 1358, 4189, 712, 4185, 1236, 8441, 8430, 2]
 // Exports: ConversationCoachmark
 
-// Module 10103 (NewBadge)
+// Module 10124 (NewBadge)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function NewBadge() {
-  let obj = { style: _createForOfIteratorHelperLoose().badge };
-  obj = { variant: "text-sm/bold", color: "text-default" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.children = intl.string(require(1212) /* getSystemLocale */.t.c2GSIl);
-  obj.children = jsx(require(4161) /* Text */.Text, { variant: "text-sm/bold", color: "text-default" });
-  return <View variant="text-sm/bold" color="text-default" />;
+  let obj = { style: createCacheKey().badge, children: null };
+  obj = { variant: "text-sm/bold", color: "text-default", children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.c2GSIl);
+  obj[1] = jsx(require(4185) /* Text */.Text, { variant: "text-sm/bold", color: "text-default", children: null });
+  return <View variant="text-sm/bold" color="text-default">{null}</View>;
 }
 const TOPICAL_NAVIGATION_HEADER_COACHMARK = require("DismissibleContent").DismissibleContent.TOPICAL_NAVIGATION_HEADER_COACHMARK;
 let items = [TOPICAL_NAVIGATION_HEADER_COACHMARK];
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BRAND, paddingVertical: 2, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_8, borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-_createForOfIteratorHelperLoose.badge = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.coachmarkWrapper = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const obj1 = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_12 };
+createCacheKey = { badge: null, coachmarkWrapper: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BRAND, paddingVertical: 2, paddingHorizontal: require("Themes").space.PX_8, borderRadius: require("Themes").radii.round };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginRight: require("Themes").space.PX_12 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const obj1 = { marginRight: require("Themes").space.PX_12 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/conversations/components/native/ConversationCoachmark.tsx");
 
 export const ConversationCoachmark = function ConversationCoachmark(arg0) {
   let children;
   let isLast;
+  let first;
+  let dependencyMap;
   ({ children, isLast } = arg0);
   const ref = React.useRef(null);
-  let obj = first(8417);
+  let obj = first(8441);
   const tmp3 = callback(obj.useSelectedDismissibleContent(items), 2);
   first = tmp3[0];
-  const dependencyMap = tmp5;
+  dependencyMap = tmp5;
   items = [tmp3[1], first];
   const memo = React.useMemo(() => {
-    const obj = {};
-    const intl = first(tmp5[9]).intl;
-    obj.title = intl.string(first(tmp5[9]).t.UcQjDe);
-    const intl2 = first(tmp5[9]).intl;
-    obj.description = intl2.string(first(tmp5[9]).t.QeJIbA);
-    obj.position = "bottom";
-    obj.visible = first === outer1_7;
-    obj.onDismiss = function onDismiss() {
-      outer1_1(outer2_5.USER_DISMISS);
+    const obj = { title: null, description: null, position: "bottom", visible: null, onDismiss: null, renderImgComponent: null };
+    const intl = first(_undefined[9]).intl;
+    obj[0] = intl.string(first(_undefined[9]).t.UcQjDe);
+    const intl2 = first(_undefined[9]).intl;
+    obj[1] = intl2.string(first(_undefined[9]).t.QeJIbA);
+    obj[3] = first === outer1_7;
+    obj[4] = function onDismiss() {
+      callback(outer1_5.USER_DISMISS);
     };
-    obj.renderImgComponent = function renderImgComponent() {
-      return outer2_6(outer2_10, {});
+    obj[5] = function renderImgComponent() {
+      return callback2(closure_10, {});
     };
     return obj;
   }, items);
-  const tmp = _createForOfIteratorHelperLoose();
-  const coachmark = first(8406).useCoachmark(ref, memo);
+  const tmp = createCacheKey();
+  const coachmark = first(8430).useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
-  obj = {};
   let coachmarkWrapper;
   callback = React.useCallback(() => {
-    tmp5(outer1_5.USER_DISMISS);
+    _undefined(outer1_5.USER_DISMISS);
   }, items1);
   if (!isLast) {
     coachmarkWrapper = tmp.coachmarkWrapper;
   }
-  obj.style = coachmarkWrapper;
+  obj = { style: coachmarkWrapper, children: null };
   obj = { ref, children: children(callback) };
-  obj.children = <View ref={ref}>{children(callback)}</View>;
+  obj[1] = <View ref={ref}>{children(callback)}</View>;
   return <View ref={ref}>{children(callback)}</View>;
 };

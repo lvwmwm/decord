@@ -1,12 +1,12 @@
-// Module ID: 10772
-// Function ID: 83534
+// Module ID: 10796
+// Function ID: 10797
 // Name: ChannelCallMicButton
-// Dependencies: [31, 4179, 33, 10753, 566, 10773, 10774, 10504, 1212, 10777, 10778, 689, 2]
+// Dependencies: [19, 4203, 21, 10777, 589, 10797, 10798, 10528, 1236, 10801, 10802, 712, 2]
 // Exports: ChannelCallMicButton
 
-// Module 10772 (ChannelCallMicButton)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10796 (ChannelCallMicButton)
+import noop from "noop";
+import set from "set";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -21,35 +21,29 @@ export const ChannelCallMicButton = function ChannelCallMicButton(disableTint) {
     flag = false;
   }
   let mute;
-  let obj = mute(566);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => null != outer1_5.getAwaitingRemoteSessionInfo());
-  const tmp = importDefault;
-  const tmp2 = importDefault(10753)(channel);
-  const muteHandler = mute(10773).createMuteHandler(tmp2, stateFromStores);
+  let obj = mute(589);
+  const items = [set];
+  const stateFromStores = obj.useStateFromStores(items, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
+  const tmp3 = importDefault(10777)(channel);
+  const muteHandler = mute(10797).createMuteHandler(tmp3, stateFromStores);
   mute = muteHandler.mute;
   const items1 = [mute];
   const memo = React.useMemo(() => outer1_6(mute(outer1_3[6]).VoicePanelRiveMicButton, { muted: mute }), items1);
-  obj = { appearsDisabled: stateFromStores };
-  const intl = mute(1212).intl;
-  obj.accessibilityLabel = intl.string(mute(1212).t.B3zz0G);
-  obj.onPress = muteHandler.onPress;
-  if (mute) {
-    let tmp8 = 10777;
-  } else {
-    tmp8 = 10778;
-  }
-  obj.source = tmp(tmp8);
+  obj = { appearsDisabled: stateFromStores, accessibilityLabel: null, onPress: null, source: null, isActive: null, isSmallSize: null, lottieComponent: null, tintColor: null };
+  const intl = mute(1236).intl;
+  obj[1] = intl.string(mute(1236).t.B3zz0G);
+  obj[2] = muteHandler.onPress;
+  obj[3] = importDefault(mute ? 10801 : 10802);
   if (!flag) {
     flag = mute;
   }
-  obj.isActive = flag;
-  obj.isSmallSize = isSmallSize;
-  obj.lottieComponent = memo;
+  obj[4] = flag;
+  obj[5] = isSmallSize;
+  obj[6] = memo;
   let RED_400;
   if (mute) {
-    RED_400 = importDefault(689).unsafe_rawColors.RED_400;
+    RED_400 = tmp(712).unsafe_rawColors.RED_400;
   }
-  obj.tintColor = RED_400;
-  return jsx(importAll(10504).ToggledActionButton, { appearsDisabled: stateFromStores });
+  obj[7] = RED_400;
+  return jsx(importAll(10528).ToggledActionButton, { appearsDisabled: stateFromStores, accessibilityLabel: null, onPress: null, source: null, isActive: null, isSmallSize: null, lottieComponent: null, tintColor: null });
 };

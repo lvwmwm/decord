@@ -1,31 +1,32 @@
-// Module ID: 13235
-// Function ID: 101797
+// Module ID: 13258
+// Function ID: 13259
 // Name: getUpdatedOptions
-// Dependencies: [686, 571, 2]
+// Dependencies: [709, 594, 2]
 // Exports: getUpdatedOptions
 
-// Module 13235 (getUpdatedOptions)
+// Module 13258 (getUpdatedOptions)
 const result = require("set").fileFinishedImporting("utils/ErrorCommonUtils.tsx");
 
 export const getUpdatedOptions = function getUpdatedOptions(extra) {
   let obj = {};
   const merged = Object.assign(extra);
-  obj = {};
   extra = undefined;
-  if (null != extra) {
+  if (extra != null) {
     extra = extra.extra;
   }
-  const merged1 = Object.assign(extra);
   obj = {};
-  if (null != importDefault(686)._currentDispatchActionType) {
-    const obj1 = { currentAction: importDefault(686)._currentDispatchActionType };
-    let obj2 = obj1;
+  const merged1 = Object.assign(extra);
+  if (null != importDefault(709)._currentDispatchActionType) {
+    obj = { currentAction: null };
+    obj[0] = importDefault(709)._currentDispatchActionType;
+    let obj1 = obj;
   } else {
-    obj2 = {};
+    obj1 = {};
   }
-  const merged2 = Object.assign(obj2);
-  obj["lastFewActions"] = require(571) /* add */.serialize();
-  const merged3 = Object.assign(obj);
-  obj["extra"] = obj;
+  const obj2 = {};
+  const merged2 = Object.assign(obj1);
+  obj2.lastFewActions = require(594) /* add */.serialize();
+  const merged3 = Object.assign(obj2);
+  obj.extra = obj;
   return obj;
 };

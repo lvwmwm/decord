@@ -1,90 +1,37 @@
-// Module ID: 16114
-// Function ID: 124515
-// Name: _isNativeReflectConstruct
-// Dependencies: [5, 6, 7, 15, 17, 18, 1194, 1348, 4504, 1838, 4843, 653, 1355, 3, 664, 5112, 675, 686, 5919, 12707, 1360, 491, 2]
+// Module ID: 16149
+// Function ID: 16150
+// Name: handleGuildCreate
+// Dependencies: [5, 1218, 1372, 4527, 1862, 4865, 676, 1379, 3, 687, 5134, 698, 709, 5938, 12729, 1384, 514, 2]
 
-// Module 16114 (_isNativeReflectConstruct)
-import _inherits from "_inherits";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import AutomaticLifecycleManager from "AutomaticLifecycleManager";
-import dispatcher from "dispatcher";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_9 from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_createForOfIteratorHelperLoose";
-import closure_13 from "_isNativeReflectConstruct";
+// Module 16149 (handleGuildCreate)
+import _handleConnectionOpen from "_handleConnectionOpen";
+import fetchFingerprint from "fetchFingerprint";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import handleConnectionOpen from "handleConnectionOpen";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import closure_8 from "_handleConnectionOpen";
 import { AnalyticEvents } from "ME";
 import { ChannelFlags } from "set";
-import importDefaultResult from "_possibleConstructorReturn";
-import tmp4 from "AutomaticLifecycleManager";
-import set from "_defineProperties";
+import "initialize";
+import set from "ensureGuildLoaded";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
-function setLatestRequest(guildId, v4Result, integrity_check) {
-  closure_22[guildId] = { guildId, requestId: v4Result, source: integrity_check, requestedUserId: id.getId() };
-}
-function getLatestRequestId(guild_id) {
-  let requestId;
-  if (null != dependencyMap[guild_id]) {
-    requestId = tmp.requestId;
-  }
-  let str = "unknown";
-  if (null != requestId) {
-    str = requestId;
-  }
-  return str;
-}
-function cleanupResyncState(guild_id) {
-  if (null != dependencyMap3[guild_id]) {
-    const _clearTimeout = clearTimeout;
-    clearTimeout(dependencyMap3[guild_id]);
-    delete tmp3[tmp2];
-  }
-  if (null != dependencyMap2[guild_id]) {
-    const _clearTimeout2 = clearTimeout;
-    clearTimeout(dependencyMap2[guild_id]);
-    delete tmp[tmp2];
-  }
-}
-function cleanupIntegrityCheckState(guild_id) {
-  if (null != dependencyMap5[guild_id]) {
-    const _clearTimeout = clearTimeout;
-    clearTimeout(dependencyMap5[guild_id]);
-    delete tmp3[tmp2];
-  }
-  if (null != dependencyMap4[guild_id]) {
-    const _clearTimeout2 = clearTimeout;
-    clearTimeout(dependencyMap4[guild_id]);
-    delete tmp[tmp2];
-  }
-}
 function handleGuildCreate(guild) {
   guild = guild.guild;
   let closure_1;
   if (true !== guild.unavailable) {
-    if (null != dependencyMap6[guild.id]) {
+    if (null != dependencyMap4[guild.id]) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(dependencyMap6[guild.id]);
+      clearTimeout(tmp[guild.id]);
     }
-    closure_1 = c29;
+    closure_1 = c24;
     const _setTimeout = setTimeout;
-    dependencyMap6[guild.id] = setTimeout(() => {
+    dependencyMap4[guild.id] = setTimeout(() => {
       delete tmp2[tmp];
-      if (closure_1 === outer1_29) {
-        outer1_23.delete(guild.id);
-        outer1_39(guild.id);
-        outer1_42(guild.id);
+      if (closure_1 === outer1_24) {
+        outer1_18.delete(tmp3.id);
+        outer1_29(tmp3.id);
+        outer1_32(tmp3.id);
       }
     }, 0);
   }
@@ -94,238 +41,621 @@ function handlePostConnectionOpen() {
   scheduleGuildResyncs();
   guildIds = guildIds.getGuildIds();
   const item = guildIds.forEach((arg0) => {
-    outer1_42(arg0);
+    callback(arg0);
   });
 }
-function handleChannelSync(integrity_check, arg1) {
-  if (integrity_check.integrity_check) {
-    (function doIntegrityCheck(integrity_check) {
-      let channels;
-      let guild_id;
-      ({ guild_id, channels } = integrity_check);
-      const mutableGuildChannelsForGuild = outer1_10.getMutableGuildChannelsForGuild(guild_id);
-      const set = new Set();
-      const items = [];
-      const item = channels.forEach((flags) => {
-        let parent_id;
-        if (null != table[flags.id]) {
-          let obj = outer2_0(outer2_2[20]);
-          flags = flags.flags;
-          let num2 = 0;
-          if (null != flags) {
-            num2 = flags;
-          }
-          const hasFlagResult = obj.hasFlag(num2, outer2_15.OBFUSCATED);
-          const hasFlagResult1 = outer2_0(outer2_2[20]).hasFlag(tmp.flags, outer2_15.OBFUSCATED);
-          if (hasFlagResult !== hasFlagResult1) {
-            const _HermesInternal2 = HermesInternal;
-            outer2_16.warn("Integrity check failure: " + flags.id + " serverObfuscated: " + hasFlagResult + " != clientObfuscated: " + hasFlagResult1);
-            set.add(flags.id);
-            obj = { channel_id: flags.id, server_obfuscated: hasFlagResult, client_obfuscated: hasFlagResult1 };
-            const flags3 = flags.flags;
-            let num3 = 0;
-            if (null != flags3) {
-              num3 = flags3;
-            }
-            obj.server_flags = num3;
-            const flags2 = tmp.flags;
-            let num4 = 0;
-            if (null != flags2) {
-              num4 = flags2;
-            }
-            obj.client_flags = num4;
-            ({ type: obj3.channel_type, parent_id } = flags);
-            let tmp13 = null;
-            if (null != parent_id) {
-              tmp13 = parent_id;
-            }
-            obj.parent_id = tmp13;
-            items.push(obj);
-          }
-          const obj2 = outer2_0(outer2_2[20]);
-        } else {
-          const _HermesInternal = HermesInternal;
-          outer2_16.warn("Integrity check failure: " + flags.id + " was missing.");
+function handleChannelSync(guild_id) {
+  guild_id = guild_id.guild_id;
+  if (guild_id.integrity_check) {
+    const channels = guild_id.channels;
+    let mutableGuildChannelsForGuild2;
+    let set;
+    let items;
+    let str2;
+    if (dependencyMap[guild_id] != null) {
+      str2 = tmp20.requestId;
+    }
+    if (str2 == null) {
+      str2 = "unknown";
+    }
+    mutableGuildChannelsForGuild2 = mutableGuildChannelsForGuild.getMutableGuildChannelsForGuild(guild_id);
+    const _Set = Set;
+    set = new Set();
+    items = [];
+    const item = channels.forEach((flags) => {
+      let parent_id;
+      if (null != dependencyMap[flags.id]) {
+        let obj = dependencyMap(items[15]);
+        let num = flags.flags;
+        if (num == null) {
+          num = 0;
         }
-      });
-      const tmp = outer1_32(guild_id);
-      const joined = Array.from(set).join(", ");
-      let json = null;
-      if (items.length > 0) {
-        const _JSON = JSON;
-        json = JSON.stringify(items);
-      }
-      if (set.size > 0) {
-        let verbose = outer1_16.warn;
+        const hasFlagResult = obj.hasFlag(num, outer1_10.OBFUSCATED);
+        const hasFlagResult1 = dependencyMap(items[15]).hasFlag(tmp.flags, outer1_10.OBFUSCATED);
+        if (hasFlagResult !== hasFlagResult1) {
+          const _HermesInternal2 = HermesInternal;
+          outer1_11.warn("Integrity check failure: " + flags.id + " serverObfuscated: " + hasFlagResult + " != clientObfuscated: " + hasFlagResult1);
+          set.add(flags.id);
+          obj = { channel_id: null, server_obfuscated: null, client_obfuscated: null, server_flags: null, client_flags: null, channel_type: null, parent_id: null };
+          obj[0] = flags.id;
+          obj[1] = hasFlagResult;
+          obj[2] = hasFlagResult1;
+          let num2 = flags.flags;
+          if (num2 == null) {
+            num2 = 0;
+          }
+          obj[3] = num2;
+          let num3 = tmp.flags;
+          if (num3 == null) {
+            num3 = 0;
+          }
+          obj[4] = num3;
+          ({ type: obj3[5], parent_id } = flags);
+          if (parent_id == null) {
+            parent_id = null;
+          }
+          obj[6] = parent_id;
+          items.push(obj);
+        }
+        const tmp5 = dependencyMap;
+        const tmp5Result = dependencyMap(items[15]);
+        const tmp6 = items;
       } else {
-        verbose = outer1_16.verbose;
+        const _HermesInternal = HermesInternal;
+        outer1_11.warn("Integrity check failure: " + flags.id + " was missing.");
       }
-      verbose("Integrity check for guild " + guild_id + " completed. Discrepancies found: " + joined);
-      const arr = Array.from(set);
-      let obj = { guild_id, request_id: tmp, num_channels_received: channels.length, num_discrepancies_found: set.size, discrepancy_channel_ids: joined, discrepancies_details: json };
-      outer1_1(outer1_2[16]).track(outer1_14.GUILD_CHANNEL_INTEGRITY_CHECK_COMPLETED, obj);
-      outer1_34(guild_id);
-      outer1_23.add(guild_id);
-    })(integrity_check);
+    });
+    const _Array = Array;
+    const joined = Array.from(set).join(", ");
+    let json = null;
+    if (items.length > 0) {
+      const _JSON = JSON;
+      json = JSON.stringify(items);
+    }
+    if (set.size > 0) {
+      let verbose = tmp2.warn;
+    } else {
+      verbose = tmp2.verbose;
+    }
+    let _HermesInternal = HermesInternal;
+    verbose("Integrity check for guild " + guild_id + " completed. Discrepancies found: " + joined);
+    const arr = Array.from(set);
+    let obj = { guild_id: null, request_id: null, num_channels_received: null, num_discrepancies_found: null, discrepancy_channel_ids: null, discrepancies_details: null };
+    obj[0] = guild_id;
+    obj[1] = str2;
+    obj[2] = channels.length;
+    obj[3] = set.size;
+    obj[4] = joined;
+    obj[5] = json;
+    set(items[11]).track(AnalyticEvents.GUILD_CHANNEL_INTEGRITY_CHECK_COMPLETED, obj);
+    if (null != dependencyMap3[guild_id]) {
+      const _clearTimeout3 = clearTimeout;
+      clearTimeout(tmp38[guild_id]);
+      delete tmp[tmp2];
+    }
+    if (null != dependencyMap2[guild_id]) {
+      const _clearTimeout4 = clearTimeout;
+      clearTimeout(tmp40[guild_id]);
+      delete tmp[tmp2];
+    }
+    set.add(guild_id);
+    const obj4 = set(items[11]);
   } else {
-    let obj = importDefault(675);
-    obj = { guild_id: integrity_check.guild_id, request_id: getLatestRequestId(integrity_check.guild_id), num_new_channels: integrity_check.channels.length };
+    let str;
+    if (dependencyMap[guild_id] != null) {
+      str = tmp5.requestId;
+    }
+    if (str == null) {
+      str = "unknown";
+    }
+    obj = set(items[11]);
+    obj = { guild_id: null, request_id: null, num_new_channels: null };
+    obj[0] = guild_id.guild_id;
+    obj[1] = str;
+    obj[2] = guild_id.channels.length;
     obj.track(AnalyticEvents.GUILD_CHANNEL_RESYNC_COMPLETED, obj);
-    cleanupResyncState(integrity_check.guild_id);
-    scheduleIntegrityCheck(integrity_check.guild_id);
-    const tmp2 = getLatestRequestId(integrity_check.guild_id);
+    const guild_id2 = guild_id.guild_id;
+    if (null != table2[guild_id2]) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(tmp11[guild_id2]);
+      delete tmp[tmp3];
+    }
+    if (null != table[guild_id2]) {
+      const _clearTimeout2 = clearTimeout;
+      clearTimeout(tmp14[guild_id2]);
+      delete tmp[tmp3];
+    }
+    scheduleIntegrityCheck(guild_id.guild_id);
   }
 }
 function handleLogout(isSwitchingAccount) {
-  closure_29 = closure_29 + 1;
+  closure_24 = closure_24 + 1;
   let str = "logout";
   if (true === isSwitchingAccount.isSwitchingAccount) {
     str = "account_switch";
   }
-  const items = [...Object.keys(closure_24), ...Object.keys(closure_25), ...Object.keys(closure_26), ...Object.keys(closure_27)];
+  const items = [...Object.keys(closure_19), ...Object.keys(closure_20), ...Object.keys(closure_21), ...Object.keys(closure_22)];
   const set = new Set(items);
-  const item = set.forEach((guild_id) => {
+  const item = set.forEach((arg0) => {
     let requestedUserId;
     let requestedUserId2;
-    if (null != outer1_22[guild_id]) {
-      if (null != outer1_24[guild_id]) {
-        let obj = outer1_1(outer1_2[16]);
-        obj = { guild_id };
-        ({ requestId: obj2.request_id, requestedUserId } = tmp);
-        let tmp5 = null;
-        if (null != requestedUserId) {
-          tmp5 = requestedUserId;
-        }
-        obj.requested_user_id = tmp5;
-        obj.cancellation_reason = str;
-        obj.had_scheduled_timer = tmp19;
-        obj.had_pending_timeout = tmp21;
-        obj.track(outer1_14.GUILD_CHANNEL_RESYNC_CANCELED, obj);
+    if (null != outer1_17[arg0]) {
+      let tmp2 = tmp19;
+      if (null == outer1_19[arg0]) {
+        tmp2 = tmp21;
       }
-      if (null != outer1_26[guild_id]) {
-        obj = { guild_id };
-        ({ requestId: obj4.request_id, requestedUserId: requestedUserId2 } = tmp);
-        let tmp15 = null;
-        if (null != requestedUserId2) {
-          tmp15 = requestedUserId2;
+      if (tmp2) {
+        let obj = outer1_1(outer1_2[11]);
+        obj = { guild_id: null, request_id: null, requested_user_id: null, cancellation_reason: null, had_scheduled_timer: null, had_pending_timeout: null };
+        obj[0] = arg0;
+        ({ requestId: obj2[1], requestedUserId } = tmp);
+        if (requestedUserId == null) {
+          requestedUserId = null;
         }
-        obj.requested_user_id = tmp15;
-        obj.cancellation_reason = str;
-        obj.had_scheduled_timer = tmp9;
-        obj.had_pending_timeout = tmp11;
-        outer1_1(outer1_2[16]).track(outer1_14.GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED, obj);
-        const obj3 = outer1_1(outer1_2[16]);
+        obj[2] = requestedUserId;
+        obj[3] = str;
+        obj[4] = tmp19;
+        obj[5] = tmp21;
+        obj.track(outer1_9.GUILD_CHANNEL_RESYNC_CANCELED, obj);
+      }
+      let tmp12 = tmp9;
+      if (null == outer1_21[arg0]) {
+        tmp12 = tmp11;
+      }
+      if (tmp12) {
+        obj = { guild_id: null, request_id: null, requested_user_id: null, cancellation_reason: null, had_scheduled_timer: null, had_pending_timeout: null };
+        obj[0] = arg0;
+        ({ requestId: obj4[1], requestedUserId: requestedUserId2 } = tmp);
+        if (requestedUserId2 == null) {
+          requestedUserId2 = null;
+        }
+        obj[2] = requestedUserId2;
+        obj[3] = str;
+        obj[4] = tmp9;
+        obj[5] = tmp11;
+        outer1_1(outer1_2[11]).track(outer1_9.GUILD_CHANNEL_INTEGRITY_CHECK_CANCELED, obj);
+        const obj3 = outer1_1(outer1_2[11]);
       }
     }
   });
   const item1 = set.forEach((arg0) => {
-    outer1_33(arg0);
-    outer1_34(arg0);
+    if (null != table2[arg0]) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(tmp4[arg0]);
+      delete tmp3[tmp2];
+    }
+    if (null != table[arg0]) {
+      const _clearTimeout2 = clearTimeout;
+      clearTimeout(tmp7[arg0]);
+      delete tmp3[tmp2];
+    }
+    if (null != table4[arg0]) {
+      const _clearTimeout3 = clearTimeout;
+      clearTimeout(tmp10[arg0]);
+      delete tmp3[tmp2];
+    }
+    if (null != table3[arg0]) {
+      const _clearTimeout4 = clearTimeout;
+      clearTimeout(tmp13[arg0]);
+      delete tmp[tmp2];
+    }
   });
-  for (const key10049 in closure_28) {
-    let tmp7 = key10049;
+  for (const key10048 in closure_23) {
+    let tmp7 = key10048;
     let _clearTimeout = clearTimeout;
-    let tmp8 = dependencyMap6;
-    let clearTimeoutResult = clearTimeout(dependencyMap6[key10049]);
-    let tmp10 = dependencyMap6;
+    let tmp8 = dependencyMap4;
+    let clearTimeoutResult = clearTimeout(dependencyMap4[key10048]);
     delete tmp2[tmp3];
     continue;
   }
-  for (const key10052 in closure_22) {
-    let tmp11 = key10052;
-    let tmp12 = closure_22;
+  for (const key10051 in closure_17) {
+    let tmp10 = key10051;
+    let tmp11 = closure_17;
     delete tmp[tmp2];
     continue;
   }
   set.clear();
 }
 function scheduleGuildResyncs() {
-  return _scheduleGuildResyncs(...arguments);
+  const self = this;
+  const apply = _scheduleGuildResyncs.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _scheduleGuildResyncs() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  let self = this;
+  const tmp = callback((arg0) => {
+    let closure_0 = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    return (function*(arg0) {
+      if (c4 === 2) {
+        c4 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp5 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c4 = 2;
+          if (0 === _handleConnectionOpen) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_2 = tmp2;
+              let callback = tmp3;
+              closure_2 = undefined;
+              _handleConnectionOpen = undefined;
+              callback = outer1_24;
+              _handleConnectionOpen = 1;
+              c4 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = (function getResyncGuilds() {
+                const self = this;
+                const apply = closure_31.apply;
+                if (typeof apply === "unknown") {
+                  let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+                } else {
+                  applyArgumentsResult = apply(self, arguments);
+                }
+                return applyArgumentsResult;
+              })();
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            closure_2 = arg1;
+            if (callback === closure_24) {
+              const _JSON = JSON;
+              const _HermesInternal = HermesInternal;
+              closure_11.verbose("Resync guilds: " + JSON.stringify(closure_2));
+              const eligible = closure_2.eligible;
+              const item = eligible.forEach((id) => {
+                if (!tmp2) {
+                  id = id.id;
+                  let obj = { guildId: null, requestId: null, source: "resync", requestedUserId: null };
+                  obj[0] = id;
+                  obj[1] = id.requestId;
+                  obj[3] = id.getId();
+                  outer1_17[id] = obj;
+                  if (null != outer1_19[id]) {
+                    let _clearTimeout = clearTimeout;
+                    clearTimeout(tmp5[id]);
+                  }
+                  const _Math = Math;
+                  const _Math2 = Math;
+                  let _setTimeout = setTimeout;
+                  outer1_19[id] = setTimeout(() => {
+                    delete tmp3[tmp2];
+                    let obj = id(outer1_2[14]);
+                    if (obj.isChannelMetadataObfuscationEnabled("triggerGuildChannelResync")) {
+                      let str;
+                      if (outer1_17[tmp6] != null) {
+                        str = tmp9.requestId;
+                      }
+                      if (str == null) {
+                        str = "unknown";
+                      }
+                      if (null == outer1_7.getGuild(tmp6)) {
+                        obj = { guild_id: null, request_id: null, failure_reason: "guild_not_found" };
+                        obj[0] = tmp6;
+                        obj[1] = str;
+                        outer1_1(outer1_2[11]).track(outer1_9.GUILD_CHANNEL_RESYNC_FAILED, obj);
+                        if (null != outer1_20[tmp6]) {
+                          let _clearTimeout2 = clearTimeout;
+                          clearTimeout(tmp31[tmp6]);
+                          delete tmp4[tmp2];
+                        }
+                        if (null != tmp5[tmp6]) {
+                          const _clearTimeout3 = clearTimeout;
+                          clearTimeout(tmp5[tmp6]);
+                          delete tmp3[tmp2];
+                        }
+                        const obj5 = outer1_1(outer1_2[11]);
+                      } else {
+                        const items = [];
+                        const mutableGuildChannelsForGuild = outer1_5.getMutableGuildChannelsForGuild(tmp6);
+                        let num2 = 0;
+                        let num = 0;
+                        const keys = Object.keys();
+                        if (keys !== undefined) {
+                          num = num2;
+                          while (keys[tmp] !== undefined) {
+                            let tmp40 = tmp13;
+                            let tmp41 = id;
+                            let tmp42 = outer1_2;
+                            let obj7 = id(outer1_2[15]);
+                            let tmp43 = outer1_10;
+                            if (obj7.hasFlag(mutableGuildChannelsForGuild[tmp13].flags, outer1_10.OBFUSCATED)) {
+                              let arr = items.push(tmp13);
+                            }
+                            num2 = num2 + 1;
+                            continue;
+                          }
+                        }
+                        obj = { guild_id: null, request_id: null, num_obfuscated_channels: null, num_total_channels: null };
+                        obj[0] = tmp6;
+                        obj[1] = str;
+                        obj[2] = items.length;
+                        obj[3] = num;
+                        outer1_1(outer1_2[11]).track(outer1_9.GUILD_CHANNEL_RESYNC_EXECUTED, obj);
+                        const socket = outer1_8.getSocket();
+                        const result = socket.triggerGuildChannelResync(tmp6, items);
+                        id = tmp6;
+                        if (null != outer1_20[tmp6]) {
+                          let _clearTimeout = clearTimeout;
+                          clearTimeout(tmp21[tmp6]);
+                        }
+                        const _setTimeout = setTimeout;
+                        outer1_20[tmp6] = setTimeout(() => { ... }, outer1_15);
+                        outer1_32(tmp6);
+                        const obj2 = outer1_1(outer1_2[11]);
+                      }
+                    }
+                  }, Math.ceil(Math.random() * outer1_12));
+                }
+              });
+              if (closure_2.ineligible.length > 0) {
+                const ineligible = closure_2.ineligible;
+                _handleConnectionOpen = ineligible.map((id) => id.id);
+                const _JSON2 = JSON;
+                const _HermesInternal2 = HermesInternal;
+                closure_11.verbose("Guilds we are no longer part of are marked for resync. Unmarking them. Guilds: " + JSON.stringify(_handleConnectionOpen));
+                let obj2 = { type: "UNMARK_RESYNC_GUILDS", guildIds: null };
+                obj2[1] = _handleConnectionOpen;
+                callback(closure_2[12]).dispatch(obj2);
+                let obj5 = callback(closure_2[12]);
+              }
+            }
+            c4 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp9) {
+          c4 = tmp;
+          throw tmp9;
+        }
+      }
+    })();
+  });
+  const _scheduleGuildResyncs = tmp;
+  let apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function _getResyncGuilds() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback(function*() {
+    if (table === 2) {
+      table = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        table = 2;
+        if (0 === v0) {
+          if (arg0 === 1) {
+            table = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            table = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let closure_0 = tmp4;
+            let obj3 = v0(table[13]);
+            v0 = 1;
+            table = 1;
+            const obj1 = { value: null, done: false };
+            obj1[0] = obj3.getAll();
+            return obj1;
+          }
+        } else if (arg0 === 1) {
+          table = 3;
+          throw arg1;
+        } else if (arg0 === 2) {
+          table = 3;
+          const obj2 = { value: null, done: true };
+          obj2[0] = arg1;
+          return obj2;
+        } else {
+          obj = { eligible: null, ineligible: null };
+          obj[0] = [];
+          obj[1] = [];
+          table = 3;
+          obj3 = { value: null, done: true };
+          obj3[0] = arg1.reduce((ineligible, id) => {
+            if (null == guild.getGuild(id.id)) {
+              if (!unavailable.isUnavailable(id.id)) {
+                ineligible = ineligible.ineligible;
+                ineligible.push(id);
+              }
+              return ineligible;
+            }
+            const eligible = ineligible.eligible;
+            eligible.push(id);
+          }, obj);
+          return obj3;
+        }
+      } catch (tmp8) {
+        table = tmp;
+        throw tmp8;
+      }
+    }
+  });
+  const _getResyncGuilds = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function scheduleIntegrityCheck(guild_id) {
   const _require = guild_id;
-  let obj = _require(12707);
+  let obj = _require(12729);
   if (obj.isChannelMetadataIntegrityCheckEnabled("scheduleIntegrityCheck")) {
-    cleanupIntegrityCheckState(guild_id);
-    if (null != dependencyMap[guild_id]) {
-      let requestId = tmp7.requestId;
-    } else {
-      const v4Result = _require(491).v4();
-      setLatestRequest(guild_id, v4Result, "integrity_check");
-      requestId = v4Result;
-      const obj2 = _require(491);
+    if (null != dependencyMap3[guild_id]) {
+      let _clearTimeout = clearTimeout;
+      clearTimeout(tmp9[guild_id]);
+      delete tmp3[tmp2];
     }
-    if (!tmp3) {
-      obj = { guild_id, request_id: requestId };
-      importDefault(675).track(AnalyticEvents.GUILD_CHANNEL_INTEGRITY_CHECK_REQUESTED, obj);
-      const obj3 = importDefault(675);
+    if (null != dependencyMap2[guild_id]) {
+      let _clearTimeout2 = clearTimeout;
+      clearTimeout(tmp6[guild_id]);
+      delete tmp[tmp2];
+    }
+    if (null != dependencyMap[guild_id]) {
+      let requestId = tmp15.requestId;
+    } else {
+      const v4Result = _require(514).v4();
+      obj = { guildId: null, requestId: null, source: "integrity_check", requestedUserId: null };
+      obj[0] = guild_id;
+      obj[1] = v4Result;
+      obj[3] = id.getId();
+      tmp14[guild_id] = obj;
+      requestId = v4Result;
+      const tmp4Result = _require(514);
+    }
+    if (!tmp8) {
+      obj = { guild_id: null, request_id: null };
+      obj[0] = guild_id;
+      obj[1] = requestId;
+      importDefault(698).track(AnalyticEvents.GUILD_CHANNEL_INTEGRITY_CHECK_REQUESTED, obj);
+      let obj4 = importDefault(698);
     }
     const _Math = Math;
     const _Math2 = Math;
-    const _setTimeout = setTimeout;
-    dependencyMap4[guild_id] = setTimeout(() => {
-      delete tmp[tmp2];
-      (function triggerIntegrityCheck(closure_0) {
-        let obj = callback(outer2_2[19]);
-        if (obj.isChannelMetadataIntegrityCheckEnabled("triggerIntegrityCheck")) {
-          if (!outer2_23.has(closure_0)) {
-            const tmp3 = outer2_32(closure_0);
-            if (null == outer2_12.getGuild(closure_0)) {
-              obj = { guild_id: closure_0, request_id: tmp3, failure_reason: "guild_not_found" };
-              outer2_1(outer2_2[16]).track(outer2_14.GUILD_CHANNEL_INTEGRITY_CHECK_FAILED, obj);
-              outer2_34(closure_0);
-            } else {
-              obj = { guild_id: closure_0, request_id: tmp3 };
-              outer2_1(outer2_2[16]).track(outer2_14.GUILD_CHANNEL_INTEGRITY_CHECK_EXECUTED, obj);
-              const socket = outer2_13.getSocket();
-              const result = socket.triggerGuildChannelResync(closure_0, null);
-              (function scheduleIntegrityCheckTimeout(closure_0, arg1) {
-                let closure_1 = arg1;
-                if (null != outer3_27[closure_0]) {
-                  const _clearTimeout = clearTimeout;
-                  clearTimeout(outer3_27[closure_0]);
-                }
-                outer3_27[closure_0] = setTimeout(() => {
-                  outer4_16.warn("Integrity check timeout for guild " + closure_0 + " with request " + closure_1);
-                  let obj = outer4_1(outer4_2[16]);
-                  obj = { guild_id: closure_0, request_id: closure_1, failure_reason: "timeout" };
-                  obj.track(outer4_14.GUILD_CHANNEL_INTEGRITY_CHECK_FAILED, obj);
-                  outer4_34(closure_0);
-                }, outer3_21);
-              })(closure_0, tmp3);
+    let _setTimeout = setTimeout;
+    dependencyMap2[guild_id] = setTimeout(() => {
+      delete tmp2[tmp];
+      let obj = guild_id(outer1_2[14]);
+      if (obj.isChannelMetadataIntegrityCheckEnabled("triggerIntegrityCheck")) {
+        if (!outer1_18.has(tmp5)) {
+          let str;
+          if (outer1_17[tmp5] != null) {
+            str = tmp9.requestId;
+          }
+          if (str == null) {
+            str = "unknown";
+          }
+          if (null == outer1_7.getGuild(tmp5)) {
+            obj = { guild_id: null, request_id: null, failure_reason: "guild_not_found" };
+            obj[0] = tmp5;
+            obj[1] = str;
+            outer1_1(tmp6[11]).track(outer1_9.GUILD_CHANNEL_INTEGRITY_CHECK_FAILED, obj);
+            if (null != outer1_22[tmp5]) {
+              let _clearTimeout2 = clearTimeout;
+              clearTimeout(tmp19[tmp5]);
+              delete tmp3[tmp];
             }
+            if (null != tmp4[tmp5]) {
+              const _clearTimeout3 = clearTimeout;
+              clearTimeout(tmp4[tmp5]);
+              delete tmp2[tmp];
+            }
+            const obj2 = outer1_1(tmp6[11]);
+          } else {
+            obj = { guild_id: null, request_id: null };
+            obj[0] = tmp5;
+            obj[1] = str;
+            outer1_1(tmp6[11]).track(outer1_9.GUILD_CHANNEL_INTEGRITY_CHECK_EXECUTED, obj);
+            const socket = outer1_8.getSocket();
+            const result = socket.triggerGuildChannelResync(tmp5, null);
+            guild_id = tmp5;
+            if (null != outer1_22[tmp5]) {
+              let _clearTimeout = clearTimeout;
+              clearTimeout(tmp29[tmp5]);
+            }
+            const _setTimeout = setTimeout;
+            outer1_22[tmp5] = setTimeout(() => {
+              outer1_11.warn("Integrity check timeout for guild " + closure_0 + " with request " + str);
+              let obj = str(outer1_2[11]);
+              obj = { guild_id: closure_0, request_id: str, failure_reason: "timeout" };
+              obj.track(outer1_9.GUILD_CHANNEL_INTEGRITY_CHECK_FAILED, obj);
+              if (null != outer1_22[closure_0]) {
+                const _clearTimeout = clearTimeout;
+                clearTimeout(tmp7[tmp4]);
+                delete tmp3[tmp2];
+              }
+              if (null != outer1_21[closure_0]) {
+                const _clearTimeout2 = clearTimeout;
+                clearTimeout(tmp9[tmp4]);
+                delete tmp[tmp2];
+              }
+            }, outer1_16);
+            const obj4 = outer1_1(tmp6[11]);
           }
         }
-      })(closure_0);
-    }, closure_18 + Math.ceil(Math.random() * closure_19));
-    tmp3 = null != dependencyMap4[guild_id];
+      }
+    }, closure_13 + Math.ceil(Math.random() * closure_14));
+    tmp8 = null != dependencyMap2[guild_id];
   }
 }
-importDefaultResult = new importDefaultResult("ChannelResyncManager");
-let closure_17 = 2 * require("set").Millis.SECOND;
-let closure_18 = 30 * require("set").Millis.SECOND;
-let closure_19 = 300 * require("set").Millis.SECOND;
-let closure_20 = 30 * require("set").Millis.SECOND;
-let closure_21 = 60 * require("set").Millis.SECOND;
-let closure_22 = {};
+const unpackModuleId = new require("handleConnectionOpen")("ChannelResyncManager");
+let closure_12 = 2 * require("set").Millis.SECOND;
+let closure_13 = 30 * require("set").Millis.SECOND;
+let closure_14 = 300 * require("set").Millis.SECOND;
+let closure_15 = 30 * require("set").Millis.SECOND;
+let closure_16 = 60 * require("set").Millis.SECOND;
+class ChannelResyncManager extends tmp3 {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    obj = { GUILD_CREATE: handleGuildCreate, POST_CONNECTION_OPEN: handlePostConnectionOpen, CHANNEL_SYNC: handleChannelSync, LOGOUT: handleLogout };
+    applyArgumentsResult.actions = obj;
+    return applyArgumentsResult;
+  }
+}
+ChannelResyncManager.prototype["__unsafeGetTestState"] = function __unsafeGetTestState() {
+  return { scheduledResyncTimerGuildIds: Object.keys(closure_19), pendingResyncTimeoutGuildIds: Object.keys(closure_20), scheduledIntegrityCheckTimerGuildIds: Object.keys(closure_21), pendingIntegrityCheckTimeoutGuildIds: Object.keys(closure_22), pendingGuildCreateDeferredGuildIds: Object.keys(closure_23), guildIdsWithLatestRequest: Object.keys(closure_17), guildsCompletedIntegrityCheck: Array.from(set), sessionEpoch: c24 };
+};
+let closure_17 = {};
 let set = new Set();
-let closure_24 = {};
-let closure_25 = {};
-let closure_26 = {};
-let closure_27 = {};
-let closure_28 = {};
-let c29 = 0;
-tmp4 = new tmp4();
+let closure_19 = {};
+let closure_20 = {};
+let closure_21 = {};
+let closure_22 = {};
+let closure_23 = {};
+let c24 = 0;
+const channelResyncManager = new ChannelResyncManager();
 let result = set.fileFinishedImporting("modules/gateway/ChannelResyncManager.tsx");
 
-export default tmp4;
+export default channelResyncManager;

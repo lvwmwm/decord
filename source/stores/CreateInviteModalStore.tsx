@@ -1,29 +1,16 @@
-// Module ID: 8325
-// Function ID: 66653
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 1348, 1838, 6675, 653, 8326, 8328, 44, 566, 686, 2]
+// Module ID: 8349
+// Function ID: 8350
+// Name: updateWithLatestInvite
+// Dependencies: [1372, 1862, 6696, 676, 8350, 8352, 38, 589, 709, 2]
 
-// Module 8325 (_isNativeReflectConstruct)
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_createForOfIteratorHelperLoose";
-import closure_10 from "_isNativeReflectConstruct";
+// Module 8349 (updateWithLatestInvite)
+import ensureGuildLoaded from "ensureGuildLoaded";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import map from "map";
 import { FormStates } from "ME";
+import { Store } from "initialize";
 
 const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
 function updateWithLatestInvite(channelId, arg1) {
   let targetApplicationId;
   let targetType;
@@ -31,180 +18,128 @@ function updateWithLatestInvite(channelId, arg1) {
   ({ targetType, targetUserId, targetApplicationId } = arg1);
   channel = channel.getChannel(channelId);
   let guild_id;
-  if (null != channel) {
+  if (channel != null) {
     guild_id = channel.guild_id;
   }
   guild = guild.getGuild(guild_id);
-  let obj = require(8328) /* getDefaultInviteExpiration */;
+  let obj = require(8352) /* getDefaultInviteExpiration */;
   let maxAge = obj.getDefaultInviteExpiration({ guild });
-  const invite2 = invite.getInvite(channelId, { targetType, targetUserId, targetApplicationId });
-  obj = { channelId };
-  if (null != invite2) {
-    maxAge = invite2.maxAge;
+  invite = invite.getInvite(channelId, { targetType, targetUserId, targetApplicationId });
+  obj = { channelId, maxAge: null, maxUses: null, temporary: null, flags: null, targetType: null, targetUserId: null, targetApplicationId: null, roleIds: null };
+  if (null != invite) {
+    maxAge = invite.maxAge;
   }
-  obj.maxAge = maxAge;
-  if (null != invite2) {
-    let maxUses = invite2.maxUses;
+  obj[1] = maxAge;
+  if (null != invite) {
+    let maxUses = invite.maxUses;
   } else {
-    maxUses = closure_18;
+    maxUses = closure_13;
   }
-  obj.maxUses = maxUses;
-  let temporary = null != invite2;
+  obj[2] = maxUses;
+  let temporary = null != invite;
   if (temporary) {
-    temporary = invite2.temporary;
+    temporary = invite.temporary;
   }
-  obj.temporary = temporary;
+  obj[3] = temporary;
   let num = 0;
-  if (null != invite2) {
-    num = invite2.flags;
+  if (null != invite) {
+    num = invite.flags;
   }
-  obj.flags = num;
-  obj.targetType = targetType;
-  obj.targetUserId = targetUserId;
-  obj.targetApplicationId = targetApplicationId;
+  obj[4] = num;
+  obj[5] = targetType;
+  obj[6] = targetUserId;
+  obj[7] = targetApplicationId;
   let mapped;
-  if (null != invite2) {
-    const roles = invite2.roles;
-    if (null != roles) {
+  if (invite != null) {
+    const roles = invite.roles;
+    if (roles != null) {
       mapped = roles.map((id) => id.id);
     }
   }
-  if (null == mapped) {
+  if (mapped == null) {
     mapped = [];
   }
-  obj.roleIds = mapped;
+  obj[8] = mapped;
 }
-function init(guildId) {
-  guildId = guildId.guildId;
-  let c13 = null;
-  const targetType = guildId.targetType;
-  let tmp = null;
-  if (null != targetType) {
-    tmp = targetType;
-  }
-  const targetUserId = guildId.targetUserId;
-  let tmp2 = null;
-  if (null != targetUserId) {
-    tmp2 = targetUserId;
-  }
-  const targetApplicationId = guildId.targetApplicationId;
-  let tmp3 = null;
-  if (null != targetApplicationId) {
-    tmp3 = targetApplicationId;
-  }
-  const obj = { targetType: tmp, targetUserId: tmp2, targetApplicationId: tmp3 };
-  updateWithLatestInvite(guildId.channelId, obj);
-}
-const value = require("_createForOfIteratorHelperLoose").INVITE_OPTIONS_UNLIMITED.value;
+require("isGuildMember").INVITE_OPTIONS_UNLIMITED.value;
 let CLOSED = FormStates.CLOSED;
-let c20 = false;
-let tmp2 = ((Store) => {
-  class CreateInviteModalStore {
-    constructor() {
-      self = this;
-      tmp = outer1_3(this, CreateInviteModalStore);
-      obj = outer1_6(CreateInviteModalStore);
-      tmp2 = outer1_5;
-      if (outer1_21()) {
-        tmp6 = globalThis;
-        _Reflect = Reflect;
-        tmp7 = outer1_6;
-        tmp8 = arguments;
-        constructResult = Reflect.construct(obj, arguments, outer1_6(self).constructor);
-      } else {
-        tmp3 = arguments;
-        tmp4 = arguments;
-        constructResult = obj(...arguments);
-      }
-      return tmp2(self, constructResult);
+let c15 = false;
+class CreateInviteModalStore extends Store {
+}
+const prototype = CreateInviteModalStore.prototype;
+prototype["initialize"] = function initialize() {
+  this.waitFor(ensureGuildLoaded, createGuildRecordFromRust, map);
+};
+prototype["init"] = function init() {
+  this.waitFor(map);
+};
+prototype["isOpen"] = function isOpen() {
+  return CLOSED !== FormStates.CLOSED;
+};
+prototype["isSubmitting"] = function isSubmitting() {
+  return c15;
+};
+prototype["getGuildId"] = function getGuildId() {
+  return closure_3;
+};
+prototype["getError"] = function getError() {
+  return closure_4;
+};
+prototype["getInvite"] = function getInvite() {
+  return closure_5;
+};
+prototype["getInviteSettings"] = function getInviteSettings() {
+  return closure_6;
+};
+prototype["getPendingSettings"] = function getPendingSettings() {
+  return closure_7;
+};
+prototype["getProps"] = function getProps() {
+  return {};
+};
+Object.defineProperty(prototype, "onClose", {
+  get: function onClose() {
+    return closure_8;
+  },
+  set: undefined
+});
+CreateInviteModalStore.displayName = "CreateInviteModalStore";
+const createInviteModalStore = new CreateInviteModalStore(require("dispatcher"), {
+  CREATE_INVITE_MODAL_INIT: function handleInit(guildId) {
+    guildId = guildId.guildId;
+    let c4 = null;
+    let targetType = guildId.targetType;
+    if (targetType == null) {
+      targetType = null;
     }
-  }
-  callback2(CreateInviteModalStore, Store);
-  let obj = {
-    key: "initialize",
-    value() {
-      this.waitFor(outer1_8, outer1_9, outer1_10);
+    let targetUserId = guildId.targetUserId;
+    if (targetUserId == null) {
+      targetUserId = null;
     }
-  };
-  const items = [obj, , , , , , , , , , ];
-  obj = {
-    key: "init",
-    value() {
-      this.waitFor(outer1_10);
+    let targetApplicationId = guildId.targetApplicationId;
+    if (targetApplicationId == null) {
+      targetApplicationId = null;
     }
-  };
-  items[1] = obj;
-  obj = {
-    key: "isOpen",
-    value() {
-      return outer1_19 !== outer1_11.CLOSED;
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "isSubmitting",
-    value() {
-      return outer1_20;
-    }
-  };
-  items[4] = {
-    key: "getGuildId",
-    value() {
-      return outer1_12;
-    }
-  };
-  items[5] = {
-    key: "getError",
-    value() {
-      return outer1_13;
-    }
-  };
-  items[6] = {
-    key: "getInvite",
-    value() {
-      return outer1_14;
-    }
-  };
-  items[7] = {
-    key: "getInviteSettings",
-    value() {
-      return outer1_15;
-    }
-  };
-  items[8] = {
-    key: "getPendingSettings",
-    value() {
-      return outer1_16;
-    }
-  };
-  items[9] = {
-    key: "getProps",
-    value() {
-      return {};
-    }
-  };
-  items[10] = {
-    key: "onClose",
-    get() {
-      return outer1_17;
-    }
-  };
-  return callback(CreateInviteModalStore, items);
-})(require("initialize").Store);
-tmp2.displayName = "CreateInviteModalStore";
-tmp2 = new tmp2(require("dispatcher"), {
-  CREATE_INVITE_MODAL_INIT: function handleInit(arg0) {
-    init(arg0);
+    updateWithLatestInvite(guildId.channelId, { targetType, targetUserId, targetApplicationId });
   },
   CREATE_INVITE_MODAL_OPEN: function handleModalOpen(onClose) {
     const OPEN = FormStates.OPEN;
     onClose = onClose.onClose;
-    let tmp;
-    if (null != onClose) {
-      tmp = onClose;
+    const guildId = onClose.guildId;
+    let c4 = null;
+    let targetType = onClose.targetType;
+    if (targetType == null) {
+      targetType = null;
     }
-    let closure_17 = tmp;
-    init(onClose);
+    let targetUserId = onClose.targetUserId;
+    if (targetUserId == null) {
+      targetUserId = null;
+    }
+    let targetApplicationId = onClose.targetApplicationId;
+    if (targetApplicationId == null) {
+      targetApplicationId = null;
+    }
+    updateWithLatestInvite(onClose.channelId, { targetType, targetUserId, targetApplicationId });
   },
   CREATE_INVITE_MODAL_UPDATE_SETTINGS: function handleUpdateSettings(settings) {
     settings = settings.settings;
@@ -215,28 +150,28 @@ tmp2 = new tmp2(require("dispatcher"), {
     }
   },
   CREATE_INVITE_MODAL_RESET_SETTINGS: function handleResetSettings() {
-    let closure_16 = closure_15;
+    let closure_7 = closure_6;
   },
   CREATE_INVITE_MODAL_GENERATE_INVITE: function handleGenerateInvite() {
-    let closure_15 = closure_16;
-    let c20 = true;
+    let closure_6 = closure_7;
+    let c15 = true;
   },
   CREATE_INVITE_MODAL_GENERATE_INVITE_SUCCESS: function handleGenerateInviteSuccess(channelId) {
-    let c13 = null;
-    let c20 = false;
-    importDefault(44)(null != closure_15, "No invite settings for generated invite");
-    updateWithLatestInvite(channelId.channelId, { targetType: closure_15.targetType, targetUserId: closure_15.targetUserId, targetApplicationId: closure_15.targetApplicationId });
+    let c4 = null;
+    let c15 = false;
+    importDefault(38)(null != closure_6, "No invite settings for generated invite");
+    updateWithLatestInvite(channelId.channelId, { targetType: closure_6.targetType, targetUserId: closure_6.targetUserId, targetApplicationId: closure_6.targetApplicationId });
   },
   CREATE_INVITE_MODAL_GENERATE_INVITE_FAILURE: function handleGenerateInviteFailure(message) {
-    let c14 = null;
-    let c20 = false;
+    let c5 = null;
+    let c15 = false;
     message = message.message;
   },
   CREATE_INVITE_MODAL_CLOSE: function handleModalClose() {
     const CLOSED = FormStates.CLOSED;
-    let c17;
+    let c8;
   }
 });
-let result = require("_possibleConstructorReturn").fileFinishedImporting("stores/CreateInviteModalStore.tsx");
+const result = require("map").fileFinishedImporting("stores/CreateInviteModalStore.tsx");
 
-export default tmp2;
+export default createInviteModalStore;

@@ -1,100 +1,90 @@
-// Module ID: 11411
-// Function ID: 88480
+// Module ID: 11435
+// Function ID: 11436
 // Name: StyleSheet
-// Dependencies: [31, 27, 33, 4165, 477, 4026, 4577, 4101, 7656, 4567, 4011, 5550, 2]
+// Dependencies: [19, 17, 21, 4189, 500, 4050, 4599, 4125, 7679, 4589, 4035, 5568, 2]
 
-// Module 11411 (StyleSheet)
+// Module 11435 (StyleSheet)
 import { StyleSheet } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 import set from "set";
-import importAllResult from "result";
+import importAllResult from "noop";
 import set from "jsxProd";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
+({ jsx: c4, jsxs: c5 } = jsxProd);
 let obj = { position: "absolute", left: 0, right: 0, bottom: -StyleSheet.hairlineWidth, height: StyleSheet.hairlineWidth };
 obj = { height: StyleSheet.hairlineWidth, opacity: 0.15, backgroundColor: "white" };
-_createForOfIteratorHelperLoose = { height: StyleSheet.hairlineWidth, opacity: 0.8, backgroundColor: "black" };
-let obj2 = { height: StyleSheet.hairlineWidth, opacity: 0.2, backgroundColor: "black" };
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ blur: { position: "absolute", top: 0, left: 0, right: 0 }, strokeContainer: obj, stroke: obj, strokeAlt: _createForOfIteratorHelperLoose, strokeAltLight: obj2 });
+createCacheKey = { height: StyleSheet.hairlineWidth, opacity: 0.8, backgroundColor: "black" };
+let closure_6 = createCacheKey.createStyles({ blur: { position: "absolute", top: 0, left: 0, right: 0 }, strokeContainer: obj, stroke: obj, strokeAlt: createCacheKey, strokeAltLight: { height: StyleSheet.hairlineWidth, opacity: 0.2, backgroundColor: "black" } });
 set = set.isAndroid();
 let closure_8 = { code: "function VoicePanelHeaderGlassBlurTsx1(){const{shown,IS_ANDROID}=this.__closure;return{opacity:shown.get()?IS_ANDROID?0.7:1:0};}" };
 let closure_9 = { code: "function VoicePanelHeaderGlassBlurTsx2(){const{withSpring,shown}=this.__closure;return{blurAmount:withSpring(shown.get()?0.3:0)};}" };
+let obj2 = { height: StyleSheet.hairlineWidth, opacity: 0.2, backgroundColor: "black" };
 const result = set.fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelHeaderGlassBlur.tsx");
 
-export default require("result").memo(function HeaderGlassBlur(shown) {
+export default require("noop").memo(function HeaderGlassBlur(shown) {
   let blurStyle;
   let style;
   shown = shown.shown;
   ({ blurStyle, style } = shown);
-  const tmp = callback2();
-  let obj = shown(4026);
+  const tmp = callback();
+  let obj = shown(4050);
   const fn = function k() {
-    const obj = {};
-    let num = 0;
+    let opacity = 0;
     if (shown.get()) {
       let num2 = 1;
       if (outer1_7) {
         num2 = 0.7;
       }
-      num = num2;
+      opacity = num2;
     }
-    obj.opacity = num;
-    return obj;
+    return { opacity };
   };
   obj = { shown, IS_ANDROID: set };
   fn.__closure = obj;
   fn.__workletHash = 3451055086565;
   fn.__initData = closure_8;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj2 = shown(4026);
+  let obj2 = shown(4050);
   const fn2 = function p() {
-    const obj = {};
+    let obj = shown(outer1_2[6]);
     let num = 0;
     if (shown.get()) {
       num = 0.3;
     }
-    obj.blurAmount = shown(outer1_2[6]).withSpring(num);
+    obj = { blurAmount: obj.withSpring(num) };
     return obj;
   };
-  obj = { withSpring: shown(4577).withSpring, shown };
+  obj = { withSpring: shown(4599).withSpring, shown };
   fn2.__closure = obj;
   fn2.__workletHash = 5642055202507;
   fn2.__initData = closure_9;
   const animatedProps = obj2.useAnimatedProps(fn2);
-  const tmp4 = importDefault(4101)();
-  const obj1 = { style: items };
+  const tmp7 = importDefault(4125)();
+  const obj1 = { style: items, children: null };
   items = [tmp.blur, style, animatedStyle];
-  obj2 = { blurStyle: "ultra-thin" };
-  const tmp5 = closure_5;
-  const tmp6 = importDefault(7656);
-  const tmp7 = callback;
-  const tmp8 = importDefault(4567);
+  const tmp2 = shown;
+  const tmp9 = importDefault(7679);
+  const tmp11 = importDefault(4589);
   let str = "light";
-  if (obj7.isThemeDark(tmp4)) {
+  if (obj6.isThemeDark(tmp7)) {
     str = "dark";
   }
-  obj2.blurTheme = str;
   const items1 = [StyleSheet.absoluteFillObject, blurStyle];
-  obj2.style = items1;
-  obj2.animatedProps = animatedProps;
-  const items2 = [tmp7(tmp8, obj2), ];
-  const obj3 = { style: tmp.strokeContainer };
-  obj7 = shown(4011);
-  const tmp9 = closure_5;
-  const items3 = [callback(importDefault(5550), { style: tmp.stroke }), ];
-  const obj5 = {};
-  const obj4 = { style: tmp.stroke };
-  const tmp10 = importDefault(5550);
-  const tmp11 = callback;
-  const tmp12 = importDefault(5550);
-  obj5.style = shown(4011).isThemeDark(tmp4) ? tmp.strokeAlt : tmp.strokeAltLight;
-  items3[1] = tmp11(tmp12, obj5);
-  obj3.children = items3;
-  items2[1] = tmp9(tmp10, obj3);
-  obj1.children = items2;
-  return tmp5(tmp6, obj1);
+  const items2 = [closure_4(tmp11, { blurStyle: "ultra-thin", blurTheme: str, style: items1, animatedProps }), ];
+  obj2 = { style: tmp.strokeContainer, children: null };
+  let tmp6Result = tmp6(5568);
+  const items3 = [closure_4(importDefault(5568), { style: tmp.stroke }), ];
+  tmp6Result = tmp6(5568);
+  const obj3 = { style: tmp.stroke };
+  obj6 = shown(4035);
+  const tmp2Result = tmp2(4035);
+  items3[1] = closure_4(tmp6Result, { style: tmp2(4035).isThemeDark(tmp7) ? tmp.strokeAlt : tmp.strokeAltLight });
+  obj2[1] = items3;
+  items2[1] = closure_5(tmp6Result, obj2);
+  obj1[1] = items2;
+  return closure_5(tmp9, obj1);
 });

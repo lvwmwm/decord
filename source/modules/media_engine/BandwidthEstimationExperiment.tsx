@@ -1,105 +1,12 @@
-// Module ID: 12859
-// Function ID: 100045
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [4077, 2]
+// Module ID: 12881
+// Function ID: 12882
+// Dependencies: [4101, 2]
 
-// Module 12859 (_createForOfIteratorHelperLoose)
+// Module 12881
 import createExperiment from "createExperiment";
 
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-let obj = { kind: "user", id: "2024-06_rtc_pacer__simulcast", label: "RTC Pacer & Golive Simulcast", defaultConfig: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/", simulcastEnabled: false } };
-obj = { id: 1, label: "Golive Simulcast without prober 720p@500k", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/", simulcastEnabled: true } };
-const items = [obj, , , , , ];
-const obj1 = { id: 2, label: "Golive Simulcast 720p@500k", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer,worker-pacer-probe", simulcastEnabled: true } };
-items[1] = obj1;
-const obj2 = { id: 3, label: "Golive with pacing", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer", simulcastEnabled: false } };
-items[2] = obj2;
-const obj3 = { id: 4, label: "Golive with pacing and probing", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer,worker-pacer-probe", simulcastEnabled: false } };
-items[3] = obj3;
-const obj4 = { id: 5, label: "Golive Simulcast 720p@750k", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer-probe,worker-lq-floor-750k", simulcastEnabled: true } };
-items[4] = obj4;
-const obj5 = { id: 6, label: "Golive Simulcast 720p@1000k", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer-probe,worker-lq-floor-1000k", simulcastEnabled: true } };
-items[5] = obj5;
-obj.treatments = items;
-let closure_0 = createExperiment.createExperiment(obj);
+const items = [{ id: 1, label: "Golive Simulcast without prober 720p@500k", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/", simulcastEnabled: true } }, { id: 2, label: "Golive Simulcast 720p@500k", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer,worker-pacer-probe", simulcastEnabled: true } }, { id: 3, label: "Golive with pacing", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer", simulcastEnabled: false } }, { id: 4, label: "Golive with pacing and probing", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer,worker-pacer-probe", simulcastEnabled: false } }, { id: 5, label: "Golive Simulcast 720p@750k", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer-probe,worker-lq-floor-750k", simulcastEnabled: true } }, { id: 6, label: "Golive Simulcast 720p@1000k", config: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/worker-pacer-probe,worker-lq-floor-1000k", simulcastEnabled: true } }];
+let closure_0 = createExperiment.createExperiment({ kind: "user", id: "2024-06_rtc_pacer__simulcast", label: "RTC Pacer & Golive Simulcast", defaultConfig: { enabled: true, fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/", simulcastEnabled: false }, treatments: items });
 const result = require("set").fileFinishedImporting("modules/media_engine/BandwidthEstimationExperiment.tsx");
 
 export default {
@@ -115,14 +22,15 @@ export default {
     if (null === mediaEngineExperiments) {
       return false;
     } else {
-      const tmp3 = _createForOfIteratorHelperLoose(mediaEngineExperiments);
-      let iter = tmp3();
-      if (!iter.done) {
-        while (arr.includes(iter.value)) {
-          let iter2 = tmp3();
-          iter = iter2;
+      for (const item10010 of mediaEngineExperiments) {
+        if (arg1.includes(item10010)) {
+          continue;
+        } else {
+          let tmp4 = obj;
+          obj.return();
+          let flag = false;
+          return false;
         }
-        return false;
       }
       return true;
     }

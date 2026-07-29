@@ -1,40 +1,63 @@
-// Module ID: 6516
-// Function ID: 58085
+// Module ID: 6537
+// Function ID: 6538
 // Name: getWhatYouLoseProfileTier1Source
-// Dependencies: [31, 27, 33, 6517, 6518, 6519, 6520, 4011, 2]
-// Exports: WhatYouLoseProfileTier1
+// Dependencies: [19, 17, 21, 6538, 6539, 6540, 6541, 4035, 2]
+// Exports: WhatYouLoseProfileTier1, getWhatYouLoseProfileTier1Source, useWhatYouLoseProfileTier1Source
 
-// Module 6516 (getWhatYouLoseProfileTier1Source)
-import "result";
+// Module 6537 (getWhatYouLoseProfileTier1Source)
+import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function getWhatYouLoseProfileTier1Source(theme) {
-  let obj = require(6517) /* getIllustrationSource */;
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/WhatYouLoseProfileTier1.tsx");
+
+export const getWhatYouLoseProfileTier1Source = function getWhatYouLoseProfileTier1Source(theme) {
+  let obj = require(6538) /* getIllustrationSource */;
   obj = {
     dark() {
-      return outer1_0(outer1_1[4]);
+      return callback(6539);
     },
     darker() {
-      return outer1_0(outer1_1[5]);
+      return callback(6540);
     },
     light() {
-      return outer1_0(outer1_1[6]);
+      return callback(6541);
     }
   };
   return obj.getIllustrationSource(theme, obj);
-}
-function useWhatYouLoseProfileTier1Source() {
-  return getWhatYouLoseProfileTier1Source(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
-}
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/WhatYouLoseProfileTier1.tsx");
-
-export { getWhatYouLoseProfileTier1Source };
-export { useWhatYouLoseProfileTier1Source };
+};
+export const useWhatYouLoseProfileTier1Source = function useWhatYouLoseProfileTier1Source() {
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(6539);
+    },
+    darker() {
+      return callback(6540);
+    },
+    light() {
+      return callback(6541);
+    }
+  };
+  return require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+};
 export const WhatYouLoseProfileTier1 = function WhatYouLoseProfileTier1(arg0) {
-  const obj = {};
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(6539);
+    },
+    darker() {
+      return callback(6540);
+    },
+    light() {
+      return callback(6541);
+    }
+  };
+  obj = {};
+  const illustrationSource = require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
-  obj["source"] = useWhatYouLoseProfileTier1Source();
+  obj.source = illustrationSource;
   return <Image />;
 };

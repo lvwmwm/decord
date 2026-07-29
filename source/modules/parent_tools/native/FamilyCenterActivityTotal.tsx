@@ -1,53 +1,50 @@
-// Module ID: 13905
-// Function ID: 106368
+// Module ID: 13926
+// Function ID: 13927
 // Name: FamilyCenterActivityTotal
-// Dependencies: [31, 27, 33, 4165, 689, 13904, 5837, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 13925, 5855, 4185, 2]
 // Exports: default
 
-// Module 13905 (FamilyCenterActivityTotal)
-import "result";
+// Module 13926 (FamilyCenterActivityTotal)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ jsx: closure_3, jsxs: closure_4 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { display: "flex", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGHEST, padding: 12, justifyContent: "center", alignItems: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LEDGE);
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ jsx: c3, jsxs: c4 } = jsxProd);
+createCacheKey = { container: null };
+createCacheKey = { display: "flex", backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, padding: 12, justifyContent: "center", alignItems: "center", borderRadius: require("Themes").radii.md };
+const merged = Object.assign(require("Themes").shadows.SHADOW_LEDGE);
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityTotal.tsx");
 
 export default function FamilyCenterActivityTotal(displayType) {
   displayType = displayType.displayType;
-  let obj = require(13904) /* useActionTotalsForDisplayType */;
+  let obj = require(13925) /* useActionsForDisplayType */;
   const actionTotalsForDisplayType = obj.useActionTotalsForDisplayType(displayType);
-  let obj1 = require(13904) /* useActionTotalsForDisplayType */;
-  const formattedTotalForDisplayType = obj1.useFormattedTotalForDisplayType(displayType);
+  const tmp = createCacheKey();
+  let num = require(13925) /* useActionsForDisplayType */.useFormattedTotalForDisplayType(displayType);
   let str = "text-muted";
   if (actionTotalsForDisplayType > 0) {
     str = "text-brand";
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  const activityTypeTextConfigs = require(5837) /* getActivityTypeTextConfigs */.getActivityTypeTextConfigs();
+  const obj2 = require(13925) /* useActionsForDisplayType */;
+  const activityTypeTextConfigs = require(5855) /* getEmptyActivityFormatter */.getActivityTypeTextConfigs();
   const value = activityTypeTextConfigs.get(displayType);
   let tooltipHeaderResult;
-  if (null != value) {
+  if (value != null) {
     tooltipHeaderResult = value.tooltipHeader();
   }
-  obj = { style: tmp.container };
-  obj = { variant: "heading-xxl/medium", color: str };
-  let num = 0;
-  if (null != formattedTotalForDisplayType) {
-    num = formattedTotalForDisplayType;
+  obj = { style: tmp.container, children: null };
+  obj = { variant: "heading-xxl/medium", color: str, children: null };
+  if (num == null) {
+    num = 0;
   }
-  obj.children = num;
-  const items = [callback(require(4161) /* Text */.Text, obj), ];
-  obj1 = { variant: "text-sm/semibold", children: tooltipHeaderResult };
-  items[1] = callback(require(4161) /* Text */.Text, obj1);
-  obj.children = items;
+  obj[2] = num;
+  const items = [closure_3(require(4185) /* Text */.Text, obj), closure_3(require(4185) /* Text */.Text, { variant: "text-sm/semibold", children: tooltipHeaderResult })];
+  obj[1] = items;
   return closure_4(View, obj);
 };

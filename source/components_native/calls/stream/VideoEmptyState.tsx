@@ -1,137 +1,140 @@
-// Module ID: 10523
-// Function ID: 81462
+// Module ID: 10547
+// Function ID: 10548
 // Name: VideoEmptyState
-// Dependencies: [31, 27, 1348, 653, 33, 4165, 689, 10524, 1273, 1212, 10527, 8828, 566, 4594, 4344, 4229, 4161, 4579, 2]
+// Dependencies: [19, 17, 1372, 676, 21, 4189, 712, 10548, 1297, 1236, 10551, 8852, 589, 4616, 4369, 4253, 4185, 4601, 2]
 // Exports: default
 
-// Module 10523 (VideoEmptyState)
-import "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10547 (VideoEmptyState)
+import "noop";
+import { View } from "CollapsingText";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ jsx: closure_5, Fragment: closure_6, jsxs: closure_7 } = jsxProd);
+({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
 let obj = { NONE: "NONE", STREAM_ENDED: "STREAM_ENDED", STREAM_FAILED: "STREAM_FAILED" };
-obj = {};
-obj = { alignItems: "center", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.PRIMARY_700, padding: 8 };
-obj.container = obj;
-obj.placeholderImage = { marginBottom: 8, width: "100%", resizeMode: "contain" };
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").unsafe_rawColors.WHITE, fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, fontSize: 16, lineHeight: 20, textAlign: "center" };
-obj.placeholderText = _createForOfIteratorHelperLoose;
-obj.buttonWrapper = { marginTop: 16, alignSelf: "center" };
-obj.buttonPill = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
-let obj2 = { borderRadius: require("_createForOfIteratorHelperLoose").radii.round };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("components_native/calls/stream/VideoEmptyState.tsx");
+obj = { container: null, placeholderImage: null, placeholderText: null, buttonWrapper: null, buttonPill: null };
+obj = { alignItems: "center", justifyContent: "center", backgroundColor: require("Themes").unsafe_rawColors.PRIMARY_700, padding: 8 };
+obj[0] = obj;
+obj[1] = { marginBottom: 8, width: "100%", resizeMode: "contain" };
+createCacheKey = { color: require("Themes").unsafe_rawColors.WHITE, fontFamily: require("ME").Fonts.PRIMARY_SEMIBOLD, fontSize: 16, lineHeight: 20, textAlign: "center" };
+obj[2] = createCacheKey;
+obj[3] = { marginTop: 16, alignSelf: "center" };
+obj[4] = { borderRadius: require("Themes").radii.round };
+let closure_9 = createCacheKey.createStyles(obj);
+let obj2 = { borderRadius: require("Themes").radii.round };
+const result = require("ensureGuildLoaded").fileFinishedImporting("components_native/calls/stream/VideoEmptyState.tsx");
 
-export default function VideoEmptyState(arg0) {
+export default function VideoEmptyState(style) {
   let avError;
   let removeCloseButton;
   let removeSplashImage;
   let stream;
-  let style;
   let type;
-  ({ type, avError, removeSplashImage, stream } = arg0);
-  let obj = { type: 0, style: 0, avError: 0, removeSplashImage: 0, removeCloseButton: 0, stream: 0 };
-  ({ style, removeCloseButton } = arg0);
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(arg0, obj);
+  ({ type, avError, removeSplashImage, removeCloseButton, stream } = style);
+  const merged = Object.assign(style, Object.create(null));
   let importDefault;
-  const tmp3 = callback2();
+  const tmp2 = callback2();
   if (obj.STREAM_ENDED === type) {
-    obj = {};
-    let tmp17 = !removeSplashImage;
-    if (tmp17) {
-      obj = { style: tmp3.placeholderImage };
-      tmp17 = callback(stream(10524).StreamEnded, obj);
+    let tmp16 = !removeSplashImage;
+    if (!removeSplashImage) {
+      obj = { style: null };
+      obj[0] = tmp2.placeholderImage;
+      tmp16 = callback(stream(10548).StreamEnded, obj);
     }
-    const items = [tmp17, ];
-    const obj1 = { style: tmp3.placeholderText };
-    const intl2 = stream(1212).intl;
-    obj1.children = intl2.formatToMarkdownString(stream(1212).t["1Ww0Hi"], {});
-    items[1] = callback(stream(1273).LegacyText, obj1);
-    obj.children = items;
-    let tmp6Result = closure_7(closure_6, obj);
-    const tmp15 = closure_7;
-    const tmp16 = closure_6;
-  } else if (obj.STREAM_FAILED === type) {
-    let obj2 = {};
-    let tmp8 = !removeSplashImage;
-    if (tmp8) {
-      const obj3 = { style: tmp3.placeholderImage };
-      tmp8 = callback(stream(10527).StreamFailed, obj3);
+    obj = { children: null };
+    const items = [tmp16, ];
+    const obj1 = { style: null, children: null };
+    obj1[0] = tmp2.placeholderText;
+    const intl2 = stream(1236).intl;
+    obj1[1] = intl2.formatToMarkdownString(stream(1236).t["1Ww0Hi"], {});
+    items[1] = callback(stream(1297).LegacyText, obj1);
+    obj[0] = items;
+    let tmp5Result = closure_7(closure_6, obj);
+    const tmp14 = closure_7;
+    const tmp15 = closure_6;
+  } else if (tmp3.STREAM_FAILED === type) {
+    let tmp7 = !removeSplashImage;
+    if (!removeSplashImage) {
+      obj = { style: null };
+      obj[0] = tmp2.placeholderImage;
+      tmp7 = callback(stream(10551).StreamFailed, obj);
     }
-    const items1 = [tmp8, ];
-    const obj4 = { style: tmp3.placeholderText };
-    const intl = stream(1212).intl;
-    obj4.children = intl.string(stream(1212).t.rSlOep);
-    items1[1] = callback(stream(1273).LegacyText, obj4);
-    obj2.children = items1;
-    tmp6Result = closure_7(closure_6, obj2);
-    const tmp6 = closure_7;
-    const tmp7 = closure_6;
-  } else if (obj.NONE === type) {
-    tmp6Result = null;
+    let obj2 = { children: null };
+    const items1 = [tmp7, ];
+    let obj3 = { style: null, children: null };
+    obj3[0] = tmp2.placeholderText;
+    const intl = stream(1236).intl;
+    obj3[1] = intl.string(stream(1236).t.rSlOep);
+    items1[1] = callback(stream(1297).LegacyText, obj3);
+    obj2[0] = items1;
+    tmp5Result = closure_7(closure_6, obj2);
+    const tmp5 = closure_7;
+    const tmp6 = closure_6;
+  } else if (tmp3.NONE === type) {
+    tmp5Result = null;
   }
   if (null != avError) {
-    let obj8 = stream(8828);
-    let errorCode = obj8.getErrorInfo(avError).errorCode;
+    let obj7 = stream(8852);
+    let errorCode = obj7.getErrorInfo(avError).errorCode;
   } else {
     errorCode = null;
-    if (type === obj.STREAM_FAILED) {
-      let obj7 = stream(8828);
-      errorCode = obj7.getErrorInfo(stream(8828).AVError.STREAM_FAILED_TO_START).errorCode;
+    if (type === tmp3.STREAM_FAILED) {
+      let obj6 = stream(8852);
+      errorCode = obj6.getErrorInfo(stream(8852).AVError.STREAM_FAILED_TO_START).errorCode;
     }
   }
-  let obj9 = stream(566);
-  const items2 = [_isNativeReflectConstruct];
+  let obj8 = stream(589);
+  const items2 = [ensureGuildLoaded];
   const items3 = [stream.channelId];
-  importDefault = obj9.useStateFromStores(items2, () => outer1_4.getChannel(stream.channelId), items3);
-  importDefault(4594)(() => {
-    let isGuildStageVoiceResult = null != guildStageVoice;
-    if (isGuildStageVoiceResult) {
-      isGuildStageVoiceResult = guildStageVoice.isGuildStageVoice();
+  importDefault = obj8.useStateFromStores(items2, () => outer1_4.getChannel(stream.channelId), items3);
+  importDefault(4616)(() => {
+    let isGuildStageVoiceResult;
+    if (closure_1 != null) {
+      isGuildStageVoiceResult = closure_1.isGuildStageVoice();
     }
     if (isGuildStageVoiceResult) {
-      const obj = stream(outer1_2[14]);
-      obj.stopStream(stream(outer1_2[15]).encodeStreamKey(stream));
-      const obj2 = stream(outer1_2[15]);
+      const obj2 = stream(outer1_2[14]);
+      obj2.stopStream(stream(outer1_2[15]).encodeStreamKey(stream));
+      const obj3 = stream(outer1_2[15]);
     }
   });
-  const obj5 = {};
+  const obj4 = {};
   const merged1 = Object.assign(merged);
-  const items4 = [tmp3.container, style];
-  obj5["style"] = items4;
-  const items5 = [tmp6Result, , ];
+  const items4 = [tmp2.container, style.style];
+  obj4.style = items4;
+  const items5 = [tmp5Result, , ];
   let tmp34 = null != errorCode;
   if (tmp34) {
-    const obj6 = { variant: "text-sm/semibold", color: "text-muted", selectable: true };
-    const intl3 = stream(1212).intl;
-    obj7 = { errorCode };
-    obj6.children = intl3.formatToPlainString(stream(1212).t.ejOT95, obj7);
-    tmp34 = callback(stream(4161).Text, obj6);
+    const obj5 = { variant: "text-sm/semibold", color: "text-muted", selectable: true, children: null };
+    const intl3 = tmp28(1236).intl;
+    obj6 = { errorCode: null };
+    obj6[0] = errorCode;
+    obj5[3] = intl3.formatToPlainString(tmp28(1236).t.ejOT95, obj6);
+    tmp34 = callback(tmp28(4185).Text, obj5);
   }
   items5[1] = tmp34;
-  let tmp38 = !removeCloseButton;
-  if (tmp38) {
-    obj8 = { style: tmp3.buttonWrapper };
-    obj9 = { pillStyle: tmp3.buttonPill, variant: "secondary" };
-    const intl4 = stream(1212).intl;
-    obj9.text = intl4.string(stream(1212).t["4EGMWL"]);
-    obj9.onPress = function onPress() {
+  let tmp36 = !removeCloseButton;
+  if (!removeCloseButton) {
+    obj7 = { style: null, children: null };
+    obj7[0] = tmp2.buttonWrapper;
+    obj8 = { pillStyle: null, variant: "secondary", text: null, onPress: null };
+    obj8[0] = tmp2.buttonPill;
+    const intl4 = tmp28(1236).intl;
+    obj8[2] = intl4.string(tmp28(1236).t["4EGMWL"]);
+    obj8[3] = function onPress() {
       const obj = stream(outer1_2[14]);
       obj.stopStream(stream(outer1_2[15]).encodeStreamKey(stream));
     };
-    obj8.children = callback(stream(4579).BaseTextButton, obj9);
-    tmp38 = callback(View, obj8);
+    obj7[1] = callback(tmp28(4601).BaseTextButton, obj8);
+    tmp36 = callback(tmp32, obj7);
   }
-  items5[2] = tmp38;
-  obj5["children"] = items5;
-  return closure_7(View, obj5);
+  items5[2] = tmp36;
+  obj4.children = items5;
+  return closure_7(View, obj4);
 };
 export const VideoEmptyTypes = obj;

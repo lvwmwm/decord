@@ -1,12 +1,12 @@
-// Module ID: 10304
-// Function ID: 79499
+// Module ID: 10325
+// Function ID: 10326
 // Name: NotificationSettingsMessageNotificationChannelActionSheet
-// Dependencies: [31, 4360, 653, 4361, 662, 33, 10291, 10303, 1212, 10292, 5113, 5108, 2]
+// Dependencies: [19, 4385, 676, 4386, 685, 21, 10312, 10324, 1236, 10313, 5135, 5130, 2]
 // Exports: default
 
-// Module 10304 (NotificationSettingsMessageNotificationChannelActionSheet)
-import "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 10325 (NotificationSettingsMessageNotificationChannelActionSheet)
+import "noop";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { UserNotificationSettings } from "ME";
 import { UnreadSetting } from "ReadStateTypes";
 import { ChannelNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES";
@@ -17,20 +17,20 @@ let result = require("ME").fileFinishedImporting("modules/notifications/settings
 
 export default function NotificationSettingsMessageNotificationChannelActionSheet(channel) {
   const _require = channel;
-  let obj = _require(10291);
+  let obj = _require(10312);
   const channelPresetSettings = obj.useChannelPresetSettings(channel.channel);
   const unread = channelPresetSettings.unread;
   const notification = channelPresetSettings.notification;
-  obj = { context: "channel", value: notification };
+  obj = { context: "channel", value: notification, allMessagesSubLabel: null, onChange: null };
   let stringResult;
   if (notification !== UserNotificationSettings.ALL_MESSAGES) {
     if (unread !== UnreadSetting.ALL_MESSAGES) {
-      const intl = _require(1212).intl;
-      stringResult = intl.string(_require(1212).t.eP8yWU);
+      const intl = tmp(1236).intl;
+      stringResult = intl.string(tmp(1236).t.eP8yWU);
     }
   }
-  obj.allMessagesSubLabel = stringResult;
-  obj.onChange = function onChange(message_notifications) {
+  obj[2] = stringResult;
+  obj[3] = function onChange(message_notifications) {
     const obj = { message_notifications };
     let tmp = message_notifications === outer1_4.ALL_MESSAGES;
     if (tmp) {
@@ -43,5 +43,5 @@ export default function NotificationSettingsMessageNotificationChannelActionShee
     const NotificationLabel = channel(outer1_2[11]).NotificationLabel;
     const result = unread(outer1_2[10]).updateChannelOverrideSettings(channel.channel.guild_id, channel.channel.id, obj, NotificationLabel.notifications(message_notifications));
   };
-  return jsx(unread(10303), { context: "channel", value: notification });
+  return jsx(unread(10324), { context: "channel", value: notification, allMessagesSubLabel: null, onChange: null });
 };

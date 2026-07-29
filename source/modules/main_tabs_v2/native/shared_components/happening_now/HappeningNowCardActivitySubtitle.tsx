@@ -1,38 +1,37 @@
-// Module ID: 15044
-// Function ID: 114542
+// Module ID: 15074
+// Function ID: 15075
 // Name: HappeningNowVoiceCardSubtitle
-// Dependencies: [31, 27, 1348, 653, 33, 4165, 566, 4355, 14290, 8292, 1212, 7953, 9055, 2]
+// Dependencies: [19, 17, 1372, 676, 21, 4189, 589, 4380, 14312, 8316, 1236, 7978, 9079, 2]
 // Exports: HappeningNowActivityCardSubtitle, HappeningNowVoiceCardSubtitle
 
-// Module 15044 (HappeningNowVoiceCardSubtitle)
-import "result";
+// Module 15074 (HappeningNowVoiceCardSubtitle)
+import "noop";
 import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import ensureGuildLoaded from "ensureGuildLoaded";
 import { ActivityTypes } from "ME";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_7 = _createForOfIteratorHelperLoose.createStyles({ cardDetails: { marginTop: 2, flexDirection: "row", alignItems: "center" } });
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardActivitySubtitle.tsx");
+let closure_7 = createCacheKey.createStyles({ cardDetails: { marginTop: 2, flexDirection: "row", alignItems: "center" } });
+const result = require("ensureGuildLoaded").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardActivitySubtitle.tsx");
 
 export const HappeningNowVoiceCardSubtitle = function HappeningNowVoiceCardSubtitle(voiceState) {
   voiceState = voiceState.voiceState;
-  let obj = voiceState(566);
-  const items = [_isNativeReflectConstruct];
+  let obj = voiceState(589);
+  const items = [ensureGuildLoaded];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getChannel(voiceState.channelId));
-  obj = { style: callback().cardDetails };
+  obj = { style: callback().cardDetails, children: null };
   const tmp = callback();
-  obj = { lineClamp: 1 };
-  let tmp6;
+  const tmp4 = importDefault;
+  let tmp8;
   if (null != stateFromStores) {
-    const obj1 = { channel: stateFromStores };
-    tmp6 = importDefault(8292)(obj1);
+    obj = { channel: null };
+    obj[0] = stateFromStores;
+    tmp8 = tmp4(8316)(obj);
   }
-  obj.accessibilityLabel = tmp6;
-  obj.children = importDefault(4355)(stateFromStores);
-  obj.children = jsx(voiceState(14290).HappeningNowCardSubtitle, { lineClamp: 1 });
-  return <View lineClamp={1} />;
+  obj[1] = jsx(voiceState(14312).HappeningNowCardSubtitle, { lineClamp: 1, accessibilityLabel: tmp8, children: importDefault(4380)(stateFromStores) });
+  return <View style={callback().cardDetails}>{null}</View>;
 };
 export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCardSubtitle(activity) {
   activity = activity.activity;
@@ -45,8 +44,9 @@ export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCar
       }
       let tmp3 = trimmed;
     }
-    const obj = { lineClamp: 1, children: tmp3 };
-    return jsx(require(14290) /* HAPPENING_NOW_CARD_MARGIN_RIGHT */.HappeningNowCardSubtitle, { lineClamp: 1, children: tmp3 });
+    const obj = { lineClamp: 1, children: null };
+    obj[1] = tmp3;
+    return jsx(require(14312) /* HAPPENING_NOW_CARD_MARGIN_RIGHT */.HappeningNowCardSubtitle, { lineClamp: 1, children: null });
   }
   if (null != activity.stream) {
     if (null != activity) {
@@ -54,17 +54,17 @@ export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCar
         let name3 = activity.name;
       }
     }
-    const intl = require(1212) /* getSystemLocale */.intl;
-    name3 = intl.string(require(1212) /* getSystemLocale */.t.eXan7B);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    name3 = intl.string(require(1236) /* getSystemLocale */.t.eXan7B);
   } else {
     let name;
-    if (null != activity) {
+    if (activity != null) {
       name = activity.name;
     }
     tmp3 = null;
     if (null != name) {
-      if (!importDefault(7953)(activity)) {
-        if (importDefault(9055)(activity)) {
+      if (!importDefault(7978)(activity)) {
+        if (tmp4(9079)(activity)) {
           if (null != activity.details) {
             if (null != activity.state) {
               const _HermesInternal = HermesInternal;
@@ -78,6 +78,7 @@ export const HappeningNowActivityCardSubtitle = function HappeningNowActivityCar
         const name2 = activity.name;
       }
       const details = activity.details;
+      tmp4 = importDefault;
     }
   }
 };

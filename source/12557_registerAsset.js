@@ -1,11 +1,10 @@
 // Module ID: 12557
-// Function ID: 97084
+// Function ID: 12558
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 12557 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/premium/plan_selection", width: 64, height: 64, scales: [1], hash: "7820559d802b687a2589b1c9f32203ab", name: "img_wumpus_nitro_boost", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/perks", width: 20, height: 20, scales: [2, 3], hash: "fb3286cfe401333b68936fe15653c8b9", name: "role", type: "png" });

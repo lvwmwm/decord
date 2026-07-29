@@ -1,11 +1,10 @@
 // Module ID: 6577
-// Function ID: 58419
+// Function ID: 6578
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 6577 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/GalaxyIcon", width: 60, height: 60, scales: [2, 3], hash: "2bb189919203a7299ceda12e2b9f8582", name: "GalaxyIcon", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "816d3367ed7ad398b85a9db798abd14c", name: "ReactionIcon", type: "png" });

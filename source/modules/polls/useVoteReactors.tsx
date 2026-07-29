@@ -1,11 +1,11 @@
-// Module ID: 9938
-// Function ID: 76835
+// Module ID: 9960
+// Function ID: 9961
 // Name: useVoteReactors
-// Dependencies: [6055, 653, 566, 6057, 636, 2]
+// Dependencies: [6073, 676, 589, 6074, 659, 2]
 // Exports: default
 
-// Module 9938 (useVoteReactors)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9960 (useVoteReactors)
+import reactionKey from "reactionKey";
 import { DEFAULT_NUM_REACTION_USERS as closure_4 } from "ME";
 
 const require = arg1;
@@ -15,30 +15,29 @@ export default function useVoteReactors(channelId) {
   channelId = channelId.channelId;
   const messageId = channelId.messageId;
   const reaction = channelId.reaction;
-  let vote;
   let obj = channelId(reaction[2]);
-  let items = [_isNativeReflectConstruct];
+  let items = [reactionKey];
   const items1 = [channelId, messageId, reaction.emoji];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    let items;
     const reactions = outer1_3.getReactions(channelId, messageId, reaction.emoji, outer1_4, channelId(reaction[3]).ReactionTypes.VOTE);
-    if (null != reactions) {
+    let items;
+    if (reactions != null) {
       items = reactions.values();
     }
-    if (null == items) {
+    if (items == null) {
       items = [];
     }
     return Array.from(items);
   }, items1, messageId(reaction[4]));
-  obj = { reactors: stateFromStores };
+  obj = { reactors: stateFromStores, hasMore: null };
   const count_details = reaction.count_details;
-  if (null != count_details) {
-    vote = count_details.vote;
+  let num;
+  if (count_details != null) {
+    num = count_details.vote;
   }
-  let num = 0;
-  if (null != vote) {
-    num = vote;
+  if (num == null) {
+    num = 0;
   }
-  obj.hasMore = num > stateFromStores.length;
+  obj[1] = num > stateFromStores.length;
   return obj;
 };

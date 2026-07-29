@@ -1,25 +1,25 @@
-// Module ID: 9146
-// Function ID: 71713
+// Module ID: 9170
+// Function ID: 9171
 // Name: FormSeparator
-// Dependencies: [31, 27, 33, 4165, 689, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 2]
 // Exports: default
 
-// Module 9146 (FormSeparator)
-import "result";
+// Module 9170 (FormSeparator)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE, borderBottomWidth: 1, marginVertical: 12 };
-_createForOfIteratorHelperLoose.separator = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+createCacheKey = { separator: null };
+createCacheKey = { borderBottomColor: require("Themes").colors.BORDER_SUBTLE, borderBottomWidth: 1, marginVertical: 12 };
+createCacheKey[0] = createCacheKey;
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/FormSeparator.tsx");
 
 export default function FormSeparator(style) {
   const obj = {};
   const merged = Object.assign(style);
-  const items = [_createForOfIteratorHelperLoose().separator, style.style];
-  obj["style"] = items;
+  const items = [createCacheKey().separator, style.style];
+  obj.style = items;
   return <View />;
 };

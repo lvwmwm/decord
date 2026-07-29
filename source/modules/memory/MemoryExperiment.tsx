@@ -1,18 +1,21 @@
-// Module ID: 13442
-// Function ID: 103048
-// Dependencies: [1428, 2]
+// Module ID: 13465
+// Function ID: 13466
+// Name: ApexExperiment
+// Dependencies: [1452, 2]
 
-// Module 13442
+// Module 13465 (ApexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-let obj = { name: "2025-12-shadow-node-spike", kind: "user", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-let closure_2 = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+let closure_2 = ApexExperiment.createApexExperiment({ name: "2025-12-shadow-node-spike", kind: "user", defaultConfig: { enabled: false }, variations: obj });
 const interval = setInterval(() => {
+  let tmp = enabled;
   if (undefined === enabled) {
-    const obj = { location: "startMemoryExperiment" };
-    enabled = config.getConfig(obj).enabled;
+    enabled = config.getConfig({ location: "startMemoryExperiment" }).enabled;
+    tmp = enabled;
   }
-  if (enabled) {
+  if (tmp) {
     globalThis.gc();
   } else {
     const _clearInterval = clearInterval;

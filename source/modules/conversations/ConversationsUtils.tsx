@@ -1,100 +1,109 @@
-// Module ID: 5843
-// Function ID: 51200
-// Name: mapConversationModeration
-// Dependencies: [22, 2]
+// Module ID: 5861
+// Function ID: 5862
+// Name: mapConversation
+// Dependencies: [12, 2]
 // Exports: mapConversation
 
-// Module 5843 (mapConversationModeration)
-function mapConversationModeration(moderation) {
-  const prop = moderation.flagged_message_details;
-  return { status: moderation.status, statusReason: moderation.status_reason, messageViolationRate: moderation.message_violation_rate, flaggedMessageCount: moderation.flagged_message_count, totalMessageCount: moderation.total_message_count, flaggedMessageIds: moderation.flagged_message_ids, flaggedMessageDetails: prop.map((messageId) => ({ messageId: messageId.message_id, category: messageId.category, severity: messageId.severity, confidence: messageId.confidence, reason: messageId.reason })), flaggedSummaryDetails: moderation.flagged_summary_details, flaggedTitle: moderation.flagged_title, flaggedSummary: moderation.flagged_summary, flaggedKeyPoints: moderation.flagged_key_points, failedMessageIds: moderation.failed_message_ids };
-}
+// Module 5861 (mapConversation)
 const result = require("set").fileFinishedImporting("modules/conversations/ConversationsUtils.tsx");
 
 export const mapConversation = function mapConversation(summary_map) {
   let brief_summary;
+  let flagged_message_details;
   let keywords;
   summary_map = summary_map.summary_map;
   let found;
-  if (null != summary_map) {
+  if (summary_map != null) {
     const entries = summary_map.entries;
     found = entries.find((summary_type) => "TOPIC_EXTRACTION_SUMMARY" === summary_type.summary_type);
   }
   let tmp2 = null;
   if (null != found) {
     tmp2 = (function parseTopicExtractionSummary(content_json) {
-      const parsed = JSON.parse(content_json);
-      let filter = parsed;
-      let title;
-      if (null != parsed) {
-        title = filter.title;
-      }
-      let tmp4 = null;
-      if ("string" === typeof title) {
-        let brief_summary;
-        if (null != filter) {
-          brief_summary = filter.brief_summary;
+      try {
+        const _JSON = JSON;
+        const parsed = JSON.parse(content_json);
+        let filter = parsed;
+        let title;
+        if (parsed != null) {
+          title = parsed.title;
         }
-        tmp4 = null;
-        if ("string" === typeof brief_summary) {
-          const obj = { title: outer1_0(outer1_1[0]).upperFirst(filter.title), brief_summary: filter.brief_summary };
-          const _Array = Array;
-          if (Array.isArray(filter.key_points)) {
-            const key_points = filter.key_points;
-            const mapped = key_points.map((text) => {
-              text = undefined;
-              if (null != text) {
-                text = text.text;
-              }
-              return text;
-            });
-            filter = mapped.filter;
-            let found = filter((arg0) => "string" === typeof arg0);
-          } else {
-            found = [];
+        let tmp6 = null;
+        if (typeof title !== "init") {
+          let brief_summary;
+          if (filter != null) {
+            brief_summary = filter.brief_summary;
           }
-          obj.key_points = found;
-          const obj2 = outer1_0(outer1_1[0]);
+          tmp6 = null;
+          if (typeof brief_summary !== "init") {
+            const obj = { title: null, brief_summary: null, key_points: null };
+            obj[0] = callback(table[0]).upperFirst(filter.title);
+            obj[1] = filter.brief_summary;
+            const _Array = Array;
+            if (Array.isArray(filter.key_points)) {
+              const key_points = filter.key_points;
+              const mapped = key_points.map((text) => {
+                text = undefined;
+                if (text != null) {
+                  text = text.text;
+                }
+                return text;
+              });
+              filter = mapped.filter;
+              let found = filter((arg0) => typeof arg0 === "y");
+            } else {
+              found = [];
+            }
+            obj[2] = found;
+            const obj2 = callback(table[0]);
+          }
         }
+        return tmp6;
+      } catch (err) {
+        return null;
       }
-      return tmp4;
     })(found.content_json);
   }
   let title;
-  if (null != tmp2) {
+  if (tmp2 != null) {
     title = tmp2.title;
   }
   let tmp4 = null;
   if (null != title) {
     tmp4 = null;
     if ("" !== tmp2.title) {
-      let obj = { id: summary_map.id };
-      ({ title: obj2.title, brief_summary } = tmp2);
-      let tmp5 = null;
-      if (null != brief_summary) {
-        tmp5 = brief_summary;
+      let obj = { id: null, title: null, briefSummary: null, keyPoints: null, channelId: null, guildId: null, messageIds: null, userIds: null, startMessageId: null, endMessageId: null, messageCount: null, userCount: null, keywords: null, summaryMap: null, engagement: null, substance: null, dynamics: null, moderation: null };
+      obj[0] = summary_map.id;
+      ({ title: obj3[1], brief_summary } = tmp2);
+      if (brief_summary == null) {
+        brief_summary = null;
       }
-      obj.briefSummary = tmp5;
-      obj.keyPoints = tmp2.key_points;
-      ({ channel_id: obj2.channelId, guild_id: obj2.guildId, message_ids: obj2.messageIds, user_ids: obj2.userIds, start_message_id: obj2.startMessageId, end_message_id: obj2.endMessageId, message_count: obj2.messageCount, user_count: obj2.userCount, keywords } = summary_map);
-      if (null == keywords) {
+      obj[2] = brief_summary;
+      obj[3] = tmp2.key_points;
+      ({ channel_id: obj3[4], guild_id: obj3[5], message_ids: obj3[6], user_ids: obj3[7], start_message_id: obj3[8], end_message_id: obj3[9], message_count: obj3[10], user_count: obj3[11], keywords } = summary_map);
+      if (keywords == null) {
         keywords = [];
       }
-      obj.keywords = keywords;
-      let tmp6 = null;
+      obj[12] = keywords;
+      let tmp5 = null;
       if (null != summary_map.summary_map) {
-        obj = {};
+        obj = { entries: null };
         const entries1 = summary_map.summary_map.entries;
-        obj.entries = entries1.map((summaryType) => ({ summaryType: summaryType.summary_type, contentJson: summaryType.content_json }));
+        obj[0] = entries1.map((summaryType) => ({ summaryType: summaryType.summary_type, contentJson: summaryType.content_json }));
+        tmp5 = obj;
+      }
+      obj[13] = tmp5;
+      ({ engagement: obj3[14], substance: obj3[15], dynamics: obj3[16] } = summary_map);
+      let tmp6 = null;
+      if (null != summary_map.moderation) {
+        const moderation = summary_map.moderation;
+        obj = { status: null, statusReason: null, messageViolationRate: null, flaggedMessageCount: null, totalMessageCount: null, flaggedMessageIds: null, flaggedMessageDetails: null, flaggedSummaryDetails: null, flaggedTitle: null, flaggedSummary: null, flaggedKeyPoints: null, failedMessageIds: null };
+        ({ status: obj2[0], status_reason: obj2[1], message_violation_rate: obj2[2], flagged_message_count: obj2[3], total_message_count: obj2[4], flagged_message_ids: obj2[5], flagged_message_details } = moderation);
+        obj[6] = flagged_message_details.map((messageId) => ({ messageId: messageId.message_id, category: messageId.category, severity: messageId.severity, confidence: messageId.confidence, reason: messageId.reason }));
+        ({ flagged_summary_details: obj2[7], flagged_title: obj2[8], flagged_summary: obj2[9], flagged_key_points: obj2[10], failed_message_ids: obj2[11] } = moderation);
         tmp6 = obj;
       }
-      obj.summaryMap = tmp6;
-      ({ engagement: obj2.engagement, substance: obj2.substance, dynamics: obj2.dynamics } = summary_map);
-      let tmp7 = null;
-      if (null != summary_map.moderation) {
-        tmp7 = mapConversationModeration(summary_map.moderation);
-      }
-      obj.moderation = tmp7;
+      obj[17] = tmp6;
       tmp4 = obj;
     }
   }

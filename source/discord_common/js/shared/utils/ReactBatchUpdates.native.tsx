@@ -1,10 +1,10 @@
-// Module ID: 682
-// Function ID: 8410
+// Module ID: 705
+// Function ID: 706
 // Name: batchUpdates
-// Dependencies: [27, 2]
+// Dependencies: [17, 2]
 // Exports: batchUpdates
 
-// Module 682 (batchUpdates)
+// Module 705 (batchUpdates)
 import { unstable_batchedUpdates } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/ReactBatchUpdates.native.tsx");

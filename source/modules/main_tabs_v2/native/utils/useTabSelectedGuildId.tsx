@@ -1,28 +1,27 @@
-// Module ID: 13721
-// Function ID: 105221
+// Module ID: 13742
+// Function ID: 13743
 // Name: useTabSelectedGuildId
-// Dependencies: [3982, 5005, 624, 2]
+// Dependencies: [4006, 5027, 647, 2]
 // Exports: default
 
-// Module 13721 (useTabSelectedGuildId)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_3 from "_isNativeReflectConstruct";
+// Module 13742 (useTabSelectedGuildId)
+import handleConnectionOpen from "handleConnectionOpen";
+import insertUnsortedGuilds from "insertUnsortedGuilds";
 
 const require = arg1;
 const result = require("defaultAreStatesEqual").fileFinishedImporting("modules/main_tabs_v2/native/utils/useTabSelectedGuildId.tsx");
 
 export default function useTabSelectedGuildId() {
-  const items = [_isNativeReflectConstruct, closure_3];
-  return require(624) /* defaultAreStatesEqual */.useStateFromStores(items, () => {
-    const guildId = outer1_2.getGuildId();
-    let lastSelectedGuildId = outer1_2.getLastSelectedGuildId();
-    let first = outer1_3.getFlattenedGuildIds()[0];
-    if (null != guildId) {
-      lastSelectedGuildId = guildId;
+  const items = [handleConnectionOpen, insertUnsortedGuilds];
+  return require(647) /* defaultAreStatesEqual */.useStateFromStores(items, () => {
+    let guildId = store.getGuildId();
+    const lastSelectedGuildId = store.getLastSelectedGuildId();
+    if (guildId == null) {
+      guildId = lastSelectedGuildId;
     }
-    if (null != lastSelectedGuildId) {
-      first = lastSelectedGuildId;
+    if (guildId == null) {
+      guildId = flattenedGuildIds.getFlattenedGuildIds()[0];
     }
-    return first;
+    return guildId;
   });
 };

@@ -1,79 +1,130 @@
-// Module ID: 6065
-// Function ID: 54214
-// Name: ForumChannelAnalyticsManager
-// Dependencies: [7, 6, 1348, 2]
+// Module ID: 6083
+// Function ID: 6084
+// Name: setFilterTagIds
+// Dependencies: [1372, 2]
 
-// Module 6065 (ForumChannelAnalyticsManager)
-import _classCallCheck from "_classCallCheck";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import importDefaultResult from "_defineProperties";
+// Module 6083 (setFilterTagIds)
+import "ensureGuildLoaded";
+import set from "set";
 
-class ForumChannelAnalyticsManager {
-  constructor() {
-    self = this;
-    tmp = self(this, ForumChannelAnalyticsManager);
-    this.setFilterTagIds = (filterTagIds) => {
-      self.filterTagIds = filterTagIds;
-    };
-    this.setSortOrder = (sortOrder) => {
-      self.sortOrder = sortOrder;
-    };
-    this.setLayout = (layout) => {
-      self.layout = layout;
-    };
-    this.setTagSetting = (tagSetting) => {
-      self.tagSetting = tagSetting;
-    };
-    this.getFilterTagIdsAnalytics = () => {
-      if (null != self.filterTagIds) {
-        const _Array = Array;
-        let items = Array.from(self.filterTagIds);
-      } else {
-        items = [];
+let set = Object.create(function ForumChannelAnalyticsManager() {
+  const obj = Object.create(new.target.prototype);
+  obj.setFilterTagIds = function setFilterTagIds(filterTagIds) {
+    obj.filterTagIds = filterTagIds;
+  };
+  obj.setSortOrder = function setSortOrder(sortOrder) {
+    obj.sortOrder = sortOrder;
+  };
+  obj.setLayout = function setLayout(layout) {
+    obj.layout = layout;
+  };
+  obj.setTagSetting = function setTagSetting(tagSetting) {
+    obj.tagSetting = tagSetting;
+  };
+  obj.getFilterTagIdsAnalytics = function getFilterTagIdsAnalytics() {
+    if (null != obj.filterTagIds) {
+      const _Array = Array;
+      let items = Array.from(tmp.filterTagIds);
+    } else {
+      items = [];
+    }
+    return items;
+  };
+  obj.getSortOrderAnalytics = function getSortOrderAnalytics(id) {
+    let sortOrder = obj.sortOrder;
+    if (sortOrder == null) {
+      const channel = obj.getChannel(id);
+      let defaultSortOrder;
+      if (channel != null) {
+        defaultSortOrder = channel.getDefaultSortOrder();
       }
-      return items;
-    };
-    this.getSortOrderAnalytics = (channelId) => {
-      let sortOrder = self.sortOrder;
-      if (null == sortOrder) {
-        const channel = outer1_1.getChannel(channelId);
-        let defaultSortOrder;
-        if (null != channel) {
-          defaultSortOrder = channel.getDefaultSortOrder();
-        }
-        sortOrder = defaultSortOrder;
+      sortOrder = defaultSortOrder;
+    }
+    return sortOrder;
+  };
+  obj.getLayoutAnalytics = function getLayoutAnalytics(id) {
+    let layout = obj.layout;
+    if (layout == null) {
+      const channel = obj.getChannel(id);
+      let defaultLayout;
+      if (channel != null) {
+        defaultLayout = channel.getDefaultLayout();
       }
-      return sortOrder;
-    };
-    this.getLayoutAnalytics = (channelId) => {
-      let layout = self.layout;
-      if (null == layout) {
-        const channel = outer1_1.getChannel(channelId);
-        let defaultLayout;
-        if (null != channel) {
-          defaultLayout = channel.getDefaultLayout();
-        }
-        layout = defaultLayout;
+      layout = defaultLayout;
+    }
+    return layout;
+  };
+  obj.getTagSettingAnalytics = function getTagSettingAnalytics(id) {
+    let tagSetting = obj.tagSetting;
+    if (tagSetting == null) {
+      const channel = obj.getChannel(id);
+      let defaultTagSetting;
+      if (channel != null) {
+        defaultTagSetting = channel.getDefaultTagSetting();
       }
-      return layout;
-    };
-    this.getTagSettingAnalytics = (channelId) => {
-      let tagSetting = self.tagSetting;
-      if (null == tagSetting) {
-        const channel = outer1_1.getChannel(channelId);
-        let defaultTagSetting;
-        if (null != channel) {
-          defaultTagSetting = channel.getDefaultTagSetting();
-        }
-        tagSetting = defaultTagSetting;
-      }
-      return tagSetting;
-    };
-    return;
+      tagSetting = defaultTagSetting;
+    }
+    return tagSetting;
+  };
+  return obj;
+}.prototype.prototype);
+set.setFilterTagIds = function setFilterTagIds(filterTagIds) {
+  obj.filterTagIds = filterTagIds;
+};
+set.setSortOrder = function setSortOrder(sortOrder) {
+  obj.sortOrder = sortOrder;
+};
+set.setLayout = function setLayout(layout) {
+  obj.layout = layout;
+};
+set.setTagSetting = function setTagSetting(tagSetting) {
+  obj.tagSetting = tagSetting;
+};
+set.getFilterTagIdsAnalytics = function getFilterTagIdsAnalytics() {
+  if (null != obj.filterTagIds) {
+    const _Array = Array;
+    let items = Array.from(tmp.filterTagIds);
+  } else {
+    items = [];
   }
-}
-const importDefaultResultResult = require("_defineProperties")(ForumChannelAnalyticsManager);
-const tmp2Result = new require("_defineProperties")(ForumChannelAnalyticsManager)();
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/forums/tracking/ForumChannelAnalyticsManager.tsx");
+  return items;
+};
+set.getSortOrderAnalytics = function getSortOrderAnalytics(id) {
+  let sortOrder = obj.sortOrder;
+  if (sortOrder == null) {
+    const channel = obj.getChannel(id);
+    let defaultSortOrder;
+    if (channel != null) {
+      defaultSortOrder = channel.getDefaultSortOrder();
+    }
+    sortOrder = defaultSortOrder;
+  }
+  return sortOrder;
+};
+set.getLayoutAnalytics = function getLayoutAnalytics(id) {
+  let layout = obj.layout;
+  if (layout == null) {
+    const channel = obj.getChannel(id);
+    let defaultLayout;
+    if (channel != null) {
+      defaultLayout = channel.getDefaultLayout();
+    }
+    layout = defaultLayout;
+  }
+  return layout;
+};
+set.getTagSettingAnalytics = function getTagSettingAnalytics(id) {
+  let tagSetting = obj.tagSetting;
+  if (tagSetting == null) {
+    const channel = obj.getChannel(id);
+    let defaultTagSetting;
+    if (channel != null) {
+      defaultTagSetting = channel.getDefaultTagSetting();
+    }
+    tagSetting = defaultTagSetting;
+  }
+  return tagSetting;
+};
+const result = set.fileFinishedImporting("modules/forums/tracking/ForumChannelAnalyticsManager.tsx");
 
-export default tmp2Result;
+export default set;

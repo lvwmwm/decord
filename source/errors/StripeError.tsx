@@ -1,39 +1,32 @@
-// Module ID: 4066
-// Function ID: 33685
-// Name: _callSuper
-// Dependencies: [7, 6, 16, 15, 17, 18, 3833, 2]
+// Module ID: 4090
+// Function ID: 4091
+// Name: prototype
+// Dependencies: [3857, 2]
 
-// Module 4066 (_callSuper)
-import set from "set";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import _assertThisInitialized from "_assertThisInitialized";
-import _possibleConstructorReturn from "_possibleConstructorReturn";
-import _getPrototypeOf from "_getPrototypeOf";
-import _inherits from "_inherits";
-import tmp2 from "_isNativeReflectConstruct";
+// Module 4090 (prototype)
+import "set";
 
-function _callSuper(arg0, arg1, arg2) {
-  let items = arg2;
-  const obj = callback(arg1);
-  if (_isNativeReflectConstruct()) {
-    if (!items) {
-      items = [];
-    }
-    let constructResult = Reflect.construct(obj, items, callback(arg0).constructor);
+const prototype = function StripeError(error) {
+  let message;
+  let param;
+  error = error.error;
+  if (null != error.param) {
+    let obj = { body: null };
+    obj = {};
+    ({ param, message } = error);
+    const items = [message];
+    obj[param] = items;
+    obj[0] = obj;
+    tmp = new tmp(obj, message, param, items);
+    // ThrowIfThisInitialized (0x7c)
   } else {
-    constructResult = obj.apply(arg0, items);
+    tmp = new tmp(error.message, tmp3, tmp2, error);
+    // ThrowIfThisInitialized (0x7c)
   }
-  return _possibleConstructorReturn(arg0, constructResult);
+  return tmp;
+}.prototype;
+class prototype extends tmp2 {
 }
-function _isNativeReflectConstruct() {
-  let set = !valueOf.call(Reflect.construct(Boolean, [], () => {
+const result = require("set").fileFinishedImporting("errors/StripeError.tsx");
 
-  }));
-  function _isNativeReflectConstruct() {
-    return set;
-  }
-  const result = _isNativeReflectConstruct();
-}
-let result = require("_assertThisInitialized").fileFinishedImporting("errors/StripeError.tsx");
-
-export default tmp2;
+export default prototype;

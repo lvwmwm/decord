@@ -1,7 +1,7 @@
 // Module ID: 533
-// Function ID: 6647
-// Dependencies: []
+// Function ID: 534
+// Dependencies: [534, 535, 537]
 
 // Module 533
 
-export default Function.prototype.call;
+export default { formats: require("module_534"), parse: require("interpretNumericEntities"), stringify: require("pushToArray") };

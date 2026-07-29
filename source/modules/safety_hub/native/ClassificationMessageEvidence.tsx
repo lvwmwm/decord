@@ -1,220 +1,221 @@
-// Module ID: 11057
-// Function ID: 85831
+// Module ID: 11081
+// Function ID: 11082
 // Name: ClassificationEvidence
-// Dependencies: [57, 31, 27, 1278, 1850, 11048, 6735, 653, 33, 7690, 4165, 566, 4011, 11058, 11059, 6734, 4352, 8091, 8119, 10024, 9266, 4386, 21, 2]
+// Dependencies: [32, 19, 17, 1302, 1874, 11072, 6756, 676, 21, 7713, 4189, 589, 4035, 11082, 11083, 6755, 4377, 8115, 8143, 10046, 9290, 4409, 11, 2]
 // Exports: default
 
-// Module 11057 (ClassificationEvidence)
+// Module 11081 (ClassificationEvidence)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_10 from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import SafetyHubLinks from "SafetyHubLinks";
+import DCDChatList from "DCDChatList";
+import get_ActivityIndicator from "_openMediaModal";
+import handleThemeChange from "handleThemeChange";
+import mergeGuildAvatar from "mergeGuildAvatar";
+import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
+import SafetyHubView from "SafetyHubView";
 import { MessageTypes } from "ME";
-import jsxProd from "jsxProd";
-import importDefaultResult from "RowManager";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "createMinimalMessageRecord";
+import createCacheKey from "createCacheKey";
 
+let c5;
 let closure_12;
-let closure_13;
 let closure_14;
 let closure_15;
 let closure_16;
 let closure_18;
 let closure_19;
-let closure_5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let map1;
+let metroImportAll;
 const require = arg1;
-({ View: closure_5, findNodeHandle: closure_6, Image: closure_7, ActivityIndicator: closure_8 } = get_ActivityIndicator);
-({ DEFAULT_MEDIA_MAX_WIDTH: closure_12, DEFAULT_MEDIA_MAX_HEIGHT: closure_13, VIDEO_PLACEHOLDER_WIDTH: closure_14, VIDEO_PLACEHOLDER_HEIGHT: closure_15, VIDEO_PLACEHOLDER_FILENAME: closure_16 } = SafetyHubLinks);
+({ View: c5, findNodeHandle: closure_6, Image: error, ActivityIndicator: metroImportAll } = get_ActivityIndicator);
+({ DEFAULT_MEDIA_MAX_WIDTH: closure_12, DEFAULT_MEDIA_MAX_HEIGHT: map1, VIDEO_PLACEHOLDER_WIDTH: closure_14, VIDEO_PLACEHOLDER_HEIGHT: closure_15, VIDEO_PLACEHOLDER_FILENAME: closure_16 } = SafetyHubView);
 ({ jsx: closure_18, jsxs: closure_19 } = jsxProd);
-importDefaultResult = new importDefaultResult();
-let closure_21 = _createForOfIteratorHelperLoose.createStyles({ dummyVideoAttachments: { width: 0, height: 0 } });
+let closure_20 = new require("setOptions")();
+let closure_21 = createCacheKey.createStyles({ dummyVideoAttachments: { width: 0, height: 0 } });
+let tmp5 = new require("setOptions")();
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/safety_hub/native/ClassificationMessageEvidence.tsx");
 
 export default function ClassificationEvidence(arg0) {
-  let found = callback2();
-  let obj = ref(566);
+  let attachments = callback2();
+  let obj = ref(589);
   const items = [memo];
-  let stateFromStores = obj.useStateFromStores(items, () => memo.getCurrentUser());
+  const stateFromStores = obj.useStateFromStores(items, () => memo.getCurrentUser());
+  let obj1 = React;
   ref = React.useRef(null);
-  const tmp3 = first1(React.useState(null), 2);
-  const first = tmp3[0];
-  const dependencyMap = tmp3[1];
-  const tmp5 = first1(React.useState({}), 2);
-  first1 = tmp5[0];
-  React = tmp5[1];
-  let obj1 = ref(566);
+  const tmp6 = first1(React.useState(null), 2);
+  const first = tmp6[0];
+  const dependencyMap = tmp6[1];
+  const tmp8 = first1(React.useState({}), 2);
+  first1 = tmp8[0];
+  React = tmp8[1];
+  let obj2 = ref(589);
   const items1 = [id];
-  const resolveAssetSource = first2.resolveAssetSource;
-  if (obj1.useStateFromStores(items1, () => ref(4011).isThemeLight(id.theme))) {
-    let assetSource = resolveAssetSource(tmp8(11058));
+  const resolveAssetSource = first3.resolveAssetSource;
+  if (obj2.useStateFromStores(items1, () => ref(4035).isThemeLight(id.theme))) {
+    let assetSource = resolveAssetSource(tmp11(11082));
+    let tmp13 = tmp11;
   } else {
-    assetSource = resolveAssetSource(tmp8(11059));
+    assetSource = resolveAssetSource(tmp11(11083));
+    tmp13 = tmp11;
   }
-  let map = arg0.flaggedContent[0];
-  const tmp11 = first1(React.useState(map.attachments.length), 2);
-  first2 = tmp11[0];
-  let closure_8 = tmp11[1];
-  let obj2 = ref(566);
-  const items2 = [closure_11];
-  id = map.id;
-  const items3 = [map.attachments, first1, assetSource];
-  const stateFromStores1 = obj2.useStateFromStores(items2, () => outer1_11.getUsername());
-  memo = React.useMemo(() => {
-    const attachments = map.attachments;
+  let first2 = arg0.flaggedContent[0];
+  const tmp5Result = first1(obj1.useState(first2.attachments.length), 2);
+  first3 = tmp5Result[0];
+  let closure_8 = tmp5Result[1];
+  let tmpResult = tmp(589);
+  const items2 = [handleSafetyHubRequestAgeVerificationResetModalAction];
+  id = first2.id;
+  const items3 = [first2.attachments, first1, assetSource];
+  const stateFromStores1 = tmpResult.useStateFromStores(items2, () => username.getUsername());
+  memo = obj1.useMemo(() => {
+    const attachments = first2.attachments;
     return attachments.map((filename) => {
       let obj = {};
       const merged = Object.assign(filename);
-      filename = filename.filename;
-      let str = "";
-      if (null != filename) {
-        str = filename;
+      let str = filename.filename;
+      if (str == null) {
+        str = "";
       }
-      obj["filename"] = str;
-      obj["flags"] = ref(6734).getSpoilerFlagsForAttachment(filename);
-      obj["size"] = 0;
-      obj["proxy_url"] = filename.url;
-      const obj2 = ref(6734);
+      obj.filename = str;
+      obj.flags = outer1_0(outer1_2[15]).getSpoilerFlagsForAttachment(filename);
+      obj.size = 0;
+      obj.proxy_url = filename.url;
+      const obj2 = outer1_0(outer1_2[15]);
+      const tmp2 = outer1_0;
+      const tmp3 = outer1_2;
       if (obj3.isImageFile(filename.filename)) {
         obj = {};
         const merged1 = Object.assign(obj);
         let width;
-        if (null != outer1_3[filename.id]) {
+        if (table[filename.id] != null) {
           width = tmp16.width;
         }
-        if (null == width) {
-          width = outer2_12;
+        if (width == null) {
+          width = outer1_12;
         }
-        obj["width"] = width;
+        obj.width = width;
         let height;
-        if (null != outer1_3[filename.id]) {
-          height = tmp19.height;
+        if (table[filename.id] != null) {
+          height = tmp18.height;
         }
-        if (null == height) {
-          height = outer2_13;
+        if (height == null) {
+          height = outer1_13;
         }
-        obj["height"] = height;
+        obj.height = height;
         let tmp4 = obj;
+        const tmp15 = table;
       } else {
         tmp4 = obj;
-        if (obj4.isVideoFile(filename.filename)) {
+        if (tmp2Result.isVideoFile(filename.filename)) {
           obj = {};
           const merged2 = Object.assign(obj);
-          obj["width"] = outer2_14;
-          obj["height"] = outer2_15;
-          obj["proxy_url"] = outer1_5.uri;
-          obj["filename"] = outer2_16;
+          obj.width = outer1_14;
+          obj.height = outer1_15;
+          obj.proxy_url = uri.uri;
+          obj.filename = outer1_16;
           tmp4 = obj;
         }
-        obj4 = ref(4352);
+        tmp2Result = tmp2(tmp3[16]);
       }
       return tmp4;
     });
   }, items3);
-  const items4 = [memo, map.attachments, id, first1, assetSource];
+  const items4 = [memo, first2.attachments, id, first1, assetSource];
   const items5 = [first];
-  const callback = React.useCallback((nativeEvent) => {
+  const callback = obj1.useCallback((nativeEvent) => {
     let index;
     let layout;
     ({ index, layout } = nativeEvent.nativeEvent);
-    const mapped = memo.map((uri, mediaIndex) => {
-      let obj = { uri: uri.url };
+    const mapped = memo.map((uri) => {
+      let obj = { uri: uri.url, videoURI: null, thumbnail: null, mediaIndex: null, channelId: "1", messageId: null, width: null, height: null, accessoryType: "attachment", attachmentId: null };
       let url;
-      if (obj2.isVideoFile(outer1_6.attachments[mediaIndex].filename)) {
+      if (obj2.isVideoFile(attachments.attachments[arg1].filename)) {
         url = uri.url;
       }
-      obj.videoURI = url;
-      obj2 = ref(4352);
-      let tmp2;
-      if (obj3.isVideoFile(outer1_6.attachments[mediaIndex].filename)) {
-        obj = { width: outer2_14, height: outer2_15, uri: outer1_5.uri };
-        tmp2 = obj;
+      obj[1] = url;
+      obj2 = outer1_0(outer1_2[16]);
+      const tmp = outer1_0;
+      const tmp2 = outer1_2;
+      const tmp3 = attachments;
+      let tmp5;
+      if (tmpResult.isVideoFile(tmp3.attachments[arg1].filename)) {
+        obj = { width: null, height: null, uri: null };
+        obj[0] = outer1_14;
+        obj[1] = outer1_15;
+        obj[2] = uri.uri;
+        tmp5 = obj;
       }
-      obj.thumbnail = tmp2;
-      obj.mediaIndex = mediaIndex;
-      obj.channelId = "1";
-      obj.messageId = outer1_9;
+      obj[2] = tmp5;
+      obj[3] = arg1;
+      obj[5] = handleThemeChange;
       let width;
-      if (null != outer1_3[uri.id]) {
-        width = tmp6.width;
+      if (table[uri.id] != null) {
+        width = tmp10.width;
       }
-      if (null == width) {
-        width = outer2_12;
+      if (width == null) {
+        width = outer1_12;
       }
-      obj.width = width;
+      obj[6] = width;
       let height;
-      if (null != outer1_3[uri.id]) {
-        height = tmp8.height;
+      if (table[uri.id] != null) {
+        height = tmp12.height;
       }
-      if (null == height) {
-        height = outer2_13;
+      if (height == null) {
+        height = outer1_13;
       }
-      obj.height = height;
-      obj.accessoryType = "attachment";
-      obj.attachmentId = uri.id;
+      obj[7] = height;
+      obj[9] = uri.id;
       return obj;
     });
-    let obj = ref(8091);
-    obj = { initialIndex: index, initialSources: mapped, disableDownload: true, disableMediaOverlayButton: true, shareable: false, originViewOrOriginLayout: layout };
-    obj.openMediaModal(obj);
+    ref(8115).openMediaModal({ initialIndex: index, initialSources: mapped, disableDownload: true, disableMediaOverlayButton: true, shareable: false, originViewOrOriginLayout: layout });
   }, items4);
-  const items6 = [map.attachments];
-  const callback1 = React.useCallback((arg0) => {
+  const items6 = [first2.attachments];
+  const callback1 = obj1.useCallback((arg0) => {
     arg0.reactTag = first;
   }, items5);
-  const effect = React.useEffect(() => {
-    const attachments = map.attachments;
-    const found = attachments.filter((filename) => ref(table[16]).isImageFile(filename.filename));
+  const effect = obj1.useEffect(() => {
+    const attachments = first2.attachments;
+    const found = attachments.filter((filename) => callback(table[16]).isImageFile(filename.filename));
     const mapped = found.map((arg0) => {
       let closure_0 = arg0;
-      const promise = (function getImageAttachmentDimensions(arg0) {
+      const promise = new Promise((arg0, arg1) => {
+        const url = arg0;
+        return outer1_7.getSize(url.url, (width, height) => callback({ width, height }), arg1);
+      });
+      return new Promise((arg0, arg1) => {
+        const url = arg0;
+        return outer1_7.getSize(url.url, (width, height) => callback({ width, height }), arg1);
+      }).then((arg0) => {
         let closure_0 = arg0;
-        return new Promise((arg0, arg1) => {
-          const url = arg0;
-          return first2.getSize(url.url, () => { ... }, arg1);
-        });
-      })(arg0);
-      return (function getImageAttachmentDimensions(arg0) {
-        let closure_0 = arg0;
-        return new Promise((arg0, arg1) => {
-          const url = arg0;
-          return first2.getSize(url.url, () => { ... }, arg1);
-        });
-      })(arg0).then((arg0) => {
-        let closure_0 = arg0;
-        return outer2_4((arg0) => {
+        return outer1_4((arg0) => {
           const obj = {};
           const merged = Object.assign(arg0);
           obj[id.id] = id;
           return obj;
         });
-      }).finally(() => outer2_8((arg0) => arg0 - 1));
+      }).finally(() => callback((arg0) => arg0 - 1));
     });
   }, items6);
-  const items7 = [first2];
-  const effect1 = React.useEffect(() => {
-    if (0 === first2) {
-      dependencyMap(map(ref.current));
+  const items7 = [first3];
+  const effect1 = obj1.useEffect(() => {
+    if (0 === first3) {
+      dependencyMap(first2(ref.current));
     }
   }, items7);
-  if ("" === map.content) {
-    if (0 === map.attachments.length) {
+  if ("" === first2.content) {
+    if (0 === first2.attachments.length) {
       return null;
     }
   }
-  if (first2 > 0) {
-    obj = {};
+  if (first3 > 0) {
+    obj = { children: null };
     const items8 = [callback(closure_8, {}), ];
-    obj = { style: found.dummyVideoAttachments };
-    let attachments = map.attachments;
-    found = attachments.filter((filename) => ref(4352).isVideoFile(filename.filename));
-    map = found.map;
-    obj.children = map((uri) => {
+    obj = { style: null, children: null };
+    obj[0] = attachments.dummyVideoAttachments;
+    attachments = first2.attachments;
+    first2 = attachments.filter((filename) => ref(4377).isVideoFile(filename.filename));
+    obj[1] = first2.map((uri) => {
       let closure_0 = uri;
       obj = {
         source: obj,
@@ -230,41 +231,46 @@ export default function ClassificationEvidence(arg0) {
           outer1_8((arg0) => arg0 - 1);
         },
         onError() {
-          return outer1_8((arg0) => arg0 - 1);
+          return callback((arg0) => arg0 - 1);
         }
       };
       obj = { uri: uri.url };
-      return outer1_18(first(8119), obj, arg1);
+      return outer1_18(first(8143), obj, arg1);
     });
-    items8[1] = callback(assetSource, obj);
-    obj.children = items8;
-    obj1 = obj;
+    items8[1] = callback(tmp24, obj);
+    obj[0] = items8;
+    let obj5 = obj;
   } else {
-    obj1 = {};
-    obj2 = { ref, onTapImage: callback, inverted: false };
-    const items9 = [callback(first(10024), obj2), ];
-    const obj3 = { rowGenerator: closure_20 };
-    const tmp26 = callback;
-    const tmp29 = first(9266);
-    let obj4 = { id: map.id };
+    obj1 = { ref: null, onTapImage: null, inverted: false };
+    obj1[0] = ref;
+    obj1[1] = callback;
+    const items9 = [callback(tmp13(10046), obj1), ];
+    obj2 = { rowGenerator: null, message: null, modifyRow: null };
+    obj2[0] = closure_20;
+    let tmp13Result = tmp13(9290);
+    tmpResult = tmp(4409);
+    const obj3 = { id: null, timestamp: null, channel_id: "1", type: null, author: null, content: null, attachments: null };
+    obj3[0] = first2.id;
     const _Date = Date;
-    const obj10 = ref(4386);
-    const date = new Date(first(21).extractTimestamp(map.id));
-    obj4.timestamp = date.toUTCString();
-    obj4.channel_id = "1";
-    obj4.type = MessageTypes.DEFAULT;
-    if (null == stateFromStores) {
-      const obj5 = { id: "0", avatar: null, discriminator: "0000", username: stateFromStores1 };
-      stateFromStores = obj5;
+    tmp13Result = tmp13(11);
+    const date = new Date(tmp13Result.extractTimestamp(first2.id));
+    obj3[1] = date.toUTCString();
+    obj3[3] = MessageTypes.DEFAULT;
+    let tmp25 = stateFromStores;
+    if (stateFromStores == null) {
+      const obj4 = { id: "0", avatar: null, discriminator: "0000", username: null };
+      obj4[3] = stateFromStores1;
+      tmp25 = obj4;
     }
-    obj4.author = stateFromStores;
-    obj4.content = map.content;
-    obj4.attachments = memo;
-    obj3.message = obj10.createMessageRecord(obj4);
-    obj3.modifyRow = callback1;
-    items9[1] = tmp26(tmp29, obj3);
-    obj1.children = items9;
-    const obj12 = first(21);
+    obj5 = { children: null };
+    obj3[4] = tmp25;
+    obj3[5] = first2.content;
+    obj3[6] = memo;
+    obj2[1] = tmpResult.createMessageRecord(obj3);
+    obj2[2] = callback1;
+    items9[1] = callback(tmp13Result, obj2);
+    obj5[0] = items9;
+    const tmp29 = callback;
   }
-  closure_19(assetSource, obj1);
+  closure_19(assetSource, obj5);
 };

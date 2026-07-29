@@ -1,42 +1,41 @@
-// Module ID: 14732
-// Function ID: 112055
+// Module ID: 14757
+// Function ID: 14758
 // Name: OtaVerificationActionSheet
-// Dependencies: [5, 57, 31, 27, 482, 33, 4165, 689, 5221, 5220, 4161, 10958, 4133, 4576, 5536, 5198, 14498, 5525, 9257, 4115, 14733, 2]
+// Dependencies: [5, 32, 19, 17, 505, 21, 4189, 712, 5243, 5242, 4185, 10982, 4157, 4598, 5554, 5220, 14523, 5543, 9281, 4139, 14758, 2]
 // Exports: default
 
-// Module 14732 (OtaVerificationActionSheet)
+// Module 14757 (OtaVerificationActionSheet)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import get_ActivityIndicator from "get ActivityIndicator";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import DownloadIcon from "DownloadIcon";
+import get_ActivityIndicator from "_copy";
+import jsxProd from "set";
+import createCacheKey from "createCacheKey";
 
+let c9;
 let closure_6;
-let closure_7;
-let closure_8;
-let closure_9;
-let require = arg1;
+let error;
+let metroImportAll;
+const require = arg1;
 function OtaVerificationActionSheet(result) {
   result = result.result;
-  const tmp = _createForOfIteratorHelperLoose();
-  const require = tmp;
-  let obj = { header: callback2(require(5220) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: "OTA Verification Result" }) };
-  obj = { style: tmp.verificationLine };
-  const items = [callback2(require(4161) /* Text */.Text, { variant: "heading-md/bold", children: "Has OTA Applied" }), ];
-  obj = { variant: "text-md/normal" };
+  let _require;
+  const tmp = createCacheKey();
+  _require = tmp;
+  let obj = { header: null, children: null };
+  obj[0] = callback2(_require(5242).BottomSheetTitleHeader, { title: "OTA Verification Result" });
+  obj = { style: tmp.verificationLine, children: null };
+  const items = [callback2(_require(4185).Text, { variant: "heading-md/bold", children: "Has OTA Applied" }), ];
   let str = "No";
   let str2 = "No";
   if (result.hasOtaApplied) {
     str2 = "Yes";
   }
-  obj.children = str2;
-  items[1] = callback2(require(4161) /* Text */.Text, obj);
-  obj.children = items;
-  const items1 = [callback3(closure_7, obj), , , , ];
-  const obj1 = { style: tmp.verificationLine };
-  const items2 = [callback2(require(4161) /* Text */.Text, { variant: "heading-md/bold", children: "Has Local Copy" }), ];
-  const obj2 = { variant: "text-md/normal" };
+  items[1] = callback2(_require(4185).Text, { variant: "text-md/normal", children: str2 });
+  obj[1] = items;
+  const items1 = [closure_9(closure_7, obj), , , , ];
+  obj = { style: tmp.verificationLine, children: null };
+  const items2 = [callback2(_require(4185).Text, { variant: "heading-md/bold", children: "Has Local Copy" }), ];
   let str3 = "--";
   if (null != result.hasLocalCopy) {
     let str4 = str;
@@ -45,88 +44,153 @@ function OtaVerificationActionSheet(result) {
     }
     str3 = str4;
   }
-  obj2.children = str3;
-  items2[1] = callback2(require(4161) /* Text */.Text, obj2);
-  obj1.children = items2;
-  items1[1] = callback3(closure_7, obj1);
-  const obj3 = { style: tmp.verificationLine };
-  const items3 = [callback2(require(4161) /* Text */.Text, { variant: "heading-md/bold", children: "OTA is Valid" }), ];
-  const obj4 = { variant: "text-md/normal" };
+  items2[1] = callback2(_require(4185).Text, { variant: "text-md/normal", children: str3 });
+  obj[1] = items2;
+  items1[1] = closure_9(closure_7, obj);
+  const obj1 = { style: tmp.verificationLine, children: null };
+  const items3 = [callback2(_require(4185).Text, { variant: "heading-md/bold", children: "OTA is Valid" }), ];
   if (result.isValid) {
     str = "Yes";
   }
-  obj4.children = str;
-  items3[1] = callback2(require(4161) /* Text */.Text, obj4);
-  obj3.children = items3;
-  items1[2] = callback3(closure_7, obj3);
-  let tmp21Result = null;
+  items3[1] = callback2(_require(4185).Text, { variant: "text-md/normal", children: str });
+  obj1[1] = items3;
+  items1[2] = closure_9(closure_7, obj1);
+  let tmp2Result = null;
   if (null !== result.totalFileCount) {
-    const obj5 = { style: tmp.verificationLine };
-    const items4 = [callback2(require(4161) /* Text */.Text, { variant: "heading-md/bold", children: "File Counts" }), ];
-    const obj6 = { variant: "text-md/normal" };
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.verificationLine;
+    const items4 = [tmp5(tmp3(4185).Text, { variant: "heading-md/bold", children: "File Counts" }), ];
     const items5 = [result.totalFileCount, " files. ", , , , ];
     const successes = result.successes;
     let length;
-    if (null != successes) {
+    if (successes != null) {
       length = successes.length;
     }
     items5[2] = length;
     items5[3] = " successes, ";
     const failures = result.failures;
     let length1;
-    if (null != failures) {
+    if (failures != null) {
       length1 = failures.length;
     }
+    const obj3 = { variant: "text-md/normal", children: null };
     items5[4] = length1;
     items5[5] = " failures.";
-    obj6.children = items5;
-    items4[1] = callback3(require(4161) /* Text */.Text, obj6);
-    obj5.children = items4;
-    tmp21Result = callback3(closure_7, obj5);
-    const tmp21 = callback3;
-    const tmp22 = closure_7;
-    const tmp26 = callback3;
+    obj3[1] = items5;
+    items4[1] = tmp2(tmp3(4185).Text, obj3);
+    obj2[1] = items4;
+    tmp2Result = tmp2(tmp6, obj2);
   }
-  items1[3] = tmp21Result;
-  let tmp15 = null;
+  items1[3] = tmp2Result;
+  tmp2Result = null;
   if (result.failures.length > 0) {
-    const obj7 = { style: tmp.verificationLine };
-    const items6 = [callback2(require(4161) /* Text */.Text, { variant: "heading-md/bold", children: "Failures" }), ];
+    const obj4 = { style: null, children: null };
+    obj4[0] = tmp.verificationLine;
+    const items6 = [tmp5(tmp3(4185).Text, { variant: "heading-md/bold", children: "Failures" }), ];
     const failures1 = result.failures;
-    items6[1] = failures1.map((children) => outer1_8(tmp(outer1_2[10]).Text, { variant: "text-md/normal", style: tmp.verificationFailure, children }, children));
-    obj7.children = items6;
-    tmp15 = callback3(closure_7, obj7);
+    items6[1] = failures1.map((children) => outer1_8(_undefined(outer1_2[10]).Text, { variant: "text-md/normal", style: _undefined.verificationFailure, children }, children));
+    obj4[1] = items6;
+    tmp2Result = tmp2(tmp6, obj4);
   }
-  items1[4] = tmp15;
-  obj.children = items1;
-  return callback3(require(5221) /* Background */.BottomSheet, obj);
+  items1[4] = tmp2Result;
+  obj[1] = items1;
+  return closure_9(_require(5243).BottomSheet, obj);
 }
-({ ScrollView: closure_6, View: closure_7 } = get_ActivityIndicator);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, flex: 1 };
-_createForOfIteratorHelperLoose.wrap = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.contentContainer = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-let obj1 = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-_createForOfIteratorHelperLoose.verificationLine = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.verificationFailure = { fontFamily: require("sum").Fonts.CODE_NORMAL };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let result = require("result").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsOTATestScreen.tsx");
+({ ScrollView: closure_6, View: error } = get_ActivityIndicator);
+({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
+createCacheKey = { wrap: null, contentContainer: null, verificationLine: null, verificationFailure: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flex: 1 };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { padding: require("Themes").space.PX_16 };
+let obj1 = { padding: require("Themes").space.PX_16 };
+createCacheKey[2] = { paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_8 };
+createCacheKey[3] = { fontFamily: require("sum").Fonts.CODE_NORMAL };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_8 };
+let result = require("noop").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsOTATestScreen.tsx");
 
 export default function DevToolsOTATestScreen() {
   let closure_3;
-  let result;
+  let DownloadIcon;
   let dependencyMap;
   let tmp10;
   let tmp5;
   let tmp7;
   function _verifyFiles() {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = outer1_3(tmp);
-    return obj(...arguments);
+    const self = this;
+    const tmp = outer1_3(function*() {
+      if (c3 === 2) {
+        c3 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === dependencyMap) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_1 = tmp5;
+              let closure_0 = tmp2;
+              closure_0 = undefined;
+              outer1_5(true);
+              let obj1 = outer1_1(10982);
+              dependencyMap = 1;
+              c3 = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = obj1.verifyOtaFiles();
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            closure_0 = arg1;
+            callback(false);
+            const obj2 = { default: null };
+            obj2[0] = outer1_11;
+            const obj3 = { result: null };
+            obj3[0] = closure_0;
+            outer1_1(4157).openLazy(Promise.resolve(obj2), "OtaVerificationActionSheet", obj3);
+            c3 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp10) {
+          c3 = tmp;
+          throw tmp10;
+        }
+      }
+    });
+    const _verifyFiles = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
-  const tmp = _createForOfIteratorHelperLoose();
+  let tmp = createCacheKey();
   const tmp2 = callback(React.useState(""), 2);
   const first = tmp2[0];
   const importDefault = tmp2[1];
@@ -136,7 +200,7 @@ export default function DevToolsOTATestScreen() {
   const tmp8 = callback(React.useState(""), 2);
   callback = tmp8[1];
   const tmp6 = callback(React.useState(null), 2);
-  [tmp10, result] = callback(React.useState(false), 2);
+  [tmp10, DownloadIcon] = callback(React.useState(false), 2);
   const effect = React.useEffect(() => {
     const otaRootPath = callback(outer1_2[11]).getOtaRootPath();
     otaRootPath.then(callback);
@@ -150,13 +214,13 @@ export default function DevToolsOTATestScreen() {
     const otaStatus = callback(outer1_2[11]).getOtaStatus();
     otaStatus.then(_slicedToArray);
   }, []);
-  let obj = { style: tmp.wrap, contentContainerStyle: tmp.contentContainer };
-  obj = { spacing: 16 };
-  obj = { title: "OTA Status", hasIcons: true };
-  const obj1 = { label: "Status", subLabel: tmp8[0], icon: callback2(first(14498).WrenchIcon, {}) };
+  let obj = { style: tmp.wrap, contentContainerStyle: tmp.contentContainer, children: null };
+  obj = { title: "OTA Status", hasIcons: true, children: null };
+  obj = { label: "Status", subLabel: tmp8[0], icon: null };
+  obj[2] = callback2(first(14523).WrenchIcon, {});
   const items = [
-    callback2(first(5198).TableRow, obj1),
-    callback2(first(5198).TableRow, {
+    callback2(first(5220).TableRow, obj),
+    callback2(first(5220).TableRow, {
       label: "Root Path (tap to copy)",
       subLabel: first,
       onPress: function copyRootPath() {
@@ -164,70 +228,88 @@ export default function DevToolsOTATestScreen() {
       }
     })
   ];
-  obj.children = items;
-  const items1 = [callback3(first(5536).TableRowGroup, obj), , , ];
-  let obj3 = { title: "Manifest", hasIcons: true };
-  const obj4 = { label: "Manifest Source" };
-  let source;
-  if (null != tmp5) {
-    source = tmp5.source;
+  obj[2] = items;
+  const items1 = [callback3(first(5554).TableRowGroup, obj), , , ];
+  let str;
+  if (tmp5 != null) {
+    str = tmp5.source;
   }
-  let str = "Unknown";
-  if (null != source) {
-    str = source;
+  if (str == null) {
+    str = "Unknown";
   }
-  obj4.subLabel = str;
-  obj4.icon = callback2(first(14498).WrenchIcon, {});
-  const items2 = [callback2(first(5198).TableRow, obj4), ];
-  const obj5 = { icon: callback2(first(9257).PaperIcon, {}) };
+  let obj1 = {
+    label: "Root Path (tap to copy)",
+    subLabel: first,
+    onPress: function copyRootPath() {
+      first(outer1_2[17]).copy(first);
+    }
+  };
+  const tmp13 = _verifyFiles;
+  const tmp9 = callback(React.useState(false), 2);
+  const items2 = [callback2(first(5220).TableRow, { label: "Manifest Source", subLabel: str, icon: callback2(first(14523).WrenchIcon, {}) }), ];
+  let obj3 = { icon: null, label: null };
+  obj3[0] = callback2(first(9281).PaperIcon, {});
   let str2 = "{}";
   if (null != tmp5) {
     let metadata = tmp5.metadata;
-    if (null == metadata) {
+    if (metadata == null) {
       metadata = {};
     }
     str2 = JSON.stringify(metadata, null, 2);
   }
-  obj5.label = str2;
-  items2[1] = callback2(first(5198).TableRow, obj5);
-  obj3.children = items2;
-  items1[1] = callback3(first(5536).TableRowGroup, obj3);
-  const obj6 = { title: "Build Override Cookie", hasIcons: true };
-  const obj7 = { icon: callback2(first(14498).WrenchIcon, {}), label: "Is cookie set?" };
+  const obj4 = { title: "Manifest", hasIcons: true, children: null };
+  obj3[1] = str2;
+  items2[1] = callback2(first(5220).TableRow, obj3);
+  obj4[2] = items2;
+  items1[1] = callback3(first(5554).TableRowGroup, obj4);
+  const obj5 = { icon: null, label: "Is cookie set?", subLabel: null };
+  obj5[0] = callback2(first(14523).WrenchIcon, {});
   let str3 = "Yes";
   if (null == tmp7) {
     str3 = "No";
   }
-  obj7.subLabel = str3;
-  const items3 = [callback2(first(5198).TableRow, obj7), ];
-  let tmp22 = null != tmp7;
-  if (tmp22) {
-    const obj8 = { icon: callback2(first(14498).WrenchIcon, {}) };
+  obj5[2] = str3;
+  const items3 = [callback2(first(5220).TableRow, obj5), ];
+  let tmp12Result = null != tmp7;
+  if (tmp12Result) {
+    const obj6 = { icon: null, label: null };
+    obj6[0] = tmp12(tmp15(14523).WrenchIcon, {});
     const _JSON = JSON;
-    obj8.label = JSON.stringify(tmp7, null, 2);
-    tmp22 = callback2(first(5198).TableRow, obj8);
+    obj6[1] = JSON.stringify(tmp7, null, 2);
+    tmp12Result = tmp12(tmp15(5220).TableRow, obj6);
   }
-  items3[1] = tmp22;
-  obj6.children = items3;
-  items1[2] = callback3(first(5536).TableRowGroup, obj6);
-  const obj9 = { title: "Actions", hasIcons: true };
-  const obj10 = { label: "Check for Update & Reload", icon: callback2(first(4115).DownloadIcon, {}), onPress: importDefault(10958).checkForUpdateAndReload };
-  const items4 = [callback2(first(5198).TableRow, obj10), ];
-  const obj11 = { label: "Verify OTA Files" };
+  items3[1] = tmp12Result;
+  items1[2] = callback3(first(5554).TableRowGroup, { title: "Build Override Cookie", hasIcons: true, children: items3 });
+  const obj7 = { label: "Check for Update & Reload", icon: null, onPress: null };
+  obj7[1] = callback2(first(4139).DownloadIcon, {});
+  obj7[2] = importDefault(10982).checkForUpdateAndReload;
+  const items4 = [callback2(first(5220).TableRow, obj7), ];
   let str4 = "Verify content hashes for all app files";
   if (tmp10) {
     str4 = "Verification in progress";
   }
-  obj11.subLabel = str4;
-  obj11.icon = callback2(first(14733).ClipboardCheckIcon, {});
-  obj11.onPress = function verifyFiles() {
-    return _verifyFiles(...arguments);
-  };
-  obj11.disabled = tmp10;
-  items4[1] = callback2(first(5198).TableRow, obj11);
-  obj9.children = items4;
-  items1[3] = callback3(first(5536).TableRowGroup, obj9);
-  obj.children = items1;
-  obj.children = callback3(first(4576).Stack, obj);
-  return callback2(_verifyFiles, obj);
+  const obj8 = { spacing: 16, children: null };
+  const obj9 = { title: "Actions", hasIcons: true, children: null };
+  let obj2 = { label: "Manifest Source", subLabel: str, icon: callback2(first(14523).WrenchIcon, {}) };
+  items4[1] = callback2(first(5220).TableRow, {
+    label: "Verify OTA Files",
+    subLabel: str4,
+    icon: callback2(first(14758).ClipboardCheckIcon, {}),
+    onPress: function verifyFiles() {
+      const self = this;
+      const apply = _verifyFiles.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    },
+    disabled: tmp10
+  });
+  obj9[2] = items4;
+  items1[3] = callback3(first(5554).TableRowGroup, obj9);
+  obj8[1] = items1;
+  obj[2] = callback3(first(4598).Stack, obj8);
+  return callback2(tmp13, obj);
 };

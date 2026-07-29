@@ -1,31 +1,31 @@
-// Module ID: 9943
-// Function ID: 76858
+// Module ID: 9965
+// Function ID: 9966
 // Name: ContextMenuSubmenuActionSheetHeader
-// Dependencies: [31, 27, 33, 4165, 8230, 1212, 2]
+// Dependencies: [19, 17, 21, 4189, 8254, 1236, 2]
 // Exports: default
 
-// Module 9943 (ContextMenuSubmenuActionSheetHeader)
-import "result";
+// Module 9965 (ContextMenuSubmenuActionSheetHeader)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_4 = _createForOfIteratorHelperLoose.createStyles({ headerContainer: { paddingVertical: 12, paddingHorizontal: 16, alignItems: "flex-start" } });
+let closure_4 = createCacheKey.createStyles({ headerContainer: { paddingVertical: 12, paddingHorizontal: 16, alignItems: "flex-start" } });
 const result = require("jsxProd").fileFinishedImporting("modules/action_sheet/native/components/ContextMenuSubmenuActionSheetHeader.tsx");
 
 export default function ContextMenuSubmenuActionSheetHeader(onBack) {
   let fn = onBack.onBack;
-  let obj = { style: callback().headerContainer };
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.label = intl.string(require(1212) /* getSystemLocale */.t["13/7kX"]);
-  if (null == fn) {
+  let obj = { style: callback().headerContainer, children: null };
+  obj = { label: null, onPress: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
+  if (fn == null) {
     fn = () => {
 
     };
   }
-  obj.onPress = fn;
-  obj.children = jsx(require(8230) /* ActionSheetHeaderPressableText */.ActionSheetHeaderPressableText, {});
-  return <View />;
+  obj[1] = fn;
+  obj[1] = jsx(require(8254) /* ActionSheetHeaderPressableText */.ActionSheetHeaderPressableText, { label: null, onPress: null });
+  return <View label={null} onPress={null} />;
 };

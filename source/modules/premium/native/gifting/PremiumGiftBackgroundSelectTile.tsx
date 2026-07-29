@@ -1,25 +1,30 @@
-// Module ID: 11866
-// Function ID: 91902
-// Name: GiftBackgroundSelectTile
-// Dependencies: [31, 27, 1852, 11867, 33, 11868, 11869, 11870, 11871, 11872, 11873, 11874, 11875, 11876, 4165, 689, 1212, 2263, 5119, 2]
+// Module ID: 11890
+// Function ID: 11891
+// Name: PremiumGiftStyles
+// Dependencies: [19, 17, 1876, 11891, 21, 11892, 11893, 11894, 11895, 11896, 11897, 11898, 11899, 11900, 4189, 712, 1236, 2287, 5141, 2]
 // Exports: default
 
-// Module 11866 (GiftBackgroundSelectTile)
-import "result";
-import get_ActivityIndicator from "get ActivityIndicator";
+// Module 11890 (PremiumGiftStyles)
+import "set";
+import get_ActivityIndicator from "messagesProxy";
 import { PremiumGiftStyles } from "GuildFeatures";
 import { GIFT_STYLE_DESCRIPTIONS } from "GIFT_STYLE_DESCRIPTIONS";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let CAKE;
+let CHEST;
+let COFFEE;
+let STANDARD_BOX;
+let c3;
+let c4;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
-({ View: closure_3, Pressable: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_6, jsxs: closure_7 } = jsxProd);
-let obj = { [PremiumGiftStyles.STANDARD_BOX]: require("registerAsset"), [PremiumGiftStyles.CAKE]: require("registerAsset"), [PremiumGiftStyles.CHEST]: require("registerAsset"), [PremiumGiftStyles.COFFEE]: require("registerAsset") };
+({ View: c3, Pressable: c4 } = get_ActivityIndicator);
+({ jsx: closure_6, jsxs: error } = jsxProd);
+let obj = { [STANDARD_BOX]: require("registerAsset"), [CAKE]: require("registerAsset"), [CHEST]: require("registerAsset"), [COFFEE]: require("registerAsset") };
+({ STANDARD_BOX, CAKE, CHEST, COFFEE } = PremiumGiftStyles);
 obj = { uri: require("metadata") };
 obj[PremiumGiftStyles.NITROWEEN_STANDARD] = obj;
 obj[PremiumGiftStyles.SNOWGLOBE] = null;
@@ -32,18 +37,17 @@ let obj1 = { uri: require("metadata") };
 obj[PremiumGiftStyles.SEASONAL_COFFEE] = { uri: require("metadata") };
 const obj2 = { uri: require("metadata") };
 obj[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: require("metadata") };
-let closure_9 = _createForOfIteratorHelperLoose.createStyles((arg0) => {
-  let obj = {};
-  obj = { width: 78, height: 44, justifyContent: "center", marginEnd: importDefault(689).space.PX_8 };
+let closure_9 = createCacheKey.createStyles((arg0) => {
+  let obj = { width: 78, height: 44, justifyContent: "center", marginEnd: importDefault(712).space.PX_8, marginStart: null };
   let num = 0;
   if (0 === arg0) {
     num = 20;
   }
-  obj.marginStart = num;
-  obj.container = obj;
-  obj = { position: "absolute", borderColor: importDefault(689).colors.TEXT_BRAND, borderRadius: importDefault(689).radii.sm, borderWidth: 2, flex: 1, width: 78, height: 44 };
-  obj.selected = obj;
-  obj.image = { width: 72, height: 38, alignSelf: "center" };
+  obj = { container: obj, selected: null, image: null };
+  obj[4] = num;
+  obj = { position: "absolute", borderColor: tmp(712).colors.TEXT_BRAND, borderRadius: tmp(712).radii.sm, borderWidth: 2, flex: 1, width: 78, height: 44 };
+  obj[1] = obj;
+  obj[2] = { width: 72, height: 38, alignSelf: "center" };
   return obj;
 });
 const obj3 = { uri: require("metadata") };
@@ -56,26 +60,30 @@ export default function GiftBackgroundSelectTile(index) {
   const tmp = callback2(index.index);
   let tmp4Result = null;
   if (null != obj[giftStyle]) {
-    obj = {};
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj = {};
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    obj.giftStyle = intl2.string(GIFT_STYLE_DESCRIPTIONS[giftStyle]);
-    obj["aria-label"] = intl.formatToPlainString(importDefault(2263)["+utqaz"], obj);
-    obj["aria-selected"] = selected;
-    obj.style = tmp.container;
-    obj.onPress = index.onPress;
+    obj = { "aria-label": null, "aria-selected": null, style: null, onPress: null, children: null };
+    const intl = require(1236) /* getSystemLocale */.intl;
+    obj = { giftStyle: null };
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    obj[0] = intl2.string(GIFT_STYLE_DESCRIPTIONS[giftStyle]);
+    obj[0] = intl.formatToPlainString(importDefault(2287)["+utqaz"], obj);
+    obj[1] = selected;
+    obj[2] = tmp.container;
+    obj[3] = index.onPress;
     if (selected) {
-      obj = { style: tmp.selected };
+      obj = { style: null };
+      obj[0] = tmp.selected;
       selected = callback(closure_3, obj);
     }
     const items = [selected, ];
-    const obj1 = { resizeMode: "contain", style: tmp.image, source: tmp2 };
-    items[1] = callback(importDefault(5119), obj1);
-    obj.children = items;
+    const obj1 = { resizeMode: "contain", style: null, source: null };
+    obj1[1] = tmp.image;
+    obj1[2] = tmp2;
+    items[1] = callback(importDefault(5141), obj1);
+    obj[4] = items;
     tmp4Result = closure_7(closure_4, obj);
     const tmp4 = closure_7;
     const tmp5 = closure_4;
+    const tmp8 = importDefault;
   }
   return tmp4Result;
 };

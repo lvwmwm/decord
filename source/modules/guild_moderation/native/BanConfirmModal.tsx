@@ -1,11 +1,11 @@
-// Module ID: 11025
-// Function ID: 85537
+// Module ID: 11049
+// Function ID: 11050
 // Name: BanConfirmModal
-// Dependencies: [31, 33, 9082, 9084, 1212, 11018, 2]
+// Dependencies: [19, 21, 9106, 9108, 1236, 11042, 2]
 // Exports: default
 
-// Module 11025 (BanConfirmModal)
-import "result";
+// Module 11049 (BanConfirmModal)
+import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -15,12 +15,13 @@ export default function BanConfirmModal(onBeforeGoBack) {
   let importDefault;
   let require;
   ({ guildId: require, userId: importDefault } = onBeforeGoBack);
+  let onGoBack;
   onGoBack = importDefault(onGoBack[2])({ onBeforeGoBack: onBeforeGoBack.cancelButtonCallback }).onGoBack;
-  const obj = { screenKey: "ban" };
+  const obj = { screenKey: "ban", title: null, render: null };
   const intl = require(onGoBack[4]).intl;
-  obj.title = intl.string(require(onGoBack[4]).t.R3QeLQ);
-  obj.render = function render() {
+  obj[1] = intl.string(require(onGoBack[4]).t.R3QeLQ);
+  obj[2] = function render() {
     return outer1_3(outer1_1(onGoBack[5]), { onBan: onGoBack, guildId: closure_0, userId: closure_1 });
   };
-  return jsx(importDefault(onGoBack[3]), { screenKey: "ban" });
+  return jsx(importDefault(onGoBack[3]), { screenKey: "ban", title: null, render: null });
 };

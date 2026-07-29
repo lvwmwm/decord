@@ -1,23 +1,26 @@
-// Module ID: 12269
-// Function ID: 95696
+// Module ID: 12291
+// Function ID: 12292
 // Name: useUrlParts
-// Dependencies: [57, 31, 8179, 2]
-// Exports: useModalState
+// Dependencies: [32, 19, 8203, 2]
+// Exports: useModalState, useUrlParts
 
-// Module 12269 (useUrlParts)
+// Module 12291 (useUrlParts)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 
 const require = arg1;
-function useUrlParts(url) {
+const result = require("getHostname").fileFinishedImporting("modules/masked_link/SharedStateUtils.tsx");
+
+export const useUrlParts = function useUrlParts(url) {
   let hostname;
   let protocol;
   let closure_0 = url;
   const items = [url];
   const memo = React.useMemo(() => {
-    const obj = { protocol: url(outer1_1[2]).getProtocol(url) };
-    const obj2 = url(outer1_1[2]);
-    obj.hostname = url(outer1_1[2]).getHostname(url);
+    const obj = { protocol: null, hostname: null };
+    obj[0] = str(trustUrl[2]).getProtocol(str);
+    const obj2 = str(trustUrl[2]);
+    obj[1] = str(trustUrl[2]).getHostname(str);
     return obj;
   }, items);
   ({ protocol, hostname } = memo);
@@ -25,50 +28,59 @@ function useUrlParts(url) {
   if ("//" === url.substr(protocol.length, 2)) {
     str = "//";
   }
-  let obj = { protocol, authorityPrefix: str, hostname, theRestOfTheUrl: url.replace("" + protocol + str + hostname, "") };
-  return obj;
-}
-const result = require("getHostname").fileFinishedImporting("modules/masked_link/SharedStateUtils.tsx");
-
-export { useUrlParts };
+  return { protocol, authorityPrefix: str, hostname, theRestOfTheUrl: url.replace("" + protocol + str + hostname, "") };
+};
 export const useModalState = function useModalState(url) {
-  let authorityPrefix;
   let hostname;
   let protocol;
-  let theRestOfTheUrl;
-  url = url.url;
+  const str = url.url;
   const trustUrl = url.trustUrl;
   const onConfirm = url.onConfirm;
   const onCancel = url.onCancel;
   const onClose = url.onClose;
+  let first;
+  let obj = onCancel;
   const tmp = onConfirm(onCancel.useState(false), 2);
-  const first = tmp[0];
-  const items = [url, first, trustUrl, onConfirm, onClose];
-  ({ protocol, authorityPrefix, hostname, theRestOfTheUrl } = onClose(url));
-  const items1 = [onCancel, onClose];
-  const callback = onCancel.useCallback(() => {
+  first = tmp[0];
+  const items = [str];
+  const memo = onCancel.useMemo(() => {
+    const obj = { protocol: null, hostname: null };
+    obj[0] = str(trustUrl[2]).getProtocol(str);
+    const obj2 = str(trustUrl[2]);
+    obj[1] = str(trustUrl[2]).getHostname(str);
+    return obj;
+  }, items);
+  ({ protocol, hostname } = memo);
+  let str2 = "";
+  if ("//" === str.substr(protocol.length, 2)) {
+    str2 = "//";
+  }
+  const items1 = [str, first, trustUrl, onConfirm, onClose];
+  const replaced = str.replace("" + protocol + str2 + hostname, "");
+  const items2 = [onCancel, onClose];
+  const callback = obj.useCallback(() => {
     if (first) {
-      trustUrl(url);
+      trustUrl(str);
     }
-    if (null != onClose) {
-      onClose();
+    if (onClose != null) {
+      tmp4();
     }
     onConfirm();
-  }, items);
-  const tmp3 = onClose(url);
-  return {
+  }, items1);
+  obj = {
     protocol,
-    authorityPrefix,
+    authorityPrefix: str2,
     hostname,
-    theRestOfTheUrl,
+    theRestOfTheUrl: replaced,
     shouldTrustUrl: first,
     setShouldTrustUrl: tmp[1],
     handleConfirm: callback,
-    handleCancel: onCancel.useCallback(() => {
-      if (null != onClose) {
-        onClose();
+    handleCancel: obj.useCallback(() => {
+      if (onClose != null) {
+        tmp();
       }
       onCancel();
-    }, items1)
+    }, items2)
   };
+  return obj;
 };

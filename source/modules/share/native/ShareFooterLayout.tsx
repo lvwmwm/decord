@@ -1,30 +1,30 @@
-// Module ID: 9895
-// Function ID: 76543
+// Module ID: 9917
+// Function ID: 9918
 // Name: ShareFooterLayout
-// Dependencies: [31, 27, 33, 4165, 689, 5193, 4026, 4577, 4581, 4161, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5215, 4050, 4599, 4603, 4185, 2]
 // Exports: default
 
-// Module 9895 (ShareFooterLayout)
-import "result";
+// Module 9917 (ShareFooterLayout)
+import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let require = arg1;
-({ jsx: closure_4, Fragment: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { display: "flex", flexDirection: "column", flexShrink: 0, paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingVertical: require("_createForOfIteratorHelperLoose").space.PX_12, gap: require("_createForOfIteratorHelperLoose").space.PX_12, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGHEST, borderTopWidth: 1, borderTopColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-_createForOfIteratorHelperLoose.footer = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.footerSeparator = { marginHorizontal: -require("_createForOfIteratorHelperLoose").space.PX_16, borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-_createForOfIteratorHelperLoose.warningWrapper = { display: "flex", flexDirection: "column", gap: 8 };
-let obj2 = { display: "flex", flexDirection: "row", gap: require("_createForOfIteratorHelperLoose").space.PX_12, alignItems: "flex-end" };
-_createForOfIteratorHelperLoose.chatRow = obj2;
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+const require = arg1;
+({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { footer: null, footerSeparator: null, warningWrapper: null, chatRow: null };
+createCacheKey = { display: "flex", flexDirection: "column", flexShrink: 0, paddingHorizontal: require("Themes").space.PX_16, paddingVertical: require("Themes").space.PX_12, gap: require("Themes").space.PX_12, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGHEST, borderTopWidth: 1, borderTopColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { marginHorizontal: -require("Themes").space.PX_16, borderBottomWidth: 1, borderBottomColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[2] = { display: "flex", flexDirection: "column", gap: 8 };
+let obj1 = { marginHorizontal: -require("Themes").space.PX_16, borderBottomWidth: 1, borderBottomColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey[3] = { display: "flex", flexDirection: "row", gap: require("Themes").space.PX_12, alignItems: "flex-end" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 let closure_8 = { code: "function ShareFooterLayoutTsx1(){const{withSpring,footerPaddingBottom,ON_PRESS_SPRING}=this.__closure;return{paddingBottom:withSpring(footerPaddingBottom,ON_PRESS_SPRING,'respect-motion-settings')};}" };
-let obj1 = { marginHorizontal: -require("_createForOfIteratorHelperLoose").space.PX_16, borderBottomWidth: 1, borderBottomColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
+let obj2 = { display: "flex", flexDirection: "row", gap: require("Themes").space.PX_12, alignItems: "flex-end" };
 const result = require("jsxProd").fileFinishedImporting("modules/share/native/ShareFooterLayout.tsx");
 
 export default function ShareFooterLayout(arg0) {
@@ -34,43 +34,47 @@ export default function ShareFooterLayout(arg0) {
   let sendButton;
   let warningText;
   ({ preview, warningText } = arg0);
+  let _require;
   ({ chatInput, sendButton, avoidKeyboard } = arg0);
-  const tmp = _createForOfIteratorHelperLoose();
-  const sum = tmp.footer.paddingVertical + importDefault(5193)({ includeKeyboardHeight: avoidKeyboard, includeCustomKeyboardHeight: false }).insets.bottom;
-  const require = sum;
-  let obj = require(4026);
+  const tmp = createCacheKey();
+  const sum = tmp.footer.paddingVertical + importDefault(5215)({ includeKeyboardHeight: avoidKeyboard, includeCustomKeyboardHeight: false }).insets.bottom;
+  _require = sum;
+  let obj = _require(4050);
   const fn = function f() {
-    const obj = { paddingBottom: sum(outer1_2[7]).withSpring(closure_0, sum(outer1_2[8]).ON_PRESS_SPRING, "respect-motion-settings") };
+    const obj = { paddingBottom: null };
+    obj[0] = _undefined(outer1_2[7]).withSpring(_undefined, _undefined(outer1_2[8]).ON_PRESS_SPRING, "respect-motion-settings");
     return obj;
   };
-  obj = { withSpring: require(4577) /* withSpring */.withSpring, footerPaddingBottom: sum, ON_PRESS_SPRING: require(4581) /* SUBTLE_SPRING */.ON_PRESS_SPRING };
+  obj = { withSpring: _require(4599).withSpring, footerPaddingBottom: sum, ON_PRESS_SPRING: _require(4603).ON_PRESS_SPRING };
   fn.__closure = obj;
   fn.__workletHash = 2871405301293;
   fn.__initData = closure_8;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  obj = { style: items };
+  obj = { style: items, children: null };
   items = [tmp.footer, animatedStyle];
-  let tmp5 = null;
+  let tmp6Result = null;
   if (null != preview) {
-    const obj1 = {};
+    const obj1 = { children: null };
     const items1 = [preview, ];
-    const obj2 = { style: tmp.footerSeparator };
+    const obj2 = { style: null };
+    obj2[0] = tmp.footerSeparator;
     items1[1] = callback(View, obj2);
-    obj1.children = items1;
-    tmp5 = callback2(closure_5, obj1);
+    obj1[0] = items1;
+    tmp6Result = tmp6(closure_5, obj1);
   }
-  const items2 = [tmp5, ];
-  const obj3 = { style: tmp.warningWrapper };
+  const items2 = [tmp6Result, ];
+  const obj3 = { style: tmp.warningWrapper, children: null };
   const items3 = [chatInput, sendButton];
-  const items4 = [callback2(View, { style: tmp.chatRow, children: items3 }), ];
+  const items4 = [closure_6(View, { style: tmp.chatRow, children: items3 }), ];
   let tmp12 = null != warningText;
   if (tmp12) {
-    const obj5 = { variant: "text-sm/normal", color: "text-feedback-warning", children: warningText };
-    tmp12 = callback(require(4161) /* Text */.Text, obj5);
+    const obj5 = { variant: "text-sm/normal", color: "text-feedback-warning", children: null };
+    obj5[2] = warningText;
+    tmp12 = callback(_require(4185).Text, obj5);
   }
   items4[1] = tmp12;
-  obj3.children = items4;
-  items2[1] = callback2(View, obj3);
-  obj.children = items2;
-  return callback2(importDefault(4026).View, obj);
+  obj3[1] = items4;
+  items2[1] = closure_6(View, obj3);
+  obj[1] = items2;
+  return closure_6(importDefault(4050).View, obj);
 };

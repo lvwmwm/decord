@@ -1,10 +1,10 @@
-// Module ID: 12446
-// Function ID: 96445
+// Module ID: 12468
+// Function ID: 12469
 // Name: trackIfScrolledToBottom
-// Dependencies: [653, 675, 2]
+// Dependencies: [676, 698, 2]
 // Exports: trackIfScrolledToBottom
 
-// Module 12446 (trackIfScrolledToBottom)
+// Module 12468 (trackIfScrolledToBottom)
 import { AnalyticEvents } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/user_settings/premium/native/utils/PremiumNitroHomeUtils.tsx");
@@ -23,8 +23,9 @@ export const trackIfScrolledToBottom = function trackIfScrolledToBottom(trackedT
     current = sum < Math.floor(tmp3.height);
   }
   if (!current) {
-    let obj = importDefault(675);
-    obj = { type: trackedType.trackedType };
+    let obj = importDefault(698);
+    obj = { type: null };
+    obj[0] = trackedType.trackedType;
     obj.track(AnalyticEvents.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, obj);
     hasTrackedScrolledToBottom.current = true;
   }

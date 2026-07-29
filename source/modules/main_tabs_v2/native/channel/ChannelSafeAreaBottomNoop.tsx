@@ -1,13 +1,13 @@
-// Module ID: 11711
-// Function ID: 90646
-// Dependencies: [31, 27, 33, 2]
+// Module ID: 11736
+// Function ID: 11737
+// Dependencies: [19, 17, 21, 2]
 
-// Module 11711
+// Module 11736
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import importAllResult from "result";
+import importAllResult from "noop";
 
-const memoResult = require("result").memo(function ChannelSafeAreaNoop() {
+const memoResult = require("noop").memo(function ChannelSafeAreaNoop() {
   return <View />;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/channel/ChannelSafeAreaBottomNoop.tsx");

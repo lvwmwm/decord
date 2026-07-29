@@ -1,13 +1,14 @@
-// Module ID: 12589
-// Function ID: 97242
+// Module ID: 12611
+// Function ID: 12612
 // Name: apexExperiment
-// Dependencies: [1428, 2]
+// Dependencies: [1452, 2]
 
-// Module 12589 (apexExperiment)
+// Module 12611 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-const obj = { kind: "user", name: "2026-05-dice-roll-slash-command", defaultConfig: { enabled: false }, variations: { [1]: { enabled: true } } };
-const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const obj = { 1: null };
+obj[1] = { enabled: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-05-dice-roll-slash-command", defaultConfig: { enabled: false }, variations: obj });
 const result = require("set").fileFinishedImporting("modules/dice_roll/DiceRollExperiment.tsx");
 
 export default apexExperiment;

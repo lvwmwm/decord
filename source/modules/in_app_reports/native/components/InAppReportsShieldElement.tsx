@@ -1,17 +1,17 @@
-// Module ID: 7686
-// Function ID: 61373
+// Module ID: 7709
+// Function ID: 7710
 // Name: ShieldElement
-// Dependencies: [31, 27, 33, 4165, 6763, 2]
+// Dependencies: [19, 17, 21, 4189, 6785, 2]
 // Exports: default
 
-// Module 7686 (ShieldElement)
-import "result";
+// Module 7709 (ShieldElement)
+import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
 const require = arg1;
-let closure_4 = _createForOfIteratorHelperLoose.createStyles({ container: { flex: 0, alignSelf: "center", marginBottom: 16 } });
+let closure_4 = createCacheKey.createStyles({ container: { flex: 0, alignSelf: "center", marginBottom: 16 } });
 const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsShieldElement.tsx");
 
 export default function ShieldElement(element) {
@@ -20,8 +20,10 @@ export default function ShieldElement(element) {
   if (null != element) {
     tmp2 = null;
     if ("success" === element.type) {
-      const obj = { style: tmp.container, children: jsx(require(6763) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, { width: 100, height: 100 }) };
-      tmp2 = <View style={tmp.container}>{jsx(require(6763) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, { width: 100, height: 100 })}</View>;
+      const obj = { style: null, children: null };
+      obj[0] = tmp.container;
+      obj[1] = jsx(require(6785) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, { width: 100, height: 100 });
+      tmp2 = <View style={null}>{null}</View>;
     }
   }
   return tmp2;

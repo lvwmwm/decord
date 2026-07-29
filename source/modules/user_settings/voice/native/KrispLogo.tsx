@@ -1,70 +1,70 @@
-// Module ID: 10767
-// Function ID: 83521
+// Module ID: 10791
+// Function ID: 10792
 // Name: handleKrispLinkPressed
-// Dependencies: [31, 27, 1278, 653, 33, 1921, 675, 1212, 3862, 566, 4011, 10768, 10769, 4161, 2]
+// Dependencies: [19, 17, 1302, 676, 21, 1945, 698, 1236, 3886, 589, 4035, 10792, 10793, 4185, 2]
 // Exports: default
 
-// Module 10767 (handleKrispLinkPressed)
-import "result";
+// Module 10791 (handleKrispLinkPressed)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import handleThemeChange from "handleThemeChange";
 import ME from "ME";
 import jsxProd from "jsxProd";
 
-let closure_10;
-let closure_11;
+let c10;
+let c3;
+let c4;
+let c5;
+let c9;
 let closure_12;
-let closure_3;
-let closure_4;
-let closure_5;
-let closure_7;
-let closure_8;
-let closure_9;
+let error;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
 function handleKrispLinkPressed() {
-  let obj = importDefault(1921);
+  let obj = importDefault(1945);
   const articleURL = obj.getArticleURL(constants4.NOISE_SUPPRESSION);
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.text = intl.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
-  obj.href = articleURL;
+  obj = { text: null, href: null, location: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.hvVgAZ);
+  obj[1] = articleURL;
   obj = { page: constants2.USER_SETTINGS, section: constants3.SETTINGS_VOICE_AND_VIDEO };
-  obj.location = obj;
-  importDefault(675).track(constants.NOISE_CANCELLATION_LINK_CLICKED, obj);
-  const obj2 = importDefault(675);
-  importDefault(3862).openURL(articleURL);
+  obj[2] = obj;
+  importDefault(698).track(constants.NOISE_CANCELLATION_LINK_CLICKED, obj);
+  const obj2 = importDefault(698);
+  importDefault(3886).openURL(articleURL);
 }
-({ Image: closure_3, View: closure_4, Pressable: closure_5 } = get_ActivityIndicator);
-({ AnalyticEvents: closure_7, AnalyticsPages: closure_8, AnalyticsSections: closure_9, HelpdeskArticles: closure_10 } = ME);
-({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+({ Image: c3, View: c4, Pressable: c5 } = get_ActivityIndicator);
+({ AnalyticEvents: error, AnalyticsPages: metroImportAll, AnalyticsSections: c9, HelpdeskArticles: c10 } = ME);
+({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
 let closure_13 = { logo: { marginLeft: 20, height: 30, width: 67 }, detailsView: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingBottom: 12, gap: 12 } };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/user_settings/voice/native/KrispLogo.tsx");
+const result = require("handleThemeChange").fileFinishedImporting("modules/user_settings/voice/native/KrispLogo.tsx");
 
 export default function KrispLogo() {
-  let obj = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.theme);
-  let obj1 = require(4011) /* AccessibilityAnnouncer */;
+  let obj = require(589) /* initialize */;
+  const items = [handleThemeChange];
+  const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
+  let obj1 = require(4035) /* AccessibilityAnnouncer */;
   if (obj1.isThemeLight(stateFromStores)) {
-    let tmp2Result = tmp2(10768);
+    let tmp4Result = tmp4(10792);
   } else {
-    tmp2Result = tmp2(10769);
+    tmp4Result = tmp4(10793);
   }
-  obj = { style: closure_13.detailsView };
-  obj = { style: closure_13.logo, source: tmp2Result };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.vFiCSx);
+  obj = { style: closure_13.detailsView, children: null };
+  obj = { style: closure_13.logo, source: tmp4Result, accessibilityLabel: null };
+  const intl = tmp(1236).intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.vFiCSx);
   const items1 = [callback(closure_3, obj), ];
-  obj1 = { accessibilityRole: "link" };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj1.accessibilityLabel = intl2.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
-  obj1.onPress = handleKrispLinkPressed;
-  const obj2 = { variant: "text-sm/medium", color: "text-link" };
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj2.children = intl3.string(require(1212) /* getSystemLocale */.t.hvVgAZ);
-  obj1.children = callback(require(4161) /* Text */.Text, obj2);
+  obj1 = { accessibilityRole: "link", accessibilityLabel: null, onPress: null, children: null };
+  const intl2 = tmp(1236).intl;
+  obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t.hvVgAZ);
+  obj1[2] = handleKrispLinkPressed;
+  const obj2 = { variant: "text-sm/medium", color: "text-link", children: null };
+  const intl3 = tmp(1236).intl;
+  obj2[2] = intl3.string(require(1236) /* getSystemLocale */.t.hvVgAZ);
+  obj1[3] = callback(require(4185) /* Text */.Text, obj2);
   items1[1] = callback(closure_5, obj1);
-  obj.children = items1;
+  obj[1] = items1;
   return callback2(closure_4, obj);
 };
 export { handleKrispLinkPressed };

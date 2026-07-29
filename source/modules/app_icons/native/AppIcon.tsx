@@ -1,44 +1,41 @@
-// Module ID: 14464
-// Function ID: 110426
+// Module ID: 14486
+// Function ID: 14487
 // Name: AppIcon
-// Dependencies: [31, 27, 6562, 33, 4165, 689, 4101, 4011, 2]
+// Dependencies: [19, 17, 6583, 21, 4189, 712, 4125, 4035, 2]
 // Exports: default
 
-// Module 14464 (AppIcon)
-import "result";
+// Module 14486 (AppIcon)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import { getIconById } from "getDefaultIcon";
+import { getIconById } from "items";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
+let c3;
+let c4;
 const require = arg1;
-({ Image: closure_3, View: closure_4 } = get_ActivityIndicator);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { overflow: "hidden", borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.image = { resizeMode: "contain", height: "100%", width: "100%" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-const result = require("getDefaultIcon").fileFinishedImporting("modules/app_icons/native/AppIcon.tsx");
+({ Image: c3, View: c4 } = get_ActivityIndicator);
+createCacheKey = { container: null, image: null };
+createCacheKey = { overflow: "hidden", borderColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { resizeMode: "contain", height: "100%", width: "100%" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+const result = require("items").fileFinishedImporting("modules/app_icons/native/AppIcon.tsx");
 
 export default function AppIcon(size) {
   let num = size.size;
   if (num === undefined) {
     num = 56;
   }
-  const tmp = _createForOfIteratorHelperLoose();
-  const tmp2 = importDefault(4101)();
-  let obj = require(4011) /* AccessibilityAnnouncer */;
+  const tmp = createCacheKey();
+  const tmp2 = importDefault(4125)();
+  let obj = require(4035) /* AccessibilityAnnouncer */;
   let num2 = 1;
   if (obj.isThemeDark(tmp2)) {
     num2 = 0;
   }
-  obj = { style: items, children: <closure_3 {...obj1} /> };
-  items = [tmp.container, , ];
-  obj = { width: num, height: num, borderWidth: num2 };
-  items[1] = obj;
-  items[2] = size.style;
-  const tmp3 = getIconById(size.id);
-  return <closure_4 width={num} height={num} borderWidth={num2} />;
+  obj = { style: items, children: <closure_3 {...obj} /> };
+  items = [tmp.container, { width: num, height: num, borderWidth: num2 }, size.style];
+  obj = { style: tmp.image, source: getIconById(size.id).iconSource };
+  return <closure_4 style={tmp.image} source={getIconById(arg0.id).iconSource} />;
 };

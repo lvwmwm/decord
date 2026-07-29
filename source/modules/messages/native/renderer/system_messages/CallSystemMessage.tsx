@@ -1,18 +1,18 @@
-// Module ID: 7737
-// Function ID: 61634
+// Module ID: 7760
+// Function ID: 7761
 // Name: createCallSystemMessage
-// Dependencies: [4178, 1194, 4181, 653, 4183, 7738, 7739, 1212, 1395, 3835, 7723, 2]
+// Dependencies: [4202, 1218, 4205, 676, 4207, 7761, 7762, 1236, 1419, 3859, 7746, 2]
 // Exports: createCallSystemMessage
 
-// Module 7737 (createCallSystemMessage)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_4 from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
+// Module 7760 (createCallSystemMessage)
+import getParticipants from "getParticipants";
+import fetchFingerprint from "fetchFingerprint";
+import updateVoiceState from "updateVoiceState";
 import { ME } from "ME";
 import { ParticipantTypes } from "ParticipantTypes";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/messages/native/renderer/system_messages/CallSystemMessage.tsx");
+const result = require("updateVoiceState").fileFinishedImporting("modules/messages/native/renderer/system_messages/CallSystemMessage.tsx");
 
 export const createCallSystemMessage = function createCallSystemMessage(message) {
   message = message.message;
@@ -20,61 +20,62 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
   const channelId = message.getChannelId();
   const call = message.call;
   userVoiceChannelId = userVoiceChannelId.getUserVoiceChannelId(ME, id);
-  const tmp4 = importDefault(7738)(message);
+  const tmp6 = importDefault(7761)(message);
   participants = participants.getParticipants(channelId);
-  let obj = require(7739) /* checkIsCallActive */;
+  let obj = require(7762) /* useIsCallActive */;
   const checkIsCallActiveResult = obj.checkIsCallActive(channelId, message.id);
-  let tmp6 = !checkIsCallActiveResult;
-  if (tmp6) {
-    tmp6 = null != call;
+  let tmp9 = !checkIsCallActiveResult;
+  if (!checkIsCallActiveResult) {
+    tmp9 = null != call;
   }
-  if (tmp6) {
+  if (tmp9) {
     const participants1 = call.participants;
-    tmp6 = -1 === participants1.indexOf(id);
+    tmp9 = -1 === participants1.indexOf(id);
   }
-  const intl = require(1212) /* getSystemLocale */.intl;
+  const intl = tmp7(1236).intl;
   const string = intl.string;
-  const t = require(1212) /* getSystemLocale */.t;
+  const t = tmp7(1236).t;
   if (checkIsCallActiveResult) {
     let str2 = "";
     if (checkIsCallActiveResult) {
       if (null == userVoiceChannelId) {
-        const intl3 = require(1212) /* getSystemLocale */.intl;
-        str2 = intl3.string(require(1212) /* getSystemLocale */.t.DqA3mi);
+        const intl3 = tmp7(1236).intl;
+        str2 = intl3.string(tmp7(1236).t.DqA3mi);
       } else {
         str2 = "";
       }
     }
-    const found = participants.filter((type) => type.type === outer1_7.USER && !type.ringing);
+    const found = participants.filter((type) => type.type === constants.USER && !type.ringing);
     let mapped = found.map((user) => {
       user = user.user;
-      return outer1_0(outer1_2[8]).ensureAvatarSource(user.getAvatarSource(undefined)).uri;
+      return callback(table[8]).ensureAvatarSource(user.getAvatarSource(undefined)).uri;
     });
     let formatToPlainStringResult = str2;
     let stringResult1 = string(t["NGg/fm"]);
     const stringResult = string(t["NGg/fm"]);
   } else {
-    if (tmp6) {
+    if (tmp9) {
       stringResult1 = string(t["2CnhoI"]);
     } else {
       stringResult1 = string(t.v05Xd6);
     }
-    if (null != tmp4) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      obj = { duration: tmp4, timestamp: require(3835) /* resetCache */.calendarFormat(message.timestamp) };
-      formatToPlainStringResult = intl2.formatToPlainString(require(1212) /* getSystemLocale */.t.SBDnp1, obj);
-      const obj4 = require(3835) /* resetCache */;
+    if (null != tmp6) {
+      const intl2 = tmp7(1236).intl;
+      obj = { duration: null, timestamp: null };
+      obj[0] = tmp6;
+      let tmp7Result = tmp7(3859);
+      obj[1] = tmp7Result.calendarFormat(message.timestamp);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp7(1236).t.SBDnp1, obj);
     } else {
-      formatToPlainStringResult = require(3835) /* resetCache */.calendarFormat(message.timestamp);
-      const obj2 = require(3835) /* resetCache */;
+      tmp7Result = tmp7(3859);
+      formatToPlainStringResult = tmp7Result.calendarFormat(message.timestamp);
     }
     const author = message.author;
-    mapped = [require(1395) /* ensureAvatarSource */.ensureAvatarSource(author.getAvatarSource(undefined)).uri];
-    const obj5 = require(1395) /* ensureAvatarSource */;
+    mapped = [tmp7(1419).ensureAvatarSource(author.getAvatarSource(undefined)).uri];
+    const tmp7Result1 = tmp7(1419);
   }
-  obj = { title: stringResult1, description: formatToPlainStringResult, isCallActive: checkIsCallActiveResult, missed: tmp6, avatarURLs: mapped };
-  const timestamp = message.timestamp;
-  obj.rawMilliseconds = timestamp.valueOf();
-  const merged = Object.assign(importDefault(7723)(message));
+  obj = { title: stringResult1, description: formatToPlainStringResult, isCallActive: checkIsCallActiveResult, missed: tmp9, avatarURLs: mapped, rawMilliseconds: timestamp.valueOf() };
+  timestamp = message.timestamp;
+  const merged = Object.assign(importDefault(7746)(message));
   return obj;
 };

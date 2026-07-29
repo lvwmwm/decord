@@ -1,24 +1,13 @@
-// Module ID: 11951
-// Function ID: 92370
-// Name: determineEmojiType
-// Dependencies: [11948, 653, 3838, 3747, 11952, 675, 2]
+// Module ID: 11975
+// Function ID: 11976
+// Name: setCustomStatus
+// Dependencies: [11972, 676, 3862, 3771, 11976, 698, 2]
 // Exports: default
 
-// Module 11951 (determineEmojiType)
+// Module 11975 (setCustomStatus)
 import { ClearAfterValues } from "StatusTypes";
 import { AnalyticEvents } from "ME";
 
-function determineEmojiType(emojiInfo) {
-  let tmp = null;
-  if (null != emojiInfo) {
-    let str = "unicode";
-    if (null != emojiInfo.id) {
-      str = "custom";
-    }
-    tmp = str;
-  }
-  return tmp;
-}
 const result = require("explicitContentFromProto").fileFinishedImporting("modules/custom_status/setCustomStatus.tsx");
 
 export default function setCustomStatus(arg0) {
@@ -33,29 +22,28 @@ export default function setCustomStatus(arg0) {
   const trimmed = text.trim();
   if (trimmed.length <= 0) {
     if (null == emojiInfo) {
-      const CustomStatusSetting = require(3838) /* explicitContentFromProto */.CustomStatusSetting;
+      const CustomStatusSetting = require(3862) /* explicitContentFromProto */.CustomStatusSetting;
       return CustomStatusSetting.updateSetting(undefined);
     }
   }
-  const CustomStatusSetting2 = require(3838) /* explicitContentFromProto */.CustomStatusSetting;
-  let obj = {};
+  const CustomStatusSetting2 = require(3862) /* explicitContentFromProto */.CustomStatusSetting;
   let str = "";
   if (trimmed.length > 0) {
     str = trimmed;
   }
-  obj.text = str;
+  let obj = { text: str, expiresAtMs: null, emojiId: null, emojiName: null, createdAtMs: null };
   let str2 = "0";
   if (null != clearAfter) {
     str2 = "0";
     if (clearAfter !== ClearAfterValues.DONT_CLEAR) {
       const _String = String;
-      const obj2 = importDefault(3747)();
-      const addResult = importDefault(3747)().add(importDefault(11952)(clearAfter), "ms");
-      str2 = String(importDefault(3747)().add(importDefault(11952)(clearAfter), "ms").toDate().getTime());
-      const toDateResult = importDefault(3747)().add(importDefault(11952)(clearAfter), "ms").toDate();
+      const obj2 = importDefault(3771)();
+      const addResult = importDefault(3771)().add(importDefault(11976)(clearAfter), "ms");
+      str2 = String(importDefault(3771)().add(importDefault(11976)(clearAfter), "ms").toDate().getTime());
+      const toDateResult = importDefault(3771)().add(importDefault(11976)(clearAfter), "ms").toDate();
     }
   }
-  obj.expiresAtMs = str2;
+  obj[1] = str2;
   let str4 = "0";
   if (null != emojiInfo) {
     str4 = "0";
@@ -63,39 +51,46 @@ export default function setCustomStatus(arg0) {
       str4 = emojiInfo.id;
     }
   }
-  obj.emojiId = str4;
+  obj[2] = str4;
   let str5 = "";
   if (null != emojiInfo) {
     str5 = emojiInfo.name;
   }
-  obj.emojiName = str5;
-  if (null == createdAtMs) {
-    const obj5 = importDefault(3747)();
-    createdAtMs = importDefault(3747)().toDate().getTime();
-    const toDateResult1 = importDefault(3747)().toDate();
+  obj[3] = str5;
+  if (createdAtMs == null) {
+    const obj5 = importDefault(3771)();
+    createdAtMs = importDefault(3771)().toDate().getTime();
+    const toDateResult1 = importDefault(3771)().toDate();
   }
-  obj.createdAtMs = String(createdAtMs);
+  obj[4] = String(createdAtMs);
   const updateSettingResult = CustomStatusSetting2.updateSetting(obj);
-  obj = {};
   let _location = null;
   if (null != analyticsContext) {
     _location = analyticsContext.location;
   }
-  obj.location = _location;
-  obj.emoji_type = determineEmojiType(emojiInfo);
-  obj.text_len = trimmed.length;
+  obj = { location: _location, emoji_type: null, text_len: null, clear_after: null, prompt_type: null, location_stack: null };
+  let tmp11 = null;
+  if (null != emojiInfo) {
+    let str6 = "unicode";
+    if (null != emojiInfo.id) {
+      str6 = "custom";
+    }
+    tmp11 = str6;
+  }
+  obj[1] = tmp11;
+  obj[2] = trimmed.length;
   let combined = null;
   if (null != clearAfter) {
     const _HermesInternal = HermesInternal;
     combined = "" + clearAfter;
   }
-  obj.clear_after = combined;
+  obj[3] = combined;
   let value;
-  if (null != _prompt) {
+  if (_prompt != null) {
     value = _prompt.value;
   }
-  obj.prompt_type = value;
-  obj.location_stack = analyticsLocations;
-  importDefault(675).track(AnalyticEvents.CUSTOM_STATUS_UPDATED, obj);
+  obj[4] = value;
+  obj[5] = analyticsLocations;
+  importDefault(698).track(AnalyticEvents.CUSTOM_STATUS_UPDATED, obj);
   return updateSettingResult;
 };

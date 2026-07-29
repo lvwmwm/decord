@@ -1,21 +1,21 @@
-// Module ID: 14100
-// Function ID: 107800
+// Module ID: 14122
+// Function ID: 14123
 // Name: QUEST_DOCK_COLLAPSED_HEIGHT
-// Dependencies: [689, 2]
+// Dependencies: [712, 2]
 
-// Module 14100 (QUEST_DOCK_COLLAPSED_HEIGHT)
+// Module 14122 (QUEST_DOCK_COLLAPSED_HEIGHT)
 let obj = { mass: 0.5, damping: 80, stiffness: 320 };
 obj = {};
 const merged = Object.assign(obj);
-obj["overshootClamping"] = true;
+obj.overshootClamping = true;
 const result = require("set").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockConstants.tsx");
 
 export const QUEST_DOCK_COLLAPSED_HEIGHT = 56;
 export const QUEST_DOCK_CLOSED_HEIGHT = 22;
 export const QUEST_DOCK_EXPANDED_HEIGHT = 400;
-export const QUEST_DOCK_EXPANDED_PADDING_BOTTOM = require("_createForOfIteratorHelperLoose").space.PX_16;
-export const QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL = require("_createForOfIteratorHelperLoose").space.PX_12;
-export const QUEST_DOCK_EXPANDED_ENROLLED_PADDING_TOP = require("_createForOfIteratorHelperLoose").space.PX_8;
+export const QUEST_DOCK_EXPANDED_PADDING_BOTTOM = require("Themes").space.PX_16;
+export const QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL = require("Themes").space.PX_12;
+export const QUEST_DOCK_EXPANDED_ENROLLED_PADDING_TOP = require("Themes").space.PX_8;
 export const QUEST_DOCK_COLLAPSED_MAX_WIDTH = 600;
 export const QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED = 8;
 export const QUEST_DOCK_VERTICAL_EDGE_GUTTER_COLLAPSED = 8;
@@ -40,4 +40,4 @@ export const QUEST_DOCK_EXTERNAL_OFFSET_CLOSED = 22;
 export const QUEST_DOCK_EXPANDED_CONTENT_PADDING_VERTICAL = 16;
 export const QUEST_DOCK_MODE_CHANGE_PHYSICS = obj;
 export const QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED = obj;
-export const QUEST_DOCK_CONTENT_BORDER_RADII = require("_createForOfIteratorHelperLoose").radii.lg;
+export const QUEST_DOCK_CONTENT_BORDER_RADII = require("Themes").radii.lg;

@@ -1,10 +1,10 @@
-// Module ID: 13536
-// Function ID: 103939
+// Module ID: 13559
+// Function ID: 13560
 // Name: validateScope
-// Dependencies: [4068, 2]
+// Dependencies: [4092, 2]
 // Exports: default
 
-// Module 13536 (validateScope)
+// Module 13559 (validateScope)
 import { RPC_SCOPE_CONFIG } from "RPC_SCOPE_CONFIG";
 
 const result = require("set").fileFinishedImporting("modules/rpc/helpers/validateScope.tsx");
@@ -13,18 +13,26 @@ export default function validateScope(arr) {
   const RPC_SCOPE_CONFIG = arr;
   if (null == arg1) {
     return true;
-  } else if ("string" === typeof arg1) {
+  } else if (typeof arg1 === "y") {
     return arr.includes(arg1);
-  } else if ("object" !== tmp4) {
+  } else if (typeof arg1 === "window") {
     return false;
   } else {
     const _Array2 = Array;
-    const tmp = !Array.isArray(arg1[RPC_SCOPE_CONFIG.ANY]) || !arg1[RPC_SCOPE_CONFIG.ANY].some((arg0) => arr.includes(arg0));
+    const isArray = Array.isArray(obj);
+    let tmp = !isArray;
+    if (isArray) {
+      tmp = !obj.some((arg0) => arr.includes(arg0));
+    }
     let tmp2 = !tmp;
     if (tmp) {
       const _Array = Array;
-      tmp2 = !(!Array.isArray(obj2) || !obj2.every((arg0) => arr.includes(arg0)));
-      const tmp3 = !Array.isArray(obj2) || !obj2.every((arg0) => arr.includes(arg0));
+      const isArray1 = Array.isArray(obj2);
+      let tmp4 = !isArray1;
+      if (isArray1) {
+        tmp4 = !obj2.every((arg0) => arr.includes(arg0));
+      }
+      tmp2 = !tmp4;
     }
     return tmp2;
   }

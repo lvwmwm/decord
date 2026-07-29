@@ -1,184 +1,91 @@
-// Module ID: 15025
-// Function ID: 114368
-// Name: _createForOfIteratorHelperLoose
-// Dependencies: [57, 31, 1347, 4843, 12737, 5761, 1353, 5926, 4184, 1194, 6037, 1348, 1908, 1838, 3793, 4252, 3802, 4360, 1850, 4181, 14289, 653, 8792, 566, 15026, 15027, 6053, 6040, 686, 10665, 20, 22, 4380, 15028, 15029, 15030, 6007, 15031, 8327, 1327, 5156, 2]
+// Module ID: 15055
+// Function ID: 15056
+// Name: importDefaultResult1
+// Dependencies: [32, 19, 1371, 4865, 12759, 5779, 1377, 5945, 4208, 1218, 6055, 1372, 1932, 1862, 3817, 4276, 3826, 4385, 1874, 4205, 14311, 676, 8816, 589, 15056, 15057, 6071, 6058, 709, 10689, 10, 12, 4403, 15058, 15059, 15060, 6025, 15061, 8351, 1351, 5178, 2]
 // Exports: default
 
-// Module 15025 (_createForOfIteratorHelperLoose)
-import _slicedToArray from "_slicedToArray";
-import apply from "apply";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import closure_6 from "_isNativeReflectConstruct";
-import closure_7 from "_isNativeReflectConstruct";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_11 from "_isNativeReflectConstruct";
-import closure_12 from "_isNativeReflectConstruct";
-import closure_13 from "_isNativeReflectConstruct";
-import closure_14 from "_isNativeReflectConstruct";
-import closure_15 from "_isNativeReflectConstruct";
-import importDefaultResult from "_isNativeReflectConstruct";
-import { MemberListRowTypes } from "_isNativeReflectConstruct";
-import importDefaultResult1 from "_isNativeReflectConstruct";
-import closure_19 from "_isNativeReflectConstruct";
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_20 } from "_isNativeReflectConstruct";
-import closure_21 from "_createForOfIteratorHelperLoose";
-import closure_22 from "_isNativeReflectConstruct";
-import closure_23 from "_isNativeReflectConstruct";
-import closure_24 from "_isNativeReflectConstruct";
-import closure_25 from "_isNativeReflectConstruct";
-import importDefaultResult2 from "_isNativeReflectConstruct";
-import importDefaultResult3 from "_isNativeReflectConstruct";
+// Module 15055 (importDefaultResult1)
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel";
+import updateVoiceState from "updateVoiceState";
+import participantFromServer from "participantFromServer";
+import _handleConnectionOpen from "_handleConnectionOpen";
+import truncateOldMessageData from "truncateOldMessageData";
+import scheduledEventSort from "scheduledEventSort";
+import closure_11 from "scheduledEventSort";
+import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
+import recomputeAffinities from "recomputeAffinities";
+import reset from "reset";
+import fetchFingerprint from "fetchFingerprint";
+import importDefaultResult from "getMemberListId";
+import { MemberListRowTypes } from "getMemberListId";
+import importDefaultResult1 from "ensureGuildLoaded";
+import comparator from "comparator";
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_20 } from "comparator";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
+import getUncachedChannelPermissions from "getUncachedChannelPermissions";
+import sortActivity from "sortActivity";
+import upsertRelationship from "upsertRelationship";
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
+import importDefaultResult2 from "mergeGuildAvatar";
+import importDefaultResult3 from "updateVoiceState";
 import { HappeningNowItem } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
 import ME from "ME";
 
-let closure_10;
+let c10;
+let c9;
 let closure_29;
 let closure_30;
 let closure_31;
 let closure_32;
-let closure_8;
-let closure_9;
+let metroImportAll;
 const require = arg1;
-function _createForOfIteratorHelperLoose(iterable) {
-  let closure_0 = iterable;
-  iterable = "undefined" !== typeof Symbol;
-  if (iterable) {
-    const _Symbol = Symbol;
-    iterable = iterable[Symbol.iterator];
-  }
-  if (!iterable) {
-    iterable = iterable[Symbol.iterator];
-  }
-  if (iterable) {
-    const iter = iterable.call(iterable);
-    const next = iter.next;
-    return next.bind(iter);
-  } else {
-    const _Array = Array;
-    let tmp = iterable;
-    if (!Array.isArray(iterable)) {
-      let tmp2;
-      if (iterable) {
-        if ("string" === typeof iterable) {
-          tmp2 = _arrayLikeToArray(iterable, undefined);
-        } else {
-          const toString = {}.toString;
-          const substr = toString.call(iterable).slice(8, -1);
-          let name = substr;
-          if (tmp3) {
-            name = iterable.constructor.name;
-          }
-          if ("Map" !== name) {
-            if ("Set" !== name) {
-              if ("Arguments" === name) {
-                let arr = _arrayLikeToArray(iterable, undefined);
-              } else {
-                let obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
-              }
-            }
-            tmp2 = arr;
-          }
-          const _Array2 = Array;
-          arr = Array.from(iterable);
-          const callResult = toString.call(iterable);
-          tmp3 = "Object" === substr && iterable.constructor;
-        }
-      }
-      tmp = tmp2;
-      if (!tmp2) {
-        const _TypeError = TypeError;
-        const typeError = new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        throw typeError;
-      }
-    }
-    if (tmp) {
-      closure_0 = tmp;
-    }
-    let c1 = 0;
-    return () => {
-      if (closure_1 >= length.length) {
-        let obj = { done: true };
-      } else {
-        obj = { done: false };
-        closure_1 = tmp3 + 1;
-        obj.value = length[+closure_1];
-      }
-      return obj;
-    };
-  }
-}
-function _arrayLikeToArray(arg0, arg1) {
-  let length;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-}
-function countActiveChannels(arr) {
-  return arr.filter((kind) => {
-    kind = kind.kind;
-    let tmp = "active-channel" === kind;
-    if (!tmp) {
-      tmp = "voice" === kind;
-    }
-    if (!tmp) {
-      tmp = "live-guild-stage" === kind;
-    }
-    if (!tmp) {
-      tmp = "unified-vc" === kind;
-    }
-    if (!tmp) {
-      tmp = "embedded-activity" === kind;
-    }
-    return tmp;
-  }).length;
-}
-({ eventScheduledToStartWithin: closure_8, isEventUpcoming: closure_9, isGuildScheduledEventActive: closure_10 } = _isNativeReflectConstruct);
+({ eventScheduledToStartWithin: metroImportAll, isEventUpcoming: c9, isGuildScheduledEventActive: c10 } = scheduledEventSort);
 ({ ActivityFlags: closure_29, GuildFeatures: closure_30, Permissions: closure_31, StatusTypes: closure_32 } = ME);
 let items = [importDefaultResult1, importDefaultResult, importDefaultResult3, importDefaultResult2];
-let result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/useHappeningNowData.tsx");
+let result = require("participantFromServer").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/useHappeningNowData.tsx");
 
 export default function useHappeningNowData(has, guildId) {
-  const _require = has;
+  guildId = has;
   guildId = guildId.guildId;
+  let id = guildId;
   const withoutUserCards = guildId.withoutUserCards;
+  let isFocused = withoutUserCards;
   const showMultipleActivitiesPerChannel = guildId.showMultipleActivitiesPerChannel;
-  let callback = tmp;
-  const isFocused = guildId.isFocused;
-  const hasItem = has.has(callback4.LIVE_GUILD_STAGE);
+  let callback4 = tmp;
+  isFocused = guildId.isFocused;
+  let React = isFocused;
+  let hasItem = has.has(callback4.LIVE_GUILD_STAGE);
+  let participantFromServer = hasItem;
   const hasItem1 = has.has(callback4.EMBEDDED_ACTIVITY);
+  let callback5 = hasItem1;
   const hasItem2 = has.has(callback4.STREAMS);
   const hasItem3 = has.has(callback4.USER_CUSTOM_STATUS);
   const hasItem4 = has.has(callback4.ACTIVITIES);
   const hasItem5 = has.has(callback4.USER);
-  let effect = isFocused.useEffect(() => {
-    const userAffinitiesV2 = has(withoutUserCards[22]).fetchUserAffinitiesV2();
+  const effect = React.useEffect(() => {
+    const userAffinitiesV2 = guildId(isFocused[22]).fetchUserAffinitiesV2();
   }, []);
-  let items = [hasItem1];
-  const stateFromStores = _require(withoutUserCards[23]).useStateFromStores(items, () => hasItem1.isConnected());
-  let obj = _require(withoutUserCards[23]);
+  let items = [callback5];
+  const stateFromStores = guildId(isFocused[23]).useStateFromStores(items, () => callback5.isConnected());
+  let obj2 = guildId(isFocused[23]);
   let items1 = [stateFromStores3];
-  const stateFromStores1 = _require(withoutUserCards[23]).useStateFromStores(items1, () => null != stateFromStores3.getSessionId());
+  const stateFromStores1 = guildId(isFocused[23]).useStateFromStores(items1, () => null != stateFromStores3.getSessionId());
   let items2 = [has, stateFromStores1, guildId, isFocused, stateFromStores];
-  callback = isFocused.useCallback(() => {
-    if (null != guildId) {
-      if (has.has(callback4.ACTIVE_CHANNEL)) {
+  const callback = React.useCallback(() => {
+    if (null != id) {
+      if (guildId.has(callback4.ACTIVE_CHANNEL)) {
         if (stateFromStores1) {
           if (stateFromStores) {
-            if (isFocused) {
-              const activeChannelsFetchStatus = hasItem2.getActiveChannelsFetchStatus(guildId);
+            if (updateVoiceState) {
+              const activeChannelsFetchStatus = hasItem2.getActiveChannelsFetchStatus(tmp);
               let tmp7 = null == activeChannelsFetchStatus || null == activeChannelsFetchStatus.fetchedAt;
               if (!tmp7) {
                 const _Date = Date;
                 tmp7 = Date.now() - activeChannelsFetchStatus.fetchedAt > 300000;
               }
               if (tmp7) {
-                const activeChannels = has(withoutUserCards[24]).fetchActiveChannels(guildId);
-                const obj = has(withoutUserCards[24]);
+                const activeChannels = guildId(isFocused[24]).fetchActiveChannels(tmp);
+                const obj = guildId(isFocused[24]);
               }
             }
           }
@@ -186,1246 +93,515 @@ export default function useHappeningNowData(has, guildId) {
       }
     }
   }, items2);
-  let items3 = [callback];
-  const effect1 = isFocused.useEffect(() => {
+  const items3 = [callback];
+  const effect1 = React.useEffect(() => {
     callback();
   }, items3);
-  let obj2 = _require(withoutUserCards[23]);
-  let items4 = [stateFromStores7];
-  const stateFromStores2 = _require(withoutUserCards[23]).useStateFromStores(items4, () => {
+  let obj3 = guildId(isFocused[23]);
+  const items4 = [stateFromStores7];
+  const stateFromStores2 = guildId(isFocused[23]).useStateFromStores(items4, () => {
     let guild = null;
-    if (null != guildId) {
-      guild = stateFromStores7.getGuild(guildId);
+    if (null != id) {
+      guild = stateFromStores7.getGuild(tmp);
     }
     return guild;
   });
-  let obj3 = _require(withoutUserCards[23]);
-  let items5 = [callback2];
-  stateFromStores3 = _require(withoutUserCards[23]).useStateFromStores(items5, () => {
+  let obj4 = guildId(isFocused[23]);
+  const items5 = [callback2];
+  stateFromStores3 = guildId(isFocused[23]).useStateFromStores(items5, () => {
     let defaultChannel = null;
-    if (null != guildId) {
-      defaultChannel = callback2.getDefaultChannel(guildId);
+    if (null != id) {
+      defaultChannel = callback2.getDefaultChannel(tmp);
     }
     return defaultChannel;
   });
-  let obj4 = _require(withoutUserCards[23]);
-  const firstGloballyViewbleGuildChannelId = _require(withoutUserCards[25]).useFirstGloballyViewbleGuildChannelId(guildId);
-  let obj5 = _require(withoutUserCards[25]);
+  let obj5 = guildId(isFocused[23]);
+  const firstGloballyViewbleGuildChannelId = guildId(isFocused[25]).useFirstGloballyViewbleGuildChannelId(guildId);
+  let obj6 = guildId(isFocused[25]);
   const items6 = [callback2];
-  const stateFromStores4 = _require(withoutUserCards[23]).useStateFromStores(items6, () => {
+  const stateFromStores4 = guildId(isFocused[23]).useStateFromStores(items6, () => {
     let channels = null;
-    if (null != guildId) {
-      channels = callback2.getChannels(guildId);
+    if (null != id) {
+      channels = callback2.getChannels(tmp);
     }
     return channels;
   });
   const items7 = [stateFromStores1, stateFromStores3, firstGloballyViewbleGuildChannelId, guildId, isFocused, stateFromStores];
-  const callback1 = isFocused.useCallback(() => {
+  const callback1 = React.useCallback(() => {
     let tmp = stateFromStores1;
     if (stateFromStores1) {
       tmp = stateFromStores;
     }
     if (tmp) {
-      tmp = isFocused;
+      tmp = updateVoiceState;
     }
     if (tmp) {
-      tmp = null != guildId;
+      tmp = null != id;
     }
     if (tmp) {
       tmp = null != stateFromStores3;
     }
     if (tmp) {
-      has(withoutUserCards[26]).subscribeGuild(guildId);
-      const obj = has(withoutUserCards[26]);
-      has(withoutUserCards[26]).subscribeChannel(guildId, stateFromStores3.id, has(withoutUserCards[27]).DEFAULT_RANGES);
-      let tmp14 = null != firstGloballyViewbleGuildChannelId;
+      guildId(isFocused[26]).subscribeGuild(id);
+      const obj = guildId(isFocused[26]);
+      const tmp8 = id;
+      guildId(isFocused[26]).subscribeChannel(id, stateFromStores3.id, guildId(isFocused[27]).DEFAULT_RANGES);
       if (tmp14) {
-        tmp14 = firstGloballyViewbleGuildChannelId !== stateFromStores3.id;
+        tmp6(tmp7[26]).subscribeChannel(tmp8, tmp12, tmp6(tmp7[27]).DEFAULT_RANGES);
+        const tmp6Result = tmp6(tmp7[26]);
       }
-      if (tmp14) {
-        has(withoutUserCards[26]).subscribeChannel(guildId, firstGloballyViewbleGuildChannelId, has(withoutUserCards[27]).DEFAULT_RANGES);
-        const obj3 = has(withoutUserCards[26]);
-      }
-      const obj2 = has(withoutUserCards[26]);
+      const obj2 = guildId(isFocused[26]);
+      const tmp10 = stateFromStores3;
+      tmp14 = null != firstGloballyViewbleGuildChannelId && firstGloballyViewbleGuildChannelId !== stateFromStores3.id;
     }
   }, items7);
   const items8 = [callback1];
-  const effect2 = isFocused.useEffect(() => {
+  const effect2 = React.useEffect(() => {
     callback1();
   }, items8);
   const items9 = [callback, callback1];
-  callback2 = isFocused.useCallback(() => {
+  callback2 = React.useCallback(() => {
     callback();
     callback1();
   }, items9);
   const items10 = [callback2];
-  const effect3 = isFocused.useEffect(() => {
-    const subscription = guildId(withoutUserCards[28]).subscribe("CONNECTION_OPEN", callback2);
+  const effect3 = React.useEffect(() => {
+    const subscription = id(isFocused[28]).subscribe("CONNECTION_OPEN", callback2);
     return () => {
-      guildId(withoutUserCards[28]).unsubscribe("CONNECTION_OPEN", outer1_19);
+      outer1_1(outer1_2[28]).unsubscribe("CONNECTION_OPEN", comparator);
     };
   }, items10);
-  let obj6 = _require(withoutUserCards[23]);
-  let tmp21 = isFocused;
+  let obj7 = guildId(isFocused[23]);
+  let tmp23 = isFocused;
   if (isFocused) {
-    tmp21 = !obj7.useIsVoicePanelFullscreen();
+    tmp23 = !obj8.useIsVoicePanelFullscreen();
   }
-  let closure_20 = tmp21;
-  obj7 = _require(withoutUserCards[29]);
+  let closure_20 = tmp23;
+  let tmp9Result = tmp9(tmp10[23]);
   const items11 = [firstGloballyViewbleGuildChannelId];
-  const stateFromStores5 = _require(withoutUserCards[23]).useStateFromStores(items11, () => {
-    if (null != guildId) {
+  const stateFromStores5 = tmp9Result.useStateFromStores(items11, () => {
+    if (null != id) {
       if (null != stateFromStores3) {
-        const props = firstGloballyViewbleGuildChannelId.getProps(guildId, stateFromStores3.id);
-        let tmp6 = null == props || null == props.groups;
-        if (!tmp6) {
-          tmp6 = props.groups.length <= 0;
+        const props = firstGloballyViewbleGuildChannelId.getProps(tmp, tmp2.id);
+        let tmp5 = null == props || null == props.groups;
+        if (!tmp5) {
+          tmp5 = props.groups.length <= 0;
         }
-        let tmp7 = !tmp6;
-        if (!tmp6) {
-          tmp7 = props.groups[0].id === outer1_32.UNKNOWN;
+        let tmp6 = !tmp5;
+        if (!tmp5) {
+          tmp6 = props.groups[0].id === outer1_32.UNKNOWN;
         }
-        return tmp7;
+        return tmp6;
       }
     }
     return false;
   });
-  let obj8 = _require(withoutUserCards[23]);
+  tmp9Result = tmp9(tmp10[23]);
   const items12 = [hasItem2];
   const items13 = [guildId, has];
-  const stateFromStores6 = _require(withoutUserCards[23]).useStateFromStores(items12, () => {
-    let tmp = null != guildId;
-    if (tmp) {
-      const tmp4 = !has.has(callback4.ACTIVE_CHANNEL);
-      let tmp5 = !tmp4;
-      if (!tmp4) {
-        tmp5 = null == hasItem2.getActiveChannelIds(guildId);
+  const stateFromStores6 = tmp9Result.useStateFromStores(items12, () => {
+    let tmp2 = null != id;
+    if (tmp2) {
+      let hasItem = guildId.has(callback4.ACTIVE_CHANNEL);
+      if (hasItem) {
+        hasItem = null == hasItem2.getActiveChannelIds(tmp);
       }
-      tmp = tmp5;
+      tmp2 = hasItem;
     }
-    return tmp;
+    return tmp2;
   }, items13);
-  let obj9 = _require(withoutUserCards[23]);
+  obj8 = guildId(isFocused[29]);
   const items14 = [callback];
-  stateFromStores7 = _require(withoutUserCards[23]).useStateFromStores(items14, () => callback.getUserAffinities());
-  let obj10 = _require(withoutUserCards[23]);
-  const items15 = [closure_24];
-  const stateFromStoresArray = _require(withoutUserCards[23]).useStateFromStoresArray(items15, () => tmp30.getFriendIDs());
-  let obj11 = _require(withoutUserCards[23]);
+  stateFromStores7 = guildId(isFocused[23]).useStateFromStores(items14, () => callback.getUserAffinities());
+  const tmp9Result1 = guildId(isFocused[23]);
+  const items15 = [upsertRelationship];
+  const stateFromStoresArray = guildId(isFocused[23]).useStateFromStoresArray(items15, () => tmp32.getFriendIDs());
+  const tmp9Result2 = guildId(isFocused[23]);
   const items16 = [stateFromStoresArray];
   const items17 = [guildId];
-  const stateFromStoresObject = _require(withoutUserCards[23]).useStateFromStoresObject(items16, () => {
-    const obj = { permissionChannelsVersion: stateFromStoresArray.getChannelsVersion() };
+  const stateFromStoresObject = guildId(isFocused[23]).useStateFromStoresObject(items16, () => {
+    const obj = { permissionChannelsVersion: stateFromStoresArray.getChannelsVersion(), permissionGuildVersion: null };
     let guildVersion = null;
-    if (null != guildId) {
-      guildVersion = stateFromStoresArray.getGuildVersion(guildId);
+    if (null != id) {
+      guildVersion = stateFromStoresArray.getGuildVersion(tmp);
     }
-    obj.permissionGuildVersion = guildVersion;
+    obj[1] = guildVersion;
     return obj;
   }, items17);
-  const obj12 = _require(withoutUserCards[23]);
+  const tmp9Result3 = guildId(isFocused[23]);
   const items18 = [hasItem2];
   const items19 = [guildId];
-  const stateFromStores8 = _require(withoutUserCards[23]).useStateFromStores(items18, () => {
+  const stateFromStores8 = guildId(isFocused[23]).useStateFromStores(items18, () => {
     let activeChannelIds = null;
-    if (null != guildId) {
-      activeChannelIds = hasItem2.getActiveChannelIds(guildId);
+    if (null != id) {
+      activeChannelIds = hasItem2.getActiveChannelIds(tmp);
     }
     return activeChannelIds;
   }, items19);
-  const obj13 = _require(withoutUserCards[23]);
+  const tmp9Result4 = guildId(isFocused[23]);
   const items20 = [stateFromStores];
   const items21 = [guildId];
-  const stateFromStoresArray1 = _require(withoutUserCards[23]).useStateFromStoresArray(items20, () => stateFromStores.getGuildScheduledEventsForGuild(guildId), items21);
-  const obj14 = _require(withoutUserCards[23]);
-  const items22 = [hasItem];
+  const stateFromStoresArray1 = guildId(isFocused[23]).useStateFromStoresArray(items20, () => stateFromStores.getGuildScheduledEventsForGuild(id), items21);
+  const tmp9Result5 = guildId(isFocused[23]);
+  const items22 = [participantFromServer];
   const items23 = [guildId];
-  let tmp30 = !stateFromStores1;
-  const stateFromStoresArray2 = _require(withoutUserCards[23]).useStateFromStoresArray(items22, () => {
-    if (null == guildId) {
+  let tmp32 = !stateFromStores1;
+  const stateFromStoresArray2 = guildId(isFocused[23]).useStateFromStoresArray(items22, () => {
+    if (null == id) {
       let items = [];
     } else {
-      items = hasItem.getEmbeddedActivitiesForGuild(guildId);
+      items = embeddedActivitiesForGuild.getEmbeddedActivitiesForGuild(tmp);
     }
     return items;
   }, items23);
-  if (!tmp30) {
-    tmp30 = stateFromStores5;
+  if (stateFromStores1) {
+    tmp32 = stateFromStores5;
   }
-  if (!tmp30) {
-    tmp30 = stateFromStores6;
+  if (!tmp32) {
+    tmp32 = stateFromStores6;
   }
-  closure_24 = tmp30;
-  const ref = isFocused.useRef({ guildId, hasComputed: false });
+  upsertRelationship = tmp32;
+  const ref = obj.useRef({ guildId, hasComputed: false });
   const items24 = [guildId, stateFromStores7, stateFromStores3, hasItem, stateFromStoresArray, stateFromStoresArray1, hasItem5, hasItem2, hasItem1, undefined !== showMultipleActivitiesPerChannel && showMultipleActivitiesPerChannel, hasItem3, hasItem4, has, withoutUserCards, stateFromStores2, stateFromStores4, stateFromStores8, stateFromStoresObject, stateFromStoresArray2];
-  const callback3 = isFocused.useCallback(() => guildId(withoutUserCards[30]).time("\u{1F3A8}", "computeHappeningNowState", () => {
-    let done;
-    let iter4;
-    let iter9;
-    function addUser(userId, primaryActivity, displayName, canViewChannel, arg4) {
-      if (!closure_24.isBlockedOrIgnored(userId)) {
-        let channelId;
-        if (null != displayName) {
-          channelId = displayName.channelId;
+  const callback3 = obj.useCallback(() => id(isFocused[30]).time("\u{1F3A8}", "computeHappeningNowState", () => {
+    function addUser(id, type, channelId) {
+      let closure_0 = id;
+      let obj = outer2_24;
+      if (!outer2_24.isBlockedOrIgnored(id)) {
+        let obj1 = outer2_18;
+        channelId = undefined;
+        if (channelId != null) {
+          channelId = channelId.channelId;
         }
-        const channel = callback1.getChannel(channelId);
-        let obj1 = set(withoutUserCards[32]);
-        if (!obj1.isChannelContentGated(channel)) {
+        const channel = outer2_18.getChannel(channelId);
+        let obj3 = outer2_0(outer2_2[32]);
+        if (!obj3.isChannelContentGated(channel)) {
           if (null != channel) {
             if (channel.isGroupDM()) {
-              if (null != displayName) {
-                if (null != outer2_1) {
-                  let guildId = outer2_1;
-                } else if (null != channel) {
-                  guildId = channel.getGuildId();
+              if (null != channelId) {
+                let tmp34 = set1;
+                if (set1 == null) {
+                  let guildId;
+                  if (channel != null) {
+                    guildId = channel.getGuildId();
+                  }
+                  tmp34 = guildId;
                 }
-                const streamForUser = stateFromStores2.getStreamForUser(userId, guildId);
+                const streamForUser = outer2_14.getStreamForUser(id, tmp34);
                 if (null != streamForUser) {
-                  if (outer2_7) {
-                    let obj = { userId, guildId: outer2_1, kind: "activity" };
-                    let tmp69;
-                    if (null != primaryActivity) {
-                      tmp69 = primaryActivity;
-                    }
-                    obj.activity = tmp69;
-                    if (null == outer2_1) {
-                      const tmp73 = streamForUser;
+                  if (outer1_7) {
+                    obj = { userId: null, guildId: null, kind: "activity", activity: null, stream: null };
+                    obj[0] = id;
+                    obj[1] = tmp33;
+                    obj[3] = tmp5;
+                    if (null == tmp33) {
+                      const tmp54 = streamForUser;
                     } else {
                       let guildId1;
-                      if (null != streamForUser) {
+                      if (streamForUser != null) {
                         guildId1 = streamForUser.guildId;
                       }
                     }
-                    obj.stream = tmp73;
-                    obj2[userId] = obj;
-                    const tmp67 = obj2;
+                    obj[4] = tmp54;
+                    participantFromServer[id] = obj;
+                    const tmp52 = participantFromServer;
                   }
                 }
                 if (null != channel) {
                   if (!set1.has(channel.id)) {
                     if (channel.isGuildStageVoice()) {
-                      if (closure_24.isFriend(userId)) {
-                        const stageInstanceByChannel = stateFromStores1.getStageInstanceByChannel(channel.id);
+                      if (obj.isFriend(id)) {
+                        const stageInstanceByChannel = outer2_12.getStageInstanceByChannel(channel.id);
                         if (null != stageInstanceByChannel) {
-                          if (stateFromStoresArray.can(outer3_31.CONNECT, channel)) {
-                            obj = { kind: "live-guild-stage", stage: stageInstanceByChannel };
-                            obj[channel.id] = obj;
+                          if (outer2_22.can(outer2_31.CONNECT, channel)) {
+                            obj = { kind: "live-guild-stage", stage: null };
+                            obj[1] = stageInstanceByChannel;
+                            closure_2[channel.id] = obj;
                           }
                         }
                       }
                     } else {
-                      if (outer2_6) {
-                        const embeddedActivitiesForChannel = hasItem.getEmbeddedActivitiesForChannel(channel.id);
-                        if (outer2_3) {
+                      if (outer1_6) {
+                        const embeddedActivitiesForChannel = outer2_5.getEmbeddedActivitiesForChannel(channel.id);
+                        if (outer1_3) {
                           const found = embeddedActivitiesForChannel.filter((userIds) => {
                             const items = [...userIds.userIds];
                             return items.some(() => { ... });
                           });
-                          obj1[channel.id] = found.map((activity) => ({ kind: "embedded-activity", userId: closure_0, voiceState: closure_1, guildId: outer3_1, activity }));
+                          updateVoiceState[channel.id] = found.map((activity) => ({ kind: "embedded-activity", userId: closure_0, voiceState: closure_1, guildId: closure_1, activity }));
                         } else {
-                          const result = set(withoutUserCards[33]).findActivityWithMostNonBlockedOrIgnoredParticipants(embeddedActivitiesForChannel);
+                          let tmp3Result = tmp3(tmp4[33]);
+                          const result = tmp3Result.findActivityWithMostNonBlockedOrIgnoredParticipants(embeddedActivitiesForChannel);
                           if (null !== result) {
-                            obj1 = { kind: "embedded-activity", userId, voiceState: displayName, guildId: outer2_1, activity: result };
+                            obj1 = { kind: "embedded-activity", userId: null, voiceState: null, guildId: null, activity: null };
+                            obj1[1] = id;
+                            obj1[2] = channelId;
+                            obj1[3] = tmp33;
+                            obj1[4] = result;
                             let items = [obj1];
-                            obj1[channel.id] = items;
+                            updateVoiceState[channel.id] = items;
                           }
-                          const obj11 = set(withoutUserCards[33]);
                         }
                       }
-                      obj2 = { kind: "voice", userId, voiceState: displayName };
-                      if (null != outer2_1) {
-                        let guildId2 = outer2_1;
-                      } else if (null != channel) {
-                        guildId2 = channel.getGuildId();
+                      const obj2 = { kind: "voice", userId: null, voiceState: null, guildId: null };
+                      obj2[1] = id;
+                      obj2[2] = channelId;
+                      let tmp45 = tmp33;
+                      if (tmp33 == null) {
+                        let guildId2;
+                        if (channel != null) {
+                          guildId2 = channel.getGuildId();
+                        }
+                        tmp45 = guildId2;
                       }
-                      let tmp60;
-                      if (null != guildId2) {
-                        tmp60 = guildId2;
-                      }
-                      obj2.guildId = tmp60;
-                      obj[channel.id] = obj2;
-                      const tmp57 = obj;
+                      obj2[3] = tmp45;
+                      shouldShowAgeGateForVoiceChannel[channel.id] = obj2;
+                      const tmp44 = shouldShowAgeGateForVoiceChannel;
                     }
                   }
                 }
               }
+            } else {
+              let obj4 = outer2_22;
+              const tmp6 = outer2_31;
             }
           }
-          if (null != primaryActivity) {
-            let obj4 = set(withoutUserCards[34]);
-            if (obj4.isActivityPermanentCustomStatus(primaryActivity)) {
-              if (outer2_8) {
-                const obj3 = { kind: "activity", userId, guildId: outer2_1, activity: primaryActivity };
-                items2.push(obj3);
+          if (null != type) {
+            tmp3Result = tmp3(tmp4[34]);
+            if (tmp3Result.isActivityPermanentCustomStatus(tmp5)) {
+              if (outer1_8) {
+                obj3 = { kind: "activity", userId: null, guildId: null, activity: null };
+                obj3[1] = id;
+                obj3[2] = set1;
+                obj3[3] = tmp5;
+                arr = arr.push(obj3);
               }
             } else {
-              let obj5 = set(withoutUserCards[35]);
-              if (obj5.isActivityTemporaryCustomStatus(primaryActivity)) {
-                if (outer2_8) {
-                  obj4 = { userId, guildId: outer2_1, kind: "activity", activity: primaryActivity };
-                  obj4[userId] = obj4;
+              if (tmp3Result1.isActivityTemporaryCustomStatus(tmp5)) {
+                if (outer1_8) {
+                  obj4 = { userId: null, guildId: null, kind: "activity", activity: null };
+                  obj4[0] = id;
+                  obj4[1] = set1;
+                  obj4[3] = tmp5;
+                  truncateOldMessageData[id] = obj4;
                 }
-              } else if (outer2_9) {
-                let tmp27 = guildId(withoutUserCards[36])(primaryActivity, outer3_29.EMBEDDED);
-                if (tmp27) {
-                  const voiceStateForSession = authStore.getVoiceStateForSession(userId, primaryActivity.session_id);
+              } else if (outer1_9) {
+                let tmp17 = outer2_1(tmp4[36])(tmp5, outer2_29.EMBEDDED);
+                if (tmp17) {
+                  const voiceStateForSession = outer2_27.getVoiceStateForSession(id, tmp5.session_id);
                   let channelId1;
-                  if (null != voiceStateForSession) {
+                  if (voiceStateForSession != null) {
                     channelId1 = voiceStateForSession.channelId;
                   }
-                  const channel1 = callback1.getChannel(channelId1);
+                  const channel1 = obj1.getChannel(channelId1);
                   let guildId3;
-                  if (null != channel1) {
+                  if (channel1 != null) {
                     guildId3 = channel1.getGuildId();
                   }
-                  tmp27 = guildId3 !== outer2_1;
+                  tmp17 = guildId3 !== set1;
                 }
-                if (!tmp27) {
-                  obj5 = { userId, guildId: outer2_1, kind: "activity", activity: primaryActivity };
-                  obj3[userId] = obj5;
+                if (!tmp17) {
+                  const obj5 = { userId: null, guildId: null, kind: "activity", activity: null };
+                  obj5[0] = id;
+                  obj5[1] = set1;
+                  obj5[3] = tmp5;
+                  _handleConnectionOpen[id] = obj5;
                 }
               }
+              tmp3Result1 = tmp3(tmp4[35]);
             }
-          } else if (outer2_10) {
-            const status = stateFromStoresArray1.getStatus(userId, outer2_1);
+          } else if (addUser) {
+            const status = outer2_23.getStatus(id, set1);
             if (null != status) {
-              if (status === outer3_32.OFFLINE) {
-                const obj6 = { kind: "user", userId, guildId: outer2_1 };
-                items3.push(obj6);
+              if (status === outer2_32.OFFLINE) {
+                const obj6 = { kind: "user", userId: null, guildId: null };
+                obj6[1] = id;
+                obj6[2] = tmp8;
+                arr = arr2.push(obj6);
               } else {
-                const obj7 = { kind: "user", userId, guildId: outer2_1 };
-                items2.push(obj7);
+                const obj7 = { kind: "user", userId: null, guildId: null };
+                obj7[1] = id;
+                obj7[2] = tmp8;
+                arr.push(obj7);
               }
             }
           }
         }
       }
     }
-    outer1_25.current.guildId = outer1_1;
-    outer1_25.current.hasComputed = true;
+    ref.current.guildId = set1;
+    ref.current.hasComputed = true;
     const set = new Set();
-    let bound = Math.min(outer1_21.length, 50);
+    const bound = Math.min(length.length, 50);
     for (let num = 0; num < bound; num = num + 1) {
-      let tmp2 = outer1_21;
-      let addResult = set.add(outer1_21[num].otherUserId);
+      let tmp2 = length;
+      let addResult = set.add(length[num].otherUserId);
     }
-    const tmp4 = outer2_34(outer1_22);
-    let iter = tmp4();
-    if (!iter.done) {
-      do {
-        let addResult1 = set.add(iter.value);
-        let iter2 = tmp4();
-        iter = iter2;
-        done = iter2.done;
-      } while (!done);
+    for (const item10043 of getUncachedChannelPermissions) {
+      let addResult1 = set.add(item10043);
+      continue;
     }
-    const mutablePrivateChannels = callback1.getMutablePrivateChannels();
-    for (const key10044 in mutablePrivateChannels) {
-      bound = key10044;
-      let obj15 = mutablePrivateChannels[key10044];
-      if (!obj15.isPrivate()) {
+    const mutablePrivateChannels = outer1_18.getMutablePrivateChannels();
+    for (const key10053 in mutablePrivateChannels) {
+      let tmp17 = key10053;
+      let obj2 = mutablePrivateChannels[key10053];
+      if (!obj2.isPrivate()) {
         continue;
       } else {
-        let addResult2 = set.add(obj15.getRecipientId());
+        let addResult2 = set.add(obj2.getRecipientId());
         continue;
       }
       continue;
     }
-    if (null != outer1_1) {
-      if (null != outer1_15) {
-        let rows = firstGloballyViewbleGuildChannelId.getRows(outer1_1, outer1_15.id);
-      }
-      const item = rows.forEach((type) => {
-        if (type.type === stateFromStores4.MEMBER) {
+    if (null == set1) {
+      let items = [];
+      const item = items.forEach((type) => {
+        if (type.type === outer2_17.MEMBER) {
           set.add(type.userId);
         }
       });
-      let items = [];
       const items1 = [];
-      const _Set = Set;
-      const set1 = new Set();
-      const tmp18 = outer2_34(outer1_23);
-      let iter3 = tmp18();
-      if (!iter3.done) {
-        do {
-          let value = iter3.value;
-          let tmp19 = hasItem5;
-          if (hasItem5(value)) {
-            let arr = items.push(value);
-          } else {
-            let tmp20 = hasItem4;
-            let tmp21 = hasItem4(value);
-            if (tmp21) {
-              let tmp22 = hasItem3;
-              tmp21 = hasItem3(value, 604800);
-            }
-            if (tmp21) {
-              arr = items1.push(value);
-            }
-          }
-          if (null != value.channel_id) {
-            let addResult3 = set1.add(value.channel_id);
-          }
-          iter4 = tmp18();
-          iter3 = iter4;
-        } while (!iter4.done);
-      }
-      let obj = {};
-      obj = {};
-      let obj1 = {};
-      let obj2 = {};
-      let obj3 = {};
-      let obj4 = {};
-      if (null != outer1_1) {
-        if (outer1_5) {
-          const stageInstancesByGuild = stateFromStores1.getStageInstancesByGuild(outer1_1);
-          const item1 = guildId(withoutUserCards[31]).forEach(stageInstancesByGuild, (channelId) => {
-            let obj = { channelId: channelId.channel_id };
-            let result = stateFromStoresArray.canWithPartialContext(outer3_31.CONNECT, obj);
-            if (result) {
-              result = !(function blockedOrIgnoredUserInVoiceChannel(channel_id) {
-                if (null == channel_id) {
-                  return false;
-                } else {
-                  voiceStatesForChannel = voiceStatesForChannel.getVoiceStatesForChannel(channel_id);
-                  let someResult = null != voiceStatesForChannel;
-                  if (someResult) {
-                    const mapped = guildId(withoutUserCards[31])(voiceStatesForChannel).map(() => { ... });
-                    const found = mapped.filter(callback(withoutUserCards[39]).isNotNullish);
-                    someResult = found.some(() => { ... });
-                    const arr = guildId(withoutUserCards[31])(voiceStatesForChannel);
-                  }
-                  return someResult;
-                }
-              })(channelId.channel_id);
-            }
-            if (result) {
-              obj = { kind: "live-guild-stage", stage: channelId };
-              obj[channelId.channel_id] = obj;
-            }
-          });
-          const arr5 = guildId(withoutUserCards[31]);
-        }
-      }
       const items2 = [];
-      const items3 = [];
-      voiceStates = voiceStates.getVoiceStates(outer1_1);
-      const _Set2 = Set;
-      const set2 = new Set();
-      const item2 = set.forEach((userId) => {
-        const user = callback3.getUser(userId);
-        if (null != user) {
-          if (user.bot) {
-            set2.add(userId);
-          } else {
-            const primaryActivity = stateFromStoresArray1.getPrimaryActivity(userId, outer2_1);
-            if (null != outer2_1) {
-              let voiceStateForUser = voiceStates[userId];
-            } else {
-              voiceStateForUser = authStore.getVoiceStateForUser(userId);
-            }
-            let tmp8 = outer2_10;
-            if (!outer2_10) {
-              tmp8 = null != primaryActivity;
-            }
-            if (!tmp8) {
-              tmp8 = null != voiceStateForUser;
-            }
-            if (tmp8) {
-              addUser(userId, primaryActivity, voiceStateForUser);
-            }
-          }
-        }
-      });
-      if (tmp42) {
-        const _Array = Array;
-        addUser(Array.from(set2)[0], null, null);
-      }
-      if (null != outer1_1) {
-        const item3 = guildId(withoutUserCards[31]).forEach(voiceStates, (userId) => {
-          userId = userId.userId;
-          addUser(userId, stateFromStoresArray1.getPrimaryActivity(userId, outer2_1), userId);
-        });
-        const arr8 = guildId(withoutUserCards[31]);
-      }
-      const items4 = [];
-      const tmp50 = outer2_34(outer1_0);
-      const iter5 = tmp50();
-      let iter6 = iter5;
-      if (!iter5.done) {
-        do {
-          value = iter6.value;
-          let tmp61 = callback4;
-          if (callback4.LIVE_GUILD_STAGE === value) {
-            bound = obj;
-            let tmp65 = tmp51;
-            let tmp66 = tmp52;
-            let tmp67 = tmp53;
-            let tmp68 = tmp54;
-            let num9 = tmp55;
-            let tmp69 = tmp56;
-            let tmp70 = tmp57;
-            let tmp71 = tmp58;
-            let num10 = tmp59;
-            let tmp72 = tmp60;
-            bound = Object.keys();
-            if (bound !== undefined) {
-              tmp65 = tmp51;
-              tmp66 = tmp52;
-              tmp67 = tmp53;
-              tmp68 = tmp54;
-              num9 = tmp55;
-              tmp69 = tmp56;
-              tmp70 = tmp57;
-              tmp71 = tmp58;
-              num10 = tmp59;
-              tmp72 = tmp60;
-              bound = bound[num11];
-              while (bound !== undefined) {
-                bound = items4.push(obj[bound]);
-                continue;
-              }
-            }
-          } else {
-            bound = callback4;
-            if (callback4.LIVE_GUILD_EVENT === value) {
-              bound = items.forEach((event) => {
-                const obj = { kind: "guild-event", event, isLive: true };
-                return items4.push(obj);
-              });
-              tmp65 = tmp51;
-              tmp66 = tmp52;
-              tmp67 = tmp53;
-              tmp68 = tmp54;
-              num9 = tmp55;
-              tmp69 = tmp56;
-              tmp70 = tmp57;
-              tmp71 = tmp58;
-              num10 = tmp59;
-              tmp72 = tmp60;
-            } else {
-              bound = callback4;
-              if (callback4.UPCOMING_GUILD_EVENT === value) {
-                bound = items1.forEach((event) => {
-                  const obj = { kind: "guild-event", event, isLive: false };
-                  return items4.push(obj);
-                });
-                tmp65 = tmp51;
-                tmp66 = tmp52;
-                tmp67 = tmp53;
-                tmp68 = tmp54;
-                num9 = tmp55;
-                tmp69 = tmp56;
-                tmp70 = tmp57;
-                tmp71 = tmp58;
-                num10 = tmp59;
-                tmp72 = tmp60;
-              } else {
-                bound = callback4;
-                if (callback4.VOICES === value) {
-                  bound = obj;
-                  tmp65 = tmp51;
-                  tmp66 = tmp52;
-                  tmp67 = tmp53;
-                  tmp68 = tmp54;
-                  num9 = tmp55;
-                  tmp69 = tmp56;
-                  tmp70 = tmp57;
-                  tmp71 = tmp58;
-                  num10 = tmp59;
-                  tmp72 = tmp60;
-                  bound = Object.keys();
-                  if (bound !== undefined) {
-                    tmp65 = tmp51;
-                    tmp66 = tmp52;
-                    tmp67 = tmp53;
-                    tmp68 = tmp54;
-                    num9 = tmp55;
-                    tmp69 = tmp56;
-                    tmp70 = tmp57;
-                    tmp71 = tmp58;
-                    num10 = tmp59;
-                    tmp72 = tmp60;
-                    bound = bound[num11];
-                    while (bound !== undefined) {
-                      bound = items4.push(obj[bound]);
-                      continue;
-                    }
-                  }
-                } else {
-                  bound = callback4;
-                  if (callback4.EMBEDDED_ACTIVITY === value) {
-                    bound = obj1;
-                    bound = tmp51;
-                    bound = tmp52;
-                    tmp65 = tmp51;
-                    tmp66 = tmp52;
-                    tmp67 = tmp53;
-                    tmp68 = tmp54;
-                    num9 = tmp55;
-                    tmp69 = tmp56;
-                    tmp70 = tmp57;
-                    tmp71 = tmp58;
-                    num10 = tmp59;
-                    tmp72 = tmp60;
-                    bound = Object.keys();
-                    if (bound !== undefined) {
-                      tmp65 = bound;
-                      tmp66 = bound;
-                      tmp67 = tmp53;
-                      tmp68 = tmp54;
-                      num9 = tmp55;
-                      tmp69 = tmp56;
-                      tmp70 = tmp57;
-                      tmp71 = tmp58;
-                      num10 = tmp59;
-                      tmp72 = tmp60;
-                      bound = bound[bound];
-                      while (bound !== undefined) {
-                        bound = outer2_34;
-                        num11 = outer2_34(obj1[bound]);
-                        let iter10 = num11();
-                        bound = iter10;
-                        bound = num11;
-                        let iter8 = iter10;
-                        if (iter10.done) {
-                          continue;
-                        } else {
-                          bound = items4.push(iter8.value);
-                          let iter7 = num11();
-                          bound = iter7;
-                          bound = num11;
-                          iter8 = iter7;
-                        }
-                        continue;
-                      }
-                    }
-                  } else {
-                    bound = callback4;
-                    if (callback4.COMBINED_VC === value) {
-                      bound = obj;
-                      tmp65 = tmp51;
-                      tmp66 = tmp52;
-                      tmp67 = tmp53;
-                      tmp68 = tmp54;
-                      num9 = tmp55;
-                      tmp69 = tmp56;
-                      tmp70 = tmp57;
-                      tmp71 = tmp58;
-                      num10 = tmp59;
-                      tmp72 = tmp60;
-                      bound = Object.keys();
-                      if (bound !== undefined) {
-                        tmp65 = tmp51;
-                        tmp66 = tmp52;
-                        tmp67 = tmp53;
-                        tmp68 = tmp54;
-                        num9 = tmp55;
-                        tmp69 = tmp56;
-                        tmp70 = tmp57;
-                        tmp71 = tmp58;
-                        num10 = tmp59;
-                        tmp72 = tmp60;
-                        bound = bound[num11];
-                        while (bound !== undefined) {
-                          let obj5 = {};
-                          bound = obj5;
-                          bound = Object.assign(obj[bound]);
-                          obj5["kind"] = "unified-vc";
-                          bound = items4.push(obj5);
-                          continue;
-                        }
-                      }
-                    } else {
-                      bound = callback4;
-                      if (callback4.STREAMS === value) {
-                        bound = obj2;
-                        tmp65 = tmp51;
-                        tmp66 = tmp52;
-                        tmp67 = tmp53;
-                        tmp68 = tmp54;
-                        num9 = tmp55;
-                        tmp69 = tmp56;
-                        tmp70 = tmp57;
-                        tmp71 = tmp58;
-                        num10 = tmp59;
-                        tmp72 = tmp60;
-                        bound = Object.keys();
-                        if (bound !== undefined) {
-                          tmp65 = tmp51;
-                          tmp66 = tmp52;
-                          tmp67 = tmp53;
-                          tmp68 = tmp54;
-                          num9 = tmp55;
-                          tmp69 = tmp56;
-                          tmp70 = tmp57;
-                          tmp71 = tmp58;
-                          num10 = tmp59;
-                          tmp72 = tmp60;
-                          bound = bound[num11];
-                          while (bound !== undefined) {
-                            bound = items4.push(obj2[bound]);
-                            continue;
-                          }
-                        }
-                      } else {
-                        bound = callback4;
-                        if (callback4.USER_CUSTOM_STATUS === value) {
-                          bound = obj4;
-                          tmp65 = tmp51;
-                          tmp66 = tmp52;
-                          tmp67 = tmp53;
-                          tmp68 = tmp54;
-                          num9 = tmp55;
-                          tmp69 = tmp56;
-                          tmp70 = tmp57;
-                          tmp71 = tmp58;
-                          num10 = tmp59;
-                          tmp72 = tmp60;
-                          bound = Object.keys();
-                          if (bound !== undefined) {
-                            tmp65 = tmp51;
-                            tmp66 = tmp52;
-                            tmp67 = tmp53;
-                            tmp68 = tmp54;
-                            num9 = tmp55;
-                            tmp69 = tmp56;
-                            tmp70 = tmp57;
-                            tmp71 = tmp58;
-                            num10 = tmp59;
-                            tmp72 = tmp60;
-                            bound = bound[num11];
-                            while (bound !== undefined) {
-                              bound = items4.push(obj4[bound]);
-                              continue;
-                            }
-                          }
-                        } else {
-                          bound = callback4;
-                          if (callback4.ACTIVITIES === value) {
-                            bound = obj3;
-                            tmp65 = tmp51;
-                            tmp66 = tmp52;
-                            tmp67 = tmp53;
-                            tmp68 = tmp54;
-                            num9 = tmp55;
-                            tmp69 = tmp56;
-                            tmp70 = tmp57;
-                            tmp71 = tmp58;
-                            num10 = tmp59;
-                            tmp72 = tmp60;
-                            bound = Object.keys();
-                            if (bound !== undefined) {
-                              tmp65 = tmp51;
-                              tmp66 = tmp52;
-                              tmp67 = tmp53;
-                              tmp68 = tmp54;
-                              num9 = tmp55;
-                              tmp69 = tmp56;
-                              tmp70 = tmp57;
-                              tmp71 = tmp58;
-                              num10 = tmp59;
-                              tmp72 = tmp60;
-                              bound = bound[num11];
-                              while (bound !== undefined) {
-                                bound = items4.push(obj3[bound]);
-                                continue;
-                              }
-                            }
-                          } else {
-                            bound = callback4;
-                            if (callback4.ACTIVE_CHANNEL === value) {
-                              bound = outer1_1;
-                              tmp65 = tmp51;
-                              tmp66 = tmp52;
-                              tmp67 = tmp53;
-                              tmp68 = tmp54;
-                              num9 = tmp55;
-                              tmp69 = tmp56;
-                              tmp70 = tmp57;
-                              tmp71 = tmp58;
-                              num10 = tmp59;
-                              tmp72 = tmp60;
-                              if (null != outer1_1) {
-                                bound = callback;
-                                bound = withoutUserCards;
-                                let obj16 = callback(withoutUserCards[37]);
-                                bound = outer1_1;
-                                bound = callback1;
-                                let items5 = [callback1, , , ];
-                                bound = stateFromStoresArray;
-                                items5[1] = stateFromStoresArray;
-                                bound = hasItem2;
-                                items5[2] = hasItem2;
-                                bound = ref;
-                                items5[3] = ref;
-                                num11 = obj16.getActiveTextChannels(outer1_1, items5);
-                                let _Math = Math;
-                                bound = Math.min(2, num11.length);
-                                let num16 = 0;
-                                tmp65 = tmp51;
-                                tmp66 = tmp52;
-                                tmp67 = num11;
-                                tmp68 = bound;
-                                num9 = 0;
-                                tmp69 = tmp56;
-                                tmp70 = tmp57;
-                                tmp71 = tmp58;
-                                num10 = tmp59;
-                                tmp72 = tmp60;
-                                if (0 < bound) {
-                                  do {
-                                    let obj6 = { kind: "active-channel" };
-                                    bound = outer1_1;
-                                    obj6.guildId = outer1_1;
-                                    obj6.channelId = num11[num16].id;
-                                    bound = items4.push(obj6);
-                                    num16 = num16 + 1;
-                                    tmp65 = tmp51;
-                                    tmp66 = tmp52;
-                                    tmp67 = num11;
-                                    tmp68 = bound;
-                                    tmp69 = tmp56;
-                                    tmp70 = tmp57;
-                                    tmp71 = tmp58;
-                                    num10 = tmp59;
-                                    tmp72 = tmp60;
-                                    num9 = num16;
-                                  } while (num16 < bound);
-                                }
-                              }
-                            } else {
-                              bound = callback4;
-                              if (callback4.USER === value) {
-                                num11 = 0;
-                                let num12 = 0;
-                                let num13 = 0;
-                                let num14 = 0;
-                                bound = tmp58;
-                                if (0 < items2.length) {
-                                  while (true) {
-                                    bound = items2[num12];
-                                    bound = outer1_2;
-                                    bound = null != outer1_2;
-                                    if (bound) {
-                                      bound = outer1_2;
-                                      bound = outer1_2.has(bound.userId);
-                                    }
-                                    bound = num11;
-                                    if (!bound) {
-                                      bound = items4.push(bound);
-                                      bound = num11 + 1;
-                                    }
-                                    bound = num12 + 1;
-                                    num13 = bound;
-                                    num14 = bound;
-                                    if (bound >= items2.length) {
-                                      break;
-                                    } else {
-                                      num11 = bound;
-                                      num12 = bound;
-                                      num14 = bound;
-                                      num13 = bound;
-                                      if (bound >= 50) {
-                                        break;
-                                      }
-                                    }
-                                  }
-                                }
-                                tmp65 = tmp51;
-                                tmp66 = tmp52;
-                                tmp67 = tmp53;
-                                tmp68 = tmp54;
-                                num9 = tmp55;
-                                tmp69 = num13;
-                                tmp70 = num14;
-                                tmp71 = bound;
-                                num10 = 0;
-                                tmp72 = tmp60;
-                                if (0 < items3.length) {
-                                  num11 = num13;
-                                  let num15 = 0;
-                                  tmp65 = tmp51;
-                                  tmp66 = tmp52;
-                                  tmp67 = tmp53;
-                                  tmp68 = tmp54;
-                                  num9 = tmp55;
-                                  tmp69 = num13;
-                                  tmp70 = num14;
-                                  tmp71 = bound;
-                                  num10 = 0;
-                                  tmp72 = tmp60;
-                                  if (num13 < 50) {
-                                    while (true) {
-                                      bound = items3[num15];
-                                      bound = outer1_2;
-                                      bound = null != outer1_2;
-                                      if (bound) {
-                                        bound = outer1_2;
-                                        bound = outer1_2.has(bound.userId);
-                                      }
-                                      bound = num11;
-                                      if (!bound) {
-                                        bound = items4.push(bound);
-                                        bound = num11 + 1;
-                                      }
-                                      bound = num15 + 1;
-                                      tmp65 = tmp51;
-                                      tmp66 = tmp52;
-                                      tmp67 = tmp53;
-                                      tmp68 = tmp54;
-                                      num9 = tmp55;
-                                      tmp69 = bound;
-                                      tmp70 = num14;
-                                      tmp71 = bound;
-                                      tmp72 = bound;
-                                      num10 = bound;
-                                      if (bound >= items3.length) {
-                                        break;
-                                      } else {
-                                        num11 = bound;
-                                        num15 = bound;
-                                        tmp65 = tmp51;
-                                        tmp66 = tmp52;
-                                        tmp67 = tmp53;
-                                        tmp68 = tmp54;
-                                        num9 = tmp55;
-                                        tmp69 = bound;
-                                        tmp70 = num14;
-                                        tmp71 = bound;
-                                        num10 = bound;
-                                        tmp72 = bound;
-                                        if (bound < 50) {
-                                          continue;
-                                        } else {
-                                          break;
-                                        }
-                                        break;
-                                      }
-                                    }
-                                  }
-                                }
-                              } else {
-                                bound = callback4;
-                                if (callback4.STUDENT_HUB_ADD_CHANNEL === value) {
-                                  let tmp99 = outer1_14;
-                                  bound = null != outer1_14;
-                                  if (bound) {
-                                    bound = outer1_14;
-                                    let features = outer1_14.features;
-                                    bound = outer2_30;
-                                    bound = features.has(outer2_30.HUB);
-                                  }
-                                  tmp65 = tmp51;
-                                  tmp66 = tmp52;
-                                  tmp67 = tmp53;
-                                  tmp68 = tmp54;
-                                  num9 = tmp55;
-                                  tmp69 = tmp56;
-                                  tmp70 = tmp57;
-                                  tmp71 = tmp58;
-                                  num10 = tmp59;
-                                  tmp72 = tmp60;
-                                  if (bound) {
-                                    let obj7 = { kind: "student-hub-add-channel" };
-                                    bound = outer1_14;
-                                    obj7.guildId = outer1_14.id;
-                                    bound = items4.push(obj7);
-                                    tmp65 = tmp51;
-                                    tmp66 = tmp52;
-                                    tmp67 = tmp53;
-                                    tmp68 = tmp54;
-                                    num9 = tmp55;
-                                    tmp69 = tmp56;
-                                    tmp70 = tmp57;
-                                    tmp71 = tmp58;
-                                    num10 = tmp59;
-                                    tmp72 = tmp60;
-                                  }
-                                } else {
-                                  bound = callback4;
-                                  if (callback4.CREATE_CHANNEL === value) {
-                                    let tmp90 = outer1_14;
-                                    let canResult = null != outer1_14;
-                                    if (canResult) {
-                                      let tmp92 = stateFromStoresArray;
-                                      let tmp93 = outer2_31;
-                                      let tmp94 = outer1_14;
-                                      canResult = stateFromStoresArray.can(outer2_31.MANAGE_CHANNELS, outer1_14);
-                                    }
-                                    if (canResult) {
-                                      let tmp95 = outer1_17;
-                                      canResult = null != outer1_17;
-                                    }
-                                    if (canResult) {
-                                      num11 = outer1_17;
-                                      let tmp96 = closure_20;
-                                      canResult = outer1_17[closure_20].length <= 2;
-                                    }
-                                    tmp65 = tmp51;
-                                    tmp66 = tmp52;
-                                    tmp67 = tmp53;
-                                    tmp68 = tmp54;
-                                    num9 = tmp55;
-                                    tmp69 = tmp56;
-                                    tmp70 = tmp57;
-                                    tmp71 = tmp58;
-                                    num10 = tmp59;
-                                    tmp72 = tmp60;
-                                    if (canResult) {
-                                      let obj8 = { kind: "create-channel" };
-                                      let tmp97 = outer1_14;
-                                      obj8.guildId = outer1_14.id;
-                                      let arr1 = items4.push(obj8);
-                                      tmp65 = tmp51;
-                                      tmp66 = tmp52;
-                                      tmp67 = tmp53;
-                                      tmp68 = tmp54;
-                                      num9 = tmp55;
-                                      tmp69 = tmp56;
-                                      tmp70 = tmp57;
-                                      tmp71 = tmp58;
-                                      num10 = tmp59;
-                                      tmp72 = tmp60;
-                                    }
-                                  } else {
-                                    bound = callback4;
-                                    if (callback4.INVITE === value) {
-                                      let tmp82 = outer1_14;
-                                      let shouldRenderInviteResult = null != outer1_14;
-                                      if (shouldRenderInviteResult) {
-                                        let tmp84 = outer1_17;
-                                        shouldRenderInviteResult = null != outer1_17;
-                                      }
-                                      if (shouldRenderInviteResult) {
-                                        let tmp85 = callback;
-                                        let tmp86 = withoutUserCards;
-                                        let obj9 = callback(withoutUserCards[38]);
-                                        num11 = outer1_17;
-                                        let tmp87 = outer1_14;
-                                        shouldRenderInviteResult = obj9.shouldRenderInvite(outer1_17, outer1_14);
-                                      }
-                                      tmp65 = tmp51;
-                                      tmp66 = tmp52;
-                                      tmp67 = tmp53;
-                                      tmp68 = tmp54;
-                                      num9 = tmp55;
-                                      tmp69 = tmp56;
-                                      tmp70 = tmp57;
-                                      tmp71 = tmp58;
-                                      num10 = tmp59;
-                                      tmp72 = tmp60;
-                                      if (shouldRenderInviteResult) {
-                                        obj9 = { kind: "invite" };
-                                        let tmp88 = outer1_14;
-                                        obj9.guildId = outer1_14.id;
-                                        let arr2 = items4.push(obj9);
-                                        tmp65 = tmp51;
-                                        tmp66 = tmp52;
-                                        tmp67 = tmp53;
-                                        tmp68 = tmp54;
-                                        num9 = tmp55;
-                                        tmp69 = tmp56;
-                                        tmp70 = tmp57;
-                                        tmp71 = tmp58;
-                                        num10 = tmp59;
-                                        tmp72 = tmp60;
-                                      }
-                                    } else {
-                                      bound = callback4;
-                                      if (callback4.CUSTOMIZE_GUILD === value) {
-                                        let tmp73 = outer1_14;
-                                        let canResult1 = null != outer1_14;
-                                        if (canResult1) {
-                                          let tmp75 = stateFromStoresArray;
-                                          let tmp76 = outer2_31;
-                                          let tmp77 = outer1_14;
-                                          canResult1 = stateFromStoresArray.can(outer2_31.MANAGE_GUILD, outer1_14);
-                                        }
-                                        if (canResult1) {
-                                          let tmp78 = outer1_14;
-                                          num11 = null == outer1_14;
-                                          let icon;
-                                          if (!num11) {
-                                            num11 = outer1_14;
-                                            icon = outer1_14.icon;
-                                          }
-                                          canResult1 = null == icon;
-                                        }
-                                        tmp65 = tmp51;
-                                        tmp66 = tmp52;
-                                        tmp67 = tmp53;
-                                        tmp68 = tmp54;
-                                        num9 = tmp55;
-                                        tmp69 = tmp56;
-                                        tmp70 = tmp57;
-                                        tmp71 = tmp58;
-                                        num10 = tmp59;
-                                        tmp72 = tmp60;
-                                        if (canResult1) {
-                                          let obj10 = { kind: "customize-guild" };
-                                          let tmp80 = outer1_14;
-                                          obj10.guildId = outer1_14.id;
-                                          let arr3 = items4.push(obj10);
-                                          tmp65 = tmp51;
-                                          tmp66 = tmp52;
-                                          tmp67 = tmp53;
-                                          tmp68 = tmp54;
-                                          num9 = tmp55;
-                                          tmp69 = tmp56;
-                                          tmp70 = tmp57;
-                                          tmp71 = tmp58;
-                                          num10 = tmp59;
-                                          tmp72 = tmp60;
-                                        }
-                                      } else {
-                                        let tmp62 = callback;
-                                        let tmp63 = withoutUserCards;
-                                        obj7 = callback(withoutUserCards[39]);
-                                        let assertNeverResult = obj7.assertNever(value);
-                                        tmp65 = tmp51;
-                                        tmp66 = tmp52;
-                                        tmp67 = tmp53;
-                                        tmp68 = tmp54;
-                                        num9 = tmp55;
-                                        tmp69 = tmp56;
-                                        tmp70 = tmp57;
-                                        tmp71 = tmp58;
-                                        num10 = tmp59;
-                                        tmp72 = tmp60;
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-          iter9 = tmp50();
-          tmp51 = tmp65;
-          tmp52 = tmp66;
-          tmp53 = tmp67;
-          tmp54 = tmp68;
-          tmp55 = num9;
-          tmp56 = tmp69;
-          tmp57 = tmp70;
-          tmp58 = tmp71;
-          tmp59 = num10;
-          tmp60 = tmp72;
-          iter6 = iter9;
-        } while (!iter9.done);
-      }
-      return items4;
+      const _Set = Set;
+      set1 = new Set();
+      dependencyMap[Symbol.iterator]();
+      let num2 = 604800;
+    } else {
+      num2 = fetchFingerprint;
     }
-    rows = [];
+    items = outer1_16.getRows(set1, num2.id);
   }), items24);
-  const tmp33 = callback(isFocused.useState(() => {
-    if (closure_24) {
+  const tmp35 = callback4(React.useState(() => {
+    if (upsertRelationship) {
       return [];
     } else {
-      const tmp2 = callback3();
-      if (null != guildId) {
-        let obj = guildId(withoutUserCards[28]);
-        obj = { type: "GUILD_HEADER_ACTIVE_CHANNELS_COUNT", count: outer1_36(tmp2), guildId };
+      const arr = callback3();
+      if (null != id) {
+        let obj = id(isFocused[28]);
+        obj = { type: "GUILD_HEADER_ACTIVE_CHANNELS_COUNT", count: null, guildId: null };
+        obj[1] = arr.filter((kind) => {
+          kind = kind.kind;
+          let tmp = "active-channel" === kind;
+          if (!tmp) {
+            tmp = "voice" === kind;
+          }
+          if (!tmp) {
+            tmp = "live-guild-stage" === kind;
+          }
+          if (!tmp) {
+            tmp = "unified-vc" === kind;
+          }
+          if (!tmp) {
+            tmp = "embedded-activity" === kind;
+          }
+          return tmp;
+        }).length;
+        obj[2] = tmp2;
         obj.dispatch(obj);
       }
-      return tmp2;
+      return arr;
     }
   }), 2);
-  let closure_27 = tmp33[1];
+  let closure_27 = tmp35[1];
   const items25 = [callback3, guildId];
-  callback4 = isFocused.useCallback(() => {
-    const tmp = callback3();
-    callback(tmp);
-    if (null != guildId) {
-      let obj = guildId(withoutUserCards[28]);
-      obj = { type: "GUILD_HEADER_ACTIVE_CHANNELS_COUNT", count: outer1_36(tmp), guildId };
+  callback4 = obj.useCallback(() => {
+    const arr = callback3();
+    callback(arr);
+    if (null != id) {
+      let obj = id(isFocused[28]);
+      obj = { type: "GUILD_HEADER_ACTIVE_CHANNELS_COUNT", count: null, guildId: null };
+      obj[1] = arr.filter((kind) => {
+        kind = kind.kind;
+        let tmp = "active-channel" === kind;
+        if (!tmp) {
+          tmp = "voice" === kind;
+        }
+        if (!tmp) {
+          tmp = "live-guild-stage" === kind;
+        }
+        if (!tmp) {
+          tmp = "unified-vc" === kind;
+        }
+        if (!tmp) {
+          tmp = "embedded-activity" === kind;
+        }
+        return tmp;
+      }).length;
+      obj[2] = tmp2;
       obj.dispatch(obj);
     }
   }, items25);
-  const items26 = [guildId, tmp30, tmp21, callback4];
-  const effect4 = isFocused.useEffect(() => {
-    if (guildId !== ref.current.guildId) {
-      const obj = { guildId, hasComputed: false };
-      ref.current = obj;
+  const items26 = [guildId, tmp32, tmp23, callback4];
+  const effect4 = obj.useEffect(() => {
+    if (id !== ref.current.guildId) {
+      const obj = { guildId: null, hasComputed: false };
+      obj[0] = tmp;
+      tmp2.current = obj;
     }
     if (ref.current.hasComputed) {
       if (closure_20) {
         const _setTimeout = setTimeout;
         const timeout = setTimeout(() => {
-          outer1_28();
+          callback();
         }, 50);
         return () => clearTimeout(closure_0);
       }
-    } else if (!closure_24) {
+    } else if (!upsertRelationship) {
       callback4();
     }
   }, items26);
-  let id;
-  if (null != stateFromStores3) {
+  id = undefined;
+  if (stateFromStores3 != null) {
     id = stateFromStores3.id;
   }
-  (function useSpammyStoresVersion(guildId, id, isFocused, callback4) {
-    let closure_0 = guildId;
-    let closure_1 = id;
-    let closure_2 = isFocused;
-    let _slicedToArray = callback4;
-    let apply = isFocused.useRef(-1);
-    let _createForOfIteratorHelperLoose = isFocused.useRef(0);
-    const items = [guildId, id, callback4, isFocused];
-    const callback = isFocused.useCallback(() => {
+  React = obj.useRef(-1);
+  participantFromServer = obj.useRef(0);
+  const items27 = [guildId, id, callback4, isFocused];
+  callback5 = obj.useCallback(() => {
+    if (-1 !== ref.current) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(tmp.current);
+    }
+    if (isFocused) {
+      const _setTimeout = setTimeout;
+      tmp.current = setTimeout(() => {
+        const userStoreVersion = outer1_26.getUserStoreVersion();
+        const sum = userStoreVersion + outer1_18.getPrivateChannelsVersion();
+        let num = -1;
+        const sum1 = sum + outer1_27.getVoiceStateVersion();
+        if (null != closure_0) {
+          num = -1;
+          if (null != closure_1) {
+            num = outer1_16.getProps(tmp4, tmp5).version;
+          }
+        }
+        const sum2 = sum1 + num;
+        if (ref.current !== sum2) {
+          ref.current = sum2;
+          callback();
+        }
+      }, 1000);
+    }
+  }, items27);
+  const items28 = [callback5];
+  const effect5 = obj.useEffect(() => {
+    let item = outer1_33.forEach((addChangeListener) => {
+      addChangeListener.addChangeListener(_handleConnectionOpen);
+    });
+    return () => {
       if (-1 !== ref.current) {
         const _clearTimeout = clearTimeout;
-        clearTimeout(ref.current);
+        clearTimeout(tmp.current);
       }
-      if (closure_2) {
-        const _setTimeout = setTimeout;
-        ref.current = setTimeout(() => {
-          const userStoreVersion = callback3.getUserStoreVersion();
-          const sum = userStoreVersion + callback1.getPrivateChannelsVersion();
-          let num = -1;
-          const sum1 = sum + voiceStateVersion.getVoiceStateVersion();
-          if (null != outer1_0) {
-            num = -1;
-            if (null != outer1_1) {
-              num = firstGloballyViewbleGuildChannelId.getProps(outer1_0, outer1_1).version;
-            }
-          }
-          const sum2 = sum1 + num;
-          if (outer1_5.current !== sum2) {
-            outer1_5.current = sum2;
-            outer1_3();
-          }
-        }, 1000);
-      }
-    }, items);
-    const items1 = [callback];
-    const effect = isFocused.useEffect(() => {
-      let item = outer2_33.forEach((addChangeListener) => {
-        addChangeListener.addChangeListener(outer1_6);
+      const item = outer1_33.forEach((removeChangeListener) => {
+        removeChangeListener.removeChangeListener(_handleConnectionOpen);
       });
-      return () => {
-        if (-1 !== outer1_4.current) {
-          const _clearTimeout = clearTimeout;
-          clearTimeout(outer1_4.current);
-        }
-        const item = outer3_33.forEach((removeChangeListener) => {
-          removeChangeListener.removeChangeListener(outer2_6);
-        });
-      };
-    }, items1);
-  })(guildId, id, isFocused, callback4);
-  const items27 = [tmp33[0], ];
-  if (!tmp30) {
-    tmp30 = !guildId(withoutUserCards[40])(ref).hasComputed;
+    };
+  }, items28);
+  const items29 = [tmp35[0], ];
+  if (!tmp32) {
+    tmp32 = !id(tmp10[40])(ref).hasComputed;
   }
-  items27[1] = tmp30;
-  return items27;
+  items29[1] = tmp32;
+  return items29;
 };

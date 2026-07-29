@@ -1,40 +1,63 @@
-// Module ID: 16462
-// Function ID: 128371
+// Module ID: 16497
+// Function ID: 16498
 // Name: getIntroHeaderSource
-// Dependencies: [31, 27, 33, 6517, 16463, 16464, 16465, 4011, 2]
-// Exports: IntroHeader
+// Dependencies: [19, 17, 21, 6538, 16498, 16499, 16500, 4035, 2]
+// Exports: IntroHeader, getIntroHeaderSource, useIntroHeaderSource
 
-// Module 16462 (getIntroHeaderSource)
-import "result";
+// Module 16497 (getIntroHeaderSource)
+import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-function getIntroHeaderSource(theme) {
-  let obj = require(6517) /* getIllustrationSource */;
+const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/IntroHeader.tsx");
+
+export const getIntroHeaderSource = function getIntroHeaderSource(theme) {
+  let obj = require(6538) /* getIllustrationSource */;
   obj = {
     dark() {
-      return outer1_0(outer1_1[4]);
+      return callback(16498);
     },
     darker() {
-      return outer1_0(outer1_1[5]);
+      return callback(16499);
     },
     light() {
-      return outer1_0(outer1_1[6]);
+      return callback(16500);
     }
   };
   return obj.getIllustrationSource(theme, obj);
-}
-function useIntroHeaderSource() {
-  return getIntroHeaderSource(require(4011) /* AccessibilityAnnouncer */.useThemeContext().theme);
-}
-const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/IntroHeader.tsx");
-
-export { getIntroHeaderSource };
-export { useIntroHeaderSource };
+};
+export const useIntroHeaderSource = function useIntroHeaderSource() {
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(16498);
+    },
+    darker() {
+      return callback(16499);
+    },
+    light() {
+      return callback(16500);
+    }
+  };
+  return require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+};
 export const IntroHeader = function IntroHeader(arg0) {
-  const obj = {};
+  let obj = require(4035) /* AccessibilityAnnouncer */;
+  obj = {
+    dark() {
+      return callback(16498);
+    },
+    darker() {
+      return callback(16499);
+    },
+    light() {
+      return callback(16500);
+    }
+  };
+  obj = {};
+  const illustrationSource = require(6538) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
-  obj["source"] = useIntroHeaderSource();
+  obj.source = illustrationSource;
   return <Image />;
 };

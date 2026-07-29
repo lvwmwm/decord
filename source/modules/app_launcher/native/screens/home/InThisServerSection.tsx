@@ -1,68 +1,74 @@
-// Module ID: 11259
-// Function ID: 87444
+// Module ID: 11283
+// Function ID: 11284
 // Name: AppInThisServer
-// Dependencies: [31, 27, 33, 4165, 689, 11237, 1327, 4161, 1212, 4695, 1324, 11201, 8212, 7992, 11206, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 11261, 1351, 4185, 1236, 4717, 1348, 11225, 8236, 8017, 11230, 2]
 // Exports: default
 
-// Module 11259 (AppInThisServer)
-import "result";
+// Module 11283 (AppInThisServer)
+import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
+let c3;
+let c4;
+let c5;
 let closure_6;
 const require = arg1;
 function AppInThisServer(onAppSelected) {
   onAppSelected = onAppSelected.onAppSelected;
-  const tmp2 = _createForOfIteratorHelperLoose();
-  const application = onAppSelected.appItem.application;
-  let obj = onAppSelected(11201);
+  let application;
+  const tmp3 = application(1348)("AppLauncherInThisServer-native");
+  const tmp4 = createCacheKey();
+  application = onAppSelected.appItem.application;
+  let obj = onAppSelected(11225);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   obj = {
     accessible: true,
     accessibilityLabel: application.name,
     accessibilityRole: "button",
     onPress() {
-      let tmp = null != onAppSelected;
-      if (tmp) {
-        tmp = null != application;
+      let tmp2 = null != onAppSelected;
+      if (tmp2) {
+        tmp2 = null != application;
       }
-      if (tmp) {
-        const obj = { application, sectionName: onAppSelected(outer1_2[13]).AppLauncherSectionName.APPS_IN_THIS_SERVER };
+      if (tmp2) {
+        const obj = { application: null, sectionName: null };
+        obj[0] = application;
+        obj[1] = onAppSelected(outer1_2[13]).AppLauncherSectionName.APPS_IN_THIS_SERVER;
         onAppSelected(obj);
       }
-    }
+    },
+    style: null,
+    children: null
   };
-  const items = [tmp2.appCardContainer, ];
-  let rowShadow = !application(1324)("AppLauncherInThisServer-native");
-  if (rowShadow) {
-    rowShadow = tmp2.rowShadow;
+  const items = [tmp4.appCardContainer, ];
+  let rowShadow = !tmp3;
+  if (!tmp3) {
+    rowShadow = tmp4.rowShadow;
   }
   items[1] = rowShadow;
-  obj.style = items;
-  let tmp5 = null;
+  obj[4] = items;
+  let tmp8 = null;
   if (null != appLauncherIconSource) {
-    obj = { iconSource: appLauncherIconSource, wrapperStyle: tmp2.iconContainer, iconSize: 36 };
-    tmp5 = callback(application(11206), obj);
+    obj = { iconSource: null, wrapperStyle: null, iconSize: 36 };
+    obj[0] = appLauncherIconSource;
+    obj[1] = tmp4.iconContainer;
+    tmp8 = callback(application(11230), obj);
   }
-  const items1 = [tmp5, ];
-  const obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };
-  items1[1] = callback(onAppSelected(4161).Text, obj1);
-  obj.children = items1;
-  return closure_6(onAppSelected(8212).PressableScale, obj, application.id);
+  const items1 = [tmp8, callback(onAppSelected(4185).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name })];
+  obj[5] = items1;
+  return closure_6(onAppSelected(8236).PressableScale, obj, application.id);
 }
-({ View: closure_3, ScrollView: closure_4 } = get_ActivityIndicator);
-({ jsx: closure_5, jsxs: closure_6 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { marginBottom: 16 }, headerContainer: { justifyContent: "center" }, viewAll: { position: "absolute", right: 0 }, scrollView: { marginTop: 8, overflow: "visible" }, scrollViewContentContainer: { gap: 8 } };
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.lg, paddingLeft: 12, paddingRight: 12, paddingVertical: 12, flexDirection: "row", justifyContent: "center", alignItems: "center" };
-_createForOfIteratorHelperLoose.appCardContainer = _createForOfIteratorHelperLoose;
-const merged = Object.assign(require("_createForOfIteratorHelperLoose").shadows.SHADOW_LOW);
-_createForOfIteratorHelperLoose.rowShadow = {};
-_createForOfIteratorHelperLoose.iconContainer = { marginEnd: 12, justifyContent: "space-around" };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
+({ View: c3, ScrollView: c4 } = get_ActivityIndicator);
+({ jsx: c5, jsxs: closure_6 } = jsxProd);
+createCacheKey = { container: { marginBottom: 16 }, headerContainer: { justifyContent: "center" }, viewAll: { position: "absolute", right: 0 }, scrollView: { marginTop: 8, overflow: "visible" }, scrollViewContentContainer: { gap: 8 }, appCardContainer: null, rowShadow: null, iconContainer: null };
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_APP_LAUNCHER_ROW_DEFAULT, borderRadius: require("Themes").radii.lg, paddingLeft: 12, paddingRight: 12, paddingVertical: 12, flexDirection: "row", justifyContent: "center", alignItems: "center" };
+createCacheKey[5] = createCacheKey;
+const merged = Object.assign(require("Themes").shadows.SHADOW_LOW);
+createCacheKey[6] = {};
+createCacheKey[7] = { marginEnd: 12, justifyContent: "space-around" };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/screens/home/InThisServerSection.tsx");
 
 export default function InThisServerSection(arg0) {
@@ -71,8 +77,9 @@ export default function InThisServerSection(arg0) {
   let require;
   ({ items, onAppSelected: require, onViewAllSelected: importDefault } = arg0);
   let dependencyMap;
+  items = undefined;
   let mapped1;
-  let tmp = _createForOfIteratorHelperLoose();
+  let tmp = createCacheKey();
   items = [];
   if (0 === items.length) {
     return null;
@@ -88,46 +95,44 @@ export default function InThisServerSection(arg0) {
     const substr = items.slice(0, 8);
     const mapped = substr.map((appItem) => outer1_5(outer1_8, { appItem, onAppSelected: closure_0 }, appItem.application.id));
     mapped1 = undefined;
-    const found = mapped.filter(require(1327) /* isDiscordFrontendDevelopment */.isNotNullish);
-    if (null != dependencyMap) {
+    const found = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
+    if (dependencyMap != null) {
       const applications = dependencyMap.applications;
       mapped1 = applications.map((arg0) => arg0);
     }
-    let obj = { style: tmp.container };
-    obj = { style: tmp.headerContainer };
-    obj = { variant: "text-lg/bold", color: "mobile-text-heading-primary" };
-    const intl = require(1212) /* getSystemLocale */.intl;
-    obj.children = intl.string(require(1212) /* getSystemLocale */.t.oJyzCu);
-    const items1 = [callback(require(4161) /* Text */.Text, obj), ];
-    let tmp10 = null != dependencyMap;
-    if (tmp10) {
-      const obj1 = {
-        style: tmp.viewAll,
-        onPress() {
-              let tmp = null != mapped1;
-              if (tmp) {
-                tmp = callback();
-              }
-              return tmp;
-            },
-        accessibilityRole: "button"
+    let obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    obj = { style: null, children: null };
+    obj[0] = tmp.headerContainer;
+    obj = { variant: "text-lg/bold", color: "mobile-text-heading-primary", children: null };
+    const intl = tmp11(1236).intl;
+    obj[2] = intl.string(require(1236) /* getSystemLocale */.t.oJyzCu);
+    const items1 = [callback(require(4185) /* Text */.Text, obj), ];
+    let tmp5Result = null != dependencyMap;
+    if (tmp5Result) {
+      const obj1 = { style: null, onPress: null, accessibilityRole: "button", children: null };
+      obj1[0] = tmp.viewAll;
+      obj1[1] = function onPress() {
+        let tmp = null != mapped1;
+        if (tmp) {
+          tmp = callback();
+        }
+        return tmp;
       };
-      const obj2 = { variant: "text-sm/medium", color: "text-brand" };
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      obj2.children = intl2.string(require(1212) /* getSystemLocale */.t["/qG8v7"]);
-      obj1.children = callback(require(4161) /* Text */.Text, obj2);
-      tmp10 = callback(require(4695) /* PressableBase */.PressableOpacity, obj1);
+      const obj2 = { variant: "text-sm/medium", color: "text-brand", children: null };
+      const intl2 = tmp11(1236).intl;
+      obj2[2] = intl2.string(tmp11(1236).t["/qG8v7"]);
+      obj1[3] = tmp5(tmp11(4185).Text, obj2);
+      tmp5Result = tmp5(tmp11(4717).PressableOpacity, obj1);
     }
-    items1[1] = tmp10;
-    obj.children = items1;
+    items1[1] = tmp5Result;
+    obj[1] = items1;
     const items2 = [closure_6(items, obj), ];
-    const obj3 = {};
-    ({ scrollView: obj6.style, scrollViewContentContainer: obj6.contentContainerStyle } = tmp);
-    obj3.horizontal = true;
-    obj3.showsHorizontalScrollIndicator = false;
-    obj3.children = found;
+    const obj3 = { style: null, contentContainerStyle: null, horizontal: true, showsHorizontalScrollIndicator: false, children: null };
+    ({ scrollView: obj6[0], scrollViewContentContainer: obj6[1] } = tmp);
+    obj3[4] = found;
     items2[1] = callback(mapped1, obj3);
-    obj.children = items2;
+    obj[1] = items2;
     return closure_6(items, obj);
   }
 };

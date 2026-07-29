@@ -1,29 +1,29 @@
-// Module ID: 12352
-// Function ID: 96100
+// Module ID: 12374
+// Function ID: 12375
 // Name: getRemoteJoinFooterLabel
-// Dependencies: [653, 1212, 2]
+// Dependencies: [676, 1236, 2]
 // Exports: getRemoteJoinFooterLabel
 
-// Module 12352 (getRemoteJoinFooterLabel)
+// Module 12374 (getRemoteJoinFooterLabel)
 import { ActivityGamePlatforms } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/getRemoteJoinFooterLabel.tsx");
 
-export const getRemoteJoinFooterLabel = function getRemoteJoinFooterLabel(remoteJoinPlatform2) {
-  if (ActivityGamePlatforms.DESKTOP === remoteJoinPlatform2) {
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    return intl5.string(require(1212) /* getSystemLocale */.t.aqN8U9);
-  } else if (ActivityGamePlatforms.IOS === remoteJoinPlatform2) {
-    const intl4 = require(1212) /* getSystemLocale */.intl;
-    return intl4.string(require(1212) /* getSystemLocale */.t.CyQ5ia);
-  } else if (ActivityGamePlatforms.ANDROID === remoteJoinPlatform2) {
-    const intl3 = require(1212) /* getSystemLocale */.intl;
-    return intl3.string(require(1212) /* getSystemLocale */.t.fMs6uW);
-  } else if (ActivityGamePlatforms.XBOX === remoteJoinPlatform2) {
-    const intl2 = require(1212) /* getSystemLocale */.intl;
-    return intl2.string(require(1212) /* getSystemLocale */.t.o0hjdt);
+export const getRemoteJoinFooterLabel = function getRemoteJoinFooterLabel(remoteJoinPlatform) {
+  if (ActivityGamePlatforms.DESKTOP === remoteJoinPlatform) {
+    const intl5 = require(1236) /* getSystemLocale */.intl;
+    return intl5.string(require(1236) /* getSystemLocale */.t.aqN8U9);
+  } else if (tmp.IOS === remoteJoinPlatform) {
+    const intl4 = require(1236) /* getSystemLocale */.intl;
+    return intl4.string(require(1236) /* getSystemLocale */.t.CyQ5ia);
+  } else if (tmp.ANDROID === remoteJoinPlatform) {
+    const intl3 = require(1236) /* getSystemLocale */.intl;
+    return intl3.string(require(1236) /* getSystemLocale */.t.fMs6uW);
+  } else if (tmp.XBOX === remoteJoinPlatform) {
+    const intl2 = require(1236) /* getSystemLocale */.intl;
+    return intl2.string(require(1236) /* getSystemLocale */.t.o0hjdt);
   } else {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t["R/1GpG"]);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t["R/1GpG"]);
   }
 };

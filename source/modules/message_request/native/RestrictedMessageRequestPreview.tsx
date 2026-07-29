@@ -1,129 +1,143 @@
-// Module ID: 15687
-// Function ID: 120757
+// Module ID: 15722
+// Function ID: 15723
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [57, 31, 27, 1348, 4384, 1850, 33, 4165, 689, 1557, 566, 15688, 15690, 11507, 2]
+// Dependencies: [32, 19, 17, 1372, 4407, 1874, 21, 4189, 712, 1581, 589, 15723, 15725, 11531, 2]
 // Exports: default
 
-// Module 15687 (RestrictedMessageRequestPreview)
+// Module 15722 (RestrictedMessageRequestPreview)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
+import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_8 from "_isNativeReflectConstruct";
-import closure_9 from "_isNativeReflectConstruct";
+import ensureGuildLoaded from "ensureGuildLoaded";
+import reinjectEphemerals from "reinjectEphemerals";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_5;
+let c10;
+let c5;
 let closure_6;
+let unpackModuleId;
 const require = arg1;
-({ ScrollView: closure_5, View: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = {};
-_createForOfIteratorHelperLoose = { flex: 1, backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-_createForOfIteratorHelperLoose.container = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.scroll = { flex: 1 };
-_createForOfIteratorHelperLoose.hidden = { opacity: 0 };
-_createForOfIteratorHelperLoose.scrollContent = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-let obj1 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_16, paddingTop: require("_createForOfIteratorHelperLoose").space.PX_8, paddingBottom: require("_createForOfIteratorHelperLoose").space.PX_8 };
-_createForOfIteratorHelperLoose.footer = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj2 = { paddingHorizontal: require("_createForOfIteratorHelperLoose").space.PX_12 };
+({ ScrollView: c5, View: closure_6 } = get_ActivityIndicator);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { container: null, scroll: null, hidden: null, scrollContent: null, footer: null };
+createCacheKey = { flex: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+createCacheKey[0] = createCacheKey;
+createCacheKey[1] = { flex: 1 };
+createCacheKey[2] = { opacity: 0 };
+createCacheKey[3] = { paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_8, paddingBottom: require("Themes").space.PX_8 };
+let obj1 = { paddingHorizontal: require("Themes").space.PX_16, paddingTop: require("Themes").space.PX_8, paddingBottom: require("Themes").space.PX_8 };
+createCacheKey[4] = { paddingHorizontal: require("Themes").space.PX_12 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj2 = { paddingHorizontal: require("Themes").space.PX_12 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/message_request/native/RestrictedMessageRequestPreview.tsx");
 
 export default function RestrictedMessageRequestPreview(channelId) {
   channelId = channelId.channelId;
+  let ref;
+  let dependencyMap;
+  let first;
+  let React;
+  let closure_5;
   let first1;
-  const tmp = _createForOfIteratorHelperLoose();
-  const ref = React.useRef(null);
-  const dependencyMap = React.useRef(false);
-  const tmp3 = first(React.useState(false), 2);
-  first = tmp3[0];
-  React = tmp3[1];
-  let obj = channelId(566);
-  const items = [closure_8];
+  const tmp = createCacheKey();
+  let obj = React;
+  ref = React.useRef(null);
+  dependencyMap = React.useRef(false);
+  const tmp5 = first(React.useState(false), 2);
+  first = tmp5[0];
+  React = tmp5[1];
+  let obj1 = channelId(589);
+  const items = [reinjectEphemerals];
   const items1 = [channelId];
-  let closure_5 = obj.useStateFromStores(items, () => outer1_8.getMessages(channelId).length > 0, items1);
-  let obj1 = channelId(566);
-  const items2 = [_isNativeReflectConstruct];
+  closure_5 = obj1.useStateFromStores(items, () => outer1_8.getMessages(channelId).length > 0, items1);
+  let obj2 = channelId(589);
+  const items2 = [ensureGuildLoaded];
   const items3 = [channelId];
-  const stateFromStores = obj1.useStateFromStores(items2, () => outer1_7.getChannel(channelId), items3);
+  const stateFromStores = obj2.useStateFromStores(items2, () => outer1_7.getChannel(channelId), items3);
   first1 = undefined;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     const recipients = stateFromStores.recipients;
-    if (null != recipients) {
+    if (recipients != null) {
       first1 = recipients[0];
     }
   }
-  let obj2 = channelId(566);
-  const items4 = [closure_9];
+  const items4 = [mergeGuildAvatar];
   const items5 = [first1];
-  const stateFromStores1 = obj2.useStateFromStores(items4, () => {
+  const stateFromStores1 = channelId(589).useStateFromStores(items4, () => {
     let user;
     if (null != first1) {
-      user = outer1_9.getUser(first1);
+      user = outer1_9.getUser(tmp);
     }
     return user;
   }, items5);
   const items6 = [first];
-  const effect = React.useEffect(() => {
+  const effect = obj.useEffect(() => {
     if (!first) {
       const _setTimeout = setTimeout;
-      const timeout = setTimeout(() => outer1_4(true), 1000);
+      const timeout = setTimeout(() => callback(true), 1000);
       return () => clearTimeout(closure_0);
     }
   }, items6);
-  let tmp10Result = null;
+  let tmp13Result = null;
   if (null != stateFromStores) {
-    tmp10Result = null;
+    tmp13Result = null;
     if (null != stateFromStores1) {
-      obj = { style: tmp.container };
-      obj = { ref };
+      obj = { style: null, children: null };
+      obj[0] = tmp.container;
+      obj = { ref: null, style: null, contentContainerStyle: null, onScrollBeginDrag: null, onContentSizeChange: null, children: null };
+      obj[0] = ref;
       const items7 = [tmp.scroll, ];
       let hidden = null;
       if (!first) {
         hidden = tmp.hidden;
       }
       items7[1] = hidden;
-      obj.style = items7;
-      obj.contentContainerStyle = tmp.scrollContent;
-      obj.onScrollBeginDrag = function onScrollBeginDrag() {
+      obj[1] = items7;
+      obj[2] = tmp.scrollContent;
+      obj[3] = function onScrollBeginDrag() {
         closure_2.current = true;
       };
-      obj.onContentSizeChange = function onContentSizeChange() {
+      obj[4] = function onContentSizeChange() {
         if (!ref.current) {
           const current = ref.current;
-          if (null != current) {
-            const obj = { animated: false };
-            current.scrollToEnd(obj);
+          if (current != null) {
+            current.scrollToEnd({ animated: false });
           }
+        }
+        let tmp4 = !first;
+        if (!first) {
+          tmp4 = closure_5;
         }
         if (tmp4) {
           const _requestAnimationFrame = requestAnimationFrame;
-          const animationFrame = requestAnimationFrame(() => outer1_4(true));
+          const animationFrame = requestAnimationFrame(() => callback(true));
         }
       };
-      obj1 = { channel: stateFromStores, user: stateFromStores1 };
-      const items8 = [callback(ref(15688), obj1), ];
-      obj2 = { channelId };
-      items8[1] = callback(ref(15690), obj2);
-      obj.children = items8;
+      obj1 = { channel: null, user: null };
+      obj1[0] = stateFromStores;
+      obj1[1] = stateFromStores1;
+      const items8 = [callback(tmp2(15723), obj1), ];
+      obj2 = { channelId: null };
+      obj2[0] = channelId;
+      items8[1] = callback(tmp2(15725), obj2);
+      obj[5] = items8;
       const items9 = [closure_11(closure_5, obj), ];
-      const obj3 = {};
+      const obj3 = { style: null, children: null };
       const items10 = [tmp.footer, ];
-      const obj4 = { paddingBottom: ref(689).space.PX_8 + ref(1557)().bottom };
+      const obj4 = { paddingBottom: null };
+      obj4[0] = tmp2(712).space.PX_8 + ref(1581)().bottom;
       items10[1] = obj4;
-      obj3.style = items10;
-      const obj5 = { channel: stateFromStores };
-      obj3.children = callback(ref(11507), obj5);
+      obj3[0] = items10;
+      const obj5 = { channel: null };
+      obj5[0] = stateFromStores;
+      obj3[1] = callback(tmp2(11531), obj5);
       items9[1] = callback(first1, obj3);
-      obj.children = items9;
-      tmp10Result = tmp10(first1, obj);
-      const tmp11 = first1;
-      const tmp12 = closure_5;
+      obj[1] = items9;
+      tmp13Result = tmp13(tmp14, obj);
+      const tmp15 = closure_5;
     }
   }
-  return tmp10Result;
+  return tmp13Result;
 };

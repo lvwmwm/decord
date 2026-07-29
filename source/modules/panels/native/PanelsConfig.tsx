@@ -1,10 +1,16 @@
-// Module ID: 14895
-// Function ID: 113466
+// Module ID: 14921
+// Function ID: 14922
 // Name: isTimingConfig
-// Dependencies: [1273, 2]
+// Dependencies: [1297, 2]
+// Exports: isTimingConfig
 
-// Module 14895 (isTimingConfig)
-let closure_0 = { code: "function isTimingConfig_PanelsConfigTsx1(obj){return obj!=null&&obj.duration!=null;}" };
+// Module 14921 (isTimingConfig)
+function isTimingConfig(duration) {
+  return null != duration && null != duration.duration;
+}
+isTimingConfig.__closure = {};
+isTimingConfig.__workletHash = 14033676769786;
+isTimingConfig.__initData = { code: "function isTimingConfig_PanelsConfigTsx1(obj){return obj!=null&&obj.duration!=null;}" };
 let obj = { mass: 1, stiffness: 250, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
 obj = { damping: 30 };
 const merged = Object.assign(obj);
@@ -12,26 +18,16 @@ obj = { damping: 20 };
 const merged1 = Object.assign(obj);
 const obj1 = { duration: 250, easing: require("Button").STANDARD_EASING };
 const obj2 = { duration: 200, easing: require("Button").STANDARD_EASING };
-const obj3 = {};
-const tmp2 = (() => {
-  export function isTimingConfig(duration) {
-    return null != duration && null != duration.duration;
-  }
-  isTimingConfig.__closure = {};
-  isTimingConfig.__workletHash = 14033676769786;
-  isTimingConfig.__initData = closure_0;
-  return isTimingConfig;
-})();
-obj3.swipeSidePanelOpen = { duration: 250, easing: require("Button").DECELERATED_EASING };
+const obj3 = { swipeSidePanelOpen: null, swipeSidePanelClose: null, nonSwipeSidePanelOpen: null, nonSwipeSidePanelClose: null, touchSlopForPanGesture: 8, minFlingVelocityX: 240 };
+obj3[0] = { duration: 250, easing: require("Button").DECELERATED_EASING };
 const obj4 = { duration: 250, easing: require("Button").DECELERATED_EASING };
-obj3.swipeSidePanelClose = { duration: 200, easing: require("Button").DECELERATED_EASING };
-obj3.nonSwipeSidePanelOpen = obj1;
-obj3.nonSwipeSidePanelClose = obj2;
-obj3.touchSlopForPanGesture = 8;
-obj3.minFlingVelocityX = 240;
+obj3[1] = { duration: 200, easing: require("Button").DECELERATED_EASING };
+obj3[2] = obj1;
+obj3[3] = obj2;
 const obj5 = { duration: 200, easing: require("Button").DECELERATED_EASING };
 const result = require("set").fileFinishedImporting("modules/panels/native/PanelsConfig.tsx");
 
+export { isTimingConfig };
 export const SIDE_PANEL_OPEN_DURATION_MS = 250;
 export const SIDE_PANEL_CLOSE_DURATION_MS = 200;
 export const DEFAULT_PANELS_ANIMATION_CONFIG = { swipeSidePanelOpen: obj, swipeSidePanelClose: obj, nonSwipeSidePanelOpen: obj1, nonSwipeSidePanelClose: obj2, touchSlopForPanGesture: 8, minFlingVelocityX: 240 };

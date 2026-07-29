@@ -1,10 +1,10 @@
-// Module ID: 12035
-// Function ID: 92886
+// Module ID: 12059
+// Function ID: 12060
 // Name: widgetGameTagMetadata
-// Dependencies: [12036, 12037, 9271, 9273, 3867, 2]
+// Dependencies: [12060, 12061, 9295, 9297, 3891, 2]
 // Exports: getWidgetGameTagMetadata
 
-// Module 12035 (widgetGameTagMetadata)
+// Module 12059 (widgetGameTagMetadata)
 import WidgetGameTagIconRole from "WidgetGameTagIconRole";
 
 const obj = {};
@@ -16,9 +16,9 @@ const widgetGameTagMetadata = WidgetGameTagIconRole.buildWidgetGameTagMetadata(o
 const result = require("ThumbsUpIcon").fileFinishedImporting("modules/user_profile/UserProfileGameWidgetConstants.native.tsx");
 
 export const WIDGET_GAME_TAG_METADATA = widgetGameTagMetadata;
-export const getWidgetGameTagMetadata = function getWidgetGameTagMetadata(tag) {
+export const getWidgetGameTagMetadata = function getWidgetGameTagMetadata(arg0) {
   let tmp2 = null;
-  if (null != widgetGameTagMetadata[tag]) {
+  if (null != widgetGameTagMetadata[arg0]) {
     tmp2 = tmp;
   }
   return tmp2;

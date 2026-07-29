@@ -1,16 +1,16 @@
-// Module ID: 11294
-// Function ID: 87640
+// Module ID: 11318
+// Function ID: 11319
 // Name: useLaunchingActivityButtonState
-// Dependencies: [31, 1347, 5668, 5503, 566, 10481, 8101, 2]
+// Dependencies: [19, 1371, 5686, 5521, 589, 10505, 8125, 2]
 // Exports: default
 
-// Module 11294 (useLaunchingActivityButtonState)
-import result from "result";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 11318 (useLaunchingActivityButtonState)
+import noop from "noop";
+import participantFromServer from "participantFromServer";
+import map from "map";
 
 const require = arg1;
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/app_launcher/utils/useLaunchingActivityButtonState.tsx");
+const result = require("map").fileFinishedImporting("modules/app_launcher/utils/useLaunchingActivityButtonState.tsx");
 
 export default function useLaunchingActivityButtonState(applicationId) {
   let importDefault;
@@ -30,29 +30,33 @@ export default function useLaunchingActivityButtonState(applicationId) {
     return _undefined.getLaunchState(applicationId, id);
   });
   const obj2 = applicationId(onSubmissionComplete[4]);
-  const items1 = [_isNativeReflectConstruct];
+  let tmp = applicationId;
+  const items1 = [map];
   stateFromStores1 = applicationId(onSubmissionComplete[4]).useStateFromStores(items1, () => outer1_5.isLaunchingFrame(applicationId));
   if (null == getOrFetchApplication) {
     stateFromStores1 = null != stateFromStores && stateFromStores.isLaunching && stateFromStores.componentId === applicationId.launchingComponentId;
     const tmp6 = null != stateFromStores && stateFromStores.isLaunching && stateFromStores.componentId === applicationId.launchingComponentId;
   } else {
-    const obj4 = applicationId(onSubmissionComplete[5]);
+    const tmpResult = tmp(tmp2[5]);
   }
-  const tmp7 = importDefault(onSubmissionComplete[6])(stateFromStores1);
+  let tmp7 = importDefault(tmp2[6])(stateFromStores1);
   c4 = tmp7;
   const items2 = [stateFromStores1, tmp7, onSubmissionComplete];
   const effect = stateFromStores1.useEffect(() => {
+    let tmp = !stateFromStores1;
+    if (!stateFromStores1) {
+      tmp = c4;
+    }
     if (tmp) {
-      if (null != onSubmissionComplete) {
-        onSubmissionComplete();
+      if (onSubmissionComplete != null) {
+        tmp2();
       }
     }
   }, items2);
-  obj = { submitting: stateFromStores1 };
-  let tmp9 = null;
-  if (null != tmp7) {
-    tmp9 = tmp7;
+  obj = { submitting: stateFromStores1, wasSubmitting: null };
+  if (tmp7 == null) {
+    tmp7 = null;
   }
-  obj.wasSubmitting = tmp9;
+  obj[1] = tmp7;
   return obj;
 };

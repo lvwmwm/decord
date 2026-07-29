@@ -1,56 +1,58 @@
-// Module ID: 7961
-// Function ID: 63186
+// Module ID: 7986
+// Function ID: 7987
 // Name: preloadUserBannerImage
-// Dependencies: [1392, 3838, 2]
+// Dependencies: [1416, 3862, 2]
 // Exports: default
 
-// Module 7961 (preloadUserBannerImage)
+// Module 7986 (preloadUserBannerImage)
 const result = require("set").fileFinishedImporting("modules/user_profile/preloadUserBannerImage.tsx");
 
-export default function preloadUserBannerImage(user, guildId) {
-  if ("undefined" !== typeof globalThis.Image) {
+export default function preloadUserBannerImage(user) {
+  if (typeof globalThis.Image !== "Array") {
     user = user.user;
     let id;
-    if (null != user) {
+    if (user != null) {
       id = user.id;
     }
     if (null != id) {
       if ("" !== id) {
-        let tmp3 = null != guildId;
+        let tmp3 = null != arg1;
         if (tmp3) {
           const guild_member_profile = user.guild_member_profile;
           let banner;
-          if (null != guild_member_profile) {
+          if (guild_member_profile != null) {
             banner = guild_member_profile.banner;
           }
           tmp3 = null != banner;
         }
         let guildMemberBannerURL;
         if (tmp3) {
-          let obj = require(1392) /* getAvatarURL */;
-          obj = { id, guildId, banner: user.guild_member_profile.banner };
-          const GifAutoPlay = require(3838) /* explicitContentFromProto */.GifAutoPlay;
-          obj.canAnimate = GifAutoPlay.getSetting();
-          obj.size = 600;
+          let obj = require(1416) /* getAvatarURL */;
+          obj = { id: null, guildId: null, banner: null, canAnimate: null, size: 600 };
+          obj[0] = id;
+          obj[1] = arg1;
+          obj[2] = user.guild_member_profile.banner;
+          const GifAutoPlay = require(3862) /* explicitContentFromProto */.GifAutoPlay;
+          obj[3] = GifAutoPlay.getSetting();
           guildMemberBannerURL = obj.getGuildMemberBannerURL(obj);
         }
         let banner1;
-        if (null != user) {
+        if (user != null) {
           const user_profile = user.user_profile;
-          if (null != user_profile) {
+          if (user_profile != null) {
             banner1 = user_profile.banner;
           }
         }
         if (null != banner1) {
-          obj = { id, banner: user.user_profile.banner };
-          const GifAutoPlay2 = require(3838) /* explicitContentFromProto */.GifAutoPlay;
-          obj.canAnimate = GifAutoPlay2.getSetting();
-          obj.size = 600;
-          guildMemberBannerURL = require(1392) /* getAvatarURL */.getUserBannerURL(obj);
-          const obj3 = require(1392) /* getAvatarURL */;
+          obj = { id: null, banner: null, canAnimate: null, size: 600 };
+          obj[0] = id;
+          obj[1] = user.user_profile.banner;
+          const GifAutoPlay2 = require(3862) /* explicitContentFromProto */.GifAutoPlay;
+          obj[2] = GifAutoPlay2.getSetting();
+          guildMemberBannerURL = require(1416) /* getAvatarURL */.getUserBannerURL(obj);
+          const obj3 = require(1416) /* getAvatarURL */;
         }
         if (null != guildMemberBannerURL) {
-          const prototype = globalThis.Image.prototype;
           const image = new globalThis.Image();
           image.src = guildMemberBannerURL;
         }

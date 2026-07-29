@@ -1,68 +1,75 @@
-// Module ID: 15579
-// Function ID: 119746
-// Dependencies: [31, 27, 8743, 33, 4165, 689, 1557, 14902, 1450, 4019, 15580, 478, 2]
+// Module ID: 15613
+// Function ID: 15614
+// Dependencies: [19, 17, 8767, 21, 4189, 712, 1581, 14928, 1474, 4043, 15614, 501, 2]
 
-// Module 15579
+// Module 15613
 import { View } from "get ActivityIndicator";
 import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 const require = arg1;
-let obj = {};
-obj = { flex: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", borderRadius: require("_createForOfIteratorHelperLoose").radii.xl };
-obj.container = obj;
-_createForOfIteratorHelperLoose = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SCRIM, borderRadius: require("_createForOfIteratorHelperLoose").radii.none };
-obj.androidContainer = _createForOfIteratorHelperLoose;
-let obj2 = { flex: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.xl, overflow: "hidden" };
-obj.wrapper = obj2;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo(function YouScreenContainer(route) {
+let obj = { container: null, androidContainer: null, wrapper: null };
+obj = { flex: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", borderRadius: require("Themes").radii.xl };
+obj[0] = obj;
+createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_SCRIM, borderRadius: require("Themes").radii.none };
+obj[1] = createCacheKey;
+obj[2] = { flex: 1, borderRadius: require("Themes").radii.xl, overflow: "hidden" };
+let closure_6 = createCacheKey.createStyles(obj);
+let obj2 = { flex: 1, borderRadius: require("Themes").radii.xl, overflow: "hidden" };
+const memoResult = importAllResult.memo(function YouScreenContainer(route) {
   route = route.route;
-  let tmp = callback();
-  let obj = require(14902) /* trackForScreen */;
+  let items1 = callback();
+  let tmp = importDefault;
+  let tmp5Result = dependencyMap;
+  let obj = require(14928) /* trackTabPressed */;
   const trackTabPerformance = obj.useTrackTabPerformance(RootNavigatorScreen.YOU);
-  if (null != route) {
+  if (route != null) {
     const params = route.params;
-    if (null != params) {
+    if (params != null) {
       const initialTab = params.initialTab;
     }
   }
-  if (importDefault(4019)().isChatBesideChannelList) {
-    obj = {};
-    const items = [tmp.container, ];
-    let obj3 = require(478) /* isWindows */;
-    let tmp9;
-    if (obj3.isAndroid()) {
+  if (tmp(4043)().isChatBesideChannelList) {
+    const items = [items1.container, ];
+    let tmp3Result = tmp3(501);
+    let tmp7;
+    if (tmp3Result.isAndroid()) {
       obj = {};
-      const merged = Object.assign(tmp.androidContainer);
-      obj["paddingTop"] = importDefault(1557)().top;
-      tmp9 = obj;
+      const merged = Object.assign(items1.androidContainer);
+      obj.paddingTop = importDefault(1581)().top;
+      tmp7 = obj;
     }
-    items[1] = tmp9;
-    obj.style = items;
-    let obj5 = require(478) /* isWindows */;
-    if (obj5.isAndroid()) {
-      const obj1 = {};
-      const items1 = [tmp.wrapper, ];
-      const obj2 = { maxWidth: 0.6 * importDefault(1450)().width };
+    obj = { style: null, children: null };
+    items[1] = tmp7;
+    obj[0] = items;
+    tmp3Result = tmp3(501);
+    if (tmp3Result.isAndroid()) {
+      const obj1 = { style: null, children: null };
+      items1 = [, ];
+      items1[0] = items1.wrapper;
+      const obj2 = { maxWidth: null };
+      obj2[0] = 0.6 * tmp(1474)().width;
       items1[1] = obj2;
-      obj1.style = items1;
-      tmp = importDefault(15580);
-      obj3 = { initialTab };
-      obj1.children = tmp14(tmp, obj3);
-      let tmp14Result = tmp14(View, obj1);
+      obj1[0] = items1;
+      tmp = tmp(15614);
+      const obj3 = { initialTab: null };
+      obj3[0] = initialTab;
+      tmp5Result = tmp5(tmp, obj3);
+      obj1[1] = tmp5Result;
+      tmp5Result = tmp5(tmp6, obj1);
     } else {
-      const obj4 = { initialTab };
-      tmp14Result = tmp14(importDefault(15580), obj4);
+      const obj4 = { initialTab: null };
+      obj4[0] = initialTab;
+      tmp5Result = tmp5(tmp(15614), obj4);
     }
-    obj.children = tmp14Result;
-    tmp3(View, obj);
-    const tmp6 = View;
+    obj[1] = tmp5Result;
+    tmp5(View, obj);
   } else {
-    obj5 = { initialTab };
-    return tmp3(importDefault(15580), obj5);
+    const obj5 = { initialTab: null };
+    obj5[0] = initialTab;
+    return tmp5(tmp(15614), obj5);
   }
 });
 const result = require("MODE_CHANGE_PHYSICS").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenContainer.tsx");

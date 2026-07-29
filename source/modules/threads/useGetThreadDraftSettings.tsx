@@ -1,44 +1,46 @@
-// Module ID: 9545
-// Function ID: 74300
+// Module ID: 9569
+// Function ID: 9570
 // Name: useGetThreadDraftSettings
-// Dependencies: [4503, 566, 21, 2]
+// Dependencies: [4526, 589, 11, 2]
 // Exports: default, useHasThreadDraft
 
-// Module 9545 (useGetThreadDraftSettings)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 9569 (useGetThreadDraftSettings)
+import handleChanged from "handleChanged";
 
 const require = arg1;
 const result = require("DISCORD_EPOCH").fileFinishedImporting("modules/threads/useGetThreadDraftSettings.tsx");
 
 export default function useGetThreadDraftSettings(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => {
-    let tmp = null;
+  const items = [handleChanged];
+  return _require(589).useStateFromStores(items, () => {
+    let tmp2 = null;
     if (null != closure_0) {
-      let threadSettings = outer1_3.getThreadSettings(closure_0);
-      if (null == threadSettings) {
-        threadSettings = outer1_3.getThreadDraftWithParentMessageId(outer1_1(outer1_2[2]).castChannelIdAsMessageId(closure_0));
-        const obj = outer1_1(outer1_2[2]);
+      let threadSettings = outer1_3.getThreadSettings(tmp);
+      if (threadSettings == null) {
+        threadSettings = obj.getThreadDraftWithParentMessageId(outer1_1(outer1_2[2]).castChannelIdAsMessageId(tmp));
+        const obj2 = outer1_1(outer1_2[2]);
       }
-      tmp = threadSettings;
+      tmp2 = threadSettings;
+      obj = outer1_3;
     }
-    return tmp;
+    return tmp2;
   });
 };
 export const useHasThreadDraft = function useHasThreadDraft(arg0) {
   const _require = arg0;
-  const items = [_isNativeReflectConstruct];
-  return _require(566).useStateFromStores(items, () => {
-    let tmp = null != closure_0;
-    if (tmp) {
-      let threadSettings = outer1_3.getThreadSettings(closure_0);
-      if (null == threadSettings) {
-        threadSettings = outer1_3.getThreadDraftWithParentMessageId(outer1_1(outer1_2[2]).castChannelIdAsMessageId(closure_0));
-        const obj = outer1_1(outer1_2[2]);
+  const items = [handleChanged];
+  return _require(589).useStateFromStores(items, () => {
+    let tmp2 = null != closure_0;
+    if (tmp2) {
+      let threadSettings = outer1_3.getThreadSettings(tmp);
+      if (threadSettings == null) {
+        threadSettings = obj.getThreadDraftWithParentMessageId(outer1_1(outer1_2[2]).castChannelIdAsMessageId(tmp));
+        const obj2 = outer1_1(outer1_2[2]);
       }
-      tmp = null != threadSettings;
+      tmp2 = null != threadSettings;
+      obj = outer1_3;
     }
-    return tmp;
+    return tmp2;
   });
 };

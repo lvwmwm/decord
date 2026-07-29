@@ -1,24 +1,24 @@
-// Module ID: 11697
-// Function ID: 90582
+// Module ID: 11721
+// Function ID: 11722
 // Name: ApplicationIconAndName
-// Dependencies: [33, 4165, 689, 1273, 4161, 2]
+// Dependencies: [21, 4189, 712, 1297, 4185, 2]
 // Exports: default
 
-// Module 11697 (ApplicationIconAndName)
+// Module 11721 (ApplicationIconAndName)
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_3;
-let closure_4;
-let closure_5;
-({ jsx: closure_3, Fragment: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles((width) => {
-  let obj = {};
-  obj = { width, height: width, marginTop: -1, marginRight: 4, borderRadius: importDefault(689).radii.xs };
-  obj.gameIcon = obj;
+let c3;
+let c4;
+let c5;
+({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles((width) => {
+  let obj = { gameIcon: null };
+  obj = { width, height: width, marginTop: -1, marginRight: 4, borderRadius: importDefault(712).radii.xs };
+  obj[0] = obj;
   return obj;
 });
-const result = require("_createForOfIteratorHelperLoose").fileFinishedImporting("modules/user_profile/native/ApplicationIconAndName.tsx");
+const result = require("Themes").fileFinishedImporting("modules/user_profile/native/ApplicationIconAndName.tsx");
 
 export default function ApplicationIconAndName(textVariant) {
   let application;
@@ -28,25 +28,21 @@ export default function ApplicationIconAndName(textVariant) {
   if (useComma === undefined) {
     useComma = false;
   }
-  let obj = {};
-  obj = { style: callback(iconSize).gameIcon, resizeMode: "contain" };
-  obj = {};
-  const iconURL = application.getIconURL(iconSize);
-  let str = "";
-  if (null != iconURL) {
-    str = iconURL;
+  let obj = { style: callback(iconSize).gameIcon, resizeMode: "contain", source: null, disableColor: true };
+  let str = application.getIconURL(iconSize);
+  if (str == null) {
+    str = "";
   }
-  obj.uri = str;
-  obj.source = obj;
-  obj.disableColor = true;
-  const items = [closure_3(require(1273) /* Button */.Icon, obj, application.id), ];
-  const obj1 = { variant: textVariant.textVariant };
+  obj[2] = { uri: str };
+  const items = [closure_3(require(1297) /* Button */.Icon, obj, application.id), ];
+  obj = { variant: textVariant.textVariant, children: null };
   let str2 = "";
   if (useComma) {
     str2 = ", ";
   }
-  obj1.children = "" + application.name + str2;
-  items[1] = closure_3(require(4161) /* Text */.Text, obj1);
-  obj.children = items;
+  obj = { children: null };
+  obj[1] = "" + application.name + str2;
+  items[1] = closure_3(require(4185) /* Text */.Text, obj);
+  obj[0] = items;
   return closure_5(closure_4, obj);
 };

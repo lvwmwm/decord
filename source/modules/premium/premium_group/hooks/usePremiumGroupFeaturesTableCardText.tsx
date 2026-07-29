@@ -1,58 +1,61 @@
-// Module ID: 12494
-// Function ID: 96719
-// Name: getPremiumGroupFeaturesTableCardSubheaderString
-// Dependencies: [3817, 3825, 1212, 2781, 1868, 7808, 12495, 566, 2]
+// Module ID: 12516
+// Function ID: 12517
+// Name: usePremiumGroupFeaturesTableCardText
+// Dependencies: [3841, 3849, 1236, 2805, 1892, 7831, 12517, 589, 2]
 // Exports: default
 
-// Module 12494 (getPremiumGroupFeaturesTableCardSubheaderString)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import TOTAL_PREMIUM_GROUP_MEMBER_SEATS from "TOTAL_PREMIUM_GROUP_MEMBER_SEATS";
+// Module 12516 (usePremiumGroupFeaturesTableCardText)
+import reset from "reset";
+import SubscriptionStatusTypes from "SubscriptionStatusTypes";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-function getPremiumGroupFeaturesTableCardSubheaderString(arg0, primaryName, stateFromStores) {
-  if (arg0 === require(1868) /* _callSuper */.PremiumSubscriptionGroupRole.PRIMARY) {
-    let obj = { withIntervals: true };
-    let priceString = require(7808) /* getPremiumGroupInviteEmbedText */.getPriceString(stateFromStores, obj);
-    const obj2 = require(7808) /* getPremiumGroupInviteEmbedText */;
-  } else {
-    priceString = null;
-    if (null != primaryName) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      obj = { primaryName, premiumGroupProductName: callback() };
-      priceString = intl.format(importDefault(2781).Nu9LNm, obj);
-    }
-  }
-  let str = "...";
-  if (null != priceString) {
-    str = priceString;
-  }
-  return str;
-}
-({ getPremiumGroupProductName: closure_4, HELP_CENTER_LINK: closure_5 } = TOTAL_PREMIUM_GROUP_MEMBER_SEATS);
+({ getPremiumGroupProductName: c4, HELP_CENTER_LINK: c5 } = SubscriptionStatusTypes);
 const result = require("getSystemLocale").fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupFeaturesTableCardText.tsx");
 
 export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
-  let obj = { useCachedData: true, fetch: arg0 === require(1868) /* _callSuper */.PremiumSubscriptionGroupRole.MEMBER };
-  let obj1 = require(566) /* initialize */;
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj1.useStateFromStores(items, () => outer1_3.getPremiumGroupSubscription());
-  if (arg0 === require(1868) /* _callSuper */.PremiumSubscriptionGroupRole.UNSPECIFIED) {
+  let obj = { useCachedData: true, fetch: arg0 === require(1892) /* create */.PremiumSubscriptionGroupRole.MEMBER };
+  const tmp4 = importDefault(12517)(obj);
+  let obj1 = require(589) /* initialize */;
+  const items = [reset];
+  const stateFromStores = obj1.useStateFromStores(items, () => premiumGroupSubscription.getPremiumGroupSubscription());
+  if (arg0 === require(1892) /* create */.PremiumSubscriptionGroupRole.UNSPECIFIED) {
     return null;
   } else {
-    if (arg0 === require(1868) /* _callSuper */.PremiumSubscriptionGroupRole.PRIMARY) {
-      const intl2 = require(1212) /* getSystemLocale */.intl;
-      obj = { helpCenterLink: closure_5, premiumGroupProductName: callback() };
-      let formatResult = intl2.format(importDefault(2781)["+R/K74"], obj);
+    if (arg0 === tmp(1892).PremiumSubscriptionGroupRole.PRIMARY) {
+      let priceString = tmp(7831).getPriceString(stateFromStores, { withIntervals: true });
+      const tmpResult = tmp(7831);
     } else {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      const tmp7 = importDefault(2781);
-      obj = { helpCenterLink: closure_5 };
-      formatResult = intl.format(arg1 ? tmp7["xF+upx"] : tmp7.qqfnOm, obj);
+      priceString = null;
+      if (null != tmp4) {
+        const intl = tmp(1236).intl;
+        obj = { primaryName: null, premiumGroupProductName: null };
+        obj[0] = tmp4;
+        obj[1] = callback();
+        priceString = intl.format(tmp3(2805).Nu9LNm, obj);
+      }
     }
-    obj1 = { subheaderString: getPremiumGroupFeaturesTableCardSubheaderString(arg0, tmp, stateFromStores), bodyString: formatResult };
-    return obj1;
+    let str = "...";
+    if (null != priceString) {
+      str = priceString;
+    }
+    if (arg0 === tmp(1892).PremiumSubscriptionGroupRole.PRIMARY) {
+      const intl3 = tmp(1236).intl;
+      obj = { helpCenterLink: null, premiumGroupProductName: null };
+      obj[0] = closure_5;
+      obj[1] = callback();
+      let formatResult = intl3.format(tmp3(2805)["+R/K74"], obj);
+    } else {
+      const intl2 = tmp(1236).intl;
+      const tmp3Result = tmp3(2805);
+      obj1 = { helpCenterLink: null };
+      obj1[0] = closure_5;
+      formatResult = intl2.format(arg1 ? tmp3Result["xF+upx"] : tmp3Result.qqfnOm, obj1);
+    }
+    const obj2 = { subheaderString: null, bodyString: null };
+    obj2[0] = str;
+    obj2[1] = formatResult;
+    return obj2;
   }
-  tmp = importDefault(12495)(obj);
 };

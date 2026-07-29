@@ -1,11 +1,10 @@
 // Module ID: 9608
-// Function ID: 74809
+// Function ID: 9609
 // Name: registerAsset
-// Dependencies: [1217]
+// Dependencies: [1241]
 
 // Module 9608 (registerAsset)
 import registerAsset from "registerAsset";
 
-const obj = { __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 18, height: 18, scales: [1, 2, 3], hash: "2ed56d0310ca0815cf3884cb061fb3d0", name: "ic_play", type: "png" };
 
-export default registerAsset.registerAsset(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "a31dcad33e17aebec69c2bc953578b8c", name: "ChevronLargeLeftIcon", type: "png" });

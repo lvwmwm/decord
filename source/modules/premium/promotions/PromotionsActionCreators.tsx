@@ -1,99 +1,381 @@
-// Module ID: 6543
-// Function ID: 58237
+// Module ID: 6564
+// Function ID: 6565
 // Name: fetchActivePromotions
-// Dependencies: [5, 1922, 6243, 6242, 1852, 653, 686, 6544, 507, 5832, 1331, 1313, 6545, 2]
+// Dependencies: [5, 1946, 6263, 6262, 1876, 676, 709, 6565, 530, 5850, 1355, 1337, 6566, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchActiveBogoPromotion, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 6543 (fetchActivePromotions)
+// Module 6564 (fetchActivePromotions)
 import ME from "ME";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_isNativeReflectConstruct";
+import _getSystemLocale from "_getSystemLocale";
+import createFromServer from "createFromServer";
+import createEmptyPromotionsByType from "createEmptyPromotionsByType";
 import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_7 } from "GuildFeatures";
 import { Endpoints } from "ME";
 
 const require = arg1;
 function fetchActivePromotions() {
-  return _fetchActivePromotions(...arguments);
-}
-async function _fetchActivePromotions() {
-  const locale = outer2_4.locale;
-  let obj = outer2_1(outer2_2[6]);
-  obj.dispatch({ type: "ACTIVE_PROMOTIONS_FETCH", locale });
-  const HTTP = outer2_0(outer2_2[8]).HTTP;
-  obj = { url: outer2_8.PROMOTIONS, query: { locale, platform: outer2_0(outer2_2[7]).MarketingComponentPlatform.MOBILE }, oldFormErrors: true, rejectWithError: true };
-  let consumedInboundPromotionId = outer2_6.consumedInboundPromotionId;
-  if (!outer2_6.hasFetchedConsumedInboundPromotionId) {
-    const obj3 = outer2_0(outer2_2[9]);
-    const found = yield outer2_0(outer2_2[9]).fetchUserEntitlementsForApplication(outer2_7, false).find((promotion_id) => {
-      let tmp = null != promotion_id.promotion_id;
-      if (tmp) {
-        tmp = true === promotion_id.consumed;
-      }
-      return tmp;
-    });
-    let promotion_id;
-    if (null != found) {
-      promotion_id = found.promotion_id;
-    }
-    let tmp11 = null;
-    if (null != promotion_id) {
-      tmp11 = promotion_id;
-    }
-    consumedInboundPromotionId = tmp11;
-    const arr = yield outer2_0(outer2_2[9]).fetchUserEntitlementsForApplication(outer2_7, false);
+  const self = this;
+  const apply = _fetchActivePromotions.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-  const tmp2 = yield HTTP.get(obj);
-  obj = { type: "ACTIVE_PROMOTIONS_FETCH_SUCCESS", promotions: tmp2.body, consumedInboundPromotionId };
-  outer2_1(outer2_2[6]).dispatch(obj);
+  return applyArgumentsResult;
+}
+function _fetchActivePromotions() {
+  const self = this;
+  let tmp = callback(function*() {
+    if (c6 === 2) {
+      c6 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c6 = 2;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            let promotion_id = tmp3;
+            let callback = tmp7;
+            let lib;
+            callback = undefined;
+            promotion_id = undefined;
+            let locale = 1;
+            locale = locale.locale;
+            let obj1 = { type: "ACTIVE_PROMOTIONS_FETCH", locale: null };
+            obj1[1] = locale;
+            outer1_1(outer1_2[6]).dispatch(obj1);
+            const HTTP = outer1_0(outer1_2[8]).HTTP;
+            const obj2 = { url: null, query: null, oldFormErrors: true, rejectWithError: true };
+            obj2[0] = outer1_8.PROMOTIONS;
+            let obj3 = { locale: null, platform: null };
+            obj3[0] = locale;
+            obj3[1] = outer1_0(outer1_2[7]).MarketingComponentPlatform.MOBILE;
+            obj2[1] = obj3;
+            c5 = 2;
+            c6 = 1;
+            const obj4 = { value: null, done: false };
+            obj4[0] = HTTP.get(obj2);
+            return obj4;
+          }
+        } else {
+          if (1 === tmp7) {
+            locale = 0;
+            let obj6 = callback(promotion_id[6]);
+            obj6.dispatch({ type: "ACTIVE_PROMOTIONS_FETCH_FAIL" });
+            c6 = 3;
+          } else {
+            if (2 === tmp7) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw arg1;
+              } else if (arg0 !== 2) {
+                lib = arg1;
+                callback = c6.consumedInboundPromotionId;
+                if (!c6.hasFetchedConsumedInboundPromotionId) {
+                  obj1 = lib(promotion_id[9]);
+                  c5 = 3;
+                  c6 = 1;
+                  const obj5 = { value: null, done: false };
+                  obj5[0] = obj1.fetchUserEntitlementsForApplication(closure_7, false);
+                  return obj5;
+                }
+              }
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              locale = 0;
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              promotion_id = arg1.find((promotion_id) => {
+                let tmp = null != promotion_id.promotion_id;
+                if (tmp) {
+                  tmp = true === promotion_id.consumed;
+                }
+                return tmp;
+              });
+              promotion_id = undefined;
+              if (promotion_id != null) {
+                promotion_id = promotion_id.promotion_id;
+              }
+              lib = promotion_id;
+              if (promotion_id == null) {
+                lib = null;
+              }
+              callback = lib;
+            }
+            obj3 = callback(promotion_id[6]);
+            obj6 = { type: "ACTIVE_PROMOTIONS_FETCH_SUCCESS", promotions: null, consumedInboundPromotionId: null };
+            obj6[1] = lib.body;
+            obj6[2] = callback;
+            obj3.dispatch(obj6);
+            locale = 0;
+          }
+          locale = 0;
+          c6 = 3;
+          const obj7 = { value: null, done: true };
+          obj7[0] = arg1;
+          return obj7;
+        }
+      } catch (tmp28) {
+        let ME = tmp28;
+        if (tmp4 === locale) {
+          c6 = tmp2;
+          throw tmp28;
+        } else {
+          c5 = tmp;
+        }
+      }
+    }
+  });
+  const _fetchActivePromotions = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function dismissOutboundPromotionNotice() {
-  importDefault(686).dispatch({ type: "OUTBOUND_PROMOTION_NOTICE_DISMISS" });
-  const lastDismissedOutboundPromotionStartDate = closure_6.lastDismissedOutboundPromotionStartDate;
+  importDefault(709).dispatch({ type: "OUTBOUND_PROMOTION_NOTICE_DISMISS" });
+  const lastDismissedOutboundPromotionStartDate = createEmptyPromotionsByType.lastDismissedOutboundPromotionStartDate;
   if (null != lastDismissedOutboundPromotionStartDate) {
-    const PreloadedUserSettingsActionCreators = lastDismissedOutboundPromotionStartDate(1331).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = lastDismissedOutboundPromotionStartDate(1355).PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("userContent", (arg0) => {
       const StringValue = lastDismissedOutboundPromotionStartDate(outer1_2[11]).StringValue;
       arg0.lastDismissedOutboundPromotionStartDate = StringValue.create({ value: lastDismissedOutboundPromotionStartDate });
-    }, lastDismissedOutboundPromotionStartDate(1331).UserSettingsDelay.INFREQUENT_USER_ACTION);
+    }, lastDismissedOutboundPromotionStartDate(1355).UserSettingsDelay.INFREQUENT_USER_ACTION);
   }
 }
 function fetchActiveBogoPromotion() {
-  return _fetchActiveBogoPromotion(...arguments);
-}
-async function _fetchActiveBogoPromotion() {
-  if (!outer2_6.isFetchingActiveBogoPromotion) {
-    let obj = outer2_1(outer2_2[6]);
-    obj = { type: "ACTIVE_BOGO_PROMOTION_FETCH" };
-    obj.dispatch(obj);
-    const HTTP = outer2_0(outer2_2[8]).HTTP;
-    obj = { url: outer2_8.BOGO_PROMOTIONS };
-    const obj1 = { locale: outer2_4.locale };
-    obj.query = obj1;
-    obj.rejectWithError = true;
-    const obj2 = { type: "ACTIVE_BOGO_PROMOTION_FETCH_SUCCESS", activePromotion: outer2_5.createFromServer(yield HTTP.get(obj).body) };
-    outer2_1(outer2_2[6]).dispatch(obj2);
-    const obj5 = outer2_1(outer2_2[6]);
+  const self = this;
+  const apply = _fetchActiveBogoPromotion.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
+  return applyArgumentsResult;
+}
+function _fetchActiveBogoPromotion() {
+  const self = this;
+  const tmp = callback(function*() {
+    if (c5 === 2) {
+      c5 = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c5 = 2;
+        if (0 === locale) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const callback = tmp3;
+            let body = tmp7;
+            body = undefined;
+            if (!outer1_6.isFetchingActiveBogoPromotion) {
+              let c3 = 1;
+              let obj4 = outer1_1(outer1_2[6]);
+              obj4.dispatch({ type: "ACTIVE_BOGO_PROMOTION_FETCH" });
+              const HTTP = outer1_0(outer1_2[8]).HTTP;
+              const obj1 = { url: null, query: null, rejectWithError: true };
+              obj1[0] = outer1_8.BOGO_PROMOTIONS;
+              const obj2 = { locale: null };
+              obj2[0] = locale.locale;
+              obj1[1] = obj2;
+              locale = 2;
+              c5 = 1;
+              let obj3 = { value: null, done: false };
+              obj3[0] = HTTP.get(obj1);
+              return obj3;
+            }
+          }
+        } else {
+          if (1 === tmp7) {
+            c3 = 0;
+            obj3 = callback(709);
+            obj3.dispatch({ type: "ACTIVE_BOGO_PROMOTION_FETCH_FAIL" });
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            body = arg1.body;
+            obj = callback(709);
+            obj4 = { type: "ACTIVE_BOGO_PROMOTION_FETCH_SUCCESS", activePromotion: null };
+            obj4[1] = c5.createFromServer(body);
+            obj.dispatch(obj4);
+            c3 = 0;
+          }
+          c3 = 0;
+          c5 = 3;
+          const obj5 = { value: null, done: true };
+          obj5[0] = arg1;
+          return obj5;
+        }
+        c5 = 3;
+      } catch (tmp27) {
+        const dependencyMap = tmp27;
+        if (tmp4 === c3) {
+          c5 = tmp2;
+          throw tmp27;
+        } else {
+          locale = tmp;
+        }
+      }
+    }
+  });
+  const _fetchActiveBogoPromotion = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function fetchClaimedOutboundPromotionCodes() {
-  return _fetchClaimedOutboundPromotionCodes(...arguments);
+  const self = this;
+  const apply = _fetchClaimedOutboundPromotionCodes.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
-async function _fetchClaimedOutboundPromotionCodes() {
-  const HTTP = outer2_0(outer2_2[8]).HTTP;
-  obj = { url: outer2_8.CLAIMED_OUTBOUND_PROMOTION_CODES, query: obj, oldFormErrors: true };
-  obj = { locale: outer2_4.locale, rejectWithError: outer2_0(outer2_2[8]).rejectWithMigratedError() };
-  const body = yield HTTP.get(obj).body;
-  const mapped = body.map(outer2_0(outer2_2[12]).claimedOutboundPromotionCodeFromServer);
-  const obj3 = outer2_0(outer2_2[8]);
-  outer2_1(outer2_2[6]).dispatch({ type: "CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_SUCCESS", claimedOutboundPromotionCodes: mapped });
+function _fetchClaimedOutboundPromotionCodes() {
+  const self = this;
+  const tmp = callback(function*() {
+    if (locale === 2) {
+      locale = 3;
+      HermesBuiltin.throwTypeError();
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw arg1;
+      } else if (arg0 === 2) {
+        let obj = { value: null, done: true };
+        obj[0] = arg1;
+        return obj;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        locale = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            locale = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            locale = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const callback2 = tmp3;
+            let callback = tmp7;
+            callback = undefined;
+            let dependencyMap = 1;
+            const HTTP = outer1_0(530).HTTP;
+            const obj1 = { url: null, query: null, oldFormErrors: true, rejectWithError: null };
+            obj1[0] = outer1_8.CLAIMED_OUTBOUND_PROMOTION_CODES;
+            const obj2 = { locale: null };
+            obj2[0] = locale.locale;
+            obj1[1] = obj2;
+            obj1[3] = outer1_0(530).rejectWithMigratedError();
+            c3 = 2;
+            locale = 1;
+            let obj3 = { value: null, done: false };
+            obj3[0] = HTTP.get(obj1);
+            return obj3;
+          }
+        } else {
+          if (1 === tmp7) {
+            dependencyMap = 0;
+            obj3 = callback2(709);
+            obj3.dispatch({ type: "CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_FAIL" });
+            locale = 3;
+          } else if (arg0 === 1) {
+            locale = 3;
+            throw arg1;
+          } else if (arg0 !== 2) {
+            const body = arg1.body;
+            callback = body.map(callback(6566).claimedOutboundPromotionCodeFromServer);
+            obj = callback2(709);
+            const obj4 = { type: "CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_SUCCESS", claimedOutboundPromotionCodes: null };
+            obj4[1] = callback;
+            obj.dispatch(obj4);
+            dependencyMap = 0;
+          }
+          dependencyMap = 0;
+          locale = 3;
+          const obj5 = { value: null, done: true };
+          obj5[0] = arg1;
+          return obj5;
+        }
+      } catch (tmp20) {
+        if (tmp4 === dependencyMap) {
+          locale = tmp2;
+          throw tmp20;
+        } else {
+          c3 = tmp;
+        }
+      }
+    }
+  });
+  const _fetchClaimedOutboundPromotionCodes = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 function addClaimedOutboundPromotionCode(claimedOutboundPromotionCode) {
-  let obj = importDefault(686);
+  let obj = importDefault(709);
   obj = { type: "CLAIMED_OUTBOUND_PROMOTION_CODE_ADD", claimedOutboundPromotionCode };
   obj.dispatch(obj);
 }
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/premium/promotions/PromotionsActionCreators.tsx");
+const result = require("createFromServer").fileFinishedImporting("modules/premium/promotions/PromotionsActionCreators.tsx");
 
 export default {
   fetchActivePromotions,
@@ -101,7 +383,7 @@ export default {
   addClaimedOutboundPromotionCode,
   dismissOutboundPromotionNotice,
   markOutboundPromotionsSeen() {
-    importDefault(686).dispatch({ type: "OUTBOUND_PROMOTIONS_SEEN" });
+    importDefault(709).dispatch({ type: "OUTBOUND_PROMOTIONS_SEEN" });
   },
   fetchActiveBogoPromotion
 };
@@ -110,10 +392,10 @@ export const maybeFetchActivePromotions = function maybeFetchActivePromotions(ar
   if (arg0 === undefined) {
     flag = true;
   }
-  let isFetchingActivePromotions = closure_6.isFetchingActivePromotions;
+  let isFetchingActivePromotions = createEmptyPromotionsByType.isFetchingActivePromotions;
   if (!isFetchingActivePromotions) {
     if (flag) {
-      flag = null != closure_6.lastFetchedActivePromotions;
+      flag = null != createEmptyPromotionsByType.lastFetchedActivePromotions;
     }
     isFetchingActivePromotions = flag;
   }
@@ -122,7 +404,7 @@ export const maybeFetchActivePromotions = function maybeFetchActivePromotions(ar
   }
 };
 export const clearActivePromotions = function clearActivePromotions() {
-  importDefault(686).dispatch({ type: "ACTIVE_PROMOTIONS_CLEAR" });
+  importDefault(709).dispatch({ type: "ACTIVE_PROMOTIONS_CLEAR" });
 };
 export { fetchActivePromotions };
 export { dismissOutboundPromotionNotice };

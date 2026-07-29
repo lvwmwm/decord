@@ -1,52 +1,64 @@
-// Module ID: 8983
-// Function ID: 70771
-// Name: getOrParseBioAST
-// Dependencies: [4599, 4600, 4156, 1362, 7745, 4155, 3864, 22, 2]
-// Exports: parseBioReactWithCachedAST
+// Module ID: 9007
+// Function ID: 9008
+// Name: parseBioReact
+// Dependencies: [4621, 4622, 4180, 1386, 7768, 4179, 3888, 12, 2]
+// Exports: getOrParseBioAST, parseBioReactWithCachedAST
 
-// Module 8983 (getOrParseBioAST)
-import importDefaultResult1 from "priv";
-import importDefaultResult from "_createForOfIteratorHelperLoose";
+// Module 9007 (parseBioReact)
+import importDefaultResult from "combineMarkupRules";
 import importAllResult from "reactParserFor";
-import importDefaultResult2 from "combineAndInjectMentionRule";
+import importDefaultResult1 from "get defaultRules";
 import importAllResult1 from "reactParserFor";
-import importDefaultResult3 from "_createForOfIteratorHelperLoose";
-import importDefaultResult4 from "apply";
+import importDefaultResult2 from "combineMarkupRules";
+import importDefaultResult3 from "apply";
 
-function getOrParseBioAST(description) {
-  let value = importDefaultResult1.get(description);
-  if (null == value) {
-    const tmp3 = callback(description, true);
-    const result = importDefaultResult1.set(description, tmp3);
-    value = tmp3;
-  }
-  return value;
-}
 const items = [require("parseLink").PROFILE_BIO_RULES, require("MarkupText")({ enableBuildOverrides: false, mustConfirmExternalLink: true })];
-const importDefaultResultResult = require("_createForOfIteratorHelperLoose")(items);
-let obj = { max: 2000 };
-importDefaultResult1 = new importDefaultResult1(obj);
+const importDefaultResultResult = require("combineMarkupRules")(items);
+let c3 = new require("priv")({ max: 2000 });
+let tmp4 = new require("priv")({ max: 2000 });
 const reactParserForResult = require("reactParserFor").reactParserFor(importDefaultResultResult);
-let closure_4 = require("combineAndInjectMentionRule").astParserFor(importDefaultResultResult);
-const items1 = [require("apply").omit(importDefaultResultResult, ["link", "url", "autolink", "customEmoji", "emoji", "commandMention"]), ];
-obj = {
+let closure_4 = require("get defaultRules").astParserFor(importDefaultResultResult);
+const items1 = [
+  require("apply").omit(importDefaultResultResult, ["link", "url", "autolink", "customEmoji", "emoji", "commandMention"]),
+  {
+    emoji: {
+      react() {
+        return null;
+      }
+    }
+  }
+];
+let obj = {
   react() {
     return null;
   }
 };
-items1[1] = { emoji: obj };
-const reactParserForResult1 = importAllResult1.reactParserFor(importDefaultResult3(items1));
+const reactParserForResult1 = importAllResult1.reactParserFor(importDefaultResult2(items1));
 let result = require("MarkupText").fileFinishedImporting("modules/markup/BioMarkupUtils.tsx");
 
 export const parseBioReact = reactParserForResult;
-export { getOrParseBioAST };
+export const getOrParseBioAST = function getOrParseBioAST(arg0) {
+  let value = tmp4.get(arg0);
+  if (null == value) {
+    const tmp3 = callback(arg0, true);
+    const result = tmp4.set(arg0, tmp3);
+    value = tmp3;
+  }
+  return value;
+};
 export const parseBioReactWithCachedAST = function parseBioReactWithCachedAST(description) {
   if (0 === description.trim().length) {
     return null;
   } else {
-    const tmp2 = getOrParseBioAST(description);
-    const obj = importDefault(3864);
-    return obj.reactFor(importDefault(3864).ruleOutput(closure_2, "react"))(tmp2);
+    let value = tmp4.get(description);
+    if (null == value) {
+      tmp4 = callback(description, true);
+      const result = obj.set(description, tmp4);
+      value = tmp4;
+    }
+    obj = tmp4;
+    const obj2 = importDefault(3888);
+    return obj2.reactFor(importDefault(3888).ruleOutput(closure_2, "react"))(value);
   }
 };
 export const parseBioReactWithoutScrolling = reactParserForResult1;

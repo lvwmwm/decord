@@ -1,46 +1,50 @@
-// Module ID: 8973
-// Function ID: 70723
+// Module ID: 8997
+// Function ID: 8998
 // Name: ClearButton
-// Dependencies: [31, 27, 33, 4165, 689, 4695, 1212, 1273, 8974, 44, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4717, 1236, 1297, 8998, 38, 2]
 
-// Module 8973 (ClearButton)
-import importAllResult from "result";
+// Module 8997 (ClearButton)
+import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 let closure_6;
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function ClearButton(onPress) {
-  let obj = { style: { borderRadius: 20, padding: 8 }, accessibilityRole: "button" };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.accessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.VkKicb);
-  obj.onPress = onPress.onPress;
-  obj.hitSlop = { top: 8, bottom: 8, right: 8 };
-  obj = { source: importDefault(8974), style: callback2().closeIcon, size: require(1273) /* Button */.Icon.Sizes.MEDIUM };
-  obj.children = callback(require(1273) /* Button */.Icon, obj);
-  return callback(require(4695) /* PressableBase */.PressableOpacity, obj);
+  let obj = { style: { borderRadius: 20, padding: 8 }, accessibilityRole: "button", accessibilityLabel: null, onPress: null, hitSlop: null, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[2] = intl.string(require(1236) /* getSystemLocale */.t.VkKicb);
+  obj[3] = onPress.onPress;
+  obj[4] = { top: 8, bottom: 8, right: 8 };
+  obj = { source: null, style: null, size: null };
+  obj[0] = importDefault(8998);
+  obj[1] = callback2().closeIcon;
+  obj[2] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
+  obj[5] = callback(require(1297) /* Button */.Icon, obj);
+  return callback(require(4717) /* PressableBase */.PressableOpacity, obj);
 }
-({ TouchableWithoutFeedback: closure_4, View: closure_5, TouchableOpacity: closure_6 } = get_ActivityIndicator);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, height: 48, borderWidth: 1, borderColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, paddingRight: 6, paddingLeft: 12, flexDirection: "row", alignItems: "center" };
-obj.container = obj;
-obj.onPress = { flexDirection: "row" };
-_createForOfIteratorHelperLoose = { flex: 1, color: require("_createForOfIteratorHelperLoose").colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj.input = _createForOfIteratorHelperLoose;
-obj.error = { borderColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
-let obj3 = { tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, paddingLeft: 8, flexShrink: 0 };
-obj.closeIcon = obj3;
-let obj2 = { borderColor: require("_createForOfIteratorHelperLoose").unsafe_rawColors.RED_400 };
-obj.placeholder = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
-const obj4 = { color: require("_createForOfIteratorHelperLoose").colors.TEXT_MUTED };
-const forwardRefResult = importAllResult.forwardRef((editable) => {
+let c3 = importAllResult;
+({ TouchableWithoutFeedback: c4, View: c5, TouchableOpacity: closure_6 } = get_ActivityIndicator);
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let obj = { container: null, onPress: null, input: null, error: null, closeIcon: null, placeholder: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, height: 48, borderWidth: 1, borderColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: require("Themes").radii.xs, paddingRight: 6, paddingLeft: 12, flexDirection: "row", alignItems: "center" };
+obj[0] = obj;
+obj[1] = { flexDirection: "row" };
+createCacheKey = { flex: 1, color: require("Themes").colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj[2] = createCacheKey;
+obj[3] = { borderColor: require("Themes").unsafe_rawColors.RED_400 };
+let obj2 = { borderColor: require("Themes").unsafe_rawColors.RED_400 };
+obj[4] = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, paddingLeft: 8, flexShrink: 0 };
+const obj3 = { tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, paddingLeft: 8, flexShrink: 0 };
+obj[5] = { color: require("Themes").colors.TEXT_MUTED };
+let closure_9 = createCacheKey.createStyles(obj);
+const obj4 = { color: require("Themes").colors.TEXT_MUTED };
+const forwardRefResult = importAllResult.forwardRef((editable, ref) => {
   let accessibilityHint;
   let accessibilityLabel;
   let accessibilityRole;
@@ -67,146 +71,151 @@ const forwardRefResult = importAllResult.forwardRef((editable) => {
   }
   let WITH_CONTENT = editable.clearButtonVisibility;
   if (WITH_CONTENT === undefined) {
-    WITH_CONTENT = onChangeText(1273).ClearButtonVisibility.WITH_CONTENT;
+    WITH_CONTENT = onChangeText(1297).ClearButtonVisibility.WITH_CONTENT;
   }
-  let obj = { style: 0, error: 0, renderLeadingComponent: 0, renderTrailingComponent: 0, onChangeText: 0, onFocus: 0, accessibilityRole: 0, onBlur: 0, value: 0, onPress: 0, editable: 0, accessibilityLabel: 0, accessibilityHint: 0, forceAccessibleContainer: 0, clearButtonVisibility: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(editable, obj);
-  let ref;
-  const tmp5 = callback2();
+  const merged = Object.assign(editable, Object.create(null));
+  ref = undefined;
+  const tmp4 = callback2();
   ref = onPress.useRef(null);
-  const imperativeHandle = onPress.useImperativeHandle(arg1, () => ref.current);
+  const imperativeHandle = onPress.useImperativeHandle(ref, () => ref.current);
   let flag2 = true;
-  if (onChangeText(1273).ClearButtonVisibility.ALWAYS !== WITH_CONTENT) {
-    if (onChangeText(1273).ClearButtonVisibility.WITH_CONTENT === WITH_CONTENT) {
-      let tmp12 = null != value;
-      if (tmp12) {
-        tmp12 = "" !== value;
+  if (onChangeText(1297).ClearButtonVisibility.ALWAYS !== WITH_CONTENT) {
+    if (tmp7(1297).ClearButtonVisibility.WITH_CONTENT === WITH_CONTENT) {
+      let tmp9 = null != value;
+      if (tmp9) {
+        tmp9 = "" !== value;
       }
-      flag2 = tmp12;
-    } else if (onChangeText(1273).ClearButtonVisibility.NEVER === WITH_CONTENT) {
+      flag2 = tmp9;
+    } else if (tmp7(1297).ClearButtonVisibility.NEVER === WITH_CONTENT) {
       flag2 = false;
     }
   }
-  let tmp14 = null != onPress;
-  if (tmp14) {
-    tmp14 = flag;
+  let tmp11 = null != onPress;
+  if (tmp11) {
+    tmp11 = flag;
   }
-  importDefault(44)(!tmp14, "Cannot have an editable input w/ onPress handler");
-  let items = [tmp5.container, , ];
+  importDefault(38)(!tmp11, "Cannot have an editable input w/ onPress handler");
+  let items = [tmp4.container, , ];
   error = null;
   if (error) {
-    error = tmp5.error;
+    error = tmp4.error;
   }
   items[1] = error;
   items[2] = style;
-  obj = {
+  let obj = {
     onPress() {
       if (flag) {
         const current = ref.current;
-        if (null != current) {
+        if (current != null) {
           current.focus();
         }
       }
-      if (null != onPress) {
-        onPress();
+      if (onPress != null) {
+        tmp4();
       }
-    }
+    },
+    style: null,
+    accessibilityRole: null,
+    accessible: null,
+    accessibilityLabel: null,
+    accessibilityValue: null,
+    accessibilityHint: null,
+    children: null
   };
-  let tmp20 = null;
+  let tmp17 = null;
   if (null != onPress) {
-    tmp20 = items;
+    tmp17 = items;
   }
-  obj.style = tmp20;
+  obj[1] = tmp17;
   let str2;
   if (forceAccessibleContainer) {
     str2 = "button";
   }
-  obj.accessibilityRole = str2;
-  obj.accessible = forceAccessibleContainer;
-  let tmp21;
+  obj[2] = str2;
+  obj[3] = forceAccessibleContainer;
+  let tmp18;
   if (forceAccessibleContainer) {
-    tmp21 = accessibilityLabel;
+    tmp18 = accessibilityLabel;
   }
-  obj.accessibilityLabel = tmp21;
-  let tmp22;
+  obj[4] = tmp18;
+  let tmp19;
   if (forceAccessibleContainer) {
-    obj = { text: value };
-    tmp22 = obj;
+    obj = { text: null };
+    obj[0] = value;
+    tmp19 = obj;
   }
-  obj.accessibilityValue = tmp22;
-  let tmp23;
+  obj[5] = tmp19;
+  let tmp20;
   if (forceAccessibleContainer) {
-    tmp23 = accessibilityHint;
+    tmp20 = accessibilityHint;
   }
-  obj.accessibilityHint = tmp23;
-  const obj1 = {};
+  obj[6] = tmp20;
   if (null != onPress) {
-    items = tmp5.onPress;
+    items = tmp4.onPress;
   }
-  obj1.style = items;
+  obj = { style: items, children: null };
   let result;
-  if (null != renderLeadingComponent) {
+  if (renderLeadingComponent != null) {
     result = renderLeadingComponent();
   }
   const items1 = [result, , , ];
-  const obj2 = {};
   let str3 = "auto";
   if (null != onPress) {
     str3 = "none";
   }
-  obj2.pointerEvents = str3;
-  obj2.accessibilityRole = accessibilityRole;
-  obj2.accessibilityLabel = accessibilityLabel;
-  obj2.ref = ref;
-  obj2.editable = flag;
-  obj2.style = tmp5.input;
-  obj2.numberOfLines = 1;
-  obj2.multiline = false;
-  obj2.value = value;
-  obj2.onChangeText = onChangeText;
-  obj2.onFocus = function onFocus(arg0) {
-    if (null != callback) {
-      callback(arg0);
-    }
+  const obj1 = {
+    pointerEvents: str3,
+    accessibilityRole,
+    accessibilityLabel,
+    ref,
+    editable: flag,
+    style: tmp4.input,
+    numberOfLines: 1,
+    multiline: false,
+    value,
+    onChangeText,
+    onFocus(arg0) {
+      if (closure_1 != null) {
+        tmp(arg0);
+      }
+    },
+    onBlur(arg0) {
+      if (closure_2 != null) {
+        tmp(arg0);
+      }
+    },
+    placeholderTextColor: tmp4.placeholder.color,
+    clearButtonMode: "never"
   };
-  obj2.onBlur = function onBlur(arg0) {
-    if (null != callback2) {
-      callback2(arg0);
-    }
-  };
-  obj2.placeholderTextColor = tmp5.placeholder.color;
-  obj2.clearButtonMode = "never";
   const merged1 = Object.assign(merged);
   let str4 = "no-hide-descendants";
   if (flag) {
     str4 = "yes";
   }
-  obj2["importantForAccessibility"] = str4;
-  obj2["accessibilityElementsHidden"] = !flag;
-  items1[1] = callback(onChangeText(1273).TextInput, obj2);
+  obj1.importantForAccessibility = str4;
+  obj1.accessibilityElementsHidden = !flag;
+  items1[1] = closure_7(onChangeText(1297).TextInput, obj1);
   let result1;
-  if (null != renderTrailingComponent) {
+  if (renderTrailingComponent != null) {
     result1 = renderTrailingComponent();
   }
   items1[2] = result1;
-  let tmp30 = null;
+  let tmp15Result = null;
   if (flag2) {
-    const obj3 = {
-      onPress() {
-          let tmp;
-          if (null != onChangeText) {
-            tmp = onChangeText("");
-          }
-          return tmp;
-        }
+    const obj2 = { onPress: null };
+    obj2[0] = function onPress() {
+      let tmpResult;
+      if (onChangeText != null) {
+        tmpResult = tmp("");
+      }
+      return tmpResult;
     };
-    tmp30 = callback(ClearButton, obj3);
+    tmp15Result = tmp15(ClearButton, obj2);
   }
-  items1[3] = tmp30;
-  obj1.children = items1;
-  obj.children = closure_8(ref, obj1);
-  return callback(null != onPress ? closure_6 : flag, obj);
+  items1[3] = tmp15Result;
+  obj[1] = items1;
+  obj[7] = closure_8(ref, obj);
+  return closure_7(null != onPress ? closure_6 : flag, obj);
 });
 let result = require("jsxProd").fileFinishedImporting("design/void/Form/native/FreeFormTextInput.tsx");
 

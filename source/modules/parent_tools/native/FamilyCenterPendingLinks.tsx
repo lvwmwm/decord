@@ -1,138 +1,148 @@
-// Module ID: 13934
-// Function ID: 106513
+// Module ID: 13955
+// Function ID: 13956
 // Name: FamilyCenterPendingLinkRow
-// Dependencies: [31, 27, 5776, 33, 4165, 689, 6235, 11089, 1212, 2199, 4161, 6236, 4695, 4372, 13935, 1935, 1273, 10335, 13936, 13933, 13937, 13928, 2]
+// Dependencies: [19, 17, 5794, 21, 4189, 712, 6255, 11113, 1236, 2223, 4185, 6256, 4717, 4395, 13956, 1959, 1297, 10356, 13957, 13954, 13958, 13949, 2]
 // Exports: default
 
-// Module 13934 (FamilyCenterPendingLinkRow)
-import "result";
-import { View } from "get ActivityIndicator";
+// Module 13955 (FamilyCenterPendingLinkRow)
+import "registerAsset";
+import { View } from "registerAsset";
 import { UserLinkStatus } from "items";
-import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import jsxProd from "FamilyCenterLinkRow";
+import createCacheKey from "createCacheKey";
+import createCacheKey from "createCacheKey";
 
-let closure_5;
+let c5;
 let closure_6;
-let closure_7;
+let error;
 const require = arg1;
 function FamilyCenterPendingLinkRow(otherUser) {
   let str = otherUser.otherUser;
   const tmp = callback3();
-  str(6235);
+  str(6255);
   if (undefined === str) {
     return null;
   } else {
-    if (tmp2) {
-      let obj = { accessibilityRole: "button" };
-      const intl3 = str(1212).intl;
-      obj = {};
+    if (tmp4) {
+      const intl3 = tmp5(1236).intl;
       str = undefined;
-      if (null != str) {
+      if (str != null) {
         str = str.toString();
       }
-      obj.name = str;
-      obj.accessibilityLabel = intl3.formatToPlainString(importDefault(2199).oUpA6X, obj);
-      obj.onPress = function onPress() {
+      let obj = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
+      obj = { name: null };
+      obj[0] = str;
+      obj[1] = intl3.formatToPlainString(tmp2(2223).oUpA6X, obj);
+      obj[2] = function onPress() {
         let obj = outer1_1(outer1_2[13]);
         obj = { otherUser: str };
         obj.pushLazy(str(outer1_2[15])(outer1_2[20], outer1_2.paths), obj);
       };
-      obj.style = tmp.actionButton;
-      const obj1 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13933) };
-      obj.children = callback(str(1273).Icon, obj1);
-      let tmp5Result = callback(str(4695).PressableOpacity, obj);
-      const tmp28 = callback;
+      obj[3] = tmp.actionButton;
+      const obj1 = { size: null, disableColor: true, source: null };
+      obj1[0] = tmp5(1297).Icon.Sizes.SMALL;
+      obj1[2] = tmp2(13954);
+      obj[4] = closure_5(tmp5(1297).Icon, obj1);
+      let tmp8Result = tmp17(tmp5(4717).PressableOpacity, obj);
+      let tmp14 = tmp17;
     } else {
-      obj = {};
-      let tmp9Result = null;
-      if (!tmp4) {
-        const obj2 = {};
-        let str2 = "button";
-        obj2.accessibilityRole = "button";
-        const intl = str(1212).intl;
-        const obj3 = {};
+      let tmp12Result = null;
+      if (!tmp7) {
+        const intl = tmp5(1236).intl;
         let str1;
-        if (null != str) {
+        if (str != null) {
           str1 = str.toString();
         }
-        obj3.name = str1;
-        obj2.accessibilityLabel = intl.formatToPlainString(importDefault(2199).jc1Ip7, obj3);
-        obj2.onPress = function onPress() {
+        obj = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
+        const obj2 = { name: null };
+        obj2[0] = str1;
+        obj[1] = intl.formatToPlainString(tmp2(2223).jc1Ip7, obj2);
+        obj[2] = function onPress() {
           let obj = outer1_1(outer1_2[13]);
           obj = { otherUser: str };
           obj.pushLazy(str(outer1_2[15])(outer1_2[14], outer1_2.paths), obj);
         };
         const items = [, ];
         ({ actionButton: arr[0], actionButtonFirst: arr[1] } = tmp);
-        obj2.style = items;
-        const obj4 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(10335) };
-        obj2.children = callback(str(1273).Icon, obj4);
-        tmp9Result = callback(str(4695).PressableOpacity, obj2);
-        const tmp9 = callback;
+        obj[3] = items;
+        const obj3 = { size: null, disableColor: true, source: null };
+        obj3[0] = tmp5(1297).Icon.Sizes.SMALL;
+        obj3[2] = tmp2(10356);
+        obj[4] = closure_5(tmp5(1297).Icon, obj3);
+        tmp12Result = tmp12(tmp5(4717).PressableOpacity, obj);
       }
-      const items1 = [tmp9Result, ];
-      const obj5 = { accessibilityRole: "button" };
-      const intl2 = str(1212).intl;
-      const obj6 = {};
-      str2 = undefined;
-      if (null != str) {
+      const items1 = [tmp12Result, ];
+      tmp14 = closure_5;
+      const intl2 = tmp5(1236).intl;
+      let str2;
+      if (str != null) {
         str2 = str.toString();
       }
-      obj6.name = str2;
-      obj5.accessibilityLabel = intl2.formatToPlainString(importDefault(2199)["4GtllP"], obj6);
-      obj5.onPress = function onPress() {
+      const obj4 = { children: null };
+      const obj5 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
+      const obj6 = { name: null };
+      obj6[0] = str2;
+      obj5[1] = intl2.formatToPlainString(tmp2(2223)["4GtllP"], obj6);
+      obj5[2] = function onPress() {
         let obj = outer1_1(outer1_2[13]);
         obj = { otherUser: str };
         obj.pushLazy(str(outer1_2[15])(outer1_2[18], outer1_2.paths), obj);
       };
-      obj5.style = tmp.actionButton;
-      const obj7 = { size: str(1273).Icon.Sizes.SMALL, disableColor: true, source: importDefault(13933) };
-      obj5.children = callback(str(1273).Icon, obj7);
-      items1[1] = callback(str(4695).PressableOpacity, obj5);
-      obj.children = items1;
-      tmp5Result = closure_6(closure_7, obj);
-      const tmp18 = callback;
-      const tmp5 = closure_6;
-      const tmp6 = closure_7;
+      obj5[3] = tmp.actionButton;
+      const obj7 = { size: null, disableColor: true, source: null };
+      obj7[0] = tmp5(1297).Icon.Sizes.SMALL;
+      obj7[2] = tmp2(13954);
+      obj5[4] = tmp14(tmp5(1297).Icon, obj7);
+      items1[1] = tmp14(tmp5(4717).PressableOpacity, obj5);
+      obj4[0] = items1;
+      tmp8Result = closure_6(closure_7, obj4);
+      const tmp8 = closure_6;
+      const tmp9 = closure_7;
     }
-    const obj8 = { otherUser: str, actions: tmp5Result };
-    return callback(importDefault(13928), obj8);
+    const obj8 = { otherUser: null, actions: null };
+    obj8[0] = str;
+    obj8[1] = tmp8Result;
+    return tmp14(tmp2(13949), obj8);
   }
-  tmp2 = importDefault(6236)();
+  tmp4 = importDefault(6256)();
 }
-({ jsx: closure_5, jsxs: closure_6, Fragment: closure_7 } = jsxProd);
-_createForOfIteratorHelperLoose = { container: { marginTop: 24 } };
-_createForOfIteratorHelperLoose = { display: "flex", justifyContent: "center", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW, borderRadius: require("_createForOfIteratorHelperLoose").radii.md };
-_createForOfIteratorHelperLoose.content = _createForOfIteratorHelperLoose;
-_createForOfIteratorHelperLoose.header = { marginBottom: 10 };
-_createForOfIteratorHelperLoose = _createForOfIteratorHelperLoose.createStyles(_createForOfIteratorHelperLoose);
-let obj1 = {};
-let obj2 = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SURFACE_HIGH, tintColor: require("_createForOfIteratorHelperLoose").colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: require("_createForOfIteratorHelperLoose").radii.round, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
-obj1.actionButton = obj2;
-_createForOfIteratorHelperLoose = { marginRight: require("_createForOfIteratorHelperLoose").space.PX_8 };
-obj1.actionButtonFirst = _createForOfIteratorHelperLoose;
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj1);
+({ jsx: c5, jsxs: closure_6, Fragment: error } = jsxProd);
+createCacheKey = { container: { marginTop: 24 }, content: null, header: null };
+createCacheKey = { display: "flex", justifyContent: "center", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, borderRadius: require("Themes").radii.md };
+createCacheKey[1] = createCacheKey;
+createCacheKey[2] = { marginBottom: 10 };
+createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { actionButton: null, actionButtonFirst: null };
+obj1[0] = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
+createCacheKey = { marginRight: require("Themes").space.PX_8 };
+obj1[1] = createCacheKey;
+let closure_9 = createCacheKey.createStyles(obj1);
+let obj2 = { backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, tintColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: require("Themes").radii.round, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
 const result = require("items").fileFinishedImporting("modules/parent_tools/native/FamilyCenterPendingLinks.tsx");
 
 export default function FamilyCenterPendingLinks() {
-  const tmp = _createForOfIteratorHelperLoose();
-  let obj = require(6235) /* useUserIdsForLinkStatus */;
+  const tmp = createCacheKey();
+  let obj = require(6255) /* useUserIdsForLinkStatus */;
   const usersForLinkStatus = obj.useUsersForLinkStatus(UserLinkStatus.PENDING);
-  require(11089) /* useAgeSpecificText */;
-  const intl = require(1212) /* getSystemLocale */.intl;
+  require(11113) /* useAgeSpecificText */;
+  const intl = require(1236) /* getSystemLocale */.intl;
   obj = { count: usersForLinkStatus.length };
-  intl.formatToPlainString(importDefault(2199).IkAgkG, obj);
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  let tmp5 = null;
+  intl.formatToPlainString(importDefault(2223).IkAgkG, obj);
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  let tmp7 = null;
   if (0 !== usersForLinkStatus.length) {
-    obj = { style: tmp.container };
-    const obj1 = { style: tmp.header, variant: "eyebrow", color: "text-default", children: tmp4 };
-    const items = [callback(require(4161) /* Text */.Text, obj1), ];
-    const obj2 = { style: tmp.content, children: usersForLinkStatus.map((id) => outer1_5(outer1_10, { otherUser: id }, "pending-" + id.id)) };
+    obj = { style: null, children: null };
+    obj[0] = tmp.container;
+    const obj1 = { style: null, variant: "eyebrow", color: "text-default", children: null };
+    obj1[0] = tmp.header;
+    obj1[3] = tmp6;
+    const items = [callback(require(4185) /* Text */.Text, obj1), ];
+    const obj2 = { style: null, children: null };
+    obj2[0] = tmp.content;
+    obj2[1] = usersForLinkStatus.map((id) => callback(closure_10, { otherUser: id }, "pending-" + id.id));
     items[1] = callback(View, obj2);
-    obj.children = items;
-    tmp5 = callback2(View, obj);
+    obj[1] = items;
+    tmp7 = callback2(View, obj);
   }
-  return tmp5;
+  return tmp7;
 };

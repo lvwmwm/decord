@@ -1,11 +1,11 @@
-// Module ID: 4088
-// Function ID: 33926
+// Module ID: 4112
+// Function ID: 4113
 // Name: validateAllExperiments
-// Dependencies: [4079, 2]
+// Dependencies: [4103, 2]
 // Exports: validateAllExperiments, validateOneExperiment
 
-// Module 4088 (validateAllExperiments)
-import "_isNativeReflectConstruct";
+// Module 4112 (validateAllExperiments)
+import "getHash";
 
 const result = require("set").fileFinishedImporting("modules/experiments/trigger_points/validateTriggerPoint.tsx");
 

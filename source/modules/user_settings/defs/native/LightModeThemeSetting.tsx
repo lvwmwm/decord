@@ -1,37 +1,37 @@
-// Module ID: 14298
-// Function ID: 109690
+// Module ID: 14320
+// Function ID: 14321
 // Name: route
-// Dependencies: [1278, 1281, 7733, 653, 1324, 566, 10099, 1212, 14299, 14300, 2]
+// Dependencies: [1302, 1305, 7756, 676, 1348, 589, 10120, 1236, 14321, 14322, 2]
 
-// Module 14298 (route)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14320 (route)
+import handleThemeChange from "handleThemeChange";
 import { SystemTheme } from "SystemThemeState";
 import createToggle from "createToggle";
 
 const require = arg1;
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.NoFvjZ);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.NoFvjZ);
   },
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   usePredicate: function useSyncedModePickerVisible() {
-    let stateFromStores = importDefault(1324)("LightModeThemeSetting");
-    const items = [_isNativeReflectConstruct];
+    let stateFromStores = importDefault(1348)("LightModeThemeSetting");
+    const items = [handleThemeChange];
     if (stateFromStores) {
-      stateFromStores = obj.useStateFromStores(items, () => outer1_3.isSameAsDeviceThemeEnabled());
+      stateFromStores = obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
     }
     return stateFromStores;
   },
   useTrailing() {
-    return require(14299) /* useSyncedModeThemeName */.useSyncedModeThemeName(SystemTheme.LIGHT);
+    return require(14321) /* useSyncedModeThemeName */.useSyncedModeThemeName(SystemTheme.LIGHT);
   },
   screen: createToggle
 };
 createToggle = {
   route: require("ME").UserSettingsSections.APPEARANCE_LIGHT_MODE_THEME_PICKER,
   getComponent() {
-    return require(14300) /* SettingsAppearanceLightModeThemePickerScreen */.default;
+    return require(14322) /* SettingsAppearanceLightModeThemePickerScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

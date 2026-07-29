@@ -1,25 +1,16 @@
-// Module ID: 5682
-// Function ID: 48557
+// Module ID: 5700
+// Function ID: 5701
 // Name: Future
-// Dependencies: [7, 6, 2]
+// Dependencies: [2]
 
-// Module 5682 (Future)
-import _classCallCheck from "_classCallCheck";
-import importDefaultResult from "_defineProperties";
-
-class Future {
-  constructor() {
-    self = this;
-    tmp = self(this, Future);
-    promise = new Promise((resolve, reject) => {
-      self.resolve = resolve;
-      self.reject = reject;
-    });
-    this.promise = promise;
-    return;
-  }
-}
-const importDefaultResultResult = require("_defineProperties")(Future);
+// Module 5700 (Future)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/utils/Future.tsx");
 
-export const Future = importDefaultResultResult;
+export const Future = function Future() {
+  const obj = Object.create(new.target.prototype);
+  obj.promise = new Promise((resolve, reject) => {
+    obj.resolve = resolve;
+    obj.reject = reject;
+  });
+  return obj;
+}.prototype;

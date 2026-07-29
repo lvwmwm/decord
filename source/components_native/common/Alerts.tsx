@@ -1,43 +1,30 @@
-// Module ID: 15707
-// Function ID: 120905
-// Name: _isNativeReflectConstruct
-// Dependencies: [6, 7, 15, 17, 18, 31, 27, 4157, 12782, 13438, 9250, 9488, 33, 15708, 15709, 15713, 15714, 4165, 689, 4506, 4559, 5620, 3877, 566, 620, 4575, 10367, 1273, 2]
+// Module ID: 15742
+// Function ID: 15743
+// Name: StyleSheet
+// Dependencies: [19, 17, 4181, 12804, 13461, 9274, 9512, 21, 15743, 15744, 15748, 15749, 4189, 712, 3901, 4529, 4582, 5638, 589, 643, 4597, 10391, 1297, 2]
 
-// Module 15707 (_isNativeReflectConstruct)
-import getActivityIndicator from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
-import closure_5 from "_isNativeReflectConstruct";
-import closure_6 from "_createForOfIteratorHelperLoose";
-import closure_7 from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
-import get_ActivityIndicator from "Button";
-import closure_13 from "_isNativeReflectConstruct";
-import importDefaultResult from "_isNativeReflectConstruct";
-import importDefaultResult1 from "_isNativeReflectConstruct";
-import importDefaultResult2 from "_isNativeReflectConstruct";
-import closure_17 from "_isNativeReflectConstruct";
-import jsxProd from "jsxProd";
-import importDefaultResult3 from "_createForOfIteratorHelperLoose";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+// Module 15742 (StyleSheet)
+import importAllResult from "shallowEqual";
+import get_ActivityIndicator from "module_5638";
+import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
+import importDefaultResult from "initialize";
+import importDefaultResult1 from "handleUpdateVADPermission";
+import importDefaultResult2 from "fetchSurveyIfNeeded";
+import getAlert from "getAlert";
+import jsxProd from "_toPropertyKey";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_12;
-let closure_18;
-let closure_19;
-const require = arg1;
-function _isNativeReflectConstruct() {
-  let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-  }));
-  function _isNativeReflectConstruct() {
-    return closure_0;
-  }
-  const result = _isNativeReflectConstruct();
-}
+let c5;
+let closure_14;
+let closure_6;
+let error;
+let map1;
+let require = arg1;
+let c3 = importAllResult;
 const StyleSheet = get_ActivityIndicator.StyleSheet;
-({ Animated: closure_10, Easing: closure_11, TouchableWithoutFeedback: closure_12 } = get_ActivityIndicator);
-({ jsx: closure_18, jsxs: closure_19 } = jsxProd);
+({ Animated: c5, Easing: closure_6, TouchableWithoutFeedback: error } = get_ActivityIndicator);
+let c9 = importDefaultResult;
+({ jsx: map1, jsxs: closure_14 } = jsxProd);
 let obj = {
   stores: items,
   center: true,
@@ -45,7 +32,7 @@ let obj = {
     return importDefaultResult.shouldShowWarning();
   },
   getComponent() {
-    return require(15709) /* _isNativeReflectConstruct */.default;
+    return require(15744) /* render */.default;
   }
 };
 items = [importDefaultResult];
@@ -57,7 +44,7 @@ obj = {
     return importDefaultResult1.shouldShowWarning();
   },
   getComponent() {
-    return require(15713) /* _isNativeReflectConstruct */.default;
+    return require(15748) /* render */.default;
   }
 };
 items2 = [importDefaultResult1];
@@ -70,141 +57,134 @@ items1[2] = {
     return null != importDefaultResult2.getCurrentSurvey();
   },
   getComponent() {
-    return require(15714) /* MobileSurvey */.default;
+    return require(15749) /* MobileSurvey */.default;
   }
 };
-importDefaultResult3 = new importDefaultResult3(items1);
-let obj2 = {};
+let closure_15 = new require("getStores")(items1);
+let obj2 = { alertWrapper: null, alertContentWrapper: null };
 const obj3 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
-obj3["backgroundColor"] = require("_createForOfIteratorHelperLoose").colors.BACKGROUND_SCRIM;
-obj3["justifyContent"] = "center";
-obj3["alignItems"] = "center";
-obj2.alertWrapper = obj3;
-obj2.alertContentWrapper = { display: "flex", alignItems: "center", justifyContent: "center", height: "100%" };
-let closure_21 = _createForOfIteratorHelperLoose.createLegacyClassComponentStyles(obj2);
-const tmp10 = ((PureComponent) => {
-  class AlertWrapper {
-    constructor(arg0) {
-      self = this;
-      items = [...arguments];
-      tmp = outer1_3(this, apply);
-      items1 = [...items];
-      obj = outer1_6(apply);
-      tmp2 = outer1_5;
-      if (outer1_24()) {
-        tmp4 = globalThis;
-        _Reflect = Reflect;
-        tmp5 = outer1_6;
-        constructResult = Reflect.construct(obj, items1, outer1_6(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items1);
-      }
-      tmp2Result = tmp2(self, constructResult);
-      apply = tmp2Result;
-      obj = {};
-      value = new outer1_10.Value(0);
-      obj.opacity = value;
-      num = 0;
-      if (tmp2Result.props.useReducedMotion) {
-        num = 1;
-      }
-      value1 = new outer1_10.Value(num);
-      obj.scale = value1;
-      tmp2Result.state = obj;
-      tmp2Result.componentDidAppear = () => {
-        const opacity = tmp2Result.state.opacity;
-        opacity.setValue(1);
-        const scale = tmp2Result.state.scale;
-        scale.setValue(1);
-      };
-      tmp2Result.componentWillEnter = (arg0) => {
-        const obj = { toValue: 1, easing: outer2_11.linear, duration: 250, useNativeDriver: true };
-        const items = [outer2_10.timing(tmp2Result.state.opacity, obj)];
-        if (!tmp2Result.props.useReducedMotion) {
-          items.push(outer2_10.spring(tmp2Result.state.scale, { toValue: 1, useNativeDriver: true }));
-        }
-        outer2_10.parallel(items).start(arg0);
-      };
-      tmp2Result.componentWillLeave = (arg0) => {
-        let obj = { toValue: 0, easing: outer2_11.linear, duration: 100, useNativeDriver: true };
-        const items = [outer2_10.timing(tmp2Result.state.opacity, obj)];
-        if (!tmp2Result.props.useReducedMotion) {
-          obj = { toValue: 0, easing: outer2_11.in(outer2_11.ease), duration: 100, useNativeDriver: true };
-          items.push(outer2_10.timing(tmp2Result.state.scale, obj));
-        }
-        outer2_10.parallel(items).start(arg0);
-      };
-      tmp2Result.handleRequestClose = () => {
-        if (tmp2Result.props.isDismissable) {
-          outer2_1(outer2_2[19]).close();
-          const obj = outer2_1(outer2_2[19]);
-        }
-      };
-      return tmp2Result;
+obj3.backgroundColor = require("Themes").colors.BACKGROUND_SCRIM;
+obj3.justifyContent = "center";
+obj3.alignItems = "center";
+obj2[0] = obj3;
+obj2[1] = { display: "flex", alignItems: "center", justifyContent: "center", height: "100%" };
+let closure_16 = createCacheKey.createLegacyClassComponentStyles(obj2);
+const PureComponent = importAllResult.PureComponent;
+class AlertWrapper extends PureComponent {
+  constructor() {
+    applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
+    closure_0 = applyArgumentsResult;
+    obj = { opacity: null, scale: null };
+    value = new Animated.Value(0);
+    obj[0] = value;
+    num = 0;
+    if (applyArgumentsResult.props.useReducedMotion) {
+      num = 1;
     }
+    value1 = new Animated.Value(num);
+    obj[1] = value1;
+    applyArgumentsResult.state = obj;
+    applyArgumentsResult.componentDidAppear = function componentDidAppear() {
+      const opacity = applyArgumentsResult.state.opacity;
+      opacity.setValue(1);
+      const scale = applyArgumentsResult.state.scale;
+      scale.setValue(1);
+    };
+    applyArgumentsResult.componentWillEnter = function componentWillEnter(arg0) {
+      let obj = outer1_5;
+      obj = { toValue: 1, easing: outer1_6.linear, duration: 250, useNativeDriver: true };
+      const items = [outer1_5.timing(applyArgumentsResult.state.opacity, obj)];
+      if (!applyArgumentsResult.props.useReducedMotion) {
+        items.push(obj.spring(applyArgumentsResult.state.scale, { toValue: 1, useNativeDriver: true }));
+      }
+      obj.parallel(items).start(arg0);
+    };
+    applyArgumentsResult.componentWillLeave = function componentWillLeave(arg0) {
+      let obj = outer1_5;
+      obj = { toValue: 0, easing: outer1_6.linear, duration: 100, useNativeDriver: true };
+      const items = [outer1_5.timing(applyArgumentsResult.state.opacity, obj)];
+      if (!applyArgumentsResult.props.useReducedMotion) {
+        obj = { toValue: 0, easing: null, duration: 100, useNativeDriver: true };
+        obj[1] = obj3.in(obj3.ease);
+        items.push(obj.timing(applyArgumentsResult.state.scale, obj));
+      }
+      obj.parallel(items).start(arg0);
+    };
+    applyArgumentsResult.handleRequestClose = function handleRequestClose() {
+      if (applyArgumentsResult.props.isDismissable) {
+        outer1_1(outer1_2[15]).close();
+        const obj = outer1_1(outer1_2[15]);
+      }
+    };
+    return applyArgumentsResult;
   }
-  callback2(AlertWrapper, PureComponent);
-  let items = [
-    {
-      key: "render",
-      value() {
-        let opacity;
-        let scale;
-        const self = this;
-        const tmp = outer1_21(this.context);
-        const renderKey = this.props.renderKey;
-        let str = "alerts-component";
-        if (null != renderKey) {
-          str = renderKey;
-        }
-        const props = self.props;
-        let obj = { onClose: outer1_1(outer1_2[19]).close };
-        ({ opacity, scale } = self.state);
-        obj = { dialogKey: str, onDismiss: self.handleRequestClose };
-        obj = { style: items };
-        items = [outer1_9.absoluteFill, tmp.alertContentWrapper];
-        const obj1 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", accessible: false, onPress: self.handleRequestClose };
-        const items1 = [tmp.alertWrapper, self.props.style, { opacity }];
-        const renderAlertResult = props.renderAlert(obj);
-        obj1.children = outer1_18(outer1_10.View, { style: items1 });
-        const items2 = [outer1_18(outer1_12, obj1), ];
-        const items3 = [{ scale }];
-        items2[1] = outer1_18(outer1_10.View, { style: { transform: items3 }, children: renderAlertResult });
-        obj.children = items2;
-        obj.children = outer1_19(outer1_1(outer1_2[21]), obj);
-        return outer1_18(AlertWrapper(outer1_2[20]).Dialog, obj);
-      }
-    }
-  ];
-  return callback(AlertWrapper, items);
-})(importAllResult.PureComponent);
-let closure_22 = tmp10;
-tmp10.contextType = require("ManaContext").ThemeContext;
-let closure_23 = Object.freeze({ renderAlert: undefined, renderKey: undefined, props: undefined });
+}
+AlertWrapper.prototype["render"] = function render() {
+  let opacity;
+  let scale;
+  const self = this;
+  const tmp = callback3(this.context);
+  let str = this.props.renderKey;
+  if (str == null) {
+    str = "alerts-component";
+  }
+  const props = self.props;
+  let obj = { onClose: importDefault(4529).close };
+  ({ opacity, scale } = self.state);
+  obj = { dialogKey: str, onDismiss: self.handleRequestClose, children: null };
+  obj = { style: items, children: null };
+  items = [StyleSheet.absoluteFill, tmp.alertContentWrapper];
+  const obj1 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", accessible: false, onPress: self.handleRequestClose, children: null };
+  const items1 = [tmp.alertWrapper, self.props.style, { opacity }];
+  const renderAlertResult = props.renderAlert(obj);
+  obj1[5] = callback(RN.View, { style: items1 });
+  const items2 = [callback(closure_7, obj1), ];
+  const items3 = [{ scale }];
+  items2[1] = callback(RN.View, { style: { transform: items3 }, children: renderAlertResult });
+  obj[1] = items2;
+  obj[2] = callback2(importDefault(5638), obj);
+  return callback(require(4582) /* Dialog */.Dialog, obj);
+};
+AlertWrapper.contextType = require("ManaContext").ThemeContext;
+let closure_18 = Object.freeze({ renderAlert: "Array", renderKey: "call", props: "string" });
+let obj1 = {
+  stores: items3,
+  center: true,
+  isOpen() {
+    return null != importDefaultResult2.getCurrentSurvey();
+  },
+  getComponent() {
+    return require(15749) /* MobileSurvey */.default;
+  }
+};
+const tmp7 = new require("getStores")(items1);
 const memoResult = importAllResult.memo(function Alerts() {
-  const _require = importAllResult.useRef(closure_23);
-  let obj = _require(stateFromStores[23]);
-  const items = [closure_17, ...importDefaultResult3.getStores()];
+  const _require = renderAlert.useRef(closure_18);
+  let obj = _require(stateFromStores[18]);
+  const items = [getAlert, ...closure_15.getStores()];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    const _alert = outer1_17.getAlert();
+    let obj = outer1_12;
+    const _alert = outer1_12.getAlert();
     if (null != _alert) {
-      let obj = { renderAlert: _alert, renderKey: outer1_17.getAlertKey(), props: null };
+      obj = { renderAlert: null, renderKey: null, props: null };
+      obj[0] = _alert;
+      obj[1] = obj.getAlertKey();
       return obj;
     } else {
-      const openModal = outer1_20.getOpenModal();
+      const openModal = outer1_15.getOpenModal();
       if (null != openModal) {
         const props = openModal.props;
         const _HermesInternal = HermesInternal;
         const combined = "alert-registery-" + openModal.key;
-        obj = {};
         if (combined === openModal.current.renderKey) {
-          if (stateFromStoresObject(stateFromStores[24])(props, openModal.current.props)) {
-            let fn = openModal.current.renderAlert;
+          if (stateFromStoresObject(stateFromStores[19])(props, tmp4.current.props)) {
+            let fn = tmp4.current.renderAlert;
           }
-          obj.renderAlert = fn;
-          obj.renderKey = combined;
-          obj.props = openModal.props;
+          obj = { renderAlert: null, renderKey: null, props: null };
+          obj[0] = fn;
+          obj[1] = combined;
+          obj[2] = openModal.props;
           return obj;
         }
         fn = (arg0) => {
@@ -213,52 +193,48 @@ const memoResult = importAllResult.memo(function Alerts() {
           return <openModal.component />;
         };
       } else {
-        obj = { renderAlert: undefined, renderKey: undefined, props: undefined };
-        return obj;
+        return { renderAlert: "Array", renderKey: "call", props: "string" };
       }
     }
   });
-  const effect = importAllResult.useEffect(() => {
+  const effect = renderAlert.useEffect(() => {
     closure_0.current = stateFromStoresObject;
   });
-  const items1 = [closure_17];
-  stateFromStores = _require(stateFromStores[23]).useStateFromStores(items1, () => outer1_17.isAlertDismissable());
-  const obj2 = _require(stateFromStores[23]);
-  const items2 = [closure_13];
-  const renderAlert = stateFromStoresObject.renderAlert;
+  const items1 = [getAlert];
+  stateFromStores = _require(stateFromStores[18]).useStateFromStores(items1, () => alertDismissable.isAlertDismissable());
+  const obj2 = _require(stateFromStores[18]);
+  const items2 = [maybeApplyNoTextColorForLightCustomTheme];
+  renderAlert = stateFromStoresObject.renderAlert;
   const renderKey = stateFromStoresObject.renderKey;
   const items3 = [renderAlert, stateFromStores];
-  const stateFromStores1 = _require(stateFromStores[23]).useStateFromStores(items2, () => outer1_13.useReducedMotion);
-  const callback = importAllResult.useCallback(() => {
+  const stateFromStores1 = _require(stateFromStores[18]).useStateFromStores(items2, () => useReducedMotion.useReducedMotion);
+  const callback = renderAlert.useCallback(() => {
     let tmp2 = tmp;
     if (null != renderAlert) {
       tmp2 = stateFromStores;
     }
     if (tmp2) {
-      stateFromStoresObject(stateFromStores[19]).close();
-      const obj = stateFromStoresObject(stateFromStores[19]);
+      stateFromStoresObject(stateFromStores[15]).close();
+      const obj = stateFromStoresObject(stateFromStores[15]);
     }
     return null != renderAlert;
   }, items3);
-  stateFromStoresObject(stateFromStores[25])(callback);
-  let tmp7;
+  stateFromStoresObject(stateFromStores[20])(callback);
+  let tmp9;
   if (null != renderAlert) {
-    obj = { isDismissable: stateFromStores, renderAlert, renderKey, useReducedMotion: stateFromStores1 };
-    tmp7 = callback3(closure_22, obj, renderKey);
+    obj = { isDismissable: null, renderAlert: null, renderKey: null, useReducedMotion: null };
+    obj[0] = stateFromStores;
+    obj[1] = renderAlert;
+    obj[2] = renderKey;
+    obj[3] = stateFromStores1;
+    tmp9 = callback(AlertWrapper, obj, renderKey);
   }
-  obj = { component: _require(stateFromStores[27]).TransitionGroupOverlayView, style: StyleSheet.absoluteFill, children: tmp7 };
-  return callback3(_require(stateFromStores[26]).TransitionGroup, obj);
+  obj = { component: null, style: null, children: null };
+  obj[0] = _require(stateFromStores[22]).TransitionGroupOverlayView;
+  obj[1] = StyleSheet.absoluteFill;
+  obj[2] = tmp9;
+  return callback(_require(stateFromStores[21]).TransitionGroup, obj);
 });
-let obj1 = {
-  stores: items3,
-  center: true,
-  isOpen() {
-    return null != importDefaultResult2.getCurrentSurvey();
-  },
-  getComponent() {
-    return require(15714) /* MobileSurvey */.default;
-  }
-};
-let result = require("_possibleConstructorReturn").fileFinishedImporting("components_native/common/Alerts.tsx");
+const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("components_native/common/Alerts.tsx");
 
 export default memoResult;

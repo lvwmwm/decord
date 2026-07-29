@@ -1,21 +1,121 @@
-// Module ID: 10932
-// Function ID: 84700
+// Module ID: 10956
+// Function ID: 10957
 // Name: _startAuthorizationNoHook
-// Dependencies: [5, 653, 5502, 3862, 675, 2]
+// Dependencies: [5, 676, 5520, 3886, 698, 2]
 // Exports: startAuthorizationNoHook
 
-// Module 10932 (_startAuthorizationNoHook)
+// Module 10956 (_startAuthorizationNoHook)
 import set from "set";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
 function _startAuthorizationNoHook() {
-  // CreateGeneratorClosureLongIndex (0x67)
-  const obj = callback(tmp);
-  return obj(...arguments);
+  const self = this;
+  const tmp = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c6 = 0;
+    let c7 = 0;
+    let c5 = 0;
+    return (function*(arg0, arg1) {
+      if (c7 === 2) {
+        c7 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp7 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let set = tmp3;
+              const table = tmp5;
+              const callback = authorizationApp;
+              authorizationApp = undefined;
+              if (null != callback) {
+                let obj3 = callback(outer1_2[2]);
+                authorizationApp = obj3.getAuthorizationApp(tmp33);
+                let prop;
+                if (authorizationApp != null) {
+                  prop = authorizationApp.connectionEntrypointUrl;
+                }
+                if (null != prop) {
+                  let c5 = 1;
+                  c6 = 2;
+                  c7 = 1;
+                  const obj1 = { value: null, done: false };
+                  obj1[0] = callback2(outer1_2[3]).openURL(authorizationApp.connectionEntrypointUrl);
+                  return obj1;
+                }
+              }
+            }
+          } else {
+            if (1 === tmp8) {
+              c5 = 0;
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              obj = authorizationApp(table[4]);
+              const obj2 = { location_stack: null, application_id: null, flow_type: "web" };
+              obj2[0] = callback;
+              obj2[1] = authorizationApp.id;
+              obj.track(constants.ON_PLATFORM_ACCOUNT_LINK_FLOW_STARTED, obj2);
+              c5 = 0;
+            }
+            c5 = 0;
+            c7 = 3;
+            obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          }
+          c7 = 3;
+        } catch (tmp24) {
+          constants = tmp24;
+          if (tmp4 === c5) {
+            c7 = tmp2;
+            throw tmp24;
+          } else {
+            c6 = tmp;
+          }
+        }
+      }
+    })();
+  });
+  const _startAuthorizationNoHook = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 }
 const result = require("getAuthorizationApp").fileFinishedImporting("modules/application_account_linking/native/startAuthorizationNoHook.tsx");
 
-export const startAuthorizationNoHook = function startAuthorizationNoHook(arg0, items) {
-  return _startAuthorizationNoHook(...arguments);
+export const startAuthorizationNoHook = function startAuthorizationNoHook(application, items) {
+  const self = this;
+  const apply = _startAuthorizationNoHook.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };

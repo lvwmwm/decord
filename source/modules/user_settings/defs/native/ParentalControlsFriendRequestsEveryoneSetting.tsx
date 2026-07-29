@@ -1,43 +1,39 @@
-// Module ID: 14661
-// Function ID: 111648
+// Module ID: 14686
+// Function ID: 14687
 // Name: toggle
-// Dependencies: [31, 5775, 7733, 653, 6237, 13835, 6485, 10099, 1212, 2]
+// Dependencies: [19, 5793, 7756, 676, 6257, 13856, 6506, 10120, 1236, 2]
 
-// Module 14661 (toggle)
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14686 (toggle)
+import noop from "noop";
+import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import ME from "ME";
 import createToggle from "createToggle";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 const require = arg1;
-({ AllFriendSourceFlags: closure_4, FriendSourceFlags: closure_5 } = ME);
+({ AllFriendSourceFlags: c4, FriendSourceFlags: c5 } = ME);
 createToggle = {
   useTitle() {
-    const intl = require(1212) /* getSystemLocale */.intl;
-    return intl.string(require(1212) /* getSystemLocale */.t.mGr3CX);
+    const intl = require(1236) /* getSystemLocale */.intl;
+    return intl.string(require(1236) /* getSystemLocale */.t.mGr3CX);
   },
   parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useFriendRequestsEveryoneSettingValue() {
-    const selectedTeenId = controlledSetting(6237).useSelectedTeenId();
-    let tmp2;
-    if (null != selectedTeenId) {
-      tmp2 = selectedTeenId;
-    }
-    const ParentalControlledFriendSourceFlags = controlledSetting(13835).ParentalControlledFriendSourceFlags;
-    controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(tmp2);
+    const selectedTeenId = controlledSetting(6257).useSelectedTeenId();
+    const ParentalControlledFriendSourceFlags = controlledSetting(13856).ParentalControlledFriendSourceFlags;
+    controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);
     const items = [controlledSetting];
     return React.useMemo(() => controlledSetting(outer1_1[6]).computeFlags(controlledSetting), items).all;
   },
   onValueChange: function onFriendRequestsEveryoneSettingValueChange(arg0) {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      const ParentalControlledFriendSourceFlags = require(13835) /* result */.ParentalControlledFriendSourceFlags;
+      const ParentalControlledFriendSourceFlags = require(13856) /* result */.ParentalControlledFriendSourceFlags;
       if (arg0) {
-        let tmp7 = tmp4;
+        let tmp7 = tmp5;
       } else {
-        tmp7 = tmp4 & ~constants.NO_RELATION;
+        tmp7 = tmp5 & ~constants.NO_RELATION;
       }
       const result = ParentalControlledFriendSourceFlags.updateControlledSetting(selectedTeenId, tmp7);
     }

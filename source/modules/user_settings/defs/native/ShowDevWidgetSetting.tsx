@@ -1,10 +1,10 @@
-// Module ID: 14509
-// Function ID: 110742
+// Module ID: 14534
+// Function ID: 14535
 // Name: toggle
-// Dependencies: [5984, 13617, 566, 10099, 14510, 13852, 2]
+// Dependencies: [6003, 13638, 589, 10120, 14535, 13873, 2]
 
-// Module 14509 (toggle)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 14534 (toggle)
+import initialize from "initialize";
 import createToggle from "createToggle";
 
 const require = arg1;
@@ -15,13 +15,13 @@ createToggle = {
   parent: null,
   IconComponent: require("StaffBadgeIcon").StaffBadgeIcon,
   onValueChange: function handleShowDevWidgetSettingToggle(showDevWidget) {
-    let obj = require(13617) /* updateDevToolsSettings */;
+    let obj = require(13638) /* updateDevToolsSettings */;
     obj = { showDevWidget };
     const result = obj.updateDevToolsSettings(obj);
   },
   useValue: function useShowDevWidgetSettingToggleValue() {
-    const items = [_isNativeReflectConstruct];
-    return require(566) /* initialize */.useStateFromStores(items, () => outer1_2.showDevWidget);
+    const items = [initialize];
+    return require(589) /* initialize */.useStateFromStores(items, () => showDevWidget.showDevWidget);
   },
   usePredicate: require("useStaffOrDeveloperSettingPredicate").useStaffOrDeveloperSettingPredicate
 };

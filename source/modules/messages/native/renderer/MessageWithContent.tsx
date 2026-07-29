@@ -1,11 +1,11 @@
-// Module ID: 7695
-// Function ID: 61400
+// Module ID: 7718
+// Function ID: 7719
 // Name: generateMessageRowData
-// Dependencies: [7696, 7691, 7697, 1212, 7863, 2]
+// Dependencies: [7719, 7714, 7720, 1236, 7886, 2]
 // Exports: generateMessageRowData
 
-// Module 7695 (generateMessageRowData)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 7718 (generateMessageRowData)
+import handleMessageSendFailedAutomod from "handleMessageSendFailedAutomod";
 import { RowType } from "Changeset";
 
 const require = arg1;
@@ -39,40 +39,41 @@ export const generateMessageRowData = function generateMessageRowData(canShowIma
     tmp3 = alwaysShowAddReaction;
   }
   let overrideBackgroundHighlight = canShowImages.overrideBackgroundHighlight;
-  obj = { type: RowType.MESSAGE, message: importDefault(7697)(obj), canAddNewReactions };
+  obj = { type: RowType.MESSAGE, message: importDefault(7720)(obj), canAddNewReactions, addNewReactionAccessibilityLabel: null, reactionsTheme: null, highlightLabel: null, renderContentOnly: null, separatorBefore: null, changeType: null, truncation: null, alwaysShowAddReaction: null, backgroundHighlight: null, swipeActions: null, replyAccessibilityLabel: null, forwardAccessibilityLabel: null, threadAccessibilityLabel: null, forcedTheme: null };
   obj = { options, message, roleStyle, isFirst, isEditing, canShowImages: undefined === canShowImages || canShowImages, isSystemDM: tmp, isInlineReplyPreview: false, pushFeedbackType, renderContentOnly, showContentInventoryEntryFallbackEmbed: canShowImages.showContentInventoryEntryFallbackEmbed };
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.addNewReactionAccessibilityLabel = intl.string(require(1212) /* getSystemLocale */.t.lfIHs4);
-  obj.reactionsTheme = reactionsTheme;
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.highlightLabel = intl2.string(require(1212) /* getSystemLocale */.t["IOS/dU"]);
-  obj.renderContentOnly = renderContentOnly;
-  obj.separatorBefore = separatorBefore;
-  obj.changeType = changeType;
-  obj.truncation = truncation;
-  obj.alwaysShowAddReaction = tmp3;
-  if (null == overrideBackgroundHighlight) {
-    obj = { message, theme, isEditing, isAutomodBlockedMessage: null != message.getMessage(message.id) };
-    overrideBackgroundHighlight = importDefault(7863).createBackgroundHighlight(obj);
-    const obj3 = importDefault(7863);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[3] = intl.string(require(1236) /* getSystemLocale */.t.lfIHs4);
+  obj[4] = reactionsTheme;
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[5] = intl2.string(require(1236) /* getSystemLocale */.t["IOS/dU"]);
+  obj[6] = renderContentOnly;
+  obj[7] = separatorBefore;
+  obj[8] = changeType;
+  obj[9] = truncation;
+  obj[10] = tmp3;
+  if (overrideBackgroundHighlight == null) {
+    let tmp4Result = tmp4(7886);
+    obj = { message: null, theme: null, isEditing: null, isAutomodBlockedMessage: null };
+    obj[0] = message;
+    obj[1] = theme;
+    obj[2] = isEditing;
+    obj[3] = null != message.getMessage(message.id);
+    overrideBackgroundHighlight = tmp4Result.createBackgroundHighlight(obj);
   }
-  obj.backgroundHighlight = overrideBackgroundHighlight;
+  obj[11] = overrideBackgroundHighlight;
+  tmp4Result = tmp4(7886);
   let canReply = options.enableSwipeActions;
   if (canReply) {
     canReply = canShowImages.canReply;
   }
-  obj.swipeActions = importDefault(7863).createSwipeActions(canReply, options.enableSwipeActions && canShowImages.canEdit);
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj.replyAccessibilityLabel = intl3.string(require(1212) /* getSystemLocale */.t["5IEsGx"]);
-  const intl4 = require(1212) /* getSystemLocale */.intl;
-  obj.forwardAccessibilityLabel = intl4.string(require(1212) /* getSystemLocale */.t.I3ltXO);
-  const intl5 = require(1212) /* getSystemLocale */.intl;
-  obj.threadAccessibilityLabel = intl5.string(require(1212) /* getSystemLocale */.t.rBIGBL);
+  obj[12] = tmp4Result.createSwipeActions(canReply, options.enableSwipeActions && canShowImages.canEdit);
+  const intl3 = tmp6(1236).intl;
+  obj[13] = intl3.string(require(1236) /* getSystemLocale */.t["5IEsGx"]);
+  const intl4 = tmp6(1236).intl;
+  obj[14] = intl4.string(require(1236) /* getSystemLocale */.t.I3ltXO);
+  const intl5 = tmp6(1236).intl;
+  obj[15] = intl5.string(require(1236) /* getSystemLocale */.t.rBIGBL);
   const forcedTheme = options.forcedTheme;
-  let tmp9;
-  if (null != forcedTheme) {
-    tmp9 = forcedTheme;
-  }
-  obj.forcedTheme = tmp9;
+  obj[16] = forcedTheme;
   return obj;
 };

@@ -1,16 +1,16 @@
-// Module ID: 9323
-// Function ID: 72852
+// Module ID: 9347
+// Function ID: 9348
 // Name: useEmojiPickerSearchState
-// Dependencies: [57, 31, 5026, 682, 1331, 2]
+// Dependencies: [32, 19, 5048, 705, 1355, 2]
 // Exports: default
 
-// Module 9323 (useEmojiPickerSearchState)
+// Module 9347 (useEmojiPickerSearchState)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import getEmojiToGroupId from "getEmojiToGroupId";
 
 const require = arg1;
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/emoji_picker/native/components/useEmojiPickerSearchState.tsx");
+let result = require("getEmojiToGroupId").fileFinishedImporting("modules/emoji_picker/native/components/useEmojiPickerSearchState.tsx");
 
 export default function useEmojiPickerSearchState(arg0, arg1, arg2) {
   let closure_0 = arg0;
@@ -18,7 +18,7 @@ export default function useEmojiPickerSearchState(arg0, arg1, arg2) {
   let callback = arg2;
   ref = ref.useRef("");
   const tmp2 = callback(ref.useState(null), 2);
-  let _isNativeReflectConstruct = tmp2[1];
+  let getEmojiToGroupId = tmp2[1];
   const items = [arg1, arg0, arg2];
   return {
     handleTextChange: ref.useCallback((arr) => {
@@ -28,20 +28,23 @@ export default function useEmojiPickerSearchState(arg0, arg1, arg2) {
         if (":" === arr[0]) {
           substr = arr.slice(1);
         }
-        const FrecencyUserSettingsActionCreators = callback(1331).FrecencyUserSettingsActionCreators;
+        const FrecencyUserSettingsActionCreators = callback(1355).FrecencyUserSettingsActionCreators;
         const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
-        let obj = { channel: callback, query: substr, count: 0, intention: _slicedToArray };
-        const dependencyMap = _isNativeReflectConstruct.searchWithoutFetchingLatest(obj);
-        callback(682).batchUpdates(() => {
+        let obj = { channel: null, query: null, count: 0, intention: null };
+        obj[0] = callback;
+        obj[1] = substr;
+        obj[3] = _slicedToArray;
+        const dependencyMap = getEmojiToGroupId.searchWithoutFetchingLatest(obj);
+        callback(705).batchUpdates(() => {
           outer1_3.current = closure_0;
           outer1_4(closure_1);
         });
-        const obj3 = callback(682);
+        const obj3 = callback(705);
       } else {
-        obj = callback(682);
+        obj = callback(705);
         obj.batchUpdates(() => {
-          outer1_3.current = "";
-          outer1_4(null);
+          noop.current = "";
+          callback(null);
           const result = closure_1.set(0);
         });
       }

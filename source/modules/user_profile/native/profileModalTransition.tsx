@@ -1,32 +1,31 @@
-// Module ID: 15581
-// Function ID: 119782
-// Name: setTransitioningModalCount
-// Dependencies: [31, 1456, 2]
+// Module ID: 15615
+// Function ID: 15616
+// Name: set
+// Dependencies: [19, 1480, 2]
 // Exports: useIsProfileModalTransitioning, useReportProfileModalTransition
 
-// Module 15581 (setTransitioningModalCount)
-import result from "result";
+// Module 15615 (set)
+import noop from "noop";
 import set from "set";
 
 const require = arg1;
-function setTransitioningModalCount(arg0) {
-  const bound = Math.max(0, arg0);
-  if (bound !== bound) {
-    const item = set.forEach((arg0) => arg0());
-  }
-}
 let c3 = 0;
 let set = new Set();
 const result = set.fileFinishedImporting("modules/user_profile/native/profileModalTransition.tsx");
 
 export const useReportProfileModalTransition = function useReportProfileModalTransition() {
-  navigation = navigation(1456).useNavigation();
+  navigation = navigation(1480).useNavigation();
   let items = [navigation];
   const effect = React.useEffect(() => {
     function leave() {
       if (c0) {
         c0 = false;
-        outer2_5(outer2_3 - 1);
+        const _Math = Math;
+        const bound = Math.max(0, outer1_3 - 1);
+        if (bound !== outer1_3) {
+          outer1_3 = bound;
+          const item = outer1_4.forEach((arg0) => arg0());
+        }
       }
     }
     const navigation = false;
@@ -34,7 +33,12 @@ export const useReportProfileModalTransition = function useReportProfileModalTra
       navigation.addListener("transitionStart", function enter() {
         if (!c0) {
           c0 = true;
-          outer2_5(outer2_3 + 1);
+          const _Math = Math;
+          const bound = Math.max(0, outer1_3 + 1);
+          if (bound !== outer1_3) {
+            outer1_3 = bound;
+            const item = outer1_4.forEach((arg0) => arg0());
+          }
         }
       }),
       navigation.addListener("transitionEnd", leave),
@@ -42,14 +46,22 @@ export const useReportProfileModalTransition = function useReportProfileModalTra
     ];
     return () => {
       const item = items.forEach((arg0) => arg0());
-      leave();
+      if (c0) {
+        c0 = false;
+        const _Math = Math;
+        const bound = Math.max(0, outer1_3 - 1);
+        if (bound !== outer1_3) {
+          outer1_3 = bound;
+          const item1 = outer1_4.forEach((arg0) => arg0());
+        }
+      }
     };
   }, items);
 };
 export const useIsProfileModalTransitioning = function useIsProfileModalTransitioning() {
   return React.useSyncExternalStore((arg0) => {
     let closure_0 = arg0;
-    outer1_4.add(arg0);
-    return () => outer2_4.delete(closure_0);
-  }, () => outer1_3 > 0);
+    set.add(arg0);
+    return () => outer1_4.delete(closure_0);
+  }, () => closure_3 > 0);
 };

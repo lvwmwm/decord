@@ -1,41 +1,41 @@
-// Module ID: 14767
-// Function ID: 112384
+// Module ID: 14793
+// Function ID: 14794
 // Name: TestView
-// Dependencies: [57, 31, 27, 1850, 33, 4165, 689, 624, 4576, 4161, 5200, 6706, 4578, 4133, 14768, 1935, 5193, 8740, 2]
+// Dependencies: [32, 19, 17, 1874, 21, 4189, 712, 647, 4598, 4185, 5222, 6727, 4600, 4157, 14794, 1959, 5215, 8764, 2]
 
-// Module 14767 (TestView)
+// Module 14793 (TestView)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
-import { ScrollView } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import importAllResult from "noop";
+import { ScrollView } from "NativePaymentContextProvider";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function TestView() {
-  let tmp = callback2();
-  const tmp2 = first2(importAllResult.useState("1341506443580276736"), 2);
-  const first = tmp2[0];
-  let closure_1 = tmp2[1];
-  let obj = first(first1[7]);
-  const items = [_isNativeReflectConstruct];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getCurrentUser());
+  const tmp = callback2();
+  let obj = importAllResult;
+  const tmp3 = first2(importAllResult.useState("1341506443580276736"), 2);
+  const first = tmp3[0];
+  let closure_1 = tmp3[1];
+  let obj1 = first(first1[7]);
+  const items = [mergeGuildAvatar];
+  const stateFromStores = obj1.useStateFromStores(items, () => currentUser.getCurrentUser());
   let id;
-  if (null != stateFromStores) {
+  if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  const tmp7 = first2(importAllResult.useState(id), 2);
-  first1 = tmp7[0];
-  const tmp9 = first2(importAllResult.useState(undefined), 2);
-  first2 = tmp9[0];
-  obj = { spacing: 16, style: tmp.container };
+  let tmp2Result = tmp2(importAllResult.useState(id), 2);
+  first1 = tmp2Result[0];
+  tmp2Result = tmp2(obj.useState(undefined), 2);
+  first2 = tmp2Result[0];
+  obj = { spacing: 16, style: tmp.container, children: null };
   const items1 = [callback(first(first1[9]).Text, { variant: "text-lg/bold", children: "Android Payment Flow Test" }), ];
-  obj = {};
-  const obj1 = { style: tmp.title, variant: "text-md/bold", children: "Gift Purchase SKU" };
-  const items2 = [callback(first(first1[9]).Text, obj1), , , , ];
-  let obj2 = {
+  obj = { style: tmp.title, variant: "text-md/bold", children: "Gift Purchase SKU" };
+  const items2 = [callback(first(first1[9]).Text, obj), , , , ];
+  obj1 = {
     containerStyle: tmp.textInput,
     label: "SKU ID",
     value: first,
@@ -45,53 +45,57 @@ function TestView() {
     },
     isClearable: true
   };
-  items2[1] = callback(first(first1[11]).TextInput, obj2);
-  let obj3 = { containerStyle: tmp.textInput, label: "Gift Recipient ID", value: first1, placeholder: "Recipient User ID", onChange: tmp7[1], isClearable: true };
-  items2[2] = callback(first(first1[11]).TextInput, obj3);
-  const obj4 = { containerStyle: tmp.textInput, label: "Gift Message (Optional)", value: first2, placeholder: "Here's a gift for you!", onChange: tmp9[1], isClearable: true };
-  items2[3] = callback(first(first1[11]).TextInput, obj4);
-  const obj5 = {};
-  let tmp14 = null === first;
-  if (!tmp14) {
-    tmp14 = null === first1;
+  items2[1] = callback(first(first1[11]).TextInput, obj1);
+  items2[2] = callback(first(first1[11]).TextInput, { containerStyle: tmp.textInput, label: "Gift Recipient ID", value: first1, placeholder: "Recipient User ID", onChange: tmp2Result[1], isClearable: true });
+  items2[3] = callback(first(first1[11]).TextInput, { containerStyle: tmp.textInput, label: "Gift Message (Optional)", value: first2, placeholder: "Here's a gift for you!", onChange: tmp2Result[1], isClearable: true });
+  let tmp15 = null === first;
+  if (!tmp15) {
+    tmp15 = null === first1;
   }
-  obj5.disabled = tmp14;
-  obj5.text = "Send Gift";
-  obj5.onPress = function onPress() {
-    let tmp = null != first;
-    if (tmp) {
-      tmp = null != first1;
+  const obj4 = { children: null };
+  items2[4] = callback(first(first1[12]).Button, {
+    disabled: tmp15,
+    text: "Send Gift",
+    onPress() {
+      let tmp2 = null != first;
+      if (tmp2) {
+        tmp2 = null != first1;
+      }
+      if (tmp2) {
+        const obj = { selectedSkuId: null, requestType: "giftSku", giftRecipientId: null, giftMessage: null };
+        obj[0] = first;
+        obj[2] = first1;
+        obj[3] = first2;
+        callback(first1[13]).hideActionSheet();
+        const obj2 = callback(first1[13]);
+        callback(first1[13]).openLazy(first(first1[15])(first1[14], first1.paths), "SimpleRequestOTPActionSheet", obj);
+        const obj3 = callback(first1[13]);
+      }
     }
-    if (tmp) {
-      const obj = { selectedSkuId: first, requestType: "giftSku", giftRecipientId: first1, giftMessage: first2 };
-      callback(first1[13]).hideActionSheet();
-      const obj2 = callback(first1[13]);
-      callback(first1[13]).openLazy(first(first1[15])(first1[14], first1.paths), "SimpleRequestOTPActionSheet", obj);
-      const obj3 = callback(first1[13]);
-    }
-  };
-  items2[4] = callback(first(first1[12]).Button, obj5);
-  obj.children = items2;
-  items1[1] = closure_8(first(first1[10]).Card, obj);
-  obj.children = items1;
+  });
+  obj4[0] = items2;
+  items1[1] = closure_8(first(first1[10]).Card, obj4);
+  obj[2] = items1;
   return closure_8(first(first1[8]).Stack, obj);
 }
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let obj = {};
-obj = { backgroundColor: require("_createForOfIteratorHelperLoose").colors.BACKGROUND_BASE_LOW };
-obj.wrap = obj;
-_createForOfIteratorHelperLoose = { padding: require("_createForOfIteratorHelperLoose").space.PX_16 };
-obj.container = _createForOfIteratorHelperLoose;
-obj.textInput = { marginBottom: 16 };
-obj.title = { marginBottom: 8 };
-let closure_9 = _createForOfIteratorHelperLoose.createStyles(obj);
+let c4 = importAllResult;
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let obj = { wrap: null, container: null, textInput: null, title: null };
+obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
+obj[0] = obj;
+createCacheKey = { padding: require("Themes").space.PX_16 };
+obj[1] = createCacheKey;
+obj[2] = { marginBottom: 16 };
+obj[3] = { marginBottom: 8 };
+let closure_9 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function PaymentFlowTest() {
-  const insets = importDefault(5193)({ includeKeyboardHeight: true }).insets;
-  let obj = { skuIDs: [], activeSubscription: null };
-  obj = { style: callback2().wrap, contentContainerStyle: obj };
-  obj = { paddingBottom: insets.bottom, paddingTop: insets.top, paddingLeft: insets.left, paddingRight: insets.right, children: callback(TestView, {}) };
-  obj.children = callback(ScrollView, obj);
-  return callback(require(8740) /* NativePaymentContextProvider */.NativePaymentContextProvider, obj);
+  const insets = importDefault(5215)({ includeKeyboardHeight: true }).insets;
+  let obj = { skuIDs: [], activeSubscription: null, children: null };
+  obj = { style: callback2().wrap, contentContainerStyle: obj, children: null };
+  obj = { paddingBottom: insets.bottom, paddingTop: insets.top, paddingLeft: insets.left, paddingRight: insets.right };
+  obj[2] = callback(TestView, {});
+  obj[2] = callback(ScrollView, obj);
+  return callback(require(8764) /* NativePaymentContextProvider */.NativePaymentContextProvider, obj);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/billing/native/PaymentFlowTest.android.tsx");
 

@@ -1,24 +1,24 @@
-// Module ID: 8216
-// Function ID: 65732
+// Module ID: 8240
+// Function ID: 8241
 // Name: InputButton
-// Dependencies: [29, 31, 27, 33, 4165, 689, 4582, 6719, 4579, 2]
+// Dependencies: [109, 19, 17, 21, 4189, 712, 4604, 6740, 4601, 2]
 
-// Module 8216 (InputButton)
+// Module 8240 (InputButton)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { Text } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
 const require = arg1;
 let closure_2 = ["size", "isRound", "text", "value", "icon", "iconPosition", "accessibilityLabel", "accessibilityValue", "maxFontSizeMultiplier"];
-let obj = { buttonText: { flexGrow: 1, flexShrink: 1, width: "100%" } };
-obj = { color: require("_createForOfIteratorHelperLoose").colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
-obj.buttonTextPlaceholder = obj;
-_createForOfIteratorHelperLoose = { color: require("_createForOfIteratorHelperLoose").colors.REDESIGN_BUTTON_TERTIARY_TEXT };
-obj.buttonTextValue = _createForOfIteratorHelperLoose;
-let closure_6 = _createForOfIteratorHelperLoose.createStyles(obj);
-const forwardRefResult = require("result").forwardRef((size) => {
+let obj = { buttonText: { flexGrow: 1, flexShrink: 1, width: "100%" }, buttonTextPlaceholder: null, buttonTextValue: null };
+obj = { color: require("Themes").colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
+obj[1] = obj;
+createCacheKey = { color: require("Themes").colors.REDESIGN_BUTTON_TERTIARY_TEXT };
+obj[2] = createCacheKey;
+let closure_6 = createCacheKey.createStyles(obj);
+const forwardRefResult = require("noop").forwardRef((size, ref) => {
   let accessibilityLabel;
   let accessibilityValue;
   let icon;
@@ -39,57 +39,57 @@ const forwardRefResult = require("result").forwardRef((size) => {
   }
   ({ accessibilityLabel, accessibilityValue, maxFontSizeMultiplier } = size);
   if (undefined === maxFontSizeMultiplier) {
-    maxFontSizeMultiplier = require(4582) /* getButtonPadding */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
+    maxFontSizeMultiplier = require(4604) /* MINIMUM_HIT_AREA */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
   }
   const tmp4 = callback(size, closure_2);
-  let obj = require(6719) /* useInputStyles */;
-  obj = { size: str, isRound: undefined !== isRound && isRound, hasLeadingIcon: "start" === str2 };
-  const inputStyles = obj.useInputStyles(obj);
-  const tmp7 = callback2();
+  let obj = require(6740) /* useInputStyles */;
+  const inputStyles = obj.useInputStyles({ size: str, isRound: undefined !== isRound && isRound, hasLeadingIcon: tmp7 });
+  const tmp9 = callback2();
   if (null != icon) {
-    obj = {};
-    if (tmp5) {
-      obj.paddingStart = inputStyles.leadingIcon.paddingEnd;
-      let tmp8 = obj;
+    if (tmp7) {
+      obj = { paddingStart: null };
+      obj[0] = inputStyles.leadingIcon.paddingEnd;
     } else {
-      obj.paddingEnd = inputStyles.trailingIcon.paddingStart;
-      tmp8 = obj;
+      obj = { paddingEnd: null };
+      obj[0] = inputStyles.trailingIcon.paddingStart;
     }
   } else {
     const obj2 = {};
     const merged = Object.assign(tmp4);
-    obj2["ref"] = arg1;
-    obj2["size"] = str;
-    obj2["variant"] = "tertiary";
-    obj2["icon"] = icon;
-    obj2["iconPosition"] = str2;
+    obj2.ref = ref;
+    obj2.size = str;
+    obj2.variant = "tertiary";
+    obj2.icon = icon;
+    obj2.iconPosition = str2;
     const items = [, ];
     ({ padding: arr[0], radius: arr[1] } = inputStyles);
-    obj2["pillStyle"] = items;
-    if (null == accessibilityLabel) {
+    obj2.pillStyle = items;
+    if (accessibilityLabel == null) {
       str = undefined;
-      if (null != text) {
+      if (text != null) {
         str = text.toString();
       }
       accessibilityLabel = str;
     }
-    obj2["accessibilityLabel"] = accessibilityLabel;
-    if (null == accessibilityValue) {
-      const obj3 = { text: value };
+    obj2.accessibilityLabel = accessibilityLabel;
+    if (accessibilityValue == null) {
+      const obj3 = { text: null };
+      obj3[0] = value;
       accessibilityValue = obj3;
     }
-    obj2["accessibilityValue"] = accessibilityValue;
-    const obj4 = {};
-    const items1 = [inputStyles.text, tmp7.buttonText, null != value ? tmp7.buttonTextValue : tmp7.buttonTextPlaceholder, {}];
-    obj4.style = items1;
-    obj4.numberOfLines = 1;
-    obj4.maxFontSizeMultiplier = maxFontSizeMultiplier;
-    if (null != value) {
-      text = value;
+    obj2.accessibilityValue = accessibilityValue;
+    const items1 = [inputStyles.text, tmp9.buttonText, , ];
+    const obj4 = { style: null, numberOfLines: 1, maxFontSizeMultiplier: null, children: null };
+    items1[2] = null != value ? tmp9.buttonTextValue : tmp9.buttonTextPlaceholder;
+    items1[3] = {};
+    obj4[0] = items1;
+    obj4[2] = maxFontSizeMultiplier;
+    if (value == null) {
+      value = text;
     }
-    obj4.children = text;
-    obj2["textElement"] = <Text />;
-    return jsx(require(4579) /* CollapsingText */.BaseTextButton, {});
+    obj4[3] = value;
+    obj2.textElement = <Text style={null} numberOfLines={1} maxFontSizeMultiplier={null}>{null}</Text>;
+    return jsx(require(4601) /* CollapsingText */.BaseTextButton, {});
   }
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("design/components/experimental/Button/native/InputButton.native.tsx");

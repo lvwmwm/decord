@@ -1,26 +1,26 @@
-// Module ID: 15452
-// Function ID: 117791
-// Dependencies: [31, 27, 33, 4165, 689, 2]
+// Module ID: 15486
+// Function ID: 15487
+// Dependencies: [19, 17, 21, 4189, 712, 2]
 
-// Module 15452
+// Module 15486
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let obj = {};
-obj = { flex: 1, borderRadius: require("_createForOfIteratorHelperLoose").radii.xs, overflow: "hidden", backgroundColor: require("_createForOfIteratorHelperLoose").colors.BORDER_SUBTLE };
-obj.imageContainer = obj;
-let closure_2 = _createForOfIteratorHelperLoose.createStyles(obj);
-const memoResult = require("result").memo((arg0) => {
+let obj = { imageContainer: null };
+obj = { flex: 1, borderRadius: require("Themes").radii.xs, overflow: "hidden", backgroundColor: require("Themes").colors.BORDER_SUBTLE };
+obj[0] = obj;
+let closure_2 = createCacheKey.createStyles(obj);
+const memoResult = require("noop").memo((arg0) => {
   let height;
   let style;
   let width;
   ({ width, height, style } = arg0);
-  const obj = {};
+  const obj = { style: null };
   const items = [{ width, height }, callback().imageContainer, style];
-  obj.style = items;
-  return <View />;
+  obj[0] = items;
+  return <View style={null} />;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/search/native/components/tabs/pages/placeholders/GridItemPlaceholder.tsx");
 

@@ -1,194 +1,128 @@
-// Module ID: 12755
-// Function ID: 99082
-// Name: NetworkTtlCache
-// Dependencies: [6, 7, 2]
+// Module ID: 12777
+// Function ID: 12778
+// Name: NetworkTtlCacheStatus
+// Dependencies: [2]
 
-// Module 12755 (NetworkTtlCache)
-import _classCallCheck from "_classCallCheck";
-import _defineProperties from "_defineProperties";
-
-let closure_2 = { IDLE: "idle", LOADING: "loading", SUCCESS: "success", ERROR: "error" };
+// Module 12777 (NetworkTtlCacheStatus)
+let closure_0 = { IDLE: "idle", LOADING: "loading", SUCCESS: "success", ERROR: "error" };
 let obj = { IDLE: "idle", LOADING: "loading", VALID: "valid", STALE: "stale", ERROR: "error" };
-let tmp2 = (() => {
-  class NetworkTtlCache {
-    constructor() {
-      obj = arg0;
-      self = this;
-      if (arg0 === undefined) {
-        obj = {};
-      }
-      tmp = NetworkTtlCache(self, NetworkTtlCache);
-      tmp2 = null;
-      self.value = null;
-      self.fetchState = outer1_2.IDLE;
-      self.fetchedAt = null;
-      ttlMs = obj.ttlMs;
-      if (null != ttlMs) {
-        tmp2 = ttlMs;
-      }
-      self.ttlMs = tmp2;
-      return;
+const result = require("set").fileFinishedImporting("lib/NetworkTtlCache.tsx");
+class NetworkTtlCache {
+  constructor() {
+    obj = global;
+    if (global === undefined) {
+      obj = {};
+    }
+    obj = Object.create(new.target.prototype);
+    obj[1] = closure_0.IDLE;
+    ttlMs = obj.ttlMs;
+    if (ttlMs == null) {
+      ttlMs = null;
+    }
+    obj.ttlMs = ttlMs;
+    return obj;
+  }
+}
+const prototype = NetworkTtlCache.prototype;
+prototype["setTtl"] = function setTtl(ttlMs) {
+  this.ttlMs = ttlMs;
+};
+prototype["setLoading"] = function setLoading(arg0) {
+  this.fetchState = constants.LOADING;
+};
+prototype["setValue"] = function setValue(value) {
+  this.value = value;
+  this.fetchState = constants.SUCCESS;
+  this.fetchedAt = Date.now();
+};
+prototype["setError"] = function setError() {
+  this.fetchState = constants.ERROR;
+};
+prototype["clear"] = function clear() {
+  this.value = null;
+  this.fetchState = constants.IDLE;
+  this.fetchedAt = null;
+};
+prototype["getValue"] = function getValue() {
+  return this.value;
+};
+prototype["getFetchState"] = function getFetchState() {
+  return this.fetchState;
+};
+prototype["getFetchedAt"] = function getFetchedAt() {
+  return this.fetchedAt;
+};
+prototype["forceExpire"] = function forceExpire() {
+  this.fetchedAt = null;
+};
+prototype["isExpired"] = function isExpired() {
+  const self = this;
+  let tmp = null != this.ttlMs;
+  if (tmp) {
+    let tmp2 = null == self.fetchedAt;
+    if (!tmp2) {
+      const _Date = Date;
+      tmp2 = Date.now() - self.fetchedAt >= self.ttlMs;
+    }
+    tmp = tmp2;
+  }
+  return tmp;
+};
+prototype["shouldFetch"] = function shouldFetch() {
+  const self = this;
+  let tmp2 = this.fetchState !== constants.LOADING;
+  if (tmp2) {
+    tmp2 = self.fetchState === tmp.IDLE || self.isExpired();
+    const tmp3 = self.fetchState === tmp.IDLE || self.isExpired();
+  }
+  return tmp2;
+};
+prototype["isLoading"] = function isLoading() {
+  return this.fetchState === constants.LOADING;
+};
+prototype["isValid"] = function isValid() {
+  const self = this;
+  return this.fetchState === constants.SUCCESS && !self.isExpired();
+};
+prototype["isError"] = function isError() {
+  return this.fetchState === constants.ERROR;
+};
+prototype["getStatus"] = function getStatus() {
+  const self = this;
+  const fetchState = this.fetchState;
+  if (constants.IDLE === fetchState) {
+    return obj.IDLE;
+  } else if (tmp.LOADING === fetchState) {
+    return obj.LOADING;
+  } else if (tmp.ERROR === fetchState) {
+    return obj.ERROR;
+  } else if (tmp.SUCCESS === fetchState) {
+    return self.isExpired() ? obj.STALE : obj.VALID;
+  }
+};
+prototype["getValueWithStatus"] = function getValueWithStatus() {
+  return { value: this.value, status: this.getStatus() };
+};
+prototype["serialize"] = function serialize() {
+  const self = this;
+  let tmp = null;
+  if (null != this.value) {
+    tmp = null;
+    if (null != self.fetchedAt) {
+      const obj = { value: null, fetchedAt: null };
+      ({ value: obj[0], fetchedAt: obj[1] } = self);
+      tmp = obj;
     }
   }
-  let obj = {
-    key: "setTtl",
-    value(ttlMs) {
-      this.ttlMs = ttlMs;
-    }
-  };
-  const items = [obj, , , , , , , , , , , , , , , , , ];
-  obj = {
-    key: "setLoading",
-    value() {
-      this.fetchState = outer1_2.LOADING;
-    }
-  };
-  items[1] = obj;
-  obj = {
-    key: "setValue",
-    value(value) {
-      this.value = value;
-      this.fetchState = outer1_2.SUCCESS;
-      this.fetchedAt = Date.now();
-    }
-  };
-  items[2] = obj;
-  items[3] = {
-    key: "setError",
-    value() {
-      this.fetchState = outer1_2.ERROR;
-    }
-  };
-  items[4] = {
-    key: "clear",
-    value() {
-      this.value = null;
-      this.fetchState = outer1_2.IDLE;
-      this.fetchedAt = null;
-    }
-  };
-  items[5] = {
-    key: "getValue",
-    value() {
-      return this.value;
-    }
-  };
-  items[6] = {
-    key: "getFetchState",
-    value() {
-      return this.fetchState;
-    }
-  };
-  items[7] = {
-    key: "getFetchedAt",
-    value() {
-      return this.fetchedAt;
-    }
-  };
-  items[8] = {
-    key: "forceExpire",
-    value() {
-      this.fetchedAt = null;
-    }
-  };
-  items[9] = {
-    key: "isExpired",
-    value() {
-      const self = this;
-      let tmp = null != this.ttlMs;
-      if (tmp) {
-        let tmp2 = null == self.fetchedAt;
-        if (!tmp2) {
-          const _Date = Date;
-          tmp2 = Date.now() - self.fetchedAt >= self.ttlMs;
-        }
-        tmp = tmp2;
-      }
-      return tmp;
-    }
-  };
-  items[10] = {
-    key: "shouldFetch",
-    value() {
-      const self = this;
-      let tmp = this.fetchState !== outer1_2.LOADING;
-      if (tmp) {
-        tmp = self.fetchState === outer1_2.IDLE || self.isExpired();
-        const tmp3 = self.fetchState === outer1_2.IDLE || self.isExpired();
-      }
-      return tmp;
-    }
-  };
-  items[11] = {
-    key: "isLoading",
-    value() {
-      return this.fetchState === outer1_2.LOADING;
-    }
-  };
-  items[12] = {
-    key: "isValid",
-    value() {
-      const self = this;
-      return this.fetchState === outer1_2.SUCCESS && !self.isExpired();
-    }
-  };
-  items[13] = {
-    key: "isError",
-    value() {
-      return this.fetchState === outer1_2.ERROR;
-    }
-  };
-  items[14] = {
-    key: "getStatus",
-    value() {
-      const self = this;
-      const fetchState = this.fetchState;
-      if (outer1_2.IDLE === fetchState) {
-        return outer1_3.IDLE;
-      } else if (outer1_2.LOADING === fetchState) {
-        return outer1_3.LOADING;
-      } else if (outer1_2.ERROR === fetchState) {
-        return outer1_3.ERROR;
-      } else if (outer1_2.SUCCESS === fetchState) {
-        return self.isExpired() ? outer1_3.STALE : outer1_3.VALID;
-      }
-    }
-  };
-  items[15] = {
-    key: "getValueWithStatus",
-    value() {
-      return { value: this.value, status: this.getStatus() };
-    }
-  };
-  items[16] = {
-    key: "serialize",
-    value() {
-      const self = this;
-      let tmp = null;
-      if (null != this.value) {
-        tmp = null;
-        if (null != self.fetchedAt) {
-          const obj = {};
-          ({ value: obj.value, fetchedAt: obj.fetchedAt } = self);
-          tmp = obj;
-        }
-      }
-      return tmp;
-    }
-  };
-  items[17] = {
-    key: "restore",
-    value(arg0) {
-      const self = this;
-      if (null != arg0) {
-        ({ value: self.value, fetchedAt: self.fetchedAt } = arg0);
-        self.fetchState = outer1_2.SUCCESS;
-      }
-    }
-  };
-  return callback(NetworkTtlCache, items);
-})();
-const result = require("set").fileFinishedImporting("lib/NetworkTtlCache.tsx");
+  return tmp;
+};
+prototype["restore"] = function restore(arg0) {
+  if (null != arg0) {
+    const self = this;
+    ({ value: this.value, fetchedAt: this.fetchedAt } = arg0);
+    this.fetchState = constants.SUCCESS;
+  }
+};
 
 export const NetworkTtlCacheStatus = obj;
-export const NetworkTtlCache = tmp2;
+export { NetworkTtlCache };

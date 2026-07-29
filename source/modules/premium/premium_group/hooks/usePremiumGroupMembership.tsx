@@ -1,12 +1,12 @@
-// Module ID: 12496
-// Function ID: 96725
+// Module ID: 12518
+// Function ID: 12519
 // Name: usePremiumGroupMembership
-// Dependencies: [31, 12497, 566, 686, 2]
+// Dependencies: [19, 12519, 589, 709, 2]
 // Exports: default
 
-// Module 12496 (usePremiumGroupMembership)
-import { useEffect } from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 12518 (usePremiumGroupMembership)
+import { useEffect } from "noop";
+import handleMutationStart from "handleMutationStart";
 
 const result = require("initialize").fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupMembership.tsx");
 
@@ -25,8 +25,8 @@ export default function usePremiumGroupMembership() {
   if (flag2 === undefined) {
     flag2 = true;
   }
-  const items = [_isNativeReflectConstruct];
-  const stateFromStoresObject = flag(566).useStateFromStoresObject(items, () => ({ premiumGroupMembership: outer1_4.getMembership(), isFetchingMembership: outer1_4.isFetchingMembership() }));
+  const items = [handleMutationStart];
+  const stateFromStoresObject = flag(589).useStateFromStoresObject(items, () => ({ premiumGroupMembership: handleMutationStart.getMembership(), isFetchingMembership: handleMutationStart.isFetchingMembership() }));
   const items1 = [flag2, flag];
   ({ premiumGroupMembership, isFetchingMembership } = stateFromStoresObject);
   useEffect(() => {
@@ -36,9 +36,8 @@ export default function usePremiumGroupMembership() {
         hasFetchedMembershipResult = outer1_4.hasFetchedMembership();
       }
       if (!hasFetchedMembershipResult) {
-        let obj = flag2(outer1_2[3]);
-        obj = { type: "PREMIUM_GROUP_MEMBERSHIP_REQUEST" };
-        obj.dispatch(obj);
+        flag2(outer1_2[3]).dispatch({ type: "PREMIUM_GROUP_MEMBERSHIP_REQUEST" });
+        const obj = flag2(outer1_2[3]);
       }
     }
   }, items1);

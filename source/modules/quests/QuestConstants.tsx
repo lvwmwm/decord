@@ -1,21 +1,21 @@
-// Module ID: 5011
-// Function ID: 43092
+// Module ID: 5033
+// Function ID: 5034
 // Name: QuestsExperimentLocations
-// Dependencies: [5012, 664, 5013, 507, 5014, 5018, 22, 2, 5019]
+// Dependencies: [5034, 687, 5035, 530, 5036, 5040, 12, 2, 5041]
 // Exports: getQuestHomeFilterOptionItem
 
-// Module 5011 (QuestsExperimentLocations)
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+// Module 5033 (QuestsExperimentLocations)
+import sendRequest from "sendRequest";
 import apply from "apply";
 import set from "Quests";
 
 const items = [require("QuestVariants").QuestVariants.NITRO_2_POINT_0_CTA, require("QuestVariants").QuestVariants.ORBS_MULTIPLIER_QUEST, require("QuestVariants").QuestVariants.XBOX_GAME_PASS_QUEST];
 let set = new Set(items);
 const result = require("set").Millis.MINUTE * require("Quests").Quests.ConsecutiveHeartbeatPeriodMinutes;
-_isNativeReflectConstruct = _isNativeReflectConstruct.getAPIBaseURL();
-if (-1 !== _isNativeReflectConstruct.indexOf("localhost")) {
+sendRequest = sendRequest.getAPIBaseURL();
+if (-1 !== sendRequest.indexOf("localhost")) {
   const _HermesInternal = HermesInternal;
-  let str2 = "" + _isNativeReflectConstruct + "/_cdn_storage/";
+  let str2 = "" + sendRequest + "/_cdn_storage/";
 } else {
   str2 = "https://cdn.discordapp.com/";
 }
@@ -47,7 +47,7 @@ const sorted = entries.sort((arg0, arg1) => {
 });
 const result1 = set.fileFinishedImporting("modules/quests/QuestConstants.tsx");
 
-export const QuestsExperimentLocations = { ACTIVITY_PANEL: "quests_bar_activity_panel", QUESTS_MANAGER: "quests_manager", QUESTS_CONSOLE_OPTIMISTIC_UPDATES_MANAGER: "quests_console_optimistic_updates_manager", USER_SETTINGS_GIFT_INVENTORY: "user_settings_gift_inventory", USER_SETTINGS_SEARCH_GIFT_INVENTORY: "user_settings_search_gift_inventory", USE_QUESTS: "use_quests", STREAM_SOURCE_SELECT: "stream_source_select", MEMBERS_LIST: "members_list", QUESTS_BAR: "quests_bar", QUESTS_BAR_MOBILE: "quests_bar_mobile", REWARD_CODE_MODAL: "reward_code_modal", INGAME_REWARD_MODAL: "ingame_reward_modal", INGAME_CONNECTION_MODAL: "ingame_connection_modal", COLLECTIBLE_REWARD_MODAL: "collectible_reward_modal", ORBS_REWARD_MODAL: "orbs_reward_modal", QUESTS_MINOR_REWARD_CAPPING_CONFIG: "QUESTS_MINOR_REWARD_CAPPING_CONFIG", QUESTS_CARD: "quests_card", QUESTS_STORE: "quests_store", QUEST_CHANNEL_CALL_HEADER: "quests_channel_call_header", QUEST_HOME_DESKTOP: "quest_home_desktop", QUEST_HOME_MOBILE: "quest_home_mobile", QUEST_PROGRESS_BAR: "quest_progress_bar", EMBED_MOBILE: "embed_mobile", EMBED_DESKTOP: "embed_desktop", QUEST_CONTEXT_MENU: "context_menu", CODED_LINK: "coded_link", QUEST_DISCLOSURE_MODAL: "quest_disclosure_modal", DISCOVERY_SIDEBAR: "discovery_sidebar", DISCOVERY_COMPASS: "discovery_compass", BADGE: "badge", COLLECTIBLES_SHOP_HEADER_BAR: "collectibles_shop_header_bar", ORBS_ANNOUNCEMENT_MODAL: "orbs_announcement_modal", CONFLICT_CHECKS: "conflict_checks", VIDEO_MODAL: "video_modal", VIDEO_MODAL_MOBILE: "video_modal_mobile", GAME_WIDGETS_POPOVER: "game_widgets_popover", PRIVATE_CHANNELS_LIST: "private_channels_list", INTERNAL_TOOLING: "internal_tooling", QUEST_HOME_MOVED_CALLOUT: "quest_home_moved_callout", IN_APP_NAVIGATION: "in_app_navigation", QUEST_DEEP_LINK_UTIL: "quest_deep_link_util", YOU_TAB_PROFILE_HEADER: "you_tab_profile_header", QUEST_INSTRUCTIONS: "quest_instructions", QUEST_ACTIVITY_BOTTOM_SHEET: "quest_activity_bottom_sheet", QUEST_PRIMARY_CTA: "quest_primary_cta", QUEST_ACTIVITY_HEADER: "quest_activity_header", QUEST_ACTIVITY_UNENROLLED_MODAL: "quest_activity_unenrolled_modal", NITRO_HOME_MARKETING: "nitro_home_marketing", NITRO_HOME_TAB: "nitro_home_tab", QUEST_ORB_MULTIPLIER_TAB_TOOLTIP: "quest_orb_multiplier_tab_tooltip", PLAY_QUEST_CONNECTION_MODAL: "play_quest_connection_modal" };
+export const QuestsExperimentLocations = { ACTIVITY_PANEL: "quests_bar_activity_panel", QUESTS_MANAGER: "quests_manager", QUESTS_CONSOLE_OPTIMISTIC_UPDATES_MANAGER: "quests_console_optimistic_updates_manager", USER_SETTINGS_GIFT_INVENTORY: "user_settings_gift_inventory", USER_SETTINGS_SEARCH_GIFT_INVENTORY: "user_settings_search_gift_inventory", USE_QUESTS: "use_quests", STREAM_SOURCE_SELECT: "stream_source_select", MEMBERS_LIST: "members_list", QUESTS_BAR: "quests_bar", QUESTS_BAR_MOBILE: "quests_bar_mobile", REWARD_CODE_MODAL: "reward_code_modal", INGAME_REWARD_MODAL: "ingame_reward_modal", INGAME_CONNECTION_MODAL: "ingame_connection_modal", COLLECTIBLE_REWARD_MODAL: "collectible_reward_modal", ORBS_REWARD_MODAL: "orbs_reward_modal", QUESTS_MINOR_REWARD_CAPPING_CONFIG: "QUESTS_MINOR_REWARD_CAPPING_CONFIG", QUESTS_CARD: "quests_card", QUESTS_STORE: "quests_store", QUEST_CHANNEL_CALL_HEADER: "quests_channel_call_header", QUEST_HOME_DESKTOP: "quest_home_desktop", QUEST_HOME_HERO_SHELF_DESKTOP: "quest_home_hero_shelf_desktop", QUEST_HOME_MOBILE: "quest_home_mobile", QUEST_PROGRESS_BAR: "quest_progress_bar", EMBED_MOBILE: "embed_mobile", EMBED_DESKTOP: "embed_desktop", QUEST_CONTEXT_MENU: "context_menu", CODED_LINK: "coded_link", QUEST_DISCLOSURE_MODAL: "quest_disclosure_modal", DISCOVERY_SIDEBAR: "discovery_sidebar", DISCOVERY_COMPASS: "discovery_compass", BADGE: "badge", COLLECTIBLES_SHOP_HEADER_BAR: "collectibles_shop_header_bar", ORBS_ANNOUNCEMENT_MODAL: "orbs_announcement_modal", CONFLICT_CHECKS: "conflict_checks", VIDEO_MODAL: "video_modal", VIDEO_MODAL_MOBILE: "video_modal_mobile", GAME_WIDGETS_POPOVER: "game_widgets_popover", PRIVATE_CHANNELS_LIST: "private_channels_list", INTERNAL_TOOLING: "internal_tooling", QUEST_HOME_MOVED_CALLOUT: "quest_home_moved_callout", IN_APP_NAVIGATION: "in_app_navigation", QUEST_DEEP_LINK_UTIL: "quest_deep_link_util", YOU_TAB_PROFILE_HEADER: "you_tab_profile_header", QUEST_INSTRUCTIONS: "quest_instructions", QUEST_ACTIVITY_BOTTOM_SHEET: "quest_activity_bottom_sheet", QUEST_PRIMARY_CTA: "quest_primary_cta", QUEST_ACTIVITY_HEADER: "quest_activity_header", QUEST_ACTIVITY_UNENROLLED_MODAL: "quest_activity_unenrolled_modal", NITRO_HOME_MARKETING: "nitro_home_marketing", NITRO_HOME_TAB: "nitro_home_tab", QUEST_ORB_MULTIPLIER_TAB_TOOLTIP: "quest_orb_multiplier_tab_tooltip", PLAY_QUEST_CONNECTION_MODAL: "play_quest_connection_modal" };
 export const DismissibleQuestContentFlags = require("DismissibleQuestContentFlags").DismissibleQuestContentFlags;
 export const QuestVariants = require("QuestVariants").QuestVariants;
 export const NitroQuestVariants = set;
@@ -87,17 +87,19 @@ export const EMPTY_AD_DECISION_DATA = { is_targeted: false };
 export const QuestHomeSortMethods = { SUGGESTED: "suggested", MOST_RECENT: "most_recent", EXPIRING_SOON: "expiring_soon", RECENTLY_ENROLLED: "recently_enrolled" };
 export const TaskFilterTypes = obj;
 export const RewardFilterTypes = obj;
-export const getQuestHomeFilterOptionItem = function getQuestHomeFilterOptionItem(filter) {
+export const getQuestHomeFilterOptionItem = function getQuestHomeFilterOptionItem(arg0) {
   let values = Object.values(obj);
-  if (values.includes(filter)) {
-    obj = { group: "task", filter };
+  if (values.includes(arg0)) {
+    obj = { group: "task", filter: null };
+    obj[1] = arg0;
     let tmp2 = obj;
   } else {
     const _Object = Object;
     values = Object.values(obj);
     tmp2 = null;
-    if (values.includes(filter)) {
-      obj = { group: "reward", filter };
+    if (values.includes(arg0)) {
+      obj = { group: "reward", filter: null };
+      obj[1] = arg0;
       tmp2 = obj;
     }
   }

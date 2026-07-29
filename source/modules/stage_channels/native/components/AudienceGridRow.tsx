@@ -1,17 +1,17 @@
-// Module ID: 10834
-// Function ID: 83871
+// Module ID: 10858
+// Function ID: 10859
 // Name: BlankAudience
-// Dependencies: [31, 27, 4982, 33, 4165, 10835, 10836, 2]
+// Dependencies: [19, 17, 5004, 21, 4189, 10859, 10860, 2]
 
-// Module 10834 (BlankAudience)
+// Module 10858 (BlankAudience)
 import { View } from "get ActivityIndicator";
 import { MAX_AUDIENCE_ROW_LIMIT } from "MAX_STAGE_TOPIC_LENGTH";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
-import importAllResult from "result";
+import createCacheKey from "createCacheKey";
+import importAllResult from "noop";
 
-let closure_4;
-let closure_5;
+let c4;
+let c5;
 class BlankAudience {
   constructor(arg0) {
     count = global.count;
@@ -20,14 +20,14 @@ class BlankAudience {
       tmp = jsx;
       tmp2 = closure_0;
       tmp3 = closure_1;
-      arr = items.push(jsx(require("module_10835"), {}, num));
+      arr = items.push(jsx(require("module_10859"), {}, num));
     }
     return items;
   }
 }
-({ jsx: closure_4, jsxs: closure_5 } = jsxProd);
-let closure_6 = _createForOfIteratorHelperLoose.createStyles({ rowContainer: { flex: 1, flexDirection: "row", marginVertical: 16, paddingHorizontal: 4, justifyContent: "space-between" } });
-const memoResult = require("result").memo((theme) => {
+({ jsx: c4, jsxs: c5 } = jsxProd);
+let closure_6 = createCacheKey.createStyles({ rowContainer: { flex: 1, flexDirection: "row", marginVertical: 16, paddingHorizontal: 4, justifyContent: "space-between" } });
+const memoResult = require("noop").memo((theme) => {
   let importDefault;
   let participants;
   let renderBlankAudience;
@@ -40,24 +40,22 @@ const memoResult = require("result").memo((theme) => {
   if (renderBlankAudience) {
     num = MAX_AUDIENCE_ROW_LIMIT - participants.length;
   }
-  let obj = {};
   const items = [callback2().rowContainer, ];
-  obj = {};
   let str = "center";
   if (renderBlankAudience) {
     str = "space-between";
   }
-  obj.justifyContent = str;
-  items[1] = obj;
-  obj.style = items;
+  let obj = { style: items, children: null };
+  items[1] = { justifyContent: str };
   const items1 = [participants.map((id) => outer1_4(outer1_0(theme[6]), { theme, channel: closure_0, participant: id }, id.id)), ];
   let tmp5 = null;
   if (num > 0) {
-    obj = { count: num };
+    obj = { count: null };
+    obj[0] = num;
     tmp5 = callback(BlankAudience, obj);
   }
   items1[1] = tmp5;
-  obj.children = items1;
+  obj[1] = items1;
   return closure_5(View, obj);
 });
 const result = require("MAX_STAGE_TOPIC_LENGTH").fileFinishedImporting("modules/stage_channels/native/components/AudienceGridRow.tsx");

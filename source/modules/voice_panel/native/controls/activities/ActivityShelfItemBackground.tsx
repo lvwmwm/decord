@@ -1,15 +1,16 @@
-// Module ID: 15938
-// Function ID: 122946
-// Dependencies: [57, 31, 27, 33, 4165, 5550, 11234, 2]
+// Module ID: 15973
+// Function ID: 15974
+// Dependencies: [32, 19, 17, 21, 4189, 5568, 11258, 2]
 
-// Module 15938
+// Module 15973
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "result";
+import importAllResult from "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_6 = _createForOfIteratorHelperLoose.createStyles((aspectRatio) => {
+let c3 = importAllResult;
+let closure_6 = createCacheKey.createStyles((aspectRatio) => {
   const activityImage = { width: "100%", aspectRatio };
   return { previewImage: { alignItems: "center", justifyContent: "center", backgroundColor: "black" }, activityImage };
 });
@@ -17,43 +18,43 @@ const memoResult = importAllResult.memo(function ActivityShelfItemBackground(asp
   let accessibilityLabel;
   let imageBackground;
   ({ imageBackground, accessibilityLabel } = aspectRatio);
+  let importDefault;
   const tmp = callback2(aspectRatio.aspectRatio);
   const tmp2 = callback(importAllResult.useState(false), 2);
-  const importDefault = tmp2[1];
+  importDefault = tmp2[1];
   if ("not-found" !== imageBackground.state) {
     if (!tmp2[0]) {
       if ("loading" !== imageBackground.state) {
         if (null != imageBackground.url) {
-          let obj = { style: tmp.previewImage };
-          obj = {
-            onError() {
-                      return callback(true);
-                    }
-          };
-          const obj1 = { uri: imageBackground.url };
-          obj.source = obj1;
-          obj.style = tmp.activityImage;
-          obj.accessibilityRole = "image";
-          let str2 = "";
-          if (null != accessibilityLabel) {
-            str2 = accessibilityLabel;
-          }
-          obj.accessibilityLabel = str2;
-          obj.children = <Image onError={function onError() {
+          let obj = { style: null, children: null };
+          obj[0] = tmp.previewImage;
+          obj = { onError: null, source: null, style: null, accessibilityRole: "image", accessibilityLabel: null };
+          obj[0] = function onError() {
             return callback(true);
-          }} />;
-          let tmp9Result = tmp9(importDefault(5550), obj);
-          const tmp12 = importDefault(5550);
+          };
+          const obj1 = { uri: null };
+          obj1[0] = imageBackground.url;
+          obj[1] = obj1;
+          obj[2] = tmp.activityImage;
+          if (accessibilityLabel == null) {
+            accessibilityLabel = "";
+          }
+          obj[4] = accessibilityLabel;
+          obj[1] = <Image onError={null} source={null} style={null} accessibilityRole="image" accessibilityLabel={null} />;
+          let tmp9Result = tmp9(importDefault(5568), obj);
+          const tmp12 = importDefault(5568);
           const tmp13 = Image;
         }
       }
-      obj = { style: tmp.previewImage };
-      tmp9Result = jsx(importDefault(5550), { style: tmp.previewImage });
+      obj = { style: null };
+      obj[0] = tmp.previewImage;
+      tmp9Result = jsx(importDefault(5568), { style: null });
     }
     return tmp9Result;
   }
-  const obj2 = { style: tmp.previewImage, children: jsx(importDefault(11234), {}) };
-  tmp9Result = jsx(importDefault(5550), { style: tmp.previewImage, children: jsx(importDefault(11234), {}) });
+  const obj2 = { style: tmp.previewImage, children: null };
+  obj2[1] = jsx(importDefault(11258), {});
+  tmp9Result = jsx(importDefault(5568), { style: tmp.previewImage, children: null });
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/controls/activities/ActivityShelfItemBackground.tsx");
 

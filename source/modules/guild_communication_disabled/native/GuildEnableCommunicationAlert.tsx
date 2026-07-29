@@ -1,102 +1,173 @@
-// Module ID: 11010
-// Function ID: 85461
+// Module ID: 11034
+// Function ID: 11035
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 57, 31, 27, 1850, 1920, 653, 33, 4165, 7735, 4594, 675, 11009, 3866, 1212, 10335, 4596, 4161, 4354, 10168, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 1944, 676, 21, 4189, 7758, 4616, 698, 11033, 3890, 1236, 10356, 4618, 4185, 4379, 10189, 2]
 // Exports: default
 
-// Module 11010 (GuildEnableCommunicationAlert)
+// Module 11034 (GuildEnableCommunicationAlert)
 import closure_3 from "getFriendlyDurationString";
 import _slicedToArray from "_slicedToArray";
-import "result";
-import { View } from "get ActivityIndicator";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import "componentDidMount";
+import { View } from "Text";
+import mergeGuildAvatar from "mergeGuildAvatar";
 import getFriendlyDurationString from "getFriendlyDurationString";
 import ME from "ME";
 import jsxProd from "jsxProd";
-import _createForOfIteratorHelperLoose from "_createForOfIteratorHelperLoose";
+import createCacheKey from "createCacheKey";
 
-let closure_10;
-let closure_11;
-let closure_7;
-let closure_8;
+let Fonts;
+let c10;
+let c9;
+let error;
+let metroImportAll;
+let unpackModuleId;
 const require = arg1;
-({ CLEAR_COMMUNICATION_DISABLED_MODAL_NAME: closure_7, GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK: closure_8 } = getFriendlyDurationString);
-const AnalyticEvents = ME.AnalyticEvents;
-({ jsx: closure_10, jsxs: closure_11 } = jsxProd);
-_createForOfIteratorHelperLoose = { fontFamily: ME.Fonts.PRIMARY_SEMIBOLD };
-let closure_12 = _createForOfIteratorHelperLoose.createStyles({ wrapper: { padding: 16 }, body: { paddingTop: 16 }, description: { lineHeight: 18 }, cta: { paddingTop: 8 }, countdown: _createForOfIteratorHelperLoose });
-const result = require("result").fileFinishedImporting("modules/guild_communication_disabled/native/GuildEnableCommunicationAlert.tsx");
+({ CLEAR_COMMUNICATION_DISABLED_MODAL_NAME: error, GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK: metroImportAll } = getFriendlyDurationString);
+({ AnalyticEvents: c9, Fonts } = ME);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
+createCacheKey = { fontFamily: Fonts.PRIMARY_SEMIBOLD };
+let closure_12 = createCacheKey.createStyles({ wrapper: { padding: 16 }, body: { paddingTop: 16 }, description: { lineHeight: 18 }, cta: { paddingTop: 8 }, countdown: createCacheKey });
+const result = require("noop").fileFinishedImporting("modules/guild_communication_disabled/native/GuildEnableCommunicationAlert.tsx");
 
 export default function GuildEnableCommunicationAlert(guildId) {
   guildId = guildId.guildId;
   const userId = guildId.userId;
-  let obj = { guildId: 0, userId: 0, onCancel: 0 };
-  Object.setPrototypeOf(null);
-  const merged = Object.assign(guildId, obj);
+  const merged = Object.assign(guildId, Object.create(null));
+  let dependencyMap;
+  let closure_3;
   function _handleConfirmRemoveTimeout(arg0, arg1) {
-    // CreateGeneratorClosureLongIndex (0x67)
-    const obj = callback(tmp);
-    return obj(...arguments);
+    const self = this;
+    const tmp = callback(function*() {
+      if (dependencyMap === 2) {
+        dependencyMap = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          dependencyMap = 2;
+          if (0 === v0) {
+            if (arg0 === 1) {
+              dependencyMap = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              dependencyMap = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_0 = tmp4;
+              let obj1 = v0(11033);
+              v0 = 1;
+              dependencyMap = 1;
+              obj1 = { value: null, done: false };
+              obj1[0] = obj1.setCommunicationDisabledDuration(outer1_0, v0);
+              return obj1;
+            }
+          } else if (arg0 === 1) {
+            dependencyMap = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          } else {
+            const obj2 = { key: "GUILD_ENABLE_COMMUNICATION_SUCCESS", content: null, icon: null };
+            const intl = outer1_0(1236).intl;
+            obj2[1] = intl.string(outer1_0(1236).t["/Mmbfv"]);
+            obj2[2] = v0(10356);
+            v0(3890).open(obj2);
+            dependencyMap = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp9) {
+          dependencyMap = tmp;
+          throw tmp9;
+        }
+      }
+    });
+    const _handleConfirmRemoveTimeout = tmp;
+    const apply = tmp.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   }
-  const tmp3 = callback();
-  const dependencyMap = tmp3;
-  let closure_3 = _handleConfirmRemoveTimeout(userId(7735)(userId, guildId), 1)[0];
-  userId(4594)(() => {
-    let obj = userId(tmp3[11]);
+  const tmp2 = callback();
+  dependencyMap = tmp2;
+  closure_3 = _handleConfirmRemoveTimeout(userId(7758)(userId, guildId), 1)[0];
+  userId(4616)(() => {
+    let obj = userId(_undefined[11]);
     obj = { type: outer1_7, guild_id: guildId, other_user_id: userId };
     obj.track(outer1_9.OPEN_MODAL, obj);
   });
-  obj = {};
+  let obj = {};
   const merged1 = Object.assign(merged);
-  const intl = guildId(1212).intl;
-  obj["title"] = intl.string(guildId(1212).t["+ZD3ou"]);
-  obj["style"] = tmp3.wrapper;
-  const intl2 = guildId(1212).intl;
-  obj["cancelText"] = intl2.string(guildId(1212).t["ETE/oC"]);
+  let intl = guildId(1236).intl;
+  obj.title = intl.string(guildId(1236).t["+ZD3ou"]);
+  obj.style = tmp2.wrapper;
+  const intl2 = guildId(1236).intl;
+  obj.cancelText = intl2.string(guildId(1236).t["ETE/oC"]);
   let onClose;
-  if (null != merged) {
+  if (merged != null) {
     onClose = merged.onClose;
   }
-  obj["onClose"] = onClose;
-  obj["onCancel"] = guildId.onCancel;
-  const intl3 = guildId(1212).intl;
-  obj["confirmText"] = intl3.string(guildId(1212).t.qXtNtS);
-  obj["onConfirm"] = function handleConfirmRemoveTimeout() {
-    return _handleConfirmRemoveTimeout(...arguments);
+  obj.onClose = onClose;
+  obj.onCancel = guildId.onCancel;
+  const intl3 = tmp9(1236).intl;
+  obj.confirmText = intl3.string(guildId(1236).t.qXtNtS);
+  obj.onConfirm = function handleConfirmRemoveTimeout() {
+    const self = this;
+    const apply = _handleConfirmRemoveTimeout.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
   };
-  obj = { style: tmp3.body };
-  const obj1 = { style: tmp3.description, variant: "text-sm/medium" };
-  const intl4 = guildId(1212).intl;
-  const obj2 = {};
+  obj = { style: tmp2.body, children: null };
+  obj = { style: tmp2.description, variant: "text-sm/medium", children: null };
+  const intl4 = tmp9(1236).intl;
   user = user.getUser(userId);
   const tmp11 = closure_11;
   const tmp12 = View;
-  const tmp5 = closure_10;
-  const tmp6 = userId(4596);
-  const name = userId(4354).getName(guildId, null, user);
-  let str = "";
-  if (null != name) {
-    str = name;
+  const tmp3 = userId;
+  const tmp7 = userId(4618);
+  let str = userId(4379).getName(guildId, null, user);
+  if (str == null) {
+    str = "";
   }
-  obj2.username = str;
-  obj2.countdown = function countdown(arg0) {
-    let num = 0;
-    if (null != closure_3) {
-      const _Date = Date;
-      num = new Date(closure_3);
+  obj[2] = intl4.format(guildId(1236).t["t+abNU"], {
+    username: str,
+    countdown(arg0) {
+      let num = 0;
+      if (null != closure_3) {
+        const _Date = Date;
+        num = new Date(tmp);
+      }
+      return outer1_10(userId(_undefined[19]), { style: _undefined.countdown, deadline: num, withUnits: true });
     }
-    const obj = { style: tmp3.countdown, deadline: num, withUnits: true };
-    return outer1_10(userId(tmp3[19]), obj);
-  };
-  obj1.children = intl4.format(guildId(1212).t["t+abNU"], obj2);
-  const items = [closure_10(guildId(4161).Text, obj1), ];
-  const obj3 = { style: items1, variant: "text-sm/medium" };
+  });
+  const items = [closure_10(guildId(4185).Text, obj), ];
+  let obj2 = { style: items1, variant: "text-sm/medium", children: null };
   items1 = [, ];
-  ({ cta: arr2[0], description: arr2[1] } = tmp3);
-  const intl5 = tmp9(1212).intl;
-  obj3.children = intl5.format(guildId(1212).t.KtENkK, { link: closure_8 });
-  items[1] = closure_10(guildId(4161).Text, obj3);
-  obj.children = items;
-  obj["children"] = tmp11(tmp12, obj);
-  return tmp5(tmp6, obj);
+  ({ cta: arr2[0], description: arr2[1] } = tmp2);
+  const intl5 = tmp9(1236).intl;
+  obj2[2] = intl5.format(guildId(1236).t.KtENkK, { link: closure_8 });
+  items[1] = closure_10(guildId(4185).Text, obj2);
+  obj[1] = items;
+  obj.children = tmp11(tmp12, obj);
+  return closure_10(tmp7, obj);
 };

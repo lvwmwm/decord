@@ -1,45 +1,40 @@
-// Module ID: 5532
-// Function ID: 47036
+// Module ID: 5550
+// Function ID: 5551
 // Name: SimpleActionSheet
-// Dependencies: [31, 33, 5533, 5220, 5534, 5535, 2]
+// Dependencies: [19, 21, 5551, 5242, 5552, 5553, 2]
 
-// Module 5532 (SimpleActionSheet)
-import "result";
+// Module 5550 (SimpleActionSheet)
+import "noop";
 import jsxProd from "jsxProd";
 
-let closure_2;
-let closure_3;
+let c3;
+let obj1;
 const require = arg1;
 class SimpleActionSheet {
   constructor(arg0) {
     ({ hideActionSheet, header, options } = global);
+    tmp2 = hideActionSheet;
+    tmp3 = closure_1;
     tmp = jsxs;
-    obj = {};
-    tmp3Result = null != header;
-    if (tmp3Result) {
-      tmp4 = hideActionSheet;
-      tmp5 = closure_1;
-      num = 3;
-      tmp3 = jsx;
-      obj = {};
-      ({ icon: obj2.leading, title: obj2.title, subtitle: obj2.subtitle } = header);
-      tmp6 = null;
+    tmp5Result1 = null != header;
+    if (tmp5Result1) {
+      tmp5 = jsx;
+      obj = { leading: null, title: null, subtitle: null, trailing: null };
+      ({ icon: obj[0], title: obj[1], subtitle: obj[2] } = header);
+      tmp5Result = null;
       if (null != header.onClose) {
-        tmp7 = jsx;
-        tmp8 = hideActionSheet;
-        tmp9 = closure_1;
-        num2 = 4;
-        obj1 = {};
-        obj1.onPress = header.onClose;
-        tmp6 = jsx(require("ActionSheetCloseButton").ActionSheetCloseButton, obj1);
+        obj = { onPress: null };
+        obj[0] = header.onClose;
+        tmp5Result = tmp5(require("ActionSheetCloseButton").ActionSheetCloseButton, obj);
       }
-      obj.trailing = tmp6;
-      tmp3Result = tmp3(require("RedesignBottomSheetTitleHeaderBase").BottomSheetTitleHeader, obj);
+      obj[3] = tmp5Result;
+      tmp5Result1 = tmp5(require("RedesignBottomSheetTitleHeaderBase").BottomSheetTitleHeader, obj);
     }
+    obj1 = { children: null };
     items = [, ];
-    items[0] = tmp3Result;
-    obj2 = { hasIcons: global.hasIcons };
-    obj2.children = options.map((arg0, arg1) => {
+    items[0] = tmp5Result1;
+    obj2 = { hasIcons: global.hasIcons, children: null };
+    obj2[1] = options.map((arg0, arg1) => {
       let IconComponent;
       let closure_0;
       let icon;
@@ -48,28 +43,30 @@ class SimpleActionSheet {
       ({ icon, IconComponent, onPress: closure_0 } = arg0);
       ({ label, isDestructive } = arg0);
       if (null != icon) {
-        let obj = { source: icon, IconComponent };
+        let obj = { source: null, IconComponent: null };
+        obj[0] = icon;
+        obj[1] = IconComponent;
         const tmp = outer1_2(outer1_0(outer1_1[5]).ActionSheetRow.Icon, obj);
       }
-      obj = { icon: tmp };
+      obj = { icon: tmp, variant: null, label: null, onPress: null };
       let str = "default";
       if (isDestructive) {
         str = "danger";
       }
-      obj.variant = str;
-      obj.label = label;
-      obj.onPress = function onPress() {
+      obj[1] = str;
+      obj[2] = label;
+      obj[3] = function onPress() {
         outer1_0();
         callback();
       };
       return outer1_2(outer1_0(outer1_1[5]).ActionSheetRow, obj, arg1);
     });
     items[1] = jsx(require("ActionSheetRowIcon").ActionSheetRow.Group, obj2);
-    obj.children = items;
-    return tmp(require("ActionSheet").ActionSheet, obj);
+    obj1[0] = items;
+    return tmp(require("ActionSheet").ActionSheet, obj1);
   }
 }
-({ jsx: closure_2, jsxs: closure_3 } = jsxProd);
+({ jsx: obj1, jsxs: c3 } = jsxProd);
 const result = require("ActionSheet").fileFinishedImporting("design/components/Sheet/native/SimpleActionSheet.native.tsx");
 
 export default SimpleActionSheet;

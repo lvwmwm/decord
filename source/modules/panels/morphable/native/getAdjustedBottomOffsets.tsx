@@ -1,10 +1,10 @@
-// Module ID: 15803
-// Function ID: 121714
+// Module ID: 15838
+// Function ID: 15839
 // Name: t
-// Dependencies: [477, 2]
+// Dependencies: [500, 2]
 // Exports: default
 
-// Module 15803 (t)
+// Module 15838 (t)
 import set from "set";
 import set from "set";
 
@@ -13,16 +13,15 @@ const fn = function t(arg0) {
   let keyboardHeight;
   let screenBottomOffset;
   ({ screenBottomOffset, keyboardHeight } = arg0);
-  let sum = screenBottomOffset;
+  let bottomOffset = screenBottomOffset;
   if (keyboardHeight > 0) {
     let num = 0;
     if (!set) {
       num = keyboardHeight;
     }
-    sum = screenBottomOffset + (num - tmp);
+    bottomOffset = screenBottomOffset + (num - tmp);
   }
-  const obj = { bottomOffset: sum };
-  return obj;
+  return { bottomOffset };
 };
 fn.__closure = { IS_ANDROID: set };
 fn.__workletHash = 9166664651792;

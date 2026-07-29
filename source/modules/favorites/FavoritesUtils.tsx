@@ -1,42 +1,51 @@
-// Module ID: 1841
-// Function ID: 20212
-// Name: isFavoritesGuildId
-// Dependencies: [1386, 653, 1212, 2]
-// Exports: canFavoriteChannelType, getFavoritesAwareGuildName, isFavoritesGuildCategoryNameValid
+// Module ID: 1865
+// Function ID: 1866
+// Name: getFavoritesAwareGuildName
+// Dependencies: [1410, 676, 1236, 2]
+// Exports: canFavoriteChannelType, getFavoritesAwareGuildName, isFavoritesGuildCategoryNameValid, isFavoritesGuildId
 
-// Module 1841 (isFavoritesGuildId)
+// Module 1865 (getFavoritesAwareGuildName)
 import { FAVORITES_RAW_GUILD_ID } from "date";
 import { FAVORITES } from "ME";
 
-function isFavoritesGuildId(guildId) {
-  let tmp = guildId === FAVORITES_RAW_GUILD_ID;
-  if (!tmp) {
-    tmp = guildId === FAVORITES;
-  }
-  return tmp;
-}
 const result = require("getSystemLocale").fileFinishedImporting("modules/favorites/FavoritesUtils.tsx");
 
 export const getFavoritesAwareGuildName = function getFavoritesAwareGuildName(guild) {
   if (null != guild) {
-    if (isFavoritesGuildId(guild.id)) {
-      const intl = require(1212) /* getSystemLocale */.intl;
-      let name = intl.string(require(1212) /* getSystemLocale */.t.wMWyci);
+    const id = guild.id;
+    let tmp2 = id === FAVORITES_RAW_GUILD_ID;
+    if (!tmp2) {
+      tmp2 = id === FAVORITES;
+    }
+    if (tmp2) {
+      const intl = require(1236) /* getSystemLocale */.intl;
+      let name = intl.string(require(1236) /* getSystemLocale */.t.wMWyci);
     } else {
       name = guild.name;
     }
     return name;
   }
 };
-export { isFavoritesGuildId };
+export function isFavoritesGuildId(guildId) {
+  let tmp = guildId === FAVORITES_RAW_GUILD_ID;
+  if (!tmp) {
+    tmp = guildId === FAVORITES;
+  }
+  return tmp;
+}
 export const isFavoritesGuildCategoryNameValid = function isFavoritesGuildCategoryNameValid(first) {
   return "" !== first.trim();
 };
 export const canFavoriteChannelType = function canFavoriteChannelType(record, hasHigherPrivileges) {
-  let tmp = !record.isCategory();
-  if (tmp) {
-    tmp = !record.isThread() || hasHigherPrivileges;
-    const tmp2 = !record.isThread() || hasHigherPrivileges;
+  const isCategoryResult = record.isCategory();
+  let tmp2 = !isCategoryResult;
+  if (!isCategoryResult) {
+    const isThreadResult = record.isThread();
+    let tmp4 = !isThreadResult;
+    if (isThreadResult) {
+      tmp4 = hasHigherPrivileges;
+    }
+    tmp2 = tmp4;
   }
-  return tmp;
+  return tmp2;
 };

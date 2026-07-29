@@ -1,18 +1,18 @@
-// Module ID: 14920
-// Function ID: 113675
+// Module ID: 14946
+// Function ID: 14947
 // Name: GuildFolderSettingsScene
-// Dependencies: [57, 31, 5005, 14921, 33, 6186, 7611, 1212, 1273, 14922, 5121, 566, 14919, 5552, 2]
+// Dependencies: [32, 19, 5027, 14947, 21, 6206, 7634, 1236, 1297, 14948, 5143, 589, 14945, 5570, 2]
 // Exports: default
 
-// Module 14920 (GuildFolderSettingsScene)
+// Module 14946 (GuildFolderSettingsScene)
 import _slicedToArray from "_slicedToArray";
-import result from "result";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import noop from "noop";
+import insertUnsortedGuilds from "insertUnsortedGuilds";
 import { DEFAULT_FOLDER_COLOR } from "DEFAULT_FOLDER_COLOR";
 import jsxProd from "jsxProd";
 
-let closure_7;
-let closure_8;
+let error;
+let metroImportAll;
 const require = arg1;
 function GuildFolderSettingsScene(arg0) {
   let color;
@@ -20,121 +20,126 @@ function GuildFolderSettingsScene(arg0) {
   let onColorChange;
   let onNameChange;
   ({ name, onNameChange, color, onColorChange } = arg0);
-  let obj = {};
-  obj = {};
-  const intl = require(1212) /* getSystemLocale */.intl;
-  obj.title = intl.string(require(1212) /* getSystemLocale */.t.tGRbjA);
-  obj = { placeholder: null, value: null, onChange: null, showTopContainer: false, maxLength: 32, autoFocus: true };
-  const intl2 = require(1212) /* getSystemLocale */.intl;
-  obj.placeholder = intl2.string(require(1212) /* getSystemLocale */.t.xV9hVh);
-  obj.value = name;
-  obj.onChange = onNameChange;
-  obj.clearButtonVisibility = require(1273) /* Button */.ClearButtonVisibility.WITH_CONTENT;
-  obj.children = callback(require(7611) /* Form */.FormInput, obj);
-  const items = [callback(require(7611) /* Form */.FormSection, obj), ];
-  const obj1 = {};
-  const intl3 = require(1212) /* getSystemLocale */.intl;
-  obj1.title = intl3.string(require(1212) /* getSystemLocale */.t.xpurRF);
-  obj1.children = callback(importDefault(14922), { color, onChange: onColorChange });
-  items[1] = callback(require(7611) /* Form */.FormSection, obj1);
-  obj.children = items;
-  return callback2(require(7611) /* Form */.Form, obj);
+  let obj = { children: null };
+  obj = { title: null, children: null };
+  const intl = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.tGRbjA);
+  obj = { placeholder: null, value: null, onChange: null, showTopContainer: false, maxLength: 32, autoFocus: true, clearButtonVisibility: null };
+  const intl2 = require(1236) /* getSystemLocale */.intl;
+  obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.xV9hVh);
+  obj[1] = name;
+  obj[2] = onNameChange;
+  obj[6] = require(1297) /* Button */.ClearButtonVisibility.WITH_CONTENT;
+  obj[1] = callback(require(7634) /* Form */.FormInput, obj);
+  const items = [callback(require(7634) /* Form */.FormSection, obj), ];
+  const obj1 = { title: null, children: null };
+  const intl3 = require(1236) /* getSystemLocale */.intl;
+  obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t.xpurRF);
+  obj1[1] = callback(importDefault(14948), { color, onChange: onColorChange });
+  items[1] = callback(require(7634) /* Form */.FormSection, obj1);
+  obj[0] = items;
+  return callback2(require(7634) /* Form */.Form, obj);
 }
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let result = require("_isNativeReflectConstruct").fileFinishedImporting("modules/guilds_bar/native/GuildsBarFolderSettingsModal.tsx");
+({ jsx: error, jsxs: metroImportAll } = jsxProd);
+let c10 = "Folder Settings";
+let result = require("insertUnsortedGuilds").fileFinishedImporting("modules/guilds_bar/native/GuildsBarFolderSettingsModal.tsx");
 
 export default function GuildFolderSettingsModal(folderId) {
   let initialFolderColor;
   let initialFolderName;
   folderId = folderId.folderId;
+  let first;
+  let dependencyMap;
+  let first1;
+  let React;
   let c5;
   let callback;
   let callback1;
+  let obj = folderId(589);
   const items = [c5];
   const items1 = [folderId];
-  const stateFromStoresObject = folderId(566).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     const guildFolderById = _undefined.getGuildFolderById(folderId);
-    const obj = {};
     let folderName;
-    if (null != guildFolderById) {
+    if (guildFolderById != null) {
       folderName = guildFolderById.folderName;
     }
     let str = "";
     if (null != folderName) {
       str = guildFolderById.folderName;
     }
-    obj.initialFolderName = str;
+    const obj = { initialFolderName: str, initialFolderColor: null };
     let folderColor;
-    if (null != guildFolderById) {
+    if (guildFolderById != null) {
       folderColor = guildFolderById.folderColor;
     }
-    obj.initialFolderColor = null != folderColor ? guildFolderById.folderColor : callback;
+    obj[1] = null != folderColor ? guildFolderById.folderColor : callback;
     return obj;
   }, items1);
   ({ initialFolderName, initialFolderColor } = stateFromStoresObject);
-  const tmp2 = first1(React.useState(initialFolderName), 2);
-  const first = tmp2[0];
-  const dependencyMap = tmp2[1];
-  const tmp4 = first1(React.useState(initialFolderColor), 2);
-  first1 = tmp4[0];
-  React = tmp4[1];
-  c5 = tmp6;
+  const tmp4 = first1(React.useState(initialFolderName), 2);
+  first = tmp4[0];
+  dependencyMap = tmp4[1];
+  const tmp6 = first1(React.useState(initialFolderColor), 2);
+  first1 = tmp6[0];
+  React = tmp6[1];
+  c5 = tmp8;
   const items2 = [folderId, first, first1];
-  callback = React.useCallback(() => {
-    (function updateFolder(folderId, first, first1) {
-      let closure_0 = folderId;
-      let closure_1 = first;
-      const table = first1;
-      guildFolders = guildFolders.getGuildFolders();
-      folderId(table[5]).saveGuildFolders(guildFolders.map((folderId) => {
-        let tmp = folderId;
-        if (folderId.folderId === closure_0) {
-          const obj = {};
-          const merged = Object.assign(folderId);
-          obj["folderName"] = closure_1;
-          obj["folderColor"] = closure_2;
-          tmp = obj;
-        }
-        return tmp;
-      }));
-    })(folderId, first, first1);
-    const result = folderId(14919).hideGuildsBarFolderModal();
+  callback = obj2.useCallback(() => {
+    const dependencyMap = first1;
+    const guildFolders = _undefined.getGuildFolders();
+    folderId(6206).saveGuildFolders(guildFolders.map((folderId) => {
+      let tmp = folderId;
+      if (folderId.folderId === closure_0) {
+        const obj = {};
+        const merged = Object.assign(folderId);
+        obj.folderName = closure_1;
+        obj.folderColor = closure_2;
+        tmp = obj;
+      }
+      return tmp;
+    }));
+    let obj = folderId(6206);
+    const result = folderId(14945).hideGuildsBarFolderModal();
   }, items2);
-  callback1 = React.useCallback(() => {
-    const result = folderId(14919).hideGuildsBarFolderModal();
+  callback1 = obj2.useCallback(() => {
+    const result = folderId(14945).hideGuildsBarFolderModal();
   }, []);
   const items3 = [first1, first, first !== initialFolderName || first1 !== initialFolderColor, callback, callback1];
-  const screens = React.useMemo(() => (function getScreens(arg0, c5, callback, callback1) {
-    let closure_0 = arg0;
-    let obj = {};
-    obj = {
-      render() {
-        const merged = Object.assign(closure_0);
-        return callback1(outer3_9, {});
+  const memo = obj2.useMemo(() => {
+    let obj = {
+      name: first,
+      onNameChange(arg0) {
+        return callback(arg0);
+      },
+      color: first1,
+      onColorChange(arg0) {
+        return callback2(arg0);
       }
     };
-    const intl = folderId(1212).intl;
-    obj.title = intl.string(folderId(1212).t.Dx7im5);
-    obj.headerLeft = folderId(5121).getHeaderCloseButton(callback1);
+    obj = {
+      render() {
+        const obj = {};
+        const merged = Object.assign(obj);
+        return outer1_7(outer1_9, obj);
+      },
+      title: null,
+      headerLeft: null,
+      headerRight: null
+    };
+    const intl = folderId(1236).intl;
+    obj[1] = intl.string(folderId(1236).t.Dx7im5);
+    obj[2] = folderId(5143).getHeaderCloseButton(callback1);
     if (c5) {
-      const intl2 = folderId(1212).intl;
-      let fn = folderId(5121).getHeaderTextButton(intl2.string(folderId(1212).t["R3BPH+"]), callback);
-      const obj4 = folderId(5121);
+      const intl2 = tmp3(1236).intl;
+      let fn = tmp3(5143).getHeaderTextButton(intl2.string(tmp3(1236).t["R3BPH+"]), callback);
+      const tmp3Result = tmp3(5143);
     } else {
       fn = () => null;
     }
-    obj.headerRight = fn;
-    obj["Folder Settings"] = obj;
-    return obj;
-  })({
-    name: first,
-    onNameChange(arg0) {
-      return outer1_2(arg0);
-    },
-    color: first1,
-    onColorChange(arg0) {
-      return outer1_4(arg0);
-    }
-  }, c5, callback, callback1), items3);
-  return callback1(folderId(5552).Navigator, { screens, initialRouteName: "Folder Settings" });
+    obj[3] = fn;
+    return { [outer1_10]: obj };
+  }, items3);
+  obj = { screens: memo, initialRouteName: c10 };
+  return callback1(folderId(5570).Navigator, obj);
 };

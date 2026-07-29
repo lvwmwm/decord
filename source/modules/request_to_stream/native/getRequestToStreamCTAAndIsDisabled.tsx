@@ -1,60 +1,59 @@
-// Module ID: 12362
-// Function ID: 96137
+// Module ID: 12384
+// Function ID: 12385
 // Name: getRequestToStreamCTAAndIsDisabled
-// Dependencies: [57, 1194, 10935, 21, 10922, 1212, 2653, 2]
+// Dependencies: [32, 1218, 10959, 11, 10946, 1236, 2677, 2]
 // Exports: default
 
-// Module 12362 (getRequestToStreamCTAAndIsDisabled)
+// Module 12384 (getRequestToStreamCTAAndIsDisabled)
 import _slicedToArray from "_slicedToArray";
-import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import fetchFingerprint from "fetchFingerprint";
 
 const require = arg1;
 const result = require("canFulfillStreamRequest").fileFinishedImporting("modules/request_to_stream/native/getRequestToStreamCTAAndIsDisabled.tsx");
 
 export default function getRequestToStreamCTAAndIsDisabled(id) {
-  let obj = require(10935) /* canFulfillStreamRequest */;
-  const tmp = callback(obj.canFulfillStreamRequest(id, true), 2);
+  const tmp3 = callback(require(10959) /* canFulfillStreamRequest */.canFulfillStreamRequest(id, true), 2);
   id = id.getId();
-  const obj2 = importDefault(21);
-  const sum = importDefault(21).extractTimestamp(id.id) + require(10922) /* result */.EMBED_LIFETIME;
-  const extractTimestampResult = importDefault(21).extractTimestamp(id.id);
-  const intl = require(1212) /* getSystemLocale */.intl;
-  const stringResult = intl.string(importDefault(2653)["5+172e"]);
-  if (tmp6) {
-    const intl6 = require(1212) /* getSystemLocale */.intl;
-    let stringResult1 = intl6.string(importDefault(2653).u4QmWl);
-    let flag = true;
+  const obj = require(10959) /* canFulfillStreamRequest */;
+  const obj2 = importDefault(11);
+  const sum = importDefault(11).extractTimestamp(id.id) + require(10946) /* result */.EMBED_LIFETIME;
+  const extractTimestampResult = importDefault(11).extractTimestamp(id.id);
+  const intl = require(1236) /* getSystemLocale */.intl;
+  const stringResult = intl.string(importDefault(2677)["5+172e"]);
+  if (tmp9) {
+    const intl6 = tmp(1236).intl;
+    let text = intl6.string(tmp6(2677).u4QmWl);
+    let isDisabled = true;
   } else if (id.author.id === id) {
-    const intl5 = require(1212) /* getSystemLocale */.intl;
-    stringResult1 = intl5.string(importDefault(2653)["8HU1M2"]);
-    flag = true;
+    const intl5 = tmp(1236).intl;
+    text = intl5.string(tmp6(2677)["8HU1M2"]);
+    isDisabled = true;
   } else {
-    stringResult1 = stringResult;
-    flag = false;
-    if (!tmp[0]) {
-      if (require(10935) /* canFulfillStreamRequest */.StreamRequestUnfulfillableReason.ALREADY_STREAMING === tmp2) {
-        const intl4 = require(1212) /* getSystemLocale */.intl;
-        stringResult1 = intl4.string(importDefault(2653).P0wwmM);
-        flag = true;
-      } else if (require(10935) /* canFulfillStreamRequest */.StreamRequestUnfulfillableReason.NOT_RUNNING_GAME === tmp2) {
-        const intl3 = require(1212) /* getSystemLocale */.intl;
-        stringResult1 = intl3.string(importDefault(2653)["43zohO"]);
-        flag = true;
-      } else if (require(10935) /* canFulfillStreamRequest */.StreamRequestUnfulfillableReason.NOT_IN_VOICE_CHANNEL === tmp2) {
-        const intl2 = require(1212) /* getSystemLocale */.intl;
-        stringResult1 = intl2.string(importDefault(2653).qRXats);
-        flag = true;
+    isDisabled = false;
+    text = stringResult;
+    if (!tmp3[0]) {
+      if (tmp(10959).StreamRequestUnfulfillableReason.ALREADY_STREAMING === tmp4) {
+        const intl4 = tmp(1236).intl;
+        text = intl4.string(tmp6(2677).P0wwmM);
+        isDisabled = true;
+      } else if (tmp(10959).StreamRequestUnfulfillableReason.NOT_RUNNING_GAME === tmp4) {
+        const intl3 = tmp(1236).intl;
+        text = intl3.string(tmp6(2677)["43zohO"]);
+        isDisabled = true;
+      } else if (tmp(10959).StreamRequestUnfulfillableReason.NOT_IN_VOICE_CHANNEL === tmp4) {
+        const intl2 = tmp(1236).intl;
+        text = intl2.string(tmp6(2677).qRXats);
+        isDisabled = true;
       } else {
-        stringResult1 = stringResult;
-        flag = false;
-        if (require(10935) /* canFulfillStreamRequest */.StreamRequestUnfulfillableReason.NO_PERMISSION === tmp2) {
-          const intl7 = require(1212) /* getSystemLocale */.intl;
-          stringResult1 = intl7.string(importDefault(2653)["fac+eE"]);
-          flag = true;
+        isDisabled = false;
+        text = stringResult;
+        if (tmp(10959).StreamRequestUnfulfillableReason.NO_PERMISSION === tmp4) {
+          const intl7 = tmp(1236).intl;
+          text = intl7.string(tmp6(2677)["fac+eE"]);
+          isDisabled = true;
         }
       }
     }
   }
-  obj = { text: stringResult1, isDisabled: flag };
-  return obj;
+  return { text, isDisabled };
 };
