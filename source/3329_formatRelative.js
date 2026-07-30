@@ -33,7 +33,7 @@ c0 = true;
 
 export default function formatRelative(arg0, arg1) {
   let tmpResult = tmp;
-  if (typeof obj[arg0] !== "_") {
+  if (typeof obj[arg0] !== "ZodObject") {
     tmpResult = tmp(arg1);
   }
   return tmpResult;

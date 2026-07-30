@@ -1,8 +1,8 @@
-// Module ID: 8917
-// Function ID: 8918
-// Dependencies: [1372, 3826, 1874, 676, 5001, 530, 698, 4528, 1236, 8918, 8915, 709, 2]
+// Module ID: 8913
+// Function ID: 8914
+// Dependencies: [1372, 3826, 1874, 676, 5001, 530, 698, 4528, 1236, 8914, 8911, 709, 2]
 
-// Module 8917
+// Module 8913
 import ensureGuildLoaded from "ensureGuildLoaded";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -82,7 +82,7 @@ export default {
   ring(channelId, items, gdm_invite) {
     channel = channel.getChannel(channelId);
     if (null != channel) {
-      let obj = require(8915) /* useCanRingToGuildVoiceChannel */;
+      let obj = require(8911) /* useCanRingToGuildVoiceChannel */;
       const CALLABLE = constants.CALLABLE;
       const result = obj.canRingUsersInChannel(channel);
       if (result) {

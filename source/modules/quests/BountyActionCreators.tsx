@@ -1,10 +1,10 @@
-// Module ID: 10885
-// Function ID: 10886
+// Module ID: 10881
+// Function ID: 10882
 // Name: fetchBountiesAndDispatch
-// Dependencies: [5, 4281, 5984, 676, 709, 6013, 10886, 6001, 4089, 5721, 6005, 530, 5983, 2]
+// Dependencies: [5, 4281, 5982, 676, 709, 6011, 10882, 5999, 4089, 5721, 6003, 530, 5981, 2]
 // Exports: claimBountyReward, fetchBountyPreview, fetchQuestHomeBounties, setBountyVideoProgress
 
-// Module 10885 (fetchBountiesAndDispatch)
+// Module 10881 (fetchBountiesAndDispatch)
 import AdCreativeType from "AdCreativeType";
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import set from "set";
@@ -230,7 +230,7 @@ function _fetchQuestHomeBounties() {
                       } else {
                         uuid = arg1;
                         uuid = undefined;
-                        uuid2 = outer1_0(6005).getOrRefreshAdSession();
+                        uuid2 = outer1_0(6003).getOrRefreshAdSession();
                         const HTTP = outer1_0(530).HTTP;
                         const obj3 = { url: null, query: null, rejectWithError: false, context: null };
                         obj3[0] = outer1_6.QUESTS_GET_DECISIONS;
@@ -607,10 +607,10 @@ export const fetchBountyPreview = function fetchBountyPreview(arr, c3) {
   return applyArgumentsResult;
 };
 export const setBountyVideoProgress = function setBountyVideoProgress(bountyId, arg1) {
-  let obj = require(6005) /* getOrRefreshAdSession */;
+  let obj = require(6003) /* getOrRefreshAdSession */;
   if (null != obj.getCurrentAdSession()) {
-    const orRefreshAdSession = require(6005) /* getOrRefreshAdSession */.getOrRefreshAdSession(true);
-    const tmpResult = require(6005) /* getOrRefreshAdSession */;
+    const orRefreshAdSession = require(6003) /* getOrRefreshAdSession */.getOrRefreshAdSession(true);
+    const tmpResult = require(6003) /* getOrRefreshAdSession */;
     obj = { type: "BOUNTIES_VIDEO_PROGRESS_UPDATE", bountyId: null, timestampSec: null, maxTimestampSec: null, duration: null };
     obj[1] = bountyId;
     ({ timestampSec: obj4[2], maxTimestampSec: obj4[3], duration: obj4[4] } = arg1);

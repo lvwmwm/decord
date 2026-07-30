@@ -1,10 +1,10 @@
-// Module ID: 11823
-// Function ID: 11824
+// Module ID: 11819
+// Function ID: 11820
 // Name: InviteErrorBase
-// Dependencies: [19, 17, 676, 21, 4189, 712, 4035, 4125, 11824, 11825, 11826, 1236, 4185, 4600, 1416, 1297, 11827, 5566, 1945, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 4035, 4125, 11820, 11821, 11822, 1236, 4185, 4600, 1416, 1297, 11823, 5566, 1945, 2]
 // Exports: default
 
-// Module 11823 (InviteErrorBase)
+// Module 11819 (InviteErrorBase)
 import "set";
 import get_ActivityIndicator from "GuildIconSizes";
 import ME from "ME";
@@ -27,12 +27,12 @@ function InviteErrorBase(invite) {
   const tmp = createCacheKey();
   let obj = require(4035) /* AccessibilityAnnouncer */;
   const tmp4 = importDefault;
-  const tmp4Result = importDefault(obj.isThemeDark(importDefault(4125)()) ? 11824 : 11825);
+  const tmp4Result = importDefault(obj.isThemeDark(importDefault(4125)()) ? 11820 : 11821);
   let code;
   if (inviteError != null) {
     code = inviteError.code;
   }
-  const descriptiveInviteError = require(11826) /* getDescriptiveInviteError */.getDescriptiveInviteError(code);
+  const descriptiveInviteError = require(11822) /* getDescriptiveInviteError */.getDescriptiveInviteError(code);
   if (invite.invite.state === constants3.BANNED) {
     const intl2 = tmp2(1236).intl;
     let stringResult = intl2.string(tmp2(1236).t["GzD/aa"]);
@@ -91,7 +91,7 @@ function InviteDisabledError(onPressClose) {
     const guildIconURL = obj.getGuildIconURL(obj);
     const obj2 = { style: null, source: null };
     obj2[0] = tmp.disabledPauseIcon;
-    obj2[1] = importDefault(11827);
+    obj2[1] = importDefault(11823);
     const items = [callback(onPressClose(1297).Icon, obj2), ];
     const obj3 = { style: null, icon: null, size: null };
     obj3[0] = tmp.guildIcon;

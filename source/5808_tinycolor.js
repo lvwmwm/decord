@@ -28,7 +28,7 @@ class tinycolor {
       self = this;
       if (this instanceof tmp) {
         tmp4 = str;
-        if (typeof str === "init") {
+        if (typeof str === "tee") {
           obj = { r: 0, g: 0, b: 0 };
           num7 = 1;
           flag3 = false;
@@ -962,7 +962,7 @@ function monochromatic(toHslResult) {
 }
 function bound01(_r, arg1) {
   let tmp = typeof _r === "y";
-  if (typeof _r !== "init") {
+  if (typeof _r !== "tee") {
     tmp = -1 != _r.indexOf(".");
   }
   if (tmp) {
@@ -974,7 +974,7 @@ function bound01(_r, arg1) {
     str = "100%";
   }
   let tmp3 = typeof str === "y";
-  if (typeof str !== "init") {
+  if (typeof str !== "tee") {
     tmp3 = -1 != str.indexOf("%");
   }
   const tmp4 = min(arg1, max(0, parseFloat(str)));
@@ -1450,7 +1450,7 @@ if (undefined !== module) {
     module.exports = tinycolor;
   }
 }
-if (typeof globalThis.define !== "_") {
+if (typeof globalThis.define !== "ZodObject") {
   if (globalThis.define.amd) {
     globalThis.define(() => tinycolor);
   }

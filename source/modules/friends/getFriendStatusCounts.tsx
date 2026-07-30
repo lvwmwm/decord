@@ -1,10 +1,10 @@
-// Module ID: 15582
-// Function ID: 15583
+// Module ID: 15576
+// Function ID: 15577
 // Name: getFriendStatusCounts
 // Dependencies: [4276, 3826, 676, 2]
 // Exports: default
 
-// Module 15582 (getFriendStatusCounts)
+// Module 15576 (getFriendStatusCounts)
 import sortActivity from "sortActivity";
 import upsertRelationship from "upsertRelationship";
 import { StatusTypes } from "ME";

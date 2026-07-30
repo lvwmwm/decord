@@ -1,9 +1,9 @@
-// Module ID: 15490
-// Function ID: 15491
+// Module ID: 15484
+// Function ID: 15485
 // Name: SearchListRow
-// Dependencies: [19, 17, 9101, 21, 4189, 712, 4717, 4185, 2]
+// Dependencies: [19, 17, 9097, 21, 4189, 712, 4717, 4185, 2]
 
-// Module 15490 (SearchListRow)
+// Module 15484 (SearchListRow)
 import { View } from "get ActivityIndicator";
 import { SEARCH_ROW_TAP_STATE_PADDING as closure_4 } from "SearchAutocompleteSelectAnalyticsActions";
 import jsxProd from "jsxProd";
@@ -64,7 +64,7 @@ const memoResult = require("noop").memo((accessibilityRole) => {
   const items4 = [callback(View, { style: items3, children: icon }), , ];
   obj = { style: tmpResult.labels, children: null };
   let tmp7Result = label;
-  if (typeof label !== "init") {
+  if (typeof label !== "tee") {
     const obj1 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: null, children: null };
     obj1[3] = tmpResult.text;
     obj1[4] = label;

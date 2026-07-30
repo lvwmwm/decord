@@ -1,9 +1,9 @@
-// Module ID: 16158
-// Function ID: 16159
+// Module ID: 16152
+// Function ID: 16153
 // Name: finishRoll
-// Dependencies: [1372, 1931, 11152, 5711, 4182, 5134, 1236, 5713, 5967, 2]
+// Dependencies: [1372, 1931, 11148, 5711, 4182, 5134, 1236, 5713, 5965, 2]
 
-// Module 16158 (finishRoll)
+// Module 16152 (finishRoll)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 import INITIAL_STATE from "INITIAL_STATE";
@@ -137,7 +137,7 @@ prototype["sendMessage"] = function sendMessage(arg0, arg1, arg2, arr) {
       combined3 = "### " + result + ` ` + combined1 + "\n" + combined2;
     }
     str10 = importDefault(5713);
-    obj1 = importDefault(5967);
+    obj1 = importDefault(5965);
     obj1 = { location: null };
     obj1[0] = MessageSendLocation.CHAT_INPUT;
     str10.sendMessage(arg0, obj1.parse(channel, combined3), true, obj1);

@@ -1,16 +1,16 @@
-// Module ID: 9505
-// Function ID: 9506
+// Module ID: 9501
+// Function ID: 9502
 // Name: handleQuickSwitcherUpdate
-// Dependencies: [32, 4103, 6159, 1372, 1862, 4201, 1931, 4385, 1874, 9506, 6163, 589, 11, 687, 9507, 709, 9508, 12, 2]
+// Dependencies: [32, 4103, 6157, 1372, 1862, 4201, 1931, 4385, 1874, 9502, 6160, 589, 11, 687, 9503, 709, 9504, 12, 2]
 
-// Module 9505 (handleQuickSwitcherUpdate)
+// Module 9501 (handleQuickSwitcherUpdate)
 import _slicedToArray from "_slicedToArray";
 import getHash from "getHash";
-import getGeneralQueryResultTypes from "getGeneralQueryResultTypes";
+import handleConnectionOpen from "handleConnectionOpen";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
-import handleConnectionOpen from "handleConnectionOpen";
+import closure_13 from "handleConnectionOpen";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { SUMMARY_POLL_INTERVAL } from "result";
@@ -51,8 +51,8 @@ prototype["initialize"] = function initialize(shouldShowTopicsBar) {
   if (flag == null) {
     flag = true;
   }
-  this.waitFor(ensureGuildLoaded, getHash, createGuildRecordFromRust, getGeneralQueryResultTypes, generateOldThreadCutoff, handleConnectionOpen, updateUserGuildSettingsInternal, mergeGuildAvatar);
-  const items = [getGeneralQueryResultTypes];
+  this.waitFor(ensureGuildLoaded, getHash, createGuildRecordFromRust, handleConnectionOpen, generateOldThreadCutoff, closure_13, updateUserGuildSettingsInternal, mergeGuildAvatar);
+  const items = [handleConnectionOpen];
   this.syncWith(items, handleQuickSwitcherUpdate);
 };
 prototype["allSummaries"] = function allSummaries() {
@@ -184,7 +184,7 @@ prototype["shouldFetch"] = function shouldFetch(arg0, arg1) {
   } else {
     return false;
   }
-  obj = require(9507) /* canSeeChannelSummaries */;
+  obj = require(9503) /* canSeeChannelSummaries */;
 };
 prototype["channelAffinities"] = function channelAffinities() {
   return closure_21;
@@ -277,7 +277,7 @@ obj = {
     if (null != summary) {
       const _Object = Object;
       if (Object.keys(summary).length > 0) {
-        let obj = summaryFromServer(9508);
+        let obj = summaryFromServer(9504);
         summaryFromServer = obj.createSummaryFromServer(summary, channelId);
         let items = dependencyMap2[channelId];
         if (items == null) {
@@ -669,6 +669,6 @@ obj = {
   }
 };
 const summaryStore = new SummaryStore(require("dispatcher"), obj);
-const result = require("getGeneralQueryResultTypes").fileFinishedImporting("modules/summaries/SummaryStore.tsx");
+const result = require("handleConnectionOpen").fileFinishedImporting("modules/summaries/SummaryStore.tsx");
 
 export default summaryStore;

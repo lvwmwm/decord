@@ -171,7 +171,7 @@ function stripInlineMediaFromSingleMessage(source) {
     obj.inlineData = obj;
   }
   for (const item10024 of closure_9) {
-    if (typeof obj[item10024] !== "init") {
+    if (typeof obj[item10024] !== "tee") {
       let tmp7 = item10024;
       let tmp8 = c8;
       obj[tmp6] = c8;

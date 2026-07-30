@@ -1,10 +1,10 @@
-// Module ID: 7326
-// Function ID: 7327
+// Module ID: 7323
+// Function ID: 7324
 // Name: NitroRubyBadgeLargeBadge
-// Dependencies: [21, 5141, 7327, 2]
+// Dependencies: [21, 5141, 7324, 2]
 // Exports: NitroRubyBadgeLargeBadge
 
-// Module 7326 (NitroRubyBadgeLargeBadge)
+// Module 7323 (NitroRubyBadgeLargeBadge)
 import { jsx } from "jsxProd";
 
 const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/NitroRubyBadgeLargeBadge.native.tsx");
@@ -28,7 +28,7 @@ export const NitroRubyBadgeLargeBadge = function NitroRubyBadgeLargeBadge(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7327);
+  obj[0] = importDefault(7324);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

@@ -1,10 +1,10 @@
-// Module ID: 5850
-// Function ID: 5851
+// Module ID: 5848
+// Function ID: 5849
 // Name: _fetchUserEntitlements
 // Dependencies: [5, 676, 709, 530, 4427, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
-// Module 5850 (_fetchUserEntitlements)
+// Module 5848 (_fetchUserEntitlements)
 import set from "set";
 import { Endpoints } from "ME";
 
@@ -65,7 +65,7 @@ function _fetchUserEntitlements() {
               let c4;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

@@ -1,7 +1,7 @@
 // Module ID: 4399
 // Function ID: 4400
 // Name: openChannelCallModal
-// Dependencies: [5, 19, 3882, 4400, 1372, 3826, 1931, 1874, 676, 1221, 4402, 21, 4403, 4383, 10689, 1231, 4395, 10507, 1959, 5635, 5640, 4157, 12822, 5001, 4529, 1236, 4732, 4048, 12857, 4530, 8917, 4040, 6711, 2]
+// Dependencies: [5, 19, 3882, 4400, 1372, 3826, 1931, 1874, 676, 1221, 4402, 21, 4403, 4383, 10685, 1231, 4395, 10503, 1959, 5635, 5640, 4157, 12816, 5001, 4529, 1236, 4732, 4048, 12851, 4530, 8913, 4040, 6708, 2]
 // Exports: dismissVoiceChannelScreens, getVoiceChannelKey, getVoiceChannelKeyByChannelId, handleJoinCall, handleRedesignGroupDMCall, handleRedesignJoinCall, handleStartCall, hideVoiceChannelActionSheet, isVoiceChannelModalKey, maybeShowAgeGateModal, navigateToVoiceChannel, openGuildVoiceModal, openVoiceChannelActionSheet, showGuardCallAlert
 
 // Module 4399 (openChannelCallModal)
@@ -40,10 +40,10 @@ function openChannelCallModal(channel) {
       obj[0] = channel;
       const _HermesInternal = HermesInternal;
       const tmp3Result = tmp3(4395);
-      tmp3Result.pushLazy(tmp(1959)(10507, dependencyMap.paths), obj, "" + c17 + "-" + channel.id);
-      const tmp5 = tmp(1959)(10507, dependencyMap.paths);
+      tmp3Result.pushLazy(tmp(1959)(10503, dependencyMap.paths), obj, "" + c17 + "-" + channel.id);
+      const tmp5 = tmp(1959)(10503, dependencyMap.paths);
     }
-    tmpResult = tmp(10689);
+    tmpResult = tmp(10685);
   }
 }
 function monkeyPatchCall() {
@@ -168,7 +168,7 @@ export const maybeShowAgeGateModal = function maybeShowAgeGateModal(width) {
 export const openVoiceChannelActionSheet = function openVoiceChannelActionSheet(closure_0) {
   let obj = importDefault(4157);
   obj = { channel: closure_0 };
-  obj.openLazy(require(1959) /* asyncRequireImpl */(12822, dependencyMap.paths), "" + c17 + "-" + closure_0.id, obj);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(12816, dependencyMap.paths), "" + c17 + "-" + closure_0.id, obj);
 };
 export const hideVoiceChannelActionSheet = function hideVoiceChannelActionSheet(closure_0) {
   importDefault(4157).hideActionSheet("" + c17 + "-" + closure_0.id);
@@ -355,7 +355,7 @@ export const handleStartCall = function handleStartCall(channel, flag) {
             recipientId = outer1_0.getRecipientId();
           }
           outer1_1 = recipientId;
-          const tmp25 = outer1_1(8917);
+          const tmp25 = outer1_1(8913);
           const call = tmp25.call;
           const id = c0.id;
           let tmp28 = outer1_0;
@@ -470,7 +470,7 @@ export const handleRedesignGroupDMCall = function handleRedesignGroupDMCall(id) 
           }
           obj1 = outer1_0(4048);
           obj1.dismissKeyboard();
-          const tmp11 = v0(8917);
+          const tmp11 = v0(8913);
           const call = tmp11.call;
           id = id.id;
           if (typeof call === "unknown") {
@@ -602,8 +602,8 @@ export const navigateToVoiceChannel = function navigateToVoiceChannel(channel, L
   if (channel.isPrivate()) {
     openChannelCallModal(channel);
   } else if (channel.isGuildStageVoice()) {
-    require(6711) /* openStageChannelSettings */.openStageChannel(channel);
-    const obj2 = require(6711) /* openStageChannelSettings */;
+    require(6708) /* openStageChannelSettings */.openStageChannel(channel);
+    const obj2 = require(6708) /* openStageChannelSettings */;
   } else {
     const _HermesInternal = HermesInternal;
     const combined = "" + c17 + "-" + channel.id;

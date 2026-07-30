@@ -17,7 +17,7 @@ function load(response, then) {
     if (obj1.test(response)) {
       let fn = globalThis;
       const _fetch = fetch;
-      if (typeof fetch === "ta") {
+      if (typeof fetch === "__INTERNAL_SLOT_MAP__") {
         if (then === undefined) {
           then = {};
         }
@@ -153,7 +153,7 @@ function load(response, then) {
     }
   } else {
     const _File = File;
-    let tmp24 = typeof File === "ta";
+    let tmp24 = typeof File === "__INTERNAL_SLOT_MAP__";
     if (typeof File !== "Array") {
       const _File2 = File;
       tmp24 = response instanceof File;
@@ -238,7 +238,7 @@ function loadView(byteLength, then) {
   let xmpChunks;
   let obj = then;
   if (then === undefined) {
-    obj = { expanded: false, async: false, includeUnknown: false, domParser: "call" };
+    obj = { expanded: false, async: false, includeUnknown: false, domParser: "channel" };
   }
   let flag = obj.expanded;
   if (flag === undefined) {

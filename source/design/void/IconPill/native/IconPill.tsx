@@ -1,10 +1,10 @@
-// Module ID: 13136
-// Function ID: 13137
+// Module ID: 13131
+// Function ID: 13132
 // Name: IconPill
-// Dependencies: [19, 17, 505, 21, 4189, 712, 4602, 7669, 2]
+// Dependencies: [19, 17, 505, 21, 4189, 712, 4602, 7666, 2]
 // Exports: default
 
-// Module 13136 (IconPill)
+// Module 13131 (IconPill)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -50,7 +50,7 @@ export default function IconPill(IconComponent) {
   }
   const items1 = [tmp9, ];
   const items2 = [tmp.pillText, textStyle];
-  items1[1] = tmp8(importDefault(7669), { style: items2, numberOfLines: 1, accessibilityLabel, children: text });
+  items1[1] = tmp8(importDefault(7666), { style: items2, numberOfLines: 1, accessibilityLabel, children: text });
   obj[1] = items1;
   return closure_4(View, obj);
 };

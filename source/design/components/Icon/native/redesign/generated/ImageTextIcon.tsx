@@ -1,10 +1,10 @@
-// Module ID: 14417
-// Function ID: 14418
+// Module ID: 14413
+// Function ID: 14414
 // Name: ImageTextIcon
-// Dependencies: [19, 21, 712, 3892, 14418, 2]
+// Dependencies: [19, 21, 712, 3892, 14414, 2]
 // Exports: ImageTextIcon
 
-// Module 14417 (ImageTextIcon)
+// Module 14413 (ImageTextIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ImageTextIcon = function ImageTextIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14418) /* registerAsset */;
+  obj[0] = require(14414) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

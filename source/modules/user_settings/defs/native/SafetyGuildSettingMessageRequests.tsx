@@ -1,9 +1,9 @@
-// Module ID: 14670
-// Function ID: 14671
+// Module ID: 14664
+// Function ID: 14665
 // Name: showMessageRequestRestrictionModal
-// Dependencies: [1862, 14661, 7756, 10121, 3862, 4528, 1236, 4618, 14671, 6747, 6749, 6506, 14668, 13855, 10120, 2]
+// Dependencies: [1862, 14655, 7753, 10117, 3862, 4528, 1236, 4618, 14665, 6744, 6746, 6503, 14662, 13850, 10116, 2]
 
-// Module 14670 (showMessageRequestRestrictionModal)
+// Module 14664 (showMessageRequestRestrictionModal)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
 import { GUILD_SELECT_ALL_SERVERS_OPTION_ID as closure_6 } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
@@ -55,13 +55,13 @@ createToggle = {
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
     const selectedGuildId = callback2().selectedGuildId;
-    const defaultGuildsRestricted = require(14668) /* useDefaultGuildsRestricted */.useDefaultGuildsRestricted();
+    const defaultGuildsRestricted = require(14662) /* useDefaultGuildsRestricted */.useDefaultGuildsRestricted();
     const selectedGuildId2 = callback2().selectedGuildId;
     const RestrictedGuildIds = require(3862) /* explicitContentFromProto */.RestrictedGuildIds;
     const setting = RestrictedGuildIds.useSetting();
     let hasItem = setting.includes(selectedGuildId2);
-    const obj = require(14668) /* useDefaultGuildsRestricted */;
-    const tmp6 = selectedGuildId2 !== closure_6 || !require(13855) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    const obj = require(14662) /* useDefaultGuildsRestricted */;
+    const tmp6 = selectedGuildId2 !== closure_6 || !require(13850) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
     let tmp7 = !tmp6;
     if (tmp6) {
       if (selectedGuildId2 === tmp5) {
@@ -70,7 +70,7 @@ createToggle = {
       tmp7 = hasItem;
     }
     const MessageRequestRestrictedDefault = tmp(3862).MessageRequestRestrictedDefault;
-    const obj3 = require(13855) /* useParentalControlledExplicitContentSettings */;
+    const obj3 = require(13850) /* useParentalControlledExplicitContentSettings */;
     const MessageRequestRestrictedGuildIds = tmp(3862).MessageRequestRestrictedGuildIds;
     const setting1 = MessageRequestRestrictedGuildIds.useSetting();
     let tmp9 = !setting1.includes(selectedGuildId);
@@ -84,12 +84,12 @@ createToggle = {
     return tmp10;
   },
   useIsDisabled() {
-    const defaultGuildsRestricted = require(14668) /* useDefaultGuildsRestricted */.useDefaultGuildsRestricted();
+    const defaultGuildsRestricted = require(14662) /* useDefaultGuildsRestricted */.useDefaultGuildsRestricted();
     const selectedGuildId = callback2().selectedGuildId;
     const RestrictedGuildIds = require(3862) /* explicitContentFromProto */.RestrictedGuildIds;
     const setting = RestrictedGuildIds.useSetting();
     let hasItem = setting.includes(selectedGuildId);
-    const obj = require(14668) /* useDefaultGuildsRestricted */;
+    const obj = require(14662) /* useDefaultGuildsRestricted */;
     let tmp4 = selectedGuildId !== closure_6;
     if (!tmp4) {
       tmp4 = !obj3.useIsParentallyControlled();
@@ -105,19 +105,19 @@ createToggle = {
   },
   onValueChange: function onAllowMessageRequestsFromServerMembersValueChange(arg0) {
     if (!arg0) {
-      let obj = require(14671) /* shouldAgeVerifyForDMDefaultOff */;
+      let obj = require(14665) /* shouldAgeVerifyForDMDefaultOff */;
       if (obj.shouldAgeVerifyForDMDefaultOff()) {
         obj = { entryPoint: null };
-        obj[0] = require(6749) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS;
-        const result = importDefault(6747).showAgeVerificationGetStartedModal(obj);
-        const obj2 = importDefault(6747);
+        obj[0] = require(6746) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS;
+        const result = importDefault(6744).showAgeVerificationGetStartedModal(obj);
+        const obj2 = importDefault(6744);
       }
     }
     const tmp5 = callback();
     if (tmp5 === closure_6) {
       showMessageRequestRestrictionModal(!arg0);
     } else {
-      const sanitizedMessageRequestRestrictedGuilds = require(6506) /* getSanitizedRestrictedGuilds */.getSanitizedMessageRequestRestrictedGuilds();
+      const sanitizedMessageRequestRestrictedGuilds = require(6503) /* getSanitizedRestrictedGuilds */.getSanitizedMessageRequestRestrictedGuilds();
       if (arg0) {
         sanitizedMessageRequestRestrictedGuilds.delete(tmp5);
       } else {
@@ -126,7 +126,7 @@ createToggle = {
       const MessageRequestRestrictedGuildIds = require(3862) /* explicitContentFromProto */.MessageRequestRestrictedGuildIds;
       const _Array = Array;
       MessageRequestRestrictedGuildIds.updateSetting(Array.from(sanitizedMessageRequestRestrictedGuilds));
-      const obj4 = require(6506) /* getSanitizedRestrictedGuilds */;
+      const obj4 = require(6503) /* getSanitizedRestrictedGuilds */;
       const tmp6 = require;
     }
   }

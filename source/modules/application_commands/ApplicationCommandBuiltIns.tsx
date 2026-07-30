@@ -1,7 +1,7 @@
 // Module ID: 5710
 // Function ID: 5711
 // Name: getOptionValue
-// Dependencies: [5, 1372, 3817, 1874, 4623, 676, 5711, 1944, 4182, 5704, 1236, 5712, 1906, 3862, 6181, 6182, 6048, 6183, 692, 6185, 5713, 5967, 5105, 4028, 687, 11026, 3771, 4199, 38, 5680, 12611, 2]
+// Dependencies: [5, 1372, 3817, 1874, 4623, 676, 5711, 1944, 4182, 5704, 1236, 5712, 1906, 3862, 6178, 6179, 6046, 6180, 692, 6182, 5713, 5965, 5105, 4028, 687, 11022, 3771, 4199, 38, 5680, 12605, 2]
 // Exports: getBuiltInCommands
 
 // Module 5710 (getOptionValue)
@@ -413,7 +413,7 @@ obj13.execute = function execute(arr) {
       if (str == null) {
         str = "";
       }
-      const obj = importDefault(6181);
+      const obj = importDefault(6178);
       const id = guild.id;
       const id2 = channel.id;
       if (!str) {
@@ -473,7 +473,7 @@ Object.defineProperty(obj17, "displayDescription", {
   },
   set: undefined
 });
-Object.defineProperty(obj17, "maxLength", { get: () => require(6182) /* useMessageMaxLength */.getMaxMessageLength(), set: undefined });
+Object.defineProperty(obj17, "maxLength", { get: () => require(6179) /* useMessageMaxLength */.getMaxMessageLength(), set: undefined });
 obj17.required = true;
 items8[1] = obj17;
 obj15.options = items8;
@@ -481,8 +481,8 @@ obj15.predicate = function predicate(channel) {
   channel = channel.channel;
   let canStartPublicThread = null != channel;
   if (canStartPublicThread) {
-    canStartPublicThread = require(6048) /* useCanUnarchiveThread */.computeCanStartPublicThread(channel);
-    const obj = require(6048) /* useCanUnarchiveThread */;
+    canStartPublicThread = require(6046) /* useCanUnarchiveThread */.computeCanStartPublicThread(channel);
+    const obj = require(6046) /* useCanUnarchiveThread */;
   }
   return canStartPublicThread;
 };
@@ -527,7 +527,7 @@ let closure_14 = importDefaultResult((arg0, arg1) => {
             id = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "ct", done: null };
+            return { value: "ct", done: "Array" };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {
@@ -549,8 +549,8 @@ let closure_14 = importDefaultResult((arg0, arg1) => {
             if (tmp11 == null) {
               closure_3 = "";
             }
-            obj1 = callback(6183);
-            let obj2 = callback(6185);
+            obj1 = callback(6180);
+            let obj2 = callback(6182);
             c6 = 2;
             c7 = 1;
             obj2 = { value: null, done: false };
@@ -571,7 +571,7 @@ let closure_14 = importDefaultResult((arg0, arg1) => {
           id = id.id;
           const obj3 = { location: null };
           obj3[0] = constants.THREAD_CREATION;
-          obj8.sendMessage(id, channel(5967).parse(id, closure_3), true, obj3);
+          obj8.sendMessage(id, channel(5965).parse(id, closure_3), true, obj3);
           c7 = 3;
           return { value: "HermesInternal", done: null };
         }
@@ -1337,7 +1337,7 @@ Object.defineProperty(obj31, "displayDescription", {
   set: undefined
 });
 obj31.required = true;
-Object.defineProperty(obj31, "maxLength", { get: () => require(6182) /* useMessageMaxLength */.getMaxMessageLength(), set: undefined });
+Object.defineProperty(obj31, "maxLength", { get: () => require(6179) /* useMessageMaxLength */.getMaxMessageLength(), set: undefined });
 items12[1] = obj31;
 obj29.options = items12;
 obj29.execute = function execute(arr, channel) {

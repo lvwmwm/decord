@@ -1,10 +1,10 @@
-// Module ID: 16372
-// Function ID: 16373
+// Module ID: 16366
+// Function ID: 16367
 // Name: getPermissionChanges
-// Dependencies: [5048, 5115, 4391, 1377, 5092, 16371, 1372, 1935, 3826, 1874, 16370, 676, 1379, 11053, 1378, 3, 4265, 1236, 6709, 11, 16373, 506, 1384, 4380, 1906, 14, 688, 8350, 16374, 3859, 3771, 2]
+// Dependencies: [5048, 5115, 4391, 1377, 5092, 16365, 1372, 1935, 3826, 1874, 16364, 676, 1379, 11049, 1378, 3, 4265, 1236, 6706, 11, 16367, 506, 1384, 4380, 1906, 14, 688, 8347, 16368, 3859, 3771, 2]
 // Exports: checkChangesToRender, findChangeByKey, getChangeStrings, getChangeTitle, getSimpleAuditLogChangeDetails, getSimpleAuditLogTitleContextFromChange, getSimpleAuditLogTitleFromChange, getStringForAddedChannelFlag, getStringForPermission, getStringForRemovedChannelFlag, shouldNotRenderChangeDetail, transformLogs
 
-// Module 16372 (getPermissionChanges)
+// Module 16366 (getPermissionChanges)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import handleUpdate from "handleUpdate";
 import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
@@ -41,13 +41,13 @@ let closure_34;
 const require = arg1;
 function getPermissionChanges(arg0, arg1) {
   let num = 0;
-  if (typeof arg0 !== "init") {
+  if (typeof arg0 !== "tee") {
     num = arg0;
   }
   const obj = importAll(506);
   let tmpResult = tmp(506);
   let num2 = 0;
-  if (typeof arg1 !== "init") {
+  if (typeof arg1 !== "tee") {
     num2 = arg1;
   }
   const deserializeResult = importAll(506).deserialize(num);
@@ -842,7 +842,7 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           __3TkD = __3TkD(1236).t.MWp6H7;
           obj16[AuditLogChangeKeys.TEMPORARY] = (newValue) => newValue.newValue ? __3TkD : _5kDYS3;
           const obj19 = {};
-          obj19[__3TkD(6709).GuildInviteFlags.IS_GUEST_INVITE] = __3TkD(1236).t.XYZMbL;
+          obj19[__3TkD(6706).GuildInviteFlags.IS_GUEST_INVITE] = __3TkD(1236).t.XYZMbL;
           __3TkD = obj19;
           obj16[AuditLogChangeKeys.FLAGS] = (arg0) => __3TkD[arg0.newValue];
           obj16[AuditLogChangeKeys.ROLE_IDS] = () => __3TkD(1236).t.gb1Owj;
@@ -1713,9 +1713,9 @@ export const getChangeTitle = function getChangeTitle(log) {
             const newValue = found2.newValue;
             found = require;
             found = dependencyMap;
-            if (require(16373) /* set */.GuildFeedItemTypes.MESSAGE === newValue) {
+            if (require(16367) /* set */.GuildFeedItemTypes.MESSAGE === newValue) {
               return found(1236).t["PyEa+J"];
-            } else if (found(16373).GuildFeedItemTypes.FORUM_POST === newValue) {
+            } else if (found(16367).GuildFeedItemTypes.FORUM_POST === newValue) {
               return found(1236).t.hCuAb1;
             } else {
               return found(1236).t["UZ+U3A"];
@@ -3060,11 +3060,11 @@ export const transformLogs = function transformLogs(arr, arg1) {
                               if (role.FLAGS === key19) {
                                 ({ oldValue: oldValue14, newValue: newValue14 } = newValue);
                                 let num6 = 0;
-                                if (typeof oldValue14 !== "os") {
+                                if (typeof oldValue14 !== "reType") {
                                   num6 = oldValue14;
                                 }
                                 let num7 = 0;
-                                if (typeof newValue14 !== "os") {
+                                if (typeof newValue14 !== "reType") {
                                   num7 = newValue14;
                                 }
                                 role = outer2_2;

@@ -1,10 +1,10 @@
-// Module ID: 6582
-// Function ID: 6583
+// Module ID: 6579
+// Function ID: 6580
 // Name: fetchCurrentAppIcon
-// Dependencies: [32, 5, 19, 17, 6583, 676, 1876, 3, 500, 6610, 6584, 4616, 709, 698, 3890, 1236, 6611, 1577, 2]
+// Dependencies: [32, 5, 19, 17, 6580, 676, 1876, 3, 500, 6607, 6581, 4616, 709, 698, 3890, 1236, 6608, 1577, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon, useAppIcons, useCurrentAppIcon
 
-// Module 6582 (fetchCurrentAppIcon)
+// Module 6579 (fetchCurrentAppIcon)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "ME";
 import noop from "noop";
@@ -189,7 +189,7 @@ function _setAppIcon() {
               obj3[0] = callback;
               obj3[1] = callback2;
               let TIER_2 = null;
-              if (callback !== callback(6584).FreemiumAppIconIds.DEFAULT) {
+              if (callback !== callback(6581).FreemiumAppIconIds.DEFAULT) {
                 TIER_2 = TIER_2.TIER_2;
               }
               obj3[2] = TIER_2;
@@ -233,7 +233,7 @@ if (set.isAndroid()) {
   DCDIconManager = require("isMetaQuest").NativeModules.DCDIconManager;
 }
 function useCurrentAppIcon() {
-  const tmp = callback(React.useState(_require(6584).FreemiumAppIconIds.DEFAULT), 2);
+  const tmp = callback(React.useState(_require(6581).FreemiumAppIconIds.DEFAULT), 2);
   _require = tmp[1];
   const importDefault = React.useCallback(callback2(function*() {
     if (c3 === 2) {
@@ -319,7 +319,7 @@ export const useAppIcons = function useAppIcons() {
   let closure_1;
   let tmp4;
   let tmp6;
-  const currentAppIcon = callback(React.useState(_require(6584).FreemiumAppIconIds.DEFAULT), 2);
+  const currentAppIcon = callback(React.useState(_require(6581).FreemiumAppIconIds.DEFAULT), 2);
   _require = currentAppIcon[1];
   const importDefault = React.useCallback(callback2(function*() {
     if (c3 === 2) {
@@ -487,7 +487,7 @@ export const useAppIcons = function useAppIcons() {
   return { officialAppIcons, limitedTimeAppIcons, currentAppIcon: currentAppIcon[0] };
 };
 export const navigateToAppIconSettings = function navigateToAppIconSettings() {
-  let obj = require(6611) /* openUserSettings */;
+  let obj = require(6608) /* openUserSettings */;
   obj = { screen: constants.APP_ICONS };
   obj.openUserSettings(obj);
 };

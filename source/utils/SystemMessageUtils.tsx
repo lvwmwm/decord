@@ -1,9 +1,9 @@
-// Module ID: 7767
-// Function ID: 7768
+// Module ID: 7764
+// Function ID: 7765
 // Name: getSystemMessageUserJoinMobile
-// Dependencies: [32, 3827, 1218, 1372, 1862, 3826, 1874, 676, 1236, 11, 7768, 7772, 4379, 4380, 7773, 7776, 4418, 4409, 7777, 7778, 5772, 2]
+// Dependencies: [32, 3827, 1218, 1372, 1862, 3826, 1874, 676, 1236, 11, 7765, 7769, 4379, 4380, 7770, 7773, 4418, 4409, 7774, 7775, 5772, 2]
 
-// Module 7767 (getSystemMessageUserJoinMobile)
+// Module 7764 (getSystemMessageUserJoinMobile)
 import _slicedToArray from "_slicedToArray";
 import hasFlag from "hasFlag";
 import fetchFingerprint from "fetchFingerprint";
@@ -47,7 +47,7 @@ export default {
           let tmp6Result = tmp6(4379);
           obj[2] = tmp6Result.getName(null, channel_id, null);
           obj[3] = closure_12;
-          return require(7768) /* reactParserFor */.astToString(intl18.formatToParts(require(1236) /* getSystemLocale */.t["7/Xl0S"], obj));
+          return require(7765) /* reactParserFor */.astToString(intl18.formatToParts(require(1236) /* getSystemLocale */.t["7/Xl0S"], obj));
         }
       } else if (tmp9.RECIPIENT_REMOVE === type) {
         if (null != null) {
@@ -61,8 +61,8 @@ export default {
               tmp6Result = tmp6(4379);
               obj[2] = tmp6Result.getName(null, channel_id, null);
               obj[3] = closure_12;
-              let astToStringResult = require(7768) /* reactParserFor */.astToString(intl17.formatToParts(require(1236) /* getSystemLocale */.t.QtZ0RD, obj));
-              const obj58 = require(7768) /* reactParserFor */;
+              let astToStringResult = require(7765) /* reactParserFor */.astToString(intl17.formatToParts(require(1236) /* getSystemLocale */.t.QtZ0RD, obj));
+              const obj58 = require(7765) /* reactParserFor */;
             }
             return astToStringResult;
           }
@@ -70,8 +70,8 @@ export default {
           const obj1 = { username: null, usernameOnClick: null };
           obj1[0] = name;
           obj1[1] = closure_12;
-          astToStringResult = require(7768) /* reactParserFor */.astToString(intl16.formatToParts(require(1236) /* getSystemLocale */.t["Qn5+Lf"], obj1));
-          const obj56 = require(7768) /* reactParserFor */;
+          astToStringResult = require(7765) /* reactParserFor */.astToString(intl16.formatToParts(require(1236) /* getSystemLocale */.t["Qn5+Lf"], obj1));
+          const obj56 = require(7765) /* reactParserFor */;
         }
       } else if (tmp9.CALL === type) {
         const call = mentions.call;
@@ -83,14 +83,14 @@ export default {
             let obj2 = { username: null, usernameOnClick: null };
             obj2[0] = name;
             obj2[1] = closure_12;
-            astToStringResult1 = require(7768) /* reactParserFor */.astToString(intl15.formatToParts(require(1236) /* getSystemLocale */.t.DbgSA0, obj2));
-            const obj54 = require(7768) /* reactParserFor */;
+            astToStringResult1 = require(7765) /* reactParserFor */.astToString(intl15.formatToParts(require(1236) /* getSystemLocale */.t.DbgSA0, obj2));
+            const obj54 = require(7765) /* reactParserFor */;
           }
         }
         return astToStringResult1;
       } else if (tmp9.CHANNEL_NAME_CHANGE === type) {
         const intl14 = require(1236) /* getSystemLocale */.intl;
-        const obj52 = require(7768) /* reactParserFor */;
+        const obj52 = require(7765) /* reactParserFor */;
         const t = require(1236) /* getSystemLocale */.t;
         const obj3 = { username: null, usernameOnClick: null, channelName: null };
         obj3[0] = name;
@@ -102,25 +102,25 @@ export default {
         const obj4 = { username: null, usernameOnClick: null };
         obj4[0] = name;
         obj4[1] = closure_12;
-        return require(7768) /* reactParserFor */.astToString(intl13.formatToParts(require(1236) /* getSystemLocale */.t.wypJZ0, obj4));
+        return require(7765) /* reactParserFor */.astToString(intl13.formatToParts(require(1236) /* getSystemLocale */.t.wypJZ0, obj4));
       } else if (tmp9.CHANNEL_PINNED_MESSAGE === type) {
         const intl12 = require(1236) /* getSystemLocale */.intl;
         let obj5 = { username: null, usernameOnClick: null };
         obj5[0] = name;
         obj5[1] = closure_12;
-        return require(7768) /* reactParserFor */.astToString(intl12.formatToParts(require(1236) /* getSystemLocale */.t["/M60j0"], obj5));
+        return require(7765) /* reactParserFor */.astToString(intl12.formatToParts(require(1236) /* getSystemLocale */.t["/M60j0"], obj5));
       } else if (tmp9.USER_JOIN === type) {
         const intl11 = require(1236) /* getSystemLocale */.intl;
         const obj6 = { username: null, usernameOnClick: null };
         obj6[0] = name;
         obj6[1] = closure_12;
-        return require(7768) /* reactParserFor */.astToString(intl11.formatToParts(getSystemMessageUserJoinMobile(mentions.id), obj6));
+        return require(7765) /* reactParserFor */.astToString(intl11.formatToParts(getSystemMessageUserJoinMobile(mentions.id), obj6));
       } else if (tmp9.GUILD_BOOST === type) {
         const intl10 = require(1236) /* getSystemLocale */.intl;
         const obj7 = { username: null, usernameOnClick: null };
         obj7[0] = name;
         obj7[1] = closure_12;
-        return require(7768) /* reactParserFor */.astToString(intl10.formatToParts(require(1236) /* getSystemLocale */.t.ihxM9x, obj7));
+        return require(7765) /* reactParserFor */.astToString(intl10.formatToParts(require(1236) /* getSystemLocale */.t.ihxM9x, obj7));
       } else {
         if (tmp9.GUILD_BOOST_TIER_1 !== type) {
           if (tmp9.GUILD_BOOST_TIER_2 !== type) {
@@ -137,13 +137,13 @@ export default {
               } else if (tmp9.ROLE_SUBSCRIPTION_PURCHASE === type) {
                 let astToStringResult2 = null;
                 if (!(mentions instanceof hasFlag)) {
-                  const obj34 = require(7768) /* reactParserFor */;
+                  const obj34 = require(7765) /* reactParserFor */;
                   const obj9 = { username: null, guildId: null, roleSubscriptionData: null };
                   obj9[0] = name;
                   obj9[1] = isForumPost.guild_id;
                   obj9[2] = mentions.role_subscription_data;
-                  astToStringResult2 = obj34.astToString(require(7773) /* identityHook */.getRoleSubscriptionPurchaseSystemMessageContentMobile(obj9));
-                  const obj35 = require(7773) /* identityHook */;
+                  astToStringResult2 = obj34.astToString(require(7770) /* identityHook */.getRoleSubscriptionPurchaseSystemMessageContentMobile(obj9));
+                  const obj35 = require(7770) /* identityHook */;
                 }
                 return astToStringResult2;
               } else if (tmp9.PURCHASE_NOTIFICATION === type) {
@@ -159,12 +159,12 @@ export default {
                   }
                   astToStringResult3 = null;
                   if (null != product_name) {
-                    const obj31 = require(7768) /* reactParserFor */;
+                    const obj31 = require(7765) /* reactParserFor */;
                     const obj10 = { username: null, productName: null };
                     obj10[0] = name;
                     obj10[1] = mentions.purchase_notification.guild_product_purchase.product_name;
-                    astToStringResult3 = obj31.astToString(require(7776) /* getGuildProductPurchaseSystemMessageContentMobile */.getGuildProductPurchaseSystemMessageContentMobile(obj10));
-                    const obj32 = require(7776) /* getGuildProductPurchaseSystemMessageContentMobile */;
+                    astToStringResult3 = obj31.astToString(require(7773) /* getGuildProductPurchaseSystemMessageContentMobile */.getGuildProductPurchaseSystemMessageContentMobile(obj10));
+                    const obj32 = require(7773) /* getGuildProductPurchaseSystemMessageContentMobile */;
                   }
                 }
                 return astToStringResult3;
@@ -175,19 +175,19 @@ export default {
                   const obj26 = require(4418) /* useNullableMessageAuthor */;
                   const messageAuthor = obj26.getMessageAuthor(require(4409) /* createMinimalMessageRecord */.createMessageRecord(mentions));
                   const obj27 = require(4409) /* createMinimalMessageRecord */;
-                  const obj28 = require(7768) /* reactParserFor */;
+                  const obj28 = require(7765) /* reactParserFor */;
                   const obj11 = { application: null, username: null };
                   obj11[0] = mentions.application;
                   obj11[1] = messageAuthor.nick;
-                  return obj28.astToString(require(7777) /* getApplicationSubscriptionSystemMessageASTContent */.getApplicationSubscriptionSystemMessageASTContent(obj11));
+                  return obj28.astToString(require(7774) /* getApplicationSubscriptionSystemMessageASTContent */.getApplicationSubscriptionSystemMessageASTContent(obj11));
                 }
               } else if (tmp9.PRIVATE_CHANNEL_INTEGRATION_ADDED === type) {
                 let astToStringResult4 = null;
                 if (!(mentions instanceof hasFlag)) {
-                  let obj20 = require(7768) /* reactParserFor */;
+                  let obj20 = require(7765) /* reactParserFor */;
                   const obj12 = { application: null, username: null };
                   obj12[0] = mentions.application;
-                  const obj22 = require(7778) /* getPrivateChannelIntegrationAddedSystemMessageContent */;
+                  const obj22 = require(7775) /* getPrivateChannelIntegrationAddedSystemMessageContent */;
                   const obj24 = require(4418) /* useNullableMessageAuthor */;
                   obj12[1] = obj24.getMessageAuthor(require(4409) /* createMinimalMessageRecord */.createMessageRecord(mentions)).nick;
                   astToStringResult4 = obj20.astToString(obj22.getPrivateChannelIntegrationAddedSystemMessageASTContent(obj12));
@@ -197,8 +197,8 @@ export default {
               } else if (tmp9.PRIVATE_CHANNEL_INTEGRATION_REMOVED === type) {
                 let astToStringResult5 = null;
                 if (!(mentions instanceof hasFlag)) {
-                  let obj15 = require(7768) /* reactParserFor */;
-                  let obj16 = require(7778) /* getPrivateChannelIntegrationAddedSystemMessageContent */;
+                  let obj15 = require(7765) /* reactParserFor */;
+                  let obj16 = require(7775) /* getPrivateChannelIntegrationAddedSystemMessageContent */;
                   const obj13 = { application: null, username: null };
                   obj13[0] = mentions.application;
                   let obj18 = require(4418) /* useNullableMessageAuthor */;
@@ -240,14 +240,14 @@ export default {
                     const guild = store2.getGuild(channel.getGuildId());
                     astToStringResult6 = null;
                     if (null != guild) {
-                      if (require(7772) /* AutomodNotificationEmbedTypeKeys */.AutomodNotificationEmbedTypeKeys.ACTIVITY_ALERTS_ENABLED === value) {
-                        let tmp34Result = tmp34(7768);
+                      if (require(7769) /* AutomodNotificationEmbedTypeKeys */.AutomodNotificationEmbedTypeKeys.ACTIVITY_ALERTS_ENABLED === value) {
+                        let tmp34Result = tmp34(7765);
                         const intl5 = tmp34(1236).intl;
                         const obj14 = { guildName: null };
                         obj14[0] = guild.name;
                         astToStringResult6 = tmp34Result.astToString(intl5.formatToParts(tmp34(1236).t.wt3ZUM, obj14));
-                      } else if (tmp34(7772).AutomodNotificationEmbedTypeKeys.INTERACTION_BLOCKED === value) {
-                        tmp34Result = tmp34(7768);
+                      } else if (tmp34(7769).AutomodNotificationEmbedTypeKeys.INTERACTION_BLOCKED === value) {
+                        tmp34Result = tmp34(7765);
                         const intl4 = tmp34(1236).intl;
                         obj15 = { guildName: null };
                         obj15[0] = guild.name;
@@ -256,8 +256,8 @@ export default {
                         const intl3 = tmp34(1236).intl;
                         obj16 = { guildName: null };
                         obj16[0] = guild.name;
-                        astToStringResult6 = tmp34(7768).astToString(intl3.formatToParts(tmp34(1236).t["a+lJKl"], obj16));
-                        const tmp34Result1 = tmp34(7768);
+                        astToStringResult6 = tmp34(7765).astToString(intl3.formatToParts(tmp34(1236).t["a+lJKl"], obj16));
+                        const tmp34Result1 = tmp34(7765);
                       }
                     }
                   }
@@ -273,7 +273,7 @@ export default {
                   const guild1 = store2.getGuild(channel1.getGuildId());
                   let astToStringResult7 = null;
                   if (null != guild1) {
-                    obj5 = require(7768) /* reactParserFor */;
+                    obj5 = require(7765) /* reactParserFor */;
                     const intl2 = require(1236) /* getSystemLocale */.intl;
                     const obj17 = { username: null, guildName: null, time: null };
                     obj17[0] = name;
@@ -298,7 +298,7 @@ export default {
                   const guild2 = store2.getGuild(channel2.getGuildId());
                   let astToStringResult8 = null;
                   if (null != guild2) {
-                    obj2 = require(7768) /* reactParserFor */;
+                    obj2 = require(7765) /* reactParserFor */;
                     const intl = require(1236) /* getSystemLocale */.intl;
                     obj18 = { username: null, guildName: null };
                     obj18[0] = name;
@@ -321,8 +321,8 @@ export default {
             obj19 = { username: null, usernameOnClick: null };
             obj19[0] = name;
             obj19[1] = closure_12;
-            let astToStringResult9 = require(7768) /* reactParserFor */.astToString(intl8.formatToParts(require(1236) /* getSystemLocale */.t.ihxM9x, obj19));
-            const obj40 = require(7768) /* reactParserFor */;
+            let astToStringResult9 = require(7765) /* reactParserFor */.astToString(intl8.formatToParts(require(1236) /* getSystemLocale */.t.ihxM9x, obj19));
+            const obj40 = require(7765) /* reactParserFor */;
           }
           return astToStringResult9;
         }
@@ -330,8 +330,8 @@ export default {
         obj20 = { username: null, usernameOnClick: null };
         obj20[0] = name;
         obj20[1] = closure_12;
-        astToStringResult9 = require(7768) /* reactParserFor */.astToString(intl9.formatToParts(require(1236) /* getSystemLocale */.t.ihxM9x, obj20));
-        const obj42 = require(7768) /* reactParserFor */;
+        astToStringResult9 = require(7765) /* reactParserFor */.astToString(intl9.formatToParts(require(1236) /* getSystemLocale */.t.ihxM9x, obj20));
+        const obj42 = require(7765) /* reactParserFor */;
       }
     } else if (typeof first === "ay") {
       first = authStore.getUser(first.id);
@@ -341,7 +341,7 @@ export default {
       let tmp3 = first;
     } else {
       tmp3 = null;
-      if (typeof first !== "init") {
+      if (typeof first !== "tee") {
         let user = authStore.getUser(first);
         if (user == null) {
           user = null;

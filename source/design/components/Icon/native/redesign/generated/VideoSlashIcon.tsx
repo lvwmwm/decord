@@ -1,10 +1,10 @@
-// Module ID: 12039
-// Function ID: 12040
+// Module ID: 12033
+// Function ID: 12034
 // Name: VideoSlashIcon
-// Dependencies: [19, 21, 712, 3892, 12040, 2]
+// Dependencies: [19, 21, 712, 3892, 12034, 2]
 // Exports: VideoSlashIcon
 
-// Module 12039 (VideoSlashIcon)
+// Module 12033 (VideoSlashIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const VideoSlashIcon = function VideoSlashIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12040) /* registerAsset */;
+  obj[0] = require(12034) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

@@ -1,10 +1,10 @@
-// Module ID: 15372
-// Function ID: 15373
+// Module ID: 15366
+// Function ID: 15367
 // Name: Screenshot
-// Dependencies: [32, 5, 19, 17, 1372, 4526, 4525, 676, 8813, 4182, 21, 4189, 712, 8228, 1236, 15373, 3890, 1474, 4036, 8824, 15374, 4719, 4000, 3901, 5215, 9916, 9925, 4600, 4395, 6158, 1351, 5967, 6186, 514, 4722, 5713, 6187, 1581, 500, 5150, 9118, 5143, 9905, 2]
+// Dependencies: [32, 5, 19, 17, 1372, 4526, 4525, 676, 8809, 4182, 21, 4189, 712, 8225, 1236, 15367, 3890, 1474, 4036, 8820, 15368, 4719, 4000, 3901, 5215, 9913, 9922, 4600, 4395, 6156, 1351, 5965, 6183, 514, 4722, 5713, 6184, 1581, 500, 5150, 9114, 5143, 9902, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 15372 (Screenshot)
+// Module 15366 (Screenshot)
 import dispatcher from "dispatcher";
 import handleChanged from "handleChanged";
 import useGradientBottom from "useGradientBottom";
@@ -43,7 +43,7 @@ function Screenshot(setUri) {
       return nextPromise;
     }, 500);
   }, items);
-  let obj = setUri(8824);
+  let obj = setUri(8820);
   obj = { style: { position: "absolute", top: -1000, overflow: "hidden" }, children: null };
   obj = { style: items1, children: null };
   items1 = [tmp.preview, { width: ref(1474)().width }];
@@ -53,7 +53,7 @@ function Screenshot(setUri) {
   const tmp4 = ref(4036)();
   const obj3 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
   const obj4 = { dark: null, light: null };
-  const tmp6 = ref(15374);
+  const tmp6 = ref(15368);
   obj4[0] = setUri(4000).OverlayOpacity.LEVEL_7;
   obj4[1] = setUri(4000).OverlayOpacity.LEVEL_8;
   obj3[4] = obj4;
@@ -209,7 +209,7 @@ class ICYMIShareModal {
                     let closure_0 = arg0;
                     let c2 = 0;
                     let c1 = 0;
-                    return (/* F119061 */ function*() { ... })();
+                    return (/* F119072 */ function*() { ... })();
                   });
                   return function(arg0) {
                     const self = this;
@@ -353,7 +353,7 @@ let result = require("noop").fileFinishedImporting("modules/icymi/native/ICYMISh
 export default ICYMIShareModal;
 export const GuildEventShareModal = function GuildEventShareModal(event) {
   event = event.event;
-  let obj = require(8228) /* SHARE_EVENT_DETAILS_LINK */;
+  let obj = require(8225) /* SHARE_EVENT_DETAILS_LINK */;
   obj = { guildId: event.guild_id, guildEventId: event.id };
   obj = { title: null, originDestinationId: null, linkText: null };
   const result = obj.SHARE_EVENT_DETAILS_LINK(obj);

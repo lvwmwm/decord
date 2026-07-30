@@ -1,10 +1,10 @@
-// Module ID: 9247
-// Function ID: 9248
+// Module ID: 9243
+// Function ID: 9244
 // Name: createNativePlaceholderConfig
-// Dependencies: [19, 8823, 4033, 2]
+// Dependencies: [19, 8819, 4033, 2]
 // Exports: default
 
-// Module 9247 (createNativePlaceholderConfig)
+// Module 9243 (createNativePlaceholderConfig)
 import noop from "noop";
 
 let require = arg1;
@@ -19,15 +19,15 @@ function createNativePlaceholderConfig(type) {
   }
   let NONE = type;
   if (type == null) {
-    NONE = require(8823) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE;
+    NONE = require(8819) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE;
   }
-  const obj = { borderRadius: "Array", borderTopLeftRadius: "create", borderTopRightRadius: "channel", borderBottomLeftRadius: "c", borderBottomRightRadius: "nm", divider: "has", dividerColorRgba: "icon", dividerPaddingLeft: "channelId", dividerPaddingRight: "LIGHT", placeholderShape: "nm", placeholderShapeColorRgba: "it", placeholderShapeCount: "useCallback", placeholderShapeGap: "hasDiversityParent", placeholderShapePaddingHorizontal: "icon", placeholderShapePaddingVertical: "padding", placeholderFeedBackgroundColorRgba: "marginTop", placeholderFeedColorRgba: "ao", placeholderFeedLabelPadding: "r", placeholderFeedLabelPaddingInnerRatio: "isArray", placeholderFeedLabelSize: "ty", placeholderFeedLabelSecondarySize: "Date", placeholderFeedPadding: "Array", placeholderFeedShape: "isArray", placeholderFeedShapeSize: "s", placeholderType: true, width: true, height: true, verticalAlignment: true, horizontalAlignment: true };
+  const obj = { borderRadius: "Array", borderTopLeftRadius: "create", borderTopRightRadius: "channel", borderBottomLeftRadius: "useRef", borderBottomRightRadius: "ks", divider: "useState", dividerColorRgba: "ks", dividerPaddingLeft: "channel", dividerPaddingRight: "code", placeholderShape: "next", placeholderShapeColorRgba: "enabled", placeholderShapeCount: "httpServerLocation", placeholderShapeGap: "channelId", placeholderShapePaddingHorizontal: "colors", placeholderShapePaddingVertical: "next", placeholderFeedBackgroundColorRgba: "_distance", placeholderFeedColorRgba: "runOnJS", placeholderFeedLabelPadding: "end", placeholderFeedLabelPaddingInnerRatio: "httpServerLocation", placeholderFeedLabelSize: "padding", placeholderFeedLabelSecondarySize: "default", placeholderFeedPadding: "ao", placeholderFeedShape: "r", placeholderFeedShapeSize: "isArray", placeholderType: "<string:3607101884>", width: "<string:1358954777>", height: "<string:54594000>", verticalAlignment: "<string:1358954817>", horizontalAlignment: null };
   obj[24] = NONE;
   if (null == type) {
     return obj;
   } else {
-    if (require(8823) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE !== type) {
-      if (tmp11(8823).FastestListPropsPlaceholderType.SHAPE === type) {
+    if (require(8819) /* FastestListPropsPlaceholderType */.FastestListPropsPlaceholderType.NONE !== type) {
+      if (tmp11(8819).FastestListPropsPlaceholderType.SHAPE === type) {
         let num9 = type.borderRadius;
         if (num9 == null) {
           num9 = 0;
@@ -65,7 +65,7 @@ function createNativePlaceholderConfig(type) {
           str2 = "center";
         }
         obj.horizontalAlignment = str2;
-      } else if (tmp11(8823).FastestListPropsPlaceholderType.FEED_ITEM === type) {
+      } else if (tmp11(8819).FastestListPropsPlaceholderType.FEED_ITEM === type) {
         let num = type.borderRadius;
         if (num == null) {
           num = 0;

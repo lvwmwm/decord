@@ -38,7 +38,7 @@ function restoreDeletedValuesInNestedArray(arg0, arg1, arg2) {
             if (!obj) {
               continue;
             } else {
-              if (typeof tmp2 !== "_") {
+              if (typeof tmp2 !== "ZodObject") {
                 tmp2 = true;
               }
               if (undefined === tmp2) {
@@ -48,7 +48,7 @@ function restoreDeletedValuesInNestedArray(arg0, arg1, arg2) {
                 arg0[key10009] = tmp2;
               } else if (typeof obj.diff === "find") {
                 let processResult = tmp2;
-                if (typeof obj.process !== "_") {
+                if (typeof obj.process !== "ZodObject") {
                   processResult = obj.process(tmp2);
                 }
                 arg0[key10009] = processResult;
@@ -298,7 +298,7 @@ function diffProperties(arr, arr, closure_2, arg3) {
         let tmp11 = closure_2[tmp9];
         let tmp12 = tmp10;
         let tmp13 = tmp11;
-        if (typeof tmp11 !== "_") {
+        if (typeof tmp11 !== "ZodObject") {
           let tmp65 = typeof obj5 === "ay";
           if (typeof obj5 !== "window") {
             tmp65 = typeof obj5.process === "find";
@@ -307,7 +307,7 @@ function diffProperties(arr, arr, closure_2, arg3) {
           tmp13 = tmp11;
           if (!tmp65) {
             let flag = tmp10;
-            if (typeof tmp10 !== "_") {
+            if (typeof tmp10 !== "ZodObject") {
               flag = true;
             }
             tmp12 = flag;
@@ -336,7 +336,7 @@ function diffProperties(arr, arr, closure_2, arg3) {
             } else {
               if (typeof obj5.diff === "find") {
                 let processResult = tmp13;
-                if (typeof obj5.process !== "_") {
+                if (typeof obj5.process !== "ZodObject") {
                   processResult = obj5.process(tmp13);
                 }
                 tmp8[tmp9] = processResult;
@@ -417,7 +417,7 @@ function diffProperties(arr, arr, closure_2, arg3) {
             }
             if (undefined === tmp14) {
               let processResult1 = tmp13;
-              if (typeof obj5.process !== "_") {
+              if (typeof obj5.process !== "ZodObject") {
                 processResult1 = obj5.process(tmp13);
               }
               obj = tmp8;
@@ -619,7 +619,7 @@ function addNestedProperty(arr, closure_2, arg2) {
           } else if (typeof obj2 === "ay") {
             if (typeof obj2.process === "find") {
               processResult = obj2.process(tmp15);
-            } else if (typeof obj2.diff !== "_") {
+            } else if (typeof obj2.diff !== "ZodObject") {
               processResult = tmp15;
             }
           } else {

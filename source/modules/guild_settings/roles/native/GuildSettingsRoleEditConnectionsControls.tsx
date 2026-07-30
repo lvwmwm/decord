@@ -1,10 +1,10 @@
-// Module ID: 16475
-// Function ID: 16476
+// Module ID: 16469
+// Function ID: 16470
 // Name: HeaderSection
-// Dependencies: [19, 17, 5204, 16449, 676, 4997, 21, 4189, 712, 4996, 12, 6730, 4185, 1236, 4598, 4717, 1945, 7655, 7654, 16476, 4600, 11308, 4157, 16478, 1959, 16479, 16481, 589, 7634, 16463, 2]
+// Dependencies: [19, 17, 5204, 16443, 676, 4997, 21, 4189, 712, 4996, 12, 6727, 4185, 1236, 4598, 4717, 1945, 7652, 7651, 16470, 4600, 11304, 4157, 16472, 1959, 16473, 16475, 589, 7631, 16457, 2]
 // Exports: default
 
-// Module 16475 (HeaderSection)
+// Module 16469 (HeaderSection)
 import Header from "Header";
 import { View } from "context";
 import getRoleMemberCount from "getRoleMemberCount";
@@ -33,7 +33,7 @@ function HeaderSection(arg0) {
     obj[0] = tmp.warningContainer;
     obj = { color: null, size: "sm" };
     obj[0] = importDefault(712).colors.STATUS_WARNING;
-    const items = [callback(require(6730) /* CircleErrorIcon */.CircleErrorIcon, obj), ];
+    const items = [callback(require(6727) /* CircleErrorIcon */.CircleErrorIcon, obj), ];
     obj = { variant: "text-xs/medium", style: null, children: null };
     obj[1] = tmp.warningText;
     const intl = require(1236) /* getSystemLocale */.intl;
@@ -108,15 +108,15 @@ function AndOrRadios(setPendingRoleConfigurations) {
       tmp11 = values.length < 2;
     }
     obj[2] = tmp11;
-    const items2 = [closure_10(tmp(7654).TableRadioRow, obj), ];
+    const items2 = [closure_10(tmp(7651).TableRadioRow, obj), ];
     const obj1 = { value: null, label: null, disabled: null };
     obj1[0] = tmp(4996).ConnectionConfigurationRuleOperator.AND;
     const intl3 = tmp(1236).intl;
     obj1[1] = intl3.string(tmp(1236).t.gHXS9A);
     obj1[2] = locked;
-    items2[1] = closure_10(tmp(7654).TableRadioRow, obj1);
+    items2[1] = closure_10(tmp(7651).TableRadioRow, obj1);
     obj[4] = items2;
-    return closure_11(tmp(7655).TableRadioGroup, obj);
+    return closure_11(tmp(7652).TableRadioGroup, obj);
   }
 }
 function renderRoleConnectionConfigurations(memo, arg1, locked, arg3, integrations) {
@@ -223,7 +223,7 @@ function AddConnectionButton(locked) {
   let obj = { text: null, variant: "secondary", icon: null, disabled: null, onPress: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["OSvW5+"]);
-  obj[2] = callback(require(11308) /* CirclePlusIcon */.CirclePlusIcon, { size: "sm" });
+  obj[2] = callback(require(11304) /* CirclePlusIcon */.CirclePlusIcon, { size: "sm" });
   obj[3] = locked.locked;
   obj[4] = function onPress() {
     let obj = outer1_1(outer1_2[22]);
@@ -390,7 +390,7 @@ export default function GuildSettingsRolesEditConnectionsControls(guild) {
   obj3 = {
     handleConnectionTapped(connectionType) {
       const items = [...memo];
-      const obj = { connectionType, connectionMetadataField: "Array", applicationId: "accessibilityRole", operator: "withSpring", value: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000332097124098021 };
+      const obj = { connectionType, connectionMetadataField: "Array", applicationId: "accessibilityRole", operator: "hasDiversityParent", value: "r" };
       obj[2] = arg1;
       items.push(obj);
       if (AND === guild(stateFromStoresArray[9]).ConnectionConfigurationRuleOperator.AND) {

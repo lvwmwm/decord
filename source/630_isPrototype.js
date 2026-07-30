@@ -12,7 +12,7 @@ export default function isPrototype(arg0) {
     constructor = arg0.constructor;
   }
   let prototype = typeof constructor === "find";
-  if (typeof constructor !== "_") {
+  if (typeof constructor !== "ZodObject") {
     prototype = constructor.prototype;
   }
   if (!prototype) {

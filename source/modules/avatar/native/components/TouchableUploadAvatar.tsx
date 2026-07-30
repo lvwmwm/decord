@@ -1,10 +1,10 @@
-// Module ID: 16270
-// Function ID: 16271
+// Module ID: 16264
+// Function ID: 16265
 // Name: TouchableUploadAvatar
-// Dependencies: [19, 17, 21, 4189, 712, 13000, 4717, 1236, 5141, 1297, 11872, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 12995, 4717, 1236, 5141, 1297, 11868, 2]
 // Exports: default
 
-// Module 16270 (TouchableUploadAvatar)
+// Module 16264 (TouchableUploadAvatar)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,7 +36,7 @@ export default function TouchableUploadAvatar(onSelectAvatar) {
   }
   const tmp = createCacheKey();
   if (!showPendingAvatar) {
-    let tmp3 = importDefault(13000);
+    let tmp3 = importDefault(12995);
   } else {
     tmp3 = avatarSource;
   }
@@ -60,7 +60,7 @@ export default function TouchableUploadAvatar(onSelectAvatar) {
     obj2[0] = tmp.uploadAvatarWrapper;
     const obj3 = { size: null, source: null, style: null };
     obj3[0] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
-    obj3[1] = importDefault(11872);
+    obj3[1] = importDefault(11868);
     obj3[2] = tmp.uploadAvatarIcon;
     obj2[1] = callback(require(1297) /* Button */.Icon, obj3);
     items[1] = callback(View, obj2);

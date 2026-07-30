@@ -1,10 +1,10 @@
-// Module ID: 7616
-// Function ID: 7617
+// Module ID: 7613
+// Function ID: 7614
 // Name: GoogleWalletVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 1480, 4405, 6781, 5867, 5872, 1236, 2741, 6783, 6784, 4598, 4185, 5022, 4600, 6749, 2]
+// Dependencies: [5, 32, 19, 17, 21, 1480, 4405, 6778, 5865, 5870, 1236, 2741, 6780, 6781, 4598, 4185, 5022, 4600, 6746, 2]
 // Exports: default
 
-// Module 7616 (GoogleWalletVerificationScreen)
+// Module 7613 (GoogleWalletVerificationScreen)
 import useNavigation from "useNavigation";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
@@ -250,8 +250,8 @@ export default function GoogleWalletVerificationScreen(modalSessionId) {
     items3[1] = callback(tmp(4185).Text, obj2);
     obj1[3] = items3;
     obj[0] = callback2(tmp(4598).Stack, obj1);
-    obj[0] = callback(tmp(6784).ModalContent, obj);
-    let tmp14 = callback(tmp(6783).ModalScreen, obj);
+    obj[0] = callback(tmp(6781).ModalContent, obj);
+    let tmp14 = callback(tmp(6780).ModalScreen, obj);
   } else {
     let obj3 = { children: null };
     let obj4 = { children: null };
@@ -271,8 +271,8 @@ export default function GoogleWalletVerificationScreen(modalSessionId) {
     items4[1] = callback(tmp(5022).ButtonGroup, obj7);
     obj5[3] = items4;
     obj4[0] = callback2(tmp(4598).Stack, obj5);
-    obj3[0] = callback(tmp(6784).ModalContent, obj4);
-    tmp14 = callback(tmp(6783).ModalScreen, obj3);
+    obj3[0] = callback(tmp(6781).ModalContent, obj4);
+    tmp14 = callback(tmp(6780).ModalScreen, obj3);
   }
   return tmp14;
 };

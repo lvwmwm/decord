@@ -1,10 +1,10 @@
-// Module ID: 11213
-// Function ID: 11214
+// Module ID: 11209
+// Function ID: 11210
 // Name: useActivityShelfItems
-// Dependencies: [19, 5691, 589, 11214, 11215, 11216, 2]
+// Dependencies: [19, 5691, 589, 11210, 11211, 11212, 2]
 // Exports: default
 
-// Module 11213 (useActivityShelfItems)
+// Module 11209 (useActivityShelfItems)
 import noop from "noop";
 import initialize from "initialize";
 
@@ -22,11 +22,11 @@ export default function useActivityShelfItems(enableFilter) {
   let items = [initialize];
   filter = flag(589).useStateFromStoresObject(items, () => ({ filter: filter.getFilter() })).filter;
   const obj = flag(589);
-  const activityShelfData = flag(11214).useActivityShelfData(enableFilter.guildId);
-  const tmp2 = filter(11215)(activityShelfData);
+  const activityShelfData = flag(11210).useActivityShelfData(enableFilter.guildId);
+  const tmp2 = filter(11211)(activityShelfData);
   dependencyMap = tmp2;
-  const obj2 = flag(11214);
-  developerActivityShelfItems = flag(11216).useDeveloperActivityShelfItems();
+  const obj2 = flag(11210);
+  developerActivityShelfItems = flag(11212).useDeveloperActivityShelfItems();
   const items1 = [developerActivityShelfItems, flag, filter, tmp2];
   return developerActivityShelfItems.useMemo(() => {
     function shouldKeepShelfItem(application) {

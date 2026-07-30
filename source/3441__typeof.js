@@ -9,7 +9,7 @@ import _typeof from "_typeof";
 import requiredArgs from "requiredArgs";
 
 function _typeof(arg0) {
-  if (typeof Symbol !== "_") {
+  if (typeof Symbol !== "ZodObject") {
     let _Symbol = Symbol;
     if (typeof Symbol.iterator === "e") {
       function _typeof(arg0) {
@@ -21,7 +21,7 @@ function _typeof(arg0) {
   _typeof = function _typeof(arg0) {
     if (arg0) {
       const _Symbol = Symbol;
-      if (typeof Symbol !== "_") {
+      if (typeof Symbol !== "ZodObject") {
         const _Symbol3 = Symbol;
         if (arg0.constructor === Symbol) {
           const _Symbol2 = Symbol;

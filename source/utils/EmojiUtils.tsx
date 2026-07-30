@@ -1,7 +1,7 @@
 // Module ID: 3834
 // Function ID: 3835
 // Name: getEmojiUnavailableReason
-// Dependencies: [5, 1376, 3817, 1874, 676, 1877, 3833, 3835, 5053, 3810, 6094, 1471, 1416, 2]
+// Dependencies: [5, 1376, 3817, 1874, 676, 1877, 3833, 3835, 5053, 3810, 6092, 1471, 1416, 2]
 // Exports: countEmoji, getAllEmojiNamesString, getEmojiColors, getEmojiUrl
 
 // Module 3834 (getEmojiUnavailableReason)
@@ -431,7 +431,7 @@ export const getEmojiUrl = function getEmojiUrl(arg0, arg1) {
     let emojiURL = importDefault(1416).getEmojiURL(obj);
     const obj2 = importDefault(1416);
   } else {
-    obj = importDefault(6094);
+    obj = importDefault(6092);
     emojiURL = obj.getURL(tmp);
   }
   return emojiURL;

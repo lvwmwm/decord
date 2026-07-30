@@ -1,10 +1,10 @@
-// Module ID: 9944
-// Function ID: 9945
+// Module ID: 9940
+// Function ID: 9941
 // Name: ForLaterCardActionButtons
-// Dependencies: [19, 17, 21, 4189, 4157, 9945, 1959, 9933, 1236, 9948, 5175, 9102, 9299, 6682, 8964, 2]
+// Dependencies: [19, 17, 21, 4189, 4157, 9941, 1959, 9930, 1236, 9944, 5175, 9098, 9295, 6679, 8960, 2]
 // Exports: default
 
-// Module 9944 (ForLaterCardActionButtons)
+// Module 9940 (ForLaterCardActionButtons)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -41,7 +41,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
   }, items);
   let intl = savedMessage(1236).intl;
   obj[0] = intl.string(savedMessage(1236).t["+TSRGD"]);
-  obj[1] = savedMessage(9948).ChatArrowRightIcon;
+  obj[1] = savedMessage(9944).ChatArrowRightIcon;
   obj[2] = function action() {
     return jumpToMessage();
   };
@@ -65,10 +65,10 @@ export default function ForLaterCardActionButtons(savedMessage) {
     obj = { label: null, IconComponent: null, action: null };
     const intl3 = tmp3(1236).intl;
     obj[0] = intl3.string(tmp3(1236).t.vrbqs1);
-    obj[1] = tmp3(9102).PencilIcon;
+    obj[1] = tmp3(9098).PencilIcon;
     obj[2] = callback;
     items1.unshift(obj);
   }
   const tmp = callback();
-  return <View style={callback().actionGroup}>{jsx(savedMessage(9299).ContextMenu, obj2)}</View>;
+  return <View style={callback().actionGroup}>{jsx(savedMessage(9295).ContextMenu, obj2)}</View>;
 };

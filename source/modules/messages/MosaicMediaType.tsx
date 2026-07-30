@@ -1,10 +1,10 @@
-// Module ID: 9921
-// Function ID: 9922
+// Module ID: 9918
+// Function ID: 9919
 // Name: isVisualMedia
-// Dependencies: [676, 4377, 1384, 9922, 2]
+// Dependencies: [676, 4377, 1384, 9919, 2]
 // Exports: getMosaicMediaTypeForAttachment, getMosaicMediaTypeForUnfurledMediaItem, isVisualMedia
 
-// Module 9921 (isVisualMedia)
+// Module 9918 (isVisualMedia)
 import { MessageAttachmentFlags } from "ME";
 
 const re3 = /\.(mp3|m4a|ogg|opus|wav|flac)$/i;
@@ -73,7 +73,7 @@ export const getMosaicMediaTypeForAttachment = function getMosaicMediaTypeForAtt
     if (obj.isPlaintextPreviewableFile(filename)) {
       str2 = "PLAINTEXT_PREVIEW";
     }
-    obj = require(9922) /* set */;
+    obj = require(9919) /* set */;
   }
   str = str2;
 };

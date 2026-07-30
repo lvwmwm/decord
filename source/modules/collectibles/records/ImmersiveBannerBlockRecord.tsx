@@ -1,9 +1,9 @@
-// Module ID: 5838
-// Function ID: 5839
+// Module ID: 5836
+// Function ID: 5837
 // Name: fromServer
 // Dependencies: [5829, 2]
 
-// Module 5838 (fromServer)
+// Module 5836 (fromServer)
 let prototype;
 prototype = function ImmersiveBannerBlockRecord(end_time) {
   const obj = Object.create(new.target.prototype);

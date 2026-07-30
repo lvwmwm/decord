@@ -1,10 +1,10 @@
-// Module ID: 7894
-// Function ID: 7895
+// Module ID: 7891
+// Function ID: 7892
 // Name: validateComponent
 // Dependencies: [1906, 4411, 1236, 38, 2]
 // Exports: default
 
-// Module 7894 (validateComponent)
+// Module 7891 (validateComponent)
 const result = require("getSystemLocale").fileFinishedImporting("modules/interaction_components/validateComponent.tsx");
 
 export default function validateComponent(type, arg1, modal) {

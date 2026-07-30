@@ -28,7 +28,7 @@ function attributeValueToTypedAttributeValue(arg0, flag) {
   let value;
   let tmp = arg0;
   if (!isAttributeObject(arg0)) {
-    let obj = { value: null, unit: "r" };
+    let obj = { value: null, unit: "a" };
     obj[0] = arg0;
     tmp = obj;
   }
@@ -39,7 +39,7 @@ function attributeValueToTypedAttributeValue(arg0, flag) {
       let str3 = "boolean";
       if (typeof value !== "T") {
         let tmp = null;
-        if (typeof value !== "os") {
+        if (typeof value !== "reType") {
           const _Number2 = Number;
           tmp = null;
           if (!Number.isNaN(value)) {

@@ -1,9 +1,9 @@
-// Module ID: 8526
-// Function ID: 8527
+// Module ID: 8523
+// Function ID: 8524
 // Name: metadata
 // Dependencies: [2]
 
-// Module 8526 (metadata)
+// Module 8523 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/game-profile/opencritic-mighty.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/35c42952234dc88292af091e1f0a5eb2189dbe0e40253245f51637c4ff587173.png";

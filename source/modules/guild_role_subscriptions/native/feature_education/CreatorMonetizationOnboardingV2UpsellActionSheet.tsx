@@ -1,10 +1,10 @@
-// Module ID: 15214
-// Function ID: 15215
+// Module ID: 15208
+// Function ID: 15209
 // Name: CreatorMonetizationOnboardingV2UpsellActionSheet
-// Dependencies: [19, 17, 676, 1369, 21, 4189, 5243, 4185, 1236, 5141, 15215, 4600, 8304, 2]
+// Dependencies: [19, 17, 676, 1369, 21, 4189, 5243, 4185, 1236, 5141, 15209, 4600, 8301, 2]
 // Exports: default
 
-// Module 15214 (CreatorMonetizationOnboardingV2UpsellActionSheet)
+// Module 15208 (CreatorMonetizationOnboardingV2UpsellActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { GuildSettingsSections } from "ME";
@@ -41,7 +41,7 @@ export default function CreatorMonetizationOnboardingV2UpsellActionSheet(arg0) {
   obj1[4] = intl2.string(require(1236) /* getSystemLocale */.t.kUUFbG);
   items[1] = callback(require(4185) /* Text */.Text, obj1);
   const obj2 = { style: tmp.image, resizeMode: "contain", source: null };
-  obj2[2] = importDefault(15215);
+  obj2[2] = importDefault(15209);
   items[2] = callback(importDefault(5141), obj2);
   const obj3 = {
     onPress() {

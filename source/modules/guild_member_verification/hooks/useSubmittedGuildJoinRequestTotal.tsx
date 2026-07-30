@@ -1,10 +1,10 @@
-// Module ID: 15182
-// Function ID: 15183
+// Module ID: 15176
+// Function ID: 15177
 // Name: useSubmittedGuildJoinRequestTotal
 // Dependencies: [5714, 589, 2]
 // Exports: useSubmittedGuildJoinRequestTotal
 
-// Module 15182 (useSubmittedGuildJoinRequestTotal)
+// Module 15176 (useSubmittedGuildJoinRequestTotal)
 import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";
 
 const require = arg1;

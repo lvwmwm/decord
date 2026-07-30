@@ -1,10 +1,10 @@
-// Module ID: 8076
-// Function ID: 8077
+// Module ID: 8073
+// Function ID: 8074
 // Name: filterLayer
-// Dependencies: [32, 19, 17, 7938, 5563, 21, 4189, 712, 589, 7983, 8077, 8079, 8080, 8081, 7943, 8082, 7951, 8095, 8096, 3901, 8097, 8088, 8101, 8061, 8104, 11980, 11969, 8379, 11958, 8059, 2]
+// Dependencies: [32, 19, 17, 7935, 5563, 21, 4189, 712, 589, 7980, 8074, 8076, 8077, 8078, 7940, 8079, 7948, 8092, 8093, 3901, 8094, 8085, 8098, 8058, 8101, 11974, 11963, 8376, 11952, 8056, 2]
 // Exports: default
 
-// Module 8076 (filterLayer)
+// Module 8073 (filterLayer)
 import _slicedToArray from "_slicedToArray";
 import ManaContext from "ManaContext";
 import { View } from "useBadges";

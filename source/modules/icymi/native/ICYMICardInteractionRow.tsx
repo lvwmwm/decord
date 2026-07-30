@@ -1,10 +1,10 @@
-// Module ID: 15369
-// Function ID: 15370
+// Module ID: 15363
+// Function ID: 15364
 // Name: AddEmojiButton
-// Dependencies: [32, 19, 17, 6066, 1372, 5003, 3817, 676, 1877, 21, 3828, 6075, 4189, 712, 500, 4033, 589, 4199, 5713, 9336, 4717, 1236, 6576, 4185, 9456, 688, 1416, 9309, 9085, 10376, 9901, 9973, 15361, 4686, 6074, 9988, 9555, 8185, 9892, 9565, 3893, 4611, 689, 5565, 2]
+// Dependencies: [32, 19, 17, 6064, 1372, 5003, 3817, 676, 1877, 21, 3828, 6073, 4189, 712, 500, 4033, 589, 4199, 5713, 9332, 4717, 1236, 6573, 4185, 9452, 688, 1416, 9305, 9081, 10372, 9898, 9969, 15355, 4686, 6072, 9984, 9551, 8182, 9889, 9562, 3893, 4611, 689, 5565, 2]
 // Exports: default, onAddReaction, useThread
 
-// Module 15369 (AddEmojiButton)
+// Module 15363 (AddEmojiButton)
 import Separator from "Separator";
 import EMOJI_PICKER_ACTION_SHEET_KEY from "EMOJI_PICKER_ACTION_SHEET_KEY";
 import get_ActivityIndicator from "module_4199";
@@ -225,7 +225,7 @@ function ForwardButton(disabled) {
   obj[3] = disabled;
   const intl = tmp3(1236).intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.xIUfJS);
-  obj[5] = closure_16(importDefault(9901), { size: "sm" });
+  obj[5] = closure_16(importDefault(9898), { size: "sm" });
   return closure_16(require(4717) /* PressableBase */.PressableOpacity, obj);
 }
 function ReplyButton(disabled) {
@@ -243,7 +243,7 @@ function ReplyButton(disabled) {
   obj[3] = disabled;
   const intl = tmp3(1236).intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t["5NwaNY"]);
-  obj[5] = closure_16(require(9973) /* ArrowAngleLeftUpIcon */.ArrowAngleLeftUpIcon, { size: "sm" });
+  obj[5] = closure_16(require(9969) /* ArrowAngleLeftUpIcon */.ArrowAngleLeftUpIcon, { size: "sm" });
   return closure_16(require(4717) /* PressableBase */.PressableOpacity, obj);
 }
 function ThreadAsCommentsButton(parentMessage) {
@@ -673,10 +673,10 @@ export default function ICYMICardInteractionRow(message) {
 export const onAddReaction = function onAddReaction(arg0, arg1, byName) {
   if (null != byName) {
     let obj = require(3828) /* MAX_REACTIONS */;
-    const obj2 = require(6075) /* checkReactionResponse */;
+    const obj2 = require(6073) /* checkReactionResponse */;
     obj = { burst: null };
     obj[0] = arg3;
-    obj2.addReaction(arg0, arg1, obj.toReactionEmoji(byName), require(6075) /* checkReactionResponse */.ReactionLocations.MESSAGE, obj);
+    obj2.addReaction(arg0, arg1, obj.toReactionEmoji(byName), require(6073) /* checkReactionResponse */.ReactionLocations.MESSAGE, obj);
     const toReactionEmojiResult = obj.toReactionEmoji(byName);
   }
 };

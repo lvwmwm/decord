@@ -1,10 +1,10 @@
-// Module ID: 11507
-// Function ID: 11508
+// Module ID: 11503
+// Function ID: 11504
 // Name: getOrRefreshPushSyncToken
-// Dependencies: [5, 11508, 1218, 676, 5644, 3, 707, 530, 1208, 11512, 595, 4999, 500, 503, 1351, 709, 2]
+// Dependencies: [5, 11504, 1218, 676, 5644, 3, 707, 530, 1208, 11508, 595, 4999, 500, 503, 1351, 709, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 11507 (getOrRefreshPushSyncToken)
+// Module 11503 (getOrRefreshPushSyncToken)
 import timestamp from "timestamp";
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
@@ -112,7 +112,7 @@ function _getOrRefreshPushSyncToken() {
           } else {
             token = body.body.token;
             c4 = 0;
-            obj = callback(11512);
+            obj = callback(11508);
             obj.updatePushSyncToken(lib.id, token);
             c6 = 3;
             const obj6 = { value: null, done: true };
@@ -287,8 +287,8 @@ let obj = {
             } else if (arg0 !== 2) {
               v0 = arg1;
               if (v0.body.invalid_push_sync_tokens.length > 0) {
-                const result = v0(11512).invalidatePushSyncTokens(v0.body.invalid_push_sync_tokens);
-                const obj9 = v0(11512);
+                const result = v0(11508).invalidatePushSyncTokens(v0.body.invalid_push_sync_tokens);
+                const obj9 = v0(11508);
               }
             }
             dependencyMap = 3;

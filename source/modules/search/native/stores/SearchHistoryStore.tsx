@@ -1,9 +1,9 @@
-// Module ID: 15479
-// Function ID: 15480
+// Module ID: 15473
+// Function ID: 15474
 // Name: deserialize
-// Dependencies: [9101, 1385, 12, 589, 709, 2]
+// Dependencies: [9097, 1385, 12, 589, 709, 2]
 
-// Module 15479 (deserialize)
+// Module 15473 (deserialize)
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
 import { PersistedStore } from "initialize";
 

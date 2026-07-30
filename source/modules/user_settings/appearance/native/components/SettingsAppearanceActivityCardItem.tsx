@@ -1,10 +1,10 @@
-// Module ID: 14310
-// Function ID: 14311
+// Module ID: 14306
+// Function ID: 14307
 // Name: ActivityCardItem
-// Dependencies: [19, 17, 1946, 14311, 21, 4050, 1297, 4189, 712, 647, 7970, 5141, 4185, 1851, 14312, 14313, 14314, 2]
+// Dependencies: [19, 17, 1946, 14307, 21, 4050, 1297, 4189, 712, 647, 7967, 5141, 4185, 1851, 14308, 14309, 14310, 2]
 // Exports: default
 
-// Module 14310 (ActivityCardItem)
+// Module 14306 (ActivityCardItem)
 import "noop";
 import get_ActivityIndicator from "set";
 import _getSystemLocale from "_getSystemLocale";

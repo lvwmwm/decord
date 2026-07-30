@@ -1,10 +1,10 @@
-// Module ID: 12988
-// Function ID: 12989
+// Module ID: 12983
+// Function ID: 12984
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 6694, 5779, 6225, 12443, 1218, 676, 1379, 4254, 4402, 10677, 5794, 4172, 12989, 11070, 7756, 11767, 4395, 4041, 12990, 8359, 6611, 8649, 10985, 1844, 8034, 698, 8036, 5680, 9547, 11107, 12997, 11799, 10018, 1959, 11001, 11000, 12999, 13001, 1577, 4732, 13006, 3886, 13008, 1862, 6690, 8208, 8217, 11814, 4394, 9039, 4040, 5045, 1222, 709, 4995, 1467, 8304, 13011, 13026, 500, 13037, 8348, 13044, 4509, 13045, 5797, 5535, 8896, 6002, 5038, 10960, 9699, 13117, 5023, 5694, 8486, 8480, 4155, 2]
+// Dependencies: [109, 5, 6691, 5779, 6222, 12437, 1218, 676, 1379, 4254, 4402, 10673, 5794, 4172, 12984, 11066, 7753, 11763, 4395, 4041, 12985, 8356, 6608, 8646, 10981, 1844, 8031, 698, 8033, 5680, 9543, 11103, 12992, 11795, 10014, 1959, 10997, 10996, 12994, 12996, 1577, 4732, 13001, 3886, 13003, 1862, 6687, 8205, 8214, 11810, 4394, 9035, 4040, 5045, 1222, 709, 4995, 1467, 8301, 13006, 13021, 500, 13032, 8345, 13039, 4509, 13040, 5797, 5535, 8892, 6000, 5038, 10956, 9696, 13112, 5023, 5694, 8483, 8477, 4155, 2]
 // Exports: default
 
-// Module 12988 (handleSupportedURL)
+// Module 12983 (handleSupportedURL)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import zustandStore from "zustandStore";
 import scheduledEventSort from "scheduledEventSort";
@@ -225,7 +225,7 @@ export default function handleSupportedURL(payload) {
       result = inviteCode;
       result = payload(inviteCode[29]).startDiceRoll(channelId2, diceCount, diceSides);
       result = rootNavigationRef1;
-      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: "<string:3052339201>" };
+      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: "\u{1F9B9}\u{1F3FB}\u200D\u2642\uFE0F" };
       obj3[0] = guildId2;
       obj3[1] = channelId2;
       let obj4 = { safe: null, navigationReplace: null, waitForConnection: null, skipMessageFetch: null };

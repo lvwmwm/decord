@@ -1,10 +1,10 @@
-// Module ID: 9581
-// Function ID: 9582
+// Module ID: 9578
+// Function ID: 9579
 // Name: MediaPostThumbnailActionSheet
 // Dependencies: [19, 17, 1369, 21, 4189, 712, 1581, 5243, 5245, 4185, 1236, 1297, 4600, 2]
 // Exports: default
 
-// Module 9581 (MediaPostThumbnailActionSheet)
+// Module 9578 (MediaPostThumbnailActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";

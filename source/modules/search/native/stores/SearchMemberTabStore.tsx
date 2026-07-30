@@ -1,9 +1,9 @@
-// Module ID: 11463
-// Function ID: 11464
+// Module ID: 11459
+// Function ID: 11460
 // Name: setAutocompleteOptions
-// Dependencies: [1372, 676, 6163, 3822, 5104, 589, 709, 2]
+// Dependencies: [1372, 676, 6160, 3822, 5104, 589, 709, 2]
 
-// Module 11463 (setAutocompleteOptions)
+// Module 11459 (setAutocompleteOptions)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { Permissions } from "ME";
 import { Store } from "initialize";
@@ -173,8 +173,8 @@ const searchGuildMemberTabStoreImpl = new SearchGuildMemberTabStoreImpl(require(
           outer1_9.emitChange();
         }
       };
-      let tmp4 = importDefault(6163);
-      let items = [obj(6163).AutocompleterResultTypes.USER];
+      let tmp4 = importDefault(6160);
+      let items = [obj(6160).AutocompleterResultTypes.USER];
       tmp4 = new tmp4(onAutocompleterResultsChange, items, 50);
       obj.autocompleter = tmp4;
       const autocompleter = obj.autocompleter;

@@ -1,9 +1,9 @@
-// Module ID: 11410
-// Function ID: 11411
+// Module ID: 11406
+// Function ID: 11407
 // Name: GiftIconTrinketsAnimation
-// Dependencies: [19, 17, 4181, 21, 4189, 4604, 1348, 3893, 712, 589, 1856, 500, 6207, 5141, 2]
+// Dependencies: [19, 17, 4181, 21, 4189, 4604, 1348, 3893, 712, 589, 1856, 500, 6204, 5141, 2]
 
-// Module 11410 (GiftIconTrinketsAnimation)
+// Module 11406 (GiftIconTrinketsAnimation)
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
@@ -35,7 +35,7 @@ const memoResult = require("noop").memo((trinketsAnimationUrl) => {
     obj = { style: null, pointerEvents: "none", children: null };
     obj[0] = enabled ? tmp2.containerRefresh : tmp2.container;
     if (APNGPlayerResult1.isAndroid()) {
-      APNGPlayer = APNGPlayer(6207).APNGPlayer;
+      APNGPlayer = APNGPlayer(6204).APNGPlayer;
       obj = { url: null, autoplay: null, style: null };
       obj[0] = trinketsAnimationUrl;
       obj[1] = !stateFromStores;

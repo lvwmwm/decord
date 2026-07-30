@@ -1,10 +1,10 @@
-// Module ID: 10305
-// Function ID: 10306
+// Module ID: 10301
+// Function ID: 10302
 // Name: MuteSettings
-// Dependencies: [19, 1372, 1862, 3826, 1874, 676, 21, 4185, 1236, 10306, 4157, 5554, 5220, 1297, 10308, 4380, 10309, 5551, 5242, 2]
+// Dependencies: [19, 1372, 1862, 3826, 1874, 676, 21, 4185, 1236, 10302, 4157, 5554, 5220, 1297, 10304, 4380, 10305, 5551, 5242, 2]
 // Exports: MuteSettingsHint, default
 
-// Module 10305 (MuteSettings)
+// Module 10301 (MuteSettings)
 import set from "set";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

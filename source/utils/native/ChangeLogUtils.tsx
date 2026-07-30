@@ -1,9 +1,9 @@
-// Module ID: 7869
-// Function ID: 7870
+// Module ID: 7866
+// Function ID: 7867
 // Name: ChangeLogLink
 // Dependencies: [19, 17, 21, 4189, 712, 5030, 4619, 4185, 3888, 2]
 
-// Module 7869 (ChangeLogLink)
+// Module 7866 (ChangeLogLink)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

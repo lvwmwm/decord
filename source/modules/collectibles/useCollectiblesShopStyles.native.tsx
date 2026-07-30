@@ -1,9 +1,9 @@
-// Module ID: 9792
-// Function ID: 9793
+// Module ID: 9789
+// Function ID: 9790
 // Name: importDefaultResult1
-// Dependencies: [5808, 712, 9793, 2]
+// Dependencies: [5808, 712, 9790, 2]
 
-// Module 9792 (importDefaultResult1)
+// Module 9789 (importDefaultResult1)
 import importDefaultResult from "tinycolor";
 import saturateResult from "Themes";
 import importDefaultResult1 from "tinycolor";

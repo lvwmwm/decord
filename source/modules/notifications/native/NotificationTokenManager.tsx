@@ -1,9 +1,9 @@
-// Module ID: 13508
-// Function ID: 13509
+// Module ID: 13503
+// Function ID: 13504
 // Name: _initialize
-// Dependencies: [17, 1212, 11508, 12772, 1218, 13509, 676, 4368, 709, 10694, 13512, 13513, 1208, 1236, 2517, 500, 13514, 698, 11507, 2]
+// Dependencies: [17, 1212, 11504, 12766, 1218, 13504, 676, 4368, 709, 10690, 13507, 13508, 1208, 1236, 2517, 500, 13509, 698, 11503, 2]
 
-// Module 13508 (_initialize)
+// Module 13503 (_initialize)
 import { NativeModules } from "expandEventProperties";
 import initialize from "initialize";
 import closure_5 from "initialize";
@@ -132,17 +132,17 @@ prototype["registerListener"] = function registerListener() {
     throw error;
   } else {
     self.hasRegisterEventListener = true;
-    const result = importDefault(10694).addRegisterEventListener(self.handleToken);
+    const result = importDefault(10690).addRegisterEventListener(self.handleToken);
   }
 };
 prototype["registerNotificationCategories"] = function registerNotificationCategories(arg0) {
-  const declarativeNotifSettingsExperiment = require(13512) /* apexExperiment */.declarativeNotifSettingsExperiment;
+  const declarativeNotifSettingsExperiment = require(13507) /* apexExperiment */.declarativeNotifSettingsExperiment;
   const config = declarativeNotifSettingsExperiment.getConfig({ location: "registerNotificationCategories" });
   let flag = false;
   try {
     if (config.enabled) {
-      flag = importDefault(13513).registerDeclarativeNotificationCategories();
-      const obj = importDefault(13513);
+      flag = importDefault(13508).registerDeclarativeNotificationCategories();
+      const obj = importDefault(13508);
     }
     const self = this;
     if (flag) {
@@ -152,8 +152,8 @@ prototype["registerNotificationCategories"] = function registerNotificationCateg
         if (config.clearDeclarative) {
           importDefault(1208).addBreadcrumb({ message: "Clearing declarative notification categories" });
           const obj3 = importDefault(1208);
-          importDefault(13513).clear();
-          const obj4 = importDefault(13513);
+          importDefault(13508).clear();
+          const obj4 = importDefault(13508);
         }
         const result1 = self.registerLegacyNotificationCategories();
       } catch (tmp12) {
@@ -245,7 +245,7 @@ prototype["trackDisabledAndroidNotifChannels"] = function trackDisabledAndroidNo
     tmp.hasTrackedDisabledAndroidNotifChannels = true;
     let obj = set(500);
     if (obj.isAndroid()) {
-      const tmp5 = importDefault(13514);
+      const tmp5 = importDefault(13509);
       let prop;
       if (tmp5 != null) {
         prop = tmp5.getAndroidNotifChannelStates;

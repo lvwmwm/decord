@@ -1,10 +1,10 @@
-// Module ID: 8391
-// Function ID: 8392
+// Module ID: 8388
+// Function ID: 8389
 // Name: CheckmarkSmallBoldIcon
 // Dependencies: [19, 21, 712, 3892, 5557, 2]
 // Exports: CheckmarkSmallBoldIcon
 
-// Module 8391 (CheckmarkSmallBoldIcon)
+// Module 8388 (CheckmarkSmallBoldIcon)
 import "noop";
 import { jsx } from "jsxProd";
 

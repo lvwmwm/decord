@@ -1,10 +1,10 @@
-// Module ID: 16651
-// Function ID: 16652
+// Module ID: 16645
+// Function ID: 16646
 // Name: _getMyContentInventory
-// Dependencies: [5, 8193, 676, 530, 4088, 709, 1236, 2]
+// Dependencies: [5, 8190, 676, 530, 4088, 709, 1236, 2]
 // Exports: deleteContentInventoryEntryHistory, getContentInventoryOutbox, getMyContentInventory, postTrackToContentInventory
 
-// Module 16651 (_getMyContentInventory)
+// Module 16645 (_getMyContentInventory)
 import dispatcher from "dispatcher";
 import { ContentInventoryFeedKey } from "ContentInventoryFeedKey";
 import { Endpoints } from "ME";
@@ -58,7 +58,7 @@ function _getMyContentInventory() {
               date = undefined;
               date = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

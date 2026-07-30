@@ -449,13 +449,13 @@ export default function _default(pressRetentionOffset) {
     return onTouchesCancelledResult.onFinalize(fn4);
   }, items9);
   const tmp22 = hitSlop;
-  if (typeof style !== "_") {
+  if (typeof style !== "ZodObject") {
     obj = { pressed: null };
     obj[0] = tmp4;
     style = style(obj);
   }
   let childrenResult = children;
-  if (typeof children !== "_") {
+  if (typeof children !== "ZodObject") {
     obj = { pressed: null };
     obj[0] = tmp4;
     childrenResult = children(obj);

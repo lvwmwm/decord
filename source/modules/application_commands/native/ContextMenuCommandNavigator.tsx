@@ -1,10 +1,10 @@
-// Module ID: 15694
-// Function ID: 15695
+// Module ID: 15688
+// Function ID: 15689
 // Name: ContextMenuCommandNavigator
-// Dependencies: [19, 17, 21, 9109, 4189, 712, 5731, 5570, 1581, 9118, 1236, 15695, 15697, 2]
+// Dependencies: [19, 17, 21, 9105, 4189, 712, 5731, 5570, 1581, 9114, 1236, 15689, 15691, 2]
 // Exports: default
 
-// Module 15694 (ContextMenuCommandNavigator)
+// Module 15688 (ContextMenuCommandNavigator)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -67,7 +67,7 @@ export default function ContextMenuCommandNavigator() {
   obj2[0] = intl.string(require(1236) /* getSystemLocale */.t.PHjkRE);
   obj1[1] = obj2;
   obj1[2] = function getComponent() {
-    return tmp(15695).default;
+    return tmp(15689).default;
   };
   const items1 = [
     callback(Screen, obj1),
@@ -82,7 +82,7 @@ export default function ContextMenuCommandNavigator() {
         return { title };
       },
       getComponent() {
-        return tmp(15697).default;
+        return tmp(15691).default;
       }
     })
   ];

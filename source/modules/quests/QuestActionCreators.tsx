@@ -1,10 +1,10 @@
-// Module ID: 9469
-// Function ID: 9470
+// Module ID: 9465
+// Function ID: 9466
 // Name: _manuallyStartConsoleQuest
-// Dependencies: [5, 8448, 5028, 4281, 5027, 5985, 5987, 5033, 676, 530, 709, 4089, 5036, 1236, 5992, 1208, 4999, 503, 9470, 8445, 8446, 8450, 6013, 6002, 9473, 5983, 9474, 5721, 6005, 9475, 4024, 9476, 698, 5962, 9478, 9479, 687, 9493, 2]
+// Dependencies: [5, 8445, 5028, 4281, 5027, 5983, 5985, 5033, 676, 530, 709, 4089, 5036, 1236, 5990, 1208, 4999, 503, 9466, 8442, 8443, 8447, 6011, 6000, 9469, 5981, 9470, 5721, 6003, 9471, 4024, 9472, 698, 5960, 9474, 9475, 687, 9489, 2]
 // Exports: claimQuestReward, clearQuestAdDecision, completeQuestPreview, dismissProgressTrackingFailureNotice, dismissQuestActivityModal, dismissQuestContent, enrollInQuest, fetchClaimedQuests, fetchCurrentQuests, fetchEarnedQuestToDeliver, fetchQuest, fetchQuestHomeHero, fetchQuestHomeHeroPreview, fetchQuestPreview, fetchQuestRewardCode, fetchQuestToDeliver, fetchVideoTranscript, manualStopConsoleQuest, manuallyStartConsoleQuest, markAdContentSeen, markAdContentUnseen, markQuestDiscovered, overrideQuestForPlacement, questsVisibleMobileMessagesChanged, resetOptimisticProgress, resetQuestDismissibilityStatus, resetQuestPreviewStatus, resetRecentQuestCompletions, selectTaskPlatform, sendHeartbeat, setAutoEnroll, updateOptimisticProgress, updatePrevRestingQuestDockMode, updateQuestDockVisibilityEligibility, updateVideoProgress
 
-// Module 9469 (_manuallyStartConsoleQuest)
+// Module 9465 (_manuallyStartConsoleQuest)
 import initializeState from "initializeState";
 import { getVisibleGuildIdsMethod } from "SidebarVisibilityMethodStore";
 import set from "set";
@@ -65,7 +65,7 @@ function _manuallyStartConsoleQuest() {
               closure_4 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -527,7 +527,7 @@ function _sendHeartbeat() {
               body = undefined;
               body = 1;
               c7 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -590,7 +590,7 @@ function _sendHeartbeat() {
               body = arg1;
               obj = callback2(709);
               const obj8 = { type: "QUESTS_SEND_HEARTBEAT_SUCCESS", userStatus: null, questId: null, streamKey: null };
-              obj2 = callback(5992);
+              obj2 = callback(5990);
               obj8[1] = obj2.questUserStatusFromServer(body.body);
               obj8[2] = callback;
               obj8[3] = callback2;
@@ -795,7 +795,7 @@ function _enrollInQuest() {
             lib = arg1;
             obj12 = { type: "QUESTS_ENROLL_SUCCESS", enrolledQuestUserStatus: null };
             const obj23 = lib(709);
-            obj12[1] = callback(5992).questUserStatusFromServer(lib.body);
+            obj12[1] = callback(5990).questUserStatusFromServer(lib.body);
             obj23.dispatch(obj12);
             obj13 = { type: null };
             obj13[0] = constants.SUCCESS;
@@ -1038,7 +1038,7 @@ function _fetchQuestRewardCode() {
             obj = lib(709);
             const obj5 = { type: "QUESTS_FETCH_REWARD_CODE_SUCCESS", questId: null, rewardCode: null };
             obj5[1] = callback;
-            obj2 = callback(5992);
+            obj2 = callback(5990);
             obj5[2] = obj2.questsRewardCodeFromServer(lib.body);
             obj.dispatch(obj5);
             c4 = 0;
@@ -1155,7 +1155,7 @@ function _dismissQuestContent() {
               lib = arg1;
               obj = lib(709);
               obj6 = { type: "QUESTS_DISMISS_CONTENT_SUCCESS", dismissedQuestUserStatus: null };
-              obj2 = callback(5992);
+              obj2 = callback(5990);
               obj6[1] = obj2.questUserStatusFromServer(lib.body);
               obj.dispatch(obj6);
               c5 = 0;
@@ -1232,7 +1232,7 @@ function _completeQuestPreview() {
               body = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -1375,7 +1375,7 @@ function _resetQuestPreviewStatus() {
               lib = arg1;
               obj = lib(709);
               obj4 = { type: "QUESTS_PREVIEW_UPDATE_SUCCESS", previewQuestUserStatus: null };
-              obj2 = callback(5992);
+              obj2 = callback(5990);
               obj4[1] = obj2.questUserStatusFromServer(lib.body);
               obj.dispatch(obj4);
               c4 = 0;
@@ -1474,7 +1474,7 @@ function _resetQuestDismissibilityStatus() {
               lib = arg1;
               obj = lib(709);
               obj4 = { type: "QUESTS_PREVIEW_UPDATE_SUCCESS", previewQuestUserStatus: null };
-              obj2 = callback(5992);
+              obj2 = callback(5990);
               obj4[1] = obj2.questUserStatusFromServer(lib.body);
               obj.dispatch(obj4);
               c4 = 0;
@@ -1691,16 +1691,16 @@ function _fetchQuestToDeliver() {
                 const obj3 = { wasSuccessful: false, currentFetchedAt: null };
                 throwTypeErrorResult = dependencyMap;
                 obj3[1] = dependencyMap;
-                throwTypeErrorResult = callback2(9474).recordQuestRequestApiResponse("/quests/decision", obj3);
+                throwTypeErrorResult = callback2(9470).recordQuestRequestApiResponse("/quests/decision", obj3);
                 throwTypeErrorResult = callback2;
                 throwTypeErrorResult = dependencyMap;
-                const obj20 = callback2(9474);
+                const obj20 = callback2(9470);
                 throwTypeErrorResult = result;
                 const obj4 = {};
                 throwTypeErrorResult = callback2;
                 throwTypeErrorResult = dependencyMap;
                 throwTypeErrorResult = obj4;
-                throwTypeErrorResult = Object.assign(callback2(5962)());
+                throwTypeErrorResult = Object.assign(callback2(5960)());
                 throwTypeErrorResult = undefined;
                 if (message != null) {
                   throwTypeErrorResult = message.message;
@@ -1756,7 +1756,7 @@ function _fetchQuestToDeliver() {
                   c3 = body;
                   throwTypeErrorResult = callback;
                   throwTypeErrorResult = dependencyMap;
-                  let obj16 = callback(6005);
+                  let obj16 = callback(6003);
                   guildsTree = 3;
                   c9 = 1;
                   let obj7 = { value: null, done: false };
@@ -1779,7 +1779,7 @@ function _fetchQuestToDeliver() {
                   lib = body;
                   throwTypeErrorResult = callback;
                   throwTypeErrorResult = dependencyMap;
-                  const LessPersonalizedAdsExperiment = callback(9475).LessPersonalizedAdsExperiment;
+                  const LessPersonalizedAdsExperiment = callback(9471).LessPersonalizedAdsExperiment;
                   enabled = LessPersonalizedAdsExperiment.getConfig({ location: "QuestActionCreators.fetchQuestToDeliver" });
                   throwTypeErrorResult = lib;
                   throwTypeErrorResult = lib();
@@ -1883,15 +1883,15 @@ function _fetchQuestToDeliver() {
                 creative = body.creative;
                 throwTypeErrorResult = creative;
                 if (null != creative) {
-                  if (creative.creative_type === callback(6013).AdCreativeType.QUEST) {
-                    obj1 = callback(5992);
+                  if (creative.creative_type === callback(6011).AdCreativeType.QUEST) {
+                    obj1 = callback(5990);
                     result = obj1.questConfigFromServer(creative.creative_content);
                   }
                 } else {
                   quest = body.quest;
                   result = undefined;
                   if (null != quest) {
-                    obj = callback(5992);
+                    obj = callback(5990);
                     result = obj.questConfigFromServer(quest);
                   }
                 }
@@ -1945,7 +1945,7 @@ function _fetchQuestToDeliver() {
                 obj14[7] = callback;
                 obj14[8] = dependencyMap;
                 obj2.dispatch(obj14);
-                obj5 = callback2(9474);
+                obj5 = callback2(9470);
                 obj16 = { wasSuccessful: true, adRequestId: null, currentQuestId: null, currentFetchedAt: null };
                 const _String = String;
                 obj16[1] = String(body.request_id);
@@ -1967,12 +1967,12 @@ function _fetchQuestToDeliver() {
                   throwTypeErrorResult = callback;
                   throwTypeErrorResult = dependencyMap;
                   if (callback === callback(5036).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA) {
-                    obj7 = callback2(9476);
+                    obj7 = callback2(9472);
                     obj7.startTracking(result.id);
                   }
                   obj8 = callback2(698);
                   const obj17 = {};
-                  const merged = Object.assign(callback2(5962)());
+                  const merged = Object.assign(callback2(5960)());
                   obj17.quest_id = result.id;
                   obj17.caller_source = callback2;
                   const _String2 = String;
@@ -2073,8 +2073,8 @@ function _fetchEarnedQuestToDeliver() {
                 if (0 !== found.length) {
                   const _Date = Date;
                   c3 = Date.now();
-                  const result = callback2(9478).recordEarnedRequestAttempt(tmp74, tmp75);
-                  const obj16 = callback2(9478);
+                  const result = callback2(9474).recordEarnedRequestAttempt(tmp74, tmp75);
+                  const obj16 = callback2(9474);
                   const obj1 = { type: "QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_BEGIN", content: null };
                   obj1[1] = tmp74;
                   callback2(709).dispatch(obj1);
@@ -2339,7 +2339,7 @@ function _fetchVideoTranscript() {
               text = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {
@@ -2580,7 +2580,7 @@ function _fetchQuestPreview() {
             obj = lib(709);
             const obj5 = { type: "QUESTS_FETCH_PREVIEW_SUCCESS", questId: null, quest: null };
             obj5[1] = callback;
-            obj2 = callback(5992);
+            obj2 = callback(5990);
             obj5[2] = obj2.questWithUserStatusFromServer(lib.body);
             obj.dispatch(obj5);
             c4 = 0;

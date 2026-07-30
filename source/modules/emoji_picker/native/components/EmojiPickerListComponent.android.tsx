@@ -1,8 +1,8 @@
-// Module ID: 9399
-// Function ID: 9400
-// Dependencies: [19, 5048, 5052, 9339, 1338, 21, 4189, 4050, 9400, 5245, 1577, 3830, 9255, 9389, 2]
+// Module ID: 9395
+// Function ID: 9396
+// Dependencies: [19, 5048, 5052, 9335, 1338, 21, 4189, 4050, 9396, 5245, 1577, 3830, 9251, 9385, 2]
 
-// Module 9399
+// Module 9395
 import importAllResult from "noop";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import { EmojiCategoryTypes } from "EmojiCategoryTypes";
@@ -79,7 +79,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations, ref) =>
         tmp = analyticsLocations < 0;
       }
       if (!tmp) {
-        tmp = f82423;
+        tmp = f82445;
       }
       if (!tmp) {
         num2 = 0;

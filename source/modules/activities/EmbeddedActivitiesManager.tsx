@@ -1,10 +1,10 @@
-// Module ID: 10612
-// Function ID: 10613
+// Module ID: 10608
+// Function ID: 10609
 // Name: getShelfItemTrackingProperties
-// Dependencies: [5, 4202, 1376, 1218, 1372, 4261, 1931, 1874, 10613, 1371, 676, 8018, 500, 530, 3807, 10614, 10615, 698, 10617, 10637, 10621, 4383, 514, 1856, 5705, 4368, 1231, 709, 10466, 5689, 10638, 5516, 10533, 1236, 10605, 5696, 10640, 10642, 1906, 5535, 2]
+// Dependencies: [5, 4202, 1376, 1218, 1372, 4261, 1931, 1874, 10609, 1371, 676, 8015, 500, 530, 3807, 10610, 10611, 698, 10613, 10633, 10617, 4383, 514, 1856, 5705, 4368, 1231, 709, 10462, 5689, 10634, 5516, 10529, 1236, 10601, 5696, 10636, 10638, 1906, 5535, 2]
 // Exports: getActiveAnalyticsSessionIDs, trackFrameSessionEnd, trackFrameSessionStart
 
-// Module 10612 (getShelfItemTrackingProperties)
+// Module 10608 (getShelfItemTrackingProperties)
 import createRTCConnection from "createRTCConnection";
 import getParticipants from "getParticipants";
 import { GUILD_VOCAL_CHANNEL_TYPES } from "createChannelRecord";
@@ -30,8 +30,8 @@ function getShelfItemTrackingProperties(activity) {
     activity = activity.activity;
     if (activity != null) {
       const obj = require(500) /* set */;
-      releasePhase = activity.client_platform_config[importDefault(8018)(undefined, obj.getOS(obj))].release_phase;
-      const tmp4 = importDefault(8018);
+      releasePhase = activity.client_platform_config[importDefault(8015)(undefined, obj.getOS(obj))].release_phase;
+      const tmp4 = importDefault(8015);
     }
   }
   return { releasePhase };
@@ -150,10 +150,10 @@ function _handleActivityClose() {
             const obj5 = { applicationId: null, activityConfigs: null };
             obj5[0] = callback;
             obj5[1] = currentUser;
-            activity = lib(10614)(obj5);
+            activity = lib(10610)(obj5);
             releasePhase = callback2(activity).releasePhase;
-            constants = lib(10615).getRawThermalState();
-            const obj13 = lib(10615);
+            constants = lib(10611).getRawThermalState();
+            const obj13 = lib(10611);
             const obj6 = { channel_id: null, guild_id: null, media_session_id: null, activity_session_id: null, application_id: null, duration_ms: null, user_premium_tier: null, raw_thermal_state: null, release_phase: null, shelf_rank: null, activity_user_session_id: null, channel_type: null, media_session_ids: null, embedded_activity_location_kind: null };
             obj6[0] = sessionId;
             obj6[1] = channel;
@@ -231,11 +231,11 @@ function handleOpenEmbeddedActivity(applicationId) {
   let participants;
   applicationId = applicationId.applicationId;
   ({ isStart, participants, embeddedActivity, location: _location, inviterUserId } = applicationId);
-  let obj = applicationId(10617);
+  let obj = applicationId(10613);
   obj.leaveCurrentFrame();
-  let obj1 = applicationId(10637);
+  let obj1 = applicationId(10633);
   if (obj1.tryLaunchAsFrame({ applicationId })) {
-    let tmpResult = tmp(10621);
+    let tmpResult = tmp(10617);
     obj = { isStart: null, inviterUserId: null, channelId: null, guildId: null, locationKind: null, launchId: null, compositeInstanceId: null, activitiesInfraVersion: null };
     obj[0] = isStart;
     obj[1] = inviterUserId;
@@ -307,18 +307,18 @@ function handleOpenEmbeddedActivity(applicationId) {
             obj = { applicationId: null, activityConfigs: null };
             obj[0] = applicationId;
             obj[1] = shelfActivities;
-            const tmp53 = importDefault(10614)(obj);
+            const tmp53 = importDefault(10610)(obj);
             const sum = 1 + shelfOrder.findIndex((arg0) => arg0 === applicationId);
             let release_phase;
             if (tmp53 != null) {
               const activity = tmp53.activity;
               if (activity != null) {
-                let tmp52Result = tmp52(8018);
+                let tmp52Result = tmp52(8015);
                 const tmpResult5 = tmp(500);
                 release_phase = activity.client_platform_config[tmp52Result(undefined, tmpResult5.getOS(tmpResult5))].release_phase;
               }
             }
-            tmp52Result = tmp52(10615);
+            tmp52Result = tmp52(10611);
             const rawThermalState = tmp52Result.getRawThermalState();
             if (null != mediaSessionId) {
               const items = [mediaSessionId];
@@ -454,7 +454,7 @@ let c27;
 class EmbeddedActivitiesManager extends tmp3 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    f107289 = applyArgumentsResult;
+    f107301 = applyArgumentsResult;
     applyArgumentsResult.handleSelectedChannelUpdate = function handleSelectedChannelUpdate() {
       let _location;
       let applicationId;
@@ -534,9 +534,9 @@ class EmbeddedActivitiesManager extends tmp3 {
         const result = lib.showDevShelfOverrideEnabled();
       }
     };
-    f107289 = undefined;
+    f107301 = undefined;
     closure_1 = applyArgumentsResult;
-    f107289 = handleOpenEmbeddedActivity((arg0) => {
+    f107301 = handleOpenEmbeddedActivity((arg0) => {
       let closure_0 = arg0;
       let c4 = 0;
       let c5 = 0;
@@ -590,7 +590,7 @@ class EmbeddedActivitiesManager extends tmp3 {
                 let rawThermalState;
                 c4 = 1;
                 c5 = 1;
-                return { value: "ct", done: null };
+                return { value: "ct", done: "Array" };
               }
             } else if (1 === tmp5) {
               if (arg0 === 1) {
@@ -737,9 +737,9 @@ class EmbeddedActivitiesManager extends tmp3 {
         lib.leaveActivity(obj);
       }
     };
-    f107289 = undefined;
+    f107301 = undefined;
     closure_1 = applyArgumentsResult;
-    f107289 = handleOpenEmbeddedActivity((arg0) => {
+    f107301 = handleOpenEmbeddedActivity((arg0) => {
       let closure_0 = arg0;
       let c5 = 0;
       let c6 = 0;
@@ -796,7 +796,7 @@ class EmbeddedActivitiesManager extends tmp3 {
                 let launchId;
                 set = 1;
                 applicationId = 1;
-                return { value: "ct", done: null };
+                return { value: "ct", done: "Array" };
               }
             } else {
               if (1 === getChannel) {
@@ -1219,7 +1219,7 @@ export const trackFrameSessionStart = function trackFrameSessionStart(applicatio
   let launchId;
   let locationKind;
   const _require = applicationId;
-  let obj = _require(10621);
+  let obj = _require(10617);
   const result = obj.consumePendingFrameLaunch(applicationId);
   if (null != result) {
     ({ isStart, channelId, guildId, locationKind, launchId, compositeInstanceId, activitiesInfraVersion } = result);
@@ -1255,18 +1255,18 @@ export const trackFrameSessionStart = function trackFrameSessionStart(applicatio
       obj = { applicationId: null, activityConfigs: null };
       obj[0] = applicationId;
       obj[1] = shelfActivities;
-      const tmp15 = importDefault(10614)(obj);
+      const tmp15 = importDefault(10610)(obj);
       const sum = 1 + shelfOrder.findIndex((arg0) => arg0 === closure_0);
       let release_phase;
       if (tmp15 != null) {
         const activity = tmp15.activity;
         if (activity != null) {
-          let tmp14Result = tmp14(8018);
+          let tmp14Result = tmp14(8015);
           tmpResult = tmp(500);
           release_phase = activity.client_platform_config[tmp14Result(undefined, tmpResult.getOS(tmpResult))].release_phase;
         }
       }
-      tmp14Result = tmp14(10615);
+      tmp14Result = tmp14(10611);
       const rawThermalState = tmp14Result.getRawThermalState();
       const obj1 = { channel_id: null, guild_id: null, media_session_id: null, activity_session_id: null, application_id: null, location_stack: null, user_premium_tier: null, raw_thermal_state: null, n_participants: null, is_activity_start: null, release_phase: null, shelf_rank: null, shelf_sorted_rank: null, activity_user_session_id: null, channel_type: null, source: null, command_context_type: null, invite_inviter_id: null, interaction_id: null, embedded_activity_location_kind: null };
       obj1[0] = channelId;
@@ -1390,17 +1390,17 @@ export const trackFrameSessionEnd = function trackFrameSessionEnd(applicationId)
       let obj = { applicationId: null, activityConfigs: null };
       obj[0] = applicationId;
       obj[1] = shelfActivities;
-      const tmp13 = importDefault(10614)(obj);
+      const tmp13 = importDefault(10610)(obj);
       let release_phase;
       if (tmp13 != null) {
         const activity = tmp13.activity;
         if (activity != null) {
-          let tmp11Result = tmp11(8018);
+          let tmp11Result = tmp11(8015);
           const obj2 = require(500) /* set */;
           release_phase = activity.client_platform_config[tmp11Result(undefined, obj2.getOS(obj2))].release_phase;
         }
       }
-      tmp11Result = tmp11(10615);
+      tmp11Result = tmp11(10611);
       const rawThermalState = tmp11Result.getRawThermalState();
       let diff = null;
       if (null != tmp3.connectedSince) {

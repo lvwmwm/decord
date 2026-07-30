@@ -1,10 +1,10 @@
-// Module ID: 12186
-// Function ID: 12187
+// Module ID: 12180
+// Function ID: 12181
 // Name: UserProfileGameFriendsCard
-// Dependencies: [19, 21, 4189, 5521, 1236, 11721, 5562, 4185, 2]
+// Dependencies: [19, 21, 4189, 5521, 1236, 11717, 5562, 4185, 2]
 // Exports: default
 
-// Module 12186 (UserProfileGameFriendsCard)
+// Module 12180 (UserProfileGameFriendsCard)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -32,7 +32,7 @@ export default function UserProfileGameFriendsCard(arg0) {
       const intl2 = found(1236).intl;
       let obj = { applicationName: null };
       obj[0] = function applicationName() {
-        return lib(textmdnormal(11721), { application: found[0], textVariant: textmdnormal, iconSize: 16 }, found[0].id);
+        return lib(textmdnormal(11717), { application: found[0], textVariant: textmdnormal, iconSize: 16 }, found[0].id);
       };
       let formatResult = intl2.format(found(1236).t.wQ6urw, obj);
       let tmp6 = found;
@@ -40,10 +40,10 @@ export default function UserProfileGameFriendsCard(arg0) {
       const intl = found(1236).intl;
       obj = { applicationName: null, applicationName2: null };
       obj[0] = function applicationName() {
-        return lib(textmdnormal(11721), { application: found[0], textVariant: textmdnormal, iconSize: 16 }, found[0].id);
+        return lib(textmdnormal(11717), { application: found[0], textVariant: textmdnormal, iconSize: 16 }, found[0].id);
       };
       obj[1] = function applicationName2() {
-        return lib(textmdnormal(11721), { application: found[1], textVariant: textmdnormal, iconSize: 16 }, found[1].id);
+        return lib(textmdnormal(11717), { application: found[1], textVariant: textmdnormal, iconSize: 16 }, found[1].id);
       };
       formatResult = intl.format(found(1236).t.C98CSN, obj);
       tmp6 = found;
@@ -56,7 +56,7 @@ export default function UserProfileGameFriendsCard(arg0) {
         return lib.map((application) => outer1_3(outer1_1(outer1_2[5]), { application, useComma: true, textVariant: closure_1, iconSize: 16 }, application.id));
       };
       obj[1] = function applicationNameLast() {
-        return lib(textmdnormal(11721), { application: dependencyMap, textVariant: textmdnormal, iconSize: 16 });
+        return lib(textmdnormal(11717), { application: dependencyMap, textVariant: textmdnormal, iconSize: 16 });
       };
       formatResult = intl4.format(found(1236).t.UxpwAh, obj);
       tmp6 = found;

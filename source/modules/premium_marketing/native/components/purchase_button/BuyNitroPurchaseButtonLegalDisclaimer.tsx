@@ -1,10 +1,10 @@
-// Module ID: 6662
-// Function ID: 6663
+// Module ID: 6659
+// Function ID: 6660
 // Name: BuyNitroPurchaseButtonLegalDisclaimer
 // Dependencies: [19, 676, 21, 4189, 712, 1236, 500, 3835, 1945, 4185, 2]
 // Exports: default
 
-// Module 6662 (BuyNitroPurchaseButtonLegalDisclaimer)
+// Module 6659 (BuyNitroPurchaseButtonLegalDisclaimer)
 import "noop";
 import ME from "ME";
 import { jsx } from "jsxProd";

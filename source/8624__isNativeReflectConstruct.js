@@ -1,7 +1,7 @@
 // Module ID: 8624
 // Function ID: 8625
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8625, 8546, 8555]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8625, 8541, 8552]
 
 // Module 8624 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const Rect = arg1;
+const Symbol = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class Rect {
+class Symbol {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, Rect);
+    tmp = _isNativeReflectConstruct(this, Symbol);
     tmp2 = __esModule;
-    obj = __esModule(Rect);
+    obj = __esModule(Symbol);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,30 +51,31 @@ class Rect {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Rect, require("_isNativeReflectConstruct"));
+require("_inherits")(Symbol, require("_isNativeReflectConstruct"));
 const items = [
   {
     key: "render",
     value: function render() {
       const self = this;
       const props = this.props;
-      let obj = { x: props.x, y: props.y, width: props.width, height: props.height, rx: props.rx, ry: props.ry };
+      let obj = { name: props.id };
       obj = {
         ref(arg0) {
           return self.refMethod(arg0);
         }
       };
-      const tmp = importDefault(8625);
-      const merged = Object.assign(self(8546).withoutXY(this, props));
-      const merged1 = Object.assign(obj);
-      return <tmp ref={function ref(arg0) {
-        return self.refMethod(arg0);
-      }} />;
+      const merged = Object.assign(obj);
+      const merged1 = Object.assign(self(8541)(props));
+      obj.children = props.children;
+      return jsx(self(8625), {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      });
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Rect, items);
-importDefaultResultResult.displayName = "Rect";
-importDefaultResultResult.defaultProps = { x: 0, y: 0, width: 0, height: 0 };
+const importDefaultResultResult = importDefaultResult(Symbol, items);
+importDefaultResultResult.displayName = "Symbol";
 
 export default importDefaultResultResult;

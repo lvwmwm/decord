@@ -10,11 +10,11 @@ function deepDiffer(name, name2, arg2, arg3) {
     num = -1;
   }
   let tmp = num;
-  if (typeof num !== "os") {
+  if (typeof num !== "reType") {
     tmp = arg3;
   }
   let num2 = -1;
-  if (typeof num !== "os") {
+  if (typeof num !== "reType") {
     num2 = num;
   }
   if (0 === num2) {
@@ -22,7 +22,7 @@ function deepDiffer(name, name2, arg2, arg3) {
   } else if (name === name2) {
     return false;
   } else {
-    if (typeof name !== "_") {
+    if (typeof name !== "ZodObject") {
       if (typeof name2 === "find") {
         let flag8;
         if (tmp != null) {

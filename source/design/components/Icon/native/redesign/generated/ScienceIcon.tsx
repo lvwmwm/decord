@@ -1,10 +1,10 @@
-// Module ID: 15348
-// Function ID: 15349
+// Module ID: 15342
+// Function ID: 15343
 // Name: ScienceIcon
-// Dependencies: [19, 21, 712, 3892, 10997, 2]
+// Dependencies: [19, 21, 712, 3892, 10993, 2]
 // Exports: ScienceIcon
 
-// Module 15348 (ScienceIcon)
+// Module 15342 (ScienceIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ScienceIcon = function ScienceIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10997) /* registerAsset */;
+  obj[0] = require(10993) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

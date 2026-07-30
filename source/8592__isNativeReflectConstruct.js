@@ -1,7 +1,7 @@
 // Module ID: 8592
 // Function ID: 8593
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 8547, 8570]
+// Dependencies: [41, 42, 93, 95, 98, 19, 8544]
 
 // Module 8592 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -9,7 +9,7 @@ import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
 
-const FeMorphology = arg1;
+const FeSpotLight = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeMorphology {
+class FeSpotLight {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeMorphology);
+    tmp = _isNativeReflectConstruct(this, FeSpotLight);
     tmp2 = __esModule;
-    obj = __esModule(FeMorphology);
+    obj = __esModule(FeSpotLight);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -49,19 +49,18 @@ class FeMorphology {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeMorphology, require("_isNativeReflectConstruct"));
-let obj = {
-  key: "render",
-  value: function render() {
-    const result = FeMorphology(8547).warnUnimplementedFilter();
-    return null;
+require("_inherits")(FeSpotLight, require("noop").Component);
+const items = [
+  {
+    key: "render",
+    value: function render() {
+      const result = FeSpotLight(8544).warnUnimplementedFilter();
+      return null;
+    }
   }
-};
-const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeMorphology, items);
-importDefaultResultResult.displayName = "FeMorphology";
-obj = {};
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-importDefaultResultResult.defaultProps = obj;
+];
+const importDefaultResultResult = importDefaultResult(FeSpotLight, items);
+importDefaultResultResult.displayName = "FeSpotLight";
+importDefaultResultResult.defaultProps = {};
 
 export default importDefaultResultResult;

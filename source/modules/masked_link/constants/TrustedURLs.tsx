@@ -1,9 +1,9 @@
-// Module ID: 12292
-// Function ID: 12293
+// Module ID: 12286
+// Function ID: 12287
 // Name: set1
 // Dependencies: [2]
 
-// Module 12292 (set1)
+// Module 12286 (set1)
 import set from "set";
 
 let set = new Set(["https://account.riotgames.com/#connected-accounts", "https://aes.sgp.pvp.net/providers/discord/link/v1", "https://aes.sgp.pvp.net/providers/discord/link/v1?origin=Discord", "https://marvelrivals.com/discord", "https://wutheringwaves-dc.kurogames-global.com/", "https://id.embark.games/id/connected-platforms", "https://myaccount.ea.com/am/ui/connected-accounts", "https://playbpsr.com/discord_bind", "https://infinitynikki.infoldgames.com/proj/dcbd.html", "https://vrchat.com/home/profile", "https://account.1047games.com/", "https://discord.facepunch.com/"]);

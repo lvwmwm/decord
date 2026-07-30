@@ -1,10 +1,10 @@
-// Module ID: 11691
-// Function ID: 11692
+// Module ID: 11687
+// Function ID: 11688
 // Name: UserSettingsAuthedAppDeleteWarningModal
-// Dependencies: [21, 10895, 1236, 11692, 8055, 4533, 2]
+// Dependencies: [21, 10891, 1236, 11688, 8052, 4533, 2]
 // Exports: default
 
-// Module 11691 (UserSettingsAuthedAppDeleteWarningModal)
+// Module 11687 (UserSettingsAuthedAppDeleteWarningModal)
 import jsxProd from "jsxProd";
 
 let c3;
@@ -18,7 +18,7 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
   let scopes;
   application = application.application;
   ({ scopes, onDelete } = application);
-  let obj = require(10895) /* isSocialLayerApplication */;
+  let obj = require(10891) /* isSocialLayerApplication */;
   const result = obj.isSocialLayerSDKAuthorization(application, scopes);
   const intl = require(1236) /* getSystemLocale */.intl;
   if (result) {
@@ -40,10 +40,10 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
     obj1[0] = application.name;
     formatToPlainStringResult1 = formatToPlainString(t.QWGvxA, obj1);
   }
-  let tmp9 = importDefault(11692)(application.id);
+  let tmp9 = importDefault(11688)(application.id);
   if (tmp9) {
     const obj2 = { children: null };
-    let tmp8Result = tmp8(8055);
+    let tmp8Result = tmp8(8052);
     const intl3 = tmp(1236).intl;
     const obj3 = { applicationName: null };
     obj3[0] = application.name;
@@ -54,8 +54,8 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
   let tmp12 = result;
   if (result) {
     const obj4 = { look: null, children: null };
-    tmp8Result = tmp8(8055);
-    obj4[0] = tmp(8055).InfoBoxLooks.WARNING;
+    tmp8Result = tmp8(8052);
+    obj4[0] = tmp(8052).InfoBoxLooks.WARNING;
     const intl4 = tmp(1236).intl;
     obj4[1] = intl4.string(tmp(1236).t.LY35Zy);
     tmp12 = callback(tmp8Result, obj4);

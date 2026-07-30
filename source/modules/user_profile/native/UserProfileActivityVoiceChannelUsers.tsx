@@ -1,10 +1,10 @@
-// Module ID: 12019
-// Function ID: 12020
+// Module ID: 12013
+// Function ID: 12014
 // Name: UserRow
-// Dependencies: [19, 4276, 21, 9086, 589, 5220, 4379, 1297, 11697, 1236, 2]
+// Dependencies: [19, 4276, 21, 9082, 589, 5220, 4379, 1297, 11693, 1236, 2]
 // Exports: default
 
-// Module 12019 (UserRow)
+// Module 12013 (UserRow)
 import "noop";
 import sortActivity from "sortActivity";
 import { jsx } from "jsxProd";
@@ -20,7 +20,7 @@ function UserRow(user) {
   user = user.user;
   const channel = user.channel;
   ({ onPress, start, end } = user);
-  let obj = user(9086);
+  let obj = user(9082);
   const avatarDecoration = obj.useAvatarDecoration(user, channel.guild_id);
   const items = [sortActivity];
   const stateFromStoresObject = user(589).useStateFromStoresObject(items, () => ({ status: outer1_3.getStatus(user.id), isMobileOnline: outer1_3.isMobileOnline(user.id), isVROnline: outer1_3.isVROnline(user.id) }));
@@ -70,7 +70,7 @@ export default function UserProfileActivityVoiceChannelUsers(arg0) {
       }, item.id);
     }
   };
-  obj[3] = jsx(require(11697) /* UserProfileStackedActionSheet */.UserProfileStackedActionSheetList, {
+  obj[3] = jsx(require(11693) /* UserProfileStackedActionSheet */.UserProfileStackedActionSheetList, {
     data: users,
     keyExtractor(id) {
       return id.id;
@@ -88,7 +88,7 @@ export default function UserProfileActivityVoiceChannelUsers(arg0) {
       }, item.id);
     }
   });
-  return jsx(importDefault(11697), {
+  return jsx(importDefault(11693), {
     data: users,
     keyExtractor(id) {
       return id.id;

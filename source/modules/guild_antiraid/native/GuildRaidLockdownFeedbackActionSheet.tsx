@@ -1,10 +1,10 @@
-// Module ID: 11022
-// Function ID: 11023
+// Module ID: 11018
+// Function ID: 11019
 // Name: GuildRaidLockdownFeedbackActionSheet
-// Dependencies: [32, 19, 676, 21, 4189, 1236, 5774, 4157, 5551, 5242, 5638, 5554, 9092, 7644, 4600, 4384, 2]
+// Dependencies: [32, 19, 676, 21, 4189, 1236, 5774, 4157, 5551, 5242, 5638, 5554, 9088, 7641, 4600, 4384, 2]
 // Exports: default
 
-// Module 11022 (GuildRaidLockdownFeedbackActionSheet)
+// Module 11018 (GuildRaidLockdownFeedbackActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { AnalyticEvents } from "ME";
@@ -85,7 +85,7 @@ export default function GuildRaidLockdownFeedbackActionSheet(guildId) {
     };
     obj[1] = first.includes(value);
     obj[2] = value.text;
-    return outer1_6(guildId(9092).TableCheckboxRow, obj, value);
+    return outer1_6(guildId(9088).TableCheckboxRow, obj, value);
   });
   const items1 = [callback(guildId(5554).TableRowGroup, obj8), , ];
   let hasItem = first.includes(guildId(5774).RaidLockdownFeedbackType.OTHER);
@@ -97,7 +97,7 @@ export default function GuildRaidLockdownFeedbackActionSheet(guildId) {
     obj9[3] = function onChange(arg0) {
       callback(arg0);
     };
-    hasItem = tmp7(tmp5(7644).TextArea, obj9);
+    hasItem = tmp7(tmp5(7641).TextArea, obj9);
   }
   items1[1] = hasItem;
   const obj10 = {

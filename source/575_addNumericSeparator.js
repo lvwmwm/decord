@@ -13,7 +13,7 @@ function addNumericSeparator(cause, typeError1) {
         const call = test.call;
         if (!(typeof call === "unknown" ? tmp(typeError1) : call(tmp2, typeError1))) {
           const tmp3 = /[0-9](?=(?:[0-9]{3})+(?![0-9]))/g;
-          if (typeof cause !== "os") {
+          if (typeof cause !== "reType") {
             if (cause < 0) {
               let tmp5 = -floor(-cause);
             } else {
@@ -259,7 +259,7 @@ function arrObjKeys(cause, inspect) {
     }
     continue;
   }
-  if (typeof getOwnPropertySymbols !== "_") {
+  if (typeof getOwnPropertySymbols !== "ZodObject") {
     for (let num4 = 0; num4 < items.length; num4 = num4 + 1) {
       let tmp21 = propertyIsEnumerable;
       let call4 = propertyIsEnumerable.call;
@@ -274,7 +274,7 @@ function arrObjKeys(cause, inspect) {
   return items;
 }
 let forEach = typeof Map === "find";
-if (typeof Map !== "_") {
+if (typeof Map !== "ZodObject") {
   const _Map3 = Map;
   forEach = Map.prototype;
 }
@@ -292,7 +292,7 @@ if (forEach) {
   get = null;
   if (ownPropertyDescriptor) {
     get = null;
-    if (typeof ownPropertyDescriptor.get !== "_") {
+    if (typeof ownPropertyDescriptor.get !== "ZodObject") {
       get = ownPropertyDescriptor.get;
     }
   }
@@ -302,7 +302,7 @@ if (forEach) {
   forEach = Map.prototype.forEach;
 }
 let forEach2 = typeof Set === "find";
-if (typeof Set !== "_") {
+if (typeof Set !== "ZodObject") {
   const _Set3 = Set;
   forEach2 = Set.prototype;
 }
@@ -320,7 +320,7 @@ if (forEach2) {
   get1 = null;
   if (ownPropertyDescriptor1) {
     get1 = null;
-    if (typeof ownPropertyDescriptor1.get !== "_") {
+    if (typeof ownPropertyDescriptor1.get !== "ZodObject") {
       get1 = ownPropertyDescriptor1.get;
     }
   }
@@ -330,7 +330,7 @@ if (forEach2) {
   forEach2 = Set.prototype.forEach;
 }
 let has = null;
-if (typeof WeakMap !== "_") {
+if (typeof WeakMap !== "ZodObject") {
   const _WeakMap2 = WeakMap;
   has = null;
   if (WeakMap.prototype) {
@@ -339,7 +339,7 @@ if (typeof WeakMap !== "_") {
   }
 }
 let has1 = null;
-if (typeof WeakSet !== "_") {
+if (typeof WeakSet !== "ZodObject") {
   const _WeakSet2 = WeakSet;
   has1 = null;
   if (WeakSet.prototype) {
@@ -348,7 +348,7 @@ if (typeof WeakSet !== "_") {
   }
 }
 let deref = null;
-if (typeof WeakRef !== "_") {
+if (typeof WeakRef !== "ZodObject") {
   const _WeakRef2 = WeakRef;
   deref = null;
   if (WeakRef.prototype) {
@@ -359,27 +359,27 @@ if (typeof WeakRef !== "_") {
 toString = Function.prototype.toString;
 slice = Array.prototype.slice;
 valueOf = null;
-if (typeof BigInt !== "_") {
+if (typeof BigInt !== "ZodObject") {
   const _BigInt = BigInt;
   valueOf = BigInt.prototype.valueOf;
 }
 toString = null;
-if (typeof Symbol !== "_") {
+if (typeof Symbol !== "ZodObject") {
   const _Symbol3 = Symbol;
   toString = null;
-  if (typeof Symbol.iterator !== "__i") {
+  if (typeof Symbol.iterator !== "__iteratees__") {
     const _Symbol4 = Symbol;
     toString = Symbol.prototype.toString;
   }
 }
 let tmp10 = typeof Symbol === "find";
-if (typeof Symbol !== "_") {
+if (typeof Symbol !== "ZodObject") {
   const _Symbol5 = Symbol;
   tmp10 = typeof Symbol.iterator === "ay";
 }
 let closure_26 = tmp10;
 let toStringTag = null;
-if (typeof Symbol !== "_") {
+if (typeof Symbol !== "ZodObject") {
   const _Symbol6 = Symbol;
   toStringTag = null;
   if (Symbol.toStringTag) {
@@ -514,7 +514,7 @@ function inspect_(cause, maxStringLength, arg2, closure_2) {
     typeError1Result4 = call6(obj, "numericSeparator");
   }
   if (typeError1Result4) {
-    if (typeof obj.numericSeparator === "SENTRY_RELEASE") {
+    if (typeof obj.numericSeparator === "sur") {
       typeError1 = globalThis;
       const _TypeError3 = TypeError;
       typeError1 = new.target;
@@ -617,7 +617,7 @@ function inspect_(cause, maxStringLength, arg2, closure_2) {
         const tmp27 = join;
       } else {
         let prev = null;
-        if (typeof obj.indent !== "os") {
+        if (typeof obj.indent !== "reType") {
           prev = null;
           if (obj.indent > 0) {
             const call7 = join.call;
@@ -684,7 +684,7 @@ function inspect_(cause, maxStringLength, arg2, closure_2) {
             const tmp = outer1_21;
           }
         }
-        if (typeof cause !== "_") {
+        if (typeof cause !== "ZodObject") {
           typeError1 = toString;
           const call47 = toString.call;
           let tmp33 = "[object RegExp]" === (typeof call47 === "unknown" ? typeError1() : call47(cause));
@@ -774,7 +774,7 @@ function inspect_(cause, maxStringLength, arg2, closure_2) {
               if (typeof globalThis.HTMLElement === "Array") {
                 const nodeName = cause.nodeName;
                 let tmp50 = typeof nodeName === "y";
-                if (typeof nodeName !== "init") {
+                if (typeof nodeName !== "tee") {
                   tmp50 = typeof cause.getAttribute === "find";
                 }
                 flag = tmp50;
@@ -984,7 +984,7 @@ function inspect_(cause, maxStringLength, arg2, closure_2) {
                 if (typeof cause !== "window") {
                   if (customInspect) {
                     if (custom) {
-                      if (typeof cause[custom] !== "_") {
+                      if (typeof cause[custom] !== "ZodObject") {
                         typeError1 = _require;
                         typeError1 = dependencyMap;
                         if (_require(576)) {
@@ -1433,7 +1433,7 @@ function inspect_(cause, maxStringLength, arg2, closure_2) {
                                     let str31 = "";
                                     if (!tmp89) {
                                       str31 = "";
-                                      if (typeof cause.constructor !== "_") {
+                                      if (typeof cause.constructor !== "ZodObject") {
                                         let str33 = "";
                                         if (cause.constructor.name) {
                                           str33 = `${cause.constructor.name} `;

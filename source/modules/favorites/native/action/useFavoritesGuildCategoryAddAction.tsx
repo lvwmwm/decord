@@ -1,10 +1,10 @@
-// Module ID: 11880
-// Function ID: 11881
+// Module ID: 11876
+// Function ID: 11877
 // Name: useFavoritesGuildCategoryAddAction
-// Dependencies: [5, 19, 676, 11881, 1959, 1865, 1236, 2969, 2]
+// Dependencies: [5, 19, 676, 11877, 1959, 1865, 1236, 2969, 2]
 // Exports: default
 
-// Module 11880 (useFavoritesGuildCategoryAddAction)
+// Module 11876 (useFavoritesGuildCategoryAddAction)
 import getFavoritesAwareGuildName from "getFavoritesAwareGuildName";
 import noop from "noop";
 import { ChannelTypes } from "ME";

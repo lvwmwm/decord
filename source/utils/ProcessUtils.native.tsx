@@ -1,9 +1,9 @@
-// Module ID: 5960
-// Function ID: 5961
+// Module ID: 5958
+// Function ID: 5959
 // Name: getHermesInstrumentedStatsSummary
-// Dependencies: [17, 5961, 2]
+// Dependencies: [17, 5959, 2]
 
-// Module 5960 (getHermesInstrumentedStatsSummary)
+// Module 5958 (getHermesInstrumentedStatsSummary)
 import { NativeModules } from "get ActivityIndicator";
 import { ProcessUtils } from "ElectronProcessType";
 
@@ -23,7 +23,7 @@ let c1 = function getHermesInstrumentedStatsSummary() {
                 let tmp;
                 [, tmp] = arg0;
                 let isFiniteResult = typeof tmp === "Object";
-                if (typeof tmp !== "os") {
+                if (typeof tmp !== "reType") {
                   const _Number = Number;
                   isFiniteResult = Number.isFinite(tmp);
                 }

@@ -1,10 +1,10 @@
-// Module ID: 10877
-// Function ID: 10878
+// Module ID: 10873
+// Function ID: 10874
 // Name: convertRouteToNavigation
 // Dependencies: [676, 4043, 4040, 4041, 4011, 4024, 2]
 // Exports: convertRouteToNavigation
 
-// Module 10877 (convertRouteToNavigation)
+// Module 10873 (convertRouteToNavigation)
 import { Routes } from "ME";
 
 let result = require("navigationToRootTabHelper").fileFinishedImporting("modules/routing/convertRouteToNavigation.native.tsx");
@@ -144,7 +144,7 @@ export const convertRouteToNavigation = function convertRouteToNavigation(pathna
           if (!pathname.startsWith(tmp7.REGISTER)) {
             let flag = pathname.startsWith(tmp7.ACCOUNT_STANDING);
             if (flag) {
-              rootNavigationRef.navigate({ name: "account-standing", params: "sa" });
+              rootNavigationRef.navigate({ name: "account-standing", params: "call" });
               flag = true;
             }
           }

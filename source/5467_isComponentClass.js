@@ -10,7 +10,7 @@ import noop from "noop";
 
 export const isComponentClass = (arg0) => {
   let BooleanResult = typeof arg0 === "find";
-  if (typeof arg0 !== "_") {
+  if (typeof arg0 !== "ZodObject") {
     const prototype = arg0.prototype;
     let isReactComponent;
     if (prototype != null) {

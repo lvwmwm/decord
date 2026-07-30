@@ -1,10 +1,10 @@
-// Module ID: 13743
-// Function ID: 13744
+// Module ID: 13738
+// Function ID: 13739
 // Name: GuildProfileEmptyState
-// Dependencies: [5, 19, 17, 21, 4189, 13744, 4185, 1236, 4600, 11799, 1959, 2]
+// Dependencies: [5, 19, 17, 21, 4189, 13739, 4185, 1236, 4600, 11795, 1959, 2]
 // Exports: default
 
-// Module 13743 (GuildProfileEmptyState)
+// Module 13738 (GuildProfileEmptyState)
 import SvgComponent from "SvgComponent";
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -24,7 +24,7 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/use
 export default function GuildProfileEmptyState() {
   const tmp = callback4();
   let obj = { contentContainerStyle: tmp.container, children: null };
-  obj = { style: tmp.image, children: callback2(importDefault(13744), obj) };
+  obj = { style: tmp.image, children: callback2(importDefault(13739), obj) };
   obj = { style: tmp.image };
   const items = [callback2(closure_5, obj), , , , ];
   let obj1 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: null };

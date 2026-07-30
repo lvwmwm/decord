@@ -1,9 +1,9 @@
-// Module ID: 10456
-// Function ID: 10457
+// Module ID: 10452
+// Function ID: 10453
 // Name: startInterval
-// Dependencies: [1218, 1372, 1862, 1931, 4385, 676, 4386, 685, 687, 11, 1384, 589, 10312, 709, 2]
+// Dependencies: [1218, 1372, 1862, 1931, 4385, 676, 4386, 685, 687, 11, 1384, 589, 10308, 709, 2]
 
-// Module 10456 (startInterval)
+// Module 10452 (startInterval)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -211,9 +211,9 @@ prototype["maybeAutoUpgradeChannel"] = function maybeAutoUpgradeChannel(id) {
         const channels = closure_14.channels;
         delete tmp[tmp2];
         set.add(id);
-        const result = require(10312) /* useChannelPresetSettings */.updateChannelUnreadSetting(basicChannel.guild_id, basicChannel.id, UnreadSetting.ALL_MESSAGES);
+        const result = require(10308) /* useChannelPresetSettings */.updateChannelUnreadSetting(basicChannel.guild_id, basicChannel.id, UnreadSetting.ALL_MESSAGES);
         flag2 = true;
-        let obj = require(10312) /* useChannelPresetSettings */;
+        let obj = require(10308) /* useChannelPresetSettings */;
       }
       tmp6 = flag2;
     }

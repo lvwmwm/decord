@@ -1,8 +1,8 @@
-// Module ID: 10483
-// Function ID: 10484
-// Dependencies: [5, 1372, 676, 4182, 709, 530, 5967, 5713, 4384, 4199, 2]
+// Module ID: 10479
+// Function ID: 10480
+// Dependencies: [5, 1372, 676, 4182, 709, 530, 5965, 5713, 4384, 4199, 2]
 
-// Module 10483
+// Module 10479
 import sendRequest from "sendRequest";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";

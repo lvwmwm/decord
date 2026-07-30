@@ -1,10 +1,10 @@
-// Module ID: 16462
-// Function ID: 16463
+// Module ID: 16456
+// Function ID: 16457
 // Name: componentDidMount
-// Dependencies: [109, 5, 19, 17, 1936, 1218, 1942, 1935, 1862, 8305, 16449, 16444, 676, 16451, 21, 4189, 712, 3901, 5143, 6752, 1236, 4384, 16453, 12, 698, 8277, 16463, 3890, 10356, 9172, 5105, 10022, 4528, 1297, 5554, 5220, 16464, 16472, 16474, 16475, 4598, 7634, 1480, 589, 3822, 5501, 2]
+// Dependencies: [109, 5, 19, 17, 1936, 1218, 1942, 1935, 1862, 8302, 16443, 16438, 676, 16445, 21, 4189, 712, 3901, 5143, 6749, 1236, 4384, 16447, 12, 698, 8274, 16457, 3890, 10352, 9168, 5105, 10018, 4528, 1297, 5554, 5220, 16458, 16466, 16468, 16469, 4598, 7631, 1480, 589, 3822, 5501, 2]
 // Exports: default
 
-// Module 16462 (componentDidMount)
+// Module 16456 (componentDidMount)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import fetchFingerprint from "fetchFingerprint";
 import importAllResult from "HeaderActionButton";
@@ -504,7 +504,7 @@ prototype["render"] = function render() {
     ({ handleNameChanged: obj3[6], handleMentionableChanged: obj3[7], handleHoistChanged: obj3[8] } = self);
     obj[9] = locked;
     obj[10] = newRole;
-    let tmp11Result = callback2(importDefault(16464), obj);
+    let tmp11Result = callback2(importDefault(16458), obj);
   } else if (tmp9.PERMISSIONS === effectiveSection) {
     obj = { guild: null, role: null, permissions: null, onPermissionsChanged: null, contentContainerStyle: null };
     obj[0] = guild;
@@ -512,7 +512,7 @@ prototype["render"] = function render() {
     obj[2] = permissions;
     obj[3] = self.handlePermissionsChanged;
     obj[4] = self.props.contentContainerStyle;
-    tmp11Result = callback2(importDefault(16472), obj);
+    tmp11Result = callback2(importDefault(16466), obj);
   } else if (tmp9.MEMBERS === effectiveSection) {
     obj = { guild: null, role: null, locked: null, contentContainerStyle: null };
     obj[0] = guild;
@@ -523,16 +523,16 @@ prototype["render"] = function render() {
     }
     obj[2] = tmp15;
     obj[3] = self.props.contentContainerStyle;
-    tmp11Result = callback2(importDefault(16474), obj);
+    tmp11Result = callback2(importDefault(16468), obj);
     const tmp11 = callback2;
-    const tmp14 = importDefault(16474);
+    const tmp14 = importDefault(16468);
   } else if (tmp9.VERIFICATIONS === effectiveSection) {
     const obj1 = { guild: null, role: null, locked: null, integrations: null };
     obj1[0] = guild;
     obj1[1] = role;
     obj1[2] = locked;
     obj1[3] = integrations;
-    tmp11Result = callback2(importDefault(16475), obj1);
+    tmp11Result = callback2(importDefault(16469), obj1);
   }
   const obj2 = { style: tmp.container, children: null };
   if (tmp2) {
@@ -571,7 +571,7 @@ prototype["render"] = function render() {
     items[3] = renderDeleteButtonResult;
     obj6[1] = items;
     obj5[1] = closure_23(tmp24(4598).Stack, obj6);
-    tmp22Result = tmp22(tmp24(7634).Form, obj5);
+    tmp22Result = tmp22(tmp24(7631).Form, obj5);
     const tmp26 = closure_23;
   }
   obj2[1] = tmp22Result;

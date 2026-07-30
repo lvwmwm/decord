@@ -1,10 +1,10 @@
-// Module ID: 9789
-// Function ID: 9790
+// Module ID: 9786
+// Function ID: 9787
 // Name: PremiumGiftingPromotionSuccessActions
-// Dependencies: [19, 17, 5803, 1899, 1874, 21, 4189, 712, 589, 8804, 1480, 8771, 8045, 9700, 9790, 8070, 1898, 1297, 9784, 4600, 1236, 2]
+// Dependencies: [19, 17, 5803, 1899, 1874, 21, 4189, 712, 589, 8800, 1480, 8767, 8042, 9697, 9787, 8067, 1898, 1297, 9781, 4600, 1236, 2]
 // Exports: default
 
-// Module 9789 (PremiumGiftingPromotionSuccessActions)
+// Module 9786 (PremiumGiftingPromotionSuccessActions)
 import Button from "Button";
 import { View } from "Button";
 import { isAvatarDecorationRecord } from "fromServer";

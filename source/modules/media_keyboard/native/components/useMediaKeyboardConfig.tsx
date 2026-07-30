@@ -1,10 +1,10 @@
-// Module ID: 15591
-// Function ID: 15592
+// Module ID: 15585
+// Function ID: 15586
 // Name: useMediaKeyboardConfig
-// Dependencies: [19, 1576, 676, 6072, 11396, 6048, 8014, 9672, 1906, 2]
+// Dependencies: [19, 1576, 676, 6070, 11392, 6046, 8011, 9669, 1906, 2]
 // Exports: default
 
-// Module 15591 (useMediaKeyboardConfig)
+// Module 15585 (useMediaKeyboardConfig)
 import noop from "noop";
 import { MediaKeyboardTarget } from "DRAG_HANDLE";
 import ME from "ME";
@@ -24,11 +24,11 @@ export default function useMediaKeyboardConfig(arg0) {
   let canStartThread;
   let MediaKeyboardTarget;
   let mediaKeyboardDraftType;
-  const tmp4 = context(6072).useCanPostPollsInChannel(channel) && context.target !== MediaKeyboardTarget.COMMAND;
+  const tmp4 = context(6070).useCanPostPollsInChannel(channel) && context.target !== MediaKeyboardTarget.COMMAND;
   importDefault = tmp4;
-  const tmp5 = importDefault(11396)(channel);
+  const tmp5 = importDefault(11392)(channel);
   dependencyMap = tmp5;
-  let tmp2Result = tmp2(6048);
+  let tmp2Result = tmp2(6046);
   canStartThread = tmp2Result.useCanStartThread(channel);
   if (canStartThread) {
     const GUILD_THREADS_ONLY = mediaKeyboardDraftType.GUILD_THREADS_ONLY;
@@ -40,11 +40,11 @@ export default function useMediaKeyboardConfig(arg0) {
   if (canStartThread) {
     canStartThread = !tmp;
   }
-  tmp2Result = tmp2(8014);
+  tmp2Result = tmp2(8011);
   const tmp8 = tmp2Result.useIsAppLauncherEnabled(channel.id) && context.target !== MediaKeyboardTarget.COMMAND;
   MediaKeyboardTarget = tmp8;
-  let obj = context(6072);
-  mediaKeyboardDraftType = context(9672).getMediaKeyboardDraftType(context.target);
+  let obj = context(6070);
+  mediaKeyboardDraftType = context(9669).getMediaKeyboardDraftType(context.target);
   let items = [context, tmp4, tmp5, mediaKeyboardDraftType, canStartThread, tmp8];
   return canStartThread.useMemo(() => {
     const target = context.target;

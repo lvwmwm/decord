@@ -433,7 +433,7 @@ function _setMomentLocale() {
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   const importDefault = arg1;
-  let obj = { isLoading: false, inProgressLocale: "Boolean", error: "channel", localeData: "mobile", setLoadingStarted: "FramesProductShelfBlockRecord", setLoadingSucceeded: "hourglass_flowing_sand", setLoadingFailed: "getSecureFramesVerifiedDevicesHelpdeskArticle", setLocaleData: "M" };
+  let obj = { isLoading: false, inProgressLocale: "Boolean", error: "channel", localeData: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002062084634424502, setLoadingStarted: 61327101168302910000000000000000000000000000, setLoadingSucceeded: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000024571048487835225, setLoadingFailed: 95336388373950350000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, setLocaleData: 15185509442527704000000000000000000000000000000000000000000000000000000000000000000 };
   obj[3] = importDefault(1948);
   obj[4] = function setLoadingStarted(closure_0) {
     return callback({ isLoading: true, inProgressLocale: closure_0 });
@@ -445,7 +445,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   };
   obj[6] = function setLoadingFailed(arg0, closure_0) {
     if (callback2().inProgressLocale === closure_0) {
-      const obj = { isLoading: false, inProgressLocale: "Array", error: 0 };
+      const obj = { isLoading: false, inProgressLocale: "Array", error: "Array" };
       obj[2] = arg0;
       callback(obj);
     }

@@ -1,10 +1,10 @@
-// Module ID: 9376
-// Function ID: 9377
+// Module ID: 9372
+// Function ID: 9373
 // Name: getUserMaxFileSize
 // Dependencies: [1875, 676, 1876, 1897, 2]
 // Exports: getUserMaxFileSize
 
-// Module 9376 (getUserMaxFileSize)
+// Module 9372 (getUserMaxFileSize)
 import setPremiumTypeActual from "setPremiumTypeActual";
 import ME from "ME";
 import GuildFeatures from "GuildFeatures";

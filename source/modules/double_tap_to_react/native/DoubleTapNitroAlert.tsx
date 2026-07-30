@@ -1,10 +1,10 @@
-// Module ID: 7755
-// Function ID: 7756
+// Module ID: 7752
+// Function ID: 7753
 // Name: DoubleTapNitroAlert
-// Dependencies: [19, 17, 7751, 676, 7756, 21, 4189, 6611, 4530, 4533, 6730, 1236, 2]
+// Dependencies: [19, 17, 7748, 676, 7753, 21, 4189, 6608, 4530, 4533, 6727, 1236, 2]
 // Exports: default
 
-// Module 7755 (DoubleTapNitroAlert)
+// Module 7752 (DoubleTapNitroAlert)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { NITRO_UPSELL_ALERT_KEY } from "NITRO_UPSELL_ALERT_KEY";
@@ -23,13 +23,13 @@ const result = require("NITRO_UPSELL_ALERT_KEY").fileFinishedImporting("modules/
 
 export default function DoubleTapNitroAlert(emojiName) {
   const callback = React.useCallback(() => {
-    let obj = callback(6611);
+    let obj = callback(6608);
     obj = { screen: constants.TEXT, params: obj };
     obj = { initialSetting: constants2.DOUBLE_TAP_EMOJI };
     obj.openUserSettings(obj);
   }, []);
   const callback1 = React.useCallback(() => {
-    let obj = callback(6611);
+    let obj = callback(6608);
     obj = { screen: constants.PREMIUM };
     obj.openUserSettings(obj, () => {
       callback(table[8]).dismissAlert(closure_4);
@@ -37,7 +37,7 @@ export default function DoubleTapNitroAlert(emojiName) {
   }, []);
   let obj = { header: null, title: null, content: null, actions: null };
   obj = { style: callback3().icon, children: null };
-  obj[1] = callback(require(6730) /* CircleErrorIcon */.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } });
+  obj[1] = callback(require(6727) /* CircleErrorIcon */.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } });
   obj[0] = callback(View, obj);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.HRAWfC);

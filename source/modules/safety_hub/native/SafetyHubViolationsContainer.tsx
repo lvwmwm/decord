@@ -1,10 +1,10 @@
-// Module ID: 13786
-// Function ID: 13787
+// Module ID: 13781
+// Function ID: 13782
 // Name: SafetyHubViolationsHeader
-// Dependencies: [32, 19, 17, 11072, 6756, 676, 21, 4189, 712, 8340, 7629, 4185, 1236, 12606, 8392, 6755, 11, 13787, 6757, 4395, 11069, 1959, 11079, 589, 698, 11077, 2]
+// Dependencies: [32, 19, 17, 11068, 6753, 676, 21, 4189, 712, 8337, 7626, 4185, 1236, 12600, 8389, 6752, 11, 13782, 6754, 4395, 11065, 1959, 11075, 589, 698, 11073, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 13786 (SafetyHubViolationsHeader)
+// Module 13781 (SafetyHubViolationsHeader)
 import _slicedToArray from "_slicedToArray";
 import module_4395 from "module_4395";
 import get_ActivityIndicator from "useIsNewClassification";
@@ -34,7 +34,7 @@ function SafetyHubViolationsHeader(count) {
   items1 = [tmp.iconBackground];
   const colors = importDefault(712).colors;
   obj = { color: tmp8 ? colors.INTERACTIVE_TEXT_DEFAULT : colors.ICON_MUTED, size: "xs" };
-  obj[1] = closure_11(require(7629) /* WarningIcon */.WarningIcon, obj);
+  obj[1] = closure_11(require(7626) /* WarningIcon */.WarningIcon, obj);
   const items2 = [closure_11(closure_6, obj), , ];
   const obj1 = { style: items3, children: null };
   items3 = [tmp.headerTextContainer];
@@ -63,14 +63,14 @@ function SafetyHubViolationsHeader(count) {
   obj1[1] = items4;
   items2[1] = closure_12(closure_6, obj1);
   if (opened) {
-    let ChevronSmallDownIcon = tmp7(12606).ChevronSmallUpIcon;
+    let ChevronSmallDownIcon = tmp7(12600).ChevronSmallUpIcon;
   } else {
-    ChevronSmallDownIcon = tmp7(8392).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp7(8389).ChevronSmallDownIcon;
   }
   const items5 = [tmp.chevron];
   items2[2] = closure_11(ChevronSmallDownIcon, { size: "md", style: items5 });
   obj[2] = items2;
-  return closure_12(importDefault(8340), obj);
+  return closure_12(importDefault(8337), obj);
 }
 function EmptyActiveState() {
   let obj = { style: null, children: null };
@@ -100,7 +100,7 @@ function EmptyExpiredState() {
 function RelativeIncidentTime(timestamp) {
   let obj = { style: createCacheKey().incidentDate, children: null };
   obj = { variant: "text-xs/medium", children: null };
-  obj[1] = require(6755) /* parseMessageEmbedForProps */.getClassificationRelativeIncidentTime(timestamp.timestamp);
+  obj[1] = require(6752) /* parseMessageEmbedForProps */.getClassificationRelativeIncidentTime(timestamp.timestamp);
   obj[1] = callback(require(4185) /* Text */.Text, obj);
   return callback(closure_6, obj);
 }
@@ -211,7 +211,7 @@ class SafetyHubViolationsContainer {
     c3 = undefined;
     useState = undefined;
     c5 = undefined;
-    f92057 = undefined;
+    f92079 = undefined;
     useMemo = undefined;
     c8 = undefined;
     tmp = Fragment();
@@ -232,7 +232,7 @@ class SafetyHubViolationsContainer {
     items = [];
     items[0] = useMemo;
     stateFromStores = obj2.useStateFromStores(items, () => memo.getIsDsaEligible());
-    f92057 = stateFromStores;
+    f92079 = stateFromStores;
     items1 = [, ];
     items1[0] = classifications;
     items1[1] = first1;
@@ -261,7 +261,7 @@ class SafetyHubViolationsContainer {
     }
     c8 = num;
     tmp11 = jsxs;
-    tmp12 = f92057;
+    tmp12 = f92079;
     obj = { style: items3, children: null };
     items3 = [];
     items3[0] = tmp.container;
@@ -386,9 +386,9 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/s
 
 export default SafetyHubViolationsContainer;
 export const ConnectedSafetyHubViolationsContainer = function ConnectedSafetyHubViolationsContainer() {
-  let obj = require(11077) /* useSafetyHubClassifications */;
+  let obj = require(11073) /* useSafetyHubClassifications */;
   const activeSafetyHubClassifications = obj.useActiveSafetyHubClassifications();
-  let obj1 = require(11077) /* useSafetyHubClassifications */;
+  let obj1 = require(11073) /* useSafetyHubClassifications */;
   const expiredSafetyHubClassifications = obj1.useExpiredSafetyHubClassifications();
   if (0 !== activeSafetyHubClassifications.length) {
     obj = { style: null, children: null };

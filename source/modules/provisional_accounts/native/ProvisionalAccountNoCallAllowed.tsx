@@ -1,10 +1,10 @@
-// Module ID: 12857
-// Function ID: 12858
+// Module ID: 12851
+// Function ID: 12852
 // Name: ProvisionalAccountNoCallAllowed
-// Dependencies: [19, 676, 21, 4189, 4533, 6730, 1236, 1945, 4533, 2]
+// Dependencies: [19, 676, 21, 4189, 4533, 6727, 1236, 1945, 4533, 2]
 // Exports: default
 
-// Module 12857 (ProvisionalAccountNoCallAllowed)
+// Module 12851 (ProvisionalAccountNoCallAllowed)
 import "noop";
 import { HelpdeskArticles } from "ME";
 import { jsx } from "jsxProd";
@@ -17,7 +17,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/provisional_acc
 export default function ProvisionalAccountNoCallAllowed() {
   let obj = { header: null, title: null, content: null, actions: null };
   obj = { size: "lg", style: callback().header };
-  obj[0] = jsx(require(6730) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: callback().header });
+  obj[0] = jsx(require(6727) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: callback().header });
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["vh+Zpq"]);
   const intl2 = require(1236) /* getSystemLocale */.intl;

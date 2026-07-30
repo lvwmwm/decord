@@ -1,10 +1,10 @@
-// Module ID: 8431
-// Function ID: 8432
+// Module ID: 8428
+// Function ID: 8429
 // Name: useTooltip
-// Dependencies: [32, 5, 19, 21, 3, 514, 5504, 8432, 1474, 8437, 2]
+// Dependencies: [32, 5, 19, 21, 3, 514, 5504, 8429, 1474, 8434, 2]
 // Exports: useTooltip, useTooltipHelper
 
-// Module 8431 (useTooltip)
+// Module 8428 (useTooltip)
 import _slicedToArray from "_slicedToArray";
 import v1 from "v1";
 import noop from "noop";

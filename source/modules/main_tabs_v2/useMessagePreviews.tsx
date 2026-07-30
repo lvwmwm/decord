@@ -1,10 +1,10 @@
-// Module ID: 14334
-// Function ID: 14335
+// Module ID: 14330
+// Function ID: 14331
 // Name: useMessagePreview
-// Dependencies: [1340, 4201, 3862, 589, 9132, 3867, 14335, 2]
+// Dependencies: [1340, 4201, 3862, 589, 9128, 3867, 14331, 2]
 // Exports: default, useMessagePreviewSetting
 
-// Module 14334 (useMessagePreview)
+// Module 14330 (useMessagePreview)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 
@@ -52,7 +52,7 @@ export default function useMessagePreview(guild_id) {
     return hasUnreadResult;
   });
   if (!disabled) {
-    disabled = importDefault(9132)(guild_id);
+    disabled = importDefault(9128)(guild_id);
   }
   if (!disabled) {
     disabled = stateFromStores === tmp(3867).MessagePreviewTypes.NONE;
@@ -67,7 +67,7 @@ export default function useMessagePreview(guild_id) {
     }
     disabled = tmp6;
   }
-  return importDefault(14335)(guild_id, disabled);
+  return importDefault(14331)(guild_id, disabled);
 };
 export const useMessagePreviewSetting = function useMessagePreviewSetting(arg0) {
   const _require = arg0;

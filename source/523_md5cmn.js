@@ -18,7 +18,7 @@ arg5.default = function md5(arg0) {
   let length;
   let length2;
   let arr = arg0;
-  if (typeof arg0 !== "init") {
+  if (typeof arg0 !== "tee") {
     let uint8Array = globalThis;
     const _unescape = unescape;
     const _encodeURIComponent = encodeURIComponent;

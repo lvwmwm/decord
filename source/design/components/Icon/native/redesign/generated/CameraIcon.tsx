@@ -1,10 +1,10 @@
-// Module ID: 9691
-// Function ID: 9692
+// Module ID: 9688
+// Function ID: 9689
 // Name: CameraIcon
-// Dependencies: [19, 21, 712, 3892, 9692, 2]
+// Dependencies: [19, 21, 712, 3892, 9689, 2]
 // Exports: CameraIcon
 
-// Module 9691 (CameraIcon)
+// Module 9688 (CameraIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const CameraIcon = function CameraIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9692) /* registerAsset */;
+  obj[0] = require(9689) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

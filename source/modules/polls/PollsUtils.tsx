@@ -1,10 +1,10 @@
-// Module ID: 6072
-// Function ID: 6073
+// Module ID: 6070
+// Function ID: 6071
 // Name: getSampleOfVoterUsernamesForAnswer
-// Dependencies: [1372, 6073, 4407, 3817, 3826, 6140, 676, 514, 589, 5657, 687, 1857, 4418, 1236, 6074, 12, 4379, 2]
+// Dependencies: [1372, 6071, 4407, 3817, 3826, 6138, 676, 514, 589, 5657, 687, 1857, 4418, 1236, 6072, 12, 4379, 2]
 // Exports: createPollExpiryTimestamp, createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, generateLocalCreationAnswerId, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isAnswerFilled, isIncompleteAnswer, isPollCreationEmpty, useCanPostPollsInChannel
 
-// Module 6072 (getSampleOfVoterUsernamesForAnswer)
+// Module 6070 (getSampleOfVoterUsernamesForAnswer)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reactionKey from "reactionKey";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -20,7 +20,7 @@ let unpackModuleId;
 const require = arg1;
 function getSampleOfVoterUsernamesForAnswer(message, id) {
   const channelId = message.getChannelId();
-  reactions = reactions.getReactions(channelId, message.id, { id, name: "", animated: false }, closure_9, channel(6074).ReactionTypes.VOTE);
+  reactions = reactions.getReactions(channelId, message.id, { id, name: "", animated: false }, closure_9, channel(6072).ReactionTypes.VOTE);
   channel = channel.getChannel(channelId);
   let guildId = null;
   if (null != channel) {

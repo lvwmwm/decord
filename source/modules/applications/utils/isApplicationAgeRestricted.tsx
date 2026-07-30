@@ -1,10 +1,10 @@
-// Module ID: 8026
-// Function ID: 8027
+// Module ID: 8023
+// Function ID: 8024
 // Name: isApplicationAgeRestricted
-// Dependencies: [4226, 8027, 5908, 2]
+// Dependencies: [4226, 8024, 5906, 2]
 // Exports: default
 
-// Module 8026 (isApplicationAgeRestricted)
+// Module 8023 (isApplicationAgeRestricted)
 import addApplication from "addApplication";
 
 const require = arg1;
@@ -17,9 +17,9 @@ export default function isApplicationAgeRestricted(arg0) {
     if (application != null) {
       prop = application.contentClassification;
     }
-    return require(5908) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(prop);
+    return require(5906) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(prop);
   } else {
     return false;
   }
-  obj = importDefault(8027);
+  obj = importDefault(8024);
 };

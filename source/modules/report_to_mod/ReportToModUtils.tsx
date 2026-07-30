@@ -1,10 +1,10 @@
-// Module ID: 6052
-// Function ID: 6053
+// Module ID: 6050
+// Function ID: 6051
 // Name: canReportMessageToMods
-// Dependencies: [6053, 1372, 1862, 4407, 1874, 6060, 6061, 5791, 5790, 6062, 506, 3822, 5866, 5877, 5878, 6063, 2]
+// Dependencies: [6051, 1372, 1862, 4407, 1874, 6058, 6059, 5791, 5790, 6060, 506, 3822, 5864, 5875, 5876, 6061, 2]
 // Exports: canAccessReportsChannel, canReportMessageToMods, getReportToModChannelId, isModeratorReportChannel, isModeratorReportChannelId, isModeratorReportMessage, isModeratorReportOrPostChannel, isModeratorReportOrPostChannelId, isModeratorReportPostChannel, isModeratorReportPostChannelId, isModeratorReportThreadStarterMessage, isSafeToTransitionToReportForCurrentUser, isUserAuthorOfReportedMessage, sortedModeratorReportTags
 
-// Module 6052 (canReportMessageToMods)
+// Module 6050 (canReportMessageToMods)
 import handleLoadThreadsSuccess from "handleLoadThreadsSuccess";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -31,7 +31,7 @@ export const canReportMessageToMods = function canReportMessageToMods(message) {
   } else {
     return false;
   }
-  obj = require(6061) /* canReportUser */;
+  obj = require(6059) /* canReportUser */;
 };
 export const canAccessReportsChannel = function canAccessReportsChannel(arg0) {
   let tmp = arg1;
@@ -39,7 +39,7 @@ export const canAccessReportsChannel = function canAccessReportsChannel(arg0) {
     const items = [createGuildRecordFromRust, mergeGuildAvatar];
     tmp = items;
   }
-  let obj = require(6062) /* getContextForPermission */;
+  let obj = require(6060) /* getContextForPermission */;
   const contextForPermission = obj.getContextForPermission(arg0, tmp);
   if (null == contextForPermission) {
     return false;
@@ -180,8 +180,8 @@ export const isSafeToTransitionToReportForCurrentUser = function isSafeToTransit
           tmp9 = null == firstMessage;
         }
         if (!tmp9) {
-          tmp9 = !tmp10(5877).messageHasObscurableMediaForBitmask(firstMessage, tmp10(5878).ContentHarmTypeBitMask.EXPLICIT);
-          const tmp10Result = tmp10(5877);
+          tmp9 = !tmp10(5875).messageHasObscurableMediaForBitmask(firstMessage, tmp10(5876).ContentHarmTypeBitMask.EXPLICIT);
+          const tmp10Result = tmp10(5875);
         }
         return tmp9;
       } else {
@@ -190,7 +190,7 @@ export const isSafeToTransitionToReportForCurrentUser = function isSafeToTransit
     } else {
       return true;
     }
-    obj3 = require(5866) /* isCurrentUserTeen */;
+    obj3 = require(5864) /* isCurrentUserTeen */;
   }
 };
 export const isModeratorReportThreadStarterMessage = function isModeratorReportThreadStarterMessage(isFirstMessageInForumPost, isModeratorReportChannel) {

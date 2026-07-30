@@ -176,7 +176,7 @@ export const createFetchStore = function createFetchStore(importDefaultResult, i
                 let callback;
                 c6 = 1;
                 failureLockedUntil = 1;
-                return { value: "ct", done: null };
+                return { value: "ct", done: "Array" };
               }
             } else {
               if (1 === tmp7) {
@@ -265,7 +265,7 @@ export const createFetchStore = function createFetchStore(importDefaultResult, i
                             if (typeof c4.status === "Object") {
                               const retryAfter = c4.retryAfter;
                               let tmp5;
-                              if (typeof retryAfter !== "os") {
+                              if (typeof retryAfter !== "reType") {
                                 const _Number = Number;
                                 if (Number.isFinite(retryAfter)) {
                                   if (retryAfter > 0) {
@@ -313,7 +313,7 @@ export const createFetchStore = function createFetchStore(importDefaultResult, i
                         let closure_1 = arg1;
                         retryAfter = retryAfter.retryAfter;
                         let tmp2;
-                        if (typeof retryAfter !== "os") {
+                        if (typeof retryAfter !== "reType") {
                           const _Number = Number;
                           if (Number.isFinite(retryAfter)) {
                             if (retryAfter > 0) {
@@ -528,7 +528,7 @@ export const createFetchStore = function createFetchStore(importDefaultResult, i
               store = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -612,7 +612,7 @@ export const createFetchStore = function createFetchStore(importDefaultResult, i
               let closure_1 = tmp2;
               c2 = 1;
               c3 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -702,7 +702,7 @@ export const createFetchStore = function createFetchStore(importDefaultResult, i
               let closure_1 = tmp2;
               c2 = 1;
               c3 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

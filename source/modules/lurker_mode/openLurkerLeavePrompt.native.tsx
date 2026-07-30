@@ -1,10 +1,10 @@
-// Module ID: 11530
-// Function ID: 11531
+// Module ID: 11526
+// Function ID: 11527
 // Name: LurkerLeavePromptModal
-// Dependencies: [19, 17, 1372, 1862, 3818, 676, 21, 4530, 5566, 4189, 6692, 4533, 1236, 8464, 1297, 10095, 1306, 11528, 5105, 2]
+// Dependencies: [19, 17, 1372, 1862, 3818, 676, 21, 4530, 5566, 4189, 6689, 4533, 1236, 8461, 1297, 10091, 1306, 11524, 5105, 2]
 // Exports: openLurkerLeavePrompt
 
-// Module 11530 (LurkerLeavePromptModal)
+// Module 11526 (LurkerLeavePromptModal)
 import closure_3 from "set";
 import get_ActivityIndicator from "hasNavigatedAway";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -41,7 +41,7 @@ function LurkerLeavePromptModal(guild) {
   const tmp3 = importDefault(5566);
   obj2[1] = guild(1297).Icon.Sizes.LARGE;
   obj2[2] = closure_4.flatten(tmp.badgeOverlay);
-  items1[1] = callback(importDefault(8464), obj2);
+  items1[1] = callback(importDefault(8461), obj2);
   obj[1] = items1;
   obj[1] = callback2(closure_5, obj);
   obj[2] = callback(closure_5, obj);
@@ -91,13 +91,13 @@ export const openLurkerLeavePrompt = function openLurkerLeavePrompt(closure_0, o
           const channel = outer1_6.getChannel(lurkingSourceForGuild.directoryChannelId);
           if (null != channel) {
             const guildId = channel.getGuildId();
-            const result = callback(10095).setHubProgressActionComplete(guildId, callback(1306).HubProgressStep.JOIN_GUILD);
-            const obj2 = callback(10095);
+            const result = callback(10091).setHubProgressActionComplete(guildId, callback(1306).HubProgressStep.JOIN_GUILD);
+            const obj2 = callback(10091);
           }
         }
-        const obj3 = callback(6692);
-        obj3.trackJoinClicked(callback, outer1_9.LEAVE_PROMPT_LURKER, onLeave(11528).hasNavigatedAway(callback));
-        const obj4 = onLeave(11528);
+        const obj3 = callback(6689);
+        obj3.trackJoinClicked(callback, outer1_9.LEAVE_PROMPT_LURKER, onLeave(11524).hasNavigatedAway(callback));
+        const obj4 = onLeave(11524);
         onLeave(5105).joinGuild(callback, { source: outer1_9.LEAVE_PROMPT_LURKER });
       };
       const combined = "lurker-leave-prompt:" + closure_0;

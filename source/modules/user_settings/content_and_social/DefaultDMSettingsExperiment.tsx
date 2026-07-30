@@ -1,10 +1,10 @@
-// Module ID: 14671
-// Function ID: 14672
+// Module ID: 14665
+// Function ID: 14666
 // Name: shouldAgeVerifyForDMDefaultOff
 // Dependencies: [3868, 5013, 4405, 2]
 // Exports: shouldAgeVerifyForDMDefaultOff
 
-// Module 14671 (shouldAgeVerifyForDMDefaultOff)
+// Module 14665 (shouldAgeVerifyForDMDefaultOff)
 const result = require("useShouldCallReactiveCheck").fileFinishedImporting("modules/user_settings/content_and_social/DefaultDMSettingsExperiment.tsx");
 
 export const shouldAgeVerifyForDMDefaultOff = function shouldAgeVerifyForDMDefaultOff() {

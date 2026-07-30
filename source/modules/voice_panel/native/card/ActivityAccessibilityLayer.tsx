@@ -1,10 +1,10 @@
-// Module ID: 15970
-// Function ID: 15971
+// Module ID: 15964
+// Function ID: 15965
 // Name: FocusedActivityAccessibilityLayer
-// Dependencies: [32, 19, 17, 10038, 21, 4189, 4596, 1236, 4583, 4586, 2]
+// Dependencies: [32, 19, 17, 10034, 21, 4189, 4596, 1236, 4583, 4586, 2]
 // Exports: default
 
-// Module 15970 (FocusedActivityAccessibilityLayer)
+// Module 15964 (FocusedActivityAccessibilityLayer)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";

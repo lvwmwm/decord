@@ -1,10 +1,10 @@
-// Module ID: 6226
-// Function ID: 6227
+// Module ID: 6223
+// Function ID: 6224
 // Name: PremiumPlanActionSheetHeader
-// Dependencies: [19, 17, 1876, 6227, 21, 4189, 6228, 6229, 3835, 4611, 691, 5141, 6230, 6231, 6232, 6233, 6246, 6247, 6248, 2]
+// Dependencies: [19, 17, 1876, 6224, 21, 4189, 6225, 6226, 3835, 4611, 691, 5141, 6227, 6228, 6229, 6230, 6243, 6244, 6245, 2]
 // Exports: default
 
-// Module 6226 (PremiumPlanActionSheetHeader)
+// Module 6223 (PremiumPlanActionSheetHeader)
 import "set";
 import { View } from "registerAsset";
 import GuildFeatures from "GuildFeatures";
@@ -57,12 +57,12 @@ export default function PremiumPlanActionSheetHeader(arg0) {
   const tmp14 = importDefault(4611);
   obj[6] = require(3835) /* getPremiumPlanItem */.getPremiumTypeDisplayName(premiumType);
   if (TIER_0.TIER_0 === premiumType) {
-    let tmp13Result = tmp13(6228);
+    let tmp13Result = tmp13(6225);
   } else {
     tmp13Result = null;
     if (tmp15.TIER_1 !== premiumType) {
       if (tmp15.TIER_2 === premiumType) {
-        tmp13Result = tmp13(6229);
+        tmp13Result = tmp13(6226);
       }
     }
   }
@@ -72,11 +72,11 @@ export default function PremiumPlanActionSheetHeader(arg0) {
     obj[0] = tmp.logoContainer;
     tmp13Result = tmp13(5141);
     if (tmp15.TIER_0 === premiumType) {
-      let tmp13Result1 = tmp13(6230);
+      let tmp13Result1 = tmp13(6227);
     } else if (tmp15.TIER_1 === premiumType) {
-      tmp13Result1 = tmp13(6231);
+      tmp13Result1 = tmp13(6228);
     } else if (tmp15.TIER_2 === premiumType) {
-      tmp13Result1 = tmp13(6232);
+      tmp13Result1 = tmp13(6229);
     }
     const obj1 = { source: null, resizeMode: "contain" };
     obj1[0] = tmp13Result1;
@@ -87,7 +87,7 @@ export default function PremiumPlanActionSheetHeader(arg0) {
       obj2[0] = tmp.discountPill;
       obj2[1] = trialOffer;
       obj2[2] = premiumType;
-      tmp22Result = tmp22(tmp6(6233).PremiumPill, obj2);
+      tmp22Result = tmp22(tmp6(6230).PremiumPill, obj2);
     }
     items1[1] = tmp22Result;
     tmp22Result = null;
@@ -96,17 +96,17 @@ export default function PremiumPlanActionSheetHeader(arg0) {
       obj3[0] = tmp.discountPill;
       obj3[1] = discountOffer;
       obj3[2] = premiumType;
-      tmp22Result = tmp22(tmp6(6233).PremiumPill, obj3);
+      tmp22Result = tmp22(tmp6(6230).PremiumPill, obj3);
     }
     items1[2] = tmp22Result;
     obj[1] = items1;
     items[1] = tmp12(View, obj);
     if (tmp15.TIER_0 === premiumType) {
-      let tmp13Result3 = tmp13(6246);
+      let tmp13Result3 = tmp13(6243);
     } else if (tmp15.TIER_1 === premiumType) {
-      tmp13Result3 = tmp13(6247);
+      tmp13Result3 = tmp13(6244);
     } else if (tmp15.TIER_2 === premiumType) {
-      tmp13Result3 = tmp13(6248);
+      tmp13Result3 = tmp13(6245);
     }
     const obj4 = { source: null, style: null, resizeMode: "contain" };
     obj4[0] = tmp13Result3;
@@ -128,12 +128,12 @@ export default function PremiumPlanActionSheetHeader(arg0) {
     const tmp21 = View;
   } else {
     if (tmp15.TIER_0 === premiumType) {
-      let tmp13Result5 = tmp13(6228);
+      let tmp13Result5 = tmp13(6225);
     } else {
       tmp13Result5 = null;
       if (tmp15.TIER_1 !== premiumType) {
         if (tmp15.TIER_2 === premiumType) {
-          tmp13Result5 = tmp13(6229);
+          tmp13Result5 = tmp13(6226);
         }
       }
     }

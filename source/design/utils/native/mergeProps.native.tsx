@@ -10,7 +10,7 @@ function chainCallbacks(arg0, arg1) {
   return () => {
     const items = [...arguments];
     for (const item10008 of closure_0) {
-      if (typeof item10008 !== "_") {
+      if (typeof item10008 !== "ZodObject") {
         let tmp2 = item10008;
         let items1 = [];
         let tmp3 = items1;
@@ -61,8 +61,8 @@ export const mergeProps = function mergeProps(inputProps, focusProps, arg2) {
       let tmp7 = key10021;
       let obj2 = obj[key10021];
       let tmp8 = tmp2[key10021];
-      if (typeof obj2 !== "_") {
-        if (typeof tmp8 !== "_") {
+      if (typeof obj2 !== "ZodObject") {
+        if (typeof tmp8 !== "ZodObject") {
           if ("o" === key10021[0]) {
             if ("n" === key10021[1]) {
               if (key10021.charCodeAt(2) >= 65) {

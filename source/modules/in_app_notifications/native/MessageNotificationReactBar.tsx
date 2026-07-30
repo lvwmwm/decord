@@ -1,10 +1,10 @@
-// Module ID: 10339
-// Function ID: 10340
+// Module ID: 10335
+// Function ID: 10336
 // Name: PX_12
-// Dependencies: [19, 17, 10262, 9339, 1877, 21, 712, 4189, 1474, 9968, 10261, 10340, 9336, 6074, 6075, 4050, 9969, 2]
+// Dependencies: [19, 17, 10257, 9335, 1877, 21, 712, 4189, 1474, 9964, 10256, 10336, 9332, 6072, 6073, 4050, 9965, 2]
 // Exports: MessageNotificationReactBar
 
-// Module 10339 (PX_12)
+// Module 10335 (PX_12)
 import noop from "noop";
 import get_ActivityIndicator from "set";
 import set from "set";
@@ -46,7 +46,7 @@ export const MessageNotificationReactBar = function MessageNotificationReactBar(
     const result = 2 * outer1_12;
     return Math.min(outer1_7 - result, width - result - 2 * outer1_6);
   }, items);
-  let obj = notification(9968);
+  let obj = notification(9964);
   const emojisForReactionRow = obj.useEmojisForReactionRow(notification.channel, memo, 48);
   const items1 = [onReactionPress, notification];
   const items2 = [notification, onReactionPress];
@@ -86,7 +86,7 @@ export const MessageNotificationReactBar = function MessageNotificationReactBar(
         styles: _undefined.roundButton
       }, notification(_undefined[16]).getEmojiKey(type, arg1));
     }),
-    callback(notification(9969).EmojiPickerRowButton, { emojiContainerSize: 40, onPress: callback, iconSize: "sm", styles: tmp.roundButton })
+    callback(notification(9965).EmojiPickerRowButton, { emojiContainerSize: 40, onPress: callback, iconSize: "sm", styles: tmp.roundButton })
   ];
   obj1[1] = items4;
   items3[1] = callback2(closure_5, obj1);

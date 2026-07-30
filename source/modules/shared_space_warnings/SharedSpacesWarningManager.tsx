@@ -1,10 +1,10 @@
-// Module ID: 12786
-// Function ID: 12787
+// Module ID: 12780
+// Function ID: 12781
 // Name: handleChannelSelect
-// Dependencies: [1372, 4261, 3826, 12787, 12785, 687, 12788, 691, 12792, 5134, 2]
+// Dependencies: [1372, 4261, 3826, 12781, 12779, 687, 12782, 691, 12786, 5134, 2]
 // Exports: userBlockedWarningInCooldown, voiceBlockedWarningInCooldownForUsers
 
-// Module 12786 (handleChannelSelect)
+// Module 12780 (handleChannelSelect)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
 import upsertRelationship from "upsertRelationship";
@@ -39,7 +39,7 @@ function handleChannelSelect(channelId) {
             blockedUserWarningDismissed = num2 > Date.now() - closure_11;
           }
           if (!blockedUserWarningDismissed) {
-            let obj = require(12788) /* showGdmBlockedUserModal */;
+            let obj = require(12782) /* showGdmBlockedUserModal */;
             obj = { channelId: null, blockedUserIds: null, ignoredUserIds: null };
             obj[0] = channelId;
             obj[1] = found;
@@ -89,8 +89,8 @@ function handleAppStateChanged(state) {
           if (!everyResult) {
             const items1 = [];
             HermesBuiltin.arraySpread(ignoredUsersForVoiceChannel, HermesBuiltin.arraySpread(blockedUsersForVoiceChannel, 0));
-            const result = require(12792) /* showVoiceChannelBlockedUserWarning */.showVoiceChannelBlockedUserWarning(channelId, items1[0]);
-            const tmpResult = require(12792) /* showVoiceChannelBlockedUserWarning */;
+            const result = require(12786) /* showVoiceChannelBlockedUserWarning */.showVoiceChannelBlockedUserWarning(channelId, items1[0]);
+            const tmpResult = require(12786) /* showVoiceChannelBlockedUserWarning */;
           }
         }
       }
@@ -132,8 +132,8 @@ SharedSpacesWarningManager.prototype["handleBlockedOrIgnoredUserVoiceChannelJoin
         tmp6 = num2 > Date.now() - closure_12;
       }
       if (!tmp6) {
-        const result = require(12792) /* showVoiceChannelBlockedUserWarning */.showVoiceChannelBlockedUserWarning(channelId, id);
-        const obj = require(12792) /* showVoiceChannelBlockedUserWarning */;
+        const result = require(12786) /* showVoiceChannelBlockedUserWarning */.showVoiceChannelBlockedUserWarning(channelId, id);
+        const obj = require(12786) /* showVoiceChannelBlockedUserWarning */;
       }
     }
   }

@@ -1,9 +1,9 @@
-// Module ID: 15422
-// Function ID: 15423
+// Module ID: 15416
+// Function ID: 15417
 // Name: GuildFeedBanner
-// Dependencies: [19, 17, 13106, 1862, 15423, 676, 21, 4189, 712, 4050, 1474, 4125, 13107, 500, 1416, 9167, 4190, 4193, 589, 6561, 10890, 4035, 15424, 15425, 5566, 4185, 1297, 4717, 3890, 1236, 15426, 2]
+// Dependencies: [19, 17, 13101, 1862, 15417, 676, 21, 4189, 712, 4050, 1474, 4125, 13102, 500, 1416, 9163, 4190, 4193, 589, 6558, 10886, 4035, 15418, 15419, 5566, 4185, 1297, 4717, 3890, 1236, 15420, 2]
 
-// Module 15422 (GuildFeedBanner)
+// Module 15416 (GuildFeedBanner)
 import importAllResult from "useIsWindowLarge";
 import get_ActivityIndicator from "timingNone";
 import initialize from "initialize";
@@ -82,19 +82,19 @@ function GuildFeedBanner(guild) {
   function handleLoad() {
     const result = sharedValue.set(guild(_undefined[16]).withTiming(1, guild(_undefined[17]).timingSlow));
   }
-  let tmp2Result = tmp2(9167);
+  let tmp2Result = tmp2(9163);
   const guildBadgeSource = tmp2Result.getGuildBadgeSource(guild);
   tmp2Result = tmp2(589);
   const items2 = [initialize];
   const items3 = [guild];
   const discoverableGuild = tmp2Result.useStateFromStoresObject(items2, () => ({ discoverableGuild: outer1_6.getGuild(guild.id) }), items3).discoverableGuild;
-  const tmp12 = sharedValue(6561)();
+  const tmp12 = sharedValue(6558)();
   dependencyMap = tmp12;
   const size = tmp6(1474)();
   width = size.width;
   height = size.height;
   const tmp8 = sharedValue(4125)();
-  drawerWidth = guild(10890).useDrawerWidth();
+  drawerWidth = guild(10886).useDrawerWidth();
   const items4 = [width, height, tmp12, drawerWidth];
   obj = { style: tmp.container, children: null };
   const memo1 = obj2.useMemo(() => {
@@ -125,9 +125,9 @@ function GuildFeedBanner(guild) {
     const items6 = [obj3, animatedStyle];
     obj2[0] = items6;
     if (tmp2Result2.isThemeDark(tmp8)) {
-      let tmp6Result = tmp6(15424);
+      let tmp6Result = tmp6(15418);
     } else {
-      tmp6Result = tmp6(15425);
+      tmp6Result = tmp6(15419);
     }
     obj2[1] = tmp6Result;
     obj2[2] = handleLoad;
@@ -183,7 +183,7 @@ function GuildFeedBanner(guild) {
       };
       const obj14 = { style: null, source: null };
       obj14[0] = tmp.publicIcon;
-      obj14[1] = tmp6(15426);
+      obj14[1] = tmp6(15420);
       const items12 = [tmp17(tmp2(1297).Icon, obj14), ];
       const obj15 = { variant: "text-xs/medium", color: "text-default", children: null };
       let intl = tmp2(1236).intl;

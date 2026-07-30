@@ -1,10 +1,10 @@
-// Module ID: 10388
-// Function ID: 10389
+// Module ID: 10384
+// Function ID: 10385
 // Name: AnimatedChatInputReplyBar
-// Dependencies: [5, 32, 19, 17, 1372, 1877, 21, 4189, 712, 1348, 4050, 4190, 10389, 4418, 4380, 6740, 10261, 10340, 4158, 5967, 5713, 9336, 10393, 6682, 9973, 1236, 6743, 6576, 4135, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 1877, 21, 4189, 712, 1348, 4050, 4190, 10385, 4418, 4380, 6737, 10256, 10336, 4158, 5965, 5713, 9332, 10389, 6679, 9969, 1236, 6740, 6573, 4135, 2]
 // Exports: MessageReplyInput
 
-// Module 10388 (AnimatedChatInputReplyBar)
+// Module 10384 (AnimatedChatInputReplyBar)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import rebuild from "rebuild";
@@ -57,7 +57,7 @@ function AnimatedChatInputReplyBar(replying) {
   obj = { style: items1, children: null };
   items1[1] = obj.useMobileVisualRefreshConfig({ location: "MessageReplyInput" }).chatInputFloating ? tmp3.replyBarRedesign : tmp3.replyBarNoRedesign;
   items1[2] = animatedStyle;
-  obj[1] = closure_10(tmp(10389).ChatInputReplyBar, { pendingReply, pendingReplyAuthor, onToggleReplyMention, chatInputFloatingOverride: true });
+  obj[1] = closure_10(tmp(10385).ChatInputReplyBar, { pendingReply, pendingReplyAuthor, onToggleReplyMention, chatInputFloatingOverride: true });
   return closure_10(sharedValue(4050).View, obj);
 }
 ({ Keyboard: closure_6, View: error, StyleSheet } = get_ActivityIndicator);

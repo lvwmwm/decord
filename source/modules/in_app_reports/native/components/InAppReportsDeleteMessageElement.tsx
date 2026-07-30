@@ -1,10 +1,10 @@
-// Module ID: 12408
-// Function ID: 12409
+// Module ID: 12402
+// Function ID: 12403
 // Name: DeleteMessageElement
-// Dependencies: [32, 19, 4407, 676, 21, 589, 4384, 5713, 12404, 1236, 4148, 2]
+// Dependencies: [32, 19, 4407, 676, 21, 589, 4384, 5713, 12398, 1236, 4148, 2]
 // Exports: default
 
-// Module 12408 (DeleteMessageElement)
+// Module 12402 (DeleteMessageElement)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -47,5 +47,5 @@ export default function DeleteMessageElement(message) {
   obj[3] = tmp[0];
   obj[5] = callback;
   obj[6] = jsx(message(4148).TrashIcon, { color: "text-feedback-critical" });
-  return jsx(reportId(12404), { title: null, disabledTitle: null, description: null, disabled: null, variant: "danger", onPress: null, icon: null });
+  return jsx(reportId(12398), { title: null, disabledTitle: null, description: null, disabled: null, variant: "danger", onPress: null, icon: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 15824
-// Function ID: 15825
+// Module ID: 15818
+// Function ID: 15819
 // Name: getIsOnMainSurface
 // Dependencies: [32, 19, 4041, 2]
 // Exports: useIsOnMainSurface
 
-// Module 15824 (getIsOnMainSurface)
+// Module 15818 (getIsOnMainSurface)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import set from "getRootNavigationRef";

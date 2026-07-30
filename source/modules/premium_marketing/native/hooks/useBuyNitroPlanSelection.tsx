@@ -1,10 +1,10 @@
-// Module ID: 6569
-// Function ID: 6570
+// Module ID: 6566
+// Function ID: 6567
 // Name: PremiumTypes
-// Dependencies: [32, 19, 1876, 6250, 6241, 6502, 500, 6259, 6261, 6570, 6571, 2]
+// Dependencies: [32, 19, 1876, 6247, 6238, 6499, 500, 6256, 6258, 6567, 6568, 2]
 // Exports: useBuyNitroPlanSelection
 
-// Module 6569 (PremiumTypes)
+// Module 6566 (PremiumTypes)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import GuildFeatures from "GuildFeatures";

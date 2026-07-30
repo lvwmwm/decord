@@ -1,9 +1,9 @@
-// Module ID: 9957
-// Function ID: 9958
+// Module ID: 9953
+// Function ID: 9954
 // Name: getPollVoteEventProperties
-// Dependencies: [5, 3818, 5857, 1218, 1372, 4526, 5003, 4407, 4525, 7998, 676, 38, 4528, 1236, 5105, 9958, 7997, 4384, 12, 589, 709, 6074, 9963, 4035, 8002, 5713, 6187, 4088, 2]
+// Dependencies: [5, 3818, 5855, 1218, 1372, 4526, 5003, 4407, 4525, 7995, 676, 38, 4528, 1236, 5105, 9954, 7994, 4384, 12, 589, 709, 6072, 9959, 4035, 7999, 5713, 6184, 4088, 2]
 
-// Module 9957 (getPollVoteEventProperties)
+// Module 9953 (getPollVoteEventProperties)
 import handleChanged from "handleChanged";
 import initialize from "initialize";
 import processMessage from "processMessage";
@@ -108,7 +108,7 @@ function handleShowVotesForAnswer(messageId) {
               const _String = String;
               answerId = String(message.poll.answers[0].answer_id);
             }
-            obj = importAll(9958);
+            obj = importAll(9954);
             obj = { message: null, initialAnswerId: null };
             obj[0] = message;
             obj[1] = answerId;
@@ -231,7 +231,7 @@ function _optimisticallySetAnswers() {
               let tmp6 = processMessage;
               obj[4] = processMessage;
               let tmp7 = _undefined;
-              obj[6] = _undefined(6074).ReactionTypes.VOTE;
+              obj[6] = _undefined(6072).ReactionTypes.VOTE;
               dispatchResult = obj.dispatch(obj);
               continue;
             }
@@ -333,7 +333,7 @@ function _handlePollSubmitVote() {
                 items = undefined;
                 channel = 1;
                 c9 = 1;
-                return { value: "ct", done: null };
+                return { value: "ct", done: "Array" };
               }
             } else {
               if (1 === tmp7) {
@@ -590,7 +590,7 @@ function _handleClearPollVote() {
               channel2 = undefined;
               dependencyMap = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {
@@ -715,7 +715,7 @@ function _handlePollActionTapped() {
               ({ channelId: c0, messageId: c1, type: c2 } = c0);
               table = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp5) {
@@ -903,7 +903,7 @@ function _createPoll() {
               let obj2;
               c5 = 1;
               v0 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -1078,7 +1078,7 @@ function _endPollEarly() {
               ({ channelId: c0, messageId: c1 } = callback);
               dependencyMap = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -1112,7 +1112,7 @@ function _endPollEarly() {
                 obj4[0] = arg1;
                 return obj4;
               } else if (arg1) {
-                obj1 = callback3(9963);
+                obj1 = callback3(9959);
                 const obj5 = { channelId: null, messageId: null };
                 obj5[0] = callback;
                 obj5[1] = callback2;

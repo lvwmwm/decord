@@ -1,9 +1,9 @@
-// Module ID: 6144
-// Function ID: 6145
+// Module ID: 6142
+// Function ID: 6143
 // Name: getScreenshakeLocationName
-// Dependencies: [5964, 676, 12, 698, 2]
+// Dependencies: [5962, 676, 12, 698, 2]
 
-// Module 6144 (getScreenshakeLocationName)
+// Module 6142 (getScreenshakeLocationName)
 import ConfettiLocation from "ConfettiLocation";
 import { AnalyticEvents } from "ME";
 import importDefaultResult from "apply";

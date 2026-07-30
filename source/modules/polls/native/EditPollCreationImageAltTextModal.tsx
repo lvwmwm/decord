@@ -1,10 +1,10 @@
-// Module ID: 11389
-// Function ID: 11390
+// Module ID: 11385
+// Function ID: 11386
 // Name: EditPollCreationImageAltTextModal
-// Dependencies: [32, 19, 17, 6140, 21, 4189, 712, 11386, 11388, 5177, 1236, 1297, 7699, 4185, 5638, 8343, 7634, 2]
+// Dependencies: [32, 19, 17, 6138, 21, 4189, 712, 11382, 11384, 5177, 1236, 1297, 7696, 4185, 5638, 8340, 7631, 2]
 // Exports: default
 
-// Module 11389 (EditPollCreationImageAltTextModal)
+// Module 11385 (EditPollCreationImageAltTextModal)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "set";
@@ -42,7 +42,7 @@ export default function EditPollCreationImageAltTextModal(imageSize) {
   imageSize = imageSize.imageSize;
   let first;
   const tmp = createCacheKey();
-  const tmp4 = first(11386)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize);
+  const tmp4 = first(11382)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize);
   const upload = tmp4.upload;
   let obj = React;
   let str;
@@ -64,11 +64,11 @@ export default function EditPollCreationImageAltTextModal(imageSize) {
   obj = { top: true, style: tmp.container, children: null };
   obj = { style: tmp.header, children: null };
   const obj1 = { onPress: null, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: null, children: null };
-  obj1[0] = onSave(11388).closeEditPollCreationImageAltTextModal;
+  obj1[0] = onSave(11384).closeEditPollCreationImageAltTextModal;
   const intl = onSave(1236).intl;
   obj1[3] = intl.string(onSave(1236).t.cpT0Cq);
   const obj2 = { source: null };
-  obj2[0] = first(7699);
+  obj2[0] = first(7696);
   obj1[4] = callback2(onSave(1297).Icon, obj2);
   const items1 = [callback2(closure_5, obj1), , ];
   const obj3 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: null };
@@ -89,7 +89,7 @@ export default function EditPollCreationImageAltTextModal(imageSize) {
   const obj9 = { style: tmp.formContainer, children: null };
   const items4 = [callback2(onSave(1297).Spacer, { size: 27 }), , , ];
   const obj10 = { children: null };
-  tmp2Result = tmp2(8343);
+  tmp2Result = tmp2(8340);
   const intl4 = onSave(1236).intl;
   obj10[0] = intl4.string(onSave(1236).t["/2Gnoa"]);
   items4[1] = callback2(tmp2Result, obj10);
@@ -99,7 +99,7 @@ export default function EditPollCreationImageAltTextModal(imageSize) {
   obj11[8] = MAX_POLL_ANSWER_LENGTH;
   const intl5 = onSave(1236).intl;
   obj11[11] = intl5.string(onSave(1236).t["/2Gnoa"]);
-  items4[2] = callback2(onSave(7634).FormInput, obj11);
+  items4[2] = callback2(onSave(7631).FormInput, obj11);
   items4[3] = callback2(onSave(1297).Spacer, { size: 27 });
   obj9[1] = items4;
   items3[1] = callback3(closure_6, obj9);

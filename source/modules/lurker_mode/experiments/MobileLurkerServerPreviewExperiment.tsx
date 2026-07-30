@@ -1,10 +1,10 @@
-// Module ID: 6691
-// Function ID: 6692
+// Module ID: 6688
+// Function ID: 6689
 // Name: MobileLurkerServerPreviewExperiment
 // Dependencies: [1349, 2]
 // Exports: getMobileLurkerServerPreview, useMobileLurkerServerPreview
 
-// Module 6691 (MobileLurkerServerPreviewExperiment)
+// Module 6688 (MobileLurkerServerPreviewExperiment)
 const obj = { 1: null, 2: { enabled: true, stickyLurk: false } };
 obj[2] = { enabled: true, stickyLurk: true };
 const tmp2 = require("getUnitId")({ name: "2026-05-mobile-lurker-server-preview", kind: "user", defaultConfig: { enabled: false, stickyLurk: false }, variations: obj });

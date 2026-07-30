@@ -1,10 +1,10 @@
-// Module ID: 12008
-// Function ID: 12009
+// Module ID: 12002
+// Function ID: 12003
 // Name: parseProviderRouteHeadlessSessionId
 // Dependencies: [32, 4871, 2]
 // Exports: default
 
-// Module 12008 (parseProviderRouteHeadlessSessionId)
+// Module 12002 (parseProviderRouteHeadlessSessionId)
 import _slicedToArray from "_slicedToArray";
 
 let c3 = "h:";

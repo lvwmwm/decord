@@ -1,9 +1,9 @@
-// Module ID: 15565
-// Function ID: 15566
+// Module ID: 15559
+// Function ID: 15560
 // Name: DirectMessageIcon
-// Dependencies: [19, 17, 1372, 1862, 3817, 4276, 1874, 676, 21, 4189, 712, 589, 1297, 4380, 1480, 4197, 4717, 4185, 1236, 4372, 9094, 4650, 8380, 5515, 8359, 2]
+// Dependencies: [19, 17, 1372, 1862, 3817, 4276, 1874, 676, 21, 4189, 712, 589, 1297, 4380, 1480, 4197, 4717, 4185, 1236, 4372, 9090, 4650, 8377, 5515, 8356, 2]
 
-// Module 15565 (DirectMessageIcon)
+// Module 15559 (DirectMessageIcon)
 import importAllResult from "allowChannelAccess";
 import { View } from "Text";
 import ensureGuildLoaded from "ensureGuildLoaded";

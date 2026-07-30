@@ -1,9 +1,9 @@
-// Module ID: 6151
-// Function ID: 6152
+// Module ID: 6149
+// Function ID: 6150
 // Name: _fileSize
 // Dependencies: [5, 676, 4182, 3, 652, 12, 4763, 4768, 4729, 4730, 2]
 
-// Module 6151 (_fileSize)
+// Module 6149 (_fileSize)
 import apply from "apply";
 import { AbortCodes } from "ME";
 import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING";

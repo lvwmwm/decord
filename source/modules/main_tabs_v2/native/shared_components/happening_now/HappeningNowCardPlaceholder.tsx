@@ -1,10 +1,10 @@
-// Module ID: 15064
-// Function ID: 15065
+// Module ID: 15058
+// Function ID: 15059
 // Name: HappeningNowCardPlaceholder
-// Dependencies: [19, 17, 14311, 21, 4189, 712, 4050, 4190, 14312, 2]
+// Dependencies: [19, 17, 14307, 21, 4189, 712, 4050, 4190, 14308, 2]
 // Exports: HappeningNowCardPlaceholder
 
-// Module 15064 (HappeningNowCardPlaceholder)
+// Module 15058 (HappeningNowCardPlaceholder)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { HAPPENING_NOW_CONTENT_HEIGHT } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";

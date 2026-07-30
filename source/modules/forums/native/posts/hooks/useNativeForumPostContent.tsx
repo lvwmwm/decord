@@ -1,10 +1,10 @@
-// Module ID: 11202
-// Function ID: 11203
+// Module ID: 11198
+// Function ID: 11199
 // Name: useNativeForumPostContent
-// Dependencies: [676, 4189, 1236, 5923, 4524, 2]
+// Dependencies: [676, 4189, 1236, 5921, 4524, 2]
 // Exports: default
 
-// Module 11202 (useNativeForumPostContent)
+// Module 11198 (useNativeForumPostContent)
 import { MessageFlags } from "ME";
 import createCacheKey from "createCacheKey";
 
@@ -28,7 +28,7 @@ export default function useNativeForumPostContent(arg0) {
     return obj;
   } else {
     if (null != message) {
-      if (importDefault(5923)(message)) {
+      if (importDefault(5921)(message)) {
         obj = { content: null, style: null, variant: "text-sm/normal" };
         obj[0] = messageContent;
         obj[1] = tmp.italics;

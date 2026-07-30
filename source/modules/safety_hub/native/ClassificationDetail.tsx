@@ -1,10 +1,10 @@
-// Module ID: 11071
-// Function ID: 11072
+// Module ID: 11067
+// Function ID: 11068
 // Name: ClassificationHeader
-// Dependencies: [19, 17, 1946, 11072, 6756, 676, 21, 4189, 712, 4185, 6757, 1236, 589, 8340, 3886, 9028, 4600, 11077, 11079, 698, 5177, 11080, 6755, 11084, 5867, 5872, 11086, 2]
+// Dependencies: [19, 17, 1946, 11068, 6753, 676, 21, 4189, 712, 4185, 6754, 1236, 589, 8337, 3886, 9024, 4600, 11073, 11075, 698, 5177, 11076, 6752, 11080, 5865, 5870, 11082, 2]
 // Exports: default
 
-// Module 11071 (ClassificationHeader)
+// Module 11067 (ClassificationHeader)
 import expandEventProperties from "expandEventProperties";
 import get_ActivityIndicator from "useSafetyHubClassifications";
 import _getSystemLocale from "_getSystemLocale";
@@ -174,7 +174,7 @@ function ClassificationPolicyCard(classificationDescription) {
   obj = { style: tmp.classificationPolicyCardIcon, children: null };
   const obj1 = { size: "sm", color: null };
   obj1[1] = importDefault(712).colors.TEXT_LINK;
-  obj[1] = callback(policyExplainerLink(9028).ShieldIcon, obj1);
+  obj[1] = callback(policyExplainerLink(9024).ShieldIcon, obj1);
   const items1 = [callback(closure_4, obj), ];
   const obj2 = { style: tmp.classificationPolicyCardContent, children: null };
   const obj3 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
@@ -183,7 +183,7 @@ function ClassificationPolicyCard(classificationDescription) {
   obj2[1] = callback(policyExplainerLink(4185).Text, obj3);
   items1[1] = callback(closure_4, obj2);
   obj[2] = items1;
-  obj[0] = callback2(importDefault(8340), obj);
+  obj[0] = callback2(importDefault(8337), obj);
   return callback(closure_4, obj);
 }
 function AppealStatus() {

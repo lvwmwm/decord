@@ -1,10 +1,10 @@
-// Module ID: 9151
-// Function ID: 9152
+// Module ID: 9147
+// Function ID: 9148
 // Name: MemberVerificationAlertPending
-// Dependencies: [19, 21, 9148, 9152, 9153, 1236, 4600, 2]
+// Dependencies: [19, 21, 9144, 9148, 9149, 1236, 4600, 2]
 // Exports: default
 
-// Module 9151 (MemberVerificationAlertPending)
+// Module 9147 (MemberVerificationAlertPending)
 import noop from "noop";
 import jsxProd from "jsxProd";
 
@@ -30,7 +30,7 @@ export default function MemberVerificationAlertPending(guildId) {
   }, items);
   let obj = {};
   const merged1 = Object.assign(merged);
-  obj.icon = guildId(9153).ClipboardListIcon;
+  obj.icon = guildId(9149).ClipboardListIcon;
   const intl = guildId(1236).intl;
   obj.header = intl.string(guildId(1236).t.zhfXbs);
   const intl2 = guildId(1236).intl;
@@ -48,5 +48,5 @@ export default function MemberVerificationAlertPending(guildId) {
   items1[1] = callback(guildId(4600).Button, obj1);
   obj[0] = items1;
   obj.buttons = callback2(closure_5, obj);
-  return callback(onClose(9152), obj);
+  return callback(onClose(9148), obj);
 };

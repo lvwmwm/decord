@@ -1,9 +1,9 @@
-// Module ID: 8829
-// Function ID: 8830
+// Module ID: 8825
+// Function ID: 8826
 // Name: UserRowSubLabel
-// Dependencies: [19, 17, 4181, 4226, 5948, 1372, 4276, 3826, 8813, 676, 21, 4189, 712, 4199, 38, 8830, 9056, 3889, 9057, 8918, 5949, 589, 1297, 4185, 4028, 9062, 5515, 9086, 1236, 9087, 4143, 4141, 4600, 1857, 9083, 4686, 8359, 1959, 9088, 9089, 6618, 4628, 7744, 4419, 8383, 8380, 8390, 9091, 8452, 9092, 8748, 5220, 2]
+// Dependencies: [19, 17, 4181, 4226, 5946, 1372, 4276, 3826, 8809, 676, 21, 4189, 712, 4199, 38, 8826, 9052, 3889, 9053, 8914, 5947, 589, 1297, 4185, 4028, 9058, 5515, 9082, 1236, 9083, 4143, 4141, 4600, 1857, 9079, 4686, 8356, 1959, 9084, 9085, 6615, 4628, 7741, 4419, 8380, 8377, 8387, 9087, 8449, 9088, 8744, 5220, 2]
 
-// Module 8829 (UserRowSubLabel)
+// Module 8825 (UserRowSubLabel)
 import importAllResult from "handleRelationshipAddError";
 import { View } from "presentAddedFriendToast";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -45,7 +45,7 @@ function UserRowSubLabel(arg0) {
         obj[1] = guildId;
         obj[2] = gameIcon.activityText;
         obj[3] = animate;
-        return callback(importDefault(9062), obj);
+        return callback(importDefault(9058), obj);
       }
     }
   }
@@ -207,7 +207,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   const memo = flag2.useMemo(() => {
     const items = [];
     if (NONE !== guildId.ACTIONS) {
-      let obj = { accessibilityActions: null, actions: "r" };
+      let obj = { accessibilityActions: null, actions: "a" };
       obj[0] = items;
       return obj;
     } else {
@@ -650,7 +650,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   const displayNameStylesFont = tmp6Result.useDisplayNameStylesFont({ displayNameStyles: tmp26 });
   const humanizeStatusResult = type(NONE[24]).humanizeStatus(status, { isMobile: isMobileOnline, isVR: isVROnline });
   let combined;
-  if (typeof memo3 !== "init") {
+  if (typeof memo3 !== "tee") {
     if (null != humanizeStatusResult) {
       const _HermesInternal = HermesInternal;
       combined = "" + memo3 + ", " + humanizeStatusResult;

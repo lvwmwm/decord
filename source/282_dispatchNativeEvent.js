@@ -25,7 +25,7 @@ arg5.default = function dispatchNativeEvent(self, arg1, timeStamp) {
     if (timestamp == null) {
       timestamp = timeStamp.timestamp;
     }
-    if (typeof timestamp !== "os") {
+    if (typeof timestamp !== "reType") {
       tmpResult = tmp(134);
       const result2 = tmpResult.setEventInitTimeStamp(obj, timestamp);
     }

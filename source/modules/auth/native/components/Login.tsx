@@ -1,10 +1,10 @@
-// Module ID: 9191
-// Function ID: 9192
+// Module ID: 9187
+// Function ID: 9188
 // Name: LinkButton
-// Dependencies: [5, 32, 19, 17, 9192, 1218, 676, 21, 4189, 4717, 4185, 4529, 1236, 500, 4741, 9193, 1480, 589, 1483, 5641, 9194, 4530, 9195, 9196, 9197, 4088, 9198, 9202, 9203, 9205, 9199, 4600, 9206, 1577, 9208, 9210, 6727, 9214, 8733, 9215, 4598, 9222, 8999, 2]
+// Dependencies: [5, 32, 19, 17, 9188, 1218, 676, 21, 4189, 4717, 4185, 4529, 1236, 500, 4741, 9189, 1480, 589, 1483, 5641, 9190, 4530, 9191, 9192, 9193, 4088, 9194, 9198, 9199, 9201, 9195, 4600, 9202, 1577, 9204, 9206, 6724, 9210, 8729, 9211, 4598, 9218, 8995, 2]
 // Exports: default
 
-// Module 9191 (LinkButton)
+// Module 9187 (LinkButton)
 import fetchFingerprint from "fetchFingerprint";
 import KeyIcon from "KeyIcon";
 import handleLogout from "handleLogout";
@@ -284,7 +284,7 @@ export default function Login(isMultiAccount) {
               authenticationErrorsFromV6OrEarlierAPIError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

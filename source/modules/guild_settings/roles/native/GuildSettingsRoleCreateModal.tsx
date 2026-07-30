@@ -1,10 +1,10 @@
-// Module ID: 16447
-// Function ID: 16448
+// Module ID: 16441
+// Function ID: 16442
 // Name: RoleCreateScene
-// Dependencies: [5, 32, 19, 17, 1415, 1935, 1874, 8305, 16448, 676, 21, 4189, 5140, 712, 698, 4384, 4185, 1236, 16446, 589, 38, 3822, 1480, 6744, 5143, 5105, 3889, 16445, 4157, 14949, 1959, 4598, 6727, 5554, 5220, 13697, 688, 4600, 16452, 16453, 8304, 16454, 5215, 4586, 4596, 5636, 4616, 5570, 2]
+// Dependencies: [5, 32, 19, 17, 1415, 1935, 1874, 8302, 16442, 676, 21, 4189, 5140, 712, 698, 4384, 4185, 1236, 16440, 589, 38, 3822, 1480, 6741, 5143, 5105, 3889, 16439, 4157, 14943, 1959, 4598, 6724, 5554, 5220, 13692, 688, 4600, 16446, 16447, 8301, 16448, 5215, 4586, 4596, 5636, 4616, 5570, 2]
 // Exports: default
 
-// Module 16447 (RoleCreateScene)
+// Module 16441 (RoleCreateScene)
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import TextInput from "TextInput";
 import importAllResult from "initialize";
@@ -139,13 +139,13 @@ function RoleCreateScene() {
                     tmp3(3889).roleCreatedToast();
                     const obj5 = tmp3(3889);
                     const tmp13 = tmp3;
-                    tmp3(16445).setRoleJustCreated(true);
+                    tmp3(16439).setRoleJustCreated(true);
                     let STEP_MEMBERS = outer1_25.STEP_PERMISSIONS;
                     const guild2 = obj.getProps().guild;
                     tmp32(38)(null != guild2, "shouldSkipPermissions: Guild cannot be null");
                     const currentUser = outer1_11.getCurrentUser();
                     const tmp23 = outer1_9(guild2, currentUser);
-                    const obj6 = tmp3(16445);
+                    const obj6 = tmp3(16439);
                     const tmp18 = tmp32;
                     obj = { permission: null, user: null, context: null };
                     obj[0] = outer1_20.ADMINISTRATOR;

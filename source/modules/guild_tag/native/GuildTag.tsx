@@ -1,9 +1,9 @@
-// Module ID: 8452
-// Function ID: 8453
+// Module ID: 8449
+// Function ID: 8450
 // Name: memoResult1
-// Dependencies: [19, 17, 1874, 7724, 21, 4189, 712, 500, 1236, 4185, 4717, 589, 7942, 4157, 8453, 1959, 2]
+// Dependencies: [19, 17, 1874, 7721, 21, 4189, 712, 500, 1236, 4185, 4717, 589, 7939, 4157, 8450, 1959, 2]
 
-// Module 8452 (memoResult1)
+// Module 8449 (memoResult1)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -88,7 +88,7 @@ const memoResult1 = importAllResult.memo((textVariant) => {
     let tmp4 = closure_1;
     if (null != closure_1) {
       tmp4 = tmp3;
-      if (typeof tmp3 !== "init") {
+      if (typeof tmp3 !== "tee") {
         let obj = { source: null, size: null };
         obj = { uri: null };
         obj[0] = tmp3;

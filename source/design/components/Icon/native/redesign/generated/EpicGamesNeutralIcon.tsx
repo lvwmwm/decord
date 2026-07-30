@@ -1,10 +1,10 @@
-// Module ID: 8497
-// Function ID: 8498
+// Module ID: 8494
+// Function ID: 8495
 // Name: EpicGamesNeutralIcon
-// Dependencies: [19, 21, 712, 3892, 8498, 2]
+// Dependencies: [19, 21, 712, 3892, 8495, 2]
 // Exports: EpicGamesNeutralIcon
 
-// Module 8497 (EpicGamesNeutralIcon)
+// Module 8494 (EpicGamesNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const EpicGamesNeutralIcon = function EpicGamesNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8498) /* registerAsset */;
+  obj[0] = require(8495) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

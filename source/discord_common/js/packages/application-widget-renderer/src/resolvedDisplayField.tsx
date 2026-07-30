@@ -1,10 +1,10 @@
-// Module ID: 12072
-// Function ID: 12073
+// Module ID: 12066
+// Function ID: 12067
 // Name: resolveTextComponentValues
-// Dependencies: [12073, 12074, 2]
+// Dependencies: [12067, 12068, 2]
 // Exports: decimalToClampedPercentage, resolveProgressPercentage, resolveSingleStringOrSkeleton, resolveStatComponentValues, resolveTextComponentValues
 
-// Module 12072 (resolveTextComponentValues)
+// Module 12066 (resolveTextComponentValues)
 let result = require("set").fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/resolvedDisplayField.tsx");
 
 export const resolveTextComponentValues = function resolveTextComponentValues(subtitle_1, resolveFieldValue, numberFormat, arg3) {
@@ -19,11 +19,11 @@ export const resolveTextComponentValues = function resolveTextComponentValues(su
   if (null == subtitle_1) {
     return flag ? { status: "skeleton" } : { status: "hidden" };
   } else {
-    const items = [require(12073) /* resolveFieldValue */.ResolvedValueType.STRING, require(12073) /* resolveFieldValue */.ResolvedValueType.NUMBER];
+    const items = [require(12067) /* resolveFieldValue */.ResolvedValueType.STRING, require(12067) /* resolveFieldValue */.ResolvedValueType.NUMBER];
     let iter = resolveFieldValue(subtitle_1.fields.text, items);
     let str = null;
     if (!flag2) {
-      const items1 = [tmp9(12073).ResolvedValueType.STRING, tmp9(12073).ResolvedValueType.NUMBER];
+      const items1 = [tmp9(12067).ResolvedValueType.STRING, tmp9(12067).ResolvedValueType.NUMBER];
       str = resolveFieldValue(subtitle_1.fields.label, items1);
     }
     if (null == iter) {
@@ -31,7 +31,7 @@ export const resolveTextComponentValues = function resolveTextComponentValues(su
         return { status: "skeleton" };
       }
     }
-    const items2 = [require(12073) /* resolveFieldValue */.ResolvedValueType.MEDIA];
+    const items2 = [require(12067) /* resolveFieldValue */.ResolvedValueType.MEDIA];
     const tmp2 = resolveFieldValue(subtitle_1.fields.icon, items2);
     let str3 = "";
     if (null != str) {
@@ -88,18 +88,18 @@ export const resolveStatComponentValues = function resolveStatComponentValues(fi
     }
     return tmp4;
   } else {
-    const items = [require(12073) /* resolveFieldValue */.ResolvedValueType.STRING, require(12073) /* resolveFieldValue */.ResolvedValueType.NUMBER];
+    const items = [require(12067) /* resolveFieldValue */.ResolvedValueType.STRING, require(12067) /* resolveFieldValue */.ResolvedValueType.NUMBER];
     const iter = closure_1(fields.fields.value, items);
-    const items1 = [require(12073) /* resolveFieldValue */.ResolvedValueType.STRING];
+    const items1 = [require(12067) /* resolveFieldValue */.ResolvedValueType.STRING];
     const iter2 = closure_1(fields.fields.label, items1);
-    const items2 = [require(12073) /* resolveFieldValue */.ResolvedValueType.MEDIA];
+    const items2 = [require(12067) /* resolveFieldValue */.ResolvedValueType.MEDIA];
     const tmp8 = closure_1(fields.fields.icon, items2);
     if (null == iter) {
       obj = { status: "skeleton" };
     } else {
-      if (iter.type === tmp6(12073).ResolvedValueType.STRING) {
+      if (iter.type === tmp6(12067).ResolvedValueType.STRING) {
         let formatResult = iter.value;
-      } else if (iter.presentationType === tmp6(12074).ApplicationWidgetFieldPresentationType.DURATION) {
+      } else if (iter.presentationType === tmp6(12068).ApplicationWidgetFieldPresentationType.DURATION) {
         formatResult = formatDurationNarrow(iter.value);
       } else {
         formatResult = closure_2.format(iter.value);
@@ -134,7 +134,7 @@ export const resolveSingleStringOrSkeleton = function resolveSingleStringOrSkele
   if (componentConfig != null) {
     tmp = componentConfig.fields[description];
   }
-  const items = [require(12073) /* resolveFieldValue */.ResolvedValueType.STRING];
+  const items = [require(12067) /* resolveFieldValue */.ResolvedValueType.STRING];
   const iter = resolveFieldValue(tmp, items);
   if (null == iter) {
     let obj = { status: "skeleton" };

@@ -1,9 +1,9 @@
-// Module ID: 6057
-// Function ID: 6058
+// Module ID: 6055
+// Function ID: 6056
 // Name: reset
 // Dependencies: [687, 4074, 11, 3, 12, 2]
 
-// Module 6057 (reset)
+// Module 6055 (reset)
 const require = arg1;
 const MINUTE = require("set").Millis.MINUTE;
 const result = require("DISCORD_EPOCH").fileFinishedImporting("lib/guild/GuildMemberSubscriptions.tsx");

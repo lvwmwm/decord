@@ -165,7 +165,7 @@ let items = [
         opacity = tmp.opacity;
       }
       let num = 1;
-      if (typeof opacity !== "os") {
+      if (typeof opacity !== "reType") {
         num = opacity;
       }
       return num;

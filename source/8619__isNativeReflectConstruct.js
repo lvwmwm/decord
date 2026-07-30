@@ -1,7 +1,7 @@
 // Module ID: 8619
 // Function ID: 8620
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8620, 8615, 8555]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8620, 8605, 8552]
 
 // Module 8619 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const Polygon = importDefault;
+const RadialGradient = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,60 +31,76 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class Polygon {
+class RadialGradient {
   constructor() {
     self = this;
-    items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
-    items1 = [...items];
+    tmp = _isNativeReflectConstruct(this, RadialGradient);
     tmp2 = __esModule;
-    obj = __esModule(apply);
+    obj = __esModule(RadialGradient);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
-      tmp5 = globalThis;
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items1);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-    tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
-    tmp3Result.setNativeProps = (points) => {
-      points = points.points;
-      if (points) {
-        const _HermesInternal = HermesInternal;
-        points.d = "M" + _undefined(outer1_1[7])(points) + "z";
-      }
-      if (_undefined.root) {
-        const root = _undefined.root;
-        root.setNativeProps(points);
-      }
-    };
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Polygon, require("_isNativeReflectConstruct"));
-let items = [
+require("_inherits")(RadialGradient, require("_isNativeReflectConstruct"));
+const items = [
   {
     key: "render",
     value: function render() {
+      let cx;
+      let cy;
+      let fx;
+      let r;
+      let rx;
+      let ry;
+      const self = this;
       const props = this.props;
-      const points = props.points;
-      const obj = { ref: this.refMethod, d: null };
-      let combined = points;
-      if (points) {
-        const _HermesInternal = HermesInternal;
-        combined = "M" + Polygon(8620)(points) + "z";
+      ({ rx, ry, r, cx, cy, fx } = props);
+      if (undefined === fx) {
+        fx = cx;
       }
-      obj[1] = combined;
-      const merged = Object.assign(props);
-      return jsx(Polygon(8615), { ref: this.refMethod, d: null });
+      let fy = props.fy;
+      let obj = { fx, fy: null, rx: null, ry: null, cx: null, cy: null };
+      if (undefined === fy) {
+        fy = cy;
+      }
+      obj[1] = fy;
+      if (!rx) {
+        rx = r;
+      }
+      obj[2] = rx;
+      if (!ry) {
+        ry = r;
+      }
+      obj[3] = ry;
+      obj[4] = cx;
+      obj[5] = cy;
+      obj = {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      };
+      const merged = Object.assign(obj);
+      const merged1 = Object.assign(self(8605)(props, this));
+      return jsx(self(8620), {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      });
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Polygon, items);
-importDefaultResultResult.displayName = "Polygon";
-importDefaultResultResult.defaultProps = { points: "" };
+const importDefaultResultResult = importDefaultResult(RadialGradient, items);
+importDefaultResultResult.displayName = "RadialGradient";
+importDefaultResultResult.defaultProps = { cx: "50%", cy: "50%", r: "50%" };
 
 export default importDefaultResultResult;

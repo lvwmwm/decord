@@ -1,9 +1,9 @@
-// Module ID: 7987
-// Function ID: 7988
+// Module ID: 7984
+// Function ID: 7985
 // Name: premiumSince
-// Dependencies: [1876, 5898, 3835, 1416, 7943, 2]
+// Dependencies: [1876, 5896, 3835, 1416, 7940, 2]
 
-// Module 7987 (premiumSince)
+// Module 7984 (premiumSince)
 import { PremiumTypes } from "GuildFeatures";
 
 const result = require("getPremiumPlanItem").fileFinishedImporting("modules/user_profile/DisplayProfile.tsx");
@@ -119,7 +119,7 @@ Object.defineProperty(prototype, "gameWidgets", {
     const widgets = this._userProfile.widgets;
     let found;
     if (widgets != null) {
-      found = widgets.filter(require(5898) /* items */.isGameWidget);
+      found = widgets.filter(require(5896) /* items */.isGameWidget);
     }
     return found;
   },
@@ -293,7 +293,7 @@ prototype["getPreviewBanner"] = function getPreviewBanner(pendingBanner, arg1, a
   }
 };
 prototype["getPreviewBio"] = function getPreviewBio(pendingBio) {
-  let obj = require(7943) /* useAvatarsWithGuilds */;
+  let obj = require(7940) /* useAvatarsWithGuilds */;
   obj = { pendingValue: pendingBio, userValue: this._userProfile.bio, guildValue: null, guildId: null };
   const _guildMemberProfile = this._guildMemberProfile;
   let bio;
@@ -305,7 +305,7 @@ prototype["getPreviewBio"] = function getPreviewBio(pendingBio) {
   return obj.getProfilePreviewValue(obj);
 };
 prototype["getPreviewPronouns"] = function getPreviewPronouns(pendingValue) {
-  let obj = require(7943) /* useAvatarsWithGuilds */;
+  let obj = require(7940) /* useAvatarsWithGuilds */;
   obj = { pendingValue, userValue: this._userProfile.pronouns, guildValue: null, guildId: null };
   const _guildMemberProfile = this._guildMemberProfile;
   let pronouns;

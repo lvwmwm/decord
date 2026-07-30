@@ -1,10 +1,10 @@
-// Module ID: 7418
-// Function ID: 7419
+// Module ID: 7415
+// Function ID: 7416
 // Name: ReactionsSpotIllustration
-// Dependencies: [21, 5141, 7419, 2]
+// Dependencies: [21, 5141, 7416, 2]
 // Exports: ReactionsSpotIllustration
 
-// Module 7418 (ReactionsSpotIllustration)
+// Module 7415 (ReactionsSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ReactionsSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const ReactionsSpotIllustration = function ReactionsSpotIllustration(widt
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7419);
+  obj[0] = importDefault(7416);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

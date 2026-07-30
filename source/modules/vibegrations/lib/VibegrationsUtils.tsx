@@ -1,7 +1,7 @@
 // Module ID: 5682
 // Function ID: 5683
 // Name: _publishPreviewAndReauthorizeIfPermissionsChanged
-// Dependencies: [5, 4226, 1862, 3817, 5683, 676, 5684, 589, 5685, 12613, 2]
+// Dependencies: [5, 4226, 1862, 3817, 5683, 676, 5684, 589, 5685, 12607, 2]
 // Exports: canManageVibegrations, isVibegrationsChannelCandidate, publishPreviewAndReauthorizeIfPermissionsChanged, useCanManageVibegrations, useIsVibegrationsChannelCandidate, vibegrationsAppIdFromTopic, vibegrationsTopicForApp
 
 // Module 5682 (_publishPreviewAndReauthorizeIfPermissionsChanged)

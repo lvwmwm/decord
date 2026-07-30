@@ -1,15 +1,15 @@
-// Module ID: 11165
-// Function ID: 11166
+// Module ID: 11161
+// Function ID: 11162
 // Name: useShouldUseFabricChatInput
-// Dependencies: [500, 4053, 11166, 2]
+// Dependencies: [500, 4053, 11162, 2]
 // Exports: shouldUseFabricChatInput, useShouldUseFabricChatInput
 
-// Module 11165 (useShouldUseFabricChatInput)
+// Module 11161 (useShouldUseFabricChatInput)
 const chat_input = "chat_input";
 const result = require("apexExperiment").fileFinishedImporting("modules/chat_input/native/useShouldUseFabricChatInput.tsx");
 
 export const useShouldUseFabricChatInput = function useShouldUseFabricChatInput() {
-  importDefault(11166);
+  importDefault(11162);
   if (null != closure_3) {
     let isAndroidResult = closure_3;
   } else {
@@ -32,7 +32,7 @@ export const shouldUseFabricChatInput = function shouldUseFabricChatInput() {
     isAndroidResult = require(500) /* set */.isAndroid();
     let enabled = !isAndroidResult;
     if (!isAndroidResult) {
-      let obj = importDefault(11166);
+      let obj = importDefault(11162);
       obj = { location: null };
       obj[0] = chat_input;
       enabled = obj.getConfig(obj).enabled;

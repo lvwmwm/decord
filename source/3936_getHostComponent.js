@@ -41,7 +41,7 @@ export const getHostComponent = function getHostComponent(RiveView, arg1) {
 };
 export const callback = function callback(arg0) {
   let tmp = arg0;
-  if (typeof arg0 !== "_") {
+  if (typeof arg0 !== "ZodObject") {
     const obj = { f: null };
     obj[0] = arg0;
     tmp = obj;

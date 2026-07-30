@@ -1,10 +1,10 @@
-// Module ID: 10031
-// Function ID: 10032
+// Module ID: 10027
+// Function ID: 10028
 // Name: UserProfileSection
-// Dependencies: [19, 17, 21, 4189, 712, 3901, 5537, 4033, 7641, 4185, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 3901, 5537, 4033, 7638, 4185, 2]
 // Exports: default
 
-// Module 10031 (UserProfileSection)
+// Module 10027 (UserProfileSection)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,7 +41,7 @@ export default function UserProfileSection(title) {
   const merged1 = Object.assign(tmp2.contentContainer);
   if (null != primaryColor) {
     if (null != profileThemeValues) {
-      let borderColor = tmp3(4033).hexOpacityToRgba(tmp3(7641).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+      let borderColor = tmp3(4033).hexOpacityToRgba(tmp3(7638).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
       const tmp3Result = tmp3(4033);
     }
     obj.borderColor = borderColor;

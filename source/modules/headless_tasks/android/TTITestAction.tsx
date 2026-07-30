@@ -1,9 +1,9 @@
-// Module ID: 16767
-// Function ID: 16768
+// Module ID: 16761
+// Function ID: 16762
 // Name: sendReply
-// Dependencies: [5, 16047, 4103, 6694, 1218, 1372, 1862, 3, 4047, 10354, 16236, 709, 5960, 1578, 698, 5641, 6693, 4197, 14531, 1307, 2]
+// Dependencies: [5, 16041, 4103, 6691, 1218, 1372, 1862, 3, 4047, 10350, 16230, 709, 5958, 1578, 698, 5641, 6690, 4197, 14527, 1307, 2]
 
-// Module 16767 (sendReply)
+// Module 16761 (sendReply)
 import importDefaultResult from "ensureGuildLoaded";
 import { applicationReady } from "linkFromAppsFlyer";
 import getHash from "getHash";
@@ -318,7 +318,7 @@ function _apiLogin() {
               let obj = iter;
               obj = callback2(table[11]);
               callback2 = iter;
-              const f118978 = () => { ... };
+              const f118989 = () => { ... };
               function handler() { ... }
               const subscription = obj.subscribe(iter, handler);
             }
@@ -359,7 +359,7 @@ function subscribeOnce(subscribe) {
   let closure_2 = arg2;
   function handler(arg0) {
     obj.unsubscribe(closure_1, handler);
-    return f118978(arg0);
+    return f118989(arg0);
   }
   return subscribe.subscribe("LOGIN_SUCCESS", handler);
 }
@@ -373,7 +373,7 @@ let obj = {
     importDefault(4047).logToDevice(json);
   },
   () => {
-    let obj = callback(10354);
+    let obj = callback(10350);
     const result = obj.resetComponentProfiler();
     obj = { type: "response", status: "success", message: "reset-component-profiler" };
     const merged = Object.assign(undefined);
@@ -381,7 +381,7 @@ let obj = {
     importDefault(4047).logToDevice(json);
   },
   () => {
-    let obj = callback(10354);
+    let obj = callback(10350);
     const result = obj.pauseComponentProfiler();
     obj = { type: "response", status: "success", message: "pause-component-profiler" };
     const merged = Object.assign(undefined);
@@ -389,7 +389,7 @@ let obj = {
     importDefault(4047).logToDevice(json);
   },
   () => {
-    let obj = callback(10354);
+    let obj = callback(10350);
     const result = obj.resumeComponentProfiler();
     obj = { type: "response", status: "success", message: "resume-component-profiler" };
     const merged = Object.assign(undefined);
@@ -398,15 +398,15 @@ let obj = {
   },
   () => {
     let obj = { stats: null };
-    obj[0] = callback(10354).dumpStats();
+    obj[0] = callback(10350).dumpStats();
     obj = { type: "response", status: "success", message: "dump-component-profiler-stats" };
     const merged = Object.assign(obj);
     const json = JSON.stringify(obj);
-    const obj2 = callback(10354);
+    const obj2 = callback(10350);
     importDefault(4047).logToDevice(json);
   },
   () => {
-    let obj = importDefault(16236);
+    let obj = importDefault(16230);
     let report;
     if (obj != null) {
       report = obj.requestReport();
@@ -418,7 +418,7 @@ let obj = {
     importDefault(4047).logToDevice(json);
   },
   (multiplier) => {
-    let obj = importDefault(16236);
+    let obj = importDefault(16230);
     if (obj != null) {
       const result = obj.setJankHeuristicMultiplier(multiplier.multiplier);
     }
@@ -428,7 +428,7 @@ let obj = {
     importDefault(4047).logToDevice(json);
   },
   () => {
-    let obj = importDefault(16236);
+    let obj = importDefault(16230);
     if (obj != null) {
       obj.startTracking();
     }
@@ -454,13 +454,13 @@ let obj = {
   },
   () => {
     let obj = { cumulativeCPU: null, currentMemoryUsage: null };
-    obj[0] = importDefault(5960).getCumulativeCPUUsage();
-    const obj2 = importDefault(5960);
-    obj[1] = importDefault(5960).getCurrentMemoryUsageKB();
+    obj[0] = importDefault(5958).getCumulativeCPUUsage();
+    const obj2 = importDefault(5958);
+    obj[1] = importDefault(5958).getCurrentMemoryUsageKB();
     obj = { type: "response", status: "success", message: "get-resource-usage" };
     const merged = Object.assign(obj);
     const json = JSON.stringify(obj);
-    const obj3 = importDefault(5960);
+    const obj3 = importDefault(5958);
     importDefault(4047).logToDevice(json);
   },
   backchannel: null

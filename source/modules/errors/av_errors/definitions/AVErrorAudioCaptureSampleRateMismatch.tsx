@@ -1,9 +1,9 @@
-// Module ID: 16686
-// Function ID: 16687
+// Module ID: 16680
+// Function ID: 16681
 // Name: AVErrorAudioCaptureSampleRateMismatchDefinition
-// Dependencies: [4274, 4236, 4261, 687, 8852, 16674, 2]
+// Dependencies: [4274, 4236, 4261, 687, 8848, 16668, 2]
 
-// Module 16686 (AVErrorAudioCaptureSampleRateMismatchDefinition)
+// Module 16680 (AVErrorAudioCaptureSampleRateMismatchDefinition)
 import updateAveragedStatsHelper from "updateAveragedStatsHelper";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createRTCConnection from "createRTCConnection";
@@ -47,12 +47,12 @@ export const AVErrorAudioCaptureSampleRateMismatchDefinition = {
         let tmp5;
         if (Math.abs(num2) > 30) {
           obj = { type: null, audioCaptureSampleRateMismatchPercent: null };
-          obj[0] = require(8852) /* mapped */.AVError.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH;
+          obj[0] = require(8848) /* mapped */.AVError.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH;
           obj[1] = num2;
-          const merged = Object.assign(require(16674) /* getVoiceChannelErrorContext */.getVoiceChannelErrorContext());
+          const merged = Object.assign(require(16668) /* getVoiceChannelErrorContext */.getVoiceChannelErrorContext());
           const items = [obj];
           tmp5 = items;
-          const obj4 = require(16674) /* getVoiceChannelErrorContext */;
+          const obj4 = require(16668) /* getVoiceChannelErrorContext */;
         }
         return tmp5;
       }

@@ -1,18 +1,18 @@
 // Module ID: 8630
 // Function ID: 8631
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8539, 8546, 8547, 8553, 8631, 8555]
+// Dependencies: [109, 41, 42, 93, 95, 98, 19, 21, 8536, 8544, 8550, 8543, 8631, 8627, 8552]
 
 // Module 8630 (_isNativeReflectConstruct)
+import _objectWithoutProperties from "_objectWithoutProperties";
 import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
-import extractFont from "extractFont";
 
-const TSpan = arg1;
+const TextPath = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,16 +32,17 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class TSpan {
+let closure_3 = ["children", "xlinkHref", "href", "startOffset", "method", "spacing", "side", "alignmentBaseline", "midLine"];
+class TextPath {
   constructor() {
     self = this;
     items = [...arguments];
     apply = undefined;
     tmp = _isNativeReflectConstruct(this, apply);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = __esModule;
+    obj = __esModule(apply);
+    tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -55,45 +56,84 @@ class TSpan {
       matrix = matrix.matrix;
       let tmp = !matrix;
       if (!matrix) {
-        tmp = outer1_1(outer1_2[7])(matrix);
+        tmp = outer1_1(outer1_2[8])(matrix);
       }
       if (tmp) {
         matrix.matrix = tmp;
       }
-      const propsAndStylesResult = _undefined(outer1_2[8]).propsAndStyles(matrix);
-      const obj = _undefined(outer1_2[8]);
-      const merged = Object.assign(propsAndStylesResult, _undefined(outer1_2[9]).pickNotNil(outer1_1(outer1_2[10])(propsAndStylesResult, false)));
+      const merged = Object.assign(matrix, _undefined(outer1_2[9]).pickNotNil(outer1_1(outer1_2[10])(matrix, true)));
       if (_undefined.root) {
         const root = _undefined.root;
-        root.setNativeProps(propsAndStylesResult);
+        root.setNativeProps(matrix);
       }
     };
     return tmp3Result;
   }
 }
-require("_inherits")(TSpan, require("_isNativeReflectConstruct"));
+require("_inherits")(TextPath, require("_isNativeReflectConstruct"));
 let items = [
   {
     key: "render",
     value: function render() {
-      let obj = TSpan(8546);
-      const propsAndStylesResult = obj.propsAndStyles(this.props);
-      obj = {};
-      const merged = Object.assign(propsAndStylesResult);
-      obj.x = null;
-      obj.y = null;
-      const tmp2Result = importDefault(8546)(obj, this);
-      const merged1 = Object.assign(tmp2Result, importDefault(8553)(propsAndStylesResult, false));
-      tmp2Result.ref = this.refMethod;
-      obj = {};
-      const tmp2 = importDefault(8546);
-      const merged2 = Object.assign(tmp2Result);
-      return jsx(importDefault(8631), {});
+      let alignmentBaseline;
+      let children;
+      let href;
+      let method;
+      let midLine;
+      let side;
+      let spacing;
+      const self = this;
+      const props = this.props;
+      ({ children, href } = props);
+      if (undefined === href) {
+        href = props.xlinkHref;
+      }
+      const startOffset = props.startOffset;
+      let num = 0;
+      if (undefined !== startOffset) {
+        num = startOffset;
+      }
+      ({ method, spacing, side, alignmentBaseline, midLine } = props);
+      let match = href;
+      if (href) {
+        match = href.match(TextPath(8544).idPattern);
+      }
+      let tmp5 = match;
+      if (match) {
+        tmp5 = match[1];
+      }
+      if (tmp5) {
+        let obj1 = TextPath(8543);
+        const withoutXYResult = obj1.withoutXY(self, tmp);
+        const _Object = Object;
+        let obj = { children: null };
+        obj[0] = children;
+        obj = { href: null, startOffset: null, method: null, spacing: null, side: null, alignmentBaseline: null, midLine: null };
+        obj[0] = tmp5;
+        obj[1] = num;
+        obj[2] = method;
+        obj[3] = spacing;
+        obj[4] = side;
+        obj[5] = alignmentBaseline;
+        obj[6] = midLine;
+        const merged = Object.assign(withoutXYResult, importDefault(8550)(obj, true), obj);
+        withoutXYResult.ref = self.refMethod;
+        obj1 = {};
+        const merged1 = Object.assign(withoutXYResult);
+        return jsx(importDefault(8631), {});
+      } else {
+        const _console = console;
+        console.warn(`Invalid \`href\` prop for \`TextPath\` element, expected a href like "#id", but got: "${href}"`);
+        obj = { ref: null, children: null };
+        obj[0] = self.refMethod;
+        obj[1] = children;
+        return jsx(importDefault(8627), { ref: null, children: null });
+      }
+      tmp = callback(props, closure_3);
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(TSpan, items);
-importDefaultResultResult.displayName = "TSpan";
-extractFont.setTSpan(importDefaultResultResult);
+const importDefaultResultResult = importDefaultResult(TextPath, items);
+importDefaultResultResult.displayName = "TextPath";
 
 export default importDefaultResultResult;

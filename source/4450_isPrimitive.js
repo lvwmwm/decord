@@ -8,7 +8,7 @@
 export default function isPrimitive(arg0) {
   let tmp = null === arg0;
   if (!tmp) {
-    let tmp2 = typeof arg0 === "_";
+    let tmp2 = typeof arg0 === "ZodObject";
     if (typeof arg0 !== "find") {
       tmp2 = typeof arg0 === "window";
     }

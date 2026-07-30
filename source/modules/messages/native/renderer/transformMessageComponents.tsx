@@ -1,10 +1,10 @@
-// Module ID: 7889
-// Function ID: 7890
+// Module ID: 7886
+// Function ID: 7887
 // Name: transformToRowGeneratedComponent
-// Dependencies: [109, 17, 4412, 7890, 7876, 1351, 1906, 4411, 1236, 7891, 7898, 7899, 7901, 7904, 7905, 4405, 4728, 7906, 7908, 7735, 4377, 1384, 4416, 7886, 7885, 1467, 1386, 687, 4179, 7921, 501, 3830, 2]
+// Dependencies: [109, 17, 4412, 7887, 7873, 1351, 1906, 4411, 1236, 7888, 7895, 7896, 7898, 7901, 7902, 4405, 4728, 7903, 7905, 7732, 4377, 1384, 4416, 7883, 7882, 1467, 1386, 687, 4179, 7918, 501, 3830, 2]
 // Exports: default, getUnfurledMediaItemType
 
-// Module 7889 (transformToRowGeneratedComponent)
+// Module 7886 (transformToRowGeneratedComponent)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { processColor } from "set";
 import { CheckpointVersions } from "CheckpointPersonas";
@@ -570,11 +570,11 @@ function transformUnfurledMediaItem(file, shouldShowMedia) {
       if (null != height) {
         if (height > 0) {
           if (obj.isImageContentType(contentType)) {
-            let VISUAL_PLACEHOLDER = tmp(7905).MediaGalleryItemType.IMAGE;
+            let VISUAL_PLACEHOLDER = tmp(7902).MediaGalleryItemType.IMAGE;
             let tmp4 = tmp;
           } else {
             if (tmpResult.isVideoContentType(contentType)) {
-              VISUAL_PLACEHOLDER = tmp(7905).MediaGalleryItemType.VIDEO;
+              VISUAL_PLACEHOLDER = tmp(7902).MediaGalleryItemType.VIDEO;
               tmp4 = tmp;
             }
             tmpResult = tmp(4377);
@@ -589,8 +589,8 @@ function transformUnfurledMediaItem(file, shouldShowMedia) {
           size.height = 0;
           size.width = 0;
         }
-        if (VISUAL_PLACEHOLDER === tmp4(7905).MediaGalleryItemType.IMAGE) {
-          const obj4 = importDefault(7886);
+        if (VISUAL_PLACEHOLDER === tmp4(7902).MediaGalleryItemType.IMAGE) {
+          const obj4 = importDefault(7883);
           ({ proxyUrl, width: width2 } = size);
           if (width2 == null) {
             width2 = 0;
@@ -601,14 +601,14 @@ function transformUnfurledMediaItem(file, shouldShowMedia) {
           }
           size.proxyUrl = obj4.getImageSrc(proxyUrl, width2, num3, !shouldShowMedia.shouldAutoPlayGifs);
         }
-        tmp4Result = tmp4(7885);
+        tmp4Result = tmp4(7882);
         size.width = tmp4Result.sanitizeMediaDimension(size.width);
-        size.height = tmp4(7885).sanitizeMediaDimension(size.height);
+        size.height = tmp4(7882).sanitizeMediaDimension(size.height);
         return size;
       }
     }
   }
-  VISUAL_PLACEHOLDER = require(7905) /* MediaGalleryItemType */.MediaGalleryItemType.VISUAL_PLACEHOLDER;
+  VISUAL_PLACEHOLDER = require(7902) /* MediaGalleryItemType */.MediaGalleryItemType.VISUAL_PLACEHOLDER;
   tmp4 = require;
 }
 let closure_3 = ["checkpointData"];
@@ -620,7 +620,7 @@ let result = require("CheckpointPersonas").fileFinishedImporting("modules/messag
 
 export default function transformMessageComponents(message, arr) {
   let obj = { type: "textDisplayComponent", parserState: null };
-  obj[1] = obj(7876).getInitialParserStateFromMessage(message.message, closure_7);
+  obj[1] = obj(7873).getInitialParserStateFromMessage(message.message, closure_7);
   obj = {};
   const merged = Object.assign(message);
   obj.markdownConfigs = { textDisplayComponent: obj };
@@ -637,10 +637,10 @@ export const getUnfurledMediaItemType = function getUnfurledMediaItemType(arg0) 
       if (null != height) {
         if (height > 0) {
           if (obj.isImageContentType(contentType)) {
-            return tmp(7905).MediaGalleryItemType.IMAGE;
+            return tmp(7902).MediaGalleryItemType.IMAGE;
           } else {
             if (tmpResult.isVideoContentType(contentType)) {
-              return tmp(7905).MediaGalleryItemType.VIDEO;
+              return tmp(7902).MediaGalleryItemType.VIDEO;
             }
             tmpResult = tmp(4377);
           }
@@ -649,5 +649,5 @@ export const getUnfurledMediaItemType = function getUnfurledMediaItemType(arg0) 
       }
     }
   }
-  return require(7905) /* MediaGalleryItemType */.MediaGalleryItemType.VISUAL_PLACEHOLDER;
+  return require(7902) /* MediaGalleryItemType */.MediaGalleryItemType.VISUAL_PLACEHOLDER;
 };

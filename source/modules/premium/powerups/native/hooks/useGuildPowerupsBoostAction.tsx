@@ -1,10 +1,10 @@
-// Module ID: 15146
-// Function ID: 15147
+// Module ID: 15140
+// Function ID: 15141
 // Name: useGuildPowerupsBoostAction
-// Dependencies: [5, 19, 4082, 4077, 676, 11628, 5515, 6331, 4085, 4081, 5023, 11629, 2]
+// Dependencies: [5, 19, 4082, 4077, 676, 11624, 5515, 6328, 4085, 4081, 5023, 11625, 2]
 // Exports: default
 
-// Module 15146 (useGuildPowerupsBoostAction)
+// Module 15140 (useGuildPowerupsBoostAction)
 import useGuildBoostPurchaseHandler from "useGuildBoostPurchaseHandler";
 import noop from "noop";
 import handleGuildBoostsUpdate from "handleGuildBoostsUpdate";
@@ -25,7 +25,7 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
   const importDefault = arg1;
   let dependencyMap = arg2;
   const callback = arg4;
-  const tmp = importDefault(11628)(arg3);
+  const tmp = importDefault(11624)(arg3);
   const shouldUseMobileWebRedirectCheckout = tmp.shouldUseMobileWebRedirectCheckout;
   const handleMobileWebRedirectCheckout = tmp.handleMobileWebRedirectCheckout;
   const analyticsLocations = importDefault(5515)().analyticsLocations;
@@ -66,7 +66,7 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
               tmp15 = dependencyMap;
               if (dependencyMap > 0) {
                 if (!outer1_5.hasFetched) {
-                  let obj1 = outer1_1(6331);
+                  let obj1 = outer1_1(6328);
                   const items = [obj1.init(), ];
                   let obj2 = outer1_0(4085);
                   items[1] = obj2.fetchGuildBoostSlots();
@@ -126,8 +126,8 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
               const tmpResult = outer2_0(table[10]);
             }
           };
-          const result = outer1_0(11629).launchGuildBoostFlowOrAlert(obj3);
-          const obj6 = outer1_0(11629);
+          const result = outer1_0(11625).launchGuildBoostFlowOrAlert(obj3);
+          const obj6 = outer1_0(11625);
         }
       } catch (tmp50) {
         c3 = tmp;

@@ -1,10 +1,10 @@
-// Module ID: 15793
-// Function ID: 15794
+// Module ID: 15787
+// Function ID: 15788
 // Name: useLaunchPadPullTabMinimized
-// Dependencies: [19, 17, 4050, 10689, 2]
+// Dependencies: [19, 17, 4050, 10685, 2]
 // Exports: default
 
-// Module 15793 (useLaunchPadPullTabMinimized)
+// Module 15787 (useLaunchPadPullTabMinimized)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 

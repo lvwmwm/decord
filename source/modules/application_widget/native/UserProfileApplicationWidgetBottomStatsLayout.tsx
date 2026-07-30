@@ -1,10 +1,10 @@
-// Module ID: 12160
-// Function ID: 12161
+// Module ID: 12154
+// Function ID: 12155
 // Name: UserProfileApplicationWidgetBottomStatsLayout
-// Dependencies: [19, 17, 21, 4189, 712, 12070, 12157, 4185, 12158, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 12064, 12151, 4185, 12152, 2]
 // Exports: default
 
-// Module 12160 (UserProfileApplicationWidgetBottomStatsLayout)
+// Module 12154 (UserProfileApplicationWidgetBottomStatsLayout)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

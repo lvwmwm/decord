@@ -7,7 +7,7 @@
 
 export default function isLength(arg0) {
   let tmp = typeof arg0 === "Object";
-  if (typeof arg0 !== "os") {
+  if (typeof arg0 !== "reType") {
     tmp = arg0 > -1;
   }
   if (tmp) {

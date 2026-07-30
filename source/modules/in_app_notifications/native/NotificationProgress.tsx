@@ -1,10 +1,10 @@
-// Module ID: 10338
-// Function ID: 10339
+// Module ID: 10334
+// Function ID: 10335
 // Name: Progress
-// Dependencies: [32, 19, 17, 21, 4189, 712, 4050, 10302, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 4050, 10298, 2]
 // Exports: default
 
-// Module 10338 (Progress)
+// Module 10334 (Progress)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -110,7 +110,7 @@ export default function NotificationProgress(percent) {
   let type;
   percent = percent.percent;
   ({ canExpand, type } = percent);
-  let obj = require(10302) /* context */;
+  let obj = require(10298) /* context */;
   const inAppNotificationContext = obj.useInAppNotificationContext();
   if (canExpand) {
     obj = { percent: null, hideProgress: null, type: null };

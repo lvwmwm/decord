@@ -1,10 +1,10 @@
-// Module ID: 16044
-// Function ID: 16045
+// Module ID: 16038
+// Function ID: 16039
 // Name: MediaInfo
-// Dependencies: [32, 19, 17, 1372, 4407, 3826, 1874, 676, 15914, 21, 4189, 712, 3893, 589, 4380, 7996, 4185, 16045, 4611, 5713, 5679, 4050, 4190, 1236, 8236, 5147, 4143, 698, 13590, 3804, 16042, 8129, 8127, 14084, 2]
+// Dependencies: [32, 19, 17, 1372, 4407, 3826, 1874, 676, 15908, 21, 4189, 712, 3893, 589, 4380, 7993, 4185, 16039, 4611, 5713, 5679, 4050, 4190, 1236, 8233, 5147, 4143, 698, 13585, 3804, 16036, 8126, 8124, 14080, 2]
 // Exports: default
 
-// Module 16044 (MediaInfo)
+// Module 16038 (MediaInfo)
 import PlayIcon from "PlayIcon";
 import trackInvite from "trackInvite";
 import get_ActivityIndicator from "AnimatedChild";
@@ -77,7 +77,7 @@ function MediaInfo(message) {
           if (contentMessage.attachments.length > 0) {
             str2 = "";
             if (null != activeMediaPlayerSource.attachmentIndex) {
-              str2 = tmp4(7996)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
+              str2 = tmp4(7993)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
             }
           }
         }
@@ -101,7 +101,7 @@ function MediaInfo(message) {
           obj2[0] = { flex: 1 };
           const obj3 = { spacing: 20, speed: 0.2, children: null };
           obj3[2] = tmp14;
-          const items3 = [tmp13(tmp2(16045).Marquee, obj3), ];
+          const items3 = [tmp13(tmp2(16039).Marquee, obj3), ];
           const obj4 = { start: null, end: null, locations: null, colors: null, style: null };
           obj4[0] = { x: 0, y: 0 };
           obj4[1] = { x: 1, y: 0 };
@@ -187,7 +187,7 @@ function PiPControls(message) {
   }
   obj = { style: items1, children: null };
   items1 = [tmp.pipControls, animatedStyle];
-  const items2 = [callback2(message(8236).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
+  const items2 = [callback2(message(8233).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
   const items3 = [, ];
   ({ pipButton: arr4[0], backButton: arr4[1] } = tmp);
   items2[1] = callback2(closure_6, { disabled: !visible, style: items3, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: callback2(message(5147).ArrowLargeLeftIcon, { size: "sm" }) });

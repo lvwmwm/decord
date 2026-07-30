@@ -1,9 +1,9 @@
-// Module ID: 14210
-// Function ID: 14211
+// Module ID: 14206
+// Function ID: 14207
 // Name: QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED
-// Dependencies: [19, 17, 5033, 14122, 21, 4189, 14123, 14211, 4050, 2]
+// Dependencies: [19, 17, 5033, 14118, 21, 4189, 14119, 14207, 4050, 2]
 
-// Module 14210 (QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED)
+// Module 14206 (QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { QuestDockMode } from "QuestsExperimentLocations";

@@ -1,10 +1,10 @@
-// Module ID: 6227
-// Function ID: 6228
+// Module ID: 6224
+// Function ID: 6225
 // Name: items
 // Dependencies: [1876, 712, 2]
 // Exports: getPremiumGradientColor
 
-// Module 6227 (items)
+// Module 6224 (items)
 import { PremiumTypes } from "GuildFeatures";
 
 const obj = { PREMIUM_TIER_0: null, PREMIUM_TIER_1: null, PREMIUM_TIER_2: null, PREMIUM_TIER_2_TRI_COLOR: null, PREMIUM_GUILD: null, PREMIUM_TIER_0_PERK_CARD: null, PREMIUM_TIER_2_OFFER_COLOR: null };

@@ -142,7 +142,7 @@ export const hermesProfilingIntegration = () => {
         }
         let profilesSampleRate;
         if (undefined) {
-          if (typeof tmp11.profilesSampleRate !== "os") {
+          if (typeof tmp11.profilesSampleRate !== "reType") {
             profilesSampleRate = tmp11.profilesSampleRate;
           }
         }
@@ -240,7 +240,7 @@ export const hermesProfilingIntegration = () => {
         profile_id = data.profile_id;
       }
     }
-    if (typeof profile_id === "init") {
+    if (typeof profile_id === "tee") {
       const debug3 = _undefined(_undefined2[2]).debug;
       debug3.log("[Profiling] cannot find profile for a transaction without a profile context");
       return null;

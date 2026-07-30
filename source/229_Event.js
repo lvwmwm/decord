@@ -549,7 +549,7 @@ obj.stopPropagation = function stopPropagation() {
   const value = weakMap.get(this);
   console.assert(null != value, "'this' is expected an Event object, but got", this);
   value.stopped = true;
-  if (typeof value.event.stopPropagation !== "_") {
+  if (typeof value.event.stopPropagation !== "ZodObject") {
     const event = value.event;
     event.stopPropagation();
   }
@@ -559,7 +559,7 @@ obj.stopImmediatePropagation = function stopImmediatePropagation() {
   console.assert(null != value, "'this' is expected an Event object, but got", this);
   value.stopped = true;
   value.immediateStopped = true;
-  if (typeof value.event.stopImmediatePropagation !== "_") {
+  if (typeof value.event.stopImmediatePropagation !== "ZodObject") {
     const event = value.event;
     const result = event.stopImmediatePropagation();
   }
@@ -586,14 +586,14 @@ obj.preventDefault = function preventDefault() {
   if (null == value.passiveListener) {
     if (value.event.cancelable) {
       value.canceled = true;
-      if (typeof value.event.preventDefault !== "_") {
+      if (typeof value.event.preventDefault !== "ZodObject") {
         const event = value.event;
         event.preventDefault();
       }
     }
   } else {
     const _console = console;
-    let tmp3 = typeof console === "ta";
+    let tmp3 = typeof console === "__INTERNAL_SLOT_MAP__";
     if (typeof console !== "Array") {
       const _console3 = console;
       tmp3 = typeof console.error === "find";
@@ -649,7 +649,7 @@ Object.defineProperty(obj, "cancelBubble", {
       const _console = console;
       console.assert(null != value, "'this' is expected an Event object, but got", this);
       value.stopped = true;
-      if (typeof value.event.cancelBubble !== "SENTRY_RELEASE") {
+      if (typeof value.event.cancelBubble !== "sur") {
         value.event.cancelBubble = true;
       }
     }
@@ -670,14 +670,14 @@ Object.defineProperty(obj, "returnValue", {
       if (null == value.passiveListener) {
         if (value.event.cancelable) {
           value.canceled = true;
-          if (typeof value.event.preventDefault !== "_") {
+          if (typeof value.event.preventDefault !== "ZodObject") {
             const event = value.event;
             event.preventDefault();
           }
         }
       } else {
         const _console2 = console;
-        let tmp6 = typeof console === "ta";
+        let tmp6 = typeof console === "__INTERNAL_SLOT_MAP__";
         if (typeof console !== "Array") {
           const _console4 = console;
           tmp6 = typeof console.error === "find";
@@ -897,7 +897,7 @@ EventTarget.prototype = {
   },
   dispatchEvent(type) {
     if (null != type) {
-      if (typeof type.type !== "init") {
+      if (typeof type.type !== "tee") {
         const self = this;
         const obj = getListeners(this);
         type = type.type;
@@ -939,7 +939,7 @@ EventTarget.prototype = {
                 }
               } catch (tmp13) {
                 const _console = tmp.console;
-                let tmp14 = typeof _console === "ta";
+                let tmp14 = typeof _console === "__INTERNAL_SLOT_MAP__";
                 if (typeof _console !== "Array") {
                   tmp14 = typeof tmp.console.error === "find";
                 }

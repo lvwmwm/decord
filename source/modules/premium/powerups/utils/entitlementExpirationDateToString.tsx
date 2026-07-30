@@ -1,10 +1,10 @@
-// Module ID: 11617
-// Function ID: 11618
+// Module ID: 11613
+// Function ID: 11614
 // Name: entitlementExpirationDateToString
 // Dependencies: [1946, 2]
 // Exports: default
 
-// Module 11617 (entitlementExpirationDateToString)
+// Module 11613 (entitlementExpirationDateToString)
 import _getSystemLocale from "_getSystemLocale";
 
 const result = require("set").fileFinishedImporting("modules/premium/powerups/utils/entitlementExpirationDateToString.tsx");

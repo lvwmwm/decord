@@ -1,10 +1,10 @@
-// Module ID: 8318
-// Function ID: 8319
+// Module ID: 8315
+// Function ID: 8316
 // Name: EditGuildScheduledEventResetWarningAlert
 // Dependencies: [19, 21, 4618, 1236, 2]
 // Exports: default
 
-// Module 8318 (EditGuildScheduledEventResetWarningAlert)
+// Module 8315 (EditGuildScheduledEventResetWarningAlert)
 import "noop";
 import { jsx } from "jsxProd";
 

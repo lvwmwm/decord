@@ -1,10 +1,10 @@
-// Module ID: 10829
-// Function ID: 10830
+// Module ID: 10825
+// Function ID: 10826
 // Name: Text
-// Dependencies: [19, 17, 1372, 1862, 4261, 10830, 4275, 1874, 4250, 21, 4189, 4033, 712, 1297, 589, 4380, 10832, 10831, 709, 5177, 4600, 1236, 2]
+// Dependencies: [19, 17, 1372, 1862, 4261, 10826, 4275, 1874, 4250, 21, 4189, 4033, 712, 1297, 589, 4380, 10828, 10827, 709, 5177, 4600, 1236, 2]
 // Exports: default
 
-// Module 10829 (Text)
+// Module 10825 (Text)
 import importAllResult from "SafeAreaPaddingView";
 import get_ActivityIndicator from "open";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -59,7 +59,7 @@ function ObjectKV(obj) {
         value = iter.value;
       }
       value = obj;
-      if (typeof value !== "os") {
+      if (typeof value !== "reType") {
         value = obj.at(-1).value;
       }
     }
@@ -228,7 +228,7 @@ export default function RTCDebugOverlay(arg0) {
   const tmp = callback3();
   const effect = importAllResult.useEffect(() => {
     callback(table[17]).open();
-    return () => callback(709).wait(callback2(10831).close);
+    return () => callback(709).wait(callback2(10827).close);
   }, []);
   let obj = { top: true, left: true, right: true, bottom: true, style: items, children: null };
   items = [tmp.container, style];

@@ -68,7 +68,7 @@ let regExp = new RegExp("(%[a-f0-9]{2})|([^%]+?)", "gi");
 const regExp1 = new RegExp("(%[a-f0-9]{2})+", "gi");
 
 export default (arg0) => {
-  if (typeof arg0 === "init") {
+  if (typeof arg0 === "tee") {
     const _TypeError = TypeError;
     const _HermesInternal = HermesInternal;
     const typeError = new TypeError("Expected `encodedURI` to be of type `string`, got `" + typeof arg0 + "`");

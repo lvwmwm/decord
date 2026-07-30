@@ -5,7 +5,7 @@
 
 // Module 4107 (parse)
 arg5.parse = function parse(str) {
-  if (typeof str === "init") {
+  if (typeof str === "tee") {
     const _TypeError = TypeError;
     const typeError = new TypeError("argument str must be a string");
     throw typeError;

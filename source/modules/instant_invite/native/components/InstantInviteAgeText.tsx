@@ -1,10 +1,10 @@
-// Module ID: 11810
-// Function ID: 11811
+// Module ID: 11806
+// Function ID: 11807
 // Name: InstantInviteAgeText
-// Dependencies: [19, 17, 8349, 21, 4189, 589, 4185, 8350, 4717, 8348, 1236, 2]
+// Dependencies: [19, 17, 8346, 21, 4189, 589, 4185, 8347, 4717, 8345, 1236, 2]
 // Exports: default
 
-// Module 11810 (InstantInviteAgeText)
+// Module 11806 (InstantInviteAgeText)
 import "noop";
 import { View } from "get ActivityIndicator";
 import updateWithLatestInvite from "updateWithLatestInvite";
@@ -38,7 +38,7 @@ export default function InstantInviteAgeText(style) {
     const items1 = [tmp.inviteAgeContainer, style.style];
     obj[0] = items1;
     obj = { variant: "text-xs/normal", children: null };
-    const items2 = [tmp2(8350).maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
+    const items2 = [tmp2(8347).maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses), " "];
     obj[1] = items2;
     const items3 = [callback(tmp2(4185).Text, obj), ];
     if (canEditInvite) {
@@ -61,7 +61,7 @@ export default function InstantInviteAgeText(style) {
     items3[1] = canEditInvite;
     obj[1] = items3;
     tmp6Result = callback(View, obj);
-    const tmp2Result = tmp2(8350);
+    const tmp2Result = tmp2(8347);
     const tmp6 = callback;
     const tmp7 = View;
   }

@@ -1,9 +1,9 @@
-// Module ID: 15451
-// Function ID: 15452
+// Module ID: 15445
+// Function ID: 15446
 // Name: ApplicationStatusIcon
-// Dependencies: [19, 17, 21, 4189, 712, 4009, 4150, 6736, 15452, 4185, 1236, 15448, 3859, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4009, 4150, 6733, 15446, 4185, 1236, 15442, 3859, 2]
 
-// Module 15451 (ApplicationStatusIcon)
+// Module 15445 (ApplicationStatusIcon)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,7 +26,7 @@ function ApplicationStatusIcon(status) {
     obj = { size: "sm", color: null, secondaryColor: null };
     obj[1] = importDefault(712).colors.ICON_FEEDBACK_CRITICAL;
     obj[2] = importDefault(712).colors.WHITE;
-    return callback(tmp(6736).CircleXIcon, obj);
+    return callback(tmp(6733).CircleXIcon, obj);
   } else {
     return null;
   }
@@ -49,7 +49,7 @@ const memoResult = importAllResult.memo((arg0) => {
   ({ guildId, userId, selectedJoinRequestId } = arg0);
   const tmp = callback3();
   _require = tmp;
-  let obj = _require(15452);
+  let obj = _require(15446);
   const otherGuildJoinRequestsForUser = obj.useOtherGuildJoinRequestsForUser({ guildId, userId, selectedJoinRequestId });
   let tmp4 = null;
   if (0 !== otherGuildJoinRequestsForUser.length) {

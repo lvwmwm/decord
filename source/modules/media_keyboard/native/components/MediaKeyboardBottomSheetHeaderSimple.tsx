@@ -1,8 +1,8 @@
-// Module ID: 9679
-// Function ID: 9680
-// Dependencies: [19, 17, 1576, 21, 4189, 712, 9680, 2]
+// Module ID: 9676
+// Function ID: 9677
+// Dependencies: [19, 17, 1576, 21, 4189, 712, 9677, 2]
 
-// Module 9679
+// Module 9676
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -16,7 +16,7 @@ const memoResult = require("noop").memo(function MediaKeyboardBottomSheetHeaderS
   let animatedIndex;
   let onPress;
   ({ animatedIndex, onPress } = arg0);
-  return <View style={callback().headerHandleOnlyWrap}>{jsx(importDefault(9680), { animatedIndex, onPress })}</View>;
+  return <View style={callback().headerHandleOnlyWrap}>{jsx(importDefault(9677), { animatedIndex, onPress })}</View>;
 });
 const result = require("DRAG_HANDLE").fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardBottomSheetHeaderSimple.tsx");
 

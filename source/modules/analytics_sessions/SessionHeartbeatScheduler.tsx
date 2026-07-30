@@ -438,7 +438,7 @@ function _getSession() {
               c3 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {

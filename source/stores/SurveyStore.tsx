@@ -1,9 +1,9 @@
-// Module ID: 9274
-// Function ID: 9275
+// Module ID: 9270
+// Function ID: 9271
 // Name: fetchSurveyIfNeeded
-// Dependencies: [4110, 1862, 3817, 4006, 1874, 676, 687, 9275, 506, 595, 3771, 589, 709, 2]
+// Dependencies: [4110, 1862, 3817, 4006, 1874, 676, 687, 9271, 506, 595, 3771, 589, 709, 2]
 
-// Module 9274 (fetchSurveyIfNeeded)
+// Module 9270 (fetchSurveyIfNeeded)
 import handleInviteData from "handleInviteData";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -33,7 +33,7 @@ function fetchSurveyIfNeeded() {
   }
   if (!tmp) {
     c18 = true;
-    obj = require(9275) /* overrideSurvey */;
+    obj = require(9271) /* overrideSurvey */;
     obj.surveyFetch(obj.surveyOverride, true);
   }
 }
@@ -697,7 +697,7 @@ obj = {
       const hiddenSurveys = obj.hiddenSurveys;
       delete tmp[tmp2];
     }
-    obj = require(9275) /* overrideSurvey */;
+    obj = require(9271) /* overrideSurvey */;
     obj.surveyFetch(obj.surveyOverride, true);
   },
   PUSH_NOTIFICATION_CLICK: function handlePushNotificationClick() {

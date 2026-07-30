@@ -1,10 +1,10 @@
-// Module ID: 9365
-// Function ID: 9366
+// Module ID: 9361
+// Function ID: 9362
 // Name: ShinyButton
-// Dependencies: [19, 21, 4189, 712, 4601, 1297, 9366, 2]
+// Dependencies: [19, 21, 4189, 712, 4601, 1297, 9362, 2]
 // Exports: default
 
-// Module 9365 (ShinyButton)
+// Module 9361 (ShinyButton)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -37,7 +37,7 @@ export default function ShinyButton(style) {
   if (!loading) {
     obj = { size: null, source: null, style: null };
     obj[0] = tmp4(1297).Icon.Sizes.REFRESH_SMALL_16;
-    obj[1] = importDefault(9366);
+    obj[1] = importDefault(9362);
     const items1 = [tmp2.sparkleIcon, ];
     if (disabled) {
       disabled = tmp2.disabled;

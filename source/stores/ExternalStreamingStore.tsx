@@ -1,9 +1,9 @@
-// Module ID: 10475
-// Function ID: 10476
+// Module ID: 10471
+// Function ID: 10472
 // Name: makeTwitchRequest
-// Dependencies: [5, 4869, 4029, 676, 687, 530, 4995, 709, 7917, 4871, 659, 589, 2]
+// Dependencies: [5, 4869, 4029, 676, 687, 530, 4995, 709, 7914, 4871, 659, 589, 2]
 
-// Module 10475 (makeTwitchRequest)
+// Module 10471 (makeTwitchRequest)
 import sendRequest from "sendRequest";
 import closure_4 from "set";
 import initialize from "initialize";
@@ -589,8 +589,6 @@ const prototype2 = ExternalStreamingStore.prototype;
 prototype2["initialize"] = function initialize() {
   if (initialize.enabled) {
     obj.start();
-  } else {
-    obj.stop();
   }
   this.waitFor(closure_4, initialize);
   const items = [initialize];

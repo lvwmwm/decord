@@ -1,8 +1,8 @@
-// Module ID: 14825
-// Function ID: 14826
-// Dependencies: [19, 17, 21, 4189, 712, 1480, 1581, 5554, 13636, 5220, 13633, 2]
+// Module ID: 14818
+// Function ID: 14819
+// Dependencies: [19, 17, 21, 4189, 712, 1480, 1581, 5554, 13631, 5220, 13628, 2]
 
-// Module 14825
+// Module 14818
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -21,7 +21,7 @@ const memoResult = require("noop").memo(function DevToolsPerformanceTestingScree
   obj[0] = importDefault(1581)().bottom + importDefault(712).space.PX_16;
   obj[1] = obj;
   const obj1 = { hasIcons: true, children: null };
-  const entries = Object.entries(_require(13636).PerformanceTestingScreens);
+  const entries = Object.entries(_require(13631).PerformanceTestingScreens);
   obj1[1] = entries.map((arg0) => {
     let tmp;
     [tmp, ] = arg0;

@@ -1,15 +1,15 @@
-// Module ID: 10260
-// Function ID: 10261
+// Module ID: 10258
+// Function ID: 10259
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 10260 (dispatcher)
+// Module 10258 (dispatcher)
 const result = require("set").fileFinishedImporting("actions/native/InAppNotificationActionCreators.tsx");
 
 export default {
-  enqueueNotification(notification) {
+  enqueueNotification(buildResult) {
     let obj = importDefault(709);
-    obj = { type: "ENQUEUE_IN_APP_NOTIFICATION", notification };
+    obj = { type: "ENQUEUE_IN_APP_NOTIFICATION", notification: buildResult };
     obj.dispatch(obj);
   },
   clearNotification() {

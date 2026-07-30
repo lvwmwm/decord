@@ -1,10 +1,10 @@
-// Module ID: 12531
-// Function ID: 12532
+// Module ID: 12525
+// Function ID: 12526
 // Name: GuildBoostSlotCooldown
-// Dependencies: [19, 17, 1302, 1862, 4082, 3841, 676, 21, 4189, 712, 5109, 6234, 4185, 1236, 11, 4717, 5023, 5566, 12532, 589, 1416, 12533, 12537, 4509, 4085, 12, 2]
+// Dependencies: [19, 17, 1302, 1862, 4082, 3841, 676, 21, 4189, 712, 5109, 6231, 4185, 1236, 11, 4717, 5023, 5566, 12526, 589, 1416, 12527, 12531, 4509, 4085, 12, 2]
 // Exports: default
 
-// Module 12531 (GuildBoostSlotCooldown)
+// Module 12525 (GuildBoostSlotCooldown)
 import initialize from "initialize";
 import get_ActivityIndicator from "GuildIconSizes";
 import handleThemeChange from "handleThemeChange";
@@ -29,8 +29,8 @@ function GuildBoostSlotCooldown(cooldownEndsAt) {
   const items = [cooldownEndsAt];
   const memo = React.useMemo(() => new Date(cooldownEndsAt), items);
   const tmp = createCacheKey();
-  ({ days, hours, minutes } = importDefault(6234)(memo, 15000));
-  const tmp3 = importDefault(6234)(memo, 15000);
+  ({ days, hours, minutes } = importDefault(6231)(memo, 15000));
+  const tmp3 = importDefault(6231)(memo, 15000);
   let tmp5 = null;
   if (valueOfResult > Date.now()) {
     let obj = { style: null, variant: "text-xs/medium", color: "text-muted", children: null };
@@ -209,7 +209,7 @@ function BoostedGuildInfo(guild) {
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.guildInfoRowBottom;
     const obj4 = { source: null, style: null };
-    obj4[0] = importDefault(12532);
+    obj4[0] = importDefault(12526);
     obj4[1] = tmp.guildInfoRowIcon;
     const items2 = [callback(closure_6, obj4), ];
     const obj5 = { style: null, variant: "text-xs/semibold", color: "interactive-text-active", children: null };
@@ -249,7 +249,7 @@ function BoostedGuild(arg0) {
       guildBannerSource = obj2.getGuildBannerSource(stateFromStores);
     }
   }
-  let subscriptionPlaceholderPatternSource = require(12533) /* getSubscriptionPlaceholderPatternSource */.useSubscriptionPlaceholderPatternSource();
+  let subscriptionPlaceholderPatternSource = require(12527) /* getSubscriptionPlaceholderPatternSource */.useSubscriptionPlaceholderPatternSource();
   if (null != guildBannerSource) {
     subscriptionPlaceholderPatternSource = guildBannerSource;
   }
@@ -272,7 +272,7 @@ function BoostedGuild(arg0) {
     tmp11Result = tmp11(tmp10, obj3);
   }
   items3[1] = tmp11Result;
-  items3[2] = closure_11(guildBoostSlots(12537), { guild: stateFromStores, theme: stateFromStores1 });
+  items3[2] = closure_11(guildBoostSlots(12531), { guild: stateFromStores, theme: stateFromStores1 });
   obj1[1] = items3;
   const items4 = [closure_12(closure_5, obj1), closure_11(BoostedGuildInfo, { guild: stateFromStores, numGuildBoostSlots: guildBoostSlots.length })];
   obj[1] = items4;
@@ -280,7 +280,7 @@ function BoostedGuild(arg0) {
   const obj4 = { guild: stateFromStores, numGuildBoostSlots: guildBoostSlots.length };
   const tmp12 = closure_6;
   const tmp2 = require;
-  const tmp2Result = require(12533) /* getSubscriptionPlaceholderPatternSource */;
+  const tmp2Result = require(12527) /* getSubscriptionPlaceholderPatternSource */;
   items5[1] = closure_11(closure_5, { children: guildBoostSlots.map((guildBoostSlot) => outer1_11(outer1_17, { guild: stateFromStores, guildBoostSlot, isLast: arg1 === guildBoostSlots.length - 1 }, guildBoostSlot.id)) });
   obj[1] = items5;
   return closure_12(closure_5, obj);

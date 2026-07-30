@@ -1,10 +1,10 @@
-// Module ID: 13708
-// Function ID: 13709
+// Module ID: 13703
+// Function ID: 13704
 // Name: useUploadAvatar
-// Dependencies: [5, 19, 1874, 676, 1876, 647, 6191, 4157, 4731, 3835, 7951, 7944, 7941, 7943, 2]
+// Dependencies: [5, 19, 1874, 676, 1876, 647, 6188, 4157, 4731, 3835, 7948, 7941, 7938, 7940, 2]
 // Exports: default
 
-// Module 13708 (useUploadAvatar)
+// Module 13703 (useUploadAvatar)
 import defaultAreStatesEqual from "defaultAreStatesEqual";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -114,24 +114,24 @@ export default function useUploadAvatar(guildId) {
               }
             }
           }
-          obj1 = outer1_0(7951);
+          obj1 = outer1_0(7948);
           const obj4 = { imageUri: null, description: null, originalMd5: null };
           obj4[0] = base64;
-          obj3 = outer1_0(7951);
+          obj3 = outer1_0(7948);
           obj4[1] = obj3.generateAvatarDescription();
           obj4[2] = originalMd5;
           closure_4 = obj1.createPendingImage(obj4);
           if (outer1_1) {
-            let tmp28Result = tmp28(7944);
+            let tmp28Result = tmp28(7941);
             tmp28Result.setTryItOutAvatar(outer1_4);
           } else {
-            tmp28Result = tmp28(7941);
+            tmp28Result = tmp28(7938);
             const obj5 = { guildId: null, avatar: null };
             obj5[0] = closure_0;
             obj5[1] = outer1_4;
             tmp28Result.setPendingChanges(obj5);
-            const result = outer1_0(7943).announcePendingAvatarChange("set");
-            const obj7 = outer1_0(7943);
+            const result = outer1_0(7940).announcePendingAvatarChange("set");
+            const obj7 = outer1_0(7940);
           }
         }
       } catch (tmp38) {

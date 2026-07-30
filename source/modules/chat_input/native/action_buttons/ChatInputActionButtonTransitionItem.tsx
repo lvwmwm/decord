@@ -1,10 +1,10 @@
-// Module ID: 11406
-// Function ID: 11407
+// Module ID: 11402
+// Function ID: 11403
 // Name: FadeTransitionItem
-// Dependencies: [19, 17, 11155, 21, 4534, 4050, 4190, 11407, 2]
+// Dependencies: [19, 17, 11151, 21, 4534, 4050, 4190, 11403, 2]
 // Exports: default, interactivityProps
 
-// Module 11406 (FadeTransitionItem)
+// Module 11402 (FadeTransitionItem)
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { CHAT_INPUT_TIMING_CONFIG } from "TextAreaCta";
@@ -83,8 +83,8 @@ function BounceTransitionItem(state) {
   obj[1] = state !== require(4534) /* wrapChildrenDefault */.TransitionStates.ENTERED;
   obj[2] = bounceEnterDelayMs;
   obj[3] = cleanup;
-  const tmp = importDefault(11407);
-  ({ isInteractive, animatedStyle } = importDefault(11407)(obj));
+  const tmp = importDefault(11403);
+  ({ isInteractive, animatedStyle } = importDefault(11403)(obj));
   obj = { style: items };
   items = [closure_6.transitionItemCentered, animatedStyle];
   let str = "none";

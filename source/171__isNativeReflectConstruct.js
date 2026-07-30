@@ -95,7 +95,7 @@ let items = [
       const tmp = PerformanceLongTaskTiming(callback2(self.prototype), "toJSON", this);
       let _classCallCheck = tmp;
       let fn = tmp;
-      if (typeof tmp !== "_") {
+      if (typeof tmp !== "ZodObject") {
         fn = (arg0) => tmp.apply(self, arg0);
       }
       const obj = {};

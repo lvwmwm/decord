@@ -1,10 +1,10 @@
-// Module ID: 14952
-// Function ID: 14953
+// Module ID: 14946
+// Function ID: 14947
 // Name: UnreadIndicator
-// Dependencies: [19, 4608, 14942, 21, 4189, 712, 3893, 4534, 4599, 4050, 7679, 14953, 14931, 4046, 1236, 3902, 5568, 7970, 2]
+// Dependencies: [19, 4608, 14936, 21, 4189, 712, 3893, 4534, 4599, 4050, 7676, 14947, 14925, 4046, 1236, 3902, 5568, 7967, 2]
 // Exports: default, useGuildsBarAnimatedWrapperStyles
 
-// Module 14952 (UnreadIndicator)
+// Module 14946 (UnreadIndicator)
 import noop from "noop";
 import { IOS_POINTER_STYLE } from "IOS_POINTER_STYLE";
 import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE";
@@ -38,7 +38,7 @@ class UnreadIndicator {
     tmp5 = id;
     token = obj.useToken(require("Themes").modules.mobile.GUILD_BAR_ITEM_SIZE);
     c4 = token;
-    tmp7 = f60433(c6());
+    tmp7 = f60453(c6());
     GUILD_BAR_ITEM_SIZE = tmp7;
     tmp8 = MOUNTED === require("wrapChildrenDefault").TransitionStates.MOUNTED;
     c6 = tmp8;
@@ -93,7 +93,7 @@ class UnreadIndicator {
     obj[5] = token;
     fn.__closure = obj;
     fn.__workletHash = 404454683979;
-    fn.__initData = f60434;
+    fn.__initData = f60454;
     items1 = [, , , ];
     items1[0] = tmp8;
     items1[1] = sharedId;
@@ -131,12 +131,12 @@ class UnreadIndicator {
     obj1[5] = require("module_4050").runOnJS;
     fn2.__closure = obj1;
     fn2.__workletHash = 10632665703864;
-    fn2.__initData = f60434;
+    fn2.__initData = f60454;
     items2 = [, ];
     items2[0] = MOUNTED;
     items2[1] = cleanUp;
     callback1 = cleanUp.useCallback(fn2, items2);
-    return c7(require("module_7679"), { collapsable: false, entering: callback, layout: callback1, style: memo, pointerEvents: "none" });
+    return c7(require("module_7676"), { collapsable: false, entering: callback, layout: callback1, style: memo, pointerEvents: "none" });
   }
 }
 function renderUnreadIndicator(arg0, sharedId, transitionState, cleanUp) {

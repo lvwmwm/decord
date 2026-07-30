@@ -1,10 +1,10 @@
-// Module ID: 8747
-// Function ID: 8748
+// Module ID: 8743
+// Function ID: 8744
 // Name: NameplateUser
-// Dependencies: [19, 17, 4181, 21, 4189, 712, 8046, 1898, 1236, 4185, 4611, 8664, 7977, 7943, 589, 4028, 4419, 8380, 8381, 1297, 8748, 5220, 2]
+// Dependencies: [19, 17, 4181, 21, 4189, 712, 8043, 1898, 1236, 4185, 4611, 8661, 7974, 7940, 589, 4028, 4419, 8377, 8378, 1297, 8744, 5220, 2]
 // Exports: default
 
-// Module 8747 (NameplateUser)
+// Module 8743 (NameplateUser)
 import Button from "Button";
 import { View } from "AVERAGE_FONT_WIDTH_RATIO";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -49,7 +49,7 @@ function NameplateUser(arg0) {
   }
   const items1 = [currentUser, tmp5Result, stateFromStores];
   const icon = React.useMemo(() => {
-    const obj = { user: currentUser, guildId: "a", size: true, avatarDecoration: true, animate: "absolute", autoStatusCutout: 4, "aria-hidden": 4 };
+    const obj = { user: currentUser, guildId: "a", size: true, avatarDecoration: true, animate: "getAuthorizationStatus", autoStatusCutout: null, "aria-hidden": "\u{1F64B}" };
     obj[2] = currentUser(stateFromStores[19]).AvatarSizes.NORMAL;
     obj[3] = c1;
     obj[4] = !stateFromStores;
@@ -93,7 +93,7 @@ export default function NameplateProductPreview(product) {
   let firstAvatarDecoration;
   let firstNameplate;
   const tmp = createCacheKey();
-  let obj = require(8046) /* firstAvatarDecoration */;
+  let obj = require(8043) /* firstAvatarDecoration */;
   const shopProductItems = obj.useShopProductItems(product.product);
   ({ firstNameplate, firstAvatarDecoration } = shopProductItems);
   let obj1 = require(1898) /* getNameplateData */;

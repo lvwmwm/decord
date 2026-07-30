@@ -1,22 +1,22 @@
-// Module ID: 5930
-// Function ID: 5931
+// Module ID: 5928
+// Function ID: 5929
 // Name: appDatabaseManager
-// Dependencies: [5931, 5933, 5934, 5054, 5936, 5937, 5938, 5095, 5939, 5940, 5733, 5941, 5942, 5746, 5745, 5747, 5943, 2]
+// Dependencies: [5929, 5931, 5932, 5054, 5934, 5935, 5936, 5095, 5937, 5938, 5733, 5939, 5940, 5746, 5745, 5747, 5941, 2]
 
-// Module 5930 (appDatabaseManager)
+// Module 5928 (appDatabaseManager)
 const items = [
   {
     name: "Channels",
     actions: ["BACKGROUND_SYNC", "CHANNEL_CREATE", "CHANNEL_DELETE", "CHANNEL_RECIPIENT_ADD", "CHANNEL_RECIPIENT_REMOVE", "CHANNEL_UPDATES", "CONNECTION_OPEN", "CONNECTION_OPEN_SUPPLEMENTAL", "GUILD_CREATE", "GUILD_DELETE"],
     require() {
-      return require(5933) /* handleBackgroundSync */.default;
+      return require(5931) /* handleBackgroundSync */.default;
     }
   },
   {
     name: "GuildBasicChannels",
     actions: ["BACKGROUND_SYNC", "CHANNEL_CREATE", "CHANNEL_DELETE", "CHANNEL_UPDATES", "CONNECTION_OPEN", "GUILD_CREATE", "GUILD_DELETE", "GUILD_MEMBER_UPDATE", "GUILD_ROLE_UPDATE", "GUILD_UPDATE", "POST_CONNECTION_OPEN", "WRITE_CACHES"],
     require() {
-      return require(5934) /* hasBasicChannelChanged */.default;
+      return require(5932) /* hasBasicChannelChanged */.default;
     }
   },
   {
@@ -30,21 +30,21 @@ const items = [
     name: "Guilds",
     actions: ["BACKGROUND_SYNC", "CONNECTION_OPEN", "GUILD_CREATE", "GUILD_DELETE", "GUILD_MEMBER_ADD", "GUILD_MEMBER_UPDATE", "GUILD_ROLE_CREATE", "GUILD_ROLE_DELETE", "GUILD_ROLE_UPDATE", "GUILD_UPDATE"],
     require() {
-      return require(5936) /* getAsync */.default;
+      return require(5934) /* getAsync */.default;
     }
   },
   {
     name: "GuildsRequiringDeletedIdsSync",
     actions: ["BACKGROUND_SYNC", "CONNECTION_OPEN", "GUILD_CREATE", "DELETED_ENTITY_IDS"],
     require() {
-      return require(5937) /* getAll */.default;
+      return require(5935) /* getAll */.default;
     }
   },
   {
     name: "GuildsRequiringChannelSync",
     actions: ["BACKGROUND_SYNC", "CONNECTION_OPEN", "GUILD_CREATE", "CHANNEL_SYNC", "UNMARK_RESYNC_GUILDS"],
     require() {
-      return require(5938) /* getAll */.default;
+      return require(5936) /* getAll */.default;
     }
   },
   {
@@ -58,14 +58,14 @@ const items = [
     name: "GuildVersions",
     actions: ["BACKGROUND_SYNC", "CHANNEL_CREATE", "CHANNEL_DELETE", "CHANNEL_UPDATES", "CONNECTION_OPEN", "GUILD_CREATE", "GUILD_DELETE", "GUILD_EMOJIS_UPDATE", "GUILD_ROLE_CREATE", "GUILD_ROLE_DELETE", "GUILD_ROLE_UPDATE", "GUILD_STICKERS_UPDATE", "GUILD_UPDATE"],
     require() {
-      return require(5939) /* getCommittedVersions */.default;
+      return require(5937) /* getCommittedVersions */.default;
     }
   },
   {
     name: "KvCacheVersion",
     actions: ["CONNECTION_OPEN", "WRITE_CACHES", "BACKGROUND_SYNC"],
     require() {
-      return require(5940) /* okAsync */.default;
+      return require(5938) /* okAsync */.default;
     }
   },
   {
@@ -79,14 +79,14 @@ const items = [
     name: "LowDiskTrim",
     actions: ["POST_CONNECTION_OPEN"],
     require() {
-      return require(5941) /* handlePostConnectionOpen */.default;
+      return require(5939) /* handlePostConnectionOpen */.default;
     }
   },
   {
     name: "NonGuildVersions",
     actions: ["CONNECTION_OPEN", "BACKGROUND_SYNC"],
     require() {
-      return require(5942) /* getCommittedVersions */.default;
+      return require(5940) /* getCommittedVersions */.default;
     }
   },
   {
@@ -114,7 +114,7 @@ const items = [
     name: "UserSearchItems",
     actions: ["POST_CONNECTION_OPEN", "WRITE_CACHES"],
     require() {
-      return require(5943) /* getAll */.default;
+      return require(5941) /* getAll */.default;
     }
   }
 ];

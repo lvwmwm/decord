@@ -1,9 +1,9 @@
-// Module ID: 14162
-// Function ID: 14163
+// Module ID: 14158
+// Function ID: 14159
 // Name: logger
-// Dependencies: [4, 14163, 14164, 14165, 2]
+// Dependencies: [4, 14159, 14160, 14161, 2]
 
-// Module 14162 (logger)
+// Module 14158 (logger)
 const logger = new require("set").Logger("SimpleMuxWrapper");
 const result = require("mapDiscordToMuxMetadata").fileFinishedImporting("modules/video-qoe/SimpleMuxWrapper.tsx");
 class SimpleMuxWrapper {
@@ -25,14 +25,14 @@ prototype["initialize"] = function initialize() {
     flag = false;
   }
   const obj = { debug: flag, disableCookies: true, respectDoNotTrack: true, data: null };
-  const MuxIntegration = require(14164) /* mapDiscordToMuxMetadata */.MuxIntegration;
+  const MuxIntegration = require(14160) /* mapDiscordToMuxMetadata */.MuxIntegration;
   obj[3] = MuxIntegration.mapDiscordToMuxMetadata(self.config, self.sessionId);
   if (null != self.hlsInstance) {
     obj.hlsjs = self.hlsInstance;
     obj.Hls = self.hlsInstance.constructor;
   }
   try {
-    importDefault(14165).monitor(self.videoElement, obj);
+    importDefault(14161).monitor(self.videoElement, obj);
     self.isMonitoring = true;
   } catch (tmp5) {
     logger.error("Error creating Mux monitor", tmp5);
@@ -43,9 +43,9 @@ prototype["endSession"] = function endSession() {
   const self = this;
   if (this.isMonitoring) {
     try {
-      if (typeof importDefault(14165).destroyMonitor !== "_") {
-        tmp(14165).destroyMonitor(self.videoElement);
-        const tmpResult = tmp(14165);
+      if (typeof importDefault(14161).destroyMonitor !== "ZodObject") {
+        tmp(14161).destroyMonitor(self.videoElement);
+        const tmpResult = tmp(14161);
       }
       self.isMonitoring = false;
       tmp = importDefault;
@@ -58,9 +58,9 @@ prototype["destroy"] = function destroy() {
   const self = this;
   if (this.isMonitoring) {
     try {
-      if (typeof importDefault(14165).destroyMonitor !== "_") {
-        tmp(14165).destroyMonitor(self.videoElement);
-        const tmpResult = tmp(14165);
+      if (typeof importDefault(14161).destroyMonitor !== "ZodObject") {
+        tmp(14161).destroyMonitor(self.videoElement);
+        const tmpResult = tmp(14161);
       }
       self.isMonitoring = false;
       tmp = importDefault;

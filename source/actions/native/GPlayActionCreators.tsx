@@ -1,10 +1,10 @@
-// Module ID: 6300
-// Function ID: 6301
+// Module ID: 6297
+// Function ID: 6298
 // Name: getPlanIdForProduct
-// Dependencies: [109, 5, 17, 6252, 1218, 5672, 676, 5673, 1876, 505, 3, 5675, 6301, 3872, 709, 3848, 3850, 4528, 1236, 698, 530, 2]
+// Dependencies: [109, 5, 17, 6249, 1218, 5672, 676, 5673, 1876, 505, 3, 5675, 6298, 3872, 709, 3848, 3850, 4528, 1236, 698, 530, 2]
 // Exports: downgradeSubscription, loadUserCountry, purchase, sendPaymentCompleteAnalytics, subscribe, updatePendingDowngrade, verifyPurchase
 
-// Module 6300 (getPlanIdForProduct)
+// Module 6297 (getPlanIdForProduct)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importDefaultResult from "updateProduct";
 import setGPlayAnalytics from "setGPlayAnalytics";
@@ -134,7 +134,7 @@ function _fetchDesktopSubscriptionSkus() {
                 c21 = 1;
                 let num9 = 1;
                 logger = 1;
-                return { value: "ct", done: null };
+                return { value: "ct", done: "Array" };
               }
             } else if (1 === tmp4) {
               if (arg0 === 1) {
@@ -900,7 +900,7 @@ closure_0 = importDefaultResult(() => {
             callback2 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "ct", done: null };
+            return { value: "ct", done: "Array" };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -1034,7 +1034,7 @@ const importDefaultResultResult = importDefaultResult(() => {
             let closure_3;
             c5 = 1;
             c6 = 1;
-            return { value: "ct", done: null };
+            return { value: "ct", done: "Array" };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -1173,7 +1173,7 @@ closure_0 = importDefaultResult(() => {
             callback2 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "ct", done: null };
+            return { value: "ct", done: "Array" };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -1326,7 +1326,7 @@ const importDefaultResultResult1 = importDefaultResult(() => {
             let closure_3;
             c5 = 1;
             c6 = 1;
-            return { value: "ct", done: null };
+            return { value: "ct", done: "Array" };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -1731,7 +1731,7 @@ const importDefaultResultResult3 = importDefaultResult(() => {
             let closure_3;
             c5 = 1;
             c6 = 1;
-            return { value: "ct", done: null };
+            return { value: "ct", done: "Array" };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -1868,7 +1868,7 @@ const importDefaultResultResult2 = importDefaultResult(() => {
             let closure_3;
             c5 = 1;
             c6 = 1;
-            return { value: "ct", done: null };
+            return { value: "ct", done: "Array" };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {

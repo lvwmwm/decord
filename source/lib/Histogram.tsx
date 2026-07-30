@@ -1,9 +1,9 @@
-// Module ID: 6028
-// Function ID: 6029
+// Module ID: 6026
+// Function ID: 6027
 // Name: getSamples
-// Dependencies: [6029, 2]
+// Dependencies: [6027, 2]
 
-// Module 6028 (getSamples)
+// Module 6026 (getSamples)
 const result = require("set").fileFinishedImporting("lib/Histogram.tsx");
 class Histogram {
   constructor() {
@@ -25,7 +25,7 @@ prototype["addSample"] = function addSample(currentCPUUsagePercent, diff) {
   this.total = this.total + currentCPUUsagePercent * num;
   this.totalWeight = this.totalWeight + num;
   this.samples = this.samples + 1;
-  const push = require(6029) /* TDigest */.TDigest.prototype.push;
+  const push = require(6027) /* TDigest */.TDigest.prototype.push;
   const call = push.call;
   const digest = this.digest;
   if (typeof call === "unknown") {
@@ -44,7 +44,7 @@ prototype["addSamples"] = function addSamples(prop3) {
   this.total = this.total + prop3.reduce((arg0, arg1) => arg0 + arg1 * num, 0);
   this.totalWeight = this.totalWeight + num * prop3.length;
   this.samples = this.samples + prop3.length;
-  const push = num(6029).TDigest.prototype.push;
+  const push = num(6027).TDigest.prototype.push;
   const call = push.call;
   const digest = this.digest;
   if (typeof call === "unknown") {

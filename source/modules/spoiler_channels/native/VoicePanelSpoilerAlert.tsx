@@ -1,10 +1,10 @@
-// Module ID: 12423
-// Function ID: 12424
+// Module ID: 12417
+// Function ID: 12418
 // Name: VoicePanelSpoilerAlert
 // Dependencies: [19, 21, 4533, 4533, 1236, 5105, 5001, 2]
 // Exports: default
 
-// Module 12423 (VoicePanelSpoilerAlert)
+// Module 12417 (VoicePanelSpoilerAlert)
 import "noop";
 import jsxProd from "jsxProd";
 

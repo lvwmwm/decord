@@ -1,10 +1,10 @@
-// Module ID: 9787
-// Function ID: 9788
+// Module ID: 9784
+// Function ID: 9785
 // Name: PremiumGiftSuccessBody
-// Dependencies: [19, 17, 4234, 1876, 676, 21, 4189, 712, 8804, 1480, 8771, 4424, 9700, 8196, 4600, 1236, 3835, 5543, 3889, 8778, 4185, 8236, 4138, 2]
+// Dependencies: [19, 17, 4234, 1876, 676, 21, 4189, 712, 8800, 1480, 8767, 4424, 9697, 8193, 4600, 1236, 3835, 5543, 3889, 8774, 4185, 8233, 4138, 2]
 // Exports: PremiumGiftSuccessActions, default
 
-// Module 9787 (PremiumGiftSuccessBody)
+// Module 9784 (PremiumGiftSuccessBody)
 import PremiumGiftBackgroundAnimation from "PremiumGiftBackgroundAnimation";
 import { View } from "_copy";
 import addSku from "addSku";
@@ -39,7 +39,7 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
   giftCodeRecord = giftCodeRecord.giftCodeRecord;
   let giftCodeURL;
   let tmp = createCacheKey();
-  let obj = giftCodeRecord(8804);
+  let obj = giftCodeRecord(8800);
   const nativeGiftContext = obj.useNativeGiftContext();
   ({ giftStyle, premiumType, planInterval } = nativeGiftContext);
   let obj1 = giftCodeRecord(4424);
@@ -69,7 +69,7 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
     tmp = giftCodeRecord;
     const result = giftCodeRecord(outer1_2[18]).presentCopiedToClipboard();
   }, items);
-  obj[0] = callback(giftCodeURL(8778), { giftStyle });
+  obj[0] = callback(giftCodeURL(8774), { giftStyle });
   const items1 = [callback(View, obj), , , , ];
   obj = { style: tmp.title, variant: "heading-lg/bold", children: null };
   const intl = tmp2(1236).intl;
@@ -93,7 +93,7 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
   const obj5 = { text: giftCodeURL, icon: null, iconPosition: "end", onPress: null };
   obj5[1] = giftCodeURL(4138);
   obj5[3] = callback;
-  items2[1] = callback(giftCodeRecord(8236).InputButton, obj5);
+  items2[1] = callback(giftCodeRecord(8233).InputButton, obj5);
   obj3[1] = items2;
   items1[3] = closure_10(View, obj3);
   const obj6 = { style: tmp.disclaimer, variant: "text-xs/normal", children: null };

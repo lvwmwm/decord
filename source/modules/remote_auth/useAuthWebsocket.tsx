@@ -1,10 +1,10 @@
-// Module ID: 14903
-// Function ID: 14904
+// Module ID: 14897
+// Function ID: 14898
 // Name: useAuthWebsocket
-// Dependencies: [5, 32, 19, 676, 3, 14902, 584, 8255, 12695, 14904, 1231, 530, 5641, 14906, 2]
+// Dependencies: [5, 32, 19, 676, 3, 14896, 584, 8252, 12689, 14898, 1231, 530, 5641, 14900, 2]
 // Exports: useAuthWebsocket
 
-// Module 14903 (useAuthWebsocket)
+// Module 14897 (useAuthWebsocket)
 import RemoteAuthStep from "RemoteAuthStep";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -160,7 +160,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                   let c8;
                   RemoteAuthStep = 1;
                   catchPromise = 1;
-                  return { value: "ct", done: null };
+                  return { value: "ct", done: "Array" };
                 }
               } else if (1 === tmp5) {
                 if (arg0 === 1) {

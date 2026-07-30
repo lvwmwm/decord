@@ -1,10 +1,10 @@
-// Module ID: 12547
-// Function ID: 12548
+// Module ID: 12541
+// Function ID: 12542
 // Name: handlePress
-// Dependencies: [17, 21, 4189, 712, 4157, 12548, 1959, 1236, 4185, 2]
+// Dependencies: [17, 21, 4189, 712, 4157, 12542, 1959, 1236, 4185, 2]
 // Exports: default
 
-// Module 12547 (handlePress)
+// Module 12541 (handlePress)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -18,7 +18,7 @@ function handlePress() {
   obj = { aboutText: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["07lzz7"]);
-  obj.openLazy(require(1959) /* asyncRequireImpl */(12548, dependencyMap.paths), "NitroCreditEducationActionSheet", obj);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(12542, dependencyMap.paths), "NitroCreditEducationActionSheet", obj);
 }
 ({ TouchableOpacity: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);

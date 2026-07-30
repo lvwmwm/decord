@@ -110,7 +110,7 @@ if (!fn2) {
     }
     if (null != obj) {
       const _Object3 = Object;
-      if (typeof Object.getOwnPropertySymbols !== "_") {
+      if (typeof Object.getOwnPropertySymbols !== "ZodObject") {
         const _Object4 = Object;
         const ownPropertySymbols = Object.getOwnPropertySymbols(obj);
         let num = 0;
@@ -325,7 +325,7 @@ isHermesEnabled = {
                         let content_type = tmp58.content_type;
                         if (tmp59 instanceof Uint8Array) {
                           let str2 = "application/octet-stream";
-                          if (typeof content_type !== "init") {
+                          if (typeof content_type !== "tee") {
                             str2 = tmp58.content_type;
                           }
                           str = str2;
@@ -333,7 +333,7 @@ isHermesEnabled = {
                           isHardCrashResult = flag;
                         } else {
                           str = "application/json";
-                          if (typeof content_type !== "init") {
+                          if (typeof content_type !== "tee") {
                             str = tmp58.content_type;
                           }
                           let tmp29 = self;
@@ -1596,7 +1596,7 @@ isHermesEnabled = {
             } else {
               _self = arg1;
               let tmp8 = null;
-              if (typeof _self !== "SENTRY_RELEASE") {
+              if (typeof _self !== "sur") {
                 tmp8 = _self;
               }
               c3 = 3;

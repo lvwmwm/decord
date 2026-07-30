@@ -1,9 +1,9 @@
-// Module ID: 13604
-// Function ID: 13605
+// Module ID: 13599
+// Function ID: 13600
 // Name: _getKeyForFileId
-// Dependencies: [5, 32, 3827, 1218, 1372, 4407, 676, 13605, 3, 687, 595, 3771, 3859, 6038, 5713, 709, 10939, 9884, 1959, 4368, 4860, 9899, 2]
+// Dependencies: [5, 32, 3827, 1218, 1372, 4407, 676, 13600, 3, 687, 595, 3771, 3859, 6036, 5713, 709, 10935, 9881, 1959, 4368, 4860, 9896, 2]
 
-// Module 13604 (_getKeyForFileId)
+// Module 13599 (_getKeyForFileId)
 import reinjectEphemerals from "reinjectEphemerals";
 import _slicedToArray from "_slicedToArray";
 import hasFlag from "hasFlag";
@@ -57,7 +57,7 @@ function createFailedMessage(channel_id) {
   channel_id = channel_id.channel_id;
   ({ content, tts, state } = channel_id);
   let obj = { channelId: channel_id, content, tts, state: MessageStates.SEND_FAILED };
-  const tmp3 = file(6038)(obj);
+  const tmp3 = file(6036)(obj);
   const require = tmp3;
   ({ timestamp: tmp3.timestamp, file } = channel_id);
   obj = { isHydratingExpiredPendingMessage: state === MessageStates.SENDING };
@@ -435,7 +435,7 @@ function _writeMessage(arg0, id) {
 class LocalMessageCacheManager extends tmp3 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    f109394 = applyArgumentsResult;
+    f109404 = applyArgumentsResult;
     // PrivateIsIn (0x32)
     if (tmp) {
       str = "Cannot initialize private field twice.";
@@ -799,9 +799,9 @@ class LocalMessageCacheManager extends tmp3 {
           continue;
         }
       };
-      f109394 = undefined;
+      f109404 = undefined;
       closure_1 = applyArgumentsResult;
-      f109394 = _rehydrateFailedMessages((arg0) => {
+      f109404 = _rehydrateFailedMessages((arg0) => {
         let closure_0 = arg0;
         let c2 = 0;
         let c1 = 0;

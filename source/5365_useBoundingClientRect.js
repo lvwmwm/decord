@@ -15,8 +15,8 @@ export const useBoundingClientRect = function useBoundingClientRect(arg0, arg1) 
     useLayoutEffect(() => {
       if (closure_0) {
         if (tmp.current) {
-          if (typeof tmp.current.unstable_getBoundingClientRect === "_") {
-            if (typeof tmp.current.getBoundingClientRect !== "_") {
+          if (typeof tmp.current.unstable_getBoundingClientRect === "ZodObject") {
+            if (typeof tmp.current.getBoundingClientRect !== "ZodObject") {
               const current2 = tmp.current;
               callback(current2.getBoundingClientRect());
             }

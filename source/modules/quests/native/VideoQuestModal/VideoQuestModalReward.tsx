@@ -1,8 +1,8 @@
-// Module ID: 14174
-// Function ID: 14175
-// Dependencies: [19, 21, 4189, 14150, 10492, 10960, 4598, 712, 14155, 4185, 1236, 2]
+// Module ID: 14170
+// Function ID: 14171
+// Dependencies: [19, 21, 4189, 14146, 10488, 10956, 4598, 712, 14151, 4185, 1236, 2]
 
-// Module 14174
+// Module 14170
 import importAllResult from "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -29,9 +29,9 @@ const memoResult = importAllResult.memo(function VideoQuestModalReward(withQuest
     str = size;
   }
   ({ withRewardTileAnimation, onTextBlockLayout } = withQuestName);
-  let obj = quest(14150);
+  let obj = quest(14146);
   quest = obj.useVideoQuestModalContext().quest;
-  let obj1 = quest(10492);
+  let obj1 = quest(10488);
   const items = [quest.id];
   const questTaskDetails = obj1.useQuestTaskDetails(quest);
   const callback = importAllResult.useCallback(() => {
@@ -43,7 +43,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalReward(withQuest
   obj[2] = importDefault(712).space.PX_24;
   obj[3] = withQuestName.style;
   obj = { hasConfetti: true, quest, size: str, progress: questTaskDetails.percentComplete, onPress: callback, withAnimation: withRewardTileAnimation };
-  const items1 = [callback(importDefault(14155), obj), ];
+  const items1 = [callback(importDefault(14151), obj), ];
   obj1 = { align: "center", spacing: null, onLayout: null, children: null };
   obj1[1] = importDefault(712).space.PX_4;
   obj1[2] = onTextBlockLayout;

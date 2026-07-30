@@ -1,10 +1,10 @@
-// Module ID: 13594
-// Function ID: 13595
+// Module ID: 13589
+// Function ID: 13590
 // Name: getVolumeForSound
 // Dependencies: [4236, 4637, 3862, 2]
 // Exports: default, getPerceptualSoundboardVolume
 
-// Module 13594 (getVolumeForSound)
+// Module 13589 (getVolumeForSound)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 
 const require = arg1;

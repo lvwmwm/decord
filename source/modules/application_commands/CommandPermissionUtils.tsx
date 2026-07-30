@@ -1,10 +1,10 @@
-// Module ID: 8025
-// Function ID: 8026
+// Module ID: 8022
+// Function ID: 8023
 // Name: computeAllowedForUser
-// Dependencies: [1376, 1862, 4623, 676, 8026, 5705, 5704, 1906, 506, 8028, 38, 5702, 5703, 2]
+// Dependencies: [1376, 1862, 4623, 676, 8023, 5705, 5704, 1906, 506, 8025, 38, 5702, 5703, 2]
 // Exports: computeAllowedForChannel, hasAccess
 
-// Module 8025 (computeAllowedForUser)
+// Module 8022 (computeAllowedForUser)
 import { ChannelRecordBase } from "createChannelRecord";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { BuiltInSectionId } from "TRUE_OPTION_NAME";
@@ -133,7 +133,7 @@ export const hasAccess = function hasAccess(type, arg1, applicationAllowedForCha
             const integration_types = type.integration_types;
             let hasItem;
             if (integration_types != null) {
-              hasItem = integration_types.includes(require(8028) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL);
+              hasItem = integration_types.includes(require(8025) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL);
             }
             if (hasItem) {
               return obj.ALLOWED;

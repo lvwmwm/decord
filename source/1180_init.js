@@ -195,7 +195,7 @@ export const init = function init(maxQueueSize) {
         }
       }
       let str = "";
-      if (typeof url !== "init") {
+      if (typeof url !== "tee") {
         str = tmpResult.data.url;
       }
       if ("http" === tmp5) {

@@ -1,9 +1,9 @@
-// Module ID: 12319
-// Function ID: 12320
+// Module ID: 12313
+// Function ID: 12314
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 500, 4050, 12320, 12321, 8118, 5273, 7678, 5515, 5535, 8137, 12325, 4190, 8123, 8167, 6679, 4051, 10516, 2]
+// Dependencies: [32, 19, 17, 21, 500, 4050, 12314, 12315, 8115, 5273, 7675, 5515, 5535, 8134, 12319, 4190, 8120, 8164, 6676, 4051, 10512, 2]
 
-// Module 12319 (MediaViewer)
+// Module 12313 (MediaViewer)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "View";
 import get_ActivityIndicator from "handleOrientationChange";
@@ -62,10 +62,10 @@ function MediaViewer(arg0) {
   const tmp3 = height(5515);
   [tmp5, tmp6] = sharedValue(sharedValue1.useState(true), 2);
   _require = tmp6;
-  let obj = _require(8137);
+  let obj = _require(8134);
   const mediaViewerDimensions = obj.useMediaViewerDimensions();
   ({ width, height } = mediaViewerDimensions);
-  const tmp9 = height(12325)({ index, onClose, sources, windowHeight: height, windowWidth: width });
+  const tmp9 = height(12319)({ index, onClose, sources, windowHeight: height, windowWidth: width });
   dependencyMap = tmp9;
   let obj1 = _require(4050);
   sharedValue = obj1.useSharedValue(0);
@@ -76,7 +76,7 @@ function MediaViewer(arg0) {
   c6 = tmp13;
   const viewerProps = useViewerProps();
   ({ ref, onScroll, onContentSizeChange, useItemVisible } = viewerProps);
-  let obj4 = _require(12320);
+  let obj4 = _require(12314);
   const mediaViewerPanGestureConfig = obj4.useMediaViewerPanGestureConfig(tmp9, swipeVelocityThreshold, onClose);
   ({ dismiss, translatePos } = mediaViewerPanGestureConfig);
   isClosing = mediaViewerPanGestureConfig.isClosing;
@@ -251,11 +251,11 @@ function MediaViewer(arg0) {
     }
   }, items4);
   const obj13 = _require(4050);
-  const orientationListener = _require(8167).useOrientationListener(callback2);
+  const orientationListener = _require(8164).useOrientationListener(callback2);
   obj4 = { style: c6.absoluteFill, onAccessibilityEscape: dismiss, onLayout: callback1, children: null };
-  const obj15 = _require(8167);
+  const obj15 = _require(8164);
   obj5 = { barStyle: "light-content", hidden: !tmp5 };
-  const items5 = [translatePos(height(6679), obj5), translatePos(height(4050).View, { style: animatedStyle }), translatePos(height(4051), { ref: animatedRef, style: animatedStyle2, children: translatePos(closure_12, { entranceAnimationDriver: sharedValue, onContentSizeChange, onScroll, onLongPress, originLayout, panGestureConfig: mediaViewerPanGestureConfig, ref, renderMedia, sources, useItemVisible, windowHeight: height, windowWidth: width, index, zoomed }) }), , ];
+  const items5 = [translatePos(height(6676), obj5), translatePos(height(4050).View, { style: animatedStyle }), translatePos(height(4051), { ref: animatedRef, style: animatedStyle2, children: translatePos(closure_12, { entranceAnimationDriver: sharedValue, onContentSizeChange, onScroll, onLongPress, originLayout, panGestureConfig: mediaViewerPanGestureConfig, ref, renderMedia, sources, useItemVisible, windowHeight: height, windowWidth: width, index, zoomed }) }), , ];
   const obj6 = { style: items6, pointerEvents: null, children: null };
   items6 = [sharedValue(sharedValue1.useState(obj), 1)[0], animatedStyle1];
   let str = "none";
@@ -268,7 +268,7 @@ function MediaViewer(arg0) {
   obj6[1] = str;
   obj6[2] = renderOverlay(dismiss, overlayEnabled);
   items5[3] = translatePos(height(4051), obj6);
-  items5[4] = translatePos(tmp(10516), {});
+  items5[4] = translatePos(tmp(10512), {});
   obj4[3] = items5;
   const children = tmp28(tmp29, obj4);
   return translatePos(tmp7(5515).AnalyticsLocationProvider, { value: tmp3(value).analyticsLocations, children });
@@ -359,5 +359,5 @@ export default importAllResult.memo((arg0) => {
   obj = {};
   const merged = Object.assign(arg0);
   obj[0] = callback(MediaViewer, obj);
-  return callback(require(8137) /* MediaViewerDimensionsProvider */.MediaViewerDimensionsProvider, obj);
+  return callback(require(8134) /* MediaViewerDimensionsProvider */.MediaViewerDimensionsProvider, obj);
 });

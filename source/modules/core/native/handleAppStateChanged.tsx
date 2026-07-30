@@ -1,10 +1,10 @@
-// Module ID: 16735
-// Function ID: 16736
+// Module ID: 16729
+// Function ID: 16730
 // Name: handleAppStateChanged
-// Dependencies: [1218, 6328, 676, 3, 10, 709, 4261, 16734, 5731, 4031, 9, 698, 2]
+// Dependencies: [1218, 6325, 676, 3, 10, 709, 4261, 16728, 5731, 4031, 9, 698, 2]
 // Exports: default
 
-// Module 16735 (handleAppStateChanged)
+// Module 16729 (handleAppStateChanged)
 import fetchFingerprint from "fetchFingerprint";
 import getState from "getState";
 import ME from "ME";
@@ -32,7 +32,7 @@ export default function handleAppStateChanged(state) {
     const _default = require(4261) /* createRTCConnection */.default;
   }
   if (isAuthenticatedResult) {
-    let tmp2Result = tmp2(16734);
+    let tmp2Result = tmp2(16728);
     tmp2Result.deferUpdate();
   }
   if (state === constants2.ACTIVE) {

@@ -1,10 +1,10 @@
-// Module ID: 15632
-// Function ID: 15633
+// Module ID: 15626
+// Function ID: 15627
 // Name: CoachmarkImage
-// Dependencies: [19, 17, 1874, 1369, 21, 4189, 712, 589, 3835, 1236, 2581, 8430, 6785, 1297, 2]
+// Dependencies: [19, 17, 1874, 1369, 21, 4189, 712, 589, 3835, 1236, 2581, 8427, 6782, 1297, 2]
 // Exports: default
 
-// Module 15632 (CoachmarkImage)
+// Module 15626 (CoachmarkImage)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -18,7 +18,7 @@ const require = arg1;
 function CoachmarkImage() {
   const tmp = createCacheKey();
   let obj = { style: tmp.coachmarkImageContainer, children: null };
-  const items = [callback(require(6785) /* AccountAgeTier10LargeBadge */.DisplayNameLockeAbstractUI, { width: 160, height: 68, resizeMode: "contain" }), ];
+  const items = [callback(require(6782) /* AccountAgeTier10LargeBadge */.DisplayNameLockeAbstractUI, { width: 160, height: 68, resizeMode: "contain" }), ];
   obj = { style: tmp.betaTag };
   items[1] = callback(require(1297) /* Button */.BetaTag, obj);
   obj[1] = items;
@@ -77,6 +77,6 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
     }
   }), items2);
   const obj2 = markAsDismissed(3835);
-  const coachmark = visible(8430).useCoachmark(visible.targetRef, memo);
+  const coachmark = visible(8427).useCoachmark(visible.targetRef, memo);
   return null;
 };

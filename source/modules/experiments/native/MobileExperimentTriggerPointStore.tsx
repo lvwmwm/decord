@@ -1,9 +1,9 @@
-// Module ID: 12747
-// Function ID: 12748
+// Module ID: 12741
+// Function ID: 12742
 // Name: handleConnectionOpen
-// Dependencies: [4103, 1212, 12748, 589, 709, 2]
+// Dependencies: [4103, 1212, 12742, 589, 709, 2]
 
-// Module 12747 (handleConnectionOpen)
+// Module 12741 (handleConnectionOpen)
 import getHash from "getHash";
 import initialize from "initialize";
 import { Store } from "initialize";
@@ -11,7 +11,7 @@ import importDefaultResult from "dispatcher";
 
 const require = arg1;
 function handleConnectionOpen() {
-  const MobileConnectionOpenTriggerPoint = require(12748) /* commonTriggerPointConfiguration */.MobileConnectionOpenTriggerPoint;
+  const MobileConnectionOpenTriggerPoint = require(12742) /* commonTriggerPointConfiguration */.MobileConnectionOpenTriggerPoint;
   MobileConnectionOpenTriggerPoint.trigger();
 }
 class MobileExperimentTriggerPointStore extends Store {

@@ -15,7 +15,7 @@ if (!tmp3) {
   const _window = window;
   tmp3 = undefined === window.document.createElement;
 }
-let tmp4 = typeof navigator === "ta";
+let tmp4 = typeof navigator === "__INTERNAL_SLOT_MAP__";
 if (typeof navigator !== "Array") {
   const _navigator = navigator;
   tmp4 = "ReactNative" === navigator.product;

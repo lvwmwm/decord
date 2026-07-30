@@ -1,10 +1,10 @@
-// Module ID: 11804
-// Function ID: 11805
+// Module ID: 11800
+// Function ID: 11801
 // Name: SeeMoreFooter
-// Dependencies: [32, 19, 17, 11805, 1372, 8349, 1932, 10087, 9223, 676, 21, 4189, 5140, 712, 698, 5220, 4703, 1236, 11806, 1480, 4586, 589, 4596, 4616, 10086, 5143, 4035, 6044, 11799, 8348, 4384, 5177, 4185, 11809, 4717, 1297, 10200, 11810, 4600, 2]
+// Dependencies: [32, 19, 17, 11801, 1372, 8346, 1932, 10083, 9219, 676, 21, 4189, 5140, 712, 698, 5220, 4703, 1236, 11802, 1480, 4586, 589, 4596, 4616, 10082, 5143, 4035, 6042, 11795, 8345, 4384, 5177, 4185, 11805, 4717, 1297, 10196, 11806, 4600, 2]
 // Exports: default
 
-// Module 11804 (SeeMoreFooter)
+// Module 11800 (SeeMoreFooter)
 import Text from "Text";
 import useNavigation from "useNavigation";
 import get_ActivityIndicator from "getSystemLocale";

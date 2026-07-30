@@ -1,10 +1,10 @@
-// Module ID: 7132
-// Function ID: 7133
+// Module ID: 7129
+// Function ID: 7130
 // Name: GameServerAbstractUI
-// Dependencies: [21, 5141, 7133, 2]
+// Dependencies: [21, 5141, 7130, 2]
 // Exports: GameServerAbstractUI
 
-// Module 7132 (GameServerAbstractUI)
+// Module 7129 (GameServerAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GameServerAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const GameServerAbstractUI = function GameServerAbstractUI(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7133);
+  obj[0] = importDefault(7130);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

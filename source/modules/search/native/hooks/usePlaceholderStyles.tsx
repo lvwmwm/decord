@@ -1,10 +1,10 @@
-// Module ID: 15484
-// Function ID: 15485
+// Module ID: 15478
+// Function ID: 15479
 // Name: useFullscreenPlaceholderCount
-// Dependencies: [4181, 9101, 1474, 589, 4050, 4190, 1297, 2]
+// Dependencies: [4181, 9097, 1474, 589, 4050, 4190, 1297, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 15484 (useFullscreenPlaceholderCount)
+// Module 15478 (useFullscreenPlaceholderCount)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { FADE_LAYOUT_ANIMATION_DURATION as closure_4 } from "SearchAutocompleteSelectAnalyticsActions";
 

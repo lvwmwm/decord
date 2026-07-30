@@ -1,10 +1,10 @@
-// Module ID: 9036
-// Function ID: 9037
+// Module ID: 9032
+// Function ID: 9033
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 676, 21, 4189, 8938, 1945, 8977, 4185, 1236, 5177, 4600, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 8934, 1945, 8973, 4185, 1236, 5177, 4600, 2]
 // Exports: default
 
-// Module 9036 (XboxLinkEducation)
+// Module 9032 (XboxLinkEducation)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -22,7 +22,7 @@ let closure_9 = createCacheKey.createStyles({ image: { width: 124, height: 160, 
 const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkEducation.tsx");
 
 export default function XboxLinkEducation(onClose) {
-  let obj = require(8938) /* styles */;
+  let obj = require(8934) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   let obj1 = importDefault(1945);
   const articleURL = obj1.getArticleURL(HelpdeskArticles.XBOX_CONNECTION);

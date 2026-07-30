@@ -102,7 +102,7 @@ class InternetReachability {
       return obj;
     };
     this.update = (isInternetReachable) => {
-      if (typeof isInternetReachable.isInternetReachable !== "SENTRY_RELEASE") {
+      if (typeof isInternetReachable.isInternetReachable !== "sur") {
         if (self._configuration.useNativeReachability) {
           const result = self._setIsInternetReachable(isInternetReachable.isInternetReachable);
         }

@@ -1,10 +1,10 @@
-// Module ID: 10154
-// Function ID: 10155
+// Module ID: 10150
+// Function ID: 10151
 // Name: useShouldShowInitialSafetyToolsButtonTooltip
-// Dependencies: [9099, 10129, 589, 2]
+// Dependencies: [9095, 10125, 589, 2]
 // Exports: useShouldShowInitialSafetyToolsButtonTooltip
 
-// Module 10154 (useShouldShowInitialSafetyToolsButtonTooltip)
+// Module 10150 (useShouldShowInitialSafetyToolsButtonTooltip)
 import handleConnectionOpen from "handleConnectionOpen";
 
 const require = arg1;
@@ -12,8 +12,8 @@ const result = require("initialize").fileFinishedImporting("modules/self_mod/ina
 
 export const useShouldShowInitialSafetyToolsButtonTooltip = function useShouldShowInitialSafetyToolsButtonTooltip(channelId) {
   const _require = channelId;
-  const inappropriateConversationSafetyToolsWarningForChannel = _require(10129).useInappropriateConversationSafetyToolsWarningForChannel(channelId);
-  const obj = _require(10129);
+  const inappropriateConversationSafetyToolsWarningForChannel = _require(10125).useInappropriateConversationSafetyToolsWarningForChannel(channelId);
+  const obj = _require(10125);
   const items = [handleConnectionOpen];
   const obj2 = _require(589);
   return null != inappropriateConversationSafetyToolsWarningForChannel && !_require(589).useStateFromStores(items, () => outer1_2.hasShownInitialTooltipForChannel(closure_0));

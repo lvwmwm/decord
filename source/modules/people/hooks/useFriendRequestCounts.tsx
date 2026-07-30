@@ -1,10 +1,10 @@
-// Module ID: 15579
-// Function ID: 15580
+// Module ID: 15573
+// Function ID: 15574
 // Name: getIncomingFriendRequestCount
-// Dependencies: [32, 5944, 3826, 589, 2]
+// Dependencies: [32, 5942, 3826, 589, 2]
 // Exports: getIncomingFriendRequestCount, getOutgoingFriendRequestCount, useIncomingFriendRequestCount
 
-// Module 15579 (getIncomingFriendRequestCount)
+// Module 15573 (getIncomingFriendRequestCount)
 import _slicedToArray from "_slicedToArray";
 import recountRelationshipTypes from "recountRelationshipTypes";
 import upsertRelationship from "upsertRelationship";

@@ -1,10 +1,10 @@
-// Module ID: 12505
-// Function ID: 12506
+// Module ID: 12499
+// Function ID: 12500
 // Name: PremiumFeaturesCardBackground
-// Dependencies: [32, 19, 17, 676, 6227, 1876, 21, 712, 4189, 4611, 691, 4185, 5141, 1236, 6578, 6581, 6617, 6620, 4586, 1577, 9714, 1297, 5515, 1474, 698, 2]
+// Dependencies: [32, 19, 17, 676, 6224, 1876, 21, 712, 4189, 4611, 691, 4185, 5141, 1236, 6575, 6578, 6614, 6617, 4586, 1577, 9711, 1297, 5515, 1474, 698, 2]
 // Exports: default
 
-// Module 12505 (PremiumFeaturesCardBackground)
+// Module 12499 (PremiumFeaturesCardBackground)
 import _slicedToArray from "_slicedToArray";
 import isMetaQuest from "isMetaQuest";
 import get_ActivityIndicator from "registerAsset";
@@ -149,7 +149,7 @@ function PremiumFeaturesCarousel(arg0) {
       };
       obj[8] = { parallaxScrollingScale: 1, parallaxScrollingOffset: 45 };
       obj[9] = tmp7;
-      let tmp19 = callback2(importDefault(9714), obj);
+      let tmp19 = callback2(importDefault(9711), obj);
     }
     let items3 = [tmp19, ];
     let obj1 = { containerStyle: null, numberOfItems: null, currentIndex: null };

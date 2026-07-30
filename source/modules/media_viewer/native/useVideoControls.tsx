@@ -1,10 +1,10 @@
-// Module ID: 8123
-// Function ID: 8124
+// Module ID: 8120
+// Function ID: 8121
 // Name: useVideoControls
-// Dependencies: [32, 19, 4181, 21, 644, 705, 8124, 4189, 589, 8116, 8125, 8117, 8126, 2]
+// Dependencies: [32, 19, 4181, 21, 644, 705, 8121, 4189, 589, 8113, 8122, 8114, 8123, 2]
 // Exports: default, initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8123 (useVideoControls)
+// Module 8120 (useVideoControls)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -13,7 +13,7 @@ import keys from "keys";
 import createCacheKey from "createCacheKey";
 
 const require = arg1;
-keys = keys.create(() => ({ controls: "ct", paused: null }));
+keys = keys.create(() => ({ controls: "ct", paused: "Array" }));
 let closure_8 = createCacheKey.createStyles({ slider: { marginBottom: 8 } });
 let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/media_viewer/native/useVideoControls.tsx");
 
@@ -79,7 +79,7 @@ export default function useVideoControls(arg0, portal) {
 export const useVideoStateStore = keys;
 export const initVideoStateStore = function initVideoStateStore() {
   require(705) /* batchUpdates */.batchUpdates(() => {
-    state.setState({ controls: "ct", paused: null });
+    state.setState({ controls: "ct", paused: "Array" });
   });
 };
 export const setMuted = function setMuted(arg0) {

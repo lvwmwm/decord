@@ -1,9 +1,9 @@
-// Module ID: 9883
-// Function ID: 9884
+// Module ID: 9880
+// Function ID: 9881
 // Name: handleChannelDelete
-// Dependencies: [1946, 1372, 1942, 1862, 4407, 3826, 1874, 4409, 12, 5862, 589, 709, 2]
+// Dependencies: [1946, 1372, 1942, 1862, 4407, 3826, 1874, 4409, 12, 5860, 589, 709, 2]
 
-// Module 9883 (handleChannelDelete)
+// Module 9880 (handleChannelDelete)
 import _getSystemLocale from "_getSystemLocale";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -190,7 +190,7 @@ obj = {
       } else {
         const items = tmp.items;
         tmp.items = items.slice();
-        tmp.items[findIndexResult].message = messageId(5862).handleExplicitMediaScanTimeoutForMessage(tmp.items[findIndexResult].message);
+        tmp.items[findIndexResult].message = messageId(5860).handleExplicitMediaScanTimeoutForMessage(tmp.items[findIndexResult].message);
       }
       const obj2 = importDefault(12);
     }

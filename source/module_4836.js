@@ -5,7 +5,7 @@
 // Module 4836
 arg5.default = {
   get() {
-    if (typeof TextDecoder === "ta") {
+    if (typeof TextDecoder === "__INTERNAL_SLOT_MAP__") {
       const _TextDecoder = TextDecoder;
       return TextDecoder;
     }

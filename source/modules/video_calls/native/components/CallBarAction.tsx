@@ -1,10 +1,10 @@
-// Module ID: 10528
-// Function ID: 10529
+// Module ID: 10524
+// Function ID: 10525
 // Name: ActionButton
-// Dependencies: [19, 17, 10235, 21, 4033, 712, 4189, 10529, 4717, 10530, 4185, 2]
+// Dependencies: [19, 17, 10231, 21, 4033, 712, 4189, 10525, 4717, 10526, 4185, 2]
 // Exports: NotifiedActionButton, PrimaryActionButton, ToggledActionButton
 
-// Module 10528 (ActionButton)
+// Module 10524 (ActionButton)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { resetFocusTimer } from "VoiceChatDrawerState";

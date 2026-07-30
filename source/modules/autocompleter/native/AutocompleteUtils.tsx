@@ -1,10 +1,10 @@
-// Module ID: 9578
-// Function ID: 9579
+// Module ID: 9575
+// Function ID: 9576
 // Name: AutocompleteFormDivider
-// Dependencies: [19, 17, 1376, 1932, 3826, 1874, 676, 9579, 4624, 21, 4189, 712, 4380, 5031, 4028, 7641, 2]
+// Dependencies: [19, 17, 1376, 1932, 3826, 1874, 676, 9576, 4624, 21, 4189, 712, 4380, 5031, 4028, 7638, 2]
 // Exports: getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 9578 (AutocompleteFormDivider)
+// Module 9575 (AutocompleteFormDivider)
 import "noop";
 import { isGuildSelectableChannelType as closure_3 } from "createChannelRecord";
 import comparator from "comparator";
@@ -27,7 +27,7 @@ let unpackModuleId;
 const require = arg1;
 function AutocompleteFormDivider() {
   const tmp = createCacheKey();
-  return jsx(importDefault(7641), { style: createCacheKey().itemDivider });
+  return jsx(importDefault(7638), { style: createCacheKey().itemDivider });
 }
 ({ AutoCompleteResultTypes: error, WHITESPACE_RE: metroImportAll } = ME);
 ({ AUTOCOMPLETE_EMOJI_ROW_HEIGHT: c9, AUTOCOMPLETE_ROW_HEIGHT: c10 } = AUTOCOMPLETE_ROW_HEIGHT);
@@ -140,10 +140,10 @@ export const getPrefix = function getPrefix(substr1) {
 export const getQuery = function getQuery(arr) {
   return arr.slice(1).toLowerCase();
 };
-export const isWhitespaceSeparatingBoundary = function isWhitespaceSeparatingBoundary(c23, index) {
+export const isWhitespaceSeparatingBoundary = function isWhitespaceSeparatingBoundary(c22, index) {
   let isMatch = 0 === index;
   if (!isMatch) {
-    isMatch = regex.test(c23[index - 1]);
+    isMatch = regex.test(c22[index - 1]);
   }
   return isMatch;
 };

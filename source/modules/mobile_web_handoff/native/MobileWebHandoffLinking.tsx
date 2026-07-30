@@ -1,9 +1,9 @@
-// Module ID: 11814
-// Function ID: 11815
+// Module ID: 11810
+// Function ID: 11811
 // Name: createHandoffTokenWithLoadingModal
-// Dependencies: [5, 1218, 676, 4395, 11815, 11817, 698, 513, 11818, 1467, 3886, 2]
+// Dependencies: [5, 1218, 676, 4395, 11811, 11813, 698, 513, 11814, 1467, 3886, 2]
 
-// Module 11814 (createHandoffTokenWithLoadingModal)
+// Module 11810 (createHandoffTokenWithLoadingModal)
 import _createHandoffToken from "_createHandoffToken";
 import fetchFingerprint from "fetchFingerprint";
 import ME from "ME";
@@ -103,7 +103,7 @@ function _redirectWithHandoffToken() {
               uRL = undefined;
               uRL = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -233,7 +233,7 @@ function _redirectDeveloperPortalWithHandoffToken() {
               uRL = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

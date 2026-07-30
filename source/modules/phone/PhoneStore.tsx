@@ -1,9 +1,9 @@
-// Module ID: 9192
-// Function ID: 9193
+// Module ID: 9188
+// Function ID: 9189
 // Name: handleSetLocationMetadata
 // Dependencies: [3870, 589, 709, 2]
 
-// Module 9192 (handleSetLocationMetadata)
+// Module 9188 (handleSetLocationMetadata)
 import DEFAULT_COUNTRY_CODE_NAME from "DEFAULT_COUNTRY_CODE_NAME";
 import { DeviceSettingsStore } from "initialize";
 

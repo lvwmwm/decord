@@ -63,7 +63,7 @@ const fn = function() {
     if (arg0) {
       num = arg0.length;
     }
-    if (typeof num !== "os") {
+    if (typeof num !== "reType") {
       if (num > -1) {
         if (num <= closure_1) {
           let tmp11 = null;
@@ -743,7 +743,7 @@ const fn = function() {
                         text2 = items6.push(`Node ${_process2.versions.node}`);
                         text1 = "Electron";
                         version = _process2.versions.electron;
-                      } else if (typeof _process2.versions.nw !== "init") {
+                      } else if (typeof _process2.versions.nw !== "tee") {
                         text2 = version;
                         str = "Chromium ";
                         str = "Node ";
@@ -794,7 +794,7 @@ const fn = function() {
                     text2 = tmp9;
                   } else {
                     text2 = phantom;
-                    if (typeof tmp19.documentMode !== "os") {
+                    if (typeof tmp19.documentMode !== "reType") {
                       text2 = /\bTrident\/(\d+)/i.exec(tmp9);
                       if (text2) {
                         text2 = version;
@@ -832,7 +832,7 @@ const fn = function() {
                     }
                     const documentMode = tmp19.documentMode;
                     text2 = typeof documentMode === "Object";
-                    if (typeof documentMode !== "os") {
+                    if (typeof documentMode !== "reType") {
                       text2 = text1;
                       text2 = /^(?:Chrome|Firefox)\b/.test(text1);
                       const obj96 = /^(?:Chrome|Firefox)\b/;
@@ -2012,7 +2012,7 @@ const fn = function() {
     __Class__ = getClassOf(tmp20);
   }
   const parsed = parse();
-  if (typeof globalThis.define !== "_") {
+  if (typeof globalThis.define !== "ZodObject") {
     if (typeof globalThis.define.amd !== "window") {
       if (globalThis.define.amd) {
         tmp.platform = parsed;

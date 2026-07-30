@@ -1,10 +1,10 @@
-// Module ID: 12479
-// Function ID: 12480
+// Module ID: 12473
+// Function ID: 12474
 // Name: SharedUser
-// Dependencies: [17, 676, 21, 4189, 712, 4028, 6213, 1297, 4185, 1236, 4600, 4686, 4157, 4199, 1945, 5243, 5242, 4598, 6785, 2]
+// Dependencies: [17, 676, 21, 4189, 712, 4028, 6210, 1297, 4185, 1236, 4600, 4686, 4157, 4199, 1945, 5243, 5242, 4598, 6782, 2]
 // Exports: default
 
-// Module 12479 (SharedUser)
+// Module 12473 (SharedUser)
 import { View } from "Stack";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -18,7 +18,7 @@ function SharedUser(user) {
   const tmp = callback3();
   let obj = importDefault(4028);
   const name = obj.getName(user);
-  const tmp6 = user.trialCreationResult === user(6213).CreateReferralStatus.FAIL;
+  const tmp6 = user.trialCreationResult === user(6210).CreateReferralStatus.FAIL;
   obj = { style: tmp.recipientRow, children: null };
   const items = [tmp.avatarContainer, ];
   let erroredAvatar = tmp6;
@@ -105,7 +105,7 @@ export default function ReferralProgramShareConfirmationActionSheet(trialCreatio
   obj[2] = callback(tmp5(5242).BottomSheetTitleHeader, { title: null });
   obj = { children: null };
   obj1 = { style: tmp.headerAsset, children: null };
-  obj1[1] = callback(tmp5(6785).FistBumpSpotIllustration, {});
+  obj1[1] = callback(tmp5(6782).FistBumpSpotIllustration, {});
   const items = [callback(View, obj1), callback(tmp5(4185).Text, { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult }), , ];
   const formatResult = intl3.format(tmp5(1236).t.AwGSWl, obj);
   const obj2 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult };

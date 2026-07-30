@@ -1,10 +1,10 @@
-// Module ID: 14360
-// Function ID: 14361
+// Module ID: 14356
+// Function ID: 14357
 // Name: DisplayNameStylesGummyColorPickerSheet
-// Dependencies: [32, 19, 17, 1886, 676, 21, 1885, 4189, 712, 8385, 1887, 643, 4158, 14361, 698, 4157, 5243, 5242, 4600, 1236, 13716, 9102, 2]
+// Dependencies: [32, 19, 17, 1886, 676, 21, 1885, 4189, 712, 8382, 1887, 643, 4158, 14357, 698, 4157, 5243, 5242, 4600, 1236, 13711, 9098, 2]
 // Exports: default
 
-// Module 14360 (DisplayNameStylesGummyColorPickerSheet)
+// Module 14356 (DisplayNameStylesGummyColorPickerSheet)
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "RedesignBottomSheetTitleHeaderBase";
@@ -59,7 +59,7 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
   let callback2;
   const tmp = items();
   dependencyMap = tmp;
-  let obj = selectedColors(8385);
+  let obj = selectedColors(8382);
   let tmp5 = selectedColors.length > 0;
   const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(selectedColors(1887).DisplayNameEffect.GUMMY);
   if (tmp5) {
@@ -150,11 +150,11 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
   } else {
     const obj7 = { colors: null };
     obj7[0] = first1;
-    tmp16Result = tmp16(onSelectColors(13716), obj7);
+    tmp16Result = tmp16(onSelectColors(13711), obj7);
   }
   const items4 = [tmp16Result, ];
   const obj8 = { style: tmp.customIconOverlay, pointerEvents: "none", children: null };
-  obj8[2] = callback2(closure_5, { style: tmp.customIconScrim, children: callback2(selectedColors(9102).PencilIcon, { color: "white", size: "sm" }) });
+  obj8[2] = callback2(closure_5, { style: tmp.customIconScrim, children: callback2(selectedColors(9098).PencilIcon, { color: "white", size: "sm" }) });
   items4[1] = callback2(closure_5, obj8);
   obj5[5] = items4;
   obj4[1] = closure_10(first1, obj5);

@@ -1,9 +1,9 @@
-// Module ID: 10449
-// Function ID: 10450
+// Module ID: 10445
+// Function ID: 10446
 // Name: BlockedInformationTable
-// Dependencies: [32, 19, 17, 1372, 3826, 1874, 8919, 10448, 676, 21, 4189, 712, 8361, 1236, 4147, 5554, 5220, 1297, 1581, 5515, 5535, 589, 7985, 5243, 698, 5245, 8363, 4185, 4379, 8364, 4157, 10450, 1959, 503, 4600, 8918, 6721, 1945, 3886, 2]
+// Dependencies: [32, 19, 17, 1372, 3826, 1874, 8915, 10444, 676, 21, 4189, 712, 8358, 1236, 4147, 5554, 5220, 1297, 1581, 5515, 5535, 589, 7982, 5243, 698, 5245, 8360, 4185, 4379, 8361, 4157, 10446, 1959, 503, 4600, 8914, 6718, 1945, 3886, 2]
 
-// Module 10449 (BlockedInformationTable)
+// Module 10445 (BlockedInformationTable)
 import asyncRequireImpl from "asyncRequireImpl";
 import importAllResult from "context";
 import { View } from "Button";
@@ -230,7 +230,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     obj5[0] = tmp.avatarIconContainer;
     const obj6 = { size: null, source: null };
     obj6[0] = tmp7(1297).Icon.Sizes.MEDIUM;
-    obj6[1] = tmp2(8363);
+    obj6[1] = tmp2(8360);
     obj5[1] = closure_14(tmp7(1297).Icon, obj6);
     items8[1] = closure_14(c5, obj5);
     obj3[1] = items8;
@@ -263,7 +263,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
       const obj13 = { icon: null, label: null, subLabel: null, accessibilityLabel: null, onPress: null, arrow: true };
       const obj14 = { size: null, source: null };
       obj14[0] = tmp7(1297).Icon.Sizes.MEDIUM;
-      obj14[1] = tmp2(8364);
+      obj14[1] = tmp2(8361);
       obj13[0] = tmp13(tmp7(1297).Icon, obj14);
       const intl4 = tmp7(1236).intl;
       obj13[1] = intl4.string(tmp7(1236).t.hC8tcc);

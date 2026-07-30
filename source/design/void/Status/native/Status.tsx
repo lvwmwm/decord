@@ -1,10 +1,10 @@
-// Module ID: 13148
-// Function ID: 13149
+// Module ID: 13143
+// Function ID: 13144
 // Name: Status
-// Dependencies: [32, 19, 17, 1298, 676, 12022, 21, 4189, 13146, 712, 13149, 13150, 13151, 13152, 13153, 13154, 13155, 13147, 13156, 4050, 4599, 13133, 2]
+// Dependencies: [32, 19, 17, 1298, 676, 12016, 21, 4189, 13141, 712, 13144, 13145, 13146, 13147, 13148, 13149, 13150, 13142, 13151, 4050, 4599, 13128, 2]
 // Exports: StatusWithTyping, default
 
-// Module 13148 (Status)
+// Module 13143 (Status)
 import _slicedToArray from "_slicedToArray";
 import "module_4050";
 import get_ActivityIndicator from "STATUS_PADDING";
@@ -30,7 +30,7 @@ let closure_13 = createCacheKey.createStyles({ statusIcon: { width: "100%", heig
 let closure_14 = createCacheKey.createStyles((items) => {
   let dotSize;
   let height;
-  let obj = require(13146) /* getAnimatedTypingTranslateX */;
+  let obj = require(13141) /* getAnimatedTypingTranslateX */;
   const statusTypingDimensions = obj.getStatusTypingDimensions(items);
   ({ height, dotSize } = statusTypingDimensions);
   if (StatusTypes.ONLINE === arg1) {
@@ -81,27 +81,27 @@ export default function Status(isMobileOnline) {
     streaming = false;
   }
   let obj = { style: null, children: null };
-  const items = [importDefault(13147)(size, flag, flag2), style];
+  const items = [importDefault(13142)(size, flag, flag2), style];
   obj[0] = items;
   obj = { style: callback2().statusIcon, source: null, resizeMode: "stretch" };
   if (streaming) {
-    let tmp4Result = tmp4(13149);
+    let tmp4Result = tmp4(13144);
   } else if (flag2) {
-    tmp4Result = tmp4(13150);
+    tmp4Result = tmp4(13145);
   } else if (flag) {
-    tmp4Result = tmp4(13151);
+    tmp4Result = tmp4(13146);
   } else if (StatusTypes.IDLE === status) {
-    tmp4Result = tmp4(13152);
+    tmp4Result = tmp4(13147);
   } else if (tmp7.DND === status) {
-    tmp4Result = tmp4(13153);
+    tmp4Result = tmp4(13148);
   } else {
     if (tmp7.OFFLINE !== status) {
       if (tmp7.INVISIBLE !== status) {
         const ONLINE = tmp7.ONLINE;
-        tmp4Result = tmp4(13155);
+        tmp4Result = tmp4(13150);
       }
     }
-    tmp4Result = tmp4(13154);
+    tmp4Result = tmp4(13149);
   }
   obj[1] = tmp4Result;
   obj[1] = closure_11(closure_4, obj);

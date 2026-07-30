@@ -1,10 +1,10 @@
-// Module ID: 9824
-// Function ID: 9825
+// Module ID: 9821
+// Function ID: 9822
 // Name: PostPurchaseFooter
-// Dependencies: [19, 17, 8109, 9825, 1369, 21, 4189, 712, 1581, 4395, 4041, 4600, 8768, 1236, 2319, 9826, 4185, 4158, 4159, 9706, 9827, 4005, 1358, 589, 8106, 2]
+// Dependencies: [19, 17, 8106, 9822, 1369, 21, 4189, 712, 1581, 4395, 4041, 4600, 8764, 1236, 2319, 9823, 4185, 4158, 4159, 9703, 9824, 4005, 1358, 589, 8103, 2]
 // Exports: default
 
-// Module 9824 (PostPurchaseFooter)
+// Module 9821 (PostPurchaseFooter)
 import GiftingBadgeIcon from "GiftingBadgeIcon";
 import { View } from "HapticFeedbackTypes";
 import map from "map";
@@ -39,7 +39,7 @@ function PostPurchaseFooter(onSendGift) {
   obj = { grow: true, variant: "primary", icon: null, text: null, onPress: null };
   obj = { size: "sm", color: null };
   obj[1] = importDefault(712).colors.CONTROL_PRIMARY_TEXT_DEFAULT;
-  obj[2] = callback4(onSendGift(8768).GiftIcon, obj);
+  obj[2] = callback4(onSendGift(8764).GiftIcon, obj);
   const intl = onSendGift(1236).intl;
   obj[3] = intl.string(importDefault(2319).g86YiI);
   obj[4] = callback;
@@ -64,7 +64,7 @@ function InProgressScreen(arg0) {
   const tmp = callback6(importDefault(1581)().bottom);
   let obj = { style: tmp.screenContainer, children: null };
   obj = { style: tmp.content, children: null };
-  obj = { style: tmp.progressWrapper, children: callback4(importDefault(9826), { progress, currentTier, nextTier, iconSize: 48, title: progressBarTitle }) };
+  obj = { style: tmp.progressWrapper, children: callback4(importDefault(9823), { progress, currentTier, nextTier, iconSize: 48, title: progressBarTitle }) };
   const items = [callback4(View, obj), ];
   const obj1 = { style: tmp.messageSection, children: null };
   const items1 = [callback4(require(4185) /* Text */.Text, { variant: "heading-xxl/bold", style: tmp.centerText, children: title }), callback4(require(4185) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", style: tmp.centerText, children: description })];
@@ -95,12 +95,12 @@ function LevelUpScreen(arg0) {
   if (tmp7Result) {
     const obj1 = { icon: null, size: 140 };
     obj1[0] = newTier.simple_icon_url;
-    tmp7Result = tmp7(tmp(9706), obj1);
+    tmp7Result = tmp7(tmp(9703), obj1);
   }
   obj[1] = tmp7Result;
   const items = [closure_10(View, obj), ];
   const obj2 = { style: tmp3.levelUpBody, children: null };
-  const items1 = [closure_10(importDefault(9827), { progress: simulatedProgress, currentTier, newTier, style: tmp3.levelUpProgress }), ];
+  const items1 = [closure_10(importDefault(9824), { progress: simulatedProgress, currentTier, newTier, style: tmp3.levelUpProgress }), ];
   const obj4 = { style: tmp3.messageSection, children: null };
   const obj5 = { variant: "heading-xxl/bold", style: tmp3.centerText, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -171,7 +171,7 @@ export default function GiftBadgePostPurchase(arg0) {
   let obj = require(589) /* initialize */;
   const items = [map];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    badgeById = badgeById.getBadgeById(callback(8106).BadgeId.GIFTING);
+    badgeById = badgeById.getBadgeById(callback(8103).BadgeId.GIFTING);
     let tiers;
     if (badgeById != null) {
       tiers = badgeById.tiers;

@@ -1,10 +1,10 @@
-// Module ID: 7018
-// Function ID: 7019
+// Module ID: 7015
+// Function ID: 7016
 // Name: ExperimentalDiscordShopLockupExperiementLogo
-// Dependencies: [17, 21, 712, 3893, 7019, 2]
+// Dependencies: [17, 21, 712, 3893, 7016, 2]
 // Exports: ExperimentalDiscordShopLockupExperiementLogo
 
-// Module 7018 (ExperimentalDiscordShopLockupExperiementLogo)
+// Module 7015 (ExperimentalDiscordShopLockupExperiementLogo)
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -46,7 +46,7 @@ export const ExperimentalDiscordShopLockupExperiementLogo = function Experimenta
     tmp5 = null != ICON_STRONG && typeof ICON_STRONG === "y";
   }
   const obj1 = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj1[1] = { uri: importDefault(7019) };
+  obj1[1] = { uri: importDefault(7016) };
   const items = [{ width: num * num3, height: num2 * num3 }, tmp6];
   obj1[2] = items;
   obj1[3] = accessible;

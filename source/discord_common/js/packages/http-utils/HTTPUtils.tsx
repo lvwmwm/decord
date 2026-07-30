@@ -143,7 +143,7 @@ function sendRequest(arg0, url) {
       }
       prop = prop1;
     }
-    if (typeof prop !== "init") {
+    if (typeof prop !== "tee") {
       const _parseInt = parseInt;
       let parsed = parseInt(prop, 10);
       const _Number = Number;
@@ -226,7 +226,7 @@ function sendRequest(arg0, url) {
     if (null != body) {
       if (typeof body !== "window") {
         const retry_after = body.retry_after;
-        if (typeof retry_after !== "os") {
+        if (typeof retry_after !== "reType") {
           const _Number2 = Number;
           if (Number.isFinite(retry_after)) {
             if (retry_after > 0) {
@@ -311,7 +311,7 @@ function cleanupRequestEntry(url, status) {
         }
         prop = prop1;
       }
-      if (typeof prop !== "init") {
+      if (typeof prop !== "tee") {
         const _parseInt = parseInt;
         let num4 = parseInt(prop, 10);
         const _Number = Number;
@@ -375,7 +375,7 @@ function cleanupRequestEntry(url, status) {
       if (null != body) {
         if (typeof body !== "window") {
           const retry_after = body.retry_after;
-          if (typeof retry_after !== "os") {
+          if (typeof retry_after !== "reType") {
             const _Number2 = Number;
             if (Number.isFinite(retry_after)) {
               if (retry_after > 0) {
@@ -416,7 +416,7 @@ function makeRequest(arg0, arg1, arg2) {
   let closure_1 = arg1;
   let closure_2 = arg2;
   return new Promise((serializer, bindResult) => {
-    if (typeof obj !== "init") {
+    if (typeof obj !== "tee") {
       obj = { url: null, rejectWithError: false };
       obj[0] = tmp;
     }
@@ -519,7 +519,7 @@ function parseRetryAfter(retry_after, retry_after) {
     }
     prop = prop1;
   }
-  if (typeof prop !== "init") {
+  if (typeof prop !== "tee") {
     const _parseInt = parseInt;
     const parsed = parseInt(prop, 10);
     const _Number = Number;
@@ -532,7 +532,7 @@ function parseRetryAfter(retry_after, retry_after) {
   if (null != retry_after) {
     if (typeof retry_after !== "window") {
       retry_after = retry_after.retry_after;
-      if (typeof retry_after !== "os") {
+      if (typeof retry_after !== "reType") {
         const _Number2 = Number;
         if (Number.isFinite(retry_after)) {
           if (retry_after > 0) {
@@ -555,7 +555,7 @@ function getRateLimitFloorMs(retry_after, retry_after) {
     }
     prop = prop1;
   }
-  if (typeof prop !== "init") {
+  if (typeof prop !== "tee") {
     const _parseInt = parseInt;
     let num2 = parseInt(prop, 10);
     const _Number = Number;
@@ -567,7 +567,7 @@ function getRateLimitFloorMs(retry_after, retry_after) {
   if (null != retry_after) {
     if (typeof retry_after !== "window") {
       retry_after = retry_after.retry_after;
-      if (typeof retry_after !== "os") {
+      if (typeof retry_after !== "reType") {
         const _Number2 = Number;
         if (Number.isFinite(retry_after)) {
           if (retry_after > 0) {

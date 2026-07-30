@@ -1,10 +1,10 @@
-// Module ID: 15598
-// Function ID: 15599
+// Module ID: 15592
+// Function ID: 15593
 // Name: handleFindFriends
-// Dependencies: [32, 5, 19, 17, 5944, 3826, 1874, 11790, 676, 11769, 21, 4189, 712, 11767, 6693, 3889, 1236, 6044, 11771, 500, 5515, 5535, 4616, 698, 8359, 647, 12, 4028, 15043, 5521, 4719, 12236, 5637, 8820, 5220, 3891, 4704, 15599, 15600, 15602, 15603, 2]
+// Dependencies: [32, 5, 19, 17, 5942, 3826, 1874, 11786, 676, 11765, 21, 4189, 712, 11763, 6690, 3889, 1236, 6042, 11767, 500, 5515, 5535, 4616, 698, 8356, 647, 12, 4028, 15037, 5521, 4719, 12230, 5637, 8816, 5220, 3891, 4704, 15593, 15594, 15596, 15597, 2]
 // Exports: default
 
-// Module 15598 (handleFindFriends)
+// Module 15592 (handleFindFriends)
 import ActivityIndicator from "ActivityIndicator";
 import upsertRelationship from "upsertRelationship";
 import set from "set";
@@ -28,7 +28,7 @@ let error;
 let map1;
 const require = arg1;
 function handleFindFriends() {
-  require(11767) /* handleNameInputScreenOrSuggestions */.openContactSyncModal({}, constants.FRIENDS_ADD_FRIENDS_MODAL);
+  require(11763) /* handleNameInputScreenOrSuggestions */.openContactSyncModal({}, constants.FRIENDS_ADD_FRIENDS_MODAL);
 }
 function handleShare() {
   const self = this;
@@ -110,7 +110,7 @@ function _handleShare() {
             obj3[1] = code;
             const intl2 = callback(1236).intl;
             const obj4 = { link: null };
-            obj4[0] = code(6044)(code);
+            obj4[0] = code(6042)(code);
             obj3[2] = intl2.formatToPlainString(callback(1236).t.PJf9P9, obj4);
             obj3[3] = constants.ADD_FRIENDS_MODAL;
             callback(obj3);

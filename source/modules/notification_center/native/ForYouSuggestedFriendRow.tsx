@@ -1,10 +1,10 @@
-// Module ID: 15309
-// Function ID: 15310
+// Module ID: 15303
+// Function ID: 15304
 // Name: ForYouSuggestedFriendRow
-// Dependencies: [19, 17, 4181, 3826, 676, 21, 4189, 10285, 712, 500, 5515, 4606, 647, 8359, 1959, 4028, 15040, 1236, 4050, 15310, 4717, 15311, 1297, 4185, 15312, 15313, 698, 2]
+// Dependencies: [19, 17, 4181, 3826, 676, 21, 4189, 10281, 712, 500, 5515, 4606, 647, 8356, 1959, 4028, 15034, 1236, 4050, 15304, 4717, 15305, 1297, 4185, 15306, 15307, 698, 2]
 // Exports: default
 
-// Module 15309 (ForYouSuggestedFriendRow)
+// Module 15303 (ForYouSuggestedFriendRow)
 import renderChannelPressableWrapper from "renderChannelPressableWrapper";
 import { View } from "getSystemLocale";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -22,9 +22,9 @@ const require = arg1;
 ({ AnalyticEvents: error, RelationshipTypes: metroImportAll } = ME);
 ({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = jsxProd);
 let closure_12 = createCacheKey.createStyles((layout) => {
-  let obj = require(10285) /* getLayoutStyles */;
+  let obj = require(10281) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout);
-  let obj1 = require(10285) /* getLayoutStyles */;
+  let obj1 = require(10281) /* getLayoutStyles */;
   const sizeStyle = obj1.makeSizeStyle(layoutStyles.icon.wrapper.size);
   obj = { rowActive: null, pressable: null, textContainer: null, nameText: null, avatar: null };
   obj = { backgroundColor: importDefault(712).colors.BACKGROUND_MOD_MUTED };
@@ -57,11 +57,11 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
   let analyticsLocations;
   let sharedValue;
   let stateFromStores;
-  let obj = suggestedFriend(10285);
+  let obj = suggestedFriend(10281);
   const messagesTabLayout = obj.useMessagesTabLayout(panelVariant);
   const tmp4 = callback2(messagesTabLayout);
   analyticsLocations = importDefault(5515)().analyticsLocations;
-  let obj1 = suggestedFriend(10285);
+  let obj1 = suggestedFriend(10281);
   const layoutStyles = obj1.getLayoutStyles(messagesTabLayout);
   let obj2 = suggestedFriend(4606);
   const fontScale = obj2.useFontScale();
@@ -74,7 +74,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
     if (suggestedFriend.friendSuggestionName.length > 0) {
       let friendSuggestionName = suggestedFriend.friendSuggestionName;
     }
-    let tmpResult = tmp(15040);
+    let tmpResult = tmp(15034);
     const suggestedContactNameForSuggestion = tmpResult.getSuggestedContactNameForSuggestion(friendSuggestionName, suggestedFriend);
     let str2 = "";
     if (null != suggestedContactNameForSuggestion) {
@@ -107,10 +107,10 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
       obj1[0] = layoutStyles.container.borderRadius;
       items4[1] = obj1;
       obj[3] = items4;
-      const tmpResult2 = tmp(15310);
+      const tmpResult2 = tmp(15304);
       obj2 = { style: null, children: null };
       obj2[0] = tmp4.avatar;
-      obj3 = { user: null, guildId: "r", size: "mode", animate: "Array" };
+      obj3 = { user: null, guildId: "r", size: null, animate: null };
       obj3[0] = suggestedFriend.user;
       obj3[2] = layoutStyles.icon.avatarSize;
       obj3[3] = !stateFromStoresObject;
@@ -124,7 +124,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
       obj5[4] = friendSuggestionName;
       const items6 = [callback(tmp(4185).Text, obj5), ];
       const tmp20 = closure_11;
-      const tmpResult3 = tmp(15311);
+      const tmpResult3 = tmp(15305);
       let num3 = 0;
       if (tmpResult4.isAndroid()) {
         num3 = -2;
@@ -147,7 +147,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
       const intl2 = tmp(1236).intl;
       obj8[5] = intl2.string(tmp(1236).t.Kzyxm9);
       obj8[6] = !stateFromStoresObject;
-      obj6[1] = callback(tmp(15312).ActionStatusSubLabel, obj8);
+      obj6[1] = callback(tmp(15306).ActionStatusSubLabel, obj8);
       items6[1] = callback(sharedValue, obj6);
       obj4[1] = items6;
       items5[1] = closure_10(sharedValue, obj4);
@@ -171,7 +171,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
         callback2(suggestedFriend);
       };
       obj9[5] = !stateFromStoresObject;
-      items5[2] = callback(tmp(15313).ContactSuggestionActions, obj9);
+      items5[2] = callback(tmp(15307).ContactSuggestionActions, obj9);
       obj10[0] = items5;
       const obj11 = { layout: null, fontScale: null, panelVariant: null };
       obj11[0] = messagesTabLayout;

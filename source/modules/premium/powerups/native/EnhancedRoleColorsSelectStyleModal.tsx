@@ -1,10 +1,10 @@
-// Module ID: 16467
-// Function ID: 16468
+// Module ID: 16461
+// Function ID: 16462
 // Name: EnhancedRoleColorsSelectStyleModal
-// Dependencies: [17, 16449, 16451, 16448, 505, 21, 4189, 712, 4125, 4628, 16468, 1236, 7713, 5243, 5242, 4157, 9290, 1938, 7744, 16469, 4185, 2255, 4053, 2]
+// Dependencies: [17, 16443, 16445, 16442, 505, 21, 4189, 712, 4125, 4628, 16462, 1236, 7710, 5243, 5242, 4157, 9286, 1938, 7741, 16463, 4185, 2255, 4053, 2]
 // Exports: default
 
-// Module 16467 (EnhancedRoleColorsSelectStyleModal)
+// Module 16461 (EnhancedRoleColorsSelectStyleModal)
 import get_ActivityIndicator from "extractColorStringsFromServerColors";
 import { RoleColorsStyle } from "handleSetSection";
 import { HOLOGRAPHIC_ROLE_COLORS } from "HOLOGRAPHIC_ROLE_COLORS";
@@ -66,17 +66,17 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
   dependencyMap = tmp3;
   let obj = require(4628) /* useHasEnhancedRoleColors */;
   hasEnhancedRoleColorsForRole = obj.useHasEnhancedRoleColorsForRole(guildId, role);
-  let obj1 = require(16468) /* useGuildSettingsRoleExampleMessage */;
+  let obj1 = require(16462) /* useGuildSettingsRoleExampleMessage */;
   let intl = require(1236) /* getSystemLocale */.intl;
   closure_4 = obj1.useGuildSettingsRoleExampleMessage(intl.string(require(1236) /* getSystemLocale */.t.Mi9Kbe));
-  c5 = new importDefault(7713)();
+  c5 = new importDefault(7710)();
   obj = { header: null, children: null };
   obj = { title: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["9wVJRB"]);
   obj[0] = callback(require(5242) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj1 = { style: tmp3.container, children: null };
-  const tmp6 = new importDefault(7713)();
+  const tmp6 = new importDefault(7710)();
   let items = [
     callback(closure_4, {
       style: tmp3.stylesContainer,
@@ -115,9 +115,9 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
             message.message.roleColor = undefined;
             const result = outer2_0(1938).extractColorStringsFromServerColors(id.colors);
             const obj = outer2_0(1938);
-            message.message.roleColors = outer2_0(7744).processColorStrings(result);
+            message.message.roleColors = outer2_0(7741).processColorStrings(result);
             message.message.shouldShowRoleOnName = true;
-            message.message.avatarURL = outer2_1(16469);
+            message.message.avatarURL = outer2_1(16463);
           }
         };
         const items1 = [outer1_9(outer1_1(_undefined[16]), obj), ];

@@ -1,10 +1,10 @@
-// Module ID: 9143
-// Function ID: 9144
+// Module ID: 9139
+// Function ID: 9140
 // Name: MemberVerificationModal
-// Dependencies: [19, 17, 1942, 5138, 9144, 21, 4050, 1297, 4189, 712, 1581, 4125, 9145, 9147, 589, 4009, 709, 9148, 5637, 5638, 9165, 9170, 9171, 4717, 1236, 7734, 2]
+// Dependencies: [19, 17, 1942, 5138, 9140, 21, 4050, 1297, 4189, 712, 1581, 4125, 9141, 9143, 589, 4009, 709, 9144, 5637, 5638, 9161, 9166, 9167, 4717, 1236, 7731, 2]
 // Exports: default
 
-// Module 9143 (MemberVerificationModal)
+// Module 9139 (MemberVerificationModal)
 import module_5638 from "module_5638";
 import { View } from "openMemberVerificationSuccessAlert";
 import trackCommunicationDisabled from "trackCommunicationDisabled";

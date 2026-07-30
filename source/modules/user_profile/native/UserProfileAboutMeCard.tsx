@@ -1,10 +1,10 @@
-// Module ID: 11958
-// Function ID: 11959
+// Module ID: 11952
+// Function ID: 11953
 // Name: Heading
-// Dependencies: [19, 17, 1946, 1942, 1862, 5563, 676, 1479, 21, 4189, 3893, 712, 4185, 1236, 11959, 589, 4996, 11, 9762, 5566, 11960, 1297, 8200, 5515, 8107, 11961, 8359, 4157, 4041, 1222, 5635, 4048, 1579, 11962, 4600, 5562, 2]
+// Dependencies: [19, 17, 1946, 1942, 1862, 5563, 676, 1479, 21, 4189, 3893, 712, 4185, 1236, 11953, 589, 4996, 11, 9759, 5566, 11954, 1297, 8197, 5515, 8104, 11955, 8356, 4157, 4041, 1222, 5635, 4048, 1579, 11956, 4600, 5562, 2]
 // Exports: default
 
-// Module 11958 (Heading)
+// Module 11952 (Heading)
 import GuildIconSizes from "GuildIconSizes";
 import { View } from "DISCORD_EPOCH";
 import _getSystemLocale from "_getSystemLocale";
@@ -93,7 +93,7 @@ function Bio(arg0) {
       obj[1] = userId;
       obj[2] = tmp.textVariant;
       obj[3] = lineClamp;
-      items[1] = callback(importDefault(11959), obj);
+      items[1] = callback(importDefault(11953), obj);
       obj[0] = items;
       tmp4 = callback2(View, obj);
     }
@@ -151,7 +151,7 @@ function MemberJoinDates(userId) {
   const items3 = [callback(Heading, obj), ];
   obj = { style: items4, children: null };
   items4 = [callback3().memberJoinDates, { columnGap }];
-  obj1 = { themeType, icon: callback(tmp4(9762).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
+  obj1 = { themeType, icon: callback(tmp4(9759).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
   const intl2 = tmp4(1236).intl;
   obj1[2] = intl2.formatToPlainString(userId(1236).t["9t7w53"], { date: createdAtDate });
   obj1[3] = createdAtDate;
@@ -196,7 +196,7 @@ function FriendsSinceDate(themeType) {
   if (tmp == null) {
     tmp = closure_14;
   }
-  let obj = require(11960) /* useFriendsSinceDate */;
+  let obj = require(11954) /* useFriendsSinceDate */;
   const friendsSinceDate = obj.useFriendsSinceDate(themeType.userId);
   let tmp6 = null;
   if (null != friendsSinceDate) {

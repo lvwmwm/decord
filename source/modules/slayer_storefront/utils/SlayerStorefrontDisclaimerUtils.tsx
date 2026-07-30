@@ -1,16 +1,16 @@
-// Module ID: 9764
-// Function ID: 9765
+// Module ID: 9761
+// Function ID: 9762
 // Name: items
-// Dependencies: [1946, 5664, 676, 9765, 1236, 3161, 2]
+// Dependencies: [1946, 5664, 676, 9762, 1236, 3161, 2]
 // Exports: getCheckoutDisclaimerMessageForApplication, getFinePrintMessageForApplication, getGiftLinkAccountDescriptionForApplication, getMobileFinePrintMessageForApplication, getNotSupportedSentence, getRedeemPurchaseDescriptionForApplication
 
-// Module 9764 (items)
+// Module 9761 (items)
 import _getSystemLocale from "_getSystemLocale";
 import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";
 import { MarketingURLs } from "ME";
 
 const require = arg1;
-let closure_6 = { [arg1(9765).StorefrontPlatform.DESKTOP]: "PC", [arg1(9765).StorefrontPlatform.XBOX]: "Xbox", [arg1(9765).StorefrontPlatform.PLAYSTATION]: "PlayStation", [arg1(9765).StorefrontPlatform.SWITCH]: "Switch", [arg1(9765).StorefrontPlatform.APPLE_ARCADE]: "Apple Arcade", [arg1(9765).StorefrontPlatform.NETFLIX]: "Netflix", [arg1(9765).StorefrontPlatform.AMAZON_KIDS_PLUS]: "Amazon Kids+" };
+let closure_6 = { [arg1(9762).StorefrontPlatform.DESKTOP]: "PC", [arg1(9762).StorefrontPlatform.XBOX]: "Xbox", [arg1(9762).StorefrontPlatform.PLAYSTATION]: "PlayStation", [arg1(9762).StorefrontPlatform.SWITCH]: "Switch", [arg1(9762).StorefrontPlatform.APPLE_ARCADE]: "Apple Arcade", [arg1(9762).StorefrontPlatform.NETFLIX]: "Netflix", [arg1(9762).StorefrontPlatform.AMAZON_KIDS_PLUS]: "Amazon Kids+" };
 let items = [require("StorefrontPlatform").StorefrontPlatform.PLAYSTATION];
 const result = require("ME").fileFinishedImporting("modules/slayer_storefront/utils/SlayerStorefrontDisclaimerUtils.tsx");
 

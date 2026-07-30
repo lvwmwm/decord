@@ -1,10 +1,10 @@
-// Module ID: 11818
-// Function ID: 11819
+// Module ID: 11814
+// Function ID: 11815
 // Name: LoginHandoffSource
 // Dependencies: [1379, 685, 4381, 5042, 2]
 // Exports: getLoginHandoffSourceFromRedirectTo
 
-// Module 11818 (LoginHandoffSource)
+// Module 11814 (LoginHandoffSource)
 import { StaticChannelRoute } from "set";
 import { UserSettingsPath } from "MAX_FAVORITES";
 

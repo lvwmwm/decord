@@ -1,7 +1,7 @@
 // Module ID: 4405
 // Function ID: 4406
 // Name: useShouldCallReactiveCheck
-// Dependencies: [5, 32, 19, 4406, 3869, 1218, 4407, 1874, 6779, 6748, 676, 1221, 6716, 6749, 5013, 3868, 1906, 589, 11121, 709, 6754, 6747, 6721, 8125, 1236, 2741, 12821, 2]
+// Dependencies: [5, 32, 19, 4406, 3869, 1218, 4407, 1874, 6776, 6745, 676, 1221, 6713, 6746, 5013, 3868, 1906, 589, 11117, 709, 6751, 6744, 6718, 8122, 1236, 2741, 12815, 2]
 // Exports: ageGateSourceHasLightboxBackdrop, getAgeVerificationGetStartedSubtitle, getAgeVerificationGetStartedTitle, isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithRetryCta, isAgeVerified, isAssignedByDiscord, isFullscreenAgeVerificationEntryPoint, isVerifiedAdult, isVerifiedTeen, maybePerformReactiveCheck, shouldShowTiggerPawtect, useInitiateAgeVerification, useIsAgeVerified, useIsAssignedByDiscord, useIsExplicitlyVerifiedAdult, useIsVerifiedAdult, useIsVerifiedTeen, useMaybePerformReactiveCheckForSource, useShouldShowTiggerPawtect, useShowAssignedAgeGroupSettings, useWatchAgeVerificationStatusChange
 
 // Module 4405 (useShouldCallReactiveCheck)
@@ -336,7 +336,7 @@ export const isAgeVerificationMessageWithConnectToTeenCta = function isAgeVerifi
               }
               let enabled = true === hasItem;
               if (enabled) {
-                const FamilyCenterConnectionPrereqExperiment = require(11121) /* apexExperiment */.FamilyCenterConnectionPrereqExperiment;
+                const FamilyCenterConnectionPrereqExperiment = require(11117) /* apexExperiment */.FamilyCenterConnectionPrereqExperiment;
                 enabled = FamilyCenterConnectionPrereqExperiment.getConfig({ location: "isAgeVerificationMessageWithConnectToTeenCta" }).enabled;
               }
               return enabled;
@@ -552,7 +552,7 @@ export const useWatchAgeVerificationStatusChange = function useWatchAgeVerificat
     }
     return prop;
   });
-  const tmp2 = importDefault(8125)(stateFromStores);
+  const tmp2 = importDefault(8122)(stateFromStores);
   const obj = _require(589);
   const items1 = [closure_8];
   const stateFromStores1 = _require(589).useStateFromStores(items1, () => null != closure_8.getSuspendedUserToken());

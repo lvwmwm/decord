@@ -1,10 +1,10 @@
-// Module ID: 10604
-// Function ID: 10605
+// Module ID: 10600
+// Function ID: 10601
 // Name: getEmbeddedActivityJoinability
-// Dependencies: [1372, 1862, 3817, 1874, 4205, 676, 10605, 4372, 10533, 589, 2]
+// Dependencies: [1372, 1862, 3817, 1874, 4205, 676, 10601, 4372, 10529, 589, 2]
 // Exports: useEmbeddedActivityJoinability
 
-// Module 10604 (getEmbeddedActivityJoinability)
+// Module 10600 (getEmbeddedActivityJoinability)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -111,7 +111,7 @@ function getEmbeddedActivityJoinability(arg0) {
       } else {
         return obj.ACTIVITY_NOT_SUPPORTED_ON_OS;
       }
-      tmp7 = importDefault(10605);
+      tmp7 = importDefault(10601);
     } else {
       return obj.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS;
     }

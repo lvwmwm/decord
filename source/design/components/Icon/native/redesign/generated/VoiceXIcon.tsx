@@ -1,10 +1,10 @@
-// Module ID: 10773
-// Function ID: 10774
+// Module ID: 10769
+// Function ID: 10770
 // Name: VoiceXIcon
-// Dependencies: [19, 21, 712, 3892, 10774, 2]
+// Dependencies: [19, 21, 712, 3892, 10770, 2]
 // Exports: VoiceXIcon
 
-// Module 10773 (VoiceXIcon)
+// Module 10769 (VoiceXIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const VoiceXIcon = function VoiceXIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10774) /* registerAsset */;
+  obj[0] = require(10770) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

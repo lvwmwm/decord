@@ -1,10 +1,10 @@
-// Module ID: 11512
-// Function ID: 11513
+// Module ID: 11508
+// Function ID: 11509
 // Name: validateMultiAccountTokens
-// Dependencies: [5, 1218, 11508, 676, 3, 707, 709, 530, 698, 5641, 2]
+// Dependencies: [5, 1218, 11504, 676, 3, 707, 709, 530, 698, 5641, 2]
 // Exports: invalidatePushSyncTokens, moveAccount, removeAccount, reportAccountSwitchTimeout, switchAccount, updatePushSyncToken, validateMultiAccountTokens
 
-// Module 11512 (validateMultiAccountTokens)
+// Module 11508 (validateMultiAccountTokens)
 import setSecondaryToken from "setSecondaryToken";
 import fetchFingerprint from "fetchFingerprint";
 import initialize from "initialize";
@@ -65,7 +65,7 @@ export const validateMultiAccountTokens = function validateMultiAccountTokens() 
               let obj12;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {

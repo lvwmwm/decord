@@ -199,7 +199,7 @@ function _isMisspelled() {
               misspelled = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -302,7 +302,7 @@ function _getCorrections() {
               correctionsForMisspelling = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -399,7 +399,7 @@ function _getCachedMisspelling() {
               cachedMisspelling2 = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

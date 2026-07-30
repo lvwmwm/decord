@@ -1,10 +1,10 @@
-// Module ID: 16435
-// Function ID: 16436
+// Module ID: 16429
+// Function ID: 16430
 // Name: SyncingToGamesItem
-// Dependencies: [19, 3826, 1874, 676, 21, 1480, 5521, 5554, 5220, 4380, 4650, 3893, 712, 16358, 12, 7634, 4598, 5501, 2]
+// Dependencies: [19, 3826, 1874, 676, 21, 1480, 5521, 5554, 5220, 4380, 4650, 3893, 712, 16352, 12, 7631, 4598, 5501, 2]
 // Exports: default
 
-// Module 16435 (SyncingToGamesItem)
+// Module 16429 (SyncingToGamesItem)
 import "noop";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -68,7 +68,7 @@ export default function GuildSettingsModalLobbiesLinked(arg0) {
   ({ contentContainerStyle, guildId } = arg0);
   let obj = _require(3893);
   const token = obj.useToken(keys(712).modules.mobile.TABLE_ROW_PADDING);
-  let obj1 = _require(16358);
+  let obj1 = _require(16352);
   const channelsAllowedToUnlink = obj1.useChannelsAllowedToUnlink(guildId);
   let obj2 = keys(12);
   const groupByResult = obj2.groupBy(channelsAllowedToUnlink, (linkedLobby) => {
@@ -91,7 +91,7 @@ export default function GuildSettingsModalLobbiesLinked(arg0) {
   obj2[1] = keys(712).space.PX_24;
   obj2[2] = keys.map((applicationId) => outer1_6(outer1_9, { applicationId, channels: _undefined[applicationId], isOnlySection: 1 === keys.length }, applicationId));
   obj[1] = callback(_require(4598).Stack, obj2);
-  const items1 = [callback(_require(7634).Form, obj), callback(_require(5501).NavScrim, {})];
+  const items1 = [callback(_require(7631).Form, obj), callback(_require(5501).NavScrim, {})];
   obj[0] = items1;
   return callback2(closure_7, obj);
 };

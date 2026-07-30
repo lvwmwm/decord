@@ -1,7 +1,7 @@
 // Module ID: 5105
 // Function ID: 5106
 // Name: showTooManyUserGuildsAlert
-// Dependencies: [109, 5, 5106, 1218, 5028, 1932, 1862, 1931, 4006, 1874, 676, 1221, 4528, 1236, 709, 5107, 530, 1222, 5110, 1959, 5640, 5648, 5653, 5679, 11529, 4999, 503, 12627, 3822, 506, 7688, 3858, 698, 12628, 4403, 7727, 2]
+// Dependencies: [109, 5, 5106, 1218, 5028, 1932, 1862, 1931, 4006, 1874, 676, 1221, 4528, 1236, 709, 5107, 530, 1222, 5110, 1959, 5640, 5648, 5653, 5679, 11525, 4999, 503, 12621, 3822, 506, 7685, 3858, 698, 12622, 4403, 7724, 2]
 
 // Module 5105 (showTooManyUserGuildsAlert)
 import _objectWithoutProperties from "_objectWithoutProperties";
@@ -102,7 +102,7 @@ function _joinGuild() {
                 let channelId;
                 c7 = 1;
                 sessionId = 1;
-                return { value: "ct", done: null };
+                return { value: "ct", done: "Array" };
               }
             } else if (1 === tmp7) {
               if (arg0 === 1) {
@@ -577,7 +577,7 @@ export default {
   },
   deleteGuild,
   selectGuild(guildId) {
-    require(11529) /* stopLurkingAll */.stopLurking(guildId);
+    require(11525) /* stopLurkingAll */.stopLurking(guildId);
   },
   createGuild(guild) {
     let obj = importDefault(709);
@@ -1008,7 +1008,7 @@ export default {
             return obj4;
           } else {
             closure_0 = arg1;
-            obj = outer1_1(7688);
+            obj = outer1_1(7685);
             const result = obj.checkGuildTemplateDirty(closure_0);
             dependencyMap = 3;
             obj5 = { value: null, done: true };
@@ -1091,7 +1091,7 @@ export default {
             return obj3;
           } else {
             closure_0 = arg1;
-            obj = outer1_1(7688);
+            obj = outer1_1(7685);
             const result = obj.checkGuildTemplateDirty(closure_0);
             dependencyMap = 3;
             const obj4 = { value: null, done: true };
@@ -1159,7 +1159,7 @@ export default {
             return obj3;
           } else {
             closure_0 = arg1;
-            obj = outer1_1(7688);
+            obj = outer1_1(7685);
             const result = obj.checkGuildTemplateDirty(closure_0);
             dependencyMap = 3;
             const obj4 = { value: null, done: true };
@@ -1296,13 +1296,13 @@ export default {
     obj.dispatch(obj);
   },
   nsfwReturnToSafety(guildId) {
-    const tmp2 = importDefault(12628)(guildId);
+    const tmp2 = importDefault(12622)(guildId);
     if (null == tmp2) {
       if (null != guildId) {
         const defaultChannel = store.getDefaultChannel(guildId);
         if (null != defaultChannel) {
           if (!obj3.isChannelContentGated(defaultChannel)) {
-            let tmp11Result = tmp11(7727);
+            let tmp11Result = tmp11(7724);
             if (!tmp11Result.isChannelSpoilerGated(defaultChannel)) {
               tmp11Result = tmp11(1222);
               tmp11Result.transitionTo(closure_21.CHANNEL(guildId, defaultChannel.id));

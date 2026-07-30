@@ -1,10 +1,10 @@
-// Module ID: 7974
-// Function ID: 7975
+// Module ID: 7971
+// Function ID: 7972
 // Name: EditCollectiblesPreviewDescription
-// Dependencies: [19, 17, 1946, 21, 4189, 589, 3835, 5810, 3859, 4185, 1236, 7955, 2]
+// Dependencies: [19, 17, 1946, 21, 4189, 589, 3835, 5810, 3859, 4185, 1236, 7952, 2]
 // Exports: default
 
-// Module 7974 (EditCollectiblesPreviewDescription)
+// Module 7971 (EditCollectiblesPreviewDescription)
 import "noop";
 import { View } from "get ActivityIndicator";
 import _getSystemLocale from "_getSystemLocale";
@@ -135,7 +135,7 @@ export default function EditCollectiblesPreviewDetails(previewSkuId) {
   previewSkuId = previewSkuId.previewSkuId;
   ({ user, nitroJoinCTA, nitroUpgradeCTA } = previewSkuId);
   const tmp = callback2();
-  ({ product, purchase } = importDefault(7955)(previewSkuId));
+  ({ product, purchase } = importDefault(7952)(previewSkuId));
   let tmp5Result = null;
   if (null != previewSkuId) {
     if (null != product) {

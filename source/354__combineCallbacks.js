@@ -1016,7 +1016,7 @@ arg5.default = {
     } else {
       fn = () => {
         const items = [...arguments];
-        if (typeof closure_0 !== "_") {
+        if (typeof closure_0 !== "ZodObject") {
           const items1 = [];
           HermesBuiltin.arraySpread(items, 0);
           HermesBuiltin.apply(items1, undefined);

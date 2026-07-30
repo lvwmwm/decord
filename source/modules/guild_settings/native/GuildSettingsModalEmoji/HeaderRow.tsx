@@ -1,10 +1,10 @@
-// Module ID: 16402
-// Function ID: 16403
+// Module ID: 16396
+// Function ID: 16397
 // Name: HeaderRow
-// Dependencies: [5, 32, 19, 17, 16396, 676, 1877, 21, 4189, 712, 8266, 9415, 698, 1236, 514, 4731, 4600, 4185, 589, 2]
+// Dependencies: [5, 32, 19, 17, 16390, 676, 1877, 21, 4189, 712, 8263, 9411, 698, 1236, 514, 4731, 4600, 4185, 589, 2]
 // Exports: ConnectedHeaderRow
 
-// Module 16402 (HeaderRow)
+// Module 16396 (HeaderRow)
 import closure_3 from "ME";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
@@ -213,7 +213,7 @@ function HeaderRow(guild) {
   [tmp5, c5] = callback(React.useState(null), 2);
   const tmp4 = callback(React.useState(null), 2);
   [c6, c7] = callback(React.useState(""), 2);
-  let obj = guild(8266);
+  let obj = guild(8263);
   let canCreateExpressions = obj.useManageResourcePermissions(guild).canCreateExpressions;
   let intl = guild(1236).intl;
   obj = { id: null, text: null };

@@ -1,177 +1,42 @@
 // Module ID: 6464
 // Function ID: 6465
 // Name: addToMetricsAggregator
-// Dependencies: [6364, 6367, 6369, 6395, 6373, 6396, 6368, 6465, 6382, 6402, 6403]
+// Dependencies: [6461, 6465]
 
 // Module 6464 (addToMetricsAggregator)
-import "errorCallback";
-import __SENTRY_DEBUG__ from "__SENTRY_DEBUG__";
-
-function addToMetricsAggregator(arg0, SET_METRIC_TYPE, arg2, arg3, arg4) {
-  let environment;
-  let release;
-  let tags;
-  let timestamp;
-  let unit;
-  let obj = arg4;
-  if (arg4 === undefined) {
-    obj = {};
-  }
-  let client = obj.client;
-  if (!client) {
-    client = require(6395) /* getClient */.getClient();
-    const obj2 = require(6395) /* getClient */;
-  }
-  if (client) {
-    const activeSpan = require(6373) /* spanTimeInputToSeconds */.getActiveSpan();
-    let rootSpan;
-    if (activeSpan) {
-      let tmp3Result = tmp3(6373);
-      rootSpan = tmp3Result.getRootSpan(activeSpan);
-    }
-    let description = rootSpan;
-    if (rootSpan) {
-      tmp3Result = tmp3(6373);
-      description = tmp3Result.spanToJSON(rootSpan).description;
-    }
-    ({ unit, tags, timestamp } = obj);
-    const options = client.getOptions();
-    ({ release, environment } = options);
-    obj = {};
-    if (release) {
-      obj.release = release;
-    }
-    if (environment) {
-      obj.environment = environment;
-    }
-    if (description) {
-      obj.transaction = description;
-    }
-    if (require(6396) /* __SENTRY_DEBUG__ */.DEBUG_BUILD) {
-      const logger = tmp3(6368).logger;
-      const _HermesInternal = HermesInternal;
-      logger.log("Adding value of " + arg3 + " to " + SET_METRIC_TYPE + " metric " + arg2);
-    }
-    const obj3 = require(6373) /* spanTimeInputToSeconds */;
-    const globalSingleton = require(6369) /* getGlobalSingleton */.getGlobalSingleton("globalMetricsAggregators", () => {
-      const weakMap = new WeakMap();
-      return weakMap;
-    });
-    let value = globalSingleton.get(client);
-    if (!value) {
-      const tmp20 = new arg0(client);
-      require = tmp20;
-      client.on("flush", () => tmp20.flush());
-      client.on("close", () => tmp20.close());
-      const result = globalSingleton.set(client, tmp20);
-      value = tmp20;
-    }
-    obj = {};
-    const merged = Object.assign(obj);
-    const merged1 = Object.assign(tags);
-    value.add(SET_METRIC_TYPE, arg2, arg3, unit, obj, timestamp);
-    const tmp3Result1 = require(6369) /* getGlobalSingleton */;
-  }
-}
-
-export const metrics = {
-  increment(arg0, arg1, joined) {
-    let num = joined;
-    if (joined === undefined) {
+const require = arg1;
+const dependencyMap = arg6;
+arg5.metricsDefault = {
+  increment(arg0) {
+    let num = arg1;
+    if (arg1 === undefined) {
       num = 1;
     }
-    let parsed = num;
-    if (typeof num !== "init") {
-      const _parseInt = parseInt;
-      parsed = parseInt(num);
-    }
-    addToMetricsAggregator(arg0, require(6465).COUNTER_METRIC_TYPE, arg1, parsed, arg3);
+    const metrics = require(6461) /* addToMetricsAggregator */.metrics;
+    metrics.increment(require(6465) /* MetricsAggregator */.MetricsAggregator, arg0, num, arg2);
   },
-  distribution(arg0, arg1, joined) {
-    let parsed = joined;
-    if (typeof joined !== "init") {
-      const _parseInt = parseInt;
-      parsed = parseInt(joined);
-    }
-    addToMetricsAggregator(arg0, require(6465).DISTRIBUTION_METRIC_TYPE, arg1, parsed, arg3);
+  distribution(arg0, arg1, arg2) {
+    const metrics = require(6461) /* addToMetricsAggregator */.metrics;
+    metrics.distribution(require(6465) /* MetricsAggregator */.MetricsAggregator, arg0, arg1, arg2);
   },
-  set(arg0, arg1, arg2, arg3) {
-    addToMetricsAggregator(arg0, require(6465).SET_METRIC_TYPE, arg1, arg2, arg3);
+  set(arg0, arg1, arg2) {
+    const metrics = require(6461) /* addToMetricsAggregator */.metrics;
+    const result = metrics.set(require(6465) /* MetricsAggregator */.MetricsAggregator, arg0, arg1, arg2);
   },
-  gauge(arg0, arg1, joined) {
-    let parsed = joined;
-    if (typeof joined !== "init") {
-      const _parseInt = parseInt;
-      parsed = parseInt(joined);
-    }
-    addToMetricsAggregator(arg0, require(6465).GAUGE_METRIC_TYPE, arg1, parsed, arg3);
+  gauge(arg0, arg1, arg2) {
+    const metrics = require(6461) /* addToMetricsAggregator */.metrics;
+    metrics.gauge(require(6465) /* MetricsAggregator */.MetricsAggregator, arg0, arg1, arg2);
   },
-  timing(arg0, arg1, joined) {
-    const _require = arg0;
-    const dependencyMap = arg1;
-    let closure_2 = joined;
-    let str = arg3;
-    if (arg3 === undefined) {
+  timing(arg0, arg1) {
+    let str = arg2;
+    if (arg2 === undefined) {
       str = "second";
     }
-    let closure_3 = arg4;
-    let c4;
-    if (typeof joined === "find") {
-      let obj = _require(6382);
-      let timestampInSecondsResult = obj.timestampInSeconds();
-      c4 = timestampInSecondsResult;
-      obj = { op: "metrics.timing", name: null, startTime: null, onlyIfParent: true };
-      obj[1] = arg1;
-      obj[2] = timestampInSecondsResult;
-      return _require(6402).startSpanManual(obj, (arg0) => {
-        const callback = arg0;
-        return callback(table[10]).handleCallbackErrors(() => callback(), () => {
-
-        }, () => {
-          let obj = lib(6382);
-          const timestampInSecondsResult = obj.timestampInSeconds();
-          const diff = timestampInSecondsResult - outer1_4;
-          obj = {};
-          const merged = Object.assign(outer1_3);
-          obj.unit = "second";
-          let parsed = diff;
-          if (typeof diff !== "init") {
-            const _parseInt = parseInt;
-            parsed = parseInt(diff);
-          }
-          closure_2(lib, lib(6465).DISTRIBUTION_METRIC_TYPE, outer1_1, parsed, obj);
-          lib.end(timestampInSecondsResult);
-        });
-      });
-    } else {
-      obj = {};
-      let merged = Object.assign(arg4);
-      obj.unit = str;
-      const DISTRIBUTION_METRIC_TYPE = _require(6465).DISTRIBUTION_METRIC_TYPE;
-      let parsed = joined;
-      if (typeof joined !== "init") {
-        let _parseInt = parseInt;
-        parsed = parseInt(joined);
-      }
-      closure_2(arg0, DISTRIBUTION_METRIC_TYPE, arg1, parsed, obj);
-    }
+    const metrics = require(6461) /* addToMetricsAggregator */.metrics;
+    return metrics.timing(require(6465) /* MetricsAggregator */.MetricsAggregator, arg0, arg1, str, arg3);
   },
-  getMetricsAggregatorForClient(on) {
-    const globalSingleton = require(6369) /* getGlobalSingleton */.getGlobalSingleton("globalMetricsAggregators", () => {
-      const weakMap = new WeakMap();
-      return weakMap;
-    });
-    const value = globalSingleton.get(on);
-    if (value) {
-      return value;
-    } else {
-      const tmp6 = new arg1(on);
-      require = tmp6;
-      on.on("flush", () => tmp20.flush());
-      on.on("close", () => tmp20.close());
-      const result = globalSingleton.set(on, tmp6);
-      return tmp6;
-    }
-    const obj = require(6369) /* getGlobalSingleton */;
+  getMetricsAggregatorForClient(arg0) {
+    const metrics = require(6461) /* addToMetricsAggregator */.metrics;
+    return metrics.getMetricsAggregatorForClient(arg0, require(6465) /* MetricsAggregator */.MetricsAggregator);
   }
 };

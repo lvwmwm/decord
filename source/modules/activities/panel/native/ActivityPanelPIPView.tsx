@@ -1,14 +1,14 @@
-// Module ID: 15843
-// Function ID: 15844
+// Module ID: 15837
+// Function ID: 15838
 // Name: BaseActivityPanelPIPView
-// Dependencies: [19, 17, 4181, 10676, 1372, 1371, 4214, 5688, 15844, 676, 10039, 21, 1297, 4189, 712, 1581, 589, 1474, 15839, 10042, 4050, 15845, 4534, 4190, 4599, 15846, 15847, 1236, 3901, 5273, 3807, 15841, 10657, 2]
+// Dependencies: [19, 17, 4181, 10672, 1372, 1371, 4214, 5688, 15838, 676, 10035, 21, 1297, 4189, 712, 1581, 589, 1474, 15833, 10038, 4050, 15839, 4534, 4190, 4599, 15840, 15841, 1236, 3901, 5273, 3807, 15835, 10653, 2]
 // Exports: useBaseActivityPanelPIPView
 
-// Module 15843 (BaseActivityPanelPIPView)
+// Module 15837 (BaseActivityPanelPIPView)
 import importAllResult from "u";
 import { View } from "useWindowDimensions";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import module_10676 from "module_10676";
+import module_10672 from "module_10672";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import participantFromServer from "participantFromServer";
 import { ActivityLayoutMode } from "items3";

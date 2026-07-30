@@ -1,9 +1,9 @@
-// Module ID: 6747
-// Function ID: 6748
+// Module ID: 6744
+// Function ID: 6745
 // Name: openIncodeAgeVerificationModal
-// Dependencies: [5, 1874, 6748, 6750, 4402, 6716, 21, 4732, 4395, 6751, 1959, 6721, 1577, 4530, 6767, 6768, 6769, 4405, 3868, 709, 6770, 6771, 7617, 7618, 3886, 2]
+// Dependencies: [5, 1874, 6745, 6747, 4402, 6713, 21, 4732, 4395, 6748, 1959, 6718, 1577, 4530, 6764, 6765, 6766, 4405, 3868, 709, 6767, 6768, 7614, 7615, 3886, 2]
 
-// Module 6747 (openIncodeAgeVerificationModal)
+// Module 6744 (openIncodeAgeVerificationModal)
 import SafetyToastType from "SafetyToastType";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import set from "set";
@@ -87,10 +87,10 @@ function openIncodeAgeVerificationModal(arg0) {
           } else {
             if (1 === tmp7) {
               dependencyMap = 0;
-              outer1_1(6721).showFailedToast(outer1_11.TIGGER_PAWTECT_ERROR);
+              outer1_1(6718).showFailedToast(outer1_11.TIGGER_PAWTECT_ERROR);
               outer1_0();
               c4 = 3;
-              const obj5 = outer1_1(6721);
+              const obj5 = outer1_1(6718);
             } else if (2 === tmp7) {
               if (arg0 === 1) {
                 c4 = 3;
@@ -296,7 +296,7 @@ export default {
     let obj = entryPoint(1577);
     if (obj.isMetaQuest()) {
       let tmpResult = tmp(4530);
-      tmpResult.openAlert(closure_7, jsx(onClose(6767), {}), onClose);
+      tmpResult.openAlert(closure_7, jsx(onClose(6764), {}), onClose);
     } else {
       tmpResult = tmp(4405);
       let isAgeVerifiedResult = tmpResult.isAgeVerified();
@@ -403,8 +403,8 @@ export default {
           }), {}, closure_6);
           const obj8 = onClose(4395);
         } else {
-          currentUser = tmp(7617).isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint);
-          const tmpResult4 = tmp(7617);
+          currentUser = tmp(7614).isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint);
+          const tmpResult4 = tmp(7614);
           onClose(4395).pushLazy(prop(function*() {
             if (paths === 2) {
               paths = 3;
@@ -463,9 +463,9 @@ export default {
           }), {}, closure_6);
           const obj7 = onClose(4395);
         }
-        tmpResult3 = tmp(6770);
+        tmpResult3 = tmp(6767);
       }
-      tmpResult2 = tmp(6768);
+      tmpResult2 = tmp(6765);
     }
   },
   openUrl(arg0) {

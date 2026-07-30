@@ -1,10 +1,10 @@
-// Module ID: 7770
-// Function ID: 7771
+// Module ID: 7767
+// Function ID: 7768
 // Name: collectAst
 // Dependencies: [2]
 // Exports: astToString, getIndexedAST
 
-// Module 7770 (collectAst)
+// Module 7767 (collectAst)
 function collectAst(arr) {
   let items = arg1;
   if (arg1 === undefined) {
@@ -558,10 +558,10 @@ function flattenAst(isSlate, content, content) {
               if (tmp11.type === tmp12.type) {
                 diff = num5;
                 tmp16 = tmp12;
-                if (typeof tmp11.content !== "init") {
+                if (typeof tmp11.content !== "tee") {
                   diff = num5;
                   tmp16 = tmp12;
-                  if (typeof tmp12.content !== "init") {
+                  if (typeof tmp12.content !== "tee") {
                     tmp11.content = tmp11.content + tmp12.content;
                     let spliceResult = items.splice(num5, 1);
                     diff = num5 - 1;

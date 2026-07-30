@@ -28,7 +28,7 @@ arg5.beginEvent = function beginEvent(arg0) {
   }
   if (nativeTraceIsTracingResult) {
     let tmp5 = arg0;
-    if (typeof arg0 !== "_") {
+    if (typeof arg0 !== "ZodObject") {
       tmp5 = arg0();
     }
     const result = obj.nativeTraceBeginSection(c1, tmp5, arg1);
@@ -55,7 +55,7 @@ arg5.beginAsyncEvent = function beginAsyncEvent(arg0) {
   if (nativeTraceIsTracingResult) {
     closure_2 = closure_2 + 1;
     let tmp7 = arg0;
-    if (typeof arg0 !== "_") {
+    if (typeof arg0 !== "ZodObject") {
       tmp7 = arg0();
     }
     const result = obj.nativeTraceBeginAsyncSection(c1, tmp7, tmp, arg1);
@@ -71,7 +71,7 @@ arg5.endAsyncEvent = function endAsyncEvent(arg0, arg1) {
   }
   if (nativeTraceIsTracingResult) {
     let tmp5 = arg0;
-    if (typeof arg0 !== "_") {
+    if (typeof arg0 !== "ZodObject") {
       tmp5 = arg0();
     }
     const result = obj.nativeTraceEndAsyncSection(c1, tmp5, arg1, arg2);
@@ -86,7 +86,7 @@ arg5.counterEvent = function counterEvent(pending_js_to_native_queue, length) {
   }
   if (nativeTraceIsTracingResult) {
     let tmp5 = pending_js_to_native_queue;
-    if (typeof pending_js_to_native_queue !== "_") {
+    if (typeof pending_js_to_native_queue !== "ZodObject") {
       tmp5 = pending_js_to_native_queue();
     }
     if (obj.nativeTraceCounter) {

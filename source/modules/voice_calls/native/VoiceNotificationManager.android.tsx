@@ -1,9 +1,9 @@
-// Module ID: 13517
-// Function ID: 13518
+// Module ID: 13512
+// Function ID: 13513
 // Name: processColor
-// Dependencies: [32, 17, 1371, 4226, 4208, 1372, 4236, 4261, 3826, 1874, 676, 712, 6043, 6042, 10832, 9078, 4380, 1236, 4368, 2]
+// Dependencies: [32, 17, 1371, 4226, 4208, 1372, 4236, 4261, 3826, 1874, 676, 712, 6041, 6040, 10828, 9074, 4380, 1236, 4368, 2]
 
-// Module 13517 (processColor)
+// Module 13512 (processColor)
 import _slicedToArray from "_slicedToArray";
 import { processColor } from "getSystemLocale";
 import participantFromServer from "participantFromServer";
@@ -25,7 +25,7 @@ class VoiceNotificationManager {
     obj = Object.create(new.target.prototype);
     VoiceNotificationManager = obj;
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: true, isPushToTalk: "/assets/.cache/intl/ZGVzaWdu", embeddedActivity: null, isStreaming: "c44519962d9b5785ec969f9b17f994ee" };
+    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: true, isPushToTalk: "/assets/.cache/intl/ZGVzaWdu", embeddedActivity: null, isStreaming: "8368d48f4b808c5de7fc7ae05463b7de" };
     obj.handleVoiceStateChange = function handleVoiceStateChange() {
       const channelId = outer1_9.getChannelId();
       const state = outer1_9.getState();
@@ -230,7 +230,7 @@ prototype["terminate"] = function terminate() {
 };
 let set = Object.create(VoiceNotificationManager.prototype);
 set.voiceServiceHandlerId = 9000;
-set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: true, isPushToTalk: "/assets/.cache/intl/ZGVzaWdu", embeddedActivity: null, isStreaming: "c44519962d9b5785ec969f9b17f994ee" };
+set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: true, isPushToTalk: "/assets/.cache/intl/ZGVzaWdu", embeddedActivity: null, isStreaming: "8368d48f4b808c5de7fc7ae05463b7de" };
 set.handleVoiceStateChange = function handleVoiceStateChange() {
   const channelId = outer1_9.getChannelId();
   const state = outer1_9.getState();

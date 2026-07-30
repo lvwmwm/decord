@@ -1,10 +1,10 @@
-// Module ID: 7749
-// Function ID: 7750
+// Module ID: 7746
+// Function ID: 7747
 // Name: MessageAccessibilityAction
-// Dependencies: [5003, 3817, 676, 3862, 7750, 1236, 7757, 2]
+// Dependencies: [5003, 3817, 676, 3862, 7747, 1236, 7754, 2]
 // Exports: createMessageAccessibilityActions, getMessageAccessibilityActionFromLabel
 
-// Module 7749 (MessageAccessibilityAction)
+// Module 7746 (MessageAccessibilityAction)
 import recomputeGuild from "recomputeGuild";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";
@@ -39,14 +39,14 @@ export const getMessageAccessibilityActionFromLabel = function getMessageAccessi
   let formatToPlainStringResult = null;
   if (true !== disableDoubleTap) {
     if (null != setting) {
-      const result = tmp(7750).disambiguatedEmojiFromSettingsValue(setting);
+      const result = tmp(7747).disambiguatedEmojiFromSettingsValue(setting);
       if (null != result) {
         const intl9 = tmp(1236).intl;
         obj = { emojiName: null };
         obj[0] = result.name;
         formatToPlainStringResult = intl9.formatToPlainString(tmp(1236).t.eQIttH, obj);
       }
-      const tmpResult = tmp(7750);
+      const tmpResult = tmp(7747);
     }
     const intl8 = tmp(1236).intl;
     formatToPlainStringResult = intl8.formatToPlainString(tmp(1236).t.eQIttH, { emojiName: "heart" });
@@ -91,7 +91,7 @@ export const createMessageAccessibilityActions = function createMessageAccessibi
       let formatToPlainStringResult = null;
       if (true !== disableDoubleTap) {
         if (null != setting) {
-          let tmp5Result = tmp5(7750);
+          let tmp5Result = tmp5(7747);
           const result = tmp5Result.disambiguatedEmojiFromSettingsValue(setting);
           if (null != result) {
             const intl4 = tmp5(1236).intl;
@@ -110,7 +110,7 @@ export const createMessageAccessibilityActions = function createMessageAccessibi
         items.push(obj1);
       }
     }
-    tmp5Result = tmp5(7757);
+    tmp5Result = tmp5(7754);
     if (tmp5Result.canReplyToMessage(channel, message)) {
       const obj2 = { label: null, name: null };
       const intl5 = tmp5(1236).intl;

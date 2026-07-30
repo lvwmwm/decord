@@ -275,7 +275,7 @@ function getDescription(arr) {
     let tmp12 = tmp11;
     if (tmp2) {
       tmp12 = tmp11;
-      if (typeof importDefault(4840)[tmp2] !== "_") {
+      if (typeof importDefault(4840)[tmp2] !== "ZodObject") {
         tmp12 = tmp13(4840)[tmp2](arr, tmp11);
         const tmp13Result = tmp13(4840);
       }

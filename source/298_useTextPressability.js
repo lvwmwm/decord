@@ -177,7 +177,7 @@ class TextImpl {
         tmp26 = style;
         if (null != tmp24) {
           tmp58 = null;
-          if (typeof tmp24.fontWeight !== "os") {
+          if (typeof tmp24.fontWeight !== "reType") {
             obj = {};
             tmp59 = globalThis;
             _String = String;

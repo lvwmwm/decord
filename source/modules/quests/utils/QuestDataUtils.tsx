@@ -1,10 +1,10 @@
-// Module ID: 5983
-// Function ID: 5984
+// Module ID: 5981
+// Function ID: 5982
 // Name: getQuestDeliveryDataForPlacement
-// Dependencies: [1946, 5984, 5985, 5033, 5036, 1384, 6000, 1208, 2]
+// Dependencies: [1946, 5982, 5983, 5033, 5036, 1384, 5998, 1208, 2]
 // Exports: captureQuestsException, earnedDecisionIsValid, findNextUpcomingExpirationEpochMs, findQuestOrReplacement, getAdContext, getAdDecisionData, getAdMetadataSealed, getAdTrafficMetadataSealed, getIsQuestExpiredButWithinThirtyDayLookback, getQuestForPlacement, getQuestFormattedDate, getQuestPlacementFromQuestContent, hasUnclaimedReward, isBillableQuestContent, isDismissed, isDismissible, isQuestConfigExpired, isQuestExpired
 
-// Module 5983 (getQuestDeliveryDataForPlacement)
+// Module 5981 (getQuestDeliveryDataForPlacement)
 import _getSystemLocale from "_getSystemLocale";
 import set from "set";
 import initializeState from "initializeState";
@@ -63,7 +63,7 @@ function getQuestDeliveryDataForPlacement(arg0, adContentId) {
       }
       return tmp10;
     }
-    obj5 = importDefault(6000);
+    obj5 = importDefault(5998);
     tmp13 = quest;
   }
 }

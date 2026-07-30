@@ -1,10 +1,10 @@
-// Module ID: 15110
-// Function ID: 15111
+// Module ID: 15104
+// Function ID: 15105
 // Name: VoiceUserConnected
-// Dependencies: [19, 1371, 4202, 4208, 1218, 4236, 4204, 4205, 21, 589, 15111, 2]
+// Dependencies: [19, 1371, 4202, 4208, 1218, 4236, 4204, 4205, 21, 589, 15105, 2]
 // Exports: default
 
-// Module 15110 (VoiceUserConnected)
+// Module 15104 (VoiceUserConnected)
 import "noop";
 import participantFromServer from "participantFromServer";
 import getParticipants from "getParticipants";

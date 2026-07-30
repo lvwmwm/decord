@@ -1,30 +1,30 @@
-// Module ID: 7823
-// Function ID: 7824
+// Module ID: 7820
+// Function ID: 7821
 // Name: createPollResultSystemMessage
-// Dependencies: [1877, 7743, 7745, 1236, 1416, 3830, 7824, 7746, 2]
+// Dependencies: [1877, 7740, 7742, 1236, 1416, 3830, 7821, 7743, 2]
 // Exports: createPollResultSystemMessage
 
-// Module 7823 (createPollResultSystemMessage)
+// Module 7820 (createPollResultSystemMessage)
 import { EMOJI_URL_BASE_SIZE } from "set";
 
 const result = require("formatUsernameOnClick").fileFinishedImporting("modules/messages/native/renderer/system_messages/PollResultSystemMessage.tsx");
 
 export const createPollResultSystemMessage = function createPollResultSystemMessage(message) {
-  const tmp3 = importDefault(7824)(message.message.embeds[0]);
+  const tmp3 = importDefault(7821)(message.message.embeds[0]);
   if (null == tmp3) {
     return null;
   } else if (null == message.message.messageReference) {
     return null;
   } else {
     message = message.message;
-    const messageAuthorWithProcessedColor = obj6(7743).getMessageAuthorWithProcessedColor(message);
+    const messageAuthorWithProcessedColor = obj6(7740).getMessageAuthorWithProcessedColor(message);
     let obj = { username: null, usernameOnClick: null, title: null, titleOnClick: null };
     obj[0] = messageAuthorWithProcessedColor.nick;
     obj = { message: null, author: null, roleStyle: null };
     obj[0] = message;
     obj[1] = messageAuthorWithProcessedColor;
     obj[2] = message.roleStyle;
-    obj[1] = tmp(7745)(obj);
+    obj[1] = tmp(7742)(obj);
     obj[2] = tmp3.questionText;
     const obj1 = { action: "bindJumpToMessage", targetChannelId: null, targetMessageId: null, medium: true };
     obj1[1] = message.messageReference.channel_id;
@@ -90,7 +90,7 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
       }
     }
     const obj10 = {};
-    const merged3 = Object.assign(tmp(7746)(message));
+    const merged3 = Object.assign(tmp(7743)(message));
     obj10.content = formatToPartsResult;
     return obj10;
   }

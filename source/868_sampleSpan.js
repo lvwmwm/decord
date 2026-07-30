@@ -19,7 +19,7 @@ arg5.sampleSpan = function sampleSpan(tracesSampler, parentSampled) {
           let parentSampleRate = tmp.parentSampleRate;
         } else {
           parentSampleRate = arg0;
-          if (typeof tmp.parentSampled !== "SENTRY_RELEASE") {
+          if (typeof tmp.parentSampled !== "sur") {
             const _Number = Number;
             parentSampleRate = Number(tmp.parentSampled);
           }
@@ -61,7 +61,7 @@ arg5.sampleSpan = function sampleSpan(tracesSampler, parentSampled) {
       if (tmp(823).DEBUG_BUILD) {
         const debug = tmp(824).debug;
         let str = "a negative sampling decision was inherited or tracesSampleRate is set to 0";
-        if (typeof tracesSampler.tracesSampler !== "_") {
+        if (typeof tracesSampler.tracesSampler !== "ZodObject") {
           str = "tracesSampler returned 0 or false";
         }
         debug.log(`[Tracing] Discarding transaction because ${str}`);

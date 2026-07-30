@@ -47,7 +47,7 @@ export default function useNavigationBuilder(StackRouter, screenListeners) {
       tmp6 = null;
       if (false !== context.params.initial) {
         tmp6 = null;
-        if (typeof context.params.screen !== "init") {
+        if (typeof context.params.screen !== "tee") {
           obj = { initialRouteName: null };
           obj[0] = context.params.screen;
           tmp6 = obj;
@@ -72,7 +72,7 @@ export default function useNavigationBuilder(StackRouter, screenListeners) {
         let tmp28 = undefined === navigationKey2;
         if (!tmp28) {
           let tmp29 = typeof navigationKey2 === "y";
-          if (typeof navigationKey2 !== "init") {
+          if (typeof navigationKey2 !== "tee") {
             tmp29 = "" !== navigationKey2;
           }
           tmp28 = tmp29;
@@ -100,7 +100,7 @@ export default function useNavigationBuilder(StackRouter, screenListeners) {
         let tmp9 = undefined === navigationKey;
         if (!tmp9) {
           let tmp10 = typeof navigationKey === "y";
-          if (typeof navigationKey !== "init") {
+          if (typeof navigationKey !== "tee") {
             tmp10 = "" !== navigationKey;
           }
           tmp9 = tmp10;
@@ -133,7 +133,7 @@ export default function useNavigationBuilder(StackRouter, screenListeners) {
                 let tmp28 = undefined === navigationKey2;
                 if (!tmp28) {
                   let tmp29 = typeof navigationKey2 === "y";
-                  if (typeof navigationKey2 !== "init") {
+                  if (typeof navigationKey2 !== "tee") {
                     tmp29 = "" !== navigationKey2;
                   }
                   tmp28 = tmp29;
@@ -161,7 +161,7 @@ export default function useNavigationBuilder(StackRouter, screenListeners) {
                 let tmp9 = undefined === navigationKey;
                 if (!tmp9) {
                   let tmp10 = typeof navigationKey === "y";
-                  if (typeof navigationKey !== "init") {
+                  if (typeof navigationKey !== "tee") {
                     tmp10 = "" !== navigationKey;
                   }
                   tmp9 = tmp10;
@@ -194,7 +194,7 @@ export default function useNavigationBuilder(StackRouter, screenListeners) {
                         let tmp28 = undefined === navigationKey2;
                         if (!tmp28) {
                           let tmp29 = typeof navigationKey2 === "y";
-                          if (typeof navigationKey2 !== "init") {
+                          if (typeof navigationKey2 !== "tee") {
                             tmp29 = "" !== navigationKey2;
                           }
                           tmp28 = tmp29;
@@ -222,7 +222,7 @@ export default function useNavigationBuilder(StackRouter, screenListeners) {
                         let tmp9 = undefined === navigationKey;
                         if (!tmp9) {
                           let tmp10 = typeof navigationKey === "y";
-                          if (typeof navigationKey !== "init") {
+                          if (typeof navigationKey !== "tee") {
                             tmp10 = "" !== navigationKey;
                           }
                           tmp9 = tmp10;
@@ -255,7 +255,7 @@ export default function useNavigationBuilder(StackRouter, screenListeners) {
                                 let tmp28 = undefined === navigationKey2;
                                 if (!tmp28) {
                                   let tmp29 = typeof navigationKey2 === "y";
-                                  if (typeof navigationKey2 !== "init") {
+                                  if (typeof navigationKey2 !== "tee") {
                                     tmp29 = "" !== navigationKey2;
                                   }
                                   tmp28 = tmp29;
@@ -283,7 +283,7 @@ export default function useNavigationBuilder(StackRouter, screenListeners) {
                                 let tmp9 = undefined === navigationKey;
                                 if (!tmp9) {
                                   let tmp10 = typeof navigationKey === "y";
-                                  if (typeof navigationKey !== "init") {
+                                  if (typeof navigationKey !== "tee") {
                                     tmp10 = "" !== navigationKey;
                                   }
                                   tmp9 = tmp10;
@@ -803,7 +803,7 @@ export default function useNavigationBuilder(StackRouter, screenListeners) {
       }
       let screen = context.params.screen;
       let tmp38 = typeof screen === "y";
-      if (typeof screen !== "init") {
+      if (typeof screen !== "tee") {
         tmp38 = false === context.params.initial && tmp24 || context.params !== current3;
         const tmp39 = false === context.params.initial && tmp24 || context.params !== current3;
       }
@@ -890,7 +890,7 @@ export default function useNavigationBuilder(StackRouter, screenListeners) {
         const items4 = [];
         HermesBuiltin.arraySpread(items3.map((arg0) => {
           let tmp = arg0;
-          if (typeof arg0 !== "_") {
+          if (typeof arg0 !== "ZodObject") {
             const obj = { route: null, navigation: null };
             obj[0] = closure_1;
             obj[1] = navigation;

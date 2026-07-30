@@ -1,10 +1,10 @@
-// Module ID: 8184
-// Function ID: 8185
+// Module ID: 8181
+// Function ID: 8182
 // Name: generateHydrationId
-// Dependencies: [5, 5779, 1376, 1372, 1862, 4407, 4201, 8170, 8183, 676, 6156, 8185, 4409, 11, 589, 8186, 8190, 7909, 8191, 8192, 1236, 5126, 1959, 676, 2]
+// Dependencies: [5, 5779, 1376, 1372, 1862, 4407, 4201, 8167, 8180, 676, 6154, 8182, 4409, 11, 589, 8183, 8187, 7906, 8188, 8189, 1236, 5126, 1959, 676, 2]
 // Exports: compareGravityUnreadIds, contentTypeToText, createGravityMessageFromServer, customScoreToNumber, customStatusToContentInventoryEntry, determineContentType, getViewableFeedItemsArray, hydrateNextPage, icymiEnabled, isChannelCustomScoreEligible, isGuildItem, isItemNSFW, isItemUnreadInChannel, itemToType, numberToCustomScore, regenerateFeedAndClearReadStates, useGravityMessage, useGravityMessageItem, useICYMIMessage
 
-// Module 8184 (generateHydrationId)
+// Module 8181 (generateHydrationId)
 import reinjectEphemerals from "reinjectEphemerals";
 import scheduledEventSort from "scheduledEventSort";
 import { ThreadChannelRecord } from "createChannelRecord";
@@ -70,13 +70,13 @@ function _hydrateItems() {
               const arr = outer1_10.getHydratedItems();
               const substr = arr.slice(callback, dependencyMap);
               if (0 !== substr.length) {
-                let obj1 = callback(8185);
+                let obj1 = callback(8182);
                 const hydratedAttempt = obj1.loadHydratedAttempt(outer1_14(tmp24, tmp25));
                 const found = substr.filter((arg0) => null == dependencyMap[arg0.id]);
-                const found1 = found.filter((type) => type.type === dependencyMap(6156).ICYMIItemTypes.MESSAGE);
+                const found1 = found.filter((type) => type.type === dependencyMap(6154).ICYMIItemTypes.MESSAGE);
                 const mapped = found1.map((channel_id) => ({ channel_id: channel_id.data.channel_id, message_id: channel_id.data.message_id }));
                 const mapped1 = found.map((type) => {
-                  if (type.type === dependencyMap(6156).ICYMIItemTypes.MESSAGE) {
+                  if (type.type === dependencyMap(6154).ICYMIItemTypes.MESSAGE) {
                     const message_context = type.data.message_context;
                     let reply_message_id;
                     if (message_context != null) {
@@ -118,7 +118,7 @@ function _hydrateItems() {
                 });
                 const _Boolean = Boolean;
                 const found2 = mapped1.flat().filter(Boolean);
-                const found3 = found.filter((type) => type.type === dependencyMap(6156).ICYMIItemTypes.ACTIVITY);
+                const found3 = found.filter((type) => type.type === dependencyMap(6154).ICYMIItemTypes.ACTIVITY);
                 const mapped2 = found3.map((data) => ({ user_id: data.data.user_id, content_id: data.data.content_id }));
                 const flatResult = mapped1.flat();
                 obj1 = { messageItems: null, activityItems: null };
@@ -129,7 +129,7 @@ function _hydrateItems() {
                 c4 = 1;
                 c3 = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = callback(8185).fetchHydrated(tmp24, tmp25, obj1);
+                obj2[0] = callback(8182).fetchHydrated(tmp24, tmp25, obj1);
                 return obj2;
               }
             }
@@ -412,9 +412,9 @@ let result = require("createChannelRecord").fileFinishedImporting("modules/icymi
 export { generateHydrationId };
 export const ICYMICustomScore = obj;
 export const isGuildItem = function isGuildItem(type) {
-  let tmp3 = type.type === require(6156) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE;
+  let tmp3 = type.type === require(6154) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE;
   if (!tmp3) {
-    tmp3 = type.type === require(6156) /* MessageEmbedTypes */.ICYMIItemTypes.GUILD_EVENT;
+    tmp3 = type.type === require(6154) /* MessageEmbedTypes */.ICYMIItemTypes.GUILD_EVENT;
   }
   return tmp3;
 };
@@ -531,11 +531,11 @@ export const useICYMIMessage = function useICYMIMessage(id, before_message_id) {
   }, items1);
 };
 export const icymiEnabled = function icymiEnabled(customScores) {
-  return require(8186) /* apexExperiment */.getICYMIEnabled(customScores);
+  return require(8183) /* apexExperiment */.getICYMIEnabled(customScores);
 };
 export const customStatusToContentInventoryEntry = function customStatusToContentInventoryEntry(data) {
-  let obj = { id: data.id, type: require(6156) /* MessageEmbedTypes */.ICYMIItemTypes.CUSTOM_STATUS, activity: null, score: null, score_components: null };
-  obj = { id: data.id, author_id: data.data.user_id, author_type: require(8190) /* ContentInventoryAuthorType */.ContentInventoryAuthorType.USER, traits: [], participants: [], content_type: require(7909) /* ContentInventoryEntryType */.ContentInventoryEntryType.CUSTOM_STATUS, extra: null };
+  let obj = { id: data.id, type: require(6154) /* MessageEmbedTypes */.ICYMIItemTypes.CUSTOM_STATUS, activity: null, score: null, score_components: null };
+  obj = { id: data.id, author_id: data.data.user_id, author_type: require(8187) /* ContentInventoryAuthorType */.ContentInventoryAuthorType.USER, traits: [], participants: [], content_type: require(7906) /* ContentInventoryEntryType */.ContentInventoryEntryType.CUSTOM_STATUS, extra: null };
   let str = data.data.text;
   if (str == null) {
     str = "";
@@ -590,7 +590,7 @@ export const getViewableFeedItemsArray = function getViewableFeedItemsArray(view
       if (null != tmp3) {
         let tmp5 = id;
         let tmp6 = dependencyMap;
-        let NON_ELIGIBLE_SCROLL_ITEMS = id(8191).NON_ELIGIBLE_SCROLL_ITEMS;
+        let NON_ELIGIBLE_SCROLL_ITEMS = id(8188).NON_ELIGIBLE_SCROLL_ITEMS;
         if (!NON_ELIGIBLE_SCROLL_ITEMS.has(tmp3.item.data.kind)) {
           break;
         }
@@ -686,7 +686,7 @@ export const itemToType = function itemToType(item) {
       return "guild_event";
     } else if ("contentInventory" === kind) {
       let str8 = "hotwheels_gaming_activity";
-      if (item.data.content.content_type === require(7909) /* ContentInventoryEntryType */.ContentInventoryEntryType.CUSTOM_STATUS) {
+      if (item.data.content.content_type === require(7906) /* ContentInventoryEntryType */.ContentInventoryEntryType.CUSTOM_STATUS) {
         str8 = "hotwheels_custom_status";
       }
       return str8;
@@ -703,9 +703,9 @@ export const itemToType = function itemToType(item) {
 };
 export const determineContentType = function determineContentType(channel, message) {
   if (channel.type === constants.GUILD_ANNOUNCEMENT) {
-    return require(6156) /* MessageEmbedTypes */.ContentType.ANNOUNCEMENT;
+    return require(6154) /* MessageEmbedTypes */.ContentType.ANNOUNCEMENT;
   } else if (channel.type === tmp.GUILD_FORUM) {
-    return require(6156) /* MessageEmbedTypes */.ContentType.FORUM_POST;
+    return require(6154) /* MessageEmbedTypes */.ContentType.FORUM_POST;
   } else {
     if (null != message.reactions) {
       const reactions = message.reactions;
@@ -726,27 +726,27 @@ export const determineContentType = function determineContentType(channel, messa
       });
       if (0 !== mapped.length) {
         if (mapped.reduce((arg0, arg1) => arg0 + arg1) > 10) {
-          return require(6156) /* MessageEmbedTypes */.ContentType.POPULAR_MESSAGE;
+          return require(6154) /* MessageEmbedTypes */.ContentType.POPULAR_MESSAGE;
         }
       }
     }
     if (message.attachments.length > 0) {
       let ContentType = dependencyMap;
       if (obj.isValidImageAttachment(message.attachments[0])) {
-        ContentType = tmp6(6156).ContentType;
+        ContentType = tmp6(6154).ContentType;
         let IMAGE = ContentType.IMAGE;
       } else {
-        const result = tmp6(8192).isValidVideoAttachment(message.attachments[0]);
-        const ContentType2 = tmp6(6156).ContentType;
+        const result = tmp6(8189).isValidVideoAttachment(message.attachments[0]);
+        const ContentType2 = tmp6(6154).ContentType;
         IMAGE = result ? ContentType2.VIDEO : ContentType2.FILE;
-        const tmp6Result = tmp6(8192);
+        const tmp6Result = tmp6(8189);
       }
-      obj = require(8192) /* isMediaAttachment */;
+      obj = require(8189) /* isMediaAttachment */;
     } else {
       if (message.embeds.length > 0) {
-        let INTERESTING = require(6156) /* MessageEmbedTypes */.ContentType.LINK;
+        let INTERESTING = require(6154) /* MessageEmbedTypes */.ContentType.LINK;
       } else {
-        INTERESTING = require(6156) /* MessageEmbedTypes */.ContentType.INTERESTING;
+        INTERESTING = require(6154) /* MessageEmbedTypes */.ContentType.INTERESTING;
       }
       return INTERESTING;
     }
@@ -757,31 +757,31 @@ export const contentTypeToText = function contentTypeToText(arg0) {
   if (arg1 === undefined) {
     flag = false;
   }
-  if (require(6156) /* MessageEmbedTypes */.ContentType.POPULAR_MESSAGE === arg0) {
+  if (require(6154) /* MessageEmbedTypes */.ContentType.POPULAR_MESSAGE === arg0) {
     const intl10 = tmp(1236).intl;
     return intl10.string(tmp(1236).t["H/2+cl"]);
-  } else if (tmp(6156).ContentType.IMAGE === arg0) {
+  } else if (tmp(6154).ContentType.IMAGE === arg0) {
     const intl9 = tmp(1236).intl;
     return intl9.string(tmp(1236).t.gmOWAo);
-  } else if (tmp(6156).ContentType.VIDEO === arg0) {
+  } else if (tmp(6154).ContentType.VIDEO === arg0) {
     const intl8 = tmp(1236).intl;
     return intl8.string(tmp(1236).t.swhcPM);
-  } else if (tmp(6156).ContentType.LINK === arg0) {
+  } else if (tmp(6154).ContentType.LINK === arg0) {
     const intl7 = tmp(1236).intl;
     return intl7.string(tmp(1236).t.oj5yvD);
-  } else if (tmp(6156).ContentType.THREAD === arg0) {
+  } else if (tmp(6154).ContentType.THREAD === arg0) {
     const intl6 = tmp(1236).intl;
     return intl6.string(tmp(1236).t.DwLrLK);
-  } else if (tmp(6156).ContentType.FORUM_POST === arg0) {
+  } else if (tmp(6154).ContentType.FORUM_POST === arg0) {
     const intl5 = tmp(1236).intl;
     return intl5.string(tmp(1236).t["Q9/6BS"]);
-  } else if (tmp(6156).ContentType.CHANGED_STATUS === arg0) {
+  } else if (tmp(6154).ContentType.CHANGED_STATUS === arg0) {
     const intl4 = tmp(1236).intl;
     return intl4.string(tmp(1236).t.TGrUmi);
-  } else if (tmp(6156).ContentType.INTERESTING === arg0) {
+  } else if (tmp(6154).ContentType.INTERESTING === arg0) {
     const intl3 = tmp(1236).intl;
     return intl3.string(tmp(1236).t["TahE/i"]);
-  } else if (tmp(6156).ContentType.ANNOUNCEMENT === arg0) {
+  } else if (tmp(6154).ContentType.ANNOUNCEMENT === arg0) {
     const intl2 = tmp(1236).intl;
     const string = intl2.string;
     const t = tmp(1236).t;
@@ -791,7 +791,7 @@ export const contentTypeToText = function contentTypeToText(arg0) {
       stringResult = string(t["2ih63V"]);
     }
     return stringResult;
-  } else if (tmp(6156).ContentType.FILE === arg0) {
+  } else if (tmp(6154).ContentType.FILE === arg0) {
     const intl = tmp(1236).intl;
     return intl.string(tmp(1236).t.pYrnTY);
   }

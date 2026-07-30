@@ -1,10 +1,10 @@
-// Module ID: 7596
-// Function ID: 7597
+// Module ID: 7593
+// Function ID: 7594
 // Name: WateringCanSpotIllustration
-// Dependencies: [21, 5141, 7597, 2]
+// Dependencies: [21, 5141, 7594, 2]
 // Exports: WateringCanSpotIllustration
 
-// Module 7596 (WateringCanSpotIllustration)
+// Module 7593 (WateringCanSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WateringCanSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const WateringCanSpotIllustration = function WateringCanSpotIllustration(
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7597);
+  obj[0] = importDefault(7594);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

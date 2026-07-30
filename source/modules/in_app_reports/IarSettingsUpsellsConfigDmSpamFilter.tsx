@@ -1,9 +1,9 @@
-// Module ID: 7705
-// Function ID: 7706
+// Module ID: 7702
+// Function ID: 7703
 // Name: items
-// Dependencies: [1236, 7693, 692, 3862, 1306, 2]
+// Dependencies: [1236, 7690, 692, 3862, 1306, 2]
 
-// Module 7705 (items)
+// Module 7702 (items)
 const obj = {
   getTitle() {
     const intl = require(1236) /* getSystemLocale */.intl;

@@ -1,10 +1,10 @@
-// Module ID: 7382
-// Function ID: 7383
+// Module ID: 7379
+// Function ID: 7380
 // Name: PencilIllocon
-// Dependencies: [21, 5141, 7383, 2]
+// Dependencies: [21, 5141, 7380, 2]
 // Exports: PencilIllocon
 
-// Module 7382 (PencilIllocon)
+// Module 7379 (PencilIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PencilIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const PencilIllocon = function PencilIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7383);
+  obj[0] = importDefault(7380);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

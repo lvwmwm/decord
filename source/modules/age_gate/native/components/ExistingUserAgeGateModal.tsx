@@ -1,10 +1,10 @@
-// Module ID: 16124
-// Function ID: 16125
+// Module ID: 16118
+// Function ID: 16119
 // Name: onClose
-// Dependencies: [19, 4006, 1221, 16125, 676, 21, 500, 3890, 16126, 1236, 5640, 5105, 4395, 698, 503, 5143, 16127, 16129, 16130, 14900, 9359, 4403, 4405, 5570, 2]
+// Dependencies: [19, 4006, 1221, 16119, 676, 21, 500, 3890, 16120, 1236, 5640, 5105, 4395, 698, 503, 5143, 16121, 16123, 16124, 14894, 9355, 4403, 4405, 5570, 2]
 // Exports: default
 
-// Module 16124 (onClose)
+// Module 16118 (onClose)
 import AgeGateUnderage from "AgeGateUnderage";
 import handleConnectionOpen from "handleConnectionOpen";
 import result from "result";
@@ -117,7 +117,7 @@ export default function ExistingUserAgeGateModal(source) {
         fn = () => {
           let obj = arr(5640);
           obj.closeAgeGateModal();
-          obj = { key: "AGE_GATE_AGE_VERIFIED", icon: callback(16126), content: null };
+          obj = { key: "AGE_GATE_AGE_VERIFIED", icon: callback(16120), content: null };
           const intl = arr(1236).intl;
           obj[2] = intl.string(arr(1236).t.gUiIGZ);
           callback(3890).open(obj);
@@ -146,7 +146,7 @@ export default function ExistingUserAgeGateModal(source) {
       obj2[2] = { existing_user: true };
       obj2[3] = function render(arg0) {
         const merged = Object.assign(arg0);
-        return callback3(callback2(14900), {});
+        return callback3(callback2(14894), {});
       };
       obj[outer1_7.Blocked] = obj2;
       const obj3 = { headerTitle: null, headerLeft: null, render: null };
@@ -154,7 +154,7 @@ export default function ExistingUserAgeGateModal(source) {
       const obj6 = source(outer1_2[15]);
       obj3[1] = source(outer1_2[15]).getHeaderBackButton(fn);
       obj3[2] = function render() {
-        return callback3(callback2(9359), { onClose: closure_10 });
+        return callback3(callback2(9355), { onClose: closure_10 });
       };
       obj[outer1_7.NSFWGateGuild] = obj3;
       return obj;

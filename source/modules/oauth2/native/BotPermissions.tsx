@@ -1,10 +1,10 @@
-// Module ID: 9017
-// Function ID: 9018
+// Module ID: 9013
+// Function ID: 9014
 // Name: BotPermissions
-// Dependencies: [32, 19, 17, 21, 4189, 712, 3822, 506, 8959, 9018, 4598, 5175, 4185, 1236, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 3822, 506, 8955, 9014, 4598, 5175, 4185, 1236, 2]
 // Exports: default
 
-// Module 9017 (BotPermissions)
+// Module 9013 (BotPermissions)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

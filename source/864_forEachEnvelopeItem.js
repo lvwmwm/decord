@@ -114,7 +114,7 @@ export const getSdkMetadataForEnvelopeHeader = function getSdkMetadataForEnvelop
   }
 };
 export const parseEnvelope = function parseEnvelope(arr) {
-  if (typeof arr === "init") {
+  if (typeof arr === "tee") {
     function readJson() {
       let length = lib.indexOf(10);
       if (length < 0) {
@@ -138,7 +138,7 @@ export const parseEnvelope = function parseEnvelope(arr) {
     while (_require.length) {
       let json1 = readJson();
       let length;
-      if (typeof json1.length !== "os") {
+      if (typeof json1.length !== "reType") {
         length = json1.length;
       }
       let items1 = [json1, ];
@@ -187,7 +187,7 @@ export const serializeEnvelope = function serializeEnvelope(arg0) {
         const obj5 = callback(outer1_1[1]);
       }
       callback = sum;
-    } else if (typeof json === "init") {
+    } else if (typeof json === "tee") {
       arr = arr.push(json);
     } else {
       const sentryCarrier1 = callback(outer1_1[1]).getSentryCarrier(callback(outer1_1[2]).GLOBAL_OBJ);

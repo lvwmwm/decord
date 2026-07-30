@@ -1,10 +1,10 @@
-// Module ID: 14722
-// Function ID: 14723
+// Module ID: 14716
+// Function ID: 14717
 // Name: TestLocaleSelector
-// Dependencies: [32, 5, 19, 17, 1947, 1946, 21, 4189, 712, 7655, 1236, 6206, 7654, 589, 3771, 5554, 5220, 1274, 4598, 4185, 14723, 14755, 2]
+// Dependencies: [32, 5, 19, 17, 1947, 1946, 21, 4189, 712, 7652, 1236, 6203, 7651, 589, 3771, 5554, 5220, 1274, 4598, 4185, 14717, 14749, 2]
 // Exports: default
 
-// Module 14722 (TestLocaleSelector)
+// Module 14716 (TestLocaleSelector)
 import _slicedToArray from "_slicedToArray";
 import _getSystemLocale from "_getSystemLocale";
 import Text from "Text";
@@ -93,9 +93,9 @@ function TestLocaleSelector() {
     }
     return applyArgumentsResult;
   };
-  const items = [callback3(_require(7654).TableRadioRow, { label: "English", value: "en-US" }), callback3(_require(7654).TableRadioRow, { label: "French", value: "fr" })];
+  const items = [callback3(_require(7651).TableRadioRow, { label: "English", value: "en-US" }), callback3(_require(7651).TableRadioRow, { label: "French", value: "fr" })];
   obj[4] = items;
-  return callback4(_require(7655).TableRadioGroup, obj);
+  return callback4(_require(7652).TableRadioGroup, obj);
 }
 function LocaleInfo() {
   let require;
@@ -166,19 +166,19 @@ export default function IntlTestingSettingsPage() {
   const items = [callback3(LocaleInfo, {}), callback3(TestLocaleSelector, {}), , , , , , ];
   obj = { variant: "text-md/normal", children: null };
   const intl = _require(1236).intl;
-  obj[1] = intl.format(importDefault(14723).HMvEC5, {});
+  obj[1] = intl.format(importDefault(14717).HMvEC5, {});
   items[2] = callback3(_require(4185).Text, obj);
   const obj1 = { variant: "text-md/normal", children: null };
   const intl2 = _require(1236).intl;
-  obj1[1] = intl2.format(importDefault(14755).swfLzV, {});
+  obj1[1] = intl2.format(importDefault(14749).swfLzV, {});
   items[3] = callback3(_require(4185).Text, obj1);
   const obj2 = { variant: "text-md/normal", children: null };
   const intl3 = _require(1236).intl;
-  obj2[1] = intl3.format(importDefault(14723).rmps8y, {});
+  obj2[1] = intl3.format(importDefault(14717).rmps8y, {});
   items[4] = callback3(_require(4185).Text, obj2);
   const obj3 = { variant: "text-md/normal", children: null };
   const intl4 = _require(1236).intl;
-  obj3[1] = intl4.format(importDefault(14723).uczI4g, {
+  obj3[1] = intl4.format(importDefault(14717).uczI4g, {
     linkTarget() {
 
     }
@@ -186,11 +186,11 @@ export default function IntlTestingSettingsPage() {
   items[5] = callback3(_require(4185).Text, obj3);
   const obj5 = { variant: "text-md/normal", children: null };
   const intl5 = _require(1236).intl;
-  obj5[1] = intl5.format(importDefault(14723).rdfRyh, {});
+  obj5[1] = intl5.format(importDefault(14717).rdfRyh, {});
   items[6] = callback3(_require(4185).Text, obj5);
   const obj6 = { variant: "text-md/normal", children: null };
   const intl6 = _require(1236).intl;
-  obj6[1] = intl6.format(importDefault(14723).XOdbAy, {
+  obj6[1] = intl6.format(importDefault(14717).XOdbAy, {
     username: "some user",
     usernameHook(children) {
       obj = { style: { backgroundColor: "green", borderRadius: 4, paddingHorizontal: 6, paddingVertical: 0 }, children: callback2(callback(4185).Text, obj) };

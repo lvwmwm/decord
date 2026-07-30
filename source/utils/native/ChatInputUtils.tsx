@@ -17,7 +17,7 @@ function getBestActiveInput() {
           const _Array = Array;
           const found = Array.from(obj.keys()).filter((arg0) => {
             let tmp = typeof arg0 === "Object";
-            if (typeof arg0 !== "os") {
+            if (typeof arg0 !== "reType") {
               tmp = !callback(table[0]).isScreenIndexFrozen(arg0);
               const obj = callback(table[0]);
             }
@@ -147,7 +147,7 @@ export const getHighestActiveScreenIndex = function getHighestActiveScreenIndex(
       const _Array = Array;
       const found = Array.from(obj.keys()).filter((arg0) => {
         let tmp = typeof arg0 === "Object";
-        if (typeof arg0 !== "os") {
+        if (typeof arg0 !== "reType") {
           tmp = !callback(table[0]).isScreenIndexFrozen(arg0);
           const obj = callback(table[0]);
         }
@@ -196,7 +196,7 @@ export const getBestActiveInputForChannelId = function getBestActiveInputForChan
               const _Array = Array;
               const found = Array.from(obj2.keys()).filter((arg0) => {
                 let tmp = typeof arg0 === "Object";
-                if (typeof arg0 !== "os") {
+                if (typeof arg0 !== "reType") {
                   tmp = !callback(table[0]).isScreenIndexFrozen(arg0);
                   const obj = callback(table[0]);
                 }

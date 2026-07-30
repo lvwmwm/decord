@@ -1,9 +1,9 @@
-// Module ID: 10609
-// Function ID: 10610
+// Module ID: 10605
+// Function ID: 10606
 // Name: postMessageToWebView
-// Dependencies: [5, 17, 1372, 4261, 1371, 4214, 676, 6759, 500, 10610, 10611, 1208, 10612, 10622, 4529, 1236, 10615, 3807, 698, 709, 10646, 5696, 3890, 10356, 1231, 1351, 514, 2]
+// Dependencies: [5, 17, 1372, 4261, 1371, 4214, 676, 6756, 500, 10606, 10607, 1208, 10608, 10618, 4529, 1236, 10611, 3807, 698, 709, 10642, 5696, 3890, 10352, 1231, 1351, 514, 2]
 
-// Module 10609 (postMessageToWebView)
+// Module 10605 (postMessageToWebView)
 import items3 from "items3";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
@@ -177,17 +177,24 @@ class EmbeddedActivitiesNativeManager extends tmp6 {
         if (selfEmbeddedActivityForLocation != null) {
           const url = selfEmbeddedActivityForLocation.url;
         }
-        let tmp13 = typeof parsed === "ay";
+        const iframeId = self.iframeId;
+        let tmp14 = typeof parsed === "ay";
         if (typeof parsed !== "window") {
-          tmp13 = null != tmp11;
+          tmp14 = null != tmp11;
         }
-        if (tmp13) {
+        if (tmp14) {
+          tmp14 = null != iframeId;
+        }
+        if (tmp14) {
           let obj = outer1_1(outer1_2[13]);
-          obj.handleMessage(parsed, url, outer1_12);
+          obj = { origin: null, iframeId: null };
+          obj[0] = url;
+          obj[1] = iframeId;
+          obj.handleMessage(parsed, obj, outer1_12);
         }
-      } catch (tmp18) {
+      } catch (tmp21) {
         const _SyntaxError = SyntaxError;
-        if (tmp18 instanceof SyntaxError) {
+        if (tmp21 instanceof SyntaxError) {
           if (tmp2.data === outer1_7) {
             const connectedActivityLocation1 = outer1_6.getConnectedActivityLocation();
             if (null != connectedActivityLocation1) {
@@ -197,26 +204,26 @@ class EmbeddedActivitiesNativeManager extends tmp6 {
                 applicationId = selfEmbeddedActivityForLocation1.applicationId;
               }
             }
-            let tmp25 = null != connectedActivityLocation1;
-            if (tmp25) {
-              tmp25 = null != tmp24;
+            let tmp28 = null != connectedActivityLocation1;
+            if (tmp28) {
+              tmp28 = null != tmp27;
             }
-            if (tmp25) {
+            if (tmp28) {
               obj = { location: null, applicationId: null, showFeedback: false };
               obj[0] = connectedActivityLocation1;
-              obj[1] = tmp24;
+              obj[1] = tmp27;
               self.leaveActivity(obj);
-              obj = { body: null, confirmText: null };
+              const obj1 = { body: null, confirmText: null };
               const intl = self(outer1_2[15]).intl;
-              obj[0] = intl.string(self(outer1_2[15]).t.tYBBWz);
+              obj1[0] = intl.string(self(outer1_2[15]).t.tYBBWz);
               const intl2 = self(outer1_2[15]).intl;
-              obj[1] = intl2.string(self(outer1_2[15]).t.BddRzS);
-              outer1_1(outer1_2[14]).show(obj);
-              const obj3 = outer1_1(outer1_2[14]);
+              obj1[1] = intl2.string(self(outer1_2[15]).t.BddRzS);
+              outer1_1(outer1_2[14]).show(obj1);
+              const obj4 = outer1_1(outer1_2[14]);
             }
           }
         } else {
-          throw tmp18;
+          throw tmp21;
         }
       }
     });
@@ -313,19 +320,19 @@ prototype["showDevShelfOverrideEnabled"] = function showDevShelfOverrideEnabled(
   obj = { key: "EMBEDDED_ACTIVITIES_DEV_SHELF_URL_OVERRIDE_ENABLED", content: null, icon: null, iconColor: "status-positive" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.JfA7IK);
-  obj[2] = importDefault(10356);
+  obj[2] = importDefault(10352);
   obj.open(obj);
 };
 prototype["releaseWebView"] = function releaseWebView() {
-  const releaseFrameIdResult = this.releaseFrameId();
-  if (null != releaseFrameIdResult) {
+  const releaseIframeIdResult = this.releaseIframeId();
+  if (null != releaseIframeIdResult) {
     const ComponentDispatch = require(1231) /* ComponentDispatcher */.ComponentDispatch;
     const obj = { id: null };
-    obj[0] = releaseFrameIdResult;
+    obj[0] = releaseIframeIdResult;
     ComponentDispatch.dispatch(constants.IFRAME_UNMOUNT, obj);
     closure_10.releaseWebView();
   }
-  return releaseFrameIdResult;
+  return releaseIframeIdResult;
 };
 prototype["leaveActivity"] = function leaveActivity(arg0) {
   let _location;
@@ -358,20 +365,20 @@ prototype["clearEmbeddedActivityState"] = function clearEmbeddedActivityState(_l
   obj = { type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", applicationId, lockState: null, pictureInPictureLockState: null };
   importDefault(709).dispatch(obj);
 };
-prototype["releaseFrameId"] = function releaseFrameId() {
-  this.frameId = undefined;
-  return this.frameId;
+prototype["releaseIframeId"] = function releaseIframeId() {
+  this.iframeId = undefined;
+  return this.iframeId;
 };
-prototype["hasFrameId"] = function hasFrameId() {
-  return null != this.frameId;
+prototype["hasIframeId"] = function hasIframeId() {
+  return null != this.iframeId;
 };
-prototype["getOrCreateFrameId"] = function getOrCreateFrameId() {
-  const frameId = this.frameId;
-  if (null != frameId) {
-    return frameId;
+prototype["getOrCreateIframeId"] = function getOrCreateIframeId() {
+  const iframeId = this.iframeId;
+  if (null != iframeId) {
+    return iframeId;
   } else {
     const v4Result = require(514) /* v1 */.v4();
-    tmp.frameId = v4Result;
+    tmp.iframeId = v4Result;
     return v4Result;
   }
 };

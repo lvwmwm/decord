@@ -1,10 +1,10 @@
-// Module ID: 7675
-// Function ID: 7676
+// Module ID: 7672
+// Function ID: 7673
 // Name: RestrictedUser
-// Dependencies: [32, 19, 17, 3826, 5011, 5004, 21, 4189, 712, 589, 1236, 1297, 7676, 4185, 4157, 7677, 5177, 4600, 5243, 7678, 2]
+// Dependencies: [32, 19, 17, 3826, 5011, 5004, 21, 4189, 712, 589, 1236, 1297, 7673, 4185, 4157, 7674, 5177, 4600, 5243, 7675, 2]
 // Exports: default
 
-// Module 7675 (RestrictedUser)
+// Module 7672 (RestrictedUser)
 import _slicedToArray from "_slicedToArray";
 import renderDefaultEmpty from "renderDefaultEmpty";
 import { View } from "Button";
@@ -55,7 +55,7 @@ function RestrictedUser(guildId) {
     obj2[0] = items3;
     const obj3 = { style: null, source: null, color: null };
     obj3[0] = tmp.icon;
-    obj3[1] = user(7676);
+    obj3[1] = user(7673);
     obj3[2] = user(712).unsafe_rawColors.WHITE;
     obj2[1] = tmp11(tmp2(1297).Icon, obj3);
     speaker = tmp11(tmp10, obj2);
@@ -190,9 +190,9 @@ export default function StageBlockedUsersActionSheet(channel) {
   const tmp = createCacheKey();
   const tmp2 = items1(React.useState(0), 2);
   dependencyMap = tmp2[1];
-  let obj = channel(7677);
+  let obj = channel(7674);
   const stageBlockedUsers = obj.useStageBlockedUsers(channel.id);
-  let obj1 = channel(7677);
+  let obj1 = channel(7674);
   const stageIgnoredUsers = obj1.useStageIgnoredUsers(channel.id);
   const callback = React.useCallback((nativeEvent) => {
     dependencyMap(nativeEvent.nativeEvent.layout.height);
@@ -231,7 +231,7 @@ export default function StageBlockedUsersActionSheet(channel) {
   obj3[5] = function itemSize() {
     return 48;
   };
-  const items3 = [callback(onAccept(7678), obj3), callback(View, { style: { height: tmp2[0] } })];
+  const items3 = [callback(onAccept(7675), obj3), callback(View, { style: { height: tmp2[0] } })];
   obj2[3] = items3;
   return callback2(channel(5243).BottomSheet, obj2);
 };

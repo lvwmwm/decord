@@ -1,10 +1,10 @@
-// Module ID: 11960
-// Function ID: 11961
+// Module ID: 11954
+// Function ID: 11955
 // Name: useFriendsSinceDate
 // Dependencies: [1946, 3826, 676, 647, 4996, 2]
 // Exports: useFriendsSinceDate
 
-// Module 11960 (useFriendsSinceDate)
+// Module 11954 (useFriendsSinceDate)
 import _getSystemLocale from "_getSystemLocale";
 import upsertRelationship from "upsertRelationship";
 import { RelationshipTypes } from "ME";

@@ -1,8 +1,8 @@
-// Module ID: 15874
-// Function ID: 15875
-// Dependencies: [32, 19, 17, 5686, 21, 589, 5521, 15850, 15852, 15856, 15857, 15875, 15867, 2]
+// Module ID: 15868
+// Function ID: 15869
+// Dependencies: [32, 19, 17, 5686, 21, 589, 5521, 15844, 15846, 15850, 15851, 15869, 15861, 2]
 
-// Module 15874
+// Module 15868
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
@@ -32,16 +32,16 @@ let closure_8 = importAllResult.memo(function FramePanelHeaderContentInner(arg0)
   }
   const items1 = [applicationId];
   const first = callback(importDefault(5521)(items1), 1)[0];
-  let tmpResult = tmp(15850);
+  let tmpResult = tmp(15844);
   const baseActivityPanelHeaderContent = tmpResult.useBaseActivityPanelHeaderContent({ landscape, setMode, wrapperOffset, pipState });
   ({ gesture, headerWrapperStyles, headerStyles } = baseActivityPanelHeaderContent);
-  tmpResult = tmp(15850);
+  tmpResult = tmp(15844);
   const minimizeAndQuestButtonContainerStyles = tmpResult.useMinimizeAndQuestButtonContainerStyles();
   if (null == stateFromStores) {
     return null;
   } else {
     let id;
-    let tmp5Result = tmp5(15852);
+    let tmp5Result = tmp5(15846);
     if (first != null) {
       id = first.id;
     }
@@ -63,7 +63,7 @@ let closure_8 = importAllResult.memo(function FramePanelHeaderContentInner(arg0)
     items2[1] = prop;
     obj1[0] = items2;
     let tmp15;
-    tmp5Result = tmp5(15856);
+    tmp5Result = tmp5(15850);
     if (!landscape) {
       let name;
       if (first != null) {
@@ -79,7 +79,7 @@ let closure_8 = importAllResult.memo(function FramePanelHeaderContentInner(arg0)
     if (tmp20Result) {
       const obj3 = { applicationId: null };
       obj3[0] = applicationId;
-      tmp20Result = tmp20(tmp5(15857), obj3);
+      tmp20Result = tmp20(tmp5(15851), obj3);
     }
     items3[1] = tmp20Result;
     let tmp18 = null;
@@ -97,14 +97,14 @@ let closure_8 = importAllResult.memo(function FramePanelHeaderContentInner(arg0)
     const obj4 = { frame: null, setMode: null };
     obj4[0] = stateFromStores;
     obj4[1] = setMode;
-    items4[2] = closure_6(tmp5(15875), obj4);
+    items4[2] = closure_6(tmp5(15869), obj4);
     obj[5] = items4;
-    return closure_7(tmp(15850).BaseActivityPanelContent, obj);
+    return closure_7(tmp(15844).BaseActivityPanelContent, obj);
   }
 });
 const memoResult = importAllResult.memo(() => {
-  let obj = require(15850) /* useBaseActivityPanelHeaderContent */;
-  obj = { context: importDefault(15867) };
+  let obj = require(15844) /* useBaseActivityPanelHeaderContent */;
+  obj = { context: importDefault(15861) };
   const baseActivityPanelHeader = obj.useBaseActivityPanelHeader(obj);
   obj = { style: baseActivityPanelHeader.headerStyles, children: callback2(closure_8, obj1) };
   return callback2(View, obj);

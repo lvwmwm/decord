@@ -1,9 +1,9 @@
-// Module ID: 5837
-// Function ID: 5838
+// Module ID: 5835
+// Function ID: 5836
 // Name: fromServer
 // Dependencies: [5829, 5810, 2]
 
-// Module 5837 (fromServer)
+// Module 5835 (fromServer)
 let prototype;
 prototype = function HeroBlockRecord(unpublished_at) {
   let summary;

@@ -1,10 +1,10 @@
-// Module ID: 10714
-// Function ID: 10715
+// Module ID: 10710
+// Function ID: 10711
 // Name: useRequestToSpeakPermission
-// Dependencies: [32, 19, 1372, 676, 589, 3822, 6715, 2]
+// Dependencies: [32, 19, 1372, 676, 589, 3822, 6712, 2]
 // Exports: useRequestToSpeakPermission
 
-// Module 10714 (useRequestToSpeakPermission)
+// Module 10710 (useRequestToSpeakPermission)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";

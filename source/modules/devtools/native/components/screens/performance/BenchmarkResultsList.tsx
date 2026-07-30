@@ -1,10 +1,10 @@
-// Module ID: 14833
-// Function ID: 14834
+// Module ID: 14827
+// Function ID: 14828
 // Name: BenchmarkResultsList
-// Dependencies: [19, 21, 5554, 5220, 14829, 2]
+// Dependencies: [19, 21, 5554, 5220, 14823, 2]
 // Exports: default
 
-// Module 14833 (BenchmarkResultsList)
+// Module 14827 (BenchmarkResultsList)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -38,7 +38,7 @@ export default function BenchmarkResultsList(results) {
             const _HermesInternal2 = HermesInternal;
             obj[0] = "Scroll \u00B7 mean " + toFixedResult + " ms \u00B7 worst " + worstMs.toFixed(1) + " ms";
             ({ dropped, frames } = kind);
-            const FRAME_BUDGET_MS = callback(14829).FRAME_BUDGET_MS;
+            const FRAME_BUDGET_MS = callback(14823).FRAME_BUDGET_MS;
             const _HermesInternal3 = HermesInternal;
             obj[1] = "" + dropped + "/" + frames + " frames over " + FRAME_BUDGET_MS.toFixed(1) + " ms";
             tmp5 = callback2(callback(5220).TableRow, obj, kind.id);

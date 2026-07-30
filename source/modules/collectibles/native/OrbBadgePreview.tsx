@@ -1,10 +1,10 @@
-// Module ID: 8752
-// Function ID: 8753
+// Module ID: 8748
+// Function ID: 8749
 // Name: OrbBadgePreview
-// Dependencies: [19, 17, 21, 4189, 8664, 8076, 8716, 1236, 2]
+// Dependencies: [19, 17, 21, 4189, 8661, 8073, 8712, 1236, 2]
 // Exports: OrbBadgePreview
 
-// Module 8752 (OrbBadgePreview)
+// Module 8748 (OrbBadgePreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -15,13 +15,13 @@ let closure_5 = createCacheKey.createStyles({ container: { flex: 1, justifyConte
 const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/OrbBadgePreview.tsx");
 
 export const OrbBadgePreview = function OrbBadgePreview() {
-  let obj = require(8664) /* useCurrentUser */;
+  let obj = require(8661) /* useCurrentUser */;
   obj = { style: callback().container, children: null };
   const currentUser = obj.useCurrentUser();
   obj = { compact: true, user: currentUser, additionalBadges: null, accessibilityLabel: null };
   const tmp = callback();
-  const tmp3 = importDefault(8076);
-  const items = [require(8716) /* hasAtLeastOneGPlaySynced */.createOrbProfileBadge()];
+  const tmp3 = importDefault(8073);
+  const items = [require(8712) /* hasAtLeastOneGPlaySynced */.createOrbProfileBadge()];
   obj[2] = items;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.bxcI6Y);

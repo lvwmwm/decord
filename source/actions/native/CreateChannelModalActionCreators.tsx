@@ -1,8 +1,8 @@
-// Module ID: 8276
-// Function ID: 8277
-// Dependencies: [1376, 1372, 4197, 4395, 8272, 1959, 2]
+// Module ID: 8273
+// Function ID: 8274
+// Dependencies: [1376, 1372, 4197, 4395, 8269, 1959, 2]
 
-// Module 8276
+// Module 8273
 import { CREATEABLE_NON_VOCAL_CHANNEL_NAME_TYPES as closure_3 } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 
@@ -33,10 +33,10 @@ export default {
           const obj = self(outer1_2[2]);
         }
       };
-      obj2.pushLazy(self(1959)(8272, dependencyMap.paths), obj, CREATE_CHANNEL_MODAL_KEY);
+      obj2.pushLazy(self(1959)(8269, dependencyMap.paths), obj, CREATE_CHANNEL_MODAL_KEY);
       const tmp2 = arg2;
       const tmp3 = arg3;
-      const tmp9 = self(1959)(8272, dependencyMap.paths);
+      const tmp9 = self(1959)(8269, dependencyMap.paths);
     }
   },
   close() {

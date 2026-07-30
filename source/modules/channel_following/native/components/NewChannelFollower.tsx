@@ -1,10 +1,10 @@
-// Module ID: 10398
-// Function ID: 10399
+// Module ID: 10394
+// Function ID: 10395
 // Name: NewChannelFollower
-// Dependencies: [32, 19, 17, 1372, 1932, 1862, 3817, 5027, 676, 21, 4189, 712, 7953, 4125, 589, 4380, 4616, 4035, 10399, 10400, 5243, 5245, 5566, 1297, 4650, 4185, 1236, 4598, 5554, 5220, 4157, 8246, 1959, 10401, 7634, 5022, 4600, 9880, 5499, 2]
+// Dependencies: [32, 19, 17, 1372, 1932, 1862, 3817, 5027, 676, 21, 4189, 712, 7950, 4125, 589, 4380, 4616, 4035, 10395, 10396, 5243, 5245, 5566, 1297, 4650, 4185, 1236, 4598, 5554, 5220, 4157, 8243, 1959, 10397, 7631, 5022, 4600, 9877, 5499, 2]
 // Exports: default
 
-// Module 10398 (NewChannelFollower)
+// Module 10394 (NewChannelFollower)
 import asyncRequireImpl from "asyncRequireImpl";
 import registerAsset from "registerAsset";
 import get_ActivityIndicator from "AccessibilityAnnouncer";

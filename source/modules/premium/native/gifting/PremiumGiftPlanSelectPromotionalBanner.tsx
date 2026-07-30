@@ -1,8 +1,8 @@
-// Module ID: 9711
-// Function ID: 9712
-// Dependencies: [19, 17, 21, 4189, 712, 6279, 9708, 4611, 5141, 4185, 1236, 9712, 2]
+// Module ID: 9708
+// Function ID: 9709
+// Dependencies: [19, 17, 21, 4189, 712, 6276, 9705, 4611, 5141, 4185, 1236, 9709, 2]
 
-// Module 9711
+// Module 9708
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -33,9 +33,9 @@ const memoResult = require("noop").memo(function PremiumGiftPlanSelectPromotiona
   ({ claimableRewards, isSelected, onLayout } = giftPlanSelectionCardBannerComponent);
   const tmp = callback2();
   const gradient = giftPlanSelectionCardBannerComponent.gradient;
-  let obj = require(9708) /* useThemeAndReducedMotionAwareAssetUrl */;
+  let obj = require(9705) /* useThemeAndReducedMotionAwareAssetUrl */;
   const themeAndReducedMotionAwareAssetUrl = obj.useThemeAndReducedMotionAwareAssetUrl(giftPlanSelectionCardBannerComponent.mobileBannerAsset);
-  let obj1 = require(9708) /* useThemeAndReducedMotionAwareAssetUrl */;
+  let obj1 = require(9705) /* useThemeAndReducedMotionAwareAssetUrl */;
   const themeAndReducedMotionAwareAssetUrl1 = obj1.useThemeAndReducedMotionAwareAssetUrl(giftPlanSelectionCardBannerComponent.avatarAsset, true);
   obj = { style: tmp.gradient, useAngle: true, angle: null, angleCenter: null, colors: null, onLayout: null, children: null };
   let num;
@@ -79,7 +79,7 @@ const memoResult = require("noop").memo(function PremiumGiftPlanSelectPromotiona
   items[1] = closure_5(View, obj2);
   let tmp12Result = null != themeAndReducedMotionAwareAssetUrl1;
   if (tmp12Result) {
-    let logoLargeTilted = giftPlanSelectionCardBannerComponent.assetVariant === require(6279) /* create */.GiftPlanSelectionCardBanner_AssetVariant.LARGE_TILTED;
+    let logoLargeTilted = giftPlanSelectionCardBannerComponent.assetVariant === require(6276) /* create */.GiftPlanSelectionCardBanner_AssetVariant.LARGE_TILTED;
     const items2 = [tmp.logoContainer, ];
     let logoContainerLargeTilted = logoLargeTilted;
     if (logoLargeTilted) {
@@ -97,9 +97,9 @@ const memoResult = require("noop").memo(function PremiumGiftPlanSelectPromotiona
     items3[1] = logoLargeTilted;
     obj7[1] = items3;
     obj7[2] = themeAndReducedMotionAwareAssetUrl1;
-    obj6[1] = tmp12(tmp7(9712), obj7);
+    obj6[1] = tmp12(tmp7(9709), obj7);
     tmp12Result = tmp12(View, obj6);
-    const tmp7Result = tmp7(9712);
+    const tmp7Result = tmp7(9709);
   }
   items[2] = tmp12Result;
   obj[6] = items;

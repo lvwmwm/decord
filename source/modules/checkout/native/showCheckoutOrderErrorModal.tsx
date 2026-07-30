@@ -1,10 +1,10 @@
-// Module ID: 6224
-// Function ID: 6225
+// Module ID: 6221
+// Function ID: 6222
 // Name: SyncedLoadingAlertModal
 // Dependencies: [5, 32, 19, 21, 4533, 1236, 4530, 2]
 // Exports: showCheckoutOrderErrorModal, showRetryConfirmModal
 
-// Module 6224 (SyncedLoadingAlertModal)
+// Module 6221 (SyncedLoadingAlertModal)
 import getSystemLocale from "getSystemLocale";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

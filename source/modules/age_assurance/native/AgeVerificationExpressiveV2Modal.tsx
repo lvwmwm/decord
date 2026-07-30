@@ -1,10 +1,10 @@
-// Module ID: 6771
-// Function ID: 6772
+// Module ID: 6768
+// Function ID: 6769
 // Name: MethodsScreen
-// Dependencies: [5, 32, 19, 17, 676, 21, 1892, 6772, 6774, 6776, 4189, 712, 6755, 6778, 6781, 4405, 6780, 6783, 6784, 4598, 6785, 4185, 6747, 1945, 1297, 4600, 1236, 2741, 5554, 5220, 4395, 5143, 7616, 514, 5570, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 1892, 6769, 6771, 6773, 4189, 712, 6752, 6775, 6778, 4405, 6777, 6780, 6781, 4598, 6782, 4185, 6744, 1945, 1297, 4600, 1236, 2741, 5554, 5220, 4395, 5143, 7613, 514, 5570, 2]
 // Exports: default
 
-// Module 6771 (MethodsScreen)
+// Module 6768 (MethodsScreen)
 import closure_3 from "jsxProd";
 import GoogleWalletVerificationScreen from "GoogleWalletVerificationScreen";
 import Stack from "Stack";
@@ -254,8 +254,8 @@ function MethodErrorScreen() {
   obj1[1] = intl.string(importDefault(2741)["1RD2jW"]);
   obj[1] = callback2(require(1297) /* Button */.HelpMessage, obj1);
   obj[0] = callback2(require(4598) /* Stack */.Stack, obj);
-  obj[0] = callback2(require(6784) /* ModalContent */.ModalContent, obj);
-  return callback2(require(6783) /* ModalScreen */.ModalScreen, obj);
+  obj[0] = callback2(require(6781) /* ModalContent */.ModalContent, obj);
+  return callback2(require(6780) /* ModalScreen */.ModalScreen, obj);
 }
 ({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
 let obj = {};
@@ -320,7 +320,7 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
     const obj3 = entryPoint(_undefined[31]);
     obj[2] = entryPoint(_undefined[31]).getHeaderBackButton();
     obj[3] = function render() {
-      return outer1_8(callback(7616), { onClose: closeModal, modalSessionId: closure_0 });
+      return outer1_8(callback(7613), { onClose: closeModal, modalSessionId: closure_0 });
     };
     obj[outer1_12.GOOGLE_WALLET_VERIFICATION] = obj;
     const obj1 = {

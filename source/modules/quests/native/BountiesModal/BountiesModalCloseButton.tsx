@@ -1,10 +1,10 @@
-// Module ID: 14080
-// Function ID: 14081
+// Module ID: 14076
+// Function ID: 14077
 // Name: BountiesModalCloseButton
 // Dependencies: [19, 21, 4189, 712, 4717, 1236, 5175, 2]
 // Exports: default
 
-// Module 14080 (BountiesModalCloseButton)
+// Module 14076 (BountiesModalCloseButton)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

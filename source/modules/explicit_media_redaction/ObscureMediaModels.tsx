@@ -1,9 +1,9 @@
-// Module ID: 5879
-// Function ID: 5880
+// Module ID: 5877
+// Function ID: 5878
 // Name: ObscureReason
 // Dependencies: [2]
 
-// Module 5879 (ObscureReason)
+// Module 5877 (ObscureReason)
 import set from "set";
 
 const obj = { SPOILER: "spoiler", EXPLICIT_CONTENT: "explicit_content", POTENTIAL_EXPLICIT_CONTENT: "potential_explicit_content", GORE_CONTENT: "gore_content", SELF_HARM_CONTENT: "self_harm_content" };

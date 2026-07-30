@@ -1,9 +1,9 @@
-// Module ID: 14611
-// Function ID: 14612
-// Dependencies: [19, 17, 678, 21, 4189, 1297, 8369, 1236, 14612, 2]
+// Module ID: 14607
+// Function ID: 14608
+// Dependencies: [19, 17, 678, 21, 4189, 1297, 8366, 1236, 14608, 2]
 // Exports: default
 
-// Module 14611
+// Module 14607
 import "noop";
 import { View } from "get ActivityIndicator";
 import { CollectiblesMobileShopScreen as closure_4 } from "items";
@@ -15,23 +15,19 @@ let closure_6 = createCacheKey.createStyles({ container: { flex: 1, justifyConte
 const result = require("items").fileFinishedImporting("modules/collectibles/native/CollectiblesShopFeaturedPage.tsx");
 
 export default function _default(shopBlock) {
-  let fetchShopHomeError;
-  let framesBannerBlock;
   shopBlock = shopBlock.shopBlock;
-  ({ fetchShopHomeError, framesBannerBlock } = shopBlock);
-  if (null === fetchShopHomeError) {
+  if (null === shopBlock.fetchShopHomeError) {
     if (undefined !== shopBlock) {
-      let obj = { block: null, screen: null, framesBannerBlock: null };
+      let obj = { block: null, screen: null };
       obj[0] = shopBlock;
       obj[1] = constants.FEATURED_PAGE;
-      obj[2] = framesBannerBlock;
-      let tmp6 = jsx(importDefault(14612), { block: null, screen: null, framesBannerBlock: null });
+      let tmp6 = jsx(importDefault(14608), { block: null, screen: null });
     }
     return tmp6;
   }
   obj = { style: callback().container, children: null };
   obj = { style: { marginTop: 42 }, Illustration: null, body: null };
-  obj[1] = require(8369) /* getNoResultsSource */.NoResults;
+  obj[1] = require(8366) /* getNoResultsSource */.NoResults;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.eAn6z2);
   obj[1] = jsx(require(1297) /* Button */.EmptyState, { style: { marginTop: 42 }, Illustration: null, body: null });

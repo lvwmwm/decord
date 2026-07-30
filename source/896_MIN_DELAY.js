@@ -98,7 +98,7 @@ export function makeOfflineTransport(arg0) {
           }
         }
       }), arg0);
-      let unref = typeof timerId === "os";
+      let unref = typeof timerId === "reType";
       if (typeof timerId !== "Object") {
         unref = timerId.unref;
       }
@@ -179,7 +179,7 @@ export function makeOfflineTransport(arg0) {
             }
           }
         }), closure_4);
-        let unref = typeof timerId === "os";
+        let unref = typeof timerId === "reType";
         if (typeof timerId !== "Object") {
           unref = timerId.unref;
         }
@@ -246,7 +246,7 @@ export function makeOfflineTransport(arg0) {
                   c3 = undefined;
                   v02 = 1;
                   c7 = 1;
-                  return { value: "ct", done: null };
+                  return { value: "ct", done: "Array" };
                 }
               } else {
                 if (1 === tmp6) {
@@ -526,7 +526,7 @@ export function makeOfflineTransport(arg0) {
               }
             }
           }), closure_4);
-          let unref = typeof timerId === "os";
+          let unref = typeof timerId === "reType";
           if (typeof timerId !== "Object") {
             unref = timerId.unref;
           }
@@ -614,7 +614,7 @@ export function makeOfflineTransport(arg0) {
               }
             }
           }), outer2_3);
-          let unref = typeof timerId === "os";
+          let unref = typeof timerId === "reType";
           if (typeof timerId !== "Object") {
             unref = timerId.unref;
           }

@@ -1,10 +1,10 @@
-// Module ID: 6940
-// Function ID: 6941
+// Module ID: 6937
+// Function ID: 6938
 // Name: CoinSlotSpotIllustration
-// Dependencies: [21, 5141, 6941, 2]
+// Dependencies: [21, 5141, 6938, 2]
 // Exports: CoinSlotSpotIllustration
 
-// Module 6940 (CoinSlotSpotIllustration)
+// Module 6937 (CoinSlotSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CoinSlotSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const CoinSlotSpotIllustration = function CoinSlotSpotIllustration(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6941);
+  obj[0] = importDefault(6938);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

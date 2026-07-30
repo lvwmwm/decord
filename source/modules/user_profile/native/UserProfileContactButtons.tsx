@@ -1,10 +1,10 @@
-// Module ID: 12222
-// Function ID: 12223
+// Module ID: 12216
+// Function ID: 12217
 // Name: FlatFriendButton
-// Dependencies: [19, 17, 3826, 676, 21, 4189, 712, 4600, 5515, 8107, 12056, 589, 4028, 12223, 4127, 1236, 11713, 8918, 10926, 4157, 4395, 4199, 12225, 6682, 4686, 9083, 10135, 2]
+// Dependencies: [19, 17, 3826, 676, 21, 4189, 712, 4600, 5515, 8104, 12050, 589, 4028, 12217, 4127, 1236, 11709, 8914, 10922, 4157, 4395, 4199, 12219, 6679, 4686, 9079, 10131, 2]
 // Exports: default
 
-// Module 12222 (FlatFriendButton)
+// Module 12216 (FlatFriendButton)
 import "ACTION_SHEET_HEIGHT_HALF";
 import { View } from "handleRelationshipAddError";
 import upsertRelationship from "upsertRelationship";
@@ -49,13 +49,13 @@ function FriendRequestButton(user) {
   let stateFromStores;
   let upsertRelationship;
   ({ hasCustomProfileTheme, ButtonComponent } = user);
-  let obj = user(8107);
+  let obj = user(8104);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   if (newestAnalyticsLocation == null) {
     newestAnalyticsLocation = trackUserProfileAction(5515)().newestAnalyticsLocation;
   }
   dependencyMap = { location: newestAnalyticsLocation };
-  let tmp3Result = tmp3(12056);
+  let tmp3Result = tmp3(12050);
   const gameFriendsForUser = tmp3Result.useGameFriendsForUser(user.id);
   tmp3Result = tmp3(589);
   const items = [upsertRelationship];
@@ -69,7 +69,7 @@ function FriendRequestButton(user) {
         return null;
       } else {
         if (stateFromStores === tmp5.PENDING_OUTGOING) {
-          let UserPlusIcon = tmp3(12223).UserClockIcon;
+          let UserPlusIcon = tmp3(12217).UserClockIcon;
         } else {
           UserPlusIcon = tmp3(4127).UserPlusIcon;
         }
@@ -101,11 +101,11 @@ function FriendRequestButton(user) {
               callback({ action: "CANCEL_FRIEND_REQUEST" });
               outer1_1(outer1_2[17]).cancelFriendRequest(id.id, closure_2);
             };
-            const result = user(11713).confirmCancelFriendRequest(obj);
-            const obj3 = user(11713);
+            const result = user(11709).confirmCancelFriendRequest(obj);
+            const obj3 = user(11709);
           } else {
             trackUserProfileAction({ action: "SEND_FRIEND_REQUEST" });
-            obj = trackUserProfileAction(8918);
+            obj = trackUserProfileAction(8914);
             obj = { userId: null, context: null };
             obj[0] = user.id;
             obj[1] = dependencyMap;

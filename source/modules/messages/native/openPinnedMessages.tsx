@@ -1,10 +1,10 @@
-// Module ID: 9513
-// Function ID: 9514
+// Module ID: 9509
+// Function ID: 9510
 // Name: openPinnedMessages
-// Dependencies: [9100, 4041, 2]
+// Dependencies: [9096, 4041, 2]
 // Exports: default
 
-// Module 9513 (openPinnedMessages)
+// Module 9509 (openPinnedMessages)
 import { ChannelDetailsNavigatorScreens as closure_2 } from "ChannelDetailsNavigatorScreens";
 
 const result = require("set").fileFinishedImporting("modules/messages/native/openPinnedMessages.tsx");

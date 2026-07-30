@@ -1,10 +1,10 @@
-// Module ID: 9221
-// Function ID: 9222
+// Module ID: 9217
+// Function ID: 9218
 // Name: AuthNavbarPlaceholder
 // Dependencies: [19, 21, 4189, 712, 5143, 2]
 // Exports: default
 
-// Module 9221 (AuthNavbarPlaceholder)
+// Module 9217 (AuthNavbarPlaceholder)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

@@ -1,10 +1,10 @@
-// Module ID: 16093
-// Function ID: 16094
+// Module ID: 16087
+// Function ID: 16088
 // Name: format
-// Dependencies: [32, 16094, 16051, 3888, 16095, 16096, 2]
+// Dependencies: [32, 16088, 16045, 3888, 16089, 16090, 2]
 // Exports: getMessage, setUpdateRules
 
-// Module 16093 (format)
+// Module 16087 (format)
 import _slicedToArray from "_slicedToArray";
 import FORMAT_RE from "FORMAT_RE";
 
@@ -25,7 +25,7 @@ class FormattedMessage {
     obj = Object.create(new.target.prototype);
     obj.message = replaced;
     obj.hasMarkdown = importDefault;
-    tmp4 = new require("module_16051")(obj.message, arg1);
+    tmp4 = new require("module_16045")(obj.message, arg1);
     obj.intlMessage = tmp4;
     return obj;
   }
@@ -102,18 +102,18 @@ prototype["getContext"] = function getContext(arg0) {
   const items = [arg0, obj];
   return items;
 };
-const result = require("module_16051").fileFinishedImporting("../discord_common/js/packages/i18n/parse.tsx");
+const result = require("module_16045").fileFinishedImporting("../discord_common/js/packages/i18n/parse.tsx");
 
 export { FormattedMessage };
 export const setUpdateRules = function setUpdateRules(arg0) {
-  const rules = _require(16095).rules;
+  const rules = _require(16089).rules;
   _require = undefined;
   let importDefault;
   _require = importDefault(3888).parserFor(arg0(rules));
   const obj = importDefault(3888);
   const obj2 = importDefault(3888);
   importDefault = obj2.reactFor(importDefault(3888).ruleOutput(rules, "react"));
-  const f112542 = (arr, context, unsafeContext) => {
+  const f112554 = (arr, context, unsafeContext) => {
     const hasItem = arr.includes("\n\n");
     let text = arr;
     if (hasItem) {
@@ -125,22 +125,22 @@ export const setUpdateRules = function setUpdateRules(arg0) {
   };
   _require = undefined;
   const obj3 = importDefault(3888);
-  _require = importDefault(3888).parserFor(_require(16095).rules);
-  const f112543 = (arg0, context, unsafeContext) => callback(arg0 + "\n\n", { inline: false, context, unsafeContext });
+  _require = importDefault(3888).parserFor(_require(16089).rules);
+  const f112555 = (arg0, context, unsafeContext) => callback(arg0 + "\n\n", { inline: false, context, unsafeContext });
 };
 export const getMessage = function getMessage(str) {
   if (null == str) {
     return "";
   } else {
-    if (null == f112542) {
-      const rules = _require(16095).rules;
+    if (null == f112554) {
+      const rules = _require(16089).rules;
       _require = undefined;
       let importDefault;
       let obj = importDefault(3888);
-      _require = obj.parserFor(_require(16096).default(rules));
+      _require = obj.parserFor(_require(16090).default(rules));
       const obj2 = importDefault(3888);
       importDefault = obj2.reactFor(importDefault(3888).ruleOutput(rules, "react"));
-      f112542 = (arr, context, unsafeContext) => {
+      f112554 = (arr, context, unsafeContext) => {
         const hasItem = arr.includes("\n\n");
         let text = arr;
         if (hasItem) {
@@ -152,8 +152,8 @@ export const getMessage = function getMessage(str) {
       };
       _require = undefined;
       const obj3 = importDefault(3888);
-      _require = importDefault(3888).parserFor(_require(16095).rules);
-      const f112543 = (arg0, context, unsafeContext) => callback(arg0 + "\n\n", { inline: false, context, unsafeContext });
+      _require = importDefault(3888).parserFor(_require(16089).rules);
+      const f112555 = (arg0, context, unsafeContext) => callback(arg0 + "\n\n", { inline: false, context, unsafeContext });
       const obj4 = importDefault(3888);
     }
     const str2 = str.replace(/^\n+|\n+$/g, "");
@@ -170,7 +170,7 @@ export const getMessage = function getMessage(str) {
       obj = Object.create(FormattedMessage.prototype);
       obj.message = replaced;
       obj.hasMarkdown = isMatch1;
-      const tmp16 = new importDefault(16051)(obj.message, arg1);
+      const tmp16 = new importDefault(16045)(obj.message, arg1);
       obj.intlMessage = tmp16;
       let tmp5 = obj;
       const tmp6 = FormattedMessage;

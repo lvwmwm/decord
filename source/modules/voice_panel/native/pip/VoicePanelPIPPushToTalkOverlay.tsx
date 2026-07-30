@@ -1,10 +1,10 @@
-// Module ID: 15988
-// Function ID: 15989
+// Module ID: 15982
+// Function ID: 15983
 // Name: VoicePanelPIPPushToTalkOverlay
-// Dependencies: [32, 19, 17, 10038, 21, 4050, 5568, 1297, 4189, 712, 10412, 15918, 4599, 15913, 5273, 15989, 2]
+// Dependencies: [32, 19, 17, 10034, 21, 4050, 5568, 1297, 4189, 712, 10408, 15912, 4599, 15907, 5273, 15983, 2]
 // Exports: default
 
-// Module 15988 (VoicePanelPIPPushToTalkOverlay)
+// Module 15982 (VoicePanelPIPPushToTalkOverlay)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { PUSH_TO_TALK_PIP_PHYSICS } from "VoicePanelModes";
@@ -38,7 +38,7 @@ let closure_18 = { code: "function VoicePanelPIPPushToTalkOverlayTsx6(){const{ru
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPPushToTalkOverlay.tsx");
 
 export default function VoicePanelPIPPushToTalkOverlay() {
-  let obj = sharedValue(15918);
+  let obj = sharedValue(15912);
   const pIPState = obj.usePIPState();
   sharedValue = pIPState;
   let tmp2 = callback3();
@@ -126,7 +126,7 @@ export default function VoicePanelPIPPushToTalkOverlay() {
       return obj;
     }
   }
-  obj1 = { withSpring: sharedValue(4599).withSpring, isPushingToTalk: first, PUSH_TO_TALK_PIP_PHYSICS, getVoicePanelPIPBorderRadius: sharedValue(15913).getVoicePanelPIPBorderRadius, pipState: pIPState };
+  obj1 = { withSpring: sharedValue(4599).withSpring, isPushingToTalk: first, PUSH_TO_TALK_PIP_PHYSICS, getVoicePanelPIPBorderRadius: sharedValue(15907).getVoicePanelPIPBorderRadius, pipState: pIPState };
   H.__closure = obj1;
   H.__workletHash = 450590017248;
   H.__initData = closure_15;
@@ -176,7 +176,7 @@ export default function VoicePanelPIPPushToTalkOverlay() {
   items5 = [tmp2.iconContainer, animatedStyle];
   let obj5 = { style: animatedStyle1, size: null, source: null, disableColor: true };
   obj5[1] = sharedValue(1297).Icon.Sizes.SMALL_20;
-  obj5[2] = first(15989);
+  obj5[2] = first(15983);
   obj4[2] = callback(closure_10, obj5);
   obj3[1] = callback(set, obj4);
   items4[1] = callback(sharedValue(5273).GestureDetector, obj3);

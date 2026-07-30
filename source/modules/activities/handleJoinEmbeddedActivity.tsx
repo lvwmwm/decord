@@ -1,10 +1,10 @@
-// Module ID: 10606
-// Function ID: 10607
+// Module ID: 10602
+// Function ID: 10603
 // Name: _handleJoinEmbeddedActivityInternal
-// Dependencies: [5, 4226, 1372, 1931, 1874, 1371, 4214, 10607, 10608, 3807, 10506, 10643, 10647, 10466, 10654, 8014, 10655, 5696, 2]
+// Dependencies: [5, 4226, 1372, 1931, 1874, 1371, 4214, 10603, 10604, 3807, 10502, 10639, 10643, 10462, 10650, 8011, 10651, 5696, 2]
 // Exports: default
 
-// Module 10606 (_handleJoinEmbeddedActivityInternal)
+// Module 10602 (_handleJoinEmbeddedActivityInternal)
 import participantFromServer from "participantFromServer";
 import addApplication from "addApplication";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -86,7 +86,7 @@ function _handleJoinEmbeddedActivityInternal() {
                 let closure_18;
                 c3 = 1;
                 application = 1;
-                return { value: "ct", done: null };
+                return { value: "ct", done: "Array" };
               }
             } else if (1 === tmp5) {
               if (arg0 === 1) {
@@ -102,7 +102,7 @@ function _handleJoinEmbeddedActivityInternal() {
                 throwTypeErrorResult = dependencyMap;
                 throwTypeErrorResult = callback2;
                 throwTypeErrorResult = dependencyMap;
-                closure_10 = callback2(10608)();
+                closure_10 = callback2(10604)();
                 throwTypeErrorResult = channel;
                 throwTypeErrorResult = callback2;
                 _private = channel.getChannel(callback2);
@@ -150,7 +150,7 @@ function _handleJoinEmbeddedActivityInternal() {
                               throwTypeErrorResult = dependencyMap;
                               throwTypeErrorResult = guildId;
                               throwTypeErrorResult = currentEmbeddedActivity2;
-                              throwTypeErrorResult = callback2(10506)(guildId, currentEmbeddedActivity2.location);
+                              throwTypeErrorResult = callback2(10502)(guildId, currentEmbeddedActivity2.location);
                               throwTypeErrorResult = globalThis;
                               application = 3;
                               const obj2 = { value: null, done: true };
@@ -164,7 +164,7 @@ function _handleJoinEmbeddedActivityInternal() {
                       c3 = 2;
                       application = 1;
                       let obj3 = { value: null, done: false };
-                      obj3[0] = callback2(10643)(callback, callback2);
+                      obj3[0] = callback2(10639)(callback, callback2);
                       return obj3;
                     }
                   }
@@ -207,7 +207,7 @@ function _handleJoinEmbeddedActivityInternal() {
                 c3 = 3;
                 application = 1;
                 const obj7 = { value: null, done: false };
-                obj7[0] = callback(10647).confirmActivityLaunchChecks(obj6);
+                obj7[0] = callback(10643).confirmActivityLaunchChecks(obj6);
                 return obj7;
               }
             } else {
@@ -222,7 +222,7 @@ function _handleJoinEmbeddedActivityInternal() {
                   return obj8;
                 } else if (arg1) {
                   if (null != _private) {
-                    closure_17 = callback2(10466)(_private.id);
+                    closure_17 = callback2(10462)(_private.id);
                     closure_18 = c9.includes(_private.type);
                     if (closure_17) {
                       const obj9 = { channelId: null, bypassChangeModal: null };
@@ -231,10 +231,10 @@ function _handleJoinEmbeddedActivityInternal() {
                       c3 = 4;
                       application = 1;
                       const obj10 = { value: null, done: false };
-                      obj10[0] = callback2(10654)(obj9);
+                      obj10[0] = callback2(10650)(obj9);
                       return obj10;
                     } else {
-                      obj3 = callback(8014);
+                      obj3 = callback(8011);
                       application = 3;
                       return { value: false, done: true };
                     }
@@ -274,7 +274,7 @@ function _handleJoinEmbeddedActivityInternal() {
                 return obj;
               }
               if (null != callback2) {
-                callback2(10655)(callback2);
+                callback2(10651)(callback2);
               }
               if (null != currentEmbeddedActivity2) {
                 obj4 = callback(5696);
@@ -322,8 +322,8 @@ let result = require("ensureGuildLoaded").fileFinishedImporting("modules/activit
 
 export default function handleJoinEmbeddedActivity(arg0) {
   const _require = arg0;
-  const obj = _require(10607);
-  return obj.wrapPreemptiveActivityPopout(_require(10607).shouldOpenActivityInPopoutWindow(), () => (function handleJoinEmbeddedActivityInternal(closure_0) {
+  const obj = _require(10603);
+  return obj.wrapPreemptiveActivityPopout(_require(10603).shouldOpenActivityInPopoutWindow(), () => (function handleJoinEmbeddedActivityInternal(closure_0) {
     const self = this;
     const apply = closure_10.apply;
     if (typeof apply === "unknown") {

@@ -1,9 +1,9 @@
-// Module ID: 7411
-// Function ID: 7412
+// Module ID: 7408
+// Function ID: 7409
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7411 (metadata)
+// Module 7408 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PuzzleCubeSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/3db098934a26b5410658cff0c2c05462c22ad7b5a95cd8029c30b9eaf5a70569.png";

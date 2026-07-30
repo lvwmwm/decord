@@ -1,10 +1,10 @@
-// Module ID: 7891
-// Function ID: 7892
+// Module ID: 7888
+// Function ID: 7889
 // Name: isInteractionComponent
-// Dependencies: [32, 19, 7721, 3818, 1372, 1942, 5003, 1874, 7892, 21, 1906, 4417, 4415, 589, 7758, 6048, 7894, 7895, 709, 4616, 4411, 2]
+// Dependencies: [32, 19, 7718, 3818, 1372, 1942, 5003, 1874, 7889, 21, 1906, 4417, 4415, 589, 7755, 6046, 7891, 7892, 709, 4616, 4411, 2]
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentError, useComponentState, useComponentStateContext
 
-// Module 7891 (isInteractionComponent)
+// Module 7888 (isInteractionComponent)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "useMountLayoutEffect";
 import deleteNonce from "deleteNonce";
@@ -130,9 +130,9 @@ function useShouldDisableInteractiveComponents(channel_id) {
   if (channel != null) {
     guild_id = channel.guild_id;
   }
-  let tmpResult = tmp(6048);
+  let tmpResult = tmp(6046);
   const isThreadModerator = tmpResult.useIsThreadModerator(channel);
-  tmpResult = tmp(6048);
+  tmpResult = tmp(6046);
   let tmp9 = !stateFromStores;
   const canUnarchiveThread = tmpResult.useCanUnarchiveThread(channel);
   if (stateFromStores) {

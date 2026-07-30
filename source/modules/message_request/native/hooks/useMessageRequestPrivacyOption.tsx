@@ -1,10 +1,10 @@
-// Module ID: 13047
-// Function ID: 13048
+// Module ID: 13042
+// Function ID: 13043
 // Name: MessageRequestRestrictedGuildPrivacyOption
-// Dependencies: [19, 21, 3862, 6506, 5553, 1236, 11537, 2]
+// Dependencies: [19, 21, 3862, 6503, 5553, 1236, 11533, 2]
 // Exports: useMessageRequestPrivacyOption
 
-// Module 13047 (MessageRequestRestrictedGuildPrivacyOption)
+// Module 13042 (MessageRequestRestrictedGuildPrivacyOption)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -48,7 +48,7 @@ const result = require("explicitContentFromProto").fileFinishedImporting("module
 
 export const useMessageRequestPrivacyOption = function useMessageRequestPrivacyOption(guild) {
   let tmp = null;
-  if (!importDefault(11537)()) {
+  if (!importDefault(11533)()) {
     const obj = { guild: null };
     obj[0] = guild.guild;
     tmp = <MessageRequestRestrictedGuildPrivacyOption guild={null} />;

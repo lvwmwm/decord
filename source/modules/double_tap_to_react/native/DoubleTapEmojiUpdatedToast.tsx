@@ -1,10 +1,10 @@
-// Module ID: 9349
-// Function ID: 9350
+// Module ID: 9345
+// Function ID: 9346
 // Name: ToastEmoji
 // Dependencies: [19, 4181, 1877, 21, 4189, 712, 500, 589, 1416, 5206, 4185, 1236, 4586, 3902, 3890, 2]
 // Exports: showDoubleTapEmojiUpdatedToast
 
-// Module 9349 (ToastEmoji)
+// Module 9345 (ToastEmoji)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { EMOJI_URL_BASE_SIZE } from "set";

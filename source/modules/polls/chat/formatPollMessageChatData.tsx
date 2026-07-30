@@ -1,10 +1,10 @@
-// Module ID: 7997
-// Function ID: 7998
+// Module ID: 7994
+// Function ID: 7995
 // Name: reactionForId
-// Dependencies: [4181, 5048, 1372, 1942, 4407, 1874, 7998, 676, 4389, 3830, 3834, 1416, 7999, 3823, 3806, 8000, 1236, 6072, 8002, 500, 8003, 8004, 2]
+// Dependencies: [4181, 5048, 1372, 1942, 4407, 1874, 7995, 676, 4389, 3830, 3834, 1416, 7996, 3823, 3806, 7997, 1236, 6070, 7999, 500, 8000, 8001, 2]
 // Exports: default, isPollMessageDirectlyInteractive
 
-// Module 7997 (reactionForId)
+// Module 7994 (reactionForId)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -51,8 +51,8 @@ function computeBasicPollChatData(message) {
     let str = "";
     if (message.state === MessageStates.SENT) {
       if (formattedExpirationLabel == null) {
-        formattedExpirationLabel = require(7999) /* formatExpirationLabel */.formatExpirationLabel(poll.expiry);
-        const obj2 = require(7999) /* formatExpirationLabel */;
+        formattedExpirationLabel = require(7996) /* formatExpirationLabel */.formatExpirationLabel(poll.expiry);
+        const obj2 = require(7996) /* formatExpirationLabel */;
       }
       str = formattedExpirationLabel;
     }

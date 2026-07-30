@@ -1,10 +1,10 @@
-// Module ID: 9310
-// Function ID: 9311
+// Module ID: 9306
+// Function ID: 9307
 // Name: updateChatInputContainerHeight
 // Dependencies: [595, 644, 4048, 2]
 // Exports: updateChatInputContainerHeight, updateIsAtBottom, updateShouldShowJumpToPresentButton, updateShowingAutoComplete, useBestActiveChatInputContainerHeight, useChatInputContainerHeight, useChatIsAtBottom, useChatShowingAutoComplete
 
-// Module 9310 (updateChatInputContainerHeight)
+// Module 9306 (updateChatInputContainerHeight)
 import keys from "keys";
 
 let chatInputContainerHeight = "chatInputContainerHeight";
@@ -25,7 +25,7 @@ export default obj;
 export const updateChatInputContainerHeight = function updateChatInputContainerHeight(arg0, arg1) {
   const _require = arg0;
   const dependencyMap = arg1;
-  if (typeof arg0 !== "os") {
+  if (typeof arg0 !== "reType") {
     const Storage = _require(595).Storage;
     let result = Storage.set(chatInputContainerHeight, arg1);
   }

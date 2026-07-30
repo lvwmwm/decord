@@ -6,7 +6,7 @@
 // Module 4429 (requirePromise)
 
 export default function requirePromise() {
-  if (typeof Promise === "_") {
+  if (typeof Promise === "ZodObject") {
     const _TypeError = TypeError;
     const typeError = new TypeError("`Promise.allSettled` requires a global `Promise` be available.");
     throw typeError;

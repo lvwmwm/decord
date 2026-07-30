@@ -1,10 +1,10 @@
-// Module ID: 11864
-// Function ID: 11865
+// Module ID: 11860
+// Function ID: 11861
 // Name: useTrackThreadBrowserTab
-// Dependencies: [32, 19, 11865, 1372, 3817, 4201, 5097, 6077, 3819, 505, 6092, 589, 12, 1351, 11, 6076, 9135, 2]
+// Dependencies: [32, 19, 11861, 1372, 3817, 4201, 5097, 6075, 3819, 505, 6090, 589, 12, 1351, 11, 6074, 9131, 2]
 // Exports: useActiveGuildThreads, useActiveThreadIds, useActiveThreads, useArchivedThreads, useTrackThreadBrowserTab
 
-// Module 11864 (useTrackThreadBrowserTab)
+// Module 11860 (useTrackThreadBrowserTab)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { useShouldShowResolvedFlagsForChannel as closure_5 } from "useReportToModChannelFiltersStore";

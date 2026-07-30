@@ -56,7 +56,7 @@ let obj = {
 let closure_29 = [];
 let c30 = null;
 function defaultGetSessionId() {
-  return Promise.resolve({ sessionId: "r" });
+  return Promise.resolve({ sessionId: "Array" });
 }
 let result = require("extractId").fileFinishedImporting("../discord_common/js/packages/analytics-utils/AnalyticsTrackingStore.tsx");
 

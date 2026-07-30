@@ -1,10 +1,10 @@
-// Module ID: 7737
-// Function ID: 7738
+// Module ID: 7734
+// Function ID: 7735
 // Name: getForwardInfo
-// Dependencies: [7738, 1372, 1862, 3817, 3826, 1874, 1416, 1236, 3859, 4380, 5884, 2]
+// Dependencies: [7735, 1372, 1862, 3817, 3826, 1874, 1416, 1236, 3859, 4380, 5882, 2]
 // Exports: maybeCreateSingleForwardForMessage
 
-// Module 7737 (getForwardInfo)
+// Module 7734 (getForwardInfo)
 import getGuild from "getGuild";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -155,7 +155,7 @@ let result = require("createGuildRecordFromRust").fileFinishedImporting("modules
 
 export { MessageForward };
 export const maybeCreateSingleForwardForMessage = function maybeCreateSingleForwardForMessage(message) {
-  if (importDefault(5884)(message)) {
+  if (importDefault(5882)(message)) {
     const first = message.messageSnapshots[0];
     if (null != first) {
       if (typeof MessageForward !== "find") {

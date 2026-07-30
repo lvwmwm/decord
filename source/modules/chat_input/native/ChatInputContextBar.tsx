@@ -1,9 +1,9 @@
-// Module ID: 10389
-// Function ID: 10390
+// Module ID: 10385
+// Function ID: 10386
 // Name: ChatInputReplyBarNoAuthor
-// Dependencies: [19, 17, 4181, 1874, 676, 21, 1297, 4189, 712, 1348, 3893, 4185, 1236, 4717, 8998, 589, 3907, 4419, 8383, 7744, 4053, 10390, 4000, 4050, 4190, 9565, 698, 9563, 1222, 4418, 10391, 2]
+// Dependencies: [19, 17, 4181, 1874, 676, 21, 1297, 4189, 712, 1348, 3893, 4185, 1236, 4717, 8994, 589, 3907, 4419, 8380, 7741, 4053, 10386, 4000, 4050, 4190, 9562, 698, 9560, 1222, 4418, 10387, 2]
 
-// Module 10389 (ChatInputReplyBarNoAuthor)
+// Module 10385 (ChatInputReplyBarNoAuthor)
 import importAllResult from "processColorStrings";
 import get_ActivityIndicator from "useDisplayNameStyles";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -49,7 +49,7 @@ function ChatInputReplyBarNoAuthor(onCancelReplying) {
     obj2[3] = tmp13;
     obj2[4] = onCancelReplying;
     const obj3 = { source: null, size: null, style: null };
-    obj3[0] = tmp4(8998);
+    obj3[0] = tmp4(8994);
     obj3[1] = tmp(1297).Icon.Sizes.CUSTOM;
     obj3[2] = tmp3.floatingCloseIcon;
     obj2[5] = callback(tmp(1297).Icon, obj3);
@@ -66,7 +66,7 @@ function ChatInputReplyBarNoAuthor(onCancelReplying) {
     const obj5 = { style: null, children: null };
     obj5[0] = tmp3.contextCancelIconWrapper;
     const obj6 = { source: null, size: null };
-    obj6[0] = tmp4(8998);
+    obj6[0] = tmp4(8994);
     obj6[1] = tmp(1297).Icon.Sizes.SMALL_20;
     obj5[1] = callback(tmp(1297).Icon, obj6);
     const items1 = [callback(closure_5, obj5), ];
@@ -89,8 +89,8 @@ class ChatInputReplyBar {
     colorStrings = undefined;
     nick = undefined;
     guildId = undefined;
-    f84553 = undefined;
-    f84553 = undefined;
+    f84575 = undefined;
+    f84575 = undefined;
     id = undefined;
     author = undefined;
     tmp = pendingReply;
@@ -98,7 +98,7 @@ class ChatInputReplyBar {
     ({ onToggleReplyMention, chatInputFloatingOverride } = global);
     obj = require("useIsMobileVisualRefreshExperimentEnabled");
     tmp3 = obj.useMobileVisualRefreshConfig({ location: "ChatInputContextBar" }).chatInputFloating || chatInputFloatingOverride;
-    tmp4 = f48792();
+    tmp4 = f48802();
     tmpResult = require("map");
     tmp5 = c1;
     token = tmpResult.useToken(require("Themes").modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
@@ -106,7 +106,7 @@ class ChatInputReplyBar {
     bound = require("noop");
     tmpResult2 = require("initialize");
     items = [];
-    items[0] = f84553;
+    items[0] = f84575;
     stateFromStores = tmpResult2.useStateFromStores(items, () => roleStyle.roleStyle);
     c1 = stateFromStores;
     tmpResult3 = require("useCheckboxA11yNative");
@@ -120,7 +120,7 @@ class ChatInputReplyBar {
     items1[0] = colorString;
     items1[1] = stateFromStores;
     ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
-    f84553 = colorStrings.useMemo(() => {
+    f84575 = colorStrings.useMemo(() => {
       let tmp;
       if ("hidden" !== stateFromStores) {
         if (null != colorString) {
@@ -135,7 +135,7 @@ class ChatInputReplyBar {
     obj1 = { userId: pendingReply.message.author.id, guildId };
     tmp10 = require("useDisplayNameStyles")(obj1);
     tmpResult4 = require("DISPLAY_NAME_STYLES_FONT_FAMILY_MAP");
-    f84553 = tmpResult4.useDisplayNameStylesFont({ displayNameStyles: tmp10 });
+    f84575 = tmpResult4.useDisplayNameStylesFont({ displayNameStyles: tmp10 });
     tmpResult5 = require("processColorStrings");
     processColorStringsArray = tmpResult5.useProcessColorStringsArray(colorStrings);
     id = processColorStringsArray;
@@ -452,7 +452,7 @@ function ChatInputEditBar(onCancelEditing) {
   obj[4] = prop;
   obj[5] = onCancelEditing.onCancelEditing;
   obj1 = { source: null, size: null, style: null };
-  obj1[0] = importDefault(8998);
+  obj1[0] = importDefault(8994);
   const Sizes = tmp(1297).Icon.Sizes;
   obj1[1] = chatInputFloating ? Sizes.CUSTOM : Sizes.SMALL_20;
   let floatingCloseIcon;

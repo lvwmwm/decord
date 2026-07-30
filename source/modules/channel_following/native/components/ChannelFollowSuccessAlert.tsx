@@ -1,10 +1,10 @@
-// Module ID: 10404
-// Function ID: 10405
+// Module ID: 10400
+// Function ID: 10401
 // Name: items
-// Dependencies: [19, 17, 21, 10405, 10406, 10407, 10408, 10409, 10410, 1236, 4189, 4125, 4035, 6235, 12, 4618, 4185, 2]
+// Dependencies: [19, 17, 21, 10401, 10402, 10403, 10404, 10405, 10406, 1236, 4189, 4125, 4035, 6232, 12, 4618, 4185, 2]
 // Exports: default
 
-// Module 10404 (items)
+// Module 10400 (items)
 import "noop";
 import { Image } from "set";
 import jsxProd from "jsxProd";
@@ -66,10 +66,10 @@ export default function ChannelFollowSuccessAlert(arg0) {
   let obj = require(4035) /* AccessibilityAnnouncer */;
   const tmp6 = obj.isThemeDark(importDefault(4125)()) ? items1 : items;
   require = tmp6;
-  let tmp5Result = tmp5(6235);
+  let tmp5Result = tmp5(6232);
   items = [tmp6];
   const stableMemo = tmp5Result.useStableMemo(() => outer1_1(outer1_2[14]).sample(closure_0), items);
-  tmp5Result = tmp5(6235);
+  tmp5Result = tmp5(6232);
   const stableMemo1 = tmp5Result.useStableMemo(() => callback(table[14]).sample(closure_8), []);
   obj = {};
   const tmp2 = importDefault;

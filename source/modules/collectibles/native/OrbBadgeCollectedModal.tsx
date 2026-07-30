@@ -1,10 +1,10 @@
-// Module ID: 11906
-// Function ID: 11907
+// Module ID: 11902
+// Function ID: 11903
 // Name: OrbBadgeCollectedRootScreen
-// Dependencies: [19, 17, 4181, 21, 4189, 712, 5143, 4395, 8719, 9804, 589, 5141, 10972, 8142, 10973, 5177, 8713, 4185, 1236, 4600, 7944, 8716, 5570, 2]
+// Dependencies: [19, 17, 4181, 21, 4189, 712, 5143, 4395, 8715, 9801, 589, 5141, 10968, 8139, 10969, 5177, 8709, 4185, 1236, 4600, 7941, 8712, 5570, 2]
 // Exports: default
 
-// Module 11906 (OrbBadgeCollectedRootScreen)
+// Module 11902 (OrbBadgeCollectedRootScreen)
 import Button from "Button";
 import get_ActivityIndicator from "Text";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -35,7 +35,7 @@ function OrbBadgeCollectedRootScreen(modalKey) {
   if (stateFromStores) {
     obj = { source: null, style: null };
     const obj1 = { uri: null };
-    obj1[0] = onPressViewBadge(10972);
+    obj1[0] = onPressViewBadge(10968);
     obj[0] = obj1;
     obj[1] = tmp.background;
     let tmp9Result = tmp9(onPressViewBadge(5141), obj);
@@ -45,11 +45,11 @@ function OrbBadgeCollectedRootScreen(modalKey) {
   } else {
     const obj2 = { source: null, poster: null, style: null, resizeMode: "contain", muted: true, pauseWhileAppInactive: true, paused: false };
     const obj3 = { uri: null };
-    obj3[0] = onPressViewBadge(10973);
+    obj3[0] = onPressViewBadge(10969);
     obj2[0] = obj3;
-    obj2[1] = onPressViewBadge(10972);
+    obj2[1] = onPressViewBadge(10968);
     obj2[2] = tmp.background;
-    tmp9Result = tmp9(tmp2(8142).VideoComponent, obj2);
+    tmp9Result = tmp9(tmp2(8139).VideoComponent, obj2);
     tmp12 = onPressViewBadge;
     tmp13 = tmp9;
   }
@@ -58,7 +58,7 @@ function OrbBadgeCollectedRootScreen(modalKey) {
   const obj5 = { style: tmp.body, children: null };
   const obj6 = { source: null, style: null };
   const obj7 = { uri: null };
-  obj7[0] = tmp12(8713);
+  obj7[0] = tmp12(8709);
   obj6[0] = obj7;
   obj6[1] = tmp.orbBadge;
   const items4 = [tmp13(tmp12(5141), obj6), ];

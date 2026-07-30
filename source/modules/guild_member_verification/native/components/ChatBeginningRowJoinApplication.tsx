@@ -1,10 +1,10 @@
-// Module ID: 11724
-// Function ID: 11725
+// Module ID: 11720
+// Function ID: 11721
 // Name: ChatBeginningRowJoinRequest
-// Dependencies: [19, 17, 3817, 1874, 676, 21, 4189, 712, 11725, 589, 11726, 5566, 4185, 1236, 4009, 5022, 4600, 2]
+// Dependencies: [19, 17, 3817, 1874, 676, 21, 4189, 712, 11721, 589, 11722, 5566, 4185, 1236, 4009, 5022, 4600, 2]
 // Exports: default
 
-// Module 11724 (ChatBeginningRowJoinRequest)
+// Module 11720 (ChatBeginningRowJoinRequest)
 import "noop";
 import { View } from "set";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

@@ -1,10 +1,10 @@
-// Module ID: 8670
-// Function ID: 8671
+// Module ID: 8667
+// Function ID: 8668
 // Name: SourceIcon
-// Dependencies: [19, 17, 21, 4189, 712, 3890, 8671, 3901, 8081, 3893, 8673, 1236, 1351, 8691, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 3890, 8668, 3901, 8078, 3893, 8670, 1236, 1351, 8688, 2]
 // Exports: default
 
-// Module 8670 (SourceIcon)
+// Module 8667 (SourceIcon)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ function SourceIcon(toastText) {
   };
   obj = { color: null, size: "md" };
   obj[0] = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
-  obj[5] = callback(toastText(8671).HeartIcon, obj);
+  obj[5] = callback(toastText(8668).HeartIcon, obj);
   return callback(closure_3, obj);
 }
 ({ Pressable: c3, View: c4, StyleSheet } = get_ActivityIndicator);
@@ -80,7 +80,7 @@ export default function WishlistItemCardBase(username) {
   let obj = require(3901) /* ManaContext */;
   const themeContext = obj.useThemeContext();
   ({ primaryColor, theme, secondaryColor } = themeContext);
-  let obj1 = require(8081) /* useUserProfileColors */;
+  let obj1 = require(8078) /* useUserProfileColors */;
   let obj2 = require(3893) /* map */;
   let containerBackground = obj2.useToken(importDefault(712).colors.BG_SURFACE_RAISED);
   if (null != primaryColor) {
@@ -103,7 +103,7 @@ export default function WishlistItemCardBase(username) {
     const intl2 = tmp2(1236).intl;
     stringResult = intl2.string(tmp2(1236).t["6cfuDj"]);
   }
-  let tmp11Result = source === tmp2(8673).WishlistItemSource.WISHLIST;
+  let tmp11Result = source === tmp2(8670).WishlistItemSource.WISHLIST;
   items1[1] = stringResult;
   let tmp9 = null;
   if (tmp11Result) {
@@ -116,7 +116,7 @@ export default function WishlistItemCardBase(username) {
   obj2 = { color: null, size: "custom", style: null };
   obj2[0] = importDefault(712).colors.WHITE;
   obj2[2] = { width: 40, height: 40 };
-  obj1[4] = callback(require(8691) /* CheckmarkLargeBoldIcon */.CheckmarkLargeBoldIcon, obj2);
+  obj1[4] = callback(require(8688) /* CheckmarkLargeBoldIcon */.CheckmarkLargeBoldIcon, obj2);
   const items2 = [tmp.previewWrap, ];
   let ownedCard = flag;
   if (flag) {

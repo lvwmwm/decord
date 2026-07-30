@@ -1,10 +1,10 @@
-// Module ID: 5974
-// Function ID: 5975
+// Module ID: 5972
+// Function ID: 5973
 // Name: set
-// Dependencies: [4178, 1351, 5975, 5976, 2]
+// Dependencies: [4178, 1351, 5973, 5974, 2]
 // Exports: getApplicationCodedLinkData, isApplicationCodedLink, isApplicationCodedLinkMobileSupported
 
-// Module 5974 (set)
+// Module 5972 (set)
 import set from "makeStorefrontSKUCodedLink";
 
 const items = [require("CodedLinkType").CodedLinkType.APP_DIRECTORY_PROFILE, require("CodedLinkType").CodedLinkType.ACTIVITY_BOOKMARK, require("CodedLinkType").CodedLinkType.APP_DIRECTORY_STOREFRONT, require("CodedLinkType").CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU, require("CodedLinkType").CodedLinkType.APP_OAUTH2_LINK];
@@ -26,7 +26,7 @@ export const getApplicationCodedLinkData = function getApplicationCodedLinkData(
     if (tmp(4178).CodedLinkType.APP_OAUTH2_LINK !== type) {
       if (tmp(4178).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
         if (tmp(4178).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
-          let tmpResult = tmp(5975);
+          let tmpResult = tmp(5973);
           const result = tmpResult.parseStorefrontSkuCodedLink(code);
           let tmp5 = null;
           if (null != result) {
@@ -40,7 +40,7 @@ export const getApplicationCodedLinkData = function getApplicationCodedLinkData(
           obj = { type: null, applicationId: null, params: null };
           obj[0] = type;
           obj[1] = code;
-          tmpResult = tmp(5976);
+          tmpResult = tmp(5974);
           obj[2] = tmpResult.extractActivityBookmarkParams(url);
           return obj;
         }

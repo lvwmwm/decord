@@ -1,17 +1,17 @@
-// Module ID: 11756
-// Function ID: 11757
+// Module ID: 11752
+// Function ID: 11753
 // Name: GuildDirectoryNicknameUpsell
-// Dependencies: [5, 32, 19, 17, 1862, 11745, 21, 4189, 5140, 712, 589, 5215, 5136, 4088, 5566, 4185, 1236, 8995, 1297, 4600, 11746, 11755, 5143, 5570, 5503, 2]
+// Dependencies: [5, 32, 19, 17, 1862, 11741, 21, 4189, 5140, 712, 589, 5215, 5136, 4088, 5566, 4185, 1236, 8991, 1297, 4600, 11742, 11751, 5143, 5570, 5503, 2]
 // Exports: default
 
-// Module 11756 (GuildDirectoryNicknameUpsell)
+// Module 11752 (GuildDirectoryNicknameUpsell)
 import GuildPrompts from "GuildPrompts";
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
-import get_ActivityIndicator from "module_8995";
+import get_ActivityIndicator from "module_8991";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildPrompts } from "GuildPrompts";
-import jsxProd from "module_11755";
+import jsxProd from "module_11751";
 import createCacheKey from "createCacheKey";
 
 let c10;
@@ -176,7 +176,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
       }
     }, 100);
   };
-  items2[2] = callback(tmp5(8995), obj5);
+  items2[2] = callback(tmp5(8991), obj5);
   items2[3] = callback(closure_6, { style: tmp.redesignGrowSpacing });
   const obj7 = { style: tmp.redesignButtonContainer, children: null };
   const obj8 = { size: "lg", text: null, onPress: null };

@@ -44,7 +44,7 @@ if (typeof exports !== "window") {
     }
   }
 }
-if (typeof globalThis.define !== "_") {
+if (typeof globalThis.define !== "ZodObject") {
   if (globalThis.define.amd) {
     globalThis.define(["../moment"], function t(defineLocale) {
       function processRelativeTime(arg0, arg1, arg2, arg3) {

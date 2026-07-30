@@ -1,17 +1,17 @@
-// Module ID: 15580
-// Function ID: 15581
+// Module ID: 15574
+// Function ID: 15575
 // Name: trackFriendsListViewed
-// Dependencies: [676, 15581, 698, 5724, 2]
+// Dependencies: [676, 15575, 698, 5724, 2]
 // Exports: default
 
-// Module 15580 (trackFriendsListViewed)
+// Module 15574 (trackFriendsListViewed)
 import { AnalyticEvents } from "ME";
 
 const result = require("expandEventProperties").fileFinishedImporting("modules/app_analytics/track/friends_list_viewed/trackFriendListViewed.tsx");
 
 export default function trackFriendsListViewed(source) {
   let str = source.tab_opened;
-  const tmp = importDefault(15581)();
+  const tmp = importDefault(15575)();
   let obj = importDefault(698);
   obj = { tab_opened: str, source: source.source };
   const merged = Object.assign(tmp);

@@ -60,7 +60,7 @@ function _fetchAppliedGuildBoostsForGuild() {
               dependencyMap = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -167,7 +167,7 @@ function _fetchAppliedGuildBoostsForUser() {
               callback = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -461,7 +461,7 @@ function _applyToGuild() {
               let appliedGuildBoostError;
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

@@ -1,10 +1,10 @@
-// Module ID: 7657
-// Function ID: 7658
+// Module ID: 7654
+// Function ID: 7655
 // Name: FormRadioGroup
-// Dependencies: [19, 17, 21, 5219, 7655, 7647, 2]
+// Dependencies: [19, 17, 21, 5219, 7652, 7644, 2]
 // Exports: default
 
-// Module 7657 (FormRadioGroup)
+// Module 7654 (FormRadioGroup)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,7 +36,7 @@ export default function FormRadioGroup(arg0) {
     obj1[2] = title;
     obj1[3] = accessibilityLabel;
     obj1[4] = children;
-    obj[0] = callback(require(7655) /* context */.TableRadioGroup, obj1);
+    obj[0] = callback(require(7652) /* context */.TableRadioGroup, obj1);
     const items = [callback(View, obj), ];
     let tmp13Result = null;
     if (null != hint) {
@@ -58,8 +58,8 @@ export default function FormRadioGroup(arg0) {
     obj[4] = icon;
     const merged1 = Object.assign(merged);
     obj.children = children;
-    tmp11Result = callback(importDefault(7647), obj);
-    const tmp6 = importDefault(7647);
+    tmp11Result = callback(importDefault(7644), obj);
+    const tmp6 = importDefault(7644);
   }
   return tmp11Result;
 };

@@ -10,7 +10,7 @@ let fn = globalThis.__getTotalRequireTime;
 if (fn == null) {
   fn = () => 0;
 }
-let closure_2 = typeof performance === "ta";
+let closure_2 = typeof performance === "__INTERNAL_SLOT_MAP__";
 class AppStartPerformance {
   constructor() {
     obj = Object.create(new.target.prototype);

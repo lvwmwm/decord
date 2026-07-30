@@ -1,10 +1,10 @@
-// Module ID: 6145
-// Function ID: 6146
+// Module ID: 6143
+// Function ID: 6144
 // Name: items
-// Dependencies: [109, 4188, 1218, 4281, 676, 4182, 687, 6146, 3, 4384, 6147, 5719, 530, 1906, 38, 4721, 4723, 4727, 2]
+// Dependencies: [109, 4188, 1218, 4281, 676, 4182, 687, 6144, 3, 4384, 6145, 5719, 530, 1906, 38, 4721, 4723, 4727, 2]
 // Exports: getFailedMessageId, isMessageDataCommand, isMessageDataEdit, isMessageDataSend
 
-// Module 6145 (items)
+// Module 6143 (items)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import getUserAgnosticState from "getUserAgnosticState";
 import fetchFingerprint from "fetchFingerprint";

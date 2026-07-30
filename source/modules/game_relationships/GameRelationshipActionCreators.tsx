@@ -1,9 +1,9 @@
-// Module ID: 9057
-// Function ID: 9058
+// Module ID: 9053
+// Function ID: 9054
 // Name: showRequestFailedAlert
 // Dependencies: [5, 676, 4088, 4528, 1236, 530, 4035, 2]
 
-// Module 9057 (showRequestFailedAlert)
+// Module 9053 (showRequestFailedAlert)
 import sendRequest from "sendRequest";
 import ME from "ME";
 
@@ -78,7 +78,7 @@ function _deleteGameRelationship() {
               ({ userId: c0, applicationId: c1, onSuccess: c2 } = callback);
               c5 = 1;
               v0 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {
@@ -183,7 +183,7 @@ function _removeGameFriend() {
               ({ userId: c0, applicationId: c1 } = c0);
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -281,7 +281,7 @@ function _cancelGameFriendRequest() {
               ({ userId: c0, applicationId: c1 } = c0);
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

@@ -144,7 +144,7 @@ export const useViewModelInstance = function useViewModelInstance(arg0, instance
         }
       }
     } else {
-      obj7 = { instance: "ct", needsDispose: null };
+      obj7 = { instance: "ct", needsDispose: "Array" };
     }
     let current = obj7.instance;
     if (current) {

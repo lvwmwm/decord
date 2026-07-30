@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset";
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 120, height: 62, scales: [2, 3], hash: "9344f1089c1146b314e038ef9542fb46", name: "poop_dark_large", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/summaries/native/images", width: 14, height: 18, scales: [2, 3], hash: "a62b86dc1d2c11cbfe0a98b586c4b359", name: "summary_indicator_start", type: "png" });

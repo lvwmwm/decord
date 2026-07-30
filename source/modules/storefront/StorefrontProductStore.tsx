@@ -1,9 +1,9 @@
-// Module ID: 14096
-// Function ID: 14097
+// Module ID: 14092
+// Function ID: 14093
 // Name: getFetchState
 // Dependencies: [589, 709, 2]
 
-// Module 14096 (getFetchState)
+// Module 14092 (getFetchState)
 import { Store } from "initialize";
 
 let closure_0 = {};

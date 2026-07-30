@@ -1,10 +1,10 @@
-// Module ID: 8824
-// Function ID: 8825
+// Module ID: 8820
+// Function ID: 8821
 // Name: useGradientBottom
-// Dependencies: [19, 4189, 4000, 8825, 2]
+// Dependencies: [19, 4189, 4000, 8821, 2]
 // Exports: useClientThemesOverride, useGradientBottom, useGradientMidpoint, useGradientTop
 
-// Module 8824 (useGradientBottom)
+// Module 8820 (useGradientBottom)
 import noop from "noop";
 import createCacheKey from "createCacheKey";
 
@@ -53,7 +53,7 @@ export const useGradientMidpoint = function useGradientMidpoint() {
 };
 export const useClientThemesOverride = function useClientThemesOverride(themedChatInput) {
   let tmp2;
-  if (importDefault(8825)()) {
+  if (importDefault(8821)()) {
     let none = themedChatInput;
     if (themedChatInput == null) {
       none = tmp.none;

@@ -1,10 +1,10 @@
-// Module ID: 8707
-// Function ID: 8708
+// Module ID: 8703
+// Function ID: 8704
 // Name: WishlistButtonBase
-// Dependencies: [5, 32, 19, 17, 1218, 1874, 678, 505, 21, 4050, 4604, 4189, 712, 3901, 5564, 4035, 3908, 3890, 1236, 4190, 4599, 4603, 8708, 8671, 589, 8667, 8699, 8710, 8665, 2]
+// Dependencies: [5, 32, 19, 17, 1218, 1874, 678, 505, 21, 4050, 4604, 4189, 712, 3901, 5564, 4035, 3908, 3890, 1236, 4190, 4599, 4603, 8704, 8668, 589, 8664, 8695, 8706, 8662, 2]
 // Exports: default
 
-// Module 8707 (WishlistButtonBase)
+// Module 8703 (WishlistButtonBase)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING";
@@ -46,7 +46,7 @@ class WishlistButtonBase {
     useContext = undefined;
     c13 = undefined;
     c14 = undefined;
-    tmp = f44927(size);
+    tmp = f44928(size);
     c6 = tmp;
     tmp2 = isWishlisted;
     tmp3 = busy;
@@ -180,7 +180,7 @@ class WishlistButtonBase {
     obj = { styles: tmp, withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, showFilled: tmp9, SUBTLE_SPRING: require("SUBTLE_SPRING").SUBTLE_SPRING };
     J.__closure = obj;
     J.__workletHash = 1357254413161;
-    J.__initData = f44927;
+    J.__initData = f44928;
     animatedStyle = tmp2Result1.useAnimatedStyle(J);
     tmp2Result2 = require("module_4050");
     class Y {
@@ -208,7 +208,7 @@ class WishlistButtonBase {
     obj1 = { animationFillProgress: sharedValue, styles: tmp, withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, showFilled: tmp9, SUBTLE_SPRING: require("SUBTLE_SPRING").SUBTLE_SPRING, interpolate: require("module_4050").interpolate, Extrapolation: require("module_4050").Extrapolation };
     Y.__closure = obj1;
     Y.__workletHash = 15039903885060;
-    Y.__initData = f44927;
+    Y.__initData = f44928;
     animatedStyle1 = tmp2Result2.useAnimatedStyle(Y);
     tmp2Result3 = require("module_4050");
     class K {
@@ -240,7 +240,7 @@ class WishlistButtonBase {
     obj2 = { animationFillProgress: sharedValue, styles: tmp, showFilled: tmp9, interpolate: require("module_4050").interpolate, Extrapolation: require("module_4050").Extrapolation };
     K.__closure = obj2;
     K.__workletHash = 12429379889426;
-    K.__initData = f44927;
+    K.__initData = f44928;
     tmp17 = useContext;
     obj3 = {
       style(pressed) {
@@ -435,8 +435,8 @@ export default function CollectiblesWishlistButton(selectedProduct) {
   selectedProduct = selectedProduct.selectedProduct;
   let tmp = null;
   const merged = Object.assign(selectedProduct, Object.create(null));
-  let obj = require(8710) /* getProductPurchaseState */;
-  require(8665) /* getProductNameAndTypeFromSku */;
+  let obj = require(8706) /* getProductPurchaseState */;
+  require(8662) /* getProductNameAndTypeFromSku */;
   if (!obj.useProductPurchaseState(selectedProduct).isPurchased) {
     obj = { skuId: null, product: null, disabled: null, onTrackPress: null };
     obj[0] = selectedProduct.skuId;

@@ -1,10 +1,10 @@
-// Module ID: 11057
-// Function ID: 11058
+// Module ID: 11053
+// Function ID: 11054
 // Name: Navbar
-// Dependencies: [32, 19, 17, 676, 21, 4189, 712, 5177, 6752, 1236, 7699, 5774, 1581, 4185, 7634, 1297, 4600, 4384, 11058, 5773, 3889, 5570, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4189, 712, 5177, 6749, 1236, 7696, 5774, 1581, 4185, 7631, 1297, 4600, 4384, 11054, 5773, 3889, 5570, 2]
 // Exports: default
 
-// Module 11057 (Navbar)
+// Module 11053 (Navbar)
 import _slicedToArray from "_slicedToArray";
 import AutomodAlertActionType from "AutomodAlertActionType";
 import { View } from "collectGuildAnalyticsMetadata";
@@ -23,8 +23,8 @@ function Navbar(onClose) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj[1] = onClose.onClose;
-  obj[2] = importDefault(7699);
-  obj[1] = callback2(require(6752) /* HeaderActionButton */.HeaderActionButton, obj);
+  obj[2] = importDefault(7696);
+  obj[1] = callback2(require(6749) /* HeaderActionButton */.HeaderActionButton, obj);
   obj[2] = callback2(View, obj);
   return callback2(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 }

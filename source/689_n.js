@@ -8,7 +8,7 @@ let fn = function n() {
   let length;
   let length2;
   let obj = {};
-  let f101374 = obj;
+  let f101386 = obj;
   let items = ["Boolean", "Number", "String", "Function", "Array", "Date", "RegExp", "Undefined", "Null"];
   let num = 0;
   if (0 < items.length) {
@@ -110,7 +110,7 @@ let fn = function n() {
         str4 = "Trying to call a non-function";
         throwTypeErrorResult = HermesBuiltin.throwTypeError();
       }
-      tmp5 = f101374;
+      tmp5 = f101386;
       toString = Object.prototype.toString;
       call = toString.call;
       tmp6 = tmp5[typeof call === "unknown" ? toString(first) : call(toString, first)] || "object";
@@ -220,7 +220,7 @@ let fn = function n() {
       }
       toString = Object.prototype.toString;
       call = toString.call;
-      tmp = f101374;
+      tmp = f101386;
       tmp2 = tmp[typeof call === "unknown" ? toString(hex) : call(toString, hex)] || "object";
       if ("function" == tmp2) {
         hexResult = self.hex();
@@ -275,13 +275,13 @@ let fn = function n() {
     }
     name() {
       tmp = rgb2hex_1(this._rgb, "rgb");
-      keys = Object.keys(f66933);
+      keys = Object.keys(f66952);
       num = 0;
       if (0 < keys.length) {
         str = keys[num];
-        tmp2 = f66933;
+        tmp2 = f66952;
         tmp3 = num;
-        while (f66933[str] !== tmp) {
+        while (f66952[str] !== tmp) {
           num = num + 1;
         }
         return str.toLowerCase();
@@ -354,7 +354,7 @@ let fn = function n() {
         _Object = Object;
         toString = Object.prototype.toString;
         call = toString.call;
-        tmp2 = f101374;
+        tmp2 = f101386;
         tmp4 = tmp2[typeof call === "unknown" ? toString(arg0) : call(toString, arg0)] || "object";
         str = "number";
         if ("number" === tmp4) {
@@ -686,7 +686,7 @@ let fn = function n() {
             throwTypeErrorResult = HermesBuiltin.throwTypeError();
           }
           tmp12 = arg1;
-          tmp13 = f101374;
+          tmp13 = f101386;
           tmp14 = globalThis;
           _Object = Object;
           toString = Object.prototype.toString;
@@ -980,8 +980,8 @@ let fn = function n() {
         const str3 = items[diff1];
       }
       str = formatted;
-      const tmp7 = f101374;
-      tmp9 = f101374[typeof call === "unknown" ? toString(items[diff1]) : call(toString, items[diff1])] || "object";
+      const tmp7 = f101386;
+      tmp9 = f101386[typeof call === "unknown" ? toString(items[diff1]) : call(toString, items[diff1])] || "object";
     }
     if (!str) {
       str = "lsa";
@@ -1191,8 +1191,8 @@ let fn = function n() {
         const str3 = items[diff1];
       }
       str = formatted;
-      const tmp7 = f101374;
-      tmp9 = f101374[typeof call === "unknown" ? toString(items[diff1]) : call(toString, items[diff1])] || "object";
+      const tmp7 = f101386;
+      tmp9 = f101386[typeof call === "unknown" ? toString(items[diff1]) : call(toString, items[diff1])] || "object";
     }
     if (!str) {
       str = "rgb";
@@ -1269,8 +1269,8 @@ let fn = function n() {
             return "css";
           }
         }
-        const tmp6 = f101374;
-        tmp8 = f101374[typeof call === "unknown" ? toString(arg0) : call(toString, arg0)] || "object";
+        const tmp6 = f101386;
+        tmp8 = f101386[typeof call === "unknown" ? toString(arg0) : call(toString, arg0)] || "object";
       }
     }
   });
@@ -1496,8 +1496,8 @@ let fn = function n() {
         const str3 = items[diff1];
       }
       str = formatted;
-      const tmp11 = f101374;
-      tmp13 = f101374[typeof call === "unknown" ? toString(items[diff1]) : call(toString, items[diff1])] || "object";
+      const tmp11 = f101386;
+      tmp13 = f101386[typeof call === "unknown" ? toString(items[diff1]) : call(toString, items[diff1])] || "object";
     }
     if (!str) {
       str = "auto";
@@ -1619,8 +1619,8 @@ let fn = function n() {
             return "hex";
           }
         }
-        const tmp6 = f101374;
-        tmp8 = f101374[typeof call === "unknown" ? toString(arg0) : call(toString, arg0)] || "object";
+        const tmp6 = f101386;
+        tmp8 = f101386[typeof call === "unknown" ? toString(arg0) : call(toString, arg0)] || "object";
       }
     }
   });
@@ -2427,8 +2427,8 @@ let fn = function n() {
             return "named";
           }
         }
-        const tmp6 = f101374;
-        tmp8 = f101374[typeof call === "unknown" ? toString(arg0) : call(toString, arg0)] || "object";
+        const tmp6 = f101386;
+        tmp8 = f101386[typeof call === "unknown" ? toString(arg0) : call(toString, arg0)] || "object";
       }
     }
   });
@@ -2507,8 +2507,8 @@ let fn = function n() {
             }
           }
         }
-        const tmp6 = f101374;
-        tmp8 = f101374[typeof call === "unknown" ? toString(first) : call(toString, first)] || "object";
+        const tmp6 = f101386;
+        tmp8 = f101386[typeof call === "unknown" ? toString(first) : call(toString, first)] || "object";
       }
     }
   });
@@ -3005,12 +3005,12 @@ let fn = function n() {
       const _Object3 = Object;
       const call2 = toString2.call;
       tmp13 = type$p;
-      tmp17 = f101374[typeof call === "unknown" ? toString(arg0) : call(toString, arg0)] || "object";
+      tmp17 = f101386[typeof call === "unknown" ? toString(arg0) : call(toString, arg0)] || "object";
       let obj2 = arg1;
       if ("object" !== tmp21) {
         obj2 = Color(arg1);
       }
-      tmp21 = f101374[typeof call2 === "unknown" ? toString2(arg1) : call2(toString2, arg1)] || "object";
+      tmp21 = f101386[typeof call2 === "unknown" ? toString2(arg1) : call2(toString2, arg1)] || "object";
       const obj3 = tmp5[first](obj, obj2, num);
       const alphaResult = obj.alpha();
       return obj3.alpha(alphaResult + num * (obj2.alpha() - obj.alpha()));
@@ -3777,77 +3777,77 @@ let fn = function n() {
     }
     tmp = blend;
   }
-  f101374 = (arg0, arg1) => {
-    const items = [f101374(arg0[0], arg1[0]), f101374(arg0[1], arg1[1]), f101374(arg0[2], arg1[2])];
+  f101386 = (arg0, arg1) => {
+    const items = [f101386(arg0[0], arg1[0]), f101386(arg0[1], arg1[1]), f101386(arg0[2], arg1[2])];
     return items;
   };
   blend.normal = (arg0, arg1) => {
     const obj = chroma$k(arg1);
     const rgbResult = chroma$k(arg1).rgb();
-    return chroma$k.rgb(f101374(rgbResult, chroma$k(arg0).rgb()));
+    return chroma$k.rgb(f101386(rgbResult, chroma$k(arg0).rgb()));
   };
-  f101374 = (arg0, arg1) => {
-    const items = [f101374(arg0[0], arg1[0]), f101374(arg0[1], arg1[1]), f101374(arg0[2], arg1[2])];
+  f101386 = (arg0, arg1) => {
+    const items = [f101386(arg0[0], arg1[0]), f101386(arg0[1], arg1[1]), f101386(arg0[2], arg1[2])];
     return items;
   };
   blend.multiply = (arg0, arg1) => {
     const obj = chroma$k(arg1);
     const rgbResult = chroma$k(arg1).rgb();
-    return chroma$k.rgb(f101374(rgbResult, chroma$k(arg0).rgb()));
+    return chroma$k.rgb(f101386(rgbResult, chroma$k(arg0).rgb()));
   };
-  f101374 = (arg0, arg1) => {
-    const items = [f101374(arg0[0], arg1[0]), f101374(arg0[1], arg1[1]), f101374(arg0[2], arg1[2])];
+  f101386 = (arg0, arg1) => {
+    const items = [f101386(arg0[0], arg1[0]), f101386(arg0[1], arg1[1]), f101386(arg0[2], arg1[2])];
     return items;
   };
   blend.screen = (arg0, arg1) => {
     const obj = chroma$k(arg1);
     const rgbResult = chroma$k(arg1).rgb();
-    return chroma$k.rgb(f101374(rgbResult, chroma$k(arg0).rgb()));
+    return chroma$k.rgb(f101386(rgbResult, chroma$k(arg0).rgb()));
   };
-  f101374 = (arg0, arg1) => {
-    const items = [f101374(arg0[0], arg1[0]), f101374(arg0[1], arg1[1]), f101374(arg0[2], arg1[2])];
+  f101386 = (arg0, arg1) => {
+    const items = [f101386(arg0[0], arg1[0]), f101386(arg0[1], arg1[1]), f101386(arg0[2], arg1[2])];
     return items;
   };
   blend.overlay = (arg0, arg1) => {
     const obj = chroma$k(arg1);
     const rgbResult = chroma$k(arg1).rgb();
-    return chroma$k.rgb(f101374(rgbResult, chroma$k(arg0).rgb()));
+    return chroma$k.rgb(f101386(rgbResult, chroma$k(arg0).rgb()));
   };
-  f101374 = (arg0, arg1) => {
-    const items = [f101374(arg0[0], arg1[0]), f101374(arg0[1], arg1[1]), f101374(arg0[2], arg1[2])];
+  f101386 = (arg0, arg1) => {
+    const items = [f101386(arg0[0], arg1[0]), f101386(arg0[1], arg1[1]), f101386(arg0[2], arg1[2])];
     return items;
   };
   blend.darken = (arg0, arg1) => {
     const obj = chroma$k(arg1);
     const rgbResult = chroma$k(arg1).rgb();
-    return chroma$k.rgb(f101374(rgbResult, chroma$k(arg0).rgb()));
+    return chroma$k.rgb(f101386(rgbResult, chroma$k(arg0).rgb()));
   };
-  f101374 = (arg0, arg1) => {
-    const items = [f101374(arg0[0], arg1[0]), f101374(arg0[1], arg1[1]), f101374(arg0[2], arg1[2])];
+  f101386 = (arg0, arg1) => {
+    const items = [f101386(arg0[0], arg1[0]), f101386(arg0[1], arg1[1]), f101386(arg0[2], arg1[2])];
     return items;
   };
   blend.lighten = (arg0, arg1) => {
     const obj = chroma$k(arg1);
     const rgbResult = chroma$k(arg1).rgb();
-    return chroma$k.rgb(f101374(rgbResult, chroma$k(arg0).rgb()));
+    return chroma$k.rgb(f101386(rgbResult, chroma$k(arg0).rgb()));
   };
-  f101374 = (arg0, arg1) => {
-    const items = [f101374(arg0[0], arg1[0]), f101374(arg0[1], arg1[1]), f101374(arg0[2], arg1[2])];
+  f101386 = (arg0, arg1) => {
+    const items = [f101386(arg0[0], arg1[0]), f101386(arg0[1], arg1[1]), f101386(arg0[2], arg1[2])];
     return items;
   };
   blend.dodge = (arg0, arg1) => {
     const obj = chroma$k(arg1);
     const rgbResult = chroma$k(arg1).rgb();
-    return chroma$k.rgb(f101374(rgbResult, chroma$k(arg0).rgb()));
+    return chroma$k.rgb(f101386(rgbResult, chroma$k(arg0).rgb()));
   };
-  f101374 = (arg0, arg1) => {
-    const items = [f101374(arg0[0], arg1[0]), f101374(arg0[1], arg1[1]), f101374(arg0[2], arg1[2])];
+  f101386 = (arg0, arg1) => {
+    const items = [f101386(arg0[0], arg1[0]), f101386(arg0[1], arg1[1]), f101386(arg0[2], arg1[2])];
     return items;
   };
   blend.burn = (arg0, arg1) => {
     const obj = chroma$k(arg1);
     const rgbResult = chroma$k(arg1).rgb();
-    return chroma$k.rgb(f101374(rgbResult, chroma$k(arg0).rgb()));
+    return chroma$k.rgb(f101386(rgbResult, chroma$k(arg0).rgb()));
   };
   pow = Math.pow;
   sin = Math.sin;
@@ -4094,8 +4094,8 @@ let fn = function n() {
       }
       return items1;
     }
-    const tmp = f101374;
-    tmp2 = f101374[typeof call === "unknown" ? toString(analyzeResult) : call(toString, analyzeResult)] || "object";
+    const tmp = f101386;
+    tmp2 = f101386[typeof call === "unknown" ? toString(analyzeResult) : call(toString, analyzeResult)] || "object";
   }
   sqrt = Math.sqrt;
   pow = Math.pow;
@@ -4655,7 +4655,7 @@ if (typeof exports !== "window") {
     module.exports = fn();
   }
 }
-if (typeof globalThis.define !== "_") {
+if (typeof globalThis.define !== "ZodObject") {
   if (globalThis.define.amd) {
     globalThis.define(fn);
   }

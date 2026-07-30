@@ -1,9 +1,9 @@
-// Module ID: 13600
-// Function ID: 13601
+// Module ID: 13595
+// Function ID: 13596
 // Name: _initialize
-// Dependencies: [4188, 4368, 709, 5797, 5853, 2]
+// Dependencies: [4188, 4368, 709, 5797, 5851, 2]
 
-// Module 13600 (_initialize)
+// Module 13595 (_initialize)
 import getUserAgnosticState from "getUserAgnosticState";
 import "initialize";
 
@@ -14,7 +14,7 @@ class CollectiblesMarketingManager extends tmp2 {
     applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
       const value = getUserAgnosticState.get("shop_include_unpublished");
       let obj = callback(5797);
-      const CollectiblesMarketingReleaseType = callback(5853).CollectiblesMarketingReleaseType;
+      const CollectiblesMarketingReleaseType = callback(5851).CollectiblesMarketingReleaseType;
       obj = { release: value ? CollectiblesMarketingReleaseType.BETA : CollectiblesMarketingReleaseType.PROD };
       const collectiblesMarketings = obj.fetchCollectiblesMarketings(obj);
     };

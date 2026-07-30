@@ -1,10 +1,10 @@
-// Module ID: 6755
-// Function ID: 6756
+// Module ID: 6752
+// Function ID: 6753
 // Name: parseMessageEmbedForProps
-// Dependencies: [1218, 6756, 676, 3771, 4377, 1236, 6757, 589, 2]
+// Dependencies: [1218, 6753, 676, 3771, 4377, 1236, 6754, 589, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser
 
-// Module 6755 (parseMessageEmbedForProps)
+// Module 6752 (parseMessageEmbedForProps)
 import fetchFingerprint from "fetchFingerprint";
 import SafetyHubView from "SafetyHubView";
 import ME from "ME";
@@ -97,7 +97,7 @@ export const mapCtaToNativeData = function mapCtaToNativeData(arg0, learn_more_l
   }
 };
 export const isFlaggedContentEmpty = function isFlaggedContentEmpty(first) {
-  let tmp = first.type !== require(6757) /* ContentIdType */.ContentIdType.MESSAGE;
+  let tmp = first.type !== require(6754) /* ContentIdType */.ContentIdType.MESSAGE;
   if (!tmp) {
     let tmp2 = "" === first.content;
     if (tmp2) {

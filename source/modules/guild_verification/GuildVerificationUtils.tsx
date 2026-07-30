@@ -1,10 +1,10 @@
-// Module ID: 12425
-// Function ID: 12426
+// Module ID: 12419
+// Function ID: 12420
 // Name: inviteGuildHasPendingMemberDisabledVerification
-// Dependencies: [4007, 676, 4009, 1222, 9141, 2]
+// Dependencies: [4007, 676, 4009, 1222, 9137, 2]
 // Exports: inviteGuildHasPendingMemberDisabledVerification, openVerificationModalOrTransitionToApplication
 
-// Module 12425 (inviteGuildHasPendingMemberDisabledVerification)
+// Module 12419 (inviteGuildHasPendingMemberDisabledVerification)
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 import ME from "ME";
 
@@ -38,5 +38,5 @@ export const openVerificationModalOrTransitionToApplication = function openVerif
       const tmp2Result = require(1222) /* transitionTo */;
     }
   }
-  const result = require(9141) /* openMemberVerificationModal */.openMemberVerificationModal(id);
+  const result = require(9137) /* openMemberVerificationModal */.openMemberVerificationModal(id);
 };

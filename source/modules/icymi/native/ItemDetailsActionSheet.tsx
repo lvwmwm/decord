@@ -1,10 +1,10 @@
-// Module ID: 15328
-// Function ID: 15329
+// Module ID: 15322
+// Function ID: 15323
 // Name: ItemDetailsActionSheet
-// Dependencies: [19, 17, 1372, 1862, 8170, 21, 4189, 712, 589, 4380, 5145, 5566, 1297, 8184, 5551, 10373, 15329, 5554, 5220, 2]
+// Dependencies: [19, 17, 1372, 1862, 8167, 21, 4189, 712, 589, 4380, 5145, 5566, 1297, 8181, 5551, 10369, 15323, 5554, 5220, 2]
 // Exports: default
 
-// Module 15328 (ItemDetailsActionSheet)
+// Module 15322 (ItemDetailsActionSheet)
 import "set";
 import { View } from "TableRowGroupTitle";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -64,8 +64,8 @@ export default function ItemDetailsActionSheet(arg0) {
     result = null != stateFromStores1;
   }
   if (result) {
-    result = tmp(8184).isChannelCustomScoreEligible(stateFromStores);
-    const tmpResult = tmp(8184);
+    result = tmp(8181).isChannelCustomScoreEligible(stateFromStores);
+    const tmpResult = tmp(8181);
   }
   obj1 = { icon: tmp9, title: tmp6, subtitle: null };
   let str;
@@ -75,14 +75,14 @@ export default function ItemDetailsActionSheet(arg0) {
   if (str == null) {
     str = "";
   }
-  obj2 = { showGradient: true, startExpanded: true, header: tmp16(tmp(10373).ActionSheetIconHeader, obj1), children: null };
+  obj2 = { showGradient: true, startExpanded: true, header: tmp16(tmp(10369).ActionSheetIconHeader, obj1), children: null };
   obj1[2] = str;
   let tmp16Result = result;
   if (result) {
     const obj3 = { channel: null, guild: null };
     obj3[0] = stateFromStores;
     obj3[1] = stateFromStores1;
-    tmp16Result = tmp16(tmp(15329).ChannelScoreSettings, obj3);
+    tmp16Result = tmp16(tmp(15323).ChannelScoreSettings, obj3);
   }
   const items3 = [tmp16Result, , ];
   let tmp15Result = null != stateFromStores2 && null != stateFromStores1;
@@ -96,7 +96,7 @@ export default function ItemDetailsActionSheet(arg0) {
     const items4 = [result, ];
     const obj6 = { guild: null };
     obj6[0] = stateFromStores1;
-    items4[1] = tmp16(tmp(15329).GuildScoreSettings, obj6);
+    items4[1] = tmp16(tmp(15323).GuildScoreSettings, obj6);
     obj5[0] = items4;
     tmp15Result = tmp15(closure_8, obj5);
     const tmp19 = closure_8;

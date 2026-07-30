@@ -1,10 +1,10 @@
-// Module ID: 8064
-// Function ID: 8065
+// Module ID: 8061
+// Function ID: 8062
 // Name: allowableMinInterval
 // Dependencies: [19, 38, 4616, 2]
 // Exports: default
 
-// Module 8064 (allowableMinInterval)
+// Module 8061 (allowableMinInterval)
 import noop from "noop";
 
 const result = require("useMountLayoutEffect").fileFinishedImporting("modules/collectibles/profile_effects/useClock.tsx");

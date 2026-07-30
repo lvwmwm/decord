@@ -1,10 +1,10 @@
-// Module ID: 14473
-// Function ID: 14474
+// Module ID: 14469
+// Function ID: 14470
 // Name: onUpcomingServerEventNotificationSettingsChanged
 // Dependencies: [3829, 676, 3862, 698, 2]
 // Exports: onUpcomingServerEventNotificationSettingsChanged
 
-// Module 14473 (onUpcomingServerEventNotificationSettingsChanged)
+// Module 14469 (onUpcomingServerEventNotificationSettingsChanged)
 import { NotificationSettingsUpdateType as closure_3 } from "AccountNotificationFlags";
 import { AnalyticEvents } from "ME";
 

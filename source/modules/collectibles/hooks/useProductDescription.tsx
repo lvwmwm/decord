@@ -1,10 +1,10 @@
-// Module ID: 8758
-// Function ID: 8759
+// Module ID: 8754
+// Function ID: 8755
 // Name: getBundleDescription
 // Dependencies: [19, 1236, 1901, 2]
 // Exports: useProductDescription
 
-// Module 8758 (getBundleDescription)
+// Module 8754 (getBundleDescription)
 import { useMemo } from "noop";
 
 function getBundleDescription(bundledProducts) {

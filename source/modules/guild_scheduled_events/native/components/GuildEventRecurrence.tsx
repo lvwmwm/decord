@@ -1,10 +1,10 @@
-// Module ID: 8333
-// Function ID: 8334
+// Module ID: 8330
+// Function ID: 8331
 // Name: GuildEventRecurrence
-// Dependencies: [19, 17, 1372, 1862, 5779, 21, 4189, 712, 589, 8215, 8266, 8216, 8210, 1236, 4717, 8225, 4185, 8229, 1297, 8334, 2]
+// Dependencies: [19, 17, 1372, 1862, 5779, 21, 4189, 712, 589, 8212, 8263, 8213, 8207, 1236, 4717, 8222, 4185, 8226, 1297, 8331, 2]
 // Exports: default
 
-// Module 8333 (GuildEventRecurrence)
+// Module 8330 (GuildEventRecurrence)
 import registerAsset from "registerAsset";
 import { View } from "openCreateOrEditGuildEventModal";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -47,7 +47,7 @@ export default function GuildEventRecurrence(recurrenceId) {
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  obj = guildEventId(8215)(recurrenceId, id);
+  obj = guildEventId(8212)(recurrenceId, id);
   let tmp2Result = tmp2(589);
   const items1 = [c6];
   stateFromStores1 = tmp2Result.useStateFromStores(items1, () => {
@@ -67,13 +67,13 @@ export default function GuildEventRecurrence(recurrenceId) {
     return channel.getChannel(channel_id);
   });
   const tmp5 = guildEventId;
-  const tmp6 = guildEventId(8215);
+  const tmp6 = guildEventId(8212);
   if (stateFromStores2 == null) {
     stateFromStores2 = stateFromStores1;
   }
-  ensureGuildLoaded = recurrenceId(8266).useManageResourcePermissions(stateFromStores2).canManageGuildEvent(stateFromStores);
-  const tmp2Result1 = recurrenceId(8266);
-  const eventScheduleById = recurrenceId(8216).useEventScheduleById(guildEventId, recurrenceId);
+  ensureGuildLoaded = recurrenceId(8263).useManageResourcePermissions(stateFromStores2).canManageGuildEvent(stateFromStores);
+  const tmp2Result1 = recurrenceId(8263);
+  const eventScheduleById = recurrenceId(8213).useEventScheduleById(guildEventId, recurrenceId);
   let toISOStringResult;
   if (eventScheduleById != null) {
     const startTime = eventScheduleById.startTime;
@@ -134,7 +134,7 @@ export default function GuildEventRecurrence(recurrenceId) {
     obj2[0] = isActive;
     obj2[1] = stateFromStores;
     obj2[4] = recurrenceId;
-    obj1[5] = callback(tmp2(8225).GuildEventCardHeader, obj2);
+    obj1[5] = callback(tmp2(8222).GuildEventCardHeader, obj2);
     const items5 = [callback(tmp2(4717).PressableOpacity, obj1), ];
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.actions;
@@ -160,7 +160,7 @@ export default function GuildEventRecurrence(recurrenceId) {
     };
     obj5[4] = tmp.secondarySmallButton;
     const obj6 = { source: null, size: null, style: null };
-    obj6[0] = tmp5(8334);
+    obj6[0] = tmp5(8331);
     obj6[1] = tmp2(1297).Icon.Sizes.REFRESH_SMALL_16;
     obj6[2] = tmp.secondarySmallIcon;
     obj5[5] = callback(tmp2(1297).Icon, obj6);
@@ -170,5 +170,5 @@ export default function GuildEventRecurrence(recurrenceId) {
     obj[1] = items5;
     return closure_9(stateFromStores1, obj);
   }
-  const tmp2Result2 = recurrenceId(8216);
+  const tmp2Result2 = recurrenceId(8213);
 };

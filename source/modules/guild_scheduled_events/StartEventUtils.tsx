@@ -1,10 +1,10 @@
-// Module ID: 8337
-// Function ID: 8338
+// Module ID: 8334
+// Function ID: 8335
 // Name: createStageChannelForEvent
-// Dependencies: [5, 1376, 1372, 1862, 1378, 676, 8275, 38, 6723, 8208, 2]
+// Dependencies: [5, 1376, 1372, 1862, 1378, 676, 8272, 38, 6720, 8205, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 8337 (createStageChannelForEvent)
+// Module 8334 (createStageChannelForEvent)
 import ME from "ME";
 import { createChannelRecordFromServer as closure_4 } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -70,7 +70,7 @@ function _createStageChannelForEvent() {
               lib2 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

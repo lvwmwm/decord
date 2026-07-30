@@ -1,9 +1,9 @@
-// Module ID: 7167
-// Function ID: 7168
+// Module ID: 7164
+// Function ID: 7165
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7167 (metadata)
+// Module 7164 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GiftBagGlowSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/f31bf703bbc4641d33d7623316495b7239e7153aec965a2182a6a260c0299274.png";

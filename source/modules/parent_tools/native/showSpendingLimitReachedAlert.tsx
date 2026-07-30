@@ -1,10 +1,10 @@
-// Module ID: 6254
-// Function ID: 6255
+// Module ID: 6251
+// Function ID: 6252
 // Name: isSpendingLimitError
-// Dependencies: [4088, 3857, 6255, 4529, 1236, 5845, 4199, 2]
+// Dependencies: [4088, 3857, 6252, 4529, 1236, 5843, 4199, 2]
 // Exports: isSpendingLimitError, showSpendingLimitReachedAlert
 
-// Module 6254 (isSpendingLimitError)
+// Module 6251 (isSpendingLimitError)
 const result = require("useUserIdsForLinkStatus").fileFinishedImporting("modules/parent_tools/native/showSpendingLimitReachedAlert.tsx");
 
 export const isSpendingLimitError = function isSpendingLimitError(billingError) {
@@ -19,7 +19,7 @@ export const isSpendingLimitError = function isSpendingLimitError(billingError) 
   return tmp3;
 };
 export const showSpendingLimitReachedAlert = function showSpendingLimitReachedAlert() {
-  let obj = activeLinkUserIds(6255);
+  let obj = activeLinkUserIds(6252);
   activeLinkUserIds = obj.getActiveLinkUserIds();
   let obj1 = importDefault(4529);
   obj = { title: null, body: null, isDismissable: true };

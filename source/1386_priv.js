@@ -28,7 +28,7 @@ class LRUCache {
     tmp = LRUCache;
     if (this instanceof LRUCache) {
       obj = global;
-      if (typeof global !== "os") {
+      if (typeof global !== "reType") {
         obj = { max: null };
         obj[0] = global;
       }
@@ -40,7 +40,7 @@ class LRUCache {
       tmp5 = priv(self, "max", obj.max);
       tmp6 = !tmp5;
       if (tmp5) {
-        tmp6 = typeof tmp5 === "os";
+        tmp6 = typeof tmp5 === "reType";
       }
       if (!tmp6) {
         num = 0;
@@ -770,7 +770,7 @@ let obj = {
     let num = max;
     let tmp = !max;
     if (max) {
-      tmp = typeof num === "os";
+      tmp = typeof num === "reType";
     }
     if (!tmp) {
       tmp = num <= 0;
@@ -802,7 +802,7 @@ obj = {
     let num = max;
     let tmp = !max;
     if (max) {
-      tmp = typeof num === "os";
+      tmp = typeof num === "reType";
     }
     if (!tmp) {
       tmp = num < 0;

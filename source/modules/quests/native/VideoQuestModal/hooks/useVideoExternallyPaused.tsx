@@ -1,22 +1,22 @@
-// Module ID: 14181
-// Function ID: 14182
+// Module ID: 14177
+// Function ID: 14178
 // Name: useVideoExternallyPaused
-// Dependencies: [3882, 9300, 4040, 10500, 589, 4530, 500, 2]
+// Dependencies: [3882, 9296, 4040, 10496, 589, 4530, 500, 2]
 // Exports: useVideoExternallyPaused
 
-// Module 14181 (useVideoExternallyPaused)
+// Module 14177 (useVideoExternallyPaused)
 import setContent from "setContent";
 
 const require = arg1;
 const result = require("navigationToRootTabHelper").fileFinishedImporting("modules/quests/native/VideoQuestModal/hooks/useVideoExternallyPaused.tsx");
 
 export const useVideoExternallyPaused = function useVideoExternallyPaused(id, arg1) {
-  const activeContextMenu = require(9300) /* updateContextMenuState */.useActiveContextMenu();
-  const obj = require(9300) /* updateContextMenuState */;
+  const activeContextMenu = require(9296) /* updateContextMenuState */.useActiveContextMenu();
+  const obj = require(9296) /* updateContextMenuState */;
   const openModalKey = require(4040) /* navigationToRootTabHelper */.useOpenModalKey();
   const obj2 = require(4040) /* navigationToRootTabHelper */;
-  const videoQuestModalKey = require(10500) /* getVideoQuestWatchCtaText */.getVideoQuestModalKey(id);
-  const obj3 = require(10500) /* getVideoQuestWatchCtaText */;
+  const videoQuestModalKey = require(10496) /* getVideoQuestWatchCtaText */.getVideoQuestModalKey(id);
+  const obj3 = require(10496) /* getVideoQuestWatchCtaText */;
   const items = [setContent];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => key.getKey());
   const obj4 = require(589) /* initialize */;

@@ -1,10 +1,10 @@
-// Module ID: 15636
-// Function ID: 15637
+// Module ID: 15630
+// Function ID: 15631
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 5945, 3826, 1874, 676, 21, 1297, 4189, 712, 589, 12056, 8816, 12, 1351, 4717, 1236, 4185, 5565, 2]
+// Dependencies: [32, 19, 17, 5943, 3826, 1874, 676, 21, 1297, 4189, 712, 589, 12050, 8812, 12, 1351, 4717, 1236, 4185, 5565, 2]
 // Exports: default
 
-// Module 15636 (UserProfileYourFriendsCard)
+// Module 15630 (UserProfileYourFriendsCard)
 import _slicedToArray from "_slicedToArray";
 import ChevronSmallRightIcon from "ChevronSmallRightIcon";
 import { View } from "getSystemLocale";
@@ -54,9 +54,9 @@ export default function UserProfileYourFriendsCard(arg0) {
   const items1 = [upsertRelationship];
   stateFromStoresArray1 = _require(589).useStateFromStoresArray(items1, () => friendIDs.getFriendIDs());
   const obj2 = _require(589);
-  gameRelationshipsByType = _require(12056).useGameRelationshipsByType(RelationshipTypes.FRIEND);
+  gameRelationshipsByType = _require(12050).useGameRelationshipsByType(RelationshipTypes.FRIEND);
   const effect = stateFromStoresArray1.useEffect(() => {
-    const userAffinitiesV2 = _undefined(8816).fetchUserAffinitiesV2();
+    const userAffinitiesV2 = _undefined(8812).fetchUserAffinitiesV2();
   }, []);
   const items2 = [stateFromStoresArray, stateFromStoresArray1, gameRelationshipsByType];
   const effect1 = stateFromStoresArray1.useEffect(() => {
@@ -95,7 +95,7 @@ export default function UserProfileYourFriendsCard(arg0) {
         let obj = { style: { transform: items }, children: null };
         obj = { translateX: 4 * (closure_1.length - 1 - arg1) };
         items = [obj];
-        obj = { user: id, guildId: "r", size: "mode", cutout: "Array" };
+        obj = { user: id, guildId: "r", size: null, cutout: null };
         obj[2] = outer1_0(outer1_2[8]).AvatarSizes.XSMALL;
         let tmp3;
         if (arg1 < closure_1.length - 1) {

@@ -1,9 +1,9 @@
-// Module ID: 8878
-// Function ID: 8879
+// Module ID: 8874
+// Function ID: 8875
 // Name: generateDisplayableCode
-// Dependencies: [2, 8879, 8880, 8881, 8890]
+// Dependencies: [2, 8875, 8876, 8877, 8886]
 
-// Module 8878 (generateDisplayableCode)
+// Module 8874 (generateDisplayableCode)
 const result = require("_generateKeyFingerprint").fileFinishedImporting("../discord_common/js/packages/libdave/package/src/index.ts");
 
 export const generateDisplayableCode = require("generateDisplayableCode").generateDisplayableCode;

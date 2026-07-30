@@ -1,10 +1,10 @@
-// Module ID: 7292
-// Function ID: 7293
+// Module ID: 7289
+// Function ID: 7290
 // Name: NitroCoinStackSpotIllustration
-// Dependencies: [21, 5141, 7293, 2]
+// Dependencies: [21, 5141, 7290, 2]
 // Exports: NitroCoinStackSpotIllustration
 
-// Module 7292 (NitroCoinStackSpotIllustration)
+// Module 7289 (NitroCoinStackSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroCoinStackSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const NitroCoinStackSpotIllustration = function NitroCoinStackSpotIllustr
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7293);
+  obj[0] = importDefault(7290);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

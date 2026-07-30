@@ -1,10 +1,10 @@
-// Module ID: 7104
-// Function ID: 7105
+// Module ID: 7101
+// Function ID: 7102
 // Name: GameDiversityTier3SmallBadge
-// Dependencies: [21, 5141, 7105, 2]
+// Dependencies: [21, 5141, 7102, 2]
 // Exports: GameDiversityTier3SmallBadge
 
-// Module 7104 (GameDiversityTier3SmallBadge)
+// Module 7101 (GameDiversityTier3SmallBadge)
 import { jsx } from "jsxProd";
 
 const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/GameDiversityTier3SmallBadge.native.tsx");
@@ -28,7 +28,7 @@ export const GameDiversityTier3SmallBadge = function GameDiversityTier3SmallBadg
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7105);
+  obj[0] = importDefault(7102);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

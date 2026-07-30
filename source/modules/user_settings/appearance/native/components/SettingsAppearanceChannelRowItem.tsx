@@ -1,10 +1,10 @@
-// Module ID: 14307
-// Function ID: 14308
+// Module ID: 14303
+// Function ID: 14304
 // Name: ChannelRowItem
-// Dependencies: [19, 17, 676, 21, 4189, 712, 1297, 9094, 4185, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 1297, 9090, 4185, 2]
 // Exports: default
 
-// Module 14307 (ChannelRowItem)
+// Module 14303 (ChannelRowItem)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { StatusTypes } from "ME";
@@ -71,7 +71,7 @@ export default function ChannelRowItem(isUnread) {
     const items2 = [avatar1, avatar2];
     obj1[0] = items2;
     obj1[1] = require(1297) /* Button */.AvatarSizes.LARGE_48;
-    let tmp5Result = tmp5(require(9094) /* FacepileGroupDMAvatar */.FacepileGroupDMAvatar, obj1);
+    let tmp5Result = tmp5(require(9090) /* FacepileGroupDMAvatar */.FacepileGroupDMAvatar, obj1);
     let tmp6 = require;
   } else {
     tmp6 = require;

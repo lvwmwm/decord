@@ -1,10 +1,10 @@
-// Module ID: 9649
-// Function ID: 9650
+// Module ID: 9646
+// Function ID: 9647
 // Name: EmptyStateSticker
-// Dependencies: [32, 19, 17, 5092, 3865, 676, 1876, 21, 4189, 9619, 9635, 5515, 5535, 589, 698, 4185, 1236, 4717, 4158, 4159, 4600, 5141, 9377, 9643, 2]
+// Dependencies: [32, 19, 17, 5092, 3865, 676, 1876, 21, 4189, 9616, 9632, 5515, 5535, 589, 698, 4185, 1236, 4717, 4158, 4159, 4600, 5141, 9373, 9640, 2]
 // Exports: default
 
-// Module 9649 (EmptyStateSticker)
+// Module 9646 (EmptyStateSticker)
 import _slicedToArray from "_slicedToArray";
 import IMPACT_LIGHT from "IMPACT_LIGHT";
 import { View } from "PressableBase";
@@ -22,14 +22,14 @@ let unpackModuleId;
 let require = arg1;
 function EmptyStateSticker(sticker) {
   sticker = sticker.sticker;
-  const animated = require(9619) /* useStickerPackCategories */.useShouldAnimateSticker(sticker.isFocused);
+  const animated = require(9616) /* useStickerPackCategories */.useShouldAnimateSticker(sticker.isFocused);
   let id;
-  const obj = require(9619) /* useStickerPackCategories */;
+  const obj = require(9616) /* useStickerPackCategories */;
   const tmp2 = closure_11;
   if (sticker != null) {
     id = sticker.id;
   }
-  return tmp2(importDefault(9635), { sticker, size: 60, animated }, id);
+  return tmp2(importDefault(9632), { sticker, size: 60, animated }, id);
 }
 ({ AnalyticEvents: metroImportAll, AnalyticsSections: c9 } = ME);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
@@ -41,7 +41,7 @@ export default function _default() {
   let dependencyMap;
   let tmp = callback4();
   const require = tmp;
-  let obj = require(9619) /* useStickerPackCategories */;
+  let obj = require(9616) /* useStickerPackCategories */;
   const fetchStickerPacks = obj.useFetchStickerPacks();
   analyticsLocations = analyticsLocations(5515)(analyticsLocations(5535).EMPTY_STATE).analyticsLocations;
   let obj1 = require(589) /* initialize */;
@@ -118,7 +118,7 @@ export default function _default() {
       return tmp(tmp(outer1_2[17]).PressableOpacity, obj, id);
     })
   };
-  obj5[0] = analyticsLocations(9377);
+  obj5[0] = analyticsLocations(9373);
   obj5[1] = tmp.nitroWheel;
   obj4[0] = callback2(analyticsLocations(5141), obj5);
   const intl3 = require(1236) /* getSystemLocale */.intl;

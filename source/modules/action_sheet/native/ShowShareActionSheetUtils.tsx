@@ -1,10 +1,10 @@
-// Module ID: 8198
-// Function ID: 8199
+// Module ID: 8195
+// Function ID: 8196
 // Name: trackAppClickInNativeShareSheet
-// Dependencies: [676, 698, 8199, 5200, 2]
+// Dependencies: [676, 698, 8196, 5200, 2]
 // Exports: getMediaShareParams, resolveShareFileExtension, trackAppClickInNativeShareSheet
 
-// Module 8198 (trackAppClickInNativeShareSheet)
+// Module 8195 (trackAppClickInNativeShareSheet)
 import { AnalyticEvents } from "ME";
 
 const result = require("apexExperiment").fileFinishedImporting("modules/action_sheet/native/ShowShareActionSheetUtils.tsx");
@@ -21,7 +21,7 @@ export const trackAppClickInNativeShareSheet = function trackAppClickInNativeSha
 export const getMediaShareParams = function getMediaShareParams(source) {
   let contentType;
   let videoURI;
-  let obj = require(8199) /* apexExperiment */;
+  let obj = require(8196) /* apexExperiment */;
   if (obj.getMobileMediaViewerShareExperimentEnabled("shareMediaSource")) {
     if (true !== source.disableDownload) {
       if (true === source.isGIFV) {

@@ -1,10 +1,10 @@
-// Module ID: 15483
-// Function ID: 15484
+// Module ID: 15477
+// Function ID: 15478
 // Name: useSearchMediaSize
-// Dependencies: [9101, 2]
+// Dependencies: [9097, 2]
 // Exports: default
 
-// Module 15483 (useSearchMediaSize)
+// Module 15477 (useSearchMediaSize)
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
 
 let c0;

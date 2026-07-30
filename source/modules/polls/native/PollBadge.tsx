@@ -1,10 +1,10 @@
-// Module ID: 15509
-// Function ID: 15510
+// Module ID: 15503
+// Function ID: 15504
 // Name: PollBadge
-// Dependencies: [19, 17, 21, 4189, 712, 1297, 15510, 4185, 1236, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1297, 15504, 4185, 1236, 2]
 // Exports: default
 
-// Module 15509 (PollBadge)
+// Module 15503 (PollBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ export default function PollBadge(style) {
   items = [tmp.container, style.style];
   obj = { size: null, source: null };
   obj[0] = require(1297) /* Button */.IconSizes.EXTRA_SMALL_10;
-  obj[1] = importDefault(15510);
+  obj[1] = importDefault(15504);
   const items1 = [callback(require(1297) /* Button */.Icon, obj), ];
   obj = { style: tmp.text, variant: "text-xs/semibold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;

@@ -60,7 +60,7 @@ export const withManaTextMigrationHighlight = function withManaTextMigrationHigh
     let obj = { get: null };
     obj[0] = function get(arg0, arg1, arg2) {
       const value = Reflect.get(arg0, arg1, arg2);
-      if (typeof arg1 !== "init") {
+      if (typeof arg1 !== "tee") {
         if (null != value) {
           let obj = callback(table[6]);
           const tmp5 = obj.isThemeLight(theme.theme) ? closure_8 : closure_7;

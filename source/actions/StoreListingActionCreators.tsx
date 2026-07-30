@@ -1,10 +1,10 @@
-// Module ID: 13554
-// Function ID: 13555
+// Module ID: 13549
+// Function ID: 13550
 // Name: fetchStoreListingsForApplications
-// Dependencies: [4226, 4234, 13555, 676, 4427, 530, 709, 6501, 2]
+// Dependencies: [4226, 4234, 13550, 676, 4427, 530, 709, 6498, 2]
 // Exports: fetchAllStoreListingsForApplication, fetchStoreListingForSku, fetchStoreListingsForApplications
 
-// Module 13554 (fetchStoreListingsForApplications)
+// Module 13549 (fetchStoreListingsForApplications)
 import addApplication from "addApplication";
 import addSku from "addSku";
 import addRegularStoreListing from "addRegularStoreListing";
@@ -74,7 +74,7 @@ export const fetchStoreListingForSku = function fetchStoreListingForSku(skuId) {
   const value = addSku.get(skuId);
   let result = null != value;
   if (result) {
-    let obj = _require(6501);
+    let obj = _require(6498);
     result = obj.isTestModeForApplication(value.applicationId);
   }
   const importDefault = result;

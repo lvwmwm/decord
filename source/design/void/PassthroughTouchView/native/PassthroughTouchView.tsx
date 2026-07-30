@@ -1,10 +1,10 @@
-// Module ID: 13161
-// Function ID: 13162
+// Module ID: 13156
+// Function ID: 13157
 // Name: PassthroughTouchView
-// Dependencies: [19, 21, 13162, 2]
+// Dependencies: [19, 21, 13157, 2]
 // Exports: default
 
-// Module 13161 (PassthroughTouchView)
+// Module 13156 (PassthroughTouchView)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -16,5 +16,5 @@ export default function PassthroughTouchView(onTouchDown) {
   const merged1 = Object.assign(merged);
   obj.onTouchDown = onTouchDown.onTouchDown;
   obj.pointerEvents = "box-none";
-  return jsx(importDefault(13162), {});
+  return jsx(importDefault(13157), {});
 };

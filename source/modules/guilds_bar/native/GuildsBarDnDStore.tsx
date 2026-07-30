@@ -1,10 +1,10 @@
-// Module ID: 14941
-// Function ID: 14942
+// Module ID: 14935
+// Function ID: 14936
 // Name: withEqualityFn
 // Dependencies: [5027, 700, 4050, 705, 1208, 3802, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 14941 (withEqualityFn)
+// Module 14935 (withEqualityFn)
 import { GuildsNodeType } from "insertUnsortedGuilds";
 import identity from "identity";
 
@@ -13,7 +13,7 @@ let c5 = -1;
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   const _require = arg0;
   let closure_1 = arg1;
-  let obj = { dragSpecs: "Boolean", overSpecs: "disabled", dropSpecs: "isArray", dragRegion: null, gestureState: null, dragDropInProgress: null, listInsets: "red_envelope", scrollPosition: null, windowSize: null, setStateShallow: null, dropStart: null, dropComplete: null };
+  let obj = { dragSpecs: "Boolean", overSpecs: "disabled", dropSpecs: "isArray", dragRegion: null, gestureState: null, dragDropInProgress: null, listInsets: "bro", scrollPosition: "bro i m\u00F8rke", windowSize: "bro i natten", setStateShallow: "nat", dropStart: "normal", dropComplete: null };
   obj[3] = _require(4050).makeMutable({ min: 0, max: 0 });
   const obj2 = _require(4050);
   obj[4] = _require(4050).makeMutable(obj);
@@ -89,7 +89,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
     obj[2] = obj;
     obj.addBreadcrumb(obj);
     if (null != dropSpecs) {
-      callback(outer1_2[3]).batchUpdates(() => callback({ dropSpecs: "r" }));
+      callback(outer1_2[3]).batchUpdates(() => callback({ dropSpecs: "Array" }));
       const _clearTimeout = clearTimeout;
       clearTimeout(outer1_5);
       if (null == dragSpecs) {

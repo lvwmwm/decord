@@ -1,10 +1,10 @@
-// Module ID: 10304
-// Function ID: 10305
+// Module ID: 10300
+// Function ID: 10301
 // Name: ChannelSettingsNotificationsGuard
-// Dependencies: [19, 1376, 1372, 4110, 3826, 4385, 1874, 676, 21, 1236, 4189, 712, 3901, 4384, 5135, 4157, 10305, 1959, 5130, 4380, 5554, 5220, 10309, 5555, 7655, 7654, 4185, 7634, 4598, 589, 10310, 10311, 2]
+// Dependencies: [19, 1376, 1372, 4110, 3826, 4385, 1874, 676, 21, 1236, 4189, 712, 3901, 4384, 5135, 4157, 10301, 1959, 5130, 4380, 5554, 5220, 10305, 5555, 7652, 7651, 4185, 7631, 4598, 589, 10306, 10307, 2]
 // Exports: default
 
-// Module 10304 (ChannelSettingsNotificationsGuard)
+// Module 10300 (ChannelSettingsNotificationsGuard)
 import importAllResult from "computeChannelName";
 import createChannelRecord from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -217,14 +217,14 @@ prototype["renderMuteSection"] = function renderMuteSection() {
     const obj4 = { muteConfig: null, type: null };
     obj4[0] = props.muteConfig;
     if (channel.type === constants3.GUILD_CATEGORY) {
-      MuteSettingType = tmp(10309).MuteSettingType;
+      MuteSettingType = tmp(10305).MuteSettingType;
       let CHANNEL = MuteSettingType.CATEGORY;
     } else {
-      CHANNEL = tmp(10309).MuteSettingType.CHANNEL;
+      CHANNEL = tmp(10305).MuteSettingType.CHANNEL;
     }
     obj4[1] = CHANNEL;
-    tmp5(importDefault(10309), obj4);
-    const tmp8 = importDefault(10309);
+    tmp5(importDefault(10305), obj4);
+    const tmp8 = importDefault(10305);
   }
 };
 prototype["renderForumSettings"] = function renderForumSettings() {
@@ -266,11 +266,11 @@ prototype["renderNotificationSettings"] = function renderNotificationSettings() 
     tmp5 = require;
     tmp7 = require;
   }
-  const TableRadioGroup = tmp7(7655).TableRadioGroup;
+  const TableRadioGroup = tmp7(7652).TableRadioGroup;
   let obj = { value: state.messageNotifications, onChange: self.handleTypeChange, groupRef: self.radioGroupRef, title: null, hasIcons: false, children: null };
   const intl3 = tmp7(1236).intl;
   obj[3] = intl3.string(tmp7(1236).t.h850Ss);
-  const TableRadioRow = tmp7(7654).TableRadioRow;
+  const TableRadioRow = tmp7(7651).TableRadioRow;
   if (isGuildStageVoiceResult) {
     let tmp22 = muted;
     if (!muted) {
@@ -301,7 +301,7 @@ prototype["renderNotificationSettings"] = function renderNotificationSettings() 
     obj[1] = constants2.ONLY_MENTIONS;
     const intl12 = tmp7(1236).intl;
     obj[2] = intl12.string(tmp7(1236).t["BENn/6"]);
-    items[1] = tmp12(tmp7(7654).TableRadioRow, obj);
+    items[1] = tmp12(tmp7(7651).TableRadioRow, obj);
     if (!muted) {
       muted = guildMuted;
     }
@@ -310,7 +310,7 @@ prototype["renderNotificationSettings"] = function renderNotificationSettings() 
     obj1[1] = constants2.NO_MESSAGES;
     const intl13 = tmp7(1236).intl;
     obj1[2] = intl13.string(tmp7(1236).t.CtVGyQ);
-    items[2] = tmp12(tmp7(7654).TableRadioRow, obj1);
+    items[2] = tmp12(tmp7(7651).TableRadioRow, obj1);
     obj[5] = items;
     let tmp11Result = tmp11(TableRadioGroup, obj);
   } else {
@@ -352,7 +352,7 @@ prototype["renderNotificationSettings"] = function renderNotificationSettings() 
     }
     obj3[2] = stringResult3;
     obj3[3] = constants2.ALL_MESSAGES;
-    items1[1] = tmp12(tmp7(7654).TableRadioRow, obj3);
+    items1[1] = tmp12(tmp7(7651).TableRadioRow, obj3);
     const obj4 = { label: null, disabled: null, value: null };
     const intl8 = tmp7(1236).intl;
     obj4[0] = intl8.format(tmp7(1236).t.L2hmYy, {});
@@ -362,7 +362,7 @@ prototype["renderNotificationSettings"] = function renderNotificationSettings() 
     }
     obj4[1] = tmp19;
     obj4[2] = constants2.ONLY_MENTIONS;
-    items1[2] = tmp12(tmp7(7654).TableRadioRow, obj4);
+    items1[2] = tmp12(tmp7(7651).TableRadioRow, obj4);
     const obj5 = { label: null, disabled: null, value: null };
     const intl9 = tmp7(1236).intl;
     obj5[0] = intl9.string(tmp7(1236).t.CtVGyQ);
@@ -372,7 +372,7 @@ prototype["renderNotificationSettings"] = function renderNotificationSettings() 
     }
     obj5[1] = tmp20;
     obj5[2] = constants2.NO_MESSAGES;
-    items1[3] = tmp12(tmp7(7654).TableRadioRow, obj5);
+    items1[3] = tmp12(tmp7(7651).TableRadioRow, obj5);
     obj[5] = items1;
     tmp11Result = tmp11(TableRadioGroup, obj);
   }
@@ -429,7 +429,7 @@ prototype["render"] = function render() {
     items[3] = tmp5;
     obj3[2] = items;
     obj2[1] = closure_18(require(4598) /* Stack */.Stack, obj3);
-    tmp9Result = tmp9(require(7634) /* Form */.Form, obj2);
+    tmp9Result = tmp9(require(7631) /* Form */.Form, obj2);
     const tmp12 = closure_18;
   }
   return tmp9Result;
@@ -444,7 +444,7 @@ export default function ChannelSettingsNotificationsSplit(arg0) {
   let obj = dependencyMap;
   const items = [ensureGuildLoaded];
   const stateFromStores = _require(589).useStateFromStores(items, () => outer1_6.getChannel(channelId.channelId));
-  _require(10310);
+  _require(10306);
   if (null == stateFromStores) {
     return null;
   } else {
@@ -456,7 +456,7 @@ export default function ChannelSettingsNotificationsSplit(arg0) {
     obj = { channel: null };
     obj[0] = stateFromStores;
     merged1 = Object.assign(merged1);
-    tmp11 = callback2(importDefault(10311), obj);
-    const tmp14 = importDefault(10311);
+    tmp11 = callback2(importDefault(10307), obj);
+    const tmp14 = importDefault(10307);
   }
 };

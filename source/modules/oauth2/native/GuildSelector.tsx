@@ -1,10 +1,10 @@
-// Module ID: 9015
-// Function ID: 9016
+// Module ID: 9011
+// Function ID: 9012
 // Name: styles
-// Dependencies: [19, 17, 676, 21, 4189, 712, 4157, 8246, 1959, 1236, 506, 4185, 1297, 7634, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 4157, 8243, 1959, 1236, 506, 4185, 1297, 7631, 2]
 // Exports: default
 
-// Module 9015 (styles)
+// Module 9011 (styles)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { Permissions } from "ME";
@@ -73,7 +73,7 @@ export default function GuildSelector(disabled) {
     const intl2 = tmp7(1236).intl;
     name = intl2.string(tmp7(1236).t.oM4E1A);
   }
-  items1[2] = callback(selectedGuildId(7634).FormRow, { label: name, disabled: disabled.disabled, trailing: callback(selectedGuildId(7634).FormRow.Arrow, {}), DEPRECATED_style: tmp.select, onPress: callback });
+  items1[2] = callback(selectedGuildId(7631).FormRow, { label: name, disabled: disabled.disabled, trailing: callback(selectedGuildId(7631).FormRow.Arrow, {}), DEPRECATED_style: tmp.select, onPress: callback });
   const obj2 = { style: tmp.label, children: null };
   const intl3 = tmp7(1236).intl;
   obj2[1] = intl3.format(selectedGuildId(1236).t.t9Jm9o, {});

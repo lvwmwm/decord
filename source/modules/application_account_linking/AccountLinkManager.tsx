@@ -1,10 +1,10 @@
-// Module ID: 15769
-// Function ID: 15770
+// Module ID: 15763
+// Function ID: 15764
 // Name: _claimIncentivizedAccountLinkingReward
-// Dependencies: [32, 5, 5123, 15770, 676, 687, 530, 5134, 2]
+// Dependencies: [32, 5, 5123, 15764, 676, 687, 530, 5134, 2]
 // Exports: claimIncentivizedAccountLinkingReward
 
-// Module 15769 (_claimIncentivizedAccountLinkingReward)
+// Module 15763 (_claimIncentivizedAccountLinkingReward)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
@@ -60,7 +60,7 @@ function _claimIncentivizedAccountLinkingReward() {
               ({ applicationId: c0, onSuccess: c1, onError: c2 } = callback);
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {

@@ -1,13 +1,13 @@
-// Module ID: 16047
-// Function ID: 16048
+// Module ID: 16041
+// Function ID: 16042
 // Name: linkFromAppsFlyer
-// Dependencies: [32, 5, 16048, 16098, 17, 16118, 1947, 1931, 6328, 5720, 16119, 676, 9, 3, 16730, 5748, 16731, 10982, 589, 705, 1210, 16733, 13247, 500, 10, 16734, 10610, 709, 16735, 4053, 5731, 1208, 16736, 16737, 10694, 595, 698, 502, 1923, 5700, 1958, 1274, 16738, 1959, 8167, 16740, 13455, 5958, 16758, 16759, 16760, 16761, 9899, 5744, 5732, 4042, 1302, 4181, 1348, 13503, 15784, 15785, 707, 13244, 5719, 13508, 13521, 5921, 16763, 5273, 5721, 5732, 2]
+// Dependencies: [32, 5, 16042, 16092, 17, 16112, 1947, 1931, 6325, 5720, 16113, 676, 9, 3, 16724, 5748, 16725, 10978, 589, 705, 1210, 16727, 13242, 500, 10, 16728, 10606, 709, 16729, 4053, 5731, 1208, 16730, 16731, 10690, 595, 698, 502, 1923, 5700, 1958, 1274, 16732, 1959, 8164, 16734, 13450, 5956, 16752, 16753, 16754, 16755, 9896, 5744, 5732, 4042, 1302, 4181, 1348, 13498, 15778, 15779, 707, 13239, 5719, 13503, 13516, 5919, 16757, 5273, 5721, 5732, 2]
 // Exports: init, initHeadlessTask
 
-// Module 16047 (linkFromAppsFlyer)
+// Module 16041 (linkFromAppsFlyer)
 import onStageConnectionError from "onStageConnectionError";
 import closure_5 from "timestamp";
-import module_16048 from "module_16048";
+import module_16042 from "module_16042";
 import isAnalyticsEndpoint from "isAnalyticsEndpoint";
 import get_ActivityIndicator from "BundleUpdaterManager";
 import timestamp from "timestamp";
@@ -15,7 +15,7 @@ import { subscribeToIntlLoadingSuccess as closure_11 } from "_setAppLocale";
 import handleConnectionOpen from "handleConnectionOpen";
 import getState from "getState";
 import result from "result";
-import module_16119 from "module_16119";
+import module_16113 from "module_16113";
 import ME from "ME";
 import { loadImports } from "result";
 import { loadIndex } from "result";
@@ -113,7 +113,7 @@ function _getInitialURLs() {
               if (null != closure_1) {
                 if (null != closure_1.url) {
                   if (callback(closure_1.url)) {
-                    let push = arr(16730).DeeplinkSource;
+                    let push = arr(16724).DeeplinkSource;
                     if (closure_1.isDeferred) {
                       let AppsFlyer = push.AppsFlyerDeferred;
                     } else {
@@ -128,7 +128,7 @@ function _getInitialURLs() {
                   } else {
                     const obj4 = { url: null, source: null };
                     obj4[0] = closure_1.url;
-                    obj4[1] = arr(16730).DeeplinkSource.OS;
+                    obj4[1] = arr(16724).DeeplinkSource.OS;
                     arr = arr.push(obj4);
                     dependencyMap = 3;
                   }
@@ -148,7 +148,7 @@ function _getInitialURLs() {
             if (null != dependencyMap) {
               const obj6 = { url: null, source: null };
               obj6[0] = dependencyMap;
-              obj6[1] = arr(16730).DeeplinkSource.ReactNativeLinking;
+              obj6[1] = arr(16724).DeeplinkSource.ReactNativeLinking;
               arr.push(obj6);
             }
           }
@@ -569,7 +569,7 @@ function _initializeIntl() {
               callback = undefined;
               paths = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -744,7 +744,7 @@ function _init(_payload) {
                 throwTypeErrorResult = outer1_0;
                 throwTypeErrorResult = c3;
                 throwTypeErrorResult = outer1_0(500).isAndroid();
-                let _Promise6 = outer1_0(8167);
+                let _Promise6 = outer1_0(8164);
                 if (throwTypeErrorResult) {
                   throwTypeErrorResult = _Promise6.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
                 } else {
@@ -766,7 +766,7 @@ function _init(_payload) {
                 throwTypeErrorResult = outer1_1;
                 throwTypeErrorResult = c3;
                 const obj15 = outer1_0(500);
-                const initialNotification = outer1_1(10694).getInitialNotification();
+                const initialNotification = outer1_1(10690).getInitialNotification();
                 items[1] = initialNotification.catch(() => null);
                 throwTypeErrorResult = outer1_28;
                 items[2] = outer1_28();
@@ -777,13 +777,13 @@ function _init(_payload) {
                 num2 = outer1_0(1959);
                 throwTypeErrorResult = c3;
                 throwTypeErrorResult = c3;
-                const obj16 = outer1_1(10694);
-                throwTypeErrorResult = num2(16740, c3.paths).then((arg0) => arg0.default());
+                const obj16 = outer1_1(10690);
+                throwTypeErrorResult = num2(16734, c3.paths).then((arg0) => arg0.default());
                 items[4] = throwTypeErrorResult;
                 throwTypeErrorResult = Promise.all(items);
                 v0 = 1;
                 c3 = 1;
-                const num2Result = num2(16740, c3.paths);
+                const num2Result = num2(16734, c3.paths);
               } else {
                 throwTypeErrorResult = outer1_1;
                 throwTypeErrorResult = c3;
@@ -820,12 +820,12 @@ function _init(_payload) {
                 throwTypeErrorResult = callback;
                 throwTypeErrorResult = c3;
                 if (obj19.isAndroid()) {
-                  if (callback(13455).isTTITest) {
+                  if (callback(13450).isTTITest) {
                     throwTypeErrorResult = callback;
                     throwTypeErrorResult = onStorageInitialize;
                     throwTypeErrorResult = outer1_0;
                     throwTypeErrorResult = c3;
-                    outer1_6 = outer1_0(5958).default;
+                    outer1_6 = outer1_0(5956).default;
                     throwTypeErrorResult = outer1_6;
                     v0 = 2;
                     c3 = 1;
@@ -861,9 +861,9 @@ function _init(_payload) {
               throwTypeErrorResult = dependencyMap;
               closure_16 = 5.default;
               throwTypeErrorResult = dependencyMap;
-              closure_17 = 16048.default;
+              closure_17 = 16042.default;
               throwTypeErrorResult = dependencyMap;
-              closure_18 = 16098.default;
+              closure_18 = 16092.default;
               throwTypeErrorResult = dependencyMap;
               closure_19 = 17;
               throwTypeErrorResult = closure_16;
@@ -936,10 +936,10 @@ function _init(_payload) {
                 closure_20.verbose("Flux has initialized");
               });
             }
-            outer1_1(16759)();
-            const result1 = outer1_0(16760).setupLibdiscoreTimersMonitor();
-            const obj7 = outer1_0(16760);
-            const result2 = outer1_0(16761).installRNGHMountReactionsBridge();
+            outer1_1(16753)();
+            const result1 = outer1_0(16754).setupLibdiscoreTimersMonitor();
+            const obj7 = outer1_0(16754);
+            const result2 = outer1_0(16755).installRNGHMountReactionsBridge();
             const item = outer1_4.forEach((url) => {
               url = url.url;
               onStorageInitialize(paths[15])("handleURL", () => callback(table[16])).default(url, true);
@@ -973,8 +973,8 @@ function _init(_payload) {
                 throwTypeErrorResult = callback;
                 throwTypeErrorResult = c3;
                 obj4[3] = callback(5744).INITIAL_MESSAGE_FETCH_KEY;
-                throwTypeErrorResult = onStorageInitialize(9899).fetchMessages(obj4);
-                const obj9 = onStorageInitialize(9899);
+                throwTypeErrorResult = onStorageInitialize(9896).fetchMessages(obj4);
+                const obj9 = onStorageInitialize(9896);
               }
             }
             throwTypeErrorResult = callback;
@@ -1001,7 +1001,7 @@ function _init(_payload) {
             outer1_12 = null;
             throwTypeErrorResult = v0;
             throwTypeErrorResult = c3;
-            const obj8 = outer1_0(16761);
+            const obj8 = outer1_0(16755);
             if (null != obj11.getToken()) {
               throwTypeErrorResult = callback;
               items2.Promise.resolve();
@@ -1011,7 +1011,7 @@ function _init(_payload) {
               throwTypeErrorResult = onStorageInitialize;
               throwTypeErrorResult = outer1_0;
               throwTypeErrorResult = c3;
-              getState = outer1_0(13244);
+              getState = outer1_0(13239);
               throwTypeErrorResult = getState;
               throwTypeErrorResult = getState.beginLoadedExperimentsTimeout();
               throwTypeErrorResult = getState;
@@ -1037,22 +1037,22 @@ function _init(_payload) {
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2[1] = outer1_0(1959)(13508, c3.paths);
+            items2[1] = outer1_0(1959)(13503, c3.paths);
             throwTypeErrorResult = outer1_0;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2[2] = outer1_0(1959)(13521, c3.paths);
+            items2[2] = outer1_0(1959)(13516, c3.paths);
             throwTypeErrorResult = outer1_0;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2[3] = outer1_0(1959)(5921, c3.paths);
+            items2[3] = outer1_0(1959)(5919, c3.paths);
             throwTypeErrorResult = outer1_0;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2[4] = outer1_0(1959)(16763, c3.paths);
+            items2[4] = outer1_0(1959)(16757, c3.paths);
             throwTypeErrorResult = outer1_7;
             items2[5] = outer1_7;
             throwTypeErrorResult = items2.Promise.all(items2);
@@ -1228,7 +1228,7 @@ const promise = new Promise((arg0) => {
 });
 loadIndex.recordEnd();
 const tmp10 = new require("isAnalyticsEndpoint")("index.native.tsx");
-result = require("module_16048").fileFinishedImporting("modules/app_startup/native/NativeAppStartup.tsx");
+result = require("module_16042").fileFinishedImporting("modules/app_startup/native/NativeAppStartup.tsx");
 
 export const applicationReady = future;
 export const init = function init() {

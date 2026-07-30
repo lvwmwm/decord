@@ -1,10 +1,10 @@
-// Module ID: 15081
-// Function ID: 15082
+// Module ID: 15075
+// Function ID: 15076
 // Name: formatVoiceActivityTitle
-// Dependencies: [19, 17, 5945, 1874, 4205, 14311, 676, 21, 4189, 698, 10879, 1959, 15064, 14312, 4715, 12032, 15074, 7848, 589, 12, 1351, 4379, 1236, 2]
+// Dependencies: [19, 17, 5943, 1874, 4205, 14307, 676, 21, 4189, 698, 10875, 1959, 15058, 14308, 4715, 12026, 15068, 7845, 589, 12, 1351, 4379, 1236, 2]
 // Exports: useVoiceChannelUsers
 
-// Module 15081 (formatVoiceActivityTitle)
+// Module 15075 (formatVoiceActivityTitle)
 import importAllResult from "apply";
 import { View } from "apexExperiment";
 import recomputeAffinities from "recomputeAffinities";
@@ -136,8 +136,8 @@ const result = require("recomputeAffinities").fileFinishedImporting("modules/mai
 export default memoResult;
 export const useVoiceChannelUsers = function useVoiceChannelUsers(channelId) {
   const _require = channelId;
-  const voiceUserAffinitySortType = _require(7848).useVoiceUserAffinitySortType("useVoiceChannelUsers");
-  const obj = _require(7848);
+  const voiceUserAffinitySortType = _require(7845).useVoiceUserAffinitySortType("useVoiceChannelUsers");
+  const obj = _require(7845);
   const items = [updateVoiceState, mergeGuildAvatar, recomputeAffinities];
   const items1 = [voiceUserAffinitySortType, channelId.channelId];
   return _require(589).useStateFromStoresArray(items, () => {

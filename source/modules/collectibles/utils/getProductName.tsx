@@ -1,10 +1,10 @@
-// Module ID: 8726
-// Function ID: 8727
+// Module ID: 8722
+// Function ID: 8723
 // Name: getProductName
 // Dependencies: [1236, 5809, 1901, 2]
 // Exports: getProductName, getProductNameAndTypeLabel, getPurchasedProductName
 
-// Module 8726 (getProductName)
+// Module 8722 (getProductName)
 const result = require("CollectiblesItemType").fileFinishedImporting("modules/collectibles/utils/getProductName.tsx");
 
 export const getProductName = function getProductName(product) {

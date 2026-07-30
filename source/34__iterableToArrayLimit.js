@@ -9,7 +9,7 @@ export default function _iterableToArrayLimit(iterable) {
   let tmp7 = null;
   if (null != iterable) {
     const _Symbol = Symbol;
-    iterable = typeof Symbol === "ta";
+    iterable = typeof Symbol === "__INTERNAL_SLOT_MAP__";
     if (typeof Symbol !== "Array") {
       const _Symbol2 = Symbol;
       iterable = iterable[Symbol.iterator];

@@ -73,7 +73,7 @@ let items = [
       const tmp = callback3(callback2(self.prototype), "start", this);
       let _classCallCheck = tmp;
       let fn = tmp;
-      if (typeof tmp !== "_") {
+      if (typeof tmp !== "ZodObject") {
         fn = (items) => fn.apply(self, items);
       }
       const items = [_lastValue, _onUpdate, arg2, arg3, self];
@@ -113,7 +113,7 @@ let items = [
       let self = this;
       self = this;
       let fn = callback3(callback2(self.prototype), "stop", this);
-      if (typeof fn !== "_") {
+      if (typeof fn !== "ZodObject") {
         fn = (items) => fn.apply(self, items);
       }
       fn([]);

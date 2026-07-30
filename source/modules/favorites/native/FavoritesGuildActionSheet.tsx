@@ -1,10 +1,10 @@
-// Module ID: 15121
-// Function ID: 15122
+// Module ID: 15115
+// Function ID: 15116
 // Name: FavoritesGuildActionSheet
-// Dependencies: [19, 21, 15122, 15123, 5551, 5242, 1236, 5553, 5175, 9214, 4157, 4148, 2]
+// Dependencies: [19, 21, 15116, 15117, 5551, 5242, 1236, 5553, 5175, 9210, 4157, 4148, 2]
 // Exports: openFavoritesGuildActionSheet
 
-// Module 15121 (FavoritesGuildActionSheet)
+// Module 15115 (FavoritesGuildActionSheet)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -12,9 +12,9 @@ let c3;
 let c4;
 let require = arg1;
 function FavoritesGuildActionSheet() {
-  const tmp2 = importDefault(15122)();
+  const tmp2 = importDefault(15116)();
   const require = tmp2;
-  const tmp3 = importDefault(15123)();
+  const tmp3 = importDefault(15117)();
   importDefault = tmp3;
   let obj = { header: null, children: null };
   obj = { title: null };
@@ -25,7 +25,7 @@ function FavoritesGuildActionSheet() {
   if (tmp2.isPreview) {
     let EyeSlashIcon = tmp5(5175).XSmallIcon;
   } else {
-    EyeSlashIcon = tmp5(9214).EyeSlashIcon;
+    EyeSlashIcon = tmp5(9210).EyeSlashIcon;
   }
   obj[2] = callback(require(5553) /* ActionSheetRowIcon */.ActionSheetRow.Icon, { IconComponent: EyeSlashIcon });
   let str = "danger";

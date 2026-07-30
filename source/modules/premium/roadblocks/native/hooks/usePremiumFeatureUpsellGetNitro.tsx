@@ -1,10 +1,10 @@
-// Module ID: 6210
-// Function ID: 6211
+// Module ID: 6207
+// Function ID: 6208
 // Name: usePremiumFeatureUpsellGetNitro
-// Dependencies: [32, 19, 3841, 6211, 1876, 676, 5515, 6216, 4509, 6504, 3889, 1236, 4048, 2]
+// Dependencies: [32, 19, 3841, 6208, 1876, 676, 5515, 6213, 4509, 6501, 3889, 1236, 4048, 2]
 // Exports: default
 
-// Module 6210 (usePremiumFeatureUpsellGetNitro)
+// Module 6207 (usePremiumFeatureUpsellGetNitro)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import reset from "reset";
@@ -45,7 +45,7 @@ export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) 
           obj[0] = obj;
           obj[1] = analyticsLocations;
           obj[2] = callback ? outer1_8.TIER_0 : outer1_8.TIER_2;
-          callback2(6216)(obj, dependencyMap);
+          callback2(6213)(obj, dependencyMap);
         }
       }
     }
@@ -62,8 +62,8 @@ export default function usePremiumFeatureUpsellGetNitro(arg0, arg1, arg2, arg3) 
         if (isFetchingOfferResult) {
           let resolved1 = Promise.resolve();
         } else {
-          resolved1 = callback(6504).fetchUserOffer("usePremiumFeatureUpsellGetNitro");
-          const obj3 = callback(6504);
+          resolved1 = callback(6501).fetchUserOffer("usePremiumFeatureUpsellGetNitro");
+          const obj3 = callback(6501);
         }
         items[1] = resolved1;
         const allPromises = Promise.all(items);

@@ -1,9 +1,9 @@
-// Module ID: 15897
-// Function ID: 15898
+// Module ID: 15891
+// Function ID: 15892
 // Name: SoundButtonEmoji
-// Dependencies: [19, 17, 1874, 15891, 21, 4050, 4189, 712, 500, 4717, 4599, 5206, 11128, 15898, 589, 15899, 5515, 5535, 10776, 3835, 6199, 6201, 3890, 10861, 1236, 15901, 4185, 4709, 2]
+// Dependencies: [19, 17, 1874, 15885, 21, 4050, 4189, 712, 500, 4717, 4599, 5206, 11124, 15892, 589, 15893, 5515, 5535, 10772, 3835, 6196, 6198, 3890, 10857, 1236, 15895, 4185, 4709, 2]
 
-// Module 15897 (SoundButtonEmoji)
+// Module 15891 (SoundButtonEmoji)
 import importAllResult from "getPremiumPlanItem";
 import { View } from "QUICK_SWITCHER";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -121,7 +121,7 @@ function SoundButtonEmoji(arg0) {
   items = [tmp.emojiWrapper, animatedStyle];
   const obj3 = { style: obj4.useAnimatedStyle(fn2), children: null };
   obj4 = { fastImageStyle: tmp.emoji, textEmojiStyle: tmp.emoji, src: null, name: null };
-  obj4[2] = importDefault(11128)(sound, 24);
+  obj4[2] = importDefault(11124)(sound, 24);
   let str = sound.emojiName;
   if (str == null) {
     str = "";

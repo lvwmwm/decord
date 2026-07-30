@@ -1,9 +1,9 @@
-// Module ID: 15978
-// Function ID: 15979
+// Module ID: 15972
+// Function ID: 15973
 // Name: StreamIcon
-// Dependencies: [19, 17, 4181, 1371, 4208, 4261, 10038, 10036, 10041, 676, 4207, 21, 4050, 1297, 4189, 712, 1348, 10037, 15934, 15979, 10855, 15980, 15932, 10773, 8861, 5568, 6730, 1236, 8862, 4599, 15930, 4369, 4253, 10609, 15861, 15981, 15982, 589, 15964, 7679, 15983, 3901, 4586, 5515, 8359, 8873, 4419, 8383, 4185, 8452, 8926, 15907, 2]
+// Dependencies: [19, 17, 4181, 1371, 4208, 4261, 10034, 10032, 10037, 676, 4207, 21, 4050, 1297, 4189, 712, 1348, 10033, 15928, 15973, 10851, 15974, 15926, 10769, 8857, 5568, 6727, 1236, 8858, 4599, 15924, 4369, 4253, 10605, 15855, 15975, 15976, 589, 15958, 7676, 15977, 3901, 4586, 5515, 8356, 8869, 4419, 8380, 4185, 8449, 8922, 15901, 2]
 
-// Module 15978 (StreamIcon)
+// Module 15972 (StreamIcon)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "dismissPanel";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -33,7 +33,7 @@ const require = arg1;
 function StreamIcon(voicePlatform) {
   voicePlatform = voicePlatform.voicePlatform;
   let controlsSpecs;
-  controlsSpecs = importAllResult.useContext(importDefault(10037)).controlsSpecs;
+  controlsSpecs = importAllResult.useContext(importDefault(10033)).controlsSpecs;
   let obj = controlsSpecs(4050);
   const fn = function o() {
     const tmp = controlsSpecs.get().mode === outer1_11.HIDDEN;
@@ -54,13 +54,13 @@ function StreamIcon(voicePlatform) {
   fn.__workletHash = 3270040588948;
   fn.__initData = closure_23;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let source = importDefault(15934);
+  let source = importDefault(15928);
   if (voicePlatform === constants2.XBOX) {
-    source = tmp(15979);
+    source = tmp(15973);
   } else if (voicePlatform === tmp6.MOBILE) {
-    source = tmp(10855);
+    source = tmp(10851);
   } else if (voicePlatform === tmp6.QUEST) {
-    source = tmp(15980);
+    source = tmp(15974);
   }
   const style = [callback2(importDefault(1348)("VoicePanelCardFloatingControls")).iconWithoutBackground, animatedStyle];
   return callback(closure_19, { source, style });
@@ -69,28 +69,28 @@ function AnimatedLabelIcon(icon) {
   icon = icon.icon;
   const tmp3 = callback2(importDefault(1348)("VoicePanelCardFloatingControls"));
   const type = icon.type;
-  if (require(15932) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.STREAM_ICON === type) {
+  if (require(15926) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.STREAM_ICON === type) {
     let obj = { voicePlatform: null };
     obj[0] = icon.voicePlatform;
     return callback(StreamIcon, obj);
-  } else if (tmp4(15932).VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
+  } else if (tmp4(15926).VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
     obj = { style: null, hitSlop: 12, onPress: null, children: null };
     obj[0] = tmp3.speakerMuteIcon;
     obj[2] = icon.onPress;
     const obj1 = { style: null };
     obj1[0] = tmp3.iconWithoutBackground;
-    obj[3] = callback(tmp4(10773).VoiceXIcon, obj1);
+    obj[3] = callback(tmp4(10769).VoiceXIcon, obj1);
     return callback(Pressable, obj);
-  } else if (tmp4(15932).VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
+  } else if (tmp4(15926).VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
     const obj2 = { style: null, onPress: null, children: null };
     obj2[0] = tmp3.iconContainer;
     obj2[1] = icon.onPress;
     const obj3 = { style: null, state: null };
     obj3[0] = tmp3.icon;
     obj3[1] = icon.videoIconState;
-    obj2[2] = callback(tmp4(8861).VideoIcon, obj3);
+    obj2[2] = callback(tmp4(8857).VideoIcon, obj3);
     return callback(Pressable, obj2);
-  } else if (tmp4(15932).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
+  } else if (tmp4(15926).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
     const obj4 = { style: null, children: null };
     obj4[0] = tmp3.iconContainer;
     const obj5 = { onPress: null, hitSlop: 12, children: null };
@@ -98,16 +98,16 @@ function AnimatedLabelIcon(icon) {
     const obj6 = { style: null, state: null, alwaysWhite: true };
     obj6[0] = tmp3.icon;
     obj6[1] = icon.muteDeafenIconState;
-    obj5[2] = callback(tmp4(8861).MuteDeafenIcon, obj6);
+    obj5[2] = callback(tmp4(8857).MuteDeafenIcon, obj6);
     obj4[1] = callback(Pressable, obj5);
     return callback(tmp(5568), obj4);
-  } else if (tmp4(15932).VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
+  } else if (tmp4(15926).VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
     obj = { style: null, onPress: null, children: null };
     obj[0] = tmp3.iconContainer;
     obj[1] = icon.onPress;
     const obj7 = { size: "xs", color: null };
     obj7[1] = tmp(712).colors.TEXT_FEEDBACK_WARNING;
-    obj[2] = callback(tmp4(6730).CircleErrorIcon, obj7);
+    obj[2] = callback(tmp4(6727).CircleErrorIcon, obj7);
     return callback(Pressable, obj);
   }
 }
@@ -157,7 +157,7 @@ let closure_27 = importAllResult.memo((participant) => {
   controlsHidden = participant.controlsHidden;
   let guildId;
   ({ isSelf, layout } = participant);
-  guildId = importAllResult.useContext(guildId(10037)).guildId;
+  guildId = importAllResult.useContext(guildId(10033)).guildId;
   let obj = controlsHidden(4050);
   const fn = function n() {
     const value = controlsHidden.get();
@@ -204,13 +204,13 @@ let closure_27 = importAllResult.memo((participant) => {
     }
   }, items);
   obj = { icon: null, onPress: null, style: null, layout: null, accessibilityLabel: null };
-  obj[0] = guildId(15981);
+  obj[0] = guildId(15975);
   obj[1] = callback;
   obj[2] = animatedStyle;
   obj[3] = layout;
   const tmp3 = closure_16;
-  const tmp4 = guildId(15861);
-  const result = controlsHidden(15930).isStableActivityParticipant(participant);
+  const tmp4 = guildId(15855);
+  const result = controlsHidden(15924).isStableActivityParticipant(participant);
   const intl = controlsHidden(1236).intl;
   const string = intl.string;
   const t = controlsHidden(1236).t;

@@ -1,10 +1,10 @@
-// Module ID: 12527
-// Function ID: 12528
+// Module ID: 12521
+// Function ID: 12522
 // Name: ManagePlanHeader
-// Dependencies: [5, 32, 19, 17, 3836, 1874, 3837, 3840, 3841, 5849, 6328, 5672, 676, 5182, 4172, 1876, 21, 3, 4189, 712, 1480, 4717, 5147, 4185, 1236, 5030, 1348, 5515, 6547, 5535, 589, 3901, 4035, 691, 4509, 5503, 6295, 6552, 698, 3835, 38, 5669, 12528, 12529, 6522, 6532, 6313, 4600, 6511, 6557, 6551, 4705, 9323, 12445, 1945, 5222, 4611, 1297, 6628, 1581, 6560, 5848, 4616, 6301, 7841, 12491, 12468, 1414, 4589, 6505, 6506, 6558, 12506, 2]
+// Dependencies: [5, 32, 19, 17, 3836, 1874, 3837, 3840, 3841, 5847, 6325, 5672, 676, 5182, 4172, 1876, 21, 3, 4189, 712, 1480, 4717, 5147, 4185, 1236, 5030, 1348, 5515, 6544, 5535, 589, 3901, 4035, 691, 4509, 5503, 6292, 6549, 698, 3835, 38, 5669, 12522, 12523, 6519, 6529, 6310, 4600, 6508, 6554, 6548, 4705, 9319, 12439, 1945, 5222, 4611, 1297, 6625, 1581, 6557, 5846, 4616, 6298, 7838, 12485, 12462, 1414, 4589, 6502, 6503, 6555, 12500, 2]
 // Exports: default
 
-// Module 12527 (ManagePlanHeader)
+// Module 12521 (ManagePlanHeader)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
 import Themes from "Themes";
@@ -489,7 +489,7 @@ function FractionalPremiumCredits(durationText) {
   if (showPremiumFeaturesCard) {
     obj = { premiumType: null, forFractionalPremium: true, hideButton: true };
     obj[0] = closure_27.TIER_2;
-    showPremiumFeaturesCard = callback3(tmp(9323), obj);
+    showPremiumFeaturesCard = callback3(tmp(9319), obj);
   }
   const items = [showPremiumFeaturesCard, ];
   obj = { style: tmp3.extraInfoContainer, children: null };
@@ -518,7 +518,7 @@ function FractionalPremiumCredits(durationText) {
   const obj8 = { children: null };
   const obj9 = { color: null, source: null, size: null };
   obj9[0] = importDefault(712).unsafe_rawColors.WHITE;
-  obj9[1] = importDefault(6628);
+  obj9[1] = importDefault(6625);
   obj9[2] = require(1297) /* Button */.IconSizes.LARGE;
   obj8[0] = callback3(require(1297) /* Button */.Icon, obj9);
   obj6[4] = callback3(closure_8, obj8);
@@ -695,7 +695,7 @@ export default function PremiumManagePlan() {
   const tmp = createCacheKey();
   const rect = importDefault(1581)();
   const top = rect.top;
-  let obj = navigation(6560);
+  let obj = navigation(6557);
   const youBarSettingsOutsideSafeAreaTop = obj.useYouBarSettingsOutsideSafeAreaTop();
   let obj1 = navigation(1480);
   navigation = obj1.useNavigation();
@@ -716,7 +716,7 @@ export default function PremiumManagePlan() {
   let obj5 = navigation(589);
   const items3 = [closure_12];
   const stateFromStores1 = obj5.useStateFromStores(items3, () => currentUser.getCurrentUser());
-  const tmp12 = importDefault(5848)({ forceFetch: true });
+  const tmp12 = importDefault(5846)({ forceFetch: true });
   importDefault(4616)(() => {
     let isSubscriptionFetching = reset.hasFetchedSubscriptions();
     if (!isSubscriptionFetching) {
@@ -727,17 +727,17 @@ export default function PremiumManagePlan() {
       const subscriptions = obj.fetchSubscriptions();
     }
     if (!tmp5) {
-      const premiumSubscriptionPlans = navigation(6301).fetchPremiumSubscriptionPlans();
-      const obj3 = navigation(6301);
+      const premiumSubscriptionPlans = navigation(6298).fetchPremiumSubscriptionPlans();
+      const obj3 = navigation(6298);
     }
   });
-  let obj7 = navigation(7841);
+  let obj7 = navigation(7838);
   let isInReverseTrial = obj7.useIsInReverseTrial();
   const tmp9 = callback2(obj4.useStateFromStoresArray(items2, () => {
     const items = [reset.getPremiumTypeSubscription(), reset.hasFetchedSubscriptions()];
     return items;
   }), 2);
-  const tmp15 = importDefault(12491);
+  const tmp15 = importDefault(12485);
   let obj8 = navigation(3835);
   const unactivatedFractionalPremiumDurationString = obj8.getUnactivatedFractionalPremiumDurationString(tmp12);
   if (null !== tmp10) {
@@ -823,7 +823,7 @@ export default function PremiumManagePlan() {
   if (isInReverseTrial) {
     obj3 = { premiumType: null, forFractionalPremium: true, hideButton: true };
     obj3[0] = closure_27.TIER_2;
-    isInReverseTrial = tmp29(tmp2(9323), obj3);
+    isInReverseTrial = tmp29(tmp2(9319), obj3);
   }
   items9[1] = isInReverseTrial;
   tmp29Result = result;
@@ -834,7 +834,7 @@ export default function PremiumManagePlan() {
     obj4 = { premiumType: null, hideButton: true, hidePrice: true, isPremiumGroup: true, premiumGroupRole: null };
     obj4[0] = closure_27.TIER_2;
     obj4[4] = premiumGroupRole;
-    tmp29Result = tmp29(tmp2(9323), obj4);
+    tmp29Result = tmp29(tmp2(9319), obj4);
   }
   items9[2] = tmp29Result;
   if (tmp29Result1) {
@@ -867,32 +867,32 @@ export default function PremiumManagePlan() {
       }
     };
     obj7[2] = tmp10;
-    const items10 = [tmp29(tmp2(6511), obj7), ];
+    const items10 = [tmp29(tmp2(6508), obj7), ];
     obj8 = { style: null, subscription: null };
     obj8[0] = tmp.billingInfo;
     obj8[1] = tmp10;
-    items10[1] = tmp29(tmp2(6551), obj8);
+    items10[1] = tmp29(tmp2(6548), obj8);
     obj6[0] = items10;
     tmp27Result = tmp27(tmp28, obj6);
   }
   items9[4] = tmp27Result;
   const obj9 = { style: tmp.accountCredit, creditListContainerStyle: tmp.accountCreditList, currentSubscription: tmp10, entitlements: stateFromStores2, hasPremiumGroup: null };
   let flag = result;
-  tmp2Result = tmp2(6558);
+  tmp2Result = tmp2(6555);
   if (result == null) {
     flag = false;
   }
   obj9[4] = flag;
   items9[5] = closure_29(tmp2Result, obj9);
   const obj10 = { style: tmp.featuresTable, variant: "nitro_home", titleOverride: null, isFractionalOnly: null, isPremiumGroup: null, premiumGroupRole: null };
-  tmp15Result = importDefault(12491)(tmp12.endsAt, navigation(12491).CountDownMessageTypes.SHORT_TIME);
+  tmp15Result = importDefault(12485)(tmp12.endsAt, navigation(12485).CountDownMessageTypes.SHORT_TIME);
   const tmp31 = closure_9;
   const intl = tmp4(1236).intl;
   obj10[2] = intl.string(navigation(1236).t.QXx2gs);
   obj10[3] = tmp12.fractionalState === constants3.FP_ONLY;
   obj10[4] = result;
   obj10[5] = premiumGroupRole;
-  items9[6] = closure_29(importDefault(12506), obj10);
+  items9[6] = closure_29(importDefault(12500), obj10);
   obj1[1] = items9;
   items8[1] = closure_30(closure_8, obj1);
   obj[4] = items8;

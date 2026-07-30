@@ -19,7 +19,7 @@ let closure_1 = {
 
 export default function formatRelative(arg0, arg1) {
   let tmpResult = tmp;
-  if (typeof table2[arg0] !== "_") {
+  if (typeof table2[arg0] !== "ZodObject") {
     tmpResult = tmp(arg1);
   }
   return tmpResult;

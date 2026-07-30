@@ -1,10 +1,10 @@
-// Module ID: 11210
-// Function ID: 11211
+// Module ID: 11206
+// Function ID: 11207
 // Name: useKeyboardActionSheetHeight
 // Dependencies: [5140, 1581, 1474, 5218, 2]
 // Exports: default, getKeyboardActionSheetHeight
 
-// Module 11210 (useKeyboardActionSheetHeight)
+// Module 11206 (useKeyboardActionSheetHeight)
 const result = require("useWindowDimensions").fileFinishedImporting("modules/action_sheet/native/useKeyboardActionSheetHeight.tsx");
 
 export default function useKeyboardActionSheetHeight() {

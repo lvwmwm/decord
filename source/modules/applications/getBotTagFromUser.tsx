@@ -1,10 +1,10 @@
-// Module ID: 9091
-// Function ID: 9092
+// Module ID: 9087
+// Function ID: 9088
 // Name: getBotTagTypeFromUser
 // Dependencies: [4215, 2]
 // Exports: getBotTagTypeFromUser
 
-// Module 9091 (getBotTagTypeFromUser)
+// Module 9087 (getBotTagTypeFromUser)
 import { BotTagTypes } from "ApplicationTypes";
 
 const result = require("set").fileFinishedImporting("modules/applications/getBotTagFromUser.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 12436
-// Function ID: 12437
+// Module ID: 12430
+// Function ID: 12431
 // Name: PaymentFlowWarningMessage
 // Dependencies: [19, 17, 21, 4189, 712, 5030, 1297, 4185, 2]
 // Exports: default
 
-// Module 12436 (PaymentFlowWarningMessage)
+// Module 12430 (PaymentFlowWarningMessage)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

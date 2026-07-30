@@ -1,10 +1,10 @@
-// Module ID: 8023
-// Function ID: 8024
+// Module ID: 8020
+// Function ID: 8021
 // Name: resolvePlaintextInlineVoid
-// Dependencies: [32, 5048, 5096, 1372, 1932, 1942, 1935, 1862, 3817, 3826, 1874, 676, 1877, 5970, 4380, 11, 5031, 3830, 3834, 2]
+// Dependencies: [32, 5048, 5096, 1372, 1932, 1942, 1935, 1862, 3817, 3826, 1874, 676, 1877, 5968, 4380, 11, 5031, 3830, 3834, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 8023 (resolvePlaintextInlineVoid)
+// Module 8020 (resolvePlaintextInlineVoid)
 import _slicedToArray from "_slicedToArray";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import rebuild from "rebuild";
@@ -207,8 +207,8 @@ export const resolveApplicationCommandOption = function resolveApplicationComman
   const tmp = resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention);
   let voidToOptionValueResult = null;
   if (null != tmp) {
-    voidToOptionValueResult = require(5970) /* createEmptyState */.voidToOptionValue(tmp);
-    const obj = require(5970) /* createEmptyState */;
+    voidToOptionValueResult = require(5968) /* createEmptyState */.voidToOptionValue(tmp);
+    const obj = require(5968) /* createEmptyState */;
   }
   return voidToOptionValueResult;
 };

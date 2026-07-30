@@ -1,10 +1,10 @@
-// Module ID: 12272
-// Function ID: 12273
+// Module ID: 12266
+// Function ID: 12267
 // Name: useSelectStage
-// Dependencies: [5, 32, 19, 1372, 1931, 589, 6710, 2]
+// Dependencies: [5, 32, 19, 1372, 1931, 589, 6707, 2]
 // Exports: default
 
-// Module 12272 (useSelectStage)
+// Module 12266 (useSelectStage)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

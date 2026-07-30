@@ -1,14 +1,18 @@
 // Module ID: 8626
 // Function ID: 8627
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19]
+// Dependencies: [41, 42, 93, 95, 98, 19, 8627, 21, 8536, 8543, 8544, 8550, 8629, 8552]
 
 // Module 8626 (_isNativeReflectConstruct)
-import Stop from "_classCallCheck";
+import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
+import "noop";
+import _isNativeReflectConstruct from "_isNativeReflectConstruct";
+import { jsx } from "jsxProd";
 
+const Text = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -28,12 +32,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class Stop {
+class Text {
   constructor() {
     self = this;
     items = [...arguments];
     apply = undefined;
-    tmp = Stop(this, apply);
+    tmp = _isNativeReflectConstruct(this, apply);
     items1 = [...items];
     tmp2 = __esModule;
     obj = __esModule(apply);
@@ -47,25 +51,50 @@ class Stop {
     }
     tmp3Result = tmp3(self, constructResult);
     apply = tmp3Result;
-    tmp3Result.setNativeProps = () => {
-      const parent = _undefined.props.parent;
-      if (parent) {
-        parent.forceUpdate();
+    tmp3Result.setNativeProps = (matrix) => {
+      let tmp = matrix;
+      if (matrix) {
+        tmp = !matrix.matrix;
+      }
+      if (tmp) {
+        tmp = outer1_1(outer1_2[8])(matrix);
+      }
+      if (tmp) {
+        matrix.matrix = tmp;
+      }
+      const propsAndStylesResult = _undefined(outer1_2[9]).propsAndStyles(matrix);
+      const obj = _undefined(outer1_2[9]);
+      const merged = Object.assign(propsAndStylesResult, _undefined(outer1_2[10]).pickNotNil(outer1_1(outer1_2[11])(propsAndStylesResult, true)));
+      if (_undefined.root) {
+        const root = _undefined.root;
+        root.setNativeProps(propsAndStylesResult);
       }
     };
     return tmp3Result;
   }
 }
-require("_inherits")(Stop, require("noop").Component);
+require("_inherits")(Text, require("_isNativeReflectConstruct"));
 let items = [
   {
     key: "render",
     value: function render() {
-      return null;
+      let obj = Text(8543);
+      const propsAndStylesResult = obj.propsAndStyles(this.props);
+      obj = {};
+      const merged = Object.assign(propsAndStylesResult);
+      obj.x = null;
+      obj.y = null;
+      const tmp2Result = importDefault(8543)(obj, this);
+      const merged1 = Object.assign(tmp2Result, importDefault(8550)(propsAndStylesResult, true));
+      tmp2Result.ref = this.refMethod;
+      obj = {};
+      const tmp2 = importDefault(8543);
+      const merged2 = Object.assign(tmp2Result);
+      return jsx(importDefault(8629), {});
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Stop, items);
-importDefaultResultResult.displayName = "Stop";
+const importDefaultResultResult = importDefaultResult(Text, items);
+importDefaultResultResult.displayName = "Text";
 
 export default importDefaultResultResult;

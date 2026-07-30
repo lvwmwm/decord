@@ -1,10 +1,10 @@
-// Module ID: 15668
-// Function ID: 15669
+// Module ID: 15662
+// Function ID: 15663
 // Name: WebhookItem
-// Dependencies: [5, 19, 1372, 1932, 1862, 3817, 1874, 15669, 676, 21, 4189, 712, 1480, 1416, 5220, 1297, 1236, 11, 4028, 589, 15670, 7637, 15671, 3901, 1945, 4185, 15673, 5554, 7634, 4598, 5501, 2]
+// Dependencies: [5, 19, 1372, 1932, 1862, 3817, 1874, 15663, 676, 21, 4189, 712, 1480, 1416, 5220, 1297, 1236, 11, 4028, 589, 15664, 7634, 15665, 3901, 1945, 4185, 15667, 5554, 7631, 4598, 5501, 2]
 // Exports: default
 
-// Module 15668 (WebhookItem)
+// Module 15662 (WebhookItem)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import importAllResult from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -256,7 +256,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   items[1] = tmp4Result;
   if (0 === found.length) {
     obj = { Illustration: null, title: null };
-    obj[0] = tmp5(15673).WebhookEmpty;
+    obj[0] = tmp5(15667).WebhookEmpty;
     if (webhookType === constants2.CHANNEL_FOLLOWER) {
       const intl2 = tmp5(1236).intl;
       dkHRkE = tmp5(1236).t.dkHRkE;
@@ -303,7 +303,7 @@ prototype["render"] = function render() {
   obj[1] = tmp.content;
   obj[2] = this.renderWebhooks();
   obj[2] = callback(require(4598) /* Stack */.Stack, obj);
-  const items = [callback(require(7634) /* Form */.Form, obj), callback(require(5501) /* NavScrim */.NavScrim, {})];
+  const items = [callback(require(7631) /* Form */.Form, obj), callback(require(5501) /* NavScrim */.NavScrim, {})];
   obj[0] = items;
   return callback2(closure_19, obj);
 };

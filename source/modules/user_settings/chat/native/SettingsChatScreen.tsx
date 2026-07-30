@@ -1,11 +1,11 @@
-// Module ID: 14419
-// Function ID: 14420
+// Module ID: 14415
+// Function ID: 14416
 // Name: VideoUploadQualityNitroUpsell
-// Dependencies: [19, 17, 1874, 3841, 7756, 676, 21, 4189, 712, 1480, 647, 3835, 4185, 1236, 5222, 1297, 9631, 6505, 10120, 13678, 2]
+// Dependencies: [19, 17, 1874, 3841, 7753, 676, 21, 4189, 712, 1480, 647, 3835, 4185, 1236, 5222, 1297, 9628, 6502, 10116, 13673, 2]
 // Exports: default
 
-// Module 14419 (VideoUploadQualityNitroUpsell)
-import module_13678 from "module_13678";
+// Module 14415 (VideoUploadQualityNitroUpsell)
+import module_13673 from "module_13673";
 import { View } from "dispatcher";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import reset from "reset";
@@ -41,7 +41,7 @@ function VideoUploadQualityNitroUpsell() {
     obj2[0] = tmp3.cardContent;
     const obj3 = { style: null, source: null, size: null, color: null };
     obj3[0] = tmp3.cardIcon;
-    obj3[1] = importDefault(9631);
+    obj3[1] = importDefault(9628);
     obj3[2] = tmp(1297).Icon.Sizes.SMALL;
     obj3[3] = importDefault(712).unsafe_rawColors.PRIMARY_400;
     const items2 = [tmp7(tmp(1297).Icon, obj3), ];
@@ -164,5 +164,5 @@ export default function SettingsChatScreen(route) {
     obj[1] = initialSetting;
     return obj.createList(obj);
   }, items);
-  return callback(importDefault(13678), { node });
+  return callback(importDefault(13673), { node });
 };

@@ -192,7 +192,7 @@ export const useNumberBinding = function useNumberBinding(AnimationState, instan
   const items = [AnimationState2, setValue, playIfNeeded];
   const effect = importAllResult.useEffect(() => {
     if (null != closure_0) {
-      if (typeof str === "os") {
+      if (typeof str === "reType") {
         const _Number = Number;
         const _parseFloat = parseFloat;
         let num = 0;
@@ -401,7 +401,7 @@ export const useImageBinding = function useImageBinding(img, instance, prop12, p
         let c0 = false;
         const RiveImages = img(instance[3]).RiveImages;
         let uri = tmp;
-        if (typeof tmp !== "os") {
+        if (typeof tmp !== "reType") {
           uri = playIfNeeded.resolveAssetSource(tmp).uri;
         }
         const fromURLAsync = RiveImages.loadFromURLAsync(uri);
@@ -455,7 +455,7 @@ export const useArtboardBinding = function useArtboardBinding(Icon, instance, fi
   const effect = file.useEffect(() => {
     if (null != closure_1) {
       if (null != closure_2) {
-        if (typeof closure_3 !== "init") {
+        if (typeof closure_3 !== "tee") {
           try {
             const artboardPropertyResult = closure_1.artboardProperty(closure_0);
             if (artboardPropertyResult != null) {

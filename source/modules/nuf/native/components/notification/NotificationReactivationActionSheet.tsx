@@ -1,10 +1,10 @@
-// Module ID: 16282
-// Function ID: 16283
+// Module ID: 16276
+// Function ID: 16277
 // Name: NotificationReactivationActionSheet
-// Dependencies: [19, 17, 11505, 676, 21, 4189, 712, 698, 11506, 4157, 5243, 16283, 4185, 1236, 5022, 4600, 2]
+// Dependencies: [19, 17, 11501, 676, 21, 4189, 712, 698, 11502, 4157, 5243, 16277, 4185, 1236, 5022, 4600, 2]
 // Exports: default
 
-// Module 16282 (NotificationReactivationActionSheet)
+// Module 16276 (NotificationReactivationActionSheet)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { EventActionType } from "EventActionType";
@@ -51,7 +51,7 @@ export default function NotificationReactivationActionSheet(location) {
   let obj = { children: null };
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.image, source: null, resizeMode: "contain" };
-  obj[1] = importDefault(16283);
+  obj[1] = importDefault(16277);
   const items2 = [callback(closure_5, obj), , , ];
   const obj1 = { style: tmp.title, variant: "heading-xl/bold", accessibilityRole: "header", children: null };
   const intl = _location(1236).intl;

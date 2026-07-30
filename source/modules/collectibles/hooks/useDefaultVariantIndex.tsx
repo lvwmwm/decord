@@ -1,10 +1,10 @@
-// Module ID: 8661
-// Function ID: 8662
+// Module ID: 8658
+// Function ID: 8659
 // Name: useDefaultVariantIndex
 // Dependencies: [5814, 589, 5809, 2]
 // Exports: useDefaultVariantIndex
 
-// Module 8661 (useDefaultVariantIndex)
+// Module 8658 (useDefaultVariantIndex)
 import map from "map";
 
 const require = arg1;

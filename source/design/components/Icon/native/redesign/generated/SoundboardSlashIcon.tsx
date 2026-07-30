@@ -1,10 +1,10 @@
-// Module ID: 12037
-// Function ID: 12038
+// Module ID: 12031
+// Function ID: 12032
 // Name: SoundboardSlashIcon
-// Dependencies: [19, 21, 712, 3892, 12038, 2]
+// Dependencies: [19, 21, 712, 3892, 12032, 2]
 // Exports: SoundboardSlashIcon
 
-// Module 12037 (SoundboardSlashIcon)
+// Module 12031 (SoundboardSlashIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const SoundboardSlashIcon = function SoundboardSlashIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12038) /* registerAsset */;
+  obj[0] = require(12032) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

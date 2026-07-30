@@ -1,10 +1,10 @@
-// Module ID: 8142
-// Function ID: 8143
+// Module ID: 8139
+// Function ID: 8140
 // Name: VideoComponent
-// Dependencies: [32, 19, 17, 21, 4189, 712, 8143, 3901, 8115, 5635, 1236, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 8140, 3901, 8112, 5635, 1236, 2]
 // Exports: createVideoControls
 
-// Module 8142 (VideoComponent)
+// Module 8139 (VideoComponent)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";

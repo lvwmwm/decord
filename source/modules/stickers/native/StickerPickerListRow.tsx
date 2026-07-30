@@ -1,10 +1,10 @@
-// Module ID: 9634
-// Function ID: 9635
+// Module ID: 9631
+// Function ID: 9632
 // Name: STICKER_SIZE
-// Dependencies: [32, 19, 17, 1874, 3865, 9589, 1338, 21, 4189, 500, 3862, 4158, 4159, 4524, 9621, 4856, 9635, 9638, 1208, 4717, 2]
+// Dependencies: [32, 19, 17, 1874, 3865, 9586, 1338, 21, 4189, 500, 3862, 4158, 4159, 4524, 9618, 4856, 9632, 9635, 1208, 4717, 2]
 // Exports: default
 
-// Module 9634 (STICKER_SIZE)
+// Module 9631 (STICKER_SIZE)
 import _slicedToArray from "_slicedToArray";
 import "PressableBase";
 import { View } from "__INTERNAL_VIEW_CONFIG";
@@ -89,7 +89,7 @@ export default function StickerPickerListRow(stickers) {
           ({ id: obj4[0], name: obj4[1], format_type: obj4[2] } = tmp12);
           let tmp20 = stickers;
           let tmp21 = dependencyMap;
-          let obj4 = stickers(9635);
+          let obj4 = stickers(9632);
           let tmp22 = closure_7;
           obj[3] = obj4.getStickerAssetUrl(tmp12, closure_7, first);
           obj[4] = first;
@@ -135,7 +135,7 @@ export default function StickerPickerListRow(stickers) {
           handleOnLongPressSticker(found);
         }
       };
-      return items(importDefault(9638), obj1);
+      return items(importDefault(9635), obj1);
     } catch (tmp28) {
       const obj3 = { message: "Error in StickerPickerListRowNativeComponent", category: "sticker", data: null };
       obj4 = { itemLength: null, items: null };

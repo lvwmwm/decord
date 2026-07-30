@@ -27,7 +27,7 @@ export const extractTargetInfo = function extractTargetInfo(method, params) {
       if (params != null) {
         tmp5 = params[tmp.targetField];
       }
-      if (typeof tmp5 !== "init") {
+      if (typeof tmp5 !== "tee") {
         tmp2 = params[tmp.targetField];
       }
     }

@@ -1,10 +1,10 @@
-// Module ID: 7160
-// Function ID: 7161
+// Module ID: 7157
+// Function ID: 7158
 // Name: GemRightUpwards3dIllustration
-// Dependencies: [21, 5141, 7161, 2]
+// Dependencies: [21, 5141, 7158, 2]
 // Exports: GemRightUpwards3dIllustration
 
-// Module 7160 (GemRightUpwards3dIllustration)
+// Module 7157 (GemRightUpwards3dIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GemRightUpwards3dIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const GemRightUpwards3dIllustration = function GemRightUpwards3dIllustrat
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7161);
+  obj[0] = importDefault(7158);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

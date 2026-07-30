@@ -1,10 +1,10 @@
-// Module ID: 12600
-// Function ID: 12601
+// Module ID: 12594
+// Function ID: 12595
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 3841, 5672, 21, 4605, 4185, 589, 5675, 6332, 5515, 9703, 4529, 1236, 3835, 9699, 4601, 12601, 2]
+// Dependencies: [5, 19, 17, 3841, 5672, 21, 4605, 4185, 589, 5675, 6329, 5515, 9700, 4529, 1236, 3835, 9696, 4601, 12595, 2]
 // Exports: default
 
-// Module 12600 (GiftPurchaseButton)
+// Module 12594 (GiftPurchaseButton)
 import jsxProd from "jsxProd";
 import set from "set";
 import { View } from "CollapsingText";
@@ -135,7 +135,7 @@ export default function GiftPurchaseButton(style) {
           obj5[3] = premiumTypeFromPlanId;
           obj5[4] = c4;
           obj5[5] = closure_0;
-          outer1_0(9699).openGiftModal(obj5);
+          outer1_0(9696).openGiftModal(obj5);
           c4 = 3;
           return { value: "HermesInternal", done: null };
         }

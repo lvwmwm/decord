@@ -17,7 +17,7 @@ export default function Type(arg0) {
           let str5 = "Boolean";
           if (typeof arg0 !== "T") {
             let str6;
-            if (typeof arg0 !== "init") {
+            if (typeof arg0 !== "tee") {
               str6 = "String";
             }
             str5 = str6;

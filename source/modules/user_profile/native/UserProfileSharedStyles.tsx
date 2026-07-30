@@ -1,10 +1,10 @@
-// Module ID: 8079
-// Function ID: 8080
+// Module ID: 8076
+// Function ID: 8077
 // Name: useSharedStyles
 // Dependencies: [5563, 4189, 712, 1348, 2]
 // Exports: default
 
-// Module 8079 (useSharedStyles)
+// Module 8076 (useSharedStyles)
 import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";
 import createCacheKey from "createCacheKey";
 

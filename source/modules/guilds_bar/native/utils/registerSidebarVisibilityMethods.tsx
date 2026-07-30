@@ -1,10 +1,10 @@
-// Module ID: 15019
-// Function ID: 15020
+// Module ID: 15013
+// Function ID: 15014
 // Name: registerGuildVisibilityMethod
-// Dependencies: [8448, 1862, 5027, 2]
+// Dependencies: [8445, 1862, 5027, 2]
 // Exports: registerFastListChannelVisibilityMethod, registerGuildVisibilityMethod
 
-// Module 15019 (registerGuildVisibilityMethod)
+// Module 15013 (registerGuildVisibilityMethod)
 import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import insertUnsortedGuilds from "insertUnsortedGuilds";

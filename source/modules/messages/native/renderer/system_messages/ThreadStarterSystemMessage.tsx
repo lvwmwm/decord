@@ -1,10 +1,10 @@
-// Module ID: 7794
-// Function ID: 7795
+// Module ID: 7791
+// Function ID: 7792
 // Name: createThreadStarterSystemMessage
-// Dependencies: [5857, 676, 38, 1236, 7746, 2]
+// Dependencies: [5855, 676, 38, 1236, 7743, 2]
 // Exports: createThreadStarterSystemMessage
 
-// Module 7794 (createThreadStarterSystemMessage)
+// Module 7791 (createThreadStarterSystemMessage)
 import processMessage from "processMessage";
 import { ReferencedMessageState } from "processMessage";
 import { MessageTypes } from "ME";
@@ -21,7 +21,7 @@ export const createThreadStarterSystemMessage = function createThreadStarterSyst
     const obj = { content: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t.OCs36J);
-    const merged = Object.assign(importDefault(7746)(message));
+    const merged = Object.assign(importDefault(7743)(message));
     tmp5 = obj;
   }
   return tmp5;

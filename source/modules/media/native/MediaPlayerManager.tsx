@@ -1,10 +1,10 @@
-// Module ID: 13590
-// Function ID: 13591
+// Module ID: 13585
+// Function ID: 13586
 // Name: _initialize
-// Dependencies: [17, 1371, 4400, 1372, 4407, 3817, 6328, 676, 5688, 13591, 505, 3, 644, 705, 4368, 4041, 709, 500, 643, 5713, 10253, 2]
+// Dependencies: [17, 1371, 4400, 1372, 4407, 3817, 6325, 676, 5688, 13586, 505, 3, 644, 705, 4368, 4041, 709, 500, 643, 5713, 10249, 2]
 // Exports: isPlaybackComplete
 
-// Module 13590 (_initialize)
+// Module 13585 (_initialize)
 import get_ActivityIndicator from "set";
 import participantFromServer from "participantFromServer";
 import withEqualityFn from "withEqualityFn";
@@ -36,12 +36,12 @@ let obj = keys.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "ct",
-    showPip: "_createPressabilityConfig",
+    showPip: "RNGestureHandlerRootView",
     closePip() {
       callback(outer1_2[13]).batchUpdates(() => callback({ showPip: false }));
     },
-    displayedMediaItemIdsPerChannel: "\u{1F64C}",
-    currentlyDisplayedChannelId: true
+    displayedMediaItemIdsPerChannel: "\u{1F1F8}\u{1F1EA}",
+    currentlyDisplayedChannelId: 6
   };
   obj[9] = {};
   return obj;

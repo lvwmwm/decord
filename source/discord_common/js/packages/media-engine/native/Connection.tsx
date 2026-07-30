@@ -100,7 +100,7 @@ class Connection extends tmp4 {
     tmp.currentVideoCodec = null;
     tmp.lastDesktopEncodingOptions = null;
     tmp.handleSpeakingNative = function handleSpeakingNative(hasItem) {
-      if (typeof arg1 === "SENTRY_RELEASE") {
+      if (typeof arg1 === "sur") {
         tmp.handleSpeakingFlags(hasItem, arg1, arg2);
       }
     };
@@ -145,6 +145,13 @@ class Connection extends tmp4 {
         num = arg3;
       }
       tmp.emit(tmp(outer1_2[6]).BaseConnectionEvent.PingTimeout, arg2, num);
+    };
+    tmp.handleConnectionFailed = function handleConnectionFailed(arg0) {
+      if (!tmp.destroyed) {
+        obj.setConnectionState(outer1_13.NO_ROUTE);
+        const _HermesInternal = HermesInternal;
+        obj.emit(arg0(outer1_2[6]).BaseConnectionEvent.Error, "UDP endpoint retarget failed: " + arg0);
+      }
     };
     tmp.handleVideoEncoderFallback = function handleVideoEncoderFallback(arg0) {
       let tmp = arg0;
@@ -732,15 +739,18 @@ prototype["initialize"] = function initialize(address) {
     });
     self.conn = fnResult;
     const dependencyMap = fnResult;
+    if (fnResult.setOnConnectionFailedCallback != null) {
+      let result1 = setOnConnectionFailedCallback(self.handleConnectionFailed);
+    }
     if (fnResult.setSecureFramesStateUpdateCallback != null) {
-      let result1 = setSecureFramesStateUpdateCallback((arg0) => {
+      let result2 = setSecureFramesStateUpdateCallback((arg0) => {
         const logger = self.logger;
         logger.info("DAVE protocol state update: " + JSON.stringify(arg0));
         self.emit(createVoiceConnection(fnResult[6]).BaseConnectionEvent.SecureFramesUpdate, arg0);
       });
     }
     if (fnResult.setDesktopSourceStatusCallback != null) {
-      let result2 = setDesktopSourceStatusCallback((type) => {
+      let result3 = setDesktopSourceStatusCallback((type) => {
         let desktopCapturerType;
         let hybridCaptureMethodSwitches;
         let hybridDxgiFrames;
@@ -980,6 +990,27 @@ prototype["fastUdpReconnect"] = function fastUdpReconnect() {
     self.numFastUdpReconnects = self.numFastUdpReconnects + 1;
     const conn = self.conn;
     conn.fastUdpReconnect();
+  }
+};
+prototype["setUdpEndpoint"] = function setUdpEndpoint(address, address) {
+  const conn = this.conn;
+  const setUdpEndpoint = conn.setUdpEndpoint;
+  if (setUdpEndpoint != null) {
+    address = undefined;
+    if (address != null) {
+      address = address.address;
+    }
+    if (address == null) {
+      address = null;
+    }
+    let num;
+    if (address != null) {
+      num = address.port;
+    }
+    if (num == null) {
+      num = 0;
+    }
+    setUdpEndpoint(address, num);
   }
 };
 prototype["getNumFastUdpReconnects"] = function getNumFastUdpReconnects() {
@@ -1737,7 +1768,7 @@ prototype["setStreamParameters"] = function setStreamParameters(arg0) {
         const _Error = Error;
         const error = new Error("Invalid rid");
         lib(error);
-        return { v: "r" };
+        return { v: "Array" };
       } else {
         const items = [];
         if (!callback(self[11])(lib.videoStreamParameters[findIndexResult], tmp[findIndexResult])) {

@@ -1,9 +1,9 @@
-// Module ID: 10386
-// Function ID: 10387
+// Module ID: 10382
+// Function ID: 10383
 // Name: mutable
 // Dependencies: [19, 21, 4050, 1595, 2]
 
-// Module 10386 (mutable)
+// Module 10382 (mutable)
 import jsxProd from "jsxProd";
 import module_4050 from "module_4050";
 import mutable from "noop";

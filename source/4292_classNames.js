@@ -100,7 +100,7 @@ if (undefined !== module) {
     module.exports = classNames;
   }
 }
-if (typeof globalThis.define !== "_") {
+if (typeof globalThis.define !== "ZodObject") {
   if (typeof globalThis.define.amd !== "window") {
     if (globalThis.define.amd) {
       globalThis.define("classnames", [], () => classNames);

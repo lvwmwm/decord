@@ -1,9 +1,9 @@
-// Module ID: 16237
-// Function ID: 16238
+// Module ID: 16231
+// Function ID: 16232
 // Name: handleAppStateUpdate
-// Dependencies: [5, 676, 3, 687, 5134, 16238, 1208, 698, 5731, 5729, 5721, 2]
+// Dependencies: [5, 676, 3, 687, 5134, 16232, 1208, 698, 5731, 5729, 5721, 2]
 
-// Module 16237 (handleAppStateUpdate)
+// Module 16231 (handleAppStateUpdate)
 import enforcing from "enforcing";
 import ME from "ME";
 import "initialize";
@@ -237,7 +237,7 @@ prototype["startWatchdog"] = function startWatchdog() {
             closure_0 = undefined;
             c1 = undefined;
             if (null == outer1_0._timeoutId) {
-              if (null != outer1_1(16238)) {
+              if (null != outer1_1(16232)) {
                 dependencyMap = 1;
                 c3 = 1;
                 const obj1 = { value: null, done: false };
@@ -258,7 +258,7 @@ prototype["startWatchdog"] = function startWatchdog() {
               closure_0._enabled = true;
               if (closure_0._pingCompleted) {
                 let checkForStallReportResult;
-                obj = outer1_1(16238);
+                obj = outer1_1(16232);
                 if (obj != null) {
                   checkForStallReportResult = obj.checkForStallReport();
                 }

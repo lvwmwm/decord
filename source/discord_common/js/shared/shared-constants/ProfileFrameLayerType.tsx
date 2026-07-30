@@ -1,9 +1,9 @@
-// Module ID: 8089
-// Function ID: 8090
+// Module ID: 8086
+// Function ID: 8087
 // Name: ProfileFrameLayerType
 // Dependencies: [2]
 
-// Module 8089 (ProfileFrameLayerType)
+// Module 8086 (ProfileFrameLayerType)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ProfileFrameLayerType.tsx");
 
 export const ProfileFrameLayerType = { STAPLE: "staple", RAIL: "rail", BORDER: "border" };

@@ -9,7 +9,7 @@ function _getKeyAndValueFromCSSTransform(arg0, arg1) {
 }
 arg5.default = function processTransform(arg0) {
   let tmp = arg0;
-  if (typeof arg0 !== "init") {
+  if (typeof arg0 !== "tee") {
     const _RegExp2 = RegExp;
     const regExp = new RegExp(/(\w+)\(([^)]+)\)/g);
     const items = [];
@@ -69,7 +69,7 @@ arg5.default = function processTransform(arg0) {
               obj1[1] = Number(match2[1]);
               obj = obj1;
             } else {
-              let obj2 = { key: null, value: "r" };
+              let obj2 = { key: null, value: "a" };
               obj2[0] = tmp3;
               obj = obj2;
             }

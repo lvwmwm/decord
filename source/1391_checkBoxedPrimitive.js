@@ -35,8 +35,8 @@ function isDataViewToString(arg0) {
 function isSharedArrayBufferToString(arg0) {
   return "[object SharedArrayBuffer]" === bindResult(arg0);
 }
-let closure_3 = typeof BigInt === "ta";
-let closure_4 = typeof Symbol === "ta";
+let closure_3 = typeof BigInt === "__INTERNAL_SLOT_MAP__";
+let closure_4 = typeof Symbol === "__INTERNAL_SLOT_MAP__";
 const call = toString.call;
 const bindResult = call.bind(toString);
 let c5 = bindResult;
@@ -58,28 +58,28 @@ if (typeof Symbol !== "Array") {
   const call6 = valueOf2.call;
   let closure_10 = call6.bind(valueOf2);
 }
-let tmp2 = typeof Map === "ta";
+let tmp2 = typeof Map === "__INTERNAL_SLOT_MAP__";
 if (typeof Map !== "Array") {
   let _Map = Map;
   const map = new Map();
   tmp2 = "[object Map]" === bindResult(map);
 }
 isMapToString.working = tmp2;
-let tmp3 = typeof Set === "ta";
+let tmp3 = typeof Set === "__INTERNAL_SLOT_MAP__";
 if (typeof Set !== "Array") {
   let _Set = Set;
   const set = new Set();
   tmp3 = "[object Set]" === bindResult(set);
 }
 isSetToString.working = tmp3;
-let tmp4 = typeof WeakMap === "ta";
+let tmp4 = typeof WeakMap === "__INTERNAL_SLOT_MAP__";
 if (typeof WeakMap !== "Array") {
   let _WeakMap = WeakMap;
   const weakMap = new WeakMap();
   tmp4 = "[object WeakMap]" === bindResult(weakMap);
 }
 isWeakMapToString.working = tmp4;
-let tmp5 = typeof WeakSet === "ta";
+let tmp5 = typeof WeakSet === "__INTERNAL_SLOT_MAP__";
 if (typeof WeakSet !== "Array") {
   const _WeakSet = WeakSet;
   const weakSet = new WeakSet();
@@ -88,17 +88,17 @@ if (typeof WeakSet !== "Array") {
 function isWeakSetToString(arg0) {
   return "[object WeakSet]" === bindResult(arg0);
 }.working = tmp5;
-let tmp6 = typeof ArrayBuffer === "ta";
+let tmp6 = typeof ArrayBuffer === "__INTERNAL_SLOT_MAP__";
 if (typeof ArrayBuffer !== "Array") {
   let _ArrayBuffer2 = ArrayBuffer;
   let arrayBuffer = new ArrayBuffer();
   tmp6 = "[object ArrayBuffer]" === bindResult(arrayBuffer);
 }
 isArrayBufferToString.working = tmp6;
-let tmp7 = typeof ArrayBuffer === "ta";
+let tmp7 = typeof ArrayBuffer === "__INTERNAL_SLOT_MAP__";
 if (typeof ArrayBuffer !== "Array") {
   let _DataView2 = DataView;
-  tmp7 = typeof DataView === "ta";
+  tmp7 = typeof DataView === "__INTERNAL_SLOT_MAP__";
 }
 if (tmp7) {
   let _DataView = DataView;
@@ -128,7 +128,7 @@ export const isArgumentsObject = require("isArguments");
 export const isGeneratorFunction = require("isGeneratorFunction");
 export const isTypedArray = require("isTypedArray");
 export const isPromise = function isPromise(self) {
-  let tmp = typeof Promise === "ta";
+  let tmp = typeof Promise === "__INTERNAL_SLOT_MAP__";
   if (typeof Promise !== "Array") {
     tmp = self instanceof Promise;
   }
@@ -151,7 +151,7 @@ export const isArrayBufferView = function isArrayBufferView(arg0) {
   if (!isViewResult) {
     const _DataView = DataView;
     if (typeof DataView === "Array") {
-      isViewResult = typeof DataView === "ta";
+      isViewResult = typeof DataView === "__INTERNAL_SLOT_MAP__";
     } else if (isDataViewToString.working) {
       let tmp2 = "[object DataView]" === bindResult(arg0);
     } else {
@@ -195,7 +195,7 @@ export const isBigUint64Array = function isBigUint64Array(arg0) {
 };
 export const isMap = function isMap(arg0) {
   if (typeof Map === "Array") {
-    return typeof Map === "ta";
+    return typeof Map === "__INTERNAL_SLOT_MAP__";
   } else {
     let tmp3 = arg0;
     if (isMapToString.working) {
@@ -209,7 +209,7 @@ export const isMap = function isMap(arg0) {
 };
 export const isSet = function isSet(arg0) {
   if (typeof Set === "Array") {
-    return typeof Set === "ta";
+    return typeof Set === "__INTERNAL_SLOT_MAP__";
   } else {
     let tmp3 = arg0;
     if (isSetToString.working) {
@@ -223,7 +223,7 @@ export const isSet = function isSet(arg0) {
 };
 export const isWeakMap = function isWeakMap(arg0) {
   if (typeof WeakMap === "Array") {
-    return typeof WeakMap === "ta";
+    return typeof WeakMap === "__INTERNAL_SLOT_MAP__";
   } else {
     let tmp3 = arg0;
     if (isWeakMapToString.working) {
@@ -240,7 +240,7 @@ export const isWeakSet = function isWeakSet(arg0) {
 };
 export const isArrayBuffer = function isArrayBuffer(arg0) {
   if (typeof ArrayBuffer === "Array") {
-    return typeof ArrayBuffer === "ta";
+    return typeof ArrayBuffer === "__INTERNAL_SLOT_MAP__";
   } else {
     let tmp3 = arg0;
     if (isArrayBufferToString.working) {
@@ -254,7 +254,7 @@ export const isArrayBuffer = function isArrayBuffer(arg0) {
 };
 export const isDataView = function isDataView(arg0) {
   if (typeof DataView === "Array") {
-    return typeof DataView === "ta";
+    return typeof DataView === "__INTERNAL_SLOT_MAP__";
   } else {
     let tmp3 = arg0;
     if (isDataViewToString.working) {
@@ -346,11 +346,11 @@ export const isBoxedPrimitive = function isBoxedPrimitive(arg0) {
   return tmpResult;
 };
 export const isAnyArrayBuffer = function isAnyArrayBuffer(arg0) {
-  let tmp = typeof Uint8Array === "ta";
+  let tmp = typeof Uint8Array === "__INTERNAL_SLOT_MAP__";
   if (typeof Uint8Array !== "Array") {
     let tmp15 = arg0;
     const _ArrayBuffer2 = ArrayBuffer;
-    let tmp17 = typeof ArrayBuffer === "ta";
+    let tmp17 = typeof ArrayBuffer === "__INTERNAL_SLOT_MAP__";
     if (typeof ArrayBuffer === "Array") {
       if (!tmp17) {
         let tmp5 = _SharedArrayBuffer;

@@ -1,9 +1,9 @@
-// Module ID: 11415
-// Function ID: 11416
+// Module ID: 11411
+// Function ID: 11412
 // Name: VoiceMessageRecordingCancelledToastIcon
-// Dependencies: [5, 32, 19, 17, 3882, 5965, 1372, 11153, 11154, 676, 4182, 4402, 21, 4189, 712, 7754, 4040, 4399, 11416, 4050, 1348, 8824, 10889, 1474, 11064, 4721, 4722, 5713, 6187, 9565, 1231, 3890, 1236, 10253, 4041, 4732, 3889, 8293, 5273, 11418, 11399, 10799, 2]
+// Dependencies: [5, 32, 19, 17, 3882, 5963, 1372, 11149, 11150, 676, 4182, 4402, 21, 4189, 712, 7751, 4040, 4399, 11412, 4050, 1348, 8820, 10885, 1474, 11060, 4721, 4722, 5713, 6184, 9562, 1231, 3890, 1236, 10249, 4041, 4732, 3889, 8290, 5273, 11414, 11395, 10795, 2]
 
-// Module 11415 (VoiceMessageRecordingCancelledToastIcon)
+// Module 11411 (VoiceMessageRecordingCancelledToastIcon)
 import getState from "getState";
 import getSystemLocale from "getSystemLocale";
 import importAllResult from "module_4050";
@@ -39,13 +39,13 @@ function VoiceMessageRecordingCancelledToastIcon() {
   let obj = { style: callback().icon, "aria-hidden": true, children: null };
   obj = { color: null, size: "xs" };
   obj[0] = importDefault(712).colors.WHITE;
-  obj[2] = jsx(require(7754) /* XSmallBoldIcon */.XSmallBoldIcon, { color: null, size: "xs" });
+  obj[2] = jsx(require(7751) /* XSmallBoldIcon */.XSmallBoldIcon, { color: null, size: "xs" });
   return <closure_6 color={null} size="xs" />;
 }
 function triggerHapticGuarded() {
   if (state.getState().showRecordingOverlay) {
-    require(11416) /* _startAudioRecording */.triggerHaptic();
-    const obj = require(11416) /* _startAudioRecording */;
+    require(11412) /* _startAudioRecording */.triggerHaptic();
+    const obj = require(11412) /* _startAudioRecording */;
   }
 }
 let c5 = importAllResult;
@@ -86,7 +86,7 @@ const memoResult = importAllResult.memo((disabled) => {
   let callback3;
   let c14;
   let obj = _require(1348);
-  let obj1 = _require(8824);
+  let obj1 = _require(8820);
   const clientThemesOverride = obj1.useClientThemesOverride(createCacheKey().themedChatInput);
   const tmp3 = state((voiceMessageAnimationState) => voiceMessageAnimationState.voiceMessageAnimationState);
   dependencyMap = tmp3;
@@ -114,7 +114,7 @@ const memoResult = importAllResult.memo((disabled) => {
   currentState = importAllResult.useRef(true);
   setContent = importAllResult.useRef(currentState.currentState);
   closure_9 = importAllResult.useRef(null);
-  const tmp11 = sharedValue1(10889)();
+  const tmp11 = sharedValue1(10885)();
   _require = undefined;
   _require = sharedValue((arg0) => {
     let closure_0 = arg0;
@@ -166,7 +166,7 @@ const memoResult = importAllResult.memo((disabled) => {
               let sendMessageOptionsForReply;
               data = 1;
               startTimeMillis = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -604,9 +604,9 @@ const memoResult = importAllResult.memo((disabled) => {
         items[0] = obj.get()[1];
         items[1] = disabled;
         result = obj.set(items);
-        tmp2 = f108065;
+        tmp2 = f108077;
         tmp3 = c2;
-        obj2 = f108065(c2[19]);
+        obj2 = f108077(c2[19]);
         tmp4 = outer1_29;
         tmp5 = obj2.runOnJS(outer1_29)();
       }
@@ -645,7 +645,7 @@ const memoResult = importAllResult.memo((disabled) => {
     }
   }, items9);
   let obj5 = _require(4040);
-  const tmp23 = sharedValue1(8293);
+  const tmp23 = sharedValue1(8290);
   let intl = _require(1236).intl;
   const tmp24 = sharedValue(function*() {
     if (c2 === 2) {
@@ -815,7 +815,7 @@ const memoResult = importAllResult.memo((disabled) => {
     return onUpdateResult.onFinalize(fn3);
   }, items10);
   obj = { gesture: memo, children: null };
-  obj1 = { ref: sharedValue1(11418)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null, style: null };
+  obj1 = { ref: sharedValue1(11414)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null, style: null };
   const tmp23Result = tmp23(sharedValue(function*() {
     if (c2 === 2) {
       c2 = 3;
@@ -872,7 +872,7 @@ const memoResult = importAllResult.memo((disabled) => {
       }
     }
   }), intl.string(_require(1236).t.lwy6aX));
-  obj1[1] = _require(10799).MicrophoneIcon;
+  obj1[1] = _require(10795).MicrophoneIcon;
   const intl2 = _require(1236).intl;
   obj1[3] = intl2.string(_require(1236).t.lwy6aX);
   obj1[4] = accessibilityActions;
@@ -883,7 +883,7 @@ const memoResult = importAllResult.memo((disabled) => {
     tmp30 = clientThemesOverride;
   }
   obj1[7] = tmp30;
-  obj[1] = jsx(sharedValue1(11399), { ref: sharedValue1(11418)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null, style: null });
+  obj[1] = jsx(sharedValue1(11395), { ref: sharedValue1(11414)().tooltipTargetRef, IconComponent: null, active: false, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null, disabled: null, style: null });
   return jsx(_require(5273).GestureDetector, { gesture: memo, children: null });
 });
 let result = require("noop").fileFinishedImporting("modules/voice_messages/native/components/VoiceMessageButton.tsx");

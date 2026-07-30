@@ -1,7 +1,7 @@
 // Module ID: 5797
 // Function ID: 5798
 // Name: openCollectiblesShop
-// Dependencies: [5, 4188, 1946, 5798, 5813, 5814, 5815, 5816, 5820, 5800, 5826, 5827, 678, 676, 5843, 5844, 4041, 709, 5845, 5846, 5851, 530, 4088, 5852, 5847, 5810, 5853, 5854, 2]
+// Dependencies: [5, 4188, 1946, 5798, 5813, 5814, 5815, 5816, 5820, 5800, 5826, 5827, 678, 676, 5841, 5842, 4041, 709, 5843, 5844, 5849, 530, 4088, 5850, 5845, 5810, 5851, 5852, 2]
 // Exports: areRequestOptionsEqual, claimCollectiblesCategoryReward, claimPremiumCollectiblesProduct, closeCollectiblesShop, dispatchOpenCollectiblesShop, fetchCollectiblesCategories, fetchCollectiblesMarketings, fetchCollectiblesPurchases, fetchCollectiblesShopHome, isCollectiblesShopOpen, maybeFetchCollectiblesProduct, maybeFetchCollectiblesShopTabLayout, openCollectiblesShop, productDetailsOpened, seedCollectiblesProductFromStandaloneLoad, setShopHomeConfigOverride, setShopLayoutUrlOverride, setSkipNumCategories, validateCollectiblesRecipient, validateCollectiblesRecipientsBatch
 
 // Module 5797 (openCollectiblesShop)
@@ -71,7 +71,7 @@ function openCollectiblesShopMobile(screen) {
 function closeCollectiblesShop() {
   importDefault(709).dispatch({ type: "COLLECTIBLES_SHOP_CLOSE" });
   const obj = importDefault(709);
-  require(5845) /* pushLayer */.popLayer();
+  require(5843) /* pushLayer */.popLayer();
 }
 function _fetchCollectiblesCategories() {
   const self = this;
@@ -794,7 +794,7 @@ function _validateCollectiblesRecipient() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = getUserAgnosticState;
-            obj2 = callback(5852);
+            obj2 = callback(5850);
             const aPIError = new callback(4088).APIError(callback);
             const result = obj2.captureOrIgnoreApiError(aPIError);
             c7 = 3;
@@ -890,7 +890,7 @@ function _validateCollectiblesRecipientsBatch() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = getUserAgnosticState;
-            obj2 = callback(5852);
+            obj2 = callback(5850);
             const aPIError = new callback(4088).APIError(callback);
             const result = obj2.captureOrIgnoreApiError(aPIError);
             c7 = 3;
@@ -979,7 +979,7 @@ function _fetchCollectiblesMarketings() {
               body = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -1388,7 +1388,7 @@ function _maybeFetchCollectiblesShopTabLayout() {
               let c4;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {

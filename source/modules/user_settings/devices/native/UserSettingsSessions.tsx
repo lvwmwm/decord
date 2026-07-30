@@ -1,10 +1,10 @@
-// Module ID: 13979
-// Function ID: 13980
+// Module ID: 13974
+// Function ID: 13975
 // Name: UserSettingsSessions
-// Dependencies: [32, 19, 17, 1874, 676, 21, 4189, 5109, 712, 13766, 589, 13980, 4598, 5554, 1236, 5220, 5177, 4185, 1351, 4717, 1297, 7699, 1480, 11424, 6505, 13981, 11926, 10855, 9208, 13982, 2]
+// Dependencies: [32, 19, 17, 1874, 676, 21, 4189, 5109, 712, 13761, 589, 13975, 4598, 5554, 1236, 5220, 5177, 4185, 1351, 4717, 1297, 7696, 1480, 11420, 6502, 13976, 11922, 10851, 9204, 13977, 2]
 // Exports: default
 
-// Module 13979 (UserSettingsSessions)
+// Module 13974 (UserSettingsSessions)
 import _slicedToArray from "_slicedToArray";
 import PressableBase from "PressableBase";
 import get_ActivityIndicator from "Text";
@@ -29,7 +29,7 @@ function UserSettingsSessions() {
   let otherSessions;
   let tmp7;
   const tmp = createCacheKey();
-  let obj = otherSessions(13766);
+  let obj = otherSessions(13761);
   let authSessions = obj.useAuthSessions();
   ({ currentSession, otherSessions } = authSessions);
   let obj1 = otherSessions(589);
@@ -150,15 +150,15 @@ function SessionInfo(session) {
             if ("horizon os" === trimmed) {
               let obj = { text: null, iconSource: null, IconComponent: null };
               obj[0] = os;
-              obj[1] = importDefault(10855);
-              obj[2] = session(13982).VrHeadsetIcon;
+              obj[1] = importDefault(10851);
+              obj[2] = session(13977).VrHeadsetIcon;
               let tmp9 = session;
               let tmp10 = importDefault;
             } else {
               obj = { text: null, iconSource: null, IconComponent: null };
               obj[0] = os;
-              obj[1] = importDefault(13981);
-              obj[2] = session(11926).ScreenIcon;
+              obj[1] = importDefault(13976);
+              obj[2] = session(11922).ScreenIcon;
               tmp9 = session;
               tmp10 = importDefault;
             }
@@ -166,16 +166,16 @@ function SessionInfo(session) {
         }
         obj = { text: null, iconSource: null, IconComponent: null };
         obj[0] = os;
-        obj[1] = importDefault(10855);
-        obj[2] = session(9208).MobilePhoneIcon;
+        obj[1] = importDefault(10851);
+        obj[2] = session(9204).MobilePhoneIcon;
         tmp9 = session;
         tmp10 = importDefault;
       }
       let formatDateResult = null;
       ({ text, iconSource, IconComponent } = obj);
       if (!current) {
-        formatDateResult = tmp9(13766).formatDate(session.approx_last_used_time);
-        const tmp9Result = tmp9(13766);
+        formatDateResult = tmp9(13761).formatDate(session.approx_last_used_time);
+        const tmp9Result = tmp9(13761);
       }
       const items = [text, platform];
       const found = items.filter(tmp9(1351).isNotNullish);
@@ -190,7 +190,7 @@ function SessionInfo(session) {
         obj1[3] = { top: 5, left: 5, bottom: 5, right: 5 };
         const obj2 = { style: null, source: null };
         obj2[0] = tmp.logoutButton;
-        obj2[1] = tmp10(7699);
+        obj2[1] = tmp10(7696);
         obj1[4] = callback2(tmp9(1297).Icon, obj2);
         tmp18 = callback2(tmp9(4717).PressableOpacity, obj1);
       }
@@ -255,8 +255,8 @@ function SessionInfo(session) {
   const obj16 = { text: null, iconSource: null, IconComponent: null };
   const intl = session(1236).intl;
   obj16[0] = intl.string(session(1236).t.cDHCNY);
-  obj16[1] = importDefault(13981);
-  obj16[2] = session(11926).ScreenIcon;
+  obj16[1] = importDefault(13976);
+  obj16[2] = session(11922).ScreenIcon;
   tmp9 = session;
   tmp10 = importDefault;
   obj = obj16;
@@ -266,7 +266,7 @@ function UnknownLegacySessionsInfo() {
   _require = obj.useNavigation();
   obj = { icon: null, label: null, subLabel: null };
   obj = { variant: "translucent", source: null };
-  obj[1] = importDefault(11424);
+  obj[1] = importDefault(11420);
   obj[0] = callback2(_require(5220).TableRow.Icon, obj);
   const intl = _require(1236).intl;
   obj[1] = intl.string(_require(1236).t.iUa0sn);

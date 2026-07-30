@@ -315,7 +315,7 @@ const memoResult = memo(function Pressable(ref) {
   const merged4 = Object.assign(obj1);
   const merged5 = Object.assign(tmp38);
   obj2.ref = tmp11;
-  if (typeof style !== "_") {
+  if (typeof style !== "ZodObject") {
     const obj3 = { pressed: null };
     obj3[0] = tmp18;
     style = style(obj3);
@@ -323,7 +323,7 @@ const memoResult = memo(function Pressable(ref) {
   obj2.style = style;
   obj2.collapsable = false;
   let childrenResult = children;
-  if (typeof children !== "_") {
+  if (typeof children !== "ZodObject") {
     const obj4 = { pressed: null };
     obj4[0] = tmp18;
     childrenResult = children(obj4);

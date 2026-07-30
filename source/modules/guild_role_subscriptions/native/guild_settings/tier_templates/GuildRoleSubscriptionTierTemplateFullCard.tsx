@@ -1,10 +1,10 @@
-// Module ID: 16624
-// Function ID: 16625
+// Module ID: 16618
+// Function ID: 16619
 // Name: SectionSeparator
-// Dependencies: [19, 17, 21, 4189, 712, 1297, 15106, 4185, 14254, 1581, 5243, 16625, 5245, 1236, 16626, 9429, 16627, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1297, 15100, 4185, 14250, 1581, 5243, 16619, 5245, 1236, 16620, 9425, 16621, 2]
 // Exports: default
 
-// Module 16624 (SectionSeparator)
+// Module 16618 (SectionSeparator)
 import "noop";
 import { View } from "set";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ function BenefitRow(description) {
   description = description.description;
   const tmp = createCacheKey();
   let obj = { style: tmp.benefitRowContainer, children: null };
-  obj = { children: callback(importDefault(15106), {}) };
+  obj = { children: callback(importDefault(15100), {}) };
   const items = [callback(View, obj), ];
   obj = { style: tmp.benefitTextContainer, children: null };
   const items1 = [description.title, ];
@@ -49,7 +49,7 @@ function BenefitSection(arg0) {
   let sectionTitle;
   const obj = { children: null };
   ({ sectionTitle, children } = arg0);
-  const items = [callback(require(14254) /* SectionTitle */.SectionTitle, { children: sectionTitle }), callback(require(1297) /* Button */.Spacer, { size: 14 }), children];
+  const items = [callback(require(14250) /* SectionTitle */.SectionTitle, { children: sectionTitle }), callback(require(1297) /* Button */.Spacer, { size: 14 }), children];
   obj[0] = items;
   return callback2(closure_5, obj);
 }
@@ -91,7 +91,7 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
   let obj = { scrollable: true, startExpanded: true, children: null };
   obj = { style: tmp.container, children: null };
   obj = { template, handleSelectTemplateInPreview, subscriptionPlanTextStyle: tmp.subscriptionPlanTextStyle, descriptionTextStyle: tmp.descriptionPlanTextStyle, closeActionSheet: true };
-  let items = [callback(_require(16625).GuildRoleSubscriptionTierTemplateBasicInfo, obj), callback(View, { style: tmp.separator }), ];
+  let items = [callback(_require(16619).GuildRoleSubscriptionTierTemplateBasicInfo, obj), callback(View, { style: tmp.separator }), ];
   const obj2 = { scrollsToTop: false, style: tmp.content, contentContainerStyle: obj3, children: null };
   const obj4 = { variant: "text-sm/bold", color: "text-default", style: { textTransform: "uppercase" }, children: null };
   const intl = _require(1236).intl;
@@ -107,7 +107,7 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
   obj6[3] = intl3.string(_require(1236).t.ZKyfEo);
   items1[4] = callback(_require(4185).Text, obj6);
   items1[5] = callback(_require(1297).Spacer, { size: 8 });
-  items1[6] = callback(_require(16626).GuildRoleSubscriptionRolePreview, { roleColor: role_color, roleImage: image, roleName: name, guildId });
+  items1[6] = callback(_require(16620).GuildRoleSubscriptionRolePreview, { roleColor: role_color, roleImage: image, roleName: name, guildId });
   items1[7] = callback(SectionSeparator, {});
   const obj7 = { sectionTitle: null, children: null };
   const intl4 = _require(1236).intl;
@@ -121,7 +121,7 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
     obj[1] = items;
     return outer1_4(outer1_9, { title: outer1_6(outer1_3, obj), description: children.description }, children.id);
   });
-  obj7[1] = callback(_require(9429).GappedList, obj8);
+  obj7[1] = callback(_require(9425).GappedList, obj8);
   items1[8] = callback(BenefitSection, obj7);
   items1[9] = callback(SectionSeparator, {});
   const obj9 = { sectionTitle: null, children: null };
@@ -133,7 +133,7 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
     obj = { title: callback(_undefined(table[7]).Text, obj) };
     return callback(closure_9, obj, arg1);
   });
-  obj9[1] = callback(_require(9429).GappedList, obj10);
+  obj9[1] = callback(_require(9425).GappedList, obj10);
   items1[10] = callback(BenefitSection, obj9);
   obj2[3] = items1;
   items[2] = callback2(_require(5245).BottomSheetScrollView, obj2);

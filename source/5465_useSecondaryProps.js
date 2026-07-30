@@ -125,7 +125,7 @@ export const useSecondaryProps = function useSecondaryProps(ListHeaderComponent)
     return null;
   }, items3);
   obj[4] = ListEmptyComponentStyle(() => {
-    if (typeof renderScrollComponent !== "_") {
+    if (typeof renderScrollComponent !== "ZodObject") {
       if (!tmpResult.isComponentClass(tmp3)) {
         let CompatAnimatedScroller = ListEmptyComponent.forwardRef((arg0, ref) => {
           const obj = {};

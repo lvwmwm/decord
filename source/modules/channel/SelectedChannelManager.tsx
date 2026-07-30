@@ -1,9 +1,9 @@
-// Module ID: 16314
-// Function ID: 16315
+// Module ID: 16308
+// Function ID: 16309
 // Name: handleGuildCreate
-// Dependencies: [4236, 1931, 4006, 676, 5134, 6690, 5001, 1222, 709, 2]
+// Dependencies: [4236, 1931, 4006, 676, 5134, 6687, 5001, 1222, 709, 2]
 
-// Module 16314 (handleGuildCreate)
+// Module 16308 (handleGuildCreate)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import handleConnectionOpen from "handleConnectionOpen";
 import { findFirstVoiceChannelId } from "handleConnectionOpen";
@@ -30,8 +30,8 @@ prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
   const channelId = store.getChannelId(closure_9);
   const voiceChannelId = store.getVoiceChannelId();
   if (guild.id === channelId) {
-    require(6690) /* transitionToGuild */.transitionToGuild(guild.id);
-    const obj = require(6690) /* transitionToGuild */;
+    require(6687) /* transitionToGuild */.transitionToGuild(guild.id);
+    const obj = require(6687) /* transitionToGuild */;
   }
   let tmp6 = guild.id === voiceChannelId;
   if (tmp6) {

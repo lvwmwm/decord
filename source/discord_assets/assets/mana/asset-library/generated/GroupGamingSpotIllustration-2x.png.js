@@ -1,9 +1,9 @@
-// Module ID: 7219
-// Function ID: 7220
+// Module ID: 7216
+// Function ID: 7217
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7219 (metadata)
+// Module 7216 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GroupGamingSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/cff9d82b6892a6b60ebbd637a3a4f588d61eab742fa4beab938d3c5c0923e629.png";

@@ -1,9 +1,9 @@
-// Module ID: 9899
-// Function ID: 9900
+// Module ID: 9896
+// Function ID: 9897
 // Name: fetchMessages
-// Dependencies: [32, 4202, 4865, 1376, 5874, 1372, 1862, 4201, 1931, 4006, 676, 1379, 687, 3, 4860, 9599, 4121, 8204, 5713, 9900, 595, 4011, 1222, 5786, 4528, 1236, 709, 5134, 2]
+// Dependencies: [32, 4202, 4865, 1376, 5872, 1372, 1862, 4201, 1931, 4006, 676, 1379, 687, 3, 4860, 9596, 4121, 8201, 5713, 9897, 595, 4011, 1222, 5786, 4528, 1236, 709, 5134, 2]
 
-// Module 9899 (fetchMessages)
+// Module 9896 (fetchMessages)
 import _slicedToArray from "_slicedToArray";
 import getParticipants from "getParticipants";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -51,7 +51,7 @@ function fetchMessages(arg0) {
           let obj2 = importDefault(4860);
           const orCreate = obj2.getOrCreate(channelId);
           let orCreate1 = orCreate;
-          if (orCreate.some(require(9599) /* shouldRefreshAttachmentUrl */.messageHasExpiredAttachmentUrl)) {
+          if (orCreate.some(require(9596) /* shouldRefreshAttachmentUrl */.messageHasExpiredAttachmentUrl)) {
             tmp3.log("Found expired attachment link, clearing messages");
             let tmp9Result = tmp9(4860);
             tmp9Result.clear(channelId);
@@ -78,7 +78,7 @@ function fetchMessages(arg0) {
             if (!_handleConnectionOpen.isConnected()) {
               let flag = true;
             }
-            let hasUnreadResult = tmp9(8204)(channelId);
+            let hasUnreadResult = tmp9(8201)(channelId);
             if (hasUnreadResult) {
               hasUnreadResult = generateOldThreadCutoff.hasUnread(channelId);
             }
@@ -129,7 +129,7 @@ function fetchMessages(arg0) {
                     tmp3.log("Jumping to start of thread " + channel.id);
                     const obj1 = { channelId: null, limit: null, jump: null, isPreload: null, skipLocalFetch: null, avoidInitialScroll: null, fetchKey: null };
                     obj1[0] = channelId;
-                    let tmp11Result = tmp11(9900);
+                    let tmp11Result = tmp11(9897);
                     obj1[1] = tmp11Result.getMessageLimit("MessageManager.threadStart");
                     obj2 = { messageId: null, flash: false };
                     obj2[0] = channelId;
@@ -153,7 +153,7 @@ function fetchMessages(arg0) {
                       tmp3.log("Jumping to most recent message in thread " + channel.id + " - " + trackedAckMessageId);
                       const obj3 = { channelId: null, limit: null, jump: null, isPreload: null, skipLocalFetch: null, avoidInitialScroll: null, fetchKey: null };
                       obj3[0] = channelId;
-                      tmp11Result = tmp11(9900);
+                      tmp11Result = tmp11(9897);
                       obj3[1] = tmp11Result.getMessageLimit("MessageManager.threadUnread");
                       const obj4 = { messageId: null, flash: false, offset: 1 };
                       obj4[0] = trackedAckMessageId;
@@ -170,7 +170,7 @@ function fetchMessages(arg0) {
                 const obj5 = { channelId: null, limit: null, isPreload: null, skipLocalFetch: null, jump: null, avoidInitialScroll: null, fetchKey: null };
                 obj5[0] = channelId;
                 const tmp9Result6 = tmp9(5713);
-                obj5[1] = tmp11(9900).getMessageLimit("MessageManager.initialFetch");
+                obj5[1] = tmp11(9897).getMessageLimit("MessageManager.initialFetch");
                 obj5[2] = isPreload;
                 obj5[3] = skipLocalFetch;
                 const obj6 = { jumpType: null };
@@ -450,10 +450,10 @@ function handleLoadMessagesSuccess(jump) {
         let obj = importDefault(5713);
         obj = { channelId: null, limit: null, jump: null };
         obj[0] = channelId;
-        obj[1] = require(9900) /* getMessageLimit */.getMessageLimit("MessageManager.staleFetch");
+        obj[1] = require(9897) /* getMessageLimit */.getMessageLimit("MessageManager.staleFetch");
         obj[2] = jump.jump;
         const messages = obj.fetchMessages(obj);
-        const obj3 = require(9900) /* getMessageLimit */;
+        const obj3 = require(9897) /* getMessageLimit */;
       }
     }
     tmp = table;

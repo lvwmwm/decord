@@ -1,9 +1,9 @@
-// Module ID: 13824
-// Function ID: 13825
+// Module ID: 13819
+// Function ID: 13820
 // Name: pressable
-// Dependencies: [7756, 13825, 4528, 1236, 13775, 10120, 13776, 2]
+// Dependencies: [7753, 13820, 4528, 1236, 13770, 10116, 13771, 2]
 
-// Module 13824 (pressable)
+// Module 13819 (pressable)
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
@@ -27,7 +27,7 @@ const pressable = createToggle.createPressable({
     obj.show(obj);
   },
   useIsDisabled() {
-    return null !== require(13825) /* getSMSBackupDisabledMessage */.use2FARemoveDisableReason();
+    return null !== require(13820) /* getSMSBackupDisabledMessage */.use2FARemoveDisableReason();
   },
   useDescription: require("getSMSBackupDisabledMessage").use2FARemoveDisableReason,
   usePredicate: require("useIs2FAEnabled").useIsTOTPEnabled
@@ -53,7 +53,7 @@ let obj = {
     obj.show(obj);
   },
   useIsDisabled() {
-    return null !== require(13825) /* getSMSBackupDisabledMessage */.use2FARemoveDisableReason();
+    return null !== require(13820) /* getSMSBackupDisabledMessage */.use2FARemoveDisableReason();
   },
   useDescription: require("getSMSBackupDisabledMessage").use2FARemoveDisableReason,
   usePredicate: require("useIs2FAEnabled").useIsTOTPEnabled

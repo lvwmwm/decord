@@ -1,10 +1,10 @@
-// Module ID: 13997
-// Function ID: 13998
+// Module ID: 13992
+// Function ID: 13993
 // Name: OneWayToTwoWayNewTag
-// Dependencies: [19, 17, 676, 1369, 21, 4189, 712, 5109, 1297, 9664, 4185, 4600, 1236, 2]
+// Dependencies: [19, 17, 676, 1369, 21, 4189, 712, 5109, 1297, 9661, 4185, 4600, 1236, 2]
 // Exports: OneWayToTwoWayLinkUpsell
 
-// Module 13997 (OneWayToTwoWayNewTag)
+// Module 13992 (OneWayToTwoWayNewTag)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { Fonts } from "ME";
@@ -54,7 +54,7 @@ export const OneWayToTwoWayLinkUpsell = function OneWayToTwoWayLinkUpsell(newInd
   obj = { style: tmp.titleContainer, children: null };
   const items = [newIndicatorDismissibleContent];
   const items1 = [
-    callback(importDefault(9664), {
+    callback(importDefault(9661), {
       contentTypes: items,
       children(visibleContent) {
         let tmp2 = null;

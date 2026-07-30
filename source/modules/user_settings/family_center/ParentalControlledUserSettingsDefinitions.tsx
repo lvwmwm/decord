@@ -1,10 +1,10 @@
-// Module ID: 13857
-// Function ID: 13858
+// Module ID: 13852
+// Function ID: 13853
 // Name: defineParentalControlledSetting
 // Dependencies: [5796, 5795, 589, 2]
 // Exports: defineParentalControlledSetting, wrapParentalControlledSettingWithExperimentDefaults
 
-// Module 13857 (defineParentalControlledSetting)
+// Module 13852 (defineParentalControlledSetting)
 import getSettings from "getSettings";
 
 const require = arg1;
@@ -39,7 +39,7 @@ export const defineParentalControlledSetting = function defineParentalControlled
     getControlledSetting,
     updateControlledSetting: (arg0, arg1) => {
       let tmp = arg1;
-      if (typeof arg1 !== "_") {
+      if (typeof arg1 !== "ZodObject") {
         const settings = explicitContentToProto.getSettings(arg0);
         let tmp4;
         if (settings != null) {

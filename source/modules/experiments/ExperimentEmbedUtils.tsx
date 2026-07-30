@@ -1,10 +1,10 @@
-// Module ID: 7878
-// Function ID: 7879
+// Module ID: 7875
+// Function ID: 7876
 // Name: regExp
-// Dependencies: [4111, 7879, 7880, 2]
+// Dependencies: [4111, 7876, 7877, 2]
 // Exports: getExperimentBuckets, getExperimentFromEmbedURL, getExperimentServerAssignmentLabel, getExperimentTreatmentFromEmbedURL, getURLForExperiment, isExperimentEmbedURL
 
-// Module 7878 (regExp)
+// Module 7875 (regExp)
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
 const result = require("getExperimentVariantsForDevTools").fileFinishedImporting("modules/experiments/ExperimentEmbedUtils.tsx");
 
@@ -50,7 +50,7 @@ export const getExperimentServerAssignmentLabel = function getExperimentServerAs
     if (null != system) {
       const system2 = system.system;
       if (require(4111) /* trackExposureToExperiment */.ExperimentSystem.LEGACY === system2) {
-        return importDefault(7879).getExperimentBucketName(experimentServerAssignment.bucket);
+        return importDefault(7876).getExperimentBucketName(experimentServerAssignment.bucket);
       } else if (tmp4(4111).ExperimentSystem.APEX === system2) {
         const _HermesInternal = HermesInternal;
         return "Variant " + experimentServerAssignment.variantId;
@@ -64,6 +64,6 @@ export const getExperimentServerAssignmentLabel = function getExperimentServerAs
   return null;
 };
 export const getExperimentBuckets = function getExperimentBuckets(experiment) {
-  const experimentVariantsForDevTools = require(7880) /* getExperimentVariantsForDevTools */.getExperimentVariantsForDevTools(experiment);
+  const experimentVariantsForDevTools = require(7877) /* getExperimentVariantsForDevTools */.getExperimentVariantsForDevTools(experiment);
   return experimentVariantsForDevTools.map((id) => ({ id: id.id, label: id.label, value: id.id }));
 };

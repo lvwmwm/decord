@@ -1,10 +1,10 @@
-// Module ID: 16276
-// Function ID: 16277
+// Module ID: 16270
+// Function ID: 16271
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 7938, 676, 21, 4189, 712, 1581, 589, 7951, 16261, 7980, 4731, 7941, 7943, 4185, 1236, 16270, 4600, 16258, 2]
+// Dependencies: [5, 32, 19, 17, 7935, 676, 21, 4189, 712, 1581, 589, 7948, 16255, 7977, 4731, 7938, 7940, 4185, 1236, 16264, 4600, 16252, 2]
 // Exports: default
 
-// Module 16276 (RedesignAddAvatarModal)
+// Module 16270 (RedesignAddAvatarModal)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import TouchableUploadAvatar from "TouchableUploadAvatar";
@@ -100,19 +100,19 @@ export default function RedesignAddAvatarModal(route) {
             if (null == base64) {
               let pendingImage;
               if (null != outer1_0) {
-                obj = outer1_0(7951);
+                obj = outer1_0(7948);
                 const obj4 = { imageUri: null, description: null };
                 obj4[0] = base64;
-                obj2 = outer1_0(7951);
+                obj2 = outer1_0(7948);
                 obj4[1] = obj2.generateAvatarDescription();
                 pendingImage = obj.createPendingImage(obj4);
               }
               outer1_1 = pendingImage;
-              obj3 = outer1_0(7941);
+              obj3 = outer1_0(7938);
               let obj5 = { avatar: null };
               obj5[0] = outer1_1;
               obj3.setPendingChanges(obj5);
-              obj5 = outer1_0(7943);
+              obj5 = outer1_0(7940);
               let str = "set";
               if (null == outer1_1) {
                 str = "remove";

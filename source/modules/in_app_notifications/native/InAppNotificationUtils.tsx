@@ -1,10 +1,10 @@
-// Module ID: 10261
-// Function ID: 10262
+// Module ID: 10256
+// Function ID: 10257
 // Name: extractMetadataFromNotification
-// Dependencies: [19, 10262, 676, 12, 514, 501, 5884, 4384, 2]
-// Exports: generateInAppNotificationId, getMessagePreviewTextVariant, isReactionMilestoneNotification, trackDismissed, trackInAppNotificationAccessoryClicked, useHasPreviewableMedia
+// Dependencies: [19, 10257, 676, 12, 514, 501, 687, 5882, 4384, 2]
+// Exports: generateInAppNotificationId, getMessagePreviewTextVariant, getNotificationDuration, isReactionMilestoneNotification, trackDismissed, trackInAppNotificationAccessoryClicked, useHasPreviewableMedia
 
-// Module 10261 (extractMetadataFromNotification)
+// Module 10256 (extractMetadataFromNotification)
 import noop from "noop";
 import { REACTION_MILESTONE_COUNTS } from "set";
 import ME from "ME";
@@ -159,6 +159,33 @@ export const getMessagePreviewTextVariant = function getMessagePreviewTextVarian
   }
   return str;
 };
+export const getNotificationDuration = function getNotificationDuration(ALERT) {
+  if (constants3.MESSAGE !== ALERT) {
+    if (tmp.MESSAGE_FAILED_TO_SEND !== ALERT) {
+      if (tmp.FORUM_THREAD_CREATED !== ALERT) {
+        if (tmp.BUG_REPORTER !== ALERT) {
+          if (tmp.REACTION !== ALERT) {
+            if (tmp.MESSAGE_REQUEST !== ALERT) {
+              if (tmp.ALERT === ALERT) {
+                return 30 * importDefault(687).Millis.SECOND;
+              } else {
+                if (tmp.MESSAGE_REMINDER !== ALERT) {
+                  if (tmp.RESTRICTED_HOURS_WARNING !== ALERT) {
+                    if (tmp.RESTRICTED_SCHEDULE_UPDATED === ALERT) {
+                      return 7 * importDefault(687).Millis.SECOND;
+                    }
+                  }
+                }
+                return 10 * importDefault(687).Millis.SECOND;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  return 5 * importDefault(687).Millis.SECOND;
+};
 export const useHasPreviewableMedia = function useHasPreviewableMedia(message) {
   let closure_0 = message;
   const items = [message];
@@ -179,7 +206,7 @@ export const useHasPreviewableMedia = function useHasPreviewableMedia(message) {
       hasFlagResult = tmp.stickerItems.length > 0;
     }
     if (!hasFlagResult) {
-      let someResult = outer1_1(outer1_2[6])(tmp);
+      let someResult = outer1_1(outer1_2[7])(tmp);
       if (someResult) {
         const messageSnapshots = tmp.messageSnapshots;
         someResult = messageSnapshots.some((message) => {

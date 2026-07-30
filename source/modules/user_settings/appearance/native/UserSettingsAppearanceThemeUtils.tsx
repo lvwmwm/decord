@@ -1,10 +1,10 @@
-// Module ID: 14200
-// Function ID: 14201
+// Module ID: 14196
+// Function ID: 14197
 // Name: handleSaveTheme
-// Dependencies: [4001, 1346, 1302, 1305, 676, 4002, 1876, 4003, 1306, 14201, 11142, 6206, 3899, 4031, 698, 2]
+// Dependencies: [4001, 1346, 1302, 1305, 676, 4002, 1876, 4003, 1306, 14197, 11138, 6203, 3899, 4031, 698, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme, getSyncedModeThemeIndex, getUserThemeIndex, handleSaveSyncedModeTheme, handleSaveTheme, trackClientThemeUpdated
 
-// Module 14200 (handleSaveTheme)
+// Module 14196 (handleSaveTheme)
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import reset from "reset";
 import handleThemeChange from "handleThemeChange";
@@ -33,43 +33,43 @@ export const handleSaveTheme = function handleSaveTheme(found, analyticsLocation
     obj[4] = analyticsLocations;
     obj.track(constants2.CLIENT_THEME_UPDATED, obj);
     if ("system" === found.theme) {
-      let tmpResult = tmp(14201);
+      let tmpResult = tmp(14197);
       const result = tmpResult.resetBackgroundGradientPreset();
-      tmpResult = tmp(11142);
+      tmpResult = tmp(11138);
       tmpResult.resetCustomTheme();
       obj = { theme: null };
       obj[0] = found.theme;
-      let saveClientThemeResult = tmp(6206).saveClientTheme(obj);
-      const tmpResult1 = tmp(6206);
+      let saveClientThemeResult = tmp(6203).saveClientTheme(obj);
+      const tmpResult1 = tmp(6203);
     } else if (found.type === tmp(4003).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
-      const result1 = tmp(14201).resetBackgroundGradientPreset();
-      const tmpResult2 = tmp(14201);
-      tmp(11142).updateCustomTheme(found.customThemeSettings, found.theme);
-      const tmpResult3 = tmp(11142);
+      const result1 = tmp(14197).resetBackgroundGradientPreset();
+      const tmpResult2 = tmp(14197);
+      tmp(11138).updateCustomTheme(found.customThemeSettings, found.theme);
+      const tmpResult3 = tmp(11138);
       const obj1 = { customUserThemeSettings: null, theme: null };
       obj1[0] = found.customThemeSettings;
-      const tmpResult4 = tmp(6206);
+      const tmpResult4 = tmp(6203);
       obj1[1] = tmp(3899).isThemeDark(found.theme) ? closure_9.DARK : closure_9.LIGHT;
       tmpResult4.saveClientTheme(obj1);
       const tmpResult5 = tmp(3899);
     } else if (found.type === tmp(4003).ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
-      const result2 = tmp(14201).updateBackgroundGradientPreset(found.id);
-      const tmpResult6 = tmp(14201);
-      tmp(11142).resetCustomTheme();
-      const tmpResult7 = tmp(11142);
+      const result2 = tmp(14197).updateBackgroundGradientPreset(found.id);
+      const tmpResult6 = tmp(14197);
+      tmp(11138).resetCustomTheme();
+      const tmpResult7 = tmp(11138);
       ({ id: obj10[0], theme: obj10[1] } = found);
-      saveClientThemeResult = tmp(6206).saveClientTheme({ backgroundGradientPresetId: null, theme: null });
+      saveClientThemeResult = tmp(6203).saveClientTheme({ backgroundGradientPresetId: null, theme: null });
       const obj2 = { backgroundGradientPresetId: null, theme: null };
-      const tmpResult8 = tmp(6206);
+      const tmpResult8 = tmp(6203);
     } else {
-      const result3 = tmp(14201).resetBackgroundGradientPreset();
-      const tmpResult9 = tmp(14201);
-      tmp(11142).resetCustomTheme();
-      const tmpResult10 = tmp(11142);
+      const result3 = tmp(14197).resetBackgroundGradientPreset();
+      const tmpResult9 = tmp(14197);
+      tmp(11138).resetCustomTheme();
+      const tmpResult10 = tmp(11138);
       const obj3 = { theme: null };
       obj3[0] = found.theme;
-      saveClientThemeResult = tmp(6206).saveClientTheme(obj3);
-      const tmpResult11 = tmp(6206);
+      saveClientThemeResult = tmp(6203).saveClientTheme(obj3);
+      const tmpResult11 = tmp(6203);
     }
     return saveClientThemeResult;
   } else if (found.type === tmp(4003).ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
@@ -161,7 +161,7 @@ export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme() {
   if (gradientPreset != null) {
     const id = gradientPreset.id;
   }
-  const result = importDefault(6206).setShouldSyncAppearanceSettings(false);
+  const result = importDefault(6203).setShouldSyncAppearanceSettings(false);
   let tmpResult = tmp(4031);
   const result1 = tmpResult.updateThemePreferences({ [tmp4]: theme });
   if (null != customTheme) {
@@ -178,7 +178,7 @@ export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme() {
     const result4 = tmp(4031).updateSyncedClientTheme(tmp4, undefined);
     const tmpResult2 = tmp(4031);
   }
-  const obj2 = importDefault(6206);
+  const obj2 = importDefault(6203);
   require(4031) /* setSystemTheme */.setUseSystemTheme(constants.ON);
   const tmpResult3 = require(4031) /* setSystemTheme */;
   const result5 = require(4031) /* setSystemTheme */.setSameAsDeviceThemeEnabled(true);

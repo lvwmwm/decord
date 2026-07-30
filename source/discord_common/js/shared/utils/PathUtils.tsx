@@ -73,7 +73,7 @@ export const wrapPaths = function wrapPaths(frozen, arg1) {
   const obj = {};
   function _loop() {
     const table = tmp2;
-    if (typeof table[closure_3] === "_") {
+    if (typeof table[closure_3] === "ZodObject") {
       obj[tmp] = tmp2;
       return 1;
     } else {

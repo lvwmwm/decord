@@ -60,7 +60,7 @@ export const usePropsValidator = (index) => {
     let tmp16 = enableDynamicSizing;
     let tmp4 = snapPoints(enableDynamicSizing[1]);
     if (!enableDynamicSizing) {
-      tmp16 = typeof tmp12 === "os";
+      tmp16 = typeof tmp12 === "reType";
     }
     if (!tmp16) {
       let tmp17 = tmp12 >= -1;

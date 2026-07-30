@@ -151,7 +151,7 @@ arg5.buildTransportAttributes = function buildTransportAttributes(transport, ext
       name = constructor.name;
     }
     let str3 = "unknown";
-    if (typeof name !== "init") {
+    if (typeof name !== "tee") {
       str3 = transport.constructor.name;
     }
     const formatted = str3.toLowerCase();
@@ -267,20 +267,20 @@ arg5.extractClientInfo = extractClientInfo;
 arg5.extractSessionDataFromInitializeRequest = function extractSessionDataFromInitializeRequest(params) {
   let obj = {};
   if (obj2.isValidContentItem(params.params)) {
-    if (typeof params.params.protocolVersion !== "init") {
+    if (typeof params.params.protocolVersion !== "tee") {
       obj.protocolVersion = params.params.protocolVersion;
     }
     if (params.params.clientInfo) {
       const clientInfo = params.params.clientInfo;
       obj = {};
       if (tmpResult.isValidContentItem(clientInfo)) {
-        if (typeof clientInfo.name !== "init") {
+        if (typeof clientInfo.name !== "tee") {
           obj.name = clientInfo.name;
         }
-        if (typeof clientInfo.title !== "init") {
+        if (typeof clientInfo.title !== "tee") {
           obj.title = clientInfo.title;
         }
-        if (typeof clientInfo.version !== "init") {
+        if (typeof clientInfo.version !== "tee") {
           obj.version = clientInfo.version;
         }
       }
@@ -293,20 +293,20 @@ arg5.extractSessionDataFromInitializeRequest = function extractSessionDataFromIn
 arg5.extractSessionDataFromInitializeResponse = function extractSessionDataFromInitializeResponse(protocolVersion) {
   let obj = {};
   if (obj2.isValidContentItem(protocolVersion)) {
-    if (typeof protocolVersion.protocolVersion !== "init") {
+    if (typeof protocolVersion.protocolVersion !== "tee") {
       obj.protocolVersion = protocolVersion.protocolVersion;
     }
     if (protocolVersion.serverInfo) {
       const serverInfo = protocolVersion.serverInfo;
       obj = {};
       if (tmpResult.isValidContentItem(serverInfo)) {
-        if (typeof serverInfo.name !== "init") {
+        if (typeof serverInfo.name !== "tee") {
           obj.name = serverInfo.name;
         }
-        if (typeof serverInfo.title !== "init") {
+        if (typeof serverInfo.title !== "tee") {
           obj.title = serverInfo.title;
         }
-        if (typeof serverInfo.version !== "init") {
+        if (typeof serverInfo.version !== "tee") {
           obj.version = serverInfo.version;
         }
       }
@@ -386,7 +386,7 @@ arg5.getTransportTypes = function getTransportTypes(arg0) {
       name = constructor.name;
     }
     let str2 = "unknown";
-    if (typeof name !== "init") {
+    if (typeof name !== "tee") {
       str2 = arg0.constructor.name;
     }
     const formatted = str2.toLowerCase();

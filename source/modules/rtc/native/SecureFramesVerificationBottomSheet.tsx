@@ -1,10 +1,10 @@
-// Module ID: 8908
-// Function ID: 8909
+// Module ID: 8904
+// Function ID: 8905
 // Name: SecureFramesVerificationBottomSheet
-// Dependencies: [19, 17, 8894, 21, 4189, 712, 8899, 4157, 5243, 5242, 5552, 4717, 1236, 4185, 4598, 4709, 8906, 8909, 2]
+// Dependencies: [19, 17, 8890, 21, 4189, 712, 8895, 4157, 5243, 5242, 5552, 4717, 1236, 4185, 4598, 4709, 8902, 8905, 2]
 // Exports: default
 
-// Module 8908 (SecureFramesVerificationBottomSheet)
+// Module 8904 (SecureFramesVerificationBottomSheet)
 import noop from "noop";
 import { View } from "SecureFramesCopyIcon";
 import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY";
@@ -39,7 +39,7 @@ export default function SecureFramesVerificationBottomSheet(onShareClick) {
   let readableSecureFramesFingerprint;
   ({ title, subtitle, footer, epochAuthenticator } = onShareClick);
   const tmp = createCacheKey();
-  let obj = onShareClick(8899);
+  let obj = onShareClick(8895);
   obj = { fingerprintBase64: epochAuthenticator, chunkSize: closure_5, desiredLength: closure_7 };
   readableSecureFramesFingerprint = obj.useReadableSecureFramesFingerprint(obj);
   const items = [readableSecureFramesFingerprint, onShareClick];
@@ -82,12 +82,12 @@ export default function SecureFramesVerificationBottomSheet(onShareClick) {
   if (tmp7Result) {
     const obj10 = { chunks: null };
     obj10[0] = readableSecureFramesFingerprint;
-    tmp7Result = tmp7(readableSecureFramesFingerprint(8909), obj10);
+    tmp7Result = tmp7(readableSecureFramesFingerprint(8905), obj10);
   }
   obj9[1] = tmp7Result;
   obj9[2] = readableSecureFramesFingerprint;
   obj9[3] = closure_6;
-  items2[1] = callback(readableSecureFramesFingerprint(8906), obj9);
+  items2[1] = callback(readableSecureFramesFingerprint(8902), obj9);
   items2[2] = callback(onShareClick(4185).Text, { style: tmp.footer, variant: "text-xs/normal", color: "text-muted", children: footer });
   obj4[1] = items2;
   obj[2] = callback2(View, obj4);

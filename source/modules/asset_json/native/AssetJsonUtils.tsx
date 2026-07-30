@@ -66,7 +66,7 @@ function _loadJsonAsset() {
               DCDFileManager = undefined;
               closure_4 = 1;
               DCDFileManager = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

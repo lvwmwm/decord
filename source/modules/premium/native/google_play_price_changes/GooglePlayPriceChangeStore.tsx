@@ -1,9 +1,9 @@
-// Module ID: 15760
-// Function ID: 15761
+// Module ID: 15754
+// Function ID: 15755
 // Name: onInitializeSync
 // Dependencies: [3841, 676, 500, 589, 709, 2]
 
-// Module 15760 (onInitializeSync)
+// Module 15754 (onInitializeSync)
 import reset from "reset";
 import { Store } from "initialize";
 import set from "set";

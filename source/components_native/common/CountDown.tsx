@@ -1,9 +1,9 @@
-// Module ID: 10189
-// Function ID: 10190
+// Module ID: 10185
+// Function ID: 10186
 // Name: componentDidMount
 // Dependencies: [19, 21, 1236, 687, 4185, 2]
 
-// Module 10189 (componentDidMount)
+// Module 10185 (componentDidMount)
 import { jsx } from "jsxProd";
 import { Component } from "noop";
 import importAllResult from "noop";

@@ -1,10 +1,10 @@
-// Module ID: 16526
-// Function ID: 16527
+// Module ID: 16520
+// Function ID: 16521
 // Name: EligibilityActionSheet
-// Dependencies: [19, 676, 21, 4189, 4157, 8304, 6611, 16527, 5243, 4185, 1236, 16531, 2]
+// Dependencies: [19, 676, 21, 4189, 4157, 8301, 6608, 16521, 5243, 4185, 1236, 16525, 2]
 // Exports: default
 
-// Module 16526 (EligibilityActionSheet)
+// Module 16520 (EligibilityActionSheet)
 import noop from "noop";
 import { UserSettingsSections } from "ME";
 import jsxProd from "jsxProd";
@@ -27,10 +27,10 @@ export default function EligibilityActionSheet(onRequireModeratorMFAClick) {
       onEnableMFAClick() {
         let obj = callback2(4157);
         obj.hideActionSheet(closure_7);
-        callback2(8304).close();
-        const obj2 = callback2(8304);
+        callback2(8301).close();
+        const obj2 = callback2(8301);
         obj = { screen: constants.ACCOUNT };
-        callback(6611).openUserSettings(obj);
+        callback(6608).openUserSettings(obj);
       },
       onRequireModeratorMFAClick() {
         outer1_1(outer1_2[4]).hideActionSheet(outer1_7);
@@ -44,8 +44,8 @@ export default function EligibilityActionSheet(onRequireModeratorMFAClick) {
   const intl = onRequireModeratorMFAClick(1236).intl;
   obj[3] = intl.string(onRequireModeratorMFAClick(1236).t["3s47iN"]);
   const items1 = [callback(onRequireModeratorMFAClick(4185).Heading, obj), ];
-  obj = { style: tmp.container, items: importDefault(16527)(onRequireModeratorMFAClick.eligibility, memo) };
-  items1[1] = callback(importDefault(16531), obj);
+  obj = { style: tmp.container, items: importDefault(16521)(onRequireModeratorMFAClick.eligibility, memo) };
+  items1[1] = callback(importDefault(16525), obj);
   obj[1] = items1;
   return callback2(onRequireModeratorMFAClick(5243).BottomSheet, obj);
 };

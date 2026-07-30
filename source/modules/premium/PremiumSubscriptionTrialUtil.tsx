@@ -1,10 +1,10 @@
-// Module ID: 7840
-// Function ID: 7841
+// Module ID: 7837
+// Function ID: 7838
 // Name: useHasActiveTrial
-// Dependencies: [1874, 3841, 6211, 1876, 589, 6244, 2]
+// Dependencies: [1874, 3841, 6208, 1876, 589, 6241, 2]
 // Exports: getPremiumTrialOffer, hasActiveTrial, isEligibleTrialSub, useCurrentPremiumTrialTier, useHasActiveTrial
 
-// Module 7840 (useHasActiveTrial)
+// Module 7837 (useHasActiveTrial)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import reset from "reset";
 import emitChanges from "emitChanges";

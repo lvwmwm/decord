@@ -1,10 +1,10 @@
-// Module ID: 6613
-// Function ID: 6614
+// Module ID: 6610
+// Function ID: 6611
 // Name: AppsIcon
-// Dependencies: [19, 21, 712, 3892, 6614, 2]
+// Dependencies: [19, 21, 712, 3892, 6611, 2]
 // Exports: AppsIcon
 
-// Module 6613 (AppsIcon)
+// Module 6610 (AppsIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const AppsIcon = function AppsIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(6614) /* registerAsset */;
+  obj[0] = require(6611) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

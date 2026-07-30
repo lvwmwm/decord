@@ -18,7 +18,7 @@ class EventEmitter {
   }
 }
 function _addListener(_events, type, listener, arg3) {
-  if (typeof listener === "_") {
+  if (typeof listener === "ZodObject") {
     const _TypeError = TypeError;
     const typeError = new TypeError("The \"listener\" argument must be of type Function. Received type " + typeof listener);
     throw typeError;
@@ -236,7 +236,7 @@ if (null) {
         return;
       }
       setMaxListeners(arg0) {
-        if (typeof global !== "os") {
+        if (typeof global !== "reType") {
           num = 0;
           if (global >= 0) {
             tmp = NumberIsNaN;
@@ -351,7 +351,7 @@ if (null) {
         return this;
       }
       once(arg0, arg1) {
-        if (typeof require === "_") {
+        if (typeof require === "ZodObject") {
           tmp = globalThis;
           _TypeError = TypeError;
           tmp2 = new.target;
@@ -363,7 +363,7 @@ if (null) {
         } else {
           self = this;
           tmp6 = global;
-          obj = { fired: false, wrapFn: "a", target: "<string:134218590>", type: "<string:3087008493>", listener: "<string:436208454>" };
+          obj = { fired: false, wrapFn: "a", target: "<string:910295043>", type: "<string:1665597441>", listener: "<string:4160749925>" };
           obj[2] = this;
           obj[3] = global;
           obj[4] = require;
@@ -376,7 +376,7 @@ if (null) {
         }
       }
       prependOnceListener(arg0, arg1) {
-        if (typeof require === "_") {
+        if (typeof require === "ZodObject") {
           tmp = globalThis;
           _TypeError = TypeError;
           tmp2 = new.target;
@@ -388,7 +388,7 @@ if (null) {
         } else {
           self = this;
           tmp6 = global;
-          obj = { fired: false, wrapFn: "a", target: "<string:134218590>", type: "<string:3087008493>", listener: "<string:436208454>" };
+          obj = { fired: false, wrapFn: "a", target: "<string:910295043>", type: "<string:1665597441>", listener: "<string:4160749925>" };
           obj[2] = this;
           obj[3] = global;
           obj[4] = require;
@@ -401,7 +401,7 @@ if (null) {
         }
       }
       removeListener(arg0, arg1) {
-        if (typeof require === "_") {
+        if (typeof require === "ZodObject") {
           tmp14 = globalThis;
           _TypeError = TypeError;
           tmp15 = new.target;
@@ -621,7 +621,7 @@ if (null) {
           error(arg0);
         }
         function resolver() {
-          if (typeof obj.removeListener !== "_") {
+          if (typeof obj.removeListener !== "ZodObject") {
             obj.removeListener("error", errorListener);
           }
           const slice = [].slice;
@@ -642,7 +642,7 @@ if (null) {
           } else {
             obj.on(tmp, resolver);
           }
-        } else if (typeof obj.addEventListener === "_") {
+        } else if (typeof obj.addEventListener === "ZodObject") {
           const _TypeError = TypeError;
           const typeError = new TypeError("The \"emitter\" argument must be of type EventEmitter. Received type " + typeof obj);
           throw typeError;
@@ -657,7 +657,7 @@ if (null) {
           const listener = obj.addEventListener(tmp, wrapListener);
         }
         if ("error" !== error) {
-          if (typeof obj.on !== "_") {
+          if (typeof obj.on !== "ZodObject") {
             obj = { once: true };
             error = "error";
             if (typeof obj.on === "find") {
@@ -666,7 +666,7 @@ if (null) {
               } else {
                 obj.on("error", errorListener);
               }
-            } else if (typeof obj.addEventListener === "_") {
+            } else if (typeof obj.addEventListener === "ZodObject") {
               const _TypeError2 = TypeError;
               const typeError1 = new TypeError("The \"emitter\" argument must be of type EventEmitter. Received type " + typeof obj);
               throw typeError1;
@@ -701,7 +701,7 @@ if (null) {
       return c4;
     };
     obj[2] = function set(arg0) {
-      if (typeof arg0 !== "os") {
+      if (typeof arg0 !== "reType") {
         if (arg0 >= 0) {
           if (!tmp3(arg0)) {
             let closure_4 = arg0;

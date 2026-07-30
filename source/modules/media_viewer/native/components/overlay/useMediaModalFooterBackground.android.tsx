@@ -1,10 +1,10 @@
-// Module ID: 12311
-// Function ID: 12312
+// Module ID: 12305
+// Function ID: 12306
 // Name: useMediaModalFooterBackground
 // Dependencies: [32, 689, 3893, 712, 2]
 // Exports: default
 
-// Module 12311 (useMediaModalFooterBackground)
+// Module 12305 (useMediaModalFooterBackground)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -15,5 +15,5 @@ export default function useMediaModalFooterBackground() {
   const tmp = importDefault(689);
   const tmp2 = callback(importDefault(689)(mediaModalFooterBackgroundColorRgba.useToken(importDefault(712).colors.THEME_LOCKED_BLUR_FALLBACK)).rgba(), 4);
   mediaModalFooterBackgroundColorRgba = { r: tmp2[0], g: tmp2[1], b: tmp2[2], a: tmp2[3] };
-  return { mediaModalFooterBackgroundColorRgba, MediaModalFooterUnderlay: "r" };
+  return { mediaModalFooterBackgroundColorRgba, MediaModalFooterUnderlay: "a" };
 };

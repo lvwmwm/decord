@@ -1,10 +1,10 @@
-// Module ID: 9001
-// Function ID: 9002
+// Module ID: 8997
+// Function ID: 8998
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 676, 21, 4189, 4871, 1236, 4995, 3886, 9002, 5177, 4185, 8995, 1297, 4600, 5143, 5570, 2]
+// Dependencies: [5, 32, 19, 676, 21, 4189, 4871, 1236, 4995, 3886, 8998, 5177, 4185, 8991, 1297, 4600, 5143, 5570, 2]
 // Exports: default
 
-// Module 9001 (FederatedSocialModal)
+// Module 8997 (FederatedSocialModal)
 import closure_3 from "createCacheKey";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

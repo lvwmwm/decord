@@ -1,10 +1,10 @@
-// Module ID: 7046
-// Function ID: 7047
+// Module ID: 7043
+// Function ID: 7044
 // Name: GameCartridgeSpotIllustration
-// Dependencies: [21, 5141, 7047, 2]
+// Dependencies: [21, 5141, 7044, 2]
 // Exports: GameCartridgeSpotIllustration
 
-// Module 7046 (GameCartridgeSpotIllustration)
+// Module 7043 (GameCartridgeSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GameCartridgeSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const GameCartridgeSpotIllustration = function GameCartridgeSpotIllustrat
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7047);
+  obj[0] = importDefault(7044);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

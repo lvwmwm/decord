@@ -1,9 +1,9 @@
-// Module ID: 16311
-// Function ID: 16312
+// Module ID: 16305
+// Function ID: 16306
 // Name: prototype
-// Dependencies: [9556, 9935, 5134, 2]
+// Dependencies: [9552, 9931, 5134, 2]
 
-// Module 16311 (prototype)
+// Module 16305 (prototype)
 import "initialize";
 
 let require = arg1;
@@ -16,9 +16,9 @@ let prototype = function SavedMessagesManager() {
     }
   };
   applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
-    if (obj.getConfig({ location: "saved_messages_manager" }).enabled) {
+    if (obj.isForLaterExperimentOn("saved_messages_manager")) {
       const andUpdateSavedMessages = applyArgumentsResult(table[1]).fetchAndUpdateSavedMessages();
-      const obj2 = applyArgumentsResult(table[1]);
+      const tmpResult = applyArgumentsResult(table[1]);
     }
   };
   return applyArgumentsResult;

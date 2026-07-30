@@ -1,8 +1,8 @@
-// Module ID: 15941
-// Function ID: 15942
-// Dependencies: [19, 21, 5129, 5568, 5220, 1236, 5226, 12983, 2]
+// Module ID: 15935
+// Function ID: 15936
+// Dependencies: [19, 21, 5129, 5568, 5220, 1236, 5226, 12978, 2]
 
-// Module 15941
+// Module 15935
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
@@ -24,7 +24,7 @@ const memoResult = importAllResult.memo(function VoicePanelChannelOptInNotice(ch
   const intl2 = channel(1236).intl;
   obj[1] = intl2.string(channel(1236).t.PDUCIN);
   obj = { IconComponent: null };
-  obj[0] = channel(12983).ChannelListMagnifyingGlassIcon;
+  obj[0] = channel(12978).ChannelListMagnifyingGlassIcon;
   obj[2] = jsx(channel(5226).TableRowIcon, { IconComponent: null });
   obj[3] = callback;
   obj[1] = jsx(channel(5220).TableRow, { IconComponent: null });

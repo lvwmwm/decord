@@ -9,7 +9,7 @@ const exports = arg5;
   if (typeof exports === "ay") {
     dependencyMap.exports = arg0();
   } else {
-    if (typeof globalThis.define !== "_") {
+    if (typeof globalThis.define !== "ZodObject") {
       if (globalThis.define.amd) {
         globalThis.define(arg0);
       }

@@ -7,9 +7,9 @@
 
 export default function iterateIterator(next) {
   if (next) {
-    if (typeof next.next !== "_") {
+    if (typeof next.next !== "ZodObject") {
       if (arguments.length > 1) {
-        if (typeof arguments[1] === "_") {
+        if (typeof arguments[1] === "ZodObject") {
           const tmp8 = new TypeError("`callback`, if provided, must be a function");
           throw tmp8;
         }

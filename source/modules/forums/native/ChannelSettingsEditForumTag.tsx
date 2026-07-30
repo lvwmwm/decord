@@ -1,10 +1,10 @@
-// Module ID: 15682
-// Function ID: 15683
+// Module ID: 15676
+// Function ID: 15677
 // Name: ChannelSettingsEditForumTag
-// Dependencies: [32, 19, 17, 5048, 1372, 1877, 21, 4189, 712, 1480, 589, 4185, 1236, 9135, 6752, 4598, 5554, 5220, 4717, 9336, 5206, 1416, 6576, 1297, 6736, 5555, 4529, 2]
+// Dependencies: [32, 19, 17, 5048, 1372, 1877, 21, 4189, 712, 1480, 589, 4185, 1236, 9131, 6749, 4598, 5554, 5220, 4717, 9332, 5206, 1416, 6573, 1297, 6733, 5555, 4529, 2]
 // Exports: default
 
-// Module 15682 (ChannelSettingsEditForumTag)
+// Module 15676 (ChannelSettingsEditForumTag)
 import _slicedToArray from "_slicedToArray";
 import EMOJI_PICKER_ACTION_SHEET_KEY from "EMOJI_PICKER_ACTION_SHEET_KEY";
 import { View } from "TableRowInner";
@@ -235,7 +235,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
       };
       setOptions(obj);
     } else {
-      setOptions({ headerRight: "r" });
+      setOptions({ headerRight: "Array" });
     }
   }, items5);
   obj = { style: tmp.container, children: null };
@@ -270,7 +270,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
           usableCustomEmojiById(null);
           callback("");
         };
-        obj5[2] = tmp27(tmp3(6736).CircleXIcon, { size: "xs" });
+        obj5[2] = tmp27(tmp3(6733).CircleXIcon, { size: "xs" });
         let tmp27Result = tmp27(tmp3(4717).PressableOpacity, obj5);
       } else {
         tmp27Result = null;
@@ -368,5 +368,5 @@ export default function ChannelSettingsEditForumTag(channelId) {
     tmp31 = tag;
     const tmp32 = tag(5206);
   }
-  tmp27Result1 = tmp27(tmp3(6576).ReactionIcon, {});
+  tmp27Result1 = tmp27(tmp3(6573).ReactionIcon, {});
 };

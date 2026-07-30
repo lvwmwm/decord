@@ -1,10 +1,10 @@
-// Module ID: 16130
-// Function ID: 16131
+// Module ID: 16124
+// Function ID: 16125
 // Name: AgeGateVerify
-// Dependencies: [19, 17, 21, 4189, 712, 4403, 4405, 5177, 6785, 4185, 4600, 6747, 6749, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4403, 4405, 5177, 6782, 4185, 4600, 6744, 6746, 2]
 // Exports: default
 
-// Module 16130 (AgeGateVerify)
+// Module 16124 (AgeGateVerify)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,7 +35,7 @@ export default function AgeGateVerify(source) {
   let obj1 = require(4405) /* useShouldCallReactiveCheck */;
   const maybePerformReactiveCheckForSource = obj1.useMaybePerformReactiveCheckForSource(source);
   obj = { top: true, style: tmp.container, children: null };
-  const items = [callback(require(6785) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, {}), , , ];
+  const items = [callback(require(6782) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, {}), , , ];
   obj = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: verifyTitle };
   items[1] = callback(require(4185) /* Text */.Text, obj);
   obj1 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: verifyGateDescription };
@@ -47,8 +47,8 @@ export default function AgeGateVerify(source) {
     const obj3 = { text: null, onPress: null, grow: true };
     obj3[0] = verifyAgreementButtonText;
     obj3[1] = function onPress() {
-      let obj = callback2(6747);
-      obj = { entryPoint: callback(6749).AgeVerificationModalEntryPoint.NSFW_AGE_GATE };
+      let obj = callback2(6744);
+      obj = { entryPoint: callback(6746).AgeVerificationModalEntryPoint.NSFW_AGE_GATE };
       const result = obj.showAgeVerificationGetStartedModal(obj);
     };
     obj2[1] = tmp7(require(4600) /* Button */.Button, obj3);

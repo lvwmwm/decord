@@ -1,10 +1,10 @@
-// Module ID: 7968
-// Function ID: 7969
+// Module ID: 7965
+// Function ID: 7966
 // Name: PremiumFeaturesBackground
-// Dependencies: [19, 6227, 1876, 21, 4189, 712, 689, 4611, 691, 2]
+// Dependencies: [19, 6224, 1876, 21, 4189, 712, 689, 4611, 691, 2]
 // Exports: default
 
-// Module 7968 (PremiumFeaturesBackground)
+// Module 7965 (PremiumFeaturesBackground)
 import "noop";
 import { Gradients } from "items";
 import { PremiumTypes } from "GuildFeatures";

@@ -1,9 +1,9 @@
-// Module ID: 6073
-// Function ID: 6074
+// Module ID: 6071
+// Function ID: 6072
 // Name: reactionKey
-// Dependencies: [3818, 1882, 1372, 1874, 6074, 589, 6075, 709, 2]
+// Dependencies: [3818, 1882, 1372, 1874, 6072, 589, 6073, 709, 2]
 
-// Module 6073 (reactionKey)
+// Module 6071 (reactionKey)
 import initialize from "initialize";
 import createdAt from "createdAt";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -114,9 +114,9 @@ prototype2["getReactions"] = function getReactions(channelId, messageId, emoji, 
     obj[2] = emoji;
     obj[3] = closure_9;
     obj[4] = VOTE;
-    const reactors = importAll(6075).getReactors(obj);
+    const reactors = importAll(6073).getReactors(obj);
     ensureResult.fetched = true;
-    const obj2 = importAll(6075);
+    const obj2 = importAll(6073);
   }
   return ensureResult.users;
 };

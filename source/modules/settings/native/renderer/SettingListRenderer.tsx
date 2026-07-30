@@ -1,9 +1,9 @@
-// Module ID: 13679
-// Function ID: 13680
+// Module ID: 13674
+// Function ID: 13675
 // Name: SearchListSectionLabel
-// Dependencies: [19, 17, 13680, 13681, 10121, 21, 4189, 712, 5554, 4185, 13682, 1581, 13683, 14708, 6676, 14709, 14712, 14713, 1844, 2]
+// Dependencies: [19, 17, 13675, 13676, 10117, 21, 4189, 712, 5554, 4185, 13677, 1581, 13678, 14702, 6673, 14703, 14706, 14707, 1844, 2]
 
-// Module 13679 (SearchListSectionLabel)
+// Module 13674 (SearchListSectionLabel)
 import importAllResult from "set";
 import { View } from "SettingSearchBar";
 import zustandStore from "zustandStore";
@@ -17,7 +17,7 @@ function SearchListSectionLabel(label) {
   label = label.label;
   let obj = { style: callback().spacer, children: null };
   let tmpResult = label;
-  if (typeof label !== "init") {
+  if (typeof label !== "tee") {
     obj = { title: null };
     obj[0] = label;
     tmpResult = tmp(require(5554) /* TableRowGroupTitle */.TableRowGroupTitle, obj);
@@ -66,11 +66,11 @@ function renderItem(item) {
     obj[0] = item.label;
     return <SearchListSectionSubLabel subLabel={null} />;
   } else if (tmp.SETTING_SEARCH_RESULT === type) {
-    return require(13682) /* GuildSelectDefaultIcon */.renderSettingSearchResultItem(item);
+    return require(13677) /* GuildSelectDefaultIcon */.renderSettingSearchResultItem(item);
   } else if (tmp.SECTION_ROW === type) {
-    return require(13682) /* GuildSelectDefaultIcon */.renderSettingItem(item);
+    return require(13677) /* GuildSelectDefaultIcon */.renderSettingItem(item);
   } else if (tmp.SECTION_ROW_PLACEHOLDER === type) {
-    obj = require(13682) /* GuildSelectDefaultIcon */;
+    obj = require(13677) /* GuildSelectDefaultIcon */;
     return obj.renderSettingSearchResultPlaceholderItem(item);
   }
 }
@@ -91,7 +91,7 @@ function keyExtractor(type) {
     }
   }
   let label = arg1;
-  if (typeof type.label !== "init") {
+  if (typeof type.label !== "tee") {
     label = type.label;
   }
   return "" + type.type + "-" + label;
@@ -113,7 +113,7 @@ const memoResult = importAllResult.memo((node) => {
   const items = [field, node];
   const memo = importAllResult.useMemo(() => node(outer1_2[12]).toSettingListItems(node, field), items);
   const ref = importAllResult.useRef(null);
-  let obj = node(14708);
+  let obj = node(14702);
   obj.useAutoScrollToSearchResultSetting(ref, memo, node.scrollTarget);
   obj = { style: tmp.container, children: null };
   obj = { ref, ListHeaderComponent: node.ListHeaderComponent, contentContainerStyle: null, scrollIndicatorInsets: null, keyExtractor: null, renderItem: null, data: null, getItemType: null };
@@ -126,7 +126,7 @@ const memoResult = importAllResult.memo((node) => {
   obj[5] = renderItem;
   obj[6] = memo;
   obj[7] = getItemType;
-  obj[1] = jsx(node(6676).FlashList, { ref, ListHeaderComponent: node.ListHeaderComponent, contentContainerStyle: null, scrollIndicatorInsets: null, keyExtractor: null, renderItem: null, data: null, getItemType: null });
+  obj[1] = jsx(node(6673).FlashList, { ref, ListHeaderComponent: node.ListHeaderComponent, contentContainerStyle: null, scrollIndicatorInsets: null, keyExtractor: null, renderItem: null, data: null, getItemType: null });
   return <View ref={ref} ListHeaderComponent={node.ListHeaderComponent} contentContainerStyle={null} scrollIndicatorInsets={null} keyExtractor={null} renderItem={null} data={null} getItemType={null} />;
 });
 const memoResult1 = importAllResult.memo((node) => {

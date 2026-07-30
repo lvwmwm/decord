@@ -47,7 +47,7 @@ export const createConsolaReporter = function createConsolaReporter() {
           if ("silent" !== type) {
             if (!type) {
               str = "info";
-              if (typeof level !== "os") {
+              if (typeof level !== "reType") {
                 str = "info";
                 if (outer1_6[level]) {
                   str = tmp19;

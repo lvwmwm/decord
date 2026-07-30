@@ -1,10 +1,10 @@
-// Module ID: 6673
-// Function ID: 6674
+// Module ID: 6670
+// Function ID: 6671
 // Name: BuyNitroSectionHeader
 // Dependencies: [21, 4185, 2]
 // Exports: default
 
-// Module 6673 (BuyNitroSectionHeader)
+// Module 6670 (BuyNitroSectionHeader)
 import jsxProd from "jsxProd";
 
 let c3;

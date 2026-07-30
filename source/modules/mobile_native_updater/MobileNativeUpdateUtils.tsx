@@ -1,10 +1,10 @@
-// Module ID: 13044
-// Function ID: 13045
+// Module ID: 13039
+// Function ID: 13040
 // Name: _checkForNewerBuild
 // Dependencies: [5, 4171, 3, 530, 3886, 500, 691, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 13044 (_checkForNewerBuild)
+// Module 13039 (_checkForNewerBuild)
 import set from "set";
 import { UPDATE_CONFIG } from "UPDATE_CHECK_INTERVAL";
 

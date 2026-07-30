@@ -1,10 +1,10 @@
-// Module ID: 7446
-// Function ID: 7447
+// Module ID: 7443
+// Function ID: 7444
 // Name: ServerBannerTheCrewExample
-// Dependencies: [21, 5141, 7447, 2]
+// Dependencies: [21, 5141, 7444, 2]
 // Exports: ServerBannerTheCrewExample
 
-// Module 7446 (ServerBannerTheCrewExample)
+// Module 7443 (ServerBannerTheCrewExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerBannerTheCrewExample.native.tsx");
@@ -28,7 +28,7 @@ export const ServerBannerTheCrewExample = function ServerBannerTheCrewExample(wi
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7447);
+  obj[0] = importDefault(7444);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

@@ -1,10 +1,10 @@
-// Module ID: 11875
-// Function ID: 11876
+// Module ID: 11871
+// Function ID: 11872
 // Name: useIsViewingPremiumMemberships
 // Dependencies: [676, 1379, 4017, 4024, 2]
 // Exports: default
 
-// Module 11875 (useIsViewingPremiumMemberships)
+// Module 11871 (useIsViewingPremiumMemberships)
 import { Routes } from "ME";
 import { StaticChannelRoute } from "set";
 

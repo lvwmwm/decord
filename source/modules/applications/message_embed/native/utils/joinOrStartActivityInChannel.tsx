@@ -1,10 +1,10 @@
-// Module ID: 11139
-// Function ID: 11140
+// Module ID: 11135
+// Function ID: 11136
 // Name: _joinOrStartActivityInChannel
-// Dependencies: [5, 1371, 1372, 1931, 10506, 5696, 10608, 2]
+// Dependencies: [5, 1371, 1372, 1931, 10502, 5696, 10604, 2]
 // Exports: joinOrStartActivityInChannel
 
-// Module 11139 (_joinOrStartActivityInChannel)
+// Module 11135 (_joinOrStartActivityInChannel)
 import _runPrimaryAppCommandOrJoinEmbeddedActivity from "_runPrimaryAppCommandOrJoinEmbeddedActivity";
 import participantFromServer from "participantFromServer";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -65,7 +65,7 @@ function _joinOrStartActivityInChannel() {
               let compositeInstanceId;
               store = 1;
               channel = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp6) {
             if (arg0 === 1) {
@@ -95,7 +95,7 @@ function _joinOrStartActivityInChannel() {
                     callback2 = null;
                   }
                   closure_8 = callback2;
-                  callback2(10506)(closure_8, channel.location);
+                  callback2(10502)(closure_8, channel.location);
                   channel = 3;
                   return { value: true, done: true };
                 }
@@ -111,7 +111,7 @@ function _joinOrStartActivityInChannel() {
               obj2[0] = callback2;
               obj2[1] = callback;
               obj2[2] = null == compositeInstanceId;
-              obj2[3] = callback2(10608)();
+              obj2[3] = callback2(10604)();
               obj2[4] = dependencyMap;
               obj2[5] = c3;
               obj2[6] = store;

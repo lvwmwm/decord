@@ -1,10 +1,10 @@
-// Module ID: 8880
-// Function ID: 8881
+// Module ID: 8876
+// Function ID: 8877
 // Name: _generateKeyFingerprint
 // Dependencies: [5, 2]
 // Exports: generateKeyFingerprint
 
-// Module 8880 (_generateKeyFingerprint)
+// Module 8876 (_generateKeyFingerprint)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 function _generateKeyFingerprint() {

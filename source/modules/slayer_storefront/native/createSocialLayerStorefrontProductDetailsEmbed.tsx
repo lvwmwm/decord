@@ -1,10 +1,10 @@
-// Module ID: 10894
-// Function ID: 10895
+// Module ID: 10890
+// Function ID: 10891
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [32, 19, 4226, 4234, 676, 6021, 7725, 1236, 10895, 5666, 5662, 3161, 7888, 6572, 4178, 6688, 501, 589, 1351, 5521, 2]
+// Dependencies: [32, 19, 4226, 4234, 676, 6019, 7722, 1236, 10891, 5666, 5662, 3161, 7885, 6569, 4178, 6685, 501, 589, 1351, 5521, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedData
 
-// Module 10894 (createSocialLayerStorefrontProductDetailsEmbed)
+// Module 10890 (createSocialLayerStorefrontProductDetailsEmbed)
 import _slicedToArray from "_slicedToArray";
 import useGetOrFetchApplications from "useGetOrFetchApplications";
 import addApplication from "addApplication";
@@ -21,7 +21,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
   let guildOrApplication;
   let skuId;
   ({ skuId, guildOrApplication } = theme);
-  ({ colors, baseColors } = importDefault(7725)(theme.theme));
+  ({ colors, baseColors } = importDefault(7722)(theme.theme));
   let obj = addSku;
   const value = addSku.get(skuId);
   let applicationId;
@@ -31,7 +31,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
   application = application.getApplication(applicationId);
   const isFetchingResult = obj.isFetching(skuId);
   let result = null != applicationId;
-  const tmp3 = importDefault(7725)(theme.theme);
+  const tmp3 = importDefault(7722)(theme.theme);
   if (result) {
     result = obj2.isFetchingApplication(applicationId);
   }
@@ -50,7 +50,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
       return null;
     } else {
       if (null != application) {
-        if (tmp(10895)(application)) {
+        if (tmp(10891)(application)) {
           if ("guild" !== guildOrApplication.type) {
             const result1 = require(5666) /* useSKUPrice */.isSlayerSkuAvailableOnThisPlatform(value);
             const obj4 = require(5666) /* useSKUPrice */;

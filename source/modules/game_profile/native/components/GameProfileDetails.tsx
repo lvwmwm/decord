@@ -1,10 +1,10 @@
-// Module ID: 11924
-// Function ID: 11925
+// Module ID: 11920
+// Function ID: 11921
 // Name: GameProfileWebsiteButton
-// Dependencies: [19, 17, 8193, 21, 4189, 712, 3886, 8517, 1236, 1906, 3859, 11925, 11934, 4185, 2]
+// Dependencies: [19, 17, 8190, 21, 4189, 712, 3886, 8514, 1236, 1906, 3859, 11921, 11930, 4185, 2]
 // Exports: default
 
-// Module 11924 (GameProfileWebsiteButton)
+// Module 11920 (GameProfileWebsiteButton)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { IGDB_ATTRIBUTION_LINK } from "ContentInventoryFeedKey";
@@ -138,7 +138,7 @@ export default function GameProfileDetails(game) {
               if (obj != null) {
                 const websites = obj.websites;
                 if (websites != null) {
-                  const mapped3 = websites.map((arg0) => callback2(11934)(arg0, callback2(712).colors.ICON_SUBTLE));
+                  const mapped3 = websites.map((arg0) => callback2(11930)(arg0, callback2(712).colors.ICON_SUBTLE));
                   found = mapped3.filter((arg0) => null != arg0);
                 }
               }
@@ -188,7 +188,7 @@ export default function GameProfileDetails(game) {
               obj5[1] = platforms.map((platform) => {
                 const obj = { platform, size: "md", color: null };
                 obj[2] = callback2(712).colors.ICON_SUBTLE;
-                return callback3(callback(11925).GameUpdatePlatformIcon, obj, platform);
+                return callback3(callback(11921).GameUpdatePlatformIcon, obj, platform);
               });
               obj4[1] = outer1_8(outer1_5, obj5);
               items.push(obj4);

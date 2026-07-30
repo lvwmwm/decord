@@ -1,10 +1,10 @@
-// Module ID: 10131
-// Function ID: 10132
+// Module ID: 10127
+// Function ID: 10128
 // Name: useSafetyAlertsSettingOrDefault
-// Dependencies: [1340, 1874, 589, 7708, 10132, 2]
+// Dependencies: [1340, 1874, 589, 7705, 10128, 2]
 // Exports: useSafetyAlertsSettingOrDefault
 
-// Module 10131 (useSafetyAlertsSettingOrDefault)
+// Module 10127 (useSafetyAlertsSettingOrDefault)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
@@ -28,8 +28,8 @@ export const useSafetyAlertsSettingOrDefault = function useSafetyAlertsSettingOr
     return flag;
   });
   const obj2 = require(589) /* initialize */;
-  let userIsTeen = require(7708) /* useUserIsTeen */.useUserIsTeen();
-  const obj3 = require(7708) /* useUserIsTeen */;
+  let userIsTeen = require(7705) /* useUserIsTeen */.useUserIsTeen();
+  const obj3 = require(7705) /* useUserIsTeen */;
   let tmp3 = !userIsTeen;
   if (userIsTeen) {
     tmp3 = !obj4.useIsEligibleForInappropriateConversationDefaultOn({ location: "useSafetyAlertsSettingOrDefault" });

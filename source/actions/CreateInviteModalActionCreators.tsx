@@ -1,8 +1,8 @@
-// Module ID: 8355
-// Function ID: 8356
-// Dependencies: [8349, 676, 709, 698, 6693, 1236, 2]
+// Module ID: 8352
+// Function ID: 8353
+// Dependencies: [8346, 676, 709, 698, 6690, 1236, 2]
 
-// Module 8355
+// Module 8352
 import updateWithLatestInvite from "updateWithLatestInvite";
 import { AnalyticEvents } from "ME";
 
@@ -85,7 +85,7 @@ export default {
       obj[6] = targetApplicationId;
       obj[7] = flags;
       obj[8] = roleIds;
-      const invite1 = importDefault(6693).createInvite(channelId, obj, arg0);
+      const invite1 = importDefault(6690).createInvite(channelId, obj, arg0);
       invite1.then(() => {
         let obj = outer1_1(outer1_2[2]);
         obj = { type: "CREATE_INVITE_MODAL_GENERATE_INVITE_SUCCESS", channelId };
@@ -102,7 +102,7 @@ export default {
         }
         callback(709).dispatch({ type: "CREATE_INVITE_MODAL_GENERATE_INVITE_FAILURE", message });
       });
-      const tmp7Result = importDefault(6693);
+      const tmp7Result = importDefault(6690);
     }
   },
   close() {

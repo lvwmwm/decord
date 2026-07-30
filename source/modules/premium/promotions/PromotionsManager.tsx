@@ -1,9 +1,9 @@
-// Module ID: 16302
-// Function ID: 16303
+// Module ID: 16296
+// Function ID: 16297
 // Name: _terminate
-// Dependencies: [5, 1946, 1874, 3841, 6262, 1876, 676, 5134, 6564, 3835, 12497, 2]
+// Dependencies: [5, 1946, 1874, 3841, 6259, 1876, 676, 5134, 6561, 3835, 12491, 2]
 
-// Module 16302 (_terminate)
+// Module 16296 (_terminate)
 import GuildFeatures from "GuildFeatures";
 import _getSystemLocale from "_getSystemLocale";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -99,8 +99,8 @@ prototype["onLocaleChanged"] = function onLocaleChanged() {
     tmp = createEmptyPromotionsByType.lastFetchedActivePromotionsLocale !== locale.locale;
   }
   if (tmp) {
-    const result = require(6564) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
-    const obj = require(6564) /* fetchActivePromotions */;
+    const result = require(6561) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
+    const obj = require(6561) /* fetchActivePromotions */;
   }
 };
 prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
@@ -181,8 +181,8 @@ prototype["onSubscriptionStateChanged"] = function onSubscriptionStateChanged() 
       if (createEmptyPromotionsByType.isFetchingActivePromotions) {
         self.hasPendingSubscriptionRefetch = true;
       } else {
-        const result = require(6564) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
-        const obj3 = require(6564) /* fetchActivePromotions */;
+        const result = require(6561) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
+        const obj3 = require(6561) /* fetchActivePromotions */;
       }
     }
   }
@@ -191,22 +191,22 @@ prototype["onPromotionsFetchSettled"] = function onPromotionsFetchSettled() {
   if (this.hasPendingSubscriptionRefetch) {
     if (!createEmptyPromotionsByType.isFetchingActivePromotions) {
       tmp.hasPendingSubscriptionRefetch = false;
-      const result = require(6564) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
-      const obj = require(6564) /* fetchActivePromotions */;
+      const result = require(6561) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
+      const obj = require(6561) /* fetchActivePromotions */;
     }
   }
 };
 prototype["onMobilePurchaseSuccess"] = function onMobilePurchaseSuccess() {
-  const result = require(6564) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
+  const result = require(6561) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
 };
 prototype["onOfferUpdated"] = function onOfferUpdated() {
-  const result = require(6564) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
+  const result = require(6561) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
 };
 prototype["onVCRedeemed"] = function onVCRedeemed(entitlements) {
   entitlements = entitlements.entitlements;
   if (entitlements.some((type) => type.type === constants.FRACTIONAL_REDEMPTION)) {
-    const result = require(6564) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
-    const obj = require(6564) /* fetchActivePromotions */;
+    const result = require(6561) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
+    const obj = require(6561) /* fetchActivePromotions */;
   }
 };
 const promotionsManager = new PromotionsManager();

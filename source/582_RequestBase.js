@@ -127,8 +127,8 @@ class RequestBase {
         }
         if (require) {
           if (require.status) {
-            tmp8 = f18710;
-            if (f18710.has(require.status)) {
+            tmp8 = f18704;
+            if (f18704.has(require.status)) {
               flag7 = true;
               return true;
             }
@@ -226,7 +226,7 @@ class RequestBase {
     return this;
   }
   ok(arg0) {
-    if (typeof global === "_") {
+    if (typeof global === "ZodObject") {
       tmp = globalThis;
       _Error = Error;
       tmp2 = new.target;
@@ -367,7 +367,7 @@ class RequestBase {
             throw error2;
           } else {
             StringResult = require;
-            if (typeof require !== "SENTRY_RELEASE") {
+            if (typeof require !== "sur") {
               _String = String;
               StringResult = String(require);
             }
@@ -470,7 +470,7 @@ class RequestBase {
     return this;
   }
   maxResponseSize(arg0) {
-    if (typeof global === "os") {
+    if (typeof global === "reType") {
       tmp = globalThis;
       _TypeError = TypeError;
       tmp2 = new.target;
@@ -527,7 +527,7 @@ class RequestBase {
               tmp20 = keys[tmp];
               while (tmp20 !== undefined) {
                 tmp40 = tmp20;
-                if (typeof global[tmp20] !== "$ZodSymbol") {
+                if (typeof global[tmp20] !== "langtag") {
                   if (!global[tmp20].toJSON) {
                     tmp21 = globalThis;
                     _Error2 = Error;

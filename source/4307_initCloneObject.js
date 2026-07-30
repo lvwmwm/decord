@@ -6,7 +6,7 @@
 // Module 4307 (initCloneObject)
 
 export default function initCloneObject(arg0) {
-  if (typeof arg0.constructor !== "_") {
+  if (typeof arg0.constructor !== "ZodObject") {
     if (!require(630) /* isPrototype */(arg0)) {
       tmp3(4308)(tmp3(4309)(arg0));
       const tmp = tmp3(4308);

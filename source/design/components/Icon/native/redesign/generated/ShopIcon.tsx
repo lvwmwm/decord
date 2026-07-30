@@ -1,10 +1,10 @@
-// Module ID: 11315
-// Function ID: 11316
+// Module ID: 11311
+// Function ID: 11312
 // Name: ShopIcon
-// Dependencies: [19, 21, 712, 3892, 11316, 2]
+// Dependencies: [19, 21, 712, 3892, 11312, 2]
 // Exports: ShopIcon
 
-// Module 11315 (ShopIcon)
+// Module 11311 (ShopIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ShopIcon = function ShopIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11316) /* registerAsset */;
+  obj[0] = require(11312) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

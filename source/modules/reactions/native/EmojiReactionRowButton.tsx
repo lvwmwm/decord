@@ -1,10 +1,10 @@
-// Module ID: 9969
-// Function ID: 9970
+// Module ID: 9965
+// Function ID: 9966
 // Name: EmojiPickerRowButton
-// Dependencies: [19, 17, 1877, 21, 4189, 712, 4035, 4717, 1236, 6576, 1348, 5206, 1416, 3833, 2]
+// Dependencies: [19, 17, 1877, 21, 4189, 712, 4035, 4717, 1236, 6573, 1348, 5206, 1416, 3833, 2]
 // Exports: EmojiPickerRowButton, EmojiReactionRowButton, getEmojiKey
 
-// Module 9969 (EmojiPickerRowButton)
+// Module 9965 (EmojiPickerRowButton)
 import noop from "noop";
 import { Platform } from "get ActivityIndicator";
 import { EMOJI_URL_BASE_SIZE } from "set";
@@ -54,7 +54,7 @@ export const EmojiPickerRowButton = function EmojiPickerRowButton(iconSize) {
     str = "md";
   }
   obj[1] = str;
-  obj[6] = jsx(require(6576) /* ReactionIcon */.ReactionIcon, { color: require(4035) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300, size: null });
+  obj[6] = jsx(require(6573) /* ReactionIcon */.ReactionIcon, { color: require(4035) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300, size: null });
   return jsx(require(4717) /* PressableBase */.PressableOpacity, { color: require(4035) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300, size: null });
 };
 export const EmojiReactionRowButton = function EmojiReactionRowButton(emojiContainerSize) {

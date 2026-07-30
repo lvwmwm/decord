@@ -1,10 +1,10 @@
-// Module ID: 13783
-// Function ID: 13784
+// Module ID: 13778
+// Function ID: 13779
 // Name: SafetyHubErrorActionSheet
-// Dependencies: [19, 17, 21, 4189, 712, 13781, 5243, 6736, 4185, 1236, 4600, 11078, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 13776, 5243, 6733, 4185, 1236, 4600, 11074, 2]
 // Exports: default
 
-// Module 13783 (SafetyHubErrorActionSheet)
+// Module 13778 (SafetyHubErrorActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,7 +28,7 @@ export default function SafetyHubErrorActionSheet(arg0) {
     HermesBuiltin.throwTypeError();
   } else {
     const tmp3 = createCacheKey();
-    const tmp6 = importDefault(13781)();
+    const tmp6 = importDefault(13776)();
     let obj = { children: null };
     obj = { style: null, children: null };
     const items = [tmp3.errorContainer];
@@ -40,7 +40,7 @@ export default function SafetyHubErrorActionSheet(arg0) {
     obj1[1] = importDefault(712).colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT;
     const items2 = [tmp3.redesignErrorIcon];
     obj1[2] = items2;
-    obj[1] = callback(require(6736) /* CircleXIcon */.CircleXIcon, obj1);
+    obj[1] = callback(require(6733) /* CircleXIcon */.CircleXIcon, obj1);
     const items3 = [callback(View, obj), ];
     const obj2 = { variant: "heading-lg/normal", children: null };
     const intl = require(1236) /* getSystemLocale */.intl;

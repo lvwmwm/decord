@@ -1,9 +1,9 @@
-// Module ID: 10303
-// Function ID: 10304
+// Module ID: 10299
+// Function ID: 10300
 // Name: ConnectedInAppNotificationSettingsScreen
-// Dependencies: [19, 1376, 1372, 3826, 4385, 1874, 676, 21, 5135, 5130, 4380, 7634, 1236, 10304, 6611, 589, 5143, 5570, 2]
+// Dependencies: [19, 1376, 1372, 3826, 4385, 1874, 676, 21, 5135, 5130, 4380, 7631, 1236, 10300, 6608, 589, 5143, 5570, 2]
 
-// Module 10303 (ConnectedInAppNotificationSettingsScreen)
+// Module 10299 (ConnectedInAppNotificationSettingsScreen)
 import importAllResult from "noop";
 import { isMultiUserDM } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -81,8 +81,8 @@ prototype["renderGroupDMNotificationSettings"] = function renderGroupDMNotificat
     obj[0] = intl.format(require(1236) /* getSystemLocale */.t["u/rEuc"], obj1);
     obj[1] = tmp2;
     obj[2] = tmp.handleGroupDMMute;
-    obj[0] = callback(require(7634) /* Form */.FormSwitchRow, obj);
-    return callback(require(7634) /* Form */.FormSection, obj);
+    obj[0] = callback(require(7631) /* Form */.FormSwitchRow, obj);
+    return callback(require(7631) /* Form */.FormSection, obj);
   }
 };
 prototype["renderTextChannelNotificationSettings"] = function renderTextChannelNotificationSettings() {
@@ -91,7 +91,7 @@ prototype["renderTextChannelNotificationSettings"] = function renderTextChannelN
   if (null != channel) {
     const obj = { channelId: null };
     obj[0] = channel.id;
-    tmp = callback(importDefault(10304), obj);
+    tmp = callback(importDefault(10300), obj);
   }
   return tmp;
 };
@@ -124,15 +124,15 @@ prototype["render"] = function render() {
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.cHMaba);
   obj[1] = this.handleOpenUserSettings;
-  obj[2] = callback(require(7634) /* Form */.FormRow.Arrow, {});
-  obj[1] = callback(require(7634) /* Form */.FormRow, obj);
-  items[1] = callback(require(7634) /* Form */.FormSection, obj);
+  obj[2] = callback(require(7631) /* Form */.FormRow.Arrow, {});
+  obj[1] = callback(require(7631) /* Form */.FormRow, obj);
+  items[1] = callback(require(7631) /* Form */.FormSection, obj);
   const obj1 = { children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t.avgbp1);
-  items[2] = callback(require(7634) /* Form */.FormHint, obj1);
+  items[2] = callback(require(7631) /* Form */.FormHint, obj1);
   obj[0] = items;
-  return callback2(require(7634) /* Form */.Form, obj);
+  return callback2(require(7631) /* Form */.Form, obj);
 };
 const memoResult = importAllResult.memo((channelId) => {
   channelId = channelId.channelId;

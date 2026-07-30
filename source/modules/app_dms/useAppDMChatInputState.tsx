@@ -1,10 +1,10 @@
-// Module ID: 10134
-// Function ID: 10135
+// Module ID: 10130
+// Function ID: 10131
 // Name: items
-// Dependencies: [19, 5697, 4226, 5896, 4212, 1874, 676, 1906, 589, 7984, 709, 5521, 2]
+// Dependencies: [19, 5697, 4226, 5894, 4212, 1874, 676, 1906, 589, 7981, 709, 5521, 2]
 // Exports: default
 
-// Module 10134 (items)
+// Module 10130 (items)
 import noop from "noop";
 import { useQueryState } from "getIndexKey";
 import addApplication from "addApplication";

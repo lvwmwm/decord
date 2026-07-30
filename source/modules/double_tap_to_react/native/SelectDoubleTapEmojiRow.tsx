@@ -1,9 +1,9 @@
-// Module ID: 11481
-// Function ID: 11482
+// Module ID: 11477
+// Function ID: 11478
 // Name: num2
-// Dependencies: [19, 17, 4181, 5244, 1877, 21, 4189, 500, 712, 589, 4717, 5206, 1416, 9340, 1474, 3834, 7750, 9336, 6074, 6576, 2]
+// Dependencies: [19, 17, 4181, 5244, 1877, 21, 4189, 500, 712, 589, 4717, 5206, 1416, 9336, 1474, 3834, 7747, 9332, 6072, 6573, 2]
 
-// Module 11481 (num2)
+// Module 11477 (num2)
 import importAllResult from "ReactionIcon";
 import { View } from "EMOJI_PICKER_ACTION_SHEET_KEY";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -132,7 +132,7 @@ export default importAllResult.memo((selectedEmoji) => {
   const stateFromStores = obj1.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const found = frequentlyUsedReactionEmojis.filter((emoji) => {
     let obj = onPressEmoji(substr[15]);
-    obj = { emoji, channel: "Array", intention: 2086900762484230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+    obj = { emoji, channel: "Array", intention: -1 };
     obj[2] = constants.DEFAULT_REACT_EMOJI;
     return !obj.isEmojiFilteredOrLocked(obj);
   });

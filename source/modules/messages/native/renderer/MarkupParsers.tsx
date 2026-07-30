@@ -1,10 +1,10 @@
-// Module ID: 7864
-// Function ID: 7865
+// Module ID: 7861
+// Function ID: 7862
 // Name: parseEmbedTitleMarkup
-// Dependencies: [676, 687, 1386, 4179, 7865, 7876, 2]
+// Dependencies: [676, 687, 1386, 4179, 7862, 7873, 2]
 // Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup
 
-// Module 7864 (parseEmbedTitleMarkup)
+// Module 7861 (parseEmbedTitleMarkup)
 import { MessageTypes } from "ME";
 import importDefaultResult from "priv";
 
@@ -131,15 +131,15 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
     obj[5] = tmp6;
     obj[6] = flag3;
     obj[7] = flag3;
-    const merged = Object.assign(require(7876) /* getInitialParserState */.renderMessageMarkupToAST(message, obj));
+    const merged = Object.assign(require(7873) /* getInitialParserState */.renderMessageMarkupToAST(message, obj));
     obj.isInlineReplyPreview = flag;
     result = obj1.set(message, obj);
-    const obj3 = require(7876) /* getInitialParserState */;
+    const obj3 = require(7873) /* getInitialParserState */;
   }
   const obj6 = importDefault(4179);
   obj1 = { hideSimpleEmbedContent: forceHideSimpleEmbedContent, formatInline: flag, allowHeading: null, allowList: null, allowLinks: null, previewLinkTarget: null };
   flag = flag2;
-  const obj7 = require(7865) /* LHeading */;
+  const obj7 = require(7862) /* LHeading */;
   if (!flag2) {
     flag = obj;
   }
@@ -147,7 +147,7 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
   if (!flag2) {
     flag2 = obj;
   }
-  obj = { content: obj6.astParserFor(require(7865) /* LHeading */.changelogRules(message.changelogId, true))(message.content, false, obj1), isInlineReplyPreview: false, hasSpoilerEmbeds: false, hasBailedAst: false };
+  obj = { content: obj6.astParserFor(require(7862) /* LHeading */.changelogRules(message.changelogId, true))(message.content, false, obj1), isInlineReplyPreview: false, hasSpoilerEmbeds: false, hasBailedAst: false };
   obj1[3] = flag2;
   obj1[4] = flag3;
   obj1[5] = flag3;

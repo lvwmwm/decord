@@ -1,9 +1,9 @@
-// Module ID: 13613
-// Function ID: 13614
+// Module ID: 13608
+// Function ID: 13609
 // Name: timestamp
 // Dependencies: [3, 2]
 
-// Module 13613 (timestamp)
+// Module 13608 (timestamp)
 const tmp2 = new require("timestamp")("MainNavigationLogger");
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/helpers/MainNavigationLogger.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 10035
-// Function ID: 10036
+// Module ID: 10031
+// Function ID: 10032
 // Name: ChannelSpoiler
-// Dependencies: [32, 19, 17, 4202, 1372, 1862, 10036, 21, 4189, 712, 589, 4380, 10037, 4383, 5105, 4041, 4650, 4185, 1236, 4598, 4179, 4717, 10034, 6749, 2]
+// Dependencies: [32, 19, 17, 4202, 1372, 1862, 10032, 21, 4189, 712, 589, 4380, 10033, 4383, 5105, 4041, 4650, 4185, 1236, 4598, 4179, 4717, 10030, 6746, 2]
 // Exports: default
 
-// Module 10035 (ChannelSpoiler)
+// Module 10031 (ChannelSpoiler)
 import _slicedToArray from "_slicedToArray";
 import Stack from "Stack";
 import { View } from "Text";
@@ -43,7 +43,7 @@ export default function ChannelSpoiler(channelId) {
     isVocalResult = stateFromStores1.isVocal();
   }
   const dependencyMap = isVocalResult;
-  setControlsMode = obj3.useContext(tmp6(10037)).setControlsMode;
+  setControlsMode = obj3.useContext(tmp6(10033)).setControlsMode;
   const items2 = [, , , ];
   ({ guildId: arr3[0], channelId: arr3[1] } = channelId);
   items2[2] = setControlsMode;
@@ -145,7 +145,7 @@ export default function ChannelSpoiler(channelId) {
   const obj10 = { modalType: null, onAgree: null, onDisagree: null, title: null, subtitle: null, description: null, agreement: null, disagreement: null, guildId: null, channelId: null };
   const tmp20 = callback;
   tmp7 = importDefault(4380)(stateFromStores1);
-  obj10[0] = _require(6749).NsfwSpaceWarningModalType.SPOILER_CHANNEL;
+  obj10[0] = _require(6746).NsfwSpaceWarningModalType.SPOILER_CHANNEL;
   obj10[1] = function onAgree() {
     callback(isVocalResult[14]).spoilerAgree(channelId.channelId);
   };
@@ -164,5 +164,5 @@ export default function ChannelSpoiler(channelId) {
   }
   obj10[8] = id;
   obj10[9] = channelId.channelId;
-  return tmp20(importDefault(10034), obj10);
+  return tmp20(importDefault(10030), obj10);
 };

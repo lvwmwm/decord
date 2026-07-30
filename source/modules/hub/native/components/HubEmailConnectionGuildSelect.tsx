@@ -1,13 +1,13 @@
-// Module ID: 11839
-// Function ID: 11840
+// Module ID: 11835
+// Function ID: 11836
 // Name: HubEmailConnectionGuildSelectRow
-// Dependencies: [5, 32, 19, 17, 11821, 21, 4189, 712, 7634, 5566, 1411, 4185, 1236, 1581, 4600, 1297, 1480, 6752, 8294, 11834, 4088, 11829, 2]
+// Dependencies: [5, 32, 19, 17, 11817, 21, 4189, 712, 7631, 5566, 1411, 4185, 1236, 1581, 4600, 1297, 1480, 6749, 8291, 11830, 4088, 11825, 2]
 // Exports: default
 
-// Module 11839 (HubEmailConnectionGuildSelectRow)
+// Module 11835 (HubEmailConnectionGuildSelectRow)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
-import module_11834 from "module_11834";
+import module_11830 from "module_11830";
 import get_ActivityIndicator from "HeaderActionButton";
 import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
 import jsxProd from "HubEmailConnectionModal";

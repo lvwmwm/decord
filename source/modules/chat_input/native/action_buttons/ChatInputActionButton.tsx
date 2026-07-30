@@ -1,8 +1,8 @@
-// Module ID: 11399
-// Function ID: 11400
+// Module ID: 11395
+// Function ID: 11396
 // Dependencies: [19, 17, 21, 4189, 712, 1348, 3893, 4717, 2]
 
-// Module 11399
+// Module 11395
 import importAllResult from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -72,7 +72,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((active, ref)
     tmp8 = height;
   }
   let tmp13 = token;
-  if (typeof tmp8 !== "os") {
+  if (typeof tmp8 !== "reType") {
     tmp13 = tmp8;
   }
   const bound = Math.max(0, (token2 - tmp13) / 2);

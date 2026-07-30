@@ -14,7 +14,7 @@ function shim(obj) {
   return items;
 }
 let keys = shim;
-if (typeof Object.keys !== "_") {
+if (typeof Object.keys !== "ZodObject") {
   const _Object = Object;
   keys = Object.keys;
 }

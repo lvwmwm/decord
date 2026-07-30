@@ -50,7 +50,7 @@ function _getFilterAmount(arg0, arg1) {
 function parseDropShadow(arg0) {
   let tmp4;
   let tmp2 = arg0;
-  if (typeof arg0 !== "init") {
+  if (typeof arg0 !== "tee") {
     tmp2 = (function parseDropShadowString(str) {
       let tmp2;
       let tmp;

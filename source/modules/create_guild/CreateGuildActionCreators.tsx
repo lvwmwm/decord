@@ -1,9 +1,9 @@
-// Module ID: 10072
-// Function ID: 10073
+// Module ID: 10068
+// Function ID: 10069
 // Name: _createGuildFromTemplate
 // Dependencies: [5, 676, 4999, 503, 4088, 2]
 
-// Module 10072 (_createGuildFromTemplate)
+// Module 10068 (_createGuildFromTemplate)
 import set from "set";
 import { Endpoints } from "ME";
 

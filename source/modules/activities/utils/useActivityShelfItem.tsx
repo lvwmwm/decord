@@ -1,10 +1,10 @@
-// Module ID: 11231
-// Function ID: 11232
+// Module ID: 11227
+// Function ID: 11228
 // Name: useActivityAction
-// Dependencies: [5, 1371, 4214, 676, 8018, 500, 10670, 11232, 11233, 1906, 5692, 10603, 10602, 5521, 3807, 5515, 10505, 5693, 4199, 10642, 10606, 2]
+// Dependencies: [5, 1371, 4214, 676, 8015, 500, 10666, 11228, 11229, 1906, 5692, 10599, 10598, 5521, 3807, 5515, 10501, 5693, 4199, 10638, 10602, 2]
 // Exports: default, getStaffReleasePhase
 
-// Module 11231 (useActivityAction)
+// Module 11227 (useActivityAction)
 import set from "set";
 import participantFromServer from "participantFromServer";
 import { STAFF_RELEASE_PHASES } from "items3";
@@ -24,11 +24,11 @@ function useActivityAction(applicationId) {
   if ("channel" === context.type) {
     channel = context.channel;
   }
-  const tmp4 = importDefault(10603)();
-  const tmp5 = importDefault(10602)({ fetchesApplication });
+  const tmp4 = importDefault(10599)();
+  const tmp5 = importDefault(10598)({ fetchesApplication });
   obj = getOrFetchApplication(5521);
   getOrFetchApplication = obj.useGetOrFetchApplication(applicationId.applicationId, fetchesApplication);
-  importDefault(11233)(channel);
+  importDefault(11229)(channel);
   if (null == getOrFetchApplication) {
     return START;
   } else {
@@ -89,8 +89,8 @@ function useOnActivityItemSelected(arg0) {
   }
   let tmp = useActivityAction({ context, applicationId: str, fetchesApplication });
   analyticsLocations = context(5515)().analyticsLocations;
-  closure_14 = context(10603)();
-  obj = require(10505) /* canLaunchFrame */;
+  closure_14 = context(10599)();
+  obj = require(10501) /* canLaunchFrame */;
   closure_15 = obj.canLaunchFrame(application);
   if (null == application) {
     return () => {
@@ -375,7 +375,7 @@ export default function useActivityShelfItem(backgroundResolution) {
   const activity = activityItem.activity;
   ({ launchingComponentId, commandOrigin, source } = backgroundResolution);
   let obj = application(500);
-  const tmp5 = activity.client_platform_config[importDefault(8018)(undefined, obj.getOS(obj))];
+  const tmp5 = activity.client_platform_config[importDefault(8015)(undefined, obj.getOS(obj))];
   const timestamp = Date.now();
   let tmp7 = null != tmp5.label_until;
   if (tmp7) {
@@ -391,16 +391,16 @@ export default function useActivityShelfItem(backgroundResolution) {
   }
   obj = { applicationId: application.id, size: num, names: assetNames, format: "webp" };
   let tmp9 = null;
-  const tmp3 = importDefault(8018);
+  const tmp3 = importDefault(8015);
   if (null != activity.activity_preview_video_asset_id) {
-    tmp9 = tmp(11232)(application.id, activity.activity_preview_video_asset_id);
+    tmp9 = tmp(11228)(application.id, activity.activity_preview_video_asset_id);
   }
   let channel;
-  let tmpResult = tmp(11233);
+  let tmpResult = tmp(11229);
   if ("channel" === context.type) {
     channel = context.channel;
   }
-  const tmp8 = importDefault(10670)(obj);
+  const tmp8 = importDefault(10666)(obj);
   obj = { context, applicationId: application.id };
   const found = tmpResult(channel).find((embeddedActivity) => application.id === embeddedActivity.embeddedActivity.applicationId);
   const obj1 = { application: activityItem.application, context, locationObject, embeddedActivitiesManager, onActivityItemSelectedProp: onActivityItemSelected, launchingComponentId, commandOrigin, source };
@@ -408,7 +408,7 @@ export default function useActivityShelfItem(backgroundResolution) {
   const tmp13 = useActivityAction(obj);
   let tmp4Result = tmp4(5692);
   if (tmp4Result.hasApplicationFlag(application, ApplicationFlags.EMBEDDED_RELEASED)) {
-    tmpResult = tmp(8018);
+    tmpResult = tmp(8015);
     tmp4Result = tmp4(500);
     const str = activityItem.activity.client_platform_config[tmpResult(undefined, tmp4Result.getOS(tmp4Result))].release_phase;
     let replaced;
@@ -438,7 +438,7 @@ export const getStaffReleasePhase = function getStaffReleasePhase(application) {
   obj = require(5692) /* getApplicationFlags */;
   const tmp3 = ApplicationFlags;
   tmpResult = tmp(500);
-  const str = arg1.client_platform_config[importDefault(8018)(undefined, tmpResult.getOS(tmpResult))].release_phase;
+  const str = arg1.client_platform_config[importDefault(8015)(undefined, tmpResult.getOS(tmpResult))].release_phase;
   let replaced;
   if (STAFF_RELEASE_PHASES.includes(str)) {
     replaced = str.replace("_", " ").replace(/(^\w|\s\w)/g, (str) => str.toUpperCase());

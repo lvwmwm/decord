@@ -1,10 +1,10 @@
-// Module ID: 12331
-// Function ID: 12332
+// Module ID: 12325
+// Function ID: 12326
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 4189, 712, 1481, 5177, 12332, 12333, 4185, 1236, 4600, 4395, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1481, 5177, 12326, 12327, 4185, 1236, 4600, 4395, 2]
 // Exports: default
 
-// Module 12331 (GiftCodeRedeemError)
+// Module 12325 (GiftCodeRedeemError)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,9 +35,9 @@ export default function GiftCodeRedeemError(children) {
   obj = { bottom: true, style: tmp.container, children: null };
   obj = { contentContainerStyle: tmp.body, alwaysBounceVertical: false, children: null };
   if (theme.dark) {
-    let tmp9Result = tmp9(12332);
+    let tmp9Result = tmp9(12326);
   } else {
-    tmp9Result = tmp9(12333);
+    tmp9Result = tmp9(12327);
   }
   const items = [closure_6(closure_3, { source: tmp9Result }), , ];
   const obj1 = { variant: "heading-xl/bold", style: tmp.header, children: null };

@@ -1,9 +1,9 @@
-// Module ID: 15090
-// Function ID: 15091
+// Module ID: 15084
+// Function ID: 15085
 // Name: MESSAGES_ITEM_EMPTY_STATE_HEIGHT
-// Dependencies: [19, 17, 21, 4189, 712, 4041, 15049, 4185, 1236, 4600, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4041, 15043, 4185, 1236, 4600, 2]
 
-// Module 15090 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
+// Module 15084 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -44,7 +44,7 @@ const memoResult = importAllResult.memo(function MessagesItemEmptyState() {
       }
     }
   }, []);
-  obj[1] = importDefault(15049);
+  obj[1] = importDefault(15043);
   obj[2] = tmp.image;
   obj[1] = callback(closure_4, obj);
   const items = [callback(closure_5, obj), , , ];

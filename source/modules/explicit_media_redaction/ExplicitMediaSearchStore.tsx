@@ -1,9 +1,9 @@
-// Module ID: 5876
-// Function ID: 5877
+// Module ID: 5874
+// Function ID: 5875
 // Name: handleSearchMessagesSuccess
-// Dependencies: [4409, 5862, 589, 709, 2]
+// Dependencies: [4409, 5860, 589, 709, 2]
 
-// Module 5876 (handleSearchMessagesSuccess)
+// Module 5874 (handleSearchMessagesSuccess)
 import { Store } from "initialize";
 
 const require = arg1;
@@ -58,8 +58,8 @@ const explicitMediaSearchStore = new ExplicitMediaSearchStore(require("dispatche
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: function handleScanTimeout(channelId) {
     const combined = "" + channelId.channelId + ":" + channelId.messageId;
     if (null != dependencyMap[combined]) {
-      dependencyMap[combined] = require(5862) /* redactionSettingToRenderedString */.handleExplicitMediaScanTimeoutForMessage(tmp2);
-      const obj = require(5862) /* redactionSettingToRenderedString */;
+      dependencyMap[combined] = require(5860) /* redactionSettingToRenderedString */.handleExplicitMediaScanTimeoutForMessage(tmp2);
+      const obj = require(5860) /* redactionSettingToRenderedString */;
     }
   }
 });

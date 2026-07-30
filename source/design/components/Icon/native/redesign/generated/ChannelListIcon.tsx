@@ -1,10 +1,10 @@
-// Module ID: 16355
-// Function ID: 16356
+// Module ID: 16349
+// Function ID: 16350
 // Name: ChannelListIcon
-// Dependencies: [19, 21, 712, 3892, 16356, 2]
+// Dependencies: [19, 21, 712, 3892, 16350, 2]
 // Exports: ChannelListIcon
 
-// Module 16355 (ChannelListIcon)
+// Module 16349 (ChannelListIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ChannelListIcon = function ChannelListIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(16356) /* registerAsset */;
+  obj[0] = require(16350) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

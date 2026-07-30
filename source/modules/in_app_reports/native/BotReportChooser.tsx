@@ -1,10 +1,10 @@
-// Module ID: 11967
-// Function ID: 11968
+// Module ID: 11961
+// Function ID: 11962
 // Name: ReportAppProfile
-// Dependencies: [19, 4226, 21, 5551, 4185, 1236, 5553, 4157, 7692, 589, 5516, 2]
+// Dependencies: [19, 4226, 21, 5551, 4185, 1236, 5553, 4157, 7689, 589, 5516, 2]
 // Exports: default
 
-// Module 11967 (ReportAppProfile)
+// Module 11961 (ReportAppProfile)
 import "noop";
 import addApplication from "addApplication";
 import jsxProd from "jsxProd";

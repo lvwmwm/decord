@@ -1,10 +1,10 @@
-// Module ID: 15772
-// Function ID: 15773
+// Module ID: 15766
+// Function ID: 15767
 // Name: CatEarsBackdrop
-// Dependencies: [19, 17, 678, 5244, 1369, 21, 4189, 712, 1474, 5245, 1581, 4050, 15773, 4185, 1236, 15774, 5797, 5535, 5243, 15776, 6785, 4600, 2]
+// Dependencies: [19, 17, 678, 5244, 1369, 21, 4189, 712, 1474, 5245, 1581, 4050, 15767, 4185, 1236, 15768, 5797, 5535, 5243, 15770, 6782, 4600, 2]
 // Exports: default
 
-// Module 15772 (CatEarsBackdrop)
+// Module 15766 (CatEarsBackdrop)
 import metadata from "metadata";
 import get_ActivityIndicator from "QUICK_SWITCHER";
 import { CollectiblesMobileShopScreen as closure_6 } from "items";
@@ -48,7 +48,7 @@ function CatEarsBackdrop() {
   items1[1] = obj1;
   const obj2 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
   const obj3 = { uri: null };
-  obj3[0] = top(15773);
+  obj3[0] = top(15767);
   obj2[0] = obj3;
   obj2[1] = tmp.mascotImage;
   obj[1] = callback(closure_4, obj2);
@@ -99,7 +99,7 @@ export default function CollectiblesMobileAnnouncementActionSheet(markAsDismisse
   let importDefault;
   let dependencyMap;
   const tmp = createCacheKey();
-  let obj = markAsDismissed(15774);
+  let obj = markAsDismissed(15768);
   const profileFramesMarketing = obj.useProfileFramesMarketing("CollectiblesMobileAnnouncementActionSheet");
   const intl = markAsDismissed(1236).intl;
   const string = intl.string;
@@ -151,7 +151,7 @@ export default function CollectiblesMobileAnnouncementActionSheet(markAsDismisse
   obj = { style: tmp.container, children: null };
   const obj1 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
   const obj2 = { uri: null };
-  obj2[0] = importDefault(15776);
+  obj2[0] = importDefault(15770);
   obj1[0] = obj2;
   obj1[1] = tmp.framePreviewImage;
   const items3 = [callback(closure_4, obj1), , , ];
@@ -160,12 +160,12 @@ export default function CollectiblesMobileAnnouncementActionSheet(markAsDismisse
   obj3[4] = intl3.string(markAsDismissed(1236).t.vRCvqo);
   items3[1] = callback(markAsDismissed(4185).Text, obj3);
   const obj4 = { style: tmp.featureRows, children: null };
-  const obj5 = { icon: callback(markAsDismissed(6785).PaintIllocon, { size: 32 }), text: null };
+  const obj5 = { icon: callback(markAsDismissed(6782).PaintIllocon, { size: 32 }), text: null };
   const intl4 = tmp2(1236).intl;
   obj5[1] = intl4.string(markAsDismissed(1236).t["6ZWB0C"]);
-  const items4 = [callback(FeatureRow, obj5), callback(FeatureRow, { icon: callback(markAsDismissed(6785).HeartIllocon, { size: 32 }), text: stringResult }), ];
-  const obj6 = { icon: callback(markAsDismissed(6785).HeartIllocon, { size: 32 }), text: stringResult };
-  items4[2] = callback(FeatureRow, { icon: callback(markAsDismissed(6785).ShopIllocon, { size: 32 }), text: string2Result });
+  const items4 = [callback(FeatureRow, obj5), callback(FeatureRow, { icon: callback(markAsDismissed(6782).HeartIllocon, { size: 32 }), text: stringResult }), ];
+  const obj6 = { icon: callback(markAsDismissed(6782).HeartIllocon, { size: 32 }), text: stringResult };
+  items4[2] = callback(FeatureRow, { icon: callback(markAsDismissed(6782).ShopIllocon, { size: 32 }), text: string2Result });
   obj4[1] = items4;
   items3[2] = callback2(closure_5, obj4);
   const obj8 = { size: "lg", text: null, onPress: null };

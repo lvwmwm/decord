@@ -1,9 +1,9 @@
-// Module ID: 13750
-// Function ID: 13751
+// Module ID: 13745
+// Function ID: 13746
 // Name: PasswordlessUpsell
-// Dependencies: [32, 19, 17, 13751, 7756, 11070, 676, 13752, 21, 4189, 712, 1480, 5222, 5141, 13753, 4185, 1236, 4600, 4395, 13754, 1959, 589, 13776, 9199, 5645, 5554, 10120, 13777, 13678, 13780, 6330, 8224, 698, 8755, 8753, 2]
+// Dependencies: [32, 19, 17, 13746, 7753, 11066, 676, 13747, 21, 4189, 712, 1480, 5222, 5141, 13748, 4185, 1236, 4600, 4395, 13749, 1959, 589, 13771, 9195, 5645, 5554, 10116, 13772, 13673, 13775, 6327, 8221, 698, 8751, 8749, 2]
 
-// Module 13750 (PasswordlessUpsell)
+// Module 13745 (PasswordlessUpsell)
 import expandEventProperties from "expandEventProperties";
 import importAllResult from "UserSettingsWebAuthn";
 import { View } from "Button";
@@ -28,7 +28,7 @@ function PasswordlessUpsell() {
   const obj1 = { style: { flexDirection: "row", gap: 8 }, children: null };
   const obj2 = { style: { width: 70, height: 70 }, children: null };
   const obj3 = { source: null, resizeMode: "contain", style: null };
-  obj3[0] = _require(13753);
+  obj3[0] = _require(13748);
   obj3[2] = tmp.upsellImagePasswordless;
   obj2[1] = callback2(importDefault(5141), obj3);
   const items = [callback2(View, obj2), ];
@@ -102,7 +102,7 @@ function AccountTwoFALabel() {
 }
 function AccountSecurityPage() {
   const node = importAllResult.useMemo(() => {
-    let obj = callback(10120);
+    let obj = callback(10116);
     obj = { sections: null, ListHeaderComponent: null };
     obj = { label: null, settings: null };
     const intl = callback(1236).intl;
@@ -122,13 +122,13 @@ function AccountSecurityPage() {
     obj2[1] = items3;
     items1[2] = obj2;
     obj[0] = items1.filter(Boolean);
-    obj[1] = callback2(13777);
+    obj[1] = callback2(13772);
     return obj.createList(obj);
   }, []);
-  return callback2(importDefault(13678), { node });
+  return callback2(importDefault(13673), { node });
 }
 function AccountStandingPage() {
-  return callback2(require(13780) /* AutomatedUnderageAppealStatus */.default, { visible: true });
+  return callback2(require(13775) /* AutomatedUnderageAppealStatus */.default, { visible: true });
 }
 let c4 = importAllResult;
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = jsxProd);
@@ -150,7 +150,7 @@ const memoResult = importAllResult.memo(() => {
   callback = importAllResult.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let obj = require(6330) /* useSettingNavigationRoute */;
+  let obj = require(6327) /* useSettingNavigationRoute */;
   const params = obj.useSettingNavigationRoute().params;
   let initialTab;
   if (params != null) {
@@ -168,7 +168,7 @@ const memoResult = importAllResult.memo(() => {
   const intl2 = tmp5(1236).intl;
   obj1[0] = intl2.string(require(1236) /* getSystemLocale */.t["00Sfl/"]);
   obj1[1] = AccountSettingsTabs.STANDING;
-  const tmp5Result = require(8224) /* useSegmentedControlState */;
+  const tmp5Result = require(8221) /* useSegmentedControlState */;
   obj1[2] = callback2(View, { style: tmp.standingPage, children: callback2(AccountStandingPage, {}) });
   items[1] = obj1;
   obj[0] = items;
@@ -189,9 +189,9 @@ const memoResult = importAllResult.memo(() => {
   const segmentedControlState = tmp5Result.useSegmentedControlState(obj);
   const obj3 = { children: null };
   const obj2 = { style: tmp.standingPage, children: callback2(AccountStandingPage, {}) };
-  const items1 = [callback2(View, { style: tmp.controlContainer, onLayout: callback, children: callback2(require(8755) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) }), ];
-  const obj4 = { style: tmp.controlContainer, onLayout: callback, children: callback2(require(8755) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) };
-  items1[1] = callback2(View, { style: tmp.pageContainer, children: callback2(require(8753) /* SegmentedControlPage */.SegmentedControlPages, { state: segmentedControlState }) });
+  const items1 = [callback2(View, { style: tmp.controlContainer, onLayout: callback, children: callback2(require(8751) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) }), ];
+  const obj4 = { style: tmp.controlContainer, onLayout: callback, children: callback2(require(8751) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) };
+  items1[1] = callback2(View, { style: tmp.pageContainer, children: callback2(require(8749) /* SegmentedControlPage */.SegmentedControlPages, { state: segmentedControlState }) });
   obj3[0] = items1;
   return callback3(closure_13, obj3);
 });

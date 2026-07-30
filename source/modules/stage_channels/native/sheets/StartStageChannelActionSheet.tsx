@@ -1,10 +1,10 @@
-// Module ID: 6714
-// Function ID: 6715
+// Module ID: 6711
+// Function ID: 6712
 // Name: StartStageChannelEventActionSheet
-// Dependencies: [5, 32, 19, 17, 1377, 5004, 676, 1378, 21, 4189, 712, 589, 5012, 4616, 698, 1844, 6715, 4157, 4088, 6724, 4185, 1236, 5243, 5177, 6727, 6746, 4600, 2]
+// Dependencies: [5, 32, 19, 17, 1377, 5004, 676, 1378, 21, 4189, 712, 589, 5012, 4616, 698, 1844, 6712, 4157, 4088, 6721, 4185, 1236, 5243, 5177, 6724, 6743, 4600, 2]
 // Exports: default
 
-// Module 6714 (StartStageChannelEventActionSheet)
+// Module 6711 (StartStageChannelEventActionSheet)
 import closure_4 from "MAX_STAGE_TOPIC_LENGTH";
 import _slicedToArray from "_slicedToArray";
 import StageSparkleInner from "StageSparkleInner";
@@ -83,14 +83,14 @@ export default function StartStageChannelEventActionSheet(channel) {
                 const result = obj3.dismissGlobalKeyboard();
                 dependencyMap = 1;
                 if (null != outer1_1) {
-                  let tmp33Result = tmp33(6715);
+                  let tmp33Result = tmp33(6712);
                   v0 = 3;
                   c5 = 1;
                   let obj1 = { value: null, done: false };
                   obj1[0] = tmp33Result.editStage(outer1_0, tmp54, outer1_12.GUILD_ONLY);
                   return obj1;
                 } else {
-                  tmp33Result = tmp33(6715);
+                  tmp33Result = tmp33(6712);
                   v0 = 2;
                   c5 = 1;
                   const obj2 = { value: null, done: false };
@@ -182,7 +182,7 @@ export default function StartStageChannelEventActionSheet(channel) {
     obj.track(outer1_11.START_STAGE_OPENED, obj);
   });
   obj = { style: tmp.header, children: null };
-  const items1 = [callback(stateFromStores(6724), {}), , ];
+  const items1 = [callback(stateFromStores(6721), {}), , ];
   obj = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   if (null == stateFromStores) {
     const intl2 = tmp2(1236).intl;
@@ -234,8 +234,8 @@ export default function StartStageChannelEventActionSheet(channel) {
   const intl8 = tmp2(1236).intl;
   obj3[8] = intl8.string(channel(1236).t["5FPBOB"]);
   obj3[9] = handleSave;
-  items2[1] = callback(channel(6727).TextInput, obj3);
-  items2[2] = callback(tmp11(6746), {
+  items2[1] = callback(channel(6724).TextInput, obj3);
+  items2[2] = callback(tmp11(6743), {
     onConfirmPress() {
       return stateFromStores(_undefined[17]).hideActionSheet(closure_10);
     },

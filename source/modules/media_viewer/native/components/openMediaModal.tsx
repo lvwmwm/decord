@@ -1,10 +1,10 @@
-// Module ID: 8115
-// Function ID: 8116
+// Module ID: 8112
+// Function ID: 8113
 // Name: _openMediaModal
-// Dependencies: [32, 5, 3882, 676, 1474, 8116, 1959, 8119, 8123, 38, 4157, 8132, 4395, 8133, 2]
+// Dependencies: [32, 5, 3882, 676, 1474, 8113, 1959, 8116, 8120, 38, 4157, 8129, 4395, 8130, 2]
 // Exports: openMediaModal
 
-// Module 8115 (_openMediaModal)
+// Module 8112 (_openMediaModal)
 import _slicedToArray from "_slicedToArray";
 import zustandStore from "zustandStore";
 import setContent from "setContent";
@@ -77,7 +77,7 @@ function _openMediaModal() {
               let initVideoStateStore;
               v0 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

@@ -1,9 +1,9 @@
-// Module ID: 13994
-// Function ID: 13995
+// Module ID: 13989
+// Function ID: 13990
 // Name: Integration
-// Dependencies: [5, 32, 19, 17, 4869, 1862, 676, 4997, 21, 4189, 1297, 712, 5109, 4995, 589, 4600, 1236, 4185, 5566, 4871, 5555, 3901, 13995, 8055, 4528, 4618, 8965, 13996, 13999, 4996, 10024, 3886, 1945, 4717, 9690, 14001, 2773, 1416, 4035, 4598, 7699, 5220, 5554, 2]
+// Dependencies: [5, 32, 19, 17, 4869, 1862, 676, 4997, 21, 4189, 1297, 712, 5109, 4995, 589, 4600, 1236, 4185, 5566, 4871, 5555, 3901, 13990, 8052, 4528, 4618, 8961, 13991, 13994, 4996, 10020, 3886, 1945, 4717, 9687, 13996, 2773, 1416, 4035, 4598, 7696, 5220, 5554, 2]
 
-// Module 13994 (Integration)
+// Module 13989 (Integration)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import combined from "combined";
 import importAllResult from "getPlatformUserUrl";
@@ -162,7 +162,7 @@ const PureComponent = importAllResult.PureComponent;
 class ConnectedAccount extends PureComponent {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    f109604 = applyArgumentsResult;
+    f109614 = applyArgumentsResult;
     obj = { isVisible: 1 === applyArgumentsResult.props.account.visibility, isMetadataVisible: 1 === applyArgumentsResult.props.account.metadataVisibility, inProgressVisibility: null, inProgressMetadataVisibility: null, showActivity: applyArgumentsResult.props.account.showActivity, friendSync: applyArgumentsResult.props.account.friendSync, metadataRefreshing: false, metadataAlreadyRefreshed: false };
     applyArgumentsResult.state = obj;
     applyArgumentsResult.handleDisconnect = function handleDisconnect() {
@@ -209,9 +209,9 @@ class ConnectedAccount extends PureComponent {
       const account = lib.props.account;
       applyArgumentsResult(outer1_2[13]).disconnect(account.type, account.id);
     };
-    f109604 = undefined;
+    f109614 = undefined;
     closure_1 = applyArgumentsResult;
-    f109604 = RowSwitch((arg0) => {
+    f109614 = RowSwitch((arg0) => {
       let closure_0 = arg0;
       let c4 = 0;
       let c5 = 0;
@@ -315,9 +315,9 @@ class ConnectedAccount extends PureComponent {
       }
       return applyArgumentsResult;
     };
-    f109604 = undefined;
+    f109614 = undefined;
     closure_1 = applyArgumentsResult;
-    f109604 = RowSwitch((arg0) => {
+    f109614 = RowSwitch((arg0) => {
       let closure_0 = arg0;
       let c4 = 0;
       let c5 = 0;
@@ -421,9 +421,9 @@ class ConnectedAccount extends PureComponent {
       }
       return applyArgumentsResult;
     };
-    f109604 = undefined;
+    f109614 = undefined;
     closure_1 = applyArgumentsResult;
-    f109604 = RowSwitch((arg0) => {
+    f109614 = RowSwitch((arg0) => {
       let closure_0 = arg0;
       let c4 = 0;
       let c5 = 0;
@@ -508,9 +508,9 @@ class ConnectedAccount extends PureComponent {
       }
       return applyArgumentsResult;
     };
-    f109604 = undefined;
+    f109614 = undefined;
     closure_1 = applyArgumentsResult;
-    f109604 = RowSwitch((arg0) => {
+    f109614 = RowSwitch((arg0) => {
       let closure_0 = arg0;
       let c4 = 0;
       let c5 = 0;
@@ -633,11 +633,11 @@ prototype["renderUpsell"] = function renderUpsell() {
   if (account.twoWayLink) {
     return null;
   } else if (account.type === constants.XBOX) {
-    let tmp2 = callback3(require(13996) /* XboxTwoWayLinkUpsell */.XboxTwoWayLinkUpsell, {});
+    let tmp2 = callback3(require(13991) /* XboxTwoWayLinkUpsell */.XboxTwoWayLinkUpsell, {});
   } else {
     tmp2 = null;
     if (account.type === tmp.PLAYSTATION) {
-      tmp2 = callback3(require(13999) /* PlayStationTwoWayLinkUpsell */.PlayStationTwoWayLinkUpsell, {});
+      tmp2 = callback3(require(13994) /* PlayStationTwoWayLinkUpsell */.PlayStationTwoWayLinkUpsell, {});
     }
   }
 };
@@ -687,33 +687,33 @@ prototype["renderMetadata"] = function renderMetadata() {
   const createdAtDate = obj1.getCreatedAtDate(metadata[MetadataFields.CREATED_AT], props.locale);
   const type = account.type;
   if (constants.REDDIT === type) {
-    let tmp2Result = tmp2(10024);
+    let tmp2Result = tmp2(10020);
     let redditMetadataItems = tmp2Result.generateRedditMetadataItems(metadata);
   } else if (tmp6.STEAM === type) {
-    tmp2Result = tmp2(10024);
+    tmp2Result = tmp2(10020);
     redditMetadataItems = tmp2Result.generateSteamMetadataItems(metadata);
   } else {
     if (tmp6.BLUESKY !== type) {
       if (tmp6.TWITTER !== type) {
         if (tmp6.MASTODON !== type) {
           if (tmp6.EBAY === type) {
-            redditMetadataItems = tmp2(10024).generateEbayMetadataItems(metadata);
-            const tmp2Result1 = tmp2(10024);
+            redditMetadataItems = tmp2(10020).generateEbayMetadataItems(metadata);
+            const tmp2Result1 = tmp2(10020);
           } else if (tmp6.PAYPAL === type) {
-            redditMetadataItems = tmp2(10024).generatePaypalMetadataItems(metadata);
-            const tmp2Result2 = tmp2(10024);
+            redditMetadataItems = tmp2(10020).generatePaypalMetadataItems(metadata);
+            const tmp2Result2 = tmp2(10020);
           } else {
             redditMetadataItems = [];
             if (tmp6.TIKTOK === type) {
-              redditMetadataItems = tmp2(10024).generateTikTokMetadataItems(metadata);
-              const tmp2Result3 = tmp2(10024);
+              redditMetadataItems = tmp2(10020).generateTikTokMetadataItems(metadata);
+              const tmp2Result3 = tmp2(10020);
             }
           }
         }
       }
     }
-    redditMetadataItems = tmp2(10024).generateTwitterMetadataItems(metadata);
-    const tmp2Result4 = tmp2(10024);
+    redditMetadataItems = tmp2(10020).generateTwitterMetadataItems(metadata);
+    const tmp2Result4 = tmp2(10020);
   }
   if (null !== createdAtDate) {
     let obj = { variant: "text-xs/normal", color: "interactive-text-default", children: null };
@@ -814,9 +814,9 @@ prototype["renderMetadata"] = function renderMetadata() {
     obj10[0] = tmp.metadataRefreshIcon;
     obj10[1] = tmp2(1297).Icon.Sizes.SMALL;
     if (self.state.metadataAlreadyRefreshed) {
-      let tmp9Result = tmp9(9690);
+      let tmp9Result = tmp9(9687);
     } else {
-      tmp9Result = tmp9(14001);
+      tmp9Result = tmp9(13996);
     }
     obj10[2] = tmp9Result;
     obj9[6] = callback3(tmp2(1297).Icon, obj10);
@@ -921,7 +921,7 @@ prototype["render"] = function render() {
   obj2[2] = self.handleDisconnect;
   obj2[3] = { top: 5, left: 5, bottom: 5, right: 5 };
   obj3 = { style: tmp.deleteConnectionIcon, source: null };
-  obj3[1] = importDefault(7699);
+  obj3[1] = importDefault(7696);
   obj2[4] = closure_14(require(1297) /* Button */.Icon, obj3);
   obj1[3] = closure_14(require(4717) /* PressableBase */.PressableOpacity, obj2);
   tmp7Result = tmp7(tmp8(4598).Stack, obj1);

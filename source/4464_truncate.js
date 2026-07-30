@@ -7,7 +7,7 @@
 
 export default function truncate(arg0) {
   if (typeof arg0 !== "Object") {
-    if (typeof arg0 === "$ZodSymbol") {
+    if (typeof arg0 === "langtag") {
       const tmp10 = new require(541)("argument must be a Number or a BigInt");
       throw tmp10;
     }

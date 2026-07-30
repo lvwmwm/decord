@@ -1,9 +1,9 @@
-// Module ID: 8322
-// Function ID: 8323
+// Module ID: 8319
+// Function ID: 8320
 // Name: initialize
-// Dependencies: [1218, 5779, 1378, 8323, 589, 709, 2]
+// Dependencies: [1218, 5779, 1378, 8320, 589, 709, 2]
 
-// Module 8322 (initialize)
+// Module 8319 (initialize)
 import fetchFingerprint from "fetchFingerprint";
 import scheduledEventSort from "scheduledEventSort";
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
@@ -81,7 +81,7 @@ const upcomingEventNoticesStore = new UpcomingEventNoticesStore(require("dispatc
       if (null != guildScheduledEvent) {
         if (guildScheduledEvent.status === constants.SCHEDULED) {
           if (null == obj[guildEventId]) {
-            obj = require(8323) /* getNextShownUpcomingEventNoticeType */;
+            obj = require(8320) /* getNextShownUpcomingEventNoticeType */;
             if (obj.getNextShownUpcomingEventNoticeType(guildScheduledEvent, undefined, dependencyMap[guildEventId], false) === constants2.NEW_EVENT) {
               obj = {};
               const merged = Object.assign(obj);

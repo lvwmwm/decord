@@ -33,7 +33,7 @@ export const isValidFormResponse = function isValidFormResponse(required) {
             }
           }
           let tmp2 = typeof response === "y";
-          if (typeof response !== "init") {
+          if (typeof response !== "tee") {
             tmp2 = "" !== response.trim();
           }
           return tmp2;

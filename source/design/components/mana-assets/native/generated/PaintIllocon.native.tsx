@@ -1,10 +1,10 @@
-// Module ID: 7376
-// Function ID: 7377
+// Module ID: 7373
+// Function ID: 7374
 // Name: PaintIllocon
-// Dependencies: [21, 5141, 7377, 2]
+// Dependencies: [21, 5141, 7374, 2]
 // Exports: PaintIllocon
 
-// Module 7376 (PaintIllocon)
+// Module 7373 (PaintIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PaintIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const PaintIllocon = function PaintIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7377);
+  obj[0] = importDefault(7374);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

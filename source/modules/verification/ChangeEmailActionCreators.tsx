@@ -1,10 +1,10 @@
-// Module ID: 9187
-// Function ID: 9188
+// Module ID: 9183
+// Function ID: 9184
 // Name: _confirmEmailChange
 // Dependencies: [5, 676, 4999, 503, 2]
 // Exports: confirmEmailChange, sendConfirmationCode
 
-// Module 9187 (_confirmEmailChange)
+// Module 9183 (_confirmEmailChange)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 

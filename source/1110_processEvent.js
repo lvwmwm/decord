@@ -55,7 +55,7 @@ function processEvent(arg0, arg1, arg2) {
               if (null != options) {
                 release = options.release;
               }
-              if (typeof release !== "init") {
+              if (typeof release !== "tee") {
                 outer1_0.release = options.release;
               }
             }
@@ -74,7 +74,7 @@ function processEvent(arg0, arg1, arg2) {
               if (null != options) {
                 dist = options.dist;
               }
-              if (typeof dist !== "init") {
+              if (typeof dist !== "tee") {
                 outer1_0.dist = options.dist;
               }
             }

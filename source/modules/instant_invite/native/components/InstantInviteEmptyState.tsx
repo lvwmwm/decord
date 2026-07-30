@@ -1,10 +1,10 @@
-// Module ID: 12234
-// Function ID: 12235
+// Module ID: 12228
+// Function ID: 12229
 // Name: stateFromStores
-// Dependencies: [19, 17, 8349, 21, 4189, 712, 589, 1297, 12235, 1236, 8997, 4717, 9011, 4185, 8350, 4600, 2]
+// Dependencies: [19, 17, 8346, 21, 4189, 712, 589, 1297, 12229, 1236, 8993, 4717, 9007, 4185, 8347, 4600, 2]
 // Exports: default
 
-// Module 12234 (stateFromStores)
+// Module 12228 (stateFromStores)
 import "noop";
 import { View } from "get ActivityIndicator";
 import updateWithLatestInvite from "updateWithLatestInvite";
@@ -34,7 +34,7 @@ export default function _default(link) {
   stateFromStores = obj.useStateFromStores(items, () => inviteSettings.getInviteSettings());
   obj = { style: tmp.container, children: null };
   obj = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: null, title: null, body: null };
-  obj[3] = importDefault(12235);
+  obj[3] = importDefault(12229);
   const intl = stateFromStores(1236).intl;
   obj[4] = intl.string(stateFromStores(1236).t.tQc0l8);
   const intl2 = stateFromStores(1236).intl;
@@ -48,13 +48,13 @@ export default function _default(link) {
   obj2[3] = str;
   obj2[4] = tmp.inviteInput;
   obj2[6] = stateFromStores(1297).ClearButtonVisibility.NEVER;
-  const items2 = [callback(importDefault(8997), obj2), ];
+  const items2 = [callback(importDefault(8993), obj2), ];
   const obj3 = { accessibilityLabel: null, accessibilityRole: "button", onPress: null, style: null, children: null };
   const intl3 = tmp2(1236).intl;
   obj3[0] = intl3.string(stateFromStores(1236).t["3D5yo/"]);
   obj3[2] = onPressSettings;
   obj3[3] = tmp.settingsButton;
-  obj3[4] = callback(stateFromStores(9011).SettingsIcon, {});
+  obj3[4] = callback(stateFromStores(9007).SettingsIcon, {});
   items2[1] = callback(stateFromStores(4717).PressableOpacity, obj3);
   obj1[1] = items2;
   items1[1] = closure_6(View, obj1);
@@ -70,7 +70,7 @@ export default function _default(link) {
     obj[1] = items1;
     return tmp5(tmp6, obj);
   } else {
-    const maxAgeOptionByValue = tmp8(8350).getMaxAgeOptionByValue(stateFromStores.maxAge);
+    const maxAgeOptionByValue = tmp8(8347).getMaxAgeOptionByValue(stateFromStores.maxAge);
     let str2 = "";
     let str3 = "";
     if (null != maxAgeOptionByValue) {
@@ -80,7 +80,7 @@ export default function _default(link) {
       }
       str3 = descriptiveLabel;
     }
-    const getMaxUsesOptions = tmp8(8350).getMaxUsesOptions;
+    const getMaxUsesOptions = tmp8(8347).getMaxUsesOptions;
     const found = getMaxUsesOptions.find((value) => value.value === stateFromStores.maxUses);
     if (null != found) {
       str2 = found.descriptiveLabel;
@@ -95,6 +95,6 @@ export default function _default(link) {
     obj6[0] = str3;
     obj6[1] = str2;
     intl4.format(dqPWMN, obj6);
-    const tmp8Result = tmp8(8350);
+    const tmp8Result = tmp8(8347);
   }
 };

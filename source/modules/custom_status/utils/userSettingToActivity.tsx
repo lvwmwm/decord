@@ -1,10 +1,10 @@
-// Module ID: 8080
-// Function ID: 8081
+// Module ID: 8077
+// Function ID: 8078
 // Name: _activityFromSetting
 // Dependencies: [19, 5048, 676, 3830, 3862, 589, 2]
 // Exports: getActivityFromCustomStatus, useCustomStatusActivity
 
-// Module 8080 (_activityFromSetting)
+// Module 8077 (_activityFromSetting)
 import { useMemo } from "noop";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import { ActivityTypes } from "ME";

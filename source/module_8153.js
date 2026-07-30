@@ -1,52 +1,40 @@
 // Module ID: 8153
 // Function ID: 8154
-// Dependencies: [8154, 8156, 4014, 8160, 8151]
+// Dependencies: [8154, 8155, 8156, 4014, 8146]
 
 // Module 8153
-import flattenStyle from "flattenStyle";
-import module_8156 from "module_8156";
-import emptyFunction from "emptyFunction";
-import emptyFunction from "emptyFunction";
-import emptyFunction from "emptyFunction";
+import module_8154 from "module_8154";
+import merged1 from "merged1";
+import merged2 from "merged2";
 import emptyFunction from "emptyFunction";
 import emptyFunction from "emptyFunction";
 
-const obj = { accessible: null, accessibilityLabel: null, accessibilityHint: null, accessibilityActions: null, accessibilityIgnoresInvertColors: null, accessibilityRole: null, accessibilityState: null, accessibilityValue: null, accessibilityLiveRegion: null, importantForAccessibility: null, accessibilityViewIsModal: null, accessibilityElementsHidden: null, onAccessibilityAction: null, onAccessibilityTap: null, onMagicTap: null, testID: null, nativeID: null, onResponderGrant: null, onResponderMove: null, onResponderReject: null, onResponderRelease: null, onResponderTerminate: null, onResponderTerminationRequest: null, onStartShouldSetResponder: null, onStartShouldSetResponderCapture: null, onMoveShouldSetResponder: null, onMoveShouldSetResponderCapture: null, hitSlop: null, onLayout: null, pointerEvents: null, style: null, removeClippedSubviews: null, renderToHardwareTextureAndroid: null, shouldRasterizeIOS: null, collapsable: null, needsOffscreenAlphaCompositing: null };
-obj[0] = require("emptyFunction").bool;
-obj[1] = require("emptyFunction").node;
-obj[2] = require("emptyFunction").string;
-obj[3] = emptyFunction.arrayOf(require("emptyFunction").string);
-obj[4] = require("emptyFunction").bool;
-obj[5] = emptyFunction.oneOf(require("module_8160").DeprecatedAccessibilityRoles);
-obj[6] = require("emptyFunction").object;
-obj[7] = require("emptyFunction").object;
-obj[8] = emptyFunction.oneOf(["none", "polite", "assertive"]);
-obj[9] = emptyFunction.oneOf(["auto", "yes", "no", "no-hide-descendants"]);
-obj[10] = require("emptyFunction").bool;
-obj[11] = require("emptyFunction").bool;
-obj[12] = require("emptyFunction").func;
-obj[13] = require("emptyFunction").func;
-obj[14] = require("emptyFunction").func;
-obj[15] = require("emptyFunction").string;
-obj[16] = require("emptyFunction").string;
-obj[17] = require("emptyFunction").func;
-obj[18] = require("emptyFunction").func;
-obj[19] = require("emptyFunction").func;
-obj[20] = require("emptyFunction").func;
-obj[21] = require("emptyFunction").func;
-obj[22] = require("emptyFunction").func;
-obj[23] = require("emptyFunction").func;
-obj[24] = require("emptyFunction").func;
-obj[25] = require("emptyFunction").func;
-obj[26] = require("emptyFunction").func;
-obj[27] = require("emptyFunction");
-obj[28] = require("emptyFunction").func;
-obj[29] = emptyFunction.oneOf(["box-none", "none", "box-only", "auto"]);
-obj[30] = module_8156;
-obj[31] = require("emptyFunction").bool;
-obj[32] = require("emptyFunction").bool;
-obj[33] = require("emptyFunction").bool;
-obj[34] = require("emptyFunction").bool;
-obj[35] = require("emptyFunction").bool;
+const obj = {};
+obj.backfaceVisibility = emptyFunction.oneOf(["visible", "hidden"]);
+obj.backgroundColor = require("colorPropType");
+obj.borderColor = require("colorPropType");
+obj.borderTopColor = require("colorPropType");
+obj.borderRightColor = require("colorPropType");
+obj.borderBottomColor = require("colorPropType");
+obj.borderLeftColor = require("colorPropType");
+obj.borderStartColor = require("colorPropType");
+obj.borderEndColor = require("colorPropType");
+obj.borderRadius = require("emptyFunction").number;
+obj.borderTopLeftRadius = require("emptyFunction").number;
+obj.borderTopRightRadius = require("emptyFunction").number;
+obj.borderTopStartRadius = require("emptyFunction").number;
+obj.borderTopEndRadius = require("emptyFunction").number;
+obj.borderBottomLeftRadius = require("emptyFunction").number;
+obj.borderBottomRightRadius = require("emptyFunction").number;
+obj.borderBottomStartRadius = require("emptyFunction").number;
+obj.borderBottomEndRadius = require("emptyFunction").number;
+obj.borderStyle = emptyFunction.oneOf(["solid", "dotted", "dashed"]);
+obj.borderWidth = require("emptyFunction").number;
+obj.borderTopWidth = require("emptyFunction").number;
+obj.borderRightWidth = require("emptyFunction").number;
+obj.borderBottomWidth = require("emptyFunction").number;
+obj.borderLeftWidth = require("emptyFunction").number;
+obj.opacity = require("emptyFunction").number;
+obj.elevation = require("emptyFunction").number;
 
 export default obj;

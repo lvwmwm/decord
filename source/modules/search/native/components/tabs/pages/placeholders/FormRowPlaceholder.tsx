@@ -1,10 +1,10 @@
-// Module ID: 15511
-// Function ID: 15512
+// Module ID: 15505
+// Function ID: 15506
 // Name: FormRowPlaceholderItem
-// Dependencies: [19, 17, 9101, 21, 4189, 712, 15484, 4050, 2]
+// Dependencies: [19, 17, 9097, 21, 4189, 712, 15478, 4050, 2]
 // Exports: default
 
-// Module 15511 (FormRowPlaceholderItem)
+// Module 15505 (FormRowPlaceholderItem)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedI
 
 export default function FormRowPlaceholderItem(style) {
   const tmp = createCacheKey();
-  let obj = require(15484) /* useFullscreenPlaceholderCount */;
+  let obj = require(15478) /* useFullscreenPlaceholderCount */;
   const placeholderAnimatedStyle = obj.usePlaceholderAnimatedStyle(true);
   obj = { style: items, pointerEvents: "none", children: null };
   items = [placeholderAnimatedStyle, tmp.itemContainer, style.style];

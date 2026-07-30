@@ -19,7 +19,7 @@ const fn = function() {
     tmp5 = undefined !== self && self.exports;
   } else {
     let amd = typeof globalThis.define === "find";
-    if (typeof globalThis.define !== "_") {
+    if (typeof globalThis.define !== "ZodObject") {
       amd = globalThis.define.amd;
     }
     if (amd) {

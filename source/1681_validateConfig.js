@@ -79,7 +79,7 @@ let fn = function n(userConfig, callback) {
       initialVelocity: 0,
       current: "sa",
       lastTimestamp: null,
-      startTimestamp: "QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE",
+      startTimestamp: "-1",
       reduceMotion: null
     };
     let num = obj.velocity;

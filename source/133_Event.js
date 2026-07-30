@@ -36,7 +36,7 @@ class Event {
       tmp20 = arg1;
       if (null != arg1) {
         if (typeof arg1 !== "ay") {
-          if (typeof arg1 === "_") {
+          if (typeof arg1 === "ZodObject") {
             tmp10 = globalThis;
             _TypeError = TypeError;
             tmp11 = new.target;

@@ -1,10 +1,10 @@
-// Module ID: 16433
-// Function ID: 16434
+// Module ID: 16427
+// Function ID: 16428
 // Name: getDerivedStateFromProps
-// Dependencies: [19, 17, 8305, 676, 21, 4189, 712, 16394, 16434, 4871, 1416, 4035, 5554, 5220, 5555, 1236, 8304, 4529, 4618, 3893, 1480, 589, 4125, 5143, 6752, 6611, 1945, 7634, 4598, 4185, 5501, 2]
+// Dependencies: [19, 17, 8302, 676, 21, 4189, 712, 16388, 16428, 4871, 1416, 4035, 5554, 5220, 5555, 1236, 8301, 4529, 4618, 3893, 1480, 589, 4125, 5143, 6749, 6608, 1945, 7631, 4598, 4185, 5501, 2]
 // Exports: default
 
-// Module 16433 (getDerivedStateFromProps)
+// Module 16427 (getDerivedStateFromProps)
 import get_ActivityIndicator from "module_4529";
 import handleFormInit from "handleFormInit";
 import ME from "ME";
@@ -104,17 +104,17 @@ IntegrationItem.prototype["render"] = function render() {
   const props = this.props;
   const integration = props.integration;
   ({ onPress: importDefault, styles } = props);
-  const SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS = integration(16394).SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS;
+  const SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS = integration(16388).SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS;
   if (SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS.includes(integration.type)) {
     const type = integration.type;
-    if (tmp(16434).IntegrationTypes.YOUTUBE === type) {
+    if (tmp(16428).IntegrationTypes.YOUTUBE === type) {
       const account = integration.account;
       let name;
       if (account != null) {
         name = account.name;
       }
       let combined = name;
-    } else if (tmp(16434).IntegrationTypes.TWITCH === type) {
+    } else if (tmp(16428).IntegrationTypes.TWITCH === type) {
       const _HermesInternal = HermesInternal;
       let str = "twitch.tv/";
       combined = "twitch.tv/" + integration.name;
@@ -302,7 +302,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     items2[1] = closure_11(tmp(4185).Text, obj6);
     obj3[2] = items2;
     obj2[2] = closure_12(tmp(4598).Stack, obj3);
-    const items3 = [closure_11(tmp(7634).Form, obj2), closure_11(tmp(5501).NavScrim, {})];
+    const items3 = [closure_11(tmp(7631).Form, obj2), closure_11(tmp(5501).NavScrim, {})];
     obj5[0] = items3;
     return closure_12(closure_13, obj5);
   }

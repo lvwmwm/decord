@@ -1,8 +1,8 @@
-// Module ID: 14208
-// Function ID: 14209
-// Dependencies: [19, 17, 5033, 14122, 21, 4189, 14204, 14123, 4050, 4599, 7679, 14209, 14214, 2]
+// Module ID: 14204
+// Function ID: 14205
+// Dependencies: [19, 17, 5033, 14118, 21, 4189, 14200, 14119, 4050, 4599, 7676, 14205, 14210, 2]
 
-// Module 14208
+// Module 14204
 import importAllResult from "noop";
 import { QuestDockMode } from "QuestsExperimentLocations";
 import { QUEST_DOCK_MODE_CHANGE_PHYSICS as closure_5 } from "QUEST_DOCK_COLLAPSED_HEIGHT";
@@ -27,13 +27,13 @@ const memoResult = importAllResult.memo(function QuestDockContentCollapsed(hideO
   hideOnExpand = hideOnExpand.hideOnExpand;
   const require = tmp;
   let obj = importAllResult;
-  const userStatus = importAllResult.useContext(activeQuestDockMode(14204)).quest.userStatus;
+  const userStatus = importAllResult.useContext(activeQuestDockMode(14200)).quest.userStatus;
   let enrolledAt;
   if (userStatus != null) {
     enrolledAt = userStatus.enrolledAt;
   }
   let tmp6 = null != enrolledAt;
-  activeQuestDockMode = obj.useContext(require(14123) /* QuestDockMode */.QuestDockGestureContext).activeQuestDockMode;
+  activeQuestDockMode = obj.useContext(require(14119) /* QuestDockMode */.QuestDockGestureContext).activeQuestDockMode;
   const tmp4 = callback2();
   const fn = function u() {
     let obj = tmp(outer1_2[9]);
@@ -73,15 +73,15 @@ const memoResult = importAllResult.memo(function QuestDockContentCollapsed(hideO
   const obj4 = require(4050);
   const tmp9 = closure_7;
   if (!tmp6) {
-    tmp11 = callback(tmp2(14209), {});
+    tmp11 = callback(tmp2(14205), {});
   }
   const items1 = [tmp11, ];
   if (tmp6) {
-    tmp6 = callback(tmp2(14214), {});
+    tmp6 = callback(tmp2(14210), {});
   }
   items1[1] = tmp6;
   obj[2] = items1;
-  return tmp9(activeQuestDockMode(7679), obj);
+  return tmp9(activeQuestDockMode(7676), obj);
 });
 const result = require("QuestsExperimentLocations").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockContentCollapsed.tsx");
 

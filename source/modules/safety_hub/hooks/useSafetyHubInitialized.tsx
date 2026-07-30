@@ -1,10 +1,10 @@
-// Module ID: 11101
-// Function ID: 11102
+// Module ID: 11097
+// Function ID: 11098
 // Name: useSafetyHubInitialized
-// Dependencies: [11072, 589, 2]
+// Dependencies: [11068, 589, 2]
 // Exports: useSafetyHubInitialized
 
-// Module 11101 (useSafetyHubInitialized)
+// Module 11097 (useSafetyHubInitialized)
 import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
 
 const require = arg1;

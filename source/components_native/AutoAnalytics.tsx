@@ -1,10 +1,10 @@
-// Module ID: 15568
-// Function ID: 15569
+// Module ID: 15562
+// Function ID: 15563
 // Name: componentDidMount
-// Dependencies: [19, 4202, 1375, 4865, 5779, 1377, 1372, 1942, 1862, 4236, 4281, 4261, 1931, 4006, 4867, 4385, 1874, 676, 1379, 1876, 21, 4384, 6086, 15569, 5724, 1865, 698, 1351, 15570, 10215, 1897, 10219, 589, 15571, 15572, 2]
+// Dependencies: [19, 4202, 1375, 4865, 5779, 1377, 1372, 1942, 1862, 4236, 4281, 4261, 1931, 4006, 4867, 4385, 1874, 676, 1379, 1876, 21, 4384, 6084, 15563, 5724, 1865, 698, 1351, 15564, 10211, 1897, 10215, 589, 15565, 15566, 2]
 // Exports: default
 
-// Module 15568 (componentDidMount)
+// Module 15562 (componentDidMount)
 import getParticipants from "getParticipants";
 import initializeFromUserSettings from "initializeFromUserSettings";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -53,7 +53,7 @@ prototype["componentDidMount"] = function componentDidMount() {
     self._trackWithMetadata(constants.CHANNEL_OPENED, obj);
     obj = { channelId: null };
     obj[0] = selectedChannelId;
-    importDefault(6086)(obj);
+    importDefault(6084)(obj);
     if (tmp) {
       const obj1 = { channel_is_nsfw: null };
       obj1[0] = tmp2;
@@ -77,7 +77,7 @@ prototype["componentDidMount"] = function componentDidMount() {
     const merged1 = Object.assign(obj3);
     obj4.postable_channels = postableChannelCount;
     obj4.viewing_all_channels = !updateUserGuildSettingsInternal.isOptInEnabled(selectedGuildId);
-    let obj5 = require(15569) /* collectGuildThemeAnalyticsMetadata */;
+    let obj5 = require(15563) /* collectGuildThemeAnalyticsMetadata */;
     const merged2 = Object.assign(obj5.collectGuildThemeAnalyticsMetadata(selectedGuildId));
     self._trackWithMetadata(constants.GUILD_VIEWED, obj4);
     obj5 = { guild_id: null };
@@ -231,7 +231,7 @@ prototype["componentDidUpdate"] = function componentDidUpdate(voiceChannelId) {
   }
   if (!tmp41) {
     obj2 = {};
-    let obj8 = require(15570) /* getChannelOpenedRouteTrackingProps */;
+    let obj8 = require(15564) /* getChannelOpenedRouteTrackingProps */;
     const merged7 = Object.assign(obj8.getChannelOpenedRouteTrackingProps(selectedChannelId));
     let obj9 = require(4384) /* collectGuildAnalyticsMetadata */;
     const merged8 = Object.assign(obj9.getChannelOpenedMetadata(selectedChannelId));
@@ -239,7 +239,7 @@ prototype["componentDidUpdate"] = function componentDidUpdate(voiceChannelId) {
     self._trackWithMetadata(constants.CHANNEL_OPENED, obj2);
     obj3 = { channelId: null };
     obj3[0] = selectedChannelId;
-    importDefault(6086)(obj3);
+    importDefault(6084)(obj3);
     if (isTextInVoice) {
       obj4 = { channel_is_nsfw: null };
       obj4[0] = isNSFWChannel;
@@ -272,9 +272,9 @@ prototype["componentDidUpdate"] = function componentDidUpdate(voiceChannelId) {
       const merged9 = Object.assign(obj7);
       obj8.postable_channels = postableChannelCount;
       obj8.viewing_all_channels = !updateUserGuildSettingsInternal.isOptInEnabled(selectedGuildId);
-      const merged10 = Object.assign(require(15569) /* collectGuildThemeAnalyticsMetadata */.collectGuildThemeAnalyticsMetadata(selectedGuildId));
+      const merged10 = Object.assign(require(15563) /* collectGuildThemeAnalyticsMetadata */.collectGuildThemeAnalyticsMetadata(selectedGuildId));
       self._trackWithMetadata(constants.GUILD_VIEWED, obj8);
-      const obj19 = require(15569) /* collectGuildThemeAnalyticsMetadata */;
+      const obj19 = require(15563) /* collectGuildThemeAnalyticsMetadata */;
       obj9 = { guild_id: null };
       obj9[0] = selectedGuildId;
       require(5724) /* isClickstreamEnabled */.trackClickstream(constants.GUILD_VIEWED_CLICKSTREAM, obj9);
@@ -287,10 +287,10 @@ prototype["componentDidUpdate"] = function componentDidUpdate(voiceChannelId) {
   }
 };
 prototype["trackFavoritesGuildViewed"] = function trackFavoritesGuildViewed() {
-  const obj = require(10215) /* useFavoritesAccess */;
+  const obj = require(10211) /* useFavoritesAccess */;
   const obj2 = importDefault(1897);
   const isPremiumExactlyResult = importDefault(1897).isPremiumExactly(currentUser.getCurrentUser(), PremiumTypes.TIER_2);
-  const result = require(10219) /* setNextFavoritesGuildViewSource */.trackFavoritesGuildViewed("manual_browsing", favoritesCount.getFavoritesCount(), obj.getFavoritesAccess().isExperimentEnabled, isPremiumExactlyResult);
+  const result = require(10215) /* setNextFavoritesGuildViewSource */.trackFavoritesGuildViewed("manual_browsing", favoritesCount.getFavoritesCount(), obj.getFavoritesAccess().isExperimentEnabled, isPremiumExactlyResult);
 };
 prototype["getGameMetadata"] = function getGameMetadata() {
   const props = this.props;

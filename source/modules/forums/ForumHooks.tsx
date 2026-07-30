@@ -1,10 +1,10 @@
-// Module ID: 9133
-// Function ID: 9134
+// Module ID: 9129
+// Function ID: 9130
 // Name: useLoadForumUnreadCounts
-// Dependencies: [5, 19, 5048, 5096, 5097, 6066, 1372, 5015, 1862, 3817, 4201, 1874, 6065, 6053, 9134, 6079, 6068, 676, 1379, 1235, 589, 6067, 709, 12, 1351, 4616, 11, 6092, 1381, 7726, 4418, 7876, 8192, 9135, 5126, 2]
+// Dependencies: [5, 19, 5048, 5096, 5097, 6064, 1372, 5015, 1862, 3817, 4201, 1874, 6063, 6051, 9130, 6077, 6066, 676, 1379, 1235, 589, 6065, 709, 12, 1351, 4616, 11, 6090, 1381, 7723, 4418, 7873, 8189, 9131, 5126, 2]
 // Exports: getForumPostAuthor, useAutomaticForumSearch, useCanManageChannel, useCanSearchForumPosts, useCanViewArchivedPosts, useChannelTemplate, useDefaultReactionEmoji, useExistingPin, useFacepileUsers, useForumActiveThreadIds, useForumPostAuthor, useForumPostFirstMessageMarkup, useForumPostMessageAuthor, useForumPostReadStates, useForumSearchQuery, useForumSearchState, useForumThreadsForChannelList, useHasForumSearchQuery, useLastActiveTimestamp, useLoadForumUnreadCounts, useMaxPossibleForumPostReactions, useMessageCount, useMostUsedReaction, useSomeForumPostReactions, useUnreadThreadsCountForParent
 
-// Module 9133 (useLoadForumUnreadCounts)
+// Module 9129 (useLoadForumUnreadCounts)
 import updateState from "updateState";
 import AbortCodes from "AbortCodes";
 import getEmojiToGroupId from "getEmojiToGroupId";
@@ -392,8 +392,8 @@ export const useMessageCount = function useMessageCount(thread) {
     }
     return num;
   });
-  const messageCountText = _require(7726).getMessageCountText(stateFromStores, thread.id);
-  const obj2 = _require(7726);
+  const messageCountText = _require(7723).getMessageCountText(stateFromStores, thread.id);
+  const obj2 = _require(7723);
   const items1 = [generateOldThreadCutoff];
   const dependencyMap = _require(589).useStateFromStores(items1, () => {
     const items = [outer1_13];

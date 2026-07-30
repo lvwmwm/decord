@@ -1,10 +1,10 @@
-// Module ID: 15618
-// Function ID: 15619
+// Module ID: 15612
+// Function ID: 15613
 // Name: ReferralProgramCoachmarkImg
-// Dependencies: [32, 19, 17, 676, 1369, 21, 4189, 5141, 15619, 4005, 1358, 7837, 8441, 1236, 15616, 712, 6611, 2]
+// Dependencies: [32, 19, 17, 676, 1369, 21, 4189, 5141, 15613, 4005, 1358, 7834, 8438, 1236, 15610, 712, 6608, 2]
 // Exports: useReferralProgramCoachmark
 
-// Module 15618 (ReferralProgramCoachmarkImg)
+// Module 15612 (ReferralProgramCoachmarkImg)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "set";
@@ -18,7 +18,7 @@ function ReferralProgramCoachmarkImg() {
   const tmp = callback2();
   let obj = { style: tmp.coachmarkImageContainer, children: null };
   obj = { source: null, style: null };
-  obj[0] = importDefault(15619);
+  obj[0] = importDefault(15613);
   obj[1] = tmp.coachmarkImage;
   obj[1] = jsx(importDefault(5141), { source: null, style: null });
   return <View source={null} style={null} />;
@@ -35,8 +35,8 @@ export const useReferralProgramCoachmark = function useReferralProgramCoachmark(
   if (!result) {
     result = disabled;
   }
-  const isEligibleSenderForReferralProgram = _require(7837).useIsEligibleSenderForReferralProgram(result);
-  _require(8441);
+  const isEligibleSenderForReferralProgram = _require(7834).useIsEligibleSenderForReferralProgram(result);
+  _require(8438);
   if (isEligibleSenderForReferralProgram) {
     if (!disabled) {
       let items = [tmp(1358).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK];

@@ -1,10 +1,10 @@
-// Module ID: 6978
-// Function ID: 6979
+// Module ID: 6975
+// Function ID: 6976
 // Name: DiamondSpotIllustration
-// Dependencies: [21, 5141, 6979, 2]
+// Dependencies: [21, 5141, 6976, 2]
 // Exports: DiamondSpotIllustration
 
-// Module 6978 (DiamondSpotIllustration)
+// Module 6975 (DiamondSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DiamondSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const DiamondSpotIllustration = function DiamondSpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6979);
+  obj[0] = importDefault(6976);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

@@ -1,10 +1,10 @@
-// Module ID: 9285
-// Function ID: 9286
+// Module ID: 9281
+// Function ID: 9282
 // Name: ConversationNavigatorHeader
-// Dependencies: [19, 17, 1372, 21, 4189, 712, 589, 4380, 9118, 2]
+// Dependencies: [19, 17, 1372, 21, 4189, 712, 589, 4380, 9114, 2]
 // Exports: default
 
-// Module 9285 (ConversationNavigatorHeader)
+// Module 9281 (ConversationNavigatorHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -37,6 +37,6 @@ export default function ConversationNavigatorHeader(channelId) {
   obj = { style: callback(flag).container, children: null };
   obj = { title: channelId.title, subtitle: null, variant: "heading-lg/semibold", subtitleColor: "text-muted" };
   obj[1] = tmp3;
-  obj[1] = jsx(channelId(9118).GenericHeaderTitle, { title: channelId.title, subtitle: null, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
+  obj[1] = jsx(channelId(9114).GenericHeaderTitle, { title: channelId.title, subtitle: null, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
   return <View title={arg0.title} subtitle={null} variant="heading-lg/semibold" subtitleColor="text-muted" />;
 };

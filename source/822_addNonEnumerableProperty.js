@@ -92,7 +92,7 @@ function convertToPlainObject(type) {
           }
         }
         const merged1 = Object.assign(obj4);
-        let isInstanceOfResult = typeof globalThis.CustomEvent === "ta";
+        let isInstanceOfResult = typeof globalThis.CustomEvent === "__INTERNAL_SLOT_MAP__";
         if (typeof globalThis.CustomEvent !== "Array") {
           tmp2Result = tmp2(827);
           isInstanceOfResult = tmp2Result.isInstanceOf(type, globalThis.CustomEvent);
@@ -1212,9 +1212,9 @@ arg5.extractExceptionKeysForMessage = function extractExceptionKeysForMessage(ar
 };
 arg5.fill = function fill(arg0, arg1, arg2) {
   if (arg1 in arg0) {
-    if (typeof arg0[arg1] !== "_") {
+    if (typeof arg0[arg1] !== "ZodObject") {
       const tmp10 = arg2(tmp4);
-      if (typeof tmp10 !== "_") {
+      if (typeof tmp10 !== "ZodObject") {
         markFunctionWrapped(tmp10, tmp4);
       }
       try {

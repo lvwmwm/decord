@@ -1,10 +1,10 @@
-// Module ID: 8437
-// Function ID: 8438
+// Module ID: 8434
+// Function ID: 8435
 // Name: retryMeasurements
 // Dependencies: [5, 12, 2]
 // Exports: getMeasurements
 
-// Module 8437 (retryMeasurements)
+// Module 8434 (retryMeasurements)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 function retryMeasurements() {
@@ -64,7 +64,7 @@ function _retryMeasurements() {
               closure_5 = undefined;
               c9 = 1;
               c10 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

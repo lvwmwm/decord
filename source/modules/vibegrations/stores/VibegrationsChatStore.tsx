@@ -1,10 +1,10 @@
-// Module ID: 15751
-// Function ID: 15752
+// Module ID: 15745
+// Function ID: 15746
 // Name: newMessageFromHistory
-// Dependencies: [5793, 10245, 1931, 4006, 4867, 5683, 676, 1379, 1236, 3259, 3862, 12613, 10271, 14477, 15752, 1222, 589, 709, 2]
+// Dependencies: [5793, 10241, 1931, 4006, 4867, 5683, 676, 1379, 1236, 3259, 3862, 12607, 10267, 14473, 15746, 1222, 589, 709, 2]
 // Exports: turnSettled
 
-// Module 15751 (newMessageFromHistory)
+// Module 15745 (newMessageFromHistory)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import DesktopNotificationTypes from "DesktopNotificationTypes";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -129,8 +129,8 @@ function recordThinkingTransition(projectId) {
             isWindowFocusedResult = channelId.getChannelId() === StaticChannelRoute.VIBEGRATIONS;
           }
           if (isWindowFocusedResult) {
-            isWindowFocusedResult = importDefault(12613).isWindowFocused();
-            const obj5 = importDefault(12613);
+            isWindowFocusedResult = importDefault(12607).isWindowFocused();
+            const obj5 = importDefault(12607);
           }
           if (guild_id == null) {
             guild_id = project.guild_id;
@@ -186,8 +186,8 @@ function recordThinkingTransition(projectId) {
           if (null != content) {
             if (isWindowFocusedResult) {
               if (!isSoundDisabledResult) {
-                require(10271) /* createSoundForPack */.playSound(tmp18, 0.4);
-                const obj9 = require(10271) /* createSoundForPack */;
+                require(10267) /* createSoundForPack */.playSound(tmp18, 0.4);
+                const obj9 = require(10267) /* createSoundForPack */;
               }
             } else {
               let CHANNELResult = null;
@@ -195,8 +195,8 @@ function recordThinkingTransition(projectId) {
                 CHANNELResult = closure_9.CHANNEL(guild_id, StaticChannelRoute.VIBEGRATIONS, projectId);
               }
               require = CHANNELResult;
-              const obj6 = importDefault(14477);
-              const tmp42 = require(15752) /* registerAsset */;
+              const obj6 = importDefault(14473);
+              const tmp42 = require(15746) /* registerAsset */;
               const name = project.name;
               obj = { tag: null, sound: null, volume: 0.4, fallbackDeepLink: null, onClick: null, isUserAvatar: false };
               const _HermesInternal = HermesInternal;
@@ -208,8 +208,8 @@ function recordThinkingTransition(projectId) {
               obj[1] = tmp44;
               let notificationDeepLink;
               if (null != CHANNELResult) {
-                notificationDeepLink = tmp39(12613).createNotificationDeepLink(CHANNELResult);
-                const tmp39Result = tmp39(12613);
+                notificationDeepLink = tmp39(12607).createNotificationDeepLink(CHANNELResult);
+                const tmp39Result = tmp39(12607);
               }
               obj[3] = notificationDeepLink;
               let fn;

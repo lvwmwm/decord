@@ -1,10 +1,10 @@
-// Module ID: 15932
-// Function ID: 15933
+// Module ID: 15926
+// Function ID: 15927
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 4261, 4205, 4207, 21, 10037, 8862, 647, 10811, 4286, 10768, 15200, 15883, 3890, 6730, 712, 1236, 2]
+// Dependencies: [19, 4261, 4205, 4207, 21, 10033, 8858, 647, 10807, 4286, 10764, 15194, 15877, 3890, 6727, 712, 1236, 2]
 // Exports: default
 
-// Module 15932 (useVoicePanelCardUserStateIcons)
+// Module 15926 (useVoicePanelCardUserStateIcons)
 import noop from "noop";
 import createRTCConnection from "createRTCConnection";
 import updateVoiceState from "updateVoiceState";
@@ -32,13 +32,13 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
   let isRTCDisconnectedUIVisible;
   let callback;
   let callback1;
-  setShowFloatingCTA = setShowFloatingCTA.useContext(importDefault(10037)).setShowFloatingCTA;
+  setShowFloatingCTA = setShowFloatingCTA.useContext(importDefault(10033)).setShowFloatingCTA;
   let tmp6;
   if (arg0 === stateFromStores.USER) {
     tmp6 = id;
   }
-  muteDeafenIconState = _require(8862).useMuteDeafenIconState(tmp6, guildId);
-  let tmp4Result = tmp4(8862);
+  muteDeafenIconState = _require(8858).useMuteDeafenIconState(tmp6, guildId);
+  let tmp4Result = tmp4(8858);
   let tmp8;
   if (arg0 === stateFromStores.USER) {
     tmp8 = id;
@@ -47,7 +47,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
   tmp4Result = tmp4(647);
   let items = [muteDeafenIconState];
   stateFromStores = tmp4Result.useStateFromStores(items, () => muteDeafenIconState.isConnected());
-  let obj2 = _require(8862);
+  let obj2 = _require(8858);
   let items1 = [videoIconState];
   const items2 = [tmp, id];
   stateFromStores1 = _require(647).useStateFromStores(items1, () => {
@@ -61,11 +61,11 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
     return voicePlatformForChannel;
   }, items2);
   let tmp13;
-  let tmp2Result = tmp2(10811);
+  let tmp2Result = tmp2(10807);
   if (arg0 === stateFromStores.STREAM) {
     tmp13 = id;
   }
-  tmp2Result = tmp2(10768);
+  tmp2Result = tmp2(10764);
   showTileVolumeIndicator = tmp2Result.useConfig({ location: "useVoicePanelCardUserStateIcons" }).showTileVolumeIndicator;
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = 0 === tmp2Result(tmp13, tmp4(4286).MediaEngineContextTypes.STREAM).effectiveVolume;
@@ -74,7 +74,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
     showTileVolumeIndicator = arg0 === tmp5.STREAM;
   }
   const tmp4Result1 = _require(647);
-  isRTCDisconnectedUIVisible = _require(15200).useIsRTCDisconnectedUIVisible(tmp, id);
+  isRTCDisconnectedUIVisible = _require(15194).useIsRTCDisconnectedUIVisible(tmp, id);
   const items3 = [setShowFloatingCTA];
   callback = obj.useCallback(() => {
 
@@ -86,7 +86,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
       icon() {
         const obj = { size: "xs", color: null };
         obj[1] = callback2(712).colors.STATUS_WARNING;
-        return callback3(callback(6730).CircleErrorIcon, obj);
+        return callback3(callback(6727).CircleErrorIcon, obj);
       },
       content: null
     };

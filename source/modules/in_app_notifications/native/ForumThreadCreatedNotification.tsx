@@ -1,10 +1,10 @@
-// Module ID: 10342
-// Function ID: 10343
+// Module ID: 10338
+// Function ID: 10339
 // Name: ForumThreadCreatedNotification
-// Dependencies: [19, 10262, 21, 4380, 1236, 4418, 4197, 4395, 10303, 1959, 10334, 1297, 4185, 2]
+// Dependencies: [19, 10257, 21, 4380, 1236, 4418, 4197, 4395, 10299, 1959, 10330, 1297, 4185, 2]
 // Exports: default
 
-// Module 10342 (ForumThreadCreatedNotification)
+// Module 10338 (ForumThreadCreatedNotification)
 import noop from "noop";
 import { NOTIFICATION_PREVIEW_LINE_CLAMP as closure_4 } from "set";
 import { jsx } from "jsxProd";

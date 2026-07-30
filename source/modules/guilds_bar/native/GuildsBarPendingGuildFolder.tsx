@@ -1,8 +1,8 @@
-// Module ID: 14965
-// Function ID: 14966
-// Dependencies: [19, 4006, 676, 21, 14952, 10984, 589, 14944, 4050, 4158, 5105, 1236, 14951, 11997, 2]
+// Module ID: 14959
+// Function ID: 14960
+// Dependencies: [19, 4006, 676, 21, 14946, 10980, 589, 14938, 4050, 4158, 5105, 1236, 14945, 11991, 2]
 
-// Module 14965
+// Module 14959
 import importAllResult from "noop";
 import handleConnectionOpen from "handleConnectionOpen";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
@@ -18,8 +18,8 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
   id = id.id;
   let importDefault;
   ({ expanded, childNodes } = id);
-  let obj = id(14952);
-  importDefault = importDefault(10984)();
+  let obj = id(14946);
+  importDefault = importDefault(10980)();
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: false });
   const items = [handleConnectionOpen];
   const items1 = [id];
@@ -59,7 +59,7 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
       const result1 = outer1_1(outer1_2[10]).toggleGuildFolderExpand(closure_0);
     }
   }), items2);
-  obj = { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "HermesInternal", overState: "a", preventClipping: 118.99920897665, config: null, externalChildren: "\u{1F9D1}\u{1F3FD}\u200D\u{1F91D}\u200D\u{1F9D1}\u{1F3FD}", children: true };
+  obj = { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "HermesInternal", overState: "a", preventClipping: "film", config: "filmklapper", externalChildren: "klapper", children: "klaptr\u00E6" };
   const obj3 = id(4050);
   obj[0] = "" + id;
   obj[1] = accessibilityActions;
@@ -75,11 +75,11 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
     obj = { folderId: null, totalItems: null };
     obj[0] = id;
     obj[1] = childNodes.length;
-    tmp8Result = tmp8(tmp(14951).GuildsBarGuildFolderBG, obj);
+    tmp8Result = tmp8(tmp(14945).GuildsBarGuildFolderBG, obj);
   }
   obj[13] = tmp8Result;
-  obj[14] = jsx(id(11997).HourglassIcon, {});
-  return jsx(importDefault(14952), { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "HermesInternal", overState: "a", preventClipping: 118.99920897665, config: null, externalChildren: "\u{1F9D1}\u{1F3FD}\u200D\u{1F91D}\u200D\u{1F9D1}\u{1F3FD}", children: true });
+  obj[14] = jsx(id(11991).HourglassIcon, {});
+  return jsx(importDefault(14946), { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "HermesInternal", overState: "a", preventClipping: "film", config: "filmklapper", externalChildren: "klapper", children: "klaptr\u00E6" });
 });
 let result = require("ME").fileFinishedImporting("modules/guilds_bar/native/GuildsBarPendingGuildFolder.tsx");
 

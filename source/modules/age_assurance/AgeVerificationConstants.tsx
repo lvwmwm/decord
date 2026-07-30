@@ -1,16 +1,16 @@
-// Module ID: 6748
-// Function ID: 6749
+// Module ID: 6745
+// Function ID: 6746
 // Name: set
-// Dependencies: [676, 6749, 1236, 6747, 1945, 2741, 2]
+// Dependencies: [676, 6746, 1236, 6744, 1945, 2741, 2]
 // Exports: getAgeVerificationGetStartedSteps
 
-// Module 6748 (set)
+// Module 6745 (set)
 import { HelpdeskArticles } from "ME";
 import set from "getSystemLocale";
 
 let items = [require("AgeVerificationModalEntryPoint").AgeVerificationModalEntryPoint.NSFW_GUILD];
 let set = new Set(items);
-let obj = { FACIAL_AGE_ESTIMATION: 1, [1]: "FACIAL_AGE_ESTIMATION", ID_VERIFICATION: 2, [2]: "ID_VERIFICATION", MODULAR: 3, [3]: "MODULAR", GOOGLE_WALLET: 9, [9]: "GOOGLE_WALLET" };
+let obj = { FACIAL_AGE_ESTIMATION: 1, [1]: "FACIAL_AGE_ESTIMATION", ID_VERIFICATION: 2, [2]: "ID_VERIFICATION", MODULAR: 3, [3]: "MODULAR", GOOGLE_WALLET: 9, [9]: "GOOGLE_WALLET", CREDIT_CARD: 11, [11]: "CREDIT_CARD" };
 obj = {};
 obj = { title: require("messagesProxy")["2yLvkS"], description: require("messagesProxy").eJmat5 };
 obj[obj.FACIAL_AGE_ESTIMATION] = obj;

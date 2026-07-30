@@ -1,10 +1,10 @@
-// Module ID: 9265
-// Function ID: 9266
+// Module ID: 9261
+// Function ID: 9262
 // Name: ParagraphField
-// Dependencies: [19, 17, 4678, 505, 21, 4189, 5109, 712, 4185, 7644, 1236, 2]
+// Dependencies: [19, 17, 4678, 505, 21, 4189, 5109, 712, 4185, 7641, 1236, 2]
 // Exports: default
 
-// Module 9265 (ParagraphField)
+// Module 9261 (ParagraphField)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { MAX_PARAGRAPH_RESPONSE_LENGTH as closure_3 } from "items";
@@ -39,7 +39,7 @@ export default function ParagraphField(field) {
   const intl = tmp5(1236).intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["Sqn+Wh"]);
   obj[3] = field.onChange;
-  items[1] = callback(require(7644) /* TextArea */.TextArea, obj);
+  items[1] = callback(require(7641) /* TextArea */.TextArea, obj);
   obj[1] = items;
   return closure_5(View, obj);
 };

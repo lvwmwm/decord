@@ -1,10 +1,10 @@
-// Module ID: 8455
-// Function ID: 8456
+// Module ID: 8452
+// Function ID: 8453
 // Name: RestrictedGuildProfileView
-// Dependencies: [19, 17, 21, 8456, 4125, 3893, 712, 4611, 5566, 4185, 1236, 2]
+// Dependencies: [19, 17, 21, 8453, 4125, 3893, 712, 4611, 5566, 4185, 1236, 2]
 // Exports: default
 
-// Module 8455 (RestrictedGuildProfileView)
+// Module 8452 (RestrictedGuildProfileView)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -16,16 +16,16 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/guild_profile/native/components/RestrictedGuildProfileView.tsx");
 
 export default function RestrictedGuildProfileView() {
-  let obj = require(8456) /* GuildProfileBackground */;
+  let obj = require(8453) /* GuildProfileBackground */;
   const styles = obj.useStyles();
   let obj1 = require(3893) /* map */;
   obj = { style: styles.container, children: null };
   const token = obj1.useToken(importDefault(712).colors.BACKGROUND_BASE_LOWEST);
   obj = { style: styles.colorBanner, start: null, end: null, colors: null };
   const tmp2 = importDefault(4125)();
-  obj[1] = require(8456) /* GuildProfileBackground */.DiagonalGradient.START;
-  obj[2] = require(8456) /* GuildProfileBackground */.DiagonalGradient.END;
-  let obj4 = require(8456) /* GuildProfileBackground */;
+  obj[1] = require(8453) /* GuildProfileBackground */.DiagonalGradient.START;
+  obj[2] = require(8453) /* GuildProfileBackground */.DiagonalGradient.END;
+  let obj4 = require(8453) /* GuildProfileBackground */;
   obj[3] = obj4.getBackgroundForProfile(tmp2, token);
   const items = [callback(importDefault(4611), obj), , ];
   obj1 = { style: styles.header, children: null };

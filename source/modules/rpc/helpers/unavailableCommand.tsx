@@ -1,21 +1,21 @@
-// Module ID: 13574
-// Function ID: 13575
+// Module ID: 13569
+// Function ID: 13570
 // Name: unsupportedCommand
-// Dependencies: [676, 10626, 2]
+// Dependencies: [676, 10622, 2]
 
-// Module 13574 (unsupportedCommand)
+// Module 13569 (unsupportedCommand)
 import { RPCErrors } from "ME";
 
 let obj = {
   handler(cmd) {
-    let tmp = importDefault(10626);
+    let tmp = importDefault(10622);
     tmp = new tmp({ errorCode: RPCErrors.INVALID_COMMAND }, "Unsupported command: " + cmd.cmd);
     throw tmp;
   }
 };
 obj = {
   handler(cmd) {
-    let tmp = importDefault(10626);
+    let tmp = importDefault(10622);
     tmp = new tmp({ errorCode: RPCErrors.INVALID_COMMAND }, "Deprecated command: " + cmd.cmd);
     throw tmp;
   }

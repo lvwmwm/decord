@@ -1,10 +1,10 @@
-// Module ID: 15930
-// Function ID: 15931
+// Module ID: 15924
+// Function ID: 15925
 // Name: areStableParticipantsEqual
-// Dependencies: [4202, 1218, 4236, 1874, 4207, 643, 589, 4379, 9086, 10043, 2]
+// Dependencies: [4202, 1218, 4236, 1874, 4207, 643, 589, 4379, 9082, 10039, 2]
 // Exports: default, isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 15930 (areStableParticipantsEqual)
+// Module 15924 (areStableParticipantsEqual)
 import getParticipants from "getParticipants";
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -40,19 +40,19 @@ export default function useStableParticipant(arg0, arg1, arg2) {
       if (null == participant) {
         const user = outer1_6.getUser(tmp);
         if (null != user) {
-          let obj = { type: null, id: null, user: null, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "PX_16", ringing: null, hasVideo: "2025-12-rive-mobile-renderer", isSelf: "user" };
+          let obj = { type: null, id: null, user: null, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "PX_16", ringing: null, hasVideo: "user", isSelf: "2026-03-friend-is-online-v3" };
           obj[0] = outer1_7.USER;
           obj[1] = tmp;
           obj[2] = user;
           const id = outer1_4.getId();
           obj[5] = callback(4379).getName(dependencyMap, tmp3, user);
           const obj5 = callback(4379);
-          obj[6] = callback(9086).getAvatarDecoration(user, dependencyMap);
+          obj[6] = callback(9082).getAvatarDecoration(user, dependencyMap);
           obj[10] = user.id === id;
           return obj;
         }
       } else {
-        const tmp15 = callback2(10043)(participant);
+        const tmp15 = callback2(10039)(participant);
         const type = participant.type;
         if (outer1_7.ACTIVITY === type) {
           obj = { type: null, id: null, applicationId: null };

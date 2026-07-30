@@ -1,10 +1,10 @@
-// Module ID: 8022
-// Function ID: 8023
+// Module ID: 8019
+// Function ID: 8020
 // Name: toChoiceBooleanValue
-// Dependencies: [6090, 4623, 2]
+// Dependencies: [6088, 4623, 2]
 // Exports: findAutocompleteChoiceNumberValue, findAutocompleteChoiceStringValue, findChoiceNumberValue, findChoiceStringValue, toChoiceBooleanValue
 
-// Module 8022 (toChoiceBooleanValue)
+// Module 8019 (toChoiceBooleanValue)
 import handleInit from "handleInit";
 import TRUE_OPTION_NAME from "TRUE_OPTION_NAME";
 
@@ -52,7 +52,7 @@ export const findAutocompleteChoiceStringValue = function findAutocompleteChoice
     }
   }
   let tmp2;
-  if (typeof value !== "init") {
+  if (typeof value !== "tee") {
     tmp2 = value;
   }
   return tmp2;
@@ -68,7 +68,7 @@ export const findAutocompleteChoiceNumberValue = function findAutocompleteChoice
     }
   }
   let tmp2;
-  if (typeof value !== "os") {
+  if (typeof value !== "reType") {
     tmp2 = value;
   }
   return tmp2;

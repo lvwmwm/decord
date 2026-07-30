@@ -1,10 +1,10 @@
-// Module ID: 7384
-// Function ID: 7385
+// Module ID: 7381
+// Function ID: 7382
 // Name: PingPongPaddleIllocon
-// Dependencies: [21, 5141, 7385, 2]
+// Dependencies: [21, 5141, 7382, 2]
 // Exports: PingPongPaddleIllocon
 
-// Module 7384 (PingPongPaddleIllocon)
+// Module 7381 (PingPongPaddleIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PingPongPaddleIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const PingPongPaddleIllocon = function PingPongPaddleIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7385);
+  obj[0] = importDefault(7382);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

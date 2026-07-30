@@ -1,8 +1,8 @@
-// Module ID: 12837
-// Function ID: 12838
-// Dependencies: [19, 17, 1931, 5779, 21, 4189, 712, 8321, 589, 8266, 8210, 4157, 8229, 4399, 8217, 4717, 8225, 4600, 1236, 2]
+// Module ID: 12831
+// Function ID: 12832
+// Dependencies: [19, 17, 1931, 5779, 21, 4189, 712, 8318, 589, 8263, 8207, 4157, 8226, 4399, 8214, 4717, 8222, 4600, 1236, 2]
 
-// Module 12837
+// Module 12831
 import importAllResult from "set";
 import { View } from "Button";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -27,9 +27,9 @@ const memoResult = importAllResult.memo((channel) => {
   let dependencyMap;
   let nextRecurrenceIdInEvent;
   let tmp = callback3();
-  let obj = channel(8321);
+  let obj = channel(8318);
   activeEvent = obj.useActiveEvent(channel.id);
-  let obj1 = channel(8321);
+  let obj1 = channel(8318);
   const imminentUpcomingGuildEvents = obj1.useImminentUpcomingGuildEvents(channel.id);
   let obj2 = channel(589);
   const items = [handleConnectionOpen];
@@ -43,8 +43,8 @@ const memoResult = importAllResult.memo((channel) => {
     tmp7 = first;
   }
   dependencyMap = tmp7;
-  let tmp2Result = tmp2(8266);
-  tmp2Result = tmp2(8210);
+  let tmp2Result = tmp2(8263);
+  tmp2Result = tmp2(8207);
   nextRecurrenceIdInEvent = tmp2Result.getNextRecurrenceIdInEvent(tmp7);
   const items1 = [tmp7, channel, activeEvent, nextRecurrenceIdInEvent];
   [][0] = tmp7;
@@ -71,12 +71,12 @@ const memoResult = importAllResult.memo((channel) => {
     obj[2] = tmp.header;
     obj = { event: null, showUserCount: false };
     obj[0] = tmp7;
-    const items2 = [callback2(tmp2(8225).GuildEventCardHeader, obj), , ];
+    const items2 = [callback2(tmp2(8222).GuildEventCardHeader, obj), , ];
     obj1 = { event: null, descriptionContainerStyle: null, condensed: null };
     obj1[0] = tmp7;
     obj1[1] = tmp.descriptionContainerStyle;
     obj1[2] = tmp18Result;
-    items2[1] = callback2(tmp2(8225).GuildEventCardMetaInfo, obj1);
+    items2[1] = callback2(tmp2(8222).GuildEventCardMetaInfo, obj1);
     if (tmp18Result) {
       tmp18Result = canManageGuildEventResult;
     }

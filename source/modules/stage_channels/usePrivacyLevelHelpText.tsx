@@ -1,10 +1,10 @@
-// Module ID: 8342
-// Function ID: 8343
+// Module ID: 8339
+// Function ID: 8340
 // Name: useStagePrivacyLevelSettings
 // Dependencies: [3817, 676, 1378, 505, 589, 3822, 506, 1236, 1945, 2]
 // Exports: default
 
-// Module 8342 (useStagePrivacyLevelSettings)
+// Module 8339 (useStagePrivacyLevelSettings)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { HelpdeskArticles } from "ME";
 import { GuildScheduledEventPrivacyLevel as closure_6 } from "GUILD_EVENT_MAX_NAME_LENGTH";

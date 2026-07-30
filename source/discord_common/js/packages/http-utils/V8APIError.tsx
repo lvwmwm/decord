@@ -122,7 +122,7 @@ prototype["hasFieldErrors"] = function hasFieldErrors() {
 };
 prototype["getFieldErrors"] = function getFieldErrors(ASSET) {
   let arr = ASSET;
-  if (typeof ASSET !== "init") {
+  if (typeof ASSET !== "tee") {
     const items = [ASSET];
     arr = items;
   }

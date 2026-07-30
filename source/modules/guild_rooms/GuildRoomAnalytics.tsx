@@ -1,10 +1,10 @@
-// Module ID: 16197
-// Function ID: 16198
+// Module ID: 16191
+// Function ID: 16192
 // Name: trackGuildRoomObjectInteracted
-// Dependencies: [1218, 1372, 4261, 4205, 16193, 16198, 676, 4384, 2]
+// Dependencies: [1218, 1372, 4261, 4205, 16187, 16192, 676, 4384, 2]
 // Exports: trackGuildRoomInteracted, trackGuildRoomLayoutToggled, trackGuildRoomObjectInteracted, trackGuildRoomOpened, trackGuildRoomSeatSelected, trackGuildRoomUserConnected, trackGuildRoomUserDisconnected, trackGuildRoomUserInteracted, trackGuildRoomUserUpdated
 
-// Module 16197 (trackGuildRoomObjectInteracted)
+// Module 16191 (trackGuildRoomObjectInteracted)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";

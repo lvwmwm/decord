@@ -1,10 +1,10 @@
-// Module ID: 8037
-// Function ID: 8038
+// Module ID: 8034
+// Function ID: 8035
 // Name: GiftCodeRedeemModal
-// Dependencies: [19, 8032, 1874, 21, 5143, 4395, 8038, 12330, 12331, 589, 8040, 5570, 2]
+// Dependencies: [19, 8029, 1874, 21, 5143, 4395, 8035, 12324, 12325, 589, 8037, 5570, 2]
 // Exports: default
 
-// Module 8037 (GiftCodeRedeemModal)
+// Module 8034 (GiftCodeRedeemModal)
 import "noop";
 import updateGiftCode from "updateGiftCode";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -26,7 +26,7 @@ export default function GiftCodeRedeemModal(code) {
   let obj1 = stateFromStores1(589);
   const items1 = [mergeGuildAvatar];
   stateFromStores1 = obj1.useStateFromStores(items1, () => currentUser.getCurrentUser());
-  const tmp6 = importDefault(8040)(code, stateFromStores1);
+  const tmp6 = importDefault(8037)(code, stateFromStores1);
   if (null == stateFromStores1) {
     return null;
   } else {
@@ -59,7 +59,7 @@ export default function GiftCodeRedeemModal(code) {
     obj2[1] = tmp2(5143).getHeaderCloseButton(() => callback(4395).pop());
     obj2[2] = function render(arg0) {
       const merged = Object.assign(arg0);
-      return callback2(callback(12331), {});
+      return callback2(callback(12325), {});
     };
     obj[obj.ERROR] = obj2;
     if (null == stateFromStores) {

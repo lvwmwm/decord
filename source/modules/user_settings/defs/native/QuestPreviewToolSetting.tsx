@@ -1,9 +1,9 @@
-// Module ID: 14193
-// Function ID: 14194
+// Module ID: 14189
+// Function ID: 14190
 // Name: route
-// Dependencies: [676, 10120, 1236, 10492, 14025, 14194, 2]
+// Dependencies: [676, 10116, 1236, 10488, 14020, 14190, 2]
 
-// Module 14193 (route)
+// Module 14189 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -12,7 +12,7 @@ obj = {
     return intl.string(require(1236) /* getSystemLocale */.t.BDUDau);
   },
   usePredicate() {
-    return require(10492) /* useQuests */.useIsPreviewerOnAnyQuest();
+    return require(10488) /* useQuests */.useIsPreviewerOnAnyQuest();
   },
   parent: null,
   IconComponent: require("QuestsIcon").QuestsIcon,
@@ -21,7 +21,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.QUEST_PREVIEW_TOOL_2,
   getComponent() {
-    return require(14194) /* SettingsQuestPreviewScreen */.default;
+    return require(14190) /* SettingsQuestPreviewScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);

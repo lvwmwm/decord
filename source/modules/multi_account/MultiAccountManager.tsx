@@ -1,9 +1,9 @@
-// Module ID: 16253
-// Function ID: 16254
+// Module ID: 16247
+// Function ID: 16248
 // Name: _initialize
-// Dependencies: [1874, 12772, 5134, 709, 12692, 2]
+// Dependencies: [1874, 12766, 5134, 709, 12686, 2]
 
-// Module 16253 (_initialize)
+// Module 16247 (_initialize)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import initialize from "initialize";
 import "initialize";
@@ -58,7 +58,7 @@ prototype["handleLogout"] = function handleLogout(isSwitchingAccount) {
   }
 };
 prototype["handleMultiAccountSwitchStart"] = function handleMultiAccountSwitchStart(targetUserId) {
-  const result = require(12692) /* noop */.setAccountSwitchUserId(targetUserId.targetUserId);
+  const result = require(12686) /* noop */.setAccountSwitchUserId(targetUserId.targetUserId);
 };
 let result = require("initialize").fileFinishedImporting("modules/multi_account/MultiAccountManager.tsx");
 

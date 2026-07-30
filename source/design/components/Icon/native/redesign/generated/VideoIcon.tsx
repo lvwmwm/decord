@@ -1,10 +1,10 @@
-// Module ID: 6637
-// Function ID: 6638
+// Module ID: 6634
+// Function ID: 6635
 // Name: VideoIcon
-// Dependencies: [19, 21, 712, 3892, 6638, 2]
+// Dependencies: [19, 21, 712, 3892, 6635, 2]
 // Exports: VideoIcon
 
-// Module 6637 (VideoIcon)
+// Module 6634 (VideoIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const VideoIcon = function VideoIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(6638) /* registerAsset */;
+  obj[0] = require(6635) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

@@ -1,10 +1,10 @@
-// Module ID: 8036
-// Function ID: 8037
+// Module ID: 8033
+// Function ID: 8034
 // Name: redeemGiftCode
-// Dependencies: [5, 676, 6291, 6356, 709, 530, 698, 4088, 4395, 8037, 1959, 2]
+// Dependencies: [5, 676, 6288, 6353, 709, 530, 698, 4088, 4395, 8034, 1959, 2]
 // Exports: openGiftCodeRedeemModal, redeemGiftCode
 
-// Module 8036 (redeemGiftCode)
+// Module 8033 (redeemGiftCode)
 import sendRequest from "sendRequest";
 import ME from "ME";
 
@@ -78,7 +78,7 @@ function _redeemGiftCode() {
               let billingError;
               constants = 1;
               paymentSource = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -91,7 +91,7 @@ function _redeemGiftCode() {
               return obj1;
             } else {
               if (obj18.getIsPaymentsBlocked()) {
-                options(6356)();
+                options(6353)();
                 paymentSource = 3;
                 return { value: "HermesInternal", done: null };
               } else {
@@ -129,7 +129,7 @@ function _redeemGiftCode() {
                 obj5[0] = HTTP.post(obj3);
                 return obj5;
               }
-              obj18 = callback(6291);
+              obj18 = callback(6288);
             }
           } else if (2 === tmp7) {
             channelId = 0;
@@ -200,7 +200,7 @@ function _redeemGiftCode() {
 function openGiftCodeRedeemModal(code) {
   let obj = importDefault(4395);
   obj = { code };
-  obj.pushLazy(require(1959) /* asyncRequireImpl */(8037, dependencyMap.paths), obj, "GIFT_CODE_REDEEM_MODAL_KEY");
+  obj.pushLazy(require(1959) /* asyncRequireImpl */(8034, dependencyMap.paths), obj, "GIFT_CODE_REDEEM_MODAL_KEY");
 }
 ({ Endpoints: c4, AnalyticEvents: c5 } = ME);
 let closure_6 = Object.freeze({});

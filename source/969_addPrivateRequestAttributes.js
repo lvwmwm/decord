@@ -48,7 +48,7 @@ export const instrumentAnthropicAiClient = function instrumentAnthropicAiClient(
     get(self) {
       let obj = self[arg1];
       let methodPath = outer1_0(outer1_1[2]).buildMethodPath(str, String(arg1));
-      if (typeof obj !== "_") {
+      if (typeof obj !== "ZodObject") {
         if (tmpResult.shouldInstrument(methodPath)) {
           str = obj;
           let closure_2 = self;
@@ -367,7 +367,7 @@ export const instrumentAnthropicAiClient = function instrumentAnthropicAiClient(
             obj[0] = function get(self) {
               let obj = self[arg1];
               let methodPath = outer1_0(outer1_1[2]).buildMethodPath(str, String(arg1));
-              if (typeof obj !== "_") {
+              if (typeof obj !== "ZodObject") {
                 if (tmpResult.shouldInstrument(methodPath)) {
                   str = obj;
                   let closure_2 = self;
@@ -459,7 +459,7 @@ export const instrumentAnthropicAiClient = function instrumentAnthropicAiClient(
                                 }
                                 const obj2 = str(methodPath[4]);
                               }
-                              return str(methodPath[9]).handleCallbackErrors(() => { ... }, () => { ... }, /* F113532 */ function() { ... }, () => { ... });
+                              return str(methodPath[9]).handleCallbackErrors(() => { ... }, () => { ... }, /* F113542 */ function() { ... }, () => { ... });
                             });
                           }
                         }
@@ -484,7 +484,7 @@ export const instrumentAnthropicAiClient = function instrumentAnthropicAiClient(
                               let c6 = 0;
                               let c7 = 0;
                               let c5 = 0;
-                              return (/* F118622 */ function*() { ... })();
+                              return (/* F118633 */ function*() { ... })();
                             });
                             let startSpanManualResult = tmp2(startSpanManual[7]).startSpanManual(obj, function(arg0) {
                               const self = this;
@@ -551,7 +551,7 @@ export const instrumentAnthropicAiClient = function instrumentAnthropicAiClient(
                     obj[0] = function get(self) {
                       let obj = self[arg1];
                       let methodPath = outer1_0(outer1_1[2]).buildMethodPath(str, String(arg1));
-                      if (typeof obj !== "_") {
+                      if (typeof obj !== "ZodObject") {
                         if (tmpResult.shouldInstrument(methodPath)) {
                           str = obj;
                           let closure_2 = self;
@@ -645,7 +645,7 @@ export const instrumentAnthropicAiClient = function instrumentAnthropicAiClient(
                                 if (BooleanResult) {
                                   if (!tmp12) {
                                     closure_0 = undefined;
-                                    closure_0 = _self(/* F117566 */ function() { ... });
+                                    closure_0 = _self(/* F117577 */ function() { ... });
                                     let startSpanManualResult = tmp2(startSpanManual[7]).startSpanManual(obj, () => { ... });
                                     const tmp2Result3 = tmp2(startSpanManual[7]);
                                   }
@@ -683,7 +683,7 @@ export const instrumentAnthropicAiClient = function instrumentAnthropicAiClient(
                             obj[0] = function get(self) {
                               let obj = self[arg1];
                               let methodPath = outer1_0(outer1_1[2]).buildMethodPath(str, String(arg1));
-                              if (typeof obj !== "_") {
+                              if (typeof obj !== "ZodObject") {
                                 if (tmpResult.shouldInstrument(methodPath)) {
                                   str = obj;
                                   let closure_2 = self;

@@ -1,10 +1,10 @@
-// Module ID: 13048
-// Function ID: 13049
+// Module ID: 13043
+// Function ID: 13044
 // Name: HideMutedChannelsOption
-// Dependencies: [19, 17, 5785, 1340, 1415, 5921, 1935, 4201, 4385, 1874, 676, 5112, 7724, 4386, 21, 4189, 712, 589, 5553, 1236, 10232, 9993, 4005, 1358, 5781, 4157, 4395, 9992, 1959, 11444, 4379, 5515, 5535, 9800, 1297, 9454, 13049, 1306, 1355, 8307, 13050, 7942, 8452, 4185, 3862, 6506, 5135, 10310, 5130, 13098, 10305, 13099, 8320, 4996, 8276, 8229, 10013, 13100, 4530, 38, 13047, 10265, 10264, 5789, 9999, 13101, 7692, 7799, 11019, 5542, 5543, 3889, 1416, 2]
+// Dependencies: [19, 17, 5785, 1340, 1415, 5919, 1935, 4201, 4385, 1874, 676, 5112, 7721, 4386, 21, 4189, 712, 589, 5553, 1236, 10228, 9989, 4005, 1358, 5781, 4157, 4395, 9988, 1959, 11440, 4379, 5515, 5535, 9797, 1297, 9450, 13044, 1306, 1355, 8304, 13045, 7939, 8449, 4185, 3862, 6503, 5135, 10306, 5130, 13093, 10301, 13094, 8317, 4996, 8273, 8226, 10009, 13095, 4530, 38, 13042, 10261, 10260, 5789, 9995, 13096, 7689, 7796, 11015, 5542, 5543, 3889, 1416, 2]
 // Exports: GuildActionSheetDirectoryActions, GuildActionSheetPrimaryActions, GuildActionSheetSecondaryActions, GuildDeveloperOptionAction, GuildUnreadAction, handleLeaveServer
 
-// Module 13048 (HideMutedChannelsOption)
+// Module 13043 (HideMutedChannelsOption)
 import getSystemLocale from "getSystemLocale";
 import { View } from "initialize";
 import guildHasCommunity from "guildHasCommunity";
@@ -50,7 +50,7 @@ function BrowseChannelsOption(guild) {
   guild = guild.guild;
   let obj = guild(4005);
   const result = obj.useIsDismissibleContentDismissed_UNSAFE(guild(1358).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX);
-  const tmp2 = importDefault(9993)(guild);
+  const tmp2 = importDefault(9989)(guild);
   const items = [generateOldThreadCutoff];
   const stateFromStores = guild(589).useStateFromStores(items, () => outer1_11.hasUnread(guild.id, outer1_20.GUILD_ONBOARDING_QUESTION));
   const obj2 = guild(589);
@@ -86,7 +86,7 @@ function BrowseChannelsOption(guild) {
       obj[2] = stringResult;
       tmp8Result = tmp8(tmp9, obj);
     }
-    tmp8Result = tmp8(tmp3(11444).NewBadge, {});
+    tmp8Result = tmp8(tmp3(11440).NewBadge, {});
   }
 }
 function ChangeIdentityOption(arg0) {
@@ -97,7 +97,7 @@ function ChangeIdentityOption(arg0) {
   const tmp = createCacheKey();
   let obj = importDefault(4379);
   const nickname = obj.getNickname(guild.id, undefined, user);
-  _require = importDefault(9800)({ guild, analyticsLocations: importDefault(5515)(importDefault(5535).GUILD_SETTINGS).analyticsLocations });
+  _require = importDefault(9797)({ guild, analyticsLocations: importDefault(5515)(importDefault(5535).GUILD_SETTINGS).analyticsLocations });
   const intl = _require(1236).intl;
   const features = guild.features;
   const hasItem = features.has(constants.HUB);
@@ -119,7 +119,7 @@ function ChangeIdentityOption(arg0) {
       obj2[0] = user;
       obj2[1] = nickname;
       ({ identityName: obj5[2], identityName: obj5[3], identityName: obj5[4] } = tmp);
-      items[1] = tmp6(importDefault(9454), obj2);
+      items[1] = tmp6(importDefault(9450), obj2);
       obj[1] = items;
       tmp9 = callback3(View, obj);
     }
@@ -151,7 +151,7 @@ function GuildThemePreferenceOption(guild) {
 }
 function ServerTagOption(guild) {
   guild = guild.guild;
-  let obj = guild(8307);
+  let obj = guild(8304);
   [][0] = guild.id;
   const result = obj.canViewMobileServerTag(guild.id);
   if (result) {
@@ -160,7 +160,7 @@ function ServerTagOption(guild) {
     if (profile != null) {
       badge = profile.badge;
     }
-    const guildTagBadgeUrl = tmp2(7942).getGuildTagBadgeUrl(guild.id, badge, GuildTagBadgeSize.SIZE_16);
+    const guildTagBadgeUrl = tmp2(7939).getGuildTagBadgeUrl(guild.id, badge, GuildTagBadgeSize.SIZE_16);
     obj = { style: null, children: null };
     obj[0] = tmp.serverTagLabel;
     const profile2 = guild.profile;
@@ -174,7 +174,7 @@ function ServerTagOption(guild) {
     obj2[0] = tag;
     obj2[1] = guildTagBadgeUrl;
     obj2[2] = GuildTagBadgeSize.SIZE_16;
-    obj1[2] = closure_21(tmp2(8452).BaseGuildTagChiplet, obj2);
+    obj1[2] = closure_21(tmp2(8449).BaseGuildTagChiplet, obj2);
     const items = [closure_21(View, obj1), ];
     const obj3 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
     const intl = tmp2(1236).intl;
@@ -321,7 +321,7 @@ export const GuildUnreadAction = function GuildUnreadAction(guild) {
 };
 export const GuildActionSheetPrimaryActions = function GuildActionSheetPrimaryActions(guild) {
   guild = guild.guild;
-  let obj = guild(13099);
+  let obj = guild(13094);
   let obj1 = guild(589);
   const items = [createGuildRoleRecordFromRust];
   const items1 = [];
@@ -397,7 +397,7 @@ export const GuildActionSheetDirectoryActions = function GuildActionSheetDirecto
   items.push(callback2(NotificationAction, { guild }));
   items.push(callback2(ChangeIdentityOption, { guild, user: currentUser }));
   items.push(callback2(RestrictedGuildPrivacyOption, { guild }));
-  let obj = guild(13047);
+  let obj = guild(13042);
   const messageRequestPrivacyOption = obj.useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);
@@ -438,9 +438,9 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
   let shouldShowIncidentActions;
   guild = guild.guild;
   const currentUser = authStore.getCurrentUser();
-  let obj = guild(10265);
+  let obj = guild(10261);
   const canReportRaid = obj.useCanReportRaid(guild);
-  let obj1 = guild(10264);
+  let obj1 = guild(10260);
   const guildIncidentsState = obj1.useGuildIncidentsState(guild.id);
   const items = [];
   ({ shouldShowIncidentActions, isUnderLockdown } = guildIncidentsState);
@@ -464,7 +464,7 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
   items.push(callback2(RestrictedGuildPrivacyOption, { guild }));
   const tmp12 = constants;
   const tmp2 = callback(guild, currentUser);
-  const messageRequestPrivacyOption = guild(13047).useMessageRequestPrivacyOption({ guild });
+  const messageRequestPrivacyOption = guild(13042).useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);
   }

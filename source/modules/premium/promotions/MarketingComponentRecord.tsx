@@ -1,9 +1,9 @@
-// Module ID: 6265
-// Function ID: 6266
+// Module ID: 6262
+// Function ID: 6263
 // Name: createFromServer
-// Dependencies: [1883, 6266, 1307, 2]
+// Dependencies: [1883, 6263, 1307, 2]
 
-// Module 6265 (createFromServer)
+// Module 6262 (createFromServer)
 import "toJS";
 
 const require = arg1;
@@ -23,7 +23,7 @@ prototype["createFromServer"] = function createFromServer(properties) {
   const obj = { ignoreBOM: true };
   const textDecoder = new TextDecoder("utf-8", obj);
   ({ id, component_type } = properties);
-  const PremiumMarketingComponentProperties = textDecoder(6266).PremiumMarketingComponentProperties;
+  const PremiumMarketingComponentProperties = textDecoder(6263).PremiumMarketingComponentProperties;
   const fromBinary = PremiumMarketingComponentProperties.fromBinary;
   const obj2 = textDecoder(1307);
   function readerFactory(buf) {

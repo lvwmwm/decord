@@ -1,9 +1,9 @@
-// Module ID: 10470
-// Function ID: 10471
+// Module ID: 10466
+// Function ID: 10467
 // Name: initialize
 // Dependencies: [5644, 589, 709, 2]
 
-// Module 10470 (initialize)
+// Module 10466 (initialize)
 import { NotificationTypes } from "str2";
 import { PersistedStore } from "initialize";
 

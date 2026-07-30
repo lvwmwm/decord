@@ -1,10 +1,10 @@
-// Module ID: 9950
-// Function ID: 9951
+// Module ID: 9946
+// Function ID: 9947
 // Name: ForLaterCardReminderHeader
-// Dependencies: [17, 21, 4189, 712, 9942, 4153, 4185, 2]
+// Dependencies: [17, 21, 4189, 712, 9938, 4153, 4185, 2]
 // Exports: ForLaterCardReminderHeader
 
-// Module 9950 (ForLaterCardReminderHeader)
+// Module 9946 (ForLaterCardReminderHeader)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -27,12 +27,12 @@ export const ForLaterCardReminderHeader = function ForLaterCardReminderHeader(sa
   savedMessage = savedMessage.savedMessage;
   ({ throttledNow, actions } = savedMessage);
   const tmp = callback3();
-  let obj = require(9942) /* _savedMessageJumpToMessage */;
+  let obj = require(9938) /* _savedMessageJumpToMessage */;
   let dueAt;
   if (savedMessage != null) {
     dueAt = savedMessage.saveData.dueAt;
   }
-  obj = { dueAt, now: throttledNow, type: tmp2(9942).DueInStringTypes.SHORT };
+  obj = { dueAt, now: throttledNow, type: tmp2(9938).DueInStringTypes.SHORT };
   const dueInString = obj.useDueInString(obj);
   const isOverdue = dueInString.isOverdue;
   if (null == savedMessage.saveData.dueAt) {

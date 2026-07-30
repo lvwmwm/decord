@@ -1,9 +1,9 @@
-// Module ID: 9813
-// Function ID: 9814
+// Module ID: 9810
+// Function ID: 9811
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 4050, 3908, 4599, 9814, 4185, 2]
+// Dependencies: [32, 19, 21, 4050, 3908, 4599, 9811, 4185, 2]
 
-// Module 9813 (BalanceCounter)
+// Module 9810 (BalanceCounter)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import closure_8 from "noop";

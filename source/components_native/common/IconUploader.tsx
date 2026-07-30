@@ -1,10 +1,10 @@
-// Module ID: 10187
-// Function ID: 10188
+// Module ID: 10183
+// Function ID: 10184
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 676, 21, 4189, 4731, 5566, 1416, 10188, 4717, 1236, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4189, 4731, 5566, 1416, 10184, 4717, 1236, 2]
 // Exports: default
 
-// Module 10187 (IconUploader)
+// Module 10183 (IconUploader)
 import closure_3 from "createCacheKey";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -156,7 +156,7 @@ export default function IconUploader(disabled) {
   if (!flag) {
     obj1 = { style: null, source: null };
     obj1[0] = tmp.uploadIcon;
-    obj1[1] = importDefault(10188);
+    obj1[1] = importDefault(10184);
     tmp16 = callback(closure_6, obj1);
   }
   items1[1] = tmp16;

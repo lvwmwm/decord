@@ -1,9 +1,9 @@
-// Module ID: 13025
-// Function ID: 13026
+// Module ID: 13020
+// Function ID: 13021
 // Name: metadata
 // Dependencies: [2]
 
-// Module 13025 (metadata)
+// Module 13020 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/images/consoles/mobile_background.jpg.js");
 
 export default "https://cdn.discordapp.com/assets/content/d9cf6b91365ad4ae12ccf7a06339af14feb61c71b75a681f0fec51604cad3c7a.jpg";

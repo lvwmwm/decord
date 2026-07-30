@@ -1,10 +1,10 @@
-// Module ID: 7600
-// Function ID: 7601
+// Module ID: 7597
+// Function ID: 7598
 // Name: WiltedFlowerIllocon
-// Dependencies: [21, 5141, 7601, 2]
+// Dependencies: [21, 5141, 7598, 2]
 // Exports: WiltedFlowerIllocon
 
-// Module 7600 (WiltedFlowerIllocon)
+// Module 7597 (WiltedFlowerIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WiltedFlowerIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const WiltedFlowerIllocon = function WiltedFlowerIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7601);
+  obj[0] = importDefault(7598);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

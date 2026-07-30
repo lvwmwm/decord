@@ -1,10 +1,10 @@
-// Module ID: 11786
-// Function ID: 11787
+// Module ID: 11782
+// Function ID: 11783
 // Name: useBackHandlerSkipPhoneScreens
-// Dependencies: [17, 11769, 5149, 2]
+// Dependencies: [17, 11765, 5149, 2]
 // Exports: default, useBackHandlerMinimizeApp
 
-// Module 11786 (useBackHandlerSkipPhoneScreens)
+// Module 11782 (useBackHandlerSkipPhoneScreens)
 import { NativeModules } from "get ActivityIndicator";
 import { ContactSyncScenes } from "ContactSyncLandingPage";
 

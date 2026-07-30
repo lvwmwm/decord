@@ -1,10 +1,10 @@
-// Module ID: 11672
-// Function ID: 11673
+// Module ID: 11668
+// Function ID: 11669
 // Name: useExpiringBoostsEnabled
 // Dependencies: [1349, 2]
 // Exports: useExpiringBoostsEnabled
 
-// Module 11672 (useExpiringBoostsEnabled)
+// Module 11668 (useExpiringBoostsEnabled)
 const tmp2 = require("getUnitId")({ name: "2026-05-expiring-boosts", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 let c0 = tmp2;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/experiments/ExpiringBoostsExperiment.tsx");

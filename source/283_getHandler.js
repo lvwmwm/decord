@@ -152,7 +152,7 @@ export const processResponderEvent = function processResponderEvent(arg0, self, 
                   let tmp44 = obj2.getCurrentProps(tmp41)[tmp39];
                   let tmp45 = num7;
                   let tmp46;
-                  if (typeof tmp44 !== "_") {
+                  if (typeof tmp44 !== "ZodObject") {
                     tmp46 = tmp44;
                   }
                   if (null != tmp46) {
@@ -180,7 +180,7 @@ export const processResponderEvent = function processResponderEvent(arg0, self, 
                   let tmp52 = obj4.getCurrentProps(tmp49)[tmp38];
                   let tmp53 = diff;
                   let tmp54;
-                  if (typeof tmp52 !== "_") {
+                  if (typeof tmp52 !== "ZodObject") {
                     tmp54 = tmp52;
                   }
                   if (null != tmp54) {

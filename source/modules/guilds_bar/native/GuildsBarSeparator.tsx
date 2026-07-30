@@ -1,8 +1,8 @@
-// Module ID: 15002
-// Function ID: 15003
-// Dependencies: [19, 21, 4189, 712, 3893, 14931, 4050, 4599, 7679, 2]
+// Module ID: 14996
+// Function ID: 14997
+// Dependencies: [19, 21, 4189, 712, 3893, 14925, 4050, 4599, 7676, 2]
 
-// Module 15002
+// Module 14996
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -17,7 +17,7 @@ let closure_6 = { code: "function GuildsBarSeparatorTsx1(){const{withSpring,guil
 const memoResult = importAllResult.memo(function GuildsBarSeparator() {
   let obj = token(3893);
   token = obj.useToken(panelX(712).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  panelX = importAllResult.useContext(token(14931).HomeDrawerStateContext).panelX;
+  panelX = importAllResult.useContext(token(14925).HomeDrawerStateContext).panelX;
   const tmp = callback();
   const fn = function l() {
     const obj = { maxWidth: null };
@@ -25,13 +25,13 @@ const memoResult = importAllResult.memo(function GuildsBarSeparator() {
     obj[0] = token(outer1_2[7]).withSpring(bound, token(outer1_2[5]).HOME_DRAWER_FLING_PHYSICS);
     return obj;
   };
-  obj = { withSpring: token(4599).withSpring, guildItemSize: token, panelX, HOME_DRAWER_FLING_PHYSICS: token(14931).HOME_DRAWER_FLING_PHYSICS };
+  obj = { withSpring: token(4599).withSpring, guildItemSize: token, panelX, HOME_DRAWER_FLING_PHYSICS: token(14925).HOME_DRAWER_FLING_PHYSICS };
   fn.__closure = obj;
   fn.__workletHash = 1425261651828;
   fn.__initData = closure_6;
   const animatedStyle = token(4050).useAnimatedStyle(fn);
   const style = [tmp.separator, animatedStyle];
-  return jsx(panelX(7679), { style });
+  return jsx(panelX(7676), { style });
 });
 const result = require("createCacheKey").fileFinishedImporting("modules/guilds_bar/native/GuildsBarSeparator.tsx");
 

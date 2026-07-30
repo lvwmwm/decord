@@ -1,10 +1,10 @@
-// Module ID: 12157
-// Function ID: 12158
+// Module ID: 12151
+// Function ID: 12152
 // Name: formatDurationNarrow
-// Dependencies: [19, 17, 21, 4189, 712, 1236, 12158, 4185, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1236, 12152, 4185, 2]
 // Exports: FieldText, formatDurationNarrow
 
-// Module 12157 (formatDurationNarrow)
+// Module 12151 (formatDurationNarrow)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -73,7 +73,7 @@ export const FieldText = function FieldText(arg0) {
     let obj = { variant: null, widthChars: null };
     obj[0] = variant;
     obj[1] = skeletonWidthChars;
-    let tmp9Result = callback(require(12158) /* ImageSkeleton */.TextSkeleton, obj);
+    let tmp9Result = callback(require(12152) /* ImageSkeleton */.TextSkeleton, obj);
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.fieldTextRow;

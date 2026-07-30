@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset";
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/roadblocks/images", width: 552, height: 336, scales: [1], hash: "f59c66d6f542b08761b44d6d5de547c8", name: "client_themes_upsell", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 180, height: 108.5, scales: [2, 3], hash: "9b8bd10d33176958273580b349a5855d", name: "img_what_you_lose_hd_video", type: "png" });

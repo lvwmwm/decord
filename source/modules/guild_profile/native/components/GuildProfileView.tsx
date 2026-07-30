@@ -1,10 +1,10 @@
-// Module ID: 8456
-// Function ID: 8457
+// Module ID: 8453
+// Function ID: 8454
 // Name: GuildProfileBackground
-// Dependencies: [19, 17, 1862, 676, 21, 3899, 3901, 4189, 712, 589, 1411, 1474, 1416, 8457, 4125, 3893, 8458, 4611, 5222, 4185, 1236, 8459, 8460, 8474, 11954, 2]
+// Dependencies: [19, 17, 1862, 676, 21, 3899, 3901, 4189, 712, 589, 1411, 1474, 1416, 8454, 4125, 3893, 8455, 4611, 5222, 4185, 1236, 8456, 8457, 8471, 11948, 2]
 // Exports: default, getBackgroundForProfile
 
-// Module 8456 (GuildProfileBackground)
+// Module 8453 (GuildProfileBackground)
 import Text from "Text";
 import get_ActivityIndicator from "LinearGradient";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -35,7 +35,7 @@ function GuildProfileBackground(guildProfile) {
     if (null != guildProfile.customBanner) {
       obj = { id: null, splash: null, size: null };
       ({ id: obj3[0], customBanner: obj3[1] } = guildProfile);
-      obj[2] = tmp3(8457)() * importDefault(1474)().width;
+      obj[2] = tmp3(8454)() * importDefault(1474)().width;
       obj = { style: null, source: null };
       obj[0] = tmp4.imageBanner;
       obj[1] = tmp3(1416).getGuildDiscoverySplashSource(obj);
@@ -49,10 +49,10 @@ function GuildProfileGradient(guildProfile) {
   let obj = require(3893) /* map */;
   const token = obj.useToken(importDefault(712).colors.BACKGROUND_BASE_LOWEST);
   const tmp2 = importDefault(4125)();
-  const profilePrimaryColor = require(8458) /* useProfilePrimaryColor */.useProfilePrimaryColor(guildProfile.guildProfile, token);
+  const profilePrimaryColor = require(8455) /* useProfilePrimaryColor */.useProfilePrimaryColor(guildProfile.guildProfile, token);
   obj = { style: tmp.colorBanner, start: frozen.START, end: frozen.END, colors: null };
   const items = [profilePrimaryColor, ];
-  const obj2 = require(8458) /* useProfilePrimaryColor */;
+  const obj2 = require(8455) /* useProfilePrimaryColor */;
   const tmp5 = closure_8;
   const tmp6 = importDefault(4611);
   const obj4 = require(3899) /* isThemeLight */;
@@ -126,10 +126,10 @@ export default function GuildProfileView(guildProfile) {
   const items1 = [callback(GuildProfileBackground, { guildProfile }), , , ];
   let tmp5Result = flag;
   if (flag) {
-    tmp5Result = tmp5(importDefault(8459), {});
+    tmp5Result = tmp5(importDefault(8456), {});
   }
   items1[1] = tmp5Result;
-  items1[2] = callback(importDefault(8460), { profile: guildProfile, guildIconSource: memo });
+  items1[2] = callback(importDefault(8457), { profile: guildProfile, guildIconSource: memo });
   obj = { style: tmp.body, children: null };
   tmp5Result = null != guildProfile.description;
   if (tmp5Result) {
@@ -147,10 +147,10 @@ export default function GuildProfileView(guildProfile) {
     const obj1 = { children: null };
     const obj2 = { profile: null };
     obj2[0] = guildProfile;
-    const items3 = [tmp5(tmp9(8474), obj2), ];
+    const items3 = [tmp5(tmp9(8471), obj2), ];
     const obj3 = { profile: null };
     obj3[0] = guildProfile;
-    items3[1] = tmp5(tmp9(11954), obj3);
+    items3[1] = tmp5(tmp9(11948), obj3);
     obj1[0] = items3;
     tmp5Result1 = tmp3(closure_10, obj1);
   }

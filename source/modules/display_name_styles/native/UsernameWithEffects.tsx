@@ -1,9 +1,9 @@
-// Module ID: 8380
-// Function ID: 8381
+// Module ID: 8377
+// Function ID: 8378
 // Name: AVERAGE_FONT_WIDTH_RATIO
-// Dependencies: [19, 17, 1886, 21, 1887, 4189, 712, 501, 4053, 8381, 4419, 8382, 1885, 4420, 8383, 3893, 8384, 4185, 4194, 3896, 8387, 1351, 2]
+// Dependencies: [19, 17, 1886, 21, 1887, 4189, 712, 501, 4053, 8378, 4419, 8379, 1885, 4420, 8380, 3893, 8381, 4185, 4194, 3896, 8384, 1351, 2]
 
-// Module 8380 (AVERAGE_FONT_WIDTH_RATIO)
+// Module 8377 (AVERAGE_FONT_WIDTH_RATIO)
 import importAllResult from "getNodeText";
 import get_ActivityIndicator from "Text";
 import { MIN_PRISM_GRADIENT_WIDTH } from "items3";
@@ -113,7 +113,7 @@ const memoResult = importAllResult.memo((userName) => {
   let STATIC = userName.effectDisplayType;
   ({ userId, guildId } = userName);
   if (STATIC === undefined) {
-    STATIC = userName(8381).EffectDisplayType.STATIC;
+    STATIC = userName(8378).EffectDisplayType.STATIC;
   }
   ({ defaultColor, ignoreDisabledStylesSetting, pendingDisplayNameStyles } = userName);
   if (ignoreDisabledStylesSetting === undefined) {
@@ -122,19 +122,19 @@ const memoResult = importAllResult.memo((userName) => {
   const merged = Object.assign(userName, Object.create(null));
   let num;
   const tmp6 = num(4419)({ userId, guildId, pendingDisplayNameStyles, ignoreDisabledStylesSetting });
-  let obj = userName(8382);
+  let obj = userName(8379);
   const isDisplayNameStylesFlywheelViewersEnabled = obj.useIsDisplayNameStylesFlywheelViewersEnabled("UsernameWithEffects");
   let obj1 = userName(1885);
   const result = obj1.applyFlywheelViewingFallback(tmp6, isDisplayNameStylesFlywheelViewersEnabled);
   let obj2 = userName(4420);
   const displayNameStylesEnabled = obj2.useDisplayNameStylesEnabled({ location: "UsernameWithEffects" });
-  let obj3 = userName(8383);
+  let obj3 = userName(8380);
   const displayNameStylesFont = obj3.useDisplayNameStylesFont({ displayNameStyles: result, ignoreDisabledStylesSetting });
   let obj4 = userName(3893);
   const token = obj4.useToken(num(712).colors.BACKGROUND_BASE_LOW);
   let obj5 = userName(3893);
   const token1 = obj5.useToken(num(712).colors.WHITE);
-  let obj6 = userName(8384);
+  let obj6 = userName(8381);
   const displayNameStylesAccessibleColors = obj6.useDisplayNameStylesAccessibleColors({ displayNameStyles: result, backgroundColor: token });
   let first;
   if (displayNameStylesAccessibleColors.length > 0) {
@@ -208,7 +208,7 @@ const memoResult = importAllResult.memo((userName) => {
   const tmp25Result = closure_12(str, num);
   if (displayNameStylesEnabled) {
     if (null != tmp6) {
-      if (STATIC !== tmp7(8381).EffectDisplayType.PLAIN) {
+      if (STATIC !== tmp7(8378).EffectDisplayType.PLAIN) {
         if (null != colorVariants) {
           const items1 = [merged.style, ];
           let tmp27 = null != displayNameStylesFont;
@@ -219,7 +219,7 @@ const memoResult = importAllResult.memo((userName) => {
           }
           items1[1] = tmp27;
           if (effectId === tmp7(1887).DisplayNameEffect.GUMMY) {
-            const tmp4Result = num(8387);
+            const tmp4Result = num(8384);
             const tmp64 = callback2;
             let str3 = tmp7(3896).getNodeText(userName);
             if (str3 == null) {
@@ -370,7 +370,7 @@ const memoResult = importAllResult.memo((userName) => {
       const items11 = [merged.style, ];
       let tmp73 = null != displayNameStylesFont;
       if (tmp73) {
-        const obj8 = { fontFamily: null, lineHeight: "r" };
+        const obj8 = { fontFamily: null, lineHeight: "a" };
         obj8[0] = displayNameStylesFont;
         tmp73 = obj8;
       }

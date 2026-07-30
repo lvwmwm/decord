@@ -362,7 +362,7 @@ class Swipeable {
       tmp3Result.setState({ rowState: 0 });
     };
     value = new Animated.Value(0);
-    obj = { dragX: value, rowTranslation: null, rowState: 0, leftWidth: "accessibilityRole", rightOffset: "key", rowWidth: "justifyContent" };
+    obj = { dragX: value, rowTranslation: null, rowState: 0, leftWidth: "accessibilityRole", rightOffset: "", rowWidth: "justifyContent" };
     value1 = new Animated.Value(0);
     obj[1] = value1;
     tmp3Result.state = obj;

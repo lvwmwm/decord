@@ -1,10 +1,10 @@
-// Module ID: 10063
-// Function ID: 10064
+// Module ID: 10059
+// Function ID: 10060
 // Name: GuildDirectoryCreateOrAddHeader
-// Dependencies: [32, 19, 17, 10064, 10062, 21, 4189, 712, 589, 5220, 5566, 10065, 8224, 1236, 4185, 8755, 1581, 4600, 1480, 5178, 10070, 10061, 2]
+// Dependencies: [32, 19, 17, 10060, 10058, 21, 4189, 712, 589, 5220, 5566, 10061, 8221, 1236, 4185, 8751, 1581, 4600, 1480, 5178, 10066, 10057, 2]
 // Exports: default
 
-// Module 10063 (GuildDirectoryCreateOrAddHeader)
+// Module 10059 (GuildDirectoryCreateOrAddHeader)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "useRefValue";
 import get_ActivityIndicator from "Button";
@@ -25,7 +25,7 @@ function GuildDirectoryCreateOrAddHeader(arg0) {
   let tabIndex;
   ({ directoryGuildName, tabIndex, setTabIndex } = arg0);
   const tmp = callback3();
-  let obj = require(8224) /* useSegmentedControlState */;
+  let obj = require(8221) /* useSegmentedControlState */;
   obj = { pageWidth: 0, defaultIndex: tabIndex, onSetActiveIndex: setTabIndex, items: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   const items = [intl.string(require(1236) /* getSystemLocale */.t.FTe8HS), ];
@@ -42,7 +42,7 @@ function GuildDirectoryCreateOrAddHeader(arg0) {
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl4.string(require(1236) /* getSystemLocale */.t.pYFZ9p);
   items1[1] = callback(require(4185) /* Text */.Text, obj2);
-  items1[2] = callback(closure_5, { style: tmp.segmentedControl, children: callback(require(8755) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) });
+  items1[2] = callback(closure_5, { style: tmp.segmentedControl, children: callback(require(8751) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) });
   obj[1] = items1;
   return callback2(closure_5, obj);
 }
@@ -94,7 +94,7 @@ let closure_13 = importAllResult.memo((guild) => {
   obj = { label: guild.name, icon: null, trailing: null, start: null, end: null };
   obj = { style: callback3().guildIcon, guild };
   obj[1] = callback(directoryChannelId(5566), obj);
-  obj[2] = callback(directoryChannelId(10065), { entry: stateFromStores });
+  obj[2] = callback(directoryChannelId(10061), { entry: stateFromStores });
   obj[3] = start;
   obj[4] = end;
   return callback(guild(5220).TableRow, obj);

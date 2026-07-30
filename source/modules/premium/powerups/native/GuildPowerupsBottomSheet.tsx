@@ -1,47 +1,47 @@
-// Module ID: 11610
-// Function ID: 11611
+// Module ID: 11606
+// Function ID: 11607
 // Name: GuildPowerupsBottomSheetHeader
-// Dependencies: [17, 4181, 4078, 4077, 21, 4189, 712, 11591, 11588, 11611, 11612, 589, 11613, 3901, 11615, 4185, 11616, 11618, 11619, 4145, 1236, 2255, 11605, 11623, 4080, 8307, 11624, 11625, 11630, 11635, 11636, 4600, 11634, 5243, 2]
+// Dependencies: [17, 4181, 4077, 4078, 21, 4189, 712, 11587, 11584, 11607, 11608, 589, 11609, 3901, 11611, 4185, 11612, 11614, 11615, 4145, 1236, 2255, 11601, 11619, 4080, 8304, 11620, 11621, 11626, 11631, 11632, 4600, 11630, 5243, 2]
 // Exports: default
 
-// Module 11610 (GuildPowerupsBottomSheetHeader)
+// Module 11606 (GuildPowerupsBottomSheetHeader)
 import { View } from "useGuildPowerupLevelPerks";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { GAME_SERVER_POWERUP_SKU_ID as closure_5 } from "str11";
 import BoostedGuildTiers from "BoostedGuildTiers";
+import { GAME_SERVER_POWERUP_SKU_ID as closure_7 } from "str11";
 import jsxProd from "messagesProxy";
 import createCacheKey from "createCacheKey";
 
 let c10;
+let c5;
 let c9;
 let closure_6;
-let error;
 let metroImportAll;
 function GuildPowerupsBottomSheetHeader(arg0) {
   let guildId;
   let powerup;
   ({ guildId, powerup } = arg0);
   const tmp = callback3();
-  const tmp4 = importDefault(11591)(guildId, powerup);
-  let obj = require(11611) /* useCalculatePowerupCardStatus */;
-  const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp4, importDefault(11588)(guildId, powerup, "GuildPowerupsBottomSheet"));
-  let str = importDefault(11612)(powerup, true);
+  const tmp4 = importDefault(11587)(guildId, powerup);
+  let obj = require(11607) /* useCalculatePowerupCardStatus */;
+  const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp4, importDefault(11584)(guildId, powerup, "GuildPowerupsBottomSheet"));
+  let str = importDefault(11608)(powerup, true);
   if (str == null) {
     str = "";
   }
-  const tmp5 = importDefault(11588)(guildId, powerup, "GuildPowerupsBottomSheet");
+  const tmp5 = importDefault(11584)(guildId, powerup, "GuildPowerupsBottomSheet");
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   let str2;
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  if (powerup.skuId === closure_5) {
+  if (powerup.skuId === closure_7) {
     str2 = "+";
   }
   if (powerup.type === constants.LEVEL) {
     obj = { style: null };
     obj[0] = tmp.gemContainer;
-    let tmp15 = callback(tmp2(11613), obj);
+    let tmp15 = callback(tmp2(11609), obj);
     let tmp14 = callback;
-  } else if (tmp10 === closure_5) {
+  } else if (tmp10 === closure_7) {
     obj = { style: null, children: null };
     obj[0] = tmp.image;
     const obj1 = { stateMachine: "SM_Auto", dataBinding: null };
@@ -56,12 +56,12 @@ function GuildPowerupsBottomSheetHeader(arg0) {
     obj3[0] = str;
     obj3[1] = tmp.image;
     tmp14 = callback;
-    tmp15 = callback(tmp2(11615), obj3);
+    tmp15 = callback(tmp2(11611), obj3);
   }
   const obj4 = { children: null };
   const items1 = [tmp15, ];
   const obj5 = { style: tmp.headerContainer, children: null };
-  const items2 = [tmp14(require(4185) /* Text */.Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: powerup.title }), tmp14(require(11616) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, { cost: powerup.cost, costDecorator: str2, status: calculatePowerupCardStatus, style: tmp.statusContainer })];
+  const items2 = [tmp14(require(4185) /* Text */.Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: powerup.title }), tmp14(require(11612) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, { cost: powerup.cost, costDecorator: str2, status: calculatePowerupCardStatus, style: tmp.statusContainer })];
   obj5[1] = items2;
   items1[1] = closure_9(View, obj5);
   obj4[0] = items1;
@@ -71,10 +71,10 @@ function GuildPowerupsBottomSheetLevelBody(powerup) {
   let c0;
   const tmp = callback3();
   c0 = tmp;
-  const arr = importDefault(11618)(powerup.powerup);
+  const arr = importDefault(11614)(powerup.powerup);
   return callback(View, {
     style: tmp.levelContainer,
-    children: importDefault(11618)(powerup.powerup).map((children) => {
+    children: importDefault(11614)(powerup.powerup).map((children) => {
       let obj = _undefined(outer1_2[18]);
       obj = { style: _undefined.perkContainer, children: null };
       const iconForPerk = obj.getIconForPerk(children.perkIcon);
@@ -138,22 +138,22 @@ function GuildPowerupsBottomSheetFooter(arg0) {
   let importDefault;
   let dependencyMap;
   const tmp = callback3();
-  const tmp4 = importDefault(11605)(guildId);
-  ({ showToggleButton, showConfigureButton, isPowerupActive } = importDefault(11623)(guildId, powerup));
+  const tmp4 = importDefault(11601)(guildId);
+  ({ showToggleButton, showConfigureButton, isPowerupActive } = importDefault(11619)(guildId, powerup));
   if (showConfigureButton) {
     let result = powerup.skuId !== isPowerupActive(4080).GUILD_POWERUP_TAG_SKU_ID;
     if (!result) {
-      result = tmp6(8307).canUseMobileServerTagSettings(guildId);
-      const tmp6Result = tmp6(8307);
+      result = tmp6(8304).canUseMobileServerTagSettings(guildId);
+      const tmp6Result = tmp6(8304);
     }
     showConfigureButton = result;
     tmp6 = isPowerupActive;
   }
-  const tmp5 = importDefault(11623)(guildId, powerup);
-  ({ disabled, reason } = importDefault(11624)(guildId, powerup, isPowerupActive));
-  const tmp8 = importDefault(11624)(guildId, powerup, isPowerupActive);
-  ({ onActivate: c1, isLoading } = importDefault(11625)(guildId, powerup));
-  dependencyMap = tmp2(11630)(guildId, powerup);
+  const tmp5 = importDefault(11619)(guildId, powerup);
+  ({ disabled, reason } = importDefault(11620)(guildId, powerup, isPowerupActive));
+  const tmp8 = importDefault(11620)(guildId, powerup, isPowerupActive);
+  ({ onActivate: c1, isLoading } = importDefault(11621)(guildId, powerup));
+  dependencyMap = tmp2(11626)(guildId, powerup);
   if (tmp4) {
     let tmp14 = !showConfigureButton;
     const hasItem = set.has(powerup.skuId);
@@ -167,7 +167,7 @@ function GuildPowerupsBottomSheetFooter(arg0) {
       tmp14 = hasItem;
     }
     if (!tmp14) {
-      tmp14 = powerup.skuId === closure_5;
+      tmp14 = powerup.skuId === closure_7;
     }
     let obj = { style: null, children: null };
     obj[0] = tmp.footerContainer;
@@ -186,7 +186,7 @@ function GuildPowerupsBottomSheetFooter(arg0) {
     if (tmp21) {
       const obj1 = { text: null };
       obj1[0] = reason;
-      tmp21 = callback(tmp2(11636), obj1);
+      tmp21 = callback(tmp2(11632), obj1);
     }
     items[1] = tmp21;
     if (showConfigureButton) {
@@ -198,7 +198,7 @@ function GuildPowerupsBottomSheetFooter(arg0) {
     }
     items[2] = showConfigureButton;
     if (showToggleButton) {
-      showToggleButton = powerup.skuId !== closure_5;
+      showToggleButton = powerup.skuId !== closure_7;
     }
     if (!showToggleButton) {
       items[3] = showToggleButton;
@@ -242,7 +242,7 @@ function GuildPowerupsBottomSheetFooter(arg0) {
     return null;
   }
 }
-({ GuildPowerupType: closure_6, GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP: error } = BoostedGuildTiers);
+({ GuildPowerupType: c5, GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP: closure_6 } = BoostedGuildTiers);
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = jsxProd);
 let obj = { container: null, headerContainer: null, statusContainer: null, levelContainer: null, perkContainer: null, perkIcon: null, perkText: null, footerContainer: null, image: null, description: null, cooldownInfo: null, gemContainer: null };
 obj = { padding: require("Themes").space.PX_16, gap: require("Themes").space.PX_16 };
@@ -267,14 +267,14 @@ const obj7 = { flexDirection: "row", alignItems: "center", justifyContent: "cent
 obj[11] = { marginTop: require("Themes").space.PX_16 };
 let closure_11 = createCacheKey.createStyles(obj);
 const obj8 = { marginTop: require("Themes").space.PX_16 };
-let result = require("str11").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBottomSheet.tsx");
+let result = require("BoostedGuildTiers").fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsBottomSheet.tsx");
 
 export default function GuildPowerupsBottomSheet(arg0) {
   let guildId;
   let powerup;
   ({ guildId, powerup } = arg0);
-  let obj = require(11634) /* ModalType */;
-  const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, require(11634) /* ModalType */.ModalType.DETAIL);
+  let obj = require(11630) /* ModalType */;
+  const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, require(11630) /* ModalType */.ModalType.DETAIL);
   obj = { startExpanded: true, children: null };
   obj = { style: callback3().container, children: null };
   const items = [callback(GuildPowerupsBottomSheetHeader, { guildId, powerup }), callback(GuildPowerupsBottomSheetBody, { guildId, powerup }), callback(GuildPowerupsBottomSheetFooter, { guildId, powerup })];

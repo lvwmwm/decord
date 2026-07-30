@@ -406,10 +406,13 @@ prototype["supports"] = function supports(arg0) {
     tmp = constants6;
     return require(4238) /* inject */.supportsFeature(constants6.SCREEN_SOUNDSHARE);
   } else if (tmp.ELEVATED_HOOK === arg0) {
+    tmp = require;
     tmp = dependencyMap;
     tmp = constants6;
     return require(4238) /* inject */.supportsFeature(constants6.ELEVATED_HOOK);
   } else if (tmp.LOOPBACK === arg0) {
+    tmp = dependencyMap;
+    tmp = constants6;
     return require(4238) /* inject */.supportsFeature(constants6.LOOPBACK);
   } else if (tmp.WUMPUS_VIDEO === arg0) {
     return require(4238) /* inject */.supportsFeature(constants6.WUMPUS_VIDEO);
@@ -438,7 +441,7 @@ prototype["supports"] = function supports(arg0) {
           let supportsFeatureResult = require(4238) /* inject */.supportsFeature(constants6.SIMULCAST);
           if (supportsFeatureResult) {
             supportsFeatureResult = require(4238) /* inject */.supportsFeature(constants6.SIMULCAST_BUGFIX);
-            const tmp56Result = require(4238) /* inject */;
+            const tmp59Result = require(4238) /* inject */;
           }
           return supportsFeatureResult;
         } else if (tmp.RTC_REGION_RANKING === arg0) {
@@ -477,6 +480,8 @@ prototype["supports"] = function supports(arg0) {
           return require(4238) /* inject */.supportsFeature(constants6.SPATIAL_AUDIO);
         } else if (tmp.KRISP_NATIVE_ERROR === arg0) {
           return require(4238) /* inject */.supportsFeature(constants6.KRISP_NATIVE_ERROR);
+        } else if (tmp.UDP_ENDPOINT_UPDATE === arg0) {
+          return require(4238) /* inject */.supportsFeature(constants6.UDP_ENDPOINT_UPDATE);
         } else {
           if (tmp.DIAGNOSTICS !== arg0) {
             if (tmp.NATIVE_PING !== arg0) {
@@ -521,10 +526,10 @@ prototype["supports"] = function supports(arg0) {
         }
       }
     }
-    const tmp86 = importDefault(669);
+    const tmp89 = importDefault(669);
     let family;
-    if (tmp86 != null) {
-      const os = tmp86.os;
+    if (tmp89 != null) {
+      const os = tmp89.os;
       if (os != null) {
         family = os.family;
       }
@@ -532,7 +537,7 @@ prototype["supports"] = function supports(arg0) {
     let isMatch = null != family;
     if (isMatch) {
       isMatch = /^win/i.test(importDefault(669).os.family);
-      const obj29 = /^win/i;
+      const obj30 = /^win/i;
     }
     return isMatch;
   }

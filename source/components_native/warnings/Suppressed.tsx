@@ -1,9 +1,9 @@
-// Module ID: 15744
-// Function ID: 15745
+// Module ID: 15738
+// Function ID: 15739
 // Name: render
-// Dependencies: [19, 12804, 21, 15745, 1236, 15746, 15747, 4618, 2]
+// Dependencies: [19, 12798, 21, 15739, 1236, 15740, 15741, 4618, 2]
 
-// Module 15744 (render)
+// Module 15738 (render)
 import initialize from "initialize";
 import { jsx } from "jsxProd";
 import { Component } from "noop";
@@ -27,14 +27,14 @@ Suppressed.prototype["render"] = function render() {
     let stringResult = string(t.KuYcnU);
     const intl3 = tmp2(1236).intl;
     let stringResult1 = intl3.string(tmp2(1236).t["RaFZ3+"]);
-    let tmp7 = importDefault(15746);
+    let tmp7 = importDefault(15740);
     let tmp6 = importDefault;
   } else {
     stringResult = string(t.FJSZVM);
     const intl2 = tmp2(1236).intl;
     stringResult1 = intl2.string(tmp2(1236).t.etJjgW);
     tmp6 = importDefault;
-    tmp7 = importDefault(15747);
+    tmp7 = importDefault(15741);
   }
   return jsx(tmp6(4618), { title: stringResult, body: stringResult1, iconSource: tmp7, onConfirm: this.close });
 };

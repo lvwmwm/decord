@@ -48,8 +48,8 @@ export default function getDeprecatedModalData(modal, key) {
     }
     obj[7] = flag3;
     const closable = key.closable;
-    let closable2 = typeof closable === "SENTRY_RELEASE";
-    if (typeof closable !== "SENTRY_RELEASE") {
+    let closable2 = typeof closable === "sur";
+    if (typeof closable !== "sur") {
       closable2 = key.closable;
     }
     obj[8] = closable2;

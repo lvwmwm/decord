@@ -1,10 +1,10 @@
-// Module ID: 10136
-// Function ID: 10137
+// Module ID: 10132
+// Function ID: 10133
 // Name: ChannelHeader
-// Dependencies: [19, 1372, 676, 1379, 21, 500, 4048, 10118, 1231, 4041, 647, 4403, 10137, 10139, 10141, 10147, 1236, 10149, 2]
+// Dependencies: [19, 1372, 676, 1379, 21, 500, 4048, 10114, 1231, 4041, 647, 4403, 10133, 10135, 10137, 10143, 1236, 10145, 2]
 // Exports: default, navigateToChannelDetails
 
-// Module 10136 (ChannelHeader)
+// Module 10132 (ChannelHeader)
 import "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { ComponentActions } from "ME";
@@ -40,9 +40,9 @@ export default function ChannelHeader(channelId) {
     tmp4 = pressable;
   }
   if (channelId === StaticChannelRoute.ROLE_SUBSCRIPTIONS) {
-    let tmp8Result = jsx(importDefault(10137), {});
+    let tmp8Result = jsx(importDefault(10133), {});
   } else if (channelId === tmp5.GUILD_HOME) {
-    tmp8Result = jsx(importDefault(10139), {});
+    tmp8Result = jsx(importDefault(10135), {});
   } else {
     let isPrivateResult;
     if (stateFromStores != null) {
@@ -53,7 +53,7 @@ export default function ChannelHeader(channelId) {
       obj[0] = channelId;
       obj[1] = tmp4;
       obj[2] = screenIndex;
-      tmp8Result = jsx(importDefault(10141), { channelId: null, pressable: null, screenIndex: null });
+      tmp8Result = jsx(importDefault(10137), { channelId: null, pressable: null, screenIndex: null });
     } else {
       let isForumLikeChannelResult;
       if (stateFromStores != null) {
@@ -63,7 +63,7 @@ export default function ChannelHeader(channelId) {
         obj = { channelId: null, guildId: null, pressable: null, isGuildMemberCountVisible: null, isNavigationScreen: null, screenIndex: null, searchPlaceholder: null };
         obj[0] = channelId;
         let guild_id;
-        let tmp9Result = tmp9(10147);
+        let tmp9Result = tmp9(10143);
         if (stateFromStores != null) {
           guild_id = stateFromStores.guild_id;
         }
@@ -83,7 +83,7 @@ export default function ChannelHeader(channelId) {
         const obj1 = { channelId: null, guildId: null, pressable: null, isGuildMemberCountVisible: null, isNavigationScreen: null, screenIndex: null, showCreateThread: null };
         obj1[0] = channelId;
         let guild_id1;
-        tmp9Result = tmp9(10149);
+        tmp9Result = tmp9(10145);
         if (stateFromStores != null) {
           guild_id1 = stateFromStores.guild_id;
         }
@@ -108,7 +108,7 @@ export const navigateToChannelDetails = function navigateToChannelDetails(channe
       chatInputRef.blur();
     }
   }
-  tmpResult = tmp(10118);
+  tmpResult = tmp(10114);
   if (tmpResult.isSwipeToMemberListEnabled()) {
     const ComponentDispatch = tmp(1231).ComponentDispatch;
     obj = { source: null, channelId: null, screenIndex: null };

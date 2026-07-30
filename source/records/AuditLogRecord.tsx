@@ -1,9 +1,9 @@
-// Module ID: 16371
-// Function ID: 16372
+// Module ID: 16365
+// Function ID: 16366
 // Name: getTargetType
 // Dependencies: [1883, 676, 1208, 3771, 11, 2]
 
-// Module 16371 (getTargetType)
+// Module 16365 (getTargetType)
 import "toJS";
 import ME from "ME";
 

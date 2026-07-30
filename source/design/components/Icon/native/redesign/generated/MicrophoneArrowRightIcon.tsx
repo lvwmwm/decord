@@ -1,10 +1,10 @@
-// Module ID: 10717
-// Function ID: 10718
+// Module ID: 10713
+// Function ID: 10714
 // Name: MicrophoneArrowRightIcon
-// Dependencies: [19, 21, 712, 3892, 10718, 2]
+// Dependencies: [19, 21, 712, 3892, 10714, 2]
 // Exports: MicrophoneArrowRightIcon
 
-// Module 10717 (MicrophoneArrowRightIcon)
+// Module 10713 (MicrophoneArrowRightIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const MicrophoneArrowRightIcon = function MicrophoneArrowRightIcon(color)
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10718) /* registerAsset */;
+  obj[0] = require(10714) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

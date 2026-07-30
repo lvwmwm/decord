@@ -11,12 +11,12 @@ arg5.parseSampleRate = function parseSampleRate(arg0) {
     return Number(arg0);
   } else {
     let parsed = arg0;
-    if (typeof arg0 !== "init") {
+    if (typeof arg0 !== "tee") {
       const _parseFloat = parseFloat;
       parsed = parseFloat(arg0);
     }
     let tmp;
-    if (typeof parsed !== "os") {
+    if (typeof parsed !== "reType") {
       const _isNaN = isNaN;
       if (!isNaN(parsed)) {
         if (parsed >= 0) {

@@ -1,10 +1,10 @@
-// Module ID: 15599
-// Function ID: 15600
+// Module ID: 15593
+// Function ID: 15594
 // Name: ShowAllRow
-// Dependencies: [19, 17, 21, 4189, 712, 5220, 13220, 1297, 4185, 1236, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5220, 13215, 1297, 4185, 1236, 2]
 // Exports: default
 
-// Module 15599 (ShowAllRow)
+// Module 15593 (ShowAllRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,7 +37,7 @@ export default function ShowAllRow(users) {
     obj[1] = callback(1297).AvatarSizes.XSMALL_20;
     return callback2(callback(1297).Avatar, obj, arg1);
   });
-  const items = [callback(require(13220) /* AvatarDuoPile */.AvatarDuoPile, obj), ];
+  const items = [callback(require(13215) /* AvatarDuoPile */.AvatarDuoPile, obj), ];
   const obj1 = { style: tmp.showAllText, variant: "text-md/semibold", color: "text-brand", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl.format(require(1236) /* getSystemLocale */.t.NrzztX, { count });

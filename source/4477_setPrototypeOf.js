@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 4477 (setPrototypeOf)
-let setPrototypeOf = typeof Reflect === "ta";
+let setPrototypeOf = typeof Reflect === "__INTERNAL_SLOT_MAP__";
 if (typeof Reflect !== "Array") {
   const _Reflect = Reflect;
   setPrototypeOf = Reflect.setPrototypeOf;

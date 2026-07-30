@@ -1,10 +1,10 @@
-// Module ID: 10644
-// Function ID: 10645
+// Module ID: 10640
+// Function ID: 10641
 // Name: _getApplicationSubscriptionGroupListingsForApplication
 // Dependencies: [5, 676, 530, 709, 4089, 2]
 // Exports: fetchApplication, fetchEligibleApplicationSubscriptionGuilds, getApplicationSubscriptionGroupListingsForApplication, getEntitlementsForGuild, getSubscriptionGroupForSubscriptionPlan
 
-// Module 10644 (_getApplicationSubscriptionGroupListingsForApplication)
+// Module 10640 (_getApplicationSubscriptionGroupListingsForApplication)
 import set from "set";
 import { Endpoints } from "ME";
 

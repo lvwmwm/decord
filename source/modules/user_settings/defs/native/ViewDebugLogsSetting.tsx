@@ -1,9 +1,9 @@
-// Module ID: 14522
-// Function ID: 14523
+// Module ID: 14518
+// Function ID: 14519
 // Name: ViewDebugLogsActionSheetRow
-// Dependencies: [19, 17, 21, 4157, 5553, 4395, 9108, 5551, 5242, 1236, 14523, 14525, 4153, 14528, 500, 10230, 14529, 10120, 12983, 3862, 2]
+// Dependencies: [19, 17, 21, 4157, 5553, 4395, 9104, 5551, 5242, 1236, 14519, 14521, 4153, 14524, 500, 10226, 14525, 10116, 12978, 3862, 2]
 
-// Module 14522 (ViewDebugLogsActionSheetRow)
+// Module 14518 (ViewDebugLogsActionSheetRow)
 import { Suspense } from "explicitContentFromProto";
 import { Keyboard } from "createToggle";
 import jsxProd from "jsxProd";
@@ -38,28 +38,28 @@ function ViewDebugLogsActionSheet() {
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.BUOCPi);
   obj[0] = callback(require(5242) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { icon: null, title: null, screenKey: "debugLogs", render: null };
-  obj[0] = callback(require(14523) /* WrenchIcon */.WrenchIcon, {});
+  obj[0] = callback(require(14519) /* WrenchIcon */.WrenchIcon, {});
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.XpPGhL);
   obj[3] = function render() {
-    return callback2(callback(14525), {});
+    return callback2(callback(14521), {});
   };
   const items = [callback(ViewDebugLogsActionSheetRow, obj), , ];
   const obj1 = { icon: callback(require(4153) /* ClockIcon */.ClockIcon, {}), title: null, screenKey: "startupTiming", render: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl3.string(require(1236) /* getSystemLocale */.t.b0nJvk);
   obj1[3] = function render() {
-    return callback2(closure_3, { children: callback2(callback(14528), {}) });
+    return callback2(closure_3, { children: callback2(callback(14524), {}) });
   };
   items[1] = callback(ViewDebugLogsActionSheetRow, obj1);
   let tmpResult = null;
   if (obj5.isAndroid()) {
     const obj2 = { icon: null, title: null, screenKey: "pushNotificationLogs", render: null };
-    obj2[0] = tmp(tmp2(10230).ChannelNotificationIcon, {});
+    obj2[0] = tmp(tmp2(10226).ChannelNotificationIcon, {});
     const intl4 = tmp2(1236).intl;
     obj2[1] = intl4.string(tmp2(1236).t.Ljj0ps);
     obj2[3] = function render() {
-      return callback2(callback(14529), {});
+      return callback2(callback(14525), {});
     };
     tmpResult = tmp(ViewDebugLogsActionSheetRow, obj2);
   }

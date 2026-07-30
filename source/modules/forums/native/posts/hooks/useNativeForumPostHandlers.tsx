@@ -1,10 +1,10 @@
-// Module ID: 10363
-// Function ID: 10364
+// Module ID: 10359
+// Function ID: 10360
 // Name: useNativeForumPostHandlers
-// Dependencies: [19, 3882, 1372, 3826, 1874, 6053, 6069, 676, 1235, 6074, 38, 4380, 4650, 1467, 8192, 9599, 8115, 500, 4158, 4159, 6078, 4197, 4048, 10364, 9312, 9309, 2]
+// Dependencies: [19, 3882, 1372, 3826, 1874, 6051, 6067, 676, 1235, 6072, 38, 4380, 4650, 1467, 8189, 9596, 8112, 500, 4158, 4159, 6076, 4197, 4048, 10360, 9308, 9305, 2]
 // Exports: default
 
-// Module 10363 (useNativeForumPostHandlers)
+// Module 10359 (useNativeForumPostHandlers)
 import IMPACT_LIGHT from "IMPACT_LIGHT";
 import setContent from "setContent";
 import ensureGuildLoaded from "ensureGuildLoaded";

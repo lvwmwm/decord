@@ -1,10 +1,10 @@
-// Module ID: 8048
-// Function ID: 8049
+// Module ID: 8045
+// Function ID: 8046
 // Name: _fetchDefaultSoundsFromApi2
-// Dependencies: [5, 4635, 4636, 676, 685, 530, 4642, 709, 5852, 4089, 8049, 698, 1355, 12, 4528, 1236, 6689, 2]
+// Dependencies: [5, 4635, 4636, 676, 685, 530, 4642, 709, 5850, 4089, 8046, 698, 1355, 12, 4528, 1236, 6686, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, muteCustomJoinSound, playSoundLocally, removeFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 8048 (_fetchDefaultSoundsFromApi2)
+// Module 8045 (_fetchDefaultSoundsFromApi2)
 import sendRequest from "sendRequest";
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
 import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME";
@@ -65,7 +65,7 @@ function _fetchDefaultSoundsFromApi2() {
             callback2 = dependencyMap;
             let obj3 = callback2(709);
             obj3.dispatch({ type: "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_FAILURE" });
-            let obj4 = callback(5852);
+            let obj4 = callback(5850);
             const tmp28 = new callback2(4089)(callback2);
             const result = obj4.captureOrIgnoreApiError(tmp28);
             c5 = 3;
@@ -135,7 +135,7 @@ function _maybeFetchDefaultSounds() {
   }
 }
 function _maybeFetchGuildSoundboardSounds() {
-  let obj = SOUNDBOARD_SOUNDS_RECEIVED(8049);
+  let obj = SOUNDBOARD_SOUNDS_RECEIVED(8046);
   const guildIdsToFetchSoundsFor = obj.getGuildIdsToFetchSoundsFor();
   if (0 === guildIdsToFetchSoundsFor.length) {
     return Promise.resolve();
@@ -311,7 +311,7 @@ function _uploadSound() {
               let closure_6;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -425,7 +425,7 @@ function _updateSound() {
               let closure_6;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -626,7 +626,7 @@ function _fetchSoundGuildData() {
             lib = arg1;
             let discoverableGuild = null;
             if (null != lib.body) {
-              obj = lib(6689);
+              obj = lib(6686);
               discoverableGuild = obj.makeDiscoverableGuild(lib.body);
             }
             c5 = 0;

@@ -1,10 +1,10 @@
-// Module ID: 9046
-// Function ID: 9047
+// Module ID: 9042
+// Function ID: 9043
 // Name: _transferToPlaystationWithAlert
-// Dependencies: [5, 9039, 4528, 1236, 2]
+// Dependencies: [5, 9035, 4528, 1236, 2]
 // Exports: transferToPlaystationWithAlert
 
-// Module 9046 (_transferToPlaystationWithAlert)
+// Module 9042 (_transferToPlaystationWithAlert)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -51,7 +51,7 @@ function _transferToPlaystationWithAlert() {
               c7 = 2;
               c8 = 1;
               let obj1 = { value: null, done: false };
-              obj1[0] = lib(9039).transferToPlayStation(lib, lib2.id, dependencyMap);
+              obj1[0] = lib(9035).transferToPlayStation(lib, lib2.id, dependencyMap);
               return obj1;
             }
           } else {

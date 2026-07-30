@@ -1,10 +1,10 @@
-// Module ID: 9935
-// Function ID: 9936
+// Module ID: 9931
+// Function ID: 9932
 // Name: _upsertSavedMessage
-// Dependencies: [5, 9553, 676, 709, 530, 9554, 4409, 2]
+// Dependencies: [5, 9549, 676, 709, 530, 9550, 4409, 2]
 // Exports: deleteSavedMessage, dismissBookmarkNudge, fetchAndUpdateSavedMessages, upsertSavedMessage
 
-// Module 9935 (_upsertSavedMessage)
+// Module 9931 (_upsertSavedMessage)
 import SavedMessageSortTypes from "SavedMessageSortTypes";
 import getTimeSafe from "getTimeSafe";
 import { Endpoints } from "ME";
@@ -236,7 +236,7 @@ function _fetchAndUpdateSavedMessages() {
                 messageRecord = obj.createMessageRecord(message.message);
               }
               obj = { message: messageRecord, saveData: null };
-              obj[1] = callback(9554).savedMessageDataToClient(message.save_data);
+              obj[1] = callback(9550).savedMessageDataToClient(message.save_data);
               return obj;
             });
             obj2 = callback(709);

@@ -1,10 +1,10 @@
-// Module ID: 8286
-// Function ID: 8287
+// Module ID: 8283
+// Function ID: 8284
 // Name: ShieldUserIcon
-// Dependencies: [19, 21, 712, 3892, 7902, 2]
+// Dependencies: [19, 21, 712, 3892, 7899, 2]
 // Exports: ShieldUserIcon
 
-// Module 8286 (ShieldUserIcon)
+// Module 8283 (ShieldUserIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ShieldUserIcon = function ShieldUserIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(7902) /* registerAsset */;
+  obj[0] = require(7899) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

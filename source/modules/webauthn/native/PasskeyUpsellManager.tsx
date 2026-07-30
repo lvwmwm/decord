@@ -1,9 +1,9 @@
-// Module ID: 13757
-// Function ID: 13758
+// Module ID: 13752
+// Function ID: 13753
 // Name: handlePasskeyUpsellShow
-// Dependencies: [1218, 1874, 13751, 676, 5134, 9199, 4005, 1358, 4040, 5645, 13758, 2]
+// Dependencies: [1218, 1874, 13746, 676, 5134, 9195, 4005, 1358, 4040, 5645, 13753, 2]
 
-// Module 13757 (handlePasskeyUpsellShow)
+// Module 13752 (handlePasskeyUpsellShow)
 import fetchFingerprint from "fetchFingerprint";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import hasFetchedCredentials from "hasFetchedCredentials";
@@ -27,7 +27,7 @@ class PasskeyUpsellManager extends tmp2 {
 const prototype = PasskeyUpsellManager.prototype;
 prototype["handlePasskeyUpsellShow"] = function handlePasskeyUpsellShow() {
   if (c8) {
-    if (require(9199) /* _crypto */.hasWebAuthn) {
+    if (require(9195) /* _crypto */.hasWebAuthn) {
       if (loginStatus.getLoginStatus() === LoginStates.NONE) {
         if (obj.attemptedPasswordLogin()) {
           let tmpResult = tmp(4005);
@@ -38,8 +38,8 @@ prototype["handlePasskeyUpsellShow"] = function handlePasskeyUpsellShow() {
                 currentUser = currentUser.getCurrentUser();
                 if (tmp6) {
                   if (obj3.hasFetchedCredentials()) {
-                    importDefault(13758).openPasskeyUpsell();
-                    const obj6 = importDefault(13758);
+                    importDefault(13753).openPasskeyUpsell();
+                    const obj6 = importDefault(13753);
                   } else if (!c7) {
                     c7 = true;
                     const webAuthnCredentials = tmp(5645).fetchWebAuthnCredentials();

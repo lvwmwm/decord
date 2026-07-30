@@ -1,10 +1,10 @@
-// Module ID: 10124
-// Function ID: 10125
+// Module ID: 10120
+// Function ID: 10121
 // Name: NewBadge
-// Dependencies: [32, 19, 17, 1369, 21, 1358, 4189, 712, 4185, 1236, 8441, 8430, 2]
+// Dependencies: [32, 19, 17, 1369, 21, 1358, 4189, 712, 4185, 1236, 8438, 8427, 2]
 // Exports: ConversationCoachmark
 
-// Module 10124 (NewBadge)
+// Module 10120 (NewBadge)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -38,7 +38,7 @@ export const ConversationCoachmark = function ConversationCoachmark(arg0) {
   let dependencyMap;
   ({ children, isLast } = arg0);
   const ref = React.useRef(null);
-  let obj = first(8441);
+  let obj = first(8438);
   const tmp3 = callback(obj.useSelectedDismissibleContent(items), 2);
   first = tmp3[0];
   dependencyMap = tmp5;
@@ -59,7 +59,7 @@ export const ConversationCoachmark = function ConversationCoachmark(arg0) {
     return obj;
   }, items);
   const tmp = createCacheKey();
-  const coachmark = first(8430).useCoachmark(ref, memo);
+  const coachmark = first(8427).useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   let coachmarkWrapper;
   callback = React.useCallback(() => {

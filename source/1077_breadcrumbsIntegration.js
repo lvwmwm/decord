@@ -64,7 +64,7 @@ export const breadcrumbsIntegration = registerSpanErrorInstrumentation.defineInt
             }
             let maxStringLength;
             if (typeof dom !== "window") {
-              if (typeof tmp15.maxStringLength !== "os") {
+              if (typeof tmp15.maxStringLength !== "reType") {
                 maxStringLength = tmp15.maxStringLength;
               }
             }
@@ -82,7 +82,7 @@ export const breadcrumbsIntegration = registerSpanErrorInstrumentation.defineInt
               tmp6 = outer1_2;
             }
             let tmp9 = serializeAttribute;
-            if (typeof serializeAttribute !== "init") {
+            if (typeof serializeAttribute !== "tee") {
               const items = [serializeAttribute];
               tmp9 = items;
             }

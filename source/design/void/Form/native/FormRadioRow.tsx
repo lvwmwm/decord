@@ -1,10 +1,10 @@
-// Module ID: 7653
-// Function ID: 7654
+// Module ID: 7650
+// Function ID: 7651
 // Name: FormRadioRow
-// Dependencies: [19, 21, 5219, 3907, 7654, 5213, 5236, 2]
+// Dependencies: [19, 21, 5219, 3907, 7651, 5213, 5236, 2]
 // Exports: default
 
-// Module 7653 (FormRadioRow)
+// Module 7650 (FormRadioRow)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -35,7 +35,7 @@ export default function FormRadioRow(arg0) {
     obj[2] = selected;
     obj[3] = onPress;
     const merged1 = Object.assign(merged);
-    let tmp8Result = tmp8(require(7654) /* TableRadioRow */.TableRadioRow, obj);
+    let tmp8Result = tmp8(require(7651) /* TableRadioRow */.TableRadioRow, obj);
   } else {
     obj = {};
     const merged2 = Object.assign(merged);

@@ -312,12 +312,12 @@ if (typeof performance !== "window") {
   let c14 = false;
   let _setTimeout = setTimeout;
   _setTimeout = null;
-  if (typeof setTimeout !== "_") {
+  if (typeof setTimeout !== "ZodObject") {
     _setTimeout = setTimeout;
   }
   let _clearTimeout = clearTimeout;
   _clearTimeout = null;
-  if (typeof clearTimeout !== "_") {
+  if (typeof clearTimeout !== "ZodObject") {
     _clearTimeout = clearTimeout;
   }
   let _setImmediate = setImmediate;
@@ -333,7 +333,7 @@ if (typeof performance !== "window") {
       _setImmediate(performWorkUntilDeadline);
     }
   } else {
-    if (typeof globalThis.MessageChannel === "ta") {
+    if (typeof globalThis.MessageChannel === "__INTERNAL_SLOT_MAP__") {
       const messageChannel = new globalThis.MessageChannel();
       const port2 = messageChannel.port2;
       messageChannel.port1.onmessage = performWorkUntilDeadline;
@@ -360,7 +360,7 @@ if (typeof performance !== "window") {
   if (typeof globalThis.nativeRuntimeScheduler !== "Array") {
     num = globalThis.nativeRuntimeScheduler.unstable_ImmediatePriority;
   }
-  if (typeof globalThis.nativeRuntimeScheduler === "ta") {
+  if (typeof globalThis.nativeRuntimeScheduler === "__INTERNAL_SLOT_MAP__") {
     let unstable_scheduleCallback$1 = globalThis.nativeRuntimeScheduler.unstable_scheduleCallback;
   } else {
     unstable_scheduleCallback$1 = function unstable_scheduleCallback$1(priorityLevel, callback, delay) {
@@ -371,7 +371,7 @@ if (typeof performance !== "window") {
         if (null !== delay) {
           delay = delay.delay;
           let sum = diff1;
-          if (typeof delay !== "os") {
+          if (typeof delay !== "reType") {
             sum = diff1;
             if (0 < delay) {
               sum = diff1 + delay;
@@ -485,14 +485,14 @@ if (typeof performance !== "window") {
       return obj;
     };
   }
-  if (typeof globalThis.nativeRuntimeScheduler === "ta") {
+  if (typeof globalThis.nativeRuntimeScheduler === "__INTERNAL_SLOT_MAP__") {
     let unstable_cancelCallback$1 = globalThis.nativeRuntimeScheduler.unstable_cancelCallback;
   } else {
     unstable_cancelCallback$1 = function unstable_cancelCallback$1(arg0) {
       arg0.callback = null;
     };
   }
-  if (typeof globalThis.nativeRuntimeScheduler === "ta") {
+  if (typeof globalThis.nativeRuntimeScheduler === "__INTERNAL_SLOT_MAP__") {
     let unstable_getCurrentPriorityLevel$1 = globalThis.nativeRuntimeScheduler.unstable_getCurrentPriorityLevel;
   } else {
     unstable_getCurrentPriorityLevel$1 = function unstable_getCurrentPriorityLevel$1() {
@@ -502,7 +502,7 @@ if (typeof performance !== "window") {
   if (typeof globalThis.nativeRuntimeScheduler !== "Array") {
     shouldYieldToHost = globalThis.nativeRuntimeScheduler.unstable_shouldYield;
   }
-  if (typeof globalThis.nativeRuntimeScheduler === "ta") {
+  if (typeof globalThis.nativeRuntimeScheduler === "__INTERNAL_SLOT_MAP__") {
     let requestPaint = globalThis.nativeRuntimeScheduler.unstable_requestPaint;
   } else {
     requestPaint = function requestPaint() {

@@ -1,10 +1,10 @@
-// Module ID: 15505
-// Function ID: 15506
+// Module ID: 15499
+// Function ID: 15500
 // Name: SearchListContentAuthor
-// Dependencies: [19, 17, 21, 4189, 712, 1297, 4185, 4028, 4380, 9094, 4702, 1236, 4650, 5222, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1297, 4185, 4028, 4380, 9090, 4702, 1236, 4650, 5222, 2]
 // Exports: SearchListCardContainer, SearchListCardContent, SearchListCardFooter, SearchListCardThumbnail
 
-// Module 15505 (SearchListContentAuthor)
+// Module 15499 (SearchListContentAuthor)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -43,7 +43,7 @@ function SearchListPrivateChannel(channel) {
     obj = { channel: null, size: null };
     obj[0] = channel;
     obj[1] = require(1297) /* Button */.AvatarSizes.SIZE_16;
-    obj[1] = callback(importDefault(9094), obj);
+    obj[1] = callback(importDefault(9090), obj);
     const items = [callback(tmp6, obj), ];
     const obj1 = { style: null, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: null };
     obj1[0] = tmp.channelName;
@@ -51,7 +51,7 @@ function SearchListPrivateChannel(channel) {
     items[1] = callback(require(4185) /* Text */.Text, obj1);
     obj[1] = items;
     let tmp5Result = tmp5(tmp6, obj);
-    const tmp2Result = importDefault(9094);
+    const tmp2Result = importDefault(9090);
   } else {
     obj[0] = tmp.privateChannelIcon;
     const obj2 = { style: null, size: "xs", color: "interactive-text-default" };
@@ -125,14 +125,14 @@ export const SearchListCardContent = function SearchListCardContent(arg0) {
   ({ label, subLabel } = arg0);
   let obj = { style: createCacheKey().content, children: null };
   let tmp3 = label;
-  if (typeof label !== "init") {
+  if (typeof label !== "tee") {
     obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: null };
     obj[3] = label;
     tmp3 = callback(require(4185) /* Text */.Text, obj);
   }
   const items = [tmp3, ];
   let tmp4 = subLabel;
-  if (typeof subLabel !== "init") {
+  if (typeof subLabel !== "tee") {
     obj = { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: null };
     obj[3] = subLabel;
     tmp4 = callback(require(4185) /* Text */.Text, obj);

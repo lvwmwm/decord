@@ -1,10 +1,10 @@
-// Module ID: 12852
-// Function ID: 12853
+// Module ID: 12846
+// Function ID: 12847
 // Name: id
-// Dependencies: [4202, 1218, 4866, 4261, 676, 4207, 589, 8929, 2]
+// Dependencies: [4202, 1218, 4866, 4261, 676, 4207, 589, 8925, 2]
 // Exports: default
 
-// Module 12852 (id)
+// Module 12846 (id)
 import getParticipants from "getParticipants";
 import fetchFingerprint from "fetchFingerprint";
 import callConnect from "callConnect";
@@ -65,7 +65,7 @@ export default function _default() {
     }
     return tmp;
   });
-  const tmp3 = id(8929)();
+  const tmp3 = id(8925)();
   dependencyMap = tmp3;
   const items2 = [getRTCConnectionId];
   stateFromStores = require(589) /* initialize */.useStateFromStores(items2, getRTCConnectionId.getRTCConnectionId, []);

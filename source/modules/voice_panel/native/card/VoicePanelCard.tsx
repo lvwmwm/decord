@@ -1,9 +1,9 @@
-// Module ID: 15958
-// Function ID: 15959
+// Module ID: 15952
+// Function ID: 15953
 // Name: SelfStreamCard
-// Dependencies: [32, 19, 17, 4208, 4261, 5009, 10038, 10036, 15914, 10041, 676, 4207, 10039, 21, 4050, 4185, 1297, 4189, 712, 4369, 4253, 5568, 1236, 4600, 10037, 589, 10545, 4286, 12031, 10547, 10544, 15959, 10557, 8054, 1348, 7983, 7988, 7984, 4190, 4599, 7679, 4611, 5141, 3893, 15960, 9913, 9447, 4534, 5515, 15918, 15930, 15913, 15961, 15962, 8359, 5273, 15963, 10040, 15964, 15965, 15966, 15967, 15968, 15978, 2]
+// Dependencies: [32, 19, 17, 4208, 4261, 5009, 10034, 10032, 15908, 10037, 676, 4207, 10035, 21, 4050, 4185, 1297, 4189, 712, 4369, 4253, 5568, 1236, 4600, 10033, 589, 10541, 4286, 12025, 10543, 10540, 15953, 10553, 8051, 1348, 7980, 7985, 7981, 4190, 4599, 7676, 4611, 5141, 3893, 15954, 9910, 9443, 4534, 5515, 15912, 15924, 15907, 15955, 15956, 8356, 5273, 15957, 10036, 15958, 15959, 15960, 15961, 15962, 15972, 2]
 
-// Module 15958 (SelfStreamCard)
+// Module 15952 (SelfStreamCard)
 import map from "map";
 import importAllResult from "watchStream";
 import { StyleSheet } from "createCacheKey";
@@ -1203,7 +1203,7 @@ let closure_43 = { code: "function VoicePanelCardTsx9(){const{focused}=this.__cl
 let closure_44 = { code: "function VoicePanelCardTsx10(focusedId,previous){const{runOnJS,handleFocusedParticipantChange}=this.__closure;if(focusedId===previous)return;runOnJS(handleFocusedParticipantChange)(focusedId);}" };
 let closure_45 = { code: "function VoicePanelCardTsx11(){const{mode,focused,sharedTransitionState}=this.__closure;return{mode:mode.get(),focused:focused.get(),transitionState:sharedTransitionState.get()};}" };
 let closure_46 = { code: "function VoicePanelCardTsx12(props,previous){const{cheapWorkletShallowEqual,VoicePanelModes,TransitionStates,sharedVisible,isScrollVisible,runOnJS,cleanUp,id}=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const{mode:mode,focused:focused,transitionState:transitionState}=props;const isPIPMode=mode===VoicePanelModes.PIP;const manuallyFocusedId=focused===null||focused===void 0?void 0:focused.id;if(previous==null&&transitionState!==TransitionStates.YEETED){sharedVisible.set(1);}else if(transitionState===TransitionStates.YEETED){if(sharedVisible.get()===1&&isScrollVisible.get()){sharedVisible.set(0);}else{runOnJS(cleanUp)();}}else if((previous===null||previous===void 0?void 0:previous.transitionState)===TransitionStates.YEETED){sharedVisible.set(1);}else if(!isPIPMode){if(manuallyFocusedId==null){sharedVisible.set(1);}else{if(manuallyFocusedId!==id){sharedVisible.set(0);}else{sharedVisible.set(1);}}}}" };
-let closure_47 = { isSelf: false, hasVideo: false, user: { id: "r" } };
+let closure_47 = { isSelf: false, hasVideo: false, user: { id: "Array" } };
 function layoutTransitionFunction(originX, SUBTLE_SPRING) {
   let flag = arg2;
   if (arg2 === undefined) {
@@ -1502,7 +1502,7 @@ const memoResult = importAllResult.memo(function VoicePanelCard(cleanUp) {
       tmp25 = callback;
     }
   }
-  const obj8 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "call", layout: true, layoutPhysics: true };
+  const obj8 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "accessible", layout: "GAME_SHOP_NEW_BADGE", layoutPhysics: "openCamera" };
   obj8[3] = layoutTransition;
   obj8[4] = physics;
   tmp26Result = callback(closure_37, obj8);

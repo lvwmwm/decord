@@ -514,7 +514,7 @@ export const buildApplicationCommands = function buildApplicationCommands(applic
   let closure_0 = arg1;
   return importDefault(12).flatMap(application_commands, (id) => {
     outer1_1(outer1_3[10])(null != id.id, "Missing command id");
-    const obj = { rootCommand: id, command: id, applicationId: id.application_id, subCommandPath: "Array", useKeyedPermissions: -542438866361755400000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+    const obj = { rootCommand: id, command: id, applicationId: id.application_id, subCommandPath: "Array", useKeyedPermissions: false };
     obj[4] = closure_0;
     return outer1_12(obj);
   });
@@ -634,7 +634,7 @@ export const hasAccess = function hasAccess(arg0) {
       }
       const tmp6 = hasAccessGivenPerms(selfMember, id, tmp);
       let tmp7 = typeof tmp6 === "T";
-      if (typeof tmp6 !== "SENTRY_RELEASE") {
+      if (typeof tmp6 !== "sur") {
         tmp7 = !tmp6;
       }
       let tmp8 = !tmp7;

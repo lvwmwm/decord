@@ -1,17 +1,17 @@
-// Module ID: 11913
-// Function ID: 11914
+// Module ID: 11909
+// Function ID: 11910
 // Name: useCanGiftProduct
-// Dependencies: [8664, 8666, 5810, 5809, 1901, 3835, 3848, 2]
+// Dependencies: [8661, 8663, 5810, 5809, 1901, 3835, 3848, 2]
 // Exports: useCanGiftProduct
 
-// Module 11913 (useCanGiftProduct)
+// Module 11909 (useCanGiftProduct)
 let result = require("getItemRecordsFromPurchases").fileFinishedImporting("modules/collectibles/hooks/useCanGiftProduct.tsx");
 
 export const useCanGiftProduct = function useCanGiftProduct(product) {
-  const currentUser = require(8664) /* useCurrentUser */.useCurrentUser();
-  const obj = require(8664) /* useCurrentUser */;
-  const isProfileFrameGiftingEnabled = require(8666) /* apexExperiment */.useIsProfileFrameGiftingEnabled("useCanGiftProduct");
-  const obj2 = require(8666) /* apexExperiment */;
+  const currentUser = require(8661) /* useCurrentUser */.useCurrentUser();
+  const obj = require(8661) /* useCurrentUser */;
+  const isProfileFrameGiftingEnabled = require(8663) /* apexExperiment */.useIsProfileFrameGiftingEnabled("useCanGiftProduct");
+  const obj2 = require(8663) /* apexExperiment */;
   let result = require(5810) /* getItemRecordsFromPurchases */.isPremiumCollectiblesProduct(product);
   const obj3 = require(5810) /* getItemRecordsFromPurchases */;
   const result1 = require(5810) /* getItemRecordsFromPurchases */.isFreeCollectiblesProduct(product);

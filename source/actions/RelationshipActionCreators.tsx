@@ -1,9 +1,9 @@
-// Module ID: 8918
-// Function ID: 8919
+// Module ID: 8914
+// Function ID: 8915
 // Name: handleRelationshipAddError
-// Dependencies: [32, 1874, 676, 8919, 5188, 4528, 5107, 1236, 8920, 8921, 8922, 530, 4028, 4035, 709, 8923, 6721, 2]
+// Dependencies: [32, 1874, 676, 8915, 5188, 4528, 5107, 1236, 8916, 8917, 8918, 530, 4028, 4035, 709, 8919, 6718, 2]
 
-// Module 8918 (handleRelationshipAddError)
+// Module 8914 (handleRelationshipAddError)
 import _slicedToArray from "_slicedToArray";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -63,7 +63,7 @@ function handleRelationshipAddError(arg0, arg1, substr) {
         if (num !== tmp2.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
           if (arg1 === obj.SHOW_ALWAYS) {
             if (null != substr) {
-              let tmp18Result = tmp18(8922);
+              let tmp18Result = tmp18(8918);
               if (!num) {
                 num = 0;
               }
@@ -85,7 +85,7 @@ function handleRelationshipAddError(arg0, arg1, substr) {
           }
         }
       }
-      obj9 = require(8921) /* isLimitedAccessErrorCode */;
+      obj9 = require(8917) /* isLimitedAccessErrorCode */;
     }
   }
   throw arg0;
@@ -223,7 +223,7 @@ obj = {
     }, () => callback(709).dispatch({ type: "LOAD_RELATIONSHIPS_FAILURE" }));
   },
   confirmClearPendingRelationships(arg0) {
-    importDefault(8923)(arg0);
+    importDefault(8919)(arg0);
   },
   clearPendingRelationships() {
     const HTTP = require(530) /* sendRequest */.HTTP;
@@ -275,7 +275,7 @@ obj = {
       obj = { type: "RELATIONSHIP_IGNORE_USER_SUCCESS", userId: callback, timestamp: Date.now() };
       channelId(outer1_3[14]).dispatch(obj);
     }).catch(() => {
-      channelId(6721).showFailedToast();
+      channelId(6718).showFailedToast();
       const AccessibilityAnnouncer = callback(4035).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t.n6Jo3E));
@@ -296,7 +296,7 @@ obj = {
       const intl = id(outer1_3[7]).intl;
       AccessibilityAnnouncer.announce(intl.string(id(outer1_3[7]).t.QlH5w6));
     }).catch(() => {
-      id2(6721).showFailedToast();
+      id2(6718).showFailedToast();
       const AccessibilityAnnouncer = id(4035).AccessibilityAnnouncer;
       const intl = id(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(id(1236).t.n6Jo3E));

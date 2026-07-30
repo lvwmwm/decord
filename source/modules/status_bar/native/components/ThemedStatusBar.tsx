@@ -1,10 +1,10 @@
-// Module ID: 13629
-// Function ID: 13630
+// Module ID: 13624
+// Function ID: 13625
 // Name: ThemedStatusBar
-// Dependencies: [19, 1302, 1218, 21, 589, 4040, 4035, 10687, 6679, 2]
+// Dependencies: [19, 1302, 1218, 21, 589, 4040, 4035, 10683, 6676, 2]
 // Exports: default
 
-// Module 13629 (ThemedStatusBar)
+// Module 13624 (ThemedStatusBar)
 import "noop";
 import handleThemeChange from "handleThemeChange";
 import fetchFingerprint from "fetchFingerprint";
@@ -22,11 +22,11 @@ export default function ThemedStatusBar() {
   const items1 = [handleThemeChange];
   const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => callback(table[6]).isThemeDark(theme.theme));
   const obj3 = require(589) /* initialize */;
-  const globalStatusIndicatorState = require(10687) /* useGlobalStatusIndicatorState */.useGlobalStatusIndicatorState();
+  const globalStatusIndicatorState = require(10683) /* useGlobalStatusIndicatorState */.useGlobalStatusIndicatorState();
   if (!stateFromStores) {
     obj = { barStyle: null };
     obj[0] = "light-content";
-    return jsx(importDefault(6679), { barStyle: null });
+    return jsx(importDefault(6676), { barStyle: null });
   } else if (isModalOpen) {
     let str2 = "dark-content";
     if (stateFromStores1) {

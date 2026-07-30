@@ -1,10 +1,10 @@
-// Module ID: 7984
-// Function ID: 7985
+// Module ID: 7981
+// Function ID: 7982
 // Name: maybeFetchUserProfile
-// Dependencies: [1372, 1942, 5896, 5797, 7911, 4996, 709, 7985, 7986, 2]
+// Dependencies: [1372, 1942, 5894, 5797, 7908, 4996, 709, 7982, 7983, 2]
 // Exports: default
 
-// Module 7984 (maybeFetchUserProfile)
+// Module 7981 (maybeFetchUserProfile)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
@@ -133,8 +133,8 @@ export default function maybeFetchUserProfile(id, closure_0, guildMember) {
       const obj3 = _require(5797);
     }
     if (null != closure_0) {
-      _require(7911).maybeFetchColors(closure_0);
-      const obj4 = _require(7911);
+      _require(7908).maybeFetchColors(closure_0);
+      const obj4 = _require(7908);
     }
     obj = { type: null, withMutualGuilds: null, withMutualFriends: null, withMutualFriendsCount: null, guildId: null, joinRequestId: null, abortSignal: null, connectionsRoleId: null };
     obj[0] = type;
@@ -165,7 +165,7 @@ export default function maybeFetchUserProfile(id, closure_0, guildMember) {
       });
       return Promise.resolve();
     } else {
-      const profile = _require(7985).fetchProfile(id, obj, obj(7986));
+      const profile = _require(7982).fetchProfile(id, obj, obj(7983));
       let resolved = profile;
       if (tmp18) {
         resolved = profile;

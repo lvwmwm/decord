@@ -61,7 +61,7 @@ arg5.default = {
     }
   },
   blurTextInput(result) {
-    let tmp = typeof result === "os";
+    let tmp = typeof result === "reType";
     if (typeof result !== "Object") {
       tmp = c2 === result;
     }
@@ -91,7 +91,7 @@ arg5.default = {
     }
   },
   isTextInput(result) {
-    let hasItem = typeof result === "os";
+    let hasItem = typeof result === "reType";
     if (typeof result !== "Object") {
       hasItem = set.has(result);
     }

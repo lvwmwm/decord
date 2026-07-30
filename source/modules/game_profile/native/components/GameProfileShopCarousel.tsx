@@ -1,10 +1,10 @@
-// Module ID: 8659
-// Function ID: 8660
+// Module ID: 8656
+// Function ID: 8657
 // Name: HorizontalSpacing
-// Dependencies: [19, 17, 5798, 21, 4189, 712, 8660, 11920, 11921, 647, 8486, 5797, 5535, 4185, 1236, 4600, 5565, 6676, 2]
+// Dependencies: [19, 17, 5798, 21, 4189, 712, 8657, 11916, 11917, 647, 8483, 5797, 5535, 4185, 1236, 4600, 5565, 6673, 2]
 // Exports: default
 
-// Module 8659 (HorizontalSpacing)
+// Module 8656 (HorizontalSpacing)
 import noop from "noop";
 import { View } from "noop";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
@@ -16,7 +16,7 @@ let error;
 const require = arg1;
 function HorizontalSpacing() {
   let obj = { style: null };
-  obj = { width: require(8660) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_GAP };
+  obj = { width: require(8657) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_GAP };
   obj[0] = obj;
   return callback(View, obj);
 }
@@ -29,9 +29,9 @@ function GameProfileShopCarouselContent(trackAction) {
   let gameProfileShopCollection;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = closeModal(11920);
+  let obj = closeModal(11916);
   gameProfileShopCollection = obj.useGameProfileShopCollection(collectionId);
-  let obj1 = closeModal(11921);
+  let obj1 = closeModal(11917);
   const fetchCollectiblesProducts = obj1.useFetchCollectiblesProducts(gameProfileShopCollection);
   let obj2 = closeModal(647);
   let items = [updateCategoriesAndProducts];
@@ -69,7 +69,7 @@ function GameProfileShopCarouselContent(trackAction) {
         hideWishlistButton: true,
         hidePrice: true,
         onPress() {
-          outer1_1(closeModal(8486).GameProfileTrackActionActions.DiscordCollectiblesShop);
+          outer1_1(closeModal(8483).GameProfileTrackActionActions.DiscordCollectiblesShop);
           item();
           let obj = closeModal(5797);
           obj = { analyticsLocations: null, analyticsSource: null, initialProductSkuId: null };
@@ -84,8 +84,8 @@ function GameProfileShopCarouselContent(trackAction) {
     obj3[4] = HorizontalSpacing;
     obj3[5] = HorizontalSpacing;
     obj3[6] = HorizontalSpacing;
-    obj3[8] = tmp2(8660).COLLECTIBLES_SHOP_CARD_WIDTH + tmp2(8660).COLLECTIBLES_SHOP_CARD_GAP;
-    items3[1] = callback(tmp2(6676).FlashList, obj3, collectionId);
+    obj3[8] = tmp2(8657).COLLECTIBLES_SHOP_CARD_WIDTH + tmp2(8657).COLLECTIBLES_SHOP_CARD_GAP;
+    items3[1] = callback(tmp2(6673).FlashList, obj3, collectionId);
     obj[1] = items3;
     tmp7 = callback2(View, obj);
   }

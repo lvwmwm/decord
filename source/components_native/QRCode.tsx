@@ -1,9 +1,9 @@
-// Module ID: 12242
-// Function ID: 12243
+// Module ID: 12236
+// Function ID: 12237
 // Name: frozen
-// Dependencies: [109, 19, 17, 21, 4189, 712, 3901, 12243, 4590, 12257, 8378, 2]
+// Dependencies: [109, 19, 17, 21, 4189, 712, 3901, 12237, 4590, 12251, 8375, 2]
 
-// Module 12242 (frozen)
+// Module 12236 (frozen)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -50,7 +50,7 @@ QRCode.prototype["render"] = function render() {
   const tmp6 = closure_9;
   const tmp7 = importDefault;
   const merged = Object.assign(tmp2);
-  const items1 = [callback2(importDefault(12243), obj1), ];
+  const items1 = [callback2(importDefault(12237), obj1), ];
   if (blur) {
     const obj2 = { style: null, blurTheme: "dark" };
     obj2[0] = closure_7.absoluteFill;
@@ -80,14 +80,14 @@ QRCodeWithOverlay.prototype["render"] = function render() {
   const items = [callback2(QRCode, obj), , ];
   obj = { style: items1, children: null };
   items1 = [tmp.qrCodeOverlay, closure_7.absoluteFill];
-  obj1 = { style: tmp[frozen[SIZE_40]], source: require(12257) /* registerAsset */ };
+  obj1 = { style: tmp[frozen[SIZE_40]], source: require(12251) /* registerAsset */ };
   obj[1] = callback2(closure_6, obj1);
   items[1] = callback2(closure_5, obj);
   let tmp6Result = null;
   if (props.blur) {
     const obj2 = { style: null };
     obj2[0] = closure_7.absoluteFill;
-    tmp6Result = callback2(importDefault(8378), obj2);
+    tmp6Result = callback2(importDefault(8375), obj2);
   }
   items[2] = tmp6Result;
   obj[1] = items;

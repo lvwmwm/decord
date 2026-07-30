@@ -1,10 +1,10 @@
-// Module ID: 12983
-// Function ID: 12984
+// Module ID: 12978
+// Function ID: 12979
 // Name: ChannelListMagnifyingGlassIcon
-// Dependencies: [19, 21, 712, 3892, 12984, 2]
+// Dependencies: [19, 21, 712, 3892, 12979, 2]
 // Exports: ChannelListMagnifyingGlassIcon
 
-// Module 12983 (ChannelListMagnifyingGlassIcon)
+// Module 12978 (ChannelListMagnifyingGlassIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ChannelListMagnifyingGlassIcon = function ChannelListMagnifyingGlas
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12984) /* registerAsset */;
+  obj[0] = require(12979) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

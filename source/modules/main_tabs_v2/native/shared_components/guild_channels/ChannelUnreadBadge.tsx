@@ -1,8 +1,8 @@
-// Module ID: 15030
-// Function ID: 15031
-// Dependencies: [19, 17, 10284, 4386, 21, 4189, 10285, 4606, 9124, 2]
+// Module ID: 15024
+// Function ID: 15025
+// Dependencies: [19, 17, 10280, 4386, 21, 4189, 10281, 4606, 9120, 2]
 
-// Module 15030
+// Module 15024
 import { View } from "get ActivityIndicator";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import { UnreadSetting } from "ReadStateTypes";
@@ -25,7 +25,7 @@ const memoResult = require("noop").memo(function ChannelUnreadBadge(panelVariant
     flag = false;
   }
   const tmp = callback();
-  let obj = require(10285) /* getLayoutStyles */;
+  let obj = require(10281) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout, launchpad);
   require(4606) /* getFontScale */;
   let tmp8Result = null;
@@ -39,14 +39,14 @@ const memoResult = require("noop").memo(function ChannelUnreadBadge(panelVariant
     const unreadBadge = layoutStyles.unreadBadge;
     obj = { style: null, children: null };
     items[2] = isThread ? unreadBadge.positionThread : unreadBadge.position;
-    items[3] = tmp2(10285).makeSizeStyle(layoutStyles.unreadBadge.size);
+    items[3] = tmp2(10281).makeSizeStyle(layoutStyles.unreadBadge.size);
     obj[0] = items;
     obj = { classic: null, size: null, badgeStyle: null };
     obj[0] = flag;
-    const tmp2Result = tmp2(10285);
+    const tmp2Result = tmp2(10281);
     const tmp9 = View;
     const _Math = Math;
-    obj[1] = tmp2(9124).CHANNEL_BADGE_SIZE * Math.max(tmp6, 1);
+    obj[1] = tmp2(9120).CHANNEL_BADGE_SIZE * Math.max(tmp6, 1);
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
       let num2 = MUTED_OPACITY_CONTENT;
     } else {
@@ -56,9 +56,9 @@ const memoResult = require("noop").memo(function ChannelUnreadBadge(panelVariant
     obj1[0] = num2;
     const items1 = [obj1];
     obj[2] = items1;
-    obj[1] = jsx(importDefault(9124), { classic: null, size: null, badgeStyle: null });
+    obj[1] = jsx(importDefault(9120), { classic: null, size: null, badgeStyle: null });
     tmp8Result = tmp8(tmp9, obj);
-    const tmp12 = importDefault(9124);
+    const tmp12 = importDefault(9120);
   }
   return tmp8Result;
 });

@@ -1,10 +1,10 @@
-// Module ID: 11402
-// Function ID: 11403
+// Module ID: 11398
+// Function ID: 11399
 // Name: EnteringAnimation
-// Dependencies: [19, 17, 4181, 21, 4189, 4604, 712, 4190, 4193, 589, 8824, 11211, 4050, 5506, 11403, 11236, 2]
+// Dependencies: [19, 17, 4181, 21, 4189, 4604, 712, 4190, 4193, 589, 8820, 11207, 4050, 5506, 11399, 11232, 2]
 // Exports: AppLauncherOnboardingChatInputButtonAnimation
 
-// Module 11402 (EnteringAnimation)
+// Module 11398 (EnteringAnimation)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -67,14 +67,14 @@ export const AppLauncherOnboardingChatInputButtonAnimation = function AppLaunche
   let obj = require(589) /* initialize */;
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj1 = require(8824) /* useGradientBottom */;
+  let obj1 = require(8820) /* useGradientBottom */;
   const gradientBottom = obj1.useGradientBottom();
-  importDefault(11211)({ channelId: channelId.channelId });
+  importDefault(11207)({ channelId: channelId.channelId });
   obj = { children: null };
   obj = { entering: EnteringAnimation, exiting: ExitingAnimation, style: items1, collapsable: false, children: null };
   items1 = [absoluteFill.absoluteFill, tmp.glowAnimation];
   obj1 = { collapsable: false, style: tmp.glowLottie, source: null, autoPlay: null };
-  obj1[2] = require(11403);
+  obj1[2] = require(11399);
   obj1[3] = !stateFromStores;
   const items2 = [callback(importDefault(5506), obj1), , ];
   const items3 = [tmp.glowMask, gradientBottom];
@@ -85,7 +85,7 @@ export const AppLauncherOnboardingChatInputButtonAnimation = function AppLaunche
   const obj3 = { collapsable: false, style: tmp.trinketsLottie, source: null, autoPlay: null };
   const obj2 = { collapsable: false, style: tmp.fakeButton };
   const tmp5 = importDefault(5506);
-  obj3[2] = require(11236);
+  obj3[2] = require(11232);
   obj3[3] = !stateFromStores;
   items4[1] = callback(importDefault(5506), obj3);
   obj[0] = items4;

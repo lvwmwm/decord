@@ -1,9 +1,9 @@
-// Module ID: 14318
-// Function ID: 14319
+// Module ID: 14314
+// Function ID: 14315
 // Name: SettingsAppearanceChannelListPreviewNitroUpsellComponent
-// Dependencies: [19, 17, 4181, 676, 21, 4050, 4611, 4599, 4603, 4189, 712, 5515, 5535, 9321, 9322, 4600, 1236, 1297, 589, 8436, 2]
+// Dependencies: [19, 17, 4181, 676, 21, 4050, 4611, 4599, 4603, 4189, 712, 5515, 5535, 9317, 9318, 4600, 1236, 1297, 589, 8433, 2]
 
-// Module 14318 (SettingsAppearanceChannelListPreviewNitroUpsellComponent)
+// Module 14314 (SettingsAppearanceChannelListPreviewNitroUpsellComponent)
 import importAllResult from "AnimatedRenderItem";
 import get_ActivityIndicator from "Button";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -133,7 +133,7 @@ const memoResult = importAllResult.memo(function SettingsAppearanceChannelListPr
   obj[2] = animationEntering;
   obj[3] = animationExiting;
   obj[4] = callback;
-  return closure_10(importDefault(8436), obj);
+  return closure_10(importDefault(8433), obj);
 });
 const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceChannelListPreviewNitroUpsell.tsx");
 

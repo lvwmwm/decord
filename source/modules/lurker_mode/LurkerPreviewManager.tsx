@@ -1,9 +1,9 @@
-// Module ID: 11528
-// Function ID: 11529
+// Module ID: 11524
+// Function ID: 11525
 // Name: hasNavigatedAway
-// Dependencies: [5, 4261, 4006, 3818, 4368, 6691, 709, 11529, 2]
+// Dependencies: [5, 4261, 4006, 3818, 4368, 6688, 709, 11525, 2]
 
-// Module 11528 (hasNavigatedAway)
+// Module 11524 (hasNavigatedAway)
 import MobileLurkerServerPreviewExperiment from "MobileLurkerServerPreviewExperiment";
 import createRTCConnection from "createRTCConnection";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -14,7 +14,7 @@ const require = arg1;
 class LurkerPreviewManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    f108213 = applyArgumentsResult;
+    f108226 = applyArgumentsResult;
     map = new Map();
     applyArgumentsResult.timers = map;
     set = new Set();
@@ -190,8 +190,8 @@ class LurkerPreviewManager extends tmp2 {
         continue;
       }
     };
-    f108213 = undefined;
-    f108213 = MobileLurkerServerPreviewExperiment((arg0) => {
+    f108226 = undefined;
+    f108226 = MobileLurkerServerPreviewExperiment((arg0) => {
       let closure_0 = arg0;
       let c2 = 0;
       let c1 = 0;

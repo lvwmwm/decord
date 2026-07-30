@@ -9,7 +9,7 @@ import { jsx } from "jsxProd";
 
 let touchableHandleBlur;
 let touchableHandleFocus;
-const f18267 = (arg0) => {
+const f18261 = (arg0) => {
 
 };
 const NOT_RESPONDER = "NOT_RESPONDER";
@@ -164,7 +164,7 @@ let obj2 = {
         const tmp6 = touchableGetHitSlopResult.left || 0;
       }
       nativeEvent = nativeEvent.nativeEvent;
-      if (typeof f18267 !== "find") {
+      if (typeof f18261 !== "find") {
         HermesBuiltin.throwTypeError();
       }
       ({ touches, changedTouches } = nativeEvent);
@@ -339,7 +339,7 @@ let obj2 = {
     let changedTouches;
     let touches;
     nativeEvent = nativeEvent.nativeEvent;
-    if (typeof f18267 !== "find") {
+    if (typeof f18261 !== "find") {
       HermesBuiltin.throwTypeError();
     }
     ({ touches, changedTouches } = nativeEvent);

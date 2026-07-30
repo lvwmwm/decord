@@ -1,10 +1,10 @@
-// Module ID: 16622
-// Function ID: 16623
+// Module ID: 16616
+// Function ID: 16617
 // Name: TierTemplatesRenderer
-// Dependencies: [32, 19, 17, 14251, 16569, 676, 21, 4189, 712, 4185, 16623, 647, 14229, 14230, 11377, 16629, 1581, 1480, 698, 4384, 16579, 9102, 1236, 5143, 8426, 503, 16564, 1297, 2]
+// Dependencies: [32, 19, 17, 14247, 16563, 676, 21, 4189, 712, 4185, 16617, 647, 14225, 14226, 11373, 16623, 1581, 1480, 698, 4384, 16573, 9098, 1236, 5143, 8423, 503, 16558, 1297, 2]
 // Exports: default
 
-// Module 16622 (TierTemplatesRenderer)
+// Module 16616 (TierTemplatesRenderer)
 import _slicedToArray from "_slicedToArray";
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata";
 import get_ActivityIndicator from "useNavigation";
@@ -58,7 +58,7 @@ function TierTemplatesRenderer(groupListingId) {
           const style = { height: "100%", width: closure_16 };
           return callback(closure_8, { style });
         };
-        obj[6] = guildId(16623).CARD_WIDTH + c16;
+        obj[6] = guildId(16617).CARD_WIDTH + c16;
         obj[7] = function renderItem(item) {
           return outer1_14(groupListingId(outer1_3[10]), { template: item.item, priceTiers: tiers, guildId, groupListingId, editGroupId: guildId });
         };
@@ -218,5 +218,5 @@ export default function GuildSettingsRoleSubscriptionTierTemplateSelection(guild
   obj = {};
   const merged = Object.assign(guildId);
   obj[1] = callback(GuildSettingsRoleSubscriptionTierTemplateSelectionComponent, obj);
-  return callback(require(14230) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, obj);
+  return callback(require(14226) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, obj);
 };

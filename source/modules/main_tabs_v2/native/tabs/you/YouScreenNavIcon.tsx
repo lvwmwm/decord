@@ -1,9 +1,9 @@
-// Module ID: 15625
-// Function ID: 15626
+// Module ID: 15619
+// Function ID: 15620
 // Name: str2
-// Dependencies: [19, 17, 21, 15616, 15275, 712, 7970, 4189, 1236, 8236, 4185, 2]
+// Dependencies: [19, 17, 21, 15610, 15269, 712, 7967, 4189, 1236, 8233, 4185, 2]
 
-// Module 15625 (str2)
+// Module 15619 (str2)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -108,7 +108,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((showRedDot, 
     obj = { cutouts: null, children: null };
     obj[0] = items;
     obj[1] = tmp3;
-    items = [tmp2(importDefault(7970), obj), ];
+    items = [tmp2(importDefault(7967), obj), ];
     const obj1 = { style: null };
     obj1[0] = tmp.dot;
     items[1] = tmp2(View, obj1);
@@ -125,7 +125,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((showRedDot, 
   const obj3 = { ref, style: tmp.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp10, onPress, hitSlop: null, children: null };
   obj3[6] = importDefault(712).space.PX_8;
   if (showNitroSlant) {
-    let tmp14Result = tmp14(15616);
+    let tmp14Result = tmp14(15610);
     showNitroSlant = !tmp14Result.isYouNavFloating();
   }
   if (showNitroSlant) {
@@ -147,7 +147,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((showRedDot, 
   if (null != label) {
     const obj7 = { style: null, variant: null, color: null, maxFontSizeMultiplier: 2, children: null };
     obj7[0] = tmp.label;
-    tmp14Result = tmp14(15616);
+    tmp14Result = tmp14(15610);
     str = "text-sm/semibold";
     if (tmp14Result.isYouNavFloating()) {
       str = "text-xs/semibold";
@@ -161,11 +161,11 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((showRedDot, 
     let tmp2Result = tmp2(tmp14(4185).Text, obj7);
   } else {
     tmp2Result = null;
-    const tmp14Result1 = tmp14(15616);
+    const tmp14Result1 = tmp14(15610);
   }
   items4[2] = tmp2Result;
   obj3[7] = items4;
-  return callback2(require(8236) /* TwinButtons */.PressableScale, obj3);
+  return callback2(require(8233) /* TwinButtons */.PressableScale, obj3);
 }));
 const result1 = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenNavIcon.tsx");
 

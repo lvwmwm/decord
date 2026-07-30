@@ -73,7 +73,7 @@ function getViewManagerConfig(arg0) {
                   const _Object = Object;
                   const keys = Object.keys(tmp);
                   const item = keys.forEach((arg0) => {
-                    if (typeof tmp[arg0] !== "_") {
+                    if (typeof tmp[arg0] !== "ZodObject") {
                       let closure_2 = tmp3 + 1;
                       obj[arg0] = +closure_2;
                       tmp = obj;

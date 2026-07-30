@@ -1,8 +1,8 @@
-// Module ID: 13110
-// Function ID: 13111
-// Dependencies: [19, 17, 21, 4189, 712, 1581, 7953, 5243, 5245, 500, 13105, 13111, 13048, 13112, 13115, 5499, 2]
+// Module ID: 13105
+// Function ID: 13106
+// Dependencies: [19, 17, 21, 4189, 712, 1581, 7950, 5243, 5245, 500, 13100, 13106, 13043, 13107, 13110, 5499, 2]
 
-// Module 13110
+// Module 13105
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -27,7 +27,7 @@ const memoResult = require("noop").memo(function GuildActionSheet(arg0) {
     expanded = false;
   }
   const tmp = callback();
-  let obj = require(7953) /* useBottomSheetRef */;
+  let obj = require(7950) /* useBottomSheetRef */;
   bottomSheetRef = obj.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef);
   obj = { ref: bottomSheetRef, handleDisabled: true, showGradient: true, scrollable: true, startExpanded: expanded, children: null };
@@ -37,9 +37,9 @@ const memoResult = require("noop").memo(function GuildActionSheet(arg0) {
     num = 16;
   }
   obj[2] = { paddingBottom: importDefault(1581)().bottom + num };
-  const items = [closure_4(importDefault(13105), { guild }), closure_4(importDefault(13111), { guild }), , ];
+  const items = [closure_4(importDefault(13100), { guild }), closure_4(importDefault(13106), { guild }), , ];
   const obj1 = { style: tmp.actions, children: null };
-  const items1 = [closure_4(require(13048) /* HideMutedChannelsOption */.GuildUnreadAction, { guild }), closure_4(importDefault(13112), { guild }), closure_4(require(13048) /* HideMutedChannelsOption */.GuildActionSheetPrimaryActions, { guild }), closure_4(require(13048) /* HideMutedChannelsOption */.GuildActionSheetSecondaryActions, { guild }), closure_4(require(13048) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild }), closure_4(importDefault(13115), { guildId: guild.id })];
+  const items1 = [closure_4(require(13043) /* HideMutedChannelsOption */.GuildUnreadAction, { guild }), closure_4(importDefault(13107), { guild }), closure_4(require(13043) /* HideMutedChannelsOption */.GuildActionSheetPrimaryActions, { guild }), closure_4(require(13043) /* HideMutedChannelsOption */.GuildActionSheetSecondaryActions, { guild }), closure_4(require(13043) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild }), closure_4(importDefault(13110), { guildId: guild.id })];
   obj1[1] = items1;
   items[2] = closure_5(View, obj1);
   items[3] = closure_4(require(5499) /* ActionSheetHeaderBar */.ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose });

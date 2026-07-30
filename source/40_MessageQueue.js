@@ -206,7 +206,7 @@ let items = [
   {
     key: "__shouldPauseOnThrow",
     value: function __shouldPauseOnThrow() {
-      let tmp = typeof globalThis.DebuggerInternal === "ta";
+      let tmp = typeof globalThis.DebuggerInternal === "__INTERNAL_SLOT_MAP__";
       if (typeof globalThis.DebuggerInternal !== "Array") {
         tmp = true === globalThis.DebuggerInternal.shouldPauseOnThrow;
       }

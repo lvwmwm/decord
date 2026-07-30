@@ -1,13 +1,13 @@
-// Module ID: 12439
-// Function ID: 12440
+// Module ID: 12433
+// Function ID: 12434
 // Name: BuyNitroTriggerPointEffect
-// Dependencies: [12440, 12441, 2]
+// Dependencies: [12434, 12435, 2]
 // Exports: BuyNitroTriggerPointEffect
 
-// Module 12439 (BuyNitroTriggerPointEffect)
+// Module 12433 (BuyNitroTriggerPointEffect)
 const result = require("set").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroTriggerPointEffect.tsx");
 
 export const BuyNitroTriggerPointEffect = function BuyNitroTriggerPointEffect() {
-  const commonTriggerPoint = require(12440) /* useCommonTriggerPoint */.useCommonTriggerPoint(require(12441) /* commonTriggerPointConfiguration */.OpenNitroTriggerPoint);
+  const commonTriggerPoint = require(12434) /* useCommonTriggerPoint */.useCommonTriggerPoint(require(12435) /* commonTriggerPointConfiguration */.OpenNitroTriggerPoint);
   return null;
 };

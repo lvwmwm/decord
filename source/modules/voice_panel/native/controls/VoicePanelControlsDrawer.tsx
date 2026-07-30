@@ -1,9 +1,9 @@
-// Module ID: 16027
-// Function ID: 16028
+// Module ID: 16021
+// Function ID: 16022
 // Name: renderChat
-// Dependencies: [32, 19, 17, 10038, 21, 4189, 712, 5178, 4547, 11432, 10037, 4050, 11433, 4599, 9447, 16028, 16039, 2]
+// Dependencies: [32, 19, 17, 10034, 21, 4189, 712, 5178, 4547, 11428, 10033, 4050, 11429, 4599, 9443, 16022, 16033, 2]
 
-// Module 16027 (renderChat)
+// Module 16021 (renderChat)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "set";
@@ -19,7 +19,7 @@ let error;
 let metroImportAll;
 const require = arg1;
 function renderChat(shown) {
-  obj = { collapsable: false, style: absoluteFill.absoluteFill, children: callback(importDefault(11432), obj) };
+  obj = { collapsable: false, style: absoluteFill.absoluteFill, children: callback(importDefault(11428), obj) };
   obj = { shown };
   return callback(closure_6, obj);
 }

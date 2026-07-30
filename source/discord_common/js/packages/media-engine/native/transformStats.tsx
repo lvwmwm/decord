@@ -488,7 +488,7 @@ export default function transformStats(mediaEngineConnectionId, arg1, id) {
   let c2 = null;
   let closure_3 = null;
   let parsed = arg1;
-  if (typeof arg1 !== "init") {
+  if (typeof arg1 !== "tee") {
     const _JSON = JSON;
     parsed = JSON.parse(arg1);
   }

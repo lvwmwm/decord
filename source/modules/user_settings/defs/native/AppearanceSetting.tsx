@@ -1,10 +1,10 @@
-// Module ID: 14278
-// Function ID: 14279
+// Module ID: 14274
+// Function ID: 14275
 // Name: useAppearanceSettingTrailing
-// Dependencies: [4001, 1305, 676, 4125, 1348, 589, 4032, 8826, 1236, 2421, 10120, 6644, 14279, 2]
+// Dependencies: [4001, 1305, 676, 4125, 1348, 589, 4032, 8822, 1236, 2421, 10116, 6641, 14275, 2]
 // Exports: useAppearanceSettingTrailing
 
-// Module 14278 (useAppearanceSettingTrailing)
+// Module 14274 (useAppearanceSettingTrailing)
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import { ActiveThemeType } from "SystemThemeState";
 import createToggle from "createToggle";
@@ -19,7 +19,7 @@ function useAppearanceSettingTrailing() {
   const obj = require(589) /* initialize */;
   const themeName = require(4032) /* getThemeForColor */.getThemeName(tmp3, tmp4);
   const obj2 = require(4032) /* getThemeForColor */;
-  const activeThemeType = require(8826) /* useActiveThemeType */.useActiveThemeType();
+  const activeThemeType = require(8822) /* useActiveThemeType */.useActiveThemeType();
   if (ActiveThemeType.CUSTOM === activeThemeType) {
     const intl2 = tmp5(1236).intl;
     return intl2.string(tmp(2421).KSBBpC);
@@ -41,7 +41,7 @@ function useAppearanceSettingTrailing() {
   } else {
     return tmp9.DEFAULT === activeThemeType ? themeName : undefined;
   }
-  const obj3 = require(8826) /* useActiveThemeType */;
+  const obj3 = require(8822) /* useActiveThemeType */;
 }
 createToggle = {
   useTitle() {
@@ -56,7 +56,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.APPEARANCE,
   getComponent() {
-    return require(14279).default;
+    return require(14275).default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

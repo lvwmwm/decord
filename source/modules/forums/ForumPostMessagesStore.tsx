@@ -1,9 +1,9 @@
-// Module ID: 6053
-// Function ID: 6054
+// Module ID: 6051
+// Function ID: 6052
 // Name: handleLoadThreadsSuccess
-// Dependencies: [6054, 1874, 11, 4409, 589, 709, 2]
+// Dependencies: [6052, 1874, 11, 4409, 589, 709, 2]
 
-// Module 6053 (handleLoadThreadsSuccess)
+// Module 6051 (handleLoadThreadsSuccess)
 import handleConnectionOpenOrResumed from "handleConnectionOpenOrResumed";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Store } from "initialize";

@@ -1,10 +1,10 @@
-// Module ID: 11225
-// Function ID: 11226
+// Module ID: 11221
+// Function ID: 11222
 // Name: handleApplicationSelected
-// Dependencies: [19, 1372, 1874, 1479, 676, 4623, 4384, 5704, 11226, 5702, 1906, 6089, 1855, 8015, 1416, 10924, 9407, 11231, 5521, 10609, 4158, 2]
+// Dependencies: [19, 1372, 1874, 1479, 676, 4623, 4384, 5704, 11222, 5702, 1906, 6087, 1855, 8012, 1416, 10920, 9403, 11227, 5521, 10605, 4158, 2]
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected, useHandleActivityItemSelected, useLogAppLauncherEmptyStateView
 
-// Module 11225 (handleApplicationSelected)
+// Module 11221 (handleApplicationSelected)
 import postMessageToWebView from "postMessageToWebView";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -77,7 +77,7 @@ export const handleViewAllSelected = function handleViewAllSelected(arg0) {
   ({ navigation, sectionName, applications, sectionItemType, commands } = arg0);
   ({ location: _location, context, sectionOverallPosition, sectionDescriptors, title, promotedApplicationIds } = arg0);
   let obj = require(4384) /* collectGuildAnalyticsMetadata */;
-  obj = { section_name: sectionName, num: sectionItemType === require(11226) /* Placeholder */.SectionItemType.APPS ? applications.length : commands.length };
+  obj = { section_name: sectionName, num: sectionItemType === require(11222) /* Placeholder */.SectionItemType.APPS ? applications.length : commands.length };
   obj.trackWithMetadata(AnalyticEvents.APP_LAUNCHER_SECTION_VIEW_MORE, obj);
   navigation.navigate(constants.APP_LIST_VIEW, { analyticsLocation: _location, context, sectionName, sectionOverallPosition, applications, sectionItemType, commands, sectionDescriptors, title, promotedApplicationIds });
 };
@@ -124,7 +124,7 @@ export const handleApplicationCommandSelected = function handleApplicationComman
       }
     }
     if ("channel" === context.type) {
-      const result = importAll(6089).setAppLauncherActiveCommand(context.channel.id, command);
+      const result = importAll(6087).setAppLauncherActiveCommand(context.channel.id, command);
       const obj1 = { command: null, section: null, context: null, installOnDemand: null, sectionName: null, analyticsLocation: null, onCommandExecuted: null };
       obj1[0] = command;
       obj1[1] = tmp5;
@@ -134,7 +134,7 @@ export const handleApplicationCommandSelected = function handleApplicationComman
       obj1[5] = _location;
       obj1[6] = onCommandExecuted;
       navigation.navigate(constants.COMMAND_VIEW, obj1);
-      const obj4 = importAll(6089);
+      const obj4 = importAll(6087);
     }
   }
 };
@@ -193,7 +193,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
             items5 = [{ type: "text", text: "" }];
           } else if (tmp2(1906).ApplicationCommandOptionType.ROLE === type) {
             if (null != found) {
-              if (typeof found.value !== "init") {
+              if (typeof found.value !== "tee") {
                 if (found.value in roles) {
                   const obj2 = { type: "roleMention", roleId: null };
                   obj2[1] = found.value;
@@ -210,7 +210,7 @@ export const getInitialOptionValues = function getInitialOptionValues(option) {
                 const items8 = [{ type: "textMention", text: "@everyone" }];
                 return items8;
               } else {
-                if (typeof found.value !== "init") {
+                if (typeof found.value !== "tee") {
                   if (found.value in roles) {
                     const obj3 = { type: "roleMention", roleId: null };
                     obj3[1] = found.value;
@@ -263,7 +263,7 @@ export const getAppLauncherIconSource = function getAppLauncherIconSource(applic
   if (null == application) {
     let applicationIconSource = importDefault(1855);
   } else {
-    let obj = require(8015) /* getShelfBadgeTypeIfActive */;
+    let obj = require(8012) /* getShelfBadgeTypeIfActive */;
     const obj2 = importDefault(1416);
     if (isRealApplicationResult) {
       obj = { id: null, icon: null, bot: null, botIconFirst: false };
@@ -278,7 +278,7 @@ export const getAppLauncherIconSource = function getAppLauncherIconSource(applic
 };
 export const useLogAppLauncherEmptyStateView = function useLogAppLauncherEmptyStateView(COMMAND_NOT_FOUND, query) {
   const _require = COMMAND_NOT_FOUND;
-  const entrypoint = _require(10924).useAppLauncherContext().entrypoint;
+  const entrypoint = _require(10920).useAppLauncherContext().entrypoint;
   const items = [COMMAND_NOT_FOUND, query, entrypoint];
   const effect = React.useEffect(() => {
     if (null != COMMAND_NOT_FOUND) {

@@ -1,15 +1,15 @@
-// Module ID: 8669
-// Function ID: 8670
+// Module ID: 8666
+// Function ID: 8667
 // Name: CollectiblesPreview
-// Dependencies: [19, 17, 5802, 676, 21, 4189, 8670, 712, 8693, 8046, 8056, 1901, 8067, 8057, 8694, 8696, 7888, 8053, 3893, 3901, 1351, 2]
+// Dependencies: [19, 17, 5802, 676, 21, 4189, 8667, 712, 8043, 8053, 1901, 8064, 8054, 8690, 8692, 7885, 8050, 3893, 3901, 1351, 2]
 // Exports: default
 
-// Module 8669 (CollectiblesPreview)
-import ManaContext from "ManaContext";
-import { View } from "SlayerStorefrontItemCard";
+// Module 8666 (CollectiblesPreview)
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
+import { View } from "map";
 import { transformSKUToCollectiblesItem as closure_5 } from "createCollectiblesItemsFromServerResponse";
 import { SKUProductLines } from "ME";
-import { jsx } from "set";
+import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 
 const require = arg1;
@@ -22,47 +22,41 @@ class CollectiblesPreview {
       size = require("SourceIcon").DEFAULT_ITEM_SIZE;
     }
     size2 = size;
-    if (typeof size !== "os") {
+    if (typeof size !== "reType") {
       obj = { width: null, height: null };
       obj[0] = size;
       obj[1] = size;
       size2 = obj;
     }
-    tmp3 = f44788(size2.width, size2.height);
+    tmp3 = f44792(size2.width, size2.height);
     if ("bundle" === collectiblesItemData.type) {
-      tmp19 = closure_2;
       tmp18 = closure_0;
-      obj13 = require("isValidCollectiblesBundle");
-      if (obj13.isValidCollectiblesBundleItems(collectiblesItemData.items)) {
-        tmp21 = new.target;
-        tmp22 = new.target;
-        itemsSortingHat = new require("firstAvatarDecoration").ItemsSortingHat(collectiblesItemData.items);
-        tmp24 = itemsSortingHat;
-        tmp25 = jsx;
-        tmp26 = View;
-        obj1 = { style: null, children: null };
-        obj1[0] = tmp3.container;
-        obj2 = { style: null, children: null };
-        items = [, ];
-        ({ scaler: arr2[0], bundleContainer: arr2[1] } = tmp3);
-        obj2[0] = items;
-        tmp27 = closure_1;
-        obj3 = { deco: null, pfx: null, nameplate: null, size: "small", previewAssets: null, disableStaticBackground: true, targetSize: null };
-        ({ firstAvatarDecoration: obj16[0], firstProfileEffect: obj16[1], firstNameplate: obj16[2] } = itemsSortingHat);
-        obj3[4] = collectiblesItemData.previewAssets;
-        tmp28 = f44788;
-        obj3[6] = f44788;
-        obj2[1] = jsx(require("BundleStaticPreviewContent"), obj3);
-        obj1[1] = jsx(View, obj2);
-        return jsx(View, obj1);
-      } else {
-        tmp20 = null;
-        return null;
-      }
+      tmp19 = closure_2;
+      tmp20 = new.target;
+      tmp21 = new.target;
+      itemsSortingHat = new require("firstAvatarDecoration").ItemsSortingHat(collectiblesItemData.items);
+      tmp23 = itemsSortingHat;
+      tmp24 = jsx;
+      tmp25 = View;
+      obj1 = { style: null, children: null };
+      obj1[0] = tmp3.container;
+      obj2 = { style: null, children: null };
+      items = [, ];
+      ({ scaler: arr2[0], bundleContainer: arr2[1] } = tmp3);
+      obj2[0] = items;
+      tmp26 = closure_1;
+      obj3 = { deco: null, pfx: null, nameplate: null, size: "small", previewAssets: null, disableStaticBackground: true, targetSize: null };
+      ({ firstAvatarDecoration: obj15[0], firstProfileEffect: obj15[1], firstNameplate: obj15[2] } = itemsSortingHat);
+      obj3[4] = collectiblesItemData.previewAssets;
+      tmp27 = f44792;
+      obj3[6] = f44792;
+      obj2[1] = jsx(require("BundleStaticPreviewContent"), obj3);
+      obj1[1] = jsx(View, obj2);
+      return jsx(View, obj1);
     } else {
       type = collectiblesItemData.item.type;
-      tmp29 = closure_0;
-      tmp30 = closure_2;
+      tmp28 = closure_0;
+      tmp29 = closure_2;
       if (require("CollectiblesItemType").CollectiblesItemType.AVATAR_DECORATION === type) {
         tmp15 = jsx;
         tmp16 = View;
@@ -131,7 +125,7 @@ function CollectiblesSKUPreview(sku) {
   sku = sku.sku;
   let DEFAULT_ITEM_SIZE = sku.size;
   if (DEFAULT_ITEM_SIZE === undefined) {
-    DEFAULT_ITEM_SIZE = sku(8670).DEFAULT_ITEM_SIZE;
+    DEFAULT_ITEM_SIZE = sku(8667).DEFAULT_ITEM_SIZE;
   }
   const items = [sku];
   const memo = React.useMemo(() => outer1_5(sku), items);
@@ -153,13 +147,13 @@ class SocialLayerStorefrontSKUPreview {
       DEFAULT_ITEM_SIZE = require("SourceIcon").DEFAULT_ITEM_SIZE;
     }
     size = DEFAULT_ITEM_SIZE;
-    if (typeof DEFAULT_ITEM_SIZE !== "os") {
+    if (typeof DEFAULT_ITEM_SIZE !== "reType") {
       obj = { width: null, height: null };
       obj[0] = DEFAULT_ITEM_SIZE;
       obj[1] = DEFAULT_ITEM_SIZE;
       size = obj;
     }
-    tmp3 = f44788(size.width, size.height);
+    tmp3 = f44792(size.width, size.height);
     tmp4 = closure_2;
     obj = require("apexExperiment");
     tmp5 = null;
@@ -183,13 +177,13 @@ class PremiumSKUPreview {
       DEFAULT_ITEM_SIZE = require("SourceIcon").DEFAULT_ITEM_SIZE;
     }
     size = DEFAULT_ITEM_SIZE;
-    if (typeof DEFAULT_ITEM_SIZE !== "os") {
+    if (typeof DEFAULT_ITEM_SIZE !== "reType") {
       obj = { width: null, height: null };
       obj[0] = DEFAULT_ITEM_SIZE;
       obj[1] = DEFAULT_ITEM_SIZE;
       size = obj;
     }
-    tmp3 = f44788(size.width, size.height);
+    tmp3 = f44792(size.width, size.height);
     obj = require("map");
     obj1 = { style: tmp3.premiumRiveContainer, children: null };
     token = obj.useToken(require("Themes").colors.TEXT_DEFAULT);
@@ -199,14 +193,14 @@ class PremiumSKUPreview {
 }
 let closure_8 = createCacheKey.createStyles((width, height) => {
   let obj = { container: { width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }, scaler: null, bundleContainer: null, socialLayerStorefrontContainer: null, profileFrameContainer: null, premiumRiveContainer: null };
-  obj = { width: require(8670) /* SourceIcon */.DEFAULT_ITEM_SIZE, height: require(8670) /* SourceIcon */.DEFAULT_ITEM_SIZE, justifyContent: "center", alignItems: "center", transform: null };
-  obj = { scaleX: width / require(8670) /* SourceIcon */.DEFAULT_ITEM_SIZE };
-  const items = [obj, { scaleY: height / require(8670) /* SourceIcon */.DEFAULT_ITEM_SIZE }];
+  obj = { width: require(8667) /* SourceIcon */.DEFAULT_ITEM_SIZE, height: require(8667) /* SourceIcon */.DEFAULT_ITEM_SIZE, justifyContent: "center", alignItems: "center", transform: null };
+  obj = { scaleX: width / require(8667) /* SourceIcon */.DEFAULT_ITEM_SIZE };
+  const items = [obj, { scaleY: height / require(8667) /* SourceIcon */.DEFAULT_ITEM_SIZE }];
   obj[4] = items;
   obj[1] = obj;
   obj[2] = { paddingTop: 20 };
   obj[3] = { width, height };
-  const obj1 = { scaleY: height / require(8670) /* SourceIcon */.DEFAULT_ITEM_SIZE };
+  const obj1 = { scaleY: height / require(8667) /* SourceIcon */.DEFAULT_ITEM_SIZE };
   obj[4] = { padding: importDefault(712).space.PX_8 };
   obj[5] = { width, height };
   return obj;
@@ -219,7 +213,7 @@ export default function SKUPreview(arg0) {
   let sku;
   ({ sku, size } = arg0);
   if (size === undefined) {
-    size = require(8670) /* SourceIcon */.DEFAULT_ITEM_SIZE;
+    size = require(8667) /* SourceIcon */.DEFAULT_ITEM_SIZE;
   }
   const productLine = sku.productLine;
   if (SKUProductLines.COLLECTIBLES === productLine) {

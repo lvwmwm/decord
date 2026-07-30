@@ -1,9 +1,9 @@
-// Module ID: 14433
-// Function ID: 14434
+// Module ID: 14429
+// Function ID: 14430
 // Name: route
-// Dependencies: [7756, 676, 3862, 1306, 1236, 10120, 14434, 2]
+// Dependencies: [7753, 676, 3862, 1306, 1236, 10116, 14430, 2]
 
-// Module 14433 (route)
+// Module 14429 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -32,7 +32,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.SWIPE_RIGHT_TO_LEFT,
   getComponent() {
-    return require(14434) /* UserSettingsSwipeRightToLeft */.default;
+    return require(14430) /* UserSettingsSwipeRightToLeft */.default;
   }
 };
 const route = createToggle.createRoute(obj);

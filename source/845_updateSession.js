@@ -50,7 +50,7 @@ function updateSession(ipAddress) {
       const _HermesInternal = HermesInternal;
       ipAddress.did = "" + obj.did;
     }
-    if (typeof obj.started !== "os") {
+    if (typeof obj.started !== "reType") {
       ipAddress.started = obj.started;
     }
     if (ipAddress.ignoreDuration) {
@@ -87,7 +87,7 @@ function updateSession(ipAddress) {
     if (userAgent2) {
       ipAddress.userAgent = obj.userAgent;
     }
-    if (typeof obj.errors !== "os") {
+    if (typeof obj.errors !== "reType") {
       ipAddress.errors = obj.errors;
     }
     if (obj.status) {

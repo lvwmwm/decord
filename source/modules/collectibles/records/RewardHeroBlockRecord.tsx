@@ -1,9 +1,9 @@
-// Module ID: 5839
-// Function ID: 5840
+// Module ID: 5837
+// Function ID: 5838
 // Name: fromServer
 // Dependencies: [5829, 5810, 2]
 
-// Module 5839 (fromServer)
+// Module 5837 (fromServer)
 let prototype;
 prototype = function RewardHeroBlockRecord(unpublished_at) {
   let summary;

@@ -1,9 +1,9 @@
-// Module ID: 8017
-// Function ID: 8018
+// Module ID: 8014
+// Function ID: 8015
 // Name: AppLauncherEntrypoint
 // Dependencies: [2]
 
-// Module 8017 (AppLauncherEntrypoint)
+// Module 8014 (AppLauncherEntrypoint)
 const result = require("set").fileFinishedImporting("modules/app_launcher/AppLauncherTypes.tsx");
 
 export const AppLauncherEntrypoint = { NONE: "NONE", TEXT: "TEXT", VOICE: "VOICE" };

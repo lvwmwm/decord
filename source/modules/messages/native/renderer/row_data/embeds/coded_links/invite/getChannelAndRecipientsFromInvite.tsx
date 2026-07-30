@@ -1,10 +1,10 @@
-// Module ID: 9501
-// Function ID: 9502
+// Module ID: 9497
+// Function ID: 9498
 // Name: getChannelAndRecipientsFromInvite
 // Dependencies: [1376, 2]
 // Exports: default
 
-// Module 9501 (getChannelAndRecipientsFromInvite)
+// Module 9497 (getChannelAndRecipientsFromInvite)
 import { createChannelRecordFromInvite as closure_0 } from "createChannelRecord";
 
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/invite/getChannelAndRecipientsFromInvite.tsx");

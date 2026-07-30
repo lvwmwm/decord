@@ -1,10 +1,10 @@
-// Module ID: 8435
-// Function ID: 8436
+// Module ID: 8432
+// Function ID: 8433
 // Name: tooltipEnterExitAnimation
 // Dependencies: [4599, 2]
 // Exports: tooltipEnterExitAnimation
 
-// Module 8435 (tooltipEnterExitAnimation)
+// Module 8432 (tooltipEnterExitAnimation)
 let closure_2 = { overshootClamping: true, damping: 35, stiffness: 450, mass: 0.5, restDisplacementThreshold: 0.001 };
 let closure_3 = { code: "function TooltipConstantsNativeTsx1(visible,cleanUp){const{withSpring,translateY,TOOLTIP_SPRING}=this.__closure;return{transform:[{translateY:withSpring(visible===1?0:translateY,TOOLTIP_SPRING,'respect-motion-settings',cleanUp)}],opacity:withSpring(visible,TOOLTIP_SPRING,'respect-motion-settings',cleanUp)};}" };
 const result = require("set").fileFinishedImporting("design/components/Tooltip/native/TooltipConstants.native.tsx");

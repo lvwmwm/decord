@@ -1,10 +1,10 @@
-// Module ID: 10776
-// Function ID: 10777
+// Module ID: 10772
+// Function ID: 10773
 // Name: hasPermissionToPlaySound
-// Dependencies: [5, 1340, 1376, 3817, 1874, 4635, 4636, 676, 1338, 3862, 3835, 10777, 8048, 4642, 10778, 709, 10781, 10782, 10783, 647, 4028, 1358, 1355, 698, 4384, 2]
+// Dependencies: [5, 1340, 1376, 3817, 1874, 4635, 4636, 676, 1338, 3862, 3835, 10773, 8045, 4642, 10774, 709, 10777, 10778, 10779, 647, 4028, 1358, 1355, 698, 4384, 2]
 // Exports: getAmplitudinalSoundboardVolume, hasSetAnyCustomJoinSound, maybePlayCustomJoinSound, playSound, removeCustomJoinSound, trackCustomCallSoundExternallyDeleted, trackSoundFavorited, updateCustomJoinSound, useSoundBoardDismissContentTypes
 
-// Module 10776 (hasPermissionToPlaySound)
+// Module 10772 (hasPermissionToPlaySound)
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import { SILENT_JOIN_LEAVE_CHANNEL_TYPES as closure_5 } from "createChannelRecord";
@@ -88,7 +88,7 @@ function canUseSoundboardSound(closure_0, closure_1, channel) {
   return result;
 }
 function canMakeSound(channel) {
-  let obj = require(10777) /* getMuteStates */;
+  let obj = require(10773) /* getMuteStates */;
   obj = { channel };
   const muteStates = obj.getMuteStates(obj);
   const mute = muteStates.mute;
@@ -237,10 +237,10 @@ export { hasPermissionToPlaySound };
 export { canUseSoundboardSound };
 export { canMakeSound };
 export const playSound = function playSound(soundId, channelId) {
-  let obj = require(8048) /* _fetchDefaultSoundsFromApi2 */;
+  let obj = require(8045) /* _fetchDefaultSoundsFromApi2 */;
   obj.playSoundLocally(channelId, soundId, require(4642) /* SoundButtonOverlay */.LocalSoundTrigger.SOUNDBOARD);
-  const result = require(10778) /* VoiceChannelEffectSentLocation */.sendVoiceChannelSoundboardEffect(channelId, soundId, false, arg2, arg3);
-  const obj2 = require(10778) /* VoiceChannelEffectSentLocation */;
+  const result = require(10774) /* VoiceChannelEffectSentLocation */.sendVoiceChannelSoundboardEffect(channelId, soundId, false, arg2, arg3);
+  const obj2 = require(10774) /* VoiceChannelEffectSentLocation */;
   obj = { type: "SOUNDBOARD_TRACK_USAGE", soundId: soundId.soundId };
   importDefault(709).dispatch(obj);
 };

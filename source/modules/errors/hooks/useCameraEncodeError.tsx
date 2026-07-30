@@ -1,10 +1,10 @@
-// Module ID: 15963
-// Function ID: 15964
+// Module ID: 15957
+// Function ID: 15958
 // Name: useCameraEncodeError
-// Dependencies: [1218, 10546, 589, 8852, 2]
+// Dependencies: [1218, 10542, 589, 8848, 2]
 // Exports: default
 
-// Module 15963 (useCameraEncodeError)
+// Module 15957 (useCameraEncodeError)
 import fetchFingerprint from "fetchFingerprint";
 import isAVErrorContextOfType from "isAVErrorContextOfType";
 

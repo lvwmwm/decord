@@ -1,9 +1,9 @@
-// Module ID: 16762
-// Function ID: 16763
+// Module ID: 16756
+// Function ID: 16757
 // Name: RNGHMountReactionsEffectExperiment
 // Dependencies: [1349, 2]
 
-// Module 16762 (RNGHMountReactionsEffectExperiment)
+// Module 16756 (RNGHMountReactionsEffectExperiment)
 const tmp2 = require("getUnitId")({ kind: "user", name: "2026-07-rngh-mount-reactions-effect", defaultConfig: { useLayoutEffect: true }, variations: { 0: { useLayoutEffect: true }, 1: { useLayoutEffect: false } } });
 const result = require("set").fileFinishedImporting("modules/gesture_handlers/native/RNGHMountReactionsEffectExperiment.tsx");
 

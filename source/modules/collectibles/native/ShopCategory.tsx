@@ -1,10 +1,10 @@
-// Module ID: 14609
-// Function ID: 14610
+// Module ID: 14605
+// Function ID: 14606
 // Name: Spacing
-// Dependencies: [19, 17, 678, 676, 21, 8660, 4189, 712, 5515, 1480, 14103, 14608, 6676, 14610, 8663, 4157, 8731, 5797, 5535, 4717, 1236, 5141, 5565, 2]
+// Dependencies: [19, 17, 678, 676, 21, 8657, 4189, 712, 5515, 1480, 14099, 14604, 6673, 14606, 8660, 4157, 8727, 5797, 5535, 4717, 1236, 5141, 5565, 2]
 // Exports: ShopCategory
 
-// Module 14609 (Spacing)
+// Module 14605 (Spacing)
 import PressableBase from "PressableBase";
 import { View } from "openCollectiblesShop";
 import { CollectiblesMobileShopScreen as closure_5 } from "items";
@@ -60,17 +60,17 @@ export const ShopCategory = function ShopCategory(category) {
   let obj = category(1480);
   dependencyMap = obj.useNavigation();
   unpublishedAt = category.unpublishedAt;
-  let obj1 = category(14103);
+  let obj1 = category(14099);
   obj = { products: category.products, bypassAndroidUnsyncedFilter: category.isOrbsExclusive };
   filteredAndSortedProducts = obj1.useFilteredAndSortedProducts(obj);
   const mobileBannerUrl = category.mobileBannerUrl;
-  let obj3 = category(14608);
+  let obj3 = category(14604);
   const collectiblesShopDeepLinkProps = obj3.useCollectiblesShopDeepLinkProps({ products: filteredAndSortedProducts });
   ({ productIndex, initialProductSkuId } = collectiblesShopDeepLinkProps);
   initialVariantIndex = collectiblesShopDeepLinkProps.initialVariantIndex;
   let obj4 = unpublishedAt;
   ref = unpublishedAt.useRef(null);
-  let obj5 = category(6676);
+  let obj5 = category(6673);
   let items = [category.storeListingId];
   const recyclingState = obj5.useRecyclingState(null, items, () => {
     const current = ref.current;
@@ -78,14 +78,14 @@ export const ShopCategory = function ShopCategory(category) {
       current.scrollToOffset({ offset: 0, animated: false });
     }
   });
-  let obj6 = category(14610);
+  let obj6 = category(14606);
   let tmp9 = null != productIndex;
   if (tmp9) {
     tmp9 = productIndex > 0;
   }
-  obj = { shouldScroll: tmp9, initialScrollIndex: productIndex, flashListRef: ref, afterMs: tmp4(14610).INITIAL_SCROLL_DELAY_MS, resetKey: category.storeListingId };
+  obj = { shouldScroll: tmp9, initialScrollIndex: productIndex, flashListRef: ref, afterMs: tmp4(14606).INITIAL_SCROLL_DELAY_MS, resetKey: category.storeListingId };
   const scrollToInitialIndexOnce = obj6.useScrollToInitialIndexOnce(obj);
-  collectiblesAnalyticsContext = category(8663).useCollectiblesAnalyticsContext();
+  collectiblesAnalyticsContext = category(8660).useCollectiblesAnalyticsContext();
   const items1 = [initialProductSkuId, initialVariantIndex, filteredAndSortedProducts, analyticsLocations, collectiblesAnalyticsContext];
   const effect = obj4.useEffect(() => {
     let found = null;
@@ -153,7 +153,7 @@ export const ShopCategory = function ShopCategory(category) {
     tmp14Result = tmp14(tmp(5141), obj6);
   }
   const items4 = [tmp14Result, ];
-  const tmp4Result = category(8663);
+  const tmp4Result = category(8660);
   items4[1] = ref(filteredAndSortedProducts, { style: tmp3.viewAllIcon, children: ref(category(5565).ChevronSmallRightIcon, { size: "sm", color: "white" }) });
   obj3[8] = items4;
   const items5 = [collectiblesAnalyticsContext(category(4717).PressableOpacity, obj3, category.storeListingId), ];
@@ -162,13 +162,13 @@ export const ShopCategory = function ShopCategory(category) {
   obj9[2] = intl3.formatToPlainString(category(1236).t.FNtLb3, { category: category.name });
   obj9[4] = filteredAndSortedProducts;
   obj9[5] = callback;
-  obj9[8] = category(8660).COLLECTIBLES_SHOP_CARD_WIDTH + 12;
+  obj9[8] = category(8657).COLLECTIBLES_SHOP_CARD_WIDTH + 12;
   obj9[10] = HeaderAndFooterSpacing;
   obj9[11] = HeaderAndFooterSpacing;
   obj9[12] = Spacing;
   obj9[13] = productIndex;
-  items5[1] = ref(category(6676).FlashList, obj9);
+  items5[1] = ref(category(6673).FlashList, obj9);
   obj2[1] = items5;
   obj1[1] = collectiblesAnalyticsContext(filteredAndSortedProducts, obj2);
-  return ref(category(8663).CollectiblesAnalyticsProvider, obj1);
+  return ref(category(8660).CollectiblesAnalyticsProvider, obj1);
 };

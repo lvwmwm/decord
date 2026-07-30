@@ -1,9 +1,9 @@
-// Module ID: 11277
-// Function ID: 11278
+// Module ID: 11273
+// Function ID: 11274
 // Name: getApplicationIdFromApplicationItem
-// Dependencies: [32, 19, 17, 5697, 11242, 1479, 21, 4189, 712, 11225, 11230, 5220, 8015, 11278, 8017, 11228, 1581, 8827, 8014, 11241, 5704, 5702, 11279, 11280, 1236, 3902, 11263, 11256, 11275, 4185, 11281, 8236, 11282, 2]
+// Dependencies: [32, 19, 17, 5697, 11238, 1479, 21, 4189, 712, 11221, 11226, 5220, 8012, 11274, 8014, 11224, 1581, 8823, 8011, 11237, 5704, 5702, 11275, 11276, 1236, 3902, 11259, 11252, 11271, 4185, 11277, 8233, 11278, 2]
 
-// Module 11277 (getApplicationIdFromApplicationItem)
+// Module 11273 (getApplicationIdFromApplicationItem)
 import EmptyState from "EmptyState";
 import importAllResult from "useApplicationsInContext";
 import { View } from "useScaledRowHeight";
@@ -46,23 +46,23 @@ function CommandRow(arg0) {
   let onPress;
   ({ command, application } = arg0);
   ({ context, onPress, isFirstRow, isLastRow, beforeExecuteCommand, onExecuteCommand } = arg0);
-  let obj = require(11225) /* handleApplicationSelected */;
+  let obj = require(11221) /* handleApplicationSelected */;
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   let tmp4 = null != appLauncherIconSource;
   if (tmp4) {
     obj = { iconSource: null };
     obj[0] = appLauncherIconSource;
-    tmp4 = callback2(importDefault(11230), obj);
+    tmp4 = callback2(importDefault(11226), obj);
   }
   obj = { icon: tmp4, label: command.displayName, subLabel: null, subLabelLineClamp: 1, start: null, end: null, onPress: null, trailing: null };
-  obj[2] = require(8015) /* getShelfBadgeTypeIfActive */.getSectionName(application);
+  obj[2] = require(8012) /* getShelfBadgeTypeIfActive */.getSectionName(application);
   obj[4] = isFirstRow;
   obj[5] = isLastRow;
   obj[6] = onPress;
   const obj1 = { command, context, beforeExecuteCommand, onExecuteCommand, sectionName: null };
-  const tmpResult = require(8015) /* getShelfBadgeTypeIfActive */;
-  obj1[4] = require(8017) /* AppLauncherEntrypoint */.AppLauncherSectionName.SEARCH;
-  obj[7] = callback2(importDefault(11278), obj1);
+  const tmpResult = require(8012) /* getShelfBadgeTypeIfActive */;
+  obj1[4] = require(8014) /* AppLauncherEntrypoint */.AppLauncherSectionName.SEARCH;
+  obj[7] = callback2(importDefault(11274), obj1);
   return callback2(require(5220) /* TableRowInner */.TableRow, obj);
 }
 function PlaceholderCommandRow(isFirstRow) {
@@ -75,9 +75,9 @@ function PlaceholderCommandRow(isFirstRow) {
     flag2 = false;
   }
   const tmp = callback3();
-  let obj = require(11228) /* usePlaceholderWidth */;
+  let obj = require(11224) /* usePlaceholderWidth */;
   const placeholderWidth = obj.usePlaceholderWidth(10, 50);
-  let obj1 = require(11228) /* usePlaceholderWidth */;
+  let obj1 = require(11224) /* usePlaceholderWidth */;
   const placeholderWidth1 = obj1.usePlaceholderWidth(30, 90);
   obj = { icon: null, label: null, subLabel: null, subLabelLineClamp: 1, start: null, end: null, onPress: null };
   obj = { style: tmp.loadingCommandAppIcon };

@@ -1,9 +1,9 @@
-// Module ID: 13641
-// Function ID: 13642
+// Module ID: 13636
+// Function ID: 13637
 // Name: jsx
-// Dependencies: [32, 19, 17, 10468, 21, 4189, 712, 6653, 13642, 5215, 589, 10980, 4598, 5554, 5220, 4137, 5543, 3889, 13639, 4148, 7655, 7654, 6727, 4600, 1351, 2]
+// Dependencies: [32, 19, 17, 10464, 21, 4189, 712, 6650, 13637, 5215, 589, 10976, 4598, 5554, 5220, 4137, 5543, 3889, 13634, 4148, 7652, 7651, 6724, 4600, 1351, 2]
 
-// Module 13641 (jsx)
+// Module 13636 (jsx)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "TrashIcon";
 import { ScrollView } from "presentAddedFriendToast";
@@ -33,7 +33,7 @@ const memoResult = importAllResult.memo(() => {
     const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
     let tmp;
     if (overrides != null) {
-      tmp = overrides[first(undefined, 10980).DEVICE_FIELD];
+      tmp = overrides[first(undefined, 10976).DEVICE_FIELD];
     }
     return tmp;
   });
@@ -66,12 +66,12 @@ const memoResult = importAllResult.memo(() => {
     };
     const items1 = [tmp7(tmp3(5220).TableRow, obj1), , ];
     let obj3 = { icon: null, label: "Refresh Override", onPress: null, arrow: true };
-    obj3[0] = tmp7(tmp3(13639).RefreshIcon, {});
-    obj3[2] = tmp3(10980).refreshBuildOverride;
+    obj3[0] = tmp7(tmp3(13634).RefreshIcon, {});
+    obj3[2] = tmp3(10976).refreshBuildOverride;
     items1[1] = tmp7(tmp3(5220).TableRow, obj3);
     const obj4 = { icon: null, label: "Clear Override", variant: "danger", onPress: null, arrow: true };
     obj4[0] = tmp7(tmp3(4148).TrashIcon, { color: "text-feedback-critical" });
-    obj4[3] = tmp3(10980).clearBuildOverride;
+    obj4[3] = tmp3(10976).clearBuildOverride;
     items1[2] = tmp7(tmp3(5220).TableRow, obj4);
     obj2[2] = items1;
     tmp10Result = tmp10(tmp3(5554).TableRowGroup, obj2);
@@ -81,7 +81,7 @@ const memoResult = importAllResult.memo(() => {
   if (null != stateFromStores) {
     str = "New";
   }
-  items2[1] = jsx(first(7655).TableRadioGroup, {
+  items2[1] = jsx(first(7652).TableRadioGroup, {
     title: `${str} Override Type`,
     defaultValue: first.type,
     onChange(type) {
@@ -93,7 +93,7 @@ const memoResult = importAllResult.memo(() => {
       let label;
       value = value.value;
       ({ icon, label } = value);
-      return callback(first(7654).TableRadioRow, { value, label, icon }, value);
+      return callback(first(7651).TableRadioRow, { value, label, icon }, value);
     })
   });
   const found1 = items.find((value) => value.value === first.type);
@@ -126,11 +126,11 @@ const memoResult = importAllResult.memo(() => {
       let label;
       value = value.value;
       ({ icon, label } = value);
-      return callback(first(7654).TableRadioRow, { value, label, icon }, value);
+      return callback(first(7651).TableRadioRow, { value, label, icon }, value);
     })
   };
   const tmp8 = ScrollView;
-  obj7[1] = jsx(first(6727).TextInput, {
+  obj7[1] = jsx(first(6724).TextInput, {
     size: "md",
     placeholder: "Enter " + label2,
     onChange(id) {
@@ -152,11 +152,11 @@ const memoResult = importAllResult.memo(() => {
     onPress() {
       const type = first.type;
       if ("branch" === type) {
-        const result = first(10980).setBuildOverrideForBranch(tmp.id);
-        const obj3 = first(10980);
+        const result = first(10976).setBuildOverrideForBranch(tmp.id);
+        const obj3 = first(10976);
       } else if ("id" === type) {
-        const result1 = first(10980).setBuildOverrideForId(tmp.id);
-        const obj2 = first(10980);
+        const result1 = first(10976).setBuildOverrideForId(tmp.id);
+        const obj2 = first(10976);
       } else {
         first(1351).assertNever(tmp.type);
         const obj = first(1351);

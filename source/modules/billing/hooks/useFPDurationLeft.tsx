@@ -1,10 +1,10 @@
-// Module ID: 12491
-// Function ID: 12492
+// Module ID: 12485
+// Function ID: 12486
 // Name: roundFPCountdownUnits
-// Dependencies: [1236, 6234, 3859, 1208, 2]
+// Dependencies: [1236, 6231, 3859, 1208, 2]
 // Exports: default
 
-// Module 12491 (roundFPCountdownUnits)
+// Module 12485 (roundFPCountdownUnits)
 function roundFPCountdownUnits(arg0) {
   let obj = {};
   const merged = Object.assign(arg0);
@@ -101,7 +101,7 @@ export default function useFPDurationLeft(toDate) {
     obj2[1] = require(1236) /* getSystemLocale */.t.SFU7QN;
     obj2[2] = require(1236) /* getSystemLocale */.t.Y4FNdL;
   }
-  roundFPCountdownUnits(importDefault(6234)(toDate.toDate(), 60000));
+  roundFPCountdownUnits(importDefault(6231)(toDate.toDate(), 60000));
 };
 export const CountDownMessageTypes = obj;
 export { roundFPCountdownUnits };

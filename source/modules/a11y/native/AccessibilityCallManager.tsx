@@ -1,9 +1,9 @@
-// Module ID: 13507
-// Function ID: 13508
+// Module ID: 13502
+// Function ID: 13503
 // Name: set
 // Dependencies: [1218, 1372, 3826, 1874, 500, 3862, 4380, 4035, 1236, 4368, 709, 2]
 
-// Module 13507 (set)
+// Module 13502 (set)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import upsertRelationship from "upsertRelationship";

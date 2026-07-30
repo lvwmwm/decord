@@ -1,10 +1,10 @@
-// Module ID: 8731
-// Function ID: 8732
+// Module ID: 8727
+// Function ID: 8728
 // Name: PRODUCT_DETAILS_ACTION_SHEET_KEY
-// Dependencies: [5809, 5797, 4157, 8732, 1959, 2]
+// Dependencies: [5809, 5797, 4157, 8728, 1959, 2]
 // Exports: openProductDetailsActionSheet
 
-// Module 8731 (PRODUCT_DETAILS_ACTION_SHEET_KEY)
+// Module 8727 (PRODUCT_DETAILS_ACTION_SHEET_KEY)
 let c3 = "Shop Product Preview";
 const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/collectibles/native/openProductDetailsActionSheet.tsx");
 
@@ -37,5 +37,5 @@ export const openProductDetailsActionSheet = function openProductDetailsActionSh
   const tmp2 = dependencyMap;
   const tmpResult = require(5797) /* openCollectiblesShop */;
   obj = { product, initialVariantIndex: num, analyticsLocations, shopAnalyticsContext };
-  importDefault(4157).openLazy(require(1959) /* asyncRequireImpl */(8732, tmp2.paths), c3, obj, stack);
+  importDefault(4157).openLazy(require(1959) /* asyncRequireImpl */(8728, tmp2.paths), c3, obj, stack);
 };

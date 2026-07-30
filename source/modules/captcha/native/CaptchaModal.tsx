@@ -1,10 +1,10 @@
-// Module ID: 16106
-// Function ID: 16107
+// Module ID: 16100
+// Function ID: 16101
 // Name: CaptchaModal
-// Dependencies: [19, 17, 14860, 14861, 21, 4189, 9193, 1532, 16107, 5243, 4598, 6785, 4185, 1236, 4600, 9470, 16108, 14868, 2]
+// Dependencies: [19, 17, 14854, 14855, 21, 4189, 9189, 1532, 16101, 5243, 4598, 6782, 4185, 1236, 4600, 9466, 16102, 14862, 2]
 // Exports: default
 
-// Module 16106 (CaptchaModal)
+// Module 16100 (CaptchaModal)
 import noop from "noop";
 import get_ActivityIndicator from "trackRegTransition";
 import { doesRegistrationHaveIdentityType as closure_6 } from "useRegistrationUIStore";
@@ -46,7 +46,7 @@ export default function CaptchaModal(arg0) {
   ({ close: dependencyMap, sitekey: noop, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
   let c8;
   let callback;
-  const tmp2 = callback2(onReject(9193)());
+  const tmp2 = callback2(onReject(9189)());
   const tmp3 = onReject(1532)();
   c8 = tmp3;
   const items = [tmp3];
@@ -65,12 +65,12 @@ export default function CaptchaModal(arg0) {
     }
     return str;
   }, items);
-  callback = onReject(16107)({ onReject, analyticsType: memo });
+  callback = onReject(16101)({ onReject, analyticsType: memo });
   const effect = React.useEffect(() => {
     closure_4.dismiss();
   }, []);
   let obj = { style: tmp2.contentContainer, spacing: 12, children: null };
-  const items1 = [callback(require(6785) /* AccountAgeTier10LargeBadge */.DisguiseSpotIllustration, { scale: 0.5 }), , ];
+  const items1 = [callback(require(6782) /* AccountAgeTier10LargeBadge */.DisguiseSpotIllustration, { scale: 0.5 }), , ];
   if (headerText == null) {
     const intl = tmp7(1236).intl;
     headerText = intl.string(tmp7(1236).t.FpoiHe);

@@ -1,10 +1,10 @@
-// Module ID: 7832
-// Function ID: 7833
+// Module ID: 7829
+// Function ID: 7830
 // Name: getPriceString
 // Dependencies: [3840, 3835, 5669, 2]
 // Exports: getPriceString
 
-// Module 7832 (getPriceString)
+// Module 7829 (getPriceString)
 import addSubscriptionPlan from "addSubscriptionPlan";
 
 const require = arg1;

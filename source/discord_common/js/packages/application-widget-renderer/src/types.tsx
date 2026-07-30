@@ -1,7 +1,7 @@
-// Module ID: 12154
-// Function ID: 12155
+// Module ID: 12148
+// Function ID: 12149
 // Name: set
 // Dependencies: [2]
 
-// Module 12154 (set)
+// Module 12148 (set)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/types.tsx");

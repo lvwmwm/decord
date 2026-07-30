@@ -1,10 +1,10 @@
-// Module ID: 10462
-// Function ID: 10463
+// Module ID: 10458
+// Function ID: 10459
 // Name: OptInChannelBanner
-// Dependencies: [19, 17, 4865, 4201, 10463, 676, 21, 4189, 712, 10464, 10465, 589, 11, 1348, 698, 4384, 5129, 4185, 1236, 4600, 6048, 6076, 4717, 5126, 7754, 2]
+// Dependencies: [19, 17, 4865, 4201, 10459, 676, 21, 4189, 712, 10460, 10461, 589, 11, 1348, 698, 4384, 5129, 4185, 1236, 4600, 6046, 6074, 4717, 5126, 7751, 2]
 // Exports: default
 
-// Module 10462 (OptInChannelBanner)
+// Module 10458 (OptInChannelBanner)
 import Button from "Button";
 import get_ActivityIndicator from "Text";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -101,7 +101,7 @@ function ArchivedLockedThreadChatBanner(channel) {
     obj.banner_type = "thread";
     obj.track(outer1_10.CHANNEL_BANNER_VIEWED, obj);
   }, items);
-  let obj = channel(6048);
+  let obj = channel(6046);
   let canUnarchiveThread = obj.useCanUnarchiveThread(channel);
   obj = { style: tmp.threadBannerContainer, children: null };
   obj = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: null };
@@ -153,7 +153,7 @@ function LockedThreadChatBanner(channel) {
     obj.banner_type = "thread";
     obj.track(outer1_10.CHANNEL_BANNER_VIEWED, obj);
   }, items);
-  let obj = channel(6048);
+  let obj = channel(6046);
   let isThreadModerator = obj.useIsThreadModerator(channel);
   obj = { style: tmp.threadBannerContainer, children: null };
   obj = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: null };
@@ -233,7 +233,7 @@ function NewMessagesChatBar(channel) {
         obj = { section: outer1_11.NEW_MESSAGES_BANNER, object: outer1_9.MARK_CHANNEL_AS_READ_BUTTON, objectType: outer1_8.ACK_MANUAL };
         return obj.ack(channel.id, obj);
       };
-      XSmallBoldIcon = XSmallBoldIcon(7754).XSmallBoldIcon;
+      XSmallBoldIcon = XSmallBoldIcon(7751).XSmallBoldIcon;
       const obj3 = { size: "sm", color: null };
       WHITE = importDefault(712).colors.WHITE;
       obj3[1] = WHITE;
@@ -273,7 +273,7 @@ export default function ChatBanner(channel) {
   let oldestUnreadTimestamp;
   let unreadCount;
   channel = channel.channel;
-  let obj = importDefault(10465)();
+  let obj = importDefault(10461)();
   let obj1 = channel(589);
   const items = [generateOldThreadCutoff];
   const items1 = [channel.id];

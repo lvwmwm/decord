@@ -1,10 +1,10 @@
-// Module ID: 7877
-// Function ID: 7878
+// Module ID: 7874
+// Function ID: 7875
 // Name: checkSpoilerEmbeds
-// Dependencies: [676, 4522, 4105, 7878, 4173, 1208, 2]
+// Dependencies: [676, 4522, 4105, 7875, 4173, 1208, 2]
 // Exports: checkForSimpleEmbedMessage, convertNewlinesInContent, removeBuildOverrideLinks, removeExperimentLinks, removeGameServerShareLinks, removeQuestsEmbedLinks, runMessageMarkupPostProcessors
 
-// Module 7877 (checkSpoilerEmbeds)
+// Module 7874 (checkSpoilerEmbeds)
 import ME from "ME";
 import set from "Version";
 
@@ -39988,8 +39988,8 @@ export const removeExperimentLinks = function removeExperimentLinks(arr) {
   return arr.filter((type) => {
     let tmp = "link" !== type.type;
     if (!tmp) {
-      tmp = !callback(7878).isExperimentEmbedURL(type.target);
-      const obj = callback(7878);
+      tmp = !callback(7875).isExperimentEmbedURL(type.target);
+      const obj = callback(7875);
     }
     return tmp;
   });
@@ -40176,8 +40176,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
         }
         if (tmp) {
           const content = type.content;
-          let tmp2 = typeof content === "init";
-          if (typeof content !== "init") {
+          let tmp2 = typeof content === "tee";
+          if (typeof content !== "tee") {
             tmp2 = "" !== type.content.trim();
             const str2 = type.content;
           }
@@ -40220,8 +40220,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
           }
           if (tmp) {
             const content = type.content;
-            let tmp2 = typeof content === "init";
-            if (typeof content !== "init") {
+            let tmp2 = typeof content === "tee";
+            if (typeof content !== "tee") {
               tmp2 = "" !== type.content.trim();
               const str2 = type.content;
             }
@@ -40265,8 +40265,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
     found1 = found.filter((type) => {
       let tmp = "link" !== type.type;
       if (!tmp) {
-        tmp = !callback(7878).isExperimentEmbedURL(type.target);
-        const obj = callback(7878);
+        tmp = !callback(7875).isExperimentEmbedURL(type.target);
+        const obj = callback(7875);
       }
       return tmp;
     });

@@ -1,10 +1,10 @@
-// Module ID: 9358
-// Function ID: 9359
+// Module ID: 9354
+// Function ID: 9355
 // Name: GuildNSFWContentLevel
-// Dependencies: [1862, 3817, 1874, 676, 500, 4395, 9359, 1959, 5706, 2]
+// Dependencies: [1862, 3817, 1874, 676, 500, 4395, 9355, 1959, 5706, 2]
 // Exports: handleNSFWGuildInvite, isNSFWInvite, shouldNSFWGateGuild
 
-// Module 9358 (GuildNSFWContentLevel)
+// Module 9354 (GuildNSFWContentLevel)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -68,9 +68,9 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite) {
       }
       obj = { guildId: null };
       obj[0] = id;
-      obj2.pushLazy(tmp(1959)(9359, tmp2.paths), obj);
+      obj2.pushLazy(tmp(1959)(9355, tmp2.paths), obj);
       flag2 = true;
-      const tmp12 = tmp(1959)(9359, tmp2.paths);
+      const tmp12 = tmp(1959)(9355, tmp2.paths);
     }
     return flag2;
   } else {

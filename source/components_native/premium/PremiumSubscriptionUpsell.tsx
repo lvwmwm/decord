@@ -1,10 +1,10 @@
-// Module ID: 12569
-// Function ID: 12570
+// Module ID: 12563
+// Function ID: 12564
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 1946, 1874, 676, 6227, 1876, 21, 4189, 712, 4141, 1236, 1851, 589, 3835, 4611, 691, 4185, 12570, 12571, 9333, 4600, 2]
+// Dependencies: [19, 17, 1946, 1874, 676, 6224, 1876, 21, 4189, 712, 4141, 1236, 1851, 589, 3835, 4611, 691, 4185, 12564, 12565, 9329, 4600, 2]
 // Exports: default
 
-// Module 12569 (PremiumSubscriptionUpsell)
+// Module 12563 (PremiumSubscriptionUpsell)
 import "registerAsset";
 import get_ActivityIndicator from "Text";
 import _getSystemLocale from "_getSystemLocale";
@@ -95,11 +95,11 @@ export default function PremiumSubscriptionUpsell(arg0) {
     obj6[0] = tmp.upsellFeatures;
     const obj7 = { style: null, source: null };
     obj7[0] = tmp.upsellFeatureSubLogo;
-    obj7[1] = tmp5(12570);
+    obj7[1] = tmp5(12564);
     const items4 = [closure_10(closure_4, obj7), , ];
     const obj8 = { style: null, source: null };
     obj8[0] = tmp.upsellFeatureLogoTier2;
-    obj8[1] = tmp5(12571);
+    obj8[1] = tmp5(12565);
     items4[1] = closure_10(closure_4, obj8);
     const obj9 = { style: null, features: null, labelStyle: null, rowStyle: null };
     obj9[0] = tmp.upsellFeatureList;
@@ -107,7 +107,7 @@ export default function PremiumSubscriptionUpsell(arg0) {
     obj10[0] = tmp2(4141).CheckmarkLargeIcon;
     const intl4 = tmp2(1236).intl;
     const obj11 = { discountPercentage: null };
-    const tmp5Result1 = tmp5(9333);
+    const tmp5Result1 = tmp5(9329);
     obj11[0] = tmp2(1851).formatPercent(locale.locale, closure_9 / 100);
     obj10[1] = intl4.formatToPlainString(tmp2(1236).t.P3aEj6, obj11);
     obj10[2] = tmp5(712).unsafe_rawColors.WHITE;

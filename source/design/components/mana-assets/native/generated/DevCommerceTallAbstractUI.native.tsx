@@ -1,10 +1,10 @@
-// Module ID: 6960
-// Function ID: 6961
+// Module ID: 6957
+// Function ID: 6958
 // Name: DevCommerceTallAbstractUI
-// Dependencies: [21, 5141, 6961, 2]
+// Dependencies: [21, 5141, 6958, 2]
 // Exports: DevCommerceTallAbstractUI
 
-// Module 6960 (DevCommerceTallAbstractUI)
+// Module 6957 (DevCommerceTallAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DevCommerceTallAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const DevCommerceTallAbstractUI = function DevCommerceTallAbstractUI(widt
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6961);
+  obj[0] = importDefault(6958);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

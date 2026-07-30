@@ -1,9 +1,9 @@
-// Module ID: 16231
-// Function ID: 16232
+// Module ID: 16225
+// Function ID: 16226
 // Name: onPostConnectionOpen
-// Dependencies: [5, 17, 1874, 676, 5134, 500, 16232, 530, 698, 1208, 2]
+// Dependencies: [5, 17, 1874, 676, 5134, 500, 16226, 530, 698, 1208, 2]
 
-// Module 16231 (onPostConnectionOpen)
+// Module 16225 (onPostConnectionOpen)
 import set from "set";
 import { NativeModules } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";

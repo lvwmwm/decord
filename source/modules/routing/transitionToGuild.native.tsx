@@ -1,10 +1,10 @@
-// Module ID: 6690
-// Function ID: 6691
+// Module ID: 6687
+// Function ID: 6688
 // Name: transitionToGuild
 // Dependencies: [676, 5653, 5217, 1222, 2]
 // Exports: transitionToGuild
 
-// Module 6690 (transitionToGuild)
+// Module 6687 (transitionToGuild)
 import { Routes } from "ME";
 
 let result = require("LayoutAnimation").fileFinishedImporting("modules/routing/transitionToGuild.native.tsx");
@@ -12,7 +12,7 @@ let result = require("LayoutAnimation").fileFinishedImporting("modules/routing/t
 export const transitionToGuild = function transitionToGuild(id) {
   let obj = require(5653) /* getChannelIdForGuildTransition */;
   const channelIdForGuildTransition = obj.getChannelIdForGuildTransition(id);
-  const result = require(5217) /* LayoutAnimation */.DeprecatedLayoutAnimation({ duration: 0, create: "accessibilityRole", update: "key", delete: "justifyContent" });
+  const result = require(5217) /* LayoutAnimation */.DeprecatedLayoutAnimation({ duration: 0, create: "accessibilityRole", update: "", delete: "justifyContent" });
   const obj2 = require(5217) /* LayoutAnimation */;
   obj = { navigationReplace: true };
   const obj3 = require(1222) /* transitionTo */;

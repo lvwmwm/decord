@@ -1,10 +1,10 @@
-// Module ID: 10328
-// Function ID: 10329
+// Module ID: 10324
+// Function ID: 10325
 // Name: ChannelIndicator
 // Dependencies: [17, 4386, 21, 4189, 712, 3893, 2]
 // Exports: default
 
-// Module 10328 (ChannelIndicator)
+// Module 10324 (ChannelIndicator)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { UnreadSetting } from "ReadStateTypes";
 import { jsx } from "jsxProd";

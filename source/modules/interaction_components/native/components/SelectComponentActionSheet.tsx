@@ -1,10 +1,10 @@
-// Module ID: 11012
-// Function ID: 11013
+// Module ID: 11008
+// Function ID: 11009
 // Name: SelectionHeader
-// Dependencies: [19, 17, 1372, 1931, 5244, 21, 4189, 712, 5242, 1236, 4600, 8289, 3907, 5220, 7636, 8391, 5215, 3902, 1581, 1474, 5140, 589, 4157, 5243, 5245, 2]
+// Dependencies: [19, 17, 1372, 1931, 5244, 21, 4189, 712, 5242, 1236, 4600, 8286, 3907, 5220, 7633, 8388, 5215, 3902, 1581, 1474, 5140, 589, 4157, 5243, 5245, 2]
 // Exports: default
 
-// Module 11012 (SelectionHeader)
+// Module 11008 (SelectionHeader)
 import useWindowDimensions from "useWindowDimensions";
 import { View } from "AccessibilityAnnouncer";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -123,8 +123,8 @@ function SelectionHeader(renderIcon) {
         }
         onQueryChange(arg0);
       };
-      tmp5Result1 = tmp5(selectedOptions(8289), obj1);
-      const tmp13 = selectedOptions(8289);
+      tmp5Result1 = tmp5(selectedOptions(8286), obj1);
+      const tmp13 = selectedOptions(8286);
     }
   }
   children[1] = tmp5Result1;
@@ -203,11 +203,11 @@ function SelectionOptionItem(item) {
     }
     const obj2 = { checked: null };
     obj2[0] = selected;
-    tmp6Result = tmp6(tmp2(7636).FormCheckbox, obj2);
+    tmp6Result = tmp6(tmp2(7633).FormCheckbox, obj2);
   } else {
     tmp6Result = null;
     if (true === selected) {
-      tmp6Result = tmp6(tmp2(8391).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp6Result = tmp6(tmp2(8388).CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp6Result;

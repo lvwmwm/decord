@@ -1,10 +1,10 @@
-// Module ID: 11717
-// Function ID: 11718
+// Module ID: 11713
+// Function ID: 11714
 // Name: UserProfileConfirmVideoUnstableConnection
 // Dependencies: [19, 21, 4533, 1236, 4533, 2]
 // Exports: default
 
-// Module 11717 (UserProfileConfirmVideoUnstableConnection)
+// Module 11713 (UserProfileConfirmVideoUnstableConnection)
 import "noop";
 import jsxProd from "jsxProd";
 

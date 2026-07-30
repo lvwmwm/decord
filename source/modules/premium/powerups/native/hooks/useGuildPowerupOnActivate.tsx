@@ -1,10 +1,10 @@
-// Module ID: 11625
-// Function ID: 11626
+// Module ID: 11621
+// Function ID: 11622
 // Name: useGuildPowerupOnActivate
-// Dependencies: [19, 1862, 4082, 4077, 11626, 589, 11627, 5515, 11628, 4081, 4157, 11609, 5023, 11629, 4395, 6326, 2]
+// Dependencies: [19, 1862, 4082, 4077, 11622, 589, 11623, 5515, 11624, 4081, 4157, 11605, 5023, 11625, 4395, 6323, 2]
 // Exports: default
 
-// Module 11625 (useGuildPowerupOnActivate)
+// Module 11621 (useGuildPowerupOnActivate)
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleGuildBoostsUpdate from "handleGuildBoostsUpdate";
@@ -71,7 +71,7 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
               obj[1] = analyticsLocations;
               obj[2] = tmp.id;
               obj[3] = function onBack() {
-                return PERK(4395).popWithKey(diff(6326).PREMIUM_KEY);
+                return PERK(4395).popWithKey(diff(6323).PREMIUM_KEY);
               };
               obj[4] = function onPaymentSuccess() {
                 let obj = diff(onToggle[9]);
@@ -91,7 +91,7 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
                 }
               };
               obj[5] = function onPaymentDismiss() {
-                return PERK(4395).popWithKey(diff(6326).PREMIUM_KEY);
+                return PERK(4395).popWithKey(diff(6323).PREMIUM_KEY);
               };
               const result = tmp17Result.launchGuildBoostFlowOrAlert(obj);
             }

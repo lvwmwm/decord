@@ -1,107 +1,15 @@
 // Module ID: 13408
 // Function ID: 13409
-// Dependencies: [13367, 13409, 13413]
+// Dependencies: [13406]
 
 // Module 13408
-let c0 = require;
-c0 = true;
-c0 = false;
 
-export default {
-  includes: (arg0, arg1, arg2) => {
-    const tmp3 = callback(13367)(arg0);
-    const tmp4 = callback(13409)(tmp3);
-    if (0 === tmp4) {
-      let num3 = !callback;
-      if (!callback) {
-        num3 = -1;
-      }
-      return num3;
-    } else {
-      let sum = callback(13413)(arg2, tmp4);
-      if (callback) {
-        if (arg1 != arg1) {
-          if (tmp4 > sum) {
-            while (tmp3[+sum] == tmp3[+sum]) {
-              sum = tmp7 + 1;
-            }
-            return true;
-          }
-        }
-        let num2 = !callback;
-        if (!callback) {
-          num2 = -1;
-        }
-        return num2;
-      }
-      let sum1 = sum;
-      if (tmp4 > sum) {
-        while (true) {
-          let num = callback;
-          let tmp6 = sum1;
-          if (callback) {
-            if (tmp3[sum1] === arg1) {
-              break;
-            }
-          }
-          sum1 = sum1 + 1;
-        }
-        if (!num) {
-          num = sum1;
-        }
-        if (!num) {
-          num = 0;
-        }
-        return num;
-      }
-    }
-  },
-  indexOf: (arg0, arg1, arg2) => {
-    const tmp3 = callback(13367)(arg0);
-    const tmp4 = callback(13409)(tmp3);
-    if (0 === tmp4) {
-      let num3 = !callback;
-      if (!callback) {
-        num3 = -1;
-      }
-      return num3;
-    } else {
-      let sum = callback(13413)(arg2, tmp4);
-      if (callback) {
-        if (arg1 != arg1) {
-          if (tmp4 > sum) {
-            while (tmp3[+sum] == tmp3[+sum]) {
-              sum = tmp7 + 1;
-            }
-            return true;
-          }
-        }
-        let num2 = !callback;
-        if (!callback) {
-          num2 = -1;
-        }
-        return num2;
-      }
-      let sum1 = sum;
-      if (tmp4 > sum) {
-        while (true) {
-          let num = callback;
-          let tmp6 = sum1;
-          if (callback) {
-            if (tmp3[sum1] === arg1) {
-              break;
-            }
-          }
-          sum1 = sum1 + 1;
-        }
-        if (!num) {
-          num = sum1;
-        }
-        if (!num) {
-          num = 0;
-        }
-        return num;
-      }
-    }
+export default (arg0, arg1) => {
+  const tmp = require(13406)(arg0);
+  if (tmp < 0) {
+    let tmp3 = max(tmp + arg1, 0);
+  } else {
+    tmp3 = min(tmp, arg1);
   }
+  return tmp3;
 };

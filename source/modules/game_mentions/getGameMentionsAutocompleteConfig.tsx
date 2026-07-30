@@ -1,14 +1,14 @@
-// Module ID: 9661
-// Function ID: 9662
+// Module ID: 9658
+// Function ID: 9659
 // Name: getGameMentionsAutocompleteConfig
-// Dependencies: [9662, 3862, 2]
+// Dependencies: [9659, 3862, 2]
 // Exports: getGameMentionsAutocompleteConfig
 
-// Module 9661 (getGameMentionsAutocompleteConfig)
+// Module 9658 (getGameMentionsAutocompleteConfig)
 const result = require("set").fileFinishedImporting("modules/game_mentions/getGameMentionsAutocompleteConfig.tsx");
 
 export const getGameMentionsAutocompleteConfig = function getGameMentionsAutocompleteConfig(location) {
-  let obj = require(9662) /* apexExperiment */;
+  let obj = require(9659) /* apexExperiment */;
   obj = { location };
   const gameMentionsExperiment = obj.getGameMentionsExperiment(obj);
   obj = {};

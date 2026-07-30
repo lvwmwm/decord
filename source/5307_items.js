@@ -82,7 +82,7 @@ export default function createNativeWrapper(displayName) {
   }
   if (!str) {
     let tmp3 = typeof displayName === "y";
-    if (typeof displayName !== "init") {
+    if (typeof displayName !== "tee") {
       tmp3 = displayName;
     }
     str = tmp3;

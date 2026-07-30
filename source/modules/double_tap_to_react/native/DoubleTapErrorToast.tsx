@@ -1,10 +1,10 @@
-// Module ID: 7753
-// Function ID: 7754
+// Module ID: 7750
+// Function ID: 7751
 // Name: DoubleTapErrorToastIcon
-// Dependencies: [19, 17, 1877, 21, 4189, 712, 7754, 3890, 4185, 1236, 2]
+// Dependencies: [19, 17, 1877, 21, 4189, 712, 7751, 3890, 4185, 1236, 2]
 // Exports: showDoubleTapErrorToast
 
-// Module 7753 (DoubleTapErrorToastIcon)
+// Module 7750 (DoubleTapErrorToastIcon)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { EmojiDisabledReasons } from "set";
@@ -16,7 +16,7 @@ function DoubleTapErrorToastIcon() {
   let obj = { style: createCacheKey().icon, "aria-hidden": true, children: null };
   obj = { color: null, size: "xs" };
   obj[0] = importDefault(712).colors.WHITE;
-  obj[2] = jsx(require(7754) /* XSmallBoldIcon */.XSmallBoldIcon, { color: null, size: "xs" });
+  obj[2] = jsx(require(7751) /* XSmallBoldIcon */.XSmallBoldIcon, { color: null, size: "xs" });
   return <View color={null} size="xs" />;
 }
 createCacheKey = { icon: null };

@@ -1,10 +1,10 @@
-// Module ID: 13928
-// Function ID: 13929
+// Module ID: 13923
+// Function ID: 13924
 // Name: UserRow
-// Dependencies: [19, 1874, 21, 4189, 5855, 5220, 4028, 1297, 5551, 4185, 1236, 2223, 5554, 2]
+// Dependencies: [19, 1874, 21, 4189, 5853, 5220, 4028, 1297, 5551, 4185, 1236, 2223, 5554, 2]
 // Exports: default
 
-// Module 13928 (UserRow)
+// Module 13923 (UserRow)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
@@ -19,7 +19,7 @@ function UserRow(userActivity) {
   if (null == user) {
     return null;
   } else {
-    let obj = require(5855) /* getEmptyActivityFormatter */;
+    let obj = require(5853) /* getEmptyActivityFormatter */;
     const topUserOrGuildDescription = obj.getTopUserOrGuildDescription(userActivity.dms_sent, userActivity.call_count);
     obj = { label: null, subLabel: null, icon: null };
     obj[0] = importDefault(4028).getName(user);

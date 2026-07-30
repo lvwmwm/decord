@@ -27,7 +27,7 @@ function wrap(__sentry_wrapped__) {
       __sentry_wrapped__ = __sentry_wrapped__.__sentry_wrapped__;
       if (__sentry_wrapped__) {
         let tmp15 = __sentry_wrapped__;
-        if (typeof tmp3 !== "_") {
+        if (typeof tmp3 !== "ZodObject") {
           tmp15 = __sentry_wrapped__;
         }
         return tmp15;

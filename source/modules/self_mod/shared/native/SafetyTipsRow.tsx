@@ -1,10 +1,10 @@
-// Module ID: 7621
-// Function ID: 7622
+// Module ID: 7618
+// Function ID: 7619
 // Name: SafetyTipsRow
 // Dependencies: [19, 17, 21, 4189, 712, 5220, 4185, 2]
 // Exports: default
 
-// Module 7621 (SafetyTipsRow)
+// Module 7618 (SafetyTipsRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,9 +1,9 @@
-// Module ID: 16680
-// Function ID: 16681
+// Module ID: 16674
+// Function ID: 16675
 // Name: AVErrorStreamSendLowFPSDefinition
-// Dependencies: [4202, 4208, 4275, 676, 687, 4253, 16677, 8851, 8852, 16674, 2]
+// Dependencies: [4202, 4208, 4275, 676, 687, 4253, 16671, 8847, 8848, 16668, 2]
 
-// Module 16680 (AVErrorStreamSendLowFPSDefinition)
+// Module 16674 (AVErrorStreamSendLowFPSDefinition)
 import getParticipants from "getParticipants";
 import reset from "reset";
 import initialize from "initialize";
@@ -44,28 +44,28 @@ export const AVErrorStreamSendLowFPSDefinition = {
                 if (null == participant) {
                   return null;
                 } else {
-                  tmp11Result = tmp11(16677);
+                  tmp11Result = tmp11(16671);
                   const accumulatedStatsWithMinDatapoints = tmp11Result.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, currentUserActiveStream.ownerId);
                   if (null == accumulatedStatsWithMinDatapoints) {
                     return null;
                   } else {
-                    const maxQuality = tmp11(8851).getMaxQuality(participant);
+                    const maxQuality = tmp11(8847).getMaxQuality(participant);
                     let tmp9 = null;
                     if (null != maxQuality) {
                       if (accumulatedStatsWithMinDatapoints.short.frameRate < tmp11Result2.getWarningFrameRate(maxQuality.maxFrameRate)) {
                         obj = { type: null };
-                        obj[0] = tmp11(8852).AVError.STREAM_SEND_LOW_FPS;
-                        const tmp11Result3 = tmp11(16674);
+                        obj[0] = tmp11(8848).AVError.STREAM_SEND_LOW_FPS;
+                        const tmp11Result3 = tmp11(16668);
                         const merged = Object.assign(tmp11Result3.getStreamErrorContext(tmp11(4253).encodeStreamKey(currentUserActiveStream)));
                         const items = [obj];
                         let tmp6 = items;
                         const tmp11Result4 = tmp11(4253);
                       } else {
                         tmp6 = null;
-                        const tmp11Result5 = tmp11(16677);
+                        const tmp11Result5 = tmp11(16671);
                       }
                       tmp9 = tmp6;
-                      tmp11Result2 = tmp11(16677);
+                      tmp11Result2 = tmp11(16671);
                     }
                     return tmp9;
                   }

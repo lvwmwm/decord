@@ -1,10 +1,10 @@
-// Module ID: 6143
-// Function ID: 6144
+// Module ID: 6141
+// Function ID: 6142
 // Name: getComboShakeIntensity
-// Dependencies: [5964, 711, 2]
+// Dependencies: [5962, 711, 2]
 // Exports: getComboPercentage, getComboScore, getComboShakeIntensity, getComboStyles
 
-// Module 6143 (getComboShakeIntensity)
+// Module 6141 (getComboShakeIntensity)
 import ConfettiLocation from "ConfettiLocation";
 
 let c3;

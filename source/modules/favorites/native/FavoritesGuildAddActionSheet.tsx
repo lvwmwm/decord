@@ -1,10 +1,10 @@
-// Module ID: 15126
-// Function ID: 15127
+// Module ID: 15120
+// Function ID: 15121
 // Name: handleAddToFavorites
-// Dependencies: [19, 21, 4157, 11881, 15127, 5551, 5242, 1236, 5553, 2969, 9421, 15128, 2]
+// Dependencies: [19, 21, 4157, 11877, 15121, 5551, 5242, 1236, 5553, 2969, 9417, 15122, 2]
 // Exports: openFavoritesGuildAddActionSheet
 
-// Module 15126 (handleAddToFavorites)
+// Module 15120 (handleAddToFavorites)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -14,12 +14,12 @@ const require = arg1;
 function handleAddToFavorites() {
   importDefault(4157).hideActionSheet(FavoritesGuildAddActionSheet);
   const obj = importDefault(4157);
-  const result = require(11881) /* AddFavoriteChannelModal */.openAddFavoriteChannelModal({ source: "favorites_header_add_button_context_menu" });
+  const result = require(11877) /* AddFavoriteChannelModal */.openAddFavoriteChannelModal({ source: "favorites_header_add_button_context_menu" });
 }
 function handleCreateCategory() {
   importDefault(4157).hideActionSheet(FavoritesGuildAddActionSheet);
   const obj = importDefault(4157);
-  const result = require(15127) /* AddFavoriteCategoryActionSheet */.openAddFavoriteCategoryActionSheet();
+  const result = require(15121) /* AddFavoriteCategoryActionSheet */.openAddFavoriteCategoryActionSheet();
 }
 function FavoritesGuildAddActionSheet() {
   let obj = { header: null, children: null };
@@ -32,7 +32,7 @@ function FavoritesGuildAddActionSheet() {
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[0] = intl2.string(importDefault(2969).G9fGlP);
   const obj2 = { IconComponent: null };
-  obj2[0] = require(9421) /* StarOutlineIcon */.StarOutlineIcon;
+  obj2[0] = require(9417) /* StarOutlineIcon */.StarOutlineIcon;
   obj1[1] = callback(require(5553) /* ActionSheetRowIcon */.ActionSheetRow.Icon, obj2);
   obj1[2] = handleAddToFavorites;
   obj[1] = callback(require(5553) /* ActionSheetRowIcon */.ActionSheetRow, obj1);
@@ -42,7 +42,7 @@ function FavoritesGuildAddActionSheet() {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj4[0] = intl3.string(require(1236) /* getSystemLocale */.t["ISN+NM"]);
   const obj5 = { IconComponent: null };
-  obj5[0] = require(15128) /* FolderPlusIcon */.FolderPlusIcon;
+  obj5[0] = require(15122) /* FolderPlusIcon */.FolderPlusIcon;
   obj4[1] = callback(require(5553) /* ActionSheetRowIcon */.ActionSheetRow.Icon, obj5);
   obj4[2] = handleCreateCategory;
   obj3[1] = callback(require(5553) /* ActionSheetRowIcon */.ActionSheetRow, obj4);

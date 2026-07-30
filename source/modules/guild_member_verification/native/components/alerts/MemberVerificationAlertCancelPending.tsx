@@ -1,10 +1,10 @@
-// Module ID: 9155
-// Function ID: 9156
+// Module ID: 9151
+// Function ID: 9152
 // Name: MemberVerificationAlertCancelPending
-// Dependencies: [19, 21, 9156, 9152, 1236, 4600, 2]
+// Dependencies: [19, 21, 9152, 9148, 1236, 4600, 2]
 // Exports: default
 
-// Module 9155 (MemberVerificationAlertCancelPending)
+// Module 9151 (MemberVerificationAlertCancelPending)
 import noop from "noop";
 import jsxProd from "jsxProd";
 
@@ -51,5 +51,5 @@ export default function MemberVerificationAlertCancelPending(guildId) {
   items1[1] = closure_4(guildId(4600).Button, obj);
   obj[0] = items1;
   obj.buttons = closure_6(closure_5, obj);
-  return closure_4(onClose(9152), obj);
+  return closure_4(onClose(9148), obj);
 };

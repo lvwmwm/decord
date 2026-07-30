@@ -1,10 +1,10 @@
-// Module ID: 14146
-// Function ID: 14147
+// Module ID: 14142
+// Function ID: 14143
 // Name: useQuestRewardClaimHandler
-// Dependencies: [32, 19, 17, 4181, 1874, 5985, 5244, 21, 712, 4189, 5036, 10492, 9484, 9489, 8045, 589, 3893, 5808, 10960, 14147, 4600, 10501, 10498, 14118, 10967, 14144, 6682, 1236, 5147, 10966, 10496, 13639, 8445, 8446, 8450, 6013, 6012, 1581, 1474, 4050, 4190, 4604, 2]
+// Dependencies: [32, 19, 17, 4181, 1874, 5983, 5244, 21, 712, 4189, 5036, 10488, 9480, 9485, 8042, 589, 3893, 5808, 10956, 14143, 4600, 10497, 10494, 14114, 10963, 14140, 6679, 1236, 5147, 10962, 10492, 13634, 8442, 8443, 8447, 6011, 6010, 1581, 1474, 4050, 4190, 4604, 2]
 // Exports: default
 
-// Module 14146 (useQuestRewardClaimHandler)
+// Module 14142 (useQuestRewardClaimHandler)
 import apexExperiment from "apexExperiment";
 import useWatchTaskPressHandler from "useWatchTaskPressHandler";
 import { View } from "tinycolor";
@@ -130,10 +130,10 @@ function WatchTaskButton(arg0) {
   let sourceQuestContent;
   let taskDetails;
   ({ questId, sourceQuestContent, taskDetails } = arg0);
-  let obj = require(14147) /* useWatchTaskPressHandler */;
+  let obj = require(14143) /* useWatchTaskPressHandler */;
   obj = { grow: true, size: "lg", onPress: obj.useWatchTaskPressHandler({ questId, sourceQuestContent }), text: null };
   const watchTaskPressHandler = obj.useWatchTaskPressHandler({ questId, sourceQuestContent });
-  obj[3] = require(10501) /* formatWatchRemainingDurationShort */.getVideoQuestWatchCtaText(taskDetails);
+  obj[3] = require(10497) /* formatWatchRemainingDurationShort */.getVideoQuestWatchCtaText(taskDetails);
   return callback2(require(4600) /* Button */.Button, obj);
 }
 function NextButton(arg0) {
@@ -155,11 +155,11 @@ function DefibButton(arg0) {
   let apexExperiment;
   let useWatchTaskPressHandler;
   ({ loading, disabled } = arg0);
-  let obj = require(10966) /* useTrackQuestEventWithImpression */;
+  let obj = require(10962) /* useTrackQuestEventWithImpression */;
   apexExperiment = obj.useTrackQuestContentClickedWithImpression();
-  useWatchTaskPressHandler = require(10496) /* useAdContentImpressionTrackerProps */.useQuestImpressionId();
+  useWatchTaskPressHandler = require(10492) /* useAdContentImpressionTrackerProps */.useQuestImpressionId();
   obj = { grow: true, size: "lg", variant: "secondary", loading, disabled, icon: null, iconPosition: "end", onPress: null, text: null };
-  obj[5] = callback2(require(13639) /* RefreshIcon */.RefreshIcon, {});
+  obj[5] = callback2(require(13634) /* RefreshIcon */.RefreshIcon, {});
   obj[7] = function onPress(arg0) {
     let obj = outer1_0(outer1_2[32]);
     if (obj.shouldMigrateToAdAnalyticsInterface(outer1_0(outer1_2[32]).AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_bottom_sheet_footer")) {
@@ -199,9 +199,9 @@ function ClaimButton(arg0) {
   let apexExperiment;
   let useWatchTaskPressHandler;
   ({ disabled, loading } = arg0);
-  let obj = require(10966) /* useTrackQuestEventWithImpression */;
+  let obj = require(10962) /* useTrackQuestEventWithImpression */;
   apexExperiment = obj.useTrackQuestContentClickedWithImpression();
-  useWatchTaskPressHandler = require(10496) /* useAdContentImpressionTrackerProps */.useQuestImpressionId();
+  useWatchTaskPressHandler = require(10492) /* useAdContentImpressionTrackerProps */.useQuestImpressionId();
   obj = {
     grow: true,
     size: "lg",
@@ -295,12 +295,12 @@ function AnimatedFooter(arg0) {
   class B {
     constructor() {
       obj = { width: null, alignSelf: "flex-end" };
-      obj2 = c0(f109752[39]);
+      obj2 = c0(f109762[39]);
       items = [, ];
       items[0] = width - 2 * outer1_12;
       value = c3.get();
       diff = width - 2.5 * outer1_12;
-      items[1] = diff - c0(f109752[41]).LARGE_BUTTON_HEIGHT;
+      items[1] = diff - c0(f109762[41]).LARGE_BUTTON_HEIGHT;
       obj[0] = obj2.interpolate(value, [0, 1], items);
       return obj;
     }
@@ -354,12 +354,12 @@ export default function QuestBottomSheetFooter(quest) {
   let xboxAndPlaystationAccounts;
   ({ onConnectConsoleNext, onDefib, style, withSafeArea } = quest);
   const tmp = useQuestRewardClaimHandler({ quest, sourceQuestContent });
-  let obj = quest(10492);
+  let obj = quest(10488);
   const questTaskDetails = obj.useQuestTaskDetails(quest);
-  let obj1 = quest(10492);
+  let obj1 = quest(10488);
   const isQuestProgressing = obj1.useIsQuestProgressing(quest);
-  let obj2 = quest(10492);
-  let obj3 = quest(10492);
+  let obj2 = quest(10488);
+  let obj3 = quest(10488);
   xboxAndPlaystationAccounts = obj3.useConnectedAccounts().xboxAndPlaystationAccounts;
   const items = [quest, xboxAndPlaystationAccounts];
   const memo = React.useMemo(() => {
@@ -369,14 +369,14 @@ export default function QuestBottomSheetFooter(quest) {
       return null != closure_1.find((type) => type.type === closure_0);
     });
   }, items);
-  let obj4 = quest(14118);
+  let obj4 = quest(14114);
   const hasWatchVideoOnMobileTasks = obj4.useHasWatchVideoOnMobileTasks(quest.config);
-  let obj5 = quest(14118);
+  let obj5 = quest(14114);
   const mobileActivityQuest = obj5.useMobileActivityQuest(quest);
   ({ isMobileActivityQuest, launchMobileActivity, questApplication } = mobileActivityQuest);
-  let obj6 = quest(10967);
+  let obj6 = quest(10963);
   const primaryCtaCopy = obj6.usePrimaryCtaCopy({ quest, application: questApplication });
-  let obj7 = quest(14147);
+  let obj7 = quest(14143);
   obj = { questId: quest.id, sourceQuestContent, launchMobileActivity };
   const userStatus = quest.userStatus;
   let completedAt;
@@ -389,17 +389,17 @@ export default function QuestBottomSheetFooter(quest) {
     claimedAt = userStatus2.claimedAt;
   }
   let tmp23Result2 = null;
-  if (step !== quest(14144).QuestBottomSheetStep.TASK_SELECT) {
+  if (step !== quest(14140).QuestBottomSheetStep.TASK_SELECT) {
     obj = { onLayout: null, ctaButton: null, backButton: null, style: null, withSafeArea: null };
     obj[0] = quest.onLayout;
-    if (tmp2(14144).QuestBottomSheetStep.CONSOLE_CONNECT === step) {
+    if (tmp2(14140).QuestBottomSheetStep.CONSOLE_CONNECT === step) {
       obj1 = { onPress: null, disabled: null };
       obj1[0] = onConnectConsoleNext;
       obj1[1] = 0 === memo.length;
       let tmp23Result = tmp23(NextButton, obj1);
     } else {
       tmp23Result = null;
-      if (tmp2(14144).QuestBottomSheetStep.TASK_STATUS === step) {
+      if (tmp2(14140).QuestBottomSheetStep.TASK_STATUS === step) {
         if (tmp11) {
           obj2 = { questId: null, onPress: null, disabled: null, loading: null, sourceQuestContent: null };
           obj2[0] = quest.id;
@@ -423,9 +423,9 @@ export default function QuestBottomSheetFooter(quest) {
           obj4 = { grow: true, size: "lg", onPress: null, text: null, icon: null };
           obj4[2] = mobileActivityPressHandler;
           obj4[3] = primaryCtaCopy;
-          obj4[4] = tmp2(10960).getPrimaryCtaIcon(quest);
+          obj4[4] = tmp2(10956).getPrimaryCtaIcon(quest);
           tmp23Result = tmp23(tmp2(4600).Button, obj4);
-          const tmp2Result = tmp2(10960);
+          const tmp2Result = tmp2(10956);
         } else {
           if (callback(obj2.useTaskPlatformScreen(quest, questTaskDetails), 1)[0] === tmp2(5036).TaskPlatformScreen.CONSOLE) {
             if (!isQuestProgressing) {
@@ -454,7 +454,7 @@ export default function QuestBottomSheetFooter(quest) {
       obj7[0] = intl.string(tmp2(1236).t["13/7kX"]);
       obj7[2] = tmp23(tmp2(5147).ArrowLargeLeftIcon, {});
       obj7[3] = onBack;
-      tmp23Result1 = tmp23(tmp2(6682).IconButton, obj7);
+      tmp23Result1 = tmp23(tmp2(6679).IconButton, obj7);
     }
     obj[2] = tmp23Result1;
     obj[3] = style;

@@ -1,10 +1,10 @@
-// Module ID: 10745
-// Function ID: 10746
+// Module ID: 10741
+// Function ID: 10742
 // Name: stopScreenshare
-// Dependencies: [19, 17, 4208, 676, 4169, 6042, 4238, 8831, 4369, 4253, 8838, 8852, 10746, 10741, 1577, 10757, 10758, 10759, 10760, 10752, 589, 5515, 1236, 2]
+// Dependencies: [19, 17, 4208, 676, 4169, 6040, 4238, 8827, 4369, 4253, 8834, 8848, 10742, 10737, 1577, 10753, 10754, 10755, 10756, 10748, 589, 5515, 1236, 2]
 // Exports: default, getOSRequirement, getStreamPressHandler, handleCloseScreenshare, tryStartScreenShare
 
-// Module 10745 (stopScreenshare)
+// Module 10741 (stopScreenshare)
 import apexExperiment from "apexExperiment";
 import reset from "reset";
 import { ApplicationStreamStates } from "ME";
@@ -21,11 +21,11 @@ function stopScreenshare() {
     tmpResult.stopStream(tmpResult.encodeStreamKey(currentUserActiveStream));
   }
   const obj = require(4238) /* inject */;
-  importDefault(8838).setGoLiveSource(null);
+  importDefault(8834).setGoLiveSource(null);
 }
 function startStream() {
   if ("android" === obj.getVoiceEngine().platform) {
-    const result = importDefault(6042).isForegroundServiceRunning((arg0) => {
+    const result = importDefault(6040).isForegroundServiceRunning((arg0) => {
       if (arg0) {
         let tmpResult = tmp(tmp2[6]);
         const voiceEngine = tmpResult.getVoiceEngine();
@@ -35,7 +35,7 @@ function startStream() {
         const result = tmpResult.showScreenshareDisabledAlert();
       }
     });
-    const obj2 = importDefault(6042);
+    const obj2 = importDefault(6040);
   } else {
     BroadcastUploadManager.showPicker();
   }
@@ -46,11 +46,11 @@ let result = require("reset").fileFinishedImporting("modules/video_calls/native/
 
 export default function useScreenshareUtils(arg0) {
   const _require = arg0;
-  let tmp = importDefault(10741)(arg0);
+  let tmp = importDefault(10737)(arg0);
   importDefault = tmp;
   const dependencyMap = tmp2;
-  const showMobileGoLiveUpsell = importDefault(10752).useConfig({ location: "useScreenshareUtils" }).showMobileGoLiveUpsell;
-  let obj = importDefault(10752);
+  const showMobileGoLiveUpsell = importDefault(10748).useConfig({ location: "useScreenshareUtils" }).showMobileGoLiveUpsell;
+  let obj = importDefault(10748);
   const items = [stateFromStores];
   stateFromStores = _require(589).useStateFromStores(items, () => stateFromStores.getCurrentUserActiveStream());
   const analyticsLocations = importDefault(5515)().analyticsLocations;
@@ -164,7 +164,7 @@ export const handleCloseScreenshare = function handleCloseScreenshare() {
     obj.stopStream(require(4253) /* isStreamKey */.encodeStreamKey(currentUserActiveStream));
     const obj2 = require(4253) /* isStreamKey */;
   }
-  importDefault(8838).setGoLiveSource(null);
+  importDefault(8834).setGoLiveSource(null);
 };
 export { stopScreenshare };
 export { startStream };
@@ -215,7 +215,7 @@ export const getStreamPressHandler = function getStreamPressHandler(analyticsLoc
           return obj.showMobileGoLiveActionSheet(closure_1);
         }
       }
-      const S = require(8831) /* _handleToggleVideo */.showScreenshareDisabledAlert;
+      const S = require(8827) /* _handleToggleVideo */.showScreenshareDisabledAlert;
     }
   } else {
     class S {
@@ -234,12 +234,12 @@ export const getStreamPressHandler = function getStreamPressHandler(analyticsLoc
 export const tryStartScreenShare = function tryStartScreenShare(channel) {
   let videoPermission = DCDDeviceManager >= 12;
   if (videoPermission) {
-    videoPermission = require(10741) /* useHasVideoPermission */.getVideoPermission(channel);
-    const obj = require(10741) /* useHasVideoPermission */;
+    videoPermission = require(10737) /* useHasVideoPermission */.getVideoPermission(channel);
+    const obj = require(10737) /* useHasVideoPermission */;
   }
   if (videoPermission) {
     if ("android" === obj2.getVoiceEngine().platform) {
-      let result = importDefault(6042).isForegroundServiceRunning((arg0) => {
+      let result = importDefault(6040).isForegroundServiceRunning((arg0) => {
         if (arg0) {
           let tmpResult = tmp(tmp2[6]);
           const voiceEngine = tmpResult.getVoiceEngine();
@@ -249,7 +249,7 @@ export const tryStartScreenShare = function tryStartScreenShare(channel) {
           const result = tmpResult.showScreenshareDisabledAlert();
         }
       });
-      const obj3 = importDefault(6042);
+      const obj3 = importDefault(6040);
     } else {
       BroadcastUploadManager.showPicker();
     }

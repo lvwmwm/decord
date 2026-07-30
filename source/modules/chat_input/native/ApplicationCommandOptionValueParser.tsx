@@ -1,10 +1,10 @@
-// Module ID: 11171
-// Function ID: 11172
+// Module ID: 11167
+// Function ID: 11168
 // Name: getUsers
-// Dependencies: [19, 5096, 1376, 1932, 1942, 1935, 3826, 1874, 4624, 12, 1351, 4380, 5031, 1906, 5967, 2]
+// Dependencies: [19, 5096, 1376, 1932, 1942, 1935, 3826, 1874, 4624, 12, 1351, 4380, 5031, 1906, 5965, 2]
 // Exports: getRoles, parseOptionValuesForSend, useApplicationCommandOptionValueParser
 
-// Module 11171 (getUsers)
+// Module 11167 (getUsers)
 import noop from "noop";
 import rebuild from "rebuild";
 import { isGuildSelectableChannelType as closure_5 } from "createChannelRecord";
@@ -283,7 +283,7 @@ export const parseOptionValuesForSend = function parseOptionValuesForSend(channe
   } else {
     let obj = {};
     const options = activeCommand.options;
-    const parserState = require(5967) /* rebuild */.createParserState(channel);
+    const parserState = require(5965) /* rebuild */.createParserState(channel);
     const iter = options[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
@@ -306,7 +306,7 @@ export const parseOptionValuesForSend = function parseOptionValuesForSend(channe
                 obj = { type: "text", text: null };
                 let tmp10 = importDefault;
                 let tmp11 = tmp24;
-                let obj2 = importDefault(5967);
+                let obj2 = importDefault(5965);
                 let tmp12 = tmp5;
                 obj[1] = obj2.parse(channel, tmp6[0].text, parserState).content;
                 let items = [obj];

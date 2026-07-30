@@ -1,10 +1,10 @@
-// Module ID: 10393
-// Function ID: 10394
+// Module ID: 10389
+// Function ID: 10390
 // Name: getEmojiText
 // Dependencies: [2]
 // Exports: default
 
-// Module 10393 (getEmojiText)
+// Module 10389 (getEmojiText)
 const result = require("set").fileFinishedImporting("modules/emojis/utils/getEmojiText.tsx");
 
 export default function getEmojiText(id) {

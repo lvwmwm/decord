@@ -1,10 +1,10 @@
-// Module ID: 8274
-// Function ID: 8275
+// Module ID: 8271
+// Function ID: 8272
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 676, 1906, 506, 8275, 4035, 1236, 2]
+// Dependencies: [5, 32, 19, 676, 1906, 506, 8272, 4035, 1236, 2]
 // Exports: default
 
-// Module 8274 (useCreateChannelSubmit)
+// Module 8271 (useCreateChannelSubmit)
 import fromString from "fromString";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -82,7 +82,7 @@ export default function useCreateChannelSubmit(arg0) {
               let guild_id;
               c7 = 1;
               body = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {

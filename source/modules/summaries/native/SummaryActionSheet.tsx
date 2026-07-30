@@ -1,10 +1,10 @@
-// Module ID: 10932
-// Function ID: 10933
+// Module ID: 10928
+// Function ID: 10929
 // Name: SummaryActionSheet
-// Dependencies: [19, 17, 1372, 4407, 9505, 676, 21, 4157, 10932, 1959, 4189, 712, 6048, 9520, 3889, 1236, 4372, 8196, 6076, 6088, 4040, 11, 1222, 5243, 5177, 10933, 4185, 10935, 10936, 10122, 7732, 2]
+// Dependencies: [19, 17, 1372, 4407, 9501, 676, 21, 4157, 10928, 1959, 4189, 712, 6046, 9516, 3889, 1236, 4372, 8193, 6074, 6086, 4040, 11, 1222, 5243, 5177, 10929, 4185, 10931, 10932, 10118, 7729, 2]
 // Exports: default, openSummaryDividerActionSheet
 
-// Module 10932 (SummaryActionSheet)
+// Module 10928 (SummaryActionSheet)
 import dispatcher from "dispatcher";
 import { View } from "showShareActionSheet";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -195,7 +195,7 @@ export const openSummaryDividerActionSheet = function openSummaryDividerActionSh
     const _HermesInternal = HermesInternal;
     obj = { summary: null };
     obj[0] = findSummaryResult;
-    obj.openLazy(require(1959) /* asyncRequireImpl */(10932, dependencyMap.paths), "SummaryDivider" + summaryId, obj);
-    const tmp5 = require(1959) /* asyncRequireImpl */(10932, dependencyMap.paths);
+    obj.openLazy(require(1959) /* asyncRequireImpl */(10928, dependencyMap.paths), "SummaryDivider" + summaryId, obj);
+    const tmp5 = require(1959) /* asyncRequireImpl */(10928, dependencyMap.paths);
   }
 };

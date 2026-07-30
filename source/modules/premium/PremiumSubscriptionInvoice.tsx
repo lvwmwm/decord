@@ -1,10 +1,10 @@
-// Module ID: 6547
-// Function ID: 6548
+// Module ID: 6544
+// Function ID: 6545
 // Name: createSubscriptionInvoicePreview
 // Dependencies: [109, 32, 5, 19, 3844, 676, 3835, 530, 709, 4088, 38, 4427, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchGenericInvoicePreview, useFetchSubscriptionGiftInvoicePreview, useFetchSubscriptionInvoicePreview, useGetSubscriptionInvoice
 
-// Module 6547 (createSubscriptionInvoicePreview)
+// Module 6544 (createSubscriptionInvoicePreview)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
@@ -92,7 +92,7 @@ function _createSubscriptionInvoicePreview() {
               let createFromServer;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -267,7 +267,7 @@ function _updateSubscriptionInvoicePreview() {
               let closure_12;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -440,7 +440,7 @@ function _createOneTimePurchaseInvoicePreview() {
               let body;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -575,7 +575,7 @@ function _getSubscriptionInvoice() {
               body = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

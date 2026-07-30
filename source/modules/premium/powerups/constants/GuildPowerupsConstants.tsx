@@ -1,13 +1,13 @@
 // Module ID: 4077
 // Function ID: 4078
 // Name: BoostedGuildTiers
-// Dependencies: [1876, 4078, 676, 4080, 1358, 4081, 1236, 4116, 4117, 4118, 4119, 4100, 2]
+// Dependencies: [1876, 676, 4078, 4080, 1358, 4081, 1236, 4116, 4117, 4118, 4119, 4100, 2]
 // Exports: GUILD_FEATURE_TO_PERK
 
 // Module 4077 (BoostedGuildTiers)
 import { BoostedGuildFeatures } from "GuildFeatures";
 import ME from "ME";
-import set from "ME";
+import set from "str11";
 
 let TIER_1;
 let TIER_12;

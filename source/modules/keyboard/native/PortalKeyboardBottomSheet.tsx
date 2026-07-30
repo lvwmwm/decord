@@ -1,9 +1,9 @@
-// Module ID: 11253
-// Function ID: 11254
+// Module ID: 11249
+// Function ID: 11250
 // Name: PortalKeyboardBottomSheetHeader
-// Dependencies: [32, 19, 17, 9568, 21, 500, 4189, 712, 8236, 4586, 4050, 1348, 11254, 4534, 5498, 589, 5245, 4158, 10253, 1844, 4616, 3893, 1581, 1474, 4060, 4036, 3901, 4583, 9352, 5501, 2]
+// Dependencies: [32, 19, 17, 9565, 21, 500, 4189, 712, 8233, 4586, 4050, 1348, 11250, 4534, 5498, 589, 5245, 4158, 10249, 1844, 4616, 3893, 1581, 1474, 4060, 4036, 3901, 4583, 9348, 5501, 2]
 
-// Module 11253 (PortalKeyboardBottomSheetHeader)
+// Module 11249 (PortalKeyboardBottomSheetHeader)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "dismissGlobalKeyboard";
 import get_ActivityIndicator from "HapticFeedbackTypes";
@@ -29,7 +29,7 @@ function PortalKeyboardBottomSheetHeader(arg0) {
   if (obj.useIsScreenReaderEnabled()) {
     prop = tmp.headerContainerScreenReaderEnabled;
   }
-  obj = { style: items, children: tmp4(require(8236) /* TwinButtons */.ActionSheetDragHandle, { onPress: handleCollapse }) };
+  obj = { style: items, children: tmp4(require(8233) /* TwinButtons */.ActionSheetDragHandle, { onPress: handleCollapse }) };
   items[1] = prop;
   items[2] = style;
   return closure_7(closure_5, obj);

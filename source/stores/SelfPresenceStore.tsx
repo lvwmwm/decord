@@ -1,7 +1,7 @@
 // Module ID: 4867
 // Function ID: 4868
 // Name: filterPlayingActivities
-// Dependencies: [4868, 1340, 4221, 5000, 4224, 10472, 4276, 4204, 676, 4233, 3862, 1384, 9079, 659, 12, 589, 709, 2]
+// Dependencies: [4868, 1340, 4221, 5000, 4224, 10468, 4276, 4204, 676, 4233, 3862, 1384, 9075, 659, 12, 589, 709, 2]
 
 // Module 4867 (filterPlayingActivities)
 import upsertAccount from "upsertAccount";
@@ -65,7 +65,7 @@ function shouldShowActivity(flags) {
   } else {
     const type = flags.type;
     if (constants2.LISTENING === type) {
-      if (importDefault(9079)(flags)) {
+      if (importDefault(9075)(flags)) {
         let shouldShowActivityResult = upsertAccount.shouldShowActivity();
       } else {
         shouldShowActivityResult = null != flags.application_id;

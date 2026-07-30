@@ -1,10 +1,10 @@
-// Module ID: 7711
-// Function ID: 7712
+// Module ID: 7708
+// Function ID: 7709
 // Name: TextElement
 // Dependencies: [19, 17, 21, 4189, 4619, 4185, 2]
 // Exports: default
 
-// Module 7711 (TextElement)
+// Module 7708 (TextElement)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

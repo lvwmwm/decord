@@ -1,10 +1,10 @@
-// Module ID: 16380
-// Function ID: 16381
+// Module ID: 16374
+// Function ID: 16375
 // Name: makeRequest
-// Dependencies: [16370, 676, 530, 709, 2]
+// Dependencies: [16364, 676, 530, 709, 2]
 // Exports: fetchLogs, fetchNextLogPage, filterByAction, filterByTargetId, filterByUserId
 
-// Module 16380 (makeRequest)
+// Module 16374 (makeRequest)
 import AuditLogActions from "AuditLogActions";
 import ME from "ME";
 
@@ -181,7 +181,7 @@ export const filterByTargetId = function filterByTargetId(arg0, arg1) {
       if (!tmp5) {
         if (null != arg1) {
           importDefault(709).dispatch({ type: "AUDIT_LOG_FETCH_START" });
-          obj = { userId: null, action: "Array", targetId: 2086900762484230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+          obj = { userId: null, action: "Array", targetId: -1 };
           obj[2] = arg0;
           const tmp10Result = importDefault(709);
           nextPromise = makeRequest(arg1, obj).then((body) => {

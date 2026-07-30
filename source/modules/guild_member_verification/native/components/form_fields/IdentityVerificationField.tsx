@@ -1,10 +1,10 @@
-// Module ID: 9176
-// Function ID: 9177
+// Module ID: 9172
+// Function ID: 9173
 // Name: BaseIdentityVerificationField
-// Dependencies: [19, 17, 21, 4189, 712, 4185, 4141, 4600, 1236, 4009, 9177, 4395, 9232, 1959, 9235, 9262, 9208, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4185, 4141, 4600, 1236, 4009, 9173, 4395, 9228, 1959, 9231, 9258, 9204, 2]
 // Exports: default
 
-// Module 9176 (BaseIdentityVerificationField)
+// Module 9172 (BaseIdentityVerificationField)
 import "noop";
 import { View } from "set";
 import jsxProd from "jsxProd";
@@ -89,11 +89,11 @@ export default function IdentityVerificationField(arg0) {
       stringResult1 = intl.string(tmp(1236).t.mhv8BM);
     }
     if (tmp(4009).UserVerificationFieldPlatforms.EMAIL === platform) {
-      let EnvelopeIcon = tmp(9262).EnvelopeIcon;
+      let EnvelopeIcon = tmp(9258).EnvelopeIcon;
     } else if (tmp(4009).UserVerificationFieldPlatforms.PHONE === platform) {
-      EnvelopeIcon = tmp(9208).MobilePhoneIcon;
+      EnvelopeIcon = tmp(9204).MobilePhoneIcon;
     } else {
-      EnvelopeIcon = tmp(9262).EnvelopeIcon;
+      EnvelopeIcon = tmp(9258).EnvelopeIcon;
     }
     if (tmp(4009).UserVerificationFieldPlatforms.EMAIL === platform) {
       let fn = () => {

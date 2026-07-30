@@ -1,10 +1,10 @@
-// Module ID: 6002
-// Function ID: 6003
+// Module ID: 6000
+// Function ID: 6001
 // Name: trackQuestEvent
-// Dependencies: [5, 6003, 706, 5985, 676, 5721, 6005, 5983, 6006, 6008, 6012, 6013, 4384, 698, 6014, 5962, 500, 514, 6019, 5036, 2]
+// Dependencies: [5, 6001, 706, 5983, 676, 5721, 6003, 5981, 6004, 6006, 6010, 6011, 4384, 698, 6012, 5960, 500, 514, 6017, 5036, 2]
 // Exports: trackAdContentAppStoreOverlayEvent, trackAdContentClicked, trackAppStoreOverlayEvent, trackBountyAutoScrollDismissed, trackBountyCarouselEmptyStateViewed, trackBountyCarouselScroll, trackBountyVerticalScroll, trackQuestBarOrDockModeChange, trackQuestContentClicked, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
 
-// Module 6002 (trackQuestEvent)
+// Module 6000 (trackQuestEvent)
 import trackHeartbeat from "trackHeartbeat";
 import initialize from "initialize";
 import refreshSourceMapCookie from "refreshSourceMapCookie";
@@ -28,23 +28,23 @@ function trackQuestEvent(sourceQuestContent) {
   if (null != value) {
     let obj = { quest_id: null, quest_type: null, application_ids: null, quest_status: null };
     obj[0] = value.id;
-    obj[1] = require(6006) /* isSponsoredPlayQuest */.getQuestType(value.config);
-    const obj12 = require(6006) /* isSponsoredPlayQuest */;
-    let allApplicationIds = require(6008) /* getApplicationIdsByTaskTypes */.getAllApplicationIds(value);
+    obj[1] = require(6004) /* isSponsoredPlayQuest */.getQuestType(value.config);
+    const obj12 = require(6004) /* isSponsoredPlayQuest */;
+    let allApplicationIds = require(6006) /* getApplicationIdsByTaskTypes */.getAllApplicationIds(value);
     if (allApplicationIds == null) {
       allApplicationIds = [];
     }
     obj[2] = allApplicationIds;
-    let tmp24Result = tmp24(6012);
+    let tmp24Result = tmp24(6010);
     obj[3] = tmp24Result.getQuestStatus(value);
     const id = value.id;
-    tmp24Result = tmp24(6005);
+    tmp24Result = tmp24(6003);
     let uuid = tmp24Result.getOrRefreshAdSession(shouldExtendSession).uuid;
-    const obj13 = require(6008) /* getApplicationIdsByTaskTypes */;
-    const adDecisionData = require(5983) /* getQuestDeliveryDataForPlacement */.getAdDecisionData(id, sourceQuestContent);
+    const obj13 = require(6006) /* getApplicationIdsByTaskTypes */;
+    const adDecisionData = require(5981) /* getQuestDeliveryDataForPlacement */.getAdDecisionData(id, sourceQuestContent);
     obj = { client_ad_session_id: null, billing_session_id: null, ad_content_id: null };
     obj[0] = uuid;
-    const tmp24Result1 = require(5983) /* getQuestDeliveryDataForPlacement */;
+    const tmp24Result1 = require(5981) /* getQuestDeliveryDataForPlacement */;
     if (!tmp24Result2.isBillableQuestContent(sourceQuestContent)) {
       const activeSessionUnsafe = tmp24(5721).getActiveSessionUnsafe();
       uuid = undefined;
@@ -61,7 +61,7 @@ function trackQuestEvent(sourceQuestContent) {
     const merged = Object.assign(adDecisionData);
     let QUEST = adDecisionData.creative_type;
     if (QUEST == null) {
-      QUEST = tmp24(6013).AdCreativeType.QUEST;
+      QUEST = tmp24(6011).AdCreativeType.QUEST;
     }
     const obj1 = {};
     obj.creative_type = QUEST;
@@ -86,7 +86,7 @@ function trackQuestEvent(sourceQuestContent) {
         }
       }
     }
-    tmp24Result2 = require(5983) /* getQuestDeliveryDataForPlacement */;
+    tmp24Result2 = require(5981) /* getQuestDeliveryDataForPlacement */;
   }
 }
 function trackAdContentEvent(sourceQuestContent) {
@@ -105,12 +105,12 @@ function trackAdContentEvent(sourceQuestContent) {
   if (null != relatedQuestId) {
     quest = quest.getQuest(relatedQuestId);
   }
-  let obj = require(6005) /* getOrRefreshAdSession */;
+  let obj = require(6003) /* getOrRefreshAdSession */;
   let uuid = obj.getOrRefreshAdSession(shouldExtendSession).uuid;
-  let obj1 = require(5983) /* getQuestDeliveryDataForPlacement */;
+  let obj1 = require(5981) /* getQuestDeliveryDataForPlacement */;
   const adDecisionData = obj1.getAdDecisionData(adContentId, sourceQuestContent);
   obj = { client_ad_session_id: uuid, billing_session_id: null, ad_content_id: null };
-  let obj3 = require(5983) /* getQuestDeliveryDataForPlacement */;
+  let obj3 = require(5981) /* getQuestDeliveryDataForPlacement */;
   if (!obj3.isBillableQuestContent(sourceQuestContent)) {
     let tmp3Result = tmp3(5721);
     const activeSessionUnsafe = tmp3Result.getActiveSessionUnsafe();
@@ -131,13 +131,13 @@ function trackAdContentEvent(sourceQuestContent) {
   }
   obj = { creative_type: adCreativeType };
   const merged1 = Object.assign(obj);
-  tmp3Result = tmp3(5983);
+  tmp3Result = tmp3(5981);
   let adMetadataSealed = tmp3Result.getAdMetadataSealed(sourceQuestContent, adContentId);
   if (adMetadataSealed == null) {
     adMetadataSealed = null;
   }
   obj.metadata_sealed = adMetadataSealed;
-  let adTrafficMetadataSealed = require(5983) /* getQuestDeliveryDataForPlacement */.getAdTrafficMetadataSealed(sourceQuestContent, undefined, adContentId);
+  let adTrafficMetadataSealed = require(5981) /* getQuestDeliveryDataForPlacement */.getAdTrafficMetadataSealed(sourceQuestContent, undefined, adContentId);
   if (adTrafficMetadataSealed == null) {
     adTrafficMetadataSealed = null;
   }
@@ -147,8 +147,8 @@ function trackAdContentEvent(sourceQuestContent) {
     obj1[0] = relatedQuestId;
     let questStatus = null;
     if (null != quest) {
-      questStatus = tmp3(6012).getQuestStatus(quest);
-      const tmp3Result2 = tmp3(6012);
+      questStatus = tmp3(6010).getQuestStatus(quest);
+      const tmp3Result2 = tmp3(6010);
     }
     obj1[1] = questStatus;
     let obj2 = obj1;
@@ -237,7 +237,7 @@ function _getCommonClickEventProperties() {
               let initializeState;
               c4 = 1;
               c5 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -249,11 +249,11 @@ function _getCommonClickEventProperties() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj5 = callback(6014);
+              let obj5 = callback(6012);
               c4 = 2;
               c5 = 1;
               let obj2 = { value: null, done: false };
-              obj2[0] = obj5.getAdUser(callback(6012).getQuestContentName(callback));
+              obj2[0] = obj5.getAdUser(callback(6010).getQuestContentName(callback));
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -267,8 +267,8 @@ function _getCommonClickEventProperties() {
           } else {
             initializeState = arg1;
             const obj4 = {};
-            const merged = Object.assign(callback(6012).getContentProperties(callback, callback2, dependencyMap));
-            const merged1 = Object.assign(callback2(5962)());
+            const merged = Object.assign(callback(6010).getContentProperties(callback, callback2, dependencyMap));
+            const merged1 = Object.assign(callback2(5960)());
             obj4.cta_name = c3;
             obj4.impression_id = c4;
             let advertisingId = null;
@@ -375,7 +375,7 @@ function _trackQuestContentClicked() {
               adTrafficMetadataSealed = undefined;
               adTrafficMetadataSealed = 1;
               c10 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -387,7 +387,7 @@ function _trackQuestContentClicked() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              adTrafficMetadataSealed = callback(5983).getAdTrafficMetadataSealed(callback2, callback);
+              adTrafficMetadataSealed = callback(5981).getAdTrafficMetadataSealed(callback2, callback);
               callback2 = adTrafficMetadataSealed;
               obj2 = { questId: callback, event: constants.QUEST_CONTENT_CLICKED };
               initialize = {};
@@ -414,7 +414,7 @@ function _trackQuestContentClicked() {
             return obj5;
           } else {
             const merged = Object.assign(arg1);
-            const adMetadataSealed = callback(5983).getAdMetadataSealed(callback2);
+            const adMetadataSealed = callback(5981).getAdMetadataSealed(callback2);
             c1 = adMetadataSealed;
             if (adMetadataSealed == null) {
               c1 = null;
@@ -425,7 +425,7 @@ function _trackQuestContentClicked() {
               dependencyMap = null;
             }
             initialize.traffic_metadata_sealed = dependencyMap;
-            obj = callback(6019);
+            obj = callback(6017);
             const currentQuestHomeSearchSession = obj.getCurrentQuestHomeSearchSession();
             let uuid;
             if (currentQuestHomeSearchSession != null) {
@@ -438,7 +438,7 @@ function _trackQuestContentClicked() {
             initialize.search_session_id = c3;
             obj2.properties = initialize;
             obj2.trackGuildAndChannelMetadata = constants;
-            obj1 = callback(5983);
+            obj1 = callback(5981);
             obj2.shouldExtendSession = obj1.isBillableQuestContent(c1);
             obj2.sourceQuestContent = callback2;
             callback2(obj2);
@@ -521,7 +521,7 @@ function _trackAdContentClicked() {
               ({ adContentId: c0, relatedQuestId: obj2, adCreativeType: closure_2, questContent: c3, questContentCTA: c4, questContentPosition: c5, questContentRowIndex: c6, impressionId: c7, trackGuildAndChannelMetadata: c8, sourceQuestContent: c9 } = callback);
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -561,7 +561,7 @@ function _trackAdContentClicked() {
           } else {
             obj2.properties = properties;
             obj2.trackGuildAndChannelMetadata = c8;
-            obj = callback(5983);
+            obj = callback(5981);
             obj2.shouldExtendSession = obj.isBillableQuestContent(c3);
             obj2.sourceQuestContent = c9;
             dependencyMap(obj2);
@@ -592,19 +592,19 @@ let set = new Set(items);
 const result = set.fileFinishedImporting("modules/quests/lib/analytics/AnalyticsActions.tsx");
 
 export { trackQuestEvent };
-export const trackAppStoreOverlayEvent = function trackAppStoreOverlayEvent(f84949, closure_1, arg2, event, time_spent_ms) {
+export const trackAppStoreOverlayEvent = function trackAppStoreOverlayEvent(f84971, closure_1, arg2, event, time_spent_ms) {
   let obj = { content_name: null, cta_name: null, impression_id: null, source_content_name: null, app_id: null, content_position: null };
-  obj[0] = require(6012) /* getQuestContentName */.getQuestContentName(closure_1.content);
+  obj[0] = require(6010) /* getQuestContentName */.getQuestContentName(closure_1.content);
   ({ ctaContent: obj[1], impressionId: obj[2] } = closure_1);
-  const obj2 = require(6012) /* getQuestContentName */;
-  obj[3] = require(6012) /* getQuestContentName */.getQuestContentName(closure_1.sourceQuestContent);
+  const obj2 = require(6010) /* getQuestContentName */;
+  obj[3] = require(6010) /* getQuestContentName */.getQuestContentName(closure_1.sourceQuestContent);
   obj[4] = arg2;
   obj[5] = closure_1.position;
   let tmp = event === AnalyticEvents.QUEST_APP_STORE_OVERLAY_CLOSED || event === AnalyticEvents.QUEST_APP_STORE_OVERLAY_RETURNED;
   if (tmp) {
     tmp = undefined !== time_spent_ms;
   }
-  obj = { questId: f84949.id, event, properties: null, sourceQuestContent: null };
+  obj = { questId: f84971.id, event, properties: null, sourceQuestContent: null };
   let tmp3 = obj;
   if (tmp) {
     obj = {};
@@ -621,10 +621,10 @@ export const trackAdContentAppStoreOverlayEvent = function trackAdContentAppStor
   let adCreativeType;
   let obj = { content_name: null, cta_name: null, impression_id: null, source_content_name: null, app_id: null, content_position: null };
   ({ adContentId, adCreativeType } = arg0);
-  obj[0] = require(6012) /* getQuestContentName */.getQuestContentName(closure_2.content);
+  obj[0] = require(6010) /* getQuestContentName */.getQuestContentName(closure_2.content);
   ({ ctaContent: obj[1], impressionId: obj[2] } = closure_2);
-  const obj2 = require(6012) /* getQuestContentName */;
-  obj[3] = require(6012) /* getQuestContentName */.getQuestContentName(closure_2.sourceQuestContent);
+  const obj2 = require(6010) /* getQuestContentName */;
+  obj[3] = require(6010) /* getQuestContentName */.getQuestContentName(closure_2.sourceQuestContent);
   obj[4] = arg2;
   obj[5] = closure_2.position;
   obj = { adContentId, adCreativeType, event, properties: null, sourceQuestContent: null };
@@ -671,7 +671,7 @@ export const trackBountyCarouselScroll = function trackBountyCarouselScroll(resu
   let scrollingType;
   const questContent = result.questContent;
   ({ scrollingType, scrollingDirection, carouselPosition } = result);
-  let obj = require(6005) /* getOrRefreshAdSession */;
+  let obj = require(6003) /* getOrRefreshAdSession */;
   let uuid = obj.getOrRefreshAdSession().uuid;
   obj = { client_ad_session_id: uuid, billing_session_id: null, scrolling_type: null, scrolling_direction: null, carousel_position: null, content_name: null };
   const obj2 = importDefault(698);
@@ -690,7 +690,7 @@ export const trackBountyCarouselScroll = function trackBountyCarouselScroll(resu
   obj[2] = scrollingType;
   obj[3] = scrollingDirection;
   obj[4] = carouselPosition;
-  tmpResult = tmp(6012);
+  tmpResult = tmp(6010);
   obj[5] = tmpResult.getQuestContentName(questContent);
   obj2.track(AnalyticEvents.BOUNTY_CAROUSEL_SCROLL, obj);
 };
@@ -709,7 +709,7 @@ export const trackQuestHomeOrbShopCarouselScroll = function trackQuestHomeOrbSho
   importDefault(698).track(AnalyticEvents.QUEST_HOME_ORB_SHOP_CAROUSEL_SCROLL, { scrolling_direction: scrollingDirection, carousel_position: carouselPosition, carousel_size: carouselSize });
 };
 export const trackBountyCarouselEmptyStateViewed = function trackBountyCarouselEmptyStateViewed(arg0) {
-  let obj = require(6005) /* getOrRefreshAdSession */;
+  let obj = require(6003) /* getOrRefreshAdSession */;
   let uuid = obj.getOrRefreshAdSession().uuid;
   obj = { client_ad_session_id: uuid, billing_session_id: null, reason: null };
   const obj2 = importDefault(698);
@@ -736,7 +736,7 @@ export const trackBountyVerticalScroll = function trackBountyVerticalScroll(resu
   let timeWatchedPreScrollMs;
   let verticalScrollingPosition;
   ({ scrollingType, scrollingDirection, verticalScrollingPosition, scrollSessionId, timeWatchedPreScrollMs } = result);
-  let obj = require(6005) /* getOrRefreshAdSession */;
+  let obj = require(6003) /* getOrRefreshAdSession */;
   obj = { client_ad_session_id: obj.getOrRefreshAdSession().uuid, billing_session_id: null, scrolling_type: null, scrolling_direction: null, vertical_scrolling_position: null, scroll_session_id: null, time_watched_pre_scroll_ms: null };
   const obj2 = importDefault(698);
   const activeSessionUnsafe = require(5721) /* trackHeartbeat */.getActiveSessionUnsafe();
@@ -759,7 +759,7 @@ export const trackBountyAutoScrollDismissed = function trackBountyAutoScrollDism
   let scrollSessionId;
   let verticalScrollingPosition;
   ({ verticalScrollingPosition, scrollSessionId } = arg0);
-  let obj = require(6005) /* getOrRefreshAdSession */;
+  let obj = require(6003) /* getOrRefreshAdSession */;
   obj = { client_ad_session_id: obj.getOrRefreshAdSession().uuid, billing_session_id: null, vertical_scrolling_position: null, scroll_session_id: null };
   const obj2 = importDefault(698);
   const activeSessionUnsafe = require(5721) /* trackHeartbeat */.getActiveSessionUnsafe();
@@ -784,7 +784,7 @@ export const trackQuestHomeCarouselScroll = function trackQuestHomeCarouselScrol
   let scrollingType;
   questContent = questContent.questContent;
   ({ scrollingType, scrollingDirection, scrollWindowStartIndex, scrollWindowEndIndex, scrollWindowSize, carouselSize } = questContent);
-  let obj = require(6005) /* getOrRefreshAdSession */;
+  let obj = require(6003) /* getOrRefreshAdSession */;
   let uuid = obj.getOrRefreshAdSession().uuid;
   obj = { scrolling_type: scrollingType, client_ad_session_id: uuid, billing_session_id: null, scrolling_direction: null, scroll_window_start_index: null, scroll_window_end_index: null, scroll_window_size: null, content_name: null, content_id: null, carousel_size: null };
   const obj2 = importDefault(698);
@@ -804,14 +804,14 @@ export const trackQuestHomeCarouselScroll = function trackQuestHomeCarouselScrol
   obj[4] = scrollWindowStartIndex;
   obj[5] = scrollWindowEndIndex;
   obj[6] = scrollWindowSize;
-  tmpResult = tmp(6012);
+  tmpResult = tmp(6010);
   obj[7] = tmpResult.getQuestContentName(questContent);
   obj[8] = questContent;
   obj[9] = carouselSize;
   obj2.track(AnalyticEvents.QUEST_HOME_CAROUSEL_SCROLL, obj);
 };
 export const trackQuestHomeSearchEntered = function trackQuestHomeSearchEntered(searchSessionId) {
-  let obj = require(6005) /* getOrRefreshAdSession */;
+  let obj = require(6003) /* getOrRefreshAdSession */;
   obj = { client_ad_session_id: obj.getOrRefreshAdSession().uuid, billing_session_id: null, search_session_id: null };
   const obj2 = importDefault(698);
   const activeSessionUnsafe = require(5721) /* trackHeartbeat */.getActiveSessionUnsafe();
@@ -830,7 +830,7 @@ export const trackQuestHomeSearchClosed = function trackQuestHomeSearchClosed(ar
   let searchSessionDurationMs;
   let searchSessionId;
   ({ searchSessionId, searchSessionDurationMs } = arg0);
-  let obj = require(6005) /* getOrRefreshAdSession */;
+  let obj = require(6003) /* getOrRefreshAdSession */;
   obj = { client_ad_session_id: obj.getOrRefreshAdSession().uuid, billing_session_id: null, search_session_id: null, search_session_duration_ms: null };
   const obj2 = importDefault(698);
   const activeSessionUnsafe = require(5721) /* trackHeartbeat */.getActiveSessionUnsafe();
@@ -853,7 +853,7 @@ export const trackQuestHomeSearchQuerySubmitted = function trackQuestHomeSearchQ
   let searchQueryLength;
   let searchSessionId;
   ({ searchSessionId, searchQuery, searchQueryLength, resultsCount, hasResults } = arg0);
-  let obj = require(6005) /* getOrRefreshAdSession */;
+  let obj = require(6003) /* getOrRefreshAdSession */;
   obj = { client_ad_session_id: obj.getOrRefreshAdSession().uuid, billing_session_id: null, search_session_id: null, search_query: null, search_query_length: null, results_count: null, has_results: null };
   const obj2 = importDefault(698);
   const activeSessionUnsafe = require(5721) /* trackHeartbeat */.getActiveSessionUnsafe();
@@ -879,7 +879,7 @@ export const trackQuestBarOrDockModeChange = function trackQuestBarOrDockModeCha
   let questId;
   let sourceQuestContent;
   ({ questContent, sourceQuestContent, questId, mode, prevMode } = arg0);
-  let obj = require(6012) /* getQuestContentName */;
+  let obj = require(6010) /* getQuestContentName */;
   const contentProperties = obj.getContentProperties(questContent);
   obj = { questId, event: AnalyticEvents.QUEST_BAR_MODE_CHANGED, properties: obj, sourceQuestContent };
   obj = { content_id: contentProperties.content_id, content_name: contentProperties.content_name, mode, previous_mode: prevMode };

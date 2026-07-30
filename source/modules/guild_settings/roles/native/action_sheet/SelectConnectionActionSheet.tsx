@@ -1,10 +1,10 @@
-// Module ID: 16478
-// Function ID: 16479
+// Module ID: 16472
+// Function ID: 16473
 // Name: IdentityApplicationRow
-// Dependencies: [32, 19, 17, 21, 10007, 5220, 1297, 4125, 5242, 1236, 5759, 1416, 4035, 4157, 8224, 5551, 8755, 5245, 5177, 5554, 2]
+// Dependencies: [32, 19, 17, 21, 10003, 5220, 1297, 4125, 5242, 1236, 5759, 1416, 4035, 4157, 8221, 5551, 8751, 5245, 5177, 5554, 2]
 // Exports: default
 
-// Module 16478 (IdentityApplicationRow)
+// Module 16472 (IdentityApplicationRow)
 import _slicedToArray from "_slicedToArray";
 import TableRowGroupTitle from "TableRowGroupTitle";
 import { View } from "BottomSheetModal";
@@ -17,7 +17,7 @@ function IdentityApplicationRow(arg0) {
   let applicationId;
   let onPress;
   ({ applicationId, onPress } = arg0);
-  let obj = require(10007) /* request */;
+  let obj = require(10003) /* request */;
   const getOrFetchApplicationBatched = obj.useGetOrFetchApplicationBatched(applicationId);
   if (null == getOrFetchApplicationBatched) {
     return null;
@@ -161,7 +161,7 @@ export default function SelectConnectionActionSheet(arg0) {
     const intl4 = tmp3(1236).intl;
     items.push(intl4.string(tmp3(1236).t.y3ZnnU));
   }
-  tmp3Result = tmp3(8224);
+  tmp3Result = tmp3(8221);
   obj = { pageWidth: 0, defaultIndex: first, onSetActiveIndex: tmp5[1], items: items.map((id) => ({ id, label: id, page: null })) };
   const segmentedControlState = tmp3Result.useSegmentedControlState(obj);
   if (1 === first) {
@@ -180,7 +180,7 @@ export default function SelectConnectionActionSheet(arg0) {
     const obj1 = { children: null };
     const obj2 = { state: null };
     obj2[0] = segmentedControlState;
-    obj1[0] = tmp2(tmp3(8755).SegmentedControl, obj2);
+    obj1[0] = tmp2(tmp3(8751).SegmentedControl, obj2);
     let tmp2Result = tmp2(closure_5, obj1);
   } else {
     tmp2Result = null;

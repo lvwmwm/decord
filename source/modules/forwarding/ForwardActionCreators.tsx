@@ -1,8 +1,8 @@
-// Module ID: 6155
-// Function ID: 6156
-// Dependencies: [32, 5, 1372, 3817, 676, 4182, 6156, 5967, 694, 5968, 1384, 5713, 6157, 4428, 2]
+// Module ID: 6153
+// Function ID: 6154
+// Dependencies: [32, 5, 1372, 3817, 676, 4182, 6154, 5965, 694, 5966, 1384, 5713, 6155, 4428, 2]
 
-// Module 6155
+// Module 6153
 import _slicedToArray from "_slicedToArray";
 import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -54,7 +54,7 @@ let obj = {
                 prop = tmp74.isICYMIGameContentForwarding;
               }
               if (prop) {
-                let guild_id = outer1_0(6156).GAME_CONTENT_GUILD_ID;
+                let guild_id = outer1_0(6154).GAME_CONTENT_GUILD_ID;
               } else if (channel1 != null) {
                 guild_id = channel1.guild_id;
               }
@@ -70,7 +70,7 @@ let obj = {
                 const error1 = new Error("Unable to find destination channel for message");
                 throw error1;
               } else {
-                const parsed = outer1_1(5967).parse(channel, "");
+                const parsed = outer1_1(5965).parse(channel, "");
                 let obj1 = { guild_id: null, channel_id: null, message_id: null, type: null, forward_only: null };
                 obj1[0] = guild_id;
                 ({ channel_id: obj16[1], id: obj16[2] } = tmp72);
@@ -98,7 +98,7 @@ let obj = {
                 dependencyMap = withMessage;
                 let num9 = 0;
                 if (null != withMessage) {
-                  const tmp39 = v0(outer1_1(5968)(withMessage), 2);
+                  const tmp39 = v0(outer1_1(5966)(withMessage), 2);
                   num9 = 0;
                   if (tmp39[0]) {
                     dependencyMap = tmp39[1];
@@ -137,13 +137,13 @@ let obj = {
                   result = "" === dependencyMap;
                 }
                 if (!result) {
-                  obj1 = outer1_0(6157);
+                  obj1 = outer1_0(6155);
                   result = obj1.isRatelimitedInChannel(channel, outer1_6);
                 }
                 if (!result) {
                   obj2 = outer1_1(5713);
                   const id = channel.id;
-                  obj3 = outer1_1(5967);
+                  obj3 = outer1_1(5965);
                   const obj6 = { location: null, flags: null };
                   obj6[0] = outer1_8.FORWARDING;
                   obj6[1] = c1;

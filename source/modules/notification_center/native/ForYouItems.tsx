@@ -1,9 +1,9 @@
-// Module ID: 15288
-// Function ID: 15289
+// Module ID: 15282
+// Function ID: 15283
 // Name: ForYouFooter
-// Dependencies: [5, 32, 19, 17, 4181, 4226, 1372, 1862, 1874, 15282, 676, 5644, 21, 4189, 4185, 712, 4619, 15287, 1236, 1384, 7824, 6072, 9872, 9656, 7676, 589, 7876, 1297, 11721, 15289, 1480, 4170, 12988, 5926, 698, 8011, 15290, 9518, 3890, 9541, 1959, 4157, 15292, 4148, 15284, 5548, 15293, 15294, 11, 4717, 15295, 5927, 12219, 1481, 3862, 3867, 15305, 15306, 15307, 15308, 15309, 15315, 810, 15316, 15317, 1351, 15286, 6676, 15318, 2]
+// Dependencies: [5, 32, 19, 17, 4181, 4226, 1372, 1862, 1874, 15276, 676, 5644, 21, 4189, 4185, 712, 4619, 15281, 1236, 1384, 7821, 6070, 9869, 9653, 7673, 589, 7873, 1297, 11717, 15283, 1480, 4170, 12983, 5924, 698, 8008, 15284, 9514, 3890, 9537, 1959, 4157, 15286, 4148, 15278, 5548, 15287, 15288, 11, 4717, 15289, 5925, 12213, 1481, 3862, 3867, 15299, 15300, 15301, 15302, 15303, 15309, 810, 15310, 15311, 1351, 15280, 6673, 15312, 2]
 
-// Module 15288 (ForYouFooter)
+// Module 15282 (ForYouFooter)
 import addApplication from "addApplication";
 import handleSupportedURL from "handleSupportedURL";
 import importAllResult from "hasFlag";
@@ -37,7 +37,7 @@ const require = arg1;
 function ForYouFooter(loading) {
   let tmp = null;
   if (loading.loading) {
-    tmp = callback(require(15287) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
+    tmp = callback(require(15281) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
   }
   return tmp;
 }
@@ -129,10 +129,10 @@ function ForYouMessagePreviewV2(item) {
         first = embeds[0];
       }
     }
-    const tmp15 = guild_id(7824)(first);
+    const tmp15 = guild_id(7821)(first);
     let result = stringResult;
     if (null != tmp15) {
-      let tmp2Result = tmp2(6072);
+      let tmp2Result = tmp2(6070);
       result = tmp2Result.formatPollResultNotificationCenterText(tmp15);
     }
   } else if (stickers.length > 0) {
@@ -236,7 +236,7 @@ function ForYouMessagePreviewV2(item) {
     id = message10.author.id;
   }
   obj2[4] = id;
-  const items5 = [item(7876).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj2, {}), ];
+  const items5 = [item(7873).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj2, {}), ];
   if (null == ATTACHMENT) {
     items5[1] = tmp26;
     obj1[3] = items5;
@@ -247,7 +247,7 @@ function ForYouMessagePreviewV2(item) {
     const obj3 = { style: null, children: null };
     obj3[0] = messagePreviewIconV2.messagePreviewIconV2Container;
     if (constants3.ATTACHMENT === ATTACHMENT) {
-      let tmp29 = guild_id(9872);
+      let tmp29 = guild_id(9869);
       const obj4 = { source: null, size: null, style: null };
       obj4[0] = tmp29;
       SMALL = tmp2(1297).IconSizes.SMALL;
@@ -259,10 +259,10 @@ function ForYouMessagePreviewV2(item) {
     } else if (tmp28.STICKER !== ATTACHMENT) {
       tmp29 = null;
       if (tmp28.VOICE_MESSAGE === ATTACHMENT) {
-        tmp29 = guild_id(7676);
+        tmp29 = guild_id(7673);
       }
     }
-    tmp29 = guild_id(9656);
+    tmp29 = guild_id(9653);
   }
 }
 function ApplicationName(applicationId) {
@@ -276,7 +276,7 @@ function ApplicationName(applicationId) {
     obj = { application: null, textVariant: null, iconSize: 16 };
     obj[0] = stateFromStores;
     obj[1] = applicationId.textVariant;
-    tmp5 = callback(importDefault(11721), obj, stateFromStores.id);
+    tmp5 = callback(importDefault(11717), obj, stateFromStores.id);
   }
   return tmp5;
 }
@@ -671,7 +671,7 @@ let closure_35 = importAllResult.memo((item) => {
   }
   items7[2] = rowBodyAcked;
   obj7[1] = items7;
-  if (typeof tmp10 === "init") {
+  if (typeof tmp10 === "tee") {
     obj7[3] = tmp10;
     const items8 = [tmp25(tmp2(tmp3[14]).Text, obj7), ];
     const items9 = [, , ];
@@ -790,7 +790,9 @@ const memoResult = importAllResult.memo((loadMore) => {
     loadMore(true);
   }, items2);
   const items3 = [tmp.forYouDivider, suggestedFriendAdded, onAddSuggestionAnimationFinish, stateFromStores, setting, isSoftAcked, onSoftAckItem, forceHoistItem, isForceHoisted, tmp8, callback, flag];
-  const callback1 = suggestedFriendAdded.useCallback((arg0) => outer1_21(loadMore(onSoftAckItem[64]).ForYouLoadMore, { onPressLoad: callback }), items3);
+  const callback1 = suggestedFriendAdded.useCallback((arg0) => {
+
+  }, items3);
   ref = suggestedFriendAdded.useRef(null);
   const items4 = [shouldScrollToTop];
   const effect = suggestedFriendAdded.useEffect(() => {

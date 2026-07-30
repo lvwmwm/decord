@@ -1,10 +1,10 @@
-// Module ID: 10728
-// Function ID: 10729
+// Module ID: 10724
+// Function ID: 10725
 // Name: useToggleRequestToSpeak
-// Dependencies: [32, 19, 1218, 589, 4374, 5012, 6747, 6749, 6715, 2]
+// Dependencies: [32, 19, 1218, 589, 4374, 5012, 6744, 6746, 6712, 2]
 // Exports: default
 
-// Module 10728 (useToggleRequestToSpeak)
+// Module 10724 (useToggleRequestToSpeak)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import fetchFingerprint from "fetchFingerprint";

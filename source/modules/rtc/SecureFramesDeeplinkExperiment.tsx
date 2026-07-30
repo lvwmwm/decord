@@ -1,10 +1,10 @@
-// Module ID: 8901
-// Function ID: 8902
+// Module ID: 8897
+// Function ID: 8898
 // Name: useSecureFramesDeeplinkExperiment
 // Dependencies: [4102, 2]
 // Exports: getSecureFramesDeeplinkExperiment, useSecureFramesDeeplinkExperiment
 
-// Module 8901 (useSecureFramesDeeplinkExperiment)
+// Module 8897 (useSecureFramesDeeplinkExperiment)
 const items = [{ id: 1, label: "Enabled.", config: { enabled: true } }];
 let closure_0 = require("createExperiment")({ kind: "user", id: "2024-09_secure_frames_deeplink", label: "Secure Frames Deeplinks", defaultConfig: { enabled: false }, treatments: items });
 const result = require("set").fileFinishedImporting("modules/rtc/SecureFramesDeeplinkExperiment.tsx");

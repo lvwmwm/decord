@@ -1,9 +1,9 @@
-// Module ID: 15678
-// Function ID: 15679
+// Module ID: 15672
+// Function ID: 15673
 // Name: renderLabel
-// Dependencies: [109, 19, 17, 21, 4189, 712, 3901, 1297, 4185, 10187, 4035, 2]
+// Dependencies: [109, 19, 17, 21, 4189, 712, 3901, 1297, 4185, 10183, 4035, 2]
 
-// Module 15678 (renderLabel)
+// Module 15672 (renderLabel)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -71,7 +71,7 @@ prototype["renderIcon"] = function renderIcon() {
     const tmp13 = closure_5;
     const tmp14 = callback2;
     const merged = Object.assign(tmp11);
-    const items = [callback2(importDefault(10187), obj), ];
+    const items = [callback2(importDefault(10183), obj), ];
     let tmp14Result = null;
     if (null != error) {
       const obj1 = { style: null };

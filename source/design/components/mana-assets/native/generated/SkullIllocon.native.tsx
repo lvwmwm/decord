@@ -1,10 +1,10 @@
-// Module ID: 7490
-// Function ID: 7491
+// Module ID: 7487
+// Function ID: 7488
 // Name: SkullIllocon
-// Dependencies: [21, 5141, 7491, 2]
+// Dependencies: [21, 5141, 7488, 2]
 // Exports: SkullIllocon
 
-// Module 7490 (SkullIllocon)
+// Module 7487 (SkullIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SkullIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const SkullIllocon = function SkullIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7491);
+  obj[0] = importDefault(7488);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

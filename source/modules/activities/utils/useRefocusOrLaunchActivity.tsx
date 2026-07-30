@@ -1,10 +1,10 @@
-// Module ID: 10504
-// Function ID: 10505
+// Module ID: 10500
+// Function ID: 10501
 // Name: useRefocusOrLaunchActivity
-// Dependencies: [5, 19, 5686, 1371, 5687, 5516, 589, 10505, 5693, 10506, 10880, 2]
+// Dependencies: [5, 19, 5686, 1371, 5687, 5516, 589, 10501, 5693, 10502, 10876, 2]
 // Exports: default
 
-// Module 10504 (useRefocusOrLaunchActivity)
+// Module 10500 (useRefocusOrLaunchActivity)
 import fetchApplication from "fetchApplication";
 import noop from "noop";
 import map from "map";
@@ -83,8 +83,8 @@ export default function useRefocusOrLaunchActivity(applicationId) {
                   if ("guild_id" in _location) {
                     guild_id = _location.guild_id;
                   }
-                  outer1_1(10506)(guild_id, _location);
-                  const tmp24 = outer1_1(10506);
+                  outer1_1(10502)(guild_id, _location);
+                  const tmp24 = outer1_1(10502);
                 } else {
                   if (dependencyMap != null) {
                     dependencyMap();
@@ -112,7 +112,7 @@ export default function useRefocusOrLaunchActivity(applicationId) {
                     }
                   }
                 }
-                obj2 = outer1_0(10880);
+                obj2 = outer1_0(10876);
                 const obj4 = { appId: null, botId: null, analyticsLocations: null };
                 obj4[0] = tmp40;
                 let id1;

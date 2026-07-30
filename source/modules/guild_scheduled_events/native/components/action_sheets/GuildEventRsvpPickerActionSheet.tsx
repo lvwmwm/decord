@@ -1,10 +1,10 @@
-// Module ID: 8347
-// Function ID: 8348
+// Module ID: 8344
+// Function ID: 8345
 // Name: GuildEventRsvpPickerActionSheet
-// Dependencies: [32, 19, 17, 1378, 21, 4189, 712, 8214, 1236, 5243, 5242, 5177, 7655, 7654, 4600, 8229, 4157, 2]
+// Dependencies: [32, 19, 17, 1378, 21, 4189, 712, 8211, 1236, 5243, 5242, 5177, 7652, 7651, 4600, 8226, 4157, 2]
 // Exports: default
 
-// Module 8347 (GuildEventRsvpPickerActionSheet)
+// Module 8344 (GuildEventRsvpPickerActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "set";
@@ -33,9 +33,9 @@ export default function GuildEventRsvpPickerActionSheet(event) {
   let first;
   let c5;
   let tmp = createCacheKey();
-  const tmp4 = callback(first.useState(event(8214).ResponseOptions.SERIES), 2);
+  const tmp4 = callback(first.useState(event(8211).ResponseOptions.SERIES), 2);
   first = tmp4[0];
-  let obj = event(8214);
+  let obj = event(8211);
   const existingRsvp = obj.getExistingRsvp(event.id, null);
   let response;
   if (existingRsvp != null) {
@@ -54,9 +54,9 @@ export default function GuildEventRsvpPickerActionSheet(event) {
   obj[0] = callback2(event(5242).BottomSheetTitleHeader, { title: stringResult });
   obj = { bottom: true, style: tmp.container, children: null };
   const obj1 = { defaultValue: first, onChange: tmp4[1], hasIcons: false, children: null };
-  const responseOptions = event(8214).getResponseOptions();
+  const responseOptions = event(8211).getResponseOptions();
   obj1[3] = responseOptions.map((value) => callback2(event(table[13]).TableRadioRow, { value: value.value, label: value.name }, value.value));
-  const items = [callback2(event(7655).TableRadioGroup, obj1), ];
+  const items = [callback2(event(7652).TableRadioGroup, obj1), ];
   const obj2 = { style: tmp.buttonWrapper, children: null };
   const obj3 = {
     onPress() {

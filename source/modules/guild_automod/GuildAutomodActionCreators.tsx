@@ -1,10 +1,10 @@
-// Module ID: 11058
-// Function ID: 11059
+// Module ID: 11054
+// Function ID: 11055
 // Name: _transformClientActionToApiAction
-// Dependencies: [5, 1862, 3817, 676, 11059, 1351, 11, 530, 11052, 4384, 5774, 709, 2]
+// Dependencies: [5, 1862, 3817, 676, 11055, 1351, 11, 530, 11048, 4384, 5774, 709, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 11058 (_transformClientActionToApiAction)
+// Module 11054 (_transformClientActionToApiAction)
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -16,11 +16,11 @@ let metroImportAll;
 const require = arg1;
 function _transformClientActionToApiAction(type) {
   const obj = { type: type.type, metadata: null };
-  obj[1] = require(11059) /* _transformMetadataToCamelCase */._transformMetadataToSnakeCase(type.metadata);
+  obj[1] = require(11055) /* _transformMetadataToCamelCase */._transformMetadataToSnakeCase(type.metadata);
   return obj;
 }
 function _transformClientRuleToApiRule(id) {
-  let obj = require(11059) /* _transformMetadataToCamelCase */;
+  let obj = require(11055) /* _transformMetadataToCamelCase */;
   const result = obj._transformMetadataToSnakeCase(id.triggerMetadata);
   if (null != result) {
     delete tmp2[tmp];
@@ -44,7 +44,7 @@ function _transformClientRuleToApiRule(id) {
 }
 function _transformApiActionToClientAction(type) {
   const obj = { type: type.type, metadata: null };
-  obj[1] = require(11059) /* _transformMetadataToCamelCase */._transformMetadataToCamelCase(type.metadata);
+  obj[1] = require(11055) /* _transformMetadataToCamelCase */._transformMetadataToCamelCase(type.metadata);
   return obj;
 }
 function _transformApiRuletoClientRule(id) {
@@ -55,7 +55,7 @@ function _transformApiRuletoClientRule(id) {
     id = obj.fromTimestamp(Date.now());
   }
   obj = { id, name: id.name, guildId: id.guild_id, eventType: id.event_type, triggerType: id.trigger_type, triggerMetadata: null, actions: null, enabled: null, creatorId: null, position: null, exemptChannels: null, exemptRoles: null };
-  obj[5] = require(11059) /* _transformMetadataToCamelCase */._transformMetadataToCamelCase(id.trigger_metadata);
+  obj[5] = require(11055) /* _transformMetadataToCamelCase */._transformMetadataToCamelCase(id.trigger_metadata);
   const actions = id.actions;
   const found = actions.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
   obj[6] = found.map(_transformApiActionToClientAction);
@@ -64,7 +64,7 @@ function _transformApiRuletoClientRule(id) {
   if (exempt_channels == null) {
     exempt_channels = [];
   }
-  const obj3 = require(11059) /* _transformMetadataToCamelCase */;
+  const obj3 = require(11055) /* _transformMetadataToCamelCase */;
   obj[10] = new Set(exempt_channels);
   let exempt_roles = id.exempt_roles;
   if (exempt_roles == null) {
@@ -619,7 +619,7 @@ export const removeMentionRaidRestrictionWithFeedback = function removeMentionRa
     canResult = getUncachedChannelPermissions.can(constants.MANAGE_GUILD, guild);
   }
   if (canResult) {
-    const result = _require(11052).openConfirmRemoveMentionRaid(() => {
+    const result = _require(11048).openConfirmRemoveMentionRaid(() => {
       let obj = callback(4384);
       obj = { feedback_type: callback(5774).Feedback.MENTION_RAID_REMOVE_RESTRICTION, decision_id: closure_1 };
       obj.trackWithMetadata(outer1_6.GUILD_AUTOMOD_FEEDBACK, obj);
@@ -628,7 +628,7 @@ export const removeMentionRaidRestrictionWithFeedback = function removeMentionRa
       HTTP.post(obj);
       dependencyMap();
     });
-    let obj = _require(11052);
+    let obj = _require(11048);
   }
 };
 export const clearMentionRaidDetected = function clearMentionRaidDetected(guildId) {

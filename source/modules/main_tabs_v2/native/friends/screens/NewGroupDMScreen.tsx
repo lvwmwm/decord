@@ -1,10 +1,10 @@
-// Module ID: 15596
-// Function ID: 15597
+// Module ID: 15590
+// Function ID: 15591
 // Name: handleOneRecipientInDM
-// Dependencies: [32, 5, 19, 17, 1372, 12807, 4261, 1874, 8813, 676, 21, 4189, 712, 4199, 4399, 8917, 10879, 4157, 589, 15586, 698, 3890, 1236, 9118, 8825, 12236, 6693, 6044, 1297, 8814, 2]
+// Dependencies: [32, 5, 19, 17, 1372, 12801, 4261, 1874, 8809, 676, 21, 4189, 712, 4199, 4399, 8913, 10875, 4157, 589, 15580, 698, 3890, 1236, 9114, 8821, 12230, 6690, 6042, 1297, 8810, 2]
 // Exports: default
 
-// Module 15596 (handleOneRecipientInDM)
+// Module 15590 (handleOneRecipientInDM)
 import _slicedToArray from "_slicedToArray";
 import performQuery from "performQuery";
 import getGroupDMRecipientLimit from "getGroupDMRecipientLimit";
@@ -179,7 +179,7 @@ function _handleInviteUsers() {
               _slicedToArray = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp5) {
@@ -288,14 +288,14 @@ function _handleInviteUsers() {
                                 obj[0] = arg1;
                                 return obj;
                               } else {
-                                const tmp8 = v0(8917);
+                                const tmp8 = v0(8913);
                                 const call = tmp8.call;
                                 if (typeof call === "unknown") {
                                   tmp8(false, true);
                                 } else {
                                   call(tmp9, false, true);
                                 }
-                                v0(10879)(_slicedToArray);
+                                v0(10875)(_slicedToArray);
                                 dependencyMap = 3;
                                 tmp9 = _slicedToArray;
                               }
@@ -372,7 +372,7 @@ function _handleInviteUsers() {
                   throw arg1;
                 } else if (arg0 !== 2) {
                   _slicedToArray = arg1;
-                  obj = arr(8917);
+                  obj = arr(8913);
                   obj.ring(_slicedToArray, arr, "gdm_invite");
                 }
                 c6 = 3;

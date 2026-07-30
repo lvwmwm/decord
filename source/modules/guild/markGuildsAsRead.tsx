@@ -1,10 +1,10 @@
-// Module ID: 13098
-// Function ID: 13099
+// Module ID: 13093
+// Function ID: 13094
 // Name: markGuildsAsRead
 // Dependencies: [5115, 5096, 1932, 4201, 676, 4386, 12, 11, 698, 5126, 2]
 // Exports: default
 
-// Module 13098 (markGuildsAsRead)
+// Module 13093 (markGuildsAsRead)
 import handleUpdate from "handleUpdate";
 import rebuild from "rebuild";
 import comparator from "comparator";

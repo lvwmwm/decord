@@ -1,9 +1,9 @@
-// Module ID: 9474
-// Function ID: 9475
+// Module ID: 9470
+// Function ID: 9471
 // Name: trackRoundtrip
-// Dependencies: [4281, 5985, 676, 5719, 698, 5962, 5722, 6000, 2]
+// Dependencies: [4281, 5983, 676, 5719, 698, 5960, 5722, 5998, 2]
 
-// Module 9474 (trackRoundtrip)
+// Module 9470 (trackRoundtrip)
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import initializeState from "initializeState";
 import { AnalyticEvents } from "ME";
@@ -19,7 +19,7 @@ function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
     let obj = require(5719) /* receiveNetworkInfoformation */;
     const signalStrength = obj.getSignalStrength();
     obj = {};
-    const merged = Object.assign(importDefault(5962)());
+    const merged = Object.assign(importDefault(5960)());
     ({ endpoint: obj3.endpoint, wasSuccessful: obj3.was_successful } = apiResponseTimestamp);
     obj.api_latency_ms = diff;
     obj.mobile_network_type = type.getType();
@@ -77,7 +77,7 @@ prototype["recordQuestRequestAttempt"] = function recordQuestRequestAttempt(endp
   if (closure_0 === undefined) {
     tmp = null;
   }
-  let obj = self(6000);
+  let obj = self(5998);
   let tmp2 = null;
   if (obj.getConfig({ location: "recordQuestRequestAttempt" }).enableNewRequestBehavior) {
     tmp2 = null;
@@ -182,7 +182,7 @@ prototype["recordQuestRequestApiResponse"] = function recordQuestRequestApiRespo
       }
       combined = str;
     }
-    obj4 = importDefault(6000);
+    obj4 = importDefault(5998);
   }
 };
 let set = Object.create(QuestDecisionRoundtripTracker.prototype);

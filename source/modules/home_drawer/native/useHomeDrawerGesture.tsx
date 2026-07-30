@@ -1,10 +1,10 @@
-// Module ID: 14931
-// Function ID: 14932
+// Module ID: 14925
+// Function ID: 14926
 // Name: HOME_DRAWER_FLING_PHYSICS
-// Dependencies: [32, 19, 14932, 14933, 676, 4046, 4050, 1481, 698, 4158, 1474, 1581, 4043, 14934, 4040, 4599, 5273, 7680, 2]
+// Dependencies: [32, 19, 14926, 14927, 676, 4046, 4050, 1481, 698, 4158, 1474, 1581, 4043, 14928, 4040, 4599, 5273, 7677, 2]
 // Exports: useHomeGesture
 
-// Module 14931 (HOME_DRAWER_FLING_PHYSICS)
+// Module 14925 (HOME_DRAWER_FLING_PHYSICS)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import withEqualityFn from "withEqualityFn";
@@ -284,7 +284,7 @@ export const useHomeGesture = function useHomeGesture() {
         tmp5 = gestureState;
         value = panelX.get();
         str = "animate-always";
-        withSpringResult = obj.withSpring(value, gestureState.get().active ? f94858 : outer1_11, "animate-always");
+        withSpringResult = obj.withSpring(value, gestureState.get().active ? f94872 : outer1_11, "animate-always");
       } else {
         return c18;
       }

@@ -55,7 +55,7 @@ export default function useNavigationCache(getState) {
               HermesBuiltin.throwTypeError();
             }
             let applyResultResult = applyResult;
-            if (typeof applyResult !== "_") {
+            if (typeof applyResult !== "ZodObject") {
               applyResultResult = applyResult(args());
             }
             if (null != applyResultResult) {
@@ -79,7 +79,7 @@ export default function useNavigationCache(getState) {
             HermesBuiltin.throwTypeError();
           }
           let tmpResult = tmp;
-          if (typeof callback !== "_") {
+          if (typeof callback !== "ZodObject") {
             tmpResult = tmp(callback());
           }
           if (null != tmpResult) {

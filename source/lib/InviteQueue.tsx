@@ -1,9 +1,9 @@
-// Module ID: 11807
-// Function ID: 11808
+// Module ID: 11803
+// Function ID: 11804
 // Name: sum
-// Dependencies: [1372, 687, 6146, 3, 5713, 4199, 2]
+// Dependencies: [1372, 687, 6144, 3, 5713, 4199, 2]
 
-// Module 11807 (sum)
+// Module 11803 (sum)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import "enqueue";
 

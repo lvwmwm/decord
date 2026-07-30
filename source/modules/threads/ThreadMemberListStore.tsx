@@ -1,9 +1,9 @@
-// Module ID: 6165
-// Function ID: 6166
+// Module ID: 6162
+// Function ID: 6163
 // Name: handleUserUpdate
-// Dependencies: [32, 1372, 1942, 6054, 4276, 4867, 1874, 676, 12, 11, 3822, 4028, 1351, 589, 709, 2]
+// Dependencies: [32, 1372, 1942, 6052, 4276, 4867, 1874, 676, 12, 11, 3822, 4028, 1351, 589, 709, 2]
 
-// Module 6165 (handleUserUpdate)
+// Module 6162 (handleUserUpdate)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";

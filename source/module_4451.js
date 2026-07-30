@@ -18,7 +18,7 @@ if (require("_Symbol")()) {
               return (function isRealSymbolObject(arg0) {
                 const valueOfResult = arg0.valueOf();
                 let tmp2 = typeof valueOfResult === "e";
-                if (typeof valueOfResult !== "__i") {
+                if (typeof valueOfResult !== "__iteratees__") {
                   tmp2 = callback2(callback(arg0));
                 }
                 return tmp2;

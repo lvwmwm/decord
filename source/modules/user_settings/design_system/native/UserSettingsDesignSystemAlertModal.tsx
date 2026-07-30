@@ -1,10 +1,10 @@
-// Module ID: 14566
-// Function ID: 14567
+// Module ID: 14562
+// Function ID: 14563
 // Name: DemoModal
 // Dependencies: [5, 19, 17, 21, 4533, 4530, 4189, 4600, 2]
 // Exports: default
 
-// Module 14566 (DemoModal)
+// Module 14562 (DemoModal)
 import useAlertStore from "useAlertStore";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";

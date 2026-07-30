@@ -1,10 +1,10 @@
-// Module ID: 15536
-// Function ID: 15537
+// Module ID: 15530
+// Function ID: 15531
 // Name: useFileOrLinkImageDimensions
-// Dependencies: [19, 9101, 2]
+// Dependencies: [19, 9097, 2]
 // Exports: useFileOrLinkImageDimensions
 
-// Module 15536 (useFileOrLinkImageDimensions)
+// Module 15530 (useFileOrLinkImageDimensions)
 import noop from "noop";
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
 

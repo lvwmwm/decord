@@ -1,10 +1,10 @@
-// Module ID: 10599
-// Function ID: 10600
+// Module ID: 10595
+// Function ID: 10596
 // Name: mediaEngineContextFromParticipantType
 // Dependencies: [4207, 4250, 2]
 // Exports: default
 
-// Module 10599 (mediaEngineContextFromParticipantType)
+// Module 10595 (mediaEngineContextFromParticipantType)
 import { ParticipantTypes } from "ParticipantTypes";
 import { MediaEngineContextTypes } from "DesktopSources";
 

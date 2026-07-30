@@ -68,7 +68,7 @@ function _extractErrorData(cause) {
         obj6 = require(827) /* isInstanceOf */;
       }
     }
-    if (typeof cause.toJSON !== "_") {
+    if (typeof cause.toJSON !== "ZodObject") {
       const toJSONResult = cause.toJSON();
       const _Object2 = Object;
       const keys1 = Object.keys(toJSONResult);

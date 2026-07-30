@@ -1,10 +1,10 @@
-// Module ID: 8020
-// Function ID: 8021
+// Module ID: 8017
+// Function ID: 8018
 // Name: getString
-// Dependencies: [4623, 38, 8021, 4177, 1906, 2]
+// Dependencies: [4623, 38, 8018, 4177, 1906, 2]
 // Exports: filterEmpty, getBoolean, getChannelId, getInitialValuesFromInteractionOptions, getOptionalBoolean, getOptionalChannelId, getOptionalRoleId, getOptionalString, getOptionalUserId, getRoleId, getUserId, normalizeNumericString
 
-// Module 8020 (getString)
+// Module 8017 (getString)
 import { TRUE_OPTION_NAME } from "TRUE_OPTION_NAME";
 
 function getString(arg0, arg1) {
@@ -341,9 +341,9 @@ export const normalizeNumericString = function normalizeNumericString(locale, tr
   let group;
   if (locale !== closure_5) {
     closure_5 = locale;
-    en_US = require(8021) /* numberParts */.numberParts[locale];
+    en_US = require(8018) /* numberParts */.numberParts[locale];
     if (en_US == null) {
-      en_US = tmp11(8021).numberParts["en-US"];
+      en_US = tmp11(8018).numberParts["en-US"];
     }
     const _RegExp = RegExp;
     ({ group, decimal } = en_US);

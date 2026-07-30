@@ -1,10 +1,10 @@
-// Module ID: 6740
-// Function ID: 6741
+// Module ID: 6737
+// Function ID: 6738
 // Name: useInputStyles
-// Dependencies: [19, 17, 21, 712, 3893, 4189, 6741, 4185, 4050, 4599, 2]
+// Dependencies: [19, 17, 21, 712, 3893, 4189, 6738, 4185, 4050, 4599, 2]
 // Exports: InputFieldContainer
 
-// Module 6740 (useInputStyles)
+// Module 6737 (useInputStyles)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -82,7 +82,7 @@ let closure_9 = createCacheKey.createStyles(() => {
   if (arg4 === undefined) {
     str2 = "text-md/medium";
   }
-  let obj = { sm: require(6741) /* InputHeights */.InputHeights.SM, md: require(6741) /* InputHeights */.InputHeights.MD, lg: require(6741) /* InputHeights */.InputHeights.LG };
+  let obj = { sm: require(6738) /* InputHeights */.InputHeights.SM, md: require(6738) /* InputHeights */.InputHeights.MD, lg: require(6738) /* InputHeights */.InputHeights.LG };
   obj = { sm: importDefault(712).space.PX_8, md: importDefault(712).space.PX_12, lg: importDefault(712).space.PX_16 };
   obj = { sm: importDefault(712).space.PX_4, md: importDefault(712).space.PX_8, lg: importDefault(712).space.PX_8 };
   const obj1 = { sm: null, md: null, lg: null };

@@ -1,10 +1,10 @@
-// Module ID: 8673
-// Function ID: 8674
+// Module ID: 8670
+// Function ID: 8671
 // Name: getUserWishlistKey
-// Dependencies: [32, 19, 5896, 1218, 1874, 8674, 8675, 589, 8680, 12, 8681, 7984, 8685, 8690, 2]
+// Dependencies: [32, 19, 5894, 1218, 1874, 8671, 8672, 589, 8677, 12, 8678, 7981, 8682, 8687, 2]
 // Exports: useCurrentUserWishlist, useFetchWishlistAndProfileInfoForUser, useFetchWishlists, useIsSkuInWishlist, useShouldShowWishlistInDMGifting
 
-// Module 8673 (getUserWishlistKey)
+// Module 8670 (getUserWishlistKey)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { useEffect } from "noop";

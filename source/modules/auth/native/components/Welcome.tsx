@@ -1,10 +1,10 @@
-// Module ID: 14862
-// Function ID: 14863
+// Module ID: 14856
+// Function ID: 14857
 // Name: InviteCard
-// Dependencies: [19, 17, 14863, 4103, 5715, 11508, 1882, 4174, 8353, 676, 5716, 6021, 21, 4189, 712, 11753, 1236, 38, 1297, 4028, 4185, 12363, 6561, 13000, 1480, 1581, 589, 4616, 5731, 698, 595, 5641, 5503, 14864, 14859, 5022, 4600, 3901, 5140, 10048, 2]
+// Dependencies: [19, 17, 14857, 4103, 5715, 11504, 1882, 4174, 8350, 676, 5716, 6019, 21, 4189, 712, 11749, 1236, 38, 1297, 4028, 4185, 12357, 6558, 12995, 1480, 1581, 589, 4616, 5731, 698, 595, 5641, 5503, 14858, 14853, 5022, 4600, 3901, 5140, 10044, 2]
 // Exports: default
 
-// Module 14862 (InviteCard)
+// Module 14856 (InviteCard)
 import nameFromUser from "nameFromUser";
 import get_ActivityIndicator from "module_38";
 import isUnderageAnonymous from "isUnderageAnonymous";
@@ -43,7 +43,7 @@ function InviteCard(invite) {
     if (null != guild) {
       let obj = { guild: null };
       obj[0] = guild;
-      let tmp14 = callback(importDefault(11753), obj);
+      let tmp14 = callback(importDefault(11749), obj);
       const intl2 = require(1236) /* getSystemLocale */.intl;
       let stringResult = intl2.string(require(1236) /* getSystemLocale */.t["3rE1P8"]);
       let name = guild.name;
@@ -51,7 +51,7 @@ function InviteCard(invite) {
       let tmp18 = callback;
     } else if (null != tmp2) {
       importDefault(38)(null != inviter, "Null inviter");
-      obj = { user: null, guildId: "r" };
+      obj = { user: null, guildId: "a" };
       const tmp12 = new createdAt(inviter);
       obj[0] = tmp12;
       tmp14 = callback(require(1297) /* Button */.Avatar, obj);
@@ -64,7 +64,7 @@ function InviteCard(invite) {
     } else if (null == inviter) {
       return null;
     } else {
-      obj = { user: null, guildId: "r" };
+      obj = { user: null, guildId: "a" };
       const tmp33 = new createdAt(inviter);
       obj[0] = tmp33;
       const intl3 = require(1236) /* getSystemLocale */.intl;
@@ -101,7 +101,7 @@ function GuildTemplateCard(arg0) {
   const tmp = createCacheKey();
   let obj = { style: items, children: null };
   items = [tmp.container, style];
-  obj = { source: importDefault(12363) };
+  obj = { source: importDefault(12357) };
   const items1 = [callback(closure_5, obj), ];
   obj = { style: tmp.text, children: null };
   const obj1 = { variant: "text-sm/medium", color: "text-subtle", children: null };
@@ -117,7 +117,7 @@ function Centerpiece(inlineButtons) {
   let guildTemplate;
   let invite;
   ({ invite, guildTemplate } = inlineButtons);
-  const tmp2 = importDefault(6561)();
+  const tmp2 = importDefault(6558)();
   const tmp3 = callback3(tmp2);
   let tmp7 = null != guildTemplate;
   if (tmp7) {
@@ -126,7 +126,7 @@ function Centerpiece(inlineButtons) {
   let obj = { style: items, children: null };
   items = [tmp3.centerpieceContainer];
   obj = { alwaysBounceVertical: false, contentContainerStyle: tmp3.scrollViewContainer, children: null };
-  obj = { style: tmp3.logo, source: require(13000) /* registerAsset */ };
+  obj = { style: tmp3.logo, source: require(12995) /* registerAsset */ };
   const items1 = [callback(closure_5, obj), , ];
   const obj1 = { style: tmp3.header, lineClamp: null, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: null };
   let num = 2;

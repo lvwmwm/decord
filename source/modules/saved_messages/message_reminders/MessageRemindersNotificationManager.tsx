@@ -1,14 +1,15 @@
-// Module ID: 16312
-// Function ID: 16313
+// Module ID: 16306
+// Function ID: 16307
 // Name: scheduleNextNotification
-// Dependencies: [9553, 9556, 709, 687, 5134, 2]
+// Dependencies: [9549, 9552, 709, 687, 5134, 2]
 
-// Module 16312 (scheduleNextNotification)
+// Module 16306 (scheduleNextNotification)
 import getTimeSafe from "getTimeSafe";
 import "initialize";
 
+let require = arg1;
 function scheduleNextNotification() {
-  if (obj.getConfig({ location: "MessageRemindersNotificationManager" }).enabled) {
+  if (obj.isForLaterExperimentOn("MessageRemindersNotificationManager")) {
     if (null != timeout) {
       const _clearTimeout = clearTimeout;
       clearTimeout(timeout);
@@ -34,20 +35,20 @@ function scheduleNextNotification() {
       let _Date = Date;
       const timestamp = Date.now();
       dueAt = found.saveData.dueAt;
-      const sum = timestamp + found(687).Millis.WEEK;
+      const sum = timestamp + importDefault(687).Millis.WEEK;
       if (dueAt.getTime() <= sum) {
         const dueAt2 = found.saveData.dueAt;
         const _Date2 = Date;
         const time = dueAt2.getTime();
         const _setTimeout = setTimeout;
         timeout = setTimeout(() => {
-          let obj = found(outer1_1[1]);
-          if (obj.getConfig({ location: "MessageRemindersNotificationManager" }).enabled) {
+          let obj = found(outer1_2[1]);
+          if (obj.isForLaterExperimentOn("MessageRemindersNotificationManager")) {
             obj = { type: "MESSAGE_REMINDER_DUE", savedMessage: null };
             obj[1] = found;
-            found(outer1_1[2]).dispatch(obj);
-            outer1_4();
-            const tmp2Result = found(outer1_1[2]);
+            outer1_1(outer1_2[2]).dispatch(obj);
+            outer1_5();
+            const obj2 = outer1_1(outer1_2[2]);
           }
         }, time - Date.now());
       }
@@ -56,10 +57,10 @@ function scheduleNextNotification() {
     }
   }
 }
-let c3 = null;
+let c4 = null;
 let prototype = function MessageRemindersNotificationManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  const importDefault = applyArgumentsResult;
+  const require = applyArgumentsResult;
   applyArgumentsResult.actions = {
     SAVED_MESSAGES_UPDATE() {
       return applyArgumentsResult.handleUpdates();

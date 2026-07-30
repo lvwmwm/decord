@@ -1,10 +1,10 @@
-// Module ID: 11141
-// Function ID: 11142
+// Module ID: 11137
+// Function ID: 11138
 // Name: PrimaryActionButton
-// Dependencies: [32, 19, 17, 3841, 676, 1876, 21, 4189, 712, 698, 11142, 4031, 5243, 5242, 1236, 2421, 4185, 6206, 4600, 589, 3835, 6216, 5535, 1297, 4032, 2]
+// Dependencies: [32, 19, 17, 3841, 676, 1876, 21, 4189, 712, 698, 11138, 4031, 5243, 5242, 1236, 2421, 4185, 6203, 4600, 589, 3835, 6213, 5535, 1297, 4032, 2]
 // Exports: default
 
-// Module 11141 (PrimaryActionButton)
+// Module 11137 (PrimaryActionButton)
 import _slicedToArray from "_slicedToArray";
 import initialize from "initialize";
 import noop from "initialize";
@@ -36,7 +36,7 @@ function PrimaryActionButton(onPressApply) {
       const items = [callback(5535).SHARE_CUSTOM_CLIENT_THEME_EMBED];
       obj[1] = items;
       obj[2] = {};
-      callback(6216)(obj);
+      callback(6213)(obj);
     };
     obj[2] = function renderIcon() {
       const style = [tmp.nitroWheelButton];

@@ -1,10 +1,10 @@
-// Module ID: 10452
-// Function ID: 10453
+// Module ID: 10448
+// Function ID: 10449
 // Name: DenyIcon
-// Dependencies: [19, 21, 712, 3892, 8363, 2]
+// Dependencies: [19, 21, 712, 3892, 8360, 2]
 // Exports: DenyIcon
 
-// Module 10452 (DenyIcon)
+// Module 10448 (DenyIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const DenyIcon = function DenyIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8363) /* registerAsset */;
+  obj[0] = require(8360) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

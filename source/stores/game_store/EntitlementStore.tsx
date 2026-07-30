@@ -1,9 +1,9 @@
-// Module ID: 5849
-// Function ID: 5850
+// Module ID: 5847
+// Function ID: 5848
 // Name: addEntitlement
 // Dependencies: [4227, 4224, 4234, 676, 1876, 589, 12, 4233, 679, 709, 2]
 
-// Module 5849 (addEntitlement)
+// Module 5847 (addEntitlement)
 import createFromServer from "createFromServer";
 import setLibraryApplications from "setLibraryApplications";
 import addSku from "addSku";

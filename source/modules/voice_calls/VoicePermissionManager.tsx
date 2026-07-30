@@ -1,10 +1,10 @@
-// Module ID: 16136
-// Function ID: 16137
+// Module ID: 16130
+// Function ID: 16131
 // Name: handleVoiceChannelSelect
-// Dependencies: [5011, 4206, 1218, 1372, 4236, 4261, 676, 4402, 4732, 16137, 4374, 5134, 2]
+// Dependencies: [5011, 4206, 1218, 1372, 4236, 4261, 676, 4402, 4732, 16131, 4374, 5134, 2]
 // Exports: shouldImmediatelyRequestVoicePermissions
 
-// Module 16136 (handleVoiceChannelSelect)
+// Module 16130 (handleVoiceChannelSelect)
 import buildStageChannelUserRoles from "buildStageChannelUserRoles";
 import isVoiceMuted from "isVoiceMuted";
 import fetchFingerprint from "fetchFingerprint";

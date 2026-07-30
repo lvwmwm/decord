@@ -1,10 +1,10 @@
-// Module ID: 12241
-// Function ID: 12242
+// Module ID: 12235
+// Function ID: 12236
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [19, 17, 1862, 1874, 676, 21, 4189, 712, 5566, 589, 1236, 709, 3889, 5551, 5242, 12242, 4185, 2]
+// Dependencies: [19, 17, 1862, 1874, 676, 21, 4189, 712, 5566, 589, 1236, 709, 3889, 5551, 5242, 12236, 4185, 2]
 // Exports: default
 
-// Module 12241 (InstantInviteQRCodeActionSheet)
+// Module 12235 (InstantInviteQRCodeActionSheet)
 import noop from "noop";
 import { View } from "set";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -103,7 +103,7 @@ export default function InstantInviteQRCodeActionSheet(location) {
       plainText = tmp12.plainText;
     }
     obj6[3] = plainText;
-    const items2 = [callback(importDefault(12242), obj6), ];
+    const items2 = [callback(importDefault(12236), obj6), ];
     let tmp19Result = null != tmp13;
     if (tmp19Result) {
       obj7 = { style: null, children: null };

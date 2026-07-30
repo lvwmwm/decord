@@ -1,9 +1,9 @@
-// Module ID: 9496
-// Function ID: 9497
+// Module ID: 9492
+// Function ID: 9493
 // Name: getAnalyticsConfig
 // Dependencies: [676, 503, 5535, 1351, 5134, 1386, 698, 2]
 
-// Module 9496 (getAnalyticsConfig)
+// Module 9492 (getAnalyticsConfig)
 import { AnalyticEvents } from "ME";
 import "initialize";
 

@@ -1,10 +1,10 @@
-// Module ID: 8650
-// Function ID: 8651
+// Module ID: 8647
+// Function ID: 8648
 // Name: EmbedAnnouncementCard
-// Dependencies: [19, 17, 21, 4619, 1236, 4189, 712, 8651, 4185, 8653, 3859, 6576, 5515, 8655, 8486, 8480, 8658, 4600, 5565, 2]
+// Dependencies: [19, 17, 21, 4619, 1236, 4189, 712, 8648, 4185, 8650, 3859, 6573, 5515, 8652, 8483, 8477, 8655, 4600, 5565, 2]
 // Exports: default
 
-// Module 8650 (EmbedAnnouncementCard)
+// Module 8647 (EmbedAnnouncementCard)
 import importAllResult from "set";
 import get_ActivityIndicator from "Button";
 import jsxProd from "jsxProd";
@@ -44,7 +44,7 @@ function EmbedAnnouncementCard(message) {
   }
   let posterUrl = null;
   if (null != proxyUrl) {
-    let obj1 = message(8651);
+    let obj1 = message(8648);
     posterUrl = obj1.getPosterUrl(proxyUrl, 160, c12);
   }
   if (posterUrl == null) {
@@ -108,7 +108,7 @@ function EmbedAnnouncementCard(message) {
       obj9[1] = message.media.placeholder;
       obj9[2] = message.media.placeholderVersion;
       obj9[3] = tmp.mediaImage;
-      obj8[1] = tmp12(message(8653).ImageWithPlaceholder, obj9);
+      obj8[1] = tmp12(message(8650).ImageWithPlaceholder, obj9);
       tmp12Result1 = tmp12(tmp15, obj8);
     }
     items3[1] = tmp12Result1;
@@ -162,7 +162,7 @@ function EmbedAnnouncementCard(message) {
       obj18[0] = tmp.reactionInfo;
       const obj19 = { size: "xs", color: null };
       obj19[1] = importDefault(712).colors.TEXT_MUTED;
-      const items6 = [tmp12(tmp35(6576).ReactionIcon, obj19), ];
+      const items6 = [tmp12(tmp35(6573).ReactionIcon, obj19), ];
       let tmp46 = null != obj20;
       if (tmp46) {
         tmp46 = obj20.locale === tmp35(1236).intl.currentLocale;
@@ -217,7 +217,7 @@ function MessageAnnouncementCard(message) {
   }
   let posterUrl = null;
   if (null != proxyUrl) {
-    let obj1 = message(8651);
+    let obj1 = message(8648);
     posterUrl = obj1.getPosterUrl(proxyUrl, 160, c12);
   }
   if (posterUrl == null) {
@@ -244,7 +244,7 @@ function MessageAnnouncementCard(message) {
     obj1[1] = message.media.placeholder;
     obj1[2] = message.media.placeholderVersion;
     obj1[3] = tmp.mediaImage;
-    obj[1] = callback(message(8653).ImageWithPlaceholder, obj1);
+    obj[1] = callback(message(8650).ImageWithPlaceholder, obj1);
     tmp13 = callback(closure_7, obj);
   }
   const items = [tmp13, ];
@@ -280,7 +280,7 @@ function MessageAnnouncementCard(message) {
     obj9[0] = tmp.reactionInfo;
     const obj10 = { size: "xs", color: null };
     obj10[1] = importDefault(712).colors.TEXT_MUTED;
-    const items3 = [tmp27(tmp28(6576).ReactionIcon, obj10), ];
+    const items3 = [tmp27(tmp28(6573).ReactionIcon, obj10), ];
     let tmp34 = null != obj11;
     if (tmp34) {
       tmp34 = obj11.locale === tmp28(1236).intl.currentLocale;
@@ -366,7 +366,7 @@ function PollAnnouncementCard(message) {
     const _Date = Date;
     const date = new Date(message.timestamp);
     obj6[0] = date;
-    obj6[1] = message(8651).getPollExpiryLabel(poll);
+    obj6[1] = message(8648).getPollExpiryLabel(poll);
     obj5[2] = intl2.format(message(1236).t.t0FTsH, obj6);
     obj4[1] = callback(message(4185).Text, obj5);
     items[2] = callback(closure_7, obj4);

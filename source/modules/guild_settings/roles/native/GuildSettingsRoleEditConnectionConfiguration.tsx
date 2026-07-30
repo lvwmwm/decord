@@ -1,10 +1,10 @@
-// Module ID: 16476
-// Function ID: 16477
+// Module ID: 16470
+// Function ID: 16471
 // Name: Header
-// Dependencies: [32, 19, 17, 676, 4997, 21, 4189, 712, 4125, 10007, 1297, 1416, 4035, 5220, 1236, 4717, 5175, 5555, 16477, 500, 4185, 4871, 5554, 2]
+// Dependencies: [32, 19, 17, 676, 4997, 21, 4189, 712, 4125, 10003, 1297, 1416, 4035, 5220, 1236, 4717, 5175, 5555, 16471, 500, 4185, 4871, 5554, 2]
 // Exports: default
 
-// Module 16476 (Header)
+// Module 16470 (Header)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "TableSwitchRow";
@@ -30,7 +30,7 @@ function Header(arg0) {
   let platform;
   ({ platform, integration, applicationId } = arg0);
   ({ onRemove, locked } = arg0);
-  let obj = require(10007) /* request */;
+  let obj = require(10003) /* request */;
   let application;
   if (integration != null) {
     application = integration.application;
@@ -214,7 +214,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
   if (num == null) {
     num = -1;
   }
-  let obj = metadataField(16477);
+  let obj = metadataField(16471);
   const realizedOperatorForResult = obj.realizedOperatorFor(existingPendingConfiguration.operator);
   c7 = realizedOperatorForResult;
   let value;
@@ -223,7 +223,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       value = iter.value;
     }
   }
-  let tmpResult = tmp(16477);
+  let tmpResult = tmp(16471);
   str = tmpResult.displayedValueFor(value, realizedOperatorForResult);
   str = str.toString();
   let mapped = React;
@@ -273,7 +273,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
     map = fieldTextHook.map;
     mapped = map(intl.format(fieldTextHook, obj), (arg0, arg1) => {
       let tmp = arg0;
-      if (typeof arg0 !== "init") {
+      if (typeof arg0 !== "tee") {
         const obj = { variant: "text-md/semibold", style: null, children: null };
         obj[1] = map.metadataRowText;
         obj[2] = arg0;
@@ -645,7 +645,7 @@ export default function GuildSettingsRoleEditConnectionConfiguration(configurati
     }
     if (configurationItems[0].configuration.connectionType === closure_11) {
       let obj = { hasIcons: true, children: null };
-      obj = { platform: null, integration: "a", applicationId: "gestikulacija", onRemove: "ja", locked: "mu\u0161karac podi\u017Ee ruku" };
+      obj = { platform: null, integration: "a", applicationId: 0, onRemove: 0, locked: null };
       obj[2] = applicationId;
       obj[3] = function onRemove() {
         return onConfigurationChange(null, configurationItems[0].index);

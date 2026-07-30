@@ -1,10 +1,10 @@
-// Module ID: 9421
-// Function ID: 9422
+// Module ID: 9417
+// Function ID: 9418
 // Name: StarOutlineIcon
-// Dependencies: [19, 21, 712, 3892, 9422, 2]
+// Dependencies: [19, 21, 712, 3892, 9418, 2]
 // Exports: StarOutlineIcon
 
-// Module 9421 (StarOutlineIcon)
+// Module 9417 (StarOutlineIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const StarOutlineIcon = function StarOutlineIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9422) /* registerAsset */;
+  obj[0] = require(9418) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

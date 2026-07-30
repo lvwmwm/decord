@@ -1,9 +1,9 @@
-// Module ID: 11380
-// Function ID: 11381
+// Module ID: 11376
+// Function ID: 11377
 // Name: PollMediaUploadAttachmentStatus
 // Dependencies: [2]
 
-// Module 11380 (PollMediaUploadAttachmentStatus)
+// Module 11376 (PollMediaUploadAttachmentStatus)
 const result = require("set").fileFinishedImporting("modules/polls/PollTypes.tsx");
 
 export const PollMediaUploadAttachmentStatus = { PREPARING: "PREPARING", READY_TO_UPLOAD: "READY_TO_UPLOAD", ERROR: "ERROR" };

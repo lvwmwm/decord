@@ -14,7 +14,7 @@ export default function ValidateAndApplyPropertyDescriptor(arg0, arg1, arg2, __C
     }
   }
   if (require(4481) /* isPropertyKey */(arg1)) {
-    if (typeof arg2 === "SENTRY_RELEASE") {
+    if (typeof arg2 === "sur") {
       const tmp87 = new tmp(541)("Assertion failed: extensible must be a Boolean");
       throw tmp87;
     } else if (tmp(4485)(__Configurable__)) {

@@ -1,10 +1,10 @@
-// Module ID: 16419
-// Function ID: 16420
+// Module ID: 16413
+// Function ID: 16414
 // Name: GuildSettingsModalServerTag
-// Dependencies: [5, 32, 19, 17, 8281, 1862, 8305, 676, 7724, 21, 4189, 712, 1480, 8307, 589, 8282, 7942, 8283, 8304, 3889, 1236, 11571, 4080, 5143, 6752, 1553, 4529, 1297, 5636, 11955, 4185, 5554, 5555, 5220, 4598, 13053, 7634, 13051, 16420, 2]
+// Dependencies: [5, 32, 19, 17, 8278, 1862, 8302, 676, 7721, 21, 4189, 712, 1480, 8304, 589, 8279, 7939, 8280, 8301, 3889, 1236, 11567, 4080, 5143, 6749, 1553, 4529, 1297, 5636, 11949, 4185, 5554, 5555, 5220, 4598, 13048, 7631, 13046, 16414, 2]
 // Exports: default
 
-// Module 16419 (GuildSettingsModalServerTag)
+// Module 16413 (GuildSettingsModalServerTag)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import TableSwitchRow from "TableSwitchRow";
 import presentAddedFriendToast from "presentAddedFriendToast";
@@ -53,14 +53,14 @@ export default function GuildSettingsModalServerTag(guildId) {
   const tmp = createCacheKey();
   let obj = guildId(1480);
   navigation = obj.useNavigation();
-  let obj1 = guildId(8307);
+  let obj1 = guildId(8304);
   const result = obj1.canUseMobileServerTagSettings(guildId);
   dependencyMap = result;
   let obj2 = guildId(589);
   const items = [result1];
   const items1 = [guildId];
   const stateFromStores = obj2.useStateFromStores(items, () => result1.getGuild(guildId), items1);
-  let obj3 = guildId(8282);
+  let obj3 = guildId(8279);
   guildProfile = obj3.useGuildProfile(guildId);
   ({ guildProfile, fetchStatus } = guildProfile);
   let obj4 = guildId(589);
@@ -75,7 +75,7 @@ export default function GuildSettingsModalServerTag(guildId) {
   closure_6 = tmp10[1];
   let guildSupportsTagsResult = null != stateFromStores;
   if (guildSupportsTagsResult) {
-    let tmp2Result = tmp2(7942);
+    let tmp2Result = tmp2(7939);
     guildSupportsTagsResult = tmp2Result.guildSupportsTags(stateFromStores);
   }
   GuildProfileFetchStatus = guildSupportsTagsResult;
@@ -83,7 +83,7 @@ export default function GuildSettingsModalServerTag(guildId) {
   if (stateFromStores1 != null) {
     tag = stateFromStores1.tag;
   }
-  tmp2Result = tmp2(8307);
+  tmp2Result = tmp2(8304);
   result1 = tmp2Result.isServerTagDraftDirty(stateFromStores1, stateFromStores2);
   let tmp16 = null != stateFromStores1;
   if (tmp16) {
@@ -196,7 +196,7 @@ export default function GuildSettingsModalServerTag(guildId) {
                   if (dependencyMap) {
                     outer1_10.current = true;
                     outer1_6(true);
-                    let obj2 = outer1_0(8283);
+                    let obj2 = outer1_0(8280);
                     ({ tag: obj4[0], badge: obj4[1], badgeColorPrimary: obj4[2], badgeColorSecondary: obj4[3] } = tmp43);
                     dependencyMap = 1;
                     c3 = 1;
@@ -267,7 +267,7 @@ export default function GuildSettingsModalServerTag(guildId) {
         }
       }
     }
-    navigation.setOptions({ headerRight: "r" });
+    navigation.setOptions({ headerRight: "Array" });
   }, items9);
   const items10 = [guildId, stateFromStores2];
   callback = obj6.useCallback(() => {
@@ -338,7 +338,7 @@ export default function GuildSettingsModalServerTag(guildId) {
         obj[0] = function onRetry() {
           return guildId(_undefined[17]).getGuildProfile(guildId, true);
         };
-        return callback(tmp26(11955), obj);
+        return callback(tmp26(11949), obj);
       } else if (null == stateFromStores1) {
         return callback(tmp2(5636).SceneLoadingIndicator, {});
       } else {
@@ -385,7 +385,7 @@ export default function GuildSettingsModalServerTag(guildId) {
             let badgeColorSecondary = stateFromStores1.badgeColorSecondary;
             obj5[2] = badgeColorSecondary;
             ({ SIZE_16: obj15[3], SIZE_16: obj15[4] } = c12);
-            tmp34Result = tmp34(tmp2(13053).GuildBadge, obj5);
+            tmp34Result = tmp34(tmp2(13048).GuildBadge, obj5);
           }
           const items12 = [tmp34Result, tmp31];
           obj4[3] = items12;
@@ -416,19 +416,19 @@ export default function GuildSettingsModalServerTag(guildId) {
           obj10[0] = guildId;
           ({ tag: obj21[1], badge: obj21[2], badgeColorPrimary: obj21[3], badgeColorSecondary: obj21[4] } = stateFromStores1);
           obj10[5] = result1;
-          items14[3] = tmp34(tmp26(13051), obj10);
+          items14[3] = tmp34(tmp26(13046), obj10);
           obj7[1] = items14;
           let tmp40 = obj7;
         } else {
           const obj11 = { guildId: null, onUnlockPress: null };
           obj11[0] = guildId;
           obj11[1] = callback2;
-          const items15 = [tmp34(tmp26(16420), obj11), tmp33Result];
+          const items15 = [tmp34(tmp26(16414), obj11), tmp33Result];
           obj7[1] = items15;
           tmp40 = obj7;
         }
         obj6[2] = closure_14(tmp2(4598).Stack, tmp40);
-        return callback(tmp2(7634).Form, obj6);
+        return callback(tmp2(7631).Form, obj6);
       }
     } else {
       return callback(tmp2(5636).SceneLoadingIndicator, {});

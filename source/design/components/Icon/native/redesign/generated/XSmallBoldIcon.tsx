@@ -1,10 +1,10 @@
-// Module ID: 7754
-// Function ID: 7755
+// Module ID: 7751
+// Function ID: 7752
 // Name: XSmallBoldIcon
 // Dependencies: [19, 21, 712, 3892, 5558, 2]
 // Exports: XSmallBoldIcon
 
-// Module 7754 (XSmallBoldIcon)
+// Module 7751 (XSmallBoldIcon)
 import "noop";
 import { jsx } from "jsxProd";
 

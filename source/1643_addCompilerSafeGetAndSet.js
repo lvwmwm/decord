@@ -20,7 +20,7 @@ function addCompilerSafeGetAndSet(prototype) {
   };
   obj = {
     value(__isAnimationDefinition) {
-      if (typeof __isAnimationDefinition !== "_") {
+      if (typeof __isAnimationDefinition !== "ZodObject") {
         if (!__isAnimationDefinition.__isAnimationDefinition) {
           obj.value = __isAnimationDefinition(obj.value);
         }
@@ -97,7 +97,7 @@ function makeMutableUI(initialValues) {
   };
   obj = {
     value(__isAnimationDefinition) {
-      if (typeof __isAnimationDefinition !== "_") {
+      if (typeof __isAnimationDefinition !== "ZodObject") {
         if (!__isAnimationDefinition.__isAnimationDefinition) {
           obj.value = __isAnimationDefinition(obj.value);
         }
@@ -174,7 +174,7 @@ export const makeMutable = isJest ? (function makeMutableWeb(prototype) {
   };
   obj = {
     value(__isAnimationDefinition) {
-      if (typeof __isAnimationDefinition !== "_") {
+      if (typeof __isAnimationDefinition !== "ZodObject") {
         if (!__isAnimationDefinition.__isAnimationDefinition) {
           obj.value = __isAnimationDefinition(obj.value);
         }
@@ -277,7 +277,7 @@ export const makeMutable = isJest ? (function makeMutableWeb(prototype) {
     },
     set: {
       value(__isAnimationDefinition) {
-        if (typeof __isAnimationDefinition !== "_") {
+        if (typeof __isAnimationDefinition !== "ZodObject") {
           if (!__isAnimationDefinition.__isAnimationDefinition) {
             obj.value = __isAnimationDefinition(obj.value);
           }

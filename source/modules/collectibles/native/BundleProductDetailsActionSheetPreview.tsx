@@ -1,10 +1,10 @@
-// Module ID: 8742
-// Function ID: 8743
+// Module ID: 8738
+// Function ID: 8739
 // Name: memo
-// Dependencies: [32, 19, 17, 678, 21, 4189, 712, 8743, 5273, 1236, 5810, 8744, 4185, 2]
+// Dependencies: [32, 19, 17, 678, 21, 4189, 712, 8739, 5273, 1236, 5810, 8740, 4185, 2]
 // Exports: default
 
-// Module 8742 (memo)
+// Module 8738 (memo)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -171,7 +171,7 @@ export default function BundleProductDetailsActionSheetPreview(arg0) {
   const tmp12 = onActiveItemChange;
   tmp4 = callback(callback5(product.skuId), 2);
   const items2 = [
-    callback6(onActiveItemChange(8744).IndividualProductPreview, {
+    callback6(onActiveItemChange(8740).IndividualProductPreview, {
       product: callback4(() => {
         const items = [_undefined];
         return { skuId: _undefined.skuId, type: _undefined.type, items };

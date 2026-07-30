@@ -1,10 +1,10 @@
-// Module ID: 8243
-// Function ID: 8244
+// Module ID: 8240
+// Function ID: 8241
 // Name: styles
-// Dependencies: [19, 21, 4189, 712, 4604, 1348, 4050, 4599, 6683, 2]
+// Dependencies: [19, 21, 4189, 712, 4604, 1348, 4050, 4599, 6680, 2]
 // Exports: FloatingActionButton
 
-// Module 8243 (styles)
+// Module 8240 (styles)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -83,6 +83,6 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   }
   obj1.icon = cloneElementResult;
   ({ button: obj4.style, iconButtonPill: obj4.pillStyle } = styles(positionRight(1348)("FloatingActionButton")));
-  obj[1] = jsx(positionBottom(6683).BaseIconButton, {});
+  obj[1] = jsx(positionBottom(6680).BaseIconButton, {});
   return jsx(positionRight(4050).View, { style: animatedStyle, children: null });
 };

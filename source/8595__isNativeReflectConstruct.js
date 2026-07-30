@@ -1,15 +1,17 @@
 // Module ID: 8595
 // Function ID: 8596
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 8547]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8596, 8552]
 
 // Module 8595 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
+import "noop";
+import { jsx } from "jsxProd";
 
-const FeSpotLight = arg1;
+const Filter = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeSpotLight {
+class Filter {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeSpotLight);
+    tmp = _isNativeReflectConstruct(this, Filter);
     tmp2 = __esModule;
-    obj = __esModule(FeSpotLight);
+    obj = __esModule(Filter);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -49,18 +51,31 @@ class FeSpotLight {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeSpotLight, require("noop").Component);
+require("_inherits")(Filter, require("_isNativeReflectConstruct"));
 const items = [
   {
     key: "render",
     value: function render() {
-      const result = FeSpotLight(8547).warnUnimplementedFilter();
-      return null;
+      const self = this;
+      const props = this.props;
+      let obj = { name: props.id, x: props.x, y: props.y, width: props.width, height: props.height, filterUnits: props.filterUnits, primitiveUnits: props.primitiveUnits };
+      obj = {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      };
+      const merged = Object.assign(obj);
+      obj.children = this.props.children;
+      return jsx(self(8596), {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      });
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(FeSpotLight, items);
-importDefaultResultResult.displayName = "FeSpotLight";
-importDefaultResultResult.defaultProps = {};
+const importDefaultResultResult = importDefaultResult(Filter, items);
+importDefaultResultResult.displayName = "Filter";
+importDefaultResultResult.defaultProps = { x: "-10%", y: "-10%", width: "120%", height: "120%", filterUnits: "objectBoundingBox", primitiveUnits: "userSpaceOnUse" };
 
 export default importDefaultResultResult;

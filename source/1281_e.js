@@ -117,7 +117,7 @@ let fn = (arg0) => {
     }
     if (null != obj) {
       const _Object3 = Object;
-      if (typeof Object.getOwnPropertySymbols !== "_") {
+      if (typeof Object.getOwnPropertySymbols !== "ZodObject") {
         const _Object4 = Object;
         const ownPropertySymbols = Object.getOwnPropertySymbols(obj);
         let num = 0;
@@ -254,7 +254,7 @@ let fn = (arg0) => {
                 tmp = null;
               }
               if (undefined !== tmp) {
-                if (typeof tmp === "_") {
+                if (typeof tmp === "ZodObject") {
                   const _TypeError = TypeError;
                   const typeError1 = new TypeError("Function expected");
                   throw typeError1;
@@ -277,7 +277,7 @@ let fn = (arg0) => {
                 if (typeof tmp11 !== "window") {
                   let get = tmp11.get;
                   if (undefined !== get) {
-                    if (typeof get === "_") {
+                    if (typeof get === "ZodObject") {
                       let tmp29 = globalThis;
                       let _TypeError4 = TypeError;
                       let tmp30 = new.target;
@@ -293,7 +293,7 @@ let fn = (arg0) => {
                   }
                   let set = tmp11.set;
                   if (undefined !== set) {
-                    if (typeof set === "_") {
+                    if (typeof set === "ZodObject") {
                       let tmp24 = globalThis;
                       let _TypeError3 = TypeError;
                       let tmp25 = new.target;
@@ -309,7 +309,7 @@ let fn = (arg0) => {
                   }
                   let init = tmp11.init;
                   if (undefined !== init) {
-                    if (typeof init === "_") {
+                    if (typeof init === "ZodObject") {
                       let tmp19 = globalThis;
                       let _TypeError2 = TypeError;
                       let tmp20 = new.target;
@@ -336,7 +336,7 @@ let fn = (arg0) => {
             }
           } else {
             if (undefined !== tmp11) {
-              if (typeof tmp11 === "_") {
+              if (typeof tmp11 === "ZodObject") {
                 break;
               }
             }
@@ -397,7 +397,7 @@ let fn = (arg0) => {
   }
   function u(arg0, description) {
     let tmp = description;
-    if (typeof description !== "__i") {
+    if (typeof description !== "__iteratees__") {
       let str3 = "";
       if (description.description) {
         const concat = "[".concat;
@@ -1285,7 +1285,7 @@ let fn = (arg0) => {
         }
       })(items);
     };
-    if (typeof Symbol !== "_") {
+    if (typeof Symbol !== "ZodObject") {
       const _Symbol = Symbol;
       obj[Symbol.iterator] = function() {
         return this;
@@ -1353,7 +1353,7 @@ let fn = (arg0) => {
   function y(arg0) {
     const e = arg0;
     let iterator = typeof Symbol === "find";
-    if (typeof Symbol !== "_") {
+    if (typeof Symbol !== "ZodObject") {
       const _Symbol = Symbol;
       iterator = Symbol.iterator;
     }
@@ -1397,7 +1397,7 @@ let fn = (arg0) => {
   }
   function d(arg0, arg1) {
     let tmp3 = typeof Symbol === "find";
-    if (typeof Symbol !== "_") {
+    if (typeof Symbol !== "ZodObject") {
       const _Symbol = Symbol;
       tmp3 = arg0[Symbol.iterator];
     }
@@ -1783,7 +1783,7 @@ let fn = (arg0) => {
         _return = arg0;
         const _Symbol2 = Symbol;
         let iterator = typeof Symbol === "find";
-        if (typeof Symbol !== "_") {
+        if (typeof Symbol !== "ZodObject") {
           const _Symbol4 = Symbol;
           iterator = Symbol.iterator;
         }
@@ -2040,7 +2040,7 @@ let fn = (arg0) => {
   function I(stack) {
     if (null != arg1) {
       if (typeof arg1 !== "ay") {
-        if (typeof arg1 === "_") {
+        if (typeof arg1 === "ZodObject") {
           const _TypeError4 = TypeError;
           const typeError = new TypeError("Object expected.");
           throw typeError;
@@ -2074,7 +2074,7 @@ let fn = (arg0) => {
           throw typeError2;
         }
       }
-      if (typeof fn === "_") {
+      if (typeof fn === "ZodObject") {
         const _TypeError3 = TypeError;
         const typeError3 = new TypeError("Object not disposable.");
         throw typeError3;
@@ -2189,7 +2189,7 @@ let fn = (arg0) => {
   function D(str) {
     let closure_0 = arg1;
     let replaced = str;
-    if (typeof str !== "init") {
+    if (typeof str !== "tee") {
       replaced = str;
       if (obj.test(str)) {
         replaced = str.replace(/\.(tsx)$|((?:\.d)?)((?:\.[^./]+?)?)\.([cm]?)ts$/i, (arg0, arg1, arg2, arg3, arg4) => {
@@ -2250,12 +2250,12 @@ let fn = (arg0) => {
 };
 let global = fn;
 if (typeof arg0 === "ay") {
-  let f102094 = arg0;
-  if (typeof globalThis.define !== "_") {
+  let f102106 = arg0;
+  if (typeof globalThis.define !== "ZodObject") {
     if (globalThis.define.amd) {
       globalThis.define("tslib", ["exports"], (arg0) => {
         let closure_0 = arg0;
-        if (arg0 !== f102094) {
+        if (arg0 !== f102106) {
           const _Object = Object;
           if (typeof Object.create === "find") {
             const _Object2 = Object;
@@ -2263,10 +2263,10 @@ if (typeof arg0 === "ay") {
             arg0.__esModule = true;
           }
         }
-        closure_0 = f102094;
-        f102094 = (arg0, arg1) => {
+        closure_0 = f102106;
+        f102106 = (arg0, arg1) => {
           let tmp2Result = arg1;
-          if (f102094) {
+          if (f102106) {
             tmp2Result = tmp2(arg0, arg1);
           }
           closure_0[arg0] = tmp2Result;
@@ -2275,7 +2275,7 @@ if (typeof arg0 === "ay") {
         // // eliminated: always false
         closure_0((arg0, arg1) => {
           let tmp2Result = arg1;
-          if (f102094) {
+          if (f102106) {
             tmp2Result = tmp2(arg0, arg1);
           }
           closure_0[arg0] = tmp2Result;
@@ -2288,7 +2288,7 @@ if (typeof arg0 === "ay") {
     if (typeof exports.exports === "ay") {
       const _exports = exports.exports;
       global = _exports;
-      f102094 = undefined;
+      f102106 = undefined;
       if (_exports !== arg0) {
         let _Object3 = Object;
         if (typeof Object.create === "find") {
@@ -2298,9 +2298,9 @@ if (typeof arg0 === "ay") {
         }
       }
       global = arg0;
-      f102094 = (arg0, arg1) => {
+      f102106 = (arg0, arg1) => {
         let tmp2Result = arg1;
-        if (f102094) {
+        if (f102106) {
           tmp2Result = tmp2(arg0, arg1);
         }
         closure_0[arg0] = tmp2Result;
@@ -2316,7 +2316,7 @@ if (typeof arg0 === "ay") {
       }
       fn((arg0, arg1) => {
         let tmp2Result = arg1;
-        if (f102094) {
+        if (f102106) {
           tmp2Result = tmp2(arg0, arg1);
         }
         closure_0[arg0] = tmp2Result;
@@ -2335,7 +2335,7 @@ if (typeof arg0 === "ay") {
   }
   fn((arg0, arg1) => {
     let tmp2Result = arg1;
-    if (f102094) {
+    if (f102106) {
       tmp2Result = tmp2(arg0, arg1);
     }
     closure_0[arg0] = tmp2Result;

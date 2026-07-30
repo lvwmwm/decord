@@ -1,10 +1,10 @@
-// Module ID: 7508
-// Function ID: 7509
+// Module ID: 7505
+// Function ID: 7506
 // Name: SpeakerSpotIllustration
-// Dependencies: [21, 5141, 7509, 2]
+// Dependencies: [21, 5141, 7506, 2]
 // Exports: SpeakerSpotIllustration
 
-// Module 7508 (SpeakerSpotIllustration)
+// Module 7505 (SpeakerSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SpeakerSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const SpeakerSpotIllustration = function SpeakerSpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7509);
+  obj[0] = importDefault(7506);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

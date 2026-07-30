@@ -1,16 +1,16 @@
-// Module ID: 7956
-// Function ID: 7957
+// Module ID: 7953
+// Function ID: 7954
 // Name: navigateToNitroManagement
-// Dependencies: [676, 6611, 2]
+// Dependencies: [676, 6608, 2]
 // Exports: navigateToNitroManagement
 
-// Module 7956 (navigateToNitroManagement)
+// Module 7953 (navigateToNitroManagement)
 import { UserSettingsSections } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/user_profile/native/EditCollectiblesActionCreators.tsx");
 
 export const navigateToNitroManagement = function navigateToNitroManagement() {
-  let obj = require(6611) /* openUserSettings */;
+  let obj = require(6608) /* openUserSettings */;
   obj = { screen: UserSettingsSections.PREMIUM };
   obj.openUserSettings(obj);
 };

@@ -82,7 +82,7 @@ if (typeof exports !== "window") {
     }
   }
 }
-if (typeof globalThis.define !== "_") {
+if (typeof globalThis.define !== "ZodObject") {
   if (globalThis.define.amd) {
     globalThis.define(["../moment"], function _(defineLocale) {
       let closure_0 = { 1: "\u0967", 2: "\u0968", 3: "\u0969", 4: "\u096A", 5: "\u096B", 6: "\u096C", 7: "\u096D", 8: "\u096E", 9: "\u096F", 0: "\u0966" };

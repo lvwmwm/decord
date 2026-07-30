@@ -678,7 +678,7 @@ function _fetchPayments() {
               body = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -1136,7 +1136,7 @@ function _createSubscription() {
                 let billingError;
                 c10 = 1;
                 c11 = 1;
-                return { value: "ct", done: null };
+                return { value: "ct", done: "Array" };
               }
             } else {
               if (1 === tmp6) {
@@ -2154,7 +2154,7 @@ function _fetchIpCountryCode() {
               let country_code;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -2291,7 +2291,7 @@ function _fetchIpLocation() {
               let subdivision_code;
               message = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

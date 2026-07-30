@@ -1,8 +1,8 @@
-// Module ID: 15265
-// Function ID: 15266
-// Dependencies: [19, 17, 4001, 14125, 14942, 21, 4189, 589, 3893, 712, 14127, 1474, 4043, 14936, 4050, 4000, 688, 4611, 2]
+// Module ID: 15259
+// Function ID: 15260
+// Dependencies: [19, 17, 4001, 14121, 14936, 21, 4189, 589, 3893, 712, 14123, 1474, 4043, 14930, 4050, 4000, 688, 4611, 2]
 
-// Module 15265
+// Module 15259
 import { View } from "LinearGradient";
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import { YOU_BAR_GRADIENT_EXTRA_HEIGHT as closure_5 } from "CONNECTION_BANNER_HEIGHT";
@@ -20,7 +20,7 @@ let closure_10 = createCacheKey.createStyles({ container: { position: "absolute"
 let closure_11 = { code: "function YouBarFloatingShadeTsx1(){const{gradientHeight,drawerWidth}=this.__closure;return{height:gradientHeight,opacity:1,width:drawerWidth};}" };
 const memoResult = require("noop").memo(function YouBarFloatingShade() {
   const tmp = callback3();
-  let obj = require(14127) /* useYouBarTotalHeight */;
+  let obj = require(14123) /* useYouBarTotalHeight */;
   const youBarTotalHeight = obj.useYouBarTotalHeight();
   const sum = youBarTotalHeight + closure_5;
   require = sum;

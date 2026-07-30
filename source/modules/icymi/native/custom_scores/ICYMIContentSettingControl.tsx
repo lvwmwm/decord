@@ -1,13 +1,13 @@
-// Module ID: 15329
-// Function ID: 15330
+// Module ID: 15323
+// Function ID: 15324
 // Name: ContentSettingsControl
-// Dependencies: [32, 19, 17, 4385, 8170, 21, 4189, 712, 8184, 1236, 1297, 15330, 15331, 15332, 8224, 8755, 589, 15333, 4185, 5555, 4380, 2]
+// Dependencies: [32, 19, 17, 4385, 8167, 21, 4189, 712, 8181, 1236, 1297, 15324, 15325, 15326, 8221, 8751, 589, 15327, 4185, 5555, 4380, 2]
 // Exports: ChannelScoreSettings, GuildScoreSettings
 
-// Module 15329 (ContentSettingsControl)
+// Module 15323 (ContentSettingsControl)
 import _slicedToArray from "_slicedToArray";
 import TableSwitchRow from "TableSwitchRow";
-import { View } from "module_15333";
+import { View } from "module_15327";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import filterStaffGuild from "filterStaffGuild";
 import jsxProd from "set";
@@ -29,10 +29,10 @@ function ContentSettingsControl(initialValue) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.rdt65I);
   obj = { source: null, style: null };
-  obj[0] = importDefault(15330);
+  obj[0] = importDefault(15324);
   const items = [tmp.icon, ];
   let iconSelected = null;
-  if (tmp3 === require(8184) /* generateHydrationId */.ICYMICustomScore.LESS) {
+  if (tmp3 === require(8181) /* generateHydrationId */.ICYMICustomScore.LESS) {
     iconSelected = tmp.iconSelected;
   }
   items[1] = iconSelected;
@@ -43,10 +43,10 @@ function ContentSettingsControl(initialValue) {
   const intl2 = tmp4(1236).intl;
   obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.SnrG00);
   const obj1 = { source: null, style: null };
-  obj1[0] = importDefault(15331);
+  obj1[0] = importDefault(15325);
   const items2 = [tmp.icon, ];
   let iconSelected1 = null;
-  if (tmp3 === require(8184) /* generateHydrationId */.ICYMICustomScore.DEFAULT) {
+  if (tmp3 === require(8181) /* generateHydrationId */.ICYMICustomScore.DEFAULT) {
     iconSelected1 = tmp.iconSelected;
   }
   items2[1] = iconSelected1;
@@ -57,10 +57,10 @@ function ContentSettingsControl(initialValue) {
   const intl3 = tmp4(1236).intl;
   obj2[0] = intl3.string(require(1236) /* getSystemLocale */.t.Rxe3jF);
   const obj3 = { source: null, style: null };
-  obj3[0] = importDefault(15332);
+  obj3[0] = importDefault(15326);
   const items3 = [tmp.icon, ];
   let iconSelected2 = null;
-  if (tmp3 === require(8184) /* generateHydrationId */.ICYMICustomScore.MORE) {
+  if (tmp3 === require(8181) /* generateHydrationId */.ICYMICustomScore.MORE) {
     iconSelected2 = tmp.iconSelected;
   }
   items3[1] = iconSelected2;
@@ -84,15 +84,15 @@ function ContentSettingsControl(initialValue) {
     defaultIndex: null
   };
   let num = 0;
-  if (require(8184) /* generateHydrationId */.ICYMICustomScore.LESS !== tmp3) {
+  if (require(8181) /* generateHydrationId */.ICYMICustomScore.LESS !== tmp3) {
     num = 1;
-    if (tmp4(8184).ICYMICustomScore.MORE === tmp3) {
+    if (tmp4(8181).ICYMICustomScore.MORE === tmp3) {
       num = 2;
     }
   }
   obj4[3] = num;
   let obj5 = null;
-  const segmentedControlState = require(8224) /* useSegmentedControlState */.useSegmentedControlState(obj4);
+  const segmentedControlState = require(8221) /* useSegmentedControlState */.useSegmentedControlState(obj4);
   if (disabled) {
     obj5 = { opacity: 0.7 };
   }
@@ -102,7 +102,7 @@ function ContentSettingsControl(initialValue) {
     str = "none";
   }
   obj6[1] = str;
-  obj6[2] = closure_8(require(8755) /* SegmentedControl */.SegmentedControl, { variant: "experimental_Large", state: segmentedControlState });
+  obj6[2] = closure_8(require(8751) /* SegmentedControl */.SegmentedControl, { variant: "experimental_Large", state: segmentedControlState });
   return closure_8(View, obj6);
 }
 ({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
@@ -128,10 +128,10 @@ export const GuildScoreSettings = function GuildScoreSettings(guild) {
   let obj = id(589);
   const items = [filterStaffGuild];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getCustomGuildScore(id));
-  let obj1 = id(8184);
+  let obj1 = id(8181);
   const numberToCustomScoreResult = obj1.numberToCustomScore(stateFromStores);
   c1 = numberToCustomScoreResult;
-  const tmp5 = numberToCustomScoreResult === id(8184).ICYMICustomScore.MUTED;
+  const tmp5 = numberToCustomScoreResult === id(8181).ICYMICustomScore.MUTED;
   const items1 = [id];
   const items2 = [numberToCustomScoreResult, id];
   const callback = React.useCallback((arg0) => {

@@ -63,7 +63,7 @@ let items = [
       if (typeof arg0 === "find") {
         let fn = callback3(callback2(self.prototype), "setState", self);
         fn2 = fn;
-        if (typeof fn !== "_") {
+        if (typeof fn !== "ZodObject") {
           fn = (items) => fn2.apply(self, items);
         }
         const items = [
@@ -82,7 +82,7 @@ let items = [
         fn(items);
       } else {
         fn2 = callback3(callback2(self.prototype), "setState", self);
-        if (typeof fn2 !== "_") {
+        if (typeof fn2 !== "ZodObject") {
           fn2 = (items) => fn2.apply(self, items);
         }
         const items1 = [arg0, arg1];

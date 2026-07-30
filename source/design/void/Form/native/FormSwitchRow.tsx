@@ -1,10 +1,10 @@
-// Module ID: 7652
-// Function ID: 7653
+// Module ID: 7649
+// Function ID: 7650
 // Name: FormSwitchRow
-// Dependencies: [32, 19, 17, 21, 4189, 500, 5213, 5233, 7650, 5219, 5555, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 500, 5213, 5233, 7647, 5219, 5555, 2]
 // Exports: default
 
-// Module 7652 (FormSwitchRow)
+// Module 7649 (FormSwitchRow)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -45,7 +45,7 @@ function FormSwitchRow(onValueChange) {
     callback(closure_1);
   }, items);
   let tmp8;
-  if (typeof label !== "init") {
+  if (typeof label !== "tee") {
     tmp8 = label;
   }
   let sum = tmp8;

@@ -1,10 +1,10 @@
-// Module ID: 15385
-// Function ID: 15386
+// Module ID: 15379
+// Function ID: 15380
 // Name: ExploreServersRow
-// Dependencies: [5, 32, 19, 17, 21, 4050, 4185, 15322, 712, 8185, 15339, 15335, 4041, 4190, 3893, 12004, 1236, 4600, 15361, 4611, 691, 689, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4050, 4185, 15316, 712, 8182, 15333, 15329, 4041, 4190, 3893, 11998, 1236, 4600, 15355, 4611, 691, 689, 2]
 // Exports: default
 
-// Module 15385 (ExploreServersRow)
+// Module 15379 (ExploreServersRow)
 import module_4050 from "module_4050";
 import _slicedToArray from "_slicedToArray";
 import LinearGradient from "LinearGradient";
@@ -92,16 +92,16 @@ export default function ExploreServersRow(visible) {
           } else {
             let closure_0 = tmp4;
             dependencyMap(true);
-            v0(8185).itemInteracted("caught_up", "caught_up", "press_explore");
-            const obj5 = v0(8185);
+            v0(8182).itemInteracted("caught_up", "caught_up", "press_explore");
+            const obj5 = v0(8182);
             const obj1 = { itemId: "caught_up", itemType: "caught_up", actionParameters: null };
             obj1[2] = { actionGestureType: "press", actionTargetElement: "browse_servers_button", actionIntentType: "open", actionDestinationType: null };
-            v0(8185).feedItemActioned(obj1);
-            const obj6 = v0(8185);
+            v0(8182).feedItemActioned(obj1);
+            const obj6 = v0(8182);
             v0 = 1;
             dependencyMap = 1;
             const obj2 = { value: null, done: false };
-            obj2[0] = outer1_0(15339).maybeFetchGuildDiscoveryCategories();
+            obj2[0] = outer1_0(15333).maybeFetchGuildDiscoveryCategories();
             return obj2;
           }
         } else if (arg0 === 1) {
@@ -130,10 +130,10 @@ export default function ExploreServersRow(visible) {
     }
   }), []);
   const callback1 = React.useCallback(() => {
-    sharedValue(8185).itemInteracted("caught_up", "caught_up", "press_home");
-    const obj = sharedValue(8185);
-    sharedValue(8185).feedItemActioned({ itemId: "caught_up", itemType: "caught_up", actionParameters: { actionGestureType: "press", actionTargetElement: "back_to_home_button", actionIntentType: "navigate", actionDestinationType: "guild_home" } });
-    const obj2 = sharedValue(8185);
+    sharedValue(8182).itemInteracted("caught_up", "caught_up", "press_home");
+    const obj = sharedValue(8182);
+    sharedValue(8182).feedItemActioned({ itemId: "caught_up", itemType: "caught_up", actionParameters: { actionGestureType: "press", actionTargetElement: "back_to_home_button", actionIntentType: "navigate", actionDestinationType: "guild_home" } });
+    const obj2 = sharedValue(8182);
     const rootNavigationRef = visible(4041).getRootNavigationRef();
     if (rootNavigationRef != null) {
       rootNavigationRef.navigate("tabs", { screen: "guilds" });
@@ -252,7 +252,7 @@ export default function ExploreServersRow(visible) {
   const obj4 = { style: tmp.textContainer, children: null };
   obj5 = { style: items1, children: null };
   items1 = [tmp.iconWrapper, animatedStyle];
-  obj5[1] = callback3(visible(12004).FlashIcon, { size: "custom", style: tmp.icon, color: "background-brand" });
+  obj5[1] = callback3(visible(11998).FlashIcon, { size: "custom", style: tmp.icon, color: "background-brand" });
   const items2 = [callback3(sharedValue(4050).View, obj5), , ];
   obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: items3, children: null };
   items3 = [tmp.headerText, animatedStyle1];
@@ -281,7 +281,7 @@ export default function ExploreServersRow(visible) {
   obj9[1] = items6;
   items5[1] = callback4(View, obj9);
   obj3[1] = items5;
-  const items7 = [callback4(View, obj3), callback3(visible(15361).Separator, {}), ];
+  const items7 = [callback4(View, obj3), callback3(visible(15355).Separator, {}), ];
   const obj12 = { style: tmp.gradient, start: null, end: null, colors: null, pointerEvents: "none" };
   obj12[1] = visible(691).VerticalGradient.START;
   obj12[2] = visible(691).VerticalGradient.END;

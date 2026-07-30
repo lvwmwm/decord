@@ -264,7 +264,7 @@ class FeedbackWidget {
                 fileName = undefined;
                 uri = undefined;
                 if (uri._hasScreenshot()) {
-                  debug.setState({ filename: "Array", attachment: "call", attachmentUri: "string" });
+                  debug.setState({ filename: "Array", attachment: "HermesInternal", attachmentUri: "r" });
                 } else {
                   num2 = debug.props.imagePicker;
                   if (num2) {

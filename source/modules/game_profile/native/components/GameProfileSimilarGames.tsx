@@ -1,10 +1,10 @@
-// Module ID: 11922
-// Function ID: 11923
+// Module ID: 11918
+// Function ID: 11919
 // Name: Spacer
-// Dependencies: [19, 17, 21, 712, 4189, 8476, 8486, 8480, 1236, 4185, 8512, 11923, 1474, 6676, 2]
+// Dependencies: [19, 17, 21, 712, 4189, 8473, 8483, 8477, 1236, 4185, 8509, 11919, 1474, 6673, 2]
 // Exports: default
 
-// Module 11922 (Spacer)
+// Module 11918 (Spacer)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -126,10 +126,10 @@ export default function GameProfileSimilarGames(trackAction) {
   trackAction = trackAction.trackAction;
   let importDefault;
   const tmp = createCacheKey();
-  const GameProfileSimilarGamesMobileExperiment = trackAction(8512).GameProfileSimilarGamesMobileExperiment;
+  const GameProfileSimilarGamesMobileExperiment = trackAction(8509).GameProfileSimilarGamesMobileExperiment;
   const config = GameProfileSimilarGamesMobileExperiment.useConfig({ location: "GameProfileSimilarGames" });
   ({ enabled, dense } = config);
-  const tmp6 = importDefault(11923)(trackAction.gameId, enabled);
+  const tmp6 = importDefault(11919)(trackAction.gameId, enabled);
   const similarGames = tmp6.similarGames;
   let num = 3;
   if (dense) {
@@ -155,7 +155,7 @@ export default function GameProfileSimilarGames(trackAction) {
     obj1[4] = Spacer;
     obj1[5] = ListPadding;
     obj1[6] = ListPadding;
-    items[1] = callback(tmp2(6676).FlashList, obj1);
+    items[1] = callback(tmp2(6673).FlashList, obj1);
     obj[1] = items;
     let tmp10 = callback2(closure_6, obj);
   } else {
@@ -179,7 +179,7 @@ export default function GameProfileSimilarGames(trackAction) {
       obj5[5] = ListPadding;
       obj5[6] = ListPadding;
       obj5[8] = result + PX_12;
-      items1[1] = callback(tmp2(6676).FlashList, obj5);
+      items1[1] = callback(tmp2(6673).FlashList, obj5);
       obj2[1] = items1;
       tmp10 = callback2(closure_6, obj2);
     }

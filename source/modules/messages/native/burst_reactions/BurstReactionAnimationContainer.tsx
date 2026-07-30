@@ -1,10 +1,10 @@
-// Module ID: 15739
-// Function ID: 15740
+// Module ID: 15733
+// Function ID: 15734
 // Name: BurstReactionAnimationContainerInner
-// Dependencies: [32, 19, 17, 1369, 21, 4189, 712, 6095, 4158, 4159, 709, 4050, 4190, 9664, 1358, 1297, 6137, 4185, 1236, 3901, 2]
+// Dependencies: [32, 19, 17, 1369, 21, 4189, 712, 6093, 4158, 4159, 709, 4050, 4190, 9661, 1358, 1297, 6135, 4185, 1236, 3901, 2]
 // Exports: default
 
-// Module 15739 (BurstReactionAnimationContainerInner)
+// Module 15733 (BurstReactionAnimationContainerInner)
 import _slicedToArray from "_slicedToArray";
 import ManaContext from "ManaContext";
 import get_ActivityIndicator from "Text";
@@ -90,7 +90,7 @@ function BurstReactionAnimationContainerInner() {
       obj = { style: items, children: null };
       items = [markAsDismissed.fill, closure_7];
       obj = { activeOpacity: null, onPress: null, style: null, children: null };
-      obj[0] = callback(6095).BACKDROP_OPACITY;
+      obj[0] = callback(6093).BACKDROP_OPACITY;
       obj[1] = function onPress() {
         outer1_4(false);
         outer1_5.current = false;
@@ -107,7 +107,7 @@ function BurstReactionAnimationContainerInner() {
           callback(false);
           closure_5.current = false;
         };
-        tmpResult = tmp(first(6137), obj3);
+        tmpResult = tmp(first(6135), obj3);
       }
       obj2[1] = tmpResult;
       items1[1] = outer1_8(handleComponentFinish, obj2);
@@ -131,8 +131,8 @@ function BurstReactionAnimationContainerInner() {
       obj[1] = outer1_8(first(4050).View, obj);
       return outer1_8(callback(1297).OverlayView, obj);
     };
-    tmp8 = callback(first(9664), obj);
-    let tmp11 = first(9664);
+    tmp8 = callback(first(9661), obj);
+    let tmp11 = first(9661);
   }
   return tmp8;
 }

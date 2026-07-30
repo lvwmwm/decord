@@ -1,10 +1,10 @@
-// Module ID: 9700
-// Function ID: 9701
+// Module ID: 9697
+// Function ID: 9698
 // Name: PremiumGiftModal
-// Dependencies: [32, 19, 1874, 21, 6295, 4189, 712, 589, 8673, 1236, 5143, 9701, 9778, 9780, 9785, 2319, 9824, 9699, 5535, 5515, 5503, 514, 4395, 3848, 8772, 8804, 9828, 5570, 2]
+// Dependencies: [32, 19, 1874, 21, 6292, 4189, 712, 589, 8670, 1236, 5143, 9698, 9775, 9777, 9782, 2319, 9821, 9696, 5535, 5515, 5503, 514, 4395, 3848, 8768, 8800, 9825, 5570, 2]
 // Exports: default
 
-// Module 9700 (PremiumGiftModal)
+// Module 9697 (PremiumGiftModal)
 import _slicedToArray from "_slicedToArray";
 import context from "context";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -75,10 +75,10 @@ export default function PremiumGiftModal(analyticsLocations) {
       }
       return user;
     });
-    let obj2 = recipientUserId(8673);
+    let obj2 = recipientUserId(8670);
     const fetchWishlistAndProfileInfoForUser = obj2.useFetchWishlistAndProfileInfoForUser(recipientUserId);
     ({ wishlist: c1, userProfile: c2, wishlistId: c3, error: c4 } = fetchWishlistAndProfileInfoForUser);
-    let obj3 = recipientUserId(8673);
+    let obj3 = recipientUserId(8670);
     obj = { isGift: true, giftRecipient: null, isSocialLayerStorefrontEnabled: false };
     obj[1] = stateFromStores;
     shouldShowWishlistInDMGifting = obj3.useShouldShowWishlistInDMGifting(obj);
@@ -169,7 +169,7 @@ export default function PremiumGiftModal(analyticsLocations) {
       return callback(_undefined(_undefined2[16]), {
         currentProgress: currentProgress.currentProgress,
         onSendGift(arg0) {
-          let obj = callback(9699);
+          let obj = callback(9696);
           obj = { analyticsLocations: null };
           const items = [callback2(5535).GIFTING_BADGE_POST_PURCHASE];
           obj[0] = items;
@@ -194,7 +194,7 @@ export default function PremiumGiftModal(analyticsLocations) {
       obj8[6] = order;
       const obj9 = { currentStep: null, children: null };
       obj9[0] = tmp21[0];
-      let tmpResult = tmp(9828);
+      let tmpResult = tmp(9825);
       const obj10 = { initialRouteName: null, screens: null, onStateChange: null };
       obj10[0] = initialRoute;
       obj10[1] = obj2;
@@ -205,11 +205,11 @@ export default function PremiumGiftModal(analyticsLocations) {
       };
       obj9[1] = tmp23(tmp11(5570).Navigator, obj10);
       obj8[7] = tmp23(tmpResult, obj9);
-      obj7[1] = tmp23(tmp11(8804).NativeGiftContextProvider, obj8);
+      obj7[1] = tmp23(tmp11(8800).NativeGiftContextProvider, obj8);
       let tmp23Result = tmp23(tmp11(5515).AnalyticsLocationProvider, obj7);
     } else {
       const obj11 = { title: null };
-      tmpResult = tmp(8772);
+      tmpResult = tmp(8768);
       const intl3 = tmp11(1236).intl;
       obj11[0] = intl3.string(tmp11(1236).t["JCFN/y"]);
       tmp23Result = tmp23(tmpResult, obj11);

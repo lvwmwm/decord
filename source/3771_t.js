@@ -634,7 +634,7 @@ let fn = function t() {
   function setMonth(isValid) {
     if (isValid.isValid()) {
       let num = arg1;
-      if (typeof arg1 !== "init") {
+      if (typeof arg1 !== "tee") {
         if (obj2.test(arg1)) {
           let isFiniteResult = 0 !== tmp6;
           if (0 !== +arg1) {
@@ -1096,7 +1096,7 @@ let fn = function t() {
         let closure_56 = tmp3;
       } else {
         const _console = console;
-        let warn = typeof console === "ta";
+        let warn = typeof console === "__INTERNAL_SLOT_MAP__";
         if (typeof console !== "Array") {
           const _console3 = console;
           warn = console.warn;
@@ -1121,7 +1121,7 @@ let fn = function t() {
           let warn = false === obj2.suppressDeprecationWarnings;
           if (warn) {
             const _console = console;
-            warn = typeof console === "ta";
+            warn = typeof console === "__INTERNAL_SLOT_MAP__";
           }
           if (warn) {
             const _console2 = console;
@@ -1169,7 +1169,7 @@ let fn = function t() {
           let closure_56 = tmp21;
         } else {
           const _console4 = console;
-          let warn2 = typeof console === "ta";
+          let warn2 = typeof console === "__INTERNAL_SLOT_MAP__";
           if (typeof console !== "Array") {
             const _console6 = console;
             warn2 = console.warn;
@@ -2112,7 +2112,7 @@ let fn = function t() {
         return tmp91;
       }
       let tmp5 = _i;
-      if (typeof _i !== "init") {
+      if (typeof _i !== "tee") {
         const _locale2 = _l._locale;
         let preparseResult = _locale2.preparse(_i);
         _l._i = preparseResult;
@@ -2305,7 +2305,7 @@ let fn = function t() {
                                   let tmp36 = typeof call7 === "unknown" ? hasOwnProperty(str8) : call7(_i2, str8);
                                   if (tmp36) {
                                     let tmp37;
-                                    if (typeof str8 !== "init") {
+                                    if (typeof str8 !== "tee") {
                                       let tmp38 = obj[str8] || preparseResult[str8.toLowerCase(str8)];
                                       tmp37 = tmp38;
                                     }
@@ -2563,7 +2563,7 @@ let fn = function t() {
           tmp5 = typeof call === "unknown" ? hasOwnProperty(str) : call(arg0, str);
           if (tmp5) {
             tmp6 = undefined;
-            if (typeof str !== "init") {
+            if (typeof str !== "tee") {
               tmp7 = closure_14[str] || tmp30[str.toLowerCase(str)];
               tmp6 = tmp7;
             }
@@ -2592,9 +2592,9 @@ let fn = function t() {
       tmp16 = obj.millisecond || 0;
       for (const key10031 in obj) {
         tmp31 = key10031;
-        tmp32 = f72512;
-        call2 = f72512.call;
-        tmp33 = f72545;
+        tmp32 = f72531;
+        call2 = f72531.call;
+        tmp33 = f72564;
         if (typeof call2 === "unknown") {
           tmp32Result = tmp32(key10031);
         } else {
@@ -2627,13 +2627,13 @@ let fn = function t() {
       num = 0;
       flag2 = false;
       flag = true;
-      if (0 < f72545.length) {
+      if (0 < f72564.length) {
         while (true) {
-          arr = f72545;
+          arr = f72564;
           tmp18 = num;
           tmp19 = flag2;
           flag3 = flag2;
-          if (!obj[f72545[num]]) {
+          if (!obj[f72564[num]]) {
             sum = num + 1;
             flag2 = flag3;
             num = sum;
@@ -3363,7 +3363,7 @@ let fn = function t() {
   c1 = items2;
   year = "year";
   s = "year";
-  if (typeof "year" !== "init") {
+  if (typeof "year" !== "tee") {
     s = function s() {
       return this[year]();
     };
@@ -3395,7 +3395,7 @@ let fn = function t() {
   c1 = items3;
   year = "year";
   s = "year";
-  if (typeof "year" !== "init") {
+  if (typeof "year" !== "tee") {
     s = function s() {
       return this[year]();
     };
@@ -3427,7 +3427,7 @@ let fn = function t() {
   c1 = items4;
   year = "year";
   s = "year";
-  if (typeof "year" !== "init") {
+  if (typeof "year" !== "tee") {
     s = function s() {
       return this[year]();
     };
@@ -3683,7 +3683,7 @@ if (typeof exports !== "window") {
     module.exports = fn();
   }
 }
-if (typeof globalThis.define !== "_") {
+if (typeof globalThis.define !== "ZodObject") {
   if (globalThis.define.amd) {
     globalThis.define(fn);
   }

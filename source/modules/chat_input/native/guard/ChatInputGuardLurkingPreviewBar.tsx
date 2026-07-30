@@ -1,8 +1,8 @@
-// Module ID: 11526
-// Function ID: 11527
-// Dependencies: [19, 17, 1862, 11155, 676, 21, 4189, 712, 589, 4157, 8453, 1959, 4384, 4717, 5566, 4185, 8464, 1297, 5565, 1236, 11527, 2]
+// Module ID: 11522
+// Function ID: 11523
+// Dependencies: [19, 17, 1862, 11151, 676, 21, 4189, 712, 589, 4157, 8450, 1959, 4384, 4717, 5566, 4185, 8461, 1297, 5565, 1236, 11523, 2]
 
-// Module 11526
+// Module 11522
 import importAllResult from "getSystemLocale";
 import { View } from "Button";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -71,7 +71,7 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurkingPreviewBar
     obj5[0] = tmp2(1297).Icon.Sizes.SMALL;
     obj5[1] = stateFromStores;
     obj5[2] = tmp.badge;
-    items4[1] = callback(importDefault(8464), obj5);
+    items4[1] = callback(importDefault(8461), obj5);
     const obj6 = { size: "xs", color: null, style: null };
     obj6[1] = importDefault(712).colors.TEXT_MUTED;
     obj6[2] = tmp.chevron;
@@ -90,10 +90,10 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurkingPreviewBar
     obj8[0] = guildId;
     obj8[1] = constants.CHAT_INPUT_BLOCKER;
     obj8[2] = tmp6;
-    items6[1] = callback(importDefault(11527), obj8);
+    items6[1] = callback(importDefault(11523), obj8);
     obj[1] = items6;
     tmp7 = callback2(View, obj);
-    const tmp13 = importDefault(8464);
+    const tmp13 = importDefault(8461);
   }
   return tmp7;
 });

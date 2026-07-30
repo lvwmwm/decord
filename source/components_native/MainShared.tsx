@@ -1,10 +1,10 @@
-// Module ID: 15735
-// Function ID: 15736
+// Module ID: 15729
+// Function ID: 15730
 // Name: BurstReactionAnimationContainer
-// Dependencies: [19, 17, 1372, 4261, 21, 589, 10522, 4040, 10689, 15736, 500, 13632, 1236, 15738, 13627, 13499, 2, 15739, 15740, 15741, 15742, 15750, 15753, 15780]
+// Dependencies: [19, 17, 1372, 4261, 21, 589, 10518, 4040, 10685, 15730, 500, 13627, 1236, 15732, 13622, 13494, 2, 15733, 15734, 15735, 15736, 15744, 15747, 15774]
 // Exports: PictureInPictureGlobalContainer, useAppKeyCommands, useScreenReaderEnabled
 
-// Module 15735 (BurstReactionAnimationContainer)
+// Module 15729 (BurstReactionAnimationContainer)
 import ActionSheetPresenter from "ActionSheetPresenter";
 import { NativeModules } from "BurstReactionAnimationContainerInner";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -25,10 +25,10 @@ export const PictureInPictureGlobalContainer = function PictureInPictureGlobalCo
   let obj = require(589) /* initialize */;
   const items = [ensureGuildLoaded, createRTCConnection];
   const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channelId.getChannelId()));
-  const hasPipParticipant = require(10522) /* usePipVideoOrStream */.useHasPipParticipant({ isActivityViewFocused: false });
-  const obj2 = require(10522) /* usePipVideoOrStream */;
+  const hasPipParticipant = require(10518) /* usePipVideoOrStream */.useHasPipParticipant({ isActivityViewFocused: false });
+  const obj2 = require(10518) /* usePipVideoOrStream */;
   const isModalOpen = require(4040) /* navigationToRootTabHelper */.useIsModalOpen();
-  require(10689) /* isVoicePanelEnabled */;
+  require(10685) /* isVoicePanelEnabled */;
   let tmp7 = null;
   if (null != stateFromStores) {
     tmp7 = null;
@@ -39,7 +39,7 @@ export const PictureInPictureGlobalContainer = function PictureInPictureGlobalCo
         if (!tmp6) {
           obj = { channel: null };
           obj[0] = stateFromStores;
-          tmp7 = jsx(importDefault(15736), { channel: null });
+          tmp7 = jsx(importDefault(15730), { channel: null });
         }
       }
     }
@@ -64,7 +64,7 @@ export const useAppKeyCommands = function useAppKeyCommands() {
     const items = [obj];
     return items;
   }, []);
-  const keyCommands = require(13627) /* KeyCommandsView */.useKeyCommands(memo);
+  const keyCommands = require(13622) /* KeyCommandsView */.useKeyCommands(memo);
 };
 export const useScreenReaderEnabled = function useScreenReaderEnabled() {
   const effect = React.useEffect(() => {

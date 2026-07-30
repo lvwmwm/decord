@@ -22,7 +22,7 @@ export const useEndVisible = (scroll) => {
   const items = [onEndVisible];
   let tmp = size(() => {
     let __workletHash = typeof onEndVisible === "find";
-    if (typeof onEndVisible !== "_") {
+    if (typeof onEndVisible !== "ZodObject") {
       __workletHash = onEndVisible.__workletHash;
     }
     return __workletHash;

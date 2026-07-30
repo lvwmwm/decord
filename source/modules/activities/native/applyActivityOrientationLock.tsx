@@ -1,10 +1,10 @@
-// Module ID: 15835
-// Function ID: 15836
+// Module ID: 15829
+// Function ID: 15830
 // Name: applyActivityOrientationLock
-// Dependencies: [4214, 10656, 8167, 2]
+// Dependencies: [4214, 10652, 8164, 2]
 // Exports: default
 
-// Module 15835 (applyActivityOrientationLock)
+// Module 15829 (applyActivityOrientationLock)
 import { OrientationLockState } from "items3";
 
 const result = require("handleOrientationChange").fileFinishedImporting("modules/activities/native/applyActivityOrientationLock.tsx");
@@ -12,14 +12,14 @@ const result = require("handleOrientationChange").fileFinishedImporting("modules
 export default function applyActivityOrientationLock(arg0) {
   if (!obj.getIsTabletActivitySurface()) {
     if (OrientationLockState.UNLOCKED === arg0) {
-      let tmpResult = tmp(8167);
+      let tmpResult = tmp(8164);
       tmpResult.unlockOrientation({ unlockAfterRotatingToPreviousLock: true });
     } else if (tmp4.PORTRAIT === arg0) {
-      tmpResult = tmp(8167);
+      tmpResult = tmp(8164);
       tmpResult.lockOrientation("PORTRAIT", true);
     } else if (tmp4.LANDSCAPE === arg0) {
-      tmp(8167).lockOrientation("LANDSCAPE", true);
-      const tmpResult1 = tmp(8167);
+      tmp(8164).lockOrientation("LANDSCAPE", true);
+      const tmpResult1 = tmp(8164);
     }
   }
 };

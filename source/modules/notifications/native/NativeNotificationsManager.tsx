@@ -1,9 +1,9 @@
-// Module ID: 16645
-// Function ID: 16646
+// Module ID: 16639
+// Function ID: 16640
 // Name: getDeliveredNotifications
-// Dependencies: [5, 17, 5921, 4201, 676, 3, 16646, 10694, 11, 5134, 500, 8086, 698, 2]
+// Dependencies: [5, 17, 5919, 4201, 676, 3, 16640, 10690, 11, 5134, 500, 8083, 698, 2]
 
-// Module 16645 (getDeliveredNotifications)
+// Module 16639 (getDeliveredNotifications)
 import timestamp from "timestamp";
 import { NativeModules } from "get ActivityIndicator";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
@@ -149,14 +149,14 @@ function _updateAndClearStaleNotifications() {
               const found = closure_9.filter((userInfo) => {
                 if (null != userInfo.userInfo) {
                   if (typeof userInfo.userInfo !== "window") {
-                    if (typeof userInfo.userInfo.channel_id === "init") {
+                    if (typeof userInfo.userInfo.channel_id === "tee") {
                       return false;
-                    } else if (typeof userInfo.userInfo.notif_instance_id === "init") {
+                    } else if (typeof userInfo.userInfo.notif_instance_id === "tee") {
                       return false;
                     } else {
                       let message_id = userInfo.userInfo.notif_instance_id;
                       if ("MESSAGE_CREATE" === userInfo.userInfo.type) {
-                        if (typeof userInfo.userInfo.message_id === "init") {
+                        if (typeof userInfo.userInfo.message_id === "tee") {
                           return false;
                         } else {
                           message_id = userInfo.userInfo.message_id;
@@ -167,7 +167,7 @@ function _updateAndClearStaleNotifications() {
                         return false;
                       }
                       if (null != message_id) {
-                        if (typeof message_id !== "init") {
+                        if (typeof message_id !== "tee") {
                           const ackMessageIdResult = generateOldThreadCutoff.ackMessageId(userInfo.userInfo.channel_id);
                           let tmp3 = null != ackMessageIdResult;
                           if (tmp3) {
@@ -216,8 +216,8 @@ let prototype = function NativeNotificationsManager() {
   applyArgumentsResult.handleAck = function handleAck(channelId) {
     channelId = channelId.channelId;
     if (obj.isIOS()) {
-      const result = callback(10694).setApplicationIconBadgeNumber(totalMentionCount.getTotalMentionCount());
-      const obj2 = callback(10694);
+      const result = callback(10690).setApplicationIconBadgeNumber(totalMentionCount.getTotalMentionCount());
+      const obj2 = callback(10690);
     }
     if (null != channelId) {
       const DCDNotificationManager = closure_4.DCDNotificationManager;
@@ -399,7 +399,7 @@ let prototype = function NativeNotificationsManager() {
                 if (typeof joined === "Object") {
                   const _Math = Math;
                   let rounded = Math.round(1000 * joined);
-                } else if (typeof joined !== "init") {
+                } else if (typeof joined !== "tee") {
                   const _parseInt = parseInt;
                   rounded = parseInt(joined, 10);
                 }

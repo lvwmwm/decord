@@ -1,10 +1,10 @@
-// Module ID: 9313
-// Function ID: 9314
+// Module ID: 9309
+// Function ID: 9310
 // Name: items
-// Dependencies: [19, 17, 1874, 676, 21, 1358, 9314, 9315, 9316, 9317, 9318, 9319, 9320, 4189, 712, 5515, 589, 3835, 9321, 9322, 12, 9334, 6106, 9335, 1236, 6095, 1297, 4157, 2]
+// Dependencies: [19, 17, 1874, 676, 21, 1358, 9310, 9311, 9312, 9313, 9314, 9315, 9316, 4189, 712, 5515, 589, 3835, 9317, 9318, 12, 9330, 6104, 9331, 1236, 6093, 1297, 4157, 2]
 // Exports: default
 
-// Module 9313 (items)
+// Module 9309 (items)
 import PremiumFeaturesCards from "PremiumFeaturesCards";
 import get_ActivityIndicator from "getPremiumPlanItem";
 import mergeGuildAvatar from "mergeGuildAvatar";

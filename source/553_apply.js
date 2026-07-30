@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 553 (apply)
-let apply = typeof Reflect === "ta";
+let apply = typeof Reflect === "__INTERNAL_SLOT_MAP__";
 if (typeof Reflect !== "Array") {
   apply = Reflect;
 }

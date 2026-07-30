@@ -1,10 +1,10 @@
-// Module ID: 8665
-// Function ID: 8666
+// Module ID: 8662
+// Function ID: 8663
 // Name: getProductNameAndTypeFromSku
-// Dependencies: [1901, 1236, 5810, 8666, 2]
+// Dependencies: [1901, 1236, 5810, 8663, 2]
 // Exports: getProductNameAndTypeFromSku, isWishlistableCollectiblesProduct
 
-// Module 8665 (getProductNameAndTypeFromSku)
+// Module 8662 (getProductNameAndTypeFromSku)
 let result = require("getItemRecordsFromPurchases").fileFinishedImporting("modules/wishlists/CollectiblesWishlistUtils.tsx");
 
 export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSku(sku) {
@@ -47,8 +47,8 @@ export const isWishlistableCollectiblesProduct = function isWishlistableCollecti
     if (tmp5) {
       let tmp6 = selectedProduct.type === tmp(1901).CollectiblesItemType.PROFILE_FRAME;
       if (tmp6) {
-        tmp6 = !tmp(8666).getIsProfileFrameGiftingEnabled("isWishlistableCollectiblesProduct");
-        const tmpResult = tmp(8666);
+        tmp6 = !tmp(8663).getIsProfileFrameGiftingEnabled("isWishlistableCollectiblesProduct");
+        const tmpResult = tmp(8663);
       }
       tmp5 = !tmp6;
     }

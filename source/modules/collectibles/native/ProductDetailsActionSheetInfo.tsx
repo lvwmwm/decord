@@ -1,10 +1,10 @@
-// Module ID: 8757
-// Function ID: 8758
+// Module ID: 8753
+// Function ID: 8754
 // Name: ProductNameAndDescription
-// Dependencies: [17, 21, 4189, 712, 8758, 4185, 5810, 8710, 1236, 8759, 8074, 1901, 2]
+// Dependencies: [17, 21, 4189, 712, 8754, 4185, 5810, 8706, 1236, 8755, 8071, 1901, 2]
 // Exports: default
 
-// Module 8757 (ProductNameAndDescription)
+// Module 8753 (ProductNameAndDescription)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -14,7 +14,7 @@ let c5;
 function ProductNameAndDescription(product) {
   product = product.product;
   const tmp = callback3();
-  let obj = require(8758) /* getBundleDescription */;
+  let obj = require(8754) /* getBundleDescription */;
   obj = { style: tmp.description, children: null };
   const productDescription = obj.useProductDescription(product);
   obj = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: product.name };
@@ -26,7 +26,7 @@ function ProductPurchaseStatus(product) {
   product = product.product;
   let obj = require(5810) /* getItemRecordsFromPurchases */;
   const result = obj.isPremiumCollectiblesProduct(product);
-  let obj1 = require(8710) /* getProductPurchaseState */;
+  let obj1 = require(8706) /* getProductPurchaseState */;
   const productPurchaseState = obj1.useProductPurchaseState(product);
   if (productPurchaseState.isPurchased) {
     obj = { variant: "text-md/semibold", color: "interactive-text-active", children: null };
@@ -44,7 +44,7 @@ function ProductPurchaseStatus(product) {
       obj1 = { product: null, onTrackPress: null };
       obj1[0] = product;
       obj1[1] = product.onTrackPress;
-      children = tmp6(importDefault(8759), obj1);
+      children = tmp6(importDefault(8755), obj1);
     }
   }
   return closure_4(View, { children });
@@ -52,7 +52,7 @@ function ProductPurchaseStatus(product) {
 function BundleProductDetailsActionSheetInfo(onTrackPress) {
   const product = onTrackPress.product;
   const tmp = callback3();
-  let obj = require(8074) /* useCollectiblesMobileFlexibleBundlesExperiment */;
+  let obj = require(8071) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   const enabled = obj.useCollectiblesMobileFlexibleBundlesExperiment("BundleProductDetailsActionSheetInfo").enabled;
   const items = [tmp.body, ];
   let bundleBody = enabled;

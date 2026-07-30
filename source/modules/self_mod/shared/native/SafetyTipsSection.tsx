@@ -1,10 +1,10 @@
-// Module ID: 10179
-// Function ID: 10180
+// Module ID: 10175
+// Function ID: 10176
 // Name: SafetyTipsContainer
-// Dependencies: [19, 17, 21, 4189, 712, 4598, 6785, 4185, 1236, 7621, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4598, 6782, 4185, 1236, 7618, 2]
 // Exports: default
 
-// Module 10179 (SafetyTipsContainer)
+// Module 10175 (SafetyTipsContainer)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,7 +26,7 @@ export default function SafetyTipsContainer(children) {
   let showHeader = children.showHeader;
   const tmp = createCacheKey();
   let obj = { style: tmp.image, children: null };
-  obj[1] = callback(safetyTips(6785).SafetyBookletSpotIllustration, {});
+  obj[1] = callback(safetyTips(6782).SafetyBookletSpotIllustration, {});
   const items = [callback(View, obj), , ];
   if (showHeader) {
     obj = { style: null, variant: "heading-xl/semibold", children: null };

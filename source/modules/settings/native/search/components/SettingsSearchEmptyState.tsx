@@ -1,8 +1,8 @@
-// Module ID: 14712
-// Function ID: 14713
-// Dependencies: [19, 17, 21, 4189, 3902, 1236, 8296, 4598, 4185, 2]
+// Module ID: 14706
+// Function ID: 14707
+// Dependencies: [19, 17, 21, 4189, 3902, 1236, 8293, 4598, 4185, 2]
 
-// Module 14712
+// Module 14706
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ const memoResult = importAllResult.memo(function SettingsSearchEmptyState() {
     AccessibilityAnnouncer.announce(intl.string(callback(1236).t.zihbmv), "polite");
   }, []);
   let obj = { style: tmp.container, children: null };
-  const items = [callback(require(8296) /* getNoResultsAltSource */.NoResultsAlt, { resizeMode: "contain" }), ];
+  const items = [callback(require(8293) /* getNoResultsAltSource */.NoResultsAlt, { resizeMode: "contain" }), ];
   obj = { style: tmp.textContainer, align: "center", justify: "center", children: null };
   obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   let intl = require(1236) /* getSystemLocale */.intl;

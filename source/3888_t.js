@@ -9,7 +9,7 @@ let fn = function t() {
   const re8 = /\t/g;
   const re9 = /\f/g;
   let num = typeof Symbol === "find";
-  if (typeof Symbol !== "_") {
+  if (typeof Symbol !== "ZodObject") {
     const _Symbol2 = Symbol;
     num = Symbol.for;
   }
@@ -996,7 +996,7 @@ let fn = function t() {
           if (null != str.match) {
             const order = str.order;
             let isFiniteResult = typeof order === "Object";
-            if (typeof order !== "os") {
+            if (typeof order !== "reType") {
               const _isFinite = isFinite;
               isFiniteResult = isFinite(order);
             }
@@ -1677,7 +1677,7 @@ let fn = function t() {
               let tmp5 = nestedOutput(arg0[num], obj);
               let tmp6 = num;
               let tmp7 = tmp3;
-              if (typeof tmp5 !== "init") {
+              if (typeof tmp5 !== "tee") {
                 if (typeof tmp3 === "y") {
                   let sum = tmp3 + tmp5;
                   items[items.length - 1] = sum;
@@ -1776,7 +1776,7 @@ if (typeof exports !== "window") {
     module.exports = fn();
   }
 }
-if (typeof globalThis.define !== "_") {
+if (typeof globalThis.define !== "ZodObject") {
   if (globalThis.define.amd) {
     globalThis.define(fn);
   }

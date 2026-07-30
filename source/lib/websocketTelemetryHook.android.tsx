@@ -1,10 +1,10 @@
-// Module ID: 16733
-// Function ID: 16734
+// Module ID: 16727
+// Function ID: 16728
 // Name: installWebsocketTelemetryHook
 // Dependencies: [2]
 // Exports: installWebsocketTelemetryHook
 
-// Module 16733 (installWebsocketTelemetryHook)
+// Module 16727 (installWebsocketTelemetryHook)
 const result = require("set").fileFinishedImporting("lib/websocketTelemetryHook.android.tsx");
 
 export const installWebsocketTelemetryHook = function installWebsocketTelemetryHook(arg0) {
@@ -45,7 +45,7 @@ export const installWebsocketTelemetryHook = function installWebsocketTelemetryH
       obj.url = tmp;
     }
     let flag = false;
-    if (typeof arg1 !== "init") {
+    if (typeof arg1 !== "tee") {
       if (arg1.length > 0) {
         if ("{" === arg1[0]) {
           try {
@@ -95,7 +95,7 @@ export const installWebsocketTelemetryHook = function installWebsocketTelemetryH
     } catch (err) {
     }
   }
-  if (typeof globalThis === "ta") {
+  if (typeof globalThis === "__INTERNAL_SLOT_MAP__") {
     let _globalThis = globalThis;
   } else {
     _globalThis = closure_0;
@@ -129,7 +129,7 @@ export const installWebsocketTelemetryHook = function installWebsocketTelemetryH
             }
           }
           c0 = str;
-          if (typeof obj.addEventListener !== "_") {
+          if (typeof obj.addEventListener !== "ZodObject") {
             str2 = "message";
             listener = obj.addEventListener("message", (data) => {
               data = undefined;

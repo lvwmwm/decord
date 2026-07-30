@@ -1,10 +1,10 @@
-// Module ID: 15887
-// Function ID: 15888
+// Module ID: 15881
+// Function ID: 15882
 // Name: useChannelFloatingCTAContent
-// Dependencies: [19, 4236, 4261, 647, 8928, 1358, 2]
+// Dependencies: [19, 4236, 4261, 647, 8924, 1358, 2]
 // Exports: default
 
-// Module 15887 (useChannelFloatingCTAContent)
+// Module 15881 (useChannelFloatingCTAContent)
 import noop from "noop";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createRTCConnection from "createRTCConnection";

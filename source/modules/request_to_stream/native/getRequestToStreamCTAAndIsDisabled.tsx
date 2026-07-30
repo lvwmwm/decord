@@ -1,10 +1,10 @@
-// Module ID: 12384
-// Function ID: 12385
+// Module ID: 12378
+// Function ID: 12379
 // Name: getRequestToStreamCTAAndIsDisabled
-// Dependencies: [32, 1218, 10959, 11, 10946, 1236, 2677, 2]
+// Dependencies: [32, 1218, 10955, 11, 10942, 1236, 2677, 2]
 // Exports: default
 
-// Module 12384 (getRequestToStreamCTAAndIsDisabled)
+// Module 12378 (getRequestToStreamCTAAndIsDisabled)
 import _slicedToArray from "_slicedToArray";
 import fetchFingerprint from "fetchFingerprint";
 
@@ -12,11 +12,11 @@ const require = arg1;
 const result = require("canFulfillStreamRequest").fileFinishedImporting("modules/request_to_stream/native/getRequestToStreamCTAAndIsDisabled.tsx");
 
 export default function getRequestToStreamCTAAndIsDisabled(id) {
-  const tmp3 = callback(require(10959) /* canFulfillStreamRequest */.canFulfillStreamRequest(id, true), 2);
+  const tmp3 = callback(require(10955) /* canFulfillStreamRequest */.canFulfillStreamRequest(id, true), 2);
   id = id.getId();
-  const obj = require(10959) /* canFulfillStreamRequest */;
+  const obj = require(10955) /* canFulfillStreamRequest */;
   const obj2 = importDefault(11);
-  const sum = importDefault(11).extractTimestamp(id.id) + require(10946) /* result */.EMBED_LIFETIME;
+  const sum = importDefault(11).extractTimestamp(id.id) + require(10942) /* result */.EMBED_LIFETIME;
   const extractTimestampResult = importDefault(11).extractTimestamp(id.id);
   const intl = require(1236) /* getSystemLocale */.intl;
   const stringResult = intl.string(importDefault(2677)["5+172e"]);
@@ -32,22 +32,22 @@ export default function getRequestToStreamCTAAndIsDisabled(id) {
     isDisabled = false;
     text = stringResult;
     if (!tmp3[0]) {
-      if (tmp(10959).StreamRequestUnfulfillableReason.ALREADY_STREAMING === tmp4) {
+      if (tmp(10955).StreamRequestUnfulfillableReason.ALREADY_STREAMING === tmp4) {
         const intl4 = tmp(1236).intl;
         text = intl4.string(tmp6(2677).P0wwmM);
         isDisabled = true;
-      } else if (tmp(10959).StreamRequestUnfulfillableReason.NOT_RUNNING_GAME === tmp4) {
+      } else if (tmp(10955).StreamRequestUnfulfillableReason.NOT_RUNNING_GAME === tmp4) {
         const intl3 = tmp(1236).intl;
         text = intl3.string(tmp6(2677)["43zohO"]);
         isDisabled = true;
-      } else if (tmp(10959).StreamRequestUnfulfillableReason.NOT_IN_VOICE_CHANNEL === tmp4) {
+      } else if (tmp(10955).StreamRequestUnfulfillableReason.NOT_IN_VOICE_CHANNEL === tmp4) {
         const intl2 = tmp(1236).intl;
         text = intl2.string(tmp6(2677).qRXats);
         isDisabled = true;
       } else {
         isDisabled = false;
         text = stringResult;
-        if (tmp(10959).StreamRequestUnfulfillableReason.NO_PERMISSION === tmp4) {
+        if (tmp(10955).StreamRequestUnfulfillableReason.NO_PERMISSION === tmp4) {
           const intl7 = tmp(1236).intl;
           text = intl7.string(tmp6(2677)["fac+eE"]);
           isDisabled = true;

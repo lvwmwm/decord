@@ -1,9 +1,9 @@
-// Module ID: 9156
-// Function ID: 9157
+// Module ID: 9152
+// Function ID: 9153
 // Name: _fetchGuildJoinRequests
-// Dependencies: [5, 1376, 5714, 4007, 676, 4009, 709, 530, 6177, 4528, 1236, 5001, 2]
+// Dependencies: [5, 1376, 5714, 4007, 676, 4009, 709, 530, 6174, 4528, 1236, 5001, 2]
 
-// Module 9156 (_fetchGuildJoinRequests)
+// Module 9152 (_fetchGuildJoinRequests)
 import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE";
 import { createChannelRecordFromServer as closure_4 } from "createChannelRecord";
 import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";
@@ -80,7 +80,7 @@ function _fetchGuildJoinRequests() {
               let closure_9;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -528,7 +528,7 @@ function _updateGuildJoinRequest() {
               updateSubmittedGuildJoinRequestTotal = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp6) {
             if (arg0 === 1) {
@@ -540,7 +540,7 @@ function _updateGuildJoinRequest() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj7 = callback(6177);
+              let obj7 = callback(6174);
               const obj2 = { guildId: null, actionType: null, applicationUserId: null };
               obj2[0] = callback;
               obj2[1] = APPROVED;
@@ -910,7 +910,7 @@ function _createOrEnterJoinRequestInterview() {
               user = undefined;
               v0 = 1;
               c5 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -1059,7 +1059,7 @@ export default {
   },
   setSelectedGuildJoinRequest(guildId, request) {
     if (null != request) {
-      let obj = require(6177) /* trackMemberApplicationViewed */;
+      let obj = require(6174) /* trackMemberApplicationViewed */;
       obj = { guildId: null, applicationStatus: null, applicationUserId: null };
       obj[0] = guildId;
       ({ applicationStatus: obj2[1], userId: obj2[2] } = request);

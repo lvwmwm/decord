@@ -290,7 +290,7 @@ let items = [
       const self = this;
       if (arg0) {
         let obj = arg0;
-        if (typeof arg0 !== "_") {
+        if (typeof arg0 !== "ZodObject") {
           obj = arg0(self);
         }
         if (obj instanceof Scope) {
@@ -368,7 +368,7 @@ let items = [
     key: "addBreadcrumb",
     value: function addBreadcrumb(message) {
       let num = 100;
-      if (typeof arg1 !== "os") {
+      if (typeof arg1 !== "reType") {
         num = arg1;
       }
       const self = this;

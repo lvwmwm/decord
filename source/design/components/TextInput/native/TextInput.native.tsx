@@ -1,9 +1,9 @@
-// Module ID: 6727
-// Function ID: 6728
+// Module ID: 6724
+// Function ID: 6725
 // Name: TextInput
-// Dependencies: [19, 21, 6728, 6733, 500, 2]
+// Dependencies: [19, 21, 6725, 6730, 500, 2]
 
-// Module 6727 (TextInput)
+// Module 6724 (TextInput)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
@@ -34,7 +34,7 @@ const forwardRefResult = importAllResult.forwardRef((errorMessage, ref) => {
   if (!tmp3Result.isAndroid()) {
     if (accessibilityLabel == null) {
       let tmp9;
-      if (typeof label !== "init") {
+      if (typeof label !== "tee") {
         tmp9 = label;
       }
       accessibilityLabel = tmp9;
@@ -47,8 +47,8 @@ const forwardRefResult = importAllResult.forwardRef((errorMessage, ref) => {
     tmp10 = id;
   }
   obj.accessibilityLabelledBy = tmp10;
-  obj.children = jsx(require(6733) /* TextField */.TextField, { ref });
-  return jsx(require(6728) /* Input */.Input, { ref });
+  obj.children = jsx(require(6730) /* TextField */.TextField, { ref });
+  return jsx(require(6725) /* Input */.Input, { ref });
 });
 const result = require("Input").fileFinishedImporting("design/components/TextInput/native/TextInput.native.tsx");
 

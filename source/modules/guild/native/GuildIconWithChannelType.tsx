@@ -1,10 +1,10 @@
-// Module ID: 9930
-// Function ID: 9931
+// Module ID: 9927
+// Function ID: 9928
 // Name: GuildIconWithChannelTypeSizes
-// Dependencies: [19, 17, 21, 5566, 4189, 712, 4650, 9931, 7970, 1297, 2]
+// Dependencies: [19, 17, 21, 5566, 4189, 712, 4650, 9928, 7967, 1297, 2]
 // Exports: GuildIconWithChannelType
 
-// Module 9930 (GuildIconWithChannelTypeSizes)
+// Module 9927 (GuildIconWithChannelTypeSizes)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -57,7 +57,7 @@ export const GuildIconWithChannelType = function GuildIconWithChannelType(arg0) 
   obj = typeIconSize(4650);
   const channelIcon = obj.getChannelIcon(channel);
   obj = { "aria-label": tmp, shape: null, size: null, gap: null, depthX: null, depthY: null, children: null };
-  obj[1] = typeIconSize(7970).CutoutShape.Circle;
+  obj[1] = typeIconSize(7967).CutoutShape.Circle;
   obj[2] = memo;
   obj[3] = gap;
   obj[4] = sum1;
@@ -72,5 +72,5 @@ export const GuildIconWithChannelType = function GuildIconWithChannelType(arg0) 
   const items5 = [memo2];
   items3[1] = callback(View, { style: items4, children: callback(typeIconSize(1297).Icon, { style: items5, source: channelIcon }) });
   obj[6] = items3;
-  return callback2(typeIconSize(9931).Pile, obj);
+  return callback2(typeIconSize(9928).Pile, obj);
 };

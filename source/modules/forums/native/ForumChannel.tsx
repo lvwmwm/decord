@@ -1,10 +1,10 @@
-// Module ID: 11863
-// Function ID: 11864
+// Module ID: 11859
+// Function ID: 11860
 // Name: forumKeyExtractor
-// Dependencies: [19, 17, 3818, 5097, 1372, 4526, 5003, 11178, 676, 1301, 505, 21, 4189, 712, 5109, 500, 8824, 4185, 1236, 9133, 6064, 589, 11864, 9, 4157, 11866, 1959, 1348, 4600, 11328, 4717, 8392, 11867, 6653, 9137, 11868, 4380, 11204, 11177, 11869, 6676, 6078, 4719, 3890, 6550, 6048, 5515, 5535, 4676, 10464, 9135, 6088, 9566, 9585, 4158, 4159, 9583, 9141, 5215, 10462, 8243, 11872, 11440, 2]
+// Dependencies: [19, 17, 3818, 5097, 1372, 4526, 5003, 11174, 676, 1301, 505, 21, 4189, 712, 5109, 500, 8820, 4185, 1236, 9129, 6062, 589, 11860, 9, 4157, 11862, 1959, 1348, 4600, 11324, 4717, 8389, 11863, 6650, 9133, 11864, 4380, 11200, 11173, 11865, 6673, 6076, 4719, 3890, 6547, 6046, 5515, 5535, 4676, 10460, 9131, 6086, 9563, 9582, 4158, 4159, 9580, 9137, 5215, 10458, 8240, 11868, 11436, 2]
 // Exports: default
 
-// Module 11863 (forumKeyExtractor)
+// Module 11859 (forumKeyExtractor)
 import useLoadForumUnreadCounts from "useLoadForumUnreadCounts";
 import { View } from "Text";
 import initialize from "initialize";
@@ -40,7 +40,7 @@ function forumKeyExtractor(arg0, arg1) {
 }
 function ArchivedSection() {
   const tmp = createCacheKey();
-  let obj = require(8824) /* useGradientBottom */;
+  let obj = require(8820) /* useGradientBottom */;
   obj = { style: null, children: null };
   const items = [tmp.section, obj.useClientThemesOverride()];
   obj[0] = items;
@@ -119,7 +119,7 @@ function SortAndViewOptions(channel) {
     t = { variant: "secondary", text: null, onPress: null, size: "sm", icon: null };
     t[1] = string3Result;
     t[2] = callback;
-    ArrowsUpDownIcon = ArrowsUpDownIcon(11328).ArrowsUpDownIcon;
+    ArrowsUpDownIcon = ArrowsUpDownIcon(11324).ArrowsUpDownIcon;
     tmp5Result = tmp5(ArrowsUpDownIcon, { size: "xxs" });
     t[4] = tmp5Result;
     tmp5Result = tmp5(ArrowsUpDownIcon(4600).Button, t);
@@ -141,7 +141,7 @@ function SortAndViewOptions(channel) {
     obj[0] = tmp.optionsPill;
     obj = { size: "xs", style: null };
     obj[1] = tmp.sortOptionsIcon;
-    const items1 = [tmp5(ArrowsUpDownIcon(11328).ArrowsUpDownIcon, obj), , ];
+    const items1 = [tmp5(ArrowsUpDownIcon(11324).ArrowsUpDownIcon, obj), , ];
     const obj1 = { variant: "text-sm/medium", color: "interactive-text-default", style: null, children: null };
     obj1[2] = tmp.sortOptionsText;
     const intl2 = ArrowsUpDownIcon(1236).intl;
@@ -154,7 +154,7 @@ function SortAndViewOptions(channel) {
     }
     obj1[3] = string2Result;
     items1[1] = tmp5(ArrowsUpDownIcon(4185).Text, obj1);
-    items1[2] = tmp5(ArrowsUpDownIcon(8392).ChevronSmallDownIcon, { size: "xs" });
+    items1[2] = tmp5(ArrowsUpDownIcon(8389).ChevronSmallDownIcon, { size: "xs" });
     obj[1] = items1;
     obj[6] = closure_16(View, obj);
     return tmp5(ArrowsUpDownIcon(4717).PressableOpacity, obj);
@@ -174,7 +174,7 @@ function TagFilter(channel) {
     const intl3 = tmp4(1236).intl;
     obj[1] = intl3.string(tmp4(1236).t["112vVE"]);
     obj[2] = handlePress;
-    obj[4] = tmp3(tmp4(6653).TagIcon, { size: "xxs" });
+    obj[4] = tmp3(tmp4(6650).TagIcon, { size: "xxs" });
     let tmp3Result = tmp3(tmp4(4600).Button, obj);
   } else {
     obj = { accessibilityRole: "button", accessibilityLabel: null, activeOpacity: 0.8, style: null, onPress: null, children: null };
@@ -200,7 +200,7 @@ function TagFilter(channel) {
     const intl2 = tmp4(1236).intl;
     obj3[3] = intl2.string(tmp4(1236).t["112vVE"]);
     items[1] = tmp3(tmp4(4185).Text, obj3);
-    items[2] = tmp3(tmp4(8392).ChevronSmallDownIcon, { size: "xs" });
+    items[2] = tmp3(tmp4(8389).ChevronSmallDownIcon, { size: "xs" });
     obj[1] = items;
     obj[5] = closure_16(View, obj);
     tmp3Result = tmp3(tmp4(4717).PressableOpacity, obj);
@@ -482,7 +482,7 @@ function onCreatePostWithoutPermission() {
   obj = { key: "FORUM_NO_POST_PERMISSION_HELP", content: null, icon: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.iyzwnD);
-  obj[2] = importDefault(6550);
+  obj[2] = importDefault(6547);
   obj.open(obj);
 }
 ({ AnalyticsObjects: unpackModuleId, AnalyticsPages: closure_12, AnalyticsSections: map1 } = ME);

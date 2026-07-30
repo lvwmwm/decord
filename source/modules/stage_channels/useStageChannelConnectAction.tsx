@@ -1,16 +1,16 @@
-// Module ID: 10682
-// Function ID: 10683
+// Module ID: 10678
+// Function ID: 10679
 // Name: useStageChannelConnectAction
-// Dependencies: [6713, 10681, 2]
+// Dependencies: [6710, 10677, 2]
 // Exports: default, useStageChannelStartEvent
 
-// Module 10682 (useStageChannelConnectAction)
+// Module 10678 (useStageChannelConnectAction)
 const obj = { NORMAL: 0, [0]: "NORMAL", START_EVENT: 1, [1]: "START_EVENT" };
 const result = require("set").fileFinishedImporting("modules/stage_channels/useStageChannelConnectAction.tsx");
 
 export default function useStageChannelConnectAction(arg0) {
   if (!tmp) {
-    if (importDefault(10681)(arg0, true).moderator) {
+    if (importDefault(10677)(arg0, true).moderator) {
       let NORMAL = obj.START_EVENT;
     }
     return NORMAL;
@@ -19,5 +19,5 @@ export default function useStageChannelConnectAction(arg0) {
 };
 export const ChannelConnectAction = obj;
 export const useStageChannelStartEvent = function useStageChannelStartEvent(id) {
-  return { isLive: importDefault(6713)(id), isModerator: importDefault(10681)(id, true).moderator };
+  return { isLive: importDefault(6710)(id), isModerator: importDefault(10677)(id, true).moderator };
 };

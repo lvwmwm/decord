@@ -1,10 +1,10 @@
-// Module ID: 7242
-// Function ID: 7243
+// Module ID: 7239
+// Function ID: 7240
 // Name: HighFiveSpotIllustration
-// Dependencies: [21, 5141, 7243, 2]
+// Dependencies: [21, 5141, 7240, 2]
 // Exports: HighFiveSpotIllustration
 
-// Module 7242 (HighFiveSpotIllustration)
+// Module 7239 (HighFiveSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HighFiveSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const HighFiveSpotIllustration = function HighFiveSpotIllustration(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7243);
+  obj[0] = importDefault(7240);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

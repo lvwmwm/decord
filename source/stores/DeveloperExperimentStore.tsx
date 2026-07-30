@@ -1,9 +1,9 @@
-// Module ID: 6004
-// Function ID: 6005
+// Module ID: 6002
+// Function ID: 6003
 // Name: init
 // Dependencies: [1862, 1874, 4104, 1881, 1880, 589, 709, 2]
 
-// Module 6004 (init)
+// Module 6002 (init)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { ExperimentBuckets } from "ExperimentBuckets";

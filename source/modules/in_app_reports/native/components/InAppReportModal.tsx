@@ -1,10 +1,10 @@
-// Module ID: 7697
-// Function ID: 7698
+// Module ID: 7694
+// Function ID: 7695
 // Name: InAppReportModal
-// Dependencies: [5, 32, 19, 7698, 21, 6752, 7699, 1236, 7700, 4616, 5855, 7696, 7694, 5570, 2]
+// Dependencies: [5, 32, 19, 7695, 21, 6749, 7696, 1236, 7697, 4616, 5853, 7693, 7691, 5570, 2]
 // Exports: default
 
-// Module 7697 (InAppReportModal)
+// Module 7694 (InAppReportModal)
 import HeaderActionButton from "HeaderActionButton";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -221,11 +221,11 @@ export default function InAppReportModal(arg0) {
       const obj3 = { headerRight: null, headerTitle: null, fullscreen: true, render: null };
       obj3[0] = function headerRight() {
         const obj = { source: null, onPress: null, accessibilityLabel: null };
-        obj[0] = callback(7699);
+        obj[0] = callback(7696);
         obj[1] = closure_6;
         const intl = _onSubmit(1236).intl;
         obj[2] = intl.string(_onSubmit(1236).t.cpT0Cq);
-        return callback2(_onSubmit(6752).HeaderActionButton, obj);
+        return callback2(_onSubmit(6749).HeaderActionButton, obj);
       };
       obj3[1] = function headerTitle() {
         return null;
@@ -248,7 +248,7 @@ export default function InAppReportModal(arg0) {
         obj.addOnCloseCallback = callback2;
         obj.reportId = noop;
         obj.onNavigate = onNavigate;
-        return callback2(callback(7700), obj);
+        return callback2(callback(7697), obj);
       };
       obj2[c6] = obj3;
       obj[1] = obj2;

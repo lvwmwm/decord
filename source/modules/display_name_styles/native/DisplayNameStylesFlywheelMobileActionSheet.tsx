@@ -1,10 +1,10 @@
-// Module ID: 15764
-// Function ID: 15765
+// Module ID: 15758
+// Function ID: 15759
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [19, 17, 1874, 676, 1369, 21, 3908, 4035, 4125, 589, 3835, 1236, 2581, 6611, 5635, 4005, 1358, 5243, 5177, 5499, 6785, 500, 5141, 15765, 6207, 1297, 4185, 4600, 4189, 712, 2]
+// Dependencies: [19, 17, 1874, 676, 1369, 21, 3908, 4035, 4125, 589, 3835, 1236, 2581, 6608, 5635, 4005, 1358, 5243, 5177, 5499, 6782, 500, 5141, 15759, 6204, 1297, 4185, 4600, 4189, 712, 2]
 // Exports: default
 
-// Module 15764 (DisplayNameStylesFlywheelMobileActionSheet)
+// Module 15758 (DisplayNameStylesFlywheelMobileActionSheet)
 import ActionSheetHeaderBar from "ActionSheetHeaderBar";
 import { View } from "Background";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -99,7 +99,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   obj2 = { style: tmp6.imageContainer, children: null };
   let tmp14Result = enabled;
   if (enabled) {
-    tmp14Result = tmp14(tmp2(6785).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+    tmp14Result = tmp14(tmp2(6782).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
   }
   const items5 = [tmp14Result, ];
   if (enabled) {
@@ -151,7 +151,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
     if (tmp2Result.isIOS()) {
       const obj10 = { source: null, style: null, resizeMode: "contain", enableAnimation: null };
       const obj11 = { uri: null };
-      obj11[0] = tmp4(15765);
+      obj11[0] = tmp4(15759);
       obj10[0] = obj11;
       obj10[1] = tmp6.image;
       obj10[3] = !enabled;
@@ -159,9 +159,9 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
       const tmp4Result = tmp4(5141);
     } else {
       const obj12 = { url: null, style: null, autoplay: true };
-      obj12[0] = tmp4(15765);
+      obj12[0] = tmp4(15759);
       obj12[1] = tmp6.image;
-      tmp14Result = tmp14(tmp2(6207).APNGPlayer, obj12);
+      tmp14Result = tmp14(tmp2(6204).APNGPlayer, obj12);
     }
     tmp2Result = tmp2(500);
   }

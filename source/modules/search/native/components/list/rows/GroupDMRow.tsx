@@ -1,10 +1,10 @@
-// Module ID: 15491
-// Function ID: 15492
+// Module ID: 15485
+// Function ID: 15486
 // Name: GroupDMRow
-// Dependencies: [19, 21, 4380, 9094, 1297, 9095, 4185, 15490, 2]
+// Dependencies: [19, 21, 4380, 9090, 1297, 9091, 4185, 15484, 2]
 // Exports: default
 
-// Module 15491 (GroupDMRow)
+// Module 15485 (GroupDMRow)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -26,9 +26,9 @@ export default function GroupDMRow(channel) {
   let obj = { size: null, channel: null };
   obj[0] = channel(1297).AvatarSizes.LARGE_48;
   obj[1] = channel;
-  const tmp4 = onPress(9094);
-  const tmp6 = jsx(onPress(9094), { size: null, channel: null });
-  const recipientsLabel = channel(9095).useRecipientsLabel(channel);
+  const tmp4 = onPress(9090);
+  const tmp6 = jsx(onPress(9090), { size: null, channel: null });
+  const recipientsLabel = channel(9091).useRecipientsLabel(channel);
   let tmp3Result;
   if (null != recipientsLabel) {
     obj = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: null };
@@ -48,5 +48,5 @@ export default function GroupDMRow(channel) {
   obj[5] = trailing;
   obj[6] = accessibilityActions;
   obj[7] = onAccessibilityAction;
-  return jsx(channel(15490).SearchListRow, { label: str2, icon: tmp6, onPress: callback, accessibilityLabel: null, subLabel: null, trailing: null, accessibilityActions: null, onAccessibilityAction: null });
+  return jsx(channel(15484).SearchListRow, { label: str2, icon: tmp6, onPress: callback, accessibilityLabel: null, subLabel: null, trailing: null, accessibilityActions: null, onAccessibilityAction: null });
 };

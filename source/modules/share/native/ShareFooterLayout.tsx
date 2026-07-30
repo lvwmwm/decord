@@ -1,10 +1,10 @@
-// Module ID: 9917
-// Function ID: 9918
+// Module ID: 9914
+// Function ID: 9915
 // Name: ShareFooterLayout
 // Dependencies: [19, 17, 21, 4189, 712, 5215, 4050, 4599, 4603, 4185, 2]
 // Exports: default
 
-// Module 9917 (ShareFooterLayout)
+// Module 9914 (ShareFooterLayout)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

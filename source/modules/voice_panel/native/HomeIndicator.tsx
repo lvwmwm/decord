@@ -1,9 +1,9 @@
-// Module ID: 10516
-// Function ID: 10517
+// Module ID: 10512
+// Function ID: 10513
 // Name: pushStackEntry
 // Dependencies: [19, 17, 644, 705, 500, 1593, 2]
 
-// Module 10516 (pushStackEntry)
+// Module 10512 (pushStackEntry)
 import { NativeModules } from "get ActivityIndicator";
 import keys from "keys";
 import { Component } from "noop";

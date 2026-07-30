@@ -138,7 +138,7 @@ prototype["initialize"] = function initialize(botUserIdToAppUsage) {
         let tmp3 = key10002;
         ({ applicationId, lastUsedMs } = arg0.botUserIdToAppUsage[key10002]);
         let tmp = typeof applicationId === "y";
-        if (typeof applicationId !== "init") {
+        if (typeof applicationId !== "tee") {
           tmp = applicationId.length > 0;
         }
         if (tmp) {

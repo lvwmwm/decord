@@ -1,10 +1,10 @@
-// Module ID: 6655
-// Function ID: 6656
+// Module ID: 6652
+// Function ID: 6653
 // Name: openBuyNitroPerkDetails
-// Dependencies: [19, 17, 21, 4189, 6569, 6656, 1236, 4598, 712, 6659, 6660, 5535, 4157, 2]
+// Dependencies: [19, 17, 21, 4189, 6566, 6653, 1236, 4598, 712, 6656, 6657, 5535, 4157, 2]
 // Exports: openBuyNitroPerkDetails
 
-// Module 6655 (openBuyNitroPerkDetails)
+// Module 6652 (openBuyNitroPerkDetails)
 import { Image } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -25,7 +25,7 @@ let closure_8 = require("noop").memo((perk) => {
   let selectedTier;
   perk = perk.perk;
   ({ selectedTier, selectedProductId, analyticsLocations, applicationId, onPaymentSuccess, onPaymentDismiss } = perk);
-  let obj = require(6569) /* PremiumTypes */;
+  let obj = require(6566) /* PremiumTypes */;
   const buyNitroPlanSelection = obj.useBuyNitroPlanSelection({ tier: selectedTier, productId: selectedProductId });
   const detail = perk.detail;
   let tmp6Result = null;
@@ -45,7 +45,7 @@ let closure_8 = require("noop").memo((perk) => {
       const obj2 = { planSelection: null, item: null, centered: true };
       obj2[0] = buyNitroPlanSelection;
       obj2[1] = buyNitroPlanSelection.selection.item;
-      tmp6Result = tmp6(tmp9(6659), obj2);
+      tmp6Result = tmp6(tmp9(6656), obj2);
     }
     const items = [tmp6Result, ];
     const obj3 = { planSelection: null, location: null, sourceAnalyticsLocations: null, applicationId: null, onHostSheetClose: null, onPaymentSuccess: null, onPaymentDismiss: null };
@@ -58,12 +58,12 @@ let closure_8 = require("noop").memo((perk) => {
     };
     obj3[5] = onPaymentSuccess;
     obj3[6] = onPaymentDismiss;
-    items[1] = callback(importDefault(6660), obj3);
+    items[1] = callback(importDefault(6657), obj3);
     obj1[1] = items;
     obj[3] = closure_5(tmp2(4598).Stack, obj1);
-    tmp6Result = tmp6(tmp2(6656).PromoSheet, obj);
+    tmp6Result = tmp6(tmp2(6653).PromoSheet, obj);
     const tmp8 = closure_5;
-    const tmp9Result = importDefault(6660);
+    const tmp9Result = importDefault(6657);
   }
   return tmp6Result;
 });

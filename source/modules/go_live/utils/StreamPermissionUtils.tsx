@@ -1,10 +1,10 @@
-// Module ID: 6010
-// Function ID: 6011
+// Module ID: 6008
+// Function ID: 6009
 // Name: canStreamInChannel
 // Dependencies: [4203, 1376, 1932, 1862, 3817, 4205, 676, 5006, 1236, 4372, 4403, 589, 2]
 // Exports: getStreamCTAAriaLabel, getStreamCTAString, getStreamEligibleChannels, useCanWatchStream
 
-// Module 6010 (canStreamInChannel)
+// Module 6008 (canStreamInChannel)
 import set from "set";
 import { ChannelRecordBase } from "createChannelRecord";
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator";

@@ -1,10 +1,10 @@
-// Module ID: 11598
-// Function ID: 11599
+// Module ID: 11594
+// Function ID: 11595
 // Name: useFeaturedExpiringPowerup
-// Dependencies: [19, 4097, 4076, 589, 11599, 5810, 2]
+// Dependencies: [19, 4097, 4076, 589, 11595, 5810, 2]
 // Exports: default
 
-// Module 11598 (useFeaturedExpiringPowerup)
+// Module 11594 (useFeaturedExpiringPowerup)
 import noop from "noop";
 import handleGameServerInstanceCreated from "handleGameServerInstanceCreated";
 import calculateAppliedBoosts from "calculateAppliedBoosts";

@@ -1,8 +1,8 @@
-// Module ID: 15255
-// Function ID: 15256
-// Dependencies: [19, 14125, 21, 3893, 712, 14206, 4050, 4599, 8070, 2]
+// Module ID: 15249
+// Function ID: 15250
+// Dependencies: [19, 14121, 21, 3893, 712, 14202, 4050, 4599, 8067, 2]
 
-// Module 15255
+// Module 15249
 import { YOU_BAR_SPRING_CONFIG } from "CONNECTION_BANNER_HEIGHT";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
@@ -19,7 +19,7 @@ const memoResult = require("noop").memo(function YouBarNameplate(isQuestRendered
   ({ nameplate, barWidth } = isQuestRendered);
   let obj = isQuestRendered(3893);
   token = obj.useToken(token(712).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp4 = token(14206)(token);
+  const tmp4 = token(14202)(token);
   dependencyMap = tmp4;
   let obj1 = isQuestRendered(4050);
   const fn = function l() {
@@ -42,12 +42,12 @@ const memoResult = require("noop").memo(function YouBarNameplate(isQuestRendered
   if (!isQuestRendered) {
     num = token;
   }
-  obj1 = { style: items, pointerEvents: "none", children: tmp6(token(8070), { nameplate, isFocused: true, animate: false }) };
+  obj1 = { style: items, pointerEvents: "none", children: tmp6(token(8067), { nameplate, isFocused: true, animate: false }) };
   obj[5] = num;
   obj[7] = token;
   obj[10] = barWidth - avatarSize;
   items = [obj, animatedStyle];
-  return jsx(token(4050).View, { style: items, pointerEvents: "none", children: tmp6(token(8070), { nameplate, isFocused: true, animate: false }) });
+  return jsx(token(4050).View, { style: items, pointerEvents: "none", children: tmp6(token(8067), { nameplate, isFocused: true, animate: false }) });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarNameplate.tsx");
 

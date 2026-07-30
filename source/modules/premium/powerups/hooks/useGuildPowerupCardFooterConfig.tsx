@@ -1,10 +1,10 @@
-// Module ID: 11623
-// Function ID: 11624
+// Module ID: 11619
+// Function ID: 11620
 // Name: useGuildPowerupCardFooterConfig
-// Dependencies: [1862, 4077, 676, 11591, 589, 4080, 11588, 2]
+// Dependencies: [1862, 4077, 676, 11587, 589, 4080, 11584, 2]
 // Exports: default
 
-// Module 11623 (useGuildPowerupCardFooterConfig)
+// Module 11619 (useGuildPowerupCardFooterConfig)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import BoostedGuildTiers from "BoostedGuildTiers";
 import { GuildFeatures } from "ME";
@@ -18,7 +18,7 @@ const result = require("ME").fileFinishedImporting("modules/premium/powerups/hoo
 
 export default function useGuildPowerupCardFooterConfig(arg0, skuId) {
   const _require = arg0;
-  const tmp3 = importDefault(11591)(arg0, skuId);
+  const tmp3 = importDefault(11587)(arg0, skuId);
   let obj = _require(589);
   const items = [createGuildRecordFromRust];
   const items1 = [arg0];
@@ -38,7 +38,7 @@ export default function useGuildPowerupCardFooterConfig(arg0, skuId) {
   }
   let tmp8 = tmp6;
   if (!tmp6) {
-    tmp8 = !importDefault(11588)(arg0, skuId, "GuildPowerupCardFooterAdmin");
+    tmp8 = !importDefault(11584)(arg0, skuId, "GuildPowerupCardFooterAdmin");
   }
   if (tmp8) {
     tmp8 = tmp3.type !== constants.TIER_OVERRIDE_ACTIVATED;

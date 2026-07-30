@@ -152,7 +152,7 @@ export default function createAnimatedPropsHook(arg0) {
             if (obj != null) {
               setNativeProps = obj.setNativeProps;
             }
-            if (typeof setNativeProps !== "_") {
+            if (typeof setNativeProps !== "ZodObject") {
               if (isPublicInstanceResult) {
                 if (items) {
                   obj.setNativeProps(obj5.__getAnimatedValue());
@@ -184,7 +184,7 @@ export default function createAnimatedPropsHook(arg0) {
             getScrollableNode = getScrollableNode.getScrollableNode;
           }
           scrollableNode = getScrollableNode;
-          if (typeof getScrollableNode !== "_") {
+          if (typeof getScrollableNode !== "ZodObject") {
             scrollableNode = getScrollableNode.getScrollableNode();
           }
         }
@@ -272,7 +272,7 @@ export default function createAnimatedPropsHook(arg0) {
               if (obj != null) {
                 setNativeProps = obj.setNativeProps;
               }
-              if (typeof setNativeProps !== "_") {
+              if (typeof setNativeProps !== "ZodObject") {
                 if (isPublicInstanceResult) {
                   if (items) {
                     obj.setNativeProps(obj5.__getAnimatedValue());
@@ -304,7 +304,7 @@ export default function createAnimatedPropsHook(arg0) {
               getScrollableNode = getScrollableNode.getScrollableNode;
             }
             scrollableNode = getScrollableNode;
-            if (typeof getScrollableNode !== "_") {
+            if (typeof getScrollableNode !== "ZodObject") {
               scrollableNode = getScrollableNode.getScrollableNode();
             }
           }

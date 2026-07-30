@@ -1,9 +1,9 @@
-// Module ID: 12585
-// Function ID: 12586
+// Module ID: 12579
+// Function ID: 12580
 // Name: GiftingSectionTitle
-// Dependencies: [32, 19, 17, 8109, 5849, 676, 1876, 21, 4189, 712, 1348, 5554, 4185, 6329, 1480, 1581, 589, 12, 4424, 6291, 12498, 8771, 8106, 12447, 709, 5850, 6331, 8112, 6505, 6506, 9322, 12586, 1236, 12587, 12593, 12597, 12600, 12602, 6358, 9230, 2319, 12603, 5637, 2]
+// Dependencies: [32, 19, 17, 8106, 5847, 676, 1876, 21, 4189, 712, 1348, 5554, 4185, 6326, 1480, 1581, 589, 12, 4424, 6288, 12492, 8767, 8103, 12441, 709, 5848, 6328, 8109, 6502, 6503, 9318, 12580, 1236, 12581, 12587, 12591, 12594, 12596, 6355, 9226, 2319, 12597, 5637, 2]
 
-// Module 12585 (GiftingSectionTitle)
+// Module 12579 (GiftingSectionTitle)
 import getSystemLocale from "getSystemLocale";
 import importAllResult from "useBlockedPaymentsConfig";
 import get_ActivityIndicator from "apply";

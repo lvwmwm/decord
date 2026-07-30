@@ -1,10 +1,10 @@
-// Module ID: 15610
-// Function ID: 15611
+// Module ID: 15604
+// Function ID: 15605
 // Name: filterFromPending
 // Dependencies: [3826, 676, 2]
 // Exports: getPendingRelationshipIds
 
-// Module 15610 (filterFromPending)
+// Module 15604 (filterFromPending)
 import upsertRelationship from "upsertRelationship";
 import { RelationshipTypes } from "ME";
 

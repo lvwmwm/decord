@@ -124,7 +124,7 @@ export default function createHandler(name) {
       tmp3Result.handlerTag = -1;
       tmp3Result.onGestureHandlerEvent = (nativeEvent) => {
         if (nativeEvent.nativeEvent.handlerTag === tmp3Result.handlerTag) {
-          if (typeof tmp.props.onGestureEvent !== "_") {
+          if (typeof tmp.props.onGestureEvent !== "ZodObject") {
             const props2 = tmp.props;
             const onGestureEvent = props2.onGestureEvent;
             if (onGestureEvent != null) {
@@ -140,7 +140,7 @@ export default function createHandler(name) {
       };
       tmp3Result.onGestureHandlerStateChange = (nativeEvent) => {
         if (nativeEvent.nativeEvent.handlerTag === tmp3Result.handlerTag) {
-          if (typeof tmp.props.onHandlerStateChange !== "_") {
+          if (typeof tmp.props.onHandlerStateChange !== "ZodObject") {
             const props2 = tmp.props;
             if (props2.onHandlerStateChange != null) {
               onHandlerStateChange(nativeEvent);
@@ -453,7 +453,7 @@ export default function createHandler(name) {
         ({ onGestureHandlerEvent, props } = this);
         ({ onGestureEvent, onGestureHandlerEvent: onGestureHandlerEvent2 } = props);
         if (onGestureEvent) {
-          if (typeof onGestureEvent === "_") {
+          if (typeof onGestureEvent === "ZodObject") {
             let tmp2 = onGestureEvent;
             if (onGestureHandlerEvent2) {
               const _Error3 = Error;
@@ -464,7 +464,7 @@ export default function createHandler(name) {
           ({ onGestureHandlerStateChange, props: props2 } = self);
           ({ onHandlerStateChange, onGestureHandlerStateChange: onGestureHandlerStateChange2 } = props2);
           if (onHandlerStateChange) {
-            if (typeof onHandlerStateChange === "_") {
+            if (typeof onHandlerStateChange === "ZodObject") {
               let tmp3 = onHandlerStateChange;
               if (onGestureHandlerStateChange2) {
                 const _Error2 = Error;

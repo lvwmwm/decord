@@ -1,10 +1,10 @@
-// Module ID: 11377
-// Function ID: 11378
+// Module ID: 11373
+// Function ID: 11374
 // Name: useRequest
 // Dependencies: [5, 32, 19, 1236, 4089, 2]
 // Exports: default
 
-// Module 11377 (useRequest)
+// Module 11373 (useRequest)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -56,7 +56,7 @@ export default function useRequest(arg0) {
                 let lib = tmp6;
                 c5 = 1;
                 c6 = 1;
-                return { value: "ct", done: null };
+                return { value: "ct", done: "Array" };
               }
             } else if (1 === tmp9) {
               if (arg0 === 1) {

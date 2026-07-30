@@ -1,10 +1,10 @@
-// Module ID: 14968
-// Function ID: 14969
+// Module ID: 14962
+// Function ID: 14963
 // Name: HomeDrawerDMsRow
-// Dependencies: [19, 17, 4276, 3826, 676, 21, 4189, 712, 589, 4185, 1236, 14964, 4046, 4043, 2]
+// Dependencies: [19, 17, 4276, 3826, 676, 21, 4189, 712, 589, 4185, 1236, 14958, 4046, 4043, 2]
 // Exports: default
 
-// Module 14968 (HomeDrawerDMsRow)
+// Module 14962 (HomeDrawerDMsRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import sortActivity from "sortActivity";
@@ -46,7 +46,7 @@ function HomeDrawerDMsRow() {
   obj4[3] = intl2.string(require(1236) /* getSystemLocale */.t.YUU0RF);
   obj3[0] = callback(require(4185) /* Text */.Text, obj4);
   obj3[1] = tmp5;
-  return callback(require(14964) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, obj3);
+  return callback(require(14958) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, obj3);
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 createCacheKey = { subtitle: { flexDirection: "row", alignItems: "center", gap: 4 }, onlineDot: null };

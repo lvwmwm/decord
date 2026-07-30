@@ -1,10 +1,10 @@
-// Module ID: 13560
-// Function ID: 13561
+// Module ID: 13555
+// Function ID: 13556
 // Name: getInitialSubscriptionPayload
-// Dependencies: [1371, 5686, 5985, 676, 4214, 10646, 4720, 13523, 6008, 2]
+// Dependencies: [1371, 5686, 5983, 676, 4214, 10642, 4720, 13518, 6006, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 13560 (getInitialSubscriptionPayload)
+// Module 13555 (getInitialSubscriptionPayload)
 import participantFromServer from "participantFromServer";
 import map from "map";
 import initializeState from "initializeState";
@@ -75,9 +75,9 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
     }
     return tmp30;
   } else if (tmp.THERMAL_STATE_UPDATE === participantFromServer) {
-    const thermalState = require(10646) /* useThermalState */.getThermalState();
+    const thermalState = require(10642) /* useThermalState */.getThermalState();
     let tmp23 = null;
-    if (thermalState !== require(10646) /* useThermalState */.ThermalStates.UNHANDLED) {
+    if (thermalState !== require(10642) /* useThermalState */.ThermalStates.UNHANDLED) {
       let obj2 = { thermal_state: null };
       obj2[0] = thermalState;
       tmp23 = obj2;
@@ -89,13 +89,13 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
     obj3[0] = obj3.getIsScreenLandscape() ? closure_7.LANDSCAPE : closure_7.PORTRAIT;
     return obj3;
   } else if (tmp.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE === participantFromServer) {
-    obj2 = require(13523) /* activityInstanceConnectedParticipants */;
+    obj2 = require(13518) /* activityInstanceConnectedParticipants */;
     return obj2.activityInstanceConnectedParticipants();
   } else if (tmp.QUEST_ENROLLMENT_STATUS_UPDATE === participantFromServer) {
     const quest_id = c3.quest_id;
     if (quest_id) {
       quest = quest.getQuest(quest_id);
-      obj = require(6008) /* getApplicationIdsByTaskTypes */;
+      obj = require(6006) /* getApplicationIdsByTaskTypes */;
       const activityApplicationId = obj.getActivityApplicationId(quest);
       let tmp11 = null;
       if (null != quest) {

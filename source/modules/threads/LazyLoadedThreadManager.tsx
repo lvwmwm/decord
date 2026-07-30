@@ -1,9 +1,9 @@
-// Module ID: 10417
-// Function ID: 10418
+// Module ID: 10413
+// Function ID: 10414
 // Name: initialize
 // Dependencies: [4865, 1376, 1372, 1931, 676, 1379, 709, 5657, 4011, 4024, 530, 2]
 
-// Module 10417 (initialize)
+// Module 10413 (initialize)
 import _handleConnectionOpen from "_handleConnectionOpen";
 import createChannelRecord from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";

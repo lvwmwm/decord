@@ -1,10 +1,10 @@
-// Module ID: 7917
-// Function ID: 7918
+// Module ID: 7914
+// Function ID: 7915
 // Name: updateAssets
-// Dependencies: [32, 5, 7918, 676, 38, 3, 530, 709, 1450, 2]
+// Dependencies: [32, 5, 7915, 676, 38, 3, 530, 709, 1450, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 7917 (updateAssets)
+// Module 7914 (updateAssets)
 import _slicedToArray from "_slicedToArray";
 import timestamp from "timestamp";
 import handleFetchEmbeddedActivityShelfSuccess from "handleFetchEmbeddedActivityShelfSuccess";
@@ -476,7 +476,7 @@ function _fetchAssetIds() {
               c5 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp5) {
@@ -736,7 +736,7 @@ export const getAssetImage = function getAssetImage(application_id, media_assets
         applyResult = HermesBuiltin.apply(items, Math);
       }
       let str4 = "";
-      if (typeof applyResult !== "os") {
+      if (typeof applyResult !== "reType") {
         const _HermesInternal3 = HermesInternal;
         str4 = "?size=" + require(1450) /* isAttachmentLadderEnabled */.getBestMediaProxySize(applyResult);
         const obj4 = require(1450) /* isAttachmentLadderEnabled */;

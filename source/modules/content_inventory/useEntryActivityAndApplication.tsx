@@ -1,10 +1,10 @@
-// Module ID: 11991
-// Function ID: 11992
+// Module ID: 11985
+// Function ID: 11986
 // Name: useEntryActivityAndApplication
-// Dependencies: [32, 1371, 11992, 589, 5521, 2]
+// Dependencies: [32, 1371, 11986, 589, 5521, 2]
 // Exports: default
 
-// Module 11991 (useEntryActivityAndApplication)
+// Module 11985 (useEntryActivityAndApplication)
 import _slicedToArray from "_slicedToArray";
 import participantFromServer from "participantFromServer";
 import entryToKey from "entryToKey";

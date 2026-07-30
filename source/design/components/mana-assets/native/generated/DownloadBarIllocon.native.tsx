@@ -1,10 +1,10 @@
-// Module ID: 7006
-// Function ID: 7007
+// Module ID: 7003
+// Function ID: 7004
 // Name: DownloadBarIllocon
-// Dependencies: [21, 5141, 7007, 2]
+// Dependencies: [21, 5141, 7004, 2]
 // Exports: DownloadBarIllocon
 
-// Module 7006 (DownloadBarIllocon)
+// Module 7003 (DownloadBarIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DownloadBarIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const DownloadBarIllocon = function DownloadBarIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7007);
+  obj[0] = importDefault(7004);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

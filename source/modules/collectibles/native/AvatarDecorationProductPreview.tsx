@@ -1,10 +1,10 @@
-// Module ID: 8746
-// Function ID: 8747
+// Module ID: 8742
+// Function ID: 8743
 // Name: AvatarDecorationProductPreview
-// Dependencies: [19, 17, 21, 4189, 8664, 8046, 1236, 1297, 2]
+// Dependencies: [19, 17, 21, 4189, 8661, 8043, 1236, 1297, 2]
 // Exports: default
 
-// Module 8746 (AvatarDecorationProductPreview)
+// Module 8742 (AvatarDecorationProductPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -15,9 +15,9 @@ let closure_4 = createCacheKey.createStyles({ fullSizePreview: { flex: 1, alignI
 const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/AvatarDecorationProductPreview.tsx");
 
 export default function AvatarDecorationProductPreview(product) {
-  let obj = require(8664) /* useCurrentUser */;
+  let obj = require(8661) /* useCurrentUser */;
   const currentUser = obj.useCurrentUser();
-  let obj1 = require(8046) /* firstAvatarDecoration */;
+  let obj1 = require(8043) /* firstAvatarDecoration */;
   const firstAvatarDecoration = obj1.useShopProductItems(product.product).firstAvatarDecoration;
   let tmp5 = null;
   if (null != firstAvatarDecoration) {

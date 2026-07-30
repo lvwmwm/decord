@@ -1,10 +1,10 @@
-// Module ID: 9641
-// Function ID: 9642
+// Module ID: 9638
+// Function ID: 9639
 // Name: StickerOptionsActionSheet
 // Dependencies: [19, 21, 5543, 3889, 4157, 5551, 5554, 5220, 4133, 1236, 2]
 // Exports: default
 
-// Module 9641 (StickerOptionsActionSheet)
+// Module 9638 (StickerOptionsActionSheet)
 import noop from "noop";
 import { jsx } from "jsxProd";
 

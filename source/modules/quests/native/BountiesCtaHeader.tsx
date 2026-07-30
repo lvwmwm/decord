@@ -1,9 +1,9 @@
-// Module ID: 14111
-// Function ID: 14112
+// Module ID: 14107
+// Function ID: 14108
 // Name: BountiesCtaDescription
-// Dependencies: [19, 17, 4181, 14112, 5033, 21, 4189, 712, 1236, 4185, 14091, 589, 6013, 10881, 5036, 6002, 6012, 14033, 14113, 14114, 1297, 4600, 14107, 10966, 3901, 6678, 10970, 2]
+// Dependencies: [19, 17, 4181, 14108, 5033, 21, 4189, 712, 1236, 4185, 14087, 589, 6011, 10877, 5036, 6000, 6010, 14028, 14109, 14110, 1297, 4600, 14103, 10962, 3901, 6675, 10966, 2]
 
-// Module 14111 (BountiesCtaDescription)
+// Module 14107 (BountiesCtaDescription)
 import importAllResult from "metadata";
 import get_ActivityIndicator from "BOUNTIES_MODAL_KEY";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -36,7 +36,7 @@ function BountiesCtaDescription(isEmptyOrCompleted) {
   const tmp7 = callback(tmp5(4185).Text, obj);
   const intl2 = tmp5(1236).intl;
   obj = { onClick: null };
-  obj[0] = importDefault(14091);
+  obj[0] = importDefault(14087);
   const formatResult = intl2.format(tmp5(1236).t.fjSvsC, obj);
   if (isEmptyOrCompleted) {
     obj = { variant: "text-sm/medium", children: null };
@@ -70,7 +70,7 @@ function BountiesCtaHeaderInner(bounties) {
   const items1 = [getOrCreateSet];
   const items2 = [bounties];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => bounties.some((id) => !getOrCreateSet.hasSeen(callback(table[12]).AdCreativeType.BOUNTY, id.id)), items2);
-  let obj2 = bounties(10881);
+  let obj2 = bounties(10877);
   const QuestContent = bounties(5036).QuestContent;
   const tmp6 = obj2.useBountiesExperience(constants2.QUEST_HOME_MOBILE).verticalScrollEnabled ? QuestContent.VIDEO_MODAL_MOBILE : QuestContent.QUEST_HOME_MOBILE_CAROUSEL;
   importDefault = tmp6;
@@ -84,7 +84,7 @@ function BountiesCtaHeaderInner(bounties) {
     _undefined(outer1_2[17]).showModal(obj);
   }, items3);
   obj = { uri: null, style: null, children: null };
-  obj[0] = importDefault(14114);
+  obj[0] = importDefault(14110);
   const items4 = [, ];
   ({ header: arr5[0], headerRoundedBottom: arr5[1] } = tmp);
   obj[1] = items4;
@@ -112,7 +112,7 @@ function BountiesCtaHeaderInner(bounties) {
   obj2[1] = items6;
   items5[1] = closure_11(closure_4, obj2);
   obj[2] = items5;
-  const items7 = [closure_11(importDefault(14113), obj), false];
+  const items7 = [closure_11(importDefault(14109), obj), false];
   obj[2] = items7;
   return closure_11(closure_4, obj);
 }
@@ -144,7 +144,7 @@ let closure_12 = createCacheKey.createStyles(() => {
 });
 const memoResult = importAllResult.memo(function BountiesCtaHeader(isEmptyOrCompleted) {
   const _require = isEmptyOrCompleted;
-  const tmp2 = containerRef(14107)();
+  const tmp2 = containerRef(14103)();
   containerRef = tmp2.containerRef;
   isEmptyOrCompleted = isEmptyOrCompleted.isEmptyOrCompleted;
   let tmp3 = undefined !== isEmptyOrCompleted;
@@ -152,10 +152,10 @@ const memoResult = importAllResult.memo(function BountiesCtaHeader(isEmptyOrComp
     tmp3 = isEmptyOrCompleted;
   }
   if (!tmp3) {
-    let obj = _require(10966);
+    let obj = _require(10962);
     const bountyCarouselEmptyStateAnalytics = obj.useBountyCarouselEmptyStateAnalytics(null);
     obj = { theme: null, children: null };
-    obj[0] = _require(6678).ThemeTypes.DARKER;
+    obj[0] = _require(6675).ThemeTypes.DARKER;
     if (tmp3) {
       obj = {};
       let merged = Object.assign(isEmptyOrCompleted);
@@ -164,7 +164,7 @@ const memoResult = importAllResult.memo(function BountiesCtaHeader(isEmptyOrComp
     } else {
       const obj1 = { adContentId: null, adCreativeType: null, questContent: null, questContentPosition: 0, overrideVisibility: null, sourceQuestContent: null, children: null };
       obj1[0] = closure_8;
-      obj1[1] = tmp7(6013).AdCreativeType.BOUNTY;
+      obj1[1] = tmp7(6011).AdCreativeType.BOUNTY;
       obj1[2] = tmp7(5036).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE;
       obj1[4] = tmp2.isInView;
       obj1[5] = tmp7(5036).QuestContent.QUEST_HOME_ENTRYPOINT_MOBILE;
@@ -174,7 +174,7 @@ const memoResult = importAllResult.memo(function BountiesCtaHeader(isEmptyOrComp
         obj.containerRef = containerRef;
         return outer1_10(outer1_14, obj);
       };
-      tmp9Result = tmp9(tmp7(10970).QuestContentImpressionTrackerNative, obj1);
+      tmp9Result = tmp9(tmp7(10966).QuestContentImpressionTrackerNative, obj1);
     }
     obj[1] = tmp9Result;
     return closure_10(_require(3901).ThemeContextProvider, obj);

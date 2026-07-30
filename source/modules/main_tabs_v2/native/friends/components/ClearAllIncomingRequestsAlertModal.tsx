@@ -1,10 +1,10 @@
-// Module ID: 15609
-// Function ID: 15610
+// Module ID: 15603
+// Function ID: 15604
 // Name: handleConfirm
-// Dependencies: [5, 19, 21, 8918, 4533, 1236, 4533, 2]
+// Dependencies: [5, 19, 21, 8914, 4533, 1236, 4533, 2]
 // Exports: default
 
-// Module 15609 (handleConfirm)
+// Module 15603 (handleConfirm)
 import getSystemLocale from "getSystemLocale";
 import "noop";
 import jsxProd from "jsxProd";

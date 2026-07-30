@@ -1,10 +1,10 @@
-// Module ID: 8053
-// Function ID: 8054
+// Module ID: 8050
+// Function ID: 8051
 // Name: SlayerStorefrontItemCard
-// Dependencies: [19, 17, 21, 4189, 712, 5662, 8054, 5808, 5141, 4611, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5662, 8051, 5808, 5141, 4611, 2]
 // Exports: default
 
-// Module 8053 (SlayerStorefrontItemCard)
+// Module 8050 (SlayerStorefrontItemCard)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

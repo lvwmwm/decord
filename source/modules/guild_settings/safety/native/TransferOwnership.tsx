@@ -1,10 +1,10 @@
-// Module ID: 11038
-// Function ID: 11039
+// Module ID: 11034
+// Function ID: 11035
 // Name: TransferOwnership
-// Dependencies: [5, 32, 19, 17, 1874, 11037, 676, 21, 4189, 712, 3893, 1480, 589, 38, 8304, 11035, 3889, 4379, 5566, 4185, 11039, 1297, 1236, 4028, 5554, 9092, 4600, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 11033, 676, 21, 4189, 712, 3893, 1480, 589, 38, 8301, 11031, 3889, 4379, 5566, 4185, 11035, 1297, 1236, 4028, 5554, 9088, 4600, 2]
 // Exports: default
 
-// Module 11038 (TransferOwnership)
+// Module 11034 (TransferOwnership)
 import closure_3 from "TransferOwnershipModalScenes";
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
@@ -99,10 +99,10 @@ export default function TransferOwnership(guild) {
               }
               const obj4 = v0(arr[14]);
               v0(arr[14]).transferOwnership(outer1_0.id, v0.id, MFA).then(() => {
-                v1(11035).close();
-                const obj = v1(11035);
-                v1(8304).close();
-                const obj2 = v1(8304);
+                v1(11031).close();
+                const obj = v1(11031);
+                v1(8301).close();
+                const obj2 = v1(8301);
                 const result = tmp2(3889).showTransferOwnershipSuccess();
               }, outer1_12);
               arr = 3;
@@ -185,14 +185,14 @@ export default function TransferOwnership(guild) {
   obj1 = { paddingTop: toUser(712).space.PX_16, paddingHorizontal: token };
   obj[0] = obj1;
   obj2 = { style: tmp5.header, children: null };
-  obj3 = { source: toUser(11039), style: tmp5.arrow };
+  obj3 = { source: toUser(11035), style: tmp5.arrow };
   const items1 = [callback2(c7, obj3), , , ];
   let obj4 = { style: tmp5.avatarsWrapper, children: null };
   const obj5 = { user: stateFromStores, guildId: guild.id, size: null };
   obj5[2] = guild(1297).AvatarSizes.XXLARGE;
   const items2 = [callback2(guild(1297).Avatar, obj5), ];
   const obj6 = { style: tmp5.avatarFauxBorder, children: null };
-  const obj7 = { user: toUser, guildId: "r", size: "mode", style: "Array" };
+  const obj7 = { user: toUser, guildId: "r", size: null, style: null };
   obj7[2] = guild(1297).AvatarSizes.XXLARGE;
   obj7[3] = tmp5.otherUserAvatar;
   obj6[1] = callback2(guild(1297).Avatar, obj7);
@@ -256,7 +256,7 @@ export default function TransferOwnership(guild) {
     obj12[2] = function handleConfirmToggle(arg0) {
       _undefined(arg0);
     };
-    obj11[2] = tmp11(tmp(9092).TableCheckboxRow, obj12);
+    obj11[2] = tmp11(tmp(9088).TableCheckboxRow, obj12);
     items3[1] = tmp11(tmp(5554).TableRowGroup, obj11);
     const obj14 = { onPress: null, text: null, disabled: null };
     obj14[0] = function handleTransfer() {

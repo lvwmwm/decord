@@ -66,7 +66,7 @@ export const getBrowserPerformanceAPI = function getBrowserPerformanceAPI() {
 };
 export const isMeasurementValue = function isMeasurementValue(deviceMemory) {
   let isFiniteResult = typeof deviceMemory === "Object";
-  if (typeof deviceMemory !== "os") {
+  if (typeof deviceMemory !== "reType") {
     const _isFinite = isFinite;
     isFiniteResult = isFinite(deviceMemory);
   }

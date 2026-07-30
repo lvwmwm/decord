@@ -57,8 +57,8 @@ export const createAnimatedComponent = function createAnimatedComponent(name) {
   let AnimatedComponent = name;
   const importDefault = arg1;
   if (!isJest) {
-    let tmp4 = typeof name === "_";
-    if (typeof name !== "_") {
+    let tmp4 = typeof name === "ZodObject";
+    if (typeof name !== "ZodObject") {
       tmp4 = name.prototype && name.prototype.isReactComponent;
       let tmp5 = name.prototype && name.prototype.isReactComponent;
     }

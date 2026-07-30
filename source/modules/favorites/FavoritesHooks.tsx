@@ -1,10 +1,10 @@
-// Module ID: 10215
-// Function ID: 10216
+// Module ID: 10211
+// Function ID: 10212
 // Name: useFavoritesAccess
-// Dependencies: [4006, 1874, 1375, 10216, 1410, 1876, 10217, 10218, 589, 1897, 11, 1306, 1865, 2]
+// Dependencies: [4006, 1874, 1375, 10212, 1410, 1876, 10213, 10214, 589, 1897, 11, 1306, 1865, 2]
 // Exports: getFavoritesAccess, getFavoritesCategories, useFavorite, useFavoriteAdded, useFavoritedChannelIds, useFavorites, useFavoritesAwareChannel, useFavoritesCategories, useIsFavoritesGuildSelected
 
-// Module 10215 (useFavoritesAccess)
+// Module 10211 (useFavoritesAccess)
 import handleConnectionOpen from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import initializeFromUserSettings from "initializeFromUserSettings";
@@ -20,7 +20,7 @@ function useFavoritesAccess(FavoritesGuildChannelList) {
   if (FavoritesGuildChannelList === undefined) {
     str = "useFavoritesAccess";
   }
-  let obj = require(10218) /* useFavoritesGuildConfig */;
+  let obj = require(10214) /* useFavoritesGuildConfig */;
   const favoritesGuildConfig = obj.useFavoritesGuildConfig({ location: str });
   ({ enabled, isFreemium } = favoritesGuildConfig);
   let tmp4 = undefined !== isFreemium;
@@ -52,7 +52,7 @@ function useFavoritesAccess(FavoritesGuildChannelList) {
   } else {
     num = 0;
     if (tmp4) {
-      num = tmp(10217).FREE_FAVORITE_LIMIT;
+      num = tmp(10213).FREE_FAVORITE_LIMIT;
     }
   }
 }
@@ -62,7 +62,7 @@ export { useFavoritesAccess };
 export const getFavoritesAccess = function getFavoritesAccess() {
   let enabled;
   let isFreemium;
-  let obj = require(10218) /* useFavoritesGuildConfig */;
+  let obj = require(10214) /* useFavoritesGuildConfig */;
   const favoritesGuildConfig = obj.getFavoritesGuildConfig({ location: "getFavoritesAccess" });
   ({ enabled, isFreemium } = favoritesGuildConfig);
   let tmp4 = undefined !== isFreemium;
@@ -91,7 +91,7 @@ export const getFavoritesAccess = function getFavoritesAccess() {
   } else {
     num = 0;
     if (tmp4) {
-      num = require(10217) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
+      num = require(10213) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
     }
   }
 };

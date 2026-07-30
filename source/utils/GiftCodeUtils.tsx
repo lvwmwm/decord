@@ -74,7 +74,7 @@ function _resolveGiftCode() {
               body = undefined;
               c7 = 1;
               constants = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

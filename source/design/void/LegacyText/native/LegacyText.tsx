@@ -1,8 +1,8 @@
-// Module ID: 7669
-// Function ID: 7670
-// Dependencies: [19, 17, 676, 21, 4189, 7670, 2]
+// Module ID: 7666
+// Function ID: 7667
+// Dependencies: [19, 17, 676, 21, 4189, 7667, 2]
 
-// Module 7669
+// Module 7666
 import { Text } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -16,7 +16,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   let style;
   ({ style, children } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = require(7670) /* useLegacyTextMigrationHighlight */;
+  let obj = require(7667) /* useLegacyTextMigrationHighlight */;
   obj = { ref };
   const legacyTextMigrationHighlight = obj.useLegacyTextMigrationHighlight();
   const merged1 = Object.assign(merged);

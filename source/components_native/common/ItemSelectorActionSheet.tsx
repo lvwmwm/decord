@@ -1,10 +1,10 @@
-// Module ID: 8246
-// Function ID: 8247
+// Module ID: 8243
+// Function ID: 8244
 // Name: ItemSelectorActionSheet
-// Dependencies: [19, 21, 3893, 712, 1581, 5243, 5242, 5552, 5245, 7655, 7654, 2]
+// Dependencies: [19, 21, 3893, 712, 1581, 5243, 5242, 5552, 5245, 7652, 7651, 2]
 // Exports: default
 
-// Module 8246 (ItemSelectorActionSheet)
+// Module 8243 (ItemSelectorActionSheet)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -46,7 +46,7 @@ export default function ItemSelectorActionSheet(arg0) {
   if (findIndexResult >= 0) {
     num = findIndexResult;
   }
-  items[1] = closure_3(items(7655).TableRadioGroup, {
+  items[1] = closure_3(items(7652).TableRadioGroup, {
     value: num,
     accessibilityLabel: title,
     hasIcons,
@@ -55,7 +55,7 @@ export default function ItemSelectorActionSheet(arg0) {
         dependencyMap(iter.value);
       }
     },
-    children: items.map((label, value) => callback(items(7654).TableRadioRow, { label: label.label, value }, value))
+    children: items.map((label, value) => callback(items(7651).TableRadioRow, { label: label.label, value }, value))
   });
   obj2[1] = items;
   obj1[2] = closure_4(items(5245).BottomSheetScrollView, obj2);

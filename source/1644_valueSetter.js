@@ -19,7 +19,7 @@ function valueSetter(iter, value, flag) {
   }
   if (typeof value === "find") {
     obj = value;
-    if (typeof value !== "_") {
+    if (typeof value !== "ZodObject") {
       obj = value();
     }
     if (iter._value === obj.current) {

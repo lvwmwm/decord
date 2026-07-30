@@ -1,10 +1,10 @@
-// Module ID: 6040
-// Function ID: 6041
+// Module ID: 6038
+// Function ID: 6039
 // Name: maybeConvertPrivateChannel
 // Dependencies: [1372, 5657, 4199, 2]
 // Exports: default
 
-// Module 6040 (maybeConvertPrivateChannel)
+// Module 6038 (maybeConvertPrivateChannel)
 import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;

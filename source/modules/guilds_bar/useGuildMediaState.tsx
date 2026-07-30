@@ -1,10 +1,10 @@
-// Module ID: 14989
-// Function ID: 14990
+// Module ID: 14983
+// Function ID: 14984
 // Name: canConnectToChannel
-// Dependencies: [1371, 1377, 1376, 4208, 1218, 1372, 1862, 3817, 3826, 1931, 4385, 4205, 676, 692, 589, 14990, 8321, 14979, 3807, 8014, 11, 1380, 2]
+// Dependencies: [1371, 1377, 1376, 4208, 1218, 1372, 1862, 3817, 3826, 1931, 4385, 4205, 676, 692, 589, 14984, 8318, 14973, 3807, 8011, 11, 1380, 2]
 // Exports: default
 
-// Module 14989 (canConnectToChannel)
+// Module 14983 (canConnectToChannel)
 import participantFromServer from "participantFromServer";
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
 import { isVoiceChannel } from "createChannelRecord";

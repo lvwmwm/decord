@@ -1,10 +1,10 @@
-// Module ID: 13943
-// Function ID: 13944
+// Module ID: 13938
+// Function ID: 13939
 // Name: FamilyCenterMaxConnectionsBlurb
-// Dependencies: [19, 17, 5794, 10159, 21, 4189, 712, 6255, 6256, 11113, 1236, 2223, 4185, 10162, 5177, 13904, 13944, 13946, 13955, 2]
+// Dependencies: [19, 17, 5794, 10155, 21, 4189, 712, 6252, 6253, 11109, 1236, 2223, 4185, 10158, 5177, 13899, 13939, 13941, 13950, 2]
 // Exports: default
 
-// Module 13943 (FamilyCenterMaxConnectionsBlurb)
+// Module 13938 (FamilyCenterMaxConnectionsBlurb)
 import "set";
 import get_ActivityIndicator from "FamilyCenterAcceptedLinkRow";
 import items from "items";
@@ -22,13 +22,13 @@ let closure_6;
 let metroImportAll;
 const require = arg1;
 function FamilyCenterMaxConnectionsBlurb() {
-  let obj = require(6255) /* useUserIdsForLinkStatus */;
+  let obj = require(6252) /* useUserIdsForLinkStatus */;
   const hasMaxConnections = obj.useHasMaxConnections();
   const tmp = createCacheKey();
   const tmp5 = importDefault;
-  require(11113) /* useAgeSpecificText */;
+  require(11109) /* useAgeSpecificText */;
   const intl = tmp2(1236).intl;
-  intl.formatToPlainString(tmp5(2223)["1/PzIj"], { maxConnections: importDefault(6256)() ? closure_5 : closure_6 });
+  intl.formatToPlainString(tmp5(2223)["1/PzIj"], { maxConnections: importDefault(6253)() ? closure_5 : closure_6 });
   const intl2 = tmp2(1236).intl;
   let tmp10 = null;
   if (hasMaxConnections) {
@@ -43,9 +43,9 @@ function FamilyCenterMaxConnectionsBlurb() {
 }
 function FamilyCenterHelpLineInfo() {
   const tmp = callback3();
-  let obj = require(10162) /* set */;
+  let obj = require(10158) /* set */;
   const shouldShowHelplineLink = obj.useShouldShowHelplineLink();
-  require(10162) /* set */;
+  require(10158) /* set */;
   if (shouldShowHelplineLink) {
     const intl2 = tmp2(1236).intl;
     let formatResult = intl2.format(importDefault(2223)["KOwsf/"], { helpLink: "https://support.discord.com/hc/articles/7925648993943-Crisis-Text-Line" });
@@ -99,7 +99,7 @@ export default function FamilyCenterRequestsPage() {
   let obj = { style: tmp.scrollView, children: null };
   obj = { bottom: true, children: null };
   obj = { style: tmp.container, children: null };
-  const items = [callback(importDefault(13904), {}), callback(importDefault(13944), {}), callback(importDefault(13946), {}), callback(importDefault(13955), {}), callback(FamilyCenterMaxConnectionsBlurb, {}), callback(FamilyCenterHelpLineInfo, {})];
+  const items = [callback(importDefault(13899), {}), callback(importDefault(13939), {}), callback(importDefault(13941), {}), callback(importDefault(13950), {}), callback(FamilyCenterMaxConnectionsBlurb, {}), callback(FamilyCenterHelpLineInfo, {})];
   obj[1] = items;
   obj[1] = callback2(closure_3, obj);
   obj[1] = callback(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);

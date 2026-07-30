@@ -1,10 +1,10 @@
-// Module ID: 8644
-// Function ID: 8645
+// Module ID: 8641
+// Function ID: 8642
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 1874, 21, 4189, 712, 5518, 589, 8486, 4185, 1236, 5141, 1297, 4600, 8645, 2]
+// Dependencies: [19, 17, 1874, 21, 4189, 712, 5518, 589, 8483, 4185, 1236, 5141, 1297, 4600, 8642, 2]
 // Exports: default
 
-// Module 8644 (GameProfileLinkAccount)
+// Module 8641 (GameProfileLinkAccount)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";

@@ -17,7 +17,7 @@ let error;
 let metroImportAll;
 const require = arg1;
 function defaultItemToKey(key) {
-  if (typeof key.key === "init") {
+  if (typeof key.key === "tee") {
     const _TypeError = TypeError;
     const typeError = new TypeError("Expected 'id' of item to be a string, got: " + typeof key);
     throw typeError;

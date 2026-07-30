@@ -1,10 +1,10 @@
-// Module ID: 8078
-// Function ID: 8079
+// Module ID: 8075
+// Function ID: 8076
 // Name: useProfileThemeOverrideStore
-// Dependencies: [676, 644, 4125, 7989, 4035, 2]
+// Dependencies: [676, 644, 4125, 7986, 4035, 2]
 // Exports: useEffectiveThemeOverride, useHasNonNitroThemeOverride, useIsBannerDisabledByOverride
 
-// Module 8078 (useProfileThemeOverrideStore)
+// Module 8075 (useProfileThemeOverrideStore)
 import { ThemeTypes } from "ME";
 import keys from "keys";
 
@@ -52,7 +52,7 @@ export const useEffectiveThemeOverride = function useEffectiveThemeOverride() {
       if (null != first) {
         tmp8 = tmp3;
         if (null != tmp7) {
-          let obj = require(7989) /* getProfileTheme */;
+          let obj = require(7986) /* getProfileTheme */;
           let profileTheme = obj.getProfileTheme(first);
           if (profileTheme == null) {
             profileTheme = tmp3;

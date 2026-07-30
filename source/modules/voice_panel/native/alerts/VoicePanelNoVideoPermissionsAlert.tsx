@@ -1,10 +1,10 @@
-// Module ID: 16018
-// Function ID: 16019
+// Module ID: 16012
+// Function ID: 16013
 // Name: VoicePanelNoVideoPermissionsAlert
 // Dependencies: [19, 21, 4533, 4533, 1236, 2]
 // Exports: default
 
-// Module 16018 (VoicePanelNoVideoPermissionsAlert)
+// Module 16012 (VoicePanelNoVideoPermissionsAlert)
 import "noop";
 import { jsx } from "jsxProd";
 

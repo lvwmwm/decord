@@ -18,7 +18,7 @@ function parseQueryStringKeys(arg0, arg1, arg2, arg3) {
 export default (str, allowEmptyArrays) => {
   if (allowEmptyArrays) {
     if (undefined !== allowEmptyArrays.allowEmptyArrays) {
-      if (typeof allowEmptyArrays.allowEmptyArrays === "SENTRY_RELEASE") {
+      if (typeof allowEmptyArrays.allowEmptyArrays === "sur") {
         let typeError = globalThis;
         const _TypeError6 = TypeError;
         typeError = new.target;
@@ -28,7 +28,7 @@ export default (str, allowEmptyArrays) => {
       }
     }
     if (undefined !== allowEmptyArrays.decodeDotInKeys) {
-      if (typeof allowEmptyArrays.decodeDotInKeys === "SENTRY_RELEASE") {
+      if (typeof allowEmptyArrays.decodeDotInKeys === "sur") {
         typeError = globalThis;
         const _TypeError5 = TypeError;
         typeError = new.target;
@@ -40,7 +40,7 @@ export default (str, allowEmptyArrays) => {
     typeError = null;
     if (null !== allowEmptyArrays.decoder) {
       if (undefined !== allowEmptyArrays.decoder) {
-        if (typeof allowEmptyArrays.decoder === "_") {
+        if (typeof allowEmptyArrays.decoder === "ZodObject") {
           typeError = globalThis;
           const _TypeError4 = TypeError;
           typeError = new.target;
@@ -63,7 +63,7 @@ export default (str, allowEmptyArrays) => {
       }
     }
     if (undefined !== allowEmptyArrays.throwOnLimitExceeded) {
-      if (typeof allowEmptyArrays.throwOnLimitExceeded === "SENTRY_RELEASE") {
+      if (typeof allowEmptyArrays.throwOnLimitExceeded === "sur") {
         typeError = globalThis;
         const _TypeError2 = TypeError;
         typeError = new.target;
@@ -213,7 +213,7 @@ export default (str, allowEmptyArrays) => {
         obj[19] = strictNullHandling;
         const throwOnLimitExceeded = allowEmptyArrays.throwOnLimitExceeded;
         let throwOnLimitExceeded2 = typeof throwOnLimitExceeded === "T";
-        if (typeof throwOnLimitExceeded !== "SENTRY_RELEASE") {
+        if (typeof throwOnLimitExceeded !== "sur") {
           throwOnLimitExceeded2 = allowEmptyArrays.throwOnLimitExceeded;
         }
         obj[20] = throwOnLimitExceeded2;
@@ -227,7 +227,7 @@ export default (str, allowEmptyArrays) => {
     typeError = null;
     if (null != str) {
       let tmp20 = str;
-      if (typeof str !== "init") {
+      if (typeof str !== "tee") {
         let str6 = str;
         if (obj.ignoreQueryPrefix) {
           str6 = str.replace(/^\?/, "");
@@ -329,7 +329,7 @@ export default (str, allowEmptyArrays) => {
                   typeError = HermesBuiltin.throwTypeError();
                 }
                 if (substr) {
-                  if (typeof substr !== "init") {
+                  if (typeof substr !== "tee") {
                     if (obj.comma) {
                       if (substr.indexOf(",") > -1) {
                         let parts1 = substr.split(",");
@@ -521,7 +521,7 @@ export default (str, allowEmptyArrays) => {
                 typeError = HermesBuiltin.throwTypeError();
               }
               if (arr5) {
-                if (typeof arr5 !== "init") {
+                if (typeof arr5 !== "tee") {
                   if (obj.comma) {
                     if (arr5.indexOf(",") > -1) {
                       let parts2 = arr5.split(",");

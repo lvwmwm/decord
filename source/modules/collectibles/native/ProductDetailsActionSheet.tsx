@@ -1,10 +1,10 @@
-// Module ID: 8732
-// Function ID: 8733
+// Module ID: 8728
+// Function ID: 8729
 // Name: PreviewProfileTrigger
-// Dependencies: [32, 19, 17, 678, 676, 505, 21, 4189, 712, 4604, 3901, 4035, 1236, 8733, 1901, 8664, 8359, 8731, 6502, 8735, 5515, 5535, 5809, 8736, 8737, 8663, 8426, 503, 8046, 698, 8700, 8738, 8739, 7967, 8702, 8705, 3848, 8740, 5243, 5245, 8707, 8741, 8757, 8763, 1297, 8764, 6665, 4157, 8766, 500, 2]
+// Dependencies: [32, 19, 17, 678, 676, 505, 21, 4189, 712, 4604, 3901, 4035, 1236, 8729, 1901, 8661, 8356, 8727, 6499, 8731, 5515, 5535, 5809, 8732, 8733, 8660, 8423, 503, 8043, 698, 8696, 8734, 8735, 7964, 8698, 8701, 3848, 8736, 5243, 5245, 8703, 8737, 8753, 8759, 1297, 8760, 6662, 4157, 8762, 500, 2]
 // Exports: default
 
-// Module 8732 (PreviewProfileTrigger)
+// Module 8728 (PreviewProfileTrigger)
 import DynamicBadgeTooltip from "DynamicBadgeTooltip";
 import apexExperiment from "apexExperiment";
 import noop from "apexExperiment";
@@ -69,7 +69,7 @@ function PreviewProfileTrigger(handlePreviewPress) {
   obj[3] = intl.string(handlePreviewPress(1236).t["3Qcx6K"]);
   obj = { size: "md", color: null };
   obj[1] = onTrackPress(712).colors.INTERACTIVE_ICON_DEFAULT;
-  obj[4] = callback3(handlePreviewPress(8733).EyeIcon, obj);
+  obj[4] = callback3(handlePreviewPress(8729).EyeIcon, obj);
   return callback3(closure_7, obj);
 }
 function ProductDetailsActionSheetInner(product) {
@@ -409,5 +409,5 @@ export default function ProductDetailsActionSheet(shopAnalyticsContext) {
   obj = {};
   const merged1 = Object.assign(merged);
   obj[1] = callback3(ProductDetailsActionSheetWithOrderCTX, obj);
-  return callback3(require(8663) /* context */.CollectiblesAnalyticsProvider, obj);
+  return callback3(require(8660) /* context */.CollectiblesAnalyticsProvider, obj);
 };

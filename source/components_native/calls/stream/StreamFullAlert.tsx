@@ -1,10 +1,10 @@
-// Module ID: 16695
-// Function ID: 16696
+// Module ID: 16689
+// Function ID: 16690
 // Name: StreamFullAlert
-// Dependencies: [19, 17, 21, 8852, 1236, 4618, 4185, 16696, 2]
+// Dependencies: [19, 17, 21, 8848, 1236, 4618, 4185, 16690, 2]
 // Exports: default
 
-// Module 16695 (StreamFullAlert)
+// Module 16689 (StreamFullAlert)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -17,8 +17,8 @@ let closure_6 = { image: { alignSelf: "center", marginTop: 32 }, body: { marginT
 const result = require("jsxProd").fileFinishedImporting("components_native/calls/stream/StreamFullAlert.tsx");
 
 export default function StreamFullAlert(arg0) {
-  let obj = require(8852) /* mapped */;
-  const errorInfo = obj.getErrorInfo(require(8852) /* mapped */.AVError.STREAM_FULL);
+  let obj = require(8848) /* mapped */;
+  const errorInfo = obj.getErrorInfo(require(8848) /* mapped */.AVError.STREAM_FULL);
   let errorCode;
   if (errorInfo != null) {
     errorCode = errorInfo.errorCode;
@@ -35,7 +35,7 @@ export default function StreamFullAlert(arg0) {
   const items = [callback(require(4185) /* Text */.Text, obj), callback(require(4185) /* Text */.Text, { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_6.body, children: formatToPlainStringResult }), ];
   const obj1 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_6.body, children: formatToPlainStringResult };
   const tmp6 = importDefault(4618);
-  items[2] = callback(Image, { source: importDefault(16696), style: closure_6.image });
+  items[2] = callback(Image, { source: importDefault(16690), style: closure_6.image });
   obj.children = items;
   return callback2(tmp6, obj);
 };

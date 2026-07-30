@@ -242,7 +242,7 @@ function _createPaymentSource() {
               let closure_7;
               c9 = 1;
               c10 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -426,7 +426,7 @@ export const dispatchConfirmationError = function dispatchConfirmationError(erro
     let tmp15 = require;
   } else {
     let tmp6 = message;
-    if (typeof message !== "init") {
+    if (typeof message !== "tee") {
       tmp6 = stringResult;
     }
     const obj1 = { failure_message: null, status_code: null };

@@ -1,9 +1,9 @@
-// Module ID: 9663
-// Function ID: 9664
+// Module ID: 9660
+// Function ID: 9661
 // Name: HorizontalAutocompleteOption
-// Dependencies: [19, 17, 4181, 1935, 1862, 3826, 1874, 676, 21, 4189, 5109, 712, 4050, 4616, 4190, 589, 1297, 4185, 4028, 5540, 5541, 7903, 4650, 4380, 5141, 2]
+// Dependencies: [19, 17, 4181, 1935, 1862, 3826, 1874, 676, 21, 4189, 5109, 712, 4050, 4616, 4190, 589, 1297, 4185, 4028, 5540, 5541, 7900, 4650, 4380, 5141, 2]
 
-// Module 9663 (HorizontalAutocompleteOption)
+// Module 9660 (HorizontalAutocompleteOption)
 import "getRoleIconData";
 import get_ActivityIndicator from "Text";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -152,7 +152,7 @@ let obj3 = {
     channel(589);
     [][0] = channel;
     if (channel.type === constants.GUILD_CATEGORY) {
-      let channelIconWithGuild = importDefault(7903);
+      let channelIconWithGuild = importDefault(7900);
     } else {
       let tmp2Result = tmp2(4650);
       channelIconWithGuild = tmp2Result.getChannelIconWithGuild(channel, tmp5);

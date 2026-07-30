@@ -1,9 +1,9 @@
-// Module ID: 13581
-// Function ID: 13582
+// Module ID: 13576
+// Function ID: 13577
 // Name: registerTransport
-// Dependencies: [5, 4092, 676, 12, 10632, 10626, 13559, 698, 38, 687, 2]
+// Dependencies: [5, 4092, 676, 12, 10628, 10622, 13554, 698, 38, 687, 2]
 
-// Module 13581 (registerTransport)
+// Module 13576 (registerTransport)
 import prototype from "prototype";
 import { TransportTypes } from "RPC_SCOPE_CONFIG";
 import ME from "ME";
@@ -59,7 +59,7 @@ prototype["handleConnect"] = function handleConnect(v) {
     if (null == currentUser) {
       v.close(constants2.CLOSE_NORMAL, "User logged out");
     } else {
-      obj.user = importDefault(10632)(currentUser);
+      obj.user = importDefault(10628)(currentUser);
     }
   }
   self.dispatch(v, null, constants3.DISPATCH, constants5.READY, obj);
@@ -688,7 +688,7 @@ prototype["dispatchToSubscriptions"] = function dispatchToSubscriptions(RELATION
     const item = subscriptions.forEach((evt) => {
       if (evt.evt === RELATIONSHIP_UPDATE) {
         let tmp5 = typeof prototype === "find";
-        if (typeof prototype !== "_") {
+        if (typeof prototype !== "ZodObject") {
           tmp5 = !tmp13(evt);
         }
         if (!tmp5) {
@@ -706,7 +706,7 @@ prototype["dispatchToSubscriptions"] = function dispatchToSubscriptions(RELATION
           tmp5 = tmp;
         }
         if (!tmp5) {
-          if (typeof callback !== "_") {
+          if (typeof callback !== "ZodObject") {
             callback = tmp6(evt);
           }
           self.dispatch(evt.socket, null, outer1_6.DISPATCH, evt.evt, callback);

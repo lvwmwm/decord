@@ -1,8 +1,8 @@
-// Module ID: 11084
-// Function ID: 11085
-// Dependencies: [5, 6756, 6748, 21, 709, 4157, 11085, 1959, 4395, 7618, 6749, 11078, 2]
+// Module ID: 11080
+// Function ID: 11081
+// Dependencies: [5, 6753, 6745, 21, 709, 4157, 11081, 1959, 4395, 7615, 6746, 11074, 2]
 
-// Module 11084
+// Module 11080
 import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
 import SafetyHubView from "SafetyHubView";
 import { AGE_VERIFICATION_GET_STARTED_MODAL_KEY as closure_6 } from "set";
@@ -17,7 +17,7 @@ let obj = {
     let obj = importDefault(709);
     obj.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     obj = { classificationId, onClose };
-    importDefault(4157).openLazy(require(1959) /* asyncRequireImpl */(11085, dependencyMap.paths), closure_4, obj);
+    importDefault(4157).openLazy(require(1959) /* asyncRequireImpl */(11081, dependencyMap.paths), closure_4, obj);
   },
   openV2(arg0, onClose) {
     let closure_0 = arg0;

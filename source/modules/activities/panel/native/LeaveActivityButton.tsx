@@ -1,9 +1,9 @@
-// Module ID: 15862
-// Function ID: 15863
+// Module ID: 15856
+// Function ID: 15857
 // Name: BaseLeaveActivityButton
-// Dependencies: [19, 5688, 21, 4600, 10711, 1236, 10609, 2]
+// Dependencies: [19, 5688, 21, 4600, 10707, 1236, 10605, 2]
 
-// Module 15862 (BaseLeaveActivityButton)
+// Module 15856 (BaseLeaveActivityButton)
 import { ActivityPanelModes } from "ActivityPanelModes";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";

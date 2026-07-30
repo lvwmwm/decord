@@ -1,10 +1,10 @@
-// Module ID: 16340
-// Function ID: 16341
+// Module ID: 16334
+// Function ID: 16335
 // Name: PhoneThenEmailInterstitial
-// Dependencies: [5, 19, 17, 16341, 1366, 1874, 676, 21, 4189, 1297, 16342, 1236, 4600, 503, 5143, 6752, 8334, 5548, 5641, 16346, 9184, 9189, 9186, 9224, 9234, 9235, 9185, 16347, 9259, 9229, 589, 4157, 4048, 5570, 2]
+// Dependencies: [5, 19, 17, 16335, 1366, 1874, 676, 21, 4189, 1297, 16336, 1236, 4600, 503, 5143, 6749, 8331, 5548, 5641, 16340, 9180, 9185, 9182, 9220, 9230, 9231, 9181, 16341, 9255, 9225, 589, 4157, 4048, 5570, 2]
 // Exports: default
 
-// Module 16340 (PhoneThenEmailInterstitial)
+// Module 16334 (PhoneThenEmailInterstitial)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import Overview from "Overview";
 import { View } from "showSimpleActionSheet";
@@ -21,7 +21,7 @@ const require = arg1;
 function PhoneThenEmailInterstitial(navigation) {
   navigation = navigation.navigation;
   let obj = { Illustration: null, title: null, body: null, children: null };
-  obj[0] = navigation(16342).VerifyPhone;
+  obj[0] = navigation(16336).VerifyPhone;
   const intl = navigation(1236).intl;
   obj[1] = intl.string(navigation(1236).t.KLnLIP);
   const intl2 = navigation(1236).intl;
@@ -101,7 +101,7 @@ export default function VerificationModal() {
     obj3[4] = obj9.getHeaderNoTitle();
     obj3[5] = function headerRight() {
       let obj = { source: null, accessibilityLabel: null, onPress: null };
-      obj[0] = callback2(8334);
+      obj[0] = callback2(8331);
       let intl = callback(1236).intl;
       obj[1] = intl.string(callback(1236).t.PdRCRg);
       obj[2] = function onPress() {
@@ -117,10 +117,10 @@ export default function VerificationModal() {
         obj[1] = items;
         const result = obj.showSimpleActionSheet(obj);
       };
-      return callback3(callback(6752).HeaderActionButton, obj);
+      return callback3(callback(6749).HeaderActionButton, obj);
     };
     obj3[6] = function render() {
-      return callback3(callback2(16346), {});
+      return callback3(callback2(16340), {});
     };
     obj[constants.OVERVIEW] = obj3;
     let obj5 = { impressionName: stateFromStores(503).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
@@ -129,7 +129,7 @@ export default function VerificationModal() {
     let obj12 = stateFromStores(5143);
     obj5[2] = obj12.getHeaderNoTitle();
     obj5[3] = function render() {
-      return callback3(callback2(9184), {});
+      return callback3(callback2(9180), {});
     };
     obj[constants.RESEND_EMAIL] = obj5;
     const obj7 = { impressionName: stateFromStores(503).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
@@ -138,7 +138,7 @@ export default function VerificationModal() {
     let obj15 = stateFromStores(5143);
     obj7[2] = obj15.getHeaderNoTitle();
     obj7[3] = function render() {
-      return callback3(callback2(9184), {});
+      return callback3(callback2(9180), {});
     };
     obj[constants.CHANGE_EMAIL_COMPLETE] = obj7;
     obj9 = { impressionName: stateFromStores(503).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
@@ -147,7 +147,7 @@ export default function VerificationModal() {
     let obj18 = stateFromStores(5143);
     obj9[2] = obj18.getHeaderNoTitle();
     obj9[3] = function render() {
-      return callback3(callback2(9189), { isChangeEmail: false });
+      return callback3(callback2(9185), { isChangeEmail: false });
     };
     obj[constants.CONFIRM_EMAIL_CHANGE_CODE] = obj9;
     const obj11 = { impressionName: stateFromStores(503).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
@@ -156,7 +156,7 @@ export default function VerificationModal() {
     let obj21 = stateFromStores(5143);
     obj11[2] = obj21.getHeaderNoTitle();
     obj11[3] = function render() {
-      return callback3(callback2(9186), {});
+      return callback3(callback2(9182), {});
     };
     obj[constants.CONFIRM_EMAIL_CHANGE_START] = obj11;
     const obj13 = { impressionName: stateFromStores(503).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
@@ -165,7 +165,7 @@ export default function VerificationModal() {
     const obj14 = { impression_group: stateFromStores(503).ImpressionGroups.USER_VERIFICATION_MODAL_FLOW, step: constants.ENTER_EMAIL };
     obj13[2] = stateFromStores(5143).getHeaderNoTitle();
     obj13[3] = function render() {
-      return callback3(callback2(9224), { isChangeEmail: false });
+      return callback3(callback2(9220), { isChangeEmail: false });
     };
     obj[constants.ENTER_EMAIL] = obj13;
     obj15 = { impressionName: stateFromStores(503).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
@@ -177,22 +177,22 @@ export default function VerificationModal() {
       let callback = arg1;
       let obj = {};
       const merged = Object.assign(arg0);
-      obj.reason = callback(9235).ChangePhoneReason.USER_ACTION_REQUIRED;
+      obj.reason = callback(9231).ChangePhoneReason.USER_ACTION_REQUIRED;
       obj.onComplete = function onComplete(phone) {
         return arr.push(outer1_10.VERIFY_PHONE, {
           phone,
           onVerified(arg0) {
             let arr = arg0;
             let obj = { hideUnverifiedBanner: true, onSubmit: null, onSuccess: null };
-            let closure_2 = outer1_3(/* F119063 */ function() { ... });
+            let closure_2 = outer1_3(/* F119074 */ function() { ... });
             obj[1] = () => { ... };
-            let closure_1 = outer1_3(/* F119065 */ function() { ... });
+            let closure_1 = outer1_3(/* F119076 */ function() { ... });
             obj[2] = () => { ... };
             arr = arr.push(outer1_10.VERIFY_PASSWORD, obj);
           }
         });
       };
-      return callback3(callback2(9234), obj);
+      return callback3(callback2(9230), obj);
     };
     obj[constants.ADD_PHONE] = obj15;
     const obj17 = { impressionName: stateFromStores(503).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
@@ -202,7 +202,7 @@ export default function VerificationModal() {
     obj17[2] = stateFromStores(5143).getHeaderNoTitle();
     obj17[3] = function render(arg0) {
       const merged = Object.assign(arg0);
-      return callback3(callback2(9259), { disableKeyboardAvoidingView: true });
+      return callback3(callback2(9255), { disableKeyboardAvoidingView: true });
     };
     obj[constants.VERIFY_PHONE] = obj17;
     const obj19 = { impressionName: stateFromStores(503).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
@@ -212,7 +212,7 @@ export default function VerificationModal() {
     obj19[2] = stateFromStores(5143).getHeaderNoTitle();
     obj19[3] = function render(arg0) {
       const merged = Object.assign(arg0);
-      return callback3(callback2(9229), {});
+      return callback3(callback2(9225), {});
     };
     obj[constants.VERIFY_PASSWORD] = obj19;
     obj21 = { impressionName: stateFromStores(503).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };

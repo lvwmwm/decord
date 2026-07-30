@@ -1,10 +1,10 @@
-// Module ID: 9943
-// Function ID: 9944
+// Module ID: 9939
+// Function ID: 9940
 // Name: validateJumpWithAlert
 // Dependencies: [1372, 3817, 3826, 676, 4528, 1236, 5763, 2]
 // Exports: default
 
-// Module 9943 (validateJumpWithAlert)
+// Module 9939 (validateJumpWithAlert)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import upsertRelationship from "upsertRelationship";

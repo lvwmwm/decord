@@ -1,10 +1,10 @@
-// Module ID: 15231
-// Function ID: 15232
+// Module ID: 15225
+// Function ID: 15226
 // Name: getMissingFavoriteThreadIds
-// Dependencies: [32, 19, 1371, 1375, 3816, 4865, 5779, 5096, 3819, 1376, 5133, 1372, 5780, 4221, 3817, 4201, 1931, 4385, 1410, 505, 5781, 1306, 10417, 10215, 12, 1351, 2]
+// Dependencies: [32, 19, 1371, 1375, 3816, 4865, 5779, 5096, 3819, 1376, 5133, 1372, 5780, 4221, 3817, 4201, 1931, 4385, 1410, 505, 5781, 1306, 10413, 10211, 12, 1351, 2]
 // Exports: useFavoritesGuildChannelList
 
-// Module 15231 (getMissingFavoriteThreadIds)
+// Module 15225 (getMissingFavoriteThreadIds)
 import _slicedToArray from "_slicedToArray";
 import sum from "sum";
 import importDefaultResult1 from "initializeFromUserSettings";
@@ -59,7 +59,7 @@ function getMissingFavoriteThreadIds(includeLoading) {
               continue;
             } else {
               let tmp5 = importDefault;
-              let obj = importDefault(10417);
+              let obj = importDefault(10413);
               let loadState = obj.getLoadState(key10013);
               let tmp7 = "NOT_FOUND" !== loadState;
               if (tmp7) {
@@ -269,7 +269,7 @@ function computeFavoritesState(favoriteChannels) {
     },
     set: undefined
   });
-  const favoritesCategories = favoriteChannels(10215).getFavoritesCategories(favoriteChannels);
+  const favoritesCategories = favoriteChannels(10211).getFavoritesCategories(favoriteChannels);
   let found = favoritesCategories.filter((id) => null != id.id);
   let mapped = found.map((id) => {
     id = id.id;
@@ -628,7 +628,7 @@ let items = [importDefaultResult, importDefaultResult1, importDefaultResult2, im
 const result = require("participantFromServer").fileFinishedImporting("modules/guild_sidebar/FavoritesGuildChannelList.tsx");
 
 export const useFavoritesGuildChannelList = function useFavoritesGuildChannelList() {
-  let hasAccess = _require(10215).useFavoritesAccess("FavoritesGuildChannelList").hasAccess;
+  let hasAccess = _require(10211).useFavoritesAccess("FavoritesGuildChannelList").hasAccess;
   _require = hasAccess;
   const tmp3 = callback(React.useState(() => callback2()), 2);
   let closure_1 = tmp3[1];

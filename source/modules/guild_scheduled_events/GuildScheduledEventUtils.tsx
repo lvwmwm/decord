@@ -1,10 +1,10 @@
-// Module ID: 8323
-// Function ID: 8324
+// Module ID: 8320
+// Function ID: 8321
 // Name: getNextShownUpcomingEventNoticeType
 // Dependencies: [1378, 3771, 11, 2]
 // Exports: getNextShownUpcomingEventNoticeType
 
-// Module 8323 (getNextShownUpcomingEventNoticeType)
+// Module 8320 (getNextShownUpcomingEventNoticeType)
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
 
 let c3;

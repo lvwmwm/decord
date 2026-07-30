@@ -90,7 +90,7 @@ const tmp3 = isJest ? (function makeShareableCloneRecursiveWeb(arg0) {
           result = shareableMappingCache13.set(shareableClone);
           let shareableClone1 = shareableClone;
         } else {
-          if (typeof arr !== "_") {
+          if (typeof arr !== "ZodObject") {
             let result1 = shareableMappingCache13(result[4]);
             if (!result1.isWorkletFunction(arr)) {
               let WorkletsModule = shareableMappingCache13(result[5]).WorkletsModule;

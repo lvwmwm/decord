@@ -1,9 +1,9 @@
-// Module ID: 10216
-// Function ID: 10217
+// Module ID: 10212
+// Function ID: 10213
 // Name: useFavoritesNotificationStore
 // Dependencies: [644, 705, 2]
 
-// Module 10216 (useFavoritesNotificationStore)
+// Module 10212 (useFavoritesNotificationStore)
 import keys from "keys";
 
 const obj = keys.create((arg0) => {

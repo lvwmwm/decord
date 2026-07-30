@@ -1,10 +1,10 @@
-// Module ID: 9410
-// Function ID: 9411
+// Module ID: 9406
+// Function ID: 9407
 // Name: Emoji
-// Dependencies: [19, 17, 4006, 21, 4189, 712, 9411, 3834, 5141, 4185, 9412, 3830, 9340, 9413, 1236, 7634, 4600, 9415, 2]
+// Dependencies: [19, 17, 4006, 21, 4189, 712, 9407, 3834, 5141, 4185, 9408, 3830, 9336, 9409, 1236, 7631, 4600, 9411, 2]
 // Exports: default
 
-// Module 9410 (Emoji)
+// Module 9406 (Emoji)
 import noop from "noop";
 import { View } from "_updateEmoji";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -19,7 +19,7 @@ function Emoji(surrogate) {
   surrogate = surrogate.surrogate;
   let obj = {};
   const merged = Object.assign(createCacheKey());
-  let obj1 = require(9411) /* styles */;
+  let obj1 = require(9407) /* styles */;
   const merged1 = Object.assign(obj1.useSharedMessageEmojiStyles());
   let obj2 = importDefault(3834);
   const uRL = obj2.getURL(surrogate);

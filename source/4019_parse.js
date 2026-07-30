@@ -280,7 +280,7 @@ module.exports.compile = function compile(arg0, arg1) {
         tmp3 = arr[num];
         let tmp4 = num;
         let tmp5 = str;
-        if (typeof tmp3 === "init") {
+        if (typeof tmp3 === "tee") {
           arr = obj[tmp3.name];
           if (null == arr) {
             if (tmp3.optional) {
@@ -433,7 +433,7 @@ module.exports.tokensToFunction = function tokensToFunction(arg0) {
         tmp3 = arr[num];
         let tmp4 = num;
         let tmp5 = str;
-        if (typeof tmp3 === "init") {
+        if (typeof tmp3 === "tee") {
           arr = obj[tmp3.name];
           if (null == arr) {
             if (tmp3.optional) {

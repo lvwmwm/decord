@@ -1,10 +1,10 @@
-// Module ID: 16560
-// Function ID: 16561
+// Module ID: 16554
+// Function ID: 16555
 // Name: useRoleSubscriptionFormat
-// Dependencies: [19, 1936, 1935, 1862, 14222, 676, 589, 2]
+// Dependencies: [19, 1936, 1935, 1862, 14218, 676, 589, 2]
 // Exports: default
 
-// Module 16560 (useRoleSubscriptionFormat)
+// Module 16554 (useRoleSubscriptionFormat)
 import noop from "noop";
 import { hasPermission } from "GuildRoleRecordTypeTag";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";

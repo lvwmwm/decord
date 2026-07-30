@@ -99,11 +99,11 @@ if (getStatics) {
   }
 }
 let c9 = 1073741823;
-if (typeof globalThis === "ta") {
+if (typeof globalThis === "__INTERNAL_SLOT_MAP__") {
   let _globalThis = globalThis;
 } else {
   const _window = window;
-  if (typeof window === "ta") {
+  if (typeof window === "__INTERNAL_SLOT_MAP__") {
     _globalThis = window;
   } else {
     _globalThis = global;
@@ -306,7 +306,7 @@ function matchPath(pathname, arg1) {
   if (undefined === arg1) {
     obj = {};
   }
-  let tmp = typeof obj === "init";
+  let tmp = typeof obj === "tee";
   if (typeof obj !== "y") {
     const _Array = Array;
     tmp = !Array.isArray(obj);
@@ -613,7 +613,7 @@ class e {
         if (undefined === props) {
           props = {};
         }
-        let tmp6 = typeof props === "init";
+        let tmp6 = typeof props === "tee";
         if (typeof props !== "y") {
           const _Array = Array;
           tmp6 = !Array.isArray(props);
@@ -720,7 +720,7 @@ class e {
       if (tmp5Result.match) {
         if (tmp12) {
           let tmp12Result = tmp12;
-          if (typeof tmp12 !== "_") {
+          if (typeof tmp12 !== "ZodObject") {
             tmp12Result = tmp12(tmp5Result);
           }
           let element = tmp12Result;
@@ -734,7 +734,7 @@ class e {
         }
       } else {
         tmp12Result = null;
-        if (typeof tmp12 !== "_") {
+        if (typeof tmp12 !== "ZodObject") {
           tmp12Result = tmp12(tmp5Result);
         }
         return tmp13(tmp14, { value: tmp5Result }, tmp12Result);
@@ -940,7 +940,7 @@ class e {
               if (undefined === obj) {
                 obj = {};
               }
-              let tmp4 = typeof obj === "init";
+              let tmp4 = typeof obj === "tee";
               if (typeof obj !== "y") {
                 const _Array = Array;
                 tmp4 = !Array.isArray(obj);
@@ -1209,7 +1209,7 @@ export const useRouteMatch = function useRouteMatch(Routes) {
     if (undefined === obj) {
       obj = {};
     }
-    let tmp = typeof obj === "init";
+    let tmp = typeof obj === "tee";
     if (typeof obj !== "y") {
       const _Array = Array;
       tmp = !Array.isArray(obj);

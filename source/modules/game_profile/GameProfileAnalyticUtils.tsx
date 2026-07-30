@@ -1,10 +1,10 @@
-// Module ID: 8486
-// Function ID: 8487
+// Module ID: 8483
+// Function ID: 8484
 // Name: GameProfileEmbedAction
-// Dependencies: [8171, 676, 8193, 514, 698, 2]
+// Dependencies: [8168, 676, 8190, 514, 698, 2]
 // Exports: generateViewId, getGuildIdAndVerifiedFromInvite, trackGameProfileAction, trackGameProfileClose, trackGameProfileEmbedAction, trackGameProfileFeedback, trackGameProfileOpen
 
-// Module 8486 (GameProfileEmbedAction)
+// Module 8483 (GameProfileEmbedAction)
 import map from "map";
 import ME from "ME";
 import { ContentInventoryFeedKey } from "ContentInventoryFeedKey";

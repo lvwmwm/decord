@@ -101,7 +101,7 @@ arg5.default = function stringifySafe(name) {
         }
         return combined;
       } catch (err) {
-        if (typeof str.toString === "_") {
+        if (typeof str.toString === "ZodObject") {
           return "[\"" + typeof str + "\" failed to stringify]";
         } else {
           try {
@@ -225,7 +225,7 @@ arg5.createStringifySafeWithLimits = function createStringifySafeWithLimits(maxD
           }
           return combined;
         } catch (err) {
-          if (typeof str.toString === "_") {
+          if (typeof str.toString === "ZodObject") {
             return "[\"" + typeof str + "\" failed to stringify]";
           } else {
             try {

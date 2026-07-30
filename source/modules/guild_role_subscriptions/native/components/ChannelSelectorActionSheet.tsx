@@ -1,10 +1,10 @@
-// Module ID: 16595
-// Function ID: 16596
+// Module ID: 16589
+// Function ID: 16590
 // Name: ChannelRow
-// Dependencies: [32, 19, 17, 1372, 5127, 3817, 676, 4386, 21, 4189, 712, 5109, 4380, 4157, 15104, 5141, 16532, 589, 5551, 4185, 1236, 9239, 4717, 4395, 8272, 1959, 8274, 8276, 1297, 12668, 5245, 2]
+// Dependencies: [32, 19, 17, 1372, 5127, 3817, 676, 4386, 21, 4189, 712, 5109, 4380, 4157, 15098, 5141, 16526, 589, 5551, 4185, 1236, 9235, 4717, 4395, 8269, 1959, 8271, 8273, 1297, 12662, 5245, 2]
 // Exports: default
 
-// Module 16595 (ChannelRow)
+// Module 16589 (ChannelRow)
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
 import { View } from "initialize";
@@ -39,11 +39,11 @@ function ChannelRow(channel) {
   obj[4] = channel;
   obj[5] = selected;
   obj[7] = UnreadSetting.ONLY_MENTIONS;
-  const children = [closure_11(onChannelSelected(15104), obj), ];
+  const children = [closure_11(onChannelSelected(15098), obj), ];
   if (selected) {
     obj = { style: null, source: null };
     obj[0] = tmp.selectedIcon;
-    obj[1] = tmp2(16532);
+    obj[1] = tmp2(16526);
     selected = tmp8(tmp2(5141), obj);
     const tmp2Result = tmp2(5141);
   }
@@ -142,7 +142,7 @@ export default function ChannelSelectorActionSheet(guildId) {
     }
     return expandActionSheetResult;
   };
-  obj1[1] = closure_11(guildId(9239).SearchField, obj2);
+  obj1[1] = closure_11(guildId(9235).SearchField, obj2);
   items2[1] = closure_11(View, obj1);
   let tmp9Result = !hideCreateChannel;
   if (!hideCreateChannel) {
@@ -170,7 +170,7 @@ export default function ChannelSelectorActionSheet(guildId) {
     }
     const obj4 = { color: null, source: null };
     obj4[0] = str;
-    obj4[1] = importDefault(12668);
+    obj4[1] = importDefault(12662);
     const items3 = [tmp8(tmp5(1297).Icon, obj4), ];
     const obj5 = { style: null, variant: "text-md/medium", color: "text-link", children: null };
     obj5[0] = tmp.createChannelLabel;

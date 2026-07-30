@@ -1,10 +1,10 @@
-// Module ID: 11268
-// Function ID: 11269
+// Module ID: 11264
+// Function ID: 11265
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 676, 21, 4189, 712, 3886, 1945, 1236, 11269, 8017, 4185, 4717, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 3886, 1945, 1236, 11265, 8014, 4185, 4717, 2]
 // Exports: default
 
-// Module 11268 (LearnMoreAboutAppsSection)
+// Module 11264 (LearnMoreAboutAppsSection)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -40,7 +40,7 @@ export default function LearnMoreAboutAppsSection(visible) {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   let obj = { sectionName: null, numItems: 1, numVisibleItems: 1, viewed: null, children: null };
   const formatToPlainStringResult = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.xx5Sug, { sectionTitle: stringResult, sectionBody: stringResult1 });
-  obj[0] = require(8017) /* AppLauncherEntrypoint */.AppLauncherSectionName.NEW_TO_APPS;
+  obj[0] = require(8014) /* AppLauncherEntrypoint */.AppLauncherSectionName.NEW_TO_APPS;
   obj[3] = visible.visible;
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.divider };
@@ -54,5 +54,5 @@ export default function LearnMoreAboutAppsSection(visible) {
   items[5] = callback(View, { style: tmp.divider });
   obj[1] = items;
   obj[4] = callback2(View, obj);
-  return callback(importDefault(11269), obj);
+  return callback(importDefault(11265), obj);
 };

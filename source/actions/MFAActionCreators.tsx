@@ -1,8 +1,8 @@
-// Module ID: 13775
-// Function ID: 13776
-// Dependencies: [12799, 676, 530, 709, 2]
+// Module ID: 13770
+// Function ID: 13771
+// Dependencies: [12793, 676, 530, 709, 2]
 
-// Module 13775
+// Module 13770
 import getVerificationKey from "getVerificationKey";
 import { Endpoints } from "ME";
 

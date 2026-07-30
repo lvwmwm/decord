@@ -1,10 +1,10 @@
-// Module ID: 14070
-// Function ID: 14071
+// Module ID: 14066
+// Function ID: 14067
 // Name: BountiesEndCardPressableCta
-// Dependencies: [19, 17, 14071, 21, 4189, 712, 10496, 14067, 9479, 10498, 6013, 5038, 6012, 5141, 4185, 2]
+// Dependencies: [19, 17, 14067, 21, 4189, 712, 10492, 14063, 9475, 10494, 6011, 5038, 6010, 5141, 4185, 2]
 // Exports: default
 
-// Module 14070 (BountiesEndCardPressableCta)
+// Module 14066 (BountiesEndCardPressableCta)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { END_CARD_IMAGE_SIZE } from "END_CARD_IMAGE_SIZE";

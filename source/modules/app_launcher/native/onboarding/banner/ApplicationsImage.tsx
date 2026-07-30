@@ -1,10 +1,10 @@
-// Module ID: 11224
-// Function ID: 11225
+// Module ID: 11220
+// Function ID: 11221
 // Name: ApplicationsImage
-// Dependencies: [19, 17, 21, 4189, 712, 11225, 5141, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 11221, 5141, 2]
 // Exports: default
 
-// Module 11224 (ApplicationsImage)
+// Module 11220 (ApplicationsImage)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,12 +35,12 @@ export default function ApplicationsImage(arg0) {
   const tmp = createCacheKey();
   let appLauncherIconSource = null;
   if (null != firstApplication) {
-    let obj = require(11225) /* handleApplicationSelected */;
+    let obj = require(11221) /* handleApplicationSelected */;
     appLauncherIconSource = obj.getAppLauncherIconSource(firstApplication);
   }
   let appLauncherIconSource1 = null;
   if (null != secondApplication) {
-    let obj1 = require(11225) /* handleApplicationSelected */;
+    let obj1 = require(11221) /* handleApplicationSelected */;
     appLauncherIconSource1 = obj1.getAppLauncherIconSource(secondApplication);
   }
   let tmp8 = null != appLauncherIconSource;

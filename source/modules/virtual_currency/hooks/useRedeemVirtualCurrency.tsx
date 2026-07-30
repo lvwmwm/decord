@@ -1,10 +1,10 @@
-// Module ID: 8723
-// Function ID: 8724
+// Module ID: 8719
+// Function ID: 8720
 // Name: useRedeemVirtualCurrency
-// Dependencies: [5, 32, 19, 4172, 8724, 3857, 5678, 3850, 8722, 1236, 2]
+// Dependencies: [5, 32, 19, 4172, 8720, 3857, 5678, 3850, 8718, 1236, 2]
 // Exports: useRedeemVirtualCurrency
 
-// Module 8723 (useRedeemVirtualCurrency)
+// Module 8719 (useRedeemVirtualCurrency)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -30,7 +30,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
   const isSubmitting = callback(callback2(false), 2);
   callback2 = isSubmitting[1];
   const tmp = callback(callback2(""), 2);
-  const enabled = entitlements(8724).useConfig({ location: "orb_checkout_modal" }).enabled;
+  const enabled = entitlements(8720).useConfig({ location: "orb_checkout_modal" }).enabled;
   order = undefined;
   if (order != null) {
     order = order.order;
@@ -475,7 +475,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
   let closure_9 = tmp10;
   const tmp11 = order((skuId, loadId) => {
     const callback = arg2;
-    let obj = callback(8722);
+    let obj = callback(8718);
     obj = {
       skuId,
       loadId,

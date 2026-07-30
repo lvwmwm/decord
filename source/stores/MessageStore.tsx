@@ -1,7 +1,7 @@
 // Module ID: 4407
 // Function ID: 4408
 // Name: reinjectEphemerals
-// Dependencies: [32, 5, 1934, 4408, 1946, 1218, 1372, 4859, 1932, 1942, 1862, 3817, 3826, 1931, 4006, 1874, 676, 3, 11, 4860, 4865, 1907, 4863, 4409, 1384, 12, 5862, 4418, 3828, 6145, 12820, 589, 9987, 1906, 709, 2]
+// Dependencies: [32, 5, 1934, 4408, 1946, 1218, 1372, 4859, 1932, 1942, 1862, 3817, 3826, 1931, 4006, 1874, 676, 3, 11, 4860, 4865, 1907, 4863, 4409, 1384, 12, 5860, 4418, 3828, 6143, 12814, 589, 9983, 1906, 709, 2]
 
 // Module 4407 (reinjectEphemerals)
 import canEditMessage from "canEditMessage";
@@ -289,8 +289,8 @@ function handleMessageSendFailedAutomod(arg0) {
   let messageData;
   let require;
   ({ type: require, messageData } = arg0);
-  const failedMessageId = require(6145) /* items */.getFailedMessageId(messageData);
-  const obj = require(6145) /* items */;
+  const failedMessageId = require(6143) /* items */.getFailedMessageId(messageData);
+  const obj = require(6143) /* items */;
   const tmp3 = importDefault;
   const orCreate = importDefault(4860).getOrCreate(messageData.message.channelId);
   if (orCreate.has(failedMessageId)) {
@@ -851,7 +851,7 @@ const messageStore = new MessageStore(require("dispatcher"), {
     const value = importDefault(4860).get(messageId.channelId);
     if (null != value) {
       if (value.has(messageId)) {
-        const updateResult = value.update(messageId, require(5862) /* redactionSettingToRenderedString */.handleExplicitMediaScanTimeoutForMessage);
+        const updateResult = value.update(messageId, require(5860) /* redactionSettingToRenderedString */.handleExplicitMediaScanTimeoutForMessage);
         importDefault(4860).commit(updateResult);
       }
     }

@@ -1,10 +1,10 @@
-// Module ID: 11789
-// Function ID: 11790
+// Module ID: 11785
+// Function ID: 11786
 // Name: SuggestedFriendsSectionHeader
-// Dependencies: [32, 19, 17, 676, 11790, 21, 4189, 712, 5140, 4606, 4185, 4028, 1416, 9092, 1297, 1236, 3893, 4033, 11, 7634, 6676, 4611, 691, 4600, 698, 2]
+// Dependencies: [32, 19, 17, 676, 11786, 21, 4189, 712, 5140, 4606, 4185, 4028, 1416, 9088, 1297, 1236, 3893, 4033, 11, 7631, 6673, 4611, 691, 4600, 698, 2]
 // Exports: default
 
-// Module 11789 (SuggestedFriendsSectionHeader)
+// Module 11785 (SuggestedFriendsSectionHeader)
 import _slicedToArray from "_slicedToArray";
 import Form from "Form";
 import { View } from "hexToRgba";
@@ -64,7 +64,7 @@ function SuggestionRow(suggestion) {
   obj[6] = function onPress() {
     return onSelect(suggestion.suggested_user.id);
   };
-  return callback(suggestion(9092).TableCheckboxRow, obj);
+  return callback(suggestion(9088).TableCheckboxRow, obj);
 }
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { container: null, header: null, title: null, subtitle: null, list: null, divider: null, linearGradient: null, redesignButton: null, sectionHeader: null };
@@ -190,7 +190,7 @@ export default function ContactSyncSuggestions(friendSuggestions) {
   obj[0] = obj1;
   obj[1] = memo;
   obj[2] = callback1;
-  const items5 = [callback(friendSuggestions(6676).FlashList, obj), , ];
+  const items5 = [callback(friendSuggestions(6673).FlashList, obj), , ];
   obj2 = { style: tmp.linearGradient, start: null, end: null, pointerEvents: "none", colors: null };
   const someResult = keys.some((arg0) => first[arg0]);
   obj2[1] = friendSuggestions(691).VerticalGradient.START;

@@ -1,9 +1,9 @@
-// Module ID: 13828
-// Function ID: 13829
+// Module ID: 13823
+// Function ID: 13824
 // Name: renderContent
-// Dependencies: [19, 21, 530, 4598, 4185, 6727, 4618, 5638, 2]
+// Dependencies: [19, 21, 530, 4598, 4185, 6724, 4618, 5638, 2]
 
-// Module 13828 (renderContent)
+// Module 13823 (renderContent)
 import jsxProd from "jsxProd";
 import { PureComponent } from "noop";
 import importAllResult from "noop";
@@ -103,7 +103,7 @@ prototype["renderContent"] = function renderContent() {
     obj[8] = function onChange(input) {
       return self.setState({ input });
     };
-    items[1] = callback(self(6727).TextInput, obj);
+    items[1] = callback(self(6724).TextInput, obj);
     obj[1] = items;
     return closure_4(self(4598).Stack, obj);
   }

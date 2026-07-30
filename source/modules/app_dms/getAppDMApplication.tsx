@@ -1,10 +1,10 @@
-// Module ID: 11370
-// Function ID: 11371
+// Module ID: 11366
+// Function ID: 11367
 // Name: getAppDMApplication
-// Dependencies: [4226, 5896, 1874, 2]
+// Dependencies: [4226, 5894, 1874, 2]
 // Exports: getAppDMApplication
 
-// Module 11370 (getAppDMApplication)
+// Module 11366 (getAppDMApplication)
 import addApplication from "addApplication";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 import mergeGuildAvatar from "mergeGuildAvatar";

@@ -1,10 +1,10 @@
-// Module ID: 15700
-// Function ID: 15701
+// Module ID: 15694
+// Function ID: 15695
 // Name: MessageRequestsNavigator
-// Dependencies: [19, 17, 21, 9109, 4189, 712, 5570, 5731, 1581, 9118, 1236, 10184, 15701, 15720, 15721, 2]
+// Dependencies: [19, 17, 21, 9105, 4189, 712, 5570, 5731, 1581, 9114, 1236, 10180, 15695, 15714, 15715, 2]
 // Exports: default
 
-// Module 15700 (MessageRequestsNavigator)
+// Module 15694 (MessageRequestsNavigator)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -59,30 +59,30 @@ export default function MessageRequestsNavigator() {
   ({ Navigator, Screen } = createNativeStackNavigator);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj2[0] = intl.string(require(1236) /* getSystemLocale */.t.e7GWjQ);
-  let merged = Object.assign(importDefault(10184)());
+  let merged = Object.assign(importDefault(10180)());
   obj1[1] = obj2;
   obj1[2] = function getComponent() {
-    return tmp(15701).default;
+    return tmp(15695).default;
   };
   const items1 = [callback(Screen, obj1), , ];
   const obj3 = { name: "spam", options: null, getComponent: null };
   const obj4 = { title: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj4[0] = intl2.string(require(1236) /* getSystemLocale */.t.ulKXHp);
-  let merged1 = Object.assign(importDefault(10184)());
+  let merged1 = Object.assign(importDefault(10180)());
   obj3[1] = obj4;
   obj3[2] = function getComponent() {
-    return tmp(15720).default;
+    return tmp(15714).default;
   };
   items1[1] = callback(createNativeStackNavigator.Screen, obj3);
   const obj5 = { name: "preview", options: null, getComponent: null };
   const obj6 = { title: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj6[0] = intl3.string(require(1236) /* getSystemLocale */.t.iilwGH);
-  const merged2 = Object.assign(importDefault(10184)());
+  const merged2 = Object.assign(importDefault(10180)());
   obj5[1] = obj6;
   obj5[2] = function getComponent() {
-    return tmp(15721).default;
+    return tmp(15715).default;
   };
   items1[2] = callback(createNativeStackNavigator.Screen, obj5);
   obj[1] = items1;

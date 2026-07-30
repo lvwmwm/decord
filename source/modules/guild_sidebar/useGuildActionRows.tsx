@@ -1,10 +1,10 @@
-// Module ID: 15224
-// Function ID: 15225
+// Module ID: 15218
+// Function ID: 15219
 // Name: useGuildActionRows
-// Dependencies: [32, 4391, 5788, 676, 11471, 12626, 12614, 12624, 5662, 5658, 647, 5682, 5659, 11441, 6062, 5660, 11605, 15130, 15188, 6046, 4100, 15225, 8441, 1358, 2]
+// Dependencies: [32, 4391, 5788, 676, 11467, 12620, 12608, 12618, 5662, 5658, 647, 5682, 5659, 11437, 6060, 5660, 11601, 15124, 15182, 6044, 4100, 15219, 8438, 1358, 2]
 // Exports: default
 
-// Module 15224 (useGuildActionRows)
+// Module 15218 (useGuildActionRows)
 import _slicedToArray from "_slicedToArray";
 import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
 import { ChannelListGuildActionRow } from "ChannelListGuildActionRow";
@@ -17,14 +17,14 @@ export default function useGuildActionRows(id) {
   let features2;
   let features3;
   const _require = id;
-  const tmp2 = importDefault(11471)(id.id);
+  const tmp2 = importDefault(11467)(id.id);
   const tmp3 = _require;
-  let canReviewGuildMemberApplications = _require(12626).useCanReviewGuildMemberApplications(id.id);
-  const obj = _require(12626);
-  const showRoleSubscriptionsInChannelList = _require(12614).useShowRoleSubscriptionsInChannelList(id.id);
-  const obj2 = _require(12614);
-  const guildShopVisibleInGuild = _require(12624).useGuildShopVisibleInGuild(id);
-  const obj3 = _require(12624);
+  let canReviewGuildMemberApplications = _require(12620).useCanReviewGuildMemberApplications(id.id);
+  const obj = _require(12620);
+  const showRoleSubscriptionsInChannelList = _require(12608).useShowRoleSubscriptionsInChannelList(id.id);
+  const obj2 = _require(12608);
+  const guildShopVisibleInGuild = _require(12618).useGuildShopVisibleInGuild(id);
+  const obj3 = _require(12618);
   const result = _require(5662).hasSocialLayerStorefront(id);
   const obj4 = _require(5662);
   const canSeeOnboardingHome = _require(5658).useCanSeeOnboardingHome(id.id);
@@ -36,10 +36,10 @@ export default function useGuildActionRows(id) {
   const canManageVibegrations = _require(5682).useCanManageVibegrations(id, "useGuildActionRows");
   const obj7 = _require(5682);
   const tmp10 = importDefault(5659)(id.id);
-  const allActionsCompleted = _require(11441).useAllActionsCompleted(id.id);
-  const obj8 = _require(11441);
-  const canAccessMemberSafetyPage = _require(6062).useCanAccessMemberSafetyPage(id.id);
-  const obj9 = _require(6062);
+  const allActionsCompleted = _require(11437).useAllActionsCompleted(id.id);
+  const obj8 = _require(11437);
+  const canAccessMemberSafetyPage = _require(6060).useCanAccessMemberSafetyPage(id.id);
+  const obj9 = _require(6060);
   const features = id.features;
   const canUseGuildSpace = _require(5660).useCanUseGuildSpace(id, "useGuildActionRows");
   const hasItem = features.has(GuildFeatures.HUB);
@@ -48,18 +48,18 @@ export default function useGuildActionRows(id) {
   const hasItem2 = features3.has(GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY);
   const obj10 = _require(5660);
   const tmp14 = GuildFeatures;
-  const tmp18 = importDefault(11605)(id.id);
-  const mobileBoostProgressBarEnabled = _require(15130).useMobileBoostProgressBarEnabled("useGuildActionRows");
-  const obj11 = _require(15130);
-  const tmp20 = importDefault(15188)(id);
-  const isGuildOfficialMessagesEnabled = _require(6046).useIsGuildOfficialMessagesEnabled(id.id, "useGuildActionRows");
-  const obj12 = _require(6046);
+  const tmp18 = importDefault(11601)(id.id);
+  const mobileBoostProgressBarEnabled = _require(15124).useMobileBoostProgressBarEnabled("useGuildActionRows");
+  const obj11 = _require(15124);
+  const tmp20 = importDefault(15182)(id);
+  const isGuildOfficialMessagesEnabled = _require(6044).useIsGuildOfficialMessagesEnabled(id.id, "useGuildActionRows");
+  const obj12 = _require(6044);
   const gameServerEnabled = _require(4100).useGameServerEnabled(id.id, "useGuildActionRows");
   const features4 = id.features;
   const hasItem3 = features4.has(GuildFeatures.GAME_SERVERS);
   const obj13 = _require(4100);
-  const isGameServerTabAlwaysOnEnabled = _require(15225).useIsGameServerTabAlwaysOnEnabled("useGuildActionRows");
-  _require(8441);
+  const isGameServerTabAlwaysOnEnabled = _require(15219).useIsGameServerTabAlwaysOnEnabled("useGuildActionRows");
+  _require(8438);
   if (gameServerEnabled) {
     if (isGameServerTabAlwaysOnEnabled) {
       if (!hasItem3) {

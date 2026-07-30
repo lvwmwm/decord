@@ -1,8 +1,8 @@
-// Module ID: 15201
-// Function ID: 15202
-// Dependencies: [19, 17, 5780, 3817, 4201, 4385, 4262, 1377, 676, 10284, 21, 1236, 4189, 712, 589, 5007, 15202, 5020, 5014, 4676, 9141, 1844, 6710, 9097, 4380, 10239, 15104, 15192, 15109, 2]
+// Module ID: 15195
+// Function ID: 15196
+// Dependencies: [19, 17, 5780, 3817, 4201, 4385, 4262, 1377, 676, 10280, 21, 1236, 4189, 712, 589, 5007, 15196, 5020, 5014, 4676, 9137, 1844, 6707, 9093, 4380, 10235, 15098, 15186, 15103, 2]
 
-// Module 15201
+// Module 15195
 import importAllResult from "shouldShowMembershipVerificationGate";
 import { View } from "useStageParticipants";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -48,7 +48,7 @@ const memoResult = importAllResult.memo((channel) => {
   }, items1);
   ({ stageInstance, hasUnread, hasMedia, collapsed } = stateFromStoresObject);
   ({ resolvedUnreadSetting, voiceStates, locked } = stateFromStoresObject);
-  let arr3 = importDefault(15202)(channel.guild_id)[channel.id];
+  let arr3 = importDefault(15196)(channel.guild_id)[channel.id];
   if (arr3 == null) {
     arr3 = NO_VOICE_STATES;
   }
@@ -74,12 +74,12 @@ const memoResult = importAllResult.memo((channel) => {
     const result = channel(outer1_3[23]).openChannelLongPressActionSheet(channel.id);
   }, items3);
   const tmp10 = importDefault(4380)(channel, false);
-  tmp2Result = tmp2(10239);
+  tmp2Result = tmp2(10235);
   const isConnectedToVoiceChannel = tmp2Result.useIsConnectedToVoiceChannel(channel);
   if (stageInstance != null) {
     const topic = stageInstance.topic;
   }
-  let tmp5Result = tmp5(15104);
+  let tmp5Result = tmp5(15098);
   const intl = tmp2(1236).intl;
   if (null != channel.userLimit) {
     if (channel.userLimit > 0) {
@@ -111,7 +111,7 @@ const memoResult = importAllResult.memo((channel) => {
     obj2[0] = channel;
     obj2[1] = selected;
     obj2[2] = collapsed;
-    tmp5Result = tmp5(15192);
+    tmp5Result = tmp5(15186);
     if (!hasMedia) {
       let tmp20 = channel.userLimit > 0;
       if (tmp20) {
@@ -131,7 +131,7 @@ const memoResult = importAllResult.memo((channel) => {
       obj4[1] = collapsed;
       obj4[2] = arr3;
       obj4[3] = stageParticipantsCount;
-      obj3[1] = tmp12(tmp5(15109), obj4);
+      obj3[1] = tmp12(tmp5(15103), obj4);
       tmp12Result = tmp12(View, obj3);
     }
     obj.children = tmp12Result;

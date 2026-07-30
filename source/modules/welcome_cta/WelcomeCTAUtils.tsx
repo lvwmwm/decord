@@ -1,10 +1,10 @@
-// Module ID: 7783
-// Function ID: 7784
+// Module ID: 7780
+// Function ID: 7781
 // Name: pickHelloSticker
-// Dependencies: [1874, 7784, 676, 11, 5713, 698, 2]
+// Dependencies: [1874, 7781, 676, 11, 5713, 698, 2]
 // Exports: handleWelcomeCtaClicked, pickHelloSticker, pickWelcomeSticker
 
-// Module 7783 (pickHelloSticker)
+// Module 7780 (pickHelloSticker)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { WELCOME_STICKERS } from "items";
 import { AnalyticEvents } from "ME";

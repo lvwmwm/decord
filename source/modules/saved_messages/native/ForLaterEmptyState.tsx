@@ -1,10 +1,10 @@
-// Module ID: 9953
-// Function ID: 9954
+// Module ID: 9949
+// Function ID: 9950
 // Name: ForLaterEmptyState
-// Dependencies: [17, 21, 4189, 9954, 4185, 1236, 9554, 2]
+// Dependencies: [17, 21, 4189, 9950, 4185, 1236, 9550, 2]
 // Exports: ForLaterEmptyState
 
-// Module 9953 (ForLaterEmptyState)
+// Module 9949 (ForLaterEmptyState)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -24,12 +24,12 @@ export const ForLaterEmptyState = function ForLaterEmptyState(type) {
   const tmp = callback2();
   let obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: null };
   obj = { style: tmp.container, children: null };
-  obj = { source: importDefault(9954), style: tmp.image };
+  obj = { source: importDefault(9950), style: tmp.image };
   const items = [callback(closure_4, obj), ];
   const obj1 = { style: tmp.textContainer, children: null };
   const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
-  if (type === require(9554) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER) {
+  if (type === require(9550) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER) {
     let erEf2g = tmp7(1236).t.AE4yja;
   } else {
     erEf2g = tmp7(1236).t.erEf2g;
@@ -38,7 +38,7 @@ export const ForLaterEmptyState = function ForLaterEmptyState(type) {
   const items1 = [callback(require(4185) /* Text */.Text, obj2), ];
   const obj3 = { variant: "text-sm/medium", color: "text-default", style: tmp.text, children: null };
   const intl2 = tmp7(1236).intl;
-  if (type === require(9554) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER) {
+  if (type === require(9550) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER) {
     w1o_75 = tmp7(1236).t.iBFuNE;
   } else {
     w1o_75 = tmp7(1236).t["w1o+75"];

@@ -1,12 +1,12 @@
-// Module ID: 14796
-// Function ID: 14797
+// Module ID: 14789
+// Function ID: 14790
 // Name: BalanceWidget
-// Dependencies: [19, 17, 676, 678, 1369, 5033, 21, 1348, 4717, 4185, 1236, 9664, 1358, 698, 10960, 5036, 14797, 8719, 4157, 9816, 1959, 5535, 5797, 9815, 4005, 4615, 4189, 712, 2]
+// Dependencies: [19, 17, 676, 678, 1369, 5033, 21, 1348, 4717, 4185, 1236, 9661, 1358, 698, 10956, 5036, 14790, 8715, 4157, 9813, 1959, 5535, 5797, 9812, 4005, 4615, 4189, 712, 2]
 // Exports: default
 
-// Module 14796 (BalanceWidget)
+// Module 14789 (BalanceWidget)
 import ref from "ref";
-import { View } from "module_8719";
+import { View } from "module_8715";
 import { AnalyticEvents } from "ME";
 import { CollectiblesMobileShopScreen as closure_6 } from "items";
 import ContentDismissActionType from "ContentDismissActionType";
@@ -75,7 +75,7 @@ class OrbsOnboardingMenuDismissibleContent {
 }
 function BalanceWidgetMenu(style) {
   let str;
-  let obj = str(8719);
+  let obj = str(8715);
   str = obj.useFetchVirtualCurrencyBalance().balance;
   let items = [str];
   const callback = React.useCallback(() => {
@@ -126,7 +126,7 @@ function BalanceWidgetMenu(style) {
     str2 = "";
   }
   obj[2] = intl.formatToPlainString(str(1236).t.zPaLL9, { balance: str2 });
-  obj[3] = closure_10(importDefault(9815), { balance: str, onPress: callback, accessible: false });
+  obj[3] = closure_10(importDefault(9812), { balance: str, onPress: callback, accessible: false });
   return closure_10(BalanceWidget, obj);
 }
 ({ ContentDismissActionType: error, DismissibleContentGroupName: metroImportAll } = ContentDismissActionType);
@@ -148,7 +148,7 @@ let closure_15 = createCacheKey.createStyles((arg0) => {
 let result = require("ME").fileFinishedImporting("modules/virtual_currency/native/BalanceWidgetMenu.tsx");
 
 export default function BalanceWidgetMenuWrapper(style) {
-  let obj = require(8719);
+  let obj = require(8715);
   const balance = obj.useFetchVirtualCurrencyBalance().balance;
   require(4005) /* UNSAFE_isDismissibleContentDismissed */;
   if (null == balance) {

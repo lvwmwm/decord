@@ -1,10 +1,10 @@
-// Module ID: 10505
-// Function ID: 10506
+// Module ID: 10501
+// Function ID: 10502
 // Name: canLaunchFrame
-// Dependencies: [676, 8015, 5692, 2]
+// Dependencies: [676, 8012, 5692, 2]
 // Exports: canLaunchFrame
 
-// Module 10505 (canLaunchFrame)
+// Module 10501 (canLaunchFrame)
 import { ApplicationFlags } from "ME";
 
 const result = require("getApplicationFlags").fileFinishedImporting("modules/frames/utils/canLaunchFrame.tsx");
@@ -20,7 +20,7 @@ export const canLaunchFrame = function canLaunchFrame(application) {
       }
       return hasApplicationFlagResult;
     }
-    obj = require(8015) /* getShelfBadgeTypeIfActive */;
+    obj = require(8012) /* getShelfBadgeTypeIfActive */;
   }
   return false;
 };

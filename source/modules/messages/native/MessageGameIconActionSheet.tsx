@@ -1,10 +1,10 @@
-// Module ID: 11008
-// Function ID: 11009
+// Module ID: 11004
+// Function ID: 11005
 // Name: MessageGameIconActionSheet
 // Dependencies: [19, 17, 4226, 676, 21, 4189, 500, 712, 589, 5243, 1297, 4185, 1236, 1945, 2]
 // Exports: default
 
-// Module 11008 (MessageGameIconActionSheet)
+// Module 11004 (MessageGameIconActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import addApplication from "addApplication";

@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 64 (sizesDiffer)
-let closure_0 = { width: "dispatch", height: "isArray" };
+let closure_0 = { width: "Array", height: "ct" };
 arg5.default = function sizesDiffer(arg0, arg1) {
   let size = arg0;
   if (!arg0) {

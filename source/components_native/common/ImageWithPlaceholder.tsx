@@ -1,10 +1,10 @@
-// Module ID: 8653
-// Function ID: 8654
+// Module ID: 8650
+// Function ID: 8651
 // Name: ImagePlaceholderVersions
-// Dependencies: [17, 21, 500, 8654, 5141, 2]
+// Dependencies: [17, 21, 500, 8651, 5141, 2]
 // Exports: ImageWithPlaceholder
 
-// Module 8653 (ImagePlaceholderVersions)
+// Module 8650 (ImagePlaceholderVersions)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import set from "set";

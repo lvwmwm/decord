@@ -1,10 +1,10 @@
-// Module ID: 9359
-// Function ID: 9360
+// Module ID: 9355
+// Function ID: 9356
 // Name: NsfwGateGuild
-// Dependencies: [19, 17, 1942, 1874, 9360, 676, 21, 4189, 712, 1236, 1945, 698, 5706, 9218, 9361, 4185, 4600, 2]
+// Dependencies: [19, 17, 1942, 1874, 9356, 676, 21, 4189, 712, 1236, 1945, 698, 5706, 9214, 9357, 4185, 4600, 2]
 // Exports: default
 
-// Module 9359 (NsfwGateGuild)
+// Module 9355 (NsfwGateGuild)
 import noop from "noop";
 import get_ActivityIndicator from "set";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -73,8 +73,8 @@ export default function NsfwGateGuild(guildId) {
     obj.track(outer1_9.GUILD_NSFW_GATE_VIEWED, obj);
   }, items);
   obj = { style: tmp.container, children: null };
-  const items1 = [callback(currentUser(9218), {}), , , , , ];
-  obj = { source: currentUser(9361), style: tmp.image };
+  const items1 = [callback(currentUser(9214), {}), , , , , ];
+  obj = { source: currentUser(9357), style: tmp.image };
   items1[1] = callback(closure_5, obj);
   obj1 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult };
   items1[2] = callback(guildId(4185).Text, obj1);

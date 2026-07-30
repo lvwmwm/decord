@@ -1,10 +1,10 @@
-// Module ID: 14819
-// Function ID: 14820
+// Module ID: 14812
+// Function ID: 14813
 // Name: FramePreviewOverrideSection
-// Dependencies: [32, 19, 17, 5798, 5814, 8084, 21, 4189, 712, 8660, 4185, 4601, 647, 7957, 14820, 1297, 9790, 2]
+// Dependencies: [32, 19, 17, 5798, 5814, 8081, 21, 4189, 712, 8657, 4185, 4601, 647, 7954, 14813, 1297, 9787, 2]
 // Exports: default
 
-// Module 14819 (FramePreviewOverrideSection)
+// Module 14812 (FramePreviewOverrideSection)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "set";
@@ -139,7 +139,7 @@ function UnpurchasedCollectiblesShopCardV2(arg0) {
   const obj = {};
   const tmp = callback(React.useState(0), 2);
   const merged = Object.assign(arg0);
-  return callback3(importDefault(8660), obj, tmp2);
+  return callback3(importDefault(8657), obj, tmp2);
 }
 const obj17 = { color: require("Themes").colors.TEXT_MUTED, textAlign: "center", fontSize: 14 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/tooling/CollectiblesTool.tsx");

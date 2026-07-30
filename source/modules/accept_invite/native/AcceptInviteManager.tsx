@@ -1,9 +1,9 @@
-// Module ID: 16120
-// Function ID: 16121
+// Module ID: 16114
+// Function ID: 16115
 // Name: prototype
-// Dependencies: [1218, 1372, 1942, 1862, 4174, 3817, 5955, 676, 6020, 6691, 1222, 4157, 4395, 16121, 1959, 5134, 16122, 709, 8649, 6689, 5535, 2]
+// Dependencies: [1218, 1372, 1942, 1862, 4174, 3817, 5953, 676, 6018, 6688, 1222, 4157, 4395, 16115, 1959, 5134, 16116, 709, 8646, 6686, 5535, 2]
 
-// Module 16120 (prototype)
+// Module 16114 (prototype)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -89,7 +89,7 @@ let prototype = function AcceptInviteManager() {
               applyArgumentsResult(outer2_2[16]).acceptFriendInvite(invite, obj);
               const obj15 = applyArgumentsResult(outer2_2[16]);
               const tmp59 = outer2_2;
-              outer2_1(outer2_2[17]).wait(() => set(8649).clearDisplayedInvite());
+              outer2_1(outer2_2[17]).wait(() => set(8646).clearDisplayedInvite());
               const obj17 = outer2_1(outer2_2[17]);
             }
             return false;
@@ -143,7 +143,7 @@ let prototype = function AcceptInviteManager() {
           tmp65 = outer2_2;
         }
         if (flag) {
-          outer2_1(outer2_2[17]).wait(() => set(8649).clearDisplayedInvite());
+          outer2_1(outer2_2[17]).wait(() => set(8646).clearDisplayedInvite());
           const obj14 = outer2_1(outer2_2[17]);
         } else {
           if (flag) {
@@ -179,7 +179,7 @@ let prototype = function AcceptInviteManager() {
                 const obj6 = applyArgumentsResult(outer2_2[9]);
               }
               if (enabled) {
-                outer2_1(outer2_2[17]).wait(() => set(8649).clearDisplayedInvite());
+                outer2_1(outer2_2[17]).wait(() => set(8646).clearDisplayedInvite());
                 const target_channel_id2 = invite.target_channel_id;
                 const obj11 = applyArgumentsResult(outer2_2[19]);
                 id = invite.guild.id;

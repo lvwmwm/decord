@@ -1,10 +1,10 @@
-// Module ID: 11662
-// Function ID: 11663
+// Module ID: 11658
+// Function ID: 11659
 // Name: GuildPowerupsPerkCard
-// Dependencies: [19, 17, 21, 4189, 712, 4125, 4035, 11659, 11615, 4611, 4185, 11616, 1297, 1236, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4125, 4035, 11655, 11611, 4611, 4185, 11612, 1297, 1236, 2]
 // Exports: default
 
-// Module 11662 (GuildPowerupsPerkCard)
+// Module 11658 (GuildPowerupsPerkCard)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -53,9 +53,9 @@ export default function GuildPowerupsPerkCard(arg0) {
   obj = { containerStyle: items, style: tmp2.card, status, onPress, children: null };
   items = [tmp2.container, style];
   obj = { style: tmp2.imageContainer, children: null };
-  let tmp3Result = tmp3(11659);
+  let tmp3Result = tmp3(11655);
   if (riveComponent == null) {
-    tmp3Result = tmp3(11615);
+    tmp3Result = tmp3(11611);
     if (imageUrl == null) {
       imageUrl = "";
     }
@@ -78,7 +78,7 @@ export default function GuildPowerupsPerkCard(arg0) {
   const obj5 = {};
   const merged1 = Object.assign(merged);
   obj5.status = status;
-  items4[1] = callback(require(11616) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, obj5);
+  items4[1] = callback(require(11612) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, obj5);
   obj3[1] = items4;
   items2[1] = closure_5(View, obj3);
   let tmp13Result = "new" === badge;

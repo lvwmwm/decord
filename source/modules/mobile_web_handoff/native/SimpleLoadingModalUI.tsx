@@ -1,10 +1,10 @@
-// Module ID: 11816
-// Function ID: 11817
+// Module ID: 11812
+// Function ID: 11813
 // Name: SimpleLoadingModal
 // Dependencies: [19, 17, 21, 4189, 5637, 2]
 // Exports: default
 
-// Module 11816 (SimpleLoadingModal)
+// Module 11812 (SimpleLoadingModal)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

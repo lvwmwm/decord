@@ -1,10 +1,10 @@
-// Module ID: 7222
-// Function ID: 7223
+// Module ID: 7219
+// Function ID: 7220
 // Name: HandheldSpotIllustration
-// Dependencies: [21, 5141, 7223, 2]
+// Dependencies: [21, 5141, 7220, 2]
 // Exports: HandheldSpotIllustration
 
-// Module 7222 (HandheldSpotIllustration)
+// Module 7219 (HandheldSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HandheldSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const HandheldSpotIllustration = function HandheldSpotIllustration(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7223);
+  obj[0] = importDefault(7220);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

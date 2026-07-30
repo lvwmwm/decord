@@ -1,10 +1,10 @@
-// Module ID: 5952
-// Function ID: 5953
+// Module ID: 5950
+// Function ID: 5951
 // Name: waitSafelyForPostTTI
-// Dependencies: [5953, 2]
+// Dependencies: [5951, 2]
 // Exports: waitSafelyForPostTTI
 
-// Module 5952 (waitSafelyForPostTTI)
+// Module 5950 (waitSafelyForPostTTI)
 const result = require("set").fileFinishedImporting("modules/app_startup/PostTTIScheduler/SafePostTTIScheduler.tsx");
 
 export const waitSafelyForPostTTI = function waitSafelyForPostTTI(arg0) {

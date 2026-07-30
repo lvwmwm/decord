@@ -1,9 +1,9 @@
-// Module ID: 9478
-// Function ID: 9479
+// Module ID: 9474
+// Function ID: 9475
 // Name: trackRoundtrip
-// Dependencies: [4281, 676, 5719, 698, 5962, 5722, 2]
+// Dependencies: [4281, 676, 5719, 698, 5960, 5722, 2]
 
-// Module 9478 (trackRoundtrip)
+// Module 9474 (trackRoundtrip)
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import { AnalyticEvents } from "ME";
 import set from "receiveNetworkInfoformation";
@@ -18,7 +18,7 @@ function trackRoundtrip(apiResponseTimestamp) {
     let obj = require(5719) /* receiveNetworkInfoformation */;
     const signalStrength = obj.getSignalStrength();
     obj = {};
-    const merged = Object.assign(importDefault(5962)());
+    const merged = Object.assign(importDefault(5960)());
     ({ endpoint: obj3.endpoint, wasSuccessful: obj3.was_successful } = apiResponseTimestamp);
     obj.api_latency_ms = diff;
     obj.mobile_network_type = type.getType();

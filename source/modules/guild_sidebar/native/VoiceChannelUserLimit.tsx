@@ -1,8 +1,8 @@
-// Module ID: 15108
-// Function ID: 15109
-// Dependencies: [19, 17, 21, 4189, 712, 1297, 12848, 4185, 2]
+// Module ID: 15102
+// Function ID: 15103
+// Dependencies: [19, 17, 21, 4189, 712, 1297, 12842, 4185, 2]
 
-// Module 15108
+// Module 15102
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -34,7 +34,7 @@ const memoResult = importAllResult.memo(function VoiceChannelUserLimit(videoLimi
   let tmp3 = null;
   if (videoLimit.videoLimit) {
     obj = { source: null, size: null, style: null };
-    obj[0] = importDefault(12848);
+    obj[0] = importDefault(12842);
     obj[1] = require(1297) /* Button */.Icon.Sizes.REFRESH_SMALL_16;
     obj[2] = rect.videoIcon;
     tmp3 = callback(require(1297) /* Button */.Icon, obj);

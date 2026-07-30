@@ -1,10 +1,10 @@
-// Module ID: 16427
-// Function ID: 16428
+// Module ID: 16421
+// Function ID: 16422
 // Name: GuildSettingsServerTagColorGrid
-// Dependencies: [19, 17, 7724, 21, 712, 4189, 1236, 4598, 4185, 16425, 16428, 13053, 13639, 14365, 2]
+// Dependencies: [19, 17, 7721, 21, 712, 4189, 1236, 4598, 4185, 16419, 16422, 13048, 13634, 14361, 2]
 // Exports: default
 
-// Module 16427 (GuildSettingsServerTagColorGrid)
+// Module 16421 (GuildSettingsServerTagColorGrid)
 import "noop";
 import { View } from "get ActivityIndicator";
 import items from "items";

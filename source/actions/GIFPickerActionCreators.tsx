@@ -1,10 +1,10 @@
-// Module ID: 9597
-// Function ID: 9598
+// Module ID: 9594
+// Function ID: 9595
 // Name: doSearchRequest
-// Dependencies: [1946, 9596, 676, 685, 4384, 9598, 530, 709, 12, 514, 1467, 9599, 1355, 1341, 4528, 1236, 698, 2]
+// Dependencies: [1946, 9593, 676, 685, 4384, 9595, 530, 709, 12, 514, 1467, 9596, 1355, 1341, 4528, 1236, 698, 2]
 // Exports: addFavoriteGIF, fetchSuggestions, fetchTrending, fetchTrendingGIFs, fetchTrendingSearchTerms, gifUrlKey, initializeSearch, removeFavoriteGIF, resetSearch, search, trackSearchResultViewed, trackSearchStart, trackSelectGIF
 
-// Module 9597 (doSearchRequest)
+// Module 9594 (doSearchRequest)
 import _getSystemLocale from "_getSystemLocale";
 import getFormatFromUrl from "getFormatFromUrl";
 import ME from "ME";
@@ -96,7 +96,7 @@ export const trackSearchResultViewed = function trackSearchResultViewed(totalRes
   const startTime = obj.startTime;
   const merged = Object.assign(obj, Object.create(null));
   obj = { offset: 0, limit: null, totalResults: totalResults.length };
-  let obj2 = require(9598) /* isKlipyProvider */;
+  let obj2 = require(9595) /* isKlipyProvider */;
   obj = {};
   const analyticsID = store.getAnalyticsID();
   const merged1 = Object.assign(obj);
@@ -172,7 +172,7 @@ export const trackSelectGIF = function trackSelectGIF(arg0) {
   let type;
   ({ query, gifId } = arg0);
   ({ type, index, offset, limit, results, totalResults } = arg0);
-  let obj = require(9598) /* isKlipyProvider */;
+  let obj = require(9595) /* isKlipyProvider */;
   const result = obj.calculateAnalyticsMetadata(store.getAnalyticsID(), type, { offset, limit, results, totalResults });
   let obj1 = importDefault(4384);
   obj = {};
@@ -275,12 +275,12 @@ export const gifUrlKey = function gifUrlKey(uri) {
   let tmp4 = uri;
   if (null != toURLSafeResult) {
     if (obj2.isAttachmentUrl(toURLSafeResult)) {
-      str = tmp5(9599).removeSignedUrlParameters(toURLSafeResult);
+      str = tmp5(9596).removeSignedUrlParameters(toURLSafeResult);
       str = str.toString();
-      const tmp5Result = tmp5(9599);
+      const tmp5Result = tmp5(9596);
     }
     tmp4 = str;
-    obj2 = require(9599) /* shouldRefreshAttachmentUrl */;
+    obj2 = require(9596) /* shouldRefreshAttachmentUrl */;
     tmp5 = require;
   }
   return tmp4;

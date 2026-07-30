@@ -1,10 +1,10 @@
-// Module ID: 6675
-// Function ID: 6676
+// Module ID: 6672
+// Function ID: 6673
 // Name: BuyNitroGradient
 // Dependencies: [19, 1876, 21, 4050, 4611, 4190, 4193, 2]
 // Exports: default
 
-// Module 6675 (BuyNitroGradient)
+// Module 6672 (BuyNitroGradient)
 import "noop";
 import { PremiumTypes } from "GuildFeatures";
 import jsxProd from "jsxProd";

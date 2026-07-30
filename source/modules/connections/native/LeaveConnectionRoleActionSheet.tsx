@@ -1,10 +1,10 @@
-// Module ID: 10016
-// Function ID: 10017
+// Module ID: 10012
+// Function ID: 10013
 // Name: LeaveConnectionRoleActionSheet
 // Dependencies: [19, 17, 21, 4189, 5243, 4185, 1236, 4600, 2]
 // Exports: default
 
-// Module 10016 (LeaveConnectionRoleActionSheet)
+// Module 10012 (LeaveConnectionRoleActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

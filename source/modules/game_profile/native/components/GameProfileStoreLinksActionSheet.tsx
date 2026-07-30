@@ -1,10 +1,10 @@
-// Module ID: 8511
-// Function ID: 8512
+// Module ID: 8508
+// Function ID: 8509
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [19, 17, 21, 4189, 712, 8483, 3886, 1581, 5551, 5245, 4185, 1236, 4600, 4157, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 8480, 3886, 1581, 5551, 5245, 4185, 1236, 4600, 4157, 2]
 // Exports: default
 
-// Module 8511 (GameProfileStoreLinksActionSheet)
+// Module 8508 (GameProfileStoreLinksActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,7 +29,7 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
   ({ websiteButtons, trackAction: require } = gameName);
   let importDefault;
   const tmp = createCacheKey();
-  importDefault = importDefault(8483)(importDefault(3886).openURL);
+  importDefault = importDefault(8480)(importDefault(3886).openURL);
   let obj = { children: null };
   obj = { contentContainerStyle: null, children: null };
   obj = { paddingBottom: null };
@@ -46,7 +46,7 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
   items[1] = callback(require(4185) /* Text */.Text, obj3);
   obj1[1] = items;
   const items1 = [callback2(View, obj1), ];
-  const tmp2 = importDefault(8483);
+  const tmp2 = importDefault(8480);
   items1[1] = callback(View, {
     style: tmp.buttons,
     children: websiteButtons.map((url) => {

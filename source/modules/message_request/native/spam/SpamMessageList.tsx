@@ -1,10 +1,10 @@
-// Module ID: 15718
-// Function ID: 15719
+// Module ID: 15712
+// Function ID: 15713
 // Name: PendingSpamMessageRequestRow
-// Dependencies: [19, 17, 676, 21, 4189, 712, 1236, 11542, 3890, 9172, 4197, 4395, 11534, 698, 4717, 15703, 1297, 10356, 13954, 7634, 1581, 15712, 15719, 15710, 4616, 5867, 5872, 15713, 500, 4185, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 1236, 11538, 3890, 9168, 4197, 4395, 11530, 698, 4717, 15697, 1297, 10352, 13949, 7631, 1581, 15706, 15713, 15704, 4616, 5865, 5870, 15707, 500, 4185, 2]
 // Exports: default
 
-// Module 15718 (PendingSpamMessageRequestRow)
+// Module 15712 (PendingSpamMessageRequestRow)
 import Form from "Form";
 import get_ActivityIndicator from "registerAsset";
 import { AnalyticEvents } from "ME";
@@ -205,23 +205,23 @@ export default function SpamMessageList(goToMessageRequestPreview) {
   const tmp = createCacheKey();
   importDefault = tmp;
   const bottom = importDefault(1581)().bottom;
-  let obj = goToMessageRequestPreview(15712);
+  let obj = goToMessageRequestPreview(15706);
   dependencyMap = obj.useSpamMessageRequestCount();
-  arr = importDefault(15719)();
-  let obj1 = goToMessageRequestPreview(15710);
+  arr = importDefault(15713)();
+  let obj1 = goToMessageRequestPreview(15704);
   closure_4 = obj1.useListHasSingleSpamMessageRequest();
   importDefault(4616)(() => {
     let obj = _undefined(698);
     obj = { num_spam_message_requests: dependencyMap };
     obj.track(outer1_7.SPAM_MESSAGE_REQUESTS_VIEWED, obj);
-    obj = { name: goToMessageRequestPreview(5872).MetricEvents.SPAM_MESSAGE_REQUEST_VIEW };
-    _undefined(5867).increment(obj);
+    obj = { name: goToMessageRequestPreview(5870).MetricEvents.SPAM_MESSAGE_REQUEST_VIEW };
+    _undefined(5865).increment(obj);
   });
   if (0 === arr.length) {
     obj = { bodyText: null };
     let intl = tmp4(1236).intl;
     obj[0] = intl.string(tmp4(1236).t.hasFPQ);
-    return callback(tmp2(15713), obj);
+    return callback(tmp2(15707), obj);
   } else {
     const items = ["header-section"];
     HermesBuiltin.arraySpread(arr, 1);

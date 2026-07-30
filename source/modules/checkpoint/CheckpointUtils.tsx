@@ -1,10 +1,10 @@
-// Module ID: 7921
-// Function ID: 7922
+// Module ID: 7918
+// Function ID: 7919
 // Name: items
-// Dependencies: [4265, 5928, 1236, 7922, 7923, 7924, 7925, 7926, 7927, 7928, 7929, 7930, 7931, 2]
+// Dependencies: [4265, 5926, 1236, 7919, 7920, 7921, 7922, 7923, 7924, 7925, 7926, 7927, 7928, 2]
 // Exports: getCardAssetUrl, getCheckpointPowerBarUnits, getVoiceDurationString
 
-// Module 7921 (items)
+// Module 7918 (items)
 const items = [require("sleep").TimeUnits.HOURS, require("sleep").TimeUnits.MINUTES];
 const result = require("getSystemLocale").fileFinishedImporting("modules/checkpoint/CheckpointUtils.tsx");
 
@@ -14,7 +14,7 @@ export const getVoiceDurationString = function getVoiceDurationString(totalVoice
   let obj = require(4265) /* sleep */;
   const timeAndUnit = obj.getTimeAndUnit(totalVoiceMinutes, items);
   ({ time, unit } = timeAndUnit);
-  const abbreviatedFormatter = require(5928) /* getDurationString */.getAbbreviatedFormatter();
+  const abbreviatedFormatter = require(5926) /* getDurationString */.getAbbreviatedFormatter();
   if (null == time) {
     const intl3 = tmp(1236).intl;
     return intl3.formatToPlainString(abbreviatedFormatter.minutes, { minutes: 0 });
@@ -34,29 +34,29 @@ export const getVoiceDurationString = function getVoiceDurationString(totalVoice
     }
     return formatToPlainStringResult;
   }
-  const obj2 = require(5928) /* getDurationString */;
+  const obj2 = require(5926) /* getDurationString */;
 };
 export const getCardAssetUrl = function getCardAssetUrl(cardId) {
   if (0 === cardId) {
-    return importDefault(7922);
+    return importDefault(7919);
   } else if (1 === cardId) {
-    return importDefault(7923);
+    return importDefault(7920);
   } else if (2 === cardId) {
-    return importDefault(7924);
+    return importDefault(7921);
   } else if (3 === cardId) {
-    return importDefault(7925);
+    return importDefault(7922);
   } else if (4 === cardId) {
-    return importDefault(7926);
+    return importDefault(7923);
   } else if (5 === cardId) {
-    return importDefault(7927);
+    return importDefault(7924);
   } else if (6 === cardId) {
-    return importDefault(7928);
+    return importDefault(7925);
   } else if (7 === cardId) {
-    return importDefault(7929);
+    return importDefault(7926);
   } else if (8 === cardId) {
-    return importDefault(7930);
+    return importDefault(7927);
   } else {
-    return importDefault(7931);
+    return importDefault(7928);
   }
 };
 export const getCheckpointPowerBarUnits = function getCheckpointPowerBarUnits(arg0) {

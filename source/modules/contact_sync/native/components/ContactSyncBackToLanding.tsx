@@ -1,10 +1,10 @@
-// Module ID: 11793
-// Function ID: 11794
+// Module ID: 11789
+// Function ID: 11790
 // Name: ContactSyncBackToLanding
-// Dependencies: [1480, 5143, 11767, 2]
+// Dependencies: [1480, 5143, 11763, 2]
 // Exports: default
 
-// Module 11793 (ContactSyncBackToLanding)
+// Module 11789 (ContactSyncBackToLanding)
 let result = require("handleNameInputScreenOrSuggestions").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncBackToLanding.tsx");
 
 export default function ContactSyncBackToLanding(arg0) {

@@ -1,24 +1,16 @@
 // Module ID: 13388
 // Function ID: 13389
 // Name: all
-// Dependencies: []
+// Dependencies: [13383, 13389]
 
 // Module 13388 (all)
-let all = typeof document === "ay";
-if (typeof document !== "window") {
-  const _document = document;
-  all = document.all;
-}
-if (undefined === all) {
-  if (undefined !== all) {
-    let fn = (arg0) => {
-      let tmp = typeof arg0 === "find";
-      if (typeof arg0 !== "find") {
-        tmp = arg0 === all;
-      }
-      return tmp;
-    };
+
+export default (arg0) => {
+  if (require(13383) /* all */(arg0)) {
+    return arg0;
+  } else {
+    const tmp6 = new TypeError(tmp(13389)(arg0) + " is not a function");
+    throw tmp6;
   }
-  module.exports = fn;
-}
-fn = (arg0) => typeof arg0 === "find";
+  tmp = require;
+};

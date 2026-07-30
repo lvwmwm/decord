@@ -1,10 +1,10 @@
-// Module ID: 8107
-// Function ID: 8108
+// Module ID: 8104
+// Function ID: 8105
 // Name: UserProfileAnalyticsProvider
-// Dependencies: [19, 21, 5515, 8108, 514, 2]
+// Dependencies: [19, 21, 5515, 8105, 514, 2]
 // Exports: UserProfileAnalyticsProvider, useCreateUserProfileAnalyticsContext, useUserProfileAnalyticsContext
 
-// Module 8107 (UserProfileAnalyticsProvider)
+// Module 8104 (UserProfileAnalyticsProvider)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 

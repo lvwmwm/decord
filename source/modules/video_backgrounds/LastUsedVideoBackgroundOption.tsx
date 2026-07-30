@@ -1,10 +1,10 @@
-// Module ID: 8848
-// Function ID: 8849
+// Module ID: 8844
+// Function ID: 8845
 // Name: getLastUsedVideoBackgroundOption
-// Dependencies: [19, 1340, 1874, 8845, 3835, 589, 2]
+// Dependencies: [19, 1340, 1874, 8841, 3835, 589, 2]
 // Exports: getLastUsedVideoBackgroundOption, useLastUsedVideoBackgroundOption
 
-// Module 8848 (getLastUsedVideoBackgroundOption)
+// Module 8844 (getLastUsedVideoBackgroundOption)
 import noop from "noop";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -18,15 +18,15 @@ export const getLastUsedVideoBackgroundOption = function getLastUsedVideoBackgro
   if (voiceAndVideo != null) {
     prop = voiceAndVideo.videoBackgroundFilterDesktop;
   }
-  const videoBackgroundOptionFromProto = require(8845) /* isAnimatedBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
-  const obj = require(8845) /* isAnimatedBackgroundOption */;
+  const videoBackgroundOptionFromProto = require(8841) /* isAnimatedBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
+  const obj = require(8841) /* isAnimatedBackgroundOption */;
   const tmp2 = require;
   if (!obj2.isCustomBackgroundOption(videoBackgroundOptionFromProto)) {
-    if (typeof videoBackgroundOptionFromProto === "os") {
+    if (typeof videoBackgroundOptionFromProto === "reType") {
       let tmp7 = videoBackgroundOptionFromProto;
     } else {
       tmp7 = null;
-      const tmp2Result = tmp2(8845);
+      const tmp2Result = tmp2(8841);
     }
     let tmp6 = tmp7;
   } else {
@@ -54,7 +54,7 @@ export const useLastUsedVideoBackgroundOption = function useLastUsedVideoBackgro
       const obj = stateFromStores1(outer1_2[3]);
       const tmp4 = stateFromStores1;
       if (!obj2.isCustomBackgroundOption(videoBackgroundOptionFromProto)) {
-        if (typeof videoBackgroundOptionFromProto === "os") {
+        if (typeof videoBackgroundOptionFromProto === "reType") {
           let tmp9 = videoBackgroundOptionFromProto;
         } else {
           tmp9 = null;

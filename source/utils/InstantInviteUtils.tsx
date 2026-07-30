@@ -1,10 +1,10 @@
-// Module ID: 8350
-// Function ID: 8351
+// Module ID: 8347
+// Function ID: 8348
 // Name: isGuildMember
-// Dependencies: [1371, 1372, 1942, 4201, 3826, 1874, 5654, 676, 6021, 5031, 8351, 1236, 2]
+// Dependencies: [1371, 1372, 1942, 4201, 3826, 1874, 5654, 676, 6019, 5031, 8348, 1236, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 8350 (isGuildMember)
+// Module 8347 (isGuildMember)
 import participantFromServer from "participantFromServer";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -130,7 +130,7 @@ const minutes = "minutes";
 const hours = "hours";
 const days = "days";
 const never = "never";
-let closure_19 = { [arg1(8351).INVITE_OPTIONS_30_MINUTES.value]: { value: 30, type: "minutes" }, [arg1(8351).INVITE_OPTIONS_1_HOUR.value]: { value: 1, type: "hours" }, [arg1(8351).INVITE_OPTIONS_6_HOURS.value]: { value: 6, type: "hours" }, [arg1(8351).INVITE_OPTIONS_12_HOURS.value]: { value: 12, type: "hours" }, [arg1(8351).INVITE_OPTIONS_1_DAY.value]: { value: 1, type: "days" }, [arg1(8351).INVITE_OPTIONS_7_DAYS.value]: { value: 7, type: "days" }, [arg1(8351).INVITE_OPTIONS_14_DAYS.value]: { value: 14, type: "days" }, [arg1(8351).INVITE_OPTIONS_30_DAYS.value]: { value: 30, type: "days" }, [arg1(8351).INVITE_OPTIONS_60_DAYS.value]: { value: 60, type: "days" }, [arg1(8351).INVITE_OPTIONS_FOREVER.value]: { value: 0, type: "never" } };
+let closure_19 = { [arg1(8348).INVITE_OPTIONS_30_MINUTES.value]: { value: 30, type: "minutes" }, [arg1(8348).INVITE_OPTIONS_1_HOUR.value]: { value: 1, type: "hours" }, [arg1(8348).INVITE_OPTIONS_6_HOURS.value]: { value: 6, type: "hours" }, [arg1(8348).INVITE_OPTIONS_12_HOURS.value]: { value: 12, type: "hours" }, [arg1(8348).INVITE_OPTIONS_1_DAY.value]: { value: 1, type: "days" }, [arg1(8348).INVITE_OPTIONS_7_DAYS.value]: { value: 7, type: "days" }, [arg1(8348).INVITE_OPTIONS_14_DAYS.value]: { value: 14, type: "days" }, [arg1(8348).INVITE_OPTIONS_30_DAYS.value]: { value: 30, type: "days" }, [arg1(8348).INVITE_OPTIONS_60_DAYS.value]: { value: 60, type: "days" }, [arg1(8348).INVITE_OPTIONS_FOREVER.value]: { value: 0, type: "never" } };
 let items = [require("get label").INVITE_OPTIONS_14_DAYS, require("get label").INVITE_OPTIONS_30_DAYS, require("get label").INVITE_OPTIONS_60_DAYS];
 obj = {
   getMaxAgeOptionByValue(label) {
@@ -140,7 +140,7 @@ obj = {
   },
   getMaxAgeOptions(arg0) {
     const _require = arg0;
-    const MAX_AGE_OPTIONS = _require(8351).MAX_AGE_OPTIONS;
+    const MAX_AGE_OPTIONS = _require(8348).MAX_AGE_OPTIONS;
     return MAX_AGE_OPTIONS.filter((value) => {
       const hasItem = outer1_20.includes(value);
       let tmp2 = !hasItem;

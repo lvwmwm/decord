@@ -1,10 +1,10 @@
-// Module ID: 14562
-// Function ID: 14563
+// Module ID: 14558
+// Function ID: 14559
 // Name: UserSettingsDesignSystemExperimentalButtons
-// Dependencies: [19, 17, 21, 3893, 712, 8236, 4598, 5554, 5228, 8295, 4138, 4600, 4185, 3901, 4611, 7637, 9012, 2]
+// Dependencies: [19, 17, 21, 3893, 712, 8233, 4598, 5554, 5228, 8292, 4138, 4600, 4185, 3901, 4611, 7634, 9008, 2]
 // Exports: default
 
-// Module 14562 (UserSettingsDesignSystemExperimentalButtons)
+// Module 14558 (UserSettingsDesignSystemExperimentalButtons)
 import "noop";
 import get_ActivityIndicator from "set";
 import jsxProd from "jsxProd";
@@ -21,9 +21,9 @@ const result = require("jsxProd").fileFinishedImporting("modules/user_settings/d
 export default function UserSettingsDesignSystemExperimentalButtons() {
   let obj = require(3893) /* map */;
   const token = obj.useToken(importDefault(712).modules.mobile.TABLE_ROW_PADDING);
-  let obj1 = require(8236) /* TwinButtons */;
+  let obj1 = require(8233) /* TwinButtons */;
   const collapsibleFloatingActionButtonState = obj1.useCollapsibleFloatingActionButtonState();
-  let obj2 = require(8236) /* TwinButtons */;
+  let obj2 = require(8233) /* TwinButtons */;
   obj = { children: null };
   obj = { onScroll: obj2.useCollapsibleFloatingActionButtonScroll(collapsibleFloatingActionButtonState), children: null };
   obj1 = { spacing: null, style: null, children: null };
@@ -46,7 +46,7 @@ export default function UserSettingsDesignSystemExperimentalButtons() {
     iconOpticalOffsetMargin: -6
   };
   obj5[2] = importDefault(5228);
-  obj3[1] = callback(require(8236) /* TwinButtons */.HeaderButton, obj5);
+  obj3[1] = callback(require(8233) /* TwinButtons */.HeaderButton, obj5);
   obj2[3] = callback(closure_3, obj3);
   const items = [callback(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj2), , , , , , ];
   const obj6 = { title: "Input Button", description: "A specialized button which looks like a text field, but functions as a button.", hasIcons: false, children: null };
@@ -61,8 +61,8 @@ export default function UserSettingsDesignSystemExperimentalButtons() {
     icon: null,
     isRound: true
   };
-  obj8[3] = importDefault(8295);
-  const items1 = [callback(require(8236) /* TwinButtons */.InputButton, obj8), ];
+  obj8[3] = importDefault(8292);
+  const items1 = [callback(require(8233) /* TwinButtons */.InputButton, obj8), ];
   const obj9 = {
     onPress() {
 
@@ -74,7 +74,7 @@ export default function UserSettingsDesignSystemExperimentalButtons() {
     accessibilityLabel: "Copy, http://discord.com/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
   };
   obj9[3] = importDefault(4138);
-  items1[1] = callback(require(8236) /* TwinButtons */.InputButton, obj9);
+  items1[1] = callback(require(8233) /* TwinButtons */.InputButton, obj9);
   obj7[1] = items1;
   obj6[3] = callback2(require(4598) /* Stack */.Stack, obj7);
   items[1] = callback(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj6);
@@ -95,7 +95,7 @@ export default function UserSettingsDesignSystemExperimentalButtons() {
     })
   ];
   obj11[0] = items2;
-  obj10[3] = callback2(require(8236) /* TwinButtons */.TwinButtons, obj11);
+  obj10[3] = callback2(require(8233) /* TwinButtons */.TwinButtons, obj11);
   items[2] = callback(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj10);
   const obj14 = { title: "PressableScale", description: "If no button in our catelog of components is compatible with a particular design, then PressableScale can fill some gaps. It will apply the same onPress animation to a custom button.", hasIcons: false, children: null };
   const obj15 = { style: { padding: token }, children: null };
@@ -108,7 +108,7 @@ export default function UserSettingsDesignSystemExperimentalButtons() {
   const obj17 = { style: { borderColor: "pink", borderWidth: 1, borderRadius: 8, padding: 12 }, children: null };
   obj17[1] = callback(require(4185) /* Text */.Text, { variant: "text-md/semibold", children: "This is a custom button" });
   obj16[1] = callback(closure_3, obj17);
-  obj15[1] = callback(require(8236) /* TwinButtons */.PressableScale, obj16);
+  obj15[1] = callback(require(8233) /* TwinButtons */.PressableScale, obj16);
   obj14[3] = callback(closure_3, obj15);
   items[3] = callback(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj14);
   const obj18 = { title: "Experimental Blur Background Row Button", description: "Row Button Row Buttons are full-width, high-emphasis buttons that are used as primary CTAs in a page.", hasIcons: false, children: null };
@@ -117,11 +117,11 @@ export default function UserSettingsDesignSystemExperimentalButtons() {
   const obj19 = { theme: "darker", children: null };
   const obj20 = { style: { padding: 16 }, start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, colors: ["red", "orange", "yellow", "green", "teal", "blue", "purple"], children: null };
   const obj21 = { icon: null, label: "Row Button", subLabel: "With a blur background", experimental_withBlurBackground: true, onPress: null };
-  obj21[0] = importDefault(9012);
+  obj21[0] = importDefault(9008);
   obj21[4] = function onPress() {
 
   };
-  obj20[4] = callback(require(7637) /* RowButtonWrapper */.RowButton, obj21);
+  obj20[4] = callback(require(7634) /* RowButtonWrapper */.RowButton, obj21);
   obj19[1] = callback(importDefault(4611), obj20);
   items[5] = callback(require(3901) /* ManaContext */.ThemeContextProvider, obj19);
   const obj22 = { title: "Collapsible Floating Action Button", description: "A variation of the FloatingActionButton which will display some text until the user scrolls. We currently recommend the use of the FloatingActionButton over the CollapsibleFloatingActionButton, as a singular icon button without animation is more compact, understandable, and predictable.", hasIcons: false, children: null };
@@ -131,12 +131,12 @@ export default function UserSettingsDesignSystemExperimentalButtons() {
   obj[1] = callback2(require(4598) /* Stack */.Stack, obj1);
   const items3 = [callback(closure_4, obj), ];
   const obj23 = { icon: null, onPress: null, positionBottom: 32, text: "Floating Action Button", state: null };
-  obj23[0] = importDefault(9012);
+  obj23[0] = importDefault(9008);
   obj23[1] = function onPress() {
 
   };
   obj23[4] = collapsibleFloatingActionButtonState;
-  items3[1] = callback(require(8236) /* TwinButtons */.CollapsibleFloatingActionButton, obj23);
+  items3[1] = callback(require(8233) /* TwinButtons */.CollapsibleFloatingActionButton, obj23);
   obj[0] = items3;
   return callback2(closure_3, obj);
 };

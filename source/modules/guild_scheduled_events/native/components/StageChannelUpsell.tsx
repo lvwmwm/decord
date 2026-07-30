@@ -1,10 +1,10 @@
-// Module ID: 8269
-// Function ID: 8270
+// Module ID: 8266
+// Function ID: 8267
 // Name: StageChannelUpsell
-// Dependencies: [32, 19, 17, 1376, 8270, 8218, 676, 21, 4189, 712, 4717, 1297, 7699, 8271, 4185, 1236, 4600, 4395, 8272, 1959, 4157, 2]
+// Dependencies: [32, 19, 17, 1376, 8267, 8215, 676, 21, 4189, 712, 4717, 1297, 7696, 8268, 4185, 1236, 4600, 4395, 8269, 1959, 4157, 2]
 // Exports: default
 
-// Module 8269 (StageChannelUpsell)
+// Module 8266 (StageChannelUpsell)
 import _slicedToArray from "_slicedToArray";
 import "asyncRequireImpl";
 import get_ActivityIndicator from "module_4395";
@@ -50,11 +50,11 @@ export default function StageChannelUpsell(arg0) {
     obj[0] = tmp3;
     obj[2] = tmp.closeContainer;
     obj = { source: null };
-    obj[0] = importDefault(7699);
+    obj[0] = importDefault(7696);
     obj[3] = callback3(require(1297) /* Button */.Icon, obj);
     const items = [callback3(require(4717) /* PressableBase */.PressableOpacity, obj), , , , , ];
     const obj1 = { source: null, style: null };
-    obj1[0] = importDefault(8271);
+    obj1[0] = importDefault(8268);
     obj1[1] = tmp.image;
     items[1] = callback3(closure_4, obj1);
     let obj2 = { style: null, variant: "text-md/bold", color: "mobile-text-heading-primary", children: null };

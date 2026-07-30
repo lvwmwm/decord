@@ -1,9 +1,9 @@
-// Module ID: 15933
-// Function ID: 15934
+// Module ID: 15927
+// Function ID: 15928
 // Name: ChannelButtonIcons
-// Dependencies: [19, 17, 4226, 1377, 1372, 4207, 21, 4189, 8926, 1236, 4601, 5229, 589, 4380, 8873, 8236, 712, 10037, 4379, 15934, 4598, 6614, 15857, 15931, 4658, 8118, 692, 15930, 15935, 2]
+// Dependencies: [19, 17, 4226, 1377, 1372, 4207, 21, 4189, 8922, 1236, 4601, 5229, 589, 4380, 8869, 8233, 712, 10033, 4379, 15928, 4598, 6611, 15851, 15925, 4658, 8115, 692, 15924, 15929, 2]
 
-// Module 15933 (ChannelButtonIcons)
+// Module 15927 (ChannelButtonIcons)
 import importAllResult from "registerAsset";
 import { View } from "dismissPanel";
 import addApplication from "addApplication";
@@ -21,7 +21,7 @@ function ChannelButtonIcons() {
   obj = { size: "xs", accessibilityLabel: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.VHXh8a);
-  const items = [callback(require(8926) /* ShieldLockIcon */.ShieldLockIcon, obj), ];
+  const items = [callback(require(8922) /* ShieldLockIcon */.ShieldLockIcon, obj), ];
   obj = { source: null };
   obj[0] = importDefault(5229);
   items[1] = callback(require(4601) /* CollapsingText */.BaseTextButton.Icon, obj);
@@ -34,7 +34,7 @@ function ChannelButton(channelId) {
   const items = [ensureGuildLoaded];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_7.getChannel(channelId));
   let str = importDefault(4380)(stateFromStores);
-  const isCallSecureFramesVerified = channelId(8873).useIsCallSecureFramesVerified({ channelId });
+  const isCallSecureFramesVerified = channelId(8869).useIsCallSecureFramesVerified({ channelId });
   obj = { accessibilityRole: "button", accessibilityHint: null, text: null, icon: null, iconOpticalOffsetMargin: null, iconPosition: "end", onPress: null, maxFontSizeMultiplier: 2 };
   const intl = channelId(1236).intl;
   obj[1] = intl.string(channelId(1236).t["Y2b7+e"]);
@@ -50,7 +50,7 @@ function ChannelButton(channelId) {
   obj[3] = tmp3Result;
   obj[4] = -importDefault(712).space.PX_4;
   obj[6] = channelId.onPress;
-  return closure_9(channelId(8236).HeaderButton, obj);
+  return closure_9(channelId(8233).HeaderButton, obj);
 }
 function StreamButton(arg0) {
   let channelId;
@@ -58,7 +58,7 @@ function StreamButton(arg0) {
   let onPress;
   let participant;
   ({ participant, onPress } = arg0);
-  const context = importAllResult.useContext(importDefault(10037));
+  const context = importAllResult.useContext(importDefault(10033));
   ({ guildId, channelId } = context);
   let obj = importDefault(4379);
   const name = obj.useName(guildId, channelId, participant.user);
@@ -68,9 +68,9 @@ function StreamButton(arg0) {
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.I0mOAs, { username: name });
   obj[3] = name;
-  obj[4] = importDefault(15934);
+  obj[4] = importDefault(15928);
   obj[6] = onPress;
-  return callback(require(8236) /* TwinButtons */.HeaderButton, obj);
+  return callback(require(8233) /* TwinButtons */.HeaderButton, obj);
 }
 function ActivityButton(participant) {
   participant = participant.participant;
@@ -90,9 +90,9 @@ function ActivityButton(participant) {
     str = "???";
   }
   obj[2] = str;
-  obj[3] = importDefault(6614);
+  obj[3] = importDefault(6611);
   obj[5] = participant.onPress;
-  const items1 = [closure_9(participant(8236).HeaderButton, obj), closure_9(importDefault(15857), { applicationId: participant.applicationId })];
+  const items1 = [closure_9(participant(8233).HeaderButton, obj), closure_9(importDefault(15851), { applicationId: participant.applicationId })];
   obj[2] = items1;
   return closure_10(participant(4598).Stack, obj);
 }
@@ -100,12 +100,12 @@ function UserButton(participant) {
   let channelId;
   let guildId;
   participant = participant.participant;
-  const context = importAllResult.useContext(importDefault(10037));
+  const context = importAllResult.useContext(importDefault(10033));
   ({ guildId, channelId } = context);
   let obj = importDefault(4379);
   const name = obj.useName(guildId, channelId, participant.user);
   const tmp = callback3();
-  const voicePanelHeaderUserStateIcons = require(15931) /* useVoicePanelHeaderUserStateIcons */.useVoicePanelHeaderUserStateIcons(participant, guildId, tmp.userIcons);
+  const voicePanelHeaderUserStateIcons = require(15925) /* useVoicePanelHeaderUserStateIcons */.useVoicePanelHeaderUserStateIcons(participant, guildId, tmp.userIcons);
   obj = { accessibilityRole: "button", accessibilityHint: null, icon: null, iconPosition: null, text: null, onPress: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["Y2b7+e"]);
@@ -117,7 +117,7 @@ function UserButton(participant) {
   obj[3] = str;
   obj[4] = name;
   obj[5] = participant.onPress;
-  return closure_9(require(8236) /* TwinButtons */.HeaderButton, obj);
+  return closure_9(require(8233) /* TwinButtons */.HeaderButton, obj);
 }
 function StageButton(channelId) {
   channelId = channelId.channelId;
@@ -146,7 +146,7 @@ function StageButton(channelId) {
   obj[2] = topic;
   obj[3] = tmp5(4658);
   obj[5] = channelId.onPress;
-  return closure_9(channelId(8236).HeaderButton, obj);
+  return closure_9(channelId(8233).HeaderButton, obj);
 }
 let c3 = importAllResult;
 ({ jsx: c9, jsxs: c10 } = jsxProd);
@@ -154,11 +154,11 @@ let closure_11 = createCacheKey.createStyles({ userIcons: { marginLeft: -6 }, ch
 const memoResult = importAllResult.memo(function VoicePanelTitleButton() {
   let channelType;
   let focused;
-  const context = importAllResult.useContext(channelId(10037));
+  const context = importAllResult.useContext(channelId(10033));
   const guildId = context.guildId;
   channelId = context.channelId;
   ({ channelType, focused } = context);
-  let obj = guildId(8118);
+  let obj = guildId(8115);
   const derivedStateFromSharedValue = obj.useDerivedStateFromSharedValue(focused, (id) => {
     id = undefined;
     if (id != null) {
@@ -166,7 +166,7 @@ const memoResult = importAllResult.memo(function VoicePanelTitleButton() {
     }
     return id;
   });
-  const tmp3 = channelId(15930)(derivedStateFromSharedValue, channelId, guildId);
+  const tmp3 = channelId(15924)(derivedStateFromSharedValue, channelId, guildId);
   const items = [guildId, channelId];
   const onPress = importAllResult.useCallback(() => {
     const result = guildId(outer1_2[28]).openVoicePanelSettingsActionSheet(guildId, channelId);

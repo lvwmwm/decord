@@ -1,8 +1,8 @@
-// Module ID: 14816
-// Function ID: 14817
-// Dependencies: [32, 19, 17, 4181, 1931, 7890, 21, 500, 4053, 14817, 7891, 38, 4179, 7876, 589, 3862, 9504, 10905, 2]
+// Module ID: 14809
+// Function ID: 14810
+// Dependencies: [32, 19, 17, 4181, 1931, 7887, 21, 500, 4053, 14810, 7888, 38, 4179, 7873, 589, 3862, 9500, 10901, 2]
 
-// Module 14816
+// Module 14809
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -22,12 +22,12 @@ if (!set.isAndroid()) {
   exports.default = function TextDisplayComponent(content) {
     let tmp6;
     let tmp7;
-    let obj = channelId(7891);
+    let obj = channelId(7888);
     const componentContainerId = obj.useComponentContainerId();
     channelId = channelId.getChannelId();
     importDefault(38)(null != channelId, "channelId not available in TextDisplayComponent");
     let obj1 = importDefault(4179);
-    let obj2 = channelId(7876);
+    let obj2 = channelId(7873);
     obj = { channelId, renderOptions: closure_6 };
     const parseToASTResult = obj1.parseToAST(content.content, true, obj2.getInitialParserState(obj));
     let items = [maybeApplyNoTextColorForLightCustomTheme];
@@ -49,13 +49,13 @@ if (!set.isAndroid()) {
     obj[2] = function onTapLink(nativeEvent) {
       const result = channelId(outer1_2[16]).handleMessagesTapURLLink(nativeEvent.nativeEvent.data, channelId);
     };
-    obj[3] = channelId(10905).contentHandlers.onLongPressLink;
-    obj[4] = channelId(10905).contentHandlers.onTapAttachmentLink;
-    obj[5] = channelId(10905).contentHandlers.onLongPressAttachmentLink;
-    obj[6] = channelId(10905).contentHandlers.onTapMention;
-    obj[7] = channelId(10905).contentHandlers.onTapTimestamp;
-    obj[8] = channelId(10905).contentHandlers.onTapInlineCode;
-    obj[9] = channelId(10905).contentHandlers.onTapEmoji;
+    obj[3] = channelId(10901).contentHandlers.onLongPressLink;
+    obj[4] = channelId(10901).contentHandlers.onTapAttachmentLink;
+    obj[5] = channelId(10901).contentHandlers.onLongPressAttachmentLink;
+    obj[6] = channelId(10901).contentHandlers.onTapMention;
+    obj[7] = channelId(10901).contentHandlers.onTapTimestamp;
+    obj[8] = channelId(10901).contentHandlers.onTapInlineCode;
+    obj[9] = channelId(10901).contentHandlers.onTapEmoji;
     obj[10] = { width: "100%" };
     return <closure_8 model={null} markdownTextRenderOptions={null} onTapLink={null} onLongPressLink={null} onTapAttachmentLink={null} onLongPressAttachmentLink={null} onTapMention={null} onTapTimestamp={null} onTapInlineCode={null} onTapEmoji={null} style={null} />;
   };

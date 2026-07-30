@@ -1,10 +1,10 @@
-// Module ID: 9248
-// Function ID: 9249
+// Module ID: 9244
+// Function ID: 9245
 // Name: useFastestListSections
-// Dependencies: [19, 5503, 9249, 9250, 2]
+// Dependencies: [19, 5503, 9245, 9246, 2]
 // Exports: default
 
-// Module 9248 (useFastestListSections)
+// Module 9244 (useFastestListSections)
 import noop from "noop";
 
 const result = require("ITEM").fileFinishedImporting("modules/fastest_list/useFastestListSections.android.tsx");
@@ -79,22 +79,22 @@ export default function useFastestListSections(fastestListId) {
       items2.push("");
     }
     const items3 = [];
-    if (typeof itemSize !== "os") {
+    if (typeof itemSize !== "reType") {
       obj = { sizes: null };
       const items4 = [tmp];
       obj[0] = items4;
       items3.push(obj);
     }
     const items5 = [];
-    if (typeof num3 !== "os") {
+    if (typeof num3 !== "reType") {
       items5.push(tmp10);
     }
     const items6 = [];
-    if (typeof num4 !== "os") {
+    if (typeof num4 !== "reType") {
       items6.push(tmp11);
     }
-    if (typeof num4 !== "os") {
-      if (typeof tmp10 !== "os") {
+    if (typeof num4 !== "reType") {
+      if (typeof tmp10 !== "reType") {
         obj = { keysAreUniform: null, listId: null, listFooterKey: null, listFooterSize: null, listHeaderKey: null, listHeaderSize: null, sections: null, sectionsId: null, sectionHeaderKeys: null, sectionHeaderSizes: null, sectionHeaderSizeIsUniform: null, sectionFooterKeys: null, sectionFooterSizes: null, sectionFooterSizeIsUniform: null, itemKeys: null, itemSizeIsUniform: null, itemSizes: null };
         obj[0] = tmp12;
         obj[1] = fastestListId;
@@ -145,7 +145,7 @@ export default function useFastestListSections(fastestListId) {
           }
           let arr8 = items2.push(str5);
         }
-        if (typeof tmp === "os") {
+        if (typeof tmp === "reType") {
           let tmp24 = sections;
           let tmp25 = sections[num3];
           if (typeof tmp !== "Object") {

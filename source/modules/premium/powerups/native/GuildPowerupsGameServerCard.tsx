@@ -1,10 +1,10 @@
-// Module ID: 11665
-// Function ID: 11666
+// Module ID: 11661
+// Function ID: 11662
 // Name: GuildPowerupsGameServerCard
-// Dependencies: [19, 17, 4181, 4097, 21, 4189, 712, 589, 11666, 11667, 11658, 11662, 3901, 2]
+// Dependencies: [19, 17, 4181, 4097, 21, 4189, 712, 589, 11662, 11663, 11654, 11658, 3901, 2]
 // Exports: default
 
-// Module 11665 (GuildPowerupsGameServerCard)
+// Module 11661 (GuildPowerupsGameServerCard)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -27,7 +27,7 @@ export default function GuildPowerupsGameServerCard(guildId) {
   const tmp = createCacheKey();
   const tmp2 = guildId;
   const tmp5 = importDefault;
-  const tmp7 = importDefault(11667)(guildId);
+  const tmp7 = importDefault(11663)(guildId);
   let obj1 = guildId(589);
   const items1 = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
@@ -47,8 +47,8 @@ export default function GuildPowerupsGameServerCard(guildId) {
       obj[4] = <View style={null}>{null}</View>;
       obj[6] = tmp6;
       obj[7] = tmp9;
-      tmp10 = jsx(tmp5(11662), { style: null, children: null });
-      const tmp5Result = tmp5(11662);
+      tmp10 = jsx(tmp5(11658), { style: null, children: null });
+      const tmp5Result = tmp5(11658);
     }
   }
   return tmp10;

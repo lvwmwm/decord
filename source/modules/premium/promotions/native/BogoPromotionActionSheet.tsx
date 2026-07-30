@@ -1,10 +1,10 @@
-// Module ID: 15758
-// Function ID: 15759
+// Module ID: 15752
+// Function ID: 15753
 // Name: BogoPromotionActionSheet
-// Dependencies: [19, 17, 1876, 676, 1369, 21, 4189, 712, 5515, 6216, 5243, 5141, 4185, 1236, 1945, 8427, 2]
+// Dependencies: [19, 17, 1876, 676, 1369, 21, 4189, 712, 5515, 6213, 5243, 5141, 4185, 1236, 1945, 8424, 2]
 // Exports: default
 
-// Module 15758 (BogoPromotionActionSheet)
+// Module 15752 (BogoPromotionActionSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { PremiumTypes } from "GuildFeatures";
@@ -75,7 +75,7 @@ export default function BogoPromotionActionSheet(markAsDismissed) {
   const intl3 = markAsDismissed(1236).intl;
   obj5[0] = intl3.string(markAsDismissed(1236).t.J61px0);
   obj5[1] = callback;
-  obj4[1] = callback(analyticsLocations(8427), obj5);
+  obj4[1] = callback(analyticsLocations(8424), obj5);
   items3[3] = callback(View, obj4);
   obj[1] = items3;
   obj[1] = callback2(View, obj);

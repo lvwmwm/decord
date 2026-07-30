@@ -1,10 +1,10 @@
-// Module ID: 9039
-// Function ID: 9040
+// Module ID: 9035
+// Function ID: 9036
 // Name: disconnectRemote
-// Dependencies: [5, 4261, 4204, 4203, 676, 698, 709, 4528, 1236, 8840, 9040, 530, 1208, 9041, 9042, 9045, 2]
+// Dependencies: [5, 4261, 4204, 4203, 676, 698, 709, 4528, 1236, 8836, 9036, 530, 1208, 9037, 9038, 9041, 2]
 // Exports: connectToRemote, fetchDevices, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, transferToPlayStation, waitForSession
 
-// Module 9039 (disconnectRemote)
+// Module 9035 (disconnectRemote)
 import expandEventProperties from "expandEventProperties";
 import createRTCConnection from "createRTCConnection";
 import handleUpdate from "handleUpdate";
@@ -761,7 +761,7 @@ export const remoteDisconnect = function remoteDisconnect(remoteSessionId) {
   disconnectRemote();
 };
 export const remoteAudioSettingsUpdate = function remoteAudioSettingsUpdate(sessionId, arg1, first) {
-  let obj = require(8840) /* snapVolumeToDefault */;
+  let obj = require(8836) /* snapVolumeToDefault */;
   const result = obj.coerceAudioContextForProto(first);
   if (null != result) {
     obj = { type: "REMOTE_COMMAND", sessionId: null, payload: null };

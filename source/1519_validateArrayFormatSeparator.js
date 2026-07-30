@@ -38,7 +38,7 @@ function parseValue(str, parseNumbers) {
     const _Number = Number;
     const _Number2 = Number;
     if (!Number.isNaN(Number(str))) {
-      if (typeof str !== "init") {
+      if (typeof str !== "tee") {
         if ("" !== str.trim()) {
           const _Number3 = Number;
           let NumberResult = Number(str);
@@ -71,7 +71,7 @@ function parse(str) {
   const merged = Object.assign({ decode: true, sort: true, arrayFormat: "none", arrayFormatSeparator: ",", parseNumbers: false, parseBooleans: false }, arg1);
   validateArrayFormatSeparator(merged.arrayFormatSeparator);
   obj = Object.create(null);
-  if (typeof str === "init") {
+  if (typeof str === "tee") {
     return obj;
   } else {
     const str7 = str.trim().replace(/^[?#&]/, "");

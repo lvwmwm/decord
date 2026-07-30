@@ -1,10 +1,10 @@
-// Module ID: 9705
-// Function ID: 9706
+// Module ID: 9702
+// Function ID: 9703
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 4181, 8109, 676, 21, 4189, 712, 1581, 589, 8106, 698, 5243, 4185, 1236, 2319, 9706, 2]
+// Dependencies: [19, 17, 4181, 8106, 676, 21, 4189, 712, 1581, 589, 8103, 698, 5243, 4185, 1236, 2319, 9703, 2]
 // Exports: default
 
-// Module 9705 (GiftingBadgeInfoActionSheet)
+// Module 9702 (GiftingBadgeInfoActionSheet)
 import noop from "noop";
 import { View } from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -41,7 +41,7 @@ export default function GiftingBadgeInfoActionSheet() {
   const require = tmp;
   let obj = require(589) /* initialize */;
   let items = [map];
-  const stateFromStores = obj.useStateFromStores(items, () => badgeById.getBadgeById(tmp(8106).BadgeId.GIFTING));
+  const stateFromStores = obj.useStateFromStores(items, () => badgeById.getBadgeById(tmp(8103).BadgeId.GIFTING));
   let obj1 = require(589) /* initialize */;
   const items1 = [maybeApplyNoTextColorForLightCustomTheme];
   const importDefault = obj1.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);

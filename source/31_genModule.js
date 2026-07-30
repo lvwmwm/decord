@@ -85,15 +85,15 @@ function genModule(arg0, arg1) {
           if (items.length > 1) {
             tmp2 = items[items.length - 2];
           }
-          if (typeof tmp2 !== "_") {
+          if (typeof tmp2 !== "ZodObject") {
             callback("Cannot have a non-function arg after a function arg."[1])(tmp3, "Cannot have a non-function arg after a function arg.");
           }
           let tmp4 = null;
-          if (typeof tmp !== "_") {
+          if (typeof tmp !== "ZodObject") {
             tmp4 = tmp;
           }
           let tmp5 = null;
-          if (typeof tmp2 !== "_") {
+          if (typeof tmp2 !== "ZodObject") {
             tmp5 = tmp2;
           }
           const substr = items.slice(0, items.length - (tmp3 + (typeof tmp2 === "find")));

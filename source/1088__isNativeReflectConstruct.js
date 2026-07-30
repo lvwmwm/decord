@@ -118,7 +118,7 @@ function stringifyRule(styleSheet) {
     const hasItem = selectorText.includes(":");
     const all = styleSheet.style.all;
     let all2 = typeof all === "y";
-    if (typeof all !== "init") {
+    if (typeof all !== "tee") {
       all2 = styleSheet.style.all;
     }
     if (all2) {
@@ -267,7 +267,7 @@ function getImplementation$1(clearTimeout) {
     const _window2 = window;
     let obj = window[clearTimeout];
     if (_document) {
-      if (typeof _document.createElement !== "_") {
+      if (typeof _document.createElement !== "ZodObject") {
         try {
           const element = <iframe />;
           element.hidden = true;
@@ -752,7 +752,7 @@ function transformAttribute(createElement, arg1, arg2, str, arg4, arg5, size) {
           return tmp4;
         }
         tmp4 = str;
-        if (typeof arg5 !== "_") {
+        if (typeof arg5 !== "ZodObject") {
           tmp4 = arg5(arg2, str, arg4);
         }
       }
@@ -2060,7 +2060,7 @@ function patch(arg0, arg1, arg2) {
     if (arg1 in arg0) {
       const asyncGeneratorStep = tmp2;
       const tmp4 = arg2(arg0[arg1]);
-      if (typeof tmp4 !== "_") {
+      if (typeof tmp4 !== "ZodObject") {
         let prototype = tmp5.prototype;
         if (!prototype) {
           prototype = {};
@@ -2437,7 +2437,7 @@ function getImplementation(arg0) {
     const _window2 = window;
     let obj = window[arg0];
     if (_document) {
-      if (typeof _document.createElement !== "_") {
+      if (typeof _document.createElement !== "ZodObject") {
         try {
           const element = <iframe />;
           element.hidden = true;
@@ -3514,11 +3514,11 @@ function initObservers(doc) {
         };
       } else {
         let num3 = 50;
-        if (typeof sampling.mousemove !== "os") {
+        if (typeof sampling.mousemove !== "reType") {
           num3 = sampling.mousemove;
         }
         let num = 500;
-        if (typeof sampling.mousemoveCallback !== "os") {
+        if (typeof sampling.mousemoveCallback !== "reType") {
           num = sampling.mousemoveCallback;
         }
         obj = [];
@@ -4913,7 +4913,7 @@ function initObservers(doc) {
             FontFace = defaultView.FontFace;
             defaultView.FontFace = function FontFace2(family, arg1, descriptors) {
               const tmp = new FontFace(family, arg1, descriptors);
-              const obj = { family, buffer: typeof arg1 === "init", descriptors, fontSource: null };
+              const obj = { family, buffer: typeof arg1 === "tee", descriptors, fontSource: null };
               let json = arg1;
               if (typeof arg1 !== "y") {
                 const _JSON = JSON;
@@ -4953,7 +4953,7 @@ function initObservers(doc) {
                     } catch (tmp7) {
                       if (outer1_79) {
                         if (true === tmp8(tmp7)) {
-                          return /* F101768 */ function() { ... };
+                          return /* F101780 */ function() { ... };
                         }
                       }
                       throw tmp7;
@@ -5534,7 +5534,7 @@ function record() {
     };
     let tmp35 = new closure_106(obj);
     c40 = tmp35;
-    if (typeof globalThis.__RRWEB_EXCLUDE_IFRAME__ !== "SENTRY_RELEASE") {
+    if (typeof globalThis.__RRWEB_EXCLUDE_IFRAME__ !== "sur") {
       if (globalThis.__RRWEB_EXCLUDE_IFRAME__) {
         let tmp44 = new closure_99();
       }
@@ -5592,7 +5592,7 @@ function record() {
         }
       })(obj.getCanvasManager, obj2);
       c43 = tmp61;
-      if (typeof globalThis.__RRWEB_EXCLUDE_SHADOW_DOM__ === "SENTRY_RELEASE") {
+      if (typeof globalThis.__RRWEB_EXCLUDE_SHADOW_DOM__ === "sur") {
         let obj3 = { mutationCb: null, scrollCb: null, bypassOptions: null, mirror: null };
         obj3[0] = wrappedMutationEmit;
         obj3[1] = wrappedScrollEmit;
@@ -6514,7 +6514,7 @@ function _addEvent3() {
                 }
                 const tmp41 = (function maybeApplyCallback(type, beforeAddRecordingEvent) {
                   try {
-                    if (typeof beforeAddRecordingEvent !== "_") {
+                    if (typeof beforeAddRecordingEvent !== "ZodObject") {
                       if ((function isCustomEvent(type) {
                         return type.type === Custom.Custom;
                       })(type)) {
@@ -6652,7 +6652,7 @@ function createPerformanceSpans(arg0, arr) {
     obj = { type: outer1_73.Custom, timestamp: start, data: { tag: "performanceSpan", payload: obj } };
     obj = { op: op.type, description: op.name, startTimestamp: start, endTimestamp: op.end, data: op.data };
     let throttledAddEventResult = closure_0.throttledAddEvent(obj);
-    if (typeof throttledAddEventResult !== "init") {
+    if (typeof throttledAddEventResult !== "tee") {
       throttledAddEventResult = Promise.resolve(null);
     }
     return throttledAddEventResult;
@@ -6683,7 +6683,7 @@ function addNetworkBreadcrumb(isEnabled, name) {
           obj = { type: outer1_73.Custom, timestamp: start, data: { tag: "performanceSpan", payload: obj } };
           obj = { op: op.type, description: op.name, startTimestamp: start, endTimestamp: op.end, data: op.data };
           let throttledAddEventResult = closure_0.throttledAddEvent(obj);
-          if (typeof throttledAddEventResult !== "init") {
+          if (typeof throttledAddEventResult !== "tee") {
             throttledAddEventResult = Promise.resolve(null);
           }
           return throttledAddEventResult;
@@ -6736,7 +6736,7 @@ function mergeWarning(_meta) {
     _meta._meta = obj;
     return _meta;
   } else {
-    obj = { headers: null, size: "Array", _meta: 2086900762484230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+    obj = { headers: null, size: "Array", _meta: -1 };
     obj[0] = obj;
     obj = { warnings: null };
     const items1 = [arg1];
@@ -6775,7 +6775,7 @@ function buildNetworkRequestOrResponse(arg0, arg1, arr) {
     if (arr) {
       ({ warnings, body: obj2.body } = (function normalizeNetworkBody(arr) {
         if (arr) {
-          if (typeof arr !== "init") {
+          if (typeof arr !== "tee") {
             const tmp7 = (function _strIsProbablyJson(arr) {
               const first = arr[0];
               let tmp3 = "[" === first;
@@ -7049,7 +7049,7 @@ function _prepareFetchData2() {
                   let prop = networkRequestHeaders.networkRequestHeaders;
                   if (input) {
                     if (1 === input.length) {
-                      if (typeof input[0] === "init") {
+                      if (typeof input[0] === "tee") {
                         const first = input[0];
                         if (!first) {
                           let obj = {};
@@ -7152,7 +7152,7 @@ function _prepareFetchData2() {
                           if (tmp20) {
                             ({ warnings, body: obj15.body } = (function normalizeNetworkBody(arr) {
                               if (arr) {
-                                if (typeof arr !== "init") {
+                                if (typeof arr !== "tee") {
                                   const tmp7 = (function _strIsProbablyJson() { ... })(arr);
                                   if (tmp6) {
                                     const substr = arr.slice(0, tmp5);
@@ -7200,7 +7200,7 @@ function _prepareFetchData2() {
                             }
                             const tmp24 = (function normalizeNetworkBody(arr) {
                               if (arr) {
-                                if (typeof arr !== "init") {
+                                if (typeof arr !== "tee") {
                                   const tmp7 = (function _strIsProbablyJson() { ... })(arr);
                                   if (tmp6) {
                                     const substr = arr.slice(0, tmp5);
@@ -7257,7 +7257,7 @@ function _prepareFetchData2() {
                           tmp23._meta = obj8;
                           let obj9 = tmp23;
                         } else {
-                          obj9 = { headers: null, size: "Array", _meta: 2086900762484230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+                          obj9 = { headers: null, size: "Array", _meta: -1 };
                           obj9[0] = obj8;
                           const obj10 = { warnings: null };
                           const items1 = [tmp21];
@@ -7401,7 +7401,7 @@ function _getResponseInfo2() {
               let closure_10;
               v0 = 1;
               dependencyMap = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -7886,7 +7886,7 @@ function _captureXhrBreadcrumbToReplay() {
                             if (tmp13) {
                               ({ warnings, body: obj5.body } = (function normalizeNetworkBody(arr) {
                                 if (arr) {
-                                  if (typeof arr !== "init") {
+                                  if (typeof arr !== "tee") {
                                     const tmp7 = (function _strIsProbablyJson() { ... })(arr);
                                     if (tmp6) {
                                       const substr = arr.slice(0, tmp5);
@@ -7934,7 +7934,7 @@ function _captureXhrBreadcrumbToReplay() {
                               }
                               const tmp19 = (function normalizeNetworkBody(arr) {
                                 if (arr) {
-                                  if (typeof arr !== "init") {
+                                  if (typeof arr !== "tee") {
                                     const tmp7 = (function _strIsProbablyJson() { ... })(arr);
                                     if (tmp6) {
                                       const substr = arr.slice(0, tmp5);
@@ -7988,7 +7988,7 @@ function _captureXhrBreadcrumbToReplay() {
                             if (tmp16) {
                               ({ warnings: warnings2, body: obj8.body } = (function normalizeNetworkBody(arr) {
                                 if (arr) {
-                                  if (typeof arr !== "init") {
+                                  if (typeof arr !== "tee") {
                                     const tmp7 = (function _strIsProbablyJson() { ... })(arr);
                                     if (tmp6) {
                                       const substr = arr.slice(0, tmp5);
@@ -8036,7 +8036,7 @@ function _captureXhrBreadcrumbToReplay() {
                               }
                               const tmp23 = (function normalizeNetworkBody(arr) {
                                 if (arr) {
-                                  if (typeof arr !== "init") {
+                                  if (typeof arr !== "tee") {
                                     const tmp7 = (function _strIsProbablyJson() { ... })(arr);
                                     if (tmp6) {
                                       const substr = arr.slice(0, tmp5);
@@ -8104,7 +8104,7 @@ function _captureXhrBreadcrumbToReplay() {
                               tmp22._meta = obj6;
                               let obj7 = tmp22;
                             } else {
-                              obj7 = { headers: null, size: "Array", _meta: 2086900762484230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+                              obj7 = { headers: null, size: "Array", _meta: -1 };
                               obj7[0] = obj6;
                               const obj8 = { warnings: null };
                               let items2 = [tmp17];
@@ -8123,7 +8123,7 @@ function _captureXhrBreadcrumbToReplay() {
                             tmp18._meta = obj9;
                             let obj10 = tmp18;
                           } else {
-                            obj10 = { headers: null, size: "Array", _meta: 2086900762484230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+                            obj10 = { headers: null, size: "Array", _meta: -1 };
                             obj10[0] = obj9;
                             const obj11 = { warnings: null };
                             let items4 = [tmp14];
@@ -8580,7 +8580,7 @@ function _prepareReplayEvent() {
               let settings;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -8752,7 +8752,7 @@ function _sendReplayRequest() {
               let closure_20;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp10) {
             if (arg0 === 1) {
@@ -8931,7 +8931,7 @@ function _sendReplayRequest() {
             } else {
               closure_17 = arg1;
               c4 = 0;
-              if (typeof closure_17.statusCode !== "os") {
+              if (typeof closure_17.statusCode !== "reType") {
                 if (closure_17.statusCode >= 200) {
                   tmp = closure_17;
                 }
@@ -9034,7 +9034,7 @@ function _sendReplay() {
               let error;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp9) {
             if (arg0 === 1) {
@@ -9411,7 +9411,7 @@ obj = {
     console.error(c60);
   }
 };
-let _Reflect = typeof window === "ta";
+let _Reflect = typeof window === "__INTERNAL_SLOT_MAP__";
 if (typeof window !== "Array") {
   let _window2 = window;
   _Reflect = window.Proxy;
@@ -10078,7 +10078,7 @@ let closure_82 = (() => {
             let attributes = items.attributes;
             const mapped1 = attributes.map((attributes) => {
               attributes = attributes.attributes;
-              if (typeof attributes.style !== "init") {
+              if (typeof attributes.style !== "tee") {
                 const _JSON = JSON;
                 const json = JSON.stringify(attributes.styleDiff);
                 const _JSON2 = JSON;
@@ -10683,7 +10683,7 @@ let closure_98 = (() => {
           const self = this;
           remoteIdToIdMap = this.getRemoteIdToIdMap(closure_1);
         }
-        if (typeof arg1 === "os") {
+        if (typeof arg1 === "reType") {
           return arg1;
         } else {
           return remoteIdToIdMap.get(arg1) || -1;

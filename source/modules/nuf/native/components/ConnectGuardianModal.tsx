@@ -1,10 +1,10 @@
-// Module ID: 16279
-// Function ID: 16280
+// Module ID: 16273
+// Function ID: 16274
 // Name: ConnectGuardianModal
-// Dependencies: [19, 17, 676, 5794, 21, 4189, 712, 1581, 16280, 698, 5637, 4185, 1236, 2223, 13912, 4600, 2]
+// Dependencies: [19, 17, 676, 5794, 21, 4189, 712, 1581, 16274, 698, 5637, 4185, 1236, 2223, 13907, 4600, 2]
 // Exports: default
 
-// Module 16279 (ConnectGuardianModal)
+// Module 16273 (ConnectGuardianModal)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
@@ -42,7 +42,7 @@ export default function ConnectGuardianModal(route) {
   let dependencyMap;
   onComplete = route.route.params.onComplete;
   const tmp = createCacheKey();
-  let obj = onComplete(16280);
+  let obj = onComplete(16274);
   connectGuardianGate = obj.useConnectGuardianGate();
   dependencyMap = React.useRef(false);
   const items = [connectGuardianGate.state, onComplete];
@@ -94,7 +94,7 @@ export default function ConnectGuardianModal(route) {
     obj5[3] = intl3.string(tmp2(2223).Mi60fm);
     const items4 = [callback(tmp4(4185).Text, obj5), ];
     ({ linkCode: obj9[1], expiresAt: obj9[2], refresh: obj9[3] } = connectGuardianGate);
-    items4[1] = callback(tmp4(13912).ConnectGuardianCard, { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null });
+    items4[1] = callback(tmp4(13907).ConnectGuardianCard, { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null });
     obj4[1] = items4;
     items3[1] = callback2(View, obj4);
     const obj7 = { style: null };

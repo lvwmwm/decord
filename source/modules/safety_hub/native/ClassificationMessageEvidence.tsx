@@ -1,10 +1,10 @@
-// Module ID: 11081
-// Function ID: 11082
+// Module ID: 11077
+// Function ID: 11078
 // Name: ClassificationEvidence
-// Dependencies: [32, 19, 17, 1302, 1874, 11072, 6756, 676, 21, 7713, 4189, 589, 4035, 11082, 11083, 6755, 4377, 8115, 8143, 10046, 9290, 4409, 11, 2]
+// Dependencies: [32, 19, 17, 1302, 1874, 11068, 6753, 676, 21, 7710, 4189, 589, 4035, 11078, 11079, 6752, 4377, 8112, 8140, 10042, 9286, 4409, 11, 2]
 // Exports: default
 
-// Module 11081 (ClassificationEvidence)
+// Module 11077 (ClassificationEvidence)
 import _slicedToArray from "_slicedToArray";
 import DCDChatList from "DCDChatList";
 import get_ActivityIndicator from "_openMediaModal";
@@ -53,10 +53,10 @@ export default function ClassificationEvidence(arg0) {
   const items1 = [id];
   const resolveAssetSource = first3.resolveAssetSource;
   if (obj2.useStateFromStores(items1, () => ref(4035).isThemeLight(id.theme))) {
-    let assetSource = resolveAssetSource(tmp11(11082));
+    let assetSource = resolveAssetSource(tmp11(11078));
     let tmp13 = tmp11;
   } else {
-    assetSource = resolveAssetSource(tmp11(11083));
+    assetSource = resolveAssetSource(tmp11(11079));
     tmp13 = tmp11;
   }
   let first2 = arg0.flaggedContent[0];
@@ -168,7 +168,7 @@ export default function ClassificationEvidence(arg0) {
       obj[9] = uri.id;
       return obj;
     });
-    ref(8115).openMediaModal({ initialIndex: index, initialSources: mapped, disableDownload: true, disableMediaOverlayButton: true, shareable: false, originViewOrOriginLayout: layout });
+    ref(8112).openMediaModal({ initialIndex: index, initialSources: mapped, disableDownload: true, disableMediaOverlayButton: true, shareable: false, originViewOrOriginLayout: layout });
   }, items4);
   const items6 = [first2.attachments];
   const callback1 = obj1.useCallback((arg0) => {
@@ -235,7 +235,7 @@ export default function ClassificationEvidence(arg0) {
         }
       };
       obj = { uri: uri.url };
-      return outer1_18(first(8143), obj, arg1);
+      return outer1_18(first(8140), obj, arg1);
     });
     items8[1] = callback(tmp24, obj);
     obj[0] = items8;
@@ -244,10 +244,10 @@ export default function ClassificationEvidence(arg0) {
     obj1 = { ref: null, onTapImage: null, inverted: false };
     obj1[0] = ref;
     obj1[1] = callback;
-    const items9 = [callback(tmp13(10046), obj1), ];
+    const items9 = [callback(tmp13(10042), obj1), ];
     obj2 = { rowGenerator: null, message: null, modifyRow: null };
     obj2[0] = closure_20;
-    let tmp13Result = tmp13(9290);
+    let tmp13Result = tmp13(9286);
     tmpResult = tmp(4409);
     const obj3 = { id: null, timestamp: null, channel_id: "1", type: null, author: null, content: null, attachments: null };
     obj3[0] = first2.id;

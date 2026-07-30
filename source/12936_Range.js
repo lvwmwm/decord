@@ -1,15 +1,19 @@
 // Module ID: 12936
 // Function ID: 12937
 // Name: Range
-// Dependencies: [12934]
+// Dependencies: [12929]
 
 // Module 12936 (Range)
 
-export default (arg0, arg1, arg2) => {
+export default (arg0, arg1) => {
   try {
-    const tmp7 = new require(12934) /* Range */(arg1, arg2);
-    return tmp7.test(arg0);
+    const tmp8 = new require(12929) /* Range */(arg0, arg1);
+    let str = tmp8.range;
+    if (!str) {
+      str = "*";
+    }
+    return str;
   } catch (err) {
-    return false;
+    return null;
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 13717
-// Function ID: 13718
+// Module ID: 13712
+// Function ID: 13713
 // Name: FormControlText
-// Dependencies: [32, 19, 17, 21, 4189, 712, 4185, 6728, 4717, 1236, 5227, 500, 5556, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 4185, 6725, 4717, 1236, 5227, 500, 5556, 2]
 // Exports: UserProfileEditFormButton, UserProfileEditFormSwitch
 
-// Module 13717 (FormControlText)
+// Module 13712 (FormControlText)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -84,7 +84,7 @@ export const UserProfileEditFormButton = function UserProfileEditFormButton(load
   items[3] = tmp2Result;
   obj[8] = items;
   obj[2] = callback3(require(4717) /* PressableBase */.PressableHighlight, obj);
-  return callback2(require(6728) /* Input */.Input, obj);
+  return callback2(require(6725) /* Input */.Input, obj);
 };
 export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0) {
   let accessibilityHint;
@@ -155,5 +155,5 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
   const items1 = [closure_6(FormControlText, { text: subLabel }), closure_6(require(5556) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
   obj[8] = items1;
   obj[1] = closure_7(PressableHighlight, obj);
-  return closure_6(require(6728) /* Input */.Input, obj);
+  return closure_6(require(6725) /* Input */.Input, obj);
 };

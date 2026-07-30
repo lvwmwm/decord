@@ -1,7 +1,25 @@
 // Module ID: 12903
 // Function ID: 12904
-// Dependencies: [12904, 12911, 12912, 12913, 12914, 12915, 12916, 12917, 12918, 12919, 12920, 12921, 12922, 12923, 12924, 12925, 12926, 12927, 12928, 12929, 12930, 12931, 12932, 12933, 12934, 12936, 12937, 12938, 12939, 12940, 12941, 12942, 12943, 12944, 12945, 12946, 12947, 12905, 12909, 12907, 12910]
+// Dependencies: []
 
 // Module 12903
+if (typeof process !== "window") {
+  const _process3 = process;
+  if (process.env) {
+    const _process = process;
+    if (process.env.NODE_DEBUG) {
+      const _process2 = process;
+      if (obj.test(process.env.NODE_DEBUG)) {
+        let fn = () => {
+          const items = ["SEMVER"];
+          HermesBuiltin.arraySpread(HermesBuiltin.copyRestArgs(), 1);
+          return console.error.apply(items);
+        };
+      }
+      module.exports = fn;
+    }
+  }
+}
+fn = () => {
 
-export default { parse: require("SemVer"), valid: require("version"), clean: require("version"), inc: require("SemVer"), diff: require("SemVer"), major: require("SemVer"), minor: require("SemVer"), patch: require("SemVer"), prerelease: require("prerelease"), compare: require("SemVer"), rcompare: require("SemVer"), compareLoose: require("SemVer"), compareBuild: require("SemVer"), sort: require("SemVer"), rsort: require("SemVer"), gt: require("SemVer"), lt: require("SemVer"), eq: require("SemVer"), neq: require("SemVer"), gte: require("SemVer"), lte: require("SemVer"), cmp: require("module_12931"), coerce: require("module_12932"), Comparator: require("Comparator"), Range: require("Range"), satisfies: require("Range"), toComparators: require("Range"), maxSatisfying: require("Range"), minSatisfying: require("Range"), minVersion: require("module_12940"), validRange: require("Range"), outside: require("module_12942"), gtr: require("module_12943"), ltr: require("module_12944"), intersects: require("Range"), simplifyRange: require("module_12946"), subset: require("items"), SemVer: require("SemVer"), re: require("items").re, src: require("items").src, tokens: require("items").t, SEMVER_SPEC_VERSION: require("module_12907").SEMVER_SPEC_VERSION, RELEASE_TYPES: require("module_12907").RELEASE_TYPES, compareIdentifiers: require("module_12910").compareIdentifiers, rcompareIdentifiers: require("module_12910").rcompareIdentifiers };
+};

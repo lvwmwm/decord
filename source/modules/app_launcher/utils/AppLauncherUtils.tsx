@@ -1,10 +1,10 @@
-// Module ID: 8015
-// Function ID: 8016
+// Module ID: 8012
+// Function ID: 8013
 // Name: getShelfBadgeTypeIfActive
-// Dependencies: [109, 5, 5697, 4212, 8016, 676, 4623, 4182, 1236, 5692, 8018, 500, 1906, 5704, 8019, 5967, 5713, 4528, 1416, 8017, 8029, 5702, 8030, 2]
+// Dependencies: [109, 5, 5697, 4212, 8013, 676, 4623, 4182, 1236, 5692, 8015, 500, 1906, 5704, 8016, 5965, 5713, 4528, 1416, 8014, 8026, 5702, 8027, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isEmbeddedApp, isPartnerApplication, isPromotedApplication, isRealApplication
 
-// Module 8015 (getShelfBadgeTypeIfActive)
+// Module 8012 (getShelfBadgeTypeIfActive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import ME from "ME";
 import getIndexKey from "getIndexKey";
@@ -28,8 +28,8 @@ function getShelfBadgeTypeIfActive(application) {
   let tmp9;
   if (tmp2 != null) {
     const obj2 = require(500) /* set */;
-    tmp9 = tmp2.client_platform_config[importDefault(8018)(undefined, obj2.getOS(obj2))];
-    const tmp12 = importDefault(8018);
+    tmp9 = tmp2.client_platform_config[importDefault(8015)(undefined, obj2.getOS(obj2))];
+    const tmp12 = importDefault(8015);
   }
   const timestamp = Date.now();
   let label_until;
@@ -318,7 +318,7 @@ export const isApplicationAdSupported = function isApplicationAdSupported(applic
   return null != tmp2 && tmp2.displays_advertisements;
 };
 export const appLauncherShowsRecommendations = function appLauncherShowsRecommendations(entrypoint) {
-  return entrypoint === require(8017) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.TEXT;
+  return entrypoint === require(8014) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.TEXT;
 };
 export const formatPrimaryEntryPointCommandName = function formatPrimaryEntryPointCommandName(displayName) {
   let str = "";
@@ -387,6 +387,6 @@ export const isAppAvailableInAppLauncher = function isAppAvailableInAppLauncher(
     result = require(5702) /* buildCommand */.hasCommandIndexForApp(id.id, guildState);
     const obj = require(5702) /* buildCommand */;
   }
-  const obj2 = require(8030) /* canInstallApplication */;
-  return require(8030) /* canInstallApplication */.isAppUserInstallable(id) || result;
+  const obj2 = require(8027) /* canInstallApplication */;
+  return require(8027) /* canInstallApplication */.isAppUserInstallable(id) || result;
 };

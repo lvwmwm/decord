@@ -1,10 +1,10 @@
-// Module ID: 7985
-// Function ID: 7986
+// Module ID: 7982
+// Function ID: 7983
 // Name: _fetchProfile
 // Dependencies: [5, 1882, 1874, 676, 677, 3, 530, 709, 4999, 663, 38, 4088, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 7985 (_fetchProfile)
+// Module 7982 (_fetchProfile)
 import timestamp from "timestamp";
 import createdAt from "createdAt";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -81,7 +81,7 @@ function _fetchProfile() {
                 let closure_12;
                 c7 = 1;
                 logger = 1;
-                return { value: "ct", done: null };
+                return { value: "ct", done: "Array" };
               }
             } else if (1 === tmp7) {
               if (arg0 === 1) {

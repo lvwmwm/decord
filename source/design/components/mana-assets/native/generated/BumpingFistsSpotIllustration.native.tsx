@@ -1,10 +1,10 @@
-// Module ID: 6900
-// Function ID: 6901
+// Module ID: 6897
+// Function ID: 6898
 // Name: BumpingFistsSpotIllustration
-// Dependencies: [21, 5141, 6901, 2]
+// Dependencies: [21, 5141, 6898, 2]
 // Exports: BumpingFistsSpotIllustration
 
-// Module 6900 (BumpingFistsSpotIllustration)
+// Module 6897 (BumpingFistsSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BumpingFistsSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const BumpingFistsSpotIllustration = function BumpingFistsSpotIllustratio
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6901);
+  obj[0] = importDefault(6898);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

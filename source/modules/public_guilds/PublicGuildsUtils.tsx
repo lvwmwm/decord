@@ -1,10 +1,10 @@
-// Module ID: 7816
-// Function ID: 7817
+// Module ID: 7813
+// Function ID: 7814
 // Name: isPublicSystemMessage
-// Dependencies: [7817, 676, 7818, 7819, 698, 4384, 2]
+// Dependencies: [7814, 676, 7815, 7816, 698, 4384, 2]
 // Exports: getPublicSystemMessageAvatar, isPublicSystemMessage, trackEnableCommunityFlow
 
-// Module 7816 (isPublicSystemMessage)
+// Module 7813 (isPublicSystemMessage)
 import PUBLIC_SUCCESS_MODAL_SEEN_KEY from "PUBLIC_SUCCESS_MODAL_SEEN_KEY";
 import { AnalyticEvents } from "ME";
 
@@ -15,7 +15,7 @@ let c5;
 const result = require("isCrosspost").fileFinishedImporting("modules/public_guilds/PublicGuildsUtils.tsx");
 
 export const isPublicSystemMessage = function isPublicSystemMessage(message) {
-  let tmp = importDefault(7818)(message);
+  let tmp = importDefault(7815)(message);
   if (tmp) {
     tmp = message.messageReference.guild_id === closure_3;
   }
@@ -29,7 +29,7 @@ export const isPublicSystemMessage = function isPublicSystemMessage(message) {
   return tmp;
 };
 export const getPublicSystemMessageAvatar = function getPublicSystemMessageAvatar() {
-  return importDefault(7819);
+  return importDefault(7816);
 };
 export const trackEnableCommunityFlow = function trackEnableCommunityFlow(fromStep) {
   let obj = importDefault(698);

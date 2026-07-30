@@ -1,9 +1,9 @@
-// Module ID: 15020
-// Function ID: 15021
+// Module ID: 15014
+// Function ID: 15015
 // Name: PreviewItem
-// Dependencies: [19, 5027, 14941, 21, 4189, 4046, 4050, 4599, 7679, 4534, 14951, 14972, 3802, 2]
+// Dependencies: [19, 5027, 14935, 21, 4189, 4046, 4050, 4599, 7676, 4534, 14945, 14966, 3802, 2]
 
-// Module 15020 (PreviewItem)
+// Module 15014 (PreviewItem)
 import importAllResult from "noop";
 import { GuildsNodeType } from "insertUnsortedGuilds";
 import withEqualityFn from "withEqualityFn";
@@ -127,7 +127,7 @@ function PreviewItem(dragRegion) {
   const memo = gestureState.useMemo(() => {
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const obj = { type: null, id: -1, parentId: "ct", name: "Array", color: "call", expanded: "soundshareId", children: "asset" };
+        const obj = { type: null, id: -1, parentId: "ct", name: "Array", color: "paddingHorizontal", expanded: true, children: true };
         obj[0] = listInsets.FOLDER;
         const items = [tmp2];
         obj[6] = items;
@@ -338,7 +338,7 @@ const memoResult = importAllResult.memo(function GuildsBarDragPreview() {
       if (null != dragSpecs) {
         if (null != overSpecs) {
           const state = overSpecs.state;
-          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: 200, scrollPosition: 100, dragRegion: 20, windowSize: 141, dropComplete: 99, listInsets: 20 };
+          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "User Profile Activity Card", scrollPosition: null, dragRegion: null, windowSize: true, dropComplete: null, listInsets: "" };
           ({ node: obj[0], itemSize: obj[1] } = dragSpecs);
           obj[2] = state;
           let node;

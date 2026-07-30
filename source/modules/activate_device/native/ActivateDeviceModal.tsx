@@ -1,16 +1,16 @@
-// Module ID: 13012
-// Function ID: 13013
+// Module ID: 13007
+// Function ID: 13008
 // Name: ActivateDeviceModal
-// Dependencies: [19, 21, 13011, 6752, 7699, 1236, 13013, 5570, 2]
+// Dependencies: [19, 21, 13006, 6749, 7696, 1236, 13008, 5570, 2]
 // Exports: default
 
-// Module 13012 (ActivateDeviceModal)
+// Module 13007 (ActivateDeviceModal)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 let closure_5 = { ACTIVATE_DEVICE: "activate-device" };
-const result = require("module_13011").fileFinishedImporting("modules/activate_device/native/ActivateDeviceModal.tsx");
+const result = require("module_13006").fileFinishedImporting("modules/activate_device/native/ActivateDeviceModal.tsx");
 
 export default function ActivateDeviceModal(userCode) {
   userCode = userCode.userCode;

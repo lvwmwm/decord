@@ -1,8 +1,8 @@
-// Module ID: 10232
-// Function ID: 10233
+// Module ID: 10228
+// Function ID: 10229
 // Dependencies: [4385, 709, 5132, 2]
 
-// Module 10232
+// Module 10228
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 
 let result = require("handleConnectionOpen").fileFinishedImporting("actions/ChannelCollapseActionCreators.tsx");

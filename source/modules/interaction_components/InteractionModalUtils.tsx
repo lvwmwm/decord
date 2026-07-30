@@ -1,10 +1,10 @@
-// Module ID: 16217
-// Function ID: 16218
+// Module ID: 16211
+// Function ID: 16212
 // Name: getData
-// Dependencies: [5, 32, 19, 1218, 1372, 4526, 1942, 4006, 4525, 13462, 7892, 676, 7891, 1906, 1416, 5689, 12617, 589, 5503, 11, 709, 6186, 1236, 38, 4411, 6153, 7896, 4723, 530, 687, 2]
+// Dependencies: [5, 32, 19, 1218, 1372, 4526, 1942, 4006, 4525, 13457, 7889, 676, 7888, 1906, 1416, 5689, 12611, 589, 5503, 11, 709, 6183, 1236, 38, 4411, 6151, 7893, 4723, 530, 687, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 16217 (getData)
+// Module 16211 (getData)
 import handleChanged from "handleChanged";
 import _slicedToArray from "_slicedToArray";
 import DISCORD_EPOCH from "DISCORD_EPOCH";
@@ -2194,7 +2194,7 @@ function _submitModal() {
 let result = require("noop").fileFinishedImporting("modules/interaction_components/InteractionModalUtils.tsx");
 
 export const useIsFirstTextInputInModal = function useIsFirstTextInputInModal(id) {
-  const componentStateContext = require(7891) /* isInteractionComponent */.useComponentStateContext();
+  const componentStateContext = require(7888) /* isInteractionComponent */.useComponentStateContext();
   let first;
   if (componentStateContext != null) {
     const modal = componentStateContext.modal;

@@ -1,10 +1,10 @@
-// Module ID: 12438
-// Function ID: 12439
+// Module ID: 12432
+// Function ID: 12433
 // Name: BuyNitroMarketingFooter
-// Dependencies: [19, 17, 21, 4189, 712, 5273, 6660, 5535, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5273, 6657, 5535, 2]
 // Exports: default
 
-// Module 12438 (BuyNitroMarketingFooter)
+// Module 12432 (BuyNitroMarketingFooter)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -42,7 +42,7 @@ export default function BuyNitroMarketingFooter(arg0) {
   obj[2] = applicationId;
   obj[3] = onPaymentSuccess;
   obj[4] = onPaymentDismiss;
-  obj[2] = jsx(importDefault(6660), { location: null, planSelection: null, applicationId: null, onPaymentSuccess: null, onPaymentDismiss: null });
+  obj[2] = jsx(importDefault(6657), { location: null, planSelection: null, applicationId: null, onPaymentSuccess: null, onPaymentDismiss: null });
   obj[1] = <closure_4 location={null} planSelection={null} applicationId={null} onPaymentSuccess={null} onPaymentDismiss={null} />;
   return jsx(require(5273) /* Directions */.GestureDetector, { location: null, planSelection: null, applicationId: null, onPaymentSuccess: null, onPaymentDismiss: null });
 };

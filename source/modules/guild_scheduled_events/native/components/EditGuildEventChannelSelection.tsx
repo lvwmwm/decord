@@ -1,10 +1,10 @@
-// Module ID: 8268
-// Function ID: 8269
+// Module ID: 8265
+// Function ID: 8266
 // Name: EditGuildEventChannelSelection
-// Dependencies: [19, 17, 3817, 3826, 1874, 5779, 676, 21, 4189, 712, 6740, 8264, 8248, 4380, 589, 4650, 8250, 8251, 1236, 4185, 4717, 1844, 8269, 8229, 4157, 8246, 1959, 1297, 8247, 2]
+// Dependencies: [19, 17, 3817, 3826, 1874, 5779, 676, 21, 4189, 712, 6737, 8261, 8245, 4380, 589, 4650, 8247, 8248, 1236, 4185, 4717, 1844, 8266, 8226, 4157, 8243, 1959, 1297, 8244, 2]
 // Exports: default
 
-// Module 8268 (EditGuildEventChannelSelection)
+// Module 8265 (EditGuildEventChannelSelection)
 import "Text";
 import { View } from "LocationIcon";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -46,12 +46,12 @@ export default function EditGuildEventChannelSelection(guild) {
   let scheduledEventSort;
   let constants;
   const tmp = createCacheKey();
-  let obj = guild(6740);
+  let obj = guild(6737);
   const inputStyles = obj.useInputStyles({ hasLeadingIcon: true });
   c5 = tmp5;
-  let obj1 = guild(8264);
+  let obj1 = guild(8261);
   upsertRelationship = obj1.useGetEventChannelsByType(guild.id, channelType);
-  let obj2 = guild(8248);
+  let obj2 = guild(8245);
   mergeGuildAvatar = obj2.useChannelsUserCanStartStageIn(guild);
   const tmp7 = channel(4380)(channel);
   let obj3 = guild(589);
@@ -65,13 +65,13 @@ export default function EditGuildEventChannelSelection(guild) {
     let tmp2Result = tmp2(4650);
     let channelIcon = tmp2Result.getChannelIcon(channel);
   } else {
-    channelIcon = tmp6(8250);
+    channelIcon = tmp6(8247);
   }
   if (null != channel) {
     tmp2Result = tmp2(4650);
     let LocationIcon = tmp2Result.getChannelIconComponent(channel);
   } else {
-    LocationIcon = tmp2(8251).LocationIcon;
+    LocationIcon = tmp2(8248).LocationIcon;
   }
   let intl = tmp2(1236).intl;
   let string = intl.string;
@@ -162,7 +162,7 @@ export default function EditGuildEventChannelSelection(guild) {
   obj4 = { style: tmp.channelNameText, variant: "text-md/medium", color: "interactive-text-active", children: tmp7 };
   items6[1] = callback(guild(4185).Text, obj4);
   const obj5 = { source: null };
-  obj5[0] = channel(8247);
+  obj5[0] = channel(8244);
   items6[2] = callback(guild(1297).Icon, obj5);
   obj1[6] = items6;
   items4[1] = closure_12(guild(4717).PressableOpacity, obj1);

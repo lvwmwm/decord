@@ -1,10 +1,10 @@
-// Module ID: 13016
-// Function ID: 13017
+// Module ID: 13011
+// Function ID: 13012
 // Name: _createTwoWayLink
-// Dependencies: [5, 19, 13015, 4995, 8943, 38, 4996, 8956, 2]
+// Dependencies: [5, 19, 13010, 4995, 8939, 38, 4996, 8952, 2]
 // Exports: useDeviceCodeAuthorizeCallback
 
-// Module 13016 (_createTwoWayLink)
+// Module 13011 (_createTwoWayLink)
 import module_38 from "module_38";
 import noop from "noop";
 
@@ -53,7 +53,7 @@ function _createTwoWayLink() {
               let url;
               let c4;
               state = undefined;
-              const result = callback(13015).clientIdToActivateDevicePlatform(callback);
+              const result = callback(13010).clientIdToActivateDevicePlatform(callback);
               dependencyMap = result;
               if (null == result) {
                 c9 = 1;
@@ -66,7 +66,7 @@ function _createTwoWayLink() {
                 let c8 = 1;
                 let obj10 = callback2(4995);
                 const obj2 = { twoWayLinkType: null, userCode: null };
-                obj2[0] = callback(8943).TwoWayLinkType.DEVICE_CODE;
+                obj2[0] = callback(8939).TwoWayLinkType.DEVICE_CODE;
                 obj2[1] = tmp84;
                 c9 = 4;
                 c10 = 1;
@@ -74,7 +74,7 @@ function _createTwoWayLink() {
                 obj3[0] = obj10.authorize(result, obj2);
                 return obj3;
               }
-              const obj20 = callback(13015);
+              const obj20 = callback(13010);
             }
           } else if (1 === tmp9) {
             if (arg0 === 1) {
@@ -382,7 +382,7 @@ export const useDeviceCodeAuthorizeCallback = function useDeviceCodeAuthorizeCal
                   c6 = 4;
                   c7 = 1;
                   const obj1 = { value: null, done: false };
-                  obj1[0] = callback(8956).finishUserCode(tmp49.userCode, "granted");
+                  obj1[0] = callback(8952).finishUserCode(tmp49.userCode, "granted");
                   return obj1;
                 } else {
                   c5 = 3;
@@ -403,7 +403,7 @@ export const useDeviceCodeAuthorizeCallback = function useDeviceCodeAuthorizeCal
                 }
               } else {
                 c5 = 1;
-                let obj3 = callback(8956);
+                let obj3 = callback(8952);
                 c6 = 6;
                 c7 = 1;
                 obj3 = { value: null, done: false };

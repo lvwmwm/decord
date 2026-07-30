@@ -1,10 +1,10 @@
-// Module ID: 6948
-// Function ID: 6949
+// Module ID: 6945
+// Function ID: 6946
 // Name: ControllerIllocon
-// Dependencies: [21, 5141, 6949, 2]
+// Dependencies: [21, 5141, 6946, 2]
 // Exports: ControllerIllocon
 
-// Module 6948 (ControllerIllocon)
+// Module 6945 (ControllerIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ControllerIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const ControllerIllocon = function ControllerIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6949);
+  obj[0] = importDefault(6946);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

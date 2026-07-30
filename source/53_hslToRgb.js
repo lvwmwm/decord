@@ -185,7 +185,7 @@ export default function normalizeColor(arg0) {
       }
     }
     return tmp24;
-  } else if (typeof arg0 === "init") {
+  } else if (typeof arg0 === "tee") {
     return null;
   } else {
     let tmp21 = match;

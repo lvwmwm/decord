@@ -1,10 +1,10 @@
-// Module ID: 14807
-// Function ID: 14808
+// Module ID: 14800
+// Function ID: 14801
 // Name: fuzzySearchToggle
-// Dependencies: [32, 19, 17, 5146, 4188, 21, 5102, 4189, 712, 5220, 3890, 5556, 589, 5554, 14791, 5215, 14808, 4598, 14809, 9239, 2]
+// Dependencies: [32, 19, 17, 5146, 4188, 21, 5102, 4189, 712, 5220, 3890, 5556, 589, 5554, 14784, 5215, 14801, 4598, 14802, 9235, 2]
 // Exports: default
 
-// Module 14807 (fuzzySearchToggle)
+// Module 14800 (fuzzySearchToggle)
 import _slicedToArray from "_slicedToArray";
 import SearchField from "SearchField";
 import { ScrollView } from "Stack";
@@ -100,7 +100,7 @@ export default function DevToolsTogglesScreen() {
   let tmp = createCacheKey();
   let tmp3 = callback(React.useState(""), 2);
   const first = tmp3[0];
-  let obj = first(14808);
+  let obj = first(14801);
   const manaTextMigrationHighlightRestartNotice = obj.useManaTextMigrationHighlightRestartNotice();
   let obj1 = first(589);
   const items = [getUserAgnosticState];
@@ -136,16 +136,16 @@ export default function DevToolsTogglesScreen() {
       label: "Clear All",
       variant: "danger",
       onPress() {
-        first(14809).clearAll();
-        const obj = first(14809);
-        first(14791).clearAll();
+        first(14802).clearAll();
+        const obj = first(14802);
+        first(14784).clearAll();
       },
       arrow: true
     }),
 
   ];
   const obj3 = { label: null };
-  obj3[0] = callback2(first(9239).SearchField, { size: "md", placeholder: "Search design toggles", onChange: tmp3[1] });
+  obj3[0] = callback2(first(9235).SearchField, { size: "md", placeholder: "Search design toggles", onChange: tmp3[1] });
   items3[1] = callback2(first(5220).TableRow, obj3);
   obj1[2] = items3;
   const items4 = [callback3(first(5554).TableRowGroup, obj1), , ];

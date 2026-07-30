@@ -1,9 +1,9 @@
-// Module ID: 13777
-// Function ID: 13778
+// Module ID: 13772
+// Function ID: 13773
 // Name: RestrictedAccountRedirect
-// Dependencies: [19, 17, 3826, 1874, 676, 6716, 21, 4189, 712, 13778, 1236, 6611, 589, 9230, 9177, 5220, 4600, 2]
+// Dependencies: [19, 17, 3826, 1874, 676, 6713, 21, 4189, 712, 13773, 1236, 6608, 589, 9226, 9173, 5220, 4600, 2]
 
-// Module 13777 (RestrictedAccountRedirect)
+// Module 13772 (RestrictedAccountRedirect)
 import importAllResult from "noop";
 import { View } from "set";
 import upsertRelationship from "upsertRelationship";
@@ -25,7 +25,7 @@ function RestrictedAccountRedirect() {
     obj.openUserSettings(obj);
   };
   obj[2] = SafetySettingsNoticeType.RESTRICTED_ACCOUNTS_SETTING_NOTICE;
-  return callback(importDefault(13778), obj);
+  return callback(importDefault(13773), obj);
 }
 let c3 = importAllResult;
 ({ jsx: c9, jsxs: c10 } = jsxProd);
@@ -37,7 +37,7 @@ const memoResult = importAllResult.memo(() => {
   let obj = require(589) /* initialize */;
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj1 = require(9230) /* handleOpenEmailVerification */;
+  let obj1 = require(9226) /* handleOpenEmailVerification */;
   const bannerText = obj1.getBannerText(stateFromStores);
   const tmp = callback2();
   const items1 = [upsertRelationship];

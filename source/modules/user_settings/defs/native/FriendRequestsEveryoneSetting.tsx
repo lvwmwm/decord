@@ -1,9 +1,9 @@
-// Module ID: 14007
-// Function ID: 14008
+// Module ID: 14002
+// Function ID: 14003
 // Name: toggle
-// Dependencies: [19, 7756, 676, 3862, 6506, 13855, 10120, 1236, 2]
+// Dependencies: [19, 7753, 676, 3862, 6503, 13850, 10116, 1236, 2]
 
-// Module 14007 (toggle)
+// Module 14002 (toggle)
 import noop from "noop";
 import ME from "ME";
 import createToggle from "createToggle";
@@ -34,7 +34,7 @@ createToggle = {
     FriendSourceFlagsSetting.updateSetting(tmp3);
   },
   useIsDisabled() {
-    return require(13855) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    return require(13850) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
   }
 };
 createToggle = createToggle.createToggle(createToggle);

@@ -1,10 +1,10 @@
-// Module ID: 10999
-// Function ID: 11000
+// Module ID: 10995
+// Function ID: 10996
 // Name: matchesDeep
 // Dependencies: [4339, 2]
 // Exports: getBestMatches, getEntries, getExperimentDateFromId, sortEntries
 
-// Module 10999 (matchesDeep)
+// Module 10995 (matchesDeep)
 function matchesDeep(item10014, item10021) {
   if (Array.isArray(item10014)) {
     const obj2 = item10014[Symbol.iterator]();
@@ -33,7 +33,7 @@ function matchesDeep(item10014, item10021) {
         }
       }
     }
-    if (typeof item10014 !== "init") {
+    if (typeof item10014 !== "tee") {
       const formatted = item10014.toLowerCase();
       if (formatted.includes(item10021.toLowerCase())) {
         return true;

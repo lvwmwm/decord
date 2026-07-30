@@ -1,9 +1,9 @@
-// Module ID: 12843
-// Function ID: 12844
+// Module ID: 12837
+// Function ID: 12838
 // Name: StreamingUserRow
-// Dependencies: [19, 17, 1302, 1218, 4866, 1372, 1942, 4236, 4276, 676, 21, 4189, 712, 10513, 589, 4035, 12844, 12845, 1297, 12846, 12847, 12848, 12849, 8346, 4185, 1236, 7634, 6023, 10849, 4040, 4399, 4157, 4717, 8917, 4379, 8915, 4028, 2]
+// Dependencies: [19, 17, 1302, 1218, 4866, 1372, 1942, 4236, 4276, 676, 21, 4189, 712, 10509, 589, 4035, 12838, 12839, 1297, 12840, 12841, 12842, 12843, 8343, 4185, 1236, 7631, 6021, 10845, 4040, 4399, 4157, 4717, 8913, 4379, 8911, 4028, 2]
 
-// Module 12843 (StreamingUserRow)
+// Module 12837 (StreamingUserRow)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "registerAsset";
 import handleThemeChange from "handleThemeChange";
@@ -50,7 +50,7 @@ function StreamingUserRow(user) {
       labelCallScreen = tmp2.labelCallScreen;
     }
     obj[1] = labelCallScreen;
-    obj.subLabel = closure_11(tmp3(7634).FormSubLabel, obj);
+    obj.subLabel = closure_11(tmp3(7631).FormSubLabel, obj);
     const items1 = [closure_11(closure_16, obj), ];
     let tmp10Result = user.id !== store.getId();
     if (tmp10Result) {
@@ -76,10 +76,10 @@ function StreamingUserRow(user) {
           const obj4 = user(outer1_2[30]);
         }
       };
-      obj1[1] = tmp10(channel(10849), obj2);
+      obj1[1] = tmp10(channel(10845), obj2);
       tmp10Result = tmp10(closure_3, obj1);
       const tmp18 = closure_3;
-      const tmp20 = channel(10849);
+      const tmp20 = channel(10845);
     }
     let obj3 = { children: null };
     items1[1] = tmp10Result;
@@ -286,7 +286,7 @@ let closure_16 = importAllResult.memo((user) => {
   }
   obj1[1] = guild_id;
   obj1[2] = user(1297).AvatarSizes.REFRESH_MEDIUM_32;
-  obj1[3] = channel(10513)(obj);
+  obj1[3] = channel(10509)(obj);
   obj[2] = closure_11(user(1297).Avatar, obj1);
   let tmp23Result = null;
   if (flag3) {
@@ -298,7 +298,7 @@ let closure_16 = importAllResult.memo((user) => {
       if (user.isSpectating) {
         obj3 = { size: null, source: null, style: null };
         obj3[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-        obj3[1] = tmp5(12849);
+        obj3[1] = tmp5(12843);
         obj3[2] = tmp19;
         tmp20Result = tmp20(tmp8(1297).Icon, obj3);
       }
@@ -309,7 +309,7 @@ let closure_16 = importAllResult.memo((user) => {
         if (tmp14) {
           obj4 = { size: null, source: null, style: null };
           obj4[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-          obj4[1] = tmp5(12846);
+          obj4[1] = tmp5(12840);
           obj4[2] = tmp19;
           tmp20Result = tmp20(tmp8(1297).Icon, obj4);
         }
@@ -329,22 +329,22 @@ let closure_16 = importAllResult.memo((user) => {
           if (localVideoDisabled) {
             const obj6 = { size: null, source: null, style: null, disableColor: true };
             obj6[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-            obj6[1] = tmp5(12847);
+            obj6[1] = tmp5(12841);
             obj6[2] = tmp2.voiceStatusIconMargin;
             let obj7 = obj6;
           } else {
             obj7 = { size: null, source: null, style: null };
             obj7[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-            obj7[1] = tmp5(12848);
+            obj7[1] = tmp5(12842);
             obj7[2] = tmp19;
           }
           tmp20(tmp8(1297).Icon, obj7);
         }
       } else {
         if (tmp8Result.isThemeDark(stateFromStores)) {
-          let tmp5Result = tmp5(12844);
+          let tmp5Result = tmp5(12838);
         } else {
-          tmp5Result = tmp5(12845);
+          tmp5Result = tmp5(12839);
         }
         const obj8 = { size: null, source: null, style: null, color: null, disableColor: null };
         obj8[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
@@ -381,12 +381,12 @@ let closure_16 = importAllResult.memo((user) => {
     labelCallScreen = tmp3.labelCallScreen;
   }
   obj12[1] = labelCallScreen;
-  obj9.label = closure_11(user(7634).FormRow.Label, obj12);
+  obj9.label = closure_11(user(7631).FormRow.Label, obj12);
   if (localVideoAutoDisabled) {
     const obj13 = { style: null, children: null };
     obj13[0] = tmp2.autoDisabledVideo;
     const obj14 = { source: null, size: null, disableColor: true };
-    obj14[0] = tmp5(8346);
+    obj14[0] = tmp5(8343);
     obj14[1] = tmp8(1297).Icon.Sizes.EXTRA_SMALL;
     const items6 = [tmp20(tmp8(1297).Icon, obj14), ];
     const obj15 = { variant: "text-xs/medium", color: "text-default", style: null, children: null };
@@ -404,7 +404,7 @@ let closure_16 = importAllResult.memo((user) => {
     }
   }
   obj9.subLabel = stringResult;
-  return closure_11(user(7634).FormRow, obj9);
+  return closure_11(user(7631).FormRow, obj9);
 });
 let obj7 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, lineHeight: 18, marginHorizontal: 16, color: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
 const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
@@ -427,7 +427,7 @@ const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
   }, items1);
   let obj1 = id2(4379);
   const name = obj1.getName(id2.guild_id, id2.id, id);
-  let obj2 = id(8915);
+  let obj2 = id(8911);
   obj = {
     onPress() {
       return callback(id);
@@ -443,7 +443,7 @@ const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
     labelCallScreen = tmp.labelCallScreen;
   }
   obj[1] = labelCallScreen;
-  obj[1] = closure_11(id(7634).FormRow.Label, obj);
+  obj[1] = closure_11(id(7631).FormRow.Label, obj);
   obj1 = { user: id, guildId: id2.guild_id, size: null };
   obj1[2] = id(1297).AvatarSizes.REFRESH_MEDIUM_32;
   obj[2] = closure_11(id(1297).Avatar, obj1);
@@ -451,7 +451,7 @@ const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
     obj[3] = null;
     obj2 = {};
     const merged = Object.assign(obj);
-    return tmp7(tmp2(7634).FormRow, obj2);
+    return tmp7(tmp2(7631).FormRow, obj2);
   } else {
     const obj3 = { channelId: null, userId: null, isActionSheet: null };
     id2 = id2.id;

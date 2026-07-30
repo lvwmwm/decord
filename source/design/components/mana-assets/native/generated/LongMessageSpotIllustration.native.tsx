@@ -1,10 +1,10 @@
-// Module ID: 7260
-// Function ID: 7261
+// Module ID: 7257
+// Function ID: 7258
 // Name: LongMessageSpotIllustration
-// Dependencies: [21, 5141, 7261, 2]
+// Dependencies: [21, 5141, 7258, 2]
 // Exports: LongMessageSpotIllustration
 
-// Module 7260 (LongMessageSpotIllustration)
+// Module 7257 (LongMessageSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/LongMessageSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const LongMessageSpotIllustration = function LongMessageSpotIllustration(
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7261);
+  obj[0] = importDefault(7258);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

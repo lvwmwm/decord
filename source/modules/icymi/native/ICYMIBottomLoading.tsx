@@ -1,10 +1,10 @@
-// Module ID: 15384
-// Function ID: 15385
+// Module ID: 15378
+// Function ID: 15379
 // Name: ICYMIBottomLoading
 // Dependencies: [19, 17, 21, 4189, 712, 2]
 // Exports: ICYMIBottomLoading
 
-// Module 15384 (ICYMIBottomLoading)
+// Module 15378 (ICYMIBottomLoading)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

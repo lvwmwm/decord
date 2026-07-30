@@ -1,9 +1,9 @@
-// Module ID: 10479
-// Function ID: 10480
+// Module ID: 10475
+// Function ID: 10476
 // Name: LAUNCH_PAD_SPRING_CONFIG
 // Dependencies: [17, 500, 4169, 2]
 
-// Module 10479 (LAUNCH_PAD_SPRING_CONFIG)
+// Module 10475 (LAUNCH_PAD_SPRING_CONFIG)
 import { Dimensions } from "get ActivityIndicator";
 import set from "set";
 import set from "DCDDeviceManager";

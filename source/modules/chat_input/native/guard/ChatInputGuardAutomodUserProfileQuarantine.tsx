@@ -1,8 +1,8 @@
-// Module ID: 11556
-// Function ID: 11557
-// Dependencies: [19, 1218, 1942, 3805, 21, 589, 3823, 11052, 1236, 11540, 11557, 2]
+// Module ID: 11552
+// Function ID: 11553
+// Dependencies: [19, 1218, 1942, 3805, 21, 589, 3823, 11048, 1236, 11536, 11553, 2]
 
-// Module 11556
+// Module 11552
 import importAllResult from "noop";
 import fetchFingerprint from "fetchFingerprint";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -48,9 +48,9 @@ const memoResult = importAllResult.memo(function ChatInputGuardAutomodUserProfil
   obj = { type: "simple-action", actionOnPress: callback, actionLabel: stringResult, icon: null, message: null };
   const obj2 = guildId(3823);
   tmp6 = GuildMemberFlags;
-  obj[3] = jsx(guildId(11557).ChatXIcon, {});
+  obj[3] = jsx(guildId(11553).ChatXIcon, {});
   obj[4] = stringResult1;
-  return jsx(importDefault(11540), { type: "simple-action", actionOnPress: callback, actionLabel: stringResult, icon: null, message: null });
+  return jsx(importDefault(11536), { type: "simple-action", actionOnPress: callback, actionLabel: stringResult, icon: null, message: null });
 });
 let result = require("trackCommunicationDisabled").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardAutomodUserProfileQuarantine.tsx");
 

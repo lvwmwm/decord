@@ -1,9 +1,9 @@
-// Module ID: 14160
-// Function ID: 14161
+// Module ID: 14156
+// Function ID: 14157
 // Name: hasVideoEnded
-// Dependencies: [32, 19, 17, 6328, 5987, 5033, 676, 21, 712, 8143, 4189, 689, 14150, 10492, 9479, 3802, 4050, 4599, 4603, 4190, 4193, 14158, 6008, 14161, 1578, 500, 1231, 10500, 9469, 589, 1208, 1581, 1236, 14169, 4717, 14046, 14048, 14050, 14051, 9971, 8127, 8129, 14052, 14053, 2]
+// Dependencies: [32, 19, 17, 6325, 5985, 5033, 676, 21, 712, 8140, 4189, 689, 14146, 10488, 9475, 3802, 4050, 4599, 4603, 4190, 4193, 14154, 6006, 14157, 1578, 500, 1231, 10496, 9465, 589, 1208, 1581, 1236, 14165, 4717, 14050, 14052, 14054, 14055, 9967, 8124, 8126, 14056, 14057, 2]
 
-// Module 14160 (hasVideoEnded)
+// Module 14156 (hasVideoEnded)
 import getSystemLocale from "getSystemLocale";
 import importAllResult from "CONFIG_NEVER_ANIMATE_TIMING";
 import get_ActivityIndicator from "CONFIG_NEVER_ANIMATE";
@@ -194,10 +194,10 @@ const memoResult = importAllResult.memo((onLoad) => {
   let tmp = first2();
   obj = externallyPaused;
   ref = externallyPaused.useRef(null);
-  let obj1 = handleBufferAnalytics(14150);
+  let obj1 = handleBufferAnalytics(14146);
   const videoQuestModalContext = obj1.useVideoQuestModalContext();
   quest = videoQuestModalContext.quest;
-  let obj2 = handleBufferAnalytics(10492);
+  let obj2 = handleBufferAnalytics(10488);
   questTaskDetails = obj2.useQuestTaskDetails(quest);
   const userStatus = quest.userStatus;
   let completedAt;
@@ -215,9 +215,9 @@ const memoResult = importAllResult.memo((onLoad) => {
     url = memo1.url;
   }
   if (null != url) {
-    let VIDEO_PLAYER_VIDEO = tmp3(9479).QuestAssetType.VIDEO_PLAYER_VIDEO_HLS;
+    let VIDEO_PLAYER_VIDEO = tmp3(9475).QuestAssetType.VIDEO_PLAYER_VIDEO_HLS;
   } else {
-    VIDEO_PLAYER_VIDEO = tmp3(9479).QuestAssetType.VIDEO_PLAYER_VIDEO;
+    VIDEO_PLAYER_VIDEO = tmp3(9475).QuestAssetType.VIDEO_PLAYER_VIDEO;
   }
   const tmp13 = orientation(obj.useState(questTaskDetails.targetSeconds), 2);
   first = tmp13[0];
@@ -383,7 +383,7 @@ const memoResult = importAllResult.memo((onLoad) => {
     };
   }, items2);
   obj1 = { duration: first, isQuestCompleted: tmp8, playerState: first1, questId: quest.id, videoSessionId: videoQuestModalContext.videoSessionId, videoAssetId: VIDEO_PLAYER_VIDEO, sourceQuestContent };
-  const tmp30 = ref1(14158)(obj1);
+  const tmp30 = ref1(14154)(obj1);
   ({ handleBufferAnalytics, handleEndAnalytics } = tmp30);
   handleErrorAnalytics = tmp30.handleErrorAnalytics;
   handleLoadAnalytics = tmp30.handleLoadAnalytics;
@@ -408,7 +408,7 @@ const memoResult = importAllResult.memo((onLoad) => {
     url1 = url2;
   }
   const tmp3Result2 = handleBufferAnalytics(4050);
-  const defaultWatchVideoTask = handleBufferAnalytics(6008).getDefaultWatchVideoTask(quest.config);
+  const defaultWatchVideoTask = handleBufferAnalytics(6006).getDefaultWatchVideoTask(quest.config);
   videoTitle = undefined;
   if (defaultWatchVideoTask != null) {
     videoTitle = defaultWatchVideoTask.messages.videoTitle;
@@ -698,7 +698,7 @@ const memoResult = importAllResult.memo((onLoad) => {
       callback2(current + 10);
     }
   }, items15);
-  const tmp3Result3 = handleBufferAnalytics(6008);
+  const tmp3Result3 = handleBufferAnalytics(6006);
   const callbackResult = callback(obj.useCallback(() => {
     let current = ref4.current;
     if (current == null) {
@@ -997,7 +997,7 @@ const memoResult = importAllResult.memo((onLoad) => {
     }
     obj7[3] = num6;
     obj6[3] = obj7;
-    items29[1] = targetSeconds(tmp3(14169).VideoQuestCaptions, obj6);
+    items29[1] = targetSeconds(tmp3(14165).VideoQuestCaptions, obj6);
     if (!tmp72) {
       items29[2] = tmp72;
       tmp80Result = !tmp39;
@@ -1029,7 +1029,7 @@ const memoResult = importAllResult.memo((onLoad) => {
             obj11[3] = tmp.controlButton;
             obj12 = { color: null };
             obj12[0] = tmp.iconDisabled.color;
-            obj11[4] = tmp80(tmp3(14048).TranscriptOutlineIcon, obj12);
+            obj11[4] = tmp80(tmp3(14052).TranscriptOutlineIcon, obj12);
             flag2 = tmp80(tmp3(4717).PressableOpacity, obj11);
           }
           items32[1] = flag2;
@@ -1048,7 +1048,7 @@ const memoResult = importAllResult.memo((onLoad) => {
           }
           const obj14 = { color: null };
           obj14[0] = color;
-          obj13[4] = tmp80(tmp3(14046).ClosedCaptionsOutlineIcon, obj14);
+          obj13[4] = tmp80(tmp3(14050).ClosedCaptionsOutlineIcon, obj14);
           tmp80(tmp3(4717).PressableOpacity, obj13);
         }
       }
@@ -1062,8 +1062,8 @@ const memoResult = importAllResult.memo((onLoad) => {
       obj16[3] = callbackResult;
       const obj17 = { color: null, width: 16, height: 16 };
       obj17[0] = tmp.icon.color;
-      obj16[4] = tmp80(tmp3(14051).SkipBackwardIcon, obj17);
-      const items34 = [tmp80(tmp3(14050).VideoQuestPlayerControlButton, obj16), , ];
+      obj16[4] = tmp80(tmp3(14055).SkipBackwardIcon, obj17);
+      const items34 = [tmp80(tmp3(14054).VideoQuestPlayerControlButton, obj16), , ];
       if (!tmp22) {
         if (first1 !== tmp17.ERRORED) {
           const t2 = tmp3(1236).t;
@@ -1075,14 +1075,14 @@ const memoResult = importAllResult.memo((onLoad) => {
         if (!tmp22) {
           if (first1 !== tmp17.ERRORED) {
             if (tmp70) {
-              let PauseIcon = tmp3(8127).PlayIcon;
+              let PauseIcon = tmp3(8124).PlayIcon;
             } else {
-              PauseIcon = tmp3(8129).PauseIcon;
+              PauseIcon = tmp3(8126).PauseIcon;
             }
             let tmp80Result2 = tmp80(PauseIcon, { size: "lg" });
           }
           obj18[3] = tmp80Result2;
-          items34[1] = tmp80(tmp3(14050).VideoQuestPlayerControlButton, obj18);
+          items34[1] = tmp80(tmp3(14054).VideoQuestPlayerControlButton, obj18);
           const obj19 = { disabled: null, accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
           obj19[0] = tmp51;
           const intl5 = tmp3(1236).intl;
@@ -1090,8 +1090,8 @@ const memoResult = importAllResult.memo((onLoad) => {
           obj19[3] = callbackResult1;
           const obj20 = { color: null, width: 16, height: 16 };
           obj20[0] = tmp.icon.color;
-          obj19[4] = tmp80(tmp3(14052).SkipForwardIcon, obj20);
-          items34[2] = tmp80(tmp3(14050).VideoQuestPlayerControlButton, obj19);
+          obj19[4] = tmp80(tmp3(14056).SkipForwardIcon, obj20);
+          items34[2] = tmp80(tmp3(14054).VideoQuestPlayerControlButton, obj19);
           obj15[1] = items34;
           items33[1] = tmp82(tmp81, obj15);
           let tmp80Result3 = tmp80Result4;
@@ -1106,7 +1106,7 @@ const memoResult = importAllResult.memo((onLoad) => {
             obj22[1] = intl6.string(tmp3(1236).t.vKZT5t);
             obj22[2] = callback8;
             obj22[3] = tmp.controlButton;
-            obj22[4] = tmp80(tmp3(14053).FullscreenEnterIcon, {});
+            obj22[4] = tmp80(tmp3(14057).FullscreenEnterIcon, {});
             obj21[1] = tmp80(tmp3(4717).PressableOpacity, obj22);
             tmp80Result3 = tmp80(tmp81, obj21);
           }
@@ -1127,7 +1127,7 @@ const memoResult = importAllResult.memo((onLoad) => {
           obj3[2] = tmp82(tmp83, obj4);
           return tmp80(tmp81, obj3);
         }
-        tmp80Result2 = tmp80(tmp3(9971).RetryIcon, { size: "lg" });
+        tmp80Result2 = tmp80(tmp3(9967).RetryIcon, { size: "lg" });
       }
       K0e7M9 = tmp3(1236).t.K0e7M9;
     } else {

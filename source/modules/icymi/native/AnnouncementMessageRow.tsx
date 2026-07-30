@@ -1,10 +1,10 @@
-// Module ID: 15359
-// Function ID: 15360
+// Module ID: 15353
+// Function ID: 15354
 // Name: AnnouncementMessageRowWrapper
-// Dependencies: [19, 17, 1372, 1862, 3826, 4385, 1874, 15360, 21, 15322, 712, 589, 5105, 8185, 9097, 9550, 15361, 8184, 15363, 1236, 11, 4717, 8316, 15365, 15369, 2]
+// Dependencies: [19, 17, 1372, 1862, 3826, 4385, 1874, 15354, 21, 15316, 712, 589, 5105, 8182, 9093, 9546, 15355, 8181, 15357, 1236, 11, 4717, 8313, 15359, 15363, 2]
 // Exports: default
 
-// Module 15359 (AnnouncementMessageRowWrapper)
+// Module 15353 (AnnouncementMessageRowWrapper)
 import importAllResult from "getSystemLocale";
 import { View } from "generateHydrationId";
 import ensureGuildLoaded from "ensureGuildLoaded";

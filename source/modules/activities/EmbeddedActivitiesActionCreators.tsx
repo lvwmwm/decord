@@ -1,7 +1,7 @@
 // Module ID: 5696
 // Function ID: 5697
 // Name: _runPrimaryAppCommandOrJoinEmbeddedActivity
-// Dependencies: [5, 5697, 4226, 4202, 4370, 4212, 1218, 1372, 1862, 3817, 1874, 4205, 1371, 4214, 5688, 676, 4215, 1369, 6021, 10505, 6039, 10617, 10637, 10621, 10648, 709, 10958, 10639, 4089, 4414, 5692, 8014, 11295, 1906, 11205, 10647, 8019, 698, 10643, 11137, 10641, 4528, 1236, 10466, 10654, 503, 4999, 3807, 10511, 4383, 530, 1351, 6693, 5713, 4199, 5967, 1360, 1358, 2]
+// Dependencies: [5, 5697, 4226, 4202, 4370, 4212, 1218, 1372, 1862, 3817, 1874, 4205, 1371, 4214, 5688, 676, 4215, 1369, 6019, 10501, 6037, 10613, 10633, 10617, 10644, 709, 10954, 10635, 4089, 4414, 5692, 8011, 11291, 1906, 11201, 10643, 8016, 698, 10639, 11133, 10637, 4528, 1236, 10462, 10650, 503, 4999, 3807, 10507, 4383, 530, 1351, 6690, 5713, 4199, 5965, 1360, 1358, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, fetchDeveloperApplications, fetchShelf, maybeDisconnectFromCurrentActivity, openActivityPopoutWindow, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPanelMode, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
 // Module 5696 (_runPrimaryAppCommandOrJoinEmbeddedActivity)
@@ -117,7 +117,7 @@ function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
                 let PRIVATE_CHANNEL;
                 c16 = 1;
                 application = 1;
-                return { value: "ct", done: null };
+                return { value: "ct", done: "Array" };
               }
             } else if (1 === tmp7) {
               if (applicationId === 1) {
@@ -229,12 +229,12 @@ function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
                     throwTypeErrorResult = currentUser;
                     throwTypeErrorResult = callback;
                     throwTypeErrorResult = dependencyMap;
-                    let PRIVATE_CHANNEL2 = callback(10648).EmbeddedActivityLocationKind.GUILD_CHANNEL;
+                    let PRIVATE_CHANNEL2 = callback(10644).EmbeddedActivityLocationKind.GUILD_CHANNEL;
                   } else {
                     throwTypeErrorResult = currentUser;
                     throwTypeErrorResult = callback;
                     throwTypeErrorResult = dependencyMap;
-                    PRIVATE_CHANNEL2 = callback(10648).EmbeddedActivityLocationKind.PRIVATE_CHANNEL;
+                    PRIVATE_CHANNEL2 = callback(10644).EmbeddedActivityLocationKind.PRIVATE_CHANNEL;
                   }
                   obj3[4] = PRIVATE_CHANNEL2;
                   obj3 = callback(outer1_2[23]).stashPendingFrameLaunch(throwTypeErrorResult, obj3);
@@ -346,7 +346,7 @@ function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
                 throwTypeErrorResult = closure_25;
                 throwTypeErrorResult = callback2;
                 throwTypeErrorResult = dependencyMap;
-                if (!(closure_25 instanceof callback2(10639))) {
+                if (!(closure_25 instanceof callback2(10635))) {
                   throwTypeErrorResult = c12;
                   throwTypeErrorResult = currentUser;
                   throwTypeErrorResult = closure_25;
@@ -415,7 +415,7 @@ function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
                   throwTypeErrorResult = dependencyMap;
                   throwTypeErrorResult = currentUser;
                   throwTypeErrorResult = c19;
-                  throwTypeErrorResult = callback2(10958);
+                  throwTypeErrorResult = callback2(10954);
                   if (dependencyMap) {
                     let JOIN = throwTypeErrorResult.LAUNCH;
                   } else {
@@ -542,8 +542,8 @@ function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
                     callback3();
                   }
                   if ("failure" === closure_23.result) {
-                    let tmp43 = callback2(10639);
-                    tmp43 = new tmp43(callback2(10639).Reasons.LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED, closure_23.reason);
+                    let tmp43 = callback2(10635);
+                    tmp43 = new tmp43(callback2(10635).Reasons.LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED, closure_23.reason);
                     throw tmp43;
                   }
                 }
@@ -580,8 +580,8 @@ function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
                     application = 3;
                     return { value: false, done: true };
                   } else {
-                    let tmp11 = callback2(10639);
-                    tmp11 = new tmp11(callback2(10639).Reasons.PRIMARY_APP_COMMAND_NOT_FOUND);
+                    let tmp11 = callback2(10635);
+                    tmp11 = new tmp11(callback2(10635).Reasons.PRIMARY_APP_COMMAND_NOT_FOUND);
                     throw tmp11;
                   }
                 }
@@ -695,7 +695,7 @@ function _maybeSendPrimaryAppCommand() {
               let currentUser2;
               store = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -712,13 +712,13 @@ function _maybeSendPrimaryAppCommand() {
               store = 3;
               c6 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = callback2(11295)(dependencyMap, callback);
+              obj2[0] = callback2(11291)(dependencyMap, callback);
               return obj2;
             }
           } else if (2 === tmp7) {
             v0 = 0;
             const message = c3;
-            if (message.message === callback(11295).NO_PRIMARY_APP_COMMAND_ERROR) {
+            if (message.message === callback(11291).NO_PRIMARY_APP_COMMAND_ERROR) {
               const obj3 = { result: "failure", reason: null };
               obj3[1] = constants.NO_PRIMARY_APP_COMMAND;
               c6 = 3;
@@ -794,7 +794,7 @@ function _maybeSendPrimaryAppCommand() {
                     }
                     currentUser2 = currentUser.getCurrentUser();
                     if (null != currentUser2) {
-                      let obj15 = callback(10647);
+                      let obj15 = callback(10643);
                       const obj10 = { applicationId: null, application: null, channel: null, currentEmbeddedApplication: null, embeddedActivitiesManager: null, user: null, onConfirmActivityLaunchChecksAlertOpen: null, shouldClosePopoutOnLeaveCurrentEmbeddedApplication: false };
                       obj10[0] = callback;
                       obj10[1] = currentEmbeddedActivity;
@@ -866,7 +866,7 @@ function _maybeSendPrimaryAppCommand() {
                 store = 6;
                 c6 = 1;
                 const obj16 = { value: null, done: false };
-                obj16[0] = callback(11205).installApplicationOnDemandIfNeeded(obj15);
+                obj16[0] = callback(11201).installApplicationOnDemandIfNeeded(obj15);
                 return obj16;
               }
             } else if (6 === tmp7) {
@@ -1010,7 +1010,7 @@ function _joinEmbeddedActivity() {
                 let obj20;
                 c4 = 1;
                 application = 1;
-                return { value: "ct", done: null };
+                return { value: "ct", done: "Array" };
               }
             } else if (1 === tmp5) {
               if (arg0 === 1) {
@@ -1043,7 +1043,7 @@ function _joinEmbeddedActivity() {
                   c4 = 2;
                   application = 1;
                   const obj4 = { value: null, done: false };
-                  obj4[0] = callback2(10643)(initialize, callback2);
+                  obj4[0] = callback2(10639)(initialize, callback2);
                   return obj4;
                 }
               }
@@ -1105,15 +1105,15 @@ function _joinEmbeddedActivity() {
                           obj10[3] = currentEmbeddedActivity2;
                           showResult = updateVoiceState;
                           obj10[4] = updateVoiceState;
-                          channel = callback(11137).getEmbeddedActivityLaunchability(obj10);
+                          channel = callback(11133).getEmbeddedActivityLaunchability(obj10);
                           showResult = channel;
                           showResult = callback;
                           showResult = dependencyMap;
-                          if (channel !== callback(11137).EmbeddedActivityLaunchability.CAN_LAUNCH) {
+                          if (channel !== callback(11133).EmbeddedActivityLaunchability.CAN_LAUNCH) {
                             createGuildRecordFromRust = constants.LAUNCHABILITY_CHECK_FAILED_OTHER;
-                            if (channel === callback(11137).EmbeddedActivityLaunchability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION) {
+                            if (channel === callback(11133).EmbeddedActivityLaunchability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION) {
                               createGuildRecordFromRust = constants.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION;
-                              let obj24 = callback(10641);
+                              let obj24 = callback(10637);
                               const result = obj24.showActivitiesInvalidPermissionsAlert();
                             } else {
                               showResult = dependencyMap;
@@ -1121,7 +1121,7 @@ function _joinEmbeddedActivity() {
                               showResult = channel;
                               showResult = callback;
                               showResult = dependencyMap;
-                              if (channel === callback(11137).EmbeddedActivityLaunchability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS) {
+                              if (channel === callback(11133).EmbeddedActivityLaunchability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS) {
                                 showResult = dependencyMap;
                                 showResult = c3;
                                 showResult = constants;
@@ -1165,7 +1165,7 @@ function _joinEmbeddedActivity() {
                               currentUser = application.getApplication(applicationId1);
                             }
                             if (c3) {
-                              let obj21 = callback(10647);
+                              let obj21 = callback(10643);
                               const obj12 = { applicationId: null, application: null, channel: null, currentEmbeddedApplication: null, embeddedActivitiesManager: null, user: null };
                               obj12[0] = callback;
                               obj12[1] = closure_8;
@@ -1180,7 +1180,7 @@ function _joinEmbeddedActivity() {
                               return obj13;
                             }
                           }
-                          const obj39 = callback(11137);
+                          const obj39 = callback(11133);
                         }
                       }
                     }
@@ -1278,7 +1278,7 @@ function _joinEmbeddedActivity() {
                 showResult = callback2;
                 showResult = dependencyMap;
                 showResult = sessionId;
-                updateVoiceState = callback2(10466)(sessionId.id);
+                updateVoiceState = callback2(10462)(sessionId.id);
                 showResult = obj20;
                 showResult = sessionId;
                 currentEmbeddedActivity = obj20.includes(sessionId.type);
@@ -1292,10 +1292,10 @@ function _joinEmbeddedActivity() {
                   c4 = 4;
                   application = 1;
                   const obj31 = { value: null, done: false };
-                  obj31[0] = callback2(10654)(obj30);
+                  obj31[0] = callback2(10650)(obj30);
                   return obj31;
                 } else {
-                  obj8 = callback(8014);
+                  obj8 = callback(8011);
                   const obj32 = { result: "failure", reason: null };
                   obj32[1] = constants.AIT_NOT_ENABLED_FOR_USER;
                   application = 3;
@@ -1368,7 +1368,7 @@ function stopEmbeddedActivity(showFeedback) {
             const participant = tmp2(4383).selectParticipant(embeddedActivityLocationChannelId, null);
             const tmp2Result = tmp2(4383);
           }
-          tmp6Result = tmp6(10511);
+          tmp6Result = tmp6(10507);
         }
       }
     }
@@ -1658,7 +1658,7 @@ function _fetchShelf() {
                 let getUncachedChannelPermissions;
                 c8 = 1;
                 c9 = 1;
-                return { value: "ct", done: null };
+                return { value: "ct", done: "Array" };
               }
             } else {
               if (1 === tmp7) {
@@ -1910,7 +1910,7 @@ function _sendEmbeddedActivityInvite() {
               let code;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -1922,7 +1922,7 @@ function _sendEmbeddedActivityInvite() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj2 = callback(6693);
+              let obj2 = callback(6690);
               obj2 = { target_type: null, target_application_id: null };
               obj2[0] = constants.EMBEDDED_APPLICATION;
               obj2[1] = dependencyMap;
@@ -2018,7 +2018,7 @@ function _sendEmbeddedActivityInviteUser() {
               let getParticipants;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -2030,7 +2030,7 @@ function _sendEmbeddedActivityInviteUser() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj4 = callback(6693);
+              let obj4 = callback(6690);
               let obj2 = { target_type: null, target_application_id: null };
               obj2[0] = constants.EMBEDDED_APPLICATION;
               obj2[1] = callback;
@@ -2354,20 +2354,20 @@ function _refreshProxyTicket() {
             }
             closure_4 = dependencyMap;
             if (null != closure_4) {
-              PRIVATE_CHANNEL = callback(10648).EmbeddedActivityLocationKind.GUILD_CHANNEL;
+              PRIVATE_CHANNEL = callback(10644).EmbeddedActivityLocationKind.GUILD_CHANNEL;
             } else {
-              PRIVATE_CHANNEL = callback(10648).EmbeddedActivityLocationKind.PRIVATE_CHANNEL;
+              PRIVATE_CHANNEL = callback(10644).EmbeddedActivityLocationKind.PRIVATE_CHANNEL;
             }
             let tmp36 = callback2(709);
             let dispatch = tmp36.dispatch;
             let obj4 = { type: "EMBEDDED_ACTIVITY_LAUNCH_FAIL", nonce: null, applicationId: null, channelId: null, guildId: null, locationKind: null, error: null };
-            obj4 = callback(6039);
+            obj4 = callback(6037);
             obj4[1] = obj4.createNonce();
             obj4[2] = callback;
             obj4[3] = callback2;
             obj4[4] = closure_4;
             obj4[5] = PRIVATE_CHANNEL;
-            if (!(getParticipants instanceof callback2(10639))) {
+            if (!(getParticipants instanceof callback2(10635))) {
               if (!(getParticipants instanceof callback2(4089))) {
                 if (!(getParticipants instanceof callback2(4414))) {
                   let tmp63 = new callback2(4089)(getParticipants);

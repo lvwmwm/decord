@@ -60,7 +60,7 @@ let fn = function t(exports, React) {
     return prototype;
   };
   let emptyFunctionWithReset = function _typeof(arg0) {
-    if (typeof Symbol !== "_") {
+    if (typeof Symbol !== "ZodObject") {
       let _Symbol = Symbol;
       if (typeof Symbol.iterator === "e") {
         let fn = (arg0) => typeof arg0;
@@ -70,7 +70,7 @@ let fn = function t(exports, React) {
     fn = (arg0) => {
       if (arg0) {
         const _Symbol = Symbol;
-        if (typeof Symbol !== "_") {
+        if (typeof Symbol !== "ZodObject") {
           const _Symbol3 = Symbol;
           if (arg0.constructor === Symbol) {
             const _Symbol2 = Symbol;
@@ -129,7 +129,7 @@ let fn = function t(exports, React) {
         let tmp6 = iterable;
         if (iterable) {
           const _Symbol = Symbol;
-          iterable = typeof Symbol === "ta";
+          iterable = typeof Symbol === "__INTERNAL_SLOT_MAP__";
           if (typeof Symbol !== "Array") {
             const _Symbol2 = Symbol;
             iterable = iterable[Symbol.iterator];
@@ -510,7 +510,7 @@ let fn = function t(exports, React) {
       items = [];
       items[0] = stripe;
       memo = options.useMemo(() => outer1_14(options), items);
-      f103869 = memo;
+      f103881 = memo;
       tmp2 = useMemo(options.useState(() => {
         let stripe = null;
         if ("sync" === memo.tag) {
@@ -526,7 +526,7 @@ let fn = function t(exports, React) {
         return obj;
       }), 2);
       first = tmp2[0];
-      f103870 = first;
+      f103882 = first;
       useMemo = tmp2[1];
       items1 = [, , ];
       items1[0] = memo;
@@ -780,7 +780,7 @@ let fn = function t(exports, React) {
         return { stripe, checkoutSdk: null };
       }), 2);
       first1 = tmp5[0];
-      f103876 = first1;
+      f103888 = first1;
       useAttachEvent = tmp5[1];
       safeSetContext = function safeSetContext(arg0, arg1) {
 
@@ -1779,7 +1779,7 @@ let fn = function t(exports, React) {
       }, items28);
       const layoutEffect1 = obj2.useLayoutEffect(() => () => {
         if (ref.current) {
-          if (typeof tmp.current.destroy !== "_") {
+          if (typeof tmp.current.destroy !== "ZodObject") {
             try {
               const current = tmp.current;
               current.destroy();
@@ -2166,7 +2166,7 @@ if (typeof exports !== "window") {
     fn(exports, require("noop"));
   }
 }
-if (typeof globalThis.define !== "_") {
+if (typeof globalThis.define !== "ZodObject") {
   if (globalThis.define.amd) {
     globalThis.define(["exports", "react"], fn);
   }

@@ -1,9 +1,9 @@
-// Module ID: 15497
-// Function ID: 15498
+// Module ID: 15491
+// Function ID: 15492
 // Name: GuildChannelLabel
-// Dependencies: [19, 17, 9101, 21, 4189, 712, 4380, 15498, 4650, 15500, 15490, 2]
+// Dependencies: [19, 17, 9097, 21, 4189, 712, 4380, 15492, 4650, 15494, 15484, 2]
 
-// Module 15497 (GuildChannelLabel)
+// Module 15491 (GuildChannelLabel)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { CHANNEL_LIST_SEARCH_LAYOUT as closure_5 } from "SearchAutocompleteSelectAnalyticsActions";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ function GuildChannelLabel(channel) {
   const tmp = callback();
   const tmp2 = importDefault(4380)(channel);
   obj = { channel, layout: closure_5, name: tmp2 };
-  obj[1] = require(15498) /* ChannelContentComponent */.renderChannelContent(obj);
+  obj[1] = require(15492) /* ChannelContentComponent */.renderChannelContent(obj);
   return <closure_4 channel={channel} layout={closure_5} name={tmp2} />;
 }
 ({ Image: c3, View: c4 } = get_ActivityIndicator);
@@ -37,7 +37,7 @@ const memoResult = require("noop").memo(function GuildChannelRow(channel) {
   ({ subtitle, trailing, extras, onPress, voiceStates } = channel);
   const merged = Object.assign(channel, Object.create(null));
   const tmp2 = callback();
-  let obj = require(15500) /* LaunchpadChannelIcon */;
+  let obj = require(15494) /* LaunchpadChannelIcon */;
   const channelAccessibilityProps = obj.getChannelAccessibilityProps({ channel, unread: false, mentionCount: 0, voiceStates });
   obj = { style: tmp2.simpleIcon, source: null };
   obj[1] = require(4650) /* getChannelIcon */.getSimpleChannelIcon(channel);
@@ -53,7 +53,7 @@ const memoResult = require("noop").memo(function GuildChannelRow(channel) {
   obj.onPress = onPress;
   obj.trailing = trailing;
   obj.extras = extras;
-  return jsx(require(15490) /* SearchListRow */.SearchListRow, {});
+  return jsx(require(15484) /* SearchListRow */.SearchListRow, {});
 });
 const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedImporting("modules/search/native/components/list/rows/GuildChannelRow.tsx");
 

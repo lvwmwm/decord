@@ -1,9 +1,9 @@
-// Module ID: 15441
-// Function ID: 15442
+// Module ID: 15435
+// Function ID: 15436
 // Name: items
-// Dependencies: [32, 19, 17, 1218, 4110, 1942, 1935, 1862, 3817, 1874, 8305, 676, 21, 6163, 4189, 712, 1480, 10207, 4379, 4028, 1236, 10202, 1581, 589, 6062, 8277, 9299, 15442, 6752, 8334, 5105, 8304, 11, 3902, 9239, 6676, 1297, 8369, 5501, 2]
+// Dependencies: [32, 19, 17, 1218, 4110, 1942, 1935, 1862, 3817, 1874, 8302, 676, 21, 6160, 4189, 712, 1480, 10203, 4379, 4028, 1236, 10198, 1581, 589, 6060, 8274, 9295, 15436, 6749, 8331, 5105, 8301, 11, 3902, 9235, 6673, 1297, 8366, 5501, 2]
 
-// Module 15441 (items)
+// Module 15435 (items)
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import importAllResult from "nameFromUser";
 import { View } from "RolePill";
@@ -101,7 +101,7 @@ let closure_20 = importAllResult.memo((guild) => {
     };
     obj[7] = start;
     obj[8] = end;
-    return closure_15(guildMember(10202), obj);
+    return closure_15(guildMember(10198), obj);
   }
   tmp = callback();
 });
@@ -292,12 +292,12 @@ const memoResult = importAllResult.memo(function GuildSettingsModalMembers(guild
           children(ref) {
             const merged = Object.assign(ref, Object.create(null));
             const obj = { source: null, accessibilityLabel: null, ref: null };
-            obj[0] = callback2(8334);
+            obj[0] = callback2(8331);
             const intl = callback(1236).intl;
             obj[1] = intl.string(callback(1236).t.ogxXGq);
             obj[2] = ref.ref;
             const merged1 = Object.assign(merged);
-            return callback3(callback(6752).HeaderActionButton, obj);
+            return callback3(callback(6749).HeaderActionButton, obj);
           }
         };
         return outer1_15(outer1_0(outer1_2[26]).ContextMenu, obj);

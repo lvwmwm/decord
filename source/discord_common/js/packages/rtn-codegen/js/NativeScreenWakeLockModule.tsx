@@ -1,9 +1,9 @@
-// Module ID: 10660
-// Function ID: 10661
+// Module ID: 10656
+// Function ID: 10657
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 10660 (enforcing)
+// Module 10656 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeScreenWakeLockModule");

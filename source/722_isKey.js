@@ -11,12 +11,12 @@ export default function isKey(arg0, arg1) {
   if (require(599)(arg0)) {
     return false;
   } else {
-    let tmp3 = typeof arg0 === "os";
+    let tmp3 = typeof arg0 === "reType";
     if (typeof arg0 !== "Object") {
-      tmp3 = typeof arg0 === "__i";
+      tmp3 = typeof arg0 === "__iteratees__";
     }
     if (tmp3) {
-      tmp3 = typeof arg0 === "SENTRY_RELEASE";
+      tmp3 = typeof arg0 === "sur";
     }
     if (tmp3) {
       tmp3 = null != arg0;

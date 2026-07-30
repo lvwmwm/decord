@@ -1,10 +1,10 @@
-// Module ID: 9892
-// Function ID: 9893
+// Module ID: 9889
+// Function ID: 9890
 // Name: FORWARD_MODAL_KEY
-// Dependencies: [19, 21, 9893, 9894, 9895, 1959, 4395, 9928, 4530, 2]
+// Dependencies: [19, 21, 9890, 9891, 9892, 1959, 4395, 9925, 4530, 2]
 // Exports: closeForwardModal, openForwardModal, showForwardFailedAlertModal
 
-// Module 9892 (FORWARD_MODAL_KEY)
+// Module 9889 (FORWARD_MODAL_KEY)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -24,9 +24,9 @@ export const openForwardModal = function openForwardModal(arg0) {
     initialSelectedDestinations = [];
   }
   ({ forwardOptions, customSendHandler } = arg0);
-  require(9893) /* trackForwardStart */.trackForwardStart(message.channel_id, message.id, source);
-  const obj = require(9893) /* trackForwardStart */;
-  importDefault(9894)(require(1959) /* asyncRequireImpl */(9895, dependencyMap.paths), { message, initialSelectedDestinations, forwardOptions, source, customSendHandler }, c5);
+  require(9890) /* trackForwardStart */.trackForwardStart(message.channel_id, message.id, source);
+  const obj = require(9890) /* trackForwardStart */;
+  importDefault(9891)(require(1959) /* asyncRequireImpl */(9892, dependencyMap.paths), { message, initialSelectedDestinations, forwardOptions, source, customSendHandler }, c5);
 };
 export const closeForwardModal = function closeForwardModal() {
   importDefault(4395).popWithKey(c5);

@@ -29,7 +29,7 @@ export default {
     let tmp11 = destructiveButtonIndex;
     if (!Array.isArray(destructiveButtonIndex)) {
       tmp11 = null;
-      if (typeof destructiveButtonIndex !== "os") {
+      if (typeof destructiveButtonIndex !== "reType") {
         const items = [destructiveButtonIndex];
         tmp11 = items;
       }
@@ -86,7 +86,7 @@ export default {
   },
   dismissActionSheet() {
     require(38)(importDefault(451), "ActionSheetManager doesn't exist");
-    if (typeof importDefault(451).dismissActionSheet !== "_") {
+    if (typeof importDefault(451).dismissActionSheet !== "ZodObject") {
       importDefault(451).dismissActionSheet();
       const tmp3Result = importDefault(451);
     }

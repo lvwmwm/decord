@@ -2,7 +2,7 @@
 // Function ID: 3869
 // Name: isFeatureAgeGated
 // Dependencies: [3869, 589, 2]
-// Exports: hasAgeGatedFeatures, hasTeenDefaults, isFeatureAgeGated, isSettingTeenByDefault, useHasAgeGatedFeatures, useHasTeenDefaults, useIsFeatureAgeGated, useIsSettingTeenByDefault
+// Exports: hasAgeGatedFeatures, hasTeenDefaults, isFeatureAgeGated, isSettingTeenByDefault, shouldCollectAppStoreSignal, useHasAgeGatedFeatures, useHasTeenDefaults, useIsFeatureAgeGated, useIsSettingTeenByDefault
 
 // Module 3868 (isFeatureAgeGated)
 import getRegionalFeatureConfig from "getRegionalFeatureConfig";
@@ -39,4 +39,7 @@ export const hasTeenDefaults = function hasTeenDefaults() {
 export const useHasTeenDefaults = function useHasTeenDefaults() {
   const items = [getRegionalFeatureConfig];
   return require(589) /* initialize */.useStateFromStores(items, () => getRegionalFeatureConfig.hasTeenDefaults());
+};
+export const shouldCollectAppStoreSignal = function shouldCollectAppStoreSignal() {
+  return getRegionalFeatureConfig.shouldCollectAppStoreSignal();
 };

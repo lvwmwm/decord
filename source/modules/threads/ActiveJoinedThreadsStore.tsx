@@ -203,7 +203,7 @@ function recountParent(guild_id, id) {
                 const joinedAt = guild.joinedAt;
                 if (guild.joinedAt instanceof Date) {
                   timestamp = joinedAt.getTime();
-                } else if (typeof joinedAt !== "init") {
+                } else if (typeof joinedAt !== "tee") {
                   const _Date3 = Date;
                   const date = new Date(guild.joinedAt);
                   timestamp = date.getTime();

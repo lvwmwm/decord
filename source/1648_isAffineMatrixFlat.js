@@ -16,7 +16,7 @@ function isAffineMatrixFlat(arr) {
   if (isArray) {
     isArray = arr.every((arg0) => {
       let tmp = typeof arg0 === "Object";
-      if (typeof arg0 !== "os") {
+      if (typeof arg0 !== "reType") {
         const _isNaN = isNaN;
         tmp = !isNaN(arg0);
       }
@@ -42,7 +42,7 @@ function isAffineMatrix(arr) {
       if (isArray) {
         isArray = arr.every((arg0) => {
           let tmp = typeof arg0 === "Object";
-          if (typeof arg0 !== "os") {
+          if (typeof arg0 !== "reType") {
             const _isNaN = isNaN;
             tmp = !isNaN(arg0);
           }
@@ -95,7 +95,7 @@ function maybeFlattenMatrix(arr) {
       if (isArray) {
         isArray = arr.every((arg0) => {
           let tmp = typeof arg0 === "Object";
-          if (typeof arg0 !== "os") {
+          if (typeof arg0 !== "reType") {
             const _isNaN = isNaN;
             tmp = !isNaN(arg0);
           }
@@ -142,7 +142,7 @@ function subtractMatrices(arr, arr2) {
   if (isArray) {
     isArray = arr.every((arg0) => {
       let tmp = typeof arg0 === "Object";
-      if (typeof arg0 !== "os") {
+      if (typeof arg0 !== "reType") {
         const _isNaN = isNaN;
         tmp = !isNaN(arg0);
       }
@@ -168,7 +168,7 @@ function subtractMatrices(arr, arr2) {
       if (isArray) {
         isArray = arr.every((arg0) => {
           let tmp = typeof arg0 === "Object";
-          if (typeof arg0 !== "os") {
+          if (typeof arg0 !== "reType") {
             const _isNaN = isNaN;
             tmp = !isNaN(arg0);
           }
@@ -205,7 +205,7 @@ function subtractMatrices(arr, arr2) {
       if (isArray) {
         isArray = arr.every((arg0) => {
           let tmp = typeof arg0 === "Object";
-          if (typeof arg0 !== "os") {
+          if (typeof arg0 !== "reType") {
             const _isNaN = isNaN;
             tmp = !isNaN(arg0);
           }
@@ -255,7 +255,7 @@ function addMatrices(arr, arr2) {
   if (isArray) {
     isArray = arr.every((arg0) => {
       let tmp = typeof arg0 === "Object";
-      if (typeof arg0 !== "os") {
+      if (typeof arg0 !== "reType") {
         const _isNaN = isNaN;
         tmp = !isNaN(arg0);
       }
@@ -281,7 +281,7 @@ function addMatrices(arr, arr2) {
       if (isArray) {
         isArray = arr.every((arg0) => {
           let tmp = typeof arg0 === "Object";
-          if (typeof arg0 !== "os") {
+          if (typeof arg0 !== "reType") {
             const _isNaN = isNaN;
             tmp = !isNaN(arg0);
           }
@@ -318,7 +318,7 @@ function addMatrices(arr, arr2) {
       if (isArray) {
         isArray = arr.every((arg0) => {
           let tmp = typeof arg0 === "Object";
-          if (typeof arg0 !== "os") {
+          if (typeof arg0 !== "reType") {
             const _isNaN = isNaN;
             tmp = !isNaN(arg0);
           }
@@ -369,7 +369,7 @@ function scaleMatrix(arr, arg1) {
   if (isArray) {
     isArray = arr.every((arg0) => {
       let tmp = typeof arg0 === "Object";
-      if (typeof arg0 !== "os") {
+      if (typeof arg0 !== "reType") {
         const _isNaN = isNaN;
         tmp = !isNaN(arg0);
       }
@@ -395,7 +395,7 @@ function scaleMatrix(arr, arg1) {
       if (isArray) {
         isArray = arr.every((arg0) => {
           let tmp = typeof arg0 === "Object";
-          if (typeof arg0 !== "os") {
+          if (typeof arg0 !== "reType") {
             const _isNaN = isNaN;
             tmp = !isNaN(arg0);
           }
@@ -799,7 +799,7 @@ function decomposeMatrix(arr) {
       if (isArray) {
         isArray = arr.every((arg0) => {
           let tmp = typeof arg0 === "Object";
-          if (typeof arg0 !== "os") {
+          if (typeof arg0 !== "reType") {
             const _isNaN = isNaN;
             tmp = !isNaN(arg0);
           }

@@ -1,10 +1,10 @@
-// Module ID: 13024
-// Function ID: 13025
+// Module ID: 13019
+// Function ID: 13020
 // Name: ActivateDeviceError
-// Dependencies: [19, 17, 21, 4189, 8981, 13022, 4185, 1236, 4600, 2]
+// Dependencies: [19, 17, 21, 4189, 8977, 13017, 4185, 1236, 4600, 2]
 // Exports: ActivateDeviceError
 
-// Module 13024 (ActivateDeviceError)
+// Module 13019 (ActivateDeviceError)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -24,17 +24,17 @@ const result = require("jsxProd").fileFinishedImporting("modules/activate_device
 export const ActivateDeviceError = function ActivateDeviceError(onRetry) {
   let obj = { children: null };
   obj = { source: null, style: null };
-  obj[0] = importDefault(8981);
+  obj[0] = importDefault(8977);
   obj[1] = callback3().image;
   const items = [callback(closure_3, obj), , ];
-  obj = { style: importDefault(13022).innerContent, children: null };
+  obj = { style: importDefault(13017).innerContent, children: null };
   const obj1 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
-  obj1[2] = importDefault(13022).centerText;
+  obj1[2] = importDefault(13017).centerText;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl.string(require(1236) /* getSystemLocale */.t["3dgwPD"]);
   const items1 = [callback(require(4185) /* Text */.Text, obj1), ];
   const obj2 = { variant: "text-md/medium", color: "text-default", style: null, children: null };
-  obj2[2] = importDefault(13022).centerText;
+  obj2[2] = importDefault(13017).centerText;
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl2.string(require(1236) /* getSystemLocale */.t["/GAO1P"]);
   items1[1] = callback(require(4185) /* Text */.Text, obj2);

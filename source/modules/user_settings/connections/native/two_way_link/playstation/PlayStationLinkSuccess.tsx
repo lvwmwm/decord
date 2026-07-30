@@ -1,10 +1,10 @@
-// Module ID: 8976
-// Function ID: 8977
+// Module ID: 8972
+// Function ID: 8973
 // Name: PlayStationLinkSuccess
-// Dependencies: [19, 17, 21, 4189, 8938, 8977, 4185, 1236, 5177, 4600, 2]
+// Dependencies: [19, 17, 21, 4189, 8934, 8973, 4185, 1236, 5177, 4600, 2]
 // Exports: PlayStationLinkSuccess
 
-// Module 8976 (PlayStationLinkSuccess)
+// Module 8972 (PlayStationLinkSuccess)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ let closure_8 = createCacheKey.createStyles({ image: { width: 124, height: 160, 
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkSuccess.tsx");
 
 export const PlayStationLinkSuccess = function PlayStationLinkSuccess(onClose) {
-  let obj = require(8938) /* styles */;
+  let obj = require(8934) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   obj = { style: twoWayLinkStyles.container, children: null };
   obj = { style: twoWayLinkStyles.content, children: null };

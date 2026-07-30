@@ -1,10 +1,10 @@
-// Module ID: 11080
-// Function ID: 11081
+// Module ID: 11076
+// Function ID: 11077
 // Name: ClassificationEvidence
-// Dependencies: [19, 17, 21, 4189, 1297, 712, 4185, 1236, 11081, 2]
+// Dependencies: [19, 17, 21, 4189, 1297, 712, 4185, 1236, 11077, 2]
 // Exports: default
 
-// Module 11080 (ClassificationEvidence)
+// Module 11076 (ClassificationEvidence)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -41,7 +41,7 @@ export default function ClassificationEvidence(flaggedContent) {
     obj[0] = items1;
     const obj1 = { flaggedContent: null };
     obj1[0] = flaggedContent;
-    obj[1] = callback(importDefault(11081), obj1);
+    obj[1] = callback(importDefault(11077), obj1);
     items[1] = callback(View, obj);
     obj[1] = items;
     tmp2 = callback2(View, obj);

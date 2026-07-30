@@ -1,10 +1,10 @@
-// Module ID: 7028
-// Function ID: 7029
+// Module ID: 7025
+// Function ID: 7026
 // Name: FamilyShieldSpotIllustration
-// Dependencies: [21, 5141, 7029, 2]
+// Dependencies: [21, 5141, 7026, 2]
 // Exports: FamilyShieldSpotIllustration
 
-// Module 7028 (FamilyShieldSpotIllustration)
+// Module 7025 (FamilyShieldSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/FamilyShieldSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const FamilyShieldSpotIllustration = function FamilyShieldSpotIllustratio
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7029);
+  obj[0] = importDefault(7026);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

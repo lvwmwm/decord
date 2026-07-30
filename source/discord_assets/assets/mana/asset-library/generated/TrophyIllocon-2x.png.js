@@ -1,9 +1,9 @@
-// Module ID: 7583
-// Function ID: 7584
+// Module ID: 7580
+// Function ID: 7581
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7583 (metadata)
+// Module 7580 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TrophyIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/9e7150ad029fe7b249f572738a385935ffd02f3b809b9244ce0b166ca82d3ee7.png";

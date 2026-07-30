@@ -1,9 +1,9 @@
-// Module ID: 13027
-// Function ID: 13028
+// Module ID: 13022
+// Function ID: 13023
 // Name: GuildSettingsPickerBottomSheet
-// Dependencies: [19, 17, 21, 4189, 13028, 5243, 5242, 4185, 1297, 13032, 4157, 4600, 38, 8304, 2]
+// Dependencies: [19, 17, 21, 4189, 13023, 5243, 5242, 4185, 1297, 13027, 4157, 4600, 38, 8301, 2]
 
-// Module 13027 (GuildSettingsPickerBottomSheet)
+// Module 13022 (GuildSettingsPickerBottomSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

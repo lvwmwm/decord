@@ -1,10 +1,10 @@
-// Module ID: 15498
-// Function ID: 15499
+// Module ID: 15492
+// Function ID: 15493
 // Name: ChannelContentComponent
-// Dependencies: [19, 17, 10284, 4386, 21, 4189, 500, 10285, 4680, 15499, 4709, 7629, 15106, 4185, 2]
+// Dependencies: [19, 17, 10280, 4386, 21, 4189, 500, 10281, 4680, 15493, 4709, 7626, 15100, 4185, 2]
 // Exports: renderChannelContent
 
-// Module 15498 (ChannelContentComponent)
+// Module 15492 (ChannelContentComponent)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { UnreadSetting } from "ReadStateTypes";
@@ -35,7 +35,7 @@ function ChannelContentComponent(arg0) {
   ({ subtitle, resolvedUnreadSetting, locked, lastMessageTimestampString, channel, layout, mentionCount, mentionBadge, isSubscriptionGated } = arg0);
   ({ name, unread, muted, connected, needSubscriptionToAccess } = arg0);
   const tmp = createCacheKey();
-  let obj = require(10285) /* getLayoutStyles */;
+  let obj = require(10281) /* getLayoutStyles */;
   let tmp10Result = null != channel;
   const layoutStyles = obj.getLayoutStyles(layout);
   if (tmp10Result) {
@@ -74,7 +74,7 @@ function ChannelContentComponent(arg0) {
   obj3[3] = resolvedUnreadSetting;
   obj3[4] = connected;
   obj3[5] = layout;
-  const items1 = [closure_6(importDefault(15499), obj3), ];
+  const items1 = [closure_6(importDefault(15493), obj3), ];
   let tmp12Result = tmp10Result;
   if (!tmp10Result) {
     tmp12Result = isNSFWResult;
@@ -102,13 +102,13 @@ function ChannelContentComponent(arg0) {
     if (isNSFWResult) {
       const obj7 = { size: "xxs", color: "icon-muted", style: null };
       obj7[2] = tmp.channelTraitIcon;
-      isNSFWResult = tmp10(tmp2(7629).WarningIcon, obj7);
+      isNSFWResult = tmp10(tmp2(7626).WarningIcon, obj7);
     }
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj8 = { locked: null, isInMainTabsExperiment: true };
       obj8[0] = needSubscriptionToAccess;
-      isSubscriptionGated = tmp10(importDefault(15106), obj8);
+      isSubscriptionGated = tmp10(importDefault(15100), obj8);
     }
     items3[2] = isSubscriptionGated;
     obj4[1] = items3;

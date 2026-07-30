@@ -1,7 +1,7 @@
 // Module ID: 8591
 // Function ID: 8592
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 8547, 8570]
+// Dependencies: [41, 42, 93, 95, 98, 8544, 8567]
 
 // Module 8591 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -9,7 +9,7 @@ import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
 
-const FeImage = arg1;
+const FeSpecularLighting = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeImage {
+class FeSpecularLighting {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeImage);
+    tmp = _isNativeReflectConstruct(this, FeSpecularLighting);
     tmp2 = __esModule;
-    obj = __esModule(FeImage);
+    obj = __esModule(FeSpecularLighting);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -49,17 +49,17 @@ class FeImage {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeImage, require("_isNativeReflectConstruct"));
+require("_inherits")(FeSpecularLighting, require("_isNativeReflectConstruct"));
 let obj = {
   key: "render",
   value: function render() {
-    const result = FeImage(8547).warnUnimplementedFilter();
+    const result = FeSpecularLighting(8544).warnUnimplementedFilter();
     return null;
   }
 };
 const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeImage, items);
-importDefaultResultResult.displayName = "FeImage";
+const importDefaultResultResult = importDefaultResult(FeSpecularLighting, items);
+importDefaultResultResult.displayName = "FeSpecularLighting";
 obj = {};
 const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
 importDefaultResultResult.defaultProps = obj;

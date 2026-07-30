@@ -1,10 +1,10 @@
-// Module ID: 14072
-// Function ID: 14073
+// Module ID: 14068
+// Function ID: 14069
 // Name: BountiesModalEndedCtaButtons
-// Dependencies: [21, 4189, 712, 10496, 4050, 4190, 4193, 14067, 4600, 10498, 6013, 5038, 6012, 1236, 2]
+// Dependencies: [21, 4189, 712, 10492, 4050, 4190, 4193, 14063, 4600, 10494, 6011, 5038, 6010, 1236, 2]
 // Exports: default
 
-// Module 14072 (BountiesModalEndedCtaButtons)
+// Module 14068 (BountiesModalEndedCtaButtons)
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
 
@@ -34,7 +34,7 @@ export default function BountiesModalEndedCtaButtons(bounty) {
     flag = false;
   }
   let callback;
-  let obj = bounty(10496);
+  let obj = bounty(10492);
   callback = obj.useGetQuestImpressionId();
   let obj1 = bounty(4050);
   const fn = function y() {
@@ -51,7 +51,7 @@ export default function BountiesModalEndedCtaButtons(bounty) {
   fn.__workletHash = 11417131685254;
   fn.__initData = closure_6;
   const animatedStyle = obj1.useAnimatedStyle(fn);
-  bounty(14067);
+  bounty(14063);
   if (visible) {
     obj = { style: null, children: null };
     const items = [tmp.container, animatedStyle];

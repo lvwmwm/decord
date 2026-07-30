@@ -1,10 +1,10 @@
-// Module ID: 14312
-// Function ID: 14313
+// Module ID: 14308
+// Function ID: 14309
 // Name: HAPPENING_NOW_CARD_MARGIN_RIGHT
-// Dependencies: [19, 17, 14311, 21, 4189, 712, 6561, 1348, 4036, 5222, 4185, 2]
+// Dependencies: [19, 17, 14307, 21, 4189, 712, 6558, 1348, 4036, 5222, 4185, 2]
 // Exports: HappeningNowCardHeader, HappeningNowCardSubtitle, default
 
-// Module 14312 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
+// Module 14308 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
 import "noop";
 import { View } from "get ActivityIndicator";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
@@ -109,10 +109,10 @@ export default function HappeningNowCard(IconComponent) {
   if (panelVariant == null) {
     panelVariant = false;
   }
-  const tmp5Result = closure_21(width, panelVariant, importDefault(6561)(), tmp4);
+  const tmp5Result = closure_21(width, panelVariant, importDefault(6558)(), tmp4);
   IconComponent = IconComponent.IconComponent;
   const tmp = importDefault;
-  const tmp3 = importDefault(6561)();
+  const tmp3 = importDefault(6558)();
   const tmp5 = closure_21;
   ({ accessibilityLabel, accessibilityHint } = IconComponent);
   let obj = { variant: "secondary", style: items, onPress: IconComponent.onPress, border: "faint", shadow: null, onLongPress: null, disabled: null, accessibilityLabel: null, accessibilityHint: null, children: null };

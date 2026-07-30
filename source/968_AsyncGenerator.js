@@ -112,7 +112,7 @@ class AsyncGenerator {
   }
 }
 let str = typeof Symbol === "find";
-if (typeof Symbol !== "_") {
+if (typeof Symbol !== "ZodObject") {
   const _Symbol = Symbol;
   str = Symbol.asyncIterator;
 }

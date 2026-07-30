@@ -1,10 +1,10 @@
-// Module ID: 11971
-// Function ID: 11972
+// Module ID: 11965
+// Function ID: 11966
 // Name: ClearInputButton
-// Dependencies: [32, 19, 17, 1874, 11972, 676, 1877, 21, 4189, 712, 4717, 1236, 1297, 8998, 11973, 698, 8080, 589, 11974, 11975, 4035, 11977, 4596, 9336, 5215, 9848, 9107, 4048, 11978, 9118, 5143, 4185, 9085, 7643, 5554, 5220, 4157, 11981, 1959, 11983, 4148, 501, 1595, 4395, 5570, 2]
+// Dependencies: [32, 19, 17, 1874, 11966, 676, 1877, 21, 4189, 712, 4717, 1236, 1297, 8994, 11967, 698, 8077, 589, 11968, 11969, 4035, 11971, 4596, 9332, 5215, 9845, 9103, 4048, 11972, 9114, 5143, 4185, 9081, 7640, 5554, 5220, 4157, 11975, 1959, 11977, 4148, 501, 1595, 4395, 5570, 2]
 // Exports: default
 
-// Module 11971 (ClearInputButton)
+// Module 11965 (ClearInputButton)
 import ActivityEmoji from "ActivityEmoji";
 import setCustomStatus from "setCustomStatus";
 import get_ActivityIndicator from "initialize";
@@ -31,7 +31,7 @@ function ClearInputButton(onPress) {
   obj[3] = onPress.onPress;
   obj[4] = { top: 8, bottom: 8, right: 8 };
   obj = { source: null, style: null, size: null };
-  obj[0] = importDefault(8998);
+  obj[0] = importDefault(8994);
   obj[1] = createCacheKey().closeIcon;
   obj[2] = require(1297) /* Button */.Icon.Sizes.SMALL;
   obj[5] = callback(require(1297) /* Button */.Icon, obj);
@@ -374,7 +374,7 @@ export default function EditCustomStatusWithPreviewModal(analyticsLocations) {
       const obj = { title: null };
       const intl = callback(1236).intl;
       obj[0] = intl.string(callback(1236).t.Iuzg8R);
-      return callback3(callback(9118).GenericHeaderTitle, obj);
+      return callback3(callback(9114).GenericHeaderTitle, obj);
     };
     obj[2] = analyticsLocations(outer1_2[30]).getHeaderCloseButton(_prompt(outer1_2[43]).pop);
     obj[4] = function render(arg0, navigation) {

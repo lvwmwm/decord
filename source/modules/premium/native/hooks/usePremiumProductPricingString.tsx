@@ -1,10 +1,10 @@
-// Module ID: 9709
-// Function ID: 9710
+// Module ID: 9706
+// Function ID: 9707
 // Name: usePremiumProductPricingString
 // Dependencies: [5672, 1876, 3835, 5675, 589, 2]
 // Exports: default
 
-// Module 9709 (usePremiumProductPricingString)
+// Module 9706 (usePremiumProductPricingString)
 import updateProduct from "updateProduct";
 import { PRICE_PLACEHOLDER } from "GuildFeatures";
 

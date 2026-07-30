@@ -133,7 +133,7 @@ const items = [
         nativeID = currentProps.nativeID;
       }
       let str = "";
-      if (typeof nativeID !== "init") {
+      if (typeof nativeID !== "tee") {
         str = nativeID;
       }
       return str;

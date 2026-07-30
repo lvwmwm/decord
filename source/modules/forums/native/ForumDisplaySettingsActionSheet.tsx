@@ -1,10 +1,10 @@
-// Module ID: 11866
-// Function ID: 11867
+// Module ID: 11862
+// Function ID: 11863
 // Name: ForumDisplaySettingsActionSheet
-// Dependencies: [32, 19, 1372, 11178, 21, 1236, 1381, 1382, 1383, 589, 4616, 6078, 5551, 5242, 8254, 5245, 4598, 712, 7655, 7654, 2]
+// Dependencies: [32, 19, 1372, 11174, 21, 1236, 1381, 1382, 1383, 589, 4616, 6076, 5551, 5242, 8251, 5245, 4598, 712, 7652, 7651, 2]
 // Exports: default
 
-// Module 11866 (ForumDisplaySettingsActionSheet)
+// Module 11862 (ForumDisplaySettingsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import TableRadioRow from "TableRadioRow";
 import ensureGuildLoaded from "ensureGuildLoaded";

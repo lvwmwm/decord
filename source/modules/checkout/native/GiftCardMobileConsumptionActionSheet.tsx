@@ -1,10 +1,10 @@
-// Module ID: 12489
-// Function ID: 12490
+// Module ID: 12483
+// Function ID: 12484
 // Name: GiftCardMobileConsumptionActionSheet
-// Dependencies: [19, 17, 1369, 21, 4189, 712, 1581, 4157, 5243, 4598, 6785, 4185, 1236, 2027, 4600, 2]
+// Dependencies: [19, 17, 1369, 21, 4189, 712, 1581, 4157, 5243, 4598, 6782, 4185, 1236, 2027, 4600, 2]
 // Exports: default
 
-// Module 12489 (GiftCardMobileConsumptionActionSheet)
+// Module 12483 (GiftCardMobileConsumptionActionSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -64,7 +64,7 @@ export default function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
   items2 = [tmp.container, { paddingBottom: importDefault(1581)().bottom }];
   obj = { spacing: null, children: null };
   obj[0] = importDefault(712).space.PX_16;
-  const items3 = [callback(View, { style: tmp.illustration, children: callback(markAsDismissed(6785).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) }), , ];
+  const items3 = [callback(View, { style: tmp.illustration, children: callback(markAsDismissed(6782).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) }), , ];
   const obj2 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: null };
   const intl = markAsDismissed(1236).intl;
   obj2[3] = intl.string(importDefault(2027).V3DI1E);

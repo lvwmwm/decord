@@ -1,10 +1,10 @@
-// Module ID: 6754
-// Function ID: 6755
+// Module ID: 6751
+// Function ID: 6752
 // Name: requestAgeVerification
-// Dependencies: [5, 1218, 6748, 676, 6755, 530, 709, 2]
+// Dependencies: [5, 1218, 6745, 676, 6752, 530, 709, 2]
 // Exports: getAgeVerificationMethods, registerIncodeInterview, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 6754 (requestAgeVerification)
+// Module 6751 (requestAgeVerification)
 import sendRequest from "sendRequest";
 import fetchFingerprint from "fetchFingerprint";
 import { VerificationVendorName } from "set";
@@ -65,7 +65,7 @@ function _requestAgeVerification() {
               ({ method: c0, classificationId: c1, vendor: c2 } = callback);
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -384,7 +384,7 @@ function _initiateSuspendedUserAgeVerification() {
               table = undefined;
               c3 = 1;
               suspendedUserToken = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -557,7 +557,7 @@ function _requestIncodeSessionBootstrap() {
               }
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

@@ -1,10 +1,10 @@
-// Module ID: 13837
-// Function ID: 13838
+// Module ID: 13832
+// Function ID: 13833
 // Name: BlockedUserRow
-// Dependencies: [19, 1874, 21, 8918, 5515, 5220, 1297, 1236, 8359, 4600, 589, 2]
+// Dependencies: [19, 1874, 21, 8914, 5515, 5220, 1297, 1236, 8356, 4600, 589, 2]
 // Exports: default
 
-// Module 13837 (BlockedUserRow)
+// Module 13832 (BlockedUserRow)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
@@ -15,9 +15,9 @@ function BlockedUserRow(userRecord) {
   let analyticsLocations;
   analyticsLocations = analyticsLocations(5515)().analyticsLocations;
   let obj = { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null };
-  obj = { user: userRecord, guildId: "Array", size: 2086900762484230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  obj = { user: userRecord, guildId: "Array", size: -1 };
   obj[2] = userRecord(1297).AvatarSizes.REFRESH_MEDIUM_32;
-  obj[0] = jsx(userRecord(1297).Avatar, { user: userRecord, guildId: "Array", size: 2086900762484230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+  obj[0] = jsx(userRecord(1297).Avatar, { user: userRecord, guildId: "Array", size: -1 });
   let tmp4 = null != userRecord;
   if (tmp4) {
     let username = userRecord.globalName;

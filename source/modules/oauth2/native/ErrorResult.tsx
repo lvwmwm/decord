@@ -1,10 +1,10 @@
-// Module ID: 8960
-// Function ID: 8961
+// Module ID: 8956
+// Function ID: 8957
 // Name: error
-// Dependencies: [19, 17, 21, 4189, 712, 5177, 8961, 4185, 1236, 4600, 4395, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5177, 8957, 4185, 1236, 4600, 4395, 2]
 // Exports: default
 
-// Module 8960 (error)
+// Module 8956 (error)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ export default function ErrorResult(error) {
   let obj = { bottom: true, style: tmp.container, children: null };
   obj = { style: tmp.inner, children: null };
   obj = { source: null, style: null };
-  obj[0] = importDefault(8961);
+  obj[0] = importDefault(8957);
   obj[1] = tmp.image;
   const items = [callback(closure_3, obj), ];
   const obj1 = { style: tmp.text, variant: "text-md/medium", children: null };

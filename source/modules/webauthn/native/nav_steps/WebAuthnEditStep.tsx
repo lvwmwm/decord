@@ -1,10 +1,10 @@
-// Module ID: 13768
-// Function ID: 13769
+// Module ID: 13763
+// Function ID: 13764
 // Name: EditCredentialModal
-// Dependencies: [32, 19, 21, 4189, 712, 1480, 5143, 7634, 1236, 1297, 4600, 5645, 3890, 9690, 4150, 2]
+// Dependencies: [32, 19, 21, 4189, 712, 1480, 5143, 7631, 1236, 1297, 4600, 5645, 3890, 9687, 4150, 2]
 // Exports: default
 
-// Module 13768 (EditCredentialModal)
+// Module 13763 (EditCredentialModal)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import jsxProd from "jsxProd";
@@ -53,7 +53,7 @@ export default function EditCredentialModal(credential) {
   obj[6] = credential.name;
   obj[7] = tmp6;
   obj[8] = credential(1297).ClearButtonVisibility.WITH_CONTENT;
-  const items1 = [callback(credential(7634).FormInput, obj), callback(credential(7634).FormDivider, {}), ];
+  const items1 = [callback(credential(7631).FormInput, obj), callback(credential(7631).FormDivider, {}), ];
   const obj1 = {
     onPress() {
       _undefined(true);
@@ -101,5 +101,5 @@ export default function EditCredentialModal(credential) {
   obj1[4] = intl2.string(credential(1236).t["7asiR3"]);
   items1[2] = callback(credential(4600).Button, obj1);
   obj[1] = items1;
-  return closure_6(credential(7634).Form, obj);
+  return closure_6(credential(7631).Form, obj);
 };

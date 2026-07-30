@@ -1,10 +1,10 @@
-// Module ID: 8108
-// Function ID: 8109
+// Module ID: 8105
+// Function ID: 8106
 // Name: getProfileProperties
-// Dependencies: [8109, 5123, 5945, 4208, 1942, 4276, 3826, 1874, 5896, 8105, 676, 505, 1416, 7983, 698, 4384, 8113, 2]
+// Dependencies: [8106, 5123, 5943, 4208, 1942, 4276, 3826, 1874, 5894, 8102, 676, 505, 1416, 7980, 698, 4384, 8110, 2]
 // Exports: getActivityType, getTrackUserRelationshipProperties, maybeTrackUserProfileUiViewed, trackDmProfileToggled, trackUserProfileActivityAction, trackUserProfileActivityJoined, trackUserProfileBadgeAction, trackUserProfileEditAction, trackUserProfileEditSaved, trackUserProfileWishlistAction
 
-// Module 8108 (getProfileProperties)
+// Module 8105 (getProfileProperties)
 import map from "map";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
 import { FetchState } from "recomputeFromAppTokens";
@@ -129,7 +129,7 @@ function getTrackUserProfileProperties(userId) {
     if (showGuildProfile) {
       tmp3 = guildId;
     }
-    const displayProfile = require(7983) /* useDisplayProfile */.getDisplayProfile(id, tmp3);
+    const displayProfile = require(7980) /* useDisplayProfile */.getDisplayProfile(id, tmp3);
     let member = null;
     if (showGuildProfile) {
       member = null;
@@ -227,7 +227,7 @@ function getTrackUserProfileProperties(userId) {
       const _HermesInternal = HermesInternal;
       combined = "" + status + "-desktop";
     }
-    const obj6 = require(7983) /* useDisplayProfile */;
+    const obj6 = require(7980) /* useDisplayProfile */;
     tmp14 = StatusTypes;
   }
 }
@@ -354,7 +354,7 @@ export const maybeTrackUserProfileUiViewed = function maybeTrackUserProfileUiVie
   let timeToInteractiveMs;
   let timeToLoadMs;
   let viewStartedAt;
-  let trackResult = require(8113) /* isUserProfilePerformanceAnalyticsEnabled */;
+  let trackResult = require(8110) /* isUserProfilePerformanceAnalyticsEnabled */;
   if (trackResult.isUserProfilePerformanceAnalyticsEnabled("UserProfileAnalyticsUtils")) {
     ({ timeToInteractiveMs, timeToLoadMs, timeToFetchMs } = userId);
     let num = timeToInteractiveMs;

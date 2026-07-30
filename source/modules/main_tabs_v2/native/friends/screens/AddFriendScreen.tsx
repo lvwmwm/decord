@@ -1,12 +1,12 @@
-// Module ID: 15597
-// Function ID: 15598
+// Module ID: 15591
+// Function ID: 15592
 // Name: AddFriendScreen
-// Dependencies: [32, 19, 17, 1874, 676, 11769, 21, 4189, 712, 11771, 4028, 698, 1236, 8196, 9118, 500, 4719, 4185, 12993, 12995, 2]
+// Dependencies: [32, 19, 17, 1874, 676, 11765, 21, 4189, 712, 11767, 4028, 698, 1236, 8193, 9114, 500, 4719, 4185, 12988, 12990, 2]
 // Exports: default
 
-// Module 15597 (AddFriendScreen)
+// Module 15591 (AddFriendScreen)
 import _slicedToArray from "_slicedToArray";
-import module_12995 from "module_12995";
+import module_12990 from "module_12990";
 import get_ActivityIndicator from "Text";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { AnalyticEvents } from "ME";
@@ -40,9 +40,9 @@ export default function AddFriendScreen(navigation) {
   let dependencyMap;
   let callback;
   let tmp = createCacheKey();
-  let obj = navigation(11771);
+  let obj = navigation(11767);
   contactSyncAccount = obj.useContactSyncAccount();
-  let obj1 = navigation(11771);
+  let obj1 = navigation(11767);
   [tmp5, c2] = callback(React.useState(!obj1.isContactSyncEnabled(contactSyncAccount)), 2);
   callback = React.useCallback(() => {
     currentUser = currentUser.getCurrentUser();
@@ -96,7 +96,7 @@ export default function AddFriendScreen(navigation) {
   const intl2 = navigation(1236).intl;
   obj1[3] = intl2.string(navigation(1236).t["Rn/sLl"]);
   items2[1] = callback(navigation(4185).Text, obj1);
-  items2[2] = callback(contactSyncAccount(12993), { style: tmp.input, autoFocusInput: false, sourcePage: navigation.route.params.sourcePage });
+  items2[2] = callback(contactSyncAccount(12988), { style: tmp.input, autoFocusInput: false, sourcePage: navigation.route.params.sourcePage });
   const obj3 = { style: tmp.otherOptionsContainer, children: null };
   const obj4 = { accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: null };
   const intl3 = navigation(1236).intl;
@@ -106,7 +106,7 @@ export default function AddFriendScreen(navigation) {
   if (tmp5) {
     const obj5 = { style: null, location: "Add Friend Modal" };
     obj5[0] = tmp.rowContainer;
-    tmp10Result = callback(contactSyncAccount(12995), obj5);
+    tmp10Result = callback(contactSyncAccount(12990), obj5);
   }
   const obj6 = { children: null };
   items3[1] = tmp10Result;

@@ -1,10 +1,10 @@
-// Module ID: 10510
-// Function ID: 10511
+// Module ID: 10506
+// Function ID: 10507
 // Name: useIsActivityFocused
-// Dependencies: [4202, 1371, 10511, 589, 2]
+// Dependencies: [4202, 1371, 10507, 589, 2]
 // Exports: default, isActivityFocused
 
-// Module 10510 (useIsActivityFocused)
+// Module 10506 (useIsActivityFocused)
 import getParticipants from "getParticipants";
 import participantFromServer from "participantFromServer";
 
@@ -40,7 +40,7 @@ export const isActivityFocused = function isActivityFocused(channelId) {
   const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
   let tmp3 = null != selectedParticipant && null != currentEmbeddedActivity;
   if (tmp3) {
-    let obj = require(10511) /* sortKey */;
+    let obj = require(10507) /* sortKey */;
     obj = { applicationId: null, instanceId: null };
     obj[0] = currentEmbeddedActivity.applicationId;
     let compositeInstanceId;

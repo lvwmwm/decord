@@ -1,10 +1,10 @@
-// Module ID: 10919
-// Function ID: 10920
+// Module ID: 10915
+// Function ID: 10916
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 1372, 1942, 1935, 1862, 3817, 676, 21, 4189, 712, 1581, 589, 1480, 4380, 8277, 1236, 5243, 5242, 4717, 4157, 7686, 10920, 9011, 7637, 10918, 10222, 1297, 5245, 8285, 4185, 2]
+// Dependencies: [19, 17, 1372, 1942, 1935, 1862, 3817, 676, 21, 4189, 712, 1581, 589, 1480, 4380, 8274, 1236, 5243, 5242, 4717, 4157, 7683, 10916, 9007, 7634, 10914, 10218, 1297, 5245, 8282, 4185, 2]
 // Exports: default
 
-// Module 10919 (ChannelMembersActionSheet)
+// Module 10915 (ChannelMembersActionSheet)
 import "PressableBase";
 import { View } from "Background";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -81,9 +81,9 @@ export default function ChannelMembersActionSheet(arg0) {
       if (null != sortedGuildRoles) {
         const canResult = getUncachedChannelPermissions.can(constants.MANAGE_ROLES, stateFromStores);
         c5 = canResult;
-        let tmp5Result = tmp5(8277);
+        let tmp5Result = tmp5(8274);
         const existingRolesRows = tmp5Result.getExistingRolesRows(guild, sortedGuildRoles, stateFromStores, stateFromStores.accessPermissions);
-        tmp5Result = tmp5(8277);
+        tmp5Result = tmp5(8274);
         const items5 = [];
         obj = { title: null, data: null };
         const existingMembersRows = tmp5Result.getExistingMembersRows(stateFromStoresArray, stateFromStores, guild, stateFromStores.accessPermissions);
@@ -113,7 +113,7 @@ export default function ChannelMembersActionSheet(arg0) {
           };
           let intl = tmp5(1236).intl;
           obj2[2] = intl.string(tmp5(1236).t.XPDhcc);
-          obj2[3] = tmp29(tmp5(9011).SettingsIcon, {});
+          obj2[3] = tmp29(tmp5(9007).SettingsIcon, {});
           tmp29Result = tmp29(tmp5(4717).PressableOpacity, obj2);
         }
         obj3 = { scrollable: true, header: null, startExpanded: true, children: null };
@@ -128,8 +128,8 @@ export default function ChannelMembersActionSheet(arg0) {
           obj5[1] = function onPress() {
             return outer1_0(_undefined[25]).openAddMembersActionSheet(stateFromStores);
           };
-          obj5[2] = tmp29(tmp5(10222).GroupPlusIcon, {});
-          tmp29Result = tmp29(tmp5(7637).RowButton, obj5);
+          obj5[2] = tmp29(tmp5(10218).GroupPlusIcon, {});
+          tmp29Result = tmp29(tmp5(7634).RowButton, obj5);
         } else {
           const obj6 = { style: null, children: null };
           obj6[0] = tmp.warning;

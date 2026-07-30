@@ -1,10 +1,10 @@
-// Module ID: 6499
-// Function ID: 6500
+// Module ID: 6496
+// Function ID: 6497
 // Name: _fetchSKU
-// Dependencies: [5, 6500, 4234, 676, 709, 4427, 530, 3858, 6501, 5847, 4088, 3857, 3850, 4509, 4518, 1351, 2]
+// Dependencies: [5, 6497, 4234, 676, 709, 4427, 530, 3858, 6498, 5845, 4088, 3857, 3850, 4509, 4518, 1351, 2]
 // Exports: clearPurchaseError, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 6499 (_fetchSKU)
+// Module 6496 (_fetchSKU)
 import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery";
 import getPromotionIdOverride from "getPromotionIdOverride";
 import addSku from "addSku";
@@ -300,7 +300,7 @@ function _fetchTestSKUsForApplication() {
               body = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -419,7 +419,7 @@ function _previewPurchaseSku() {
               let billingError;
               c5 = 1;
               promotionIdOverride2 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -839,12 +839,12 @@ function _purchaseSKU() {
                 throwTypeErrorResult = callback;
                 throwTypeErrorResult = dependencyMap;
                 const obj27 = callback2(709);
-                c11 = callback(6501).isTestModeForApplication(callback);
+                c11 = callback(6498).isTestModeForApplication(callback);
                 c8 = 1;
                 obj2 = { gift: isGift, sku_subscription_plan_id: obj1.subscriptionPlanId };
                 throwTypeErrorResult = callback;
                 throwTypeErrorResult = dependencyMap;
-                const obj28 = callback(6501);
+                const obj28 = callback(6498);
                 c10 = 2;
                 c11 = 1;
                 const obj3 = { value: null, done: false };

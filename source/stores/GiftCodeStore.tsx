@@ -1,9 +1,9 @@
-// Module ID: 8032
-// Function ID: 8033
+// Module ID: 8029
+// Function ID: 8030
 // Name: updateGiftCode
-// Dependencies: [8033, 676, 4074, 3771, 4424, 709, 8034, 589, 2]
+// Dependencies: [8030, 676, 4074, 3771, 4424, 709, 8031, 589, 2]
 
-// Module 8032 (updateGiftCode)
+// Module 8029 (updateGiftCode)
 import frozen from "frozen";
 import ME from "ME";
 import { Store } from "initialize";

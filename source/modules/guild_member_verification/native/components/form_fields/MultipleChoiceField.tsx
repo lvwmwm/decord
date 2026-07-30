@@ -1,10 +1,10 @@
-// Module ID: 9266
-// Function ID: 9267
+// Module ID: 9262
+// Function ID: 9263
 // Name: MultipleChoiceField
-// Dependencies: [19, 17, 505, 21, 4189, 5109, 712, 4185, 7655, 7654, 2]
+// Dependencies: [19, 17, 505, 21, 4189, 5109, 712, 4185, 7652, 7651, 2]
 // Exports: default
 
-// Module 9266 (MultipleChoiceField)
+// Module 9262 (MultipleChoiceField)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

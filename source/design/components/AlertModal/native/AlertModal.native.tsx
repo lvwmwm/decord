@@ -383,7 +383,7 @@ class AlertActions {
 }
 class AlertActionButton {
   constructor(arg0) {
-    ({ onPress: f103915, loading } = global);
+    ({ onPress: f103927, loading } = global);
     merged = Object.assign(global, Object.create(null));
     useState = undefined;
     useState = undefined;
@@ -398,8 +398,8 @@ class AlertActionButton {
       loading = tmp2[0];
     }
     obj.loading = loading;
-    f103915 = undefined;
-    f103915 = sum((arg0) => {
+    f103927 = undefined;
+    f103927 = sum((arg0) => {
       let closure_0 = arg0;
       let c2 = 0;
       let c4 = 0;

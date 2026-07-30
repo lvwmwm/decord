@@ -1,10 +1,10 @@
-// Module ID: 12582
-// Function ID: 12583
+// Module ID: 12576
+// Function ID: 12577
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [32, 19, 17, 1946, 5672, 12573, 1876, 505, 21, 4189, 5109, 5030, 6250, 589, 1851, 4618, 12583, 1297, 1236, 3835, 4600, 2]
+// Dependencies: [32, 19, 17, 1946, 5672, 12567, 1876, 505, 21, 4189, 5109, 5030, 6247, 589, 1851, 4618, 12577, 1297, 1236, 3835, 4600, 2]
 // Exports: default
 
-// Module 12582 (PremiumPlanSelectYearlyUpsellModal)
+// Module 12576 (PremiumPlanSelectYearlyUpsellModal)
 import _slicedToArray from "_slicedToArray";
 import getPremiumPlanItem from "getPremiumPlanItem";
 import get_ActivityIndicator from "Button";
@@ -54,7 +54,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
   const tmp2 = usePremiumPlanSelectStore((isPurchasing) => isPurchasing.isPurchasing);
   let obj = React;
   [tmp4, c3] = callback(React.useState(null), 2);
-  let obj1 = productId(6250);
+  let obj1 = productId(6247);
   const premiumBundledItemsFromProductId = obj1.getPremiumBundledItemsFromProductId(productId);
   let obj2 = productId(589);
   let items = [_getSystemLocale];
@@ -95,7 +95,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
     obj[0] = tmp.container;
     obj1 = { style: null, source: null };
     obj1[0] = tmp.image;
-    obj1[1] = importDefault(12583);
+    obj1[1] = importDefault(12577);
     const items2 = [callback2(closure_5, obj1), , , , , ];
     obj2 = { style: null, accessibilityRole: "header", children: null };
     obj2[0] = tmp.header;

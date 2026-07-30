@@ -1,10 +1,10 @@
-// Module ID: 12385
-// Function ID: 12386
+// Module ID: 12379
+// Function ID: 12380
 // Name: transformStickers
-// Dependencies: [7735, 4524, 7781, 1236, 2]
+// Dependencies: [7732, 4524, 7778, 1236, 2]
 // Exports: default
 
-// Module 12385 (transformStickers)
+// Module 12379 (transformStickers)
 const result = require("NativeLottieView").fileFinishedImporting("modules/messages/native/renderer/transformStickers.tsx");
 
 export default function transformStickers(message) {
@@ -12,8 +12,8 @@ export default function transformStickers(message) {
   let require;
   ({ animateStickersSetting: require, isUserInteracting: dependencyMap } = message);
   let closure_2;
-  closure_2 = require(7735) /* apexExperiment */.shouldSkipAccessibilityLabels();
-  let obj = require(7735) /* apexExperiment */;
+  closure_2 = require(7732) /* apexExperiment */.shouldSkipAccessibilityLabels();
+  let obj = require(7732) /* apexExperiment */;
   const messageStickers = require(4524) /* getStickerExtensionFromFormatType */.getMessageStickers(message.message);
   return messageStickers.map((id) => {
     let obj = outer1_0(outer1_1[1]);

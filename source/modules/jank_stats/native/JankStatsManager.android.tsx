@@ -1,9 +1,9 @@
-// Module ID: 16235
-// Function ID: 16236
+// Module ID: 16229
+// Function ID: 16230
 // Name: handleAppStateUpdate
-// Dependencies: [676, 5134, 16236, 698, 5731, 2]
+// Dependencies: [676, 5134, 16230, 698, 5731, 2]
 
-// Module 16235 (handleAppStateUpdate)
+// Module 16229 (handleAppStateUpdate)
 import ME from "ME";
 import "initialize";
 
@@ -70,7 +70,7 @@ prototype["scheduleReport"] = function scheduleReport() {
   }
 };
 prototype["sendReport"] = function sendReport(background) {
-  let obj = importDefault(16236);
+  let obj = importDefault(16230);
   let report;
   if (obj != null) {
     report = obj.requestReport();

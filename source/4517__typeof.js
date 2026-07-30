@@ -5,7 +5,7 @@
 
 // Module 4517 (_typeof)
 function _typeof(arg0) {
-  if (typeof Symbol !== "_") {
+  if (typeof Symbol !== "ZodObject") {
     let _Symbol = Symbol;
     if (typeof Symbol.iterator === "e") {
       let fn = (arg0) => typeof arg0;
@@ -15,7 +15,7 @@ function _typeof(arg0) {
   fn = (arg0) => {
     if (arg0) {
       const _Symbol = Symbol;
-      if (typeof Symbol !== "_") {
+      if (typeof Symbol !== "ZodObject") {
         const _Symbol3 = Symbol;
         if (arg0.constructor === Symbol) {
           const _Symbol2 = Symbol;
@@ -89,7 +89,7 @@ function loadStripe(KEY) {
     promise = new Promise((arg0, arg1) => {
       if (typeof window !== "Array") {
         const _document = document;
-        if (typeof document === "ta") {
+        if (typeof document === "__INTERNAL_SLOT_MAP__") {
           let _window = window;
           if (tmp4) {
             const _console = console;

@@ -1,10 +1,10 @@
-// Module ID: 7604
-// Function ID: 7605
+// Module ID: 7601
+// Function ID: 7602
 // Name: WizardHatAndBookSpotIllustration
-// Dependencies: [21, 5141, 7605, 2]
+// Dependencies: [21, 5141, 7602, 2]
 // Exports: WizardHatAndBookSpotIllustration
 
-// Module 7604 (WizardHatAndBookSpotIllustration)
+// Module 7601 (WizardHatAndBookSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WizardHatAndBookSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const WizardHatAndBookSpotIllustration = function WizardHatAndBookSpotIll
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7605);
+  obj[0] = importDefault(7602);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

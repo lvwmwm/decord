@@ -9,14 +9,14 @@ import _slicedToArray from "_slicedToArray";
 
 let require = arg1;
 require("noop").useCallback;
-const f28543 = (colorProperty) => colorProperty.colorProperty(arg1);
+const f28540 = (colorProperty) => colorProperty.colorProperty(arg1);
 
 export const useRiveColor = function useRiveColor(FillColor, instance) {
   let tmp5;
   let tmp6;
   let obj = require(3940) /* c */;
   const cResult = obj.c(8);
-  const tmp4 = callback(require(3953) /* useRiveProperty */.useRiveProperty(instance, FillColor, f28543), 3);
+  const tmp4 = callback(require(3953) /* useRiveProperty */.useRiveProperty(instance, FillColor, f28540), 3);
   [tmp5, tmp6] = tmp4;
   require = tmp6;
   if (cResult[0] !== tmp5) {
@@ -34,7 +34,7 @@ export const useRiveColor = function useRiveColor(FillColor, instance) {
   if (cResult[2] !== tmp6) {
     const fn = function p(arg0) {
       let fromHexStringResult = arg0;
-      if (typeof arg0 !== "init") {
+      if (typeof arg0 !== "tee") {
         const RiveColor = tmp6(outer1_1[4]).RiveColor;
         fromHexStringResult = RiveColor.fromHexString(arg0);
       }

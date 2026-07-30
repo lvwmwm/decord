@@ -1,10 +1,10 @@
-// Module ID: 10191
-// Function ID: 10192
+// Module ID: 10187
+// Function ID: 10188
 // Name: LinkedChannelInvite
-// Dependencies: [19, 17, 1376, 676, 21, 4189, 5521, 10192, 10193, 4529, 1236, 10194, 1222, 10196, 5222, 4598, 5525, 4185, 9299, 6682, 10201, 10202, 10203, 10206, 10208, 2]
+// Dependencies: [19, 17, 1376, 676, 21, 4189, 5521, 10188, 10189, 4529, 1236, 10190, 1222, 10192, 5222, 4598, 5525, 4185, 9295, 6679, 10197, 10198, 10199, 10202, 10204, 2]
 // Exports: LinkedChannelInvite
 
-// Module 10191 (LinkedChannelInvite)
+// Module 10187 (LinkedChannelInvite)
 import importAllResult from "IconButton";
 import { View } from "Text";
 import { createChannelRecordFromInvite as closure_5 } from "createChannelRecord";
@@ -30,7 +30,7 @@ const memoResult = importAllResult.memo((onInviteRevoked) => {
   }
   const items = [invite];
   const memo = importAllResult.useMemo(() => outer1_5(invite.channel), items);
-  let obj = invite(10203);
+  let obj = invite(10199);
   const items1 = [invite.roles];
   const inviteActions = obj.useInviteActions({ invite, onInviteRevoked: onInviteRevoked.onInviteRevoked });
   const memo1 = importAllResult.useMemo(() => {
@@ -42,17 +42,17 @@ const memoResult = importAllResult.memo((onInviteRevoked) => {
   obj = { variant: "text-lg/bold", tabularNumbers: true, children: invite.code };
   const items2 = [
     callback(invite(4185).Text, obj),
-    callback(invite(9299).ContextMenu, {
+    callback(invite(9295).ContextMenu, {
       items: inviteActions,
       children(ref) {
         const merged = Object.assign(ref, Object.create(null));
         const obj = { size: "sm", variant: "secondary", icon: null, accessibilityLabel: null, ref: null };
-        obj[2] = callback(10196).more;
+        obj[2] = callback(10192).more;
         const intl = invite(1236).intl;
         obj[3] = intl.string(invite(1236).t.DEoVWZ);
         obj[4] = ref.ref;
         const merged1 = Object.assign(merged);
-        return callback2(invite(6682).IconButton, obj);
+        return callback2(invite(6679).IconButton, obj);
       }
     })
   ];
@@ -60,12 +60,12 @@ const memoResult = importAllResult.memo((onInviteRevoked) => {
   const items3 = [callback2(invite(4598).Stack, obj), , , ];
   const obj2 = { channel: memo, expiresAt: null };
   obj2[1] = invite.getExpiresAt();
-  items3[1] = callback(invite(10201).InstantInviteDetails, obj2);
+  items3[1] = callback(invite(10197).InstantInviteDetails, obj2);
   if (tmp9Result) {
     const obj3 = { roleIds: null, guildId: null };
     obj3[0] = memo1;
     obj3[1] = id;
-    tmp9Result = tmp9(importDefault(10206), obj3);
+    tmp9Result = tmp9(importDefault(10202), obj3);
   }
   items3[2] = tmp9Result;
   const obj4 = { style: callback3().creatorWrapper, children: null };
@@ -84,13 +84,13 @@ const memoResult = importAllResult.memo((onInviteRevoked) => {
     const obj5 = { start: true, end: true, userId: null, guildId: null };
     obj5[2] = id2;
     obj5[3] = id;
-    tmp9Result = tmp9(importDefault(10202), obj5);
-    const tmp15 = importDefault(10202);
+    tmp9Result = tmp9(importDefault(10198), obj5);
+    const tmp15 = importDefault(10198);
   }
   const obj6 = { children: null };
   const obj7 = { direction: "horizontal", align: "flex-end", children: null };
   obj4[1] = tmp9Result;
-  const items4 = [callback(View, obj4), callback(importDefault(10208), { uses, maxUses })];
+  const items4 = [callback(View, obj4), callback(importDefault(10204), { uses, maxUses })];
   obj7[2] = items4;
   items3[3] = callback2(invite(4598).Stack, obj7);
   obj6[0] = items3;
@@ -117,16 +117,16 @@ export const LinkedChannelInvite = function LinkedChannelInvite(channel) {
     application_id = linkedLobby2.application_id;
   }
   const getOrFetchApplication = obj.useGetOrFetchApplication(application_id);
-  canUnlinkLobbyChannel = channel(10192).useCanUnlinkLobbyChannel(channel);
+  canUnlinkLobbyChannel = channel(10188).useCanUnlinkLobbyChannel(channel);
   let str;
-  const tmp3Result = channel(10192);
+  const tmp3Result = channel(10188);
   if (getOrFetchApplication != null) {
     str = getOrFetchApplication.name;
   }
   if (str == null) {
     str = "";
   }
-  const tmp9Result = canUnlinkLobbyChannel(10193)(channel.id, str);
+  const tmp9Result = canUnlinkLobbyChannel(10189)(channel.id, str);
   dependencyMap = tmp9Result;
   let items = [canUnlinkLobbyChannel, tmp9Result];
   callback = callback.useCallback(() => {
@@ -164,7 +164,7 @@ export const LinkedChannelInvite = function LinkedChannelInvite(channel) {
   }, items1);
   obj = { style: tmp.gameWrapper, children: null };
   obj = { game: getOrFetchApplication, size: null };
-  const tmp9 = canUnlinkLobbyChannel(10193);
+  const tmp9 = canUnlinkLobbyChannel(10189);
   obj[1] = channel(5525).GameIconSizes.SIZE_24;
   const items2 = [callback(canUnlinkLobbyChannel(5525), obj), ];
   const obj1 = { ellipsizeMode: "tail", lineClamp: 1, variant: "text-lg/bold", style: tmp.gameText, children: null };
@@ -178,7 +178,7 @@ export const LinkedChannelInvite = function LinkedChannelInvite(channel) {
   obj[1] = items2;
   const items3 = [
     closure_8(View, obj),
-    callback(channel(9299).ContextMenu, {
+    callback(channel(9295).ContextMenu, {
       items: memo,
       children(ref) {
         const merged = Object.assign(ref, Object.create(null));
@@ -193,14 +193,14 @@ export const LinkedChannelInvite = function LinkedChannelInvite(channel) {
     })
   ];
   obj2[2] = items3;
-  const items4 = [closure_8(channel(4598).Stack, obj2), callback(channel(10201).InstantInviteDetails, { channel }), ];
+  const items4 = [closure_8(channel(4598).Stack, obj2), callback(channel(10197).InstantInviteDetails, { channel }), ];
   const obj4 = { style: tmp.creatorWrapper, children: null };
   let tmp15Result = null;
   if (null != linked_by) {
     const obj5 = { start: true, end: true, userId: null, guildId: null };
     obj5[2] = linked_by;
     obj5[3] = channel.guild_id;
-    tmp15Result = tmp15(tmp8(10202), obj5);
+    tmp15Result = tmp15(tmp8(10198), obj5);
   }
   const obj6 = { children: null };
   const obj3 = {

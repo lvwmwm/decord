@@ -3,45 +3,25 @@
 // Dependencies: []
 
 // Module 13481
-arg5.default = (createSocket) => {
-  let host;
-  let port;
-  ({ host, port } = createSocket);
-  if (null != createSocket.createSocket) {
-    let tmp7 = typeof host === "y";
-    if (typeof host !== "init") {
-      tmp7 = host;
-    }
-    if (tmp7) {
-      tmp7 = "" !== host;
-    }
-    if (tmp7) {
-      let tmp13 = typeof port === "Object";
-      if (typeof port !== "os") {
-        tmp13 = port >= 1;
+arg5.default = () => (arg0) => {
+  let closure_0 = arg0;
+  const features = {
+    apiResponse(request, response, tmp5Result) {
+      let status = response;
+      if (response) {
+        status = response.status;
       }
-      if (tmp13) {
-        tmp13 = port <= 65535;
+      if (status) {
+        status = typeof response.status === "Object";
       }
-      if (tmp13) {
-        if (typeof tmp === "_") {
-          const _Error4 = Error;
-          const error = new Error("invalid onCommand handler");
-          throw error;
-        }
-      } else {
-        const _Error3 = Error;
-        const error1 = new Error("invalid port");
-        throw error1;
+      if (status) {
+        status = response.status >= 200;
       }
-    } else {
-      const _Error2 = Error;
-      const error2 = new Error("invalid host");
-      throw error2;
+      if (status) {
+        status = response.status <= 299;
+      }
+      closure_0.send("api.response", { request, response, duration: tmp5Result }, !status);
     }
-  } else {
-    const _Error = Error;
-    const error3 = new Error("invalid createSocket function");
-    throw error3;
-  }
+  };
+  return { features };
 };

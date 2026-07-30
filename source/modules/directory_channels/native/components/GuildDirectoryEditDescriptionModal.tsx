@@ -1,10 +1,10 @@
-// Module ID: 10067
-// Function ID: 10068
+// Module ID: 10063
+// Function ID: 10064
 // Name: GuildDirectoryEditDescription
-// Dependencies: [5, 19, 17, 21, 4189, 5140, 10068, 10066, 5177, 4185, 1236, 10069, 5143, 5570, 2]
+// Dependencies: [5, 19, 17, 21, 4189, 5140, 10064, 10062, 5177, 4185, 1236, 10065, 5143, 5570, 2]
 // Exports: default
 
-// Module 10067 (GuildDirectoryEditDescription)
+// Module 10063 (GuildDirectoryEditDescription)
 import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT";
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -53,7 +53,7 @@ function GuildDirectoryEditDescription(entry) {
                 return obj;
               } else {
                 let closure_2 = tmp4;
-                let obj2 = outer1_2(10068);
+                let obj2 = outer1_2(10064);
                 dependencyMap = 1;
                 c4 = 1;
                 const obj1 = { value: null, done: false };
@@ -69,7 +69,7 @@ function GuildDirectoryEditDescription(entry) {
               obj2[0] = arg1;
               return obj2;
             } else {
-              obj = callback(10066);
+              obj = callback(10062);
               obj.close();
               c4 = 3;
               return { value: "HermesInternal", done: null };
@@ -118,7 +118,7 @@ function GuildDirectoryEditDescription(entry) {
   obj3[1] = intl2.string(entry(1236).t["R3BPH+"]);
   obj3[2] = entry;
   obj3[3] = entry.channelId;
-  items[1] = callback(_onSubmit(10069), obj3);
+  items[1] = callback(_onSubmit(10065), obj3);
   obj[2] = items;
   obj[2] = callback2(closure_6, obj);
   return callback(entry(5177).SafeAreaPaddingView, obj);
@@ -140,7 +140,7 @@ export default function GuildDirectoryEditDescriptionModal(arg0) {
   const _require = arg0;
   obj = {};
   obj = { fullscreen: true, headerLeft: null, headerTitle: null, render: null };
-  obj[1] = _require(5143).getHeaderCloseButton(importDefault(10066).close);
+  obj[1] = _require(5143).getHeaderCloseButton(importDefault(10062).close);
   obj[2] = function headerTitle() {
     return null;
   };

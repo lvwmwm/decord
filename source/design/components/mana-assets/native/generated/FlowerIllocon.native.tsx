@@ -1,10 +1,10 @@
-// Module ID: 7040
-// Function ID: 7041
+// Module ID: 7037
+// Function ID: 7038
 // Name: FlowerIllocon
-// Dependencies: [21, 5141, 7041, 2]
+// Dependencies: [21, 5141, 7038, 2]
 // Exports: FlowerIllocon
 
-// Module 7040 (FlowerIllocon)
+// Module 7037 (FlowerIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/FlowerIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const FlowerIllocon = function FlowerIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7041);
+  obj[0] = importDefault(7038);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

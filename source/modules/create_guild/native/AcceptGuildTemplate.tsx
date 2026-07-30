@@ -1,12 +1,12 @@
-// Module ID: 10988
-// Function ID: 10989
+// Module ID: 10984
+// Function ID: 10985
 // Name: GuildTemplateResolving
-// Dependencies: [19, 17, 1376, 1936, 676, 5716, 21, 4189, 712, 5109, 5637, 38, 1581, 1937, 4185, 1236, 10089, 8995, 4600, 7641, 1297, 12, 8249, 10989, 10990, 10207, 688, 2]
+// Dependencies: [19, 17, 1376, 1936, 676, 5716, 21, 4189, 712, 5109, 5637, 38, 1581, 1937, 4185, 1236, 10085, 8991, 4600, 7638, 1297, 12, 8246, 10985, 10986, 10203, 688, 2]
 // Exports: default
 
-// Module 10988 (GuildTemplateResolving)
+// Module 10984 (GuildTemplateResolving)
 import "Divider";
-import get_ActivityIndicator from "module_8995";
+import get_ActivityIndicator from "module_8991";
 import { isGuildVocalChannelType } from "createChannelRecord";
 import { isEveryoneRole } from "GuildRoleRecordTypeTag";
 import ME from "ME";
@@ -51,7 +51,7 @@ function GuildTemplateResolved(guildTemplate) {
   const items1 = [callback(guildTemplate(4185).Text, obj), , , , , , , , , , ];
   obj = { style: tmp.description, variant: "text-lg/medium", color: "text-default", children: guildTemplate.name };
   items1[1] = callback(guildTemplate(4185).Text, obj);
-  items1[2] = callback(importDefault(10089), { iconBackgroundColor: tmp.wrapper.backgroundColor, style: tmp.iconUploader, onPress: chooseIcon, icon });
+  items1[2] = callback(importDefault(10085), { iconBackgroundColor: tmp.wrapper.backgroundColor, style: tmp.iconUploader, onPress: chooseIcon, icon });
   const obj2 = { label: null, error: null, hint: null, value: null, onChangeText: null, autoFocus: true, autoCorrect: false, returnKeyType: "done" };
   const intl2 = guildTemplate(1236).intl;
   obj2[0] = intl2.string(guildTemplate(1236).t.dBih7e);
@@ -64,7 +64,7 @@ function GuildTemplateResolved(guildTemplate) {
   obj2[2] = intl3.format(guildTemplate(1236).t["2bprXx"], { guidelinesURL: constants.GUIDELINES });
   obj2[3] = name;
   obj2[4] = setName;
-  items1[3] = callback(importDefault(8995), obj2);
+  items1[3] = callback(importDefault(8991), obj2);
   const obj4 = { style: tmp.createButtonWrapper, children: null };
   const obj5 = { size: "md", text: null, onPress: null, loading: null, disabled: null, grow: true };
   const intl4 = tmp10(1236).intl;
@@ -74,7 +74,7 @@ function GuildTemplateResolved(guildTemplate) {
   obj5[4] = guildTemplate.state === GuildTemplateStates.ACCEPTING;
   obj4[1] = callback(guildTemplate(4600).Button, obj5);
   items1[4] = callback(closure_4, obj4);
-  items1[5] = callback(importDefault(7641), { style: tmp.divider, outer: true });
+  items1[5] = callback(importDefault(7638), { style: tmp.divider, outer: true });
   const obj7 = { style: tmp.sectionHeader, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl5 = tmp10(1236).intl;
   obj7[3] = intl5.string(guildTemplate(1236).t.OGiMXJ);

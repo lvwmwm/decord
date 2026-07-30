@@ -1,10 +1,10 @@
-// Module ID: 8316
-// Function ID: 8317
+// Module ID: 8313
+// Function ID: 8314
 // Name: getChannelA11yLabel
-// Dependencies: [1376, 3826, 1874, 676, 1236, 4380, 4680, 4028, 7914, 2]
+// Dependencies: [1376, 3826, 1874, 676, 1236, 4380, 4680, 4028, 7911, 2]
 // Exports: default, getChannelA11yHint, getStatusLabel
 
-// Module 8316 (getChannelA11yLabel)
+// Module 8313 (getChannelA11yLabel)
 import { THREAD_CHANNEL_TYPES } from "createChannelRecord";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -136,9 +136,9 @@ export default function getChannelA11yLabel(mentionCount) {
         const obj6 = { start: null };
         obj6[0] = voiceChannelStartTime;
         const _Date = Date;
-        obj5[0] = tmp(7914).formatActiveA11yTimestamp(obj6, Date.now());
+        obj5[0] = tmp(7911).formatActiveA11yTimestamp(obj6, Date.now());
         items1.push(intl15.formatToPlainString(tmp(1236).t.JQtsGh, obj5));
-        const tmpResult = tmp(7914);
+        const tmpResult = tmp(7911);
       }
       if (tmp14) {
         const intl7 = tmp(1236).intl;

@@ -1,10 +1,10 @@
-// Module ID: 9904
-// Function ID: 9905
+// Module ID: 9901
+// Function ID: 9902
 // Name: SearchableDestinationListHeader
-// Dependencies: [19, 17, 21, 4189, 712, 5150, 9118, 5143, 500, 6561, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 5150, 9114, 5143, 500, 6558, 2]
 // Exports: default
 
-// Module 9904 (SearchableDestinationListHeader)
+// Module 9901 (SearchableDestinationListHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -49,7 +49,7 @@ export default function SearchableDestinationListHeader(arg0) {
     if (!tmp4Result.getIsWindowLarge()) {
       num = 0;
     }
-    tmp4Result = tmp4(6561);
+    tmp4Result = tmp4(6558);
   }
   obj[6] = num;
   obj[1] = jsx(require(5150) /* Background */.Header, {

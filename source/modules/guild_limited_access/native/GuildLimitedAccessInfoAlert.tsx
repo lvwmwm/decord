@@ -1,10 +1,10 @@
-// Module ID: 12972
-// Function ID: 12973
+// Module ID: 12967
+// Function ID: 12968
 // Name: GuildLimitedAccessInfoAlert
-// Dependencies: [19, 1862, 12973, 676, 21, 4189, 5109, 712, 1236, 4618, 1297, 4185, 2]
+// Dependencies: [19, 1862, 12968, 676, 21, 4189, 5109, 712, 1236, 4618, 1297, 4185, 2]
 // Exports: default
 
-// Module 12972 (GuildLimitedAccessInfoAlert)
+// Module 12967 (GuildLimitedAccessInfoAlert)
 import "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GUILD_LIMITED_ACCESS_HC_LINK as closure_4 } from "GUILD_LIMITED_ACCESS_HC_LINK";

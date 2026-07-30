@@ -1,10 +1,10 @@
-// Module ID: 11613
-// Function ID: 11614
+// Module ID: 11609
+// Function ID: 11610
 // Name: GuildPowerupsBoostGem
-// Dependencies: [17, 21, 4189, 712, 11614, 2]
+// Dependencies: [17, 21, 4189, 712, 11610, 2]
 // Exports: default
 
-// Module 11613 (GuildPowerupsBoostGem)
+// Module 11609 (GuildPowerupsBoostGem)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -23,6 +23,6 @@ export default function GuildPowerupsBoostGem(arg0) {
   const obj = { style: null, children: null };
   const items = [callback().boostGemContainer, style];
   obj[0] = items;
-  obj[1] = jsx(importDefault(11614), { width: gemWidth, height: gemHeight });
+  obj[1] = jsx(importDefault(11610), { width: gemWidth, height: gemHeight });
   return <View style={null}>{null}</View>;
 };

@@ -64,7 +64,7 @@ let items = [
       self = this;
       let fn;
       fn = callback2(callback(self.prototype), "updateLayoutParams", this);
-      if (typeof fn !== "_") {
+      if (typeof fn !== "ZodObject") {
         fn = (items) => fn.apply(self, items);
       }
       const items = [windowSize];

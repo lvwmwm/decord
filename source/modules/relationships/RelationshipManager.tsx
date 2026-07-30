@@ -1,9 +1,9 @@
-// Module ID: 16306
-// Function ID: 16307
+// Module ID: 16300
+// Function ID: 16301
 // Name: handleRelationshipAdd
-// Dependencies: [676, 4035, 1236, 16307, 5134, 2]
+// Dependencies: [676, 4035, 1236, 16301, 5134, 2]
 
-// Module 16306 (handleRelationshipAdd)
+// Module 16300 (handleRelationshipAdd)
 import { RelationshipTypes } from "ME";
 import "initialize";
 
@@ -15,8 +15,8 @@ function handleRelationshipAdd(relationship) {
     const obj = { username: null };
     obj[0] = relationship.user.username;
     AccessibilityAnnouncer.announce(intl.formatToPlainString(require(1236) /* getSystemLocale */.t.zH0kC7, obj));
-    const result = importAll(16307).showPendingNotification(relationship.user);
-    const obj2 = importAll(16307);
+    const result = importAll(16301).showPendingNotification(relationship.user);
+    const obj2 = importAll(16301);
   }
 }
 function handleFriendRequestAccepted(user) {
@@ -24,7 +24,7 @@ function handleFriendRequestAccepted(user) {
   const AccessibilityAnnouncer = require(4035) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
   const intl = require(1236) /* getSystemLocale */.intl;
   AccessibilityAnnouncer.announce(intl.formatToPlainString(require(1236) /* getSystemLocale */.t["/+7xky"], { username: user.username }));
-  const result = importAll(16307).showAcceptedNotification(user);
+  const result = importAll(16301).showAcceptedNotification(user);
 }
 let prototype = function RelationshipManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

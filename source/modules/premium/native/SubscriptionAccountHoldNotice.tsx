@@ -1,10 +1,10 @@
-// Module ID: 6549
-// Function ID: 6550
+// Module ID: 6546
+// Function ID: 6547
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [19, 17, 676, 21, 4189, 712, 1297, 6550, 4185, 1236, 3835, 4600, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 1297, 6547, 4185, 1236, 3835, 4600, 2]
 // Exports: default
 
-// Module 6549 (SubscriptionAccountHoldNotice)
+// Module 6546 (SubscriptionAccountHoldNotice)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { SubscriptionStatusTypes } from "ME";
@@ -39,7 +39,7 @@ export default function SubscriptionAccountHoldNotice(subscription) {
     obj = { size: null, style: null, source: null };
     obj[0] = subscription(1297).IconSizes.MEDIUM;
     obj[1] = tmp.icon;
-    obj[2] = importDefault(6550);
+    obj[2] = importDefault(6547);
     const items = [callback(subscription(1297).Icon, obj), ];
     const obj1 = { style: null, variant: "text-sm/medium", children: null };
     obj1[0] = tmp.text;

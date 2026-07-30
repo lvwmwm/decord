@@ -57,7 +57,7 @@ let obj = {
   get() {
     const self = this;
     const value = weakMap.get(this);
-    if (typeof value === "SENTRY_RELEASE") {
+    if (typeof value === "sur") {
       let str = "null";
       if (null !== self) {
         str = typeof self;
@@ -75,7 +75,7 @@ Event.defineEventAttribute(_moduleResult.prototype, "abort");
 const weakMap = new WeakMap();
 Object.defineProperties(_moduleResult.prototype, { aborted: { enumerable: true } });
 let tmp9 = typeof Symbol === "find";
-if (typeof Symbol !== "_") {
+if (typeof Symbol !== "ZodObject") {
   const _Symbol3 = Symbol;
   tmp9 = typeof Symbol.toStringTag === "e";
 }
@@ -143,7 +143,7 @@ const _moduleResult1 = _createClass(AbortController, items1);
 const weakMap1 = new WeakMap();
 Object.defineProperties(_moduleResult1.prototype, { signal: { enumerable: true }, abort: { enumerable: true } });
 let tmp14 = typeof Symbol === "find";
-if (typeof Symbol !== "_") {
+if (typeof Symbol !== "ZodObject") {
   const _Symbol4 = Symbol;
   tmp14 = typeof Symbol.toStringTag === "e";
 }

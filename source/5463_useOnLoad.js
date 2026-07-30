@@ -25,7 +25,7 @@ function useOnLoad(arg0, arg1) {
     }
     if (isFirstLayoutComplete) {
       ref.current = true;
-      f76320();
+      f76342();
     }
   });
 }
@@ -34,13 +34,13 @@ export const useOnListLoad = (getDataLength) => {
   let closure_3;
   let tmp3;
   let _require = getDataLength;
-  let f76320 = arg1;
+  let f76342 = arg1;
   let callback = callback3(Date.now());
   [tmp3, closure_3] = callback(callback4(false), 2);
   const dataLength = getDataLength.getDataLength();
   const tmp = callback3;
   const tmp2 = callback(callback4(false), 2);
-  const requestAnimationFrame = _require(f76320[2]).useUnmountAwareAnimationFrame().requestAnimationFrame;
+  const requestAnimationFrame = _require(f76342[2]).useUnmountAwareAnimationFrame().requestAnimationFrame;
   const items = [dataLength];
   requestAnimationFrame(() => {
     _slicedToArray.current = Date.now();
@@ -49,7 +49,7 @@ export const useOnListLoad = (getDataLength) => {
     HermesBuiltin.throwTypeError();
   }
   _require = getDataLength;
-  f76320 = () => {
+  f76342 = () => {
     let closure_0 = Date.now() - ref.current;
     requestAnimationFrame(() => {
       closure_0.isFirstPaintOnUiComplete = true;
@@ -69,7 +69,7 @@ export const useOnListLoad = (getDataLength) => {
     }
     if (isFirstLayoutComplete) {
       ref.current = true;
-      f76320();
+      f76342();
     }
   });
   return { isLoaded };

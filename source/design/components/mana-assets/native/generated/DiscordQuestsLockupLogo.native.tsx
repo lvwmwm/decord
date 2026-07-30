@@ -1,10 +1,10 @@
-// Module ID: 6982
-// Function ID: 6983
+// Module ID: 6979
+// Function ID: 6980
 // Name: DiscordQuestsLockupLogo
-// Dependencies: [17, 21, 712, 3893, 6983, 2]
+// Dependencies: [17, 21, 712, 3893, 6980, 2]
 // Exports: DiscordQuestsLockupLogo
 
-// Module 6982 (DiscordQuestsLockupLogo)
+// Module 6979 (DiscordQuestsLockupLogo)
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -46,7 +46,7 @@ export const DiscordQuestsLockupLogo = function DiscordQuestsLockupLogo(color) {
     tmp5 = null != ICON_STRONG && typeof ICON_STRONG === "y";
   }
   const obj1 = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj1[1] = { uri: importDefault(6983) };
+  obj1[1] = { uri: importDefault(6980) };
   const items = [{ width: num * num3, height: num2 * num3 }, tmp6];
   obj1[2] = items;
   obj1[3] = accessible;

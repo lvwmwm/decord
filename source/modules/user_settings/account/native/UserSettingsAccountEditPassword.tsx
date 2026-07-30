@@ -1,10 +1,10 @@
-// Module ID: 13808
-// Function ID: 13809
+// Module ID: 13803
+// Function ID: 13804
 // Name: componentWillUnmount
-// Dependencies: [19, 17, 1365, 6612, 1874, 676, 21, 4189, 712, 3901, 9226, 9228, 12, 698, 6505, 9230, 13809, 4185, 1236, 4598, 6727, 4600, 6330, 589, 38, 1480, 2]
+// Dependencies: [19, 17, 1365, 6609, 1874, 676, 21, 4189, 712, 3901, 9222, 9224, 12, 698, 6502, 9226, 13804, 4185, 1236, 4598, 6724, 4600, 6327, 589, 38, 1480, 2]
 // Exports: default
 
-// Module 13808 (componentWillUnmount)
+// Module 13803 (componentWillUnmount)
 import get_ActivityIndicator from "Text";
 import handleUpdateUser from "handleUpdateUser";
 import handleFormClose from "handleFormClose";
@@ -26,7 +26,7 @@ let require = arg1;
 ({ Image: c4, View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ AnalyticEvents: c10, LoginRequiredActions: unpackModuleId } = ME);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-let closure_14 = { newPassword: "call", password: 17056321 };
+let closure_14 = { newPassword: "call", password: 17083457 };
 createCacheKey = { onePass: { width: 20, height: 20 }, unverifiedWrapper: null, container: null, header: null, requiredActionsSubtitle: null, requiredActionsTitle: null, image: null };
 createCacheKey = { overflow: "hidden", borderRadius: require("Themes").radii.xs, marginVertical: 16 };
 createCacheKey[1] = createCacheKey;
@@ -130,7 +130,7 @@ class EditPassword extends Component {
 const prototype = EditPassword.prototype;
 prototype["componentWillUnmount"] = function componentWillUnmount() {
   try {
-    importAll(9226).resetAccount();
+    importAll(9222).resetAccount();
   } catch (err) {
   }
 };
@@ -162,7 +162,7 @@ prototype["render"] = function render() {
   if (hasBannerText) {
     obj = { style: null, children: null };
     obj[0] = tmp.unverifiedWrapper;
-    obj[1] = tmp2(importDefault(9230), {});
+    obj[1] = tmp2(importDefault(9226), {});
     hasBannerText = tmp2(tmp5, obj);
   }
   const items = [hasBannerText, , , ];
@@ -171,7 +171,7 @@ prototype["render"] = function render() {
     obj = { style: null, children: null };
     obj[0] = tmp.header;
     const obj1 = { source: null, style: null };
-    obj1[0] = importDefault(13809);
+    obj1[0] = importDefault(13804);
     obj1[1] = tmp.image;
     const items1 = [tmp2(closure_4, obj1), , ];
     const obj2 = { style: null, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
@@ -211,7 +211,7 @@ prototype["render"] = function render() {
   obj7[3] = self.handlePasswordChange;
   obj7[4] = password;
   obj7[5] = self.canSubmit() ? self.handleSubmit : self.handleFocusNewPassword;
-  const items3 = [closure_12(require(6727) /* TextInput */.TextInput, obj7), , ];
+  const items3 = [closure_12(require(6724) /* TextInput */.TextInput, obj7), , ];
   const obj8 = { label: newPasswordLabel, ref: self.handleSetNewPasswordRef, secureTextEntry: true, errorMessage: null, onChange: null, value: null, returnKeyType: "done", autoComplete: "new-password", onSubmitEditing: null, required: true };
   obj8[3] = self.getError("new_password");
   obj8[4] = self.handleNewPasswordChange;
@@ -221,7 +221,7 @@ prototype["render"] = function render() {
     handleSubmit = self.handleSubmit;
   }
   obj8[8] = handleSubmit;
-  items3[1] = closure_12(require(6727) /* TextInput */.TextInput, obj8);
+  items3[1] = closure_12(require(6724) /* TextInput */.TextInput, obj8);
   const obj9 = { text: null, onPress: null, loading: null, disabled: null };
   const intl5 = tmp16(1236).intl;
   obj9[0] = intl5.string(require(1236) /* getSystemLocale */.t["FRep5/"]);
@@ -247,7 +247,7 @@ EditPassword.contextType = require("ManaContext").ThemeContext;
 let result = require("handleUpdateUser").fileFinishedImporting("modules/user_settings/account/native/UserSettingsAccountEditPassword.tsx");
 
 export default function EditPasswordWrapper() {
-  let obj = flag(6330);
+  let obj = flag(6327);
   const params = obj.useSettingNavigationRoute().params;
   flag = undefined;
   if (params != null) {

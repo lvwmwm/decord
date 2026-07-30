@@ -1,10 +1,10 @@
-// Module ID: 14940
-// Function ID: 14941
+// Module ID: 14934
+// Function ID: 14935
 // Name: getDropIndex
-// Dependencies: [5, 19, 17, 1862, 5027, 14941, 14942, 4050, 636, 4158, 4035, 12, 1208, 1236, 7678, 14931, 3893, 712, 3802, 9913, 705, 5105, 6206, 9300, 500, 1581, 4586, 14943, 14944, 14126, 5273, 2]
+// Dependencies: [5, 19, 17, 1862, 5027, 14935, 14936, 4050, 636, 4158, 4035, 12, 1208, 1236, 7675, 14925, 3893, 712, 3802, 9910, 705, 5105, 6203, 9296, 500, 1581, 4586, 14937, 14938, 14122, 5273, 2]
 // Exports: default
 
-// Module 14940 (getDropIndex)
+// Module 14934 (getDropIndex)
 import withEqualityFn from "withEqualityFn";
 import closure_4 from "t";
 import { Dimensions } from "Themes";
@@ -278,8 +278,8 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, current) {
         GUILDS = store2.getFastListGuildFolders()[item.section - tmp8.GUILDS];
         if (null != GUILDS) {
           const type = item.type;
-          if (require(7678) /* renderDefaultEmpty */.FastListItemTypes.SECTION !== type) {
-            if (tmp10(7678).FastListItemTypes.ITEM === type) {
+          if (require(7675) /* renderDefaultEmpty */.FastListItemTypes.SECTION !== type) {
+            if (tmp10(7675).FastListItemTypes.ITEM === type) {
               if (GUILDS.type !== GuildsNodeType.ROOT) {
                 let tmp13 = GUILDS;
                 if (GUILDS.type !== tmp12.FOLDER) {
@@ -693,7 +693,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    state.setStateShallow({ dragSpecs: "dispatch", overSpecs: "isArray" });
+    state.setStateShallow({ dragSpecs: "Array", overSpecs: "ct" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj5 = {};
@@ -817,7 +817,7 @@ export default function useGuildsBarGesture() {
             }
           }
         }
-        const obj5 = { dragSpecs: null, overSpecs: "Array", windowSize: 2086900762484230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+        const obj5 = { dragSpecs: null, overSpecs: "Array", windowSize: -1 };
         obj5[0] = obj;
         obj5[2] = sum;
         setStateShallow(obj5);

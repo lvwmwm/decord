@@ -1,9 +1,9 @@
-// Module ID: 15905
-// Function ID: 15906
+// Module ID: 15899
+// Function ID: 15900
 // Name: SoundCategoryItem
-// Dependencies: [19, 17, 15890, 1874, 676, 21, 4189, 712, 4642, 5566, 1236, 9624, 4153, 15903, 4717, 1297, 4709, 4158, 4159, 589, 3835, 6209, 1581, 4060, 8378, 2]
+// Dependencies: [19, 17, 15884, 1874, 676, 21, 4189, 712, 4642, 5566, 1236, 9621, 4153, 15897, 4717, 1297, 4709, 4158, 4159, 589, 3835, 6206, 1581, 4060, 8375, 2]
 
-// Module 15905 (SoundCategoryItem)
+// Module 15899 (SoundCategoryItem)
 import importAllResult from "initialize";
 import get_ActivityIndicator from "HapticFeedbackTypes";
 import { setSearchQuery } from "withEqualityFn";
@@ -44,7 +44,7 @@ function SoundCategoryItem(style) {
   } else if (tmp2(4642).SoundboardSoundGridSectionType.FAVORITES === type) {
     const intl3 = tmp2(1236).intl;
     name = intl3.string(tmp2(1236).t.y3LQCG);
-    tmp4 = importDefault(9624);
+    tmp4 = importDefault(9621);
     tmp5 = null;
     tmp13Result = null;
   } else if (tmp2(4642).SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
@@ -58,7 +58,7 @@ function SoundCategoryItem(style) {
   } else if (tmp2(4642).SoundboardSoundGridSectionType.DEFAULTS === type) {
     const intl = tmp2(1236).intl;
     name = intl.string(tmp2(1236).t.Rtvk9X);
-    tmp4 = importDefault(15903);
+    tmp4 = importDefault(15897);
     tmp5 = null;
     tmp13Result = null;
   } else {
@@ -69,7 +69,7 @@ function SoundCategoryItem(style) {
     if (tmp2(4642).SoundboardSoundGridSectionType.SEARCH === type) {
       const intl4 = tmp2(1236).intl;
       name = intl4.string(tmp2(1236).t.sKt3xS);
-      tmp4 = importDefault(15903);
+      tmp4 = importDefault(15897);
       tmp5 = null;
       tmp13Result = null;
     }

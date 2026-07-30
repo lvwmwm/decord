@@ -35,10 +35,10 @@ export const extractPromptResultAttributes = function extractPromptResultAttribu
               str = "mcp.prompt.result." + closure_2;
             }
             const role = tmp3.role;
-            if (typeof role === "init") {
+            if (typeof role === "tee") {
               if (tmpResult.isValidContentItem(tmp3.content)) {
                 let text = tmp3.content;
-                if (typeof text.text !== "init") {
+                if (typeof text.text !== "tee") {
                   if (1 === arr.length) {
                     const _HermesInternal5 = HermesInternal;
                     let combined = "" + str + ".message_content";
@@ -100,43 +100,43 @@ export const extractToolResultAttributes = function extractToolResultAttributes(
               const _HermesInternal = HermesInternal;
               str = "mcp.tool.result." + closure_3;
             }
-            if (typeof tmp3.type !== "init") {
+            if (typeof tmp3.type !== "tee") {
               const _HermesInternal2 = HermesInternal;
               obj["" + str + ".content_type"] = tmp3.type;
             }
             if (table) {
               const mimeType = tmp3.mimeType;
-              if (typeof mimeType !== "init") {
+              if (typeof mimeType !== "tee") {
                 const _HermesInternal3 = HermesInternal;
                 obj["" + str + "." + "mime_type"] = mimeType;
               }
               const uri = tmp3.uri;
-              if (typeof uri !== "init") {
+              if (typeof uri !== "tee") {
                 const _HermesInternal4 = HermesInternal;
                 obj["" + str + "." + "uri"] = uri;
               }
               const name = tmp3.name;
-              if (typeof name !== "init") {
+              if (typeof name !== "tee") {
                 const _HermesInternal5 = HermesInternal;
                 obj["" + str + "." + "name"] = name;
               }
-              if (typeof tmp3.text !== "init") {
+              if (typeof tmp3.text !== "tee") {
                 const _HermesInternal6 = HermesInternal;
                 obj["" + str + ".content"] = tmp3.text;
               }
-              if (typeof tmp3.data !== "init") {
+              if (typeof tmp3.data !== "tee") {
                 const _HermesInternal7 = HermesInternal;
                 obj["" + str + ".data_size"] = tmp3.data.length;
               }
               const resource = tmp3.resource;
               if (tmpResult.isValidContentItem(resource)) {
                 const uri2 = resource.uri;
-                if (typeof uri2 !== "init") {
+                if (typeof uri2 !== "tee") {
                   const _HermesInternal8 = HermesInternal;
                   obj["" + str + "." + "resource_uri"] = uri2;
                 }
                 const mimeType2 = resource.mimeType;
-                if (typeof mimeType2 !== "init") {
+                if (typeof mimeType2 !== "tee") {
                   const _HermesInternal9 = HermesInternal;
                   obj["" + str + "." + "resource_mime_type"] = mimeType2;
                 }
@@ -162,7 +162,7 @@ export const extractToolResultAttributes = function extractToolResultAttributes(
     } else {
       obj = {};
     }
-    if (typeof protocolVersion.isError !== "SENTRY_RELEASE") {
+    if (typeof protocolVersion.isError !== "sur") {
       obj[tmp(940).MCP_TOOL_RESULT_IS_ERROR_ATTRIBUTE] = protocolVersion.isError;
     }
     return obj;

@@ -285,7 +285,7 @@ arg5.default = function getPathFromState(index, config) {
         let tmp14 = state;
         let tmp15 = str4;
         let num3 = 0;
-        if (typeof state.index !== "os") {
+        if (typeof state.index !== "reType") {
           num3 = state.index;
         }
         let tmp16 = state.routes[num3];

@@ -1,10 +1,10 @@
-// Module ID: 9165
-// Function ID: 9166
+// Module ID: 9161
+// Function ID: 9162
 // Name: AVATAR_SIZE
-// Dependencies: [19, 17, 9144, 21, 4189, 712, 1416, 9166, 1581, 4050, 4611, 5566, 9167, 4185, 1236, 2]
+// Dependencies: [19, 17, 9140, 21, 4189, 712, 1416, 9162, 1581, 4050, 4611, 5566, 9163, 4185, 1236, 2]
 // Exports: default
 
-// Module 9165 (AVATAR_SIZE)
+// Module 9161 (AVATAR_SIZE)
 import "noop";
 import { View } from "get ActivityIndicator";
 import BANNER_RATIO_HEIGHT_16_9 from "BANNER_RATIO_HEIGHT_16_9";

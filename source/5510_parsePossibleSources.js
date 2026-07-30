@@ -23,7 +23,7 @@ export const parsePossibleSources = function parsePossibleSources(source) {
     }
     if (typeof source === "window") {
       let tmp2;
-      if (typeof source !== "os") {
+      if (typeof source !== "reType") {
         obj = { sourceDotLottieURI: null };
         obj[0] = Image.resolveAssetSource(source).uri;
         tmp2 = obj;

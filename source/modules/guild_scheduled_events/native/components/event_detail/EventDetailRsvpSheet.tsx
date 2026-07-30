@@ -1,9 +1,9 @@
-// Module ID: 12276
-// Function ID: 12277
+// Module ID: 12270
+// Function ID: 12271
 // Name: EmptyDisplay
-// Dependencies: [19, 17, 4276, 1874, 505, 21, 4189, 712, 5109, 6724, 12277, 4185, 1236, 7634, 5141, 5515, 589, 1297, 9454, 4028, 8359, 12278, 5245, 5637, 2]
+// Dependencies: [19, 17, 4276, 1874, 505, 21, 4189, 712, 5109, 6721, 12271, 4185, 1236, 7631, 5141, 5515, 589, 1297, 9450, 4028, 8356, 12272, 5245, 5637, 2]
 
-// Module 12276 (EmptyDisplay)
+// Module 12270 (EmptyDisplay)
 import importAllResult from "nameFromUser";
 import { View } from "Button";
 import sortActivity from "sortActivity";
@@ -24,8 +24,8 @@ function EmptyDisplay(arg0) {
   const items = [callback3().emptyDisplayContainer, style];
   obj[0] = items;
   obj = { icon: null };
-  obj[0] = importDefault(12277);
-  const items1 = [callback(importDefault(6724), obj), children];
+  obj[0] = importDefault(12271);
+  const items1 = [callback(importDefault(6721), obj), children];
   obj[1] = items1;
   return callback2(View, obj);
 }
@@ -50,13 +50,13 @@ function RemainingUsersRow(remainingUsersGroup) {
   let obj = { DEPRECATED_style: tmp.userListRow, leading: null, label: null };
   obj = { style: tmp.remainingUsersIconContainer, children: null };
   obj = { source: null, style: null };
-  obj[0] = importDefault(12277);
+  obj[0] = importDefault(12271);
   obj[1] = tmp.remainingUsersIcon;
   obj[1] = callback(importDefault(5141), obj);
   obj[1] = callback(View, obj);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.BdQTfR, { userRemainCount: remainingUsersGroup.remainingUsersGroup.count });
-  return callback(require(7634) /* Form */.FormRow, obj, "userRemaining");
+  return callback(require(7631) /* Form */.FormRow, obj, "userRemaining");
 }
 function keyExtractor(count) {
   if (obj.isRemainingUsersGroup(count)) {
@@ -256,7 +256,7 @@ const memoResult = importAllResult.memo((eventUser) => {
   obj1 = { user: stateFromStores, nick: null, usernameStyle: null, nicknameStyle: null };
   const member = eventUser.member;
   let nick;
-  let tmp2Result = tmp2(9454);
+  let tmp2Result = tmp2(9450);
   if (member != null) {
     nick = member.nick;
   }
@@ -270,7 +270,7 @@ const memoResult = importAllResult.memo((eventUser) => {
   obj[3] = function onPress() {
     analyticsLocations(outer1_2[20])({ userId: eventUser.user_id, sourceAnalyticsLocations: analyticsLocations });
   };
-  return closure_7(eventUser(7634).FormRow, obj, eventUser.user_id);
+  return closure_7(eventUser(7631).FormRow, obj, eventUser.user_id);
 });
 EventDetailRsvpSheet.displayName = "EventDetailRsvpSheet";
 let obj3 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: 16, height: 32, width: 32, alignItems: "center", justifyContent: "center" };

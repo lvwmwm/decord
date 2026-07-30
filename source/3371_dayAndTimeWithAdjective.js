@@ -38,7 +38,7 @@ let closure_5 = { lastWeek: dayAndTimeWithAdjective, yesterday: "'wczoraj o' p",
 
 export default function formatRelative(arg0, arg1, arg2, arg3) {
   let tmpResult = tmp;
-  if (typeof table2[arg0] !== "_") {
+  if (typeof table2[arg0] !== "ZodObject") {
     tmpResult = tmp(arg0, arg1, arg2, arg3);
   }
   return tmpResult;

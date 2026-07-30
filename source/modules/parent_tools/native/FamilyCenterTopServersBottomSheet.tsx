@@ -1,10 +1,10 @@
-// Module ID: 13929
-// Function ID: 13930
+// Module ID: 13924
+// Function ID: 13925
 // Name: GuildRow
-// Dependencies: [5793, 21, 4189, 712, 589, 5855, 5220, 5566, 5551, 4185, 1236, 2223, 5554, 2]
+// Dependencies: [5793, 21, 4189, 712, 589, 5853, 5220, 5566, 5551, 4185, 1236, 2223, 5554, 2]
 // Exports: default
 
-// Module 13929 (GuildRow)
+// Module 13924 (GuildRow)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -20,7 +20,7 @@ function GuildRow(guildActivity) {
   if (null == stateFromStores) {
     return null;
   } else {
-    const topUserOrGuildDescription = tmp2(5855).getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
+    const topUserOrGuildDescription = tmp2(5853).getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
     obj = { label: null, subLabel: null, icon: null };
     obj[0] = stateFromStores.name;
     obj[1] = topUserOrGuildDescription;

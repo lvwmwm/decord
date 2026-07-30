@@ -1,10 +1,10 @@
-// Module ID: 8054
-// Function ID: 8055
+// Module ID: 8051
+// Function ID: 8052
 // Name: getCachedSourceFromURI
 // Dependencies: [32, 19, 17, 1386, 4033, 712, 643, 2]
 // Exports: getCachedSourceFromURI, useDominantColorFromImage, useDominantRGBFromImage
 
-// Module 8054 (getCachedSourceFromURI)
+// Module 8051 (getCachedSourceFromURI)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";

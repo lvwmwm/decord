@@ -1,9 +1,9 @@
-// Module ID: 7720
-// Function ID: 7721
+// Module ID: 7717
+// Function ID: 7718
 // Name: createThreadEmbed
-// Dependencies: [17, 4181, 4226, 4001, 5048, 7719, 7721, 3818, 7722, 5857, 3819, 6066, 1302, 1218, 1372, 1942, 1862, 3826, 6149, 1874, 4182, 7714, 676, 7724, 4380, 7725, 11, 7726, 7727, 1236, 7729, 7730, 7731, 4524, 1384, 6072, 7736, 4628, 7737, 7739, 5923, 7741, 7863, 7864, 7883, 5877, 5862, 3862, 7884, 7889, 7815, 7932, 4418, 1419, 1416, 7935, 1297, 5539, 7991, 1351, 7992, 3806, 4996, 7993, 7994, 3859, 7997, 8005, 7942, 6046, 712, 8006, 7744, 8008, 8009, 7860, 8012, 8031, 12350, 12369, 12371, 12385, 7747, 7748, 12386, 12389, 12390, 12391, 7749, 12392, 2]
+// Dependencies: [17, 4181, 4226, 4001, 5048, 7716, 7718, 3818, 7719, 5855, 3819, 6064, 1302, 1218, 1372, 1942, 1862, 3826, 6147, 1874, 4182, 7711, 676, 7721, 4380, 7722, 11, 7723, 7724, 1236, 7726, 7727, 7728, 4524, 1384, 6070, 7733, 4628, 7734, 7736, 5921, 7738, 7860, 7861, 7880, 5875, 5860, 3862, 7881, 7886, 7812, 7929, 4418, 1419, 1416, 7932, 1297, 5539, 7988, 1351, 7989, 3806, 4996, 7990, 7991, 3859, 7994, 8002, 7939, 6044, 712, 8003, 7741, 8005, 8006, 7857, 8009, 8028, 12344, 12363, 12365, 12379, 7744, 7745, 12380, 12383, 12384, 12385, 7746, 12386, 2]
 
-// Module 7720 (createThreadEmbed)
+// Module 7717 (createThreadEmbed)
 import { processColor } from "upsertRelationship";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import addApplication from "addApplication";
@@ -43,19 +43,19 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
       if (null != channel1) {
         let string2Result = dependencyMap;
         const channelName = require(4380) /* computeChannelName */.computeChannelName(channel1, mergeGuildAvatar, upsertRelationship);
-        const backgroundColor = importDefault(7725)(arg5).baseColors.backgroundColor;
+        const backgroundColor = importDefault(7722)(arg5).baseColors.backgroundColor;
         const obj11 = require(4380) /* computeChannelName */;
         const tmp19 = importDefault;
         const mostRecentMessage = store3.getMostRecentMessage(importDefault(11).castMessageIdAsChannelId(message.id));
         const obj12 = importDefault(11);
         const count = store3.getCount(importDefault(11).castMessageIdAsChannelId(message.id));
         const obj13 = importDefault(11);
-        let intl5 = require(7726) /* _formatMessageCountLabel */.formatMobileMessageCountLabel(count, channel1.id);
-        const obj14 = require(7726) /* _formatMessageCountLabel */;
-        let string2 = require(7726) /* _formatMessageCountLabel */.formatMessageCountLabel(count, channel1.id);
+        let intl5 = require(7723) /* _formatMessageCountLabel */.formatMobileMessageCountLabel(count, channel1.id);
+        const obj14 = require(7723) /* _formatMessageCountLabel */;
+        let string2 = require(7723) /* _formatMessageCountLabel */.formatMessageCountLabel(count, channel1.id);
         if (null != count) {
           if (count > 0) {
-            let tmp15Result = tmp15(7727);
+            let tmp15Result = tmp15(7724);
             if (tmp15Result.isChannelSpoilerGated(channel1)) {
               let obj = { title: null, messageCountLabel: null, messageCountAccessibilityLabel: null, messagePreviewString: null, archived: false, backgroundColor: null };
               obj[0] = channelName;
@@ -80,8 +80,8 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
                 obj[2] = string2;
                 const intl4 = tmp15(1236).intl;
                 obj[3] = intl4.string(tmp15(1236).t.ZTo4HS);
-                tmp15Result = tmp15(7729);
-                obj[5] = tmp15Result.getAssetUriForEmbed(tmp19(7730));
+                tmp15Result = tmp15(7726);
+                obj[5] = tmp15Result.getAssetUriForEmbed(tmp19(7727));
                 obj[6] = backgroundColor;
                 obj1 = obj;
               } else {
@@ -873,7 +873,7 @@ function createMessageContent(message) {
                 obj24[3] = merged.flags;
                 obj24[4] = message.type;
                 if (null != message.nonce) {
-                  if (typeof message.nonce === "init") {
+                  if (typeof message.nonce === "tee") {
                     merged = globalThis;
                     const _String = String;
                     let nonce = String(message.nonce);
@@ -1277,7 +1277,7 @@ function createMessageContent(message) {
       applicationIconSource = author.getAvatarSource(undefined);
       tmp13Result8 = tmp13(tmp3[53]);
     }
-    parseMessageMarkupResult = { content: "PX_16", hasSpoilerEmbeds: "horse", hasBailedAst: "horse_face" };
+    parseMessageMarkupResult = { content: "PX_16", hasSpoilerEmbeds: "GuildBasicChannels", hasBailedAst: null };
     const tmp13Result2 = tmp13(tmp3[42]);
   }
 }

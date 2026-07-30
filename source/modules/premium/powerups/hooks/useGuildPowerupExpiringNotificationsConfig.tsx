@@ -1,15 +1,15 @@
-// Module ID: 11648
-// Function ID: 11649
+// Module ID: 11644
+// Function ID: 11645
 // Name: useGuildPowerupExpiringNotificationsConfig
-// Dependencies: [11649, 11650, 1236, 2645, 4080, 2255, 2]
+// Dependencies: [11645, 11646, 1236, 2645, 4080, 2255, 2]
 // Exports: default
 
-// Module 11648 (useGuildPowerupExpiringNotificationsConfig)
+// Module 11644 (useGuildPowerupExpiringNotificationsConfig)
 const result = require("getSystemLocale").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupExpiringNotificationsConfig.tsx");
 
 export default function useGuildPowerupExpiringNotificationsConfig(arg0) {
-  let arr = importDefault(11649)(arg0);
-  const arr2 = importDefault(11650)(arg0);
+  let arr = importDefault(11645)(arg0);
+  const arr2 = importDefault(11646)(arg0);
   if (arr.length > 0 || arr2.length > 0) {
     let stringResult;
     if (arr2.length > 0) {

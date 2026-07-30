@@ -1,10 +1,10 @@
-// Module ID: 9570
-// Function ID: 9571
+// Module ID: 9567
+// Function ID: 9568
 // Name: Tags
-// Dependencies: [5, 32, 19, 17, 4181, 1302, 4526, 1942, 3817, 1931, 5971, 4525, 1874, 676, 1379, 1369, 1338, 1235, 505, 21, 4189, 712, 5515, 589, 4035, 4055, 6182, 4380, 9133, 5967, 6051, 4028, 5215, 4050, 6088, 4197, 5713, 12, 9135, 7686, 9571, 9572, 4529, 1236, 9573, 9575, 500, 9576, 9577, 9580, 1358, 9581, 1959, 9582, 9583, 7634, 1297, 6184, 1579, 1478, 8999, 8359, 9586, 4185, 9587, 9657, 9664, 9665, 6653, 9666, 9668, 6752, 9873, 4701, 9672, 6078, 4157, 9875, 6576, 4600, 4686, 2]
+// Dependencies: [5, 32, 19, 17, 4181, 1302, 4526, 1942, 3817, 1931, 5969, 4525, 1874, 676, 1379, 1369, 1338, 1235, 505, 21, 4189, 712, 5515, 589, 4035, 4055, 6179, 4380, 9129, 5965, 6049, 4028, 5215, 4050, 6086, 4197, 5713, 12, 9131, 7683, 9568, 9569, 4529, 1236, 9570, 9572, 500, 9573, 9574, 9577, 1358, 9578, 1959, 9579, 9580, 7631, 1297, 6181, 1579, 1478, 8995, 8356, 9583, 4185, 9584, 9654, 9661, 9662, 6650, 9663, 9665, 6749, 9870, 4701, 9669, 6076, 4157, 9872, 6573, 4600, 4686, 2]
 // Exports: default
 
-// Module 9570 (Tags)
+// Module 9567 (Tags)
 import handleThemeChange from "handleThemeChange";
 import useSafeAreaInsetsKeyboardAware from "useSafeAreaInsetsKeyboardAware";
 import closure_5 from "jsxProd";
@@ -53,7 +53,7 @@ function Tags(tags) {
     obj = { size: "sm", style: null };
     obj[1] = tmp.tagIcon;
     let items = [
-      callback(require(6653) /* TagIcon */.TagIcon, obj),
+      callback(require(6650) /* TagIcon */.TagIcon, obj),
       tags.map((id) => {
           let tmp2 = 0 !== arg1;
           if (tmp2) {
@@ -131,7 +131,7 @@ function ActionBar(channel) {
     obj = { attachments: null, channelId: null, highlightThumbnails: true };
     obj[0] = stateFromStores;
     obj[1] = channel.id;
-    isMediaChannelResult = callback(tmp5(9668), obj);
+    isMediaChannelResult = callback(tmp5(9665), obj);
   }
   const items3 = [isMediaChannelResult, ];
   obj1 = { style: tmp.actions, children: null };
@@ -144,7 +144,7 @@ function ActionBar(channel) {
       const items5 = [, ];
       ({ actionButton: arr9[0], mediaButton: arr9[1] } = tmp);
       obj2[1] = items5;
-      obj2[2] = tmp2(6653).TagIcon;
+      obj2[2] = tmp2(6650).TagIcon;
       obj2[3] = function onPress() {
         isEdit.dismiss();
         let obj = outer1_1(outer1_2[76]);
@@ -170,18 +170,18 @@ function ActionBar(channel) {
         };
         obj.openLazy(channel(outer1_2[52])(outer1_2[77], outer1_2.paths), "ForumPostTagsActionSheet", obj);
       };
-      tmp10 = callback(tmp2(6752).HeaderActionButton, obj2);
+      tmp10 = callback(tmp2(6749).HeaderActionButton, obj2);
     }
     items4[1] = tmp10;
-    let tmp18 = lastInput === tmp2(9575).PostComposerInputs.CONTENT;
+    let tmp18 = lastInput === tmp2(9572).PostComposerInputs.CONTENT;
     if (tmp18) {
       const obj3 = { accessibilityLabel: null, style: null, IconComponent: null, onPress: null, foregroundRipple: true };
       const intl3 = tmp2(1236).intl;
       obj3[0] = intl3.string(tmp2(1236).t.iZ7Mz9);
       obj3[1] = tmp.actionButton;
-      obj3[2] = tmp2(6576).ReactionIcon;
+      obj3[2] = tmp2(6573).ReactionIcon;
       obj3[3] = onShowExpressionPicker;
-      tmp18 = callback(tmp2(6752).HeaderActionButton, obj3);
+      tmp18 = callback(tmp2(6749).HeaderActionButton, obj3);
     }
     items4[2] = tmp18;
     const obj4 = { style: null, children: null };
@@ -223,7 +223,7 @@ function ActionBar(channel) {
     ({ actionButton: arr7[0], mediaButton: arr7[1] } = tmp);
     obj7[1] = items6;
     if (tmp8) {
-      let ImageIcon = tmp2(9873).KeyboardIcon;
+      let ImageIcon = tmp2(9870).KeyboardIcon;
     } else {
       ImageIcon = tmp2(4701).ImageIcon;
     }
@@ -238,7 +238,7 @@ function ActionBar(channel) {
       }
       const result1 = channel(outer1_2[75]).trackForumChannelMediaUploaderClicked({ isMobile: true });
     };
-    callback(tmp2(6752).HeaderActionButton, obj7);
+    callback(tmp2(6749).HeaderActionButton, obj7);
     const tmp15 = callback;
   }
 }
@@ -742,7 +742,7 @@ export default function ForumComposer(parentChannel) {
                 c1 = undefined;
                 c5 = 1;
                 c6 = 1;
-                return { value: "ct", done: null };
+                return { value: "ct", done: "Array" };
               }
             } else {
               if (1 === tmp8) {

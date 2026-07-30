@@ -1,10 +1,10 @@
-// Module ID: 15411
-// Function ID: 15412
+// Module ID: 15405
+// Function ID: 15406
 // Name: TruncatedText
-// Dependencies: [32, 19, 17, 3840, 21, 4189, 712, 4185, 1236, 4717, 1297, 15412, 6572, 14244, 647, 6573, 5669, 2]
+// Dependencies: [32, 19, 17, 3840, 21, 4189, 712, 4185, 1236, 4717, 1297, 15406, 6569, 14240, 647, 6570, 5669, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 15411 (TruncatedText)
+// Module 15405 (TruncatedText)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "set";
@@ -109,20 +109,20 @@ export const ArrowButton = function ArrowButton(arg0) {
   const items = [callback2(require(4185) /* Text */.Text, obj), ];
   obj = { size: null, source: null, style: null };
   obj[0] = require(1297) /* Button */.Icon.Sizes.SMALL;
-  obj[1] = importDefault(15412);
+  obj[1] = importDefault(15406);
   obj[2] = tmp.arrowButtonIcon;
   items[1] = callback2(require(1297) /* Button */.Icon, obj);
   obj[3] = items;
   return callback3(require(4717) /* PressableBase */.PressableOpacity, obj);
 };
 export const useFormattedSubscriptionPlan = function useFormattedSubscriptionPlan(listingId) {
-  const obj = importDefault(6572);
-  const _require = callback(importAll(14244).useSubscriptionPlan(listingId), 1)[0];
-  const obj2 = importAll(14244);
+  const obj = importDefault(6569);
+  const _require = callback(importAll(14240).useSubscriptionPlan(listingId), 1)[0];
+  const obj2 = importAll(14240);
   const tmp2 = _require;
   const items = [addSubscriptionPlan];
   const stateFromStores = _require(647).useStateFromStores(items, () => outer1_8.get(id.id));
-  const price = importDefault(6573)(stateFromStores, obj.useNativeIAPPayments().storeFront).price;
+  const price = importDefault(6570)(stateFromStores, obj.useNativeIAPPayments().storeFront).price;
   let str = "No Price Available";
   if (null != price) {
     const _HermesInternal = HermesInternal;

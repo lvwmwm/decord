@@ -1,10 +1,10 @@
-// Module ID: 10003
-// Function ID: 10004
+// Module ID: 9999
+// Function ID: 10000
 // Name: setIndex
-// Dependencies: [19, 1372, 5127, 4201, 3826, 1874, 676, 1379, 5788, 4386, 5658, 5102, 4380, 5128, 5781, 10004, 5126, 1222, 4005, 1358, 589, 1236, 3771, 11, 2]
+// Dependencies: [19, 1372, 5127, 4201, 3826, 1874, 676, 1379, 5788, 4386, 5658, 5102, 4380, 5128, 5781, 10000, 5126, 1222, 4005, 1358, 589, 1236, 3771, 11, 2]
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useChannelBrowserChannelCount, useChannelBrowserSections, useFilterCategoriesByQuery
 
-// Module 10003 (setIndex)
+// Module 9999 (setIndex)
 import DismissibleContent from "DismissibleContent";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import setIndex from "setIndex";
@@ -129,8 +129,8 @@ export const clearRecentChannels = function clearRecentChannels(closure_0, closu
   if (arg2 === undefined) {
     tmp = null;
   }
-  require(10004) /* _bulkClearRecents */.bulkClearRecents(closure_0, closure_1);
-  const obj = require(10004) /* _bulkClearRecents */;
+  require(10000) /* _bulkClearRecents */.bulkClearRecents(closure_0, closure_1);
+  const obj = require(10000) /* _bulkClearRecents */;
   const tmp2 = require;
   require(5126) /* ack */.bulkAck(closure_1.map((channelId) => ({ channelId, readStateType: constants.CHANNEL, messageId: generateOldThreadCutoff.lastMessageId(channelId) })));
   if (null != tmp) {

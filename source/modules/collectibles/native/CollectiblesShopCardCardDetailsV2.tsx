@@ -1,9 +1,9 @@
-// Module ID: 8715
-// Function ID: 8716
+// Module ID: 8711
+// Function ID: 8712
 // Name: memoResult1
-// Dependencies: [19, 17, 5672, 676, 21, 4189, 712, 8661, 5809, 8716, 5810, 8719, 8725, 4185, 1236, 8705, 500, 6653, 6627, 8664, 8700, 1901, 3835, 3893, 4033, 8726, 589, 4611, 8727, 2]
+// Dependencies: [19, 17, 5672, 676, 21, 4189, 712, 8658, 5809, 8712, 5810, 8715, 8721, 4185, 1236, 8701, 500, 6650, 6624, 8661, 8696, 1901, 3835, 3893, 4033, 8722, 589, 4611, 8723, 2]
 
-// Module 8715 (memoResult1)
+// Module 8711 (memoResult1)
 import importAllResult from "useCurrentUser";
 import { View } from "TagIcon";
 import updateProduct from "updateProduct";
@@ -234,9 +234,9 @@ const memoResult1 = importAllResult.memo(function CardDetailsV2(arg0) {
   ({ product, hidePrice } = arg0);
   ({ collectibleProductState, preferVCPrice, isDisabled } = arg0);
   const tmp = callback2();
-  let obj = require(8664) /* useCurrentUser */;
+  let obj = require(8661) /* useCurrentUser */;
   const currentUser = obj.useCurrentUser();
-  let obj1 = require(8700) /* useCanPurchaseFrames */;
+  let obj1 = require(8696) /* useCanPurchaseFrames */;
   let isProfileFramesEarlyAccessPhase = obj1.useIsProfileFramesEarlyAccessPhase("CollectiblesShopCardCardDetailsV2");
   if (isProfileFramesEarlyAccessPhase) {
     let tmp2Result = tmp2(5809);
@@ -255,8 +255,8 @@ const memoResult1 = importAllResult.memo(function CardDetailsV2(arg0) {
   const tmp2Result4 = require(4033) /* hexToRgba */;
   const tmp2Result5 = require(4033) /* hexToRgba */;
   const hexToRgbaStringResult1 = tmp2Result4.hexToRgbaString(require(4033) /* hexToRgba */.hexWithOpacity(token, 0));
-  const productName = require(8726) /* getProductName */.getProductName(product);
-  const tmp2Result6 = require(8726) /* getProductName */;
+  const productName = require(8722) /* getProductName */.getProductName(product);
+  const tmp2Result6 = require(8722) /* getProductName */;
   const items = [updateProduct];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => fetchingGoogleSkus.isFetchingGoogleSkus());
   obj = { style: items1, colors: items2, locations: [0, 0.4, 1], start: constants.START, end: constants.END, children: null };
@@ -281,7 +281,7 @@ const memoResult1 = importAllResult.memo(function CardDetailsV2(arg0) {
     const items4 = [tmp17(closure_11, obj2), ];
     obj3 = { product: null };
     obj3[0] = product;
-    items4[1] = tmp17(tmp7(8727), obj3);
+    items4[1] = tmp17(tmp7(8723), obj3);
     obj1[1] = items4;
     tmp15Result = tmp15(View, obj1);
   }

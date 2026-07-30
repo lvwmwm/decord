@@ -1,10 +1,10 @@
-// Module ID: 8476
-// Function ID: 8477
+// Module ID: 8473
+// Function ID: 8474
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 4210, 676, 698, 1384, 8477, 5908, 8478, 38, 2]
+// Dependencies: [19, 4210, 676, 698, 1384, 8474, 5906, 8475, 38, 2]
 // Exports: default, gameIdIsAcceptable, gameIsAcceptable
 
-// Module 8476 (useShouldOpenGameProfileModal)
+// Module 8473 (useShouldOpenGameProfileModal)
 import noop from "noop";
 import map from "map";
 import { AnalyticEvents } from "ME";
@@ -102,7 +102,7 @@ export const gameIsAcceptable = function gameIsAcceptable(gameFlags) {
     let arr = items;
   } else {
     const items1 = [];
-    if (obj2.hasFlag(gameFlags.gameFlags, require(8477) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
+    if (obj2.hasFlag(gameFlags.gameFlags, require(8474) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
       arr = items1.push(closure_7.Disabled);
     }
     obj2 = importAll(1384);
@@ -112,7 +112,7 @@ export const gameIsAcceptable = function gameIsAcceptable(gameFlags) {
       arr = items1.push(closure_7.NSFW);
       arr = items1;
     }
-    tmp8Result = require(5908) /* isAgeRestrictedContentClassification */;
+    tmp8Result = require(5906) /* isAgeRestrictedContentClassification */;
   }
   return 0 === arr.length;
 };
@@ -123,7 +123,7 @@ export const gameIdIsAcceptable = function gameIdIsAcceptable(gameId) {
     let arr = items;
   } else {
     const items1 = [];
-    if (obj2.hasFlag(game.gameFlags, require(8477) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
+    if (obj2.hasFlag(game.gameFlags, require(8474) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
       arr = items1.push(closure_7.Disabled);
     }
     obj2 = importAll(1384);
@@ -133,7 +133,7 @@ export const gameIdIsAcceptable = function gameIdIsAcceptable(gameId) {
       arr = items1.push(closure_7.NSFW);
       arr = items1;
     }
-    tmp9Result = require(5908) /* isAgeRestrictedContentClassification */;
+    tmp9Result = require(5906) /* isAgeRestrictedContentClassification */;
   }
   return 0 === arr.length;
 };

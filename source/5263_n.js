@@ -6,7 +6,7 @@
 // Module 5263 (n)
 const fn = function n(arg0, arg1) {
   let result = arg0;
-  if (typeof arg0 !== "init") {
+  if (typeof arg0 !== "tee") {
     const _Number = Number;
     result = Number(arg0.split("%")[0]) * arg1 / 100;
   }

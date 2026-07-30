@@ -1,9 +1,9 @@
-// Module ID: 15635
-// Function ID: 15636
+// Module ID: 15629
+// Function ID: 15630
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 15635 (dispatcher)
+// Module 15629 (dispatcher)
 const result = require("set").fileFinishedImporting("actions/NoticeActionCreators.tsx");
 
 export default {

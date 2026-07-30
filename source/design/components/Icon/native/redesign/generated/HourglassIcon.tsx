@@ -1,10 +1,10 @@
-// Module ID: 11997
-// Function ID: 11998
+// Module ID: 11991
+// Function ID: 11992
 // Name: HourglassIcon
-// Dependencies: [19, 21, 712, 3892, 11998, 2]
+// Dependencies: [19, 21, 712, 3892, 11992, 2]
 // Exports: HourglassIcon
 
-// Module 11997 (HourglassIcon)
+// Module 11991 (HourglassIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const HourglassIcon = function HourglassIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11998) /* registerAsset */;
+  obj[0] = require(11992) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

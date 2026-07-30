@@ -1,10 +1,10 @@
-// Module ID: 13141
-// Function ID: 13142
+// Module ID: 13136
+// Function ID: 13137
 // Name: ThemedIcon
 // Dependencies: [19, 21, 3893, 4602, 2]
 // Exports: default
 
-// Module 13141 (ThemedIcon)
+// Module 13136 (ThemedIcon)
 import "noop";
 import { jsx } from "jsxProd";
 

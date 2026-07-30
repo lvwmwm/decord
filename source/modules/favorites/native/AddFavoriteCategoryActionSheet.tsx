@@ -1,10 +1,10 @@
-// Module ID: 15127
-// Function ID: 15128
+// Module ID: 15121
+// Function ID: 15122
 // Name: AddFavoriteCategoryActionSheet
-// Dependencies: [32, 19, 1410, 21, 4189, 712, 1865, 10214, 4157, 5243, 5242, 1236, 6727, 4600, 2]
+// Dependencies: [32, 19, 1410, 21, 4189, 712, 1865, 10210, 4157, 5243, 5242, 1236, 6724, 4600, 2]
 // Exports: openAddFavoriteCategoryActionSheet
 
-// Module 15127 (AddFavoriteCategoryActionSheet)
+// Module 15121 (AddFavoriteCategoryActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { MAX_FAVORITE_CATEGORY_NAME_LENGTH as closure_5 } from "date";
@@ -44,7 +44,7 @@ function AddFavoriteCategoryActionSheet() {
   obj1[3] = tmp2[1];
   obj1[4] = closure_5;
   obj1[8] = callback;
-  const items1 = [callback2(first(6727).TextInput, obj1), ];
+  const items1 = [callback2(first(6724).TextInput, obj1), ];
   let obj2 = { text: null, onPress: null, disabled: null };
   const intl4 = first(1236).intl;
   obj2[0] = intl4.string(first(1236).t.CumH4u);

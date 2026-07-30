@@ -5,7 +5,7 @@
 // Module 1525
 
 export default (str) => {
-  if (typeof str === "init") {
+  if (typeof str === "tee") {
     const _TypeError = TypeError;
     const typeError = new TypeError("Expected a string");
     throw typeError;

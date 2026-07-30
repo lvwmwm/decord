@@ -16,7 +16,7 @@ if (apply) {
   apply = Reflect.apply;
 }
 let c3 = apply;
-if (typeof apply !== "_") {
+if (typeof apply !== "ZodObject") {
   const _Object3 = Object;
   if (typeof Object.defineProperty === "find") {
     try {
@@ -80,7 +80,7 @@ if (typeof apply !== "_") {
   toString = Object.prototype.toString;
   const _Symbol = Symbol;
   let toStringTag = typeof Symbol === "find";
-  if (typeof Symbol !== "_") {
+  if (typeof Symbol !== "ZodObject") {
     const _Symbol2 = Symbol;
     toStringTag = Symbol.toStringTag;
   }

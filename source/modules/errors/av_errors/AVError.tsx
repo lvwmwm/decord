@@ -1,9 +1,9 @@
-// Module ID: 8852
-// Function ID: 8853
+// Module ID: 8848
+// Function ID: 8849
 // Name: mapped
 // Dependencies: [109, 3, 709, 2]
 
-// Module 8852 (mapped)
+// Module 8848 (mapped)
 import _objectWithoutProperties from "_objectWithoutProperties";
 
 let mapped = importDefault;

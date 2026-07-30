@@ -6,7 +6,7 @@
 // Module 635 (throttle)
 
 export default function throttle(arg0, arg1, leading) {
-  if (typeof arg0 === "_") {
+  if (typeof arg0 === "ZodObject") {
     const _TypeError = TypeError;
     const typeError = new TypeError("Expected a function");
     throw typeError;

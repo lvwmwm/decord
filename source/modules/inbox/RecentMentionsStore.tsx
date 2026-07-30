@@ -1,9 +1,9 @@
-// Module ID: 5922
-// Function ID: 5923
+// Module ID: 5920
+// Function ID: 5921
 // Name: findOrCreateMessageRecord
-// Dependencies: [3827, 1218, 1372, 4407, 4201, 3826, 4006, 4385, 1874, 676, 595, 4409, 4403, 4423, 12, 4265, 5923, 5924, 589, 709, 2]
+// Dependencies: [3827, 1218, 1372, 4407, 4201, 3826, 4006, 4385, 1874, 676, 595, 4409, 4403, 4423, 12, 4265, 5921, 5922, 589, 709, 2]
 
-// Module 5922 (findOrCreateMessageRecord)
+// Module 5920 (findOrCreateMessageRecord)
 import hasFlag from "hasFlag";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -79,7 +79,7 @@ function parseMessage(message, channelId) {
   if (channelId === undefined) {
     channel_id = null;
   }
-  if (importDefault(5923)(message)) {
+  if (importDefault(5921)(message)) {
     const SELF_MENTIONABLE_SYSTEM = constants2.SELF_MENTIONABLE_SYSTEM;
     if (!SELF_MENTIONABLE_SYSTEM.has(message.type)) {
       return null;
@@ -99,7 +99,7 @@ function parseMessage(message, channelId) {
       }
       id = id.getId();
       if (!blockedOrIgnoredForMessage.isBlockedOrIgnoredForMessage(message)) {
-        if (!tmp2(5924)(message, id)) {
+        if (!tmp2(5922)(message, id)) {
           let tmp12 = message;
           if (!(message instanceof hasFlag)) {
             message = store2.getMessage(message.channel_id, message.id);

@@ -398,11 +398,11 @@ function getBaseIntrinsic(arg0, arg1) {
 export default function GetIntrinsic(arg0, arg1) {
   let tmp47;
   let tmp48;
-  if (typeof arg0 !== "init") {
+  if (typeof arg0 !== "tee") {
     if (0 !== arg0.length) {
       let throwTypeErrorResult = arg1;
       if (arguments.length > 1) {
-        if (typeof arg1 === "SENTRY_RELEASE") {
+        if (typeof arg1 === "sur") {
           throwTypeErrorResult = new items(541)("\"allowMissing\" argument must be a boolean");
           throw throwTypeErrorResult;
         }

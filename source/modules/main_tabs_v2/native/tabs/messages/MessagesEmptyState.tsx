@@ -1,10 +1,10 @@
-// Module ID: 15048
-// Function ID: 15049
+// Module ID: 15042
+// Function ID: 15043
 // Name: MessagesEmptyState
-// Dependencies: [32, 19, 17, 21, 4189, 1474, 1480, 8426, 503, 4720, 14127, 15049, 4185, 1236, 4600, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 1474, 1480, 8423, 503, 4720, 14123, 15043, 4185, 1236, 4600, 2]
 // Exports: default
 
-// Module 15048 (MessagesEmptyState)
+// Module 15042 (MessagesEmptyState)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -42,14 +42,14 @@ export default function MessagesEmptyState() {
   const tmp4 = callback(React.useState(0), 2);
   obj[0] = require(503) /* encodeProperties */.ImpressionTypes.VIEW;
   obj[1] = require(503) /* encodeProperties */.ImpressionNames.MESSAGES_EMPTY_NUX;
-  navigation(8426)(obj);
+  navigation(8423)(obj);
   if (tmp5 > 0) {
     width = tmp5;
   }
   const result = 0.9 * width;
   let tmp7Result = tmp7(4720);
   const isScreenLandscape = tmp7Result.useIsScreenLandscape();
-  tmp7Result = tmp7(14127);
+  tmp7Result = tmp7(14123);
   const items1 = [tmp.scrollViewContentContainer, ];
   let tmp18;
   if (isScreenLandscape) {
@@ -62,12 +62,12 @@ export default function MessagesEmptyState() {
   const obj2 = { style: tmp.container, onLayout: callback, children: null };
   const obj3 = { style: tmp.innerContainer, children: null };
   const obj4 = { style: tmp.imageContainer, children: null };
-  const obj5 = { resizeMode: "contain", source: tmp2(15049), style: null };
+  const obj5 = { resizeMode: "contain", source: tmp2(15043), style: null };
   let num = 350;
   if (result < 622) {
     num = result / 622 * 350;
   }
-  const tmp10 = navigation(8426);
+  const tmp10 = navigation(8423);
   const tmp17 = closure_7;
   const tmp21 = closure_6;
   obj5[2] = { height: num, width: Math.min(result, 622) };

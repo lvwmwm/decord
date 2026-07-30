@@ -1,10 +1,10 @@
-// Module ID: 15006
-// Function ID: 15007
+// Module ID: 15000
+// Function ID: 15001
 // Name: GuildsBarFooterWrapper
-// Dependencies: [14942, 21, 4189, 712, 3893, 4046, 5568, 2]
+// Dependencies: [14936, 21, 4189, 712, 3893, 4046, 5568, 2]
 // Exports: default
 
-// Module 15006 (GuildsBarFooterWrapper)
+// Module 15000 (GuildsBarFooterWrapper)
 import { GUILD_ITEM_HIT_SLOP } from "GUILD_ITEM_SIZE";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

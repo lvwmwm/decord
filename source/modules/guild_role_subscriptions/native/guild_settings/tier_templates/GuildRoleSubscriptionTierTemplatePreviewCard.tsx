@@ -1,10 +1,10 @@
-// Module ID: 16623
-// Function ID: 16624
+// Module ID: 16617
+// Function ID: 16618
 // Name: ContentHeader
-// Dependencies: [19, 17, 676, 21, 4189, 712, 4185, 4157, 16624, 1959, 16628, 1297, 16627, 1236, 5505, 1480, 14244, 16629, 698, 4384, 14250, 16625, 9429, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 4185, 4157, 16618, 1959, 16622, 1297, 16621, 1236, 5505, 1480, 14240, 16623, 698, 4384, 14246, 16619, 9425, 2]
 // Exports: default
 
-// Module 16623 (ContentHeader)
+// Module 16617 (ContentHeader)
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata";
 import get_ActivityIndicator from "_getTemplates";
 import ME from "ME";
@@ -35,7 +35,7 @@ function Separator() {
 function BenefitShowCase(children) {
   const title = children.title;
   let tmp3 = title;
-  if (typeof title !== "init") {
+  if (typeof title !== "tee") {
     let obj = { variant: "text-md/semibold", color: "text-default", children: null };
     obj[2] = title;
     tmp3 = callback(require(4185) /* Text */.Text, obj);
@@ -50,7 +50,7 @@ function ChannelBenefitShowCase(channel) {
   let name;
   let type;
   ({ description, type, name } = channel.channel);
-  let obj = require(16627) /* getPrivateChannelIconComponent */;
+  let obj = require(16621) /* getPrivateChannelIconComponent */;
   obj = { style: { flexDirection: "row", alignItems: "center" }, children: null };
   const items = [callback(obj.getPrivateChannelIconComponent(type), { size: "xs" }), callback(require(1297) /* Button */.Spacer, { size: 4 }), callback(require(4185) /* Text */.Text, { variant: "text-md/semibold", color: "text-default", children: name })];
   obj[1] = items;

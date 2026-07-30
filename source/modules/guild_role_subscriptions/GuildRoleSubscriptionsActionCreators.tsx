@@ -1,10 +1,10 @@
-// Module ID: 12618
-// Function ID: 12619
+// Module ID: 12612
+// Function ID: 12613
 // Name: _fetchSubscriptionsSettings
-// Dependencies: [32, 5, 676, 12619, 709, 4509, 6301, 698, 4384, 4265, 687, 2]
+// Dependencies: [32, 5, 676, 12613, 709, 4509, 6298, 698, 4384, 4265, 687, 2]
 // Exports: archiveSubscriptionListing, createSubscriptionGroupListing, createSubscriptionListing, deleteSubscriptionGroupListing, deleteSubscriptionListing, fetchAllSubscriptionListingsDataForGuild, fetchMonetizationRestrictions, fetchSubscriptionListingForPlan, fetchSubscriptionsSettings, updateSubscriptionGroupListing, updateSubscriptionListing, updateSubscriptionTrial, updateSubscriptionsSettings
 
-// Module 12618 (_fetchSubscriptionsSettings)
+// Module 12612 (_fetchSubscriptionsSettings)
 import _slicedToArray from "_slicedToArray";
 import _deletePaymentSource from "_deletePaymentSource";
 import { AnalyticEvents } from "ME";
@@ -46,7 +46,7 @@ function _fetchSubscriptionsSettings() {
               let closure_2 = tmp5;
               const callback = tmp2;
               let closure_0;
-              let obj3 = outer1_2(12619);
+              let obj3 = outer1_2(12613);
               dependencyMap = 1;
               c4 = 1;
               const obj1 = { value: null, done: false };
@@ -227,7 +227,7 @@ function _fetchAllSubscriptionListingsDataForGuild() {
               c11 = 1;
               let num7 = 1;
               c12 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {
@@ -256,7 +256,7 @@ function _fetchAllSubscriptionListingsDataForGuild() {
               let _Promise = Promise;
               let tmp69 = lib;
               let tmp70 = dependencyMap;
-              let obj15 = lib(12619);
+              let obj15 = lib(12613);
               let tmp71 = callback;
               let obj4 = { includeSoftDeleted: null, countryCode: null };
               let tmp72 = flag;
@@ -265,11 +265,11 @@ function _fetchAllSubscriptionListingsDataForGuild() {
               obj4[1] = lib;
               let items = [obj15.getGuildRoleSubscriptionGroupListingsForGuild(callback, obj4), , , ];
               let tmp74 = dependencyMap;
-              let obj17 = lib(12619);
+              let obj17 = lib(12613);
               let tmp75 = callback;
               items[1] = obj17.getGuildRoleSubscriptionsSettings(callback);
               let tmp76 = dependencyMap;
-              let obj18 = lib(12619);
+              let obj18 = lib(12613);
               let tmp77 = callback;
               items[2] = obj18.getGuildRoleSubscriptionTrials(callback);
               let tmp78 = callback;
@@ -1109,7 +1109,7 @@ function _fetchGuildRoleSubscriptionGroupListing() {
               dependencyMap = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -1121,7 +1121,7 @@ function _fetchGuildRoleSubscriptionGroupListing() {
               obj2[0] = arg1;
               return obj2;
             } else {
-              let obj4 = obj1(12619);
+              let obj4 = obj1(12613);
               c5 = 2;
               c6 = 1;
               const obj3 = { value: null, done: false };
@@ -1214,7 +1214,7 @@ function _createSubscriptionListing() {
               let id;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -1344,7 +1344,7 @@ function _updateSubscriptionListing() {
               c4 = undefined;
               dependencyMap = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -1356,7 +1356,7 @@ function _updateSubscriptionListing() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj6 = callback2(12619);
+              let obj6 = callback2(12613);
               dependencyMap = 2;
               c4 = 1;
               let obj2 = { value: null, done: false };
@@ -1464,7 +1464,7 @@ function _fetchMonetizationRestrictions() {
               restrictions = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {
@@ -1552,7 +1552,7 @@ function _fetchMonetizationRestrictions() {
               const obj10 = { type: "GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS", guildId: null };
               obj10[1] = callback;
               dispatch(obj10);
-              obj9 = callback2(12619);
+              obj9 = callback2(12613);
               const obj11 = { signal: null };
               obj11[0] = signal;
               c7 = 4;

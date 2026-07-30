@@ -1,10 +1,10 @@
-// Module ID: 10255
-// Function ID: 10256
+// Module ID: 10251
+// Function ID: 10252
 // Name: useFocusModeEnabled
-// Dependencies: [4867, 3829, 676, 3862, 1355, 1337, 698, 4528, 1236, 10256, 2]
+// Dependencies: [4867, 3829, 676, 3862, 1355, 1337, 698, 4528, 1236, 10252, 2]
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled
 
-// Module 10255 (useFocusModeEnabled)
+// Module 10251 (useFocusModeEnabled)
 import filterPlayingActivities from "filterPlayingActivities";
 import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags";
 import ME from "ME";

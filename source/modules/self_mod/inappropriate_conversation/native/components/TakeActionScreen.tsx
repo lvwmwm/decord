@@ -1,10 +1,10 @@
-// Module ID: 14823
-// Function ID: 14824
+// Module ID: 14816
+// Function ID: 14817
 // Name: TakeActionButtons
-// Dependencies: [5, 32, 19, 17, 3826, 1874, 10159, 21, 4189, 712, 589, 10161, 10162, 1480, 8918, 6721, 10156, 7692, 3890, 1236, 4150, 3889, 4600, 10168, 9442, 4669, 7623, 3886, 4185, 2]
+// Dependencies: [5, 32, 19, 17, 3826, 1874, 10155, 21, 4189, 712, 589, 10157, 10158, 1480, 8914, 6718, 10152, 7689, 3890, 1236, 4150, 3889, 4600, 10164, 9438, 4669, 7620, 3886, 4185, 2]
 // Exports: default
 
-// Module 14823 (TakeActionButtons)
+// Module 14816 (TakeActionButtons)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";
@@ -114,7 +114,7 @@ export default function TakeActionButtons(senderId) {
             let closure_0 = tmp4;
             if (null != outer1_9.getUser(outer1_0)) {
               outer1_6(true);
-              let obj2 = outer1_0(7692);
+              let obj2 = outer1_0(7689);
               v0 = 1;
               dependencyMap = 1;
               const obj1 = { value: null, done: false };
@@ -142,9 +142,9 @@ export default function TakeActionButtons(senderId) {
           throw arg1;
         } else if (arg0 !== 2) {
           callback2(false);
-          obj = v0(6721);
+          obj = v0(6718);
           const result = obj.showReportSuccessToast(closure_0, v0);
-          callback(outer1_0(10156).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
+          callback(outer1_0(10152).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
         }
         dependencyMap = 3;
         obj2 = { value: null, done: true };

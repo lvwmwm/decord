@@ -1,8 +1,8 @@
-// Module ID: 16413
-// Function ID: 16414
-// Dependencies: [5, 32, 19, 17, 5048, 5092, 676, 1877, 3865, 21, 4189, 712, 5215, 9848, 5503, 3830, 4731, 16414, 9620, 4524, 4185, 1236, 4084, 1945, 4600, 4598, 4717, 9635, 16415, 9336, 5206, 1416, 6576, 6727, 7644, 2]
+// Module ID: 16407
+// Function ID: 16408
+// Dependencies: [5, 32, 19, 17, 5048, 5092, 676, 1877, 3865, 21, 4189, 712, 5215, 9845, 5503, 3830, 4731, 16408, 9617, 4524, 4185, 1236, 4084, 1945, 4600, 4598, 4717, 9632, 16409, 9332, 5206, 1416, 6573, 6724, 7641, 2]
 
-// Module 16413
+// Module 16407
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import ReactionIcon from "ReactionIcon";
 import importAllResult from "getStickerExtensionFromFormatType";
@@ -401,7 +401,7 @@ export default importAllResult.forwardRef((stickerId, ref) => {
   callback = tmp12[1];
   const insets = importDefault(5215)({ includeKeyboardHeight: true }).insets;
   const items = [{ ref: ref1, offset: { type: "toRef", ref: ref2 } }, { ref: ref2, offset: { type: "toBottom" } }];
-  const onFocus = importDefault(9848)({ insets, inputs: items, scrollViewRef: ref }).onFocus;
+  const onFocus = importDefault(9845)({ insets, inputs: items, scrollViewRef: ref }).onFocus;
   stickerById = undefined;
   const tmp11 = ref1(ref2.useState(undefined), 2);
   if (null != stickerId) {
@@ -532,7 +532,7 @@ export default importAllResult.forwardRef((stickerId, ref) => {
   if (null != tmp16Result) {
     const obj11 = { sticker: null, size: null, animated: true };
     obj11[0] = tmp16Result;
-    tmp14Result = tmp14(9635);
+    tmp14Result = tmp14(9632);
     obj11[1] = tmp14(712).space.PX_96;
     let tmp32Result = tmp32(tmp14Result, obj11);
   } else if (null != first) {
@@ -543,7 +543,7 @@ export default importAllResult.forwardRef((stickerId, ref) => {
     obj12[1] = tmp.stickerPreviewImage;
     tmp32Result = tmp32(c6, obj12);
   } else {
-    tmp32Result = tmp32(tmp31(16415).StickerPlusIcon, { size: "lg" });
+    tmp32Result = tmp32(tmp31(16409).StickerPlusIcon, { size: "lg" });
   }
   obj10[5] = tmp32Result;
   items4[1] = callback(stickerId(4717).PressableHighlight, obj10);
@@ -576,7 +576,7 @@ export default importAllResult.forwardRef((stickerId, ref) => {
     tmp32Result = tmp32(tmp14(5206), obj16);
     const tmp14Result1 = tmp14(5206);
   } else {
-    tmp32Result = tmp32(tmp31(6576).ReactionIcon, { size: "md", color: "text-subtle" });
+    tmp32Result = tmp32(tmp31(6573).ReactionIcon, { size: "md", color: "text-subtle" });
   }
   const items5 = [tmp32Result, ];
   if (null != first1) {
@@ -606,7 +606,7 @@ export default importAllResult.forwardRef((stickerId, ref) => {
       current2.scrollToEnd({ animated: true });
     }
   };
-  items4[4] = callback(stickerId(6727).TextInput, obj18);
+  items4[4] = callback(stickerId(6724).TextInput, obj18);
   const obj19 = { ref: ref2, maxLength: 100, label: null, placeholder: null, onChange: null, onFocus: null };
   const intl11 = tmp31(1236).intl;
   obj19[2] = intl11.string(stickerId(1236).t.uGccej);
@@ -614,7 +614,7 @@ export default importAllResult.forwardRef((stickerId, ref) => {
   obj19[3] = intl12.string(stickerId(1236).t.zwR0fa);
   obj19[4] = tmp8;
   obj19[5] = onFocus;
-  items4[5] = callback(stickerId(7644).TextArea, obj19);
+  items4[5] = callback(stickerId(7641).TextArea, obj19);
   const obj20 = {
     onPress: function handleSave() {
       const self = this;

@@ -1,10 +1,10 @@
-// Module ID: 10493
-// Function ID: 10494
+// Module ID: 10489
+// Function ID: 10490
 // Name: getIsEligibleForQuests
 // Dependencies: [1577, 2]
 // Exports: getIsEligibleForQuests
 
-// Module 10493 (getIsEligibleForQuests)
+// Module 10489 (getIsEligibleForQuests)
 const result = require("set").fileFinishedImporting("modules/quests/lib/QuestsEligibility.tsx");
 
 export const getIsEligibleForQuests = function getIsEligibleForQuests() {

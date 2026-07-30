@@ -1,10 +1,10 @@
-// Module ID: 7272
-// Function ID: 7273
+// Module ID: 7269
+// Function ID: 7270
 // Name: MicrophoneSpotIllustration
-// Dependencies: [21, 5141, 7273, 2]
+// Dependencies: [21, 5141, 7270, 2]
 // Exports: MicrophoneSpotIllustration
 
-// Module 7272 (MicrophoneSpotIllustration)
+// Module 7269 (MicrophoneSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MicrophoneSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const MicrophoneSpotIllustration = function MicrophoneSpotIllustration(wi
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7273);
+  obj[0] = importDefault(7270);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

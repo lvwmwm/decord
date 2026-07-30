@@ -1,10 +1,10 @@
-// Module ID: 9621
-// Function ID: 9622
+// Module ID: 9618
+// Function ID: 9619
 // Name: getStickerSendability
 // Dependencies: [1942, 5094, 676, 3835, 4524, 3822, 2]
 // Exports: isSendableSticker
 
-// Module 9621 (getStickerSendability)
+// Module 9618 (getStickerSendability)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import parseServerPackSticker from "parseServerPackSticker";
 import { Permissions } from "ME";

@@ -1,12 +1,12 @@
-// Module ID: 10144
-// Function ID: 10145
+// Module ID: 10140
+// Function ID: 10141
 // Name: TitleWrapper
-// Dependencies: [32, 19, 17, 3826, 1874, 9119, 21, 4189, 712, 1348, 4717, 500, 8380, 4185, 1297, 10145, 9094, 3893, 4650, 10146, 1236, 4380, 2]
+// Dependencies: [32, 19, 17, 3826, 1874, 9115, 21, 4189, 712, 1348, 4717, 500, 8377, 4185, 1297, 10141, 9090, 3893, 4650, 10142, 1236, 4380, 2]
 // Exports: renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 10144 (TitleWrapper)
+// Module 10140 (TitleWrapper)
 import _slicedToArray from "_slicedToArray";
-import module_10146 from "module_10146";
+import module_10142 from "module_10142";
 import { View } from "map";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -92,9 +92,9 @@ function ChannelTitle(guildId) {
     obj[3] = str2;
     obj[6] = tmp4.channelName;
     obj[7] = accessibleTitle;
-    let tmp8Result = tmp11(tmp(8380), obj);
+    let tmp8Result = tmp11(tmp(8377), obj);
     let tmp8 = tmp11;
-    const tmpResult = tmp(8380);
+    const tmpResult = tmp(8377);
   } else {
     tmp8 = closure_9;
     let str = "heading-lg/bold";
@@ -112,7 +112,7 @@ function ChannelTitle(guildId) {
   tmp8Result = !disableArrow;
   if (!disableArrow) {
     const obj2 = { source: null, size: null, style: null };
-    obj2[0] = tmp(10145);
+    obj2[0] = tmp(10141);
     obj2[1] = require(1297) /* Button */.Icon.Sizes.REFRESH_SMALL_16;
     obj2[2] = tmp4.arrowIcon;
     tmp8Result = tmp8(require(1297) /* Button */.Icon, obj2);
@@ -137,7 +137,7 @@ function GroupDMIcon(channel) {
   obj[0] = require(1297) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj[1] = channel.channel;
   obj[2] = tmp.channelIcon;
-  return callback2(importDefault(9094), obj);
+  return callback2(importDefault(9090), obj);
 }
 function UserAvatar(user) {
   let isMobileOnline;
@@ -216,7 +216,7 @@ function MemberCountText(arg0) {
     tmp9 = leadingAccessoryWidth;
   }
   obj[3] = tmp9;
-  const children = [closure_9(importDefault(10146), obj), ];
+  const children = [closure_9(importDefault(10142), obj), ];
   let tmp7Result = null;
   if (withSeparator) {
     let str3 = "text-xs/medium";

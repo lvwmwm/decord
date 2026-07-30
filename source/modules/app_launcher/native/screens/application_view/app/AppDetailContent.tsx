@@ -1,10 +1,10 @@
-// Module ID: 11303
-// Function ID: 11304
+// Module ID: 11299
+// Function ID: 11300
 // Name: PlaceholderCommandRow
-// Dependencies: [5, 19, 17, 5697, 1479, 676, 4623, 21, 4189, 11304, 712, 11228, 5220, 10924, 11278, 5702, 11205, 1581, 8024, 1906, 11311, 8015, 5704, 11225, 500, 11313, 4185, 1236, 11315, 11275, 11317, 9006, 1297, 11324, 11326, 4157, 4384, 11000, 2]
+// Dependencies: [5, 19, 17, 5697, 1479, 676, 4623, 21, 4189, 11300, 712, 11224, 5220, 10920, 11274, 5702, 11201, 1581, 8021, 1906, 11307, 8012, 5704, 11221, 500, 11309, 4185, 1236, 11311, 11271, 11313, 9002, 1297, 11320, 11322, 4157, 4384, 10996, 2]
 // Exports: default
 
-// Module 11303 (PlaceholderCommandRow)
+// Module 11299 (PlaceholderCommandRow)
 import ME from "ME";
 import PermissionOverwriteType from "PermissionOverwriteType";
 import { View } from "useSafeAreaInsets";
@@ -31,9 +31,9 @@ function PlaceholderCommandRow(isFirstRow) {
     flag2 = false;
   }
   const tmp = createCacheKey();
-  let obj = require(11228) /* usePlaceholderWidth */;
+  let obj = require(11224) /* usePlaceholderWidth */;
   const placeholderWidth = obj.usePlaceholderWidth(10, 50);
-  let obj1 = require(11228) /* usePlaceholderWidth */;
+  let obj1 = require(11224) /* usePlaceholderWidth */;
   const placeholderWidth1 = obj1.usePlaceholderWidth(30, 90);
   obj = { label: null, subLabel: null, subLabelLineClamp: 1, start: null, end: null };
   obj = { style: null };
@@ -54,7 +54,7 @@ function PlaceholderCommandRow(isFirstRow) {
 class CommandRow {
   constructor(arg0) {
     command = global.command;
-    f107951 = command;
+    f107963 = command;
     ({ onPressCommand, context } = global);
     ({ section, location, sectionName } = global);
     entrypoint = undefined;
@@ -95,7 +95,7 @@ class CommandRow {
     tmp4 = require("CommandRowIcon");
     if (installOnDemand) {
       tmp5 = location;
-      f107951 = location((arg0) => {
+      f107963 = location((arg0) => {
         let closure_0 = arg0;
         let c2 = 0;
         let c3 = 0;

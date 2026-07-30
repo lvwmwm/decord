@@ -1,10 +1,10 @@
-// Module ID: 7852
-// Function ID: 7853
+// Module ID: 7849
+// Function ID: 7850
 // Name: createGiftIntentEmbed
-// Dependencies: [7853, 1874, 1876, 4189, 712, 1236, 7857, 4028, 7729, 4126, 7858, 7859, 2]
+// Dependencies: [7850, 1874, 1876, 4189, 712, 1236, 7854, 4028, 7726, 4126, 7855, 7856, 2]
 // Exports: createGiftIntentEmbed
 
-// Module 7852 (createGiftIntentEmbed)
+// Module 7849 (createGiftIntentEmbed)
 import getCurrentTime from "getCurrentTime";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { GiftIntentType } from "GuildFeatures";
@@ -43,9 +43,9 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
       } else {
         tmp = null;
         if (tmp13.UNSPECIFIED !== giftIntentType) {
-          require(7857) /* _sendGiftMessage */.unhandledGiftIntent(giftIntentType);
+          require(7854) /* _sendGiftMessage */.unhandledGiftIntent(giftIntentType);
           tmp = null;
-          const obj11 = require(7857) /* _sendGiftMessage */;
+          const obj11 = require(7854) /* _sendGiftMessage */;
         }
       }
       if (null == tmp) {
@@ -68,13 +68,13 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
         obj1[6] = giftIntentType;
         ({ headerTextColor: obj4[7], subHeaderTextColor: obj4[8], backgroundColor: obj4[9], borderColor: obj4[10] } = createCacheKey(theme));
         const tmp6 = createCacheKey(theme);
-        obj1[11] = require(7729) /* frozen */.getAssetUriForEmbed(tmp8(4126));
+        obj1[11] = require(7726) /* frozen */.getAssetUriForEmbed(tmp8(4126));
         const intl3 = require(1236) /* getSystemLocale */.intl;
         obj1[12] = intl3.string(require(1236) /* getSystemLocale */.t.ilhtIa);
-        const obj5 = require(7729) /* frozen */;
-        obj1[13] = require(7729) /* frozen */.getAssetUriForEmbed(tmp8(7858));
-        const obj6 = require(7729) /* frozen */;
-        obj1[14] = require(7729) /* frozen */.getAssetUriForEmbed(tmp8(7859));
+        const obj5 = require(7726) /* frozen */;
+        obj1[13] = require(7726) /* frozen */.getAssetUriForEmbed(tmp8(7855));
+        const obj6 = require(7726) /* frozen */;
+        obj1[14] = require(7726) /* frozen */.getAssetUriForEmbed(tmp8(7856));
         const intl4 = require(1236) /* getSystemLocale */.intl;
         obj1[15] = intl4.string(require(1236) /* getSystemLocale */.t.I5gL2H);
         return obj1;

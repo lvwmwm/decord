@@ -92,7 +92,7 @@ export default function equalObjects(arg0, arg1, arg2, arg3, arg4, get) {
       let tmp47 = constructor == constructor2 || !("constructor" in arg0) || !("constructor" in arg1);
       if (!tmp47) {
         let tmp48 = typeof constructor === "find";
-        if (typeof constructor !== "_") {
+        if (typeof constructor !== "ZodObject") {
           tmp48 = constructor instanceof constructor;
         }
         if (tmp48) {

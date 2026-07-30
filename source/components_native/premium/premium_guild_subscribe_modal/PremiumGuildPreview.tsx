@@ -1,10 +1,10 @@
-// Module ID: 12671
-// Function ID: 12672
+// Module ID: 12665
+// Function ID: 12666
 // Name: PremiumGuildTierPill
-// Dependencies: [19, 17, 1302, 676, 21, 4189, 712, 5030, 4035, 12672, 12673, 12674, 12675, 12676, 12677, 12678, 12679, 1297, 4081, 589, 5566, 2]
+// Dependencies: [19, 17, 1302, 676, 21, 4189, 712, 5030, 4035, 12666, 12667, 12668, 12669, 12670, 12671, 12672, 12673, 1297, 4081, 589, 5566, 2]
 // Exports: default
 
-// Module 12671 (PremiumGuildTierPill)
+// Module 12665 (PremiumGuildTierPill)
 import "initialize";
 import get_ActivityIndicator from "Button";
 import handleThemeChange from "handleThemeChange";
@@ -25,32 +25,32 @@ function PremiumGuildTierPill(arg0) {
   let obj = { style: tmp.tierPill, children: null };
   obj = { style: tmp.tierPillImage, source: null };
   if (BoostedGuildTiers.NONE === tier) {
-    let tmp22 = importDefault(12673);
-    const tmp21 = importDefault(12672);
+    let tmp22 = importDefault(12667);
+    const tmp21 = importDefault(12666);
     if (obj5.isThemeDark(theme)) {
       tmp22 = tmp21;
     }
     let tmp7 = tmp22;
     obj5 = require(4035) /* AccessibilityAnnouncer */;
   } else if (tmp6.TIER_1 === tier) {
-    let tmp17 = importDefault(12675);
-    const tmp16 = importDefault(12674);
+    let tmp17 = importDefault(12669);
+    const tmp16 = importDefault(12668);
     if (obj4.isThemeDark(theme)) {
       tmp17 = tmp16;
     }
     tmp7 = tmp17;
     obj4 = require(4035) /* AccessibilityAnnouncer */;
   } else if (tmp6.TIER_2 === tier) {
-    let tmp12 = importDefault(12677);
-    const tmp11 = importDefault(12676);
+    let tmp12 = importDefault(12671);
+    const tmp11 = importDefault(12670);
     if (obj3.isThemeDark(theme)) {
       tmp12 = tmp11;
     }
     tmp7 = tmp12;
     obj3 = require(4035) /* AccessibilityAnnouncer */;
   } else if (tmp6.TIER_3 === tier) {
-    let tmp8 = importDefault(12679);
-    const tmp26 = importDefault(12678);
+    let tmp8 = importDefault(12673);
+    const tmp26 = importDefault(12672);
     if (obj8.isThemeDark(theme)) {
       tmp8 = tmp26;
     }

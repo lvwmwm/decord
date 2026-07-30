@@ -1,10 +1,10 @@
-// Module ID: 7380
-// Function ID: 7381
+// Module ID: 7377
+// Function ID: 7378
 // Name: PasskeysSpotIllustration
-// Dependencies: [21, 5141, 7381, 2]
+// Dependencies: [21, 5141, 7378, 2]
 // Exports: PasskeysSpotIllustration
 
-// Module 7380 (PasskeysSpotIllustration)
+// Module 7377 (PasskeysSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PasskeysSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const PasskeysSpotIllustration = function PasskeysSpotIllustration(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7381);
+  obj[0] = importDefault(7378);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

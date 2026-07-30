@@ -1,10 +1,10 @@
-// Module ID: 8109
-// Function ID: 8110
+// Module ID: 8106
+// Function ID: 8107
 // Name: map
-// Dependencies: [1874, 687, 8110, 584, 8112, 589, 709, 2]
+// Dependencies: [1874, 687, 8107, 584, 8109, 589, 709, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 8109 (map)
+// Module 8106 (map)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Store } from "initialize";
 import set from "set";
@@ -150,24 +150,15 @@ prototype["getNextTier"] = function getNextTier(GIFTING, userId) {
   }
 };
 prototype["getRemainingToNextTier"] = function getRemainingToNextTier(GIFTING, userId) {
-  const nextTier = this.getNextTier(GIFTING, userId);
   const singleRequirementProgress = this.getSingleRequirementProgress(GIFTING, userId);
+  let threshold;
+  if (singleRequirementProgress != null) {
+    threshold = singleRequirementProgress.threshold;
+  }
   let num = 0;
-  if (null != nextTier) {
-    num = 0;
-    if (null != singleRequirementProgress) {
-      let num2;
-      if (nextTier != null) {
-        const first = nextTier.requirements[0];
-        if (first != null) {
-          num2 = first.threshold;
-        }
-      }
-      if (num2 == null) {
-        num2 = 0;
-      }
-      num = Math.max(0, num2 - singleRequirementProgress.current);
-    }
+  if (null != threshold) {
+    const _Math = Math;
+    num = Math.max(0, singleRequirementProgress.threshold - singleRequirementProgress.current);
   }
   return num;
 };
@@ -253,8 +244,8 @@ const badgeDirectoryStore = new BadgeDirectoryStore(require("dispatcher"), {
           const _Date2 = Date;
           const timestamp = Date.now();
           const result1 = obj3.set(id, timestamp + value.fail());
-          const badgeDirectory = require(8112) /* urlUserId */.fetchBadgeDirectory(id);
-          const obj5 = require(8112) /* urlUserId */;
+          const badgeDirectory = require(8109) /* urlUserId */.fetchBadgeDirectory(id);
+          const obj5 = require(8109) /* urlUserId */;
           const obj6 = map2;
         }
         obj3 = map3;

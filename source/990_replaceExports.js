@@ -6,7 +6,7 @@
 // Module 990 (replaceExports)
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 arg5.replaceExports = function replaceExports(arg0, arg1, arg2) {
-  if (typeof arg0[arg1] !== "_") {
+  if (typeof arg0[arg1] !== "ZodObject") {
     try {
       arg0[arg1] = arg2;
       if (arg0.default === tmp4) {

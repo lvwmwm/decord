@@ -1,10 +1,10 @@
-// Module ID: 12977
-// Function ID: 12978
+// Module ID: 12972
+// Function ID: 12973
 // Name: _networkAwareRetry
 // Dependencies: [5, 1218, 4074, 1454, 2]
 // Exports: default
 
-// Module 12977 (_networkAwareRetry)
+// Module 12972 (_networkAwareRetry)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import fetchFingerprint from "fetchFingerprint";
 
@@ -54,7 +54,7 @@ function _networkAwareRetry() {
               asyncGeneratorStep = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {

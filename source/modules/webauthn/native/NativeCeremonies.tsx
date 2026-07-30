@@ -1,9 +1,9 @@
-// Module ID: 9197
-// Function ID: 9198
+// Module ID: 9193
+// Function ID: 9194
 // Name: _promptForRegisterCredential
-// Dependencies: [5, 17, 3, 5645, 1236, 500, 9198, 9199, 1577, 2]
+// Dependencies: [5, 17, 3, 5645, 1236, 500, 9194, 9195, 1577, 2]
 
-// Module 9197 (_promptForRegisterCredential)
+// Module 9193 (_promptForRegisterCredential)
 import set from "set";
 import { NativeModules } from "get ActivityIndicator";
 
@@ -52,7 +52,7 @@ function _promptForRegisterCredential() {
               challenge = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp6) {
             if (arg0 === 1) {
@@ -202,7 +202,7 @@ obj.getPasskeyAuthenticator = function getPasskeyAuthenticator() {
               let code = tmp5;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {

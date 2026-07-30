@@ -1,10 +1,10 @@
-// Module ID: 11909
-// Function ID: 11910
+// Module ID: 11905
+// Function ID: 11906
 // Name: useHandleBuyNow
-// Dependencies: [5, 32, 19, 676, 3, 11888, 5797, 4157, 9790, 1577, 11814, 3850, 3890, 1236, 2]
+// Dependencies: [5, 32, 19, 676, 3, 11884, 5797, 4157, 9787, 1577, 11810, 3850, 3890, 1236, 2]
 // Exports: default, useHandleBuyNow
 
-// Module 11909 (useHandleBuyNow)
+// Module 11905 (useHandleBuyNow)
 import useMobileCollectiblesPurchaseSKU from "useMobileCollectiblesPurchaseSKU";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -68,7 +68,7 @@ function useHandleBuyNow(product) {
             callback(false);
             obj = v0(4157);
             obj.hideActionSheet();
-            obj1 = v0(9790);
+            obj1 = v0(9787);
             const obj3 = { product: null, useCategoryImage: true };
             obj3[0] = closure_0;
             obj1.open(obj3);

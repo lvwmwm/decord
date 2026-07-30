@@ -1,10 +1,10 @@
-// Module ID: 10306
-// Function ID: 10307
+// Module ID: 10302
+// Function ID: 10303
 // Name: getMuteSettingLabel
-// Dependencies: [3819, 1372, 1862, 3826, 4385, 1874, 676, 685, 1236, 4380, 6076, 5135, 5130, 10307, 2]
+// Dependencies: [3819, 1372, 1862, 3826, 4385, 1874, 676, 685, 1236, 4380, 6074, 5135, 5130, 10303, 2]
 // Exports: getMessageNotificationsText, getMuteOptions, getMuteSettingLabel, getMuteSettingSublabel, getMuteSettings, handleMuteSettingPress, handleUnmutePress
 
-// Module 10306 (getMuteSettingLabel)
+// Module 10302 (getMuteSettingLabel)
 import storeThread from "storeThread";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -64,7 +64,7 @@ export const handleUnmutePress = function handleUnmutePress(channelId, guildId) 
   const channel = store.getChannel(channelId);
   if (null != channel) {
     if (channel.isThread()) {
-      let tmp7Result = tmp7(6076);
+      let tmp7Result = tmp7(6074);
       const result = tmp7Result.setNotificationSettings(channel, { muted: false });
     } else {
       tmp7Result = tmp7(5135);
@@ -79,14 +79,14 @@ export const handleMuteSettingPress = function handleMuteSettingPress(arg0) {
   let onOptionPress;
   ({ guildId, onOptionPress } = arg0);
   ({ channelId, muteDurationSeconds } = arg0);
-  const muteSettings = importAll(10307).getMuteSettings(muteDurationSeconds);
+  const muteSettings = importAll(10303).getMuteSettings(muteDurationSeconds);
   const channel = store.getChannel(channelId);
   guild = guild.getGuild(guildId);
   if (null != onOptionPress) {
     onOptionPress(muteSettings);
   } else if (null != channel) {
     if (channel.isThread()) {
-      let tmp4Result = tmp4(6076);
+      let tmp4Result = tmp4(6074);
       const result = tmp4Result.setNotificationSettings(channel, muteSettings);
     } else {
       tmp4Result = tmp4(5135);

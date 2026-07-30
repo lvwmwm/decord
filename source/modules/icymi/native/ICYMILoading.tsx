@@ -1,10 +1,10 @@
-// Module ID: 15383
-// Function ID: 15384
+// Module ID: 15377
+// Function ID: 15378
 // Name: ICYMILoadingItem
-// Dependencies: [19, 17, 21, 15322, 712, 11732, 4050, 15361, 2]
+// Dependencies: [19, 17, 21, 15316, 712, 11728, 4050, 15355, 2]
 // Exports: ICYMILoading
 
-// Module 15383 (ICYMILoadingItem)
+// Module 15377 (ICYMILoadingItem)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -19,7 +19,7 @@ function ICYMILoadingItem() {
   let subtitle;
   let title;
   const tmp = callback3();
-  const tmp2 = importDefault(11732)({ visible: true, animated: true });
+  const tmp2 = importDefault(11728)({ visible: true, animated: true });
   const memo = React.useMemo(() => ({ avatarTitle: Math.floor(10 * Math.random()), title: Math.floor(10 * Math.random()), subtitle: Math.floor(10 * Math.random()) }), []);
   let obj = { children: null };
   obj = { style: tmp.container, children: null };
@@ -66,7 +66,7 @@ function ICYMILoadingItem() {
   items6[2] = tmp2;
   items3[3] = callback(importDefault(4050).View, { style: items6 });
   obj[1] = items3;
-  const items7 = [callback2(View, obj), callback(require(15361) /* Separator */.Separator, {})];
+  const items7 = [callback2(View, obj), callback(require(15355) /* Separator */.Separator, {})];
   obj[0] = items7;
   return callback2(closure_7, obj);
 }

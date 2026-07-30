@@ -1,10 +1,10 @@
-// Module ID: 10464
-// Function ID: 10465
+// Module ID: 10460
+// Function ID: 10461
 // Name: useShowChannelOptInNotice
 // Dependencies: [4385, 676, 1379, 5789, 589, 5658, 2]
 // Exports: default
 
-// Module 10464 (useShowChannelOptInNotice)
+// Module 10460 (useShowChannelOptInNotice)
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { NULL_STRING_GUILD_ID } from "ME";
 import { ChannelFlags } from "set";

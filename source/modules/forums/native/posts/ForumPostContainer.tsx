@@ -1,10 +1,10 @@
-// Module ID: 11198
-// Function ID: 11199
+// Module ID: 11194
+// Function ID: 11195
 // Name: useForumPostContainerPressedIn
-// Dependencies: [19, 17, 21, 4189, 712, 7680, 4050, 10363, 1348, 5222, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 7677, 4050, 10359, 1348, 5222, 2]
 // Exports: ForumPostDisabledContainer, ForumPostPressableContainer, useForumPostContainerPressedIn
 
-// Module 11198 (useForumPostContainerPressedIn)
+// Module 11194 (useForumPostContainerPressedIn)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -46,7 +46,7 @@ export const ForumPostPressableContainer = function ForumPostPressableContainer(
     }
   }), items);
   ({ onPressIn, onPressOut } = memo);
-  ({ onTapPost, onLongTapPost } = importDefault(10363)({ threadId }));
+  ({ onTapPost, onLongTapPost } = importDefault(10359)({ threadId }));
   let str = "secondary";
   if (importDefault(1348)("ForumPostContainer")) {
     str = "surface-high";

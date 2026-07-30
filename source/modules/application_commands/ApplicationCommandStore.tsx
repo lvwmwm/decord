@@ -1,9 +1,9 @@
-// Module ID: 6091
-// Function ID: 6092
+// Module ID: 6089
+// Function ID: 6090
 // Name: handleInit
-// Dependencies: [32, 5874, 1931, 5702, 589, 709, 2]
+// Dependencies: [32, 5872, 1931, 5702, 589, 709, 2]
 
-// Module 6091 (handleInit)
+// Module 6089 (handleInit)
 import _slicedToArray from "_slicedToArray";
 import handlePermissionsChange from "handlePermissionsChange";
 import handleConnectionOpen from "handleConnectionOpen";

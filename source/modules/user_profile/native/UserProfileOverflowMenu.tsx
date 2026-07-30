@@ -1,11 +1,11 @@
-// Module ID: 12207
-// Function ID: 12208
+// Module ID: 12201
+// Function ID: 12202
 // Name: UserProfileOverflowMenu
-// Dependencies: [32, 19, 4202, 1372, 3826, 1931, 676, 4207, 10448, 21, 589, 12208, 12214, 11966, 8107, 5515, 5535, 7983, 8915, 8916, 5542, 8426, 503, 8359, 1236, 4199, 4157, 4395, 12215, 1959, 8918, 10450, 6721, 10449, 7692, 500, 11713, 698, 8917, 4399, 3862, 5543, 4028, 3889, 5549, 11968, 9299, 6682, 8963, 712, 2]
+// Dependencies: [32, 19, 4202, 1372, 3826, 1931, 676, 4207, 10444, 21, 589, 12202, 12208, 11960, 8104, 5515, 5535, 7980, 8911, 8912, 5542, 8423, 503, 8356, 1236, 4199, 4157, 4395, 12209, 1959, 8914, 10446, 6718, 10445, 7689, 500, 11709, 698, 8913, 4399, 3862, 5543, 4028, 3889, 5549, 11962, 9295, 6679, 8959, 712, 2]
 // Exports: default
 
-// Module 12207 (UserProfileOverflowMenu)
-import module_6721 from "module_6721";
+// Module 12201 (UserProfileOverflowMenu)
+import module_6718 from "module_6718";
 import experiment from "experiment";
 import getParticipants from "getParticipants";
 import ensureGuildLoaded from "ensureGuildLoaded";

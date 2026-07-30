@@ -1,10 +1,10 @@
-// Module ID: 10511
-// Function ID: 10512
+// Module ID: 10507
+// Function ID: 10508
 // Name: sortKey
-// Dependencies: [1371, 4208, 1218, 4866, 1372, 4236, 5009, 1874, 10512, 4205, 4207, 676, 4250, 5017, 3813, 10513, 12, 10514, 10515, 4379, 9086, 4253, 2]
+// Dependencies: [1371, 4208, 1218, 4866, 1372, 4236, 5009, 1874, 10508, 4205, 4207, 676, 4250, 5017, 3813, 10509, 12, 10510, 10511, 4379, 9082, 4253, 2]
 // Exports: activityParticipantIdToApplicationId, areParticipantsEqual, getEmbeddedActivityParticipantId
 
-// Module 10511 (sortKey)
+// Module 10507 (sortKey)
 import participantFromServer from "participantFromServer";
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";
@@ -220,11 +220,11 @@ prototype["updateParticipant"] = function updateParticipant(arg0) {
   }
   return flag;
 };
-prototype["updateParticipantSpeaking"] = function updateParticipantSpeaking(f73794) {
+prototype["updateParticipantSpeaking"] = function updateParticipantSpeaking(f73813) {
   const self = this;
-  let closure_0 = f73794;
+  let closure_0 = f73813;
   let flag;
-  if (this.participants[f73794] != null) {
+  if (this.participants[f73813] != null) {
     flag = arr.reduce((arg0, type) => {
       let flag = arg0;
       if (type.type === outer1_14.USER) {
@@ -264,11 +264,11 @@ prototype["updateParticipantSpeaking"] = function updateParticipantSpeaking(f737
   }
   return flag;
 };
-prototype["updateParticipantQuality"] = function updateParticipantQuality(f73801, closure_1, closure_2) {
+prototype["updateParticipantQuality"] = function updateParticipantQuality(f73820, closure_1, closure_2) {
   const self = this;
   let closure_0 = closure_2;
   let flag;
-  if (this.participants[f73801] != null) {
+  if (this.participants[f73820] != null) {
     flag = arr.reduce((arg0, type) => {
       let flag = arg0;
       if (type.type === outer1_14.STREAM) {
@@ -314,7 +314,7 @@ prototype["_getEmbeddedActivities"] = function _getEmbeddedActivities() {
     uniqByResult = require(12) /* apply */.uniqBy(items, (compositeInstanceId) => compositeInstanceId.compositeInstanceId);
     const obj = require(12) /* apply */;
   }
-  const ContentClassificationEmbeddedActivityFilterExperiment = require(10514) /* apexExperiment */.ContentClassificationEmbeddedActivityFilterExperiment;
+  const ContentClassificationEmbeddedActivityFilterExperiment = require(10510) /* apexExperiment */.ContentClassificationEmbeddedActivityFilterExperiment;
   const currentUser = authStore2.getCurrentUser();
   let nsfwAllowed;
   if (currentUser != null) {
@@ -403,7 +403,7 @@ prototype["_getParticipantsForUser"] = function _getParticipantsForUser(userId) 
       obj.id = user.id;
       obj.voiceState = voiceStateForChannel;
       obj.voicePlatform = voicePlatformForChannel;
-      let obj1 = require(10513) /* useIsSpeaking */;
+      let obj1 = require(10509) /* useIsSpeaking */;
       obj = { userId: null, checkIsMuted: true };
       obj[0] = userId;
       obj.speaking = obj1.getIsSpeaking(obj);
@@ -417,12 +417,12 @@ prototype["_getParticipantsForUser"] = function _getParticipantsForUser(userId) 
       obj.userNick = importDefault(4379).getName(guildId, self.channelId, user);
       const obj4 = importDefault(4379);
       const tmp8 = require;
-      obj.userAvatarDecoration = require(9086) /* useAvatarDecoration */.getAvatarDecoration(user, guildId);
+      obj.userAvatarDecoration = require(9082) /* useAvatarDecoration */.getAvatarDecoration(user, guildId);
       obj.localVideoDisabled = localVideoDisabled.isLocalVideoDisabled(user.id);
       const poppedOutParticipants = self.poppedOutParticipants;
       obj.isPoppedOut = poppedOutParticipants.has(user.id);
       items.push(obj);
-      const tmp8Result = require(9086) /* useAvatarDecoration */;
+      const tmp8Result = require(9082) /* useAvatarDecoration */;
     }
     let streamForUser = authStore.getStreamForUser(userId, guildId);
     if (streamForUser == null) {

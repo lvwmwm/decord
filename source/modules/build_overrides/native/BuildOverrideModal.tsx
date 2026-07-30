@@ -1,10 +1,10 @@
-// Module ID: 13008
-// Function ID: 13009
+// Module ID: 13003
+// Function ID: 13004
 // Name: BuildOverrideModal
-// Dependencies: [19, 17, 10468, 21, 4189, 712, 4125, 4035, 13009, 13010, 589, 10980, 3771, 5177, 4185, 1236, 4600, 4395, 2]
+// Dependencies: [19, 17, 10464, 21, 4189, 712, 4125, 4035, 13004, 13005, 589, 10976, 3771, 5177, 4185, 1236, 4600, 4395, 2]
 // Exports: default
 
-// Module 13008 (BuildOverrideModal)
+// Module 13003 (BuildOverrideModal)
 import "noop";
 import get_ActivityIndicator from "module_4395";
 import getCurrentBuildOverride from "getCurrentBuildOverride";
@@ -43,9 +43,9 @@ export default function BuildOverrideModal(overrideUrl) {
   const tmp = createCacheKey();
   let obj = str(4035);
   if (obj.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(13009);
+    let tmp2Result = tmp2(13004);
   } else {
-    tmp2Result = tmp2(13010);
+    tmp2Result = tmp2(13005);
   }
   tmp4 = stateFromStores(4125)();
   const items = [getCurrentBuildOverride];
@@ -56,7 +56,7 @@ export default function BuildOverrideModal(overrideUrl) {
   if (override != null) {
     const targetBuildOverride = override.targetBuildOverride;
     if (targetBuildOverride != null) {
-      const tmp9 = targetBuildOverride[tmp5(undefined, 10980).DEVICE_FIELD];
+      const tmp9 = targetBuildOverride[tmp5(undefined, 10976).DEVICE_FIELD];
       if (tmp9 != null) {
         id = tmp9.id;
       }

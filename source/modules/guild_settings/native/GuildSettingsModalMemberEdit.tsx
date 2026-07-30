@@ -1,10 +1,10 @@
-// Module ID: 11027
-// Function ID: 11028
+// Module ID: 11023
+// Function ID: 11024
 // Name: GuildSettingsModalMemberEditScene
-// Dependencies: [19, 17, 4181, 1415, 1936, 1942, 1935, 1862, 3817, 1874, 11028, 676, 21, 4189, 712, 3822, 12, 9092, 1297, 4185, 5220, 1236, 5554, 3901, 6752, 5143, 4028, 8390, 3806, 7634, 4598, 6727, 11029, 11030, 3889, 11035, 1480, 589, 38, 11026, 6070, 5501, 11040, 11042, 5503, 5570, 2]
+// Dependencies: [19, 17, 4181, 1415, 1936, 1942, 1935, 1862, 3817, 1874, 11024, 676, 21, 4189, 712, 3822, 12, 9088, 1297, 4185, 5220, 1236, 5554, 3901, 6749, 5143, 4028, 8387, 3806, 7631, 4598, 6724, 11025, 11026, 3889, 11031, 1480, 589, 38, 11022, 6068, 5501, 11036, 11038, 5503, 5570, 2]
 // Exports: default
 
-// Module 11027 (GuildSettingsModalMemberEditScene)
+// Module 11023 (GuildSettingsModalMemberEditScene)
 import importAllResult from "Text";
 import get_ActivityIndicator from "TableCheckboxRow";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -379,7 +379,7 @@ class GuildSettingsModalMemberEdit extends PureComponent2 {
       outer1_1(outer1_3[32]).startEditingRoles(applyArgumentsResult.props.guild.id, applyArgumentsResult.props.user.id);
     };
     applyArgumentsResult.handleToggleRole = function handleToggleRole(roleId, state) {
-      callback(11029).toggleRole(roleId, state);
+      callback(11025).toggleRole(roleId, state);
     };
     applyArgumentsResult.handleSetCommunicationDisabled = function handleSetCommunicationDisabled() {
       let guild;
@@ -427,7 +427,7 @@ class GuildSettingsModalMemberEdit extends PureComponent2 {
       }
     };
     applyArgumentsResult.handleCancelEditMemberRoles = function handleCancelEditMemberRoles() {
-      callback(11029).stopEditingRoles();
+      callback(11025).stopEditingRoles();
     };
     return applyArgumentsResult;
   }
@@ -512,7 +512,7 @@ prototype["render"] = function render() {
     let tmp18Result = null;
     if (user.bot) {
       obj = { verified: null };
-      let tmp21Result = tmp21(8390);
+      let tmp21Result = tmp21(8387);
       obj[0] = user.isVerifiedBot();
       tmp18Result = tmp18(tmp21Result, obj);
     }
@@ -568,7 +568,7 @@ prototype["render"] = function render() {
         obj8[2] = intl4.string(tmp19(1236).t.h7UKXj);
         ({ handleChangeNickname: obj16[3], handleSaveNickname: obj16[4] } = self);
         obj8[6] = tmp3;
-        canChangeNick = tmp18(tmp19(6727).TextInput, obj8);
+        canChangeNick = tmp18(tmp19(6724).TextInput, obj8);
       }
       items2[1] = canChangeNick;
       if (canManageRoles) {
@@ -623,7 +623,7 @@ prototype["render"] = function render() {
       items2[6] = tmp18Result;
       obj4[2] = items2;
       obj3[2] = tmp16(tmp19(4598).Stack, obj4);
-      return tmp18(tmp19(7634).Form, obj3);
+      return tmp18(tmp19(7631).Form, obj3);
     } else {
       const result = tmp19(3806).isMemberCommunicationDisabled(member);
       const TableRowGroup = tmp19(5554).TableRowGroup;

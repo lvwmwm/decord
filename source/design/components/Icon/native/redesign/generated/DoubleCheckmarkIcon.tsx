@@ -1,10 +1,10 @@
-// Module ID: 14717
-// Function ID: 14718
+// Module ID: 14711
+// Function ID: 14712
 // Name: DoubleCheckmarkIcon
-// Dependencies: [19, 21, 712, 3892, 14718, 2]
+// Dependencies: [19, 21, 712, 3892, 14712, 2]
 // Exports: DoubleCheckmarkIcon
 
-// Module 14717 (DoubleCheckmarkIcon)
+// Module 14711 (DoubleCheckmarkIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const DoubleCheckmarkIcon = function DoubleCheckmarkIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14718) /* registerAsset */;
+  obj[0] = require(14712) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

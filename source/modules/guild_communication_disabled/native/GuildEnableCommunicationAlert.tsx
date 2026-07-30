@@ -1,10 +1,10 @@
-// Module ID: 11034
-// Function ID: 11035
+// Module ID: 11030
+// Function ID: 11031
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 19, 17, 1874, 1944, 676, 21, 4189, 7758, 4616, 698, 11033, 3890, 1236, 10356, 4618, 4185, 4379, 10189, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 1944, 676, 21, 4189, 7755, 4616, 698, 11029, 3890, 1236, 10352, 4618, 4185, 4379, 10185, 2]
 // Exports: default
 
-// Module 11034 (GuildEnableCommunicationAlert)
+// Module 11030 (GuildEnableCommunicationAlert)
 import closure_3 from "getFriendlyDurationString";
 import _slicedToArray from "_slicedToArray";
 import "componentDidMount";
@@ -65,7 +65,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
               return obj;
             } else {
               let closure_0 = tmp4;
-              let obj1 = v0(11033);
+              let obj1 = v0(11029);
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
@@ -84,7 +84,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
             const obj2 = { key: "GUILD_ENABLE_COMMUNICATION_SUCCESS", content: null, icon: null };
             const intl = outer1_0(1236).intl;
             obj2[1] = intl.string(outer1_0(1236).t["/Mmbfv"]);
-            obj2[2] = v0(10356);
+            obj2[2] = v0(10352);
             v0(3890).open(obj2);
             dependencyMap = 3;
             return { value: "HermesInternal", done: null };
@@ -106,7 +106,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
   }
   const tmp2 = callback();
   dependencyMap = tmp2;
-  closure_3 = _handleConfirmRemoveTimeout(userId(7758)(userId, guildId), 1)[0];
+  closure_3 = _handleConfirmRemoveTimeout(userId(7755)(userId, guildId), 1)[0];
   userId(4616)(() => {
     let obj = userId(_undefined[11]);
     obj = { type: outer1_7, guild_id: guildId, other_user_id: userId };

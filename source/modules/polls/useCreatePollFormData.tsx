@@ -1,10 +1,10 @@
-// Module ID: 11376
-// Function ID: 11377
+// Module ID: 11372
+// Function ID: 11373
 // Name: createPollCreationImageForMedia
-// Dependencies: [5, 32, 19, 6140, 6072, 11377, 9957, 11378, 11379, 11380, 1236, 8002, 2]
+// Dependencies: [5, 32, 19, 6138, 6070, 11373, 9953, 11374, 11375, 11376, 1236, 7999, 2]
 // Exports: default
 
-// Module 11376 (createPollCreationImageForMedia)
+// Module 11372 (createPollCreationImageForMedia)
 import useRequest from "useRequest";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -87,7 +87,7 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
     tmp15 = 0 === found1.length;
   }
   const tmpResult2 = first(obj.useState({}), 2);
-  const tmpResult4 = first(importDefault(11377)(importDefault(9957).createPoll), 2);
+  const tmpResult4 = first(importDefault(11373)(importDefault(9953).createPoll), 2);
   const first4 = tmpResult4[0];
   const loading = tmp20.loading;
   let closure_16 = tmp21;
@@ -188,11 +188,11 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
               const callback = closure_1;
               closure_1 = callback2;
               outer1_19(callback, closure_1);
-              outer1_18(first3(callback2, callback(11380).PollMediaUploadAttachmentStatus.PREPARING), closure_1);
+              outer1_18(first3(callback2, callback(11376).PollMediaUploadAttachmentStatus.PREPARING), closure_1);
               table = 1;
               c6 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = callback2(11378).handlePollGifAttachmentAdd(callback, table[closure_1].localCreationAnswerId, callback2);
+              obj1[0] = callback2(11374).handlePollGifAttachmentAdd(callback, table[closure_1].localCreationAnswerId, callback2);
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -205,9 +205,9 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
             return obj;
           } else {
             if (null != arg1) {
-              outer1_18(first3(closure_1, callback(11380).PollMediaUploadAttachmentStatus.READY_TO_UPLOAD), callback);
+              outer1_18(first3(closure_1, callback(11376).PollMediaUploadAttachmentStatus.READY_TO_UPLOAD), callback);
             } else {
-              outer1_18(first3(closure_1, callback(11380).PollMediaUploadAttachmentStatus.ERROR), callback);
+              outer1_18(first3(closure_1, callback(11376).PollMediaUploadAttachmentStatus.ERROR), callback);
             }
             c6 = 3;
           }

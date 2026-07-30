@@ -1,10 +1,10 @@
-// Module ID: 6722
-// Function ID: 6723
+// Module ID: 6719
+// Function ID: 6720
 // Name: getSafetyToastTypeContent
-// Dependencies: [1372, 1874, 6716, 4379, 4028, 1236, 2323, 2]
+// Dependencies: [1372, 1874, 6713, 4379, 4028, 1236, 2323, 2]
 // Exports: getSafetyToastTypeContent
 
-// Module 6722 (getSafetyToastTypeContent)
+// Module 6719 (getSafetyToastTypeContent)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { SafetyToastType } from "SafetyToastType";

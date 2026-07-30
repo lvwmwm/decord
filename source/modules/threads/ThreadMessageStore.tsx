@@ -1,9 +1,9 @@
-// Module ID: 6066
-// Function ID: 6067
+// Module ID: 6064
+// Function ID: 6065
 // Name: updateState
 // Dependencies: [1376, 3827, 1882, 1372, 4407, 1235, 676, 12, 11, 4409, 589, 709, 2]
 
-// Module 6066 (updateState)
+// Module 6064 (updateState)
 import createChannelRecord from "createChannelRecord";
 import hasFlag from "hasFlag";
 import createdAt from "createdAt";

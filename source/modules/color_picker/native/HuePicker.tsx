@@ -1,10 +1,10 @@
-// Module ID: 13701
-// Function ID: 13702
+// Module ID: 13696
+// Function ID: 13697
 // Name: HuePicker
-// Dependencies: [32, 19, 17, 21, 4189, 712, 13698, 4050, 5273, 4611, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 13693, 4050, 5273, 4611, 2]
 // Exports: default
 
-// Module 13701 (HuePicker)
+// Module 13696 (HuePicker)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -63,9 +63,9 @@ export default function HuePicker(hue) {
   let obj = hue(onPanUpdate[7]);
   sharedValue = obj.useSharedValue(0);
   let obj1 = hue(onPanUpdate[7]);
-  sharedValue1 = obj1.useSharedValue(0);
+  sharedValue1 = obj1.useSharedValue(tmp.slider.height);
   let obj2 = hue(onPanUpdate[7]);
-  sharedValue2 = obj2.useSharedValue(0);
+  sharedValue2 = obj2.useSharedValue(tmp.colorBarInner.height);
   let obj3 = hue(onPanUpdate[7]);
   sharedValue3 = obj3.useSharedValue(0);
   let items = [hue, sharedValue3, onPanUpdate, onPanFinalize];
@@ -85,7 +85,7 @@ export default function HuePicker(hue) {
     const Gesture = hue(onPanUpdate[8]).Gesture;
     const PanResult = Gesture.Pan();
     const onBeginResult = Gesture.Pan().onBegin(setSatVal);
-    const fn = function n() {
+    const fn = function r() {
       if (null != _slicedToArray) {
         outer1_0(outer1_2[7]).runOnJS(tmp)();
         const obj = outer1_0(outer1_2[7]);
@@ -123,18 +123,14 @@ export default function HuePicker(hue) {
   fn.__closure = obj;
   fn.__workletHash = 11845890180264;
   fn.__initData = closure_12;
-  const items2 = [sharedValue1, sharedValue];
+  const items2 = [sharedValue];
   const animatedStyle = hue(onPanUpdate[7]).useAnimatedStyle(fn);
-  const items3 = [sharedValue2, sharedValue3];
+  const items3 = [sharedValue3];
   const callback = sharedValue.useCallback((nativeEvent) => {
-    const layout = nativeEvent.nativeEvent.layout;
-    const result = sharedValue1.set(layout.height);
-    const result1 = sharedValue.set(layout.width);
+    const result = sharedValue.set(nativeEvent.nativeEvent.layout.width);
   }, items2);
   const callback1 = sharedValue.useCallback((nativeEvent) => {
-    const layout = nativeEvent.nativeEvent.layout;
-    const result = sharedValue2.set(layout.height);
-    const result1 = sharedValue3.set(layout.width);
+    const result = sharedValue3.set(nativeEvent.nativeEvent.layout.width);
   }, items3);
   const obj5 = hue(onPanUpdate[7]);
   const tmp2 = hue;

@@ -148,7 +148,7 @@ function _flushIfServerless() {
               num4 = undefined;
               v0 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp5) {
@@ -182,7 +182,7 @@ function _flushIfServerless() {
                     obj2.vercelWaitUntil(v0(num4));
                   } else {
                     const _process = process;
-                    let tmp22 = typeof process === "ta";
+                    let tmp22 = typeof process === "__INTERNAL_SLOT_MAP__";
                     if (typeof process !== "Array") {
                       const _process7 = process;
                       let NETLIFY = process.env.FUNCTIONS_WORKER_RUNTIME;

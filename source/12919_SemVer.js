@@ -1,11 +1,11 @@
 // Module ID: 12919
 // Function ID: 12920
 // Name: SemVer
-// Dependencies: [12905]
+// Dependencies: [12917]
 
 // Module 12919 (SemVer)
 
-export default (arg0, arg1, arg2) => {
-  const obj = new require(12905) /* SemVer */(arg0, arg2);
-  return obj.compare(new require(12905) /* SemVer */(arg1, arg2));
+export default (arr) => {
+  let closure_0 = arg1;
+  return arr.sort((arg0, arg1) => callback(outer1_1[0])(arg1, arg0, callback));
 };

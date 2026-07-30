@@ -1,10 +1,10 @@
-// Module ID: 9951
-// Function ID: 9952
+// Module ID: 9947
+// Function ID: 9948
 // Name: HeaderIcon
-// Dependencies: [17, 1862, 21, 4189, 712, 5565, 589, 5566, 9094, 1297, 4686, 4380, 4650, 1236, 4185, 2]
+// Dependencies: [17, 1862, 21, 4189, 712, 5565, 589, 5566, 9090, 1297, 4686, 4380, 4650, 1236, 4185, 2]
 // Exports: ForLaterCardHeader
 
-// Module 9951 (HeaderIcon)
+// Module 9947 (HeaderIcon)
 import { View } from "get ActivityIndicator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import jsxProd from "jsxProd";
@@ -32,8 +32,8 @@ function HeaderIcon(channel) {
       obj = { channel: null, size: null };
       obj[0] = channel;
       obj[1] = tmp2(1297).AvatarSizes.XSMALL;
-      tmp6Result = tmp6(importDefault(9094), obj);
-      const tmp10 = importDefault(9094);
+      tmp6Result = tmp6(importDefault(9090), obj);
+      const tmp10 = importDefault(9090);
     } else {
       const obj1 = { style: null, children: null };
       obj1[0] = tmp.dmIcon;

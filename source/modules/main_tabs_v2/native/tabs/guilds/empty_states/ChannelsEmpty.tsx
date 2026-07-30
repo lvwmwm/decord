@@ -1,8 +1,8 @@
-// Module ID: 15221
-// Function ID: 15222
-// Dependencies: [19, 17, 3817, 676, 21, 4189, 4185, 712, 647, 8304, 8276, 14127, 1865, 6785, 15222, 1236, 2969, 7637, 1297, 15223, 4601, 2]
+// Module ID: 15215
+// Function ID: 15216
+// Dependencies: [19, 17, 3817, 676, 21, 4189, 4185, 712, 647, 8301, 8273, 14123, 1865, 6782, 15216, 1236, 2969, 7634, 1297, 15217, 4601, 2]
 
-// Module 15221
+// Module 15215
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "RowButtonWrapper";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -49,16 +49,16 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   const callback1 = importAllResult.useCallback(() => {
     outer1_1(outer1_2[10]).open(null, guild.id, null, null);
   }, items3);
-  let obj1 = guild(14127);
+  let obj1 = guild(14123);
   const youBarTotalHeight = obj1.useYouBarTotalHeight(16);
   let obj2 = guild(1865);
   const isFavoritesGuildIdResult = obj2.isFavoritesGuildId(guild.id);
   if (isFavoritesGuildIdResult) {
-    let tmp9Result = tmp9(tmp2(6785).FavoritesSpotIllustration, { width: 192, height: 108 });
+    let tmp9Result = tmp9(tmp2(6782).FavoritesSpotIllustration, { width: 192, height: 108 });
     let tmp13 = tmp9;
   } else {
     obj = { source: null };
-    obj[0] = importDefault(15222);
+    obj[0] = importDefault(15216);
     tmp9Result = tmp9(closure_5, obj);
     tmp13 = tmp9;
   }
@@ -83,12 +83,12 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
     obj1[0] = tmp.personalizeButtonWrapper;
     obj2 = { icon: null, label: null, onPress: null };
     const obj3 = { source: null, disableColor: true };
-    obj3[0] = importDefault(15223);
+    obj3[0] = importDefault(15217);
     obj2[0] = tmp13(tmp2(1297).Icon, obj3);
     const intl3 = tmp2(1236).intl;
     obj2[1] = intl3.string(tmp2(1236).t["Yhi9/N"]);
     obj2[2] = callback;
-    obj1[1] = tmp13(tmp2(7637).RowButton, obj2);
+    obj1[1] = tmp13(tmp2(7634).RowButton, obj2);
     canCustomizeGuild = tmp13(tmp19, obj1);
   }
   const items5 = [canCustomizeGuild, ];

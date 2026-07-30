@@ -1,10 +1,10 @@
-// Module ID: 10361
-// Function ID: 10362
+// Module ID: 10357
+// Function ID: 10358
 // Name: ReactionNotificationBody
-// Dependencies: [19, 17, 4181, 10262, 676, 21, 4189, 501, 712, 3862, 10295, 4185, 1416, 10362, 5206, 1236, 5884, 10261, 10280, 10281, 10301, 9094, 1297, 5566, 12, 4418, 589, 4395, 4197, 10260, 10303, 1959, 10334, 10333, 2]
+// Dependencies: [19, 17, 4181, 10257, 676, 21, 4189, 501, 712, 3862, 10291, 4185, 1416, 10358, 5206, 1236, 5882, 10256, 10276, 10277, 10297, 9090, 1297, 5566, 12, 4418, 589, 4395, 4197, 10258, 10299, 1959, 10330, 10329, 2]
 // Exports: default
 
-// Module 10361 (ReactionNotificationBody)
+// Module 10357 (ReactionNotificationBody)
 import PreviewIcon from "PreviewIcon";
 import { View } from "extractMetadataFromNotification";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -33,10 +33,10 @@ function ReactionNotificationBody(arg0) {
   let text;
   ({ secondaryText, messagePreview } = arg0);
   ({ text, hasMessageContent } = arg0);
-  let obj = require(10261) /* extractMetadataFromNotification */;
+  let obj = require(10256) /* extractMetadataFromNotification */;
   const messagePreviewTextVariant = obj.getMessagePreviewTextVariant();
   const tmp = createCacheKey();
-  ({ gradientColors, gradientStyles } = importDefault(10280)());
+  ({ gradientColors, gradientStyles } = importDefault(10276)());
   obj = { variant: messagePreviewTextVariant, color: "text-default", style: tmp.italic, children: text };
   const children = [callback(require(4185) /* Text */.Text, obj), , ];
   let tmp8Result = null;
@@ -56,7 +56,7 @@ function ReactionNotificationBody(arg0) {
       obj1[2] = closure_6;
       obj1[4] = gradientStyles;
       obj1[5] = gradientColors;
-      tmp8Result = tmp8(tmp2(10281).NativeChannelRowPreview, obj1);
+      tmp8Result = tmp8(tmp2(10277).NativeChannelRowPreview, obj1);
     }
   }
   children[2] = tmp8Result;
@@ -89,7 +89,7 @@ function ReactionNotificationBodyWrapper(arg0) {
   const React = tmp4;
   const AnimateEmoji = message(3862).AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
-  let obj = message(10295);
+  let obj = message(10291);
   const previewableMedia = obj.usePreviewableMedia(message);
   const items = [setting, reaction, , , ];
   ({ imageEmoji: arr[2], textEmoji: arr[3], italic: arr[4] } = tmp4);
@@ -249,9 +249,9 @@ function ReactionNotificationBodyWrapper(arg0) {
     return { text, secondaryText: null };
   }, items1);
   ({ secondaryText, text } = memo);
-  let obj1 = message(10261);
+  let obj1 = message(10256);
   const hasPreviewableMedia = obj1.useHasPreviewableMedia(message);
-  let obj2 = message(10301);
+  let obj2 = message(10297);
   if (hasPreviewableMedia) {
     message = obj2.useGetInitialMessagePreview({ message });
   }
@@ -300,8 +300,8 @@ function ReactorNotificationIcon(notification) {
       let obj = { channel: null, size: null };
       obj[0] = channel;
       obj[1] = require(1297) /* Button */.AvatarSizes.NORMAL;
-      let tmp8Result = callback(importDefault(9094), obj);
-      const tmp15 = importDefault(9094);
+      let tmp8Result = callback(importDefault(9090), obj);
+      const tmp15 = importDefault(9090);
     }
     return tmp8Result;
   }

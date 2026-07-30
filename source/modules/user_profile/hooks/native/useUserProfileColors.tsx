@@ -1,10 +1,10 @@
-// Module ID: 8081
-// Function ID: 8082
+// Module ID: 8078
+// Function ID: 8079
 // Name: useUserProfileColors
-// Dependencies: [4181, 505, 4125, 5537, 589, 1348, 3893, 712, 7989, 688, 2]
+// Dependencies: [4181, 505, 4125, 5537, 589, 1348, 3893, 712, 7986, 688, 2]
 // Exports: useUserProfileColors
 
-// Module 8081 (useUserProfileColors)
+// Module 8078 (useUserProfileColors)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { ThemeTypes } from "sum";
 
@@ -58,18 +58,18 @@ export const useUserProfileColors = function useUserProfileColors(arg0) {
         if (stateFromStores) {
           tmp8 = overlaySyncedWithUserTheme;
         }
-        const result = tmp4(7989).calculateOverlayedColor(primaryColor, tmp8);
+        const result = tmp4(7986).calculateOverlayedColor(primaryColor, tmp8);
         obj = {};
         const merged = Object.assign(obj);
         obj.containerBackground = containerBackground;
-        const tmp4Result3 = tmp4(7989);
+        const tmp4Result3 = tmp4(7986);
         const tmp4Result4 = tmp4(688);
-        obj.gradientSecondaryBackground = tmp4Result4.int2hex(tmp4(7989).calculateOverlayedColor(secondaryColor, overlay));
-        const tmp4Result5 = tmp4(7989);
+        obj.gradientSecondaryBackground = tmp4Result4.int2hex(tmp4(7986).calculateOverlayedColor(secondaryColor, overlay));
+        const tmp4Result5 = tmp4(7986);
         obj.avatarBackground = tmp4(688).int2hex(result);
         const tmp4Result6 = tmp4(688);
         const tmp4Result7 = tmp4(688);
-        obj.statusBackground = tmp4Result7.int2hex(tmp4(7989).calculateOverlayedColor(result, sectionBox));
+        obj.statusBackground = tmp4Result7.int2hex(tmp4(7986).calculateOverlayedColor(result, sectionBox));
         return obj;
       }
     }

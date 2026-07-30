@@ -1,9 +1,9 @@
-// Module ID: 13592
-// Function ID: 13593
+// Module ID: 13587
+// Function ID: 13588
 // Name: map
-// Dependencies: [5, 4236, 1931, 4635, 3, 13593, 13594, 13595, 10271, 8048, 2]
+// Dependencies: [5, 4236, 1931, 4635, 3, 13588, 13589, 13590, 10267, 8045, 2]
 
-// Module 13592 (map)
+// Module 13587 (map)
 import _initialize from "_initialize";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -102,7 +102,7 @@ let prototype = function SoundboardManager() {
               let c4;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

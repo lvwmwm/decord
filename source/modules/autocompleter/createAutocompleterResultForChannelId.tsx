@@ -1,10 +1,10 @@
-// Module ID: 6174
-// Function ID: 6175
+// Module ID: 6171
+// Function ID: 6172
 // Name: createAutocompleterResultForChannelId
 // Dependencies: [1372, 3826, 1874, 5100, 676, 4380, 2]
 // Exports: default
 
-// Module 6174 (createAutocompleterResultForChannelId)
+// Module 6171 (createAutocompleterResultForChannelId)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";

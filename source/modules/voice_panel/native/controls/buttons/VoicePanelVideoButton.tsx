@@ -1,10 +1,10 @@
-// Module ID: 16017
-// Function ID: 16018
+// Module ID: 16011
+// Function ID: 16012
 // Name: VideoButtonRive
-// Dependencies: [19, 17, 10518, 1372, 1862, 4236, 3817, 21, 10037, 16005, 589, 6010, 4530, 16018, 8831, 10536, 16006, 1236, 3901, 6637, 12039, 2]
+// Dependencies: [19, 17, 10514, 1372, 1862, 4236, 3817, 21, 10033, 15999, 589, 6008, 4530, 16012, 8827, 10532, 16000, 1236, 3901, 6634, 12033, 2]
 // Exports: default
 
-// Module 16017 (VideoButtonRive)
+// Module 16011 (VideoButtonRive)
 import VideoIcon from "VideoIcon";
 import { View } from "getSystemLocale";
 import initialize from "initialize";
@@ -27,9 +27,9 @@ function VideoButtonRive(arg0) {
   }
   obj[1] = str;
   if (isVideoEnabled) {
-    let VideoSlashIcon = tmp3(6637).VideoIcon;
+    let VideoSlashIcon = tmp3(6634).VideoIcon;
   } else {
-    VideoSlashIcon = tmp3(12039).VideoSlashIcon;
+    VideoSlashIcon = tmp3(12033).VideoSlashIcon;
   }
   obj[2] = <VideoSlashIcon color={color} />;
   obj[1] = jsx(require(3901) /* ManaContext */.CameraRive, { dataBinding: { fill: color, on: isVideoEnabled }, defaultViewModelInstance: null, fallback: null });

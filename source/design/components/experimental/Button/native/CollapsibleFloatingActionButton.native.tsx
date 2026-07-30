@@ -1,10 +1,10 @@
-// Module ID: 8242
-// Function ID: 8243
+// Module ID: 8239
+// Function ID: 8240
 // Name: CollapsableButton
-// Dependencies: [19, 21, 4604, 4189, 4050, 4599, 4603, 4601, 8243, 712, 2]
+// Dependencies: [19, 21, 4604, 4189, 4050, 4599, 4603, 4601, 8240, 712, 2]
 // Exports: CollapsibleFloatingActionButton
 
-// Module 8242 (CollapsableButton)
+// Module 8239 (CollapsableButton)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA";
@@ -60,7 +60,7 @@ export const CollapsibleFloatingActionButton = function CollapsibleFloatingActio
   let text;
   ({ icon, positionBottom, positionRight, text, state } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = require(8243) /* styles */;
+  let obj = require(8240) /* styles */;
   let obj1 = validElement;
   const styles = obj.useStyles();
   let cloneElementResult = icon;
@@ -71,11 +71,11 @@ export const CollapsibleFloatingActionButton = function CollapsibleFloatingActio
   }
   const items = [styles.button, ];
   if (positionRight == null) {
-    positionRight = tmp3(8243).DEFAULT_POSITION_OFFSET;
+    positionRight = tmp3(8240).DEFAULT_POSITION_OFFSET;
   }
   obj = { position: "absolute", right: positionRight, bottom: null };
   if (positionBottom == null) {
-    positionBottom = tmp3(8243).DEFAULT_POSITION_OFFSET;
+    positionBottom = tmp3(8240).DEFAULT_POSITION_OFFSET;
   }
   obj[2] = positionBottom;
   items[1] = obj;

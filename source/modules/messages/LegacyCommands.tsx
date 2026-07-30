@@ -1,10 +1,10 @@
-// Module ID: 11173
-// Function ID: 11174
+// Module ID: 11169
+// Function ID: 11170
 // Name: action
-// Dependencies: [32, 5048, 4407, 676, 3862, 6181, 3888, 6075, 3828, 5713, 4384, 2]
+// Dependencies: [32, 5048, 4407, 676, 3862, 6178, 3888, 6073, 3828, 5713, 4384, 2]
 // Exports: handleLegacyCommands
 
-// Module 11173 (action)
+// Module 11169 (action)
 import _slicedToArray from "_slicedToArray";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -46,7 +46,7 @@ obj5[1] = function action(str, channel) {
           const trimmed = str.trim();
           const byName = disambiguatedEmojiContext.getByName(trimmed.slice(2, -1));
           if (null != byName) {
-            const obj3 = require(6075) /* checkReactionResponse */;
+            const obj3 = require(6073) /* checkReactionResponse */;
             obj3.addReaction(channel.id, lastResult.id, require(3828) /* MAX_REACTIONS */.toReactionEmoji(byName));
             return { content: "" };
           }
@@ -83,7 +83,7 @@ obj4 = {
   action(arg0, channel) {
     channel = channel.channel;
     if (null != channel.guild_id) {
-      const obj = importDefault(6181);
+      const obj = importDefault(6178);
       obj.changeNickname(channel.guild_id, channel.id, closure_8, arg0);
       return { content: "" };
     }

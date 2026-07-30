@@ -1,10 +1,10 @@
-// Module ID: 8662
-// Function ID: 8663
+// Module ID: 8659
+// Function ID: 8660
 // Name: useTrackShopCardImpression
-// Dependencies: [19, 676, 8663, 5515, 1474, 8664, 3835, 5810, 698, 8426, 503, 5809, 2]
+// Dependencies: [19, 676, 8660, 5515, 1474, 8661, 3835, 5810, 698, 8423, 503, 5809, 2]
 // Exports: useTrackShopCardImpression
 
-// Module 8662 (useTrackShopCardImpression)
+// Module 8659 (useTrackShopCardImpression)
 import noop from "noop";
 import { AnalyticEvents } from "ME";
 
@@ -15,14 +15,14 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   const _require = product;
   const importDefault = selectedProduct;
   const dependencyMap = flag2;
-  const collectiblesAnalyticsContext = _require(8663).useCollectiblesAnalyticsContext();
+  const collectiblesAnalyticsContext = _require(8660).useCollectiblesAnalyticsContext();
   const analyticsLocations = importDefault(5515)().analyticsLocations;
   const size = importDefault(1474)();
   const width = size.width;
   const height = size.height;
-  let obj = _require(8663);
-  const currentUser = _require(8664).useCurrentUser();
-  let obj2 = _require(8664);
+  let obj = _require(8660);
+  const currentUser = _require(8661).useCurrentUser();
+  let obj2 = _require(8661);
   const canUseCollectiblesResult = importDefault(3835).canUseCollectibles(currentUser);
   let closure_7 = canUseCollectiblesResult;
   const obj3 = importDefault(3835);
@@ -134,7 +134,7 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   items2[5] = analyticsLocations;
   items2[6] = shopDiscountSource;
   const callback1 = obj5.useCallback(() => {
-    let obj = product(8426);
+    let obj = product(8423);
     obj = { name: product(503).ImpressionNames.SHOP_CARD, type: product(503).ImpressionTypes.VIEW, properties: null };
     obj = { sku_id: selectedProduct.skuId, card_id: null, shop_session_id: null, position_in_section: null, product_sku_ids: null, location_stack: null, discount_source: null };
     let cardId;

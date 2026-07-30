@@ -1,10 +1,10 @@
-// Module ID: 6552
-// Function ID: 6553
+// Module ID: 6549
+// Function ID: 6550
 // Name: defaultMobileWebNitroManagementSuccessCallback
-// Dependencies: [676, 505, 21, 3, 4529, 1236, 500, 1577, 6553, 6556, 2]
+// Dependencies: [676, 505, 21, 3, 4529, 1236, 500, 1577, 6550, 6553, 2]
 // Exports: getExternalManagementMessage, getPremiumManagementMethod
 
-// Module 6552 (defaultMobileWebNitroManagementSuccessCallback)
+// Module 6549 (defaultMobileWebNitroManagementSuccessCallback)
 import { SubscriptionStatusTypes } from "ME";
 import { PaymentGatewayToFriendlyName as closure_4 } from "sum";
 import { jsx } from "jsxProd";
@@ -98,7 +98,7 @@ export const getExternalManagementMessage = function getExternalManagementMessag
                 const intl3 = tmp13(1236).intl;
                 const t = tmp13(1236).t;
                 obj[2] = intl3.string(tmp8 ? t.tqSSSA : t["olSp/D"]);
-                jsx(tmp13(6556).LinkButton, { containerStyle: null, onPress: null, text: null, variant: "text-sm/semibold" });
+                jsx(tmp13(6553).LinkButton, { containerStyle: null, onPress: null, text: null, variant: "text-sm/semibold" });
                 const tmp9 = jsx;
               } else {
                 function manageExternalNitroSubscription() {

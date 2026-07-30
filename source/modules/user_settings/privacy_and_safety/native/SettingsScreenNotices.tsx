@@ -1,10 +1,10 @@
-// Module ID: 13846
-// Function ID: 13847
+// Module ID: 13841
+// Function ID: 13842
 // Name: items
-// Dependencies: [19, 17, 1874, 21, 4189, 712, 5855, 13847, 13848, 3868, 5013, 4405, 13849, 2]
+// Dependencies: [19, 17, 1874, 21, 4189, 712, 5853, 13842, 13843, 3868, 5013, 4405, 13844, 2]
 // Exports: default
 
-// Module 13846 (items)
+// Module 13841 (items)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";

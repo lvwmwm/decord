@@ -1,10 +1,10 @@
-// Module ID: 15754
-// Function ID: 15755
+// Module ID: 15748
+// Function ID: 15749
 // Name: AppIconsCoachmarkActionSheet
-// Dependencies: [19, 17, 1874, 1369, 21, 4189, 712, 589, 3835, 4157, 5243, 15755, 1297, 9406, 4185, 1236, 4600, 6582, 2]
+// Dependencies: [19, 17, 1874, 1369, 21, 4189, 712, 589, 3835, 4157, 5243, 15749, 1297, 9402, 4185, 1236, 4600, 6579, 2]
 // Exports: default
 
-// Module 15754 (AppIconsCoachmarkActionSheet)
+// Module 15748 (AppIconsCoachmarkActionSheet)
 import noop from "noop";
 import get_ActivityIndicator from "fetchCurrentAppIcon";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -55,12 +55,12 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   };
   obj = { style: tmp.info, children: null };
   obj1 = { source: null, style: null };
-  obj1[0] = importDefault(15755);
+  obj1[0] = importDefault(15749);
   obj1[1] = tmp.image;
   const items2 = [callback(closure_4, obj1), , ];
   const obj2 = { style: tmp.titleContainer, children: null };
   const obj3 = { source: null, size: null, style: null, disableColor: true };
-  obj3[0] = importDefault(9406);
+  obj3[0] = importDefault(9402);
   obj3[1] = markAsDismissed(1297).IconSizes.MEDIUM;
   obj3[2] = tmp.nitroWheel;
   const items3 = [callback(markAsDismissed(1297).Icon, obj3), ];

@@ -1,10 +1,10 @@
-// Module ID: 15740
-// Function ID: 15741
+// Module ID: 15734
+// Function ID: 15735
 // Name: MenuContainer
-// Dependencies: [19, 9568, 589, 9689, 4597, 2]
+// Dependencies: [19, 9565, 589, 9686, 4597, 2]
 // Exports: default
 
-// Module 15740 (MenuContainer)
+// Module 15734 (MenuContainer)
 import noop from "noop";
 import initialize from "initialize";
 

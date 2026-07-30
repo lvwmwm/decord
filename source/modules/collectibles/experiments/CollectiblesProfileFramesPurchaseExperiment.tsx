@@ -1,9 +1,9 @@
-// Module ID: 8701
-// Function ID: 8702
+// Module ID: 8697
+// Function ID: 8698
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 
-// Module 8701 (apexExperiment)
+// Module 8697 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { CONTROL: 0, [0]: "CONTROL", OPEN_PURCHASE: 1, [1]: "OPEN_PURCHASE", PAID_PREMIUM_SUBSCRIBERS_ONLY: 2, [2]: "PAID_PREMIUM_SUBSCRIBERS_ONLY" };

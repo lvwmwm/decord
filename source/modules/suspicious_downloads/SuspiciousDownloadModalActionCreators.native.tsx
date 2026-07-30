@@ -1,14 +1,14 @@
-// Module ID: 12286
-// Function ID: 12287
-// Dependencies: [4157, 12287, 1959, 2]
+// Module ID: 12280
+// Function ID: 12281
+// Dependencies: [4157, 12281, 1959, 2]
 
-// Module 12286
+// Module 12280
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/suspicious_downloads/SuspiciousDownloadModalActionCreators.native.tsx");
 
 export default {
   show(href) {
     let obj = importDefault(4157);
     obj = { href };
-    obj.openLazy(require(1959) /* asyncRequireImpl */(12287, dependencyMap.paths), "suspicious-download", obj);
+    obj.openLazy(require(1959) /* asyncRequireImpl */(12281, dependencyMap.paths), "suspicious-download", obj);
   }
 };

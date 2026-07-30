@@ -1,10 +1,10 @@
-// Module ID: 6187
-// Function ID: 6188
+// Module ID: 6184
+// Function ID: 6185
 // Name: handleUploadMessageAttachmentsErrors
-// Dependencies: [676, 4768, 4727, 6188, 4528, 1236, 12608, 2]
+// Dependencies: [676, 4768, 4727, 6185, 4528, 1236, 12602, 2]
 // Exports: handleUploadMessageAttachmentsErrors
 
-// Module 6187 (handleUploadMessageAttachmentsErrors)
+// Module 6184 (handleUploadMessageAttachmentsErrors)
 import ME from "ME";
 
 let c3;
@@ -26,7 +26,7 @@ export const handleUploadMessageAttachmentsErrors = function handleUploadMessage
     let obj = { file: null, maxSize: null, baseMaxSize: null, guildId: null, analyticsLocations: null, errorReason: null };
     obj[0] = tmp;
     const obj11 = require(4727) /* getUploadFileSizeSum */;
-    const tmp27 = importDefault(6188);
+    const tmp27 = importDefault(6185);
     obj[1] = require(4768) /* getKestrelConfig */.getEffectiveKestrelLimit(kestrelConfig, maxFileSizeResult);
     obj[2] = maxFileSizeResult;
     obj[3] = guildId;
@@ -66,7 +66,7 @@ export const handleUploadMessageAttachmentsErrors = function handleUploadMessage
     obj2.show(obj3);
     return true;
   } else {
-    obj = require(12608) /* getAttachmentUploadAbortAlertContent */;
+    obj = require(12602) /* getAttachmentUploadAbortAlertContent */;
     const attachmentUploadAbortAlertContent = obj.getAttachmentUploadAbortAlertContent(code);
     let flag = null != attachmentUploadAbortAlertContent;
     if (flag) {

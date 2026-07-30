@@ -1,10 +1,10 @@
-// Module ID: 15634
-// Function ID: 15635
+// Module ID: 15628
+// Function ID: 15629
 // Name: YouExpiringTrialOfferCard
-// Dependencies: [19, 17, 12774, 676, 6227, 1876, 21, 687, 4189, 712, 15635, 698, 1236, 3771, 647, 6242, 6234, 15633, 1945, 4185, 3835, 4717, 1297, 6627, 4611, 5562, 2]
+// Dependencies: [19, 17, 12768, 676, 6224, 1876, 21, 687, 4189, 712, 15629, 698, 1236, 3771, 647, 6239, 6231, 15627, 1945, 4185, 3835, 4717, 1297, 6624, 4611, 5562, 2]
 // Exports: default
 
-// Module 15634 (YouExpiringTrialOfferCard)
+// Module 15628 (YouExpiringTrialOfferCard)
 import Text from "Text";
 import { View } from "useShouldShowExpiringTrialOfferCard";
 import clearDismissUntil from "clearDismissUntil";
@@ -48,7 +48,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
   let obj1 = navigateToPremium(647);
   let items = [shouldShowExpiringTrialOfferCard];
   stateFromStores = obj1.useStateFromStores(items, () => shouldShowExpiringTrialOfferCard.getNoticeType());
-  let obj2 = navigateToPremium(6242);
+  let obj2 = navigateToPremium(6239);
   premiumTrialOffer = obj2.usePremiumTrialOffer();
   let num = 0;
   if (null != premiumTrialOffer) {
@@ -58,8 +58,8 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
       num = Date.parse(premiumTrialOffer.expires_at);
     }
   }
-  const tmp7Result = importDefault(6234)(num, closure_15);
-  let tmp4Result = tmp4(15633);
+  const tmp7Result = importDefault(6231)(num, closure_15);
+  let tmp4Result = tmp4(15627);
   shouldShowExpiringTrialOfferCard = tmp4Result.useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {
@@ -201,5 +201,5 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
   } else {
     return null;
   }
-  const tmp7 = importDefault(6234);
+  const tmp7 = importDefault(6231);
 };

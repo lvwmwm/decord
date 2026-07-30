@@ -1,8 +1,8 @@
-// Module ID: 9882
-// Function ID: 9883
-// Dependencies: [5, 9883, 676, 6076, 530, 4088, 1236, 4528, 709, 2]
+// Module ID: 9879
+// Function ID: 9880
+// Dependencies: [5, 9880, 676, 6074, 530, 4088, 1236, 4528, 709, 2]
 
-// Module 9882
+// Module 9879
 import V6OrEarlierAPIError from "V6OrEarlierAPIError";
 import handleChannelDelete from "handleChannelDelete";
 import { FetchState } from "handleChannelDelete";
@@ -51,7 +51,7 @@ let obj = {
               c0 = undefined;
               c1 = undefined;
               ({ id: c0, name: c1 } = outer1_0);
-              let obj1 = outer1_1(6076);
+              let obj1 = outer1_1(6074);
               dependencyMap = 1;
               c3 = 1;
               obj1 = { value: null, done: false };
@@ -180,7 +180,7 @@ let obj = {
             } else {
               let closure_1 = tmp4;
               const id = tmp4;
-              let obj1 = outer1_1(6076);
+              let obj1 = outer1_1(6074);
               dependencyMap = 1;
               c3 = 1;
               obj1 = { value: null, done: false };

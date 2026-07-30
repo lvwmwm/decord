@@ -1,10 +1,10 @@
-// Module ID: 6689
-// Function ID: 6690
+// Module ID: 6686
+// Function ID: 6687
 // Name: _startLurking
-// Dependencies: [5, 3818, 4110, 1862, 676, 1222, 6690, 5679, 5105, 6691, 6692, 698, 530, 1464, 2]
+// Dependencies: [5, 3818, 4110, 1862, 676, 1222, 6687, 5679, 5105, 6688, 6689, 698, 530, 1464, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 6689 (_startLurking)
+// Module 6686 (_startLurking)
 import transitionTo from "transitionTo";
 import initialize from "initialize";
 import handleInviteData from "handleInviteData";

@@ -1,10 +1,10 @@
-// Module ID: 10647
-// Function ID: 10648
+// Module ID: 10643
+// Function ID: 10644
 // Name: getOrFetchApplicationForLaunch
-// Dependencies: [5, 1372, 1371, 676, 10643, 10648, 709, 4088, 3807, 10649, 10608, 10650, 5692, 10652, 2]
+// Dependencies: [5, 1372, 1371, 676, 10639, 10644, 709, 4088, 3807, 10645, 10604, 10646, 5692, 10648, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 10647 (getOrFetchApplicationForLaunch)
+// Module 10643 (getOrFetchApplicationForLaunch)
 import EmbeddedActivityLocationKind from "EmbeddedActivityLocationKind";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import participantFromServer from "participantFromServer";
@@ -67,7 +67,7 @@ function _getOrFetchApplicationForLaunch() {
               PRIVATE_CHANNEL = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -83,16 +83,16 @@ function _getOrFetchApplicationForLaunch() {
               c7 = 3;
               c8 = 1;
               let obj2 = { value: null, done: false };
-              obj2[0] = callback2(10643)(callback, callback2);
+              obj2[0] = callback2(10639)(callback, callback2);
               return obj2;
             }
           } else if (2 === tmp7) {
             c6 = 0;
             ensureGuildLoaded = participantFromServer;
             if (null != dependencyMap) {
-              PRIVATE_CHANNEL = callback(10648).EmbeddedActivityLocationKind.GUILD_CHANNEL;
+              PRIVATE_CHANNEL = callback(10644).EmbeddedActivityLocationKind.GUILD_CHANNEL;
             } else {
-              PRIVATE_CHANNEL = callback(10648).EmbeddedActivityLocationKind.PRIVATE_CHANNEL;
+              PRIVATE_CHANNEL = callback(10644).EmbeddedActivityLocationKind.PRIVATE_CHANNEL;
             }
             obj2 = callback2(709);
             const obj3 = { type: "EMBEDDED_ACTIVITY_LAUNCH_FAIL", nonce: "", applicationId: null, channelId: null, guildId: null, error: null, locationKind: null };
@@ -193,7 +193,7 @@ function _confirmActivityChange() {
                 if (dependencyMap != null) {
                   dependencyMap();
                 }
-                _undefined2(10649)(tmp, channel, () => {
+                _undefined2(10645)(tmp, channel, () => {
                   let obj = value(table[10])();
                   obj = { location: value.location, applicationId: lib.id, shouldClosePopout: value };
                   obj.leaveActivity(obj);
@@ -284,7 +284,7 @@ function _confirmActivityAgeGate() {
               obj = undefined;
               obj = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp5) {
@@ -457,7 +457,7 @@ function _confirmExternalAppLaunch() {
               isVerified = undefined;
               c5 = 1;
               constants = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp5) {

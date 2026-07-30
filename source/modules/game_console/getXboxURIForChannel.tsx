@@ -1,10 +1,10 @@
-// Module ID: 9051
-// Function ID: 9052
+// Module ID: 9047
+// Function ID: 9048
 // Name: getXboxURIForChannel
-// Dependencies: [1862, 4236, 3826, 1874, 8945, 676, 4380, 1236, 530, 2]
+// Dependencies: [1862, 4236, 3826, 1874, 8941, 676, 4380, 1236, 530, 2]
 // Exports: default
 
-// Module 9051 (getXboxURIForChannel)
+// Module 9047 (getXboxURIForChannel)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import upsertRelationship from "upsertRelationship";

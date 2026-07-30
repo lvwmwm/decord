@@ -1,10 +1,10 @@
-// Module ID: 16436
-// Function ID: 16437
+// Module ID: 16430
+// Function ID: 16431
 // Name: ChannelItem
-// Dependencies: [19, 17, 1372, 1862, 3817, 3826, 1874, 16352, 676, 21, 4189, 5109, 712, 3901, 1236, 4035, 688, 7634, 1297, 16437, 589, 4650, 4380, 4717, 1581, 4600, 5548, 8276, 8729, 6752, 3822, 16438, 16439, 5501, 7686, 16440, 16350, 10990, 14314, 5105, 4528, 1480, 38, 4606, 2]
+// Dependencies: [19, 17, 1372, 1862, 3817, 3826, 1874, 16346, 676, 21, 4189, 5109, 712, 3901, 1236, 4035, 688, 7631, 1297, 16431, 589, 4650, 4380, 4717, 1581, 4600, 5548, 8273, 8725, 6749, 3822, 16432, 16433, 5501, 7683, 16434, 16344, 10986, 14310, 5105, 4528, 1480, 38, 4606, 2]
 // Exports: default
 
-// Module 16436 (ChannelItem)
+// Module 16430 (ChannelItem)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "Form";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -94,7 +94,7 @@ function ChannelItem(arg0) {
     obj3[0] = tmp(1297).Icon.Sizes.SMALL_20;
     obj3[1] = channelIcon;
     obj3[2] = channelIconStyle;
-    tmp7Result = tmp7(tmp(7634).FormRow.Icon, obj3);
+    tmp7Result = tmp7(tmp(7631).FormRow.Icon, obj3);
   }
   const obj4 = { leading: tmp7Result, style: legacyClassComponentStyles.formRowStyle, label: null, onPress: null, trailing: null, numberOfLines: null };
   const tmp15 = closure_5;
@@ -110,9 +110,9 @@ function ChannelItem(arg0) {
     tmp7Result = null;
     if (sortingEnabled) {
       const obj5 = { source: null, style: null };
-      obj5[0] = tmp13(16437);
+      obj5[0] = tmp13(16431);
       obj5[1] = actionIconStyle;
-      tmp7Result = tmp7(tmp(7634).FormRow.Icon, obj5);
+      tmp7Result = tmp7(tmp(7631).FormRow.Icon, obj5);
     }
   }
   obj4[4] = tmp7Result;
@@ -121,7 +121,7 @@ function ChannelItem(arg0) {
     num3 = 1;
   }
   obj4[5] = num3;
-  obj1[1] = closure_16(channel(7634).FormRow, obj4);
+  obj1[1] = closure_16(channel(7631).FormRow, obj4);
   obj.children = closure_16(tmp15, obj1);
   return closure_16(tmp8, obj);
 }
@@ -165,7 +165,7 @@ function CreateButton(guild) {
       obj[2] = items;
       const result = obj.showSimpleActionSheet(obj);
     };
-    obj[2] = callback(tmp(8729).PlusSmallIcon, { color: "white" });
+    obj[2] = callback(tmp(8725).PlusSmallIcon, { color: "white" });
     obj[1] = callback(tmp(4600).Button, obj);
     tmp5 = callback(closure_5, obj);
   }
@@ -262,7 +262,7 @@ Category.prototype["render"] = function render() {
     tmp3Result = null;
     if (null != sortHandlers) {
       obj2 = { source: null, style: null };
-      obj2[0] = tmp11(16437);
+      obj2[0] = tmp11(16431);
       obj2[1] = actionIconStyle;
       tmp3Result = tmp3(tmp5(1297).Icon, obj2);
     }
@@ -270,7 +270,7 @@ Category.prototype["render"] = function render() {
   const tmp13 = closure_5;
   const tmp8 = category(688);
   obj[4] = tmp3Result;
-  obj.children = closure_16(tmp13, { children: closure_16(category(7634).FormTitle, obj) });
+  obj.children = closure_16(tmp13, { children: closure_16(category(7631).FormTitle, obj) });
   return closure_16(tmp4, obj);
 };
 Category.contextType = require("ManaContext").ThemeContext;
@@ -405,7 +405,7 @@ class GuildSettingsModalChannels extends PureComponent3 {
         obj[0] = intl.string(applyArgumentsResult(outer1_3[14]).t.ffgJrs);
         obj[1] = outer1_1(outer1_3[35]);
         obj[2] = function onPress() {
-          callback(16350).startReordering(constants.GUILD_CATEGORY);
+          callback(16344).startReordering(constants.GUILD_CATEGORY);
         };
         items.push(obj);
       }
@@ -414,7 +414,7 @@ class GuildSettingsModalChannels extends PureComponent3 {
       obj[0] = intl2.string(applyArgumentsResult(outer1_3[14]).t.nIfr0Y);
       obj[1] = outer1_1(outer1_3[37]);
       obj[2] = function onPress() {
-        callback(16350).startReordering(constants.GUILD_TEXT, constants.GUILD_ANNOUNCEMENT, constants.GUILD_FORUM, constants.GUILD_MEDIA);
+        callback(16344).startReordering(constants.GUILD_TEXT, constants.GUILD_ANNOUNCEMENT, constants.GUILD_FORUM, constants.GUILD_MEDIA);
       };
       items.push(obj);
       obj = { label: null, icon: null, onPress: null };
@@ -422,7 +422,7 @@ class GuildSettingsModalChannels extends PureComponent3 {
       obj[0] = intl3.string(applyArgumentsResult(outer1_3[14]).t.CYnO4s);
       obj[1] = outer1_1(outer1_3[38]);
       obj[2] = function onPress() {
-        callback(16350).startReordering(constants.GUILD_VOICE, constants.GUILD_STAGE_VOICE);
+        callback(16344).startReordering(constants.GUILD_VOICE, constants.GUILD_STAGE_VOICE);
       };
       items.push(obj);
       const obj1 = { key: "GuildSettingsChannelsSort", header: null, options: null, hasIcons: true };
@@ -695,10 +695,10 @@ prototype["render"] = function render() {
   return tmp3(tmp4, obj);
 };
 prototype["handleChannelPress"] = function handleChannelPress(arg0) {
-  require(7686) /* init */.open(arg0);
+  require(7683) /* init */.open(arg0);
 };
 prototype["handleSortStop"] = function handleSortStop() {
-  importDefault(16350).stopReordering();
+  importDefault(16344).stopReordering();
 };
 GuildSettingsModalChannels.contextType = require("ManaContext").ThemeContext;
 let obj4 = { backgroundColor: require("Themes").unsafe_rawColors.GREEN_360, opacity: 0.3 };

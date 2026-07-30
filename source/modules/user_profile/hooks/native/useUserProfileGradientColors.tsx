@@ -1,10 +1,10 @@
-// Module ID: 8374
-// Function ID: 8375
+// Module ID: 8371
+// Function ID: 8372
 // Name: useUserProfileGradientColors
-// Dependencies: [19, 4181, 589, 3901, 5537, 7989, 2]
+// Dependencies: [19, 4181, 589, 3901, 5537, 7986, 2]
 // Exports: useUserProfileGradientColors
 
-// Module 8374 (useUserProfileGradientColors)
+// Module 8371 (useUserProfileGradientColors)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 

@@ -1,8 +1,8 @@
-// Module ID: 9006
-// Function ID: 9007
-// Dependencies: [32, 19, 17, 21, 4189, 712, 4050, 8015, 9007, 4720, 8125, 5178, 4185, 1236, 4190, 4193, 5165, 4611, 691, 2]
+// Module ID: 9002
+// Function ID: 9003
+// Dependencies: [32, 19, 17, 21, 4189, 712, 4050, 8012, 9003, 4720, 8122, 5178, 4185, 1236, 4190, 4193, 5165, 4611, 691, 2]
 
-// Module 9006
+// Module 9002
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "set";
 import get_ActivityIndicator from "LinearGradient";
@@ -56,7 +56,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   let isScreenLandscape;
   let c18;
   let tmp = callback();
-  let obj = sharedValue(8015);
+  let obj = sharedValue(8012);
   let obj1 = importAllResult;
   const ref = importAllResult.useRef(null);
   sharedValue = ref;
@@ -78,9 +78,9 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   fn.__workletHash = 23826674246;
   fn.__initData = closure_13;
   const animatedStyle = obj3.useAnimatedStyle(fn);
-  let obj4 = sharedValue(8015);
+  let obj4 = sharedValue(8012);
   const sectionName = obj4.getSectionName(application);
-  let obj5 = sharedValue(8015);
+  let obj5 = sharedValue(8012);
   str = obj5.getSectionDescription(application);
   let tmp28Result1 = null != str;
   if (tmp28Result1) {
@@ -103,14 +103,14 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   const memo = obj1.useMemo(() => {
     let result = null;
     if (null != str) {
-      result = sharedValue(9007).parseBioReactWithCachedAST(tmp);
-      const obj = sharedValue(9007);
+      result = sharedValue(9003).parseBioReactWithCachedAST(tmp);
+      const obj = sharedValue(9003);
     }
     return result;
   }, items);
   const tmp6Result1 = first1(obj1.useState(false), 2);
   isScreenLandscape = sharedValue(4720).useIsScreenLandscape();
-  const tmp24 = first(8125)(isScreenLandscape);
+  const tmp24 = first(8122)(isScreenLandscape);
   c18 = tmp24;
   const items1 = [isScreenLandscape, tmp24];
   const effect = obj1.useEffect(() => {

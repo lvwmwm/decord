@@ -1,40 +1,40 @@
-// Module ID: 7868
-// Function ID: 7869
+// Module ID: 7865
+// Function ID: 7866
 // Name: defaultRules
-// Dependencies: [3888, 7869, 4629, 4647, 4648, 4179, 2]
+// Dependencies: [3888, 7866, 4629, 4647, 4648, 4179, 2]
 // Exports: renderChangelogMessageMarkup
 
-// Module 7868 (defaultRules)
+// Module 7865 (defaultRules)
 const require = arg1;
 function defaultRules(uri) {
   let obj = {};
-  const merged = Object.assign(_require(7869).baseRules);
+  const merged = Object.assign(_require(7866).baseRules);
   obj = {};
   const merged1 = Object.assign(image);
-  if (typeof _require(7869).customRules.image === "find") {
-    const customRules = tmp(7869).customRules;
+  if (typeof _require(7866).customRules.image === "find") {
+    const customRules = tmp(7866).customRules;
     image = customRules.image(uri);
   } else {
-    image = tmp(7869).customRules.image;
+    image = tmp(7866).customRules.image;
   }
   const merged2 = Object.assign(image);
   obj.image = obj;
   obj = {};
   const merged3 = Object.assign(link);
-  if (typeof _require(7869).customRules.link === "find") {
-    const customRules2 = tmp(7869).customRules;
+  if (typeof _require(7866).customRules.link === "find") {
+    const customRules2 = tmp(7866).customRules;
     link = customRules2.link(uri);
   } else {
-    link = tmp(7869).customRules.link;
+    link = tmp(7866).customRules.link;
   }
   const merged4 = Object.assign(link);
   obj.link = obj;
   const merged5 = Object.assign(list);
-  if (typeof _require(7869).customRules.list === "find") {
-    const customRules3 = tmp(7869).customRules;
+  if (typeof _require(7866).customRules.list === "find") {
+    const customRules3 = tmp(7866).customRules;
     list = customRules3.list(uri);
   } else {
-    list = tmp(7869).customRules.list;
+    list = tmp(7866).customRules.list;
   }
   const merged6 = Object.assign(list);
   obj.list = {};
@@ -80,38 +80,38 @@ function defaultRules(uri) {
     obj[2] = outer1_1(outer1_2[0]).parseInline(arg1, formatted, inline);
     return obj;
   };
-  if (typeof _require(7869).customRules.lheading === "find") {
-    const customRules4 = tmp(7869).customRules;
+  if (typeof _require(7866).customRules.lheading === "find") {
+    const customRules4 = tmp(7866).customRules;
     lheading = customRules4.lheading(uri);
   } else {
-    lheading = tmp(7869).customRules.lheading;
+    lheading = tmp(7866).customRules.lheading;
   }
   const merged8 = Object.assign(lheading);
   obj.lheading = obj3;
   const merged9 = Object.assign(heading);
-  if (typeof _require(7869).customRules.heading === "find") {
-    const customRules5 = tmp(7869).customRules;
+  if (typeof _require(7866).customRules.heading === "find") {
+    const customRules5 = tmp(7866).customRules;
     heading = customRules5.heading(uri);
   } else {
-    heading = tmp(7869).customRules.heading;
+    heading = tmp(7866).customRules.heading;
   }
   const merged10 = Object.assign(heading);
   obj.heading = {};
   const merged11 = Object.assign(blockQuote);
-  if (typeof _require(7869).customRules.blockQuote === "find") {
-    const customRules6 = tmp(7869).customRules;
+  if (typeof _require(7866).customRules.blockQuote === "find") {
+    const customRules6 = tmp(7866).customRules;
     blockQuote = customRules6.blockQuote(uri);
   } else {
-    blockQuote = tmp(7869).customRules.blockQuote;
+    blockQuote = tmp(7866).customRules.blockQuote;
   }
   const merged12 = Object.assign(blockQuote);
   obj.blockQuote = {};
   const merged13 = Object.assign(paragraph);
-  if (typeof _require(7869).customRules.paragraph === "find") {
-    const customRules7 = tmp(7869).customRules;
+  if (typeof _require(7866).customRules.paragraph === "find") {
+    const customRules7 = tmp(7866).customRules;
     paragraph = customRules7.paragraph(uri);
   } else {
-    paragraph = tmp(7869).customRules.paragraph;
+    paragraph = tmp(7866).customRules.paragraph;
   }
   const merged14 = Object.assign(paragraph);
   obj.paragraph = {};
@@ -159,11 +159,11 @@ export default {
       obj[2] = outer1_1(outer1_2[0]).parseInline(arg1, formatted, inline);
       return obj;
     };
-    if (typeof _require(7869).customRules.lheading === "find") {
-      const customRules = tmp3(7869).customRules;
+    if (typeof _require(7866).customRules.lheading === "find") {
+      const customRules = tmp3(7866).customRules;
       lheading = customRules.lheading(uri);
     } else {
-      lheading = tmp3(7869).customRules.lheading;
+      lheading = tmp3(7866).customRules.lheading;
     }
     obj = { lheading: null };
     const merged2 = Object.assign(lheading);

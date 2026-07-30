@@ -1,10 +1,10 @@
-// Module ID: 7240
-// Function ID: 7241
+// Module ID: 7237
+// Function ID: 7238
 // Name: HeroIllocon
-// Dependencies: [21, 5141, 7241, 2]
+// Dependencies: [21, 5141, 7238, 2]
 // Exports: HeroIllocon
 
-// Module 7240 (HeroIllocon)
+// Module 7237 (HeroIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HeroIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const HeroIllocon = function HeroIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7241);
+  obj[0] = importDefault(7238);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

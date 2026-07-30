@@ -1,10 +1,10 @@
-// Module ID: 9183
-// Function ID: 9184
+// Module ID: 9179
+// Function ID: 9180
 // Name: ChangeEmailWarning
-// Dependencies: [19, 17, 1874, 9181, 676, 21, 4189, 712, 1480, 589, 698, 691, 6785, 4185, 1236, 4600, 9177, 2]
+// Dependencies: [19, 17, 1874, 9177, 676, 21, 4189, 712, 1480, 589, 698, 691, 6782, 4185, 1236, 4600, 9173, 2]
 // Exports: default
 
-// Module 9183 (ChangeEmailWarning)
+// Module 9179 (ChangeEmailWarning)
 import noop from "noop";
 import get_ActivityIndicator from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -47,7 +47,7 @@ export default function ChangeEmailWarning(changeEmailReason) {
     obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: null };
     obj = { style: null, children: null };
     obj[0] = tmp.container;
-    const items2 = [callback(tmp2(6785).TrafficConeSpotIllustration, {}), , , ];
+    const items2 = [callback(tmp2(6782).TrafficConeSpotIllustration, {}), , , ];
     obj1 = { style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
     obj1[0] = tmp.title;
     const intl = tmp2(1236).intl;

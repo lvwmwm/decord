@@ -1,10 +1,10 @@
-// Module ID: 15650
-// Function ID: 15651
+// Module ID: 15644
+// Function ID: 15645
 // Name: ChannelPermissionSettingsBasicView
-// Dependencies: [32, 5, 19, 17, 15651, 1372, 1942, 1935, 1862, 3817, 3826, 1874, 6718, 676, 21, 4189, 712, 1480, 589, 8277, 8278, 8279, 1236, 4380, 4528, 8285, 3822, 4598, 5554, 5555, 1297, 5220, 11308, 10918, 5149, 4384, 8224, 8755, 15652, 15654, 2]
+// Dependencies: [32, 5, 19, 17, 15645, 1372, 1942, 1935, 1862, 3817, 3826, 1874, 6715, 676, 21, 4189, 712, 1480, 589, 8274, 8275, 8276, 1236, 4380, 4528, 8282, 3822, 4598, 5554, 5555, 1297, 5220, 11304, 10914, 5149, 4384, 8221, 8751, 15646, 15648, 2]
 // Exports: default
 
-// Module 15650 (ChannelPermissionSettingsBasicView)
+// Module 15644 (ChannelPermissionSettingsBasicView)
 import CirclePlusIcon from "CirclePlusIcon";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getRoleRowData from "getRoleRowData";
@@ -83,13 +83,13 @@ function ChannelPermissionSettingsBasicView(channel) {
               let closure_0 = tmp2;
               closure_0 = undefined;
               const accessPermissions = outer1_0.accessPermissions;
-              const result = v0(8277).isPrivateGuildChannel(outer1_0);
-              const obj9 = v0(8277);
+              const result = v0(8274).isPrivateGuildChannel(outer1_0);
+              const obj9 = v0(8274);
               const tmp22 = v0;
-              closure_0 = v0(8277).flipEveryonePermission(outer1_0, accessPermissions, result);
+              closure_0 = v0(8274).flipEveryonePermission(outer1_0, accessPermissions, result);
               const currentUser = outer1_16.getCurrentUser();
               let tmp7 = outer1_9;
-              const obj10 = v0(8277);
+              const obj10 = v0(8274);
               if (!outer1_9) {
                 tmp7 = null == currentUser;
               }
@@ -100,7 +100,7 @@ function ChannelPermissionSettingsBasicView(channel) {
                 v0 = 1;
                 dependencyMap = 1;
                 const obj1 = { value: null, done: false };
-                obj1[0] = tmp22(8277).grantUserChannelAccess(outer1_0, accessPermissions);
+                obj1[0] = tmp22(8274).grantUserChannelAccess(outer1_0, accessPermissions);
                 return obj1;
               }
               canResult = outer1_14.can(outer1_19.ADMINISTRATOR, outer1_4);
@@ -131,7 +131,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           v0 = 2;
           dependencyMap = 1;
           const obj3 = { value: null, done: false };
-          obj3[0] = outer1_0(8278).savePermissionUpdates(outer1_0.id, items);
+          obj3[0] = outer1_0(8275).savePermissionUpdates(outer1_0.id, items);
           return obj3;
         } catch (tmp16) {
           dependencyMap = tmp;
@@ -184,7 +184,7 @@ function ChannelPermissionSettingsBasicView(channel) {
               v0 = undefined;
               if (null != outer1_0.guild_id) {
                 if (!outer1_1) {
-                  let obj1 = outer1_0(8279);
+                  let obj1 = outer1_0(8276);
                   v0 = 1;
                   dependencyMap = 1;
                   obj1 = { value: null, done: false };
@@ -281,7 +281,7 @@ function ChannelPermissionSettingsBasicView(channel) {
   sortedGuildRoles = stateFromStoresObject.sortedGuildRoles;
   const items1 = [navigation];
   const layoutEffect = togglePrivateChannel.useLayoutEffect(() => {
-    navigation.setOptions({ headerRight: "r" });
+    navigation.setOptions({ headerRight: "Array" });
   }, items1);
   const items2 = [guild, sortedGuildRoles, channel];
   const memo = togglePrivateChannel.useMemo(() => {

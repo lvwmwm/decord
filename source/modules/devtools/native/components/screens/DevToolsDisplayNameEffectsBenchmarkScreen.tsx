@@ -1,10 +1,10 @@
-// Module ID: 14826
-// Function ID: 14827
+// Module ID: 14820
+// Function ID: 14821
 // Name: effectName
-// Dependencies: [32, 19, 17, 1874, 1886, 21, 1887, 8389, 1236, 8385, 2581, 4189, 712, 4598, 4185, 4600, 8380, 8381, 589, 14827, 5554, 5220, 9018, 4421, 2]
+// Dependencies: [32, 19, 17, 1874, 1886, 21, 1887, 8386, 1236, 8382, 2581, 4189, 712, 4598, 4185, 4600, 8377, 8378, 589, 14821, 5554, 5220, 9014, 4421, 2]
 // Exports: default
 
-// Module 14826 (effectName)
+// Module 14820 (effectName)
 import _slicedToArray from "_slicedToArray";
 import FRAME_BUDGET_MS from "FRAME_BUDGET_MS";
 import get_ActivityIndicator from "DisplayNameStyleColorPreset";
@@ -19,7 +19,7 @@ let metroImportAll;
 let require = arg1;
 function effectName(arg0) {
   const intl = require(1236) /* getSystemLocale */.intl;
-  let OpWJ3f = require(8385) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
+  let OpWJ3f = require(8382) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
   if (OpWJ3f == null) {
     OpWJ3f = importDefault(2581).OpWJ3f;
   }
@@ -56,13 +56,13 @@ function BenchmarkRow(arg0) {
   let userId;
   let userName;
   ({ userId, effect, userName, style } = arg0);
-  let obj = require(8385) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
+  let obj = require(8382) /* DISPLAY_NAME_STYLES_EFFECT_NAMES */;
   obj = { style, children: null };
   const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(effect);
   obj = { userId, userName, effectDisplayType: null, pendingDisplayNameStyles: null, variant: "text-md/semibold" };
-  obj[2] = require(8381) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC;
+  obj[2] = require(8378) /* DisplayNameStyleColorPreset */.EffectDisplayType.STATIC;
   obj[3] = displayNameStylesEffectConfig.previewStyles;
-  obj[1] = callback2(importDefault(8380), obj);
+  obj[1] = callback2(importDefault(8377), obj);
   return callback2(closure_6, obj);
 }
 ({ ScrollView: c5, View: closure_6 } = get_ActivityIndicator);

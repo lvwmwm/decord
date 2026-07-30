@@ -1,9 +1,9 @@
-// Module ID: 12873
-// Function ID: 12874
+// Module ID: 12868
+// Function ID: 12869
 // Name: nativeMuteChanged
-// Dependencies: [8832, 4236, 3, 4074, 709, 8838, 4238, 2]
+// Dependencies: [8828, 4236, 3, 4074, 709, 8834, 4238, 2]
 
-// Module 12873 (nativeMuteChanged)
+// Module 12868 (nativeMuteChanged)
 import importDefaultResult from "handleAudioRouteChanged";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import importDefaultResult1 from "dispatcher";
@@ -49,8 +49,8 @@ prototype["nativeMuteChanged"] = function nativeMuteChanged() {
     } else if (!self.ignoreForAudioRouteChange) {
       self.needToUnmuteNative = true;
       obj2.log("Native mute changed > toggling mute");
-      importDefault(8838).toggleSelfMute({ playSoundEffect: false });
-      const obj = importDefault(8838);
+      importDefault(8834).toggleSelfMute({ playSoundEffect: false });
+      const obj = importDefault(8834);
     }
   }
 };

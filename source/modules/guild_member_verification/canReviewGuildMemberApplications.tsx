@@ -1,10 +1,10 @@
-// Module ID: 12626
-// Function ID: 12627
+// Module ID: 12620
+// Function ID: 12621
 // Name: canReviewGuildMemberApplications
 // Dependencies: [1862, 3817, 676, 589, 4677, 2]
 // Exports: canReviewGuildMemberApplications, useCanReviewGuildMemberApplications
 
-// Module 12626 (canReviewGuildMemberApplications)
+// Module 12620 (canReviewGuildMemberApplications)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";

@@ -1,8 +1,8 @@
-// Module ID: 15705
-// Function ID: 15706
-// Dependencies: [19, 17, 3826, 676, 21, 4189, 5109, 712, 11688, 589, 698, 1236, 7876, 4524, 1297, 2]
+// Module ID: 15699
+// Function ID: 15700
+// Dependencies: [19, 17, 3826, 676, 21, 4189, 5109, 712, 11684, 589, 698, 1236, 7873, 4524, 1297, 2]
 
-// Module 15705
+// Module 15699
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import upsertRelationship from "upsertRelationship";
@@ -36,7 +36,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
   channel = channel.channel;
   let message;
   const tmp = callback();
-  let obj = channel(11688);
+  let obj = channel(11684);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -94,7 +94,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(7876)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(7873)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;

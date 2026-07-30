@@ -1,10 +1,10 @@
-// Module ID: 6086
-// Function ID: 6087
+// Module ID: 6084
+// Function ID: 6085
 // Name: trackChannelOpenedClickstream
 // Dependencies: [1372, 676, 1379, 5724, 2]
 // Exports: default
 
-// Module 6086 (trackChannelOpenedClickstream)
+// Module 6084 (trackChannelOpenedClickstream)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
 import { StaticChannelRoute } from "set";

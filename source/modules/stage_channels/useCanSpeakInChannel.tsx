@@ -1,10 +1,10 @@
-// Module ID: 10394
-// Function ID: 10395
+// Module ID: 10390
+// Function ID: 10391
 // Name: useCanCurrentUserSpeakInChannel
 // Dependencies: [1218, 589, 4374, 2]
 // Exports: default
 
-// Module 10394 (useCanCurrentUserSpeakInChannel)
+// Module 10390 (useCanCurrentUserSpeakInChannel)
 import fetchFingerprint from "fetchFingerprint";
 
 const require = arg1;

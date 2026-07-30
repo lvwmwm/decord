@@ -1,10 +1,10 @@
-// Module ID: 12568
-// Function ID: 12569
+// Module ID: 12562
+// Function ID: 12563
 // Name: GuildBoostingGuildListItem
-// Dependencies: [19, 17, 1862, 5027, 676, 21, 4189, 712, 4125, 589, 4096, 8340, 6690, 6505, 5566, 4185, 9646, 1236, 12537, 2]
+// Dependencies: [19, 17, 1862, 5027, 676, 21, 4189, 712, 4125, 589, 4096, 8337, 6687, 6502, 5566, 4185, 9643, 1236, 12531, 2]
 // Exports: default
 
-// Module 12568 (GuildBoostingGuildListItem)
+// Module 12562 (GuildBoostingGuildListItem)
 import "set";
 import get_ActivityIndicator from "getSystemLocale";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -30,14 +30,14 @@ function GuildBoostingGuildListItem(guildId) {
   }
   let tmp9 = null;
   if (null != stateFromStores) {
-    obj = { style: null, activeOpacity: 0.5, onPress: null, children: null };
+    obj = { style: null, activeOpacity: 0.5, accessibilityRole: "button", onPress: null, children: null };
     obj[0] = tmp.guildCard;
-    obj[2] = function onPress() {
+    obj[3] = function onPress() {
       guildId(outer1_2[12]).transitionToGuild(guildId, { state: { shouldShowSubscribeTooltip: true } });
       const obj = guildId(outer1_2[12]);
       outer1_1(outer1_2[13]).close();
     };
-    let tmp2Result = tmp2(8340);
+    let tmp2Result = tmp2(8337);
     obj = { guild: null, size: null, style: null, selected: false };
     obj[0] = stateFromStores;
     tmp2Result = tmp2(5566);
@@ -52,7 +52,7 @@ function GuildBoostingGuildListItem(guildId) {
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.subscriptionInfo;
     const obj4 = { source: null, style: null, resizeMode: "contain", resizeMethod: "resize" };
-    obj4[0] = tmp2(9646);
+    obj4[0] = tmp2(9643);
     obj4[1] = tmp.premiumGuildImage;
     const items3 = [callback(closure_4, obj4), ];
     const obj5 = { variant: "text-xs/medium", children: null };
@@ -68,8 +68,8 @@ function GuildBoostingGuildListItem(guildId) {
     const obj7 = { guild: null, theme: null };
     obj7[0] = stateFromStores;
     obj7[1] = tmp4;
-    items1[2] = callback(tmp2(12537), obj7);
-    obj[3] = items1;
+    items1[2] = callback(tmp2(12531), obj7);
+    obj[4] = items1;
     tmp9 = callback2(tmp2Result, obj);
   }
   return tmp9;

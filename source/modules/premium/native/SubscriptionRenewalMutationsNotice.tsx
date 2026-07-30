@@ -1,10 +1,10 @@
-// Module ID: 6548
-// Function ID: 6549
+// Module ID: 6545
+// Function ID: 6546
 // Name: SubscriptionRenewalMutationsNotice
 // Dependencies: [19, 17, 3836, 21, 4189, 712, 5030, 1297, 1236, 3835, 2]
 // Exports: default
 
-// Module 6548 (SubscriptionRenewalMutationsNotice)
+// Module 6545 (SubscriptionRenewalMutationsNotice)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { isNoneSubscription } from "createFromServer";

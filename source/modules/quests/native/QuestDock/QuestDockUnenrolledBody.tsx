@@ -1,9 +1,9 @@
-// Module ID: 14216
-// Function ID: 14217
+// Module ID: 14212
+// Function ID: 14213
 // Name: QUEST_DOCK_EXPANDED_PADDING_BOTTOM
-// Dependencies: [5, 19, 17, 5985, 14120, 5033, 14122, 21, 4189, 712, 14204, 647, 14118, 10492, 1581, 9486, 9487, 14126, 9469, 6012, 5036, 14148, 10967, 14187, 14184, 10963, 14188, 4185, 1236, 1297, 10960, 2]
+// Dependencies: [5, 19, 17, 5983, 14116, 5033, 14118, 21, 4189, 712, 14200, 647, 14114, 10488, 1581, 9482, 9483, 14122, 9465, 6010, 5036, 14144, 10963, 14183, 14180, 10959, 14184, 4185, 1236, 1297, 10956, 2]
 
-// Module 14216 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
+// Module 14212 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
 import closure_3 from "QuestsExperimentLocations";
 import importAllResult from "getQuestContentName";
 import { View } from "QuestDockMode";
@@ -100,13 +100,13 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
           } else {
             let closure_0 = tmp4;
             const obj1 = { questContentCTA: null, questContent: null, sourceQuestContent: null };
-            obj1[0] = outer1_0(6012).QuestContentCTA.ACCEPT_QUEST;
+            obj1[0] = outer1_0(6010).QuestContentCTA.ACCEPT_QUEST;
             obj1[1] = outer1_0(5036).QuestContent.QUEST_BAR_MOBILE;
             obj1[2] = outer1_0(5036).QuestContent.QUEST_BAR_MOBILE;
             v0 = 1;
             dependencyMap = 1;
             const obj2 = { value: null, done: false };
-            obj2[0] = outer1_0(9469).enrollInQuest(outer1_0.id, obj1);
+            obj2[0] = outer1_0(9465).enrollInQuest(outer1_0.id, obj1);
             return obj2;
           }
         } else {
@@ -130,9 +130,9 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
                 const obj5 = { questId: null, sourceQuestContent: null };
                 obj5[0] = outer1_0.id;
                 obj5[1] = outer1_0(5036).QuestContent.QUEST_BAR_MOBILE;
-                v0(14148)(obj5);
+                v0(14144)(obj5);
                 outer1_4(outer1_8.COLLAPSED);
-                const tmp12 = v0(14148);
+                const tmp12 = v0(14144);
               }
               dependencyMap = 3;
             }

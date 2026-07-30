@@ -1,10 +1,10 @@
-// Module ID: 12619
-// Function ID: 12620
+// Module ID: 12613
+// Function ID: 12614
 // Name: _updateGuildRoleSubscriptionGroupListing
 // Dependencies: [5, 676, 505, 530, 4088, 2]
 // Exports: archiveGuildRoleSubscriptionListing, createGuildRoleSubscriptionGroupListing, createGuildRoleSubscriptionListing, deleteGuildRoleSubscriptionGroupListing, deleteGuildRoleSubscriptionListing, fetchHighlightedCreatorGuildDetails, getGuildMonetizationRestrictions, getGuildRoleSubscriptionGroupForSubscriptionPlan, getGuildRoleSubscriptionGroupListing, getGuildRoleSubscriptionGroupListingsForGuild, getGuildRoleSubscriptionTrialEligibility, getGuildRoleSubscriptionTrials, getGuildRoleSubscriptionsSettings, getPriceTiers, updateGuildRoleSubscriptionGroupListing, updateGuildRoleSubscriptionListing, updateGuildRoleSubscriptionsSettings, updateGuildRoleSubscriptionsTrial
 
-// Module 12619 (_updateGuildRoleSubscriptionGroupListing)
+// Module 12613 (_updateGuildRoleSubscriptionGroupListing)
 import set from "set";
 import { Endpoints } from "ME";
 import { PriceTierTypes } from "sum";
@@ -325,7 +325,7 @@ function _createGuildRoleSubscriptionListing() {
               closure_3 = Object.assign(priceTier, Object.create(null));
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {
@@ -441,7 +441,7 @@ function _updateGuildRoleSubscriptionListing() {
               closure_4 = Object.assign(priceTier, Object.create(null));
               c8 = 1;
               c9 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {
@@ -556,7 +556,7 @@ function _getGuildRoleSubscriptionGroupListingsForGuild() {
               obj3 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -929,7 +929,7 @@ function _getGuildRoleSubscriptionGroupListing() {
               }
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {
@@ -1586,7 +1586,7 @@ function _getGuildMonetizationRestrictions() {
               signal = obj1.signal;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {

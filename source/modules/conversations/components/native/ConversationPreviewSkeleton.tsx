@@ -1,10 +1,10 @@
-// Module ID: 9288
-// Function ID: 9289
+// Module ID: 9284
+// Function ID: 9285
 // Name: ConversationPreviewSkeleton
-// Dependencies: [19, 17, 5860, 21, 4189, 712, 4050, 4190, 2]
+// Dependencies: [19, 17, 5858, 21, 4189, 712, 4050, 4190, 2]
 // Exports: default
 
-// Module 9288 (ConversationPreviewSkeleton)
+// Module 9284 (ConversationPreviewSkeleton)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { MOBILE_PREVIEW_MESSAGE_COUNT as closure_5 } from "CONVERSATION_COLORS";

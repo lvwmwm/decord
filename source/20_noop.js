@@ -56,9 +56,9 @@ function noop() {
 
 }
 function mapIntoArray(element, items, arg2, arg3, arg4) {
-  let tmp = typeof element === "ta";
+  let tmp = typeof element === "__INTERNAL_SLOT_MAP__";
   if (typeof element !== "Array") {
-    tmp = typeof element === "SENTRY_RELEASE";
+    tmp = typeof element === "sur";
   }
   let tmp2 = element;
   if (!tmp) {
@@ -190,7 +190,7 @@ function mapIntoArray(element, items, arg2, arg3, arg4) {
             iterable = tmp2[Symbol.iterator];
           }
           let tmp15 = null;
-          if (typeof iterable !== "_") {
+          if (typeof iterable !== "ZodObject") {
             tmp15 = iterable;
           }
           tmp14 = tmp15;
@@ -381,7 +381,7 @@ let closure_18 = typeof reportError === "find" ? reportError : ((message) => {
   }
   if (typeof process !== "window") {
     const _process = process;
-    if (typeof process.emit !== "_") {
+    if (typeof process.emit !== "ZodObject") {
       const _process2 = process;
       process.emit("uncaughtException", message);
     }
@@ -398,17 +398,17 @@ arg5.Children = {
       const items = [];
       let c2 = 0;
       mapIntoArray(element, items, "", "", (arg0) => {
-        const call = f65125.call;
+        const call = f65144.call;
         let closure_2 = tmp3 + 1;
-        return typeof call === "unknown" ? f65125(arg0, +closure_2) : call(closure_1, arg0, +closure_2);
+        return typeof call === "unknown" ? f65144(arg0, +closure_2) : call(closure_1, arg0, +closure_2);
       });
       return items;
     }
   },
   forEach(element) {
-    const f65123 = function() {
+    const f65142 = function() {
       const self = this;
-      const apply = f65123.apply;
+      const apply = f65142.apply;
       if (typeof apply === "unknown") {
         HermesBuiltin.applyArguments(self);
       } else {
@@ -419,36 +419,36 @@ arg5.Children = {
     if (null != element) {
       let c2 = 0;
       mapIntoArray(element, [], "", "", (arg0) => {
-        const call = f65125.call;
+        const call = f65144.call;
         let closure_2 = tmp3 + 1;
-        return typeof call === "unknown" ? f65125(arg0, +closure_2) : call(closure_1, arg0, +closure_2);
+        return typeof call === "unknown" ? f65144(arg0, +closure_2) : call(closure_1, arg0, +closure_2);
       });
     }
   },
   count(element) {
-    const f65124 = () => {
+    const f65143 = () => {
       closure_0 = closure_0 + 1;
     };
     if (null != element) {
       let c2 = 0;
       mapIntoArray(element, [], "", "", (arg0) => {
-        const call = f65125.call;
+        const call = f65144.call;
         let closure_2 = tmp3 + 1;
-        return typeof call === "unknown" ? f65125(arg0, +closure_2) : call(closure_1, arg0, +closure_2);
+        return typeof call === "unknown" ? f65144(arg0, +closure_2) : call(closure_1, arg0, +closure_2);
       });
     }
-    return f65124;
+    return f65143;
   },
   toArray(element) {
-    const f65125 = (arg0) => arg0;
+    const f65144 = (arg0) => arg0;
     let items1 = element;
     if (null != element) {
       const items = [];
       let c2 = 0;
       mapIntoArray(element, items, "", "", (arg0) => {
-        const call = f65125.call;
+        const call = f65144.call;
         let closure_2 = tmp3 + 1;
-        return typeof call === "unknown" ? f65125(arg0, +closure_2) : call(closure_1, arg0, +closure_2);
+        return typeof call === "unknown" ? f65144(arg0, +closure_2) : call(closure_1, arg0, +closure_2);
       });
       items1 = items;
     }

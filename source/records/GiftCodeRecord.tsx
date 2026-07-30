@@ -1,9 +1,9 @@
-// Module ID: 8033
-// Function ID: 8034
+// Module ID: 8030
+// Function ID: 8031
 // Name: frozen
-// Dependencies: [1883, 6263, 3836, 1876, 3771, 1384, 2]
+// Dependencies: [1883, 6260, 3836, 1876, 3771, 1384, 2]
 
-// Module 8033 (frozen)
+// Module 8030 (frozen)
 import "toJS";
 import createFromServer from "createFromServer";
 import closure_4 from "createFromServer";

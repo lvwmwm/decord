@@ -1,10 +1,10 @@
-// Module ID: 15699
-// Function ID: 15700
+// Module ID: 15693
+// Function ID: 15694
 // Name: set
-// Dependencies: [676, 10677, 4399, 2]
+// Dependencies: [676, 10673, 4399, 2]
 // Exports: shouldExcludeSafeAreaForModalKey
 
-// Module 15699 (set)
+// Module 15693 (set)
 import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY";
 import set from "openChannelCallModal";
 

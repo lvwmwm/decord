@@ -1,10 +1,10 @@
-// Module ID: 15757
-// Function ID: 15758
+// Module ID: 15751
+// Function ID: 15752
 // Name: RobloxIcon
-// Dependencies: [32, 19, 17, 4869, 1874, 12762, 676, 1369, 21, 4189, 712, 3901, 1581, 4157, 5243, 5242, 5552, 4598, 4185, 1236, 4600, 10182, 8965, 6611, 3899, 4871, 1416, 1297, 8531, 589, 12763, 4995, 4005, 1358, 2]
+// Dependencies: [32, 19, 17, 4869, 1874, 12756, 676, 1369, 21, 4189, 712, 3901, 1581, 4157, 5243, 5242, 5552, 4598, 4185, 1236, 4600, 10178, 8961, 6608, 3899, 4871, 1416, 1297, 8528, 589, 12757, 4995, 4005, 1358, 2]
 // Exports: default, useShouldShowRobloxConnectionCoachmark
 
-// Module 15757 (RobloxIcon)
+// Module 15751 (RobloxIcon)
 import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed";
 import getSystemLocale from "getSystemLocale";
 import { View } from "Stack";
@@ -137,7 +137,7 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
   obj7[0] = intl3.string(markAsDismissed(1236).t.ItuabN);
   const obj8 = { size: "sm", color: null };
   obj8[1] = importDefault(712).colors.WHITE;
-  obj7[1] = callback(markAsDismissed(10182).WindowLaunchIcon, obj8);
+  obj7[1] = callback(markAsDismissed(10178).WindowLaunchIcon, obj8);
   obj7[4] = function onPress() {
     let obj = outer1_1(outer1_2[13]);
     obj.hideActionSheet();
@@ -166,7 +166,7 @@ export const useShouldShowRobloxConnectionCoachmark = function useShouldShowRobl
   let fetchingAccounts;
   let hasRoloxAccount;
   const items = [initialize];
-  stateFromStores = stateFromStores(589).useStateFromStores(items, () => appInstalled.isAppInstalled(stateFromStores(12763).DetectableAppNames.ROBLOX));
+  stateFromStores = stateFromStores(589).useStateFromStores(items, () => appInstalled.isAppInstalled(stateFromStores(12757).DetectableAppNames.ROBLOX));
   const tmp2 = hasRoloxAccount(React.useState(false), 2);
   const first = tmp2[0];
   const dependencyMap = tmp2[1];

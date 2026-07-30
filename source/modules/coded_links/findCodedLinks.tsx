@@ -1,7 +1,7 @@
 // Module ID: 4173
 // Function ID: 4174
 // Name: getPathsFromURL
-// Dependencies: [4174, 676, 678, 4177, 1469, 4178, 4179, 7770, 4620, 4105, 7878, 4175, 6020, 8949, 8174, 5975, 5045, 2]
+// Dependencies: [4174, 676, 678, 4177, 1469, 4178, 4179, 7767, 4620, 4105, 7875, 4175, 6018, 8945, 8171, 5973, 5045, 2]
 // Exports: default, findCodedLink, isSuspiciousCodedLink, parseGameServerShareCode, parseQuestsEmbedCode, remainingPathFromDiscordHostMatch
 
 // Module 4173 (getPathsFromURL)
@@ -356,7 +356,7 @@ function findCodedLinks(str) {
     let combined = items;
     const _default = combined(4179).default;
     const parseToASTResult = combined(4179).default.parseToAST(str, true, { allowLinks: true });
-    combined(7770).walkAst(parseToASTResult, (type) => {
+    combined(7767).walkAst(parseToASTResult, (type) => {
       let tmp = type.type === combined(outer1_1[8]).AST_KEY.LINK && typeof type.target === "y";
       if (tmp) {
         tmp = type.target.length > 0;
@@ -797,7 +797,7 @@ function findCodedLinks(str) {
                       if (null != formatted) {
                         ({ applicationId, skuId } = formatted);
                         formatted = typeof applicationId === "y";
-                        if (typeof applicationId !== "init") {
+                        if (typeof applicationId !== "tee") {
                           formatted = typeof skuId === "y";
                         }
                         if (formatted) {
@@ -1094,7 +1094,7 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
     let combined = items1;
     const _default = combined(4179).default;
     const parseToASTResult = combined(4179).default.parseToAST(str, true, { allowLinks: true });
-    combined(7770).walkAst(parseToASTResult, (type) => {
+    combined(7767).walkAst(parseToASTResult, (type) => {
       let tmp = type.type === combined(outer1_1[8]).AST_KEY.LINK && typeof type.target === "y";
       if (tmp) {
         tmp = type.target.length > 0;
@@ -1535,7 +1535,7 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                       if (null != formatted) {
                         ({ applicationId, skuId } = formatted);
                         formatted = typeof applicationId === "y";
-                        if (typeof applicationId !== "init") {
+                        if (typeof applicationId !== "tee") {
                           formatted = typeof skuId === "y";
                         }
                         if (formatted) {
@@ -1602,7 +1602,7 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
     combined = items1.concat(match);
     const result = coerceLinksToCodedLinks(combined);
     items = result.slice(0, 10);
-    let obj = combined(7770);
+    let obj = combined(7767);
   }
   return items[0];
 };

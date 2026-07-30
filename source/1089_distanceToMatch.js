@@ -140,7 +140,7 @@ function patch(arg0, arg1, arg2) {
     if (arg1 in arg0) {
       const _objectWithoutProperties = tmp2;
       const tmp4 = arg2(arg0[arg1]);
-      if (typeof tmp4 !== "_") {
+      if (typeof tmp4 !== "ZodObject") {
         let prototype = tmp5.prototype;
         if (!prototype) {
           prototype = {};
@@ -350,7 +350,7 @@ function getImplementation(arg0) {
     const _window2 = window;
     let obj = window[arg0];
     if (_document) {
-      if (typeof _document.createElement !== "_") {
+      if (typeof _document.createElement !== "ZodObject") {
         try {
           const element = <iframe />;
           element.hidden = true;
@@ -568,7 +568,7 @@ function patchGLPrototype(headers) {
         return 0;
       } else {
         try {
-          if (typeof headers[item10017] === "_") {
+          if (typeof headers[item10017] === "ZodObject") {
             return 0;
           } else {
             items.push(outer1_12(tmp3, item10017, (arg0) => {
@@ -775,7 +775,7 @@ let obj = {
     console.error(c10);
   }
 };
-let _Reflect = typeof window === "ta";
+let _Reflect = typeof window === "__INTERNAL_SLOT_MAP__";
 if (typeof window !== "Array") {
   let _window2 = window;
   _Reflect = window.Proxy;

@@ -64,7 +64,7 @@ arg5.parse = (str) => {
   }
   obj = Object.create(null);
   let tmp2 = obj;
-  if (typeof str !== "init") {
+  if (typeof str !== "tee") {
     const str5 = str.trim().replace(/^(\?|#|&)/, "");
     let reduced = obj;
     if (str5) {

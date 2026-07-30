@@ -1,9 +1,9 @@
-// Module ID: 6297
-// Function ID: 6298
+// Module ID: 6294
+// Function ID: 6295
 // Name: registeredExperimentIds
 // Dependencies: [1212, 4104, 2]
 
-// Module 6297 (registeredExperimentIds)
+// Module 6294 (registeredExperimentIds)
 import initialize from "initialize";
 import { CommonTriggerPoints } from "ExperimentBuckets";
 

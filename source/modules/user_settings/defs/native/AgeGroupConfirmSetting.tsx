@@ -1,9 +1,9 @@
-// Module ID: 13803
-// Function ID: 13804
+// Module ID: 13798
+// Function ID: 13799
 // Name: pressable
-// Dependencies: [7756, 6747, 6749, 10120, 1236, 2741, 4405, 2]
+// Dependencies: [7753, 6744, 6746, 10116, 1236, 2741, 4405, 2]
 
-// Module 13803 (pressable)
+// Module 13798 (pressable)
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
@@ -17,8 +17,8 @@ const pressable = createToggle.createPressable({
     return intl.string(importDefault(2741).rJiO86);
   },
   onPress: function onAgeGroupConfirmPress() {
-    let obj = importDefault(6747);
-    obj = { entryPoint: require(6749) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
+    let obj = importDefault(6744);
+    obj = { entryPoint: require(6746) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
     const result = obj.showAgeVerificationGetStartedModal(obj);
   },
   withArrow: true,
@@ -35,8 +35,8 @@ let obj = {
     return intl.string(importDefault(2741).rJiO86);
   },
   onPress: function onAgeGroupConfirmPress() {
-    let obj = importDefault(6747);
-    obj = { entryPoint: require(6749) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
+    let obj = importDefault(6744);
+    obj = { entryPoint: require(6746) /* AgeVerificationModalEntryPoint */.AgeVerificationModalEntryPoint.ACCOUNT_AGE_GROUP };
     const result = obj.showAgeVerificationGetStartedModal(obj);
   },
   withArrow: true,

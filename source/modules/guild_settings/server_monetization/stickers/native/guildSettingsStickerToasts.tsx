@@ -1,15 +1,15 @@
-// Module ID: 16414
-// Function ID: 16415
+// Module ID: 16408
+// Function ID: 16409
 // Name: showGuildSettingsStickerError
-// Dependencies: [3890, 6730, 1236, 4145, 2]
+// Dependencies: [3890, 6727, 1236, 4145, 2]
 // Exports: showGuildSettingsStickerError, showGuildSettingsStickerSuccess
 
-// Module 16414 (showGuildSettingsStickerError)
+// Module 16408 (showGuildSettingsStickerError)
 const result = require("getSystemLocale").fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/guildSettingsStickerToasts.tsx");
 
 export const showGuildSettingsStickerError = function showGuildSettingsStickerError() {
   let obj = importDefault(3890);
-  obj = { key: "GUILD_SETTINGS_STICKER_ERROR", IconComponent: require(6730) /* CircleErrorIcon */.CircleErrorIcon, content: null };
+  obj = { key: "GUILD_SETTINGS_STICKER_ERROR", IconComponent: require(6727) /* CircleErrorIcon */.CircleErrorIcon, content: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["5NMPSS"]);
   obj.open(obj);

@@ -1,7 +1,7 @@
 // Module ID: 5019
 // Function ID: 5020
 // Name: StageBoostingActionSheet
-// Dependencies: [19, 4181, 1862, 3817, 5004, 676, 1876, 21, 589, 1380, 1236, 4157, 698, 5020, 5014, 4616, 5022, 4600, 5023, 6656, 6785, 5141, 7633, 2]
+// Dependencies: [19, 4181, 1862, 3817, 5004, 676, 1876, 21, 589, 1380, 1236, 4157, 698, 5020, 5014, 4616, 5022, 4600, 5023, 6653, 6782, 5141, 7630, 2]
 // Exports: default
 
 // Module 5019 (StageBoostingActionSheet)
@@ -166,15 +166,15 @@ export default function StageBoostingActionSheet(channel) {
     obj4[0] = string3Result1;
     obj4[1] = stringResult;
     if (tmp9) {
-      tmp23Result = tmp23(tmp(6785).HoldingGemSpotIllustration, { accessible: false });
+      tmp23Result = tmp23(tmp(6782).HoldingGemSpotIllustration, { accessible: false });
     } else {
       const obj5 = { source: null };
-      obj5[0] = tmp21(7633);
+      obj5[0] = tmp21(7630);
       tmp23Result = tmp23(tmp21(5141), obj5);
       const tmp21Result = tmp21(5141);
     }
     obj4[2] = tmp23Result;
     obj4[3] = tmp23Result;
-    return tmp23(tmp(6656).PromoSheet, obj4);
+    return tmp23(tmp(6653).PromoSheet, obj4);
   }
 };

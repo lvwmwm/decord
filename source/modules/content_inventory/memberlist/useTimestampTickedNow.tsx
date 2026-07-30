@@ -1,10 +1,10 @@
-// Module ID: 11999
-// Function ID: 12000
+// Module ID: 11993
+// Function ID: 11994
 // Name: useTimestampTickedNow
 // Dependencies: [32, 19, 4181, 687, 589, 4074, 2]
 // Exports: useTimestampTickedNow
 
-// Module 11999 (useTimestampTickedNow)
+// Module 11993 (useTimestampTickedNow)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

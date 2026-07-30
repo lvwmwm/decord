@@ -1,10 +1,10 @@
-// Module ID: 8753
-// Function ID: 8754
+// Module ID: 8749
+// Function ID: 8750
 // Name: SegmentedControlPage
-// Dependencies: [32, 19, 17, 21, 4050, 8754, 500, 5273, 4596, 4547, 2]
+// Dependencies: [32, 19, 17, 21, 4050, 8750, 500, 5273, 4596, 4547, 2]
 // Exports: SegmentedControlPages
 
-// Module 8753 (SegmentedControlPage)
+// Module 8749 (SegmentedControlPage)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";

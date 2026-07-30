@@ -1,10 +1,10 @@
-// Module ID: 9004
-// Function ID: 9005
+// Module ID: 9000
+// Function ID: 9001
 // Name: ServerIcon
-// Dependencies: [19, 21, 712, 3892, 9005, 2]
+// Dependencies: [19, 21, 712, 3892, 9001, 2]
 // Exports: ServerIcon
 
-// Module 9004 (ServerIcon)
+// Module 9000 (ServerIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ServerIcon = function ServerIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9005) /* registerAsset */;
+  obj[0] = require(9001) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

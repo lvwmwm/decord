@@ -1,10 +1,10 @@
-// Module ID: 11939
-// Function ID: 11940
+// Module ID: 11935
+// Function ID: 11936
 // Name: TwitchNeutralIcon
-// Dependencies: [19, 21, 712, 3892, 11940, 2]
+// Dependencies: [19, 21, 712, 3892, 11936, 2]
 // Exports: TwitchNeutralIcon
 
-// Module 11939 (TwitchNeutralIcon)
+// Module 11935 (TwitchNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const TwitchNeutralIcon = function TwitchNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11940) /* registerAsset */;
+  obj[0] = require(11936) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

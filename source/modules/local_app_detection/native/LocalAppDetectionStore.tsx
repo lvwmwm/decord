@@ -1,9 +1,9 @@
-// Module ID: 12762
-// Function ID: 12763
+// Module ID: 12756
+// Function ID: 12757
 // Name: initialize
-// Dependencies: [32, 5643, 676, 589, 709, 12763, 12764, 2]
+// Dependencies: [32, 5643, 676, 589, 709, 12757, 12758, 2]
 
-// Module 12762 (initialize)
+// Module 12756 (initialize)
 import _slicedToArray from "_slicedToArray";
 import hasConsented from "hasConsented";
 import { Consents } from "ME";
@@ -59,7 +59,7 @@ prototype["isAppInstalled"] = function isAppInstalled(nextResult) {
 prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
   const self = this;
   const items = [];
-  const iter = object(12763).ALL_DETECTABLE_APP_NAMES[Symbol.iterator]();
+  const iter = object(12757).ALL_DETECTABLE_APP_NAMES[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp2 = nextResult;
@@ -77,8 +77,8 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
     continue;
   }
   if (items.length > 0) {
-    object(12764).detectLocalApps(items);
-    const obj = object(12764);
+    object(12758).detectLocalApps(items);
+    const obj = object(12758);
   }
 };
 prototype["handleLocalAppDetectionComplete"] = function handleLocalAppDetectionComplete(result) {

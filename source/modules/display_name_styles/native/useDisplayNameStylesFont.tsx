@@ -1,10 +1,10 @@
-// Module ID: 8383
-// Function ID: 8384
+// Module ID: 8380
+// Function ID: 8381
 // Name: DISPLAY_NAME_STYLES_FONT_FAMILY_MAP
-// Dependencies: [1886, 1888, 4420, 8382, 2]
+// Dependencies: [1886, 1888, 4420, 8379, 2]
 // Exports: useDisplayNameStylesFont
 
-// Module 8383 (DISPLAY_NAME_STYLES_FONT_FAMILY_MAP)
+// Module 8380 (DISPLAY_NAME_STYLES_FONT_FAMILY_MAP)
 import { FLYWHEEL_FONTS } from "items3";
 
 let obj = { [require(1888).DisplayNameFont.CHERRY_BOMB]: "Sakura-Normal", [require(1888).DisplayNameFont.CHICLE]: "Jellybean-Normal", [require(1888).DisplayNameFont.MUSEO_MODERNO]: "Modern-Medium", [require(1888).DisplayNameFont.NEO_CASTEL]: "Medieval-Normal", [require(1888).DisplayNameFont.PIXELIFY]: "8Bit-Normal", [require(1888).DisplayNameFont.SINISTRE]: "Vampyre-Normal", [require(1888).DisplayNameFont.ZILLA_SLAB]: "Tempo-SemiBold", [require(1888).DisplayNameFont.PLAYPEN_SANS]: "MonkeyBars-Bold", [require(1888).DisplayNameFont.ORBITRON]: "Mainframe-Bold", [require(1888).DisplayNameFont.NEW_ROCKER]: "Headbang-Normal", [require(1888).DisplayNameFont.KALAM]: "Journal-Bold" };
@@ -20,7 +20,7 @@ export const useDisplayNameStylesFont = function useDisplayNameStylesFont(arg0) 
   }
   const obj = require(4420) /* useDisplayNameStylesEnabled */;
   const displayNameStylesEnabled = obj.useDisplayNameStylesEnabled({ location: "useDisplayNameStylesFont-native" });
-  require(8382) /* apexExperiment */;
+  require(8379) /* apexExperiment */;
   if (displayNameStylesEnabled) {
     if (null != displayNameStyles) {
       return obj[displayNameStyles.fontId];

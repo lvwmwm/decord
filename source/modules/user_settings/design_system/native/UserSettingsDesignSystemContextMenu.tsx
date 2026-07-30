@@ -1,10 +1,10 @@
-// Module ID: 14574
-// Function ID: 14575
+// Module ID: 14570
+// Function ID: 14571
 // Name: DemoContextMenu
-// Dependencies: [19, 17, 21, 11872, 9164, 7748, 9311, 4154, 14575, 14576, 10008, 4189, 712, 12, 9299, 4600, 5222, 4185, 2]
+// Dependencies: [19, 17, 21, 11868, 9160, 7745, 9307, 4154, 14571, 14572, 10004, 4189, 712, 12, 9295, 4600, 5222, 4185, 2]
 // Exports: default
 
-// Module 14574 (DemoContextMenu)
+// Module 14570 (DemoContextMenu)
 import noop from "noop";
 import get_ActivityIndicator from "Text";
 import jsxProd from "jsxProd";
@@ -50,7 +50,7 @@ function DemoContextMenu(align) {
         obj = { length: dependencyMap };
         const obj2 = callback(12);
         return Array.from(obj).map((arg0, arg1) => {
-          const obj = { label: length[arg1 % length.length], IconComponent: "a", iconSource: "gestikulacija", variant: "ja", action: "mu\u0161karac podi\u017Ee ruku" };
+          const obj = { label: length[arg1 % length.length], IconComponent: "a", iconSource: 0, variant: 0, action: null };
           obj[2] = length2[arg1 % length2.length];
           let str = "default";
           if (arg1 === closure_0 - 1) {
@@ -73,7 +73,7 @@ function DemoContextMenu(align) {
       obj[0] = closure_1;
       arr = Array.from(obj);
       mapped = arr.map((arg0, arg1) => {
-        const obj = { label: length[arg1 % length.length], IconComponent: "a", iconSource: "gestikulacija", variant: "ja", action: "mu\u0161karac podi\u017Ee ruku" };
+        const obj = { label: length[arg1 % length.length], IconComponent: "a", iconSource: 0, variant: 0, action: null };
         obj[2] = length2[arg1 % length2.length];
         let str = "default";
         if (arg1 === closure_0 - 1) {

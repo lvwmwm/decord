@@ -1,10 +1,10 @@
-// Module ID: 6922
-// Function ID: 6923
+// Module ID: 6919
+// Function ID: 6920
 // Name: CloudKeypadSpotIllustration
-// Dependencies: [21, 5141, 6923, 2]
+// Dependencies: [21, 5141, 6920, 2]
 // Exports: CloudKeypadSpotIllustration
 
-// Module 6922 (CloudKeypadSpotIllustration)
+// Module 6919 (CloudKeypadSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CloudKeypadSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const CloudKeypadSpotIllustration = function CloudKeypadSpotIllustration(
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6923);
+  obj[0] = importDefault(6920);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

@@ -1,10 +1,10 @@
-// Module ID: 13660
-// Function ID: 13661
+// Module ID: 13655
+// Function ID: 13656
 // Name: TeacupIcon
-// Dependencies: [19, 21, 712, 3892, 13661, 2]
+// Dependencies: [19, 21, 712, 3892, 13656, 2]
 // Exports: TeacupIcon
 
-// Module 13660 (TeacupIcon)
+// Module 13655 (TeacupIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const TeacupIcon = function TeacupIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(13661) /* registerAsset */;
+  obj[0] = require(13656) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

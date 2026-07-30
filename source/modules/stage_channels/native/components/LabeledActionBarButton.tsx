@@ -1,10 +1,10 @@
-// Module ID: 10804
-// Function ID: 10805
+// Module ID: 10800
+// Function ID: 10801
 // Name: IconPosition
 // Dependencies: [19, 17, 505, 21, 4189, 5030, 712, 4717, 1297, 2]
 // Exports: LabeledActionButton
 
-// Module 10804 (IconPosition)
+// Module 10800 (IconPosition)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

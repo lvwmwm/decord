@@ -1,17 +1,17 @@
-// Module ID: 15570
-// Function ID: 15571
+// Module ID: 15564
+// Function ID: 15565
 // Name: getChannelOpenedRouteTrackingProps
-// Dependencies: [1372, 6085, 1222, 2]
+// Dependencies: [1372, 6083, 1222, 2]
 // Exports: getChannelOpenedRouteTrackingProps
 
-// Module 15570 (getChannelOpenedRouteTrackingProps)
+// Module 15564 (getChannelOpenedRouteTrackingProps)
 import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
 let result = require("transitionTo").fileFinishedImporting("modules/app_analytics/track/channel_opened/getChannelOpenedRouteTrackingProps.tsx");
 
 export const getChannelOpenedRouteTrackingProps = function getChannelOpenedRouteTrackingProps(selectedChannelId) {
-  let obj = require(6085) /* collectThreadMetadata */;
+  let obj = require(6083) /* collectThreadMetadata */;
   const result = obj.collectThreadMetadata(channel.getChannel(selectedChannelId), true);
   let _location;
   if (result != null) {

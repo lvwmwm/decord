@@ -1,10 +1,10 @@
-// Module ID: 13515
-// Function ID: 13516
+// Module ID: 13510
+// Function ID: 13511
 // Name: getAssignedNotifSettingsAndMappings
-// Dependencies: [32, 13509, 13516, 2]
+// Dependencies: [32, 13504, 13511, 2]
 // Exports: getAssignedNotifSettingsAndMappings
 
-// Module 13515 (getAssignedNotifSettingsAndMappings)
+// Module 13510 (getAssignedNotifSettingsAndMappings)
 import _slicedToArray from "_slicedToArray";
 import items2 from "items2";
 
@@ -26,7 +26,7 @@ export const getAssignedNotifSettingsAndMappings = function getAssignedNotifSett
       let tmp4 = require;
       let tmp5 = dependencyMap;
       let tmp6 = nextResult;
-      let tmp7 = require(13516) /* knownExperimentConfigs */.knownExperimentConfigs[tmp3.experiment];
+      let tmp7 = require(13511) /* knownExperimentConfigs */.knownExperimentConfigs[tmp3.experiment];
       let obj2 = tmp7;
       if (tmp7.definition.name !== tmp3.experiment) {
         let _Error = Error;

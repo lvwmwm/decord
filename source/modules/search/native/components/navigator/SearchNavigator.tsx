@@ -1,8 +1,8 @@
-// Module ID: 15691
-// Function ID: 15692
-// Dependencies: [19, 17, 9129, 15481, 676, 21, 4189, 712, 9109, 5570, 10101, 1581, 15692, 9118, 15687, 15688, 2]
+// Module ID: 15685
+// Function ID: 15686
+// Dependencies: [19, 17, 9125, 15475, 676, 21, 4189, 712, 9105, 5570, 10097, 1581, 15686, 9114, 15681, 15682, 2]
 
-// Module 15691
+// Module 15685
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { SearchEntrypointAnalyticsLocations as closure_5 } from "SearchEntrypointAnalyticsLocations";
@@ -52,22 +52,22 @@ const memoResult = importAllResult.memo((route) => {
       name: SearchNavigatorScreens.SEARCH_TABS,
       options: { headerShown: false, fullScreenGestureEnabled: true },
       getComponent() {
-        return searchContext(15692).default;
+        return searchContext(15686).default;
       }
     }),
     callback(createNativeStackNavigator.Screen, {
       name: SearchNavigatorScreens.SEARCH_CHAT_PREVIEW,
       options(route) {
         route = route.route;
-        const obj = { headerShown: true, header: route(9118).renderHeader, headerLeft: null, headerTitle: null, fullScreenGestureEnabled: true };
-        obj[2] = route(9118).getRenderBackImage(route.navigation);
+        const obj = { headerShown: true, header: route(9114).renderHeader, headerLeft: null, headerTitle: null, fullScreenGestureEnabled: true };
+        obj[2] = route(9114).getRenderBackImage(route.navigation);
         obj[3] = function headerTitle() {
           return outer1_8(outer1_1(outer1_2[14]), { channelId: route.params.channelId });
         };
         return obj;
       },
       getComponent() {
-        return searchContext(15688).default;
+        return searchContext(15682).default;
       }
     })
   ];

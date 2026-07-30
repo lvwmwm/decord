@@ -1,10 +1,10 @@
-// Module ID: 14901
-// Function ID: 14902
+// Module ID: 14895
+// Function ID: 14896
 // Name: CompanionRemoteAuth
-// Dependencies: [19, 17, 676, 21, 4189, 14902, 5637, 4185, 1236, 4600, 1297, 4028, 1480, 4422, 698, 14903, 14907, 9215, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 14896, 5637, 4185, 1236, 4600, 1297, 4028, 1480, 4422, 698, 14897, 14901, 9211, 2]
 // Exports: CompanionRemoteAuth
 
-// Module 14901 (CompanionRemoteAuth)
+// Module 14895 (CompanionRemoteAuth)
 import noop from "noop";
 import { View } from "AuthFormView";
 import ME from "ME";
@@ -38,14 +38,14 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
     obj[4] = tmp;
     obj.track(constants.LOGIN_SUCCESSFUL, obj);
   }, []);
-  let obj2 = navigation(14903);
+  let obj2 = navigation(14897);
   const state = obj2.useAuthWebsocket(callback, true).state;
   const items = [navigation];
   const callback1 = React.useCallback(() => {
     navigation.goBack();
   }, items);
   fingerprint = null;
-  if (state.step === navigation(14902).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === navigation(14896).RemoteAuthStep.PENDING_REMOTE_INIT) {
     fingerprint = state.fingerprint;
   }
   const items1 = [fingerprint];
@@ -61,14 +61,14 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
     }
   }, items1);
   obj = { headerText: null, children: null };
-  let tmp5Result = tmp5(9215);
+  let tmp5Result = tmp5(9211);
   const intl = tmp2(1236).intl;
   obj[0] = intl.string(navigation(1236).t["7fNJgA"]);
   obj = { style: tmp.statusContainer, children: null };
   const step = state.step;
-  if (navigation(14902).RemoteAuthStep.INITIALIZING !== step) {
-    if (tmp2(14902).RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
-      if (tmp2(14902).RemoteAuthStep.PENDING_TICKET === step) {
+  if (navigation(14896).RemoteAuthStep.INITIALIZING !== step) {
+    if (tmp2(14896).RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
+      if (tmp2(14896).RemoteAuthStep.PENDING_TICKET === step) {
         const user = state.user;
         obj1 = { children: null };
         obj2 = { style: null, user: null, size: null, guildId: null };
@@ -99,7 +99,7 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
         items2[3] = tmp11(tmp13, obj6);
         obj1[0] = items2;
         let tmp11Result = callback(closure_8, obj1);
-      } else if (tmp2(14902).RemoteAuthStep.PENDING_LOGIN === step) {
+      } else if (tmp2(14896).RemoteAuthStep.PENDING_LOGIN === step) {
         tmp11Result = tmp11(tmp2(5637).ActivityIndicator, {});
       }
     }

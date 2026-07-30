@@ -1,9 +1,9 @@
-// Module ID: 12860
-// Function ID: 12861
+// Module ID: 12854
+// Function ID: 12855
 // Name: reset
-// Dependencies: [676, 4265, 12, 12861, 2]
+// Dependencies: [676, 4265, 12, 12855, 2]
 
-// Module 12860 (reset)
+// Module 12854 (reset)
 import { RTCConnectionStates } from "ME";
 
 const result = require("apply").fileFinishedImporting("lib/RTCConnectionStats.tsx");
@@ -123,7 +123,7 @@ prototype["getStateDurations"] = function getStateDurations(nowResult) {
   if (0 === this.history.length) {
     return [];
   } else {
-    let arr = importDefault(12861)(self.history, (state, startTime) => ({ state: state.state, durationMs: startTime.startTime - state.startTime }));
+    let arr = importDefault(12855)(self.history, (state, startTime) => ({ state: state.state, durationMs: startTime.startTime - state.startTime }));
     let obj = importDefault(12);
     const lastResult = obj.last(self.history);
     obj = { state: null, durationMs: null };

@@ -1,10 +1,10 @@
-// Module ID: 10201
-// Function ID: 10202
+// Module ID: 10197
+// Function ID: 10198
 // Name: InstantInviteDetails
-// Dependencies: [19, 17, 1376, 3826, 1874, 21, 4189, 712, 4650, 4695, 4598, 4185, 4380, 4153, 1236, 10189, 2]
+// Dependencies: [19, 17, 1376, 3826, 1874, 21, 4189, 712, 4650, 4695, 4598, 4185, 4380, 4153, 1236, 10185, 2]
 // Exports: default
 
-// Module 10201 (InstantInviteDetails)
+// Module 10197 (InstantInviteDetails)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { createChannelRecordFromInvite as closure_5 } from "createChannelRecord";

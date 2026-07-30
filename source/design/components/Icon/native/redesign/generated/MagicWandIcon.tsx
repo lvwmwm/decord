@@ -1,10 +1,10 @@
-// Module ID: 10316
-// Function ID: 10317
+// Module ID: 10312
+// Function ID: 10313
 // Name: MagicWandIcon
-// Dependencies: [19, 21, 712, 3892, 10317, 2]
+// Dependencies: [19, 21, 712, 3892, 10313, 2]
 // Exports: MagicWandIcon
 
-// Module 10316 (MagicWandIcon)
+// Module 10312 (MagicWandIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const MagicWandIcon = function MagicWandIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10317) /* registerAsset */;
+  obj[0] = require(10313) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

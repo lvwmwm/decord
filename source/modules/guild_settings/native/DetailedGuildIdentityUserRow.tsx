@@ -1,9 +1,9 @@
-// Module ID: 10202
-// Function ID: 10203
+// Module ID: 10198
+// Function ID: 10199
 // Name: memoResult1
-// Dependencies: [19, 17, 1874, 21, 4189, 712, 4379, 4028, 9454, 1297, 589, 7634, 5220, 2]
+// Dependencies: [19, 17, 1874, 21, 4189, 712, 4379, 4028, 9450, 1297, 589, 7631, 5220, 2]
 
-// Module 10202 (memoResult1)
+// Module 10198 (memoResult1)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -33,7 +33,7 @@ const memoResult = importAllResult.memo((height) => {
   }
   const hasAvatarForGuildResult = user.hasAvatarForGuild(guildId);
   obj = { style: { height: height.contentHeight }, children: null };
-  const items = [callback(importDefault(9454), { user, nick: nickname }), ];
+  const items = [callback(importDefault(9450), { user, nick: nickname }), ];
   if (hasAvatarForGuildResult) {
     obj = { style: null, children: null };
     obj[0] = tmp.mainIdentity;
@@ -49,7 +49,7 @@ const memoResult = importAllResult.memo((height) => {
     const obj2 = { user: null, usernameStyle: null, hideBotTag: true };
     obj2[0] = user;
     obj2[1] = tmp.mainTag;
-    items1[1] = tmp8(tmp2(9454), obj2);
+    items1[1] = tmp8(tmp2(9450), obj2);
     obj[1] = items1;
     let tmp6Result = tmp6(tmp7, obj);
   } else {
@@ -110,7 +110,7 @@ const memoResult1 = importAllResult.memo(function DetailedGuildIdentityUserRow(a
     obj[6] = trailing;
     obj[7] = accessibilityRole;
     obj[8] = accessibilityState;
-    let tmp2Result = tmp2(tmp(7634).FormRow, obj);
+    let tmp2Result = tmp2(tmp(7631).FormRow, obj);
   } else {
     const obj1 = { accessibilityLabel: null, arrow: null, disabled: null, end: null, icon: null, label: null, onPress: null, start: null, subLabel: null, trailing: null, accessibilityRole: null, accessibilityState: null };
     obj1[0] = accessibilityLabel;

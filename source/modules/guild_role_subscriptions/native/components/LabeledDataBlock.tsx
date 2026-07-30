@@ -1,10 +1,10 @@
-// Module ID: 14237
-// Function ID: 14238
+// Module ID: 14233
+// Function ID: 14234
 // Name: LabeledDataBlock
 // Dependencies: [19, 17, 676, 21, 4189, 712, 5109, 4185, 4717, 1297, 2]
 // Exports: default
 
-// Module 14237 (LabeledDataBlock)
+// Module 14233 (LabeledDataBlock)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -54,7 +54,7 @@ export default function LabeledDataBlock(arg0) {
   obj[1] = items1;
   const items2 = [closure_4(View, obj), ];
   tmp4Result = children;
-  if (typeof children !== "init") {
+  if (typeof children !== "tee") {
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.data;
     obj3[1] = children;

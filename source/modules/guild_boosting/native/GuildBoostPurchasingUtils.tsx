@@ -1,10 +1,10 @@
-// Module ID: 11629
-// Function ID: 11630
+// Module ID: 11625
+// Function ID: 11626
 // Name: _launchGuildBoostFlowOrAlert
-// Dependencies: [5, 3841, 676, 1876, 4529, 1236, 698, 4509, 6552, 6546, 3835, 2]
+// Dependencies: [5, 3841, 676, 1876, 4529, 1236, 698, 4509, 6549, 6543, 3835, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 11629 (_launchGuildBoostFlowOrAlert)
+// Module 11625 (_launchGuildBoostFlowOrAlert)
 import getSystemLocale from "getSystemLocale";
 import reset from "reset";
 import ME from "ME";
@@ -67,7 +67,7 @@ function _launchGuildBoostFlowOrAlert() {
               let externalManagementMessage;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp5) {
@@ -97,7 +97,7 @@ function _launchGuildBoostFlowOrAlert() {
               return obj;
             }
             premiumTypeSubscription = c4.getPremiumTypeSubscription();
-            let obj3 = callback(6552);
+            let obj3 = callback(6549);
             externalManagementMessage = obj3.getExternalManagementMessage(premiumTypeSubscription);
             if (null != externalManagementMessage) {
               (function alertUnableToManageSub(closure_7, c0) {
@@ -133,8 +133,8 @@ function _launchGuildBoostFlowOrAlert() {
               obj3[6] = c3;
               obj3[7] = c4;
               obj3[8] = c5;
-              const result = callback(6546).launchPremiumPlanSelect(obj3);
-              const obj5 = callback(6546);
+              const result = callback(6543).launchPremiumPlanSelect(obj3);
+              const obj5 = callback(6543);
             }
             c4 = 3;
           }

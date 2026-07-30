@@ -1,10 +1,10 @@
-// Module ID: 10643
-// Function ID: 10644
+// Module ID: 10639
+// Function ID: 10640
 // Name: _getCachedOrFetchActivityApplicationForLaunch
-// Dependencies: [5, 4226, 4212, 1372, 5696, 10614, 10644, 2]
+// Dependencies: [5, 4226, 4212, 1372, 5696, 10610, 10640, 2]
 // Exports: default
 
-// Module 10643 (_getCachedOrFetchActivityApplicationForLaunch)
+// Module 10639 (_getCachedOrFetchActivityApplicationForLaunch)
 import getShelfItemData from "getShelfItemData";
 import addApplication from "addApplication";
 import createExecutable from "createExecutable";

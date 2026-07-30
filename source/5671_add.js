@@ -251,8 +251,8 @@ function exp(constructor) {
       let sum1 = num8 + 1;
       let timesResult2 = obj7.times(sum1);
       let tmp30 = digitsToString;
-      let tmp31 = f104608;
-      let plusResult = obj5.plus(f104608(timesResult1, timesResult2, sum));
+      let tmp31 = f104620;
+      let plusResult = obj5.plus(f104620(timesResult1, timesResult2, sum));
       let arr = digitsToString(plusResult.d);
       substr = arr.slice(0, sum);
       let arr2 = digitsToString(obj5.d);
@@ -368,7 +368,7 @@ function ln(s) {
             const text = `${tmp16}.`;
             constructor2 = new constructor(`${tmp16}.` + times.slice(num));
           }
-          const tmp36 = f104608(constructor2.minus(Decimal), constructor2.plus(Decimal), sum);
+          const tmp36 = f104620(constructor2.minus(Decimal), constructor2.plus(Decimal), sum);
           times = tmp36.times;
           round(times(tmp36), sum);
           num = 3;
@@ -1184,14 +1184,14 @@ obj.dp = fn3;
 obj.decimalPlaces = fn3;
 const fn4 = function(arg0) {
   const constructor = new this.constructor(arg0);
-  return f104608(this, constructor);
+  return f104620(this, constructor);
 };
 obj.div = fn4;
 obj.dividedBy = fn4;
 const fn5 = function(arg0) {
   let constructor = this.constructor;
   constructor = new constructor(arg0);
-  const tmp2 = f104608(this, constructor, 0, 1);
+  const tmp2 = f104620(this, constructor, 0, 1);
   round(tmp2, constructor.precision);
   return tmp2;
 };
@@ -1279,7 +1279,7 @@ const fn14 = function(arg0) {
       let constructor2 = new constructor(0);
     } else {
       let c2 = false;
-      constructor2 = f104608(ln(self, sum), ln(constructor, sum), sum);
+      constructor2 = f104620(ln(self, sum), ln(constructor, sum), sum);
       c2 = true;
       round(constructor2, precision);
       const tmp14 = ln(self, sum);
@@ -1310,8 +1310,8 @@ const fn16 = function(arg0) {
     if (self.s) {
       let c2 = false;
       c2 = true;
-      let minusResult = self.minus(f104608(self, tmp2, 0, 1).times(constructor));
-      const obj = f104608(self, tmp2, 0, 1);
+      let minusResult = self.minus(f104620(self, tmp2, 0, 1).times(constructor));
+      const obj = f104620(self, tmp2, 0, 1);
     } else {
       const constructor1 = new constructor(self);
       minusResult = constructor1;
@@ -1940,7 +1940,7 @@ obj.toJSON = fn28;
 obj.val = fn28;
 obj.valueOf = fn28;
 obj.toString = fn28;
-const f104608 = (s, s2) => {
+const f104620 = (s, s2) => {
   let num7;
   let sum;
   let tmp26;
@@ -2499,7 +2499,7 @@ function clone(arg0) {
             tmp13 = outer1_17(self, str.toString());
             tmp14 = self;
           }
-        } else if (typeof arg0 === "init") {
+        } else if (typeof arg0 === "tee") {
           tmp10 = globalThis;
           _Error2 = Error;
           tmp11 = outer1_4;
@@ -2600,7 +2600,7 @@ function clone(arg0) {
               tmp13 = outer1_17(self, str.toString());
               tmp14 = self;
             }
-          } else if (typeof arg0 === "init") {
+          } else if (typeof arg0 === "tee") {
             tmp10 = globalThis;
             _Error2 = Error;
             tmp11 = outer1_4;
@@ -2684,7 +2684,7 @@ function clone(arg0) {
                 tmp13 = outer1_17(self, str.toString());
                 tmp14 = self;
               }
-            } else if (typeof arg0 === "init") {
+            } else if (typeof arg0 === "tee") {
               tmp10 = globalThis;
               _Error2 = Error;
               tmp11 = outer1_4;
@@ -2772,7 +2772,7 @@ class Decimal {
           tmp13 = outer1_17(self, str.toString());
           tmp14 = self;
         }
-      } else if (typeof global === "init") {
+      } else if (typeof global === "tee") {
         tmp10 = globalThis;
         _Error2 = Error;
         tmp11 = outer1_4;
@@ -2838,7 +2838,7 @@ if (0 < items.length) {
 Decimal.config(obj);
 Decimal.Decimal = Decimal;
 Decimal.default = Decimal;
-if (typeof globalThis.define !== "_") {
+if (typeof globalThis.define !== "ZodObject") {
   if (globalThis.define.amd) {
     globalThis.define(() => Decimal);
   }

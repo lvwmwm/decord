@@ -1,10 +1,10 @@
-// Module ID: 7712
-// Function ID: 7713
+// Module ID: 7709
+// Function ID: 7710
 // Name: MessagePreview
-// Dependencies: [19, 17, 21, 4189, 712, 7713, 4033, 4185, 1236, 9290, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 7710, 4033, 4185, 1236, 9286, 2]
 // Exports: default
 
-// Module 7712 (MessagePreview)
+// Module 7709 (MessagePreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,7 +35,7 @@ export default function MessagePreview(message) {
   const items = [callback(require(4185) /* Text */.Text, obj), ];
   const hexWithOpacityResult = obj.hexWithOpacity(tmp.borderColor.color, 0.08);
   const items1 = [tmp.chatItemContainer, { borderColor: hexWithOpacityResult }];
-  items[1] = callback(View, { style: items1, children: callback(importDefault(9290), obj2) });
+  items[1] = callback(View, { style: items1, children: callback(importDefault(9286), obj2) });
   obj[1] = items;
   return callback2(View, obj);
 };

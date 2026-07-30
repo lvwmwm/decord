@@ -1,9 +1,9 @@
-// Module ID: 9386
-// Function ID: 9387
+// Module ID: 9382
+// Function ID: 9383
 // Name: EmojiItemLockedOverlay
-// Dependencies: [19, 17, 1302, 9339, 1338, 21, 4189, 712, 500, 689, 1416, 4709, 4717, 5141, 4035, 5207, 5208, 1297, 9387, 2]
+// Dependencies: [19, 17, 1302, 9335, 1338, 21, 4189, 712, 500, 689, 1416, 4709, 4717, 5141, 4035, 5207, 5208, 1297, 9383, 2]
 
-// Module 9386 (EmojiItemLockedOverlay)
+// Module 9382 (EmojiItemLockedOverlay)
 import importAllResult from "set";
 import get_ActivityIndicator from "Button";
 import handleThemeChange from "handleThemeChange";
@@ -202,7 +202,7 @@ let closure_12 = importAllResult.memo((emojis) => {
     }
   };
   obj1 = { rowContentWidth: containerWidth, rowContentPaddingVertical: PADDING_VERTICAL, itemSize: IMAGE_SIZE, items, isSectionNitroLocked };
-  return callback(importDefault(9387), obj);
+  return callback(importDefault(9383), obj);
 });
 let closure_13 = importAllResult.memo((arg0) => {
   let animateEmoji;

@@ -1,10 +1,10 @@
-// Module ID: 7504
-// Function ID: 7505
+// Module ID: 7501
+// Function ID: 7502
 // Name: SoundIllocon
-// Dependencies: [21, 5141, 7505, 2]
+// Dependencies: [21, 5141, 7502, 2]
 // Exports: SoundIllocon
 
-// Module 7504 (SoundIllocon)
+// Module 7501 (SoundIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SoundIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const SoundIllocon = function SoundIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7505);
+  obj[0] = importDefault(7502);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

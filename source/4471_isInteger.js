@@ -6,7 +6,7 @@
 // Module 4471 (isInteger)
 
 export default function isInteger(arg0) {
-  if (typeof arg0 !== "os") {
+  if (typeof arg0 !== "reType") {
     if (!require(572) /* isNaN */(arg0)) {
       if (tmp2(4463)(arg0)) {
         const tmp = tmp2(565)(arg0);

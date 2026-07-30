@@ -1,10 +1,10 @@
-// Module ID: 15603
-// Function ID: 15604
+// Module ID: 15597
+// Function ID: 15598
 // Name: AddFriendsContactSyncEmptyState
-// Dependencies: [19, 17, 21, 4189, 712, 11784, 4185, 1236, 11771, 4600, 11767, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 11780, 4185, 1236, 11767, 4600, 11763, 2]
 // Exports: default
 
-// Module 15603 (AddFriendsContactSyncEmptyState)
+// Module 15597 (AddFriendsContactSyncEmptyState)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,7 +35,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/na
 export default function AddFriendsContactSyncEmptyState() {
   const tmp = createCacheKey();
   let obj = { style: tmp.content, children: null };
-  obj = { resizeMode: "contain", style: tmp.headerImage, source: importDefault(11784) };
+  obj = { resizeMode: "contain", style: tmp.headerImage, source: importDefault(11780) };
   const items = [callback(closure_4, obj), , , ];
   obj = { style: tmp.title, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -45,7 +45,7 @@ export default function AddFriendsContactSyncEmptyState() {
   const obj2 = { style: tmp.subtitleText, variant: "text-sm/medium", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   const obj3 = { learnMoreHook: null };
-  obj3[0] = require(11771) /* _uploadContacts */.handleOpenLearnMoreLink;
+  obj3[0] = require(11767) /* _uploadContacts */.handleOpenLearnMoreLink;
   obj2[2] = intl2.format(require(1236) /* getSystemLocale */.t.OXdOPf, obj3);
   obj1[1] = callback(require(4185) /* Text */.Text, obj2);
   items[2] = callback(closure_3, obj1);

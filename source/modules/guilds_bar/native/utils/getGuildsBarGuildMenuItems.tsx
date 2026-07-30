@@ -1,10 +1,10 @@
-// Module ID: 14943
-// Function ID: 14944
+// Module ID: 14937
+// Function ID: 14938
 // Name: getGuildsBarGuildMenuItems
-// Dependencies: [5, 3818, 1862, 4385, 676, 10710, 1236, 6692, 11529, 10310, 9262, 13098, 1959, 10229, 5135, 9011, 13045, 11476, 4157, 10305, 11477, 5130, 2]
+// Dependencies: [5, 3818, 1862, 4385, 676, 10706, 1236, 6689, 11525, 10306, 9258, 13093, 1959, 10225, 5135, 9007, 13040, 11472, 4157, 10301, 11473, 5130, 2]
 // Exports: default
 
-// Module 14943 (getGuildsBarGuildMenuItems)
+// Module 14937 (getGuildsBarGuildMenuItems)
 import DoorExitIcon from "DoorExitIcon";
 import initialize from "initialize";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -18,7 +18,7 @@ export default function getGuildsBarGuildMenuItems(guildId) {
   let closure_0 = guildId;
   if (lurking.isLurking(guildId)) {
     let obj = { IconComponent: null, label: null, variant: "destructive", action: null };
-    obj[0] = tmp(10710).DoorExitIcon;
+    obj[0] = tmp(10706).DoorExitIcon;
     const intl6 = tmp(1236).intl;
     obj[1] = intl6.string(tmp(1236).t["2vl7qn"]);
     obj[3] = function action() {
@@ -29,10 +29,10 @@ export default function getGuildsBarGuildMenuItems(guildId) {
     let items = [obj];
     return items;
   } else {
-    let result = tmp(10310).shouldShowUseNewNotificationSystem("GuildPopoutMenu");
+    let result = tmp(10306).shouldShowUseNewNotificationSystem("GuildPopoutMenu");
     obj = { IconComponent: null, label: null, action: null };
-    const tmpResult = tmp(10310);
-    obj[0] = tmp(9262).EnvelopeIcon;
+    const tmpResult = tmp(10306);
+    obj[0] = tmp(9258).EnvelopeIcon;
     const intl = tmp(1236).intl;
     obj[1] = intl.string(tmp(1236).t.e6RscS);
     obj[2] = function action() {
@@ -93,7 +93,7 @@ export default function getGuildsBarGuildMenuItems(guildId) {
     };
     const items1 = [obj, , ];
     let obj1 = { IconComponent: null, label: null, action: null };
-    obj1[0] = tmp(10229).BellIcon;
+    obj1[0] = tmp(10225).BellIcon;
     const intl2 = tmp(1236).intl;
     obj1[1] = intl2.string(tmp(1236).t.HcoRu0);
     obj1[2] = function action() {
@@ -101,7 +101,7 @@ export default function getGuildsBarGuildMenuItems(guildId) {
     };
     items1[1] = obj1;
     const obj2 = { IconComponent: null, label: null, action: null };
-    obj2[0] = tmp(9011).SettingsIcon;
+    obj2[0] = tmp(9007).SettingsIcon;
     const intl3 = tmp(1236).intl;
     obj2[1] = intl3.string(tmp(1236).t.PdRCRg);
     obj2[2] = function action() {
@@ -115,7 +115,7 @@ export default function getGuildsBarGuildMenuItems(guildId) {
       const splice = items1.splice;
       const obj3 = { iconSource: null, label: null, action: null };
       if (isMutedResult) {
-        obj3[0] = tmp6(11477);
+        obj3[0] = tmp6(11473);
         const intl5 = tmp(1236).intl;
         obj3[1] = intl5.string(tmp(1236).t.De0BTC);
         obj3[2] = function action() {
@@ -126,7 +126,7 @@ export default function getGuildsBarGuildMenuItems(guildId) {
         };
         splice(1, 0, obj3);
       } else {
-        obj3[0] = tmp6(11476);
+        obj3[0] = tmp6(11472);
         const intl4 = tmp(1236).intl;
         obj3[1] = intl4.string(tmp(1236).t.vRzp7P);
         obj3[2] = function action() {

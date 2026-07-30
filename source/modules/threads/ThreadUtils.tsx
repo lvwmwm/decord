@@ -1,10 +1,10 @@
-// Module ID: 6092
-// Function ID: 6093
+// Module ID: 6090
+// Function ID: 6091
 // Name: getAccessibilityLabelFormatter
-// Dependencies: [109, 4201, 4385, 3819, 1235, 676, 1236, 5755, 4384, 698, 6085, 5130, 1384, 589, 11, 3771, 2]
+// Dependencies: [109, 4201, 4385, 3819, 1235, 676, 1236, 5755, 4384, 698, 6083, 5130, 1384, 589, 11, 3771, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated, useLastMessageTimestamp
 
-// Module 6092 (getAccessibilityLabelFormatter)
+// Module 6090 (getAccessibilityLabelFormatter)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
@@ -45,7 +45,7 @@ export const trackActiveThreadsPopoutOpened = function trackActiveThreadsPopoutO
 export const trackThreadNotificationSettingsUpdated = function trackThreadNotificationSettingsUpdated(outer1_0, c1) {
   let can_send_message;
   let parent_channel_type;
-  let obj = require(6085) /* collectThreadMetadata */;
+  let obj = require(6083) /* collectThreadMetadata */;
   const result = obj.collectThreadMetadata(outer1_0);
   if (null != result) {
     const guildId = outer1_0.getGuildId();

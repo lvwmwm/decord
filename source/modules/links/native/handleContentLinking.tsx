@@ -1,10 +1,10 @@
-// Module ID: 9547
-// Function ID: 9548
+// Module ID: 9543
+// Function ID: 9544
 // Name: _handleContentLinking
-// Dependencies: [5, 6694, 676, 4395, 5679, 1222, 9548, 2]
+// Dependencies: [5, 6691, 676, 4395, 5679, 1222, 9544, 2]
 // Exports: default
 
-// Module 9547 (_handleContentLinking)
+// Module 9543 (_handleContentLinking)
 import transitionTo from "transitionTo";
 import { Routes } from "ME";
 
@@ -63,7 +63,7 @@ function _handleContentLinking() {
               let skipMessageFetch;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp5) {

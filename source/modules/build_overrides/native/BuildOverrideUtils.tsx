@@ -1,10 +1,10 @@
-// Module ID: 10980
-// Function ID: 10981
+// Module ID: 10976
+// Function ID: 10977
 // Name: setBuildOverrideForBranch
-// Dependencies: [5, 10468, 500, 10981, 10982, 4529, 4105, 2]
+// Dependencies: [5, 10464, 500, 10977, 10978, 4529, 4105, 2]
 // Exports: refreshBuildOverride, setBuildOverrideForId, setBuildOverrideFromLink, toggleOverride
 
-// Module 10980 (setBuildOverrideForBranch)
+// Module 10976 (setBuildOverrideForBranch)
 import module_4529 from "module_4529";
 import getCurrentBuildOverride from "getCurrentBuildOverride";
 import set from "set";
@@ -80,7 +80,7 @@ function _setBuildOverride() {
           } else {
             lib = arg1;
             if (400 !== lib.status) {
-              obj2 = callback(10982);
+              obj2 = callback(10978);
               const result = obj2.checkForUpdateAndReload();
             } else {
               obj = callback(4529);
@@ -151,7 +151,7 @@ function _clearBuildOverride() {
             dependencyMap = 1;
             c3 = 1;
             const obj1 = { value: null, done: false };
-            obj1[0] = outer1_0(10981).clearBuildOverride();
+            obj1[0] = outer1_0(10977).clearBuildOverride();
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -165,7 +165,7 @@ function _clearBuildOverride() {
         } else {
           closure_0 = arg1;
           if (400 !== closure_0.status) {
-            obj2 = callback(10982);
+            obj2 = callback(10978);
             const result = obj2.checkForUpdateAndReload();
           } else {
             obj = callback(4529);
@@ -282,7 +282,7 @@ function _toggleOverride() {
               obj.show(obj3);
             }
           }
-          obj2 = callback(10982);
+          obj2 = callback(10978);
           const result = obj2.checkForUpdateAndReload();
         } catch (tmp29) {
           currentBuildOverride = tmp;
@@ -384,7 +384,7 @@ function _setBuildOverrideFromLink() {
               obj.show(obj3);
             }
           }
-          obj2 = callback(10982);
+          obj2 = callback(10978);
           const result = obj2.checkForUpdateAndReload();
         } catch (tmp26) {
           currentBuildOverride = tmp;
@@ -415,7 +415,7 @@ export const setBuildOverrideForId = function setBuildOverrideForId(id) {
 };
 export { setBuildOverride };
 export const refreshBuildOverride = function refreshBuildOverride() {
-  const result = importDefault(10982).checkForUpdateAndReload();
+  const result = importDefault(10978).checkForUpdateAndReload();
 };
 export { clearBuildOverride };
 export const toggleOverride = function toggleOverride(code) {

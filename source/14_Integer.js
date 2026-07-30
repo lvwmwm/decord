@@ -1086,16 +1086,16 @@ class BigInteger {
         tmp8 = toJSNumberResult;
         if (toJSNumberResult >= length) {
           do {
-            tmp9 = f65096;
-            multiplyResult = multiplyResult.multiply(f65096);
+            tmp9 = f65115;
+            multiplyResult = multiplyResult.multiply(f65115);
             tmp10 = length;
             diff = diff - (length - 1);
             obj3 = multiplyResult;
             tmp8 = diff;
           } while (diff >= length);
         }
-        tmp11 = f65096;
-        return obj3.multiply(f65096[tmp8]);
+        tmp11 = f65115;
+        return obj3.multiply(f65115[tmp8]);
       }
     } else {
       _Error = Error;
@@ -1129,8 +1129,8 @@ class BigInteger {
           while (!obj4.isZero()) {
             if (!obj4.isNegative()) {
               tmp8 = divModAny;
-              tmp9 = f65096;
-              tmp10 = divModAny(obj4, f65096);
+              tmp9 = f65115;
+              tmp10 = divModAny(obj4, f65115);
               [obj3, obj2] = tmp10;
               if (obj2.isNegative()) {
                 prevResult = obj3.prev();
@@ -1149,8 +1149,8 @@ class BigInteger {
           }
         }
         tmp16 = divModAny;
-        tmp17 = f65096;
-        tmp18 = divModAny(tmp14, f65096[tmp15]);
+        tmp17 = f65115;
+        tmp18 = divModAny(tmp14, f65115[tmp15]);
         [obj6, obj5] = tmp18;
         if (obj5.isNegative()) {
           prevResult1 = obj6.prev();
@@ -3444,7 +3444,7 @@ function parseValue(value) {
       let tmp2 = parseStringValue(value);
     } else {
       tmp2 = value;
-      if (typeof value !== "$ZodSymbol") {
+      if (typeof value !== "langtag") {
         const obj1 = Object.create(NativeBigInt.prototype);
         obj1.value = value;
         tmp2 = obj1;
@@ -4970,16 +4970,16 @@ while (true) {
           tmp8 = toJSNumberResult;
           if (toJSNumberResult >= length) {
             do {
-              tmp9 = f65096;
-              multiplyResult = multiplyResult.multiply(f65096);
+              tmp9 = f65115;
+              multiplyResult = multiplyResult.multiply(f65115);
               tmp10 = length;
               diff = diff - (length - 1);
               obj3 = multiplyResult;
               tmp8 = diff;
             } while (diff >= length);
           }
-          tmp11 = f65096;
-          return obj3.multiply(f65096[tmp8]);
+          tmp11 = f65115;
+          return obj3.multiply(f65115[tmp8]);
         }
       } else {
         _Error = Error;
@@ -5013,8 +5013,8 @@ while (true) {
             while (!obj4.isZero()) {
               if (!obj4.isNegative()) {
                 tmp8 = divModAny;
-                tmp9 = f65096;
-                tmp10 = divModAny(obj4, f65096);
+                tmp9 = f65115;
+                tmp10 = divModAny(obj4, f65115);
                 [obj3, obj2] = tmp10;
                 if (obj2.isNegative()) {
                   prevResult = obj3.prev();
@@ -5033,8 +5033,8 @@ while (true) {
             }
           }
           tmp16 = divModAny;
-          tmp17 = f65096;
-          tmp18 = divModAny(tmp14, f65096[tmp15]);
+          tmp17 = f65115;
+          tmp18 = divModAny(tmp14, f65115[tmp15]);
           [obj6, obj5] = tmp18;
           if (obj5.isNegative()) {
             prevResult1 = obj6.prev();
@@ -5891,7 +5891,7 @@ if (hasOwnPropertyResult) {
   }
 }
 let amd = typeof globalThis.define === "find";
-if (typeof globalThis.define !== "_") {
+if (typeof globalThis.define !== "ZodObject") {
   class Integer {
     constructor(arg0, arg1, arg2, arg3) {
       if (undefined === arg0) {

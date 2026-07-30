@@ -1,10 +1,10 @@
-// Module ID: 10420
-// Function ID: 10421
+// Module ID: 10416
+// Function ID: 10417
 // Name: ChatViewWrapperAnimatedKeyboard
-// Dependencies: [19, 17, 21, 4050, 4193, 10421, 4190, 5218, 10425, 10427, 5502, 10428, 2]
+// Dependencies: [19, 17, 21, 4050, 4193, 10417, 4190, 5218, 10421, 10423, 5502, 10424, 2]
 // Exports: default
 
-// Module 10420 (ChatViewWrapperAnimatedKeyboard)
+// Module 10416 (ChatViewWrapperAnimatedKeyboard)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,7 +28,7 @@ let closure_12 = importAllResult.memo((channelId) => {
   c0 = tmp;
   const items = [tmp];
   const obj = { style: null };
-  const items1 = [importDefault(10425)(channelId.channelId), importAllResult.useMemo(() => ({ position: "absolute", bottom: -c0, height: c0, right: 0, left: 0 }), items)];
+  const items1 = [importDefault(10421)(channelId.channelId), importAllResult.useMemo(() => ({ position: "absolute", bottom: -c0, height: c0, right: 0, left: 0 }), items)];
   obj[0] = items1;
   return callback(View, obj);
 });

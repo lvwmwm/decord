@@ -1,9 +1,9 @@
-// Module ID: 15573
-// Function ID: 15574
+// Module ID: 15567
+// Function ID: 15568
 // Name: Loading
-// Dependencies: [19, 17, 1932, 1862, 4007, 676, 21, 4189, 712, 5637, 9143, 589, 5503, 4009, 9148, 1222, 4040, 1581, 5638, 15574, 2]
+// Dependencies: [19, 17, 1932, 1862, 4007, 676, 21, 4189, 712, 5637, 9139, 589, 5503, 4009, 9144, 1222, 4040, 1581, 5638, 15568, 2]
 
-// Module 15573 (Loading)
+// Module 15567 (Loading)
 import closure_4 from "makeAuthenticated";
 import { View } from "useSafeAreaInsets";
 import comparator from "comparator";
@@ -20,7 +20,7 @@ function Loading() {
 }
 function MemberVerificationRouteView(arg0) {
   const merged = Object.assign(arg0);
-  return jsx(importDefault(9143), {});
+  return jsx(importDefault(9139), {});
 }
 function ExistingJoinRequestHandler(guildId) {
   guildId = guildId.guildId;

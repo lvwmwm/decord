@@ -1,10 +1,10 @@
-// Module ID: 10862
-// Function ID: 10863
+// Module ID: 10858
+// Function ID: 10859
 // Name: useStageChannelParticipantsList
-// Dependencies: [32, 19, 4202, 5008, 589, 5021, 5014, 12, 5020, 10863, 2]
+// Dependencies: [32, 19, 4202, 5008, 589, 5021, 5014, 12, 5020, 10859, 2]
 // Exports: useStageChannelParticipantsList, useStageChannelParticipantsListThrottled, useThrottleDurationForChannel
 
-// Module 10862 (useStageChannelParticipantsList)
+// Module 10858 (useStageChannelParticipantsList)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getParticipants from "getParticipants";
@@ -226,8 +226,8 @@ export const useStageChannelParticipantsListThrottled = function useStageChannel
   [tmp5, tmp6] = flag(memo, 2);
   const tmp4 = flag(memo, 2);
   let items5 = [memo[_require(undefined, 5014).StageChannelParticipantNamedIndex.AUDIENCE]];
-  const obj3 = _require(10863);
-  [tmp8, tmp9] = flag(_require(10863).useThrottledState(memo, throttleDurationForChannel, items5), 2);
+  const obj3 = _require(10859);
+  [tmp8, tmp9] = flag(_require(10859).useThrottledState(memo, throttleDurationForChannel, items5), 2);
   if (flag) {
     let SELECTED = tmp10.MEDIA;
     let tmp11 = tmp10;

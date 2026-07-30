@@ -1,10 +1,10 @@
-// Module ID: 13043
-// Function ID: 13044
+// Module ID: 13038
+// Function ID: 13039
 // Name: ShareScreenFooter
-// Dependencies: [19, 21, 9916, 9917, 4600, 9925, 2]
+// Dependencies: [19, 21, 9913, 9914, 4600, 9922, 2]
 // Exports: default
 
-// Module 13043 (ShareScreenFooter)
+// Module 13038 (ShareScreenFooter)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -32,7 +32,7 @@ export default function ShareScreenFooter(arg0) {
   if (disabled === undefined) {
     disabled = false;
   }
-  let obj = require(9916) /* useShareChatInputActions */;
+  let obj = require(9913) /* useShareChatInputActions */;
   const shareChatInputActions = obj.useShareChatInputActions(setText, undefined, appEntryKey);
   ({ textInputRef, isInputFocused, handleSelectionChange, handleMessageFocus, handleMessageBlur, handlePressEmoji } = shareChatInputActions);
   obj = { preview, sendButton: null, chatInput: null, avoidKeyboard: null };
@@ -49,7 +49,7 @@ export default function ShareScreenFooter(arg0) {
   obj[4] = tmp7;
   obj[5] = isSending;
   obj[1] = jsx(require(4600) /* Button */.Button, { variant: "primary", size: "md", text: sendLabel, disabled: null, onPress: null, loading: null });
-  obj[2] = jsx(importDefault(9925), { inputRef: textInputRef, text, onChange: setText, onSelectionChange: handleSelectionChange, onFocus: handleMessageFocus, onBlur: handleMessageBlur, onPressEmoji: handlePressEmoji, onSend, disabled });
+  obj[2] = jsx(importDefault(9922), { inputRef: textInputRef, text, onChange: setText, onSelectionChange: handleSelectionChange, onFocus: handleMessageFocus, onBlur: handleMessageBlur, onPressEmoji: handlePressEmoji, onSend, disabled });
   obj[3] = isInputFocused;
-  return jsx(importDefault(9917), { variant: "primary", size: "md", text: sendLabel, disabled: null, onPress: null, loading: null });
+  return jsx(importDefault(9914), { variant: "primary", size: "md", text: sendLabel, disabled: null, onPress: null, loading: null });
 };

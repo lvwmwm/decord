@@ -1,9 +1,9 @@
-// Module ID: 9271
-// Function ID: 9272
+// Module ID: 9267
+// Function ID: 9268
 // Name: initialize
 // Dependencies: [589, 709, 2]
 
-// Module 9271 (initialize)
+// Module 9267 (initialize)
 import { DeviceSettingsStore } from "initialize";
 
 let c0 = 0;

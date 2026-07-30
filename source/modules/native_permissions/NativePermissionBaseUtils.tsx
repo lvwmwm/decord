@@ -61,7 +61,7 @@ prototype["requestAuthorization"] = function requestAuthorization(arg0, hasPermi
             closure_0 = undefined;
             c1 = undefined;
             obj = undefined;
-            if (typeof outer1_1 === "_") {
+            if (typeof outer1_1 === "ZodObject") {
               const _Error = Error;
               const _HermesInternal = HermesInternal;
               const error = new Error("requestAuthorization: Was provided with not a function for " + outer1_0 + ".");

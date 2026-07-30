@@ -1,10 +1,10 @@
-// Module ID: 13822
-// Function ID: 13823
+// Module ID: 13817
+// Function ID: 13818
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 32, 19, 17, 21, 4189, 712, 5645, 1236, 13812, 9197, 13813, 13823, 4185, 1297, 4600, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4189, 712, 5645, 1236, 13807, 9193, 13808, 13818, 4185, 1297, 4600, 2]
 // Exports: default
 
-// Module 13822 (TwoFASetupSuccess)
+// Module 13817 (TwoFASetupSuccess)
 import closure_3 from "createCacheKey";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -85,7 +85,7 @@ export default function TwoFASetupSuccess() {
                   ({ ticket: c0, credential: c1 } = c0);
                   c5 = 1;
                   c6 = 1;
-                  return { value: "ct", done: null };
+                  return { value: "ct", done: "Array" };
                 }
               } else if (1 === tmp8) {
                 if (arg0 === 1) {
@@ -168,7 +168,7 @@ export default function TwoFASetupSuccess() {
   let obj = { style: tmp.container, children: null };
   obj = { style: tmp.flex };
   const items = [callback2(closure_6, obj), , , , , , , ];
-  obj = { source: require(13823) /* registerAsset */, style: tmp.image };
+  obj = { source: require(13818) /* registerAsset */, style: tmp.image };
   items[1] = callback2(closure_7, obj);
   let obj1 = { style: tmp.success, variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: null };
   let intl = require(1236) /* getSystemLocale */.intl;
@@ -207,5 +207,5 @@ export default function TwoFASetupSuccess() {
   items[7] = callback2(closure_6, { style: tmp.flex });
   obj[1] = items;
   obj7[0] = closure_9(closure_6, obj);
-  return callback2(require(13813) /* TwoFAModalSetupSections */.TwoFASetupModalScreen, obj7);
+  return callback2(require(13808) /* TwoFAModalSetupSections */.TwoFASetupModalScreen, obj7);
 };

@@ -1,10 +1,10 @@
-// Module ID: 6776
-// Function ID: 6777
+// Module ID: 6773
+// Function ID: 6774
 // Name: IdIcon
-// Dependencies: [19, 21, 712, 3892, 6777, 2]
+// Dependencies: [19, 21, 712, 3892, 6774, 2]
 // Exports: IdIcon
 
-// Module 6776 (IdIcon)
+// Module 6773 (IdIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const IdIcon = function IdIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(6777) /* registerAsset */;
+  obj[0] = require(6774) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

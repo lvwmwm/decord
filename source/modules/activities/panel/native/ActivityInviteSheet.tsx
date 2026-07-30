@@ -1,13 +1,13 @@
-// Module ID: 15853
-// Function ID: 15854
+// Module ID: 15847
+// Function ID: 15848
 // Name: Loading
-// Dependencies: [32, 19, 17, 11805, 10087, 676, 6021, 505, 21, 4189, 712, 8358, 5515, 5535, 4157, 8359, 8350, 10483, 589, 10086, 5243, 5242, 1236, 1297, 12230, 9239, 15854, 2]
+// Dependencies: [32, 19, 17, 11801, 10083, 676, 6019, 505, 21, 4189, 712, 8355, 5515, 5535, 4157, 8356, 8347, 10479, 589, 10082, 5243, 5242, 1236, 1297, 12224, 9235, 15848, 2]
 // Exports: default
 
-// Module 15853 (Loading)
+// Module 15847 (Loading)
 import _slicedToArray from "_slicedToArray";
 import loadInviteSuggestions from "loadInviteSuggestions";
-import { View } from "module_10483";
+import { View } from "module_10479";
 import setSendState from "setSendState";
 import _computeRows from "_computeRows";
 import { ActivityActionTypes } from "ME";
@@ -35,7 +35,7 @@ function Loading() {
     let tmp4 = dependencyMap;
     let obj = { row: null };
     obj[0] = num;
-    let arr = items.push(callback3(importDefault(8358), obj, num));
+    let arr = items.push(callback3(importDefault(8355), obj, num));
     num = num + 1;
   } while (num < 10);
   obj = { children: null };
@@ -184,7 +184,7 @@ export default function ActivityInviteSheet(activity) {
   if (null != tmp6) {
     const obj2 = { style: null, Illustration: null, title: null };
     obj2[0] = tmp.emptyState;
-    obj2[1] = tmp11(12230).AppCrash;
+    obj2[1] = tmp11(12224).AppCrash;
     obj2[2] = tmp6;
     let tmp19Result = tmp17(tmp11(1297).EmptyState, obj2);
   } else if (tmp15) {
@@ -194,10 +194,10 @@ export default function ActivityInviteSheet(activity) {
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.searchAndShareContainer;
     const obj5 = { size: "md", isRound: true, onChange: null, placeholder: null };
-    obj5[2] = tmp11(10086).searchInviteSuggestions;
+    obj5[2] = tmp11(10082).searchInviteSuggestions;
     const intl2 = tmp11(1236).intl;
     obj5[3] = intl2.string(tmp11(1236).t.iI1gMg);
-    obj4[1] = tmp17(tmp11(9239).SearchField, obj5);
+    obj4[1] = tmp17(tmp11(9235).SearchField, obj5);
     obj3[0] = tmp17(View, obj4);
     const items4 = [tmp17(View, obj3), ];
     if (tmp16) {
@@ -213,7 +213,7 @@ export default function ActivityInviteSheet(activity) {
       obj7[2] = callback;
       obj7[3] = callback2;
       obj7[4] = callback1;
-      tmp17Result = tmp17(tmp2(15854), obj7);
+      tmp17Result = tmp17(tmp2(15848), obj7);
     }
     const obj8 = { children: null };
     items4[1] = tmp17Result;

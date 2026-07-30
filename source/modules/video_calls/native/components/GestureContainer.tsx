@@ -1,10 +1,10 @@
-// Module ID: 10815
-// Function ID: 10816
+// Module ID: 10811
+// Function ID: 10812
 // Name: GestureContainer
-// Dependencies: [19, 17, 10235, 10508, 21, 4189, 712, 1474, 4050, 5273, 4395, 4190, 1297, 2]
+// Dependencies: [19, 17, 10231, 10504, 21, 4189, 712, 1474, 4050, 5273, 4395, 4190, 1297, 2]
 // Exports: default
 
-// Module 10815 (GestureContainer)
+// Module 10811 (GestureContainer)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { useChannelCallStore } from "VoiceChatDrawerState";

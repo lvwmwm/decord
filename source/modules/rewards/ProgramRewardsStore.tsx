@@ -1,9 +1,9 @@
-// Module ID: 12776
-// Function ID: 12777
+// Module ID: 12770
+// Function ID: 12771
 // Name: updateTtl
-// Dependencies: [32, 1874, 12777, 3433, 3461, 3416, 589, 687, 12778, 12779, 709, 2]
+// Dependencies: [32, 1874, 12771, 3433, 3461, 3416, 589, 687, 12772, 12773, 709, 2]
 
-// Module 12776 (updateTtl)
+// Module 12770 (updateTtl)
 import _slicedToArray from "_slicedToArray";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { PersistedStore } from "initialize";
@@ -328,8 +328,8 @@ prototype["isReady"] = function isReady() {
   if (!isFetchingResult) {
     let hasCachedValueResult = self.hasCachedValue();
     if (!hasCachedValueResult) {
-      hasCachedValueResult = !require(12778) /* canFetchNitroProgramReward */.canFetchAnyProgramReward("ProgramRewardsStore");
-      const obj = require(12778) /* canFetchNitroProgramReward */;
+      hasCachedValueResult = !require(12772) /* canFetchNitroProgramReward */.canFetchAnyProgramReward("ProgramRewardsStore");
+      const obj = require(12772) /* canFetchNitroProgramReward */;
     }
     if (!hasCachedValueResult) {
       hasCachedValueResult = self.isError();
@@ -339,7 +339,7 @@ prototype["isReady"] = function isReady() {
   return tmp2;
 };
 prototype["shouldFetch"] = function shouldFetch() {
-  let obj = require(12778) /* canFetchNitroProgramReward */;
+  let obj = require(12772) /* canFetchNitroProgramReward */;
   if (obj.canFetchAnyProgramReward("ProgramRewardsStore.shouldFetch")) {
     if (networkTtlCache.shouldFetch()) {
       obj = { shouldFetch: true };

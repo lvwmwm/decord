@@ -1,10 +1,10 @@
-// Module ID: 14822
-// Function ID: 14823
+// Module ID: 14815
+// Function ID: 14816
 // Name: IntroScreen
-// Dependencies: [32, 19, 17, 1874, 10159, 21, 4189, 712, 589, 4028, 1480, 6785, 4185, 1236, 4600, 10156, 14823, 10179, 5143, 10153, 4395, 10157, 5570, 2]
+// Dependencies: [32, 19, 17, 1874, 10155, 21, 4189, 712, 589, 4028, 1480, 6782, 4185, 1236, 4600, 10152, 14816, 10175, 5143, 10149, 4395, 10153, 5570, 2]
 // Exports: default
 
-// Module 14822 (IntroScreen)
+// Module 14815 (IntroScreen)
 import _slicedToArray from "_slicedToArray";
 import useSafetyToolsButtonTooltipForChannel from "useSafetyToolsButtonTooltipForChannel";
 import { useState } from "useSafetyToolsButtonTooltipForChannel";
@@ -38,7 +38,7 @@ function IntroScreen(arg0) {
   let obj2 = require(1480) /* useNavigation */;
   _slicedToArray = obj2.useNavigation();
   obj = { style: tmp.container, children: null };
-  const items1 = [callback2(require(6785) /* AccountAgeTier10LargeBadge */.TrafficConeSpotIllustration, {}), , ];
+  const items1 = [callback2(require(6782) /* AccountAgeTier10LargeBadge */.TrafficConeSpotIllustration, {}), , ];
   obj = { style: tmp.warningText, children: null };
   obj1 = { variant: "heading-xl/semibold", style: tmp.takeoverHeader, accessibilityRole: "header", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -89,7 +89,7 @@ function TakeActionScreen(arg0) {
   obj1[2] = intl2.string(require(1236) /* getSystemLocale */.t.S0XtKF);
   items[1] = callback2(require(4185) /* Text */.Text, obj1);
   obj[1] = items;
-  const items1 = [callback3(closure_7, obj), callback2(importDefault(14823), { senderId, channelId, isReported, setReported, trackAnalyticsEvent })];
+  const items1 = [callback3(closure_7, obj), callback2(importDefault(14816), { senderId, channelId, isReported, setReported, trackAnalyticsEvent })];
   obj[1] = items1;
   return callback3(closure_7, obj);
 }
@@ -100,7 +100,7 @@ function SafetyTipsScreen() {
   obj = { showHeader: true, description: null, safetyTips: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.DJMZX6);
-  const tmp2 = importDefault(10179);
+  const tmp2 = importDefault(10175);
   obj[2] = callback().map((children) => callback2(callback(table[12]).Text, { variant: "text-sm/medium", children }, arg1));
   obj[1] = callback2(tmp2, obj);
   obj[1] = callback2(closure_7, obj);
@@ -110,7 +110,7 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
   trackAnalyticsEvent = trackAnalyticsEvent.trackAnalyticsEvent;
   const tmp = createCacheKey();
   let obj = { style: tmp.container, children: null };
-  const items = [callback2(trackAnalyticsEvent(6785).SafetyChatSpotIllustration, {}), , ];
+  const items = [callback2(trackAnalyticsEvent(6782).SafetyChatSpotIllustration, {}), , ];
   obj = { style: tmp.warningText, children: null };
   obj = { variant: "heading-xl/semibold", style: tmp.takeoverHeader, accessibilityRole: "header", children: null };
   const intl = trackAnalyticsEvent(1236).intl;

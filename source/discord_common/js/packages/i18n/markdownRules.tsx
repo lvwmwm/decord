@@ -1,9 +1,9 @@
-// Module ID: 16095
-// Function ID: 16096
+// Module ID: 16089
+// Function ID: 16090
 // Name: link
 // Dependencies: [3888, 2]
 
-// Module 16095 (link)
+// Module 16089 (link)
 import t from "t";
 import t from "t";
 

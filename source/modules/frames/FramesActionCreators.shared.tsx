@@ -1,7 +1,7 @@
 // Module ID: 5695
 // Function ID: 5696
 // Name: _launchFrame
-// Dependencies: [5, 5686, 709, 5696, 12612, 10617, 10608, 10638, 2]
+// Dependencies: [5, 5686, 709, 5696, 12606, 10613, 10604, 10634, 2]
 // Exports: launchFrame, refreshProxyTicket, stopFrame, updateFrameLayoutMode, updateFramePanelMode
 
 // Module 5695 (_launchFrame)
@@ -55,7 +55,7 @@ function _launchFrame() {
               let message;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -81,8 +81,8 @@ function _launchFrame() {
           } else if (2 === tmp7) {
             message = 0;
             c5 = leaveCurrentFrame;
-            leaveCurrentFrame = callback2(10608)();
-            let obj4 = callback(10638);
+            leaveCurrentFrame = callback2(10604)();
+            let obj4 = callback(10634);
             c5 = 3;
             c6 = 1;
             obj4 = { value: null, done: false };
@@ -118,10 +118,10 @@ function _launchFrame() {
             return obj;
           } else {
             dependencyMap = arg1;
-            const result = callback(12612).leaveCurrentEmbeddedActivity();
-            const obj11 = callback(12612);
-            callback(10617).leaveCurrentFrame();
-            const obj12 = callback(10617);
+            const result = callback(12606).leaveCurrentEmbeddedActivity();
+            const obj11 = callback(12606);
+            callback(10613).leaveCurrentFrame();
+            const obj12 = callback(10613);
             const obj7 = { type: "FRAME_LAUNCH", applicationId: null, proxyTicket: null, channelId: null };
             obj7[1] = callback;
             obj7[2] = dependencyMap;
@@ -199,7 +199,7 @@ function _refreshProxyTicket() {
               message = undefined;
               message = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {

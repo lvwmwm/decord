@@ -1,9 +1,9 @@
-// Module ID: 16726
-// Function ID: 16727
+// Module ID: 16720
+// Function ID: 16721
 // Name: isLikelyControl
 // Dependencies: [4103, 1212, 4006, 1208, 5134, 2]
 
-// Module 16726 (isLikelyControl)
+// Module 16720 (isLikelyControl)
 import getHash from "getHash";
 import initialize from "initialize";
 import handleConnectionOpen from "handleConnectionOpen";

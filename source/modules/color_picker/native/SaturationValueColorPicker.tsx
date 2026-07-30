@@ -1,10 +1,10 @@
-// Module ID: 13700
-// Function ID: 13701
+// Module ID: 13695
+// Function ID: 13696
 // Name: ColorBox
-// Dependencies: [32, 19, 17, 21, 4189, 712, 4050, 13698, 4611, 5273, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 4050, 13693, 4611, 5273, 2]
 // Exports: default
 
-// Module 13700 (ColorBox)
+// Module 13695 (ColorBox)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -31,7 +31,7 @@ function ColorBox(hue) {
       return obj.hslToRgbWorklet(obj);
     }
   }
-  obj = { hslToRgbWorklet: hue(13698).hslToRgbWorklet, hue };
+  obj = { hslToRgbWorklet: hue(13693).hslToRgbWorklet, hue };
   S.__closure = obj;
   S.__workletHash = 8814597686728;
   S.__initData = closure_9;

@@ -1,8 +1,8 @@
-// Module ID: 16039
-// Function ID: 16040
-// Dependencies: [19, 1372, 10036, 676, 21, 4189, 8824, 10037, 8118, 589, 38, 11433, 1231, 10924, 8017, 4050, 11255, 11434, 1236, 2]
+// Module ID: 16033
+// Function ID: 16034
+// Dependencies: [19, 1372, 10032, 676, 21, 4189, 8820, 10033, 8115, 589, 38, 11429, 1231, 10920, 8014, 4050, 11251, 11430, 1236, 2]
 
-// Module 16039
+// Module 16033
 import importAllResult from "set";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import VoicePanelControlsModes from "VoicePanelControlsModes";
@@ -34,30 +34,30 @@ const memoResult = importAllResult.memo(function VoicePanelControlsAppLauncher(g
   let rect;
   let derivedValue;
   let derivedValue1;
-  let obj = gestureSpecs(8824);
+  let obj = gestureSpecs(8820);
   const gradientTop = obj.useGradientTop();
-  const context = importAllResult.useContext(setControlsMode(10037));
+  const context = importAllResult.useContext(setControlsMode(10033));
   setControlsMode = context.setControlsMode;
   ({ channelId: c2, safeArea, windowDimensions } = context);
-  const tmp4 = setControlsMode(8118)(windowDimensions);
+  const tmp4 = setControlsMode(8115)(windowDimensions);
   importAllResult = tmp4;
-  rect = setControlsMode(8118)(safeArea);
+  rect = setControlsMode(8115)(safeArea);
   let obj1 = gestureSpecs(589);
   const items = [rect];
   const stateFromStores = obj1.useStateFromStores(items, () => rect.getChannel(c2));
   setControlsMode(38)(null != stateFromStores, "channel should not be null");
   const tmp = callback3();
   const items1 = [setControlsMode];
-  const controlsDrawerOpenWidth = gestureSpecs(11433).getControlsDrawerOpenWidth(tmp4.width, rect.left, rect.right);
+  const controlsDrawerOpenWidth = gestureSpecs(11429).getControlsDrawerOpenWidth(tmp4.width, rect.left, rect.right);
   const callback = importAllResult.useCallback(() => {
     const ComponentDispatch = gestureSpecs(_undefined[12]).ComponentDispatch;
     ComponentDispatch.dispatch(derivedValue1.SELECT_ACTIVITY);
     setControlsMode({ mode: derivedValue.HIDDEN });
   }, items1);
-  const obj3 = gestureSpecs(11433);
-  const appLauncherChatInputRefDummy = gestureSpecs(10924).useAppLauncherChatInputRefDummy({ noop: true });
-  const obj4 = gestureSpecs(10924);
-  const ref = importAllResult.useRef(gestureSpecs(10924).AppLauncherKeyboardCloseReason.DISMISSED);
+  const obj3 = gestureSpecs(11429);
+  const appLauncherChatInputRefDummy = gestureSpecs(10920).useAppLauncherChatInputRefDummy({ noop: true });
+  const obj4 = gestureSpecs(10920);
+  const ref = importAllResult.useRef(gestureSpecs(10920).AppLauncherKeyboardCloseReason.DISMISSED);
   const ref1 = importAllResult.useRef(undefined);
   const sharedValue = gestureSpecs(4050).useSharedValue(0);
   const obj5 = gestureSpecs(4050);
@@ -101,12 +101,12 @@ const memoResult = importAllResult.memo(function VoicePanelControlsAppLauncher(g
   const animatedStyle = gestureSpecs(4050).useAnimatedStyle(L);
   obj = { style: items2, children: null };
   items2 = [tmp.container, gradientTop, animatedStyle];
-  const items3 = [callback(setControlsMode(11255), { bottomSheetIndex: sharedValue1, bottomSheetPosition: sharedValue, bottomSheetExpandReasonRef: ref1, context: { type: "channel", channel: stateFromStores }, chatInputRef: appLauncherChatInputRefDummy, entrypoint: gestureSpecs(8017).AppLauncherEntrypoint.VOICE, keyboardCloseReasonRef: ref, onActivityItemSelected: callback, width: controlsDrawerOpenWidth }), ];
+  const items3 = [callback(setControlsMode(11251), { bottomSheetIndex: sharedValue1, bottomSheetPosition: sharedValue, bottomSheetExpandReasonRef: ref1, context: { type: "channel", channel: stateFromStores }, chatInputRef: appLauncherChatInputRefDummy, entrypoint: gestureSpecs(8014).AppLauncherEntrypoint.VOICE, keyboardCloseReasonRef: ref, onActivityItemSelected: callback, width: controlsDrawerOpenWidth }), ];
   obj1 = { title: null, disablePill: true };
   const obj9 = gestureSpecs(4050);
   const intl = gestureSpecs(1236).intl;
   obj1[0] = intl.string(gestureSpecs(1236).t.shUONg);
-  items3[1] = callback(setControlsMode(11434), obj1);
+  items3[1] = callback(setControlsMode(11430), obj1);
   obj[1] = items3;
   obj[0] = callback2(setControlsMode(4050).View, obj);
   return callback(closure_9, obj);

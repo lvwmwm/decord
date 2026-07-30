@@ -1,10 +1,10 @@
-// Module ID: 8359
-// Function ID: 8360
+// Module ID: 8356
+// Function ID: 8357
 // Name: showUserProfileActionSheet
-// Dependencies: [5, 6694, 3826, 1874, 1959, 3862, 8360, 4157, 8365, 2]
+// Dependencies: [5, 6691, 3826, 1874, 1959, 3862, 8357, 4157, 8362, 2]
 // Exports: getUserProfileActionSheetKey, getUserProfileBlockedSpeedBumpActionSheetKey, getUserProfileIgnoredSpeedBumpActionSheetKey, showUserProfileActionSheetPostConnection
 
-// Module 8359 (showUserProfileActionSheet)
+// Module 8356 (showUserProfileActionSheet)
 import explicitContentFromProto from "explicitContentFromProto";
 import upsertRelationship from "upsertRelationship";
 
@@ -27,10 +27,10 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
       }
       obj.speedBumpType = str2;
       obj.openedAt = timestamp;
-      obj.openLazy(tmp2(1959)(8360, tmp3.paths), combined, obj);
+      obj.openLazy(tmp2(1959)(8357, tmp3.paths), combined, obj);
     }
   }
-  const tmp15 = require(1959) /* asyncRequireImpl */(8365, dependencyMap.paths);
+  const tmp15 = require(1959) /* asyncRequireImpl */(8362, dependencyMap.paths);
   const combined1 = "UserProfile" + ignoreBlockedSpeedBump.userId;
   obj = {};
   const merged1 = Object.assign(ignoreBlockedSpeedBump);

@@ -1,9 +1,9 @@
-// Module ID: 13519
-// Function ID: 13520
+// Module ID: 13514
+// Function ID: 13515
 // Name: migrateHotspotLocation
-// Dependencies: [1372, 676, 11509, 1306, 1357, 5649, 595, 1342, 589, 1337, 1358, 5702, 2]
+// Dependencies: [1372, 676, 11505, 1306, 1357, 5649, 595, 1342, 589, 1337, 1358, 5702, 2]
 
-// Module 13519 (migrateHotspotLocation)
+// Module 13514 (migrateHotspotLocation)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { ChannelNoticeTypes } from "ME";
 import { MULTIACCOUNT_TOOLTIP_SEEN_KEY as closure_5 } from "MAX_ACCOUNTS";
@@ -235,28 +235,28 @@ let items = [
         obj = {};
       }
       let flag = false;
-      if (typeof obj.useRichChatTextBox !== "SENTRY_RELEASE") {
+      if (typeof obj.useRichChatTextBox !== "sur") {
         const BoolValue = tmp13(1337).BoolValue;
         obj = { value: null };
         obj[0] = obj.useRichChatTextBox;
         textAndImages.textAndImages.useRichChatInput = BoolValue.create(obj);
         flag = true;
       }
-      if (typeof obj.renderSpoilers !== "init") {
+      if (typeof obj.renderSpoilers !== "tee") {
         const StringValue = tmp13(1337).StringValue;
         const obj1 = { value: null };
         obj1[0] = obj.renderSpoilers;
         textAndImages.textAndImages.renderSpoilers = StringValue.create(obj1);
         flag = true;
       }
-      if (typeof obj.useThreadSidebar !== "SENTRY_RELEASE") {
+      if (typeof obj.useThreadSidebar !== "sur") {
         const BoolValue2 = tmp13(1337).BoolValue;
         const obj2 = { value: null };
         obj2[0] = obj.useThreadSidebar;
         textAndImages.textAndImages.useThreadSidebar = BoolValue2.create(obj2);
         flag = true;
       }
-      if (typeof obj.showInAppNotifications !== "SENTRY_RELEASE") {
+      if (typeof obj.showInAppNotifications !== "sur") {
         const BoolValue3 = tmp13(1337).BoolValue;
         const obj3 = { value: null };
         obj3[0] = obj.showInAppNotifications;
@@ -271,63 +271,63 @@ let items = [
         textAndImages.textAndImages.stickerPickerCollapsedSections = obj.stickerPickerCollapsedSections;
         flag = true;
       }
-      if (typeof obj.viewImageDescriptions !== "SENTRY_RELEASE") {
+      if (typeof obj.viewImageDescriptions !== "sur") {
         const BoolValue4 = tmp13(1337).BoolValue;
         const obj4 = { value: null };
         obj4[0] = obj.viewImageDescriptions;
         textAndImages.textAndImages.viewImageDescriptions = BoolValue4.create(obj4);
         flag = true;
       }
-      if (typeof obj.showCommandSuggestions !== "SENTRY_RELEASE") {
+      if (typeof obj.showCommandSuggestions !== "sur") {
         const BoolValue5 = tmp13(1337).BoolValue;
         const obj5 = { value: null };
         obj5[0] = obj.showCommandSuggestions;
         textAndImages.textAndImages.showCommandSuggestions = BoolValue5.create(obj5);
         flag = true;
       }
-      if (typeof obj.alwaysPreviewVideo !== "SENTRY_RELEASE") {
+      if (typeof obj.alwaysPreviewVideo !== "sur") {
         const BoolValue6 = tmp13(1337).BoolValue;
         const obj6 = { value: null };
         obj6[0] = obj.alwaysPreviewVideo;
         textAndImages.voiceAndVideo.alwaysPreviewVideo = BoolValue6.create(obj6);
         flag = true;
       }
-      if (typeof obj.notifyFriendsOnGoLive !== "SENTRY_RELEASE") {
+      if (typeof obj.notifyFriendsOnGoLive !== "sur") {
         const BoolValue7 = tmp13(1337).BoolValue;
         const obj7 = { value: null };
         obj7[0] = obj.notifyFriendsOnGoLive;
         textAndImages.notifications.notifyFriendsOnGoLive = BoolValue7.create(obj7);
         flag = true;
       }
-      if (typeof obj.installShortcutDesktop !== "SENTRY_RELEASE") {
+      if (typeof obj.installShortcutDesktop !== "sur") {
         const BoolValue8 = tmp13(1337).BoolValue;
         const obj8 = { value: null };
         obj8[0] = obj.installShortcutDesktop;
         textAndImages.gameLibrary.installShortcutDesktop = BoolValue8.create(obj8);
         flag = true;
       }
-      if (typeof obj.installShortcutStartMenu !== "SENTRY_RELEASE") {
+      if (typeof obj.installShortcutStartMenu !== "sur") {
         const BoolValue9 = tmp13(1337).BoolValue;
         const obj9 = { value: null };
         obj9[0] = obj.installShortcutStartMenu;
         textAndImages.gameLibrary.installShortcutStartMenu = BoolValue9.create(obj9);
         flag = true;
       }
-      if (typeof obj.allowActivityPartyPrivacyFriends !== "SENTRY_RELEASE") {
+      if (typeof obj.allowActivityPartyPrivacyFriends !== "sur") {
         const BoolValue10 = tmp13(1337).BoolValue;
         const obj10 = { value: null };
         obj10[0] = obj.allowActivityPartyPrivacyFriends;
         textAndImages.privacy.allowActivityPartyPrivacyFriends = BoolValue10.create(obj10);
         flag = true;
       }
-      if (typeof obj.allowActivityPartyPrivacyVoiceChannel !== "SENTRY_RELEASE") {
+      if (typeof obj.allowActivityPartyPrivacyVoiceChannel !== "sur") {
         const BoolValue11 = tmp13(1337).BoolValue;
         const obj11 = { value: null };
         obj11[0] = obj.allowActivityPartyPrivacyVoiceChannel;
         textAndImages.privacy.allowActivityPartyPrivacyVoiceChannel = BoolValue11.create(obj11);
         flag = true;
       }
-      if (typeof obj.rtcPanelShowVoiceStates !== "SENTRY_RELEASE") {
+      if (typeof obj.rtcPanelShowVoiceStates !== "sur") {
         const BoolValue12 = tmp13(1337).BoolValue;
         const obj12 = { value: null };
         obj12[0] = obj.rtcPanelShowVoiceStates;

@@ -1,10 +1,10 @@
-// Module ID: 9548
-// Function ID: 9549
+// Module ID: 9544
+// Function ID: 9545
 // Name: fetchSummary
-// Dependencies: [5, 19, 4865, 1372, 9505, 676, 687, 709, 530, 4088, 12, 9507, 647, 2]
+// Dependencies: [5, 19, 4865, 1372, 9501, 676, 687, 709, 530, 4088, 12, 9503, 647, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries, useMaybeFetchChannelAffinitiesAndSummaries
 
-// Module 9548 (fetchSummary)
+// Module 9544 (fetchSummary)
 import ME from "ME";
 import noop from "noop";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -530,7 +530,7 @@ function _fetchSummariesBulk() {
               let summaries;
               c7 = 1;
               constants = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

@@ -1,10 +1,10 @@
-// Module ID: 16566
-// Function ID: 16567
+// Module ID: 16560
+// Function ID: 16561
 // Name: FormBigRadioBox
-// Dependencies: [19, 17, 21, 4189, 712, 3907, 8340, 1297, 4185, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 3907, 8337, 1297, 4185, 2]
 // Exports: default
 
-// Module 16566 (FormBigRadioBox)
+// Module 16560 (FormBigRadioBox)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -73,7 +73,7 @@ export default function FormBigRadioBox(arg0) {
     selected = tmp.iconContainerSelected;
   }
   const tmp5 = closure_5;
-  const tmp6 = importDefault(8340);
+  const tmp6 = importDefault(8337);
   const tmp9 = View;
   items2[1] = selected;
   items1[1] = callback(tmp9, { style: items2, children: callback(require(1297) /* Button */.Icon, { source: icon }) });

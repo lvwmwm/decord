@@ -1,10 +1,10 @@
-// Module ID: 11283
-// Function ID: 11284
+// Module ID: 11279
+// Function ID: 11280
 // Name: AppInThisServer
-// Dependencies: [19, 17, 21, 4189, 712, 11261, 1351, 4185, 1236, 4717, 1348, 11225, 8236, 8017, 11230, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 11257, 1351, 4185, 1236, 4717, 1348, 11221, 8233, 8014, 11226, 2]
 // Exports: default
 
-// Module 11283 (AppInThisServer)
+// Module 11279 (AppInThisServer)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ function AppInThisServer(onAppSelected) {
   const tmp3 = application(1348)("AppLauncherInThisServer-native");
   const tmp4 = createCacheKey();
   application = onAppSelected.appItem.application;
-  let obj = onAppSelected(11225);
+  let obj = onAppSelected(11221);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   obj = {
     accessible: true,
@@ -54,11 +54,11 @@ function AppInThisServer(onAppSelected) {
     obj = { iconSource: null, wrapperStyle: null, iconSize: 36 };
     obj[0] = appLauncherIconSource;
     obj[1] = tmp4.iconContainer;
-    tmp8 = callback(application(11230), obj);
+    tmp8 = callback(application(11226), obj);
   }
   const items1 = [tmp8, callback(onAppSelected(4185).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name })];
   obj[5] = items1;
-  return closure_6(onAppSelected(8236).PressableScale, obj, application.id);
+  return closure_6(onAppSelected(8233).PressableScale, obj, application.id);
 }
 ({ View: c3, ScrollView: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);

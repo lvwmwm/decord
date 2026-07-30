@@ -1,9 +1,9 @@
-// Module ID: 5921
-// Function ID: 5922
+// Module ID: 5919
+// Function ID: 5920
 // Name: updateGuildUnreadSentinel
-// Dependencies: [5922, 5925, 5096, 3819, 1376, 1218, 1372, 1862, 1220, 3817, 4201, 1931, 4385, 1874, 676, 1379, 4386, 5789, 11, 1865, 12, 3824, 2]
+// Dependencies: [5920, 5923, 5096, 3819, 1376, 1218, 1372, 1862, 1220, 3817, 4201, 1931, 4385, 1874, 676, 1379, 4386, 5789, 11, 1865, 12, 3824, 2]
 
-// Module 5921 (updateGuildUnreadSentinel)
+// Module 5919 (updateGuildUnreadSentinel)
 import findOrCreateMessageRecord from "findOrCreateMessageRecord";
 import _validate from "_validate";
 import rebuild from "rebuild";

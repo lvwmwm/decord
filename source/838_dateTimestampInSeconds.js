@@ -26,13 +26,13 @@ arg5.browserPerformanceTimeOrigin = function browserPerformanceTimeOrigin() {
       tmp7Result = tmp7(831);
       const safeDateNowResult = tmp7Result.safeDateNow();
       const timeOrigin = _performance.timeOrigin;
-      if (typeof timeOrigin === "os") {
+      if (typeof timeOrigin === "reType") {
         const timing = _performance.timing;
         let navigationStart;
         if (timing != null) {
           navigationStart = timing.navigationStart;
         }
-        if (typeof navigationStart === "os") {
+        if (typeof navigationStart === "reType") {
           navigationStart = safeDateNowResult - result;
         } else {
           const _Math2 = Math;

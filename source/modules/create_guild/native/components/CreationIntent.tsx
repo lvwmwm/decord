@@ -1,10 +1,10 @@
-// Module ID: 11803
-// Function ID: 11804
+// Module ID: 11799
+// Function ID: 11800
 // Name: CreationIntent
-// Dependencies: [19, 17, 9223, 676, 21, 4189, 5140, 712, 1480, 4586, 4596, 11774, 698, 5177, 4185, 1236, 5554, 10076, 6785, 2]
+// Dependencies: [19, 17, 9219, 676, 21, 4189, 5140, 712, 1480, 4586, 4596, 11770, 698, 5177, 4185, 1236, 5554, 10072, 6782, 2]
 // Exports: default
 
-// Module 11803 (CreationIntent)
+// Module 11799 (CreationIntent)
 import set from "set";
 import get_ActivityIndicator from "ListSelectionItem";
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
@@ -130,9 +130,9 @@ export default function CreationIntent(arg0) {
   const items3 = [callback2(ref, obj1), , ];
   const obj4 = { style: tmp.sections, children: null };
   const obj5 = { hasIcons: true, children: null };
-  const tmp13 = trigger(10076);
+  const tmp13 = trigger(10072);
   const obj6 = { Icon: null, message: null, onPress: null };
-  const tmp14 = require(6785) /* AccountAgeTier10LargeBadge */;
+  const tmp14 = require(6782) /* AccountAgeTier10LargeBadge */;
   if (closure_14) {
     obj6[0] = tmp14.ChairIllocon;
     const intl5 = tmp2(1236).intl;
@@ -142,8 +142,8 @@ export default function CreationIntent(arg0) {
     };
     const items4 = [tmp8(tmp13, obj6), ];
     const obj7 = { Icon: null, message: null, onPress: null };
-    let tmp12Result = tmp12(10076);
-    obj7[0] = tmp2(6785).WorldIllocon;
+    let tmp12Result = tmp12(10072);
+    obj7[0] = tmp2(6782).WorldIllocon;
     const intl6 = tmp2(1236).intl;
     obj7[1] = intl6.string(tmp2(1236).t.h9Q1lG);
     obj7[2] = function onPress() {
@@ -161,8 +161,8 @@ export default function CreationIntent(arg0) {
     };
     const items5 = [tmp8(tmp13, obj6), ];
     const obj8 = { Icon: null, message: null, onPress: null };
-    tmp12Result = tmp12(10076);
-    obj8[0] = tmp2(6785).ChairIllocon;
+    tmp12Result = tmp12(10072);
+    obj8[0] = tmp2(6782).ChairIllocon;
     const intl4 = tmp2(1236).intl;
     obj8[1] = intl4.string(tmp2(1236).t.uE7zcu);
     obj8[2] = function onPress() {

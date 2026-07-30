@@ -1,10 +1,10 @@
-// Module ID: 9030
-// Function ID: 9031
+// Module ID: 9026
+// Function ID: 9027
 // Name: Header
-// Dependencies: [19, 17, 676, 21, 4189, 712, 1416, 1297, 4185, 8390, 1384, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 1416, 1297, 4185, 8387, 1384, 1236, 2]
 // Exports: default
 
-// Module 9030 (Header)
+// Module 9026 (Header)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { UserFlags } from "ME";
@@ -62,7 +62,7 @@ export default function Header(accountScopes) {
     const obj10 = { style: null, verified: null };
     obj10[0] = tmp.botTag;
     let hasFlagResult = null != bot.public_flags;
-    tmp2Result = tmp2(8390);
+    tmp2Result = tmp2(8387);
     if (hasFlagResult) {
       hasFlagResult = tmp9(1384).hasFlag(bot.public_flags, UserFlags.VERIFIED_BOT);
       const tmp9Result = tmp9(1384);

@@ -1,10 +1,10 @@
-// Module ID: 15313
-// Function ID: 15314
+// Module ID: 15307
+// Function ID: 15308
 // Name: ContactSuggestionActions
-// Dependencies: [19, 17, 21, 4050, 4189, 712, 15041, 4190, 4599, 1297, 15314, 4600, 1236, 2]
+// Dependencies: [19, 17, 21, 4050, 4189, 712, 15035, 4190, 4599, 1297, 15308, 4600, 1236, 2]
 // Exports: ContactSuggestionActions
 
-// Module 15313 (ContactSuggestionActions)
+// Module 15307 (ContactSuggestionActions)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

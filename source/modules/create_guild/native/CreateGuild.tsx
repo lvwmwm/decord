@@ -1,10 +1,10 @@
-// Module ID: 10088
-// Function ID: 10089
+// Module ID: 10084
+// Function ID: 10085
 // Name: CreateGuild
-// Dependencies: [19, 17, 1874, 676, 21, 4189, 712, 4586, 4596, 4598, 4185, 1236, 10089, 6727, 5555, 4600, 8999, 2]
+// Dependencies: [19, 17, 1874, 676, 21, 4189, 712, 4586, 4596, 4598, 4185, 1236, 10085, 6724, 5555, 4600, 8995, 2]
 // Exports: default
 
-// Module 10088 (CreateGuild)
+// Module 10084 (CreateGuild)
 import noop from "noop";
 import { ScrollView } from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -82,7 +82,7 @@ export default function CreateGuild(arg0) {
   }
   obj1[3] = customDescription;
   items1[1] = closure_7(isScreenReaderEnabled(4185).Text, obj1);
-  items1[2] = closure_7(ref(10089), { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon });
+  items1[2] = closure_7(ref(10085), { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon });
   const obj3 = { isClearable: true, label: null, errorMessage: null, value: null, onChange: null, autoFocus: null, autoCorrect: false, returnKeyType: "done" };
   const intl3 = tmp4(1236).intl;
   obj3[1] = intl3.string(isScreenReaderEnabled(1236).t.dBih7e);
@@ -98,7 +98,7 @@ export default function CreateGuild(arg0) {
   }
   let tmp9Result = !!isStaffResult;
   obj3[5] = autoFocus;
-  items1[3] = closure_7(isScreenReaderEnabled(6727).TextInput, obj3);
+  items1[3] = closure_7(isScreenReaderEnabled(6724).TextInput, obj3);
   if (tmp9Result) {
     const obj4 = { onValueChange: null, value: null, start: true, end: true, label: "Staff Only", subLabel: null };
     obj4[0] = onStaffOnlyChange;
@@ -145,8 +145,8 @@ export default function CreateGuild(arg0) {
         }
         const obj8 = { children: null };
         obj8[0] = message2;
-        tmp9Result = tmp9(ref(8999), obj8);
-        const tmp12Result = ref(8999);
+        tmp9Result = tmp9(ref(8995), obj8);
+        const tmp12Result = ref(8995);
       }
     }
   }

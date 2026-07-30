@@ -1,10 +1,10 @@
-// Module ID: 11783
-// Function ID: 11784
+// Module ID: 11779
+// Function ID: 11780
 // Name: ContactSyncLandingOnboardingRedesign
-// Dependencies: [5, 19, 17, 4402, 21, 4189, 712, 5140, 4732, 11784, 4185, 1236, 4600, 11785, 11777, 2]
+// Dependencies: [5, 19, 17, 4402, 21, 4189, 712, 5140, 4732, 11780, 4185, 1236, 4600, 11781, 11773, 2]
 // Exports: default
 
-// Module 11783 (ContactSyncLandingOnboardingRedesign)
+// Module 11779 (ContactSyncLandingOnboardingRedesign)
 import closure_3 from "createCacheKey";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -106,7 +106,7 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
       }
     }
   }), items);
-  obj[2] = importDefault(11784);
+  obj[2] = importDefault(11780);
   const items1 = [callback2(closure_6, obj), , , , ];
   let obj1 = { style: tmp.title, variant: "heading-xl/bold", children: null };
   const intl = onNext(1236).intl;
@@ -124,9 +124,9 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
   obj4[4] = loading;
   obj3[1] = callback2(onNext(4600).Button, obj4);
   items1[3] = callback2(closure_5, obj3);
-  items1[4] = callback2(importDefault(11785), { error });
+  items1[4] = callback2(importDefault(11781), { error });
   obj[1] = items1;
-  const items2 = [callback3(closure_5, obj), callback2(closure_5, { style: tmp.trailing, children: callback2(importDefault(11777), { discoverabilityEnabled, onValueChanged: setDiscoverabilityEnabled }) })];
+  const items2 = [callback3(closure_5, obj), callback2(closure_5, { style: tmp.trailing, children: callback2(importDefault(11773), { discoverabilityEnabled, onValueChanged: setDiscoverabilityEnabled }) })];
   obj[0] = items2;
   return callback3(closure_10, obj);
 };

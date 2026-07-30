@@ -1,23 +1,23 @@
 // Module ID: 4096
 // Function ID: 4097
 // Name: useGuildAppliedBoostCount
-// Dependencies: [19, 1862, 4097, 4076, 4100, 589, 2]
+// Dependencies: [19, 4097, 1862, 4076, 4100, 589, 2]
 // Exports: default, getGuildPowerupsBoostCount
 
 // Module 4096 (useGuildAppliedBoostCount)
 import noop from "noop";
-import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleGameServerInstanceCreated from "handleGameServerInstanceCreated";
+import createGuildRecordFromRust from "createGuildRecordFromRust";
 import calculateAppliedBoosts from "calculateAppliedBoosts";
 
 const require = arg1;
-const result = require("handleGameServerInstanceCreated").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsBoostCount.tsx");
+const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsBoostCount.tsx");
 
 export default function useGuildAppliedBoostCount(guildId) {
   const _require = guildId;
-  const items = [stateFromStores];
+  const items = [stateFromStores1];
   num = _require(num[5]).useStateFromStores(items, () => {
-    const guild = stateFromStores.getGuild(closure_0);
+    const guild = stateFromStores1.getGuild(closure_0);
     let prop;
     if (guild != null) {
       prop = guild.premiumSubscriberCount;
@@ -31,7 +31,7 @@ export default function useGuildAppliedBoostCount(guildId) {
   const gameServerEnabled = tmpResult.useGameServerEnabled(guildId, "GuildPowerupsBoostCount");
   tmpResult = tmp(tmp2[5]);
   const items1 = [calculateAppliedBoosts];
-  stateFromStores = tmpResult.useStateFromStores(items1, () => {
+  const stateFromStores = tmpResult.useStateFromStores(items1, () => {
     const stateForGuild = outer1_5.getStateForGuild(closure_0);
     let appliedBoosts;
     if (stateForGuild != null) {
@@ -40,9 +40,9 @@ export default function useGuildAppliedBoostCount(guildId) {
     return appliedBoosts;
   });
   let obj = _require(num[5]);
-  const items2 = [stateFromStores1];
+  const items2 = [stateFromStores];
   stateFromStores1 = _require(num[5]).useStateFromStores(items2, () => {
-    const stateForGuild = stateFromStores1.getStateForGuild(closure_0);
+    const stateForGuild = stateFromStores.getStateForGuild(closure_0);
     let appliedBoosts;
     if (stateForGuild != null) {
       appliedBoosts = stateForGuild.appliedBoosts;

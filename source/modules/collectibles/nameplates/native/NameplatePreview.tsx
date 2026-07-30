@@ -1,10 +1,10 @@
-// Module ID: 9823
-// Function ID: 9824
+// Module ID: 9820
+// Function ID: 9821
 // Name: NameplatePreview
-// Dependencies: [19, 17, 4181, 1942, 21, 4189, 712, 1898, 9086, 7937, 589, 4028, 4419, 1297, 8070, 8380, 8381, 4185, 2]
+// Dependencies: [19, 17, 4181, 1942, 21, 4189, 712, 1898, 9082, 7934, 589, 4028, 4419, 1297, 8067, 8377, 8378, 4185, 2]
 // Exports: NameplatePreview
 
-// Module 9823 (NameplatePreview)
+// Module 9820 (NameplatePreview)
 import noop from "noop";
 import { View } from "Text";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -62,9 +62,9 @@ export const NameplatePreview = function NameplatePreview(aria_hidden) {
     let obj = user(1898);
     nameplateData = obj.getNameplateData(nameplate);
   }
-  let obj1 = user(9086);
+  let obj1 = user(9082);
   const avatarDecoration = obj1.useAvatarDecoration(user, guildId);
-  const pendingAvatarDecoration = guildId(7937)({ guildId }).pendingAvatarDecoration;
+  const pendingAvatarDecoration = guildId(7934)({ guildId }).pendingAvatarDecoration;
   let obj2 = user(589);
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   stateFromStores = obj2.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
@@ -117,7 +117,7 @@ export const NameplatePreview = function NameplatePreview(aria_hidden) {
     return outer1_7(user(_undefined[13]).Avatar, obj);
   }, items2);
   obj1 = { nameplate: nameplateData, style: tmp.nameplate, fullOpacity: true, animate: flag2 };
-  const items3 = [callback(guildId(8070), obj1), , ];
+  const items3 = [callback(guildId(8067), obj1), , ];
   obj2 = { style: tmp.avatar, children: memo };
   items3[1] = callback(c4, obj2);
   obj3 = { style: tmp.content, children: null };
@@ -127,10 +127,10 @@ export const NameplatePreview = function NameplatePreview(aria_hidden) {
     obj4[0] = user.id;
     obj4[1] = guildId;
     obj4[2] = pendingGlobalName;
-    obj4[4] = tmp4(8381).EffectDisplayType.STATIC;
+    obj4[4] = tmp4(8378).EffectDisplayType.STATIC;
     obj4[6] = pendingDisplayNameStyles;
-    tmp19Result = tmp19(tmp7(8380), obj4);
-    const tmp7Result = tmp7(8380);
+    tmp19Result = tmp19(tmp7(8377), obj4);
+    const tmp7Result = tmp7(8377);
   }
   const items4 = [tmp19Result, ];
   tmp19Result = null == tmp15;

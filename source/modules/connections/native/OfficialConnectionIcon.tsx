@@ -1,10 +1,10 @@
-// Module ID: 10010
-// Function ID: 10011
+// Module ID: 10006
+// Function ID: 10007
 // Name: OfficialConnectionIcon
-// Dependencies: [19, 17, 676, 21, 4189, 5539, 712, 688, 1297, 10011, 10012, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 5539, 712, 688, 1297, 10007, 10008, 2]
 // Exports: default
 
-// Module 10010 (OfficialConnectionIcon)
+// Module 10006 (OfficialConnectionIcon)
 import "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -78,13 +78,13 @@ export default function OfficialConnectionIcon(arg0) {
   const obj2 = { style: items2, size: null, source: null, color: null };
   items2 = [tmp.verifiedCheck, obj];
   obj2[1] = require(1297) /* Button */.Icon.Sizes.CUSTOM;
-  obj2[2] = importDefault(10011);
+  obj2[2] = importDefault(10007);
   obj2[3] = roleColor;
   const items3 = [callback(require(1297) /* Button */.Icon, obj2), ];
   const obj3 = { style: items4, size: null, source: null, color: null };
   items4 = [tmp.verifiedCheck, obj];
   obj3[1] = require(1297) /* Button */.Icon.Sizes.CUSTOM;
-  obj3[2] = importDefault(10012);
+  obj3[2] = importDefault(10008);
   obj3[3] = PRIMARY_630;
   items3[1] = callback(require(1297) /* Button */.Icon, obj3);
   obj1[1] = items3;

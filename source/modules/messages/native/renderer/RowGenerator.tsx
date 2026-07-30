@@ -1,9 +1,9 @@
-// Module ID: 7713
-// Function ID: 7714
+// Module ID: 7710
+// Function ID: 7711
 // Name: setOptions
-// Dependencies: [1302, 7714, 7715, 12, 7716, 7718, 12393, 12394, 1351, 2]
+// Dependencies: [1302, 7711, 7712, 12, 7713, 7715, 12387, 12388, 1351, 2]
 
-// Module 7713 (setOptions)
+// Module 7710 (setOptions)
 import handleThemeChange from "handleThemeChange";
 import Changeset from "Changeset";
 
@@ -37,7 +37,7 @@ prototype["generate"] = function generate(rowType) {
     if (tmp2.IGNORED_GROUP !== rowType) {
       if (tmp2.SUSPENDED_USER_GROUP !== rowType) {
         if (tmp2.MESSAGE === rowType) {
-          return require(7718) /* generateMessageRowData */.generateMessageRowData(rowType, self.options, theme);
+          return require(7715) /* generateMessageRowData */.generateMessageRowData(rowType, self.options, theme);
         } else {
           if (constants2.DAY !== rowType) {
             if (tmp12.UNREAD !== rowType) {
@@ -47,16 +47,16 @@ prototype["generate"] = function generate(rowType) {
                     require(1351) /* isDiscordFrontendDevelopment */.assertNever(rowType);
                   }
                 }
-                return require(12394) /* generateLoadingRowData */.generateLoadingRowData(rowType, theme);
+                return require(12388) /* generateLoadingRowData */.generateLoadingRowData(rowType, theme);
               }
             }
           }
-          return require(12393) /* generateSeparatorRowData */.generateSeparatorRowData(rowType, theme);
+          return require(12387) /* generateSeparatorRowData */.generateSeparatorRowData(rowType, theme);
         }
       }
     }
   }
-  return require(7716) /* generateBlockedGroupRowData */.generateBlockedGroupRowData(rowType, theme, self);
+  return require(7713) /* generateBlockedGroupRowData */.generateBlockedGroupRowData(rowType, theme, self);
 };
 const result = require("UserOption").fileFinishedImporting("modules/messages/native/renderer/RowGenerator.tsx");
 

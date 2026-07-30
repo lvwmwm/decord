@@ -1,9 +1,9 @@
-// Module ID: 15563
-// Function ID: 15564
+// Module ID: 15557
+// Function ID: 15558
 // Name: MuteButton
-// Dependencies: [19, 17, 3818, 3819, 1372, 4385, 9128, 9100, 676, 9129, 21, 4189, 11469, 712, 3893, 589, 1480, 6682, 1236, 10228, 7732, 10100, 10101, 4403, 8295, 9097, 7686, 9012, 15564, 4534, 4050, 4190, 15462, 4193, 10920, 4717, 5147, 2]
+// Dependencies: [19, 17, 3818, 3819, 1372, 4385, 9124, 9096, 676, 9125, 21, 4189, 11465, 712, 3893, 589, 1480, 6679, 1236, 10224, 7729, 10096, 10097, 4403, 8292, 9093, 7683, 9008, 15558, 4534, 4050, 4190, 15456, 4193, 10916, 4717, 5147, 2]
 
-// Module 15563 (MuteButton)
+// Module 15557 (MuteButton)
 import importAllResult from "registerAsset";
 import { View } from "IconButton";
 import initialize from "initialize";
@@ -56,8 +56,8 @@ function MuteButton(channelId) {
   obj[1] = callback;
   obj[2] = token1;
   obj[3] = token;
-  obj[4] = tmp5(stateFromStores ? 10228 : 7732);
-  return closure_15(channelId(6682).IconButton, obj, constants.MUTE);
+  obj[4] = tmp5(stateFromStores ? 10224 : 7729);
+  return closure_15(channelId(6679).IconButton, obj, constants.MUTE);
 }
 function SearchButton(channelId) {
   channelId = channelId.channelId;
@@ -94,9 +94,9 @@ function SearchButton(channelId) {
   obj[1] = callback;
   obj[2] = token1;
   obj[3] = token;
-  obj[4] = importDefault(8295);
+  obj[4] = importDefault(8292);
   obj[5] = shouldHideChannelContent;
-  return callback2(channelId(6682).IconButton, obj, constants.SEARCH);
+  return callback2(channelId(6679).IconButton, obj, constants.SEARCH);
 }
 function SettingsButton(channel) {
   channel = channel.channel;
@@ -130,8 +130,8 @@ function SettingsButton(channel) {
   obj[1] = callback;
   obj[3] = token1;
   obj[4] = token;
-  obj[5] = navigation(9012);
-  return callback2(channel(6682).IconButton, obj, constants.SETTINGS);
+  obj[5] = navigation(9008);
+  return callback2(channel(6679).IconButton, obj, constants.SETTINGS);
 }
 function NavigationHeader(channel) {
   let onBackPress;
@@ -304,7 +304,7 @@ let closure_24 = importAllResult.forwardRef((cleanUp, ref) => {
   const animatedStyle = obj.useAnimatedStyle(S);
   obj = { style: items, children: null };
   items = [callback4().searchHeader, animatedStyle];
-  obj[1] = callback2(cleanUp(15462), { ref, channelId: channel.id, guildId: channel.guild_id, onSuggestionsLayoutMesure: onSuggestionsLayoutMeasure, suggestionsDismissed, setSuggestionsDismissed, showBackButton: true });
+  obj[1] = callback2(cleanUp(15456), { ref, channelId: channel.id, guildId: channel.guild_id, onSuggestionsLayoutMesure: onSuggestionsLayoutMeasure, suggestionsDismissed, setSuggestionsDismissed, showBackButton: true });
   return callback2(cleanUp(4050).View, obj);
 });
 let closure_25 = { code: "function ChannelDetailsNavigationBarTsx3(){const{isActive,withTiming,timingFast,runOnJS,cleanUp,width}=this.__closure;return{pointerEvents:isActive?'auto':'none',opacity:withTiming(isActive?1:0,timingFast,'animate-always',function(finished){if(finished)runOnJS(cleanUp)();}),width:width};}" };

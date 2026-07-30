@@ -1,10 +1,10 @@
-// Module ID: 6834
-// Function ID: 6835
+// Module ID: 6831
+// Function ID: 6832
 // Name: AnimatedBannersAbstractUI
-// Dependencies: [21, 5141, 6835, 2]
+// Dependencies: [21, 5141, 6832, 2]
 // Exports: AnimatedBannersAbstractUI
 
-// Module 6834 (AnimatedBannersAbstractUI)
+// Module 6831 (AnimatedBannersAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AnimatedBannersAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const AnimatedBannersAbstractUI = function AnimatedBannersAbstractUI(widt
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6835);
+  obj[0] = importDefault(6832);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

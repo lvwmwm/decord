@@ -1,9 +1,9 @@
-// Module ID: 5841
-// Function ID: 5842
+// Module ID: 5839
+// Function ID: 5840
 // Name: fromServer
 // Dependencies: [5829, 2]
 
-// Module 5841 (fromServer)
+// Module 5839 (fromServer)
 let prototype;
 prototype = function SocialLayerStorefrontPromotionalBannerBlockRecord(arg0) {
   const obj = Object.create(new.target.prototype);

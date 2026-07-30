@@ -1,10 +1,10 @@
-// Module ID: 13832
-// Function ID: 13833
+// Module ID: 13827
+// Function ID: 13828
 // Name: BlockedUsersList
-// Dependencies: [19, 17, 3826, 21, 4189, 712, 5515, 5535, 1297, 13833, 1236, 5177, 4185, 5554, 13837, 589, 2]
+// Dependencies: [19, 17, 3826, 21, 4189, 712, 5515, 5535, 1297, 13828, 1236, 5177, 4185, 5554, 13832, 589, 2]
 // Exports: default
 
-// Module 13832 (BlockedUsersList)
+// Module 13827 (BlockedUsersList)
 import "noop";
 import { ScrollView } from "get ActivityIndicator";
 import upsertRelationship from "upsertRelationship";
@@ -20,7 +20,7 @@ function BlockedUsersList(userIds) {
   importDefault(5515);
   if (0 === userIds.length) {
     let obj = { Illustration: null, body: null };
-    obj[0] = require(13833) /* getBlockedSource */.Blocked;
+    obj[0] = require(13828) /* getBlockedSource */.Blocked;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[1] = intl.string(require(1236) /* getSystemLocale */.t.nnsFif);
     let tmp7 = callback(require(1297) /* Button */.EmptyState, obj);

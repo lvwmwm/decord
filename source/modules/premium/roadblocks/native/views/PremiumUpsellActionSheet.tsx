@@ -1,10 +1,10 @@
-// Module ID: 6200
-// Function ID: 6201
+// Module ID: 6197
+// Function ID: 6198
 // Name: AlwaysCompressImagesSwitch
-// Dependencies: [32, 19, 17, 4181, 1302, 1304, 4006, 1874, 1876, 676, 4244, 21, 4189, 712, 3893, 3835, 6201, 4768, 4727, 1236, 3886, 1945, 6202, 6203, 6204, 6205, 691, 589, 6206, 5555, 4185, 500, 6207, 5141, 6191, 6209, 5515, 698, 6210, 4048, 4157, 6199, 5551, 4611, 12607, 4600, 6628, 2]
+// Dependencies: [32, 19, 17, 4181, 1302, 1304, 4006, 1874, 1876, 676, 4244, 21, 4189, 712, 3893, 3835, 6198, 4768, 4727, 1236, 3886, 1945, 6199, 6200, 6201, 6202, 691, 589, 6203, 5555, 4185, 500, 6204, 5141, 6188, 6206, 5515, 698, 6207, 4048, 4157, 6196, 5551, 4611, 12601, 4600, 6625, 2]
 // Exports: default
 
-// Module 6200 (AlwaysCompressImagesSwitch)
+// Module 6197 (AlwaysCompressImagesSwitch)
 import useAPNGPlayerControls from "useAPNGPlayerControls";
 import getSystemLocale from "getSystemLocale";
 import { View } from "getKestrelConfig";
@@ -74,7 +74,7 @@ function PremiumUpsellImage(arg0) {
         obj = { url: null, style: null, autoplay: true };
         obj[0] = image.uri;
         obj[1] = style;
-        let tmp5 = callback2(require(6207) /* useAPNGPlayerControls */.APNGPlayer, obj);
+        let tmp5 = callback2(require(6204) /* useAPNGPlayerControls */.APNGPlayer, obj);
       }
       return tmp5;
     }

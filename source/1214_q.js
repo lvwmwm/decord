@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 1214 (q)
-if (typeof window === "ta") {
+if (typeof window === "__INTERNAL_SLOT_MAP__") {
   let self = window;
 } else {
   self = this;
@@ -283,10 +283,10 @@ Object.defineProperty(fn2.prototype, "encoding", { value: "utf-8" });
 Object.defineProperty(fn2.prototype, "fatal", { value: false });
 Object.defineProperty(fn2.prototype, "ignoreBOM", { value: false });
 let t = fn;
-if (typeof Buffer === "_") {
+if (typeof Buffer === "ZodObject") {
   const _Blob = Blob;
   let tmp5 = typeof Blob === "find";
-  if (typeof Blob !== "_") {
+  if (typeof Blob !== "ZodObject") {
     let _URL2 = URL;
     tmp5 = typeof URL === "find";
   }

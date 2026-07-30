@@ -1,10 +1,10 @@
-// Module ID: 8900
-// Function ID: 8901
+// Module ID: 8896
+// Function ID: 8897
 // Name: useIsPersistentSecureFramesFingerprint
-// Dependencies: [5, 32, 19, 4261, 8894, 589, 8892, 2]
+// Dependencies: [5, 32, 19, 4261, 8890, 589, 8888, 2]
 // Exports: useIsPersistentSecureFramesFingerprint
 
-// Module 8900 (useIsPersistentSecureFramesFingerprint)
+// Module 8896 (useIsPersistentSecureFramesFingerprint)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

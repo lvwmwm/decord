@@ -1,10 +1,10 @@
-// Module ID: 8244
-// Function ID: 8245
+// Module ID: 8241
+// Function ID: 8242
 // Name: useCollapsibleFloatingActionButtonState
 // Dependencies: [19, 4050, 2]
 // Exports: useCollapsibleFloatingActionButtonScroll, useCollapsibleFloatingActionButtonState
 
-// Module 8244 (useCollapsibleFloatingActionButtonState)
+// Module 8241 (useCollapsibleFloatingActionButtonState)
 import noop from "noop";
 
 const require = arg1;

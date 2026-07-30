@@ -1,10 +1,10 @@
-// Module ID: 10770
-// Function ID: 10771
+// Module ID: 10766
+// Function ID: 10767
 // Name: VoiceSensitivity
-// Dependencies: [5, 32, 19, 17, 4236, 5009, 6328, 676, 4402, 21, 4189, 712, 4033, 1474, 589, 4732, 4286, 3902, 1236, 1297, 7634, 7659, 500, 2]
+// Dependencies: [5, 32, 19, 17, 4236, 5009, 6325, 676, 4402, 21, 4189, 712, 4033, 1474, 589, 4732, 4286, 3902, 1236, 1297, 7631, 7656, 500, 2]
 // Exports: default
 
-// Module 10770 (VoiceSensitivity)
+// Module 10766 (VoiceSensitivity)
 import anyoneHasFlagInContext from "anyoneHasFlagInContext";
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";

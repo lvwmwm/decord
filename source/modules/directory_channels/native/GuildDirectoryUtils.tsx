@@ -1,10 +1,10 @@
-// Module ID: 10073
-// Function ID: 10074
+// Module ID: 10069
+// Function ID: 10070
 // Name: _onAddDirectoryGuildEntry
-// Dependencies: [5, 19, 21, 10068, 4529, 10074, 1959, 2]
+// Dependencies: [5, 19, 21, 10064, 4529, 10070, 1959, 2]
 // Exports: onAddDirectoryGuildEntry
 
-// Module 10073 (_onAddDirectoryGuildEntry)
+// Module 10069 (_onAddDirectoryGuildEntry)
 import GuildDirectoryAddAlert from "GuildDirectoryAddAlert";
 import "noop";
 import { jsx } from "jsxProd";
@@ -60,7 +60,7 @@ function _onAddDirectoryGuildEntry() {
               ({ directoryChannelId: c0, directoryGuildName: c1, guild: c2, description: c3, category: c4, onClose: c5 } = c0);
               dependencyMap = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -72,7 +72,7 @@ function _onAddDirectoryGuildEntry() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj3 = lib(10068);
+              let obj3 = lib(10064);
               dependencyMap = 2;
               c4 = 1;
               const obj2 = { value: null, done: false };

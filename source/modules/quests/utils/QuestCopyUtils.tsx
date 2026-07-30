@@ -1,10 +1,10 @@
-// Module ID: 9489
-// Function ID: 9490
+// Module ID: 9485
+// Function ID: 9486
 // Name: getContextualEntrypointHeading
-// Dependencies: [5033, 1236, 8445, 8446, 8450, 6013, 6002, 5543, 2]
+// Dependencies: [5033, 1236, 8442, 8443, 8447, 6011, 6000, 5543, 2]
 // Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getQuestUrl, getSortMethodText
 
-// Module 9489 (getContextualEntrypointHeading)
+// Module 9485 (getContextualEntrypointHeading)
 import QuestsExperimentLocations from "QuestsExperimentLocations";
 
 let c3;
@@ -160,18 +160,18 @@ export const getCtaLink = function getCtaLink(config) {
 };
 export const copyShareLink = function copyShareLink(id, ctaContent) {
   ctaContent = ctaContent.ctaContent;
-  let obj = require(8445) /* apexExperiment */;
-  if (obj.shouldMigrateToAdAnalyticsInterface(require(8445) /* apexExperiment */.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "copy_share_link")) {
-    let tmpResult = tmp(8446);
+  let obj = require(8442) /* apexExperiment */;
+  if (obj.shouldMigrateToAdAnalyticsInterface(require(8442) /* apexExperiment */.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "copy_share_link")) {
+    let tmpResult = tmp(8443);
     obj = { type: null, adCreativeType: null, adCreativeId: null, questContentCTA: null, surfaceId: null, sourceQuestContent: null, questContentPosition: null, impressionId: null };
-    obj[0] = tmp(8450).AdUserActionType.CLICK_INTERNAL;
-    obj[1] = tmp(6013).AdCreativeType.QUEST;
+    obj[0] = tmp(8447).AdUserActionType.CLICK_INTERNAL;
+    obj[1] = tmp(6011).AdCreativeType.QUEST;
     obj[2] = id;
     obj[3] = ctaContent;
     ({ content: obj5[4], sourceQuestContent: obj5[5], position: obj5[6], impressionId: obj5[7] } = ctaContent);
     tmpResult.captureAdUserAction(obj);
   } else {
-    tmpResult = tmp(6002);
+    tmpResult = tmp(6000);
     obj = { questId: null, questContent: null, questContentCTA: null, questContentPosition: null, impressionId: null, sourceQuestContent: null };
     obj[0] = id;
     obj[1] = ctaContent.content;

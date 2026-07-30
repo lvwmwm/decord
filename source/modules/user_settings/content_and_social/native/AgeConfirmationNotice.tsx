@@ -1,10 +1,10 @@
-// Module ID: 13849
-// Function ID: 13850
+// Module ID: 13844
+// Function ID: 13845
 // Name: AgeConfirmationNotice
-// Dependencies: [19, 17, 6716, 21, 5883, 13779, 3886, 1945, 6747, 6749, 712, 1297, 4600, 1236, 4185, 2]
+// Dependencies: [19, 17, 6713, 21, 5881, 13774, 3886, 1945, 6744, 6746, 712, 1297, 4600, 1236, 4185, 2]
 // Exports: default
 
-// Module 13849 (AgeConfirmationNotice)
+// Module 13844 (AgeConfirmationNotice)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import SafetyToastType from "SafetyToastType";
@@ -17,10 +17,10 @@ const require = arg1;
 let result = require("SafetyToastType").fileFinishedImporting("modules/user_settings/content_and_social/native/AgeConfirmationNotice.tsx");
 
 export default function AgeConfirmationNotice() {
-  let obj = sensitiveContentFilterHelpArticle(5883);
+  let obj = sensitiveContentFilterHelpArticle(5881);
   sensitiveContentFilterHelpArticle = obj.useSensitiveContentFilterHelpArticle();
   const effect = React.useEffect(() => {
-    const result = sensitiveContentFilterHelpArticle(13779).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.VIEWED);
+    const result = sensitiveContentFilterHelpArticle(13774).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.VIEWED);
   }, []);
   const items = [sensitiveContentFilterHelpArticle];
   const importDefault = React.useCallback(() => {
@@ -32,10 +32,10 @@ export default function AgeConfirmationNotice() {
   obj = { style: null, children: null };
   obj = { marginBottom: null };
   const callback = React.useCallback(() => {
-    let obj = callback(6747);
-    obj = { entryPoint: sensitiveContentFilterHelpArticle(6749).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+    let obj = callback(6744);
+    obj = { entryPoint: sensitiveContentFilterHelpArticle(6746).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
     const result = obj.showAgeVerificationGetStartedModal(obj);
-    const result1 = sensitiveContentFilterHelpArticle(13779).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
+    const result1 = sensitiveContentFilterHelpArticle(13774).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
   }, []);
   obj[0] = importDefault(712).space.PX_8;
   obj[0] = obj;

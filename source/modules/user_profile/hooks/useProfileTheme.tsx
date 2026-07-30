@@ -1,10 +1,10 @@
-// Module ID: 8077
-// Function ID: 8078
+// Module ID: 8074
+// Function ID: 8075
 // Name: useProfileTheme
-// Dependencies: [32, 4181, 8078, 676, 4125, 589, 711, 7911, 688, 7989, 4035, 2]
+// Dependencies: [32, 4181, 8075, 676, 4125, 589, 711, 7908, 688, 7986, 4035, 2]
 // Exports: default
 
-// Module 8077 (useProfileTheme)
+// Module 8074 (useProfileTheme)
 import _slicedToArray from "_slicedToArray";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { useEffectiveThemeOverride } from "useProfileThemeOverrideStore";
@@ -40,7 +40,7 @@ export default function useProfileTheme(arg0) {
   }
   let tmp4Result = tmp4(711);
   const result = tmp4Result.unsafe_getResolvedRawColor("PRIMARY_530", { saturation: 1 });
-  tmp4Result = tmp4(7911);
+  tmp4Result = tmp4(7908);
   callback(tmp4Result.useAvatarColors(pendingAvatarSrc, result, false), 2);
   if (null != tmp3) {
     return tmp3;
@@ -80,12 +80,12 @@ export default function useProfileTheme(arg0) {
     if (!stateFromStores) {
       tmp16 = tmp2;
       if (!forceUserTheme) {
-        let profileTheme = tmp4(7989).getProfileTheme(first);
+        let profileTheme = tmp4(7986).getProfileTheme(first);
         if (profileTheme == null) {
           profileTheme = tmp2;
         }
         tmp16 = profileTheme;
-        const tmp4Result3 = tmp4(7989);
+        const tmp4Result3 = tmp4(7986);
       }
     }
     if (tmp16 !== ThemeTypes.DARK) {

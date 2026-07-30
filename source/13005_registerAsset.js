@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset";
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 120, height: 100, scales: [1, 2, 3], hash: "284d56b6868426394c75beb20a31672d", name: "img_remote_auth_not_found", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/build_overrides/native/images", width: 60, height: 46, scales: [2, 3], hash: "cca9165d24749fb9aec98d0d9c04f23f", name: "code-illustration-light", type: "png" });

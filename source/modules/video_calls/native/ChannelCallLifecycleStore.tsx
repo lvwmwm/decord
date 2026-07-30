@@ -1,9 +1,9 @@
-// Module ID: 10518
-// Function ID: 10519
+// Module ID: 10514
+// Function ID: 10515
 // Name: initialize
-// Dependencies: [1931, 10236, 8167, 659, 589, 709, 2]
+// Dependencies: [1931, 10232, 8164, 659, 589, 709, 2]
 
-// Module 10518 (initialize)
+// Module 10514 (initialize)
 import handleConnectionOpen from "handleConnectionOpen";
 import { VoiceCallOverlayType } from "BOX_MODE_ACTIONSHEET_WIDTH";
 import { Store } from "initialize";

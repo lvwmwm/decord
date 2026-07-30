@@ -1,10 +1,10 @@
-// Module ID: 10940
-// Function ID: 10941
+// Module ID: 10936
+// Function ID: 10937
 // Name: render
-// Dependencies: [19, 17, 8175, 21, 1578, 530, 3886, 10941, 4600, 7920, 1236, 1297, 2]
+// Dependencies: [19, 17, 8172, 21, 1578, 530, 3886, 10937, 4600, 7917, 1236, 1297, 2]
 // Exports: SpotifyPlayButton, attributeInstall, canOpenSpotifyUrl, openAlbum, openArtist, openTrack, openUrl
 
-// Module 10940 (render)
+// Module 10936 (render)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import WEB_OPEN from "WEB_OPEN";
@@ -259,7 +259,7 @@ export const SpotifyPlayButton = function SpotifyPlayButton(activity) {
   let obj = { style: activity.style, children: null };
   obj = { icon: null, text: null, size: "sm", onPress: null, grow: true };
   obj = { source: null };
-  obj[0] = importDefault(7920);
+  obj[0] = importDefault(7917);
   obj[0] = callback(activity(4600).Button.Icon, obj);
   const intl = activity(1236).intl;
   obj[1] = intl.formatToPlainString(activity(1236).t.LEgD7t, { platform: activity.name });

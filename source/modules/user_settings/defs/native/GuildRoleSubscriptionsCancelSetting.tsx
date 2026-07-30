@@ -1,9 +1,9 @@
-// Module ID: 14241
-// Function ID: 14242
+// Module ID: 14237
+// Function ID: 14238
 // Name: route
-// Dependencies: [7756, 676, 10120, 1236, 14242, 2]
+// Dependencies: [7753, 676, 10116, 1236, 14238, 2]
 
-// Module 14241 (route)
+// Module 14237 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -18,7 +18,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.GUILD_ROLE_SUBSCRIPTIONS_CANCEL,
   getComponent() {
-    return require(14242) /* GuildRoleSubscriptionCancelSettingScreen */.default;
+    return require(14238) /* GuildRoleSubscriptionCancelSettingScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);

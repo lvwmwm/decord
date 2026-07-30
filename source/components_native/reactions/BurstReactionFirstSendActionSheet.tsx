@@ -1,10 +1,10 @@
-// Module ID: 6134
-// Function ID: 6135
+// Module ID: 6132
+// Function ID: 6133
 // Name: onDismiss
-// Dependencies: [19, 17, 21, 4189, 712, 4157, 6135, 1236, 5243, 6095, 6136, 6074, 1297, 4185, 4600, 4005, 1358, 6134, 1959, 709, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4157, 6133, 1236, 5243, 6093, 6134, 6072, 1297, 4185, 4600, 4005, 1358, 6132, 1959, 709, 2]
 // Exports: default, openBurstReactionFirstSendActionSheet
 
-// Module 6134 (onDismiss)
+// Module 6132 (onDismiss)
 import "dispatcher";
 import get_ActivityIndicator from "onDismiss";
 import jsxProd from "jsxProd";
@@ -42,16 +42,16 @@ export default function BurstReactionFirstSendActionSheet(arg0) {
   let messageId;
   ({ emoji, channelId, messageId } = arg0);
   const tmp = createCacheKey();
-  let obj = require(6135) /* getDeviceSpecificString */;
+  let obj = require(6133) /* getDeviceSpecificString */;
   obj = { quest: require(1236) /* getSystemLocale */.t["5TpPli"] };
   const deviceSpecificString = obj.getDeviceSpecificString(obj, require(1236) /* getSystemLocale */.t["2Yp7dF"]);
   obj = { backdropOpacity: null, contentStyles: null, backdropChildren: null, onDismiss: null, children: null };
-  obj[0] = require(6095) /* _generateAnimationSource */.BACKDROP_OPACITY;
+  obj[0] = require(6093) /* _generateAnimationSource */.BACKDROP_OPACITY;
   obj[1] = tmp.content;
   const obj1 = { style: tmp.fill, children: null };
   const obj2 = { channelId, emoji, messageId, reactionType: null };
-  obj2[3] = require(6074) /* ReactionTypes */.ReactionTypes.BURST;
-  obj1[1] = callback(importDefault(6136), obj2);
+  obj2[3] = require(6072) /* ReactionTypes */.ReactionTypes.BURST;
+  obj1[1] = callback(importDefault(6134), obj2);
   obj[2] = callback(closure_3, obj1);
   obj[3] = onDismiss;
   const obj3 = { style: tmp.container, children: null };
@@ -64,7 +64,7 @@ export default function BurstReactionFirstSendActionSheet(arg0) {
   obj4[1] = items;
   const items1 = [callback2(closure_3, obj4), , ];
   const obj5 = { style: tmp.nitroWheel };
-  const tmp3 = importDefault(6136);
+  const tmp3 = importDefault(6134);
   items1[1] = callback(closure_3, { style: tmp.body, children: callback(require(4185) /* Text */.Text, obj8) });
   const obj9 = { text: null, onPress: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
@@ -96,7 +96,7 @@ export const openBurstReactionFirstSendActionSheet = function openBurstReactionF
     obj[0] = channelId;
     obj[1] = messageId;
     obj[2] = emoji;
-    tmpResult.openLazy(tmp4(1959)(6134, dependencyMap.paths), "BurstReactionFirstSendActionSheet", obj);
+    tmpResult.openLazy(tmp4(1959)(6132, dependencyMap.paths), "BurstReactionFirstSendActionSheet", obj);
     const tmp4Result = tmp4(4005);
   }
 };

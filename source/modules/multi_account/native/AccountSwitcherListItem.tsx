@@ -1,10 +1,10 @@
-// Module ID: 14866
-// Function ID: 14867
+// Module ID: 14860
+// Function ID: 14861
 // Name: AccountStatusIcon
-// Dependencies: [19, 17, 1882, 4029, 1874, 11508, 21, 4189, 589, 4150, 712, 4145, 4185, 1236, 4717, 3907, 1297, 4028, 2]
+// Dependencies: [19, 17, 1882, 4029, 1874, 11504, 21, 4189, 589, 4150, 712, 4145, 4185, 1236, 4717, 3907, 1297, 4028, 2]
 // Exports: default
 
-// Module 14866 (AccountStatusIcon)
+// Module 14860 (AccountStatusIcon)
 import "noop";
 import get_ActivityIndicator from "nameFromUser";
 import createdAt from "createdAt";
@@ -113,7 +113,7 @@ export default function AccountSwitcherListItem(arg0) {
     const items2 = [leading, , ];
     obj2 = { style: null, children: null };
     obj2[0] = tmp.accountInfo;
-    const obj3 = { user: null, guildId: "r" };
+    const obj3 = { user: null, guildId: "a" };
     obj3[0] = obj2;
     const items3 = [callback(tmp2(1297).Avatar, obj3), ];
     const obj4 = { style: null, children: null };

@@ -1,10 +1,10 @@
-// Module ID: 16374
-// Function ID: 16375
+// Module ID: 16368
+// Function ID: 16369
 // Name: getNewAutomodRuleMockId
-// Dependencies: [1218, 16375, 11053, 16377, 16378, 1236, 6178, 5702, 2]
+// Dependencies: [1218, 16369, 11049, 16371, 16372, 1236, 6175, 5702, 2]
 // Exports: actionTypeToName, createDefaultRule, eventTypeToName, getNewAutomodRuleMockId, isBackendPersistedRule, isRuleDefaultKeywordListFilter, isRuleKeywordFilter, isRuleMLSpamFilter, isRuleMentionSpamFilter, isRuleServerPolicyFilter, isRuleUserProfileFilter, triggerTypeToName, validateKeywordsOrThrow, validateRegexPatternsOrThrow, validateRuleBeforeSaveOrThrow
 
-// Module 16374 (getNewAutomodRuleMockId)
+// Module 16368 (getNewAutomodRuleMockId)
 import fetchFingerprint from "fetchFingerprint";
 import { getRuleCountByTriggerType } from "withEqualityFn";
 import AutomodEventType from "AutomodEventType";
@@ -68,9 +68,9 @@ export const isRuleUserProfileFilter = function isRuleUserProfileFilter(triggerT
   return triggerType === constants.USER_PROFILE;
 };
 export const createDefaultRule = function createDefaultRule(arg0, arg1) {
-  let obj = require(16377) /* AutomodTriggerType */.triggerConfigs[arg1];
+  let obj = require(16371) /* AutomodTriggerType */.triggerConfigs[arg1];
   obj = { id: null, name: null, guildId: null, eventType: null, triggerType: null, triggerMetadata: null, enabled: true, creatorId: null, actions: null, position: 0, exemptChannels: null, exemptRoles: null };
-  const defaultTriggerMetadataForTriggerType = require(16377) /* AutomodTriggerType */.getDefaultTriggerMetadataForTriggerType(arg1, arg0);
+  const defaultTriggerMetadataForTriggerType = require(16371) /* AutomodTriggerType */.getDefaultTriggerMetadataForTriggerType(arg1, arg0);
   obj[0] = "" + arg0 + "-" + arg1 + "-new-rule";
   obj[1] = obj.getDefaultRuleName();
   obj[2] = arg0;
@@ -78,9 +78,9 @@ export const createDefaultRule = function createDefaultRule(arg0, arg1) {
   obj[4] = arg1;
   obj[5] = defaultTriggerMetadataForTriggerType;
   obj[7] = id.getId();
-  const obj2 = require(16377) /* AutomodTriggerType */;
-  obj[8] = require(16378) /* getRuleDefaultActionsFromConfig */.getRuleDefaultActionsFromConfig(obj);
-  const obj4 = require(16378) /* getRuleDefaultActionsFromConfig */;
+  const obj2 = require(16371) /* AutomodTriggerType */;
+  obj[8] = require(16372) /* getRuleDefaultActionsFromConfig */.getRuleDefaultActionsFromConfig(obj);
+  const obj4 = require(16372) /* getRuleDefaultActionsFromConfig */;
   obj[10] = new Set();
   const set = new Set();
   obj[11] = new Set();
@@ -115,7 +115,7 @@ export const validateKeywordsOrThrow = function validateKeywordsOrThrow(arr) {
   } else {
     const item = arr.forEach((keyword) => {
       const intl = callback(1236).intl;
-      const invalidKeywordError = new callback(6178).InvalidKeywordError(intl.formatToPlainString(callback(1236).t.rbRvGe, { keyword, max: closure_7, min: closure_8 }));
+      const invalidKeywordError = new callback(6175).InvalidKeywordError(intl.formatToPlainString(callback(1236).t.rbRvGe, { keyword, max: closure_7, min: closure_8 }));
       throw invalidKeywordError;
     });
   }
@@ -131,7 +131,7 @@ export const validateRegexPatternsOrThrow = function validateRegexPatternsOrThro
   } else {
     const item = arr.forEach((regex) => {
       const intl = callback(1236).intl;
-      const invalidRegexPatternError = new callback(6178).InvalidRegexPatternError(intl.formatToPlainString(callback(1236).t.WR0m9w, { regex, max: closure_10, min: closure_9 }));
+      const invalidRegexPatternError = new callback(6175).InvalidRegexPatternError(intl.formatToPlainString(callback(1236).t.WR0m9w, { regex, max: closure_10, min: closure_9 }));
       throw invalidRegexPatternError;
     });
   }
@@ -168,7 +168,7 @@ export const validateRuleBeforeSaveOrThrow = function validateRuleBeforeSaveOrTh
     } else {
       const item = keywordFilter.forEach((keyword) => {
         const intl = callback(1236).intl;
-        const invalidKeywordError = new callback(6178).InvalidKeywordError(intl.formatToPlainString(callback(1236).t.rbRvGe, { keyword, max: closure_7, min: closure_8 }));
+        const invalidKeywordError = new callback(6175).InvalidKeywordError(intl.formatToPlainString(callback(1236).t.rbRvGe, { keyword, max: closure_7, min: closure_8 }));
         throw invalidKeywordError;
       });
       if (regexPatterns.length > closure_6) {
@@ -181,7 +181,7 @@ export const validateRuleBeforeSaveOrThrow = function validateRuleBeforeSaveOrTh
       } else {
         const item1 = regexPatterns.forEach((regex) => {
           const intl = callback(1236).intl;
-          const invalidRegexPatternError = new callback(6178).InvalidRegexPatternError(intl.formatToPlainString(callback(1236).t.WR0m9w, { regex, max: closure_10, min: closure_9 }));
+          const invalidRegexPatternError = new callback(6175).InvalidRegexPatternError(intl.formatToPlainString(callback(1236).t.WR0m9w, { regex, max: closure_10, min: closure_9 }));
           throw invalidRegexPatternError;
         });
       }

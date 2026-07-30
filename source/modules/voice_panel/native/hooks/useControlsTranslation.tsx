@@ -1,10 +1,10 @@
-// Module ID: 16001
-// Function ID: 16002
+// Module ID: 15995
+// Function ID: 15996
 // Name: useControlsTranslation
-// Dependencies: [19, 10038, 10041, 10037, 4050, 4599, 2]
+// Dependencies: [19, 10034, 10037, 10033, 4050, 4599, 2]
 // Exports: default
 
-// Module 16001 (useControlsTranslation)
+// Module 15995 (useControlsTranslation)
 import noop from "noop";
 import { MODE_CHANGE_PHYSICS } from "VoicePanelModes";
 import { CALL_TILE_GUTTER } from "CARD_SIZE";

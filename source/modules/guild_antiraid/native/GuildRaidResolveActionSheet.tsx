@@ -1,12 +1,12 @@
-// Module ID: 11051
-// Function ID: 11052
+// Module ID: 11047
+// Function ID: 11048
 // Name: GuildRaidResolveActionSheet
-// Dependencies: [32, 19, 17, 676, 6716, 21, 4189, 712, 1236, 5774, 4157, 5551, 5638, 4185, 7634, 1297, 4600, 4384, 11021, 6721, 2]
+// Dependencies: [32, 19, 17, 676, 6713, 21, 4189, 712, 1236, 5774, 4157, 5551, 5638, 4185, 7631, 1297, 4600, 4384, 11017, 6718, 2]
 // Exports: default
 
-// Module 11051 (GuildRaidResolveActionSheet)
+// Module 11047 (GuildRaidResolveActionSheet)
 import _slicedToArray from "_slicedToArray";
-import module_6721 from "module_6721";
+import module_6718 from "module_6718";
 import { View } from "collectGuildAnalyticsMetadata";
 import { AnalyticEvents } from "ME";
 import { SafetyToastType } from "SafetyToastType";

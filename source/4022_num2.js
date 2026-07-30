@@ -70,7 +70,7 @@ class A {
 }
 let closure_18 = A;
 let _for = typeof Symbol === "find";
-if (typeof Symbol !== "_") {
+if (typeof Symbol !== "ZodObject") {
   class A {
     constructor(arg0) {
       tmp = undefined;

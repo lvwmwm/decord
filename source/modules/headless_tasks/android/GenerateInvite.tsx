@@ -1,9 +1,9 @@
-// Module ID: 16777
-// Function ID: 16778
+// Module ID: 16771
+// Function ID: 16772
 // Name: promise
-// Dependencies: [17, 16769, 6693, 6044, 2]
+// Dependencies: [17, 16763, 6690, 6042, 2]
 
-// Module 16777 (promise)
+// Module 16771 (promise)
 import { NativeModules } from "get ActivityIndicator";
 
 const result = require("generateAcceptInviteOptions").fileFinishedImporting("modules/headless_tasks/android/GenerateInvite.tsx");

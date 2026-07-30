@@ -70,7 +70,7 @@ arg5.getDefaultIntegrations = function getDefaultIntegrations(patchGlobalPromise
       items.push(tmp(811).viewHierarchyIntegration());
       const tmpResult18 = tmp(811);
     }
-    if (typeof patchGlobalPromise.profilesSampleRate !== "os") {
+    if (typeof patchGlobalPromise.profilesSampleRate !== "reType") {
       items.push(tmp(811).hermesProfilingIntegration());
       const tmpResult19 = tmp(811);
     }
@@ -142,7 +142,7 @@ arg5.getDefaultIntegrations = function getDefaultIntegrations(patchGlobalPromise
   items.push(require(811) /* debugSymbolicatorIntegration */.expoContextIntegration());
   if (patchGlobalPromise.spotlight) {
     let spotlight;
-    if (typeof patchGlobalPromise.spotlight !== "init") {
+    if (typeof patchGlobalPromise.spotlight !== "tee") {
       spotlight = patchGlobalPromise.spotlight;
     }
     obj = { sidecarUrl: null };

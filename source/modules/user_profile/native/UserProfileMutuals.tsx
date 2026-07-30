@@ -1,10 +1,10 @@
-// Module ID: 12216
-// Function ID: 12217
+// Module ID: 12210
+// Function ID: 12211
 // Name: UserProfileMutuals
-// Dependencies: [19, 17, 8105, 5563, 21, 4189, 8107, 11696, 11985, 4157, 11703, 1959, 8359, 6690, 4717, 12020, 1297, 4185, 11704, 11711, 5566, 11698, 2]
+// Dependencies: [19, 17, 8102, 5563, 21, 4189, 8104, 11692, 11979, 4157, 11699, 1959, 8356, 6687, 4717, 12014, 1297, 4185, 11700, 11707, 5566, 11694, 2]
 // Exports: default
 
-// Module 12216 (UserProfileMutuals)
+// Module 12210 (UserProfileMutuals)
 import "GuildIconPile";
 import { View } from "Text";
 import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY";
@@ -31,11 +31,11 @@ export default function UserProfileMutuals(user) {
   let dependencyMap;
   c3 = undefined;
   const tmp = callback2();
-  let obj = user(8107);
+  let obj = user(8104);
   const userProfileAnalyticsContext = obj.useUserProfileAnalyticsContext();
   ({ context: c2, trackUserProfileAction: c3 } = userProfileAnalyticsContext);
-  ({ mutualFriends, mutualGuilds } = guildId(11696)(user));
-  if (guildId(11985)(user)) {
+  ({ mutualFriends, mutualGuilds } = guildId(11692)(user));
+  if (guildId(11979)(user)) {
     let tmp7 = null != mutualFriends;
     if (tmp7) {
       tmp7 = mutualFriends.length > 0;
@@ -92,11 +92,11 @@ export default function UserProfileMutuals(user) {
         obj[1] = user(_undefined[16]).AvatarSizes.SIZE_16;
         return callback(user(_undefined[16]).Avatar, obj, id.id);
       });
-      const items = [callback(tmp2(12020).AvatarPile, obj1), ];
+      const items = [callback(tmp2(12014).AvatarPile, obj1), ];
       let obj2 = { variant: null, color: null, children: null };
       obj2[0] = c8;
       obj2[1] = c9;
-      obj2[2] = tmp5(11704)(mutualFriends.length);
+      obj2[2] = tmp5(11700)(mutualFriends.length);
       items[1] = callback(tmp2(4185).Text, obj2);
       obj[3] = items;
       tmp9Result = tmp9(tmp2(4717).PressableOpacity, obj);
@@ -157,13 +157,13 @@ export default function UserProfileMutuals(user) {
           obj[1] = user(_undefined[20]).GuildIconSizes.XXSMALL;
           return callback(guildId(_undefined[20]), obj, guild.id);
         });
-        tmp21 = callback(tmp2(11711).GuildIconPile, obj5);
+        tmp21 = callback(tmp2(11707).GuildIconPile, obj5);
       }
       const items2 = [tmp21, ];
       const obj6 = { variant: null, color: null, children: null };
       obj6[0] = c8;
       obj6[1] = c9;
-      obj6[2] = tmp5(11698)(mutualGuilds.length);
+      obj6[2] = tmp5(11694)(mutualGuilds.length);
       items2[1] = callback(tmp2(4185).Text, obj6);
       obj4[3] = items2;
       tmp9Result = tmp9(tmp2(4717).PressableOpacity, obj4);
@@ -174,5 +174,5 @@ export default function UserProfileMutuals(user) {
   } else {
     return null;
   }
-  const tmp6 = guildId(11696)(user);
+  const tmp6 = guildId(11692)(user);
 };

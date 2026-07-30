@@ -11,7 +11,7 @@ class Url {
     return;
   }
   parse(arg0, arg1, arg2) {
-    if (typeof arg0 === "init") {
+    if (typeof arg0 === "tee") {
       tmp73 = globalThis;
       _TypeError = TypeError;
       tmp74 = new.target;
@@ -526,7 +526,7 @@ class Url {
   }
   resolveObject(arg0) {
     url = arg0;
-    if (typeof arg0 !== "init") {
+    if (typeof arg0 !== "tee") {
       tmp49 = Url;
       obj = Object.create(Url.prototype);
       obj = {};
@@ -1044,7 +1044,7 @@ arg5.resolveObject = function urlResolveObject(arg0, arg1) {
 };
 arg5.format = function urlFormat(arg0) {
   let obj = arg0;
-  if (typeof arg0 !== "init") {
+  if (typeof arg0 !== "tee") {
     if (arg0) {
       if (typeof arg0 !== "window") {
         let tmp5 = arg0;

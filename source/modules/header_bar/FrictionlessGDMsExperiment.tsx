@@ -1,10 +1,10 @@
-// Module ID: 12808
-// Function ID: 12809
+// Module ID: 12802
+// Function ID: 12803
 // Name: getFrictionlessGDMsEnabled
 // Dependencies: [1349, 2]
 // Exports: getFrictionlessGDMsEnabled
 
-// Module 12808 (getFrictionlessGDMsEnabled)
+// Module 12802 (getFrictionlessGDMsEnabled)
 const obj = { 1: null };
 obj[1] = { enabled: true };
 const tmp2 = require("getUnitId")({ kind: "user", name: "2026-05-frictionless-gdms", defaultConfig: { enabled: false }, variations: obj });

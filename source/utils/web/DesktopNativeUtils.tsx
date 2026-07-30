@@ -1715,7 +1715,7 @@ obj.getOpenH264LibraryPath = function getOpenH264LibraryPath() {
 };
 obj.canCopyImage = function canCopyImage(closure_0) {
   if (require(500) /* set */.isPlatformEmbedded) {
-    if (typeof DiscordNative.clipboard.copyImage === "_") {
+    if (typeof DiscordNative.clipboard.copyImage === "ZodObject") {
       return false;
     } else {
       if (null != tmp) {
@@ -2095,7 +2095,7 @@ obj.clearNavigationHistory = function clearNavigationHistory() {
   backwardCompatSend(require(5199) /* IPCEvents */.IPCEvents.NAVIGATION_HISTORY_CLEAR);
 };
 obj.setAlwaysOnTop = function setAlwaysOnTop(arg0, arg1) {
-  if (typeof DiscordNative.window.setAlwaysOnTop !== "_") {
+  if (typeof DiscordNative.window.setAlwaysOnTop !== "ZodObject") {
     const _window = tmp.window;
     _window.setAlwaysOnTop(arg0, arg1);
   }
@@ -2167,7 +2167,7 @@ obj.showInactive = function showInactive(arg0) {
       showInactive = _window.showInactive;
     }
   }
-  if (typeof showInactive !== "_") {
+  if (typeof showInactive !== "ZodObject") {
     const _window2 = tmp.window;
     _window2.showInactive(arg0);
   }
@@ -2361,7 +2361,7 @@ obj.setBackgroundThrottling = function setBackgroundThrottling(arg0) {
   }
 };
 obj.setFocusable = function setFocusable(arg0, arg1) {
-  if (typeof DiscordNative.window.setFocusable !== "_") {
+  if (typeof DiscordNative.window.setFocusable !== "ZodObject") {
     const _window = tmp.window;
     _window.setFocusable(arg0, arg1);
   }
@@ -3153,6 +3153,70 @@ obj.fetchRiotGamesLiveClientData = function fetchRiotGamesLiveClientData(arg0) {
     const error1 = new Error("Not embedded!");
     return Promise.reject(error1);
   }
+};
+obj.readCs2GsiToken = function readCs2GsiToken(arg0) {
+  if (obj.isWindows()) {
+    const cs2Gsi = DiscordNative.cs2Gsi;
+    let cs2GsiToken;
+    if (cs2Gsi != null) {
+      cs2GsiToken = cs2Gsi.readCs2GsiToken(arg0);
+    }
+    if (cs2GsiToken == null) {
+      cs2GsiToken = Promise.resolve(null);
+    }
+    let resolved = cs2GsiToken;
+  } else {
+    resolved = Promise.resolve(null);
+  }
+  return resolved;
+};
+obj.writeCs2GsiConfig = function writeCs2GsiConfig(arg0, arg1, arg2) {
+  if (obj.isWindows()) {
+    const cs2Gsi = DiscordNative.cs2Gsi;
+    let writeCs2GsiConfigResult;
+    if (cs2Gsi != null) {
+      writeCs2GsiConfigResult = cs2Gsi.writeCs2GsiConfig(arg0, arg1, arg2);
+    }
+    if (writeCs2GsiConfigResult == null) {
+      writeCs2GsiConfigResult = Promise.resolve(false);
+    }
+    let resolved = writeCs2GsiConfigResult;
+  } else {
+    resolved = Promise.resolve(false);
+  }
+  return resolved;
+};
+obj.deleteCs2GsiConfig = function deleteCs2GsiConfig(arg0) {
+  if (obj.isWindows()) {
+    const cs2Gsi = DiscordNative.cs2Gsi;
+    let deleteCs2GsiConfigResult;
+    if (cs2Gsi != null) {
+      deleteCs2GsiConfigResult = cs2Gsi.deleteCs2GsiConfig(arg0);
+    }
+    if (deleteCs2GsiConfigResult == null) {
+      deleteCs2GsiConfigResult = Promise.resolve(false);
+    }
+    let resolved = deleteCs2GsiConfigResult;
+  } else {
+    resolved = Promise.resolve(false);
+  }
+  return resolved;
+};
+obj.debugLogCs2GsiPayload = function debugLogCs2GsiPayload(arg0) {
+  if (obj.isWindows()) {
+    const cs2Gsi = DiscordNative.cs2Gsi;
+    let result;
+    if (cs2Gsi != null) {
+      result = cs2Gsi.debugLogCs2GsiPayload(arg0);
+    }
+    if (result == null) {
+      result = Promise.resolve();
+    }
+    let resolved = result;
+  } else {
+    resolved = Promise.resolve();
+  }
+  return resolved;
 };
 obj.appViewed = function appViewed() {
   if (obj.isDesktop()) {

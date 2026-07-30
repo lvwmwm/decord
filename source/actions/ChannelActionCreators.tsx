@@ -1,6 +1,6 @@
 // Module ID: 4199
 // Function ID: 4200
-// Dependencies: [32, 5, 4200, 1376, 1372, 4201, 676, 8917, 530, 5107, 4041, 4197, 5001, 709, 8204, 698, 1222, 4035, 1236, 7688, 4427, 2]
+// Dependencies: [32, 5, 4200, 1376, 1372, 4201, 676, 8913, 530, 5107, 4041, 4197, 5001, 709, 8201, 698, 1222, 4035, 1236, 7685, 4427, 2]
 
 // Module 4199
 import _slicedToArray from "_slicedToArray";
@@ -546,7 +546,7 @@ export default {
     if (arg2 === undefined) {
       flag2 = false;
     }
-    if (importDefault(8204)(id)) {
+    if (importDefault(8201)(id)) {
       let tmpResult = tmp(698);
       let obj = { last_changelog_id: null, unread_count: null };
       obj[0] = handleUserSettingsProtoStoreChange.latestChangelogId();
@@ -835,7 +835,7 @@ export default {
               tmp10 = isThreadResult;
             }
             if (!tmp10) {
-              obj1 = outer1_1(7688);
+              obj1 = outer1_1(7685);
               const result = obj1.checkGuildTemplateDirty(guildId);
             }
             c3 = 3;
@@ -1245,7 +1245,7 @@ export default {
             return obj4;
           } else {
             closure_0 = arg1;
-            obj = outer1_1(7688);
+            obj = outer1_1(7685);
             const result = obj.checkGuildTemplateDirty(closure_0);
             c3 = 3;
             const obj5 = { value: null, done: true };

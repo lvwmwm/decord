@@ -1,10 +1,10 @@
-// Module ID: 7619
-// Function ID: 7620
+// Module ID: 7616
+// Function ID: 7617
 // Name: GetStartedScreen
-// Dependencies: [5, 19, 17, 6748, 676, 6756, 21, 4189, 712, 1581, 4405, 7620, 6785, 4185, 5554, 7621, 1236, 6747, 1945, 6749, 4600, 7622, 2]
+// Dependencies: [5, 19, 17, 6745, 676, 6753, 21, 4189, 712, 1581, 4405, 7617, 6782, 4185, 5554, 7618, 1236, 6744, 1945, 6746, 4600, 7619, 2]
 // Exports: default
 
-// Module 7619 (GetStartedScreen)
+// Module 7616 (GetStartedScreen)
 import SafetyHubView from "SafetyHubView";
 import "AgeVerificationModalEntryPoint";
 import get_ActivityIndicator from "openIncodeAgeVerificationModal";
@@ -50,12 +50,12 @@ export default function GetStartedScreen(onComplete) {
   let obj = modalSessionId(4405);
   const initiateAgeVerification = obj.useInitiateAgeVerification({ onComplete: onComplete.onClose, entryPoint });
   ({ initiateAgeVerification: c1, loading } = initiateAgeVerification);
-  let obj1 = modalSessionId(7620);
+  let obj1 = modalSessionId(7617);
   const isManualAgeVerificationHidden = obj1.useIsManualAgeVerificationHidden("age_verification_get_started_modal");
   obj = { children: null };
   obj = { style: tmp.getStartedContainer, children: null };
   obj1 = { style: tmp.getStartedHeaderContainer, children: null };
-  const items = [callback3(modalSessionId(6785).ShieldSpotIllustration, {}), , ];
+  const items = [callback3(modalSessionId(6782).ShieldSpotIllustration, {}), , ];
   let obj2 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.getStartedHeaderText, children: null };
   let obj6 = modalSessionId(4405);
   obj2[3] = obj6.getAgeVerificationGetStartedTitle(entryPoint);
@@ -78,7 +78,7 @@ export default function GetStartedScreen(onComplete) {
       tmpResult = tmp(modalSessionId(4185).Text, obj);
     }
     obj[2] = tmpResult;
-    return callback(_undefined(7621), obj, arg1);
+    return callback(_undefined(7618), obj, arg1);
   });
   items1[1] = callback3(modalSessionId(5554).TableRowGroup, obj4);
   const obj5 = { style: tmp.ageGroupLearnMoreContainer, children: null };
@@ -177,7 +177,7 @@ export default function GetStartedScreen(onComplete) {
   });
   const obj15 = { color: null };
   obj15[0] = importDefault(712).colors.WHITE;
-  obj14[4] = callback3(modalSessionId(7622).LinkExternalSmallIcon, obj15);
+  obj14[4] = callback3(modalSessionId(7619).LinkExternalSmallIcon, obj15);
   obj14[5] = loading;
   obj13[1] = callback3(modalSessionId(4600).Button, obj14);
   items4[1] = callback3(closure_5, obj13);

@@ -1,9 +1,9 @@
-// Module ID: 6211
-// Function ID: 6212
+// Module ID: 6208
+// Function ID: 6209
 // Name: emitChanges
-// Dependencies: [6212, 6214, 1874, 5849, 3841, 1876, 589, 6215, 3835, 709, 2]
+// Dependencies: [6209, 6211, 1874, 5847, 3841, 1876, 589, 6212, 3835, 709, 2]
 
-// Module 6211 (emitChanges)
+// Module 6208 (emitChanges)
 import emitChanges from "emitChanges";
 import createFromServer from "createFromServer";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -174,8 +174,8 @@ prototype["shouldShowTrialOfferReminder"] = function shouldShowTrialOfferReminde
   const hasItem = closure_13.includes(trial_id.trial_id);
   let result = !hasItem;
   if (hasItem) {
-    result = require(6215) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
-    const obj = require(6215) /* apexExperiment */;
+    result = require(6212) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
+    const obj = require(6212) /* apexExperiment */;
   }
   return result;
 };
@@ -223,8 +223,8 @@ prototype["shouldShowDiscountOfferReminder"] = function shouldShowDiscountOfferR
   const hasItem = closure_8.includes(discountId.discountId);
   let result = !hasItem;
   if (hasItem) {
-    result = require(6215) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
-    const obj = require(6215) /* apexExperiment */;
+    result = require(6212) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
+    const obj = require(6212) /* apexExperiment */;
   }
   return result;
 };

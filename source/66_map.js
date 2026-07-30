@@ -36,7 +36,7 @@ arg5.get = function get(arg0) {
         str = typeof value;
       }
       let str3 = "";
-      if (typeof arg0[0] !== "init") {
+      if (typeof arg0[0] !== "tee") {
         str3 = "";
         if (obj3.test(arg0[0])) {
           str3 = " Make sure to start component names with a capital letter.";

@@ -1,10 +1,10 @@
-// Module ID: 15808
-// Function ID: 15809
+// Module ID: 15802
+// Function ID: 15803
 // Name: ChannelContent
-// Dependencies: [19, 17, 10284, 4386, 21, 4189, 500, 15803, 4680, 15809, 4185, 4709, 7629, 15106, 2]
+// Dependencies: [19, 17, 10280, 4386, 21, 4189, 500, 15797, 4680, 15803, 4185, 4709, 7626, 15100, 2]
 // Exports: default
 
-// Module 15808 (ChannelContent)
+// Module 15802 (ChannelContent)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth";
@@ -67,13 +67,13 @@ function ChannelContent(arg0) {
   }
   const obj2 = { style: { flexDirection: "row", paddingRight: num, alignItems: "center" }, children: null };
   const obj3 = { title: name, muted, unread, resolvedUnreadSetting: null, connected: null };
-  const tmp4 = importDefault(15803)();
+  const tmp4 = importDefault(15797)();
   if (resolvedUnreadSetting == null) {
     resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
   }
   obj3[3] = resolvedUnreadSetting;
   obj3[4] = connected;
-  const items1 = [closure_7(importDefault(15809), obj3), , ];
+  const items1 = [closure_7(importDefault(15803), obj3), , ];
   tmp9Result = null;
   if (null != channelCategoryName) {
     const obj4 = { variant: "text-xs/bold", color: "text-muted", style: null, children: null };
@@ -109,13 +109,13 @@ function ChannelContent(arg0) {
     if (isNSFWResult) {
       const obj8 = { size: "xxs", color: "icon-muted", style: null };
       obj8[2] = tmp.channelTraitIcon;
-      isNSFWResult = tmp9(require(7629) /* WarningIcon */.WarningIcon, obj8);
+      isNSFWResult = tmp9(require(7626) /* WarningIcon */.WarningIcon, obj8);
     }
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj9 = { locked: null, isInMainTabsExperiment: true };
       obj9[0] = needSubscriptionToAccess;
-      isSubscriptionGated = tmp9(tmp2(15106), obj9);
+      isSubscriptionGated = tmp9(tmp2(15100), obj9);
     }
     items3[2] = isSubscriptionGated;
     obj5[1] = items3;

@@ -1,10 +1,10 @@
-// Module ID: 9588
-// Function ID: 9589
+// Module ID: 9585
+// Function ID: 9586
 // Name: ExpressionPickerActionSheet
-// Dependencies: [19, 1372, 5244, 9589, 21, 4050, 4055, 1579, 589, 9590, 4157, 1474, 1581, 5140, 500, 9352, 5243, 9591, 2]
+// Dependencies: [19, 1372, 5244, 9586, 21, 4050, 4055, 1579, 589, 9587, 4157, 1474, 1581, 5140, 500, 9348, 5243, 9588, 2]
 // Exports: default
 
-// Module 9588 (ExpressionPickerActionSheet)
+// Module 9585 (ExpressionPickerActionSheet)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { ACTION_SHEET_START_HEIGHT_RATIO as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO";
@@ -44,7 +44,7 @@ export default function ExpressionPickerActionSheet(arg0) {
     if (isIOSResult) {
       obj = { animatedSheetIndex: null, followSystemKeyboard: true };
       obj[0] = sharedValue;
-      isIOSResult = callback(tmp7(9352), obj);
+      isIOSResult = callback(tmp7(9348), obj);
     }
     obj = { children: null };
     const items1 = [isIOSResult, ];
@@ -81,7 +81,7 @@ export default function ExpressionPickerActionSheet(arg0) {
     obj2[9] = initialGifQuery;
     obj2[10] = STICKER_FORMATS;
     obj2[11] = diff;
-    obj1[5] = callback(tmp7(9591), obj2);
+    obj1[5] = callback(tmp7(9588), obj2);
     items1[1] = callback(tmp2(5243).BottomSheet, obj1);
     obj[0] = items1;
     tmp15Result = closure_9(closure_8, obj);

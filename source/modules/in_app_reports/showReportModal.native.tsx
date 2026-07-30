@@ -1,10 +1,10 @@
-// Module ID: 7694
-// Function ID: 7695
+// Module ID: 7691
+// Function ID: 7692
 // Name: _showReportModal
-// Dependencies: [5, 7695, 7696, 4395, 7697, 1959, 2]
+// Dependencies: [5, 7692, 7693, 4395, 7694, 1959, 2]
 // Exports: hideReportModal, showReportModal
 
-// Module 7694 (_showReportModal)
+// Module 7691 (_showReportModal)
 import asyncRequireImpl from "asyncRequireImpl";
 
 const require = arg1;
@@ -57,7 +57,7 @@ function _showReportModal() {
               closure_4 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

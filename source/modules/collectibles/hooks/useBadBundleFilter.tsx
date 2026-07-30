@@ -1,10 +1,10 @@
-// Module ID: 14104
-// Function ID: 14105
+// Module ID: 14100
+// Function ID: 14101
 // Name: useBadBundleFilter
-// Dependencies: [19, 1874, 5814, 647, 3835, 8710, 5810, 5809, 2]
+// Dependencies: [19, 1874, 5814, 647, 3835, 8706, 5810, 5809, 2]
 // Exports: useBadBundleFilter
 
-// Module 14104 (useBadBundleFilter)
+// Module 14100 (useBadBundleFilter)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import map from "map";
 

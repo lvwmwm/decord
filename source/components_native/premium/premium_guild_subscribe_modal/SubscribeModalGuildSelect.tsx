@@ -1,7 +1,7 @@
 // Module ID: 5026
 // Function ID: 5027
 // Name: SubscribeModalGuildSelect
-// Dependencies: [32, 19, 17, 1862, 5027, 5025, 21, 4189, 712, 5030, 1480, 589, 5031, 5177, 10099, 1236, 5023, 4717, 5566, 1297, 2]
+// Dependencies: [32, 19, 17, 1862, 5027, 5025, 21, 4189, 712, 5030, 1480, 589, 5031, 5177, 10095, 1236, 5023, 4717, 5566, 1297, 2]
 // Exports: default
 
 // Module 5026 (SubscribeModalGuildSelect)
@@ -111,7 +111,7 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
   obj[0] = intl.string(guildBoostSlots(1236).t.vf3ZTa);
   obj[1] = tmp2[1];
   obj[2] = importAll(5023).closeApplyBoostModal;
-  const items3 = [callback2(importDefault(10099), obj), ];
+  const items3 = [callback2(importDefault(10095), obj), ];
   obj1 = { style: tmp.guildList, keyboardShouldPersistTaps: "always", children: null };
   const obj2 = { bottom: true, children: null };
   obj2[1] = stateFromStoresArray.map((children) => {

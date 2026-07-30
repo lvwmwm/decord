@@ -1,10 +1,10 @@
-// Module ID: 14108
-// Function ID: 14109
+// Module ID: 14104
+// Function ID: 14105
 // Name: ListEdgeSpacer
-// Dependencies: [32, 19, 17, 5984, 5033, 21, 712, 8660, 14095, 10883, 589, 4185, 1236, 14109, 14110, 6676, 6002, 6012, 8663, 5502, 2]
+// Dependencies: [32, 19, 17, 5982, 5033, 21, 712, 8657, 14091, 10879, 589, 4185, 1236, 14105, 14106, 6673, 6000, 6010, 8660, 5502, 2]
 // Exports: default, useQuestHomeOrbShopCarouselData
 
-// Module 14108 (ListEdgeSpacer)
+// Module 14104 (ListEdgeSpacer)
 import _slicedToArray from "_slicedToArray";
 import Layer from "Layer";
 import { View } from "getQuestContentName";
@@ -36,8 +36,8 @@ function QuestHomeOrbShopCarouselHeading(orbAmount) {
 function QuestHomeOrbShopCarouselPlaceholder() {
   const callback = React.useCallback(() => {
     const obj = { height: null };
-    obj[0] = callback(14110).QUEST_HOME_ORB_SHOP_REWARD_CARD_HEIGHT;
-    return callback3(callback2(14109), obj);
+    obj[0] = callback(14106).QUEST_HOME_ORB_SHOP_REWARD_CARD_HEIGHT;
+    return callback3(callback2(14105), obj);
   }, []);
   const callback1 = React.useCallback((arg0) => "placeholder-" + arg0, []);
   let obj = { horizontal: true, accessibilityRole: "list", accessibilityLabel: null, accessibilityState: null, data: null, keyExtractor: null, renderItem: null, decelerationRate: "fast", snapToInterval: null, showsHorizontalScrollIndicator: false, ListHeaderComponent: null, ListFooterComponent: null, ItemSeparatorComponent: null };
@@ -51,7 +51,7 @@ function QuestHomeOrbShopCarouselPlaceholder() {
   obj[10] = ListEdgeSpacer;
   obj[11] = ListEdgeSpacer;
   obj[12] = ItemSeparator;
-  return callback(require(6676) /* noop */.FlashList, obj);
+  return callback(require(6673) /* noop */.FlashList, obj);
 }
 ({ jsx: metroImportAll, jsxs: c9 } = jsxProd);
 const PX_16 = require("Themes").space.PX_16;
@@ -168,7 +168,7 @@ export const useQuestHomeOrbShopCarouselData = function useQuestHomeOrbShopCarou
   let variation;
   let orbAmount;
   ({ enabled, variation } = arg0);
-  const BountiesStage1Experiment = orbAmount(10883).BountiesStage1Experiment;
+  const BountiesStage1Experiment = orbAmount(10879).BountiesStage1Experiment;
   let obj = { location: QuestsExperimentLocations.QUEST_HOME_MOBILE };
   orbAmount = BountiesStage1Experiment.useConfig(obj).orbAmount;
   const items = [set];
@@ -186,7 +186,7 @@ export const useQuestHomeOrbShopCarouselData = function useQuestHomeOrbShopCarou
     return num;
   });
   const obj2 = orbAmount(589);
-  const popularOrbShopProducts = orbAmount(14095).usePopularOrbShopProducts({ enabled, variation });
+  const popularOrbShopProducts = orbAmount(14091).usePopularOrbShopProducts({ enabled, variation });
   obj = { products: popularOrbShopProducts.products, obtainableOrbRewards: stateFromStores, showPlaceholderCarousel: popularOrbShopProducts.showPlaceholderCarousel };
   return obj;
 };

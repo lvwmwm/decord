@@ -1,10 +1,10 @@
-// Module ID: 9620
-// Function ID: 9621
+// Module ID: 9617
+// Function ID: 9618
 // Name: _fetchStickerPack
-// Dependencies: [5, 4865, 1946, 4527, 1874, 5092, 676, 685, 4427, 530, 709, 4524, 7949, 1355, 12, 4528, 1236, 2]
+// Dependencies: [5, 4865, 1946, 4527, 1874, 5092, 676, 685, 4427, 530, 709, 4524, 7946, 1355, 12, 4528, 1236, 2]
 // Exports: addStickerPreview, clearStickerPreview, createGuildSticker, deleteGuildSticker, favoriteSticker, fetchGuildStickersWithCreator, fetchSticker, fetchStickerPack, fetchStickerPacks, unfavoriteSticker, updateGuildSticker
 
-// Module 9620 (_fetchStickerPack)
+// Module 9617 (_fetchStickerPack)
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import _getSystemLocale from "_getSystemLocale";
@@ -148,7 +148,7 @@ function _fetchStickerPacks() {
               sticker_packs = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp6) {

@@ -1,10 +1,10 @@
-// Module ID: 8513
-// Function ID: 8514
+// Module ID: 8510
+// Function ID: 8511
 // Name: ObscuredSurface
-// Dependencies: [19, 17, 21, 4189, 712, 8514, 4696, 4185, 1236, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 8511, 4696, 4185, 1236, 2]
 // Exports: default
 
-// Module 8513 (ObscuredSurface)
+// Module 8510 (ObscuredSurface)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -31,7 +31,7 @@ export default function ObscuredSurface(obscured) {
   let tmp3Result = children;
   if (obscured.obscured) {
     let obj = { value: null, children: null };
-    obj[0] = require(8514) /* context */.OBSCURED_VALUE;
+    obj[0] = require(8511) /* context */.OBSCURED_VALUE;
     obj = { style: null, children: null };
     obj[0] = tmp.container;
     obj = { style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", accessible: false, "aria-hidden": true, children: null };
@@ -64,7 +64,7 @@ export default function ObscuredSurface(obscured) {
     items[2] = closure_5(View, obj2);
     obj[1] = items;
     obj[1] = closure_5(View, obj);
-    tmp3Result = tmp3(require(8514) /* context */.ObscuredSurfaceContext.Provider, obj);
+    tmp3Result = tmp3(require(8511) /* context */.ObscuredSurfaceContext.Provider, obj);
   }
   return tmp3Result;
 };

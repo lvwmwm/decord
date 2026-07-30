@@ -1,9 +1,9 @@
-// Module ID: 12799
-// Function ID: 12800
+// Module ID: 12793
+// Function ID: 12794
 // Name: getVerificationKey
 // Dependencies: [707, 12, 589, 709, 2]
 
-// Module 12799 (getVerificationKey)
+// Module 12793 (getVerificationKey)
 import { Store } from "initialize";
 
 let c3 = false;

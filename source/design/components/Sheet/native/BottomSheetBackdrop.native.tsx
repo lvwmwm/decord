@@ -52,7 +52,7 @@ const memoResult = importAllResult.memo((animatedIndex) => {
       close();
     } else if ("collapse" === tmp3) {
       snapToIndex(num3);
-    } else if (typeof tmp3 !== "os") {
+    } else if (typeof tmp3 !== "reType") {
       snapToIndex(tmp3);
     }
   }, items);

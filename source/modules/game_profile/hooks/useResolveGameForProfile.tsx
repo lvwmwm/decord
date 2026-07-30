@@ -1,10 +1,10 @@
-// Module ID: 8478
-// Function ID: 8479
+// Module ID: 8475
+// Function ID: 8476
 // Name: useResolveGameForProfile
-// Dependencies: [5521, 4360, 8479, 4361, 5906, 2]
+// Dependencies: [5521, 4360, 8476, 4361, 5904, 2]
 // Exports: default
 
-// Module 8478 (useResolveGameForProfile)
+// Module 8475 (useResolveGameForProfile)
 let result = require("useResolveGame").fileFinishedImporting("modules/game_profile/hooks/useResolveGameForProfile.tsx");
 
 export default function useResolveGameForProfile(arg0) {
@@ -27,18 +27,18 @@ export default function useResolveGameForProfile(arg0) {
     gameId = tmp(4361).ROBLOX_GAME_ID;
   }
   obj[1] = gameId;
-  let tmp6Result = importDefault(8479)(obj);
+  let tmp6Result = importDefault(8476)(obj);
   let isRobloxSubgameGameResult = null != tmp6Result.gameRecord;
   if (isRobloxSubgameGameResult) {
     tmpResult = tmp(4360);
     isRobloxSubgameGameResult = tmpResult.isRobloxSubgameGame(tmp6Result.gameRecord);
   }
-  const tmp6 = importDefault(8479);
+  const tmp6 = importDefault(8476);
   let ROBLOX_GAME_ID;
   if (isRobloxSubgameGameResult) {
     ROBLOX_GAME_ID = tmp(4361).ROBLOX_GAME_ID;
   }
-  const game = require(5906) /* importDefaultResult1 */.useGame(ROBLOX_GAME_ID);
+  const game = require(5904) /* importDefaultResult1 */.useGame(ROBLOX_GAME_ID);
   let data = game.data;
   if (isRobloxSubgameGameResult) {
     obj = { gameId: null, gameRecord: null, isLoading: null };

@@ -1,7 +1,7 @@
 // Module ID: 3881
 // Function ID: 3882
 // Name: sanitizeURLPart
-// Dependencies: [5, 17, 3882, 676, 3, 3883, 3885, 3886, 3887, 3888, 3889, 1236, 4155, 500, 4157, 1469, 4170, 12988, 2]
+// Dependencies: [5, 17, 3882, 676, 3, 3883, 3885, 3886, 3887, 3888, 3889, 1236, 4155, 500, 4157, 1469, 4170, 12983, 2]
 // Exports: default
 
 // Module 3881 (sanitizeURLPart)
@@ -136,7 +136,7 @@ function _handleURL() {
               };
               c7 = 1;
               v0 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp8) {

@@ -1,10 +1,10 @@
-// Module ID: 11564
-// Function ID: 11565
+// Module ID: 11560
+// Function ID: 11561
 // Name: usePermissions
-// Dependencies: [19, 1218, 1372, 1932, 4110, 1862, 11565, 4407, 3817, 676, 589, 8227, 11, 12, 5923, 2]
+// Dependencies: [19, 1218, 1372, 1932, 4110, 1862, 11561, 4407, 3817, 676, 589, 8224, 11, 12, 5921, 2]
 // Exports: useChannelsMessaged, useCompletedStates, useGuildChannelCreated, useGuildMessaged, useGuildPersonalized, useGuildPopulated, usePermissions
 
-// Module 11564 (usePermissions)
+// Module 11560 (usePermissions)
 import noop from "noop";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";

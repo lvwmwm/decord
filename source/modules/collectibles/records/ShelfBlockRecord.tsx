@@ -1,9 +1,9 @@
-// Module ID: 5840
-// Function ID: 5841
+// Module ID: 5838
+// Function ID: 5839
 // Name: fromServer
 // Dependencies: [5829, 2]
 
-// Module 5840 (fromServer)
+// Module 5838 (fromServer)
 let prototype;
 prototype = function ShelfBlockRecord(show_button) {
   let category_sku_id;

@@ -1,10 +1,10 @@
-// Module ID: 7704
-// Function ID: 7705
+// Module ID: 7701
+// Function ID: 7702
 // Name: SettingsUpsellsConfigRegistry
-// Dependencies: [19, 7693, 7705, 7706, 7707, 1351, 2]
+// Dependencies: [19, 7690, 7702, 7703, 7704, 1351, 2]
 // Exports: useIarReportSettingsUpsells, useSettingsUpsellsConfigs
 
-// Module 7704 (SettingsUpsellsConfigRegistry)
+// Module 7701 (SettingsUpsellsConfigRegistry)
 import noop from "noop";
 
 const require = arg1;

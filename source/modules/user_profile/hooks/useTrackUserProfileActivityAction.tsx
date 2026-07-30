@@ -1,10 +1,10 @@
-// Module ID: 12013
-// Function ID: 12014
+// Module ID: 12007
+// Function ID: 12008
 // Name: useTrackUserProfileActivityAction
-// Dependencies: [19, 8687, 8107, 5515, 589, 8108, 2]
+// Dependencies: [19, 8684, 8104, 5515, 589, 8105, 2]
 // Exports: default
 
-// Module 12013 (useTrackUserProfileActivityAction)
+// Module 12007 (useTrackUserProfileActivityAction)
 import map from "map";
 
 require("noop").useCallback;

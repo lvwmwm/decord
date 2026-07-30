@@ -1,10 +1,10 @@
-// Module ID: 10686
-// Function ID: 10687
+// Module ID: 10682
+// Function ID: 10683
 // Name: useIsInvitedToSpeak
 // Dependencies: [1218, 1931, 589, 4374, 2]
 // Exports: default
 
-// Module 10686 (useIsInvitedToSpeak)
+// Module 10682 (useIsInvitedToSpeak)
 import fetchFingerprint from "fetchFingerprint";
 import handleConnectionOpen from "handleConnectionOpen";
 

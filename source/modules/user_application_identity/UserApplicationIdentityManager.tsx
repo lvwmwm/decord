@@ -1,14 +1,14 @@
-// Module ID: 16724
-// Function ID: 16725
+// Module ID: 16718
+// Function ID: 16719
 // Name: handleUserApplicationIdentityGatewayEvent
-// Dependencies: [12166, 5134, 2]
+// Dependencies: [12160, 5134, 2]
 
-// Module 16724 (handleUserApplicationIdentityGatewayEvent)
+// Module 16718 (handleUserApplicationIdentityGatewayEvent)
 import "initialize";
 
 const require = arg1;
 function handleUserApplicationIdentityGatewayEvent(user_id) {
-  const useUserApplicationIdentities = require(12166) /* fetchStore */.useUserApplicationIdentities;
+  const useUserApplicationIdentities = require(12160) /* fetchStore */.useUserApplicationIdentities;
   useUserApplicationIdentities.refetch(user_id.user_id);
 }
 let prototype = function UserApplicationIdentityManager() {

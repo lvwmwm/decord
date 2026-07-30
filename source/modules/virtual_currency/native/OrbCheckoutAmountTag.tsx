@@ -1,10 +1,10 @@
-// Module ID: 11886
-// Function ID: 11887
+// Module ID: 11882
+// Function ID: 11883
 // Name: OrbCheckoutAmountTag
-// Dependencies: [17, 21, 4189, 712, 8705, 4185, 1236, 2]
+// Dependencies: [17, 21, 4189, 712, 8701, 4185, 1236, 2]
 // Exports: default
 
-// Module 11886 (OrbCheckoutAmountTag)
+// Module 11882 (OrbCheckoutAmountTag)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -24,7 +24,7 @@ export default function OrbCheckoutAmountTag(orbAmount) {
   const tmp = callback2();
   let obj = { style: tmp.orbAmountTag, children: null };
   obj = { size: "custom", color: "icon-strong", style: tmp.orbsIcon };
-  const items = [callback(require(8705) /* OrbsIcon */.OrbsIcon, obj), ];
+  const items = [callback(require(8701) /* OrbsIcon */.OrbsIcon, obj), ];
   if (null == orbAmount) {
     const intl2 = tmp5(1236).intl;
     let stringResult = intl2.string(tmp5(1236).t.pfChQr);

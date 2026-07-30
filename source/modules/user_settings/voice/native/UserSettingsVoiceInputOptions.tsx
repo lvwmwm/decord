@@ -1,10 +1,10 @@
-// Module ID: 10769
-// Function ID: 10770
+// Module ID: 10765
+// Function ID: 10766
 // Name: handleInputModePress
-// Dependencies: [19, 17, 4236, 676, 21, 4189, 5548, 1236, 8838, 589, 10765, 5220, 4185, 5555, 10770, 2]
+// Dependencies: [19, 17, 4236, 676, 21, 4189, 5548, 1236, 8834, 589, 10761, 5220, 4185, 5555, 10766, 2]
 // Exports: default
 
-// Module 10769 (handleInputModePress)
+// Module 10765 (handleInputModePress)
 import "noop";
 import { View } from "get ActivityIndicator";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -27,14 +27,14 @@ function handleInputModePress() {
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[0] = intl2.string(require(1236) /* getSystemLocale */.t.Q8gkVL);
   obj1[1] = function onPress() {
-    callback(8838).setMode(constants.PUSH_TO_TALK);
+    callback(8834).setMode(constants.PUSH_TO_TALK);
   };
   const items = [obj1, ];
   const obj2 = { label: null, onPress: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[0] = intl3.string(require(1236) /* getSystemLocale */.t.cHCEOJ);
   obj2[1] = function onPress() {
-    callback(8838).setMode(constants.VOICE_ACTIVITY);
+    callback(8834).setMode(constants.VOICE_ACTIVITY);
   };
   items[1] = obj2;
   obj[2] = items;
@@ -95,7 +95,7 @@ export default function UserSettingsVoiceInputOptions() {
       obj = { threshold };
       return obj.setMode(inputMode, obj);
     };
-    obj5[1] = tmp5(importDefault(10770), obj6);
+    obj5[1] = tmp5(importDefault(10766), obj6);
     obj4[1] = tmp5(View, obj5);
     items2[1] = tmp5(tmp(5220).TableRow, obj4);
     obj2[0] = items2;
@@ -103,6 +103,6 @@ export default function UserSettingsVoiceInputOptions() {
   }
   items1[1] = tmp4Result;
   obj[2] = items1;
-  return closure_8(inputMode(10765).UserSettingsTableRowGroup, obj);
+  return closure_8(inputMode(10761).UserSettingsTableRowGroup, obj);
 };
 export { handleInputModePress };

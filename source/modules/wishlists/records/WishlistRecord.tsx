@@ -1,10 +1,10 @@
-// Module ID: 8675
-// Function ID: 8676
+// Module ID: 8672
+// Function ID: 8673
 // Name: fromServer
-// Dependencies: [1883, 4212, 8676, 8677, 8678, 8679, 676, 2]
+// Dependencies: [1883, 4212, 8673, 8674, 8675, 8676, 676, 2]
 // Exports: getWishlistProductLines, getWishlistSkuIds, wishlistHasSkuId
 
-// Module 8675 (fromServer)
+// Module 8672 (fromServer)
 import "toJS";
 import createExecutable from "createExecutable";
 import fromServer from "fromServer";

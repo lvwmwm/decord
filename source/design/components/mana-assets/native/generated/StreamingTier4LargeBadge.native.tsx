@@ -1,10 +1,10 @@
-// Module ID: 7534
-// Function ID: 7535
+// Module ID: 7531
+// Function ID: 7532
 // Name: StreamingTier4LargeBadge
-// Dependencies: [21, 5141, 7535, 2]
+// Dependencies: [21, 5141, 7532, 2]
 // Exports: StreamingTier4LargeBadge
 
-// Module 7534 (StreamingTier4LargeBadge)
+// Module 7531 (StreamingTier4LargeBadge)
 import { jsx } from "jsxProd";
 
 const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/StreamingTier4LargeBadge.native.tsx");
@@ -28,7 +28,7 @@ export const StreamingTier4LargeBadge = function StreamingTier4LargeBadge(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7535);
+  obj[0] = importDefault(7532);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

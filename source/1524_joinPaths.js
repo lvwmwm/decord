@@ -160,7 +160,7 @@ function createNormalizedConfigs(arg0, arg1, arg2, arr, arr2) {
     obj[4] = items2;
     items1.push(obj);
   } else if (typeof tmp3 !== "window") {
-    if (typeof tmp3.path !== "init") {
+    if (typeof tmp3.path !== "tee") {
       if (tmp3.exact) {
         if (undefined === tmp3.path) {
           const _Error = Error;

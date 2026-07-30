@@ -1,10 +1,10 @@
-// Module ID: 8722
-// Function ID: 8723
+// Module ID: 8718
+// Function ID: 8719
 // Name: fetchVirtualCurrencyBalance
-// Dependencies: [5, 4234, 676, 3, 709, 530, 4088, 6501, 1208, 2]
+// Dependencies: [5, 4234, 676, 3, 709, 530, 4088, 6498, 1208, 2]
 // Exports: redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 8722 (fetchVirtualCurrencyBalance)
+// Module 8718 (fetchVirtualCurrencyBalance)
 import sendRequest from "sendRequest";
 import addSku from "addSku";
 import { Endpoints } from "ME";
@@ -192,7 +192,7 @@ function _redeemVirtualCurrencyForSKU() {
                 let billingError;
                 c5 = 1;
                 logger = 1;
-                return { value: "ct", done: null };
+                return { value: "ct", done: "Array" };
               }
             } else if (1 === tmp7) {
               if (arg0 === 1) {
@@ -224,7 +224,7 @@ function _redeemVirtualCurrencyForSKU() {
                 }
                 let result = null != applicationId;
                 if (result) {
-                  let obj8 = callback(6501);
+                  let obj8 = callback(6498);
                   result = obj8.isTestModeForApplication(applicationId);
                 }
                 c8 = result;

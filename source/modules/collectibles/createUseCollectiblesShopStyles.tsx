@@ -1,10 +1,10 @@
-// Module ID: 9793
-// Function ID: 9794
+// Module ID: 9790
+// Function ID: 9791
 // Name: createUseCollectiblesShopStyles
-// Dependencies: [32, 4181, 7989, 5808, 647, 2]
+// Dependencies: [32, 4181, 7986, 5808, 647, 2]
 // Exports: default
 
-// Module 9793 (createUseCollectiblesShopStyles)
+// Module 9790 (createUseCollectiblesShopStyles)
 import _slicedToArray from "_slicedToArray";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 

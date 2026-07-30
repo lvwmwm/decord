@@ -1,7 +1,7 @@
 // Module ID: 3827
 // Function ID: 3828
 // Name: hasFlag
-// Dependencies: [1883, 676, 1384, 3828, 5884, 6074, 8028, 2]
+// Dependencies: [1883, 676, 1384, 3828, 5882, 6072, 8025, 2]
 // Exports: isMessageComponentsV2
 
 // Module 3827 (hasFlag)
@@ -202,7 +202,7 @@ prototype["getReaction"] = function getReaction(arg0) {
 };
 prototype["getContentMessage"] = function getContentMessage() {
   let self = this;
-  if (importDefault(5884)(this)) {
+  if (importDefault(5882)(this)) {
     self = this.messageSnapshots[0].message;
   }
   return self;
@@ -542,7 +542,7 @@ prototype["canDeleteOwnMessage"] = function canDeleteOwnMessage(id1) {
       tmp2 = 1 === Object.keys(prop).length;
     }
     if (tmp2) {
-      tmp2 = require(8028) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL in prop;
+      tmp2 = require(8025) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL in prop;
     }
     return tmp2;
   }

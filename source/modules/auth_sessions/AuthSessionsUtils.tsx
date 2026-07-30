@@ -1,10 +1,10 @@
-// Module ID: 13766
-// Function ID: 13767
+// Module ID: 13761
+// Function ID: 13762
 // Name: useAuthSessions
-// Dependencies: [19, 1218, 13767, 589, 1236, 3771, 2]
+// Dependencies: [19, 1218, 13762, 589, 1236, 3771, 2]
 // Exports: formatDate, useAuthSessions
 
-// Module 13766 (useAuthSessions)
+// Module 13761 (useAuthSessions)
 import noop from "noop";
 import fetchFingerprint from "fetchFingerprint";
 import handleInit from "handleInit";

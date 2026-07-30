@@ -1,9 +1,9 @@
-// Module ID: 15669
-// Function ID: 15670
+// Module ID: 15663
+// Function ID: 15664
 // Name: handleWebhookCreateUpdate
-// Dependencies: [15670, 12, 589, 709, 2]
+// Dependencies: [15664, 12, 589, 709, 2]
 
-// Module 15669 (handleWebhookCreateUpdate)
+// Module 15663 (handleWebhookCreateUpdate)
 import { Store } from "initialize";
 
 function handleWebhookCreateUpdate(arg0) {

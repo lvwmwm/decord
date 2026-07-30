@@ -1,10 +1,10 @@
-// Module ID: 10459
-// Function ID: 10460
+// Module ID: 10455
+// Function ID: 10456
 // Name: UnreadSettingNoticeConnected
-// Dependencies: [19, 17, 685, 21, 4189, 712, 10460, 4185, 1236, 4717, 10461, 2]
+// Dependencies: [19, 17, 685, 21, 4189, 712, 10456, 4185, 1236, 4717, 10457, 2]
 // Exports: default
 
-// Module 10459 (UnreadSettingNoticeConnected)
+// Module 10455 (UnreadSettingNoticeConnected)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { ChannelNotificationSettingsFlags as closure_4 } from "MAX_FAVORITES";
@@ -30,7 +30,7 @@ export default function UnreadSettingNoticeConnected(channel) {
   const tmp = createCacheKey();
   let obj = { style: tmp.content, children: null };
   obj = { id: channel.channel.id };
-  const items = [callback(importDefault(10460), obj), , ];
+  const items = [callback(importDefault(10456), obj), , ];
   obj = { style: tmp.informations, children: null };
   const obj1 = { variant: "text-md/semibold", children: null };
   const intl = _require(1236).intl;

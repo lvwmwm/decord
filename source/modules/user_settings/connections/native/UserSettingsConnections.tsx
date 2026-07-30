@@ -1,10 +1,10 @@
-// Module ID: 13989
-// Function ID: 13990
+// Module ID: 13984
+// Function ID: 13985
 // Name: ADD_CONNECTIONS_SHEET_SENTINEL
-// Dependencies: [19, 17, 5123, 1218, 4869, 1946, 676, 21, 4189, 712, 4125, 589, 12189, 5523, 4995, 4157, 13988, 1959, 8965, 13990, 7634, 13993, 4598, 13994, 2]
+// Dependencies: [19, 17, 5123, 1218, 4869, 1946, 676, 21, 4189, 712, 4125, 589, 12183, 5523, 4995, 4157, 13983, 1959, 8961, 13985, 7631, 13988, 4598, 13989, 2]
 // Exports: UserSettingsConnections
 
-// Module 13989 (ADD_CONNECTIONS_SHEET_SENTINEL)
+// Module 13984 (ADD_CONNECTIONS_SHEET_SENTINEL)
 import EmptyStateCard from "EmptyStateCard";
 import { ActivityIndicator } from "asyncRequireImpl";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
@@ -50,7 +50,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
   authorizedApps = stateFromStoresObject1.authorizedApps;
   const obj3 = selectedPlatformType(589);
   const tmp2 = importDefault;
-  const tmp7Result = importDefault(12189)(id.getId(), { includeHidden: true });
+  const tmp7Result = importDefault(12183)(id.getId(), { includeHidden: true });
   const prop = tmp7Result.filteredAppIdentities;
   const items3 = [authorizedAppsFetchState];
   const effect = authorizedAppsFetchState.useEffect(() => {
@@ -80,7 +80,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
     if (!tmp7Result.isLoading) {
       if (0 === accounts.length) {
         if (0 === prop.length) {
-          let tmp14 = callback(tmp2(13990), {});
+          let tmp14 = callback(tmp2(13985), {});
         }
       }
       obj = { style: null, children: null };
@@ -98,7 +98,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
       obj[1] = accounts.map((account) => outer1_11(callback(paths[23]), { theme: callback, locale: paths, account }, account.id));
       items5[1] = callback(tmp4(4598).Stack, obj);
       obj[1] = items5;
-      tmp14 = callback2(tmp4(7634).Form, obj);
+      tmp14 = callback2(tmp4(7631).Form, obj);
     }
     return tmp14;
   }

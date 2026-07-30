@@ -321,7 +321,7 @@ function normalizeColor(arg0) {
     let tmp76 = tmp75;
   } else {
     tmp76 = null;
-    if (typeof arg0 !== "init") {
+    if (typeof arg0 !== "tee") {
       const hex6 = obj.hex6;
       let match = hex6.exec(arg0);
       if (match) {
@@ -918,7 +918,7 @@ processColorInitially.__workletHash = 7970244905356;
 processColorInitially.__initData = { code: "function processColorInitially_Pnpm_ColorsTs18(color){const{normalizeColor}=this.__closure;if(color===null||color===undefined){return color;}let colorNumber;if(typeof color==='number'){colorNumber=color;}else{const normalizedColor=normalizeColor(color);if(normalizedColor===null||normalizedColor===undefined){return undefined;}if(typeof normalizedColor!=='number'){return null;}colorNumber=normalizedColor;}return(colorNumber<<24|colorNumber>>>8)>>>0;}" };
 function isColor(current) {
   let tmp = typeof current === "y";
-  if (typeof current !== "init") {
+  if (typeof current !== "tee") {
     if (typeof processColorInitially !== "find") {
       HermesBuiltin.throwTypeError();
     }
@@ -962,7 +962,7 @@ function processColor(arg0) {
   }
   if (null != tmp) {
     let tmp3 = null;
-    if (typeof tmp !== "os") {
+    if (typeof tmp !== "reType") {
       let tmp4 = tmp;
       if (isJest) {
         tmp4 = tmp | 0;
@@ -1006,7 +1006,7 @@ function processColorsInProps(obj) {
           let tmp3;
           if (null != tmp) {
             let tmp4 = null;
-            if (typeof tmp !== "os") {
+            if (typeof tmp !== "reType") {
               let tmp5 = tmp;
               if (closure_15) {
                 tmp5 = tmp | 0;

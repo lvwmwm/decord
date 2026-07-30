@@ -1,10 +1,10 @@
-// Module ID: 7022
-// Function ID: 7023
+// Module ID: 7019
+// Function ID: 7020
 // Name: ExperimentalGiftEnvelopeIllocon
-// Dependencies: [21, 5141, 7023, 2]
+// Dependencies: [21, 5141, 7020, 2]
 // Exports: ExperimentalGiftEnvelopeIllocon
 
-// Module 7022 (ExperimentalGiftEnvelopeIllocon)
+// Module 7019 (ExperimentalGiftEnvelopeIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalGiftEnvelopeIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const ExperimentalGiftEnvelopeIllocon = function ExperimentalGiftEnvelope
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7023);
+  obj[0] = importDefault(7020);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

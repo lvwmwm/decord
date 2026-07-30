@@ -316,7 +316,7 @@ const memoResult = memo(forwardRef(function BottomSheetModalComponent(name) {
     obj.onAnimate = tmp23;
     obj.$modal = true;
     tmp27Result = children;
-    if (typeof children !== "_") {
+    if (typeof children !== "ZodObject") {
       obj1 = { data: null };
       obj1[0] = first.data;
       tmp27Result = tmp27(children, obj1);

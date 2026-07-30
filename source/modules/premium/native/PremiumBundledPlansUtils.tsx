@@ -1,10 +1,10 @@
-// Module ID: 6250
-// Function ID: 6251
+// Module ID: 6247
+// Function ID: 6248
 // Name: getPremiumBundledItemsFromProductId
 // Dependencies: [32, 1876, 5675, 3835, 2]
 // Exports: getModifySubscriptionItemsForProduct, getPremiumBundleWithPredicate, getPremiumBundlesWithPredicate, getProductIdFromSubscription, getProductIdsForBothIntervals, getToggledIntervalProduct, makeExternalPaymentGatewayPlanIdOrThrow, productsHaveSamePerks, shouldAlwaysExcludeFromPlanSelect
 
-// Module 6250 (getPremiumBundledItemsFromProductId)
+// Module 6247 (getPremiumBundledItemsFromProductId)
 import _slicedToArray from "_slicedToArray";
 import GuildFeatures from "GuildFeatures";
 

@@ -1,10 +1,10 @@
-// Module ID: 15863
-// Function ID: 15864
+// Module ID: 15857
+// Function ID: 15858
 // Name: useIsConnectedToVoiceChannel
 // Dependencies: [1218, 4261, 4205, 676, 589, 2]
 // Exports: default
 
-// Module 15863 (useIsConnectedToVoiceChannel)
+// Module 15857 (useIsConnectedToVoiceChannel)
 import fetchFingerprint from "fetchFingerprint";
 import createRTCConnection from "createRTCConnection";
 import updateVoiceState from "updateVoiceState";

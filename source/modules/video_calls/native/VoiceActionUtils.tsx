@@ -1,10 +1,10 @@
-// Module ID: 10797
-// Function ID: 10798
+// Module ID: 10793
+// Function ID: 10794
 // Name: NOOP
-// Dependencies: [8831, 2]
+// Dependencies: [8827, 2]
 // Exports: createDeafHandler, createMuteHandler
 
-// Module 10797 (NOOP)
+// Module 10793 (NOOP)
 function NOOP() {
 
 }
@@ -24,23 +24,23 @@ export const createMuteHandler = function createMuteHandler(muteStates, stateFro
   if (flag) {
     let onPress = NOOP;
   } else {
-    onPress = require(8831) /* _handleToggleVideo */.handleToggleSelfMute;
+    onPress = require(8827) /* _handleToggleVideo */.handleToggleSelfMute;
   }
   if (muteStates.suppress) {
-    onPress = require(8831) /* _handleToggleVideo */.showSuppressedAlert;
+    onPress = require(8827) /* _handleToggleVideo */.showSuppressedAlert;
     dominantMuteState = tmp.SUPPRESS;
   }
   if (muteStates.mute) {
-    onPress = require(8831) /* _handleToggleVideo */.showServerMuteAlert;
+    onPress = require(8827) /* _handleToggleVideo */.showServerMuteAlert;
     dominantMuteState = tmp.SERVER_MUTE;
   }
   const mute = muteStates.selfMute || muteStates.mute || muteStates.suppress;
   return { mute, onPress, dominantMuteState };
 };
 export const createDeafHandler = function createDeafHandler(deafStates) {
-  let onPress = require(8831) /* _handleToggleVideo */.handleToggleSelfDeaf;
+  let onPress = require(8827) /* _handleToggleVideo */.handleToggleSelfDeaf;
   if (deafStates.deaf) {
-    onPress = require(8831) /* _handleToggleVideo */.showServerDeafenAlert;
+    onPress = require(8827) /* _handleToggleVideo */.showServerDeafenAlert;
   }
   const deaf = deafStates.selfDeaf || deafStates.deaf;
   return { deaf, onPress };

@@ -753,7 +753,7 @@ const items1 = [
         self._incrementalEvents = true;
       }
       let fn = callback(callback3(self.prototype), "addEventListener", self);
-      if (typeof fn !== "_") {
+      if (typeof fn !== "ZodObject") {
         fn = (items) => fn.apply(self, items);
       }
       const items = [arg0, arg1];

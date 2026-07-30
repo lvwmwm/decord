@@ -1,10 +1,10 @@
-// Module ID: 15665
-// Function ID: 15666
+// Module ID: 15659
+// Function ID: 15660
 // Name: LinkedLobbyFormSection
-// Dependencies: [19, 1372, 676, 21, 1480, 5521, 5554, 1236, 5220, 1297, 1416, 4189, 712, 589, 7634, 4598, 15561, 15666, 2]
+// Dependencies: [19, 1372, 676, 21, 1480, 5521, 5554, 1236, 5220, 1297, 1416, 4189, 712, 589, 7631, 4598, 15555, 15660, 2]
 // Exports: default
 
-// Module 15665 (LinkedLobbyFormSection)
+// Module 15659 (LinkedLobbyFormSection)
 import "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { ChannelSettingsSections } from "ME";
@@ -82,7 +82,7 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
       obj3[0] = intl.string(tmp(1236).t.jp25Id);
       const intl2 = tmp(1236).intl;
       obj3[1] = intl2.string(tmp(1236).t.mKIOkI);
-      obj3[2] = tmp6(tmp(15561).WebhookIcon, {});
+      obj3[2] = tmp6(tmp(15555).WebhookIcon, {});
       obj3[4] = function onPress() {
         return arr.push(outer1_4.WEBHOOKS);
       };
@@ -92,7 +92,7 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
       obj4[0] = intl3.string(tmp(1236).t.OrV60r);
       const intl4 = tmp(1236).intl;
       obj4[1] = intl4.string(tmp(1236).t.rQREJl);
-      obj4[2] = tmp6(tmp(15666).ChannelsFollowedIcon, {});
+      obj4[2] = tmp6(tmp(15660).ChannelsFollowedIcon, {});
       obj4[4] = function onPress() {
         return arr.push(outer1_4.CHANNELS_FOLLOWED);
       };
@@ -112,7 +112,7 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
     items2[1] = canUnlinkLobby;
     obj[2] = items2;
     obj[1] = closure_6(tmp(4598).Stack, obj);
-    tmp6Result = tmp6(tmp(7634).Form, obj);
+    tmp6Result = tmp6(tmp(7631).Form, obj);
   }
   return tmp6Result;
 };

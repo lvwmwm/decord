@@ -1,9 +1,9 @@
-// Module ID: 12704
-// Function ID: 12705
+// Module ID: 12698
+// Function ID: 12699
 // Name: WorkSchedulerTelemetryEvent
 // Dependencies: [32, 12, 2]
 
-// Module 12704 (WorkSchedulerTelemetryEvent)
+// Module 12698 (WorkSchedulerTelemetryEvent)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;

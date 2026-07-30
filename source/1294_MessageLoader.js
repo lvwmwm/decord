@@ -579,7 +579,7 @@ let items = [
                   }
                   c4 = 1;
                   c5 = 1;
-                  return { value: "ct", done: null };
+                  return { value: "ct", done: "Array" };
                 }
               } else if (arg0 === 1) {
                 c5 = 3;

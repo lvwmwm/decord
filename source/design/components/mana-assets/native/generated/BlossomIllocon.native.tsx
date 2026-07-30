@@ -1,10 +1,10 @@
-// Module ID: 6880
-// Function ID: 6881
+// Module ID: 6877
+// Function ID: 6878
 // Name: BlossomIllocon
-// Dependencies: [21, 5141, 6881, 2]
+// Dependencies: [21, 5141, 6878, 2]
 // Exports: BlossomIllocon
 
-// Module 6880 (BlossomIllocon)
+// Module 6877 (BlossomIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BlossomIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const BlossomIllocon = function BlossomIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6881);
+  obj[0] = importDefault(6878);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

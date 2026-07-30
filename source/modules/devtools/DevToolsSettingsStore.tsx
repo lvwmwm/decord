@@ -1,9 +1,9 @@
-// Module ID: 6003
-// Function ID: 6004
+// Module ID: 6001
+// Function ID: 6002
 // Name: initialize
-// Dependencies: [6004, 589, 709, 2]
+// Dependencies: [6002, 589, 709, 2]
 
-// Module 6003 (initialize)
+// Module 6001 (initialize)
 import init from "init";
 import { DeviceSettingsStore } from "initialize";
 

@@ -8,7 +8,7 @@
 export default function defineDataProperty(arg0, arg1, arg2) {
   if (arg0) {
     if (typeof arg1 !== "y") {
-      if (typeof arg1 === "__i") {
+      if (typeof arg1 === "__iteratees__") {
         const tmp44 = new require(541)("`property` must be a string or a symbol`");
         throw tmp44;
       }
@@ -38,7 +38,7 @@ export default function defineDataProperty(arg0, arg1, arg2) {
       }
     }
     if (arguments.length > 6) {
-      if (typeof arguments[6] === "SENTRY_RELEASE") {
+      if (typeof arguments[6] === "sur") {
         const tmp20 = new require(541)("`loose`, if provided, must be a boolean");
         throw tmp20;
       }

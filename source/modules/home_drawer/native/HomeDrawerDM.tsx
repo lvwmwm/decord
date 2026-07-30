@@ -1,10 +1,10 @@
-// Module ID: 15000
-// Function ID: 15001
+// Module ID: 14994
+// Function ID: 14995
 // Name: HomeDrawerDMExpandedChildren
-// Dependencies: [19, 17, 1376, 3826, 4385, 1874, 505, 21, 4189, 589, 4380, 15001, 14334, 14974, 10227, 4185, 10281, 3867, 14964, 4046, 4043, 2]
+// Dependencies: [19, 17, 1376, 3826, 4385, 1874, 505, 21, 4189, 589, 4380, 14995, 14330, 14968, 10223, 4185, 10277, 3867, 14958, 4046, 4043, 2]
 // Exports: default
 
-// Module 15000 (HomeDrawerDMExpandedChildren)
+// Module 14994 (HomeDrawerDMExpandedChildren)
 import MobileHomeDrawerExperiment from "MobileHomeDrawerExperiment";
 import { View } from "ChannelListLayoutTypes";
 import { isMultiUserDM } from "createChannelRecord";
@@ -46,9 +46,9 @@ function HomeDrawerDMExpandedChildren(channel) {
     return tmp2;
   });
   const obj2 = channel(589);
-  const tmp3 = importDefault(14334)(channel, { unread: channel(15001).useBaseChannelUnreadBadgeState(channel, false).unread });
+  const tmp3 = importDefault(14330)(channel, { unread: channel(14995).useBaseChannelUnreadBadgeState(channel, false).unread });
   c4 = tmp3;
-  const obj3 = channel(15001);
+  const obj3 = channel(14995);
   const items2 = [updateUserGuildSettingsInternal];
   stateFromStores1 = channel(589).useStateFromStores(items2, () => outer1_7.getChannelMuteConfig(channel.guild_id, channel.id));
   const items3 = [stateFromStores1];
@@ -85,10 +85,10 @@ function HomeDrawerDMExpandedChildren(channel) {
       }
       let tmp5Result = dependencyMap;
       if (isTemporary) {
-        tmp5Result = tmp5(14974);
+        tmp5Result = tmp5(14968);
         let BellSlashIcon = tmp5Result.BellZIcon;
       } else {
-        BellSlashIcon = tmp5(10227).BellSlashIcon;
+        BellSlashIcon = tmp5(10223).BellSlashIcon;
       }
     } else {
       let obj = { style: null, children: null };
@@ -109,11 +109,11 @@ function HomeDrawerDMExpandedChildren(channel) {
       obj[1] = tmp;
       obj[4] = channel(3867).ChannelListLayoutTypes.COZY;
       obj[5] = memo.isMuted;
-      tmp2 = outer1_10(channel(10281).ChannelRowPreview, obj);
+      tmp2 = outer1_10(channel(10277).ChannelRowPreview, obj);
     }
     return tmp2;
   }, items5);
-  return callback(channel(14964).HomeDrawerSharedItem, { title, subtitle });
+  return callback(channel(14958).HomeDrawerSharedItem, { title, subtitle });
 }
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 let closure_12 = createCacheKey.createStyles({ title: { flexDirection: "row", alignItems: "center", gap: 4 }, titleText: { flexShrink: 1 } });

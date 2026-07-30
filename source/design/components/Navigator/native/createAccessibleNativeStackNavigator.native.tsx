@@ -1,10 +1,10 @@
-// Module ID: 13216
-// Function ID: 13217
+// Module ID: 13211
+// Function ID: 13212
 // Name: navigatorFactory
-// Dependencies: [19, 21, 5570, 1481, 9109, 2]
+// Dependencies: [19, 21, 5570, 1481, 9105, 2]
 // Exports: useAccessibilityPatchedDescriptors
 
-// Module 13216 (navigatorFactory)
+// Module 13211 (navigatorFactory)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import Link from "Link";

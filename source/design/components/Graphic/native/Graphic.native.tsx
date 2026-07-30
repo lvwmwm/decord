@@ -1,10 +1,10 @@
-// Module ID: 6658
-// Function ID: 6659
+// Module ID: 6655
+// Function ID: 6656
 // Name: ImageGraphic
 // Dependencies: [19, 17, 21, 4189, 5141, 3901, 3999, 2]
 // Exports: Graphic
 
-// Module 6658 (ImageGraphic)
+// Module 6655 (ImageGraphic)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

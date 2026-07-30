@@ -1,9 +1,9 @@
-// Module ID: 15567
-// Function ID: 15568
+// Module ID: 15561
+// Function ID: 15562
 // Name: GuildChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1874, 9100, 676, 21, 500, 4189, 3893, 712, 689, 4050, 4599, 4179, 4717, 4185, 4611, 589, 4028, 4372, 2]
+// Dependencies: [32, 19, 17, 1874, 9096, 676, 21, 500, 4189, 3893, 712, 689, 4050, 4599, 4179, 4717, 4185, 4611, 589, 4028, 4372, 2]
 
-// Module 15567 (GuildChannelDetailsTopic)
+// Module 15561 (GuildChannelDetailsTopic)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "nameFromUser";
 import get_ActivityIndicator from "LinearGradient";

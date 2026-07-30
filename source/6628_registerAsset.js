@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset";
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3eb74a78606f69449db155f70f2ac217", name: "NitroWheelIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium_marketing/native/images", width: 364, height: 180, scales: [2, 3], hash: "d7e552e30321c5576e018b6c00e2147c", name: "img_stickers", type: "png" });

@@ -1,8 +1,8 @@
-// Module ID: 8275
-// Function ID: 8276
-// Dependencies: [4385, 676, 685, 709, 4999, 503, 1385, 530, 5135, 5130, 7688, 2]
+// Module ID: 8272
+// Function ID: 8273
+// Dependencies: [4385, 676, 685, 709, 4999, 503, 1385, 530, 5135, 5130, 7685, 2]
 
-// Module 8275
+// Module 8272
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import ME from "ME";
 import { ChannelNotificationSettingsFlags as closure_7 } from "MAX_FAVORITES";

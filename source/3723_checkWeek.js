@@ -31,7 +31,7 @@ let closure_1 = { lastWeek: checkWeek, yesterday: "'\u6628\u5929' p", today: "'\
 
 export default function formatRelative(arg0, arg1, arg2, arg3) {
   let tmpResult = tmp;
-  if (typeof table[arg0] !== "_") {
+  if (typeof table[arg0] !== "ZodObject") {
     tmpResult = tmp(arg1, arg2, arg3);
   }
   return tmpResult;

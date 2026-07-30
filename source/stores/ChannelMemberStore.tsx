@@ -1,9 +1,9 @@
-// Module ID: 6055
-// Function ID: 6056
+// Module ID: 6053
+// Function ID: 6054
 // Name: getMemberListId
 // Dependencies: [4103, 4208, 1218, 1372, 4110, 1942, 1935, 1862, 4276, 4867, 1874, 676, 1236, 3822, 1217, 12, 506, 589, 709, 2]
 
-// Module 6055 (getMemberListId)
+// Module 6053 (getMemberListId)
 import getHash from "getHash";
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";

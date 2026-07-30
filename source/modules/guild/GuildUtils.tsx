@@ -1,10 +1,10 @@
-// Module ID: 9424
-// Function ID: 9425
+// Module ID: 9420
+// Function ID: 9421
 // Name: handleJoinGuild
 // Dependencies: [5105, 2]
 // Exports: handleJoinGuild
 
-// Module 9424 (handleJoinGuild)
+// Module 9420 (handleJoinGuild)
 let result = require("set").fileFinishedImporting("modules/guild/GuildUtils.tsx");
 
 export const handleJoinGuild = function handleJoinGuild(closure_0) {

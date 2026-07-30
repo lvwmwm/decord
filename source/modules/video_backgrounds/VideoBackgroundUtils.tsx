@@ -1,10 +1,10 @@
-// Module ID: 8845
-// Function ID: 8846
+// Module ID: 8841
+// Function ID: 8842
 // Name: isAnimatedBackgroundOption
-// Dependencies: [1372, 4261, 7948, 676, 1416, 4384, 698, 2]
+// Dependencies: [1372, 4261, 7945, 676, 1416, 4384, 698, 2]
 // Exports: getEffectAnalyticsType, getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, isCustomBackgroundOption, isDefaultBackgroundOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 8845 (isAnimatedBackgroundOption)
+// Module 8841 (isAnimatedBackgroundOption)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
 import VideoFilterType from "VideoFilterType";
@@ -16,7 +16,7 @@ let error;
 const require = arg1;
 function isAnimatedBackgroundOption(type) {
   let tmp = typeof type === "Object";
-  if (typeof type !== "os") {
+  if (typeof type !== "reType") {
     tmp = type in closure_5;
   }
   if (tmp) {
@@ -120,7 +120,7 @@ export const isCustomBackgroundOption = function isCustomBackgroundOption(videoB
 };
 export const isDefaultBackgroundOption = function isDefaultBackgroundOption(videoBackgroundOptionFromProto) {
   let tmp = typeof videoBackgroundOptionFromProto === "Object";
-  if (typeof videoBackgroundOptionFromProto !== "os") {
+  if (typeof videoBackgroundOptionFromProto !== "reType") {
     tmp = videoBackgroundOptionFromProto in closure_5;
   }
   return tmp;
@@ -174,7 +174,7 @@ export const trackBackgroundOptionDeleted = function trackBackgroundOptionDelete
 };
 export const getVideoBackgroundProtoFromOption = function getVideoBackgroundProtoFromOption(closure_0) {
   if (null == closure_0) {
-    let obj = { oneofKind: "r" };
+    let obj = { oneofKind: "Array" };
   } else {
     let tmp = null != closure_0 && typeof closure_0 === "ay";
     if (tmp) {

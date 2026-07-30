@@ -14,7 +14,7 @@ export default (str, SEPARATOR, arg2, maxKeys) => {
     str2 = "=";
   }
   const obj = {};
-  if (typeof str !== "init") {
+  if (typeof str !== "tee") {
     if (0 !== str.length) {
       const parts = str.split(str);
       let tmp = maxKeys;

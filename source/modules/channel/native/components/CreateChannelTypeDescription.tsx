@@ -1,10 +1,10 @@
-// Module ID: 8280
-// Function ID: 8281
+// Module ID: 8277
+// Function ID: 8278
 // Name: CreateChannelTypeDescription
-// Dependencies: [19, 17, 8281, 676, 21, 8282, 5187, 4185, 1236, 2]
+// Dependencies: [19, 17, 8278, 676, 21, 8279, 5187, 4185, 1236, 2]
 // Exports: default
 
-// Module 8280 (CreateChannelTypeDescription)
+// Module 8277 (CreateChannelTypeDescription)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { GuildProfileFetchStatus } from "handleUpdateStart";
@@ -19,7 +19,7 @@ export default function CreateChannelTypeDescription(guildId) {
   let guildProfile;
   guildId = guildId.guildId;
   fetchGuildProfile = undefined;
-  let obj = fetchGuildProfile(8282);
+  let obj = fetchGuildProfile(8279);
   guildProfile = obj.useGuildProfile(guildId);
   ({ guildProfile, fetchGuildProfile } = guildProfile);
   let hasItem = null != guildProfile;

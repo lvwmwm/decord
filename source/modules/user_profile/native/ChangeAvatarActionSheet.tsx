@@ -1,10 +1,10 @@
-// Module ID: 13709
-// Function ID: 13710
+// Module ID: 13704
+// Function ID: 13705
 // Name: ChangeAvatarActionSheet
-// Dependencies: [19, 17, 1874, 676, 21, 4189, 712, 589, 3835, 5551, 5242, 1236, 6627, 5554, 5220, 7634, 13694, 2]
+// Dependencies: [19, 17, 1874, 676, 21, 4189, 712, 589, 3835, 5551, 5242, 1236, 6624, 5554, 5220, 7631, 13689, 2]
 // Exports: default
 
-// Module 13709 (ChangeAvatarActionSheet)
+// Module 13704 (ChangeAvatarActionSheet)
 import "noop";
 import { View } from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -59,7 +59,7 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.lqaIxI);
   if (isPremiumResult) {
-    isPremiumResult = tmp8(tmp2(6627).NitroWheelIcon, {});
+    isPremiumResult = tmp8(tmp2(6624).NitroWheelIcon, {});
   }
   obj[1] = isPremiumResult;
   ({ titleWrapper: obj3[2], titleContainer: obj3[3] } = tmp);
@@ -87,10 +87,10 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
     const obj4 = { text: null };
     const intl5 = tmp2(1236).intl;
     obj4[0] = intl5.string(tmp2(1236).t.xZ0Wot);
-    const items3 = [tmp8(tmp2(7634).FormLabel, obj4), ];
+    const items3 = [tmp8(tmp2(7631).FormLabel, obj4), ];
     const obj5 = { style: null, size: "sm" };
     obj5[0] = tmp.nitroWheel;
-    items3[1] = tmp8(tmp2(6627).NitroWheelIcon, obj5);
+    items3[1] = tmp8(tmp2(6624).NitroWheelIcon, obj5);
     obj3[1] = items3;
     obj2[0] = tmp7(View, obj3);
     const obj6 = { children: null };
@@ -98,19 +98,19 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
     obj7[0] = tmp.sublabel;
     const intl6 = tmp2(1236).intl;
     obj7[2] = intl6.string(tmp2(1236).t.L3UPqR);
-    const items4 = [tmp8(tmp2(7634).FormSubLabel, obj7), ];
+    const items4 = [tmp8(tmp2(7631).FormSubLabel, obj7), ];
     const obj8 = { style: null, children: null };
     obj8[0] = tmp.upsellButton;
     const obj9 = { analyticsObject: null, label: null };
     obj9[0] = AnalyticsObjects.ANIMATED_AVATAR;
     const intl7 = tmp2(1236).intl;
     obj9[1] = intl7.string(tmp2(1236).t.mr4K7D);
-    obj8[1] = tmp8(importDefault(13694), obj9);
+    obj8[1] = tmp8(importDefault(13689), obj9);
     items4[1] = tmp8(View, obj8);
     obj6[0] = items4;
     obj2[1] = tmp7(closure_8, obj6);
     showAnimatedAvatarUpsell = tmp8(tmp2(5220).TableRow, obj2);
-    const tmp5Result = importDefault(13694);
+    const tmp5Result = importDefault(13689);
   }
   items2[2] = showAnimatedAvatarUpsell;
   tmp8Result = null != handleEditAvatarDecorationSelect;
@@ -121,7 +121,7 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
     const obj12 = { text: null };
     const intl8 = tmp2(1236).intl;
     obj12[0] = intl8.string(tmp2(1236).t.BVcYCx);
-    obj11[1] = tmp8(tmp2(7634).FormLabel, obj12);
+    obj11[1] = tmp8(tmp2(7631).FormLabel, obj12);
     obj10[0] = tmp8(View, obj11);
     obj10[1] = handleEditAvatarDecorationSelect;
     tmp8Result = tmp8(tmp2(5220).TableRow, obj10);
@@ -135,7 +135,7 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
     obj14[0] = items5;
     const intl9 = tmp2(1236).intl;
     obj14[1] = intl9.string(tmp2(1236).t.twB3fz);
-    obj13[0] = tmp8(tmp2(7634).FormLabel, obj14);
+    obj13[0] = tmp8(tmp2(7631).FormLabel, obj14);
     obj13[1] = handleRemoveAvatarSelect;
     flag = tmp8(tmp2(5220).TableRow, obj13);
   }

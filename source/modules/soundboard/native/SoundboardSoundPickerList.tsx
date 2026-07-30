@@ -1,9 +1,9 @@
-// Module ID: 15896
-// Function ID: 15897
+// Module ID: 15890
+// Function ID: 15891
 // Name: getSectionLabel
-// Dependencies: [19, 17, 1874, 15891, 21, 4189, 712, 4642, 1236, 9427, 589, 3835, 6209, 9383, 15897, 4606, 12, 5566, 1297, 15903, 9624, 4153, 9382, 7678, 4185, 2]
+// Dependencies: [19, 17, 1874, 15885, 21, 4189, 712, 4642, 1236, 9423, 589, 3835, 6206, 9379, 15891, 4606, 12, 5566, 1297, 15897, 9621, 4153, 9378, 7675, 4185, 2]
 
-// Module 15896 (getSectionLabel)
+// Module 15890 (getSectionLabel)
 import importAllResult from "registerAsset";
 import { View } from "GuildIconSizes";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -50,15 +50,15 @@ function SoundPickerButtonRow(section) {
   } else {
     let result = !stateFromStores;
     if (!stateFromStores) {
-      result = tmp2(6209).isSoundboardSectionNitroLocked(channel.guild_id, section.category.categoryInfo);
-      const tmp2Result = tmp2(6209);
+      result = tmp2(6206).isSoundboardSectionNitroLocked(channel.guild_id, section.category.categoryInfo);
+      const tmp2Result = tmp2(6206);
     }
     c3 = result;
     obj = { style: null, children: null };
     const items1 = [tmp.row];
     obj[0] = items1;
     if (result) {
-      result = callback(tmp2(9383).PremiumUpsellGradientBackground, {});
+      result = callback(tmp2(9379).PremiumUpsellGradientBackground, {});
     }
     const items2 = [
       result,
@@ -171,7 +171,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
     while (iter !== undefined) {
       let tmp2 = callback;
       let tmp3 = dependencyMap;
-      let arr2 = callback(9427)(nextResult.items, c6);
+      let arr2 = callback(9423)(nextResult.items, c6);
       let tmp4 = closure_9;
       let obj = { category: null, height: null, soundsByRow: null };
       obj[0] = nextResult;
@@ -372,7 +372,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
     optimizeListItemRender: true,
     inActionSheet: true
   };
-  return callback(importDefault(7678), obj);
+  return callback(importDefault(7675), obj);
 });
 let result = require("mergeGuildAvatar").fileFinishedImporting("modules/soundboard/native/SoundboardSoundPickerList.tsx");
 

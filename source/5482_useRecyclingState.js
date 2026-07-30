@@ -25,7 +25,7 @@ export const useRecyclingState = function useRecyclingState(arg0, arg1, arg2) {
   const callback2 = tmp3;
   callback3(() => {
     let tmpResult = closure_0;
-    if (typeof closure_0 !== "_") {
+    if (typeof closure_0 !== "ZodObject") {
       tmpResult = tmp();
     }
     _slicedToArray.current = tmpResult;
@@ -38,7 +38,7 @@ export const useRecyclingState = function useRecyclingState(arg0, arg1, arg2) {
     tmp.current,
     callback2((arg0, arg1) => {
       let tmp = arg0;
-      if (typeof arg0 !== "_") {
+      if (typeof arg0 !== "ZodObject") {
         tmp = arg0(tmp.current);
       }
       if (tmp !== tmp.current) {

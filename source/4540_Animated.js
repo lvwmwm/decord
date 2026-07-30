@@ -141,7 +141,7 @@ const forwardRefResult = importDefaultResult.forwardRef(function InnerScreen(act
         };
       }
       obj.onGestureCancel = onGestureCancel;
-      const items = [style, { zIndex: "r" }];
+      const items = [style, { zIndex: "Array" }];
       obj.style = items;
       obj.activityState = activityState2;
       obj.screenId = tmp14;

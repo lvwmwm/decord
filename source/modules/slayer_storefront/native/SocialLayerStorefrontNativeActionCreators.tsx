@@ -1,10 +1,10 @@
-// Module ID: 9754
-// Function ID: 9755
+// Module ID: 9751
+// Function ID: 9752
 // Name: SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY
-// Dependencies: [21, 4529, 1236, 3161, 7888, 6688, 4395, 9755, 1959, 9766, 9770, 2]
+// Dependencies: [21, 4529, 1236, 3161, 7885, 6685, 4395, 9752, 1959, 9763, 9767, 2]
 // Exports: closeSocialLayerStorefrontGiftModal, closeSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontGiftModal, openSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontProductGiftPurchaseSuccessModal, openSocialLayerStorefrontProductSelfPurchaseSuccessModal, openSocialLayerStorefrontUnsupportedOnMobileAlert
 
-// Module 9754 (SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY)
+// Module 9751 (SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY)
 import { jsx } from "jsxProd";
 
 let c4 = "social-layer-storefront-product-details-native-modal";
@@ -25,12 +25,12 @@ export const openSocialLayerStorefrontUnsupportedOnMobileAlert = function openSo
   obj.show(obj);
 };
 export const openSocialLayerStorefrontProductDetailsModal = function openSocialLayerStorefrontProductDetailsModal(closure_0) {
-  let obj = require(7888) /* apexExperiment */;
+  let obj = require(7885) /* apexExperiment */;
   if (obj.getIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "social_layer_storefront_product_details_modal" })) {
-    const socialLayerStorefrontConfig = tmp(6688).fetchSocialLayerStorefrontConfig();
+    const socialLayerStorefrontConfig = tmp(6685).fetchSocialLayerStorefrontConfig();
     const obj5 = importDefault(4395);
-    obj5.pushLazy(tmp(1959)(9755, dependencyMap.paths), closure_0, c4, { presentation: "modal" });
-    const tmpResult = tmp(6688);
+    obj5.pushLazy(tmp(1959)(9752, dependencyMap.paths), closure_0, c4, { presentation: "modal" });
+    const tmpResult = tmp(6685);
   } else {
     obj = { title: null, body: null };
     const intl = tmp(1236).intl;
@@ -46,7 +46,7 @@ export const closeSocialLayerStorefrontProductDetailsModal = function closeSocia
 };
 export const openSocialLayerStorefrontGiftModal = function openSocialLayerStorefrontGiftModal(closure_0) {
   if (obj.getIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "social_layer_storefront_gift_modal" })) {
-    importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(9766, dependencyMap.paths), closure_0, c5);
+    importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(9763, dependencyMap.paths), closure_0, c5);
     const obj2 = importDefault(4395);
   }
 };

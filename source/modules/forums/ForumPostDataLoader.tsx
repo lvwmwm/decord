@@ -1,10 +1,10 @@
-// Module ID: 6064
-// Function ID: 6065
+// Module ID: 6062
+// Function ID: 6063
 // Name: loadForumPostData
-// Dependencies: [5, 1372, 6065, 6053, 6069, 676, 12, 11, 589, 530, 709, 2]
+// Dependencies: [5, 1372, 6063, 6051, 6067, 676, 12, 11, 589, 530, 709, 2]
 // Exports: preloadForumThreads, useFirstForumPostMessage, useMostRecentForumMessage
 
-// Module 6064 (loadForumPostData)
+// Module 6062 (loadForumPostData)
 import ME from "ME";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { computeThreadIdsSnapshot } from "maybeRebuildState";

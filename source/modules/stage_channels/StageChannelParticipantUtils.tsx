@@ -1,10 +1,10 @@
-// Module ID: 10721
-// Function ID: 10722
+// Module ID: 10717
+// Function ID: 10718
 // Name: participantMemberInfo
 // Dependencies: [687, 4028, 1236, 2]
 // Exports: participantMemberInfo
 
-// Module 10721 (participantMemberInfo)
+// Module 10717 (participantMemberInfo)
 const require = arg1;
 const DAY = require("set").Millis.DAY;
 const result = require("getSystemLocale").fileFinishedImporting("modules/stage_channels/StageChannelParticipantUtils.tsx");

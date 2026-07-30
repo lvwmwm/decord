@@ -1,10 +1,10 @@
-// Module ID: 10061
-// Function ID: 10062
+// Module ID: 10057
+// Function ID: 10058
 // Name: GuildDirectoryAddModal
-// Dependencies: [19, 10062, 21, 4189, 5140, 503, 5143, 10060, 10063, 10071, 10075, 10085, 5177, 5503, 5570, 1236, 2]
+// Dependencies: [19, 10058, 21, 4189, 5140, 503, 5143, 10056, 10059, 10067, 10071, 10081, 5177, 5503, 5570, 1236, 2]
 // Exports: GuildDirectoryAddModalScreen, default
 
-// Module 10061 (GuildDirectoryAddModal)
+// Module 10057 (GuildDirectoryAddModal)
 import "noop";
 import { GuildDirectoryCreate } from "GuildDirectoryCreate";
 import { jsx } from "jsxProd";
@@ -37,7 +37,7 @@ export default function GuildDirectoryAddModal(arg0) {
     };
     obj2[4] = function render(arg0) {
       const merged = Object.assign(arg0);
-      return callback2(callback(10063), {});
+      return callback2(callback(10059), {});
     };
     obj1[outer1_3.CREATE_OR_ADD] = obj2;
     obj1[outer1_3.DESCRIPTION] = {
@@ -48,7 +48,7 @@ export default function GuildDirectoryAddModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(10071), {});
+        return callback2(callback(10067), {});
       }
     };
     const obj3 = {
@@ -59,7 +59,7 @@ export default function GuildDirectoryAddModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(10071), {});
+        return callback2(callback(10067), {});
       }
     };
     obj1[outer1_3.TEMPLATES] = {
@@ -70,7 +70,7 @@ export default function GuildDirectoryAddModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(10075), {});
+        return callback2(callback(10071), {});
       }
     };
     obj5 = {
@@ -81,7 +81,7 @@ export default function GuildDirectoryAddModal(arg0) {
       impressionName: callback(outer1_2[5]).ImpressionNames.HUB_CREATE_GUILD_CUSTOMIZE,
       render(arg0) {
         const merged = Object.assign(arg0);
-        return callback2(callback(10085), {});
+        return callback2(callback(10081), {});
       }
     };
     obj1[outer1_3.CREATE] = obj5;

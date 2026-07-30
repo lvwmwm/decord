@@ -75,7 +75,7 @@ export default {
       obj.confirmText = confirmText;
       obj.isDismissable = isDismissable;
       ({ body, confirmText: confirmText2 } = obj);
-      let tmp9 = null != body && typeof body === "init";
+      let tmp9 = null != body && typeof body === "tee";
       if (tmp9) {
         const _Array = Array;
         tmp9 = !Array.isArray(body);
@@ -85,8 +85,8 @@ export default {
         tmp11 = "" === obj.title;
       }
       if (!tmp11) {
-        tmp11 = null != confirmText2 && typeof confirmText2 === "init";
-        const tmp12 = null != confirmText2 && typeof confirmText2 === "init";
+        tmp11 = null != confirmText2 && typeof confirmText2 === "tee";
+        const tmp12 = null != confirmText2 && typeof confirmText2 === "tee";
       }
       if (!tmp11) {
         tmp11 = tmp9;

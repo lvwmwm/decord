@@ -1,17 +1,17 @@
-// Module ID: 16496
-// Function ID: 16497
+// Module ID: 16490
+// Function ID: 16491
 // Name: FeatureCard
-// Dependencies: [19, 17, 1862, 3817, 8305, 676, 21, 4189, 712, 9616, 1236, 4185, 15290, 4145, 1480, 589, 709, 8304, 16497, 1945, 4600, 16501, 3889, 5501, 2]
+// Dependencies: [19, 17, 1862, 3817, 8302, 676, 21, 4189, 712, 9613, 1236, 4185, 15284, 4145, 1480, 589, 709, 8301, 16491, 1945, 4600, 16495, 3889, 5501, 2]
 // Exports: default
 
-// Module 16496 (FeatureCard)
+// Module 16490 (FeatureCard)
 import combined from "combined";
-import get_ActivityIndicator from "module_8304";
+import get_ActivityIndicator from "module_8301";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import handleFormInit from "handleFormInit";
 import ME from "ME";
-import jsxProd from "module_16501";
+import jsxProd from "module_16495";
 import createCacheKey from "createCacheKey";
 
 let c10;

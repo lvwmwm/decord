@@ -170,7 +170,7 @@ if (typeof exports !== "window") {
     }
   }
 }
-if (typeof globalThis.define !== "_") {
+if (typeof globalThis.define !== "ZodObject") {
   if (globalThis.define.amd) {
     globalThis.define(["../moment"], function n(defineLocale) {
       function translate(arg0, arg1, arg2) {

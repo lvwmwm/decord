@@ -270,7 +270,7 @@ arg5.extractChatModelRequestAttributes = function extractChatModelRequestAttribu
                   }
                   let str3 = "user";
                   let str4 = "user";
-                  if (typeof str2 !== "init") {
+                  if (typeof str2 !== "tee") {
                     let str13 = "system";
                     if (!str2.includes("System")) {
                       let tmp4 = str3;
@@ -764,7 +764,7 @@ arg5.normalizeLangChainMessages = function normalizeLangChainMessages(items) {
             }
             let str3 = "user";
             let str4 = "user";
-            if (typeof str2 !== "init") {
+            if (typeof str2 !== "tee") {
               let str13 = "system";
               if (!str2.includes("System")) {
                 let tmp4 = str3;

@@ -1,10 +1,10 @@
-// Module ID: 11529
-// Function ID: 11530
+// Module ID: 11525
+// Function ID: 11526
 // Name: stopLurkingAll
-// Dependencies: [5, 4261, 3818, 676, 709, 530, 6691, 1351, 11530, 11528, 2]
+// Dependencies: [5, 4261, 3818, 676, 709, 530, 6688, 1351, 11526, 11524, 2]
 // Exports: stopLurking
 
-// Module 11529 (stopLurkingAll)
+// Module 11525 (stopLurkingAll)
 import sendRequest from "sendRequest";
 import createRTCConnection from "createRTCConnection";
 import initialize from "initialize";
@@ -76,7 +76,7 @@ function _stopLurkingAll() {
                     let c6 = 0;
                     let c7 = 0;
                     let c5 = 0;
-                    return (/* F118886 */ function*() { ... })();
+                    return (/* F118897 */ function*() { ... })();
                   });
                   return function() {
                     const self = this;
@@ -266,7 +266,7 @@ function _stopLurking() {
             if (!obj9.getMobileLurkerServerPreview("LurkerActionCreators.stopLurking").stickyLurk) {
               const items = [callback, iter.getGuildId()];
               dependencyMap = items.filter(callback(1351).isNotNullish);
-              let obj3 = callback(6691);
+              let obj3 = callback(6688);
               if (obj3.getMobileLurkerServerPreview("LurkerActionCreators.stopLurking").enabled) {
                 lib = closure_1.filter((arg0) => !closure_2.includes(arg0));
                 if (lib.length > 0) {
@@ -348,7 +348,7 @@ function _stopLurking() {
               obj2[0] = callback2(dependencyMap);
               return obj2;
             }
-            obj9 = callback(6691);
+            obj9 = callback(6688);
           }
         }
       } else if (2 === tmp8) {

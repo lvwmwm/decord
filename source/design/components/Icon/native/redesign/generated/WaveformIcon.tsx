@@ -1,10 +1,10 @@
-// Module ID: 10296
-// Function ID: 10297
+// Module ID: 10292
+// Function ID: 10293
 // Name: WaveformIcon
-// Dependencies: [19, 21, 712, 3892, 10297, 2]
+// Dependencies: [19, 21, 712, 3892, 10293, 2]
 // Exports: WaveformIcon
 
-// Module 10296 (WaveformIcon)
+// Module 10292 (WaveformIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const WaveformIcon = function WaveformIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10297) /* registerAsset */;
+  obj[0] = require(10293) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

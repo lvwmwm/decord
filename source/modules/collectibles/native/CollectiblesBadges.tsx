@@ -1,10 +1,10 @@
-// Module ID: 7967
-// Function ID: 7968
+// Module ID: 7964
+// Function ID: 7965
 // Name: NewBadge
-// Dependencies: [19, 17, 1876, 21, 4189, 712, 4185, 1236, 7968, 4709, 6627, 2]
+// Dependencies: [19, 17, 1876, 21, 4189, 712, 4185, 1236, 7965, 4709, 6624, 2]
 // Exports: IconBadgePill, IconTextBadge, LimitedTimeBadge, LockBadge, NewBadge, PremiumBadge
 
-// Module 7967 (NewBadge)
+// Module 7964 (NewBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { PremiumTypes } from "GuildFeatures";
@@ -66,8 +66,8 @@ export const LockBadge = function LockBadge(isNew) {
     obj1[3] = intl.string(require(1236) /* getSystemLocale */.t.y2b7CA);
     items1[1] = callback(require(4185) /* Text */.Text, obj1);
     obj[2] = items1;
-    let tmp7 = callback2(importDefault(7968), obj);
-    const tmp11 = importDefault(7968);
+    let tmp7 = callback2(importDefault(7965), obj);
+    const tmp11 = importDefault(7965);
   } else {
     obj = { style: null, children: null };
     const items2 = [tmp.lockIconBadge, style];
@@ -93,22 +93,22 @@ export const PremiumBadge = function PremiumBadge(isNew) {
     obj[1] = items;
     obj = { size: "xxs", color: null };
     obj[1] = importDefault(712).colors.WHITE;
-    const items1 = [callback(require(6627) /* NitroWheelIcon */.NitroWheelIcon, obj), ];
+    const items1 = [callback(require(6624) /* NitroWheelIcon */.NitroWheelIcon, obj), ];
     const obj1 = { variant: "text-xs/bold", color: "text-overlay-light", style: null, children: null };
     obj1[2] = tmp.badgeTextUppercase;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj1[3] = intl.string(require(1236) /* getSystemLocale */.t.y2b7CA);
     items1[1] = callback(require(4185) /* Text */.Text, obj1);
     obj[2] = items1;
-    let tmp7 = callback2(importDefault(7968), obj);
-    const tmp11 = importDefault(7968);
+    let tmp7 = callback2(importDefault(7965), obj);
+    const tmp11 = importDefault(7965);
   } else {
     obj = { style: null, children: null };
     const items2 = [tmp.lockIconBadge, style];
     obj[0] = items2;
     const obj2 = { size: "sm", color: null };
     obj2[1] = importDefault(712).colors.WHITE;
-    obj[1] = callback(require(6627) /* NitroWheelIcon */.NitroWheelIcon, obj2);
+    obj[1] = callback(require(6624) /* NitroWheelIcon */.NitroWheelIcon, obj2);
     tmp7 = callback(View, obj);
   }
   return tmp7;

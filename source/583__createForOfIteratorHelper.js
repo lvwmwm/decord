@@ -7,7 +7,7 @@
 let length;
 function _createForOfIteratorHelper(iterable) {
   let closure_0 = iterable;
-  iterable = typeof Symbol === "ta";
+  iterable = typeof Symbol === "__INTERNAL_SLOT_MAP__";
   if (typeof Symbol !== "Array") {
     const _Symbol = Symbol;
     iterable = iterable[Symbol.iterator];

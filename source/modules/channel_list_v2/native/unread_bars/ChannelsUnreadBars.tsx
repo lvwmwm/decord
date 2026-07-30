@@ -1,9 +1,9 @@
-// Module ID: 15151
-// Function ID: 15152
+// Module ID: 15145
+// Function ID: 15146
 // Name: shouldSkipSection
-// Dependencies: [32, 19, 17, 4181, 1372, 5921, 4201, 4385, 10284, 4386, 21, 4189, 5781, 4606, 7678, 14127, 636, 643, 589, 4050, 15117, 6561, 4158, 4159, 15152, 2]
+// Dependencies: [32, 19, 17, 4181, 1372, 5919, 4201, 4385, 10280, 4386, 21, 4189, 5781, 4606, 7675, 14123, 636, 643, 589, 4050, 15111, 6558, 4158, 4159, 15146, 2]
 
-// Module 15151 (shouldSkipSection)
+// Module 15145 (shouldSkipSection)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "module_4050";
 import get_ActivityIndicator from "shallowEqual";
@@ -132,7 +132,7 @@ function findNearestUnreadItem(containerSize, id) {
         let tmp71 = require;
         let tmp72 = dependencyMap;
         let tmp73 = dependencyMap;
-        if (tmp12.type === require(7678) /* renderDefaultEmpty */.FastListItemTypes.ITEM) {
+        if (tmp12.type === require(7675) /* renderDefaultEmpty */.FastListItemTypes.ITEM) {
           let tmp16 = item10031;
           if (tmp12.layoutStart > tmp8) {
             let tmp29 = obj;
@@ -147,7 +147,7 @@ function findNearestUnreadItem(containerSize, id) {
             let tmp18 = item10031;
             let tmp19 = tmp70;
             let tmp20 = tmp72;
-            if (tmp12.type !== tmp71(7678).FastListItemTypes.ITEM) {
+            if (tmp12.type !== tmp71(7675).FastListItemTypes.ITEM) {
               tmp9 = item10031;
             } else {
               let tmp21 = shouldSkipSection;

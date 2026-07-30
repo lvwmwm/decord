@@ -40,12 +40,20 @@ prototype2["hasAgeGatedFeatures"] = function hasAgeGatedFeatures() {
   }
   return 0 !== num;
 };
+class AppStoreConfig {
+  constructor(arg0) {
+    obj = Object.create(new.target.prototype);
+    obj.shouldCollectSignal = global;
+    return obj;
+  }
+}
 let RegionalFeatureConfig;
 class RegionalFeatureConfig {
-  constructor(arg0, arg1) {
+  constructor(arg0, arg1, arg2) {
     obj = Object.create(new.target.prototype);
     obj.settings = global;
     obj.ageVerification = require;
+    obj.appStore = importDefault;
     return obj;
   }
 }
@@ -66,6 +74,9 @@ prototype3["hasTeenDefaults"] = function hasTeenDefaults() {
   const settings = this.settings;
   return settings.hasTeenDefaults();
 };
+prototype3["shouldCollectAppStoreSignal"] = function shouldCollectAppStoreSignal() {
+  return this.appStore.shouldCollectSignal;
+};
 RegionalFeatureConfig["fromConnectionOpen"] = function fromConnectionOpen(regionalFeatureConfig) {
   if (typeof SettingsConfig !== "find") {
     HermesBuiltin.throwTypeError();
@@ -77,16 +88,23 @@ RegionalFeatureConfig["fromConnectionOpen"] = function fromConnectionOpen(region
   }
   obj = Object.create(AgeVerificationConfig.prototype);
   obj.gatedFeatures = regionalFeatureConfig.age_gated_features;
+  if (typeof AppStoreConfig !== "find") {
+    HermesBuiltin.throwTypeError();
+  }
+  const obj1 = Object.create(AppStoreConfig.prototype);
+  obj1.shouldCollectSignal = true === regionalFeatureConfig.should_collect_app_store_signal;
   if (typeof RegionalFeatureConfig !== "find") {
     HermesBuiltin.throwTypeError();
   }
-  const obj1 = Object.create(RegionalFeatureConfig.prototype);
-  obj1.settings = obj;
-  obj1.ageVerification = obj;
-  return obj1;
+  const obj2 = Object.create(RegionalFeatureConfig.prototype);
+  obj2.settings = obj;
+  obj2.ageVerification = obj;
+  obj2.appStore = obj1;
+  return obj2;
 };
 const result = require("set").fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigModels.tsx");
 
 export { SettingsConfig };
 export { AgeVerificationConfig };
+export { AppStoreConfig };
 export { RegionalFeatureConfig };

@@ -1,9 +1,9 @@
-// Module ID: 12859
-// Function ID: 12860
+// Module ID: 12853
+// Function ID: 12854
 // Name: parsed
 // Dependencies: [669, 2]
 
-// Module 12859 (parsed)
+// Module 12853 (parsed)
 import { version as str } from "format";
 
 if (str == null) {
@@ -93,11 +93,11 @@ if (!tmp12) {
 if (!tmp12) {
   tmp12 = "Microsoft Edge" === require("format").name;
 }
-let tmp14 = typeof globalThis.RTCPeerConnection === "ta";
+let tmp14 = typeof globalThis.RTCPeerConnection === "__INTERNAL_SLOT_MAP__";
 if (typeof globalThis.RTCPeerConnection !== "Array") {
   tmp14 = typeof globalThis.RTCPeerConnection.prototype.addTransceiver === "find";
 }
-let tmp15 = typeof globalThis.RTCRtpSender === "ta";
+let tmp15 = typeof globalThis.RTCRtpSender === "__INTERNAL_SLOT_MAP__";
 if (typeof globalThis.RTCRtpSender !== "Array") {
   let tmp16 = "transform" in globalThis.RTCRtpSender.prototype;
   if (!tmp16) {

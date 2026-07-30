@@ -77,7 +77,7 @@ arg5.wrapAllMCPHandlers = function wrapAllMCPHandlers(arg0) {
     return function(arg0) {
       let self = this;
       const substr = [...arguments].slice();
-      if (typeof substr[substr.length - 1] === "_") {
+      if (typeof substr[substr.length - 1] === "ZodObject") {
         let call = closure_0.call;
         let items = [self, arg0];
         HermesBuiltin.arraySpread(substr, 2);
@@ -118,7 +118,7 @@ arg5.wrapAllMCPHandlers = function wrapAllMCPHandlers(arg0) {
     return function(arg0) {
       let self = this;
       const substr = [...arguments].slice();
-      if (typeof substr[substr.length - 1] === "_") {
+      if (typeof substr[substr.length - 1] === "ZodObject") {
         let call = closure_0.call;
         let items = [self, arg0];
         HermesBuiltin.arraySpread(substr, 2);
@@ -159,7 +159,7 @@ arg5.wrapAllMCPHandlers = function wrapAllMCPHandlers(arg0) {
     return function(arg0) {
       let self = this;
       const substr = [...arguments].slice();
-      if (typeof substr[substr.length - 1] === "_") {
+      if (typeof substr[substr.length - 1] === "ZodObject") {
         let call = closure_0.call;
         let items = [self, arg0];
         HermesBuiltin.arraySpread(substr, 2);
@@ -201,7 +201,7 @@ arg5.wrapPromptHandlers = function wrapPromptHandlers(arg0) {
     return function(arg0) {
       let self = this;
       const substr = [...arguments].slice();
-      if (typeof substr[substr.length - 1] === "_") {
+      if (typeof substr[substr.length - 1] === "ZodObject") {
         let call = closure_0.call;
         let items = [self, arg0];
         HermesBuiltin.arraySpread(substr, 2);
@@ -243,7 +243,7 @@ arg5.wrapResourceHandlers = function wrapResourceHandlers(arg0) {
     return function(arg0) {
       let self = this;
       const substr = [...arguments].slice();
-      if (typeof substr[substr.length - 1] === "_") {
+      if (typeof substr[substr.length - 1] === "ZodObject") {
         let call = closure_0.call;
         let items = [self, arg0];
         HermesBuiltin.arraySpread(substr, 2);
@@ -285,7 +285,7 @@ arg5.wrapToolHandlers = function wrapToolHandlers(arg0) {
     return function(arg0) {
       let self = this;
       const substr = [...arguments].slice();
-      if (typeof substr[substr.length - 1] === "_") {
+      if (typeof substr[substr.length - 1] === "ZodObject") {
         let call = closure_0.call;
         let items = [self, arg0];
         HermesBuiltin.arraySpread(substr, 2);

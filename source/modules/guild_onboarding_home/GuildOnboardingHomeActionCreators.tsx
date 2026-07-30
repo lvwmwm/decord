@@ -1,10 +1,10 @@
-// Module ID: 11438
-// Function ID: 11439
+// Module ID: 11434
+// Function ID: 11435
 // Name: _fetchGuildHomeSettings
-// Dependencies: [5, 1934, 1372, 4391, 4392, 676, 709, 530, 11439, 698, 4197, 11, 2]
+// Dependencies: [5, 1934, 1372, 4391, 4392, 676, 709, 530, 11435, 698, 4197, 11, 2]
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel
 
-// Module 11438 (_fetchGuildHomeSettings)
+// Module 11434 (_fetchGuildHomeSettings)
 import closure_3 from "ME";
 import initialize from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -85,8 +85,8 @@ function _fetchGuildHomeSettings() {
             return obj5;
           } else {
             lib = arg1;
-            dependencyMap = callback(11439).settingsFromServer(lib.body);
-            const obj8 = callback(11439);
+            dependencyMap = callback(11435).settingsFromServer(lib.body);
+            const obj8 = callback(11435);
             const obj6 = { type: "GUILD_HOME_SETTINGS_FETCH_SUCCESS", guildId: null, homeSettings: null };
             obj6[1] = callback;
             obj6[2] = dependencyMap;
@@ -191,8 +191,8 @@ function _fetchNewMemberActions() {
             return obj5;
           } else {
             lib = arg1;
-            dependencyMap = callback(11439).actionsFromServer(lib.body);
-            const obj11 = callback(11439);
+            dependencyMap = callback(11435).actionsFromServer(lib.body);
+            const obj11 = callback(11435);
             const obj6 = { type: "GUILD_NEW_MEMBER_ACTIONS_FETCH_SUCCESS", guildId: null, memberActions: null };
             obj6[1] = callback;
             obj6[2] = dependencyMap;

@@ -1,10 +1,10 @@
-// Module ID: 8019
-// Function ID: 8020
+// Module ID: 8016
+// Function ID: 8017
 // Name: _executeCommand
-// Dependencies: [5, 5048, 1946, 1862, 4525, 1874, 6091, 676, 4182, 5704, 709, 6076, 5702, 1906, 8020, 8022, 38, 8023, 4384, 6089, 6186, 3830, 1351, 6039, 7896, 6145, 7895, 8024, 7985, 6038, 5713, 4727, 1236, 4723, 6153, 2]
+// Dependencies: [5, 5048, 1946, 1862, 4525, 1874, 6089, 676, 4182, 5704, 709, 6074, 5702, 1906, 8017, 8019, 38, 8020, 4384, 6087, 6183, 3830, 1351, 6037, 7893, 6143, 7892, 8021, 7982, 6036, 5713, 4727, 1236, 4723, 6151, 2]
 // Exports: default, retryCommandMessage
 
-// Module 8019 (_executeCommand)
+// Module 8016 (_executeCommand)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import _getSystemLocale from "_getSystemLocale";
@@ -123,7 +123,7 @@ function _executeCommand() {
                 c15 = 1;
                 let num11 = 1;
                 channelId = 1;
-                return { value: "ct", done: null };
+                return { value: "ct", done: "Array" };
               }
             } else {
               if (1 === tmp4) {
@@ -1332,7 +1332,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     obj[3] = tmp;
     let nonce = interactionLifecycleOptions.nonce;
     if (nonce == null) {
-      let obj1 = obj(6039);
+      let obj1 = obj(6037);
       nonce = obj1.createNonce();
     }
     obj[4] = nonce;
@@ -1349,7 +1349,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     obj[1] = applicationId;
     obj[2] = id;
     obj[4] = obj;
-    importAll(7896).addQueued(obj.nonce, obj);
+    importAll(7893).addQueued(obj.nonce, obj);
     if (null != attachments) {
       if (attachments.length > 0) {
         (function stageAttachments(attachments, nonce, id, maxSizeCallback) {
@@ -1401,12 +1401,12 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
         })(attachments, obj.nonce, id, maxSizeCallback);
       }
     }
-    const obj3 = importAll(7896);
+    const obj3 = importAll(7893);
     const tmp10 = obj;
     obj1 = { type: null, message: null };
-    obj1[0] = tmp10(6145).MessageDataType.COMMAND;
+    obj1[0] = tmp10(6143).MessageDataType.COMMAND;
     obj1[1] = obj;
-    onMessageSuccess(6145).enqueue(obj1, (ok) => {
+    onMessageSuccess(6143).enqueue(obj1, (ok) => {
       let applicationId;
       let channelId;
       let guildId;
@@ -1424,7 +1424,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
         callback2();
       }
     });
-    const obj6 = onMessageSuccess(6145);
+    const obj6 = onMessageSuccess(6143);
   }
 }
 function displayInteractionLifecycleInChat() {
@@ -1839,7 +1839,7 @@ function _stageAttachments() {
                 if (callback2 != null) {
                   tmp(dependencyMap, arg0);
                 }
-                let obj = callback2(7896);
+                let obj = callback2(7893);
                 const intl = callback(1236).intl;
                 obj = { maxSize: null };
                 obj[0] = callback(4727).sizeString(dependencyMap);
@@ -1872,7 +1872,7 @@ function _stageAttachments() {
                   largestUploadedFileSize = 4;
                   c8 = 1;
                   let obj3 = { value: null, done: false };
-                  obj3[0] = callback(6153)(lib);
+                  obj3[0] = callback(6151)(lib);
                   return obj3;
                 }
               }
@@ -1883,7 +1883,7 @@ function _stageAttachments() {
           } else {
             if (2 === tmp8) {
               totalSize = 0;
-              obj3 = callback2(7896);
+              obj3 = callback2(7893);
               let intl = lib(1236).intl;
               const obj4 = { count: null };
               obj4[0] = lib.length;

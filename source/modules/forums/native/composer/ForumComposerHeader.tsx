@@ -1,10 +1,10 @@
-// Module ID: 9582
-// Function ID: 9583
+// Module ID: 9579
+// Function ID: 9580
 // Name: ForumComposerHeader
 // Dependencies: [19, 17, 21, 4189, 712, 4380, 4717, 1236, 5175, 4702, 4185, 4690, 2]
 // Exports: default
 
-// Module 9582 (ForumComposerHeader)
+// Module 9579 (ForumComposerHeader)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

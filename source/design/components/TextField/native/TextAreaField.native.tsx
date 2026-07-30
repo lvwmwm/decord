@@ -1,9 +1,9 @@
-// Module ID: 7645
-// Function ID: 7646
+// Module ID: 7642
+// Function ID: 7643
 // Name: TextAreaField
-// Dependencies: [19, 17, 21, 4189, 712, 6740, 6734, 3895, 7646, 1236, 6743, 4185, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 6737, 6731, 3895, 7643, 1236, 6740, 4185, 2]
 
-// Module 7645 (TextAreaField)
+// Module 7642 (TextAreaField)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -25,12 +25,12 @@ const forwardRefResult = require("noop").forwardRef((isDisabled, ref) => {
   let state;
   let label = isDisabled;
   let obj = dependencyMap;
-  let obj1 = require(6740) /* useInputStyles */;
+  let obj1 = require(6737) /* useInputStyles */;
   obj = { size: "lg", isRound: false, isDisabled: isDisabled.isDisabled };
   const inputStyles = obj1.useInputStyles(obj);
   const tmp2 = callback2();
   const maxLength = isDisabled.maxLength;
-  let obj3 = require(6734) /* useTextFieldState */;
+  let obj3 = require(6731) /* useTextFieldState */;
   const textField = obj3.useTextField(isDisabled, ref);
   ({ state, inputProps, innerRef } = textField);
   let obj4 = require(3895) /* getNodeText */;
@@ -40,7 +40,7 @@ const forwardRefResult = require("noop").forwardRef((isDisabled, ref) => {
   if (null != maxLength) {
     diff = maxLength - state.value.length;
   }
-  const result = _8Q_k1s(7646);
+  const result = _8Q_k1s(7643);
   obj = { currentLength: state.value.length, maxLength, message: null };
   const intl = _8Q_k1s(1236).intl;
   obj[2] = intl.string(_8Q_k1s(1236).t.c2Jqed);
@@ -58,11 +58,11 @@ const forwardRefResult = require("noop").forwardRef((isDisabled, ref) => {
   obj2.style = items;
   obj2.placeholderTextColor = inputStyles.placeholderText.color;
   obj2.multiline = true;
-  const items1 = [callback(_8Q_k1s(6743).NativeTextInput, obj2), ];
+  const items1 = [callback(_8Q_k1s(6740).NativeTextInput, obj2), ];
   if (null == diff) {
     items1[1] = null;
     obj1.children = items1;
-    return closure_4(_8Q_k1s(6740).InputFieldContainer, obj1);
+    return closure_4(_8Q_k1s(6737).InputFieldContainer, obj1);
   } else {
     obj3 = { style: null, children: null };
     obj3[0] = tmp2.maxLengthIndicator;

@@ -1,9 +1,9 @@
-// Module ID: 5967
-// Function ID: 5968
+// Module ID: 5965
+// Function ID: 5966
 // Name: rebuild
-// Dependencies: [5048, 5096, 1372, 1932, 1942, 1935, 1862, 3817, 3826, 4029, 1874, 676, 4624, 1877, 4380, 3888, 4622, 5968, 3862, 3830, 4629, 4028, 4379, 12, 4634, 1236, 5969, 5031, 1351, 3834, 2]
+// Dependencies: [5048, 5096, 1372, 1932, 1942, 1935, 1862, 3817, 3826, 4029, 1874, 676, 4624, 1877, 4380, 3888, 4622, 5966, 3862, 3830, 4629, 4028, 4379, 12, 4634, 1236, 5967, 5031, 1351, 3834, 2]
 
-// Module 5967 (rebuild)
+// Module 5965 (rebuild)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import rebuild from "rebuild";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -946,7 +946,7 @@ obj[13] = {
 };
 let obj4 = {};
 obj4.match = function match(arg0, textExclusions) {
-  if (typeof textExclusions.textExclusions !== "init") {
+  if (typeof textExclusions.textExclusions !== "tee") {
     if ("" !== textExclusions.textExclusions) {
       const result = str7(4629).textMarkupPatternWithExclusions(textExclusions.textExclusions);
       let match = result.exec(arg0);

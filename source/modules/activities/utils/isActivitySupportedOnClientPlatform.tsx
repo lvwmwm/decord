@@ -1,10 +1,10 @@
-// Module ID: 10605
-// Function ID: 10606
+// Module ID: 10601
+// Function ID: 10602
 // Name: isActivitySupportedOnClientPlatform
 // Dependencies: [500, 1906, 2]
 // Exports: default
 
-// Module 10605 (isActivitySupportedOnClientPlatform)
+// Module 10601 (isActivitySupportedOnClientPlatform)
 const result = require("set").fileFinishedImporting("modules/activities/utils/isActivitySupportedOnClientPlatform.tsx");
 
 export default function isActivitySupportedOnClientPlatform(arr) {

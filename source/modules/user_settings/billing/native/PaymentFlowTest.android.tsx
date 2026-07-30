@@ -1,9 +1,9 @@
-// Module ID: 14793
-// Function ID: 14794
+// Module ID: 14786
+// Function ID: 14787
 // Name: TestView
-// Dependencies: [32, 19, 17, 1874, 21, 4189, 712, 647, 4598, 4185, 5222, 6727, 4600, 4157, 14794, 1959, 5215, 8764, 2]
+// Dependencies: [32, 19, 17, 1874, 21, 4189, 712, 647, 4598, 4185, 5222, 6724, 4600, 4157, 14787, 1959, 5215, 8760, 2]
 
-// Module 14793 (TestView)
+// Module 14786 (TestView)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { ScrollView } from "NativePaymentContextProvider";
@@ -95,7 +95,7 @@ const memoResult = importAllResult.memo(function PaymentFlowTest() {
   obj = { paddingBottom: insets.bottom, paddingTop: insets.top, paddingLeft: insets.left, paddingRight: insets.right };
   obj[2] = callback(TestView, {});
   obj[2] = callback(ScrollView, obj);
-  return callback(require(8764) /* NativePaymentContextProvider */.NativePaymentContextProvider, obj);
+  return callback(require(8760) /* NativePaymentContextProvider */.NativePaymentContextProvider, obj);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/billing/native/PaymentFlowTest.android.tsx");
 

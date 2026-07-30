@@ -1,10 +1,10 @@
-// Module ID: 16368
-// Function ID: 16369
+// Module ID: 16362
+// Function ID: 16363
 // Name: GuildSettingsOwnerConfiguredContentLevel
-// Dependencies: [19, 3817, 8305, 676, 21, 4189, 712, 7708, 8304, 5554, 1236, 1945, 5555, 3901, 5143, 6752, 7655, 13868, 7654, 4185, 7634, 4598, 5501, 1480, 589, 2]
+// Dependencies: [19, 3817, 8302, 676, 21, 4189, 712, 7705, 8301, 5554, 1236, 1945, 5555, 3901, 5143, 6749, 7652, 13863, 7651, 4185, 7631, 4598, 5501, 1480, 589, 2]
 // Exports: default
 
-// Module 16368 (GuildSettingsOwnerConfiguredContentLevel)
+// Module 16362 (GuildSettingsOwnerConfiguredContentLevel)
 import importAllResult from "Text";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import handleFormInit from "handleFormInit";
@@ -30,7 +30,7 @@ function GuildSettingsOwnerConfiguredContentLevel(guild) {
   if (DEFAULT2 == null) {
     DEFAULT2 = constants3.DEFAULT;
   }
-  let obj = require(7708) /* useUserIsTeen */;
+  let obj = require(7705) /* useUserIsTeen */;
   let tmp7 = DEFAULT === constants3.AGE_RESTRICTED;
   const userIsTeen = obj.useUserIsTeen();
   if (tmp7) {
@@ -124,7 +124,7 @@ prototype["renderVerificationLevelSection"] = function renderVerificationLevelSe
     return self.handleVerificationLevelChange(verificationLevel);
   };
   const features = guild.features;
-  const verificationLevelOptions = self(13868).generateVerificationLevelOptions(features.has(constants.COMMUNITY));
+  const verificationLevelOptions = self(13863).generateVerificationLevelOptions(features.has(constants.COMMUNITY));
   obj[5] = verificationLevelOptions.map((arg0) => {
     let color;
     let desc;
@@ -153,7 +153,7 @@ prototype["renderVerificationLevelSection"] = function renderVerificationLevelSe
     obj[3] = tmp5;
     return outer1_10(self(outer1_2[18]).TableRadioRow, obj, "level-" + value);
   });
-  return callback(self(7655).TableRadioGroup, obj, "level-section");
+  return callback(self(7652).TableRadioGroup, obj, "level-section");
 };
 prototype["renderExplicitContentFilter"] = function renderExplicitContentFilter() {
   const self = this;
@@ -171,7 +171,7 @@ prototype["renderExplicitContentFilter"] = function renderExplicitContentFilter(
   };
   const obj3 = importDefault(1945);
   const features = guild.features;
-  const contentFilterOptions = self(13868).generateContentFilterOptions(features.has(constants.COMMUNITY));
+  const contentFilterOptions = self(13863).generateContentFilterOptions(features.has(constants.COMMUNITY));
   obj[5] = contentFilterOptions.map((value) => {
     let desc;
     let disabled;
@@ -187,7 +187,7 @@ prototype["renderExplicitContentFilter"] = function renderExplicitContentFilter(
     obj[3] = tmp2;
     return outer1_10(self(outer1_2[18]).TableRadioRow, obj, "filter-" + value);
   });
-  return callback(self(7655).TableRadioGroup, obj, "filter-section");
+  return callback(self(7652).TableRadioGroup, obj, "filter-section");
 };
 prototype["render"] = function render() {
   let guild;
@@ -210,23 +210,23 @@ prototype["render"] = function render() {
   items1[2] = canManageGuild;
   obj[2] = items1;
   obj[1] = closure_11(require(4598) /* Stack */.Stack, obj);
-  const items2 = [closure_10(require(7634) /* Form */.Form, obj), closure_10(require(5501) /* NavScrim */.NavScrim, {})];
+  const items2 = [closure_10(require(7631) /* Form */.Form, obj), closure_10(require(5501) /* NavScrim */.NavScrim, {})];
   obj1[0] = items2;
   return closure_11(closure_12, obj1);
 };
 prototype["componentWillUnmount"] = function componentWillUnmount() {
   if (this.props.hasChanges) {
-    importDefault(8304).cancelChanges(tmp.props.guild.id);
-    const obj = importDefault(8304);
+    importDefault(8301).cancelChanges(tmp.props.guild.id);
+    const obj = importDefault(8301);
   }
 };
 prototype["handleVerificationLevelChange"] = function handleVerificationLevelChange(verificationLevel) {
-  let obj = importDefault(8304);
+  let obj = importDefault(8301);
   obj = { verificationLevel };
   obj.updateGuild(obj);
 };
 prototype["handleExplicitContentFilterChange"] = function handleExplicitContentFilterChange(explicitContentFilter) {
-  let obj = importDefault(8304);
+  let obj = importDefault(8301);
   obj = { explicitContentFilter };
   obj.updateGuild(obj);
 };

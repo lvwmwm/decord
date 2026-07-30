@@ -1,9 +1,9 @@
-// Module ID: 16166
-// Function ID: 16167
+// Module ID: 16160
+// Function ID: 16161
 // Name: handleAppStateUpdate
-// Dependencies: [32, 5, 11508, 5734, 5735, 687, 3, 5134, 6041, 500, 1907, 1908, 1923, 2]
+// Dependencies: [32, 5, 11504, 5734, 5735, 687, 3, 5134, 6039, 500, 1907, 1908, 1923, 2]
 
-// Module 16166 (handleAppStateUpdate)
+// Module 16160 (handleAppStateUpdate)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import initialize from "initialize";

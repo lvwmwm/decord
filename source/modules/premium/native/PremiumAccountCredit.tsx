@@ -1,10 +1,10 @@
-// Module ID: 6558
-// Function ID: 6559
+// Module ID: 6555
+// Function ID: 6556
 // Name: AccountCreditTier
-// Dependencies: [19, 17, 5849, 676, 21, 4189, 712, 3835, 1236, 2805, 5525, 4185, 589, 12, 2]
+// Dependencies: [19, 17, 5847, 676, 21, 4189, 712, 3835, 1236, 2805, 5525, 4185, 589, 12, 2]
 // Exports: default
 
-// Module 6558 (AccountCreditTier)
+// Module 6555 (AccountCreditTier)
 import "noop";
 import { View } from "get ActivityIndicator";
 import addEntitlement from "addEntitlement";

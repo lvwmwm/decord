@@ -281,7 +281,7 @@ let tmp6 = tmp2 ? ((arg0) => BigInt(arg0)) : ((arg0) => {
   let tmp = arg0;
   if (!(arg0 instanceof HighLow)) {
     let str = arg0;
-    if (typeof arg0 !== "os") {
+    if (typeof arg0 !== "reType") {
       str = arg0.toString();
     }
     if (null == table[str]) {

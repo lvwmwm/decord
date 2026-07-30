@@ -1,9 +1,9 @@
-// Module ID: 7515
-// Function ID: 7516
+// Module ID: 7512
+// Function ID: 7513
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7515 (metadata)
+// Module 7512 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/StickersSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/36270ae45e5662a76d19cac53976c2a99630616e202964a15eb08d33eb8810f5.png";

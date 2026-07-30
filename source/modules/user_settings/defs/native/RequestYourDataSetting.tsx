@@ -1,10 +1,10 @@
-// Module ID: 13889
-// Function ID: 13890
+// Module ID: 13884
+// Function ID: 13885
 // Name: useIsHarvestRequestDisabled
-// Dependencies: [17, 1874, 7756, 676, 21, 700, 9226, 705, 589, 3802, 13890, 1236, 3771, 10120, 13892, 2]
+// Dependencies: [17, 1874, 7753, 676, 21, 700, 9222, 705, 589, 3802, 13885, 1236, 3771, 10116, 13887, 2]
 // Exports: fetchHarvestStatus, useIsHarvestRequestDisabled
 
-// Module 13889 (useIsHarvestRequestDisabled)
+// Module 13884 (useIsHarvestRequestDisabled)
 import { ActivityIndicator } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -23,8 +23,8 @@ function useIsHarvestRequestDisabled() {
   let tmp6 = null == stateFromStores;
   if (!tmp6) {
     if (!harvestDisabledResult) {
-      harvestDisabledResult = tmp(13890).harvestDisabled(tmp4, stateFromStores);
-      const tmpResult = tmp(13890);
+      harvestDisabledResult = tmp(13885).harvestDisabled(tmp4, stateFromStores);
+      const tmpResult = tmp(13885);
     }
     tmp6 = harvestDisabledResult;
   }
@@ -77,8 +77,8 @@ obj = {
     let tmp6 = null == stateFromStores;
     if (!tmp6) {
       if (!harvestDisabledResult) {
-        harvestDisabledResult = tmp(13890).harvestDisabled(tmp4, stateFromStores);
-        const tmpResult = tmp(13890);
+        harvestDisabledResult = tmp(13885).harvestDisabled(tmp4, stateFromStores);
+        const tmpResult = tmp(13885);
       }
       tmp6 = harvestDisabledResult;
     }
@@ -97,7 +97,7 @@ obj = {
 obj = {
   route: UserSettingsSections.REQUEST_DATA,
   getComponent() {
-    return require(13892).default;
+    return require(13887).default;
   }
 };
 const route = createToggle.createRoute(obj);
@@ -105,7 +105,7 @@ const result = require("MobileSetting").fileFinishedImporting("modules/user_sett
 
 export default route;
 export const fetchHarvestStatus = function fetchHarvestStatus() {
-  const harvestStatus = require(9226) /* saveProfileAndAccountRequest */.getHarvestStatus();
+  const harvestStatus = require(9222) /* saveProfileAndAccountRequest */.getHarvestStatus();
   harvestStatus.then((arg0) => {
     const callback = arg0;
     callback(705).batchUpdates(() => {

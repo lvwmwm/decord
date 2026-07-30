@@ -58,7 +58,7 @@ function visit(arg0, __sentry_skip_normalization__) {
   if (null != __sentry_skip_normalization__) {
     let items = ["boolean", "string"];
     if (!items.includes(typeof __sentry_skip_normalization__)) {
-      if (typeof __sentry_skip_normalization__ !== "os") {
+      if (typeof __sentry_skip_normalization__ !== "reType") {
         let _Number = Number;
       }
       let str = (function stringifyValue(arg0, _events) {
@@ -102,7 +102,7 @@ function visit(arg0, __sentry_skip_normalization__) {
               if (tmp4Result.isSyntheticEvent(_events)) {
                 return "[SyntheticEvent]";
               } else {
-                if (typeof _events !== "os") {
+                if (typeof _events !== "reType") {
                   const _Number = Number;
                   if (!Number.isFinite(_events)) {
                     const _HermesInternal = HermesInternal;
@@ -154,7 +154,7 @@ function visit(arg0, __sentry_skip_normalization__) {
         if (__sentry_skip_normalization__.__sentry_skip_normalization__) {
           return __sentry_skip_normalization__;
         } else {
-          if (typeof __sentry_skip_normalization__.__sentry_override_normalization_depth__ !== "os") {
+          if (typeof __sentry_skip_normalization__.__sentry_override_normalization_depth__ !== "reType") {
             num = __sentry_skip_normalization__.__sentry_override_normalization_depth__;
           }
           if (0 === num) {
@@ -163,7 +163,7 @@ function visit(arg0, __sentry_skip_normalization__) {
             return "[Circular ~]";
           } else {
             if (__sentry_skip_normalization__) {
-              if (typeof __sentry_skip_normalization__.toJSON !== "_") {
+              if (typeof __sentry_skip_normalization__.toJSON !== "ZodObject") {
                 try {
                   return visit("", __sentry_skip_normalization__.toJSON(), num - 1, num2, tmp6);
                 } catch (err) {

@@ -1,10 +1,10 @@
-// Module ID: 15766
-// Function ID: 15767
+// Module ID: 15760
+// Function ID: 15761
 // Name: HasBadgeCoachmark
-// Dependencies: [19, 17, 8109, 1369, 21, 4189, 712, 4157, 4041, 5243, 9706, 4185, 1236, 2319, 4600, 9699, 5535, 15767, 8768, 589, 8106, 2]
+// Dependencies: [19, 17, 8106, 1369, 21, 4189, 712, 4157, 4041, 5243, 9703, 4185, 1236, 2319, 4600, 9696, 5535, 15761, 8764, 589, 8103, 2]
 // Exports: default
 
-// Module 15766 (HasBadgeCoachmark)
+// Module 15760 (HasBadgeCoachmark)
 import initialize from "initialize";
 import get_ActivityIndicator from "metadata";
 import map from "map";
@@ -44,7 +44,7 @@ function HasBadgeCoachmark(markAsDismissed) {
   if (tmp4Result) {
     const obj1 = { icon: null, size: 120 };
     obj1[0] = currentTier.simple_icon_url;
-    tmp4Result = tmp4(importDefault(9706), obj1);
+    tmp4Result = tmp4(importDefault(9703), obj1);
   }
   obj[1] = tmp4Result;
   const items2 = [closure_8(closure_5, obj), , ];
@@ -99,7 +99,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   obj = { style: tmp.graphicContainer, children: null };
   const obj1 = { source: null, style: null };
   const obj2 = { uri: null };
-  obj2[0] = importDefault(15767);
+  obj2[0] = importDefault(15761);
   obj1[0] = obj2;
   obj1[1] = tmp.newBadgeImage;
   obj[1] = callback(closure_4, obj1);
@@ -121,7 +121,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   obj7[1] = intl3.string(importDefault(2319).DZnomS);
   const obj8 = { size: "sm", color: null };
   obj8[1] = importDefault(712).colors.CONTROL_PRIMARY_TEXT_DEFAULT;
-  obj7[2] = callback(markAsDismissed(8768).GiftIcon, obj8);
+  obj7[2] = callback(markAsDismissed(8764).GiftIcon, obj8);
   obj7[3] = callback;
   obj6[1] = callback(markAsDismissed(4600).Button, obj7);
   items2[2] = callback(closure_5, obj6);
@@ -151,9 +151,9 @@ export default function GiftingBadgesCoachmarkActionSheet(markAsDismissed) {
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     let getCurrentTier;
     let getSingleRequirementProgress;
-    const obj = { currentTier: getCurrentTier(callback(8106).BadgeId.GIFTING), giftCount: null };
+    const obj = { currentTier: getCurrentTier(callback(8103).BadgeId.GIFTING), giftCount: null };
     ({ getCurrentTier, getSingleRequirementProgress } = map);
-    const singleRequirementProgress = getSingleRequirementProgress(callback(8106).BadgeId.GIFTING);
+    const singleRequirementProgress = getSingleRequirementProgress(callback(8103).BadgeId.GIFTING);
     let current;
     if (singleRequirementProgress != null) {
       current = singleRequirementProgress.current;

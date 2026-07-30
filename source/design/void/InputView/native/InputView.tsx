@@ -1,9 +1,9 @@
-// Module ID: 13234
-// Function ID: 13235
+// Module ID: 13229
+// Function ID: 13230
 // Name: Fonts
-// Dependencies: [109, 19, 17, 676, 21, 4189, 712, 5030, 3901, 1297, 4185, 1236, 6736, 4035, 11350, 500, 2]
+// Dependencies: [109, 19, 17, 676, 21, 4189, 712, 5030, 3901, 1297, 4185, 1236, 6733, 4035, 11346, 500, 2]
 
-// Module 13234 (Fonts)
+// Module 13229 (Fonts)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { Fonts } from "ME";
@@ -288,7 +288,7 @@ prototype["renderTrailingButton"] = function renderTrailingButton() {
         clearButtonAccessibilityLabel = intl.string(require(1236) /* getSystemLocale */.t.VkKicb);
       }
       obj[5] = clearButtonAccessibilityLabel;
-      obj[6] = closure_9(require(6736) /* CircleXIcon */.CircleXIcon, { size: "sm" });
+      obj[6] = closure_9(require(6733) /* CircleXIcon */.CircleXIcon, { size: "sm" });
       let tmp3Result = tmp3(closure_6, obj);
       const tmp4 = closure_6;
     } else {
@@ -372,7 +372,7 @@ prototype["renderTextView"] = function renderTextView() {
     const found = items1.filter(Boolean);
     const joined = found.join(",");
     if (inActionSheet) {
-      let TextInput = importDefault(11350);
+      let TextInput = importDefault(11346);
     } else {
       TextInput = require(1297) /* Button */.TextInput;
     }

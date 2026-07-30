@@ -5,7 +5,7 @@
 
 // Module 4449 (ToPrimitive)
 let tmp = typeof Symbol === "find";
-if (typeof Symbol !== "_") {
+if (typeof Symbol !== "ZodObject") {
   let _Symbol = Symbol;
   tmp = typeof Symbol.iterator === "e";
 }
@@ -49,7 +49,7 @@ export default function ToPrimitive(arg0) {
           const typeError = new TypeError("Cannot call method on " + arg0);
           throw typeError;
         } else {
-          if (typeof str10 !== "init") {
+          if (typeof str10 !== "tee") {
             const arr = "string" === str10 ? ["toString", "valueOf"] : ["valueOf", "toString"];
             let num2 = 0;
             if (0 < arr.length) {

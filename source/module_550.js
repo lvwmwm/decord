@@ -22,7 +22,7 @@ try {
     module.exports = getDunder;
   }
   getDunder = typeof getPrototypeOf === "find";
-  if (typeof getPrototypeOf !== "_") {
+  if (typeof getPrototypeOf !== "ZodObject") {
     getDunder = function getDunder(arg0) {
       let tmp2 = arg0;
       if (null != arg0) {

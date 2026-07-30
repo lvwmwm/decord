@@ -1,10 +1,10 @@
-// Module ID: 11182
-// Function ID: 11183
+// Module ID: 11178
+// Function ID: 11179
 // Name: ForumPostUsername
-// Dependencies: [19, 17, 4181, 11178, 21, 4189, 9133, 1382, 10889, 11183, 589, 7744, 1297, 4185, 2]
+// Dependencies: [19, 17, 4181, 11174, 21, 4189, 9129, 1382, 10885, 11179, 589, 7741, 1297, 4185, 2]
 // Exports: ForumPostAuthor, ForumPostMessageAuthor
 
-// Module 11182 (ForumPostUsername)
+// Module 11178 (ForumPostUsername)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -33,7 +33,7 @@ function ForumPostUsername(arg0) {
   if (useForumChannelStore(thread.parent_id).layoutType === require(1382) /* set */.ForumLayout.GRID) {
     num = 72;
   }
-  const diff = importDefault(10889)() - tmp2(11183).GRID_HORIZONTAL_PADDING - num;
+  const diff = importDefault(10885)() - tmp2(11179).GRID_HORIZONTAL_PADDING - num;
   let tmp2Result = tmp2(589);
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = tmp2Result.useStateFromStores(items, () => roleStyle.roleStyle);
@@ -42,9 +42,9 @@ function ForumPostUsername(arg0) {
       let obj = { color: null };
       obj[0] = authorColor;
     }
-    tmp2Result = tmp2(7744);
+    tmp2Result = tmp2(7741);
     const processColorStringsArray = tmp2Result.useProcessColorStringsArray(authorColors);
-    const tmp2Result1 = tmp2(7744);
+    const tmp2Result1 = tmp2(7741);
     const useIsRoleStyleAndRoleColorsEligibleForERC = tmp2Result1.useIsRoleStyleAndRoleColorsEligibleForERC;
     const guild_id = thread.guild_id;
     let tmp19Result = null;
@@ -98,7 +98,7 @@ export const ForumPostAuthor = function ForumPostAuthor(thread) {
   let user;
   thread = thread.thread;
   ({ hasUnreads, suffix, containerStyle, roleDotStyle, textStyle } = thread);
-  let obj = require(9133) /* useLoadForumUnreadCounts */;
+  let obj = require(9129) /* useLoadForumUnreadCounts */;
   const forumPostAuthor = obj.useForumPostAuthor(thread);
   ({ user, author } = forumPostAuthor);
   let nick;
@@ -153,7 +153,7 @@ export const ForumPostMessageAuthor = function ForumPostMessageAuthor(thread) {
   let textStyle;
   thread = thread.thread;
   ({ message, hasUnreads, suffix, containerStyle, roleDotStyle, textStyle } = thread);
-  let obj = require(9133) /* useLoadForumUnreadCounts */;
+  let obj = require(9129) /* useLoadForumUnreadCounts */;
   const forumPostMessageAuthor = obj.useForumPostMessageAuthor(message, thread);
   const user = forumPostMessageAuthor.user;
   obj = { thread, authorId: null, authorName: null, authorColor: null, authorColors: null, suffix: null, containerStyle: null, roleDotStyle: null, textStyle: null, hasUnreads: null };

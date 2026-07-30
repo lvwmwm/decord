@@ -1,10 +1,10 @@
-// Module ID: 8379
-// Function ID: 8380
+// Module ID: 8376
+// Function ID: 8377
 // Name: DisplayName
-// Dependencies: [19, 17, 8105, 5563, 676, 7724, 21, 4189, 712, 8380, 8381, 8390, 4717, 8392, 4185, 8394, 6014, 4041, 8428, 1236, 8440, 8106, 6611, 3890, 8095, 8445, 8446, 8450, 5036, 698, 6012, 500, 8451, 1474, 7942, 8452, 4028, 2]
+// Dependencies: [19, 17, 8102, 5563, 676, 7721, 21, 4189, 712, 8377, 8378, 8387, 4717, 8389, 4185, 8391, 6012, 4041, 8425, 1236, 8437, 8103, 6608, 3890, 8092, 8442, 8443, 8447, 5036, 698, 6010, 500, 8448, 1474, 7939, 8449, 4028, 2]
 // Exports: default
 
-// Module 8379 (DisplayName)
+// Module 8376 (DisplayName)
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "getRootNavigationRef";
 import USER_PROFILE_TOOLTIP_DELAY from "USER_PROFILE_TOOLTIP_DELAY";
@@ -482,7 +482,7 @@ function GuildTag(style) {
     showToastOnPress = false;
   }
   const tmp = createCacheKey();
-  let obj = require(7942) /* guildHasTag */;
+  let obj = require(7939) /* guildHasTag */;
   let primaryGuild;
   if (user != null) {
     primaryGuild = user.primaryGuild;
@@ -518,7 +518,7 @@ function GuildTag(style) {
       obj1[3] = obj2;
       obj1[4] = guildTagBadgeSize;
       obj1[5] = guildTagTextVariant;
-      obj[1] = callback(importDefault(8452), obj1);
+      obj[1] = callback(importDefault(8449), obj1);
       tmp9 = callback(closure_5, obj);
     }
   }

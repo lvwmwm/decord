@@ -1,9 +1,9 @@
-// Module ID: 8844
-// Function ID: 8845
+// Module ID: 8840
+// Function ID: 8841
 // Name: handleSyncedStoresUpdate
-// Dependencies: [1340, 4236, 1931, 1874, 8845, 4286, 589, 709, 2]
+// Dependencies: [1340, 4236, 1931, 1874, 8841, 4286, 589, 709, 2]
 
-// Module 8844 (handleSyncedStoresUpdate)
+// Module 8840 (handleSyncedStoresUpdate)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -25,7 +25,7 @@ function handleSyncedStoresUpdate() {
     if (voiceAndVideo != null) {
       prop = voiceAndVideo.videoBackgroundFilterDesktop;
     }
-    const videoBackgroundOptionFromProto = require(8845) /* isAnimatedBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
+    const videoBackgroundOptionFromProto = require(8841) /* isAnimatedBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
     let isVideoEnabledResult = null != obj.getVoiceChannelId();
     if (isVideoEnabledResult) {
       isVideoEnabledResult = _detectH265HardwareDecode.isVideoEnabled();
@@ -34,7 +34,7 @@ function handleSyncedStoresUpdate() {
       isVideoEnabledResult = null != videoBackgroundOptionFromProto;
     }
     flag2 = isVideoEnabledResult;
-    const obj2 = require(8845) /* isAnimatedBackgroundOption */;
+    const obj2 = require(8841) /* isAnimatedBackgroundOption */;
   }
   if (flag2) {
     c8 = true;
@@ -118,8 +118,8 @@ const videoBackgroundStore = new VideoBackgroundStore(require("dispatcher"), {
         if (voiceAndVideo != null) {
           prop = voiceAndVideo.videoBackgroundFilterDesktop;
         }
-        backgroundOption = require(8845) /* isAnimatedBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
-        const obj = require(8845) /* isAnimatedBackgroundOption */;
+        backgroundOption = require(8841) /* isAnimatedBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
+        const obj = require(8841) /* isAnimatedBackgroundOption */;
       }
       let isVideoEnabledResult = null != store.getVoiceChannelId();
       if (isVideoEnabledResult) {

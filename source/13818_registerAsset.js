@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset";
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images", width: 92, height: 92, scales: [2], hash: "f7554503ce3d782dd42ebcfb917a0839", name: "googleauth-logo", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 288, height: 128, scales: [2, 3], hash: "eadd5a45fc81983d8eab2051527e663f", name: "img_security", type: "png" });

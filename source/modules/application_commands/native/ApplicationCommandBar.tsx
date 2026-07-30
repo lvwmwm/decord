@@ -1,10 +1,10 @@
-// Module ID: 11501
-// Function ID: 11502
+// Module ID: 11497
+// Function ID: 11498
 // Name: ApplicationCommandOptionItem
-// Dependencies: [32, 19, 17, 1942, 21, 4189, 712, 5030, 4717, 1236, 1297, 589, 11391, 5141, 4185, 7634, 8125, 11502, 2]
+// Dependencies: [32, 19, 17, 1942, 21, 4189, 712, 5030, 4717, 1236, 1297, 589, 11387, 5141, 4185, 7631, 8122, 11498, 2]
 // Exports: default
 
-// Module 11501 (ApplicationCommandOptionItem)
+// Module 11497 (ApplicationCommandOptionItem)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "DescriptionEllipsis";
@@ -416,7 +416,7 @@ export default function _default(command) {
   }
   items5[3] = tmp19Result;
   obj[5] = items5;
-  const items8 = [c10(c6, obj), callback2(command(7634).FormDivider, { style: tmp.applicationDescriptionDivider }), callback2(stateFromStores, { command, option: currentOption, optionState: tmp17 }), callback2(command(7634).FormDivider, { style: tmp.applicationDescriptionDivider })];
+  const items8 = [c10(c6, obj), callback2(command(7631).FormDivider, { style: tmp.applicationDescriptionDivider }), callback2(stateFromStores, { command, option: currentOption, optionState: tmp17 }), callback2(command(7631).FormDivider, { style: tmp.applicationDescriptionDivider })];
   obj[1] = items8;
   return c10(onPressOption, obj);
 };

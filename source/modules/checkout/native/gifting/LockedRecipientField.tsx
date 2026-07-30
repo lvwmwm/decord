@@ -1,10 +1,10 @@
-// Module ID: 8809
-// Function ID: 8810
+// Module ID: 8805
+// Function ID: 8806
 // Name: LockedRecipientField
 // Dependencies: [19, 17, 21, 4189, 712, 1297, 4185, 4028, 2]
 // Exports: default
 
-// Module 8809 (LockedRecipientField)
+// Module 8805 (LockedRecipientField)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,7 +26,7 @@ export default function LockedRecipientField(user) {
   user = user.user;
   const tmp = createCacheKey();
   let obj = { style: tmp.container, children: null };
-  obj = { style: tmp.avatar, user, guildId: "Array", size: "<string:3052339201>" };
+  obj = { style: tmp.avatar, user, guildId: "Array", size: "\u{1F9B9}\u{1F3FB}\u200D\u2642\uFE0F" };
   obj[3] = require(1297) /* Button */.AvatarSizes.NORMAL;
   const items = [callback(require(1297) /* Button */.Avatar, obj), ];
   obj = { variant: "text-md/semibold", children: null };

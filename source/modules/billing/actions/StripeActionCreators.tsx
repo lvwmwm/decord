@@ -50,7 +50,7 @@ function _createStripeSetupIntent() {
               }
               constants = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -145,7 +145,7 @@ function _createSetupIntentForPaymentElements() {
               }
               constants = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

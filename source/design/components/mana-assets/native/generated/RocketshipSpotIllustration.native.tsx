@@ -1,10 +1,10 @@
-// Module ID: 7420
-// Function ID: 7421
+// Module ID: 7417
+// Function ID: 7418
 // Name: RocketshipSpotIllustration
-// Dependencies: [21, 5141, 7421, 2]
+// Dependencies: [21, 5141, 7418, 2]
 // Exports: RocketshipSpotIllustration
 
-// Module 7420 (RocketshipSpotIllustration)
+// Module 7417 (RocketshipSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/RocketshipSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const RocketshipSpotIllustration = function RocketshipSpotIllustration(wi
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7421);
+  obj[0] = importDefault(7418);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

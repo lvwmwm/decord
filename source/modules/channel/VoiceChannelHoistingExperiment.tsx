@@ -1,10 +1,10 @@
-// Module ID: 16154
-// Function ID: 16155
+// Module ID: 16148
+// Function ID: 16149
 // Name: experiment
 // Dependencies: [4104, 4101, 2]
 // Exports: useVoiceChannelHoistingExperiment
 
-// Module 16154 (experiment)
+// Module 16148 (experiment)
 import createExperiment from "createExperiment";
 
 const items = [{ id: 1, label: "Both waveform and highlight", config: { enableWaveformIcon: true, enableHighlight: true } }, { id: 2, label: "Waveform icon only", config: { enableWaveformIcon: true, enableHighlight: false } }];

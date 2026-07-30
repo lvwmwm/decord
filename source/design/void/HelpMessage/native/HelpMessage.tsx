@@ -1,10 +1,10 @@
-// Module ID: 13135
-// Function ID: 13136
+// Module ID: 13130
+// Function ID: 13131
 // Name: HelpMessage
-// Dependencies: [19, 17, 21, 4189, 712, 688, 6730, 4145, 6736, 4150, 4185, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 688, 6727, 4145, 6733, 4150, 4185, 2]
 // Exports: default
 
-// Module 13135 (HelpMessage)
+// Module 13130 (HelpMessage)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -81,7 +81,7 @@ export default function HelpMessage(children) {
   if (int2hslRaw.WARNING === messageType) {
     obj = { color: null };
     obj[0] = importDefault(712).unsafe_rawColors.YELLOW_300;
-    let tmp7 = callback(require(6730) /* CircleErrorIcon */.CircleErrorIcon, obj);
+    let tmp7 = callback(require(6727) /* CircleErrorIcon */.CircleErrorIcon, obj);
   } else if (tmp6.INFO === messageType) {
     const obj1 = { color: null };
     obj1[0] = importDefault(712).unsafe_rawColors.BLUE_345;
@@ -89,7 +89,7 @@ export default function HelpMessage(children) {
   } else if (tmp6.ERROR === messageType) {
     const obj2 = { color: null };
     obj2[0] = importDefault(712).unsafe_rawColors.RED_400;
-    tmp7 = callback(require(6736) /* CircleXIcon */.CircleXIcon, obj2);
+    tmp7 = callback(require(6733) /* CircleXIcon */.CircleXIcon, obj2);
   } else if (tmp6.SUCCESS === messageType) {
     const obj3 = { color: null };
     obj3[0] = importDefault(712).unsafe_rawColors.GREEN_400;

@@ -1,9 +1,9 @@
-// Module ID: 15984
-// Function ID: 15985
+// Module ID: 15978
+// Function ID: 15979
 // Name: StreamPreview
-// Dependencies: [5, 32, 19, 17, 1371, 4203, 12785, 4208, 1218, 1372, 3817, 4204, 1874, 4205, 4262, 10038, 10041, 676, 12790, 21, 4189, 10044, 712, 10037, 5001, 4369, 4253, 589, 5568, 4185, 1236, 12031, 5521, 3807, 15975, 1474, 4050, 10604, 10640, 10670, 4717, 15973, 4600, 8426, 503, 6730, 8860, 4379, 5220, 9913, 10464, 5515, 5535, 698, 15941, 4599, 4534, 7679, 15863, 15985, 2]
+// Dependencies: [5, 32, 19, 17, 1371, 4203, 12779, 4208, 1218, 1372, 3817, 4204, 1874, 4205, 4262, 10034, 10037, 676, 12784, 21, 4189, 10040, 712, 10033, 5001, 4369, 4253, 589, 5568, 4185, 1236, 12025, 5521, 3807, 15969, 1474, 4050, 10600, 10636, 10666, 4717, 15967, 4600, 8423, 503, 6727, 8856, 4379, 5220, 9910, 10460, 5515, 5535, 698, 15935, 4599, 4534, 7676, 15857, 15979, 2]
 
-// Module 15984 (StreamPreview)
+// Module 15978 (StreamPreview)
 import set from "set";
 import useGetOrFetchApplications from "useGetOrFetchApplications";
 import importAllResult from "jsxProd";
@@ -280,7 +280,7 @@ function RoomMembersSection(title) {
     }
     return items;
   })();
-  return callback(require(8860) /* VoiceBadges */.VoicePanelFormSection, obj);
+  return callback(require(8856) /* VoiceBadges */.VoicePanelFormSection, obj);
 }
 function RoomMembers(members) {
   let blockedMembers;
@@ -555,7 +555,7 @@ let closure_32 = importAllResult.memo((blockedUserIds) => {
   obj[0] = require(503) /* encodeProperties */.ImpressionNames.VOICE_CHANNEL_BLOCKED_USER_WARNING;
   obj = { channel_id: channelId, blocked_user_ids: Array.from(blockedUserIds), warning_surface: constants2.PRE_JOIN_SHEET };
   obj[1] = obj;
-  importDefault(8426)(obj);
+  importDefault(8423)(obj);
   const size = ignoredUserIds.size;
   const size2 = blockedUserIds.size;
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -567,7 +567,7 @@ let closure_32 = importAllResult.memo((blockedUserIds) => {
     }
     obj = { style: null, children: null };
     obj[0] = tmp.blockedMemberWarning;
-    const items = [callback(tmp5(6730).CircleErrorIcon, { color: "text-feedback-warning" }), ];
+    const items = [callback(tmp5(6727).CircleErrorIcon, { color: "text-feedback-warning" }), ];
     const obj1 = { variant: "text-sm/bold", color: "interactive-text-active", style: null, children: null };
     obj1[2] = { flexShrink: 1 };
     const items1 = [stringResult1, " ", ];
@@ -693,10 +693,10 @@ let closure_37 = { code: "function VoicePanelPreJoinContentTsx3(){const{windowDi
 let closure_38 = { code: "function VoicePanelPreJoinContentTsx4(finished=false){const{transitionState,TransitionStates,runOnJS,transitionCleanUp}=this.__closure;finished&&transitionState===TransitionStates.YEETED&&runOnJS(transitionCleanUp)();}" };
 let obj4 = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8, padding: require("Themes").space.PX_8, borderRadius: require("Themes").radii.xs, borderColor: require("Themes").colors.ICON_FEEDBACK_WARNING, borderWidth: 1, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_WARNING, marginHorizontal: require("Themes").space.PX_16 };
 const memoResult = importAllResult.memo(function VoicePanelPreJoinWrapper() {
-  const context = importAllResult.useContext(guildId(10037));
+  const context = importAllResult.useContext(guildId(10033));
   const channelId = context.channelId;
   guildId = context.guildId;
-  const tmp2 = guildId(15863)(channelId);
+  const tmp2 = guildId(15857)(channelId);
   const dependencyMap = tmp2;
   let obj = channelId(589);
   let items = [getVoiceStatesForGuild, init, participantFromServer, reset];
@@ -737,7 +737,7 @@ const memoResult = importAllResult.memo(function VoicePanelPreJoinWrapper() {
       obj[4] = ignoredUsersForVoiceChannel;
       return obj;
     }
-  }, items1, channelId(15985).areVoicePanelPreJoinContentPropsEqual);
+  }, items1, channelId(15979).areVoicePanelPreJoinContentPropsEqual);
   obj = { item: stateFromStores, renderItem };
   return callback(channelId(4534).TransitionItem, obj);
 });

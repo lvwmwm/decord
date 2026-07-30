@@ -108,48 +108,48 @@ let items = [
       let tmp6 = tmp5.borderRadius || 0;
       const borderTopLeftRadius = tmp5.borderTopLeftRadius;
       let tmp7 = tmp6;
-      if (typeof borderTopLeftRadius !== "os") {
+      if (typeof borderTopLeftRadius !== "reType") {
         tmp7 = borderTopLeftRadius;
       }
       const items = [tmp7, , , , , , , ];
       const borderTopLeftRadius2 = tmp5.borderTopLeftRadius;
       let tmp8 = tmp6;
-      if (typeof borderTopLeftRadius2 !== "os") {
+      if (typeof borderTopLeftRadius2 !== "reType") {
         tmp8 = borderTopLeftRadius2;
       }
       items[1] = tmp8;
       const borderTopRightRadius = tmp5.borderTopRightRadius;
       let tmp9 = tmp6;
-      if (typeof borderTopRightRadius !== "os") {
+      if (typeof borderTopRightRadius !== "reType") {
         tmp9 = borderTopRightRadius;
       }
       items[2] = tmp9;
       const borderTopRightRadius2 = tmp5.borderTopRightRadius;
       let tmp10 = tmp6;
-      if (typeof borderTopRightRadius2 !== "os") {
+      if (typeof borderTopRightRadius2 !== "reType") {
         tmp10 = borderTopRightRadius2;
       }
       items[3] = tmp10;
       const borderBottomRightRadius = tmp5.borderBottomRightRadius;
       let tmp11 = tmp6;
-      if (typeof borderBottomRightRadius !== "os") {
+      if (typeof borderBottomRightRadius !== "reType") {
         tmp11 = borderBottomRightRadius;
       }
       items[4] = tmp11;
       const borderBottomRightRadius2 = tmp5.borderBottomRightRadius;
       let tmp12 = tmp6;
-      if (typeof borderBottomRightRadius2 !== "os") {
+      if (typeof borderBottomRightRadius2 !== "reType") {
         tmp12 = borderBottomRightRadius2;
       }
       items[5] = tmp12;
       const borderBottomLeftRadius = tmp5.borderBottomLeftRadius;
       let tmp13 = tmp6;
-      if (typeof borderBottomLeftRadius !== "os") {
+      if (typeof borderBottomLeftRadius !== "reType") {
         tmp13 = borderBottomLeftRadius;
       }
       items[6] = tmp13;
       const borderBottomLeftRadius2 = tmp5.borderBottomLeftRadius;
-      if (typeof borderBottomLeftRadius2 !== "os") {
+      if (typeof borderBottomLeftRadius2 !== "reType") {
         tmp6 = borderBottomLeftRadius2;
       }
       items[7] = tmp6;

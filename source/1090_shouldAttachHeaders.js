@@ -126,7 +126,7 @@ arg5.instrumentOutgoingRequests = function instrumentOutgoingRequests(getOptions
           closure_0 = result;
           const url = tmp(tmp2[0]).spanToJSON(result).data.url;
           if (url) {
-            if (typeof url !== "init") {
+            if (typeof url !== "tee") {
               let closure_2 = tmp(tmp2[2]).addPerformanceInstrumentationHandler("resource", (arg0) => {
                 const entries = arg0.entries;
                 const item = entries.forEach((name) => {
@@ -346,7 +346,7 @@ arg5.instrumentOutgoingRequests = function instrumentOutgoingRequests(getOptions
           closure_0 = tmp11;
           url2 = outer1_0(outer1_1[0]).spanToJSON(tmp11).data.url;
           if (url2) {
-            if (typeof url2 !== "init") {
+            if (typeof url2 !== "tee") {
               let closure_2 = tmp85(tmp86[2]).addPerformanceInstrumentationHandler("resource", (arg0) => {
                 const entries = arg0.entries;
                 const item = entries.forEach((name) => {

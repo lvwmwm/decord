@@ -1,10 +1,10 @@
-// Module ID: 16597
-// Function ID: 16598
+// Module ID: 16591
+// Function ID: 16592
 // Name: FormEmojiPicker
-// Dependencies: [19, 676, 1877, 21, 4189, 5109, 712, 13036, 3830, 14258, 14257, 5141, 16598, 8340, 9336, 1297, 3834, 1236, 10737, 2]
+// Dependencies: [19, 676, 1877, 21, 4189, 5109, 712, 13031, 3830, 14254, 14253, 5141, 16592, 8337, 9332, 1297, 3834, 1236, 10733, 2]
 // Exports: default
 
-// Module 16597 (FormEmojiPicker)
+// Module 16591 (FormEmojiPicker)
 import "set";
 import { Fonts } from "ME";
 import { EmojiIntention } from "set";
@@ -41,18 +41,18 @@ export default function FormEmojiPicker(emoji) {
     }
     emojiId = tmp2Result.convertSurrogateToName(emojiName, false);
   }
-  let obj1 = guildId(14258);
+  let obj1 = guildId(14254);
   const emojiByIdOrName = obj1.useEmojiByIdOrName(guildId, emojiId);
   if (null != emojiId) {
     let obj = { guildId: null, id: null };
     obj[0] = guildId;
     obj[1] = emojiId;
-    let tmp9 = callback(tmp2(14257), obj);
+    let tmp9 = callback(tmp2(14253), obj);
     let tmp10 = callback;
   } else {
     obj = { resizeMode: "contain", source: null };
     tmp2Result = tmp2(5141);
-    obj[1] = tmp2(16598);
+    obj[1] = tmp2(16592);
     tmp9 = callback(tmp2Result, obj);
     tmp10 = callback;
   }
@@ -84,10 +84,10 @@ export default function FormEmojiPicker(emoji) {
     },
     children: null
   };
-  items = [tmp.container, onChange(13036)().textInput];
+  items = [tmp.container, onChange(13031)().textInput];
   const items1 = [tmp9, , ];
   const tmp12 = closure_5;
-  const tmp4 = onChange(13036)();
+  const tmp4 = onChange(13031)();
   const items2 = [tmp.content, ];
   const obj2 = { style: items2, children: null };
   items2[1] = null != emojiByIdOrName ? tmp.text : tmp.placeholder;
@@ -102,8 +102,8 @@ export default function FormEmojiPicker(emoji) {
   items1[1] = tmp10(guildId(1297).LegacyText, obj2);
   const obj3 = { size: null, source: null };
   obj3[0] = guildId(1297).Icon.Sizes.MEDIUM;
-  obj3[1] = onChange(10737);
+  obj3[1] = onChange(10733);
   items1[2] = tmp10(guildId(1297).Icon, obj3);
   obj1[3] = items1;
-  return tmp12(onChange(8340), obj1);
+  return tmp12(onChange(8337), obj1);
 };

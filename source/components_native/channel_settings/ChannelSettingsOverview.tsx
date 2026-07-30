@@ -1,10 +1,10 @@
-// Module ID: 15639
-// Function ID: 15640
+// Module ID: 15633
+// Function ID: 15634
 // Name: PinImage
-// Dependencies: [5, 19, 17, 3819, 1376, 1415, 7687, 1372, 1932, 1862, 3817, 4201, 15640, 3826, 1874, 15641, 676, 1379, 6068, 1235, 505, 21, 4189, 712, 589, 9979, 3901, 12, 15642, 4384, 1236, 5143, 9118, 7686, 3890, 10356, 6184, 4372, 3830, 1384, 4035, 15643, 8279, 4529, 4185, 8304, 4380, 4618, 4041, 4088, 15644, 6727, 7644, 500, 5554, 5555, 4403, 5222, 13221, 15645, 6185, 7655, 7654, 1381, 1383, 1945, 5220, 6048, 8286, 10229, 10370, 4133, 1382, 15646, 9163, 10192, 13985, 10222, 6076, 4153, 4143, 4709, 10224, 4131, 4148, 4598, 9876, 6682, 8729, 4717, 15128, 7634, 1480, 2]
+// Dependencies: [5, 19, 17, 3819, 1376, 1415, 7684, 1372, 1932, 1862, 3817, 4201, 15634, 3826, 1874, 15635, 676, 1379, 6066, 1235, 505, 21, 4189, 712, 589, 9975, 3901, 12, 15636, 4384, 1236, 5143, 9114, 7683, 3890, 10352, 6181, 4372, 3830, 1384, 4035, 15637, 8276, 4529, 4185, 8301, 4380, 4618, 4041, 4088, 15638, 6724, 7641, 500, 5554, 5555, 4403, 5222, 13216, 15639, 6182, 7652, 7651, 1381, 1383, 1945, 5220, 6046, 8283, 10225, 10366, 4133, 1382, 15640, 9159, 10188, 13980, 10218, 6074, 4153, 4143, 4709, 10220, 4131, 4148, 4598, 9873, 6679, 8725, 4717, 15122, 7631, 1480, 2]
 // Exports: default
 
-// Module 15639 (PinImage)
+// Module 15633 (PinImage)
 import GuildNSFWContentLevel from "GuildNSFWContentLevel";
 import importAllResult from "AbortCodes";
 import { View } from "set";
@@ -657,7 +657,7 @@ prototype["componentDidMount"] = function componentDidMount() {
   const self = this;
   this.updateNavigation(undefined, this.state);
   if (tmp2) {
-    let obj = importDefault(15642);
+    let obj = importDefault(15636);
     const regions = obj.fetchRegions(self.props.guild.id);
   }
   obj = { settings_type: "channel", destination_pane: constants6.CHANNEL_SETTINGS };
@@ -734,7 +734,7 @@ prototype["renderChannelInfo"] = function renderChannelInfo() {
     const GUILD_THREADS_ONLY = constants3.GUILD_THREADS_ONLY;
     hasItem = GUILD_THREADS_ONLY.has(channel.type);
   }
-  let obj = require(15644) /* getIsChannelNameSettingEditable */;
+  let obj = require(15638) /* getIsChannelNameSettingEditable */;
   const isChannelNameSettingEditable = obj.getIsChannelNameSettingEditable({ canManageThread, canManageChannels, canSendMessages, isForumPost, isThread, isChannelOwner });
   if (channel.isForumPost()) {
     const intl4 = tmp3(1236).intl;
@@ -750,7 +750,7 @@ prototype["renderChannelInfo"] = function renderChannelInfo() {
     stringResult = intl.string(tmp3(1236).t.PVbHDl);
   }
   obj = { ref: self.props.channelNameRef, label: stringResult, accessibilityLabel: stringResult, value: null, onChange: null, onBlur: null, isDisabled: null, maxLength: null, errorMessage: null, enableAndroidSanitizedInputWorkaround: true };
-  const TextInput = tmp3(6727).TextInput;
+  const TextInput = tmp3(6724).TextInput;
   obj[3] = require(4380) /* computeChannelName */.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
   ({ handleChangeName: obj2[4], handleBlurName: obj2[5] } = self);
   obj[6] = !isChannelNameSettingEditable;
@@ -779,7 +779,7 @@ prototype["renderChannelInfo"] = function renderChannelInfo() {
     obj1[4] = !canManageChannels;
     obj1[6] = channel.isForumLikeChannel() ? closure_40 : closure_39;
     obj1[7] = self.getError("topic");
-    closure_43(tmp3(7644).TextArea, obj1);
+    closure_43(tmp3(7641).TextArea, obj1);
     const obj5 = importDefault(3830);
   }
 };
@@ -840,7 +840,7 @@ prototype["renderSlowmode"] = function renderSlowmode() {
   if (channel.type !== constants2.GUILD_TEXT) {
     return null;
   }
-  let obj = require(15643) /* getSecondsSliderLabel */;
+  let obj = require(15637) /* getSecondsSliderLabel */;
   const intl = require(1236) /* getSystemLocale */.intl;
   const secondsSliderLabel = obj.getSecondsSliderLabel(channel.rateLimitPerUser, false, intl.string(require(1236) /* getSystemLocale */.t.zvDu4h));
   if (channel.isForumLikeChannel()) {
@@ -872,7 +872,7 @@ prototype["renderSlowmode"] = function renderSlowmode() {
   const intl5 = tmp5(1236).intl;
   obj3[5] = intl5.string(require(1236) /* getSystemLocale */.t.piZgKF);
   obj3[6] = { text: secondsSliderLabel };
-  items2[1] = callback3(require(13221) /* Slider */.Slider, obj3);
+  items2[1] = callback3(require(13216) /* Slider */.Slider, obj3);
   obj[1] = items2;
   obj[2] = callback4(require(5222) /* PressableCard */.Card, obj);
   items.push(callback3(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj, "slowmode-section"));
@@ -911,7 +911,7 @@ prototype["renderAutoArchiveDuration"] = function renderAutoArchiveDuration() {
       obj[2] = autoArchiveDuration;
       obj[3] = channel;
       obj[4] = this.handleAutoArchiveDurationChange;
-      return closure_43(tmp5(15645).AutoArchiveDurationOptions, obj);
+      return closure_43(tmp5(15639).AutoArchiveDurationOptions, obj);
     }
   }
   return null;
@@ -947,10 +947,10 @@ prototype["renderDefaultAutoArchiveDuration"] = function renderDefaultAutoArchiv
       const obj = { title: null, selected: null, channel: null, onSelectDuration: null, description: null };
       const intl = require(1236) /* getSystemLocale */.intl;
       obj[0] = intl.string(require(1236) /* getSystemLocale */.t.FGjMZS);
-      obj[1] = require(6185) /* getAutoArchiveOptions */.getAutoArchiveDuration(channel, null);
+      obj[1] = require(6182) /* getAutoArchiveOptions */.getAutoArchiveDuration(channel, null);
       obj[2] = channel;
       obj[3] = this.handleDefaultAutoArchiveDurationChange;
-      const obj2 = require(6185) /* getAutoArchiveOptions */;
+      const obj2 = require(6182) /* getAutoArchiveOptions */;
       const tmp2 = closure_43;
       const intl2 = require(1236) /* getSystemLocale */.intl;
       const string = intl2.string;
@@ -962,7 +962,7 @@ prototype["renderDefaultAutoArchiveDuration"] = function renderDefaultAutoArchiv
         stringResult = string(fyXclY.W3Noi9);
       }
       obj[4] = stringResult;
-      tmp2(require(15645) /* AutoArchiveDurationOptions */.AutoArchiveDurationOptions, obj);
+      tmp2(require(15639) /* AutoArchiveDurationOptions */.AutoArchiveDurationOptions, obj);
       isForumLikeChannelResult = channel.isForumLikeChannel();
     }
   }
@@ -985,14 +985,14 @@ prototype["renderDefaultSortOrder"] = function renderDefaultSortOrder() {
       const intl3 = require(1236) /* getSystemLocale */.intl;
       obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.ElZtzj);
       obj[1] = require(1381) /* set */.ThreadSortOrder.LATEST_ACTIVITY;
-      const items = [callback3(require(7654) /* TableRadioRow */.TableRadioRow, obj), ];
+      const items = [callback3(require(7651) /* TableRadioRow */.TableRadioRow, obj), ];
       obj = { label: null, value: null };
       const intl4 = require(1236) /* getSystemLocale */.intl;
       obj[0] = intl4.string(require(1236) /* getSystemLocale */.t.w28f3F);
       obj[1] = require(1381) /* set */.ThreadSortOrder.CREATION_DATE;
-      items[1] = callback3(require(7654) /* TableRadioRow */.TableRadioRow, obj);
+      items[1] = callback3(require(7651) /* TableRadioRow */.TableRadioRow, obj);
       obj[5] = items;
-      return callback4(require(7655) /* context */.TableRadioGroup, obj);
+      return callback4(require(7652) /* context */.TableRadioGroup, obj);
     }
   }
   return null;
@@ -1014,14 +1014,14 @@ prototype["renderDefaultTagSetting"] = function renderDefaultTagSetting() {
       const intl3 = require(1236) /* getSystemLocale */.intl;
       obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.rQ0ctQ);
       obj[1] = require(1383) /* set */.ThreadSearchTagSetting.MATCH_SOME;
-      const items = [callback3(require(7654) /* TableRadioRow */.TableRadioRow, obj), ];
+      const items = [callback3(require(7651) /* TableRadioRow */.TableRadioRow, obj), ];
       obj = { label: null, value: null };
       const intl4 = require(1236) /* getSystemLocale */.intl;
       obj[0] = intl4.string(require(1236) /* getSystemLocale */.t.FCXUu0);
       obj[1] = require(1383) /* set */.ThreadSearchTagSetting.MATCH_ALL;
-      items[1] = callback3(require(7654) /* TableRadioRow */.TableRadioRow, obj);
+      items[1] = callback3(require(7651) /* TableRadioRow */.TableRadioRow, obj);
       obj[5] = items;
-      return callback4(require(7655) /* context */.TableRadioGroup, obj);
+      return callback4(require(7652) /* context */.TableRadioGroup, obj);
     }
   }
   return null;
@@ -1112,7 +1112,7 @@ prototype["renderBitrateSettings"] = function renderBitrateSettings() {
       obj5[2] = closure_24;
       obj5[3] = bitrateLimit;
       obj5[4] = this.handleBitRateChange;
-      items2[1] = callback3(require(13221) /* Slider */.Slider, obj5);
+      items2[1] = callback3(require(13216) /* Slider */.Slider, obj5);
       obj1[0] = items2;
       obj[2] = callback4(require(5222) /* PressableCard */.Card, obj1);
       items.push(callback3(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj, "bitrate-section"));
@@ -1143,14 +1143,14 @@ prototype["renderVideoQualityModeSettings"] = function renderVideoQualityModeSet
       const intl3 = tmp2(1236).intl;
       obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.jjKYpu);
       obj[1] = constants7.AUTO;
-      const items1 = [callback3(require(7654) /* TableRadioRow */.TableRadioRow, obj), ];
+      const items1 = [callback3(require(7651) /* TableRadioRow */.TableRadioRow, obj), ];
       obj = { label: null, value: null };
       const intl4 = tmp2(1236).intl;
       obj[0] = intl4.string(require(1236) /* getSystemLocale */.t["7jOoJE"]);
       obj[1] = constants7.FULL;
-      items1[1] = callback3(require(7654) /* TableRadioRow */.TableRadioRow, obj);
+      items1[1] = callback3(require(7651) /* TableRadioRow */.TableRadioRow, obj);
       obj[5] = items1;
-      items.push(closure_44(require(7655) /* context */.TableRadioGroup, obj, "video-quality-section"));
+      items.push(closure_44(require(7652) /* context */.TableRadioGroup, obj, "video-quality-section"));
       return items;
     }
   }
@@ -1205,7 +1205,7 @@ prototype["renderUserLimitSettings"] = function renderUserLimitSettings() {
       obj4[1] = Math.min(channel.userLimit, tmp10);
       obj4[3] = tmp10;
       obj4[4] = this.handleUserLimitChange;
-      items2[1] = closure_43(tmp7(13221).Slider, obj4);
+      items2[1] = closure_43(tmp7(13216).Slider, obj4);
       obj[0] = items2;
       obj[2] = callback4(tmp7(5222).Card, obj);
       items.push(closure_43(tmp7(5554).TableRowGroup, obj, "channel-user-limit"));
@@ -1275,7 +1275,7 @@ prototype["showVoiceSettings"] = function showVoiceSettings() {
   if (hasItem) {
     let enabled = channel.isGuildVocal();
     if (!enabled) {
-      const VoiceInThreadsExperiment = require(6048) /* useCanUnarchiveThread */.VoiceInThreadsExperiment;
+      const VoiceInThreadsExperiment = require(6046) /* useCanUnarchiveThread */.VoiceInThreadsExperiment;
       const obj = { guildId: null, location: "9b50bd_1" };
       obj[0] = channel.guild_id;
       enabled = VoiceInThreadsExperiment.getCurrentConfig(obj).enabled;
@@ -1303,7 +1303,7 @@ prototype["renderPermissions"] = function renderPermissions() {
     }
     obj = { label: null, arrow: true, icon: null, onPress: null };
     obj[0] = stringResult;
-    ShieldUserIcon = ShieldUserIcon(8286).ShieldUserIcon;
+    ShieldUserIcon = ShieldUserIcon(8283).ShieldUserIcon;
     tmp2Result = tmp2(ShieldUserIcon, {});
     obj[2] = tmp2Result;
     obj[3] = function onPress() {
@@ -1333,7 +1333,7 @@ prototype["renderCommonSettingsSection"] = function renderCommonSettingsSection(
     let obj = { label: null, arrow: true, icon: null, onPress: null };
     const intl = channel(1236).intl;
     obj[0] = intl.string(channel(1236).t.h850Ss);
-    obj[2] = callback3(channel(10229).BellIcon, {});
+    obj[2] = callback3(channel(10225).BellIcon, {});
     obj[3] = function onPress() {
       if (channel.isThread()) {
         let result = channel(outer1_2[70]).showThreadNotificationsBottomSheet(channel);
@@ -1401,11 +1401,11 @@ prototype["renderDefaultForumLayout"] = function renderDefaultForumLayout() {
     obj1[0] = stringResult;
     obj[1] = closure_43(self(5220).TableRow.TrailingText, obj1);
     if (channel.defaultForumLayout === GridSquareIcon(1382).ForumLayout.GRID) {
-      GridSquareIcon = GridSquareIcon(15646).GridSquareIcon;
+      GridSquareIcon = GridSquareIcon(15640).GridSquareIcon;
       obj = {};
       let tmpResult = tmp(GridSquareIcon, obj);
     } else {
-      tmpResult = tmp(GridSquareIcon(9163).ListViewIcon, {});
+      tmpResult = tmp(GridSquareIcon(9159).ListViewIcon, {});
     }
     obj[3] = tmpResult;
     obj[4] = function onPress() {
@@ -1564,7 +1564,7 @@ prototype["renderThreadManagementActions"] = function renderThreadManagementActi
     return closure_44(tmp4, obj3);
   } else {
     obj = { icon: null, label: null, onPress: null };
-    obj[0] = callback3(tmp2(10222).GroupPlusIcon, {});
+    obj[0] = callback3(tmp2(10218).GroupPlusIcon, {});
     const intl = tmp2(1236).intl;
     const string = intl.string;
     let ihLPiO = tmp2(1236).t;
@@ -1689,13 +1689,13 @@ prototype["renderForumTags"] = function renderForumTags() {
         const obj2 = { icon: null, size: "sm", onPress: null, accessibilityLabel: null };
         const obj3 = { size: "sm", color: null };
         obj3[1] = self(712).colors.WHITE;
-        obj2[0] = tmp10(tmp7(8729).PlusSmallIcon, obj3);
+        obj2[0] = tmp10(tmp7(8725).PlusSmallIcon, obj3);
         obj2[2] = function onPress() {
           return self.handlePressTag();
         };
         const intl3 = tmp7(1236).intl;
         obj2[3] = intl3.string(tmp7(1236).t["/jubeD"]);
-        obj1[1] = tmp10(tmp7(6682).IconButton, obj2);
+        obj1[1] = tmp10(tmp7(6679).IconButton, obj2);
         tmp10Result = tmp10(tmp12, obj1);
       }
       const obj4 = { children: null };
@@ -1786,7 +1786,7 @@ prototype["renderCategory"] = function renderCategory() {
         tmp7 = self;
       }
       obj = { icon: null, label: null, trailing: null, arrow: null, onPress: null };
-      obj[0] = callback3(tmp7(15128).FolderPlusIcon, {});
+      obj[0] = callback3(tmp7(15122).FolderPlusIcon, {});
       const intl2 = tmp7(1236).intl;
       obj[1] = intl2.string(tmp7(1236).t.vHCZwr);
       obj = { text: null };
@@ -1813,7 +1813,7 @@ prototype["renderThreadSettings"] = function renderThreadSettings() {
   const items = [this.renderChannelInfo(), this.renderCommonSettingsSection(), this.renderThreadManagementActions(), this.renderThreadSpoiler(), this.renderSlowmode(), this.renderAutoArchiveDuration(), this.renderInvitable(), this.renderDeleteButton()];
   obj[2] = items;
   obj[0] = callback4(require(4598) /* Stack */.Stack, obj);
-  return callback3(require(7634) /* Form */.Form, obj);
+  return callback3(require(7631) /* Form */.Form, obj);
 };
 prototype["renderChannelSettings"] = function renderChannelSettings() {
   let obj = { children: null };
@@ -1823,7 +1823,7 @@ prototype["renderChannelSettings"] = function renderChannelSettings() {
   const items = [this.renderChannelInfo(), this.renderForumTags(), this.renderCategory(), this.renderPermissions(), this.renderCommonSettingsSection(), this.renderDefaultForumLayout(), this.renderDefaultSortOrder(), this.renderDefaultTagSetting(), this.renderAnnouncement(), this.renderNsfwConfig(), this.renderSlowmode(), this.renderDefaultAutoArchiveDuration(), this.renderBitrateSettings(), this.renderVideoQualityModeSettings(), this.renderUserLimitSettings(), this.renderRegionOverride(), this.renderUncommonSettingsSection(), this.renderShowMediaDownloadOptions(), this.renderDeleteButton()];
   obj[2] = items;
   obj[0] = callback4(require(4598) /* Stack */.Stack, obj);
-  return callback3(require(7634) /* Form */.Form, obj);
+  return callback3(require(7631) /* Form */.Form, obj);
 };
 prototype["render"] = function render() {
   const self = this;

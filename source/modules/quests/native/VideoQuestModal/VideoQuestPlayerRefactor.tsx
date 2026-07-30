@@ -1,9 +1,9 @@
-// Module ID: 14157
-// Function ID: 14158
+// Module ID: 14153
+// Function ID: 14154
 // Name: PlayerState
-// Dependencies: [32, 19, 5987, 5033, 21, 14150, 10492, 9479, 3802, 14045, 14158, 6008, 14161, 1578, 10500, 9469, 14169, 2]
+// Dependencies: [32, 19, 5985, 5033, 21, 14146, 10488, 9475, 3802, 14040, 14154, 6006, 14157, 1578, 10496, 9465, 14165, 14049, 2]
 
-// Module 14157 (PlayerState)
+// Module 14153 (PlayerState)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import _toPropertyKey from "_toPropertyKey";
@@ -489,11 +489,11 @@ const memoResult = importAllResult.memo((onLoad) => {
     obj[30] = handleToggleCaptions;
     obj[31] = handleOpenTranscript;
     obj[32] = tmp39;
-    return questTaskDetails(tmp(tmp2[9]).AdVideoPlayer, obj);
+    return questTaskDetails(tmp(tmp2[17]).AdVideoPlayer, obj);
   }
   const tmpResult = onLoad(onToggleFullscreen[11]);
 });
 let result = require("_toPropertyKey").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestPlayerRefactor.tsx");
 
-export const PlayerState = require("hasVideoEnded").PlayerState;
+export const PlayerState = require("PlayerState").PlayerState;
 export const VideoQuestPlayer = memoResult;

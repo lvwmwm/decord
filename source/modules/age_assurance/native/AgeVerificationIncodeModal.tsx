@@ -1,10 +1,10 @@
-// Module ID: 6751
-// Function ID: 6752
+// Module ID: 6748
+// Function ID: 6749
 // Name: AgeVerificationIncodeModal
-// Dependencies: [19, 21, 4189, 712, 4395, 1236, 6752, 6753, 6758, 5570, 2]
+// Dependencies: [19, 21, 4189, 712, 4395, 1236, 6749, 6750, 6755, 5570, 2]
 // Exports: default
 
-// Module 6751 (AgeVerificationIncodeModal)
+// Module 6748 (AgeVerificationIncodeModal)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -45,11 +45,11 @@ export default function AgeVerificationIncodeModal(webviewUrl) {
       const obj = { onPress: handleClose, text: null };
       const intl = callback(1236).intl;
       obj[1] = intl.string(callback(1236).t.cpT0Cq);
-      return handleClose(callback(6752).HeaderActionButton, obj);
+      return handleClose(callback(6749).HeaderActionButton, obj);
     };
     obj[3] = function render(arg0, arg1) {
       let closure_0 = arg1;
-      return handleClose(callback2(6753), {
+      return handleClose(callback2(6750), {
         onClose: handleClose,
         trustedOrigin: origin,
         onMethodSelected(injectedJavaScriptBeforeContentLoaded) {
@@ -65,10 +65,10 @@ export default function AgeVerificationIncodeModal(webviewUrl) {
         const obj = { onPress: handleClose, text: null };
         const intl = callback(1236).intl;
         obj[1] = intl.string(callback(1236).t.cpT0Cq);
-        return handleClose(callback(6752).HeaderActionButton, obj);
+        return handleClose(callback(6749).HeaderActionButton, obj);
       },
       render(injectedJavaScriptBeforeContentLoaded) {
-        return handleClose(callback2(6758), { webviewUrl: closure_0, onComplete: callback2, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded });
+        return handleClose(callback2(6755), { webviewUrl: closure_0, onComplete: callback2, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded });
       }
     };
     return obj;

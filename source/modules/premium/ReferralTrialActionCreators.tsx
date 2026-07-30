@@ -1,10 +1,10 @@
-// Module ID: 6213
-// Function ID: 6214
+// Module ID: 6210
+// Function ID: 6211
 // Name: _fetchReferralEligibleUsers
 // Dependencies: [5, 1882, 1931, 676, 530, 709, 1208, 5713, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, resolveReferralTrialOffer
 
-// Module 6213 (_fetchReferralEligibleUsers)
+// Module 6210 (_fetchReferralEligibleUsers)
 import dispatcher from "dispatcher";
 import createdAt from "createdAt";
 import handleConnectionOpen from "handleConnectionOpen";

@@ -1,10 +1,10 @@
-// Module ID: 14598
-// Function ID: 14599
+// Module ID: 14594
+// Function ID: 14595
 // Name: HapticButton
 // Dependencies: [19, 17, 21, 4189, 4600, 4158, 4159, 4598, 5222, 4185, 4160, 2]
 // Exports: default
 
-// Module 14598 (HapticButton)
+// Module 14594 (HapticButton)
 import "noop";
 import { ScrollView } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

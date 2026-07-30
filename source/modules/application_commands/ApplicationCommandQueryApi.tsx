@@ -1,10 +1,10 @@
-// Module ID: 8024
-// Function ID: 8025
+// Module ID: 8021
+// Function ID: 8022
 // Name: findCommandInSection
-// Dependencies: [32, 19, 1862, 5697, 4623, 676, 5702, 5708, 589, 5710, 1351, 1906, 5705, 8025, 5704, 2]
+// Dependencies: [32, 19, 1862, 5697, 4623, 676, 5702, 5708, 589, 5710, 1351, 1906, 5705, 8022, 5704, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useAccessibleCommandsForApplication, useCachedResults, useCommand, useCommandsForApplication, useDiscovery, useQuery
 
-// Module 8024 (findCommandInSection)
+// Module 8021 (findCommandInSection)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -67,7 +67,7 @@ let result = require("createGuildRecordFromRust").fileFinishedImporting("modules
 export const getCachedCommand = function getCachedCommand(type, commandKey) {
   let closure_0 = arg2;
   if (null == commandKey) {
-    return { application: "dispatch", command: "isArray" };
+    return { application: "Array", command: "ct" };
   } else {
     const userState = authStore.getUserState();
     const result2 = userState.result;
@@ -122,7 +122,7 @@ export const getCachedCommand = function getCachedCommand(type, commandKey) {
         }
       }
     }
-    return { application: "dispatch", command: "isArray" };
+    return { application: "Array", command: "ct" };
   }
 };
 export const getCachedApplicationSection = function getCachedApplicationSection(type, CHAT, applicationId) {
@@ -460,7 +460,7 @@ export const useCommand = function useCommand(arg0, commandId) {
         }
       }
     }
-    return { command: "dispatch", application: "isArray" };
+    return { command: "Array", application: "ct" };
   }, items);
 };
 export const useCommandsForApplication = function useCommandsForApplication(arg0, arg1, arg2) {

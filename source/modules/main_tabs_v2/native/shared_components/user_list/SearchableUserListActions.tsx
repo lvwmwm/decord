@@ -1,10 +1,10 @@
-// Module ID: 8818
-// Function ID: 8819
+// Module ID: 8814
+// Function ID: 8815
 // Name: UserFlashListActions
-// Dependencies: [19, 17, 21, 8819, 5554, 5220, 2]
+// Dependencies: [19, 17, 21, 8815, 5554, 5220, 2]
 // Exports: useUserListActionsProps
 
-// Module 8818 (UserFlashListActions)
+// Module 8814 (UserFlashListActions)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -48,7 +48,7 @@ export const useUserListActionsProps = function useUserListActionsProps(actions)
   actions = actions.actions;
   const style = actions.style;
   let dependencyMap;
-  const tmp = style(8819)();
+  const tmp = style(8815)();
   dependencyMap = tmp;
   const items = [actions, tmp, style];
   return React.useMemo(() => {
@@ -67,8 +67,8 @@ export const useUserListActionsProps = function useUserListActionsProps(actions)
     if (undefined !== paddingBottom) {
       num2 = paddingBottom;
     }
-    if (typeof num !== "os") {
-      if (typeof num2 !== "os") {
+    if (typeof num !== "reType") {
+      if (typeof num2 !== "reType") {
         let num3 = 0;
         if (null != actions) {
           num3 = 0;

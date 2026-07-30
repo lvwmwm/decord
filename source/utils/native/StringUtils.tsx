@@ -1,14 +1,14 @@
-// Module ID: 8389
-// Function ID: 8390
+// Module ID: 8386
+// Function ID: 8387
 // Name: splitGraphemes
-// Dependencies: [8388, 2]
+// Dependencies: [8385, 2]
 // Exports: splitGraphemes
 
-// Module 8389 (splitGraphemes)
+// Module 8386 (splitGraphemes)
 const result = require("set").fileFinishedImporting("utils/native/StringUtils.tsx");
 
 export const splitGraphemes = function splitGraphemes(closure_0) {
-  const obj = importDefault(8388)();
+  const obj = importDefault(8385)();
   const items = [];
   let match = obj.exec(closure_0);
   let num = 0;

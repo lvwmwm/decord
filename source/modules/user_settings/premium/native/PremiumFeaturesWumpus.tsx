@@ -1,10 +1,10 @@
-// Module ID: 9328
-// Function ID: 9329
+// Module ID: 9324
+// Function ID: 9325
 // Name: PremiumFeaturesWumpus
-// Dependencies: [19, 1876, 21, 4189, 6561, 6246, 9329, 9330, 9331, 9332, 6248, 5141, 2]
+// Dependencies: [19, 1876, 21, 4189, 6558, 6243, 9325, 9326, 9327, 9328, 6245, 5141, 2]
 // Exports: default
 
-// Module 9328 (PremiumFeaturesWumpus)
+// Module 9324 (PremiumFeaturesWumpus)
 import noop from "noop";
 import { PremiumTypes } from "GuildFeatures";
 import jsxProd from "jsxProd";
@@ -24,7 +24,7 @@ export default function PremiumFeaturesWumpus(premiumType) {
   premiumType = premiumType.premiumType;
   let dependencyMap;
   const tmp = callback2();
-  const tmp2 = premiumType(6561)();
+  const tmp2 = premiumType(6558)();
   dependencyMap = tmp2;
   const items = [premiumType, tmp2];
   const memo = React.useMemo(() => {

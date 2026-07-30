@@ -1,10 +1,10 @@
-// Module ID: 10074
-// Function ID: 10075
+// Module ID: 10070
+// Function ID: 10071
 // Name: GuildDirectoryAddAlert
 // Dependencies: [19, 17, 21, 4189, 712, 4618, 1236, 5566, 4185, 2]
 // Exports: default
 
-// Module 10074 (GuildDirectoryAddAlert)
+// Module 10070 (GuildDirectoryAddAlert)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

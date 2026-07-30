@@ -1,7 +1,7 @@
 // Module ID: 5697
 // Function ID: 5698
 // Name: getIndexKey
-// Dependencies: [32, 5, 19, 5698, 1946, 1218, 1372, 1942, 1862, 1874, 5699, 4623, 676, 3, 5700, 5701, 5702, 5703, 5105, 38, 589, 5705, 698, 1906, 5708, 709, 5709, 5710, 1355, 8025, 5704, 2]
+// Dependencies: [32, 5, 19, 5698, 1946, 1218, 1372, 1942, 1862, 1874, 5699, 4623, 676, 3, 5700, 5701, 5702, 5703, 5105, 38, 589, 5705, 698, 1906, 5708, 709, 5709, 5710, 1355, 8022, 5704, 2]
 // Exports: appLauncherOnlyCompareNames, getOrFetchApplicationCommandIndexForTarget, getSection, isStale, useContextIndexState, useDiscoveryState, useGuildIndexState, useUserIndexState
 
 // Module 5697 (getIndexKey)
@@ -1122,7 +1122,7 @@ function queryIndexSection(descriptor, builtInCommands, arg2, arg3, arg4) {
   }
   let allowedForUser = null;
   if (null != guild_id) {
-    let obj = importAll(8025);
+    let obj = importAll(8022);
     allowedForUser = obj.computeAllowedForUser(descriptor.permissions, context.guild_id, userId, roleIds, isImpersonating);
   }
   let guild_id1;
@@ -1131,8 +1131,8 @@ function queryIndexSection(descriptor, builtInCommands, arg2, arg3, arg4) {
   }
   let allowedForChannel = null;
   if (null != guild_id1) {
-    allowedForChannel = importAll(8025).computeAllowedForChannel(descriptor.permissions, context, context.guild_id);
-    const obj2 = importAll(8025);
+    allowedForChannel = importAll(8022).computeAllowedForChannel(descriptor.permissions, context, context.guild_id);
+    const obj2 = importAll(8022);
   }
   const items = [];
   const iter = builtInCommands[Symbol.iterator]();
@@ -1142,7 +1142,7 @@ function queryIndexSection(descriptor, builtInCommands, arg2, arg3, arg4) {
     let tmp16 = nextResult;
     let tmp18 = dependencyMap;
     let tmp19 = dependencyMap;
-    let obj3 = importAll(8025);
+    let obj3 = importAll(8022);
     obj = { applicationAllowedForUser: null, applicationAllowedForChannel: null, commandBotId: null, isGuildInstalled: null, isUserInstalled: null };
     obj[0] = allowedForUser;
     obj[1] = allowedForChannel;
@@ -1157,7 +1157,7 @@ function queryIndexSection(descriptor, builtInCommands, arg2, arg3, arg4) {
     let tmp23 = require;
     let tmp24 = tmp18;
     let hasAccessResult = obj3.hasAccess(nextResult, permissionContext, obj);
-    if (hasAccessResult === require(8025) /* computeAllowedForUser */.HasAccessResult.ALLOWED) {
+    if (hasAccessResult === require(8022) /* computeAllowedForUser */.HasAccessResult.ALLOWED) {
       let tmp25 = nextResult;
       let arr = items.push(tmp16);
     }

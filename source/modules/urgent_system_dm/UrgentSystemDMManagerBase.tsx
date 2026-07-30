@@ -1,9 +1,9 @@
-// Module ID: 16328
-// Function ID: 16329
+// Module ID: 16322
+// Function ID: 16323
 // Name: maybeShowUrgentMessageModal
-// Dependencies: [1372, 1931, 1874, 16329, 676, 7985, 5134, 2]
+// Dependencies: [1372, 1931, 1874, 16323, 676, 7982, 5134, 2]
 
-// Module 16328 (maybeShowUrgentMessageModal)
+// Module 16322 (maybeShowUrgentMessageModal)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -35,8 +35,8 @@ function maybeShowUrgentMessageModal(arg0) {
     }
     if (hasUrgentMessagesResult) {
       c7 = false;
-      importAll(7985).setFlag(UserFlags.HAS_UNREAD_URGENT_MESSAGES, false);
-      const obj5 = importAll(7985);
+      importAll(7982).setFlag(UserFlags.HAS_UNREAD_URGENT_MESSAGES, false);
+      const obj5 = importAll(7982);
     }
   }
 }
@@ -52,8 +52,8 @@ function maybeClearUrgentMessage(channelId) {
   }
   if (hasUrgentMessagesResult) {
     let c7 = false;
-    importAll(7985).setFlag(UserFlags.HAS_UNREAD_URGENT_MESSAGES, false);
-    const obj2 = importAll(7985);
+    importAll(7982).setFlag(UserFlags.HAS_UNREAD_URGENT_MESSAGES, false);
+    const obj2 = importAll(7982);
   }
 }
 let c7 = false;

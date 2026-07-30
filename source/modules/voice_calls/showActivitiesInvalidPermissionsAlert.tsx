@@ -1,10 +1,10 @@
-// Module ID: 10641
-// Function ID: 10642
+// Module ID: 10637
+// Function ID: 10638
 // Name: showActivitiesInvalidPermissionsAlert
 // Dependencies: [4528, 1236, 2]
 // Exports: showActivitiesInvalidPermissionsAlert
 
-// Module 10641 (showActivitiesInvalidPermissionsAlert)
+// Module 10637 (showActivitiesInvalidPermissionsAlert)
 const result = require("set").fileFinishedImporting("modules/voice_calls/showActivitiesInvalidPermissionsAlert.tsx");
 
 export const showActivitiesInvalidPermissionsAlert = function showActivitiesInvalidPermissionsAlert() {

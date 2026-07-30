@@ -8,7 +8,7 @@ arg5.default = {
     if (arg0) {
       return arg0;
     } else {
-      if (typeof globalThis.DOMParser === "ta") {
+      if (typeof globalThis.DOMParser === "__INTERNAL_SLOT_MAP__") {
         const dOMParser = new globalThis.DOMParser();
         return dOMParser;
       } else {

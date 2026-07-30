@@ -1,10 +1,10 @@
-// Module ID: 14423
-// Function ID: 14424
+// Module ID: 14419
+// Function ID: 14420
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1874, 3841, 1303, 1304, 676, 21, 4189, 712, 698, 3862, 6206, 3893, 589, 3835, 1480, 6505, 1297, 9631, 4185, 1236, 7634, 4598, 5554, 5555, 7655, 7654, 2]
+// Dependencies: [19, 17, 1874, 3841, 1303, 1304, 676, 21, 4189, 712, 698, 3862, 6203, 3893, 589, 3835, 1480, 6502, 1297, 9628, 4185, 1236, 7631, 4598, 5554, 5555, 7652, 7651, 2]
 // Exports: default, setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 14423 (UserSettingsText)
+// Module 14419 (UserSettingsText)
 import "registerAsset";
 import { View } from "dispatcher";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -237,7 +237,7 @@ export const setLowQualityImageMode = function setLowQualityImageMode(lowQuality
   ({ videoUploadQuality, viewImageDescriptions, dataSavingMode } = lowQualityImageMode);
   importDefault(698).track(constants.IMAGE_VIDEO_DATA_SETTINGS_UPDATED, { video_upload_quality: videoUploadQuality, image_descriptions: viewImageDescriptions, low_quality_image_mode: lowQualityImageMode, data_saving_mode: dataSavingMode, updated_setting: "low_quality_image_mode" });
   const obj = importDefault(698);
-  const result = importDefault(6206).updatedUnsyncedSettings({ lowQualityImageMode });
+  const result = importDefault(6203).updatedUnsyncedSettings({ lowQualityImageMode });
 };
 export const setDataSavingMode = function setDataSavingMode(dataSavingMode) {
   let lowQualityImageMode;
@@ -247,7 +247,7 @@ export const setDataSavingMode = function setDataSavingMode(dataSavingMode) {
   ({ videoUploadQuality, viewImageDescriptions, lowQualityImageMode } = dataSavingMode);
   importDefault(698).track(constants.IMAGE_VIDEO_DATA_SETTINGS_UPDATED, { video_upload_quality: videoUploadQuality, image_descriptions: viewImageDescriptions, low_quality_image_mode: lowQualityImageMode, data_saving_mode: dataSavingMode, updated_setting: "data_saving_mode" });
   const obj = importDefault(698);
-  const result = importDefault(6206).updatedUnsyncedSettings({ dataSavingMode });
+  const result = importDefault(6203).updatedUnsyncedSettings({ dataSavingMode });
 };
 export const setVideoUploadQuality = function setVideoUploadQuality(videoUploadQuality) {
   let dataSavingMode;
@@ -257,7 +257,7 @@ export const setVideoUploadQuality = function setVideoUploadQuality(videoUploadQ
   ({ viewImageDescriptions, lowQualityImageMode, dataSavingMode } = videoUploadQuality);
   importDefault(698).track(constants.IMAGE_VIDEO_DATA_SETTINGS_UPDATED, { video_upload_quality: videoUploadQuality, image_descriptions: viewImageDescriptions, low_quality_image_mode: lowQualityImageMode, data_saving_mode: dataSavingMode, updated_setting: "video_upload_quality" });
   const obj = importDefault(698);
-  const result = importDefault(6206).updatedUnsyncedSettings({ videoUploadQuality });
+  const result = importDefault(6203).updatedUnsyncedSettings({ videoUploadQuality });
 };
 export const setImageDescriptions = function setImageDescriptions(viewImageDescriptions) {
   let dataSavingMode;

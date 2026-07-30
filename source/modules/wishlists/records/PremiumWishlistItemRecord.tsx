@@ -1,10 +1,10 @@
-// Module ID: 8678
-// Function ID: 8679
+// Module ID: 8675
+// Function ID: 8676
 // Name: fromServer
-// Dependencies: [4228, 8676, 676, 2]
+// Dependencies: [4228, 8673, 676, 2]
 // Exports: isPremiumWishlistItemRecord
 
-// Module 8678 (fromServer)
+// Module 8675 (fromServer)
 import createFromServer from "createFromServer";
 import "fromServer";
 import { SKUProductLines } from "ME";

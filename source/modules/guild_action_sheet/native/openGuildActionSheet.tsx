@@ -1,10 +1,10 @@
-// Module ID: 13045
-// Function ID: 13046
+// Module ID: 13040
+// Function ID: 13041
 // Name: openGuildActionSheet
-// Dependencies: [676, 1865, 698, 9358, 4157, 13046, 1959, 13104, 13110, 2]
+// Dependencies: [676, 1865, 698, 9354, 4157, 13041, 1959, 13099, 13105, 2]
 // Exports: default
 
-// Module 13045 (openGuildActionSheet)
+// Module 13040 (openGuildActionSheet)
 import ME from "ME";
 
 let c3;
@@ -23,12 +23,12 @@ export default function openGuildActionSheet(id) {
     obj = { type: "Guild Profile", guild_id: null };
     obj[1] = id.id;
     obj1.track(constants.OPEN_POPOUT, obj);
-    let tmpResult = tmp(9358);
+    let tmpResult = tmp(9354);
     if (tmpResult.shouldNSFWGateGuild(id.id)) {
       let tmp3Result = tmp3(4157);
       obj = { guild: null };
       obj[0] = id;
-      tmp3Result.openLazy(tmp(1959)(13046, tmp2.paths), "NsfwGateGuildSettingsActionSheet", obj);
+      tmp3Result.openLazy(tmp(1959)(13041, tmp2.paths), "NsfwGateGuildSettingsActionSheet", obj);
     } else {
       const features = id.features;
       const hasItem = features.has(constants2.HUB);
@@ -40,15 +40,15 @@ export default function openGuildActionSheet(id) {
         obj1 = { guild: null, expanded: null };
         obj1[0] = id;
         obj1[1] = flag;
-        openLazy(tmpResult(13104, tmp2.paths), "GuildActionSheet:" + id.id, obj1);
-        const tmpResult1Result = tmpResult(13104, tmp2.paths);
+        openLazy(tmpResult(13099, tmp2.paths), "GuildActionSheet:" + id.id, obj1);
+        const tmpResult1Result = tmpResult(13099, tmp2.paths);
       } else {
         const _HermesInternal = HermesInternal;
         const obj2 = { guild: null, expanded: null };
         obj2[0] = id;
         obj2[1] = flag;
-        openLazy(tmpResult(13110, tmp2.paths), "GuildActionSheet:" + id.id, obj2);
-        const tmpResult1Result1 = tmpResult(13110, tmp2.paths);
+        openLazy(tmpResult(13105, tmp2.paths), "GuildActionSheet:" + id.id, obj2);
+        const tmpResult1Result1 = tmpResult(13105, tmp2.paths);
       }
     }
   }

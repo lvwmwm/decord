@@ -1,9 +1,9 @@
-// Module ID: 9879
-// Function ID: 9880
+// Module ID: 9876
+// Function ID: 9877
 // Name: getFollowerStatsForChannel
 // Dependencies: [589, 709, 2]
 
-// Module 9879 (getFollowerStatsForChannel)
+// Module 9876 (getFollowerStatsForChannel)
 import { Store } from "initialize";
 
 let closure_0 = { FAILED: "failed", SUCCEEDED: "succeeded" };

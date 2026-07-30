@@ -1,10 +1,10 @@
-// Module ID: 7911
-// Function ID: 7912
+// Module ID: 7908
+// Function ID: 7909
 // Name: hasFetchedColors
 // Dependencies: [32, 5, 19, 4181, 644, 705, 1471, 4033, 589, 5808, 2]
 // Exports: default, maybeFetchColors, useAvatarColors, useHasFetchedColors
 
-// Module 7911 (hasFetchedColors)
+// Module 7908 (hasFetchedColors)
 import _slicedToArray from "_slicedToArray";
 import batchUpdates from "batchUpdates";
 import noop from "noop";

@@ -1,10 +1,10 @@
-// Module ID: 14526
-// Function ID: 14527
+// Module ID: 14522
+// Function ID: 14523
 // Name: UserSettingsDebugLogsFiltersActionSheet
-// Dependencies: [19, 21, 5551, 5242, 1236, 5554, 5220, 7655, 7654, 1297, 4157, 2]
+// Dependencies: [19, 21, 5551, 5242, 1236, 5554, 5220, 7652, 7651, 1297, 4157, 2]
 // Exports: openUserSettingsDebugLogsFiltersActionSheet
 
-// Module 14526 (UserSettingsDebugLogsFiltersActionSheet)
+// Module 14522 (UserSettingsDebugLogsFiltersActionSheet)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -36,13 +36,13 @@ function UserSettingsDebugLogsFiltersActionSheet(arg0) {
   const obj3 = { label: null, value: "newest" };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj3[0] = intl4.string(require(1236) /* getSystemLocale */.t.eoXe0r);
-  const items1 = [callback(require(7654) /* TableRadioRow */.TableRadioRow, obj3), ];
+  const items1 = [callback(require(7651) /* TableRadioRow */.TableRadioRow, obj3), ];
   const obj4 = { label: null, value: "oldest" };
   const intl5 = require(1236) /* getSystemLocale */.intl;
   obj4[0] = intl5.string(require(1236) /* getSystemLocale */.t.mmeWUF);
-  items1[1] = callback(require(7654) /* TableRadioRow */.TableRadioRow, obj4);
+  items1[1] = callback(require(7651) /* TableRadioRow */.TableRadioRow, obj4);
   obj2[4] = items1;
-  items[1] = callback2(require(7655) /* context */.TableRadioGroup, obj2);
+  items[1] = callback2(require(7652) /* context */.TableRadioGroup, obj2);
   items[2] = callback(require(1297) /* Button */.Spacer, { size: 0 });
   obj[1] = items;
   return callback2(require(5551) /* ActionSheet */.ActionSheet, obj);

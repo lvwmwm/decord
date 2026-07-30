@@ -1,10 +1,10 @@
-// Module ID: 10259
-// Function ID: 10260
+// Module ID: 10255
+// Function ID: 10256
 // Name: formatMessagePreview
-// Dependencies: [1218, 3826, 1874, 676, 686, 589, 7762, 4418, 1236, 4377, 5884, 12, 7767, 7846, 2]
+// Dependencies: [1218, 3826, 1874, 676, 686, 589, 7759, 4418, 1236, 4377, 5882, 12, 7764, 7843, 2]
 // Exports: isMessageContentPreviewable, useFormattedMessagePreview
 
-// Module 10259 (formatMessagePreview)
+// Module 10255 (formatMessagePreview)
 import fetchFingerprint from "fetchFingerprint";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -207,7 +207,7 @@ function formatMessagePreview(type, isBlocked) {
                   obj25[0] = text;
                   obj24[1] = intl2.formatToPlainString(tmp4(1236).t.ImizdM, obj25);
                   tmp10 = obj24;
-                } else if (importDefault(5884)(type)) {
+                } else if (importDefault(5882)(type)) {
                   obj = { type: "text", text: null };
                   const intl = tmp4(1236).intl;
                   obj[1] = intl.string(tmp4(1236).t["9ddYKt"]);
@@ -315,7 +315,7 @@ function formatMessagePreview(type, isBlocked) {
               } else if (type.type === tmp4(686).MessageTypes.USER_JOIN) {
                 let obj38 = { type: "text", text: null };
                 const intl18 = tmp4(1236).intl;
-                obj38 = importDefault(7767);
+                obj38 = importDefault(7764);
                 const obj39 = { username: null, usernameHook: null };
                 obj39[0] = authorNick;
                 const systemMessageUserJoin = obj38.getSystemMessageUserJoin(type.id);
@@ -376,9 +376,9 @@ function formatMessagePreview(type, isBlocked) {
                 tmp21 = obj50;
               } else if (type.type === tmp4(686).MessageTypes.VOICE_SESSION) {
                 const obj52 = { type: "text", text: null };
-                obj52[1] = tmp4(7846).getVoiceSessionMessageContent(type);
+                obj52[1] = tmp4(7843).getVoiceSessionMessageContent(type);
                 tmp21 = obj52;
-                const tmp4Result = tmp4(7846);
+                const tmp4Result = tmp4(7843);
               }
             }
           }
@@ -418,7 +418,7 @@ export const useFormattedMessagePreview = function useFormattedMessagePreview(me
   const items1 = [message.author.id];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ isBlocked: outer1_4.isBlocked(message.author.id), isIgnored: outer1_4.isIgnored(message.author.id) }), items1);
   ({ isBlocked, isIgnored } = stateFromStoresObject);
-  const tmp4 = importDefault(7762)(channel.id, message.id);
+  const tmp4 = importDefault(7759)(channel.id, message.id);
   const items2 = [fetchFingerprint];
   const stateFromStores = _require(589).useStateFromStores(items2, () => id.getId());
   const nick = importDefault(4418)(message).nick;

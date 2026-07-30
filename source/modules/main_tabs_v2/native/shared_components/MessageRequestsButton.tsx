@@ -1,10 +1,10 @@
-// Module ID: 15025
-// Function ID: 15026
+// Module ID: 15019
+// Function ID: 15020
 // Name: MessageRequestAnimation
-// Dependencies: [19, 17, 5655, 5656, 21, 4189, 589, 15026, 4600, 1236, 6682, 10125, 11841, 2]
+// Dependencies: [19, 17, 5655, 5656, 21, 4189, 589, 15020, 4600, 1236, 6679, 10121, 11837, 2]
 // Exports: default
 
-// Module 15025 (MessageRequestAnimation)
+// Module 15019 (MessageRequestAnimation)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import processChannel from "processChannel";
@@ -35,7 +35,7 @@ function MessageRequestAnimation(color) {
       }
     }
   }, items2);
-  return callback(ref(15026).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
+  return callback(ref(15020).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let closure_9 = createCacheKey.createStyles({ buttonContainer: { position: "relative" } });
@@ -80,14 +80,14 @@ export default function MessageRequestsButton(alternateVariant) {
       const intl2 = tmp3(1236).intl;
       obj1[3] = intl2.string(tmp3(1236).t.e7GWjQ);
       const merged2 = Object.assign(merged);
-      tmp21 = callback(tmp3(6682).IconButton, obj1);
+      tmp21 = callback(tmp3(6679).IconButton, obj1);
     }
-    const items2 = [tmp21, str > 0 && tmp16(tmp3(10125).ButtonBadge, { badgePosition: "right" })];
+    const items2 = [tmp21, str > 0 && tmp16(tmp3(10121).ButtonBadge, { badgePosition: "right" })];
     obj[2] = items2;
     return closure_8(View, obj);
   } else {
     const obj2 = { source: null, IconComponent: null, accessibilityLabel: null, buttonText: null, badge: null, badgePosition: "right" };
-    obj2[0] = importDefault(11841);
+    obj2[0] = importDefault(11837);
     obj2[1] = MessageRequestAnimation;
     const intl = tmp3(1236).intl;
     obj2[2] = intl.string(tmp3(1236).t.e7GWjQ);
@@ -98,7 +98,7 @@ export default function MessageRequestsButton(alternateVariant) {
     obj2[3] = str1;
     obj2[4] = str > 0;
     const merged3 = Object.assign(merged);
-    return callback(importDefault(10125), obj2);
+    return callback(importDefault(10121), obj2);
   }
   tmp2 = callback2();
 };

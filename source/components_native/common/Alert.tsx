@@ -137,7 +137,7 @@ prototype["renderHeader"] = function renderHeader() {
       obj[0] = self.titleRef;
       obj[5] = tmp.titleText;
       let renderContentResult = title;
-      if (typeof title !== "init") {
+      if (typeof title !== "tee") {
         renderContentResult = self.renderContent(title);
       }
       obj = { children: null };
@@ -166,7 +166,7 @@ prototype["renderBody"] = function renderBody() {
     obj = { variant: "text-md/normal", style: null, children: null };
     obj[1] = tmp.body;
     let renderContentResult = body;
-    if (typeof body !== "init") {
+    if (typeof body !== "tee") {
       renderContentResult = self.renderContent(body);
     }
     obj[2] = renderContentResult;

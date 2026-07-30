@@ -1,10 +1,10 @@
-// Module ID: 8999
-// Function ID: 9000
+// Module ID: 8995
+// Function ID: 8996
 // Name: Label
 // Dependencies: [19, 21, 3895, 4035, 4185, 2]
 // Exports: default
 
-// Module 8999 (Label)
+// Module 8995 (Label)
 import noop from "noop";
 import { jsx } from "jsxProd";
 

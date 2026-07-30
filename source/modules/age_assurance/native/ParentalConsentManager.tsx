@@ -1,9 +1,9 @@
-// Module ID: 16284
-// Function ID: 16285
+// Module ID: 16278
+// Function ID: 16279
 // Name: onPostConnectionOpen
-// Dependencies: [5, 1874, 676, 1577, 4169, 500, 5134, 16285, 16286, 16287, 16290, 530, 698, 1208, 2]
+// Dependencies: [5, 1874, 676, 1577, 4169, 500, 5134, 16279, 16280, 3868, 16281, 16284, 530, 698, 1208, 2]
 
-// Module 16284 (onPostConnectionOpen)
+// Module 16278 (onPostConnectionOpen)
 import set from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { AnalyticEvents } from "ME";
@@ -159,15 +159,23 @@ prototype["performAgeCheck"] = function performAgeCheck() {
             let dependencyMap;
             let should_block;
             should_block = 1;
-            if (obj19.isNativeAppStoreAgeSignalsEnabled("ParentalConsentManager")) {
-              _default = tmp53(tmp54[9]).default;
-              c4 = 2;
-              constants = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = _default.getAgeSignals({ firstAgeGate: 18 });
-              return obj1;
+            if (obj20.isNativeAppStoreAgeSignalsEnabled("ParentalConsentManager")) {
+              let tmp55Result = tmp55(tmp56[9]);
+              if (tmp55Result.shouldCollectAppStoreSignal()) {
+                _default = outer1_0(outer1_2[10]).default;
+                c4 = 3;
+                constants = 1;
+                const obj1 = { value: null, done: false };
+                obj1[0] = _default.getAgeSignals({ firstAgeGate: 18 });
+                return obj1;
+              } else {
+                should_block = 0;
+                constants = 3;
+                return { value: "HermesInternal", done: null };
+              }
             } else {
-              ({ setAgeRangeThresholds, getIsConsideredOlderThan } = tmp53(tmp54[10]));
+              tmp55Result = tmp55(tmp56[11]);
+              ({ setAgeRangeThresholds, getIsConsideredOlderThan } = tmp55Result);
               let obj10 = outer1_0(outer1_2[5]);
               if (obj10.isIOS()) {
                 const result = setAgeRangeThresholds([18]);
@@ -178,7 +186,7 @@ prototype["performAgeCheck"] = function performAgeCheck() {
               obj2[0] = getIsConsideredOlderThan(18);
               return obj2;
             }
-            obj19 = outer1_0(outer1_2[8]);
+            obj20 = outer1_0(outer1_2[8]);
           }
         } else {
           if (1 === tmp7) {
@@ -193,34 +201,34 @@ prototype["performAgeCheck"] = function performAgeCheck() {
             if (arg0 === 1) {
               constants = 3;
               throw arg1;
-            } else if (arg0 === 2) {
+            } else if (arg0 !== 2) {
+              should_block = arg1.body.should_block;
+              const obj4 = { eligible: null, should_block: null, platform: null };
+              obj4[0] = callback;
+              obj4[1] = should_block;
+              const obj17 = _default(698);
+              obj4[2] = callback(500).getNativePlatform();
+              obj17.track(constants.PARENTAL_CONSENT_CHECKED, obj4);
               should_block = 0;
-              constants = 3;
-              const obj4 = { value: null, done: true };
-              obj4[0] = arg1;
-              return obj4;
-            } else {
-              dependencyMap = arg1;
-              c4 = 4;
-              constants = 1;
-              const obj5 = { value: null, done: false };
-              obj5[0] = _default.getIsConsideredOlderThan(18, dependencyMap);
-              return obj5;
+              const obj19 = callback(500);
             }
           } else if (3 === tmp7) {
             if (arg0 === 1) {
               constants = 3;
               throw arg1;
-            } else if (arg0 !== 2) {
-              should_block = arg1.body.should_block;
-              const obj6 = { eligible: null, should_block: null, platform: null };
-              obj6[0] = callback;
-              obj6[1] = should_block;
-              const obj16 = _default(698);
-              obj6[2] = callback(500).getNativePlatform();
-              obj16.track(constants.PARENTAL_CONSENT_CHECKED, obj6);
+            } else if (arg0 === 2) {
               should_block = 0;
-              const obj18 = callback(500);
+              constants = 3;
+              const obj5 = { value: null, done: true };
+              obj5[0] = arg1;
+              return obj5;
+            } else {
+              dependencyMap = arg1;
+              c4 = 4;
+              constants = 1;
+              const obj6 = { value: null, done: false };
+              obj6[0] = _default.getIsConsideredOlderThan(18, dependencyMap);
+              return obj6;
             }
           } else {
             if (4 === tmp7) {
@@ -243,7 +251,7 @@ prototype["performAgeCheck"] = function performAgeCheck() {
                 obj9[1] = callback;
                 obj8[1] = obj9;
                 HTTP.post(obj8);
-                c4 = 3;
+                c4 = 2;
                 constants = 1;
               }
             } else if (arg0 === 1) {
@@ -264,11 +272,11 @@ prototype["performAgeCheck"] = function performAgeCheck() {
           obj10[0] = arg1;
           return obj10;
         }
-      } catch (tmp31) {
-        dependencyMap = tmp31;
+      } catch (tmp33) {
+        dependencyMap = tmp33;
         if (tmp4 === should_block) {
           constants = tmp2;
-          throw tmp31;
+          throw tmp33;
         } else {
           c4 = tmp;
         }

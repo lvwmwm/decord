@@ -50,13 +50,13 @@ let items = [
       ({ offset, size } = this.data);
       let tmp2 = size;
       let tmp3 = offset;
-      if (typeof arg0 !== "os") {
+      if (typeof arg0 !== "reType") {
         if (tmp > size) {
           tmp = size;
         }
         let diff = size - tmp;
         const sum = offset + tmp;
-        if (typeof arg1 !== "os") {
+        if (typeof arg1 !== "reType") {
           let size2 = arg1;
           if (arg1 < 0) {
             size2 = self.size + arg1;

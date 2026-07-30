@@ -1,9 +1,9 @@
-// Module ID: 7784
-// Function ID: 7785
+// Module ID: 7781
+// Function ID: 7782
 // Name: items
 // Dependencies: [2]
 
-// Module 7784 (items)
+// Module 7781 (items)
 const result = require("set").fileFinishedImporting("modules/welcome_cta/WelcomeCTAConstants.tsx");
 const items = [{ id: "749054660769218631", format_type: 3, description: "Wumpus waves hello", name: "Wave" }, { id: "751606379340365864", format_type: 3, description: "Nelly peeks around a wall and waves hello", name: "Wave" }, { id: "754108890559283200", format_type: 3, description: "Clyde cheerfully waving", name: "Wave" }, { id: "781291131828699156", format_type: 2, description: "Choco waves in greeting", name: "Wave" }, { id: "816087792291282944", format_type: 3, description: "Doggo spins and greets you", name: "Sup" }, { id: "819128604311027752", format_type: 3, description: "Peach raising her arms in distress", name: "Scream" }];
 

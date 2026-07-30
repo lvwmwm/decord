@@ -1,9 +1,9 @@
-// Module ID: 16260
-// Function ID: 16261
+// Module ID: 16254
+// Function ID: 16255
 // Name: AddAvatarScreen
-// Dependencies: [5, 32, 19, 17, 7938, 676, 21, 4189, 712, 5140, 5109, 1581, 589, 7951, 16261, 7980, 4731, 7941, 7943, 4185, 1236, 16270, 1297, 4600, 16258, 503, 6752, 5143, 5570, 2]
+// Dependencies: [5, 32, 19, 17, 7935, 676, 21, 4189, 712, 5140, 5109, 1581, 589, 7948, 16255, 7977, 4731, 7938, 7940, 4185, 1236, 16264, 1297, 4600, 16252, 503, 6749, 5143, 5570, 2]
 
-// Module 16260 (AddAvatarScreen)
+// Module 16254 (AddAvatarScreen)
 import closure_3 from "ME";
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
@@ -78,19 +78,19 @@ function AddAvatarScreen() {
             if (null == base64) {
               let pendingImage;
               if (null != outer1_0) {
-                obj = outer1_0(7951);
+                obj = outer1_0(7948);
                 const obj4 = { imageUri: null, description: null };
                 obj4[0] = base64;
-                obj2 = outer1_0(7951);
+                obj2 = outer1_0(7948);
                 obj4[1] = obj2.generateAvatarDescription();
                 pendingImage = obj.createPendingImage(obj4);
               }
               const outer1_1 = pendingImage;
-              obj3 = outer1_0(7941);
+              obj3 = outer1_0(7938);
               let obj5 = { avatar: null };
               obj5[0] = outer1_1;
               obj3.setPendingChanges(obj5);
-              obj5 = outer1_0(7943);
+              obj5 = outer1_0(7940);
               let str = "set";
               if (null == outer1_1) {
                 str = "remove";
@@ -127,10 +127,10 @@ function AddAvatarScreen() {
   let pendingImage;
   const stateFromStores = obj.useStateFromStores(items, () => pendingChanges.getPendingChanges().pendingAvatar);
   if (null != first) {
-    let tmp9Result = tmp9(7951);
+    let tmp9Result = tmp9(7948);
     obj = { imageUri: null, description: null };
-    obj[0] = tmp9(16261).DEFAULT_AVATARS[first];
-    tmp9Result = tmp9(7951);
+    obj[0] = tmp9(16255).DEFAULT_AVATARS[first];
+    tmp9Result = tmp9(7948);
     obj[1] = tmp9Result.generateAvatarDescription();
     pendingImage = tmp9Result.createPendingImage(obj);
   }
@@ -144,7 +144,7 @@ function AddAvatarScreen() {
   }
   const items1 = [tmp.container, ];
   let num = 16;
-  const tmp9Result1 = require(7980) /* useDominantRGBFromImage */;
+  const tmp9Result1 = require(7977) /* useDominantRGBFromImage */;
   if (bottom > 0) {
     num = bottom;
   }
@@ -162,9 +162,9 @@ function AddAvatarScreen() {
   items2[1] = callback(require(4185) /* Text */.Text, obj4);
   obj2[0] = items2;
   const items3 = [closure_10(View, obj2), , ];
-  const memoizedImageSourceResult = require(7980) /* useDominantRGBFromImage */.memoizedImageSource(imageUri);
-  items3[1] = callback(first(16270), {
-    avatarSource: require(7980) /* useDominantRGBFromImage */.memoizedImageSource(imageUri),
+  const memoizedImageSourceResult = require(7977) /* useDominantRGBFromImage */.memoizedImageSource(imageUri);
+  items3[1] = callback(first(16264), {
+    avatarSource: require(7977) /* useDominantRGBFromImage */.memoizedImageSource(imageUri),
     showPendingAvatar: null != pendingImage,
     onSelectAvatar: function handleSelectAvatar() {
       const self = this;
@@ -187,7 +187,7 @@ function AddAvatarScreen() {
   obj6[1] = callback(require(1297) /* Button */.LegacyText, obj7);
   items3[2] = callback(View, obj6);
   obj1[1] = items3;
-  const items4 = [closure_10(View, obj1), callback(first(16261), { onAvatarSelect: tmp4[1], selectedAvatar: first }), ];
+  const items4 = [closure_10(View, obj1), callback(first(16255), { onAvatarSelect: tmp4[1], selectedAvatar: first }), ];
   const obj8 = { style: tmp.buttonContainer, children: null };
   const obj9 = { text: null, grow: true, onPress: null, disabled: null };
   const intl4 = tmp9(1236).intl;
@@ -214,7 +214,7 @@ class AddAvatarModal {
           obj[1] = function onPress() {
             return callback(table[24]).showSkipAvatarModal();
           };
-          return callback2(callback(6752).HeaderActionButton, obj);
+          return callback2(callback(6749).HeaderActionButton, obj);
         },
         headerLeft() {
           return null;

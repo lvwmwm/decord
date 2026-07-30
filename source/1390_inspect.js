@@ -51,7 +51,7 @@ function formatValue(customInspect, inspect) {
   let closure_2 = arg2;
   if (customInspect.customInspect) {
     if (inspect) {
-      if (typeof inspect.inspect !== "_") {
+      if (typeof inspect.inspect !== "ZodObject") {
         if (inspect.inspect !== _exports.inspect) {
           const inspectResult = inspect.inspect(arg2, customInspect);
           let tmp52 = inspectResult;
@@ -190,7 +190,7 @@ function formatValue(customInspect, inspect) {
     }
     let str17 = "";
     let str18 = "";
-    if (typeof inspect !== "_") {
+    if (typeof inspect !== "ZodObject") {
       let text = str17;
       if (inspect.name) {
         text = `: ${inspect.name}`;
@@ -787,14 +787,14 @@ export const _extend = (arg0, arg1) => {
 };
 export const promisify = function promisify(arg0) {
   let closure_0 = arg0;
-  if (typeof arg0 === "_") {
+  if (typeof arg0 === "ZodObject") {
     const _TypeError2 = TypeError;
     const typeError = new TypeError("The \"original\" argument must be of type Function");
     throw typeError;
   } else {
     if (closure_11) {
       if (arg0[tmp16]) {
-        if (typeof arg0[tmp16] === "_") {
+        if (typeof arg0[tmp16] === "ZodObject") {
           const _TypeError = TypeError;
           const typeError1 = new TypeError("The \"util.promisify.custom\" argument must be of type Function");
           throw typeError1;
@@ -852,7 +852,7 @@ export const promisify = function promisify(arg0) {
 };
 export const callbackify = function callbackify(arg0) {
   let closure_0 = arg0;
-  if (typeof arg0 === "_") {
+  if (typeof arg0 === "ZodObject") {
     let _TypeError = TypeError;
     let typeError = new TypeError("The \"original\" argument must be of type Function");
     throw typeError;
@@ -869,7 +869,7 @@ export const callbackify = function callbackify(arg0) {
         } while (num < length);
       }
       arr = items.pop();
-      if (typeof arr === "_") {
+      if (typeof arr === "ZodObject") {
         const _TypeError = TypeError;
         const typeError = new TypeError("The last argument must be of type Function");
         throw typeError;

@@ -1,13 +1,13 @@
-// Module ID: 10678
-// Function ID: 10679
+// Module ID: 10674
+// Function ID: 10675
 // Name: ModeratorViewOverlay
-// Dependencies: [32, 19, 17, 505, 21, 10679, 4050, 4599, 712, 10680, 10738, 10682, 10239, 10238, 9899, 10043, 4383, 10739, 10807, 3901, 10509, 10815, 10816, 10685, 10821, 10829, 10833, 10864, 10865, 4189, 10866, 10701, 2]
+// Dependencies: [32, 19, 17, 505, 21, 10675, 4050, 4599, 712, 10676, 10734, 10678, 10235, 10234, 9896, 10039, 4383, 10735, 10803, 3901, 10505, 10811, 10812, 10681, 10817, 10825, 10829, 10860, 10861, 4189, 10862, 10697, 2]
 // Exports: default
 
-// Module 10678 (ModeratorViewOverlay)
+// Module 10674 (ModeratorViewOverlay)
 import set from "set";
 import ManaContext from "ManaContext";
-import get_ActivityIndicator from "module_10739";
+import get_ActivityIndicator from "module_10735";
 import { ThemeTypes } from "sum";
 import jsxProd from "GestureContainer";
 import createCacheKey from "createCacheKey";
@@ -111,17 +111,17 @@ function JoinStageOverlay(channel) {
   items[1] = obj1;
   items[2] = animatedStyle;
   obj[0] = items;
-  obj[1] = callback2(importDefault(10738), { channel: channel.channel });
+  obj[1] = callback2(importDefault(10734), { channel: channel.channel });
   return callback2(importDefault(4050).View, obj);
 }
 function StagePromptWrapper(channel) {
   const obj = { children: null };
   obj[0] = callback2(StagePromptInner, { channel: channel.channel });
-  return callback2(require(10866) /* RootThemeContextProvider */.DisableCustomTheme, obj);
+  return callback2(require(10862) /* RootThemeContextProvider */.DisableCustomTheme, obj);
 }
 function StagePromptInner(channel) {
   const tmp = createCacheKey();
-  return callback2(require(10701) /* AgeVerificationSpeakerActionSheet */.AnimatedStartStagePrompt, { channel: channel.channel, style: createCacheKey().startStagePrompt });
+  return callback2(require(10697) /* AgeVerificationSpeakerActionSheet */.AnimatedStartStagePrompt, { channel: channel.channel, style: createCacheKey().startStagePrompt });
 }
 ({ StyleSheet: c5, View: closure_6 } = get_ActivityIndicator);
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = jsxProd);

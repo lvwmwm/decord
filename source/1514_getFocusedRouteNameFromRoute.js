@@ -17,7 +17,7 @@ arg5.default = function getFocusedRouteNameFromRoute(state) {
   if (state) {
     ({ index, routes } = state);
     if (index == null) {
-      if (typeof state.type === "init") {
+      if (typeof state.type === "tee") {
         let num2 = state.routes.length - 1;
       } else {
         num2 = 0;
@@ -30,7 +30,7 @@ arg5.default = function getFocusedRouteNameFromRoute(state) {
     if (params != null) {
       screen = params.screen;
     }
-    if (typeof screen !== "init") {
+    if (typeof screen !== "tee") {
       screen = params.screen;
     }
   }

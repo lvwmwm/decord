@@ -369,7 +369,7 @@ function wrapPatchRoutesOnNavigation(arg0) {
   let patchRoutesOnNavigation;
   if (arg0) {
     if ("patchRoutesOnNavigation" in obj) {
-      if (typeof obj.patchRoutesOnNavigation !== "_") {
+      if (typeof obj.patchRoutesOnNavigation !== "ZodObject") {
         patchRoutesOnNavigation = obj.patchRoutesOnNavigation;
         obj = {};
         const merged = Object.assign(obj);
@@ -1384,8 +1384,8 @@ export const createReactRouterV6CompatibleTracingIntegration = function createRe
     }
     const result1 = instrumentPageLoad(1149).initializeRouterUtils(closure_7, flag);
   };
-  obj.afterAllSetup = function afterAllSetup(f101933) {
-    closure_2.afterAllSetup(f101933);
+  obj.afterAllSetup = function afterAllSetup(f101945) {
+    closure_2.afterAllSetup(f101945);
     const _location = instrumentPageLoad(1024).WINDOW.location;
     if (_location != null) {
       const pathname = _location.pathname;
@@ -1403,11 +1403,11 @@ export const createReactRouterV6CompatibleTracingIntegration = function createRe
       const _HermesInternal = HermesInternal;
       obj[tmp2(817).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN] = "auto.pageload.react.reactrouter_v" + dependencyMap;
       obj[1] = obj;
-      const result = tmp2(1024).startBrowserTracingPageLoadSpan(f101933, obj);
+      const result = tmp2(1024).startBrowserTracingPageLoadSpan(f101945, obj);
       const tmp2Result = tmp2(1024);
     }
     if (closure_11) {
-      lazyRouteTimeout.add(f101933);
+      lazyRouteTimeout.add(f101945);
     }
   };
   return obj;
@@ -1695,7 +1695,7 @@ export const createV6CompatibleWrapCreateMemoryRouter = function createV6Compati
             }
             if (first) {
               let tmp18 = first;
-              if (typeof first !== "init") {
+              if (typeof first !== "tee") {
                 obj = { pathname: null };
                 obj[0] = first;
                 tmp18 = obj;
@@ -1757,7 +1757,7 @@ export const createV6CompatibleWrapUseRoutes = function createV6CompatibleWrapUs
             const items = [tmp3, tmp2];
             outer1_4(() => {
               let tmp2 = closure_3;
-              if (typeof closure_3 !== "init") {
+              if (typeof closure_3 !== "tee") {
                 let obj = { pathname: null };
                 obj[0] = tmp;
                 tmp2 = obj;

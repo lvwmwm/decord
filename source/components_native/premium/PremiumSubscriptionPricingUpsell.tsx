@@ -1,10 +1,10 @@
-// Module ID: 12567
-// Function ID: 12568
+// Module ID: 12561
+// Function ID: 12562
 // Name: PricingSubheadingCopy
-// Dependencies: [32, 19, 17, 1946, 1874, 3840, 3841, 5672, 676, 1876, 21, 4189, 589, 3835, 12447, 709, 6331, 5675, 4185, 500, 5670, 5669, 1236, 1851, 2]
+// Dependencies: [32, 19, 17, 1946, 1874, 3840, 3841, 5672, 676, 1876, 21, 4189, 589, 3835, 12441, 709, 6328, 5675, 4185, 500, 5670, 5669, 1236, 1851, 2]
 // Exports: default
 
-// Module 12567 (PricingSubheadingCopy)
+// Module 12561 (PricingSubheadingCopy)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "SubscriptionPlans";
@@ -233,7 +233,7 @@ let result = require("get ActivityIndicator").fileFinishedImporting("components_
 
 export default function PremiumSubscriptionPricingUpsell() {
   const tmp = callback3();
-  let obj = require(12447) /* getSubscriptionPlansLoaded */;
+  let obj = require(12441) /* getSubscriptionPlansLoaded */;
   obj = { style: tmp.pricingSection, children: null };
   const subscriptionPlansLoaded = obj.useSubscriptionPlansLoaded();
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };

@@ -1,9 +1,9 @@
-// Module ID: 5957
-// Function ID: 5958
+// Module ID: 5955
+// Function ID: 5956
 // Name: AppStartInfo
-// Dependencies: [32, 5, 5958, 4047, 2]
+// Dependencies: [32, 5, 5956, 4047, 2]
 
-// Module 5957 (AppStartInfo)
+// Module 5955 (AppStartInfo)
 import _slicedToArray from "_slicedToArray";
 import asyncGeneratorStep from "asyncGeneratorStep";
 
@@ -12,7 +12,7 @@ const result = require("enforcing").fileFinishedImporting("modules/tti_analytics
 
 export const AppStartInfo = {
   getAppUIViewed() {
-    const mainActivityCreationTime = importDefault(5958).getMainActivityCreationTime();
+    const mainActivityCreationTime = importDefault(5956).getMainActivityCreationTime();
     let tmp2 = null != mainActivityCreationTime;
     if (tmp2) {
       let flag = table[mainActivityCreationTime];
@@ -110,11 +110,11 @@ export const AppStartInfo = {
             dependencyMap2 = dependencyMap2(dependencyMap, 3);
             c3 = 32;
             closure_4 = 5;
-            closure_5 = 5958;
+            closure_5 = 5956;
             obj5 = { app_start_type: null, app_launch_scenario: null };
             obj5[0] = c3;
             obj5[1] = closure_4;
-            mainActivityCreationTime = callback(5958).getMainActivityCreationTime();
+            mainActivityCreationTime = callback(5956).getMainActivityCreationTime();
             if (null != mainActivityCreationTime) {
               obj5.android_time_creation_to_create_main_activity = mainActivityCreationTime - callback;
             }

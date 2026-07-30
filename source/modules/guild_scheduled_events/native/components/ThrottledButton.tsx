@@ -1,10 +1,10 @@
-// Module ID: 12271
-// Function ID: 12272
+// Module ID: 12265
+// Function ID: 12266
 // Name: ThrottledButton
 // Dependencies: [19, 21, 4600, 2]
 // Exports: default, useThrottledActionHandler
 
-// Module 12271 (ThrottledButton)
+// Module 12265 (ThrottledButton)
 import noop from "noop";
 import { jsx } from "jsxProd";
 

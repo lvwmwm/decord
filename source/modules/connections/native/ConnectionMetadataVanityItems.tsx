@@ -1,10 +1,10 @@
-// Module ID: 10024
-// Function ID: 10025
+// Module ID: 10020
+// Function ID: 10021
 // Name: PaypalVanityTag
-// Dependencies: [19, 17, 4997, 21, 4189, 712, 1236, 10025, 10026, 12, 1851, 4185, 1297, 4996, 2]
+// Dependencies: [19, 17, 4997, 21, 4189, 712, 1236, 10021, 10022, 12, 1851, 4185, 1297, 4996, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 10024 (PaypalVanityTag)
+// Module 10020 (PaypalVanityTag)
 import "noop";
 import { View } from "get ActivityIndicator";
 import OperatorTypes from "OperatorTypes";
@@ -226,7 +226,7 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
     obj = { count: null };
     obj[0] = NumberResult1;
     obj[1] = intl.format(require(1236) /* getSystemLocale */.t.Y88M5x, obj);
-    obj[2] = importDefault(10025);
+    obj[2] = importDefault(10021);
     const intl2 = require(1236) /* getSystemLocale */.intl;
     obj[3] = intl2.string(require(1236) /* getSystemLocale */.t.HKUEZo);
     items.push(callback(VanityItem, obj, tmp2.STEAM_ITEM_COUNT_DOTA2));
@@ -238,7 +238,7 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
     const obj2 = { count: null };
     obj2[0] = NumberResult2;
     obj1[1] = intl3.format(require(1236) /* getSystemLocale */.t.Y88M5x, obj2);
-    obj1[2] = importDefault(10026);
+    obj1[2] = importDefault(10022);
     const intl4 = require(1236) /* getSystemLocale */.intl;
     obj1[3] = intl4.string(require(1236) /* getSystemLocale */.t.C8p1Sh);
     items.push(callback(VanityItem, obj1, tmp2.STEAM_ITEM_COUNT_TF2));

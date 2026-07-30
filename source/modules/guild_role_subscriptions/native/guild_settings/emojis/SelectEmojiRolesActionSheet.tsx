@@ -1,10 +1,10 @@
-// Module ID: 16621
-// Function ID: 16622
+// Module ID: 16615
+// Function ID: 16616
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 1301, 505, 21, 4189, 712, 5109, 14229, 4717, 1297, 1236, 5242, 5551, 7678, 7634, 4185, 2]
+// Dependencies: [32, 19, 17, 1301, 505, 21, 4189, 712, 5109, 14225, 4717, 1297, 1236, 5242, 5551, 7675, 7631, 4185, 2]
 // Exports: default
 
-// Module 16621 (SelectEmojiRolesActionSheet)
+// Module 16615 (SelectEmojiRolesActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "Text";
@@ -67,7 +67,7 @@ export default function SelectEmojiRolesActionSheet(arg0) {
   }), 2);
   first = tmp2[0];
   React = tmp2[1];
-  let obj = require(14229) /* useFetchListingsForGuild */;
+  let obj = require(14225) /* useFetchListingsForGuild */;
   subscriptionListingsForGuild = obj.useSubscriptionListingsForGuild(guildId, { includeSoftDeleted: true, sortDeletedListingsLast: true });
   obj = {
     onPress() {
@@ -103,7 +103,7 @@ export default function SelectEmojiRolesActionSheet(arg0) {
   tmp7Result = tmp7(tmp5(5242).BottomSheetTitleHeader, obj1);
   let obj2 = { scrollable: true, header: tmp7Result, startExpanded: true, onDismiss: onCancel, children: null };
   const items1 = [subscriptionListingsForGuild.length];
-  obj2[4] = closure_6(emoji(7678), {
+  obj2[4] = closure_6(emoji(7675), {
     inActionSheet: true,
     style: tmp.list,
     itemSize: closure_9,

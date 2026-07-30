@@ -1,10 +1,10 @@
-// Module ID: 15962
-// Function ID: 15963
+// Module ID: 15956
+// Function ID: 15957
 // Name: useTapGestures
-// Dependencies: [19, 10037, 5273, 4050, 4158, 2]
+// Dependencies: [19, 10033, 5273, 4050, 4158, 2]
 // Exports: default
 
-// Module 15962 (useTapGestures)
+// Module 15956 (useTapGestures)
 import noop from "noop";
 
 const require = arg1;
@@ -16,7 +16,7 @@ const result = require("Directions").fileFinishedImporting("modules/voice_panel/
 
 export default function useTapGestures(onSingleTap) {
   let closure_0 = onSingleTap;
-  isFocusedVideoZoomed = React.useContext(isFocusedVideoZoomed(10037)).isFocusedVideoZoomed;
+  isFocusedVideoZoomed = React.useContext(isFocusedVideoZoomed(10033)).isFocusedVideoZoomed;
   const dependencyMap = React.useRef(onSingleTap);
   React = tmp;
   let closure_4 = tmp2;

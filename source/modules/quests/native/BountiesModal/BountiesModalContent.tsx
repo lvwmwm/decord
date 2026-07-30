@@ -1,10 +1,10 @@
-// Module ID: 14087
-// Function ID: 14088
+// Module ID: 14083
+// Function ID: 14084
 // Name: BountiesModalContentInner
-// Dependencies: [5, 19, 17, 5984, 5033, 676, 505, 21, 1474, 1581, 4189, 712, 589, 8719, 10881, 14055, 14058, 10885, 14056, 14059, 6002, 6013, 6012, 5038, 10500, 14033, 14061, 10970, 14088, 14080, 5177, 14072, 10492, 3901, 2]
+// Dependencies: [5, 19, 17, 5982, 5033, 676, 505, 21, 1474, 1581, 4189, 712, 589, 8715, 10877, 14041, 14044, 10881, 14042, 14045, 6000, 6011, 6010, 5038, 10496, 14028, 14047, 10966, 14084, 14076, 5177, 14068, 10488, 3901, 2]
 // Exports: default
 
-// Module 14087 (BountiesModalContentInner)
+// Module 14083 (BountiesModalContentInner)
 import ME from "ME";
 import useBountiesModalVideoAnalytics from "useBountiesModalVideoAnalytics";
 import { View } from "fetchBountiesAndDispatch";
@@ -118,18 +118,18 @@ function BountiesModalContentInner(bounty) {
   let obj1 = width(589);
   const items4 = [flushProgress];
   const stateFromStores = obj1.useStateFromStores(items4, () => flushProgress.isBountyCompleted(width.id));
-  let obj2 = width(8719);
-  let obj3 = width(10881);
+  let obj2 = width(8715);
+  let obj3 = width(10877);
   const bountiesExperience = obj3.useBountiesExperience(handleVideoProgressAnalytics.VIDEO_MODAL_MOBILE);
   ({ loopingEnabled, ownedByVerticalScrollExperiment, stage1Enabled, rewardTimerSeconds } = bountiesExperience);
-  const BountyVideoEndMode = width(14055).BountyVideoEndMode;
+  const BountyVideoEndMode = width(14041).BountyVideoEndMode;
   const tmp12 = loopingEnabled ? BountyVideoEndMode.LOOP : BountyVideoEndMode.END_CARD;
   if (!stage1Enabled) {
     if (!ownedByVerticalScrollExperiment) {
       let result = 1000 * bounty.rewardTimerSeconds;
     }
     React = result;
-    let tmp9Result = tmp9(14058);
+    let tmp9Result = tmp9(14044);
     obj = { bountyId: null, endMode: null };
     obj[0] = bounty.id;
     obj[1] = tmp12;
@@ -203,7 +203,7 @@ function BountiesModalContentInner(bounty) {
         }
       }
     }), items5);
-    tmp9Result = tmp9(14059);
+    tmp9Result = tmp9(14045);
     obj = { bountyId: null, sourceQuestContent: null, rewardDurationMs: null, initialPlaybackTimeSec: null, initialMaxVideoProgressSec: null, initialVideoDurationSec: null, wasPreloaded: false, startupPath: "carousel", verticalScrollingPosition: null };
     obj[0] = bounty.id;
     obj[1] = sourceQuestContent;
@@ -233,7 +233,7 @@ function BountiesModalContentInner(bounty) {
       duration = initialProgress.duration;
     }
     obj1[11] = duration;
-    const bountiesModalTiming = tmp9(14055).useBountiesModalTiming(obj1);
+    const bountiesModalTiming = tmp9(14041).useBountiesModalTiming(obj1);
     isEndCardVisible = bountiesModalTiming.isEndCardVisible;
     maxVideoProgressSeconds = bountiesModalTiming.maxVideoProgressSeconds;
     videoDuration = bountiesModalTiming.videoDuration;
@@ -321,13 +321,13 @@ function BountiesModalContentInner(bounty) {
       return videoDuration(width(_undefined[27]).QuestContentImpressionTrackerNative, obj);
     };
     ({ width: obj13[24], height: obj13[25] } = memo);
-    obj3[1] = videoDuration(tmp9(14061).BountyVideo, obj4);
+    obj3[1] = videoDuration(tmp9(14047).BountyVideo, obj4);
     const items9 = [videoDuration(handleProgress, obj3), , ];
     let obj5 = { style: null, children: null };
     obj5[0] = memo2;
     const obj6 = { onPress: null };
     obj6[0] = callback2;
-    obj5[1] = videoDuration(tmp2(14080), obj6);
+    obj5[1] = videoDuration(tmp2(14076), obj6);
     items9[1] = videoDuration(handleProgress, obj5);
     const obj7 = { left: null, right: null, bottom: true, style: null, pointerEvents: "box-none", children: null };
     ({ isFullWidth: obj16[0], isFullWidth: obj16[1] } = memo);
@@ -337,7 +337,7 @@ function BountiesModalContentInner(bounty) {
     obj8[1] = isEndCardVisible;
     obj8[2] = sourceQuestContent;
     obj8[3] = callback3;
-    obj7[5] = videoDuration(tmp2(14072), obj8);
+    obj7[5] = videoDuration(tmp2(14068), obj8);
     items9[2] = videoDuration(tmp9(5177).SafeAreaPaddingView, obj7);
     obj2[0] = items9;
     return callback2(closure_11, obj2);

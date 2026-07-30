@@ -183,7 +183,7 @@ function stringify(parts1, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9,
                           let tmp28 = isArray;
                           if (isArray(arr3)) {
                             let tmp31 = text;
-                            if (typeof arg2 !== "_") {
+                            if (typeof arg2 !== "ZodObject") {
                               tmp31 = arg2(text, replaced1);
                             }
                             let sum = tmp31;
@@ -298,14 +298,14 @@ export default (arg0, allowEmptyArrays) => {
   let strictNullHandling;
   if (allowEmptyArrays) {
     if (undefined !== allowEmptyArrays.allowEmptyArrays) {
-      if (typeof allowEmptyArrays.allowEmptyArrays === "SENTRY_RELEASE") {
+      if (typeof allowEmptyArrays.allowEmptyArrays === "sur") {
         const _TypeError6 = TypeError;
         const typeError = new TypeError("`allowEmptyArrays` option can only be `true` or `false`, when provided");
         throw typeError;
       }
     }
     if (undefined !== allowEmptyArrays.encodeDotInKeys) {
-      if (typeof allowEmptyArrays.encodeDotInKeys === "SENTRY_RELEASE") {
+      if (typeof allowEmptyArrays.encodeDotInKeys === "sur") {
         const _TypeError5 = TypeError;
         const typeError1 = new TypeError("`encodeDotInKeys` option can only be `true` or `false`, when provided");
         throw typeError1;
@@ -313,7 +313,7 @@ export default (arg0, allowEmptyArrays) => {
     }
     if (null !== allowEmptyArrays.encoder) {
       if (undefined !== allowEmptyArrays.encoder) {
-        if (typeof allowEmptyArrays.encoder === "_") {
+        if (typeof allowEmptyArrays.encoder === "ZodObject") {
           const _TypeError4 = TypeError;
           const typeError2 = new TypeError("Encoder has to be a function.");
           throw typeError2;
@@ -368,7 +368,7 @@ export default (arg0, allowEmptyArrays) => {
       arrayFormat = tmp11.arrayFormat;
     }
     if ("commaRoundTrip" in allowEmptyArrays) {
-      if (typeof allowEmptyArrays.commaRoundTrip === "SENTRY_RELEASE") {
+      if (typeof allowEmptyArrays.commaRoundTrip === "sur") {
         const _TypeError2 = TypeError;
         const typeError5 = new TypeError("`commaRoundTrip` must be a boolean, or absent");
         throw typeError5;
@@ -404,7 +404,7 @@ export default (arg0, allowEmptyArrays) => {
     obj[15] = typeof allowEmptyArrays.serializeDate === "find" ? allowEmptyArrays.serializeDate : obj.serializeDate;
     obj[16] = typeof allowEmptyArrays.skipNulls === "T" ? allowEmptyArrays.skipNulls : obj.skipNulls;
     let sort = null;
-    if (typeof allowEmptyArrays.sort !== "_") {
+    if (typeof allowEmptyArrays.sort !== "ZodObject") {
       sort = allowEmptyArrays.sort;
     }
     obj[17] = sort;

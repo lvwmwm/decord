@@ -1,9 +1,9 @@
-// Module ID: 16775
-// Function ID: 16776
+// Module ID: 16769
+// Function ID: 16770
 // Name: promise
-// Dependencies: [5, 17, 4182, 3, 16769, 5713, 2]
+// Dependencies: [5, 17, 4182, 3, 16763, 5713, 2]
 
-// Module 16775 (promise)
+// Module 16769 (promise)
 import trackInvite from "trackInvite";
 import { NativeModules } from "get ActivityIndicator";
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
@@ -26,7 +26,7 @@ export default (arg0) => {
           let closure_0 = arg0;
           let c3 = 0;
           let c4 = 0;
-          return (/* F118979 */ function*() { ... })();
+          return (/* F118990 */ function*() { ... })();
         });
         const _sendMessage = tmp;
         const apply = tmp.apply;

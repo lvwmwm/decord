@@ -224,7 +224,7 @@ obj = {
         return null;
       } else {
         let tmp8 = null;
-        if (typeof currentProps[eventTypePropName] !== "_") {
+        if (typeof currentProps[eventTypePropName] !== "ZodObject") {
           tmp8 = tmp7;
         }
         return tmp8;

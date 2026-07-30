@@ -1,10 +1,10 @@
-// Module ID: 14821
-// Function ID: 14822
+// Module ID: 14814
+// Function ID: 14815
 // Name: ActionSheetSelector
-// Dependencies: [32, 19, 17, 21, 4189, 712, 12288, 12286, 4395, 14822, 1959, 4157, 5243, 5242, 5554, 5220, 7629, 4141, 4598, 5222, 4185, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 12282, 12280, 4395, 14815, 1959, 4157, 5243, 5242, 5554, 5220, 7626, 4141, 4598, 5222, 4185, 2]
 // Exports: default
 
-// Module 14821 (ActionSheetSelector)
+// Module 14814 (ActionSheetSelector)
 import _slicedToArray from "_slicedToArray";
 import PressableCard from "PressableCard";
 import get_ActivityIndicator from "CheckmarkLargeIcon";
@@ -37,7 +37,7 @@ function ActionSheetSelector(arg0) {
   obj2[1] = items.map((type) => {
     let closure_0 = type;
     const obj = { icon: null, label: null, subLabel: null, onPress: null, trailing: null, start: null, end: null };
-    obj[0] = outer1_7(outer1_0(7629).WarningIcon, { size: "md" });
+    obj[0] = outer1_7(outer1_0(7626).WarningIcon, { size: "md" });
     ({ label: obj[1], description: obj[2] } = type);
     obj[3] = function onPress() {
       return outer1_2(closure_0);
@@ -68,7 +68,7 @@ let items = [
     label: "Blocked Domain",
     description: "Shows a warning for potentially malicious domains",
     show() {
-      return importDefault(12288).show("https://example-phishing-site.com/malicious-page");
+      return importDefault(12282).show("https://example-phishing-site.com/malicious-page");
     }
   },
   {
@@ -76,7 +76,7 @@ let items = [
     label: "Suspicious Download",
     description: "Warns users about potentially dangerous file downloads",
     show() {
-      return importDefault(12286).show("https://suspicious-file.com/dangerous-file.exe");
+      return importDefault(12280).show("https://suspicious-file.com/dangerous-file.exe");
     }
   },
   {
@@ -84,7 +84,7 @@ let items = [
     label: "Inappropriate Conversation",
     description: "Shows safety warning for inappropriate conversations",
     show() {
-      return importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(14822, dependencyMap.paths), { warningId: "test-warning-123", warningType: "inappropriate_conversation", senderId: "123456789", channelId: "987654321" }, "INAPPROPRIATE_CONVERSATION_TAKEOVER_MODAL");
+      return importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(14815, dependencyMap.paths), { warningId: "test-warning-123", warningType: "inappropriate_conversation", senderId: "123456789", channelId: "987654321" }, "INAPPROPRIATE_CONVERSATION_TAKEOVER_MODAL");
     }
   }
 ];
@@ -94,7 +94,7 @@ let obj2 = {
   label: "Blocked Domain",
   description: "Shows a warning for potentially malicious domains",
   show() {
-    return importDefault(12288).show("https://example-phishing-site.com/malicious-page");
+    return importDefault(12282).show("https://example-phishing-site.com/malicious-page");
   }
 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsActionSheetsScreen.tsx");

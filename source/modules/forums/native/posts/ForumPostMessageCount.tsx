@@ -1,10 +1,10 @@
-// Module ID: 11195
-// Function ID: 11196
+// Module ID: 11191
+// Function ID: 11192
 // Name: num2
-// Dependencies: [19, 17, 21, 4189, 712, 500, 9133, 1236, 4686, 4185, 10376, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 500, 9129, 1236, 4686, 4185, 10372, 2]
 // Exports: default
 
-// Module 11195 (num2)
+// Module 11191 (num2)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -46,7 +46,7 @@ export default function ForumPostMessageCount(hasUnreads) {
   hasUnreads = hasUnreads.hasUnreads;
   ({ thread, containerStyle } = hasUnreads);
   const tmp = createCacheKey();
-  let obj = require(9133) /* useLoadForumUnreadCounts */;
+  let obj = require(9129) /* useLoadForumUnreadCounts */;
   messageCount = obj.useMessageCount(thread);
   ({ messageCountText, unreadCount } = messageCount);
   let str = "text-muted";
@@ -74,7 +74,7 @@ export default function ForumPostMessageCount(hasUnreads) {
     const obj2 = { count: null, textVariant: "text-sm/semibold", textColor: null, animate: false };
     obj2[0] = messageCount;
     obj2[2] = str;
-    tmp7Result = tmp7(importDefault(10376), obj2);
+    tmp7Result = tmp7(importDefault(10372), obj2);
   }
   items1[1] = tmp7Result;
   let tmp5Result = null != unreadCount;

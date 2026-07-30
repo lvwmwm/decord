@@ -1,7 +1,7 @@
 // Module ID: 5681
 // Function ID: 5682
 // Name: _isAccessibleChannelOrThreadPath
-// Dependencies: [5, 1933, 5111, 1372, 1935, 1862, 676, 1379, 5682, 12614, 12621, 5662, 12624, 12626, 5658, 6062, 5791, 4100, 6046, 5660, 1351, 10417, 4199, 4381, 2]
+// Dependencies: [5, 1933, 5111, 1372, 1935, 1862, 676, 1379, 5682, 12608, 12615, 5662, 12618, 12620, 5658, 6060, 5791, 4100, 6044, 5660, 1351, 10413, 4199, 4381, 2]
 // Exports: default
 
 // Module 5681 (_isAccessibleChannelOrThreadPath)
@@ -70,7 +70,7 @@ function _isAccessibleChannelOrThreadPath() {
                 channelGatedAndVisible = undefined;
                 channelGatedAndVisible = 1;
                 c5 = 1;
-                return { value: "ct", done: null };
+                return { value: "ct", done: "Array" };
               }
             } else {
               if (1 === tmp5) {

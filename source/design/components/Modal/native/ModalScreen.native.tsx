@@ -1,10 +1,10 @@
-// Module ID: 6783
-// Function ID: 6784
+// Module ID: 6780
+// Function ID: 6781
 // Name: ModalScreen
 // Dependencies: [19, 17, 21, 4189, 712, 5215, 2]
 // Exports: ModalScreen
 
-// Module 6783 (ModalScreen)
+// Module 6780 (ModalScreen)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 9340
-// Function ID: 9341
+// Module ID: 9336
+// Function ID: 9337
 // Name: initializeSearch
-// Dependencies: [19, 5048, 1862, 5027, 1874, 5052, 676, 1877, 1338, 1876, 514, 9341, 4384, 9342, 9344, 9345, 589, 1897, 9346, 1236, 3834, 3830, 698, 12, 687, 1355, 2]
+// Dependencies: [19, 5048, 1862, 5027, 1874, 5052, 676, 1877, 1338, 1876, 514, 9337, 4384, 9338, 9340, 9341, 589, 1897, 9342, 1236, 3834, 3830, 698, 12, 687, 1355, 2]
 // Exports: getAriaIdForEmojiCategory, getEmojiSubCategory, getSearchPlaceholder, getStringForEmojiCategory, getUnicodeEmojiCategories, initializeSearch, trackEmojiFavorited, trackEmojiFocus, trackEmojiSearchEmpty, trackEmojiSearchResultsViewed, trackEmojiSearchSelect, trackEmojiSearchStart, trackEmojiSelect, trackPremiumSettingsPaneOpened, useEmojiCategories, useEmojiInPriorityOrder, useEmojiSearchResults, useFavoriteEmojis, useFrequentlyUsedEmojis, useFrequentlyUsedReactionEmojis, useIsFavoriteEmoji
 
-// Module 9340 (initializeSearch)
+// Module 9336 (initializeSearch)
 import getSystemLocale from "getSystemLocale";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -40,7 +40,7 @@ export const initializeSearch = function initializeSearch(location) {
   const intention = location.intention;
   const obj = require(514) /* v1 */;
   const replaced = require(514) /* v1 */.v4().replace(closure_21, "");
-  const EmojiPickerStore = require(9341) /* withEqualityFn */.EmojiPickerStore;
+  const EmojiPickerStore = require(9337) /* withEqualityFn */.EmojiPickerStore;
   EmojiPickerStore.setAnalyticsId(replaced);
   const str = require(514) /* v1 */.v4();
   if (constants8.REACTION === intention) {
@@ -79,7 +79,7 @@ export const useEmojiCategories = function useEmojiCategories(CHAT, channel, gui
   let stateFromStores1;
   let c11;
   let soundmojiEmojiPickerSectionExperiment;
-  const result = _require(9342).maybeFetchTopEmojisByGuild(tmp);
+  const result = _require(9338).maybeFetchTopEmojisByGuild(tmp);
   let tmp5 = callback(CHAT);
   c4 = tmp5;
   _require = tmp;
@@ -87,7 +87,7 @@ export const useEmojiCategories = function useEmojiCategories(CHAT, channel, gui
     const FrecencyUserSettingsActionCreators = CHAT(tmp[25]).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }, []);
-  let obj = _require(9342);
+  let obj = _require(9338);
   let items = [c4];
   stateFromStoresArray = _require(589).useStateFromStoresArray(items, () => {
     const disambiguatedEmojiContext = _undefined.getDisambiguatedEmojiContext(closure_0);
@@ -113,9 +113,9 @@ export const useEmojiCategories = function useEmojiCategories(CHAT, channel, gui
   const items2 = [c4];
   stateFromStoresArray2 = _require(589).useStateFromStoresArray(items2, () => _undefined.getDisambiguatedEmojiContext(closure_0).favoriteEmojisWithoutFetchingLatest);
   let obj4 = _require(589);
-  ({ topEmojis, newlyAddedEmojis } = importDefault(9344)(tmp, CHAT));
-  allEmojis = importDefault(9345)({ topEmojis, newlyAddedEmojis }).allEmojis;
-  let tmp12 = importDefault(9344)(tmp, CHAT);
+  ({ topEmojis, newlyAddedEmojis } = importDefault(9340)(tmp, CHAT));
+  allEmojis = importDefault(9341)({ topEmojis, newlyAddedEmojis }).allEmojis;
+  let tmp12 = importDefault(9340)(tmp, CHAT);
   const items3 = [c4];
   const items4 = [tmp];
   stateFromStores = _require(589).useStateFromStores(items3, () => _undefined.getDisambiguatedEmojiContext(closure_2), items4);
@@ -136,7 +136,7 @@ export const useEmojiCategories = function useEmojiCategories(CHAT, channel, gui
   const isPremiumResult = _require(1897).isPremium(stateFromStores2);
   c11 = isPremiumResult;
   const obj8 = _require(1897);
-  soundmojiEmojiPickerSectionExperiment = _require(9346).useSoundmojiEmojiPickerSectionExperiment({ location: "useEmojiCategories" });
+  soundmojiEmojiPickerSectionExperiment = _require(9342).useSoundmojiEmojiPickerSectionExperiment({ location: "useEmojiCategories" });
   const items7 = [stateFromStores, channel, tmp, CHAT, isPremiumResult, allEmojis, stateFromStores1, stateFromStoresArray1, stateFromStoresArray, stateFromStoresArray2, tmp5, soundmojiEmojiPickerSectionExperiment, flag];
   return flag.useMemo(() => {
     function getEmojiUnavailableReasons(categoryEmojis) {
@@ -358,7 +358,7 @@ export const trackEmojiSearchStart = function trackEmojiSearchStart(location) {
     EMOJI = constants7.EMOJI;
   }
   obj = { search_type: EMOJI, location };
-  const EmojiPickerStore = require(9341) /* withEqualityFn */.EmojiPickerStore;
+  const EmojiPickerStore = require(9337) /* withEqualityFn */.EmojiPickerStore;
   const analyticsId = EmojiPickerStore.getAnalyticsId();
   if (null != analyticsId) {
     if ("" !== analyticsId) {
@@ -429,7 +429,7 @@ export const trackEmojiSearchSelect = function trackEmojiSearchSelect(arg0) {
     loadId = emojiSuggestions.loadId;
   }
   if (loadId == null) {
-    const EmojiPickerStore = require(9341) /* withEqualityFn */.EmojiPickerStore;
+    const EmojiPickerStore = require(9337) /* withEqualityFn */.EmojiPickerStore;
     loadId = EmojiPickerStore.getAnalyticsId();
   }
   if (null != loadId) {

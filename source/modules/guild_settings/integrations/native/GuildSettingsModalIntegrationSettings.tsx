@@ -1,10 +1,10 @@
-// Module ID: 16429
-// Function ID: 16430
+// Module ID: 16423
+// Function ID: 16424
 // Name: GraceOption
-// Dependencies: [19, 17, 1935, 8305, 21, 16430, 1236, 4189, 712, 7654, 4717, 5220, 16431, 5554, 5555, 3901, 4185, 4871, 1416, 4035, 7634, 4598, 3771, 7655, 16432, 5501, 8304, 589, 4125, 16394, 2]
+// Dependencies: [19, 17, 1935, 8302, 21, 16424, 1236, 4189, 712, 7651, 4717, 5220, 16425, 5554, 5555, 3901, 4185, 4871, 1416, 4035, 7631, 4598, 3771, 7652, 16426, 5501, 8301, 589, 4125, 16388, 2]
 // Exports: default
 
-// Module 16429 (GraceOption)
+// Module 16423 (GraceOption)
 import get_ActivityIndicator from "getPlatformUserUrl";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import handleFormInit from "handleFormInit";
@@ -22,7 +22,7 @@ let require = arg1;
 function GraceOption(option) {
   const iter = option.option;
   const onPress = option.onPress;
-  return callback(iter(7654).TableRadioRow, {
+  return callback(iter(7651).TableRadioRow, {
     value: iter.value,
     label: iter.label,
     legacyCompat_onPress() {
@@ -40,7 +40,7 @@ function ForceSyncIcon(isSyncing) {
     obj[1] = intl.string(require(1236) /* getSystemLocale */.t["+Josox"]);
     obj[2] = tmp;
     obj = { source: null };
-    obj[0] = importDefault(16431);
+    obj[0] = importDefault(16425);
     obj[3] = tmp2(require(5220) /* TableRowInner */.TableRow.Icon, obj);
     tmp2Result = tmp2(require(4717) /* PressableBase */.PressableOpacity, obj);
   }
@@ -147,7 +147,7 @@ GuildSettingsModalIntegrationSettings.prototype["render"] = function render() {
   const value = obj2.get(integration.type);
   if (null == value) {
     const _Object = Object;
-    const values = Object.values(tmp12(16430).IntegrationExpireGracePeriodTypes);
+    const values = Object.values(tmp12(16424).IntegrationExpireGracePeriodTypes);
     const found = values.filter((arg0) => Number.isInteger(arg0));
     const mapped = found.map((days) => {
       let obj = { value: days, label: null };
@@ -209,17 +209,17 @@ GuildSettingsModalIntegrationSettings.prototype["render"] = function render() {
     obj11[1] = integration.expire_behavior;
     obj11[2] = self.handleExpireBehaviorChange;
     const obj12 = { value: null, label: null };
-    obj12[0] = tmp15(16432).IntegrationExpireBehaviorTypes.REMOVE_ROLE;
+    obj12[0] = tmp15(16426).IntegrationExpireBehaviorTypes.REMOVE_ROLE;
     const intl6 = tmp15(1236).intl;
     obj12[1] = intl6.string(tmp15(1236).t["6kpw4i"]);
-    const items3 = [callback(tmp15(7654).TableRadioRow, obj12), ];
+    const items3 = [callback(tmp15(7651).TableRadioRow, obj12), ];
     const obj13 = { value: null, label: null };
-    obj13[0] = tmp15(16432).IntegrationExpireBehaviorTypes.KICK;
+    obj13[0] = tmp15(16426).IntegrationExpireBehaviorTypes.KICK;
     const intl7 = tmp15(1236).intl;
     obj13[1] = intl7.string(tmp15(1236).t.fQUQIJ);
-    items3[1] = callback(tmp15(7654).TableRadioRow, obj13);
+    items3[1] = callback(tmp15(7651).TableRadioRow, obj13);
     obj11[4] = items3;
-    items1[2] = closure_8(tmp15(7655).TableRadioGroup, obj11);
+    items1[2] = closure_8(tmp15(7652).TableRadioGroup, obj11);
     obj14 = { title: null, hasIcons: false, children: null };
     const intl8 = tmp15(1236).intl;
     obj14[0] = intl8.string(tmp15(1236).t.uiXMow);
@@ -228,7 +228,7 @@ GuildSettingsModalIntegrationSettings.prototype["render"] = function render() {
     items1[4] = tmp13;
     obj2[2] = items1;
     obj1[2] = closure_8(tmp15(4598).Stack, obj2);
-    const items4 = [callback(tmp15(7634).Form, obj1), callback(tmp15(5501).NavScrim, {})];
+    const items4 = [callback(tmp15(7631).Form, obj1), callback(tmp15(5501).NavScrim, {})];
     obj9[0] = items4;
     return closure_8(closure_9, obj9);
   } else {

@@ -1,10 +1,10 @@
-// Module ID: 14777
-// Function ID: 14778
+// Module ID: 14770
+// Function ID: 14771
 // Name: ClipboardCopyInput
-// Dependencies: [5, 19, 17, 6328, 676, 21, 4189, 589, 8255, 5635, 5543, 6727, 2]
+// Dependencies: [5, 19, 17, 6325, 676, 21, 4189, 589, 8252, 5635, 5543, 6724, 2]
 // Exports: default
 
-// Module 14777 (ClipboardCopyInput)
+// Module 14770 (ClipboardCopyInput)
 import jsxProd from "jsxProd";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

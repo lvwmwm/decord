@@ -1,10 +1,10 @@
-// Module ID: 16527
-// Function ID: 16528
+// Module ID: 16521
+// Function ID: 16522
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 19, 676, 16528, 16529, 1236, 1945, 3880, 16530, 2]
+// Dependencies: [5, 19, 676, 16522, 16523, 1236, 1945, 3880, 16524, 2]
 // Exports: default
 
-// Module 16527 (useCreatorMonetizationEligibilityItems)
+// Module 16521 (useCreatorMonetizationEligibilityItems)
 import getSystemLocale from "getSystemLocale";
 import noop from "noop";
 import { HelpdeskArticles } from "ME";

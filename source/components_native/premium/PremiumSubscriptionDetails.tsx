@@ -1,10 +1,10 @@
-// Module ID: 6511
-// Function ID: 6512
+// Module ID: 6508
+// Function ID: 6509
 // Name: handleCancelSubscription
-// Dependencies: [32, 5, 19, 17, 1874, 5672, 676, 1876, 21, 712, 4189, 3835, 6306, 6512, 6513, 6303, 6304, 6305, 6307, 6514, 6515, 6516, 6246, 6517, 6518, 6519, 6520, 6521, 6308, 6522, 6523, 6524, 6525, 6526, 6527, 6528, 6311, 6529, 6530, 6531, 6313, 6532, 6533, 6534, 6295, 6332, 6535, 6536, 6546, 6331, 514, 4509, 1480, 589, 38, 5515, 5669, 500, 1297, 4600, 1236, 4185, 6547, 5535, 6548, 6549, 2]
+// Dependencies: [32, 5, 19, 17, 1874, 5672, 676, 1876, 21, 712, 4189, 3835, 6303, 6509, 6510, 6300, 6301, 6302, 6304, 6511, 6512, 6513, 6243, 6514, 6515, 6516, 6517, 6518, 6305, 6519, 6520, 6521, 6522, 6523, 6524, 6525, 6308, 6526, 6527, 6528, 6310, 6529, 6530, 6531, 6292, 6329, 6532, 6533, 6543, 6328, 514, 4509, 1480, 589, 38, 5515, 5669, 500, 1297, 4600, 1236, 4185, 6544, 5535, 6545, 6546, 2]
 // Exports: default, handleManageSubscription, onCancelClick
 
-// Module 6511 (handleCancelSubscription)
+// Module 6508 (handleCancelSubscription)
 import registerAsset from "registerAsset";
 import updateProduct from "updateProduct";
 import closure_5 from "registerAsset";
@@ -76,14 +76,14 @@ function _handleCancelSubscription() {
               obj1[0] = callback;
               obj1[1] = closure_1;
               obj1[2] = dependencyMap;
-              obj1[3] = callback(6295).STEP_ANALYTICS_NAMES[callback(undefined, 6295).CancellationFlowSteps.MOBILE_SUBSCRIPTION_MANAGE];
-              const result = callback(6295).trackPremiumSubscriptionCancellationFlowStep(obj1);
+              obj1[3] = callback(6292).STEP_ANALYTICS_NAMES[callback(undefined, 6292).CancellationFlowSteps.MOBILE_SUBSCRIPTION_MANAGE];
+              const result = callback(6292).trackPremiumSubscriptionCancellationFlowStep(obj1);
               let isPurchasedViaApple;
               if (callback != null) {
                 isPurchasedViaApple = tmp15.isPurchasedViaApple;
               }
               if (isPurchasedViaApple) {
-                let tmp18Result = tmp18(6332);
+                let tmp18Result = tmp18(6329);
                 c4 = 1;
                 c3 = 1;
                 const obj2 = { value: null, done: false };
@@ -99,7 +99,7 @@ function _handleCancelSubscription() {
                   outer1_8.openURL(tmp18Result.getExternalSubscriptionMethodUrl(tmp15.paymentGateway, "SUBSCRIPTION_MANAGEMENT"));
                 }
               }
-              const obj7 = callback(6295);
+              const obj7 = callback(6292);
             }
           } else if (arg0 === 1) {
             c3 = 3;
@@ -174,7 +174,7 @@ function _onResubscribeClick() {
               let closure_1 = tmp2;
               if (lib.isACOM) {
                 const obj1 = { requestIdentifier: null, subscriptionId: null };
-                const obj9 = lib(6331);
+                const obj9 = lib(6328);
                 obj1[0] = lib(514).v4();
                 obj1[1] = tmp25.id;
                 dependencyMap = 1;
@@ -183,7 +183,7 @@ function _onResubscribeClick() {
                 obj2[0] = obj9.resubscribeGenericSubscription(obj1, true);
                 return obj2;
               } else if (tmp25.isPurchasedViaApple) {
-                let obj6 = lib(6332);
+                let obj6 = lib(6329);
                 dependencyMap = 3;
                 c3 = 1;
                 const obj3 = { value: null, done: false };
@@ -665,7 +665,7 @@ export default function PremiumSubscriptionDetails(subscription) {
   subscription = subscription.subscription;
   ({ style, onClickManagePremiumGuild } = subscription);
   const tmp = callback5();
-  let obj = require(6547) /* createSubscriptionInvoicePreview */;
+  let obj = require(6544) /* createSubscriptionInvoicePreview */;
   obj = { subscriptionId: subscription.id, renewal: true, analyticsLocations: importDefault(5515)().analyticsLocations, analyticsLocation: importDefault(5535).PREMIUM_SUBSCRIPTION_DETAILS };
   const first = callback(obj.useFetchSubscriptionInvoicePreview(obj), 1)[0];
   let tmp7Result = null;
@@ -685,14 +685,14 @@ export default function PremiumSubscriptionDetails(subscription) {
       const obj2 = { subscription: null, renewalMutations: null };
       obj2[0] = subscription;
       obj2[1] = subscription.renewalMutations;
-      tmp9Result = tmp9(tmp2(6548), obj2);
+      tmp9Result = tmp9(tmp2(6545), obj2);
     }
     items[1] = tmp9Result;
     tmp9Result = subscription.status === constants3.ACCOUNT_HOLD;
     if (tmp9Result) {
       const obj3 = { subscription: null };
       obj3[0] = subscription;
-      tmp9Result = tmp9(tmp2(6549), obj3);
+      tmp9Result = tmp9(tmp2(6546), obj3);
     }
     items[2] = tmp9Result;
     const obj4 = { subscription: null, renewalInvoicePreview: null, onClickManagePremiumGuild: null };
@@ -715,19 +715,19 @@ export default function PremiumSubscriptionDetails(subscription) {
 export const onCancelClick = function onCancelClick(subscription, analyticsLocations) {
   const _require = subscription;
   const importDefault = analyticsLocations;
-  let obj = _require(6295);
+  let obj = _require(6292);
   const result = obj.trackPremiumSubscriptionCancellationStarted(subscription, analyticsLocations);
   if (obj2.isBoostOnlySubscription(subscription)) {
     let tmp4ResultResult = handleCancelSubscription(subscription, analyticsLocations);
   } else {
     obj = { subscription: null, mode: null, onContinue: null };
     obj[0] = subscription;
-    obj[1] = _require(6536).WhatYouLoseMode.CANCEL;
+    obj[1] = _require(6533).WhatYouLoseMode.CANCEL;
     obj[2] = function onContinue(arg0) {
       return outer1_26(closure_0, closure_1, arg0);
     };
-    tmp4ResultResult = importDefault(6535)(obj);
-    const tmp4Result = importDefault(6535);
+    tmp4ResultResult = importDefault(6532)(obj);
+    const tmp4Result = importDefault(6532);
   }
   return tmp4ResultResult;
 };
@@ -736,7 +736,7 @@ export const handleManageSubscription = function handleManageSubscription(subscr
     closure_8.openURL(require(3835) /* getPremiumPlanItem */.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
     const obj4 = require(3835) /* getPremiumPlanItem */;
   } else {
-    let obj = require(6546) /* launchPremiumPlanSelect */;
+    let obj = require(6543) /* launchPremiumPlanSelect */;
     obj = { navigation: null, analyticsLocation: null, analyticsLocations: null };
     obj[0] = registerAsset;
     obj = { page: null, section: null };

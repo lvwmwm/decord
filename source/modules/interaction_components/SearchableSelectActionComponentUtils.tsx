@@ -1,10 +1,10 @@
-// Module ID: 7899
-// Function ID: 7900
+// Module ID: 7896
+// Function ID: 7897
 // Name: MIN_REREQUEST_TIME
-// Dependencies: [1372, 1942, 1935, 1862, 3826, 1874, 7892, 1906, 5031, 4379, 4417, 4380, 7900, 1351, 2]
+// Dependencies: [1372, 1942, 1935, 1862, 3826, 1874, 7889, 1906, 5031, 4379, 4417, 4380, 7897, 1351, 2]
 // Exports: getInitialSnowflakeSelectOptions, getSnowflakeSelectDefaultValues, queryChannels, queryMentionables
 
-// Module 7899 (MIN_REREQUEST_TIME)
+// Module 7896 (MIN_REREQUEST_TIME)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";

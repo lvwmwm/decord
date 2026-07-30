@@ -1,9 +1,9 @@
-// Module ID: 16650
-// Function ID: 16651
+// Module ID: 16644
+// Function ID: 16645
 // Name: getBackoffJitter
-// Dependencies: [5, 4865, 4869, 5000, 12974, 11130, 8171, 8193, 676, 687, 12, 16651, 709, 12746, 16652, 5134, 2]
+// Dependencies: [5, 4865, 4869, 5000, 12969, 11126, 8168, 8190, 676, 687, 12, 16645, 709, 12740, 16646, 5134, 2]
 
-// Module 16650 (getBackoffJitter)
+// Module 16644 (getBackoffJitter)
 import updateImpressionCaches from "updateImpressionCaches";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import closure_5 from "set";
@@ -60,7 +60,7 @@ function canFetch(GLOBAL_FEED) {
       } else {
         return false;
       }
-      obj = require(12746) /* apexExperiment */;
+      obj = require(12740) /* apexExperiment */;
     }
     return true;
   }
@@ -106,7 +106,7 @@ function scheduleNextFetch() {
               flag = false;
             }
           }
-          obj9 = require(12746) /* apexExperiment */;
+          obj9 = require(12740) /* apexExperiment */;
         }
       } else {
         flag = false;
@@ -226,7 +226,7 @@ function _fetchInventory() {
               c7 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {
@@ -394,7 +394,7 @@ function handleSpotifyNewTrack(connectionId) {
   }
 }
 function handleFetchGameProfileFeed() {
-  fetchInventory({ feedId: ContentInventoryFeedKey.GLOBAL_FEED, feature: require(16652) /* ContentInventoryFeature */.ContentInventoryFeature.GAME_PROFILE });
+  fetchInventory({ feedId: ContentInventoryFeedKey.GLOBAL_FEED, feature: require(16646) /* ContentInventoryFeature */.ContentInventoryFeature.GAME_PROFILE });
 }
 let closure_11 = 2 * require("set").Millis.MINUTE;
 const GLOBAL_FEED = ContentInventoryFeedKey.GLOBAL_FEED;

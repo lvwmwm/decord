@@ -1,9 +1,9 @@
-// Module ID: 8043
-// Function ID: 8044
+// Module ID: 8040
+// Function ID: 8041
 // Name: prototype
 // Dependencies: [2]
 
-// Module 8043 (prototype)
+// Module 8040 (prototype)
 const prototype = function RevenueError(errorHandlingBehavior) {
   let extraSentryInformation;
   let message;

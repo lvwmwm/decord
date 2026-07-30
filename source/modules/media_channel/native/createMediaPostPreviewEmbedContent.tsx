@@ -1,10 +1,10 @@
-// Module ID: 12387
-// Function ID: 12388
+// Module ID: 12381
+// Function ID: 12382
 // Name: createMediaPostPreviewEmbedContent
-// Dependencies: [17, 4188, 1372, 1862, 4006, 1874, 10469, 4375, 4381, 1236, 7743, 7745, 712, 4377, 12388, 5862, 4405, 4376, 2]
+// Dependencies: [17, 4188, 1372, 1862, 4006, 1874, 10465, 4375, 4381, 1236, 7740, 7742, 712, 4377, 12382, 5860, 4405, 4376, 2]
 // Exports: default
 
-// Module 12387 (createMediaPostPreviewEmbedContent)
+// Module 12381 (createMediaPostPreviewEmbedContent)
 import get_ActivityIndicator from "MAX_THUMBNAIL_COUNT";
 import getUserAgnosticState from "getUserAgnosticState";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -66,7 +66,7 @@ export default function createMediaPostPreviewEmbedContent(arg0, arg1, url) {
           if (null != mediaPostEmbedCommonData.authorName) {
             if (null != mediaPostEmbedCommonData.channelName) {
               if (null != user) {
-                const userAuthorWithProcessedColor = tmp(7743).getUserAuthorWithProcessedColor(user, mediaPostEmbedCommonData.postThread);
+                const userAuthorWithProcessedColor = tmp(7740).getUserAuthorWithProcessedColor(user, mediaPostEmbedCommonData.postThread);
                 const intl6 = tmp(1236).intl;
                 obj = { username: null, usernameOnClick: null, channelName: null };
                 obj[0] = mediaPostEmbedCommonData.authorName;
@@ -76,10 +76,10 @@ export default function createMediaPostPreviewEmbedContent(arg0, arg1, url) {
                 obj1[2] = userAuthorWithProcessedColor;
                 obj1[3] = arg1;
                 obj1[4] = mediaPostEmbedCommonData.threadId;
-                obj[1] = importDefault(7745)(obj1);
+                obj[1] = importDefault(7742)(obj1);
                 obj[2] = mediaPostEmbedCommonData.channelName;
                 let formatToPartsResult = intl6.formatToParts(tmp(1236).t.mCytFr, obj);
-                const tmpResult1 = tmp(7743);
+                const tmpResult1 = tmp(7740);
               }
               if (false === mediaPostEmbedCommonData.canAccess) {
                 let tmp11 = callback(importDefault(712).unsafe_rawColors.TEAL_430);
@@ -100,7 +100,7 @@ export default function createMediaPostPreviewEmbedContent(arg0, arg1, url) {
               if (mediaPostEmbedCommonData.shouldShowBlurredThumbnailImage) {
                 const obj2 = {};
                 const merged = Object.assign(mediaPostEmbedCommonData);
-                obj2.blurredCoverImage = closure_3.resolveAssetSource(tmp10(12388)).uri;
+                obj2.blurredCoverImage = closure_3.resolveAssetSource(tmp10(12382)).uri;
                 obj2.footer = formatToPartsResult;
                 obj2.ctaButtonColor = tmp11;
                 return obj2;
@@ -112,11 +112,11 @@ export default function createMediaPostPreviewEmbedContent(arg0, arg1, url) {
                 if (!value) {
                   value = obj7.get("obscure_blur_effect_self_harm_content_enabled");
                 }
-                const isPendingScanVersionResult = tmp(5862).isPendingScanVersion(mediaPostEmbedCommonData.contentScanVersion);
+                const isPendingScanVersionResult = tmp(5860).isPendingScanVersion(mediaPostEmbedCommonData.contentScanVersion);
                 let result = value;
                 if (value) {
-                  result = tmp(5862).shouldAgeVerifyForExplicitMedia();
-                  const tmpResult4 = tmp(5862);
+                  result = tmp(5860).shouldAgeVerifyForExplicitMedia();
+                  const tmpResult4 = tmp(5860);
                 }
                 let isVerifiedTeenResult = value;
                 if (value) {
@@ -173,7 +173,7 @@ export default function createMediaPostPreviewEmbedContent(arg0, arg1, url) {
                 obj4.obscureHideControls = isVerifiedTeenResult;
                 obj4.obscureIsOpaque = value;
                 obj4.ctaButtonColor = tmp11;
-                const tmpResult3 = tmp(5862);
+                const tmpResult3 = tmp(5860);
               }
               tmp15 = null != mediaPostEmbedCommonData.coverImage && !mediaPostEmbedCommonData.shouldShowBlurredThumbnailImage && isAnimatedImageUrlResult && flag;
             }

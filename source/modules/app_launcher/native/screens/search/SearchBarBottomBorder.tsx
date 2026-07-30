@@ -1,10 +1,10 @@
-// Module ID: 11270
-// Function ID: 11271
+// Module ID: 11266
+// Function ID: 11267
 // Name: usePinnedSearchBarBottomBorder
 // Dependencies: [19, 21, 4189, 712, 4050, 4599, 4603, 2]
 // Exports: usePinnedSearchBarBottomBorder
 
-// Module 11270 (usePinnedSearchBarBottomBorder)
+// Module 11266 (usePinnedSearchBarBottomBorder)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

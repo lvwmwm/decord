@@ -1,10 +1,10 @@
-// Module ID: 8075
-// Function ID: 8076
+// Module ID: 8072
+// Function ID: 8073
 // Name: ProfileEffectUserPreview
-// Dependencies: [19, 21, 8076, 1236, 2]
+// Dependencies: [19, 21, 8073, 1236, 2]
 // Exports: default
 
-// Module 8075 (ProfileEffectUserPreview)
+// Module 8072 (ProfileEffectUserPreview)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -26,5 +26,5 @@ export default function ProfileEffectUserPreview(profileEffect) {
   }
   obj[1] = formatToPlainStringResult;
   const merged1 = Object.assign(merged);
-  return jsx(importDefault(8076), { profileEffectOverride: profileEffect, accessibilityLabel: null });
+  return jsx(importDefault(8073), { profileEffectOverride: profileEffect, accessibilityLabel: null });
 };

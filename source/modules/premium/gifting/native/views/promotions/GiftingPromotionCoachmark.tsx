@@ -1,10 +1,10 @@
-// Module ID: 15756
-// Function ID: 15757
+// Module ID: 15750
+// Function ID: 15751
 // Name: GiftingPromotionCoachmarkActionSheet
-// Dependencies: [19, 17, 4181, 676, 1369, 21, 4189, 712, 589, 9708, 5515, 5535, 4157, 9699, 5243, 500, 6208, 5141, 4185, 4600, 1236, 2]
+// Dependencies: [19, 17, 4181, 676, 1369, 21, 4189, 712, 589, 9705, 5515, 5535, 4157, 9696, 5243, 500, 6205, 5141, 4185, 4600, 1236, 2]
 // Exports: default
 
-// Module 15756 (GiftingPromotionCoachmarkActionSheet)
+// Module 15750 (GiftingPromotionCoachmarkActionSheet)
 import Button from "Button";
 import { View } from "preload";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -42,7 +42,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   let obj = markAsDismissed(589);
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj1 = markAsDismissed(9708);
+  let obj1 = markAsDismissed(9705);
   let asset;
   if (coachmarkComponent != null) {
     asset = coachmarkComponent.asset;
@@ -91,7 +91,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
           const obj6 = { url: null, style: null };
           obj6[0] = themeAndReducedMotionAwareAssetUrl;
           obj6[1] = tmp.imageShared;
-          obj5[1] = tmp11(tmp7(6208), obj6);
+          obj5[1] = tmp11(tmp7(6205), obj6);
           tmp11Result = tmp11(tmp14, obj5);
         }
       }

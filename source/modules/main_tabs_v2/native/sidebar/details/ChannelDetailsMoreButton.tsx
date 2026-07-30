@@ -1,10 +1,10 @@
-// Module ID: 15564
-// Function ID: 15565
+// Module ID: 15558
+// Function ID: 15559
 // Name: MoreButton
-// Dependencies: [19, 21, 9097, 9121, 9118, 1236, 8334, 2]
+// Dependencies: [19, 21, 9093, 9117, 9114, 1236, 8331, 2]
 // Exports: default
 
-// Module 15564 (MoreButton)
+// Module 15558 (MoreButton)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -21,11 +21,11 @@ export default function MoreButton(channel) {
       obj = { accessibilityLabel: null, source: null, onPress: null };
       const intl = channel(1236).intl;
       obj[0] = intl.string(channel(1236).t["UKOtz+"]);
-      obj[1] = importDefault(8334);
+      obj[1] = importDefault(8331);
       obj[2] = tmp;
-      obj[0] = jsx(channel(9118).HeaderIconButton, { accessibilityLabel: null, source: null, onPress: null });
-      tmp2 = jsx(importDefault(9121), { accessibilityLabel: null, source: null, onPress: null });
-      const tmp6 = importDefault(9121);
+      obj[0] = jsx(channel(9114).HeaderIconButton, { accessibilityLabel: null, source: null, onPress: null });
+      tmp2 = jsx(importDefault(9117), { accessibilityLabel: null, source: null, onPress: null });
+      const tmp6 = importDefault(9117);
     } else {
       tmp2 = null;
     }

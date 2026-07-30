@@ -1,10 +1,10 @@
-// Module ID: 10337
-// Function ID: 10338
+// Module ID: 10333
+// Function ID: 10334
 // Name: LocationText
 // Dependencies: [19, 17, 4181, 3826, 1874, 21, 4189, 712, 4185, 4380, 692, 4686, 4688, 4650, 589, 4717, 1236, 5175, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 10337 (LocationText)
+// Module 10333 (LocationText)
 import noop from "noop";
 import { View } from "XSmallIcon";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

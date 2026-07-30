@@ -1,7 +1,7 @@
 // Module ID: 5713
 // Function ID: 5714
 // Name: trackInvite
-// Dependencies: [32, 5, 4865, 5714, 5715, 5718, 5963, 5965, 5857, 5092, 4208, 1218, 1372, 5966, 1862, 4174, 4407, 3817, 4276, 4201, 5971, 1874, 676, 5973, 5716, 4182, 17, 3, 4173, 5974, 4178, 5977, 5978, 4384, 5983, 5038, 6002, 698, 4175, 6020, 6023, 4424, 6026, 1236, 1945, 4723, 709, 6038, 4389, 6039, 5862, 530, 4409, 5657, 9, 5744, 4860, 11, 1907, 1926, 5733, 4863, 6040, 6041, 6044, 6045, 3835, 5968, 1384, 6046, 6072, 6141, 6145, 6148, 6154, 6155, 6177, 687, 6178, 1906, 6076, 4035, 6179, 4528, 2]
+// Dependencies: [32, 5, 4865, 5714, 5715, 5718, 5961, 5963, 5855, 5092, 4208, 1218, 1372, 5964, 1862, 4174, 4407, 3817, 4276, 4201, 5969, 1874, 676, 5971, 5716, 4182, 17, 3, 4173, 5972, 4178, 5975, 5976, 4384, 5981, 5038, 6000, 698, 4175, 6018, 6021, 4424, 6024, 1236, 1945, 4723, 709, 6036, 4389, 6037, 5860, 530, 4409, 5657, 9, 5744, 4860, 11, 1907, 1926, 5733, 4863, 6038, 6039, 6042, 6043, 3835, 5966, 1384, 6044, 6070, 6139, 6143, 6146, 6152, 6153, 6174, 687, 6175, 1906, 6074, 4035, 6176, 4528, 2]
 
 // Module 5713 (trackInvite)
 import ClickArea from "ClickArea";
@@ -69,7 +69,7 @@ function trackInvite(channelId) {
   const result = obj.parseExtraDataFromInviteKey(inviteKey);
   let result1 = null != invite;
   if (result1) {
-    let tmp3Result = tmp3(6020);
+    let tmp3Result = tmp3(6018);
     result1 = tmp3Result.isEmbeddedApplicationInvite(invite);
   }
   let id1;
@@ -80,7 +80,7 @@ function trackInvite(channelId) {
     }
   }
   if (tmp8) {
-    tmp3Result = tmp3(5978);
+    tmp3Result = tmp3(5976);
     const result2 = tmp3Result.trackAppEmbedLinkSent(id1, LinkType.ACTIVITY_INVITE, id);
   }
   let channel = store.getChannel(channelId.channelId);
@@ -121,14 +121,14 @@ function trackInvite(channelId) {
             STREAM = GDM_INVITE;
             if (lastActiveStream.channelId === channel.id) {
               obj.destination_user_id = lastActiveStream.ownerId;
-              const streamerApplication = tmp3(6023).getStreamerApplication(lastActiveStream, sortActivity);
+              const streamerApplication = tmp3(6021).getStreamerApplication(lastActiveStream, sortActivity);
               let id3 = null;
               if (null != streamerApplication) {
                 id3 = streamerApplication.id;
               }
               obj.application_id = id3;
               STREAM = constants3.STREAM;
-              const tmp3Result1 = tmp3(6023);
+              const tmp3Result1 = tmp3(6021);
             }
           }
         }
@@ -375,13 +375,13 @@ let obj14 = {
       obj.trackWithMetadata(constants.AUTOMATED_MESSAGE_RECEIVED, obj);
     }
     obj = { messageId: nonce, channelId: id, content: intl, loggingName: messageName };
-    obj14.receiveMessage(id, require(6038) /* createMessage */.createBotMessage(obj));
+    obj14.receiveMessage(id, require(6036) /* createMessage */.createBotMessage(obj));
   },
   sendNitroSystemMessage(channelId, content, nonce) {
     obj = { channelId, nonce, type: constants6.NITRO_NOTIFICATION, content, flags: closure_33.EPHEMERAL, author: obj };
     obj = { id: closure_40, username: "Nitro Notification", discriminator: closure_41, avatar: "nitro", bot: true };
     obj = {};
-    const merged = Object.assign(importDefault(6038)(obj));
+    const merged = Object.assign(importDefault(6036)(obj));
     obj.state = constants9.SENT;
     obj.channel_id = channelId;
     obj14.receiveMessage(channelId, obj, true);
@@ -390,7 +390,7 @@ let obj14 = {
     obj = { channelId, type: constants6.GIFTING_PROMPT, content: "", flags: closure_33.EPHEMERAL, author: obj, giftingPrompt };
     obj = { id: closure_40, username: "Gifting Prompt", discriminator: closure_41, avatar: "gifting_prompt", bot: true };
     obj = {};
-    const merged = Object.assign(importDefault(6038)(obj));
+    const merged = Object.assign(importDefault(6036)(obj));
     obj.state = constants9.SENT;
     obj14.receiveMessage(channelId, obj, true);
   },
@@ -398,7 +398,7 @@ let obj14 = {
     obj = { channelId, type: constants6.GUILD_BOOST_UPSELL, content: "", flags: closure_33.EPHEMERAL, author: obj, boostingPrompt };
     obj = { id: closure_40, username: "Guild Boost Upsell", discriminator: closure_41, avatar: "guild_boost_upsell", bot: true };
     obj = {};
-    const merged = Object.assign(importDefault(6038)(obj));
+    const merged = Object.assign(importDefault(6036)(obj));
     obj.state = constants9.SENT;
     obj14.receiveMessage(channelId, obj, true);
   },
@@ -482,15 +482,15 @@ let obj14 = {
         obj[0] = intl.string(callback(1236).t.i4AbAS);
         return obj;
       });
-      const nonce = require(6039) /* snowflakeSequence */.createNonce();
+      const nonce = require(6037) /* snowflakeSequence */.createNonce();
       obj14.sendBotMessage(c0, message, messageName, nonce);
-      const obj8 = require(6039) /* snowflakeSequence */;
+      const obj8 = require(6037) /* snowflakeSequence */;
       obj = { action: null, messageId: null, channelId: null, context: null };
-      obj[0] = require(5862) /* redactionSettingToRenderedString */.TrackMediaRedactionActionType.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT;
+      obj[0] = require(5860) /* redactionSettingToRenderedString */.TrackMediaRedactionActionType.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT;
       obj[1] = nonce;
       obj[2] = c0;
       obj[3] = EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED;
-      const result = require(5862) /* redactionSettingToRenderedString */.trackMediaRedactionAction(obj);
+      const result = require(5860) /* redactionSettingToRenderedString */.trackMediaRedactionAction(obj);
       let tmp = null != attachments;
       if (tmp) {
         tmp = attachments.length > 0;
@@ -503,7 +503,7 @@ let obj14 = {
         obj1[3] = attachments;
         obj1.dispatch(obj1);
       }
-      const obj9 = require(5862) /* redactionSettingToRenderedString */;
+      const obj9 = require(5860) /* redactionSettingToRenderedString */;
     }
   },
   truncateMessages(channelId, truncateBottom, truncateTop) {
@@ -563,7 +563,7 @@ let obj14 = {
       extraProperties = null;
     }
     ({ isPreload, returnMessageId, skipLocalFetch, jumpType, avoidInitialScroll, onJumpComplete } = arg0);
-    if (typeof context !== "init") {
+    if (typeof context !== "tee") {
       obj14.trackJump(channelId, messageId, context, extraProperties);
     }
     if (MediaPlayerManager != null) {
@@ -1377,7 +1377,7 @@ let obj14 = {
     return obj;
   },
   sendInvite(c1, code, c3, c4, content) {
-    const tmp = importDefault(6044)(code);
+    const tmp = importDefault(6042)(code);
     content = tmp;
     if (null != content) {
       const _HermesInternal = HermesInternal;
@@ -2567,7 +2567,7 @@ let obj14 = {
                   obj.track(constants2.MESSAGE_SWIPE_ACTION_SENT, obj);
                 }
               })(outer1_1, outer1_0);
-              let obj1 = outer1_1(6076);
+              let obj1 = outer1_1(6074);
               obj2 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
@@ -2616,18 +2616,18 @@ let obj14 = {
             obj2[4] = closure_0;
             obj2[5] = dependencyMap;
             const obj3 = { type: null, message: null };
-            obj3[0] = outer1_0(6145).MessageDataType.EDIT;
+            obj3[0] = outer1_0(6143).MessageDataType.EDIT;
             obj3[1] = obj2;
-            outer1_1(6145).enqueue(obj3, (hasErr) => {
+            outer1_1(6143).enqueue(obj3, (hasErr) => {
               hasErr = hasErr.hasErr;
               let hasItem = !hasErr;
               if (!hasErr) {
-                const AUTOMOD_ERROR_CODES = outer2_0(6178).AUTOMOD_ERROR_CODES;
+                const AUTOMOD_ERROR_CODES = outer2_0(6175).AUTOMOD_ERROR_CODES;
                 hasItem = AUTOMOD_ERROR_CODES.has(hasErr.body.code);
               }
               if (hasItem) {
                 let obj = { type: null, message: null };
-                obj[0] = outer2_0(6145).MessageDataType.EDIT;
+                obj[0] = outer2_0(6143).MessageDataType.EDIT;
                 obj[1] = obj2;
                 let obj1 = outer2_1(709);
                 obj = { type: "MESSAGE_EDIT_FAILED_AUTOMOD", messageData: null, errorResponseBody: null };
@@ -2701,7 +2701,7 @@ let obj14 = {
               let closure_1 = tmp5;
               let flags = tmp2;
               flags = undefined;
-              let obj1 = outer1_1(6076);
+              let obj1 = outer1_1(6074);
               c2 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
@@ -2774,7 +2774,7 @@ let obj14 = {
               let closure_1 = tmp5;
               let flags = tmp2;
               flags = undefined;
-              let obj1 = outer1_1(6076);
+              let obj1 = outer1_1(6074);
               c2 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
@@ -2927,7 +2927,7 @@ let obj14 = {
                 })();
                 dependencyMap = 3;
               } else {
-                let obj1 = outer1_1(6076);
+                let obj1 = outer1_1(6074);
                 c2 = 1;
                 dependencyMap = 1;
                 obj1 = { value: null, done: false };
@@ -2974,7 +2974,7 @@ let obj14 = {
       obj[1] = loggingName.author.username;
       obj.trackWithMetadata(constants.AUTOMATED_MESSAGE_DISMISSED, obj);
     }
-    const result = require(6179) /* fetchAndReconcileGiftIntentDismissals */.logGiftIntentMessageDismissed(loggingName.channel_id, loggingName.id);
+    const result = require(6176) /* fetchAndReconcileGiftIntentDismissals */.logGiftIntentMessageDismissed(loggingName.channel_id, loggingName.id);
     this.deleteMessage(loggingName.channel_id, loggingName.id, true);
   },
   revealMessage(id, messageId) {

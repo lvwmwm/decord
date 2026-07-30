@@ -1,10 +1,10 @@
-// Module ID: 9244
-// Function ID: 9245
+// Module ID: 9240
+// Function ID: 9241
 // Name: useFastestListUnexpectedItemSizeCallback
-// Dependencies: [19, 9245, 2]
+// Dependencies: [19, 9241, 2]
 // Exports: default
 
-// Module 9244 (useFastestListUnexpectedItemSizeCallback)
+// Module 9240 (useFastestListUnexpectedItemSizeCallback)
 import noop from "noop";
 
 const require = arg1;
@@ -40,7 +40,7 @@ export default function useFastestListUnexpectedItemSizeCallback(arg0) {
     if (element != null) {
       type = element.type;
     }
-    if (typeof type !== "_") {
+    if (typeof type !== "ZodObject") {
       if (type.name.length > 0) {
         let str = type.name;
       }
@@ -79,7 +79,7 @@ export default function useFastestListUnexpectedItemSizeCallback(arg0) {
     if (type != null) {
       type1 = type.type;
     }
-    if (typeof type1 !== "_") {
+    if (typeof type1 !== "ZodObject") {
       if (type1.name.length > 0) {
         str = type1.name;
       }

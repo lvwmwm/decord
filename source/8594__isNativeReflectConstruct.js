@@ -1,7 +1,7 @@
 // Module ID: 8594
 // Function ID: 8595
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 8547, 8570]
+// Dependencies: [41, 42, 93, 95, 98, 8544, 8567]
 
 // Module 8594 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -9,7 +9,7 @@ import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
 
-const FeSpecularLighting = arg1;
+const FeTurbulence = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeSpecularLighting {
+class FeTurbulence {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeSpecularLighting);
+    tmp = _isNativeReflectConstruct(this, FeTurbulence);
     tmp2 = __esModule;
-    obj = __esModule(FeSpecularLighting);
+    obj = __esModule(FeTurbulence);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -49,17 +49,17 @@ class FeSpecularLighting {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeSpecularLighting, require("_isNativeReflectConstruct"));
+require("_inherits")(FeTurbulence, require("_isNativeReflectConstruct"));
 let obj = {
   key: "render",
   value: function render() {
-    const result = FeSpecularLighting(8547).warnUnimplementedFilter();
+    const result = FeTurbulence(8544).warnUnimplementedFilter();
     return null;
   }
 };
 const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeSpecularLighting, items);
-importDefaultResultResult.displayName = "FeSpecularLighting";
+const importDefaultResultResult = importDefaultResult(FeTurbulence, items);
+importDefaultResultResult.displayName = "FeTurbulence";
 obj = {};
 const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
 importDefaultResultResult.defaultProps = obj;

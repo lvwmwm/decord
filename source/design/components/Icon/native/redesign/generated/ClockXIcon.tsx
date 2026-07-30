@@ -1,10 +1,10 @@
-// Module ID: 9977
-// Function ID: 9978
+// Module ID: 9973
+// Function ID: 9974
 // Name: ClockXIcon
-// Dependencies: [19, 21, 712, 3892, 9978, 2]
+// Dependencies: [19, 21, 712, 3892, 9974, 2]
 // Exports: ClockXIcon
 
-// Module 9977 (ClockXIcon)
+// Module 9973 (ClockXIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ClockXIcon = function ClockXIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9978) /* registerAsset */;
+  obj[0] = require(9974) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

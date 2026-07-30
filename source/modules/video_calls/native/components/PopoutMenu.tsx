@@ -1,9 +1,9 @@
-// Module ID: 10538
-// Function ID: 10539
+// Module ID: 10534
+// Function ID: 10535
 // Name: PopoutMenuRow
-// Dependencies: [32, 19, 17, 21, 4189, 712, 5213, 1297, 7634, 1474, 1581, 12, 4050, 4190, 4160, 5273, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 5213, 1297, 7631, 1474, 1581, 12, 4050, 4190, 4160, 5273, 2]
 
-// Module 10538 (PopoutMenuRow)
+// Module 10534 (PopoutMenuRow)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
@@ -35,7 +35,7 @@ function PopoutMenuRow(onClose) {
     obj[0] = icon;
     tmp3Result = tmp3(onClick(1297).Icon, obj);
   }
-  obj = { leading: tmp3Result, label: tmp3(onClick(7634).FormLabel, obj), style: tmp.popoutMenuRow, onPress: callback };
+  obj = { leading: tmp3Result, label: tmp3(onClick(7631).FormLabel, obj), style: tmp.popoutMenuRow, onPress: callback };
   obj = { style: tmp.popoutMenuRowLabel, text: onClose.text };
   return closure_6(onClose(5213), obj);
 }

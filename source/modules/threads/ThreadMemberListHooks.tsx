@@ -1,10 +1,10 @@
-// Module ID: 15525
-// Function ID: 15526
+// Module ID: 15519
+// Function ID: 15520
 // Name: useThreadMemberListSections
-// Dependencies: [19, 1935, 6165, 505, 4616, 6071, 6058, 589, 1236, 2]
+// Dependencies: [19, 1935, 6162, 505, 4616, 6069, 6056, 589, 1236, 2]
 // Exports: useThreadMemberListSections
 
-// Module 15525 (useThreadMemberListSections)
+// Module 15519 (useThreadMemberListSections)
 import noop from "noop";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import handleUserUpdate from "handleUserUpdate";

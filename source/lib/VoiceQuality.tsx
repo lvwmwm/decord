@@ -1,9 +1,9 @@
-// Module ID: 12874
-// Function ID: 12875
+// Module ID: 12869
+// Function ID: 12870
 // Name: start
-// Dependencies: [32, 6028, 4289, 12875, 6034, 4286, 12, 4265, 2]
+// Dependencies: [32, 6026, 4289, 12870, 6032, 4286, 12, 4265, 2]
 
-// Module 12874 (start)
+// Module 12869 (start)
 import _slicedToArray from "_slicedToArray";
 import "on";
 
@@ -597,7 +597,7 @@ prototype["getBufferStats"] = function getBufferStats() {
           let obj4 = obj[key10055];
           let tmp29 = require;
           let tmp30 = dependencyMap;
-          if (obj4 instanceof require(6028) /* getSamples */.Histogram) {
+          if (obj4 instanceof require(6026) /* getSamples */.Histogram) {
             let report = obj4.getReport([75, 95, 99]);
             let _Math = Math;
             let text = `${key10055}_mean`;

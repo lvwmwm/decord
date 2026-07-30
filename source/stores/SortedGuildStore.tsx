@@ -377,7 +377,7 @@ function handleJoinedLurkingGuild(joinedAt) {
   if (id === user.id) {
     if (null != guild) {
       let date = joinedAt;
-      if (typeof joinedAt !== "init") {
+      if (typeof joinedAt !== "tee") {
         const _Date = Date;
         date = new Date(joinedAt);
       }

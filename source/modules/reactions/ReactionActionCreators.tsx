@@ -1,10 +1,10 @@
-// Module ID: 6075
-// Function ID: 6076
+// Module ID: 6073
+// Function ID: 6074
 // Name: checkReactionResponse
-// Dependencies: [5, 1218, 1372, 4407, 676, 687, 4528, 1236, 1231, 709, 6074, 530, 6076, 698, 4384, 4035, 6094, 3834, 2]
+// Dependencies: [5, 1218, 1372, 4407, 676, 687, 4528, 1236, 1231, 709, 6072, 530, 6074, 698, 4384, 4035, 6092, 3834, 2]
 // Exports: getReactors, playBurstReaction
 
-// Module 6075 (checkReactionResponse)
+// Module 6073 (checkReactionResponse)
 import set from "set";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -74,7 +74,7 @@ function optimisticDispatch(type, channelId, messageId, arg3, userId) {
     colors = [];
   }
   obj[6] = colors;
-  const ReactionTypes = require(6074) /* ReactionTypes */.ReactionTypes;
+  const ReactionTypes = require(6072) /* ReactionTypes */.ReactionTypes;
   obj[7] = userId.burst ? ReactionTypes.BURST : ReactionTypes.NORMAL;
   obj.dispatch(obj);
 }
@@ -90,7 +90,7 @@ function makeURL(type) {
   }
   let NORMAL = type.type;
   if (NORMAL === undefined) {
-    NORMAL = require(6074) /* ReactionTypes */.ReactionTypes.NORMAL;
+    NORMAL = require(6072) /* ReactionTypes */.ReactionTypes.NORMAL;
   }
   if (null != emoji.id) {
     const _HermesInternal = HermesInternal;
@@ -160,7 +160,7 @@ function _getReactors() {
               let body;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -172,7 +172,7 @@ function _getReactors() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              if (c5 === callback(6074).ReactionTypes.VOTE) {
+              if (c5 === callback(6072).ReactionTypes.VOTE) {
                 let tmp28 = (function makeURLForVoteReactors(c0, c1, c2) {
                   let name = c2.id;
                   if (name == null) {
@@ -213,7 +213,7 @@ function _getReactors() {
           } else {
             closure_7 = arg1;
             let tmp14;
-            if (c5 === callback(6074).ReactionTypes.VOTE) {
+            if (c5 === callback(6072).ReactionTypes.VOTE) {
               body = closure_7.body.users;
             } else {
               body = closure_7.body;
@@ -305,7 +305,7 @@ function _addReaction() {
               c7 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp6) {
             if (arg0 === 1) {
@@ -364,7 +364,7 @@ function _addReaction() {
               c7 = 3;
               c8 = 1;
               const obj6 = { value: null, done: false };
-              obj6[0] = callback2(6076).unarchiveThreadIfNecessary(callback);
+              obj6[0] = callback2(6074).unarchiveThreadIfNecessary(callback);
               return obj6;
             }
           } else if (arg0 === 1) {
@@ -386,7 +386,7 @@ function _addReaction() {
             obj8[0] = callback4(obj9);
             obj = { location: null, type: null };
             obj[0] = MESSAGE;
-            let fn = callback(6074).ReactionTypes;
+            let fn = callback(6072).ReactionTypes;
             if (burst) {
               let NORMAL = fn.BURST;
             } else {
@@ -779,7 +779,7 @@ function _removeReaction() {
               let isRetry;
               c4 = 1;
               c5 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp6) {
             if (arg0 === 1) {
@@ -803,7 +803,7 @@ function _removeReaction() {
               obj2[0] = c4;
               obj2[1] = burst;
               callback3("MESSAGE_REACTION_REMOVE", callback, callback2, dependencyMap, obj2);
-              let obj5 = callback2(6076);
+              let obj5 = callback2(6074);
               c4 = 2;
               c5 = 1;
               let obj3 = { value: null, done: false };
@@ -831,7 +831,7 @@ function _removeReaction() {
               callback2 = "@me";
             }
             obj5[3] = callback2;
-            let ReactionTypes = callback(6074).ReactionTypes;
+            let ReactionTypes = callback(6072).ReactionTypes;
             if (burst) {
               let NORMAL = ReactionTypes.BURST;
             } else {
@@ -873,7 +873,7 @@ function _removeReaction() {
                 let closure_0 = arg0;
                 let c3 = 0;
                 let c4 = 0;
-                return (/* F118749 */ function*() { ... })();
+                return (/* F118760 */ function*() { ... })();
               });
               return function() {
                 const self = this;

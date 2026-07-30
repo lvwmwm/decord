@@ -1,10 +1,10 @@
-// Module ID: 12637
-// Function ID: 12638
+// Module ID: 12631
+// Function ID: 12632
 // Name: GuildBoostingMarketingPersistentCta
-// Dependencies: [19, 17, 4181, 676, 21, 4189, 712, 647, 4050, 4599, 4611, 5566, 4185, 11680, 2]
+// Dependencies: [19, 17, 4181, 676, 21, 4189, 712, 647, 4050, 4599, 4611, 5566, 4185, 11676, 2]
 // Exports: default
 
-// Module 12637 (GuildBoostingMarketingPersistentCta)
+// Module 12631 (GuildBoostingMarketingPersistentCta)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -87,7 +87,7 @@ export default function GuildBoostingMarketingPersistentCta(arg0) {
   const items4 = [callback2(View, obj3), ];
   const obj5 = { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name };
   const tmp5 = stateFromStores(5566);
-  items4[1] = callback(View, { style: tmp.buttonContainer, children: callback(stateFromStores(11680), obj7) });
+  items4[1] = callback(View, { style: tmp.buttonContainer, children: callback(stateFromStores(11676), obj7) });
   obj2[1] = items4;
   obj1[6] = callback2(View, obj2);
   obj[1] = callback(tmp4, obj1);

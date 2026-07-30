@@ -1,10 +1,10 @@
-// Module ID: 14036
-// Function ID: 14037
+// Module ID: 14031
+// Function ID: 14032
 // Name: BountiesScrollPromptFooterContent
-// Dependencies: [19, 17, 4181, 5033, 21, 4189, 712, 4190, 4193, 589, 1581, 4050, 3901, 14037, 14038, 8436, 2]
+// Dependencies: [19, 17, 4181, 5033, 21, 4189, 712, 4190, 4193, 589, 1581, 4050, 3901, 14032, 14033, 8433, 2]
 // Exports: default
 
-// Module 14036 (BountiesScrollPromptFooterContent)
+// Module 14031 (BountiesScrollPromptFooterContent)
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -89,7 +89,7 @@ const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedI
 export default function BountiesScrollPromptFooter(visible) {
   visible = visible.visible;
   let merged = Object.assign(visible, Object.create(null));
-  let obj = require(14037) /* apexExperiment */;
+  let obj = require(14032) /* apexExperiment */;
   const isBountiesModalTransitionsRefactorEnabled = obj.useIsBountiesModalTransitionsRefactorEnabled(QuestsExperimentLocations.VIDEO_MODAL_MOBILE);
   let obj1 = require(589) /* initialize */;
   const items = [maybeApplyNoTextColorForLightCustomTheme];
@@ -101,7 +101,7 @@ export default function BountiesScrollPromptFooter(visible) {
     return callback(closure_12, obj);
   }, []);
   obj = { visible, entranceTiming: require(4193) /* timingNone */.timingStandard, exitTiming: require(4193) /* timingNone */.timingStandard };
-  const visibilityTransition = require(14038) /* useVisibilityTransition */.useVisibilityTransition(obj);
+  const visibilityTransition = require(14033) /* useVisibilityTransition */.useVisibilityTransition(obj);
   let shouldRender = visibilityTransition.shouldRender;
   if (isBountiesModalTransitionsRefactorEnabled) {
     obj = { useReducedMotion: null, item: null, entering: null, exiting: null, renderItem: null };
@@ -114,9 +114,9 @@ export default function BountiesScrollPromptFooter(visible) {
     obj[2] = fn;
     obj[3] = fn2;
     obj[4] = callback;
-    shouldRender = callback(importDefault(8436), obj);
+    shouldRender = callback(importDefault(8433), obj);
     const tmp13 = callback;
-    const tmp15 = importDefault(8436);
+    const tmp15 = importDefault(8433);
   } else if (shouldRender) {
     obj1 = {};
     const merged1 = Object.assign(merged);

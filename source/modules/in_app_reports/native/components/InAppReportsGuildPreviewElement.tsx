@@ -1,10 +1,10 @@
-// Module ID: 12398
-// Function ID: 12399
+// Module ID: 12392
+// Function ID: 12393
 // Name: GuildPreview
 // Dependencies: [19, 17, 21, 4189, 712, 4033, 4185, 1236, 5566, 2]
 // Exports: default
 
-// Module 12398 (GuildPreview)
+// Module 12392 (GuildPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

@@ -1,9 +1,9 @@
-// Module ID: 5929
-// Function ID: 5930
+// Module ID: 5927
+// Function ID: 5928
 // Name: handleCacheOrSocketLoaded
 // Dependencies: [1862, 3826, 589, 709, 2]
 
-// Module 5929 (handleCacheOrSocketLoaded)
+// Module 5927 (handleCacheOrSocketLoaded)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import upsertRelationship from "upsertRelationship";
 import { PersistedStore } from "initialize";

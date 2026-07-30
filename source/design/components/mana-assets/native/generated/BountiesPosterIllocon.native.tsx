@@ -1,10 +1,10 @@
-// Module ID: 6888
-// Function ID: 6889
+// Module ID: 6885
+// Function ID: 6886
 // Name: BountiesPosterIllocon
-// Dependencies: [21, 5141, 6889, 2]
+// Dependencies: [21, 5141, 6886, 2]
 // Exports: BountiesPosterIllocon
 
-// Module 6888 (BountiesPosterIllocon)
+// Module 6885 (BountiesPosterIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BountiesPosterIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const BountiesPosterIllocon = function BountiesPosterIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6889);
+  obj[0] = importDefault(6886);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

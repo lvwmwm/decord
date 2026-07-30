@@ -9,7 +9,7 @@ export default function getMapData(__data__) {
   __data__ = __data__.__data__;
   if (require(758) /* isKeyable */(arg1)) {
     let str = "hash";
-    if (typeof arg1 !== "init") {
+    if (typeof arg1 !== "tee") {
       str = "string";
     }
     let map = __data__[str];

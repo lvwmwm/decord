@@ -1,10 +1,10 @@
-// Module ID: 7814
-// Function ID: 7815
+// Module ID: 7811
+// Function ID: 7812
 // Name: nativeStyleProperties
-// Dependencies: [1372, 4189, 712, 7736, 7743, 7745, 1236, 7815, 7746, 1419, 1416, 2]
+// Dependencies: [1372, 4189, 712, 7733, 7740, 7742, 1236, 7812, 7743, 1419, 1416, 2]
 // Exports: createGuildAlertModeDisabledSystemMessage, createGuildAlertModeEnabledSystemMessage
 
-// Module 7814 (nativeStyleProperties)
+// Module 7811 (nativeStyleProperties)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createCacheKey from "createCacheKey";
 
@@ -19,10 +19,10 @@ export const createGuildAlertModeEnabledSystemMessage = function createGuildAler
   let theme;
   ({ message, theme } = roleStyle);
   channel = channel.getChannel(message.channel_id);
-  let obj = require(7743) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7740) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   let automodUsernameColor = createCacheKey(theme).automodUsernameColor;
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7745)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }), time: null };
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7742)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }), time: null };
   let str = "";
   if ("" !== message.content) {
     const _Date = Date;
@@ -30,9 +30,9 @@ export const createGuildAlertModeEnabledSystemMessage = function createGuildAler
     str = date.toLocaleString(tmp5(1236).intl.currentLocale, { hour: "numeric", minute: "2-digit" });
   }
   obj[2] = str;
-  const tmp3 = importDefault(7736)(theme);
+  const tmp3 = importDefault(7733)(theme);
   obj = {};
-  const merged = Object.assign(tmp(7746)(roleStyle));
+  const merged = Object.assign(tmp(7743)(roleStyle));
   const intl = tmp5(1236).intl;
   obj.content = intl.formatToParts(require(1236) /* getSystemLocale */.t.ig55n6, obj);
   const intl2 = tmp5(1236).intl;
@@ -43,7 +43,7 @@ export const createGuildAlertModeEnabledSystemMessage = function createGuildAler
   obj.usernameColor = automodUsernameColor;
   let tmp5Result = tmp5(1419);
   tmp5Result = tmp5(1416);
-  const tmp12 = importDefault(7815)({ message, channel, isSystemDM: true, colors: importDefault(7736)(theme) });
+  const tmp12 = importDefault(7812)({ message, channel, isSystemDM: true, colors: importDefault(7733)(theme) });
   obj.avatarURL = tmp5Result.ensureAvatarSource(tmp5Result.makeSource(require(1419) /* ensureAvatarSource */.getAutomodAvatarURL())).uri;
   const merged1 = Object.assign(tmp12);
   return obj;
@@ -53,14 +53,14 @@ export const createGuildAlertModeDisabledSystemMessage = function createGuildAle
   let theme;
   ({ message, theme } = roleStyle);
   let automodUsernameColor = createCacheKey(theme).automodUsernameColor;
-  let obj = require(7743) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7740) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7745)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
-  obj = { message, channel: "HermesInternal", isSystemDM: null, colors: "md" };
-  obj[3] = importDefault(7736)(theme);
-  const tmp2 = importDefault(7736)(theme);
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7742)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
+  obj = { message, channel: "HermesInternal", isSystemDM: null, colors: "button" };
+  obj[3] = importDefault(7733)(theme);
+  const tmp2 = importDefault(7733)(theme);
   const obj1 = {};
-  const merged = Object.assign(importDefault(7746)(roleStyle));
+  const merged = Object.assign(importDefault(7743)(roleStyle));
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1.content = intl.formatToParts(require(1236) /* getSystemLocale */.t.cyq2WA, obj);
   const intl2 = require(1236) /* getSystemLocale */.intl;
@@ -71,7 +71,7 @@ export const createGuildAlertModeDisabledSystemMessage = function createGuildAle
   obj1.usernameColor = automodUsernameColor;
   let tmp4Result = tmp4(1419);
   tmp4Result = tmp4(1416);
-  const tmp6 = importDefault(7815)(obj);
+  const tmp6 = importDefault(7812)(obj);
   obj1.avatarURL = tmp4Result.ensureAvatarSource(tmp4Result.makeSource(require(1419) /* ensureAvatarSource */.getAutomodAvatarURL())).uri;
   const merged1 = Object.assign(tmp6);
   return obj1;

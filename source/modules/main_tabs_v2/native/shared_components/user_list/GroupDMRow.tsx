@@ -1,10 +1,10 @@
-// Module ID: 9093
-// Function ID: 9094
+// Module ID: 9089
+// Function ID: 9090
 // Name: GroupDMRow
-// Dependencies: [19, 8813, 21, 4380, 9094, 1297, 9095, 4185, 9092, 5220, 2]
+// Dependencies: [19, 8809, 21, 4380, 9090, 1297, 9091, 4185, 9088, 5220, 2]
 // Exports: default
 
-// Module 9093 (GroupDMRow)
+// Module 9089 (GroupDMRow)
 import noop from "noop";
 import { UserRowModes } from "UserRowModes";
 import { jsx } from "jsxProd";
@@ -38,8 +38,8 @@ export default function GroupDMRow(channel) {
   let obj = { size: null, channel: null };
   obj[0] = channel(1297).AvatarSizes.REFRESH_MEDIUM_32;
   obj[1] = channel;
-  const tmp6 = onPress(9094);
-  let obj1 = channel(9095);
+  const tmp6 = onPress(9090);
+  let obj1 = channel(9091);
   const recipientsLabel = obj1.useRecipientsLabel(channel);
   obj = {};
   const merged1 = Object.assign(merged);
@@ -51,7 +51,7 @@ export default function GroupDMRow(channel) {
     tmp5Result = tmp5(tmp7(4185).Text, obj);
   }
   obj.subLabel = tmp5Result;
-  obj.icon = jsx(onPress(9094), {});
+  obj.icon = jsx(onPress(9090), {});
   obj.onPress = callback;
   if (str == null) {
     str = "";
@@ -63,7 +63,7 @@ export default function GroupDMRow(channel) {
     obj1 = {};
     const merged2 = Object.assign(obj);
     obj1.checked = flag;
-    tmp5Result = tmp5(tmp7(9092).TableCheckboxRow, obj1);
+    tmp5Result = tmp5(tmp7(9088).TableCheckboxRow, obj1);
   } else {
     const obj2 = {};
     const merged3 = Object.assign(obj);

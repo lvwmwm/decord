@@ -1,8 +1,8 @@
-// Module ID: 8775
-// Function ID: 8776
-// Dependencies: [32, 19, 17, 676, 21, 4189, 712, 1480, 8774, 5515, 5503, 514, 698, 8776, 8777, 4185, 1236, 8809, 8810, 8811, 2]
+// Module ID: 8771
+// Function ID: 8772
+// Dependencies: [32, 19, 17, 676, 21, 4189, 712, 1480, 8770, 5515, 5503, 514, 698, 8772, 8773, 4185, 1236, 8805, 8806, 8807, 2]
 
-// Module 8775
+// Module 8771
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "GiftCustomMessage";
 import get_ActivityIndicator from "LockedRecipientField";

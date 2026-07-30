@@ -15,10 +15,10 @@ let closure_6;
 const require = arg1;
 ({ useCallback: c3, useEffect: c4, useRef: c5, useState: closure_6 } = noop);
 
-export const useRiveProperty = function useRiveProperty(instance, FillColor, f28543) {
+export const useRiveProperty = function useRiveProperty(instance, FillColor, f28540) {
   const _require = instance;
   const dependencyMap = FillColor;
-  const callback = f28543;
+  const callback = f28540;
   let tmp = first(undefined);
   const callback2 = tmp;
   const items = [instance, FillColor];
@@ -77,7 +77,7 @@ export const useRiveProperty = function useRiveProperty(instance, FillColor, f28
       const current = tmp.current;
       if (current) {
         let tmp2 = arg0;
-        if (typeof arg0 !== "_") {
+        if (typeof arg0 !== "ZodObject") {
           tmp2 = arg0(first);
         }
         current.value = tmp2;

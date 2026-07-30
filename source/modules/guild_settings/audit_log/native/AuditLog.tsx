@@ -1,9 +1,9 @@
-// Module ID: 16389
-// Function ID: 16390
+// Module ID: 16383
+// Function ID: 16384
 // Name: ApplicationHook
-// Dependencies: [19, 17, 1302, 1882, 3826, 1874, 676, 21, 4189, 712, 1419, 1416, 4871, 4035, 5521, 4185, 3901, 16372, 1236, 4028, 1297, 1411, 4380, 4372, 3771, 1351, 688, 9666, 5206, 5222, 16381, 4717, 4157, 8359, 13702, 589, 2]
+// Dependencies: [19, 17, 1302, 1882, 3826, 1874, 676, 21, 4189, 712, 1419, 1416, 4871, 4035, 5521, 4185, 3901, 16366, 1236, 4028, 1297, 1411, 4380, 4372, 3771, 1351, 688, 9663, 5206, 5222, 16375, 4717, 4157, 8356, 13697, 589, 2]
 
-// Module 16389 (ApplicationHook)
+// Module 16383 (ApplicationHook)
 import importAllResult from "nameFromUser";
 import { View } from "getPermissionChanges";
 import importDefaultResult from "handleThemeChange";
@@ -463,8 +463,8 @@ prototype["renderChangeSummary"] = function renderChangeSummary() {
   const self = this;
   let renderChangeDetailsResult = null;
   if (this.props.expanded) {
-    renderChangeDetailsResult = self.renderChangeDetails(importAll(16372).getChangeStrings(tmp));
-    const obj = importAll(16372);
+    renderChangeDetailsResult = self.renderChangeDetails(importAll(16366).getChangeStrings(tmp));
+    const obj = importAll(16366);
   }
   return renderChangeDetailsResult;
 };
@@ -481,7 +481,7 @@ prototype["render"] = function render() {
   ({ log, expanded, guildId, channel: require } = props);
   const user = log.user;
   ({ containerStyle, theme } = props);
-  let obj = importAll(16372);
+  let obj = importAll(16366);
   const checkChangesToRenderResult = obj.checkChangesToRender(log);
   const timestampStart = log.timestampStart;
   const calendarResult = timestampStart.calendar();
@@ -525,7 +525,7 @@ prototype["render"] = function render() {
   obj1[3] = str3;
   obj1[4] = onHeaderClick;
   const obj2 = { style: tmp.rowContainer, children: null };
-  const items2 = [callback(user(16381), { action: log.action }), , , ];
+  const items2 = [callback(user(16375), { action: log.action }), , , ];
   const obj4 = { accessibilityRole: "button", accessibilityLabel: null, accessibilityHint: null, onPress: null, children: null };
   const intl = tmp10(1236).intl;
   obj4[1] = intl.string(tmp10(1236).t.iXAna6);
@@ -590,7 +590,7 @@ prototype["render"] = function render() {
           const items4 = [tmp.arrow, rotate90];
           obj8[0] = items4;
           obj8[1] = tmp10(1297).Icon.Sizes.CUSTOM;
-          obj8[2] = tmp18(13702);
+          obj8[2] = tmp18(13697);
           tmp17Result = tmp17(tmp10(1297).Icon, obj8);
         }
         items2[3] = tmp17Result;

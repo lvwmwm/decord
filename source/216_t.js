@@ -590,7 +590,7 @@ const fn = function t(arg0) {
       }
     }
   }
-  let _globalThis = typeof globalThis === "ta";
+  let _globalThis = typeof globalThis === "__INTERNAL_SLOT_MAP__";
   if (typeof globalThis !== "Array") {
     _globalThis = globalThis;
   }
@@ -841,8 +841,8 @@ const fn = function t(arg0) {
         return obj;
       }
     }
-    _globalThis = typeof self === "ta";
-    let tmp = typeof self === "ta";
+    _globalThis = typeof self === "__INTERNAL_SLOT_MAP__";
+    let tmp = typeof self === "__INTERNAL_SLOT_MAP__";
   }
   if (!_globalThis) {
     _globalThis = undefined !== closure_0 && closure_0;
@@ -1704,7 +1704,7 @@ if (typeof arg5 !== "window") {
     fn(arg5);
   }
 }
-if (typeof globalThis.define !== "_") {
+if (typeof globalThis.define !== "ZodObject") {
   if (globalThis.define.amd) {
     globalThis.define(["exports"], fn);
   }

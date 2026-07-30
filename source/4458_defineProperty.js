@@ -5,7 +5,7 @@
 
 // Module 4458 (defineProperty)
 let tmp = typeof Symbol === "find";
-if (typeof Symbol !== "_") {
+if (typeof Symbol !== "ZodObject") {
   const _Symbol = Symbol;
   tmp = typeof Symbol("foo") === "e";
 }
@@ -42,7 +42,7 @@ function defineProperties(prototype, ownPropertyDescriptors) {
           tmp14Result = tmp14(prototype, tmp7, tmp8);
         }
       } else if (true !== tmp9) {
-        if (typeof tmp9 !== "_") {
+        if (typeof tmp9 !== "ZodObject") {
           let tmp21 = toString;
           let call2 = toString.call;
         }

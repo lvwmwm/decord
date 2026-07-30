@@ -1,10 +1,10 @@
-// Module ID: 15370
-// Function ID: 15371
+// Module ID: 15364
+// Function ID: 15365
 // Name: ContentInventoryEntryRow
-// Dependencies: [19, 3826, 21, 589, 7909, 15371, 15380, 2]
+// Dependencies: [19, 3826, 21, 589, 7906, 15365, 15374, 2]
 // Exports: default
 
-// Module 15370 (ContentInventoryEntryRow)
+// Module 15364 (ContentInventoryEntryRow)
 import "noop";
 import upsertRelationship from "upsertRelationship";
 import { jsx } from "jsxProd";
@@ -25,9 +25,9 @@ export default function ContentInventoryEntryRow(content) {
     return null;
   } else {
     const content_type = content.content_type;
-    if (tmp(7909).ContentInventoryEntryType.TOP_GAME !== content_type) {
-      if (tmp(7909).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
-        if (tmp(7909).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+    if (tmp(7906).ContentInventoryEntryType.TOP_GAME !== content_type) {
+      if (tmp(7906).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+        if (tmp(7906).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
           obj = { content: null, renderForScreenshot: null, visible: null };
           obj[0] = content;
           obj[1] = flag;
@@ -35,7 +35,7 @@ export default function ContentInventoryEntryRow(content) {
             flag2 = false;
           }
           obj[2] = flag2;
-          return jsx(importDefault(15380), { content: null, renderForScreenshot: null, visible: null });
+          return jsx(importDefault(15374), { content: null, renderForScreenshot: null, visible: null });
         } else {
           return null;
         }
@@ -44,6 +44,6 @@ export default function ContentInventoryEntryRow(content) {
     obj = { content: null, renderForScreenshot: null };
     obj[0] = content;
     obj[1] = flag;
-    return jsx(importDefault(15371), { content: null, renderForScreenshot: null });
+    return jsx(importDefault(15365), { content: null, renderForScreenshot: null });
   }
 };

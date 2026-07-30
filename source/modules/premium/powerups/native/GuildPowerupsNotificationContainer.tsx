@@ -1,10 +1,10 @@
-// Module ID: 11646
-// Function ID: 11647
+// Module ID: 11642
+// Function ID: 11643
 // Name: Tier3OverrideNotice
-// Dependencies: [17, 21, 4189, 712, 4185, 11647, 11648, 1236, 2255, 11651, 2]
+// Dependencies: [17, 21, 4189, 712, 4185, 11643, 11644, 1236, 2255, 11647, 2]
 // Exports: default
 
-// Module 11646 (Tier3OverrideNotice)
+// Module 11642 (Tier3OverrideNotice)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -25,8 +25,8 @@ const result = require("createCacheKey").fileFinishedImporting("modules/premium/
 
 export default function GuildPowerupsNotificationContainer(guildId) {
   guildId = guildId.guildId;
-  const tmp4 = importDefault(11647)(guildId);
-  const tmp5 = importDefault(11648)(guildId);
+  const tmp4 = importDefault(11643)(guildId);
+  const tmp5 = importDefault(11644)(guildId);
   if (tmp4.shouldShow) {
     let obj = { style: null, children: null };
     obj[0] = tmp.container;
@@ -46,7 +46,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
       const obj1 = { guildId: null, powerupNames: null, warnings: null };
       obj1[0] = guildId;
       ({ expiringPowerupNames: obj4[1], warnings: obj4[2] } = tmp5);
-      shouldShow2 = tmp9(tmp2(11651), obj1);
+      shouldShow2 = tmp9(tmp2(11647), obj1);
     }
     items[2] = shouldShow2;
     obj[1] = items;

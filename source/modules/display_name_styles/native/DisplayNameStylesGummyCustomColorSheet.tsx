@@ -1,10 +1,10 @@
-// Module ID: 14362
-// Function ID: 14363
+// Module ID: 14358
+// Function ID: 14359
 // Name: DisplayNameStylesGummyCustomColorSheet
-// Dependencies: [19, 17, 1886, 21, 4189, 712, 4050, 1885, 688, 4158, 4157, 5243, 5242, 1236, 4600, 14363, 13701, 2]
+// Dependencies: [19, 17, 1886, 21, 4189, 712, 4050, 1885, 688, 4158, 4157, 5243, 5242, 1236, 4600, 14359, 13696, 2]
 // Exports: default
 
-// Module 14362 (DisplayNameStylesGummyCustomColorSheet)
+// Module 14358 (DisplayNameStylesGummyCustomColorSheet)
 import noop from "noop";
 import { View } from "set";
 import items3 from "items3";
@@ -60,10 +60,10 @@ export default function DisplayNameStylesGummyCustomColorSheet(onSelect) {
   obj[0] = callback(onSelect(5242).BottomSheetTitleHeader, obj);
   obj2 = { style: tmp.body, children: null };
   const obj3 = { style: tmp.previewWrapper, children: null };
-  obj3[1] = callback(View, { style: tmp.preview, children: callback(sharedValue(14363), { hue: sharedValue }) });
+  obj3[1] = callback(View, { style: tmp.preview, children: callback(sharedValue(14359), { hue: sharedValue }) });
   const items1 = [callback(View, obj3), ];
-  const obj4 = { style: tmp.preview, children: callback(sharedValue(14363), { hue: sharedValue }) };
-  items1[1] = callback(View, { style: tmp.huePickerInset, children: callback(sharedValue(13701), obj6) });
+  const obj4 = { style: tmp.preview, children: callback(sharedValue(14359), { hue: sharedValue }) };
+  items1[1] = callback(View, { style: tmp.huePickerInset, children: callback(sharedValue(13696), obj6) });
   obj2[1] = items1;
   obj[1] = callback2(View, obj2);
   return callback(onSelect(5243).BottomSheet, obj);

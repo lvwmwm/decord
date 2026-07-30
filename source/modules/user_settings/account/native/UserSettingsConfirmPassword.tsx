@@ -1,14 +1,14 @@
-// Module ID: 9229
-// Function ID: 9230
+// Module ID: 9225
+// Function ID: 9226
 // Name: UserSettingsConfirmPasswordWrapped
-// Dependencies: [5, 32, 19, 17, 1874, 676, 21, 4189, 712, 6330, 589, 6506, 4088, 1208, 1236, 9230, 4185, 8995, 8999, 4600, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 676, 21, 4189, 712, 6327, 589, 6503, 4088, 1208, 1236, 9226, 4185, 8991, 8995, 4600, 2]
 // Exports: UserSettingsConfirmPasswordWrapped
 
-// Module 9229 (UserSettingsConfirmPasswordWrapped)
+// Module 9225 (UserSettingsConfirmPasswordWrapped)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "Button";
-import get_ActivityIndicator from "module_8995";
+import get_ActivityIndicator from "module_8991";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserSettingsSections } from "ME";
 import jsxProd from "jsxProd";
@@ -201,7 +201,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
     obj[0] = items1;
     let tmp15 = null;
     if (!hideUnverifiedBanner) {
-      tmp15 = callback(importDefault(9230), {});
+      tmp15 = callback(importDefault(9226), {});
     }
     function handleSubmit() {
       const self = this;
@@ -238,7 +238,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
       fieldMessage = obj1.getFieldMessage("password");
     }
     obj3[9] = fieldMessage;
-    items3[2] = callback(importDefault(8995), obj3);
+    items3[2] = callback(importDefault(8991), obj3);
     let tmp19Result = null;
     if (null != obj1) {
       tmp19Result = null;
@@ -246,7 +246,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
         const obj4 = { style: null, children: null };
         obj4[0] = tmp.hint;
         obj4[1] = obj1.message;
-        tmp19Result = tmp19(tmp20(8999), obj4);
+        tmp19Result = tmp19(tmp20(8995), obj4);
       }
     }
     items3[3] = tmp19Result;
@@ -265,7 +265,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
     tmp13Result = tmp13(closure_7, obj);
     const tmp14 = closure_7;
     tmp20 = importDefault;
-    const tmp21 = importDefault(8995);
+    const tmp21 = importDefault(8991);
   }
   return tmp13Result;
 });
@@ -274,7 +274,7 @@ let result = require("noop").fileFinishedImporting("modules/user_settings/accoun
 
 export default forwardRefResult;
 export const UserSettingsConfirmPasswordWrapped = function UserSettingsConfirmPasswordWrapped() {
-  let obj = require(6330) /* useSettingNavigationRoute */;
+  let obj = require(6327) /* useSettingNavigationRoute */;
   obj = {};
   const merged = Object.assign(obj.useSettingNavigationRoute().params);
   return callback(closure_13, obj);

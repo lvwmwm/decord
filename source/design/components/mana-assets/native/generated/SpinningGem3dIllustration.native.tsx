@@ -1,10 +1,10 @@
-// Module ID: 7512
-// Function ID: 7513
+// Module ID: 7509
+// Function ID: 7510
 // Name: SpinningGem3dIllustration
-// Dependencies: [21, 5141, 7513, 2]
+// Dependencies: [21, 5141, 7510, 2]
 // Exports: SpinningGem3dIllustration
 
-// Module 7512 (SpinningGem3dIllustration)
+// Module 7509 (SpinningGem3dIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SpinningGem3dIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const SpinningGem3dIllustration = function SpinningGem3dIllustration(widt
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7513);
+  obj[0] = importDefault(7510);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

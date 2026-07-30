@@ -1,10 +1,10 @@
-// Module ID: 10142
-// Function ID: 10143
+// Module ID: 10138
+// Function ID: 10139
 // Name: openLoadingIndicatorDebugBody
-// Dependencies: [32, 19, 17, 4181, 4865, 4407, 1931, 1874, 6328, 676, 21, 4189, 712, 4529, 4618, 1959, 589, 4185, 10143, 4050, 4190, 1236, 4717, 2]
+// Dependencies: [32, 19, 17, 4181, 4865, 4407, 1931, 1874, 6325, 676, 21, 4189, 712, 4529, 4618, 1959, 589, 4185, 10139, 4050, 4190, 1236, 4717, 2]
 // Exports: ChannelHeaderLoadingIndicator, useShouldChannelShowLoadingIndicator
 
-// Module 10142 (openLoadingIndicatorDebugBody)
+// Module 10138 (openLoadingIndicatorDebugBody)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "module_4050";
 import { View } from "Text";

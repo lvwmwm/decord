@@ -1,10 +1,10 @@
-// Module ID: 7190
-// Function ID: 7191
+// Module ID: 7187
+// Function ID: 7188
 // Name: GiftTrollIllocon
-// Dependencies: [21, 5141, 7191, 2]
+// Dependencies: [21, 5141, 7188, 2]
 // Exports: GiftTrollIllocon
 
-// Module 7190 (GiftTrollIllocon)
+// Module 7187 (GiftTrollIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GiftTrollIllocon.native.tsx");
@@ -20,7 +20,7 @@ export const GiftTrollIllocon = function GiftTrollIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7191);
+  obj[0] = importDefault(7188);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;

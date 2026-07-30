@@ -1,10 +1,10 @@
-// Module ID: 14257
-// Function ID: 14258
+// Module ID: 14253
+// Function ID: 14254
 // Name: EmojiIcon
-// Dependencies: [19, 21, 14258, 5141, 9366, 5206, 1416, 2]
+// Dependencies: [19, 21, 14254, 5141, 9362, 5206, 1416, 2]
 // Exports: default
 
-// Module 14257 (EmojiIcon)
+// Module 14253 (EmojiIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -29,7 +29,7 @@ export default function EmojiIcon(size) {
   if (lineHeight === undefined) {
     lineHeight = num + 4;
   }
-  let obj = require(14258) /* useEmojiByIdOrName */;
+  let obj = require(14254) /* useEmojiByIdOrName */;
   const emojiByIdOrName = obj.useEmojiByIdOrName(guildId, id);
   if (null == emojiByIdOrName) {
     let tmp4 = null;
@@ -39,7 +39,7 @@ export default function EmojiIcon(size) {
       obj[0] = num;
       obj[1] = num;
       obj[1] = obj;
-      obj[2] = importDefault(9366);
+      obj[2] = importDefault(9362);
       tmp4 = jsx(importDefault(5141), { width: null, height: null });
       const tmp7 = importDefault(5141);
     }

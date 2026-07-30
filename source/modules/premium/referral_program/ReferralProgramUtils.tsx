@@ -1,10 +1,10 @@
-// Module ID: 7836
-// Function ID: 7837
+// Module ID: 7833
+// Function ID: 7834
 // Name: getReferralTrialOfferExpirationCopy
-// Dependencies: [6212, 1369, 687, 1236, 4005, 1358, 11, 1360, 7837, 589, 7842, 2]
+// Dependencies: [6209, 1369, 687, 1236, 4005, 1358, 11, 1360, 7834, 589, 7839, 2]
 // Exports: getReferralTrialOfferExpirationCopy, isReferralProgramBadgeAcknowledged, isReferralProgramPopoverSeen, markReferralProgramBadgeAcknowledged, markReferralProgramEntrypointBadgeAcknowledged, markReferralProgramPopoverSeen, useIsReferralProgramBadgeShowable, useIsReferralProgramEntrypointBadgeAcknowledged, useIsReferralProgramPopoverShowable
 
-// Module 7836 (getReferralTrialOfferExpirationCopy)
+// Module 7833 (getReferralTrialOfferExpirationCopy)
 import emitChanges from "emitChanges";
 import { ContentDismissActionType } from "ContentDismissActionType";
 
@@ -81,8 +81,8 @@ export const isReferralProgramPopoverSeen = function isReferralProgramPopoverSee
   return require(4005) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_isDismissibleContentDismissed(require(1358) /* DismissibleContent */.DismissibleContent.REFERRAL_PROGRAM_POPOVER);
 };
 export const useIsReferralProgramPopoverShowable = function useIsReferralProgramPopoverShowable() {
-  let isEligibleSenderForReferralProgram = require(7837) /* useIsEligibleSenderForReferralProgram */.useIsEligibleSenderForReferralProgram(false);
-  const obj = require(7837) /* useIsEligibleSenderForReferralProgram */;
+  let isEligibleSenderForReferralProgram = require(7834) /* useIsEligibleSenderForReferralProgram */.useIsEligibleSenderForReferralProgram(false);
+  const obj = require(7834) /* useIsEligibleSenderForReferralProgram */;
   const items = [emitChanges];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => store.getReferralsRemaining());
   const obj2 = require(589) /* initialize */;

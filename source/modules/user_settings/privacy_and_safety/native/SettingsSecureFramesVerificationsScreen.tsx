@@ -1,10 +1,10 @@
-// Module ID: 14651
-// Function ID: 14652
+// Module ID: 14645
+// Function ID: 14646
 // Name: VerificationListItem
-// Dependencies: [19, 17, 1874, 21, 4189, 8892, 5220, 1236, 4717, 5175, 4185, 6330, 1480, 589, 4028, 9118, 14648, 6676, 2]
+// Dependencies: [19, 17, 1874, 21, 4189, 8888, 5220, 1236, 4717, 5175, 4185, 6327, 1480, 589, 4028, 9114, 14642, 6673, 2]
 // Exports: default
 
-// Module 14651 (VerificationListItem)
+// Module 14645 (VerificationListItem)
 import noop from "noop";
 import { View } from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -88,7 +88,7 @@ let result = require("mergeGuildAvatar").fileFinishedImporting("modules/user_set
 
 export default function SettingsSecureFramesVerificationsScreen() {
   const tmp = callback();
-  let obj = userId(6330);
+  let obj = userId(6327);
   userId = obj.useSettingNavigationRoute().params.userId;
   let obj1 = userId(1480);
   const navigation = obj1.useNavigation();
@@ -110,7 +110,7 @@ export default function SettingsSecureFramesVerificationsScreen() {
     navigation.setOptions(obj);
   });
   const obj4 = navigation(4028);
-  secureFramesUserVerifiedKeys = userId(14648).useSecureFramesUserVerifiedKeys(userId);
+  secureFramesUserVerifiedKeys = userId(14642).useSecureFramesUserVerifiedKeys(userId);
   const items1 = [userId, secureFramesUserVerifiedKeys];
   const items2 = [navigation, secureFramesUserVerifiedKeys];
   const memo = secureFramesUserVerifiedKeys.useMemo(() => {
@@ -135,6 +135,6 @@ export default function SettingsSecureFramesVerificationsScreen() {
   obj1 = { style: tmp.listFooter, children: null };
   obj1[1] = <ClearVerificationsListFooter userId={userId} />;
   obj[5] = <View style={tmp.listFooter}>{null}</View>;
-  obj[1] = jsx(userId(6676).FlashList, { keyExtractor, getItemType, renderItem, data: memo, contentContainerStyle: tmp.listContent, ListFooterComponent: null });
+  obj[1] = jsx(userId(6673).FlashList, { keyExtractor, getItemType, renderItem, data: memo, contentContainerStyle: tmp.listContent, ListFooterComponent: null });
   return <View keyExtractor={keyExtractor} getItemType={getItemType} renderItem={renderItem} data={memo} contentContainerStyle={tmp.listContent} ListFooterComponent={null} />;
 };

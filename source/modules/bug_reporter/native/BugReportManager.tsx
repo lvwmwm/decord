@@ -1,12 +1,13 @@
-// Module ID: 10358
-// Function ID: 10359
+// Module ID: 10354
+// Function ID: 10355
 // Name: showNotification
-// Dependencies: [5, 17, 706, 4402, 500, 10260, 514, 5134, 10359, 2]
+// Dependencies: [5, 17, 706, 676, 4402, 500, 10256, 10258, 514, 5134, 10355, 2]
 
-// Module 10358 (showNotification)
-import dispatcher from "dispatcher";
+// Module 10354 (showNotification)
+import set from "set";
 import get_ActivityIndicator from "get ActivityIndicator";
 import refreshSourceMapCookie from "refreshSourceMapCookie";
+import { InAppNotificationTypes } from "ME";
 import { NativePermissionStatus } from "NativePermissionStatus";
 import "initialize";
 
@@ -121,12 +122,14 @@ function showNotification(uri) {
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp3;
+            let c1 = tmp3;
             let c0 = tmp2;
             c0 = undefined;
+            c1 = undefined;
+            dependencyMap = undefined;
             if (null != outer1_1) {
               let obj1 = { uri: null };
-              obj1[0] = tmp30;
+              obj1[0] = tmp36;
               let tmp7 = obj1;
             } else {
               obj1 = outer1_0(500);
@@ -148,8 +151,13 @@ function showNotification(uri) {
               }
             }
             outer1_0 = tmp7;
-            const obj3 = { type: "BUG_REPORTER", duration: 5000, key: null, image: null, imageUri: null, onDismiss: null, inAppNotificationId: null };
-            const obj5 = outer1_1(10260);
+            outer1_1 = outer1_7.BUG_REPORTER;
+            dependencyMap = outer1_0(10256).getNotificationDuration(outer1_1);
+            const obj5 = outer1_0(10256);
+            const obj3 = { type: null, duration: null, key: null, image: null, imageUri: null, onDismiss: null, inAppNotificationId: null };
+            obj3[0] = outer1_1;
+            obj3[1] = dependencyMap;
+            const obj6 = outer1_1(10258);
             obj3[2] = outer1_0(514).v4();
             obj3[3] = outer1_0;
             let uri;
@@ -158,11 +166,11 @@ function showNotification(uri) {
             }
             obj3[4] = uri;
             obj3[5] = function onDismiss() {
-              tmp3(table[5]).clearNotification();
+              _undefined(table[7]).clearNotification();
             };
-            const obj7 = outer1_0(514);
+            const obj8 = outer1_0(514);
             obj3[6] = outer1_0(514).v4();
-            obj5.enqueueNotification(obj3);
+            obj6.enqueueNotification(obj3);
             c3 = 3;
             return { value: "HermesInternal", done: null };
           }
@@ -178,9 +186,9 @@ function showNotification(uri) {
             return obj;
           }
         }
-      } catch (tmp24) {
+      } catch (tmp30) {
         c3 = tmp;
-        throw tmp24;
+        throw tmp30;
       }
     }
   }), 1200);
@@ -251,9 +259,9 @@ prototype["initBugReporter"] = function initBugReporter() {
         } else {
           callback = arg1 === constants.AUTHORIZED;
           isBugReporterEnabled = isBugReporterEnabled.isBugReporterEnabled;
-          hasBugReporterAccess = isBugReporterEnabled(hasBugReporterAccess[8]).getConfig({ location: "native-BugReportManager" }).hasBugReporterAccess;
-          const obj5 = isBugReporterEnabled(hasBugReporterAccess[8]);
-          let isIOSResult = callback(hasBugReporterAccess[4]).isIOS();
+          hasBugReporterAccess = isBugReporterEnabled(hasBugReporterAccess[10]).getConfig({ location: "native-BugReportManager" }).hasBugReporterAccess;
+          const obj5 = isBugReporterEnabled(hasBugReporterAccess[10]);
+          let isIOSResult = callback(hasBugReporterAccess[5]).isIOS();
           if (!isIOSResult) {
             isIOSResult = callback;
           }
@@ -268,7 +276,7 @@ prototype["initBugReporter"] = function initBugReporter() {
           if (tmp9) {
             (function addScreenshotEvent() {
               if (null == closure_3) {
-                closure_3 = closure_8.addListener("screenshotTaken", closure_9);
+                closure_3 = closure_9.addListener("screenshotTaken", closure_10);
               }
             })();
           }

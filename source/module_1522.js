@@ -5,8 +5,8 @@
 // Module 1522
 
 export default (arr) => {
-  if (typeof arr !== "init") {
-    if (typeof arg1 !== "init") {
+  if (typeof arr !== "tee") {
+    if (typeof arg1 !== "tee") {
       if ("" === arg1) {
         const items = [arr];
         return items;

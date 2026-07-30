@@ -1,10 +1,10 @@
-// Module ID: 15656
-// Function ID: 15657
+// Module ID: 15650
+// Function ID: 15651
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 1415, 1372, 1935, 1862, 3817, 3826, 1874, 676, 21, 4189, 712, 1480, 1581, 589, 3822, 506, 8279, 4199, 1906, 4028, 4528, 1236, 3886, 1945, 1380, 15657, 9118, 4185, 4380, 10202, 5220, 5554, 15661, 500, 15662, 2]
+// Dependencies: [32, 5, 19, 17, 1415, 1372, 1935, 1862, 3817, 3826, 1874, 676, 21, 4189, 712, 1480, 1581, 589, 3822, 506, 8276, 4199, 1906, 4028, 4528, 1236, 3886, 1945, 1380, 15651, 9114, 4185, 4380, 10198, 5220, 5554, 15655, 500, 15656, 2]
 // Exports: default
 
-// Module 15656 (ChannelSettingsPermissionsOverrides)
+// Module 15650 (ChannelSettingsPermissionsOverrides)
 import computeChannelName from "computeChannelName";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import fromString from "fromString";
@@ -144,7 +144,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
                         name = 1;
                         c5 = 1;
                         const obj2 = { value: null, done: false };
-                        obj2[0] = callback(8279).checkChattableChannelThresholdMetAfterChannelPermissionDeny(c5, throwTypeErrorResult);
+                        obj2[0] = callback(8276).checkChattableChannelThresholdMetAfterChannelPermissionDeny(c5, throwTypeErrorResult);
                         return obj2;
                       }
                     }
@@ -350,7 +350,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
     obj[0] = id;
     obj[1] = stateFromStores.guild_id;
     obj[4] = tmp10;
-    let tmp9Result = tmp9(id(10202), obj);
+    let tmp9Result = tmp9(id(10198), obj);
   } else {
     role = role.getRole(stateFromStores.guild_id, id);
     let str;

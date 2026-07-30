@@ -1,10 +1,10 @@
-// Module ID: 14468
-// Function ID: 14469
+// Module ID: 14464
+// Function ID: 14465
 // Name: onProfileUpdatesNotificationSettingsChanged
 // Dependencies: [3829, 676, 3862, 698, 2]
 // Exports: onProfileUpdatesNotificationSettingsChanged
 
-// Module 14468 (onProfileUpdatesNotificationSettingsChanged)
+// Module 14464 (onProfileUpdatesNotificationSettingsChanged)
 import { NotificationSettingsUpdateType as closure_3 } from "AccountNotificationFlags";
 import { AnalyticEvents } from "ME";
 

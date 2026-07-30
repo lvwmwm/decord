@@ -1,10 +1,10 @@
-// Module ID: 9672
-// Function ID: 9673
+// Module ID: 9669
+// Function ID: 9670
 // Name: handleLimitedPickerDialog
-// Dependencies: [5, 1304, 1372, 4526, 1931, 4525, 1576, 676, 4402, 4722, 6186, 4729, 4731, 4732, 698, 4743, 500, 4169, 9673, 1231, 9699, 4596, 9829, 9830, 12, 2]
+// Dependencies: [5, 1304, 1372, 4526, 1931, 4525, 1576, 676, 4402, 4722, 6183, 4729, 4731, 4732, 698, 4743, 500, 4169, 9670, 1231, 9696, 4596, 9826, 9827, 12, 2]
 // Exports: addAttachmentForCommand, addImagesFromPicker, animatedIndexThreshold, cropResultToUploadItem, getMediaKeyboardDraftType, handleCameraDialog, handleSelectGift, handleSelectThread, handleViewAllDialog, mediaNodeToUploadItem
 
-// Module 9672 (handleLimitedPickerDialog)
+// Module 9669 (handleLimitedPickerDialog)
 import map from "map";
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -78,7 +78,7 @@ function _handleLimitedPickerDialog() {
               ({ onDismissKeyboard: c0, onRestoreKeyboard: c1 } = callback);
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -191,7 +191,7 @@ function _handleAttachFile() {
               let handleConnectionOpen;
               v0 = 1;
               v02 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -216,7 +216,7 @@ function _handleAttachFile() {
               v0 = 2;
               v02 = 1;
               let obj4 = { value: null, done: false };
-              obj4[0] = lib(9830).handleDocumentSelection(obj3);
+              obj4[0] = lib(9827).handleDocumentSelection(obj3);
               return obj4;
             }
           } else {
@@ -243,7 +243,7 @@ function _handleAttachFile() {
                         let closure_0 = arg0;
                         let c6 = 0;
                         let c7 = 0;
-                        return (/* F118818 */ function*() { ... })();
+                        return (/* F118829 */ function*() { ... })();
                       });
                       return function() {
                         const self = this;
@@ -296,12 +296,12 @@ function handleSelectKeyboardItem(channelId, item, isIncluded, arg3) {
   if (isIncluded) {
     const findUploadResult = closure_8.findUpload(channelId, DraftType.ChannelMessage, (closure_0) => image(outer1_2[11]).doesImageMatchUpload(image, closure_0));
     if (null != findUploadResult) {
-      importDefault(6186).remove(channelId, findUploadResult.id, tmp13.ChannelMessage);
-      const obj5 = importDefault(6186);
+      importDefault(6183).remove(channelId, findUploadResult.id, tmp13.ChannelMessage);
+      const obj5 = importDefault(6183);
     }
     tmp13 = DraftType;
   } else {
-    let obj = importDefault(6186);
+    let obj = importDefault(6183);
     obj = { channelId: null, file: null, draftType: null };
     obj[0] = channelId;
     image = item.node.image;
@@ -352,7 +352,7 @@ function showSimpleMediaKeyboard(channel) {
   } else if (tmp.INTERACTION_MODAL === CHAT) {
     InteractionModal = DraftType.InteractionModal;
   }
-  let obj = _require(9673);
+  let obj = _require(9670);
   obj = {
     channel,
     draftType: InteractionModal,
@@ -732,8 +732,8 @@ function showSimpleMediaKeyboard(channel) {
         }
       });
     },
-    onClose: _require(9673).hideMediaKeyboardActionSheet,
-    onBack: _require(9673).hideMediaKeyboardActionSheet
+    onClose: _require(9670).hideMediaKeyboardActionSheet,
+    onBack: _require(9670).hideMediaKeyboardActionSheet
   };
   let result = obj.showMediaKeyboardActionSheet(obj);
 }
@@ -766,10 +766,10 @@ export const addImagesFromPicker = function addImagesFromPicker(id, items, IMAGE
     obj[0] = mapped;
     obj[1] = id;
     obj[2] = DraftType.ChannelMessage;
-    importDefault(6186).addFiles(obj);
-    const obj3 = importDefault(6186);
+    importDefault(6183).addFiles(obj);
+    const obj3 = importDefault(6183);
   } else {
-    obj = importDefault(6186);
+    obj = importDefault(6183);
     obj = { files: null, channelId: null, draftType: null };
     obj[0] = items;
     obj[1] = id;
@@ -800,8 +800,8 @@ export const addAttachmentForCommand = function addAttachmentForCommand(channelI
   } else if (tmp2.INTERACTION_MODAL === target) {
     InteractionModal = DraftType.InteractionModal;
   }
-  importDefault(6186).remove(channelId, outer1_1.option.name, InteractionModal);
-  const obj4 = importDefault(6186);
+  importDefault(6183).remove(channelId, outer1_1.option.name, InteractionModal);
+  const obj4 = importDefault(6183);
   obj = { channelId, file: null, draftType: null, allowOptimization: false };
   const obj1 = {};
   const merged = Object.assign(result1);
@@ -810,7 +810,7 @@ export const addAttachmentForCommand = function addAttachmentForCommand(channelI
   obj1.filename = filename;
   obj[1] = obj1;
   obj[2] = InteractionModal;
-  importDefault(6186).addFile(obj);
+  importDefault(6183).addFile(obj);
 };
 export const handleCameraDialog = function handleCameraDialog(arg0) {
   let map;
@@ -1051,7 +1051,7 @@ export const handleSelectGift = function handleSelectGift(analyticsLocations, ch
     };
   }
   obj1[4] = fn;
-  _require(9699).openGiftModal(obj1);
+  _require(9696).openGiftModal(obj1);
 };
 export const handleSelectThread = function handleSelectThread(channel, chatInput) {
   let obj = importDefault(698);
@@ -1071,8 +1071,8 @@ export const handleSelectThread = function handleSelectThread(channel, chatInput
     }
     obj3 = require(500) /* set */;
     const tmp6 = require;
-    const result = require(9829) /* navigateToThreadCreation */.navigateToThreadCreation(channel, "Plus Button");
-    const tmp6Result = require(9829) /* navigateToThreadCreation */;
+    const result = require(9826) /* navigateToThreadCreation */.navigateToThreadCreation(channel, "Plus Button");
+    const tmp6Result = require(9826) /* navigateToThreadCreation */;
   }
 };
 export { handleAttachFile };

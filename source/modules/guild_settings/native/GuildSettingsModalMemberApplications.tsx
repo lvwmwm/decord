@@ -1,9 +1,9 @@
-// Module ID: 15447
-// Function ID: 15448
+// Module ID: 15441
+// Function ID: 15442
 // Name: memoResult1
-// Dependencies: [19, 17, 5714, 21, 4189, 712, 4028, 4185, 15448, 1416, 5220, 1297, 1581, 15453, 4009, 15454, 589, 1236, 6676, 8369, 5501, 2]
+// Dependencies: [19, 17, 5714, 21, 4189, 712, 4028, 4185, 15442, 1416, 5220, 1297, 1581, 15447, 4009, 15448, 589, 1236, 6673, 8366, 5501, 2]
 
-// Module 15447 (memoResult1)
+// Module 15441 (memoResult1)
 import importAllResult from "getNoResultsSource";
 import get_ActivityIndicator from "getSystemLocale";
 import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";

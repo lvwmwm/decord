@@ -1,10 +1,10 @@
-// Module ID: 11532
-// Function ID: 11533
+// Module ID: 11528
+// Function ID: 11529
 // Name: useIsMessageRequestRestrictedViewer
-// Dependencies: [4405, 3868, 3875, 11533, 2]
+// Dependencies: [4405, 3868, 3875, 11529, 2]
 // Exports: useIsMessageRequestRestrictedViewer
 
-// Module 11532 (useIsMessageRequestRestrictedViewer)
+// Module 11528 (useIsMessageRequestRestrictedViewer)
 const result = require("SettingsDefaultFeature").fileFinishedImporting("modules/message_request/hooks/useIsMessageRequestRestrictedViewer.tsx");
 
 export const useIsMessageRequestRestrictedViewer = function useIsMessageRequestRestrictedViewer(ChatInputGuardMessageRequest) {

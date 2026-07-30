@@ -1,10 +1,10 @@
-// Module ID: 10506
-// Function ID: 10507
+// Module ID: 10502
+// Function ID: 10503
 // Name: transitionToActivity
-// Dependencies: [10235, 1371, 5688, 10236, 3807, 4040, 10507, 10466, 10879, 4383, 10511, 4157, 5696, 2]
+// Dependencies: [10231, 1371, 5688, 10232, 3807, 4040, 10503, 10462, 10875, 4383, 10507, 4157, 5696, 2]
 // Exports: default
 
-// Module 10506 (transitionToActivity)
+// Module 10502 (transitionToActivity)
 import { setVoiceChatDrawerState } from "VoiceChatDrawerState";
 import participantFromServer from "participantFromServer";
 import { ActivityPanelModes } from "ActivityPanelModes";
@@ -17,19 +17,19 @@ export default function transitionToActivity(arg0, _location) {
   const embeddedActivityLocationChannelId = obj.getEmbeddedActivityLocationChannelId(_location);
   if (null != embeddedActivityLocationChannelId) {
     let tmpResult = tmp(4040);
-    const isModalOpenResult = tmpResult.isModalOpen(importDefault(10507));
+    const isModalOpenResult = tmpResult.isModalOpen(importDefault(10503));
     let tmp4 = !isModalOpenResult;
     if (!isModalOpenResult) {
-      tmp4 = tmp15(10466)(embeddedActivityLocationChannelId);
+      tmp4 = tmp15(10462)(embeddedActivityLocationChannelId);
     }
     if (tmp4) {
-      tmp15(10879)(embeddedActivityLocationChannelId);
+      tmp15(10875)(embeddedActivityLocationChannelId);
     }
     selfEmbeddedActivityForLocation = selfEmbeddedActivityForLocation.getSelfEmbeddedActivityForLocation(_location);
     if (null != selfEmbeddedActivityForLocation) {
-      if (tmp15(10466)(embeddedActivityLocationChannelId)) {
+      if (tmp15(10462)(embeddedActivityLocationChannelId)) {
         let tmp15Result = tmp15(4383);
-        tmpResult = tmp(10511);
+        tmpResult = tmp(10507);
         obj = { applicationId: null, instanceId: null };
         ({ applicationId: obj5[0], compositeInstanceId: obj5[1] } = selfEmbeddedActivityForLocation);
         const participant = tmp15Result.selectParticipant(embeddedActivityLocationChannelId, tmpResult.getEmbeddedActivityParticipantId(obj));

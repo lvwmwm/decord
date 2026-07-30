@@ -1,10 +1,10 @@
-// Module ID: 16348
-// Function ID: 16349
+// Module ID: 16342
+// Function ID: 16343
 // Name: handleTouch
-// Dependencies: [5, 32, 19, 17, 1366, 676, 21, 4189, 712, 5548, 1236, 5641, 1581, 5149, 4597, 7985, 8426, 503, 4185, 4600, 8340, 8334, 2]
+// Dependencies: [5, 32, 19, 17, 1366, 676, 21, 4189, 712, 5548, 1236, 5641, 1581, 5149, 4597, 7982, 8423, 503, 4185, 4600, 8337, 8331, 2]
 // Exports: default
 
-// Module 16348 (handleTouch)
+// Module 16342 (handleTouch)
 import closure_3 from "ME";
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
@@ -129,7 +129,7 @@ export default function NewTermsModal() {
   obj[0] = memo(503).ImpressionTypes.VIEW;
   obj[1] = memo(503).ImpressionNames.USER_AGREEMENTS;
   obj[2] = { required_action: memo };
-  importDefault(8426)(obj, {}, []);
+  importDefault(8423)(obj, {}, []);
   let tmp10 = null;
   if (null != memo) {
     obj = { style: null, children: null };
@@ -205,15 +205,15 @@ export default function NewTermsModal() {
     obj18[0] = top;
     items4[1] = obj18;
     obj17[0] = items4;
-    obj17[1] = tmp2(8334);
+    obj17[1] = tmp2(8331);
     obj17[2] = tmp.navbarRight.tintColor;
     obj17[3] = handleMoreActions;
     const intl9 = tmp6(1236).intl;
     obj17[5] = intl9.string(tmp6(1236).t["UKOtz+"]);
-    items3[2] = callback3(tmp2(8340), obj17);
+    items3[2] = callback3(tmp2(8337), obj17);
     obj[1] = items3;
     tmp10 = callback4(closure_6, obj);
-    const tmp2Result = tmp2(8340);
+    const tmp2Result = tmp2(8337);
   }
   return tmp10;
 };

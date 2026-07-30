@@ -1,10 +1,10 @@
-// Module ID: 8046
-// Function ID: 8047
+// Module ID: 8043
+// Function ID: 8044
 // Name: firstAvatarDecoration
 // Dependencies: [19, 1901, 1236, 2]
 // Exports: getBundleItemNames, useShopProductItems
 
-// Module 8046 (firstAvatarDecoration)
+// Module 8043 (firstAvatarDecoration)
 import noop from "noop";
 
 const require = arg1;

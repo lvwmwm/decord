@@ -36,7 +36,7 @@ if (supportedFeatures == null) {
   supportedFeatures = ["voice_sound_stop_loop", "voice_relative_sounds", "voice_legacy_subsystem", "voice_experimental_subsystem", "elevated_hook", "soundshare", "soundshare_loopback", "set_audio_device_by_id", "set_video_device_by_id", "loopback", "wumpus_video", "hybrid_video", "experiment_config", "remote_locus_network_control", "screen_previews", "window_previews", "audio_debug_state", "connection_replay", "simulcast_bugfix", "RTC_REGION_RANKING", "video_effects", "electron_video", "mediapipe", "fixed_keyframe_interval"];
 }
 require("constants").VoiceEngine.supportsFeature = (arg0) => supportedFeatures.includes(arg0);
-let closure_4 = ["configureConnectionRetries", "getEncryptionModes", "setTransportOptions", "mergeUsers", "destroyUser", "setLocalPan", "setLocalVolume", "setLocalMute", "fastUdpReconnect", "wasRemoteDisconnected", "setMinimumOutputDelay", "setSelfMute", "setSelfDeafen", "setNoInputThreshold", "setPTTActive", "setVideoBroadcast", "triggerOnVideoCallback", "getStats", "getFilteredStats", "setPingInterval", "setDesktopSource", "prepareSecureFramesTransition", "executeSecureFramesTransition", "prepareSecureFramesEpoch", "triggerOnSpeakingCallback"];
+let closure_4 = ["configureConnectionRetries", "getEncryptionModes", "setTransportOptions", "mergeUsers", "destroyUser", "setLocalPan", "setLocalVolume", "setLocalMute", "fastUdpReconnect", "setUdpEndpoint", "wasRemoteDisconnected", "setMinimumOutputDelay", "setSelfMute", "setSelfDeafen", "setNoInputThreshold", "setPTTActive", "setVideoBroadcast", "triggerOnVideoCallback", "getStats", "getFilteredStats", "setPingInterval", "setDesktopSource", "prepareSecureFramesTransition", "executeSecureFramesTransition", "prepareSecureFramesEpoch", "triggerOnSpeakingCallback"];
 if (null != require("constants").VoiceEngine.consoleLog) {
   const _module = require("log");
   _module.setNativeLogFn((arg0, arg1, arg2) => {
@@ -162,6 +162,10 @@ class VoiceConnection {
     obj.setOnMLSFailureCallback = obj.callbackSetter("mls-failure-callback", (arg0) => {
       const items = [, ];
       ({ source: arr[0], reason: arr[1] } = arg0);
+      return items;
+    });
+    obj.setOnConnectionFailedCallback = obj.callbackSetter("connection-failed-callback", (reason) => {
+      const items = [reason.reason];
       return items;
     });
     obj.setSecureFramesStateUpdateCallback = obj.callbackSetter("secure-frames-state-update-callback", (stateUpdate) => {
@@ -482,12 +486,12 @@ VoiceEngineEmitter13.addListener("on-broadcast-thumbnail", (arg0) => {
   }
   return applyResult;
 });
-const f73963 = (arg0) => {
+const f73982 = (arg0) => {
   let closure_1 = arg0;
   return arg0;
 };
 require("constants").VoiceEngine.setBroadcastThumbnailCallback = (arg0, arg1, arg2, arg3) => {
-  if (typeof f73963 !== "find") {
+  if (typeof f73982 !== "find") {
     HermesBuiltin.throwTypeError();
   }
   const _null = arg3;

@@ -1,9 +1,9 @@
-// Module ID: 5842
-// Function ID: 5843
+// Module ID: 5840
+// Function ID: 5841
 // Name: fromServer
 // Dependencies: [5829, 2]
 
-// Module 5842 (fromServer)
+// Module 5840 (fromServer)
 let prototype;
 prototype = function WideBannerBlockRecord(arg0) {
   const obj = Object.create(new.target.prototype);

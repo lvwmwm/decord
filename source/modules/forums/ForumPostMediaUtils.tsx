@@ -1,10 +1,10 @@
-// Module ID: 8192
-// Function ID: 8193
+// Module ID: 8189
+// Function ID: 8190
 // Name: isMediaAttachment
-// Dependencies: [19, 6066, 1372, 4407, 1874, 676, 4377, 3862, 1384, 1467, 1351, 4411, 1906, 4416, 11, 2]
+// Dependencies: [19, 6064, 1372, 4407, 1874, 676, 4377, 3862, 1384, 1467, 1351, 4411, 1906, 4416, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal, useFindFirstMediaProperties, useFirstMediaIsEmbed, useForumPostComponentsMedia, useForumPostMediaThumbnail
 
-// Module 8192 (isMediaAttachment)
+// Module 8189 (isMediaAttachment)
 import noop from "noop";
 import updateState from "updateState";
 import ensureGuildLoaded from "ensureGuildLoaded";

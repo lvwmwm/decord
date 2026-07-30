@@ -1,10 +1,10 @@
-// Module ID: 7098
-// Function ID: 7099
+// Module ID: 7095
+// Function ID: 7096
 // Name: GameDiversityTier2LargeBadge
-// Dependencies: [21, 5141, 7099, 2]
+// Dependencies: [21, 5141, 7096, 2]
 // Exports: GameDiversityTier2LargeBadge
 
-// Module 7098 (GameDiversityTier2LargeBadge)
+// Module 7095 (GameDiversityTier2LargeBadge)
 import { jsx } from "jsxProd";
 
 const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/GameDiversityTier2LargeBadge.native.tsx");
@@ -28,7 +28,7 @@ export const GameDiversityTier2LargeBadge = function GameDiversityTier2LargeBadg
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7099);
+  obj[0] = importDefault(7096);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

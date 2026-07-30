@@ -1,10 +1,10 @@
-// Module ID: 8892
-// Function ID: 8893
+// Module ID: 8888
+// Function ID: 8889
 // Name: getCurrentUserSigningKey
-// Dependencies: [32, 5, 1218, 4236, 4261, 4275, 1874, 8893, 8894, 676, 1945, 8895, 8902, 8877, 8896, 1236, 4028, 3771, 687, 38, 206, 530, 1208, 4528, 4379, 2]
+// Dependencies: [32, 5, 1218, 4236, 4261, 4275, 1874, 8889, 8890, 676, 1945, 8891, 8898, 8873, 8892, 1236, 4028, 3771, 687, 38, 206, 530, 1208, 4528, 4379, 2]
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesHelpdeskArticle, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, showSecureFramesKeyInconsistentAlert, validateSecureFramesKeyConsistent
 
-// Module 8892 (getCurrentUserSigningKey)
+// Module 8888 (getCurrentUserSigningKey)
 import _slicedToArray from "_slicedToArray";
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
@@ -601,32 +601,32 @@ export const getSecureFramesVerifiedDevicesHelpdeskArticle = function getSecureF
   return importDefault(1945).getArticleURL(constants3.END_TO_END_ENCRYPTION);
 };
 export const addVerification = function addVerification(userId, userKey, isOtherUserKeyPersistent, channelId, DEEP_LINK) {
-  let obj = importDefault(8895);
+  let obj = importDefault(8891);
   if (isOtherUserKeyPersistent) {
     const secureFramesVerifiedKey = obj.createSecureFramesVerifiedKey(userId, userKey);
   } else {
     const secureFramesTransientKey = obj.createSecureFramesTransientKey(userId, userKey);
   }
   obj = { channelId, userId, analyticsLocation: DEEP_LINK };
-  const result = require(8902) /* trackRTCPanelViewed */.trackE2EEUserVerified(obj);
+  const result = require(8898) /* trackRTCPanelViewed */.trackE2EEUserVerified(obj);
 };
 export const deleteVerification = function deleteVerification(userId, arg1, isOtherUserKeyPersistent) {
   if (isOtherUserKeyPersistent) {
     const _Uint8Array = Uint8Array;
     const uint8Array = new Uint8Array(arg1);
-    const obj2 = require(8877) /* set */;
-    const serializeKeyResult = require(8877) /* set */.serializeKey(uint8Array);
-    const result = importDefault(8895).deleteSecureFramesVerifiedKey(userId, serializeKeyResult);
-    const obj3 = importDefault(8895);
+    const obj2 = require(8873) /* set */;
+    const serializeKeyResult = require(8873) /* set */.serializeKey(uint8Array);
+    const result = importDefault(8891).deleteSecureFramesVerifiedKey(userId, serializeKeyResult);
+    const obj3 = importDefault(8891);
   } else {
-    const result1 = importDefault(8895).deleteSecureFramesTransientKey(userId);
-    const obj = importDefault(8895);
+    const result1 = importDefault(8891).deleteSecureFramesTransientKey(userId);
+    const obj = importDefault(8891);
   }
 };
 export const deletePersistentVerification = function deletePersistentVerification(userId, verifiedKey) {
   const _require = userId;
   const importDefault = verifiedKey;
-  let obj = importDefault(8896);
+  let obj = importDefault(8892);
   obj = { title: null, subtitle: null, onConfirm: null };
   const intl = _require(1236).intl;
   obj[0] = intl.string(_require(1236).t.hdL152);
@@ -654,7 +654,7 @@ export const deleteUserPersistentVerifications = function deleteUserPersistentVe
     const obj = outer1_1(outer1_2[11]);
     const result1 = userId(outer1_2[12]).trackE2EESettingsUserDelete();
   };
-  let result = importDefault(8896).openSecureFramesUpdateConfirmation(obj);
+  let result = importDefault(8892).openSecureFramesUpdateConfirmation(obj);
 };
 export const getSecureFramesUserVerifiedTimestamp = function getSecureFramesUserVerifiedTimestamp(timestamp) {
   let obj = importDefault(3771)();
@@ -833,7 +833,7 @@ export const showSecureFramesKeyInconsistentAlert = function showSecureFramesKey
   let nickname;
   let userId;
   ({ userId, channelId, nickname } = arg0);
-  let obj = require(8902) /* trackRTCPanelViewed */;
+  let obj = require(8898) /* trackRTCPanelViewed */;
   obj = { userId, channelId, keyVersion: closure_12, reason: constants.OTHER_USER_INCONSISTENT_KEYS };
   const result = obj.trackE2EEUserVerificationFailed(obj);
   obj = { title: null, body: null };
@@ -852,7 +852,7 @@ export const validateSecureFramesKeyConsistent = function validateSecureFramesKe
     const user = authStore.getUser(userId);
     let obj = importDefault(4379);
     const name = obj.getName(guildId.guildId, channelId, user);
-    let obj1 = require(8902) /* trackRTCPanelViewed */;
+    let obj1 = require(8898) /* trackRTCPanelViewed */;
     obj = { userId: null, channelId: null, keyVersion: null, reason: null };
     obj[0] = userId;
     obj[1] = channelId;

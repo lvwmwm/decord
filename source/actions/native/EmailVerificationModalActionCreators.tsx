@@ -1,8 +1,8 @@
-// Module ID: 9177
-// Function ID: 9178
-// Dependencies: [676, 698, 4395, 9178, 1959, 709, 2]
+// Module ID: 9173
+// Function ID: 9174
+// Dependencies: [676, 698, 4395, 9174, 1959, 709, 2]
 
-// Module 9177
+// Module 9173
 import { AnalyticEvents } from "ME";
 
 const EMAIL_VERIFICATION_MODAL_KEY = "EMAIL_VERIFICATION_MODAL_KEY";
@@ -18,7 +18,7 @@ export default {
       importDefault(698).track(AnalyticEvents.USER_ACCOUNT_EMAIL_CHANGE_ATTEMPTED);
       const obj = importDefault(698);
     }
-    importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(9178, dependencyMap.paths), { isChangeEmail: flag }, EMAIL_VERIFICATION_MODAL_KEY);
+    importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(9174, dependencyMap.paths), { isChangeEmail: flag }, EMAIL_VERIFICATION_MODAL_KEY);
   },
   close() {
     importDefault(709).wait(() => {

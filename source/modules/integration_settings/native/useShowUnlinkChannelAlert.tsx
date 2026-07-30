@@ -1,10 +1,10 @@
-// Module ID: 10193
-// Function ID: 10194
+// Module ID: 10189
+// Function ID: 10190
 // Name: useShowUnlinkChannelAlert
-// Dependencies: [5, 19, 7686, 4529, 1236, 4618, 2]
+// Dependencies: [5, 19, 7683, 4529, 1236, 4618, 2]
 // Exports: default
 
-// Module 10193 (useShowUnlinkChannelAlert)
+// Module 10189 (useShowUnlinkChannelAlert)
 import componentDidMount from "componentDidMount";
 import noop from "noop";
 

@@ -1,10 +1,10 @@
-// Module ID: 15587
-// Function ID: 15588
+// Module ID: 15581
+// Function ID: 15582
 // Name: transitionGroupGetItemKey
-// Dependencies: [19, 1476, 21, 4534, 4055, 1579, 500, 15588, 4056, 4041, 5657, 10253, 1478, 4059, 9398, 2]
+// Dependencies: [19, 1476, 21, 4534, 4055, 1579, 500, 15582, 4056, 4041, 5657, 10249, 1478, 4059, 9394, 2]
 // Exports: PortalKeyboardRenderer
 
-// Module 15587 (transitionGroupGetItemKey)
+// Module 15581 (transitionGroupGetItemKey)
 import noop from "noop";
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
 import { jsx } from "jsxProd";
@@ -31,7 +31,7 @@ function transitionGroupRenderItem(arg0, arg1, arg2, arg3) {
     obj[0] = arg1;
     obj[1] = arg2;
     obj[2] = arg3;
-    tmp5 = jsx(importDefault(15588), { item: null, state: null, cleanUp: null }, arg0);
+    tmp5 = jsx(importDefault(15582), { item: null, state: null, cleanUp: null }, arg0);
   }
   return tmp5;
 }
@@ -129,7 +129,7 @@ export const PortalKeyboardRenderer = function PortalKeyboardRenderer(portal) {
   } else {
     const obj1 = { value: true, children: null };
     obj1[1] = tmp11;
-    tmp10Result = tmp10(tmp5(9398).PortalKeyboardInModalContext.Provider, obj1);
+    tmp10Result = tmp10(tmp5(9394).PortalKeyboardInModalContext.Provider, obj1);
   }
   return tmp10Result;
 };

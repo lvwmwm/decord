@@ -1,10 +1,10 @@
-// Module ID: 10270
-// Function ID: 10271
+// Module ID: 10266
+// Function ID: 10267
 // Name: isInAppMessageSoundsEnabled
 // Dependencies: [595, 700, 3802, 2]
 // Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled
 
-// Module 10270 (isInAppMessageSoundsEnabled)
+// Module 10266 (isInAppMessageSoundsEnabled)
 import identity from "identity";
 
 const InAppMessageSoundsEnabled = "InAppMessageSoundsEnabled";

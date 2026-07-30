@@ -1,7 +1,7 @@
 // Module ID: 5031
 // Function ID: 5032
 // Name: NOOP
-// Dependencies: [32, 5032, 5048, 4635, 5091, 5092, 5096, 3819, 1376, 1936, 1882, 1372, 5099, 1932, 1942, 1935, 1862, 4407, 3817, 4276, 3826, 1931, 4006, 1874, 4234, 676, 5100, 1379, 3, 5101, 1411, 4177, 5102, 1856, 4028, 5103, 4856, 12, 1941, 1351, 5104, 3822, 4380, 1236, 11, 12629, 9661, 5658, 9993, 12632, 1355, 9621, 8048, 4640, 12633, 2]
+// Dependencies: [32, 5032, 5048, 4635, 5091, 5092, 5096, 3819, 1376, 1936, 1882, 1372, 5099, 1932, 1942, 1935, 1862, 4407, 3817, 4276, 3826, 1931, 4006, 1874, 4234, 676, 5100, 1379, 3, 5101, 1411, 4177, 5102, 1856, 4028, 5103, 4856, 12, 1941, 1351, 5104, 3822, 4380, 1236, 11, 12623, 9658, 5658, 9989, 12626, 1355, 9618, 8045, 4640, 12627, 2]
 // Exports: getBoosterMap, getGameProfileMatchTier
 
 // Module 5031 (NOOP)
@@ -1914,7 +1914,7 @@ areArraysShallowlyEqual = {
     const hasItem = features2.has(constants2.COMMUNITY);
     const obj4 = require(5658) /* useCanSeeOnboardingHome */;
     const tmp8 = constants2;
-    let result = require(9993) /* useGuildOnboardingAvailable */.isGuildOnboardingAvailable(guild);
+    let result = require(9989) /* useGuildOnboardingAvailable */.isGuildOnboardingAvailable(guild);
     if (result) {
       const features3 = guild.features;
       result = features3.has(tmp8.COMMUNITY);
@@ -2029,7 +2029,7 @@ areArraysShallowlyEqual = {
         continue;
       }
       const found = items1.filter((record) => "null" !== record.record.id);
-      let sorted = found.sort(importDefault(12632));
+      let sorted = found.sort(importDefault(12626));
       let tmp8 = null != limit;
       if (tmp8) {
         tmp8 = sorted.length > limit;
@@ -2224,8 +2224,8 @@ areArraysShallowlyEqual = {
       tmp3 = !obj.hasFetchedAllSounds();
     }
     if (tmp3) {
-      const result = _require(8048).maybeFetchSoundboardSounds();
-      const obj2 = _require(8048);
+      const result = _require(8045).maybeFetchSoundboardSounds();
+      const obj2 = _require(8045);
     }
     const FrecencyUserSettingsActionCreators = _require(1355).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
@@ -2248,7 +2248,7 @@ areArraysShallowlyEqual = {
       return arg0;
     }, []);
     let arr = Array.from(sounds.values());
-    return _require(12633).searchSounds(arg0, reduced, currentUser, channel);
+    return _require(12627).searchSounds(arg0, reduced, currentUser, channel);
   },
   matchSentinel(arg0, arg1, storeThread) {
     const isMatch = tmp7.test(arg1);

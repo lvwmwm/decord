@@ -1,10 +1,10 @@
-// Module ID: 13876
-// Function ID: 13877
+// Module ID: 13871
+// Function ID: 13872
 // Name: onClose
-// Dependencies: [5, 32, 19, 17, 11769, 21, 4395, 4189, 712, 5140, 11771, 11775, 3890, 1236, 9172, 11788, 5143, 5570, 2]
+// Dependencies: [5, 32, 19, 17, 11765, 21, 4395, 4189, 712, 5140, 11767, 11771, 3890, 1236, 9168, 11784, 5143, 5570, 2]
 // Exports: default
 
-// Module 13876 (onClose)
+// Module 13871 (onClose)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -70,7 +70,7 @@ function ContactSyncNameInputScreen() {
                 dependencyMap = 2;
                 c4 = 1;
                 let obj1 = { value: null, done: false };
-                obj1[0] = outer1_1(11775).updateName(callback);
+                obj1[0] = outer1_1(11771).updateName(callback);
                 return obj1;
               }
             } else {
@@ -80,7 +80,7 @@ function ContactSyncNameInputScreen() {
                 const obj2 = { key: "ERROR_GENERIC_TITLE", content: null, icon: null };
                 const intl = callback(1236).intl;
                 obj2[1] = intl.string(callback(1236).t.R0RpRX);
-                obj2[2] = outer1_1(9172);
+                obj2[2] = outer1_1(9168);
                 obj1.open(obj2);
                 callback(false);
                 c4 = 3;

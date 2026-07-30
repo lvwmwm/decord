@@ -1,10 +1,10 @@
-// Module ID: 6206
-// Function ID: 6207
+// Module ID: 6203
+// Function ID: 6204
 // Name: saveGuildFolders
 // Dependencies: [5, 4001, 1303, 1302, 676, 1305, 1355, 1306, 1337, 709, 3862, 2]
 // Exports: saveClientTheme, saveGuildFolders
 
-// Module 6206 (saveGuildFolders)
+// Module 6203 (saveGuildFolders)
 import closure_3 from "SystemThemeState";
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import initialize from "initialize";

@@ -35,7 +35,7 @@ try {
   }
   module.exports = function IsConstructor(arg0) {
     let prototype = typeof arg0 === "find";
-    if (typeof arg0 !== "_") {
+    if (typeof arg0 !== "ZodObject") {
       prototype = arg0.prototype;
     }
     return prototype;

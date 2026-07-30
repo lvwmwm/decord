@@ -1,10 +1,10 @@
-// Module ID: 9635
-// Function ID: 9636
+// Module ID: 9632
+// Function ID: 9633
 // Name: Sticker
-// Dependencies: [19, 17, 1302, 21, 4856, 4524, 1236, 7781, 9636, 5141, 4035, 5207, 5208, 2]
+// Dependencies: [19, 17, 1302, 21, 4856, 4524, 1236, 7778, 9633, 5141, 4035, 5207, 5208, 2]
 // Exports: default, getStickerAssetUrl
 
-// Module 9635 (Sticker)
+// Module 9632 (Sticker)
 import "noop";
 import { PixelRatio } from "get ActivityIndicator";
 import handleThemeChange from "handleThemeChange";
@@ -61,10 +61,10 @@ export default function Sticker(opaque) {
     obj2[2] = size;
     obj2[3] = size;
     obj2[4] = num;
-    const NativeLottieRenderMode = tmp(7781).NativeLottieRenderMode;
+    const NativeLottieRenderMode = tmp(7778).NativeLottieRenderMode;
     obj2[5] = animated ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
     obj2[6] = formatToPlainStringResult;
-    return jsx(importDefault(7781), { url: null, asset: null, width: null, height: null, opacity: null, renderMode: null, accessibilityLabel: null });
+    return jsx(importDefault(7778), { url: null, asset: null, width: null, height: null, opacity: null, renderMode: null, accessibilityLabel: null });
   } else {
     if (sticker.format_type === tmp(4856).StickerFormat.APNG) {
       if ("type" in sticker) {
@@ -83,7 +83,7 @@ export default function Sticker(opaque) {
       const obj5 = {};
       const tmpResult3 = tmp(4524);
       const merged = Object.assign(obj3);
-      return jsx(importDefault(9636), {});
+      return jsx(importDefault(9633), {});
     }
     const obj6 = { resizeMode: "contain", style: null, placeholder: null, source: null, accessible: true, accessibilityLabel: null };
     const obj7 = { height: null, width: null, opacity: null };

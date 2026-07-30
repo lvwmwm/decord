@@ -1,9 +1,9 @@
-// Module ID: 6164
-// Function ID: 6165
+// Module ID: 6161
+// Function ID: 6162
 // Name: getAutocompleterBoosterMap
-// Dependencies: [6165, 6166, 1932, 3826, 1874, 5100, 5031, 6167, 1355, 5104, 6169, 1856, 4173, 4178, 3888, 1467, 12, 5103, 2]
+// Dependencies: [6162, 6163, 1932, 3826, 1874, 5100, 5031, 6164, 1355, 5104, 6166, 1856, 4173, 4178, 3888, 1467, 12, 5103, 2]
 
-// Module 6164 (getAutocompleterBoosterMap)
+// Module 6161 (getAutocompleterBoosterMap)
 import handleUserUpdate from "handleUserUpdate";
 import fromPath from "fromPath";
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator";
@@ -123,8 +123,8 @@ const prototype = Autocompleter.prototype;
 prototype["createSearchContext"] = function createSearchContext() {
   const self = this;
   if (null == this.userSearchContext) {
-    self.userSearchContext = importDefault(6167).getUserSearchContext(self.parseUserResults, self._limit);
-    const obj = importDefault(6167);
+    self.userSearchContext = importDefault(6164).getUserSearchContext(self.parseUserResults, self._limit);
+    const obj = importDefault(6164);
   }
 };
 prototype["setLimit"] = function setLimit(_limit) {
@@ -165,11 +165,11 @@ prototype["setLimit"] = function setLimit(_limit) {
 prototype["setRefetchForSingleCategoryLimit"] = function setRefetchForSingleCategoryLimit(_refetchForSingleCategoryLimit) {
   this._refetchForSingleCategoryLimit = _refetchForSingleCategoryLimit;
 };
-prototype["setResultTypes"] = function setResultTypes(resultTypes) {
+prototype["setResultTypes"] = function setResultTypes(items1) {
   let set = null;
-  if (null != resultTypes) {
+  if (null != items1) {
     const _Set = Set;
-    set = new Set(resultTypes);
+    set = new Set(items1);
   }
   const self = this;
   this.resultTypes = set;
@@ -559,7 +559,7 @@ prototype["queryApplications"] = function queryApplications(arg0, arg1) {
 };
 prototype["queryGameProfiles"] = function queryGameProfiles(query, _limit) {
   if (this._include(AutocompleterResultTypes.GAME_PROFILE)) {
-    let result = _require(6169).queryGamesAutocomplete(query);
+    let result = _require(6166).queryGamesAutocomplete(query);
     if (result == null) {
       result = [];
     }

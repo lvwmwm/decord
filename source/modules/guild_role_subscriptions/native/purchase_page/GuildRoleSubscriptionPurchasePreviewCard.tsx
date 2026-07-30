@@ -1,10 +1,10 @@
-// Module ID: 15415
-// Function ID: 15416
+// Module ID: 15409
+// Function ID: 15410
 // Name: ContentHeader
-// Dependencies: [32, 19, 17, 1372, 21, 4189, 712, 4185, 4157, 15416, 1959, 9429, 14257, 1297, 589, 4380, 1236, 4650, 14244, 15411, 5141, 15417, 2]
+// Dependencies: [32, 19, 17, 1372, 21, 4189, 712, 4185, 4157, 15410, 1959, 9425, 14253, 1297, 589, 4380, 1236, 4650, 14240, 15405, 5141, 15411, 2]
 // Exports: default
 
-// Module 15415 (ContentHeader)
+// Module 15409 (ContentHeader)
 import _slicedToArray from "_slicedToArray";
 import "TruncatedText";
 import get_ActivityIndicator from "getChannelIcon";
@@ -53,7 +53,7 @@ function EmojiGallery(arg0) {
     tmp3Result = tmp3(tmp4, obj, "andMore");
   }
   items[tmp7] = tmp3Result;
-  obj[1] = closure_8(require(9429) /* GappedList */.GappedList, { gap: 18, children: items });
+  obj[1] = closure_8(require(9425) /* GappedList */.GappedList, { gap: 18, children: items });
   return closure_8(closure_6, obj);
 }
 function BenefitShowCase(arg0) {
@@ -61,7 +61,7 @@ function BenefitShowCase(arg0) {
   let title;
   ({ title, description } = arg0);
   let tmp3 = title;
-  if (typeof title !== "init") {
+  if (typeof title !== "tee") {
     let obj = { variant: "text-md/semibold", color: "text-default", children: null };
     obj[2] = title;
     tmp3 = callback2(require(4185) /* Text */.Text, obj);
@@ -143,16 +143,16 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   listingId = listingId.listingId;
   const guildId = listingId.guildId;
   const tmp = createCacheKey();
-  let obj = importAll(14244);
+  let obj = importAll(14240);
   let str = callback(obj.useImage(listingId), 1)[0];
-  let obj1 = importAll(14244);
-  let obj2 = importAll(14244);
+  let obj1 = importAll(14240);
+  let obj2 = importAll(14240);
   const first = callback(obj2.useTierEmojiIds(listingId, guildId), 1)[0];
-  let obj3 = importAll(14244);
+  let obj3 = importAll(14240);
   const first1 = callback(obj3.useChannelBenefits(listingId), 1)[0];
-  let obj4 = importAll(14244);
+  let obj4 = importAll(14240);
   const first2 = callback(obj4.useIntangibleBenefits(listingId), 1)[0];
-  let obj5 = listingId(15411);
+  let obj5 = listingId(15405);
   const first3 = first1[0];
   const first4 = first2[0];
   const size = first.size;
@@ -169,7 +169,7 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   obj2[0] = items1;
   items[2] = closure_9(closure_6, obj2);
   obj[1] = items;
-  const items2 = [closure_9(closure_6, obj), closure_8(listingId(1297).Spacer, { size: 16 }), closure_8(guildId(15417), { listingId }), ];
+  const items2 = [closure_9(closure_6, obj), closure_8(listingId(1297).Spacer, { size: 16 }), closure_8(guildId(15411), { listingId }), ];
   let tmp8Result2 = length > 0 || size > 0 || length2 > 0;
   if (tmp8Result2) {
     const items3 = [tmp10(tmp4(1297).Spacer, { size: 24 }), , ];
@@ -236,7 +236,7 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
     const obj16 = { children: null };
     items6[2] = tmp8Result1;
     obj4[1] = items6;
-    obj3[1] = tmp8(tmp4(9429).GappedList, obj4);
+    obj3[1] = tmp8(tmp4(9425).GappedList, obj4);
     items3[1] = tmp10(tmp9, obj3);
     const obj17 = { onPress: null };
     obj17[0] = function onPress() {

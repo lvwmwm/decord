@@ -1,10 +1,10 @@
-// Module ID: 16011
-// Function ID: 16012
+// Module ID: 16005
+// Function ID: 16006
 // Name: VoicePanelMaxCapacityAlert
-// Dependencies: [19, 1372, 21, 647, 4533, 4533, 16009, 1236, 2]
+// Dependencies: [19, 1372, 21, 647, 4533, 4533, 16003, 1236, 2]
 // Exports: default
 
-// Module 16011 (VoicePanelMaxCapacityAlert)
+// Module 16005 (VoicePanelMaxCapacityAlert)
 import "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { jsx } from "jsxProd";
@@ -30,7 +30,7 @@ export default function VoicePanelMaxCapacityAlert(channelId) {
   }, items1);
   const obj2 = channelId(4533);
   obj = { header: null, title: null, content: null, actions: null };
-  obj[0] = jsx(importDefault(16009), {});
+  obj[0] = jsx(importDefault(16003), {});
   const intl = channelId(1236).intl;
   obj[1] = intl.string(channelId(1236).t.hHbsQj);
   const intl2 = channelId(1236).intl;

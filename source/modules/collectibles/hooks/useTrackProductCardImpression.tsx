@@ -1,10 +1,10 @@
-// Module ID: 11916
-// Function ID: 11917
+// Module ID: 11912
+// Function ID: 11913
 // Name: useTrackProductCardImpression
-// Dependencies: [19, 5798, 676, 8663, 589, 8664, 3835, 5810, 698, 2]
+// Dependencies: [19, 5798, 676, 8660, 589, 8661, 3835, 5810, 698, 2]
 // Exports: useTrackProductCardImpression
 
-// Module 11916 (useTrackProductCardImpression)
+// Module 11912 (useTrackProductCardImpression)
 import noop from "noop";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import { AnalyticEvents } from "ME";
@@ -12,11 +12,11 @@ import { AnalyticEvents } from "ME";
 const require = arg1;
 const result = require("ME").fileFinishedImporting("modules/collectibles/hooks/useTrackProductCardImpression.tsx");
 
-export const useTrackProductCardImpression = function useTrackProductCardImpression(categoryStoreListingId, mobile_home, hero_block) {
+export const useTrackProductCardImpression = function useTrackProductCardImpression(categoryStoreListingId, mobile_home, featured_block) {
   const _require = categoryStoreListingId;
   const importDefault = mobile_home;
-  let str = hero_block;
-  if (hero_block === undefined) {
+  let str = featured_block;
+  if (featured_block === undefined) {
     str = "product";
   }
   let collectiblesAnalyticsContext;

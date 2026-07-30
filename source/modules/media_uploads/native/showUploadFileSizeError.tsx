@@ -1,10 +1,10 @@
-// Module ID: 6188
-// Function ID: 6189
+// Module ID: 6185
+// Function ID: 6186
 // Name: showUploadFileSizeError
-// Dependencies: [1304, 1874, 676, 4182, 1876, 1897, 6154, 4768, 4384, 6189, 6190, 4723, 4731, 6191, 691, 5535, 1236, 4084, 4528, 2]
+// Dependencies: [1304, 1874, 676, 4182, 1876, 1897, 6152, 4768, 4384, 6186, 6187, 4723, 4731, 6188, 691, 5535, 1236, 4084, 4528, 2]
 // Exports: default
 
-// Module 6188 (showUploadFileSizeError)
+// Module 6185 (showUploadFileSizeError)
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -37,7 +37,7 @@ export default function showUploadFileSizeError(arg0) {
   let obj = items(1897);
   const isPremiumExactlyResult = obj.isPremiumExactly(currentUser, TIER_2.TIER_2);
   if (null != file.items) {
-    let tmp2Result = tmp2(6154);
+    let tmp2Result = tmp2(6152);
     let attachmentMimeTypes = tmp2Result.getAttachmentMimeTypes(file.items);
   } else {
     attachmentMimeTypes = [];
@@ -61,8 +61,8 @@ export default function showUploadFileSizeError(arg0) {
   const tmp4 = TIER_2;
   const tmp8 = constants;
   obj = { guildId, channelId: null, userIndividualFileSizeLimit: null, numAttachments: null, preCompressionFileSizes: null, preCompressionAggregateSize: null, postCompressionFileSizes: null, postCompressionAggregateSize: null, attachmentMimeTypes: null, errorType: null, kestrelVariant: null };
-  const tmp2Result2 = items(6189);
-  obj[1] = items(6190).getUploaderChannelId(file);
+  const tmp2Result2 = items(6186);
+  obj[1] = items(6187).getUploaderChannelId(file);
   obj[2] = baseMaxSize;
   obj[3] = file.attachmentsCount;
   obj[4] = items1;
@@ -75,7 +75,7 @@ export default function showUploadFileSizeError(arg0) {
     ERROR_SOURCE_UNKNOWN = FileUploadErrorTypes.ERROR_SOURCE_UNKNOWN;
   }
   obj[9] = ERROR_SOURCE_UNKNOWN;
-  const tmp2Result3 = items(6190);
+  const tmp2Result3 = items(6187);
   obj[10] = items(4768).getKestrelVariantName(kestrelConfig);
   tmp2Result1.trackWithMetadata(constants.FILE_SIZE_LIMIT_EXCEEDED, tmp2Result2.buildFileSizeLimitEventProperties(obj));
   let num = 0;
@@ -163,6 +163,6 @@ export default function showUploadFileSizeError(arg0) {
     obj6[0] = constants3.UPLOAD_ERROR_UPSELL;
     obj4[3] = obj6;
     obj4[4] = num;
-    const result = items1(6191).handleShowUpsellAlert(obj4);
+    const result = items1(6188).handleShowUpsellAlert(obj4);
   }
 };

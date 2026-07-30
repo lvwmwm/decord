@@ -1,10 +1,10 @@
-// Module ID: 8279
-// Function ID: 8280
+// Module ID: 8276
+// Function ID: 8277
 // Name: _isDefaultChannelThresholdMetAfterDelete
 // Dependencies: [5, 1862, 5115, 5116, 676, 5114, 5122, 506, 4528, 1236, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
-// Module 8279 (_isDefaultChannelThresholdMetAfterDelete)
+// Module 8276 (_isDefaultChannelThresholdMetAfterDelete)
 import fetchOnboardingPrompts from "fetchOnboardingPrompts";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleUpdate from "handleUpdate";

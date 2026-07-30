@@ -1,9 +1,9 @@
-// Module ID: 7719
-// Function ID: 7720
+// Module ID: 7716
+// Function ID: 7717
 // Name: handleMessageSendFailedAutomod
-// Dependencies: [1372, 4407, 676, 6145, 6178, 4409, 5764, 11, 589, 709, 2]
+// Dependencies: [1372, 4407, 676, 6143, 6175, 4409, 5764, 11, 589, 709, 2]
 
-// Module 7719 (handleMessageSendFailedAutomod)
+// Module 7716 (handleMessageSendFailedAutomod)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reinjectEphemerals from "reinjectEphemerals";
 import ME from "ME";
@@ -15,13 +15,13 @@ let error;
 const require = arg1;
 function handleMessageSendFailedAutomod(messageData) {
   messageData = messageData.messageData;
-  let obj = require(6145) /* items */;
+  let obj = require(6143) /* items */;
   const failedMessageId = obj.getFailedMessageId(messageData);
   obj = { id: failedMessageId, isBlockedEdit: null, messageData: null, errorMessage: null };
-  obj[1] = require(6145) /* items */.isMessageDataEdit(messageData);
+  obj[1] = require(6143) /* items */.isMessageDataEdit(messageData);
   obj[2] = messageData;
-  const obj3 = require(6145) /* items */;
-  obj[3] = require(6178) /* getAutomodErrorMessageFromErrorResponse */.getAutomodErrorMessage(messageData, messageData.errorResponseBody);
+  const obj3 = require(6143) /* items */;
+  obj[3] = require(6175) /* getAutomodErrorMessageFromErrorResponse */.getAutomodErrorMessage(messageData, messageData.errorResponseBody);
   closure_8[failedMessageId] = obj;
   closure_9 = closure_9 + 1;
   return true;

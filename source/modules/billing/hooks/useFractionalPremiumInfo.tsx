@@ -1,10 +1,10 @@
-// Module ID: 5848
-// Function ID: 5849
+// Module ID: 5846
+// Function ID: 5847
 // Name: calculateFractionalPremiumInfo
-// Dependencies: [32, 19, 1874, 3841, 5849, 676, 1876, 3771, 38, 3850, 3835, 589, 4616, 5850, 12, 2]
+// Dependencies: [32, 19, 1874, 3841, 5847, 676, 1876, 3771, 38, 3850, 3835, 589, 4616, 5848, 12, 2]
 // Exports: default
 
-// Module 5848 (calculateFractionalPremiumInfo)
+// Module 5846 (calculateFractionalPremiumInfo)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";

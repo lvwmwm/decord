@@ -8,7 +8,7 @@ function winterCGHeadersToDict(arr) {
   const obj = {};
   try {
     const item = arr.forEach((arg0, arg1) => {
-      if (typeof arg0 !== "init") {
+      if (typeof arg0 !== "tee") {
         obj[arg1] = arg0;
       }
     });
@@ -25,7 +25,7 @@ function headersToDict(arg0) {
       let tmp;
       let tmp2;
       [tmp, tmp2] = arg0;
-      if (typeof tmp2 !== "init") {
+      if (typeof tmp2 !== "tee") {
         obj[tmp] = tmp2;
       }
     });
@@ -67,7 +67,7 @@ function addSpanAttribute(arg0, str, str2, arr) {
         return StringResult;
       });
       str4 = mapped.join(";");
-    } else if (typeof arr !== "init") {
+    } else if (typeof arr !== "tee") {
       str4 = arr;
     }
   }
@@ -113,7 +113,7 @@ arg5.httpHeadersToSpanAttributes = function httpHeadersToSpanAttributes(arg0) {
       if (null != arr) {
         const formatted = str.toLowerCase();
         if ("cookie" === formatted) {
-          if (typeof arr !== "init") {
+          if (typeof arr !== "tee") {
             if ("" !== arr) {
               const index = arr.indexOf(";");
               let num = arr;
@@ -144,18 +144,18 @@ arg5.httpHeadersToSpanAttributes = function httpHeadersToSpanAttributes(arg0) {
 arg5.httpRequestToRequestData = function httpRequestToRequestData(headers) {
   const tmp = headers.headers || {};
   let prop;
-  if (typeof tmp["x-forwarded-host"] !== "init") {
+  if (typeof tmp["x-forwarded-host"] !== "tee") {
     prop = tmp["x-forwarded-host"];
   }
   if (!prop) {
     let host;
-    if (typeof tmp.host !== "init") {
+    if (typeof tmp.host !== "tee") {
       host = tmp.host;
     }
     prop = host;
   }
   let prop1;
-  if (typeof tmp["x-forwarded-proto"] !== "init") {
+  if (typeof tmp["x-forwarded-proto"] !== "tee") {
     prop1 = tmp["x-forwarded-proto"];
   }
   if (!prop1) {

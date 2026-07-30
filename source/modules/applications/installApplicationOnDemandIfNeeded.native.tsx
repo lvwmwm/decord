@@ -1,10 +1,10 @@
-// Module ID: 11205
-// Function ID: 11206
+// Module ID: 11201
+// Function ID: 11202
 // Name: _installApplicationOnDemandIfNeeded
-// Dependencies: [5, 4212, 4226, 676, 8030, 5516, 8028, 4384, 4048, 11000, 2]
+// Dependencies: [5, 4212, 4226, 676, 8027, 5516, 8025, 4384, 4048, 10996, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 11205 (_installApplicationOnDemandIfNeeded)
+// Module 11201 (_installApplicationOnDemandIfNeeded)
 import fetchApplication from "fetchApplication";
 import createExecutable from "createExecutable";
 import addApplication from "addApplication";
@@ -61,7 +61,7 @@ function _installApplicationOnDemandIfNeeded() {
               let scopes;
               c3 = 1;
               application = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp5) {
@@ -94,7 +94,7 @@ function _installApplicationOnDemandIfNeeded() {
                   obj4[0] = Promise.resolve({ isAuthorized: true });
                   return obj4;
                 }
-                obj11 = callback(8030);
+                obj11 = callback(8027);
               }
             } else if (arg0 === 1) {
               application = 3;
@@ -108,7 +108,7 @@ function _installApplicationOnDemandIfNeeded() {
               obj = arg1;
               application = c3.createFromServer(obj);
             }
-            USER_INSTALL = callback(8028).ApplicationIntegrationType.USER_INSTALL;
+            USER_INSTALL = callback(8025).ApplicationIntegrationType.USER_INSTALL;
             scopes = undefined;
             if (application != null) {
               const integrationTypesConfig = application.integrationTypesConfig;

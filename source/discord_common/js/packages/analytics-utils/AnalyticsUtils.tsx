@@ -54,7 +54,7 @@ export const trackMaker = (arg0) => {
       obj = {};
     }
     let obj3 = tmp;
-    if (typeof table[arg0] !== "_") {
+    if (typeof table[arg0] !== "ZodObject") {
       let tmpResult = tmp(obj);
       if (tmpResult == null) {
         tmpResult = null;
@@ -74,7 +74,7 @@ export const trackMaker = (arg0) => {
         if (tmp13) {
           return Promise.resolve();
         } else {
-          if (typeof obj3.throttlePercent !== "os") {
+          if (typeof obj3.throttlePercent !== "reType") {
             const _Math2 = Math;
             if (Math.random() > obj3.throttlePercent) {
               return Promise.resolve();

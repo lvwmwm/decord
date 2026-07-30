@@ -1,10 +1,10 @@
-// Module ID: 5874
-// Function ID: 5875
+// Module ID: 5872
+// Function ID: 5873
 // Name: handlePermissionsChange
-// Dependencies: [4103, 5875, 1372, 1862, 3817, 1931, 4006, 1874, 676, 1379, 505, 5786, 1231, 11, 4426, 589, 709, 2]
+// Dependencies: [4103, 5873, 1372, 1862, 3817, 1931, 4006, 1874, 676, 1379, 505, 5786, 1231, 11, 4426, 589, 709, 2]
 // Exports: isViewChannelSidebar
 
-// Module 5874 (handlePermissionsChange)
+// Module 5872 (handlePermissionsChange)
 import getHash from "getHash";
 import handleReaction from "handleReaction";
 import ensureGuildLoaded from "ensureGuildLoaded";

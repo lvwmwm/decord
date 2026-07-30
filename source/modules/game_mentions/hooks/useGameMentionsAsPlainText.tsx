@@ -1,10 +1,10 @@
-// Module ID: 9066
-// Function ID: 9067
+// Module ID: 9062
+// Function ID: 9063
 // Name: useGameMentionsAsPlainText
-// Dependencies: [19, 4210, 1874, 4624, 5906, 589, 1856, 8487, 1236, 2]
+// Dependencies: [19, 4210, 1874, 4624, 5904, 589, 1856, 8484, 1236, 2]
 // Exports: useGameMentionsAsPlainText
 
-// Module 9066 (useGameMentionsAsPlainText)
+// Module 9062 (useGameMentionsAsPlainText)
 import noop from "noop";
 import map from "map";
 import mergeGuildAvatar from "mergeGuildAvatar";

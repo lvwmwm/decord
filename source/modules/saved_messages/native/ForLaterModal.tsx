@@ -1,10 +1,10 @@
-// Module ID: 9937
-// Function ID: 9938
+// Module ID: 9933
+// Function ID: 9934
 // Name: ForLaterModal
-// Dependencies: [19, 17, 21, 4189, 712, 1236, 9554, 5150, 9118, 500, 5143, 4395, 9938, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1236, 9550, 5150, 9114, 500, 5143, 4395, 9934, 2]
 // Exports: default
 
-// Module 9937 (ForLaterModal)
+// Module 9933 (ForLaterModal)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ export default function ForLaterModal(type) {
   let _require;
   const tmp = createCacheKey();
   const intl = _require(1236).intl;
-  if (type === _require(9554).SavedMessageSortTypes.REMINDER) {
+  if (type === _require(9550).SavedMessageSortTypes.REMINDER) {
   } else {
   }
   const stringResult = intl.string(_2pAkDA);
@@ -55,7 +55,7 @@ export default function ForLaterModal(type) {
   const items = [closure_4(View, obj), ];
   const obj1 = { type, onClose: null };
   obj1[1] = importDefault(4395).pop;
-  items[1] = closure_4(importDefault(9938), obj1, type);
+  items[1] = closure_4(importDefault(9934), obj1, type);
   obj[1] = items;
   return closure_5(View, obj);
 };

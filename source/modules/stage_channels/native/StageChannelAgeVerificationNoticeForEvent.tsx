@@ -1,10 +1,10 @@
-// Module ID: 8303
-// Function ID: 8304
+// Module ID: 8300
+// Function ID: 8301
 // Name: StageChannelAgeVerificationNoticeContent
-// Dependencies: [19, 17, 676, 21, 4189, 712, 4405, 1236, 4185, 3880, 1945, 6747, 6749, 4145, 7629, 1297, 5012, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 712, 4405, 1236, 4185, 3880, 1945, 6744, 6746, 4145, 7626, 1297, 5012, 2]
 // Exports: default
 
-// Module 8303 (StageChannelAgeVerificationNoticeContent)
+// Module 8300 (StageChannelAgeVerificationNoticeContent)
 import "noop";
 import { View } from "set";
 import { HelpdeskArticles } from "ME";
@@ -77,7 +77,7 @@ function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
     if (isVerifiedTeen) {
       let WarningIcon = Text(4145).CircleInformationIcon;
     } else {
-      WarningIcon = Text(7629).WarningIcon;
+      WarningIcon = Text(7626).WarningIcon;
     }
     obj = { size: "refresh_sm", color: null, style: null };
     obj[1] = importDefault(712).colors.TEXT_DEFAULT;

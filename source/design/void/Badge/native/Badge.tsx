@@ -1,10 +1,10 @@
-// Module ID: 13222
-// Function ID: 13223
+// Module ID: 13217
+// Function ID: 13218
 // Name: Badge
-// Dependencies: [19, 17, 1946, 676, 1299, 21, 4189, 712, 500, 589, 7669, 1851, 2]
+// Dependencies: [19, 17, 1946, 676, 1299, 21, 4189, 712, 500, 589, 7666, 1851, 2]
 // Exports: MaskedBadge
 
-// Module 13222 (Badge)
+// Module 13217 (Badge)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import _getSystemLocale from "_getSystemLocale";
@@ -104,7 +104,7 @@ class Badge {
         items3[0] = items2.badgeText;
         items3[1] = textStyle;
         obj2[0] = items3;
-        tmp10 = require("module_7669");
+        tmp10 = require("module_7666");
         tmpResult = require("shortenAndLocalizeNumber");
         tmp11 = globalThis;
         _Math = Math;

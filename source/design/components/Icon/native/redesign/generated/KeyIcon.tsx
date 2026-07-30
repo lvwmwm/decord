@@ -1,10 +1,10 @@
-// Module ID: 9206
-// Function ID: 9207
+// Module ID: 9202
+// Function ID: 9203
 // Name: KeyIcon
-// Dependencies: [19, 21, 712, 3892, 9207, 2]
+// Dependencies: [19, 21, 712, 3892, 9203, 2]
 // Exports: KeyIcon
 
-// Module 9206 (KeyIcon)
+// Module 9202 (KeyIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const KeyIcon = function KeyIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9207) /* registerAsset */;
+  obj[0] = require(9203) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

@@ -40,7 +40,7 @@ export const _updatePropsJS = (arg0, getAnimatableRef) => {
     const items = [{}, {}];
     first = first(keys.reduce((arg0, arg1) => {
       let num = 0;
-      if (typeof table[arg1] !== "_") {
+      if (typeof table[arg1] !== "ZodObject") {
         num = 1;
       }
       arg0[num][arg1] = table[arg1];

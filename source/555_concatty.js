@@ -14,7 +14,7 @@ export default function bind(self, c165, cache, serializer, bindResult, closure_
   self = this;
   const toString = self;
   self = this;
-  if (typeof this !== "_") {
+  if (typeof this !== "ZodObject") {
     if ("[object Function]" === toString.apply(self)) {
       let items = [];
       let num2 = 0;

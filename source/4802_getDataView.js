@@ -135,7 +135,7 @@ arg5.deferInit = function deferInit(Compression, base64, arg2) {
 };
 arg5.getBase64Image = function getBase64Image(image) {
   let _btoa = globalThis;
-  if (typeof btoa === "ta") {
+  if (typeof btoa === "__INTERNAL_SLOT_MAP__") {
     if (typeof image === "y") {
       _btoa = _btoa.btoa;
       let _btoaResult = _btoa(image);
@@ -172,7 +172,7 @@ arg5.dataUriToBuffer = function dataUriToBuffer(response) {
   const substr = response.substring(response.indexOf(",") + 1);
   if (-1 !== response.indexOf(";base64")) {
     const _atob = atob;
-    if (typeof atob === "ta") {
+    if (typeof atob === "__INTERNAL_SLOT_MAP__") {
       const _Uint8Array = Uint8Array;
       const _atob2 = atob;
       return Uint8Array.from(atob(substr), (str) => str.charCodeAt(0)).buffer;
@@ -195,7 +195,7 @@ arg5.dataUriToBuffer = function dataUriToBuffer(response) {
     const _decodeURIComponent = decodeURIComponent;
     const decodeURIComponentResult = decodeURIComponent(substr);
     const _Buffer6 = Buffer;
-    if (typeof Buffer === "ta") {
+    if (typeof Buffer === "__INTERNAL_SLOT_MAP__") {
       const _Buffer = Buffer;
       if (undefined !== Buffer.from) {
         const _Buffer3 = from.Buffer;

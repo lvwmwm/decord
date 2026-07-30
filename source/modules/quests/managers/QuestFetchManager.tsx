@@ -1,9 +1,9 @@
-// Module ID: 16653
-// Function ID: 16654
+// Module ID: 16647
+// Function ID: 16648
 // Name: _fetch
-// Dependencies: [5985, 687, 5134, 10493, 1208, 9469, 500, 9477, 6000, 5036, 16654, 2]
+// Dependencies: [5983, 687, 5134, 10489, 1208, 9465, 500, 9473, 5998, 5036, 16648, 2]
 
-// Module 16653 (_fetch)
+// Module 16647 (_fetch)
 import initializeState from "initializeState";
 import "initialize";
 
@@ -106,7 +106,7 @@ class QuestFetchManager extends tmp2 {
   }
 }
 QuestFetchManager.prototype["_fetch"] = function _fetch(arg0) {
-  let obj = require(10493) /* getIsEligibleForQuests */;
+  let obj = require(10489) /* getIsEligibleForQuests */;
   let isEligibleForQuests = obj.getIsEligibleForQuests();
   if (isEligibleForQuests) {
     isEligibleForQuests = !initializeState.isFetchingCurrentQuests;
@@ -122,21 +122,21 @@ QuestFetchManager.prototype["_fetch"] = function _fetch(arg0) {
     obj[4] = initializeState.isFetchingCurrentQuests;
     obj[2] = obj;
     importDefault(1208).addBreadcrumb(obj);
-    let tmpResult = tmp(9469);
+    let tmpResult = tmp(9465);
     const currentQuests = tmpResult.fetchCurrentQuests();
     tmpResult = tmp(500);
     let enableNewRequestBehavior = tmpResult.isMac();
     if (enableNewRequestBehavior) {
-      let tmp6Result = tmp6(9477);
+      let tmp6Result = tmp6(9473);
       enableNewRequestBehavior = "focused" !== tmp6Result.getState();
     }
     if (!enableNewRequestBehavior) {
-      tmp6Result = tmp6(6000);
+      tmp6Result = tmp6(5998);
       enableNewRequestBehavior = tmp6Result.getConfig({ location: "QuestFetchManager" }).enableNewRequestBehavior;
     }
     if (!enableNewRequestBehavior) {
-      const questToDeliver = tmp(9469).fetchQuestToDeliver(tmp(5036).AdPlacement.MOBILE_HOME_DOCK_AREA, arg0);
-      const tmpResult1 = tmp(9469);
+      const questToDeliver = tmp(9465).fetchQuestToDeliver(tmp(5036).AdPlacement.MOBILE_HOME_DOCK_AREA, arg0);
+      const tmpResult1 = tmp(9465);
     }
     const obj2 = importDefault(1208);
   }

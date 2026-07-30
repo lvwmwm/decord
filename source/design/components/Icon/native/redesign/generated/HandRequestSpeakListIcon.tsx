@@ -1,10 +1,10 @@
-// Module ID: 10726
-// Function ID: 10727
+// Module ID: 10722
+// Function ID: 10723
 // Name: HandRequestSpeakListIcon
-// Dependencies: [19, 21, 712, 3892, 10727, 2]
+// Dependencies: [19, 21, 712, 3892, 10723, 2]
 // Exports: HandRequestSpeakListIcon
 
-// Module 10726 (HandRequestSpeakListIcon)
+// Module 10722 (HandRequestSpeakListIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const HandRequestSpeakListIcon = function HandRequestSpeakListIcon(color)
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10727) /* registerAsset */;
+  obj[0] = require(10723) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

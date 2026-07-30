@@ -1,10 +1,10 @@
-// Module ID: 6008
-// Function ID: 6009
+// Module ID: 6006
+// Function ID: 6007
 // Name: getApplicationIdsByTaskTypes
-// Dependencies: [5985, 5040, 12, 687, 5983, 1351, 2]
+// Dependencies: [5983, 5040, 12, 687, 5981, 1351, 2]
 // Exports: formatWatchTaskRemainingTime, formatWatchTaskTime, getActivityApplicationId, getAllApplicationIds, getConsoleApplicationId, getDefaultInGameTask, getDefaultWatchVideoTask, getDesktopApplicationIds, getInGameApplicationId, getPlayActivityApplicationId, getQuestTaskDetails, getQuestTaskTypes, getRemainingTaskTime, getStreamingApplicationId, getThirdPartyTaskDetails, hasAchievementActivityTask, hasAchievementInGameTask, hasActivityTasks, hasPlayActivityTask, hasPlayOnDesktopTask, hasSomeFirstPartyTasks, hasStandaloneGameplayTasks, hasStreamOnDesktopTask, isConsoleQuest, isDesktopOnlyPlayQuest, isInGameQuest, isVideoQuestForMobilePlatformOnly, parseMinutesAndSecondsFromSeconds, shouldUsePlayOnDesktopTask
 
-// Module 6008 (getApplicationIdsByTaskTypes)
+// Module 6006 (getApplicationIdsByTaskTypes)
 import initializeState from "initializeState";
 
 let items5 = arg1;
@@ -149,7 +149,7 @@ function _getTaskDetailsForType(arg0) {
     }
     obj[2] = Array.from(includeTaskTypes);
     obj[1] = obj;
-    const result = quest(5983).captureQuestsException(error, obj);
+    const result = quest(5981).captureQuestsException(error, obj);
     return null;
   } else {
     ({ target: target2, target } = floorResult);

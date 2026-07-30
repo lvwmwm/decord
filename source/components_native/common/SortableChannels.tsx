@@ -1,9 +1,9 @@
-// Module ID: 16439
-// Function ID: 16440
+// Module ID: 16433
+// Function ID: 16434
 // Name: render
 // Dependencies: [19, 17, 21, 12, 1474, 2]
 
-// Module 16439 (render)
+// Module 16433 (render)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -508,7 +508,7 @@ class SortableChannels extends Component3 {
               id = tmp2.data.channel.id;
             }
           }
-          if (typeof id !== "init") {
+          if (typeof id !== "tee") {
             let tmp22 = obj;
             obj = { y: null, height: null };
             obj[0] = num;

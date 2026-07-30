@@ -1,10 +1,10 @@
-// Module ID: 10895
-// Function ID: 10896
+// Module ID: 10891
+// Function ID: 10892
 // Name: isSocialLayerApplication
-// Dependencies: [676, 5692, 8950, 2]
+// Dependencies: [676, 5692, 8946, 2]
 // Exports: default, isSocialLayerSDKAuthorization
 
-// Module 10895 (isSocialLayerApplication)
+// Module 10891 (isSocialLayerApplication)
 import { ApplicationFlags } from "ME";
 
 const result = require("items").fileFinishedImporting("modules/applications/isSocialLayerApplication.tsx");

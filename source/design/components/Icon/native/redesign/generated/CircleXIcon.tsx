@@ -1,10 +1,10 @@
-// Module ID: 6736
-// Function ID: 6737
+// Module ID: 6733
+// Function ID: 6734
 // Name: CircleXIcon
-// Dependencies: [19, 17, 21, 712, 3892, 6737, 6738, 2]
+// Dependencies: [19, 17, 21, 712, 3892, 6734, 6735, 2]
 // Exports: CircleXIcon
 
-// Module 6736 (CircleXIcon)
+// Module 6733 (CircleXIcon)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,13 +29,13 @@ export const CircleXIcon = function CircleXIcon(color) {
   const merged = Object.assign(color, Object.create(null));
   let obj = { children: null };
   obj = { source: null, color: null, style: null };
-  obj[0] = require(6737) /* registerAsset */;
+  obj[0] = require(6734) /* registerAsset */;
   obj[1] = secondaryColor;
   obj[2] = style;
   const merged1 = Object.assign(merged);
   const items = [callback(require(3892) /* BaseIconImage */.BaseIconImage, obj), ];
   obj = { source: null, color: null, style: null };
-  obj[0] = require(6738) /* registerAsset */;
+  obj[0] = require(6735) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   const items1 = [style];
   const items2 = [];

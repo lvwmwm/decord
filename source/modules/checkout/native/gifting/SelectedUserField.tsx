@@ -1,10 +1,10 @@
-// Module ID: 8810
-// Function ID: 8811
+// Module ID: 8806
+// Function ID: 8807
 // Name: SelectedUserField
-// Dependencies: [19, 17, 21, 4189, 712, 6740, 1236, 4028, 8294, 1297, 4185, 6736, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 6737, 1236, 4028, 8291, 1297, 4185, 6733, 2]
 // Exports: default
 
-// Module 8810 (SelectedUserField)
+// Module 8806 (SelectedUserField)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -62,11 +62,11 @@ export default function SelectedUserField(onPress) {
     const stringResult1 = intl.string(tmp4(1236).t.xFn72s);
   }
   obj[3] = combined;
-  const items1 = [closure_5(require(8294) /* MagnifyingGlassIcon */.MagnifyingGlassIcon, { style: tmp.searchIcon, size: "xs", color: "interactive-text-default" }), ];
+  const items1 = [closure_5(require(8291) /* MagnifyingGlassIcon */.MagnifyingGlassIcon, { style: tmp.searchIcon, size: "xs", color: "interactive-text-default" }), ];
   if (null != selectedUser) {
     const obj2 = { style: null, children: null };
     obj2[0] = tmp.userPill;
-    obj3 = { user: null, guildId: "Array", size: 2086900762484230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+    obj3 = { user: null, guildId: "Array", size: -1 };
     obj3[0] = selectedUser;
     obj3[2] = tmp4(1297).AvatarSizes.XSMALL_20;
     const items2 = [tmp2(tmp4(1297).Avatar, obj3), ];
@@ -98,12 +98,12 @@ export default function SelectedUserField(onPress) {
     const obj7 = { text: null };
     obj7[0] = importDefault(4028).getName(selectedUser);
     obj6[3] = intl5.formatToPlainString(tmp4(1236).t["0Vb9FQ"], obj7);
-    obj6[4] = tmp2(tmp4(6736).CircleXIcon, { size: "xs" });
+    obj6[4] = tmp2(tmp4(6733).CircleXIcon, { size: "xs" });
     tmp2Result = tmp2(tmp7, obj6);
     const obj13 = importDefault(4028);
   }
   items3[1] = tmp2Result;
   obj[1] = items3;
-  obj[1] = closure_5(require(6740) /* useInputStyles */.InputFieldContainer, { children: closure_6(closure_4, obj) });
+  obj[1] = closure_5(require(6737) /* useInputStyles */.InputFieldContainer, { children: closure_6(closure_4, obj) });
   return closure_5(closure_4, obj);
 };

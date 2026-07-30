@@ -1,10 +1,10 @@
-// Module ID: 13137
-// Function ID: 13138
+// Module ID: 13132
+// Function ID: 13133
 // Name: NewTag
 // Dependencies: [19, 17, 676, 21, 4189, 712, 4611, 4185, 1236, 2]
 // Exports: default
 
-// Module 13137 (NewTag)
+// Module 13132 (NewTag)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HorizontalGradient } from "ME";

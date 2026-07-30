@@ -1,9 +1,9 @@
-// Module ID: 8680
-// Function ID: 8681
+// Module ID: 8677
+// Function ID: 8678
 // Name: extraWishlistParams
-// Dependencies: [5, 5896, 1874, 3837, 5663, 8675, 676, 501, 1351, 709, 5666, 530, 8673, 1208, 4088, 698, 7985, 2]
+// Dependencies: [5, 5894, 1874, 3837, 5663, 8672, 676, 501, 1351, 709, 5666, 530, 8670, 1208, 4088, 698, 7982, 2]
 
-// Module 8680 (extraWishlistParams)
+// Module 8677 (extraWishlistParams)
 import fromServer from "fromServer";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 import mergeGuildAvatar from "mergeGuildAvatar";

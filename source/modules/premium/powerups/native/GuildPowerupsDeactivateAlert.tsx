@@ -1,10 +1,10 @@
-// Module ID: 11631
-// Function ID: 11632
+// Module ID: 11627
+// Function ID: 11628
 // Name: GuildPowerupsDeactivateAlert
-// Dependencies: [17, 21, 4189, 712, 11632, 11633, 11634, 4533, 6730, 1236, 2255, 4533, 4185, 2]
+// Dependencies: [17, 21, 4189, 712, 11628, 11629, 11630, 4533, 6727, 1236, 2255, 4533, 4185, 2]
 // Exports: default
 
-// Module 11631 (GuildPowerupsDeactivateAlert)
+// Module 11627 (GuildPowerupsDeactivateAlert)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -31,17 +31,17 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   let importDefault;
   const tmp = callback2();
   _require = tmp;
-  ({ onDeactivate: c1, error } = importDefault(11632)(guildId, powerup));
+  ({ onDeactivate: c1, error } = importDefault(11628)(guildId, powerup));
   const tmp2 = importDefault;
-  const tmp4 = importDefault(11632)(guildId, powerup);
-  let obj = _require(11634);
-  const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, _require(11634).ModalType.DEACTIVATE);
+  const tmp4 = importDefault(11628)(guildId, powerup);
+  let obj = _require(11630);
+  const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, _require(11630).ModalType.DEACTIVATE);
   obj = { header: null, title: null, content: null, actions: null, extraContent: null };
   obj = { style: tmp.headerContainer, children: null };
   const obj1 = { color: null, size: "custom", style: null };
   obj1[0] = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
   obj1[2] = { width: 40, height: 40 };
-  obj[1] = callback(_require(6730).CircleErrorIcon, obj1);
+  obj[1] = callback(_require(6727).CircleErrorIcon, obj1);
   obj[0] = callback(View, obj);
   const intl = _require(1236).intl;
   obj[1] = intl.formatToPlainString(importDefault(2255).iEBw1M, { perk: powerup.title });
@@ -79,14 +79,14 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   items[2] = callback(_require(4533).AlertActionButton, obj7, "cancel");
   obj5[0] = items;
   obj[3] = closure_5(_require(4533).AlertActions, obj5);
-  const arr = importDefault(11633)(guildId, powerup);
+  const arr = importDefault(11629)(guildId, powerup);
   const obj2 = { perk: powerup.title };
   const obj3 = { perk: powerup.title };
   const tmp8 = View;
   const tmp9 = closure_5;
   obj[4] = callback(tmp8, {
     style: tmp.extraContentContainer,
-    children: importDefault(11633)(guildId, powerup).map((critical) => {
+    children: importDefault(11629)(guildId, powerup).map((critical) => {
       const obj = { style: _undefined.warningText, variant: null, color: null, children: null };
       let str = "text-sm/medium";
       if (critical.critical) {

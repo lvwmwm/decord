@@ -1,10 +1,10 @@
-// Module ID: 15815
-// Function ID: 15816
+// Module ID: 15809
+// Function ID: 15810
 // Name: useTextChannelPressEvents
-// Dependencies: [19, 1372, 4199, 4197, 10364, 15102, 9097, 2]
+// Dependencies: [19, 1372, 4199, 4197, 10360, 15096, 9093, 2]
 // Exports: useTextChannelPressEvents
 
-// Module 15815 (useTextChannelPressEvents)
+// Module 15809 (useTextChannelPressEvents)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 

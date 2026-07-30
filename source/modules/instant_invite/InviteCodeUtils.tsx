@@ -10,7 +10,7 @@ import _slicedToArray from "_slicedToArray";
 const require = arg1;
 function readSnowflake(firstQueryStringValue) {
   let tmp;
-  if (typeof firstQueryStringValue !== "init") {
+  if (typeof firstQueryStringValue !== "tee") {
     if (obj.isProbablyAValidSnowflake(firstQueryStringValue)) {
       tmp = firstQueryStringValue;
     }
@@ -97,7 +97,7 @@ export const parseExtraDataFromInviteKey = function parseExtraDataFromInviteKey(
     const obj5 = require(4176) /* getFirstQueryStringValue */;
     const firstQueryStringValue1 = require(4176) /* getFirstQueryStringValue */.getFirstQueryStringValue(parsed[channel]);
     let tmp4;
-    if (typeof firstQueryStringValue1 !== "init") {
+    if (typeof firstQueryStringValue1 !== "tee") {
       let tmp9Result = tmp9(11);
       if (tmp9Result.isProbablyAValidSnowflake(firstQueryStringValue1)) {
         tmp4 = firstQueryStringValue1;
@@ -111,7 +111,7 @@ export const parseExtraDataFromInviteKey = function parseExtraDataFromInviteKey(
     if (null != tmp4) {
       const firstQueryStringValue2 = tmp12(4176).getFirstQueryStringValue(parsed[message]);
       let tmp8;
-      if (typeof firstQueryStringValue2 !== "init") {
+      if (typeof firstQueryStringValue2 !== "tee") {
         tmp9Result = tmp9(11);
         if (tmp9Result.isProbablyAValidSnowflake(firstQueryStringValue2)) {
           tmp8 = firstQueryStringValue2;

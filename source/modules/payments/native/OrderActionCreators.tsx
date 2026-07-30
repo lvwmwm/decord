@@ -1,10 +1,10 @@
-// Module ID: 6223
-// Function ID: 6224
+// Module ID: 6220
+// Function ID: 6221
 // Name: getOrders
 // Dependencies: [5, 4172, 676, 3, 530, 3850, 709, 5678, 2]
 // Exports: cancelSigningAndDiscardOrder, getOrCreateOrder, markOrderAsSigningInProgress, patchOrder, patchOrderLineItem, updateOrder
 
-// Module 6223 (getOrders)
+// Module 6220 (getOrders)
 import _createGatewayCheckoutContext from "_createGatewayCheckoutContext";
 import { OrderStatus } from "CustomCheckoutFlow";
 import { Endpoints } from "ME";
@@ -229,7 +229,7 @@ function _createOrder() {
               body = undefined;
               constants = 1;
               logger = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -473,7 +473,7 @@ function _getOrCreateOrder() {
               let id;
               c3 = 1;
               constants = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {
@@ -619,7 +619,7 @@ function _patchOrderLineItem() {
               c5 = undefined;
               c5 = 1;
               logger = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -797,7 +797,7 @@ function _patchOrder() {
               logger = undefined;
               c5 = 1;
               logger = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -977,7 +977,7 @@ function _updateOrder() {
               c5 = undefined;
               c5 = 1;
               logger = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

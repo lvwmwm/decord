@@ -1,10 +1,10 @@
-// Module ID: 11877
-// Function ID: 11878
+// Module ID: 11873
+// Function ID: 11874
 // Name: ActivitiesPrivateChannelCallTooltip
 // Dependencies: [19, 17, 4181, 4214, 21, 4189, 589, 4050, 4190, 1297, 1236, 4600, 2]
 // Exports: default
 
-// Module 11877 (ActivitiesPrivateChannelCallTooltip)
+// Module 11873 (ActivitiesPrivateChannelCallTooltip)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

@@ -1,10 +1,10 @@
-// Module ID: 14898
-// Function ID: 14899
+// Module ID: 14892
+// Function ID: 14893
 // Name: PrivacyPolicyDescription
-// Dependencies: [19, 17, 5642, 14860, 676, 21, 4189, 4185, 1236, 3907, 7636, 7634, 14899, 2]
+// Dependencies: [19, 17, 5642, 14854, 676, 21, 4189, 4185, 1236, 3907, 7633, 7631, 14893, 2]
 // Exports: default
 
-// Module 14898 (PrivacyPolicyDescription)
+// Module 14892 (PrivacyPolicyDescription)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { usePromoEmailConsentStore } from "setPromoEmailConsentState";
@@ -43,12 +43,12 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
   if (asCheckbox) {
     obj = { checked: null };
     obj[0] = consent;
-    let tmp7Result = tmp7(tmp2(7636).FormCheckbox, obj);
+    let tmp7Result = tmp7(tmp2(7633).FormCheckbox, obj);
     let tmp9 = tmp7;
   } else {
     const obj1 = { selected: null };
     obj1[0] = consent;
-    tmp7Result = tmp7(tmp2(7634).FormRow.Radio, obj1);
+    tmp7Result = tmp7(tmp2(7631).FormRow.Radio, obj1);
     tmp9 = tmp7;
   }
   const items = [tmp7Result, ];
@@ -75,7 +75,7 @@ export default function PrivacyHint(arg0) {
     if (tmp2) {
       let obj = { style: null, children: null };
       obj[0] = items1.multiItem;
-      const items = [callback(importDefault(14899), {}), callback(PrivacyPolicyDescription, {})];
+      const items = [callback(importDefault(14893), {}), callback(PrivacyPolicyDescription, {})];
       obj[1] = items;
       return callback2(closure_3, obj);
     }
@@ -91,7 +91,7 @@ export default function PrivacyHint(arg0) {
     }
   }
   obj = { style: items1.multiItem, children: null };
-  items1 = [callback(importDefault(14899), {}), callback(PrivacyPolicyCheckbox, { consent, onToggleConsent, asCheckbox: true })];
+  items1 = [callback(importDefault(14893), {}), callback(PrivacyPolicyCheckbox, { consent, onToggleConsent, asCheckbox: true })];
   obj[1] = items1;
   tmp9Result = callback2(closure_3, obj);
 };

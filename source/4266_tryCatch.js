@@ -4489,7 +4489,7 @@ if (regeneratorRuntime) {
       GeneratorFunctionPrototype[tmp5] = "GeneratorFunction";
       tmp6.isGeneratorFunction = (arg0) => {
         let constructor = typeof arg0 === "find";
-        if (typeof arg0 !== "_") {
+        if (typeof arg0 !== "ZodObject") {
           constructor = arg0.constructor;
         }
         let tmp = constructor;

@@ -1,10 +1,10 @@
-// Module ID: 7932
-// Function ID: 7933
+// Module ID: 7929
+// Function ID: 7930
 // Name: createMessageFailedEmbed
-// Dependencies: [7714, 676, 7729, 7933, 1236, 7934, 4727, 2]
+// Dependencies: [7711, 676, 7726, 7930, 1236, 7931, 4727, 2]
 // Exports: createAutomodBlockedMessageEmbed, default
 
-// Module 7932 (createMessageFailedEmbed)
+// Module 7929 (createMessageFailedEmbed)
 import { MessageFailureState } from "Changeset";
 import { MessageEmbedTypes } from "ME";
 
@@ -22,9 +22,9 @@ export default function createMessageFailedEmbed(useAttachmentUploadPreview) {
       obj[1] = intl3.string(require(1236) /* getSystemLocale */.t.lBLP4u);
       obj[2] = MessageFailureState.UNSPECIFIED;
       obj[4] = colors.failedMessageBodyTextColor;
-      colors = require(7729) /* frozen */.getAssetUriForEmbed;
-      obj[5] = colors(importDefault(7934));
-      const tmp14 = require(7729) /* frozen */;
+      colors = require(7726) /* frozen */.getAssetUriForEmbed;
+      obj[5] = colors(importDefault(7931));
+      const tmp14 = require(7726) /* frozen */;
     } else {
       obj = { type: null, numAttachments: null, failureState: null, attachmentsSize: null, bodyTextColor: null };
       obj[0] = MessageEmbedTypes.TEXT;
@@ -55,6 +55,6 @@ export default function createMessageFailedEmbed(useAttachmentUploadPreview) {
 };
 export const createAutomodBlockedMessageEmbed = function createAutomodBlockedMessageEmbed(errorMessage) {
   const obj = { type: MessageEmbedTypes.TEXT, messageSendError: errorMessage.errorMessage, failureState: MessageFailureState.AUTO_MODERATION_BLOCKED_MESSAGE, disableBackgroundColor: true, bodyTextColor: errorMessage.colors.automodBlockedBodyTextColor, iconURL: null };
-  obj[5] = require(7729) /* frozen */.getAssetUriForEmbed(importDefault(7933));
+  obj[5] = require(7726) /* frozen */.getAssetUriForEmbed(importDefault(7930));
   return obj;
 };

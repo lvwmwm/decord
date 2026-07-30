@@ -35,10 +35,10 @@ const arrayBuffer = new ArrayBuffer(8);
 const dataView = new DataView(arrayBuffer);
 let tmp6;
 if (undefined !== BigInt) {
-  if (typeof dataView.getBigInt64 !== "_") {
-    if (typeof dataView.getBigUint64 !== "_") {
-      if (typeof dataView.setBigInt64 !== "_") {
-        if (typeof dataView.setBigUint64 !== "_") {
+  if (typeof dataView.getBigInt64 !== "ZodObject") {
+    if (typeof dataView.getBigUint64 !== "ZodObject") {
+      if (typeof dataView.setBigInt64 !== "ZodObject") {
+        if (typeof dataView.setBigUint64 !== "ZodObject") {
           let obj = { MIN: null, MAX: null, UMIN: null, UMAX: null, C: null, V: null };
           const _BigInt = BigInt;
           obj[0] = BigInt("-9223372036854775808");

@@ -1,10 +1,10 @@
-// Module ID: 7849
-// Function ID: 7850
+// Module ID: 7846
+// Function ID: 7847
 // Name: createFriendRequestAcceptedSystemMessage
-// Dependencies: [1372, 1874, 7743, 7745, 4189, 712, 1236, 7729, 7850, 7746, 2]
+// Dependencies: [1372, 1874, 7740, 7742, 4189, 712, 1236, 7726, 7847, 7743, 2]
 // Exports: createFriendRequestAcceptedSystemMessage
 
-// Module 7849 (createFriendRequestAcceptedSystemMessage)
+// Module 7846 (createFriendRequestAcceptedSystemMessage)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
@@ -21,7 +21,7 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
       const currentUser = authStore.getCurrentUser();
       if (null != user) {
         if (null != currentUser) {
-          let colorString = require(7743) /* getMessageAuthorWithProcessedColor */.getUserAuthorWithProcessedColor(user, channel);
+          let colorString = require(7740) /* getMessageAuthorWithProcessedColor */.getUserAuthorWithProcessedColor(user, channel);
           let obj = { userId: null, message: null, author: null, roleStyle: null };
           obj[0] = recipientId;
           obj[1] = message;
@@ -29,7 +29,7 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
           obj[3] = message.roleStyle;
           obj = { username: null, usernameOnClick: null };
           obj[0] = colorString.nick;
-          obj[1] = importDefault(7745)(obj);
+          obj[1] = importDefault(7742)(obj);
           let content = message.content;
           if (null != content) {
             if ("" !== content) {
@@ -70,10 +70,10 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
           }
           const obj4 = { content: null, iconUrl: null, textColor: null };
           obj4[0] = formatToPartsResult;
-          tmp15Result = tmp15(7729);
-          obj4[1] = tmp15Result.getAssetUriForEmbed(importDefault(7850));
+          tmp15Result = tmp15(7726);
+          obj4[1] = tmp15Result.getAssetUriForEmbed(importDefault(7847));
           obj4[2] = undefined;
-          const merged1 = Object.assign(tmp17(7746)(message));
+          const merged1 = Object.assign(tmp17(7743)(message));
           return obj4;
         }
       }

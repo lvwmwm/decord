@@ -1,10 +1,10 @@
-// Module ID: 13237
-// Function ID: 13238
+// Module ID: 13232
+// Function ID: 13233
 // Name: IntlLink
 // Dependencies: [19, 21, 4189, 712, 3908, 3886, 3888, 1297, 2]
 // Exports: IntlLink
 
-// Module 13237 (IntlLink)
+// Module 13232 (IntlLink)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

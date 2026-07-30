@@ -1,10 +1,10 @@
-// Module ID: 7716
-// Function ID: 7717
+// Module ID: 7713
+// Function ID: 7714
 // Name: generateBlockedGroupRowData
-// Dependencies: [7714, 505, 12, 4035, 712, 4033, 7717, 2]
+// Dependencies: [7711, 505, 12, 4035, 712, 4033, 7714, 2]
 // Exports: generateBlockedGroupRowData
 
-// Module 7716 (generateBlockedGroupRowData)
+// Module 7713 (generateBlockedGroupRowData)
 import { SeparatorAction } from "Changeset";
 import { UNSAFE_Colors } from "sum";
 import apply from "apply";
@@ -28,11 +28,11 @@ let closure_5 = apply.memoize((arg0) => {
     GREY1 = UNSAFE_Colors.GREY1;
   }
   obj = { borderColor: null, backgroundColor: null, color: null };
-  obj[0] = require(7717) /* processColorOrThrow */.processColorOrThrow(str);
-  const tmpResult2 = require(7717) /* processColorOrThrow */;
-  obj[1] = require(7717) /* processColorOrThrow */.processColorOrThrow(str2);
-  const tmpResult3 = require(7717) /* processColorOrThrow */;
-  obj[2] = require(7717) /* processColorOrThrow */.processColorOrThrow(GREY1);
+  obj[0] = require(7714) /* processColorOrThrow */.processColorOrThrow(str);
+  const tmpResult2 = require(7714) /* processColorOrThrow */;
+  obj[1] = require(7714) /* processColorOrThrow */.processColorOrThrow(str2);
+  const tmpResult3 = require(7714) /* processColorOrThrow */;
+  obj[2] = require(7714) /* processColorOrThrow */.processColorOrThrow(GREY1);
   return obj;
 });
 const result = require("apply").fileFinishedImporting("modules/messages/native/renderer/rows/BlockedGroup.tsx");

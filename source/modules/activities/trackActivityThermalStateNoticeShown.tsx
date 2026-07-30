@@ -1,10 +1,10 @@
-// Module ID: 15882
-// Function ID: 15883
+// Module ID: 15876
+// Function ID: 15877
 // Name: trackActivityThermalStateNoticeShown
 // Dependencies: [1372, 4261, 1371, 676, 3807, 698, 2]
 // Exports: trackActivityThermalStateNoticeShown
 
-// Module 15882 (trackActivityThermalStateNoticeShown)
+// Module 15876 (trackActivityThermalStateNoticeShown)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
 import participantFromServer from "participantFromServer";

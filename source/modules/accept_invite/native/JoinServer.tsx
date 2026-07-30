@@ -1,10 +1,10 @@
-// Module ID: 9222
-// Function ID: 9223
+// Module ID: 9218
+// Function ID: 9219
 // Name: OrSeparator
-// Dependencies: [19, 17, 9223, 21, 4189, 712, 4185, 1236, 5215, 1480, 1474, 8995, 4600, 2]
+// Dependencies: [19, 17, 9219, 21, 4189, 712, 4185, 1236, 5215, 1480, 1474, 8991, 4600, 2]
 // Exports: default
 
-// Module 9222 (OrSeparator)
+// Module 9218 (OrSeparator)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
@@ -110,7 +110,7 @@ export default function JoinServer(arg0) {
   obj5[5] = intl4.string(navigation(1236).t.qreV25);
   obj5[10] = tmp.textInput;
   obj5[11] = onDone;
-  items3[1] = callback(importDefault(8995), obj5);
+  items3[1] = callback(importDefault(8991), obj5);
   const obj6 = { style: tmp.exampleText, variant: "text-sm/medium", color: "text-muted", children: null };
   const intl5 = tmp4(1236).intl;
   obj6[3] = intl5.format(navigation(1236).t.vwWaTe, {

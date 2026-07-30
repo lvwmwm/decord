@@ -58,6 +58,16 @@ prototype["hasTeenDefaults"] = function hasTeenDefaults() {
   }
   return flag;
 };
+prototype["shouldCollectAppStoreSignal"] = function shouldCollectAppStoreSignal() {
+  let flag;
+  if (c4 != null) {
+    flag = c4.shouldCollectAppStoreSignal();
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
+};
 prototype["getUserCountryCode"] = function getUserCountryCode() {
   return c5;
 };

@@ -1,10 +1,10 @@
-// Module ID: 6561
-// Function ID: 6562
+// Module ID: 6558
+// Function ID: 6559
 // Name: useIsWindowLarge
 // Dependencies: [4044, 2]
 // Exports: default, getIsWindowLarge
 
-// Module 6561 (useIsWindowLarge)
+// Module 6558 (useIsWindowLarge)
 const result = require("set").fileFinishedImporting("modules/screen/native/useIsWindowLarge.tsx");
 
 export default function useIsWindowLarge() {

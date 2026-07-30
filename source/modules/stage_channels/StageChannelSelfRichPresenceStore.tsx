@@ -1,9 +1,9 @@
-// Module ID: 10474
-// Function ID: 10475
+// Module ID: 10470
+// Function ID: 10471
 // Name: handleUpdateActivity
-// Dependencies: [1372, 1862, 4261, 3826, 1931, 1874, 5008, 1377, 5004, 676, 3822, 9080, 5014, 4380, 5007, 659, 589, 709, 2]
+// Dependencies: [1372, 1862, 4261, 3826, 1931, 1874, 5008, 1377, 5004, 676, 3822, 9076, 5014, 4380, 5007, 659, 589, 709, 2]
 
-// Module 10474 (handleUpdateActivity)
+// Module 10470 (handleUpdateActivity)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import createRTCConnection from "createRTCConnection";
@@ -40,7 +40,7 @@ function handleUpdateActivity() {
             const features = guild.features;
             tmp2 = null;
             if (features.has(constants.DISCOVERABLE)) {
-              let obj2 = require(9080) /* unpackStageChannelParty */;
+              let obj2 = require(9076) /* unpackStageChannelParty */;
               const result = obj2.packStageChannelPartyId(channel, stageInstanceByChannel);
               let id;
               if (_null != null) {
@@ -169,9 +169,9 @@ const stageChannelSelfRichPresenceStore = new StageChannelSelfRichPresenceStore(
     voiceStates = voiceStates.voiceStates;
     let _require;
     if (null != c17) {
-      const result = _require(9080).unpackStageChannelParty(c17);
+      const result = _require(9076).unpackStageChannelParty(c17);
       _require = result;
-      const obj = _require(9080);
+      const obj = _require(9076);
       if (tmp5) {
         handleUpdateActivity();
       }

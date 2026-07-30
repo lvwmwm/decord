@@ -1,10 +1,10 @@
-// Module ID: 10032
-// Function ID: 10033
+// Module ID: 10028
+// Function ID: 10029
 // Name: handleMessagesLongPressChannel
-// Dependencies: [4372, 9546, 2]
+// Dependencies: [4372, 9542, 2]
 // Exports: handleMessagesLongPressChannel
 
-// Module 10032 (handleMessagesLongPressChannel)
+// Module 10028 (handleMessagesLongPressChannel)
 const result = require("set").fileFinishedImporting("modules/messages/native/handlers/handleMessagesLongPressChannel.tsx");
 
 export const handleMessagesLongPressChannel = function handleMessagesLongPressChannel(data) {
@@ -24,7 +24,7 @@ export const handleMessagesLongPressChannel = function handleMessagesLongPressCh
       obj[1] = guildId;
       obj[2] = channelId;
       obj[3] = messageId;
-      importDefault(9546)(obj);
+      importDefault(9542)(obj);
     }
   }
 };

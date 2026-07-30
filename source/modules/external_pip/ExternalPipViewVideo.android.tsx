@@ -1,9 +1,9 @@
-// Module ID: 15829
-// Function ID: 15830
+// Module ID: 15823
+// Function ID: 15824
 // Name: ExternalPipViewVideoUnavailable
-// Dependencies: [32, 19, 17, 1372, 1874, 4207, 21, 4189, 712, 10548, 4145, 4185, 1236, 589, 1297, 10555, 3893, 15830, 10565, 15831, 10258, 2]
+// Dependencies: [32, 19, 17, 1372, 1874, 4207, 21, 4189, 712, 10544, 4145, 4185, 1236, 589, 1297, 10551, 3893, 15824, 10561, 15825, 10254, 2]
 
-// Module 15829 (ExternalPipViewVideoUnavailable)
+// Module 15823 (ExternalPipViewVideoUnavailable)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "useExternalPipParticipant";
 import get_ActivityIndicator from "updateVideoSize";
@@ -28,7 +28,7 @@ function ExternalPipViewVideoUnavailable(wasStream) {
   if (wasStream) {
     obj = { style: null };
     obj[0] = tmp.unavaiableImage;
-    let tmp4Result = tmp4(tmp5(10548).StreamEnded, obj);
+    let tmp4Result = tmp4(tmp5(10544).StreamEnded, obj);
     let tmp8 = tmp4;
     let tmp10 = tmp5;
   } else {
@@ -196,7 +196,7 @@ const memoResult = importAllResult.memo(function ExternalPipViewVideo(onLayout) 
   let selectedParticipantSpeaking;
   let selectedParticipantStreamId;
   let selectedParticipantUserId;
-  const tmp2 = importDefault(15831)();
+  const tmp2 = importDefault(15825)();
   ({ selectedParticipantStreamId, selectedParticipantUserId, focusedParticipantType } = tmp2);
   const items = [selectedParticipantStreamId, selectedParticipantUserId, focusedParticipantType];
   ({ channelId, selectedParticipantSpeaking } = tmp2);

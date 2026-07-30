@@ -1,10 +1,10 @@
-// Module ID: 8345
-// Function ID: 8346
+// Module ID: 8342
+// Function ID: 8343
 // Name: DeleteEventAlert
-// Dependencies: [5, 19, 5779, 21, 4189, 589, 8208, 4157, 4533, 1236, 4185, 2]
+// Dependencies: [5, 19, 5779, 21, 4189, 589, 8205, 4157, 4533, 1236, 4185, 2]
 // Exports: default
 
-// Module 8345 (DeleteEventAlert)
+// Module 8342 (DeleteEventAlert)
 import initialize from "initialize";
 import "noop";
 import scheduledEventSort from "scheduledEventSort";
@@ -52,7 +52,7 @@ export default function DeleteEventAlert(eventException) {
               return obj;
             } else {
               let closure_0 = tmp4;
-              const obj8 = v0(8208);
+              const obj8 = v0(8205);
               if (outer1_4) {
                 v0 = 2;
                 dependencyMap = 1;

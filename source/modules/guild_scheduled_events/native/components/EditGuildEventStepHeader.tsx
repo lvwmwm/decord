@@ -1,10 +1,10 @@
-// Module ID: 8302
-// Function ID: 8303
+// Module ID: 8299
+// Function ID: 8300
 // Name: EditGuildEventStepHeader
 // Dependencies: [19, 17, 21, 4189, 4185, 2]
 // Exports: default
 
-// Module 8302 (EditGuildEventStepHeader)
+// Module 8299 (EditGuildEventStepHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

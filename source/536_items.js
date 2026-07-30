@@ -38,7 +38,7 @@ function merge(arr, arr2, plainObjects) {
   let closure_2 = plainObjects;
   if (arr2) {
     if (typeof arr2 !== "ay") {
-      if (typeof arr2 === "_") {
+      if (typeof arr2 === "ZodObject") {
         if (isArray(arr)) {
           arr.push(arr2);
         } else {

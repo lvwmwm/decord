@@ -1,10 +1,10 @@
-// Module ID: 12999
-// Function ID: 13000
+// Module ID: 12994
+// Function ID: 12995
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 1218, 1874, 676, 4002, 21, 4189, 712, 1581, 1474, 501, 698, 4395, 4040, 1222, 4530, 4533, 6730, 1236, 4533, 5641, 4719, 4000, 13000, 4185, 9191, 2]
+// Dependencies: [5, 19, 17, 1218, 1874, 676, 4002, 21, 4189, 712, 1581, 1474, 501, 698, 4395, 4040, 1222, 4530, 4533, 6727, 1236, 4533, 5641, 4719, 4000, 12995, 4185, 9187, 2]
 // Exports: default
 
-// Module 12999 (OneTimeLoginModal)
+// Module 12994 (OneTimeLoginModal)
 import closure_3 from "ME";
 import CircleErrorIcon from "CircleErrorIcon";
 import get_ActivityIndicator from "useAlertStore";
@@ -247,7 +247,7 @@ export default function OneTimeLoginModal(token) {
   let obj1 = { style: tmp.container, children: null };
   let obj2 = { style: tmp.centerContent, children: null };
   const tmp11 = importDefault(4719);
-  const items7 = [callback(callback3, { source: token(13000), style: tmp.logo }), ];
+  const items7 = [callback(callback3, { source: token(12995), style: tmp.logo }), ];
   let obj4 = { style: tmp.loadingContainer, children: null };
   const items8 = [callback(callback2, {}), ];
   let obj5 = { variant: "text-lg/semibold", children: null };
@@ -268,7 +268,7 @@ export default function OneTimeLoginModal(token) {
   obj8[1] = intl3.string(token(1236).t.FIEwfG);
   obj8[3] = callback;
   obj8[4] = tmp.link;
-  items10[1] = callback(token(9191).LinkButton, obj8);
+  items10[1] = callback(token(9187).LinkButton, obj8);
   obj6[1] = items10;
   items9[1] = callback2(callback1, obj6);
   obj1[1] = items9;

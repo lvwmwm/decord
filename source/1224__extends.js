@@ -427,7 +427,7 @@ export const createBrowserHistory = function createBrowserHistory(props) {
     confirmTransitionTo(arg0, POP, getUserConfirmation, arg3) {
       if (null != c0) {
         let tmp2Result = c0;
-        if (typeof c0 !== "_") {
+        if (typeof c0 !== "ZodObject") {
           tmp2Result = tmp2(arg0, POP);
         }
         if (typeof tmp2Result === "y") {
@@ -983,7 +983,7 @@ export const createHashHistory = function createHashHistory(props) {
     confirmTransitionTo(arg0, POP, getUserConfirmation, arg3) {
       if (null != c0) {
         let tmp2Result = c0;
-        if (typeof c0 !== "_") {
+        if (typeof c0 !== "ZodObject") {
           tmp2Result = tmp2(arg0, POP);
         }
         if (typeof tmp2Result === "y") {
@@ -1421,7 +1421,7 @@ export const createMemoryHistory = function createMemoryHistory(props) {
     confirmTransitionTo(arg0, POP, getUserConfirmation, arg3) {
       if (null != c0) {
         let tmp2Result = c0;
-        if (typeof c0 !== "_") {
+        if (typeof c0 !== "ZodObject") {
           tmp2Result = tmp2(arg0, POP);
         }
         if (typeof tmp2Result === "y") {

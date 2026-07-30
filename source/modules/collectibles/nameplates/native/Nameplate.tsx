@@ -1,10 +1,10 @@
-// Module ID: 8070
-// Function ID: 8071
+// Module ID: 8067
+// Function ID: 8068
 // Name: NameplateInner
-// Dependencies: [19, 4181, 21, 4189, 589, 4125, 4050, 4190, 1898, 8071, 4611, 500, 6207, 5141, 2]
+// Dependencies: [19, 4181, 21, 4189, 589, 4125, 4050, 4190, 1898, 8068, 4611, 500, 6204, 5141, 2]
 // Exports: default
 
-// Module 8070 (NameplateInner)
+// Module 8067 (NameplateInner)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import jsxProd from "jsxProd";
@@ -85,7 +85,7 @@ function NameplateInner(isFocused) {
   tmpResult = tmp(1898);
   const backgroundGradientColors = tmpResult.getBackgroundGradientColors(nameplate.palette, sharedValue(4125)());
   const tmp6 = sharedValue(4125)();
-  const nameplateAssets = flag6(8071).getNameplateAssets(nameplate);
+  const nameplateAssets = flag6(8068).getNameplateAssets(nameplate);
   ({ staticImageUrl, animatedImageUrl } = nameplateAssets);
   if (flag7) {
     flag7 = !stateFromStores;
@@ -119,13 +119,13 @@ function NameplateInner(isFocused) {
   }
   const items4 = [tmp14Result, ];
   const tmp12 = closure_6;
-  const tmpResult1 = flag6(8071);
+  const tmpResult1 = flag6(8068);
   if (tmpResult2.isAndroid()) {
     if (flag7) {
       const obj2 = { url: null, style: null, autoplay: true };
       obj2[0] = staticImageUrl;
       obj2[1] = tmp4.img;
-      let tmp16 = callback(tmp(6207).APNGPlayer, obj2);
+      let tmp16 = callback(tmp(6204).APNGPlayer, obj2);
     }
     items4[1] = tmp16;
     obj[1] = items4;

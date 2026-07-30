@@ -1,10 +1,10 @@
-// Module ID: 14627
-// Function ID: 14628
+// Module ID: 14622
+// Function ID: 14623
 // Name: PersonalizationDisclaimerActionSheet
-// Dependencies: [19, 676, 21, 4189, 712, 3886, 1945, 5243, 4185, 1236, 5022, 4600, 7622, 4157, 2]
+// Dependencies: [19, 676, 21, 4189, 712, 3886, 1945, 5243, 4185, 1236, 5022, 4600, 7619, 4157, 2]
 // Exports: default
 
-// Module 14627 (PersonalizationDisclaimerActionSheet)
+// Module 14622 (PersonalizationDisclaimerActionSheet)
 import noop from "noop";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -40,7 +40,7 @@ export default function PersonalizationDisclaimerActionSheet() {
   obj1[2] = callback;
   const obj2 = { color: null };
   obj2[0] = importDefault(712).colors.WHITE;
-  obj1[3] = callback(require(7622) /* LinkExternalSmallIcon */.LinkExternalSmallIcon, obj2);
+  obj1[3] = callback(require(7619) /* LinkExternalSmallIcon */.LinkExternalSmallIcon, obj2);
   const items1 = [callback(require(4600) /* Button */.Button, obj1), ];
   const obj3 = { variant: "tertiary", size: "lg", text: null, onPress: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;

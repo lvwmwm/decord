@@ -1,9 +1,9 @@
-// Module ID: 11969
-// Function ID: 11970
+// Module ID: 11963
+// Function ID: 11964
 // Name: EmojiImage
-// Dependencies: [32, 19, 17, 5563, 1877, 21, 4189, 712, 3862, 5141, 1416, 500, 4185, 5206, 8107, 9066, 9911, 4157, 11970, 5535, 1236, 4717, 11308, 2]
+// Dependencies: [32, 19, 17, 5563, 1877, 21, 4189, 712, 3862, 5141, 1416, 500, 4185, 5206, 8104, 9062, 9908, 4157, 11964, 5535, 1236, 4717, 11304, 2]
 
-// Module 11969 (EmojiImage)
+// Module 11963 (EmojiImage)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "QUICK_SWITCHER";
 import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";

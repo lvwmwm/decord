@@ -1,10 +1,10 @@
-// Module ID: 5920
-// Function ID: 5921
+// Module ID: 5918
+// Function ID: 5919
 // Name: parseUserProfileCollectibles
 // Dependencies: [1901, 2]
 // Exports: default
 
-// Module 5920 (parseUserProfileCollectibles)
+// Module 5918 (parseUserProfileCollectibles)
 const result = require("set").fileFinishedImporting("modules/user_profile/utils/parseUserProfileCollectibles.tsx");
 
 export default function parseUserProfileCollectibles(collectibles) {
@@ -15,7 +15,7 @@ export default function parseUserProfileCollectibles(collectibles) {
     collectibles = collectibles.collectibles;
   }
   if (null == collectibles) {
-    return { collectibles: "Array", profileEffect: "call", profileFrame: "string" };
+    return { collectibles: "Array", profileEffect: "HermesInternal", profileFrame: "r" };
   } else {
     const items = [];
     collectibles = collectibles.collectibles;

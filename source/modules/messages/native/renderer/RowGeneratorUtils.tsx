@@ -1,9 +1,9 @@
-// Module ID: 7886
-// Function ID: 7887
+// Module ID: 7883
+// Function ID: 7884
 // Name: nativeStyleProperties
-// Dependencies: [17, 4181, 1372, 1862, 4182, 7714, 676, 4189, 4033, 712, 6046, 4409, 1473, 2]
+// Dependencies: [17, 4181, 1372, 1862, 4182, 7711, 676, 4189, 4033, 712, 6044, 4409, 1473, 2]
 
-// Module 7886 (nativeStyleProperties)
+// Module 7883 (nativeStyleProperties)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -62,7 +62,7 @@ createCacheKey = {
       return obj;
     } else {
       if (message.hasFlag(constants.IS_GUILD_OFFICIAL)) {
-        obj = require(6046) /* useCanManageGuildOfficialMessages */;
+        obj = require(6044) /* useCanManageGuildOfficialMessages */;
         if (obj.showGuildOfficialMessageGradient(officialMessageStyle.officialMessageStyle)) {
           channel = channel.getChannel(message.getChannelId());
           let guild_id;
@@ -70,7 +70,7 @@ createCacheKey = {
             guild_id = channel.guild_id;
           }
           guild = guild.getGuild(guild_id);
-          let tmp3Result = tmp3(6046);
+          let tmp3Result = tmp3(6044);
           if (tmp3Result.isGuildOfficialMessagesEnabled(guild, "RowGeneratorUtils")) {
             let officialMessageColor;
             if (guild != null) {

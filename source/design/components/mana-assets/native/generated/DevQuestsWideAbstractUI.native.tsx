@@ -1,10 +1,10 @@
-// Module ID: 6970
-// Function ID: 6971
+// Module ID: 6967
+// Function ID: 6968
 // Name: DevQuestsWideAbstractUI
-// Dependencies: [21, 5141, 6971, 2]
+// Dependencies: [21, 5141, 6968, 2]
 // Exports: DevQuestsWideAbstractUI
 
-// Module 6970 (DevQuestsWideAbstractUI)
+// Module 6967 (DevQuestsWideAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DevQuestsWideAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const DevQuestsWideAbstractUI = function DevQuestsWideAbstractUI(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6971);
+  obj[0] = importDefault(6968);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

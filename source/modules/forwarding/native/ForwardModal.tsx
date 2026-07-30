@@ -1,10 +1,10 @@
-// Module ID: 9895
-// Function ID: 9896
+// Module ID: 9892
+// Function ID: 9893
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 5858, 8170, 1372, 4407, 8195, 9896, 8813, 21, 4189, 712, 1474, 6158, 589, 9893, 9892, 5149, 6157, 3890, 1236, 1351, 9897, 4530, 9898, 9899, 4197, 6155, 9901, 4372, 4158, 4159, 3889, 5543, 500, 9904, 6752, 4133, 4719, 9905, 9915, 9926, 2]
+// Dependencies: [5, 32, 19, 17, 5856, 8167, 1372, 4407, 8192, 9893, 8809, 21, 4189, 712, 1474, 6156, 589, 9890, 9889, 5149, 6155, 3890, 1236, 1351, 9894, 4530, 9895, 9896, 4197, 6153, 9898, 4372, 4158, 4159, 3889, 5543, 500, 9901, 6749, 4133, 4719, 9902, 9912, 9923, 2]
 // Exports: default
 
-// Module 9895 (ForwardModal)
+// Module 9892 (ForwardModal)
 import filterStaffGuild from "filterStaffGuild";
 import HapticFeedbackTypes from "HapticFeedbackTypes";
 import useNavigatorBackPressHandler from "useNavigatorBackPressHandler";

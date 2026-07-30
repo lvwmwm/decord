@@ -1,9 +1,9 @@
-// Module ID: 15259
-// Function ID: 15260
+// Module ID: 15253
+// Function ID: 15254
 // Name: Username
-// Dependencies: [19, 17, 4867, 21, 4189, 712, 8380, 8392, 589, 8080, 9066, 9085, 4185, 4028, 2]
+// Dependencies: [19, 17, 4867, 21, 4189, 712, 8377, 8389, 589, 8077, 9062, 9081, 4185, 4028, 2]
 
-// Module 15259 (Username)
+// Module 15253 (Username)
 import { View } from "get ActivityIndicator";
 import filterPlayingActivities from "filterPlayingActivities";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ function Username(arg0) {
   const items = [callback3().usernameRow];
   obj[0] = items;
   const items1 = [{ flexShrink: 1 }];
-  const items2 = [callback(importDefault(8380), { userId, userName: username, defaultColor: "mobile-text-heading-primary", variant: "heading-md/semibold", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75, style: items1 }), callback(require(8392) /* ChevronSmallDownIcon */.ChevronSmallDownIcon, { size: "xs", color: "mobile-text-heading-primary" })];
+  const items2 = [callback(importDefault(8377), { userId, userName: username, defaultColor: "mobile-text-heading-primary", variant: "heading-md/semibold", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75, style: items1 }), callback(require(8389) /* ChevronSmallDownIcon */.ChevronSmallDownIcon, { size: "xs", color: "mobile-text-heading-primary" })];
   obj[1] = items2;
   return callback2(View, obj);
 }
@@ -41,9 +41,9 @@ const memoResult = require("noop").memo(function YouName(arg0) {
   let obj = require(589) /* initialize */;
   const items = [filterPlayingActivities];
   const stateFromStores = obj.useStateFromStores(items, () => status.getStatus());
-  let obj1 = require(8080) /* _activityFromSetting */;
+  let obj1 = require(8077) /* _activityFromSetting */;
   const customStatusActivity = obj1.useCustomStatusActivity();
-  let obj2 = require(9066) /* useGameMentionsAsPlainText */;
+  let obj2 = require(9062) /* useGameMentionsAsPlainText */;
   let state;
   if (customStatusActivity != null) {
     state = customStatusActivity.state;
@@ -61,7 +61,7 @@ const memoResult = require("noop").memo(function YouName(arg0) {
     obj1 = { size: 16, style: null, emoji: null };
     obj1[1] = tmp.statusEmoji;
     obj1[2] = customStatusActivity.emoji;
-    tmp10Result = tmp10(importDefault(9085), obj1);
+    tmp10Result = tmp10(importDefault(9081), obj1);
   }
   const items2 = [tmp10Result, ];
   obj2 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75, style: tmp.statusText, children: null };

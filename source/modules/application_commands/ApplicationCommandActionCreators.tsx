@@ -1,10 +1,10 @@
-// Module ID: 6089
-// Function ID: 6090
+// Module ID: 6087
+// Function ID: 6088
 // Name: setActiveCommand
-// Dependencies: [1218, 6090, 676, 38, 5704, 709, 530, 11, 1906, 2]
+// Dependencies: [1218, 6088, 676, 38, 5704, 709, 530, 11, 1906, 2]
 // Exports: fetchCommand, fetchCommands, fetchCommandsForApplication, performAutocomplete, setActiveCommand, setAppLauncherActiveCommand, setPreferredCommandId, updateApplicationGuildCommandPermissions, updateChannelState, updateOptionStates, updateOptionValidationStates, updateRegistry
 
-// Module 6089 (setActiveCommand)
+// Module 6087 (setActiveCommand)
 import fetchFingerprint from "fetchFingerprint";
 import handleInit from "handleInit";
 import { Endpoints } from "ME";

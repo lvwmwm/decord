@@ -1,9 +1,9 @@
-// Module ID: 12766
-// Function ID: 12767
+// Module ID: 12760
+// Function ID: 12761
 // Name: set
-// Dependencies: [1862, 5003, 12767, 676, 10694, 3771, 1236, 589, 709, 2]
+// Dependencies: [1862, 5003, 12761, 676, 10690, 3771, 1236, 589, 709, 2]
 
-// Module 12766 (set)
+// Module 12760 (set)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import recomputeGuild from "recomputeGuild";
 import LocalNotificationTypes from "LocalNotificationTypes";
@@ -28,7 +28,7 @@ prototype["isScheduled"] = function isScheduled(arg0) {
 LocalPushNotificationStore.displayName = "LocalPushNotificationStore";
 const localPushNotificationStore = new LocalPushNotificationStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleCheckScheduledNotifs() {
-    const scheduledLocalNotifications = importDefault(10694).getScheduledLocalNotifications((arr) => {
+    const scheduledLocalNotifications = importDefault(10690).getScheduledLocalNotifications((arr) => {
       const found = arr.filter((userInfo) => {
         let tmp = null != userInfo.userInfo;
         if (tmp) {
@@ -44,9 +44,9 @@ const localPushNotificationStore = new LocalPushNotificationStore(require("dispa
             set.add(userInfo);
           }
         }
-        const result = callback(10694).cancelLocalNotifications(userInfo);
-        const obj = callback(10694);
-        const result1 = callback(10694).cancelLocalNotifications(userInfo);
+        const result = callback(10690).cancelLocalNotifications(userInfo);
+        const obj = callback(10690);
+        const result1 = callback(10690).cancelLocalNotifications(userInfo);
         set.delete(userInfo);
       });
     });
@@ -78,8 +78,8 @@ const localPushNotificationStore = new LocalPushNotificationStore(require("dispa
               obj[2] = guild.name;
               const intl = require(1236) /* getSystemLocale */.intl;
               obj[3] = intl.string(require(1236) /* getSystemLocale */.t["hrDBa+"]);
-              const result = tmp15(10694).scheduleLocalNotification(obj);
-              const tmp15Result = tmp15(10694);
+              const result = tmp15(10690).scheduleLocalNotification(obj);
+              const tmp15Result = tmp15(10690);
             }
             tmp15 = importDefault;
           }
@@ -90,14 +90,14 @@ const localPushNotificationStore = new LocalPushNotificationStore(require("dispa
   GUILD_DELETE: function handleGuildDelete(guild) {
     const obj = { type: constants.GUILD_VERIFICATION, guildId: guild.guild.id };
     if (set.has(obj)) {
-      const result = importDefault(10694).cancelLocalNotifications(obj);
+      const result = importDefault(10690).cancelLocalNotifications(obj);
       set.delete(obj);
-      const obj3 = importDefault(10694);
+      const obj3 = importDefault(10690);
     }
   },
   LOGOUT: function handleCancelAll() {
     set.clear();
-    const result = importDefault(10694).cancelAllLocalNotifications();
+    const result = importDefault(10690).cancelAllLocalNotifications();
   }
 });
 let result = set.fileFinishedImporting("modules/local_push_notification/native/LocalPushNotificationStore.tsx");

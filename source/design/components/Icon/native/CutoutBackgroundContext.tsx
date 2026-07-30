@@ -1,10 +1,10 @@
-// Module ID: 7971
-// Function ID: 7972
+// Module ID: 7968
+// Function ID: 7969
 // Name: useCutoutBackgroundColor
-// Dependencies: [19, 21, 689, 7972, 712, 3893, 2]
+// Dependencies: [19, 21, 689, 7969, 712, 3893, 2]
 // Exports: CutoutBackgroundProvider, useCutoutBackgroundColor
 
-// Module 7971 (useCutoutBackgroundColor)
+// Module 7968 (useCutoutBackgroundColor)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
@@ -26,7 +26,7 @@ export const CutoutBackgroundProvider = function CutoutBackgroundProvider(childr
   let token = null;
   if (null !== backgroundColor) {
     token = obj.useToken(tmp5);
-    if (typeof backgroundColor !== "init") {
+    if (typeof backgroundColor !== "tee") {
       token = backgroundColor;
     }
   }
@@ -34,8 +34,8 @@ export const CutoutBackgroundProvider = function CutoutBackgroundProvider(childr
     let value = token;
     if (1 !== obj2.alpha()) {
       if (null != context) {
-        value = require(7972) /* flattenColorOverOpaqueBackground */.flattenColorOverOpaqueBackground(token, context);
-        const tmp6Result = require(7972) /* flattenColorOverOpaqueBackground */;
+        value = require(7969) /* flattenColorOverOpaqueBackground */.flattenColorOverOpaqueBackground(token, context);
+        const tmp6Result = require(7969) /* flattenColorOverOpaqueBackground */;
       }
     }
     obj2 = importDefault(689)(token);

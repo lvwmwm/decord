@@ -1,10 +1,10 @@
-// Module ID: 15487
-// Function ID: 15488
+// Module ID: 15481
+// Function ID: 15482
 // Name: MessageVerticalSeparator
-// Dependencies: [19, 17, 9101, 21, 4189, 2]
+// Dependencies: [19, 17, 9097, 21, 4189, 2]
 // Exports: CardVerticalSeparator, MediaVerticalSeparator, MessageVerticalSeparator
 
-// Module 15487 (MessageVerticalSeparator)
+// Module 15481 (MessageVerticalSeparator)
 import "noop";
 import { View } from "get ActivityIndicator";
 import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";

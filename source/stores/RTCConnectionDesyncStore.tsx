@@ -1,9 +1,9 @@
-// Module ID: 12809
-// Function ID: 12810
+// Module ID: 12803
+// Function ID: 12804
 // Name: retryFailedUsers
-// Dependencies: [4206, 1372, 4261, 1874, 4205, 4262, 676, 4207, 4222, 4379, 9086, 4286, 589, 709, 2]
+// Dependencies: [4206, 1372, 4261, 1874, 4205, 4262, 676, 4207, 4222, 4379, 9082, 4286, 589, 709, 2]
 
-// Module 12809 (retryFailedUsers)
+// Module 12803 (retryFailedUsers)
 import isVoiceMuted from "isVoiceMuted";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
@@ -52,9 +52,9 @@ function retryFailedUsers() {
           obj[10] = guildId(4379).getName(guildId, tmp, user);
           const obj2 = guildId(4379);
           const tmp24 = outer1_8;
-          obj[11] = channelId(9086).getAvatarDecoration(user, guildId);
+          obj[11] = channelId(9082).getAvatarDecoration(user, guildId);
           const result1 = outer1_13.set(user.id, obj);
-          const obj3 = channelId(9086);
+          const obj3 = channelId(9082);
         }
       } else {
         outer1_14.delete(userId);

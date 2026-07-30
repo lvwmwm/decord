@@ -1,10 +1,10 @@
-// Module ID: 14042
-// Function ID: 14043
+// Module ID: 14037
+// Function ID: 14038
 // Name: set
-// Dependencies: [32, 19, 17, 5033, 10882, 14041, 4050, 4190, 4193, 4155, 2]
+// Dependencies: [32, 19, 17, 5033, 10878, 14036, 4050, 4190, 4193, 4155, 2]
 // Exports: clearDismissedScrollAffordanceBountyIds, useBountiesAutoScroll
 
-// Module 14042 (set)
+// Module 14037 (set)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { AppState } from "get ActivityIndicator";

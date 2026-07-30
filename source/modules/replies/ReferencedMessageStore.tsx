@@ -1,9 +1,9 @@
-// Module ID: 5857
-// Function ID: 5858
+// Module ID: 5855
+// Function ID: 5856
 // Name: processMessage
-// Dependencies: [32, 5858, 1372, 4407, 676, 1386, 4409, 5862, 589, 709, 2]
+// Dependencies: [32, 5856, 1372, 4407, 676, 1386, 4409, 5860, 589, 709, 2]
 
-// Module 5857 (processMessage)
+// Module 5855 (processMessage)
 import _slicedToArray from "_slicedToArray";
 import removePendingListFetch from "removePendingListFetch";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -337,7 +337,7 @@ const referencedMessageStore = new ReferencedMessageStore(require("dispatcher"),
         if (value.state === obj.LOADED) {
           obj = { state: null, message: null };
           obj[0] = tmp3.LOADED;
-          obj[1] = require(5862) /* redactionSettingToRenderedString */.handleExplicitMediaScanTimeoutForMessage(value.message);
+          obj[1] = require(5860) /* redactionSettingToRenderedString */.handleExplicitMediaScanTimeoutForMessage(value.message);
           const result = obj.set(channelId, messageId, obj);
         }
       }

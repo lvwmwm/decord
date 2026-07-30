@@ -1,10 +1,10 @@
-// Module ID: 10280
-// Function ID: 10281
+// Module ID: 10276
+// Function ID: 10277
 // Name: useTruncatedGradientColors
 // Dependencies: [19, 4189, 3893, 712, 689, 2]
 // Exports: default
 
-// Module 10280 (useTruncatedGradientColors)
+// Module 10276 (useTruncatedGradientColors)
 import { useMemo } from "noop";
 import createCacheKey from "createCacheKey";
 

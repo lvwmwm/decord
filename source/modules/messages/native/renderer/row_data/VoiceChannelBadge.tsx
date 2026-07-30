@@ -1,10 +1,10 @@
-// Module ID: 8006
-// Function ID: 8007
+// Module ID: 8003
+// Function ID: 8004
 // Name: createVoiceChannelBadge
-// Dependencies: [17, 1372, 3817, 4205, 676, 8007, 4650, 4403, 2]
+// Dependencies: [17, 1372, 3817, 4205, 676, 8004, 4650, 4403, 2]
 // Exports: createVoiceChannelBadge
 
-// Module 8006 (createVoiceChannelBadge)
+// Module 8003 (createVoiceChannelBadge)
 import { Image } from "get ActivityIndicator";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -14,7 +14,7 @@ import { Permissions } from "ME";
 let result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/messages/native/renderer/row_data/VoiceChannelBadge.tsx");
 
 export const createVoiceChannelBadge = function createVoiceChannelBadge(id, guildId) {
-  let obj = require(8007) /* experiment */;
+  let obj = require(8004) /* experiment */;
   if (obj.getVoiceChannelBadgeExperiment({ guildId, location: "VoiceChannelBadgeNative" }).enabled) {
     if (null != guildId) {
       discoverableVoiceState = discoverableVoiceState.getDiscoverableVoiceState(guildId, id);

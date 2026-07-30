@@ -1,10 +1,10 @@
-// Module ID: 9987
-// Function ID: 9988
+// Module ID: 9983
+// Function ID: 9984
 // Name: canEditMessage
-// Dependencies: [676, 5923, 4409, 5884, 2]
+// Dependencies: [676, 5921, 4409, 5882, 2]
 // Exports: default
 
-// Module 9987 (canEditMessage)
+// Module 9983 (canEditMessage)
 import ME from "ME";
 
 let c3;
@@ -20,7 +20,7 @@ export default function canEditMessage(author) {
     if (tmp3) {
       let tmp5 = author.state === constants2.SENT;
       if (tmp5) {
-        const tmp8 = importDefault(5923)(author);
+        const tmp8 = importDefault(5921)(author);
         let tmp9 = !tmp8;
         if (!tmp8) {
           let result = require(4409) /* createMinimalMessageRecord */.canEditMessageWithStickers(author);
@@ -33,7 +33,7 @@ export default function canEditMessage(author) {
                 const isPollResult = author.isPoll();
                 let tmp17 = !isPollResult;
                 if (!isPollResult) {
-                  const tmp18 = tmp6(5884)(author);
+                  const tmp18 = tmp6(5882)(author);
                   let tmp19 = !tmp18;
                   if (!tmp18) {
                     tmp19 = author.type !== constants3.MEDIA_MENTION_MESSAGE;

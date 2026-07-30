@@ -1,10 +1,10 @@
-// Module ID: 15608
-// Function ID: 15609
+// Module ID: 15602
+// Function ID: 15603
 // Name: compareUserItems
-// Dependencies: [32, 19, 17, 5925, 3826, 1874, 8813, 676, 9060, 21, 4189, 712, 15609, 1959, 4530, 647, 5926, 3862, 15284, 5927, 11, 5515, 5535, 698, 12056, 5521, 15610, 659, 8359, 1236, 1480, 5554, 5220, 4185, 8224, 4719, 8755, 4717, 9914, 6785, 8820, 2]
+// Dependencies: [32, 19, 17, 5923, 3826, 1874, 8809, 676, 9056, 21, 4189, 712, 15603, 1959, 4530, 647, 5924, 3862, 15278, 5925, 11, 5515, 5535, 698, 12050, 5521, 15604, 659, 8356, 1236, 1480, 5554, 5220, 4185, 8221, 4719, 8751, 4717, 9911, 6782, 8816, 2]
 // Exports: default
 
-// Module 15608 (compareUserItems)
+// Module 15602 (compareUserItems)
 import TableRowInner from "TableRowInner";
 import getRelativeTimestamp from "getRelativeTimestamp";
 import { View } from "explicitContentFromProto";
@@ -96,9 +96,9 @@ export default function FriendRequestsScreen() {
   }), 2);
   first = tmp9[0];
   dependencyMap = tmp11;
-  let obj2 = stateFromStoresArray(12056);
+  let obj2 = stateFromStoresArray(12050);
   gameRelationshipsByType = obj2.useGameRelationshipsByType(ignoredUsers.PENDING_INCOMING);
-  let obj3 = stateFromStoresArray(12056);
+  let obj3 = stateFromStoresArray(12050);
   gameRelationshipsByType1 = obj3.useGameRelationshipsByType(ignoredUsers.PENDING_OUTGOING);
   const items3 = [gameRelationshipsByType, gameRelationshipsByType1];
   const memo = gameRelationshipsByType1.useMemo(() => {
@@ -289,11 +289,11 @@ export default function FriendRequestsScreen() {
   obj1[1] = intl2.string(stateFromStoresArray(1236).t.tWqcIF);
   items10[1] = obj1;
   obj[3] = items10;
-  const segmentedControlState = stateFromStoresArray(8224).useSegmentedControlState(obj);
+  const segmentedControlState = stateFromStoresArray(8221).useSegmentedControlState(obj);
   obj2 = { value: analyticsLocations, children: null };
   const items11 = [outgoingData(first(4719), { absolute: true }), ];
   obj3 = { style: tmp.container, children: null };
-  obj4 = { style: tmp.tabs, children: outgoingData(tmp4(8755).SegmentedControl, { state: segmentedControlState }) };
+  obj4 = { style: tmp.tabs, children: outgoingData(tmp4(8751).SegmentedControl, { state: segmentedControlState }) };
   const items12 = [outgoingData(pendingIncomingIds, obj4), , ];
   let tmp32Result = null;
   if (tmp28) {
@@ -325,11 +325,11 @@ export default function FriendRequestsScreen() {
     }
     const obj9 = { title: null, illustration: null, disableBackgroundOverlay: true };
     obj9[0] = stringResult;
-    WumpusCouchSpotIllustration = tmp4(6785).WumpusCouchSpotIllustration;
+    WumpusCouchSpotIllustration = tmp4(6782).WumpusCouchSpotIllustration;
     obj9[1] = WumpusCouchSpotIllustration;
-    obj8[1] = tmp32(tmp2(9914), obj9);
+    obj8[1] = tmp32(tmp2(9911), obj9);
     tmp32Result = tmp32(tmp33, obj8);
-    const tmp2Result = tmp2(9914);
+    const tmp2Result = tmp2(9911);
   } else {
     if (first1 === tmp25.Incoming) {
       outgoingSection = incomingSection;
@@ -338,7 +338,7 @@ export default function FriendRequestsScreen() {
     obj10[0] = outgoingSection;
     obj10[1] = callback2;
     obj10[2] = callback1;
-    items12[2] = tmp32(tmp4(8820).UsersFastList, obj10);
+    items12[2] = tmp32(tmp4(8816).UsersFastList, obj10);
     obj3[1] = items12;
     items11[1] = tmp31(tmp33, obj3);
     obj2[1] = items11;

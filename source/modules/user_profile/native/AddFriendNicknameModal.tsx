@@ -1,10 +1,10 @@
-// Module ID: 12215
-// Function ID: 12216
+// Module ID: 12209
+// Function ID: 12210
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 32, 19, 17, 3826, 1874, 21, 4189, 712, 589, 1236, 4395, 8918, 5638, 4618, 4185, 6733, 4028, 2]
+// Dependencies: [5, 32, 19, 17, 3826, 1874, 21, 4189, 712, 589, 1236, 4395, 8914, 5638, 4618, 4185, 6730, 4028, 2]
 // Exports: default
 
-// Module 12215 (AddFriendNicknameModal)
+// Module 12209 (AddFriendNicknameModal)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -184,7 +184,7 @@ export default function AddFriendNicknameModal(arg0) {
   const tmp12 = showUserProfile(4618);
   obj4[2] = showUserProfile(4028).getName(stateFromStores1);
   obj4[3] = stateFromStores;
-  items3[2] = callback2(require(6733) /* TextField */.TextField, obj4);
+  items3[2] = callback2(require(6730) /* TextField */.TextField, obj4);
   obj1[4] = items3;
   obj[0] = callback3(tmp12, obj1);
   obj[1] = callback2(tmp11, obj);

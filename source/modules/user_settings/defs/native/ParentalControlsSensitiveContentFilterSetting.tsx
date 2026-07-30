@@ -1,9 +1,9 @@
-// Module ID: 14682
-// Function ID: 14683
+// Module ID: 14676
+// Function ID: 14677
 // Name: route
-// Dependencies: [7756, 676, 10120, 1236, 4696, 14683, 2]
+// Dependencies: [7753, 676, 10116, 1236, 4696, 14677, 2]
 
-// Module 14682 (route)
+// Module 14676 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -19,7 +19,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.FAMILY_CENTER_PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
   getComponent() {
-    return require(14683) /* UserSettingsSensitiveContentFilters */.default;
+    return require(14677) /* UserSettingsSensitiveContentFilters */.default;
   }
 };
 const route = createToggle.createRoute(obj);

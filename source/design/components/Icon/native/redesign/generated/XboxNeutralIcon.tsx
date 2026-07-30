@@ -1,10 +1,10 @@
-// Module ID: 8509
-// Function ID: 8510
+// Module ID: 8506
+// Function ID: 8507
 // Name: XboxNeutralIcon
-// Dependencies: [19, 21, 712, 3892, 8510, 2]
+// Dependencies: [19, 21, 712, 3892, 8507, 2]
 // Exports: XboxNeutralIcon
 
-// Module 8509 (XboxNeutralIcon)
+// Module 8506 (XboxNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const XboxNeutralIcon = function XboxNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8510) /* registerAsset */;
+  obj[0] = require(8507) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

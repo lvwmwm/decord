@@ -1,10 +1,10 @@
-// Module ID: 16364
-// Function ID: 16365
+// Module ID: 16358
+// Function ID: 16359
 // Name: componentDidMount
-// Dependencies: [19, 1415, 1372, 1932, 4110, 3817, 3826, 1874, 8305, 676, 21, 4189, 712, 1236, 3901, 3889, 5143, 6752, 8304, 10401, 1384, 5548, 4529, 4618, 6727, 4380, 5554, 5220, 7773, 16155, 5555, 7655, 7654, 15130, 1945, 16365, 1416, 9507, 1297, 7644, 5185, 7634, 4598, 5501, 1480, 589, 2]
+// Dependencies: [19, 1415, 1372, 1932, 4110, 3817, 3826, 1874, 8302, 676, 21, 4189, 712, 1236, 3901, 3889, 5143, 6749, 8301, 10397, 1384, 5548, 4529, 4618, 6724, 4380, 5554, 5220, 7770, 16149, 5555, 7652, 7651, 15124, 1945, 16359, 1416, 9503, 1297, 7641, 5185, 7631, 4598, 5501, 1480, 589, 2]
 // Exports: default
 
-// Module 16364 (componentDidMount)
+// Module 16358 (componentDidMount)
 import { isGuildOwnerWithRequiredMfaLevel as closure_3 } from "GuildNSFWContentLevel";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
@@ -82,12 +82,12 @@ class GuildSettingsModalOverview extends PureComponent {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
     closure_0 = applyArgumentsResult;
     applyArgumentsResult.handleNameChange = function handleNameChange(name) {
-      let obj = callback(8304);
+      let obj = callback(8301);
       obj = { name };
       obj.updateGuild(obj);
     };
     applyArgumentsResult.handleDescriptionChange = function handleDescriptionChange(description) {
-      let obj = callback(8304);
+      let obj = callback(8301);
       obj = { description };
       obj.updateGuild(obj);
     };
@@ -199,7 +199,7 @@ class GuildSettingsModalOverview extends PureComponent {
       outer1_1(outer1_2[18]).deleteGuild(applyArgumentsResult.props.guild.id);
     };
     applyArgumentsResult.handleSplashChange = function handleSplashChange(splash) {
-      let obj = callback(8304);
+      let obj = callback(8301);
       obj = { splash };
       obj.updateGuild(obj);
     };
@@ -213,7 +213,7 @@ class GuildSettingsModalOverview extends PureComponent {
       outer1_1(outer1_2[18]).updateGuild({ features: set });
     };
     applyArgumentsResult.handleBannerChange = function handleBannerChange(banner) {
-      let obj = callback(8304);
+      let obj = callback(8301);
       obj = { banner };
       obj.updateGuild(obj);
     };
@@ -236,7 +236,7 @@ class GuildSettingsModalOverview extends PureComponent {
       outer1_1(outer1_2[18]).saveGuild(id, { name, icon, afkChannelId, afkTimeout, systemChannelId, systemChannelFlags, safetyAlertsChannelId, defaultMessageNotifications, splash, banner, description, features, premiumProgressBarEnabled });
     };
     applyArgumentsResult.handleBoostProgressBarToggle = function handleBoostProgressBarToggle(premiumProgressBarEnabled) {
-      let obj = callback(8304);
+      let obj = callback(8301);
       obj = { premiumProgressBarEnabled };
       obj.updateGuild(obj);
     };
@@ -288,7 +288,7 @@ prototype["updateNavigator"] = function updateNavigator(submitting) {
   }
 };
 prototype["componentWillUnmount"] = function componentWillUnmount() {
-  importDefault(8304).cancelChanges(this.props.guild.id);
+  importDefault(8301).cancelChanges(this.props.guild.id);
 };
 prototype["getError"] = function getError(arg0) {
   const errors = this.props.errors;
@@ -303,10 +303,10 @@ prototype["getError"] = function getError(arg0) {
 prototype["handleSystemChannelFlagsChange"] = function handleSystemChannelFlagsChange(SUPPRESS_GUILD_REMINDER_NOTIFICATIONS, arg1) {
   const obj = require(1384) /* hasFlag */;
   const setFlagResult = require(1384) /* hasFlag */.setFlag(this.props.guild.systemChannelFlags, SUPPRESS_GUILD_REMINDER_NOTIFICATIONS, arg1);
-  importDefault(8304).updateGuild({ systemChannelFlags: setFlagResult });
+  importDefault(8301).updateGuild({ systemChannelFlags: setFlagResult });
 };
 prototype["handleDefaultNotificationsChange"] = function handleDefaultNotificationsChange(defaultMessageNotifications) {
-  let obj = importDefault(8304);
+  let obj = importDefault(8301);
   obj = { defaultMessageNotifications };
   obj.updateGuild(obj);
 };
@@ -321,7 +321,7 @@ prototype["renderGuildName"] = function renderGuildName() {
   obj[2] = !canManage;
   obj[3] = this.handleNameChange;
   obj[4] = this.getError("name");
-  return callback2(require(6727) /* TextInput */.TextInput, obj);
+  return callback2(require(6724) /* TextInput */.TextInput, obj);
 };
 prototype["renderAFKSettings"] = function renderAFKSettings() {
   let afkChannel;
@@ -390,7 +390,7 @@ prototype["renderSystemMessageSettings"] = function renderSystemMessageSettings(
     const intl = require(1236) /* getSystemLocale */.intl;
     channelName = intl.string(require(1236) /* getSystemLocale */.t.ibUhoa);
   }
-  let tmpResult = tmp(7773);
+  let tmpResult = tmp(7770);
   const result = tmpResult.isEligibleForRoleSubscriptionPurchaseSystemMessageSettings(guild);
   let hasFlagResult = result;
   if (!result) {
@@ -402,7 +402,7 @@ prototype["renderSystemMessageSettings"] = function renderSystemMessageSettings(
     hasFlagResult1 = tmp(1384).hasFlag(guild.systemChannelFlags, constants4.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
     const tmpResult1 = tmp(1384);
   }
-  let result1 = tmp(16155).isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
+  let result1 = tmp(16149).isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
   if (!result1) {
     result1 = tmp(1384).hasFlag(guild.systemChannelFlags, constants4.SUPPRESS_VOICE_SESSION_NOTIFICATIONS);
     const tmpResult3 = tmp(1384);
@@ -424,7 +424,7 @@ prototype["renderSystemMessageSettings"] = function renderSystemMessageSettings(
   obj1[0] = intl5.string(tmp(1236).t["+f0bXQ"]);
   obj1[1] = !canManage;
   const tmp15 = closure_20;
-  const tmpResult2 = tmp(16155);
+  const tmpResult2 = tmp(16149);
   obj1[2] = !tmp(1384).hasFlag(guild.systemChannelFlags, constants4.SUPPRESS_JOIN_NOTIFICATIONS);
   obj1[3] = self.handleSystemJoinMessages;
   items[1] = callback2(tmp(5555).TableSwitchRow, obj1);
@@ -515,20 +515,20 @@ prototype["renderDefaultNotificationSettings"] = function renderDefaultNotificat
   }
   obj[2] = stringResult;
   obj[3] = !canManage;
-  const items = [closure_19(self(7654).TableRadioRow, obj), ];
+  const items = [closure_19(self(7651).TableRadioRow, obj), ];
   obj = { value: constants.ONLY_MENTIONS, label: null, disabled: null };
   const intl5 = tmp2(1236).intl;
   obj[1] = intl5.format(self(1236).t.L2hmYy, {});
   obj[2] = !canManage;
-  items[1] = closure_19(self(7654).TableRadioRow, obj);
+  items[1] = closure_19(self(7651).TableRadioRow, obj);
   obj[5] = items;
-  return closure_20(self(7655).TableRadioGroup, obj);
+  return closure_20(self(7652).TableRadioGroup, obj);
 };
 prototype["renderBoostProgressBar"] = function renderBoostProgressBar() {
   let canManage;
   let guild;
   ({ guild, canManage } = this.props);
-  let obj = require(15130) /* apexExperiment */;
+  let obj = require(15124) /* apexExperiment */;
   let tmp3 = null;
   if (obj.getMobileBoostProgressBarEnabled("GuildSettingsModalOverview")) {
     obj = { title: null, description: null, hasIcons: false, children: null };
@@ -575,7 +575,7 @@ prototype["renderSplash"] = function renderSplash() {
     };
     obj[4] = this.handleSplashChange;
     obj[5] = { width: 1920, height: 1080 };
-    obj[5] = closure_19(importDefault(16365), obj);
+    obj[5] = closure_19(importDefault(16359), obj);
     tmp = tmp2(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj);
     const obj3 = importDefault(1945);
     const tmp5 = importDefault;
@@ -585,7 +585,7 @@ prototype["renderSplash"] = function renderSplash() {
 prototype["renderSummaries"] = function renderSummaries() {
   const props = this.props;
   const guild = props.guild;
-  let obj = require(9507) /* canSeeChannelSummaries */;
+  let obj = require(9503) /* canSeeChannelSummaries */;
   if (obj.canGuildUseConversationSummaries(guild, false)) {
     const intl = tmp(1236).intl;
     obj = { helpdeskArticle: null };
@@ -628,7 +628,7 @@ prototype["renderDescription"] = function renderDescription() {
   obj[5] = this.handleDescriptionChange;
   const intl3 = tmp2(1236).intl;
   obj[6] = intl3.string(require(1236) /* getSystemLocale */.t.Nvfowl);
-  return closure_19(require(7644) /* TextArea */.TextArea, obj);
+  return closure_19(require(7641) /* TextArea */.TextArea, obj);
 };
 prototype["renderBanner"] = function renderBanner() {
   let canManage;
@@ -657,7 +657,7 @@ prototype["renderBanner"] = function renderBanner() {
     };
     obj[4] = this.handleBannerChange;
     obj[5] = { width: 960, height: 540 };
-    obj[5] = closure_19(importDefault(16365), obj);
+    obj[5] = closure_19(importDefault(16359), obj);
     return closure_19(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj);
   } else {
     return null;
@@ -690,7 +690,7 @@ prototype["render"] = function render() {
   const items1 = [this.renderGuildName(), this.renderSummaries(), this.renderAFKSettings(), this.renderSystemMessageSettings(), this.renderDefaultNotificationSettings(), this.renderBoostProgressBar(), this.renderDescription(), this.renderBanner(), this.renderSplash(), this.renderDeleteGuild()];
   obj[2] = items1;
   obj[2] = callback3(require(4598) /* Stack */.Stack, obj);
-  const items2 = [callback2(require(7634) /* Form */.Form, obj), callback2(require(5501) /* NavScrim */.NavScrim, {})];
+  const items2 = [callback2(require(7631) /* Form */.Form, obj), callback2(require(5501) /* NavScrim */.NavScrim, {})];
   obj[0] = items2;
   return callback3(closure_21, obj);
 };

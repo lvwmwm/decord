@@ -1,9 +1,9 @@
-// Module ID: 6352
-// Function ID: 6353
+// Module ID: 6349
+// Function ID: 6350
 // Name: productSK2ToIAPProduct
-// Dependencies: [5, 17, 3870, 5670, 6333, 2]
+// Dependencies: [5, 17, 3870, 5670, 6330, 2]
 
-// Module 6352 (productSK2ToIAPProduct)
+// Module 6349 (productSK2ToIAPProduct)
 import closure_2 from "set";
 import { convertToAlpha2 } from "DEFAULT_COUNTRY_CODE_NAME";
 import set from "DEFAULT_COUNTRY_CODE_NAME";
@@ -195,7 +195,7 @@ prototype["fetchProducts"] = function fetchProducts(arg0) {
               let callback = tmp7;
               callback = undefined;
               let c3 = 1;
-              let obj1 = callback(6333);
+              let obj1 = callback(6330);
               obj1 = { skus: null };
               obj1[0] = outer1_0;
               const products = obj1.getProducts(obj1);

@@ -1,10 +1,10 @@
-// Module ID: 16442
-// Function ID: 16443
+// Module ID: 16436
+// Function ID: 16437
 // Name: ConnectedGuildSettingsModalRoles
-// Dependencies: [32, 19, 17, 1302, 1936, 1218, 4110, 1935, 1862, 3817, 5204, 16443, 16444, 676, 21, 4189, 712, 5109, 698, 16445, 589, 16350, 8304, 1480, 6561, 3822, 4384, 16446, 16455, 16456, 5554, 1236, 4717, 11328, 4185, 4035, 16457, 16458, 16459, 16460, 5141, 4600, 16461, 6752, 11872, 500, 16453, 5105, 5205, 9239, 7634, 1297, 8288, 15251, 5501, 2]
+// Dependencies: [32, 19, 17, 1302, 1936, 1218, 4110, 1935, 1862, 3817, 5204, 16437, 16438, 676, 21, 4189, 712, 5109, 698, 16439, 589, 16344, 8301, 1480, 6558, 3822, 4384, 16440, 16449, 16450, 5554, 1236, 4717, 11324, 4185, 4035, 16451, 16452, 16453, 16454, 5141, 4600, 16455, 6749, 11868, 500, 16447, 5105, 5205, 9235, 7631, 1297, 8285, 15245, 5501, 2]
 // Exports: default
 
-// Module 16442 (ConnectedGuildSettingsModalRoles)
+// Module 16436 (ConnectedGuildSettingsModalRoles)
 import PressableBase from "PressableBase";
 import setRoleJustCreated from "setRoleJustCreated";
 import get_ActivityIndicator from "createTextStyle";
@@ -107,7 +107,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   let obj1 = sortedGuildRoles(1480);
   const navigation = obj1.useNavigation();
   str = navigation;
-  const tmp7 = first(6561)();
+  const tmp7 = first(6558)();
   dependencyMap = tmp7;
   let obj2 = sortedGuildRoles(589);
   let items = [memberCount];
@@ -161,7 +161,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   highestRole = stateFromStoresObject.highestRole;
   sortedGuildRoles = ref;
   first = undefined;
-  let obj4 = sortedGuildRoles(16445);
+  let obj4 = sortedGuildRoles(16439);
   const guildSettingsRolesManagerState = obj4.useGuildSettingsRolesManagerState((roleJustCreated) => roleJustCreated.roleJustCreated);
   first = guildSettingsRolesManagerState;
   let items2 = [ref, guildSettingsRolesManagerState];
@@ -211,10 +211,10 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
       tmp = first;
     }
     if (!tmp) {
-      first(16350).terminate();
-      const obj = first(16350);
-      first(8304).close();
-      const obj2 = first(8304);
+      first(16344).terminate();
+      const obj = first(16344);
+      first(8301).close();
+      const obj2 = first(8301);
     }
   }, items4);
   let tmp14 = callback(React.useState(false), 2);
@@ -324,7 +324,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
     obj.track(stateFromStoresArray.OPEN_MODAL, obj);
     const obj3 = sortedGuildRoles(4384);
     const tmp = first;
-    first(16446).open();
+    first(16440).open();
   }, items10);
   const items11 = [navigation];
   callback3 = obj.useCallback((role) => {
@@ -352,8 +352,8 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
       tmp = null != ref;
     }
     if (tmp) {
-      sortedGuildRoles(16455).batchRoleUpdate(ref.id, updates);
-      const obj = sortedGuildRoles(16455);
+      sortedGuildRoles(16449).batchRoleUpdate(ref.id, updates);
+      const obj = sortedGuildRoles(16449);
     }
     callback5();
   }, items14);
@@ -365,7 +365,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
     } else {
       to = to.to;
     }
-    first(16456).updateRoleOrder(to.from, to);
+    first(16450).updateRoleOrder(to.from, to);
   }, items15);
   const items16 = [tmp, roleData, tmp21, first, callback5];
   const callback8 = obj.useCallback(() => {
@@ -393,7 +393,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
         obj1[3] = tmp3.reorderButton;
         const obj2 = { color: null, size: "sm" };
         obj2[0] = first(712).colors.TEXT_LINK;
-        const items2 = [tmp6(tmp7(11328).ArrowsUpDownIcon, obj2), ];
+        const items2 = [tmp6(tmp7(11324).ArrowsUpDownIcon, obj2), ];
         const obj3 = { style: null, variant: "text-sm/medium", color: "text-link", children: null };
         obj3[0] = tmp3.reorderButtonText;
         const intl3 = tmp7(1236).intl;
@@ -425,16 +425,16 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
     let tmp4 = dependencyMap;
     if (dependencyMap) {
       if (isThemeDarkResult) {
-        tmp4 = 16457;
+        tmp4 = 16451;
         let tmp3Result = tmp3(tmp4);
       } else {
-        tmp3Result = tmp3(16458);
+        tmp3Result = tmp3(16452);
       }
     } else {
       if (isThemeDarkResult) {
-        tmp3Result = tmp3(16459);
+        tmp3Result = tmp3(16453);
       } else {
-        tmp3Result = tmp3(16460);
+        tmp3Result = tmp3(16454);
       }
       if (hasRoles) {
         const items = [first.subheaderContainer, ];
@@ -528,7 +528,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
           return callback(closure_6);
         };
         obj[3] = tmp.id;
-        obj[1] = hasRoles(first(16461), obj);
+        obj[1] = hasRoles(first(16455), obj);
         return hasRoles(callback, obj);
       }
     }
@@ -577,7 +577,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
         };
       }
       obj[11] = fn2;
-      return tmp22(first(16461), obj, role.id);
+      return tmp22(first(16455), obj, role.id);
     }
   }, items19);
   const items20 = [callback2, callback6, callback5, hasRoles, first, navigation];
@@ -618,8 +618,8 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   const effect3 = obj.useEffect(() => {
     if (first) {
       if (null != setRoleJustCreated) {
-        first(16456).startReordering(tmp2.id);
-        const obj2 = first(16456);
+        first(16450).startReordering(tmp2.id);
+        const obj2 = first(16450);
       }
       if (obj3.isIOS()) {
         let obj = { gestureEnabled: null };
@@ -627,13 +627,13 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
         str.setOptions(obj);
       }
     }
-    obj = first(16456);
+    obj = first(16450);
     obj.stopReordering();
   }, items21);
   const items22 = [guild, memberCount];
   const effect4 = obj.useEffect(() => {
     if (null != setRoleJustCreated) {
-      if (memberCount <= sortedGuildRoles(16453).MAX_PREFETCH_MEMBER_COUNT) {
+      if (memberCount <= sortedGuildRoles(16447).MAX_PREFETCH_MEMBER_COUNT) {
         const obj = first(5105);
         const members = obj.requestMembers(tmp.id, "", 0, false);
       }
@@ -654,7 +654,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
     obj[0] = tmp.searchWrapper;
     obj = { size: "md", onChange: null };
     obj[1] = callback1;
-    obj[1] = hasRoles(tmp3(9239).SearchField, obj);
+    obj[1] = hasRoles(tmp3(9235).SearchField, obj);
     tmp44 = hasRoles(callback, obj);
   }
   const items24 = [tmp44, , , ];
@@ -667,13 +667,13 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
       obj2 = { style: null, size: null, source: null };
       obj2[0] = tmp.emptyRolesIcon;
       obj2[1] = tmp3(1297).Icon.Sizes.LARGE;
-      obj2[2] = tmp6(8288);
+      obj2[2] = tmp6(8285);
       obj1[0] = tmp47(tmp3(1297).Icon, obj2);
       obj3 = { variant: "text-md/semibold", color: "interactive-text-default", children: null };
       let intl = tmp3(1236).intl;
       obj3[2] = intl.string(tmp3(1236).t.nZfHsf);
       obj1[1] = tmp47(tmp3(4185).Text, obj3);
-      tmp47Result = tmp47(tmp3(7634).FormRow, obj1);
+      tmp47Result = tmp47(tmp3(7631).FormRow, obj1);
     }
     obj4 = { children: null };
     items25[1] = tmp47Result;
@@ -720,7 +720,7 @@ export default function ConnectedGuildSettingsModalRoles(guildId) {
   let obj8 = { children: null };
   obj6[8] = tmp56;
   obj6[9] = callback11;
-  obj5[1] = hasRoles(first(15251), obj6);
+  obj5[1] = hasRoles(first(15245), obj6);
   items24[2] = hasRoles(callback, obj5);
   items24[3] = hasRoles(sortedGuildRoles(5501).NavScrim, {});
   obj8[0] = items24;

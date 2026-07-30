@@ -1,10 +1,10 @@
-// Module ID: 6185
-// Function ID: 6186
+// Module ID: 6182
+// Function ID: 6183
 // Name: getAutoArchiveOptions
 // Dependencies: [1235, 687, 1236, 731, 3771, 2]
 // Exports: getAutoArchiveDuration, getAutoArchiveDurationText
 
-// Module 6185 (getAutoArchiveOptions)
+// Module 6182 (getAutoArchiveOptions)
 import { DEFAULT_AUTO_ARCHIVE_DURATION as closure_3 } from "AbortCodes";
 
 function getAutoArchiveOptions() {

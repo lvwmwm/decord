@@ -35,7 +35,7 @@ if (!fn) {
     }
     if (null != obj) {
       const _Object3 = Object;
-      if (typeof Object.getOwnPropertySymbols !== "_") {
+      if (typeof Object.getOwnPropertySymbols !== "ZodObject") {
         const _Object4 = Object;
         const ownPropertySymbols = Object.getOwnPropertySymbols(obj);
         let num = 0;

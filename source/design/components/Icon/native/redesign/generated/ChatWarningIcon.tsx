@@ -1,10 +1,10 @@
-// Module ID: 11545
-// Function ID: 11546
+// Module ID: 11541
+// Function ID: 11542
 // Name: ChatWarningIcon
-// Dependencies: [19, 21, 712, 3892, 7800, 2]
+// Dependencies: [19, 21, 712, 3892, 7797, 2]
 // Exports: ChatWarningIcon
 
-// Module 11545 (ChatWarningIcon)
+// Module 11541 (ChatWarningIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ChatWarningIcon = function ChatWarningIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(7800) /* registerAsset */;
+  obj[0] = require(7797) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

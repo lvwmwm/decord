@@ -1,10 +1,10 @@
-// Module ID: 15627
-// Function ID: 15628
+// Module ID: 15621
+// Function ID: 15622
 // Name: MobileShopButtonCoachmark
-// Dependencies: [19, 17, 1369, 21, 4189, 712, 15616, 1236, 8430, 2]
+// Dependencies: [19, 17, 1369, 21, 4189, 712, 15610, 1236, 8427, 2]
 // Exports: default
 
-// Module 15627 (MobileShopButtonCoachmark)
+// Module 15621 (MobileShopButtonCoachmark)
 import noop from "noop";
 import { Image } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";

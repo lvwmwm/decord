@@ -1,9 +1,9 @@
-// Module ID: 5858
-// Function ID: 5859
+// Module ID: 5856
+// Function ID: 5857
 // Name: removePendingListFetch
-// Dependencies: [1218, 1372, 3826, 1931, 1874, 5859, 5860, 1386, 11, 4409, 5861, 1351, 3828, 589, 709, 2]
+// Dependencies: [1218, 1372, 3826, 1931, 1874, 5857, 5858, 1386, 11, 4409, 5859, 1351, 3828, 589, 709, 2]
 
-// Module 5858 (removePendingListFetch)
+// Module 5856 (removePendingListFetch)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import upsertRelationship from "upsertRelationship";
@@ -533,7 +533,7 @@ obj = {
     ({ channelId, rawConversations, direction, anchor, isJump, fullyHydrated } = requestKey);
     let set;
     if (removePendingListFetch(channelId, requestKey.requestKey)) {
-      const mapped = rawConversations.map(set(5861).mapConversation);
+      const mapped = rawConversations.map(set(5859).mapConversation);
       const found = mapped.filter(set(1351).isNotNullish);
       const peekResult = tmp3.peek(channelId);
       if (isJump) {

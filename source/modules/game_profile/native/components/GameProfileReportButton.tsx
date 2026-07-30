@@ -1,10 +1,10 @@
-// Module ID: 11942
-// Function ID: 11943
+// Module ID: 11938
+// Function ID: 11939
 // Name: GameProfileReportButton
-// Dependencies: [19, 21, 4157, 8486, 4395, 11943, 1959, 11943, 4600, 1236, 2]
+// Dependencies: [19, 21, 4157, 8483, 4395, 11939, 1959, 11939, 4600, 1236, 2]
 // Exports: default
 
-// Module 11942 (GameProfileReportButton)
+// Module 11938 (GameProfileReportButton)
 import noop from "noop";
 import { jsx } from "jsxProd";
 

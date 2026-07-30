@@ -1,10 +1,10 @@
-// Module ID: 12016
-// Function ID: 12017
+// Module ID: 12010
+// Function ID: 12011
 // Name: useActivityTimer
-// Dependencies: [32, 19, 687, 7914, 4074, 2]
+// Dependencies: [32, 19, 687, 7911, 4074, 2]
 // Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 12016 (useActivityTimer)
+// Module 12010 (useActivityTimer)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
@@ -67,5 +67,5 @@ export const formatTimeForA11yLabel = function formatTimeForA11yLabel(arg0) {
   const rounded1 = Math.floor(arg0 / importDefault(687).Seconds.MINUTE);
   const minutes = rounded1 % importDefault(687).Seconds.MINUTE;
   const hours = Math.floor(arg0 / importDefault(687).Seconds.HOUR);
-  return require(7914) /* calculateTimestampDurations */.formatTimestampToA11yLabel({ hours, minutes, seconds });
+  return require(7911) /* calculateTimestampDurations */.formatTimestampToA11yLabel({ hours, minutes, seconds });
 };

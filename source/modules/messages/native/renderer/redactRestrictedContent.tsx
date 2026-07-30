@@ -1,9 +1,9 @@
-// Module ID: 7883
-// Function ID: 7884
+// Module ID: 7880
+// Function ID: 7881
 // Name: nodeToText
 // Dependencies: [2]
 
-// Module 7883 (nodeToText)
+// Module 7880 (nodeToText)
 function nodeToText(content) {
   let str = "";
   if (null != content) {

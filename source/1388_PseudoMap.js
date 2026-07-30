@@ -14,7 +14,7 @@ class PseudoMap {
         if (!(global instanceof tmp)) {
           tmp9 = globalThis;
           _Map = Map;
-          if (typeof Map !== "_") {
+          if (typeof Map !== "ZodObject") {
             _Map2 = Map;
           }
           _Array = Array;

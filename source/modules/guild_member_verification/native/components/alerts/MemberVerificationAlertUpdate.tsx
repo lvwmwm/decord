@@ -1,10 +1,10 @@
-// Module ID: 9160
-// Function ID: 9161
+// Module ID: 9156
+// Function ID: 9157
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 17, 676, 21, 4189, 4618, 1236, 3886, 9161, 4185, 2]
+// Dependencies: [19, 17, 676, 21, 4189, 4618, 1236, 3886, 9157, 4185, 2]
 // Exports: default
 
-// Module 9160 (MemberVerificationAlertUpdate)
+// Module 9156 (MemberVerificationAlertUpdate)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { DownloadLinks } from "ME";
@@ -30,7 +30,7 @@ export default function MemberVerificationAlertUpdate(onClose) {
     return callback(table[7]).openURL(constants.IOS);
   };
   obj.onCancel = onClose.onClose;
-  obj = { source: importDefault(9161), style: tmp.headerImage };
+  obj = { source: importDefault(9157), style: tmp.headerImage };
   const items = [callback(Image, obj), , ];
   obj = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;

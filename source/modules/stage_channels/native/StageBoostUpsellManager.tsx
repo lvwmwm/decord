@@ -1,9 +1,9 @@
-// Module ID: 16317
-// Function ID: 16318
+// Module ID: 16311
+// Function ID: 16312
 // Name: handleVoiceChannelSelect
-// Dependencies: [3882, 1372, 3817, 1931, 5004, 5134, 4157, 5007, 8837, 1380, 5019, 1959, 2]
+// Dependencies: [3882, 1372, 3817, 1931, 5004, 5134, 4157, 5007, 8833, 1380, 5019, 1959, 2]
 
-// Module 16317 (handleVoiceChannelSelect)
+// Module 16311 (handleVoiceChannelSelect)
 import setContent from "setContent";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -53,7 +53,7 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates() {
                 const obj3 = importDefault(4157);
               }
             }
-            tmp5Result = tmp5(8837);
+            tmp5Result = tmp5(8833);
           }
           tmp6 = dependencyMap;
         }

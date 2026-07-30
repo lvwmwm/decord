@@ -1,10 +1,10 @@
-// Module ID: 9275
-// Function ID: 9276
+// Module ID: 9271
+// Function ID: 9272
 // Name: overrideSurvey
-// Dependencies: [9274, 676, 709, 698, 4999, 503, 1385, 530, 2]
+// Dependencies: [9270, 676, 709, 698, 4999, 503, 1385, 530, 2]
 // Exports: overrideSurvey, surveyFetch, surveyHide, surveySeen
 
-// Module 9275 (overrideSurvey)
+// Module 9271 (overrideSurvey)
 import fetchSurveyIfNeeded from "fetchSurveyIfNeeded";
 import { SURVEY_REFETCH_INTERVAL } from "fetchSurveyIfNeeded";
 import ME from "ME";

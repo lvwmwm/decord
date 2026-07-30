@@ -1,10 +1,10 @@
-// Module ID: 8465
-// Function ID: 8466
+// Module ID: 8462
+// Function ID: 8463
 // Name: badgeVariants
-// Dependencies: [8463, 8466, 8467, 8468, 8469, 8470, 8471, 8472, 8473, 4035, 8462, 2]
+// Dependencies: [8460, 8463, 8464, 8465, 8466, 8467, 8468, 8469, 8470, 4035, 8459, 2]
 // Exports: getGuildBadgeImageSource, resolveImageSource
 
-// Module 8465 (badgeVariants)
+// Module 8462 (badgeVariants)
 const require = arg1;
 let obj = {};
 obj = { imageSource: null };
@@ -48,9 +48,9 @@ export const resolveImageSource = function resolveImageSource(premiumImageSource
   imageSource = premiumImageSource.imageSource;
 };
 export const getGuildBadgeImageSource = function getGuildBadgeImageSource(guild, closure_2) {
-  const obj = require(8462) /* GuildVisibility */;
+  const obj = require(8459) /* GuildVisibility */;
   const guildTraits = obj.getGuildTraits(guild);
-  const obj2 = require(8463) /* BadgeCategory */;
+  const obj2 = require(8460) /* BadgeCategory */;
   const tmp4 = obj[obj2.getBadgeCategory(obj2, guildTraits)];
   if (null == tmp4) {
     return null;

@@ -1,28 +1,30 @@
-// Module ID: 12865
-// Function ID: 12866
+// Module ID: 12859
+// Function ID: 12860
 // Name: noop
-// Dependencies: [706, 4250, 687, 4289, 584, 3, 4265, 500, 38, 2]
+// Dependencies: [706, 4236, 4250, 687, 4289, 584, 3, 4265, 12860, 500, 38, 2]
 
-// Module 12865 (noop)
+// Module 12859 (noop)
 import refreshSourceMapCookie from "refreshSourceMapCookie";
+import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import DesktopSources from "DesktopSources";
 import "on";
 
-let c4;
 let c5;
 let closure_6;
+let error;
+let metroImportAll;
 const require = arg1;
 function noop() {
 
 }
-({ MediaEngineContextTypes: c4, MediaTypes: c5, SpeakingFlags: closure_6 } = DesktopSources);
-let obj = { IDENTIFY: 0, [0]: "IDENTIFY", SELECT_PROTOCOL: 1, [1]: "SELECT_PROTOCOL", READY: 2, [2]: "READY", HEARTBEAT: 3, [3]: "HEARTBEAT", SELECT_PROTOCOL_ACK: 4, [4]: "SELECT_PROTOCOL_ACK", SPEAKING: 5, [5]: "SPEAKING", HEARTBEAT_ACK: 6, [6]: "HEARTBEAT_ACK", RESUME: 7, [7]: "RESUME", HELLO: 8, [8]: "HELLO", RESUMED: 9, [9]: "RESUMED", CLIENT_CONNECT: 11, [11]: "CLIENT_CONNECT", VIDEO: 12, [12]: "VIDEO", CLIENT_DISCONNECT: 13, [13]: "CLIENT_DISCONNECT", SESSION_UPDATE: 14, [14]: "SESSION_UPDATE", MEDIA_SINK_WANTS: 15, [15]: "MEDIA_SINK_WANTS", VOICE_BACKEND_VERSION: 16, [16]: "VOICE_BACKEND_VERSION", CHANNEL_OPTIONS_UPDATE: 17, [17]: "CHANNEL_OPTIONS_UPDATE", FLAGS: 18, [18]: "FLAGS", PLATFORM: 20, [20]: "PLATFORM", DAVE_PROTOCOL_PREPARE_TRANSITION: 21, [21]: "DAVE_PROTOCOL_PREPARE_TRANSITION", DAVE_PROTOCOL_EXECUTE_TRANSITION: 22, [22]: "DAVE_PROTOCOL_EXECUTE_TRANSITION", DAVE_PROTOCOL_READY_FOR_TRANSITION: 23, [23]: "DAVE_PROTOCOL_READY_FOR_TRANSITION", DAVE_PROTOCOL_PREPARE_EPOCH: 24, [24]: "DAVE_PROTOCOL_PREPARE_EPOCH", MLS_EXTERNAL_SENDER_PACKAGE: 25, [25]: "MLS_EXTERNAL_SENDER_PACKAGE", MLS_KEY_PACKAGE: 26, [26]: "MLS_KEY_PACKAGE", MLS_PROPOSALS: 27, [27]: "MLS_PROPOSALS", MLS_COMMIT_WELCOME: 28, [28]: "MLS_COMMIT_WELCOME", MLS_PREPARE_COMMIT_TRANSITION: 29, [29]: "MLS_PREPARE_COMMIT_TRANSITION", MLS_WELCOME: 30, [30]: "MLS_WELCOME", MLS_INVALID_COMMIT_WELCOME: 31, [31]: "MLS_INVALID_COMMIT_WELCOME", CLIENT_CANNOT_REACH_RTC_SERVER: 32, [32]: "CLIENT_CANNOT_REACH_RTC_SERVER" };
-let closure_9 = { AUTHENTICATION_FAILED: 4004, [4004]: "AUTHENTICATION_FAILED", INVALID_SESSION: 4006, [4006]: "INVALID_SESSION", SERVER_NOT_FOUND: 4011, [4011]: "SERVER_NOT_FOUND", SERVER_CRASH: 4015, [4015]: "SERVER_CRASH", CANCELED: 4016, [4016]: "CANCELED", HEARTBEAT_TIMEOUT: 4800, [4800]: "HEARTBEAT_TIMEOUT", UNRESUMABLE: 4801, [4801]: "UNRESUMABLE", RESET_BACKOFF: 4802, [4802]: "RESET_BACKOFF" };
-let closure_10 = { DISCONNECTED: 0, [0]: "DISCONNECTED", CONNECTING: 1, [1]: "CONNECTING", IDENTIFYING: 2, [2]: "IDENTIFYING", RESUMING: 3, [3]: "RESUMING", CONNECTED: 4, [4]: "CONNECTED", RECONNECTING: 5, [5]: "RECONNECTING" };
-let closure_11 = 20 * require("set").Millis.SECOND;
+({ Features: c5, MediaEngineContextTypes: closure_6, MediaTypes: error, SpeakingFlags: metroImportAll } = DesktopSources);
+let obj = { IDENTIFY: 0, [0]: "IDENTIFY", SELECT_PROTOCOL: 1, [1]: "SELECT_PROTOCOL", READY: 2, [2]: "READY", HEARTBEAT: 3, [3]: "HEARTBEAT", SELECT_PROTOCOL_ACK: 4, [4]: "SELECT_PROTOCOL_ACK", SPEAKING: 5, [5]: "SPEAKING", HEARTBEAT_ACK: 6, [6]: "HEARTBEAT_ACK", RESUME: 7, [7]: "RESUME", HELLO: 8, [8]: "HELLO", RESUMED: 9, [9]: "RESUMED", CLIENT_CONNECT: 11, [11]: "CLIENT_CONNECT", VIDEO: 12, [12]: "VIDEO", CLIENT_DISCONNECT: 13, [13]: "CLIENT_DISCONNECT", SESSION_UPDATE: 14, [14]: "SESSION_UPDATE", MEDIA_SINK_WANTS: 15, [15]: "MEDIA_SINK_WANTS", VOICE_BACKEND_VERSION: 16, [16]: "VOICE_BACKEND_VERSION", CHANNEL_OPTIONS_UPDATE: 17, [17]: "CHANNEL_OPTIONS_UPDATE", FLAGS: 18, [18]: "FLAGS", PLATFORM: 20, [20]: "PLATFORM", DAVE_PROTOCOL_PREPARE_TRANSITION: 21, [21]: "DAVE_PROTOCOL_PREPARE_TRANSITION", DAVE_PROTOCOL_EXECUTE_TRANSITION: 22, [22]: "DAVE_PROTOCOL_EXECUTE_TRANSITION", DAVE_PROTOCOL_READY_FOR_TRANSITION: 23, [23]: "DAVE_PROTOCOL_READY_FOR_TRANSITION", DAVE_PROTOCOL_PREPARE_EPOCH: 24, [24]: "DAVE_PROTOCOL_PREPARE_EPOCH", MLS_EXTERNAL_SENDER_PACKAGE: 25, [25]: "MLS_EXTERNAL_SENDER_PACKAGE", MLS_KEY_PACKAGE: 26, [26]: "MLS_KEY_PACKAGE", MLS_PROPOSALS: 27, [27]: "MLS_PROPOSALS", MLS_COMMIT_WELCOME: 28, [28]: "MLS_COMMIT_WELCOME", MLS_PREPARE_COMMIT_TRANSITION: 29, [29]: "MLS_PREPARE_COMMIT_TRANSITION", MLS_WELCOME: 30, [30]: "MLS_WELCOME", MLS_INVALID_COMMIT_WELCOME: 31, [31]: "MLS_INVALID_COMMIT_WELCOME", CLIENT_CANNOT_REACH_RTC_SERVER: 32, [32]: "CLIENT_CANNOT_REACH_RTC_SERVER", SFU_UPDATE: 33, [33]: "SFU_UPDATE" };
+let closure_11 = { AUTHENTICATION_FAILED: 4004, [4004]: "AUTHENTICATION_FAILED", INVALID_SESSION: 4006, [4006]: "INVALID_SESSION", SERVER_NOT_FOUND: 4011, [4011]: "SERVER_NOT_FOUND", SERVER_CRASH: 4015, [4015]: "SERVER_CRASH", CANCELED: 4016, [4016]: "CANCELED", HEARTBEAT_TIMEOUT: 4800, [4800]: "HEARTBEAT_TIMEOUT", UNRESUMABLE: 4801, [4801]: "UNRESUMABLE", RESET_BACKOFF: 4802, [4802]: "RESET_BACKOFF" };
+let closure_12 = { DISCONNECTED: 0, [0]: "DISCONNECTED", CONNECTING: 1, [1]: "CONNECTING", IDENTIFYING: 2, [2]: "IDENTIFYING", RESUMING: 3, [3]: "RESUMING", CONNECTED: 4, [4]: "CONNECTED", RECONNECTING: 5, [5]: "RECONNECTING" };
+let closure_13 = 20 * require("set").Millis.SECOND;
 const MINUTE = require("set").Millis.MINUTE;
-let closure_13 = 5 * require("set").Millis.SECOND;
-obj = { Connecting: "connecting", Connect: "connect", Disconnect: "disconnect", Resuming: "resuming", Ready: "ready", Speaking: "speaking", Video: "video", Ping: "ping", ClientConnect: "client-connect", ClientDisconnect: "client-disconnect", Codecs: "codecs", MediaSessionId: "media-session-id", MediaSinkWants: "media-sink-wants", VoiceBackendVersion: "voice-backend-version", KeyframeInterval: "keyframe-interval", ChannelOptionsUpdateSecureFramesProtocol: "update-secure-frames-protocol", Flags: "flags", Platform: "platform", SDP: "sdp", Encryption: "encryption", BandwidthEstimationExperiment: "bandwidth-estimation-experiment", SecureFramesInit: "secure-frames-init", SecureFramesPrepareTransition: "secure-frames-prepare-transition", SecureFramesExecuteTransition: "secure-frames-execute-transition", SecureFramesPrepareEpoch: "secure-frames-prepare-epoch", MLSExternalSenderPackage: "mls-external-sender-package", MLSProposals: "mls-proposals", MLSPrepareCommitTransition: "mls-prepare-commit-transition", MLSWelcome: "mls-welcome", ReceiveMessage: "receive-message", SendMessage: "send-message" };
+let closure_15 = 5 * require("set").Millis.SECOND;
+obj = { Connecting: "connecting", Connect: "connect", Disconnect: "disconnect", Resuming: "resuming", Ready: "ready", SfuUpdate: "sfu-update", Speaking: "speaking", Video: "video", Ping: "ping", ClientConnect: "client-connect", ClientDisconnect: "client-disconnect", Codecs: "codecs", MediaSessionId: "media-session-id", MediaSinkWants: "media-sink-wants", VoiceBackendVersion: "voice-backend-version", KeyframeInterval: "keyframe-interval", ChannelOptionsUpdateSecureFramesProtocol: "update-secure-frames-protocol", Flags: "flags", Platform: "platform", SDP: "sdp", Encryption: "encryption", BandwidthEstimationExperiment: "bandwidth-estimation-experiment", SecureFramesInit: "secure-frames-init", SecureFramesPrepareTransition: "secure-frames-prepare-transition", SecureFramesExecuteTransition: "secure-frames-execute-transition", SecureFramesPrepareEpoch: "secure-frames-prepare-epoch", MLSExternalSenderPackage: "mls-external-sender-package", MLSProposals: "mls-proposals", MLSPrepareCommitTransition: "mls-prepare-commit-transition", MLSWelcome: "mls-welcome", ReceiveMessage: "receive-message", SendMessage: "send-message" };
 class RTCControlSocket extends tmp3 {
   constructor(arg0) {
     DEFAULT = arg1;
@@ -42,7 +44,7 @@ class RTCControlSocket extends tmp3 {
     logger = tmp6.logger;
     enableNativeLoggerResult = logger.enableNativeLogger(true);
     tmp6.webSocket = null;
-    tmp6.connectionState = CLIENT_CANNOT_REACH_RTC_SERVER.DISCONNECTED;
+    tmp6.connectionState = SFU_UPDATE.DISCONNECTED;
     tmp6.helloTimeout = null;
     tmp6.lastHeartbeatAckTime = null;
     tmp6.heartbeatInterval = null;
@@ -71,24 +73,26 @@ prototype["createWebSocket"] = function createWebSocket() {
     logger2.error("Connect called with already existing websocket");
     self.cleanupWebSocket((close) => close.close(4000));
   }
-  self.connectionStartTime = self(4265).now();
+  let obj = self(4265);
+  self.connectionStartTime = obj.now();
   self.helloTimeout = setTimeout(() => {
-    self.handleClose(false, 0, "The connection timed out after " + self(outer1_2[6]).now() - self.connectionStartTime + " ms - did not receive OP_HELLO in time.");
-  }, closure_11);
-  const webSocket = new WebSocket("" + self.url + "?v=9");
+    self.handleClose(false, 0, "The connection timed out after " + self(outer1_2[7]).now() - self.connectionStartTime + " ms - did not receive OP_HELLO in time.");
+  }, closure_13);
+  obj = { location: "RTCControlSocket", supportsSfuUpdate: _detectH265HardwareDecode.supports(constants.UDP_ENDPOINT_UPDATE) };
+  const webSocket = new WebSocket("" + self.url + "?v=" + self(12860).getVoiceGatewayProtocolVersion(obj));
   self.webSocket = webSocket;
   webSocket.binaryType = "arraybuffer";
   webSocket.onopen = () => {
-    if (self.connectionState === outer1_10.CONNECTING) {
-      obj.emit(outer1_14.Connect);
+    if (self.connectionState === outer1_12.CONNECTING) {
+      obj.emit(outer1_16.Connect);
     } else if (obj.connectionState === tmp.RECONNECTING) {
       obj.doResumeOrClose();
     }
-    self.connectionState = outer1_10.CONNECTED;
-    const diff = self(outer1_2[6]).now() - obj.connectionStartTime;
+    self.connectionState = outer1_12.CONNECTED;
+    const diff = self(outer1_2[7]).now() - obj.connectionStartTime;
     const logger = obj.logger;
     logger.info("[CONNECTED] " + self.url + " in " + diff + " ms");
-    self.emit(outer1_14.Ping, Math.round(diff / 2));
+    self.emit(outer1_16.Ping, Math.round(diff / 2));
   };
   webSocket.onmessage = (data) => {
     let audio_ssrc;
@@ -100,7 +104,7 @@ prototype["createWebSocket"] = function createWebSocket() {
     let video_ssrc;
     const result = self.parseWebSocketMessage(data);
     ({ op, seq, d } = result);
-    self.emit(outer1_14.ReceiveMessage, op, d);
+    self.emit(outer1_16.ReceiveMessage, op, d);
     if (seq) {
       obj.lastRecvSeqNum = seq;
     }
@@ -120,11 +124,13 @@ prototype["createWebSocket"] = function createWebSocket() {
         logger.info("~> " + op + ": " + JSON.stringify(d));
       }
     }
-    if (outer1_8.HELLO === op) {
+    if (outer1_10.HELLO === op) {
       obj.clearHelloTimeout();
       obj.handleHello(d);
     } else if (tmp10.READY === op) {
       obj.handleReady(d);
+    } else if (tmp10.SFU_UPDATE === op) {
+      obj.emit(tmp2.SfuUpdate, d);
     } else if (tmp10.RESUMED === op) {
       obj.handleResumed(d);
     } else if (tmp10.SELECT_PROTOCOL_ACK === op) {
@@ -151,7 +157,7 @@ prototype["createWebSocket"] = function createWebSocket() {
       obj.resumable = true;
     } else if (tmp10.SPEAKING === op) {
       const speaking = d.speaking;
-      if (typeof speaking === "SENTRY_RELEASE") {
+      if (typeof speaking === "sur") {
         obj.emit(tmp2.Speaking, d.user_id, d.ssrc, tmp61);
       }
     } else if (tmp10.HEARTBEAT === op) {
@@ -319,7 +325,7 @@ prototype["doResumeOrClose"] = function doResumeOrClose() {
       }
     }
   }
-  self.disconnect(false, constants2.UNRESUMABLE, "Cannot resume connection.");
+  self.disconnect(false, constants3.UNRESUMABLE, "Cannot resume connection.");
 };
 prototype["doResume"] = function doResume() {
   let logger;
@@ -343,7 +349,7 @@ prototype["doResume"] = function doResume() {
   }
   logger.info("[RESUME] resuming session. serverId=" + serverId + " channelId=" + str + " sessionId=" + str2 + " seqAck=" + num);
   self.emit(obj.Resuming);
-  self.connectionState = constants3.RESUMING;
+  self.connectionState = constants4.RESUMING;
   obj = { token: self.token, session_id: self.sessionId, server_id: self.serverId, channel_id: self.channelId, seq_ack: num };
   self.send(obj.RESUME, obj);
 };
@@ -373,9 +379,9 @@ prototype["handleHello"] = function handleHello(d) {
       if (num2 == null) {
         num2 = NaN;
       }
-      self.heartbeatInterval = Math.min(closure_13, num2);
+      self.heartbeatInterval = Math.min(closure_15, num2);
       tmp4 = tmp;
-      const tmp6 = closure_13;
+      const tmp6 = closure_15;
     }
     tmp = require;
     const tmp2 = dependencyMap;
@@ -435,6 +441,9 @@ prototype["handleReady"] = function handleReady(experiments) {
   }
   self.emit(obj.Ready, ip, port, modes, ssrc, mapped, experiments.experiments);
 };
+prototype["supportsSfuUpdate"] = function supportsSfuUpdate() {
+  return this.serverVersion >= 10;
+};
 prototype["handleResumed"] = function handleResumed(d) {
   const backoff = this.backoff;
   backoff.succeed();
@@ -448,12 +457,12 @@ prototype["handleClose"] = function handleClose(arg0, arg1, arg2) {
   flag = arg0;
   let closure_2 = arg1;
   let closure_0 = arg2;
-  this.connectionState = constants3.DISCONNECTED;
+  this.connectionState = constants4.DISCONNECTED;
   if (!arg0) {
     flag = false;
   }
   self.cleanupWebSocket();
-  if (arg1 !== constants2.AUTHENTICATION_FAILED) {
+  if (arg1 !== constants3.AUTHENTICATION_FAILED) {
     if (arg1 !== tmp2.SERVER_CRASH) {
       if (arg1 !== tmp2.SERVER_NOT_FOUND) {
         if (arg1 !== tmp2.INVALID_SESSION) {
@@ -481,14 +490,14 @@ prototype["disconnect"] = function disconnect(arg0, arg1, arg2) {
   logger.warn("[DISCONNECT] (" + arg0.toString() + ", " + arg1 + ", " + arg2 + ")");
   this.cleanupWebSocket();
   this.cleanupState();
-  this.connectionState = constants3.DISCONNECTED;
+  this.connectionState = constants4.DISCONNECTED;
   this.emit(obj.Disconnect, arg0, arg1, arg2);
 };
 prototype["reconnect"] = function reconnect(arg0, arg1, arg2) {
   const logger = this.logger;
   logger.info("[RECONNECT] wasClean=" + arg0.toString() + " code=" + arg1 + " reason=" + arg2);
   this.cleanupWebSocket((close) => close.close(4000));
-  this.connectionState = constants3.RECONNECTING;
+  this.connectionState = constants4.RECONNECTING;
   const webSocket = this.createWebSocket();
 };
 prototype["cleanupWebSocket"] = function cleanupWebSocket(arg0) {
@@ -575,7 +584,7 @@ prototype["handleHeartbeatTimeout"] = function handleHeartbeatTimeout() {
   const self = this;
   this.cleanupWebSocket((close) => close.close(4000));
   ({ backoff, logger } = this);
-  const result = backoff.fail(() => self.reconnect(false, outer1_9.HEARTBEAT_TIMEOUT, "Heartbeat timeout.")) / 1000;
+  const result = backoff.fail(() => self.reconnect(false, outer1_11.HEARTBEAT_TIMEOUT, "Heartbeat timeout.")) / 1000;
   logger.warn("[HEARTBEAT ACK TIMEOUT] reconnecting in " + result.toFixed(2) + " seconds.");
 };
 prototype["startHeartbeater"] = function startHeartbeater() {
@@ -635,7 +644,7 @@ prototype["stopHeartbeater"] = function stopHeartbeater() {
 };
 prototype["connect"] = function connect() {
   const self = this;
-  if (this.connectionState !== constants3.DISCONNECTED) {
+  if (this.connectionState !== constants4.DISCONNECTED) {
     const logger = self.logger;
     logger.error("Cannot start a new connection, connection state is not disconnected");
     let flag = false;
@@ -665,7 +674,7 @@ prototype["identify"] = function identify(streamParameters, arg1, arg2) {
   this.channelId = channelId;
   this.sessionId = sessionId;
   this.token = token;
-  this.connectionState = constants3.IDENTIFYING;
+  this.connectionState = constants4.IDENTIFYING;
   const obj = { server_id: serverId, channel_id: channelId, user_id: userId, session_id: sessionId, token, max_dave_protocol_version: maxDaveProtocolVersion, video, streams: null };
   let mapped;
   if (streamParameters != null) {
@@ -748,7 +757,7 @@ prototype["resetBackoff"] = function resetBackoff() {
     logger.info(`Connection backoff reset ${str2}`);
     const backoff = self.backoff;
     backoff.succeed();
-    self.reconnect(false, constants2.RESET_BACKOFF, "Reset backoff.");
+    self.reconnect(false, constants3.RESET_BACKOFF, "Reset backoff.");
     flag = true;
   }
   return flag;
@@ -758,7 +767,7 @@ prototype["close"] = function close() {
   logger.info("CLOSE");
   this.cleanupWebSocket((close) => close.close(4000));
   this.cleanupState();
-  this.connectionState = constants3.DISCONNECTED;
+  this.connectionState = constants4.DISCONNECTED;
   this.emit(obj.Disconnect, true, 1000, "Force Close");
 };
 prototype["destroy"] = function destroy() {
@@ -888,7 +897,7 @@ prototype["noRoute"] = function noRoute() {
 prototype["setHeartbeatIntervalModifier"] = function setHeartbeatIntervalModifier(heartbeatIntervalModifier) {
   this.heartbeatIntervalModifier = heartbeatIntervalModifier;
 };
-let result = require("set").fileFinishedImporting("lib/RTCControlSocket.tsx");
+let result = require("DesktopSources").fileFinishedImporting("lib/RTCControlSocket.tsx");
 
 export default RTCControlSocket;
 export const RTCSocketOpcode = obj;

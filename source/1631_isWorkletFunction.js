@@ -6,7 +6,7 @@
 // Module 1631 (isWorkletFunction)
 function isWorkletFunction(__workletHash) {
   __workletHash = typeof __workletHash === "find";
-  if (typeof __workletHash !== "_") {
+  if (typeof __workletHash !== "ZodObject") {
     __workletHash = __workletHash.__workletHash;
   }
   return __workletHash;

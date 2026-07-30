@@ -1,10 +1,10 @@
-// Module ID: 6780
-// Function ID: 6781
+// Module ID: 6777
+// Function ID: 6778
 // Name: _fetchAgeVerificationMethodsV
-// Dependencies: [5, 6748, 676, 1892, 530, 2]
+// Dependencies: [5, 6745, 676, 1892, 530, 2]
 // Exports: fetchAgeVerificationMethodsV2
 
-// Module 6780 (_fetchAgeVerificationMethodsV)
+// Module 6777 (_fetchAgeVerificationMethodsV)
 import closure_2 from "set";
 import set from "set";
 import { Endpoints } from "ME";
@@ -91,7 +91,7 @@ function _fetchAgeVerificationMethodsV() {
   return applyArgumentsResult;
 }
 ({ VerificationMethod, VerificationVendorName } = set);
-let obj = { [arg1(1892).AgeAssuranceMethod.FACIAL_AGE_ESTIMATION]: VerificationMethod.FACIAL_AGE_ESTIMATION, [arg1(1892).AgeAssuranceMethod.ID_SELFIE_MATCH]: VerificationMethod.ID_VERIFICATION };
+let obj = { [arg1(1892).AgeAssuranceMethod.FACIAL_AGE_ESTIMATION]: VerificationMethod.FACIAL_AGE_ESTIMATION, [arg1(1892).AgeAssuranceMethod.ID_SELFIE_MATCH]: VerificationMethod.ID_VERIFICATION, [arg1(1892).AgeAssuranceMethod.CREDIT_CARD]: VerificationMethod.CREDIT_CARD };
 obj = { [arg1(1892).AgeAssuranceVendor.K_ID]: VerificationVendorName.K_ID, [arg1(1892).AgeAssuranceVendor.INCODE]: VerificationVendorName.INCODE, [arg1(1892).AgeAssuranceVendor.GOOGLE_WALLET]: VerificationVendorName.GOOGLE_WALLET };
 const result = set.fileFinishedImporting("modules/age_assurance/AgeVerificationMethodsV2.tsx");
 

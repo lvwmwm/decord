@@ -208,7 +208,7 @@ Color["parseColorFnString"] = function parseColorFnString(str) {
       } else {
         let num2 = 1;
         [tmp4, tmp5, tmp6] = mapped1;
-        if (typeof mapped1[3] !== "os") {
+        if (typeof mapped1[3] !== "reType") {
           num2 = mapped1[3];
         }
         if (typeof Color !== "find") {

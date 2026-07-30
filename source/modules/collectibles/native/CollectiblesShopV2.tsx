@@ -1,20 +1,19 @@
-// Module ID: 14604
-// Function ID: 14605
+// Module ID: 14600
+// Function ID: 14601
 // Name: CollectiblesShopInternal
-// Dependencies: [32, 19, 17, 4188, 1302, 1874, 5798, 5834, 678, 676, 21, 4189, 5535, 12440, 14605, 589, 5503, 514, 7957, 14606, 500, 5809, 6572, 8664, 8673, 4035, 5515, 1480, 8716, 3848, 14608, 698, 5851, 7984, 14609, 14611, 14634, 1208, 8663, 8764, 14637, 14638, 14614, 14639, 5868, 2]
+// Dependencies: [32, 19, 17, 4188, 1302, 1874, 5798, 678, 676, 21, 4189, 5535, 12434, 14601, 589, 5503, 514, 7954, 14602, 500, 5809, 6569, 8661, 8670, 4035, 5515, 1480, 8712, 3848, 14604, 698, 5849, 7981, 14605, 14607, 14628, 1208, 8660, 8760, 14631, 14632, 14610, 14633, 5866, 2]
 
-// Module 14604 (CollectiblesShopInternal)
-import CollectiblesShopPerfCheckpoint from "CollectiblesShopPerfCheckpoint";
-import useMaybeFetchCollectiblesShopHome from "useMaybeFetchCollectiblesShopHome";
-import get_ActivityIndicator from "v1";
+// Module 14600 (CollectiblesShopInternal)
+import maybeFetchUserProfile from "maybeFetchUserProfile";
+import set from "set";
+import get_ActivityIndicator from "useFetchPurchases";
 import getUserAgnosticState from "getUserAgnosticState";
 import handleThemeChange from "handleThemeChange";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
-import { FramesBannerBlockRecord } from "fromServer";
 import items from "items";
 import ME from "ME";
-import jsxProd from "getProductOrbPrice";
+import jsxProd from "notSupported";
 import createCacheKey from "createCacheKey";
 
 let c5;
@@ -23,9 +22,9 @@ let closure_14;
 let closure_15;
 let closure_16;
 let closure_17;
-let closure_18;
 let closure_6;
 let map1;
+let unpackModuleId;
 const require = arg1;
 class CollectiblesShopV2 {
   constructor(arg0) {
@@ -51,11 +50,11 @@ class CollectiblesShopV2 {
       }
       isStaffResult = isStaffPersonalResult;
     }
-    tmp8 = CollectiblesShopPerfCheckpoint(useMaybeFetchCollectiblesShopHome.useState(false), 2);
+    tmp8 = maybeFetchUserProfile(set.useState(false), 2);
     [tmp9, isStaffPersonal] = tmp8;
     items1 = [];
     items1[0] = nativePaymentsConnected;
-    effect = useMaybeFetchCollectiblesShopHome.useEffect(() => {
+    effect = set.useEffect(() => {
       if (!timeout) {
         const _setTimeout = setTimeout;
         timeout = setTimeout(() => {
@@ -98,12 +97,14 @@ class CollectiblesShopV2 {
   }
 }
 ({ ActivityIndicator: c5, View: closure_6 } = get_ActivityIndicator);
-({ COLLECTIBLES_SHOP_CACHE_DURATION_MS: closure_12, CollectiblesMobileShopScreen: map1, CollectibleShopTab: closure_14 } = items);
-({ AnalyticEvents: closure_15, PaymentGateways: closure_16 } = ME);
-({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
-let closure_19 = createCacheKey.createStyles({ rootContainer: { height: "100%", width: "100%" }, spinner: { position: "absolute", top: "50%", left: "50%", marginTop: -8, marginLeft: -8 } });
+({ COLLECTIBLES_SHOP_CACHE_DURATION_MS: unpackModuleId, CollectiblesMobileShopScreen: closure_12, CollectibleShopTab: map1 } = items);
+({ AnalyticEvents: closure_14, PaymentGateways: closure_15 } = ME);
+({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
+let closure_18 = createCacheKey.createStyles({ rootContainer: { height: "100%", width: "100%" }, spinner: { position: "absolute", top: "50%", left: "50%", marginTop: -8, marginLeft: -8 } });
 function CollectiblesShopInternal(analyticsSource) {
+  let fetchShopHomeError;
   let screen;
+  let shopBlocks;
   let storeFront;
   analyticsSource = analyticsSource.analyticsSource;
   const onNavigateAway = analyticsSource.onNavigateAway;
@@ -114,28 +115,26 @@ function CollectiblesShopInternal(analyticsSource) {
   let sessionId;
   let categories;
   let isFetchingCategories;
-  let shopBlocks;
-  let fetchShopHomeError;
+  fetchShopHomeError = undefined;
   let isFetchingGoogleSkus;
   let currentUserIfAvailable;
   let stateFromStores;
   let analyticsLocations;
   let navigation;
   let constants;
-  let memo3;
-  let obj = analyticsSource(screen[13]);
-  const commonTriggerPoint = obj.useCommonTriggerPoint(analyticsSource(screen[14]).CollectiblesShopOpenTriggerPoint);
-  let obj1 = analyticsSource(screen[15]);
-  let items = [fetchShopHomeError];
+  let obj = analyticsSource(screen[12]);
+  const commonTriggerPoint = obj.useCommonTriggerPoint(analyticsSource(screen[13]).CollectiblesShopOpenTriggerPoint);
+  let obj1 = analyticsSource(screen[14]);
+  let items = [isFetchingGoogleSkus];
   const first = bypassGoogleSkuSync(obj1.useStateFromStoresArray(items, () => {
-    let num = fetchShopHomeError.lastSuccessfulFetch;
+    let num = isFetchingGoogleSkus.lastSuccessfulFetch;
     if (num == null) {
       num = 0;
     }
     const items = [num];
     return items;
   }), 1)[0];
-  let obj2 = analyticsSource(screen[15]);
+  let obj2 = analyticsSource(screen[14]);
   const items1 = [categories];
   const stateFromStoresObject = obj2.useStateFromStoresObject(items1, () => ({ bypassGoogleSkuSync: categories.get("bypass_google_sku_sync"), noCache: categories.get("shop_disable_cache"), includeUnpublished: categories.get("shop_include_unpublished") }));
   bypassGoogleSkuSync = stateFromStoresObject.bypassGoogleSkuSync;
@@ -146,9 +145,9 @@ function CollectiblesShopInternal(analyticsSource) {
   if (storeFront != null) {
     country = storeFront.country;
   }
-  const tmp8 = onNavigateAway(screen[16])(() => {
+  const tmp8 = onNavigateAway(screen[15])(() => {
     const obj = { sessionId: null };
-    obj[0] = analyticsSource(screen[17]).v4();
+    obj[0] = analyticsSource(screen[16]).v4();
     return obj;
   });
   sessionId = tmp8.sessionId;
@@ -173,18 +172,17 @@ function CollectiblesShopInternal(analyticsSource) {
   }
   const merged = Object.assign(obj1);
   obj.logPerf = true;
-  const tmp10Result = onNavigateAway(screen[18])(obj, memo);
+  const tmp10Result = onNavigateAway(screen[17])(obj, memo);
   categories = tmp10Result.categories;
   isFetchingCategories = tmp10Result.isFetchingCategories;
-  let tmpResult = tmp(tmp2[19]);
+  let tmpResult = tmp(tmp2[18]);
   if (screen === stateFromStores.ORBS) {
     let HOME = analyticsLocations.ORBS;
   } else {
     HOME = analyticsLocations.HOME;
   }
   const maybeFetchCollectiblesShopHome = tmpResult.useMaybeFetchCollectiblesShopHome(HOME, { noCache, includeUnpublished, logPerf: true }, memo);
-  shopBlocks = maybeFetchCollectiblesShopHome.shopBlocks;
-  fetchShopHomeError = maybeFetchCollectiblesShopHome.fetchShopHomeError;
+  ({ shopBlocks, fetchShopHomeError } = maybeFetchCollectiblesShopHome);
   const items3 = [categories, isFetchingCategories];
   const memo1 = obj3.useMemo(() => {
     if (true !== isFetchingCategories) {
@@ -226,35 +224,35 @@ function CollectiblesShopInternal(analyticsSource) {
         }
         return items;
       }
-      obj = analyticsSource(screen[20]);
+      obj = analyticsSource(screen[19]);
     }
     return [];
   }, items3);
-  let tmp7Result = tmp7(tmp2[22]);
+  let tmp7Result = tmp7(tmp2[21]);
   const googleSkuIds = tmp7Result.useGoogleSkuIds(memo1, true === isFetchingCategories);
   isFetchingGoogleSkus = googleSkuIds.isFetchingGoogleSkus;
   const fetchError = googleSkuIds.fetchError;
-  tmpResult = tmp(tmp2[23]);
+  tmpResult = tmp(tmp2[22]);
   currentUserIfAvailable = tmpResult.useCurrentUserIfAvailable();
-  const tmp10 = onNavigateAway(screen[18]);
-  const currentUserWishlist = analyticsSource(screen[24]).useCurrentUserWishlist();
-  const tmpResult1 = analyticsSource(screen[24]);
+  const tmp10 = onNavigateAway(screen[17]);
+  const currentUserWishlist = analyticsSource(screen[23]).useCurrentUserWishlist();
+  const tmpResult1 = analyticsSource(screen[23]);
   const items4 = [isFetchingCategories];
-  stateFromStores = analyticsSource(screen[15]).useStateFromStores(items4, () => analyticsSource(screen[25]).isThemeDark(isFetchingCategories.theme));
-  tmp7Result = tmp7(tmp2[26]);
-  const items5 = [onNavigateAway(screen[12]).COLLECTIBLES_SHOP, ];
+  stateFromStores = analyticsSource(screen[14]).useStateFromStores(items4, () => analyticsSource(screen[24]).isThemeDark(isFetchingCategories.theme));
+  tmp7Result = tmp7(tmp2[25]);
+  const items5 = [onNavigateAway(screen[11]).COLLECTIBLES_SHOP, ];
   if (stateFromStores.SHOP_ALL === screen) {
-    let COLLECTIBLES_SHOP_HOME_SCREEN = tmp7(tmp2[12]).COLLECTIBLES_SHOP_INDEX_PAGE;
+    let COLLECTIBLES_SHOP_HOME_SCREEN = tmp7(tmp2[11]).COLLECTIBLES_SHOP_INDEX_PAGE;
   } else if (tmp13.ORBS === screen) {
-    COLLECTIBLES_SHOP_HOME_SCREEN = tmp7(tmp2[12]).COLLECTIBLES_SHOP_ORBS_TAB;
+    COLLECTIBLES_SHOP_HOME_SCREEN = tmp7(tmp2[11]).COLLECTIBLES_SHOP_ORBS_TAB;
   } else {
     let FEATURED_PAGE = tmp13.FEATURED_PAGE;
-    COLLECTIBLES_SHOP_HOME_SCREEN = tmp7(tmp2[12]).COLLECTIBLES_SHOP_HOME_SCREEN;
+    COLLECTIBLES_SHOP_HOME_SCREEN = tmp7(tmp2[11]).COLLECTIBLES_SHOP_HOME_SCREEN;
   }
   items5[1] = COLLECTIBLES_SHOP_HOME_SCREEN;
   analyticsLocations = tmp7Result(items5).analyticsLocations;
-  const tmpResult2 = analyticsSource(screen[15]);
-  navigation = analyticsSource(screen[27]).useNavigation();
+  const tmpResult2 = analyticsSource(screen[14]);
+  navigation = analyticsSource(screen[26]).useNavigation();
   const items6 = [navigation, onNavigateAway];
   const effect = obj3.useEffect(() => navigation.addListener("beforeRemove", (data) => {
     if ("RESET" !== data.data.action.type) {
@@ -266,7 +264,7 @@ function CollectiblesShopInternal(analyticsSource) {
   const items7 = [categories, bypassGoogleSkuSync, isFetchingGoogleSkus, isFetchingCategories];
   const memo2 = obj3.useMemo(() => {
     const items = [...categories.values()];
-    const obj = analyticsSource(screen[28]);
+    const obj = analyticsSource(screen[27]);
     const tmp = analyticsSource;
     const tmp2 = screen;
     let result = items;
@@ -277,17 +275,17 @@ function CollectiblesShopInternal(analyticsSource) {
         if (!isFetchingGoogleSkus) {
           result = items;
           if (!isFetchingCategories) {
-            result = tmp(tmp2[28]).filterGPlaySyncedCategories(items);
-            const tmpResult = tmp(tmp2[28]);
+            result = tmp(tmp2[27]).filterGPlaySyncedCategories(items);
+            const tmpResult = tmp(tmp2[27]);
           }
         }
       }
     }
     return obj.filterHiddenCategories(result);
   }, items7);
-  const tmpResult3 = analyticsSource(screen[27]);
-  const tmp26 = Date.now() - first > currentUserIfAvailable;
-  const categoryIndex = analyticsSource(screen[30]).useCollectiblesShopDeepLinkProps({ categories: memo2 }).categoryIndex;
+  const tmpResult3 = analyticsSource(screen[26]);
+  const tmp25 = Date.now() - first > currentUserIfAvailable;
+  const categoryIndex = analyticsSource(screen[29]).useCollectiblesShopDeepLinkProps({ categories: memo2 }).categoryIndex;
   constants = obj3.useRef({ [tmp13.SHOP_ALL]: false, [tmp13.FEATURED_PAGE]: false, [tmp13.ORBS]: false });
   const items8 = [analyticsLocations, analyticsSource, sessionId, includeUnpublished, screen, noCache];
   const effect1 = obj3.useEffect(() => {
@@ -299,7 +297,7 @@ function CollectiblesShopInternal(analyticsSource) {
     if (!tmp) {
       tmp = FEATURED_PAGE === stateFromStores.SHOP_ALL;
     }
-    let obj = onNavigateAway(screen[31]);
+    let obj = onNavigateAway(screen[30]);
     obj = { location_stack: analyticsLocations, page_session_id: sessionId, source: analyticsSource, page_type: null };
     let str = "home";
     if (!tmp) {
@@ -307,104 +305,95 @@ function CollectiblesShopInternal(analyticsSource) {
     }
     obj[3] = str;
     obj.track(navigation.COLLECTIBLES_SHOP_VIEWED, obj);
-    obj = { sessionId, checkpoint: analyticsSource(tmp4[32]).CollectiblesShopPerfCheckpoint.SHOP_MOUNTED, tab: null, unpublishedCategoriesShown: null, cacheDisabled: null };
+    obj = { sessionId, checkpoint: analyticsSource(tmp4[31]).CollectiblesShopPerfCheckpoint.SHOP_MOUNTED, tab: null, unpublishedCategoriesShown: null, cacheDisabled: null };
     if (FEATURED_PAGE == null) {
       FEATURED_PAGE = stateFromStores.FEATURED_PAGE;
     }
     obj[2] = FEATURED_PAGE;
     obj[3] = includeUnpublished;
     obj[4] = noCache;
-    analyticsSource(screen[32]).trackShopPerf(obj);
+    analyticsSource(screen[31]).trackShopPerf(obj);
   }, items8);
   const items9 = [currentUserIfAvailable];
   const effect2 = obj3.useEffect(() => {
     if (null != currentUserIfAvailable) {
-      onNavigateAway(screen[33])(tmp.id);
+      onNavigateAway(screen[32])(tmp.id);
     }
   }, items9);
-  const items10 = [shopBlocks];
-  memo3 = obj3.useMemo(() => {
-    let found;
-    if (shopBlocks != null) {
-      found = shopBlocks.find((arg0) => arg0 instanceof closure_11);
-    }
-    return found;
-  }, items10);
-  const items11 = [sessionId, includeUnpublished, noCache, stateFromStores];
-  const items12 = [sessionId, includeUnpublished, noCache, fetchShopHomeError, memo3];
+  const items10 = [sessionId, includeUnpublished, noCache, stateFromStores];
+  const items11 = [sessionId, includeUnpublished, noCache, fetchShopHomeError];
   const callback = obj3.useCallback((category) => {
     const index = category.index;
     let tmp = 0 !== index;
     if (!tmp) {
-      tmp = closure_16.current[stateFromStores.SHOP_ALL];
+      tmp = closure_15.current[stateFromStores.SHOP_ALL];
     }
     if (!tmp) {
-      closure_16.current[stateFromStores.SHOP_ALL] = true;
-      let obj = analyticsSource(screen[32]);
+      closure_15.current[stateFromStores.SHOP_ALL] = true;
+      let obj = analyticsSource(screen[31]);
       obj = { sessionId: null, checkpoint: null, tab: null, unpublishedCategoriesShown: null, cacheDisabled: null };
       obj[0] = sessionId;
-      obj[1] = analyticsSource(screen[32]).CollectiblesShopPerfCheckpoint.SHOP_RENDERED;
+      obj[1] = analyticsSource(screen[31]).CollectiblesShopPerfCheckpoint.SHOP_RENDERED;
       obj[2] = stateFromStores.SHOP_ALL;
       obj[3] = includeUnpublished;
       obj[4] = noCache;
       obj.trackShopPerf(obj);
     }
     obj = { category: category.item, isDarkTheme: stateFromStores, index };
-    return memo3(analyticsSource(screen[34]).ShopCategory, obj);
-  }, items11);
-  const items13 = [sessionId, includeUnpublished, noCache];
+    return outer1_16(analyticsSource(screen[33]).ShopCategory, obj);
+  }, items10);
+  const items12 = [sessionId, includeUnpublished, noCache];
   const callback1 = obj3.useCallback((index) => {
     let tmp = 0 !== index.index;
     if (!tmp) {
-      tmp = closure_16.current[stateFromStores.FEATURED_PAGE];
+      tmp = closure_15.current[stateFromStores.FEATURED_PAGE];
     }
     if (!tmp) {
-      closure_16.current[stateFromStores.FEATURED_PAGE] = true;
-      let obj = analyticsSource(screen[32]);
+      closure_15.current[stateFromStores.FEATURED_PAGE] = true;
+      let obj = analyticsSource(screen[31]);
       obj = { sessionId: null, checkpoint: null, tab: null, unpublishedCategoriesShown: null, cacheDisabled: null };
       obj[0] = sessionId;
-      obj[1] = analyticsSource(screen[32]).CollectiblesShopPerfCheckpoint.SHOP_RENDERED;
+      obj[1] = analyticsSource(screen[31]).CollectiblesShopPerfCheckpoint.SHOP_RENDERED;
       obj[2] = stateFromStores.FEATURED_PAGE;
       obj[3] = includeUnpublished;
       obj[4] = noCache;
       obj.trackShopPerf(obj);
     }
-    obj = { shopBlock: index.item, fetchShopHomeError: null, framesBannerBlock: null };
+    obj = { shopBlock: index.item, fetchShopHomeError: null };
     let tmp16 = fetchShopHomeError;
     if (fetchShopHomeError == null) {
       tmp16 = null;
     }
     obj[1] = tmp16;
-    obj[2] = memo3;
-    return memo3(onNavigateAway(screen[35]), obj);
-  }, items12);
+    return outer1_16(onNavigateAway(screen[34]), obj);
+  }, items11);
   const callback2 = obj3.useCallback(() => {
-    if (!closure_16.current[stateFromStores.ORBS]) {
-      closure_16.current[tmp.ORBS] = true;
-      let obj = analyticsSource(screen[32]);
+    if (!closure_15.current[stateFromStores.ORBS]) {
+      closure_15.current[tmp.ORBS] = true;
+      let obj = analyticsSource(screen[31]);
       obj = { sessionId: null, checkpoint: null, tab: null, unpublishedCategoriesShown: null, cacheDisabled: null };
       obj[0] = sessionId;
-      obj[1] = analyticsSource(screen[32]).CollectiblesShopPerfCheckpoint.SHOP_RENDERED;
+      obj[1] = analyticsSource(screen[31]).CollectiblesShopPerfCheckpoint.SHOP_RENDERED;
       obj[2] = tmp.ORBS;
       obj[3] = includeUnpublished;
       obj[4] = noCache;
       obj.trackShopPerf(obj);
     }
-  }, items13);
+  }, items12);
   callback3 = obj3.useCallback((type) => type.type, []);
-  onNavigateAway(screen[36])({ currentScreen: screen });
+  onNavigateAway(screen[35])({ currentScreen: screen });
   if (null == currentUserIfAvailable) {
     return null;
   } else {
     if (screen !== tmp13.FEATURED_PAGE) {
-      if (!tmp35) {
-        if (tmp38) {
-          tmp7(tmp2[37]).captureMessage("collectibles mobile shop loaded empty categories");
-          const tmp7Result1 = tmp7(tmp2[37]);
+      if (!tmp33) {
+        if (tmp36) {
+          tmp7(tmp2[36]).captureMessage("collectibles mobile shop loaded empty categories");
+          const tmp7Result1 = tmp7(tmp2[36]);
         }
         if (null !== fetchError) {
-          tmp7(tmp2[37]).captureMessage(`collectibles mobile shop failed to fetch google sku ids: ${fetchError}`);
-          const tmp7Result2 = tmp7(tmp2[37]);
+          tmp7(tmp2[36]).captureMessage(`collectibles mobile shop failed to fetch google sku ids: ${fetchError}`);
+          const tmp7Result2 = tmp7(tmp2[36]);
         }
         obj2 = { value: null, children: null };
         obj2[0] = analyticsLocations;
@@ -419,8 +408,8 @@ function CollectiblesShopInternal(analyticsSource) {
           obj6[0] = memo2;
           obj6[1] = callback;
           obj6[2] = categoryIndex;
-          let tmp41Result = tmp41(tmp7(tmp2[40]), obj6);
-          const tmp7Result3 = tmp7(tmp2[40]);
+          let tmp39Result = tmp39(tmp7(tmp2[39]), obj6);
+          const tmp7Result3 = tmp7(tmp2[39]);
         } else if (screen === tmp13.ORBS) {
           const obj7 = { shopBlocks: null, fetchShopHomeError: null, onRenderFirstOrbsItem: null, getItemType: null };
           obj7[0] = shopBlocks;
@@ -430,38 +419,38 @@ function CollectiblesShopInternal(analyticsSource) {
           obj7[1] = fetchShopHomeError;
           obj7[2] = callback2;
           obj7[3] = callback3;
-          tmp41Result = tmp41(tmp7(tmp2[41]), obj7);
-          const tmp7Result4 = tmp7(tmp2[41]);
+          tmp39Result = tmp39(tmp7(tmp2[40]), obj7);
+          const tmp7Result4 = tmp7(tmp2[40]);
         } else {
           const obj8 = { children: null };
           const obj9 = { data: null, renderItem: null, getItemType: null };
           obj9[0] = shopBlocks;
           obj9[1] = callback1;
           obj9[2] = callback3;
-          obj8[0] = tmp41(tmp7(tmp2[40]), obj9);
-          tmp41Result = tmp41(tmp(tmp2[42]).CollectiblesCoachmarkScrollDismissProvider, obj8);
+          obj8[0] = tmp39(tmp7(tmp2[39]), obj9);
+          tmp39Result = tmp39(tmp(tmp2[41]).CollectiblesCoachmarkScrollDismissProvider, obj8);
         }
-        obj5[2] = tmp41Result;
-        obj4[1] = memo3(tmp(tmp2[39]).NativePaymentContextProvider, obj5);
-        const items14 = [memo3(sessionId, obj4), memo3(tmp7(tmp2[43]), {})];
-        obj3[1] = items14;
-        obj2[1] = closure_18(tmp(tmp2[38]).CollectiblesAnalyticsProvider, obj3);
-        tmp41Result = tmp41(tmp(tmp2[26]).AnalyticsLocationProvider, obj2);
-        tmp38 = first > 0 && false === isFetchingCategories && 0 === categories.size;
-        const tmp42 = closure_18;
-        const tmp43 = sessionId;
+        obj5[2] = tmp39Result;
+        obj4[1] = callback2(tmp(tmp2[38]).NativePaymentContextProvider, obj5);
+        const items13 = [callback2(sessionId, obj4), callback2(tmp7(tmp2[42]), {})];
+        obj3[1] = items13;
+        obj2[1] = closure_17(tmp(tmp2[37]).CollectiblesAnalyticsProvider, obj3);
+        tmp39Result = tmp39(tmp(tmp2[25]).AnalyticsLocationProvider, obj2);
+        tmp36 = first > 0 && false === isFetchingCategories && 0 === categories.size;
+        const tmp40 = closure_17;
+        const tmp41 = sessionId;
       }
       const obj10 = { style: null, size: "large" };
       spinner = spinner.spinner;
       obj10[0] = spinner;
-      tmp41Result = memo3(includeUnpublished, obj10);
+      tmp39Result = callback2(includeUnpublished, obj10);
     }
     if (maybeFetchCollectiblesShopHome.isFetchingShopHome) {
       const obj11 = { style: null, size: "large" };
       obj11[0] = spinner.spinner;
-      return memo3(includeUnpublished, obj11);
+      return callback2(includeUnpublished, obj11);
     }
-    tmp35 = 0 === memo2.length || tmp26;
+    tmp33 = 0 === memo2.length || tmp25;
   }
 }
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/CollectiblesShopV2.tsx");

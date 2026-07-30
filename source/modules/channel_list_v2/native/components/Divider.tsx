@@ -1,10 +1,10 @@
-// Module ID: 11448
-// Function ID: 11449
+// Module ID: 11444
+// Function ID: 11445
 // Name: Divider
 // Dependencies: [19, 17, 21, 4189, 712, 1348, 2]
 // Exports: default
 
-// Module 11448 (Divider)
+// Module 11444 (Divider)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

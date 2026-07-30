@@ -55,7 +55,7 @@ function _importWithRetry() {
               let closure_4;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {

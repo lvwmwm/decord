@@ -1,9 +1,9 @@
-// Module ID: 15545
-// Function ID: 15546
+// Module ID: 15539
+// Function ID: 15540
 // Name: prototype
-// Dependencies: [3827, 15546, 10103, 15547, 12, 2]
+// Dependencies: [3827, 15540, 10099, 15541, 12, 2]
 
-// Module 15545 (prototype)
+// Module 15539 (prototype)
 import hasFlag from "hasFlag";
 
 let require = arg1;
@@ -80,11 +80,11 @@ const prototype = function SearchResultMessageParser(searchQueryString, lineClam
     }
     return content;
   };
-  let obj = require(10103) /* SearchTokenTypes */;
-  const tokenizeQueryResult = require(10103) /* SearchTokenTypes */.tokenizeQuery(searchQueryString);
-  const searchQueryFromTokens = require(10103) /* SearchTokenTypes */.getSearchQueryFromTokens(tokenizeQueryResult);
-  let obj2 = require(10103) /* SearchTokenTypes */;
-  const str = require(10103) /* SearchTokenTypes */.getQueryContentString(searchQueryFromTokens);
+  let obj = require(10099) /* SearchTokenTypes */;
+  const tokenizeQueryResult = require(10099) /* SearchTokenTypes */.tokenizeQuery(searchQueryString);
+  const searchQueryFromTokens = require(10099) /* SearchTokenTypes */.getSearchQueryFromTokens(tokenizeQueryResult);
+  let obj2 = require(10099) /* SearchTokenTypes */;
+  const str = require(10099) /* SearchTokenTypes */.getQueryContentString(searchQueryFromTokens);
   let str2;
   if (str != null) {
     str2 = str.trim();

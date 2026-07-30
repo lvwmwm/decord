@@ -1,10 +1,10 @@
-// Module ID: 7628
-// Function ID: 7629
+// Module ID: 7625
+// Function ID: 7626
 // Name: AgeVerificationMethodsContainer
-// Dependencies: [19, 6748, 6756, 21, 4189, 712, 6755, 5867, 5872, 4598, 1297, 1236, 5554, 4185, 2741, 5022, 4600, 6754, 5220, 6747, 2]
+// Dependencies: [19, 6745, 6753, 21, 4189, 712, 6752, 5865, 5870, 4598, 1297, 1236, 5554, 4185, 2741, 5022, 4600, 6751, 5220, 6744, 2]
 // Exports: AgeVerificationMethodsContainer
 
-// Module 7628 (AgeVerificationMethodsContainer)
+// Module 7625 (AgeVerificationMethodsContainer)
 import openIncodeAgeVerificationModal from "openIncodeAgeVerificationModal";
 import { VerificationMethod } from "set";
 import { SafetyHubLinks } from "SafetyHubView";
@@ -30,7 +30,7 @@ export const AgeVerificationMethodsContainer = function AgeVerificationMethodsCo
   const prop = ageVerificationMethods.ageVerificationMethods;
   const modalSessionId = ageVerificationMethods.modalSessionId;
   const tmp = createCacheKey();
-  let obj = prop(6755);
+  let obj = prop(6752);
   const isSuspendedUser = obj.useIsSuspendedUser();
   const items = [prop];
   const effect = React.useEffect(() => {
@@ -96,7 +96,7 @@ export const AgeVerificationMethodsContainer = function AgeVerificationMethodsCo
   const obj8 = { variant: "primary", size: "lg", text: null, onPress: null };
   const intl3 = tmp2(1236).intl;
   obj8[2] = intl3.string(modalSessionId(2741).hDvmYP);
-  obj8[3] = prop(6754).getAgeVerificationMethods;
+  obj8[3] = prop(6751).getAgeVerificationMethods;
   obj7[1] = callback(prop(4600).Button, obj8);
   items3[1] = callback(prop(5022).ButtonGroup, obj7);
   obj5[4] = items3;

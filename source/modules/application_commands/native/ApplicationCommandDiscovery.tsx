@@ -1,10 +1,10 @@
-// Module ID: 11492
-// Function ID: 11493
+// Module ID: 11488
+// Function ID: 11489
 // Name: ApplicationCommandDiscovery
-// Dependencies: [32, 19, 17, 4623, 11493, 9579, 676, 21, 11494, 4189, 712, 4606, 11495, 8024, 1906, 5708, 3902, 1236, 4384, 12, 11496, 5704, 11497, 11498, 1297, 9654, 2]
+// Dependencies: [32, 19, 17, 4623, 11489, 9576, 676, 21, 11490, 4189, 712, 4606, 11491, 8021, 1906, 5708, 3902, 1236, 4384, 12, 11492, 5704, 11493, 11494, 1297, 9651, 2]
 // Exports: default
 
-// Module 11492 (ApplicationCommandDiscovery)
+// Module 11488 (ApplicationCommandDiscovery)
 import _slicedToArray from "_slicedToArray";
 import apply from "apply";
 import get_ActivityIndicator from "getSystemLocale";
@@ -74,9 +74,9 @@ export default function ApplicationCommandDiscovery(channel) {
   first = tmp4[0];
   c7 = tmp6;
   closure_8 = ref.useRef(false);
-  let obj2 = require(11495) /* useCommandDiscoveryManager */;
+  let obj2 = require(11491) /* useCommandDiscoveryManager */;
   commandDiscoveryManager = obj2.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
-  let obj3 = channel(8024);
+  let obj3 = channel(8021);
   obj = { context: { channel, type: "channel" }, filters: null, options: null, allowFetch: true };
   obj = { commandTypes: null, builtIns: null, applicationCommands: null };
   let items = [require(1906) /* PermissionOverwriteType */.ApplicationCommandType.CHAT];

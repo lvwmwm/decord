@@ -1,10 +1,10 @@
-// Module ID: 8716
-// Function ID: 8717
+// Module ID: 8712
+// Function ID: 8713
 // Name: hasAtLeastOneGPlaySynced
-// Dependencies: [676, 5669, 3848, 5672, 5810, 3835, 5809, 8717, 8718, 2]
+// Dependencies: [676, 5669, 3848, 5672, 5810, 3835, 5809, 8713, 8714, 2]
 // Exports: createOrbProfileBadge, extractPriceByPurchaseTypes, filterGPlaySyncedCategories, filterHiddenCategories, getCollectibleGoogleSkuId, getFormattedPriceForCollectiblesProduct, isGPlaySynced
 
-// Module 8716 (hasAtLeastOneGPlaySynced)
+// Module 8712 (hasAtLeastOneGPlaySynced)
 import { PriceSetAssignmentPurchaseTypes as closure_3 } from "ME";
 
 function hasAtLeastOneGPlaySynced(nextResult) {
@@ -340,5 +340,5 @@ export const filterHiddenCategories = function filterHiddenCategories(result) {
   });
 };
 export const createOrbProfileBadge = function createOrbProfileBadge() {
-  return { id: require(8717) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, icon: require(8717) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, iconSrc: importDefault(8718), description: "", isPreviewMode: true };
+  return { id: require(8713) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, icon: require(8713) /* BalanceWidgetMode */.OrbBadges.ORB_PROFILE_BADGE, iconSrc: importDefault(8714), description: "", isPreviewMode: true };
 };

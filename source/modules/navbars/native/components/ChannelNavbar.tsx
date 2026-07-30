@@ -1,10 +1,10 @@
-// Module ID: 11873
-// Function ID: 11874
+// Module ID: 11869
+// Function ID: 11870
 // Name: ChannelTitleContent
-// Dependencies: [19, 17, 4865, 1376, 1372, 1862, 4276, 3826, 1874, 676, 1379, 1369, 21, 4189, 5109, 712, 589, 1236, 4650, 4380, 9062, 11874, 11875, 1297, 10140, 11876, 5141, 10138, 9358, 4717, 4185, 4028, 7978, 8340, 4005, 1358, 9664, 11877, 2]
+// Dependencies: [19, 17, 4865, 1376, 1372, 1862, 4276, 3826, 1874, 676, 1379, 1369, 21, 4189, 5109, 712, 589, 1236, 4650, 4380, 9058, 11870, 11871, 1297, 10136, 11872, 5141, 10134, 9354, 4717, 4185, 4028, 7975, 8337, 4005, 1358, 9661, 11873, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 11873 (ChannelTitleContent)
+// Module 11869 (ChannelTitleContent)
 import importAllResult from "computeChannelName";
 import { View } from "getSystemLocale";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -471,7 +471,7 @@ export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) 
     obj3[0] = callback(DMChannelName, obj);
     obj3[1] = channelIcon;
     obj3[2] = tmp16Result;
-    obj3[3] = callback(importDefault(9062), obj1);
+    obj3[3] = callback(importDefault(9058), obj1);
     obj2[1] = callback(ChannelTitleContent, obj3);
     return callback(ChannelTitleWrapper, obj2);
   } else {

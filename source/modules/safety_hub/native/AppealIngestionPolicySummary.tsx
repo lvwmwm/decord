@@ -1,10 +1,10 @@
-// Module ID: 11091
-// Function ID: 11092
+// Module ID: 11087
+// Function ID: 11088
 // Name: AppealIngestionPolicySummary
-// Dependencies: [19, 17, 21, 4189, 712, 6755, 4033, 4185, 1236, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 6752, 4033, 4185, 1236, 2]
 // Exports: default
 
-// Module 11091 (AppealIngestionPolicySummary)
+// Module 11087 (AppealIngestionPolicySummary)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,7 +25,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/safety_hub/nati
 export default function AppealIngestionPolicySummary(classification) {
   classification = classification.classification;
   const tmp = createCacheKey();
-  let obj = require(6755) /* parseMessageEmbedForProps */;
+  let obj = require(6752) /* parseMessageEmbedForProps */;
   let description;
   if (classification != null) {
     description = classification.description;

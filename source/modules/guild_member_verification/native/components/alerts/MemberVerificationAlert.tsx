@@ -1,10 +1,10 @@
-// Module ID: 9152
-// Function ID: 9153
+// Module ID: 9148
+// Function ID: 9149
 // Name: MemberVerificationAlert
 // Dependencies: [19, 17, 21, 4189, 712, 4618, 4185, 2]
 // Exports: default
 
-// Module 9152 (MemberVerificationAlert)
+// Module 9148 (MemberVerificationAlert)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

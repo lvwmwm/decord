@@ -1,10 +1,10 @@
-// Module ID: 8744
-// Function ID: 8745
+// Module ID: 8740
+// Function ID: 8741
 // Name: ProfilePreviewWrapper
-// Dependencies: [19, 17, 678, 21, 4189, 712, 4611, 8664, 8075, 8745, 8746, 8747, 1901, 679, 8749, 8752, 2]
+// Dependencies: [19, 17, 678, 21, 4189, 712, 4611, 8661, 8072, 8741, 8742, 8743, 1901, 679, 8745, 8748, 2]
 // Exports: IndividualProductPreview
 
-// Module 8744 (ProfilePreviewWrapper)
+// Module 8740 (ProfilePreviewWrapper)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import items from "items";
@@ -64,11 +64,11 @@ function ProfileFramePreview(arg0) {
   let profileFrame;
   let width;
   ({ profileFrame, width, handlePreviewPress, onTrackPress } = arg0);
-  let obj = require(8664) /* useCurrentUser */;
+  let obj = require(8661) /* useCurrentUser */;
   obj = { handlePreviewPress, onTrackPress, children: null };
   const currentUser = obj.useCurrentUser();
   obj = { profileFrame, user: currentUser, maxWidth: width, style: createCacheKey().profilePreview };
-  obj[2] = callback(importDefault(8745), obj);
+  obj[2] = callback(importDefault(8741), obj);
   return callback(ProfilePreviewWrapper, obj);
 }
 class AvatarDecorationPreview {
@@ -149,11 +149,11 @@ export const IndividualProductPreview = function IndividualProductPreview(arg0) 
   } else if (tmp(1901).CollectiblesItemType.EXTERNAL_SKU === type) {
     const ALL = tmp(679).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      let tmp5 = callback(tmp(8749).FractionalNitroPreview, {});
+      let tmp5 = callback(tmp(8745).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === constants.ORB_PROFILE_BADGE) {
-        tmp5 = callback(tmp(8752).OrbBadgePreview, {});
+        tmp5 = callback(tmp(8748).OrbBadgePreview, {});
       }
     }
     return tmp5;

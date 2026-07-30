@@ -1,23 +1,23 @@
-// Module ID: 15868
-// Function ID: 15869
+// Module ID: 15862
+// Function ID: 15863
 // Name: renderActivityOrPIP
-// Dependencies: [19, 21, 15869, 15873, 15876, 15842, 15867, 2]
+// Dependencies: [19, 21, 15863, 15867, 15870, 15836, 15861, 2]
 // Exports: default
 
-// Module 15868 (renderActivityOrPIP)
+// Module 15862 (renderActivityOrPIP)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
 function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   if ("pip" === arg1) {
-    let tmp4 = 15869;
+    let tmp4 = 15863;
   } else {
-    tmp4 = 15873;
+    tmp4 = 15867;
   }
   return jsx(importDefault(tmp4), { transitionState, transitionCleanUp }, arg0);
 }
-const result = require("module_15869").fileFinishedImporting("modules/frames/panel/native/FramePanelUI.tsx");
+const result = require("module_15863").fileFinishedImporting("modules/frames/panel/native/FramePanelUI.tsx");
 
 export default function FramePanelUI() {
   const callback = React.useCallback(() => callback2(callback(table[4]), {}), []);

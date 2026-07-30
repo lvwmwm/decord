@@ -1,9 +1,9 @@
-// Module ID: 7721
-// Function ID: 7722
+// Module ID: 7718
+// Function ID: 7719
 // Name: deleteNonce
 // Dependencies: [32, 1218, 1372, 687, 4415, 1906, 5713, 589, 709, 2]
 
-// Module 7721 (deleteNonce)
+// Module 7718 (deleteNonce)
 import _slicedToArray from "_slicedToArray";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";

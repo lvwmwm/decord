@@ -1,8 +1,8 @@
-// Module ID: 9142
-// Function ID: 9143
-// Dependencies: [4678, 676, 698, 5183, 4395, 9143, 1959, 2]
+// Module ID: 9138
+// Function ID: 9139
+// Dependencies: [4678, 676, 698, 5183, 4395, 9139, 1959, 2]
 
-// Module 9142
+// Module 9138
 import items from "items";
 import { AnalyticEvents } from "ME";
 
@@ -19,7 +19,7 @@ export default {
     importDefault(698).track(AnalyticEvents.OPEN_MODAL, obj);
     const obj2 = importDefault(698);
     obj = { guildId, onClose: connect };
-    importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(9143, dependencyMap.paths), obj, closure_4);
+    importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(9139, dependencyMap.paths), obj, closure_4);
   },
   closeMemberVerificationModal() {
     let flag = arg0;

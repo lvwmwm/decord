@@ -1,10 +1,10 @@
-// Module ID: 11964
-// Function ID: 11965
+// Module ID: 11958
+// Function ID: 11959
 // Name: useCustomStatusActivityForUser
-// Dependencies: [1218, 4276, 676, 589, 8080, 2]
+// Dependencies: [1218, 4276, 676, 589, 8077, 2]
 // Exports: default
 
-// Module 11964 (useCustomStatusActivityForUser)
+// Module 11958 (useCustomStatusActivityForUser)
 import fetchFingerprint from "fetchFingerprint";
 import sortActivity from "sortActivity";
 import { ActivityTypes } from "ME";
@@ -17,8 +17,8 @@ export default function useCustomStatusActivityForUser(arg0) {
   const items = [fetchFingerprint];
   const stateFromStores = _require(589).useStateFromStores(items, () => outer1_2.getId() === closure_0);
   const obj = _require(589);
-  const customStatusActivity = _require(8080).useCustomStatusActivity();
-  const obj2 = _require(8080);
+  const customStatusActivity = _require(8077).useCustomStatusActivity();
+  const obj2 = _require(8077);
   const items1 = [sortActivity];
   let stateFromStores1 = _require(589).useStateFromStores(items1, () => outer1_3.findActivity(closure_0, (type) => type.type === constants.CUSTOM_STATUS));
   if (stateFromStores) {

@@ -1,10 +1,10 @@
-// Module ID: 6664
-// Function ID: 6665
+// Module ID: 6661
+// Function ID: 6662
 // Name: presentBuyNitroPurchaseSuccess
-// Dependencies: [19, 6225, 1876, 21, 1236, 4530, 4533, 2]
+// Dependencies: [19, 6222, 1876, 21, 1236, 4530, 4533, 2]
 // Exports: presentBuyNitroPurchaseSuccess
 
-// Module 6664 (presentBuyNitroPurchaseSuccess)
+// Module 6661 (presentBuyNitroPurchaseSuccess)
 import "noop";
 import { reset } from "usePremiumPlanPurchasedStore";
 import { PremiumTypes } from "GuildFeatures";

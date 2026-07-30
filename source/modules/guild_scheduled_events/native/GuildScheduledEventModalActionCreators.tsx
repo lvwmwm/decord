@@ -1,10 +1,10 @@
-// Module ID: 8229
-// Function ID: 8230
+// Module ID: 8226
+// Function ID: 8227
 // Name: openCreateOrEditGuildEventModal
-// Dependencies: [5, 19, 1372, 1932, 1862, 3817, 5779, 1378, 8218, 676, 21, 4395, 38, 8230, 1959, 4157, 8263, 8319, 8335, 8345, 4530, 8208, 3890, 1236, 8346, 8326, 8214, 8347, 8226, 5543, 3889, 8348, 6693, 8217, 8215, 8210, 12269, 7692, 3862, 5542, 1474, 12270, 5548, 2]
+// Dependencies: [5, 19, 1372, 1932, 1862, 3817, 5779, 1378, 8215, 676, 21, 4395, 38, 8227, 1959, 4157, 8260, 8316, 8332, 8342, 4530, 8205, 3890, 1236, 8343, 8323, 8211, 8344, 8223, 5543, 3889, 8345, 6690, 8214, 8212, 8207, 12263, 7689, 3862, 5542, 1474, 12264, 5548, 2]
 // Exports: closeGuildEventListActionSheet, handleGuildScheduledEventRsvp, openDeleteGuildEventActionSheet, openGuildEventListActionSheet, openShareEvent, openStartGuildEventModal, showGuildEventModeratorActionSheet, transitionToEventDetailsFromInvite, updateRsvp
 
-// Module 8229 (openCreateOrEditGuildEventModal)
+// Module 8226 (openCreateOrEditGuildEventModal)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import DeleteEventAlert from "DeleteEventAlert";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -16,7 +16,7 @@ import closure_11 from "scheduledEventSort";
 import { GuildScheduledEventUserResponses as closure_12 } from "GUILD_EVENT_MAX_NAME_LENGTH";
 import CREATE_GUILD_EVENT_MODAL_KEY from "CREATE_GUILD_EVENT_MODAL_KEY";
 import ME from "ME";
-import { jsx } from "module_8208";
+import { jsx } from "module_8205";
 
 let c10;
 let c9;
@@ -44,7 +44,7 @@ function openCreateOrEditGuildEventModal(guild, arg1) {
     obj[0] = guildEvent;
     obj[1] = recurrenceId;
     obj[2] = handleClose;
-    importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(8230, dependencyMap.paths), obj, closure_13);
+    importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(8227, dependencyMap.paths), obj, closure_13);
     const obj4 = importDefault(4395);
   } else {
     obj = importDefault(4157);
@@ -54,7 +54,7 @@ function openCreateOrEditGuildEventModal(guild, arg1) {
     obj[1] = tmp;
     obj[2] = guildEvent;
     obj[3] = handleClose;
-    importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(8263, dependencyMap.paths), obj, closure_13);
+    importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(8260, dependencyMap.paths), obj, closure_13);
     const obj2 = importDefault(4395);
   }
 }
@@ -150,7 +150,7 @@ export { openCreateOrEditGuildEventModal };
 export const openGuildEventListActionSheet = function openGuildEventListActionSheet(closure_0) {
   let obj = importDefault(4157);
   obj = { guild: closure_0 };
-  obj.openLazy(require(1959) /* asyncRequireImpl */(8319, dependencyMap.paths), closure_14, obj);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(8316, dependencyMap.paths), closure_14, obj);
 };
 export const closeGuildEventListActionSheet = function closeGuildEventListActionSheet() {
   importDefault(4157).hideActionSheet(closure_14);
@@ -159,7 +159,7 @@ export const openStartGuildEventModal = function openStartGuildEventModal(event,
   let obj = importDefault(4157);
   obj.hideAllActionSheets();
   obj = { event, recurrenceId: nextRecurrenceIdInEvent, onCloseActionSheet };
-  importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(8335, dependencyMap.paths), obj, closure_15);
+  importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(8332, dependencyMap.paths), obj, closure_15);
 };
 export const openDeleteGuildEventActionSheet = function openDeleteGuildEventActionSheet(eventId, guildId, recurrenceId) {
   let obj = require(4530) /* useAlertStore */;
@@ -168,7 +168,7 @@ export const openDeleteGuildEventActionSheet = function openDeleteGuildEventActi
 };
 export const updateRsvp = function updateRsvp(arg0, arg1, arg2, arg3) {
   let closure_0 = arg3;
-  importDefault(8208).updateRsvp(arg0, arg1, arg2, arg3, (arg0) => {
+  importDefault(8205).updateRsvp(arg0, arg1, arg2, arg3, (arg0) => {
     let tmp2 = tmp;
     if (null == arg0) {
       tmp2 = callback === outer1_12.INTERESTED;
@@ -200,7 +200,7 @@ export const handleGuildScheduledEventRsvp = function handleGuildScheduledEventR
   const _require = id;
   let closure_1 = guild_id;
   const dependencyMap = arg3;
-  let obj = _require(8214);
+  let obj = _require(8211);
   obj = {
     eventId: id,
     recurrenceId: c1,
@@ -250,7 +250,7 @@ export const openShareEvent = function openShareEvent(event, arg1) {
     channel = defaultChannel.getDefaultChannel(event.guild_id);
   }
   if (null != channel) {
-    const result = require(8226) /* canEveryoneRoleViewEvent */.isGuildEventInvitable(event);
+    const result = require(8223) /* canEveryoneRoleViewEvent */.isGuildEventInvitable(event);
     if (result) {
       const guild = store.getGuild(event.guild_id);
       let vanityURLCode;
@@ -260,14 +260,14 @@ export const openShareEvent = function openShareEvent(event, arg1) {
       if (null != vanityURLCode) {
         if ("" !== guild.vanityURLCode) {
           if (!closure_8.can(constants2.CREATE_INSTANT_INVITE, channel)) {
-            let tmp7Result = tmp7(8348);
+            let tmp7Result = tmp7(8345);
             let obj = { guildScheduledEventId: null, stackingBehavior: "stack" };
             obj[0] = event.id;
             const result1 = tmp7Result.showVanityUrlInviteActionSheet(guild, channel, constants.GUILD_SCHEDULED_EVENT, obj);
           }
         }
       }
-      tmp7Result = tmp7(8348);
+      tmp7Result = tmp7(8345);
       obj = { createInvite: null, guildScheduledEventId: null, stackingBehavior: "stack", source: null };
       obj[0] = result;
       obj[1] = event.id;
@@ -285,13 +285,13 @@ export const openShareEvent = function openShareEvent(event, arg1) {
         const tmp7Result2 = tmp7(3889);
       }
     }
-    const obj3 = require(8226) /* canEveryoneRoleViewEvent */;
+    const obj3 = require(8223) /* canEveryoneRoleViewEvent */;
   } else {
     obj = importDefault(3890);
     const obj1 = { key: "ERROR_OCCURRED_TRY_AGAIN", content: null, icon: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj1[1] = intl.string(require(1236) /* getSystemLocale */.t.fEptJP);
-    obj1[2] = importDefault(8346);
+    obj1[2] = importDefault(8343);
     obj.open(obj1);
   }
 };

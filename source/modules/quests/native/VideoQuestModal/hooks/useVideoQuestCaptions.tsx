@@ -1,10 +1,10 @@
-// Module ID: 14170
-// Function ID: 14171
+// Module ID: 14166
+// Function ID: 14167
 // Name: useVideoQuestCaptions
-// Dependencies: [32, 19, 9479, 530, 14171, 2]
+// Dependencies: [32, 19, 9475, 530, 14167, 2]
 // Exports: useVideoQuestCaptions
 
-// Module 14170 (useVideoQuestCaptions)
+// Module 14166 (useVideoQuestCaptions)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
@@ -15,12 +15,12 @@ const result = require("resolveAsset").fileFinishedImporting("modules/quests/nat
 export const useVideoQuestCaptions = (quest) => {
   let dependencyMap;
   let tmp4;
-  const questAsset = url(9479).getQuestAsset(quest, url(9479).QuestAssetType.VIDEO_PLAYER_CAPTION, undefined, true);
+  const questAsset = url(9475).getQuestAsset(quest, url(9475).QuestAssetType.VIDEO_PLAYER_CAPTION, undefined, true);
   url = undefined;
   if (questAsset != null) {
     url = questAsset.url;
   }
-  let obj = url(9479);
+  let obj = url(9475);
   [tmp4, dependencyMap] = callback(React.useState(constants.NONE), 2);
   const captions = callback(React.useState(null), 2);
   callback = captions[1];

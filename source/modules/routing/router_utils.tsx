@@ -13,8 +13,8 @@ let closure_6;
 let error;
 function transitionTo(CHANNELResult, closure_1) {
   let closure_0 = CHANNELResult;
-  let tmp = typeof CHANNELResult === "init";
-  if (typeof CHANNELResult !== "init") {
+  let tmp = typeof CHANNELResult === "tee";
+  if (typeof CHANNELResult !== "tee") {
     tmp = !items.some((arg0) => ME.startsWith(arg0));
   }
   let flag = !tmp;
@@ -86,8 +86,8 @@ export const currentRouteHasBackNavigation = function currentRouteHasBackNavigat
 };
 export const replaceWith = function replaceWith(ME, state) {
   let closure_0 = ME;
-  let tmp = typeof ME === "init";
-  if (typeof ME !== "init") {
+  let tmp = typeof ME === "tee";
+  if (typeof ME !== "tee") {
     tmp = !items.some((arg0) => ME.startsWith(arg0));
   }
   let flag = !tmp;

@@ -173,7 +173,7 @@ const fn6 = function l(arg0, arg1) {
     let obj = require(1649) /* call */;
     let processColorResult = obj.processColor(arg0[num]);
     let tmp4 = num;
-    if (typeof processColorResult !== "os") {
+    if (typeof processColorResult !== "reType") {
       obj = { r: null, g: null, b: null };
       let tmpResult = tmp(1649);
       obj[0] = tmpResult.red(processColorResult);

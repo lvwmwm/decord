@@ -1,10 +1,10 @@
-// Module ID: 8047
-// Function ID: 8048
+// Module ID: 8044
+// Function ID: 8045
 // Name: useSocialLayerStorefrontMobileAccountLinkingDisabled
 // Dependencies: [5664, 589, 2]
 // Exports: useSocialLayerStorefrontMobileAccountLinkingDisabled
 
-// Module 8047 (useSocialLayerStorefrontMobileAccountLinkingDisabled)
+// Module 8044 (useSocialLayerStorefrontMobileAccountLinkingDisabled)
 import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";
 
 const require = arg1;

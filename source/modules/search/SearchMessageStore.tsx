@@ -1,9 +1,9 @@
-// Module ID: 5875
-// Function ID: 5876
+// Module ID: 5873
+// Function ID: 5874
 // Name: handleReaction
 // Dependencies: [1218, 3826, 4088, 4409, 3828, 589, 709, 2]
 
-// Module 5875 (handleReaction)
+// Module 5873 (handleReaction)
 import fetchFingerprint from "fetchFingerprint";
 import upsertRelationship from "upsertRelationship";
 import { Store } from "initialize";

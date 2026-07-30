@@ -1,10 +1,10 @@
-// Module ID: 11883
-// Function ID: 11884
+// Module ID: 11879
+// Function ID: 11880
 // Name: getFavoritesAddButtonLabel
 // Dependencies: [1236, 2969, 2]
 // Exports: getFavoritesAddButtonLabel
 
-// Module 11883 (getFavoritesAddButtonLabel)
+// Module 11879 (getFavoritesAddButtonLabel)
 const result = require("set").fileFinishedImporting("modules/favorites/utils/getFavoritesAddButtonLabel.tsx");
 
 export const getFavoritesAddButtonLabel = function getFavoritesAddButtonLabel(length) {

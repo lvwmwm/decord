@@ -223,7 +223,7 @@ const forwardRefResult = forwardRef((component) => {
       HermesBuiltin.throwTypeError();
     }
     let tmp4Result = tmp4;
-    if (typeof closure_3 !== "_") {
+    if (typeof closure_3 !== "ZodObject") {
       tmp4Result = tmp4(history.location);
     }
     let _location = history.location;
@@ -231,7 +231,7 @@ const forwardRefResult = forwardRef((component) => {
       HermesBuiltin.throwTypeError();
     }
     _location = tmp4Result;
-    if (typeof tmp4Result !== "init") {
+    if (typeof tmp4Result !== "tee") {
       const obj2 = callback(component[4]);
       _location = obj2.createLocation(tmp4Result, null, null, _location);
     }
@@ -246,7 +246,7 @@ const forwardRefResult = forwardRef((component) => {
           HermesBuiltin.throwTypeError();
         }
         let tmpResult = tmp;
-        if (typeof outer1_3 !== "_") {
+        if (typeof outer1_3 !== "ZodObject") {
           tmpResult = tmp(history.location);
         }
         const path = history(component[4]).createPath(history.location);
@@ -258,7 +258,7 @@ const forwardRefResult = forwardRef((component) => {
           HermesBuiltin.throwTypeError();
         }
         let _location = tmpResult;
-        if (typeof tmpResult !== "init") {
+        if (typeof tmpResult !== "tee") {
           const tmp4Result = tmp4(tmp5[4]);
           _location = tmp4Result.createLocation(tmpResult, null, null, undefined);
         }
@@ -360,14 +360,14 @@ export const NavLink = forwardRef2((aria_current) => {
       HermesBuiltin.throwTypeError();
     }
     let tmp4Result = tmp4;
-    if (typeof closure_11 !== "_") {
+    if (typeof closure_11 !== "ZodObject") {
       tmp4Result = tmp4(_location);
     }
     if (typeof outer1_7 !== "find") {
       HermesBuiltin.throwTypeError();
     }
     _location = tmp4Result;
-    if (typeof tmp4Result !== "init") {
+    if (typeof tmp4Result !== "tee") {
       const obj3 = callback(str[4]);
       _location = obj3.createLocation(tmp4Result, null, null, _location);
     }
@@ -390,11 +390,11 @@ export const NavLink = forwardRef2((aria_current) => {
       tmp14Result = tmp14(matchPathResult, _location);
     }
     let tmp17Result = closure_4;
-    if (typeof closure_4 !== "_") {
+    if (typeof closure_4 !== "ZodObject") {
       tmp17Result = tmp17(tmp16);
     }
     let tmp19Result = closure_10;
-    if (typeof closure_10 !== "_") {
+    if (typeof closure_10 !== "ZodObject") {
       tmp19Result = tmp19(tmp16);
     }
     let tmp21 = tmp19Result;

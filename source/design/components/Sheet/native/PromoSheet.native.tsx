@@ -1,10 +1,10 @@
-// Module ID: 6656
-// Function ID: 6657
+// Module ID: 6653
+// Function ID: 6654
 // Name: PromoSheet
-// Dependencies: [109, 19, 17, 21, 4189, 712, 1348, 6657, 5243, 4598, 6658, 4185, 2]
+// Dependencies: [109, 19, 17, 21, 4189, 712, 1348, 6654, 5243, 4598, 6655, 4185, 2]
 // Exports: PromoSheet
 
-// Module 6656 (PromoSheet)
+// Module 6653 (PromoSheet)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -59,7 +59,7 @@ export const PromoSheet = function PromoSheet(arg0) {
       obj = {};
       const merged1 = Object.assign(graphic);
       obj.style = tmp4.graphic;
-      let tmp6Result = tmp6(tmp7(6658).Graphic, obj);
+      let tmp6Result = tmp6(tmp7(6655).Graphic, obj);
     }
     const items1 = [tmp6Result, , ];
     let str = "heading-xl/bold";

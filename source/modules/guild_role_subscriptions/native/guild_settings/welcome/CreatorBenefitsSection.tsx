@@ -1,10 +1,10 @@
-// Module ID: 16538
-// Function ID: 16539
+// Module ID: 16532
+// Function ID: 16533
 // Name: EarningPreview
-// Dependencies: [19, 17, 14222, 21, 4189, 712, 4035, 4125, 4185, 1236, 5141, 16539, 16540, 16541, 16542, 16543, 16544, 16545, 16546, 2]
+// Dependencies: [19, 17, 14218, 21, 4189, 712, 4035, 4125, 4185, 1236, 5141, 16533, 16534, 16535, 16536, 16537, 16538, 16539, 16540, 2]
 // Exports: default
 
-// Module 16538 (EarningPreview)
+// Module 16532 (EarningPreview)
 import "set";
 import { View } from "registerAsset";
 import { CREATOR_REVENUE_SHARE_PERCENTAGE as closure_4 } from "MAX_SUBSCRIPTION_TIERS";
@@ -41,7 +41,7 @@ function EarningPreview() {
   const items3 = [closure_6(View, obj2), ];
   const obj4 = { style: tmp4.earningMetricsAvatar, source: null };
   const tmp8 = obj.isThemeDark(tmp3) && tmp4.earningMetricsShadowContainerDarkMode;
-  obj4[1] = importDefault(16539);
+  obj4[1] = importDefault(16533);
   items3[1] = closure_5(importDefault(5141), obj4);
   obj[1] = items3;
   obj[1] = closure_6(View, obj);
@@ -59,15 +59,15 @@ function ConsistentEarningBenefit() {
   ({ horizontalContainer: arr2[0], benefitAvatars: arr2[1] } = tmp4);
   const tmp3 = importDefault(4125)();
   if (obj4.isThemeDark(tmp3)) {
-    let tmpResult = tmp(16540);
+    let tmpResult = tmp(16534);
   } else {
-    tmpResult = tmp(16541);
+    tmpResult = tmp(16535);
   }
   const items2 = [callback(BenefitAvatar, { avatarSource: tmpResult }), , ];
   obj4 = require(4035) /* AccessibilityAnnouncer */;
-  items2[1] = callback(BenefitAvatar, { avatarSource: importDefault(16542) });
-  const obj1 = { avatarSource: importDefault(16542) };
-  items2[2] = callback(BenefitAvatar, { avatarSource: importDefault(16543) });
+  items2[1] = callback(BenefitAvatar, { avatarSource: importDefault(16536) });
+  const obj1 = { avatarSource: importDefault(16536) };
+  items2[2] = callback(BenefitAvatar, { avatarSource: importDefault(16537) });
   obj[1] = items2;
   items[2] = closure_6(View, obj);
   obj[1] = items;
@@ -81,11 +81,11 @@ function FollowerAwardBenefit() {
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.qsKRUQ);
   const items = [callback(require(4185) /* Text */.Text, obj), , ];
   obj = { style: tmp.socialIllo, source: null };
-  obj[1] = importDefault(16544);
+  obj[1] = importDefault(16538);
   items[1] = callback(importDefault(5141), obj);
   const obj1 = { style: tmp.lanyardIllo, source: null };
   const tmp2 = importDefault(5141);
-  obj1[1] = importDefault(16545);
+  obj1[1] = importDefault(16539);
   items[2] = callback(importDefault(5141), obj1);
   obj[1] = items;
   return callback2(View, obj);
@@ -110,7 +110,7 @@ function RevenueShareBenefit() {
   const tmp3 = importDefault(4125)();
   const tmp5 = closure_6;
   const tmp6 = View;
-  obj1[1] = importDefault(16546);
+  obj1[1] = importDefault(16540);
   items2[2] = closure_5(importDefault(5141), obj1);
   obj[1] = items2;
   return tmp5(tmp6, obj);

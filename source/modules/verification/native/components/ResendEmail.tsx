@@ -1,10 +1,10 @@
-// Module ID: 9184
-// Function ID: 9185
+// Module ID: 9180
+// Function ID: 9181
 // Name: ResendEmail
-// Dependencies: [32, 19, 17, 1366, 1874, 676, 21, 4189, 1480, 589, 38, 9185, 9177, 6785, 4185, 1236, 4600, 5641, 3890, 2]
+// Dependencies: [32, 19, 17, 1366, 1874, 676, 21, 4189, 1480, 589, 38, 9181, 9173, 6782, 4185, 1236, 4600, 5641, 3890, 2]
 // Exports: default
 
-// Module 9184 (ResendEmail)
+// Module 9180 (ResendEmail)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "handleLogout";
@@ -38,7 +38,7 @@ export default function ResendEmail() {
   let obj2 = navigation(589);
   const items1 = [handleRequiredAction];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => action.getAction());
-  let obj3 = verified(9185);
+  let obj3 = verified(9181);
   const result = obj3.isEmailReverification(stateFromStores1);
   let tmp16Result = !result;
   [tmp10, dependencyMap] = callback(React.useState(false), 2);
@@ -62,7 +62,7 @@ export default function ResendEmail() {
   callback = React.useCallback(() => {
     navigation.push(outer1_8.ENTER_EMAIL);
   }, items3);
-  const items4 = [callback2(navigation(6785).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
+  const items4 = [callback2(navigation(6782).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   let intl = navigation(1236).intl;
   obj[4] = intl.string(navigation(1236).t.fUtddV);

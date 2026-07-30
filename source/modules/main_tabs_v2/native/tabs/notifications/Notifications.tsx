@@ -1,10 +1,10 @@
-// Module ID: 15271
-// Function ID: 15272
+// Module ID: 15265
+// Function ID: 15266
 // Name: goBack
-// Dependencies: [19, 17, 8767, 1369, 21, 4189, 712, 4041, 6561, 9556, 15272, 5177, 4717, 1236, 15273, 4185, 15274, 9554, 15276, 5515, 5535, 5731, 5149, 5502, 15280, 15281, 10048, 4036, 1581, 14928, 4719, 3901, 2]
+// Dependencies: [19, 17, 8763, 1369, 21, 4189, 712, 4041, 6558, 9552, 15266, 5177, 4717, 1236, 15267, 4185, 15268, 9550, 15270, 5515, 5535, 5731, 5149, 5502, 15274, 15275, 10044, 4036, 1581, 14922, 4719, 3901, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 15271 (goBack)
+// Module 15265 (goBack)
 import importAllResult from "context";
 import { View } from "SavedMessageSortTypes";
 import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS";
@@ -138,60 +138,61 @@ let closure_12 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
   nestedInLaunchPad = nestedInLaunchPad.nestedInLaunchPad;
   let _require;
   const tmp = callback3();
-  let obj = importDefault(9556);
+  let obj = _require(9552);
+  const isForLaterExperimentOn = obj.useIsForLaterExperimentOn("NativeNotifications");
   const ref = importAllResult.useRef(null);
-  const tmp6 = importDefault(15272)(ref);
-  _require = tmp6;
-  const items = [tmp6];
+  const tmp8 = importDefault(15266)(ref);
+  _require = tmp8;
+  const items = [tmp8];
   const callback = importAllResult.useCallback(() => _undefined(outer1_6.TAKE_ACTION), items);
-  let tmp12 = !nestedInLaunchPad;
+  let tmp13 = !nestedInLaunchPad;
   if (!nestedInLaunchPad) {
-    tmp12 = !tmp4;
+    tmp13 = !tmp4;
   }
-  obj = { top: tmp12, children: null };
-  let tmp8Result = null;
+  obj = { top: tmp13, children: null };
+  let tmp10Result = null;
   if (!nestedInLaunchPad) {
     obj = { style: null, children: null };
     obj[0] = tmp.headerTitle;
     const obj1 = { style: null, accessibilityLabel: null, onPress: null, children: null };
     obj1[0] = tmp.headerClose;
-    const intl = tmp11(1236).intl;
-    obj1[1] = intl.string(tmp11(1236).t["13/7kX"]);
+    const intl = tmp5(1236).intl;
+    obj1[1] = intl.string(tmp5(1236).t["13/7kX"]);
     obj1[2] = goBack;
-    obj1[3] = tmp10(tmp11(15273).LeftBackIconWithBadge, {});
-    const items1 = [tmp10(tmp11(4717).PressableOpacity, obj1), , ];
+    obj1[3] = tmp12(tmp5(15267).LeftBackIconWithBadge, {});
+    const items1 = [tmp12(tmp5(4717).PressableOpacity, obj1), , ];
     const obj2 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: null, maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
     obj2[2] = tmp.headerText;
-    const intl2 = tmp11(1236).intl;
-    obj2[5] = intl2.string(tmp11(1236).t.HcoRu0);
-    items1[1] = tmp10(tmp11(4185).Text, obj2);
+    const intl2 = tmp5(1236).intl;
+    obj2[5] = intl2.string(tmp5(1236).t.HcoRu0);
+    items1[1] = tmp12(tmp5(4185).Text, obj2);
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.actionButtons;
-    tmp8Result = null;
-    if (obj.useConfig({ location: "NativeNotifications" }).enabled) {
+    tmp10Result = null;
+    if (isForLaterExperimentOn) {
       const obj4 = { children: null };
       const obj5 = { ref: null, type: null, onOpen: null };
       obj5[0] = ref;
-      let tmp2Result = tmp2(15274);
-      obj5[1] = tmp11(9554).SavedMessageSortTypes.BOOKMARK;
+      let tmp2Result = tmp2(15268);
+      obj5[1] = tmp5(9550).SavedMessageSortTypes.BOOKMARK;
       obj5[2] = callback;
-      const items2 = [tmp10(tmp2Result, obj5), ];
+      const items2 = [tmp12(tmp2Result, obj5), ];
       const obj6 = { type: null, onOpen: null };
-      tmp2Result = tmp2(15274);
-      obj6[0] = tmp11(9554).SavedMessageSortTypes.REMINDER;
+      tmp2Result = tmp2(15268);
+      obj6[0] = tmp5(9550).SavedMessageSortTypes.REMINDER;
       obj6[1] = callback;
-      items2[1] = tmp10(tmp2Result, obj6);
+      items2[1] = tmp12(tmp2Result, obj6);
       obj4[0] = items2;
-      tmp8Result = tmp8(closure_8, obj4);
+      tmp10Result = tmp10(closure_8, obj4);
     }
-    const items3 = [tmp8Result, tmp10(tmp2(15276), {})];
+    const items3 = [tmp10Result, tmp12(tmp2(15270), {})];
     obj3[1] = items3;
-    items1[2] = tmp8(tmp9, obj3);
+    items1[2] = tmp10(tmp11, obj3);
     obj[1] = items1;
-    tmp8Result = tmp8(tmp9, obj);
+    tmp10Result = tmp10(tmp11, obj);
   }
   const obj7 = { children: null };
-  obj[1] = tmp8Result;
+  obj[1] = tmp10Result;
   const items4 = [closure_7(_require(5177).SafeAreaPaddingView, obj), ];
   const items5 = [tmp.headerBorder];
   items4[1] = closure_7(View, { style: items5 });

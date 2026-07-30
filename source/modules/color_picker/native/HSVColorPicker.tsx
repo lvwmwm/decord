@@ -1,10 +1,10 @@
-// Module ID: 13699
-// Function ID: 13700
+// Module ID: 13694
+// Function ID: 13695
 // Name: HSVColorPicker
-// Dependencies: [19, 17, 21, 4189, 4050, 13700, 13701, 2]
+// Dependencies: [19, 17, 21, 4189, 4050, 13695, 13696, 2]
 // Exports: default
 
-// Module 13699 (HSVColorPicker)
+// Module 13694 (HSVColorPicker)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -62,12 +62,12 @@ export default function HSVColorPicker(arg0) {
   obj[6] = saturationValueSelectorStyle;
   obj[7] = onPanUpdate;
   obj[8] = onPanFinalize;
-  const items = [closure_4(importDefault(13700), obj), ];
-  const tmp10 = importDefault(13700);
+  const items = [closure_4(importDefault(13695), obj), ];
+  const tmp10 = importDefault(13695);
   if (hue == null) {
     hue = sharedValue;
   }
-  items[1] = closure_4(tmp9(13701), { hue, style: huePickerStyle, colorBarInnerStyle: hueColorBarInnerStyle, sliderStyle: hueSliderStyle, onPanUpdate, onPanFinalize });
+  items[1] = closure_4(tmp9(13696), { hue, style: huePickerStyle, colorBarInnerStyle: hueColorBarInnerStyle, sliderStyle: hueSliderStyle, onPanUpdate, onPanFinalize });
   obj[1] = items;
   return tmp6(tmp7, obj);
 };

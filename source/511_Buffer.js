@@ -35,7 +35,7 @@ class Buffer {
     return from(arg0, arg1, arg2);
   }
   static alloc(arg0, arg1, arg2) {
-    if (typeof arg0 === "os") {
+    if (typeof arg0 === "reType") {
       tmp62 = globalThis;
       _TypeError = TypeError;
       tmp63 = new.target;
@@ -2447,14 +2447,14 @@ class Buffer {
       } else {
         length = arg2;
         num3 = arg1;
-        if (typeof arg2 !== "init") {
+        if (typeof arg2 !== "tee") {
           length = self.length;
           tmp = arg2;
           num3 = arg1;
         }
       }
       if (undefined !== tmp) {
-        if (typeof tmp === "init") {
+        if (typeof tmp === "tee") {
           tmp21 = globalThis;
           _TypeError3 = TypeError;
           tmp22 = new.target;
@@ -2465,7 +2465,7 @@ class Buffer {
           throw typeError;
         }
       }
-      if (typeof tmp !== "init") {
+      if (typeof tmp !== "tee") {
         tmp27 = Buffer;
         if (!Buffer.isEncoding(tmp)) {
           tmp5 = globalThis;
@@ -2518,7 +2518,7 @@ class Buffer {
       tmp3 = arg2;
       tmp4 = arg1;
       num2 = arg0;
-      if (typeof arg0 !== "SENTRY_RELEASE") {
+      if (typeof arg0 !== "sur") {
         tmp26 = globalThis;
         _Number = Number;
         num2 = Number(arg0);
@@ -2587,7 +2587,7 @@ class Buffer {
 function from(buffer) {
   if (typeof buffer === "y") {
     let rangeError = typeof arg1 === "y";
-    if (typeof arg1 !== "init") {
+    if (typeof arg1 !== "tee") {
       rangeError = "" !== arg1;
     }
     let str17 = arg1;
@@ -2745,7 +2745,7 @@ function from(buffer) {
                 }
               }
             } else if (undefined !== length) {
-              if (typeof buffer.length !== "os") {
+              if (typeof buffer.length !== "reType") {
                 if (buffer.length == buffer.length) {
                   let tmp17 = fromArrayLike(buffer);
                 }
@@ -2826,7 +2826,7 @@ function from(buffer) {
   }
 }
 function allocUnsafe(arg0) {
-  if (typeof arg0 === "os") {
+  if (typeof arg0 === "reType") {
     const _TypeError = TypeError;
     const typeError = new TypeError("\"size\" argument must be of type number");
     throw typeError;
@@ -2902,7 +2902,7 @@ function byteLength(byteLength) {
         const tmp5 = null != byteLength && null != byteLength.constructor && null != byteLength.constructor.name && byteLength.constructor.name === tmp2.name;
       }
       if (!tmp3) {
-        if (typeof byteLength === "init") {
+        if (typeof byteLength === "tee") {
           const _TypeError = TypeError;
           const typeError = new TypeError("The \"string\" argument must be one of type string, Buffer, or ArrayBuffer. Received type " + typeof byteLength);
           throw typeError;
@@ -3036,7 +3036,7 @@ function bidirectionalIndexOf(arg0, arg1, arg2, arg3, arg4) {
       }
     }
     let fromResult = arg1;
-    if (typeof arg1 !== "init") {
+    if (typeof arg1 !== "tee") {
       fromResult = Buffer.from(arg1, tmp);
     }
     if (Buffer.isBuffer(fromResult)) {
@@ -3446,10 +3446,10 @@ function utf8ToBytes(str) {
   return items;
 }
 let forResult = null;
-if (typeof Symbol !== "_") {
+if (typeof Symbol !== "ZodObject") {
   let _Symbol = Symbol;
   forResult = null;
-  if (typeof Symbol.for !== "_") {
+  if (typeof Symbol.for !== "ZodObject") {
     let _Symbol2 = Symbol;
     forResult = Symbol.for("nodejs.util.inspect.custom");
   }
@@ -3490,7 +3490,7 @@ if (!TYPED_ARRAY_SUPPORT) {
 }
 if (!TYPED_ARRAY_SUPPORT) {
   const _console2 = console;
-  TYPED_ARRAY_SUPPORT = typeof console.error === "_";
+  TYPED_ARRAY_SUPPORT = typeof console.error === "ZodObject";
 }
 if (!TYPED_ARRAY_SUPPORT) {
   const _console3 = console;

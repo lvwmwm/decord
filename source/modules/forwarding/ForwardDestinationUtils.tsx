@@ -1,10 +1,10 @@
-// Module ID: 6157
-// Function ID: 6158
+// Module ID: 6155
+// Function ID: 6156
 // Name: useSelectedDestinationChannel
-// Dependencies: [19, 5092, 1376, 1372, 3817, 3826, 1874, 676, 6158, 1351, 589, 692, 4524, 1906, 4403, 1236, 4522, 5972, 4028, 4380, 2]
+// Dependencies: [19, 5092, 1376, 1372, 3817, 3826, 1874, 676, 6156, 1351, 589, 692, 4524, 1906, 4403, 1236, 4522, 5970, 4028, 4380, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel, useDestinationNamesWithSlowmode, useSelectedDestinationChannel, useSelectedDestinationNames
 
-// Module 6157 (useSelectedDestinationChannel)
+// Module 6155 (useSelectedDestinationChannel)
 import computeChannelName from "computeChannelName";
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import createChannelRecord from "createChannelRecord";
@@ -25,7 +25,7 @@ const require = arg1;
 const result = require("createChannelRecord").fileFinishedImporting("modules/forwarding/ForwardDestinationUtils.tsx");
 
 export const useSelectedDestinationChannel = function useSelectedDestinationChannel(selectedDestinations) {
-  const mapped = selectedDestinations.map(found(6158).getChannelIdFromDestinationId);
+  const mapped = selectedDestinations.map(found(6156).getChannelIdFromDestinationId);
   found = mapped.find(found(1351).isNotNullish);
   const items = [ensureGuildLoaded];
   const items1 = [found];
@@ -157,8 +157,8 @@ export const isRatelimitedInChannel = function isRatelimitedInChannel(channel, o
     tmp = channel.rateLimitPerUser > 0;
   }
   if (tmp) {
-    tmp = !require(5972) /* canBypassSlowmodeHelper */.canBypassSlowmodeHelper(channel, outer1_6);
-    const obj = require(5972) /* canBypassSlowmodeHelper */;
+    tmp = !require(5970) /* canBypassSlowmodeHelper */.canBypassSlowmodeHelper(channel, outer1_6);
+    const obj = require(5970) /* canBypassSlowmodeHelper */;
   }
   return tmp;
 };

@@ -1,10 +1,10 @@
-// Module ID: 7725
-// Function ID: 7726
+// Module ID: 7722
+// Function ID: 7723
 // Name: getEmbedThemeColors
 // Dependencies: [19, 4189, 4035, 712, 4033, 2]
 // Exports: default, useEmbedThemeColors
 
-// Module 7725 (getEmbedThemeColors)
+// Module 7722 (getEmbedThemeColors)
 import noop from "noop";
 import createCacheKey from "createCacheKey";
 import createCacheKey from "createCacheKey";

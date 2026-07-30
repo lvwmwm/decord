@@ -1,7 +1,7 @@
 // Module ID: 5679
 // Function ID: 5680
 // Name: _safeTransitionTo
-// Dependencies: [5, 1862, 676, 4381, 5680, 1222, 5681, 4529, 1236, 6052, 2323, 11813, 2]
+// Dependencies: [5, 1862, 676, 4381, 5680, 1222, 5681, 4529, 1236, 6050, 2323, 11809, 2]
 // Exports: default
 
 // Module 5679 (_safeTransitionTo)
@@ -140,7 +140,7 @@ function _safeTransitionTo() {
           }
           obj7 = callback2(closure_2[11]);
           if (closure_2 == null) {
-            closure_2 = { guildId: "r" };
+            closure_2 = { guildId: "Array" };
           }
           c5 = 2;
           c6 = 1;

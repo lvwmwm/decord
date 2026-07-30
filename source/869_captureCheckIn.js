@@ -165,7 +165,7 @@ export const captureException = function captureException(arg0, arg1) {
 };
 export const captureMessage = function captureMessage(arg0, arg1) {
   let tmp;
-  if (typeof arg1 !== "init") {
+  if (typeof arg1 !== "tee") {
     tmp = arg1;
   }
   let tmp2;

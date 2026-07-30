@@ -1,9 +1,9 @@
-// Module ID: 5938
-// Function ID: 5939
+// Module ID: 5936
+// Function ID: 5937
 // Name: getAll
 // Dependencies: [1376, 1218, 1372, 1942, 1935, 1862, 3817, 676, 1379, 505, 506, 3, 1907, 3808, 514, 698, 1384, 2]
 
-// Module 5938 (getAll)
+// Module 5936 (getAll)
 import createChannelRecord from "createChannelRecord";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";

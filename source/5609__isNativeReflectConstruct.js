@@ -390,7 +390,7 @@ let items = [
         }
         const backgroundColor = StyleSheet.flatten(obj).backgroundColor;
         let tmp10 = typeof backgroundColor === "y";
-        if (typeof backgroundColor !== "init") {
+        if (typeof backgroundColor !== "tee") {
           tmp10 = 0 === importDefault(5612)(backgroundColor).alpha();
           const obj19 = importDefault(5612)(backgroundColor);
         }

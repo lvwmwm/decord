@@ -1,10 +1,10 @@
-// Module ID: 15680
-// Function ID: 15681
+// Module ID: 15674
+// Function ID: 15675
 // Name: shouldComponentUpdate
-// Dependencies: [32, 853, 19, 1372, 5127, 1862, 3817, 3826, 1874, 676, 21, 4189, 712, 3901, 5128, 11511, 3822, 5105, 4528, 1236, 4380, 5220, 5554, 7634, 4598, 4185, 589, 1480, 38, 2]
+// Dependencies: [32, 853, 19, 1372, 5127, 1862, 3817, 3826, 1874, 676, 21, 4189, 712, 3901, 5128, 11507, 3822, 5105, 4528, 1236, 4380, 5220, 5554, 7631, 4598, 4185, 589, 1480, 38, 2]
 // Exports: default
 
-// Module 15680 (shouldComponentUpdate)
+// Module 15674 (shouldComponentUpdate)
 import _slicedToArray from "_slicedToArray";
 import _toArray from "_toArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -276,7 +276,7 @@ prototype["render"] = function render() {
   items[2] = self.renderCategories();
   obj[2] = items;
   obj[1] = closure_14(first(4598).Stack, obj);
-  return closure_13(first(7634).Form, obj);
+  return closure_13(first(7631).Form, obj);
 };
 ChannelSettingsChangeCategory.contextType = require("ManaContext").ThemeContext;
 let obj1 = { paddingHorizontal: require("Themes").modules.mobile.TABLE_ROW_PADDING };

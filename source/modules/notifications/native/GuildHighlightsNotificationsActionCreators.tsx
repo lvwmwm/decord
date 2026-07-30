@@ -1,10 +1,10 @@
-// Module ID: 9518
-// Function ID: 9519
+// Module ID: 9514
+// Function ID: 9515
 // Name: openGuildHighlightNotificationForPush
-// Dependencies: [9519, 676, 4157, 9520, 1959, 1236, 698, 2]
+// Dependencies: [9515, 676, 4157, 9516, 1959, 1236, 698, 2]
 // Exports: openGuildHighlightNotificationForPush
 
-// Module 9518 (openGuildHighlightNotificationForPush)
+// Module 9514 (openGuildHighlightNotificationForPush)
 import { NotificationUserFeedbackReasons as closure_3 } from "NotificationUserFeedbackReasons";
 import { AnalyticEvents } from "ME";
 
@@ -60,5 +60,5 @@ export const openGuildHighlightNotificationForPush = function openGuildHighlight
     obj.track(constants.FEEDBACK_FORM_SUBMITTED, obj);
   };
   obj[1] = obj;
-  obj.openLazy(_require(1959)(9520, dependencyMap.paths), "GuildHighlightsNotifications", obj);
+  obj.openLazy(_require(1959)(9516, dependencyMap.paths), "GuildHighlightsNotifications", obj);
 };

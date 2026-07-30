@@ -1,7 +1,7 @@
 // Module ID: 4369
 // Function ID: 4370
 // Name: watchStream
-// Dependencies: [5, 4203, 4370, 4371, 4208, 1218, 1372, 1862, 1931, 4205, 676, 4254, 709, 4253, 38, 4372, 4383, 4394, 530, 687, 4999, 503, 8851, 5001, 4199, 8917, 2]
+// Dependencies: [5, 4203, 4370, 4371, 4208, 1218, 1372, 1862, 1931, 4205, 676, 4254, 709, 4253, 38, 4372, 4383, 4394, 530, 687, 4999, 503, 8847, 5001, 4199, 8913, 2]
 // Exports: changeStreamRegion, closeStream, fetchStreamPreview, joinPrivateChannelAndWatchStream, notifyStreamStart, setLayout, setStreamPaused, startStream, stopOwnStream, stopStream, toggleSelfStreamHidden, updateStreamSettings, watchStreamAndTransitionToStream
 
 // Module 4369 (watchStream)
@@ -394,7 +394,7 @@ export const notifyStreamStart = function notifyStreamStart() {
 };
 export const updateStreamSettings = function updateStreamSettings(noTrack) {
   if (true !== noTrack.noTrack) {
-    let obj = require(8851) /* isPremiumResolution */;
+    let obj = require(8847) /* isPremiumResolution */;
     const result = obj.trackStreamSettingsUpdate(noTrack.preset, noTrack.resolution, noTrack.frameRate, noTrack.soundshareEnabled);
   }
   obj = { type: "STREAM_UPDATE_SETTINGS" };

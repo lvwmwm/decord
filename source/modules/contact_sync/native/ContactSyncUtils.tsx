@@ -1,10 +1,10 @@
-// Module ID: 11771
-// Function ID: 11772
+// Module ID: 11767
+// Function ID: 11768
 // Name: _uploadContacts
-// Dependencies: [5, 17, 4869, 11770, 11769, 676, 501, 4999, 503, 709, 11772, 3862, 1208, 589, 1384, 1945, 3886, 4395, 2]
+// Dependencies: [5, 17, 4869, 11766, 11765, 676, 501, 4999, 503, 709, 11768, 3862, 1208, 589, 1384, 1945, 3886, 4395, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts, useContactSyncAccount, useContactSyncEnabled, useContactSyncUserIsDiscoverable
 
-// Module 11771 (_uploadContacts)
+// Module 11767 (_uploadContacts)
 import closure_3 from "ME";
 import { NativeModules } from "module_4395";
 import set from "set";
@@ -67,7 +67,7 @@ function _uploadContacts() {
               body = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -205,7 +205,7 @@ export const bulkAddFriends = function bulkAddFriends(user_ids, bulkAddToken) {
 export const adminDeleteContactSync = function adminDeleteContactSync() {
   callback2();
   callback3();
-  let obj = require(11772) /* _requestAndSyncContacts */;
+  let obj = require(11768) /* _requestAndSyncContacts */;
   const result = obj.removeLastUserContactsUpload();
   const ContactSyncEnabled = require(3862) /* explicitContentFromProto */.ContactSyncEnabled;
   ContactSyncEnabled.updateSetting(false);

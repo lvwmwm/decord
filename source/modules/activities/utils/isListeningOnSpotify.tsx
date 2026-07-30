@@ -1,10 +1,10 @@
-// Module ID: 9079
-// Function ID: 9080
+// Module ID: 9075
+// Function ID: 9076
 // Name: isListeningOnSpotify
-// Dependencies: [676, 8175, 4871, 2]
+// Dependencies: [676, 8172, 4871, 2]
 // Exports: default
 
-// Module 9079 (isListeningOnSpotify)
+// Module 9075 (isListeningOnSpotify)
 import ME from "ME";
 import { isSpotifyParty } from "WEB_OPEN";
 

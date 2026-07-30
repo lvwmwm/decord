@@ -1,10 +1,10 @@
-// Module ID: 11884
-// Function ID: 11885
+// Module ID: 11880
+// Function ID: 11881
 // Name: ProfileEffectAssetPreview
-// Dependencies: [19, 17, 678, 8039, 21, 4189, 712, 8066, 5141, 11885, 8082, 8694, 8046, 8074, 8056, 1898, 8070, 1901, 679, 8714, 8713, 8067, 1236, 4185, 5809, 8716, 11886, 8664, 3835, 8726, 2]
+// Dependencies: [19, 17, 678, 8036, 21, 4189, 712, 8063, 5141, 11881, 8079, 8690, 8043, 8071, 8053, 1898, 8067, 1901, 679, 8710, 8709, 8064, 1236, 4185, 5809, 8712, 11882, 8661, 3835, 8722, 2]
 // Exports: default
 
-// Module 11884 (ProfileEffectAssetPreview)
+// Module 11880 (ProfileEffectAssetPreview)
 import FRACTIONAL_NITRO_COIN_SIZE from "FRACTIONAL_NITRO_COIN_SIZE";
 import { View } from "CollectiblesItemType";
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items";
@@ -22,14 +22,14 @@ let metroImportAll;
 let require = arg1;
 function ProfileEffectAssetPreview(item) {
   const tmp = callback4();
-  const tmp4 = importDefault(8066)(item.item.skuId);
+  const tmp4 = importDefault(8063)(item.item.skuId);
   let tmp5 = null;
   if (null != tmp4) {
     let obj = { style: null, children: null };
     obj[0] = tmp.profileEffectContainer;
     obj = { source: null, alt: null, style: null, resizeMode: "cover" };
     obj = { uri: null };
-    obj[0] = tmp2(11885);
+    obj[0] = tmp2(11881);
     obj[0] = obj;
     obj[1] = tmp4.accessibilityLabel;
     obj[2] = tmp.profileEffect;
@@ -52,7 +52,7 @@ function ProfileFrameAssetPreview(arg0) {
   let item;
   let width;
   ({ item, width, height } = arg0);
-  const tmp3 = importDefault(8082)(item.skuId, "CollectiblesShopCheckoutDetails");
+  const tmp3 = importDefault(8079)(item.skuId, "CollectiblesShopCheckoutDetails");
   let tmp4 = null;
   if (null != tmp3) {
     const obj = { profileFrame: null, previewWidth: null, previewHeight: null, profileBackgroundColor: null };
@@ -60,8 +60,8 @@ function ProfileFrameAssetPreview(arg0) {
     obj[1] = width;
     obj[2] = height;
     obj[3] = tmp(712).colors.BACKGROUND_BASE_LOW;
-    tmp4 = callback(tmp(8694), obj);
-    const tmpResult = tmp(8694);
+    tmp4 = callback(tmp(8690), obj);
+    const tmpResult = tmp(8690);
   }
   return tmp4;
 }
@@ -79,10 +79,10 @@ function BundleAssetPreview(height) {
   let c5;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = width(8046);
+  let obj = width(8043);
   const shopProductItems = obj.useShopProductItems(product);
   ({ firstProfileEffect, firstAvatarDecoration, firstNameplate } = shopProductItems);
-  let obj1 = width(8074);
+  let obj1 = width(8071);
   bundleWidth = small.small.bundleWidth;
   rounded = bundleWidth;
   if (!obj1.useCollectiblesMobileFlexibleBundlesExperiment("CollectiblesShopCheckoutDetails").enabled) {
@@ -110,7 +110,7 @@ function BundleAssetPreview(height) {
   obj = { style: memo1, children: null };
   const memo2 = bundleWidth.useMemo(() => ({ width, height }), items2);
   obj1 = { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, previewAssets: product.previewAssets, disableStaticBackground: true, size: "small", targetSize: memo2, exposureLocation: "CollectiblesShopCheckoutDetails" };
-  obj[1] = callback(height(8056), obj1);
+  obj[1] = callback(height(8053), obj1);
   obj[1] = callback(rounded, obj);
   return callback(rounded, obj);
 }
@@ -118,7 +118,7 @@ function NameplateAssetPreview(item) {
   let obj = require(1898) /* getNameplateData */;
   const nameplateData = obj.getNameplateData(item.item);
   obj = { nameplate: nameplateData, fullOpacity: true, isSquarePreview: true, style: createCacheKey().nameplate };
-  return callback(importDefault(8070), obj);
+  return callback(importDefault(8067), obj);
 }
 function CollectibleProductPreview(arg0) {
   let product;
@@ -147,13 +147,13 @@ function CollectibleProductPreviewContent(userAvatarSource) {
   if (ALL.has(product.skuId)) {
     let obj = { skuId: null, width: null, height: null };
     obj[0] = product.skuId;
-    obj[1] = tmp2(8714).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT;
-    obj[2] = tmp2(8714).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT;
-    return callback(tmp2(8714).FractionalNitroCoinIllustration, obj);
+    obj[1] = tmp2(8710).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT;
+    obj[2] = tmp2(8710).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT;
+    return callback(tmp2(8710).FractionalNitroCoinIllustration, obj);
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     obj = { source: null, style: null };
     const obj1 = { uri: null };
-    obj1[0] = importDefault(8713);
+    obj1[0] = importDefault(8709);
     obj[0] = obj1;
     obj[1] = tmp.externalProductImage;
     return callback(importDefault(5141), obj);
@@ -164,7 +164,7 @@ function CollectibleProductPreviewContent(userAvatarSource) {
       obj2[0] = product.items[0];
       obj2[1] = width;
       obj2[2] = userAvatarSource.userAvatarSource;
-      return callback(importDefault(8067), obj2);
+      return callback(importDefault(8064), obj2);
     } else if (tmp2(1901).CollectiblesItemType.PROFILE_EFFECT === type) {
       const obj3 = { item: null };
       obj3[0] = product.items[0];
@@ -352,7 +352,7 @@ export default function CollectiblesShopCheckoutDetails(recipientUser) {
   }
   let dependencyMap;
   const tmp = createCacheKey();
-  let obj = require(8664) /* useCurrentUser */;
+  let obj = require(8661) /* useCurrentUser */;
   const currentUser = obj.useCurrentUser();
   let obj1 = flag2(3835);
   const canUseShopDiscountsResult = obj1.canUseShopDiscounts(currentUser);

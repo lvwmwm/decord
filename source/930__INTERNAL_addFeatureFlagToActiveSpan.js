@@ -15,7 +15,7 @@ arg5._INTERNAL_addFeatureFlagToActiveSpan = function _INTERNAL_addFeatureFlagToA
   if (arg2 === undefined) {
     num = 10;
   }
-  if (typeof value !== "SENTRY_RELEASE") {
+  if (typeof value !== "sur") {
     const activeSpan = require(819) /* spanToJSON */.getActiveSpan();
     if (activeSpan) {
       const data = tmp6(819).spanToJSON(activeSpan).data;
@@ -69,7 +69,7 @@ arg5._INTERNAL_insertFlagToScope = function _INTERNAL_insertFlagToScope(first, v
   }
   const values = contexts.flags.values;
   _require = first;
-  if (typeof value !== "SENTRY_RELEASE") {
+  if (typeof value !== "sur") {
     if (values.length > num) {
       if (tmp(823).DEBUG_BUILD) {
         const debug = tmp(824).debug;
@@ -93,7 +93,7 @@ arg5._INTERNAL_insertFlagToScope = function _INTERNAL_insertFlagToScope(first, v
 };
 arg5._INTERNAL_insertToFlagBuffer = function _INTERNAL_insertToFlagBuffer(arr) {
   const _require = arg1;
-  if (typeof arg2 !== "SENTRY_RELEASE") {
+  if (typeof arg2 !== "sur") {
     if (arr.length > arg3) {
       if (_require(823).DEBUG_BUILD) {
         const debug = tmp5(824).debug;

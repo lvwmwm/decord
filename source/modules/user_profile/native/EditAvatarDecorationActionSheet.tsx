@@ -1,10 +1,10 @@
-// Module ID: 7936
-// Function ID: 7937
+// Module ID: 7933
+// Function ID: 7934
 // Name: EditAvatarDecorationInner
-// Dependencies: [32, 19, 17, 5814, 5803, 1942, 676, 21, 4189, 712, 7937, 7951, 7953, 5515, 5535, 698, 3901, 5243, 4185, 1236, 7954, 7957, 589, 7961, 7943, 7962, 7974, 7975, 7955, 7976, 1297, 7990, 2]
+// Dependencies: [32, 19, 17, 5814, 5803, 1942, 676, 21, 4189, 712, 7934, 7948, 7950, 5515, 5535, 698, 3901, 5243, 4185, 1236, 7951, 7954, 589, 7958, 7940, 7959, 7971, 7972, 7952, 7973, 1297, 7987, 2]
 // Exports: default
 
-// Module 7936 (EditAvatarDecorationInner)
+// Module 7933 (EditAvatarDecorationInner)
 import set from "set";
 import getSystemLocale from "getSystemLocale";
 import { View } from "Background";
@@ -106,7 +106,7 @@ function AvatarDecorationSectionPreview(previewSkuId) {
   ({ user, guildId, pendingAvatarSrc } = previewSkuId);
   let _require;
   let purchase;
-  const tmp4 = purchase(7955)(previewSkuId.previewSkuId);
+  const tmp4 = purchase(7952)(previewSkuId.previewSkuId);
   const product = tmp4.product;
   _require = product;
   purchase = tmp4.purchase;
@@ -147,7 +147,7 @@ function AvatarDecorationSectionPreview(previewSkuId) {
   const tmp6 = closure_11;
   const tmp7 = View;
   obj[4] = tmp10(1297).AvatarSizes.EDIT_AVATAR_DECORATION;
-  const items1 = [callback2(purchase(7976), obj), callback2(purchase(7990), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo })];
+  const items1 = [callback2(purchase(7973), obj), callback2(purchase(7987), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo })];
   obj[4] = items1;
   return tmp6(tmp7, obj);
 }
@@ -172,15 +172,15 @@ export default function EditAvatarDecorationActionSheet(arg0) {
   let setPendingAvatarDecoration;
   let first;
   const tmp = createCacheKey();
-  const tmp4 = first(7937)({ analyticsLocations, isTryItOut, guildId });
+  const tmp4 = first(7934)({ analyticsLocations, isTryItOut, guildId });
   setPendingAvatarDecoration = tmp4.setPendingAvatarDecoration;
-  let obj = setPendingAvatarDecoration(7951);
+  let obj = setPendingAvatarDecoration(7948);
   obj = { userId: user.id, image: tmp4.pendingAvatar };
   let obj2 = React;
   const pendingAvatarSrc = obj.getPendingAvatarSrc(obj);
   const tmp7 = callback(React.useState(currentAvatarDecoration), 2);
   first = tmp7[0];
-  let obj3 = setPendingAvatarDecoration(7953);
+  let obj3 = setPendingAvatarDecoration(7950);
   if (analyticsLocations == null) {
     analyticsLocations = [];
   }
@@ -228,7 +228,7 @@ export default function EditAvatarDecorationActionSheet(arg0) {
   obj5[4] = callback1;
   obj5[5] = analyticsLocations2;
   obj5[6] = first(5535).EDIT_AVATAR_DECORATION_SHEET;
-  items2[1] = callback2(first(7954), obj5);
+  items2[1] = callback2(first(7951), obj5);
   obj1[4] = items2;
   obj[1] = tmp13(setPendingAvatarDecoration(5243).BottomSheet, obj1);
   obj6[0] = callback2(setPendingAvatarDecoration(5515).AnalyticsLocationProvider, obj);

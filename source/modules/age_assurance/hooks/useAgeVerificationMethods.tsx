@@ -1,10 +1,10 @@
-// Module ID: 7626
-// Function ID: 7627
+// Module ID: 7623
+// Function ID: 7624
 // Name: useAgeVerificationMethods
-// Dependencies: [5, 32, 19, 6779, 6748, 589, 4405, 6749, 6781, 5867, 5872, 7627, 6754, 1236, 2]
+// Dependencies: [5, 32, 19, 6776, 6745, 589, 4405, 6746, 6778, 5865, 5870, 7624, 6751, 1236, 2]
 // Exports: default
 
-// Module 7626 (useAgeVerificationMethods)
+// Module 7623 (useAgeVerificationMethods)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

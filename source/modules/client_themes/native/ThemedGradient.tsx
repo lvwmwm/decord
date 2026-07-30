@@ -337,7 +337,7 @@ function CustomThemesGradient(arg0) {
   let obj = { x: 0.6 - 0.7142857142857143 * cosResult, y: 0.5 - 0.7142857142857143 * sinResult };
   obj = { x: 0.6 + 0.7142857142857143 * cosResult, y: 0.5 + 0.7142857142857143 * sinResult };
   reduced = arr2.reduce((arr) => {
-    if (typeof arg1 !== "init") {
+    if (typeof arg1 !== "tee") {
       if (regex.test(arg1)) {
         arr.push(arg1);
         return arr;
@@ -598,7 +598,7 @@ export default function ThemedGradient(overlayOpacity) {
 export { Gradient };
 export const validateColors = function validateColors(arr) {
   return arr.reduce((arr) => {
-    if (typeof arg1 !== "init") {
+    if (typeof arg1 !== "tee") {
       if (regex.test(arg1)) {
         arr.push(arg1);
         return arr;

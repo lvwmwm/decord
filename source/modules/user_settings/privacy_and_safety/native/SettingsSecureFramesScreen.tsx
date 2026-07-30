@@ -1,10 +1,10 @@
-// Module ID: 14647
-// Function ID: 14648
+// Module ID: 14641
+// Function ID: 14642
 // Name: UserListItem
-// Dependencies: [19, 17, 1874, 676, 21, 4189, 712, 589, 14648, 4028, 7985, 5515, 8359, 5220, 1297, 1236, 5227, 3893, 1480, 14646, 4185, 6676, 8892, 2]
+// Dependencies: [19, 17, 1874, 676, 21, 4189, 712, 589, 14642, 4028, 7982, 5515, 8356, 5220, 1297, 1236, 5227, 3893, 1480, 14640, 4185, 6673, 8888, 2]
 // Exports: default
 
-// Module 14647 (UserListItem)
+// Module 14641 (UserListItem)
 import useSecureFramesVerifiedUserIds from "useSecureFramesVerifiedUserIds";
 import { View } from "map";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -43,7 +43,7 @@ function UserListItem(userId) {
   }, items3);
   let tmp8Result = null != stateFromStores;
   if (tmp8Result) {
-    obj = { user: null, guildId: "Array", size: 2086900762484230000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+    obj = { user: null, guildId: "Array", size: -1 };
     obj[0] = stateFromStores;
     obj[2] = tmp(tmp2[14]).AvatarSizes.REFRESH_MEDIUM_32;
     tmp8Result = tmp8(tmp(tmp2[14]).Avatar, obj);
@@ -140,7 +140,7 @@ export default function SettingsSecureFramesScreen() {
   const obj1 = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   const obj2 = { helpArticle: null };
-  obj2[0] = require(8892) /* getCurrentUserSigningKey */.getSecureFramesHelpdeskArticle();
+  obj2[0] = require(8888) /* getCurrentUserSigningKey */.getSecureFramesHelpdeskArticle();
   obj1[2] = intl2.format(require(1236) /* getSystemLocale */.t["8IwQfG"], obj2);
   items[1] = callback(require(4185) /* Text */.Text, obj1);
   obj[1] = items;

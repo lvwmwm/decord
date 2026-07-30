@@ -1,10 +1,10 @@
-// Module ID: 16503
-// Function ID: 16504
+// Module ID: 16497
+// Function ID: 16498
 // Name: EnableCommunityModalSteps
-// Dependencies: [19, 17, 8305, 676, 21, 4189, 589, 1480, 4586, 4596, 709, 16501, 5636, 5177, 4600, 1236, 2]
+// Dependencies: [19, 17, 8302, 676, 21, 4189, 589, 1480, 4586, 4596, 709, 16495, 5636, 5177, 4600, 1236, 2]
 // Exports: EnableCommunityModalScreen
 
-// Module 16503 (EnableCommunityModalSteps)
+// Module 16497 (EnableCommunityModalSteps)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import handleFormInit from "handleFormInit";

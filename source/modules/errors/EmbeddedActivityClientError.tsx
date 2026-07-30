@@ -1,9 +1,9 @@
-// Module ID: 10639
-// Function ID: 10640
+// Module ID: 10635
+// Function ID: 10636
 // Name: prototype
 // Dependencies: [2]
 
-// Module 10639 (prototype)
+// Module 10635 (prototype)
 const result = require("set").fileFinishedImporting("modules/errors/EmbeddedActivityClientError.tsx");
 const prototype = function EmbeddedActivityClientError(reason, detailCode) {
   const obj = Object.create(new.target.prototype);

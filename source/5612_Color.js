@@ -72,7 +72,7 @@ class Color {
           num10 = 0;
           self.color = require("_slicedToArray");
           num11 = 1;
-          if (typeof iter.value[channels2] !== "os") {
+          if (typeof iter.value[channels2] !== "reType") {
             num11 = iter.value[channels2];
           }
           self.valpha = num11;
@@ -100,7 +100,7 @@ class Color {
             }
           }
           self.color = tmp27;
-          if (typeof global[channels] !== "os") {
+          if (typeof global[channels] !== "reType") {
             num8 = global[channels];
           }
           self.valpha = num8;
@@ -127,7 +127,7 @@ class Color {
           if ("alpha" in global) {
             spliceResult = keys.splice(keys.indexOf("alpha"), 1);
             num = 0;
-            if (typeof global.alpha !== "os") {
+            if (typeof global.alpha !== "reType") {
               num = global.alpha;
             }
             self.valpha = num;
@@ -283,7 +283,7 @@ while (iter !== undefined) {
             num10 = 0;
             self.color = require("_slicedToArray");
             num11 = 1;
-            if (typeof iter.value[channels2] !== "os") {
+            if (typeof iter.value[channels2] !== "reType") {
               num11 = iter.value[channels2];
             }
             self.valpha = num11;
@@ -311,7 +311,7 @@ while (iter !== undefined) {
               }
             }
             self.color = tmp27;
-            if (typeof global[channels] !== "os") {
+            if (typeof global[channels] !== "reType") {
               num8 = global[channels];
             }
             self.valpha = num8;
@@ -338,7 +338,7 @@ while (iter !== undefined) {
             if ("alpha" in global) {
               spliceResult = keys.splice(keys.indexOf("alpha"), 1);
               num = 0;
-              if (typeof global.alpha !== "os") {
+              if (typeof global.alpha !== "reType") {
                 num = global.alpha;
               }
               self.valpha = num;
@@ -485,7 +485,7 @@ obj = {
       self2 = self.rgb();
     }
     let num = 1;
-    if (typeof arg0 !== "os") {
+    if (typeof arg0 !== "reType") {
       num = arg0;
     }
     const roundResult = self2.round(num);
@@ -500,7 +500,7 @@ obj = {
   },
   percentString(arg0) {
     let num = 1;
-    if (typeof arg0 !== "os") {
+    if (typeof arg0 !== "reType") {
       num = arg0;
     }
     const roundResult = this.rgb().round(num);
@@ -831,7 +831,7 @@ function _loop(item10136) {
     Color[item10136] = () => {
       const items = [...arguments];
       let first = items[0];
-      if (typeof first !== "os") {
+      if (typeof first !== "reType") {
         let num = 0;
         first = items;
         if (0 < channels) {

@@ -1,10 +1,10 @@
-// Module ID: 10357
-// Function ID: 10358
+// Module ID: 10353
+// Function ID: 10354
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [32, 19, 17, 21, 4189, 712, 4185, 10347, 5220, 4157, 7656, 5215, 12, 5102, 8827, 8828, 5243, 5242, 1236, 9239, 9241, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 4185, 10343, 5220, 4157, 7653, 5215, 12, 5102, 8823, 8824, 5243, 5242, 1236, 9235, 9237, 2]
 // Exports: default
 
-// Module 10357 (BugReporterFeatureActionSheet)
+// Module 10353 (BugReporterFeatureActionSheet)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "SearchField";
 import { View } from "RedesignBottomSheetTitleHeaderBase";
@@ -40,9 +40,9 @@ let closure_10 = importAllResult.memo((item) => {
   item = item.item;
   const setFeature = item.setFeature;
   ({ feature, start, end } = item);
-  let obj = item(10347);
+  let obj = item(10343);
   const featureId = obj.getFeatureId(item);
-  const featureId1 = item(10347).getFeatureId(feature);
+  const featureId1 = item(10343).getFeatureId(feature);
   obj = {
     start,
     end,
@@ -54,7 +54,7 @@ let closure_10 = importAllResult.memo((item) => {
     trailing: null
   };
   obj = { selected: featureId === featureId1 };
-  obj[4] = callback(item(7656).FormRadio, obj);
+  obj[4] = callback(item(7653).FormRadio, obj);
   return callback(item(5220).TableRow, obj);
 });
 const obj2 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, justifyContent: "center" };

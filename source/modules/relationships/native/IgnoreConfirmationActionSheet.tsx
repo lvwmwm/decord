@@ -1,9 +1,9 @@
-// Module ID: 10450
-// Function ID: 10451
+// Module ID: 10446
+// Function ID: 10447
 // Name: IgnoredInformationTable
-// Dependencies: [32, 19, 17, 1372, 1874, 8919, 10448, 676, 21, 4189, 712, 8361, 1236, 4147, 5554, 5220, 1297, 1581, 5515, 5535, 589, 698, 7985, 5243, 5245, 8364, 4185, 4379, 8363, 4157, 10449, 1959, 503, 4600, 8918, 1945, 3886, 2]
+// Dependencies: [32, 19, 17, 1372, 1874, 8915, 10444, 676, 21, 4189, 712, 8358, 1236, 4147, 5554, 5220, 1297, 1581, 5515, 5535, 589, 698, 7982, 5243, 5245, 8361, 4185, 4379, 8360, 4157, 10445, 1959, 503, 4600, 8914, 1945, 3886, 2]
 
-// Module 10450 (IgnoredInformationTable)
+// Module 10446 (IgnoredInformationTable)
 import encodeProperties from "encodeProperties";
 import importAllResult from "QUICK_SWITCHER";
 import { View } from "useSafeAreaInsets";
@@ -224,7 +224,7 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
     obj6[0] = tmp.avatarIconContainer;
     const obj7 = { size: null, source: null };
     obj7[0] = tmp7(1297).Icon.Sizes.MEDIUM;
-    obj7[1] = tmp4(8364);
+    obj7[1] = tmp4(8361);
     obj6[1] = closure_13(tmp7(1297).Icon, obj7);
     items6[1] = closure_13(stateFromStores, obj6);
     obj3[1] = items6;
@@ -255,7 +255,7 @@ const memoResult = importAllResult.memo(function IgnoreConfirmationActionSheet(u
     const obj14 = { icon: null, label: null, variant: "danger", subLabel: null, accessibilityLabel: null, onPress: null, arrow: true };
     const obj15 = { size: null, source: null, color: null };
     obj15[0] = tmp7(1297).Icon.Sizes.MEDIUM;
-    obj15[1] = tmp4(8363);
+    obj15[1] = tmp4(8360);
     obj15[2] = tmp.destructiveIcon.color;
     obj14[0] = closure_13(tmp7(1297).Icon, obj15);
     const intl4 = tmp7(1236).intl;

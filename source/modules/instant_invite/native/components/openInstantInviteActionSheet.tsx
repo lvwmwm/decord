@@ -1,10 +1,10 @@
-// Module ID: 8356
-// Function ID: 8357
+// Module ID: 8353
+// Function ID: 8354
 // Name: openInstantInviteActionSheet
-// Dependencies: [4157, 8357, 1959, 503, 2]
+// Dependencies: [4157, 8354, 1959, 503, 2]
 // Exports: default
 
-// Module 8356 (openInstantInviteActionSheet)
+// Module 8353 (openInstantInviteActionSheet)
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/instant_invite/native/components/openInstantInviteActionSheet.tsx");
 
 export default function openInstantInviteActionSheet(invite_channel_id) {
@@ -18,5 +18,5 @@ export default function openInstantInviteActionSheet(invite_channel_id) {
   const merged = Object.assign(invite_channel_id);
   obj.impressionName = require(503) /* encodeProperties */.ImpressionNames.GUILD_INVITE;
   obj.impressionProperties = { invite_channel_id: invite_channel_id.channel.id, invite_guild_id: invite_channel_id.channel.guild_id };
-  obj.openLazy(require(1959) /* asyncRequireImpl */(8357, dependencyMap.paths), combined, obj, invite_channel_id.stackingBehavior);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(8354, dependencyMap.paths), combined, obj, invite_channel_id.stackingBehavior);
 };

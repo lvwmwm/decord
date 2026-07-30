@@ -1,9 +1,9 @@
-// Module ID: 13895
-// Function ID: 13896
+// Module ID: 13890
+// Function ID: 13891
 // Name: route
-// Dependencies: [19, 676, 21, 13896, 13897, 7629, 712, 1236, 2223, 10120, 4703, 13900, 2]
+// Dependencies: [19, 676, 21, 13891, 13892, 7626, 712, 1236, 2223, 10116, 4703, 13895, 2]
 
-// Module 13895 (route)
+// Module 13890 (route)
 import "noop";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
@@ -17,9 +17,9 @@ createToggle = {
   parent: null,
   IconComponent: require("GroupIcon").GroupIcon,
   useTrailing: function useFamilyCenterTrailing() {
-    let obj = require(13896) /* useIsParentalConsentBannerActive */;
+    let obj = require(13891) /* useIsParentalConsentBannerActive */;
     const isParentalConsentBannerActive = obj.useIsParentalConsentBannerActive();
-    const parentalConsentWarning = require(13897) /* useParentalConsentWarning */.useParentalConsentWarning();
+    const parentalConsentWarning = require(13892) /* useParentalConsentWarning */.useParentalConsentWarning();
     let daysRemaining;
     if (parentalConsentWarning != null) {
       daysRemaining = parentalConsentWarning.daysRemaining;
@@ -37,7 +37,7 @@ createToggle = {
           obj[1] = importDefault(712).colors.ICON_FEEDBACK_WARNING;
           const intl = tmp(1236).intl;
           obj[3] = intl.string(importDefault(2223).wucWfE);
-          tmp6 = jsx(tmp(7629).WarningIcon, { size: "sm", color: null, accessible: true, accessibilityLabel: null });
+          tmp6 = jsx(tmp(7626).WarningIcon, { size: "sm", color: null, accessible: true, accessibilityLabel: null });
         }
       }
     }
@@ -48,7 +48,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.FAMILY_CENTER,
   getComponent() {
-    return require(13900) /* FamilyCenterLoading */.default;
+    return require(13895) /* FamilyCenterLoading */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

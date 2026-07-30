@@ -1,10 +1,10 @@
-// Module ID: 11296
-// Function ID: 11297
+// Module ID: 11292
+// Function ID: 11293
 // Name: useAppsInThisServer
-// Dependencies: [19, 5697, 1874, 4623, 589, 8024, 1906, 5710, 11294, 12, 8026, 2]
+// Dependencies: [19, 5697, 1874, 4623, 589, 8021, 1906, 5710, 11290, 12, 8023, 2]
 // Exports: default
 
-// Module 11296 (useAppsInThisServer)
+// Module 11292 (useAppsInThisServer)
 import noop from "noop";
 import { useGuildIndexState } from "getIndexKey";
 import mergeGuildAvatar from "mergeGuildAvatar";

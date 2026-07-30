@@ -1,10 +1,10 @@
-// Module ID: 9913
-// Function ID: 9914
+// Module ID: 9910
+// Function ID: 9911
 // Name: t
 // Dependencies: [17, 2]
 // Exports: default
 
-// Module 9913 (t)
+// Module 9910 (t)
 import { PixelRatio } from "get ActivityIndicator";
 
 const value = PixelRatio.get();

@@ -1,10 +1,10 @@
-// Module ID: 8945
-// Function ID: 8946
+// Module ID: 8941
+// Function ID: 8942
 // Name: XBOX_URL_BASE
-// Dependencies: [676, 8174, 2]
+// Dependencies: [676, 8171, 2]
 // Exports: XBOX_HANDOFF_SEARCH_PARAMS
 
-// Module 8945 (XBOX_URL_BASE)
+// Module 8941 (XBOX_URL_BASE)
 import set from "set";
 
 const items = [require("set").OAuth2Scopes.VOICE, require("set").OAuth2Scopes.DM_CHANNELS_READ, require("set").OAuth2Scopes.GUILDS, require("set").OAuth2Scopes.GUILDS_MEMBERS_READ, require("set").OAuth2Scopes.IDENTIFY, require("set").OAuth2Scopes.CONNECTIONS, require("set").OAuth2Scopes.ACTIVITIES_READ];

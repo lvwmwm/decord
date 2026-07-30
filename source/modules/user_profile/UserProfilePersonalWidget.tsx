@@ -1,10 +1,10 @@
-// Module ID: 5904
-// Function ID: 5905
+// Module ID: 5902
+// Function ID: 5903
 // Name: toSubmission
-// Dependencies: [109, 5897, 659, 2]
+// Dependencies: [109, 5895, 659, 2]
 // Exports: createDefaultPersonalWidgetTop
 
-// Module 5904 (toSubmission)
+// Module 5902 (toSubmission)
 import _objectWithoutProperties from "_objectWithoutProperties";
 
 const require = arg1;

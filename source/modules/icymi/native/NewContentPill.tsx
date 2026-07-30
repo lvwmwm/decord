@@ -1,10 +1,10 @@
-// Module ID: 15391
-// Function ID: 15392
+// Module ID: 15385
+// Function ID: 15386
 // Name: CutoutGuildIcon
-// Dependencies: [32, 19, 17, 1862, 8170, 21, 4189, 712, 7970, 5566, 589, 4125, 6156, 8184, 4050, 4599, 1483, 4717, 14082, 4185, 1236, 4035, 2]
+// Dependencies: [32, 19, 17, 1862, 8167, 21, 4189, 712, 7967, 5566, 589, 4125, 6154, 8181, 4050, 4599, 1483, 4717, 14078, 4185, 1236, 4035, 2]
 // Exports: default
 
-// Module 15391 (CutoutGuildIcon)
+// Module 15385 (CutoutGuildIcon)
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
 import get_ActivityIndicator from "PressableBase";
@@ -23,12 +23,12 @@ function CutoutGuildIcon(guild) {
   obj = { cutouts: null, children: null };
   obj = { shape: null, x: 18, y: -4, width: 32, height: 32, cornerRadius: null };
   const tmp = createCacheKey();
-  obj[0] = require(7970) /* SolidCutout */.CutoutShape.RoundedRect;
+  obj[0] = require(7967) /* SolidCutout */.CutoutShape.RoundedRect;
   obj[5] = importDefault(712).radii.md;
   const items = [obj];
   obj[0] = items;
   const obj1 = { guild: guild.guild, size: null, style: null };
-  const tmp2 = importDefault(7970);
+  const tmp2 = importDefault(7967);
   obj1[1] = require(5566) /* GuildIconSizes */.GuildIconSizes.XSMALL;
   obj1[2] = tmp.guildIconBG;
   obj[1] = callback(importDefault(5566), obj1);

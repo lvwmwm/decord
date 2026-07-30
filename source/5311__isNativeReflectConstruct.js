@@ -82,7 +82,7 @@ let items = [
       const self = this;
       let fn;
       fn = callback2(callback(self.prototype), "onChange", this);
-      if (typeof fn !== "_") {
+      if (typeof fn !== "ZodObject") {
         fn = (items) => fn.apply(self, items);
       }
       const items = [arg0];

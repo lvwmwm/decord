@@ -1,9 +1,9 @@
-// Module ID: 8281
-// Function ID: 8282
+// Module ID: 8278
+// Function ID: 8279
 // Name: handleUpdateStart
 // Dependencies: [676, 584, 5184, 589, 709, 2]
 
-// Module 8281 (handleUpdateStart)
+// Module 8278 (handleUpdateStart)
 import { ChannelTypes } from "ME";
 import { Store } from "initialize";
 

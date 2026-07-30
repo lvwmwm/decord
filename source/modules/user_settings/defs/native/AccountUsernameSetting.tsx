@@ -1,9 +1,9 @@
-// Module ID: 13788
-// Function ID: 13789
+// Module ID: 13783
+// Function ID: 13784
 // Name: route
-// Dependencies: [19, 1874, 7756, 676, 21, 589, 4028, 11062, 4185, 10120, 1236, 13789, 2]
+// Dependencies: [19, 1874, 7753, 676, 21, 589, 4028, 11058, 4185, 10116, 1236, 13784, 2]
 
-// Module 13788 (route)
+// Module 13783 (route)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
@@ -21,7 +21,7 @@ createToggle = {
     return require(589) /* initialize */.useStateFromStores(items, () => callback(table[6]).getUserTag(currentUser.getCurrentUser(), { decoration: "never" }));
   },
   useDescription: function useAccountUsernameSettingDescription() {
-    let obj = require(11062) /* useCurrentUserHasAutomodQuarantinedProfile */;
+    let obj = require(11058) /* useCurrentUserHasAutomodQuarantinedProfile */;
     const guildAutomodProfileQuarantineErrors = obj.useGuildAutomodProfileQuarantineErrors();
     let first;
     if (guildAutomodProfileQuarantineErrors != null) {
@@ -43,7 +43,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.ACCOUNT_CHANGE_USERNAME,
   getComponent() {
-    return require(13789) /* UsernameStatusMessage */.default;
+    return require(13784) /* UsernameStatusMessage */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

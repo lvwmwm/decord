@@ -240,7 +240,7 @@ const items = [
       };
       let obj2 = self(27);
       if (obj2.shouldPressibilityUseW3CPointerEventsForHover()) {
-        obj = { onPointerEnter: "dispatch", onPointerLeave: "isArray" };
+        obj = { onPointerEnter: "Array", onPointerLeave: "ct" };
         const _config = this._config;
         const onHoverIn = _config.onHoverIn;
         const onHoverOut = _config.onHoverOut;
@@ -363,7 +363,7 @@ const items = [
           tmp10 = "ERROR" !== tmp5;
         }
         let str3 = "<<host component>>";
-        if (typeof self._responderID !== "os") {
+        if (typeof self._responderID !== "reType") {
           str3 = self._responderID;
         }
         importDefault(38)(tmp10, "Pressability: Invalid signal `%s` for state `%s` on responder: %s", arg0, _touchState, str3);

@@ -1,10 +1,10 @@
-// Module ID: 16359
-// Function ID: 16360
+// Module ID: 16353
+// Function ID: 16354
 // Name: HasCreatedListingsSection
-// Dependencies: [19, 1415, 1874, 676, 21, 589, 5554, 1236, 5220, 16360, 16361, 16362, 16363, 12622, 2]
+// Dependencies: [19, 1415, 1874, 676, 21, 589, 5554, 1236, 5220, 16354, 16355, 16356, 16357, 12616, 2]
 // Exports: default
 
-// Module 16359 (HasCreatedListingsSection)
+// Module 16353 (HasCreatedListingsSection)
 import "noop";
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -30,7 +30,7 @@ function HasCreatedListingsSection(arg0) {
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["/CfKoD"]);
   const obj1 = { source: null };
-  obj1[0] = importDefault(16360);
+  obj1[0] = importDefault(16354);
   obj[2] = callback(require(5220) /* TableRowInner */.TableRow.Icon, obj1);
   obj[3] = function onPress() {
     return callback(outer1_6.ROLE_SUBSCRIPTIONS_BASIC);
@@ -40,7 +40,7 @@ function HasCreatedListingsSection(arg0) {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[0] = intl3.string(require(1236) /* getSystemLocale */.t.pXbGYc);
   const obj3 = { source: null };
-  obj3[0] = importDefault(16361);
+  obj3[0] = importDefault(16355);
   obj2[2] = callback(require(5220) /* TableRowInner */.TableRow.Icon, obj3);
   obj2[3] = function onPress() {
     return callback(outer1_6.ROLE_SUBSCRIPTIONS_TIERS);
@@ -51,7 +51,7 @@ function HasCreatedListingsSection(arg0) {
     const intl4 = tmp(1236).intl;
     obj4[0] = intl4.string(tmp(1236).t.p2Rsdl);
     const obj5 = { source: null };
-    obj5[0] = tmp6(16362);
+    obj5[0] = tmp6(16356);
     obj4[2] = tmp5(tmp(5220).TableRow.Icon, obj5);
     obj4[3] = function onPress() {
       return callback(outer1_6.ROLE_SUBSCRIPTIONS_PAYMENTS, { guildId: id.id });
@@ -63,7 +63,7 @@ function HasCreatedListingsSection(arg0) {
   const intl5 = tmp(1236).intl;
   obj6[0] = intl5.string(require(1236) /* getSystemLocale */.t.C5Dbwn);
   const obj7 = { source: null };
-  obj7[0] = importDefault(16363);
+  obj7[0] = importDefault(16357);
   obj6[2] = callback(require(5220) /* TableRowInner */.TableRow.Icon, obj7);
   obj6[3] = function onPress() {
     return callback(outer1_6.ROLE_SUBSCRIPTIONS_EMOJIS);
@@ -78,7 +78,7 @@ const result = require("mergeGuildAvatar").fileFinishedImporting("modules/guild_
 
 export default function GuildSettingsRoleSubscriptionsSection(guild) {
   guild = guild.guild;
-  let obj = require(12622) /* computeGuildRoleSubscriptionSettingsVisibility */;
+  let obj = require(12616) /* computeGuildRoleSubscriptionSettingsVisibility */;
   let tmp = null;
   if (obj.useCanSeeGuildRoleSubscriptionSettings(guild)) {
     const features = guild.features;

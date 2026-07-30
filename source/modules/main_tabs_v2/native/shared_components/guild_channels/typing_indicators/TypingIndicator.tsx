@@ -1,10 +1,10 @@
-// Module ID: 15078
-// Function ID: 15079
+// Module ID: 15072
+// Function ID: 15073
 // Name: TypingIndicator
 // Dependencies: [19, 17, 21, 4189, 712, 4125, 4035, 1297, 2]
 // Exports: TypingIndicator
 
-// Module 15078 (TypingIndicator)
+// Module 15072 (TypingIndicator)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

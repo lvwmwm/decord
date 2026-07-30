@@ -1,10 +1,10 @@
-// Module ID: 15306
-// Function ID: 15307
+// Module ID: 15300
+// Function ID: 15301
 // Name: ForYouRecentActivitySectionHeader
 // Dependencies: [19, 17, 21, 4189, 712, 4185, 1236, 2]
 // Exports: ForYouRecentActivitySectionHeader
 
-// Module 15306 (ForYouRecentActivitySectionHeader)
+// Module 15300 (ForYouRecentActivitySectionHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

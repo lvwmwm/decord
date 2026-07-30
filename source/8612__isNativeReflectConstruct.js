@@ -1,7 +1,7 @@
 // Module ID: 8612
 // Function ID: 8613
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8609, 8613, 8614, 8546, 8555]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8543, 8613, 8552]
 
 // Module 8612 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const Mask = arg1;
+const Path = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class Mask {
+class Path {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, Mask);
+    tmp = _isNativeReflectConstruct(this, Path);
     tmp2 = __esModule;
-    obj = __esModule(Mask);
+    obj = __esModule(Path);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,61 +51,32 @@ class Mask {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Mask, require("_isNativeReflectConstruct"));
+require("_inherits")(Path, require("_isNativeReflectConstruct"));
 const items = [
   {
     key: "render",
     value: function render() {
-      let maskContentUnits;
-      let maskUnits;
-      let style;
       const self = this;
       const props = this.props;
-      ({ maskUnits, maskContentUnits, style } = props);
-      let obj = { x: props.x, y: props.y, width: props.width, height: props.height, maskUnits: null, maskContentUnits: null, maskType: null };
-      let num = 0;
-      if (undefined !== maskUnits) {
-        num = importDefault(8609)[maskUnits];
-      }
-      obj[4] = num;
-      let num2 = 1;
-      if (undefined !== maskContentUnits) {
-        num2 = importDefault(8609)[maskContentUnits];
-      }
-      obj[5] = num2;
-      let str;
-      if (props != null) {
-        str = props.maskType;
-      }
-      if (!str) {
-        let maskType;
-        if (style != null) {
-          maskType = style.maskType;
-        }
-        str = maskType;
-      }
-      if (!str) {
-        str = "luminance";
-      }
-      obj[6] = self(8613).maskType[str];
+      let obj = {};
+      const merged = Object.assign(self(8543).extract(this, props));
+      obj.d = props.d;
       obj = {
         ref(arg0) {
           return self.refMethod(arg0);
         }
       };
-      const tmp5 = self;
-      const tmp8 = importDefault(8614);
-      const merged = Object.assign(self(8546).withoutXY(this, props));
+      const obj2 = self(8543);
       const merged1 = Object.assign(obj);
-      obj.children = props.children;
-      return <tmp8 ref={function ref(arg0) {
-        return self.refMethod(arg0);
-      }} />;
+      return jsx(importDefault(8613), {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      });
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Mask, items);
-importDefaultResultResult.displayName = "Mask";
-importDefaultResultResult.defaultProps = { x: "0%", y: "0%", width: "100%", height: "100%" };
+const importDefaultResultResult = importDefaultResult(Path, items);
+importDefaultResultResult.displayName = "Path";
 
 export default importDefaultResultResult;

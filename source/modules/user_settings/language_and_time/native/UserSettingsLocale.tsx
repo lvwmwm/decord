@@ -1,9 +1,9 @@
-// Module ID: 14383
-// Function ID: 14384
+// Module ID: 14379
+// Function ID: 14380
 // Name: handleLanguageChange
-// Dependencies: [5, 19, 17, 1947, 1946, 21, 4189, 712, 6206, 589, 5177, 7655, 1236, 7654, 14384, 2]
+// Dependencies: [5, 19, 17, 1947, 1946, 21, 4189, 712, 6203, 589, 5177, 7652, 1236, 7651, 14380, 2]
 
-// Module 14383 (handleLanguageChange)
+// Module 14379 (handleLanguageChange)
 import jsxProd from "jsxProd";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { setAppLocale } from "_setAppLocale";
@@ -123,7 +123,7 @@ const memoResult = require("noop").memo(function UserSettingsLocale() {
     obj[3] = outer1_8(outer1_4, obj);
     return outer1_8(tmp(outer1_2[13]).TableRadioRow, obj, name);
   });
-  obj[1] = jsx(require(7655) /* context */.TableRadioGroup, { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true, children: null });
+  obj[1] = jsx(require(7652) /* context */.TableRadioGroup, { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true, children: null });
   obj[1] = jsx(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true, children: null });
   return <closure_5 bottom>{null}</closure_5>;
 });

@@ -1,10 +1,10 @@
-// Module ID: 11001
-// Function ID: 11002
+// Module ID: 10997
+// Function ID: 10998
 // Name: authorizeCallback
-// Dependencies: [10677, 4395, 8960, 1959, 1467, 11002, 4155, 691, 3886, 2]
+// Dependencies: [10673, 4395, 8956, 1959, 1467, 10998, 4155, 691, 3886, 2]
 // Exports: default
 
-// Module 11001 (authorizeCallback)
+// Module 10997 (authorizeCallback)
 import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY";
 
 let c3;
@@ -37,7 +37,7 @@ export default function authorizeCallback(arg0) {
             let obj = { application: null, guild: null };
             obj[0] = tmp;
             obj[1] = tmp2;
-            tmp8Result.pushLazy(require(1959) /* asyncRequireImpl */(11002, tmp9.paths), obj, closure_3);
+            tmp8Result.pushLazy(require(1959) /* asyncRequireImpl */(10998, tmp9.paths), obj, closure_3);
           } else if (null != pathname.match(closure_6)) {
             if (!canceled) {
               let str;
@@ -61,8 +61,8 @@ export default function authorizeCallback(arg0) {
               }
               obj = { error: null };
               obj[0] = str;
-              tmp8Result1.pushLazy(require(1959) /* asyncRequireImpl */(8960, tmp9.paths), obj, closure_4);
-              const tmp17 = require(1959) /* asyncRequireImpl */(8960, tmp9.paths);
+              tmp8Result1.pushLazy(require(1959) /* asyncRequireImpl */(8956, tmp9.paths), obj, closure_4);
+              const tmp17 = require(1959) /* asyncRequireImpl */(8956, tmp9.paths);
             }
           }
         }
@@ -82,6 +82,6 @@ export default function authorizeCallback(arg0) {
     const tmp8Result2 = importDefault(3886);
   } else if (!canceled) {
     obj = importDefault(4395);
-    obj.pushLazy(require(1959) /* asyncRequireImpl */(8960, dependencyMap.paths), undefined, closure_4);
+    obj.pushLazy(require(1959) /* asyncRequireImpl */(8956, dependencyMap.paths), undefined, closure_4);
   }
 };

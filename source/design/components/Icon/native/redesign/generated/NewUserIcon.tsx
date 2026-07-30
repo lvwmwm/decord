@@ -1,10 +1,10 @@
-// Module ID: 12002
-// Function ID: 12003
+// Module ID: 11996
+// Function ID: 11997
 // Name: NewUserIcon
-// Dependencies: [19, 21, 712, 3892, 12003, 2]
+// Dependencies: [19, 21, 712, 3892, 11997, 2]
 // Exports: NewUserIcon
 
-// Module 12002 (NewUserIcon)
+// Module 11996 (NewUserIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const NewUserIcon = function NewUserIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12003) /* registerAsset */;
+  obj[0] = require(11997) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

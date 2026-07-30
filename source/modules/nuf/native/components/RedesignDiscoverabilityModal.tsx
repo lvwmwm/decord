@@ -1,9 +1,9 @@
-// Module ID: 16277
-// Function ID: 16278
+// Module ID: 16271
+// Function ID: 16272
 // Name: DiscoverabilityLandingScene
-// Dependencies: [19, 17, 11768, 1874, 676, 21, 4189, 712, 5140, 1480, 589, 11775, 691, 16278, 11795, 11788, 503, 11787, 5570, 1236, 2]
+// Dependencies: [19, 17, 11764, 1874, 676, 21, 4189, 712, 5140, 1480, 589, 11771, 691, 16272, 11791, 11784, 503, 11783, 5570, 1236, 2]
 
-// Module 16277 (DiscoverabilityLandingScene)
+// Module 16271 (DiscoverabilityLandingScene)
 import getSystemLocale from "getSystemLocale";
 import { View } from "SkipHeaderButton";
 import { useContactSyncModalStore } from "ContactSyncModes";
@@ -85,7 +85,7 @@ function DiscoverabilityNameScene(onComplete) {
     name = "";
   }
   obj[2] = name;
-  obj[1] = jsx(allowPhone(11788), { onNext: callback, loading: false, initialName: null });
+  obj[1] = jsx(allowPhone(11784), { onNext: callback, loading: false, initialName: null });
   return <tmp6 onNext={callback} loading={false} initialName={null} />;
 }
 class RedesignDiscoverabilityModal {

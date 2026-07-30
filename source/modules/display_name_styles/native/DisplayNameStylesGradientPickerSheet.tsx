@@ -1,10 +1,10 @@
-// Module ID: 14364
-// Function ID: 14365
+// Module ID: 14360
+// Function ID: 14361
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 1886, 676, 21, 4189, 712, 8385, 1885, 4158, 698, 4157, 13695, 5243, 5242, 4600, 1236, 4611, 688, 14365, 12, 4717, 2]
+// Dependencies: [32, 19, 17, 1886, 676, 21, 4189, 712, 8382, 1885, 4158, 698, 4157, 13690, 5243, 5242, 4600, 1236, 4611, 688, 14361, 12, 4717, 2]
 // Exports: default
 
-// Module 14364 (DisplayNameStylesColorPickerSheet)
+// Module 14360 (DisplayNameStylesColorPickerSheet)
 import _slicedToArray from "_slicedToArray";
 import int2hslRaw from "int2hslRaw";
 import get_ActivityIndicator from "getSystemLocale";
@@ -54,7 +54,7 @@ export default function DisplayNameStylesColorPickerSheet(selectedEffectId) {
   let closure_8;
   let tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = selectedEffectId(8385);
+  let obj = selectedEffectId(8382);
   displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(selectedEffectId);
   let obj1 = selectedEffectId(1885);
   let items = [selectedEffectId];

@@ -1,9 +1,9 @@
-// Module ID: 16728
-// Function ID: 16729
+// Module ID: 16722
+// Function ID: 16723
 // Name: AccountLinkManagerNative
-// Dependencies: [15769, 4155, 2]
+// Dependencies: [15763, 4155, 2]
 
-// Module 16728 (AccountLinkManagerNative)
+// Module 16722 (AccountLinkManagerNative)
 import { AccountLinkManager } from "_claimIncentivizedAccountLinkingReward";
 
 class AccountLinkManagerNative extends AccountLinkManager {

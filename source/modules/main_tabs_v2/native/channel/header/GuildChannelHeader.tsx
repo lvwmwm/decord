@@ -1,9 +1,9 @@
-// Module ID: 10149
-// Function ID: 10150
+// Module ID: 10145
+// Function ID: 10146
 // Name: GuildChannelMemberCount
-// Dependencies: [32, 19, 17, 10150, 4865, 1376, 6055, 1372, 4110, 1862, 3826, 1874, 676, 1369, 21, 3893, 712, 589, 10144, 5564, 9358, 1236, 4380, 10142, 8441, 1358, 1945, 4650, 8430, 1348, 9569, 10136, 2]
+// Dependencies: [32, 19, 17, 10146, 4865, 1376, 6053, 1372, 4110, 1862, 3826, 1874, 676, 1369, 21, 3893, 712, 589, 10140, 5564, 9354, 1236, 4380, 10138, 8438, 1358, 1945, 4650, 8427, 1348, 9566, 10132, 2]
 
-// Module 10149 (GuildChannelMemberCount)
+// Module 10145 (GuildChannelMemberCount)
 import set from "set";
 import importAllResult from "ICON_SIZE";
 import { View } from "initialize";
@@ -88,7 +88,7 @@ function GuildChannelMemberCount(channel) {
     const count = outer1_6.requestCount(channel.guild_id, channel.id);
   }, items1);
   if (null == total) {
-    const tmpResult = tmp(10144);
+    const tmpResult = tmp(10140);
     return tmpResult.renderMemberCountText(online, total, flag, tmp(5564).ICON_SIZE[token]);
   }
 }
@@ -126,7 +126,7 @@ function ChannelLinkedLobbyCoachmark(guild) {
   let dependencyMap;
   let callback;
   const items = [guild(1358).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP];
-  const tmp = callback(guild(8441).useSelectedDismissibleContent(items, undefined, true), 2);
+  const tmp = callback(guild(8438).useSelectedDismissibleContent(items, undefined, true), 2);
   dependencyMap = tmp2;
   const tmp3 = tmp[0] === guild(1358).DismissibleContent.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP;
   callback = tmp3;
@@ -155,8 +155,8 @@ function ChannelLinkedLobbyCoachmark(guild) {
     obj[6] = channelIconWithGuild;
     return obj;
   }, items1);
-  let obj = guild(8441);
-  const coachmark = guild(8430).useCoachmark(guild.iconRef, memo);
+  let obj = guild(8438);
+  const coachmark = guild(8427).useCoachmark(guild.iconRef, memo);
   return null;
 }
 let c4 = importAllResult;

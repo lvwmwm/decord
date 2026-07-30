@@ -1,10 +1,10 @@
-// Module ID: 9186
-// Function ID: 9187
+// Module ID: 9182
+// Function ID: 9183
 // Name: ConfirmEmailChangeStart
-// Dependencies: [5, 32, 19, 17, 1874, 21, 4189, 1480, 589, 9187, 691, 4089, 3890, 1236, 9188, 4185, 4600, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 21, 4189, 1480, 589, 9183, 691, 4089, 3890, 1236, 9184, 4185, 4600, 2]
 // Exports: default
 
-// Module 9186 (ConfirmEmailChangeStart)
+// Module 9182 (ConfirmEmailChangeStart)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -46,7 +46,7 @@ export default function ConfirmEmailChangeStart() {
     obj1[0] = tmp.container;
     let obj2 = { style: null, source: null };
     obj2[0] = tmp.image;
-    obj2[1] = navigation(9188);
+    obj2[1] = navigation(9184);
     const items1 = [callback2(closure_7, obj2), , , ];
     const obj3 = { style: null, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
     obj3[0] = tmp.title;

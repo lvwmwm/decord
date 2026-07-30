@@ -1,10 +1,10 @@
-// Module ID: 9511
-// Function ID: 9512
+// Module ID: 9507
+// Function ID: 9508
 // Name: isAlertOrActionSheetOpen
-// Dependencies: [3882, 9512, 4530, 2]
+// Dependencies: [3882, 9508, 4530, 2]
 // Exports: isAlertOrActionSheetOpen
 
-// Module 9511 (isAlertOrActionSheetOpen)
+// Module 9507 (isAlertOrActionSheetOpen)
 import setContent from "setContent";
 import getAlert from "getAlert";
 

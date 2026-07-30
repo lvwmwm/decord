@@ -1,9 +1,9 @@
-// Module ID: 14280
-// Function ID: 14281
+// Module ID: 14276
+// Function ID: 14277
 // Name: DEFAULT_FONT_SCALE_STORE_STATE
-// Dependencies: [500, 9912, 700, 2]
+// Dependencies: [500, 9909, 700, 2]
 
-// Module 14280 (DEFAULT_FONT_SCALE_STORE_STATE)
+// Module 14276 (DEFAULT_FONT_SCALE_STORE_STATE)
 import set from "set";
 import identity from "identity";
 import set from "identity";

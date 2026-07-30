@@ -1,9 +1,9 @@
-// Module ID: 8329
-// Function ID: 8330
+// Module ID: 8326
+// Function ID: 8327
 // Name: GuildEventCardControls
-// Dependencies: [19, 17, 4261, 5779, 1378, 21, 4189, 712, 8225, 5022, 589, 8209, 5222, 6746, 8330, 2]
+// Dependencies: [19, 17, 4261, 5779, 1378, 21, 4189, 712, 8222, 5022, 589, 8206, 5222, 6743, 8327, 2]
 
-// Module 8329 (GuildEventCardControls)
+// Module 8326 (GuildEventCardControls)
 import { View } from "get ActivityIndicator";
 import createRTCConnection from "createRTCConnection";
 import { isGuildScheduledEventActive as closure_5 } from "scheduledEventSort";
@@ -19,18 +19,18 @@ function GuildEventCardControls(onCloseAction) {
   let event;
   let isConnected;
   ({ event, isConnected } = onCloseAction);
-  let obj = require(8225) /* usePrimaryActionButtonType */;
+  let obj = require(8222) /* usePrimaryActionButtonType */;
   const primaryActionButtonType = obj.usePrimaryActionButtonType(event, isConnected);
   obj = { direction: "horizontal", style: styles().actionContainer, children: null };
-  const items = [callback2(require(8225) /* usePrimaryActionButtonType */.GuildEventCardPrimaryAction, { event, onCloseAction: onCloseAction.onCloseAction, isConnected }), , ];
-  let tmp6Result = primaryActionButtonType === require(8225) /* usePrimaryActionButtonType */.PrimaryActionType.START;
+  const items = [callback2(require(8222) /* usePrimaryActionButtonType */.GuildEventCardPrimaryAction, { event, onCloseAction: onCloseAction.onCloseAction, isConnected }), , ];
+  let tmp6Result = primaryActionButtonType === require(8222) /* usePrimaryActionButtonType */.PrimaryActionType.START;
   if (tmp6Result) {
     obj = { event: null };
     obj[0] = event;
-    tmp6Result = tmp6(tmp2(8225).GuildEventCardRSVPAction, obj);
+    tmp6Result = tmp6(tmp2(8222).GuildEventCardRSVPAction, obj);
   }
   items[1] = tmp6Result;
-  items[2] = callback2(require(8225) /* usePrimaryActionButtonType */.GuildEventShareAction, { event });
+  items[2] = callback2(require(8222) /* usePrimaryActionButtonType */.GuildEventShareAction, { event });
   obj[2] = items;
   return closure_8(require(5022) /* ButtonGroup */.ButtonGroup, obj);
 }

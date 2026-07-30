@@ -1,10 +1,10 @@
-// Module ID: 16278
-// Function ID: 16279
+// Module ID: 16272
+// Function ID: 16273
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [19, 17, 21, 4189, 712, 1581, 5140, 4185, 1236, 5141, 11853, 11771, 4600, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 1581, 5140, 4185, 1236, 5141, 11849, 11767, 4600, 2]
 // Exports: default
 
-// Module 16278 (RedesignDiscoverabilityLanding)
+// Module 16272 (RedesignDiscoverabilityLanding)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -52,7 +52,7 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   obj2[3] = intl2.string(require(1236) /* getSystemLocale */.t.KMW0kP);
   items[2] = callback(require(4185) /* Text */.Text, obj2);
   const obj3 = { resizeMode: "contain", style: tmp.image, source: null };
-  obj3[2] = importDefault(11853);
+  obj3[2] = importDefault(11849);
   items[3] = callback(importDefault(5141), obj3);
   const obj4 = { style: tmp.info, variant: "text-sm/medium", color: "text-default", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
@@ -61,7 +61,7 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   items1[2] = intl4.format(require(1236) /* getSystemLocale */.t.VcSQ4n, {
     learnMoreHook(arg0, arg1) {
       const obj = { onPress: null, variant: "text-sm/medium", color: "text-link", children: null };
-      obj[0] = callback(11771).handleOpenLearnMoreLink;
+      obj[0] = callback(11767).handleOpenLearnMoreLink;
       obj[3] = arg0;
       return callback2(callback(4185).Text, obj, arg1);
     }

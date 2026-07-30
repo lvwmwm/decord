@@ -1,10 +1,10 @@
-// Module ID: 9354
-// Function ID: 9355
+// Module ID: 9350
+// Function ID: 9351
 // Name: useExpressionPickerListWidth
 // Dependencies: [1338, 5244, 1474, 1581, 2]
 // Exports: default
 
-// Module 9354 (useExpressionPickerListWidth)
+// Module 9350 (useExpressionPickerListWidth)
 import { PADDING_HORIZONTAL } from "ExpressionPickerViewType";
 import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO";
 

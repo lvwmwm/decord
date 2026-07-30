@@ -1,10 +1,10 @@
-// Module ID: 10921
-// Function ID: 10922
+// Module ID: 10917
+// Function ID: 10918
 // Name: handleTapCommandMention
-// Dependencies: [19, 1372, 1479, 4623, 4624, 21, 5704, 4041, 4157, 1579, 4529, 1236, 1297, 10922, 3889, 5543, 3862, 6776, 5548, 10924, 4185, 4048, 10926, 9991, 2]
+// Dependencies: [19, 1372, 1479, 4623, 4624, 21, 5704, 4041, 4157, 1579, 4529, 1236, 1297, 10918, 3889, 5543, 3862, 6773, 5548, 10920, 4185, 4048, 10922, 9987, 2]
 // Exports: default
 
-// Module 10921 (handleTapCommandMention)
+// Module 10917 (handleTapCommandMention)
 import context from "context";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -119,7 +119,7 @@ function handleLongPressCommandMention(arg0, arg1) {
   let obj = { label: null, IconComponent: null, onPress: null };
   const intl = _require(1236).intl;
   obj[0] = intl.string(_require(1236).t["42H+Nb"]);
-  obj[1] = _require(10922).SlashBoxIcon;
+  obj[1] = _require(10918).SlashBoxIcon;
   obj[2] = function onPress() {
     callback(outer1_2[14]).presentCommandCopied();
     const obj = callback(outer1_2[14]);
@@ -131,7 +131,7 @@ function handleLongPressCommandMention(arg0, arg1) {
     obj = { label: null, IconComponent: null, onPress: null };
     const intl2 = tmp(1236).intl;
     obj[0] = intl2.string(tmp(1236).t.oJ1Muw);
-    obj[1] = tmp(6776).IdIcon;
+    obj[1] = tmp(6773).IdIcon;
     obj[2] = function onPress() {
       callback(outer1_2[14]).presentIdCopied();
       const obj = callback(outer1_2[14]);
@@ -152,7 +152,7 @@ export default function MarkupReactCommandRule(node) {
   let closure_1;
   let dependencyMap;
   ({ output, state, style } = node);
-  closure_1 = null != React.useContext(node(10924).AppLauncherContext);
+  closure_1 = null != React.useContext(node(10920).AppLauncherContext);
   dependencyMap = callback();
   let obj = {
     style,
@@ -183,7 +183,7 @@ export default function MarkupReactCommandRule(node) {
       obj[6] = function onSetCommand() {
         let commandId;
         let commandName;
-        callback(10926)();
+        callback(10922)();
         callback(4157).hideActionSheet();
         if (bestActiveInput != null) {
           obj2.openSystemKeyboard();
@@ -203,7 +203,7 @@ export default function MarkupReactCommandRule(node) {
     },
     children: null
   };
-  const items = ["/", node(9991).smartOutput(node, output, state)];
+  const items = ["/", node(9987).smartOutput(node, output, state)];
   obj[4] = items;
   return jsxs(node(4185).Text, {
     style,
@@ -234,7 +234,7 @@ export default function MarkupReactCommandRule(node) {
       obj[6] = function onSetCommand() {
         let commandId;
         let commandName;
-        callback(10926)();
+        callback(10922)();
         callback(4157).hideActionSheet();
         if (bestActiveInput != null) {
           obj2.openSystemKeyboard();

@@ -1,10 +1,10 @@
-// Module ID: 15100
-// Function ID: 15101
+// Module ID: 15094
+// Function ID: 15095
 // Name: renderCategoryItem
-// Dependencies: [19, 17, 5784, 5133, 4385, 10284, 21, 4189, 500, 712, 4185, 4717, 11856, 8392, 10002, 9097, 1348, 589, 4380, 11880, 5129, 1236, 5549, 10003, 6736, 2]
+// Dependencies: [19, 17, 5784, 5133, 4385, 10280, 21, 4189, 500, 712, 4185, 4717, 11852, 8389, 9998, 9093, 1348, 589, 4380, 11876, 5129, 1236, 5549, 9999, 6733, 2]
 // Exports: CategoryChannel, RecentlyActiveCategory, SuggestedCategory, useCategoryPressEvents
 
-// Module 15100 (renderCategoryItem)
+// Module 15094 (renderCategoryItem)
 import useFavoritesGuildCategoryAddAction from "useFavoritesGuildCategoryAddAction";
 import { View } from "initialize";
 import set from "set";
@@ -57,7 +57,7 @@ function renderCategoryItem(arg0) {
   obj[2] = closure_8;
   items[1] = obj;
   let tmp2 = name;
-  if (typeof name !== "init") {
+  if (typeof name !== "tee") {
     let str = "text-subtle";
     if (muted) {
       str = "text-muted";
@@ -148,7 +148,7 @@ function renderCategoryItem(arg0) {
     let colors = importDefault(712).colors;
     const obj8 = { size: "xxs", color: null };
     obj8[1] = muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE;
-    colors = tmp6(trailingAction(11856).PlusMediumIcon, obj8);
+    colors = tmp6(trailingAction(11852).PlusMediumIcon, obj8);
     obj7[4] = colors;
     obj7 = tmp6(trailingAction(4717).PressableOpacity, obj7);
     obj6[1] = obj7;
@@ -242,13 +242,13 @@ export const CategoryChannel = function CategoryChannel(channel) {
   obj[5] = channel.withMarginTop;
   obj[6] = styles(tmp2);
   obj[7] = tmp2;
-  obj[8] = collapsed(11880)(channel);
+  obj[8] = collapsed(11876)(channel);
   const collapsed2 = obj.collapsed;
   const merged = Object.assign(obj, Object.create(null));
   const colors = collapsed(712).colors;
   obj = {};
   const merged1 = Object.assign(merged);
-  obj.icon = callback(id(8392).ChevronSmallDownIcon, { size: "xxs", color: merged.muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE, style: collapsed2 ? createCacheKey : obj1 });
+  obj.icon = callback(id(8389).ChevronSmallDownIcon, { size: "xxs", color: merged.muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE, style: collapsed2 ? createCacheKey : obj1 });
   obj.accessibilityState = { expanded: !collapsed2 };
   obj.isRefreshEnabled = obj.isRefreshEnabled;
   return renderCategoryItem(obj);
@@ -275,7 +275,7 @@ export const RecentlyActiveCategory = function RecentlyActiveCategory(guildId) {
   const colors = stateFromStores(712).colors;
   obj = {};
   const merged1 = Object.assign(merged);
-  obj.icon = callback(guildId(8392).ChevronSmallDownIcon, { size: "xxs", color: merged.muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE, style: collapsed ? createCacheKey : obj1 });
+  obj.icon = callback(guildId(8389).ChevronSmallDownIcon, { size: "xxs", color: merged.muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE, style: collapsed ? createCacheKey : obj1 });
   obj.accessibilityState = { expanded: !collapsed };
   obj.isRefreshEnabled = obj.isRefreshEnabled;
   return renderCategoryItem(obj);

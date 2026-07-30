@@ -1,10 +1,10 @@
-// Module ID: 15883
-// Function ID: 15884
+// Module ID: 15877
+// Function ID: 15878
 // Name: useFloatingCTAProps
-// Dependencies: [32, 19, 17, 4202, 15884, 5779, 1372, 1378, 21, 4125, 10037, 15863, 8321, 647, 8266, 8210, 8220, 4157, 8229, 15885, 12273, 7637, 8327, 1236, 5175, 15886, 10222, 15887, 8442, 8118, 4005, 6730, 1358, 15888, 6632, 6135, 2]
+// Dependencies: [32, 19, 17, 4202, 15878, 5779, 1372, 1378, 21, 4125, 10033, 15857, 8318, 647, 8263, 8207, 8217, 4157, 8226, 15879, 12267, 7634, 8324, 1236, 5175, 15880, 10218, 15881, 8439, 8115, 4005, 6727, 1358, 15882, 6629, 6133, 2]
 // Exports: useShouldShowFloatingCTA
 
-// Module 15883 (useFloatingCTAProps)
+// Module 15877 (useFloatingCTAProps)
 import DismissibleContent from "DismissibleContent";
 import hideLiveChannelNotice from "hideLiveChannelNotice";
 import { Pressable } from "ACTION_SHEET_HEIGHT_HALF";
@@ -168,8 +168,8 @@ function getBadConnectionCTAProps(arg0) {
   const intl2 = _require(1236).intl;
   obj[1] = intl2.string(_require(1236).t["gQ14+g"]);
   obj = { IconComponent: null, variant: "translucent" };
-  obj[0] = _require(6730).CircleErrorIcon;
-  obj[2] = jsx(_require(7637).RowButton.Icon, { IconComponent: null, variant: "translucent" });
+  obj[0] = _require(6727).CircleErrorIcon;
+  obj[2] = jsx(_require(7634).RowButton.Icon, { IconComponent: null, variant: "translucent" });
   obj[3] = function onPress() {
     let tmp;
     if (callback != null) {
@@ -209,7 +209,7 @@ function getDismissableCTAProps(arg0) {
     return getBadConnectionCTAProps();
   } else if (tmp(1358).DismissibleContent.SOUNDBOARD_MOBILE_FLOATING_CTA === dismissableContent) {
     let obj = { icon: null, onPress: null, label: null, trailing: null };
-    obj[0] = jsx(tmp(6632).SoundboardIcon, { color: "interactive-icon-default" });
+    obj[0] = jsx(tmp(6629).SoundboardIcon, { color: "interactive-icon-default" });
     obj[1] = function onPress() {
       if (null != closure_0) {
         let obj = outer1_0(outer1_2[33]);
@@ -221,7 +221,7 @@ function getDismissableCTAProps(arg0) {
     };
     obj = { quest: null };
     obj[0] = tmp(1236).t.XLlWUe;
-    obj[2] = tmp(6135).getDeviceSpecificString(obj, tmp(1236).t.IJgkPX);
+    obj[2] = tmp(6133).getDeviceSpecificString(obj, tmp(1236).t.IJgkPX);
     obj[3] = <CloseSoundboardMobileFloatingCtaIcon />;
     return obj;
   } else {

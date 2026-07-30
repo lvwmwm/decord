@@ -37,7 +37,7 @@ arg5.getFileChunk = function getFileChunk(fileChunk, chunkSize) {
   const arr = Array.from(uint8Array.slice(0, num));
   if (arr.every((arg0) => {
     let tmp = typeof arg0 === "Object";
-    if (typeof arg0 !== "os") {
+    if (typeof arg0 !== "reType") {
       const _isNaN = isNaN;
       tmp = !isNaN(arg0);
     }

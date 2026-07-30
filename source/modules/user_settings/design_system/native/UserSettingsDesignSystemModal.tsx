@@ -1,10 +1,10 @@
-// Module ID: 14590
-// Function ID: 14591
+// Module ID: 14586
+// Function ID: 14587
 // Name: DemoModal
-// Dependencies: [32, 19, 17, 21, 4189, 712, 5570, 5143, 4395, 6752, 1236, 6727, 3886, 11122, 13217, 6783, 6784, 4185, 11120, 13219, 9927, 9926, 5554, 5555, 4600, 2]
+// Dependencies: [32, 19, 17, 21, 4189, 712, 5570, 5143, 4395, 6749, 1236, 6724, 3886, 11118, 13212, 6780, 6781, 4185, 11116, 13214, 9924, 9923, 5554, 5555, 4600, 2]
 // Exports: default
 
-// Module 14590 (DemoModal)
+// Module 14586 (DemoModal)
 import _slicedToArray from "_slicedToArray";
 import ModalDisclaimer from "ModalDisclaimer";
 import get_ActivityIndicator from "Text";
@@ -28,7 +28,7 @@ function DemoModal() {
       const intl = callback(1236).intl;
       obj[0] = intl.string(callback(1236).t["5Wxrcd"]);
       obj[1] = callback2(4395).pop;
-      return callback3(callback(6752).HeaderActionButton, obj);
+      return callback3(callback(6749).HeaderActionButton, obj);
     };
     obj[2] = function headerTitle() {
       return callback3(callback(5143).NavigatorHeader, { title: constants.START, subtitle: "I said come on fhqwhgads" });
@@ -64,7 +64,7 @@ function DemoModal() {
         onAction() {
           return arr.push(outer1_10.EVERYBODY);
         },
-        children: callback3(callback(6727).TextInput, { placeholder: "My friend Jake" })
+        children: callback3(callback(6724).TextInput, { placeholder: "My friend Jake" })
       });
     };
     obj[constants.WHO_DAT] = obj;
@@ -132,7 +132,7 @@ function DemoModal() {
     return obj;
   }, []);
   obj = { screens: navigatorScreens, initialRouteName: constants.START };
-  return callback2(require(11122) /* Modal */.Modal, obj);
+  return callback2(require(11118) /* Modal */.Modal, obj);
 }
 function DemoStepModal() {
   let obj = require(5570) /* NavigationStack */;
@@ -146,7 +146,7 @@ function DemoStepModal() {
       const intl = callback(1236).intl;
       obj[0] = intl.string(callback(1236).t["5Wxrcd"]);
       obj[1] = callback2(4395).pop;
-      return callback3(callback(6752).HeaderActionButton, obj);
+      return callback3(callback(6749).HeaderActionButton, obj);
     };
     obj[2] = function headerTitle() {
       return callback3(callback(5143).NavigatorHeader, { title: constants.START, subtitle: "I said come on fhqwhgads" });
@@ -182,7 +182,7 @@ function DemoStepModal() {
         onAction() {
           return arr.push(outer1_10.EVERYBODY);
         },
-        children: callback3(callback(6727).TextInput, { placeholder: "My friend Jake" })
+        children: callback3(callback(6724).TextInput, { placeholder: "My friend Jake" })
       });
     };
     obj[constants.WHO_DAT] = obj;
@@ -255,7 +255,7 @@ function DemoStepModal() {
     return items;
   }, []);
   obj = { screens: navigatorScreens, steps: memo, initialRouteName: constants.START };
-  return callback2(require(13217) /* StepModal */.StepModal, obj);
+  return callback2(require(13212) /* StepModal */.StepModal, obj);
 }
 function DemoScreen(arg0) {
   let action;
@@ -283,13 +283,13 @@ function DemoScreen(arg0) {
   obj = { children: null };
   const items = [tmp5, callback2(require(4185) /* Text */.Text, { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, children: title }), children];
   obj[0] = items;
-  children = [closure_8(require(6784) /* ModalContent */.ModalContent, obj), ];
+  children = [closure_8(require(6781) /* ModalContent */.ModalContent, obj), ];
   if (footer == null) {
     let tmp8Result = null != disclaimer;
     if (tmp8Result) {
       const obj2 = { children: null };
       obj2[0] = disclaimer;
-      tmp8Result = tmp8(tmp3(13219).ModalDisclaimer, obj2);
+      tmp8Result = tmp8(tmp3(13214).ModalDisclaimer, obj2);
     }
     const items2 = [tmp8Result, , ];
     tmp8Result = null != action;
@@ -297,7 +297,7 @@ function DemoScreen(arg0) {
       const obj3 = { variant: "primary", text: null, onPress: null };
       obj3[1] = action;
       obj3[2] = onAction;
-      tmp8Result = tmp8(tmp3(9927).ModalActionButton, obj3);
+      tmp8Result = tmp8(tmp3(9924).ModalActionButton, obj3);
     }
     items2[1] = tmp8Result;
     let tmp8Result1 = null != secondaryAction;
@@ -305,15 +305,15 @@ function DemoScreen(arg0) {
       const obj4 = { variant: "secondary", text: null, onPress: null };
       obj4[1] = secondaryAction;
       obj4[2] = onSecondaryAction;
-      tmp8Result1 = tmp8(tmp3(9927).ModalActionButton, obj4);
+      tmp8Result1 = tmp8(tmp3(9924).ModalActionButton, obj4);
     }
     const obj5 = { children: null };
     items2[2] = tmp8Result1;
     obj5[0] = items2;
-    footer = tmp2(tmp3(11120).ModalFooter, obj5);
+    footer = tmp2(tmp3(11116).ModalFooter, obj5);
   }
   children[1] = footer;
-  return closure_8(require(6783) /* ModalScreen */.ModalScreen, { children });
+  return closure_8(require(6780) /* ModalScreen */.ModalScreen, { children });
 }
 function SwitchesScreen(onAction) {
   let arr2;
@@ -328,7 +328,7 @@ function SwitchesScreen(onAction) {
   obj[0] = arr2.some((arg0) => arg0);
   obj[1] = tmp.screen.backgroundColor;
   obj[3] = onAction.onAction;
-  obj[2] = callback2(parts(9926).ModalFloatingAction, obj);
+  obj[2] = callback2(parts(9923).ModalFloatingAction, obj);
   obj = { style: tmp.tableRows, children: null };
   const obj1 = { hasIcons: false, children: null };
   obj1[1] = arr2.map((value) => {
@@ -349,7 +349,7 @@ function SwitchesScreen(onAction) {
     }, arg1);
   });
   obj[1] = callback2(parts(5554).TableRowGroup, obj1);
-  const items = [callback2(closure_5, obj), callback2(parts(9926).ModalFloatingActionSpacer, {})];
+  const items = [callback2(closure_5, obj), callback2(parts(9923).ModalFloatingActionSpacer, {})];
   obj[3] = items;
   return callback3(DemoScreen, obj);
 }

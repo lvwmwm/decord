@@ -1,10 +1,10 @@
-// Module ID: 8440
-// Function ID: 8441
+// Module ID: 8437
+// Function ID: 8438
 // Name: CoachmarkImg
-// Dependencies: [32, 19, 17, 676, 1369, 21, 4189, 8398, 5141, 5919, 1358, 8441, 1236, 6611, 8430, 2]
+// Dependencies: [32, 19, 17, 676, 1369, 21, 4189, 8395, 5141, 5917, 1358, 8438, 1236, 6608, 8427, 2]
 // Exports: default
 
-// Module 8440 (CoachmarkImg)
+// Module 8437 (CoachmarkImg)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -17,7 +17,7 @@ const require = arg1;
 function CoachmarkImg(badge) {
   badge = badge.badge;
   const tmp = callback2();
-  let obj = require(8398) /* useMobileTenureBadgeImages */;
+  let obj = require(8395) /* useMobileTenureBadgeImages */;
   let id;
   if (badge != null) {
     id = badge.id;
@@ -50,10 +50,10 @@ export default function TieredTenureBadgeCoachmark(arg0) {
   let first;
   let dependencyMap;
   ({ targetRef, badgeId } = arg0);
-  const tieredTenureBadge = tieredTenureBadgeData(5919).getTieredTenureBadge(badgeId);
+  const tieredTenureBadge = tieredTenureBadgeData(5917).getTieredTenureBadge(badgeId);
   tieredTenureBadgeData = null;
   if (null != tieredTenureBadge) {
-    let tmpResult = tmp(5919);
+    let tmpResult = tmp(5917);
     tieredTenureBadgeData = tmpResult.getTieredTenureBadgeData(tieredTenureBadge);
   }
   if (null != tieredTenureBadgeData) {
@@ -62,7 +62,7 @@ export default function TieredTenureBadgeCoachmark(arg0) {
   } else {
     items1 = [];
   }
-  tmpResult = tmp(8441);
+  tmpResult = tmp(8438);
   const tmp5 = callback(tmpResult.useSelectedDismissibleContent(items1), 2);
   first = tmp5[0];
   dependencyMap = tmp7;
@@ -90,7 +90,7 @@ export default function TieredTenureBadgeCoachmark(arg0) {
     obj[8] = intl3.string(tieredTenureBadgeData(_undefined[12]).t.RzWDqY);
     return obj;
   }, items2);
-  let obj = tieredTenureBadgeData(5919);
-  const coachmark = tieredTenureBadgeData(8430).useCoachmark(targetRef, memo);
+  let obj = tieredTenureBadgeData(5917);
+  const coachmark = tieredTenureBadgeData(8427).useCoachmark(targetRef, memo);
   return null;
 };

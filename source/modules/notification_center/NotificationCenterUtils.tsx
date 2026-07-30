@@ -1,10 +1,10 @@
-// Module ID: 5927
-// Function ID: 5928
+// Module ID: 5925
+// Function ID: 5926
 // Name: getRelativeTimestamp
-// Dependencies: [5928, 3862, 11, 5926, 2]
+// Dependencies: [5926, 3862, 11, 5924, 2]
 // Exports: getRelativeTimestamp, incomingFriendRequestLocalItem, incomingGameFriendRequestLocalItem, isMentionItem, isRemoteAcked, mobileNativeUpdateAvailableLocalItem
 
-// Module 5927 (getRelativeTimestamp)
+// Module 5925 (getRelativeTimestamp)
 const result = require("DISCORD_EPOCH").fileFinishedImporting("modules/notification_center/NotificationCenterUtils.tsx");
 
 export const getRelativeTimestamp = function getRelativeTimestamp(extractTimestampResult, flag) {
@@ -12,9 +12,9 @@ export const getRelativeTimestamp = function getRelativeTimestamp(extractTimesta
     flag = true;
   }
   const obj = { since: extractTimestampResult, getFormatter: null };
-  const tmp2 = require(5928) /* getDurationString */;
+  const tmp2 = require(5926) /* getDurationString */;
   obj[1] = flag ? tmp2.getAbbreviatedFormatter : tmp2.getFullFormatter;
-  return importDefault(5928)(obj);
+  return importDefault(5926)(obj);
 };
 export const isRemoteAcked = function isRemoteAcked(addResult, closure_1) {
   let acked = addResult.acked;
@@ -31,13 +31,13 @@ export const isRemoteAcked = function isRemoteAcked(addResult, closure_1) {
 export const incomingFriendRequestLocalItem = function incomingFriendRequestLocalItem(user, since, origin_application_id) {
   let obj = importDefault(11);
   const fromTimestampResult = obj.fromTimestamp(new Date(since).getTime());
-  obj = { acked: false, forceUnacked: true, other_user: user, kind: "notification-center-item", local_id: "incoming_friend_requests_" + user.id + "_" + fromTimestampResult, deeplink: "https://discord.com/users/" + user.id, type: require(5926) /* NotificationCenterScenes */.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, id: fromTimestampResult, applicationId: origin_application_id };
+  obj = { acked: false, forceUnacked: true, other_user: user, kind: "notification-center-item", local_id: "incoming_friend_requests_" + user.id + "_" + fromTimestampResult, deeplink: "https://discord.com/users/" + user.id, type: require(5924) /* NotificationCenterScenes */.NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, id: fromTimestampResult, applicationId: origin_application_id };
   return obj;
 };
 export const incomingGameFriendRequestLocalItem = function incomingGameFriendRequestLocalItem(user, since, applicationId) {
   let obj = importDefault(11);
   const fromTimestampResult = obj.fromTimestamp(new Date(since).getTime());
-  obj = { acked: false, forceUnacked: true, other_user: user, kind: "notification-center-item", local_id: "incoming_game_friend_requests_" + user.id + "_" + fromTimestampResult, deeplink: "https://discord.com/users/" + user.id, type: require(5926) /* NotificationCenterScenes */.NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS, id: fromTimestampResult, applicationId };
+  obj = { acked: false, forceUnacked: true, other_user: user, kind: "notification-center-item", local_id: "incoming_game_friend_requests_" + user.id + "_" + fromTimestampResult, deeplink: "https://discord.com/users/" + user.id, type: require(5924) /* NotificationCenterScenes */.NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS, id: fromTimestampResult, applicationId };
   return obj;
 };
 export const mobileNativeUpdateAvailableLocalItem = function mobileNativeUpdateAvailableLocalItem(newBuild) {
@@ -45,14 +45,14 @@ export const mobileNativeUpdateAvailableLocalItem = function mobileNativeUpdateA
   const obj2 = importDefault(11);
   obj[2] = obj2.fromTimestamp(new Date().getTime());
   obj[4] = "mobile_update_available_" + newBuild.build;
-  obj[5] = require(5926) /* NotificationCenterScenes */.NotificationCenterLocalItems.MOBILE_NATIVE_UPDATE_AVAILABLE;
+  obj[5] = require(5924) /* NotificationCenterScenes */.NotificationCenterLocalItems.MOBILE_NATIVE_UPDATE_AVAILABLE;
   obj[6] = newBuild.urls.install.toString();
   return obj;
 };
 export const isMentionItem = function isMentionItem(addResult) {
-  let tmp3 = addResult.type === require(5926) /* NotificationCenterScenes */.NotificationCenterItems.RECENT_MENTION;
+  let tmp3 = addResult.type === require(5924) /* NotificationCenterScenes */.NotificationCenterItems.RECENT_MENTION;
   if (!tmp3) {
-    tmp3 = addResult.type === require(5926) /* NotificationCenterScenes */.NotificationCenterItems.REPLY_MENTION;
+    tmp3 = addResult.type === require(5924) /* NotificationCenterScenes */.NotificationCenterItems.REPLY_MENTION;
   }
   return tmp3;
 };

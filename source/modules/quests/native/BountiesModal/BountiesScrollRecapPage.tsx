@@ -1,10 +1,10 @@
-// Module ID: 14076
-// Function ID: 14077
+// Module ID: 14072
+// Function ID: 14073
 // Name: BountiesRecapOrbsBackground
-// Dependencies: [19, 17, 4181, 21, 712, 4189, 500, 6207, 14077, 8142, 14078, 1581, 589, 14079, 4185, 1236, 8705, 4600, 2]
+// Dependencies: [19, 17, 4181, 21, 712, 4189, 500, 6204, 14073, 8139, 14074, 1581, 589, 14075, 4185, 1236, 8701, 4600, 2]
 // Exports: BountiesScrollRecapPage
 
-// Module 14076 (BountiesRecapOrbsBackground)
+// Module 14072 (BountiesRecapOrbsBackground)
 import "noop";
 import get_ActivityIndicator from "Button";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -25,19 +25,19 @@ function BountiesRecapOrbsBackground(arg0) {
     obj = { style: null, needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, pointerEvents: "none", children: null };
     obj[0] = style;
     obj = { url: null, style: null, autoplay: null };
-    obj[0] = importDefault(14077);
+    obj[0] = importDefault(14073);
     obj[1] = closure_3.absoluteFillObject;
     obj[2] = !reducedMotion;
-    obj[4] = tmp3(tmp(6207).APNGPlayer, obj);
+    obj[4] = tmp3(tmp(6204).APNGPlayer, obj);
     let tmp3Result = tmp3(closure_4, obj);
   } else {
     const obj1 = { source: null, style: null, resizeMode: "contain", paused: null, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
     const obj2 = { uri: null };
-    obj2[0] = importDefault(14078);
+    obj2[0] = importDefault(14074);
     obj1[0] = obj2;
     obj1[1] = style;
     obj1[3] = reducedMotion;
-    tmp3Result = tmp3(tmp(8142).VideoComponent, obj1);
+    tmp3Result = tmp3(tmp(8139).VideoComponent, obj1);
   }
   return tmp3Result;
 }
@@ -81,11 +81,11 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   obj = { style: closure_3.absoluteFillObject, pointerEvents: "none", children: null };
   const obj1 = { source: null, style: null, resizeMode: "cover", paused: null, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
   const obj2 = { uri: null };
-  obj2[0] = importDefault(14079);
+  obj2[0] = importDefault(14075);
   obj1[0] = obj2;
   obj1[1] = closure_3.absoluteFillObject;
   obj1[3] = stateFromStores;
-  const items2 = [callback(require(8142) /* VideoComponent */.VideoComponent, obj1), callback(BountiesRecapOrbsBackground, { style: tmp.orbsBackground, reducedMotion: stateFromStores })];
+  const items2 = [callback(require(8139) /* VideoComponent */.VideoComponent, obj1), callback(BountiesRecapOrbsBackground, { style: tmp.orbsBackground, reducedMotion: stateFromStores })];
   obj[2] = items2;
   const items3 = [callback2(closure_4, obj), ];
   const obj4 = { style: tmp.content, pointerEvents: "box-none", children: null };
@@ -96,7 +96,7 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   const items4 = [callback(require(4185) /* Text */.Text, obj6), , ];
   const obj7 = { accessible: true, accessibilityRole: "text", accessibilityLabel: "+" + orbAmount, children: null };
   const obj8 = { style: tmp.titleRow, children: null };
-  const items5 = [callback(require(8705) /* OrbsIcon */.OrbsIcon, { size: "lg", color: "icon-strong", accessible: false }), ];
+  const items5 = [callback(require(8701) /* OrbsIcon */.OrbsIcon, { size: "lg", color: "icon-strong", accessible: false }), ];
   const obj9 = { variant: "display-lg", color: "text-strong", accessible: false, style: tmp.orbAmount, children: null };
   obj9[4] = "+" + orbAmount;
   items5[1] = callback(require(4185) /* Text */.Text, obj9);

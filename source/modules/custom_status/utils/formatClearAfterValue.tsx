@@ -1,10 +1,10 @@
-// Module ID: 11983
-// Function ID: 11984
+// Module ID: 11977
+// Function ID: 11978
 // Name: formatClearAfterValue
-// Dependencies: [11972, 3859, 1236, 687, 1351, 2]
+// Dependencies: [11966, 3859, 1236, 687, 1351, 2]
 // Exports: default
 
-// Module 11983 (formatClearAfterValue)
+// Module 11977 (formatClearAfterValue)
 import { ClearAfterValues } from "StatusTypes";
 
 let result = require("getSystemLocale").fileFinishedImporting("modules/custom_status/utils/formatClearAfterValue.tsx");

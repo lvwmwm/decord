@@ -1,12 +1,12 @@
-// Module ID: 10618
-// Function ID: 10619
+// Module ID: 10614
+// Function ID: 10615
 // Name: getFramesManager
-// Dependencies: [10619, 2]
+// Dependencies: [10615, 2]
 // Exports: default
 
-// Module 10618 (getFramesManager)
+// Module 10614 (getFramesManager)
 const result = require("set").fileFinishedImporting("modules/frames/utils/getFramesManager.native.tsx");
 
 export default function getFramesManager() {
-  return importDefault(10619);
+  return importDefault(10615);
 };

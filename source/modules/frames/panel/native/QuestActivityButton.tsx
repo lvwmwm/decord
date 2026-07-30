@@ -1,16 +1,16 @@
-// Module ID: 15857
-// Function ID: 15858
+// Module ID: 15851
+// Function ID: 15852
 // Name: QuestActivityButtonInner
-// Dependencies: [19, 17, 4181, 5985, 15858, 5033, 21, 4050, 8531, 4189, 712, 10492, 589, 4395, 15859, 1959, 4157, 15860, 4190, 5506, 14156, 15861, 14026, 1236, 10502, 2]
+// Dependencies: [19, 17, 4181, 5983, 15852, 5033, 21, 4050, 8528, 4189, 712, 10488, 589, 4395, 15853, 1959, 4157, 15854, 4190, 5506, 14152, 15855, 14021, 1236, 10498, 2]
 
-// Module 15857 (QuestActivityButtonInner)
+// Module 15851 (QuestActivityButtonInner)
 import importAllResult from "play";
 import { View } from "contextMenuButton";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import initializeState from "initializeState";
 import set from "set";
 import { QuestVariants } from "QuestsExperimentLocations";
-import jsxProd from "module_15861";
+import jsxProd from "module_15855";
 import createCacheKey from "createCacheKey";
 import importDefaultResult from "module_4050";
 
@@ -28,7 +28,7 @@ function QuestActivityButtonInner(quest) {
   let sharedValue1;
   let ref;
   let c8;
-  let obj = quest(10492);
+  let obj = quest(10488);
   let obj1 = quest(589);
   let items = [sharedValue];
   stateFromStores = obj1.useStateFromStores(items, () => sharedValue.useReducedMotion);
@@ -162,30 +162,30 @@ function QuestActivityButtonInner(quest) {
   obj = { style: memo, pointerEvents: "none", children: null };
   obj1 = { ref, source: null, autoPlay: false, loop: false };
   const tmpResult2 = quest(4050);
-  obj1[1] = quest(14156);
+  obj1[1] = quest(14152);
   obj[2] = callback(stateFromStores(5506), obj1);
   const items6 = [callback(c4, obj), , , ];
   obj2 = { style: tmp14.buttonWrapper, children: null };
   let obj3 = { icon: null, onPress: null, accessibilityLabel: null };
   const tmp20 = stateFromStores(5506);
-  obj3[0] = stateFromStores(14026);
+  obj3[0] = stateFromStores(14021);
   obj3[1] = callback;
   const intl = tmp(1236).intl;
   obj3[2] = intl.string(quest(1236).t.JALI2K);
-  obj2[1] = callback(stateFromStores(15861), obj3);
+  obj2[1] = callback(stateFromStores(15855), obj3);
   items6[1] = callback(c4, obj2);
   const obj4 = { pointerEvents: "none", style: tmp14.canvas, children: null };
   const obj5 = { height: c11, width: c11, children: null };
   const obj6 = { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: null, strokeWidth: 3.4, strokeDasharray: null };
   obj6[4] = stateFromStores(712).unsafe_rawColors.OPACITY_32;
   obj6[6] = result;
-  obj5[2] = callback(quest(8531).Circle, obj6);
-  obj4[2] = callback(quest(8531).Svg, obj5);
+  obj5[2] = callback(quest(8528).Circle, obj6);
+  obj4[2] = callback(quest(8528).Svg, obj5);
   items6[2] = callback(c4, obj4);
   const obj7 = { pointerEvents: "none", style: tmp14.canvas, children: null };
   const obj8 = { height: c11, width: c11, children: null };
   obj8[2] = callback(closure_12, { cx: 16, cy: 16, r: 14.3, fill: "none", stroke: tmp14.progressPath.color, strokeWidth: 3.4, strokeDasharray: result, animatedProps });
-  obj7[2] = callback(quest(8531).Svg, obj8);
+  obj7[2] = callback(quest(8528).Svg, obj8);
   items6[3] = callback(c4, obj7);
   obj[2] = items6;
   return callback2(stateFromStores(4050).View, obj);

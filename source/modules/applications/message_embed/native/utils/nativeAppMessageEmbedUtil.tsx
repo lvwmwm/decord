@@ -1,10 +1,10 @@
-// Module ID: 11138
-// Function ID: 11139
+// Module ID: 11134
+// Function ID: 11135
 // Name: items
-// Dependencies: [4033, 712, 7911, 7912, 1416, 2]
+// Dependencies: [4033, 712, 7908, 7909, 1416, 2]
 // Exports: getAppGradientColors, getAppIconSrc
 
-// Module 11138 (items)
+// Module 11134 (items)
 import hexToRgba from "hexToRgba";
 import hexToRgba from "hexToRgba";
 
@@ -20,7 +20,7 @@ export const getAppGradientColors = function getAppGradientColors(id2) {
     return tmp;
   } else {
     if (obj5.hasFetchedColors(id2)) {
-      let tmp6Result = tmp6(7912);
+      let tmp6Result = tmp6(7909);
       const heroColors = tmp6Result.getHeroColors(id2);
       ({ primaryColor, secondaryColor } = heroColors);
       let tmp5 = tmp;
@@ -32,10 +32,10 @@ export const getAppGradientColors = function getAppGradientColors(id2) {
       }
       return tmp5;
     } else {
-      tmp6(7911).maybeFetchColors(id2);
+      tmp6(7908).maybeFetchColors(id2);
       return tmp;
     }
-    obj5 = require(7911) /* hasFetchedColors */;
+    obj5 = require(7908) /* hasFetchedColors */;
   }
 };
 export const getAppIconSrc = function getAppIconSrc(id, icon, bot) {

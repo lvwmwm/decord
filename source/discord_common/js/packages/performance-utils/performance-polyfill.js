@@ -155,7 +155,7 @@ if (!tmp6.clearMeasures) {
 }
 global.performance = tmp6;
 let tmp7 = typeof globalThis.define === "find";
-if (typeof globalThis.define !== "_") {
+if (typeof globalThis.define !== "ZodObject") {
   let ajs = globalThis.define.amd;
   if (!ajs) {
     ajs = globalThis.define.ajs;

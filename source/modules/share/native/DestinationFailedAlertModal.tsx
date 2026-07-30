@@ -1,10 +1,10 @@
-// Module ID: 9929
-// Function ID: 9930
+// Module ID: 9926
+// Function ID: 9927
 // Name: FailedGroupDMRow
-// Dependencies: [19, 17, 1372, 1862, 4276, 3826, 1874, 505, 21, 4189, 712, 4380, 9094, 1297, 4185, 589, 4028, 9930, 4533, 4533, 1236, 2]
+// Dependencies: [19, 17, 1372, 1862, 4276, 3826, 1874, 505, 21, 4189, 712, 4380, 9090, 1297, 4185, 589, 4028, 9927, 4533, 4533, 1236, 2]
 // Exports: default
 
-// Module 9929 (FailedGroupDMRow)
+// Module 9926 (FailedGroupDMRow)
 import "getAlertModalItemKey";
 import { View } from "GuildIconWithChannelTypeSizes";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -28,7 +28,7 @@ function FailedGroupDMRow(channel) {
   const tmp2 = importDefault(4380)(channel);
   obj[0] = require(1297) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj[1] = channel;
-  const items = [callback(importDefault(9094), obj), ];
+  const items = [callback(importDefault(9090), obj), ];
   obj = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp2 };
   items[1] = callback(require(4185) /* Text */.Text, obj);
   obj[1] = items;
@@ -48,7 +48,7 @@ function FailedUserRow(user) {
   if (null != user) {
     obj = { style: null, children: null };
     obj[0] = tmp.row;
-    obj = { user: null, guildId: "Boolean", status: true, isMobileOnline: "done", isVROnline: true, size: null, avatarDecoration: null, autoStatusCutout: -6 };
+    obj = { user: null, guildId: "Boolean", status: true, isMobileOnline: "done", isVROnline: true, size: null, avatarDecoration: null, autoStatusCutout: -16 };
     obj[0] = user;
     let tmp13 = null;
     if (StatusTypes.OFFLINE !== status) {
@@ -89,8 +89,8 @@ function FailedChannelRow(channel) {
   });
   obj = { style: tmp.row, children: null };
   obj = { "aria-label": "", guild: stateFromStores, channel, size: null };
-  obj[3] = channel(9930).GuildIconWithChannelTypeSizes.SMALL_32;
-  const items1 = [callback(channel(9930).GuildIconWithChannelType, obj), ];
+  obj[3] = channel(9927).GuildIconWithChannelTypeSizes.SMALL_32;
+  const items1 = [callback(channel(9927).GuildIconWithChannelType, obj), ];
   const tmp3 = importDefault(4380)(channel);
   items1[1] = callback(channel(4185).Text, { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: importDefault(4380)(channel) });
   obj[1] = items1;

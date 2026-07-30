@@ -1,10 +1,10 @@
-// Module ID: 7372
-// Function ID: 7373
+// Module ID: 7369
+// Function ID: 7370
 // Name: OrbNitroMultiplierSpotIllustration
-// Dependencies: [21, 5141, 7373, 2]
+// Dependencies: [21, 5141, 7370, 2]
 // Exports: OrbNitroMultiplierSpotIllustration
 
-// Module 7372 (OrbNitroMultiplierSpotIllustration)
+// Module 7369 (OrbNitroMultiplierSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/OrbNitroMultiplierSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const OrbNitroMultiplierSpotIllustration = function OrbNitroMultiplierSpo
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7373);
+  obj[0] = importDefault(7370);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];

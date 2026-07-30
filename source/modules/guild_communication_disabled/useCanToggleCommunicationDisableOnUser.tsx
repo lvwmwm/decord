@@ -1,10 +1,10 @@
-// Module ID: 11026
-// Function ID: 11027
+// Module ID: 11022
+// Function ID: 11023
 // Name: canToggleCommunicationDisableOnUser
 // Dependencies: [1415, 1862, 3817, 1874, 676, 3822, 589, 2]
 // Exports: default
 
-// Module 11026 (canToggleCommunicationDisableOnUser)
+// Module 11022 (canToggleCommunicationDisableOnUser)
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

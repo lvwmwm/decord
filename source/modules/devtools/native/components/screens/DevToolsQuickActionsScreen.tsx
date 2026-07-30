@@ -1,11 +1,11 @@
-// Module ID: 14764
-// Function ID: 14765
+// Module ID: 14757
+// Function ID: 14758
 // Name: handleNewUserOnboarding
-// Dependencies: [32, 5, 19, 17, 4181, 4865, 1875, 1946, 1302, 1304, 1874, 6003, 676, 11796, 1876, 10159, 1305, 21, 4189, 712, 11849, 709, 11795, 6206, 13502, 1355, 1358, 4005, 4395, 14765, 1959, 10171, 13812, 13814, 10336, 12751, 3890, 14523, 1581, 589, 3862, 14781, 5554, 5555, 13638, 1297, 14284, 4035, 14343, 14782, 9102, 1236, 5220, 14381, 5227, 9206, 14783, 9214, 1208, 1869, 500, 2]
+// Dependencies: [32, 5, 19, 17, 4181, 4865, 1875, 1946, 1302, 1304, 1874, 6001, 676, 11792, 1876, 10155, 1305, 21, 4189, 712, 11845, 709, 11791, 6203, 13497, 1355, 1358, 4005, 4395, 14758, 1959, 10167, 13807, 13809, 12745, 3890, 14519, 1581, 589, 3862, 14774, 5554, 5555, 13633, 1297, 14280, 4035, 14339, 14775, 9098, 1236, 5220, 14377, 5227, 9202, 14776, 9210, 1208, 1869, 500, 2]
 // Exports: default
 
-// Module 14764 (handleNewUserOnboarding)
-import module_13812 from "module_13812";
+// Module 14757 (handleNewUserOnboarding)
+import module_13807 from "module_13807";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import Themes from "Themes";
 import { ScrollView } from "jsxProd";
@@ -32,19 +32,19 @@ let closure_22;
 let closure_23;
 const require = arg1;
 function handleNewUserOnboarding() {
-  require(11849) /* setNewUser */.setNewUser(NewUserTypes.ORGANIC_REGISTERED);
-  const obj = require(11849) /* setNewUser */;
-  importDefault(709).wait(require(11795) /* _startContactSyncForDiscoverability */.startOnboarding);
+  require(11845) /* setNewUser */.setNewUser(NewUserTypes.ORGANIC_REGISTERED);
+  const obj = require(11845) /* setNewUser */;
+  importDefault(709).wait(require(11791) /* _startContactSyncForDiscoverability */.startOnboarding);
 }
 function handleThemeChange(arg0) {
-  importDefault(6206).updateTheme(arg0 ? ThemeTypes.LIGHT : ThemeTypes.DARK);
+  importDefault(6203).updateTheme(arg0 ? ThemeTypes.LIGHT : ThemeTypes.DARK);
 }
 function handleReducedMotionChange(arg0) {
   let str = "no-preference";
   if (arg0) {
     str = "reduce";
   }
-  const result = require(13502) /* setFontSize */.setPrefersReducedMotion(str);
+  const result = require(13497) /* setFontSize */.setPrefersReducedMotion(str);
 }
 function handleLaunchWelcomeReset() {
   const result = require(1355) /* updateUserGuildSettings */.removeDismissedContent(require(1358) /* DismissibleContent */.DismissibleContent.SEEN_LAUNCH_WELCOME);
@@ -58,7 +58,7 @@ function showVibingWumpus() {
 
     }
   };
-  obj.pushLazy(require(1959) /* asyncRequireImpl */(10171, dependencyMap.paths), obj, VIBING_WUMPUS_MODAL_KEY);
+  obj.pushLazy(require(1959) /* asyncRequireImpl */(10167, dependencyMap.paths), obj, VIBING_WUMPUS_MODAL_KEY);
 }
 function handleResetDoubleTapState() {
   const result = require(1355) /* updateUserGuildSettings */.removeDismissedContent(require(1358) /* DismissibleContent */.DismissibleContent.DOUBLE_TAP_TO_REACT_UPSELL);
@@ -74,7 +74,7 @@ function handleResetDoubleTapState() {
 function launchTotpSetupSuccess() {
   let arr = importDefault(4395);
   arr = arr.pop();
-  const items = [require(1959) /* asyncRequireImpl */(13812, dependencyMap.paths), require(1959) /* asyncRequireImpl */(13814, dependencyMap.paths)];
+  const items = [require(1959) /* asyncRequireImpl */(13807, dependencyMap.paths), require(1959) /* asyncRequireImpl */(13809, dependencyMap.paths)];
   Promise.all(items).then((arg0) => {
     const iter = arg0[Symbol.iterator]();
     let nextResult;
@@ -95,11 +95,6 @@ function launchTotpSetupSuccess() {
     }
     nextResult.default.open(nextResult1.TwoFAModalSetupSections.SUCCESS);
   });
-}
-function handleResetInAppNotificationExpandNux() {
-  const result = require(1355) /* updateUserGuildSettings */.removeDismissedContent(require(1358) /* DismissibleContent */.DismissibleContent.IN_APP_NOTIFICATION_EXPAND_NUX);
-  const obj = require(1355) /* updateUserGuildSettings */;
-  require(10336) /* MAX_TIMES_SHOWN */.resetExpandNUXState();
 }
 function handleShowAppRatingModal() {
   const self = this;
@@ -146,7 +141,7 @@ function _handleShowAppRatingModal() {
             dependencyMap = 1;
             c3 = 1;
             const obj1 = { value: null, done: false };
-            obj1[0] = outer1_1(12751)();
+            obj1[0] = outer1_1(12745)();
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -161,7 +156,7 @@ function _handleShowAppRatingModal() {
           ok = arg1;
           const obj2 = { key: "DEV_APP_RATING_REQUEST", icon: null, content: null, toastDurationMs: 6000 };
           obj2[1] = function icon() {
-            return callback2(callback(table[37]).WrenchIcon, {});
+            return callback2(callback(table[36]).WrenchIcon, {});
           };
           let str2 = "Review requested -- no error returned. The OS decides whether to render the prompt.";
           if (!ok.ok) {
@@ -198,7 +193,7 @@ createCacheKey = createCacheKey.createStyles(createCacheKey);
 function launchMFA() {
   let arr = importDefault(4395);
   arr = arr.pop();
-  require(1959) /* asyncRequireImpl */(14765, dependencyMap.paths).then((openMFAModal) => {
+  require(1959) /* asyncRequireImpl */(14758, dependencyMap.paths).then((openMFAModal) => {
     const items = [{ type: "webauthn", challenge: "{}" }, { type: "totp" }, { type: "backup" }, { type: "sms" }, { type: "password" }];
     openMFAModal.openMFAModal({ ticket: "ticket", methods: items }, () => {
 
@@ -237,7 +232,7 @@ export default function DevToolsQuickActionsScreen() {
   [][0] = locale;
   const stateFromStores = obj3.useStateFromStores(items3, () => useReducedMotion.useReducedMotion);
   if (tmp8) {
-    return callback3(tmp5(14781).default, {});
+    return callback3(tmp5(14774).default, {});
   } else {
     obj = { style: null, contentContainerStyle: null, children: null };
     obj[0] = tmp.container;
@@ -251,7 +246,7 @@ export default function DevToolsQuickActionsScreen() {
     obj2 = { label: "Show Dev Widget", value: null, onValueChange: null };
     obj2[1] = showDevWidget;
     obj2[2] = function onValueChange() {
-      let obj = locale(13638);
+      let obj = locale(13633);
       obj = { showDevWidget: !showDevWidget };
       return obj.updateDevToolsSettings(obj);
     };
@@ -268,13 +263,13 @@ export default function DevToolsQuickActionsScreen() {
     const obj5 = { label: null, disabled: null, icon: null, value: null, onValueChange: null };
     obj5[0] = str;
     obj5[1] = usingSystemTheme;
-    obj5[2] = tmp14(tmp5(14284).ThemeLightIcon, {});
+    obj5[2] = tmp14(tmp5(14280).ThemeLightIcon, {});
     let tmp5Result = tmp5(4035);
     obj5[3] = tmp5Result.isThemeLight(stateFromStoresObject.theme);
     obj5[4] = handleThemeChange;
     const items6 = [tmp14(tmp5(5555).TableSwitchRow, obj5), ];
     const obj6 = { label: "Reduced Motion", icon: null, value: null, onValueChange: null };
-    obj6[1] = tmp14(tmp5(14343).AccessibilityIcon, {});
+    obj6[1] = tmp14(tmp5(14339).AccessibilityIcon, {});
     obj6[2] = stateFromStores;
     obj6[3] = handleReducedMotionChange;
     items6[1] = tmp14(tmp5(5555).TableSwitchRow, obj6);
@@ -291,14 +286,14 @@ export default function DevToolsQuickActionsScreen() {
       const locale = value;
       const obj = {
         onValueChange(arg0) {
-          const result = locale(table[49]).updateClientPremiumTypeOverride(arg0 ? closure_0 : outer2_18, outer1_2);
+          const result = locale(table[48]).updateClientPremiumTypeOverride(arg0 ? closure_0 : outer2_18, outer1_2);
         },
         label,
         icon: null,
         value: null
       };
-      obj[2] = outer1_21(locale(9102).PencilIcon, {});
-      obj[3] = value === module_13812;
+      obj[2] = outer1_21(locale(9098).PencilIcon, {});
+      obj[3] = value === module_13807;
       return outer1_21(locale(5555).TableSwitchRow, obj, label);
     });
     items5[4] = tmp14(tmp5(5554).TableRowGroup, obj8);
@@ -315,129 +310,124 @@ export default function DevToolsQuickActionsScreen() {
     const obj11 = { label: null, subLabel: "Toggle to a non-english locale for change log testing, etc.", onPress: null, icon: null, trailing: null };
     obj11[0] = str2;
     obj11[2] = tmp11;
-    obj11[3] = tmp14(tmp5(14381).LanguageIcon, {});
+    obj11[3] = tmp14(tmp5(14377).LanguageIcon, {});
     obj11[4] = tmp14(tmp5(5227).TableRowArrow, {});
-    const items7 = [tmp14(tmp5(5220).TableRow, obj11), , , , , , , , , , ];
+    const items7 = [tmp14(tmp5(5220).TableRow, obj11), , , , , , , , , ];
     const obj12 = { label: "Reset Double Tap Emoji State", subLabel: "Clears double tap emoji and resets dismissible content.", onPress: null, icon: null, trailing: null };
     obj12[2] = handleResetDoubleTapState;
-    obj12[3] = tmp14(tmp5(9206).KeyIcon, {});
+    obj12[3] = tmp14(tmp5(9202).KeyIcon, {});
     obj12[4] = tmp14(tmp5(5227).TableRowArrow, {});
     items7[1] = tmp14(tmp5(5220).TableRow, obj12);
-    const obj13 = { label: "Reset In App Notif Expand NUX", subLabel: "Resets in app notification expand NUX dismissible content.", onPress: null, icon: null, trailing: null };
-    obj13[2] = handleResetInAppNotificationExpandNux;
-    obj13[3] = tmp14(tmp5(9206).KeyIcon, {});
+    const obj13 = { label: null, subLabel: "Dismisses dev tools when launching.", onPress: null, icon: null, trailing: null };
+    const intl2 = tmp5(1236).intl;
+    obj13[0] = intl2.string(tmp5(1236).t.yoWDXU);
+    obj13[2] = handleNewUserOnboarding;
+    obj13[3] = tmp14(tmp5(14519).WrenchIcon, {});
     obj13[4] = tmp14(tmp5(5227).TableRowArrow, {});
     items7[2] = tmp14(tmp5(5220).TableRow, obj13);
-    const obj14 = { label: null, subLabel: "Dismisses dev tools when launching.", onPress: null, icon: null, trailing: null };
-    const intl2 = tmp5(1236).intl;
-    obj14[0] = intl2.string(tmp5(1236).t.yoWDXU);
-    obj14[2] = handleNewUserOnboarding;
-    obj14[3] = tmp14(tmp5(14523).WrenchIcon, {});
+    const obj14 = { label: "Launch MFA Challenge Modal", subLabel: "Dismisses dev tools when launching.", onPress: null, icon: null, trailing: null };
+    obj14[2] = launchMFA;
+    obj14[3] = tmp14(tmp5(9202).KeyIcon, {});
     obj14[4] = tmp14(tmp5(5227).TableRowArrow, {});
     items7[3] = tmp14(tmp5(5220).TableRow, obj14);
-    const obj15 = { label: "Launch MFA Challenge Modal", subLabel: "Dismisses dev tools when launching.", onPress: null, icon: null, trailing: null };
-    obj15[2] = launchMFA;
-    obj15[3] = tmp14(tmp5(9206).KeyIcon, {});
+    const obj15 = { label: "Show TOTP Setup Success", subLabel: "Dismisses dev tools when launching.", onPress: null, icon: null, trailing: null };
+    obj15[2] = launchTotpSetupSuccess;
+    obj15[3] = tmp14(tmp5(9202).KeyIcon, {});
     obj15[4] = tmp14(tmp5(5227).TableRowArrow, {});
     items7[4] = tmp14(tmp5(5220).TableRow, obj15);
-    const obj16 = { label: "Show TOTP Setup Success", subLabel: "Dismisses dev tools when launching.", onPress: null, icon: null, trailing: null };
-    obj16[2] = launchTotpSetupSuccess;
-    obj16[3] = tmp14(tmp5(9206).KeyIcon, {});
+    const obj16 = { label: "Reset Launch Welcome", subLabel: "Resets launch welcome NUX flag, requires an app restart to take effect.", onPress: null, icon: null, trailing: null };
+    obj16[2] = handleLaunchWelcomeReset;
+    obj16[3] = tmp14(tmp5(9202).KeyIcon, {});
     obj16[4] = tmp14(tmp5(5227).TableRowArrow, {});
     items7[5] = tmp14(tmp5(5220).TableRow, obj16);
-    const obj17 = { label: "Reset Launch Welcome", subLabel: "Resets launch welcome NUX flag, requires an app restart to take effect.", onPress: null, icon: null, trailing: null };
-    obj17[2] = handleLaunchWelcomeReset;
-    obj17[3] = tmp14(tmp5(9206).KeyIcon, {});
+    const obj17 = { label: "Launch Vibing Wumpus", subLabel: "Vibe with the one and only", onPress: null, icon: null, trailing: null };
+    obj17[2] = showVibingWumpus;
+    obj17[3] = tmp14(tmp5(9202).KeyIcon, {});
     obj17[4] = tmp14(tmp5(5227).TableRowArrow, {});
     items7[6] = tmp14(tmp5(5220).TableRow, obj17);
-    const obj18 = { label: "Launch Vibing Wumpus", subLabel: "Vibe with the one and only", onPress: null, icon: null, trailing: null };
-    obj18[2] = showVibingWumpus;
-    obj18[3] = tmp14(tmp5(9206).KeyIcon, {});
-    obj18[4] = tmp14(tmp5(5227).TableRowArrow, {});
+    const obj18 = { label: "Test captcha", onPress: null, icon: null, trailing: null };
+    obj18[1] = tmp5(14776).showCaptchaTestModal;
+    obj18[2] = tmp14(tmp5(9202).KeyIcon, {});
+    obj18[3] = tmp14(tmp5(5227).TableRowArrow, {});
     items7[7] = tmp14(tmp5(5220).TableRow, obj18);
-    const obj19 = { label: "Test captcha", onPress: null, icon: null, trailing: null };
-    obj19[1] = tmp5(14783).showCaptchaTestModal;
-    obj19[2] = tmp14(tmp5(9206).KeyIcon, {});
-    obj19[3] = tmp14(tmp5(5227).TableRowArrow, {});
-    items7[8] = tmp14(tmp5(5220).TableRow, obj19);
-    const obj20 = { label: "Ignored Profile Speedbump Suppression", subLabel: "Suppresses the speedbump for ignored profiles.", icon: null, value: null, onValueChange: null };
-    obj20[2] = tmp14(tmp5(9214).EyeSlashIcon, {});
-    obj20[3] = setting;
-    obj20[4] = function onValueChange() {
+    const obj19 = { label: "Ignored Profile Speedbump Suppression", subLabel: "Suppresses the speedbump for ignored profiles.", icon: null, value: null, onValueChange: null };
+    obj19[2] = tmp14(tmp5(9210).EyeSlashIcon, {});
+    obj19[3] = setting;
+    obj19[4] = function onValueChange() {
       const IgnoreProfileSpeedbumpDisabled = locale(3862).IgnoreProfileSpeedbumpDisabled;
       return IgnoreProfileSpeedbumpDisabled.updateSetting(!setting);
     };
-    items7[9] = tmp14(tmp5(5555).TableSwitchRow, obj20);
-    const obj21 = { label: "Show App Rating Modal", subLabel: "Attempts to show the app rating modal and toasts the request outcome. The prompt may not visually appear on debug builds, or if the OS declines to render it (recent prompt, quota) -- a success toast only means the request was sent without error.", onPress: null, icon: null };
-    obj21[2] = handleShowAppRatingModal;
-    obj21[3] = tmp14(tmp5(14523).WrenchIcon, {});
-    items7[10] = tmp14(tmp5(5220).TableRow, obj21);
+    items7[8] = tmp14(tmp5(5555).TableSwitchRow, obj19);
+    const obj20 = { label: "Show App Rating Modal", subLabel: "Attempts to show the app rating modal and toasts the request outcome. The prompt may not visually appear on debug builds, or if the OS declines to render it (recent prompt, quota) -- a success toast only means the request was sent without error.", onPress: null, icon: null };
+    obj20[2] = handleShowAppRatingModal;
+    obj20[3] = tmp14(tmp5(14519).WrenchIcon, {});
+    items7[9] = tmp14(tmp5(5220).TableRow, obj20);
     obj10[2] = items7;
     items5[6] = closure_22(tmp5(5554).TableRowGroup, obj10);
-    const obj22 = { size: null };
-    obj22[0] = tmp2(712).space.PX_16;
-    items5[7] = tmp14(tmp5(1297).Spacer, obj22);
-    const obj23 = { title: "Crash Actions", hasIcons: true, children: null };
-    const obj24 = { icon: null, label: "Force Native Crash", onPress: null };
-    obj24[0] = tmp14(tmp5(14523).WrenchIcon, {});
-    obj24[2] = function onPress() {
+    const obj21 = { size: null };
+    obj21[0] = tmp2(712).space.PX_16;
+    items5[7] = tmp14(tmp5(1297).Spacer, obj21);
+    const obj22 = { title: "Crash Actions", hasIcons: true, children: null };
+    const obj23 = { icon: null, label: "Force Native Crash", onPress: null };
+    obj23[0] = tmp14(tmp5(14519).WrenchIcon, {});
+    obj23[2] = function onPress() {
       return showDevWidget(1208).crash();
     };
-    const items8 = [tmp14(tmp5(5220).TableRow, obj24), , , , , ];
-    const obj25 = { icon: null, label: "Force JS Crash", onPress: null };
-    obj25[0] = tmp14(tmp5(14523).WrenchIcon, {});
-    obj25[2] = function onPress() {
+    const items8 = [tmp14(tmp5(5220).TableRow, obj23), , , , , ];
+    const obj24 = { icon: null, label: "Force JS Crash", onPress: null };
+    obj24[0] = tmp14(tmp5(14519).WrenchIcon, {});
+    obj24[2] = function onPress() {
       const error = new Error("Force JS Crash");
       throw error;
     };
-    items8[1] = tmp14(tmp5(5220).TableRow, obj25);
-    const obj26 = { icon: null, label: "Force JS Boundary Crash", onPress: null };
-    obj26[0] = tmp14(tmp5(14523).WrenchIcon, {});
-    obj26[2] = function onPress() {
+    items8[1] = tmp14(tmp5(5220).TableRow, obj24);
+    const obj25 = { icon: null, label: "Force JS Boundary Crash", onPress: null };
+    obj25[0] = tmp14(tmp5(14519).WrenchIcon, {});
+    obj25[2] = function onPress() {
       callback(true);
     };
-    items8[2] = tmp14(tmp5(5220).TableRow, obj26);
-    const obj27 = { icon: null, label: "Force libdiscore Crash", onPress: null };
-    obj27[0] = tmp14(tmp5(14523).WrenchIcon, {});
-    obj27[2] = function onPress() {
+    items8[2] = tmp14(tmp5(5220).TableRow, obj25);
+    const obj26 = { icon: null, label: "Force libdiscore Crash", onPress: null };
+    obj26[0] = tmp14(tmp5(14519).WrenchIcon, {});
+    obj26[2] = function onPress() {
       locale(1869).crash();
     };
-    items8[3] = tmp14(tmp5(5220).TableRow, obj27);
-    const obj28 = { icon: null, label: "Force libdiscore Store Crash", subLabel: "Dispatches LIBDISCORE_SIMULATE_CRASH to NoteStore", onPress: null };
-    obj28[0] = tmp14(tmp5(14523).WrenchIcon, {});
-    obj28[3] = function onPress() {
+    items8[3] = tmp14(tmp5(5220).TableRow, obj26);
+    const obj27 = { icon: null, label: "Force libdiscore Store Crash", subLabel: "Dispatches LIBDISCORE_SIMULATE_CRASH to NoteStore", onPress: null };
+    obj27[0] = tmp14(tmp5(14519).WrenchIcon, {});
+    obj27[3] = function onPress() {
       showDevWidget(709).dispatch({ type: "LIBDISCORE_SIMULATE_CRASH" });
     };
-    items8[4] = tmp14(tmp5(5220).TableRow, obj28);
-    const obj29 = { icon: null, label: "Force libdiscore Store Error", subLabel: "Dispatches LIBDISCORE_SIMULATE_STORE_ERROR with socket reset", onPress: null };
-    obj29[0] = tmp14(tmp5(14523).WrenchIcon, {});
-    obj29[3] = function onPress() {
+    items8[4] = tmp14(tmp5(5220).TableRow, obj27);
+    const obj28 = { icon: null, label: "Force libdiscore Store Error", subLabel: "Dispatches LIBDISCORE_SIMULATE_STORE_ERROR with socket reset", onPress: null };
+    obj28[0] = tmp14(tmp5(14519).WrenchIcon, {});
+    obj28[3] = function onPress() {
       const socket2 = socket.getSocket();
       const obj = showDevWidget(709);
       showDevWidget(709).dispatch({ type: "LIBDISCORE_SIMULATE_STORE_ERROR" }).catch((error) => {
         const result = closure_0.resetSocketOnDispatchError({ error, action: "LIBDISCORE_SIMULATE_STORE_ERROR" });
       });
     };
-    items8[5] = tmp14(tmp5(5220).TableRow, obj29);
-    obj23[2] = items8;
-    items5[8] = closure_22(tmp5(5554).TableRowGroup, obj23);
+    items8[5] = tmp14(tmp5(5220).TableRow, obj28);
+    obj22[2] = items8;
+    items5[8] = closure_22(tmp5(5554).TableRowGroup, obj22);
     tmp5Result = tmp5(500);
     let isIOSResult = tmp5Result.isIOS();
     if (isIOSResult) {
-      const obj30 = { children: null };
-      const obj31 = { size: null };
-      obj31[0] = tmp2(712).space.PX_16;
-      const items9 = [tmp14(tmp5(1297).Spacer, obj31), ];
-      const obj32 = { title: "Memory Actions", hasIcons: true, children: null };
-      const obj33 = { icon: null, label: "Trigger Memory Warning", subLabel: "Simulates a memory warning to test cache-eviction behavior (e.g. SDWebImage).", onPress: null };
-      obj33[0] = tmp14(tmp5(14523).WrenchIcon, {});
-      obj33[3] = function onPress() {
+      const obj29 = { children: null };
+      const obj30 = { size: null };
+      obj30[0] = tmp2(712).space.PX_16;
+      const items9 = [tmp14(tmp5(1297).Spacer, obj30), ];
+      const obj31 = { title: "Memory Actions", hasIcons: true, children: null };
+      const obj32 = { icon: null, label: "Trigger Memory Warning", subLabel: "Simulates a memory warning to test cache-eviction behavior (e.g. SDWebImage).", onPress: null };
+      obj32[0] = tmp14(tmp5(14519).WrenchIcon, {});
+      obj32[3] = function onPress() {
         return showDevWidget(1208).triggerMemoryWarning();
       };
-      obj32[2] = tmp14(tmp5(5220).TableRow, obj33);
-      items9[1] = tmp14(tmp5(5554).TableRowGroup, obj32);
-      obj30[0] = items9;
-      isIOSResult = tmp12(closure_23, obj30);
+      obj31[2] = tmp14(tmp5(5220).TableRow, obj32);
+      items9[1] = tmp14(tmp5(5554).TableRowGroup, obj31);
+      obj29[0] = items9;
+      isIOSResult = tmp12(closure_23, obj29);
     }
     items5[9] = isIOSResult;
     obj[2] = items5;

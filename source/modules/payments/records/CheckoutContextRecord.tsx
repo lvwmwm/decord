@@ -1,9 +1,9 @@
-// Module ID: 6220
-// Function ID: 6221
+// Module ID: 6217
+// Function ID: 6218
 // Name: createFromServer
 // Dependencies: [32, 1883, 5671, 5669, 2]
 
-// Module 6220 (createFromServer)
+// Module 6217 (createFromServer)
 import _slicedToArray from "_slicedToArray";
 import "toJS";
 

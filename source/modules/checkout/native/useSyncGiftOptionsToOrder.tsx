@@ -1,10 +1,10 @@
-// Module ID: 9769
-// Function ID: 9770
+// Module ID: 9766
+// Function ID: 9767
 // Name: useSyncGiftOptionsToOrder
-// Dependencies: [32, 19, 3, 6223, 3850, 2]
+// Dependencies: [32, 19, 3, 6220, 3850, 2]
 // Exports: default
 
-// Module 9769 (useSyncGiftOptionsToOrder)
+// Module 9766 (useSyncGiftOptionsToOrder)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

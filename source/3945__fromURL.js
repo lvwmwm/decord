@@ -53,7 +53,7 @@ function _fromURL() {
               }
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (arg0 === 1) {
             c6 = 3;
@@ -137,7 +137,7 @@ _fromFileURL = function _fromFileURL(arg0) {
               }
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (arg0 === 1) {
             c6 = 3;
@@ -220,7 +220,7 @@ _fromResource = function _fromResource() {
               }
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (arg0 === 1) {
             c6 = 3;
@@ -303,7 +303,7 @@ _fromBytes = function _fromBytes() {
               }
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (arg0 === 1) {
             c6 = 3;
@@ -391,7 +391,7 @@ function _fromSource() {
               message = undefined;
               message = 1;
               c8 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -404,7 +404,7 @@ function _fromSource() {
               return obj1;
             } else {
               let tmp71 = null;
-              if (typeof closure_0 !== "os") {
+              if (typeof closure_0 !== "reType") {
                 tmp71 = closure_0;
               }
               c3 = tmp71;

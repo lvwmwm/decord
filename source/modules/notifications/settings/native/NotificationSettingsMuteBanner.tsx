@@ -1,10 +1,10 @@
-// Module ID: 10314
-// Function ID: 10315
+// Module ID: 10310
+// Function ID: 10311
 // Name: NotificationSettingsMuteBanner
 // Dependencies: [19, 17, 21, 4189, 712, 4185, 4600, 1236, 2]
 // Exports: NotificationSettingsMuteBanner, getMuteBannerSubtitleFromConfig
 
-// Module 10314 (NotificationSettingsMuteBanner)
+// Module 10310 (NotificationSettingsMuteBanner)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

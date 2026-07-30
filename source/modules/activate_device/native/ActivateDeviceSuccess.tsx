@@ -1,10 +1,10 @@
-// Module ID: 13023
-// Function ID: 13024
+// Module ID: 13018
+// Function ID: 13019
 // Name: ActivateDeviceSuccess
-// Dependencies: [19, 17, 21, 4189, 1236, 8950, 5141, 1416, 13022, 4185, 4600, 2]
+// Dependencies: [19, 17, 21, 4189, 1236, 8946, 5141, 1416, 13017, 4185, 4600, 2]
 // Exports: ActivateDeviceSuccess
 
-// Module 13023 (ActivateDeviceSuccess)
+// Module 13018 (ActivateDeviceSuccess)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -43,16 +43,16 @@ export const ActivateDeviceSuccess = function ActivateDeviceSuccess(onComplete) 
     const tmp13 = importDefault(5141);
   }
   const items = [tmp9, , ];
-  obj = { style: importDefault(13022).innerContent, children: null };
+  obj = { style: importDefault(13017).innerContent, children: null };
   obj = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
-  obj[2] = importDefault(13022).centerText;
+  obj[2] = importDefault(13017).centerText;
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl3.string(require(1236) /* getSystemLocale */.t.qDtJmD);
   const items1 = [callback(require(4185) /* Text */.Text, obj), ];
   let tmp18Result = null;
   if (null != stringResult) {
     obj1 = { variant: "text-md/medium", color: "text-default", style: null, children: null };
-    obj1[2] = importDefault(13022).centerText;
+    obj1[2] = importDefault(13017).centerText;
     obj1[3] = stringResult;
     tmp18Result = tmp18(tmp19(4185).Text, obj1);
   }

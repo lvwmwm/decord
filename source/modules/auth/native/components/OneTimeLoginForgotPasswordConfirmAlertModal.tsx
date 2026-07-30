@@ -1,10 +1,10 @@
-// Module ID: 9195
-// Function ID: 9196
+// Module ID: 9191
+// Function ID: 9192
 // Name: OneTimeLoginForgotPasswordConfirmAlertModal
 // Dependencies: [19, 21, 4533, 1236, 4533, 2]
 // Exports: default
 
-// Module 9195 (OneTimeLoginForgotPasswordConfirmAlertModal)
+// Module 9191 (OneTimeLoginForgotPasswordConfirmAlertModal)
 import "noop";
 import { jsx } from "jsxProd";
 

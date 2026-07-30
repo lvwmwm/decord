@@ -1,9 +1,9 @@
-// Module ID: 14117
-// Function ID: 14118
+// Module ID: 14113
+// Function ID: 14114
 // Name: ESTIMATED_CARD_HEIGHT
-// Dependencies: [5, 32, 19, 17, 1874, 5985, 5033, 505, 21, 712, 4189, 4004, 4033, 5036, 5991, 10966, 10492, 1474, 9479, 14118, 6676, 5867, 5872, 6012, 589, 9484, 6008, 5983, 9489, 4125, 8045, 3893, 10496, 8445, 8446, 8450, 6013, 10498, 4157, 14144, 1959, 10967, 5808, 1236, 10960, 10501, 14148, 9469, 9486, 9487, 4606, 9911, 8486, 4053, 500, 8705, 4185, 14149, 5222, 14187, 5141, 4611, 691, 14175, 4598, 8466, 14155, 10963, 14188, 4600, 14191, 6682, 9972, 14176, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 5983, 5033, 505, 21, 712, 4189, 4004, 4033, 5036, 5989, 10962, 10488, 1474, 9475, 14114, 6673, 5865, 5870, 6010, 589, 9480, 6006, 5981, 9485, 4125, 8042, 3893, 10492, 8442, 8443, 8447, 6011, 10494, 4157, 14140, 1959, 10963, 5808, 1236, 10956, 10497, 14144, 9465, 9482, 9483, 4606, 9908, 8483, 4053, 500, 8701, 4185, 14145, 5222, 14183, 5141, 4611, 691, 14171, 4598, 8463, 14151, 10959, 14184, 4600, 14187, 6679, 9968, 14172, 2]
 
-// Module 14117 (ESTIMATED_CARD_HEIGHT)
+// Module 14113 (ESTIMATED_CARD_HEIGHT)
 import initializeState from "initializeState";
 import useAdContentImpressionTrackerProps from "useAdContentImpressionTrackerProps";
 import importAllResult from "useIsMobileQuestDockRenderedBase";
@@ -498,12 +498,12 @@ const memoResult = importAllResult.memo((questContent) => {
               } else {
                 let closure_0 = tmp2;
                 outer1_5.log("Enrolling in quest");
-                outer1_0(9469);
+                outer1_0(9465);
                 let obj1 = { questContent: null, questContentCTA: null, sourceQuestContent: null };
                 obj1[0] = dependencyMap;
                 if (!outer1_20) {
                   if (!outer1_14) {
-                    let START_QUEST = tmp31(6012).QuestContentCTA.ACCEPT_QUEST;
+                    let START_QUEST = tmp31(6010).QuestContentCTA.ACCEPT_QUEST;
                   }
                   obj1[1] = START_QUEST;
                   obj1[2] = outer1_4;
@@ -511,7 +511,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   v0 = 1;
                   dependencyMap = 1;
                 }
-                START_QUEST = tmp31(6012).QuestContentCTA.START_QUEST;
+                START_QUEST = tmp31(6010).QuestContentCTA.START_QUEST;
               }
             } else if (arg0 === 1) {
               dependencyMap = 3;
@@ -527,7 +527,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   obj = { questId: null, sourceQuestContent: null };
                   obj[0] = v0.id;
                   obj[1] = useAdContentImpressionTrackerProps;
-                  v0(14148)(obj);
+                  v0(14144)(obj);
                   dependencyMap = 3;
                 }
                 callback2();

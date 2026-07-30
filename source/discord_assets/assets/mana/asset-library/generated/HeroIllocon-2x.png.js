@@ -1,9 +1,9 @@
-// Module ID: 7241
-// Function ID: 7242
+// Module ID: 7238
+// Function ID: 7239
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7241 (metadata)
+// Module 7238 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HeroIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/5f0a95a9a25f547d0891f4c1eb6f6bdc69a2e23e7965829cf50268063296422b.png";

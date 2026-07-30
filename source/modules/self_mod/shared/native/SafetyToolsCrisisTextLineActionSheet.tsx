@@ -1,10 +1,10 @@
-// Module ID: 10165
-// Function ID: 10166
+// Module ID: 10161
+// Function ID: 10162
 // Name: SafetyToolsCrisisTextLineActionSheet
-// Dependencies: [19, 17, 10159, 21, 4189, 712, 10166, 1236, 4185, 4600, 3886, 10156, 2]
+// Dependencies: [19, 17, 10155, 21, 4189, 712, 10162, 1236, 4185, 4600, 3886, 10152, 2]
 // Exports: default
 
-// Module 10165 (SafetyToolsCrisisTextLineActionSheet)
+// Module 10161 (SafetyToolsCrisisTextLineActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE";
@@ -63,5 +63,5 @@ export default function SafetyToolsCrisisTextLineActionSheet(trackAnalyticsEvent
   items[2] = callback(trackAnalyticsEvent(4600).Button, obj2);
   obj[1] = items;
   obj[7] = callback2(View, obj);
-  return callback(importDefault(10166), obj);
+  return callback(importDefault(10162), obj);
 };

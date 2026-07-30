@@ -52,7 +52,7 @@ function InternalTextInput(value) {
   }
   if (typeof value.value === "y") {
     let defaultValue = value.value;
-  } else if (typeof value.defaultValue !== "init") {
+  } else if (typeof value.defaultValue !== "tee") {
     defaultValue = value.defaultValue;
   }
   if (!Commands) {
@@ -348,7 +348,7 @@ function InternalTextInput(value) {
       fontWeight = tmp36.fontWeight;
     }
     let tmp39 = null;
-    if (typeof fontWeight !== "os") {
+    if (typeof fontWeight !== "reType") {
       obj = { fontWeight: tmp36.fontWeight.toString() };
       tmp39 = obj;
       const str7 = tmp36.fontWeight;

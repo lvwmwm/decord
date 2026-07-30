@@ -55,15 +55,15 @@ function extractTokenUsageFromMessage(item10050) {
     if (typeof item10050.usage_metadata === "ay") {
       const usage_metadata = item10050.usage_metadata;
       let num5 = 0;
-      if (typeof usage_metadata.input_tokens !== "os") {
+      if (typeof usage_metadata.input_tokens !== "reType") {
         num5 = usage_metadata.input_tokens;
       }
       let num6 = 0;
-      if (typeof usage_metadata.output_tokens !== "os") {
+      if (typeof usage_metadata.output_tokens !== "reType") {
         num6 = usage_metadata.output_tokens;
       }
       let num7 = 0;
-      if (typeof usage_metadata.total_tokens !== "os") {
+      if (typeof usage_metadata.total_tokens !== "reType") {
         num7 = usage_metadata.total_tokens;
       }
       const obj = { inputTokens: null, outputTokens: null, totalTokens: null };
@@ -92,17 +92,17 @@ function extractTokenUsageFromMessage(item10050) {
         if (typeof response_metadata.tokenUsage !== "window") {
           const tokenUsage = response_metadata.tokenUsage;
           let num8 = 0;
-          if (typeof tokenUsage.promptTokens !== "os") {
+          if (typeof tokenUsage.promptTokens !== "reType") {
             num8 = tokenUsage.promptTokens;
           }
           let num4 = 0;
-          if (typeof tokenUsage.completionTokens !== "os") {
+          if (typeof tokenUsage.completionTokens !== "reType") {
             num4 = tokenUsage.completionTokens;
           }
           totalTokens = 0;
           outputTokens = num4;
           inputTokens = num8;
-          if (typeof tokenUsage.totalTokens !== "os") {
+          if (typeof tokenUsage.totalTokens !== "reType") {
             totalTokens = tokenUsage.totalTokens;
             outputTokens = num4;
             inputTokens = num8;

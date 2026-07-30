@@ -1,9 +1,9 @@
-// Module ID: 6298
-// Function ID: 6299
+// Module ID: 6295
+// Function ID: 6296
 // Name: handleConnectionStateUpdated
-// Dependencies: [109, 5, 19, 17, 6299, 6225, 1218, 3841, 5672, 6252, 5673, 676, 4172, 1876, 21, 3, 709, 6300, 1217, 5675, 3771, 6223, 3850, 4509, 698, 4529, 1236, 6302, 1959, 4395, 6326, 2]
+// Dependencies: [109, 5, 19, 17, 6296, 6222, 1218, 3841, 5672, 6249, 5673, 676, 4172, 1876, 21, 3, 709, 6297, 1217, 5675, 3771, 6220, 3850, 4509, 698, 4529, 1236, 6299, 1959, 4395, 6323, 2]
 
-// Module 6298 (handleConnectionStateUpdated)
+// Module 6295 (handleConnectionStateUpdated)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import closure_5 from "usePremiumPlanPurchasedStore";
 import "SubscriptionPlans";
@@ -35,9 +35,9 @@ function handleConnectionStateUpdated(connectionState) {
   connectionState = connectionState.connectionState;
   importDefault(709).dispatch({ type: "GPLAY_UPDATE_CONNECTION_STATE", connectionState });
   if (connectionState === constants.CONNECTED) {
-    const userCountry = require(6300) /* getPlanIdForProduct */.loadUserCountry();
+    const userCountry = require(6297) /* getPlanIdForProduct */.loadUserCountry();
     userCountry.finally(() => callback(table[17]).loadSkus());
-    const obj2 = require(6300) /* getPlanIdForProduct */;
+    const obj2 = require(6297) /* getPlanIdForProduct */;
   }
 }
 function handlePurchaseStateUpdated(arg0) {
@@ -540,7 +540,7 @@ function _handleAppStateUpdated() {
               state = state.state;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: null };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp8) {

@@ -1,10 +1,10 @@
-// Module ID: 15606
-// Function ID: 15607
+// Module ID: 15600
+// Function ID: 15601
 // Name: FriendRequestsSettingsScreen
-// Dependencies: [19, 17, 21, 4189, 712, 4719, 15607, 2]
+// Dependencies: [19, 17, 21, 4189, 712, 4719, 15601, 2]
 // Exports: default
 
-// Module 15606 (FriendRequestsSettingsScreen)
+// Module 15600 (FriendRequestsSettingsScreen)
 import "noop";
 import { ScrollView } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/na
 export default function FriendRequestsSettingsScreen() {
   let obj = { children: null };
   const items = [callback(importDefault(4719), { absolute: true }), ];
-  obj = { style: createCacheKey().container, children: callback(importDefault(15607), {}) };
+  obj = { style: createCacheKey().container, children: callback(importDefault(15601), {}) };
   items[1] = callback(ScrollView, obj);
   obj[0] = items;
   return callback2(closure_4, obj);

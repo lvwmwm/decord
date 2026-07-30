@@ -1,9 +1,9 @@
-// Module ID: 12993
-// Function ID: 12994
+// Module ID: 12988
+// Function ID: 12989
 // Name: ErrorMessage
-// Dependencies: [32, 19, 17, 676, 21, 4189, 712, 1236, 4185, 6733, 12994, 8922, 8918, 3889, 698, 3902, 7644, 4600, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4189, 712, 1236, 4185, 6730, 12989, 8918, 8914, 3889, 698, 3902, 7641, 4600, 2]
 
-// Module 12993 (ErrorMessage)
+// Module 12988 (ErrorMessage)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "Button";
@@ -102,7 +102,7 @@ let closure_16 = importAllResult.forwardRef((headerTextStyle, ref) => {
     str2 = "error";
   }
   obj[18] = str2;
-  items1[1] = callback(require(6733) /* TextField */.TextField, obj);
+  items1[1] = callback(require(6730) /* TextField */.TextField, obj);
   let tmp9Result = null;
   if (null != message) {
     obj = { errorMessage: null };
@@ -152,7 +152,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
         substr = trimmed.substring(1);
         tmp2 = substr;
       }
-      obj = sourcePage(8922);
+      obj = sourcePage(8918);
       const validateDiscordTagResult = obj.validateDiscordTag(tmp2);
       if (null != validateDiscordTagResult) {
         obj = { status: null, field: null, message: null };
@@ -167,14 +167,14 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
         const obj2 = { discordTag: null, context: null, errorUxConfig: null, note: null };
         obj2[0] = tmp2;
         obj2[1] = { location: "Search - Add Friend Search" };
-        obj2[2] = sourcePage(8918).RelationshipErrorUXConfig.SHOW_ONLY_IF_ACTION_NEEDED;
+        obj2[2] = sourcePage(8914).RelationshipErrorUXConfig.SHOW_ONLY_IF_ACTION_NEEDED;
         let tmp9;
         if (trimmed1.length > 0) {
           tmp9 = trimmed1;
         }
         obj2[3] = tmp9;
-        const obj5 = ref(8918);
-        ref(8918).sendRequest(obj2).then(() => {
+        const obj5 = ref(8914);
+        ref(8914).sendRequest(obj2).then(() => {
           let obj = { validatedText: "", hint: null };
           const intl = sourcePage(1236).intl;
           obj[1] = intl.string(sourcePage(1236).t["6p7Mhh"]);
@@ -217,8 +217,8 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
             if (num == null) {
               num = -1;
             }
-            obj[2] = sourcePage(8922).humanizeAbortCode(num, substr);
-            obj = sourcePage(8922);
+            obj[2] = sourcePage(8918).humanizeAbortCode(num, substr);
+            obj = sourcePage(8918);
             let num2;
             if (body != null) {
               const body3 = body.body;
@@ -230,12 +230,12 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
               num2 = -1;
             }
             obj[3] = obj.humanizeAbortCodeForA11y(num2, substr);
-            const obj4 = sourcePage(8922);
+            const obj4 = sourcePage(8918);
             const tmp3 = substr;
           }
           outer1_6(obj);
         });
-        const sendRequestResult = ref(8918).sendRequest(obj2);
+        const sendRequestResult = ref(8914).sendRequest(obj2);
       }
     }
   }
@@ -258,7 +258,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   const tmp7 = first(importAllResult.useState(""), 2);
   first2 = tmp7[0];
   closure_8 = tmp7[1];
-  let obj1 = importDefault(12994);
+  let obj1 = importDefault(12989);
   const enabled = obj1.useConfig({ location: "AddFriendbyId" }).enabled;
   const items = [first1];
   const items1 = [first1];
@@ -383,7 +383,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
       }
     }
     obj6[6] = str2;
-    items8[1] = tmp17(sourcePage(7644).TextArea, obj6);
+    items8[1] = tmp17(sourcePage(7641).TextArea, obj6);
     if (first1.status !== tmp4.ERROR) {
       const obj7 = { style: null, variant: "text-xs/medium", color: "text-muted", children: null };
       obj7[0] = tmp.messageFooterText;

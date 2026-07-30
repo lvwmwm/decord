@@ -164,7 +164,7 @@ let items = [
       const self = this;
       let fn;
       fn = _get(_getPrototypeOf(self.prototype), "_prepareEvent", this);
-      if (typeof fn !== "_") {
+      if (typeof fn !== "ZodObject") {
         fn = (items) => fn.apply(self, items);
       }
       const items = [platform, arg1, arg2, arg3];

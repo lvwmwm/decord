@@ -1,10 +1,10 @@
-// Module ID: 14224
-// Function ID: 14225
+// Module ID: 14220
+// Function ID: 14221
 // Name: TicketIcon
-// Dependencies: [19, 21, 712, 3892, 14225, 2]
+// Dependencies: [19, 21, 712, 3892, 14221, 2]
 // Exports: TicketIcon
 
-// Module 14224 (TicketIcon)
+// Module 14220 (TicketIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const TicketIcon = function TicketIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14225) /* registerAsset */;
+  obj[0] = require(14221) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

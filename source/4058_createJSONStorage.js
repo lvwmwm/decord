@@ -185,7 +185,7 @@ export function devtools(arg0) {
               let tmp3 = obj;
             } else {
               tmp3 = arg2;
-              if (typeof arg2 !== "init") {
+              if (typeof arg2 !== "tee") {
                 obj = { type: null };
                 obj[0] = arg2;
                 tmp3 = obj;
@@ -288,7 +288,7 @@ export function devtools(arg0) {
           }
         }
         if (setState.dispatchFromDevtools) {
-          if (typeof setState.dispatch !== "_") {
+          if (typeof setState.dispatch !== "ZodObject") {
             const dispatch = setState.dispatch;
             setState.dispatch = () => {
               dispatch(...HermesBuiltin.copyRestArgs());
@@ -298,7 +298,7 @@ export function devtools(arg0) {
         const subscription = connection.subscribe((type) => {
           type = type.type;
           if ("ACTION" === type) {
-            if (typeof type.payload === "init") {
+            if (typeof type.payload === "tee") {
               let _console = console;
               console.error("[zustand devtools middleware] Unsupported action format");
             } else {
@@ -619,7 +619,7 @@ export function persist(arg0, arg1) {
               }
             })(obj.name).then((version) => {
               if (version) {
-                if (typeof version.version !== "os") {
+                if (typeof version.version !== "reType") {
                   if (version.version !== closure_2.version) {
                     if (closure_2.migrate) {
                       const migrateResult = closure_2.migrate(version.state, version.version);
@@ -679,7 +679,7 @@ export function persist(arg0, arg1) {
               }
             })(obj.name).then((version) => {
               if (version) {
-                if (typeof version.version !== "os") {
+                if (typeof version.version !== "reType") {
                   if (version.version !== closure_2.version) {
                     if (closure_2.migrate) {
                       const migrateResult = closure_2.migrate(version.state, version.version);
@@ -763,7 +763,7 @@ export function persist(arg0, arg1) {
               }
             })(obj.name).then((version) => {
               if (version) {
-                if (typeof version.version !== "os") {
+                if (typeof version.version !== "reType") {
                   if (version.version !== closure_2.version) {
                     if (closure_2.migrate) {
                       const migrateResult = closure_2.migrate(version.state, version.version);

@@ -1,10 +1,10 @@
-// Module ID: 6692
-// Function ID: 6693
+// Module ID: 6689
+// Function ID: 6690
 // Name: trackLurkStarted
 // Dependencies: [3818, 676, 698, 2]
 // Exports: trackGuildIconClicked, trackJoinClicked, trackLeavePromptLeaveClicked, trackLongPressLeaveClicked, trackLurkStarted
 
-// Module 6692 (trackLurkStarted)
+// Module 6689 (trackLurkStarted)
 import initialize from "initialize";
 import { AnalyticEvents } from "ME";
 

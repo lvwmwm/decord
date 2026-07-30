@@ -1,10 +1,10 @@
-// Module ID: 16019
-// Function ID: 16020
+// Module ID: 16013
+// Function ID: 16014
 // Name: SoundboardButton
-// Dependencies: [19, 21, 4189, 712, 10037, 16005, 16020, 16006, 1236, 5568, 6632, 2]
+// Dependencies: [19, 21, 4189, 712, 10033, 15999, 16014, 16000, 1236, 5568, 6629, 2]
 // Exports: default
 
-// Module 16019 (SoundboardButton)
+// Module 16013 (SoundboardButton)
 import noop from "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -28,10 +28,10 @@ export default function SoundboardButton(arg0) {
   let wrapperSpecs;
   ({ props, wrapperSpecs } = arg0);
   const tmp3 = createCacheKey();
-  let obj = require(16005) /* useVoicePanelButtonStyles */;
+  let obj = require(15999) /* useVoicePanelButtonStyles */;
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
-  const tmp6 = importDefault(16020);
-  ({ disabled, handlePress, visible } = importDefault(16020)(React.useContext(importDefault(10037)).channelId, require(16020) /* useSoundboardConfig */.SoundboardButtonLocation.VOICE_PANEL_CONTROLS));
+  const tmp6 = importDefault(16014);
+  ({ disabled, handlePress, visible } = importDefault(16014)(React.useContext(importDefault(10033)).channelId, require(16014) /* useSoundboardConfig */.SoundboardButtonLocation.VOICE_PANEL_CONTROLS));
   if (disabled) {
     let color = tmp(712).colors.ICON_MUTED;
   } else {
@@ -43,7 +43,7 @@ export default function SoundboardButton(arg0) {
     obj[0] = handlePress;
     obj[1] = disabled;
     obj[2] = props;
-    let tmpResult = tmp(16006);
+    let tmpResult = tmp(16000);
     const intl = tmp4(1236).intl;
     obj[3] = intl.string(tmp4(1236).t["6EJvHt"]);
     obj = { style: null };
@@ -58,7 +58,7 @@ export default function SoundboardButton(arg0) {
     tmpResult = tmp(5568);
     const obj3 = { color: null };
     obj3[0] = color;
-    obj2[1] = callback(tmp4(6632).SoundboardIcon, obj3);
+    obj2[1] = callback(tmp4(6629).SoundboardIcon, obj3);
     items1[1] = callback(tmpResult, obj2);
     obj[4] = items1;
     tmp8 = callback2(tmpResult, obj);
