@@ -1,10 +1,10 @@
-// Module ID: 10734
-// Function ID: 10735
+// Module ID: 10752
+// Function ID: 10753
 // Name: JoinStageView
-// Dependencies: [19, 21, 5020, 5014, 10679, 1236, 6714, 10697, 2]
+// Dependencies: [19, 21, 5024, 5018, 10697, 1236, 6720, 10715, 2]
 // Exports: default
 
-// Module 10734 (JoinStageView)
+// Module 10752 (JoinStageView)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -13,14 +13,14 @@ const result = require("useStageParticipants").fileFinishedImporting("modules/st
 
 export default function JoinStageView(channel) {
   channel = channel.channel;
-  let obj = require(5020) /* useStageParticipants */;
-  const stageParticipants = obj.useStageParticipants(channel.id, require(5014) /* sortKey */.StageChannelParticipantNamedIndex.SPEAKER);
+  let obj = require(5024) /* useStageParticipants */;
+  const stageParticipants = obj.useStageParticipants(channel.id, require(5018) /* sortKey */.StageChannelParticipantNamedIndex.SPEAKER);
   const found = stageParticipants.filter((type) => type.type === callback(table[3]).StageChannelParticipantTypes.VOICE);
   obj = { title: null, body: null, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.WZOeQv);
-  const tmp2 = importDefault(10679);
-  obj[1] = require(6714) /* fillChunk */.getParticipantNamesText(channel, found);
-  obj[2] = jsx(require(10697) /* AgeVerificationSpeakerActionSheet */.JoinStagePrompt, { channel });
+  const tmp2 = importDefault(10697);
+  obj[1] = require(6720) /* fillChunk */.getParticipantNamesText(channel, found);
+  obj[2] = jsx(require(10715) /* AgeVerificationSpeakerActionSheet */.JoinStagePrompt, { channel });
   return <tmp2 title={null} body={null}>{null}</tmp2>;
 };

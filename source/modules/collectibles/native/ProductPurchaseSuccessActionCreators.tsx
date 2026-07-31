@@ -1,9 +1,9 @@
-// Module ID: 9787
-// Function ID: 9788
+// Module ID: 9804
+// Function ID: 9805
 // Name: MODAL_KEY
-// Dependencies: [5, 4395, 9788, 1959, 2]
+// Dependencies: [5, 4399, 9805, 1959, 2]
 
-// Module 9787 (MODAL_KEY)
+// Module 9804 (MODAL_KEY)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -12,7 +12,7 @@ const result = require("CancelButton").fileFinishedImporting("modules/collectibl
 
 export default {
   open(closure_0) {
-    importDefault(4395).pushLazy(callback(function*() {
+    importDefault(4399).pushLazy(callback(function*() {
       if (v0 === 2) {
         v0 = 3;
         HermesBuiltin.throwTypeError();
@@ -67,7 +67,7 @@ export default {
     }), closure_0, ShopProductPurchaseSuccessModal);
   },
   close() {
-    importDefault(4395).popWithKey(ShopProductPurchaseSuccessModal);
+    importDefault(4399).popWithKey(ShopProductPurchaseSuccessModal);
   }
 };
 export const MODAL_KEY = "ShopProductPurchaseSuccessModal";

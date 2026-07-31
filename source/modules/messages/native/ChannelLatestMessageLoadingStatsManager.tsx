@@ -1,9 +1,9 @@
-// Module ID: 10898
-// Function ID: 10899
+// Module ID: 10916
+// Function ID: 10917
 // Name: start
-// Dependencies: [676, 5724, 2]
+// Dependencies: [676, 5729, 2]
 
-// Module 10898 (start)
+// Module 10916 (start)
 import { AnalyticEvents } from "ME";
 import set from "set";
 
@@ -34,7 +34,7 @@ prototype["finish"] = function finish(channelId) {
         const seenChannelIds = tmp10.seenChannelIds;
         seenChannelIds.add(channelId.channelId);
       }
-      let obj = require(5724) /* isClickstreamEnabled */;
+      let obj = require(5729) /* isClickstreamEnabled */;
       obj = { load_duration_ms: null, were_messages_cached: null, is_first_load: null };
       obj[0] = diff;
       obj[1] = channelId.areMessagesCached;

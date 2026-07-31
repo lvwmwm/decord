@@ -1,10 +1,10 @@
-// Module ID: 4998
-// Function ID: 4999
+// Module ID: 5002
+// Function ID: 5003
 // Name: ChannelTypes
 // Dependencies: [1935, 1862, 676, 506, 2]
 // Exports: default
 
-// Module 4998 (ChannelTypes)
+// Module 5002 (ChannelTypes)
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 4191
-// Function ID: 4192
+// Module ID: 4195
+// Function ID: 4196
 // Name: CONFIG_NEVER_ANIMATE
-// Dependencies: [4050, 2]
+// Dependencies: [4054, 2]
 
-// Module 4191 (CONFIG_NEVER_ANIMATE)
-let obj = { duration: 1, reduceMotion: require("module_4050").ReduceMotion.Always };
+// Module 4195 (CONFIG_NEVER_ANIMATE)
+let obj = { duration: 1, reduceMotion: require("module_4054").ReduceMotion.Always };
 obj = {};
 const merged = Object.assign(obj);
 obj.reduceMotion = undefined;

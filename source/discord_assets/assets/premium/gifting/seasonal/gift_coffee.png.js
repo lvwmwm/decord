@@ -1,9 +1,9 @@
-// Module ID: 11895
-// Function ID: 11896
+// Module ID: 11913
+// Function ID: 11914
 // Name: metadata
 // Dependencies: [2]
 
-// Module 11895 (metadata)
+// Module 11913 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/premium/gifting/seasonal/gift_coffee.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/6c09a61cf943ee0e1360d7504c153ad9c7e68202b3b8af2425a7a1caf54106f0.png";

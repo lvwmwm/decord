@@ -1,10 +1,10 @@
-// Module ID: 8276
-// Function ID: 8277
+// Module ID: 8283
+// Function ID: 8284
 // Name: _isDefaultChannelThresholdMetAfterDelete
-// Dependencies: [5, 1862, 5115, 5116, 676, 5114, 5122, 506, 4528, 1236, 2]
+// Dependencies: [5, 1862, 5119, 5120, 676, 5118, 5126, 506, 4532, 1236, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
-// Module 8276 (_isDefaultChannelThresholdMetAfterDelete)
+// Module 8283 (_isDefaultChannelThresholdMetAfterDelete)
 import fetchOnboardingPrompts from "fetchOnboardingPrompts";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleUpdate from "handleUpdate";
@@ -374,7 +374,7 @@ function _checkChattableChannelThresholdMetAfterChannelPermissionDeny() {
             obj4[0] = tmp54;
             return obj4;
           } else {
-            obj = callback(4528);
+            obj = callback(4532);
             obj5 = { title: null, body: null };
             const intl = guildId(1236).intl;
             obj5[0] = intl.string(guildId(1236).t.ut7sq0);

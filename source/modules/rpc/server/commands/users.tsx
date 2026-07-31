@@ -1,9 +1,9 @@
-// Module ID: 13556
-// Function ID: 13557
+// Module ID: 13580
+// Function ID: 13581
 // Name: RPC_EMBEDDED_APP_SCOPE
-// Dependencies: [1874, 4092, 676, 13530, 10628, 2]
+// Dependencies: [1874, 4096, 676, 13554, 10646, 2]
 
-// Module 13556 (RPC_EMBEDDED_APP_SCOPE)
+// Module 13580 (RPC_EMBEDDED_APP_SCOPE)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import { RPCCommands } from "ME";
@@ -20,7 +20,7 @@ obj = {
     user = user.getUser(args.args.id);
     let tmp2 = null;
     if (null != user) {
-      tmp2 = importDefault(10628)(user);
+      tmp2 = importDefault(10646)(user);
     }
     return tmp2;
   }

@@ -1,10 +1,10 @@
-// Module ID: 10821
-// Function ID: 10822
+// Module ID: 10839
+// Function ID: 10840
 // Name: useMyCurrentStageChannelRole
-// Dependencies: [1218, 1931, 5011, 589, 2]
+// Dependencies: [1218, 1931, 5015, 589, 2]
 // Exports: default
 
-// Module 10821 (useMyCurrentStageChannelRole)
+// Module 10839 (useMyCurrentStageChannelRole)
 import fetchFingerprint from "fetchFingerprint";
 import handleConnectionOpen from "handleConnectionOpen";
 import buildStageChannelUserRoles from "buildStageChannelUserRoles";

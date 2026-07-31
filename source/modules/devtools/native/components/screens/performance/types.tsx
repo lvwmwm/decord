@@ -1,7 +1,7 @@
-// Module ID: 14822
-// Function ID: 14823
+// Module ID: 14845
+// Function ID: 14846
 // Name: set
 // Dependencies: [2]
 
-// Module 14822 (set)
+// Module 14845 (set)
 const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/performance/types.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 10813
-// Function ID: 10814
+// Module ID: 10831
+// Function ID: 10832
 // Name: SingleScreenshare
-// Dependencies: [19, 10231, 21, 4189, 712, 4616, 10814, 4383, 2]
+// Dependencies: [19, 10249, 21, 4193, 712, 4620, 10832, 4387, 2]
 // Exports: default
 
-// Module 10813 (SingleScreenshare)
+// Module 10831 (SingleScreenshare)
 import "noop";
 import VoiceChatDrawerState from "VoiceChatDrawerState";
 import { jsx } from "jsxProd";
@@ -21,7 +21,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/video_calls/nat
 
 export default function SingleScreenshare(channel) {
   channel = channel.channel;
-  channel(4616)(() => {
+  channel(4620)(() => {
     callback();
   });
   const obj = {
@@ -42,5 +42,5 @@ export default function SingleScreenshare(channel) {
     stageStreamContainer = tmp.stageStreamContainer;
   }
   obj[3] = stageStreamContainer;
-  return tmp3(channel(10814), obj);
+  return tmp3(channel(10832), obj);
 };

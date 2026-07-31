@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset";
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "6957d8bc6c84ef023b3dae2c0c79feaf", name: "bg.messages.6957d8bc6c84ef023b3dae2c0c79feaf.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/checkpoint", scales: [1], hash: "b12f864e6ef57f14618e22f2b6960161", name: "Checkpoint.compiled.messages", type: "jsona" });

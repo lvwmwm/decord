@@ -1,10 +1,10 @@
-// Module ID: 7638
-// Function ID: 7639
+// Module ID: 7646
+// Function ID: 7647
 // Name: Divider
-// Dependencies: [19, 17, 676, 21, 4189, 712, 1348, 3901, 5537, 4033, 5219, 2]
+// Dependencies: [19, 17, 676, 21, 4193, 712, 1348, 3905, 5541, 4037, 5223, 2]
 // Exports: default
 
-// Module 7638 (Divider)
+// Module 7646 (Divider)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -42,19 +42,19 @@ export default function Divider(outer) {
     flag2 = false;
   }
   const tmp2 = callback(importDefault(1348)("FormDivider"));
-  let obj = require(3901) /* ManaContext */;
+  let obj = require(3905) /* ManaContext */;
   const themeContext = obj.useThemeContext();
   ({ theme, primaryColor } = themeContext);
-  const profileThemeValues = require(5537) /* useProfileThemeValues */.useProfileThemeValues(theme);
+  const profileThemeValues = require(5541) /* useProfileThemeValues */.useProfileThemeValues(theme);
   let tmp7 = null;
   if (tmp6) {
     obj = { backgroundColor: null };
-    obj[0] = tmp3(4033).hexOpacityToRgba(createCacheKey[theme], profileThemeValues.dividerOpacity);
+    obj[0] = tmp3(4037).hexOpacityToRgba(createCacheKey[theme], profileThemeValues.dividerOpacity);
     tmp7 = obj;
-    const tmp3Result = tmp3(4033);
+    const tmp3Result = tmp3(4037);
   }
   let tmp10Result = null;
-  if (!React.useContext(require(5219) /* context */.RedesignCompatContext)) {
+  if (!React.useContext(require(5223) /* context */.RedesignCompatContext)) {
     const items = [flag ? tmp2.dividerOuter : tmp2.divider, , , ];
     if (flag2) {
       flag2 = tmp2.dividerHasIcon;

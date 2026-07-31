@@ -1,10 +1,10 @@
-// Module ID: 11768
-// Function ID: 11769
+// Module ID: 11786
+// Function ID: 11787
 // Name: _requestAndSyncContacts
-// Dependencies: [5, 4869, 1874, 11766, 11765, 676, 595, 11767, 5134, 5635, 2]
+// Dependencies: [5, 4873, 1874, 11784, 11783, 676, 595, 11785, 5138, 5639, 2]
 // Exports: removeLastUserContactsUpload
 
-// Module 11768 (_requestAndSyncContacts)
+// Module 11786 (_requestAndSyncContacts)
 import ME from "ME";
 import set from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";

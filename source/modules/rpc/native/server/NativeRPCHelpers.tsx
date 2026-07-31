@@ -1,10 +1,10 @@
-// Module ID: 10626
-// Function ID: 10627
+// Module ID: 10644
+// Function ID: 10645
 // Name: validateSocketClient
-// Dependencies: [5, 4092, 676, 10627, 10622, 2]
+// Dependencies: [5, 4096, 676, 10645, 10640, 2]
 // Exports: getDeprecatedVoiceSettings, getVoiceSettings, validateSocketClient
 
-// Module 10626 (validateSocketClient)
+// Module 10644 (validateSocketClient)
 import { TransportTypes } from "RPC_SCOPE_CONFIG";
 import { RPCCloseCodes } from "ME";
 import importDefaultResult from "set";
@@ -45,24 +45,24 @@ closure_0 = require("set")((arg0, arg1, arg2) => {
           } else {
             let c4 = 0;
             let closure_3 = tmp2;
-            const result = callback(10627).validateOriginAndUpdateSocket(callback, callback2);
+            const result = callback(10645).validateOriginAndUpdateSocket(callback, callback2);
             if (null == dependencyMap) {
               const obj1 = { closeCode: null };
               obj1[0] = outer1_4.INVALID_CLIENTID;
-              const tmp23 = new callback2(10622)(obj1, "No Client ID Specified");
+              const tmp23 = new callback2(10640)(obj1, "No Client ID Specified");
               c6 = 3;
               const obj2 = { value: null, done: true };
               obj2[0] = Promise.reject(tmp23);
               return obj2;
             } else {
-              let obj3 = callback(10627);
+              let obj3 = callback(10645);
               c5 = 1;
               c6 = 1;
               obj3 = { value: null, done: false };
               obj3[0] = obj3.processSocketThrottlers(tmp33, tmp31.transport !== outer1_3.POST_MESSAGE, tmp31.abortController.signal);
               return obj3;
             }
-            const obj10 = callback(10627);
+            const obj10 = callback(10645);
             tmp33 = dependencyMap;
           }
         } else if (arg0 === 1) {
@@ -74,7 +74,7 @@ closure_0 = require("set")((arg0, arg1, arg2) => {
           obj4[0] = arg1;
           return obj4;
         } else {
-          obj = callback(10627);
+          obj = callback(10645);
           c6 = 3;
           const obj5 = { value: null, done: true };
           obj5[0] = obj.validateSocketApplication(callback, dependencyMap, callback2);
@@ -99,5 +99,5 @@ export const validateSocketClient = function() {
   }
   return applyArgumentsResult;
 };
-export const getDeprecatedVoiceSettings = () => callback(10627).getDeprecatedVoiceSettingsWithShortcut(() => []);
-export const getVoiceSettings = (arg0) => callback(10627).getVoiceSettingsWithShortcut(arg0, () => "");
+export const getDeprecatedVoiceSettings = () => callback(10645).getDeprecatedVoiceSettingsWithShortcut(() => []);
+export const getVoiceSettings = (arg0) => callback(10645).getVoiceSettingsWithShortcut(arg0, () => "");

@@ -1,10 +1,10 @@
-// Module ID: 5217
-// Function ID: 5218
+// Module ID: 5221
+// Function ID: 5222
 // Name: LayoutAnimation
-// Dependencies: [17, 4181, 500, 2]
+// Dependencies: [17, 4185, 500, 2]
 // Exports: DeprecatedLayoutAnimation, DeprecatedLayoutAnimationKeyboard
 
-// Module 5217 (LayoutAnimation)
+// Module 5221 (LayoutAnimation)
 import get_ActivityIndicator from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import obj from "module_150";

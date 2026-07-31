@@ -1,10 +1,10 @@
-// Module ID: 15129
-// Function ID: 15130
+// Module ID: 15155
+// Function ID: 15156
 // Name: _saveGuildThemeNuxPreference
-// Dependencies: [5, 1340, 4121, 1355, 2]
+// Dependencies: [5, 1340, 4125, 1355, 2]
 // Exports: getInitialGuildThemeNuxSelection, saveGuildThemeNuxPreference
 
-// Module 15129 (_saveGuildThemeNuxPreference)
+// Module 15155 (_saveGuildThemeNuxPreference)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 
@@ -45,7 +45,7 @@ function _saveGuildThemeNuxPreference() {
             } else {
               let handleConnectionClosedOrResumed = tmp5;
               let asyncGeneratorStep = tmp2;
-              let GuildThemeSourcePreference = callback(4121).GuildThemeSourcePreference;
+              let GuildThemeSourcePreference = callback(4125).GuildThemeSourcePreference;
               if (dependencyMap) {
                 let GUILD = GuildThemeSourcePreference.PERSONAL;
               } else {
@@ -105,10 +105,10 @@ let result = require("GuildThemeSourcePreference").fileFinishedImporting("module
 
 export const getInitialGuildThemeNuxSelection = function getInitialGuildThemeNuxSelection() {
   defaultGuildThemePreference = defaultGuildThemePreference.getDefaultGuildThemePreference();
-  if (defaultGuildThemePreference === require(4121) /* GuildThemeSourcePreference */.GuildThemeSourcePreference.PERSONAL) {
-    let GUILD = tmp2(4121).GuildThemeSourcePreference.PERSONAL;
+  if (defaultGuildThemePreference === require(4125) /* GuildThemeSourcePreference */.GuildThemeSourcePreference.PERSONAL) {
+    let GUILD = tmp2(4125).GuildThemeSourcePreference.PERSONAL;
   } else {
-    GUILD = tmp2(4121).GuildThemeSourcePreference.GUILD;
+    GUILD = tmp2(4125).GuildThemeSourcePreference.GUILD;
   }
   return GUILD;
 };

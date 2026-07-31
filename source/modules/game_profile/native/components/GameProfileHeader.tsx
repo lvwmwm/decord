@@ -1,10 +1,10 @@
-// Module ID: 8513
-// Function ID: 8514
+// Module ID: 8526
+// Function ID: 8527
 // Name: GameProfileHeader
-// Dependencies: [32, 19, 17, 21, 4189, 712, 4050, 8514, 4611, 8515, 4185, 2]
+// Dependencies: [32, 19, 17, 21, 4193, 712, 4054, 8527, 4615, 8528, 4189, 2]
 // Exports: default
 
-// Module 8513 (GameProfileHeader)
+// Module 8526 (GameProfileHeader)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";

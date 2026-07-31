@@ -1,10 +1,10 @@
-// Module ID: 3848
-// Function ID: 3849
+// Module ID: 3852
+// Function ID: 3853
 // Name: isPremiumGiftingSupported
 // Dependencies: [1577, 500, 2]
 // Exports: isCollectibleGiftingSupported, isGooglePlayBillingSupported, isPremiumGiftingSupported, isSocialLayerStorefrontGiftingSupported
 
-// Module 3848 (isPremiumGiftingSupported)
+// Module 3852 (isPremiumGiftingSupported)
 const result = require("set").fileFinishedImporting("modules/device/BillingPlatformUtils.tsx");
 
 export const isPremiumGiftingSupported = function isPremiumGiftingSupported() {

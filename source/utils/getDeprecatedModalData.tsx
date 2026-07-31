@@ -1,10 +1,10 @@
-// Module ID: 4397
-// Function ID: 4398
+// Module ID: 4401
+// Function ID: 4402
 // Name: getDeprecatedModalData
-// Dependencies: [4181, 676, 2]
+// Dependencies: [4185, 676, 2]
 // Exports: default
 
-// Module 4397 (getDeprecatedModalData)
+// Module 4401 (getDeprecatedModalData)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { ModalAnimation } from "ME";
 
@@ -48,8 +48,8 @@ export default function getDeprecatedModalData(modal, key) {
     }
     obj[7] = flag3;
     const closable = key.closable;
-    let closable2 = typeof closable === "sur";
-    if (typeof closable !== "sur") {
+    let closable2 = typeof closable === "onScroll";
+    if (typeof closable !== "onScroll") {
       closable2 = key.closable;
     }
     obj[8] = closable2;

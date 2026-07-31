@@ -27,7 +27,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span, propagateTrac
     }
     if (headers) {
       const _Headers = Headers;
-      let isInstanceOfResult = typeof Headers === "__INTERNAL_SLOT_MAP__";
+      let isInstanceOfResult = typeof Headers === "pack";
       if (typeof Headers !== "Array") {
         tmp2Result = tmp2(827);
         const _Headers3 = Headers;

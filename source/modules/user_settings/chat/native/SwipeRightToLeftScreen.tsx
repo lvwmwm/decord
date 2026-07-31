@@ -1,10 +1,10 @@
-// Module ID: 14430
-// Function ID: 14431
+// Module ID: 14453
+// Function ID: 14454
 // Name: UserSettingsSwipeRightToLeft
-// Dependencies: [19, 7753, 21, 10116, 13673, 2]
+// Dependencies: [19, 7761, 21, 10133, 13697, 2]
 // Exports: default
 
-// Module 14430 (UserSettingsSwipeRightToLeft)
+// Module 14453 (UserSettingsSwipeRightToLeft)
 import noop from "noop";
 import { MobileSetting } from "MobileSetting";
 import { jsx } from "jsxProd";
@@ -18,5 +18,5 @@ export default function UserSettingsSwipeRightToLeft() {
     const sections = [{ settings: items }];
     return callback(table[3]).createList({ sections });
   }, []);
-  return jsx(importDefault(13673), { node });
+  return jsx(importDefault(13697), { node });
 };

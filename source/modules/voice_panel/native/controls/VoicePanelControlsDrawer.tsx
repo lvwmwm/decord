@@ -1,9 +1,9 @@
-// Module ID: 16021
-// Function ID: 16022
+// Module ID: 16049
+// Function ID: 16050
 // Name: renderChat
-// Dependencies: [32, 19, 17, 10034, 21, 4189, 712, 5178, 4547, 11428, 10033, 4050, 11429, 4599, 9443, 16022, 16033, 2]
+// Dependencies: [32, 19, 17, 10051, 21, 4193, 712, 5182, 4551, 11446, 10050, 4054, 11447, 4603, 9458, 16050, 16061, 2]
 
-// Module 16021 (renderChat)
+// Module 16049 (renderChat)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "set";
@@ -19,7 +19,7 @@ let error;
 let metroImportAll;
 const require = arg1;
 function renderChat(shown) {
-  obj = { collapsable: false, style: absoluteFill.absoluteFill, children: callback(importDefault(11428), obj) };
+  obj = { collapsable: false, style: absoluteFill.absoluteFill, children: callback(importDefault(11446), obj) };
   obj = { shown };
   return callback(closure_6, obj);
 }
@@ -64,11 +64,11 @@ const memoResult = importAllResult.memo((shown) => {
   }, items);
   const items1 = [renderContent, shown];
   const memo = obj.useMemo(() => renderContent(shown), items1);
-  if (renderContent(5178)(ref)) {
+  if (renderContent(5182)(ref)) {
     obj = { freeze: null, children: null };
     obj[0] = tmp2;
     obj[1] = memo;
-    let tmp11 = callback(shown(4547).Freeze, obj);
+    let tmp11 = callback(shown(4551).Freeze, obj);
   } else {
     tmp11 = null;
   }

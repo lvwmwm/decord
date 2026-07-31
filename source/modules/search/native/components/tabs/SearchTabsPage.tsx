@@ -1,17 +1,17 @@
-// Module ID: 15471
-// Function ID: 15472
+// Module ID: 15499
+// Function ID: 15500
 // Name: SearchTabsPage
-// Dependencies: [32, 19, 17, 1372, 9097, 676, 21, 4189, 589, 7724, 4403, 10029, 10031, 15472, 15514, 15516, 15520, 15521, 15529, 15531, 15532, 15538, 15545, 38, 8115, 2]
+// Dependencies: [32, 19, 17, 1372, 9108, 676, 21, 4193, 589, 7732, 4407, 10046, 10048, 15500, 15542, 15544, 15548, 15549, 15557, 15559, 15560, 15566, 15573, 38, 8122, 2]
 // Exports: default
 
-// Module 15471 (SearchTabsPage)
+// Module 15499 (SearchTabsPage)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "module_15531";
-import { View } from "module_15521";
+import importAllResult from "module_15559";
+import { View } from "module_15549";
 import ensureGuildLoaded from "ensureGuildLoaded";
-import { SearchTabs } from "SearchAutocompleteSelectAnalyticsActions";
+import { SearchTabs } from "MessageEmbedTypes";
 import { SearchTypes } from "ME";
-import { jsx } from "module_15538";
+import { jsx } from "module_15566";
 import createCacheKey from "createCacheKey";
 
 const require = arg1;
@@ -39,20 +39,20 @@ function SearchTabsPage(selectMediaTab) {
     }
     return outer1_6.getChannel(channelId);
   });
-  let obj1 = searchContext(7724);
+  let obj1 = searchContext(7732);
   const isChannelSpoilerGated = obj1.useIsChannelSpoilerGated(stateFromStores);
-  searchContext(4403);
+  searchContext(4407);
   if (tmp2) {
     if (tab !== SearchTabs.MEMBERS) {
       if (searchContext.type === SearchTypes.GUILD_CHANNEL) {
         if (tmp9) {
           obj = { guildId: null, channelId: null };
           ({ guildId: obj14[0], channelId: obj14[1] } = searchContext);
-          return jsx(importDefault(10029), { guildId: null, channelId: null });
+          return jsx(importDefault(10046), { guildId: null, channelId: null });
         } else if (isChannelSpoilerGated) {
           obj = { guildId: null, channelId: null };
           ({ guildId: obj13[0], channelId: obj13[1] } = searchContext);
-          return jsx(importDefault(10031), { guildId: null, channelId: null });
+          return jsx(importDefault(10048), { guildId: null, channelId: null });
         }
       }
     }
@@ -61,56 +61,56 @@ function SearchTabsPage(selectMediaTab) {
       obj1[0] = selectMediaTab.selectMediaTab;
       obj1[1] = searchContext;
       obj1[2] = width;
-      return jsx(importDefault(15472), { onJumpToMedia: null, searchContext: null, width: null });
+      return jsx(importDefault(15500), { onJumpToMedia: null, searchContext: null, width: null });
     } else if (tmp11.PEOPLE === tab) {
       const obj2 = { searchContext: null };
       obj2[0] = searchContext;
-      return jsx(importDefault(15514), { searchContext: null });
+      return jsx(importDefault(15542), { searchContext: null });
     } else if (tmp11.MEMBERS === tab) {
       const obj3 = { searchContext: null };
       obj3[0] = searchContext;
-      return jsx(importDefault(15516), { searchContext: null });
+      return jsx(importDefault(15544), { searchContext: null });
     } else if (tmp11.GUILD_CHANNELS === tab) {
       const obj4 = { searchContext: null };
       obj4[0] = searchContext;
-      return jsx(importDefault(15520), { searchContext: null });
+      return jsx(importDefault(15548), { searchContext: null });
     } else if (tmp11.MEDIA === tab) {
       const obj5 = { tab: null, searchContext: null, isFocused: null, width: null };
       obj5[0] = tab;
       obj5[1] = searchContext;
       obj5[2] = isFocused;
       obj5[3] = width;
-      return jsx(importDefault(15521), { tab: null, searchContext: null, isFocused: null, width: null });
+      return jsx(importDefault(15549), { tab: null, searchContext: null, isFocused: null, width: null });
     } else if (tmp11.FILES === tab) {
       const obj6 = { tab: null, searchContext: null, isFocused: null, width: null };
       obj6[0] = tab;
       obj6[1] = searchContext;
       obj6[2] = isFocused;
       obj6[3] = width;
-      return jsx(importDefault(15529), { tab: null, searchContext: null, isFocused: null, width: null });
+      return jsx(importDefault(15557), { tab: null, searchContext: null, isFocused: null, width: null });
     } else if (tmp11.LINKS === tab) {
       const obj7 = { tab: null, searchContext: null, isFocused: null, width: null };
       obj7[0] = tab;
       obj7[1] = searchContext;
       obj7[2] = isFocused;
       obj7[3] = width;
-      return jsx(importDefault(15531), { tab: null, searchContext: null, isFocused: null, width: null });
+      return jsx(importDefault(15559), { tab: null, searchContext: null, isFocused: null, width: null });
     } else if (tmp11.THREADS === tab) {
       const obj8 = { searchContext: null };
       obj8[0] = searchContext;
-      return jsx(tmp4(15532).SearchTabsThreadScreen, { searchContext: null });
+      return jsx(tmp4(15560).SearchTabsThreadScreen, { searchContext: null });
     } else if (tmp11.MESSAGES === tab) {
       const obj9 = { tab: null, searchContext: null, isFocused: null };
       obj9[0] = tab;
       obj9[1] = searchContext;
       obj9[2] = isFocused;
-      return jsx(importDefault(15538), { tab: null, searchContext: null, isFocused: null });
+      return jsx(importDefault(15566), { tab: null, searchContext: null, isFocused: null });
     } else if (tmp11.PINS === tab) {
       const obj10 = { tab: null, searchContext: null, isFocused: null };
       obj10[0] = tab;
       obj10[1] = searchContext;
       obj10[2] = isFocused;
-      return jsx(importDefault(15545), { tab: null, searchContext: null, isFocused: null });
+      return jsx(importDefault(15573), { tab: null, searchContext: null, isFocused: null });
     } else {
       return null;
     }
@@ -133,8 +133,8 @@ export default function ConnectedSearchTabsPage(tab) {
   context = importAllResult.useContext(context);
   importDefault(38)(null != context, "[SearchTabsPageContext] Context should not be null.");
   let obj = { style: callback2().container, children: null };
-  obj = { isFocused: importDefault(8115)(context.selectedTab) === tab, selectMediaTab: context.selectMediaTab, tab, searchContext, width };
-  obj[1] = <SearchTabsPage isFocused={importDefault(8115)(context.selectedTab) === tab} selectMediaTab={context.selectMediaTab} tab={tab} searchContext={searchContext} width={width} />;
-  return <View isFocused={importDefault(8115)(context.selectedTab) === tab} selectMediaTab={context.selectMediaTab} tab={tab} searchContext={searchContext} width={width} />;
+  obj = { isFocused: importDefault(8122)(context.selectedTab) === tab, selectMediaTab: context.selectMediaTab, tab, searchContext, width };
+  obj[1] = <SearchTabsPage isFocused={importDefault(8122)(context.selectedTab) === tab} selectMediaTab={context.selectMediaTab} tab={tab} searchContext={searchContext} width={width} />;
+  return <View isFocused={importDefault(8122)(context.selectedTab) === tab} selectMediaTab={context.selectMediaTab} tab={tab} searchContext={searchContext} width={width} />;
 };
 export const SearchTabsPageContext = context;

@@ -1,10 +1,10 @@
-// Module ID: 7834
-// Function ID: 7835
+// Module ID: 7842
+// Function ID: 7843
 // Name: useIsEligibleSenderForReferralProgram
-// Dependencies: [6209, 7835, 589, 2]
+// Dependencies: [6215, 7843, 589, 2]
 // Exports: useIsEligibleSenderForReferralProgram
 
-// Module 7834 (useIsEligibleSenderForReferralProgram)
+// Module 7842 (useIsEligibleSenderForReferralProgram)
 import emitChanges from "emitChanges";
 
 const require = arg1;
@@ -15,8 +15,8 @@ export const useIsEligibleSenderForReferralProgram = function useIsEligibleSende
   if (result === undefined) {
     flag = false;
   }
-  const maybeFetchReferralsRemaining = require(7835) /* useMaybeFetchReferralsRemaining */.useMaybeFetchReferralsRemaining(flag);
-  const obj = require(7835) /* useMaybeFetchReferralsRemaining */;
+  const maybeFetchReferralsRemaining = require(7843) /* useMaybeFetchReferralsRemaining */.useMaybeFetchReferralsRemaining(flag);
+  const obj = require(7843) /* useMaybeFetchReferralsRemaining */;
   const items = [emitChanges];
   return require(589) /* initialize */.useStateFromStores(items, () => isEligibleToSendReferrals.getIsEligibleToSendReferrals());
 };

@@ -7,7 +7,7 @@
 
 export default function callBindBasic(items) {
   if (items.length >= 1) {
-    if (typeof items[0] !== "ZodObject") {
+    if (typeof items[0] !== "disabledUntil") {
       const tmp4 = require(552);
       return tmp4(require(554) /* bind */, require(556), items);
     }

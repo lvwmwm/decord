@@ -1,10 +1,10 @@
-// Module ID: 13047
-// Function ID: 13048
+// Module ID: 13072
+// Function ID: 13073
 // Name: _adoptGuildIdentity
 // Dependencies: [5, 1874, 676, 530, 709, 2]
 // Exports: adoptGuildIdentity
 
-// Module 13047 (_adoptGuildIdentity)
+// Module 13072 (_adoptGuildIdentity)
 import set from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Endpoints } from "ME";

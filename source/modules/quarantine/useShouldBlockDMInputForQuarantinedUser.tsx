@@ -1,10 +1,10 @@
-// Module ID: 11517
-// Function ID: 11518
+// Module ID: 11534
+// Function ID: 11535
 // Name: useShouldBlockDMInputForQuarantinedUser
-// Dependencies: [4407, 676, 11422, 589, 2]
+// Dependencies: [4411, 676, 11440, 589, 2]
 // Exports: default
 
-// Module 11517 (useShouldBlockDMInputForQuarantinedUser)
+// Module 11534 (useShouldBlockDMInputForQuarantinedUser)
 import reinjectEphemerals from "reinjectEphemerals";
 import { UserFlags } from "ME";
 
@@ -13,7 +13,7 @@ const result = require("MAX_MESSAGES_ALLOWED_FOR_GREETING").fileFinishedImportin
 
 export default function useShouldBlockDMInputForQuarantinedUser(hasFlag, channel) {
   const _require = channel;
-  const showConvoStarterInDM = _require(11422).useShowConvoStarterInDM(channel);
+  const showConvoStarterInDM = _require(11440).useShowConvoStarterInDM(channel);
   _require(589);
   [][0] = channel;
   let tmp4 = null != hasFlag;

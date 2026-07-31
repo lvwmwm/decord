@@ -1,10 +1,10 @@
-// Module ID: 14884
-// Function ID: 14885
+// Module ID: 14907
+// Function ID: 14908
 // Name: statesAreEqual
-// Dependencies: [19, 1218, 21, 12, 1480, 9189, 589, 5641, 14760, 501, 712, 2]
+// Dependencies: [19, 1218, 21, 12, 1480, 9202, 589, 5645, 14783, 501, 712, 2]
 // Exports: default
 
-// Module 14884 (statesAreEqual)
+// Module 14907 (statesAreEqual)
 import noop from "noop";
 import fetchFingerprint from "fetchFingerprint";
 import { jsx } from "jsxProd";
@@ -27,7 +27,7 @@ export default function ConnectedMFA() {
   let navigation;
   navigation = isMultiAccount(1480).useNavigation();
   if (inContainer) {
-    inContainer = navigation(9189)();
+    inContainer = navigation(9202)();
   }
   let tmpResult = tmp(589);
   const items = [fetchFingerprint];
@@ -67,7 +67,7 @@ export default function ConnectedMFA() {
       tmp13 = obj;
     }
     obj[7] = tmp13;
-    return jsx(tmp(14760).MFAModal, obj);
+    return jsx(tmp(14783).MFAModal, obj);
   } else {
     tmpResult = tmp(501);
     let space = tmp4(712).space;

@@ -1,10 +1,10 @@
-// Module ID: 3828
-// Function ID: 3829
+// Module ID: 3832
+// Function ID: 3833
 // Name: MAX_REACTIONS
-// Dependencies: [1218, 676, 3829, 3830, 1236, 3862, 698, 2]
+// Dependencies: [1218, 676, 3833, 3834, 1236, 3866, 698, 2]
 // Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, getReactionEmojiName, isCustomReactionEmojiId, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
 
-// Module 3828 (MAX_REACTIONS)
+// Module 3832 (MAX_REACTIONS)
 import fetchFingerprint from "fetchFingerprint";
 import ME from "ME";
 import { NotificationSettingsUpdateType as closure_6 } from "AccountNotificationFlags";
@@ -18,8 +18,8 @@ let result = require("AccountNotificationFlags").fileFinishedImporting("modules/
 export const MAX_REACTIONS = 20;
 export const getReactionEmojiName = function getReactionEmojiName(emoji) {
   if (null == emoji.id) {
-    let result = importDefault(3830).convertSurrogateToName(emoji.name);
-    const obj = importDefault(3830);
+    let result = importDefault(3834).convertSurrogateToName(emoji.name);
+    const obj = importDefault(3834);
   } else {
     const _HermesInternal = HermesInternal;
     result = ":" + emoji.name + ":";
@@ -52,8 +52,8 @@ export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayN
     const obj = { reactions: null, emojiName: null };
     obj[0] = count;
     if (null == emoji.id) {
-      let str2 = importDefault(3830).convertSurrogateToName(emoji.name);
-      const obj2 = importDefault(3830);
+      let str2 = importDefault(3834).convertSurrogateToName(emoji.name);
+      const obj2 = importDefault(3834);
     } else {
       const _HermesInternal = HermesInternal;
       str2 = ":" + emoji.name + ":";
@@ -135,7 +135,7 @@ export const shouldApplyReaction = function shouldApplyReaction(optimistic) {
   return !optimistic;
 };
 export const updateReactionNotificationsSetting = function updateReactionNotificationsSetting(NumberResult, setting) {
-  const ReactionNotifications = require(3862) /* explicitContentFromProto */.ReactionNotifications;
+  const ReactionNotifications = require(3866) /* explicitContentFromProto */.ReactionNotifications;
   ReactionNotifications.updateSetting(NumberResult);
   let obj = importDefault(698);
   obj = { update_type: constants3.ACCOUNT, reaction_notifications: NumberResult, reaction_notifications_old: setting };

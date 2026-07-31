@@ -1,9 +1,9 @@
-// Module ID: 14659
-// Function ID: 14660
+// Module ID: 14682
+// Function ID: 14683
 // Name: pressable
-// Dependencies: [7753, 676, 3886, 10116, 1236, 2]
+// Dependencies: [7761, 676, 3890, 10133, 1236, 2]
 
-// Module 14659 (pressable)
+// Module 14682 (pressable)
 import { MarketingURLs } from "ME";
 import createToggle from "createToggle";
 
@@ -14,7 +14,7 @@ const pressable = createToggle.createPressable({
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   onPress: function onTermsOfServicePress() {
-    importDefault(3886).openURL(MarketingURLs.TERMS);
+    importDefault(3890).openURL(MarketingURLs.TERMS);
   },
   withArrow: true
 });
@@ -25,10 +25,10 @@ const obj = {
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   onPress: function onTermsOfServicePress() {
-    importDefault(3886).openURL(MarketingURLs.TERMS);
+    importDefault(3890).openURL(MarketingURLs.TERMS);
   },
   withArrow: true
 };
-const result = require("module_3886").fileFinishedImporting("modules/user_settings/defs/native/SafetyTermsOfServiceSetting.tsx");
+const result = require("module_3890").fileFinishedImporting("modules/user_settings/defs/native/SafetyTermsOfServiceSetting.tsx");
 
 export default pressable;

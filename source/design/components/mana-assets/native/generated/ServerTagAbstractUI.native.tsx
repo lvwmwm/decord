@@ -1,10 +1,10 @@
-// Module ID: 7473
-// Function ID: 7474
+// Module ID: 7481
+// Function ID: 7482
 // Name: ServerTagAbstractUI
-// Dependencies: [21, 5141, 7474, 2]
+// Dependencies: [21, 5145, 7482, 2]
 // Exports: ServerTagAbstractUI
 
-// Module 7473 (ServerTagAbstractUI)
+// Module 7481 (ServerTagAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerTagAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const ServerTagAbstractUI = function ServerTagAbstractUI(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7474);
+  obj[0] = importDefault(7482);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ServerTagAbstractUI = function ServerTagAbstractUI(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
 };

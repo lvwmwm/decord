@@ -1,10 +1,10 @@
-// Module ID: 12409
-// Function ID: 12410
+// Module ID: 12435
+// Function ID: 12436
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 505, 21, 4189, 712, 1236, 2323, 4185, 4600, 1297, 2]
+// Dependencies: [19, 17, 505, 21, 4193, 712, 1236, 2325, 4189, 4604, 1297, 2]
 // Exports: default
 
-// Module 12409 (InAppReportsBottomButton)
+// Module 12435 (InAppReportsBottomButton)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -40,7 +40,7 @@ export default function InAppReportsBottomButton(button) {
       const intl2 = tmp17(1236).intl;
       const string = intl2.string;
       if (isModeratorReport) {
-        let stringResult = string(importDefault(2323).ZUyreS);
+        let stringResult = string(importDefault(2325).ZUyreS);
       } else {
         const intl3 = tmp17(1236).intl;
         const stringResult1 = string(tmp17(1236).t["G+vU89"]);
@@ -61,7 +61,7 @@ export default function InAppReportsBottomButton(button) {
       const intl4 = tmp17(1236).intl;
       const string2 = intl4.string;
       if (isModeratorReport) {
-        let string2Result = string2(importDefault(2323).psKFdJ);
+        let string2Result = string2(importDefault(2325).psKFdJ);
       } else {
         string2Result = string2(tmp17(1236).t.h6D8Vy);
       }
@@ -77,7 +77,7 @@ export default function InAppReportsBottomButton(button) {
         const obj1 = { style: null, variant: "text-xs/medium", color: "text-default", children: null };
         obj1[0] = tmp.descriptionText;
         obj1[3] = tmp3;
-        tmp14Result = tmp14(tmp17(4185).Text, obj1);
+        tmp14Result = tmp14(tmp17(4189).Text, obj1);
       }
       const items1 = [tmp14Result, , ];
       const obj2 = { disabled: null, onPress: null, text: null, variant: null };
@@ -87,7 +87,7 @@ export default function InAppReportsBottomButton(button) {
       };
       obj2[2] = stringResult2;
       obj2[3] = str2;
-      items1[1] = callback(tmp17(4600).Button, obj2);
+      items1[1] = callback(tmp17(4604).Button, obj2);
       tmp14Result = null;
       if (hasError) {
         const obj3 = { style: null, children: null };

@@ -1,9 +1,9 @@
-// Module ID: 14923
-// Function ID: 14924
+// Module ID: 14946
+// Function ID: 14947
 // Name: DM_WIDTH
-// Dependencies: [32, 19, 17, 676, 21, 14924, 5178, 4189, 712, 4043, 14925, 14930, 14931, 14932, 4050, 15015, 15016, 15092, 10892, 2]
+// Dependencies: [32, 19, 17, 676, 21, 14947, 5182, 4193, 712, 4047, 14948, 14953, 14954, 14955, 4054, 15041, 15042, 15118, 10910, 2]
 
-// Module 14923 (DM_WIDTH)
+// Module 14946 (DM_WIDTH)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "set";
 import get_ActivityIndicator from "GuildChannels";
@@ -35,7 +35,7 @@ let closure_12 = importAllResult.memo(function LeftMenuTabsInner() {
   const tmp = callback3();
   let first;
   let isChatBesideChannelList;
-  let obj = first(14924);
+  let obj = first(14947);
   const tmp4 = callback(obj.useGuildsRouteGuildAndChannelId(), 2);
   first = tmp4[0];
   let obj1 = importAllResult;
@@ -49,11 +49,11 @@ let closure_12 = importAllResult.memo(function LeftMenuTabsInner() {
   if (tmp8) {
     tmp8 = first !== ME;
   }
-  let tmp11 = isChatBesideChannelList(5178)(ref);
+  let tmp11 = isChatBesideChannelList(5182)(ref);
   if (tmp8) {
     tmp11 = first;
   }
-  isChatBesideChannelList = tmp10(4043)().isChatBesideChannelList;
+  isChatBesideChannelList = tmp10(4047)().isChatBesideChannelList;
   const items1 = [tmp, isChatBesideChannelList];
   const memo = obj1.useMemo(() => {
     const items = [first.side, ];
@@ -64,9 +64,9 @@ let closure_12 = importAllResult.memo(function LeftMenuTabsInner() {
     items[1] = sideTablet;
     return items;
   }, items1);
-  const homeGesture = first(14925).useHomeGesture();
+  const homeGesture = first(14948).useHomeGesture();
   ({ gesture, panelStyles, homeDrawerState } = homeGesture);
-  const sum = DM_WIDTH + tmp10(14930)();
+  const sum = DM_WIDTH + tmp10(14953)();
   obj = { value: homeDrawerState, children: null };
   obj = { gesture, children: null };
   const items2 = [absoluteFill.absoluteFill, ];
@@ -76,7 +76,7 @@ let closure_12 = importAllResult.memo(function LeftMenuTabsInner() {
   }
   obj1 = { style: items2, children: null };
   items2[1] = { width: tmp18 };
-  const items3 = [closure_9(first(14932).HomePanelContent, {}), ];
+  const items3 = [closure_9(first(14955).HomePanelContent, {}), ];
   const obj2 = { style: items4, pointerEvents: "box-none", nativeID: "messages-parent-view", children: null };
   items4 = [panelStyles, tmp.sideContainer];
   let num = 0;
@@ -84,21 +84,21 @@ let closure_12 = importAllResult.memo(function LeftMenuTabsInner() {
     num = 1;
   }
   const obj3 = { activeIndex: num, children: null };
-  const items5 = [closure_9(isChatBesideChannelList(15016), { style: memo }), closure_9(isChatBesideChannelList(15092), { style: memo, selectedGuildId: tmp11, selectedChannelId: tmp4[1] })];
+  const items5 = [closure_9(isChatBesideChannelList(15042), { style: memo }), closure_9(isChatBesideChannelList(15118), { style: memo, selectedGuildId: tmp11, selectedChannelId: tmp4[1] })];
   obj3[1] = items5;
-  obj2[3] = closure_10(first(15015).NativeFreezeScreens, obj3);
-  items3[1] = closure_9(isChatBesideChannelList(4050).View, obj2);
+  obj2[3] = closure_10(first(15041).NativeFreezeScreens, obj3);
+  items3[1] = closure_9(isChatBesideChannelList(4054).View, obj2);
   obj1[1] = items3;
   obj[1] = closure_10(closure_5, obj1);
-  obj[1] = closure_9(first(14931).NonCollapsableGestureDetector, obj);
-  return closure_9(first(14925).HomeDrawerStateContext.Provider, obj);
+  obj[1] = closure_9(first(14954).NonCollapsableGestureDetector, obj);
+  return closure_9(first(14948).HomeDrawerStateContext.Provider, obj);
 });
 let obj2 = { borderTopRightRadius: require("Themes").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
 const memoResult = importAllResult.memo(function MainChannelsRedesignInner() {
   const obj = { profile: null, children: null };
-  obj[0] = require(10892) /* setLevels */.Profiles.LeftPanel;
+  obj[0] = require(10910) /* setLevels */.Profiles.LeftPanel;
   obj[1] = callback2(closure_12, {});
-  return callback2(importDefault(10892), obj);
+  return callback2(importDefault(10910), obj);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("components_native/MainChannels.tsx");
 

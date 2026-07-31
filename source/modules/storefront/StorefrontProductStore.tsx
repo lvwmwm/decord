@@ -1,9 +1,9 @@
-// Module ID: 14092
-// Function ID: 14093
+// Module ID: 8376
+// Function ID: 8377
 // Name: getFetchState
 // Dependencies: [589, 709, 2]
 
-// Module 14092 (getFetchState)
+// Module 8376 (getFetchState)
 import { Store } from "initialize";
 
 let closure_0 = {};
@@ -22,11 +22,11 @@ prototype["getFetchState"] = function getFetchState(arg0) {
   }
   return tmp;
 };
-prototype["getFetchStateForSku"] = function getFetchStateForSku(arg0) {
+prototype["getFetchStateForSku"] = function getFetchStateForSku(closure_0) {
   let tmp;
-  if (null != arg0) {
+  if (null != closure_0) {
     let state;
-    if (dependencyMap2[arg0] != null) {
+    if (dependencyMap2[closure_0] != null) {
       state = tmp3.state;
     }
     tmp = state;
@@ -44,11 +44,11 @@ prototype["getFetchedAt"] = function getFetchedAt(arg0) {
   }
   return tmp;
 };
-prototype["getFetchedAtForSku"] = function getFetchedAtForSku(arg0) {
+prototype["getFetchedAtForSku"] = function getFetchedAtForSku(closure_0) {
   let tmp;
-  if (null != arg0) {
+  if (null != closure_0) {
     let fetchedAt;
-    if (dependencyMap2[arg0] != null) {
+    if (dependencyMap2[closure_0] != null) {
       fetchedAt = tmp3.fetchedAt;
     }
     tmp = fetchedAt;
@@ -98,11 +98,11 @@ prototype["getProduct"] = function getProduct(arg0) {
   }
   return product;
 };
-prototype["getProductsForSku"] = function getProductsForSku(arg0) {
+prototype["getProductsForSku"] = function getProductsForSku(closure_0) {
   let tmp;
-  if (null != arg0) {
+  if (null != closure_0) {
     let products;
-    if (dependencyMap2[arg0] != null) {
+    if (dependencyMap2[closure_0] != null) {
       products = tmp3.products;
     }
     tmp = products;

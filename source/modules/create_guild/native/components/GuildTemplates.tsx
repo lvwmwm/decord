@@ -1,10 +1,10 @@
-// Module ID: 11797
-// Function ID: 11798
+// Module ID: 11815
+// Function ID: 11816
 // Name: GuildTemplatesHeader
-// Dependencies: [32, 19, 17, 11794, 9219, 676, 21, 4189, 5140, 712, 4185, 1236, 1480, 1581, 4600, 11770, 698, 10072, 11798, 5177, 5554, 2]
+// Dependencies: [32, 19, 17, 11812, 9232, 676, 21, 4193, 5144, 712, 4189, 1236, 1480, 1581, 4604, 11788, 698, 10089, 11816, 5181, 5558, 2]
 // Exports: default
 
-// Module 11797 (GuildTemplatesHeader)
+// Module 11815 (GuildTemplatesHeader)
 import _slicedToArray from "_slicedToArray";
 import SafeAreaPaddingView from "SafeAreaPaddingView";
 import get_ActivityIndicator from "ListSelectionItem";
@@ -32,11 +32,11 @@ function GuildTemplatesHeader() {
   obj = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t["5HZu07"]);
-  const items = [callback3(require(4185) /* Text */.Text, obj), ];
+  const items = [callback3(require(4189) /* Text */.Text, obj), ];
   obj = { style: tmp.headerDescription, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl2.string(require(1236) /* getSystemLocale */.t["/k/L/j"]);
-  items[1] = callback3(require(4185) /* Text */.Text, obj);
+  items[1] = callback3(require(4189) /* Text */.Text, obj);
   obj[1] = items;
   return callback4(closure_5, obj);
 }
@@ -68,8 +68,8 @@ function GuildTemplatesJoinFooter(trigger) {
   const intl3 = tmp2(1236).intl;
   obj1[3] = intl3.string(trigger(1236).t["N+Mi/U"]);
   const items2 = [
-    callback3(trigger(4185).Text, obj1),
-    callback3(trigger(4600).Button, {
+    callback3(trigger(4189).Text, obj1),
+    callback3(trigger(4604).Button, {
       variant: "primary",
       grow: true,
       text: stringResult,
@@ -97,12 +97,12 @@ function GuildTemplatesItem(guildTemplate) {
   guildTemplate = guildTemplate.guildTemplate;
   const onGuildTemplatePress = guildTemplate.onGuildTemplatePress;
   const obj = { Icon: null, message: null, onPress: null };
-  obj[0] = guildTemplate(11798).GUILD_TEMPLATE_ICON_COMPONENTS[guildTemplate.id];
+  obj[0] = guildTemplate(11816).GUILD_TEMPLATE_ICON_COMPONENTS[guildTemplate.id];
   obj[1] = guildTemplate.label;
   obj[2] = function onPress() {
     return onGuildTemplatePress(guildTemplate);
   };
-  return callback3(onGuildTemplatePress(10072), obj);
+  return callback3(onGuildTemplatePress(10089), obj);
 }
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ getGuildTemplatesMap: error, GuildTemplateId: metroImportAll } = GuildTemplateId);

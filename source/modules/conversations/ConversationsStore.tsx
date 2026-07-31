@@ -1,9 +1,9 @@
-// Module ID: 5856
-// Function ID: 5857
+// Module ID: 5861
+// Function ID: 5862
 // Name: removePendingListFetch
-// Dependencies: [1218, 1372, 3826, 1931, 1874, 5857, 5858, 1386, 11, 4409, 5859, 1351, 3828, 589, 709, 2]
+// Dependencies: [1218, 1372, 3830, 1931, 1874, 5862, 5863, 1386, 11, 4413, 5864, 1351, 3832, 589, 709, 2]
 
-// Module 5856 (removePendingListFetch)
+// Module 5861 (removePendingListFetch)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import upsertRelationship from "upsertRelationship";
@@ -104,7 +104,7 @@ function processHydratedMessages(channelId, conversationId, messages, fullyHydra
         while (tmp4 !== undefined) {
           let tmp8 = require;
           let tmp9 = dependencyMap;
-          let obj = require(4409) /* createMinimalMessageRecord */;
+          let obj = require(4413) /* createMinimalMessageRecord */;
           let messageRecord = obj.createMessageRecord(tmp6);
           let tmp11 = messageRecord;
           let arr = items1.push(messageRecord);
@@ -137,7 +137,7 @@ function processHydratedMessages(channelId, conversationId, messages, fullyHydra
             obj = { conversationId: null, moderationLabel: null, message: null };
             let tmp23 = require;
             let tmp24 = dependencyMap;
-            let obj4 = require(4409) /* createMinimalMessageRecord */;
+            let obj4 = require(4413) /* createMinimalMessageRecord */;
             obj[2] = obj4.createMessageRecord(tmp21);
             let result1 = messageMetadataByMessageId4.set(tmp21.id, obj);
           }
@@ -190,7 +190,7 @@ function handleReaction(channelId) {
         }
         if (null != hydratedMessages) {
           hydratedMessages = value.hydratedMessages;
-          const findIndexResult = hydratedMessages.findIndex((id) => id.id === messageId);
+          const findIndexResult = hydratedMessages.findIndex((id) => id.id === closure_0);
           if (-1 !== findIndexResult) {
             const hydratedMessages1 = value.hydratedMessages;
             const substr = hydratedMessages1.slice();
@@ -202,9 +202,50 @@ function handleReaction(channelId) {
       } else {
         return false;
       }
-      obj = messageId(3828);
+      obj = messageId(3832);
     }
   }
+}
+function handleRelationshipUpdate() {
+  let c0 = false;
+  let item = tmp3.forEach((messageMetadataByMessageId) => {
+    let closure_0 = messageMetadataByMessageId;
+    const prop = messageMetadataByMessageId.messageMetadataByMessageId;
+    const item = prop.forEach((message) => {
+      if (null != message.message) {
+        const isBlockedForMessageResult = outer2_5.isBlockedForMessage(message.message);
+        const isIgnoredForMessageResult = outer2_5.isIgnoredForMessage(message.message);
+        if (message.message.blocked !== isBlockedForMessageResult) {
+          let messageMetadataByMessageId = true;
+          message = message.message;
+          const result = message.set("blocked", isBlockedForMessageResult);
+          const result1 = result.set("ignored", isIgnoredForMessageResult);
+          messageMetadataByMessageId = arg1;
+          message.message = result1;
+          let value = null;
+          if (null != message.conversationId) {
+            const conversationMetadataById = messageMetadataByMessageId.conversationMetadataById;
+            value = conversationMetadataById.get(message.conversationId);
+          }
+          let hydratedMessages;
+          if (value != null) {
+            hydratedMessages = value.hydratedMessages;
+          }
+          if (null != hydratedMessages) {
+            hydratedMessages = value.hydratedMessages;
+            const findIndexResult = hydratedMessages.findIndex((id) => id.id === closure_0);
+            if (-1 !== findIndexResult) {
+              const hydratedMessages1 = value.hydratedMessages;
+              const substr = hydratedMessages1.slice();
+              substr[findIndexResult] = result1;
+              value.hydratedMessages = substr;
+            }
+          }
+        }
+      }
+    });
+  });
+  return c0;
 }
 function removeHydratedMessage(arg0, arg1) {
   let closure_0 = arg1;
@@ -533,7 +574,7 @@ obj = {
     ({ channelId, rawConversations, direction, anchor, isJump, fullyHydrated } = requestKey);
     let set;
     if (removePendingListFetch(channelId, requestKey.requestKey)) {
-      const mapped = rawConversations.map(set(5859).mapConversation);
+      const mapped = rawConversations.map(set(5864).mapConversation);
       const found = mapped.filter(set(1351).isNotNullish);
       const peekResult = tmp3.peek(channelId);
       if (isJump) {
@@ -1101,7 +1142,7 @@ obj = {
           }
           let flag = null != message;
           if (flag) {
-            const updateMessageRecordResult = id(4409).updateMessageRecord(value.message, message);
+            const updateMessageRecordResult = id(4413).updateMessageRecord(value.message, message);
             value.message = updateMessageRecordResult;
             value = null;
             if (null != value.conversationId) {
@@ -1115,7 +1156,7 @@ obj = {
             flag = true;
             if (null != hydratedMessages) {
               hydratedMessages = value.hydratedMessages;
-              const findIndexResult = hydratedMessages.findIndex((id) => id.id === messageId);
+              const findIndexResult = hydratedMessages.findIndex((id) => id.id === closure_0);
               flag = true;
               if (-1 !== findIndexResult) {
                 const hydratedMessages1 = value.hydratedMessages;
@@ -1125,7 +1166,7 @@ obj = {
                 flag = true;
               }
             }
-            const obj = id(4409);
+            const obj = id(4413);
           }
           return flag;
         }
@@ -1164,7 +1205,7 @@ obj = {
         }
         if (null != hydratedMessages) {
           hydratedMessages = value.hydratedMessages;
-          const findIndexResult = hydratedMessages.findIndex((id) => id.id === messageId);
+          const findIndexResult = hydratedMessages.findIndex((id) => id.id === closure_0);
           if (-1 !== findIndexResult) {
             const hydratedMessages1 = value.hydratedMessages;
             const substr = hydratedMessages1.slice();
@@ -1205,7 +1246,7 @@ obj = {
         }
         if (null != hydratedMessages) {
           hydratedMessages = value.hydratedMessages;
-          const findIndexResult = hydratedMessages.findIndex((id) => id.id === messageId);
+          const findIndexResult = hydratedMessages.findIndex((id) => id.id === closure_0);
           if (-1 !== findIndexResult) {
             const hydratedMessages1 = value.hydratedMessages;
             const substr = hydratedMessages1.slice();
@@ -1246,7 +1287,7 @@ obj = {
         }
         if (null != hydratedMessages) {
           hydratedMessages = value.hydratedMessages;
-          const findIndexResult = hydratedMessages.findIndex((id) => id.id === messageId);
+          const findIndexResult = hydratedMessages.findIndex((id) => id.id === closure_0);
           if (-1 !== findIndexResult) {
             const hydratedMessages1 = value.hydratedMessages;
             const substr = hydratedMessages1.slice();
@@ -1296,6 +1337,9 @@ obj = {
     }
     return flag;
   },
+  RELATIONSHIP_ADD: handleRelationshipUpdate,
+  RELATIONSHIP_UPDATE: handleRelationshipUpdate,
+  RELATIONSHIP_REMOVE: handleRelationshipUpdate,
   LOGOUT: function handleLogout() {
     tmp3.reset();
     map.clear();

@@ -1,9 +1,9 @@
-// Module ID: 7915
-// Function ID: 7916
+// Module ID: 7922
+// Function ID: 7923
 // Name: handleFetchEmbeddedActivityShelfSuccess
 // Dependencies: [12, 589, 709, 2]
 
-// Module 7915 (handleFetchEmbeddedActivityShelfSuccess)
+// Module 7922 (handleFetchEmbeddedActivityShelfSuccess)
 import { Store } from "initialize";
 
 function handleFetchEmbeddedActivityShelfSuccess(assets) {

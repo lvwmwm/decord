@@ -1,15 +1,15 @@
-// Module ID: 15545
-// Function ID: 15546
+// Module ID: 15573
+// Function ID: 15574
 // Name: InitialPinsScreen
-// Dependencies: [19, 9880, 5873, 10098, 9097, 9125, 676, 21, 589, 15478, 9879, 15474, 10097, 15517, 15482, 15481, 15538, 2]
+// Dependencies: [19, 9897, 5878, 10115, 9108, 9138, 676, 21, 589, 15506, 9896, 15502, 10114, 15545, 15510, 15509, 15566, 2]
 
-// Module 15545 (InitialPinsScreen)
+// Module 15573 (InitialPinsScreen)
 import importAllResult from "noop";
 import handleChannelDelete from "handleChannelDelete";
 import { FetchState } from "handleChannelDelete";
 import handleReaction from "handleReaction";
 import prototype from "prototype";
-import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import MessageEmbedTypes from "MessageEmbedTypes";
 import { SearchResultContentEntityTypes as closure_11 } from "SearchEntrypointAnalyticsLocations";
 import { SearchTypes } from "ME";
 import { jsx } from "jsxProd";
@@ -158,7 +158,7 @@ function InitialPinsScreen(searchContext) {
   });
 }
 let c3 = importAllResult;
-({ MESSAGE_PLACEHOLDER_ITEM_SIZE: metroImportAll, SearchListItemTypes: c9, SEARCH_PINNED_MESSAGES_LINE_CLAMP: c10 } = SearchAutocompleteSelectAnalyticsActions);
+({ MESSAGE_PLACEHOLDER_ITEM_SIZE: metroImportAll, SearchListItemTypes: c9, SEARCH_PINNED_MESSAGES_LINE_CLAMP: c10 } = MessageEmbedTypes);
 const memoResult = importAllResult.memo(function PinsScreen(searchContext) {
   let isFocused;
   let tab;
@@ -172,7 +172,7 @@ const memoResult = importAllResult.memo(function PinsScreen(searchContext) {
     obj[0] = searchContext;
     obj[1] = tab;
     obj[2] = isFocused;
-    let tmp5 = jsx(importDefault(15538), { searchContext: null, tab: null, isFocused: null });
+    let tmp5 = jsx(importDefault(15566), { searchContext: null, tab: null, isFocused: null });
   } else {
     obj = { searchContext: null, tab: null, isFocused: null };
     obj[0] = searchContext;

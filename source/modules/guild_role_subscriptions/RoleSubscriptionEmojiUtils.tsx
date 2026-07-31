@@ -1,10 +1,10 @@
-// Module ID: 5053
-// Function ID: 5054
+// Module ID: 5057
+// Function ID: 5058
 // Name: isRoleSubscriptionEmoji
-// Dependencies: [5049, 2]
+// Dependencies: [5053, 2]
 // Exports: isPurchasableRoleSubscriptionEmoji, isRoleSubscriptionEmoji, isUnusableRoleSubscriptionEmoji
 
-// Module 5053 (isRoleSubscriptionEmoji)
+// Module 5057 (isRoleSubscriptionEmoji)
 import computeRolesForGuild from "computeRolesForGuild";
 
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/RoleSubscriptionEmojiUtils.tsx");

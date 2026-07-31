@@ -1,9 +1,9 @@
-// Module ID: 4213
-// Function ID: 4214
+// Module ID: 4217
+// Function ID: 4218
 // Name: createFromServer
 // Dependencies: [1883, 2]
 
-// Module 4213 (createFromServer)
+// Module 4217 (createFromServer)
 import "toJS";
 
 let prototype;
@@ -16,7 +16,7 @@ prototype = function CompanyRecord(arg0) {
 class prototype extends tmp2 {
 }
 prototype["createFromServer"] = function createFromServer(arg0) {
-  if (typeof prototype !== "find") {
+  if (typeof prototype !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const tmp2 = new prototype("Trying to call a non-function", prototype);

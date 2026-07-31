@@ -1,8 +1,8 @@
-// Module ID: 9395
-// Function ID: 9396
-// Dependencies: [19, 5048, 5052, 9335, 1338, 21, 4189, 4050, 9396, 5245, 1577, 3830, 9251, 9385, 2]
+// Module ID: 9410
+// Function ID: 9411
+// Dependencies: [19, 5052, 5056, 9350, 1338, 21, 4193, 4054, 9411, 5249, 1577, 3834, 9264, 9400, 2]
 
-// Module 9395
+// Module 9410
 import importAllResult from "noop";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import { EmojiCategoryTypes } from "EmojiCategoryTypes";
@@ -13,7 +13,7 @@ import createCacheKey from "createCacheKey";
 import animatedComponent from "__INTERNAL_VIEW_CONFIG";
 import BottomSheetModal from "BottomSheetModal";
 import isMetaQuest from "isMetaQuest";
-import importDefaultResult from "module_4050";
+import importDefaultResult from "module_4054";
 
 let c10;
 let c9;
@@ -79,7 +79,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations, ref) =>
         tmp = analyticsLocations < 0;
       }
       if (!tmp) {
-        tmp = f82445;
+        tmp = f82601;
       }
       if (!tmp) {
         num2 = 0;

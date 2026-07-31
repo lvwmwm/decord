@@ -1,14 +1,15 @@
 // Module ID: 8586
 // Function ID: 8587
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 8567]
+// Dependencies: [41, 42, 93, 95, 98, 8557, 8580]
 
 // Module 8586 (_isNativeReflectConstruct)
-import FeMergeNode from "_classCallCheck";
+import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
 
+const FeConvolveMatrix = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -28,44 +29,39 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeMergeNode {
+class FeConvolveMatrix {
   constructor() {
     self = this;
-    items = [...arguments];
-    apply = undefined;
-    tmp = FeMergeNode(this, apply);
-    items1 = [...items];
+    tmp = _isNativeReflectConstruct(this, FeConvolveMatrix);
     tmp2 = __esModule;
-    obj = __esModule(apply);
+    obj = __esModule(FeConvolveMatrix);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
-      tmp5 = globalThis;
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items1);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-    tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
-    tmp3Result.setNativeProps = () => {
-      const parent = _undefined.props.parent;
-      if (parent) {
-        parent.forceUpdate();
-      }
-    };
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeMergeNode, require("_isNativeReflectConstruct"));
-let items = [
-  {
-    key: "render",
-    value: function render() {
-      return null;
-    }
+require("_inherits")(FeConvolveMatrix, require("_isNativeReflectConstruct"));
+let obj = {
+  key: "render",
+  value: function render() {
+    const result = FeConvolveMatrix(8557).warnUnimplementedFilter();
+    return null;
   }
-];
-const importDefaultResultResult = importDefaultResult(FeMergeNode, items);
-importDefaultResultResult.displayName = "FeMergeNode";
+};
+const items = [obj];
+const importDefaultResultResult = importDefaultResult(FeConvolveMatrix, items);
+importDefaultResultResult.displayName = "FeConvolveMatrix";
+obj = {};
+const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

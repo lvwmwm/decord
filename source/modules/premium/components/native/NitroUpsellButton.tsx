@@ -1,8 +1,8 @@
-// Module ID: 8424
-// Function ID: 8425
-// Dependencies: [19, 4181, 21, 589, 4600, 6624, 712, 2]
+// Module ID: 8437
+// Function ID: 8438
+// Dependencies: [19, 4185, 21, 589, 4604, 6630, 712, 2]
 
-// Module 8424
+// Module 8437
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
@@ -23,12 +23,12 @@ const memoResult = require("noop").memo(function NitroUpsellButton(shiny) {
   obj = { text, size: "lg", loading, onPress, icon: null, variant: "experimental_premium-primary", shiny: null };
   obj = { color: null, size: "sm" };
   obj[0] = importDefault(712).colors.WHITE;
-  obj[4] = jsx(require(6624) /* NitroWheelIcon */.NitroWheelIcon, { color: null, size: "sm" });
+  obj[4] = jsx(require(6630) /* NitroWheelIcon */.NitroWheelIcon, { color: null, size: "sm" });
   if (flag) {
     flag = !stateFromStores;
   }
   obj[6] = flag;
-  return jsx(require(4600) /* Button */.Button, { color: null, size: "sm" });
+  return jsx(require(4604) /* Button */.Button, { color: null, size: "sm" });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/premium/components/native/NitroUpsellButton.tsx");
 

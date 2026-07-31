@@ -1,9 +1,9 @@
-// Module ID: 5940
-// Function ID: 5941
+// Module ID: 5946
+// Function ID: 5947
 // Name: getCommittedVersions
-// Dependencies: [5, 4006, 3, 5933, 12, 1907, 687, 2]
+// Dependencies: [5, 4010, 3, 5939, 12, 1907, 687, 2]
 
-// Module 5940 (getCommittedVersions)
+// Module 5946 (getCommittedVersions)
 import items from "items";
 import importDefaultResult from "handleConnectionOpen";
 import isCacheEnabled from "isCacheEnabled";

@@ -1,16 +1,16 @@
-// Module ID: 13106
-// Function ID: 13107
+// Module ID: 13131
+// Function ID: 13132
 // Name: GuildActionSheetTabItems
-// Dependencies: [19, 1372, 1932, 1931, 676, 21, 13094, 4096, 589, 8348, 8345, 5022, 6679, 1236, 6615, 712, 4384, 4157, 5023, 10219, 7729, 5135, 9008, 8301, 2]
+// Dependencies: [19, 1372, 1932, 1931, 676, 21, 13119, 4100, 589, 8355, 8352, 5026, 6685, 1236, 6621, 712, 4388, 4161, 5027, 10237, 7737, 5139, 9021, 8308, 2]
 // Exports: default
 
-// Module 13106 (GuildActionSheetTabItems)
+// Module 13131 (GuildActionSheetTabItems)
 import registerAsset from "registerAsset";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
 import handleConnectionOpen from "handleConnectionOpen";
 import ME from "ME";
-import jsxProd from "module_5135";
+import jsxProd from "module_5139";
 
 let c10;
 let c9;
@@ -27,13 +27,13 @@ export default function GuildActionSheetTabItems(guild) {
   guild = guild.guild;
   let stateFromStores;
   let closure_2;
-  let obj = guild(13094);
+  let obj = guild(13119);
   let canAccessSettings = obj.useGuildActionSheetPermissions(guild).canAccessSettings;
-  const total = stateFromStores(4096)(guild.id).total;
+  const total = stateFromStores(4100)(guild.id).total;
   let obj1 = guild(589);
   const items = [comparator];
   stateFromStores = obj1.useStateFromStores(items, () => outer1_6.getChannels(guild.id));
-  let obj2 = guild(8348);
+  let obj2 = guild(8355);
   let shouldRenderInviteResult = obj2.shouldRenderInvite(stateFromStores, guild);
   const items1 = [stateFromStores, guild];
   closure_2 = React.useCallback(() => {
@@ -60,7 +60,7 @@ export default function GuildActionSheetTabItems(guild) {
   obj1 = { variant: "secondary", label: formatToPlainStringResult, icon: null, grow: true, onPress: null };
   obj2 = { color: null };
   obj2[0] = stateFromStores(712).unsafe_rawColors.GUILD_BOOSTING_PINK;
-  obj1[2] = closure_12(guild(6615).BoostGemIcon, obj2);
+  obj1[2] = closure_12(guild(6621).BoostGemIcon, obj2);
   obj1[4] = function onPress() {
     let obj = stateFromStores(outer1_3[16]);
     obj = { section: outer1_10.GUILD_POPOUT, object: outer1_9.BOOST_GEM_ICON };
@@ -69,42 +69,42 @@ export default function GuildActionSheetTabItems(guild) {
     const obj3 = stateFromStores(outer1_3[17]);
     callback(outer1_3[18]).openApplyBoostModal(guild.id);
   };
-  const items2 = [closure_12(guild(6679).IconButton, obj1), , , ];
+  const items2 = [closure_12(guild(6685).IconButton, obj1), , , ];
   if (shouldRenderInviteResult) {
     let obj3 = { variant: "secondary", label: null, icon: null, grow: true, onPress: null };
     const intl3 = tmp(1236).intl;
     obj3[1] = intl3.string(tmp(1236).t.VINpSK);
-    obj3[2] = tmp3(10219);
+    obj3[2] = tmp3(10237);
     obj3[4] = function onPress() {
       stateFromStores(outer1_3[17]).hideActionSheet();
       callback();
     };
-    shouldRenderInviteResult = tmp7(tmp(6679).IconButton, obj3);
+    shouldRenderInviteResult = tmp7(tmp(6685).IconButton, obj3);
   }
   items2[1] = shouldRenderInviteResult;
   const obj4 = { variant: "secondary", label: null, icon: null, grow: true, onPress: null };
   const intl4 = tmp(1236).intl;
   obj4[1] = intl4.string(guild(1236).t.HcoRu0);
-  obj4[2] = stateFromStores(7729);
+  obj4[2] = stateFromStores(7737);
   obj4[4] = function onPress() {
     stateFromStores(outer1_3[17]).hideActionSheet();
     const obj = stateFromStores(outer1_3[17]);
     stateFromStores(outer1_3[21]).open(guild.id);
   };
-  items2[2] = closure_12(guild(6679).IconButton, obj4);
+  items2[2] = closure_12(guild(6685).IconButton, obj4);
   if (canAccessSettings) {
     const obj5 = { variant: "secondary", label: null, icon: null, grow: true, onPress: null };
     const intl5 = tmp(1236).intl;
     obj5[1] = intl5.string(tmp(1236).t["3D5yo/"]);
-    obj5[2] = tmp3(9008);
+    obj5[2] = tmp3(9021);
     obj5[4] = function onPress() {
       stateFromStores(outer1_3[17]).hideActionSheet();
       const obj = stateFromStores(outer1_3[17]);
       stateFromStores(outer1_3[23]).open(guild.id);
     };
-    canAccessSettings = tmp7(tmp(6679).IconButton, obj5);
+    canAccessSettings = tmp7(tmp(6685).IconButton, obj5);
   }
   items2[3] = canAccessSettings;
   obj[2] = items2;
-  return closure_13(guild(5022).ButtonGroup, obj);
+  return closure_13(guild(5026).ButtonGroup, obj);
 };

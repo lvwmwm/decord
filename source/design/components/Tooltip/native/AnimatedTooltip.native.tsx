@@ -1,10 +1,10 @@
-// Module ID: 8429
-// Function ID: 8430
+// Module ID: 8442
+// Function ID: 8443
 // Name: renderTooltipItem
-// Dependencies: [32, 19, 17, 21, 4050, 8430, 3908, 8432, 8433, 2]
+// Dependencies: [32, 19, 17, 21, 4054, 8443, 3912, 8445, 8446, 2]
 // Exports: AnimatedTooltip
 
-// Module 8429 (renderTooltipItem)
+// Module 8442 (renderTooltipItem)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
@@ -18,10 +18,10 @@ function renderTooltipItem(arg0, arg1) {
   if (null != arg0) {
     obj = {};
     const merged = Object.assign(arg0);
-    tmpResult = tmp(require(8430) /* Tooltip */.Tooltip, obj);
+    tmpResult = tmp(require(8443) /* Tooltip */.Tooltip, obj);
   }
   obj[2] = tmpResult;
-  return jsx(importDefault(4050).View, { style: items, pointerEvents: "box-none", children: null });
+  return jsx(importDefault(4054).View, { style: items, pointerEvents: "box-none", children: null });
 }
 let result = require("get ActivityIndicator").fileFinishedImporting("design/components/Tooltip/native/AnimatedTooltip.native.tsx");
 
@@ -29,7 +29,7 @@ export const AnimatedTooltip = function AnimatedTooltip(visible) {
   visible = visible.visible;
   const merged = Object.assign(visible, Object.create(null));
   let importDefault;
-  let obj = visible(8432);
+  let obj = visible(8445);
   const result = obj.tooltipEnterExitAnimation(merged.position);
   const tmp3 = callback(React.useState(false), 2);
   importDefault = tmp3[1];
@@ -37,7 +37,7 @@ export const AnimatedTooltip = function AnimatedTooltip(visible) {
   const effect = React.useEffect(() => {
     callback(visible);
   }, items);
-  obj = { useReducedMotion: React.useContext(visible(3908).AccessibilityPreferencesContext).reducedMotion.enabled, item: null, entering: null, exiting: null, renderItem: null };
+  obj = { useReducedMotion: React.useContext(visible(3912).AccessibilityPreferencesContext).reducedMotion.enabled, item: null, entering: null, exiting: null, renderItem: null };
   let tmp7;
   if (tmp3[0]) {
     tmp7 = merged;
@@ -46,5 +46,5 @@ export const AnimatedTooltip = function AnimatedTooltip(visible) {
   obj[2] = result;
   obj[3] = result;
   obj[4] = renderTooltipItem;
-  return jsx(importDefault(8433), { useReducedMotion: React.useContext(visible(3908).AccessibilityPreferencesContext).reducedMotion.enabled, item: null, entering: null, exiting: null, renderItem: null });
+  return jsx(importDefault(8446), { useReducedMotion: React.useContext(visible(3912).AccessibilityPreferencesContext).reducedMotion.enabled, item: null, entering: null, exiting: null, renderItem: null });
 };

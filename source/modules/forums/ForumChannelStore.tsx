@@ -1,10 +1,10 @@
-// Module ID: 11174
-// Function ID: 11175
+// Module ID: 11192
+// Function ID: 11193
 // Name: set
-// Dependencies: [1372, 1382, 1381, 1383, 705, 38, 6081, 644, 589, 2]
+// Dependencies: [1372, 1382, 1381, 1383, 705, 38, 6087, 644, 589, 2]
 // Exports: useForumChannelStore, useForumChannelStoreApi
 
-// Module 11174 (set)
+// Module 11192 (set)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import keys from "keys";
 import set from "set";
@@ -81,7 +81,7 @@ let closure_6 = function ForumChannelStoreState(set, get) {
   return obj;
 }.prototype;
 let closure_7 = keys.create((set, get) => {
-  if (typeof closure_6 !== "find") {
+  if (typeof closure_6 !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   let obj = Object.create(closure_6.prototype);

@@ -1,10 +1,10 @@
-// Module ID: 8740
-// Function ID: 8741
+// Module ID: 8753
+// Function ID: 8754
 // Name: ProfilePreviewWrapper
-// Dependencies: [19, 17, 678, 21, 4189, 712, 4611, 8661, 8072, 8741, 8742, 8743, 1901, 679, 8745, 8748, 2]
+// Dependencies: [19, 17, 678, 21, 4193, 712, 4615, 8674, 8079, 8754, 8755, 8756, 1901, 679, 8758, 8761, 2]
 // Exports: IndividualProductPreview
 
-// Module 8740 (ProfilePreviewWrapper)
+// Module 8753 (ProfilePreviewWrapper)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import items from "items";
@@ -41,7 +41,7 @@ function ProfilePreviewWrapper(children) {
   obj = { style: tmp.profilePreviewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: null };
   const items1 = ["" + tmp.profilePreviewGradient.color + "00", tmp.profilePreviewGradient.color];
   obj[3] = items1;
-  items[1] = callback(importDefault(4611), obj);
+  items[1] = callback(importDefault(4615), obj);
   obj[1] = items;
   obj[2] = callback2(closure_4, obj);
   return callback(closure_3, obj);
@@ -64,11 +64,11 @@ function ProfileFramePreview(arg0) {
   let profileFrame;
   let width;
   ({ profileFrame, width, handlePreviewPress, onTrackPress } = arg0);
-  let obj = require(8661) /* useCurrentUser */;
+  let obj = require(8674) /* useCurrentUser */;
   obj = { handlePreviewPress, onTrackPress, children: null };
   const currentUser = obj.useCurrentUser();
   obj = { profileFrame, user: currentUser, maxWidth: width, style: createCacheKey().profilePreview };
-  obj[2] = callback(importDefault(8741), obj);
+  obj[2] = callback(importDefault(8754), obj);
   return callback(ProfilePreviewWrapper, obj);
 }
 class AvatarDecorationPreview {
@@ -149,11 +149,11 @@ export const IndividualProductPreview = function IndividualProductPreview(arg0) 
   } else if (tmp(1901).CollectiblesItemType.EXTERNAL_SKU === type) {
     const ALL = tmp(679).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      let tmp5 = callback(tmp(8745).FractionalNitroPreview, {});
+      let tmp5 = callback(tmp(8758).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === constants.ORB_PROFILE_BADGE) {
-        tmp5 = callback(tmp(8748).OrbBadgePreview, {});
+        tmp5 = callback(tmp(8761).OrbBadgePreview, {});
       }
     }
     return tmp5;

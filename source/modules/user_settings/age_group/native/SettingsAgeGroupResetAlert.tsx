@@ -1,10 +1,10 @@
-// Module ID: 13800
-// Function ID: 13801
+// Module ID: 13824
+// Function ID: 13825
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 21, 1480, 12815, 4530, 3889, 1236, 4533, 2741, 4533, 2]
+// Dependencies: [5, 21, 1480, 12840, 4534, 3893, 1236, 4537, 2743, 4537, 2]
 // Exports: default
 
-// Module 13800 (SettingsAgeGroupResetAlert)
+// Module 13824 (SettingsAgeGroupResetAlert)
 import presentAddedFriendToast from "presentAddedFriendToast";
 import jsxProd from "jsxProd";
 
@@ -50,12 +50,12 @@ export default function SettingsAgeGroupResetAlert() {
               c1 = 2;
               c3 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(12815).resetAgeVerification();
+              obj1[0] = outer1_0(12840).resetAgeVerification();
               return obj1;
             }
           } else if (1 === tmp7) {
             dependencyMap = 0;
-            let obj2 = outer1_0(3889);
+            let obj2 = outer1_0(3893);
             const intl = outer1_0(1236).intl;
             obj2.presentError(intl.string(outer1_0(1236).t.fEptJP));
             const _Error = Error;
@@ -71,7 +71,7 @@ export default function SettingsAgeGroupResetAlert() {
             obj2[0] = arg1;
             return obj2;
           } else {
-            obj = outer1_0(4530);
+            obj = outer1_0(4534);
             obj.dismissAlert(outer1_6);
             navigation.goBack();
             dependencyMap = 0;
@@ -101,9 +101,9 @@ export default function SettingsAgeGroupResetAlert() {
   _require = obj.useNavigation();
   obj = { title: null, content: null, actions: null };
   let intl = _require(1236).intl;
-  obj[0] = intl.string(_handleConfirm(2741)["bD//cU"]);
+  obj[0] = intl.string(_handleConfirm(2743)["bD//cU"]);
   const intl2 = _require(1236).intl;
-  obj[1] = intl2.string(_handleConfirm(2741).FbTAmI);
+  obj[1] = intl2.string(_handleConfirm(2743).FbTAmI);
   obj = { children: null };
   let obj1 = {
     variant: "destructive",
@@ -120,14 +120,14 @@ export default function SettingsAgeGroupResetAlert() {
     text: null
   };
   const intl3 = _require(1236).intl;
-  obj1[2] = intl3.string(_handleConfirm(2741).V822Mp);
-  const items = [callback(_require(4533).AlertActionButton, obj1, "confirm"), ];
+  obj1[2] = intl3.string(_handleConfirm(2743).V822Mp);
+  const items = [callback(_require(4537).AlertActionButton, obj1, "confirm"), ];
   let obj2 = { variant: "secondary", text: null };
   const intl4 = _require(1236).intl;
   obj2[1] = intl4.string(_require(1236).t["ETE/oC"]);
-  items[1] = callback(_require(4533).AlertActionButton, obj2, "cancel");
+  items[1] = callback(_require(4537).AlertActionButton, obj2, "cancel");
   obj[0] = items;
-  obj[2] = callback2(_require(4533).AlertActions, obj);
-  return callback(_require(4533).AlertModal, obj);
+  obj[2] = callback2(_require(4537).AlertActions, obj);
+  return callback(_require(4537).AlertModal, obj);
 };
 export const SETTINGS_AGE_GROUP_RESET_ALERT_ID = "settings-age-group-reset";

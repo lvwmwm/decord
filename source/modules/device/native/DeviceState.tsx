@@ -1,10 +1,10 @@
-// Module ID: 6034
-// Function ID: 6035
+// Module ID: 6040
+// Function ID: 6041
 // Name: _getDeviceState
-// Dependencies: [5, 17, 3, 6035, 2]
+// Dependencies: [5, 17, 3, 6041, 2]
 // Exports: getDeviceState
 
-// Module 6034 (_getDeviceState)
+// Module 6040 (_getDeviceState)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { NativeModules } from "get ActivityIndicator";
 

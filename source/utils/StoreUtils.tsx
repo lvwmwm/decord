@@ -1,10 +1,10 @@
-// Module ID: 4427
-// Function ID: 4428
+// Module ID: 4431
+// Function ID: 4432
 // Name: _httpGetWithCountryCodeQuery
-// Dependencies: [5, 1218, 3837, 3838, 3841, 676, 4428, 4426, 4507, 1450, 4509, 530, 500, 1236, 2]
+// Dependencies: [5, 1218, 3841, 3842, 3845, 676, 4432, 4430, 4511, 1450, 4513, 530, 500, 1236, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 4427 (_httpGetWithCountryCodeQuery)
+// Module 4431 (_httpGetWithCountryCodeQuery)
 import closure_2 from "ME";
 import fetchFingerprint from "fetchFingerprint";
 import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
@@ -101,7 +101,7 @@ function _httpGetWithCountryCodeQuery() {
                         let closure_0 = arg0;
                         let c2 = 0;
                         let c3 = 0;
-                        return (/* F119029 */ function*() { ... })();
+                        return (/* F119247 */ function*() { ... })();
                       });
                       return new Promise(function() {
                         const self = this;
@@ -168,7 +168,7 @@ function _httpGetWithCountryCodeQuery() {
               closure_7.payment_source_id = paymentSourceId;
             }
             if (null != defaultBillingCountryCode) {
-              if (typeof obj3 !== "tee") {
+              if (typeof obj3 !== "__FORMATJS_LISTFORMAT_DATA__") {
                 obj3 = { url: null, oldFormErrors: true, rejectWithError: false };
                 obj3[0] = obj3;
               }
@@ -252,10 +252,10 @@ export const getAssetURL = function getAssetURL(closure_7, mimeType, arg2, mp4) 
   }
   let sum = combined;
   if (null != arg2) {
-    const obj = require(1450) /* isAttachmentLadderEnabled */;
+    const obj = require(1450) /* handleImageLoad */;
     const _HermesInternal3 = HermesInternal;
-    sum = combined + "?size=" + obj.getBestMediaProxySize(arg2 * require(1450) /* isAttachmentLadderEnabled */.getDevicePixelRatio());
-    const obj2 = require(1450) /* isAttachmentLadderEnabled */;
+    sum = combined + "?size=" + obj.getBestMediaProxySize(arg2 * require(1450) /* handleImageLoad */.getDevicePixelRatio());
+    const obj2 = require(1450) /* handleImageLoad */;
   }
   return sum;
 };

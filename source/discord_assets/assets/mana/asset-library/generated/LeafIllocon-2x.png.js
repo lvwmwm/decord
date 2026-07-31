@@ -1,9 +1,9 @@
-// Module ID: 7254
-// Function ID: 7255
+// Module ID: 7262
+// Function ID: 7263
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7254 (metadata)
+// Module 7262 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/LeafIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/92773bd0c7010a62e72c3dfc11378615ddbb0324f9fbe3ff200d5bd915b73a57.png";

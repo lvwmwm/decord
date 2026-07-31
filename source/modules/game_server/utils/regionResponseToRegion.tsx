@@ -1,10 +1,10 @@
-// Module ID: 11575
-// Function ID: 11576
+// Module ID: 11592
+// Function ID: 11593
 // Name: regionResponseToRegion
 // Dependencies: [2]
 // Exports: default
 
-// Module 11575 (regionResponseToRegion)
+// Module 11592 (regionResponseToRegion)
 const result = require("set").fileFinishedImporting("modules/game_server/utils/regionResponseToRegion.tsx");
 
 export default function regionResponseToRegion(id) {

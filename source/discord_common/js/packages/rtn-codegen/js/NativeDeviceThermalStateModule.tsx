@@ -1,9 +1,9 @@
-// Module ID: 10612
-// Function ID: 10613
+// Module ID: 10630
+// Function ID: 10631
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 10612 (enforcing)
+// Module 10630 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeDeviceThermalStateModule");

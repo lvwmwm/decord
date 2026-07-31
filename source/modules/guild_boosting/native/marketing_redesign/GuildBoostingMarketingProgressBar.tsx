@@ -1,10 +1,10 @@
-// Module ID: 12639
-// Function ID: 12640
+// Module ID: 12664
+// Function ID: 12665
 // Name: BoostedGuildTiers
-// Dependencies: [32, 19, 17, 4181, 676, 21, 4189, 12640, 712, 4125, 647, 4050, 4081, 4599, 4611, 4035, 2]
+// Dependencies: [32, 19, 17, 4185, 676, 21, 4193, 12665, 712, 4129, 647, 4054, 4085, 4603, 4615, 4039, 2]
 // Exports: default
 
-// Module 12639 (BoostedGuildTiers)
+// Module 12664 (BoostedGuildTiers)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

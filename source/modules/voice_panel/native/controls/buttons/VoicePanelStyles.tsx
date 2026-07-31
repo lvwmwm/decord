@@ -1,10 +1,10 @@
-// Module ID: 15999
-// Function ID: 16000
+// Module ID: 16027
+// Function ID: 16028
 // Name: useVoicePanelButtonStyles
-// Dependencies: [4189, 712, 8115, 1348, 2]
+// Dependencies: [4193, 712, 8122, 1348, 2]
 // Exports: useVoicePanelButtonStyles
 
-// Module 15999 (useVoicePanelButtonStyles)
+// Module 16027 (useVoicePanelButtonStyles)
 import createCacheKey from "createCacheKey";
 
 let closure_3 = createCacheKey.createStyles((arg0, arg1) => {
@@ -36,6 +36,6 @@ let closure_3 = createCacheKey.createStyles((arg0, arg1) => {
 const result = require("map").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelStyles.tsx");
 
 export const useVoicePanelButtonStyles = function useVoicePanelButtonStyles(wrapperSpecs) {
-  const derivedStateFromSharedValue = require(8115) /* map */.useDerivedStateFromSharedValue(wrapperSpecs, (drawerMode) => drawerMode.drawerMode);
+  const derivedStateFromSharedValue = require(8122) /* map */.useDerivedStateFromSharedValue(wrapperSpecs, (drawerMode) => drawerMode.drawerMode);
   return callback(derivedStateFromSharedValue, importDefault(1348)("VoicePanelStyles"));
 };

@@ -1,10 +1,10 @@
-// Module ID: 10648
-// Function ID: 10649
+// Module ID: 10666
+// Function ID: 10667
 // Name: ConfirmActivityGateContent
-// Dependencies: [19, 17, 4214, 21, 4189, 10649, 4185, 1236, 4600, 3886, 4528, 2]
+// Dependencies: [19, 17, 4218, 21, 4193, 10667, 4189, 1236, 4604, 3890, 4532, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 10648 (ConfirmActivityGateContent)
+// Module 10666 (ConfirmActivityGateContent)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PRIVATE_APPS_HELP_ARTICLE } from "items3";
@@ -19,20 +19,20 @@ const require = arg1;
 function ConfirmActivityGateContent(activityName) {
   const tmp = callback3();
   let obj = { style: tmp.alertContainer, children: null };
-  obj = { source: importDefault(10649), style: tmp.announcementBirb };
+  obj = { source: importDefault(10667), style: tmp.announcementBirb };
   const items = [callback(closure_3, obj), , , ];
   obj = { style: tmp.alertEyebrowText, variant: "eyebrow", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["06YebE"]);
-  items[1] = callback(require(4185) /* Text */.Text, obj);
+  items[1] = callback(require(4189) /* Text */.Text, obj);
   const obj1 = { style: tmp.alertTitleText, variant: "heading-lg/bold", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[2] = intl2.format(require(1236) /* getSystemLocale */.t["Z/eMDT"], { activityName: activityName.application.name });
-  items[2] = callback(require(4185) /* Text */.Text, obj1);
+  items[2] = callback(require(4189) /* Text */.Text, obj1);
   const obj3 = { style: tmp.alertSubtitleText, variant: "text-sm/normal", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj3[2] = intl3.string(require(1236) /* getSystemLocale */.t.z81WwD);
-  items[3] = callback(require(4185) /* Text */.Text, obj3);
+  items[3] = callback(require(4189) /* Text */.Text, obj3);
   obj[1] = items;
   return callback2(closure_4, obj);
 }
@@ -48,7 +48,7 @@ function LinkButton() {
   };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.E0gf5l);
-  obj[1] = callback(require(4600) /* Button */.Button, obj);
+  obj[1] = callback(require(4604) /* Button */.Button, obj);
   return callback(closure_4, obj);
 }
 ({ Image: c3, View: c4 } = get_ActivityIndicator);
@@ -61,7 +61,7 @@ export const confirmExternalAppLaunchAlert = function confirmExternalAppLaunchAl
   let onCancel;
   let onConfirm;
   ({ application, onConfirm, onCancel } = arg0);
-  let obj = importDefault(4528);
+  let obj = importDefault(4532);
   obj = { title: "", children: callback(ConfirmActivityGateContent, { application }), onConfirm, confirmText: null, onCancel: null, cancelText: null, footer: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t["3PatSz"]);

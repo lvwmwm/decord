@@ -1,10 +1,10 @@
-// Module ID: 15247
-// Function ID: 15248
+// Module ID: 15275
+// Function ID: 15276
 // Name: label
-// Dependencies: [19, 21, 687, 1236, 10251, 5551, 5554, 5220, 2]
+// Dependencies: [19, 21, 687, 1236, 10269, 5555, 5558, 5224, 2]
 // Exports: default
 
-// Module 15247 (label)
+// Module 15275 (label)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -74,7 +74,7 @@ const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native
 
 export default function FocusModeOptionsActionSheet(onSelect) {
   onSelect = onSelect.onSelect;
-  let obj = onSelect(10251);
+  let obj = onSelect(10269);
   const focusModeEnabled = obj.useFocusModeEnabled();
   obj = { title: null, hasIcons: false, children: null };
   const intl = onSelect(1236).intl;
@@ -91,7 +91,7 @@ export default function FocusModeOptionsActionSheet(onSelect) {
     };
     const intl4 = tmp(1236).intl;
     obj[4] = intl4.string(tmp(1236).t.rk35Gm);
-    tmp4Result = tmp4(tmp(5220).TableRow, obj);
+    tmp4Result = tmp4(tmp(5224).TableRow, obj);
   }
   const obj1 = { children: null };
   const items = [tmp4Result, ];
@@ -108,6 +108,6 @@ export default function FocusModeOptionsActionSheet(onSelect) {
     return outer1_2(onSelect(outer1_1[7]).TableRow, obj, "" + duration);
   });
   obj[2] = items;
-  obj1[0] = closure_3(onSelect(5554).TableRowGroup, obj);
-  return closure_2(onSelect(5551).ActionSheet, obj1);
+  obj1[0] = closure_3(onSelect(5558).TableRowGroup, obj);
+  return closure_2(onSelect(5555).ActionSheet, obj1);
 };

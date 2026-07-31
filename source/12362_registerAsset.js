@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset";
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/quests/images", width: 608, height: 608, scales: [2, 3], hash: "6936c050862daceed7175a327466cd4a", name: "quests_embed_mobile_missing", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/seasonal", width: 144, height: 150, scales: [1], hash: "2428d071b75d8fac57234ccab81c5c37", name: "cake_idle", type: "png" });

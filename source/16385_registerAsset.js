@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset";
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 272, height: 130, scales: [2, 3], hash: "73bc70235c9f49d70c996bc5036e22a8", name: "empty_server_settings_audit_log_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 24, height: 24, scales: [2, 3], hash: "0ad684cb154c8b73e2d19dd6933251ad", name: "ic_premium_perk_money_24px", type: "png" });

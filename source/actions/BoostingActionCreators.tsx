@@ -1,10 +1,10 @@
-// Module ID: 4085
-// Function ID: 4086
+// Module ID: 4089
+// Function ID: 4090
 // Name: _fetchAppliedGuildBoostsForGuild
-// Dependencies: [5, 4086, 4087, 3841, 676, 530, 709, 4088, 2]
+// Dependencies: [5, 4090, 4091, 3845, 676, 530, 709, 4092, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 4085 (_fetchAppliedGuildBoostsForGuild)
+// Module 4089 (_fetchAppliedGuildBoostsForGuild)
 import sendRequest from "sendRequest";
 import createFromServer from "createFromServer";
 import closure_5 from "createFromServer";
@@ -370,7 +370,7 @@ function _fetchAppliedBoostsCooldown() {
             c5 = 3;
             return { value: null, done: true };
           } else {
-            const appliedGuildBoostError = new ends_at(4088).AppliedGuildBoostError(lib);
+            const appliedGuildBoostError = new ends_at(4092).AppliedGuildBoostError(lib);
             throw appliedGuildBoostError;
           }
         } else if (arg0 === 1) {
@@ -604,7 +604,7 @@ function _unapplyFromGuild() {
           } else if (1 === tmp7) {
             c5 = 0;
             dependencyMap = createFromServer;
-            appliedGuildBoostError = new callback(4088).AppliedGuildBoostError(dependencyMap);
+            appliedGuildBoostError = new callback(4092).AppliedGuildBoostError(dependencyMap);
             let obj3 = appliedGuildBoostError(709);
             obj3 = { type: "GUILD_UNAPPLY_BOOST_FAIL", error: null };
             obj3[1] = appliedGuildBoostError;

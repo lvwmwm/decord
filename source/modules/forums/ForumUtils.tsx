@@ -1,10 +1,10 @@
-// Module ID: 6065
-// Function ID: 6066
+// Module ID: 6071
+// Function ID: 6072
 // Name: getCreationDefaultFormatter
-// Dependencies: [1372, 1862, 4201, 6066, 1379, 1236, 1381, 2]
+// Dependencies: [1372, 1862, 4205, 6072, 1379, 1236, 1381, 2]
 // Exports: canDisplayPostUnreadMessageCount, getForumPostReadStates, getForumPostReadStatesById, getForumTimestampFormatter, isForumPostPinned
 
-// Module 6065 (getCreationDefaultFormatter)
+// Module 6071 (getCreationDefaultFormatter)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import generateOldThreadCutoff from "generateOldThreadCutoff";

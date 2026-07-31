@@ -1,10 +1,10 @@
-// Module ID: 15762
-// Function ID: 15763
+// Module ID: 15790
+// Function ID: 15791
 // Name: ConnectionIcon
-// Dependencies: [19, 17, 4226, 4869, 1369, 21, 4189, 712, 3901, 1581, 589, 4871, 5518, 5515, 5535, 15763, 4157, 15765, 1959, 5242, 5243, 4598, 15751, 4185, 1236, 2773, 8701, 4600, 10178, 3899, 1416, 4602, 5525, 5521, 2]
+// Dependencies: [19, 17, 4230, 4873, 1369, 21, 4193, 712, 3905, 1581, 589, 4875, 5522, 5519, 5539, 15791, 4161, 15793, 1959, 5246, 5247, 4602, 15779, 4189, 1236, 2775, 8714, 4604, 10195, 3903, 1416, 4606, 5529, 5525, 2]
 // Exports: default, useShouldShowConnectionDeprecationBottomSheet
 
-// Module 15762 (ConnectionIcon)
+// Module 15790 (ConnectionIcon)
 import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase";
 import { View } from "IncentivizedAccountLinkConfirmationBottomSheet";
 import addApplication from "addApplication";
@@ -21,7 +21,7 @@ function ConnectionIcon(arg0) {
   let theme;
   ({ platform, theme } = arg0);
   const tmp = createCacheKey();
-  let obj = require(3899) /* isThemeLight */;
+  let obj = require(3903) /* isThemeLight */;
   const isThemeDarkResult = obj.isThemeDark(theme);
   const tmp2 = require;
   const icon = platform.icon;
@@ -29,10 +29,10 @@ function ConnectionIcon(arg0) {
   const source = require(1416) /* getAvatarURL */.makeSource(isThemeDarkResult ? icon.darkPNG : icon.lightPNG);
   obj = { size: null, source: null, disableColor: true, style: null };
   const obj2 = require(1416) /* getAvatarURL */;
-  obj[0] = tmp2(4602).IconSizes.CUSTOM;
+  obj[0] = tmp2(4606).IconSizes.CUSTOM;
   obj[1] = source;
   obj[3] = tmp.connectionIcon;
-  obj[1] = callback(importDefault(4602), obj);
+  obj[1] = callback(importDefault(4606), obj);
   return callback(View, obj);
 }
 function ApplicationIcon(application) {
@@ -42,9 +42,9 @@ function ApplicationIcon(application) {
   if (null != application) {
     obj = { game: null, size: null };
     obj[0] = application;
-    obj[1] = require(5525) /* GameIcon */.GameIconSizes.NORMAL;
-    tmpResult = tmp(importDefault(5525), obj);
-    const tmp6 = importDefault(5525);
+    obj[1] = require(5529) /* GameIcon */.GameIconSizes.NORMAL;
+    tmpResult = tmp(importDefault(5529), obj);
+    const tmp6 = importDefault(5529);
   }
   obj[1] = tmpResult;
   return closure_8(View, obj);
@@ -220,8 +220,8 @@ export const useShouldShowConnectionDeprecationBottomSheet = function useShouldS
       replacedBy = migrationData.replacedBy;
     }
   }
-  const getOrFetchApplication = deprecatedPlatformTypes(5521).useGetOrFetchApplication(replacedBy);
-  const tmp5 = importDefault(5518)(getOrFetchApplication);
+  const getOrFetchApplication = deprecatedPlatformTypes(5525).useGetOrFetchApplication(replacedBy);
+  const tmp5 = importDefault(5522)(getOrFetchApplication);
   ({ hasAlreadyLinked, canStartAuthorization } = tmp5);
   if (!fetchingConnections) {
     fetchingConnections = !tmp5.fetched;

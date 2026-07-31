@@ -1,10 +1,10 @@
-// Module ID: 9959
-// Function ID: 9960
+// Module ID: 9976
+// Function ID: 9977
 // Name: _submitPollVote
-// Dependencies: [5, 676, 530, 4088, 2]
+// Dependencies: [5, 676, 530, 4092, 2]
 // Exports: endPollEarly, submitPollVote
 
-// Module 9959 (_submitPollVote)
+// Module 9976 (_submitPollVote)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
@@ -81,7 +81,7 @@ function _submitPollVote() {
             }
           } else if (2 === tmp8) {
             c4 = 0;
-            const aPIError = new callback(4088).APIError(closure_3);
+            const aPIError = new callback(4092).APIError(closure_3);
             throw aPIError;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -188,7 +188,7 @@ function _endPollEarly() {
           } else if (2 === tmp8) {
             c4 = 0;
             asyncGeneratorStep = closure_3;
-            const aPIError = new callback(4088).APIError(asyncGeneratorStep);
+            const aPIError = new callback(4092).APIError(asyncGeneratorStep);
             throw aPIError;
           } else if (arg0 === 1) {
             c6 = 3;

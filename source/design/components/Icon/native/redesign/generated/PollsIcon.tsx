@@ -1,10 +1,10 @@
-// Module ID: 9672
-// Function ID: 9673
+// Module ID: 9689
+// Function ID: 9690
 // Name: PollsIcon
-// Dependencies: [19, 21, 712, 3892, 9673, 2]
+// Dependencies: [19, 21, 712, 3896, 9690, 2]
 // Exports: PollsIcon
 
-// Module 9672 (PollsIcon)
+// Module 9689 (PollsIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const PollsIcon = function PollsIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9673) /* registerAsset */;
+  obj[0] = require(9690) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3892) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3896) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

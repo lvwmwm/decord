@@ -1,10 +1,10 @@
-// Module ID: 5644
-// Function ID: 5645
+// Module ID: 5648
+// Function ID: 5649
 // Name: str2
 // Dependencies: [1578, 1577, 500, 2]
 // Exports: getDevicePushProvider
 
-// Module 5644 (str2)
+// Module 5648 (str2)
 import getConstants from "getConstants";
 import isMetaQuest from "isMetaQuest";
 

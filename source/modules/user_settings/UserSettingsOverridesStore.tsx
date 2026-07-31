@@ -1,9 +1,9 @@
-// Module ID: 3863
-// Function ID: 3864
+// Module ID: 3867
+// Function ID: 3868
 // Name: updateExistingSettings
 // Dependencies: [1340, 589, 595, 709, 2]
 
-// Module 3863 (updateExistingSettings)
+// Module 3867 (updateExistingSettings)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import { PersistedStore } from "initialize";
 

@@ -1,10 +1,10 @@
-// Module ID: 16515
-// Function ID: 16516
+// Module ID: 16544
+// Function ID: 16545
 // Name: ApplicationStatusNotice
-// Dependencies: [32, 19, 17, 14218, 676, 16516, 21, 4189, 712, 11379, 1236, 16517, 4185, 16518, 1480, 4157, 16520, 1959, 16520, 7631, 4600, 1297, 4601, 8343, 16528, 16532, 16541, 16544, 16549, 16550, 1481, 8423, 503, 5140, 16514, 3889, 5177, 5141, 16551, 2]
+// Dependencies: [32, 19, 17, 14241, 676, 16545, 21, 4193, 712, 11397, 1236, 16546, 4189, 16547, 1480, 4161, 16549, 1959, 16549, 7639, 4604, 1297, 4605, 8350, 16557, 16561, 16570, 16573, 16578, 16579, 1481, 8436, 503, 5144, 16543, 3893, 5181, 5145, 16580, 2]
 // Exports: default
 
-// Module 16515 (ApplicationStatusNotice)
+// Module 16544 (ApplicationStatusNotice)
 import encodeProperties from "encodeProperties";
 import Form from "Form";
 import get_ActivityIndicator from "asyncRequireImpl";
@@ -37,7 +37,7 @@ function ApplicationStatusNotice(arg0) {
     obj[0] = items;
     obj = { children: null };
     obj[0] = resubmissionError.getAnyErrorMessage();
-    obj[1] = callback(importDefault(11379), obj);
+    obj[1] = callback(importDefault(11397), obj);
     return callback(closure_6, obj);
   } else {
     if (isApplicationPending) {
@@ -61,7 +61,7 @@ function ApplicationStatusNotice(arg0) {
       obj1[1] = stringResult;
       obj1[2] = createEnableRequest;
       obj1[3] = resubmittingEnableRequest;
-      obj[1] = callback(importDefault(16517), obj1);
+      obj[1] = callback(importDefault(16546), obj1);
       tmp7 = callback(closure_6, obj);
     }
     return tmp7;

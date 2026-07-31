@@ -5,8 +5,8 @@
 
 // Module 196 (isNativeFunction)
 arg5.isNativeFunction = function isNativeFunction(arg0) {
-  let tmp = typeof arg0 === "find";
-  if (typeof arg0 !== "ZodObject") {
+  let tmp = typeof arg0 === "fileFinishedImporting";
+  if (typeof arg0 !== "disabledUntil") {
     let str = arg0.toString();
     str = "[native code]";
     tmp = str.indexOf("[native code]") > -1;
@@ -17,8 +17,8 @@ arg5.hasNativeConstructor = function hasNativeConstructor(arg0, GeneratorFunctio
   let str = Object.getPrototypeOf(arg0).constructor;
   let tmp = str.name === GeneratorFunction;
   if (tmp) {
-    let tmp2 = typeof str === "find";
-    if (typeof str !== "ZodObject") {
+    let tmp2 = typeof str === "fileFinishedImporting";
+    if (typeof str !== "disabledUntil") {
       str = str.toString();
       tmp2 = str.indexOf("[native code]") > -1;
     }

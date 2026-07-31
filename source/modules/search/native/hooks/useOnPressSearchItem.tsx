@@ -1,15 +1,15 @@
-// Module ID: 15474
-// Function ID: 15475
+// Module ID: 15502
+// Function ID: 15503
 // Name: handleVoiceOrStageChannelConnectPress
-// Dependencies: [5, 19, 1372, 10098, 9097, 15475, 9125, 676, 1379, 11448, 11456, 1467, 3889, 1236, 8197, 3886, 1480, 15453, 15476, 1231, 8112, 4199, 4197, 6707, 1959, 4399, 4403, 12416, 4631, 4676, 9137, 1222, 10097, 2]
+// Dependencies: [5, 19, 1372, 10115, 9108, 15503, 9138, 676, 1379, 11466, 11474, 1467, 3893, 1236, 8204, 3890, 1480, 15481, 15504, 1231, 8119, 4203, 4201, 6713, 1959, 4403, 4407, 12442, 4635, 4680, 9150, 1222, 10114, 2]
 // Exports: useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 15474 (handleVoiceOrStageChannelConnectPress)
+// Module 15502 (handleVoiceOrStageChannelConnectPress)
 import SearchNavigatorScreens from "SearchNavigatorScreens";
 import ComponentDispatcher from "ComponentDispatcher";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import prototype from "prototype";
-import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import MessageEmbedTypes from "MessageEmbedTypes";
 import { SearchNavigatorScreens } from "SearchNavigatorScreens";
 import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
 import ME from "ME";
@@ -124,7 +124,7 @@ function _handleVoiceOrStageChannelConnectPress() {
   }
   return applyArgumentsResult;
 }
-({ SearchMediaTypes: error, SearchHistoryItemTypes: metroImportAll, SearchQueryTagTypes: c9 } = SearchAutocompleteSelectAnalyticsActions);
+({ SearchMediaTypes: error, SearchHistoryItemTypes: metroImportAll, SearchQueryTagTypes: c9 } = MessageEmbedTypes);
 ({ Routes: closure_12, ComponentActions: map1, ME: closure_14, SearchTypes: closure_15 } = ME);
 let result = require("ensureGuildLoaded").fileFinishedImporting("modules/search/native/hooks/useOnPressSearchItem.tsx");
 

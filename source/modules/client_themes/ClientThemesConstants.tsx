@@ -1,9 +1,9 @@
-// Module ID: 4002
-// Function ID: 4003
+// Module ID: 4006
+// Function ID: 4007
 // Name: items1
-// Dependencies: [505, 4003, 1306, 1236, 12, 2]
+// Dependencies: [505, 4007, 1306, 1236, 12, 2]
 
-// Module 4002 (items1)
+// Module 4006 (items1)
 import { ThemeTypes } from "sum";
 import apply from "apply";
 

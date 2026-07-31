@@ -1,10 +1,10 @@
-// Module ID: 6909
-// Function ID: 6910
+// Module ID: 6917
+// Function ID: 6918
 // Name: CatIllocon
-// Dependencies: [21, 5141, 6910, 2]
+// Dependencies: [21, 5145, 6918, 2]
 // Exports: CatIllocon
 
-// Module 6909 (CatIllocon)
+// Module 6917 (CatIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CatIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const CatIllocon = function CatIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6910);
+  obj[0] = importDefault(6918);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5141), { uri: null });
+  return jsx(importDefault(5145), { uri: null });
 };

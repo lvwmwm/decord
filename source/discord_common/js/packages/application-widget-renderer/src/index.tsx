@@ -1,9 +1,9 @@
-// Module ID: 12064
-// Function ID: 12065
+// Module ID: 12082
+// Function ID: 12083
 // Name: resolvedValuesFromUserApplicationIdentityProfile
-// Dependencies: [2, 12065, 12066, 12067, 12070, 12148, 12149]
+// Dependencies: [2, 12083, 12084, 12085, 12088, 12166, 12167]
 
-// Module 12064 (resolvedValuesFromUserApplicationIdentityProfile)
+// Module 12082 (resolvedValuesFromUserApplicationIdentityProfile)
 const result = require("resolveTextComponentValues").fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/index.tsx");
 for (const key10018 in require("toAsciiDigits")) {
   let tmp3 = key10018;

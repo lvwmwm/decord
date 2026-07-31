@@ -1,9 +1,9 @@
-// Module ID: 5800
-// Function ID: 5801
+// Module ID: 5805
+// Function ID: 5806
 // Name: fromServer
-// Dependencies: [32, 5801, 5802, 5807, 678, 676, 4230, 1901, 2]
+// Dependencies: [32, 5806, 5807, 5812, 678, 676, 4234, 1901, 2]
 
-// Module 5800 (fromServer)
+// Module 5805 (fromServer)
 import _slicedToArray from "_slicedToArray";
 import fromServer from "fromServer";
 import createCollectiblesItemsFromServerResponse from "createCollectiblesItemsFromServerResponse";
@@ -54,7 +54,7 @@ CollectiblesProductRecord["fromServer"] = function fromServer(arg0) {
   obj.premiumType = tmp8;
   obj.categorySkuId = category_sku_id;
   obj.isCategoryReward = closure_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === merged.sku_id);
-  obj.prices = importDefault(4230)(prices);
+  obj.prices = importDefault(4234)(prices);
   obj.items = callback(merged.items);
   let mapped;
   if (bundled_products != null) {
@@ -77,7 +77,7 @@ CollectiblesProductRecord["fromServer"] = function fromServer(arg0) {
   obj.badgeOverride = badge_override;
   obj.hideBadge = hide_badge;
   obj.isFirstParty = is_first_party;
-  if (typeof CollectiblesProductRecord !== "find") {
+  if (typeof CollectiblesProductRecord !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   tmp4 = new tmp4(obj, fromServerResult, obj, this, closure_8);
@@ -106,7 +106,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
         obj = {};
       }
       let items = obj.items;
-      obj = { storeListingId: null, skuId: null, name: null, summary: null, styles: null, type: null, premiumType: null, items: null, categorySkuId: null, isCategoryReward: null, prices: null, previewAssets: null, variants: null, googleSkuIds: null, eligibleOffers: "r", isFirstParty: "<string:1157628351>", bundledProducts: "Fahhrad" };
+      obj = { storeListingId: null, skuId: null, name: null, summary: null, styles: null, type: null, premiumType: null, items: null, categorySkuId: null, isCategoryReward: null, prices: null, previewAssets: null, variants: null, googleSkuIds: null, eligibleOffers: "r", isFirstParty: "trafikljus", bundledProducts: "v\u00E5gr\u00E4ta trafikljus" };
       ({ id: obj2[0], id: obj2[1] } = first);
       ({ name: obj2[2], summary: obj2[3], primaryCollectionStyles: obj2[4] } = skus);
       obj[5] = type;
@@ -157,7 +157,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
             }
             ({ items, item } = obj);
             const first = outer1_3(tenantMetadata.selectedOptions, 1)[0];
-            obj = { baseVariantName: null, baseVariantSkuId: null, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "e", type: "Array", premiumType: "call", items: "keys", categorySkuId: false, isCategoryReward: false, prices: false, previewAssets: false, googleSkuIds: false, eligibleOffers: false, variants: false, bundledProducts: false, isFirstParty: false };
+            obj = { baseVariantName: null, baseVariantSkuId: null, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "e", type: "Array", premiumType: "accessibilityRole", items: "y", categorySkuId: false, isCategoryReward: false, prices: null, previewAssets: null, googleSkuIds: null, eligibleOffers: null, variants: null, bundledProducts: null, isFirstParty: 199.5 };
             obj[0] = skus.name;
             obj[1] = first.id;
             let str;
@@ -207,7 +207,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
             }
             obj[16] = googleSkuIds;
             obj[20] = collectibles.isFirstParty;
-            if (typeof outer1_10 !== "find") {
+            if (typeof outer1_10 !== "fileFinishedImporting") {
               HermesBuiltin.throwTypeError();
             }
             const tmp16 = new outer1_14(obj, tmp, premiumType, items, premiumType, item);
@@ -256,7 +256,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
         found1 = mapped.filter((arg0) => null != arg0);
       }
       obj[16] = found1;
-      if (typeof CollectiblesProductRecord !== "find") {
+      if (typeof CollectiblesProductRecord !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       const tmp19 = new CollectiblesProductRecord(obj, premiumType, items, closure_7, type, str2);
@@ -290,7 +290,7 @@ prototype["fromServer"] = function fromServer(arg0) {
   obj.baseVariantSkuId = base_variant_sku_id;
   obj.variantLabel = variant_label;
   obj.variantValue = variant_value;
-  if (typeof prototype !== "find") {
+  if (typeof prototype !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   tmp2 = new tmp2(obj, fromServerResult, obj);

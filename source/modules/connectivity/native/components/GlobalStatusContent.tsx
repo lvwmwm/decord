@@ -1,31 +1,32 @@
-// Module ID: 10688
-// Function ID: 10689
+// Module ID: 10706
+// Function ID: 10707
 // Name: ConnectivityGlobalStatusContent
-// Dependencies: [19, 17, 1372, 1862, 4261, 4204, 10684, 676, 21, 4189, 712, 8925, 589, 10390, 10682, 4035, 4125, 4720, 4040, 10503, 500, 1581, 6676, 10689, 2]
+// Dependencies: [19, 17, 1372, 1862, 4265, 4208, 10702, 676, 21, 4193, 712, 8938, 589, 10408, 10700, 4039, 4129, 4724, 4044, 10521, 500, 1581, 6682, 10707, 2]
 // Exports: default
 
-// Module 10688 (ConnectivityGlobalStatusContent)
+// Module 10706 (ConnectivityGlobalStatusContent)
 import "ChannelCallCameraPreview";
 import { View } from "getIsScreenLandscape";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import createRTCConnection from "createRTCConnection";
 import handleUpdate from "handleUpdate";
+import { RTC_PANEL_HEIGHT } from "RTC_PANEL_HEIGHT";
 import { RTCConnectionStates } from "ME";
 import jsxProd from "useSafeAreaInsets";
 import createCacheKey from "createCacheKey";
 
 let c10;
-let c9;
+let unpackModuleId;
 let require = arg1;
-({ jsx: c9, jsxs: c10 } = jsxProd);
+({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 createCacheKey = { bgNeutral: null, bg: null, container: null };
 createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { backgroundColor: require("Themes").unsafe_rawColors.GREEN_360 };
-createCacheKey[2] = { paddingHorizontal: 16, minHeight: require("RTC_PANEL_HEIGHT").RTC_PANEL_HEIGHT, alignItems: "center", justifyContent: "center" };
+createCacheKey[2] = { paddingHorizontal: 16, alignItems: "center", justifyContent: "center" };
 createCacheKey = createCacheKey.createStyles(createCacheKey);
-const obj1 = { backgroundColor: require("Themes").unsafe_rawColors.GREEN_360 };
+let obj1 = { backgroundColor: require("Themes").unsafe_rawColors.GREEN_360 };
 const result = require("ensureGuildLoaded").fileFinishedImporting("modules/connectivity/native/components/GlobalStatusContent.tsx");
 
 export default function ConnectivityGlobalStatusContent() {
@@ -33,7 +34,7 @@ export default function ConnectivityGlobalStatusContent() {
   let remotePlatform;
   let rtcConnectionState;
   const tmp = createCacheKey();
-  const tmp4 = importDefault(8925)();
+  const tmp4 = importDefault(8938)();
   const require = tmp4;
   let obj = require(589) /* initialize */;
   const items = [createRTCConnection, createGuildRecordFromRust, ensureGuildLoaded, handleUpdate];
@@ -71,7 +72,7 @@ export default function ConnectivityGlobalStatusContent() {
     }
     const obj = { guild, channel, rtcConnectionState: null, remotePlatform: null };
     if (null != closure_0) {
-      let RTC_CONNECTED = outer1_8.RTC_CONNECTED;
+      let RTC_CONNECTED = outer1_9.RTC_CONNECTED;
     } else {
       RTC_CONNECTED = outer1_6.getState();
     }
@@ -89,50 +90,51 @@ export default function ConnectivityGlobalStatusContent() {
   if (channel != null) {
     id = channel.id;
   }
-  let tmp2ResultResult = importDefault(10390)(id);
-  const tmp2Result = importDefault(10390);
-  let tmp5Result = tmp5(4035);
+  let tmp2ResultResult = importDefault(10408)(id);
+  const tmp2Result = importDefault(10408);
+  let tmp5Result = tmp5(4039);
   let tmp14 = tmp12;
-  const tmp11 = importDefault(10682)();
+  const tmp11 = importDefault(10700)();
   if (isGuildStageVoiceResult) {
     if (!tmp2ResultResult) {
       tmp2ResultResult = tmp11;
     }
     tmp14 = tmp2ResultResult;
   }
-  tmp5Result = tmp5(4720);
+  tmp5Result = tmp5(4724);
   let isScreenLandscape = tmp5Result.useIsScreenLandscape();
   if (isScreenLandscape) {
-    isScreenLandscape = tmp5(4040).isModalOpen(tmp2(10503));
-    const tmp5Result1 = tmp5(4040);
+    isScreenLandscape = tmp5(4044).isModalOpen(tmp2(10521));
+    const tmp5Result1 = tmp5(4044);
   }
   if (isScreenLandscape) {
     isScreenLandscape = tmp5(500).isAndroid();
     const tmp5Result2 = tmp5(500);
   }
-  const items2 = [tmp14 ? tmp.bg : tmp.bgNeutral, tmp.container, ];
   let num = 0;
   if (!isScreenLandscape) {
     num = tmp2(1581)().top;
   }
   obj = { style: items2, children: null };
-  items2[2] = { paddingTop: num };
+  items2 = [tmp14 ? tmp.bg : tmp.bgNeutral, tmp.container, ];
+  obj = { minHeight: RTC_PANEL_HEIGHT + num, paddingTop: num };
+  items2[2] = obj;
   if (isScreenLandscape) {
-    isScreenLandscape = callback(tmp2(6676), { hidden: true });
+    isScreenLandscape = callback(tmp2(6682), { hidden: true });
   }
   const items3 = [isScreenLandscape, ];
   let tmp19 = null;
   if (isGuildStageVoiceResult) {
-    obj = { channel: null, guild: null, hasRTCConnectivity: null, isDarkTheme: null, rtcConnectionState: null, remotePlatform: null };
-    obj[0] = channel;
-    obj[1] = guild;
-    obj[2] = tmp12;
-    obj[3] = isThemeDarkResult;
-    obj[4] = rtcConnectionState;
-    obj[5] = remotePlatform;
-    tmp19 = callback(tmp2(10689), obj);
+    const obj1 = { channel: null, guild: null, hasRTCConnectivity: null, isDarkTheme: null, rtcConnectionState: null, remotePlatform: null };
+    obj1[0] = channel;
+    obj1[1] = guild;
+    obj1[2] = tmp12;
+    obj1[3] = isThemeDarkResult;
+    obj1[4] = rtcConnectionState;
+    obj1[5] = remotePlatform;
+    tmp19 = callback(tmp2(10707), obj1);
   }
   items3[1] = tmp19;
   obj[1] = items3;
-  return closure_10(View, obj);
+  return closure_11(View, obj);
 };

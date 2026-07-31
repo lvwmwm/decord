@@ -16,5 +16,5 @@ export const IS_IOS = false;
 export const IS_WEB = false;
 export const IS_JEST = JEST_WORKER_ID;
 export const IS_WINDOWS = false;
-export const IS_WINDOW_AVAILABLE = typeof window === "__INTERNAL_SLOT_MAP__";
+export const IS_WINDOW_AVAILABLE = typeof window === "pack";
 export const SHOULD_BE_USE_WEB = flag;

@@ -1,10 +1,10 @@
-// Module ID: 16197
-// Function ID: 16198
+// Module ID: 16226
+// Function ID: 16227
 // Name: computeLivingRoomWorldPoints
-// Dependencies: [1218, 16187, 16192, 16193, 589, 16188, 2]
+// Dependencies: [1218, 16215, 16220, 16221, 589, 16216, 2]
 // Exports: livingRoomWorldPointToMediaEnginePoint, useGuildRoomSpatialAudio
 
-// Module 16197 (computeLivingRoomWorldPoints)
+// Module 16226 (computeLivingRoomWorldPoints)
 import fetchFingerprint from "fetchFingerprint";
 import handleSelectedChannelStoreChange from "handleSelectedChannelStoreChange";
 import getName from "getName";
@@ -64,7 +64,7 @@ export const useGuildRoomSpatialAudio = function useGuildRoomSpatialAudio(channe
   let obj = channelId(589);
   const items = [fetchFingerprint];
   stateFromStores = obj.useStateFromStores(items, () => id.getId());
-  let interactionsEnabled = stateFromStores(16188).useExperiment({ guildId, location: "SpatialAudioPanel" }).interactionsEnabled;
+  let interactionsEnabled = stateFromStores(16216).useExperiment({ guildId, location: "SpatialAudioPanel" }).interactionsEnabled;
   if (interactionsEnabled) {
     interactionsEnabled = null != guildId;
   }
@@ -74,7 +74,7 @@ export const useGuildRoomSpatialAudio = function useGuildRoomSpatialAudio(channe
   }
   dependencyMap = tmp5;
   obj = { available: interactionsEnabled, worldPoints: null };
-  const obj2 = stateFromStores(16188);
+  const obj2 = stateFromStores(16216);
   const tmp = channelId;
   const items1 = [handleSelectedChannelStoreChange];
   const items2 = [tmp5, channelId, stateFromStores];

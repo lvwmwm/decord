@@ -1,10 +1,10 @@
-// Module ID: 7786
-// Function ID: 7787
+// Module ID: 7794
+// Function ID: 7795
 // Name: createGuildStreamSystemMessage
-// Dependencies: [4254, 7758, 7740, 7742, 1236, 7743, 2]
+// Dependencies: [4258, 7766, 7748, 7750, 1236, 7751, 2]
 // Exports: createGuildStreamSystemMessage
 
-// Module 7786 (createGuildStreamSystemMessage)
+// Module 7794 (createGuildStreamSystemMessage)
 import { StreamTypes } from "StreamIssueReportReasons";
 
 const result = require("getMessageAuthorWithProcessedColor").fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildStreamSystemMessage.tsx");
@@ -18,10 +18,10 @@ export const createGuildStreamSystemMessage = function createGuildStreamSystemMe
     messageReference = {};
   }
   ({ channel_id, guild_id } = messageReference);
-  const tmp3 = importDefault(7758)(message);
-  let obj1 = require(7740) /* getMessageAuthorWithProcessedColor */;
+  const tmp3 = importDefault(7766)(message);
+  let obj1 = require(7748) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj1.getMessageAuthorWithProcessedColor(message);
-  let obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7742)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
+  let obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7750)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
   obj = { streamType: StreamTypes.GUILD, channelId: channel_id, ownerId: message.author.id, guildId: guild_id };
   obj1 = { ended: tmp4, content: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -39,6 +39,6 @@ export const createGuildStreamSystemMessage = function createGuildStreamSystemMe
     formatToPartsResult = formatToParts(t.dMmbGk, obj3);
   }
   obj1[1] = formatToPartsResult;
-  const merged2 = Object.assign(importDefault(7743)(roleStyle));
+  const merged2 = Object.assign(importDefault(7751)(roleStyle));
   return obj1;
 };

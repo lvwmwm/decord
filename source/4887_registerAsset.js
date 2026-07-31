@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset";
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "5e997bb5d78793341cb727497a38fe6f", name: "img_account_sync_bluesky_light_and_dark", type: "svg" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "579bfc60bdd93580f90ccebe4dc03bbf", name: "img_account_sync_battlenet_light_and_dark", type: "svg" });

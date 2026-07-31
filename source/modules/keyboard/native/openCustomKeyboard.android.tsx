@@ -1,10 +1,10 @@
-// Module ID: 11203
-// Function ID: 11204
+// Module ID: 11221
+// Function ID: 11222
 // Name: openCustomKeyboard
-// Dependencies: [1478, 5635, 4056, 11160, 2]
+// Dependencies: [1478, 5639, 4060, 11178, 2]
 // Exports: default
 
-// Module 11203 (openCustomKeyboard)
+// Module 11221 (openCustomKeyboard)
 const result = require("zustandStore").fileFinishedImporting("modules/keyboard/native/openCustomKeyboard.android.tsx");
 
 export default function openCustomKeyboard(secondaryTextFieldRef) {
@@ -16,7 +16,7 @@ export default function openCustomKeyboard(secondaryTextFieldRef) {
   secondaryTextFieldRef = secondaryTextFieldRef.secondaryTextFieldRef;
   require(1478) /* computeEntryState */.setKeyboardType(keyboardParams);
   let obj = require(1478) /* computeEntryState */;
-  require(5635) /* runAfterInteractions */.runAfterInteractions(() => {
+  require(5639) /* runAfterInteractions */.runAfterInteractions(() => {
     const current = ref.current;
     current.blur();
     if (secondaryTextFieldRef != null) {

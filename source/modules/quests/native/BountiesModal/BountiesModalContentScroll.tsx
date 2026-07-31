@@ -1,10 +1,10 @@
-// Module ID: 14030
-// Function ID: 14031
+// Module ID: 14054
+// Function ID: 14055
 // Name: ItemSeparator
-// Dependencies: [32, 19, 17, 5982, 5033, 676, 1369, 21, 501, 712, 4189, 4050, 1474, 1581, 14031, 10488, 10877, 10878, 589, 14034, 14035, 514, 6010, 6000, 14037, 14038, 9465, 6011, 5038, 10496, 14028, 14039, 14069, 14070, 14071, 10966, 14072, 6673, 4611, 14076, 14077, 3913, 6675, 2]
+// Dependencies: [32, 19, 17, 5988, 5037, 676, 1369, 21, 501, 712, 4193, 4054, 1474, 1581, 14055, 10505, 10895, 10896, 589, 14058, 14059, 514, 6016, 6006, 14061, 14062, 9480, 6017, 5042, 10514, 14052, 14063, 14093, 14094, 14095, 10984, 14096, 6679, 4615, 14100, 14101, 3917, 6681, 2]
 // Exports: default
 
-// Module 14030 (ItemSeparator)
+// Module 14054 (ItemSeparator)
 import BountiesScrollPromptFooter from "BountiesScrollPromptFooter";
 import getRevealProgress from "getRevealProgress";
 import get_ActivityIndicator from "apexExperiment";
@@ -451,7 +451,7 @@ function BountiesModalContentScrollInner(arg0) {
       if (c31.get()) {
         tmp3 = c25;
         tmp2 = c30;
-        if (typeof c25 !== "find") {
+        if (typeof c25 !== "fileFinishedImporting") {
           str = "Trying to call a non-function";
           throwTypeErrorResult = HermesBuiltin.throwTypeError();
         }
@@ -473,7 +473,7 @@ function BountiesModalContentScrollInner(arg0) {
     constructor(arg0) {
       result = c31.set(true);
       tmp2 = c30;
-      if (typeof c25 !== "find") {
+      if (typeof c25 !== "fileFinishedImporting") {
         str = "Trying to call a non-function";
         throwTypeErrorResult = HermesBuiltin.throwTypeError();
       }
@@ -1040,7 +1040,7 @@ export default function BountiesModalContentScroll(arg0) {
   let sourceQuestContent;
   ({ bountyId, sourceQuestContent } = arg0);
   const obj = { theme: null, children: null };
-  obj[0] = require(6675) /* items */.ThemeTypes.DARKER;
+  obj[0] = require(6681) /* items */.ThemeTypes.DARKER;
   obj[1] = callback2(BountiesModalContentScrollInner, { initialBountyId: bountyId, sourceQuestContent });
-  return callback2(require(3913) /* ThemeContextProvider */.ThemeContextProvider, obj);
+  return callback2(require(3917) /* ThemeContextProvider */.ThemeContextProvider, obj);
 };

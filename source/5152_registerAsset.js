@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset";
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../node_modules/.pnpm/@react-navigation+elements@1.3.30_i2urosomgzzyonevbpflivz7qy/node_modules/@react-navigation/elements/src/assets", width: 50, height: 85, scales: [1], hash: "5223c8d9b0d08b82a5670fb5f71faf78", name: "back-icon-mask", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "24def842b7fc85d108b018aef0f23eb6", name: "ArrowLargeLeftIcon", type: "png" });

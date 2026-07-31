@@ -1,10 +1,10 @@
-// Module ID: 7754
-// Function ID: 7755
+// Module ID: 7762
+// Function ID: 7763
 // Name: useCanReplyToMessage
-// Dependencies: [32, 3817, 1874, 676, 505, 686, 6046, 7755, 589, 2]
+// Dependencies: [32, 3821, 1874, 676, 505, 686, 6052, 7763, 589, 2]
 // Exports: canReplyToMessage, useCanReplyToMessage
 
-// Module 7754 (useCanReplyToMessage)
+// Module 7762 (useCanReplyToMessage)
 import _slicedToArray from "_slicedToArray";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -20,14 +20,14 @@ const result = require("mergeGuildAvatar").fileFinishedImporting("modules/replie
 export const useCanReplyToMessage = function useCanReplyToMessage(channel, message) {
   const _require = channel;
   const dependencyMap = message;
-  const canUnarchiveThread = _require(6046).useCanUnarchiveThread(channel);
-  const obj = _require(6046);
+  const canUnarchiveThread = _require(6052).useCanUnarchiveThread(channel);
+  const obj = _require(6052);
   let tmp = _require;
   let guildId;
   if (channel != null) {
     guildId = channel.getGuildId();
   }
-  const obj2 = _require(7755);
+  const obj2 = _require(7763);
   const items = [getUncachedChannelPermissions];
   let stateFromStores = tmp(589).useStateFromStores(items, () => {
     let tmp = null != channel;
@@ -75,7 +75,7 @@ export const useCanReplyToMessage = function useCanReplyToMessage(channel, messa
   return tmp6;
 };
 export const canReplyToMessage = function canReplyToMessage(channel, message) {
-  const obj = require(6046) /* useCanUnarchiveThread */;
+  const obj = require(6052) /* useCanUnarchiveThread */;
   if (channel.isPrivate()) {
     let hasItem = !channel.isSystemDM();
   } else {
@@ -87,13 +87,13 @@ export const canReplyToMessage = function canReplyToMessage(channel, message) {
     hasItem = REPLYABLE.has(message.type);
   }
   currentUser = currentUser.getCurrentUser();
-  const canUnarchiveThreadResult = require(6046) /* useCanUnarchiveThread */.canUnarchiveThread(channel);
+  const canUnarchiveThreadResult = require(6052) /* useCanUnarchiveThread */.canUnarchiveThread(channel);
   let id;
   if (currentUser != null) {
     id = currentUser.id;
   }
   const guildId = channel.getGuildId();
-  const tmpResult = require(7755) /* useUserCommunicationDisabled */;
+  const tmpResult = require(7763) /* useUserCommunicationDisabled */;
   const isArchivedThreadResult = channel.isArchivedThread();
   let tmp11 = !isArchivedThreadResult;
   if (isArchivedThreadResult) {

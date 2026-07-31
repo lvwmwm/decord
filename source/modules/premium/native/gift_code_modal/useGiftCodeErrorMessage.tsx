@@ -1,10 +1,10 @@
-// Module ID: 8037
-// Function ID: 8038
+// Module ID: 8043
+// Function ID: 8044
 // Name: useGiftCodeErrorMessage
-// Dependencies: [32, 5814, 8029, 589, 1236, 4424, 2]
+// Dependencies: [32, 5819, 8036, 589, 1236, 4428, 2]
 // Exports: default
 
-// Module 8037 (useGiftCodeErrorMessage)
+// Module 8043 (useGiftCodeErrorMessage)
 import _slicedToArray from "_slicedToArray";
 import map from "map";
 import updateGiftCode from "updateGiftCode";

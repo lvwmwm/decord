@@ -1,9 +1,9 @@
-// Module ID: 8036
-// Function ID: 8037
+// Module ID: 8060
+// Function ID: 8061
 // Name: SAMPLE_PROFILE_ASPECT_RATIO
 // Dependencies: [2]
 
-// Module 8036 (SAMPLE_PROFILE_ASPECT_RATIO)
+// Module 8060 (SAMPLE_PROFILE_ASPECT_RATIO)
 const result = require("set").fileFinishedImporting("modules/collectibles/native/CollectiblesPreviewConstants.tsx");
 
 export const SAMPLE_PROFILE_ASPECT_RATIO = 0.5113636363636364;

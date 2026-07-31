@@ -1,10 +1,10 @@
-// Module ID: 15261
-// Function ID: 15262
+// Module ID: 15289
+// Function ID: 15290
 // Name: ConnectionUnknownIcon
-// Dependencies: [19, 21, 712, 3892, 15262, 2]
+// Dependencies: [19, 21, 712, 3896, 15290, 2]
 // Exports: ConnectionUnknownIcon
 
-// Module 15261 (ConnectionUnknownIcon)
+// Module 15289 (ConnectionUnknownIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ConnectionUnknownIcon = function ConnectionUnknownIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(15262) /* registerAsset */;
+  obj[0] = require(15290) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3892) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3896) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

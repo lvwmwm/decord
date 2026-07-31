@@ -1,10 +1,10 @@
-// Module ID: 5949
-// Function ID: 5950
+// Module ID: 5955
+// Function ID: 5956
 // Name: trackCacheSkipped
-// Dependencies: [676, 698, 5731, 2]
+// Dependencies: [676, 698, 5736, 2]
 // Exports: default
 
-// Module 5949 (trackCacheSkipped)
+// Module 5955 (trackCacheSkipped)
 import { AnalyticEvents } from "ME";
 
 const result = require("getDeviceMetadata").fileFinishedImporting("modules/cache/trackCacheSkipped.native.tsx");
@@ -12,7 +12,7 @@ const result = require("getDeviceMetadata").fileFinishedImporting("modules/cache
 export default function trackCacheSkipped(arg0, message) {
   let obj = importDefault(698);
   obj = { load_id: null, reason: null, error_message: null, error_stack: null };
-  obj[0] = require(5731) /* getDeviceMetadata */.currentLoadId();
+  obj[0] = require(5736) /* getDeviceMetadata */.currentLoadId();
   obj[1] = arg0;
   message = undefined;
   if (message != null) {

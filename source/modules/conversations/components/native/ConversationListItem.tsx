@@ -1,15 +1,15 @@
-// Module ID: 9283
-// Function ID: 9284
+// Module ID: 9296
+// Function ID: 9297
 // Name: ConversationListItemBase
-// Dependencies: [19, 17, 5856, 5858, 676, 21, 4189, 712, 1480, 3893, 689, 589, 9266, 9280, 9268, 5222, 4185, 1236, 9284, 9285, 4611, 2]
+// Dependencies: [19, 17, 5861, 5863, 676, 21, 4193, 712, 1480, 3897, 689, 589, 9279, 9293, 9281, 5226, 4189, 1236, 9297, 9298, 9300, 4615, 2]
 
-// Module 9283 (ConversationListItemBase)
-import importAllResult from "modifyRow";
+// Module 9296 (ConversationListItemBase)
+import importAllResult from "ConversationPreviewBlockedMessage";
 import { View } from "getSystemLocale";
 import removePendingListFetch from "removePendingListFetch";
 import { MOBILE_PREVIEW_MESSAGE_COUNT as closure_6 } from "CONVERSATION_COLORS";
 import { VerticalGradient } from "ME";
-import jsxProd from "set";
+import jsxProd from "LinearGradient";
 import createCacheKey from "createCacheKey";
 
 let c9;
@@ -72,11 +72,26 @@ function ConversationListItemBase(conversation) {
   if (null == memo1) {
     let mapped = tmp11(tmp4(tmp2[18]), {});
   } else {
-    mapped = memo1.map((id) => outer1_8(navigation(token[19]), { message: id, guildId: conversation.guildId, channelId: conversation.channelId }, id.id));
+    mapped = memo1.map((blocked) => {
+      if (!blocked.blocked) {
+        if (!blocked.ignored) {
+          const obj = { message: null, guildId: null, channelId: null };
+          obj[0] = blocked;
+          ({ guildId: obj[1], channelId: obj[2] } = conversation);
+          let tmp6Result = outer1_8(navigation(token[20]), obj, blocked.id);
+        }
+        return tmp6Result;
+      }
+      let str = "ignored";
+      if (blocked.blocked) {
+        str = "blocked";
+      }
+      tmp6Result = outer1_8(navigation(token[19]), { reason: str }, blocked.id);
+    });
   }
   obj4[1] = mapped;
   items6[1] = callback(View, obj4);
-  items6[2] = callback(navigation(token[20]), { style: tmp.bottomFade, start: VerticalGradient.START, end: VerticalGradient.END, colors: memo, locations: closure_10 });
+  items6[2] = callback(navigation(token[21]), { style: tmp.bottomFade, start: VerticalGradient.START, end: VerticalGradient.END, colors: memo, locations: closure_10 });
   obj[3] = items6;
   return callback2(conversation(token[15]).Card, obj);
 }

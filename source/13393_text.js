@@ -1,0 +1,15 @@
+// Module ID: 13393
+// Function ID: 13394
+// Name: text
+// Dependencies: [13394, 13408]
+
+// Module 13393 (text)
+
+export default (arg0) => {
+  const tmp = require(13394)(arg0, "string");
+  let text = tmp;
+  if (!require(13408)(tmp)) {
+    text = `${tmp}`;
+  }
+  return text;
+};

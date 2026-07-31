@@ -1,17 +1,17 @@
-// Module ID: 11908
-// Function ID: 11909
+// Module ID: 11926
+// Function ID: 11927
 // Name: useShouldShowPremiumProfileFrameEA
-// Dependencies: [8090, 8697, 2]
+// Dependencies: [8097, 8710, 2]
 // Exports: default
 
-// Module 11908 (useShouldShowPremiumProfileFrameEA)
+// Module 11926 (useShouldShowPremiumProfileFrameEA)
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useShouldShowPremiumProfileFrameEA.tsx");
 
 export default function useShouldShowPremiumProfileFrameEA(location) {
-  let isProfileFramesEnabled = require(8090) /* apexExperiment */.useIsProfileFramesEnabled(location);
-  importDefault(8697);
+  let isProfileFramesEnabled = require(8097) /* apexExperiment */.useIsProfileFramesEnabled(location);
+  importDefault(8710);
   if (isProfileFramesEnabled) {
-    isProfileFramesEnabled = tmp5 === require(8697) /* apexExperiment */.ProfileFramesPurchaseBucket.PAID_PREMIUM_SUBSCRIBERS_ONLY;
+    isProfileFramesEnabled = tmp5 === require(8710) /* apexExperiment */.ProfileFramesPurchaseBucket.PAID_PREMIUM_SUBSCRIBERS_ONLY;
   }
   return isProfileFramesEnabled;
 };

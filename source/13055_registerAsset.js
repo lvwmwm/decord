@@ -1,0 +1,10 @@
+// Module ID: 13055
+// Function ID: 13056
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 13055 (registerAsset)
+import registerAsset from "registerAsset";
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 24, height: 24, scales: [2, 3], hash: "54ed58b5b2d02aabe1b1b19fc7b3ba09", name: "lock", type: "png" });

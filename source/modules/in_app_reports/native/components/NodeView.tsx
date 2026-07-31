@@ -1,10 +1,10 @@
-// Module ID: 7697
-// Function ID: 7698
+// Module ID: 7705
+// Function ID: 7706
 // Name: HeaderView
-// Dependencies: [32, 19, 17, 4188, 1372, 3817, 7698, 7695, 676, 505, 21, 4189, 712, 5503, 4619, 4185, 4033, 4145, 589, 4717, 7699, 1480, 4586, 4596, 7692, 7690, 4384, 3902, 7701, 7705, 6252, 5177, 7706, 7707, 7708, 7709, 12389, 12390, 12391, 12392, 12393, 12394, 12395, 12396, 12397, 12399, 12400, 12401, 12402, 12403, 12404, 12405, 12406, 12409, 2]
+// Dependencies: [32, 19, 17, 4192, 1372, 3821, 7706, 7703, 676, 505, 21, 4193, 712, 5507, 4623, 4189, 4037, 4149, 589, 4721, 7707, 1480, 4590, 4600, 7700, 7698, 4388, 3906, 7709, 7713, 6258, 5181, 7714, 7715, 7716, 7717, 12415, 12416, 12417, 12418, 12419, 12420, 12421, 12422, 12423, 12425, 12426, 12427, 12428, 12429, 12430, 12431, 12432, 12435, 2]
 // Exports: default
 
-// Module 7697 (HeaderView)
+// Module 7705 (HeaderView)
 import ShieldElement from "ShieldElement";
 import PressableBase from "PressableBase";
 import get_ActivityIndicator from "CircleInformationIcon";
@@ -41,7 +41,7 @@ function HeaderView(node) {
     obj[0] = node.headerRef;
     obj[1] = tmp.header;
     obj[5] = header;
-    tmp6 = callback2(require(4185) /* Text */.Text, obj);
+    tmp6 = callback2(require(4189) /* Text */.Text, obj);
   }
   const items = [tmp6, , ];
   let tmp9 = null;
@@ -51,7 +51,7 @@ function HeaderView(node) {
       obj = { style: null, variant: "text-md/medium", color: "text-default", children: null };
       obj[0] = tmp.subheader;
       obj[3] = tmp3(subheader);
-      tmp9 = callback2(require(4185) /* Text */.Text, obj);
+      tmp9 = callback2(require(4189) /* Text */.Text, obj);
     }
   }
   items[1] = tmp9;
@@ -62,7 +62,7 @@ function HeaderView(node) {
       const obj1 = { style: null, variant: "text-xs/medium", color: "text-default", children: null };
       obj1[0] = tmp.description;
       obj1[3] = description;
-      tmp12 = callback2(require(4185) /* Text */.Text, obj1);
+      tmp12 = callback2(require(4189) /* Text */.Text, obj1);
     }
   }
   items[2] = tmp12;
@@ -77,19 +77,19 @@ function InfoView(node) {
     let obj = { style: null, children: null };
     const items = [tmp.infoBox, ];
     obj = { backgroundColor: null };
-    obj[0] = require(4033) /* hexToRgba */.hexWithOpacity(tmp.infoBox.backgroundColor, 0.1);
+    obj[0] = require(4037) /* hexToRgba */.hexWithOpacity(tmp.infoBox.backgroundColor, 0.1);
     items[1] = obj;
     obj[0] = items;
     obj = { size: "md", color: null };
     obj[1] = tmp.infoBox.backgroundColor;
-    const items1 = [callback2(require(4145) /* CircleInformationIcon */.CircleInformationIcon, obj), ];
+    const items1 = [callback2(require(4149) /* CircleInformationIcon */.CircleInformationIcon, obj), ];
     const obj1 = { style: null, variant: "text-sm/normal", color: "interactive-text-active", children: null };
     obj1[0] = tmp.infoBoxText;
     obj1[3] = tmp3(info);
-    items1[1] = callback2(require(4185) /* Text */.Text, obj1);
+    items1[1] = callback2(require(4189) /* Text */.Text, obj1);
     obj[1] = items1;
     tmp4 = callback3(closure_6, obj);
-    const obj3 = require(4033) /* hexToRgba */;
+    const obj3 = require(4037) /* hexToRgba */;
   }
   return tmp4;
 }
@@ -109,7 +109,7 @@ function ChildItem(child) {
   obj = { style: tmp.childButton, accessibilityRole: "button", onPress: callback(React.useState(() => () => closure_1.onPress(closure_0)), 1)[0], children: null };
   obj = { style: tmp.childContainer, children: null };
   const obj1 = { style: tmp.childContent, children: null };
-  const items1 = [callback2(child(4185).Text, { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp3 }), ];
+  const items1 = [callback2(child(4189).Text, { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp3 }), ];
   if (stateFromStores) {
     stateFromStores = null != report_type;
   }
@@ -117,14 +117,14 @@ function ChildItem(child) {
     const obj3 = { style: null, variant: "text-xs/normal", color: "text-muted", children: null };
     obj3[0] = tmp.debugText;
     obj3[3] = report_type;
-    stateFromStores = tmp9(tmp5(4185).Text, obj3);
+    stateFromStores = tmp9(tmp5(4189).Text, obj3);
   }
   items1[1] = stateFromStores;
   obj1[1] = items1;
-  const items2 = [closure_17(closure_6, obj1), callback2(importDefault(7699), {})];
+  const items2 = [closure_17(closure_6, obj1), callback2(importDefault(7707), {})];
   obj[1] = items2;
   obj[3] = closure_17(closure_6, obj);
-  return callback2(child(4717).PressableHighlight, obj);
+  return callback2(child(4721).PressableHighlight, obj);
 }
 function ChildrenView(node) {
   let importDefault;

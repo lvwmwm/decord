@@ -1,39 +1,14 @@
 // Module ID: 4835
 // Function ID: 4836
-// Dependencies: [4836]
+// Dependencies: []
 
 // Module 4835
-const module = arg2;
-const dependencyMap = arg6;
-arg5.default = {
-  decode(arg0, buffer) {
-    let value = module(4836).get();
-    if (undefined !== value) {
-      if (undefined !== arg0) {
-        try {
-          value = new value(arg0);
-          const _DataView = DataView;
-          if (buffer instanceof DataView) {
-            buffer = buffer.buffer;
-          } else {
-            const _Uint8Array = Uint8Array;
-            buffer = Uint8Array.from(buffer);
-          }
-          value.decode(buffer);
-        } catch (err) {
-        }
-      }
-    }
-    const mapped = buffer.map((arg0) => String.fromCharCode(arg0));
-    return (function decodeAsciiValue(mapped) {
-      try {
-        const _decodeURIComponent = decodeURIComponent;
-        const _escape = escape;
-        return decodeURIComponent(escape(mapped));
-      } catch (err) {
-        return tmp;
-      }
-    })(mapped.join(""));
-  },
-  TAG_HEADER_SIZE: 5
+let obj = { 4: null };
+obj = {
+  name: "ShotInfo",
+  description(arg0) {
+    return arg0;
+  }
 };
+obj[4] = obj;
+arg5.default = obj;

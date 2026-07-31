@@ -1,10 +1,10 @@
-// Module ID: 16292
-// Function ID: 16293
+// Module ID: 16321
+// Function ID: 16322
 // Name: isParentalConsentWarningFetchEnabled
 // Dependencies: [1452, 2]
 // Exports: isParentalConsentWarningFetchEnabled
 
-// Module 16292 (isParentalConsentWarningFetchEnabled)
+// Module 16321 (isParentalConsentWarningFetchEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

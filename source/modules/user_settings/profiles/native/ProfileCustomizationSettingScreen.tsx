@@ -1,9 +1,9 @@
-// Module ID: 13682
-// Function ID: 13683
+// Module ID: 13706
+// Function ID: 13707
 // Name: ProfileCustomizationSubsection
-// Dependencies: [5, 109, 32, 19, 17, 9798, 7935, 685, 676, 21, 4189, 1236, 13683, 13735, 1480, 6327, 8221, 9103, 9222, 4048, 13699, 13736, 647, 4384, 9800, 5143, 9114, 4074, 1553, 11705, 8749, 2]
+// Dependencies: [5, 109, 32, 19, 17, 9815, 7942, 685, 676, 21, 4193, 1236, 13707, 13759, 1480, 6333, 8228, 9116, 9235, 4052, 13723, 13760, 647, 4388, 9817, 5147, 9127, 4078, 1553, 11723, 8762, 2]
 
-// Module 13682 (ProfileCustomizationSubsection)
+// Module 13706 (ProfileCustomizationSubsection)
 import zustandStore from "zustandStore";
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
@@ -35,7 +35,7 @@ let items = [
     },
     id: "edit-user-profile",
     renderPage(autoFocusElement) {
-      return callback(importDefault(13683), { autoFocusElement: autoFocusElement.autoFocusElement });
+      return callback(importDefault(13707), { autoFocusElement: autoFocusElement.autoFocusElement });
     },
     subSection: ProfileCustomizationSubsection.USER_PROFILE
   },
@@ -46,7 +46,7 @@ let items = [
     },
     id: "edit-user-profiles-guilds",
     renderPage() {
-      return callback(importDefault(13735), {});
+      return callback(importDefault(13759), {});
     },
     subSection: ProfileCustomizationSubsection.GUILD
   }
@@ -190,7 +190,7 @@ const memoResult = importAllResult.memo(() => {
                 return obj2;
               } else {
                 if (false !== arg1) {
-                  const delayedCall = new outer1_0(4074).DelayedCall(outer1_0(13736).RESET_DELAY_MS + 50, navigation.goBack);
+                  const delayedCall = new outer1_0(4078).DelayedCall(outer1_0(13760).RESET_DELAY_MS + 50, navigation.goBack);
                   delayedCall.delay();
                 }
                 dependencyMap = 3;
@@ -236,7 +236,7 @@ let obj = {
   },
   id: "edit-user-profile",
   renderPage(autoFocusElement) {
-    return callback(importDefault(13683), { autoFocusElement: autoFocusElement.autoFocusElement });
+    return callback(importDefault(13707), { autoFocusElement: autoFocusElement.autoFocusElement });
   },
   subSection: ProfileCustomizationSubsection.USER_PROFILE
 };

@@ -1,10 +1,10 @@
-// Module ID: 5130
-// Function ID: 5131
+// Module ID: 5134
+// Function ID: 5135
 // Name: UserNotificationSettings
-// Dependencies: [5131, 1372, 4407, 4385, 676, 3829, 4386, 685, 1384, 4384, 698, 2]
+// Dependencies: [5135, 1372, 4411, 4389, 676, 3833, 4390, 685, 1384, 4388, 698, 2]
 // Exports: getCurrentChannelSettings, getCurrentGuildSettings, getManyCurrentChannelSettings, getManyCurrentGuildSettings, muteConfigToTimestamp, trackAccountNotificationSettingUpdated, trackChannelNotificationSettingsUpdate, trackGuildNotificationSettingsUpdate
 
-// Module 5130 (UserNotificationSettings)
+// Module 5134 (UserNotificationSettings)
 import initialize from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -220,7 +220,7 @@ export const trackGuildNotificationSettingsUpdate = function trackGuildNotificat
   }
   obj.guild_message_notification_settings_old = prop4;
   obj.is_opt_in_only_change = 0 === removeFlagsResult;
-  importDefault(4384).trackWithMetadata(constants.NOTIFICATION_SETTINGS_UPDATED, obj);
+  importDefault(4388).trackWithMetadata(constants.NOTIFICATION_SETTINGS_UPDATED, obj);
 };
 export const muteConfigToTimestamp = function muteConfigToTimestamp(muteConfig) {
   let time = null;
@@ -376,7 +376,7 @@ export const trackChannelNotificationSettingsUpdate = function trackChannelNotif
   obj.is_opt_in_only_change = 0 === removeFlagsResult;
   obj.last_message_type = type;
   obj.application_id = applicationId;
-  importDefault(4384).trackWithMetadata(constants.NOTIFICATION_SETTINGS_UPDATED, obj);
+  importDefault(4388).trackWithMetadata(constants.NOTIFICATION_SETTINGS_UPDATED, obj);
 };
 export const getCurrentGuildSettings = function getCurrentGuildSettings(guildId) {
   let obj = store2;

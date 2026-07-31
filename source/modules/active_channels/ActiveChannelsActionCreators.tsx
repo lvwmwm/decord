@@ -1,10 +1,10 @@
-// Module ID: 15050
-// Function ID: 15051
+// Module ID: 15076
+// Function ID: 15077
 // Name: _fetchActiveChannels
-// Dependencies: [5, 676, 709, 530, 4089, 2]
+// Dependencies: [5, 676, 709, 530, 4093, 2]
 // Exports: fetchActiveChannels
 
-// Module 15050 (_fetchActiveChannels)
+// Module 15076 (_fetchActiveChannels)
 import set from "set";
 import { Endpoints } from "ME";
 

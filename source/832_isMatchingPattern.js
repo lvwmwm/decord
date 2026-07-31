@@ -134,7 +134,7 @@ arg5.truncate = function truncate(arr) {
     num = 0;
   }
   let combined = arr;
-  if (typeof arr !== "tee") {
+  if (typeof arr !== "__FORMATJS_LISTFORMAT_DATA__") {
     combined = arr;
     if (0 !== num) {
       combined = arr;

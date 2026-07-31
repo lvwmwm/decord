@@ -1,10 +1,10 @@
-// Module ID: 11910
-// Function ID: 11911
+// Module ID: 11928
+// Function ID: 11929
 // Name: UnlockWithNitroButton
-// Dependencies: [19, 5672, 5814, 678, 21, 589, 5675, 8756, 1236, 4601, 4185, 6624, 2]
+// Dependencies: [19, 5676, 5819, 678, 21, 589, 5679, 8769, 1236, 4605, 4189, 6630, 2]
 // Exports: UnlockWithNitroButton
 
-// Module 11910 (UnlockWithNitroButton)
+// Module 11928 (UnlockWithNitroButton)
 import "noop";
 import updateProduct from "updateProduct";
 import map from "map";
@@ -32,7 +32,7 @@ export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink
     }
     return isPurchasingProductResult;
   });
-  importDefault = importDefault(8756)();
+  importDefault = importDefault(8769)();
   if (text == null) {
     const intl = tmp(1236).intl;
     text = intl.string(tmp(1236).t.sEAnVH);
@@ -41,7 +41,7 @@ export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink
   if (flag) {
     obj = { variant: "text-xs/semibold", color: "text-overlay-light", allowFontScaling: false, children: null };
     obj[3] = text;
-    tmp4Result = tmp4(tmp(4185).Text, obj);
+    tmp4Result = tmp4(tmp(4189).Text, obj);
   }
   obj = { textElement: tmp4Result, text: null, accessibilityLabel: null, variant: "primary", size: null, grow: true, icon: null, onPress: null, disabled: null };
   let tmp6;
@@ -55,7 +55,7 @@ export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink
     str = "sm";
   }
   obj[4] = str;
-  obj[6] = jsx(require(6624) /* NitroWheelIcon */.NitroWheelIcon, { size: "sm", color: "white" });
+  obj[6] = jsx(require(6630) /* NitroWheelIcon */.NitroWheelIcon, { size: "sm", color: "white" });
   obj[7] = function onPress() {
     if (closure_0 != null) {
       tmp(outer1_5.UNLOCK_WITH_NITRO);
@@ -63,5 +63,5 @@ export const UnlockWithNitroButton = function UnlockWithNitroButton(shouldShrink
     callback2();
   };
   obj[8] = stateFromStores;
-  return jsx(require(4601) /* CollapsingText */.BaseTextButton, { textElement: tmp4Result, text: null, accessibilityLabel: null, variant: "primary", size: null, grow: true, icon: null, onPress: null, disabled: null });
+  return jsx(require(4605) /* CollapsingText */.BaseTextButton, { textElement: tmp4Result, text: null, accessibilityLabel: null, variant: "primary", size: null, grow: true, icon: null, onPress: null, disabled: null });
 };

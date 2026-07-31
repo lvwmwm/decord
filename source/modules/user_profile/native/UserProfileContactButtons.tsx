@@ -1,15 +1,15 @@
-// Module ID: 12216
-// Function ID: 12217
+// Module ID: 12242
+// Function ID: 12243
 // Name: FlatFriendButton
-// Dependencies: [19, 17, 3826, 676, 21, 4189, 712, 4600, 5515, 8104, 12050, 589, 4028, 12217, 4127, 1236, 11709, 8914, 10922, 4157, 4395, 4199, 12219, 6679, 4686, 9079, 10131, 2]
+// Dependencies: [19, 17, 3830, 676, 21, 4193, 712, 4604, 5519, 8111, 12068, 589, 4032, 12243, 4131, 1236, 11727, 8927, 10940, 4161, 4399, 4203, 12245, 6685, 4690, 9092, 10148, 2]
 // Exports: default
 
-// Module 12216 (FlatFriendButton)
+// Module 12242 (FlatFriendButton)
 import "ACTION_SHEET_HEIGHT_HALF";
 import { View } from "handleRelationshipAddError";
 import upsertRelationship from "upsertRelationship";
 import { RelationshipTypes } from "ME";
-import jsxProd from "module_4199";
+import jsxProd from "module_4203";
 import createCacheKey from "createCacheKey";
 
 let closure_6;
@@ -37,7 +37,7 @@ function FlatFriendButton(label) {
   obj[2] = label;
   obj[3] = str;
   const merged1 = Object.assign(merged);
-  return callback(require(4600) /* Button */.Button, obj);
+  return callback(require(4604) /* Button */.Button, obj);
 }
 function FriendRequestButton(user) {
   let ButtonComponent;
@@ -49,18 +49,18 @@ function FriendRequestButton(user) {
   let stateFromStores;
   let upsertRelationship;
   ({ hasCustomProfileTheme, ButtonComponent } = user);
-  let obj = user(8104);
+  let obj = user(8111);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   if (newestAnalyticsLocation == null) {
-    newestAnalyticsLocation = trackUserProfileAction(5515)().newestAnalyticsLocation;
+    newestAnalyticsLocation = trackUserProfileAction(5519)().newestAnalyticsLocation;
   }
   dependencyMap = { location: newestAnalyticsLocation };
-  let tmp3Result = tmp3(12050);
+  let tmp3Result = tmp3(12068);
   const gameFriendsForUser = tmp3Result.useGameFriendsForUser(user.id);
   tmp3Result = tmp3(589);
   const items = [upsertRelationship];
   stateFromStores = tmp3Result.useStateFromStores(items, () => relationshipType.getRelationshipType(user.id));
-  upsertRelationship = trackUserProfileAction(4028).useName(user);
+  upsertRelationship = trackUserProfileAction(4032).useName(user);
   if (stateFromStores !== RelationshipTypes.FRIEND) {
     if (stateFromStores !== tmp5.BLOCKED) {
       if (gameFriendsForUser.length > 0) {
@@ -69,9 +69,9 @@ function FriendRequestButton(user) {
         return null;
       } else {
         if (stateFromStores === tmp5.PENDING_OUTGOING) {
-          let UserPlusIcon = tmp3(12217).UserClockIcon;
+          let UserPlusIcon = tmp3(12243).UserClockIcon;
         } else {
-          UserPlusIcon = tmp3(4127).UserPlusIcon;
+          UserPlusIcon = tmp3(4131).UserPlusIcon;
         }
         const intl = tmp3(1236).intl;
         const string = intl.string;
@@ -101,11 +101,11 @@ function FriendRequestButton(user) {
               callback({ action: "CANCEL_FRIEND_REQUEST" });
               outer1_1(outer1_2[17]).cancelFriendRequest(id.id, closure_2);
             };
-            const result = user(11709).confirmCancelFriendRequest(obj);
-            const obj3 = user(11709);
+            const result = user(11727).confirmCancelFriendRequest(obj);
+            const obj3 = user(11727);
           } else {
             trackUserProfileAction({ action: "SEND_FRIEND_REQUEST" });
-            obj = trackUserProfileAction(8914);
+            obj = trackUserProfileAction(8927);
             obj = { userId: null, context: null };
             obj[0] = user.id;
             obj[1] = dependencyMap;

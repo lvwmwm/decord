@@ -1,8 +1,8 @@
-// Module ID: 15553
-// Function ID: 15554
-// Dependencies: [32, 19, 1372, 3826, 1874, 10101, 10098, 9097, 676, 21, 589, 15478, 11448, 11456, 10097, 4028, 4380, 10099, 15554, 10105, 10100, 15515, 15470, 1236, 15482, 2]
+// Module ID: 15581
+// Function ID: 15582
+// Dependencies: [32, 19, 1372, 3830, 1874, 10118, 10115, 9108, 676, 21, 589, 15506, 11466, 11474, 10114, 4032, 4384, 10116, 15582, 10122, 10117, 15543, 15498, 1236, 15510, 2]
 
-// Module 15553
+// Module 15581
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "getMatch";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -10,7 +10,7 @@ import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handleUserSearchResults from "handleUserSearchResults";
 import prototype from "prototype";
-import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import MessageEmbedTypes from "MessageEmbedTypes";
 import ME from "ME";
 import { jsx } from "useMessageSearchErrorScreen";
 
@@ -21,7 +21,7 @@ let map1;
 let unpackModuleId;
 const require = arg1;
 let c4 = importAllResult;
-({ SearchListItemTypes: c10, SearchQueryTagTypes: unpackModuleId, USER_ESTIMATED_ITEM_SIZE: closure_12 } = SearchAutocompleteSelectAnalyticsActions);
+({ SearchListItemTypes: c10, SearchQueryTagTypes: unpackModuleId, USER_ESTIMATED_ITEM_SIZE: closure_12 } = MessageEmbedTypes);
 ({ SearchPopoutModes: map1, SearchTokenTypes: closure_14 } = ME);
 let closure_16 = [];
 const memoResult = importAllResult.memo(function AutocompleteScreen(searchContext) {

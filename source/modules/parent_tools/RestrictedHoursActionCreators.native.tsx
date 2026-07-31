@@ -1,21 +1,21 @@
-// Module ID: 16106
-// Function ID: 16107
+// Module ID: 16134
+// Function ID: 16135
 // Name: closeRestrictedHoursModal
-// Dependencies: [5, 4395, 16107, 1959, 2]
+// Dependencies: [5, 4399, 16135, 1959, 2]
 // Exports: openRestrictedHoursModal
 
-// Module 16106 (closeRestrictedHoursModal)
+// Module 16134 (closeRestrictedHoursModal)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
 function closeRestrictedHoursModal() {
-  importDefault(4395).popWithKey(RESTRICTED_HOURS_MODAL_KEY);
+  importDefault(4399).popWithKey(RESTRICTED_HOURS_MODAL_KEY);
 }
 const RESTRICTED_HOURS_MODAL_KEY = "RESTRICTED_HOURS_MODAL_KEY";
 const result = require("RestrictedHoursLogoutBlockingLayer").fileFinishedImporting("modules/parent_tools/RestrictedHoursActionCreators.native.tsx");
 
 export const openRestrictedHoursModal = function openRestrictedHoursModal() {
-  let obj = importDefault(4395);
+  let obj = importDefault(4399);
   obj = { onClose: closeRestrictedHoursModal };
   obj.pushLazy(callback(function*() {
     if (v0 === 2) {

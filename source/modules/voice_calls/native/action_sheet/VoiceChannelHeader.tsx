@@ -1,9 +1,9 @@
-// Module ID: 12845
-// Function ID: 12846
+// Module ID: 12870
+// Function ID: 12871
 // Name: PrivateChannelSubtitle
-// Dependencies: [19, 17, 1371, 1862, 3817, 676, 21, 4189, 712, 12846, 12847, 4185, 12848, 589, 10731, 4380, 8345, 1236, 4040, 1297, 4680, 12850, 10801, 10219, 4717, 2]
+// Dependencies: [19, 17, 1371, 1862, 3821, 676, 21, 4193, 712, 12871, 12872, 4189, 12873, 589, 10749, 4384, 8352, 1236, 4044, 1297, 4684, 12875, 10819, 10237, 4721, 2]
 
-// Module 12845 (PrivateChannelSubtitle)
+// Module 12870 (PrivateChannelSubtitle)
 import "Button";
 import { View } from "getSystemLocale";
 import participantFromServer from "participantFromServer";
@@ -22,23 +22,23 @@ const require = arg1;
 function PrivateChannelSubtitle(channel) {
   channel = channel.channel;
   const tmp = createCacheKey();
-  const state = importDefault(12846)(channel.id).state;
+  const state = importDefault(12871)(channel.id).state;
   let obj = { style: tmp.subtitleWrapper, children: null };
   obj = { useAllAloneText: false, channel, voiceState: state, style: tmp.subtitle };
-  const items = [callback(importDefault(12847), obj), , ];
-  let tmp6Result = state === require(12846) /* id */.CallStates.CONNECTED;
+  const items = [callback(importDefault(12872), obj), , ];
+  let tmp6Result = state === require(12871) /* id */.CallStates.CONNECTED;
   if (tmp6Result) {
     obj = { style: null, variant: "text-xs/medium", color: "text-overlay-light", children: " - " };
     obj[0] = tmp.subtitle;
-    tmp6Result = tmp6(tmp7(4185).Text, obj);
+    tmp6Result = tmp6(tmp7(4189).Text, obj);
   }
   items[1] = tmp6Result;
-  tmp6Result = state === tmp7(12846).CallStates.CONNECTED;
+  tmp6Result = state === tmp7(12871).CallStates.CONNECTED;
   if (tmp6Result) {
     const obj1 = { channelId: null, style: null };
     obj1[0] = channel.id;
     obj1[1] = tmp.subtitle;
-    tmp6Result = tmp6(importDefault(12848), obj1);
+    tmp6Result = tmp6(importDefault(12873), obj1);
   }
   items[2] = tmp6Result;
   obj[1] = items;
@@ -47,7 +47,7 @@ function PrivateChannelSubtitle(channel) {
 class VoiceChannelHeader {
   constructor(arg0) {
     channel = global.channel;
-    f90526 = undefined;
+    f90722 = undefined;
     tmp = jsxs();
     tmp2 = channel;
     tmp3 = closure_2;
@@ -55,14 +55,14 @@ class VoiceChannelHeader {
     items = [];
     items[0] = View;
     stateFromStores = obj.useStateFromStores(items, () => outer1_5.getGuild(channel.getGuildId()));
-    tmp5 = f90526;
+    tmp5 = f90722;
     tmp6 = require("useIsVoiceChannelFull")(channel);
     obj2 = require("initialize");
     items1 = [];
     items1[0] = View;
     items2 = [];
     items2[0] = channel;
-    f90526 = obj2.useStateFromStores(items1, () => outer1_4.getSelfEmbeddedActivityForChannel(channel.id), items2);
+    f90722 = obj2.useStateFromStores(items1, () => outer1_4.getSelfEmbeddedActivityForChannel(channel.id), items2);
     name = undefined;
     tmp7 = require("computeChannelName")(channel);
     if (stateFromStores != null) {
@@ -120,7 +120,7 @@ class VoiceChannelHeader {
     items3[0] = tmp14(require("Button").Icon, obj3);
     obj4 = { style: tmp.middle, children: null };
     tmp14Result = formatToPlainStringResult;
-    if (typeof formatToPlainStringResult !== "tee") {
+    if (typeof formatToPlainStringResult !== "__FORMATJS_LISTFORMAT_DATA__") {
       obj5 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-md/semibold", color: "text-overlay-light", children: null };
       obj5[4] = formatToPlainStringResult;
       tmp14Result = tmp14(require("Text").Text, obj5);
@@ -128,7 +128,7 @@ class VoiceChannelHeader {
     items4 = [, ];
     items4[0] = tmp14Result;
     tmp14Result1 = name;
-    if (typeof name !== "tee") {
+    if (typeof name !== "__FORMATJS_LISTFORMAT_DATA__") {
       obj6 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-xs/medium", color: "text-overlay-light", children: null };
       obj6[4] = name;
       tmp14Result1 = tmp14(require("Text").Text, obj6);
@@ -152,7 +152,7 @@ class VoiceChannelHeader {
 }
 function AddMemberButton(onPress) {
   const obj = { onPress: onPress.onPress, iconSource: null, iconStyle: null, accessibilityLabel: null };
-  obj[1] = importDefault(10219);
+  obj[1] = importDefault(10237);
   obj[2] = createCacheKey().icons;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t["6Qgrev"]);

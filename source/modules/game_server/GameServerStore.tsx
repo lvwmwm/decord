@@ -1,9 +1,9 @@
-// Module ID: 4097
-// Function ID: 4098
+// Module ID: 4101
+// Function ID: 4102
 // Name: handleGameServerInstanceCreated
-// Dependencies: [4098, 4099, 589, 709, 2]
+// Dependencies: [4102, 4103, 589, 709, 2]
 
-// Module 4097 (handleGameServerInstanceCreated)
+// Module 4101 (handleGameServerInstanceCreated)
 import { PersistedStore } from "initialize";
 
 function handleGameServerInstanceCreated(arg0) {
@@ -25,7 +25,7 @@ function handleGameServerInstanceCreated(arg0) {
     const merged1 = Object.assign(tmp3);
     const obj1 = {};
     const merged2 = Object.assign(tmp3.instances);
-    obj1[gameServer.id] = importDefault(4099)(gameServer);
+    obj1[gameServer.id] = importDefault(4103)(gameServer);
     obj.instances = obj1;
     obj[guildId] = obj;
   }

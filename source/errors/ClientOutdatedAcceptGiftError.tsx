@@ -1,9 +1,9 @@
-// Module ID: 4094
-// Function ID: 4095
+// Module ID: 4098
+// Function ID: 4099
 // Name: prototype
 // Dependencies: [676, 2]
 
-// Module 4094 (prototype)
+// Module 4098 (prototype)
 import { AbortCodes } from "ME";
 
 const prototype = function ClientOutdatedAcceptGiftError(arg0) {

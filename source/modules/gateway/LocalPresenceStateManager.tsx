@@ -1,9 +1,9 @@
-// Module ID: 12725
-// Function ID: 12726
+// Module ID: 12750
+// Function ID: 12751
 // Name: getInitialState
-// Dependencies: [4867, 12726, 12727, 2]
+// Dependencies: [4871, 12751, 12752, 2]
 
-// Module 12725 (getInitialState)
+// Module 12750 (getInitialState)
 import filterPlayingActivities from "filterPlayingActivities";
 import "shouldCommit";
 

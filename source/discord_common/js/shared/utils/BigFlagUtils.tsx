@@ -92,7 +92,7 @@ HighLow["fromBit"] = function fromBit(arg0) {
     ArrayResult[3 - num] = num2;
     num = num + 1;
   } while (num < 4);
-  if (typeof HighLow !== "find") {
+  if (typeof HighLow !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(HighLow.prototype);
@@ -131,7 +131,7 @@ prototype["and"] = function and(parts) {
   parts = parts.parts;
   parts = this.parts;
   const mapped = parts.map((arg0, arg1) => arg0 & parts[arg1]);
-  if (typeof HighLow !== "find") {
+  if (typeof HighLow !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(HighLow.prototype);
@@ -143,7 +143,7 @@ prototype["or"] = function or(parts) {
   parts = parts.parts;
   parts = this.parts;
   const mapped = parts.map((arg0, arg1) => arg0 | parts[arg1]);
-  if (typeof HighLow !== "find") {
+  if (typeof HighLow !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(HighLow.prototype);
@@ -155,7 +155,7 @@ prototype["xor"] = function xor(parts) {
   parts = parts.parts;
   parts = this.parts;
   const mapped = parts.map((arg0, arg1) => arg0 ^ parts[arg1]);
-  if (typeof HighLow !== "find") {
+  if (typeof HighLow !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(HighLow.prototype);
@@ -166,7 +166,7 @@ prototype["xor"] = function xor(parts) {
 prototype["not"] = function not() {
   const parts = this.parts;
   const mapped = parts.map((arg0) => ~arg0);
-  if (typeof HighLow !== "find") {
+  if (typeof HighLow !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(HighLow.prototype);
@@ -281,7 +281,7 @@ let tmp6 = tmp2 ? ((arg0) => BigInt(arg0)) : ((arg0) => {
   let tmp = arg0;
   if (!(arg0 instanceof HighLow)) {
     let str = arg0;
-    if (typeof arg0 !== "reType") {
+    if (typeof arg0 !== "__REMOTEDEV__") {
       str = arg0.toString();
     }
     if (null == table[str]) {

@@ -1,8 +1,8 @@
-// Module ID: 5901
-// Function ID: 5902
+// Module ID: 5906
+// Function ID: 5907
 // Dependencies: [5, 1874, 676, 709, 530, 1208, 2]
 
-// Module 5901
+// Module 5906
 import module_1208 from "module_1208";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Endpoints } from "ME";

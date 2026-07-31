@@ -1,10 +1,10 @@
-// Module ID: 11236
-// Function ID: 11237
+// Module ID: 11254
+// Function ID: 11255
 // Name: useBannerBots
-// Dependencies: [19, 1862, 11215, 589, 5709, 11237, 11208, 2]
+// Dependencies: [19, 1862, 11233, 589, 5714, 11255, 11226, 2]
 // Exports: useBannerBots
 
-// Module 11236 (useBannerBots)
+// Module 11254 (useBannerBots)
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import initialize from "initialize";
@@ -17,7 +17,7 @@ export const useBannerBots = function useBannerBots(context) {
   let _require;
   let obj = (function useAppsMap(context) {
     let apps;
-    apps = apps(11237).useApplicationsInContext({ context: context.context, onlyWithCommands: true, includeBuiltIn: false, includeEmbeddedApps: false, includeNonEmbeddedApps: true }).apps;
+    apps = apps(11255).useApplicationsInContext({ context: context.context, onlyWithCommands: true, includeBuiltIn: false, includeEmbeddedApps: false, includeNonEmbeddedApps: true }).apps;
     const items = [apps];
     return React.useMemo(() => {
       const map = new Map();
@@ -28,12 +28,12 @@ export const useBannerBots = function useBannerBots(context) {
       return map;
     }, items);
   })({ context });
-  let apps = _require(11237).useApplicationsInContext({ context, onlyWithCommands: true, includeBuiltIn: false, includeEmbeddedApps: false, includeNonEmbeddedApps: true }).apps;
-  const obj2 = _require(11237);
+  let apps = _require(11255).useApplicationsInContext({ context, onlyWithCommands: true, includeBuiltIn: false, includeEmbeddedApps: false, includeNonEmbeddedApps: true }).apps;
+  const obj2 = _require(11255);
   const tmp2 = _require;
   const obj3 = (function useCommandsMap(context) {
     let commands;
-    commands = commands(11237).useApplicationCommandsInContext({ context: context.context, includeBuiltIn: false }).commands;
+    commands = commands(11255).useApplicationCommandsInContext({ context: context.context, includeBuiltIn: false }).commands;
     const items = [commands];
     return React.useMemo(() => {
       const map = new Map();
@@ -59,15 +59,15 @@ export const useBannerBots = function useBannerBots(context) {
         return outer1_3.getGuild(guild_id);
       })
     };
-    return context(5709).useTopCommands(obj);
+    return context(5714).useTopCommands(obj);
   })({ context });
   let channel = context.channel;
   let guild_id;
   if (channel != null) {
     guild_id = channel.guild_id;
   }
-  const activityApplications = _require(11208).useActivityApplications({ guildId: guild_id, fetchesShelf: true });
-  const obj4 = _require(11208);
+  const activityApplications = _require(11226).useActivityApplications({ guildId: guild_id, fetchesShelf: true });
+  const obj4 = _require(11226);
   let items = [initialize];
   const stateFromStores = tmp2(589).useStateFromStores(items, () => recentApplicationCommandMetadata.getRecentApplicationCommandMetadata());
   let value = null;

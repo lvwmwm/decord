@@ -1,10 +1,10 @@
-// Module ID: 16211
-// Function ID: 16212
+// Module ID: 16240
+// Function ID: 16241
 // Name: getData
-// Dependencies: [5, 32, 19, 1218, 1372, 4526, 1942, 4006, 4525, 13457, 7889, 676, 7888, 1906, 1416, 5689, 12611, 589, 5503, 11, 709, 6183, 1236, 38, 4411, 6151, 7893, 4723, 530, 687, 2]
+// Dependencies: [5, 32, 19, 1218, 1372, 4530, 1942, 4010, 4529, 13481, 7897, 676, 7896, 1906, 1416, 5693, 12636, 589, 5507, 11, 709, 6189, 1236, 38, 4415, 6157, 7901, 4727, 530, 687, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 16211 (getData)
+// Module 16240 (getData)
 import handleChanged from "handleChanged";
 import _slicedToArray from "_slicedToArray";
 import DISCORD_EPOCH from "DISCORD_EPOCH";
@@ -2127,7 +2127,7 @@ function _submitModal() {
             obj[0] = arg1;
             return obj;
           } else {
-            DISCORD_EPOCH = arr.map((closure_0, closure_1) => lib(4723).getAttachmentPayload(closure_0, closure_1));
+            DISCORD_EPOCH = arr.map((closure_0, closure_1) => lib(4727).getAttachmentPayload(closure_0, closure_1));
             const obj4 = { uploads: null };
             obj4[0] = arr;
             c6 = callback2(lib.customId, lib.components, obj4);
@@ -2194,7 +2194,7 @@ function _submitModal() {
 let result = require("noop").fileFinishedImporting("modules/interaction_components/InteractionModalUtils.tsx");
 
 export const useIsFirstTextInputInModal = function useIsFirstTextInputInModal(id) {
-  const componentStateContext = require(7888) /* isInteractionComponent */.useComponentStateContext();
+  const componentStateContext = require(7896) /* isInteractionComponent */.useComponentStateContext();
   let first;
   if (componentStateContext != null) {
     const modal = componentStateContext.modal;

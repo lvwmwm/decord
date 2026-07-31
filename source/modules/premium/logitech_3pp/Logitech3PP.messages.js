@@ -1,38 +1,30 @@
-// Module ID: 3033
-// Function ID: 3034
+// Module ID: 3035
+// Function ID: 3036
 // Name: messagesProxy
-// Dependencies: [1239, 3034, 3035, 3036, 3037, 3038, 3039, 3040, 3041, 3042, 3043, 3044, 3045, 3046, 3047, 3048, 3049, 3050, 3051, 3052, 3053, 3054, 3055, 3056, 3057, 3058, 3059, 3060, 3061, 3062, 3063, 3064, 1274, 2]
+// Dependencies: [1239, 3036, 3037, 3038, 3039, 3040, 3041, 3042, 3043, 3044, 3045, 3046, 3047, 3048, 3049, 3050, 3051, 3052, 3053, 3054, 3055, 3056, 3057, 3058, 3059, 3060, 3061, 3062, 3063, 3064, 3065, 3066, 1274, 2]
 
-// Module 3033 (messagesProxy)
+// Module 3035 (messagesProxy)
 import module_1274 from "module_1274";
 import module_1274 from "module_1274";
 
 const loader = module_1274.createLoader({
   bg() {
-    const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3034) /* registerAsset */);
-    return jsonAsset.then((arg0) => ({ default: arg0 }));
-  },
-  cs() {
-    const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3035) /* registerAsset */);
-    return jsonAsset.then((arg0) => ({ default: arg0 }));
-  },
-  da() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3036) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  de() {
+  cs() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3037) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  el() {
+  da() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3038) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  () => {
+  de() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3039) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  () => {
+  el() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3040) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
@@ -40,96 +32,104 @@ const loader = module_1274.createLoader({
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3041) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  fi() {
+  () => {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3042) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  fr() {
+  () => {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3043) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  hi() {
+  fi() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3044) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  hr() {
+  fr() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3045) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  hu() {
+  hi() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3046) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  it() {
+  hr() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3047) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  ja() {
+  hu() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3048) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  ko() {
+  it() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3049) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  lt() {
+  ja() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3050) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  nl() {
+  ko() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3051) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  no() {
+  lt() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3052) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  pl() {
+  nl() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3053) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  () => {
+  no() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3054) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  ro() {
+  pl() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3055) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  ru() {
+  () => {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3056) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  () => {
+  ro() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3057) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  th() {
+  ru() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3058) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  tr() {
+  () => {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3059) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  uk() {
+  th() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3060) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  vi() {
+  tr() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3061) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  () => {
+  uk() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3062) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
-  () => {
+  vi() {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3063) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   },
   () => {
     const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3064) /* registerAsset */);
+    return jsonAsset.then((arg0) => ({ default: arg0 }));
+  },
+  () => {
+    const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3065) /* registerAsset */);
+    return jsonAsset.then((arg0) => ({ default: arg0 }));
+  },
+  () => {
+    const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(3066) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   }
 }, "en-US");

@@ -1,10 +1,10 @@
-// Module ID: 13164
-// Function ID: 13165
+// Module ID: 13188
+// Function ID: 13189
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4189, 712, 4035, 4185, 2]
+// Dependencies: [19, 17, 21, 4193, 712, 4039, 4189, 2]
 // Exports: default
 
-// Module 13164 (EmptyState)
+// Module 13188 (EmptyState)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,7 +32,7 @@ export default function EmptyState(Illustration) {
   let children;
   let title;
   const tmp = createCacheKey();
-  require(4035) /* AccessibilityAnnouncer */;
+  require(4039) /* AccessibilityAnnouncer */;
   if (null != Illustration.Illustration) {
     let obj = { accessible: false, importantForAccessibility: "no", accessibilityRole: "none", resizeMode: "contain", style: null };
     const items = [tmp.emptyImage, Illustration.imageStyle];
@@ -42,11 +42,11 @@ export default function EmptyState(Illustration) {
     tmp8Result = null;
     if (tmp6) {
       obj = { resizeMode: "contain", source: null, style: null };
-      obj[1] = tmp2(4035).isThemeLight(tmp5) ? Illustration.lightSource : Illustration.darkSource;
+      obj[1] = tmp2(4039).isThemeLight(tmp5) ? Illustration.lightSource : Illustration.darkSource;
       const items1 = [tmp.emptyImage, Illustration.imageStyle];
       obj[2] = items1;
       tmp8Result = callback(closure_3, obj);
-      const tmp2Result = tmp2(4035);
+      const tmp2Result = tmp2(4039);
       const tmp8 = callback;
       const tmp9 = closure_3;
     }
@@ -63,7 +63,7 @@ export default function EmptyState(Illustration) {
     const items4 = [tmp.emptyTitle, tmp11];
     obj2[3] = items4;
     obj2[4] = title;
-    tmp14 = callback(tmp2(4185).Text, obj2);
+    tmp14 = callback(tmp2(4189).Text, obj2);
   }
   items3[1] = tmp14;
   let tmp16 = null;
@@ -72,7 +72,7 @@ export default function EmptyState(Illustration) {
     const items5 = [tmp.emptyBody, bodyStyle];
     obj3[3] = items5;
     obj3[4] = body;
-    tmp16 = callback(tmp2(4185).Text, obj3);
+    tmp16 = callback(tmp2(4189).Text, obj3);
   }
   items3[2] = tmp16;
   items3[3] = children;

@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset";
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/referral_program/native/images", width: 180, height: 180, scales: [1], hash: "7d7d766e7ebb30cec66584e69b89634d", name: "Glow", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images/perks", width: 300, height: 175, scales: [2, 3], hash: "f171afff980c8e21add7808b4b6646ed", name: "member_pricing", type: "png" });

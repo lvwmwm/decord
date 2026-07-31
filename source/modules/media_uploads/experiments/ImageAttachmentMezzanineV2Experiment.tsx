@@ -1,10 +1,10 @@
-// Module ID: 4769
-// Function ID: 4770
+// Module ID: 4773
+// Function ID: 4774
 // Name: getImageAttachmentMezzanineV2Config
 // Dependencies: [1452, 2]
 // Exports: getImageAttachmentMezzanineV2Config
 
-// Module 4769 (getImageAttachmentMezzanineV2Config)
+// Module 4773 (getImageAttachmentMezzanineV2Config)
 import ApexExperiment from "ApexExperiment";
 
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2025-09-image-attachment-mezzanine-v2", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true, maxFileSizeBytes: 524288 }, 2: { enabled: true, maxFileSizeBytes: 262144 } } });

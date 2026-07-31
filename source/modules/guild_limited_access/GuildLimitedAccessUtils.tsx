@@ -1,10 +1,10 @@
-// Module ID: 16105
-// Function ID: 16106
+// Module ID: 16133
+// Function ID: 16134
 // Name: isLimitedAccessErrorCode
 // Dependencies: [676, 2]
 // Exports: isLimitedAccessErrorCode
 
-// Module 16105 (isLimitedAccessErrorCode)
+// Module 16133 (isLimitedAccessErrorCode)
 import { AbortCodes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/guild_limited_access/GuildLimitedAccessUtils.tsx");

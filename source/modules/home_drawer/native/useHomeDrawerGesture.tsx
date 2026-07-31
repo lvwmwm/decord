@@ -1,10 +1,10 @@
-// Module ID: 14925
-// Function ID: 14926
+// Module ID: 14948
+// Function ID: 14949
 // Name: HOME_DRAWER_FLING_PHYSICS
-// Dependencies: [32, 19, 14926, 14927, 676, 4046, 4050, 1481, 698, 4158, 1474, 1581, 4043, 14928, 4040, 4599, 5273, 7677, 2]
+// Dependencies: [32, 19, 14949, 14950, 676, 4050, 4054, 1481, 698, 4162, 1474, 1581, 4047, 14951, 4044, 4603, 5277, 7685, 2]
 // Exports: useHomeGesture
 
-// Module 14925 (HOME_DRAWER_FLING_PHYSICS)
+// Module 14948 (HOME_DRAWER_FLING_PHYSICS)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import withEqualityFn from "withEqualityFn";
@@ -284,7 +284,7 @@ export const useHomeGesture = function useHomeGesture() {
         tmp5 = gestureState;
         value = panelX.get();
         str = "animate-always";
-        withSpringResult = obj.withSpring(value, gestureState.get().active ? f94872 : outer1_11, "animate-always");
+        withSpringResult = obj.withSpring(value, gestureState.get().active ? f95059 : outer1_11, "animate-always");
       } else {
         return c18;
       }
@@ -514,7 +514,7 @@ export const useHomeGesture = function useHomeGesture() {
             const runOnJSResult = panelX(updateMaxX[6]).runOnJS(panelX(updateMaxX[9]).triggerHapticFeedback);
           }
         }
-        if (typeof settleDrawer !== "find") {
+        if (typeof settleDrawer !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         let num5 = 0;
@@ -539,7 +539,7 @@ export const useHomeGesture = function useHomeGesture() {
           const runOnJSResult1 = panelX(updateMaxX[6]).runOnJS(panelX(updateMaxX[9]).triggerHapticFeedback);
         }
       }
-      if (typeof shouldOpenFromPosition !== "find") {
+      if (typeof shouldOpenFromPosition !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       flag = 0 !== settleDrawer.get();
@@ -566,7 +566,7 @@ export const useHomeGesture = function useHomeGesture() {
         tmp = obj.get() < outer1_3;
       }
       if (tmp) {
-        if (typeof shouldOpenFromPosition !== "find") {
+        if (typeof shouldOpenFromPosition !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         let tmp5 = 0 !== obj.get();
@@ -581,7 +581,7 @@ export const useHomeGesture = function useHomeGesture() {
           }
           tmp5 = tmp7;
         }
-        if (typeof tmp3 !== "find") {
+        if (typeof tmp3 !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         let num2 = 0;

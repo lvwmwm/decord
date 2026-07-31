@@ -18,7 +18,7 @@ function parseQueryStringKeys(arg0, arg1, arg2, arg3) {
 export default (str, allowEmptyArrays) => {
   if (allowEmptyArrays) {
     if (undefined !== allowEmptyArrays.allowEmptyArrays) {
-      if (typeof allowEmptyArrays.allowEmptyArrays === "sur") {
+      if (typeof allowEmptyArrays.allowEmptyArrays === "onScroll") {
         let typeError = globalThis;
         const _TypeError6 = TypeError;
         typeError = new.target;
@@ -28,7 +28,7 @@ export default (str, allowEmptyArrays) => {
       }
     }
     if (undefined !== allowEmptyArrays.decodeDotInKeys) {
-      if (typeof allowEmptyArrays.decodeDotInKeys === "sur") {
+      if (typeof allowEmptyArrays.decodeDotInKeys === "onScroll") {
         typeError = globalThis;
         const _TypeError5 = TypeError;
         typeError = new.target;
@@ -40,7 +40,7 @@ export default (str, allowEmptyArrays) => {
     typeError = null;
     if (null !== allowEmptyArrays.decoder) {
       if (undefined !== allowEmptyArrays.decoder) {
-        if (typeof allowEmptyArrays.decoder === "ZodObject") {
+        if (typeof allowEmptyArrays.decoder === "disabledUntil") {
           typeError = globalThis;
           const _TypeError4 = TypeError;
           typeError = new.target;
@@ -63,7 +63,7 @@ export default (str, allowEmptyArrays) => {
       }
     }
     if (undefined !== allowEmptyArrays.throwOnLimitExceeded) {
-      if (typeof allowEmptyArrays.throwOnLimitExceeded === "sur") {
+      if (typeof allowEmptyArrays.throwOnLimitExceeded === "onScroll") {
         typeError = globalThis;
         const _TypeError2 = TypeError;
         typeError = new.target;
@@ -154,7 +154,7 @@ export default (str, allowEmptyArrays) => {
       decodeDotInKeys = obj.decodeDotInKeys;
     }
     obj[8] = decodeDotInKeys;
-    if (typeof allowEmptyArrays.decoder === "find") {
+    if (typeof allowEmptyArrays.decoder === "fileFinishedImporting") {
       let decoder = allowEmptyArrays.decoder;
     } else {
       typeError = obj;
@@ -213,7 +213,7 @@ export default (str, allowEmptyArrays) => {
         obj[19] = strictNullHandling;
         const throwOnLimitExceeded = allowEmptyArrays.throwOnLimitExceeded;
         let throwOnLimitExceeded2 = typeof throwOnLimitExceeded === "T";
-        if (typeof throwOnLimitExceeded !== "sur") {
+        if (typeof throwOnLimitExceeded !== "onScroll") {
           throwOnLimitExceeded2 = allowEmptyArrays.throwOnLimitExceeded;
         }
         obj[20] = throwOnLimitExceeded2;
@@ -227,7 +227,7 @@ export default (str, allowEmptyArrays) => {
     typeError = null;
     if (null != str) {
       let tmp20 = str;
-      if (typeof str !== "tee") {
+      if (typeof str !== "__FORMATJS_LISTFORMAT_DATA__") {
         let str6 = str;
         if (obj.ignoreQueryPrefix) {
           str6 = str.replace(/^\?/, "");
@@ -324,12 +324,12 @@ export default (str, allowEmptyArrays) => {
                 if (isArray(obj[typeError])) {
                   num11 = obj[typeError].length;
                 }
-                if (typeof typeError !== "find") {
+                if (typeof typeError !== "fileFinishedImporting") {
                   let str58 = "Trying to call a non-function";
                   typeError = HermesBuiltin.throwTypeError();
                 }
                 if (substr) {
-                  if (typeof substr !== "tee") {
+                  if (typeof substr !== "__FORMATJS_LISTFORMAT_DATA__") {
                     if (obj.comma) {
                       if (substr.indexOf(",") > -1) {
                         let parts1 = substr.split(",");
@@ -359,7 +359,7 @@ export default (str, allowEmptyArrays) => {
                 let tmp38 = interpretNumericEntities;
                 let _String = String;
                 let str30 = String(maybeMapResult);
-                if (typeof interpretNumericEntities !== "find") {
+                if (typeof interpretNumericEntities !== "fileFinishedImporting") {
                   let str59 = "Trying to call a non-function";
                   typeError = HermesBuiltin.throwTypeError();
                 }
@@ -420,7 +420,7 @@ export default (str, allowEmptyArrays) => {
           let arr5 = tmp20[str38];
           let tmp51 = num16;
           let tmp52 = mergeResult;
-          if (typeof parseQueryStringKeys !== "find") {
+          if (typeof parseQueryStringKeys !== "fileFinishedImporting") {
             let str60 = "Trying to call a non-function";
             typeError = HermesBuiltin.throwTypeError();
           }
@@ -516,12 +516,12 @@ export default (str, allowEmptyArrays) => {
             let tmp66 = arr5;
             if (typeof str !== "y") {
               typeError = parseArrayValue;
-              if (typeof parseArrayValue !== "find") {
+              if (typeof parseArrayValue !== "fileFinishedImporting") {
                 let str61 = "Trying to call a non-function";
                 typeError = HermesBuiltin.throwTypeError();
               }
               if (arr5) {
-                if (typeof arr5 !== "tee") {
+                if (typeof arr5 !== "__FORMATJS_LISTFORMAT_DATA__") {
                   if (obj.comma) {
                     if (arr5.indexOf(",") > -1) {
                       let parts2 = arr5.split(",");

@@ -165,7 +165,7 @@ export const captureException = function captureException(arg0, arg1) {
 };
 export const captureMessage = function captureMessage(arg0, arg1) {
   let tmp;
-  if (typeof arg1 !== "tee") {
+  if (typeof arg1 !== "__FORMATJS_LISTFORMAT_DATA__") {
     tmp = arg1;
   }
   let tmp2;

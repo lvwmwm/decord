@@ -1,10 +1,10 @@
-// Module ID: 11659
-// Function ID: 11660
+// Module ID: 11677
+// Function ID: 11678
 // Name: GuildPowerupsMultiPerkCard
-// Dependencies: [19, 4181, 21, 11636, 589, 11660, 11633, 11658, 2]
+// Dependencies: [19, 4185, 21, 11654, 589, 11678, 11651, 11676, 2]
 // Exports: default
 
-// Module 11659 (GuildPowerupsMultiPerkCard)
+// Module 11677 (GuildPowerupsMultiPerkCard)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
@@ -16,12 +16,12 @@ export default function GuildPowerupsMultiPerkCard(guildId) {
   let costDecorator;
   guildId = guildId.guildId;
   const listing = guildId.listing;
-  let badge = listing(11636)(guildId, listing);
+  let badge = listing(11654)(guildId, listing);
   let obj = guildId(589);
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   obj = { guildId, powerups: listing.powerups };
-  costDecorator = listing(11660)(obj);
+  costDecorator = listing(11678)(obj);
   const items1 = [guildId, listing];
   let tmp5 = null;
   if (null != costDecorator) {
@@ -37,7 +37,7 @@ export default function GuildPowerupsMultiPerkCard(guildId) {
       obj[6] = tmp4;
       badge = badge.badge;
       obj[7] = badge;
-      jsx(listing(11658), { title: null, description: null, cost: null, imageUrl: null, status: null, costDecorator: null, onPress: null, badge: null });
+      jsx(listing(11676), { title: null, description: null, cost: null, imageUrl: null, status: null, costDecorator: null, onPress: null, badge: null });
       const tmp6 = jsx;
     }
   }

@@ -1,10 +1,10 @@
-// Module ID: 11870
-// Function ID: 11871
+// Module ID: 11888
+// Function ID: 11889
 // Name: SpecialNavigationPath
-// Dependencies: [676, 4017, 2]
+// Dependencies: [676, 4021, 2]
 // Exports: getSelectedSpecialNavigationPath, useSelectedSpecialNavigationPath
 
-// Module 11870 (SpecialNavigationPath)
+// Module 11888 (SpecialNavigationPath)
 import { Routes } from "ME";
 
 let obj = { FRIENDS: 0, [0]: "FRIENDS" };
@@ -17,7 +17,7 @@ export const getSelectedSpecialNavigationPath = function getSelectedSpecialNavig
   }
 };
 export const useSelectedSpecialNavigationPath = function useSelectedSpecialNavigationPath() {
-  const obj = require(4017) /* _extends */;
+  const obj = require(4021) /* _extends */;
   let FRIENDS;
   if (obj.useLocation().pathname === Routes.FRIENDS) {
     FRIENDS = obj.FRIENDS;

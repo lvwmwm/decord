@@ -1,9 +1,9 @@
-// Module ID: 5566
-// Function ID: 5567
+// Module ID: 5570
+// Function ID: 5571
 // Name: GuildIconSizes
-// Dependencies: [32, 19, 5567, 1415, 676, 21, 4189, 712, 1856, 5178, 5141, 5568, 299, 2]
+// Dependencies: [32, 19, 5571, 1415, 676, 21, 4193, 712, 1856, 5182, 5145, 5572, 299, 2]
 
-// Module 5566 (GuildIconSizes)
+// Module 5570 (GuildIconSizes)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { ExpressionSourceGuildRecord as closure_5 } from "getEmojiSourceData";
@@ -189,7 +189,7 @@ const memoResult = importAllResult.memo(function GuildIconInner(guild) {
     if (!c14) {
       if (c13) {
         if (preloadAnimation) {
-          if (typeof tmp11 !== "tee") {
+          if (typeof tmp11 !== "__FORMATJS_LISTFORMAT_DATA__") {
             const obj3 = icon(flag[10]);
             icon(flag[10]).preload(tmp11).then(() => {
               const timerId = setTimeout(() => {

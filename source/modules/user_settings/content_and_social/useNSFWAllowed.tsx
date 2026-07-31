@@ -1,10 +1,10 @@
-// Module ID: 5707
-// Function ID: 5708
+// Module ID: 5712
+// Function ID: 5713
 // Name: useNSFWAllowed
 // Dependencies: [1874, 589, 2]
 // Exports: useNSFWAllowed
 
-// Module 5707 (useNSFWAllowed)
+// Module 5712 (useNSFWAllowed)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;

@@ -165,7 +165,7 @@ let items = [
         opacity = tmp.opacity;
       }
       let num = 1;
-      if (typeof opacity !== "reType") {
+      if (typeof opacity !== "__REMOTEDEV__") {
         num = opacity;
       }
       return num;

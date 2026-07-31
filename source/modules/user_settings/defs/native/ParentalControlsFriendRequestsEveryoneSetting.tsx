@@ -1,9 +1,9 @@
-// Module ID: 14680
-// Function ID: 14681
+// Module ID: 14703
+// Function ID: 14704
 // Name: toggle
-// Dependencies: [19, 5793, 7753, 676, 6254, 13851, 6503, 10116, 1236, 2]
+// Dependencies: [19, 5798, 7761, 676, 6260, 13875, 6509, 10133, 1236, 2]
 
-// Module 14680 (toggle)
+// Module 14703 (toggle)
 import noop from "noop";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import ME from "ME";
@@ -20,8 +20,8 @@ createToggle = {
   },
   parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useFriendRequestsEveryoneSettingValue() {
-    const selectedTeenId = controlledSetting(6254).useSelectedTeenId();
-    const ParentalControlledFriendSourceFlags = controlledSetting(13851).ParentalControlledFriendSourceFlags;
+    const selectedTeenId = controlledSetting(6260).useSelectedTeenId();
+    const ParentalControlledFriendSourceFlags = controlledSetting(13875).ParentalControlledFriendSourceFlags;
     controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);
     const items = [controlledSetting];
     return React.useMemo(() => controlledSetting(outer1_1[6]).computeFlags(controlledSetting), items).all;
@@ -29,7 +29,7 @@ createToggle = {
   onValueChange: function onFriendRequestsEveryoneSettingValueChange(arg0) {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      const ParentalControlledFriendSourceFlags = require(13851) /* result */.ParentalControlledFriendSourceFlags;
+      const ParentalControlledFriendSourceFlags = require(13875) /* result */.ParentalControlledFriendSourceFlags;
       if (arg0) {
         let tmp7 = tmp5;
       } else {

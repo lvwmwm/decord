@@ -1,10 +1,10 @@
-// Module ID: 12264
-// Function ID: 12265
+// Module ID: 12290
+// Function ID: 12291
 // Name: getGuildEventImageURL
 // Dependencies: [676, 1450, 2]
 // Exports: default
 
-// Module 12264 (getGuildEventImageURL)
+// Module 12290 (getGuildEventImageURL)
 import { Endpoints } from "ME";
 
 let result = require("set").fileFinishedImporting("modules/guild_scheduled_events/utils/getGuildEventImage.tsx");
@@ -16,11 +16,11 @@ export default function getGuildEventImageURL(image, size) {
     let result = size;
     if (null == size) {
       const _window = window;
-      result = window.screen.width * require(1450) /* isAttachmentLadderEnabled */.getDevicePixelRatio();
-      const obj = require(1450) /* isAttachmentLadderEnabled */;
+      result = window.screen.width * require(1450) /* handleImageLoad */.getDevicePixelRatio();
+      const obj = require(1450) /* handleImageLoad */;
     }
     const _window2 = window;
-    const bestMediaProxySize = require(1450) /* isAttachmentLadderEnabled */.getBestMediaProxySize(result);
+    const bestMediaProxySize = require(1450) /* handleImageLoad */.getBestMediaProxySize(result);
     if (null != CDN_HOST) {
       const _HermesInternal = HermesInternal;
       let combined = "https://" + CDN_HOST + "/guild-events/" + image.id + "/" + image.image;

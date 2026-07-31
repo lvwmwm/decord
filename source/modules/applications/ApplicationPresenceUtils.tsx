@@ -1,10 +1,10 @@
-// Module ID: 8365
-// Function ID: 8366
+// Module ID: 8378
+// Function ID: 8379
 // Name: shouldDisableUserPresenceInChannel
 // Dependencies: [1372, 2]
 // Exports: shouldDisableUserPresenceInChannel
 
-// Module 8365 (shouldDisableUserPresenceInChannel)
+// Module 8378 (shouldDisableUserPresenceInChannel)
 import ensureGuildLoaded from "ensureGuildLoaded";
 
 const result = require("set").fileFinishedImporting("modules/applications/ApplicationPresenceUtils.tsx");

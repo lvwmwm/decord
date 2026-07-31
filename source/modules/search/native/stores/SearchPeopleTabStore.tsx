@@ -1,9 +1,9 @@
-// Module ID: 11460
-// Function ID: 11461
+// Module ID: 11478
+// Function ID: 11479
 // Name: teardown
-// Dependencies: [1372, 5099, 12, 11461, 8811, 1236, 589, 709, 2]
+// Dependencies: [1372, 5103, 12, 11479, 8824, 1236, 589, 709, 2]
 
-// Module 11460 (teardown)
+// Module 11478 (teardown)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleChannelSelect from "handleChannelSelect";
 import { Store } from "initialize";
@@ -49,7 +49,7 @@ prototype["search"] = function search(str) {
     } else {
       const obj2 = importDefault(12);
       const values = importDefault(12).chain(mutablePrivateChannels.getMutablePrivateChannels()).values();
-      const found = values.filter(trimmed1(11461).filterGroupDMs);
+      const found = values.filter(trimmed1(11479).filterGroupDMs);
       const mapped = found.map((id) => {
         const items = [id, trimmed1(outer1_2[3]).matchGroupDM(id, trimmed1), outer1_4.getScoreWithoutFetchingLatest(id.id)];
         return items;
@@ -86,7 +86,7 @@ prototype["processResults"] = function processResults() {
   const self = this;
   const userSearch = this.userSearch;
   this.userIndexes = userSearch.filter(this.searchQueryString);
-  let obj = require(8811) /* _toPropertyKey */;
+  let obj = require(8824) /* _toPropertyKey */;
   obj = { data: this.userIndexes, withGuildMembers: true, withAffinitySuggestions: true, withFriends: true, withFriendSuggestions: false, withFriendRequests: false, withFriendRequestsIncoming: false, withFriendRequestsOutgoing: false, excludeCurrentUser: true };
   const result = obj.parseUserSearchResults(obj);
   let arr3 = result;
@@ -164,7 +164,7 @@ const searchPeopleTabStoreImpl = new SearchPeopleTabStoreImpl(require("dispatche
     let obj = map;
     let value = map.get(id);
     if (value == null) {
-      if (typeof PeopleSearchManager !== "find") {
+      if (typeof PeopleSearchManager !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(PeopleSearchManager.prototype);
@@ -173,7 +173,7 @@ const searchPeopleTabStoreImpl = new SearchPeopleTabStoreImpl(require("dispatche
       obj.groupDMs = [];
       obj.userIndexes = {};
       obj.results = [];
-      let userSearch = new obj(8811).UserSearch(() => obj.processResults());
+      let userSearch = new obj(8824).UserSearch(() => obj.processResults());
       obj.userSearch = userSearch;
       userSearch = obj.userSearch;
       const subscription = userSearch.subscribe(() => obj.processResults(), true);

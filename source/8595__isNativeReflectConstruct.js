@@ -1,7 +1,7 @@
 // Module ID: 8595
 // Function ID: 8596
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8596, 8552]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8596, 8579, 8580]
 
 // Module 8595 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const Filter = importDefault;
+const FeFlood = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class Filter {
+class FeFlood {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, Filter);
+    tmp = _isNativeReflectConstruct(this, FeFlood);
     tmp2 = __esModule;
-    obj = __esModule(Filter);
+    obj = __esModule(FeFlood);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,31 +51,31 @@ class Filter {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Filter, require("_isNativeReflectConstruct"));
-const items = [
-  {
-    key: "render",
-    value: function render() {
-      const self = this;
-      const props = this.props;
-      let obj = { name: props.id, x: props.x, y: props.y, width: props.width, height: props.height, filterUnits: props.filterUnits, primitiveUnits: props.primitiveUnits };
-      obj = {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      };
-      const merged = Object.assign(obj);
-      obj.children = this.props.children;
-      return jsx(self(8596), {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      });
-    }
+require("_inherits")(FeFlood, require("_isNativeReflectConstruct"));
+let obj = {
+  key: "render",
+  value: function render() {
+    const self = this;
+    const obj = {
+      ref(arg0) {
+        return self.refMethod(arg0);
+      }
+    };
+    const tmp = importDefault(8596);
+    const merged = Object.assign(self(8579).extractFilter(this.props));
+    const merged1 = Object.assign(importDefault(8579)(this.props));
+    return <tmp ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
   }
-];
-const importDefaultResultResult = importDefaultResult(Filter, items);
-importDefaultResultResult.displayName = "Filter";
-importDefaultResultResult.defaultProps = { x: "-10%", y: "-10%", width: "120%", height: "120%", filterUnits: "objectBoundingBox", primitiveUnits: "userSpaceOnUse" };
+};
+const items = [obj];
+const importDefaultResultResult = importDefaultResult(FeFlood, items);
+importDefaultResultResult.displayName = "FeFlood";
+obj = {};
+let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+obj.floodColor = "black";
+obj.floodOpacity = 1;
+importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

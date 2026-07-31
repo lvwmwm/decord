@@ -1,10 +1,10 @@
-// Module ID: 9619
-// Function ID: 9620
+// Module ID: 9634
+// Function ID: 9635
 // Name: useStickerCategories
-// Dependencies: [19, 17, 1862, 1874, 9620, 676, 1338, 9616, 4856, 9621, 9622, 1579, 2]
+// Dependencies: [19, 17, 1862, 1874, 9635, 676, 1338, 9631, 4860, 9636, 9637, 1579, 2]
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker, useStickerCategories
 
-// Module 9619 (useStickerCategories)
+// Module 9634 (useStickerCategories)
 import noop from "noop";
 import { NativeModules } from "get ActivityIndicator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -42,15 +42,15 @@ export const useStickerCategories = function useStickerCategories(channel) {
       return tmp2;
     });
     return found1.map((type) => {
-      if (type.type !== callback(4856).StickerCategoryTypes.FAVORITE) {
-        if (type.type !== tmp(4856).StickerCategoryTypes.RECENT) {
+      if (type.type !== callback(4860).StickerCategoryTypes.FAVORITE) {
+        if (type.type !== tmp(4860).StickerCategoryTypes.RECENT) {
           return type;
         }
       }
-      if (type.type === callback(4856).StickerCategoryTypes.FAVORITE) {
-        let tmp4 = lib(9621);
+      if (type.type === callback(4860).StickerCategoryTypes.FAVORITE) {
+        let tmp4 = lib(9636);
       } else {
-        tmp4 = lib(9622);
+        tmp4 = lib(9637);
       }
       const obj = {};
       const merged = Object.assign(type);

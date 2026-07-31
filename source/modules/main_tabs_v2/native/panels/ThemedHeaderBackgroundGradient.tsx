@@ -1,8 +1,8 @@
-// Module ID: 15392
-// Function ID: 15393
-// Dependencies: [19, 17, 21, 4189, 712, 1581, 3893, 688, 4611, 2]
+// Module ID: 15420
+// Function ID: 15421
+// Dependencies: [19, 17, 21, 4193, 712, 1581, 3897, 688, 4615, 2]
 
-// Module 15392
+// Module 15420
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -24,7 +24,7 @@ const memoResult = require("noop").memo(function ThemedHeaderBackgroundGradient(
   }
   const tmp3 = callback();
   const tmp4 = importDefault;
-  let obj = require(3893) /* map */;
+  let obj = require(3897) /* map */;
   const token = obj.useToken(BACKGROUND_BASE_LOWEST);
   let obj1 = require(688) /* int2hslRaw */;
   let str = obj1.hex2rgb(token, 0);
@@ -38,7 +38,7 @@ const memoResult = require("noop").memo(function ThemedHeaderBackgroundGradient(
   obj[0] = items;
   obj1 = { style: absoluteFill.absoluteFill, colors: items1, start: { x: 0, y: 0 }, end: { x: 0, y: 1 } };
   items1 = [token, str];
-  obj[2] = jsx(tmp4(4611), { style: absoluteFill.absoluteFill, colors: items1, start: { x: 0, y: 0 }, end: { x: 0, y: 1 } });
+  obj[2] = jsx(tmp4(4615), { style: absoluteFill.absoluteFill, colors: items1, start: { x: 0, y: 0 }, end: { x: 0, y: 1 } });
   return <closure_4 height={Math.max(importDefault(1581)().top, num)} />;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/panels/ThemedHeaderBackgroundGradient.tsx");

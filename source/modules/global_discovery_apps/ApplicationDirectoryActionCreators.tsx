@@ -1,10 +1,10 @@
-// Module ID: 11241
-// Function ID: 11242
+// Module ID: 11259
+// Function ID: 11260
 // Name: _getEmbedApplication
-// Dependencies: [5, 4188, 1946, 706, 5517, 11242, 11243, 11238, 11244, 11245, 676, 709, 584, 530, 11239, 500, 11246, 11247, 11248, 2]
+// Dependencies: [5, 4192, 1946, 706, 5521, 11260, 11261, 11256, 11262, 11263, 676, 709, 584, 530, 11257, 500, 11264, 11265, 11266, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
-// Module 11241 (_getEmbedApplication)
+// Module 11259 (_getEmbedApplication)
 import getLastFetchTimeMs from "getLastFetchTimeMs";
 import getUserAgnosticState from "getUserAgnosticState";
 import _getSystemLocale from "_getSystemLocale";
@@ -907,7 +907,7 @@ function _fetchCollections() {
                 if (fetchState !== constants.FETCHING) {
                   let tmp29 = !dependencyMap;
                   if (!dependencyMap) {
-                    tmp29 = ACTIVE === APPLICATION_DIRECTORY(11248).ApplicationCollectionActiveState.ACTIVE;
+                    tmp29 = ACTIVE === APPLICATION_DIRECTORY(11266).ApplicationCollectionActiveState.ACTIVE;
                   }
                   c6 = tmp29;
                   let obj5 = ACTIVE(709);
@@ -926,10 +926,10 @@ function _fetchCollections() {
                   let obj9 = APPLICATION_DIRECTORY(500);
                   locale = APPLICATION_DIRECTORY;
                   if (obj9.isAndroid()) {
-                    let WEB = locale(11246).ApplicationCollectionPlatforms.ANDROID;
+                    let WEB = locale(11264).ApplicationCollectionPlatforms.ANDROID;
                   } else {
                     const localeResult = locale(500);
-                    const ApplicationCollectionPlatforms = APPLICATION_DIRECTORY(11246).ApplicationCollectionPlatforms;
+                    const ApplicationCollectionPlatforms = APPLICATION_DIRECTORY(11264).ApplicationCollectionPlatforms;
                     if (isIOSResult) {
                       WEB = ApplicationCollectionPlatforms.IOS;
                     } else {

@@ -1,12 +1,15 @@
-// Module ID: 9097
-// Function ID: 9098
-// Name: SearchAutocompleteSelectAnalyticsActions
-// Dependencies: [676, 3867, 2]
+// Module ID: 9108
+// Function ID: 9109
+// Name: MessageEmbedTypes
+// Dependencies: [676, 3871, 2]
 
-// Module 9097 (SearchAutocompleteSelectAnalyticsActions)
-import { SearchTypes } from "ME";
+// Module 9108 (MessageEmbedTypes)
+import ME from "ME";
 import set from "set";
 
+let MessageEmbedTypes;
+let SearchTypes;
+({ MessageEmbedTypes, SearchTypes } = ME);
 let obj = { Messages: 0, [0]: "Messages", Media: 1, [1]: "Media", Link: 2, [2]: "Link", File: 3, [3]: "File", Pins: 4, [4]: "Pins" };
 obj = { RECENT: "recent", MEMBERS: "members", PEOPLE: "people", MEDIA: "media", PINS: "pins", MESSAGES: "messages", LINKS: "links", FILES: "files", GUILD_CHANNELS: "guild_channels", THREADS: "threads" };
 const items = [, , , , ];
@@ -37,6 +40,8 @@ const items11 = [, , , , ];
 ({ MEMBERS: arr12[0], MEDIA: arr12[1], PINS: arr12[2], LINKS: arr12[3], FILES: arr12[4] } = obj);
 const items12 = [, , , , , ];
 ({ MEMBERS: arr13[0], MESSAGES: arr13[1], MEDIA: arr13[2], PINS: arr13[3], LINKS: arr13[4], FILES: arr13[5] } = obj);
+const items13 = [, , ];
+({ IMAGE: arr14[0], VIDEO: arr14[1], GIFV: arr14[2] } = MessageEmbedTypes);
 const result = set.fileFinishedImporting("modules/search/SearchConstants.tsx");
 
 export const SearchAutocompleteSelectAnalyticsActions = { KEY_PRESS: "key_press", CLICK: "click" };
@@ -88,3 +93,4 @@ export const SearchFileTypes = { AUDIO: "audio", MEDIA_ATTACHMENT: "media_attach
 export const SEARCH_BAR_HEIGHT = 40;
 export const SearchQueryTagTypes = { COMPLETE: "complete", PREFIX: "prefix", ANSWER: "answer" };
 export const SearchQuerySource = { SEARCH_TEXT_INPUT: "search_text_input", SEARCH_POPOUT: "search_popout", SEARCH_FILTERS_MODAL: "search_filters_modal", SEARCH_XDM_SETTINGS: "search_xdm_settings" };
+export const EMBED_TYPES_WITHOUT_DESCRIPTION = new Set(items13);

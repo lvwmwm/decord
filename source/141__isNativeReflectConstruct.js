@@ -133,7 +133,7 @@ const items = [
         nativeID = currentProps.nativeID;
       }
       let str = "";
-      if (typeof nativeID !== "tee") {
+      if (typeof nativeID !== "__FORMATJS_LISTFORMAT_DATA__") {
         str = nativeID;
       }
       return str;

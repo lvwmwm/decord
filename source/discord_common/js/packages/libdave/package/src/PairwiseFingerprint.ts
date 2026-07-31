@@ -1,10 +1,10 @@
-// Module ID: 8877
-// Function ID: 8878
+// Module ID: 8890
+// Function ID: 8891
 // Name: compareArrays
-// Dependencies: [5, 8876, 8878, 2]
+// Dependencies: [5, 8889, 8891, 2]
 // Exports: generatePairwiseFingerprint
 
-// Module 8877 (compareArrays)
+// Module 8890 (compareArrays)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import module_36 from "module_36";
 
@@ -66,9 +66,9 @@ function _generatePairwiseFingerprint() {
               let lib;
               let uint8Array;
               let asyncGeneratorStep;
-              const items = [lib(8876).generateKeyFingerprint(lib, uint8Array, asyncGeneratorStep), ];
-              const obj9 = lib(8876);
-              items[1] = lib(8876).generateKeyFingerprint(lib, module_36, closure_4);
+              const items = [lib(8889).generateKeyFingerprint(lib, uint8Array, asyncGeneratorStep), ];
+              const obj9 = lib(8889);
+              items[1] = lib(8889).generateKeyFingerprint(lib, module_36, closure_4);
               c7 = 1;
               c8 = 1;
               const obj1 = { value: null, done: false };

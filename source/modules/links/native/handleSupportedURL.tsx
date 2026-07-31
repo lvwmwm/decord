@@ -1,10 +1,10 @@
-// Module ID: 12983
-// Function ID: 12984
+// Module ID: 13008
+// Function ID: 13009
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 6691, 5779, 6222, 12437, 1218, 676, 1379, 4254, 4402, 10673, 5794, 4172, 12984, 11066, 7753, 11763, 4395, 4041, 12985, 8356, 6608, 8646, 10981, 1844, 8031, 698, 8033, 5680, 9543, 11103, 12992, 11795, 10014, 1959, 10997, 10996, 12994, 12996, 1577, 4732, 13001, 3886, 13003, 1862, 6687, 8205, 8214, 11810, 4394, 9035, 4040, 5045, 1222, 709, 4995, 1467, 8301, 13006, 13021, 500, 13032, 8345, 13039, 4509, 13040, 5797, 5535, 8892, 6000, 5038, 10956, 9696, 13112, 5023, 5694, 8483, 8477, 4155, 2]
+// Dependencies: [109, 5, 6697, 5784, 6228, 12463, 1218, 676, 1379, 4258, 4406, 10691, 5799, 4176, 13009, 11084, 7761, 11781, 4399, 4045, 13010, 8363, 6614, 8659, 10999, 1844, 8038, 698, 8040, 5684, 9558, 11121, 13017, 11813, 10031, 1959, 11015, 11014, 13019, 13021, 1577, 4736, 13026, 3890, 13028, 1862, 6693, 8212, 8221, 11828, 4398, 9048, 4044, 5049, 1222, 709, 4999, 1467, 8308, 13031, 13046, 500, 13057, 8352, 13064, 4513, 13065, 5802, 5539, 8905, 6006, 5042, 10974, 9713, 13137, 5027, 5699, 8496, 8490, 4159, 2]
 // Exports: default
 
-// Module 12983 (handleSupportedURL)
+// Module 13008 (handleSupportedURL)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import zustandStore from "zustandStore";
 import scheduledEventSort from "scheduledEventSort";
@@ -225,7 +225,7 @@ export default function handleSupportedURL(payload) {
       result = inviteCode;
       result = payload(inviteCode[29]).startDiceRoll(channelId2, diceCount, diceSides);
       result = rootNavigationRef1;
-      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: "\u{1F9B9}\u{1F3FB}\u200D\u2642\uFE0F" };
+      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: true };
       obj3[0] = guildId2;
       obj3[1] = channelId2;
       let obj4 = { safe: null, navigationReplace: null, waitForConnection: null, skipMessageFetch: null };

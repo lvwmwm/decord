@@ -1,11 +1,11 @@
-// Module ID: 9931
-// Function ID: 9932
+// Module ID: 9948
+// Function ID: 9949
 // Name: _upsertSavedMessage
-// Dependencies: [5, 9549, 676, 709, 530, 9550, 4409, 2]
-// Exports: deleteSavedMessage, dismissBookmarkNudge, fetchAndUpdateSavedMessages, upsertSavedMessage
+// Dependencies: [5, 9564, 676, 530, 9565, 709, 4413, 2]
+// Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, upsertSavedMessage
 
-// Module 9931 (_upsertSavedMessage)
-import SavedMessageSortTypes from "SavedMessageSortTypes";
+// Module 9948 (_upsertSavedMessage)
+import dispatcher from "dispatcher";
 import getTimeSafe from "getTimeSafe";
 import { Endpoints } from "ME";
 
@@ -46,13 +46,13 @@ function _upsertSavedMessage() {
               const table = tmp2;
               let closure_1 = tmp5;
               let lib;
-              const HTTP = lib(outer1_2[4]).HTTP;
+              const HTTP = lib(outer1_2[3]).HTTP;
               const obj1 = { url: null, body: null, rejectWithError: null };
               obj1[0] = outer1_5.PUT_SAVED_MESSAGE(lib.channelId, lib.messageId);
               const obj2 = { due_at: null };
               obj2[0] = lib.dueAt;
               obj1[1] = obj2;
-              obj1[2] = lib(outer1_2[4]).rejectWithMigratedError();
+              obj1[2] = lib(outer1_2[3]).rejectWithMigratedError();
               c3 = 1;
               c4 = 1;
               const obj3 = { value: null, done: false };
@@ -70,7 +70,7 @@ function _upsertSavedMessage() {
           } else {
             lib = arg1;
             if (lib.ok) {
-              obj = lib(table[5]);
+              obj = lib(table[4]);
               c4 = 3;
               const obj5 = { value: null, done: true };
               obj5[0] = obj.savedMessageCreateObjectToClient(lib.body);
@@ -232,11 +232,11 @@ function _fetchAndUpdateSavedMessages() {
             callback = results.map((message) => {
               let messageRecord = null;
               if (null != message.message) {
-                let obj = callback(4409);
+                let obj = callback(4413);
                 messageRecord = obj.createMessageRecord(message.message);
               }
               obj = { message: messageRecord, saveData: null };
-              obj[1] = callback(9550).savedMessageDataToClient(message.save_data);
+              obj[1] = callback(9565).savedMessageDataToClient(message.save_data);
               return obj;
             });
             obj2 = callback(709);
@@ -268,9 +268,6 @@ function _fetchAndUpdateSavedMessages() {
 }
 const result = require("ME").fileFinishedImporting("modules/saved_messages/SavedMessagesActions.tsx");
 
-export const dismissBookmarkNudge = function dismissBookmarkNudge() {
-  importDefault(709).dispatch({ type: "BOOKMARK_NUDGE_DISMISS" });
-};
 export const upsertSavedMessage = function upsertSavedMessage() {
   const self = this;
   const apply = _upsertSavedMessage.apply;

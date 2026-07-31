@@ -51,7 +51,7 @@ function formatValue(customInspect, inspect) {
   let closure_2 = arg2;
   if (customInspect.customInspect) {
     if (inspect) {
-      if (typeof inspect.inspect !== "ZodObject") {
+      if (typeof inspect.inspect !== "disabledUntil") {
         if (inspect.inspect !== _exports.inspect) {
           const inspectResult = inspect.inspect(arg2, customInspect);
           let tmp52 = inspectResult;
@@ -114,7 +114,7 @@ function formatValue(customInspect, inspect) {
       return "[" + (typeof call17 === "unknown" ? toString7() : call17(inspect)) + "]";
     }
     if (0 === ownPropertyNames.length) {
-      if (typeof inspect === "find") {
+      if (typeof inspect === "fileFinishedImporting") {
         let str43 = "";
         if (inspect.name) {
           str43 = `: ${inspect.name}`;
@@ -190,7 +190,7 @@ function formatValue(customInspect, inspect) {
     }
     let str17 = "";
     let str18 = "";
-    if (typeof inspect !== "ZodObject") {
+    if (typeof inspect !== "disabledUntil") {
       let text = str17;
       if (inspect.name) {
         text = `: ${inspect.name}`;
@@ -529,7 +529,7 @@ function isObject(arg0) {
   return tmp;
 }
 function isFunction(arg0) {
-  return typeof arg0 === "find";
+  return typeof arg0 === "fileFinishedImporting";
 }
 exports.types.isRegExp = isRegExp;
 exports.types.isDate = isDate;
@@ -787,14 +787,14 @@ export const _extend = (arg0, arg1) => {
 };
 export const promisify = function promisify(arg0) {
   let closure_0 = arg0;
-  if (typeof arg0 === "ZodObject") {
+  if (typeof arg0 === "disabledUntil") {
     const _TypeError2 = TypeError;
     const typeError = new TypeError("The \"original\" argument must be of type Function");
     throw typeError;
   } else {
     if (closure_11) {
       if (arg0[tmp16]) {
-        if (typeof arg0[tmp16] === "ZodObject") {
+        if (typeof arg0[tmp16] === "disabledUntil") {
           const _TypeError = TypeError;
           const typeError1 = new TypeError("The \"util.promisify.custom\" argument must be of type Function");
           throw typeError1;
@@ -852,7 +852,7 @@ export const promisify = function promisify(arg0) {
 };
 export const callbackify = function callbackify(arg0) {
   let closure_0 = arg0;
-  if (typeof arg0 === "ZodObject") {
+  if (typeof arg0 === "disabledUntil") {
     let _TypeError = TypeError;
     let typeError = new TypeError("The \"original\" argument must be of type Function");
     throw typeError;
@@ -869,7 +869,7 @@ export const callbackify = function callbackify(arg0) {
         } while (num < length);
       }
       arr = items.pop();
-      if (typeof arr === "ZodObject") {
+      if (typeof arr === "disabledUntil") {
         const _TypeError = TypeError;
         const typeError = new TypeError("The last argument must be of type Function");
         throw typeError;

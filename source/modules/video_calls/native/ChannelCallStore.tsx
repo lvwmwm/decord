@@ -1,10 +1,10 @@
-// Module ID: 10231
-// Function ID: 10232
+// Module ID: 10249
+// Function ID: 10250
 // Name: VoiceChatDrawerState
-// Dependencies: [19, 1371, 10232, 4214, 4207, 4074, 8164, 644, 705, 709, 4383, 12, 10233, 10234, 10235, 589, 4169, 2]
+// Dependencies: [19, 1371, 10250, 4218, 4211, 4078, 8171, 644, 705, 709, 4387, 12, 10251, 10252, 10253, 589, 4173, 2]
 // Exports: clearFocusTimer, resetChannelCallStore, resetFocus, resetFocusTimer, setFocus, setVoiceChatDrawerState, toggleFocus, useChannelCallOrientationHandlers, useIsVoiceChatFocused
 
-// Module 10231 (VoiceChatDrawerState)
+// Module 10249 (VoiceChatDrawerState)
 import noop from "noop";
 import participantFromServer from "participantFromServer";
 import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH";
@@ -20,13 +20,15 @@ let require = arg1;
 const timeout = new require("start").Timeout();
 let obj = { focus: true, pipFocus: false, isGestureEnabled: true, voiceChatDrawerState: VoiceChatDrawerState.CLOSED, voiceCallOverlayLayoutStates: null };
 obj = {};
-obj = { x: "Array", y: "flex", width: "y", height: "HermesInternal", screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: "progressbar", isVisible: null };
+obj = { x: "Array", y: "flex", width: "borderRadius", height: "label", screenOrientation: "<string:822483025>", hasUserInteractedSinceOrientationChange: "<string:3951369912>", isInitialized: "<string:1069463633>", isVisible: "ip" };
+obj[4] = require("handleOrientationChange").OrientationType.PORTRAIT;
 obj[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = obj;
-obj[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = { x: "Array", y: "flex", width: "y", height: "HermesInternal", screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: "progressbar", isVisible: null };
+const obj1 = { x: "Array", y: "flex", width: "borderRadius", height: "label", screenOrientation: "<string:822483025>", hasUserInteractedSinceOrientationChange: "<string:3951369912>", isInitialized: "<string:1069463633>", isVisible: "ip" };
+obj1[4] = require("handleOrientationChange").OrientationType.PORTRAIT;
+obj[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = obj1;
 obj[4] = obj;
 let closure_9 = Object.freeze(obj);
 let obj2 = keys.create(() => closure_9);
-const obj1 = { x: "Array", y: "flex", width: "y", height: "HermesInternal", screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: "progressbar", isVisible: null };
 const throttleResult = require("areParticipantStatesEqual").throttle(() => {
   const pipFocus = obj2.getState().pipFocus;
   pipFocus(705).batchUpdates(() => outer1_10.setState({ pipFocus: !pipFocus }));
@@ -77,9 +79,9 @@ export const useIsVoiceChatFocused = function useIsVoiceChatFocused() {
   return voiceChatDrawerState === VoiceChatDrawerState.OPEN || voiceChatDrawerState === VoiceChatDrawerState.CLOSING;
 };
 export const useChannelCallOrientationHandlers = function useChannelCallOrientationHandlers(isGuildStageVoice) {
-  const tmp2 = importDefault(10233)(isGuildStageVoice);
+  const tmp2 = importDefault(10251)(isGuildStageVoice);
   const require = tmp2;
-  const tmp3 = importDefault(10234)(isGuildStageVoice);
+  const tmp3 = importDefault(10252)(isGuildStageVoice);
   importDefault = tmp3;
   let isGuildStageVoiceResult = isGuildStageVoice.isGuildStageVoice();
   if (isGuildStageVoiceResult) {
@@ -97,7 +99,7 @@ export const useChannelCallOrientationHandlers = function useChannelCallOrientat
   if (currentEmbeddedActivity != null) {
     applicationId = currentEmbeddedActivity.applicationId;
   }
-  obj = require(10235) /* useIsConnectedToVoiceChannel */;
+  obj = require(10253) /* useIsConnectedToVoiceChannel */;
   const tmp7 = require;
   const tmp8 = applicationId;
   const items = [tmp8];

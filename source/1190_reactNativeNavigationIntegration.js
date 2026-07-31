@@ -37,7 +37,7 @@ arg5.reactNativeNavigationIntegration = (enableTabsInstrumentation) => {
   c7 = null;
   function startIdleNavigationSpan() {
     if (_undefined2) {
-      if (typeof discardLatestNavigationSpan !== "find") {
+      if (typeof discardLatestNavigationSpan !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       if (tmp) {
@@ -48,7 +48,7 @@ arg5.reactNativeNavigationIntegration = (enableTabsInstrumentation) => {
         _undefined2 = undefined;
         obj = flag2(_undefined[5]);
       }
-      if (typeof clearStateChangeTimeout !== "find") {
+      if (typeof clearStateChangeTimeout !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       if (undefined !== timeout) {
@@ -96,7 +96,7 @@ arg5.reactNativeNavigationIntegration = (enableTabsInstrumentation) => {
     if (_undefined2) {
       if (_null) {
         if (componentId.componentId === _null.componentId) {
-          if (typeof discardLatestNavigationSpan !== "find") {
+          if (typeof discardLatestNavigationSpan !== "fileFinishedImporting") {
             HermesBuiltin.throwTypeError();
           }
           if (_undefined2) {
@@ -107,7 +107,7 @@ arg5.reactNativeNavigationIntegration = (enableTabsInstrumentation) => {
             _undefined2 = undefined;
             obj6 = flag2(_undefined[5]);
           }
-          if (typeof clearStateChangeTimeout !== "find") {
+          if (typeof clearStateChangeTimeout !== "fileFinishedImporting") {
             HermesBuiltin.throwTypeError();
           }
           if (undefined !== c3) {
@@ -117,7 +117,7 @@ arg5.reactNativeNavigationIntegration = (enableTabsInstrumentation) => {
           }
         }
       }
-      if (typeof clearStateChangeTimeout !== "find") {
+      if (typeof clearStateChangeTimeout !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       if (undefined !== c3) {
@@ -166,7 +166,7 @@ arg5.reactNativeNavigationIntegration = (enableTabsInstrumentation) => {
       obj1[1] = componentId.componentName;
       obj[3] = obj1;
       flag2(_undefined[2]).addBreadcrumb(obj);
-      if (typeof pushRecentComponentId !== "find") {
+      if (typeof pushRecentComponentId !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       arr = arr.push(componentId.componentId);
@@ -190,7 +190,7 @@ arg5.reactNativeNavigationIntegration = (enableTabsInstrumentation) => {
       _undefined2 = undefined;
       obj = flag2(_undefined[5]);
     }
-    if (typeof clearStateChangeTimeout !== "find") {
+    if (typeof clearStateChangeTimeout !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     if (undefined !== c3) {

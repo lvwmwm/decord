@@ -1,9 +1,9 @@
-// Module ID: 5923
-// Function ID: 5924
+// Module ID: 5929
+// Function ID: 5930
 // Name: _validate
-// Dependencies: [4103, 5779, 3827, 3826, 1874, 676, 5924, 4409, 5925, 11, 589, 709, 2]
+// Dependencies: [4107, 5784, 3831, 3830, 1874, 676, 5930, 4413, 5931, 11, 589, 709, 2]
 
-// Module 5923 (_validate)
+// Module 5929 (_validate)
 import getHash from "getHash";
 import { isGuildEventEnded } from "scheduledEventSort";
 import hasFlag from "hasFlag";
@@ -18,9 +18,9 @@ function _validate(id) {
   return null != id.id && null != id.type;
 }
 function toNotificationCenterItem(item_enum) {
-  let tmp3 = item_enum.item_enum === require(5924) /* NotificationCenterScenes */.ItemEnum.FIRST_MESSAGE;
+  let tmp3 = item_enum.item_enum === require(5930) /* NotificationCenterScenes */.ItemEnum.FIRST_MESSAGE;
   if (tmp3) {
-    tmp3 = item_enum.type === tmp(5924).NotificationCenterItems.LIFECYCLE_ITEM;
+    tmp3 = item_enum.type === tmp(5930).NotificationCenterItems.LIFECYCLE_ITEM;
   }
   if (tmp3) {
     item_enum.deeplink = "https://discord.com/feature/composeMessage";
@@ -30,8 +30,8 @@ function toNotificationCenterItem(item_enum) {
   obj.kind = "notification-center-item";
   let messageRecord;
   if (null != item_enum.message) {
-    messageRecord = tmp(4409).createMessageRecord(item_enum.message);
-    const tmpResult = tmp(4409);
+    messageRecord = tmp(4413).createMessageRecord(item_enum.message);
+    const tmpResult = tmp(4413);
   }
   obj.message = messageRecord;
   let id;
@@ -44,9 +44,9 @@ function toNotificationCenterItem(item_enum) {
 function handleAddItem(type) {
   if ("NOTIFICATION_CENTER_ITEM_CREATE" === type.type) {
     const item2 = type.item;
-    let tmp3 = item2.item_enum === require(5924) /* NotificationCenterScenes */.ItemEnum.FIRST_MESSAGE;
+    let tmp3 = item2.item_enum === require(5930) /* NotificationCenterScenes */.ItemEnum.FIRST_MESSAGE;
     if (tmp3) {
-      tmp3 = item2.type === tmp(5924).NotificationCenterItems.LIFECYCLE_ITEM;
+      tmp3 = item2.type === tmp(5930).NotificationCenterItems.LIFECYCLE_ITEM;
     }
     if (tmp3) {
       item2.deeplink = "https://discord.com/feature/composeMessage";
@@ -56,8 +56,8 @@ function handleAddItem(type) {
     obj.kind = "notification-center-item";
     let messageRecord;
     if (null != item2.message) {
-      messageRecord = tmp(4409).createMessageRecord(item2.message);
-      const tmpResult = tmp(4409);
+      messageRecord = tmp(4413).createMessageRecord(item2.message);
+      const tmpResult = tmp(4413);
     }
     obj.message = messageRecord;
     let id;
@@ -573,7 +573,7 @@ obj = {
       const user = authStore.getUser(id);
       if (tmp6) {
         const items = [];
-        let obj = id(5925);
+        let obj = id(5931);
         items[HermesBuiltin.arraySpread(obj.notifCenterLocalItems, 0)] = obj.incomingGameFriendRequestLocalItem(user, since, applicationId);
         obj.notifCenterLocalItems = items;
         const arraySpreadResult = HermesBuiltin.arraySpread(obj.notifCenterLocalItems, 0);
@@ -682,7 +682,7 @@ obj = {
     newBuild = newBuild.newBuild;
     let _require;
     if (null !== newBuild) {
-      const obj = _require(5925);
+      const obj = _require(5931);
       const result = obj.mobileNativeUpdateAvailableLocalItem(newBuild);
       _require = result;
       const prop = obj.notifCenterLocalItems;

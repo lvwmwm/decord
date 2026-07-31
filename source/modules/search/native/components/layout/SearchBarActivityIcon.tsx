@@ -1,14 +1,14 @@
-// Module ID: 15459
-// Function ID: 15460
+// Module ID: 15487
+// Function ID: 15488
 // Name: items
-// Dependencies: [19, 17, 5873, 10098, 9097, 21, 4189, 712, 647, 10099, 4050, 4190, 8291, 500, 2]
+// Dependencies: [19, 17, 5878, 10115, 9108, 21, 4193, 712, 647, 10116, 4054, 4194, 8298, 500, 2]
 
-// Module 15459 (items)
+// Module 15487 (items)
 import importAllResult from "noop";
 import { ActivityIndicator } from "get ActivityIndicator";
 import handleReaction from "handleReaction";
 import prototype from "prototype";
-import { SEARCH_MESSAGE_TAB_SENTINEL as closure_7 } from "SearchAutocompleteSelectAnalyticsActions";
+import { SEARCH_MESSAGE_TAB_SENTINEL as closure_7 } from "MessageEmbedTypes";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
 

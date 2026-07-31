@@ -1,8 +1,8 @@
-// Module ID: 5101
-// Function ID: 5102
+// Module ID: 5105
+// Function ID: 5106
 // Dependencies: [676, 1236, 2]
 
-// Module 5101
+// Module 5105
 require("ME").AutoCompleteResultTypes;
 const result = require("set").fileFinishedImporting("utils/native/AutocompleteUtils.tsx");
 

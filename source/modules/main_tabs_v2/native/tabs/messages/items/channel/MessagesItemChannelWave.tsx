@@ -1,8 +1,8 @@
-// Module ID: 15030
-// Function ID: 15031
-// Dependencies: [19, 21, 4600, 1236, 4185, 2]
+// Module ID: 15056
+// Function ID: 15057
+// Dependencies: [19, 21, 4604, 1236, 4189, 2]
 
-// Module 15030
+// Module 15056
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -15,14 +15,14 @@ const memoResult = require("noop").memo(function MessagesItemChannelWave(hasName
   const obj = { text: null, icon: null, variant: null, size: "sm", onPress: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.n8nU4W);
-  obj[1] = jsx(require(4185) /* Text */.Text, { style: { marginTop: 3 }, variant: "text-sm/semibold", "aria-hidden": true, children: "\u{1F44B}" });
+  obj[1] = jsx(require(4189) /* Text */.Text, { style: { marginTop: 3 }, variant: "text-sm/semibold", "aria-hidden": true, children: "\u{1F44B}" });
   let str = "secondary";
   if (flag) {
     str = "secondary-overlay";
   }
   obj[2] = str;
   obj[4] = hasNameplate.wavePressed;
-  return jsx(require(4600) /* Button */.Button, { text: null, icon: null, variant: null, size: "sm", onPress: null });
+  return jsx(require(4604) /* Button */.Button, { text: null, icon: null, variant: null, size: "sm", onPress: null });
 });
 const result = require("Button").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelWave.tsx");
 

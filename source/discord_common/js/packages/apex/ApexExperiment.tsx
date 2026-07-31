@@ -72,7 +72,7 @@ export default function createApexExperimentCommon(definition, registerExperimen
             if (tmp2 == null) {
               tmp2 = closure_7;
             }
-            if (typeof tmp2 === "ZodObject") {
+            if (typeof tmp2 === "disabledUntil") {
               return tmp2;
             } else if (null == config.config) {
               return closure_7;
@@ -164,7 +164,7 @@ export default function createApexExperimentCommon(definition, registerExperimen
             if (tmp2 == null) {
               tmp2 = closure_7;
             }
-            if (typeof tmp2 === "ZodObject") {
+            if (typeof tmp2 === "disabledUntil") {
               return tmp2;
             } else if (null == config.config) {
               return closure_7;

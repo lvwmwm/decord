@@ -1,30 +1,30 @@
-// Module ID: 8013
-// Function ID: 8014
+// Module ID: 8020
+// Function ID: 8021
 // Name: handleDismissWithDismissed
-// Dependencies: [8014, 589, 709, 2]
+// Dependencies: [8021, 589, 709, 2]
 
-// Module 8013 (handleDismissWithDismissed)
+// Module 8020 (handleDismissWithDismissed)
 import { Store } from "initialize";
 
 const require = arg1;
 function handleDismissWithDismissed() {
-  let DISMISSED = require(8014) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED;
+  let DISMISSED = require(8021) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED;
   if (DISMISSED === undefined) {
-    DISMISSED = tmp(8014).AppLauncherCloseReason.DISMISSED;
+    DISMISSED = tmp(8021).AppLauncherCloseReason.DISMISSED;
   }
   obj.show = false;
-  obj.entrypoint = require(8014) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.NONE;
+  obj.entrypoint = require(8021) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.NONE;
   obj.closeReason = DISMISSED;
   obj.initialState = undefined;
   obj.activeChannelId = null;
 }
 function handleSetActiveCommand() {
-  let DISMISSED = require(8014) /* AppLauncherEntrypoint */.AppLauncherCloseReason.COMMAND;
+  let DISMISSED = require(8021) /* AppLauncherEntrypoint */.AppLauncherCloseReason.COMMAND;
   if (DISMISSED === undefined) {
-    DISMISSED = tmp(8014).AppLauncherCloseReason.DISMISSED;
+    DISMISSED = tmp(8021).AppLauncherCloseReason.DISMISSED;
   }
   obj.show = false;
-  obj.entrypoint = require(8014) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.NONE;
+  obj.entrypoint = require(8021) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.NONE;
   obj.closeReason = DISMISSED;
   obj.initialState = undefined;
   obj.activeChannelId = null;
@@ -39,14 +39,14 @@ prototype["initialize"] = function initialize() {
 prototype["shouldShowPopup"] = function shouldShowPopup() {
   let show = obj.show;
   if (show) {
-    show = obj.entrypoint === require(8014) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.TEXT;
+    show = obj.entrypoint === require(8021) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.TEXT;
   }
   return show;
 };
 prototype["shouldShowModal"] = function shouldShowModal() {
   let show = obj.show;
   if (show) {
-    show = obj.entrypoint === require(8014) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.VOICE;
+    show = obj.entrypoint === require(8021) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.VOICE;
   }
   return show;
 };
@@ -83,7 +83,7 @@ obj = {
     obj.entrypoint = entrypoint;
     obj.lastShownEntrypoint = entrypoint;
     ({ activeViewType, initialState, activeChannelId } = entrypoint);
-    obj.closeReason = require(8014) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED;
+    obj.closeReason = require(8021) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED;
     obj.activeViewType = activeViewType;
     obj.activeChannelId = activeChannelId;
     obj.initialState = initialState;
@@ -92,10 +92,10 @@ obj = {
   APP_LAUNCHER_DISMISS: function handleDismiss(closeReason) {
     let DISMISSED = closeReason.closeReason;
     if (DISMISSED === undefined) {
-      DISMISSED = require(8014) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED;
+      DISMISSED = require(8021) /* AppLauncherEntrypoint */.AppLauncherCloseReason.DISMISSED;
     }
     obj.show = false;
-    obj.entrypoint = require(8014) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.NONE;
+    obj.entrypoint = require(8021) /* AppLauncherEntrypoint */.AppLauncherEntrypoint.NONE;
     obj.closeReason = DISMISSED;
     obj.initialState = undefined;
     obj.activeChannelId = null;

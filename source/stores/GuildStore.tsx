@@ -242,7 +242,7 @@ const guildStore = new GuildStore({
     if (id === user.user.id) {
       if (null != value) {
         let date = joinedAt;
-        if (typeof joinedAt !== "tee") {
+        if (typeof joinedAt !== "__FORMATJS_LISTFORMAT_DATA__") {
           const _Date = Date;
           date = new Date(joinedAt);
         }

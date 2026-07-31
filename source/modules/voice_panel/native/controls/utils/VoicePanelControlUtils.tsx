@@ -1,13 +1,13 @@
-// Module ID: 15988
-// Function ID: 15989
+// Module ID: 16016
+// Function ID: 16017
 // Name: getDrawerSpec
-// Dependencies: [9910, 2]
+// Dependencies: [9927, 2]
 // Exports: getDrawerSpec
 
-// Module 15988 (getDrawerSpec)
+// Module 16016 (getDrawerSpec)
 function getDrawerSpec(height, top) {
   const diff = height - top;
-  return { minHeight: importDefault(9910)(0.65 * diff), maxHeight: diff };
+  return { minHeight: importDefault(9927)(0.65 * diff), maxHeight: diff };
 }
 getDrawerSpec.__closure = { roundToNearestPixel: require("t") };
 getDrawerSpec.__workletHash = 3647675988513;

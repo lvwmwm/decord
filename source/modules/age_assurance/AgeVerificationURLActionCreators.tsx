@@ -1,10 +1,10 @@
-// Module ID: 6751
-// Function ID: 6752
+// Module ID: 6757
+// Function ID: 6758
 // Name: requestAgeVerification
-// Dependencies: [5, 1218, 6745, 676, 6752, 530, 709, 2]
-// Exports: getAgeVerificationMethods, registerIncodeInterview, requestIncodeMethodSession, requestIncodeSessionBootstrap
+// Dependencies: [5, 1218, 6751, 676, 6758, 530, 709, 2]
+// Exports: getAgeVerificationMethods, initiateAgeVerificationV2, registerIncodeInterview, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 6751 (requestAgeVerification)
+// Module 6757 (requestAgeVerification)
 import sendRequest from "sendRequest";
 import fetchFingerprint from "fetchFingerprint";
 import { VerificationVendorName } from "set";
@@ -244,7 +244,7 @@ function _requestIncodeMethodSession() {
   }
   return applyArgumentsResult;
 }
-function initiateAgeVerification(closure_5, arg1) {
+function initiateAgeVerification(arg0) {
   const self = this;
   const apply = _initiateAgeVerification.apply;
   if (typeof apply === "unknown") {
@@ -323,6 +323,83 @@ function _initiateAgeVerification() {
     })();
   });
   const _initiateAgeVerification = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
+function _initiateAgeVerificationV() {
+  const self = this;
+  const tmp = callback((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c3 = 0;
+    let c2 = 0;
+    return (function*(arg0, body) {
+      if (table === 2) {
+        table = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw body;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = body;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          table = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              table = 3;
+              throw body;
+            } else if (arg0 === 2) {
+              table = 3;
+              obj = { value: null, done: true };
+              obj[0] = body;
+              return obj;
+            } else {
+              const HTTP = callback(table[5]).HTTP;
+              const obj1 = { url: null, body: null, rejectWithError: true };
+              obj1[0] = outer1_6.VERIFY_AGE_V2;
+              const obj2 = { method: null, vendor: null };
+              obj2[0] = callback;
+              obj2[1] = closure_1;
+              obj1[1] = obj2;
+              c3 = 1;
+              table = 1;
+              const obj3 = { value: null, done: false };
+              obj3[0] = HTTP.post(obj1);
+              return obj3;
+            }
+          } else if (arg0 === 1) {
+            table = 3;
+            throw body;
+          } else if (arg0 === 2) {
+            table = 3;
+            const obj4 = { value: null, done: true };
+            obj4[0] = body;
+            return obj4;
+          } else {
+            table = 3;
+            obj = { value: null, done: true };
+            obj[0] = body.body;
+            return obj;
+          }
+        } catch (tmp10) {
+          table = tmp;
+          throw tmp10;
+        }
+      }
+    })();
+  });
+  const _initiateAgeVerificationV = tmp;
   const apply = tmp.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
@@ -649,9 +726,9 @@ function _getAgeVerificationMethods() {
             v02(outer1_2[6]).dispatch({ type: "AGE_VERIFICATION_METHODS_LOAD_START" });
             const obj6 = v02(outer1_2[6]);
             if (obj7.isCurrentUserSuspended()) {
-              let promise = outer1_18();
+              let promise = outer1_19();
             } else {
-              promise = outer1_17();
+              promise = outer1_18();
             }
             let catchPromise;
             if (promise != null) {
@@ -726,6 +803,16 @@ export const requestIncodeMethodSession = function requestIncodeMethodSession(cl
   return applyArgumentsResult;
 };
 export { initiateAgeVerification };
+export const initiateAgeVerificationV2 = function initiateAgeVerificationV2(closure_0, closure_1) {
+  const self = this;
+  const apply = _initiateAgeVerificationV.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+};
 export { initiateSuspendedUserAgeVerification };
 export const registerIncodeInterview = function registerIncodeInterview(interviewId) {
   const self = this;

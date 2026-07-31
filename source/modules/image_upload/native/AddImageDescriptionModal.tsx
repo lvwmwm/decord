@@ -1,10 +1,10 @@
-// Module ID: 9844
-// Function ID: 9845
+// Module ID: 9861
+// Function ID: 9862
 // Name: AddDescription
-// Dependencies: [32, 19, 17, 4526, 4525, 21, 4189, 712, 589, 1474, 1480, 5215, 9845, 9114, 1236, 6183, 9843, 7641, 9104, 2]
+// Dependencies: [32, 19, 17, 4530, 4529, 21, 4193, 712, 589, 1474, 1480, 5219, 9862, 9127, 1236, 6189, 9860, 7649, 9117, 2]
 // Exports: default
 
-// Module 9844 (AddDescription)
+// Module 9861 (AddDescription)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import get_ActivityIndicator from "TextArea";
@@ -117,7 +117,7 @@ createCacheKey = { contentContainer: null, imageContainer: null, image: null, pl
 createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { alignItems: "center", borderRadius: require("Themes").radii.sm };
-let obj2 = { width: "100%", resizeMode: "contain", height: "Array", borderRadius: "\u{1F9B9}\u{1F3FB}\u200D\u2642\uFE0F" };
+let obj2 = { width: "100%", resizeMode: "contain", height: "Array", borderRadius: true };
 obj2[3] = require("Themes").radii.sm;
 createCacheKey[2] = obj2;
 let obj1 = { alignItems: "center", borderRadius: require("Themes").radii.sm };
@@ -137,5 +137,5 @@ export default function AddImageDescriptionModal(arg0) {
   obj[2] = function render() {
     return outer1_10(outer1_13, { source: closure_0, channelId: closure_1, id: closure_2 });
   };
-  return callback(importDefault(9104), obj);
+  return callback(importDefault(9117), obj);
 };

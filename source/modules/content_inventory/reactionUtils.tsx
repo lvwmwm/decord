@@ -1,10 +1,10 @@
-// Module ID: 15367
-// Function ID: 15368
+// Module ID: 15395
+// Function ID: 15396
 // Name: sendMessageWithEmbed
-// Dependencies: [5965, 5713, 2]
+// Dependencies: [5971, 5718, 2]
 // Exports: sendMessageWithEmbed, sendMessageWithoutContentInventoryEntry
 
-// Module 15367 (sendMessageWithEmbed)
+// Module 15395 (sendMessageWithEmbed)
 const result = require("set").fileFinishedImporting("modules/content_inventory/reactionUtils.tsx");
 
 export const sendMessageWithEmbed = function sendMessageWithEmbed(channel) {
@@ -15,10 +15,10 @@ export const sendMessageWithEmbed = function sendMessageWithEmbed(channel) {
   let whenReady;
   channel = channel.channel;
   ({ content, entry, whenReady, doNotNotifyOnError, location: _location } = channel);
-  let obj = importDefault(5965);
+  let obj = importDefault(5971);
   const parsed = obj.parse(channel, content);
   obj = { contentInventoryEntry: { unverified_content: entry }, doNotNotifyOnError, location: _location };
-  return importDefault(5713).sendMessage(channel.id, parsed, whenReady, obj);
+  return importDefault(5718).sendMessage(channel.id, parsed, whenReady, obj);
 };
 export const sendMessageWithoutContentInventoryEntry = function sendMessageWithoutContentInventoryEntry(channel) {
   let _location;
@@ -27,8 +27,8 @@ export const sendMessageWithoutContentInventoryEntry = function sendMessageWitho
   let whenReady;
   channel = channel.channel;
   ({ content, whenReady, doNotNotifyOnError, location: _location } = channel);
-  let obj = importDefault(5965);
+  let obj = importDefault(5971);
   const parsed = obj.parse(channel, content);
   obj = { doNotNotifyOnError, location: _location };
-  return importDefault(5713).sendMessage(channel.id, parsed, whenReady, obj);
+  return importDefault(5718).sendMessage(channel.id, parsed, whenReady, obj);
 };

@@ -14,7 +14,7 @@ export default (str, SEPARATOR, arg2, maxKeys) => {
     str2 = "=";
   }
   const obj = {};
-  if (typeof str !== "tee") {
+  if (typeof str !== "__FORMATJS_LISTFORMAT_DATA__") {
     if (0 !== str.length) {
       const parts = str.split(str);
       let tmp = maxKeys;

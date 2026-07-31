@@ -1,10 +1,10 @@
-// Module ID: 6215
-// Function ID: 6216
+// Module ID: 6221
+// Function ID: 6222
 // Name: context
-// Dependencies: [5, 32, 19, 6216, 6219, 3802, 700, 6220, 12, 3850, 6221, 2]
+// Dependencies: [5, 32, 19, 6222, 6225, 3806, 700, 6226, 12, 3854, 6227, 2]
 // Exports: createNativeStore, useNativeCheckoutStore, useNativeCheckoutStoreOrNull
 
-// Module 6215 (context)
+// Module 6221 (context)
 import isIterable from "isIterable";
 import importAllResult from "noop";
 import createFromOrder from "createFromOrder";
@@ -21,14 +21,14 @@ export const NativeCheckoutStoreContextOrNull = context;
 export const useNativeCheckoutStore = function useNativeCheckoutStore(arg0) {
   let shallow = arg1;
   if (arg1 === undefined) {
-    shallow = require(3802) /* isIterable */.shallow;
+    shallow = require(3806) /* isIterable */.shallow;
   }
   return callback()(arg0, shallow);
 };
 export const useNativeCheckoutStoreOrNull = function useNativeCheckoutStoreOrNull(arg0) {
   let shallow = arg1;
   if (arg1 === undefined) {
-    shallow = require(3802) /* isIterable */.shallow;
+    shallow = require(3806) /* isIterable */.shallow;
   }
   context = importAllResult.useContext(context);
   let contextResult = null;
@@ -41,10 +41,11 @@ export const createNativeStore = function createNativeStore(arg0) {
   let isIterable;
   let closure_4;
   let createFromOrder;
+  let closure_6;
   let dependencyMap;
   let importDefault;
   let require;
-  ({ order: require, checkoutInitParameters: importDefault, contextMetadata: dependencyMap, paymentGateway: isIterable, orderRequired: closure_4, onOrderRetryCancellation: createFromOrder } = arg0);
+  ({ order: require, checkoutInitParameters: importDefault, contextMetadata: dependencyMap, paymentGateway: isIterable, orderRequired: closure_4, onOrderRetryCancellation: createFromOrder, initialSubscriptionFacet: closure_6 } = arg0);
   return require(700) /* identity */.createWithEqualityFn((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;
@@ -204,20 +205,27 @@ export const createNativeStore = function createNativeStore(arg0) {
                     if (obj2.some(mapped, () => { ... })) {
                       const obj1 = { subscription_preview: null };
                       obj2 = { currency: null, country_code: null };
-                      ({ currency: obj5[0], country: obj5[1] } = tmp28);
+                      ({ currency: obj5[0], country: obj5[1] } = tmp30);
                       obj1[0] = obj2;
-                      tmp15 = obj1;
                       if (null != outer1_1.activeSubscription) {
                         obj1.subscription_id = outer1_1.activeSubscription.id;
+                      }
+                      let tmp19 = null != outer1_6;
+                      if (tmp19) {
+                        tmp19 = null != tmp18.subscription_preview.subscription_trial_id;
+                      }
+                      tmp15 = obj1;
+                      if (tmp19) {
+                        obj1.subscription_preview.subscription_trial_id = tmp18.subscription_preview.subscription_trial_id;
                         tmp15 = obj1;
                       }
                     }
-                    let tmp18;
+                    let tmp20;
                     if (null != orderRecord.externalGatewayFacet) {
                       const obj3 = { line_items: null };
                       const line_items = orderRecord.externalGatewayFacet.line_items;
                       obj3[0] = line_items.map(() => { ... });
-                      tmp18 = obj3;
+                      tmp20 = obj3;
                     }
                     let obj6 = outer2_0(outer2_2[7]);
                     const obj4 = { orderLineItems: null, paymentGateway: null, isGift: null, subscriptionFacet: null, externalGatewayFacet: null, countryCode: null };
@@ -225,8 +233,8 @@ export const createNativeStore = function createNativeStore(arg0) {
                     obj4[1] = c3;
                     obj4[2] = outer1_1.isGift;
                     obj4[3] = tmp15;
-                    obj4[4] = tmp18;
-                    obj4[5] = tmp28.country;
+                    obj4[4] = tmp20;
+                    obj4[5] = tmp30.country;
                     c3 = 1;
                     c4 = 1;
                     const obj5 = { value: null, done: false };
@@ -249,9 +257,9 @@ export const createNativeStore = function createNativeStore(arg0) {
               obj6 = { value: null, done: true };
               obj6[0] = arg1;
               return obj6;
-            } catch (tmp22) {
+            } catch (tmp24) {
               c4 = tmp;
-              throw tmp22;
+              throw tmp24;
             }
           }
         })();
@@ -552,6 +560,6 @@ export const createNativeStore = function createNativeStore(arg0) {
     };
     obj[12] = _runRecreateOrder;
     return obj;
-  }, require(3802) /* isIterable */.shallow);
+  }, require(3806) /* isIterable */.shallow);
 };
 export const NativeCheckoutStoreContext = importDefaultResultResult[0];

@@ -1,9 +1,9 @@
-// Module ID: 14049
-// Function ID: 14050
+// Module ID: 14073
+// Function ID: 14074
 // Name: hasVideoEnded
-// Dependencies: [32, 19, 17, 6325, 676, 21, 712, 8140, 4189, 689, 14040, 4050, 4599, 4603, 4190, 4193, 1231, 589, 500, 1208, 1581, 1236, 4717, 14050, 14052, 14054, 14055, 9967, 8124, 8126, 14056, 14057, 2]
+// Dependencies: [32, 19, 17, 6331, 676, 21, 712, 8147, 4193, 689, 14064, 4054, 4603, 4607, 4194, 4197, 1231, 589, 500, 1208, 1581, 1236, 4721, 14074, 14076, 14078, 14079, 9984, 8131, 8133, 14080, 14081, 2]
 
-// Module 14049 (hasVideoEnded)
+// Module 14073 (hasVideoEnded)
 import set from "set";
 import importAllResult from "module_1208";
 import get_ActivityIndicator from "initialize";
@@ -35,7 +35,7 @@ hasVideoEnded.__closure = {};
 hasVideoEnded.__workletHash = 8992945176371;
 hasVideoEnded.__initData = { code: "function hasVideoEnded_AdVideoPlayerTsx1(currentTime,videoDuration){return currentTime>=videoDuration-1;}" };
 function canSeekForward(arg0, arg1, arg2, arg3) {
-  if (typeof hasVideoEnded !== "find") {
+  if (typeof hasVideoEnded !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   let tmp2 = !tmp;
@@ -254,7 +254,7 @@ const memoResult = importAllResult.memo((initialProgress) => {
   }
   if (tmp15) {
     ({ timestampSec, duration } = first1);
-    if (typeof videoRef !== "find") {
+    if (typeof videoRef !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     tmp15 = timestampSec >= duration - 1;
@@ -536,10 +536,10 @@ const memoResult = importAllResult.memo((initialProgress) => {
   let tmp37 = first2 === tmp8(tmp9[10]).PlayerState.ERRORED;
   if (!tmp37) {
     ({ timestampSec: timestampSec2, maxTimestampSec, duration: duration2 } = first1);
-    if (typeof first !== "find") {
+    if (typeof first !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
-    if (typeof videoRef !== "find") {
+    if (typeof videoRef !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     let tmp41 = !tmp40;

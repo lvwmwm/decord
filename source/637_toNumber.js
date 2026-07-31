@@ -17,7 +17,7 @@ export default function toNumber(arg0) {
     let tmp = arg0;
     if (tmp10(606)(arg0)) {
       let valueOfResult = arg0;
-      if (typeof arg0.valueOf !== "ZodObject") {
+      if (typeof arg0.valueOf !== "disabledUntil") {
         valueOfResult = arg0.valueOf();
       }
       let text = valueOfResult;
@@ -26,7 +26,7 @@ export default function toNumber(arg0) {
       }
       tmp = text;
     }
-    if (typeof tmp === "tee") {
+    if (typeof tmp === "__FORMATJS_LISTFORMAT_DATA__") {
       let tmp9 = tmp;
       if (0 !== tmp) {
         tmp9 = +tmp;

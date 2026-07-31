@@ -1,9 +1,9 @@
-// Module ID: 14932
-// Function ID: 14933
+// Module ID: 14955
+// Function ID: 14956
 // Name: HomePanelContent
-// Dependencies: [19, 17, 14926, 676, 21, 4189, 4046, 14929, 14925, 8822, 3893, 712, 4050, 14933, 2]
+// Dependencies: [19, 17, 14949, 676, 21, 4193, 4050, 14952, 14948, 8835, 3897, 712, 4054, 14956, 2]
 
-// Module 14932 (HomePanelContent)
+// Module 14955 (HomePanelContent)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import withEqualityFn from "withEqualityFn";
@@ -17,18 +17,18 @@ let closure_8 = createCacheKey.createStyles({ container: { flex: 1 }, guildsList
 let closure_9 = { code: "function HomePanelContentTsx1(){const{enableHome,isGradientTheme,maxX,interpolateColor,panelSpringTranslateX,baseLowest,panelBg}=this.__closure;if(!enableHome||isGradientTheme||maxX<=0){return{backgroundColor:'transparent'};}return{backgroundColor:interpolateColor(panelSpringTranslateX.get(),[0,maxX],[baseLowest,panelBg])};}" };
 const memoResult = importAllResult.memo(() => {
   const tmp = callback();
-  const MobileHomeDrawerExperiment = enableHome(4046).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = enableHome(4050).MobileHomeDrawerExperiment;
   enableHome = MobileHomeDrawerExperiment.useConfig({ location: "guilds" }).enableHome;
-  let obj = enableHome(14929);
+  let obj = enableHome(14952);
   const drawerOpen = obj.useDrawerOpen(enableHome);
-  const panelSpringTranslateX = isClientThemeOrCustomThemeActive.useContext(enableHome(14925).HomeDrawerStateContext).panelSpringTranslateX;
+  const panelSpringTranslateX = isClientThemeOrCustomThemeActive.useContext(enableHome(14948).HomeDrawerStateContext).panelSpringTranslateX;
   const tmp4 = token1((maxX) => maxX.maxX);
   const dependencyMap = tmp4;
-  let obj1 = enableHome(8822);
+  let obj1 = enableHome(8835);
   isClientThemeOrCustomThemeActive = obj1.useIsClientThemeOrCustomThemeActive();
-  let obj2 = enableHome(3893);
+  let obj2 = enableHome(3897);
   const token = obj2.useToken(panelSpringTranslateX(712).colors.BACKGROUND_BASE_LOWEST);
-  let obj3 = enableHome(3893);
+  let obj3 = enableHome(3897);
   token1 = obj3.useToken(panelSpringTranslateX(712).colors.PANEL_BG);
   const fn = function p() {
     if (enableHome) {
@@ -45,11 +45,11 @@ const memoResult = importAllResult.memo(() => {
     }
     obj = { backgroundColor: "transparent" };
   };
-  obj = { enableHome, isGradientTheme: isClientThemeOrCustomThemeActive, maxX: tmp4, interpolateColor: enableHome(4050).interpolateColor, panelSpringTranslateX, baseLowest: token, panelBg: token1 };
+  obj = { enableHome, isGradientTheme: isClientThemeOrCustomThemeActive, maxX: tmp4, interpolateColor: enableHome(4054).interpolateColor, panelSpringTranslateX, baseLowest: token, panelBg: token1 };
   fn.__closure = obj;
   fn.__workletHash = 4210709178426;
   fn.__initData = closure_9;
-  const animatedStyle = enableHome(4050).useAnimatedStyle(fn);
+  const animatedStyle = enableHome(4054).useAnimatedStyle(fn);
   obj = { style: items, children: null };
   items = [tmp.container, animatedStyle];
   if (enableHome) {
@@ -68,7 +68,7 @@ const memoResult = importAllResult.memo(() => {
     obj2[0] = items1;
     obj3 = { enableHome: null };
     obj3[0] = enableHome;
-    obj2[1] = tmp10(panelSpringTranslateX(14933), obj3);
+    obj2[1] = tmp10(panelSpringTranslateX(14956), obj3);
     obj[1] = tmp10(tmp12, obj2);
     return tmp10(tmp11, obj);
   }

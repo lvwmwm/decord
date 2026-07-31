@@ -1,9 +1,9 @@
-// Module ID: 10168
-// Function ID: 10169
+// Module ID: 10185
+// Function ID: 10186
 // Name: VibingWumpusAction
 // Dependencies: [2]
 
-// Module 10168 (VibingWumpusAction)
+// Module 10185 (VibingWumpusAction)
 const result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationsConstants.tsx");
 
 export const VibingWumpusAction = { PLAY: "play", PAUSE: "pause", BACK_TO_CONVERSATION: "back_to_conversation" };

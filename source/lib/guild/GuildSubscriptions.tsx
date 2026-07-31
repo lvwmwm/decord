@@ -1,9 +1,9 @@
-// Module ID: 6054
-// Function ID: 6055
+// Module ID: 6060
+// Function ID: 6061
 // Name: _enqueue
-// Dependencies: [676, 1865, 6055, 6056, 6057, 4074, 12, 2]
+// Dependencies: [676, 1865, 6061, 6062, 6063, 4078, 12, 2]
 
-// Module 6054 (_enqueue)
+// Module 6060 (_enqueue)
 import { ME } from "ME";
 
 const result = require("reset").fileFinishedImporting("lib/guild/GuildSubscriptions.tsx");

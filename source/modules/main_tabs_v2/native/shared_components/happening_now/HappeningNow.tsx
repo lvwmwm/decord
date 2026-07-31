@@ -1,9 +1,9 @@
-// Module ID: 15047
-// Function ID: 15048
+// Module ID: 15073
+// Function ID: 15074
 // Name: renderCard
-// Dependencies: [32, 19, 17, 14307, 676, 21, 7677, 4189, 712, 5273, 8252, 15048, 698, 4616, 1481, 15049, 5515, 5535, 15056, 15057, 4050, 10038, 12, 6673, 1236, 15058, 15059, 15076, 15078, 15079, 15062, 15075, 15080, 15074, 15061, 1351, 2]
+// Dependencies: [32, 19, 17, 14330, 676, 21, 7685, 4193, 712, 5277, 8259, 15074, 698, 4620, 1481, 15075, 5519, 5539, 15082, 15083, 4054, 10055, 12, 6679, 1236, 15084, 15085, 15102, 15104, 15105, 15088, 15101, 15106, 15100, 15087, 1351, 2]
 
-// Module 15047 (renderCard)
+// Module 15073 (renderCard)
 import HappeningNowCardCreateChannel from "HappeningNowCardCreateChannel";
 import importAllResult from "useHappeningNowScrollBehavior";
 import get_ActivityIndicator from "QUICK_SWITCHER";
@@ -25,15 +25,9 @@ function renderCard(kind, fullWidth) {
   if ("placeholder" !== kind.kind) {
     if (!fullWidth.loading) {
       kind = kind.kind;
-      let obj = {};
-      const merged = Object.assign(kind);
-      const merged1 = Object.assign(fullWidth);
-      obj.cardKey = keyExtractor(kind);
-      return jsx(importDefault(15061), {});
     }
   }
-  obj = { fullWidth: fullWidth.fullwidth, panelVariant: fullWidth.panelVariant };
-  return jsx(require(15058) /* HappeningNowCardPlaceholder */.HappeningNowCardPlaceholder, { fullWidth: fullWidth.fullwidth, panelVariant: fullWidth.panelVariant });
+  return jsx(require(15084) /* HappeningNowCardPlaceholder */.HappeningNowCardPlaceholder, { fullWidth: fullWidth.fullwidth, panelVariant: fullWidth.panelVariant });
 }
 function keyExtractor(voiceState) {
   let kind;
@@ -62,7 +56,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   obj = { ref };
   const merged = Object.assign(arg0);
   obj[1] = <closure_5 ref={arg1} />;
-  return jsx(require(5273) /* Directions */.GestureDetector, { ref });
+  return jsx(require(5277) /* Directions */.GestureDetector, { ref });
 });
 forwardRefResult.displayName = "HappeningNowScrollView";
 const NativeResult = Gesture.Native();
@@ -81,7 +75,7 @@ const memoResult = importAllResult.memo((listRef) => {
   obj = obj(isFocused[14]);
   isFocused = obj.useIsFocused();
   ref = isFocused;
-  obj = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: "hydrauliczne", isFocused: "hydraulik" };
+  obj = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: "P", isFocused: "\u{1F3CA}" };
   obj[3] = isFocused;
   const tmp7 = callback(ref(isFocused[15])(listRef.cards, obj), 2);
   let first = tmp7[0];

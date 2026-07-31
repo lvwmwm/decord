@@ -1,9 +1,9 @@
-// Module ID: 3971
-// Function ID: 3972
+// Module ID: 3975
+// Function ID: 3976
 // Name: metadata
 // Dependencies: [2]
 
-// Module 3971 (metadata)
+// Module 3975 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/rive/native/BountiesScrollGradient.riv.js");
 
 export default "https://cdn.discordapp.com/assets/content/e2271d5ae1d3ff605e7efedd077e751dfb4c90694f1b730f12713c54486a2b35.riv";

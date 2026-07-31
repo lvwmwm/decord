@@ -1,10 +1,10 @@
-// Module ID: 15824
-// Function ID: 15825
+// Module ID: 15852
+// Function ID: 15853
 // Name: updateVideoSize
 // Dependencies: [709, 2]
 // Exports: updateVideoSize
 
-// Module 15824 (updateVideoSize)
+// Module 15852 (updateVideoSize)
 const result = require("set").fileFinishedImporting("modules/media/VideoActionCreators.tsx");
 
 export const updateVideoSize = function updateVideoSize(streamId, dimensions, sharedValue2) {

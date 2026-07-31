@@ -1,9 +1,9 @@
-// Module ID: 4595
-// Function ID: 4596
+// Module ID: 4599
+// Function ID: 4600
 // Name: MODERN_ANDROID_BLURRING_AVAILABLE
-// Dependencies: [4169, 4593, 4594, 2]
+// Dependencies: [4173, 4597, 4598, 2]
 
-// Module 4595 (MODERN_ANDROID_BLURRING_AVAILABLE)
+// Module 4599 (MODERN_ANDROID_BLURRING_AVAILABLE)
 import DCDDeviceManager from "DCDDeviceManager";
 import importDefaultResult from "map";
 

@@ -1,10 +1,10 @@
-// Module ID: 11928
-// Function ID: 11929
+// Module ID: 11946
+// Function ID: 11947
 // Name: AppleNeutralIcon
-// Dependencies: [19, 21, 712, 3892, 11929, 2]
+// Dependencies: [19, 21, 712, 3896, 11947, 2]
 // Exports: AppleNeutralIcon
 
-// Module 11928 (AppleNeutralIcon)
+// Module 11946 (AppleNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const AppleNeutralIcon = function AppleNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11929) /* registerAsset */;
+  obj[0] = require(11947) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3892) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3896) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

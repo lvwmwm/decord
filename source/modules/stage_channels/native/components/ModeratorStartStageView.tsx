@@ -1,10 +1,10 @@
-// Module ID: 10676
-// Function ID: 10677
+// Module ID: 10694
+// Function ID: 10695
 // Name: ModeratorStartStageView
-// Dependencies: [32, 19, 1862, 21, 589, 8318, 10677, 8263, 8317, 10678, 8207, 10679, 1236, 10696, 10697, 2]
+// Dependencies: [32, 19, 1862, 21, 589, 8325, 10695, 8270, 8324, 10696, 8214, 10697, 1236, 10714, 10715, 2]
 // Exports: default
 
-// Module 10676 (ModeratorStartStageView)
+// Module 10694 (ModeratorStartStageView)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -25,14 +25,14 @@ export default function ModeratorStartStageView(channel) {
   const items = [createGuildRecordFromRust];
   const items1 = [guild_id];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getGuild(guild_id), items1);
-  let obj1 = guild_id(8318);
+  let obj1 = guild_id(8325);
   const first = callback(obj1.useGuildChannelScheduledEvents(channel.id), 1)[0];
-  let obj2 = guild_id(8263);
+  let obj2 = guild_id(8270);
   const canManageGuildEventResult = obj2.useManageResourcePermissions(channel).canManageGuildEvent(first);
   const tmp5 = importDefault;
-  let obj3 = guild_id(10678);
+  let obj3 = guild_id(10696);
   const isLive = obj3.useStageChannelStartEvent(channel.id).isLive;
-  let obj4 = guild_id(8207);
+  let obj4 = guild_id(8214);
   const nextRecurrenceIdInEvent = obj4.getNextRecurrenceIdInEvent(first);
   let tmp10Result2 = null;
   if (null != stateFromStores) {
@@ -51,16 +51,16 @@ export default function ModeratorStartStageView(channel) {
         obj[2] = isLive;
         obj[3] = stateFromStores;
         obj[4] = nextRecurrenceIdInEvent;
-        tmp10Result = tmp10(tmp(10696).StartEventPrompt, obj);
+        tmp10Result = tmp10(tmp(10714).StartEventPrompt, obj);
       }
     }
     const items2 = [tmp10Result, , , ];
     tmp10Result = null;
-    if (importDefault(10677)(channel.id, true).moderator) {
+    if (importDefault(10695)(channel.id, true).moderator) {
       obj1 = { channel: null, isLive: null };
       obj1[0] = channel;
       obj1[1] = isLive;
-      tmp10Result = tmp10(tmp(10697).StartStagePrompt, obj1);
+      tmp10Result = tmp10(tmp(10715).StartStagePrompt, obj1);
     }
     items2[1] = tmp10Result;
     let tmp10Result1 = null;
@@ -69,19 +69,19 @@ export default function ModeratorStartStageView(channel) {
       obj2[0] = channel;
       obj2[1] = isLive;
       obj2[2] = stateFromStores;
-      tmp10Result1 = tmp10(tmp(10696).ScheduleEventPrompt, obj2);
+      tmp10Result1 = tmp10(tmp(10714).ScheduleEventPrompt, obj2);
     }
     obj3 = { children: null };
     items2[2] = tmp10Result1;
     obj4 = { onContinue: null };
     obj4[0] = channel.onSkip;
-    items2[3] = closure_5(tmp(10697).ContinueToStagePrompt, obj4);
+    items2[3] = closure_5(tmp(10715).ContinueToStagePrompt, obj4);
     obj3[0] = items2;
     obj[2] = closure_7(closure_6, obj3);
-    tmp10Result2 = tmp10(tmp5(10679), obj);
+    tmp10Result2 = tmp10(tmp5(10697), obj);
     const tmp12 = closure_7;
     const tmp13 = closure_6;
-    const tmp5Result = tmp5(10679);
+    const tmp5Result = tmp5(10697);
   }
   return tmp10Result2;
 };

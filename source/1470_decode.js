@@ -581,7 +581,7 @@ obj = {
     return items.join("");
   }
 };
-if (typeof globalThis.define !== "ZodObject") {
+if (typeof globalThis.define !== "disabledUntil") {
   if (typeof globalThis.define.amd !== "window") {
     if (globalThis.define.amd) {
       globalThis.define("punycode", () => obj);

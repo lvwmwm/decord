@@ -1,10 +1,10 @@
-// Module ID: 10003
-// Function ID: 10004
+// Module ID: 10020
+// Function ID: 10021
 // Name: request
-// Dependencies: [19, 4226, 4074, 12, 5516, 589, 2]
+// Dependencies: [19, 4230, 4078, 12, 5520, 589, 2]
 // Exports: useGetOrFetchApplicationBatched, useRequestApplication
 
-// Module 10003 (request)
+// Module 10020 (request)
 import noop from "noop";
 import addApplication from "addApplication";
 import set from "start";

@@ -1,10 +1,10 @@
-// Module ID: 9145
-// Function ID: 9146
+// Module ID: 9158
+// Function ID: 9159
 // Name: MemberVerificationAlertSuccess
-// Dependencies: [19, 17, 4181, 1862, 21, 4189, 589, 4618, 1236, 5506, 9146, 4185, 2]
+// Dependencies: [19, 17, 4185, 1862, 21, 4193, 589, 4622, 1236, 5510, 9159, 4189, 2]
 // Exports: default
 
-// Module 9145 (MemberVerificationAlertSuccess)
+// Module 9158 (MemberVerificationAlertSuccess)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

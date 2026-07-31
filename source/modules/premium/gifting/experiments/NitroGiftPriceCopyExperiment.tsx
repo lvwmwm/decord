@@ -1,9 +1,9 @@
-// Module ID: 8801
-// Function ID: 8802
+// Module ID: 8814
+// Function ID: 8815
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 
-// Module 8801 (apexExperiment)
+// Module 8814 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null, 2: { showGiftPrice: false, useNewCopy: false, monthlyDefaultSelected: false }, 3: { showGiftPrice: true, useNewCopy: true, monthlyDefaultSelected: false } };

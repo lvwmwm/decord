@@ -1,9 +1,9 @@
-// Module ID: 12856
-// Function ID: 12857
+// Module ID: 12881
+// Function ID: 12882
 // Name: getDefaultWants
-// Dependencies: [32, 1218, 676, 4250, 687, 4507, 12857, 4289, 4299, 4074, 10555, 11, 500, 643, 12, 4286, 2]
+// Dependencies: [32, 1218, 676, 4254, 687, 4511, 12882, 4293, 4303, 4078, 10573, 11, 12, 500, 643, 4290, 2]
 
-// Module 12856 (getDefaultWants)
+// Module 12881 (getDefaultWants)
 import _slicedToArray from "_slicedToArray";
 import fetchFingerprint from "fetchFingerprint";
 import { VideoToggleState } from "ME";
@@ -13,7 +13,7 @@ import num2 from "num2";
 
 let require = arg1;
 function getDefaultWants(arg0) {
-  let obj = require(12857) /* getBrowserInvertedWantsConfig */;
+  let obj = require(12882) /* getBrowserInvertedWantsConfig */;
   if (obj.getBrowserInvertedWantsConfig("RTCMediaSinkWantsManager.getDefaultWants").invertWants) {
     obj = {};
     const merged = Object.assign(obj);
@@ -214,14 +214,14 @@ class RTCMediaSinkWantsManager extends tmp2 {
       obj.updateOffscreenUsers();
       obj2 = tmp11(outer1_2[6]);
       const tmp6 = tmp11;
-      let isDesktopResult = tmp11(outer1_2[12]).isDesktop();
+      let isDesktopResult = tmp11(outer1_2[13]).isDesktop();
       if (isDesktopResult) {
         isDesktopResult = obj.isOneToOneCall();
       }
       if (isDesktopResult) {
         isDesktopResult = !obj.isStageChannel;
       }
-      const tmp6Result = tmp11(outer1_2[12]);
+      const tmp6Result = tmp11(outer1_2[13]);
       const entries = outer1_1(outer1_2[11]).entries(obj.videoSsrcs);
       const obj5 = outer1_1(outer1_2[11]);
       while (tmp22 !== undefined) {
@@ -404,7 +404,7 @@ class RTCMediaSinkWantsManager extends tmp2 {
             hasItem = outer1_2;
             hasItem = first;
             hasItem = items1;
-            hasItem = !outer1_1(outer1_2[13])(hasItem.remoteVideoSsrcs[tmp27], items1);
+            hasItem = !outer1_1(outer1_2[14])(hasItem.remoteVideoSsrcs[tmp27], items1);
           }
         }
         if (hasItem) {
@@ -452,8 +452,8 @@ class RTCMediaSinkWantsManager extends tmp2 {
         hasItem = outer1_1;
         hasItem = outer1_2;
         hasItem = outer1_2;
-        hasItem = outer1_1(outer1_2[14]).isEqual(obj7.latestWants, tmp5);
-        const obj8 = outer1_1(outer1_2[14]);
+        hasItem = outer1_1(outer1_2[12]).isEqual(obj7.latestWants, tmp5);
+        const obj8 = outer1_1(outer1_2[12]);
       }
       if (!hasItem) {
         obj7.latestWants = tmp5;
@@ -518,41 +518,54 @@ prototype["shouldReceiveFromUser"] = function shouldReceiveFromUser(arg0) {
     }
     localVideoDisabled = userVideoDisabledResult;
   }
-  const WindowVisibilityVideoManager = require(10555) /* isIncomingVideoEnabled */.WindowVisibilityVideoManager;
+  const WindowVisibilityVideoManager = require(10573) /* isIncomingVideoEnabled */.WindowVisibilityVideoManager;
   return WindowVisibilityVideoManager.isIncomingVideoEnabled() && !localVideoDisabled;
 };
 prototype["invertWants"] = function invertWants(arg0, wantsLevel) {
+  let ssrc;
+  let ssrc2;
   let values = Object.values(this.videoSsrcs);
   const iter = values[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp3 = nextResult;
-    let tmp4 = nextResult;
-    for (const item10019 of nextResult) {
-      let tmp5 = item10019;
-      let tmp6 = closure_11;
-      let tmp7 = item10019;
-      if (closure_11) {
-        if (tmp5.quality !== c7) {
-          let tmp11 = item10019;
-          let tmp12 = tmp8;
-          arg0[tmp5.ssrc] = tmp9;
-        } else {
-          let tmp10 = item10019;
-          arg0[tmp5.ssrc] = 0;
+    let tmp4 = closure_11;
+    if (closure_11) {
+      let tmp7 = importDefault;
+      let tmp8 = dependencyMap;
+      let obj = importDefault(12);
+      let tmp9 = nextResult;
+      let minByResult = obj.minBy(tmp3, (quality) => quality.quality);
+      let tmp11 = tmp3;
+      let tmp12 = tmp9;
+      for (const item10038 of nextResult) {
+        let tmp13 = minByResult;
+        ssrc = undefined;
+        ({ ssrc, ssrc: ssrc2 } = item10038);
+        if (minByResult != null) {
+          ssrc = minByResult.ssrc;
         }
-      } else {
-        arg0[tmp5.ssrc] = arg1;
+        let num = 0;
+        if (ssrc2 === ssrc) {
+          num = c7;
+        }
+        arg0[ssrc] = num;
+        continue;
       }
-      continue;
+    } else {
+      let tmp5 = tmp3;
+      let tmp6 = nextResult;
+      for (const item10023 of nextResult) {
+        arg0[item10023.ssrc] = arg1;
+        continue;
+      }
     }
     continue;
   }
   values = Object.values(this.audioSsrcs);
-  for (const item10042 of values) {
-    let tmp14 = c7;
-    let tmp15 = c7;
-    arg0[item10042] = c7;
+  for (const item10055 of values) {
+    let tmp16 = c7;
+    arg0[item10055] = c7;
     continue;
   }
 };
@@ -567,28 +580,28 @@ prototype["setConnection"] = function setConnection(c3, arg1) {
   const self = this;
   const connection = this.connection;
   if (connection != null) {
-    connection.removeListener(require(4286) /* BaseConnectionEvent */.BaseConnectionEvent.LocalVideoDisabled, self.handleLocalVideoDisabled);
+    connection.removeListener(require(4290) /* BaseConnectionEvent */.BaseConnectionEvent.LocalVideoDisabled, self.handleLocalVideoDisabled);
   }
   const connection2 = self.connection;
   if (connection2 != null) {
-    connection2.removeListener(require(4286) /* BaseConnectionEvent */.BaseConnectionEvent.LocalMute, self.handleLocalMute);
+    connection2.removeListener(require(4290) /* BaseConnectionEvent */.BaseConnectionEvent.LocalMute, self.handleLocalMute);
   }
   const connection3 = self.connection;
   if (connection3 != null) {
-    connection3.removeListener(require(4286) /* BaseConnectionEvent */.BaseConnectionEvent.ActiveSinksChange, self.delayedUpdate);
+    connection3.removeListener(require(4290) /* BaseConnectionEvent */.BaseConnectionEvent.ActiveSinksChange, self.delayedUpdate);
   }
   self.connection = c3;
   const connection4 = self.connection;
   if (connection4 != null) {
-    connection4.addListener(require(4286) /* BaseConnectionEvent */.BaseConnectionEvent.LocalVideoDisabled, self.handleLocalVideoDisabled);
+    connection4.addListener(require(4290) /* BaseConnectionEvent */.BaseConnectionEvent.LocalVideoDisabled, self.handleLocalVideoDisabled);
   }
   const connection5 = self.connection;
   if (connection5 != null) {
-    connection5.addListener(require(4286) /* BaseConnectionEvent */.BaseConnectionEvent.LocalMute, self.handleLocalMute);
+    connection5.addListener(require(4290) /* BaseConnectionEvent */.BaseConnectionEvent.LocalMute, self.handleLocalMute);
   }
   const connection6 = self.connection;
   if (connection6 != null) {
-    connection6.addListener(require(4286) /* BaseConnectionEvent */.BaseConnectionEvent.ActiveSinksChange, self.delayedUpdate);
+    connection6.addListener(require(4290) /* BaseConnectionEvent */.BaseConnectionEvent.ActiveSinksChange, self.delayedUpdate);
   }
   if (flag) {
     self.update();
@@ -683,7 +696,7 @@ prototype["reset"] = function reset() {
   this.framesReceived = {};
   this.streamIds = {};
   this.streamPixelCounts = {};
-  let obj = require(12857) /* getBrowserInvertedWantsConfig */;
+  let obj = require(12882) /* getBrowserInvertedWantsConfig */;
   if (obj.getBrowserInvertedWantsConfig("RTCMediaSinkWantsManager.getDefaultWants").invertWants) {
     obj = {};
     const merged = Object.assign(obj);
@@ -692,8 +705,8 @@ prototype["reset"] = function reset() {
     obj[0] = c7;
   }
   self.latestWants = obj;
-  const WindowVisibilityVideoManager = tmp3(10555).WindowVisibilityVideoManager;
-  WindowVisibilityVideoManager.off(require(10555) /* isIncomingVideoEnabled */.WindowVisibilityEvent.IncomingVideoEnabledChanged, self.incomingVideoEnabledChanged);
+  const WindowVisibilityVideoManager = tmp3(10573).WindowVisibilityVideoManager;
+  WindowVisibilityVideoManager.off(require(10573) /* isIncomingVideoEnabled */.WindowVisibilityEvent.IncomingVideoEnabledChanged, self.incomingVideoEnabledChanged);
 };
 prototype["setSelectedParticipant"] = function setSelectedParticipant(selectedParticipantId) {
   let self = this;

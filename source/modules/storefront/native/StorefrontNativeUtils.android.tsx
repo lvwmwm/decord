@@ -1,10 +1,10 @@
-// Module ID: 9755
-// Function ID: 9756
+// Module ID: 9772
+// Function ID: 9773
 // Name: useFormattedSKUPrice
-// Dependencies: [19, 6297, 589, 5672, 2]
+// Dependencies: [19, 6303, 589, 5676, 2]
 // Exports: useFormattedSKUPrice
 
-// Module 9755 (useFormattedSKUPrice)
+// Module 9772 (useFormattedSKUPrice)
 import noop from "noop";
 
 const require = arg1;
@@ -33,7 +33,7 @@ export const useFormattedSKUPrice = function useFormattedSKUPrice(sku) {
       const obj = _undefined(outer1_2[1]);
     }
   }, items);
-  const items1 = [stateFromStores(5672)];
+  const items1 = [stateFromStores(5676)];
   const items2 = [tmp2];
   stateFromStores = _require(589).useStateFromStores(items1, () => {
     let product = null;

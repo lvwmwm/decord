@@ -1,10 +1,10 @@
-// Module ID: 8698
-// Function ID: 8699
+// Module ID: 8711
+// Function ID: 8712
 // Name: DiceIcon
-// Dependencies: [19, 21, 712, 3892, 8699, 2]
+// Dependencies: [19, 21, 712, 3896, 8712, 2]
 // Exports: DiceIcon
 
-// Module 8698 (DiceIcon)
+// Module 8711 (DiceIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const DiceIcon = function DiceIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8699) /* registerAsset */;
+  obj[0] = require(8712) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3892) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3896) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

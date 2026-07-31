@@ -1,10 +1,10 @@
-// Module ID: 8953
-// Function ID: 8954
+// Module ID: 8966
+// Function ID: 8967
 // Name: convertOAuth2Authorization
 // Dependencies: [506, 2]
 // Exports: convertOAuth2Authorization
 
-// Module 8953 (convertOAuth2Authorization)
+// Module 8966 (convertOAuth2Authorization)
 const result = require("set").fileFinishedImporting("modules/oauth2/convertor.tsx");
 
 export const convertOAuth2Authorization = function convertOAuth2Authorization(closure_0) {

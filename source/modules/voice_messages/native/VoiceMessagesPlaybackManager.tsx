@@ -1,10 +1,10 @@
-// Module ID: 13591
-// Function ID: 13592
+// Module ID: 13615
+// Function ID: 13616
 // Name: _terminate
-// Dependencies: [17, 4181, 1931, 500, 13592, 4368, 709, 4587, 2]
+// Dependencies: [17, 4185, 1931, 500, 13616, 4372, 709, 4591, 2]
 // Exports: handleVoiceMessageDeleted, pauseCurrentAudioPlayer, playCurrentAudioPlayer
 
-// Module 13591 (_terminate)
+// Module 13615 (_terminate)
 import get_ActivityIndicator from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -20,8 +20,8 @@ class VoiceMessagesPlaybackManager extends tmp3 {
     applyArgumentsResult.appState = AppState.currentState;
     applyArgumentsResult.handleSetPrefersReducedMotion = function handleSetPrefersReducedMotion(prefersReducedMotion) {
       if (obj.isAndroid()) {
-        const result = callback(4587).handleSetPrefersReducedMotion(prefersReducedMotion.prefersReducedMotion);
-        const obj2 = callback(4587);
+        const result = callback(4591).handleSetPrefersReducedMotion(prefersReducedMotion.prefersReducedMotion);
+        const obj2 = callback(4591);
       } else {
         const DCDAccessibilityManager = closure_4.DCDAccessibilityManager;
         const result1 = DCDAccessibilityManager.handleSetPrefersReducedMotion(prefersReducedMotion.prefersReducedMotion);
@@ -31,8 +31,8 @@ class VoiceMessagesPlaybackManager extends tmp3 {
       id = id.id;
       if (id.channelId === currentlySelectedChannelId.getCurrentlySelectedChannelId()) {
         if (obj.isAndroid()) {
-          const result = callback(13592).handleVoiceMessageDeleted(id);
-          const obj2 = callback(13592);
+          const result = callback(13616).handleVoiceMessageDeleted(id);
+          const obj2 = callback(13616);
         } else {
           const DCDAudioPlayerManager = closure_4.DCDAudioPlayerManager;
           if (DCDAudioPlayerManager != null) {
@@ -44,8 +44,8 @@ class VoiceMessagesPlaybackManager extends tmp3 {
     };
     applyArgumentsResult.handleLogout = function handleLogout() {
       if (obj.isAndroid()) {
-        callback(13592).pauseCurrentPlayer(false);
-        const obj2 = callback(13592);
+        callback(13616).pauseCurrentPlayer(false);
+        const obj2 = callback(13616);
       } else {
         const DCDAudioPlayerManager = closure_4.DCDAudioPlayerManager;
         if (DCDAudioPlayerManager != null) {
@@ -117,8 +117,8 @@ let result = require("handleConnectionOpen").fileFinishedImporting("modules/voic
 export default voiceMessagesPlaybackManager;
 export const pauseCurrentAudioPlayer = function pauseCurrentAudioPlayer(arg0) {
   if (obj.isAndroid()) {
-    importDefault(13592).pauseCurrentPlayer(arg0);
-    const obj2 = importDefault(13592);
+    importDefault(13616).pauseCurrentPlayer(arg0);
+    const obj2 = importDefault(13616);
   } else {
     const DCDAudioPlayerManager = closure_4.DCDAudioPlayerManager;
     if (DCDAudioPlayerManager != null) {
@@ -128,8 +128,8 @@ export const pauseCurrentAudioPlayer = function pauseCurrentAudioPlayer(arg0) {
 };
 export const playCurrentAudioPlayer = function playCurrentAudioPlayer() {
   if (obj.isAndroid()) {
-    const result = importDefault(13592).maybePlayCurrentPlayer();
-    const obj2 = importDefault(13592);
+    const result = importDefault(13616).maybePlayCurrentPlayer();
+    const obj2 = importDefault(13616);
   } else {
     const DCDAudioPlayerManager = closure_4.DCDAudioPlayerManager;
     if (DCDAudioPlayerManager != null) {
@@ -139,8 +139,8 @@ export const playCurrentAudioPlayer = function playCurrentAudioPlayer() {
 };
 export const handleVoiceMessageDeleted = function handleVoiceMessageDeleted(id) {
   if (obj.isAndroid()) {
-    const result = importDefault(13592).handleVoiceMessageDeleted(id);
-    const obj2 = importDefault(13592);
+    const result = importDefault(13616).handleVoiceMessageDeleted(id);
+    const obj2 = importDefault(13616);
   } else {
     const DCDAudioPlayerManager = closure_4.DCDAudioPlayerManager;
     if (DCDAudioPlayerManager != null) {

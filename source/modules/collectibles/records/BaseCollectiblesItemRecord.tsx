@@ -22,7 +22,7 @@ prototype["fromServer"] = function fromServer(sku_id) {
   let str = obj;
   const merged1 = Object.assign(merged);
   obj.skuId = sku_id.sku_id;
-  if (typeof prototype !== "find") {
+  if (typeof prototype !== "fileFinishedImporting") {
     str = "Trying to call a non-function";
     HermesBuiltin.throwTypeError();
   }

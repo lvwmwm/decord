@@ -1,10 +1,10 @@
-// Module ID: 11917
-// Function ID: 11918
+// Module ID: 11935
+// Function ID: 11936
 // Name: useFetchCollectiblesProducts
-// Dependencies: [32, 19, 4234, 5798, 676, 647, 1901, 5797, 2]
+// Dependencies: [32, 19, 4238, 5803, 676, 647, 1901, 5802, 2]
 // Exports: useFetchCollectiblesProducts
 
-// Module 11917 (useFetchCollectiblesProducts)
+// Module 11935 (useFetchCollectiblesProducts)
 import _slicedToArray from "_slicedToArray";
 import { useEffect } from "noop";
 import addSku from "addSku";
@@ -92,7 +92,7 @@ export const useFetchCollectiblesProducts = function useFetchCollectiblesProduct
       if (!tmp24) {
         let tmp34 = lib;
         let tmp35 = dependencyMap;
-        let obj = lib(5797);
+        let obj = lib(5802);
         let tmp36 = tmp8;
         obj = { includeBundles: null };
         obj[0] = tmp15;

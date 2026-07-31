@@ -1,10 +1,10 @@
-// Module ID: 14847
-// Function ID: 14848
+// Module ID: 14870
+// Function ID: 14871
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: useRiveRendererExperiment
 
-// Module 14847 (apexExperiment)
+// Module 14870 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

@@ -1,8 +1,8 @@
-// Module ID: 14537
-// Function ID: 14538
-// Dependencies: [13454, 13868, 10116, 14516, 2]
+// Module ID: 14560
+// Function ID: 14561
+// Dependencies: [13478, 13892, 10133, 14539, 2]
 
-// Module 14537
+// Module 14560
 import checkForNewerBuild from "checkForNewerBuild";
 import createToggle from "createToggle";
 
@@ -17,8 +17,8 @@ createToggle = {
     return "Build installed from builds.discord.tools";
   },
   usePredicate: function useHasCheckNativeUpdateSetting() {
-    const obj = require(13868) /* useStaffOrDeveloperSettingPredicate */;
-    return hasUpdatesConfigured.hasUpdatesConfigured && require(13868) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
+    const obj = require(13892) /* useStaffOrDeveloperSettingPredicate */;
+    return hasUpdatesConfigured.hasUpdatesConfigured && require(13892) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
   }
 };
 createToggle = createToggle.createStatic(createToggle);

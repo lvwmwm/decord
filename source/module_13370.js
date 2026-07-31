@@ -1,35 +1,6 @@
 // Module ID: 13370
 // Function ID: 13371
-// Dependencies: [13371, 13382, 13384, 13387, 13390, 13391]
+// Dependencies: []
 
 // Module 13370
-let closure_3 = require("withoutSetter")("toPrimitive");
-
-export default (arg0, arg1) => {
-  if (require(13382) /* all */(arg0)) {
-    if (!tmp(13384)(arg0)) {
-      let str = arg1;
-      const tmp4 = tmp(13387)(arg0, closure_3);
-      if (tmp4) {
-        if (undefined === str) {
-          str = "default";
-        }
-        const tmp5 = tmp(13390)(tmp4, arg0, str);
-        if (tmp(13382)(tmp5)) {
-          if (!tmp(13384)(tmp5)) {
-            const tmp9 = new TypeError("Can't convert object to primitive value");
-            throw tmp9;
-          }
-        }
-        return tmp5;
-      } else {
-        let str2 = str;
-        if (undefined === str) {
-          str2 = "number";
-        }
-        return tmp(13391)(arg0, str2);
-      }
-    }
-  }
-  return arg0;
-};
+arg5.numberingSystemNames = ["adlm", "ahom", "arab", "arabext", "armn", "armnlow", "bali", "beng", "bhks", "brah", "cakm", "cham", "cyrl", "deva", "diak", "ethi", "fullwide", "gara", "geor", "gong", "gonm", "grek", "greklow", "gujr", "gukh", "guru", "hanidays", "hanidec", "hans", "hansfin", "hant", "hantfin", "hebr", "hmng", "hmnp", "java", "jpan", "jpanfin", "jpanyear", "kali", "kawi", "khmr", "knda", "krai", "lana", "lanatham", "laoo", "latn", "lepc", "limb", "mathbold", "mathdbl", "mathmono", "mathsanb", "mathsans", "mlym", "modi", "mong", "mroo", "mtei", "mymr", "mymrepka", "mymrpao", "mymrshan", "mymrtlng", "nagm", "newa", "nkoo", "olck", "onao", "orya", "osma", "outlined", "rohg", "roman", "romanlow", "saur", "segment", "shrd", "sind", "sinh", "sora", "sund", "sunu", "takr", "talu", "taml", "tamldec", "telu", "thai", "tibt", "tirh", "tnsa", "vaii", "wara", "wcho"];

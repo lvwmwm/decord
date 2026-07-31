@@ -1,9 +1,9 @@
-// Module ID: 10467
-// Function ID: 10468
+// Module ID: 10484
+// Function ID: 10485
 // Name: handleActivityStateChanged
-// Dependencies: [10468, 4867, 676, 4074, 709, 589, 2]
+// Dependencies: [10485, 4871, 676, 4078, 709, 589, 2]
 
-// Module 10467 (handleActivityStateChanged)
+// Module 10484 (handleActivityStateChanged)
 import updateActivities from "updateActivities";
 import filterPlayingActivities from "filterPlayingActivities";
 import ME from "ME";
@@ -41,7 +41,7 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
         tmp16[applicationId].stop();
         const obj5 = tmp16[applicationId];
       }
-      const timeout = new applicationId(4074).Timeout();
+      const timeout = new applicationId(4078).Timeout();
       timeout.start(c9, () => {
         let obj = JOIN(outer1_2[4]);
         obj = { type: "ACTIVITY_LAUNCH_FAIL", applicationId, activityType: JOIN };
@@ -59,7 +59,7 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
         tmp7[applicationId].stop();
         const obj3 = tmp7[applicationId];
       }
-      const timeout1 = new applicationId(4074).Timeout();
+      const timeout1 = new applicationId(4078).Timeout();
       timeout1.start(num, () => {
         let obj = JOIN(outer1_2[4]);
         obj = { type: "ACTIVITY_LAUNCH_FAIL", applicationId, activityType: JOIN };

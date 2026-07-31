@@ -1,10 +1,10 @@
-// Module ID: 15361
-// Function ID: 15362
+// Module ID: 15389
+// Function ID: 15390
 // Name: MediaMosaicVideo
-// Dependencies: [32, 19, 17, 4181, 1372, 3826, 1874, 8167, 676, 21, 4189, 712, 4377, 691, 589, 8139, 4050, 4190, 15362, 5141, 4185, 1236, 8124, 4731, 4717, 8182, 10769, 4715, 15317, 8114, 6154, 1351, 12, 5126, 8112, 4380, 2]
+// Dependencies: [32, 19, 17, 4185, 1372, 3830, 1874, 8174, 676, 21, 4193, 712, 4381, 691, 589, 8146, 4054, 4194, 15390, 5145, 4189, 1236, 8131, 4735, 4721, 8189, 10787, 4719, 15345, 8121, 6160, 1351, 12, 5130, 8119, 4384, 2]
 // Exports: default
 
-// Module 15361 (MediaMosaicVideo)
+// Module 15389 (MediaMosaicVideo)
 import apply from "apply";
 import preload from "preload";
 import get_ActivityIndicator from "CONFIG_NEVER_ANIMATE_TIMING";
@@ -50,7 +50,7 @@ function MediaMosaicVideo(source) {
     isGIFV = source.isGIFV;
   }
   obj[9] = isGIFV;
-  return closure_15(importDefault(8139), obj);
+  return closure_15(importDefault(8146), obj);
 }
 function MediaMosaicImage(source) {
   let dimensions;
@@ -63,9 +63,9 @@ function MediaMosaicImage(source) {
   const tmp2 = callback(React.useState(false), 2);
   first = tmp2[0];
   dependencyMap = tmp2[1];
-  let obj = source(4050);
+  let obj = source(4054);
   const fn = function c() {
-    let obj = source(4190);
+    let obj = source(4194);
     let num = 1;
     if (first) {
       num = 0;
@@ -73,7 +73,7 @@ function MediaMosaicImage(source) {
     obj = { opacity: obj.withTiming(num, { duration: 150 }) };
     return obj;
   };
-  obj = { withTiming: source(4190).withTiming, imageFinishedLoading: first };
+  obj = { withTiming: source(4194).withTiming, imageFinishedLoading: first };
   fn.__closure = obj;
   fn.__workletHash = 7803531897566;
   fn.__initData = closure_20;
@@ -83,7 +83,7 @@ function MediaMosaicImage(source) {
   const memo = React.useMemo(() => {
     if (null != source.placeholder) {
       const obj = { uri: null, width: null, height: null };
-      obj[0] = source(15362).createThumbhashImageFromPlaceholder(tmp.placeholder);
+      obj[0] = source(15390).createThumbhashImageFromPlaceholder(tmp.placeholder);
       ({ width: obj[1], height: obj[2] } = tmp);
       return obj;
     }
@@ -91,8 +91,8 @@ function MediaMosaicImage(source) {
   obj = { style: items1, children: null };
   items1 = [animatedStyle, tmp.thumbhashMedia];
   const items2 = [style, tmp.media, dimensions];
-  obj[1] = callback2(first(5141), { source: memo, style: items2 });
-  const items3 = [callback2(first(4050).View, obj), ];
+  obj[1] = callback2(first(5145), { source: memo, style: items2 });
+  const items3 = [callback2(first(4054).View, obj), ];
   const obj1 = {
     source,
     style: items4,
@@ -108,7 +108,7 @@ function MediaMosaicImage(source) {
   }
   const obj2 = { children: null };
   obj1[3] = num;
-  items3[1] = callback2(first(4050).Image, obj1, source.uri);
+  items3[1] = callback2(first(4054).Image, obj1, source.uri);
   obj2[0] = items3;
   return closure_17(closure_16, obj2);
 }
@@ -252,7 +252,7 @@ function OneImageRow(widthOverride) {
   let source;
   widthOverride = widthOverride.widthOverride;
   ({ source, handlePressMedia } = widthOverride);
-  const context = React.useContext(require(15317) /* context */.ICYMIContext);
+  const context = React.useContext(require(15345) /* context */.ICYMIContext);
   if (null == widthOverride) {
     let width;
     if (context != null) {
@@ -310,7 +310,7 @@ function TwoImagesRow(arg0) {
   ({ sources, handlePressMedia: require, end, widthOverride } = arg0);
   let obj;
   const tmp = callback4();
-  const context = React.useContext(require(15317) /* context */.ICYMIContext);
+  const context = React.useContext(require(15345) /* context */.ICYMIContext);
   if (null == widthOverride) {
     let width;
     if (context != null) {
@@ -340,7 +340,7 @@ function ThreeImages(arg0) {
   let widthOverride;
   ({ sources, handlePressMedia, widthOverride } = arg0);
   const tmp = callback4();
-  const context = React.useContext(require(15317) /* context */.ICYMIContext);
+  const context = React.useContext(require(15345) /* context */.ICYMIContext);
   if (null == widthOverride) {
     let width;
     if (context != null) {
@@ -367,7 +367,7 @@ function FourImages(arg0) {
   let widthOverride;
   ({ sources, handlePressMedia, widthOverride } = arg0);
   const tmp = callback4();
-  const context = React.useContext(require(15317) /* context */.ICYMIContext);
+  const context = React.useContext(require(15345) /* context */.ICYMIContext);
   if (null == widthOverride) {
     let width;
     if (context != null) {
@@ -402,7 +402,7 @@ function SingleImage(source) {
   ({ initialIndex, handlePressMedia, visible } = source);
   const tmp = callback4();
   let obj = React;
-  const context = React.useContext(source(15317).ICYMIContext);
+  const context = React.useContext(source(15345).ICYMIContext);
   if (null == widthOverride) {
     let width;
     if (context != null) {
@@ -461,7 +461,7 @@ class GravityAttachmentMediaMosaic {
     items = [, ];
     items[0] = length;
     items[1] = sources;
-    tmp = f61498();
+    tmp = f61620();
     memo = c4.useMemo(() => {
       let sum;
       const result = length % 3;

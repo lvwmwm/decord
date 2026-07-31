@@ -1,10 +1,10 @@
-// Module ID: 9510
-// Function ID: 9511
+// Module ID: 9525
+// Function ID: 9526
 // Name: removeAutomodMessageNotice
 // Dependencies: [709, 2]
 // Exports: removeAutomodMessageNotice
 
-// Module 9510 (removeAutomodMessageNotice)
+// Module 9525 (removeAutomodMessageNotice)
 const result = require("set").fileFinishedImporting("modules/guild_automod/GuildAutomodMessageActionCreators.tsx");
 
 export const removeAutomodMessageNotice = function removeAutomodMessageNotice(messageId) {

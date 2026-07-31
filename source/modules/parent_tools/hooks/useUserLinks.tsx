@@ -1,10 +1,10 @@
-// Module ID: 6252
-// Function ID: 6253
+// Module ID: 6258
+// Function ID: 6259
 // Name: useUserIdsForLinkStatus
-// Dependencies: [19, 1874, 5793, 5794, 647, 6253, 6254, 5853, 2]
+// Dependencies: [19, 1874, 5798, 5799, 647, 6259, 6260, 5858, 2]
 // Exports: getActiveLinkUserIds, useAcceptedRequestsCount, useActiveLinkUserIds, useActiveLinkUsers, useActivityWindowTimeStamp, useHasActiveLinks, useHasActiveParentLinks, useHasMaxConnections, useLinkTimestampText, usePendingRequestCount, useRequiresParentalConsent, useUserIdsForLinkStatus, useUserQRLinkUrl, useUsersForLinkStatus
 
-// Module 6252 (useUserIdsForLinkStatus)
+// Module 6258 (useUserIdsForLinkStatus)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
@@ -201,7 +201,7 @@ export const useUserQRLinkUrl = function useUserQRLinkUrl() {
 export const useHasMaxConnections = function useHasMaxConnections() {
   const ACTIVE = constants.ACTIVE;
   let stateFromStores;
-  const tmp = stateFromStores(6253)();
+  const tmp = stateFromStores(6259)();
   const items = [freshTeenActivityWithMap];
   stateFromStores = ACTIVE(647).useStateFromStores(items, () => linkedUsers.getLinkedUsers());
   const items1 = [stateFromStores, ACTIVE];
@@ -287,8 +287,8 @@ export const useAcceptedRequestsCount = function useAcceptedRequestsCount() {
 };
 export const useActivityWindowTimeStamp = function useActivityWindowTimeStamp(activityWindowTimestampFormatter) {
   const _require = activityWindowTimestampFormatter;
-  let closure_1 = _require(6254).useSelectedTeenId();
-  const obj = _require(6254);
+  let closure_1 = _require(6260).useSelectedTeenId();
+  const obj = _require(6260);
   const tmp = _require;
   const items = [freshTeenActivityWithMap];
   const stateFromStores = _require(647).useStateFromStores(items, () => {
@@ -302,8 +302,8 @@ export const useActivityWindowTimeStamp = function useActivityWindowTimeStamp(ac
   if (null != stateFromStores) {
     const _Date = Date;
     const date = new Date(stateFromStores);
-    result = tmp(5853).formatUserActivityTimestamp(date.getTime(), () => closure_0, 7);
-    const tmpResult = tmp(5853);
+    result = tmp(5858).formatUserActivityTimestamp(date.getTime(), () => closure_0, 7);
+    const tmpResult = tmp(5858);
   }
   return result;
 };
@@ -315,7 +315,7 @@ export const useLinkTimestampText = function useLinkTimestampText(id, status) {
     return null;
   } else {
     const _Date = Date;
-    _require(5853).formatLinkTimestamp(Date.parse(stateFromStores), status === constants.PENDING ? closure_10 : closure_6);
-    const tmpResult = _require(5853);
+    _require(5858).formatLinkTimestamp(Date.parse(stateFromStores), status === constants.PENDING ? closure_10 : closure_6);
+    const tmpResult = _require(5858);
   }
 };

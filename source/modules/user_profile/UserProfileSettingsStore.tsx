@@ -1,9 +1,9 @@
-// Module ID: 7935
-// Function ID: 7936
+// Module ID: 7942
+// Function ID: 7943
 // Name: handleFormOpen
-// Dependencies: [676, 1410, 7936, 677, 589, 709, 2]
+// Dependencies: [676, 1410, 7943, 677, 589, 709, 2]
 
-// Module 7935 (handleFormOpen)
+// Module 7942 (handleFormOpen)
 import ME from "ME";
 import { Store } from "initialize";
 import set from "ANALYTICS_NAME";

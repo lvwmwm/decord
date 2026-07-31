@@ -1,9 +1,9 @@
-// Module ID: 9937
-// Function ID: 9938
+// Module ID: 9954
+// Function ID: 9955
 // Name: ForLaterDeletedMessageCard
-// Dependencies: [5, 19, 17, 3817, 676, 21, 4189, 712, 5222, 6727, 4185, 1236, 6679, 4149, 9930, 9938, 4395, 698, 9550, 3771, 9939, 589, 9940, 9946, 9947, 9948, 2]
+// Dependencies: [5, 19, 17, 3821, 676, 21, 4193, 712, 5226, 6733, 4189, 1236, 6685, 4153, 9947, 9955, 4399, 698, 9565, 3775, 9956, 589, 9957, 9963, 9964, 9965, 2]
 
-// Module 9937 (ForLaterDeletedMessageCard)
+// Module 9954 (ForLaterDeletedMessageCard)
 import closure_3 from "jsxProd";
 import importAllResult from "t";
 import { View } from "expandEventProperties";
@@ -74,7 +74,7 @@ const memoResult = importAllResult.memo(function ForLaterMessageCard(savedMessag
   savedMessage = savedMessage.savedMessage;
   let savedMessageChannel;
   let tmp = callback3();
-  let obj = savedMessage(9938);
+  let obj = savedMessage(9955);
   savedMessageChannel = obj.useSavedMessageChannel(savedMessage);
   const items = [savedMessage, savedMessageChannel];
   callback = importAllResult.useCallback(callback(function*() {
@@ -253,7 +253,7 @@ const memoResult = importAllResult.memo(function ForLaterMessageCard(savedMessag
         obj = { savedMessage: null, jumpToMessage: null };
         obj[0] = savedMessage;
         obj[1] = callback;
-        const tmp8 = callback2(savedMessageChannel(9940), obj);
+        const tmp8 = callback2(savedMessageChannel(9957), obj);
         obj = { variant: "primary", border: "subtle", shadow: "none", style: null, onPress: null, children: null };
         obj[3] = tmp.card;
         obj[4] = callback;
@@ -263,7 +263,7 @@ const memoResult = importAllResult.memo(function ForLaterMessageCard(savedMessag
           obj1[0] = savedMessage;
           obj1[1] = savedMessage.throttledNow;
           obj1[2] = tmp8;
-          tmp6Result = tmp6(tmp2(9946).ForLaterCardReminderHeader, obj1);
+          tmp6Result = tmp6(tmp2(9963).ForLaterCardReminderHeader, obj1);
         }
         const items2 = [tmp6Result, , , ];
         let obj2 = { channel: null, actions: null };
@@ -273,7 +273,7 @@ const memoResult = importAllResult.memo(function ForLaterMessageCard(savedMessag
           tmp12 = tmp8;
         }
         obj2[1] = tmp12;
-        items2[1] = callback2(tmp2(9947).ForLaterCardHeader, obj2);
+        items2[1] = callback2(tmp2(9964).ForLaterCardHeader, obj2);
         let obj3 = { style: null };
         obj3[0] = tmp.cardDivider;
         items2[2] = callback2(View, obj3);
@@ -281,10 +281,10 @@ const memoResult = importAllResult.memo(function ForLaterMessageCard(savedMessag
         obj4[0] = tmp.messagePreview;
         const obj5 = { message: null, lineClamp: 2, maxHeight: 250 };
         obj5[0] = savedMessage.message;
-        obj4[1] = callback2(tmp2(9948).ForLaterMessageRow, obj5);
+        obj4[1] = callback2(tmp2(9965).ForLaterMessageRow, obj5);
         items2[3] = callback2(View, obj4);
         obj[5] = items2;
-        return closure_11(tmp2(5222).Card, obj);
+        return closure_11(tmp2(5226).Card, obj);
       }
     }
   }

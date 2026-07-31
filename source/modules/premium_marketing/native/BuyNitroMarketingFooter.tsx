@@ -1,10 +1,10 @@
-// Module ID: 12432
-// Function ID: 12433
+// Module ID: 12458
+// Function ID: 12459
 // Name: BuyNitroMarketingFooter
-// Dependencies: [19, 17, 21, 4189, 712, 5273, 6657, 5535, 2]
+// Dependencies: [19, 17, 21, 4193, 712, 5277, 6663, 5539, 2]
 // Exports: default
 
-// Module 12432 (BuyNitroMarketingFooter)
+// Module 12458 (BuyNitroMarketingFooter)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -37,12 +37,12 @@ export default function BuyNitroMarketingFooter(arg0) {
   obj = { style: createCacheKey().footer, collapsable: false, children: null };
   obj = { location: null, planSelection: null, applicationId: null, onPaymentSuccess: null, onPaymentDismiss: null };
   const tmp = createCacheKey();
-  obj[0] = importDefault(5535).PREMIUM_MARKETING_FOOTER;
+  obj[0] = importDefault(5539).PREMIUM_MARKETING_FOOTER;
   obj[1] = planSelection;
   obj[2] = applicationId;
   obj[3] = onPaymentSuccess;
   obj[4] = onPaymentDismiss;
-  obj[2] = jsx(importDefault(6657), { location: null, planSelection: null, applicationId: null, onPaymentSuccess: null, onPaymentDismiss: null });
+  obj[2] = jsx(importDefault(6663), { location: null, planSelection: null, applicationId: null, onPaymentSuccess: null, onPaymentDismiss: null });
   obj[1] = <closure_4 location={null} planSelection={null} applicationId={null} onPaymentSuccess={null} onPaymentDismiss={null} />;
-  return jsx(require(5273) /* Directions */.GestureDetector, { location: null, planSelection: null, applicationId: null, onPaymentSuccess: null, onPaymentDismiss: null });
+  return jsx(require(5277) /* Directions */.GestureDetector, { location: null, planSelection: null, applicationId: null, onPaymentSuccess: null, onPaymentDismiss: null });
 };

@@ -1,9 +1,9 @@
-// Module ID: 11734
-// Function ID: 11735
+// Module ID: 11752
+// Function ID: 11753
 // Name: LockPill
-// Dependencies: [32, 19, 17, 4181, 1372, 11149, 11150, 676, 1301, 11151, 21, 4050, 1297, 4717, 4185, 12, 8528, 4189, 712, 5030, 589, 3893, 1348, 5178, 1236, 4190, 4125, 4035, 4685, 10363, 11735, 5215, 1581, 4586, 4596, 1231, 11060, 1474, 10655, 11736, 11737, 4149, 11412, 4136, 10796, 2]
+// Dependencies: [32, 19, 17, 4185, 1372, 11167, 11168, 676, 1301, 11169, 21, 4054, 1297, 4721, 4189, 12, 8541, 4193, 712, 5034, 589, 3897, 1348, 5182, 1236, 4194, 4129, 4039, 4689, 10381, 11753, 5219, 1581, 4590, 4600, 1231, 11078, 1474, 10673, 11754, 11755, 4153, 11430, 4140, 10814, 2]
 
-// Module 11734 (LockPill)
+// Module 11752 (LockPill)
 import useSafeAreaInsets from "useSafeAreaInsets";
 import importAllResult from "result";
 import get_ActivityIndicator from "createCacheKey";
@@ -15,9 +15,9 @@ import { ComponentActionsKeyed } from "ME";
 import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor";
 import TextAreaCta from "TextAreaCta";
 import jsxProd from "map";
-import importDefaultResult from "module_4050";
-import importDefaultResult1 from "module_4050";
-import importDefaultResult2 from "module_4050";
+import importDefaultResult from "module_4054";
+import importDefaultResult1 from "module_4054";
+import importDefaultResult2 from "module_4054";
 import createCacheKey from "createCacheKey";
 import importDefaultResult3 from "Button";
 
@@ -256,10 +256,10 @@ let c4 = importAllResult;
 ({ View: c5, StyleSheet: closure_6, AppState: error } = get_ActivityIndicator);
 ({ CHAT_INPUT_HEIGHT: closure_14, CHAT_INPUT_HORIZONTAL_PADDING: closure_15 } = TextAreaCta);
 ({ jsx: closure_16, jsxs: closure_17, Fragment: closure_18 } = jsxProd);
-let closure_19 = require("module_4050").createAnimatedComponent(require("Button").Icon);
-let closure_20 = require("module_4050").createAnimatedComponent(require("PressableBase").PressableOpacity);
-let closure_21 = require("module_4050").createAnimatedComponent(require("Text").Text);
-let closure_22 = require("Button").memoize(() => importDefault(4050).createAnimatedComponent(require(8528) /* inlineStyles */.Ellipse));
+let closure_19 = require("module_4054").createAnimatedComponent(require("Button").Icon);
+let closure_20 = require("module_4054").createAnimatedComponent(require("PressableBase").PressableOpacity);
+let closure_21 = require("module_4054").createAnimatedComponent(require("Text").Text);
+let closure_22 = require("Button").memoize(() => importDefault(4054).createAnimatedComponent(require(8541) /* inlineStyles */.Ellipse));
 let closure_23 = createCacheKey.createStyles((width) => {
   let obj = { container: null, innerContainer: null, contentContainer: null, trashContainer: null, sendContainer: null, voiceChatContainer: null, lockContainer: null, lockParentContainer: null, chevon: null };
   obj = { alignItems: "center" };
@@ -275,9 +275,9 @@ let closure_23 = createCacheKey.createStyles((width) => {
   const obj2 = { width, height: width, borderRadius: importDefault(712).modules.button.BORDER_RADIUS, alignItems: "center", justifyContent: "center" };
   obj[5] = { flex: 1, height: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_HEIGHT, marginRight: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_MARGIN_RIGHT, alignItems: "flex-end" };
   const obj3 = { flex: 1, height: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_HEIGHT, marginRight: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_MARGIN_RIGHT, alignItems: "flex-end" };
-  obj[6] = { height: 68, width, borderRadius: importDefault(712).modules.button.BORDER_RADIUS, display: "flex", alignItems: "center", flexDirection: "column", elevation: 12, shadowColor: importDefault(712).colors.BLACK, shadowOffset: { width: 0, height: 12 }, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: require(5030) /* result */.DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
+  obj[6] = { height: 68, width, borderRadius: importDefault(712).modules.button.BORDER_RADIUS, display: "flex", alignItems: "center", flexDirection: "column", elevation: 12, shadowColor: importDefault(712).colors.BLACK, shadowOffset: { width: 0, height: 12 }, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: require(5034) /* result */.DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
   obj[7] = { position: "absolute", right: closure_15, width };
-  const obj4 = { height: 68, width, borderRadius: importDefault(712).modules.button.BORDER_RADIUS, display: "flex", alignItems: "center", flexDirection: "column", elevation: 12, shadowColor: importDefault(712).colors.BLACK, shadowOffset: { width: 0, height: 12 }, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: require(5030) /* result */.DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
+  const obj4 = { height: 68, width, borderRadius: importDefault(712).modules.button.BORDER_RADIUS, display: "flex", alignItems: "center", flexDirection: "column", elevation: 12, shadowColor: importDefault(712).colors.BLACK, shadowOffset: { width: 0, height: 12 }, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: require(5034) /* result */.DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
   const obj5 = { position: "absolute", right: closure_15, width };
   obj[8] = { height: 16, width: 16, marginTop: 8, tintColor: importDefault(712).colors.ICON_SUBTLE };
   return obj;
@@ -425,13 +425,13 @@ let closure_33 = importAllResult.memo((initialAnimation) => {
       return obj.get();
     }
   };
-  obj = { voiceMessageAnimationState: tmp, runOnJS: initialAnimation(4050).runOnJS, setVoiceMessageState: tmp6 };
+  obj = { voiceMessageAnimationState: tmp, runOnJS: initialAnimation(4054).runOnJS, setVoiceMessageState: tmp6 };
   fn.__closure = obj;
   fn.__workletHash = 8577984959763;
   fn.__initData = closure_31;
-  const derivedValue = initialAnimation(4050).useDerivedValue(fn);
+  const derivedValue = initialAnimation(4054).useDerivedValue(fn);
   ref = stringResult5.useRef(undefined);
-  const tmp12 = recordingAnimation(5178)(ref);
+  const tmp12 = recordingAnimation(5182)(ref);
   if (initialAnimation.exiting) {
     stringResult5 = tmp12;
     let stringResult = tmp12;
@@ -488,7 +488,7 @@ let closure_33 = importAllResult.memo((initialAnimation) => {
   const effect = obj.useEffect(() => {
     ref.current = stringResult5;
   }, items);
-  initialAnimation(4050);
+  initialAnimation(4054);
   const fn2 = function y() {
     const value = initialAnimation.get();
     const bound = Math.min(value, recordingAnimation.get());

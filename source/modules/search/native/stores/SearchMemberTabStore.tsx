@@ -1,9 +1,9 @@
-// Module ID: 11459
-// Function ID: 11460
+// Module ID: 11477
+// Function ID: 11478
 // Name: setAutocompleteOptions
-// Dependencies: [1372, 676, 6160, 3822, 5104, 589, 709, 2]
+// Dependencies: [1372, 676, 6166, 3826, 5108, 589, 709, 2]
 
-// Module 11459 (setAutocompleteOptions)
+// Module 11477 (setAutocompleteOptions)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { Permissions } from "ME";
 import { Store } from "initialize";
@@ -71,7 +71,7 @@ prototype["search"] = function search(arg0, targetChannelId, str) {
   const trimmed = str.toLowerCase().trim();
   this.searchQueryString = trimmed;
   str = str.toLowerCase();
-  const members = importDefault(5104).requestMembers(arg0, trimmed, 50);
+  const members = importDefault(5108).requestMembers(arg0, trimmed, 50);
   const autocompleter = this.autocompleter;
   autocompleter.search(trimmed);
 };
@@ -137,7 +137,7 @@ const searchGuildMemberTabStoreImpl = new SearchGuildMemberTabStoreImpl(require(
     ({ channelId, searchQueryString } = arg0);
     let value = map.get(id);
     if (value == null) {
-      if (typeof GuildMemberSearchManager !== "find") {
+      if (typeof GuildMemberSearchManager !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(GuildMemberSearchManager.prototype);
@@ -173,8 +173,8 @@ const searchGuildMemberTabStoreImpl = new SearchGuildMemberTabStoreImpl(require(
           outer1_9.emitChange();
         }
       };
-      let tmp4 = importDefault(6160);
-      let items = [obj(6160).AutocompleterResultTypes.USER];
+      let tmp4 = importDefault(6166);
+      let items = [obj(6166).AutocompleterResultTypes.USER];
       tmp4 = new tmp4(onAutocompleterResultsChange, items, 50);
       obj.autocompleter = tmp4;
       const autocompleter = obj.autocompleter;

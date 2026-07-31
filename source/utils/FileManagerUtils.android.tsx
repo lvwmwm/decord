@@ -1,10 +1,10 @@
-// Module ID: 8083
-// Function ID: 8084
+// Module ID: 8090
+// Function ID: 8091
 // Name: _readFile
 // Dependencies: [5, 3, 1271, 2]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 8083 (_readFile)
+// Module 8090 (_readFile)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 function _readFile() {

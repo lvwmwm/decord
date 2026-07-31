@@ -1,9 +1,9 @@
-// Module ID: 16303
-// Function ID: 16304
+// Module ID: 16332
+// Function ID: 16333
 // Name: _terminate
-// Dependencies: [4236, 4282, 4250, 687, 3, 5134, 16304, 500, 2]
+// Dependencies: [4240, 4286, 4254, 687, 3, 5138, 16333, 500, 2]
 
-// Module 16303 (_terminate)
+// Module 16332 (_terminate)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import initialize from "initialize";
 import { Features } from "DesktopSources";
@@ -52,16 +52,18 @@ class RTCLatencyTestManager extends tmp3 {
       applyArgumentsResult.refetchTimeout = setTimeout(applyArgumentsResult._fetchAndScheduleRefetch, 360 * outer1_1(outer1_2[3]).Millis.MINUTE);
     };
     applyArgumentsResult._handleConnectionOpen = function _handleConnectionOpen() {
-      if (applyArgumentsResult(outer1_2[7]).isPlatformEmbedded) {
-        const _Math = Math;
-        const _Math2 = Math;
-        const rounded = Math.floor(outer1_6 + Math.random() * outer1_7);
-        if (null != applyArgumentsResult.refetchTimeout) {
-          const _clearTimeout = clearTimeout;
-          clearTimeout(tmp5.refetchTimeout);
+      if (null != window.GLOBAL_ENV.RTC_LATENCY_ENDPOINT) {
+        if (applyArgumentsResult(outer1_2[7]).isPlatformEmbedded) {
+          const _Math = Math;
+          const _Math2 = Math;
+          const rounded = Math.floor(outer1_6 + Math.random() * outer1_7);
+          if (null != applyArgumentsResult.refetchTimeout) {
+            const _clearTimeout = clearTimeout;
+            clearTimeout(tmp4.refetchTimeout);
+          }
+          const _setTimeout = setTimeout;
+          applyArgumentsResult.refetchTimeout = setTimeout(applyArgumentsResult._fetchAndScheduleRefetch, rounded);
         }
-        const _setTimeout = setTimeout;
-        applyArgumentsResult.refetchTimeout = setTimeout(applyArgumentsResult._fetchAndScheduleRefetch, rounded);
       }
     };
     return applyArgumentsResult;

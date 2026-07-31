@@ -143,13 +143,13 @@ function processEvent(type, finishReasons, arg2, setStatus) {
             finishReasons.push(message.stop_reason);
           }
           if (message.usage) {
-            if (typeof message.usage.input_tokens !== "reType") {
+            if (typeof message.usage.input_tokens !== "__REMOTEDEV__") {
               finishReasons.promptTokens = message.usage.input_tokens;
             }
-            if (typeof message.usage.cache_creation_input_tokens !== "reType") {
+            if (typeof message.usage.cache_creation_input_tokens !== "__REMOTEDEV__") {
               finishReasons.cacheCreationInputTokens = message.usage.cache_creation_input_tokens;
             }
-            if (typeof message.usage.cache_read_input_tokens !== "reType") {
+            if (typeof message.usage.cache_read_input_tokens !== "__REMOTEDEV__") {
               finishReasons.cacheReadInputTokens = message.usage.cache_read_input_tokens;
             }
           }
@@ -169,9 +169,9 @@ function processEvent(type, finishReasons, arg2, setStatus) {
         }
         if ("content_block_delta" === type.type) {
           if (type.delta) {
-            if (typeof type.index !== "reType") {
+            if (typeof type.index !== "__REMOTEDEV__") {
               if ("partial_json" in type.delta) {
-                if (typeof type.delta.partial_json !== "tee") {
+                if (typeof type.delta.partial_json !== "__FORMATJS_LISTFORMAT_DATA__") {
                   if (finishReasons.activeToolBlocks[type.index]) {
                     let inputJsonParts = tmp16.inputJsonParts;
                     inputJsonParts.push(type.delta.partial_json);
@@ -192,7 +192,7 @@ function processEvent(type, finishReasons, arg2, setStatus) {
         (function handleContentBlockStop(type, finishReasons) {
           let name;
           if ("content_block_stop" === type.type) {
-            if (typeof tmp3.index !== "reType") {
+            if (typeof tmp3.index !== "__REMOTEDEV__") {
               let activeToolBlocks = finishReasons;
               name = finishReasons.activeToolBlocks[tmp3.index];
               if (name) {
@@ -481,7 +481,7 @@ export const instrumentAsyncIterableStream = function instrumentAsyncIterableStr
 export const instrumentMessageStream = function instrumentMessageStream(applyResult, arg1, flag) {
   let closure_0 = arg1;
   let closure_1 = flag;
-  let closure_2 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "disabled", cacheCreationInputTokens: "applicationId", cacheReadInputTokens: "isArray", toolCalls: [], activeToolBlocks: {} };
+  let closure_2 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "description", cacheCreationInputTokens: "cix", cacheReadInputTokens: "isArray", toolCalls: [], activeToolBlocks: {} };
   applyResult.on("streamEvent", (arg0) => {
     outer1_5(arg0, closure_2, closure_1, closure_0);
   });

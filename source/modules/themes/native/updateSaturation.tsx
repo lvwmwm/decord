@@ -1,18 +1,18 @@
-// Module ID: 13498
-// Function ID: 13499
+// Module ID: 13522
+// Function ID: 13523
 // Name: updateSaturation
-// Dependencies: [17, 500, 13499, 2]
+// Dependencies: [17, 500, 13523, 2]
 // Exports: updateSaturation
 
-// Module 13498 (updateSaturation)
+// Module 13522 (updateSaturation)
 import { NativeModules } from "get ActivityIndicator";
 
 const result = require("enforcing").fileFinishedImporting("modules/themes/native/updateSaturation.tsx");
 
 export const updateSaturation = function updateSaturation(saturation) {
   if (obj.isAndroid()) {
-    let updateSaturationResult = importDefault(13499).updateSaturation(saturation);
-    const obj2 = importDefault(13499);
+    let updateSaturationResult = importDefault(13523).updateSaturation(saturation);
+    const obj2 = importDefault(13523);
   } else {
     const DCDTheme = NativeModules.DCDTheme;
     updateSaturationResult = DCDTheme.updateSaturation(saturation);

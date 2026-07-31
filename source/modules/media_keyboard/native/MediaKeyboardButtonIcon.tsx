@@ -1,10 +1,10 @@
-// Module ID: 11396
-// Function ID: 11397
+// Module ID: 11414
+// Function ID: 11415
 // Name: MediaKeyboardButtonIcon
-// Dependencies: [19, 21, 4055, 1348, 4050, 1579, 4190, 4193, 10207, 2]
+// Dependencies: [19, 21, 4059, 1348, 4054, 1579, 4194, 4197, 10224, 2]
 // Exports: MediaKeyboardButtonIcon
 
-// Module 11396 (MediaKeyboardButtonIcon)
+// Module 11414 (MediaKeyboardButtonIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -19,11 +19,11 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     let _require;
     let chatInputFloating;
     const merged = Object.assign(arg0, undefined);
-    const tmp6 = chatInputFloating(4055)();
+    const tmp6 = chatInputFloating(4059)();
     _require = tmp6;
     let obj = _require(1348);
     chatInputFloating = obj.useMobileVisualRefreshConfig({ location: "MediaKeyboardButtonIcon" }).chatInputFloating;
-    let obj1 = _require(4050);
+    let obj1 = _require(4054);
     const fn = function s() {
       let tmp4 = _undefined === _undefined(outer1_2[5]).KeyboardTypes.MEDIA;
       if (!tmp4) {
@@ -47,8 +47,8 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     obj[0] = tmp6;
     obj[1] = _require(1579).KeyboardTypes;
     obj[2] = chatInputFloating;
-    obj[3] = _require(4190).withTiming;
-    obj[4] = _require(4193).timingStandard;
+    obj[3] = _require(4194).withTiming;
+    obj[4] = _require(4197).timingStandard;
     fn.__closure = obj;
     fn.__workletHash = 12686941860647;
     fn.__initData = closure_4;
@@ -57,7 +57,7 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     obj[0] = animatedStyle;
     obj1 = {};
     const merged1 = Object.assign(merged);
-    obj[1] = jsx(_require(10207).PlusLargeIcon, {});
-    return jsx(chatInputFloating(4050).View, { style: null, children: null });
+    obj[1] = jsx(_require(10224).PlusLargeIcon, {});
+    return jsx(chatInputFloating(4054).View, { style: null, children: null });
   }
 };

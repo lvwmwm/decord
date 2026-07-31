@@ -1,18 +1,18 @@
-// Module ID: 10631
-// Function ID: 10632
+// Module ID: 10649
+// Function ID: 10650
 // Name: send
-// Dependencies: [4092, 676, 10632, 10622, 10621, 2]
+// Dependencies: [4096, 676, 10650, 10640, 10639, 2]
 
-// Module 10631 (send)
+// Module 10649 (send)
 import { TransportTypes } from "RPC_SCOPE_CONFIG";
 import { RPCCloseCodes } from "ME";
 import "checkRpcVersion";
 
 class WindowProxySocket extends tmp2 {
   constructor(arg0) {
-    ({ source, postMessageToRPCClient, encoding, logger } = global);
+    ({ origin, postMessageToRPCClient, frameId, encoding, logger } = global);
     ({ postClose, onSendingToRPCClient } = global);
-    tmp = new tmp(TransportTypes.POST_MESSAGE, global.version, encoding, tmp2, new.target, tmp, new.target, source, postMessageToRPCClient, logger, encoding);
+    tmp = new tmp(TransportTypes.POST_MESSAGE, global.version, encoding, tmp2, new.target, tmp, new.target, origin, postMessageToRPCClient, frameId, logger, encoding);
     // ThrowIfThisInitialized (0x7c)
     items = ["etf", "json"];
     if (-1 === items.indexOf(encoding)) {
@@ -48,8 +48,9 @@ class WindowProxySocket extends tmp2 {
         throw tmp11;
       } else {
         tmp4 = tmp;
-        tmp.source = source;
+        tmp.origin = origin;
         tmp.postMessageToRPCClient = postMessageToRPCClient;
+        tmp.frameId = frameId;
         tmp.logger = logger;
         tmp.postClose = postClose;
         tmp.onSendingToRPCClient = onSendingToRPCClient;
@@ -67,8 +68,8 @@ prototype["send"] = function send(arg0) {
   if (onSendingToRPCClient != null) {
     onSendingToRPCClient(arg0, self.id);
   }
-  const items = [importDefault(10621).FRAME, arg0];
-  const result = self.postMessageToRPCClient(items, self.source.origin);
+  const items = [importDefault(10639).FRAME, arg0];
+  const result = self.postMessageToRPCClient(items, self.origin);
 };
 prototype["close"] = function close(arg0, arg1) {
   const self = this;
@@ -76,7 +77,7 @@ prototype["close"] = function close(arg0, arg1) {
     const obj = { code: null, message: null };
     obj[0] = arg0;
     obj[1] = arg1;
-    self.postClose(self.source, obj, self.postMessageToRPCClient);
+    self.postClose(self.origin, obj, self.postMessageToRPCClient);
   }
   self.closed = true;
 };

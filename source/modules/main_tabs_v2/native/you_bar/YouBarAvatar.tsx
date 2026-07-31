@@ -1,9 +1,9 @@
-// Module ID: 15252
-// Function ID: 15253
+// Module ID: 15280
+// Function ID: 15281
 // Name: YouBarAvatarLarge
-// Dependencies: [5, 32, 19, 17, 4867, 1874, 14121, 676, 21, 4189, 712, 589, 1297, 4534, 4050, 9082, 7967, 4599, 3893, 7966, 7932, 4158, 6608, 1959, 5273, 2]
+// Dependencies: [5, 32, 19, 17, 4871, 1874, 14143, 676, 21, 4193, 712, 589, 1297, 4538, 4054, 8373, 7974, 4603, 3897, 7973, 7939, 4162, 6614, 1959, 5277, 2]
 
-// Module 15252 (YouBarAvatarLarge)
+// Module 15280 (YouBarAvatarLarge)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "CutoutableAvatarDecoration";
@@ -192,7 +192,7 @@ function YouBarAvatarLarge(transitionState) {
     obj4[0] = obj5;
     obj2[2] = closure_21(sharedValue1, obj4);
     const items5 = [closure_21(tmp22Result, obj2), , , ];
-    const obj6 = { user: null, guildId: "Array", size: false, animate: true, needsOffscreenAlphaCompositing: null, status: null, statusSizeOverride: null, cutout: null, statusStyle: false };
+    const obj6 = { user: null, guildId: "Array", size: false, animate: true, needsOffscreenAlphaCompositing: null, status: null, statusSizeOverride: null, cutout: null, statusStyle: "done" };
     obj6[0] = stateFromStores;
     obj6[2] = closure_10;
     if (OFFLINE === StatusTypes.UNKNOWN) {

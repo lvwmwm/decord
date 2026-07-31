@@ -1,10 +1,10 @@
-// Module ID: 16571
-// Function ID: 16572
+// Module ID: 16600
+// Function ID: 16601
 // Name: useArchiveOrDelete
-// Dependencies: [5, 32, 19, 14225, 14240, 1236, 4529, 1297, 38, 3889, 2]
+// Dependencies: [5, 32, 19, 14248, 14263, 1236, 4533, 1297, 38, 3893, 2]
 // Exports: default
 
-// Module 16571 (useArchiveOrDelete)
+// Module 16600 (useArchiveOrDelete)
 import getSystemLocale from "getSystemLocale";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -141,19 +141,19 @@ export default function useArchiveOrDelete(guildId, groupListingId, editStateId)
     return applyArgumentsResult;
   }
   let stringResult3 = dependencyMap;
-  let obj = _require(14225);
+  let obj = _require(14248);
   const subscriptionListing = obj.useSubscriptionListing(editStateId);
-  const removeEditStateId = importAll(14240).useEditStateIds(groupListingId, guildId).removeEditStateId;
-  let obj2 = importAll(14240);
-  const deleteSubscriptionListing = _require(14225).useDeleteSubscriptionListing();
+  const removeEditStateId = importAll(14263).useEditStateIds(groupListingId, guildId).removeEditStateId;
+  let obj2 = importAll(14263);
+  const deleteSubscriptionListing = _require(14248).useDeleteSubscriptionListing();
   ({ error, deleteSubscriptionListing: closure_8, submitting } = deleteSubscriptionListing);
-  let obj3 = _require(14225);
-  const archiveSubscriptionListing = _require(14225).useArchiveSubscriptionListing();
+  let obj3 = _require(14248);
+  const archiveSubscriptionListing = _require(14248).useArchiveSubscriptionListing();
   let closure_9 = archiveSubscriptionListing.archiveSubscriptionListing;
   ({ submitting: submitting2, error: error2 } = archiveSubscriptionListing);
   let closure_10 = removeEditStateId(null);
-  let obj4 = _require(14225);
-  const first = callback(importAll(14240).useName(editStateId), 1)[0];
+  let obj4 = _require(14248);
+  const first = callback(importAll(14263).useName(editStateId), 1)[0];
   let archived;
   if (subscriptionListing != null) {
     archived = subscriptionListing.archived;
@@ -187,8 +187,8 @@ export default function useArchiveOrDelete(guildId, groupListingId, editStateId)
         if (null != tmp2) {
           ref.current = tmp2;
           const intl = guildId(1236).intl;
-          editStateId(3889).presentFailedToast(intl.string(guildId(1236).t.R0RpRX));
-          const obj = editStateId(3889);
+          editStateId(3893).presentFailedToast(intl.string(guildId(1236).t.R0RpRX));
+          const obj = editStateId(3893);
         }
       }, items);
       obj = { headerText: null, buttonText: null, descriptionText: null, handleArchiveOrDelete: null, deleting: null, archiving: null };

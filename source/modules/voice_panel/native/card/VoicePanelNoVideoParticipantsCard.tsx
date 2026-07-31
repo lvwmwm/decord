@@ -1,8 +1,8 @@
-// Module ID: 15959
-// Function ID: 15960
-// Dependencies: [19, 17, 21, 4189, 712, 10033, 4383, 5568, 4185, 1236, 2]
+// Module ID: 15987
+// Function ID: 15988
+// Dependencies: [19, 17, 21, 4193, 712, 10050, 4387, 5572, 4189, 1236, 2]
 
-// Module 15959
+// Module 15987
 import importAllResult from "noop";
 import { Pressable } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ obj[3] = { color: require("Themes").unsafe_rawColors.PRIMARY_860 };
 let closure_7 = createCacheKey.createStyles(obj);
 const obj2 = { color: require("Themes").unsafe_rawColors.PRIMARY_860 };
 const memoResult = importAllResult.memo(function VoicePanelNoVideoParticipantsCard() {
-  const channelId = importAllResult.useContext(importDefault(10033)).channelId;
+  const channelId = importAllResult.useContext(importDefault(10050)).channelId;
   const tmp = callback3();
   const items = [channelId];
   const callback = importAllResult.useCallback(() => {
@@ -33,17 +33,17 @@ const memoResult = importAllResult.memo(function VoicePanelNoVideoParticipantsCa
   obj = { style: tmp.label, variant: "text-md/semibold", color: "text-overlay-light", children: null };
   const intl = channelId(1236).intl;
   obj[3] = intl.string(channelId(1236).t["8eBJ73"]);
-  const items1 = [callback(channelId(4185).Text, obj), ];
+  const items1 = [callback(channelId(4189).Text, obj), ];
   obj = { style: tmp.button, onPress: callback, accessibilityRole: "button", accessibilityLabel: null, children: null };
   const intl2 = channelId(1236).intl;
   obj[3] = intl2.string(channelId(1236).t.kLQySL);
   const obj1 = { variant: "text-sm/semibold", style: tmp.buttonText, children: null };
   const intl3 = channelId(1236).intl;
   obj1[2] = intl3.string(channelId(1236).t.kLQySL);
-  obj[4] = callback(channelId(4185).Text, obj1);
+  obj[4] = callback(channelId(4189).Text, obj1);
   items1[1] = callback(Pressable, obj);
   obj[1] = items1;
-  return callback2(importDefault(5568), obj);
+  return callback2(importDefault(5572), obj);
 });
 let result = require("jsxProd").fileFinishedImporting("modules/voice_panel/native/card/VoicePanelNoVideoParticipantsCard.tsx");
 

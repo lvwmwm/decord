@@ -1,10 +1,10 @@
-// Module ID: 5522
-// Function ID: 5523
+// Module ID: 5526
+// Function ID: 5527
 // Name: useAuthorizedAppsTokens
-// Dependencies: [19, 5123, 589, 1351, 5523, 2]
+// Dependencies: [19, 5127, 589, 1351, 5527, 2]
 // Exports: useAuthorizedAppsToken
 
-// Module 5522 (useAuthorizedAppsTokens)
+// Module 5526 (useAuthorizedAppsTokens)
 import noop from "noop";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
 import { FetchState } from "recomputeFromAppTokens";
@@ -37,7 +37,7 @@ function useAuthorizedAppsTokens(noop, arg1) {
   const fetched = _require(stateFromStoresArray1[2]).useStateFromStores(items2, () => {
     let flag;
     if (closure_0 != null) {
-      flag = closure_0.every((applicationId) => fetchStateForApplication.getFetchStateForApplication(applicationId) === constants.FETCHED);
+      flag = closure_0.every((arg0) => fetchStateForApplication.getFetchStateForApplication(arg0) === constants.FETCHED);
     }
     if (flag == null) {
       flag = false;
@@ -50,7 +50,7 @@ function useAuthorizedAppsTokens(noop, arg1) {
   stateFromStoresArray1 = _require(stateFromStoresArray1[2]).useStateFromStoresArray(items4, () => {
     let found;
     if (closure_0 != null) {
-      found = closure_0.filter((applicationId) => fetchStateForApplication.getFetchStateForApplication(applicationId) === constants.NOT_FETCHED);
+      found = closure_0.filter((arg0) => fetchStateForApplication.getFetchStateForApplication(arg0) === constants.NOT_FETCHED);
     }
     if (found == null) {
       found = [];

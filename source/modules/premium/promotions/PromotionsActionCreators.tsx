@@ -1,10 +1,10 @@
-// Module ID: 6561
-// Function ID: 6562
+// Module ID: 6567
+// Function ID: 6568
 // Name: fetchActivePromotions
-// Dependencies: [5, 1946, 6260, 6259, 1876, 676, 709, 6562, 530, 5848, 1355, 1337, 6563, 2]
+// Dependencies: [5, 1946, 6266, 6265, 1876, 676, 709, 6568, 530, 5853, 1355, 1337, 6569, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchActiveBogoPromotion, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 6561 (fetchActivePromotions)
+// Module 6567 (fetchActivePromotions)
 import ME from "ME";
 import _getSystemLocale from "_getSystemLocale";
 import createFromServer from "createFromServer";
@@ -338,7 +338,7 @@ function _fetchClaimedOutboundPromotionCodes() {
             throw arg1;
           } else if (arg0 !== 2) {
             const body = arg1.body;
-            callback = body.map(callback(6563).claimedOutboundPromotionCodeFromServer);
+            callback = body.map(callback(6569).claimedOutboundPromotionCodeFromServer);
             obj = callback2(709);
             const obj4 = { type: "CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_SUCCESS", claimedOutboundPromotionCodes: null };
             obj4[1] = callback;

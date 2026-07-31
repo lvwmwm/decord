@@ -1,9 +1,9 @@
-// Module ID: 11249
-// Function ID: 11250
+// Module ID: 11267
+// Function ID: 11268
 // Name: PortalKeyboardBottomSheetHeader
-// Dependencies: [32, 19, 17, 9565, 21, 500, 4189, 712, 8233, 4586, 4050, 1348, 11250, 4534, 5498, 589, 5245, 4158, 10249, 1844, 4616, 3893, 1581, 1474, 4060, 4036, 3901, 4583, 9348, 5501, 2]
+// Dependencies: [32, 19, 17, 9580, 21, 500, 4193, 712, 8240, 4590, 4054, 1348, 11268, 4538, 5502, 589, 5249, 4162, 10267, 1844, 4620, 3897, 1581, 1474, 4064, 4040, 3905, 4587, 9363, 5505, 2]
 
-// Module 11249 (PortalKeyboardBottomSheetHeader)
+// Module 11267 (PortalKeyboardBottomSheetHeader)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "dismissGlobalKeyboard";
 import get_ActivityIndicator from "HapticFeedbackTypes";
@@ -23,13 +23,13 @@ function PortalKeyboardBottomSheetHeader(arg0) {
   let style;
   ({ style, handleCollapse } = arg0);
   const tmp = callback2();
-  let obj = require(4586) /* SCREEN_READER_ENABLED_GETTER */;
+  let obj = require(4590) /* SCREEN_READER_ENABLED_GETTER */;
   const items = [tmp.headerContainer, , ];
   let prop;
   if (obj.useIsScreenReaderEnabled()) {
     prop = tmp.headerContainerScreenReaderEnabled;
   }
-  obj = { style: items, children: tmp4(require(8233) /* TwinButtons */.ActionSheetDragHandle, { onPress: handleCollapse }) };
+  obj = { style: items, children: tmp4(require(8240) /* TwinButtons */.ActionSheetDragHandle, { onPress: handleCollapse }) };
   items[1] = prop;
   items[2] = style;
   return closure_7(closure_5, obj);
@@ -43,7 +43,7 @@ function PortalKeyboardBackground(arg0) {
   style[0] = style;
   style[1] = callback2().background;
   style[2] = roundingStyle;
-  return callback(importDefault(4050).View, { pointerEvents, style });
+  return callback(importDefault(4054).View, { pointerEvents, style });
 }
 let c4 = importAllResult;
 ({ Platform, View: c5 } = get_ActivityIndicator);

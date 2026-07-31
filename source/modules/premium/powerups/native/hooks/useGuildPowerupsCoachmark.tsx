@@ -1,10 +1,10 @@
-// Module ID: 15139
-// Function ID: 15140
+// Module ID: 15165
+// Function ID: 15166
 // Name: useGuildPowerupsCoachmark
-// Dependencies: [19, 4181, 1862, 4077, 676, 1369, 505, 21, 4189, 712, 589, 4125, 4096, 11601, 11583, 15140, 11567, 11609, 1236, 2255, 11611, 15141, 11608, 4080, 15137, 15142, 15143, 11638, 15144, 8427, 2]
+// Dependencies: [19, 4185, 1862, 4081, 676, 1369, 505, 21, 4193, 712, 589, 4129, 4100, 11618, 11600, 15166, 11584, 11626, 1236, 2257, 11628, 15167, 11625, 4084, 15163, 15168, 15169, 11656, 15170, 8440, 2]
 // Exports: default
 
-// Module 15139 (useGuildPowerupsCoachmark)
+// Module 15165 (useGuildPowerupsCoachmark)
 import messagesProxy from "messagesProxy";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -244,7 +244,7 @@ export default function useGuildPowerupsCoachmark(targetRef, arg1, type) {
           };
           obj9.title = found1.title;
           let str5 = "";
-          if (typeof found1.description !== "tee") {
+          if (typeof found1.description !== "__FORMATJS_LISTFORMAT_DATA__") {
             str5 = found1.description;
           }
           obj9.description = str5;

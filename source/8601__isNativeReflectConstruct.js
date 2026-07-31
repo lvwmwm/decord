@@ -1,17 +1,15 @@
 // Module ID: 8601
 // Function ID: 8602
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8543, 8602, 8552]
+// Dependencies: [41, 42, 93, 95, 98, 8557, 8580]
 
 // Module 8601 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
-import "noop";
-import { jsx } from "jsxProd";
 
-const Line = arg1;
+const FeImage = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class Line {
+class FeImage {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, Line);
+    tmp = _isNativeReflectConstruct(this, FeImage);
     tmp2 = __esModule;
-    obj = __esModule(Line);
+    obj = __esModule(FeImage);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,41 +49,19 @@ class Line {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Line, require("_isNativeReflectConstruct"));
-const items = [
-  {
-    key: "render",
-    value: function render() {
-      let x1;
-      let x2;
-      let y1;
-      let y2;
-      const self = this;
-      const props = this.props;
-      let obj = {};
-      ({ x1, y1, x2, y2 } = props);
-      const merged = Object.assign(self(8543).extract(this, props));
-      obj.x1 = x1;
-      obj.y1 = y1;
-      obj.x2 = x2;
-      obj.y2 = y2;
-      obj = {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      };
-      const obj2 = self(8543);
-      const merged1 = Object.assign(obj);
-      return jsx(importDefault(8602), {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      });
-    }
+require("_inherits")(FeImage, require("_isNativeReflectConstruct"));
+let obj = {
+  key: "render",
+  value: function render() {
+    const result = FeImage(8557).warnUnimplementedFilter();
+    return null;
   }
-];
-const importDefaultResultResult = importDefaultResult(Line, items);
-importDefaultResultResult.displayName = "Line";
-importDefaultResultResult.defaultProps = { x1: 0, y1: 0, x2: 0, y2: 0 };
+};
+const items = [obj];
+const importDefaultResultResult = importDefaultResult(FeImage, items);
+importDefaultResultResult.displayName = "FeImage";
+obj = {};
+const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

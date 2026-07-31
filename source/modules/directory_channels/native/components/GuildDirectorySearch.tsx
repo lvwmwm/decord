@@ -1,19 +1,19 @@
-// Module ID: 10050
-// Function ID: 10051
+// Module ID: 10067
+// Function ID: 10068
 // Name: DefaultState
-// Dependencies: [32, 19, 17, 1862, 10051, 676, 21, 4189, 712, 10054, 4185, 1236, 1297, 589, 10055, 10056, 1581, 10090, 10093, 5143, 10095, 10064, 10048, 698, 2]
+// Dependencies: [32, 19, 17, 1862, 10068, 676, 21, 4193, 712, 10071, 4189, 1236, 1297, 589, 10072, 10073, 1581, 10107, 10110, 5147, 10112, 10081, 10065, 698, 2]
 // Exports: default
 
-// Module 10050 (DefaultState)
+// Module 10067 (DefaultState)
 import _slicedToArray from "_slicedToArray";
 import HeaderBackImage from "HeaderBackImage";
-import get_ActivityIndicator from "module_10090";
+import get_ActivityIndicator from "module_10107";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getSearchState from "getSearchState";
 import ME from "ME";
 import jsxProd from "_addDirectoryGuildEntry";
 import createCacheKey from "createCacheKey";
-import ArrayResult from "module_10095";
+import ArrayResult from "module_10112";
 
 let Fonts;
 let closure_12;
@@ -27,7 +27,7 @@ function DefaultState() {
   const tmp = createCacheKey();
   const require = tmp;
   let obj = { style: tmp.emptyWrapper, children: null };
-  obj = { style: tmp.emptyStateImage, source: importDefault(10054) };
+  obj = { style: tmp.emptyStateImage, source: importDefault(10071) };
   const items = [callback(closure_7, obj), ];
   obj = { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -36,7 +36,7 @@ function DefaultState() {
       return outer1_12(tmp(outer1_3[12]).LegacyText, { style: tmp.proTip, children }, "protip");
     }
   });
-  items[1] = callback(require(4185) /* Text */.Text, obj);
+  items[1] = callback(require(4189) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(closure_6, obj);
 }
@@ -47,7 +47,7 @@ function EmptyState(channel) {
   let obj = channel(589);
   const items = [createGuildRecordFromRust];
   importDefault = obj.useStateFromStores(items, () => outer1_9.getGuild(channel.getGuildId()));
-  let obj1 = channel(10055);
+  let obj1 = channel(10072);
   const canCreateOrAddGuildInDirectory = obj1.useCanCreateOrAddGuildInDirectory(channel);
   const intl = channel(1236).intl;
   if (canCreateOrAddGuildInDirectory) {
@@ -62,13 +62,13 @@ function EmptyState(channel) {
     formatResult = intl.string(tmp2(1236).t.vYyEnv);
   }
   obj = { style: tmp.emptyWrapper, children: null };
-  obj1 = { style: tmp.emptyStateImage, source: importDefault(10054) };
+  obj1 = { style: tmp.emptyStateImage, source: importDefault(10071) };
   const items1 = [callback(closure_7, obj1), , ];
   const obj2 = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
   const intl2 = tmp2(1236).intl;
   obj2[3] = intl2.string(channel(1236).t["6HXiuE"]);
-  items1[1] = callback(channel(4185).Text, obj2);
-  items1[2] = callback(channel(4185).Text, { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default", children: formatResult });
+  items1[1] = callback(channel(4189).Text, obj2);
+  items1[2] = callback(channel(4189).Text, { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default", children: formatResult });
   obj[1] = items1;
   return callback2(closure_6, obj);
 }
@@ -85,7 +85,7 @@ createCacheKey[6] = { marginBottom: 4, textAlign: "center" };
 createCacheKey[7] = { fontFamily: Fonts.PRIMARY_BOLD, color: require("Themes").unsafe_rawColors.GREEN_360, textTransform: "uppercase" };
 createCacheKey = createCacheKey.createStyles(createCacheKey);
 let obj1 = { fontFamily: Fonts.PRIMARY_BOLD, color: require("Themes").unsafe_rawColors.GREEN_360, textTransform: "uppercase" };
-let closure_17 = require("module_10095").fill(null);
+let closure_17 = require("module_10112").fill(null);
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/directory_channels/native/components/GuildDirectorySearch.tsx");
 
 export default function GuildDirectorySearch(channel) {

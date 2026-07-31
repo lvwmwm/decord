@@ -1,9 +1,9 @@
-// Module ID: 15978
-// Function ID: 15979
+// Module ID: 16006
+// Function ID: 16007
 // Name: StreamPreview
-// Dependencies: [5, 32, 19, 17, 1371, 4203, 12779, 4208, 1218, 1372, 3817, 4204, 1874, 4205, 4262, 10034, 10037, 676, 12784, 21, 4189, 10040, 712, 10033, 5001, 4369, 4253, 589, 5568, 4185, 1236, 12025, 5521, 3807, 15969, 1474, 4050, 10600, 10636, 10666, 4717, 15967, 4600, 8423, 503, 6727, 8856, 4379, 5220, 9910, 10460, 5515, 5535, 698, 15935, 4599, 4534, 7676, 15857, 15979, 2]
+// Dependencies: [5, 32, 19, 17, 1371, 4207, 12804, 4212, 1218, 1372, 3821, 4208, 1874, 4209, 4266, 10051, 10054, 676, 12809, 21, 4193, 10057, 712, 10050, 5005, 4373, 4257, 589, 5572, 4189, 1236, 12043, 5525, 3811, 15997, 1474, 4054, 10618, 10654, 10684, 4721, 15995, 4604, 8436, 503, 6733, 8869, 4383, 5224, 9927, 10477, 5519, 5539, 698, 15963, 4603, 4538, 7684, 15885, 16007, 2]
 
-// Module 15978 (StreamPreview)
+// Module 16006 (StreamPreview)
 import set from "set";
 import useGetOrFetchApplications from "useGetOrFetchApplications";
 import importAllResult from "jsxProd";
@@ -280,7 +280,7 @@ function RoomMembersSection(title) {
     }
     return items;
   })();
-  return callback(require(8856) /* VoiceBadges */.VoicePanelFormSection, obj);
+  return callback(require(8869) /* VoiceBadges */.VoicePanelFormSection, obj);
 }
 function RoomMembers(members) {
   let blockedMembers;
@@ -536,9 +536,9 @@ let closure_28 = importAllResult.memo((hasMembers) => {
     obj[2] = tmp.subheading;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[3] = intl.string(require(1236) /* getSystemLocale */.t.sS2J0G);
-    obj[1] = callback(require(4185) /* Text */.Text, obj);
-    tmp2 = callback(importDefault(5568), obj);
-    const tmp6 = importDefault(5568);
+    obj[1] = callback(require(4189) /* Text */.Text, obj);
+    tmp2 = callback(importDefault(5572), obj);
+    const tmp6 = importDefault(5572);
   }
   return tmp2;
 });
@@ -555,7 +555,7 @@ let closure_32 = importAllResult.memo((blockedUserIds) => {
   obj[0] = require(503) /* encodeProperties */.ImpressionNames.VOICE_CHANNEL_BLOCKED_USER_WARNING;
   obj = { channel_id: channelId, blocked_user_ids: Array.from(blockedUserIds), warning_surface: constants2.PRE_JOIN_SHEET };
   obj[1] = obj;
-  importDefault(8423)(obj);
+  importDefault(8436)(obj);
   const size = ignoredUserIds.size;
   const size2 = blockedUserIds.size;
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -567,7 +567,7 @@ let closure_32 = importAllResult.memo((blockedUserIds) => {
     }
     obj = { style: null, children: null };
     obj[0] = tmp.blockedMemberWarning;
-    const items = [callback(tmp5(6727).CircleErrorIcon, { color: "text-feedback-warning" }), ];
+    const items = [callback(tmp5(6733).CircleErrorIcon, { color: "text-feedback-warning" }), ];
     const obj1 = { variant: "text-sm/bold", color: "interactive-text-active", style: null, children: null };
     obj1[2] = { flexShrink: 1 };
     const items1 = [stringResult1, " ", ];
@@ -575,13 +575,13 @@ let closure_32 = importAllResult.memo((blockedUserIds) => {
     if (null != stringResult) {
       const obj2 = { variant: "heading-sm/semibold", children: null };
       obj2[1] = stringResult;
-      tmp11Result = callback(tmp5(4185).Text, obj2);
+      tmp11Result = callback(tmp5(4189).Text, obj2);
     }
     items1[2] = tmp11Result;
     obj1[3] = items1;
-    items[1] = closure_24(tmp5(4185).Text, obj1);
+    items[1] = closure_24(tmp5(4189).Text, obj1);
     obj[1] = items;
-    return closure_24(tmp2(5568), obj);
+    return closure_24(tmp2(5572), obj);
   }
   if (size > 0) {
     const intl3 = tmp5(1236).intl;
@@ -632,7 +632,7 @@ let closure_35 = importAllResult.memo((channelId) => {
   }, items1)) {
     obj = { style: null };
     obj[0] = tmp.consolePreJoinPadding;
-    tmp3 = callback(importDefault(5568), obj);
+    tmp3 = callback(importDefault(5572), obj);
   }
   return tmp3;
 });
@@ -693,10 +693,10 @@ let closure_37 = { code: "function VoicePanelPreJoinContentTsx3(){const{windowDi
 let closure_38 = { code: "function VoicePanelPreJoinContentTsx4(finished=false){const{transitionState,TransitionStates,runOnJS,transitionCleanUp}=this.__closure;finished&&transitionState===TransitionStates.YEETED&&runOnJS(transitionCleanUp)();}" };
 let obj4 = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8, padding: require("Themes").space.PX_8, borderRadius: require("Themes").radii.xs, borderColor: require("Themes").colors.ICON_FEEDBACK_WARNING, borderWidth: 1, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_WARNING, marginHorizontal: require("Themes").space.PX_16 };
 const memoResult = importAllResult.memo(function VoicePanelPreJoinWrapper() {
-  const context = importAllResult.useContext(guildId(10033));
+  const context = importAllResult.useContext(guildId(10050));
   const channelId = context.channelId;
   guildId = context.guildId;
-  const tmp2 = guildId(15857)(channelId);
+  const tmp2 = guildId(15885)(channelId);
   const dependencyMap = tmp2;
   let obj = channelId(589);
   let items = [getVoiceStatesForGuild, init, participantFromServer, reset];
@@ -737,9 +737,9 @@ const memoResult = importAllResult.memo(function VoicePanelPreJoinWrapper() {
       obj[4] = ignoredUsersForVoiceChannel;
       return obj;
     }
-  }, items1, channelId(15979).areVoicePanelPreJoinContentPropsEqual);
+  }, items1, channelId(16007).areVoicePanelPreJoinContentPropsEqual);
   obj = { item: stateFromStores, renderItem };
-  return callback(channelId(4534).TransitionItem, obj);
+  return callback(channelId(4538).TransitionItem, obj);
 });
 let result = require("noop").fileFinishedImporting("modules/voice_panel/native/prejoin/VoicePanelPreJoinContent.tsx");
 

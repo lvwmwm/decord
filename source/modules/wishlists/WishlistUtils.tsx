@@ -1,10 +1,10 @@
-// Module ID: 12170
-// Function ID: 12171
+// Module ID: 12188
+// Function ID: 12189
 // Name: createNitroSuggestedSku
-// Dependencies: [32, 4228, 8674, 8675, 8676, 676, 1876, 1236, 5666, 3835, 2]
-// Exports: buildReorderedNitroFirstWishlistItems, buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
+// Dependencies: [32, 4232, 8687, 8688, 8689, 676, 1876, 1236, 5670, 3839, 2]
+// Exports: buildReorderedNitroFirstWishlistItems, buildReorderedOwnedItemsLastWishlistItems, buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
 
-// Module 12170 (createNitroSuggestedSku)
+// Module 12188 (createNitroSuggestedSku)
 import _slicedToArray from "_slicedToArray";
 import createFromServer from "createFromServer";
 import { isCollectiblesWishlistItemRecord as closure_5 } from "createCollectiblesItemFromServerResponse";
@@ -40,8 +40,8 @@ export const isEligibleWishlistItemOnMobile = function isEligibleWishlistItemOnM
       let prop = isWishlistOwner.isSocialLayerStorefrontMobilePurchasingEnabled;
       if (prop) {
         if (!isWishlistOwner) {
-          isWishlistOwner = require(5666) /* useSKUPrice */.isSlayerSkuAvailableOnThisPlatform(sku.sku);
-          const obj = require(5666) /* useSKUPrice */;
+          isWishlistOwner = require(5670) /* useSKUPrice */.isSlayerSkuAvailableOnThisPlatform(sku.sku);
+          const obj = require(5670) /* useSKUPrice */;
         }
         prop = isWishlistOwner;
       }
@@ -103,4 +103,25 @@ export const buildReorderedNitroFirstWishlistItems = function buildReorderedNitr
     HermesBuiltin.arraySpread(items, 1);
     return items1;
   }
+};
+export const buildReorderedOwnedItemsLastWishlistItems = function buildReorderedOwnedItemsLastWishlistItems(items) {
+  let tmp = items;
+  items = [];
+  const items1 = [];
+  for (const item10009 of arg0) {
+    let tmp2 = item10009;
+    let arr3 = items;
+    if (arg1(item10009)) {
+      arr3 = items1;
+    }
+    let tmp3 = item10009;
+    let arr = arr3.push(tmp2);
+    continue;
+  }
+  if (0 !== items1.length) {
+    const items2 = [];
+    HermesBuiltin.arraySpread(items1, HermesBuiltin.arraySpread(items, 0));
+    tmp = items2;
+  }
+  return tmp;
 };

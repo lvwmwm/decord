@@ -1,9 +1,9 @@
-// Module ID: 5932
-// Function ID: 5933
+// Module ID: 5938
+// Function ID: 5939
 // Name: hasBasicChannelChanged
-// Dependencies: [32, 5, 4865, 1376, 1218, 1372, 1935, 1862, 3817, 1373, 3, 1907, 5933, 506, 3825, 2]
+// Dependencies: [32, 5, 4869, 1376, 1218, 1372, 1935, 1862, 3821, 1373, 3, 1907, 5939, 506, 3829, 2]
 
-// Module 5932 (hasBasicChannelChanged)
+// Module 5938 (hasBasicChannelChanged)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -372,7 +372,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
                             outer2_15.warn("couldn't optimstically write basic_channel:", closure_1);
                             c6 = 3;
                             const obj2 = { value: null, done: true };
-                            obj2[0] = { v: "Array" };
+                            obj2[0] = { v: "r" };
                             return obj2;
                           } else if (2 === tmp7) {
                             if (arg0 === 1) {

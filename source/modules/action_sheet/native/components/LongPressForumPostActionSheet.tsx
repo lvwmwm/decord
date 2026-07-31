@@ -1,10 +1,10 @@
-// Module ID: 10361
-// Function ID: 10362
+// Module ID: 10379
+// Function ID: 10380
 // Name: ForumPostLongPressActionSheet
-// Dependencies: [19, 3818, 3819, 6064, 1218, 1862, 676, 1379, 21, 10209, 1236, 8729, 5126, 4131, 6074, 10225, 4153, 4143, 10362, 4709, 9098, 9563, 11, 5535, 9007, 7683, 10364, 4157, 9872, 1959, 4133, 9305, 10223, 10301, 10226, 10366, 9975, 4528, 4148, 5713, 1297, 6773, 5543, 3889, 589, 6062, 6046, 9129, 3862, 4380, 10368, 5566, 5551, 1577, 10369, 5553, 2]
+// Dependencies: [19, 3822, 3823, 6070, 1218, 1862, 676, 1379, 21, 10226, 1236, 8742, 5130, 4135, 6080, 10243, 4157, 4147, 10380, 4713, 9111, 9578, 11, 5539, 9020, 7691, 10382, 4161, 9889, 1959, 4137, 9320, 10241, 10319, 10244, 10384, 9992, 4532, 4152, 5718, 1297, 9680, 5547, 3893, 589, 6068, 6052, 9142, 3866, 4384, 10386, 5570, 5555, 1577, 10387, 5557, 2]
 // Exports: default
 
-// Module 10361 (ForumPostLongPressActionSheet)
+// Module 10379 (ForumPostLongPressActionSheet)
 import "LockIcon";
 import initialize from "initialize";
 import storeThread from "storeThread";
@@ -336,8 +336,9 @@ export default function ForumPostLongPressActionSheet(thread) {
             let disableColor;
             let isDestructive;
             let label;
+            let trailing;
             ({ label, onPress: closure_0 } = arg0);
-            ({ IconComponent, disableColor, isDestructive } = arg0);
+            ({ IconComponent, disableColor, isDestructive, trailing } = arg0);
             const intl = outer1_0(outer1_2[10]).intl;
             let tmp3 = label === intl.string(outer1_0(outer1_2[10]).t.nEOg1N);
             if (!tmp3) {
@@ -348,6 +349,7 @@ export default function ForumPostLongPressActionSheet(thread) {
               variant: str,
               icon: outer1_13(outer1_0(outer1_2[55]).ActionSheetRow.Icon, { IconComponent, disableColor }),
               label,
+              trailing,
               onPress() {
                 callback();
                 outer1_1();

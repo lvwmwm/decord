@@ -1,9 +1,9 @@
-// Module ID: 6045
-// Function ID: 6046
+// Module ID: 6051
+// Function ID: 6052
 // Name: experiment
-// Dependencies: [4101, 2]
+// Dependencies: [4105, 2]
 
-// Module 6045 (experiment)
+// Module 6051 (experiment)
 import createExperiment from "createExperiment";
 
 const items = [{ id: 1, label: "Enable official messages", config: { enabled: true } }];

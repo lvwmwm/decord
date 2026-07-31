@@ -1,9 +1,9 @@
-// Module ID: 12752
-// Function ID: 12753
+// Module ID: 12777
+// Function ID: 12778
 // Name: map
-// Dependencies: [8303, 4088, 589, 709, 2]
+// Dependencies: [8310, 4092, 589, 709, 2]
 
-// Module 12752 (map)
+// Module 12777 (map)
 import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID";
 import { Store } from "initialize";
 
@@ -29,7 +29,7 @@ prototype["handleSearchStart"] = function handleSearchStart() {
 prototype["handleSearchFailure"] = function handleSearchFailure(arg0) {
   this.isFetching = false;
   this.isInitialFetchComplete = true;
-  const aPIError = new require(4088) /* V6OrEarlierAPIError */.APIError(arg0);
+  const aPIError = new require(4092) /* V6OrEarlierAPIError */.APIError(arg0);
   this.error = aPIError;
 };
 prototype["handleSearchSuccess"] = function handleSearchSuccess(arg0) {
@@ -153,7 +153,7 @@ const globalDiscoveryServersSearchResultsStore = new GlobalDiscoveryServersSearc
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "find") {
+      if (typeof SearchState !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);
@@ -174,7 +174,7 @@ const globalDiscoveryServersSearchResultsStore = new GlobalDiscoveryServersSearc
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "find") {
+      if (typeof SearchState !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);
@@ -196,7 +196,7 @@ const globalDiscoveryServersSearchResultsStore = new GlobalDiscoveryServersSearc
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "find") {
+      if (typeof SearchState !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);
@@ -263,7 +263,7 @@ let obj = {
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "find") {
+      if (typeof SearchState !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);
@@ -284,7 +284,7 @@ let obj = {
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "find") {
+      if (typeof SearchState !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);
@@ -306,7 +306,7 @@ let obj = {
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "find") {
+      if (typeof SearchState !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);

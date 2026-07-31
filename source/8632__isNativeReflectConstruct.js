@@ -1,7 +1,7 @@
 // Module ID: 8632
 // Function ID: 8633
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8544, 8633, 8543, 8552]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8633, 8618, 8565]
 
 // Module 8632 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const Use = arg1;
+const RadialGradient = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class Use {
+class RadialGradient {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, Use);
+    tmp = _isNativeReflectConstruct(this, RadialGradient);
     tmp2 = __esModule;
-    obj = __esModule(Use);
+    obj = __esModule(RadialGradient);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,53 +51,56 @@ class Use {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Use, require("_isNativeReflectConstruct"));
+require("_inherits")(RadialGradient, require("_isNativeReflectConstruct"));
 const items = [
   {
     key: "render",
     value: function render() {
-      let children;
-      let height;
-      let width;
-      let x;
-      let y;
+      let cx;
+      let cy;
+      let fx;
+      let r;
+      let rx;
+      let ry;
       const self = this;
       const props = this.props;
-      let str = props.href;
-      ({ children, x, y, width, height } = props);
-      if (undefined === str) {
-        str = props.xlinkHref;
+      ({ rx, ry, r, cx, cy, fx } = props);
+      if (undefined === fx) {
+        fx = cx;
       }
-      let match = str;
-      if (str) {
-        match = str.match(self(8544).idPattern);
+      let fy = props.fy;
+      let obj = { fx, fy: null, rx: null, ry: null, cx: null, cy: null };
+      if (undefined === fy) {
+        fy = cy;
       }
-      let tmp4 = match;
-      if (match) {
-        tmp4 = match[1];
+      obj[1] = fy;
+      if (!rx) {
+        rx = r;
       }
-      if (!tmp4) {
-        const _console = console;
-        console.warn(`Invalid \`href\` prop for \`Use\` element, expected a href like "#id", but got: "${str}"`);
+      obj[2] = rx;
+      if (!ry) {
+        ry = r;
       }
-      let obj = { href: tmp4, x, y, width, height };
+      obj[3] = ry;
+      obj[4] = cx;
+      obj[5] = cy;
       obj = {
         ref(arg0) {
           return self.refMethod(arg0);
         }
       };
-      const tmp7 = importDefault(8633);
-      const merged = Object.assign(self(8543).withoutXY(this, props));
-      const merged1 = Object.assign(obj);
-      obj.children = children;
-      return <tmp7 ref={function ref(arg0) {
-        return self.refMethod(arg0);
-      }} />;
+      const merged = Object.assign(obj);
+      const merged1 = Object.assign(self(8618)(props, this));
+      return jsx(self(8633), {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      });
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Use, items);
-importDefaultResultResult.displayName = "Use";
-importDefaultResultResult.defaultProps = { x: 0, y: 0, width: 0, height: 0 };
+const importDefaultResultResult = importDefaultResult(RadialGradient, items);
+importDefaultResultResult.displayName = "RadialGradient";
+importDefaultResultResult.defaultProps = { cx: "50%", cy: "50%", r: "50%" };
 
 export default importDefaultResultResult;

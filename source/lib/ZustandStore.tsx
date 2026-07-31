@@ -1,10 +1,10 @@
-// Module ID: 4057
-// Function ID: 4058
+// Module ID: 4061
+// Function ID: 4062
 // Name: defaultStatesAreEqual
-// Dependencies: [700, 4058, 705, 2]
+// Dependencies: [700, 4062, 705, 2]
 // Exports: createZustandStore
 
-// Module 4057 (defaultStatesAreEqual)
+// Module 4061 (defaultStatesAreEqual)
 function defaultStatesAreEqual(arg0, arg1) {
   return arg0 === arg1;
 }
@@ -13,7 +13,7 @@ const result = require("batchUpdates").fileFinishedImporting("lib/ZustandStore.t
 export const createZustandStore = function createZustandStore(arg0) {
   const _require = arg0;
   let obj = _require(700);
-  const dependencyMap = obj.createWithEqualityFn(_require(4058).subscribeWithSelector((arg0, arg1, arg2) => {
+  const dependencyMap = obj.createWithEqualityFn(_require(4062).subscribeWithSelector((arg0, arg1, arg2) => {
     let callback = arg0;
     return callback((arg0) => {
       const callback = arg0;
@@ -60,7 +60,7 @@ export const createZustandStore = function createZustandStore(arg0) {
     setState,
     resetState() {
       const initialState = store.getInitialState();
-      if (typeof setState !== "find") {
+      if (typeof setState !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       callback(store[2]).batchUpdates(() => outer1_1.setState(initialState));

@@ -1,13 +1,13 @@
-// Module ID: 14849
-// Function ID: 14850
+// Module ID: 14872
+// Function ID: 14873
 // Name: getAuthComponent
-// Dependencies: [32, 19, 17, 1218, 14850, 676, 21, 4189, 500, 4169, 13211, 14851, 14852, 14910, 15562, 15567, 15570, 15607, 15631, 9279, 15685, 15688, 15692, 15694, 15723, 15728, 4048, 1478, 1579, 4384, 9114, 15729, 15777, 647, 10512, 4043, 5570, 10892, 15623, 15780, 15817, 10687, 15819, 10180, 2]
+// Dependencies: [32, 19, 17, 1218, 14873, 676, 21, 4193, 500, 4173, 13235, 14874, 14875, 14933, 15590, 15595, 15598, 15635, 15659, 9292, 15713, 15716, 15720, 15722, 15751, 15756, 4052, 1478, 1579, 4388, 9127, 15757, 15805, 647, 10530, 4047, 5574, 10910, 15651, 15808, 15845, 10705, 15847, 10197, 2]
 // Exports: getChannelScreen
 
-// Module 14849 (getAuthComponent)
+// Module 14872 (getAuthComponent)
 import useNativeThemeUpdater from "useNativeThemeUpdater";
 import importAllResult from "HeaderWithBorder";
-import { View } from "module_15607";
+import { View } from "module_15635";
 import fetchFingerprint from "fetchFingerprint";
 import { StackNavigationAnimationSettings as closure_7 } from "StackNavigationAnimationSettings";
 import ME from "ME";
@@ -23,49 +23,49 @@ let metroImportAll;
 let unpackModuleId;
 let require = arg1;
 function getAuthComponent() {
-  return require(14852) /* NavigatorWithCaptchaHook */.default;
+  return require(14875) /* NavigatorWithCaptchaHook */.default;
 }
 function getTabsComponent() {
-  return require(14910).default;
+  return require(14933).default;
 }
 function getChannelComponent() {
   return View;
 }
 function WrappedAutoAnalytics() {
-  return callback2(require(15562) /* componentDidMount */.default, {});
+  return callback2(require(15590) /* componentDidMount */.default, {});
 }
 function getMemberVerificationComponent() {
-  return require(15567) /* Loading */.default;
+  return require(15595) /* Loading */.default;
 }
 function getFriendsNavigatorComponent() {
-  return require(15570) /* RequestsSettingsModalButton */.default;
+  return require(15598) /* RequestsSettingsModalButton */.default;
 }
 function getYouComponent() {
-  return require(15607).default;
+  return require(15635).default;
 }
 function getChannelDetailsComponent() {
-  return require(15631) /* ConnectedCreateThreadHeaderButton */.default;
+  return require(15659) /* ConnectedCreateThreadHeaderButton */.default;
 }
 function getConversationsComponent() {
-  return require(9279) /* HeaderWithBorder */.default;
+  return require(9292) /* HeaderWithBorder */.default;
 }
 function getSearchComponent() {
-  return require(15685).default;
+  return require(15713).default;
 }
 function getContextMenuCommandNavigatorComponent() {
-  return require(15688) /* ContextMenuCommandNavigator */.default;
+  return require(15716) /* ContextMenuCommandNavigator */.default;
 }
 function getModalComponent() {
-  return require(15692) /* Modal */.default;
+  return require(15720) /* Modal */.default;
 }
 function getMessageRequestsComponent() {
-  return require(15694) /* MessageRequestsNavigator */.default;
+  return require(15722) /* MessageRequestsNavigator */.default;
 }
 function getSettingsComponent() {
-  return require(15723) /* Settings */.default;
+  return require(15751) /* Settings */.default;
 }
 function getAccountStanding() {
-  return require(15728) /* SuspendedUserSafetyHubPage */.default;
+  return require(15756) /* SuspendedUserSafetyHubPage */.default;
 }
 let c4 = importAllResult;
 ({ AnalyticEvents: metroImportAll, DrawerSourceTypes: c9 } = ME);
@@ -99,7 +99,7 @@ function getChannelScreen() {
   };
   obj = {
     beforeRemove(data) {
-      let obj = animation(4048);
+      let obj = animation(4052);
       if (null != obj.getBestActiveInput()) {
         obj = { type: null };
         obj[0] = tmp(1579).KeyboardTypes.SYSTEM;
@@ -119,7 +119,7 @@ function getChannelScreen() {
       } else {
         SWIPE = constants2.SWIPE;
       }
-      callback(4384).trackWithMetadata(constants.CHANNEL_BACK_NAVIGATED, { source: SWIPE });
+      callback(4388).trackWithMetadata(constants.CHANNEL_BACK_NAVIGATED, { source: SWIPE });
     }
   };
   return callback2(Screen.Screen, obj);
@@ -183,7 +183,7 @@ export default importAllResult.memo(function StackNavigator() {
               if (closure_15) {
                 str = "default";
               }
-              const merged = Object.assign(animation(9114).getDefaultStackHeaderProps(navigation.navigation));
+              const merged = Object.assign(animation(9127).getDefaultStackHeaderProps(navigation.navigation));
               const merged1 = Object.assign(closure_7);
               return { orientation: str, headerShown: false };
             },
@@ -230,7 +230,7 @@ export default importAllResult.memo(function StackNavigator() {
         name: "conversations",
         getComponent: outer1_26,
         options() {
-          return callback2(10180)();
+          return callback2(10197)();
         }
       }),
       outer1_10(outer1_16.Screen, { name: "auth", getComponent: outer1_18, options: outer1_30 }),
@@ -292,7 +292,7 @@ export default importAllResult.memo(function StackNavigator() {
           str = "modal";
         }
         const obj = {};
-        const merged = Object.assign(callback2(10180)({ presentation: str }));
+        const merged = Object.assign(callback2(10197)({ presentation: str }));
         const params3 = route.params;
         let presentation;
         if (params3 != null) {
@@ -318,7 +318,7 @@ export default importAllResult.memo(function StackNavigator() {
             if (closure_15) {
               str = "default";
             }
-            const merged = Object.assign(animation(9114).getDefaultStackHeaderProps(navigation.navigation));
+            const merged = Object.assign(animation(9127).getDefaultStackHeaderProps(navigation.navigation));
             const merged1 = Object.assign(closure_7);
             return { orientation: str, headerShown: false };
           },
@@ -365,7 +365,7 @@ export default importAllResult.memo(function StackNavigator() {
       name: "conversations",
       getComponent: outer1_26,
       options() {
-        return callback2(10180)();
+        return callback2(10197)();
       }
     };
     const obj5 = { name: "auth", getComponent: outer1_18, options: outer1_30 };
@@ -416,13 +416,13 @@ export default importAllResult.memo(function StackNavigator() {
     items1[7] = outer1_10(outer1_16.Screen, {
       name: "settings",
       options() {
-        let obj = callback(4169);
+        let obj = callback(4173);
         obj = undefined;
         if (obj.isIpadOS()) {
           obj = { presentation: "modal" };
         }
         obj = {};
-        const merged = Object.assign(callback2(10180)(obj));
+        const merged = Object.assign(callback2(10197)(obj));
         obj.animation = "slide_from_bottom";
         obj.fullScreenGestureEnabled = true;
         return obj;
@@ -433,19 +433,19 @@ export default importAllResult.memo(function StackNavigator() {
       name: "sidebar",
       getComponent: outer1_25,
       options() {
-        return callback2(10180)({ lockOrientation: false });
+        return callback2(10197)({ lockOrientation: false });
       }
     });
     const obj13 = {
       name: "settings",
       options() {
-        let obj = callback(4169);
+        let obj = callback(4173);
         obj = undefined;
         if (obj.isIpadOS()) {
           obj = { presentation: "modal" };
         }
         obj = {};
-        const merged = Object.assign(callback2(10180)(obj));
+        const merged = Object.assign(callback2(10197)(obj));
         obj.animation = "slide_from_bottom";
         obj.fullScreenGestureEnabled = true;
         return obj;
@@ -456,7 +456,7 @@ export default importAllResult.memo(function StackNavigator() {
       name: "sidebar",
       getComponent: outer1_25,
       options() {
-        return callback2(10180)({ lockOrientation: false });
+        return callback2(10197)({ lockOrientation: false });
       }
     };
     tmp5Result = outer1_10(first[8]);
@@ -481,7 +481,7 @@ export default importAllResult.memo(function StackNavigator() {
           }
           str2 = str3;
         }
-        const merged = Object.assign(callback2(10180)({ presentation: str2 }));
+        const merged = Object.assign(callback2(10197)({ presentation: str2 }));
         return obj;
       },
       getComponent: outer1_29

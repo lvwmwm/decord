@@ -1,9 +1,9 @@
-// Module ID: 6850
-// Function ID: 6851
+// Module ID: 6858
+// Function ID: 6859
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6850 (metadata)
+// Module 6858 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarGraggleExample-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/be3f8e2bf66cf75c137ecc56a599765fc34e2ee70171b081f9837fe2cfc15726.png";

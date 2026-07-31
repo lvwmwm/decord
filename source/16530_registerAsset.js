@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset";
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images", width: 71, height: 54, scales: [2, 3], hash: "9e37ee2a11d88922a3b56da1b883c062", name: "asset_role_subscription_megaphone", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/guild_settings/community_settings", width: 88, height: 80, scales: [2, 3], hash: "b14cf67ed38d1ab1d1a28d6633250b87", name: "safety_check_light", type: "png" });

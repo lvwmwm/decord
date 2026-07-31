@@ -1,10 +1,10 @@
-// Module ID: 4216
-// Function ID: 4217
+// Module ID: 4220
+// Function ID: 4221
 // Name: useIsRiotSocialSDKMigrationEnabled
 // Dependencies: [1452, 2]
 // Exports: getIsRiotSocialSDKMigrationEnabled, useIsRiotSocialSDKMigrationEnabled
 
-// Module 4216 (useIsRiotSocialSDKMigrationEnabled)
+// Module 4220 (useIsRiotSocialSDKMigrationEnabled)
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";

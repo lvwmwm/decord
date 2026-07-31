@@ -1,9 +1,9 @@
-// Module ID: 16293
-// Function ID: 16294
+// Module ID: 16322
+// Function ID: 16323
 // Name: handleFocusParticipant
-// Dependencies: [4261, 4202, 5134, 2]
+// Dependencies: [4265, 4206, 5138, 2]
 
-// Module 16293 (handleFocusParticipant)
+// Module 16322 (handleFocusParticipant)
 import createRTCConnection from "createRTCConnection";
 import getParticipants from "getParticipants";
 import "initialize";

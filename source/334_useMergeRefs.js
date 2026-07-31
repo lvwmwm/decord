@@ -17,9 +17,9 @@ export default function useMergeRefs() {
     let closure_1 = items.map((arg0) => {
       let closure_0 = arg0;
       if (null != arg0) {
-        if (typeof arg0 === "find") {
+        if (typeof arg0 === "fileFinishedImporting") {
           let fn = arg0(closure_0);
-          if (typeof fn !== "find") {
+          if (typeof fn !== "fileFinishedImporting") {
             fn = () => {
               callback(null);
             };

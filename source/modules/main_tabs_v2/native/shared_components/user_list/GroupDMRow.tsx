@@ -1,10 +1,10 @@
-// Module ID: 9089
-// Function ID: 9090
+// Module ID: 9100
+// Function ID: 9101
 // Name: GroupDMRow
-// Dependencies: [19, 8809, 21, 4380, 9090, 1297, 9091, 4185, 9088, 5220, 2]
+// Dependencies: [19, 8822, 21, 4384, 9101, 1297, 9102, 4189, 9099, 5224, 2]
 // Exports: default
 
-// Module 9089 (GroupDMRow)
+// Module 9100 (GroupDMRow)
 import noop from "noop";
 import { UserRowModes } from "UserRowModes";
 import { jsx } from "jsxProd";
@@ -28,7 +28,7 @@ export default function GroupDMRow(channel) {
   }
   const onPress = channel.onPress;
   const merged = Object.assign(channel, Object.create(null));
-  let str = onPress(4380)(channel);
+  let str = onPress(4384)(channel);
   const items = [channel, onPress];
   const callback = React.useCallback(() => {
     if (onPress != null) {
@@ -38,8 +38,8 @@ export default function GroupDMRow(channel) {
   let obj = { size: null, channel: null };
   obj[0] = channel(1297).AvatarSizes.REFRESH_MEDIUM_32;
   obj[1] = channel;
-  const tmp6 = onPress(9090);
-  let obj1 = channel(9091);
+  const tmp6 = onPress(9101);
+  let obj1 = channel(9102);
   const recipientsLabel = obj1.useRecipientsLabel(channel);
   obj = {};
   const merged1 = Object.assign(merged);
@@ -48,10 +48,10 @@ export default function GroupDMRow(channel) {
   if (null != recipientsLabel) {
     obj = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: null };
     obj[3] = recipientsLabel;
-    tmp5Result = tmp5(tmp7(4185).Text, obj);
+    tmp5Result = tmp5(tmp7(4189).Text, obj);
   }
   obj.subLabel = tmp5Result;
-  obj.icon = jsx(onPress(9090), {});
+  obj.icon = jsx(onPress(9101), {});
   obj.onPress = callback;
   if (str == null) {
     str = "";
@@ -63,11 +63,11 @@ export default function GroupDMRow(channel) {
     obj1 = {};
     const merged2 = Object.assign(obj);
     obj1.checked = flag;
-    tmp5Result = tmp5(tmp7(9088).TableCheckboxRow, obj1);
+    tmp5Result = tmp5(tmp7(9099).TableCheckboxRow, obj1);
   } else {
     const obj2 = {};
     const merged3 = Object.assign(obj);
-    tmp5Result = tmp5(tmp7(5220).TableRow, obj2);
+    tmp5Result = tmp5(tmp7(5224).TableRow, obj2);
   }
   return tmp5Result;
 };

@@ -734,7 +734,7 @@ class SafetyState$Type extends MessageType6 {
 }
 const prototype6 = SafetyState$Type.prototype;
 prototype6["create"] = function create(arr) {
-  let obj = { state: { oneofKind: "Array" }, reason: 0, annotations: [] };
+  let obj = { state: { oneofKind: "r" }, reason: 0, annotations: [] };
   const _Object = Object;
   obj = { enumerable: false, value: this };
   _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);

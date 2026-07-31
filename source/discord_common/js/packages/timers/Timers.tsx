@@ -1,10 +1,10 @@
-// Module ID: 4074
-// Function ID: 4075
+// Module ID: 4078
+// Function ID: 4079
 // Name: start
 // Dependencies: [5, 2]
 // Exports: timeoutPromise
 
-// Module 4074 (start)
+// Module 4078 (start)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 class Timeout {
@@ -44,7 +44,7 @@ class DelayedCall {
     obj._delay = global;
     obj._handler = arg1;
     tmp2 = Timeout;
-    if (typeof Timeout !== "find") {
+    if (typeof Timeout !== "fileFinishedImporting") {
       str = "Trying to call a non-function";
       throwTypeErrorResult = HermesBuiltin.throwTypeError();
     }
@@ -118,7 +118,7 @@ class BatchInvocationManager {
     if (num == null) {
       num = 32;
     }
-    if (typeof tmp4 !== "find") {
+    if (typeof tmp4 !== "fileFinishedImporting") {
       str = "Trying to call a non-function";
       throwTypeErrorResult = HermesBuiltin.throwTypeError();
     }
@@ -127,7 +127,7 @@ class BatchInvocationManager {
     obj1._delay = num;
     obj1._handler = fn;
     tmp6 = Timeout;
-    if (typeof Timeout !== "find") {
+    if (typeof Timeout !== "fileFinishedImporting") {
       str2 = "Trying to call a non-function";
       throwTypeErrorResult1 = HermesBuiltin.throwTypeError();
     }

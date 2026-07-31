@@ -1,9 +1,9 @@
-// Module ID: 16311
-// Function ID: 16312
+// Module ID: 16340
+// Function ID: 16341
 // Name: handleVoiceChannelSelect
-// Dependencies: [3882, 1372, 3817, 1931, 5004, 5134, 4157, 5007, 8833, 1380, 5019, 1959, 2]
+// Dependencies: [3886, 1372, 3821, 1931, 5008, 5138, 4161, 5011, 8846, 1380, 5023, 1959, 2]
 
-// Module 16311 (handleVoiceChannelSelect)
+// Module 16340 (handleVoiceChannelSelect)
 import setContent from "setContent";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -27,8 +27,8 @@ prototype["handleVoiceChannelSelect"] = function handleVoiceChannelSelect(channe
     tmp = key.getKey() === STAGE_BOOSTING_SHEET_KEY;
   }
   if (tmp) {
-    importDefault(4157).hideActionSheet(STAGE_BOOSTING_SHEET_KEY);
-    const obj = importDefault(4157);
+    importDefault(4161).hideActionSheet(STAGE_BOOSTING_SHEET_KEY);
+    const obj = importDefault(4161);
   }
 };
 prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates() {
@@ -42,18 +42,18 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates() {
           isGuildStageVoiceResult = channel.isGuildStageVoice();
         }
         if (isGuildStageVoiceResult) {
-          let obj = require(5007) /* useStageHasMedia */;
+          let obj = require(5011) /* useStageHasMedia */;
           if (obj.getStageHasMedia(channel.id)) {
             if (tmp5Result.getChannelVideoLimit(channel).reachedLimit) {
               if (getUncachedChannelPermissions.can(tmp5(1380).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel)) {
                 obj = { channel: null };
                 obj[0] = channel;
-                importDefault(4157).openLazy(tmp5(1959)(5019, tmp6.paths), STAGE_BOOSTING_SHEET_KEY, obj);
+                importDefault(4161).openLazy(tmp5(1959)(5023, tmp6.paths), STAGE_BOOSTING_SHEET_KEY, obj);
                 c8 = true;
-                const obj3 = importDefault(4157);
+                const obj3 = importDefault(4161);
               }
             }
-            tmp5Result = tmp5(8833);
+            tmp5Result = tmp5(8846);
           }
           tmp6 = dependencyMap;
         }

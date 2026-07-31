@@ -1,9 +1,9 @@
-// Module ID: 16676
-// Function ID: 16677
+// Module ID: 16705
+// Function ID: 16706
 // Name: AVErrorStreamSoundshareFailedDefinition
-// Dependencies: [4208, 4280, 676, 8848, 16668, 4253, 2]
+// Dependencies: [4212, 4284, 676, 8861, 16697, 4257, 2]
 
-// Module 16676 (AVErrorStreamSoundshareFailedDefinition)
+// Module 16705 (AVErrorStreamSoundshareFailedDefinition)
 import reset from "reset";
 import getHookError from "getHookError";
 import { MediaEngineHookTypes } from "ME";
@@ -18,12 +18,12 @@ export const AVErrorStreamSoundshareFailedDefinition = {
     if (null != currentUserActiveStream) {
       if (null != hookError.getHookError(MediaEngineHookTypes.SOUND)) {
         const obj = { type: null };
-        obj[0] = require(8848) /* mapped */.AVError.STREAM_SOUNDSHARE_FAILED;
-        const obj2 = require(16668) /* getVoiceChannelErrorContext */;
-        const merged = Object.assign(obj2.getStreamErrorContext(require(4253) /* isStreamKey */.encodeStreamKey(currentUserActiveStream)));
+        obj[0] = require(8861) /* mapped */.AVError.STREAM_SOUNDSHARE_FAILED;
+        const obj2 = require(16697) /* getVoiceChannelErrorContext */;
+        const merged = Object.assign(obj2.getStreamErrorContext(require(4257) /* isStreamKey */.encodeStreamKey(currentUserActiveStream)));
         const items = [obj];
         tmp2 = items;
-        const obj3 = require(4253) /* isStreamKey */;
+        const obj3 = require(4257) /* isStreamKey */;
       }
     }
     return tmp2;

@@ -1,9 +1,9 @@
-// Module ID: 6262
-// Function ID: 6263
+// Module ID: 6268
+// Function ID: 6269
 // Name: createFromServer
-// Dependencies: [1883, 6263, 1307, 2]
+// Dependencies: [1883, 6269, 1307, 2]
 
-// Module 6262 (createFromServer)
+// Module 6268 (createFromServer)
 import "toJS";
 
 const require = arg1;
@@ -23,14 +23,14 @@ prototype["createFromServer"] = function createFromServer(properties) {
   const obj = { ignoreBOM: true };
   const textDecoder = new TextDecoder("utf-8", obj);
   ({ id, component_type } = properties);
-  const PremiumMarketingComponentProperties = textDecoder(6263).PremiumMarketingComponentProperties;
+  const PremiumMarketingComponentProperties = textDecoder(6269).PremiumMarketingComponentProperties;
   const fromBinary = PremiumMarketingComponentProperties.fromBinary;
   const obj2 = textDecoder(1307);
   function readerFactory(buf) {
     const binaryReader = new textDecoder(outer1_1[2]).BinaryReader(buf, textDecoder);
     return binaryReader;
   }
-  if (typeof prototype !== "find") {
+  if (typeof prototype !== "fileFinishedImporting") {
     str = "Trying to call a non-function";
     HermesBuiltin.throwTypeError();
   }

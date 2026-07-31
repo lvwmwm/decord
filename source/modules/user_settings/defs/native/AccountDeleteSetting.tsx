@@ -1,9 +1,9 @@
-// Module ID: 13836
-// Function ID: 13837
+// Module ID: 13860
+// Function ID: 13861
 // Name: pressable
-// Dependencies: [7753, 13837, 10116, 1236, 2]
+// Dependencies: [7761, 13861, 10133, 1236, 2]
 
-// Module 13836 (pressable)
+// Module 13860 (pressable)
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
@@ -14,7 +14,7 @@ const pressable = createToggle.createPressable({
   parent: require("MobileSetting").MobileSetting.ACCOUNT,
   variant: "danger",
   onPress: function handlePress() {
-    importDefault(13837)(true);
+    importDefault(13861)(true);
   }
 });
 const obj = {
@@ -25,7 +25,7 @@ const obj = {
   parent: require("MobileSetting").MobileSetting.ACCOUNT,
   variant: "danger",
   onPress: function handlePress() {
-    importDefault(13837)(true);
+    importDefault(13861)(true);
   }
 };
 const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/AccountDeleteSetting.tsx");

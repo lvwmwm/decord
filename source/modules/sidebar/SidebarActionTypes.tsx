@@ -1,9 +1,9 @@
-// Module ID: 5786
-// Function ID: 5787
+// Module ID: 5791
+// Function ID: 5792
 // Name: SidebarType
 // Dependencies: [2]
 
-// Module 5786 (SidebarType)
+// Module 5791 (SidebarType)
 const result = require("set").fileFinishedImporting("modules/sidebar/SidebarActionTypes.tsx");
 
 export const SidebarType = { CREATE_THREAD: 0, [0]: "CREATE_THREAD", VIEW_THREAD: 1, [1]: "VIEW_THREAD", VIEW_CHANNEL: 2, [2]: "VIEW_CHANNEL", VIEW_MESSAGE_REQUEST: 3, [3]: "VIEW_MESSAGE_REQUEST", VIEW_MOD_REPORT: 4, [4]: "VIEW_MOD_REPORT" };

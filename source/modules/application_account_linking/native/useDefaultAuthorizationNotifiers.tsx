@@ -1,10 +1,10 @@
-// Module ID: 15221
-// Function ID: 15222
+// Module ID: 15248
+// Function ID: 15249
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: [19, 6325, 676, 589, 4155, 8122, 3890, 1236, 2837, 2]
+// Dependencies: [19, 6331, 676, 589, 4159, 8129, 3894, 1236, 2839, 2]
 // Exports: useDefaultAuthorizationNotifiers
 
-// Module 15221 (useDefaultAuthorizationNotifiers)
+// Module 15248 (useDefaultAuthorizationNotifiers)
 import noop from "noop";
 import getState from "getState";
 import { AppStates } from "ME";

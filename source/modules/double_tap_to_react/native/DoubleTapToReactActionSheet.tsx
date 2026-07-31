@@ -1,10 +1,10 @@
-// Module ID: 11476
-// Function ID: 11477
+// Module ID: 11494
+// Function ID: 11495
 // Name: EmojiConfetti
-// Dependencies: [5, 32, 19, 17, 4181, 5048, 676, 1877, 21, 4189, 500, 712, 4050, 4190, 4616, 589, 4599, 3862, 3830, 7747, 1416, 5206, 698, 5535, 9345, 4157, 5551, 4185, 1236, 11440, 11477, 4600, 2]
+// Dependencies: [5, 32, 19, 17, 4185, 5052, 676, 1877, 21, 4193, 500, 712, 4054, 4194, 4620, 589, 4603, 3866, 3834, 7755, 1416, 5210, 698, 5539, 9360, 4161, 5555, 4189, 1236, 11458, 11495, 4604, 2]
 // Exports: default
 
-// Module 11476 (EmojiConfetti)
+// Module 11494 (EmojiConfetti)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import closure_4 from "set";
 import getFallbackDoubleTapDisambiguatedEmoji from "getFallbackDoubleTapDisambiguatedEmoji";
@@ -35,15 +35,15 @@ function EmojiConfetti(children) {
   let sharedValue1;
   let sharedValue2;
   let sharedValue3;
-  sharedValue = top(4050).useSharedValue(0);
-  let obj = top(4050);
-  sharedValue1 = top(4050).useSharedValue(0);
-  let obj2 = top(4050);
-  sharedValue2 = top(4050).useSharedValue(0.2);
-  let obj3 = top(4050);
-  sharedValue3 = top(4050).useSharedValue(0);
-  let obj4 = top(4050);
-  const mountLayoutEffect = top(4616).useMountLayoutEffect(() => {
+  sharedValue = top(4054).useSharedValue(0);
+  let obj = top(4054);
+  sharedValue1 = top(4054).useSharedValue(0);
+  let obj2 = top(4054);
+  sharedValue2 = top(4054).useSharedValue(0.2);
+  let obj3 = top(4054);
+  sharedValue3 = top(4054).useSharedValue(0);
+  let obj4 = top(4054);
+  const mountLayoutEffect = top(4620).useMountLayoutEffect(() => {
     let obj = sharedValue;
     let num = 0;
     if (!closure_2) {
@@ -84,7 +84,7 @@ function EmojiConfetti(children) {
     const withTimingResult5 = top(outer1_2[13]).withTiming(1, { duration: 360 });
     const result5 = obj4.set(obj17.withSequence(withTimingResult4, withTimingResult5, top(outer1_2[13]).withTiming(0, { duration: 240 })));
   });
-  let obj5 = top(4616);
+  let obj5 = top(4620);
   const fn = function f() {
     let obj = { scale: sharedValue2.get() };
     const items = [obj, ];
@@ -117,8 +117,8 @@ function EmojiConfetti(children) {
   fn.__closure = { sizeValue: sharedValue2, left, rotationValue: sharedValue1, top, positionValue: sharedValue, opacityValue: sharedValue3 };
   fn.__workletHash = 1455873119263;
   fn.__initData = closure_14;
-  const style = top(4050).useAnimatedStyle(fn);
-  return callback3(left(4050).View, { style, children: children.emojiComponent });
+  const style = top(4054).useAnimatedStyle(fn);
+  return callback3(left(4054).View, { style, children: children.emojiComponent });
 }
 function EmojiBurstAnimation(emojiComponent) {
   emojiComponent = emojiComponent.emojiComponent;

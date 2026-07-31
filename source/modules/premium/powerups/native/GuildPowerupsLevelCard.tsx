@@ -1,10 +1,10 @@
-// Module ID: 11652
-// Function ID: 11653
+// Module ID: 11670
+// Function ID: 11671
 // Name: GuildLevelPowerupHeader
-// Dependencies: [19, 17, 4077, 676, 11653, 21, 4189, 712, 4611, 6615, 11635, 11615, 4185, 1236, 2255, 11587, 11607, 11654, 11655, 11612, 2]
+// Dependencies: [19, 17, 4081, 676, 11671, 21, 4193, 712, 4615, 6621, 11653, 11632, 4189, 1236, 2257, 11604, 11624, 11672, 11673, 11629, 2]
 // Exports: default
 
-// Module 11652 (GuildLevelPowerupHeader)
+// Module 11670 (GuildLevelPowerupHeader)
 import GuildPowerupCardFooterActive from "GuildPowerupCardFooterActive";
 import { View } from "useGuildPowerupOnShowMore";
 import BoostedGuildTiers from "BoostedGuildTiers";
@@ -44,7 +44,7 @@ function GuildLevelPowerupHeader(arg0) {
     items1[1] = progressStart;
     items1[2] = position === constants.END && tmp.progressEnd;
     obj[3] = items1;
-    const items2 = [closure_10(importDefault(4611), obj), , ];
+    const items2 = [closure_10(importDefault(4615), obj), , ];
     obj = { style: null };
     const items3 = [, ];
     ({ boostContainer: arr6[0], boostContainerBackground: arr6[1] } = tmp);
@@ -61,7 +61,7 @@ function GuildLevelPowerupHeader(arg0) {
     const colors = importDefault(712).colors;
     const obj2 = { size: "xs", color: null };
     obj2[1] = active ? colors.WHITE : colors.TEXT_MUTED;
-    obj1[1] = closure_10(require(6615) /* BoostGemIcon */.BoostGemIcon, obj2);
+    obj1[1] = closure_10(require(6621) /* BoostGemIcon */.BoostGemIcon, obj2);
     items2[2] = closure_10(View, obj1);
     obj[1] = items2;
     return closure_11(View, obj);
@@ -171,10 +171,10 @@ export default function GuildPowerupsLevelCard(arg0) {
   ({ guildId, powerup, nextPowerup, index, isScrollingRef } = arg0);
   let importDefault;
   const tmp = createCacheKey();
-  const tmp4 = importDefault(11587)(guildId, powerup);
-  let obj = isScrollingRef(11607);
+  const tmp4 = importDefault(11604)(guildId, powerup);
+  let obj = isScrollingRef(11624);
   const calculatePowerupCardStatus = obj.useCalculatePowerupCardStatus(powerup, tmp4, false);
-  const tmp8 = importDefault(11654)(guildId, powerup);
+  const tmp8 = importDefault(11672)(guildId, powerup);
   importDefault = tmp8;
   if (0 === index) {
     let MIDDLE = constants.START;
@@ -193,18 +193,18 @@ export default function GuildPowerupsLevelCard(arg0) {
   obj = { position: MIDDLE, active: tmp13, nextActive: null };
   let tmp19;
   const tmp2 = importDefault;
-  const tmp5 = importDefault(11587)(guildId, nextPowerup);
+  const tmp5 = importDefault(11604)(guildId, nextPowerup);
   if (null != nextPowerup) {
     tmp19 = tmp5.type !== constants2.INACTIVE;
   }
   obj[2] = tmp19;
   const items1 = [closure_10(GuildLevelPowerupHeader, obj), ];
   const obj1 = { style: tmp.contentContainer, children: null };
-  const items2 = [closure_10(isScrollingRef(4185).Text, { variant: "heading-lg/semibold", children: powerup.title }), closure_10(GuildPowerupLevelBody, { isActive: tmp4.type !== constants2.INACTIVE, index }), ];
+  const items2 = [closure_10(isScrollingRef(4189).Text, { variant: "heading-lg/semibold", children: powerup.title }), closure_10(GuildPowerupLevelBody, { isActive: tmp4.type !== constants2.INACTIVE, index }), ];
   const obj2 = { variant: "heading-lg/semibold", children: powerup.title };
   const tmp18 = GuildLevelPowerupHeader;
-  const tmp2Result = importDefault(11655);
-  items2[2] = closure_10(View, { style: tmp.footerContainer, children: closure_10(isScrollingRef(11612).GuildPowerupsCardFooter, obj4) });
+  const tmp2Result = importDefault(11673);
+  items2[2] = closure_10(View, { style: tmp.footerContainer, children: closure_10(isScrollingRef(11629).GuildPowerupsCardFooter, obj4) });
   obj1[1] = items2;
   items1[1] = closure_11(View, obj1);
   obj[4] = items1;

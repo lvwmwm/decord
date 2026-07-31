@@ -1,22 +1,22 @@
-// Module ID: 14949
-// Function ID: 14950
+// Module ID: 14972
+// Function ID: 14973
 // Name: useHasExpired
-// Dependencies: [32, 19, 17, 21, 4050, 8528, 4189, 712, 1297, 11524, 3893, 4190, 2]
+// Dependencies: [32, 19, 17, 21, 4054, 8541, 4193, 712, 1297, 11541, 3897, 4194, 2]
 // Exports: useHasExpired
 
-// Module 14949 (useHasExpired)
+// Module 14972 (useHasExpired)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4050";
+import importDefaultResult from "module_4054";
 
 const require = arg1;
 let c4 = importAllResult;
 let closure_7 = 2 * Math.PI * 6;
-let obj = { duration: 1000, easing: require("module_4050").Easing.linear };
-let closure_9 = require("module_4050").createAnimatedComponent(require("inlineStyles").Circle);
+let obj = { duration: 1000, easing: require("module_4054").Easing.linear };
+let closure_9 = require("module_4054").createAnimatedComponent(require("inlineStyles").Circle);
 obj = { outerRing: null, innerFill: null, progressRing: null };
 obj[0] = { borderRadius: 20, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, position: "absolute", bottom: -require("Button").BADGE_PADDING, right: -require("Button").BADGE_PADDING, padding: require("Button").BADGE_PADDING, height: 22, width: 22, alignItems: "center", justifyContent: "center" };
 let obj1 = { borderRadius: 20, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, position: "absolute", bottom: -require("Button").BADGE_PADDING, right: -require("Button").BADGE_PADDING, padding: require("Button").BADGE_PADDING, height: 22, width: 22, alignItems: "center", justifyContent: "center" };

@@ -1,10 +1,10 @@
-// Module ID: 15750
-// Function ID: 15751
+// Module ID: 15778
+// Function ID: 15779
 // Name: GiftingPromotionCoachmarkActionSheet
-// Dependencies: [19, 17, 4181, 676, 1369, 21, 4189, 712, 589, 9705, 5515, 5535, 4157, 9696, 5243, 500, 6205, 5141, 4185, 4600, 1236, 2]
+// Dependencies: [19, 17, 4185, 676, 1369, 21, 4193, 712, 589, 9722, 5519, 5539, 4161, 9713, 5247, 500, 6211, 5145, 4189, 4604, 1236, 2]
 // Exports: default
 
-// Module 15750 (GiftingPromotionCoachmarkActionSheet)
+// Module 15778 (GiftingPromotionCoachmarkActionSheet)
 import Button from "Button";
 import { View } from "preload";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -42,14 +42,14 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   let obj = markAsDismissed(589);
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj1 = markAsDismissed(9705);
+  let obj1 = markAsDismissed(9722);
   let asset;
   if (coachmarkComponent != null) {
     asset = coachmarkComponent.asset;
   }
   const themeAndReducedMotionAwareAssetUrl = obj1.useThemeAndReducedMotionAwareAssetUrl(asset);
   let tmp7 = analyticsLocations;
-  analyticsLocations = analyticsLocations(5515)(analyticsLocations(5535).GIFTING_PROMOTION_COACHMARK).analyticsLocations;
+  analyticsLocations = analyticsLocations(5519)(analyticsLocations(5539).GIFTING_PROMOTION_COACHMARK).analyticsLocations;
   const items1 = [analyticsLocations, markAsDismissed];
   let tmp11Result = null;
   if (null != coachmarkComponent) {
@@ -66,18 +66,18 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       const obj2 = { style: null, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
       obj2[0] = tmp.text;
       obj2[3] = coachmarkComponent.header;
-      const items3 = [tmp11(tmp2(4185).Text, obj2), ];
+      const items3 = [tmp11(tmp2(4189).Text, obj2), ];
       const obj3 = { style: null, variant: "text-md/normal", color: "text-default", children: null };
       obj3[0] = tmp.text;
       obj3[3] = coachmarkComponent.body;
-      items3[1] = tmp11(tmp2(4185).Text, obj3);
+      items3[1] = tmp11(tmp2(4189).Text, obj3);
       obj1[1] = items3;
       items2[1] = tmp13(tmp14, obj1);
       const obj4 = { grow: true, text: null, onPress: null };
       const intl = tmp2(1236).intl;
       obj4[1] = intl.string(tmp2(1236).t.RzWDqY);
       obj4[2] = tmp9;
-      items2[2] = tmp11(tmp2(4600).Button, obj4);
+      items2[2] = tmp11(tmp2(4604).Button, obj4);
       obj[1] = items2;
       obj[2] = tmp13(tmp14, obj);
       tmp11Result = tmp11(tmp12, obj);
@@ -91,11 +91,11 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
           const obj6 = { url: null, style: null };
           obj6[0] = themeAndReducedMotionAwareAssetUrl;
           obj6[1] = tmp.imageShared;
-          obj5[1] = tmp11(tmp7(6205), obj6);
+          obj5[1] = tmp11(tmp7(6211), obj6);
           tmp11Result = tmp11(tmp14, obj5);
         }
       }
-      tmp7 = tmp7(5141);
+      tmp7 = tmp7(5145);
       const obj7 = { source: null, style: null };
       const obj8 = { uri: null };
       obj8[0] = themeAndReducedMotionAwareAssetUrl;

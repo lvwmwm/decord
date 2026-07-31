@@ -1,10 +1,10 @@
-// Module ID: 14774
-// Function ID: 14775
+// Module ID: 14797
+// Function ID: 14798
 // Name: UserSettingsJSError
-// Dependencies: [19, 21, 4185, 2]
+// Dependencies: [19, 21, 4189, 2]
 // Exports: default
 
-// Module 14774 (UserSettingsJSError)
+// Module 14797 (UserSettingsJSError)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -12,5 +12,5 @@ const require = arg1;
 const result = require("Text").fileFinishedImporting("modules/user_settings/dev_tools/native/UserSettingsJSError.tsx");
 
 export default function UserSettingsJSError() {
-  return jsx(require(4185) /* Text */.Text, { variant: "display-md", children: null.boo });
+  return jsx(require(4189) /* Text */.Text, { variant: "display-md", children: null.boo });
 };

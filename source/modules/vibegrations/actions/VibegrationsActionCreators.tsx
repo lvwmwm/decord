@@ -1,16 +1,28 @@
-// Module ID: 5685
-// Function ID: 5686
-// Name: reloadActivityIfRunning
-// Dependencies: [5, 5686, 5683, 676, 5693, 709, 530, 2]
+// Module ID: 5689
+// Function ID: 5690
+// Name: trackPublishFailed
+// Dependencies: [5, 5690, 5687, 676, 5697, 5698, 709, 530, 2]
 // Exports: createProject, deleteProject, listProjects, publishPreviewProject, publishProject, renameProject, setBuilderPreviewApplicationId, setChatSidebarWidth, setGuildHints, setSelectedProjectForGuild
 
-// Module 5685 (reloadActivityIfRunning)
-import dispatcher from "dispatcher";
+// Module 5689 (trackPublishFailed)
+import _launchFrameOnNative from "_launchFrameOnNative";
 import map from "map";
 import handleProjectUpsert from "handleProjectUpsert";
 import { Endpoints } from "ME";
 
 const require = arg1;
+function trackPublishFailed(project_id) {
+  let obj = require(5697) /* vibegrationLocation */;
+  obj = { location: "publish", code: require(5697) /* vibegrationLocation */.VibegrationErrorCodes.PUBLISH_FAILED, message: null, details: null, isPreview: null };
+  let str = "";
+  if (arg2) {
+    str = "-preview";
+  }
+  obj[2] = "publish" + str + " failed";
+  obj[3] = "HTTP " + arg1;
+  obj[4] = arg2;
+  const result = obj.trackVibegrationErrored(project_id, obj);
+}
 function reloadActivityIfRunning(arg0) {
   let tmp = null != arg0;
   if (tmp) {
@@ -22,7 +34,7 @@ function reloadActivityIfRunning(arg0) {
     tmp = applicationId === arg0;
   }
   if (tmp) {
-    let obj = importDefault(5693);
+    let obj = importDefault(5698);
     obj = { applicationId: null };
     obj[0] = arg0;
     obj.refreshProxyTicket(obj);
@@ -157,7 +169,7 @@ function _createProject() {
               const table = tmp2;
               const callback2 = tmp5;
               body = undefined;
-              const HTTP = callback(outer1_2[6]).HTTP;
+              const HTTP = callback(outer1_2[7]).HTTP;
               const obj1 = { url: null, body: null, rejectWithError: false };
               obj1[0] = outer1_6.VIBEGRATIONS_PROJECTS;
               obj1[1] = body;
@@ -177,7 +189,7 @@ function _createProject() {
             return obj3;
           } else {
             body = body.body;
-            obj = callback2(table[5]);
+            obj = callback2(table[6]);
             const obj4 = { type: "VIBEGRATIONS_PROJECT_CREATE_SUCCESS", project: null };
             obj4[1] = body;
             obj.dispatch(obj4);
@@ -236,10 +248,10 @@ function _renameProject() {
               obj[0] = arg1;
               return obj;
             } else {
-              let dispatcher = tmp2;
+              let _launchFrameOnNative = tmp2;
               const table = tmp5;
               let lib;
-              const HTTP = lib(outer1_2[6]).HTTP;
+              const HTTP = lib(outer1_2[7]).HTTP;
               const obj1 = { url: null, body: null, rejectWithError: false };
               obj1[0] = outer1_6.VIBEGRATIONS_PROJECT(lib);
               const obj2 = { name: null };
@@ -262,7 +274,7 @@ function _renameProject() {
           } else {
             lib = arg1;
             if (lib.ok) {
-              obj = callback(table[5]);
+              obj = callback(table[6]);
               const obj5 = { type: "VIBEGRATIONS_PROJECT_UPDATE_SUCCESS", project: null };
               obj5[1] = lib.body;
               obj.dispatch(obj5);
@@ -322,10 +334,10 @@ function _setGuildHints() {
               obj[0] = arg1;
               return obj;
             } else {
-              let dispatcher = tmp2;
+              let _launchFrameOnNative = tmp2;
               const table = tmp5;
               let lib;
-              const HTTP = lib(outer1_2[6]).HTTP;
+              const HTTP = lib(outer1_2[7]).HTTP;
               const obj1 = { url: null, body: null, rejectWithError: false };
               obj1[0] = outer1_6.VIBEGRATIONS_PROJECT(lib);
               obj1[1] = callback;
@@ -346,7 +358,7 @@ function _setGuildHints() {
           } else {
             lib = arg1;
             if (lib.ok) {
-              obj = callback(table[5]);
+              obj = callback(table[6]);
               const obj4 = { type: "VIBEGRATIONS_PROJECT_UPDATE_SUCCESS", project: null };
               obj4[1] = lib.body;
               obj.dispatch(obj4);
@@ -408,7 +420,7 @@ function _deleteProject() {
               const table = tmp2;
               let lib = tmp5;
               lib = undefined;
-              const HTTP = callback(outer1_2[6]).HTTP;
+              const HTTP = callback(outer1_2[7]).HTTP;
               const obj1 = { url: null, rejectWithError: false };
               obj1[0] = outer1_6.VIBEGRATIONS_PROJECT(callback);
               c3 = 1;
@@ -428,7 +440,7 @@ function _deleteProject() {
           } else {
             lib = arg1;
             if (lib.ok) {
-              obj = lib(table[5]);
+              obj = lib(table[6]);
               const obj4 = { type: "VIBEGRATIONS_PROJECT_DELETE_SUCCESS", projectId: null };
               obj4[1] = callback;
               obj.dispatch(obj4);
@@ -461,8 +473,8 @@ function _publishProject() {
     let c3 = 0;
     let c4 = 0;
     return (function*(arg0) {
-      if (c4 === 2) {
-        c4 = 3;
+      if (project === 2) {
+        project = 3;
         HermesBuiltin.throwTypeError();
       } else if (tmp5 === 3) {
         if (arg0 === 1) {
@@ -476,38 +488,38 @@ function _publishProject() {
         }
       } else {
         try {
-          c4 = 2;
-          if (0 === project) {
+          project = 2;
+          if (0 === application) {
             if (arg0 === 1) {
-              c4 = 3;
+              project = 3;
               throw arg1;
             } else if (arg0 === 2) {
-              c4 = 3;
+              project = 3;
               obj = { value: null, done: true };
               obj[0] = arg1;
               return obj;
             } else {
-              let application = tmp3;
-              let body = tmp2;
-              let lib;
+              let body = tmp3;
+              let lib = tmp2;
+              lib = undefined;
               body = undefined;
               application = undefined;
               project = undefined;
-              const HTTP = lib(outer1_2[6]).HTTP;
-              const obj1 = { url: null, rejectWithError: false };
-              obj1[0] = outer1_6.VIBEGRATIONS_PROJECT_PUBLISH(lib);
+              const HTTP = callback(outer1_2[7]).HTTP;
+              let obj1 = { url: null, rejectWithError: false };
+              obj1[0] = outer1_6.VIBEGRATIONS_PROJECT_PUBLISH(callback);
+              application = 1;
               project = 1;
-              c4 = 1;
-              let obj2 = { value: null, done: false };
+              const obj2 = { value: null, done: false };
               obj2[0] = HTTP.post(obj1);
               return obj2;
             }
           } else if (arg0 === 1) {
-            c4 = 3;
+            project = 3;
             throw arg1;
           } else if (arg0 === 2) {
-            c4 = 3;
-            const obj3 = { value: null, done: true };
+            project = 3;
+            let obj3 = { value: null, done: true };
             obj3[0] = arg1;
             return obj3;
           } else {
@@ -516,24 +528,32 @@ function _publishProject() {
               body = lib.body;
               application = body.application;
               project = body.project;
-              obj = body(application[5]);
+              obj1 = lib(body[6]);
               const obj4 = { type: "VIBEGRATIONS_PROJECT_UPDATE_SUCCESS", project: null };
               obj4[1] = project;
-              obj.dispatch(obj4);
-              obj2 = body(application[5]);
-              const obj5 = { type: "APPLICATION_FETCH_SUCCESS", application: null, isHydrated: true };
+              obj1.dispatch(obj4);
+              obj3 = lib(body[6]);
+              let obj5 = { type: "APPLICATION_FETCH_SUCCESS", application: null, isHydrated: true };
               obj5[1] = application;
-              obj2.dispatch(obj5);
-              callback(application.id);
+              obj3.dispatch(obj5);
+              callback3(application.id);
+              obj5 = callback(body[4]);
+              const result = obj5.trackVibegrationDeployed(callback, { isPreview: false });
+              project = 3;
+              const obj6 = { value: null, done: true };
+              obj6[0] = lib;
+              return obj6;
+            } else {
+              callback2(callback, lib.status, false);
+              project = 3;
+              obj = { value: null, done: true };
+              obj[0] = lib;
+              return obj;
             }
-            c4 = 3;
-            const obj6 = { value: null, done: true };
-            obj6[0] = lib;
-            return obj6;
           }
-        } catch (tmp23) {
-          c4 = tmp;
-          throw tmp23;
+        } catch (tmp28) {
+          project = tmp;
+          throw tmp28;
         }
       }
     })();
@@ -551,13 +571,14 @@ function _publishPreviewProject() {
   const self = this;
   const tmp = callback((arg0) => {
     let closure_0 = arg0;
-    let c3 = 0;
+    let closure_1 = arg1;
     let c4 = 0;
-    return (function*(arg0) {
-      if (c4 === 2) {
-        c4 = 3;
+    let c5 = 0;
+    const iter = (function*(arg0) {
+      if (project === 2) {
+        project = 3;
         HermesBuiltin.throwTypeError();
-      } else if (tmp5 === 3) {
+      } else if (tmp4 === 3) {
         if (arg0 === 1) {
           throw arg1;
         } else if (arg0 === 2) {
@@ -569,67 +590,102 @@ function _publishPreviewProject() {
         }
       } else {
         try {
-          c4 = 2;
-          if (0 === project) {
+          project = 2;
+          if (0 === application) {
             if (arg0 === 1) {
-              c4 = 3;
+              project = 3;
               throw arg1;
             } else if (arg0 === 2) {
-              c4 = 3;
+              project = 3;
               obj = { value: null, done: true };
               obj[0] = arg1;
               return obj;
             } else {
-              let application = tmp3;
-              let body = tmp2;
-              let lib;
+              let body = tmp5;
+              let closure_2 = tmp2;
+              let flag2;
+              let obj1 = flag2;
+              if (flag2 === undefined) {
+                obj1 = {};
+              }
+              flag2 = obj1.countAsDeploy;
+              if (flag2 === undefined) {
+                flag2 = true;
+              }
+              closure_2 = undefined;
               body = undefined;
               application = undefined;
               project = undefined;
-              const HTTP = lib(outer1_2[6]).HTTP;
-              const obj1 = { url: null, rejectWithError: false };
-              obj1[0] = outer1_6.VIBEGRATIONS_PROJECT_PUBLISH_PREVIEW(lib);
+              application = 1;
               project = 1;
-              c4 = 1;
-              let obj2 = { value: null, done: false };
-              obj2[0] = HTTP.post(obj1);
+              return { value: "ct", done: "Array" };
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              project = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              project = 3;
+              const obj2 = { value: null, done: true };
+              obj2[0] = arg1;
               return obj2;
+            } else {
+              const HTTP = callback(closure_2[7]).HTTP;
+              let obj3 = { url: null, rejectWithError: false };
+              obj3[0] = closure_6.VIBEGRATIONS_PROJECT_PUBLISH_PREVIEW(callback);
+              application = 2;
+              project = 1;
+              const obj4 = { value: null, done: false };
+              obj4[0] = HTTP.post(obj3);
+              return obj4;
             }
           } else if (arg0 === 1) {
-            c4 = 3;
+            project = 3;
             throw arg1;
           } else if (arg0 === 2) {
-            c4 = 3;
-            const obj3 = { value: null, done: true };
-            obj3[0] = arg1;
-            return obj3;
+            project = 3;
+            let obj5 = { value: null, done: true };
+            obj5[0] = arg1;
+            return obj5;
           } else {
-            lib = arg1;
-            if (lib.ok) {
-              body = lib.body;
+            closure_2 = arg1;
+            if (closure_2.ok) {
+              body = closure_2.body;
               application = body.application;
               project = body.project;
-              obj = body(application[5]);
-              const obj4 = { type: "VIBEGRATIONS_PROJECT_UPDATE_SUCCESS", project: null };
-              obj4[1] = project;
-              obj.dispatch(obj4);
-              obj2 = body(application[5]);
-              const obj5 = { type: "APPLICATION_FETCH_SUCCESS", application: null, isHydrated: true };
-              obj5[1] = application;
-              obj2.dispatch(obj5);
-              callback(application.id);
+              obj1 = flag2(closure_2[6]);
+              const obj6 = { type: "VIBEGRATIONS_PROJECT_UPDATE_SUCCESS", project: null };
+              obj6[1] = project;
+              obj1.dispatch(obj6);
+              obj3 = flag2(closure_2[6]);
+              const obj7 = { type: "APPLICATION_FETCH_SUCCESS", application: null, isHydrated: true };
+              obj7[1] = application;
+              obj3.dispatch(obj7);
+              callback3(application.id);
+              if (flag2) {
+                obj5 = callback(closure_2[4]);
+                const result = obj5.trackVibegrationDeployed(callback, { isPreview: true });
+              }
+              project = 3;
+              const obj8 = { value: null, done: true };
+              obj8[0] = closure_2;
+              return obj8;
+            } else {
+              callback2(callback, closure_2.status, true);
+              project = 3;
+              obj = { value: null, done: true };
+              obj[0] = closure_2;
+              return obj;
             }
-            c4 = 3;
-            const obj6 = { value: null, done: true };
-            obj6[0] = lib;
-            return obj6;
           }
-        } catch (tmp23) {
-          c4 = tmp;
-          throw tmp23;
+        } catch (tmp38) {
+          project = tmp;
+          throw tmp38;
         }
       }
     })();
+    iter.next();
+    return iter;
   });
   const _publishPreviewProject = tmp;
   const apply = tmp.apply;
@@ -640,7 +696,7 @@ function _publishPreviewProject() {
   }
   return applyArgumentsResult;
 }
-const result = require("handleProjectUpsert").fileFinishedImporting("modules/vibegrations/actions/VibegrationsActionCreators.tsx");
+let result = require("handleProjectUpsert").fileFinishedImporting("modules/vibegrations/actions/VibegrationsActionCreators.tsx");
 
 export const listProjects = function listProjects() {
   const self = this;
@@ -707,7 +763,7 @@ export const publishProject = function publishProject() {
   }
   return applyArgumentsResult;
 };
-export const publishPreviewProject = function publishPreviewProject(arg0) {
+export const publishPreviewProject = function publishPreviewProject(closure_0, arg1) {
   const self = this;
   const apply = _publishPreviewProject.apply;
   if (typeof apply === "unknown") {

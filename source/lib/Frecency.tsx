@@ -1,9 +1,9 @@
-// Module ID: 4273
-// Function ID: 4274
+// Module ID: 4277
+// Function ID: 4278
 // Name: DEFAULT_FRECENCY
-// Dependencies: [12, 3771, 2]
+// Dependencies: [12, 3775, 2]
 
-// Module 4273 (DEFAULT_FRECENCY)
+// Module 4277 (DEFAULT_FRECENCY)
 function DEFAULT_FRECENCY(arg0, arg1, numOfRecentUses) {
   return Math.ceil(arg0 * (arg1 / numOfRecentUses.numOfRecentUses));
 }
@@ -190,7 +190,7 @@ prototype["getFrecency"] = function getFrecency(id) {
 prototype["compute"] = function compute() {
   let self = this;
   self = this;
-  const dependencyMap = importDefault(3771)();
+  const dependencyMap = importDefault(3775)();
   let maxByResult = null;
   if (this.calculateMaxTotalUse) {
     let tmpResult = tmp(12);

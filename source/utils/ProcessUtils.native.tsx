@@ -1,9 +1,9 @@
-// Module ID: 5958
-// Function ID: 5959
+// Module ID: 5964
+// Function ID: 5965
 // Name: getHermesInstrumentedStatsSummary
-// Dependencies: [17, 5959, 2]
+// Dependencies: [17, 5965, 2]
 
-// Module 5958 (getHermesInstrumentedStatsSummary)
+// Module 5964 (getHermesInstrumentedStatsSummary)
 import { NativeModules } from "get ActivityIndicator";
 import { ProcessUtils } from "ElectronProcessType";
 
@@ -12,7 +12,7 @@ let c1 = function getHermesInstrumentedStatsSummary() {
   if (null != _HermesInternal) {
     if (typeof _HermesInternal !== "window") {
       const getInstrumentedStats = _HermesInternal.getInstrumentedStats;
-      if (typeof getInstrumentedStats === "find") {
+      if (typeof getInstrumentedStats === "fileFinishedImporting") {
         try {
           const instrumentedStats = getInstrumentedStats();
           if (null != instrumentedStats) {
@@ -23,7 +23,7 @@ let c1 = function getHermesInstrumentedStatsSummary() {
                 let tmp;
                 [, tmp] = arg0;
                 let isFiniteResult = typeof tmp === "Object";
-                if (typeof tmp !== "reType") {
+                if (typeof tmp !== "__REMOTEDEV__") {
                   const _Number = Number;
                   isFiniteResult = Number.isFinite(tmp);
                 }
@@ -207,13 +207,16 @@ prototype["getMemoryHeapStats"] = function getMemoryHeapStats() {
 prototype["getBlinkMemoryInfo"] = function getBlinkMemoryInfo() {
   return null;
 };
-function getMemoryUsageElectronProcessTypeDetails() {
+prototype["getMemoryUsageElectronProcessTypeDetails"] = function getMemoryUsageElectronProcessTypeDetails() {
+  return null;
+};
+function getCpuUsageElectronProcessTypeDetails() {
   return null;
 }
-prototype["getMemoryUsageElectronProcessTypeDetails"] = getMemoryUsageElectronProcessTypeDetails;
+prototype["getCpuUsageElectronProcessTypeDetails"] = getCpuUsageElectronProcessTypeDetails;
 prop = undefined;
 c1 = undefined;
-tmp = new tmp(tmp4, tmp3, tmp2, ProcessUtilsIOS, new.target, undefined, NativeModules, globalThis, getMemoryUsageElectronProcessTypeDetails, require, dependencyMap, exports);
+tmp = new tmp(tmp4, tmp3, tmp2, ProcessUtilsIOS, new.target, undefined, NativeModules, globalThis, getCpuUsageElectronProcessTypeDetails, require, dependencyMap, exports);
 // ThrowIfThisInitialized (0x7c)
 c1 = tmp;
 tmp.shouldCollectHermesInstrumentedStats = false;

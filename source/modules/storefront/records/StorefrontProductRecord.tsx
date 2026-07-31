@@ -1,9 +1,9 @@
-// Module ID: 5819
-// Function ID: 5820
+// Module ID: 5824
+// Function ID: 5825
 // Name: fromServer
-// Dependencies: [5818, 4228, 2]
+// Dependencies: [5823, 4232, 2]
 
-// Module 5819 (fromServer)
+// Module 5824 (fromServer)
 import fromServer from "fromServer";
 import createFromServer from "createFromServer";
 
@@ -69,7 +69,7 @@ prototype["fromServer"] = function fromServer(sku_ids) {
     }
   }
   obj.gameApplicationId = game_application_id;
-  if (typeof prototype !== "find") {
+  if (typeof prototype !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   obj = Object.create(tmp.prototype);

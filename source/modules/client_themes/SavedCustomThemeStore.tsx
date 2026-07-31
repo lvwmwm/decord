@@ -1,9 +1,9 @@
-// Module ID: 4123
-// Function ID: 4124
+// Module ID: 4127
+// Function ID: 4128
 // Name: validateSavedTheme
 // Dependencies: [1305, 1208, 589, 709, 2]
 
-// Module 4123 (validateSavedTheme)
+// Module 4127 (validateSavedTheme)
 import SystemThemeState from "SystemThemeState";
 import { PersistedStore } from "initialize";
 

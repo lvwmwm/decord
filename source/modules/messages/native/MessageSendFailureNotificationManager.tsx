@@ -1,9 +1,9 @@
-// Module ID: 16650
-// Function ID: 16651
+// Module ID: 16679
+// Function ID: 16680
 // Name: handleMessageSendFailure
-// Dependencies: [1931, 4006, 1874, 6325, 676, 12761, 10256, 10258, 10690, 1236, 5134, 2]
+// Dependencies: [1931, 4010, 1874, 6331, 676, 12786, 10274, 10276, 10708, 1236, 5138, 2]
 
-// Module 16650 (handleMessageSendFailure)
+// Module 16679 (handleMessageSendFailure)
 import handleConnectionOpen from "handleConnectionOpen";
 import closure_4 from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -21,7 +21,7 @@ function handleMessageSendFailure(shouldNotify) {
   ({ channelId, messageId } = shouldNotify);
   if (shouldNotify.shouldNotify) {
     if ("active" !== state.getState()) {
-      let obj = importDefault(10690);
+      let obj = importDefault(10708);
       obj = { category: "local", alertTitle: null, alertBody: null, userInfo: null };
       const intl = require(1236) /* getSystemLocale */.intl;
       obj[1] = intl.string(require(1236) /* getSystemLocale */.t.LdlH2M);
@@ -35,8 +35,8 @@ function handleMessageSendFailure(shouldNotify) {
       const result = obj.presentLocalNotification(obj);
     } else if (channelId !== channelId.getChannelId(guildId.getGuildId())) {
       const MESSAGE_FAILED_TO_SEND = constants.MESSAGE_FAILED_TO_SEND;
-      const notificationDuration = require(10256) /* extractMetadataFromNotification */.getNotificationDuration(MESSAGE_FAILED_TO_SEND);
-      const obj4 = require(10256) /* extractMetadataFromNotification */;
+      const notificationDuration = require(10274) /* extractMetadataFromNotification */.getNotificationDuration(MESSAGE_FAILED_TO_SEND);
+      const obj4 = require(10274) /* extractMetadataFromNotification */;
       const obj1 = { type: null, channelId: null, messageId: null, key: null, duration: null, onDismiss: null, inAppNotificationId: null };
       obj1[0] = MESSAGE_FAILED_TO_SEND;
       obj1[1] = channelId;
@@ -46,10 +46,10 @@ function handleMessageSendFailure(shouldNotify) {
       obj1[5] = function onDismiss() {
         callback(table[7]).clearNotification();
       };
-      const obj5 = importDefault(10258);
-      obj1[6] = require(10256) /* extractMetadataFromNotification */.generateInAppNotificationId();
+      const obj5 = importDefault(10276);
+      obj1[6] = require(10274) /* extractMetadataFromNotification */.generateInAppNotificationId();
       obj5.enqueueNotification(obj1);
-      const obj7 = require(10256) /* extractMetadataFromNotification */;
+      const obj7 = require(10274) /* extractMetadataFromNotification */;
     }
   }
 }

@@ -1,9 +1,9 @@
-// Module ID: 10051
-// Function ID: 10052
+// Module ID: 10068
+// Function ID: 10069
 // Name: getSearchState
-// Dependencies: [10052, 589, 709, 2]
+// Dependencies: [10069, 589, 709, 2]
 
-// Module 10051 (getSearchState)
+// Module 10068 (getSearchState)
 import { Store } from "initialize";
 
 const require = arg1;
@@ -67,7 +67,7 @@ const guildDirectorySearchStore = new GuildDirectorySearchStore(require("dispatc
     obj = {};
     const merged1 = Object.assign(dependencyMap2[channelId]);
     obj = { results: null, lastSearchedAt: null };
-    obj[0] = items(10052).orderByTotalMemberCount(items);
+    obj[0] = items(10069).orderByTotalMemberCount(items);
     obj[1] = Date.now();
     obj[query.query] = obj;
     dependencyMap2[channelId] = obj;

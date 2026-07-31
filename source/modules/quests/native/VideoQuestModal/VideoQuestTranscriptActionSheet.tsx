@@ -1,10 +1,10 @@
-// Module ID: 14175
-// Function ID: 14176
+// Module ID: 14197
+// Function ID: 14198
 // Name: VideoQuestTranscriptActionSheet
-// Dependencies: [19, 17, 5985, 21, 4189, 712, 1581, 9475, 9465, 5551, 5242, 1236, 5245, 4598, 4185, 2]
+// Dependencies: [19, 17, 5991, 21, 4193, 712, 1581, 9490, 9480, 5555, 5246, 1236, 5249, 4602, 4189, 2]
 // Exports: default
 
-// Module 14175 (VideoQuestTranscriptActionSheet)
+// Module 14197 (VideoQuestTranscriptActionSheet)
 import noop from "noop";
 import { ActivityIndicator } from "get ActivityIndicator";
 import _toPropertyKey from "_toPropertyKey";
@@ -78,7 +78,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
   obj = { title: null };
   const intl = quest(1236).intl;
   obj[0] = intl.string(quest(1236).t["1YS80z"]);
-  obj[1] = callback2(quest(5242).BottomSheetTitleHeader, obj);
+  obj[1] = callback2(quest(5246).BottomSheetTitleHeader, obj);
   obj = { contentContainerStyle: { paddingBottom: importDefault(1581)().bottom }, children: null };
   const obj1 = { spacing: 16, style: tmp.content, children: null };
   let fetchStatus;
@@ -93,7 +93,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
   }
   const items2 = [tmp7Result, memo.length > 0 && memo.map((children) => callback(quest(table[14]).Text, { variant: "heading-md/normal", color: "text-muted", children }, arg1))];
   obj1[2] = items2;
-  obj[1] = closure_8(quest(4598).Stack, obj1);
-  obj[2] = callback2(quest(5245).BottomSheetScrollView, obj);
-  return callback2(quest(5551).ActionSheet, obj);
+  obj[1] = closure_8(quest(4602).Stack, obj1);
+  obj[2] = callback2(quest(5249).BottomSheetScrollView, obj);
+  return callback2(quest(5555).ActionSheet, obj);
 };

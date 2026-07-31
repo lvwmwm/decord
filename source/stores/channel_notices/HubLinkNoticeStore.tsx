@@ -1,9 +1,9 @@
-// Module ID: 12806
-// Function ID: 12807
+// Module ID: 12831
+// Function ID: 12832
 // Name: checkGuildIsHub
-// Dependencies: [5650, 1862, 676, 589, 709, 2]
+// Dependencies: [5654, 1862, 676, 589, 709, 2]
 
-// Module 12806 (checkGuildIsHub)
+// Module 12831 (checkGuildIsHub)
 import set from "set";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";

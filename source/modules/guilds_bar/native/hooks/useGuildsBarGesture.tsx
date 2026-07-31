@@ -1,10 +1,10 @@
-// Module ID: 14934
-// Function ID: 14935
+// Module ID: 14957
+// Function ID: 14958
 // Name: getDropIndex
-// Dependencies: [5, 19, 17, 1862, 5027, 14935, 14936, 4050, 636, 4158, 4035, 12, 1208, 1236, 7675, 14925, 3893, 712, 3802, 9910, 705, 5105, 6203, 9296, 500, 1581, 4586, 14937, 14938, 14122, 5273, 2]
+// Dependencies: [5, 19, 17, 1862, 5031, 14958, 14959, 4054, 636, 4162, 4039, 12, 1208, 1236, 7683, 14948, 3897, 712, 3806, 9927, 705, 5109, 6209, 9311, 500, 1581, 4590, 14960, 14961, 14144, 5277, 2]
 // Exports: default
 
-// Module 14934 (getDropIndex)
+// Module 14957 (getDropIndex)
 import withEqualityFn from "withEqualityFn";
 import closure_4 from "t";
 import { Dimensions } from "Themes";
@@ -13,9 +13,9 @@ import insertUnsortedGuilds from "insertUnsortedGuilds";
 import { GuildsNodeType } from "insertUnsortedGuilds";
 import importDefaultResult from "withEqualityFn";
 import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE";
-import module_4050 from "module_4050";
-import module_4050 from "module_4050";
-import module_4050 from "module_4050";
+import module_4054 from "module_4054";
+import module_4054 from "module_4054";
+import module_4054 from "module_4054";
 import apply from "module_1208";
 import apply from "module_1208";
 import importDefaultResult1 from "debounce";
@@ -79,13 +79,13 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
       tmp39 = name4;
     }
     if (null != tmp39) {
-      const AccessibilityAnnouncer = require(4035) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = require(4039) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
       const intl12 = require(1236) /* getSystemLocale */.intl;
       let obj = { itemName: null };
       obj[0] = tmp39;
       AccessibilityAnnouncer.announce(intl12.formatToPlainString(require(1236) /* getSystemLocale */.t["vHD/Je"], obj));
     }
-    lib(require(4158) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_START);
+    lib(require(4162) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_START);
     lib.flush();
   } else if ("drag-move" === type) {
     type = undefined;
@@ -120,7 +120,7 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
     }
     if (tmp7 !== tmp8Result) {
       let fKYRlM = dependencyMap;
-      lib(require(4158) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_MOVE);
+      lib(require(4162) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_MOVE);
       ({ dragNode, overNode, overState: overState2 } = type);
       if ("convert-before" !== overState2) {
         if ("convert-after" !== overState2) {
@@ -227,10 +227,10 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
     }
     tmp8Result = tmp8(type.dragNode, type.overNode, type.overState);
   } else if ("drag-drop" === type) {
-    lib(require(4158) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_END);
+    lib(require(4162) /* HapticFeedbackTypes */.HapticFeedbackTypes.DRAG_AND_DROP_END);
     lib.flush();
     lib2.flush();
-    const AccessibilityAnnouncer2 = require(4035) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+    const AccessibilityAnnouncer2 = require(4039) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
     const intl13 = require(1236) /* getSystemLocale */.intl;
     AccessibilityAnnouncer2.announce(intl13.string(require(1236) /* getSystemLocale */.t.lMkmz7));
   }
@@ -259,7 +259,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, current) {
     sectionItemFromPosition = current.getSectionItemFromPosition(bound, arg3);
   }
   if (sectionItemFromPosition == null) {
-    sectionItemFromPosition = { item: "disabled", positionPercentage: false };
+    sectionItemFromPosition = { item: "description", positionPercentage: false };
   }
   const item = sectionItemFromPosition.item;
   if (null == item) {
@@ -278,8 +278,8 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, current) {
         GUILDS = store2.getFastListGuildFolders()[item.section - tmp8.GUILDS];
         if (null != GUILDS) {
           const type = item.type;
-          if (require(7675) /* renderDefaultEmpty */.FastListItemTypes.SECTION !== type) {
-            if (tmp10(7675).FastListItemTypes.ITEM === type) {
+          if (require(7683) /* renderDefaultEmpty */.FastListItemTypes.SECTION !== type) {
+            if (tmp10(7683).FastListItemTypes.ITEM === type) {
               if (GUILDS.type !== GuildsNodeType.ROOT) {
                 let tmp13 = GUILDS;
                 if (GUILDS.type !== tmp12.FOLDER) {
@@ -307,11 +307,11 @@ let c12 = 160;
 let c13 = 16.666666666666668;
 let obj = { pan: null, itemMeasurements: null, activeIndex: null };
 obj[0] = require("module_4294967295");
-obj[1] = module_4050.makeMutable([]);
+obj[1] = module_4054.makeMutable([]);
 obj[2] = require("module_4294967295");
 let closure_16 = require("debounce")(require("HapticFeedbackTypes").triggerHapticFeedback, 16);
 let closure_17 = require("debounce")((intl) => {
-  const AccessibilityAnnouncer = require(4035) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+  const AccessibilityAnnouncer = require(4039) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
   AccessibilityAnnouncer.announce(intl);
 }, 500);
 let closure_18 = apply.throttle((data) => {
@@ -693,7 +693,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    state.setStateShallow({ dragSpecs: "Array", overSpecs: "ct" });
+    state.setStateShallow({ dragSpecs: "Array", overSpecs: "HermesInternal" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj5 = {};
@@ -817,7 +817,7 @@ export default function useGuildsBarGesture() {
             }
           }
         }
-        const obj5 = { dragSpecs: null, overSpecs: "Array", windowSize: -1 };
+        const obj5 = { dragSpecs: null, overSpecs: "Array", windowSize: "Array" };
         obj5[0] = obj;
         obj5[2] = sum;
         setStateShallow(obj5);

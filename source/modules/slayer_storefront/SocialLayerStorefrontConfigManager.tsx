@@ -1,9 +1,9 @@
-// Module ID: 12788
-// Function ID: 12789
+// Module ID: 12813
+// Function ID: 12814
 // Name: onPostConnectionOpen
-// Dependencies: [5134, 6685, 2]
+// Dependencies: [5138, 6691, 2]
 
-// Module 12788 (onPostConnectionOpen)
+// Module 12813 (onPostConnectionOpen)
 import "initialize";
 
 const require = arg1;
@@ -17,7 +17,7 @@ class SocialLayerStorefrontConfigManager extends tmp2 {
   }
 }
 SocialLayerStorefrontConfigManager.prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
-  const socialLayerStorefrontConfig = require(6685) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontConfig();
+  const socialLayerStorefrontConfig = require(6691) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontConfig();
 };
 const socialLayerStorefrontConfigManager = new SocialLayerStorefrontConfigManager();
 const result = require("set").fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontConfigManager.tsx");

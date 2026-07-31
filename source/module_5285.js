@@ -3,4 +3,4 @@
 // Dependencies: []
 
 // Module 5285
-arg5.PointerType = { TOUCH: 0, [0]: "TOUCH", STYLUS: 1, [1]: "STYLUS", MOUSE: 2, [2]: "MOUSE", KEY: 3, [3]: "KEY", OTHER: 4, [4]: "OTHER" };
+arg5.TouchEventType = { UNDETERMINED: 0, TOUCHES_DOWN: 1, TOUCHES_MOVE: 2, TOUCHES_UP: 3, TOUCHES_CANCELLED: 4 };

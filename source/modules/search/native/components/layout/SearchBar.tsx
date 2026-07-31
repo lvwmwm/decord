@@ -1,26 +1,26 @@
-// Module ID: 15458
-// Function ID: 15459
-// Dependencies: [19, 17, 1372, 1862, 3826, 1874, 10098, 9097, 9125, 676, 21, 4189, 712, 1236, 4380, 589, 1348, 4606, 11448, 11456, 3902, 10097, 10100, 8286, 15459, 2]
+// Module ID: 15486
+// Function ID: 15487
+// Dependencies: [19, 17, 1372, 1862, 3830, 1874, 10115, 9108, 9138, 676, 21, 4193, 712, 1236, 4384, 589, 1348, 4610, 11466, 11474, 3906, 10114, 10117, 8293, 15487, 2]
 
-// Module 15458
-import importAllResult from "module_11456";
+// Module 15486
+import importAllResult from "module_11474";
 import { View } from "getFontScale";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import prototype from "prototype";
-import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import MessageEmbedTypes from "MessageEmbedTypes";
 import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
 import { SearchTypes } from "ME";
-import { jsx } from "module_10097";
+import { jsx } from "module_10114";
 import createCacheKey from "createCacheKey";
 
 let c10;
 let unpackModuleId;
 const require = arg1;
 let c3 = importAllResult;
-({ SEARCH_BAR_HEIGHT: c10, SearchQueryTagTypes: unpackModuleId } = SearchAutocompleteSelectAnalyticsActions);
+({ SEARCH_BAR_HEIGHT: c10, SearchQueryTagTypes: unpackModuleId } = MessageEmbedTypes);
 let closure_15 = createCacheKey.createStyles((arg0, minHeight) => {
   if (arg0) {
     let obj = { minHeight: null };

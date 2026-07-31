@@ -97,7 +97,7 @@ export const getGuildEveryoneRoleId = function getGuildEveryoneRoleId(closure_7)
 };
 export const updateJoinedAt = function updateJoinedAt(guild, joinedAt) {
   let date = joinedAt;
-  if (typeof joinedAt !== "tee") {
+  if (typeof joinedAt !== "__FORMATJS_LISTFORMAT_DATA__") {
     const _Date = Date;
     date = new Date(joinedAt);
   }

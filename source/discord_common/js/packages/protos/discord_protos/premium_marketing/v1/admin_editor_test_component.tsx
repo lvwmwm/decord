@@ -1,16 +1,16 @@
-// Module ID: 6287
-// Function ID: 6288
+// Module ID: 6293
+// Function ID: 6294
 // Name: create
-// Dependencies: [32, 1307, 6265, 2]
+// Dependencies: [32, 1307, 6271, 2]
 
-// Module 6287 (create)
+// Module 6293 (create)
 import _slicedToArray from "_slicedToArray";
 import { MessageType } from "module_1307";
 
 const require = arg1;
 class AdminEditorTestComponent$Type extends MessageType {
   constructor() {
-    items = [, , , , ];
+    items = [, , , , , ];
     items[0] = { no: 1, name: "deprecated_field", kind: "scalar", T: 9 };
     obj = { no: 2, name: "localized_text_field", kind: "message", T: null };
     class T {
@@ -26,10 +26,11 @@ class AdminEditorTestComponent$Type extends MessageType {
       name: "textarea_field",
       kind: "message",
       T() {
-            return callback(6265).LocalizedString;
+            return callback(6271).LocalizedString;
           }
     };
     items[4] = { no: 5, name: "checkbox_field", kind: "scalar", T: 8 };
+    items[5] = { no: 6, name: "asset_field", kind: "scalar", T: 9 };
     tmp = new tmp("discord_protos.premium_marketing.v1.AdminEditorTestComponent", items, T);
     // ThrowIfThisInitialized (0x7c)
     return tmp;
@@ -37,7 +38,7 @@ class AdminEditorTestComponent$Type extends MessageType {
 }
 let prototype = AdminEditorTestComponent$Type.prototype;
 prototype["create"] = function create(arr) {
-  let obj = { deprecatedField: "", plainTextField: "", checkboxField: false };
+  let obj = { deprecatedField: "", plainTextField: "", checkboxField: false, assetField: "" };
   const _Object = Object;
   obj = { enumerable: false, value: this };
   _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);
@@ -66,7 +67,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       } else if (2 === tmp5) {
         let tmp27 = require;
         let tmp28 = dependencyMap;
-        let LocalizedString2 = require(6265) /* create */.LocalizedString;
+        let LocalizedString2 = require(6271) /* create */.LocalizedString;
         let tmp29 = LocalizedString2;
         let tmp30 = pos;
         let tmp31 = readUnknownField;
@@ -76,13 +77,15 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       } else if (4 === tmp5) {
         let tmp22 = require;
         let tmp23 = dependencyMap;
-        let LocalizedString = require(6265) /* create */.LocalizedString;
+        let LocalizedString = require(6271) /* create */.LocalizedString;
         let tmp24 = LocalizedString;
         let tmp25 = pos;
         let tmp26 = readUnknownField;
         obj.textareaField = LocalizedString.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.textareaField);
       } else if (5 === tmp5) {
         obj.checkboxField = pos.bool();
+      } else if (6 === tmp5) {
+        obj.assetField = pos.string();
       } else {
         let onRead = readUnknownField.readUnknownField;
         if ("throw" === onRead) {
@@ -125,7 +128,7 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(deprecatedField,
     const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
   }
   if (deprecatedField.localizedTextField) {
-    const LocalizedString = require(6265) /* create */.LocalizedString;
+    const LocalizedString = require(6271) /* create */.LocalizedString;
     const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
     const joined = LocalizedString.internalBinaryWrite(deprecatedField.localizedTextField, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult = LocalizedString.internalBinaryWrite(deprecatedField.localizedTextField, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
@@ -135,7 +138,7 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(deprecatedField,
     const tagResult2 = tag.tag(3, require(1307).WireType.LengthDelimited);
   }
   if (deprecatedField.textareaField) {
-    const LocalizedString2 = require(6265) /* create */.LocalizedString;
+    const LocalizedString2 = require(6271) /* create */.LocalizedString;
     const tagResult3 = tag.tag(4, require(1307).WireType.LengthDelimited);
     const joined1 = LocalizedString2.internalBinaryWrite(deprecatedField.textareaField, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult1 = LocalizedString2.internalBinaryWrite(deprecatedField.textareaField, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
@@ -143,6 +146,10 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(deprecatedField,
   if (false !== deprecatedField.checkboxField) {
     tag.tag(5, require(1307).WireType.Varint).bool(deprecatedField.checkboxField);
     const tagResult4 = tag.tag(5, require(1307).WireType.Varint);
+  }
+  if ("" !== deprecatedField.assetField) {
+    tag.tag(6, require(1307).WireType.LengthDelimited).string(deprecatedField.assetField);
+    const tagResult5 = tag.tag(6, require(1307).WireType.LengthDelimited);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
@@ -154,7 +161,7 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(deprecatedField,
   }
   return tag;
 };
-let items = [{ no: 1, name: "deprecated_field", kind: "scalar", T: 9 }, , , , ];
+let items = [{ no: 1, name: "deprecated_field", kind: "scalar", T: 9 }, , , , , ];
 let obj = { no: 2, name: "localized_text_field", kind: "message", T: null };
 class T {
   constructor() {
@@ -169,10 +176,11 @@ items[3] = {
   name: "textarea_field",
   kind: "message",
   T() {
-    return callback(6265).LocalizedString;
+    return callback(6271).LocalizedString;
   }
 };
 items[4] = { no: 5, name: "checkbox_field", kind: "scalar", T: 8 };
+items[5] = { no: 6, name: "asset_field", kind: "scalar", T: 9 };
 prototype = new prototype("discord_protos.premium_marketing.v1.AdminEditorTestComponent", items, tmp, T, AdminEditorTestComponent$Type, prototype, items);
 // ThrowIfThisInitialized (0x7c)
 let result = require("create").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/admin_editor_test_component.tsx");

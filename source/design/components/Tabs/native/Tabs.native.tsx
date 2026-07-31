@@ -1,16 +1,16 @@
-// Module ID: 11705
-// Function ID: 11706
+// Module ID: 11723
+// Function ID: 11724
 // Name: defaultCountFormatter
-// Dependencies: [19, 17, 1946, 21, 4050, 4189, 712, 4599, 9443, 11706, 5273, 500, 2]
+// Dependencies: [19, 17, 1946, 21, 4054, 4193, 712, 4603, 9458, 11724, 5277, 500, 2]
 // Exports: Tabs
 
-// Module 11705 (defaultCountFormatter)
+// Module 11723 (defaultCountFormatter)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _getSystemLocale from "_getSystemLocale";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4050";
+import importDefaultResult from "module_4054";
 
 let ScrollView;
 let c4;
@@ -22,7 +22,7 @@ function defaultCountFormatter(toLocaleString) {
 }
 ({ View: c4, ScrollView } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
-let closure_8 = require("module_4050").createAnimatedComponent(ScrollView);
+let closure_8 = require("module_4054").createAnimatedComponent(ScrollView);
 let c9 = 0.04;
 let closure_10 = { mass: 0.3, damping: 13, stiffness: 100, restDisplacementThreshold: 0.001, overshootClamping: true };
 let closure_11 = createCacheKey.createStyles((gap) => {

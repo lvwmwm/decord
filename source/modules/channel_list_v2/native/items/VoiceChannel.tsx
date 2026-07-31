@@ -1,9 +1,9 @@
-// Module ID: 15193
-// Function ID: 15194
+// Module ID: 15220
+// Function ID: 15221
 // Name: _handleVoiceChannelPress
-// Dependencies: [5, 19, 17, 5780, 3817, 4201, 4385, 4262, 10280, 676, 21, 712, 4676, 9137, 1959, 4399, 8318, 15192, 15194, 10235, 589, 15185, 9062, 4179, 7732, 8313, 698, 15186, 15098, 9093, 1236, 4372, 15109, 15103, 11229, 2]
+// Dependencies: [5, 19, 17, 5785, 3821, 4205, 4389, 4266, 10298, 676, 21, 712, 4680, 9150, 1959, 4403, 8325, 15218, 15221, 10253, 589, 15211, 9075, 4183, 7740, 8320, 698, 15212, 15124, 9104, 1236, 4376, 15135, 15129, 11247, 2]
 
-// Module 15193 (_handleVoiceChannelPress)
+// Module 15220 (_handleVoiceChannelPress)
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import importAllResult from "useIsConnectedToVoiceChannel";
 import { View } from "useStartTime";
@@ -138,20 +138,20 @@ let closure_17 = importAllResult.memo((channel) => {
   ({ selected, collapsed, subtitle } = channel);
   let gameMentionsAsPlainText;
   ({ locked, voiceStates, embeddedActivitiesCount } = channel);
-  let obj = channel(8318);
+  let obj = channel(8325);
   const activeEvent = obj.useActiveEvent(channel.id);
-  let obj1 = channel(15192);
+  let obj1 = channel(15218);
   const startTime = obj1.useStartTime(channel);
-  let obj2 = channel(15194);
+  let obj2 = channel(15221);
   const ensureSyncedChannelVoiceStates = obj2.useEnsureSyncedChannelVoiceStates(channel.id, voiceStates);
-  let obj3 = channel(10235);
+  let obj3 = channel(10253);
   const isConnectedToVoiceChannel = obj3.useIsConnectedToVoiceChannel(channel);
   let obj4 = channel(589);
   const items = [closure_8, updateUserGuildSettingsInternal];
   const items1 = [channel];
   const stateFromStoresObject = obj4.useStateFromStoresObject(items, () => ({ hasUnread: outer1_8.hasUnread(channel.id), mentionCount: outer1_8.getMentionCount(channel.id), resolvedUnreadSetting: outer1_9.resolveUnreadSetting(channel) }), items1);
   ({ hasUnread, mentionCount, resolvedUnreadSetting } = stateFromStoresObject);
-  let obj5 = channel(15185);
+  let obj5 = channel(15211);
   const channelSubtitleData = obj5.getChannelSubtitleData(subtitle);
   let type;
   if (subtitle != null) {
@@ -164,16 +164,16 @@ let closure_17 = importAllResult.memo((channel) => {
       text = subtitle.text;
     }
   }
-  let tmpResult = tmp(9062);
+  let tmpResult = tmp(9075);
   gameMentionsAsPlainText = tmpResult.useGameMentionsAsPlainText(text);
   let result = null;
   if (null != gameMentionsAsPlainText) {
-    let obj7 = gameMentionsAsPlainText(4179);
+    let obj7 = gameMentionsAsPlainText(4183);
     obj = { channelId: null, linkVariant: "text-xs/medium" };
     obj[0] = channel.id;
     result = obj7.parseVoiceChannelStatus(gameMentionsAsPlainText, true, obj);
   }
-  tmpResult = tmp(7732);
+  tmpResult = tmp(7740);
   let tmp13;
   if (!tmpResult.shouldSkipAccessibilityLabels()) {
     obj = { channel: null, unread: null, mentionCount: null, voiceStates: null, embeddedActivitiesCount: null };
@@ -182,7 +182,7 @@ let closure_17 = importAllResult.memo((channel) => {
     obj[2] = mentionCount;
     obj[3] = ensureSyncedChannelVoiceStates;
     obj[4] = embeddedActivitiesCount;
-    tmp13 = gameMentionsAsPlainText(8313)(obj);
+    tmp13 = gameMentionsAsPlainText(8320)(obj);
   }
   const items2 = [, , ];
   ({ id: arr4[0], guild_id: arr4[1] } = channel);
@@ -233,7 +233,7 @@ let closure_17 = importAllResult.memo((channel) => {
     channelInfo: null,
     children: null
   };
-  const tmp19 = jsx(gameMentionsAsPlainText(15186), { channel, isChannelSelected: selected, isChannelCollapsed: collapsed, voiceStates: ensureSyncedChannelVoiceStates, enableConnectedUserLimit: true, enableActivities: true });
+  const tmp19 = jsx(gameMentionsAsPlainText(15212), { channel, isChannelSelected: selected, isChannelCollapsed: collapsed, voiceStates: ensureSyncedChannelVoiceStates, enableConnectedUserLimit: true, enableActivities: true });
   const intl = tmp(1236).intl;
   obj1[6] = intl.string(channel(1236).t["9C444m"]);
   obj1[7] = channel;
@@ -258,13 +258,13 @@ let closure_17 = importAllResult.memo((channel) => {
       obj2[3] = obj3;
       obj4 = { style: null, children: null };
       obj4[0] = tmp21.voiceStatesCollapsed;
-      const summarizedVoiceUsers = tmp(4372).computeSummarizedVoiceUsers(obj2);
+      const summarizedVoiceUsers = tmp(4376).computeSummarizedVoiceUsers(obj2);
       obj5 = { users: null, max: 8, guildId: null, renderIcon: false };
       obj5[0] = summarizedVoiceUsers;
       obj5[2] = channel.guild_id;
-      obj4[1] = tmp17(tmp18(15109), obj5);
+      obj4[1] = tmp17(tmp18(15135), obj5);
       tmp17Result = tmp17(View, obj4);
-      const tmpResult1 = tmp(4372);
+      const tmpResult1 = tmp(4376);
     } else {
       const obj6 = { style: null, children: null };
       obj6[0] = tmp21.voiceStates;
@@ -272,12 +272,12 @@ let closure_17 = importAllResult.memo((channel) => {
       obj7[0] = channel;
       obj7[1] = collapsed;
       obj7[2] = ensureSyncedChannelVoiceStates;
-      obj6[1] = tmp17(tmp18(15103), obj7);
+      obj6[1] = tmp17(tmp18(15129), obj7);
       tmp17Result = tmp17(View, obj6);
     }
   }
   obj1[15] = tmp17Result;
-  return jsx(gameMentionsAsPlainText(15098), {
+  return jsx(gameMentionsAsPlainText(15124), {
     onPress() {
       return (function handleVoiceChannelPress(channel) {
         const self = this;
@@ -322,7 +322,7 @@ const memoResult = importAllResult.memo((channel) => {
   const items = [getVoiceStatesForGuild];
   const items1 = [channel.guild_id];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getVoiceStates(channel.guild_id), items1);
-  const arr3 = importDefault(11229)(channel);
+  const arr3 = importDefault(11247)(channel);
   const items2 = [getUncachedChannelPermissions, handleConnectionOpen];
   const stateFromStoresObject = channel(589).useStateFromStoresObject(items2, () => ({ locked: !outer1_7.can(outer1_13.CONNECT, channel), bypassLimit: outer1_7.can(outer1_13.MOVE_MEMBERS, channel), collapsed: outer1_6.isCollapsed(channel.id) }));
   obj = { channel, embeddedActivitiesCount: null, collapsed: null, voiceStates: null, selected: null, locked: null, bypassLimit: null, subtitle: null };

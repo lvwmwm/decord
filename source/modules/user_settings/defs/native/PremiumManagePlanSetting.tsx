@@ -1,9 +1,9 @@
-// Module ID: 14010
-// Function ID: 14011
+// Module ID: 14034
+// Function ID: 14035
 // Name: route
-// Dependencies: [7753, 676, 10116, 1236, 14011, 2]
+// Dependencies: [7761, 676, 10133, 1236, 14035, 2]
 
-// Module 14010 (route)
+// Module 14034 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -17,7 +17,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.PREMIUM_MANAGE_PLAN,
   getComponent() {
-    return require(14011) /* PremiumPlanSelectSettingScreen */.default;
+    return require(14035) /* PremiumPlanSelectSettingScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);

@@ -1,16 +1,16 @@
-// Module ID: 9761
-// Function ID: 9762
+// Module ID: 9778
+// Function ID: 9779
 // Name: items
-// Dependencies: [1946, 5664, 676, 9762, 1236, 3161, 2]
+// Dependencies: [1946, 5668, 676, 9779, 1236, 3163, 2]
 // Exports: getCheckoutDisclaimerMessageForApplication, getFinePrintMessageForApplication, getGiftLinkAccountDescriptionForApplication, getMobileFinePrintMessageForApplication, getNotSupportedSentence, getRedeemPurchaseDescriptionForApplication
 
-// Module 9761 (items)
+// Module 9778 (items)
 import _getSystemLocale from "_getSystemLocale";
 import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";
 import { MarketingURLs } from "ME";
 
 const require = arg1;
-let closure_6 = { [arg1(9762).StorefrontPlatform.DESKTOP]: "PC", [arg1(9762).StorefrontPlatform.XBOX]: "Xbox", [arg1(9762).StorefrontPlatform.PLAYSTATION]: "PlayStation", [arg1(9762).StorefrontPlatform.SWITCH]: "Switch", [arg1(9762).StorefrontPlatform.APPLE_ARCADE]: "Apple Arcade", [arg1(9762).StorefrontPlatform.NETFLIX]: "Netflix", [arg1(9762).StorefrontPlatform.AMAZON_KIDS_PLUS]: "Amazon Kids+" };
+let closure_6 = { [arg1(9779).StorefrontPlatform.DESKTOP]: "PC", [arg1(9779).StorefrontPlatform.XBOX]: "Xbox", [arg1(9779).StorefrontPlatform.PLAYSTATION]: "PlayStation", [arg1(9779).StorefrontPlatform.SWITCH]: "Switch", [arg1(9779).StorefrontPlatform.APPLE_ARCADE]: "Apple Arcade", [arg1(9779).StorefrontPlatform.NETFLIX]: "Netflix", [arg1(9779).StorefrontPlatform.AMAZON_KIDS_PLUS]: "Amazon Kids+" };
 let items = [require("StorefrontPlatform").StorefrontPlatform.PLAYSTATION];
 const result = require("ME").fileFinishedImporting("modules/slayer_storefront/utils/SlayerStorefrontDisclaimerUtils.tsx");
 
@@ -29,7 +29,7 @@ export const getNotSupportedSentence = function getNotSupportedSentence(id) {
     const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
     obj[0] = listFormat.format(arr.map((arg0) => table[arg0]));
     obj[1] = arr.length;
-    str = intl.formatToPlainString(importDefault(3161)["5h8p5P"], obj);
+    str = intl.formatToPlainString(importDefault(3163)["5h8p5P"], obj);
   }
   return str;
 };
@@ -53,9 +53,9 @@ export const getCheckoutDisclaimerMessageForApplication = function getCheckoutDi
     const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
     obj[0] = listFormat.format(arr.map((arg0) => table[arg0]));
     obj[1] = arr.length;
-    platforms_info = intl2.formatToPlainString(importDefault(3161)["5h8p5P"], obj);
+    platforms_info = intl2.formatToPlainString(importDefault(3163)["5h8p5P"], obj);
   }
-  return intl.format(importDefault(3161).Q0dHYO, { platforms_info });
+  return intl.format(importDefault(3163).Q0dHYO, { platforms_info });
 };
 export const getFinePrintMessageForApplication = function getFinePrintMessageForApplication(name, shouldAppendDisclaimer) {
   let str;
@@ -89,12 +89,12 @@ export const getFinePrintMessageForApplication = function getFinePrintMessageFor
       const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
       obj[0] = listFormat.format(arr.map((arg0) => table[arg0]));
       obj[1] = arr.length;
-      str2 = intl3.formatToPlainString(tmp4(3161)["5h8p5P"], obj);
+      str2 = intl3.formatToPlainString(tmp4(3163)["5h8p5P"], obj);
     }
     const obj1 = { platforms_info: null };
     obj1[0] = str2;
-    obj[1] = intl2.format(importDefault(3161).Q0dHYO, obj1);
-    let formatResult = format(importDefault(3161)["3ah/a2"], obj);
+    obj[1] = intl2.format(importDefault(3163).Q0dHYO, obj1);
+    let formatResult = format(importDefault(3163)["3ah/a2"], obj);
     tmp4 = importDefault;
   } else {
     obj = { applicationName: null };
@@ -114,7 +114,7 @@ export const getMobileFinePrintMessageForApplication = function getMobileFinePri
   let obj = { buyButtonLabel: stringResult, paidServiceTermURL: MarketingURLs.PAID_TERMS, applicationName: str };
   const intl = require(1236) /* getSystemLocale */.intl;
   const format = intl.format;
-  const tmp4 = importDefault(3161);
+  const tmp4 = importDefault(3163);
   if (shouldAppendDisclaimer.shouldAppendDisclaimer) {
     let id;
     if (name != null) {
@@ -134,13 +134,13 @@ export const getMobileFinePrintMessageForApplication = function getMobileFinePri
       const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
       obj[0] = listFormat.format(arr2.map((arg0) => table[arg0]));
       obj[1] = arr2.length;
-      str2 = intl3.formatToPlainString(tmp3(3161)["5h8p5P"], obj);
+      str2 = intl3.formatToPlainString(tmp3(3163)["5h8p5P"], obj);
     }
     obj = { platforms_info: null };
     obj[0] = str2;
     items = [format(tmp4.Q0dHYO, obj), ];
     const intl2 = tmp(1236).intl;
-    items[1] = intl2.format(tmp3(3161).Ufm9XX, obj);
+    items[1] = intl2.format(tmp3(3163).Ufm9XX, obj);
     let items1 = items;
   } else {
     items1 = [format(tmp4.Ufm9XX, obj)];
@@ -165,13 +165,13 @@ export const getRedeemPurchaseDescriptionForApplication = function getRedeemPurc
     const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
     obj[0] = listFormat.format(arr.map((arg0) => table[arg0]));
     obj[1] = arr.length;
-    str = intl2.formatToPlainString(importDefault(3161)["5h8p5P"], obj);
+    str = intl2.formatToPlainString(importDefault(3163)["5h8p5P"], obj);
   }
   obj[1] = str;
-  return intl.format(importDefault(3161).fO4b1C, obj);
+  return intl.format(importDefault(3163).fO4b1C, obj);
 };
 export const getGiftLinkAccountDescriptionForApplication = function getGiftLinkAccountDescriptionForApplication(applicationName, hasAlreadyLinked) {
-  const tmp3 = importDefault(3161);
+  const tmp3 = importDefault(3163);
   if (hasAlreadyLinked.hasAlreadyLinked) {
     let vyAtfo = tmp3.yqAKVO;
     let tmp4 = tmp;
@@ -196,7 +196,7 @@ export const getGiftLinkAccountDescriptionForApplication = function getGiftLinkA
     const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
     obj[0] = listFormat.format(arr.map((arg0) => table[arg0]));
     obj[1] = arr.length;
-    str = intl2.formatToPlainString(tmp4(3161)["5h8p5P"], obj);
+    str = intl2.formatToPlainString(tmp4(3163)["5h8p5P"], obj);
   }
   obj[1] = str;
   return intl.format(vyAtfo, obj);

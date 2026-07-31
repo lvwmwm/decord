@@ -27,7 +27,7 @@ function JsPerformance(smoothingFrames) {
   sharedValue = obj.useSharedValue(null);
   let obj1 = sharedValue(1749);
   const sharedValue1 = obj1.useSharedValue(0);
-  if (typeof createCircularDoublesBuffer !== "find") {
+  if (typeof createCircularDoublesBuffer !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   obj = { next: 0, buffer: null, size: null, count: 0, push: null, front: null, back: null };
@@ -74,7 +74,7 @@ function JsPerformance(smoothingFrames) {
           const _Math2 = Math;
           const current = outer1_1.current;
           const rounded = Math.round(arg0);
-          if (typeof outer1_10 !== "find") {
+          if (typeof outer1_10 !== "fileFinishedImporting") {
             HermesBuiltin.throwTypeError();
           }
           const _Math = Math;
@@ -84,7 +84,7 @@ function JsPerformance(smoothingFrames) {
             arr = rounded1;
           }
           const result = (rounded1 - arr) / current.count;
-          if (typeof outer1_9 !== "find") {
+          if (typeof outer1_9 !== "fileFinishedImporting") {
             HermesBuiltin.throwTypeError();
           }
           const result1 = 2 * (1000 / result);
@@ -99,7 +99,7 @@ function JsPerformance(smoothingFrames) {
         const _Math2 = Math;
         const current = outer1_1.current;
         const rounded = Math.round(arg0);
-        if (typeof outer1_10 !== "find") {
+        if (typeof outer1_10 !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         const _Math = Math;
@@ -109,7 +109,7 @@ function JsPerformance(smoothingFrames) {
           arr = rounded1;
         }
         const result = (rounded1 - arr) / current.count;
-        if (typeof outer1_9 !== "find") {
+        if (typeof outer1_9 !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         const result1 = 2 * (1000 / result);
@@ -145,7 +145,7 @@ function UiPerformance(smoothingFrames) {
   sharedValue1 = obj1.useSharedValue(null);
   const fn = function n(timestamp) {
     if (null === sharedValue1.value) {
-      if (typeof outer1_7 !== "find") {
+      if (typeof outer1_7 !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       const obj = { next: 0, buffer: null, size: null, count: 0, push: null, front: null, back: null };
@@ -187,7 +187,7 @@ function UiPerformance(smoothingFrames) {
     }
     const value = iter.value;
     const rounded = Math.round(timestamp.timestamp);
-    if (typeof outer1_10 !== "find") {
+    if (typeof outer1_10 !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     const rounded1 = Math.round(rounded);
@@ -196,7 +196,7 @@ function UiPerformance(smoothingFrames) {
       arr = rounded1;
     }
     const result = (rounded1 - arr) / value.count;
-    if (typeof outer1_9 !== "find") {
+    if (typeof outer1_9 !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     const result1 = 1000 / result;
@@ -282,7 +282,7 @@ function completeBufferRoutine(arr) {
     arr = rounded;
   }
   const result = (rounded - arr) / arr.count;
-  if (typeof getFps !== "find") {
+  if (typeof getFps !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   return 1000 / result;

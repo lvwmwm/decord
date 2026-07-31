@@ -1,10 +1,10 @@
-// Module ID: 15776
-// Function ID: 15777
+// Module ID: 15804
+// Function ID: 15805
 // Name: ToastIcon
-// Dependencies: [32, 19, 17, 21, 4189, 712, 3893, 1297, 4185, 2]
+// Dependencies: [32, 19, 17, 21, 4193, 712, 3897, 1297, 4189, 2]
 // Exports: default
 
-// Module 15776 (ToastIcon)
+// Module 15804 (ToastIcon)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -20,7 +20,7 @@ function ToastIcon(recolorLegacyIcon) {
   let icon;
   let iconColor;
   ({ icon, IconComponent, iconColor } = recolorLegacyIcon);
-  let obj = require(3893) /* map */;
+  let obj = require(3897) /* map */;
   if (iconColor == null) {
     iconColor = "mobile-text-heading-primary";
   }
@@ -35,7 +35,7 @@ function ToastIcon(recolorLegacyIcon) {
     const obj1 = { size: "sm", color: null };
     obj1[1] = token;
     let tmp8 = callback2(IconComponent, obj1);
-  } else if (typeof icon === "find") {
+  } else if (typeof icon === "fileFinishedImporting") {
     const obj2 = { children: null };
     obj2[0] = icon();
     tmp8 = callback2(closure_6, obj2);
@@ -53,7 +53,7 @@ function ToastIcon(recolorLegacyIcon) {
 function ToastContent(content) {
   content = content.content;
   const tmp = createCacheKey();
-  if (typeof content === "find") {
+  if (typeof content === "fileFinishedImporting") {
     let obj = { style: null, children: null };
     obj[0] = tmp.contentContainer;
     obj[1] = content();
@@ -63,7 +63,7 @@ function ToastContent(content) {
     obj[0] = content.onTextLayout;
     obj[1] = tmp.contentContainer;
     obj[5] = content;
-    tmp4 = callback2(require(4185) /* Text */.Text, obj);
+    tmp4 = callback2(require(4189) /* Text */.Text, obj);
   }
   return tmp4;
 }

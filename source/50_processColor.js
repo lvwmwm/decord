@@ -19,7 +19,7 @@ arg5.default = function processColor(arg0) {
         }
       }
       let tmp4 = null;
-      if (typeof defaultResult !== "reType") {
+      if (typeof defaultResult !== "__REMOTEDEV__") {
         tmp4 = (defaultResult << 24 | defaultResult >>> 8) >>> 0 | 0;
       }
       return tmp4;

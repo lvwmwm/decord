@@ -1,10 +1,10 @@
-// Module ID: 4024
-// Function ID: 4025
+// Module ID: 4028
+// Function ID: 4029
 // Name: RouteParam
-// Dependencies: [677, 1379, 2, 4025]
+// Dependencies: [677, 1379, 2, 4029]
 // Exports: isPseudoGuildId, isValidChannelId, isValidGuildId
 
-// Module 4024 (RouteParam)
+// Module 4028 (RouteParam)
 import { PSEUDO_GUILD_IDS } from "INVITE";
 import { isStaticChannelRoute } from "set";
 

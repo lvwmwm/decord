@@ -1,10 +1,10 @@
-// Module ID: 16192
-// Function ID: 16193
+// Module ID: 16220
+// Function ID: 16221
 // Name: getName
-// Dependencies: [16193, 1236, 2157, 16194, 16195, 2]
-// Exports: getSeatName
+// Dependencies: [16221, 1236, 2157, 16222, 16223, 16224, 2]
+// Exports: getBlurredBackgroundScale, getSeatName
 
-// Module 16192 (getName)
+// Module 16220 (getName)
 import { ytIYuY as IE3e0y } from "messagesProxy";
 import { ytIYuY as IE3e0y } from "messagesProxy";
 import { ytIYuY as IE3e0y } from "messagesProxy";
@@ -39,9 +39,10 @@ import { IE3e0y } from "messagesProxy";
 let IE3e0y = arg1;
 let YpJ7QS = importDefault;
 let obj = {};
-obj = { background: null, aspectRatio: 1.375514403292181, getName: null, seats: null, plants: null };
+obj = { background: null, backgroundBlurred: null, aspectRatio: 1.366583541147132, getName: null, seats: null, plants: null };
 obj[0] = require("metadata");
-obj[2] = function getName() {
+obj[1] = require("metadata");
+obj[3] = function getName() {
   const intl = IE3e0y(1236).intl;
   return intl.string(v3(2157)["4KcB5R"]);
 };
@@ -297,18 +298,19 @@ obj20[1] = () => {
 };
 obj20[2] = require("GUILD_ROOM_BACKGROUND_POSITIONS").GUILD_ROOM_BACKGROUND_POSITIONS[require("GuildRoomBackgrounds").GuildRoomBackgrounds.DEFAULT][20];
 items[20] = obj20;
-obj[3] = items;
+obj[4] = items;
 const items1 = [{ x: 45.57, y: 50.62 }];
-obj[4] = items1;
+obj[5] = items1;
 obj[require("GuildRoomBackgrounds").GuildRoomBackgrounds.DEFAULT] = obj;
 const result = require("messagesProxy").fileFinishedImporting("modules/guild_rooms/GuildRoomConstants.tsx");
 
 export const GUILD_ROOM_SPATIAL_AUDIO_MODE = "guild-room";
 export const DEFAULT_BACKGROUND_POSITION = { imageOffsetX: 0, imageOffsetY: 0, imageWidth: 0, imageHeight: 0 };
+export const BACKGROUND_BLUR_WIDTH_FACTOR = 0.0228310502283105;
 export const getSeatName = function getSeatName(arg0, arg1) {
   const IE3e0y = arg0;
   let closure_1 = arg1;
-  const seats = obj[IE3e0y(undefined, 16193).GuildRoomBackgrounds.DEFAULT].seats;
+  const seats = obj[IE3e0y(undefined, 16221).GuildRoomBackgrounds.DEFAULT].seats;
   const found = seats.find((position) => {
     let tmp = position.position.x === closure_0;
     if (tmp) {
@@ -324,5 +326,12 @@ export const getSeatName = function getSeatName(arg0, arg1) {
     str = "";
   }
   return str;
+};
+export const getBlurredBackgroundScale = function getBlurredBackgroundScale(arg0, arg1) {
+  let num = 0.045662100456621;
+  if (arg1) {
+    num = 0.045662100456621 * arg0;
+  }
+  return 1 + num;
 };
 export const GUILD_ROOM_BACKGROUND_CONFIG = obj;

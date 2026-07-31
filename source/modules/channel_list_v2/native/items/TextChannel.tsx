@@ -1,9 +1,9 @@
-// Module ID: 15184
-// Function ID: 15185
-// Dependencies: [19, 17, 1371, 1933, 1372, 3817, 4201, 4385, 10280, 21, 4189, 712, 15099, 4690, 4650, 11474, 1348, 589, 4631, 4199, 4197, 1234, 9093, 15098, 8011, 4380, 4185, 5568, 10324, 8233, 8313, 15185, 15186, 2]
+// Module ID: 15210
+// Function ID: 15211
+// Dependencies: [19, 17, 1371, 1933, 1372, 3821, 4205, 4389, 10298, 21, 4193, 712, 15125, 4694, 4654, 11492, 1348, 589, 4635, 4203, 4201, 1234, 9104, 15124, 8018, 4384, 4189, 5572, 10342, 8240, 8320, 15211, 15212, 15219, 2]
 
-// Module 15184
-import importAllResult from "module_4199";
+// Module 15210
+import importAllResult from "module_4203";
 import { View } from "initialize";
 import participantFromServer from "participantFromServer";
 import isSubscriptionGated from "isSubscriptionGated";
@@ -73,6 +73,7 @@ const memoResult = importAllResult.memo((channel) => {
   let tmp3 = callback2(muted, selected, isSuggestedSection(id[16])("TextChannel"));
   id = channel.id;
   guild_id = channel.guild_id;
+  const ref = guild_id.useRef(null);
   let obj = channel(id[17]);
   const items = [ensureGuildLoaded, isSubscriptionGated, getUncachedChannelPermissions, generateOldThreadCutoff, updateUserGuildSettingsInternal, participantFromServer];
   const items1 = [channel, id];
@@ -123,35 +124,35 @@ const memoResult = importAllResult.memo((channel) => {
     }
     obj.transitionToChannel(id, tmp3);
   }, items3);
-  let tmp9 = hasUnread;
+  let tmp10 = hasUnread;
   callback2 = guild_id.useCallback(() => {
     const result = channel(id[22]).openChannelLongPressActionSheet(id);
   }, items4);
   if (hasUnread) {
-    tmp9 = !muted;
+    tmp10 = !muted;
   }
-  let tmp4Result = tmp4(tmp2[23]);
-  const channelMode = tmp4Result.getChannelMode({ muted, selected, unread: tmp9, resolvedUnreadSetting, mentionCount, locked: false, channel });
-  tmp4Result = tmp4(tmp2[24]);
-  const isActivitiesInTextEnabled = tmp4Result.useIsActivitiesInTextEnabled(id);
+  let tmp5Result = tmp5(tmp2[23]);
+  const channelMode = tmp5Result.getChannelMode({ muted, selected, unread: tmp10, resolvedUnreadSetting, mentionCount, locked: false, channel });
+  tmp5Result = tmp5(tmp2[24]);
+  const isActivitiesInTextEnabled = tmp5Result.useIsActivitiesInTextEnabled(id);
   if (channel.isRulesChannel) {
     let channelIcon = tmp(tmp2[12]);
-    let BookCheckIcon = tmp4(tmp2[13]).BookCheckIcon;
+    let BookCheckIcon = tmp5(tmp2[13]).BookCheckIcon;
   } else {
-    channelIcon = tmp4(tmp2[14]).getChannelIcon(channel, { isRulesChannel: false });
-    const tmp4Result1 = tmp4(tmp2[14]);
-    BookCheckIcon = tmp4(tmp2[14]).getChannelIconComponent(channel, { isRulesChannel: false });
-    const tmp4Result2 = tmp4(tmp2[14]);
+    channelIcon = tmp5(tmp2[14]).getChannelIcon(channel, { isRulesChannel: false });
+    const tmp5Result1 = tmp5(tmp2[14]);
+    BookCheckIcon = tmp5(tmp2[14]).getChannelIconComponent(channel, { isRulesChannel: false });
+    const tmp5Result2 = tmp5(tmp2[14]);
   }
-  const tmp4Result3 = channel(id[15]);
+  const tmp5Result3 = channel(id[15]);
   const BaseChannelIconResult = channel(id[15]).BaseChannelIcon({ mode: channelMode, source: channelIcon, IconComponent: BookCheckIcon });
   obj = { experimental_useNativeText: true, lineClamp: 1, style: tmp3.channelLabelText };
-  const tmp14 = isSuggestedSection(id[25])(channel);
+  const tmp15 = isSuggestedSection(id[25])(channel);
   const merged = Object.assign(channel(id[15]).useChannelNameTextProps(channelMode));
-  obj.children = tmp14;
-  const tmp17 = callback(channel(id[26]).Text, obj);
-  const tmp4Result4 = channel(id[15]);
-  const items5 = [callback(isSuggestedSection(id[28]), { unread: tmp9, resolvedUnreadSetting }), ];
+  obj.children = tmp15;
+  const tmp18 = callback(channel(id[26]).Text, obj);
+  const tmp5Result4 = channel(id[15]);
+  const children = [callback(isSuggestedSection(id[28]), { unread: tmp10, resolvedUnreadSetting }), , ];
   obj = { onPressIn: callback, onPress: callback1, onLongPress: callback2, style: null, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, children: null };
   const items6 = [tmp3.container, ];
   const tmpResult = isSuggestedSection(id[27]);
@@ -159,7 +160,7 @@ const memoResult = importAllResult.memo((channel) => {
   obj[3] = items6;
   const obj1 = { channel, unread: hasUnread, mentionCount, embeddedActivitiesCount: null, isSubscriptionGated: null, needSubscriptionToAccess: null };
   let num = 0;
-  const tmp20 = channelMode === channel(id[15]).ChannelModes.SELECTED && tmp3.selected;
+  const tmp21 = channelMode === channel(id[15]).ChannelModes.SELECTED && tmp3.selected;
   if (isActivitiesInTextEnabled) {
     num = stateFromStoresObject.embeddedActivitiesCount;
   }
@@ -168,40 +169,44 @@ const memoResult = importAllResult.memo((channel) => {
   obj1[5] = needSubscriptionToAccess;
   obj[6] = isSuggestedSection(id[30])(obj1);
   obj[7] = { selected };
-  let tmp15Result = channelMode === tmp4(tmp2[15]).ChannelModes.SELECTED;
-  if (tmp15Result) {
+  let tmp16Result = channelMode === tmp5(tmp2[15]).ChannelModes.SELECTED;
+  if (tmp16Result) {
     const obj2 = { style: null };
     obj2[0] = tmp3.selectedBorder;
-    tmp15Result = tmp15(View, obj2);
+    tmp16Result = tmp16(View, obj2);
   }
-  const items7 = [tmp15Result, ];
-  const items8 = [tmp3.row, ];
-  const obj3 = { style: items8, children: null };
-  items8[1] = null != subtitle && tmp3.rowWithSubtitle;
+  const items7 = [tmp16Result, ];
+  const obj3 = { ref, style: items8, children: null };
+  items8 = [tmp3.row, null != subtitle && tmp3.rowWithSubtitle];
   const items9 = [BaseChannelIconResult, , ];
-  let tmp18Result = tmp17;
+  let tmp19Result = tmp18;
   if (null != subtitle) {
     const obj4 = { style: null, children: null };
     obj4[0] = tmp3.channelLabel;
-    const items10 = [tmp17, ];
+    const items10 = [tmp18, ];
     const obj5 = { experimental_useNativeText: true, lineClamp: 1 };
-    const merged1 = Object.assign(tmp4(tmp2[15]).getChannelSubtitleTextProps(channelMode));
-    const tmp4Result5 = tmp4(tmp2[15]);
-    obj5.children = tmp4(tmp2[31]).getChannelSubtitleData(subtitle).subtitle;
-    items10[1] = tmp15(tmp4(tmp2[26]).Text, obj5);
+    const merged1 = Object.assign(tmp5(tmp2[15]).getChannelSubtitleTextProps(channelMode));
+    const tmp5Result5 = tmp5(tmp2[15]);
+    obj5.children = tmp5(tmp2[31]).getChannelSubtitleData(subtitle).subtitle;
+    items10[1] = tmp16(tmp5(tmp2[26]).Text, obj5);
     obj4[1] = items10;
-    tmp18Result = tmp18(tmp24, obj4);
-    const tmp4Result6 = tmp4(tmp2[31]);
+    tmp19Result = tmp19(tmp25, obj4);
+    const tmp5Result6 = tmp5(tmp2[31]);
   }
-  const obj6 = { children: null };
-  items9[1] = tmp18Result;
+  items9[1] = tmp19Result;
   items9[2] = callback(isSuggestedSection(id[32]), { channel, isChannelSelected: selected, muted, isSubscriptionGated, needSubscriptionToAccess, enableActivities: isActivitiesInTextEnabled });
-  obj3[1] = items9;
+  obj3[2] = items9;
   items7[1] = closure_14(View, obj3);
   obj[8] = items7;
-  items5[1] = closure_14(channel(id[29]).AnimatedPressableHighlight, obj);
-  obj6[0] = items5;
-  return closure_14(tmpResult, obj6);
+  children[1] = closure_14(channel(id[29]).AnimatedPressableHighlight, obj);
+  if (selected) {
+    const obj6 = { targetRef: null, channelType: null };
+    obj6[0] = ref;
+    obj6[1] = channel.type;
+    selected = tmp16(tmp(tmp2[33]), obj6);
+  }
+  children[2] = selected;
+  return closure_14(tmpResult, { children });
 });
 let result = require("participantFromServer").fileFinishedImporting("modules/channel_list_v2/native/items/TextChannel.tsx");
 

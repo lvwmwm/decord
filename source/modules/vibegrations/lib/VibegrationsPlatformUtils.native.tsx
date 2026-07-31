@@ -1,9 +1,9 @@
-// Module ID: 12607
-// Function ID: 12608
+// Module ID: 12632
+// Function ID: 12633
 // Name: set
 // Dependencies: [2]
 
-// Module 12607 (set)
+// Module 12632 (set)
 const result = require("set").fileFinishedImporting("modules/vibegrations/lib/VibegrationsPlatformUtils.native.tsx");
 
 export default {

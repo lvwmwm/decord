@@ -1,10 +1,10 @@
-// Module ID: 13929
-// Function ID: 13930
+// Module ID: 13953
+// Function ID: 13954
 // Name: AvatarDecorationPreviewImage
-// Dependencies: [19, 17, 8095, 21, 4189, 13928, 712, 8068, 8079, 8690, 11311, 6615, 6624, 1901, 1898, 2]
+// Dependencies: [19, 17, 8102, 21, 4193, 13952, 712, 8075, 8086, 8703, 11329, 6621, 6630, 1901, 1898, 2]
 // Exports: default
 
-// Module 13929 (AvatarDecorationPreviewImage)
+// Module 13953 (AvatarDecorationPreviewImage)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PROFILE_FRAME_ASPECT_RATIO as closure_5 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO";
@@ -18,7 +18,7 @@ function AvatarDecorationPreviewImage(arg0) {
   let product;
   let styles;
   ({ product, styles } = arg0);
-  let obj = require(13928) /* getCollectibleTypeName */;
+  let obj = require(13952) /* getCollectibleTypeName */;
   const avatarDecorationPreviewUrl = obj.getAvatarDecorationPreviewUrl(product);
   let tmp2 = null;
   if (null != avatarDecorationPreviewUrl) {
@@ -33,7 +33,7 @@ function AvatarDecorationPreviewImage(arg0) {
 }
 function NameplatePreviewImage(styles) {
   styles = styles.styles;
-  let obj = require(8068) /* getNameplateAssets */;
+  let obj = require(8075) /* getNameplateAssets */;
   const staticImageUrl = obj.getNameplateAssets(styles.nameplateData).staticImageUrl;
   let tmp = null;
   if (null != staticImageUrl) {
@@ -53,7 +53,7 @@ function ProfileEffectPreviewImage(arg0) {
   let product;
   let styles;
   ({ product, styles } = arg0);
-  let obj = require(13928) /* getCollectibleTypeName */;
+  let obj = require(13952) /* getCollectibleTypeName */;
   const profileEffectPreviewUrl = obj.getProfileEffectPreviewUrl(product);
   let tmp2 = null;
   if (null != profileEffectPreviewUrl) {
@@ -70,19 +70,19 @@ function ProfileFramePreviewImage(arg0) {
   let product;
   let styles;
   ({ product, styles } = arg0);
-  const tmp3 = importDefault(8079)(product.skuId, "FamilyCenterActivityItemPreview");
+  const tmp3 = importDefault(8086)(product.skuId, "FamilyCenterActivityItemPreview");
   let tmp4 = null;
   if (null != tmp3) {
     let obj = { style: null, children: null };
     obj[0] = styles.profileFrameContainer;
     obj = { profileFrame: null, previewWidth: null, previewHeight: null, profileBackgroundColor: null };
     obj[0] = tmp3;
-    obj[1] = require(13928) /* getCollectibleTypeName */.PREVIEW_SIZE * closure_5;
-    obj[2] = require(13928) /* getCollectibleTypeName */.PREVIEW_SIZE;
+    obj[1] = require(13952) /* getCollectibleTypeName */.PREVIEW_SIZE * closure_5;
+    obj[2] = require(13952) /* getCollectibleTypeName */.PREVIEW_SIZE;
     obj[3] = tmp(712).colors.BACKGROUND_BASE_LOW;
-    obj[1] = jsx(tmp(8690), { profileFrame: null, previewWidth: null, previewHeight: null, profileBackgroundColor: null });
+    obj[1] = jsx(tmp(8703), { profileFrame: null, previewWidth: null, previewHeight: null, profileBackgroundColor: null });
     tmp4 = <closure_3 profileFrame={null} previewWidth={null} previewHeight={null} profileBackgroundColor={null} />;
-    const tmpResult = tmp(8690);
+    const tmpResult = tmp(8703);
   }
   return tmp4;
 }
@@ -95,15 +95,15 @@ function SubscriptionPreview(arg0) {
     obj[0] = styles.purchasePlaceholder;
     obj = { size: "custom", style: null };
     obj[1] = { width: 20, height: 20 };
-    obj[1] = jsx(require(11311) /* ShopIcon */.ShopIcon, { size: "custom", style: null });
+    obj[1] = jsx(require(11329) /* ShopIcon */.ShopIcon, { size: "custom", style: null });
     return <closure_3 size="custom" style={null} />;
   } else {
     const obj1 = { style: null, children: null };
     obj1[0] = styles.purchasePlaceholder;
     if (obj4.isGuildBoostSubscription(subscriptionPlanId)) {
-      let NitroWheelIcon = tmp5(6615).BoostGemIcon;
+      let NitroWheelIcon = tmp5(6621).BoostGemIcon;
     } else {
-      NitroWheelIcon = tmp5(6624).NitroWheelIcon;
+      NitroWheelIcon = tmp5(6630).NitroWheelIcon;
     }
     obj = { size: "custom", style: null };
     obj[1] = { width: 20, height: 20 };
@@ -120,7 +120,7 @@ function CollectiblePreview(arg0) {
     obj[0] = styles.purchasePlaceholder;
     obj = { size: "custom", style: null };
     obj[1] = { width: 20, height: 20 };
-    obj[1] = jsx(require(11311) /* ShopIcon */.ShopIcon, { size: "custom", style: null });
+    obj[1] = jsx(require(11329) /* ShopIcon */.ShopIcon, { size: "custom", style: null });
     return <closure_3 size="custom" style={null} />;
   } else {
     const type = product.type;
@@ -154,7 +154,7 @@ function CollectiblePreview(arg0) {
       obj[0] = styles.purchasePlaceholder;
       const obj5 = { size: "custom", style: null };
       obj5[1] = { width: 20, height: 20 };
-      obj[1] = jsx(tmp17(11311).ShopIcon, { size: "custom", style: null });
+      obj[1] = jsx(tmp17(11329).ShopIcon, { size: "custom", style: null });
       return <closure_3 style={null}>{null}</closure_3>;
     }
   }

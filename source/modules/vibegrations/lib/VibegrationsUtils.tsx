@@ -1,30 +1,49 @@
-// Module ID: 5682
-// Function ID: 5683
-// Name: _publishPreviewAndReauthorizeIfPermissionsChanged
-// Dependencies: [5, 4226, 1862, 3817, 5683, 676, 5684, 589, 5685, 12607, 2]
-// Exports: canManageVibegrations, isVibegrationsChannelCandidate, publishPreviewAndReauthorizeIfPermissionsChanged, useCanManageVibegrations, useIsVibegrationsChannelCandidate, vibegrationsAppIdFromTopic, vibegrationsTopicForApp
+// Module ID: 5686
+// Function ID: 5687
+// Name: vibegrationsAppIdFromTopic
+// Dependencies: [5, 4230, 1932, 1862, 3821, 5687, 676, 5688, 589, 5689, 12632, 2]
+// Exports: canManageVibegrations, findVibegrationChannelId, isVibegrationsChannelCandidate, isVibegrationsProjectInGuild, publishPreviewAndReauthorizeIfPermissionsChanged, useCanManageVibegrations, useIsVibegrationsChannelCandidate, vibegrationsTopicForApp
 
-// Module 5682 (_publishPreviewAndReauthorizeIfPermissionsChanged)
-import closure_3 from "ME";
+// Module 5686 (vibegrationsAppIdFromTopic)
+import handleProjectUpsert from "handleProjectUpsert";
 import addApplication from "addApplication";
+import comparator from "comparator";
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_6 } from "comparator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
-import handleProjectUpsert from "handleProjectUpsert";
+import closure_9 from "handleProjectUpsert";
 import ME from "ME";
 
 let c10;
-let c9;
-let metroImportAll;
+let closure_12;
+let unpackModuleId;
 const require = arg1;
+function vibegrationsAppIdFromTopic(topic) {
+  if (null != topic) {
+    if (topic.startsWith(c13)) {
+      const substr = topic.slice(28);
+      let tmp4 = null;
+      if (regex.test(substr)) {
+        tmp4 = substr;
+      }
+      return tmp4;
+    }
+  }
+  return null;
+}
+function vibegrationsTextChannelsIn(guild_id) {
+  return channels.getChannels(guild_id)[closure_6].filter((channel) => channel.channel.type === constants.GUILD_TEXT);
+}
 function _publishPreviewAndReauthorizeIfPermissionsChanged() {
   const self = this;
   const tmp = callback((arg0) => {
     let closure_0 = arg0;
-    let c3 = 0;
+    let closure_1 = arg1;
     let c4 = 0;
-    return (function*(arg0) {
-      if (application === 2) {
-        application = 3;
+    let c5 = 0;
+    const iter = (function*(arg0) {
+      if (body === 2) {
+        body = 3;
         HermesBuiltin.throwTypeError();
       } else if (tmp4 === 3) {
         if (arg0 === 1) {
@@ -38,54 +57,81 @@ function _publishPreviewAndReauthorizeIfPermissionsChanged() {
         }
       } else {
         try {
-          application = 2;
-          if (0 === id) {
+          body = 2;
+          if (0 === application) {
             if (arg0 === 1) {
-              application = 3;
+              body = 3;
               throw arg1;
             } else if (arg0 === 2) {
-              application = 3;
+              body = 3;
               obj = { value: null, done: true };
               obj[0] = arg1;
               return obj;
             } else {
-              let body = tmp5;
-              let lib = tmp2;
-              let preview_guild_id;
-              lib = undefined;
-              body = undefined;
-              id = undefined;
+              let preview_guild_id = tmp5;
+              preview_guild_id = tmp2;
+              let flag;
+              let obj1 = flag;
+              if (flag === undefined) {
+                obj1 = {};
+              }
+              flag = obj1.countAsDeploy;
+              if (flag === undefined) {
+                flag = true;
+              }
+              preview_guild_id = undefined;
+              preview_guild_id = undefined;
               application = undefined;
+              body = undefined;
+              application = undefined;
+              let bot_permissions_changed;
               let integration_installed;
               let preview_application_id;
               let application2;
-              const project = outer1_7.getProject(preview_guild_id);
-              preview_guild_id = undefined;
-              if (project != null) {
-                preview_guild_id = project.preview_guild_id;
-              }
-              id = 1;
               application = 1;
-              let obj1 = { value: null, done: false };
-              obj1[0] = callback(outer1_2[8]).publishPreviewProject(preview_guild_id);
-              return obj1;
+              body = 1;
+              return { value: "ct", done: "Array" };
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              body = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              body = 3;
+              const obj2 = { value: null, done: true };
+              obj2[0] = arg1;
+              return obj2;
+            } else {
+              preview_guild_id = preview_application_id.getProject(callback);
+              preview_guild_id = undefined;
+              if (preview_guild_id != null) {
+                preview_guild_id = preview_guild_id.preview_guild_id;
+              }
+              let obj5 = callback(preview_guild_id[9]);
+              const obj3 = { countAsDeploy: null };
+              obj3[0] = flag;
+              application = 2;
+              body = 1;
+              const obj4 = { value: null, done: false };
+              obj4[0] = obj5.publishPreviewProject(callback, obj3);
+              return obj4;
             }
           } else {
-            if (1 === tmp5) {
+            if (2 === tmp5) {
               if (arg0 === 1) {
-                application = 3;
+                body = 3;
                 throw arg1;
               } else if (arg0 === 2) {
-                application = 3;
-                const obj2 = { value: null, done: true };
-                obj2[0] = arg1;
-                return obj2;
+                body = 3;
+                obj5 = { value: null, done: true };
+                obj5[0] = arg1;
+                return obj5;
               } else {
-                lib = arg1;
-                if (lib.ok) {
-                  body = lib.body;
-                  id = body.application;
-                  application = body.bot_permissions_changed;
+                application = arg1;
+                if (application.ok) {
+                  body = application.body;
+                  application = body.application;
+                  bot_permissions_changed = body.bot_permissions_changed;
                   integration_installed = body.integration_installed;
                   preview_application_id = body.project.preview_application_id;
                   if (null != preview_guild_id) {
@@ -93,16 +139,16 @@ function _publishPreviewAndReauthorizeIfPermissionsChanged() {
                       if (!integration_installed) {
                         application2 = application.getApplication(preview_application_id);
                         if (null != application2) {
-                          obj1 = lib(body[9]);
-                          const obj3 = { applicationId: null, application: null, guildId: null };
-                          obj3[0] = id.id;
-                          obj3[1] = application2;
-                          obj3[2] = preview_guild_id;
-                          id = 2;
-                          application = 1;
-                          const obj4 = { value: null, done: false };
-                          obj4[0] = obj1.openVibegrationsAppInstallModal(obj3);
-                          return obj4;
+                          obj1 = flag(preview_guild_id[10]);
+                          const obj6 = { applicationId: null, application: null, guildId: null };
+                          obj6[0] = application.id;
+                          obj6[1] = application2;
+                          obj6[2] = preview_guild_id;
+                          application = 3;
+                          body = 1;
+                          const obj7 = { value: null, done: false };
+                          obj7[0] = obj1.openVibegrationsAppInstallModal(obj6);
+                          return obj7;
                         }
                       }
                     }
@@ -110,23 +156,25 @@ function _publishPreviewAndReauthorizeIfPermissionsChanged() {
                 }
               }
             } else if (arg0 === 1) {
-              application = 3;
+              body = 3;
               throw arg1;
             } else if (arg0 === 2) {
-              application = 3;
+              body = 3;
               obj = { value: null, done: true };
               obj[0] = arg1;
               return obj;
             }
-            application = 3;
+            body = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp33) {
-          application = tmp;
-          throw tmp33;
+        } catch (tmp38) {
+          body = tmp;
+          throw tmp38;
         }
       }
     })();
+    iter.next();
+    return iter;
   });
   const _publishPreviewAndReauthorizeIfPermissionsChanged = tmp;
   const apply = tmp.apply;
@@ -137,29 +185,43 @@ function _publishPreviewAndReauthorizeIfPermissionsChanged() {
   }
   return applyArgumentsResult;
 }
-({ Permissions: metroImportAll, ChannelTypes: c9, GuildFeatures: c10 } = ME);
-let c11 = "vibegrations_application_id=";
-const re12 = /^\d{17,20}$/;
-let result = require("createGuildRecordFromRust").fileFinishedImporting("modules/vibegrations/lib/VibegrationsUtils.tsx");
+({ Permissions: c10, ChannelTypes: unpackModuleId, GuildFeatures: closure_12 } = ME);
+let c13 = "vibegrations_application_id=";
+const re14 = /^\d{17,20}$/;
+let result = require("comparator").fileFinishedImporting("modules/vibegrations/lib/VibegrationsUtils.tsx");
 
-export const vibegrationsAppIdFromTopic = function vibegrationsAppIdFromTopic(str) {
-  if (null != str) {
-    if (str.startsWith(c11)) {
-      const substr = str.slice(28);
-      let tmp4 = null;
-      if (regex.test(substr)) {
-        tmp4 = substr;
-      }
-      return tmp4;
+export { vibegrationsAppIdFromTopic };
+export const vibegrationsTopicForApp = function vibegrationsTopicForApp(arg0) {
+  return "" + c13 + arg0;
+};
+export const isVibegrationsProjectInGuild = function isVibegrationsProjectInGuild(guild_id) {
+  let tmp = null != guild_id;
+  if (tmp) {
+    let tmp3 = guild_id.guild_id === arg1 || guild_id.preview_guild_id === arg1;
+    if (!tmp3) {
+      tmp3 = null == guild_id.guild_id && null == guild_id.preview_guild_id;
+      const tmp4 = null == guild_id.guild_id && null == guild_id.preview_guild_id;
+    }
+    tmp = tmp3;
+  }
+  return tmp;
+};
+export { vibegrationsTextChannelsIn };
+export const findVibegrationChannelId = function findVibegrationChannelId(guild_id, application_id) {
+  for (const item10009 of tmp) {
+    let channel = item10009.channel;
+    let tmp2 = channel;
+    let tmp3 = vibegrationsAppIdFromTopic;
+    if (vibegrationsAppIdFromTopic(channel.topic) === arg1) {
+      let tmp4 = obj;
+      obj.return();
+      return channel.id;
     }
   }
   return null;
 };
-export const vibegrationsTopicForApp = function vibegrationsTopicForApp(arg0) {
-  return "" + c11 + arg0;
-};
 export const canManageVibegrations = function canManageVibegrations(closure_2, isAccessibleChannelOrThreadPath) {
-  let obj = require(5684) /* useIsVibegrationsGuildEnabled */;
+  let obj = require(5688) /* useIsVibegrationsGuildEnabled */;
   obj = { guildId: closure_2.id, location: isAccessibleChannelOrThreadPath };
   let result = obj.isVibegrationsGuildEnabled(obj);
   if (result) {
@@ -179,9 +241,9 @@ export const useCanManageVibegrations = function useCanManageVibegrations(guildI
   let obj = _require(589);
   const items = [getUncachedChannelPermissions];
   const items1 = [guildId];
-  const stateFromStores = obj.useStateFromStores(items, () => outer1_6.can(outer1_8.MANAGE_CHANNELS, closure_0) && outer1_6.can(outer1_8.MANAGE_GUILD, closure_0), items1);
+  const stateFromStores = obj.useStateFromStores(items, () => outer1_8.can(outer1_10.MANAGE_CHANNELS, closure_0) && outer1_8.can(outer1_10.MANAGE_GUILD, closure_0), items1);
   obj = { guildId: guildId.id, location: useGuildActionRows };
-  let isVibegrationsGuildEnabled = _require(5684).useIsVibegrationsGuildEnabled(obj);
+  let isVibegrationsGuildEnabled = _require(5688).useIsVibegrationsGuildEnabled(obj);
   const features = guildId.features;
   const hasItem = features.has(constants3.INTERNAL_EMPLOYEE_ONLY);
   if (isVibegrationsGuildEnabled) {
@@ -217,7 +279,7 @@ export const isVibegrationsChannelCandidate = function isVibegrationsChannelCand
     let tmp6 = null;
     if (null != topic) {
       tmp6 = null;
-      if (topic.startsWith(c11)) {
+      if (topic.startsWith(c13)) {
         const substr = topic.slice(28);
         let tmp10 = null;
         if (regex.test(substr)) {
@@ -237,7 +299,7 @@ export const isVibegrationsChannelCandidate = function isVibegrationsChannelCand
     result = !hasItem;
   }
   if (result) {
-    let obj = require(5684) /* useIsVibegrationsGuildEnabled */;
+    let obj = require(5688) /* useIsVibegrationsGuildEnabled */;
     let guild_id1;
     if (channel != null) {
       guild_id1 = channel.guild_id;
@@ -258,7 +320,7 @@ export const useIsVibegrationsChannelCandidate = function useIsVibegrationsChann
     if (guild_id != null) {
       guild_id = guild_id.guild_id;
     }
-    return outer1_5.getGuild(guild_id);
+    return outer1_7.getGuild(guild_id);
   });
   guild_id = undefined;
   if (guild_id != null) {
@@ -266,7 +328,7 @@ export const useIsVibegrationsChannelCandidate = function useIsVibegrationsChann
   }
   obj = { guildId: guild_id, location };
   let tmp4 = null != guild_id;
-  const isVibegrationsGuildEnabled = _require(5684).useIsVibegrationsGuildEnabled(obj);
+  const isVibegrationsGuildEnabled = _require(5688).useIsVibegrationsGuildEnabled(obj);
   if (tmp4) {
     tmp4 = guild_id.type === constants2.GUILD_TEXT;
   }
@@ -275,7 +337,7 @@ export const useIsVibegrationsChannelCandidate = function useIsVibegrationsChann
     let tmp6 = null;
     if (null != topic) {
       tmp6 = null;
-      if (topic.startsWith(c11)) {
+      if (topic.startsWith(c13)) {
         const substr = topic.slice(28);
         let tmp10 = null;
         if (regex.test(substr)) {

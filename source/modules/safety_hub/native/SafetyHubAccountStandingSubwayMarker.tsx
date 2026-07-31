@@ -1,10 +1,10 @@
-// Module ID: 13780
-// Function ID: 13781
+// Module ID: 13804
+// Function ID: 13805
 // Name: SafetyHubAccountStandingSubwayMarker
-// Dependencies: [19, 17, 21, 4189, 712, 1236, 4185, 2]
+// Dependencies: [19, 17, 21, 4193, 712, 1236, 4189, 2]
 // Exports: default
 
-// Module 13780 (SafetyHubAccountStandingSubwayMarker)
+// Module 13804 (SafetyHubAccountStandingSubwayMarker)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

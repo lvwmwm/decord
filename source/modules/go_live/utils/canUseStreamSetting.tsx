@@ -1,10 +1,10 @@
-// Module ID: 10747
-// Function ID: 10748
+// Module ID: 10765
+// Function ID: 10766
 // Name: canUseStreamSetting
-// Dependencies: [1876, 3835, 4081, 2]
+// Dependencies: [1876, 3839, 4085, 2]
 // Exports: default
 
-// Module 10747 (canUseStreamSetting)
+// Module 10765 (canUseStreamSetting)
 import { StreamQualities } from "GuildFeatures";
 
 let result = require("getGuildTierFromGuild").fileFinishedImporting("modules/go_live/utils/canUseStreamSetting.tsx");
@@ -15,11 +15,11 @@ export default function canUseStreamSetting(quality, user) {
     if (null != quality.quality) {
       quality = quality.quality;
       if (StreamQualities.HIGH_STREAMING_QUALITY === quality) {
-        flag = importDefault(3835).canStreamQuality(importDefault(3835).StreamQuality.HIGH, user);
-        const obj2 = importDefault(3835);
+        flag = importDefault(3839).canStreamQuality(importDefault(3839).StreamQuality.HIGH, user);
+        const obj2 = importDefault(3839);
       } else if (tmp2.MID_STREAMING_QUALITY === quality) {
-        flag = importDefault(3835).canStreamQuality(importDefault(3835).StreamQuality.MID, user);
-        const obj = importDefault(3835);
+        flag = importDefault(3839).canStreamQuality(importDefault(3839).StreamQuality.MID, user);
+        const obj = importDefault(3839);
       } else {
         const quality2 = quality.quality;
         flag = false;
@@ -29,8 +29,8 @@ export default function canUseStreamSetting(quality, user) {
     if (null != quality.guildPremiumTier) {
       let result = flag;
       if (!flag) {
-        result = require(4081) /* getGuildTierFromGuild */.isGuildBoostedAtLeast(arg2, quality.guildPremiumTier);
-        const obj3 = require(4081) /* getGuildTierFromGuild */;
+        result = require(4085) /* getGuildTierFromGuild */.isGuildBoostedAtLeast(arg2, quality.guildPremiumTier);
+        const obj3 = require(4085) /* getGuildTierFromGuild */;
       }
       tmp7 = result;
     }

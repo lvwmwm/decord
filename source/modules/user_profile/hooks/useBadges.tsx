@@ -1,10 +1,10 @@
-// Module ID: 8092
-// Function ID: 8093
+// Module ID: 8099
+// Function ID: 8100
 // Name: useBadges
-// Dependencies: [4029, 1874, 3862, 647, 1236, 2]
+// Dependencies: [4033, 1874, 3866, 647, 1236, 2]
 // Exports: default
 
-// Module 8092 (useBadges)
+// Module 8099 (useBadges)
 import initialize from "initialize";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
@@ -13,7 +13,7 @@ const legacy_username = "legacy_username";
 const result = require("explicitContentFromProto").fileFinishedImporting("modules/user_profile/hooks/useBadges.tsx");
 
 export default function useBadges(getBadges) {
-  const LegacyUsernameDisabled = require(3862) /* explicitContentFromProto */.LegacyUsernameDisabled;
+  const LegacyUsernameDisabled = require(3866) /* explicitContentFromProto */.LegacyUsernameDisabled;
   let setting = LegacyUsernameDisabled.useSetting();
   if (undefined !== arg1) {
     setting = arg1;

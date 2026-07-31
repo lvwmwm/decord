@@ -1,7 +1,7 @@
 // Module ID: 1943
 // Function ID: 1944
 // Name: DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY
-// Dependencies: [32, 1944, 595, 645, 705, 700, 3802, 2]
+// Dependencies: [32, 1944, 595, 645, 705, 700, 3806, 2]
 // Exports: clearCommunicationDisabledNotice, useCommunicationDisabledNoticeStore
 
 // Module 1943 (DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY)
@@ -55,7 +55,7 @@ export const useCommunicationDisabledNoticeStore = function useCommunicationDisa
     const items = [, ];
     ({ notificationDismissedInGuilds: arr[0], dismissNotification: arr[1] } = arg0);
     return items;
-  }, require(3802) /* isIterable */.shallow), 2);
+  }, require(3806) /* isIterable */.shallow), 2);
   const first = tmp[0];
   let items = [!first.has(arg0), tmp[1]];
   return items;

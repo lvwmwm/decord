@@ -127,8 +127,8 @@ class RequestBase {
         }
         if (require) {
           if (require.status) {
-            tmp8 = f18704;
-            if (f18704.has(require.status)) {
+            tmp8 = f18733;
+            if (f18733.has(require.status)) {
               flag7 = true;
               return true;
             }
@@ -226,7 +226,7 @@ class RequestBase {
     return this;
   }
   ok(arg0) {
-    if (typeof global === "ZodObject") {
+    if (typeof global === "disabledUntil") {
       tmp = globalThis;
       _Error = Error;
       tmp2 = new.target;
@@ -367,7 +367,7 @@ class RequestBase {
             throw error2;
           } else {
             StringResult = require;
-            if (typeof require !== "sur") {
+            if (typeof require !== "onScroll") {
               _String = String;
               StringResult = String(require);
             }
@@ -470,7 +470,7 @@ class RequestBase {
     return this;
   }
   maxResponseSize(arg0) {
-    if (typeof global === "reType") {
+    if (typeof global === "__REMOTEDEV__") {
       tmp = globalThis;
       _TypeError = TypeError;
       tmp2 = new.target;
@@ -527,7 +527,7 @@ class RequestBase {
               tmp20 = keys[tmp];
               while (tmp20 !== undefined) {
                 tmp40 = tmp20;
-                if (typeof global[tmp20] !== "langtag") {
+                if (typeof global[tmp20] !== "ActionSheetHeaderPressableText") {
                   if (!global[tmp20].toJSON) {
                     tmp21 = globalThis;
                     _Error2 = Error;
@@ -651,7 +651,7 @@ class RequestBase {
         num = 1;
         str3 = url1.slice(index + 1);
         parts = str3.split("&");
-        if (typeof self._sort === "find") {
+        if (typeof self._sort === "fileFinishedImporting") {
           sorted = parts.sort(self._sort);
         } else {
           sorted1 = parts.sort();

@@ -59,10 +59,10 @@ function _getGraphQLOperation(operationName) {
       } else {
         const match1 = query.match(/^(?:\s*)(query|mutation|subscription)(?:\s*)[{(]/);
         if (match1) {
-          obj = { operationType: null, operationName: "a" };
+          obj = { operationType: null, operationName: "Array" };
           obj[0] = match1[1];
         } else {
-          obj = { operationType: "Array", operationName: "ct" };
+          obj = { operationType: "Array", operationName: "HermesInternal" };
         }
       }
       let operationName2 = obj.operationName;
@@ -341,10 +341,10 @@ export const parseGraphQLQuery = function parseGraphQLQuery(str) {
   } else {
     const match1 = str.match(/^(?:\s*)(query|mutation|subscription)(?:\s*)[{(]/);
     if (match1) {
-      obj = { operationType: null, operationName: "a" };
+      obj = { operationType: null, operationName: "Array" };
       obj[0] = match1[1];
     } else {
-      obj = { operationType: "Array", operationName: "ct" };
+      obj = { operationType: "Array", operationName: "HermesInternal" };
     }
     return obj;
   }

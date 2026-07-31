@@ -1,10 +1,10 @@
-// Module ID: 11785
-// Function ID: 11786
+// Module ID: 11803
+// Function ID: 11804
 // Name: SuggestedFriendsSectionHeader
-// Dependencies: [32, 19, 17, 676, 11786, 21, 4189, 712, 5140, 4606, 4185, 4028, 1416, 9088, 1297, 1236, 3893, 4033, 11, 7631, 6673, 4611, 691, 4600, 698, 2]
+// Dependencies: [32, 19, 17, 676, 11804, 21, 4193, 712, 5144, 4610, 4189, 4032, 1416, 9099, 1297, 1236, 3897, 4037, 11, 7639, 6679, 4615, 691, 4604, 698, 2]
 // Exports: default
 
-// Module 11785 (SuggestedFriendsSectionHeader)
+// Module 11803 (SuggestedFriendsSectionHeader)
 import _slicedToArray from "_slicedToArray";
 import Form from "Form";
 import { View } from "hexToRgba";
@@ -18,7 +18,7 @@ let c9;
 let metroImportAll;
 const require = arg1;
 function SuggestedFriendsSectionHeader(children) {
-  return callback(View, { style: createCacheKey().sectionHeader, children: callback(require(4185) /* Text */.Text, { color: "text-muted", variant: "text-sm/semibold", children: children.label }) });
+  return callback(View, { style: createCacheKey().sectionHeader, children: callback(require(4189) /* Text */.Text, { color: "text-muted", variant: "text-sm/semibold", children: children.label }) });
 }
 function SuggestionRow(suggestion) {
   let end;
@@ -32,7 +32,7 @@ function SuggestionRow(suggestion) {
   if (first != null) {
     name = first.name;
   }
-  let obj = suggestion(4028);
+  let obj = suggestion(4032);
   const userTag = obj.getUserTag(suggestion.suggested_user);
   let tmp6 = userTag;
   if (null != name) {
@@ -49,7 +49,7 @@ function SuggestionRow(suggestion) {
   obj[2] = callback(suggestion(1297).Avatar, obj);
   obj[3] = selected;
   obj[4] = tmp6;
-  const items = [callback(suggestion(4185).Text, { variant: "text-xs/medium", color: "text-muted", children: userTag }), ];
+  const items = [callback(suggestion(4189).Text, { variant: "text-xs/medium", color: "text-muted", children: userTag }), ];
   let tmp8Result = null != suggestion.mutual_friends_count;
   if (tmp8Result) {
     obj1 = { variant: "text-xs/medium", color: "text-muted", children: null };
@@ -57,14 +57,14 @@ function SuggestionRow(suggestion) {
     const obj2 = { count: null };
     obj2[0] = suggestion.mutual_friends_count;
     obj1[2] = intl.format(tmp3(1236).t.z7y34b, obj2);
-    tmp8Result = tmp8(tmp3(4185).Text, obj1);
+    tmp8Result = tmp8(tmp3(4189).Text, obj1);
   }
   items[1] = tmp8Result;
   obj[5] = closure_10(closure_9, { children: items });
   obj[6] = function onPress() {
     return onSelect(suggestion.suggested_user.id);
   };
-  return callback(suggestion(9088).TableCheckboxRow, obj);
+  return callback(suggestion(9099).TableCheckboxRow, obj);
 }
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { container: null, header: null, title: null, subtitle: null, list: null, divider: null, linearGradient: null, redesignButton: null, sectionHeader: null };
@@ -99,16 +99,16 @@ export default function ContactSyncSuggestions(friendSuggestions) {
     arg0[suggested_user.suggested_user.id] = true;
     return arg0;
   }, {});
-  let obj = friendSuggestions(3893);
+  let obj = friendSuggestions(3897);
   const token = obj.useToken(onSubmit(712).colors.BACKGROUND_BASE_LOW);
-  let obj1 = friendSuggestions(4033);
+  let obj1 = friendSuggestions(4037);
   let items = [obj1.hexOpacityToRgba(token, 0), ];
-  let obj2 = friendSuggestions(4033);
+  let obj2 = friendSuggestions(4037);
   items[1] = obj2.hexOpacityToRgba(token, 100);
   const tmp4 = first(React.useState(reduced), 2);
   first = tmp4[0];
   React = tmp4[1];
-  let obj3 = friendSuggestions(4606);
+  let obj3 = friendSuggestions(4610);
   const fontScale = obj3.useFontScale();
   const sum = onSubmit(712).space.PX_16 + onSubmit(712).space.PX_32 + 40;
   let items1 = [first];
@@ -190,13 +190,13 @@ export default function ContactSyncSuggestions(friendSuggestions) {
   obj[0] = obj1;
   obj[1] = memo;
   obj[2] = callback1;
-  const items5 = [callback(friendSuggestions(6673).FlashList, obj), , ];
+  const items5 = [callback(friendSuggestions(6679).FlashList, obj), , ];
   obj2 = { style: tmp.linearGradient, start: null, end: null, pointerEvents: "none", colors: null };
   const someResult = keys.some((arg0) => first[arg0]);
   obj2[1] = friendSuggestions(691).VerticalGradient.START;
   obj2[2] = friendSuggestions(691).VerticalGradient.END;
   obj2[4] = items;
-  items5[1] = callback(onSubmit(4611), obj2);
+  items5[1] = callback(onSubmit(4615), obj2);
   obj3 = { style: tmp.redesignButton, children: null };
   obj4 = { variant: "primary", size: "lg", text: null, onPress: null, disabled: null };
   let intl = friendSuggestions(1236).intl;
@@ -212,7 +212,7 @@ export default function ContactSyncSuggestions(friendSuggestions) {
     });
   };
   obj4[4] = !someResult;
-  obj3[1] = callback(friendSuggestions(4600).Button, obj4);
+  obj3[1] = callback(friendSuggestions(4604).Button, obj4);
   items5[2] = callback(callback, obj3);
   obj[1] = items5;
   return callback2(callback, obj);

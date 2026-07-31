@@ -1,9 +1,9 @@
-// Module ID: 7172
-// Function ID: 7173
+// Module ID: 7180
+// Function ID: 7181
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7172 (metadata)
+// Module 7180 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GiftCardLeft3dIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/a716c24600bd6f232f06f611aa36d52bdd0e42a920b773d51265778d91bf953d.png";

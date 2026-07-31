@@ -1,10 +1,10 @@
-// Module ID: 11976
-// Function ID: 11977
+// Module ID: 11994
+// Function ID: 11995
 // Name: formatClearAfterOption
-// Dependencies: [11966, 3859, 1236, 687, 1351, 2]
+// Dependencies: [11984, 3863, 1236, 687, 1351, 2]
 // Exports: default
 
-// Module 11976 (formatClearAfterOption)
+// Module 11994 (formatClearAfterOption)
 import { ClearAfterValues } from "StatusTypes";
 
 let result = require("getSystemLocale").fileFinishedImporting("modules/custom_status/utils/formatClearAfterOption.tsx");
@@ -19,7 +19,7 @@ export default function formatClearAfterOption(arg0) {
     const date = new Date();
     const _Date12 = Date;
     const date1 = new Date(sum);
-    const obj8 = require(3859) /* resetCache */;
+    const obj8 = require(3863) /* resetCache */;
     const intl9 = require(1236) /* getSystemLocale */.intl;
     if (isSameDayResult) {
       const data8 = intl9.data;
@@ -42,7 +42,7 @@ export default function formatClearAfterOption(arg0) {
     const date2 = new Date();
     const _Date9 = Date;
     const date3 = new Date(sum1);
-    const obj6 = require(3859) /* resetCache */;
+    const obj6 = require(3863) /* resetCache */;
     const intl7 = require(1236) /* getSystemLocale */.intl;
     if (isSameDayResult1) {
       const data6 = intl7.data;
@@ -64,7 +64,7 @@ export default function formatClearAfterOption(arg0) {
     const date4 = new Date();
     const _Date6 = Date;
     const date5 = new Date(sum2);
-    const obj4 = require(3859) /* resetCache */;
+    const obj4 = require(3863) /* resetCache */;
     const intl5 = require(1236) /* getSystemLocale */.intl;
     if (isSameDayResult2) {
       const data4 = intl5.data;
@@ -83,7 +83,7 @@ export default function formatClearAfterOption(arg0) {
     const _Date = Date;
     const result1 = 30 * importDefault(687).Millis.MINUTE;
     const sum3 = Date.now() + result1;
-    obj1 = require(3859) /* resetCache */;
+    obj1 = require(3863) /* resetCache */;
     const _Date2 = Date;
     const date6 = new Date();
     const _Date3 = Date;

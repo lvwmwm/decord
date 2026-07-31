@@ -1,10 +1,10 @@
-// Module ID: 11632
-// Function ID: 11633
+// Module ID: 11650
+// Function ID: 11651
 // Name: GuildPowerupsDisabledWarning
-// Dependencies: [17, 21, 4189, 712, 7626, 4185, 2]
+// Dependencies: [17, 21, 4193, 712, 7634, 4189, 2]
 // Exports: default
 
-// Module 11632 (GuildPowerupsDisabledWarning)
+// Module 11650 (GuildPowerupsDisabledWarning)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -24,9 +24,9 @@ export default function GuildPowerupsDisabledWarning(children) {
   let obj = { style: tmp.container, children: null };
   obj = { color: null, size: "md" };
   obj[0] = importDefault(712).colors.TEXT_FEEDBACK_WARNING;
-  const items = [callback(require(7626) /* WarningIcon */.WarningIcon, obj), ];
+  const items = [callback(require(7634) /* WarningIcon */.WarningIcon, obj), ];
   obj = { style: tmp.text, variant: "text-md/semibold", color: "text-feedback-warning", children: children.text };
-  items[1] = callback(require(4185) /* Text */.Text, obj);
+  items[1] = callback(require(4189) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 };

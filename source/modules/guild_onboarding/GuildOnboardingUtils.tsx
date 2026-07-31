@@ -1,10 +1,10 @@
-// Module ID: 5122
-// Function ID: 5123
+// Module ID: 5126
+// Function ID: 5127
 // Name: isChattableChannel
-// Dependencies: [1372, 4869, 1932, 1862, 3817, 5116, 676, 3805, 589, 1384, 4680, 5117, 3822, 1351, 643, 1856, 5123, 2]
+// Dependencies: [1372, 4873, 1932, 1862, 3821, 5120, 676, 3809, 589, 1384, 4684, 5121, 3826, 1351, 643, 1856, 5127, 2]
 // Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding, useChannelCoverageForOnboarding, useChattableDefaultChannels, useGuildOnboardingSettingsAvailable, useIsChattableChannel
 
-// Module 5122 (isChattableChannel)
+// Module 5126 (isChattableChannel)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import set from "set";
 import comparator from "comparator";
@@ -21,12 +21,12 @@ const require = arg1;
 function isChattableChannel(guild_id) {
   let tmp = null != guild_id;
   if (tmp) {
-    const canChannelBeDefaultResult = require(5117) /* useCanChannelBeDefault */.canChannelBeDefault(guild_id.guild_id, guild_id.id);
+    const canChannelBeDefaultResult = require(5121) /* useCanChannelBeDefault */.canChannelBeDefault(guild_id.guild_id, guild_id.id);
     if (!canChannelBeDefaultResult) {
       tmp = canChannelBeDefaultResult;
     } else {
       const isForumChannelResult = guild_id.isForumChannel();
-      const canEveryoneRole = importAll(3822).canEveryoneRole;
+      const canEveryoneRole = importAll(3826).canEveryoneRole;
       let SEND_MESSAGES_IN_THREADS = closure_12;
       if (isForumChannelResult) {
         SEND_MESSAGES_IN_THREADS = SEND_MESSAGES_IN_THREADS.SEND_MESSAGES_IN_THREADS;
@@ -34,9 +34,9 @@ function isChattableChannel(guild_id) {
       } else {
         canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS.SEND_MESSAGES, guild_id);
       }
-      const tmp7 = importAll(3822);
+      const tmp7 = importAll(3826);
     }
-    const obj = require(5117) /* useCanChannelBeDefault */;
+    const obj = require(5121) /* useCanChannelBeDefault */;
   }
   return tmp;
 }
@@ -60,7 +60,7 @@ function getFlattenedDefaultChannels(closure_0, arr, arg2, fn) {
     let obj = channel;
     let tmp = require;
     let tmp2 = dependencyMap;
-    let obj2 = require(5117) /* useCanChannelBeDefault */;
+    let obj2 = require(5121) /* useCanChannelBeDefault */;
     if (obj2.canChannelBeDefault(channel.guild_id, channel.id)) {
       let tmp3 = channel;
       if (!arr.includes(obj.id)) {
@@ -288,12 +288,12 @@ export const isChattableChannelId = function isChattableChannelId(arg0) {
   channel = channel.getChannel(arg0);
   let tmp = null != channel;
   if (tmp) {
-    const canChannelBeDefaultResult = require(5117) /* useCanChannelBeDefault */.canChannelBeDefault(channel.guild_id, channel.id);
+    const canChannelBeDefaultResult = require(5121) /* useCanChannelBeDefault */.canChannelBeDefault(channel.guild_id, channel.id);
     if (!canChannelBeDefaultResult) {
       tmp = canChannelBeDefaultResult;
     } else {
       const isForumChannelResult = channel.isForumChannel();
-      const canEveryoneRole = importAll(3822).canEveryoneRole;
+      const canEveryoneRole = importAll(3826).canEveryoneRole;
       let SEND_MESSAGES_IN_THREADS = closure_12;
       if (isForumChannelResult) {
         SEND_MESSAGES_IN_THREADS = SEND_MESSAGES_IN_THREADS.SEND_MESSAGES_IN_THREADS;
@@ -301,9 +301,9 @@ export const isChattableChannelId = function isChattableChannelId(arg0) {
       } else {
         canEveryoneRoleResult = canEveryoneRole(SEND_MESSAGES_IN_THREADS.SEND_MESSAGES, channel);
       }
-      const tmp7 = importAll(3822);
+      const tmp7 = importAll(3826);
     }
-    const obj2 = require(5117) /* useCanChannelBeDefault */;
+    const obj2 = require(5121) /* useCanChannelBeDefault */;
   }
   return tmp;
 };

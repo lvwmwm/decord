@@ -1,10 +1,10 @@
-// Module ID: 5850
-// Function ID: 5851
+// Module ID: 5855
+// Function ID: 5856
 // Name: items
 // Dependencies: [676, 1208, 2]
 // Exports: captureOrIgnoreApiError
 
-// Module 5850 (items)
+// Module 5855 (items)
 import set from "set";
 
 const items = [, , ];
@@ -28,7 +28,7 @@ export const captureOrIgnoreApiError = function captureOrIgnoreApiError(aPIError
       }
       let tmp4 = true === crossDomain;
       if (!tmp4) {
-        let tmp5 = !("status" in aPIError) || typeof aPIError.status === "reType";
+        let tmp5 = !("status" in aPIError) || typeof aPIError.status === "__REMOTEDEV__";
         if (!tmp5) {
           let tmp6 = 0 !== aPIError.status;
           if (tmp6) {
@@ -41,7 +41,7 @@ export const captureOrIgnoreApiError = function captureOrIgnoreApiError(aPIError
         }
         let tmp9 = !tmp5;
         if (tmp5) {
-          let tmp10 = !("code" in aPIError) || typeof aPIError.code === "reType";
+          let tmp10 = !("code" in aPIError) || typeof aPIError.code === "__REMOTEDEV__";
           if (!tmp10) {
             tmp10 = !items.includes(aPIError.code);
           }

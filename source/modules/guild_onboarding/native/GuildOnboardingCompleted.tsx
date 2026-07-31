@@ -1,11 +1,11 @@
-// Module ID: 5536
-// Function ID: 5537
+// Module ID: 5540
+// Function ID: 5541
 // Name: GuildOnboardingCompleted
-// Dependencies: [19, 17, 4181, 1935, 1862, 1874, 5115, 21, 4189, 712, 1480, 589, 5203, 3901, 5537, 1416, 1849, 1351, 4586, 4050, 4190, 5141, 5177, 4185, 1236, 1297, 5538, 5566, 3771, 5569, 4600, 2]
+// Dependencies: [19, 17, 4185, 1935, 1862, 1874, 5119, 21, 4193, 712, 1480, 589, 5207, 3905, 5541, 1416, 1849, 1351, 4590, 4054, 4194, 5145, 5181, 4189, 1236, 1297, 5542, 5570, 3775, 5573, 4604, 2]
 // Exports: default
 
-// Module 5536 (GuildOnboardingCompleted)
-import module_4050 from "module_4050";
+// Module 5540 (GuildOnboardingCompleted)
+import module_4054 from "module_4054";
 import get_ActivityIndicator from "isDiscordFrontendDevelopment";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";

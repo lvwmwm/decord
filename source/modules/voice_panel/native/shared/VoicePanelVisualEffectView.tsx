@@ -1,9 +1,9 @@
-// Module ID: 15996
-// Function ID: 15997
+// Module ID: 16024
+// Function ID: 16025
 // Name: VoicePanelVisualEffectView
-// Dependencies: [19, 17, 21, 4189, 712, 3893, 1348, 8233, 2]
+// Dependencies: [19, 17, 21, 4193, 712, 3897, 1348, 8240, 2]
 
-// Module 15996 (VoicePanelVisualEffectView)
+// Module 16024 (VoicePanelVisualEffectView)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -32,7 +32,7 @@ const memoResult = require("noop").memo(function VoicePanelVisualEffectViewInner
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(3893) /* map */;
+  let obj = require(3897) /* map */;
   const token = obj.useToken(importDefault(712).colors.THEME_LOCKED_BLUR_FALLBACK);
   const tmp2 = callback2();
   obj = { blurTheme: str, android_fallbackColor: null };
@@ -41,7 +41,7 @@ const memoResult = require("noop").memo(function VoicePanelVisualEffectViewInner
     tmp5 = token;
   }
   obj[1] = tmp5;
-  const tmp4Result = closure_4(require(8233) /* TwinButtons */.BackgroundBlurFill, obj);
+  const tmp4Result = closure_4(require(8240) /* TwinButtons */.BackgroundBlurFill, obj);
   let tmp7 = tmp4Result;
   if (tmp3) {
     obj = { style: null, children: null };

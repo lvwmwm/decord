@@ -1,10 +1,10 @@
-// Module ID: 15784
-// Function ID: 15785
+// Module ID: 15812
+// Function ID: 15813
 // Name: LaunchPadWrapper
-// Dependencies: [32, 19, 17, 10475, 676, 21, 4189, 712, 10871, 1231, 4040, 15785, 8115, 698, 15782, 4158, 4597, 5178, 4050, 15786, 4583, 1236, 4547, 15788, 2]
+// Dependencies: [32, 19, 17, 10492, 676, 21, 4193, 712, 10889, 1231, 4044, 15813, 8122, 698, 15810, 4162, 4601, 5182, 4054, 15814, 4587, 1236, 4551, 15816, 2]
 // Exports: default
 
-// Module 15784 (LaunchPadWrapper)
+// Module 15812 (LaunchPadWrapper)
 import _slicedToArray from "_slicedToArray";
 import LAUNCH_PAD_PULL_TAB_BORDER_RADIUS from "LAUNCH_PAD_PULL_TAB_BORDER_RADIUS";
 import get_ActivityIndicator from "useRefValue";

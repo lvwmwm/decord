@@ -1,10 +1,10 @@
-// Module ID: 10741
-// Function ID: 10742
+// Module ID: 10759
+// Function ID: 10760
 // Name: stopScreenshare
-// Dependencies: [19, 17, 4208, 676, 4169, 6040, 4238, 8827, 4369, 4253, 8834, 8848, 10742, 10737, 1577, 10753, 10754, 10755, 10756, 10748, 589, 5515, 1236, 2]
+// Dependencies: [19, 17, 4212, 676, 4173, 6046, 4242, 8840, 4373, 4257, 8847, 8861, 10760, 10755, 1577, 10771, 10772, 10773, 10774, 10766, 589, 5519, 1236, 2]
 // Exports: default, getOSRequirement, getStreamPressHandler, handleCloseScreenshare, tryStartScreenShare
 
-// Module 10741 (stopScreenshare)
+// Module 10759 (stopScreenshare)
 import apexExperiment from "apexExperiment";
 import reset from "reset";
 import { ApplicationStreamStates } from "ME";
@@ -12,20 +12,20 @@ import DCDDeviceManager from "DCDDeviceManager";
 
 const require = arg1;
 function stopScreenshare() {
-  const voiceEngine = require(4238) /* inject */.getVoiceEngine();
+  const voiceEngine = require(4242) /* inject */.getVoiceEngine();
   voiceEngine.stopBroadcast();
   const currentUserActiveStream = authStore.getCurrentUserActiveStream();
   if (null != currentUserActiveStream) {
-    let tmpResult = tmp(4369);
-    tmpResult = tmp(4253);
+    let tmpResult = tmp(4373);
+    tmpResult = tmp(4257);
     tmpResult.stopStream(tmpResult.encodeStreamKey(currentUserActiveStream));
   }
-  const obj = require(4238) /* inject */;
-  importDefault(8834).setGoLiveSource(null);
+  const obj = require(4242) /* inject */;
+  importDefault(8847).setGoLiveSource(null);
 }
 function startStream() {
   if ("android" === obj.getVoiceEngine().platform) {
-    const result = importDefault(6040).isForegroundServiceRunning((arg0) => {
+    const result = importDefault(6046).isForegroundServiceRunning((arg0) => {
       if (arg0) {
         let tmpResult = tmp(tmp2[6]);
         const voiceEngine = tmpResult.getVoiceEngine();
@@ -35,7 +35,7 @@ function startStream() {
         const result = tmpResult.showScreenshareDisabledAlert();
       }
     });
-    const obj2 = importDefault(6040);
+    const obj2 = importDefault(6046);
   } else {
     BroadcastUploadManager.showPicker();
   }
@@ -46,14 +46,14 @@ let result = require("reset").fileFinishedImporting("modules/video_calls/native/
 
 export default function useScreenshareUtils(arg0) {
   const _require = arg0;
-  let tmp = importDefault(10737)(arg0);
+  let tmp = importDefault(10755)(arg0);
   importDefault = tmp;
   const dependencyMap = tmp2;
-  const showMobileGoLiveUpsell = importDefault(10748).useConfig({ location: "useScreenshareUtils" }).showMobileGoLiveUpsell;
-  let obj = importDefault(10748);
+  const showMobileGoLiveUpsell = importDefault(10766).useConfig({ location: "useScreenshareUtils" }).showMobileGoLiveUpsell;
+  let obj = importDefault(10766);
   const items = [stateFromStores];
   stateFromStores = _require(589).useStateFromStores(items, () => stateFromStores.getCurrentUserActiveStream());
-  const analyticsLocations = importDefault(5515)().analyticsLocations;
+  const analyticsLocations = importDefault(5519)().analyticsLocations;
   const items1 = [stateFromStores, arg0, tmp, DCDDeviceManager >= 12, showMobileGoLiveUpsell, analyticsLocations];
   return showMobileGoLiveUpsell.useMemo(() => {
     let tmp = null != stateFromStores;
@@ -160,11 +160,11 @@ export default function useScreenshareUtils(arg0) {
 export const handleCloseScreenshare = function handleCloseScreenshare() {
   const currentUserActiveStream = authStore.getCurrentUserActiveStream();
   if (null != currentUserActiveStream) {
-    const obj = require(4369) /* watchStream */;
-    obj.stopStream(require(4253) /* isStreamKey */.encodeStreamKey(currentUserActiveStream));
-    const obj2 = require(4253) /* isStreamKey */;
+    const obj = require(4373) /* watchStream */;
+    obj.stopStream(require(4257) /* isStreamKey */.encodeStreamKey(currentUserActiveStream));
+    const obj2 = require(4257) /* isStreamKey */;
   }
-  importDefault(8834).setGoLiveSource(null);
+  importDefault(8847).setGoLiveSource(null);
 };
 export { stopScreenshare };
 export { startStream };
@@ -215,7 +215,7 @@ export const getStreamPressHandler = function getStreamPressHandler(analyticsLoc
           return obj.showMobileGoLiveActionSheet(closure_1);
         }
       }
-      const S = require(8827) /* _handleToggleVideo */.showScreenshareDisabledAlert;
+      const S = require(8840) /* _handleToggleVideo */.showScreenshareDisabledAlert;
     }
   } else {
     class S {
@@ -234,12 +234,12 @@ export const getStreamPressHandler = function getStreamPressHandler(analyticsLoc
 export const tryStartScreenShare = function tryStartScreenShare(channel) {
   let videoPermission = DCDDeviceManager >= 12;
   if (videoPermission) {
-    videoPermission = require(10737) /* useHasVideoPermission */.getVideoPermission(channel);
-    const obj = require(10737) /* useHasVideoPermission */;
+    videoPermission = require(10755) /* useHasVideoPermission */.getVideoPermission(channel);
+    const obj = require(10755) /* useHasVideoPermission */;
   }
   if (videoPermission) {
     if ("android" === obj2.getVoiceEngine().platform) {
-      let result = importDefault(6040).isForegroundServiceRunning((arg0) => {
+      let result = importDefault(6046).isForegroundServiceRunning((arg0) => {
         if (arg0) {
           let tmpResult = tmp(tmp2[6]);
           const voiceEngine = tmpResult.getVoiceEngine();
@@ -249,10 +249,10 @@ export const tryStartScreenShare = function tryStartScreenShare(channel) {
           const result = tmpResult.showScreenshareDisabledAlert();
         }
       });
-      const obj3 = importDefault(6040);
+      const obj3 = importDefault(6046);
     } else {
       BroadcastUploadManager.showPicker();
     }
-    obj2 = require(4238) /* inject */;
+    obj2 = require(4242) /* inject */;
   }
 };

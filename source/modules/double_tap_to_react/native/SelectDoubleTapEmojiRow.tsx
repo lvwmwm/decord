@@ -1,9 +1,9 @@
-// Module ID: 11477
-// Function ID: 11478
+// Module ID: 11495
+// Function ID: 11496
 // Name: num2
-// Dependencies: [19, 17, 4181, 5244, 1877, 21, 4189, 500, 712, 589, 4717, 5206, 1416, 9336, 1474, 3834, 7747, 9332, 6072, 6573, 2]
+// Dependencies: [19, 17, 4185, 5248, 1877, 21, 4193, 500, 712, 589, 4721, 5210, 1416, 9351, 1474, 3838, 7755, 9347, 6078, 6579, 2]
 
-// Module 11477 (num2)
+// Module 11495 (num2)
 import importAllResult from "ReactionIcon";
 import { View } from "EMOJI_PICKER_ACTION_SHEET_KEY";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -106,9 +106,9 @@ let closure_13 = importAllResult.memo((emoji) => {
     url = emoji.url;
   }
   obj1[4] = url;
-  obj[1] = closure_9(importDefault(5206), obj1);
+  obj[1] = closure_9(importDefault(5210), obj1);
   obj[4] = closure_9(View, obj);
-  return closure_9(emoji(4717).PressableOpacity, obj);
+  return closure_9(emoji(4721).PressableOpacity, obj);
 });
 const obj8 = { height: 12, width: 12, color: require("Themes").colors.CONTROL_PRIMARY_TEXT_DEFAULT };
 let result = set.fileFinishedImporting("modules/double_tap_to_react/native/SelectDoubleTapEmojiRow.tsx");
@@ -132,7 +132,7 @@ export default importAllResult.memo((selectedEmoji) => {
   const stateFromStores = obj1.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const found = frequentlyUsedReactionEmojis.filter((emoji) => {
     let obj = onPressEmoji(substr[15]);
-    obj = { emoji, channel: "Array", intention: -1 };
+    obj = { emoji, channel: "Array", intention: "Array" };
     obj[2] = constants.DEFAULT_REACT_EMOJI;
     return !obj.isEmojiFilteredOrLocked(obj);
   });

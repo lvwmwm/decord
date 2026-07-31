@@ -1,10 +1,10 @@
-// Module ID: 8056
-// Function ID: 8057
+// Module ID: 8063
+// Function ID: 8064
 // Name: StaticEffect
-// Dependencies: [32, 19, 17, 4181, 6325, 21, 4189, 1474, 8057, 8058, 8059, 8061, 589, 691, 8062, 8060, 5141, 8063, 2]
+// Dependencies: [32, 19, 17, 4185, 6331, 21, 4193, 1474, 8064, 8065, 8066, 8068, 589, 691, 8069, 8067, 5145, 8070, 2]
 // Exports: default, usePreloadProfileEffect
 
-// Module 8056 (StaticEffect)
+// Module 8063 (StaticEffect)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "useProfileEffect";
@@ -88,8 +88,8 @@ function StaticEffect(useThumbnail) {
     obj3[2] = 0 - bannerAdjustment;
     items1[1] = obj3;
     obj1[7] = items1;
-    obj[3] = tmp10(tmp4(5141), obj1);
-    const tmp4Result = tmp4(5141);
+    obj[3] = tmp10(tmp4(5145), obj1);
+    const tmp4Result = tmp4(5145);
   }
   return <closure_5 {...obj} />;
 }
@@ -156,7 +156,7 @@ function ProfileEffect(profileEffect) {
       }
     }
   }, []);
-  jsx = React.useRef(-memo(8058).PROFILE_EFFECT_INTRO_DELAY);
+  jsx = React.useRef(-memo(8065).PROFILE_EFFECT_INTRO_DELAY);
   [c10, c11] = ref(React.useState([]), 2);
   closure_12 = React.useRef([]);
   closure_13 = React.useRef(false);
@@ -172,7 +172,7 @@ function ProfileEffect(profileEffect) {
   }, items3);
   const items4 = [ref];
   const tmp7 = ref(React.useState([]), 2);
-  const tmp9Result = memo1(8061)(React.useCallback((arg0) => {
+  const tmp9Result = memo1(8068)(React.useCallback((arg0) => {
     if (ref.current) {
       if (!ref4.current) {
         tmp.current = true;
@@ -263,8 +263,8 @@ export default function WrappedProfileEffect(skuId) {
   let obj = require(589) /* initialize */;
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const tmp = importDefault(8063)(skuId.skuId);
-  useThumbnail = require(8057) /* sortEffectLayers */.usePotentiallyRandomizedProfileEffect(tmp);
+  const tmp = importDefault(8070)(skuId.skuId);
+  useThumbnail = require(8064) /* sortEffectLayers */.usePotentiallyRandomizedProfileEffect(tmp);
   if (null == useThumbnail) {
     return null;
   } else {

@@ -1,10 +1,10 @@
-// Module ID: 11962
-// Function ID: 11963
+// Module ID: 11980
+// Function ID: 11981
 // Name: openUserContextMenuCommands
-// Dependencies: [8105, 4157, 4040, 1906, 2]
+// Dependencies: [8112, 4161, 4044, 1906, 2]
 // Exports: default
 
-// Module 11962 (openUserContextMenuCommands)
+// Module 11980 (openUserContextMenuCommands)
 let result = require("navigationToRootTabHelper").fileFinishedImporting("modules/user_profile/native/openUserContextMenuCommands.tsx");
 
 export default function openUserContextMenuCommands(analyticsLocations) {
@@ -13,10 +13,10 @@ export default function openUserContextMenuCommands(analyticsLocations) {
   let userId;
   analyticsLocations = analyticsLocations.analyticsLocations;
   ({ userId, selectedChannel, showUserProfile } = analyticsLocations);
-  let obj = analyticsLocations(8105);
+  let obj = analyticsLocations(8112);
   const result = obj.trackUserProfileAction({ action: "PRESS_VIEW_APP_COMMANDS", analyticsLocations });
-  importDefault(4157).hideActionSheet();
-  const obj2 = importDefault(4157);
+  importDefault(4161).hideActionSheet();
+  const obj2 = importDefault(4161);
   obj = {
     channel: selectedChannel,
     commandType: analyticsLocations(1906).ApplicationCommandType.USER,
@@ -28,5 +28,5 @@ export default function openUserContextMenuCommands(analyticsLocations) {
       return obj.trackUserProfileAction(obj);
     }
   };
-  const result1 = analyticsLocations(4040).navigateToContextMenuCommands(obj);
+  const result1 = analyticsLocations(4044).navigateToContextMenuCommands(obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 8484
-// Function ID: 8485
+// Module ID: 8497
+// Function ID: 8498
 // Name: useGameProfileObscured
-// Dependencies: [1874, 5906, 589, 2]
+// Dependencies: [1874, 5912, 589, 2]
 // Exports: default, isGameProfileObscured
 
-// Module 8484 (useGameProfileObscured)
+// Module 8497 (useGameProfileObscured)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -18,8 +18,8 @@ export default function useGameProfileObscured(contentClassification) {
     result = false === tmp4;
   }
   if (result) {
-    result = require(5906) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(contentClassification.contentClassification);
-    const tmpResult = require(5906) /* isAgeRestrictedContentClassification */;
+    result = require(5912) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(contentClassification.contentClassification);
+    const tmpResult = require(5912) /* isAgeRestrictedContentClassification */;
   }
   return result;
 };
@@ -29,8 +29,8 @@ export const isGameProfileObscured = function isGameProfileObscured(game, nsfwAl
     result = false === nsfwAllowed;
   }
   if (result) {
-    result = require(5906) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(game.contentClassification);
-    const obj = require(5906) /* isAgeRestrictedContentClassification */;
+    result = require(5912) /* isAgeRestrictedContentClassification */.isAgeRestrictedContentClassification(game.contentClassification);
+    const obj = require(5912) /* isAgeRestrictedContentClassification */;
   }
   return result;
 };

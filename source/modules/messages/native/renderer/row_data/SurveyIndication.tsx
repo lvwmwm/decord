@@ -1,10 +1,10 @@
-// Module ID: 8006
-// Function ID: 8007
+// Module ID: 8013
+// Function ID: 8014
 // Name: createSurveyIndication
-// Dependencies: [5644, 1236, 7726, 4035, 8007, 8008, 2]
+// Dependencies: [5648, 1236, 7734, 4039, 8014, 8015, 2]
 // Exports: createSurveyIndication
 
-// Module 8006 (createSurveyIndication)
+// Module 8013 (createSurveyIndication)
 import { NotificationTypes } from "str2";
 
 const result = require("frozen").fileFinishedImporting("modules/messages/native/renderer/row_data/SurveyIndication.tsx");
@@ -23,12 +23,12 @@ export const createSurveyIndication = function createSurveyIndication(message, f
   }
   obj = { content: intl.formatToParts(_46_Iqc, { handleMessage: obj }), feedbackIconUrl: null };
   obj[2] = TOP_MESSAGE_PUSH;
-  let tmp2Result = tmp2(7726);
-  tmp2Result = tmp2(4035);
+  let tmp2Result = tmp2(7734);
+  tmp2Result = tmp2(4039);
   if (tmp2Result.isThemeDark(forcedTheme)) {
-    let tmp6Result = tmp6(8007);
+    let tmp6Result = tmp6(8014);
   } else {
-    tmp6Result = tmp6(8008);
+    tmp6Result = tmp6(8015);
   }
   obj[1] = tmp2Result.getAssetUriForEmbed(tmp6Result);
   return obj;

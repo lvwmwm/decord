@@ -1,10 +1,10 @@
-// Module ID: 12994
-// Function ID: 12995
+// Module ID: 13019
+// Function ID: 13020
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 1218, 1874, 676, 4002, 21, 4189, 712, 1581, 1474, 501, 698, 4395, 4040, 1222, 4530, 4533, 6727, 1236, 4533, 5641, 4719, 4000, 12995, 4185, 9187, 2]
+// Dependencies: [5, 19, 17, 1218, 1874, 676, 4006, 21, 4193, 712, 1581, 1474, 501, 698, 4399, 4044, 1222, 4534, 4537, 6733, 1236, 4537, 5645, 4723, 4004, 13020, 4189, 9200, 2]
 // Exports: default
 
-// Module 12994 (OneTimeLoginModal)
+// Module 13019 (OneTimeLoginModal)
 import closure_3 from "ME";
 import CircleErrorIcon from "CircleErrorIcon";
 import get_ActivityIndicator from "useAlertStore";
@@ -241,19 +241,19 @@ export default function OneTimeLoginModal(token) {
   let obj = { style: memo, children: null };
   obj = { absolute: true, wide: true, tall: true, gradientOverride: table[5], mix: true, angleOverride: 0, mixAmount: null };
   obj = { dark: null };
-  obj[0] = token(4000).OverlayOpacity.LEVEL_1;
+  obj[0] = token(4004).OverlayOpacity.LEVEL_1;
   obj[6] = obj;
-  const items6 = [callback(importDefault(4719), obj), ];
+  const items6 = [callback(importDefault(4723), obj), ];
   let obj1 = { style: tmp.container, children: null };
   let obj2 = { style: tmp.centerContent, children: null };
-  const tmp11 = importDefault(4719);
-  const items7 = [callback(callback3, { source: token(12995), style: tmp.logo }), ];
+  const tmp11 = importDefault(4723);
+  const items7 = [callback(callback3, { source: token(13020), style: tmp.logo }), ];
   let obj4 = { style: tmp.loadingContainer, children: null };
   const items8 = [callback(callback2, {}), ];
   let obj5 = { variant: "text-lg/semibold", children: null };
   let intl = token(1236).intl;
   obj5[1] = intl.string(token(1236).t.W9uNdG);
-  items8[1] = callback(token(4185).Text, obj5);
+  items8[1] = callback(token(4189).Text, obj5);
   obj4[1] = items8;
   items7[1] = callback2(callback1, obj4);
   obj2[1] = items7;
@@ -262,13 +262,13 @@ export default function OneTimeLoginModal(token) {
   const obj7 = { variant: "text-sm/normal", children: null };
   let intl2 = token(1236).intl;
   obj7[1] = intl2.string(token(1236).t["ZXe5/Y"]);
-  const items10 = [callback(token(4185).Text, obj7), ];
+  const items10 = [callback(token(4189).Text, obj7), ];
   const obj8 = { textColor: "text-default", text: null, variant: "text-sm/medium", onPress: null, textStyle: null };
   let intl3 = token(1236).intl;
   obj8[1] = intl3.string(token(1236).t.FIEwfG);
   obj8[3] = callback;
   obj8[4] = tmp.link;
-  items10[1] = callback(token(9187).LinkButton, obj8);
+  items10[1] = callback(token(9200).LinkButton, obj8);
   obj6[1] = items10;
   items9[1] = callback2(callback1, obj6);
   obj1[1] = items9;

@@ -1,10 +1,10 @@
-// Module ID: 11877
-// Function ID: 11878
+// Module ID: 11895
+// Function ID: 11896
 // Name: AddFavoriteChannelModal
-// Dependencies: [5, 32, 19, 17, 1410, 8809, 21, 4189, 712, 10211, 11878, 10215, 6156, 1351, 10210, 1474, 500, 9901, 1236, 2969, 4719, 9902, 9923, 11879, 9891, 4395, 2]
+// Dependencies: [5, 32, 19, 17, 1410, 8822, 21, 4193, 712, 10228, 11896, 10232, 6162, 1351, 10227, 1474, 500, 9918, 1236, 2971, 4723, 9919, 9940, 11897, 9908, 4399, 2]
 // Exports: openAddFavoriteChannelModal
 
-// Module 11877 (AddFavoriteChannelModal)
+// Module 11895 (AddFavoriteChannelModal)
 import UserRowModes from "UserRowModes";
 import _slicedToArray from "_slicedToArray";
 import messagesProxy from "messagesProxy";
@@ -132,7 +132,7 @@ function AddFavoriteChannelModal(parentId) {
   return callback3(View, obj);
 }
 function closeAddFavoriteChannelModal() {
-  importDefault(4395).popWithKey(c12);
+  importDefault(4399).popWithKey(c12);
 }
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { container: null };
@@ -147,6 +147,6 @@ export const openAddFavoriteChannelModal = function openAddFavoriteChannelModal(
   let parentId;
   let source;
   ({ parentId, source } = arg0);
-  importDefault(9891)(Promise.resolve({ default: AddFavoriteChannelModal }), { parentId, source }, c12);
+  importDefault(9908)(Promise.resolve({ default: AddFavoriteChannelModal }), { parentId, source }, c12);
 };
 export { closeAddFavoriteChannelModal };

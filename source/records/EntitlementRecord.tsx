@@ -1,9 +1,9 @@
-// Module ID: 4227
-// Function ID: 4228
+// Module ID: 4231
+// Function ID: 4232
 // Name: createFromServer
-// Dependencies: [1883, 4228, 1882, 676, 3835, 4232, 2]
+// Dependencies: [1883, 4232, 1882, 676, 3839, 4236, 2]
 
-// Module 4227 (createFromServer)
+// Module 4231 (createFromServer)
 import "toJS";
 import createFromServer from "createFromServer";
 import createdAt from "createdAt";
@@ -80,7 +80,7 @@ EntitlementRecord["createFromServer"] = function createFromServer(user) {
   if (fulfillment_status == null) {
     fulfillment_status = null;
   }
-  if (typeof EntitlementRecord !== "find") {
+  if (typeof EntitlementRecord !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const tmp22 = new EntitlementRecord(str, tmp18, EntitlementRecord, new.target, id, sku_id, application_id, tmp2, user_id, gifter_user_id, type, branches, date, date1, subscription_id, id, parent_id, consumed, gift_code_batch_id, gift_style, guild_id, deleted, source_type);
@@ -135,7 +135,7 @@ prototype["isValid"] = function isValid(isPremiumWithFractionalPremiumOnly, get)
         if (!obj.canInstallPremiumApplications(isPremiumWithFractionalPremiumOnly)) {
           return false;
         }
-        obj = importDefault(3835);
+        obj = importDefault(3839);
       }
       const _Date = Date;
       const date = new Date();
@@ -167,7 +167,7 @@ prototype["isValid"] = function isValid(isPremiumWithFractionalPremiumOnly, get)
   return false;
 };
 prototype["isFulfilled"] = function isFulfilled() {
-  return this.fulfillmentStatus === require(4232) /* set */.EntitlementTenantFulfillmentStatus.FULFILLED;
+  return this.fulfillmentStatus === require(4236) /* set */.EntitlementTenantFulfillmentStatus.FULFILLED;
 };
 const result = require("createdAt").fileFinishedImporting("records/EntitlementRecord.tsx");
 

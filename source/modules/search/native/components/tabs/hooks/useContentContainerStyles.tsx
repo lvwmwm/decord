@@ -1,16 +1,16 @@
-// Module ID: 15517
-// Function ID: 15518
+// Module ID: 15545
+// Function ID: 15546
 // Name: styles
-// Dependencies: [9097, 4189, 2]
+// Dependencies: [9108, 4193, 2]
 
-// Module 15517 (styles)
-import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+// Module 15545 (styles)
+import MessageEmbedTypes from "MessageEmbedTypes";
 import createCacheKey from "createCacheKey";
 
 let SEARCH_LIST_HORIZONTAL_PADDING;
 let SEARCH_LIST_SECTION_TOP_PADDING;
 let SEARCH_ROW_TAP_STATE_PADDING;
-({ SEARCH_LIST_SECTION_TOP_PADDING, SEARCH_LIST_HORIZONTAL_PADDING, SEARCH_ROW_TAP_STATE_PADDING } = SearchAutocompleteSelectAnalyticsActions);
+({ SEARCH_LIST_SECTION_TOP_PADDING, SEARCH_LIST_HORIZONTAL_PADDING, SEARCH_ROW_TAP_STATE_PADDING } = MessageEmbedTypes);
 const styles = createCacheKey.createStyles({ filesOrLinksContentContainer: { paddingTop: SEARCH_LIST_HORIZONTAL_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, mediaContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, messagesContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING - SEARCH_ROW_TAP_STATE_PADDING }, membersContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING } });
 const result = require("set").fileFinishedImporting("modules/search/native/components/tabs/hooks/useContentContainerStyles.tsx");
 

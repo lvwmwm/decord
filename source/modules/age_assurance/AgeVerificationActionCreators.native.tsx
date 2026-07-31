@@ -1,9 +1,9 @@
-// Module ID: 6744
-// Function ID: 6745
+// Module ID: 6750
+// Function ID: 6751
 // Name: openIncodeAgeVerificationModal
-// Dependencies: [5, 1874, 6745, 6747, 4402, 6713, 21, 4732, 4395, 6748, 1959, 6718, 1577, 4530, 6764, 6765, 6766, 4405, 3868, 709, 6767, 6768, 7614, 7615, 3886, 2]
+// Dependencies: [5, 1874, 6751, 6753, 4406, 6719, 21, 4736, 4399, 6754, 1959, 6724, 1577, 4534, 6770, 6771, 6772, 4409, 3872, 709, 6773, 6774, 7622, 7623, 3890, 2]
 
-// Module 6744 (openIncodeAgeVerificationModal)
+// Module 6750 (openIncodeAgeVerificationModal)
 import SafetyToastType from "SafetyToastType";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import set from "set";
@@ -81,16 +81,16 @@ function openIncodeAgeVerificationModal(arg0) {
               v0 = 2;
               c4 = 1;
               let obj1 = { value: null, done: false };
-              obj1[0] = outer1_1(4732).requestPermission(outer1_10.CAMERA, { showAuthorizationError: true });
+              obj1[0] = outer1_1(4736).requestPermission(outer1_10.CAMERA, { showAuthorizationError: true });
               return obj1;
             }
           } else {
             if (1 === tmp7) {
               dependencyMap = 0;
-              outer1_1(6718).showFailedToast(outer1_11.TIGGER_PAWTECT_ERROR);
+              outer1_1(6724).showFailedToast(outer1_11.TIGGER_PAWTECT_ERROR);
               outer1_0();
               c4 = 3;
-              const obj5 = outer1_1(6718);
+              const obj5 = outer1_1(6724);
             } else if (2 === tmp7) {
               if (arg0 === 1) {
                 c4 = 3;
@@ -102,7 +102,7 @@ function openIncodeAgeVerificationModal(arg0) {
                 obj2[0] = arg1;
                 return obj2;
               } else {
-                obj1 = outer1_1(4395);
+                obj1 = outer1_1(4399);
                 v0 = 3;
                 c4 = 1;
                 const obj3 = { value: null, done: false };
@@ -295,14 +295,14 @@ export default {
     let currentUser;
     let obj = entryPoint(1577);
     if (obj.isMetaQuest()) {
-      let tmpResult = tmp(4530);
-      tmpResult.openAlert(closure_7, jsx(onClose(6764), {}), onClose);
+      let tmpResult = tmp(4534);
+      tmpResult.openAlert(closure_7, jsx(onClose(6770), {}), onClose);
     } else {
-      tmpResult = tmp(4405);
+      tmpResult = tmp(4409);
       let isAgeVerifiedResult = tmpResult.isAgeVerified();
       if (isAgeVerifiedResult) {
-        isAgeVerifiedResult = tmp(3868).hasAgeGatedFeatures();
-        const tmpResult1 = tmp(3868);
+        isAgeVerifiedResult = tmp(3872).hasAgeGatedFeatures();
+        const tmpResult1 = tmp(3872);
       }
       dependencyMap = isAgeVerifiedResult;
       if (tmpResult2.isAgeVerificationIncodeEnabled(entryPoint)) {
@@ -336,7 +336,7 @@ export default {
         }
       } else {
         if (tmpResult3.isExpressiveModalV2Enabled(entryPoint)) {
-          onClose(4395).pushLazy(prop(function*() {
+          onClose(4399).pushLazy(prop(function*() {
             if (paths === 2) {
               paths = 3;
               HermesBuiltin.throwTypeError();
@@ -401,11 +401,11 @@ export default {
               }
             }
           }), {}, closure_6);
-          const obj8 = onClose(4395);
+          const obj8 = onClose(4399);
         } else {
-          currentUser = tmp(7614).isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint);
-          const tmpResult4 = tmp(7614);
-          onClose(4395).pushLazy(prop(function*() {
+          currentUser = tmp(7622).isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint);
+          const tmpResult4 = tmp(7622);
+          onClose(4399).pushLazy(prop(function*() {
             if (paths === 2) {
               paths = 3;
               HermesBuiltin.throwTypeError();
@@ -461,14 +461,14 @@ export default {
               }
             }
           }), {}, closure_6);
-          const obj7 = onClose(4395);
+          const obj7 = onClose(4399);
         }
-        tmpResult3 = tmp(6767);
+        tmpResult3 = tmp(6773);
       }
-      tmpResult2 = tmp(6765);
+      tmpResult2 = tmp(6771);
     }
   },
   openUrl(arg0) {
-    importDefault(3886).openURL(arg0);
+    importDefault(3890).openURL(arg0);
   }
 };

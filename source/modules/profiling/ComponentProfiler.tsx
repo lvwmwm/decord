@@ -1,10 +1,10 @@
-// Module ID: 10350
-// Function ID: 10351
+// Module ID: 10368
+// Function ID: 10369
 // Name: addValue
 // Dependencies: [19, 21, 2]
 // Exports: clearComponentRenderStats, default, dumpStats, getComponentRenderStats, pauseComponentProfiler, resetComponentProfiler, resumeComponentProfiler, serializeComponentRenderAverages
 
-// Module 10350 (addValue)
+// Module 10368 (addValue)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -46,16 +46,16 @@ export default function ComponentProfiler(arg0) {
   return <React.Profiler id={id} onRender={React.useCallback((arg0, arg1, arg2) => {
     if (closure_4) {
       if (!(arg0 in dependencyMap)) {
-        if (typeof closure_2 !== "find") {
+        if (typeof closure_2 !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         const obj = { mount: null, update: null, nestedUpdate: null };
         obj[0] = Object.create(closure_2.prototype);
-        if (typeof closure_2 !== "find") {
+        if (typeof closure_2 !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         obj[1] = Object.create(closure_2.prototype);
-        if (typeof closure_2 !== "find") {
+        if (typeof closure_2 !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         obj[2] = Object.create(closure_2.prototype);

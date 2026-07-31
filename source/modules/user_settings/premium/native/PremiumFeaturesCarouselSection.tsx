@@ -1,10 +1,10 @@
-// Module ID: 12499
-// Function ID: 12500
+// Module ID: 12525
+// Function ID: 12526
 // Name: PremiumFeaturesCardBackground
-// Dependencies: [32, 19, 17, 676, 6224, 1876, 21, 712, 4189, 4611, 691, 4185, 5141, 1236, 6575, 6578, 6614, 6617, 4586, 1577, 9711, 1297, 5515, 1474, 698, 2]
+// Dependencies: [32, 19, 17, 676, 6230, 1876, 21, 712, 4193, 4615, 691, 4189, 5145, 1236, 6581, 6584, 6620, 6623, 4590, 1577, 9728, 1297, 5519, 1474, 698, 2]
 // Exports: default
 
-// Module 12499 (PremiumFeaturesCardBackground)
+// Module 12525 (PremiumFeaturesCardBackground)
 import _slicedToArray from "_slicedToArray";
 import isMetaQuest from "isMetaQuest";
 import get_ActivityIndicator from "registerAsset";
@@ -48,9 +48,9 @@ function CarouselCard(arg0) {
   const tmp = callback4();
   let obj = { style, children: null };
   obj = { variant: "heading-md/extrabold", color: "text-overlay-light", style: tmp.cardTitle, children: title };
-  const items = [callback2(require(4185) /* Text */.Text, obj), ];
+  const items = [callback2(require(4189) /* Text */.Text, obj), ];
   const items1 = [tmp.image, imageStyle];
-  items[1] = callback2(importDefault(5141), { source: imageSrc, style: items1, resizeMode: "contain" });
+  items[1] = callback2(importDefault(5145), { source: imageSrc, style: items1, resizeMode: "contain" });
   obj[1] = items;
   return callback3(PremiumFeaturesCardBackground, obj);
 }
@@ -64,7 +64,7 @@ function PremiumFeaturesCarousel(arg0) {
   let mapped;
   let React;
   const tmp = createCacheKey();
-  let obj = width(4586);
+  let obj = width(4590);
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   const tmp5 = mapped(React.useState(0), 2);
   const first = tmp5[0];
@@ -149,7 +149,7 @@ function PremiumFeaturesCarousel(arg0) {
       };
       obj[8] = { parallaxScrollingScale: 1, parallaxScrollingOffset: 45 };
       obj[9] = tmp7;
-      let tmp19 = callback2(importDefault(9711), obj);
+      let tmp19 = callback2(importDefault(9728), obj);
     }
     let items3 = [tmp19, ];
     let obj1 = { containerStyle: null, numberOfItems: null, currentIndex: null };
@@ -190,7 +190,7 @@ export default function PremiumFeaturesCarouselSection(style) {
   let dependencyMap;
   let callback;
   const tmp = createCacheKey();
-  analyticsLocations = first(5515)().analyticsLocations;
+  analyticsLocations = first(5519)().analyticsLocations;
   const tmp2 = callback(React.useState(false), 2);
   first = tmp2[0];
   dependencyMap = tmp2[1];
@@ -218,7 +218,7 @@ export default function PremiumFeaturesCarouselSection(style) {
   obj = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
   const intl = analyticsLocations(1236).intl;
   obj[4] = intl.string(analyticsLocations(1236).t.RGadQR);
-  const items2 = [callback2(analyticsLocations(4185).Text, obj), callback2(PremiumFeaturesCarousel, { width: tmp4[0], onEndReached: callback })];
+  const items2 = [callback2(analyticsLocations(4189).Text, obj), callback2(PremiumFeaturesCarousel, { width: tmp4[0], onEndReached: callback })];
   obj[2] = items2;
   return callback3(closure_6, obj);
 };

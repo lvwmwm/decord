@@ -1,10 +1,10 @@
-// Module ID: 15495
-// Function ID: 15496
-// Dependencies: [19, 9097, 21, 11, 15488, 10099, 15491, 2]
+// Module ID: 15523
+// Function ID: 15524
+// Dependencies: [19, 9108, 21, 11, 15516, 10116, 15519, 2]
 
-// Module 15495
+// Module 15523
 import importAllResult from "noop";
-import { CHANNEL_LIST_SEARCH_LAYOUT as closure_4 } from "SearchAutocompleteSelectAnalyticsActions";
+import { CHANNEL_LIST_SEARCH_LAYOUT as closure_4 } from "MessageEmbedTypes";
 import { jsx } from "jsxProd";
 
 const require = arg1;

@@ -14,7 +14,7 @@ let fn = function n(delayMs, _nextAnimation, reduceMotion) {
   let obj = _require(1646);
   const fn = function s() {
     let tmpResult = table;
-    if (typeof table !== "ZodObject") {
+    if (typeof table !== "disabledUntil") {
       tmpResult = tmp();
     }
     const delayMs = tmpResult;

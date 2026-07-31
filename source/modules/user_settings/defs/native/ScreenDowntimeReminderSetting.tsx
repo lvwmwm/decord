@@ -1,9 +1,9 @@
-// Module ID: 14472
-// Function ID: 14473
+// Module ID: 14495
+// Function ID: 14496
 // Name: toggle
-// Dependencies: [10241, 7753, 5854, 13937, 6252, 10116, 1236, 589, 14473, 2]
+// Dependencies: [10259, 7761, 5859, 13961, 6258, 10133, 1236, 589, 14496, 2]
 
-// Module 14472 (toggle)
+// Module 14495 (toggle)
 import DesktopNotificationTypes from "DesktopNotificationTypes";
 import createToggle from "createToggle";
 
@@ -23,13 +23,13 @@ createToggle = {
     return require(589) /* initialize */.useStateFromStores(items, () => obj.screenDowntimeReminder);
   },
   onValueChange(screenDowntimeReminder) {
-    return importDefault(14473).setScreenDowntimeReminder(screenDowntimeReminder);
+    return importDefault(14496).setScreenDowntimeReminder(screenDowntimeReminder);
   },
   usePredicate() {
-    let isFamilyCenterV3Enabled = require(5854) /* apexExperiment */.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeReminderSetting" });
-    const obj = require(5854) /* apexExperiment */;
-    const tmp2 = importDefault(13937)();
-    const hasActiveParentLinks = require(6252) /* useUserIdsForLinkStatus */.useHasActiveParentLinks();
+    let isFamilyCenterV3Enabled = require(5859) /* apexExperiment */.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeReminderSetting" });
+    const obj = require(5859) /* apexExperiment */;
+    const tmp2 = importDefault(13961)();
+    const hasActiveParentLinks = require(6258) /* useUserIdsForLinkStatus */.useHasActiveParentLinks();
     if (isFamilyCenterV3Enabled) {
       isFamilyCenterV3Enabled = tmp2;
     }

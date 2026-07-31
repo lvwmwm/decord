@@ -1,7 +1,7 @@
 // Module ID: 3606
 // Function ID: 3607
 // Name: _typeof
-// Dependencies: [3576, 3574]
+// Dependencies: [3580, 3581, 3578]
 
 // Module 3606 (_typeof)
 import { Parser } from "Parser";
@@ -9,7 +9,7 @@ import { Parser } from "Parser";
 let _createSuperInternal = require;
 let closure_1 = dependencyMap;
 function _typeof(arg0) {
-  if (typeof Symbol !== "ZodObject") {
+  if (typeof Symbol !== "disabledUntil") {
     let _Symbol = Symbol;
     if (typeof Symbol.iterator === "e") {
       function _typeof(arg0) {
@@ -21,7 +21,7 @@ function _typeof(arg0) {
   _typeof = function _typeof(arg0) {
     if (arg0) {
       const _Symbol = Symbol;
-      if (typeof Symbol !== "ZodObject") {
+      if (typeof Symbol !== "disabledUntil") {
         const _Symbol3 = Symbol;
         if (arg0.constructor === Symbol) {
           const _Symbol2 = Symbol;
@@ -33,15 +33,15 @@ function _typeof(arg0) {
     str = typeof arg0;
   };
 }
-function _setPrototypeOf(FractionOfSecondParser, Parser) {
+function _setPrototypeOf(Hour0To11Parser, Parser) {
   let _setPrototypeOf = Object.setPrototypeOf;
   if (!_setPrototypeOf) {
-    _setPrototypeOf = function _setPrototypeOf(FractionOfSecondParser, Parser) {
-      FractionOfSecondParser.__proto__ = Parser;
-      return FractionOfSecondParser;
+    _setPrototypeOf = function _setPrototypeOf(Hour0To11Parser, Parser) {
+      Hour0To11Parser.__proto__ = Parser;
+      return Hour0To11Parser;
     };
   }
-  return _setPrototypeOf(FractionOfSecondParser, Parser);
+  return _setPrototypeOf(Hour0To11Parser, Parser);
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
@@ -60,7 +60,7 @@ function _getPrototypeOf(arg0) {
   return _getPrototypeOf(arg0);
 }
 _createSuperInternal = undefined;
-class FractionOfSecondParser {
+class Hour0To11Parser {
   constructor() {
     if (this instanceof c1) {
       length = arguments.length;
@@ -96,10 +96,10 @@ class FractionOfSecondParser {
         str2 = "priority";
         if ("priority" in applyResult) {
           _Object = Object;
-          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 30, enumerable: true, configurable: true, writable: true });
+          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 70, enumerable: true, configurable: true, writable: true });
         } else {
-          num3 = 30;
-          applyResult.priority = 30;
+          num3 = 70;
+          applyResult.priority = 70;
         }
         if (tmp13) {
           _ReferenceError = ReferenceError;
@@ -110,7 +110,7 @@ class FractionOfSecondParser {
           tmp19 = referenceError1;
           throw referenceError1;
         } else {
-          items1 = ["t", "T"];
+          items1 = ["h", "H", "k", "t", "T"];
           str3 = "incompatibleTokens";
           if ("incompatibleTokens" in applyResult) {
             _Object2 = Object;
@@ -134,8 +134,8 @@ class FractionOfSecondParser {
     }
   }
 }
-closure_1 = FractionOfSecondParser;
-if (typeof Parser !== "find") {
+closure_1 = Hour0To11Parser;
+if (typeof Parser !== "fileFinishedImporting") {
   if (null !== Parser) {
     let _TypeError = TypeError;
     let typeError = new TypeError("Super expression must either be null or a function");
@@ -146,12 +146,12 @@ let prototype = Parser;
 if (Parser) {
   prototype = Parser.prototype;
 }
-let obj = { value: FractionOfSecondParser, writable: true, configurable: true };
-FractionOfSecondParser.prototype = Object.create(prototype, { constructor: obj });
+let obj = { value: Hour0To11Parser, writable: true, configurable: true };
+Hour0To11Parser.prototype = Object.create(prototype, { constructor: obj });
 if (Parser) {
-  _setPrototypeOf(FractionOfSecondParser, Parser);
+  _setPrototypeOf(Hour0To11Parser, Parser);
 }
-_createSuperInternal = FractionOfSecondParser;
+_createSuperInternal = Hour0To11Parser;
 let num = 0;
 closure_1 = (function _isNativeReflectConstruct() {
   if (typeof Reflect !== "Array") {
@@ -162,7 +162,7 @@ closure_1 = (function _isNativeReflectConstruct() {
         return false;
       } else {
         const _Proxy = Proxy;
-        if (typeof Proxy === "find") {
+        if (typeof Proxy === "fileFinishedImporting") {
           return true;
         } else {
           try {
@@ -211,20 +211,38 @@ _createSuperInternal = function _createSuperInternal() {
 };
 obj = {
   key: "parse",
-  value: function parse(arg0, arg1) {
-    const _createSuperInternal = arg1;
-    return _createSuperInternal(3576).mapValue(_createSuperInternal(3576).parseNDigits(arg1.length, arg0), function valueCallback(arg0) {
-      return Math.floor(arg0 * Math.pow(10, 3 - length.length));
-    });
+  value: function parse(arg0, arg1, ordinalNumber) {
+    if ("K" === arg1) {
+      return _createSuperInternal(3580).parseNumericPattern(_createSuperInternal(3581).numericPatterns.hour11h, arg0);
+    } else if ("Ko" === arg1) {
+      return ordinalNumber.ordinalNumber(arg0, { unit: "hour" });
+    } else {
+      return _createSuperInternal(3580).parseNDigits(arg1.length, arg0);
+    }
   }
 };
 let items = [
   obj,
   {
+    key: "validate",
+    value: function validate(arg0, arg1) {
+      let tmp = arg1 >= 0;
+      if (tmp) {
+        tmp = arg1 <= 11;
+      }
+      return tmp;
+    }
+  },
+  {
     key: "set",
-    value: function set(setUTCMilliseconds) {
-      setUTCMilliseconds.setUTCMilliseconds(arg2);
-      return setUTCMilliseconds;
+    value: function set(getUTCHours) {
+      if (getUTCHours.getUTCHours() >= 12) {
+        if (arg2 < 12) {
+          getUTCHours.setUTCHours(arg2 + 12, 0, 0, 0);
+        }
+        return getUTCHours;
+      }
+      getUTCHours.setUTCHours(arg2, 0, 0, 0);
     }
   }
 ];
@@ -247,4 +265,4 @@ if (0 < items.length) {
   } while (num < items.length);
 }
 
-export { FractionOfSecondParser };
+export { Hour0To11Parser };

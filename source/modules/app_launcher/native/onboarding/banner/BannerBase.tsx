@@ -1,10 +1,10 @@
-// Module ID: 11231
-// Function ID: 11232
+// Module ID: 11249
+// Function ID: 11250
 // Name: BannerBase
-// Dependencies: [32, 19, 17, 4181, 21, 712, 4189, 11220, 4050, 1474, 4033, 589, 4599, 4611, 5506, 11232, 4185, 2]
+// Dependencies: [32, 19, 17, 4185, 21, 712, 4193, 11238, 4054, 1474, 4037, 589, 4603, 4615, 5510, 11250, 4189, 2]
 // Exports: default
 
-// Module 11231 (BannerBase)
+// Module 11249 (BannerBase)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "set";
@@ -44,18 +44,18 @@ export default function BannerBase(arg0) {
   const tmp = createCacheKey();
   let num = 0;
   [tmp3, c0] = callback(React.useState(0), 2);
-  let obj = _require(4050);
+  let obj = _require(4054);
   sharedValue = obj.useSharedValue(false);
   const diff = sharedValue(1474)().width - 2 * sharedValue(712).space.PX_16;
   const backgroundColor = tmp.bannerGradientColor.backgroundColor;
-  let obj1 = _require(4033);
+  let obj1 = _require(4037);
   let items = [obj1.hexOpacityToRgba(backgroundColor, 0.2), ];
-  let obj2 = _require(4033);
+  let obj2 = _require(4037);
   items[1] = obj2.hexOpacityToRgba(backgroundColor, 0);
   let obj3 = _require(589);
   const items1 = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = obj3.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
-  let obj4 = _require(4050);
+  let obj4 = _require(4054);
   const fn = function _() {
     let obj = sharedValue;
     let num = 0;
@@ -75,7 +75,7 @@ export default function BannerBase(arg0) {
     obj[1] = items;
     return obj;
   };
-  obj = { bannerMeasured: sharedValue, withDelay: _require(4050).withDelay, withSpring: _require(4599).withSpring, SPRING_CONFIG: closure_9 };
+  obj = { bannerMeasured: sharedValue, withDelay: _require(4054).withDelay, withSpring: _require(4603).withSpring, SPRING_CONFIG: closure_9 };
   fn.__closure = obj;
   fn.__workletHash = 5314641176204;
   fn.__initData = closure_11;
@@ -102,18 +102,18 @@ export default function BannerBase(arg0) {
   items2[1] = { opacity: num, width: diff };
   items2[2] = animatedStyle;
   const items3 = [tmp.bannerBackgroundGradient, { height: tmp3, width: diff }];
-  const items4 = [callback2(sharedValue(4611), { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: items, style: items3 }), , ];
+  const items4 = [callback2(sharedValue(4615), { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: items, style: items3 }), , ];
   obj1 = { style: tmp.imageContainer, children: null };
   obj2 = { style: tmp.trinketsLottie, source: null, autoPlay: null };
   const tmp2 = callback(React.useState(0), 2);
-  obj2[1] = _require(11232);
+  obj2[1] = _require(11250);
   obj2[2] = !stateFromStores;
-  const items5 = [callback2(sharedValue(5506), obj2), image];
+  const items5 = [callback2(sharedValue(5510), obj2), image];
   obj1[1] = items5;
   items4[1] = closure_8(View, obj1);
-  obj3 = { style: tmp.bannerTextContainer, children: callback2(tmp4(4185).Text, obj4) };
+  obj3 = { style: tmp.bannerTextContainer, children: callback2(tmp4(4189).Text, obj4) };
   obj4 = { variant: "text-md/semibold", color: "text-overlay-light", style: tmp.bannerText, children: text };
   items4[2] = callback2(View, obj3);
   obj[2] = items4;
-  return closure_8(sharedValue(4050).View, obj);
+  return closure_8(sharedValue(4054).View, obj);
 };

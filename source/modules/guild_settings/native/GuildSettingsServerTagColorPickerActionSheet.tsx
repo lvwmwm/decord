@@ -1,10 +1,10 @@
-// Module ID: 16416
-// Function ID: 16417
+// Module ID: 16445
+// Function ID: 16446
 // Name: GuildSettingsServerTagColorPickerActionSheet
-// Dependencies: [32, 19, 17, 7721, 21, 712, 4189, 13693, 4033, 1474, 4050, 10859, 1236, 8221, 4157, 5243, 5242, 4598, 8449, 13048, 4185, 8751, 13694, 8287, 4600, 2]
+// Dependencies: [32, 19, 17, 7729, 21, 712, 4193, 13717, 4037, 1474, 4054, 10877, 1236, 8228, 4161, 5247, 5246, 4602, 8462, 13073, 4189, 8764, 13718, 8294, 4604, 2]
 // Exports: default
 
-// Module 16416 (GuildSettingsServerTagColorPickerActionSheet)
+// Module 16445 (GuildSettingsServerTagColorPickerActionSheet)
 import _slicedToArray from "_slicedToArray";
 import GuildBadge from "GuildBadge";
 import { View } from "Stack";

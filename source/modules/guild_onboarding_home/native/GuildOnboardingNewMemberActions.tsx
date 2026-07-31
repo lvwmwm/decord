@@ -1,10 +1,10 @@
-// Module ID: 15426
-// Function ID: 15427
+// Module ID: 15454
+// Function ID: 15455
 // Name: MemberActionRow
-// Dependencies: [19, 17, 5048, 1372, 1942, 1862, 3817, 4391, 4392, 676, 1877, 3805, 21, 4189, 712, 589, 4380, 1416, 11434, 5141, 3830, 4185, 1297, 10986, 4717, 1236, 11438, 15427, 1384, 15428, 2]
+// Dependencies: [19, 17, 5052, 1372, 1942, 1862, 3821, 4395, 4396, 676, 1877, 3809, 21, 4193, 712, 589, 4384, 1416, 11452, 5145, 3834, 4189, 1297, 11004, 4721, 1236, 11456, 15455, 1384, 15456, 2]
 // Exports: default
 
-// Module 15426 (MemberActionRow)
+// Module 15454 (MemberActionRow)
 import preload from "preload";
 import { View } from "getAvatarURL";
 import getEmojiToGroupId from "getEmojiToGroupId";

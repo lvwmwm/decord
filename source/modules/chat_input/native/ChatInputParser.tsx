@@ -1,10 +1,10 @@
-// Module ID: 11166
-// Function ID: 11167
+// Module ID: 11184
+// Function ID: 11185
 // Name: addRule
 // Dependencies: [17, 12, 2]
 // Exports: convertToNativeStyle
 
-// Module 11166 (addRule)
+// Module 11184 (addRule)
 import { processColor } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("modules/chat_input/native/ChatInputParser.tsx");
@@ -30,12 +30,12 @@ prototype["parse"] = function parse(arg0, arg1) {
     let closure_0 = matchFunction;
     return arr.concat(matchFunction.matchFunction(closure_0, closure_1).map((arg0) => {
       let obj = matchFunction;
-      if (typeof matchFunction.deleteNodeOnBackspace === "find") {
+      if (typeof matchFunction.deleteNodeOnBackspace === "fileFinishedImporting") {
         let deleteNodeOnBackspace = obj.deleteNodeOnBackspace(arg0);
       } else {
         deleteNodeOnBackspace = obj.deleteNodeOnBackspace;
       }
-      if (typeof obj.editDisabled === "find") {
+      if (typeof obj.editDisabled === "fileFinishedImporting") {
         let editDisabled = obj.editDisabled(arg0);
       } else {
         editDisabled = obj.editDisabled;

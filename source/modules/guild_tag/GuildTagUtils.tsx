@@ -1,10 +1,10 @@
-// Module ID: 7939
-// Function ID: 7940
+// Module ID: 7946
+// Function ID: 7947
 // Name: guildHasTag
-// Dependencies: [1942, 1862, 1874, 7721, 676, 589, 3823, 2]
+// Dependencies: [1942, 1862, 1874, 7729, 676, 589, 3827, 2]
 // Exports: getGuildTagBadgeUrl, getUserPrimaryGuild, guildHasTag, guildSupportsTags, shouldDisplayGuildTag, useShouldDisplayGuildTag, useUserPrimaryGuild
 
-// Module 7939 (guildHasTag)
+// Module 7946 (guildHasTag)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -137,8 +137,8 @@ export const shouldDisplayGuildTag = function shouldDisplayGuildTag(id, merged) 
     if (tmp5) {
       let result = null != merged && null != id;
       if (result) {
-        result = require(3823) /* GuildMemberFlags */.hasAutomodQuarantinedProfile(member.getMember(merged, id));
-        const obj3 = require(3823) /* GuildMemberFlags */;
+        result = require(3827) /* GuildMemberFlags */.hasAutomodQuarantinedProfile(member.getMember(merged, id));
+        const obj3 = require(3827) /* GuildMemberFlags */;
       }
       tmp5 = !result;
     }

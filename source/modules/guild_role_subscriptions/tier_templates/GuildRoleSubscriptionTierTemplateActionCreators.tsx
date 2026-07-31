@@ -1,10 +1,10 @@
-// Module ID: 16623
-// Function ID: 16624
+// Module ID: 16652
+// Function ID: 16653
 // Name: _getTemplates
 // Dependencies: [5, 676, 709, 530, 2]
 // Exports: getTemplates, stashTemplateChannels
 
-// Module 16623 (_getTemplates)
+// Module 16652 (_getTemplates)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 

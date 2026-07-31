@@ -1,10 +1,10 @@
-// Module ID: 12473
-// Function ID: 12474
+// Module ID: 12499
+// Function ID: 12500
 // Name: SharedUser
-// Dependencies: [17, 676, 21, 4189, 712, 4028, 6210, 1297, 4185, 1236, 4600, 4686, 4157, 4199, 1945, 5243, 5242, 4598, 6782, 2]
+// Dependencies: [17, 676, 21, 4193, 712, 4032, 6216, 1297, 4189, 1236, 4604, 4690, 4161, 4203, 1945, 5247, 5246, 4602, 6790, 2]
 // Exports: default
 
-// Module 12473 (SharedUser)
+// Module 12499 (SharedUser)
 import { View } from "Stack";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -16,9 +16,9 @@ let error;
 function SharedUser(user) {
   user = user.user;
   const tmp = callback3();
-  let obj = importDefault(4028);
+  let obj = importDefault(4032);
   const name = obj.getName(user);
-  const tmp6 = user.trialCreationResult === user(6210).CreateReferralStatus.FAIL;
+  const tmp6 = user.trialCreationResult === user(6216).CreateReferralStatus.FAIL;
   obj = { style: tmp.recipientRow, children: null };
   const items = [tmp.avatarContainer, ];
   let erroredAvatar = tmp6;
@@ -33,20 +33,20 @@ function SharedUser(user) {
     const obj2 = { variant: "text-md/medium", color: "text-muted", style: null, children: null };
     obj2[2] = tmp.recipientDisplayName;
     obj2[3] = name;
-    const items2 = [tmp9(tmp5(4185).Text, obj2), ];
+    const items2 = [tmp9(tmp5(4189).Text, obj2), ];
     const obj3 = { variant: "text-md/medium", color: "text-muted", children: null };
     const intl = tmp5(1236).intl;
     const obj4 = { userName: null };
     obj4[0] = name;
     obj3[2] = intl.format(tmp5(1236).t.RO3T4B, obj4);
-    items2[1] = tmp9(tmp5(4185).Text, obj3);
+    items2[1] = tmp9(tmp5(4189).Text, obj3);
     obj1[0] = items2;
     let tmp9Result = tmp7(closure_6, obj1);
   } else {
     const obj5 = { variant: "text-md/medium", color: "text-strong", style: null, children: null };
     obj5[2] = tmp.recipientDisplayName;
     obj5[3] = name;
-    tmp9Result = tmp9(tmp5(4185).Text, obj5);
+    tmp9Result = tmp9(tmp5(4189).Text, obj5);
   }
   items1[1] = tmp9Result;
   const obj6 = { variant: "secondary", size: "sm", text: null, icon: null, onPress: null };
@@ -54,14 +54,14 @@ function SharedUser(user) {
   obj6[2] = intl2.string(user(1236).t["g33r/P"]);
   const obj7 = { size: "xs", color: null };
   obj7[1] = importDefault(712).colors.CONTROL_SECONDARY_TEXT_DEFAULT;
-  obj6[3] = closure_5(user(4686).ChatIcon, obj7);
+  obj6[3] = closure_5(user(4690).ChatIcon, obj7);
   obj6[4] = function onPress() {
     let obj = outer1_1(outer1_2[12]);
     obj.hideActionSheet();
     obj = { recipientIds: user.id };
     outer1_1(outer1_2[13]).openPrivateChannel(obj);
   };
-  items1[2] = closure_5(user(4600).Button, obj6);
+  items1[2] = closure_5(user(4604).Button, obj6);
   obj[1] = items1;
   return closure_7(View, obj);
 }
@@ -102,19 +102,19 @@ export default function ReferralProgramShareConfirmationActionSheet(trialCreatio
   let obj1 = importDefault(1945);
   obj[0] = obj1.getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM);
   obj = { startExpanded: true, contentStyles: tmp.content, header: null, children: null };
-  obj[2] = callback(tmp5(5242).BottomSheetTitleHeader, { title: null });
+  obj[2] = callback(tmp5(5246).BottomSheetTitleHeader, { title: null });
   obj = { children: null };
   obj1 = { style: tmp.headerAsset, children: null };
-  obj1[1] = callback(tmp5(6782).FistBumpSpotIllustration, {});
-  const items = [callback(View, obj1), callback(tmp5(4185).Text, { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult }), , ];
+  obj1[1] = callback(tmp5(6790).FistBumpSpotIllustration, {});
+  const items = [callback(View, obj1), callback(tmp5(4189).Text, { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult }), , ];
   const formatResult = intl3.format(tmp5(1236).t.AwGSWl, obj);
   const obj2 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult };
-  items[2] = callback(tmp5(4185).Text, { variant: "text-md/medium", color: "text-default", style: tmp.subheader, children: intl3.format(tmp5(1236).t.AwGSWl, obj) });
+  items[2] = callback(tmp5(4189).Text, { variant: "text-md/medium", color: "text-default", style: tmp.subheader, children: intl3.format(tmp5(1236).t.AwGSWl, obj) });
   const obj4 = { style: tmp.recipientContainer, children: null };
   arr = Array.from(trialCreationResult.selectedUsers);
   obj4[1] = arr.map((id) => outer1_5(outer1_9, { user: id, trialCreationResult: trialCreationResult.get(id.id) }, id.id));
   items[3] = callback(View, obj4);
   obj[0] = items;
-  obj[3] = callback2(tmp5(4598).Stack, obj);
-  return callback(tmp5(5243).BottomSheet, obj);
+  obj[3] = callback2(tmp5(4602).Stack, obj);
+  return callback(tmp5(5247).BottomSheet, obj);
 };

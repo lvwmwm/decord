@@ -1,10 +1,10 @@
-// Module ID: 16389
-// Function ID: 16390
+// Module ID: 16418
+// Function ID: 16419
 // Name: computeEmojiItem
-// Dependencies: [32, 19, 17, 1862, 16390, 21, 12, 9411, 4189, 712, 1236, 5053, 4081, 589, 8263, 4185, 16392, 16396, 1297, 16397, 5637, 5501, 1480, 5143, 2]
+// Dependencies: [32, 19, 17, 1862, 16419, 21, 12, 9426, 4193, 712, 1236, 5057, 4085, 589, 8270, 4189, 16421, 16425, 1297, 16426, 5641, 5505, 1480, 5147, 2]
 // Exports: computeSectionItem, default
 
-// Module 16389 (computeEmojiItem)
+// Module 16418 (computeEmojiItem)
 import _slicedToArray from "_slicedToArray";
 import getEmptyServerSettingsEmojiSource from "getEmptyServerSettingsEmojiSource";
 import get_ActivityIndicator from "HeaderRow";
@@ -203,8 +203,8 @@ let closure_15 = require("getGuildTierFromGuild").memoize((arr, stateFromStores)
   const found = arr.filter((roles) => !stateFromStores(outer1_2[11]).isRoleSubscriptionEmoji(roles, stateFromStores.id));
   const mapped = found.map(computeEmojiItem);
   const reversed = mapped.reverse();
-  const maxEmojiSlots = _require(4081).getMaxEmojiSlots(stateFromStores);
-  const obj2 = _require(4081);
+  const maxEmojiSlots = _require(4085).getMaxEmojiSlots(stateFromStores);
+  const obj2 = _require(4085);
   const obj3 = importDefault(12);
   [arr2, arr3] = callback(importDefault(12).partition(reversed, (emoji) => !emoji.emoji.animated), 2);
   const intl = _require(1236).intl;

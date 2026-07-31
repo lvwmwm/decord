@@ -1,9 +1,9 @@
-// Module ID: 4072
-// Function ID: 4073
+// Module ID: 4076
+// Function ID: 4077
 // Name: handleEnd
-// Dependencies: [1218, 4073, 4074, 709, 1861, 12, 589, 2]
+// Dependencies: [1218, 4077, 4078, 709, 1861, 12, 589, 2]
 
-// Module 4072 (handleEnd)
+// Module 4076 (handleEnd)
 import fetchFingerprint from "fetchFingerprint";
 import GuildThemePreviewOrigin from "GuildThemePreviewOrigin";
 import { Store } from "initialize";
@@ -64,7 +64,7 @@ Object.defineProperty(prototype, "originalEnabled", {
   set: undefined
 });
 Object.defineProperty(prototype, "origin", {
-  get: function origin(arg0) {
+  get: function origin(keys, arg1) {
     return closure_5.origin;
   },
   set: undefined
@@ -139,7 +139,7 @@ const guildThemePreviewStore = new GuildThemePreviewStore(require("dispatcher"),
     if (null == obj.guildId) {
       return false;
     } else {
-      obj = { presetId: null, customUserThemeSettings: "a" };
+      obj = { presetId: null, customUserThemeSettings: "Array" };
       obj[0] = tmp;
       const isEqualResult = require(12) /* apply */.isEqual(obj.draft, obj);
       let flag = !isEqualResult;

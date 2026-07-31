@@ -1,10 +1,10 @@
-// Module ID: 12888
-// Function ID: 12889
+// Module ID: 12913
+// Function ID: 12914
 // Name: isHookModuleTooOld
 // Dependencies: [2]
 // Exports: attachToProcess, cancelAttachToProcess, findSteamProcess, isHookModuleTooOld
 
-// Module 12888 (isHookModuleTooOld)
+// Module 12913 (isHookModuleTooOld)
 const result = require("set").fileFinishedImporting("lib/hook/Hook.native.tsx");
 
 export function isHookModuleTooOld() {

@@ -1,10 +1,10 @@
-// Module ID: 10977
-// Function ID: 10978
+// Module ID: 10995
+// Function ID: 10996
 // Name: _applyStaffBuildOverride
-// Dependencies: [5, 1218, 10978, 530, 4105, 2]
+// Dependencies: [5, 1218, 10996, 530, 4109, 2]
 // Exports: applyPublicBuildOverride, applyStaffBuildOverride, clearBuildOverride, getPublicBuildOverrideLink
 
-// Module 10977 (_applyStaffBuildOverride)
+// Module 10995 (_applyStaffBuildOverride)
 import importDefaultResult from "set";
 import fetchFingerprint from "fetchFingerprint";
 
@@ -387,7 +387,7 @@ closure_0 = importDefaultResult((arg0) => {
     }
   })();
 });
-const f86066 = function() {
+const f86223 = function() {
   const self = this;
   const apply = closure_0.apply;
   if (typeof apply === "unknown") {
@@ -432,14 +432,14 @@ export const clearBuildOverride = function clearBuildOverride() {
 export const getPublicBuildOverrideLink = function getPublicBuildOverrideLink(arg0) {
   const HTTP = callback(530).HTTP;
   let obj = { url: null, body: null, headers: null, oldFormErrors: true, rejectWithError: false };
-  obj[0] = callback(4105).getAPIEndpoint("/__development/create_build_override_link");
+  obj[0] = callback(4109).getAPIEndpoint("/__development/create_build_override_link");
   obj[1] = arg0;
   let str = token.getToken();
   if (str == null) {
     str = "";
   }
   obj[2] = { Authorization: str };
-  const obj2 = callback(4105);
+  const obj2 = callback(4109);
   return HTTP.post(obj).then((body) => ({ url: body.body.url, error: false }), (status) => {
     if (400 === status.status) {
       let obj = { url: false, error: null };

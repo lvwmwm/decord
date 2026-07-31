@@ -1,9 +1,9 @@
-// Module ID: 15786
-// Function ID: 15787
+// Module ID: 15814
+// Function ID: 15815
 // Name: LAUNCH_PAD_PULL_TAB_BORDER_RADIUS
-// Dependencies: [19, 17, 10475, 11151, 21, 4189, 712, 10380, 4050, 14833, 15787, 4599, 1236, 15732, 12978, 2]
+// Dependencies: [19, 17, 10492, 11169, 21, 4193, 712, 10398, 4054, 14856, 15815, 4603, 1236, 15760, 13003, 2]
 
-// Module 15786 (LAUNCH_PAD_PULL_TAB_BORDER_RADIUS)
+// Module 15814 (LAUNCH_PAD_PULL_TAB_BORDER_RADIUS)
 import { Pressable } from "get ActivityIndicator";
 import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG";
 import { CHAT_INPUT_HEIGHT } from "TextAreaCta";

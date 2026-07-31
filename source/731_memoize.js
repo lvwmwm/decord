@@ -7,7 +7,7 @@
 function memoize(arg0, arg1) {
   const _require = arg0;
   const dependencyMap = arg1;
-  if (typeof arg0 !== "ZodObject") {
+  if (typeof arg0 !== "disabledUntil") {
     function memoized() {
       const self = this;
       if (closure_1) {

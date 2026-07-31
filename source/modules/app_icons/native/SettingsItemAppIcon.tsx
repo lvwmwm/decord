@@ -1,10 +1,10 @@
-// Module ID: 14481
-// Function ID: 14482
+// Module ID: 14504
+// Function ID: 14505
 // Name: SettingsItemAppIcon
-// Dependencies: [19, 6580, 21, 4189, 712, 6579, 6581, 9759, 14482, 2]
+// Dependencies: [19, 6586, 21, 4193, 712, 6585, 6587, 9776, 14505, 2]
 // Exports: default
 
-// Module 14481 (SettingsItemAppIcon)
+// Module 14504 (SettingsItemAppIcon)
 import "noop";
 import { getIconById } from "items";
 import { jsx } from "jsxProd";
@@ -22,18 +22,18 @@ export default function SettingsItemAppIcon(color) {
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
     INTERACTIVE_ICON_DEFAULT = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
   }
-  let obj = require(6579) /* fetchCurrentAppIcon */;
+  let obj = require(6585) /* fetchCurrentAppIcon */;
   const currentAppIcon = obj.useCurrentAppIcon();
   const tmp3 = createCacheKey();
   const tmp4 = require;
-  if (currentAppIcon !== require(6581) /* FreemiumAppIconIds */.FreemiumAppIconIds.DEFAULT) {
+  if (currentAppIcon !== require(6587) /* FreemiumAppIconIds */.FreemiumAppIconIds.DEFAULT) {
     if (null != tmp7) {
       obj = { style: null, id: null, size: 32 };
       obj[0] = tmp3.icon;
       obj[1] = currentAppIcon;
-      let tmp11 = jsx(importDefault(14482), { style: null, id: null, size: 32 });
+      let tmp11 = jsx(importDefault(14505), { style: null, id: null, size: 32 });
     }
     return tmp11;
   }
-  tmp11 = jsx(tmp4(9759).ClydeIcon, { color: INTERACTIVE_ICON_DEFAULT });
+  tmp11 = jsx(tmp4(9776).ClydeIcon, { color: INTERACTIVE_ICON_DEFAULT });
 };

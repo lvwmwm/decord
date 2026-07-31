@@ -1,14 +1,14 @@
-// Module ID: 9932
-// Function ID: 9933
+// Module ID: 9949
+// Function ID: 9950
 // Name: showForLaterModal
-// Dependencies: [4395, 9933, 1959, 2]
+// Dependencies: [4399, 9950, 1959, 2]
 // Exports: showForLaterModal
 
-// Module 9932 (showForLaterModal)
+// Module 9949 (showForLaterModal)
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/saved_messages/native/showForLaterModal.tsx");
 
 export const showForLaterModal = function showForLaterModal(BOOKMARK) {
-  let obj = importDefault(4395);
+  let obj = importDefault(4399);
   obj = { type: BOOKMARK };
-  obj.pushLazy(require(1959) /* asyncRequireImpl */(9933, dependencyMap.paths), obj, "for-later-modal", { presentation: "modal" });
+  obj.pushLazy(require(1959) /* asyncRequireImpl */(9950, dependencyMap.paths), obj, "for-later-modal", { presentation: "modal" });
 };

@@ -1,10 +1,10 @@
-// Module ID: 6989
-// Function ID: 6990
+// Module ID: 6997
+// Function ID: 6998
 // Name: DisguiseSpotIllustration
-// Dependencies: [21, 5141, 6990, 2]
+// Dependencies: [21, 5145, 6998, 2]
 // Exports: DisguiseSpotIllustration
 
-// Module 6989 (DisguiseSpotIllustration)
+// Module 6997 (DisguiseSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DisguiseSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const DisguiseSpotIllustration = function DisguiseSpotIllustration(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6990);
+  obj[0] = importDefault(6998);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const DisguiseSpotIllustration = function DisguiseSpotIllustration(width)
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
 };

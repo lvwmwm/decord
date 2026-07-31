@@ -1,7 +1,7 @@
 // Module ID: 3610
 // Function ID: 3611
 // Name: _typeof
-// Dependencies: [3576, 3574]
+// Dependencies: [3580, 3578]
 
 // Module 3610 (_typeof)
 import { Parser } from "Parser";
@@ -9,7 +9,7 @@ import { Parser } from "Parser";
 let _createSuperInternal = require;
 let closure_1 = dependencyMap;
 function _typeof(arg0) {
-  if (typeof Symbol !== "ZodObject") {
+  if (typeof Symbol !== "disabledUntil") {
     let _Symbol = Symbol;
     if (typeof Symbol.iterator === "e") {
       function _typeof(arg0) {
@@ -21,7 +21,7 @@ function _typeof(arg0) {
   _typeof = function _typeof(arg0) {
     if (arg0) {
       const _Symbol = Symbol;
-      if (typeof Symbol !== "ZodObject") {
+      if (typeof Symbol !== "disabledUntil") {
         const _Symbol3 = Symbol;
         if (arg0.constructor === Symbol) {
           const _Symbol2 = Symbol;
@@ -33,15 +33,15 @@ function _typeof(arg0) {
     str = typeof arg0;
   };
 }
-function _setPrototypeOf(TimestampMillisecondsParser, Parser) {
+function _setPrototypeOf(FractionOfSecondParser, Parser) {
   let _setPrototypeOf = Object.setPrototypeOf;
   if (!_setPrototypeOf) {
-    _setPrototypeOf = function _setPrototypeOf(TimestampMillisecondsParser, Parser) {
-      TimestampMillisecondsParser.__proto__ = Parser;
-      return TimestampMillisecondsParser;
+    _setPrototypeOf = function _setPrototypeOf(FractionOfSecondParser, Parser) {
+      FractionOfSecondParser.__proto__ = Parser;
+      return FractionOfSecondParser;
     };
   }
-  return _setPrototypeOf(TimestampMillisecondsParser, Parser);
+  return _setPrototypeOf(FractionOfSecondParser, Parser);
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
@@ -60,7 +60,7 @@ function _getPrototypeOf(arg0) {
   return _getPrototypeOf(arg0);
 }
 _createSuperInternal = undefined;
-class TimestampMillisecondsParser {
+class FractionOfSecondParser {
   constructor() {
     if (this instanceof c1) {
       length = arguments.length;
@@ -87,7 +87,7 @@ class TimestampMillisecondsParser {
       if (tmp13) {
         _ReferenceError2 = ReferenceError;
         tmp20 = new.target;
-        str6 = "this hasn't been initialised - super() hasn't been called";
+        str5 = "this hasn't been initialised - super() hasn't been called";
         tmp21 = new.target;
         referenceError = new ReferenceError("this hasn't been initialised - super() hasn't been called");
         tmp23 = referenceError;
@@ -96,27 +96,29 @@ class TimestampMillisecondsParser {
         str2 = "priority";
         if ("priority" in applyResult) {
           _Object = Object;
-          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 20, enumerable: true, configurable: true, writable: true });
+          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 30, enumerable: true, configurable: true, writable: true });
         } else {
-          num3 = 20;
-          applyResult.priority = 20;
+          num3 = 30;
+          applyResult.priority = 30;
         }
         if (tmp13) {
           _ReferenceError = ReferenceError;
           tmp16 = new.target;
-          str5 = "this hasn't been initialised - super() hasn't been called";
+          str4 = "this hasn't been initialised - super() hasn't been called";
           tmp17 = new.target;
           referenceError1 = new ReferenceError("this hasn't been initialised - super() hasn't been called");
           tmp19 = referenceError1;
           throw referenceError1;
         } else {
+          items1 = ["t", "T"];
           str3 = "incompatibleTokens";
           if ("incompatibleTokens" in applyResult) {
             _Object2 = Object;
-            definePropertyResult1 = Object.defineProperty(applyResult, "incompatibleTokens", { value: "*", enumerable: true, configurable: true, writable: true });
+            obj = { value: null, enumerable: true, configurable: true, writable: true };
+            obj[0] = items1;
+            definePropertyResult1 = Object.defineProperty(applyResult, "incompatibleTokens", obj);
           } else {
-            str4 = "*";
-            applyResult.incompatibleTokens = "*";
+            applyResult.incompatibleTokens = items1;
           }
           return applyResult;
         }
@@ -132,8 +134,8 @@ class TimestampMillisecondsParser {
     }
   }
 }
-closure_1 = TimestampMillisecondsParser;
-if (typeof Parser !== "find") {
+closure_1 = FractionOfSecondParser;
+if (typeof Parser !== "fileFinishedImporting") {
   if (null !== Parser) {
     let _TypeError = TypeError;
     let typeError = new TypeError("Super expression must either be null or a function");
@@ -144,12 +146,12 @@ let prototype = Parser;
 if (Parser) {
   prototype = Parser.prototype;
 }
-let obj = { value: TimestampMillisecondsParser, writable: true, configurable: true };
-TimestampMillisecondsParser.prototype = Object.create(prototype, { constructor: obj });
+let obj = { value: FractionOfSecondParser, writable: true, configurable: true };
+FractionOfSecondParser.prototype = Object.create(prototype, { constructor: obj });
 if (Parser) {
-  _setPrototypeOf(TimestampMillisecondsParser, Parser);
+  _setPrototypeOf(FractionOfSecondParser, Parser);
 }
-_createSuperInternal = TimestampMillisecondsParser;
+_createSuperInternal = FractionOfSecondParser;
 let num = 0;
 closure_1 = (function _isNativeReflectConstruct() {
   if (typeof Reflect !== "Array") {
@@ -160,7 +162,7 @@ closure_1 = (function _isNativeReflectConstruct() {
         return false;
       } else {
         const _Proxy = Proxy;
-        if (typeof Proxy === "find") {
+        if (typeof Proxy === "fileFinishedImporting") {
           return true;
         } else {
           try {
@@ -209,17 +211,20 @@ _createSuperInternal = function _createSuperInternal() {
 };
 obj = {
   key: "parse",
-  value: function parse(arg0) {
-    return _createSuperInternal(table[0]).parseAnyDigitsSigned(arg0);
+  value: function parse(arg0, arg1) {
+    const _createSuperInternal = arg1;
+    return _createSuperInternal(3580).mapValue(_createSuperInternal(3580).parseNDigits(arg1.length, arg0), function valueCallback(arg0) {
+      return Math.floor(arg0 * Math.pow(10, 3 - length.length));
+    });
   }
 };
 let items = [
   obj,
   {
     key: "set",
-    value: function set(arg0, arg1, arg2) {
-      const items = [new Date(arg2), { timestampIsSet: true }];
-      return items;
+    value: function set(setUTCMilliseconds) {
+      setUTCMilliseconds.setUTCMilliseconds(arg2);
+      return setUTCMilliseconds;
     }
   }
 ];
@@ -242,4 +247,4 @@ if (0 < items.length) {
   } while (num < items.length);
 }
 
-export { TimestampMillisecondsParser };
+export { FractionOfSecondParser };

@@ -8,7 +8,7 @@ function createStoreImpl(arg0) {
   const set = new Set();
   function setState(arg0, arg1) {
     let tmp = arg0;
-    if (typeof arg0 !== "ZodObject") {
+    if (typeof arg0 !== "disabledUntil") {
       tmp = arg0(merged);
     }
     if (!Object.is(tmp, merged)) {
@@ -54,7 +54,7 @@ arg5.createStore = (arg0) => {
     const set = new Set();
     function setState(arg0, arg1) {
       let tmp = arg0;
-      if (typeof arg0 !== "ZodObject") {
+      if (typeof arg0 !== "disabledUntil") {
         tmp = arg0(merged);
       }
       if (!Object.is(tmp, merged)) {

@@ -1,10 +1,10 @@
-// Module ID: 3965
-// Function ID: 3966
+// Module ID: 3969
+// Function ID: 3970
 // Name: context
 // Dependencies: [19, 21, 2]
 // Exports: ManaContextProvider, useManaContext
 
-// Module 3965 (context)
+// Module 3969 (context)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
@@ -15,7 +15,7 @@ const result = require("set").fileFinishedImporting("../discord_common/js/packag
 
 export const ManaContext = context;
 export const useManaContext = () => importAllResult.useContext(context);
-export const ManaContextProvider = (children) => {
+export const ManaContextProvider = function ManaContextProvider(children) {
   let value = children.value;
   if (value == null) {
     value = obj;

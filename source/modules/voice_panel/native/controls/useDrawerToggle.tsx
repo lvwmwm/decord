@@ -1,10 +1,10 @@
-// Module ID: 15986
-// Function ID: 15987
+// Module ID: 16014
+// Function ID: 16015
 // Name: useDrawerToggle
-// Dependencies: [19, 10032, 10033, 4050, 8115, 15987, 1236, 2]
+// Dependencies: [19, 10049, 10050, 4054, 8122, 16015, 1236, 2]
 // Exports: default
 
-// Module 15986 (useDrawerToggle)
+// Module 16014 (useDrawerToggle)
 import noop from "noop";
 import { VoicePanelControlsModes } from "VoicePanelControlsModes";
 

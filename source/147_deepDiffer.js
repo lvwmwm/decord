@@ -10,11 +10,11 @@ function deepDiffer(name, name2, arg2, arg3) {
     num = -1;
   }
   let tmp = num;
-  if (typeof num !== "reType") {
+  if (typeof num !== "__REMOTEDEV__") {
     tmp = arg3;
   }
   let num2 = -1;
-  if (typeof num !== "reType") {
+  if (typeof num !== "__REMOTEDEV__") {
     num2 = num;
   }
   if (0 === num2) {
@@ -22,8 +22,8 @@ function deepDiffer(name, name2, arg2, arg3) {
   } else if (name === name2) {
     return false;
   } else {
-    if (typeof name !== "ZodObject") {
-      if (typeof name2 === "find") {
+    if (typeof name !== "disabledUntil") {
+      if (typeof name2 === "fileFinishedImporting") {
         let flag8;
         if (tmp != null) {
           flag8 = tmp.unsafelyIgnoreFunctions;

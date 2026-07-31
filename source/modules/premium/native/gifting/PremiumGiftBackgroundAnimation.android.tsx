@@ -1,10 +1,10 @@
-// Module ID: 8774
-// Function ID: 8775
+// Module ID: 8787
+// Function ID: 8788
 // Name: PremiumGiftBackgroundAnimation
-// Dependencies: [32, 19, 17, 4181, 21, 4189, 589, 7854, 8775, 5506, 2]
+// Dependencies: [32, 19, 17, 4185, 21, 4193, 589, 7862, 8788, 5510, 2]
 // Exports: default
 
-// Module 8774 (PremiumGiftBackgroundAnimation)
+// Module 8787 (PremiumGiftBackgroundAnimation)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

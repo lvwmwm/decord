@@ -1,10 +1,10 @@
-// Module ID: 10973
-// Function ID: 10974
+// Module ID: 10991
+// Function ID: 10992
 // Name: QuestCollectibleRewardModalMessages
-// Dependencies: [1874, 5033, 21, 4189, 712, 589, 9480, 10488, 4185, 1236, 5989, 9787, 2]
+// Dependencies: [1874, 5037, 21, 4193, 712, 589, 9495, 10505, 4189, 1236, 5995, 9804, 2]
 // Exports: openQuestCollectibleRewardModal
 
-// Module 10973 (QuestCollectibleRewardModalMessages)
+// Module 10991 (QuestCollectibleRewardModalMessages)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
 import jsxProd from "jsxProd";
@@ -20,16 +20,16 @@ function QuestCollectibleRewardModalMessages(quest) {
   let obj = require(589) /* initialize */;
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj1 = require(9480) /* _getDefaultRewardName */;
+  let obj1 = require(9495) /* _getDefaultRewardName */;
   const defaultRewardNameWithArticle = obj1.getDefaultRewardNameWithArticle(quest.config, stateFromStores);
   obj = { children: null };
-  const claimedCollectibleRewardMessage = require(10488) /* useQuests */.useClaimedCollectibleRewardMessage(quest.config);
+  const claimedCollectibleRewardMessage = require(10505) /* useQuests */.useClaimedCollectibleRewardMessage(quest.config);
   obj = { variant: "heading-xl/bold", style: tmp.title, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.format(require(1236) /* getSystemLocale */.t.YNaxMp, { itemName: defaultRewardNameWithArticle });
-  const items1 = [callback(require(4185) /* Text */.Text, obj), ];
+  const items1 = [callback(require(4189) /* Text */.Text, obj), ];
   obj1 = { variant: "text-md/medium", style: tmp.title, children: claimedCollectibleRewardMessage };
-  items1[1] = callback(require(4185) /* Text */.Text, obj1);
+  items1[1] = callback(require(4189) /* Text */.Text, obj1);
   obj[0] = items1;
   return callback2(closure_6, obj);
 }
@@ -44,7 +44,7 @@ export const openQuestCollectibleRewardModal = function openQuestCollectibleRewa
   let product;
   let require;
   ({ quest: require, product } = onSuccess);
-  let obj = require(5989) /* getQuestLogger */;
+  let obj = require(5995) /* getQuestLogger */;
   obj = { location: QuestsExperimentLocations.QUEST_HOME_MOBILE };
   const questLogger = obj.getQuestLogger(obj);
   if (null != product) {
@@ -54,8 +54,8 @@ export const openQuestCollectibleRewardModal = function openQuestCollectibleRewa
       return outer1_5(outer1_9, { quest: closure_0 });
     };
     obj[2] = onSuccess.onSuccess;
-    importDefault(9787).open(obj);
-    const obj4 = importDefault(9787);
+    importDefault(9804).open(obj);
+    const obj4 = importDefault(9804);
   } else {
     questLogger.warn("Product is null");
   }

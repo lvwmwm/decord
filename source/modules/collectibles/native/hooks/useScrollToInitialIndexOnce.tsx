@@ -1,10 +1,10 @@
-// Module ID: 14606
-// Function ID: 14607
+// Module ID: 14629
+// Function ID: 14630
 // Name: INITIAL_SCROLL_DELAY_MS
 // Dependencies: [19, 2]
 // Exports: useScrollToInitialIndexOnce
 
-// Module 14606 (INITIAL_SCROLL_DELAY_MS)
+// Module 14629 (INITIAL_SCROLL_DELAY_MS)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/collectibles/native/hooks/useScrollToInitialIndexOnce.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 9163
-// Function ID: 9164
+// Module ID: 9176
+// Function ID: 9177
 // Name: getGuildBadgeSource
-// Dependencies: [19, 676, 21, 8463, 8464, 9164, 9165, 1411, 1297, 2]
+// Dependencies: [19, 676, 21, 8476, 8477, 9177, 9178, 1411, 1297, 2]
 
-// Module 9163 (getGuildBadgeSource)
+// Module 9176 (getGuildBadgeSource)
 import "noop";
 import { GuildFeatures } from "ME";
 import { jsx } from "jsxProd";

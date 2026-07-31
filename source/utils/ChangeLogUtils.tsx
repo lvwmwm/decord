@@ -1,45 +1,45 @@
-// Module ID: 7865
-// Function ID: 7866
+// Module ID: 7873
+// Function ID: 7874
 // Name: defaultRules
-// Dependencies: [3888, 7866, 4629, 4647, 4648, 4179, 2]
+// Dependencies: [3892, 7874, 4633, 4651, 4652, 4183, 2]
 // Exports: renderChangelogMessageMarkup
 
-// Module 7865 (defaultRules)
+// Module 7873 (defaultRules)
 const require = arg1;
 function defaultRules(uri) {
   let obj = {};
-  const merged = Object.assign(_require(7866).baseRules);
+  const merged = Object.assign(_require(7874).baseRules);
   obj = {};
   const merged1 = Object.assign(image);
-  if (typeof _require(7866).customRules.image === "find") {
-    const customRules = tmp(7866).customRules;
+  if (typeof _require(7874).customRules.image === "fileFinishedImporting") {
+    const customRules = tmp(7874).customRules;
     image = customRules.image(uri);
   } else {
-    image = tmp(7866).customRules.image;
+    image = tmp(7874).customRules.image;
   }
   const merged2 = Object.assign(image);
   obj.image = obj;
   obj = {};
   const merged3 = Object.assign(link);
-  if (typeof _require(7866).customRules.link === "find") {
-    const customRules2 = tmp(7866).customRules;
+  if (typeof _require(7874).customRules.link === "fileFinishedImporting") {
+    const customRules2 = tmp(7874).customRules;
     link = customRules2.link(uri);
   } else {
-    link = tmp(7866).customRules.link;
+    link = tmp(7874).customRules.link;
   }
   const merged4 = Object.assign(link);
   obj.link = obj;
   const merged5 = Object.assign(list);
-  if (typeof _require(7866).customRules.list === "find") {
-    const customRules3 = tmp(7866).customRules;
+  if (typeof _require(7874).customRules.list === "fileFinishedImporting") {
+    const customRules3 = tmp(7874).customRules;
     list = customRules3.list(uri);
   } else {
-    list = tmp(7866).customRules.list;
+    list = tmp(7874).customRules.list;
   }
   const merged6 = Object.assign(list);
   obj.list = {};
   obj.interpolation = {
-    order: importDefault(4629).order,
+    order: importDefault(4633).order,
     match(arg0) {
       return regex.exec(arg0);
     },
@@ -80,38 +80,38 @@ function defaultRules(uri) {
     obj[2] = outer1_1(outer1_2[0]).parseInline(arg1, formatted, inline);
     return obj;
   };
-  if (typeof _require(7866).customRules.lheading === "find") {
-    const customRules4 = tmp(7866).customRules;
+  if (typeof _require(7874).customRules.lheading === "fileFinishedImporting") {
+    const customRules4 = tmp(7874).customRules;
     lheading = customRules4.lheading(uri);
   } else {
-    lheading = tmp(7866).customRules.lheading;
+    lheading = tmp(7874).customRules.lheading;
   }
   const merged8 = Object.assign(lheading);
   obj.lheading = obj3;
   const merged9 = Object.assign(heading);
-  if (typeof _require(7866).customRules.heading === "find") {
-    const customRules5 = tmp(7866).customRules;
+  if (typeof _require(7874).customRules.heading === "fileFinishedImporting") {
+    const customRules5 = tmp(7874).customRules;
     heading = customRules5.heading(uri);
   } else {
-    heading = tmp(7866).customRules.heading;
+    heading = tmp(7874).customRules.heading;
   }
   const merged10 = Object.assign(heading);
   obj.heading = {};
   const merged11 = Object.assign(blockQuote);
-  if (typeof _require(7866).customRules.blockQuote === "find") {
-    const customRules6 = tmp(7866).customRules;
+  if (typeof _require(7874).customRules.blockQuote === "fileFinishedImporting") {
+    const customRules6 = tmp(7874).customRules;
     blockQuote = customRules6.blockQuote(uri);
   } else {
-    blockQuote = tmp(7866).customRules.blockQuote;
+    blockQuote = tmp(7874).customRules.blockQuote;
   }
   const merged12 = Object.assign(blockQuote);
   obj.blockQuote = {};
   const merged13 = Object.assign(paragraph);
-  if (typeof _require(7866).customRules.paragraph === "find") {
-    const customRules7 = tmp(7866).customRules;
+  if (typeof _require(7874).customRules.paragraph === "fileFinishedImporting") {
+    const customRules7 = tmp(7874).customRules;
     paragraph = customRules7.paragraph(uri);
   } else {
-    paragraph = tmp(7866).customRules.paragraph;
+    paragraph = tmp(7874).customRules.paragraph;
   }
   const merged14 = Object.assign(paragraph);
   obj.paragraph = {};
@@ -159,11 +159,11 @@ export default {
       obj[2] = outer1_1(outer1_2[0]).parseInline(arg1, formatted, inline);
       return obj;
     };
-    if (typeof _require(7866).customRules.lheading === "find") {
-      const customRules = tmp3(7866).customRules;
+    if (typeof _require(7874).customRules.lheading === "fileFinishedImporting") {
+      const customRules = tmp3(7874).customRules;
       lheading = customRules.lheading(uri);
     } else {
-      lheading = tmp3(7866).customRules.lheading;
+      lheading = tmp3(7874).customRules.lheading;
     }
     obj = { lheading: null };
     const merged2 = Object.assign(lheading);
@@ -176,17 +176,17 @@ export default {
     obj = {};
     const merged = Object.assign(defaultRules(uri));
     obj = {};
-    const merged1 = Object.assign(importDefault(3888).defaultRules.newline);
+    const merged1 = Object.assign(importDefault(3892).defaultRules.newline);
     obj.newline = obj;
-    obj.text = importDefault(4629);
-    obj.list = importDefault(4647);
-    obj.subtext = importDefault(4648);
+    obj.text = importDefault(4633);
+    obj.list = importDefault(4651);
+    obj.subtext = importDefault(4652);
     const merged2 = Object.assign(obj);
     return obj;
   }
 };
 export const renderChangelogMessageMarkup = function renderChangelogMessageMarkup(content, uri) {
-  let obj = importDefault(4179);
+  let obj = importDefault(4183);
   obj = {};
   const merged = Object.assign(defaultRules(uri));
   if (null != arg2) {

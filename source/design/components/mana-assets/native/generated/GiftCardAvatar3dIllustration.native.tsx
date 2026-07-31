@@ -1,10 +1,10 @@
-// Module ID: 7167
-// Function ID: 7168
+// Module ID: 7175
+// Function ID: 7176
 // Name: GiftCardAvatar3dIllustration
-// Dependencies: [21, 5141, 7168, 2]
+// Dependencies: [21, 5145, 7176, 2]
 // Exports: GiftCardAvatar3dIllustration
 
-// Module 7167 (GiftCardAvatar3dIllustration)
+// Module 7175 (GiftCardAvatar3dIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GiftCardAvatar3dIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const GiftCardAvatar3dIllustration = function GiftCardAvatar3dIllustratio
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7168);
+  obj[0] = importDefault(7176);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GiftCardAvatar3dIllustration = function GiftCardAvatar3dIllustratio
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
 };

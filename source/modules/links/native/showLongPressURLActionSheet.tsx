@@ -1,10 +1,10 @@
-// Module ID: 9542
-// Function ID: 9543
+// Module ID: 9557
+// Function ID: 9558
 // Name: showLongPressURLActionSheet
-// Dependencies: [4158, 1236, 3889, 5543, 3886, 8193, 9543, 5548, 2]
+// Dependencies: [4162, 1236, 3893, 5547, 3890, 8200, 9558, 5552, 2]
 // Exports: default
 
-// Module 9542 (showLongPressURLActionSheet)
+// Module 9557 (showLongPressURLActionSheet)
 let result = require("presentAddedFriendToast").fileFinishedImporting("modules/links/native/showLongPressURLActionSheet.tsx");
 
 export default function showLongPressURLActionSheet(urlString) {

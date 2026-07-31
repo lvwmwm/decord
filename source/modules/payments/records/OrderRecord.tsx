@@ -1,9 +1,9 @@
-// Module ID: 6216
-// Function ID: 6217
+// Module ID: 6222
+// Function ID: 6223
 // Name: createFromOrder
-// Dependencies: [1883, 3844, 6217, 6218, 2]
+// Dependencies: [1883, 3848, 6223, 6224, 2]
 
-// Module 6216 (createFromOrder)
+// Module 6222 (createFromOrder)
 import "toJS";
 import { BaseInvoiceRecord } from "createFromServer";
 import createFromServer from "createFromServer";
@@ -39,7 +39,7 @@ prototype["createFromOrder"] = function createFromOrder(billing_facet) {
       payment_source_id = null;
     }
     let invoiceFromOrder = BaseInvoiceRecord.createInvoiceFromOrder(billing_facet);
-    if (typeof prototype !== "find") {
+    if (typeof prototype !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     const tmp9 = new prototype("Trying to call a non-function", billing_facet, prototype, new.target, payment_gateway, payment_source_id, invoiceFromOrder);

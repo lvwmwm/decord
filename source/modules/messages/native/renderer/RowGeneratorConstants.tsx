@@ -1,9 +1,9 @@
-// Module ID: 7711
-// Function ID: 7712
+// Module ID: 7719
+// Function ID: 7720
 // Name: Changeset
 // Dependencies: [2]
 
-// Module 7711 (Changeset)
+// Module 7719 (Changeset)
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/RowGeneratorConstants.tsx");
 
 export const Changeset = { NOOP: 0, [0]: "NOOP", INSERT: 1, [1]: "INSERT", UPDATE: 2, [2]: "UPDATE", REMOVE: 3, [3]: "REMOVE" };

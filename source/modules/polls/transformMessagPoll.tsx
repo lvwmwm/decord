@@ -1,15 +1,15 @@
-// Module ID: 4521
-// Function ID: 4522
+// Module ID: 4525
+// Function ID: 4526
 // Name: transformMessagePoll
-// Dependencies: [3771, 2]
+// Dependencies: [3775, 2]
 // Exports: default
 
-// Module 4521 (transformMessagePoll)
+// Module 4525 (transformMessagePoll)
 const result = require("set").fileFinishedImporting("modules/polls/transformMessagPoll.tsx");
 
 export default function transformMessagePoll(expiry) {
   const obj = {};
   const merged = Object.assign(expiry);
-  obj.expiry = importDefault(3771)(expiry.expiry);
+  obj.expiry = importDefault(3775)(expiry.expiry);
   return obj;
 };

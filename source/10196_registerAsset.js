@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset";
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/instant_invite/native/images", width: 32, height: 32, scales: [2, 3], hash: "6745f221b3e662876db35721a519454b", name: "copy", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "6fc18e0c40f0ce37259a8a45cc634c66", name: "WindowLaunchIcon", type: "png" });

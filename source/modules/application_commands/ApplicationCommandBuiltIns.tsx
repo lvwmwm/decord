@@ -1,10 +1,10 @@
-// Module ID: 5710
-// Function ID: 5711
+// Module ID: 5715
+// Function ID: 5716
 // Name: getOptionValue
-// Dependencies: [5, 1372, 3817, 1874, 4623, 676, 5711, 1944, 4182, 5704, 1236, 5712, 1906, 3862, 6178, 6179, 6046, 6180, 692, 6182, 5713, 5965, 5105, 4028, 687, 11022, 3771, 4199, 38, 5680, 12605, 2]
+// Dependencies: [5, 1372, 3821, 1874, 4627, 676, 5716, 1944, 4186, 5709, 1236, 5717, 1906, 3866, 6184, 6185, 6052, 6186, 692, 6188, 5718, 5971, 5109, 4032, 687, 11040, 3775, 4203, 38, 5684, 12630, 2]
 // Exports: getBuiltInCommands
 
-// Module 5710 (getOptionValue)
+// Module 5715 (getOptionValue)
 import importDefaultResult from "ME";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -236,7 +236,7 @@ obj7.predicate = function predicate(channel) {
   channel = channel.channel;
   let setting = null != channel && !channel.isPrivate();
   if (setting) {
-    const EnableTTSCommand = require(3862) /* explicitContentFromProto */.EnableTTSCommand;
+    const EnableTTSCommand = require(3866) /* explicitContentFromProto */.EnableTTSCommand;
     setting = EnableTTSCommand.getSetting();
   }
   if (setting) {
@@ -413,7 +413,7 @@ obj13.execute = function execute(arr) {
       if (str == null) {
         str = "";
       }
-      const obj = importDefault(6178);
+      const obj = importDefault(6184);
       const id = guild.id;
       const id2 = channel.id;
       if (!str) {
@@ -473,7 +473,7 @@ Object.defineProperty(obj17, "displayDescription", {
   },
   set: undefined
 });
-Object.defineProperty(obj17, "maxLength", { get: () => require(6179) /* useMessageMaxLength */.getMaxMessageLength(), set: undefined });
+Object.defineProperty(obj17, "maxLength", { get: () => require(6185) /* useMessageMaxLength */.getMaxMessageLength(), set: undefined });
 obj17.required = true;
 items8[1] = obj17;
 obj15.options = items8;
@@ -481,8 +481,8 @@ obj15.predicate = function predicate(channel) {
   channel = channel.channel;
   let canStartPublicThread = null != channel;
   if (canStartPublicThread) {
-    canStartPublicThread = require(6046) /* useCanUnarchiveThread */.computeCanStartPublicThread(channel);
-    const obj = require(6046) /* useCanUnarchiveThread */;
+    canStartPublicThread = require(6052) /* useCanUnarchiveThread */.computeCanStartPublicThread(channel);
+    const obj = require(6052) /* useCanUnarchiveThread */;
   }
   return canStartPublicThread;
 };
@@ -549,8 +549,8 @@ let closure_14 = importDefaultResult((arg0, arg1) => {
             if (tmp11 == null) {
               closure_3 = "";
             }
-            obj1 = callback(6180);
-            let obj2 = callback(6182);
+            obj1 = callback(6186);
+            let obj2 = callback(6188);
             c6 = 2;
             c7 = 1;
             obj2 = { value: null, done: false };
@@ -567,11 +567,11 @@ let closure_14 = importDefaultResult((arg0, arg1) => {
           return obj;
         } else {
           id = arg1;
-          const obj8 = channel(5713);
+          const obj8 = channel(5718);
           id = id.id;
           const obj3 = { location: null };
           obj3[0] = constants.THREAD_CREATION;
-          obj8.sendMessage(id, channel(5965).parse(id, closure_3), true, obj3);
+          obj8.sendMessage(id, channel(5971).parse(id, closure_3), true, obj3);
           c7 = 3;
           return { value: "HermesInternal", done: null };
         }
@@ -1337,7 +1337,7 @@ Object.defineProperty(obj31, "displayDescription", {
   set: undefined
 });
 obj31.required = true;
-Object.defineProperty(obj31, "maxLength", { get: () => require(6179) /* useMessageMaxLength */.getMaxMessageLength(), set: undefined });
+Object.defineProperty(obj31, "maxLength", { get: () => require(6185) /* useMessageMaxLength */.getMaxMessageLength(), set: undefined });
 items12[1] = obj31;
 obj29.options = items12;
 obj29.execute = function execute(arr, channel) {
@@ -1533,8 +1533,8 @@ obj32.execute = function execute(arr, channel) {
     }
     const NumberResult = Number(num);
     const NumberResult1 = Number(num2);
-    size(5680).startDiceRoll(channel.id, NumberResult, NumberResult1);
-    const obj = size(5680);
+    size(5684).startDiceRoll(channel.id, NumberResult, NumberResult1);
+    const obj = size(5684);
   }
 };
 items[sum10 + 1] = obj32;

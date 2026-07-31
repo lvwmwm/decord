@@ -1,9 +1,9 @@
-// Module ID: 13133
-// Function ID: 13134
+// Module ID: 13157
+// Function ID: 13158
 // Name: RadioEmpty
-// Dependencies: [19, 17, 505, 21, 4189, 712, 3907, 5213, 13134, 2]
+// Dependencies: [19, 17, 505, 21, 4193, 712, 3911, 5217, 13158, 2]
 
-// Module 13133 (RadioEmpty)
+// Module 13157 (RadioEmpty)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { NOOP } from "sum";
@@ -86,7 +86,7 @@ function RadioBar(arg0) {
   ({ style, size, onPress } = arg0);
   const tmp = callback2();
   const tmp3 = callback(RadioIndicator, { size, active: checked });
-  let obj = require(3907) /* useCheckboxA11yNative */;
+  let obj = require(3911) /* useCheckboxA11yNative */;
   const radioA11yNative = obj.useRadioA11yNative({ selected: checked, disabled });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   obj = { accessibilityRole, accessibilityState, disabled, onPress: null, DEPRECATED_style: null, label: null, subLabel: null, trailing: null, leading: null };
@@ -124,7 +124,7 @@ function RadioBar(arg0) {
     leading = option.leading;
   }
   obj[8] = leading;
-  return callback(importDefault(5213), obj);
+  return callback(importDefault(5217), obj);
 }
 class RadioItem {
   constructor(arg0) {

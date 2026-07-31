@@ -1,10 +1,10 @@
-// Module ID: 14713
-// Function ID: 14714
+// Module ID: 14736
+// Function ID: 14737
 // Name: MultiGuildDevTools
-// Dependencies: [19, 17, 12756, 14714, 21, 4189, 712, 589, 14715, 12758, 12757, 5554, 5220, 13634, 5227, 1355, 1358, 13122, 2]
+// Dependencies: [19, 17, 12781, 14737, 21, 4193, 712, 589, 14738, 12783, 12782, 5558, 5224, 13658, 5231, 1355, 1358, 10233, 2]
 // Exports: default
 
-// Module 14713 (MultiGuildDevTools)
+// Module 14736 (MultiGuildDevTools)
 import noop from "noop";
 import get_ActivityIndicator from "handleDCShownToUser";
 import initialize from "initialize";

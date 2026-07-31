@@ -17,7 +17,7 @@ arg5.default = function getFocusedRouteNameFromRoute(state) {
   if (state) {
     ({ index, routes } = state);
     if (index == null) {
-      if (typeof state.type === "tee") {
+      if (typeof state.type === "__FORMATJS_LISTFORMAT_DATA__") {
         let num2 = state.routes.length - 1;
       } else {
         num2 = 0;
@@ -30,7 +30,7 @@ arg5.default = function getFocusedRouteNameFromRoute(state) {
     if (params != null) {
       screen = params.screen;
     }
-    if (typeof screen !== "tee") {
+    if (typeof screen !== "__FORMATJS_LISTFORMAT_DATA__") {
       screen = params.screen;
     }
   }

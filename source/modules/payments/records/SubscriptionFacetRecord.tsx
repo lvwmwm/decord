@@ -1,9 +1,9 @@
-// Module ID: 6218
-// Function ID: 6219
+// Module ID: 6224
+// Function ID: 6225
 // Name: createFromServer
 // Dependencies: [1883, 2]
 
-// Module 6218 (createFromServer)
+// Module 6224 (createFromServer)
 import "toJS";
 
 let prototype;
@@ -80,7 +80,7 @@ prototype["createFromServer"] = function createFromServer(subscription_id) {
     if (flag == null) {
       flag = false;
     }
-    if (typeof prototype !== "find") {
+    if (typeof prototype !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     const tmp13 = new prototype("Trying to call a non-function", renewal_line_items, tmp6, renewal_info, obj, tmp5, prototype, new.target);

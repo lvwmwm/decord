@@ -1,23 +1,23 @@
-// Module ID: 11014
-// Function ID: 11015
+// Module ID: 11032
+// Function ID: 11033
 // Name: handleRoleSubscriptionPurchaseSystemMessageCtaClicked
-// Dependencies: [676, 5713, 7770, 4384, 2]
+// Dependencies: [676, 5718, 7778, 4388, 2]
 // Exports: handleRoleSubscriptionPurchaseSystemMessageCtaClicked
 
-// Module 11014 (handleRoleSubscriptionPurchaseSystemMessageCtaClicked)
+// Module 11032 (handleRoleSubscriptionPurchaseSystemMessageCtaClicked)
 import { AnalyticEvents } from "ME";
 
 const result = require("identityHook").fileFinishedImporting("modules/guild_role_subscriptions/native/system_message/GuildRoleSubscriptionSystemMessageUtils.tsx");
 
 export const handleRoleSubscriptionPurchaseSystemMessageCtaClicked = function handleRoleSubscriptionPurchaseSystemMessageCtaClicked(messageChannel, message, stickerId) {
-  let obj = importDefault(5713);
+  let obj = importDefault(5718);
   obj = { channel: messageChannel, message, shouldMention: true, showMentionToggle: true };
-  obj.sendGreetMessage(messageChannel.id, stickerId, importDefault(5713).getSendMessageOptionsForReply(obj));
-  const obj2 = importDefault(5713);
-  const roleSubscriptionPurchaseSystemMessageEventProperties = require(7770) /* identityHook */.getRoleSubscriptionPurchaseSystemMessageEventProperties(messageChannel, message);
-  const obj4 = require(7770) /* identityHook */;
+  obj.sendGreetMessage(messageChannel.id, stickerId, importDefault(5718).getSendMessageOptionsForReply(obj));
+  const obj2 = importDefault(5718);
+  const roleSubscriptionPurchaseSystemMessageEventProperties = require(7778) /* identityHook */.getRoleSubscriptionPurchaseSystemMessageEventProperties(messageChannel, message);
+  const obj4 = require(7778) /* identityHook */;
   obj = {};
   const merged = Object.assign(roleSubscriptionPurchaseSystemMessageEventProperties);
   obj.sticker_id = stickerId;
-  importDefault(4384).trackWithMetadata(AnalyticEvents.ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CTA_CLICKED, obj);
+  importDefault(4388).trackWithMetadata(AnalyticEvents.ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE_CTA_CLICKED, obj);
 };

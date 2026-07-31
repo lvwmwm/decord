@@ -1,10 +1,10 @@
-// Module ID: 14038
-// Function ID: 14039
+// Module ID: 14062
+// Function ID: 14063
 // Name: getRecapOrbCountFromPullProgress
-// Dependencies: [32, 19, 4050, 14034, 2]
+// Dependencies: [32, 19, 4054, 14058, 2]
 // Exports: useBountiesRecapOrbCount
 
-// Module 14038 (getRecapOrbCountFromPullProgress)
+// Module 14062 (getRecapOrbCountFromPullProgress)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
@@ -26,7 +26,7 @@ getRecapOrbCountFromPullProgress.__workletHash = 14295638108053;
 getRecapOrbCountFromPullProgress.__initData = { code: "function getRecapOrbCountFromPullProgress_useBountiesRecapOrbCountTsx1(progress,targetOrbAmount){if(targetOrbAmount<=0||!Number.isFinite(targetOrbAmount)){return 0;}const clampedProgress=Math.min(1,Math.max(0,progress));return Math.round(clampedProgress*targetOrbAmount);}" };
 let closure_5 = { code: "function useBountiesRecapOrbCountTsx2(){const{enabled,recapRevealHeight,getRevealProgress,scrollY,lastBountyScrollOffset,RECAP_ORB_COUNT_REACHES_TARGET_AT_PROGRESS,getRecapOrbCountFromPullProgress,targetOrbAmount}=this.__closure;if(!enabled||recapRevealHeight<=0){return{count:0,revealed:false};}const pullProgress=getRevealProgress(scrollY.get(),lastBountyScrollOffset,recapRevealHeight)/RECAP_ORB_COUNT_REACHES_TARGET_AT_PROGRESS;if(pullProgress<=0.1){return{count:0,revealed:false};}return{count:getRecapOrbCountFromPullProgress(pullProgress,targetOrbAmount),revealed:true};}" };
 let closure_6 = { code: "function useBountiesRecapOrbCountTsx3({count:count,revealed:revealed}){const{runOnJS,resetDisplayCount,setDisplayCountMonotonic}=this.__closure;if(!revealed){runOnJS(resetDisplayCount)();return;}runOnJS(setDisplayCountMonotonic)(count);}" };
-let result = require("module_4050").fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesRecapOrbCount.tsx");
+let result = require("module_4054").fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesRecapOrbCount.tsx");
 
 export { getRecapOrbCountFromPullProgress };
 export const useBountiesRecapOrbCount = function useBountiesRecapOrbCount(scrollY) {
@@ -62,7 +62,7 @@ export const useBountiesRecapOrbCount = function useBountiesRecapOrbCount(scroll
         if (result <= 0.1) {
           let obj = { count: 0, revealed: false };
         } else {
-          if (typeof enabled !== "find") {
+          if (typeof enabled !== "fileFinishedImporting") {
             HermesBuiltin.throwTypeError();
           }
           let num2 = 0;

@@ -1,32 +1,31 @@
-// Module ID: 8035
-// Function ID: 8036
+// Module ID: 8042
+// Function ID: 8043
 // Name: GiftCodeRedeemStart
-// Dependencies: [19, 17, 8029, 1874, 4234, 676, 8036, 21, 4424, 5662, 1236, 4389, 1901, 4189, 712, 1480, 589, 4028, 8037, 8038, 5521, 8042, 5810, 8043, 5518, 8044, 5515, 5535, 698, 6685, 8045, 5177, 4185, 8047, 8048, 8049, 5525, 8053, 1297, 8072, 8741, 9820, 12320, 4600, 8034, 4395, 8642, 8033, 2]
+// Dependencies: [32, 19, 17, 8036, 1874, 4238, 676, 21, 4428, 5666, 1236, 4393, 1901, 4193, 712, 1480, 589, 4032, 8043, 8044, 5525, 8048, 5815, 8049, 5522, 8050, 5519, 5539, 698, 6691, 8051, 5181, 4189, 8053, 8054, 8055, 5529, 8059, 1297, 8079, 8754, 9837, 12346, 4604, 8041, 4399, 8655, 8040, 2]
 // Exports: default
 
-// Module 8035 (GiftCodeRedeemStart)
+// Module 8042 (GiftCodeRedeemStart)
+import Text from "Text";
 import getSubscriptionPlans from "getSubscriptionPlans";
 import get_ActivityIndicator from "nameFromUser";
 import updateGiftCode from "updateGiftCode";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import addSku from "addSku";
 import ME from "ME";
-import { BUNDLE_PREVIEW_CONFIG } from "SAMPLE_PROFILE_ASPECT_RATIO";
 import jsxProd from "useFetchCollectiblesProduct";
 import createCacheKey from "createCacheKey";
 
-let c10;
-let c4;
 let c5;
 let closure_12;
+let closure_14;
 let closure_6;
+let error;
 let map1;
 let unpackModuleId;
 const require = arg1;
-({ ImageBackground: c4, View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
-({ AnalyticEvents: c10, GiftCodeModalStates: unpackModuleId } = ME);
-({ jsx: closure_12, jsxs: map1 } = jsxProd);
-let closure_14 = { width: BUNDLE_PREVIEW_CONFIG.large.bundleWidth, height: BUNDLE_PREVIEW_CONFIG.large.bundleHeight };
+({ ImageBackground: c5, View: closure_6, ScrollView: error } = get_ActivityIndicator);
+({ AnalyticEvents: unpackModuleId, GiftCodeModalStates: closure_12 } = ME);
+({ jsx: map1, jsxs: closure_14 } = jsxProd);
 createCacheKey = { container: null, body: null, bodyWithMessage: null, nameplateContainer: null, nameplateContainerOffCenter: null, message: null, text: null, footer: null, confettiBackground: null, emojiContainer: null, imageWrapper: null, collectiblesAsset: null, collectiblesAssetBundle: null, giftCardAsset: null, linkAccountIcon: null };
 createCacheKey = { flex: 1, justifyContent: "space-between", backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
 createCacheKey[0] = createCacheKey;
@@ -41,15 +40,18 @@ createCacheKey[8] = { justifyContent: "center", width: "100%", position: "absolu
 createCacheKey[9] = { justifyContent: "center", alignItems: "center" };
 createCacheKey[10] = { position: "relative", width: "100%", alignItems: "center", justifyContent: "center" };
 createCacheKey[11] = { margin: 40 };
-createCacheKey[12] = { margin: 20 };
+createCacheKey[12] = { margin: 20, alignSelf: "stretch", minHeight: 250, alignItems: "center", justifyContent: "center" };
 createCacheKey[13] = { marginTop: 20, marginBottom: 40 };
 createCacheKey[14] = { marginRight: 4 };
 createCacheKey = createCacheKey.createStyles(createCacheKey);
-const result = require("updateGiftCode").fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemStart.tsx");
+const result = require("get ActivityIndicator").fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemStart.tsx");
 
 export default function GiftCodeRedeemStart(giftCode) {
+  let c16;
   let firstAvatarDecoration;
+  let firstNameplate;
   let firstProfileEffect;
+  let tmp25;
   giftCode = giftCode.giftCode;
   let str = giftCode;
   const customMessage = giftCode.customMessage;
@@ -67,6 +69,7 @@ export default function GiftCodeRedeemStart(giftCode) {
   let startAuthorization;
   let analyticsLocations;
   let createCacheKey;
+  c16 = undefined;
   let tmp = createCacheKey();
   c5 = tmp;
   let tmp2 = str;
@@ -74,11 +77,11 @@ export default function GiftCodeRedeemStart(giftCode) {
   let obj = str(soundId[15]);
   closure_6 = obj.useNavigation();
   let obj1 = str(soundId[16]);
-  let items = [c7];
+  let items = [c8];
   const stateFromStores = obj1.useStateFromStores(items, () => _undefined2.getIsAccepting(str.code));
   let obj2 = str(soundId[16]);
-  const items1 = [c8];
-  str = obj2.useStateFromStores(items1, () => customMessage(soundId[17]).getName(_undefined3.getUser(str.userId)));
+  const items1 = [stateFromStores1];
+  str = obj2.useStateFromStores(items1, () => customMessage(soundId[17]).getName(stateFromStores1.getUser(str.userId)));
   if (str == null) {
     str = "";
   }
@@ -110,15 +113,15 @@ export default function GiftCodeRedeemStart(giftCode) {
     tmp12 = obj;
   }
   const shopProductItems = tmp2(tmp3[23]).useShopProductItems(tmp12);
-  ({ firstAvatarDecoration, firstProfileEffect } = shopProductItems);
-  let tmp24Result = null != customMessage;
-  if (tmp24Result) {
-    tmp24Result = customMessage.length > 0;
+  let tmp27Result = null != customMessage;
+  ({ firstAvatarDecoration, firstProfileEffect, firstNameplate } = shopProductItems);
+  if (tmp27Result) {
+    tmp27Result = customMessage.length > 0;
   }
-  c8 = tmp24Result;
+  c8 = tmp27Result;
   const tmp2Result3 = tmp2(tmp3[23]);
-  const items2 = [stateFromStores1];
-  stateFromStores1 = tmp2(tmp3[16]).useStateFromStores(items2, () => stateFromStores1.get(str.skuId));
+  const items2 = [fetched];
+  stateFromStores1 = tmp2(tmp3[16]).useStateFromStores(items2, () => fetched.get(str.skuId));
   const tmp16 = customMessage(tmp3[24])(getOrFetchApplication);
   fetched = tmp16.fetched;
   hasAlreadyLinked = tmp16.hasAlreadyLinked;
@@ -129,13 +132,13 @@ export default function GiftCodeRedeemStart(giftCode) {
   let tmp5Result = tmp5(tmp3[26]);
   analyticsLocations = tmp5Result(tmp5(tmp3[27]).GIFT_CODE_MODAL).analyticsLocations;
   obj = { analyticsLocations, skuId: giftCode.skuId, applicationId: giftCode.applicationId, canStartAuthorization };
-  createCacheKey = emojiName.useRef(obj);
+  createCacheKey = user.useRef(obj);
   const items3 = [canStartAuthorization];
-  const effect = emojiName.useEffect(() => {
+  const effect = user.useEffect(() => {
     ref.current.canStartAuthorization = canStartAuthorization;
   }, items3);
   const items4 = [fetched, hasAlreadyLinked, stateFromStores1];
-  const effect1 = emojiName.useEffect(() => {
+  const effect1 = user.useEffect(() => {
     let analyticsLocations;
     let applicationId;
     let canStartAuthorization;
@@ -150,27 +153,27 @@ export default function GiftCodeRedeemStart(giftCode) {
         obj[2] = applicationId;
         obj[4] = hasAlreadyLinked;
         obj[5] = canStartAuthorization;
-        customMessage(tmp2[28]).track(fetched.SLAYER_STOREFRONT_LINK_ACCOUNT_STEP_VIEWED, obj);
+        customMessage(tmp2[28]).track(hasAlreadyLinked.SLAYER_STOREFRONT_LINK_ACCOUNT_STEP_VIEWED, obj);
         const obj2 = customMessage(tmp2[28]);
       }
       tmp2 = soundId;
     }
   }, items4);
   const items5 = [stateFromStores1];
-  const effect2 = emojiName.useEffect(() => {
+  const effect2 = user.useEffect(() => {
     if (obj.isGameItemSKU(stateFromStores1)) {
       const socialLayerStorefrontConfig = str(soundId[29]).fetchSocialLayerStorefrontConfig();
       const tmpResult = str(soundId[29]);
     }
   }, items5);
   const items6 = [giftCode, customMessage, emojiName, soundId];
-  const effect3 = emojiName.useEffect(() => {
+  const effect3 = user.useEffect(() => {
     let obj = str(soundId[8]);
-    obj = { step: hasAlreadyLinked.CONFIRM, giftCode: str, customMessage, emojiName, soundId };
+    obj = { step: canStartAuthorization.CONFIRM, giftCode: str, customMessage, emojiName, soundId };
     obj.trackStep(obj);
   }, items6);
   const items7 = [soundId, giftCode.giftStyle];
-  const effect4 = emojiName.useEffect(() => {
+  const effect4 = user.useEffect(() => {
     let tmp = null != str.giftStyle;
     if (tmp) {
       tmp = null != soundId;
@@ -182,10 +185,24 @@ export default function GiftCodeRedeemStart(giftCode) {
       obj.playSoundLocally(null, obj);
     }
   }, items7);
+  const tmp2Result5 = tmp2(tmp3[25]);
+  [tmp25, c16] = emojiName(user.useState(), 2);
+  const callback = user.useCallback((nativeEvent) => {
+    let customMessage;
+    let str;
+    ({ width: str, height: customMessage } = nativeEvent.nativeEvent.layout);
+    _undefined3((arg0) => {
+      let size = arg0;
+      if (null != arg0) {
+        return size;
+      }
+      size = { width: closure_0, height: closure_1 };
+    });
+  }, []);
   obj1 = { bottom: true, style: tmp.container, children: null };
   const items8 = [tmp.body, ];
   let bodyWithMessage;
-  if (tmp24Result) {
+  if (tmp27Result) {
     bodyWithMessage = tmp.bodyWithMessage;
   }
   obj2 = { contentContainerStyle: items8, alwaysBounceVertical: false, children: null };
@@ -194,7 +211,7 @@ export default function GiftCodeRedeemStart(giftCode) {
   if (first != null) {
     type = first.type;
   }
-  const tmp28 = type === tmp2(tmp3[12]).CollectiblesItemType.BUNDLE;
+  const tmp31 = type === tmp2(tmp3[12]).CollectiblesItemType.BUNDLE;
   if (giftCode.isSubscription) {
     if (null != getOrFetchSubscriptionPlan) {
       let name;
@@ -205,11 +222,11 @@ export default function GiftCodeRedeemStart(giftCode) {
       const tmp2Result6 = tmp2(tmp3[8]);
     }
     obj3[4] = subscriptionGiftStartHeaderText;
-    const items9 = [tmp27(tmp2(tmp3[32]).Text, obj3), , , ];
+    const items9 = [tmp30(tmp2(tmp3[32]).Text, obj3), , , ];
     let obj4 = { style: null, children: null };
     obj4[0] = tmp.imageWrapper;
-    let tmp27Result = null != emojiName;
-    if (tmp27Result) {
+    let tmp30Result = null != emojiName;
+    if (tmp30Result) {
       const obj5 = { source: null, style: null, children: null };
       obj5[0] = tmp2(tmp3[33]);
       obj5[1] = tmp.confettiBackground;
@@ -217,12 +234,12 @@ export default function GiftCodeRedeemStart(giftCode) {
       obj6[0] = tmp.emojiContainer;
       const obj7 = { emojiName: null, randomizeSizing: true };
       obj7[0] = emojiName;
-      obj6[1] = tmp27(tmp5(tmp3[34]), obj7);
-      obj5[2] = tmp27(tmp31, obj6);
-      tmp27Result = tmp27(user, obj5);
+      obj6[1] = tmp30(tmp5(tmp3[34]), obj7);
+      obj5[2] = tmp30(tmp34, obj6);
+      tmp30Result = tmp30(c5, obj5);
     }
-    obj4[1] = tmp27Result;
-    items9[1] = tmp27(c5, obj4);
+    obj4[1] = tmp30Result;
+    items9[1] = tmp30(closure_6, obj4);
     if (null == first) {
       if (null != getOrFetchApplication) {
         if (tmp2Result7.isGameItemSKU(stateFromStores1)) {
@@ -233,10 +250,10 @@ export default function GiftCodeRedeemStart(giftCode) {
           obj8[3] = hasAlreadyLinked;
           obj8[4] = canStartAuthorization;
           obj8[5] = socialLayerStorefrontMobileAccountLinkingDisabled;
-          tmp27Result = tmp27(tmp5(tmp3[35]), obj8);
+          tmp30Result = tmp30(tmp5(tmp3[35]), obj8);
         }
-        items9[2] = tmp27Result;
-        if (tmp24Result) {
+        items9[2] = tmp30Result;
+        if (tmp27Result) {
           const obj9 = { style: null, children: null };
           obj9[0] = tmp.message;
           const obj10 = { variant: "eyebrow", color: "text-default", style: null, children: null };
@@ -245,7 +262,7 @@ export default function GiftCodeRedeemStart(giftCode) {
           const obj11 = { sender: null };
           obj11[0] = str;
           obj10[3] = intl2.format(tmp2(tmp3[10]).t["6yrIzU"], obj11);
-          const items10 = [tmp27(tmp2(tmp3[32]).Text, obj10), ];
+          const items10 = [tmp30(tmp2(tmp3[32]).Text, obj10), ];
           let str4 = "heading-xxl/semibold";
           if (customMessage.length > 110) {
             str4 = "heading-xl/semibold";
@@ -254,13 +271,13 @@ export default function GiftCodeRedeemStart(giftCode) {
           obj12[0] = str4;
           obj12[1] = tmp.text;
           obj12[2] = customMessage;
-          items10[1] = tmp27(tmp2(tmp3[32]).Text, obj12);
+          items10[1] = tmp30(tmp2(tmp3[32]).Text, obj12);
           obj9[1] = items10;
-          tmp24Result = tmp24(tmp31, obj9);
+          tmp27Result = tmp27(tmp34, obj9);
         }
-        items9[3] = tmp24Result;
+        items9[3] = tmp27Result;
         obj2[2] = items9;
-        const items11 = [tmp24(tmp25, obj2), ];
+        const items11 = [tmp27(tmp28, obj2), ];
         const obj13 = { style: null, children: null };
         obj13[0] = tmp.footer;
         if (giftCode.isClaimed) {
@@ -270,18 +287,18 @@ export default function GiftCodeRedeemStart(giftCode) {
           obj14[2] = function onPress() {
             return arr.push(str(soundId[44]).GiftCodeModalScreens.SUCCESS, { giftCode: str });
           };
-          let tmp27Result1 = tmp27(tmp2(tmp3[43]).Button, obj14);
+          let tmp30Result1 = tmp30(tmp2(tmp3[43]).Button, obj14);
         } else if (null != tmp6) {
           const obj15 = { text: null, size: "md", onPress: null };
           const intl6 = tmp2(tmp3[10]).intl;
           obj15[0] = intl6.string(tmp2(tmp3[10]).t["3nWhcJ"]);
           obj15[2] = function onPress() {
             let obj = str(soundId[8]);
-            obj = { step: hasAlreadyLinked.ERROR, giftCode: str, customMessage, emojiName, soundId };
+            obj = { step: canStartAuthorization.ERROR, giftCode: str, customMessage, emojiName, soundId };
             obj.trackStep(obj);
             obj = { message: c7 };
           };
-          tmp27Result1 = tmp27(tmp2(tmp3[43]).Button, obj15);
+          tmp30Result1 = tmp30(tmp2(tmp3[43]).Button, obj15);
         } else {
           if (tmp2Result8.isGameItemSKU(stateFromStores1)) {
             if (!hasAlreadyLinked) {
@@ -293,16 +310,16 @@ export default function GiftCodeRedeemStart(giftCode) {
                   const obj17 = { size: "xs", color: null, style: null };
                   obj17[1] = tmp5(tmp3[14]).colors.WHITE;
                   obj17[2] = tmp.linkAccountIcon;
-                  obj16[2] = tmp27(tmp2(tmp3[46]).ExperimentalGameControllerLinkIcon, obj17);
+                  obj16[2] = tmp30(tmp2(tmp3[46]).ExperimentalGameControllerLinkIcon, obj17);
                   obj16[3] = function onPress() {
                     let obj = customMessage(soundId[28]);
                     obj = { location_stack: analyticsLocations, sku_id: str.skuId, application_id: str.applicationId, is_gift: true };
-                    obj.track(fetched.SLAYER_STOREFRONT_ACCOUNT_LINK_CLICKED, obj);
+                    obj.track(hasAlreadyLinked.SLAYER_STOREFRONT_ACCOUNT_LINK_CLICKED, obj);
                     obj = { analyticsLocations };
                     startAuthorization(obj);
                   };
                 }
-                tmp27Result1 = tmp27(tmp37, obj16);
+                tmp30Result1 = tmp30(tmp40, obj16);
               }
               const obj18 = { text: null, size: "md", onPress: null };
               const intl4 = tmp2(tmp3[10]).intl;
@@ -332,28 +349,28 @@ export default function GiftCodeRedeemStart(giftCode) {
               code: str.code,
               onRedeemed() {
                 let obj = outer1_0(outer1_2[8]);
-                obj = { step: outer1_11.SUCCESS, giftCode: closure_0, customMessage: closure_1, emojiName: getSubscriptionPlans, soundId: closure_2 };
+                obj = { step: outer1_12.SUCCESS, giftCode: closure_0, customMessage: closure_1, emojiName: Text, soundId: closure_2 };
                 obj.trackStep(obj);
                 obj = { giftCode: closure_0 };
               },
               onError(error) {
                 let obj = outer1_0(outer1_2[8]);
-                obj = { step: outer1_11.ERROR, giftCode: closure_0, customMessage: closure_1, emojiName: getSubscriptionPlans, soundId: closure_2 };
+                obj = { step: outer1_12.ERROR, giftCode: closure_0, customMessage: closure_1, emojiName: Text, soundId: closure_2 };
                 obj.trackStep(obj);
                 obj = { message: null };
-                obj[0] = outer1_0(outer1_2[8]).getGiftCodeRedeemError(error, closure_4);
+                obj[0] = outer1_0(outer1_2[8]).getGiftCodeRedeemError(error, getSubscriptionPlans);
                 const obj4 = outer1_0(outer1_2[8]);
               }
             };
             obj.redeemGiftCode(obj);
           };
-          tmp27(tmp2(tmp3[43]).Button, obj19);
+          tmp30(tmp2(tmp3[43]).Button, obj19);
           tmp2Result8 = tmp2(tmp3[9]);
         }
-        obj13[1] = tmp27Result1;
-        items11[1] = tmp27(tmp31, obj13);
+        obj13[1] = tmp30Result1;
+        items11[1] = tmp30(tmp34, obj13);
         obj1[2] = items11;
-        return tmp24(tmp2(tmp3[31]).SafeAreaPaddingView, obj1);
+        return tmp27(tmp2(tmp3[31]).SafeAreaPaddingView, obj1);
       }
     }
     if (null == first) {
@@ -364,27 +381,29 @@ export default function GiftCodeRedeemStart(giftCode) {
           tmp5Result = tmp5(tmp3[36]);
           obj20[1] = tmp2(tmp3[36]).GameIconSizes.LARGE;
           obj20[2] = giftCode.skuId;
-          tmp27Result = tmp27(tmp5Result, obj20);
+          tmp30Result = tmp30(tmp5Result, obj20);
         }
       }
     }
-    if (tmp28) {
+    if (tmp31) {
       if (null != product) {
-        if (null != firstAvatarDecoration) {
-          if (null != firstProfileEffect) {
-            const obj21 = { style: null, children: null };
-            obj21[0] = tmp.collectiblesAssetBundle;
-            const obj22 = { deco: null, pfx: null, nameplate: null, size: "large", targetSize: null };
-            obj22[0] = firstAvatarDecoration;
-            obj22[1] = firstProfileEffect;
-            obj22[2] = shopProductItems.firstNameplate;
-            obj22[4] = analyticsLocations;
-            obj21[1] = tmp27(tmp5(tmp3[37]), obj22);
-            let obj23 = obj21;
-          }
-          tmp27Result = tmp27(tmp31, obj23);
+        const obj21 = { style: null, onLayout: null, children: null };
+        obj21[0] = tmp.collectiblesAssetBundle;
+        obj21[1] = callback;
+        let tmp30Result3 = null != tmp25;
+        if (tmp30Result3) {
+          const obj22 = { deco: null, pfx: null, nameplate: null, previewAssets: null, disableStaticBackground: true, size: "large", targetSize: null, exposureLocation: "GiftCodeRedeemStart" };
+          obj22[0] = firstAvatarDecoration;
+          obj22[1] = firstProfileEffect;
+          obj22[2] = firstNameplate;
+          obj22[3] = product.previewAssets;
+          obj22[6] = tmp25;
+          tmp30Result3 = tmp30(tmp5(tmp3[37]), obj22);
         }
+        obj21[2] = tmp30Result3;
+        let obj23 = obj21;
       }
+      tmp30Result = tmp30(tmp34, obj23);
     }
     obj23 = { style: null, children: null };
     obj23[0] = giftCode.isSubscription ? tmp.giftCardAsset : tmp.collectiblesAsset;
@@ -399,7 +418,7 @@ export default function GiftCodeRedeemStart(giftCode) {
       obj[0] = user.getAvatarSource(null, true, str(soundId[38]).AVATAR_SIZE_MAP[str(undefined, soundId[38]).AvatarSizes.GIFT_START]);
       obj[1] = arg0;
       obj[2] = str(soundId[38]).AvatarSizes.GIFT_START;
-      return canStartAuthorization(str(soundId[38]).Avatar, obj);
+      return startAuthorization(str(soundId[38]).Avatar, obj);
     });
     const obj26 = { type: null };
     obj26[0] = tmp2(tmp3[12]).CollectiblesItemType.PROFILE_FRAME;
@@ -408,8 +427,8 @@ export default function GiftCodeRedeemStart(giftCode) {
       obj[0] = user.getAvatarSource(null, true, str(soundId[38]).AVATAR_SIZE_MAP[str(undefined, soundId[38]).AvatarSizes.GIFT_START]);
       obj[1] = arg0;
       obj[2] = str(soundId[38]).AvatarSizes.GIFT_START;
-      return canStartAuthorization(str(soundId[38]).Avatar, obj);
-    }).with(obj25, (profileEffect) => canStartAuthorization(customMessage(soundId[39]), { user, profileEffect }));
+      return startAuthorization(str(soundId[38]).Avatar, obj);
+    }).with(obj25, (profileEffect) => startAuthorization(customMessage(soundId[39]), { user, profileEffect }));
     const obj27 = { type: null };
     obj27[0] = tmp2(tmp3[12]).CollectiblesItemType.NAMEPLATE;
     const withResult2 = match.with(obj24, (arg0) => {
@@ -417,15 +436,15 @@ export default function GiftCodeRedeemStart(giftCode) {
       obj[0] = user.getAvatarSource(null, true, str(soundId[38]).AVATAR_SIZE_MAP[str(undefined, soundId[38]).AvatarSizes.GIFT_START]);
       obj[1] = arg0;
       obj[2] = str(soundId[38]).AvatarSizes.GIFT_START;
-      return canStartAuthorization(str(soundId[38]).Avatar, obj);
-    }).with(obj25, (profileEffect) => canStartAuthorization(customMessage(soundId[39]), { user, profileEffect })).with(obj26, (profileFrame) => canStartAuthorization(customMessage(soundId[40]), { user, profileFrame }));
+      return startAuthorization(str(soundId[38]).Avatar, obj);
+    }).with(obj25, (profileEffect) => startAuthorization(customMessage(soundId[39]), { user, profileEffect })).with(obj26, (profileFrame) => startAuthorization(customMessage(soundId[40]), { user, profileFrame }));
     obj23[1] = match.with(obj24, (arg0) => {
       const obj = { source: null, avatarDecoration: null, size: null, animate: true };
       obj[0] = user.getAvatarSource(null, true, str(soundId[38]).AVATAR_SIZE_MAP[str(undefined, soundId[38]).AvatarSizes.GIFT_START]);
       obj[1] = arg0;
       obj[2] = str(soundId[38]).AvatarSizes.GIFT_START;
-      return canStartAuthorization(str(soundId[38]).Avatar, obj);
-    }).with(obj25, (profileEffect) => canStartAuthorization(customMessage(soundId[39]), { user, profileEffect })).with(obj26, (profileFrame) => canStartAuthorization(customMessage(soundId[40]), { user, profileFrame })).with(obj27, (nameplate) => {
+      return startAuthorization(str(soundId[38]).Avatar, obj);
+    }).with(obj25, (profileEffect) => startAuthorization(customMessage(soundId[39]), { user, profileEffect })).with(obj26, (profileFrame) => startAuthorization(customMessage(soundId[40]), { user, profileFrame })).with(obj27, (nameplate) => {
       const items = [_undefined.nameplateContainer, ];
       let prop;
       if (!c8) {
@@ -434,15 +453,15 @@ export default function GiftCodeRedeemStart(giftCode) {
       obj = { style: items, children: tmp(str(soundId[41]).NameplatePreview, obj) };
       items[1] = prop;
       obj = { user, nameplate };
-      return canStartAuthorization(_undefined, obj);
-    }).otherwise(() => canStartAuthorization(customMessage(soundId[42]), { giftStyle: str.giftStyle }));
+      return startAuthorization(closure_6, obj);
+    }).otherwise(() => startAuthorization(customMessage(soundId[42]), { giftStyle: str.giftStyle }));
     const withResult3 = match.with(obj24, (arg0) => {
       const obj = { source: null, avatarDecoration: null, size: null, animate: true };
       obj[0] = user.getAvatarSource(null, true, str(soundId[38]).AVATAR_SIZE_MAP[str(undefined, soundId[38]).AvatarSizes.GIFT_START]);
       obj[1] = arg0;
       obj[2] = str(soundId[38]).AvatarSizes.GIFT_START;
-      return canStartAuthorization(str(soundId[38]).Avatar, obj);
-    }).with(obj25, (profileEffect) => canStartAuthorization(customMessage(soundId[39]), { user, profileEffect })).with(obj26, (profileFrame) => canStartAuthorization(customMessage(soundId[40]), { user, profileFrame })).with(obj27, (nameplate) => {
+      return startAuthorization(str(soundId[38]).Avatar, obj);
+    }).with(obj25, (profileEffect) => startAuthorization(customMessage(soundId[39]), { user, profileEffect })).with(obj26, (profileFrame) => startAuthorization(customMessage(soundId[40]), { user, profileFrame })).with(obj27, (nameplate) => {
       const items = [_undefined.nameplateContainer, ];
       let prop;
       if (!c8) {
@@ -451,18 +470,18 @@ export default function GiftCodeRedeemStart(giftCode) {
       obj = { style: items, children: tmp(str(soundId[41]).NameplatePreview, obj) };
       items[1] = prop;
       obj = { user, nameplate };
-      return canStartAuthorization(_undefined, obj);
+      return startAuthorization(closure_6, obj);
     });
   }
-  tmp25 = closure_6;
-  const tmp2Result5 = tmp2(tmp3[25]);
+  const tmp24 = emojiName(user.useState(), 2);
+  tmp28 = c7;
   if (tmp2Result9.isGameItemSKU(stateFromStores1)) {
     let intl = tmp2(tmp3[10]).intl;
     subscriptionGiftStartHeaderText = intl.string(tmp2(tmp3[10]).t["Bn1J+a"]);
   } else {
     const obj28 = { type: null, isBundle: null, sender: null };
     obj28[0] = type;
-    obj28[1] = tmp28;
+    obj28[1] = tmp31;
     obj28[2] = str;
     const match1 = tmp2(tmp3[11]).match(obj28);
     const obj29 = { isBundle: true, sender: null };

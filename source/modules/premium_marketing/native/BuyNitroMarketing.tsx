@@ -1,10 +1,10 @@
-// Module ID: 6556
-// Function ID: 6557
+// Module ID: 6562
+// Function ID: 6563
 // Name: BuyNitroMarketing
-// Dependencies: [19, 17, 1876, 21, 4189, 712, 6557, 1480, 6559, 6566, 6565, 6571, 5515, 6560, 6564, 6652, 6670, 6671, 6673, 6674, 6682, 12426, 12431, 12432, 12433, 2]
+// Dependencies: [19, 17, 1876, 21, 4193, 712, 6563, 1480, 6565, 6572, 6571, 6577, 5519, 6566, 6570, 6658, 6676, 6677, 6679, 6680, 6688, 12452, 12457, 12458, 12459, 2]
 // Exports: default
 
-// Module 6556 (BuyNitroMarketing)
+// Module 6562 (BuyNitroMarketing)
 import BuyNitroMarketingHeader from "BuyNitroMarketingHeader";
 import { View } from "BuyNitroPerk";
 import { PremiumTypes } from "GuildFeatures";
@@ -60,7 +60,7 @@ export default function BuyNitroMarketing(onPaymentDismiss) {
   let obj3 = applicationId(onPaymentDismiss[9]);
   let tmp7;
   if (null != initialTier) {
-    obj = { tier: null, productId: "a" };
+    obj = { tier: null, productId: "Array" };
     obj[0] = initialTier;
     tmp7 = obj;
   }

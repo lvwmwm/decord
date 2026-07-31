@@ -1,10 +1,10 @@
-// Module ID: 7433
-// Function ID: 7434
+// Module ID: 7441
+// Function ID: 7442
 // Name: SafetyShieldLeft3dIllustration
-// Dependencies: [21, 5141, 7434, 2]
+// Dependencies: [21, 5145, 7442, 2]
 // Exports: SafetyShieldLeft3dIllustration
 
-// Module 7433 (SafetyShieldLeft3dIllustration)
+// Module 7441 (SafetyShieldLeft3dIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SafetyShieldLeft3dIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const SafetyShieldLeft3dIllustration = function SafetyShieldLeft3dIllustr
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7434);
+  obj[0] = importDefault(7442);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const SafetyShieldLeft3dIllustration = function SafetyShieldLeft3dIllustr
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
 };

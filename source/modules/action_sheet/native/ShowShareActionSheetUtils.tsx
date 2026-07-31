@@ -1,10 +1,10 @@
-// Module ID: 8195
-// Function ID: 8196
+// Module ID: 8202
+// Function ID: 8203
 // Name: trackAppClickInNativeShareSheet
-// Dependencies: [676, 698, 8196, 5200, 2]
+// Dependencies: [676, 698, 8203, 5204, 2]
 // Exports: getMediaShareParams, resolveShareFileExtension, trackAppClickInNativeShareSheet
 
-// Module 8195 (trackAppClickInNativeShareSheet)
+// Module 8202 (trackAppClickInNativeShareSheet)
 import { AnalyticEvents } from "ME";
 
 const result = require("apexExperiment").fileFinishedImporting("modules/action_sheet/native/ShowShareActionSheetUtils.tsx");
@@ -21,7 +21,7 @@ export const trackAppClickInNativeShareSheet = function trackAppClickInNativeSha
 export const getMediaShareParams = function getMediaShareParams(source) {
   let contentType;
   let videoURI;
-  let obj = require(8196) /* apexExperiment */;
+  let obj = require(8203) /* apexExperiment */;
   if (obj.getMobileMediaViewerShareExperimentEnabled("shareMediaSource")) {
     if (true !== source.disableDownload) {
       if (true === source.isGIFV) {
@@ -38,7 +38,7 @@ export const getMediaShareParams = function getMediaShareParams(source) {
       } else {
         ({ videoURI, contentType } = source);
         if (null != videoURI) {
-          let tmpResult = tmp(5200);
+          let tmpResult = tmp(5204);
           const decideFileExtensionResult = tmpResult.decideFileExtension(videoURI, contentType, true);
           obj = { mediaFallbackUrl: null, mediaStagingOptions: null };
           obj[0] = videoURI;
@@ -52,7 +52,7 @@ export const getMediaShareParams = function getMediaShareParams(source) {
           obj[1] = tmp6;
           return obj;
         } else {
-          tmpResult = tmp(5200);
+          tmpResult = tmp(5204);
           const decideFileExtensionResult1 = tmpResult.decideFileExtension(source.uri, contentType, true);
           let uri = source.sourceURI;
           if (uri == null) {
@@ -83,5 +83,5 @@ export const getMediaShareParams = function getMediaShareParams(source) {
   return { mediaFallbackUrl };
 };
 export const resolveShareFileExtension = function resolveShareFileExtension(closure_0, contentType) {
-  return require(5200) /* decideFileExtension */.decideFileExtension(closure_0, contentType, true);
+  return require(5204) /* decideFileExtension */.decideFileExtension(closure_0, contentType, true);
 };

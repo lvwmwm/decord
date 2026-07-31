@@ -1,9 +1,9 @@
-// Module ID: 6075
-// Function ID: 6076
+// Module ID: 6081
+// Function ID: 6082
 // Name: listKey
-// Dependencies: [32, 1376, 1372, 4201, 3819, 1381, 6076, 12, 1383, 11, 6065, 589, 709, 2]
+// Dependencies: [32, 1376, 1372, 4205, 3823, 1381, 6082, 12, 1383, 11, 6071, 589, 709, 2]
 
-// Module 6075 (listKey)
+// Module 6081 (listKey)
 import _slicedToArray from "_slicedToArray";
 import { ALL_CHANNEL_TYPES } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -294,7 +294,7 @@ const archivedThreadsStore = new ArchivedThreadsStore(require("dispatcher"), {
     } else {
       return false;
     }
-    obj = channel(6065);
+    obj = channel(6071);
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     let flag = false;
@@ -348,8 +348,8 @@ const archivedThreadsStore = new ArchivedThreadsStore(require("dispatcher"), {
           const _Array2 = Array;
           obj[4] = Array.from(tagFilter.tagFilter);
           obj[5] = tagFilter.sortOrder;
-          const result = require(6076) /* trackForumChannelSeenBatch */.trackForumMorePostsLoaded(obj);
-          const obj3 = require(6076) /* trackForumChannelSeenBatch */;
+          const result = require(6082) /* trackForumChannelSeenBatch */.trackForumMorePostsLoaded(obj);
+          const obj3 = require(6082) /* trackForumChannelSeenBatch */;
         }
         resortListState(value);
         value.hasMore = tagFilter.hasMore;

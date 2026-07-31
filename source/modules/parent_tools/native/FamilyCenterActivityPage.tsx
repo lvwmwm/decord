@@ -1,10 +1,10 @@
-// Module ID: 13898
-// Function ID: 13899
+// Module ID: 13922
+// Function ID: 13923
 // Name: FamilyCenterActivityPage
-// Dependencies: [19, 17, 21, 4189, 712, 6252, 5177, 13899, 13901, 13911, 11108, 13915, 2]
+// Dependencies: [19, 17, 21, 4193, 712, 6258, 5181, 13923, 13925, 13935, 11126, 13939, 2]
 // Exports: default
 
-// Module 13898 (FamilyCenterActivityPage)
+// Module 13922 (FamilyCenterActivityPage)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,25 +28,25 @@ const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/na
 
 export default function FamilyCenterActivityPage() {
   const tmp = createCacheKey();
-  let obj = require(6252) /* useUserIdsForLinkStatus */;
+  let obj = require(6258) /* useUserIdsForLinkStatus */;
   obj = { style: tmp.scrollView, children: null };
   const activeLinkUserIds = obj.useActiveLinkUserIds();
   obj = { style: tmp.container, children: null };
-  const items = [callback(importDefault(13899), {}), ];
+  const items = [callback(importDefault(13923), {}), ];
   if (0 === activeLinkUserIds.length) {
     const obj1 = { children: null };
-    const items1 = [tmp3(tmp7(13901), {}), tmp3(tmp7(13911), {}), ];
+    const items1 = [tmp3(tmp7(13925), {}), tmp3(tmp7(13935), {}), ];
     const obj2 = { style: null, children: null };
     obj2[0] = tmp.dataConfirmation;
-    obj2[1] = tmp3(tmp7(11108), {});
+    obj2[1] = tmp3(tmp7(11126), {});
     items1[2] = tmp3(tmp6, obj2);
     obj1[0] = items1;
     let tmp3Result = tmp5(closure_6, obj1);
   } else {
-    tmp3Result = tmp3(tmp7(13915), {});
+    tmp3Result = tmp3(tmp7(13939), {});
   }
   items[1] = tmp3Result;
   obj[1] = items;
-  obj[1] = callback(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true, children: closure_7(closure_3, obj) });
+  obj[1] = callback(require(5181) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true, children: closure_7(closure_3, obj) });
   return callback(closure_4, obj);
 };

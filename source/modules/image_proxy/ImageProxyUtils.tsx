@@ -1,10 +1,10 @@
-// Module ID: 4220
-// Function ID: 4221
+// Module ID: 4224
+// Function ID: 4225
 // Name: isImageProxyURL
 // Dependencies: [1467, 1450, 2]
 // Exports: getSizedImageProxyURL, isImageProxyURL
 
-// Module 4220 (isImageProxyURL)
+// Module 4224 (isImageProxyURL)
 import set from "set";
 
 let parts;
@@ -48,13 +48,13 @@ export const getSizedImageProxyURL = function getSizedImageProxyURL(value, arg1)
     if (startsWithResult) {
       if (null != size) {
         const _String = String;
-        const obj2 = require(1450) /* isAttachmentLadderEnabled */;
-        const StringResult = String(obj2.getBestMediaProxySize(size * require(1450) /* isAttachmentLadderEnabled */.getDevicePixelRatio()));
+        const obj2 = require(1450) /* handleImageLoad */;
+        const StringResult = String(obj2.getBestMediaProxySize(size * require(1450) /* handleImageLoad */.getDevicePixelRatio()));
         const searchParams = str.searchParams;
         const result = searchParams.set("width", StringResult);
         const searchParams2 = str.searchParams;
         const result1 = searchParams2.set("height", StringResult);
-        const obj3 = require(1450) /* isAttachmentLadderEnabled */;
+        const obj3 = require(1450) /* handleImageLoad */;
       }
       if (null != keepAspectRatio) {
         const searchParams3 = str.searchParams;

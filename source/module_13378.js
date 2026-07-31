@@ -1,13 +1,9 @@
 // Module ID: 13378
 // Function ID: 13379
-// Dependencies: [13357]
+// Dependencies: [13379, 13447]
 
 // Module 13378
-const tmp = require("module_13357").navigator && require("module_13357").navigator.userAgent;
-let str = "";
-if (tmp) {
-  const _String = String;
-  str = String(tmp);
-}
+import module_13379 from "module_13379";
 
-export default str;
+
+export default require("module_13447").Object.assign;

@@ -1,10 +1,10 @@
-// Module ID: 15000
-// Function ID: 15001
+// Module ID: 15026
+// Function ID: 15027
 // Name: GuildsBarFooterWrapper
-// Dependencies: [14936, 21, 4189, 712, 3893, 4046, 5568, 2]
+// Dependencies: [14959, 21, 4193, 712, 3897, 4050, 5572, 2]
 // Exports: default
 
-// Module 15000 (GuildsBarFooterWrapper)
+// Module 15026 (GuildsBarFooterWrapper)
 import { GUILD_ITEM_HIT_SLOP } from "GUILD_ITEM_SIZE";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -16,9 +16,9 @@ let closure_5 = createCacheKey.createStyles(obj);
 const result = require("createCacheKey").fileFinishedImporting("modules/guilds_bar/native/GuildsBarFooterWrapper.tsx");
 
 export default function GuildsBarFooterWrapper(children) {
-  let obj = require(3893) /* map */;
+  let obj = require(3897) /* map */;
   const token = obj.useToken(importDefault(712).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  const MobileHomeDrawerExperiment = require(4046) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = require(4050) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
   const style = [callback().footerWrapper, ];
   let tmp5 = null;
   const tmp2 = callback();
@@ -29,5 +29,5 @@ export default function GuildsBarFooterWrapper(children) {
     tmp5 = obj;
   }
   style[1] = tmp5;
-  return tmp3(importDefault(5568), { style, children: children.children });
+  return tmp3(importDefault(5572), { style, children: children.children });
 };

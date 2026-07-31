@@ -1,9 +1,9 @@
-// Module ID: 8185
-// Function ID: 8186
+// Module ID: 8192
+// Function ID: 8193
 // Name: hide_icymi_tab
 // Dependencies: [2]
 
-// Module 8185 (hide_icymi_tab)
+// Module 8192 (hide_icymi_tab)
 const result = require("set").fileFinishedImporting("modules/labs/LabFeatures.tsx");
 
 export default { hide_icymi_tab: { description: "Hide ICYMI tab" }, go_back_to_regular_input: { description: "Go back to regular input" } };

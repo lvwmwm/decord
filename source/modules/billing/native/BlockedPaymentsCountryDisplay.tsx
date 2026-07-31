@@ -1,10 +1,10 @@
-// Module ID: 6355
-// Function ID: 6356
+// Module ID: 6361
+// Function ID: 6362
 // Name: BlockedPaymentsCountryDisplay
-// Dependencies: [19, 17, 676, 21, 4189, 712, 4125, 1297, 1236, 1945, 4035, 6356, 6357, 2]
+// Dependencies: [19, 17, 676, 21, 4193, 712, 4129, 1297, 1236, 1945, 4039, 6362, 6363, 2]
 // Exports: default
 
-// Module 6355 (BlockedPaymentsCountryDisplay)
+// Module 6361 (BlockedPaymentsCountryDisplay)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -35,7 +35,7 @@ export default function BlockedPaymentsCountryDisplay() {
   obj = { children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   const obj1 = { helpdeskArticle: null };
-  const tmp4 = importDefault(4125)();
+  const tmp4 = importDefault(4129)();
   const tmp5 = closure_7;
   const tmp6 = closure_3;
   const tmp7 = callback;
@@ -46,9 +46,9 @@ export default function BlockedPaymentsCountryDisplay() {
   const obj5 = importDefault(1945);
   const tmp8 = closure_4;
   if (obj7.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(6356);
+    let tmp2Result = tmp2(6362);
   } else {
-    tmp2Result = tmp2(6357);
+    tmp2Result = tmp2(6363);
   }
   obj2[1] = tmp2Result;
   items[2] = tmp7(tmp8, obj2);

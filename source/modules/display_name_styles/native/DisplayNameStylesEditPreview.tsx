@@ -1,10 +1,10 @@
-// Module ID: 14364
-// Function ID: 14365
+// Module ID: 14387
+// Function ID: 14388
 // Name: ChatPreview
-// Dependencies: [19, 17, 21, 4189, 712, 7940, 1898, 8073, 1236, 2581, 9820, 3859, 1297, 8377, 8378, 4185, 2]
+// Dependencies: [19, 17, 21, 4193, 712, 7947, 1898, 8080, 1236, 2583, 9837, 3863, 1297, 8390, 8391, 4189, 2]
 // Exports: default
 
-// Module 14364 (ChatPreview)
+// Module 14387 (ChatPreview)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,23 +32,24 @@ function ChatPreview(arg0) {
   const items = [callback(require(1297) /* Button */.Avatar, obj), ];
   obj = { style: tmp.chatContent, children: null };
   const obj1 = { style: tmp.chatHeader, children: null };
-  const obj2 = { userId: user.id, guildId, userName: displayName, variant: "text-md/semibold", effectDisplayType: null, lineClamp: 1, pendingDisplayNameStyles: null };
-  obj2[4] = require(8378) /* DisplayNameStyleColorPreset */.EffectDisplayType.PLAIN;
+  const obj2 = { userId: user.id, guildId, userName: displayName, variant: "text-md/semibold", effectDisplayType: null, lineClamp: 1, pendingDisplayNameStyles: null, style: null };
+  obj2[4] = require(8391) /* DisplayNameStyleColorPreset */.EffectDisplayType.PLAIN;
   obj2[6] = displayNameStyles;
-  const items1 = [callback(importDefault(8377), obj2), callback(require(4185) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", style: tmp.chatTimestamp, children: memo })];
+  obj2[7] = tmp.chatUsername;
+  const items1 = [callback(importDefault(8390), obj2), callback(require(4189) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", style: tmp.chatTimestamp, children: memo })];
   obj1[1] = items1;
   const items2 = [callback2(View, obj1), ];
   const obj4 = { variant: "text-md/normal", color: "text-default", style: tmp.chatMessageText, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
-  obj4[3] = intl.string(importDefault(2581).h5Cuej);
-  items2[1] = callback(require(4185) /* Text */.Text, obj4);
+  obj4[3] = intl.string(importDefault(2583).h5Cuej);
+  items2[1] = callback(require(4189) /* Text */.Text, obj4);
   obj[1] = items2;
   items[1] = callback2(View, obj);
   obj[2] = items;
   return callback2(View, obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
-createCacheKey = { previewSection: null, chatPreviewWrapper: null, nameplatePreviewWrapper: null, chatContainer: null, chatContent: null, chatHeader: null, chatTimestamp: null, chatMessageText: null };
+createCacheKey = { previewSection: null, chatPreviewWrapper: null, nameplatePreviewWrapper: null, chatContainer: null, chatContent: null, chatHeader: null, chatUsername: null, chatTimestamp: null, chatMessageText: null };
 createCacheKey = { marginBottom: require("Themes").space.PX_24, alignItems: "center", alignSelf: "center", width: "100%", maxWidth: 360 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { marginTop: -18, alignSelf: "flex-end", width: 260, borderRadius: require("Themes").radii.sm, borderWidth: 1, borderColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };
@@ -57,8 +58,9 @@ let obj1 = { marginTop: -18, alignSelf: "flex-end", width: 260, borderRadius: re
 createCacheKey[3] = { flexDirection: "row", borderRadius: require("Themes").radii.sm, padding: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, gap: require("Themes").space.PX_12 };
 createCacheKey[4] = { flex: 1 };
 createCacheKey[5] = { flexDirection: "row", alignItems: "baseline", gap: 6 };
-createCacheKey[6] = { marginTop: -8 };
-createCacheKey[7] = {};
+createCacheKey[6] = { flexShrink: 1, minWidth: 0 };
+createCacheKey[7] = { marginTop: -8, flexShrink: 0 };
+createCacheKey[8] = {};
 createCacheKey = createCacheKey.createStyles(createCacheKey);
 let obj2 = { flexDirection: "row", borderRadius: require("Themes").radii.sm, padding: require("Themes").space.PX_16, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, gap: require("Themes").space.PX_12 };
 const result = require("jsxProd").fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesEditPreview.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 14023
-// Function ID: 14024
+// Module ID: 14047
+// Function ID: 14048
 // Name: QuestHomeHeaderTitle
-// Dependencies: [19, 17, 5033, 676, 678, 21, 4189, 712, 14020, 4185, 1236, 8716, 4157, 9813, 1959, 698, 5535, 5797, 9801, 14024, 6680, 14025, 1480, 12279, 2]
+// Dependencies: [19, 17, 5037, 676, 678, 21, 4193, 712, 14044, 4189, 1236, 8729, 4161, 9830, 1959, 698, 5539, 5802, 9818, 14048, 6686, 14049, 1480, 12305, 2]
 // Exports: default
 
-// Module 14023 (QuestHomeHeaderTitle)
+// Module 14047 (QuestHomeHeaderTitle)
 import FilterFooter from "FilterFooter";
 import { View } from "openCollectiblesShop";
 import { QuestHomeSortMethods } from "QuestsExperimentLocations";
@@ -19,11 +19,11 @@ const require = arg1;
 function QuestHomeHeaderTitle() {
   const tmp = createCacheKey();
   let obj = { style: tmp.headerTitleContainer, children: null };
-  const items = [callback(require(14020) /* QuestsIcon */.QuestsIcon, { size: "md", color: "icon-strong" }), ];
+  const items = [callback(require(14044) /* QuestsIcon */.QuestsIcon, { size: "md", color: "icon-strong" }), ];
   obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[5] = intl.string(require(1236) /* getSystemLocale */.t.JALI2K);
-  items[1] = callback(require(4185) /* Text */.Heading, obj);
+  items[1] = callback(require(4189) /* Text */.Heading, obj);
   obj[1] = items;
   return callback2(View, obj);
 }
@@ -31,7 +31,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   isVirtualCurrencyEnabled = isVirtualCurrencyEnabled.isVirtualCurrencyEnabled;
   const merged = Object.assign(isVirtualCurrencyEnabled, Object.create(null));
   let balance;
-  let obj = balance(8716);
+  let obj = balance(8729);
   balance = obj.useFetchVirtualCurrencyBalance().balance;
   [][0] = balance;
   obj = { style: createCacheKey().headerRightContainer, children: null };
@@ -39,7 +39,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
     obj = { balance: null, onPress: null };
     obj[0] = balance;
     obj[1] = tmp5;
-    isVirtualCurrencyEnabled = callback(balance(9801).BalanceWidgetPillButton, obj);
+    isVirtualCurrencyEnabled = callback(balance(9818).BalanceWidgetPillButton, obj);
   }
   let items = [isVirtualCurrencyEnabled, ];
   const merged1 = Object.assign(merged);

@@ -1,10 +1,10 @@
-// Module ID: 8215
-// Function ID: 8216
+// Module ID: 8222
+// Function ID: 8223
 // Name: CREATE_GUILD_EVENT_MODAL_KEY
 // Dependencies: [2]
 // Exports: isGuildEventValid
 
-// Module 8215 (CREATE_GUILD_EVENT_MODAL_KEY)
+// Module 8222 (CREATE_GUILD_EVENT_MODAL_KEY)
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/native/GuildEventModalConstants.tsx");
 
 export const CREATE_GUILD_EVENT_MODAL_KEY = "create-guild-event-modal";

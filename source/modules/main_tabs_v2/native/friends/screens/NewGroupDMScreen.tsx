@@ -1,10 +1,10 @@
-// Module ID: 15590
-// Function ID: 15591
+// Module ID: 15618
+// Function ID: 15619
 // Name: handleOneRecipientInDM
-// Dependencies: [32, 5, 19, 17, 1372, 12801, 4261, 1874, 8809, 676, 21, 4189, 712, 4199, 4399, 8913, 10875, 4157, 589, 15580, 698, 3890, 1236, 9114, 8821, 12230, 6690, 6042, 1297, 8810, 2]
+// Dependencies: [32, 5, 19, 17, 1372, 12826, 4265, 1874, 8822, 676, 21, 4193, 712, 4203, 4403, 8926, 10893, 4161, 589, 15608, 698, 3894, 1236, 9127, 8834, 12256, 6696, 6048, 1297, 8823, 2]
 // Exports: default
 
-// Module 15590 (handleOneRecipientInDM)
+// Module 15618 (handleOneRecipientInDM)
 import _slicedToArray from "_slicedToArray";
 import performQuery from "performQuery";
 import getGroupDMRecipientLimit from "getGroupDMRecipientLimit";
@@ -203,7 +203,7 @@ function _handleInviteUsers() {
                         return obj2;
                       }
                     }
-                    const obj13 = arr(4199);
+                    const obj13 = arr(4203);
                     c5 = 2;
                     c6 = 1;
                     let obj3 = { value: null, done: false };
@@ -214,7 +214,7 @@ function _handleInviteUsers() {
                 if (null != lib) {
                   if (store.getChannelId() === lib.id) {
                     if (lib.isDM()) {
-                      let obj10 = lib(4399);
+                      let obj10 = lib(4403);
                       obj10.showGuardCallAlert(callback(function*() {
                         if (dependencyMap === 2) {
                           dependencyMap = 3;
@@ -250,7 +250,7 @@ function _handleInviteUsers() {
                                   obj1[0] = outer1_20(tmp33, dependencyMap);
                                   return obj1;
                                 } else {
-                                  let obj5 = v0(4199);
+                                  let obj5 = v0(4203);
                                   v0 = 1;
                                   dependencyMap = 1;
                                   let obj2 = { value: null, done: false };
@@ -288,19 +288,19 @@ function _handleInviteUsers() {
                                 obj[0] = arg1;
                                 return obj;
                               } else {
-                                const tmp8 = v0(8913);
+                                const tmp8 = v0(8926);
                                 const call = tmp8.call;
                                 if (typeof call === "unknown") {
                                   tmp8(false, true);
                                 } else {
                                   call(tmp9, false, true);
                                 }
-                                v0(10875)(_slicedToArray);
+                                v0(10893)(_slicedToArray);
                                 dependencyMap = 3;
                                 tmp9 = _slicedToArray;
                               }
                               _slicedToArray = arg1;
-                              obj2 = outer1_0(4399);
+                              obj2 = outer1_0(4403);
                               v0 = 3;
                               dependencyMap = 1;
                               obj5 = { value: null, done: false };
@@ -314,7 +314,7 @@ function _handleInviteUsers() {
                         }
                       }));
                     } else if (lib.isGroupDM()) {
-                      let obj8 = arr(4199);
+                      let obj8 = arr(4203);
                       c5 = 5;
                       c6 = 1;
                       let obj4 = { value: null, done: false };
@@ -323,7 +323,7 @@ function _handleInviteUsers() {
                     }
                   }
                 }
-                let obj5 = arr(4199);
+                let obj5 = arr(4203);
                 obj5 = { recipientIds: null, location: "New Group DM", onBeforeTransition: null };
                 obj5[0] = arr;
                 obj5[2] = dependencyMap;
@@ -372,7 +372,7 @@ function _handleInviteUsers() {
                   throw arg1;
                 } else if (arg0 !== 2) {
                   _slicedToArray = arg1;
-                  obj = arr(8913);
+                  obj = arr(8926);
                   obj.ring(_slicedToArray, arr, "gdm_invite");
                 }
                 c6 = 3;
@@ -382,9 +382,9 @@ function _handleInviteUsers() {
               }
               _slicedToArray = arg1;
             }
-            arr(4157).hideActionSheet(closure_16);
+            arr(4161).hideActionSheet(closure_16);
             c6 = 3;
-            const obj12 = arr(4157);
+            const obj12 = arr(4161);
           }
         } catch (tmp77) {
           c6 = tmp;

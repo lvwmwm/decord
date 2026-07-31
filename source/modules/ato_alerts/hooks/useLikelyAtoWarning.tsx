@@ -1,23 +1,23 @@
-// Module ID: 10432
-// Function ID: 10433
+// Module ID: 10450
+// Function ID: 10451
 // Name: useLikelyAtoWarning
-// Dependencies: [9095, 10428, 10429, 10430, 10129, 10427, 2]
+// Dependencies: [9106, 10446, 10447, 10448, 10146, 10445, 2]
 // Exports: useLikelyAtoWarning
 
-// Module 10432 (useLikelyAtoWarning)
+// Module 10450 (useLikelyAtoWarning)
 import { SafetyWarningTypes } from "handleConnectionOpen";
 
 const result = require("useIsMessageRequest").fileFinishedImporting("modules/ato_alerts/hooks/useLikelyAtoWarning.tsx");
 
 export const useLikelyAtoWarning = function useLikelyAtoWarning(channelId) {
-  const isSpamMessageRequest = require(10428) /* useIsSpamMessageRequest */.useIsSpamMessageRequest(channelId);
-  const obj = require(10428) /* useIsSpamMessageRequest */;
-  const isMessageRequest = require(10429) /* useIsMessageRequest */.useIsMessageRequest(channelId);
-  const obj2 = require(10429) /* useIsMessageRequest */;
-  const channelSafetyWarning = require(10430) /* useChannelSafetyWarning */.useChannelSafetyWarning(channelId, SafetyWarningTypes.LIKELY_ATO);
-  const obj3 = require(10430) /* useChannelSafetyWarning */;
-  const obj4 = require(10129) /* useInappropriateConversationWarningsForChannel */;
-  const tmp4 = require(10129) /* useInappropriateConversationWarningsForChannel */.useInappropriateConversationWarningsForChannel(channelId).length > 0;
+  const isSpamMessageRequest = require(10446) /* useIsSpamMessageRequest */.useIsSpamMessageRequest(channelId);
+  const obj = require(10446) /* useIsSpamMessageRequest */;
+  const isMessageRequest = require(10447) /* useIsMessageRequest */.useIsMessageRequest(channelId);
+  const obj2 = require(10447) /* useIsMessageRequest */;
+  const channelSafetyWarning = require(10448) /* useChannelSafetyWarning */.useChannelSafetyWarning(channelId, SafetyWarningTypes.LIKELY_ATO);
+  const obj3 = require(10448) /* useChannelSafetyWarning */;
+  const obj4 = require(10146) /* useInappropriateConversationWarningsForChannel */;
+  const tmp4 = require(10146) /* useInappropriateConversationWarningsForChannel */.useInappropriateConversationWarningsForChannel(channelId).length > 0;
   if (!isSpamMessageRequest) {
     if (!isMessageRequest) {
       if (!tmp4) {

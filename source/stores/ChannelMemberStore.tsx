@@ -1,9 +1,9 @@
-// Module ID: 6053
-// Function ID: 6054
+// Module ID: 6059
+// Function ID: 6060
 // Name: getMemberListId
-// Dependencies: [4103, 4208, 1218, 1372, 4110, 1942, 1935, 1862, 4276, 4867, 1874, 676, 1236, 3822, 1217, 12, 506, 589, 709, 2]
+// Dependencies: [4107, 4212, 1218, 1372, 4114, 1942, 1935, 1862, 4280, 4871, 1874, 676, 1236, 3826, 1217, 12, 506, 589, 709, 2]
 
-// Module 6053 (getMemberListId)
+// Module 6059 (getMemberListId)
 import getHash from "getHash";
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";
@@ -53,7 +53,7 @@ function getMemberListId(arg0) {
       str = obj2.v3(sorted.join(",")).toString();
       const str2 = obj2.v3(sorted.join(","));
     }
-    obj = importAll(3822);
+    obj = importAll(3826);
   } else {
     memberListId = channel.memberListId;
   }
@@ -96,7 +96,7 @@ prototype["updateOwnerId"] = function updateOwnerId() {
   if (null == guild) {
     return false;
   } else {
-    const guildVisualOwnerId = importAll(3822).getGuildVisualOwnerId(guild);
+    const guildVisualOwnerId = importAll(3826).getGuildVisualOwnerId(guild);
     let flag = self.ownerId !== guildVisualOwnerId;
     if (flag) {
       self.ownerId = guildVisualOwnerId;
@@ -526,7 +526,7 @@ prototype2["get"] = function get(guildId, listId) {
   }
   let tmp2 = tmp[listId];
   if (null == tmp2) {
-    if (typeof MemberList !== "find") {
+    if (typeof MemberList !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     obj = Object.create(MemberList.prototype);

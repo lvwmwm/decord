@@ -1,10 +1,10 @@
-// Module ID: 11058
-// Function ID: 11059
+// Module ID: 11076
+// Function ID: 11077
 // Name: useCurrentUserHasAutomodQuarantinedProfile
-// Dependencies: [19, 9798, 1218, 1942, 1862, 3817, 4006, 676, 3805, 685, 647, 3823, 1236, 9799, 9800, 6608, 2]
+// Dependencies: [19, 9815, 1218, 1942, 1862, 3821, 4010, 676, 3809, 685, 647, 3827, 1236, 9816, 9817, 6614, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 11058 (useCurrentUserHasAutomodQuarantinedProfile)
+// Module 11076 (useCurrentUserHasAutomodQuarantinedProfile)
 import noop from "noop";
 import zustandStore from "zustandStore";
 import fetchFingerprint from "fetchFingerprint";
@@ -44,7 +44,7 @@ export const useGuildAutomodProfileQuarantineErrors = function useGuildAutomodPr
     if (id == null) {
       guildId = outer1_8.getGuildId();
     }
-    let obj = { nick: "Array", bio: "ct" };
+    let obj = { nick: "Array", bio: "HermesInternal" };
     let guild = outer1_6.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {

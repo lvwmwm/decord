@@ -1,10 +1,10 @@
-// Module ID: 7565
-// Function ID: 7566
+// Module ID: 7573
+// Function ID: 7574
 // Name: TabletSpotIllustration
-// Dependencies: [21, 5141, 7566, 2]
+// Dependencies: [21, 5145, 7574, 2]
 // Exports: TabletSpotIllustration
 
-// Module 7565 (TabletSpotIllustration)
+// Module 7573 (TabletSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/TabletSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const TabletSpotIllustration = function TabletSpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7566);
+  obj[0] = importDefault(7574);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const TabletSpotIllustration = function TabletSpotIllustration(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
 };

@@ -1,9 +1,9 @@
-// Module ID: 6032
-// Function ID: 6033
+// Module ID: 6038
+// Function ID: 6039
 // Name: getStats
-// Dependencies: [5, 6026, 5958, 6033, 2]
+// Dependencies: [5, 6032, 5964, 6039, 2]
 
-// Module 6032 (getStats)
+// Module 6038 (getStats)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -29,7 +29,7 @@ prototype["getStats"] = function getStats() {
   const report = cpuHistogram.getReport();
   const memoryHistogram = this.memoryHistogram;
   const report1 = memoryHistogram.getReport();
-  let obj = importDefault(5958);
+  let obj = importDefault(5964);
   const cumulativeCPUUsage = obj.getCumulativeCPUUsage();
   let result;
   if (null != this.startCPU) {
@@ -52,10 +52,10 @@ prototype["getStats"] = function getStats() {
 };
 prototype["takeSample"] = function takeSample() {
   const self = this;
-  const cumulativeCPUUsage = importDefault(5958).getCumulativeCPUUsage();
-  const obj = importDefault(5958);
+  const cumulativeCPUUsage = importDefault(5964).getCumulativeCPUUsage();
+  const obj = importDefault(5964);
   const tmp = importDefault;
-  const currentMemoryUsageKB = importDefault(5958).getCurrentMemoryUsageKB();
+  const currentMemoryUsageKB = importDefault(5964).getCurrentMemoryUsageKB();
   if (null != cumulativeCPUUsage) {
     let flag = true;
     if (null != self.lastCPU) {
@@ -71,12 +71,12 @@ prototype["takeSample"] = function takeSample() {
       self.lastCPU = cumulativeCPUUsage;
     }
   } else {
-    const currentCPUUsagePercent = tmp(5958).getCurrentCPUUsagePercent();
+    const currentCPUUsagePercent = tmp(5964).getCurrentCPUUsagePercent();
     if (null != currentCPUUsagePercent) {
       const cpuHistogram2 = self.cpuHistogram;
       cpuHistogram2.addSample(currentCPUUsagePercent);
     }
-    const tmpResult = tmp(5958);
+    const tmpResult = tmp(5964);
   }
   if (null != currentMemoryUsageKB) {
     const memoryHistogram = self.memoryHistogram;

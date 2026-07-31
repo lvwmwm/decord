@@ -1,16 +1,16 @@
-// Module ID: 14444
-// Function ID: 14445
+// Module ID: 14467
+// Function ID: 14468
 // Name: onChange
-// Dependencies: [7753, 676, 3829, 3862, 1306, 698, 10116, 1236, 2]
+// Dependencies: [7761, 676, 3833, 3866, 1306, 698, 10133, 1236, 2]
 // Exports: onChange
 
-// Module 14444 (onChange)
+// Module 14467 (onChange)
 import { AnalyticEvents } from "ME";
 import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags";
 import createToggle from "createToggle";
 
 function onChange(custom_status_push_notifications) {
-  const CustomStatusPushNotifications = require(3862) /* explicitContentFromProto */.CustomStatusPushNotifications;
+  const CustomStatusPushNotifications = require(3866) /* explicitContentFromProto */.CustomStatusPushNotifications;
   const CustomStatusPushNotificationType = require(1306) /* create */.CustomStatusPushNotificationType;
   CustomStatusPushNotifications.updateSetting(custom_status_push_notifications ? CustomStatusPushNotificationType.STATUS_PUSH_ENABLED : CustomStatusPushNotificationType.STATUS_PUSH_DISABLED);
   let obj = importDefault(698);
@@ -28,7 +28,7 @@ const toggle = createToggle.createToggle({
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue() {
-    const CustomStatusPushNotifications = require(3862) /* explicitContentFromProto */.CustomStatusPushNotifications;
+    const CustomStatusPushNotifications = require(3866) /* explicitContentFromProto */.CustomStatusPushNotifications;
     const setting = CustomStatusPushNotifications.useSetting();
     return setting !== require(1306) /* create */.CustomStatusPushNotificationType.STATUS_PUSH_DISABLED;
   },
@@ -45,7 +45,7 @@ let obj = {
   },
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue() {
-    const CustomStatusPushNotifications = require(3862) /* explicitContentFromProto */.CustomStatusPushNotifications;
+    const CustomStatusPushNotifications = require(3866) /* explicitContentFromProto */.CustomStatusPushNotifications;
     const setting = CustomStatusPushNotifications.useSetting();
     return setting !== require(1306) /* create */.CustomStatusPushNotificationType.STATUS_PUSH_DISABLED;
   },

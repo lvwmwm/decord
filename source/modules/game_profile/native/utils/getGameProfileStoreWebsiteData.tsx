@@ -1,10 +1,10 @@
-// Module ID: 8491
-// Function ID: 8492
+// Module ID: 8504
+// Function ID: 8505
 // Name: getGameProfileStoreWebsiteData
-// Dependencies: [19, 21, 8487, 8492, 8483, 1236, 8494, 8496, 8498, 8500, 8502, 8506, 2]
+// Dependencies: [19, 21, 8500, 8505, 8496, 1236, 8507, 8509, 8511, 8513, 8515, 8519, 2]
 // Exports: default
 
-// Module 8491 (getGameProfileStoreWebsiteData)
+// Module 8504 (getGameProfileStoreWebsiteData)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -13,58 +13,58 @@ const result = require("ThirdPartyGameApplicationWebsiteCategory").fileFinishedI
 
 export default function getGameProfileStoreWebsiteData(category) {
   category = category.category;
-  if (require(8487) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.STEAM === category) {
+  if (require(8500) /* ThirdPartyGameApplicationWebsiteCategory */.ThirdPartyGameApplicationWebsiteCategory.STEAM === category) {
     let obj = { icon: null, action: null, title: null, url: null };
-    obj[0] = jsx(tmp(8492).SteamNeutralIcon, { size: "md" });
-    obj[1] = tmp(8483).GameProfileTrackActionActions.SteamStoreLink;
+    obj[0] = jsx(tmp(8505).SteamNeutralIcon, { size: "md" });
+    obj[1] = tmp(8496).GameProfileTrackActionActions.SteamStoreLink;
     const intl7 = tmp(1236).intl;
     obj[2] = intl7.string(tmp(1236).t.FsANs4);
     obj[3] = category.url;
     return obj;
-  } else if (tmp(8487).ThirdPartyGameApplicationWebsiteCategory.EPICGAMES === category) {
+  } else if (tmp(8500).ThirdPartyGameApplicationWebsiteCategory.EPICGAMES === category) {
     obj = { icon: null, action: null, title: null, url: null };
-    obj[0] = jsx(tmp(8494).EpicGamesNeutralIcon, { size: "md" });
-    obj[1] = tmp(8483).GameProfileTrackActionActions.EpicStoreLink;
+    obj[0] = jsx(tmp(8507).EpicGamesNeutralIcon, { size: "md" });
+    obj[1] = tmp(8496).GameProfileTrackActionActions.EpicStoreLink;
     const intl6 = tmp(1236).intl;
     obj[2] = intl6.string(tmp(1236).t.ZbBMHa);
     obj[3] = category.url;
     return obj;
-  } else if (tmp(8487).ThirdPartyGameApplicationWebsiteCategory.ROBLOX === category) {
+  } else if (tmp(8500).ThirdPartyGameApplicationWebsiteCategory.ROBLOX === category) {
     const obj1 = { icon: null, action: null, title: null, url: null };
-    obj1[0] = jsx(tmp(8496).RobloxNeutralIcon, { size: "md" });
-    obj1[1] = tmp(8483).GameProfileTrackActionActions.RobloxStoreLink;
+    obj1[0] = jsx(tmp(8509).RobloxNeutralIcon, { size: "md" });
+    obj1[1] = tmp(8496).GameProfileTrackActionActions.RobloxStoreLink;
     const intl5 = tmp(1236).intl;
     obj1[2] = intl5.string(tmp(1236).t["pJ+P+h"]);
     obj1[3] = category.url;
     return obj1;
-  } else if (tmp(8487).ThirdPartyGameApplicationWebsiteCategory.BATTLENET === category) {
+  } else if (tmp(8500).ThirdPartyGameApplicationWebsiteCategory.BATTLENET === category) {
     const obj2 = { icon: null, action: null, title: null, url: null };
-    obj2[0] = jsx(tmp(8498).BattlenetNeutralIcon, { size: "md" });
-    obj2[1] = tmp(8483).GameProfileTrackActionActions.BattlenetStoreLink;
+    obj2[0] = jsx(tmp(8511).BattlenetNeutralIcon, { size: "md" });
+    obj2[1] = tmp(8496).GameProfileTrackActionActions.BattlenetStoreLink;
     const intl4 = tmp(1236).intl;
     obj2[2] = intl4.string(tmp(1236).t["A7grp+"]);
     obj2[3] = category.url;
     return obj2;
-  } else if (tmp(8487).ThirdPartyGameApplicationWebsiteCategory.RIOT === category) {
+  } else if (tmp(8500).ThirdPartyGameApplicationWebsiteCategory.RIOT === category) {
     const obj3 = { icon: null, action: null, title: null, url: null };
-    obj3[0] = jsx(tmp(8500).RiotGamesNeutralIcon, { size: "md" });
-    obj3[1] = tmp(8483).GameProfileTrackActionActions.RiotStoreLink;
+    obj3[0] = jsx(tmp(8513).RiotGamesNeutralIcon, { size: "md" });
+    obj3[1] = tmp(8496).GameProfileTrackActionActions.RiotStoreLink;
     const intl3 = tmp(1236).intl;
     obj3[2] = intl3.string(tmp(1236).t.h6MapL);
     obj3[3] = category.url;
     return obj3;
-  } else if (tmp(8487).ThirdPartyGameApplicationWebsiteCategory.MINECRAFT === category) {
+  } else if (tmp(8500).ThirdPartyGameApplicationWebsiteCategory.MINECRAFT === category) {
     const obj4 = { icon: null, action: null, title: null, url: null };
-    obj4[0] = jsx(tmp(8502).MinecraftNeutralIcon, { size: "md" });
-    obj4[1] = tmp(8483).GameProfileTrackActionActions.MinecraftStoreLink;
+    obj4[0] = jsx(tmp(8515).MinecraftNeutralIcon, { size: "md" });
+    obj4[1] = tmp(8496).GameProfileTrackActionActions.MinecraftStoreLink;
     const intl2 = tmp(1236).intl;
     obj4[2] = intl2.string(tmp(1236).t["HZbmO+"]);
     obj4[3] = category.url;
     return obj4;
   } else if ("XBOX_GAME_PASS" === category) {
     obj = { icon: null, action: null, title: null, url: null };
-    obj[0] = jsx(tmp(8506).XboxNeutralIcon, { size: "md" });
-    obj[1] = tmp(8483).GameProfileTrackActionActions.XboxGamePassStoreLink;
+    obj[0] = jsx(tmp(8519).XboxNeutralIcon, { size: "md" });
+    obj[1] = tmp(8496).GameProfileTrackActionActions.XboxGamePassStoreLink;
     const intl = tmp(1236).intl;
     obj[2] = intl.string(tmp(1236).t["QpN/Iz"]);
     obj[3] = category.url;

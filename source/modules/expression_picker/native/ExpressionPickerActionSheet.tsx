@@ -1,10 +1,10 @@
-// Module ID: 9585
-// Function ID: 9586
+// Module ID: 9600
+// Function ID: 9601
 // Name: ExpressionPickerActionSheet
-// Dependencies: [19, 1372, 5244, 9586, 21, 4050, 4055, 1579, 589, 9587, 4157, 1474, 1581, 5140, 500, 9348, 5243, 9588, 2]
+// Dependencies: [19, 1372, 5248, 9601, 21, 4054, 4059, 1579, 589, 9602, 4161, 1474, 1581, 5144, 500, 9363, 5247, 9603, 2]
 // Exports: default
 
-// Module 9585 (ExpressionPickerActionSheet)
+// Module 9600 (ExpressionPickerActionSheet)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { ACTION_SHEET_START_HEIGHT_RATIO as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO";
@@ -29,22 +29,22 @@ export default function ExpressionPickerActionSheet(arg0) {
   let visibleTabs;
   ({ channelId: require, onPressEmoji: importDefault, onPressSticker: dependencyMap, onPressGIF: noop } = arg0);
   ({ hideGifFavorites, onDismiss, visibleTabs, initialGifQuery } = arg0);
-  let obj = require(4050);
+  let obj = require(4054);
   const sharedValue = obj.useSharedValue(-1);
-  let obj1 = require(4055) /* useKeyboardType */;
+  let obj1 = require(4059) /* useKeyboardType */;
   const keyboardContextForType = obj1.useKeyboardContextForType(require(1579) /* KeyboardTypes */.KeyboardTypes.EXPRESSION);
   let obj2 = require(589) /* initialize */;
   const items = [ensureGuildLoaded];
   const stateFromStores = obj2.useStateFromStores(items, () => outer1_4.getChannel(closure_0));
   const height = importDefault(1474)({ ignoreKeyboard: true }).height;
-  const diff = height - require(5140) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT_MULTILINE - importDefault(1581)().top;
+  const diff = height - require(5144) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT_MULTILINE - importDefault(1581)().top;
   let tmp15Result = null;
   if (undefined !== stateFromStores) {
     let isIOSResult = tmp2(500).isIOS();
     if (isIOSResult) {
       obj = { animatedSheetIndex: null, followSystemKeyboard: true };
       obj[0] = sharedValue;
-      isIOSResult = callback(tmp7(9348), obj);
+      isIOSResult = callback(tmp7(9363), obj);
     }
     obj = { children: null };
     const items1 = [isIOSResult, ];
@@ -81,8 +81,8 @@ export default function ExpressionPickerActionSheet(arg0) {
     obj2[9] = initialGifQuery;
     obj2[10] = STICKER_FORMATS;
     obj2[11] = diff;
-    obj1[5] = callback(tmp7(9588), obj2);
-    items1[1] = callback(tmp2(5243).BottomSheet, obj1);
+    obj1[5] = callback(tmp7(9603), obj2);
+    items1[1] = callback(tmp2(5247).BottomSheet, obj1);
     obj[0] = items1;
     tmp15Result = closure_9(closure_8, obj);
     const tmp15 = closure_9;

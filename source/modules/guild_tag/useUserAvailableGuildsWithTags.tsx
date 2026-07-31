@@ -1,10 +1,10 @@
-// Module ID: 13730
-// Function ID: 13731
+// Module ID: 13754
+// Function ID: 13755
 // Name: useUserAvailableGuildsWithTags
-// Dependencies: [1942, 1862, 589, 7939, 2]
+// Dependencies: [1942, 1862, 589, 7946, 2]
 // Exports: useUserAvailableGuildsWithTags
 
-// Module 13730 (useUserAvailableGuildsWithTags)
+// Module 13754 (useUserAvailableGuildsWithTags)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 

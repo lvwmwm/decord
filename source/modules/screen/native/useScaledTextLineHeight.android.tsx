@@ -1,43 +1,43 @@
-// Module ID: 9908
-// Function ID: 9909
+// Module ID: 9925
+// Function ID: 9926
 // Name: map
-// Dependencies: [9909, 4185, 4606, 2]
+// Dependencies: [9926, 4189, 4610, 2]
 // Exports: scaleLineHeight, scaleTextLineHeight, useScaledTextLineHeight
 
-// Module 9908 (map)
+// Module 9925 (map)
 const map = new Map();
 let result = require("getFontScale").fileFinishedImporting("modules/screen/native/useScaledTextLineHeight.android.tsx");
 
 export const scaleLineHeight = function scaleLineHeight(arg0, arg1) {
   let value = map.get(arg0);
   if (null == value) {
-    const scaledHeightForText = importDefault(9909).getScaledHeightForText(arg0);
+    const scaledHeightForText = importDefault(9926).getScaledHeightForText(arg0);
     const result = map.set(arg0, scaledHeightForText);
     value = scaledHeightForText;
-    const obj2 = importDefault(9909);
+    const obj2 = importDefault(9926);
   }
   return value;
 };
 export const scaleTextLineHeight = function scaleTextLineHeight(c7, fontScale) {
-  const lineHeight = require(4185) /* Text */.TextStyleSheet[c7].lineHeight;
+  const lineHeight = require(4189) /* Text */.TextStyleSheet[c7].lineHeight;
   let value = map.get(lineHeight);
   if (null == value) {
-    const scaledHeightForText = importDefault(9909).getScaledHeightForText(lineHeight);
+    const scaledHeightForText = importDefault(9926).getScaledHeightForText(lineHeight);
     const result = map.set(lineHeight, scaledHeightForText);
     value = scaledHeightForText;
-    const obj2 = importDefault(9909);
+    const obj2 = importDefault(9926);
   }
   return value;
 };
 export const useScaledTextLineHeight = function useScaledTextLineHeight(c3) {
-  const fontScale = require(4606) /* getFontScale */.useFontScale();
-  const lineHeight = require(4185) /* Text */.TextStyleSheet[c3].lineHeight;
+  const fontScale = require(4610) /* getFontScale */.useFontScale();
+  const lineHeight = require(4189) /* Text */.TextStyleSheet[c3].lineHeight;
   let value = map.get(lineHeight);
   if (null == value) {
-    const scaledHeightForText = importDefault(9909).getScaledHeightForText(lineHeight);
+    const scaledHeightForText = importDefault(9926).getScaledHeightForText(lineHeight);
     const result = map.set(lineHeight, scaledHeightForText);
     value = scaledHeightForText;
-    const obj3 = importDefault(9909);
+    const obj3 = importDefault(9926);
   }
   return value;
 };

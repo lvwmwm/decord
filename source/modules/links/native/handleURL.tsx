@@ -1,11 +1,11 @@
-// Module ID: 3881
-// Function ID: 3882
+// Module ID: 3885
+// Function ID: 3886
 // Name: sanitizeURLPart
-// Dependencies: [5, 17, 3882, 676, 3, 3883, 3885, 3886, 3887, 3888, 3889, 1236, 4155, 500, 4157, 1469, 4170, 12983, 2]
+// Dependencies: [5, 17, 3886, 676, 3, 3887, 3889, 3890, 3891, 3892, 3893, 1236, 4159, 500, 4161, 1469, 4174, 13008, 2]
 // Exports: default
 
-// Module 3881 (sanitizeURLPart)
-import module_3883 from "module_3883";
+// Module 3885 (sanitizeURLPart)
+import module_3887 from "module_3887";
 import { Linking } from "handleSupportedURL";
 import setContent from "setContent";
 import { WebBrowserType } from "ME";

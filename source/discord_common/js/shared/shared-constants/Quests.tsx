@@ -1,9 +1,9 @@
-// Module ID: 5035
-// Function ID: 5036
+// Module ID: 5039
+// Function ID: 5040
 // Name: Quests
 // Dependencies: [2]
 
-// Module 5035 (Quests)
+// Module 5039 (Quests)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/Quests.tsx");
 
 export const Quests = { ConsecutiveHeartbeatPeriodMinutes: 2, [2]: "ConsecutiveHeartbeatPeriodMinutes", StatusLookbackPeriodDays: 30, [30]: "StatusLookbackPeriodDays" };

@@ -1,10 +1,10 @@
 // Module ID: 1450
 // Function ID: 1451
-// Name: isAttachmentLadderEnabled
+// Name: handleImageLoad
 // Dependencies: [32, 5, 676, 1451, 1386, 584, 1454, 1464, 1467, 1471, 1848, 12, 1849, 2]
-// Exports: getBestMediaProxySize, getImageSrc, getSizedImageSrc, isImageLoaded, loadImage
+// Exports: getBestMediaProxySize, getImageSrc, isImageLoaded, loadImage
 
-// Module 1450 (isAttachmentLadderEnabled)
+// Module 1450 (handleImageLoad)
 import _slicedToArray from "_slicedToArray";
 import fails from "fails";
 import ME from "ME";
@@ -12,15 +12,6 @@ import ME from "ME";
 let c5;
 let closure_6;
 const require = arg1;
-function isAttachmentLadderEnabled(arg0) {
-  try {
-    const obj = { location: null };
-    obj[0] = arg0;
-    return true === require(1451) /* apexExperiment */.getAttachmentImageLadderConfig(obj).enabled;
-  } catch (err) {
-    return false;
-  }
-}
 function handleImageLoad(arg0, callbacks) {
   let c0 = true;
   let closure_1 = callbacks;
@@ -90,7 +81,6 @@ function getSrcWithWidthAndHeight(quality) {
       if (regex2.test(src)) {
         tmp9.format = "webp";
       }
-      const tmp15 = require;
       const tmp7 = callback(items, 2);
       obj = { width: null, height: null, maxWidth: null, maxHeight: null };
       obj[0] = targetWidth;
@@ -100,12 +90,21 @@ function getSrcWithWidthAndHeight(quality) {
       const obj3 = require(1471) /* fit */;
       ({ width, height } = require(1471) /* fit */.fit(obj));
       if (width !== sourceWidth) {
-        if (isAttachmentLadderEnabled("ImageLoaderUtils.getSrcWithWidthAndHeight")) {
-          obj = { targetWidth: null, targetHeight: null, sourceWidth: null, sourceHeight: null, maxUpscale: 1.1 };
+        if ((function isAttachmentLadderEnabled(arg0) {
+          try {
+            const obj = { location: null };
+            obj[0] = "ImageLoaderUtils.getSrcWithWidthAndHeight";
+            return true === callback(table[3]).getAttachmentImageLadderConfig(obj).enabled;
+          } catch (err) {
+            return false;
+          }
+        })("ImageLoaderUtils.getSrcWithWidthAndHeight")) {
+          obj = { targetWidth: null, targetHeight: null, sourceWidth: null, sourceHeight: null, maxUpscale: null };
           obj[0] = width;
           obj[1] = height;
           obj[2] = sourceWidth;
           obj[3] = sourceHeight;
+          obj[4] = tmp15(1848).ATTACHMENT_LADDER_MAX_UPSCALE;
           let size = tmp15(1848).snapAttachmentDimensions(obj);
           const tmp15Result = tmp15(1848);
         } else {
@@ -113,11 +112,11 @@ function getSrcWithWidthAndHeight(quality) {
           size[0] = width;
           size[1] = height;
         }
-        if (!tmp19) {
+        if (!tmp18) {
           tmp9.width = size.width | 0;
           tmp9.height = size.height | 0;
         }
-        tmp19 = size.width === sourceWidth && size.height === sourceHeight;
+        tmp18 = size.width === sourceWidth && size.height === sourceHeight;
       }
       tmp2Result = tmp2(12);
       let text = tmp8;
@@ -131,15 +130,16 @@ function getSrcWithWidthAndHeight(quality) {
   return src;
 }
 ({ NOOP: c5, MEDIA_PROXY_MAX_TARGET_RESOLUTION: closure_6 } = ME);
-const re8 = /\.webp($|\?|#)/i;
-const re9 = /\.avif($|\?|#)/i;
-let closure_10 = [16, 20, 22, 24, 28, 32, 40, 44, 48, 56, 60, 64, 80, 96, 100, 128, 160, 240, 256, 300, 320, 480, 512, 600, 640, 1024, 1280, 1536, 2048, 3072, 4096];
-const unpackModuleId = new require("priv")({ max: 1000 });
-let tmp3 = new require("priv")({ max: 1000 });
+const re7 = /\.webp($|\?|#)/i;
+const re8 = /\.avif($|\?|#)/i;
+let closure_9 = [16, 20, 22, 24, 28, 32, 40, 44, 48, 56, 60, 64, 80, 96, 100, 128, 160, 240, 256, 300, 320, 480, 512, 600, 640, 1024, 1280, 1536, 2048, 3072, 4096];
+let c10 = new require("priv")({ max: 1000 });
+const tmp3 = new require("priv")({ max: 1000 });
 let result = require("ME").fileFinishedImporting("modules/image_upload/ImageLoaderUtils.tsx");
 
 export const getDevicePixelRatio = require("getDevicePixelRatio");
 export const ATTACHMENT_LADDER = require("items").ATTACHMENT_LADDER;
+export const ATTACHMENT_LADDER_MAX_UPSCALE = require("items").ATTACHMENT_LADDER_MAX_UPSCALE;
 export const snapAttachmentDimensions = require("items").snapAttachmentDimensions;
 export const isImageLoaded = function isImageLoaded(arg0) {
   const value = tmp3.get(arg0);
@@ -295,12 +295,12 @@ export const loadImage = function loadImage(arg0, bind) {
                               tmp.backoff = tmp7;
                             }
                             backoff = tmp.backoff;
-                            image.onerror = outer1_4(/* F102194 */ function() { ... });
+                            image.onerror = outer1_4(/* F102392 */ function() { ... });
                             image.onload = function onload() { ... };
                             image.src = tmp2.url;
                           });
                         } else {
-                          outer1_12(true, closure_0, closure_1);
+                          outer1_11(true, closure_0, closure_1);
                         }
                         c3 = 3;
                       }
@@ -321,7 +321,7 @@ export const loadImage = function loadImage(arg0, bind) {
                   let obj = tmp;
                   ({ callbacks, url } = backoff);
                   obj = { url, loaded: true, width: obj.width, height: obj.height };
-                  const result = outer1_11.set(url, obj);
+                  const result = outer1_10.set(url, obj);
                   if (null != callbacks) {
                     const item = callbacks.forEach((arg0) => arg0(c0, obj));
                   }
@@ -329,7 +329,7 @@ export const loadImage = function loadImage(arg0, bind) {
                 image.src = tmp2.url;
               });
             } else {
-              outer1_12(true, closure_0, closure_1);
+              outer1_11(true, closure_0, closure_1);
             }
             c3 = 3;
           }
@@ -350,7 +350,7 @@ export const loadImage = function loadImage(arg0, bind) {
       let obj = tmp;
       ({ callbacks, url } = backoff);
       obj = { url, loaded: true, width: obj.width, height: obj.height };
-      const result = outer1_11.set(url, obj);
+      const result = outer1_10.set(url, obj);
       if (null != callbacks) {
         const item = callbacks.forEach((arg0) => arg0(c0, obj));
       }
@@ -393,7 +393,7 @@ export const getBestMediaProxySize = function getBestMediaProxySize(size, set) {
     flag = false;
   }
   if (flag) {
-    const found = closure_10.filter((arg0) => arg0 <= closure_0);
+    const found = closure_9.filter((arg0) => arg0 <= closure_0);
     const arr = found.pop();
     if (null != arr) {
       if (size / arr <= 1.25) {
@@ -401,50 +401,13 @@ export const getBestMediaProxySize = function getBestMediaProxySize(size, set) {
       }
     }
   }
-  let found1 = closure_10.find((arg0) => closure_0 <= arg0);
+  let found1 = closure_9.find((arg0) => closure_0 <= arg0);
   if (found1 == null) {
     found1 = arr2[arr2.length - 1];
   }
   return found1;
 };
 export { getSrcWithWidthAndHeight };
-export const getSizedImageSrc = function getSizedImageSrc(str) {
-  let height;
-  let tmp11;
-  let tmp12;
-  let tmp9;
-  let width;
-  str = arg3;
-  if (arg3 === undefined) {
-    str = "webp";
-  }
-  const tmp3 = importDefault(1849)();
-  const rounded = Math.ceil(arg1 * tmp3);
-  const rounded1 = Math.ceil(arg2 * tmp3);
-  height = rounded1;
-  width = rounded;
-  if (isAttachmentLadderEnabled("ImageLoaderUtils.getSizedImageSrc")) {
-    let obj = require(1848) /* items */;
-    obj = { targetWidth: null, targetHeight: null };
-    obj[0] = rounded;
-    obj[1] = rounded1;
-    const result = obj.snapAttachmentDimensions(obj);
-    ({ width, height } = result);
-  }
-  const items = [, ];
-  [arr[0], tmp9] = callback(str.split("?"), 2);
-  let tmpResult = tmp(1464);
-  items[1] = tmpResult.parse(tmp9);
-  const tmp8 = callback(str.split("?"), 2);
-  [tmp11, tmp12] = callback(items, 2);
-  tmpResult = tmp(1464);
-  obj = {};
-  const merged = Object.assign(tmp12);
-  obj.width = width | 0;
-  obj.height = height | 0;
-  obj.format = str;
-  return "" + tmp11 + "?" + tmpResult.stringify(obj);
-};
 export const getImageSrc = function getImageSrc(format) {
   let height;
   let maxHeight;

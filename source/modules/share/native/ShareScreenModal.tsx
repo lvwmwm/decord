@@ -1,10 +1,10 @@
-// Module ID: 13032
-// Function ID: 13033
+// Module ID: 13057
+// Function ID: 13058
 // Name: onClose
-// Dependencies: [5, 32, 19, 1372, 12984, 21, 3, 4395, 8194, 589, 4199, 692, 13033, 2]
+// Dependencies: [5, 32, 19, 1372, 13009, 21, 3, 4399, 8201, 589, 4203, 692, 13058, 2]
 // Exports: default
 
-// Module 13032 (onClose)
+// Module 13057 (onClose)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -14,7 +14,7 @@ import { jsx } from "jsxProd";
 
 let require = arg1;
 function onClose() {
-  importDefault(4395).popWithKey(SHARE_SCREEN_MODAL_KEY);
+  importDefault(4399).popWithKey(SHARE_SCREEN_MODAL_KEY);
 }
 let c9 = new require("ensureGuildLoaded")("ShareScreenModal");
 const tmp2 = new require("ensureGuildLoaded")("ShareScreenModal");

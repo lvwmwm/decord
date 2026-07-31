@@ -1,10 +1,10 @@
-// Module ID: 14854
-// Function ID: 14855
+// Module ID: 14877
+// Function ID: 14878
 // Name: useRegistrationUIStore
 // Dependencies: [644, 705, 2]
 // Exports: clearRegistrationErrorMessage, doesRegistrationHaveIdentityType, resetRegistration, setRegistrationErrors, setSubmitting, updateRegistrationOptions
 
-// Module 14854 (useRegistrationUIStore)
+// Module 14877 (useRegistrationUIStore)
 import keys from "keys";
 
 let obj = keys.create(() => ({ errors: {}, registrationOptions: {}, submitting: false, registrationVariant: "accessibilityRole" }));

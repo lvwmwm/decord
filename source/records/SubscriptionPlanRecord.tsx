@@ -1,10 +1,10 @@
-// Module ID: 3836
-// Function ID: 3837
+// Module ID: 3840
+// Function ID: 3841
 // Name: createFromServer
 // Dependencies: [1883, 1876, 2]
 // Exports: getPriceFromServer, isNoneSubscription
 
-// Module 3836 (createFromServer)
+// Module 3840 (createFromServer)
 import "toJS";
 import GuildFeatures from "GuildFeatures";
 
@@ -59,7 +59,7 @@ SubscriptionPlanRecord["createFromServer"] = function createFromServer(prices) {
     }, {});
   }
   ({ id, name, interval, interval_count, tax_inclusive, sku_id, currency } = prices);
-  if (typeof SubscriptionPlanRecord !== "find") {
+  if (typeof SubscriptionPlanRecord !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const tmp5 = new SubscriptionPlanRecord("Trying to call a non-function", tmp, SubscriptionPlanRecord, new.target, id, name, interval, interval_count, tax_inclusive, sku_id, currency);

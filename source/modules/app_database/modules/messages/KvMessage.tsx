@@ -1,9 +1,9 @@
-// Module ID: 5743
-// Function ID: 5744
+// Module ID: 5748
+// Function ID: 5749
 // Name: fromMessage
 // Dependencies: [32, 1942, 1874, 676, 2]
 
-// Module 5743 (fromMessage)
+// Module 5748 (fromMessage)
 import _slicedToArray from "_slicedToArray";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import mergeGuildAvatar from "mergeGuildAvatar";

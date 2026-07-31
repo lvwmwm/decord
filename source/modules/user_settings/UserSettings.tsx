@@ -1,10 +1,10 @@
-// Module ID: 3862
-// Function ID: 3863
+// Module ID: 3866
+// Function ID: 3867
 // Name: explicitContentFromProto
-// Dependencies: [3863, 685, 3864, 676, 3865, 3866, 1337, 1306, 643, 3867, 12, 589, 3868, 3875, 1344, 2]
+// Dependencies: [3867, 685, 3868, 676, 3869, 3870, 1337, 1306, 643, 3871, 12, 589, 3872, 3879, 1344, 2]
 // Exports: explicitContentFromProto, explicitContentToProto, goreContentFromProto, goreContentToProto
 
-// Module 3862 (explicitContentFromProto)
+// Module 3866 (explicitContentFromProto)
 import updateExistingSettings from "updateExistingSettings";
 import MAX_FAVORITES from "MAX_FAVORITES";
 import items from "items";
@@ -1147,7 +1147,7 @@ const defineProtoSettingResult72 = defineProtoSetting.defineProtoSetting("appear
     }
     return COZY;
   }
-  COZY = require(3867) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COZY;
+  COZY = require(3871) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COZY;
 }, (value) => {
   const StringValue = require(1337) /* defineProperty */.StringValue;
   return StringValue.create({ value });
@@ -1166,7 +1166,7 @@ const defineProtoSettingResult73 = defineProtoSetting.defineProtoSetting("appear
     }
     return ALL;
   }
-  ALL = require(3867) /* ChannelListLayoutTypes */.MessagePreviewTypes.ALL;
+  ALL = require(3871) /* ChannelListLayoutTypes */.MessagePreviewTypes.ALL;
 }, (value) => {
   const StringValue = require(1337) /* defineProperty */.StringValue;
   return StringValue.create({ value });
@@ -1339,10 +1339,10 @@ set[0] = set.defineProtoSetting("privacy", "defaultGuildsActivityRestricted", (a
   return OFF;
 });
 set[1] = function isEligible() {
-  return require(3868) /* isFeatureAgeGated */.isSettingTeenByDefault(require(3875) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
+  return require(3872) /* isFeatureAgeGated */.isSettingTeenByDefault(require(3879) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
 };
 set[2] = function useIsEligible() {
-  return require(3868) /* isFeatureAgeGated */.useIsSettingTeenByDefault(require(3875) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
+  return require(3872) /* isFeatureAgeGated */.useIsSettingTeenByDefault(require(3879) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
 };
 set[3] = require("create").GuildActivityStatusRestrictionDefault.OFF;
 set[4] = function eligibleDefault() {
@@ -1364,10 +1364,10 @@ set[0] = set.defineProtoSetting("privacy", "defaultGuildsActivityRestrictedV2", 
   return ACTIVITY_STATUS_OFF;
 });
 set[1] = function isEligible() {
-  return require(3868) /* isFeatureAgeGated */.isSettingTeenByDefault(require(3875) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
+  return require(3872) /* isFeatureAgeGated */.isSettingTeenByDefault(require(3879) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
 };
 set[2] = function useIsEligible() {
-  return require(3868) /* isFeatureAgeGated */.useIsSettingTeenByDefault(require(3875) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
+  return require(3872) /* isFeatureAgeGated */.useIsSettingTeenByDefault(require(3879) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
 };
 set[3] = require("create").GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF;
 set[4] = function eligibleDefault() {

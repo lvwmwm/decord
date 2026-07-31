@@ -1,10 +1,10 @@
-// Module ID: 10279
-// Function ID: 10280
+// Module ID: 10297
+// Function ID: 10298
 // Name: defaultReactFn
-// Dependencies: [19, 10280, 21, 4184, 9987, 10281, 5564, 4620, 4622, 10286, 5141, 501, 10287, 10288, 1297, 4053, 9674, 4669, 10289, 2]
+// Dependencies: [19, 10298, 21, 4188, 10004, 10299, 5568, 4624, 4626, 10304, 5145, 501, 10305, 10306, 1297, 4057, 9691, 4673, 10307, 2]
 // Exports: default
 
-// Module 10279 (defaultReactFn)
+// Module 10297 (defaultReactFn)
 import "set";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import jsxProd from "jsxProd";
@@ -16,8 +16,8 @@ function defaultReactFn(content, output, state) {
   if (typeof content.content === "y") {
     content = content.content;
   } else {
-    content = require(9987) /* smartOutput */.smartOutput(content, output, state);
-    const obj = require(9987) /* smartOutput */;
+    content = require(10004) /* smartOutput */.smartOutput(content, output, state);
+    const obj = require(10004) /* smartOutput */;
   }
   return content;
 }
@@ -235,7 +235,7 @@ const regExp = new RegExp(require("regExp").ANSI_CONTROL_SEQUENCE_RE, "g");
 const result = require("jsxProd").fileFinishedImporting("modules/markup/native/MarkupMessagePreviewReactRules.tsx");
 
 export default function createChannelListMessagePreviewReactRules(layout, iconColor) {
-  let obj = require(10281) /* getLayoutStyles */;
+  let obj = require(10299) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout);
   let bound = arg2;
   if (null != arg3) {
@@ -243,7 +243,7 @@ export default function createChannelListMessagePreviewReactRules(layout, iconCo
     bound = Math.min(arg2, arg3);
   }
   obj = { iconColor, iconSize: layoutStyles.messagePreview.messageTypeIconSizeNew, channelIconSize: layoutStyles.messagePreview.messageTypeIconSize, customEmojiSize: null };
-  let num = require(5564) /* ICON_SIZE */.ICON_SIZE[layoutStyles.messagePreview.messageTypeIconSizeNew];
+  let num = require(5568) /* ICON_SIZE */.ICON_SIZE[layoutStyles.messagePreview.messageTypeIconSizeNew];
   if (num == null) {
     num = 0;
   }

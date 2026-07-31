@@ -1,8 +1,8 @@
-// Module ID: 13794
-// Function ID: 13795
-// Dependencies: [7753, 4405, 3868, 10116, 1236, 2]
+// Module ID: 13818
+// Function ID: 13819
+// Dependencies: [7761, 4409, 3872, 10133, 1236, 2]
 
-// Module 13794
+// Module 13818
 import createToggle from "createToggle";
 
 let obj = {
@@ -16,12 +16,12 @@ let obj = {
     return intl.string(require(1236) /* getSystemLocale */.t.XxRj7f);
   },
   usePredicate: function useAccountAgeGroupAdultSettingPredicate() {
-    const isAgeVerified = require(4405) /* useShouldCallReactiveCheck */.useIsAgeVerified();
-    const obj = require(4405) /* useShouldCallReactiveCheck */;
-    const isVerifiedTeen = require(4405) /* useShouldCallReactiveCheck */.useIsVerifiedTeen();
-    const obj2 = require(4405) /* useShouldCallReactiveCheck */;
-    const obj3 = require(3868) /* isFeatureAgeGated */;
-    return require(3868) /* isFeatureAgeGated */.useHasAgeGatedFeatures() && isAgeVerified && !isVerifiedTeen;
+    const isAgeVerified = require(4409) /* useAgeVerificationRunner */.useIsAgeVerified();
+    const obj = require(4409) /* useAgeVerificationRunner */;
+    const isVerifiedTeen = require(4409) /* useAgeVerificationRunner */.useIsVerifiedTeen();
+    const obj2 = require(4409) /* useAgeVerificationRunner */;
+    const obj3 = require(3872) /* isFeatureAgeGated */;
+    return require(3872) /* isFeatureAgeGated */.useHasAgeGatedFeatures() && isAgeVerified && !isVerifiedTeen;
   }
 };
 const createStaticResult = createToggle.createStatic({
@@ -35,12 +35,12 @@ const createStaticResult = createToggle.createStatic({
     return intl.string(require(1236) /* getSystemLocale */.t.XxRj7f);
   },
   usePredicate: function useAccountAgeGroupAdultSettingPredicate() {
-    const isAgeVerified = require(4405) /* useShouldCallReactiveCheck */.useIsAgeVerified();
-    const obj = require(4405) /* useShouldCallReactiveCheck */;
-    const isVerifiedTeen = require(4405) /* useShouldCallReactiveCheck */.useIsVerifiedTeen();
-    const obj2 = require(4405) /* useShouldCallReactiveCheck */;
-    const obj3 = require(3868) /* isFeatureAgeGated */;
-    return require(3868) /* isFeatureAgeGated */.useHasAgeGatedFeatures() && isAgeVerified && !isVerifiedTeen;
+    const isAgeVerified = require(4409) /* useAgeVerificationRunner */.useIsAgeVerified();
+    const obj = require(4409) /* useAgeVerificationRunner */;
+    const isVerifiedTeen = require(4409) /* useAgeVerificationRunner */.useIsVerifiedTeen();
+    const obj2 = require(4409) /* useAgeVerificationRunner */;
+    const obj3 = require(3872) /* isFeatureAgeGated */;
+    return require(3872) /* isFeatureAgeGated */.useHasAgeGatedFeatures() && isAgeVerified && !isVerifiedTeen;
   }
 });
 const result = require("isFeatureAgeGated").fileFinishedImporting("modules/user_settings/defs/native/AccountAgeGroupAdultSetting.tsx");

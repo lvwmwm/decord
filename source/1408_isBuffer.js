@@ -11,13 +11,13 @@ export default function isBuffer(copy) {
     tmp = typeof copy === "ay";
   }
   if (tmp) {
-    tmp = typeof copy.copy === "find";
+    tmp = typeof copy.copy === "fileFinishedImporting";
   }
   if (tmp) {
-    tmp = typeof copy.fill === "find";
+    tmp = typeof copy.fill === "fileFinishedImporting";
   }
   if (tmp) {
-    tmp = typeof copy.readUInt8 === "find";
+    tmp = typeof copy.readUInt8 === "fileFinishedImporting";
   }
   return tmp;
 };

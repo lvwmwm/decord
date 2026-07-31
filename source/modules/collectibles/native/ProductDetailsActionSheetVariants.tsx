@@ -1,10 +1,10 @@
-// Module ID: 8759
-// Function ID: 8760
+// Module ID: 8772
+// Function ID: 8773
 // Name: VariantOption
-// Dependencies: [19, 17, 21, 4189, 712, 8706, 4717, 1236, 8724, 5209, 5809, 4185, 2]
+// Dependencies: [19, 17, 21, 4193, 712, 8719, 4721, 1236, 8737, 5213, 5814, 4189, 2]
 // Exports: default
 
-// Module 8759 (VariantOption)
+// Module 8772 (VariantOption)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -19,7 +19,7 @@ function VariantOption(onPress) {
   let variant;
   ({ variant, isSelected } = onPress);
   const tmp = callback2(isSelected);
-  let obj = require(8706) /* getProductPurchaseState */;
+  let obj = require(8719) /* getProductPurchaseState */;
   let isPurchased = obj.useProductPurchaseState(variant).isPurchased;
   if (isPurchased) {
     const intl = tmp2(1236).intl;
@@ -39,13 +39,13 @@ function VariantOption(onPress) {
   }
   obj1[1] = isPurchased;
   obj[5] = closure_4(View, obj1);
-  return closure_4(require(4717) /* PressableBase */.PressableOpacity, obj);
+  return closure_4(require(4721) /* PressableBase */.PressableOpacity, obj);
 }
 function VariantCheckmark(variant) {
   const colors = importDefault(712).colors;
-  const tmp = importDefault(8724)(variant.variant);
+  const tmp = importDefault(8737)(variant.variant);
   const tmp2 = closure_4;
-  return tmp2(require(5209) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, { color: importDefault(8724)(variant.variant) ? colors.BLACK : colors.WHITE, size: "md" });
+  return tmp2(require(5213) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, { color: importDefault(8737)(variant.variant) ? colors.BLACK : colors.WHITE, size: "md" });
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 createCacheKey = { container: null, headerRow: null, variantsContainer: null, text: null };
@@ -74,7 +74,7 @@ export default function ProductDetailsActionSheetVariants(onVariantSelect) {
   ({ product, selectedVariantIndex } = onVariantSelect);
   onVariantSelect = onVariantSelect.onVariantSelect;
   const tmp = createCacheKey();
-  let obj = selectedVariantIndex(5809);
+  let obj = selectedVariantIndex(5814);
   let tmp5Result = null;
   if (obj.getIsVariantProduct(product)) {
     obj = { style: null, children: null };
@@ -84,13 +84,13 @@ export default function ProductDetailsActionSheetVariants(onVariantSelect) {
     const obj1 = { variant: "text-md/bold", color: "mobile-text-heading-primary", children: null };
     const intl = tmp2(1236).intl;
     obj1[2] = intl.string(tmp2(1236).t.wbgaj6);
-    const items = [callback(tmp2(4185).Text, obj1), ];
+    const items = [callback(tmp2(4189).Text, obj1), ];
     let tmp7Result = product.variants.length > selectedVariantIndex;
     if (tmp7Result) {
       const obj2 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, style: null, children: null };
       obj2[3] = tmp.text;
       obj2[4] = product.variants[selectedVariantIndex].variantLabel;
-      tmp7Result = tmp7(tmp2(4185).Text, obj2);
+      tmp7Result = tmp7(tmp2(4189).Text, obj2);
     }
     items[1] = tmp7Result;
     obj[1] = items;

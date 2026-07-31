@@ -1,9 +1,9 @@
-// Module ID: 8723
-// Function ID: 8724
+// Module ID: 8736
+// Function ID: 8737
 // Name: VariantOption
-// Dependencies: [19, 17, 21, 4189, 712, 8706, 8724, 5209, 8725, 8658, 5809, 2]
+// Dependencies: [19, 17, 21, 4193, 712, 8719, 8737, 5213, 8738, 8671, 5814, 2]
 
-// Module 8723 (VariantOption)
+// Module 8736 (VariantOption)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -16,7 +16,7 @@ const require = arg1;
 function VariantOption(variant) {
   variant = variant.variant;
   const tmp = callback3(variant.isSelected);
-  let obj = require(8706) /* getProductPurchaseState */;
+  let obj = require(8719) /* getProductPurchaseState */;
   let isPurchased = obj.useProductPurchaseState(variant).isPurchased;
   obj = { style: items, children: null };
   items = [tmp.variantOption, { zIndex: variant.zIndex }];
@@ -33,9 +33,9 @@ function VariantOption(variant) {
 }
 function VariantCheckmark(variant) {
   const colors = importDefault(712).colors;
-  const tmp = importDefault(8724)(variant.variant);
+  const tmp = importDefault(8737)(variant.variant);
   const tmp2 = closure_4;
-  return tmp2(require(5209) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, { color: importDefault(8724)(variant.variant) ? colors.BLACK : colors.WHITE, size: "xxs" });
+  return tmp2(require(5213) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, { color: importDefault(8737)(variant.variant) ? colors.BLACK : colors.WHITE, size: "xxs" });
 }
 function VariantOverflowOption(isSelected) {
   const tmp = callback3(isSelected.isSelected);
@@ -46,7 +46,7 @@ function VariantOverflowOption(isSelected) {
   ({ variantOptionInner: arr2[0], variantOverflowInner: arr2[1] } = tmp);
   obj = { color: null, size: "xxs" };
   obj[0] = importDefault(712).colors.WHITE;
-  obj[1] = callback(require(8725) /* PlusSmallIcon */.PlusSmallIcon, obj);
+  obj[1] = callback(require(8738) /* PlusSmallIcon */.PlusSmallIcon, obj);
   obj[1] = callback(View, obj);
   return callback(View, obj);
 }
@@ -73,7 +73,7 @@ let closure_7 = createCacheKey.createStyles((arg0) => {
 const memoResult = require("noop").memo(function CardProductVariants(product) {
   product = product.product;
   let defaultVariantIndex;
-  let obj = defaultVariantIndex(8658);
+  let obj = defaultVariantIndex(8671);
   defaultVariantIndex = obj.useDefaultVariantIndex(product);
   const tmp = callback2();
   if (obj2.getIsVariantProduct(product)) {
@@ -105,7 +105,7 @@ const memoResult = require("noop").memo(function CardProductVariants(product) {
   } else {
     return null;
   }
-  obj2 = defaultVariantIndex(5809);
+  obj2 = defaultVariantIndex(5814);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardVariants.tsx");
 

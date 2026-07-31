@@ -1,10 +1,10 @@
-// Module ID: 6552
-// Function ID: 6553
+// Module ID: 6558
+// Function ID: 6559
 // Name: goToStandalonePremiumCheckout
 // Dependencies: [676, 1467, 514, 530, 2]
 // Exports: goToBillingStandalonePageWithHandoff, goToStandalonePremiumCheckoutWeb
 
-// Module 6552 (goToStandalonePremiumCheckout)
+// Module 6558 (goToStandalonePremiumCheckout)
 import ME from "ME";
 
 let c3;

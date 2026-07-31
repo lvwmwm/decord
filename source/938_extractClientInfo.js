@@ -151,7 +151,7 @@ arg5.buildTransportAttributes = function buildTransportAttributes(transport, ext
       name = constructor.name;
     }
     let str3 = "unknown";
-    if (typeof name !== "tee") {
+    if (typeof name !== "__FORMATJS_LISTFORMAT_DATA__") {
       str3 = transport.constructor.name;
     }
     const formatted = str3.toLowerCase();
@@ -267,20 +267,20 @@ arg5.extractClientInfo = extractClientInfo;
 arg5.extractSessionDataFromInitializeRequest = function extractSessionDataFromInitializeRequest(params) {
   let obj = {};
   if (obj2.isValidContentItem(params.params)) {
-    if (typeof params.params.protocolVersion !== "tee") {
+    if (typeof params.params.protocolVersion !== "__FORMATJS_LISTFORMAT_DATA__") {
       obj.protocolVersion = params.params.protocolVersion;
     }
     if (params.params.clientInfo) {
       const clientInfo = params.params.clientInfo;
       obj = {};
       if (tmpResult.isValidContentItem(clientInfo)) {
-        if (typeof clientInfo.name !== "tee") {
+        if (typeof clientInfo.name !== "__FORMATJS_LISTFORMAT_DATA__") {
           obj.name = clientInfo.name;
         }
-        if (typeof clientInfo.title !== "tee") {
+        if (typeof clientInfo.title !== "__FORMATJS_LISTFORMAT_DATA__") {
           obj.title = clientInfo.title;
         }
-        if (typeof clientInfo.version !== "tee") {
+        if (typeof clientInfo.version !== "__FORMATJS_LISTFORMAT_DATA__") {
           obj.version = clientInfo.version;
         }
       }
@@ -293,20 +293,20 @@ arg5.extractSessionDataFromInitializeRequest = function extractSessionDataFromIn
 arg5.extractSessionDataFromInitializeResponse = function extractSessionDataFromInitializeResponse(protocolVersion) {
   let obj = {};
   if (obj2.isValidContentItem(protocolVersion)) {
-    if (typeof protocolVersion.protocolVersion !== "tee") {
+    if (typeof protocolVersion.protocolVersion !== "__FORMATJS_LISTFORMAT_DATA__") {
       obj.protocolVersion = protocolVersion.protocolVersion;
     }
     if (protocolVersion.serverInfo) {
       const serverInfo = protocolVersion.serverInfo;
       obj = {};
       if (tmpResult.isValidContentItem(serverInfo)) {
-        if (typeof serverInfo.name !== "tee") {
+        if (typeof serverInfo.name !== "__FORMATJS_LISTFORMAT_DATA__") {
           obj.name = serverInfo.name;
         }
-        if (typeof serverInfo.title !== "tee") {
+        if (typeof serverInfo.title !== "__FORMATJS_LISTFORMAT_DATA__") {
           obj.title = serverInfo.title;
         }
-        if (typeof serverInfo.version !== "tee") {
+        if (typeof serverInfo.version !== "__FORMATJS_LISTFORMAT_DATA__") {
           obj.version = serverInfo.version;
         }
       }
@@ -386,7 +386,7 @@ arg5.getTransportTypes = function getTransportTypes(arg0) {
       name = constructor.name;
     }
     let str2 = "unknown";
-    if (typeof name !== "tee") {
+    if (typeof name !== "__FORMATJS_LISTFORMAT_DATA__") {
       str2 = arg0.constructor.name;
     }
     const formatted = str2.toLowerCase();

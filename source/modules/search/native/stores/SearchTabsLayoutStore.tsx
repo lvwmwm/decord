@@ -1,16 +1,16 @@
-// Module ID: 11457
-// Function ID: 11458
+// Module ID: 11475
+// Function ID: 11476
 // Name: handleSearchQuery
-// Dependencies: [1372, 5873, 11458, 11459, 11460, 10098, 9097, 643, 10099, 589, 709, 2]
+// Dependencies: [1372, 5878, 11476, 11477, 11478, 10115, 9108, 643, 10116, 589, 709, 2]
 
-// Module 11457 (handleSearchQuery)
+// Module 11475 (handleSearchQuery)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleReaction from "handleReaction";
 import search from "search";
 import setAutocompleteOptions from "setAutocompleteOptions";
 import teardown from "teardown";
 import prototype from "prototype";
-import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import MessageEmbedTypes from "MessageEmbedTypes";
 import { Store } from "initialize";
 
 let c10;
@@ -19,7 +19,7 @@ let unpackModuleId;
 const require = arg1;
 function handleSearchQuery(searchContext) {
   searchContext = searchContext.searchContext;
-  let obj = require(10099) /* SearchTokenTypes */;
+  let obj = require(10116) /* SearchTokenTypes */;
   const searchContextId = obj.getSearchContextId(searchContext);
   let value = map.get(searchContextId);
   if (value == null) {
@@ -52,7 +52,7 @@ function computeLayoutForState(value) {
     } else {
       arr = table2[searchContext.type];
     }
-    channel = channel.getChannel(_require(10099).getChannelIdFromSearchContext(searchContext));
+    channel = channel.getChannel(_require(10116).getChannelIdFromSearchContext(searchContext));
     let flag;
     if (channel != null) {
       flag = channel.isArchivedThread();
@@ -86,7 +86,7 @@ function computeLayoutForState(value) {
         return search;
       }
     });
-    let tmp6Result = tmp6(10099);
+    let tmp6Result = tmp6(10116);
     autocompleteVisible = tmp6Result.getSearchContextId(searchContext);
     const reduced = found.reduce((arg0, closure_1) => {
       if (reduced.MEMBERS === closure_1) {
@@ -128,7 +128,7 @@ function computeLayoutForState(value) {
     tmp6Result = tmp6(643);
     const result = tmp6Result.areArraysShallowEqual(value.candidateTabs, found);
     let tmp13 = !result;
-    const obj2 = _require(10099);
+    const obj2 = _require(10116);
     const result1 = _require(643).areArraysShallowEqual(value.visibleTabs, visibleTabs);
     const visibleTabCounts2 = value.visibleTabCounts;
     let tmp16 = visibleTabCounts2 === visibleTabCounts;
@@ -170,7 +170,7 @@ function computeLayoutForAll() {
   }
   return flag;
 }
-({ SearchTabs: c9, SEARCH_TYPE_TO_SEARCH_INITIAL_TABS: c10, SEARCH_TYPE_TO_SEARCH_RESULT_TABS: unpackModuleId } = SearchAutocompleteSelectAnalyticsActions);
+({ SearchTabs: c9, SEARCH_TYPE_TO_SEARCH_INITIAL_TABS: c10, SEARCH_TYPE_TO_SEARCH_RESULT_TABS: unpackModuleId } = MessageEmbedTypes);
 let closure_12 = [];
 const map = new Map();
 class SearchTabsLayoutStore extends Store {
@@ -182,7 +182,7 @@ prototype["initialize"] = function initialize() {
   this.syncWith(items, computeLayoutForAll);
 };
 prototype["getCandidateTabs"] = function getCandidateTabs(searchContext) {
-  let obj = require(10099) /* SearchTokenTypes */;
+  let obj = require(10116) /* SearchTokenTypes */;
   let value = map.get(obj.getSearchContextId(searchContext));
   if (value == null) {
     obj = { searchContext: null, wasInitialSearchQuery: true, candidateTabs: null, visibleTabs: null, visibleTabCounts: null };
@@ -194,7 +194,7 @@ prototype["getCandidateTabs"] = function getCandidateTabs(searchContext) {
   return value.candidateTabs;
 };
 prototype["getVisibleTabs"] = function getVisibleTabs(searchContext) {
-  let obj = require(10099) /* SearchTokenTypes */;
+  let obj = require(10116) /* SearchTokenTypes */;
   let value = map.get(obj.getSearchContextId(searchContext));
   if (value == null) {
     obj = { searchContext: null, wasInitialSearchQuery: true, candidateTabs: null, visibleTabs: null, visibleTabCounts: null };
@@ -206,7 +206,7 @@ prototype["getVisibleTabs"] = function getVisibleTabs(searchContext) {
   return value.visibleTabs;
 };
 prototype["getVisibleTabCounts"] = function getVisibleTabCounts(searchContext) {
-  let obj = require(10099) /* SearchTokenTypes */;
+  let obj = require(10116) /* SearchTokenTypes */;
   let value = map.get(obj.getSearchContextId(searchContext));
   if (value == null) {
     obj = { searchContext: null, wasInitialSearchQuery: true, candidateTabs: null, visibleTabs: null, visibleTabCounts: null };

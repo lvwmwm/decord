@@ -1,9 +1,9 @@
-// Module ID: 8854
-// Function ID: 8855
+// Module ID: 8867
+// Function ID: 8868
 // Name: VoicePanelAudioPhoneOutputSection
-// Dependencies: [19, 17, 4203, 8831, 1372, 4204, 8853, 676, 21, 4189, 4157, 647, 8855, 8856, 1236, 7652, 7651, 5226, 8827, 8924, 8925, 8926, 4005, 1358, 9049, 5243, 5242, 5568, 2]
+// Dependencies: [19, 17, 4207, 8844, 1372, 4208, 8866, 676, 21, 4193, 4161, 647, 8868, 8869, 1236, 7660, 7659, 5230, 8840, 8937, 8938, 8939, 4009, 1358, 9062, 5247, 5246, 5572, 2]
 
-// Module 8854 (VoicePanelAudioPhoneOutputSection)
+// Module 8867 (VoicePanelAudioPhoneOutputSection)
 import importAllResult from "useGameConsoleAccounts";
 import { ScrollView } from "TableRowIcon";
 import set from "set";
@@ -24,9 +24,9 @@ function VoicePanelAudioPhoneOutputSection() {
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ activeDevice: store.getActiveAudioDevice(), availableDevices: store.getAudioDevices() }));
   availableDevices = stateFromStoresObject.availableDevices;
   let closure_1 = importAllResult.useCallback((arg0) => {
-    availableDevices(8855).setAudioOutputDevice(arg0);
-    const obj = availableDevices(8855);
-    callback(4157).hideActionSheet(closure_9);
+    availableDevices(8868).setAudioOutputDevice(arg0);
+    const obj = availableDevices(8868);
+    callback(4161).hideActionSheet(closure_9);
   }, []);
   let tmp5 = null;
   if (availableDevices.length > 0) {
@@ -46,9 +46,9 @@ function VoicePanelAudioPhoneOutputSection() {
     obj[3] = availableDevices.map((deviceId) => {
       let obj = { value: deviceId.deviceId, icon: null, label: null, subLabel: null };
       obj = { source: null };
-      obj[0] = availableDevices(8827).audioDeviceToIconMap[deviceId.simpleDeviceType];
-      obj[1] = callback2(availableDevices(5226).TableRowIcon, obj);
-      obj[2] = availableDevices(8827).getAudioDeviceToDisplayText(deviceId);
+      obj[0] = availableDevices(8840).audioDeviceToIconMap[deviceId.simpleDeviceType];
+      obj[1] = callback2(availableDevices(5230).TableRowIcon, obj);
+      obj[2] = availableDevices(8840).getAudioDeviceToDisplayText(deviceId);
       const deviceName = deviceId.deviceName;
       let length;
       if (deviceName != null) {
@@ -59,10 +59,10 @@ function VoicePanelAudioPhoneOutputSection() {
         deviceName1 = deviceId.deviceName;
       }
       obj[3] = deviceName1;
-      return callback2(availableDevices(7651).TableRadioRow, obj, deviceId.deviceId);
+      return callback2(availableDevices(7659).TableRadioRow, obj, deviceId.deviceId);
     });
-    obj[3] = callback(tmp2(7652).TableRadioGroup, obj);
-    tmp5 = callback(tmp2(8856).VoicePanelFormSection, obj);
+    obj[3] = callback(tmp2(7660).TableRadioGroup, obj);
+    tmp5 = callback(tmp2(8869).VoicePanelFormSection, obj);
   }
   return tmp5;
 }
@@ -73,8 +73,8 @@ function VoicePanelAudioConsoleSection(channel) {
   let stateFromStores;
   let stateFromStores1;
   let c5;
-  arr = arr(8924)();
-  dependencyMap = arr(8925)();
+  arr = arr(8937)();
+  dependencyMap = arr(8938)();
   let obj = channel(647);
   const items = [c5];
   stateFromStores = obj.useStateFromStores(items, () => _undefined.getAwaitingRemoteSessionInfo());
@@ -126,7 +126,7 @@ function VoicePanelAudioConsoleSection(channel) {
     }
   }, items3);
   let obj2 = channel(647);
-  const tmp8 = !channel(4005).useIsDismissibleContentDismissed_UNSAFE(channel(1358).DismissibleContent.DONUT_MOBILE_NUX);
+  const tmp8 = !channel(4009).useIsDismissibleContentDismissed_UNSAFE(channel(1358).DismissibleContent.DONUT_MOBILE_NUX);
   c5 = tmp8;
   const items4 = [arr, tmp8];
   const effect = stateFromStores.useEffect(() => {
@@ -178,8 +178,8 @@ function VoicePanelAudioConsoleSection(channel) {
       return tmp5;
     });
     obj[3] = mapped.filter((arg0) => Boolean(arg0));
-    obj[3] = callback(tmp3(7652).TableRadioGroup, obj);
-    tmp10 = callback(tmp3(8856).VoicePanelFormSection, obj);
+    obj[3] = callback(tmp3(7660).TableRadioGroup, obj);
+    tmp10 = callback(tmp3(8869).VoicePanelFormSection, obj);
   }
   return tmp10;
 }
@@ -199,7 +199,7 @@ const memoResult = importAllResult.memo(function VoicePanelAudioOutputActionShee
     obj = { title: null };
     const intl = tmp(1236).intl;
     obj[0] = intl.string(tmp(1236).t.iwxPM3);
-    obj[0] = callback(tmp(5242).BottomSheetTitleHeader, obj);
+    obj[0] = callback(tmp(5246).BottomSheetTitleHeader, obj);
     if (isConnectedToVoiceChannel) {
       isConnectedToVoiceChannel = tmp5(VoicePanelAudioPhoneOutputSection, {});
     }
@@ -210,12 +210,12 @@ const memoResult = importAllResult.memo(function VoicePanelAudioOutputActionShee
     obj3[0] = stateFromStores;
     items1[1] = callback(VoicePanelAudioConsoleSection, obj3);
     obj2[0] = items1;
-    obj1[0] = closure_12(importDefault(5568), obj2);
+    obj1[0] = closure_12(importDefault(5572), obj2);
     obj[1] = callback(ScrollView, obj1);
-    tmp5Result = tmp5(tmp(5243).BottomSheet, obj);
+    tmp5Result = tmp5(tmp(5247).BottomSheet, obj);
     const tmp6 = ScrollView;
     const tmp7 = closure_12;
-    const tmp9 = importDefault(5568);
+    const tmp9 = importDefault(5572);
   }
   return tmp5Result;
 });

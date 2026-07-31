@@ -1,9 +1,9 @@
-// Module ID: 5690
-// Function ID: 5691
+// Module ID: 5694
+// Function ID: 5695
 // Name: reset
-// Dependencies: [1303, 1340, 4224, 589, 3862, 709, 2]
+// Dependencies: [1303, 1340, 4228, 589, 3866, 709, 2]
 
-// Module 5690 (reset)
+// Module 5694 (reset)
 import initialize from "initialize";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import setLibraryApplications from "setLibraryApplications";
@@ -55,7 +55,7 @@ prototype["inTestModeForEmbeddedApplication"] = function inTestModeForEmbeddedAp
   return tmp;
 };
 prototype["shouldDisplayTestMode"] = function shouldDisplayTestMode(applicationId) {
-  const DeveloperMode = require(3862) /* explicitContentFromProto */.DeveloperMode;
+  const DeveloperMode = require(3866) /* explicitContentFromProto */.DeveloperMode;
   let setting = DeveloperMode.getSetting();
   if (setting) {
     const self = this;

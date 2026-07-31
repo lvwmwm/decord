@@ -1,13 +1,17 @@
 // Module ID: 13389
 // Function ID: 13390
-// Dependencies: []
+// Dependencies: [13385]
 
 // Module 13389
 
-export default (arg0) => {
-  try {
-    return String(arg0);
-  } catch (err) {
-    return "Object";
+export default !require("module_13385")(() => {
+  const fn = () => {
+
+  };
+  const bindResult = fn.bind();
+  let hasOwnPropertyResult = typeof bindResult === "disabledUntil";
+  if (typeof bindResult !== "disabledUntil") {
+    hasOwnPropertyResult = bindResult.hasOwnProperty("prototype");
   }
-};
+  return hasOwnPropertyResult;
+});

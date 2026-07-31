@@ -1,8 +1,8 @@
-// Module ID: 11395
-// Function ID: 11396
-// Dependencies: [19, 17, 21, 4189, 712, 1348, 3893, 4717, 2]
+// Module ID: 11413
+// Function ID: 11414
+// Dependencies: [19, 17, 21, 4193, 712, 1348, 3897, 4721, 2]
 
-// Module 11395
+// Module 11413
 import importAllResult from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -55,12 +55,12 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((active, ref)
   let obj = require(1348) /* useIsMobileVisualRefreshExperimentEnabled */;
   const mobileVisualRefreshConfig = obj.useMobileVisualRefreshConfig({ location: "ChatInputActionButton" });
   ({ enabled, chatInputFloating } = mobileVisualRefreshConfig);
-  const token = require(3893) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-  const obj2 = require(3893) /* map */;
+  const token = require(3897) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const obj2 = require(3897) /* map */;
   const tmp = require;
-  const token1 = require(3893) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
-  const obj3 = require(3893) /* map */;
-  const token2 = require(3893) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  const token1 = require(3897) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  const obj3 = require(3897) /* map */;
+  const token2 = require(3897) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   const tmp7 = callback(enabled, token, token1);
   let tmp8;
   if (chatInputFloating) {
@@ -72,7 +72,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((active, ref)
     tmp8 = height;
   }
   let tmp13 = token;
-  if (typeof tmp8 !== "reType") {
+  if (typeof tmp8 !== "__REMOTEDEV__") {
     tmp13 = tmp8;
   }
   const bound = Math.max(0, (token2 - tmp13) / 2);
@@ -117,7 +117,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((active, ref)
   }
   items1[3] = disabled;
   obj[12] = <IconComponent size="custom" style={items1} />;
-  return jsx(tmp(4717).PressableOpacity, { disabled });
+  return jsx(tmp(4721).PressableOpacity, { disabled });
 }));
 const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButton.tsx");
 

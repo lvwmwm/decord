@@ -1,14 +1,14 @@
-// Module ID: 15837
-// Function ID: 15838
+// Module ID: 15865
+// Function ID: 15866
 // Name: BaseActivityPanelPIPView
-// Dependencies: [19, 17, 4181, 10672, 1372, 1371, 4214, 5688, 15838, 676, 10035, 21, 1297, 4189, 712, 1581, 589, 1474, 15833, 10038, 4050, 15839, 4534, 4190, 4599, 15840, 15841, 1236, 3901, 5273, 3807, 15835, 10653, 2]
+// Dependencies: [19, 17, 4185, 10690, 1372, 1371, 4218, 5692, 15866, 676, 10052, 21, 1297, 4193, 712, 1581, 589, 1474, 15861, 10055, 4054, 15867, 4538, 4194, 4603, 15868, 15869, 1236, 3905, 5277, 3811, 15863, 10671, 2]
 // Exports: useBaseActivityPanelPIPView
 
-// Module 15837 (BaseActivityPanelPIPView)
+// Module 15865 (BaseActivityPanelPIPView)
 import importAllResult from "u";
 import { View } from "useWindowDimensions";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import module_10672 from "module_10672";
+import module_10690 from "module_10690";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import participantFromServer from "participantFromServer";
 import { ActivityLayoutMode } from "items3";
@@ -68,7 +68,7 @@ class BaseActivityPanelPIPView {
     }, items1);
     tmp8 = setMode((shouldDisableSafeAreas) => shouldDisableSafeAreas.shouldDisableSafeAreas());
     c10 = tmp8;
-    obj3 = require("module_4050");
+    obj3 = require("module_4054");
     class J {
       constructor() {
         point = pipState.get();
@@ -109,7 +109,7 @@ class BaseActivityPanelPIPView {
           tmp13 = transitionState;
           obj1[0] = transitionState;
           obj1[1] = require("wrapChildrenDefault").TransitionStates;
-          obj1[2] = require("module_4050").runOnJS;
+          obj1[2] = require("module_4054").runOnJS;
           tmp14 = transitionCleanUp;
           obj1[3] = transitionCleanUp;
           transitionComplete.__closure = obj1;
@@ -178,7 +178,7 @@ class BaseActivityPanelPIPView {
         return;
       }
     }
-    obj = { pipState, getClampedPIPPosition: require("MIN_PIP_TOSS_VELOCITY").getClampedPIPPosition, ACTIVITY_PIP_SIZE: c10, windowDimensions: tmp3, safeArea: tmp4, pipAvoidanceSpecs, wrapperOffset, disableHorizontalSafeAreas: tmp8, shown, reduceMotion: stateFromStores, PIP_WINDOW_OFFSET, transitionState, TransitionStates: require("wrapChildrenDefault").TransitionStates, runOnJS: require("module_4050").runOnJS, transitionCleanUp, withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming, REDUCED_MOTION_TIMING: jsx, withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, ACTIVITY_LAYOUT_PHYSICS_GESTURE: height, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: ActivityPanelModes };
+    obj = { pipState, getClampedPIPPosition: require("MIN_PIP_TOSS_VELOCITY").getClampedPIPPosition, ACTIVITY_PIP_SIZE: c10, windowDimensions: tmp3, safeArea: tmp4, pipAvoidanceSpecs, wrapperOffset, disableHorizontalSafeAreas: tmp8, shown, reduceMotion: stateFromStores, PIP_WINDOW_OFFSET, transitionState, TransitionStates: require("wrapChildrenDefault").TransitionStates, runOnJS: require("module_4054").runOnJS, transitionCleanUp, withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming, REDUCED_MOTION_TIMING: jsx, withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, ACTIVITY_LAYOUT_PHYSICS_GESTURE: height, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: ActivityPanelModes };
     J.__closure = obj;
     J.__workletHash = 14326479117867;
     J.__initData = jsx;
@@ -192,14 +192,14 @@ class BaseActivityPanelPIPView {
     items2[1] = height;
     class W {
       constructor() {
-        obj = require("module_4050");
+        obj = require("module_4054");
         tmp = obj.runOnJS(setMode)(width.PANEL);
         return;
       }
     }
     obj2 = { runOnJS: null, setMode: null, ActivityPanelModes: null };
     memo = c3.useMemo(() => ({ width, height, pointerEvents: "none" }), items2);
-    obj2[0] = require("module_4050").runOnJS;
+    obj2[0] = require("module_4054").runOnJS;
     obj2[1] = setMode;
     obj2[2] = width;
     W.__closure = obj2;
@@ -251,7 +251,7 @@ class BaseActivityPanelPIPView {
     obj7[1] = tmp15Result;
     obj6[1] = tmp15(tmp17, obj7);
     obj5.children = tmp15(require("Directions").GestureDetector, obj6);
-    obj4[1] = tmp15(require("module_4050").View, obj5);
+    obj4[1] = tmp15(require("module_4054").View, obj5);
     return tmp15(require("ManaContext").ThemeContextProvider, obj4);
   }
 }

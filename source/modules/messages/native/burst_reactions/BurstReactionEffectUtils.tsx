@@ -1,10 +1,10 @@
-// Module ID: 6093
-// Function ID: 6094
+// Module ID: 6099
+// Function ID: 6100
 // Name: _generateAnimationSource
-// Dependencies: [5, 32, 19, 17, 3834, 6094, 1416, 500, 6131, 2]
+// Dependencies: [5, 32, 19, 17, 3838, 6100, 1416, 500, 6137, 2]
 // Exports: useBurstReactionAnimationSource, useSuperReactionAnimationSourceFromLocalImage
 
-// Module 6093 (_generateAnimationSource)
+// Module 6099 (_generateAnimationSource)
 import items from "items";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -68,13 +68,13 @@ function _generateAnimationSource() {
               const obj1 = {};
               const merged = Object.assign(items);
               obj1.animated = false;
-              const emojiUrl = lib(3834).getEmojiUrl(obj1, 128);
+              const emojiUrl = lib(3838).getEmojiUrl(obj1, 128);
               noop = emojiUrl;
               if (emojiUrl == null) {
                 noop = "";
               }
               items = noop;
-              const obj12 = lib(6094);
+              const obj12 = lib(6100);
               c9 = 2;
               c10 = 1;
               let obj2 = { value: null, done: false };
@@ -167,7 +167,7 @@ function _generateAnimationSource() {
               obj9[0] = c9;
               obj9[1] = c10;
               obj9[2] = closure_11;
-              closure_6 = lib(6131).replaceAnimationColors(closure_6, obj9);
+              closure_6 = lib(6137).replaceAnimationColors(closure_6, obj9);
               const _JSON2 = JSON;
               dependencyMap2 = 0;
               c10 = 3;
@@ -332,7 +332,7 @@ function _generateAnimationSourceFromLocalImage() {
             obj6[0] = closure_8;
             obj6[1] = closure_9;
             obj6[2] = closure_10;
-            c5 = lib(6131).replaceAnimationColors(c5, obj6);
+            c5 = lib(6137).replaceAnimationColors(c5, obj6);
             const _JSON = JSON;
             c4 = 0;
             c6 = 3;

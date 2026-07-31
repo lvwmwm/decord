@@ -229,7 +229,7 @@ function deterministicDecirc(toJSON, arg1, arg2, arr, toJSON, sum, depthLimit) {
         setReplace(c1, toJSON, arg1, toJSON);
       }
       try {
-        if (typeof toJSON.toJSON !== "find") {
+        if (typeof toJSON.toJSON !== "fileFinishedImporting") {
           if (undefined !== depthLimit.depthLimit) {
             if (sum > depthLimit.depthLimit) {
               setReplace(c0, toJSON, arg1, toJSON);

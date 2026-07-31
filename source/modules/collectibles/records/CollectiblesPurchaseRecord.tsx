@@ -1,9 +1,9 @@
-// Module ID: 5826
-// Function ID: 5827
+// Module ID: 5831
+// Function ID: 5832
 // Name: fromServer
-// Dependencies: [5801, 5802, 5800, 678, 676, 4230, 2]
+// Dependencies: [5806, 5807, 5805, 678, 676, 4234, 2]
 
-// Module 5826 (fromServer)
+// Module 5831 (fromServer)
 import fromServer from "fromServer";
 import { createCollectiblesItemsFromServerResponse as closure_3 } from "createCollectiblesItemsFromServerResponse";
 import { CollectiblesVariantProductRecord as closure_4 } from "fromServer";
@@ -42,7 +42,7 @@ prototype["fromServer"] = function fromServer(sku_id) {
   }
   const someResult = closure_5.some((rewardSkuId) => rewardSkuId.rewardSkuId === sku_id);
   let mapped;
-  const tmp5 = sku_id(4230)(prices);
+  const tmp5 = sku_id(4234)(prices);
   if (bundled_products != null) {
     mapped = bundled_products.map(fromServer.fromServer);
   }
@@ -61,7 +61,7 @@ prototype["fromServer"] = function fromServer(sku_id) {
     const _Date2 = Date;
     date1 = new Date(expires_at);
   }
-  if (typeof prototype !== "find") {
+  if (typeof prototype !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);

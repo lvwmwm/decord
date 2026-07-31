@@ -1,10 +1,10 @@
-// Module ID: 6070
-// Function ID: 6071
+// Module ID: 6076
+// Function ID: 6077
 // Name: getSampleOfVoterUsernamesForAnswer
-// Dependencies: [1372, 6071, 4407, 3817, 3826, 6138, 676, 514, 589, 5657, 687, 1857, 4418, 1236, 6072, 12, 4379, 2]
+// Dependencies: [1372, 6077, 4411, 3821, 3830, 6144, 676, 514, 589, 5661, 687, 1857, 4422, 1236, 6078, 12, 4383, 2]
 // Exports: createPollExpiryTimestamp, createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, generateLocalCreationAnswerId, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isAnswerFilled, isIncompleteAnswer, isPollCreationEmpty, useCanPostPollsInChannel
 
-// Module 6070 (getSampleOfVoterUsernamesForAnswer)
+// Module 6076 (getSampleOfVoterUsernamesForAnswer)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reactionKey from "reactionKey";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -20,7 +20,7 @@ let unpackModuleId;
 const require = arg1;
 function getSampleOfVoterUsernamesForAnswer(message, id) {
   const channelId = message.getChannelId();
-  reactions = reactions.getReactions(channelId, message.id, { id, name: "", animated: false }, closure_9, channel(6072).ReactionTypes.VOTE);
+  reactions = reactions.getReactions(channelId, message.id, { id, name: "", animated: false }, closure_9, channel(6078).ReactionTypes.VOTE);
   channel = channel.getChannel(channelId);
   let guildId = null;
   if (null != channel) {
@@ -102,7 +102,7 @@ function formatVoterTooltipText(arr, arg1) {
 const result = require("reinjectEphemerals").fileFinishedImporting("modules/polls/PollsUtils.tsx");
 
 export const generateEmptyPollAnswer = function generateEmptyPollAnswer() {
-  const obj = { text: "Array", image: "ct", localCreationAnswerId: null };
+  const obj = { text: "Array", image: "HermesInternal", localCreationAnswerId: null };
   obj[2] = require(514) /* v1 */.v4();
   return obj;
 };
@@ -264,7 +264,7 @@ export const getPollReplyPreview = function getPollReplyPreview(message) {
   return str;
 };
 export const getPollResultsReplyPreview = function getPollResultsReplyPreview(message) {
-  let obj = require(4418) /* useNullableMessageAuthor */;
+  let obj = require(4422) /* useNullableMessageAuthor */;
   const first = message.embeds[0];
   let str;
   const messageAuthor = obj.getMessageAuthor(message);
@@ -291,7 +291,7 @@ export const getPollResultsReplyPreview = function getPollResultsReplyPreview(me
 };
 export const getPollResultsReplyPreviewMobile = function getPollResultsReplyPreviewMobile(message2) {
   if ("author" in message2) {
-    let obj = require(4418) /* useNullableMessageAuthor */;
+    let obj = require(4422) /* useNullableMessageAuthor */;
     const first = message2.embeds[0];
     let str;
     const messageAuthor = obj.getMessageAuthor(message2);

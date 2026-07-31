@@ -6,7 +6,7 @@
 // Module 158 (_wrapNativeSuper)
 function _wrapNativeSuper(arg0) {
   let map;
-  if (typeof Map !== "ZodObject") {
+  if (typeof Map !== "disabledUntil") {
     const _Map = Map;
     map = new Map();
   }
@@ -14,7 +14,7 @@ function _wrapNativeSuper(arg0) {
     let closure_0 = arg0;
     if (null !== arg0) {
       if (map(outer1_2[0])(arg0)) {
-        if (typeof arg0 === "ZodObject") {
+        if (typeof arg0 === "disabledUntil") {
           const _TypeError = TypeError;
           const typeError = new TypeError("Super expression must either be null or a function");
           throw typeError;

@@ -1,10 +1,10 @@
-// Module ID: 16589
-// Function ID: 16590
+// Module ID: 16618
+// Function ID: 16619
 // Name: ChannelRow
-// Dependencies: [32, 19, 17, 1372, 5127, 3817, 676, 4386, 21, 4189, 712, 5109, 4380, 4157, 15098, 5141, 16526, 589, 5551, 4185, 1236, 9235, 4717, 4395, 8269, 1959, 8271, 8273, 1297, 12662, 5245, 2]
+// Dependencies: [32, 19, 17, 1372, 5131, 3821, 676, 4390, 21, 4193, 712, 5113, 4384, 4161, 15124, 5145, 16555, 589, 5555, 4189, 1236, 9248, 4721, 4399, 8276, 1959, 8278, 8280, 1297, 12687, 5249, 2]
 // Exports: default
 
-// Module 16589 (ChannelRow)
+// Module 16618 (ChannelRow)
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
 import { View } from "initialize";
@@ -28,7 +28,7 @@ function ChannelRow(channel) {
   const onChannelSelected = channel.onChannelSelected;
   let selected = channel.selected;
   const tmp = createCacheKey();
-  const tmp4 = onChannelSelected(4380)(channel);
+  const tmp4 = onChannelSelected(4384)(channel);
   const items = [onChannelSelected, channel];
   const callback = React.useCallback(() => {
     onChannelSelected(outer1_2[13]).hideActionSheet();
@@ -39,13 +39,13 @@ function ChannelRow(channel) {
   obj[4] = channel;
   obj[5] = selected;
   obj[7] = UnreadSetting.ONLY_MENTIONS;
-  const children = [closure_11(onChannelSelected(15098), obj), ];
+  const children = [closure_11(onChannelSelected(15124), obj), ];
   if (selected) {
     obj = { style: null, source: null };
     obj[0] = tmp.selectedIcon;
-    obj[1] = tmp2(16526);
-    selected = tmp8(tmp2(5141), obj);
-    const tmp2Result = tmp2(5141);
+    obj[1] = tmp2(16555);
+    selected = tmp8(tmp2(5145), obj);
+    const tmp2Result = tmp2(5145);
   }
   children[1] = selected;
   return closure_13(closure_12, { children });
@@ -127,7 +127,7 @@ export default function ChannelSelectorActionSheet(guildId) {
     const intl = tmp5(1236).intl;
     title = intl.string(tmp5(1236).t.PDn2fR);
   }
-  obj[1] = closure_11(guildId(4185).Text, { accessibilityRole: "header", variant: "text-md/bold", color: "mobile-text-heading-primary", children: title });
+  obj[1] = closure_11(guildId(4189).Text, { accessibilityRole: "header", variant: "text-md/bold", color: "mobile-text-heading-primary", children: title });
   const items2 = [closure_11(View, obj), , ];
   const obj1 = { style: tmp.searchContainer, children: null };
   let obj2 = { size: "md", placeholder: null, onChange: null, onFocus: null };
@@ -142,7 +142,7 @@ export default function ChannelSelectorActionSheet(guildId) {
     }
     return expandActionSheetResult;
   };
-  obj1[1] = closure_11(guildId(9235).SearchField, obj2);
+  obj1[1] = closure_11(guildId(9248).SearchField, obj2);
   items2[1] = closure_11(View, obj1);
   let tmp9Result = !hideCreateChannel;
   if (!hideCreateChannel) {
@@ -170,19 +170,19 @@ export default function ChannelSelectorActionSheet(guildId) {
     }
     const obj4 = { color: null, source: null };
     obj4[0] = str;
-    obj4[1] = importDefault(12662);
+    obj4[1] = importDefault(12687);
     const items3 = [tmp8(tmp5(1297).Icon, obj4), ];
     const obj5 = { style: null, variant: "text-md/medium", color: "text-link", children: null };
     obj5[0] = tmp.createChannelLabel;
     const intl3 = tmp5(1236).intl;
     obj5[3] = intl3.string(tmp5(1236).t.d7AN7W);
-    items3[1] = tmp8(tmp5(4185).Text, obj5);
+    items3[1] = tmp8(tmp5(4189).Text, obj5);
     obj3[3] = items3;
-    tmp9Result = tmp9(tmp5(4717).PressableOpacity, obj3);
+    tmp9Result = tmp9(tmp5(4721).PressableOpacity, obj3);
   }
   items2[2] = tmp9Result;
   obj[2] = closure_13(closure_12, { children: items2 });
-  obj[3] = closure_11(guildId(5245).BottomSheetFlatList, {
+  obj[3] = closure_11(guildId(5249).BottomSheetFlatList, {
     style: tmp.bodyContainer,
     data: stateFromStoresArray,
     keyExtractor(id) {
@@ -193,5 +193,5 @@ export default function ChannelSelectorActionSheet(guildId) {
       return outer1_11(outer1_15, { channel: item, onChannelSelected: closure_1, selected: item.id === closure_2 });
     }
   });
-  return closure_11(guildId(5551).ActionSheet, obj);
+  return closure_11(guildId(5555).ActionSheet, obj);
 };

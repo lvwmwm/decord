@@ -1,9 +1,9 @@
-// Module ID: 4871
-// Function ID: 4872
+// Module ID: 4875
+// Function ID: 4876
 // Name: getPlatformUserUrl
-// Dependencies: [676, 4872, 711, 4873, 4874, 4875, 4876, 4877, 4878, 4879, 4880, 4881, 4882, 4883, 4884, 4216, 4885, 4886, 4887, 4888, 4889, 4890, 4891, 4892, 4893, 4894, 4895, 4896, 4897, 4898, 4899, 4900, 4901, 4902, 4903, 4904, 4905, 4906, 4907, 4908, 4909, 4910, 4911, 4912, 4913, 4914, 4915, 4916, 4917, 4918, 4919, 4920, 4921, 4922, 4923, 4924, 4925, 4926, 4927, 4928, 4929, 4930, 4931, 4932, 4933, 4934, 4935, 4936, 4937, 4938, 4939, 4940, 4941, 4942, 4943, 4944, 4945, 4946, 4947, 4948, 4949, 4950, 4951, 4952, 4953, 4954, 4955, 4956, 4957, 4958, 4959, 4960, 4961, 4962, 4963, 4964, 4965, 4966, 4967, 4968, 4969, 4970, 4971, 4972, 4973, 4974, 4975, 4976, 4977, 4978, 4979, 4980, 4981, 4982, 4983, 4984, 4985, 4986, 4987, 4988, 4989, 4990, 4991, 4992, 4993, 4994, 12, 1467, 2]
+// Dependencies: [676, 4876, 711, 4877, 4878, 4879, 4880, 4881, 4882, 4883, 4884, 4885, 4886, 4887, 4888, 4220, 4889, 4890, 4891, 4892, 4893, 4894, 4895, 4896, 4897, 4898, 4899, 4900, 4901, 4902, 4903, 4904, 4905, 4906, 4907, 4908, 4909, 4910, 4911, 4912, 4913, 4914, 4915, 4916, 4917, 4918, 4919, 4920, 4921, 4922, 4923, 4924, 4925, 4926, 4927, 4928, 4929, 4930, 4931, 4932, 4933, 4934, 4935, 4936, 4937, 4938, 4939, 4940, 4941, 4942, 4943, 4944, 4945, 4946, 4947, 4948, 4949, 4950, 4951, 4952, 4953, 4954, 4955, 4956, 4957, 4958, 4959, 4960, 4961, 4962, 4963, 4964, 4965, 4966, 4967, 4968, 4969, 4970, 4971, 4972, 4973, 4974, 4975, 4976, 4977, 4978, 4979, 4980, 4981, 4982, 4983, 4984, 4985, 4986, 4987, 4988, 4989, 4990, 4991, 4992, 4993, 4994, 4995, 4996, 4997, 4998, 12, 1467, 2]
 
-// Module 4871 (getPlatformUserUrl)
+// Module 4875 (getPlatformUserUrl)
 import { PlatformTypes } from "ME";
 import { ApplicationIdentityConnections } from "items1";
 import unsafe_getRawColor from "unsafe_getRawColor";
@@ -50,11 +50,11 @@ obj2[3] = { lightPNG: require("registerAsset"), darkPNG: require("registerAsset"
 obj2[5] = {
   replacedBy: ApplicationIdentityConnections.BATTLENET,
   getMigrationExperimentEnabled(location) {
-    const battlenetSocialSDKMigrationExperiment = require(4216) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
+    const battlenetSocialSDKMigrationExperiment = require(4220) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
     return battlenetSocialSDKMigrationExperiment.getConfig({ location }).enabled;
   },
   useMigrationExperimentEnabled(location) {
-    const battlenetSocialSDKMigrationExperiment = require(4216) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
+    const battlenetSocialSDKMigrationExperiment = require(4220) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
     return battlenetSocialSDKMigrationExperiment.useConfig({ location }).enabled;
   },
   helpCenterLink: "https://discord.com/blog/link-world-of-warcraft-with-discord"
@@ -87,12 +87,12 @@ obj10[3] = { lightPNG: require("registerAsset"), darkPNG: require("registerAsset
 obj10[5] = {
   replacedBy: ApplicationIdentityConnections.RIOT_GAMES,
   getMigrationExperimentEnabled(location) {
-    let obj = require(4216) /* useIsRiotSocialSDKMigrationEnabled */;
+    let obj = require(4220) /* useIsRiotSocialSDKMigrationEnabled */;
     obj = { location };
     return obj.getIsRiotSocialSDKMigrationEnabled(obj);
   },
   useMigrationExperimentEnabled(location) {
-    let obj = require(4216) /* useIsRiotSocialSDKMigrationEnabled */;
+    let obj = require(4220) /* useIsRiotSocialSDKMigrationEnabled */;
     obj = { location };
     return obj.useIsRiotSocialSDKMigrationEnabled(obj);
   },
@@ -187,12 +187,12 @@ obj36[2] = { lightPNG: require("registerAsset"), darkPNG: require("registerAsset
 obj36[4] = {
   replacedBy: ApplicationIdentityConnections.RIOT_GAMES,
   getMigrationExperimentEnabled(location) {
-    let obj = require(4216) /* useIsRiotSocialSDKMigrationEnabled */;
+    let obj = require(4220) /* useIsRiotSocialSDKMigrationEnabled */;
     obj = { location };
     return obj.getIsRiotSocialSDKMigrationEnabled(obj);
   },
   useMigrationExperimentEnabled(location) {
-    let obj = require(4216) /* useIsRiotSocialSDKMigrationEnabled */;
+    let obj = require(4220) /* useIsRiotSocialSDKMigrationEnabled */;
     obj = { location };
     return obj.useIsRiotSocialSDKMigrationEnabled(obj);
   },

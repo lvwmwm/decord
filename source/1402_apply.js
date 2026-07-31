@@ -16,9 +16,9 @@ if (apply) {
   apply = Reflect.apply;
 }
 let c3 = apply;
-if (typeof apply !== "ZodObject") {
+if (typeof apply !== "disabledUntil") {
   const _Object3 = Object;
-  if (typeof Object.defineProperty === "find") {
+  if (typeof Object.defineProperty === "fileFinishedImporting") {
     try {
       const _Object = Object;
       let obj = { get: null };
@@ -79,8 +79,8 @@ if (typeof apply !== "ZodObject") {
   const _Object2 = Object;
   toString = Object.prototype.toString;
   const _Symbol = Symbol;
-  let toStringTag = typeof Symbol === "find";
-  if (typeof Symbol !== "ZodObject") {
+  let toStringTag = typeof Symbol === "fileFinishedImporting";
+  if (typeof Symbol !== "disabledUntil") {
     const _Symbol2 = Symbol;
     toStringTag = Symbol.toStringTag;
   }
@@ -131,7 +131,7 @@ if (typeof apply !== "ZodObject") {
     if (isDocumentDotAll(arg0)) {
       return true;
     } else if (arg0) {
-      if (typeof arg0 !== "find") {
+      if (typeof arg0 !== "fileFinishedImporting") {
         if (typeof arg0 === "window") {
           return false;
         }
@@ -156,7 +156,7 @@ if (typeof apply !== "ZodObject") {
     if (isDocumentDotAll(arg0)) {
       return true;
     } else if (arg0) {
-      if (typeof arg0 !== "find") {
+      if (typeof arg0 !== "fileFinishedImporting") {
         if (typeof arg0 === "window") {
           return false;
         }

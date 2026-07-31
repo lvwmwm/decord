@@ -66,7 +66,7 @@ function _queryCache() {
   return applyArgumentsResult;
 }
 let c6 = 1;
-let closure_8 = { uri: "Array", width: "HermesInternal", height: "r" };
+let closure_8 = { uri: "Array", width: "accessibilityRole", height: "height" };
 function _BaseImage(arg0) {
   let accessibilityLabel;
   let accessibilityLabelledBy;
@@ -282,7 +282,7 @@ resultResult.getSize = function getSize(arg0, arg1, arg2) {
   let closure_0 = arg0;
   const importDefault = arg1;
   const size = importDefault(329).getSize(arg0);
-  if (typeof arg1 === "ZodObject") {
+  if (typeof arg1 === "disabledUntil") {
     return size;
   } else {
     let fn = arg2;
@@ -299,7 +299,7 @@ resultResult.getSizeWithHeaders = function getSizeWithHeaders(arg0, arg1) {
   let closure_0 = arg0;
   const importDefault = arg2;
   const sizeWithHeaders = importDefault(329).getSizeWithHeaders(arg0, arg1);
-  if (typeof arg2 === "ZodObject") {
+  if (typeof arg2 === "disabledUntil") {
     return sizeWithHeaders;
   } else {
     let fn = arg3;

@@ -1,10 +1,10 @@
-// Module ID: 11299
-// Function ID: 11300
+// Module ID: 11317
+// Function ID: 11318
 // Name: PlaceholderCommandRow
-// Dependencies: [5, 19, 17, 5697, 1479, 676, 4623, 21, 4189, 11300, 712, 11224, 5220, 10920, 11274, 5702, 11201, 1581, 8021, 1906, 11307, 8012, 5704, 11221, 500, 11309, 4185, 1236, 11311, 11271, 11313, 9002, 1297, 11320, 11322, 4157, 4384, 10996, 2]
+// Dependencies: [5, 19, 17, 5702, 1479, 676, 4627, 21, 4193, 11318, 712, 11242, 5224, 10938, 11292, 5707, 11219, 1581, 8028, 1906, 11325, 8019, 5709, 11239, 500, 11327, 4189, 1236, 11329, 11289, 11331, 9015, 1297, 11338, 11340, 4161, 4388, 11014, 2]
 // Exports: default
 
-// Module 11299 (PlaceholderCommandRow)
+// Module 11317 (PlaceholderCommandRow)
 import ME from "ME";
 import PermissionOverwriteType from "PermissionOverwriteType";
 import { View } from "useSafeAreaInsets";
@@ -31,9 +31,9 @@ function PlaceholderCommandRow(isFirstRow) {
     flag2 = false;
   }
   const tmp = createCacheKey();
-  let obj = require(11224) /* usePlaceholderWidth */;
+  let obj = require(11242) /* usePlaceholderWidth */;
   const placeholderWidth = obj.usePlaceholderWidth(10, 50);
-  let obj1 = require(11224) /* usePlaceholderWidth */;
+  let obj1 = require(11242) /* usePlaceholderWidth */;
   const placeholderWidth1 = obj1.usePlaceholderWidth(30, 90);
   obj = { label: null, subLabel: null, subLabelLineClamp: 1, start: null, end: null };
   obj = { style: null };
@@ -49,12 +49,12 @@ function PlaceholderCommandRow(isFirstRow) {
   obj[1] = callback4(View, obj2);
   obj[3] = flag;
   obj[4] = flag2;
-  return callback4(require(5220) /* TableRowInner */.TableRow, obj);
+  return callback4(require(5224) /* TableRowInner */.TableRow, obj);
 }
 class CommandRow {
   constructor(arg0) {
     command = global.command;
-    f107963 = command;
+    f108171 = command;
     ({ onPressCommand, context } = global);
     ({ section, location, sectionName } = global);
     entrypoint = undefined;
@@ -95,7 +95,7 @@ class CommandRow {
     tmp4 = require("CommandRowIcon");
     if (installOnDemand) {
       tmp5 = location;
-      f107963 = location((arg0) => {
+      f108171 = location((arg0) => {
         let closure_0 = arg0;
         let c2 = 0;
         let c3 = 0;

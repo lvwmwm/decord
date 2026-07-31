@@ -1,10 +1,10 @@
-// Module ID: 5640
-// Function ID: 5641
+// Module ID: 5644
+// Function ID: 5645
 // Name: openAgeGateModal
-// Dependencies: [1221, 676, 698, 709, 5641, 1222, 2]
+// Dependencies: [1221, 676, 698, 709, 5645, 1222, 2]
 // Exports: closeAgeGateModal, closeFailedAgeGate, openAgeGateModal, openFailureAgeGateModal, openSuccessAgeGateModal
 
-// Module 5640 (openAgeGateModal)
+// Module 5644 (openAgeGateModal)
 import { AgeGateAnalyticAction } from "result";
 import ME from "ME";
 
@@ -51,7 +51,7 @@ export const openFailureAgeGateModal = function openFailureAgeGateModal(source) 
   importDefault(698).track(constants2.AGE_GATE_ACTION, obj);
 };
 export const closeFailedAgeGate = function closeFailedAgeGate() {
-  importDefault(5641).logoutInternal();
-  const obj = importDefault(5641);
+  importDefault(5645).logoutInternal();
+  const obj = importDefault(5645);
   require(1222) /* transitionTo */.transitionTo(constants.LOGIN, { source: "age_gate_modal" });
 };

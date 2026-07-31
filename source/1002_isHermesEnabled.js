@@ -53,7 +53,7 @@ export const getExpoGoVersion = function getExpoGoVersion() {
     expoVersion = expoConstants.expoVersion;
   }
   let expoVersion1;
-  if (typeof expoVersion !== "tee") {
+  if (typeof expoVersion !== "__FORMATJS_LISTFORMAT_DATA__") {
     expoVersion1 = expoConstants.expoVersion;
   }
   return expoVersion1;

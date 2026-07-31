@@ -1,9 +1,9 @@
-// Module ID: 4527
-// Function ID: 4528
+// Module ID: 4531
+// Function ID: 4532
 // Name: handleConnectionOpen
 // Dependencies: [1862, 3, 589, 709, 2]
 
-// Module 4527 (handleConnectionOpen)
+// Module 4531 (handleConnectionOpen)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { Store } from "initialize";
 import set from "initialize";

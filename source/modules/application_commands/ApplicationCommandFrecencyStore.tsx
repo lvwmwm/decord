@@ -1,10 +1,10 @@
-// Module ID: 5699
-// Function ID: 5700
+// Module ID: 5704
+// Function ID: 5705
 // Name: handleUserSettingsProtoStoreChange
-// Dependencies: [1340, 4623, 4215, 685, 4273, 12, 589, 709, 2]
+// Dependencies: [1340, 4627, 4219, 685, 4277, 12, 589, 709, 2]
 // Exports: getFilteredTopCommands, getTopRealCommands
 
-// Module 5699 (handleUserSettingsProtoStoreChange)
+// Module 5704 (handleUserSettingsProtoStoreChange)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import TRUE_OPTION_NAME from "TRUE_OPTION_NAME";
 import { UserSettingsTypes } from "MAX_FAVORITES";

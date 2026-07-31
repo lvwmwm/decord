@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset";
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/instant_invite/native/images", width: 60, height: 60, scales: [2, 3], hash: "811fb35960f597c4ee3417f16bd2f9e6", name: "messages", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 254, height: 154, scales: [2, 3], hash: "82ae7189682c36bee3dc3a129ab02a11", name: "img_app_crash_darker", type: "png" });

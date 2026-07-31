@@ -1,9 +1,9 @@
-// Module ID: 4264
-// Function ID: 4265
+// Module ID: 4268
+// Function ID: 4269
 // Name: DeviceTypes
-// Dependencies: [4236, 1874, 4250, 4265, 4273, 589, 12, 709, 2]
+// Dependencies: [4240, 1874, 4254, 4269, 4277, 589, 12, 709, 2]
 
-// Module 4264 (DeviceTypes)
+// Module 4268 (DeviceTypes)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import DesktopSources from "DesktopSources";

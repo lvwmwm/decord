@@ -1,10 +1,10 @@
-// Module ID: 15171
-// Function ID: 15172
+// Module ID: 15197
+// Function ID: 15198
 // Name: ProgressBar
-// Dependencies: [19, 17, 1942, 4391, 4392, 1379, 3805, 21, 4189, 712, 4611, 647, 1384, 4717, 1222, 4185, 1236, 1297, 10733, 2]
+// Dependencies: [19, 17, 1942, 4395, 4396, 1379, 3809, 21, 4193, 712, 4615, 647, 1384, 4721, 1222, 4189, 1236, 1297, 10751, 2]
 // Exports: NewMemberActionsProgress
 
-// Module 15171 (ProgressBar)
+// Module 15197 (ProgressBar)
 import set from "set";
 import { View } from "Button";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -28,7 +28,7 @@ function ProgressBar(percent) {
   items[1] = obj;
   obj[0] = items;
   obj[1] = ["rgba(103, 203, 134, 1)", "rgba(59, 165, 92, 1)"];
-  obj[1] = callback(importDefault(4611), obj);
+  obj[1] = callback(importDefault(4615), obj);
   return callback(View, obj);
 }
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);

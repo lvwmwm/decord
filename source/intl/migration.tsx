@@ -1,10 +1,10 @@
-// Module ID: 16176
-// Function ID: 16177
+// Module ID: 16204
+// Function ID: 16205
 // Name: newGetEnglishMessageText
 // Dependencies: [1236, 1274, 2]
 // Exports: improperGetEnglishIntlMessageText
 
-// Module 16176 (newGetEnglishMessageText)
+// Module 16204 (newGetEnglishMessageText)
 const result = require("set").fileFinishedImporting("intl/migration.tsx");
 
 export const improperGetEnglishIntlMessageText = function newGetEnglishMessageText(code) {

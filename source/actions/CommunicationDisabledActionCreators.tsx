@@ -1,8 +1,8 @@
-// Module ID: 11029
-// Function ID: 11030
-// Dependencies: [5, 3771, 5105, 2]
+// Module ID: 11047
+// Function ID: 11048
+// Dependencies: [5, 3775, 5109, 2]
 
-// Module 11029
+// Module 11047
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const result = require("showTooManyUserGuildsAlert").fileFinishedImporting("actions/CommunicationDisabledActionCreators.tsx");
@@ -44,7 +44,7 @@ export default {
             } else {
               let toISOStringResult = null;
               if (null != outer1_2) {
-                let obj1 = v0(3771)();
+                let obj1 = v0(3775)();
                 toISOStringResult = obj1.add(tmp21, "s").toISOString();
                 const addResult = obj1.add(tmp21, "s");
               }
@@ -59,7 +59,7 @@ export default {
               dependencyMap = 1;
               v0 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = v0(5105).setCommunicationDisabledUntil(obj1);
+              obj2[0] = v0(5109).setCommunicationDisabledUntil(obj1);
               return obj2;
             }
           } else if (arg0 === 1) {

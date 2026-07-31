@@ -1,10 +1,10 @@
-// Module ID: 10537
-// Function ID: 10538
+// Module ID: 10555
+// Function ID: 10556
 // Name: ScreenShareTile
-// Dependencies: [19, 17, 676, 21, 4189, 712, 10538, 5273, 1297, 10539, 4185, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4193, 712, 10556, 5277, 1297, 10557, 4189, 1236, 2]
 // Exports: default
 
-// Module 10537 (ScreenShareTile)
+// Module 10555 (ScreenShareTile)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { NOOP } from "ME";
@@ -37,18 +37,18 @@ export default function ScreenShareTile(onSingleTap) {
     onDoubleTap = NOOP;
   }
   const tmp = createCacheKey();
-  let obj = { gesture: importDefault(10538)({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap }), children: null };
+  let obj = { gesture: importDefault(10556)({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap }), children: null };
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.liveContainer, children: null };
   obj[1] = callback(require(1297) /* Button */.LiveTag, {});
   const items = [callback(closure_3, obj), , ];
-  const tmp2 = importDefault(10538)({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap });
-  items[1] = callback(closure_4, { source: importDefault(10539), style: tmp.image, resizeMode: "contain" });
+  const tmp2 = importDefault(10556)({ onSingleTapStart: onSingleTap, onDoubleTapStart: onDoubleTap });
+  items[1] = callback(closure_4, { source: importDefault(10557), style: tmp.image, resizeMode: "contain" });
   const obj2 = { style: tmp.label, variant: "text-xs/bold", color: "text-overlay-light", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl.string(require(1236) /* getSystemLocale */.t.G84gtR);
-  items[2] = callback(require(4185) /* Text */.Text, obj2);
+  items[2] = callback(require(4189) /* Text */.Text, obj2);
   obj[1] = items;
   obj[1] = callback2(closure_3, obj);
-  return callback(require(5273) /* Directions */.GestureDetector, obj);
+  return callback(require(5277) /* Directions */.GestureDetector, obj);
 };

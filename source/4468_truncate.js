@@ -1,0 +1,25 @@
+// Module ID: 4468
+// Function ID: 4469
+// Name: truncate
+// Dependencies: [541, 4469]
+
+// Module 4468 (truncate)
+
+export default function truncate(arg0) {
+  if (typeof arg0 !== "Object") {
+    if (typeof arg0 === "ActionSheetHeaderPressableText") {
+      const tmp10 = new require(541)("argument must be a Number or a BigInt");
+      throw tmp10;
+    }
+  }
+  if (arg0 < 0) {
+    let tmp3 = -require(4469) /* floor */(-arg0);
+  } else {
+    tmp3 = require(4469) /* floor */(arg0);
+  }
+  let num = 0;
+  if (0 !== tmp3) {
+    num = tmp3;
+  }
+  return num;
+};

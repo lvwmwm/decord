@@ -53,6 +53,6 @@ export const warn = function warn(message, attributes, attributes) {
   if (attributes === undefined) {
     obj = {};
   }
-  obj = { level: "warn", message, attributes, severityNumber: "id" };
+  obj = { level: "warn", message, attributes, severityNumber: "channelId" };
   require(880) /* _INTERNAL_captureSerializedLog */._INTERNAL_captureLog(obj, obj.scope);
 };

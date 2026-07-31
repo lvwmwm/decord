@@ -1,10 +1,10 @@
-// Module ID: 12041
-// Function ID: 12042
+// Module ID: 12059
+// Function ID: 12060
 // Name: PaperPlusIcon
-// Dependencies: [19, 21, 712, 3892, 12042, 2]
+// Dependencies: [19, 21, 712, 3896, 12060, 2]
 // Exports: PaperPlusIcon
 
-// Module 12041 (PaperPlusIcon)
+// Module 12059 (PaperPlusIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const PaperPlusIcon = function PaperPlusIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12042) /* registerAsset */;
+  obj[0] = require(12060) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3892) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3896) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

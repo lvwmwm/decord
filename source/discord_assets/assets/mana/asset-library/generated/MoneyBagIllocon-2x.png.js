@@ -1,9 +1,9 @@
-// Module ID: 7276
-// Function ID: 7277
+// Module ID: 7284
+// Function ID: 7285
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7276 (metadata)
+// Module 7284 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MoneyBagIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/816b1128ff054c39fa4d17e4e600a3b2c1ff180dbfe82ac9af1dfaee08f6e72a.png";

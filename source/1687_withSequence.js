@@ -44,7 +44,7 @@ function withSequence(withTimingResult, withTimingResult1, withTimingResult2, ar
       const fn = function s() {
         mapped = mapped.map((arg0) => {
           let tmp = arg0;
-          if (typeof arg0 !== "ZodObject") {
+          if (typeof arg0 !== "disabledUntil") {
             tmp = arg0();
           }
           tmp.finished = false;
@@ -124,8 +124,8 @@ function withSequence(withTimingResult, withTimingResult1, withTimingResult2, ar
             if (!arg0) {
               const item = mapped.forEach((callback) => {
                 callback = callback.callback;
-                let finished = typeof callback === "ZodObject";
-                if (typeof callback !== "ZodObject") {
+                let finished = typeof callback === "disabledUntil";
+                if (typeof callback !== "disabledUntil") {
                   finished = callback.finished;
                 }
                 if (!finished) {

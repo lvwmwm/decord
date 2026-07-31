@@ -1,15 +1,15 @@
-// Module ID: 13353
-// Function ID: 13354
-// Dependencies: [3, 13354, 13424, 13442, 13445, 13448, 511, 1214, 2]
+// Module ID: 13377
+// Function ID: 13378
+// Dependencies: [3, 13378, 13448, 13466, 13469, 13472, 511, 1214, 2]
 
-// Module 13353
+// Module 13377
 import timestamp from "_typeof";
-import module_13354 from "module_13354";
+import module_13378 from "module_13378";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _typeof from "_typeof";
 import GetOption from "GetOption";
 
-if (typeof process !== "__INTERNAL_SLOT_MAP__") {
+if (typeof process !== "pack") {
   const _window3 = window;
   window.process = {};
 }

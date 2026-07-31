@@ -1,10 +1,10 @@
-// Module ID: 9442
-// Function ID: 9443
+// Module ID: 9457
+// Function ID: 9458
 // Name: EmojiPickerCategoriesUnicodeShortcutItem
-// Dependencies: [32, 19, 17, 676, 21, 4189, 4050, 9443, 4717, 1236, 9428, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4193, 4054, 9458, 4721, 1236, 9443, 2]
 // Exports: default
 
-// Module 9442 (EmojiPickerCategoriesUnicodeShortcutItem)
+// Module 9457 (EmojiPickerCategoriesUnicodeShortcutItem)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

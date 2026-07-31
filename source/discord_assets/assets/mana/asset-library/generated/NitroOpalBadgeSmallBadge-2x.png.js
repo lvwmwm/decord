@@ -1,9 +1,9 @@
-// Module ID: 7312
-// Function ID: 7313
+// Module ID: 7320
+// Function ID: 7321
 // Name: vanityUrl
 // Dependencies: [2]
 
-// Module 7312 (vanityUrl)
+// Module 7320 (vanityUrl)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroOpalBadgeSmallBadge-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/4dc7edc2b271f3b89eab328b12f41f439ac50d26b42849f3daa0a6c5fdb26075.png";

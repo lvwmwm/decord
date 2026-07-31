@@ -1,10 +1,10 @@
-// Module ID: 11017
-// Function ID: 11018
+// Module ID: 11035
+// Function ID: 11036
 // Name: _setGuildRaidAlerts
-// Dependencies: [5, 1862, 7795, 676, 698, 4384, 8301, 3771, 530, 10264, 2]
+// Dependencies: [5, 1862, 7803, 676, 698, 4388, 8308, 3775, 530, 10282, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 11017 (_setGuildRaidAlerts)
+// Module 11035 (_setGuildRaidAlerts)
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { DEFAULT_LOCKDOWN_DURATION } from "GUILD_REPORT_RAID_MOBILE_KEY";
@@ -145,7 +145,7 @@ function _setGuildIncidentActions() {
               }
               let toISOStringResult = null;
               if (tmp5) {
-                let obj2 = callback2(3771)();
+                let obj2 = callback2(3775)();
                 toISOStringResult = obj2.add(tmp8, "hours").toISOString();
                 const addResult = obj2.add(tmp8, "hours");
               }
@@ -244,7 +244,7 @@ function _handleResolveRaid() {
               guild = guild.getGuild(callback);
               let tmp8 = null;
               if (null != guild) {
-                tmp8 = callback2(10264)(guild);
+                tmp8 = callback2(10282)(guild);
               }
               let tmp5 = null;
               if (null != tmp8) {
@@ -335,7 +335,7 @@ function _handleReportRaid() {
               const guild = outer1_4.getGuild(callback);
               let tmp8 = null;
               if (null != guild) {
-                tmp8 = v0(10264)(guild);
+                tmp8 = v0(10282)(guild);
               }
               let tmp5 = null;
               if (null != tmp8) {
@@ -395,11 +395,11 @@ export const trackReportRaidViewed = function trackReportRaidViewed(onChange, on
   if (0 !== items.length) {
     let obj = importDefault(698);
     obj = {};
-    const merged = Object.assign(require(4384) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(onChange));
+    const merged = Object.assign(require(4388) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(onChange));
     obj.guild_id = onChange;
     obj.raid_types = items;
     obj.track(constants.GUILD_RAID_REPORTED, obj);
-    const obj3 = require(4384) /* collectGuildAnalyticsMetadata */;
+    const obj3 = require(4388) /* collectGuildAnalyticsMetadata */;
   }
 };
 export const setGuildRaidAlerts = function setGuildRaidAlerts() {

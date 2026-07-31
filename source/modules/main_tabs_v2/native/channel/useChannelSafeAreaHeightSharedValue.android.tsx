@@ -1,10 +1,10 @@
-// Module ID: 10417
-// Function ID: 10418
+// Module ID: 10435
+// Function ID: 10436
 // Name: useChannelSafeAreaHeightSharedValue
-// Dependencies: [10418, 10420, 4055, 5218, 3893, 712, 1348, 4050, 1579, 2]
+// Dependencies: [10436, 10438, 4059, 5222, 3897, 712, 1348, 4054, 1579, 2]
 // Exports: default
 
-// Module 10417 (useChannelSafeAreaHeightSharedValue)
+// Module 10435 (useChannelSafeAreaHeightSharedValue)
 let closure_3 = { code: "function useChannelSafeAreaHeightSharedValueAndroidTsx1(){const{chatInputFloating,chatInputSpaceBottom,keyboardOpenOrOpening,keyboardWillOpenSharedValue,keyboardOpenedHeight,insets,keyboardTypeSharedValue,KeyboardTypes,customKeyboardHeight}=this.__closure;function resolveBottom(bottom){return chatInputFloating?Math.max(bottom,chatInputSpaceBottom):bottom;}if(keyboardOpenOrOpening.get()||keyboardWillOpenSharedValue.get()){const systemKeyboardHeight=keyboardOpenedHeight.get();if(systemKeyboardHeight<=0){return resolveBottom(insets.get().bottom);}return systemKeyboardHeight;}if(keyboardTypeSharedValue.get()===KeyboardTypes.SYSTEM){return resolveBottom(insets.get().bottom);}return customKeyboardHeight;}" };
 const result = require("useKeyboardType").fileFinishedImporting("modules/main_tabs_v2/native/channel/useChannelSafeAreaHeightSharedValue.android.tsx");
 

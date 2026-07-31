@@ -1,9 +1,9 @@
-// Module ID: 14474
-// Function ID: 14475
+// Module ID: 14497
+// Function ID: 14498
 // Name: toggle
-// Dependencies: [7753, 5854, 13937, 6252, 10116, 1236, 3862, 2]
+// Dependencies: [7761, 5859, 13961, 6258, 10133, 1236, 3866, 2]
 
-// Module 14474 (toggle)
+// Module 14497 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -18,14 +18,14 @@ const toggle = createToggle.createToggle({
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: require("explicitContentFromProto").EnableScreenDowntimeScheduleNotifications.useSetting,
   onValueChange(arg0) {
-    const EnableScreenDowntimeScheduleNotifications = require(3862) /* explicitContentFromProto */.EnableScreenDowntimeScheduleNotifications;
+    const EnableScreenDowntimeScheduleNotifications = require(3866) /* explicitContentFromProto */.EnableScreenDowntimeScheduleNotifications;
     return EnableScreenDowntimeScheduleNotifications.updateSetting(arg0);
   },
   usePredicate() {
-    let isFamilyCenterV3Enabled = require(5854) /* apexExperiment */.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeScheduleSetting" });
-    const obj = require(5854) /* apexExperiment */;
-    const tmp2 = importDefault(13937)();
-    const hasActiveParentLinks = require(6252) /* useUserIdsForLinkStatus */.useHasActiveParentLinks();
+    let isFamilyCenterV3Enabled = require(5859) /* apexExperiment */.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeScheduleSetting" });
+    const obj = require(5859) /* apexExperiment */;
+    const tmp2 = importDefault(13961)();
+    const hasActiveParentLinks = require(6258) /* useUserIdsForLinkStatus */.useHasActiveParentLinks();
     if (isFamilyCenterV3Enabled) {
       isFamilyCenterV3Enabled = tmp2;
     }
@@ -47,14 +47,14 @@ let obj = {
   parent: require("MobileSetting").MobileSetting.NOTIFICATIONS,
   useValue: require("explicitContentFromProto").EnableScreenDowntimeScheduleNotifications.useSetting,
   onValueChange(arg0) {
-    const EnableScreenDowntimeScheduleNotifications = require(3862) /* explicitContentFromProto */.EnableScreenDowntimeScheduleNotifications;
+    const EnableScreenDowntimeScheduleNotifications = require(3866) /* explicitContentFromProto */.EnableScreenDowntimeScheduleNotifications;
     return EnableScreenDowntimeScheduleNotifications.updateSetting(arg0);
   },
   usePredicate() {
-    let isFamilyCenterV3Enabled = require(5854) /* apexExperiment */.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeScheduleSetting" });
-    const obj = require(5854) /* apexExperiment */;
-    const tmp2 = importDefault(13937)();
-    const hasActiveParentLinks = require(6252) /* useUserIdsForLinkStatus */.useHasActiveParentLinks();
+    let isFamilyCenterV3Enabled = require(5859) /* apexExperiment */.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeScheduleSetting" });
+    const obj = require(5859) /* apexExperiment */;
+    const tmp2 = importDefault(13961)();
+    const hasActiveParentLinks = require(6258) /* useUserIdsForLinkStatus */.useHasActiveParentLinks();
     if (isFamilyCenterV3Enabled) {
       isFamilyCenterV3Enabled = tmp2;
     }

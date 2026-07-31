@@ -1,10 +1,10 @@
-// Module ID: 8122
-// Function ID: 8123
+// Module ID: 8129
+// Function ID: 8130
 // Name: usePrevious
 // Dependencies: [19, 2]
-// Exports: default, usePreviousWhen
+// Exports: default, useCurrentWhen, usePreviousWhen
 
-// Module 8122 (usePrevious)
+// Module 8129 (usePrevious)
 import noop from "noop";
 
 let c0;
@@ -36,4 +36,21 @@ export const usePreviousWhen = function usePreviousWhen(value) {
     }
   }, items);
   return tmp.current;
+};
+export const useCurrentWhen = function useCurrentWhen(value) {
+  let current = value.value;
+  const shouldUpdate = value.shouldUpdate;
+  let c2;
+  const tmp = current(null);
+  c2 = tmp;
+  const items = [current, shouldUpdate];
+  shouldUpdate(() => {
+    if (shouldUpdate) {
+      c2.current = current;
+    }
+  }, items);
+  if (!shouldUpdate) {
+    current = tmp.current;
+  }
+  return current;
 };

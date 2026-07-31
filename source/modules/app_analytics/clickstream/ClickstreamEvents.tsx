@@ -1,10 +1,10 @@
-// Module ID: 5726
-// Function ID: 5727
+// Module ID: 5731
+// Function ID: 5732
 // Name: getClickstreamDrainEvent
 // Dependencies: [676, 2]
 // Exports: getClickstreamDrainEvent
 
-// Module 5726 (getClickstreamDrainEvent)
+// Module 5731 (getClickstreamDrainEvent)
 import { AnalyticEvents } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/app_analytics/clickstream/ClickstreamEvents.tsx");

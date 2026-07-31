@@ -1,12 +1,12 @@
-// Module ID: 15225
-// Function ID: 15226
+// Module ID: 15252
+// Function ID: 15253
 // Name: getMissingFavoriteThreadIds
-// Dependencies: [32, 19, 1371, 1375, 3816, 4865, 5779, 5096, 3819, 1376, 5133, 1372, 5780, 4221, 3817, 4201, 1931, 4385, 1410, 505, 5781, 1306, 10413, 10211, 12, 1351, 2]
+// Dependencies: [32, 19, 1371, 1375, 3820, 4869, 5784, 5100, 3823, 1376, 5137, 1372, 5785, 3821, 4205, 1931, 4389, 1410, 505, 5786, 1306, 10431, 10228, 12, 1351, 2]
 // Exports: useFavoritesGuildChannelList
 
-// Module 15225 (getMissingFavoriteThreadIds)
+// Module 15252 (getMissingFavoriteThreadIds)
 import _slicedToArray from "_slicedToArray";
-import sum from "sum";
+import computeSubtitle from "computeSubtitle";
 import importDefaultResult1 from "initializeFromUserSettings";
 import { createFavoritesGuildChannelRecord as closure_6 } from "createFavoritesGuildChannelRecord";
 import importDefaultResult2 from "_handleConnectionOpen";
@@ -17,12 +17,11 @@ import createChannelRecord from "createChannelRecord";
 import importDefaultResult6 from "incrementVersion";
 import importDefaultResult7 from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
+import importDefaultResult8 from "getUncachedChannelPermissions";
+import importDefaultResult9 from "generateOldThreadCutoff";
+import importDefaultResult10 from "handleConnectionOpen";
+import importDefaultResult11 from "updateUserGuildSettingsInternal";
 import importDefaultResult3 from "scheduledEventSort";
-import importDefaultResult9 from "getUncachedChannelPermissions";
-import importDefaultResult10 from "generateOldThreadCutoff";
-import importDefaultResult11 from "handleConnectionOpen";
-import importDefaultResult12 from "updateUserGuildSettingsInternal";
-import importDefaultResult8 from "gameFromServer";
 import { Permissions } from "sum";
 import date from "date";
 
@@ -59,7 +58,7 @@ function getMissingFavoriteThreadIds(includeLoading) {
               continue;
             } else {
               let tmp5 = importDefault;
-              let obj = importDefault(10413);
+              let obj = importDefault(10431);
               let loadState = obj.getLoadState(key10013);
               let tmp7 = "NOT_FOUND" !== loadState;
               if (tmp7) {
@@ -92,10 +91,10 @@ function computeFavoritesState(favoriteChannels) {
   if (favoriteChannels == null) {
     favoriteChannels = obj.getFavoriteChannels();
   }
-  const isGuildCollapsedResult = importDefaultResult12.isGuildCollapsed(closure_20);
+  const isGuildCollapsedResult = importDefaultResult11.isGuildCollapsed(closure_20);
   const importDefault = isGuildCollapsedResult;
-  const dependencyMap = importDefaultResult7.getChannel(importDefaultResult11.getChannelId());
-  const voiceChannelId = importDefaultResult11.getVoiceChannelId();
+  const dependencyMap = importDefaultResult7.getChannel(importDefaultResult10.getChannelId());
+  const voiceChannelId = importDefaultResult10.getVoiceChannelId();
   let items = [];
   obj = {};
   for (const key10022 in favoriteChannels) {
@@ -183,7 +182,7 @@ function computeFavoritesState(favoriteChannels) {
               if (activeJoinedUnreadThreadsForParent == null) {
                 activeJoinedUnreadThreadsForParent = {};
               }
-              const obj3 = items(outer2_2[20]);
+              const obj3 = items(outer2_2[19]);
               const threadIds = obj3.computeThreadIds(isPrivate, activeJoinedUnreadThreadsForParent, obj, outer1_3, closure_1);
               const isCollapsedResult = outer2_15.isCollapsed(isPrivate.id);
               if (isPrivate.isThread()) {
@@ -197,14 +196,14 @@ function computeFavoritesState(favoriteChannels) {
               obj[2] = self;
               obj[3] = self[isPrivate.id].order;
               obj[4] = threadIds;
-              obj[5] = callback(outer2_2[24]).size(threadIds);
+              obj[5] = callback(outer2_2[23]).size(threadIds);
               obj[6] = isCollapsedResult;
               obj[7] = isMutedResult;
-              const obj5 = callback(outer2_2[24]);
+              const obj5 = callback(outer2_2[23]);
               const tmp10 = items;
               const tmp13 = closure_1;
               const tmp28 = callback;
-              obj[9] = items(outer2_2[20]).computeSubtitle(isPrivate, isCollapsedResult, false);
+              obj[9] = items(outer2_2[19]).computeSubtitle(isPrivate, isCollapsedResult, false);
               if (!tmp4) {
                 if (!tmp7) {
                   if (tmp28Result.isEmpty(activeJoinedUnreadThreadsForParent)) {
@@ -232,7 +231,7 @@ function computeFavoritesState(favoriteChannels) {
                     }
                     obj8 = outer2_17;
                   }
-                  tmp28Result = tmp28(tmp11[24]);
+                  tmp28Result = tmp28(tmp11[23]);
                 }
               }
               return obj;
@@ -269,7 +268,7 @@ function computeFavoritesState(favoriteChannels) {
     },
     set: undefined
   });
-  const favoritesCategories = favoriteChannels(10211).getFavoritesCategories(favoriteChannels);
+  const favoritesCategories = favoriteChannels(10228).getFavoritesCategories(favoriteChannels);
   let found = favoritesCategories.filter((id) => null != id.id);
   let mapped = found.map((id) => {
     id = id.id;
@@ -317,7 +316,7 @@ function computeFavoritesState(favoriteChannels) {
               let self = this;
               self = this;
               ({ isCollapsed: closure_1, isMuted: closure_2 } = this);
-              const mapped = _null(outer1_2[24])(self).map((isPrivate) => {
+              const mapped = _null(outer1_2[23])(self).map((isPrivate) => {
                 if (!isPrivate.isPrivate()) {
                   if (!outer2_16.can(outer2_22.VIEW_CHANNEL, isPrivate)) {
                     return null;
@@ -341,7 +340,7 @@ function computeFavoritesState(favoriteChannels) {
                     if (activeJoinedUnreadThreadsForParent == null) {
                       activeJoinedUnreadThreadsForParent = {};
                     }
-                    const obj3 = items(outer2_2[20]);
+                    const obj3 = items(outer2_2[19]);
                     const threadIds = obj3.computeThreadIds(isPrivate, activeJoinedUnreadThreadsForParent, obj, outer1_3, closure_1);
                     const isCollapsedResult = outer2_15.isCollapsed(isPrivate.id);
                     if (isPrivate.isThread()) {
@@ -355,14 +354,14 @@ function computeFavoritesState(favoriteChannels) {
                     obj[2] = self;
                     obj[3] = self[isPrivate.id].order;
                     obj[4] = threadIds;
-                    obj[5] = callback(outer2_2[24]).size(threadIds);
+                    obj[5] = callback(outer2_2[23]).size(threadIds);
                     obj[6] = isCollapsedResult;
                     obj[7] = isMutedResult;
-                    const obj5 = callback(outer2_2[24]);
+                    const obj5 = callback(outer2_2[23]);
                     const tmp10 = items;
                     const tmp13 = closure_1;
                     const tmp28 = callback;
-                    obj[9] = items(outer2_2[20]).computeSubtitle(isPrivate, isCollapsedResult, false);
+                    obj[9] = items(outer2_2[19]).computeSubtitle(isPrivate, isCollapsedResult, false);
                     if (!tmp4) {
                       if (!tmp7) {
                         if (tmp28Result.isEmpty(activeJoinedUnreadThreadsForParent)) {
@@ -390,7 +389,7 @@ function computeFavoritesState(favoriteChannels) {
                           }
                           obj8 = outer2_17;
                         }
-                        tmp28Result = tmp28(tmp11[24]);
+                        tmp28Result = tmp28(tmp11[23]);
                       }
                     }
                     return obj;
@@ -398,8 +397,8 @@ function computeFavoritesState(favoriteChannels) {
                 }
                 activeJoinedUnreadThreadsForParent = outer2_8.getActiveJoinedRelevantThreadsForParent(isPrivate.guild_id, isPrivate.id);
               });
-              const found = mapped.filter(items(outer1_2[25]).isNotNullish);
-              const arr = _null(outer1_2[24])(self);
+              const found = mapped.filter(items(outer1_2[24]).isNotNullish);
+              const arr = _null(outer1_2[23])(self);
               closure_1 = found.sortBy((arg0) => {
                 let position;
                 let record;
@@ -482,18 +481,18 @@ function computeFavoritesState(favoriteChannels) {
       let length;
       const items = [];
       let num = 0;
-      items[favoriteChannels(5781).SECTION_INDEX_CHANNEL_NOTICES] = 0;
-      items[favoriteChannels(5781).SECTION_INDEX_GUILD_ACTIONS] = 0;
-      items[favoriteChannels(5781).SECTION_INDEX_FAVORITES] = 0;
-      items[favoriteChannels(5781).SECTION_INDEX_RECENTS] = 0;
-      items[favoriteChannels(5781).SECTION_INDEX_UNCATEGORIZED_CHANNELS] = obj.channelList.length;
+      items[favoriteChannels(5786).SECTION_INDEX_CHANNEL_NOTICES] = 0;
+      items[favoriteChannels(5786).SECTION_INDEX_GUILD_ACTIONS] = 0;
+      items[favoriteChannels(5786).SECTION_INDEX_FAVORITES] = 0;
+      items[favoriteChannels(5786).SECTION_INDEX_RECENTS] = 0;
+      items[favoriteChannels(5786).SECTION_INDEX_UNCATEGORIZED_CHANNELS] = obj.channelList.length;
       if (0 < found1.length) {
         do {
           let tmp = favoriteChannels;
           let tmp2 = dependencyMap;
           let _Math = Math;
           let tmp4 = found1;
-          let sum = favoriteChannels(5781).SECTION_INDEX_FIRST_NAMED_CATEGORY + num;
+          let sum = favoriteChannels(5786).SECTION_INDEX_FIRST_NAMED_CATEGORY + num;
           items[sum] = Math.max(1, found1[num].channelList.length);
           num = num + 1;
           length = found1.length;
@@ -502,26 +501,26 @@ function computeFavoritesState(favoriteChannels) {
       return items;
     },
     isPlaceholderRow(arg0, arg1) {
-      let tmp3 = arg0 < favoriteChannels(5781).SECTION_INDEX_FIRST_NAMED_CATEGORY;
+      let tmp3 = arg0 < favoriteChannels(5786).SECTION_INDEX_FIRST_NAMED_CATEGORY;
       if (!tmp3) {
         tmp3 = 0 !== arg1;
       }
       let tmp5 = !tmp3;
       if (!tmp3) {
-        tmp5 = 0 === found1[arg0 - tmp(undefined, 5781).SECTION_INDEX_FIRST_NAMED_CATEGORY].channelList.length;
+        tmp5 = 0 === found1[arg0 - tmp(undefined, 5786).SECTION_INDEX_FIRST_NAMED_CATEGORY].channelList.length;
       }
       return tmp5;
     },
     getCategoryFromSection(arg0) {
-      if (arg0 === favoriteChannels(5781).SECTION_INDEX_UNCATEGORIZED_CHANNELS) {
+      if (arg0 === favoriteChannels(5786).SECTION_INDEX_UNCATEGORIZED_CHANNELS) {
         let tmp4 = obj;
       } else {
-        tmp4 = found1[arg0 - tmp(undefined, 5781).SECTION_INDEX_FIRST_NAMED_CATEGORY];
+        tmp4 = found1[arg0 - tmp(undefined, 5786).SECTION_INDEX_FIRST_NAMED_CATEGORY];
       }
       return tmp4;
     },
     getNamedCategoryFromSection(arg0) {
-      return found1[arg0 - favoriteChannels(undefined, 5781).SECTION_INDEX_FIRST_NAMED_CATEGORY];
+      return found1[arg0 - favoriteChannels(undefined, 5786).SECTION_INDEX_FIRST_NAMED_CATEGORY];
     },
     getChannelFromSectionRow(arg0, arg1) {
       const categoryFromSection = this.getCategoryFromSection(arg0);
@@ -563,7 +562,7 @@ function computeFavoritesState(favoriteChannels) {
             obj = { section: null, row: null };
             let tmp3 = favoriteChannels;
             let tmp4 = dependencyMap;
-            obj[0] = num + favoriteChannels(5781).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
+            obj[0] = num + favoriteChannels(5786).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
             obj[1] = num2;
             let items1 = [obj];
             return items1;
@@ -624,11 +623,11 @@ function computeFavoritesState(favoriteChannels) {
 }
 ({ THREAD_CHANNEL_TYPES: c10, isGuildReadableType: unpackModuleId, isVoiceChannel: closure_12 } = createChannelRecord);
 ({ FAVORITES_RAW_GUILD_ID: closure_20, MAX_FAVORITE_CHANNELS: closure_21 } = require("date"));
-let items = [importDefaultResult, importDefaultResult1, importDefaultResult2, importDefaultResult3, importDefaultResult4, importDefaultResult5, importDefaultResult6, importDefaultResult7, importDefaultResult8, importDefaultResult9, importDefaultResult10, importDefaultResult11, importDefaultResult12];
+let items = [importDefaultResult, importDefaultResult1, importDefaultResult2, importDefaultResult3, importDefaultResult4, importDefaultResult5, importDefaultResult6, importDefaultResult7, importDefaultResult8, importDefaultResult9, importDefaultResult10, importDefaultResult11];
 const result = require("participantFromServer").fileFinishedImporting("modules/guild_sidebar/FavoritesGuildChannelList.tsx");
 
 export const useFavoritesGuildChannelList = function useFavoritesGuildChannelList() {
-  let hasAccess = _require(10211).useFavoritesAccess("FavoritesGuildChannelList").hasAccess;
+  let hasAccess = _require(10228).useFavoritesAccess("FavoritesGuildChannelList").hasAccess;
   _require = hasAccess;
   const tmp3 = callback(React.useState(() => callback2()), 2);
   let closure_1 = tmp3[1];
@@ -636,7 +635,7 @@ export const useFavoritesGuildChannelList = function useFavoritesGuildChannelLis
   const dependencyMap = isConnectedResult;
   let guildChannels = React.useMemo(() => callback2({}), []);
   const effect = React.useEffect(() => {
-    let closure_0 = callback(isConnectedResult[24]).throttle(() => callback(outer1_25()), 100);
+    let closure_0 = callback(isConnectedResult[23]).throttle(() => callback(outer1_25()), 100);
     const item = outer1_23.forEach((addChangeListener) => addChangeListener.addChangeListener(closure_0));
     return () => outer2_23.forEach((removeChangeListener) => removeChangeListener.removeChangeListener(closure_0));
   }, []);
@@ -653,8 +652,8 @@ export const useFavoritesGuildChannelList = function useFavoritesGuildChannelLis
       if (0 === arr.length) {
         const resolved = Promise.resolve();
       } else {
-        const threadsBulk = callback(isConnectedResult[22]).loadThreadsBulk(arr);
-        const obj2 = callback(isConnectedResult[22]);
+        const threadsBulk = callback(isConnectedResult[21]).loadThreadsBulk(arr);
+        const obj2 = callback(isConnectedResult[21]);
       }
     }
   }, items);
@@ -665,7 +664,7 @@ export const useFavoritesGuildChannelList = function useFavoritesGuildChannelLis
     hasAccess = getMissingFavoriteThreadIds({ limit: 1, includeLoading: true }).length > 0;
   }
   let shouldShowEmptyState = false;
-  if (guildChannels.getSections().length <= _require(5781).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
+  if (guildChannels.getSections().length <= _require(5786).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
     _require = false;
     guildChannels.forEachShownChannel(() => {
       let c0 = true;

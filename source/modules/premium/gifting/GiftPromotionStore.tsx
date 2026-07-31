@@ -1,9 +1,9 @@
-// Module ID: 6296
-// Function ID: 6297
+// Module ID: 6302
+// Function ID: 6303
 // Name: initialize
 // Dependencies: [589, 709, 2]
 
-// Module 6296 (initialize)
+// Module 6302 (initialize)
 import { PersistedStore } from "initialize";
 
 let closure_0 = { giftOptionsReceiptMap: {} };
@@ -20,8 +20,8 @@ prototype["initialize"] = function initialize(giftOptionsReceiptMap) {
 prototype["getState"] = function getState() {
   return closure_0;
 };
-prototype["getGiftOptionsForKey"] = function getGiftOptionsForKey(v3Result) {
-  return closure_0.giftOptionsReceiptMap[v3Result];
+prototype["getGiftOptionsForKey"] = function getGiftOptionsForKey(closure_3) {
+  return closure_0.giftOptionsReceiptMap[closure_3];
 };
 GiftPromotionStore.displayName = "GiftPromotionStore";
 GiftPromotionStore.persistKey = "GiftPromotionStore";

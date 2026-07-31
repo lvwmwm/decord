@@ -1,16 +1,16 @@
-// Module ID: 11206
-// Function ID: 11207
+// Module ID: 11224
+// Function ID: 11225
 // Name: useKeyboardActionSheetHeight
-// Dependencies: [5140, 1581, 1474, 5218, 2]
+// Dependencies: [5144, 1581, 1474, 5222, 2]
 // Exports: default, getKeyboardActionSheetHeight
 
-// Module 11206 (useKeyboardActionSheetHeight)
+// Module 11224 (useKeyboardActionSheetHeight)
 const result = require("useWindowDimensions").fileFinishedImporting("modules/action_sheet/native/useKeyboardActionSheetHeight.tsx");
 
 export default function useKeyboardActionSheetHeight() {
   const tmp = importDefault(1581)();
-  const minimum = importDefault(5218)();
-  let maximum = importDefault(1474)({ ignoreKeyboard: true }).height - require(5140) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT_MULTILINE - tmp.top;
+  const minimum = importDefault(5222)();
+  let maximum = importDefault(1474)({ ignoreKeyboard: true }).height - require(5144) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT_MULTILINE - tmp.top;
   if (minimum >= maximum) {
     maximum = minimum;
   }
@@ -21,8 +21,8 @@ export const getKeyboardActionSheetHeight = function getKeyboardActionSheetHeigh
   const obj = require(1581) /* useSafeAreaInsets */;
   const windowDimensions = require(1474) /* useWindowDimensions */.getWindowDimensions({ ignoreKeyboard: true });
   const obj2 = require(1474) /* useWindowDimensions */;
-  const minimum = require(5218) /* useCustomKeyboardHeight */.getCustomKeyboardHeight();
-  let maximum = windowDimensions.height - require(5140) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT_MULTILINE - safeAreaInsets.top;
+  const minimum = require(5222) /* useCustomKeyboardHeight */.getCustomKeyboardHeight();
+  let maximum = windowDimensions.height - require(5144) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT_MULTILINE - safeAreaInsets.top;
   if (minimum >= maximum) {
     maximum = minimum;
   }

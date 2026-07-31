@@ -1,10 +1,10 @@
-// Module ID: 10343
-// Function ID: 10344
+// Module ID: 10361
+// Function ID: 10362
 // Name: _fetchBugReportConfig
-// Dependencies: [5, 1302, 676, 530, 1236, 10344, 500, 4999, 503, 2]
+// Dependencies: [5, 1302, 676, 530, 1236, 10362, 500, 5003, 503, 2]
 // Exports: fetchBugReportConfig, getFeatureId, getPriorities, submitReport
 
-// Module 10343 (_fetchBugReportConfig)
+// Module 10361 (_fetchBugReportConfig)
 import _uploadDebugLogFiles from "_uploadDebugLogFiles";
 import handleThemeChange from "handleThemeChange";
 import ME from "ME";
@@ -206,7 +206,7 @@ function _submitReport() {
                 items.push(obj17);
               }
               let obj19 = dependencyMap;
-              let obj18 = lib(10344);
+              let obj18 = lib(10362);
               let uploadDebugLogFiles = obj18.uploadDebugLogFiles;
               obj19 = lib(500);
               let BUG_REPORTS = outer1_5;
@@ -217,7 +217,7 @@ function _submitReport() {
               }
               uploadDebugLogFiles(ANDROID_APP);
               let constants = 1;
-              obj18 = lib2(4999);
+              obj18 = lib2(5003);
               obj18 = { url: null, attachments: null, fields: null, trackedActionData: null, rejectWithError: false };
               BUG_REPORTS = constants.BUG_REPORTS;
               obj18[0] = BUG_REPORTS;

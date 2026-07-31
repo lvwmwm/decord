@@ -1,9 +1,9 @@
-// Module ID: 10611
-// Function ID: 10612
+// Module ID: 10629
+// Function ID: 10630
 // Name: NativeModules
-// Dependencies: [17, 500, 10612, 4169, 644, 705, 2]
+// Dependencies: [17, 500, 10630, 4173, 644, 705, 2]
 
-// Module 10611 (NativeModules)
+// Module 10629 (NativeModules)
 import get_ActivityIndicator from "get ActivityIndicator";
 import set from "set";
 import keys from "keys";
@@ -21,13 +21,13 @@ let closure_5 = keys.create((arg0) => {
   let thermalState = dependencyMap;
   if (obj.isAndroid()) {
     if (tmpResult.getSystemVersionMajor() >= 29) {
-      thermalState = importDefault(10612).getThermalState();
+      thermalState = importDefault(10630).getThermalState();
       let resolved = Promise.resolve(thermalState);
-      const obj3 = importDefault(10612);
+      const obj3 = importDefault(10630);
     } else {
       resolved = Promise.resolve(undefined);
     }
-    tmpResult = _require(4169);
+    tmpResult = _require(4173);
   } else {
     const DCDDeviceThermalStateManager = NativeModules.DCDDeviceThermalStateManager;
     const thermalState1 = DCDDeviceThermalStateManager.getThermalState();
@@ -55,7 +55,7 @@ let closure_5 = keys.create((arg0) => {
         return tmp;
       }));
     });
-    return { rawThermalState: "Array" };
+    return { rawThermalState: "r" };
   }
 });
 const result = set.fileFinishedImporting("modules/device/ThermalUtils.native.tsx");

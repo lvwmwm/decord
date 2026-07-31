@@ -1,9 +1,9 @@
-// Module ID: 11580
-// Function ID: 11581
+// Module ID: 11597
+// Function ID: 11598
 // Name: getState
-// Dependencies: [4097, 1862, 4076, 11581, 589, 709, 2]
+// Dependencies: [4101, 1862, 4080, 11598, 589, 709, 2]
 
-// Module 11580 (getState)
+// Module 11597 (getState)
 import handleGameServerInstanceCreated from "handleGameServerInstanceCreated";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import calculateAppliedBoosts from "calculateAppliedBoosts";
@@ -55,7 +55,7 @@ const guildPowerupsNotificationStore = new GuildPowerupsNotificationStore(requir
     }
     const stateForGuild = stateForGuild2.getStateForGuild(guildId);
     const stateForGuild1 = stateForGuild.getStateForGuild(guildId);
-    let obj = require(11581) /* getExpiringGuildEntitlements */;
+    let obj = require(11598) /* getExpiringGuildEntitlements */;
     let unlockedPowerups;
     if (stateForGuild != null) {
       unlockedPowerups = stateForGuild.unlockedPowerups;

@@ -1,0 +1,14 @@
+// Module ID: 5341
+// Function ID: 5342
+// Name: __INTERNAL_VIEW_CONFIG
+// Dependencies: [26, 65]
+
+// Module 5341 (__INTERNAL_VIEW_CONFIG)
+import setRuntimeConfigProvider from "setRuntimeConfigProvider";
+
+let obj = { uiViewClassName: "RNGestureHandlerButton", validAttributes: null };
+obj = { exclusive: true, foreground: true, borderless: true, enabled: true, rippleColor: require("result").colorAttribute, rippleRadius: true, touchSoundDisabled: true, borderWidth: true, borderColor: require("result").colorAttribute, borderStyle: true, pointerEvents: true };
+obj[1] = obj;
+
+export default setRuntimeConfigProvider.get("RNGestureHandlerButton", () => obj);
+export const __INTERNAL_VIEW_CONFIG = obj;

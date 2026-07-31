@@ -1,10 +1,10 @@
-// Module ID: 10646
-// Function ID: 10647
+// Module ID: 10664
+// Function ID: 10665
 // Name: ConfirmActivityGateContent
-// Dependencies: [19, 17, 21, 4189, 712, 10647, 4185, 1236, 4528, 1297, 2]
+// Dependencies: [19, 17, 21, 4193, 712, 10665, 4189, 1236, 4532, 1297, 2]
 // Exports: confirmActivityAgeGateAlert
 
-// Module 10646 (ConfirmActivityGateContent)
+// Module 10664 (ConfirmActivityGateContent)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -16,9 +16,9 @@ const require = arg1;
 function ConfirmActivityGateContent(children) {
   const tmp = createCacheKey();
   let obj = { style: tmp.alertContainer, children: null };
-  const items = [callback(importDefault(10647), {}), ];
+  const items = [callback(importDefault(10665), {}), ];
   obj = { style: tmp.alertBodyText, variant: "text-md/normal", children: children.description };
-  items[1] = callback(require(4185) /* Text */.Text, obj);
+  items[1] = callback(require(4189) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 }
@@ -48,5 +48,5 @@ export const confirmActivityAgeGateAlert = function confirmActivityAgeGateAlert(
   obj[4] = onAgree;
   obj[5] = onDisagree;
   obj[6] = require(1297) /* Button */.ButtonColors.RED;
-  return Promise.resolve(importDefault(4528).show(obj));
+  return Promise.resolve(importDefault(4532).show(obj));
 };

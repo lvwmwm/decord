@@ -1,9 +1,9 @@
-// Module ID: 4251
-// Function ID: 4252
+// Module ID: 4255
+// Function ID: 4256
 // Name: SystemServiceNotAvailableError
 // Dependencies: [2]
 
-// Module 4251 (SystemServiceNotAvailableError)
+// Module 4255 (SystemServiceNotAvailableError)
 class SystemServiceNotAvailableError extends Error {
   constructor() {
     tmp = new tmp("System service not available", new.target);

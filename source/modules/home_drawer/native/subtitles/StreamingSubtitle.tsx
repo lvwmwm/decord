@@ -1,10 +1,10 @@
-// Module ID: 14975
-// Function ID: 14976
+// Module ID: 15001
+// Function ID: 15002
 // Name: StreamingSubtitle
-// Dependencies: [19, 21, 4185, 1236, 4379, 2]
+// Dependencies: [19, 21, 4189, 1236, 4383, 2]
 // Exports: default
 
-// Module 14975 (StreamingSubtitle)
+// Module 15001 (StreamingSubtitle)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export default function StreamingSubtitle(arg0) {
   let obj = { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { username: null };
-  obj[0] = importDefault(4379).getName(guildId, null, streamingUser);
+  obj[0] = importDefault(4383).getName(guildId, null, streamingUser);
   obj[3] = intl.format(require(1236) /* getSystemLocale */.t.k5IKep, obj);
-  return jsx(require(4185) /* Text */.Text, { username: null });
+  return jsx(require(4189) /* Text */.Text, { username: null });
 };

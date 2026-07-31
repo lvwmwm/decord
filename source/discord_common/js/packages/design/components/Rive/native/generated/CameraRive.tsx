@@ -1,9 +1,9 @@
-// Module ID: 3974
-// Function ID: 3975
+// Module ID: 3978
+// Function ID: 3979
 // Name: CameraRive
-// Dependencies: [109, 19, 21, 3918, 3975, 3969, 2]
+// Dependencies: [109, 19, 21, 3922, 3979, 3973, 2]
 
-// Module 3974 (CameraRive)
+// Module 3978 (CameraRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -20,8 +20,8 @@ let closure_9 = {
     let onDataBindingChange;
     let playIfNeeded;
     ({ instance, dataBinding, onDataBindingChange, playIfNeeded } = reducedMotionEnabled);
-    const booleanBinding = require(3918) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
-    const obj = require(3918) /* BaseRive */;
+    const booleanBinding = require(3922) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled.reducedMotionEnabled, undefined, playIfNeeded);
+    const obj = require(3922) /* BaseRive */;
     const tmp = require;
     let fill;
     if (dataBinding != null) {
@@ -31,8 +31,8 @@ let closure_9 = {
     if (onDataBindingChange != null) {
       fill1 = onDataBindingChange.fill;
     }
-    const colorBinding = require(3918) /* BaseRive */.useColorBinding("fill", instance, fill, fill1, playIfNeeded);
-    const obj2 = require(3918) /* BaseRive */;
+    const colorBinding = require(3922) /* BaseRive */.useColorBinding("fill", instance, fill, fill1, playIfNeeded);
+    const obj2 = require(3922) /* BaseRive */;
     let on;
     if (dataBinding != null) {
       on = dataBinding.on;
@@ -41,7 +41,7 @@ let closure_9 = {
     if (onDataBindingChange != null) {
       on1 = onDataBindingChange.on;
     }
-    const booleanBinding1 = tmp(3918).useBooleanBinding("on", instance, on, on1, playIfNeeded);
+    const booleanBinding1 = tmp(3922).useBooleanBinding("on", instance, on, on1, playIfNeeded);
     return null;
   }
 };
@@ -88,7 +88,7 @@ const forwardRefResult = importAllResult.forwardRef(function CameraRiveWithBound
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_10 ref={arg1} />;
-  return jsx(require(3969) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(3973) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/CameraRive.tsx");
 

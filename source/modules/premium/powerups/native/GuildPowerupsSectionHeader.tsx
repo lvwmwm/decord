@@ -1,10 +1,10 @@
-// Module ID: 11639
-// Function ID: 11640
+// Module ID: 11657
+// Function ID: 11658
 // Name: GuildPowerupsSectionHeader
-// Dependencies: [17, 21, 4189, 712, 4185, 2]
+// Dependencies: [17, 21, 4193, 712, 4189, 2]
 // Exports: default
 
-// Module 11639 (GuildPowerupsSectionHeader)
+// Module 11657 (GuildPowerupsSectionHeader)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -23,7 +23,7 @@ export default function GuildPowerupsSectionHeader(arg0) {
   let title;
   ({ title, description } = arg0);
   const obj = { style: callback3().headerContainer, children: null };
-  const items = [callback(require(4185) /* Text */.Text, { variant: "heading-lg/semibold", accessibilityRole: "header", children: title }), callback(require(4185) /* Text */.Text, { variant: "text-md/normal", children: description })];
+  const items = [callback(require(4189) /* Text */.Text, { variant: "heading-lg/semibold", accessibilityRole: "header", children: title }), callback(require(4189) /* Text */.Text, { variant: "text-md/normal", children: description })];
   obj[1] = items;
   return callback2(View, obj);
 };

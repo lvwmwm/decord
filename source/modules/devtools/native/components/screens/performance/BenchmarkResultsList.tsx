@@ -1,10 +1,10 @@
-// Module ID: 14827
-// Function ID: 14828
+// Module ID: 14850
+// Function ID: 14851
 // Name: BenchmarkResultsList
-// Dependencies: [19, 21, 5554, 5220, 14823, 2]
+// Dependencies: [19, 21, 5558, 5224, 14846, 2]
 // Exports: default
 
-// Module 14827 (BenchmarkResultsList)
+// Module 14850 (BenchmarkResultsList)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -29,7 +29,7 @@ export default function BenchmarkResultsList(results) {
             ({ label: obj[0], elapsedMs } = kind);
             const _HermesInternal = HermesInternal;
             obj[1] = "" + elapsedMs.toFixed(1) + " ms total";
-            let tmp5 = callback2(callback(5220).TableRow, obj, kind.id);
+            let tmp5 = callback2(callback(5224).TableRow, obj, kind.id);
           } else {
             obj = { label: null, subLabel: null };
             const meanMs = kind.meanMs;
@@ -38,10 +38,10 @@ export default function BenchmarkResultsList(results) {
             const _HermesInternal2 = HermesInternal;
             obj[0] = "Scroll \u00B7 mean " + toFixedResult + " ms \u00B7 worst " + worstMs.toFixed(1) + " ms";
             ({ dropped, frames } = kind);
-            const FRAME_BUDGET_MS = callback(14823).FRAME_BUDGET_MS;
+            const FRAME_BUDGET_MS = callback(14846).FRAME_BUDGET_MS;
             const _HermesInternal3 = HermesInternal;
             obj[1] = "" + dropped + "/" + frames + " frames over " + FRAME_BUDGET_MS.toFixed(1) + " ms";
-            tmp5 = callback2(callback(5220).TableRow, obj, kind.id);
+            tmp5 = callback2(callback(5224).TableRow, obj, kind.id);
           }
           return tmp5;
         }),
@@ -49,9 +49,9 @@ export default function BenchmarkResultsList(results) {
     ];
     obj = { label: "Clear results", variant: "danger", arrow: true, onPress: null };
     obj[3] = tmp;
-    items[1] = callback(require(5220) /* TableRowInner */.TableRow, obj);
+    items[1] = callback(require(5224) /* TableRowInner */.TableRow, obj);
     obj[2] = items;
-    tmp2 = callback2(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj);
+    tmp2 = callback2(require(5558) /* TableRowGroupTitle */.TableRowGroup, obj);
   }
   return tmp2;
 };

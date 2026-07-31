@@ -1,9 +1,9 @@
-// Module ID: 13015
-// Function ID: 13016
+// Module ID: 13040
+// Function ID: 13041
 // Name: OAuthConstants
 // Dependencies: [2]
 
-// Module 13015 (OAuthConstants)
+// Module 13040 (OAuthConstants)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/OAuthConstants.tsx");
 
 export const OAuthConstants = { USER_CODE_LENGTH: 8, [8]: "USER_CODE_LENGTH" };

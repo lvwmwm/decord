@@ -1,18 +1,18 @@
-// Module ID: 14939
-// Function ID: 14940
+// Module ID: 14962
+// Function ID: 14963
 // Name: showGuildsBarFolderModal
-// Dependencies: [4395, 14940, 1959, 2]
+// Dependencies: [4399, 14963, 1959, 2]
 // Exports: hideGuildsBarFolderModal, showGuildsBarFolderModal
 
-// Module 14939 (showGuildsBarFolderModal)
+// Module 14962 (showGuildsBarFolderModal)
 const GUILD_FOLDER_SETTINGS_MODAL_KEY = "GUILD_FOLDER_SETTINGS_MODAL_KEY";
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/guilds_bar/native/GuildsBarFolderSettingsModalActionCreators.tsx");
 
 export const showGuildsBarFolderModal = function showGuildsBarFolderModal(closure_0) {
-  let obj = importDefault(4395);
+  let obj = importDefault(4399);
   obj = { folderId: closure_0 };
-  obj.pushLazy(require(1959) /* asyncRequireImpl */(14940, dependencyMap.paths), obj, GUILD_FOLDER_SETTINGS_MODAL_KEY);
+  obj.pushLazy(require(1959) /* asyncRequireImpl */(14963, dependencyMap.paths), obj, GUILD_FOLDER_SETTINGS_MODAL_KEY);
 };
 export const hideGuildsBarFolderModal = function hideGuildsBarFolderModal() {
-  importDefault(4395).popWithKey(GUILD_FOLDER_SETTINGS_MODAL_KEY);
+  importDefault(4399).popWithKey(GUILD_FOLDER_SETTINGS_MODAL_KEY);
 };

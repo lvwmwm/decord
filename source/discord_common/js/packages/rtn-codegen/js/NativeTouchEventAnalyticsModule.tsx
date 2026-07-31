@@ -1,9 +1,9 @@
-// Module ID: 13598
-// Function ID: 13599
+// Module ID: 13622
+// Function ID: 13623
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 13598 (enforcing)
+// Module 13622 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeTouchEventAnalyticsModule");

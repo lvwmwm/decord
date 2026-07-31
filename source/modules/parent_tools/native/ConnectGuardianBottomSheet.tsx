@@ -1,10 +1,10 @@
-// Module ID: 13905
-// Function ID: 13906
+// Module ID: 13929
+// Function ID: 13930
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 5793, 5794, 21, 4189, 712, 647, 4157, 13906, 5243, 4185, 1236, 2223, 13907, 4600, 2]
+// Dependencies: [19, 17, 5798, 5799, 21, 4193, 712, 647, 4161, 13930, 5247, 4189, 1236, 2225, 13931, 4604, 2]
 // Exports: default
 
-// Module 13905 (ConnectGuardianBottomSheet)
+// Module 13929 (ConnectGuardianBottomSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
@@ -44,23 +44,23 @@ export default function ConnectGuardianBottomSheet(arg0) {
   const callback = React.useCallback(() => {
     callback(table[8]).hideActionSheet(closure_6);
   }, []);
-  importDefault(13906)(callback);
+  importDefault(13930)(callback);
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.info, children: null };
   obj1 = { style: tmp.centered, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
   if (title == null) {
     const intl = tmp2(1236).intl;
-    title = intl.string(tmp7(2223).aCUVfL);
+    title = intl.string(tmp7(2225).aCUVfL);
   }
   obj1[4] = title;
-  const items2 = [closure_7(require(4185) /* Text */.Text, obj1), ];
+  const items2 = [closure_7(require(4189) /* Text */.Text, obj1), ];
   const obj2 = { style: tmp.centered, variant: "text-md/medium", color: "text-default", children: null };
   if (body == null) {
     const intl2 = tmp2(1236).intl;
-    body = intl2.format(tmp7(2223)["2O6ltn"], { link: "https://support.discord.com/hc/articles/14155060633623" });
+    body = intl2.format(tmp7(2225)["2O6ltn"], { link: "https://support.discord.com/hc/articles/14155060633623" });
   }
   obj2[3] = body;
-  items2[1] = closure_7(require(4185) /* Text */.Text, obj2);
+  items2[1] = closure_7(require(4189) /* Text */.Text, obj2);
   obj[1] = items2;
   const items3 = [closure_8(View, obj), , ];
   const obj3 = { style: tmp.cardContainer, children: null };
@@ -74,14 +74,14 @@ export default function ConnectGuardianBottomSheet(arg0) {
   const obj5 = { startExpanded: true, children: null };
   obj4[1] = stateFromStores1;
   obj4[2] = onRefresh;
-  obj3[1] = closure_7(require(13907) /* ConnectGuardianCard */.ConnectGuardianCard, obj4);
+  obj3[1] = closure_7(require(13931) /* ConnectGuardianCard */.ConnectGuardianCard, obj4);
   items3[1] = closure_7(View, obj3);
   const obj6 = { variant: "secondary", size: "md", text: null, onPress: null };
   const intl3 = tmp2(1236).intl;
-  obj6[2] = intl3.string(importDefault(2223).Hsm5IF);
+  obj6[2] = intl3.string(importDefault(2225).Hsm5IF);
   obj6[3] = callback;
-  items3[2] = closure_7(require(4600) /* Button */.Button, obj6);
+  items3[2] = closure_7(require(4604) /* Button */.Button, obj6);
   obj[1] = items3;
   obj5[1] = closure_8(View, obj);
-  return closure_7(require(5243) /* Background */.BottomSheet, obj5);
+  return closure_7(require(5247) /* Background */.BottomSheet, obj5);
 };

@@ -1,10 +1,10 @@
-// Module ID: 12304
-// Function ID: 12305
+// Module ID: 12330
+// Function ID: 12331
 // Name: clamp
-// Dependencies: [32, 19, 17, 21, 4189, 712, 4050, 10896, 4190, 1297, 12305, 5273, 4051, 5177, 5499, 12306, 12296, 2]
+// Dependencies: [32, 19, 17, 21, 4193, 712, 4054, 10914, 4194, 1297, 12331, 5277, 4055, 5181, 5503, 12332, 12322, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 12304 (clamp)
+// Module 12330 (clamp)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "set";
@@ -15,10 +15,10 @@ let closure_6;
 let error;
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
-createCacheKey = { drawerContainer: { overflow: "hidden", backgroundColor: "accessibilityRole" }, drawerHeaderTab: null, drawerHeader: null, messagePreviewContainer: null, thumbnailsContainer: null };
+createCacheKey = { drawerContainer: { overflow: "hidden", backgroundColor: "description" }, drawerHeaderTab: null, drawerHeader: null, messagePreviewContainer: null, thumbnailsContainer: null };
 createCacheKey = { width: 40, backgroundColor: require("Themes").unsafe_rawColors.PRIMARY_600 };
 createCacheKey[1] = createCacheKey;
-createCacheKey[2] = { backgroundColor: "Array" };
+createCacheKey[2] = { backgroundColor: "r" };
 createCacheKey[3] = { marginLeft: 6 };
 createCacheKey[4] = { paddingTop: 8 };
 createCacheKey = createCacheKey.createStyles(createCacheKey);
@@ -300,7 +300,7 @@ export const MediaModalOverlayFooter = function MediaModalOverlayFooter(channelI
       if (translationY > 0) {
         const _Math3 = Math;
         const diff = 1 - translationY / Math.abs(closure_10 - (_slicedToArray + closure_8));
-        if (typeof outer1_10 !== "find") {
+        if (typeof outer1_10 !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         const _Math4 = Math;
@@ -313,7 +313,7 @@ export const MediaModalOverlayFooter = function MediaModalOverlayFooter(channelI
         }
       } else {
         const result2 = -translationY / 3;
-        if (typeof outer1_10 !== "find") {
+        if (typeof outer1_10 !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         const _Math = Math;

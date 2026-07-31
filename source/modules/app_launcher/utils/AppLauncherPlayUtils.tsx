@@ -1,10 +1,10 @@
-// Module ID: 10876
-// Function ID: 10877
+// Module ID: 10894
+// Function ID: 10895
 // Name: _launchActivityInBotDM
-// Dependencies: [5, 10633, 10617, 4199, 10638, 2]
+// Dependencies: [5, 10651, 10635, 4203, 10656, 2]
 // Exports: launchActivityInBotDM
 
-// Module 10876 (_launchActivityInBotDM)
+// Module 10894 (_launchActivityInBotDM)
 import set from "set";
 
 const require = arg1;
@@ -74,14 +74,14 @@ function _launchActivityInBotDM() {
               const obj2 = { applicationId: null };
               obj2[0] = callback;
               if (obj14.tryLaunchAsFrame(obj2)) {
-                let obj7 = callback(10617);
+                let obj7 = callback(10635);
                 const result = obj7.stashPendingFrameLaunch(callback, { isStart: true });
                 c4 = 3;
                 const obj3 = { value: null, done: true };
                 obj3[0] = Promise.resolve(true);
                 return obj3;
               } else {
-                let obj4 = callback2(4199);
+                let obj4 = callback2(4203);
                 obj4 = { recipientIds: null };
                 obj4[0] = callback2;
                 c3 = 2;
@@ -90,7 +90,7 @@ function _launchActivityInBotDM() {
                 obj5[0] = obj4.openPrivateChannel(obj4);
                 return obj5;
               }
-              obj14 = callback(10633);
+              obj14 = callback(10651);
             }
           } else if (2 === tmp5) {
             if (arg0 === 1) {
@@ -113,7 +113,7 @@ function _launchActivityInBotDM() {
               c3 = 3;
               c4 = 1;
               const obj8 = { value: null, done: false };
-              obj8[0] = callback2(10638)(obj7);
+              obj8[0] = callback2(10656)(obj7);
               return obj8;
             }
           } else if (arg0 === 1) {

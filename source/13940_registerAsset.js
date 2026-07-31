@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset";
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools/images", width: 343, height: 149, scales: [1, 2, 3], hash: "486816aa941617e34b6723be8f7303c9", name: "family_center_linking_banner_image", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools/images", width: 24, height: 24, scales: [2, 3], hash: "87391322b2483c883b3f5fd1ac4080a9", name: "ic_eye", type: "png" });

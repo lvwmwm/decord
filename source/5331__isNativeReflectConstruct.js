@@ -1,10 +1,10 @@
 // Module ID: 5331
 // Function ID: 5332
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 96, 98, 5312]
+// Dependencies: [41, 42, 93, 95, 96, 98, 5316]
 
 // Module 5331 (_isNativeReflectConstruct)
-import ForceTouchGesture from "_classCallCheck";
+import PinchGesture from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import _get from "_get";
@@ -29,28 +29,28 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-function changeEventCalculator(force, force2) {
-  if (undefined === force2) {
-    let obj = { forceChange: null };
-    obj[0] = force.force;
+function changeEventCalculator(scale, scale2) {
+  if (undefined === scale2) {
+    let obj = { scaleChange: null };
+    obj[0] = scale.scale;
   } else {
-    obj = { forceChange: null };
-    obj[0] = force.force - force2.force;
+    obj = { scaleChange: null };
+    obj[0] = scale.scale / scale2.scale;
   }
   obj = {};
-  const merged = Object.assign(force);
+  const merged = Object.assign(scale);
   const merged1 = Object.assign(obj);
   return obj;
 }
 changeEventCalculator.__closure = {};
-changeEventCalculator.__workletHash = 11365193947542;
-changeEventCalculator.__initData = { code: "function changeEventCalculator_Pnpm_forceTouchGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={forceChange:current.force};}else{changePayload={forceChange:current.force-previous.force};}return{...current,...changePayload};}" };
-class ForceTouchGesture {
+changeEventCalculator.__workletHash = 9876979738005;
+changeEventCalculator.__initData = { code: "function changeEventCalculator_Pnpm_pinchGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={scaleChange:current.scale};}else{changePayload={scaleChange:current.scale/previous.scale};}return{...current,...changePayload};}" };
+class PinchGesture {
   constructor() {
     self = this;
-    tmp = ForceTouchGesture(this, ForceTouchGesture);
+    tmp = PinchGesture(this, PinchGesture);
     tmp2 = __esModule;
-    obj = __esModule(ForceTouchGesture);
+    obj = __esModule(PinchGesture);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
@@ -60,34 +60,12 @@ class ForceTouchGesture {
       constructResult = obj.apply(self, undefined);
     }
     tmp3Result = tmp3(self, constructResult);
-    tmp3Result.config = {};
-    tmp3Result.handlerName = "ForceTouchGestureHandler";
+    tmp3Result.handlerName = "PinchGestureHandler";
     return tmp3Result;
   }
 }
-require("_inherits")(ForceTouchGesture, require("_isNativeReflectConstruct").ContinousBaseGesture);
+require("_inherits")(PinchGesture, require("_isNativeReflectConstruct").ContinousBaseGesture);
 let items = [
-  {
-    key: "minForce",
-    value: function minForce(minForce) {
-      this.config.minForce = minForce;
-      return this;
-    }
-  },
-  {
-    key: "maxForce",
-    value: function maxForce(maxForce) {
-      this.config.maxForce = maxForce;
-      return this;
-    }
-  },
-  {
-    key: "feedbackOnActivation",
-    value: function feedbackOnActivation(feedbackOnActivation) {
-      this.config.feedbackOnActivation = feedbackOnActivation;
-      return this;
-    }
-  },
   {
     key: "onChange",
     value: function onChange(arg0) {
@@ -95,7 +73,7 @@ let items = [
       const self = this;
       let fn;
       fn = callback2(callback(self.prototype), "onChange", this);
-      if (typeof fn !== "ZodObject") {
+      if (typeof fn !== "disabledUntil") {
         fn = (items) => fn.apply(self, items);
       }
       const items = [arg0];
@@ -104,4 +82,4 @@ let items = [
   }
 ];
 
-export const ForceTouchGesture = importDefaultResult(ForceTouchGesture, items);
+export const PinchGesture = importDefaultResult(PinchGesture, items);

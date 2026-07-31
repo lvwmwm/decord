@@ -1,10 +1,10 @@
-// Module ID: 5540
-// Function ID: 5541
+// Module ID: 5544
+// Function ID: 5545
 // Name: getRoleIconData
-// Dependencies: [676, 500, 3830, 1450, 1416, 2]
+// Dependencies: [676, 500, 3834, 1450, 1416, 2]
 // Exports: canGuildUseRoleIcons, getRoleIconData, isRoleIconAssetUrl, replaceRoleIconSourceSize
 
-// Module 5540 (getRoleIconData)
+// Module 5544 (getRoleIconData)
 import ME from "ME";
 import set from "set";
 import set from "parseRawEmojiObject";
@@ -25,9 +25,9 @@ export const getRoleIconData = function getRoleIconData(role, arg1) {
   } else {
     let byName;
     if (null != role.unicodeEmoji) {
-      let obj = importDefault(3830);
-      byName = obj.getByName(importDefault(3830).convertSurrogateToName(role.unicodeEmoji, false));
-      const obj2 = importDefault(3830);
+      let obj = importDefault(3834);
+      byName = obj.getByName(importDefault(3834).convertSurrogateToName(role.unicodeEmoji, false));
+      const obj2 = importDefault(3834);
     }
     ({ id, icon } = role);
     let tmp4;
@@ -69,8 +69,8 @@ export const getRoleIconData = function getRoleIconData(role, arg1) {
   }
 };
 export const replaceRoleIconSourceSize = function replaceRoleIconSourceSize(str) {
-  const obj = require(1450) /* isAttachmentLadderEnabled */;
-  return str.replace(/size=[0-9]+/g, "size=" + obj.getBestMediaProxySize(arg1 * require(1450) /* isAttachmentLadderEnabled */.getDevicePixelRatio()));
+  const obj = require(1450) /* handleImageLoad */;
+  return str.replace(/size=[0-9]+/g, "size=" + obj.getBestMediaProxySize(arg1 * require(1450) /* handleImageLoad */.getDevicePixelRatio()));
 };
 export const isRoleIconAssetUrl = function isRoleIconAssetUrl(str) {
   let startsWithResult = str.startsWith(closure_5);

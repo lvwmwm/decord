@@ -1,10 +1,10 @@
-// Module ID: 12610
-// Function ID: 12611
+// Module ID: 12635
+// Function ID: 12636
 // Name: useShouldHideGuildPurchaseEntryPoints
-// Dependencies: [19, 3811, 1862, 676, 12611, 12612, 589, 3810, 2]
+// Dependencies: [19, 3815, 1862, 676, 12636, 12637, 589, 3814, 2]
 // Exports: useIsMonetizationReapplicationDisabled, useShouldHideGuildPurchaseEntryPoints, useShouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 12610 (useShouldHideGuildPurchaseEntryPoints)
+// Module 12635 (useShouldHideGuildPurchaseEntryPoints)
 import noop from "noop";
 import makeGroupListingIndexSubscriptionListingTag from "makeGroupListingIndexSubscriptionListingTag";
 import { FetchState } from "makeGroupListingIndexSubscriptionListingTag";
@@ -25,7 +25,7 @@ export const useShouldHideGuildPurchaseEntryPoints = function useShouldHideGuild
   has = obj.useStateFromStores(items, () => outer1_7.getGuild(has), items1);
   let importDefault;
   let id;
-  const tmp3 = importDefault(12611)();
+  const tmp3 = importDefault(12636)();
   importDefault = tmp3;
   const items2 = [has, tmp3];
   const effect = React.useEffect(() => {
@@ -108,8 +108,8 @@ export const useShouldHideGuildPurchaseEntryPoints = function useShouldHideGuild
     }
     let result = flag;
   } else {
-    result = tmp(3810).isRestrictedFromShowingGuildPurchaseEntryPoints(stateFromStoresArray);
-    const tmpResult1 = tmp(3810);
+    result = tmp(3814).isRestrictedFromShowingGuildPurchaseEntryPoints(stateFromStoresArray);
+    const tmpResult1 = tmp(3814);
   }
 };
 export const useShouldRestrictUpdatingCreatorMonetizationSettings = function useShouldRestrictUpdatingCreatorMonetizationSettings(guildId) {
@@ -120,7 +120,7 @@ export const useShouldRestrictUpdatingCreatorMonetizationSettings = function use
   stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuild(stateFromStores), items1);
   let importDefault;
   let id;
-  const tmp4 = importDefault(12611)();
+  const tmp4 = importDefault(12636)();
   importDefault = tmp4;
   const items2 = [stateFromStores, tmp4];
   const effect = React.useEffect(() => {
@@ -176,8 +176,8 @@ export const useShouldRestrictUpdatingCreatorMonetizationSettings = function use
     }
     let result = flag;
   } else {
-    result = tmp(3810).isRestrictedFromUpdatingCreatorMonetizationSettings(stateFromStoresArray);
-    const tmpResult1 = tmp(3810);
+    result = tmp(3814).isRestrictedFromUpdatingCreatorMonetizationSettings(stateFromStoresArray);
+    const tmpResult1 = tmp(3814);
   }
   if (stateFromStores != null) {
     const features2 = stateFromStores.features;
@@ -198,7 +198,7 @@ export const useIsMonetizationReapplicationDisabled = function useIsMonetization
   stateFromStores = obj.useStateFromStores(items, () => outer1_7.getGuild(stateFromStores), items1);
   let importDefault;
   let id;
-  const tmp4 = importDefault(12611)();
+  const tmp4 = importDefault(12636)();
   importDefault = tmp4;
   const items2 = [stateFromStores, tmp4];
   const effect = React.useEffect(() => {
@@ -244,7 +244,7 @@ export const useIsMonetizationReapplicationDisabled = function useIsMonetization
     }
     return outer1_5.getMonetizationRestrictionsFetchState(tmp2) === outer1_6.FETCHING;
   });
-  obj[0] = stateFromStores(3810).isRestrictedFromMonetizationReapplication(stateFromStoresArray);
+  obj[0] = stateFromStores(3814).isRestrictedFromMonetizationReapplication(stateFromStoresArray);
   obj[1] = stateFromStores1;
   return obj;
 };

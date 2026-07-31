@@ -1,9 +1,9 @@
-// Module ID: 16162
-// Function ID: 16163
+// Module ID: 16190
+// Function ID: 16191
 // Name: optOutEligibilityCheck
-// Dependencies: [5650, 4261, 16163, 9517, 5649, 3862, 595, 12, 16164, 5134, 2]
+// Dependencies: [5654, 4265, 16191, 9532, 5653, 3866, 595, 12, 16192, 5138, 2]
 
-// Module 16162 (optOutEligibilityCheck)
+// Module 16190 (optOutEligibilityCheck)
 import set from "set";
 import createRTCConnection from "createRTCConnection";
 import initialize from "initialize";
@@ -17,7 +17,7 @@ let closure_6;
 let require = arg1;
 function optOutEligibilityCheck(hotspot) {
   const _require = hotspot;
-  const InAppFeedbackStates = _require(3862).InAppFeedbackStates;
+  const InAppFeedbackStates = _require(3866).InAppFeedbackStates;
   const tmp3 = InAppFeedbackStates.getSetting()[hotspot.feedbackType];
   let optOutExpiryTime;
   if (tmp3 != null) {
@@ -38,7 +38,7 @@ function optOutEligibilityCheck(hotspot) {
     tmp10 = !tmp5;
   }
   if (tmp10) {
-    const InAppFeedbackStates2 = _require(3862).InAppFeedbackStates;
+    const InAppFeedbackStates2 = _require(3866).InAppFeedbackStates;
     InAppFeedbackStates2.updateSetting((arg0) => {
       let obj = {};
       const merged = Object.assign(arg0);
@@ -60,7 +60,7 @@ function triggerRateEligibilityCheck(chance) {
 }
 function recencyEligibilityCheck(cooldown, storageKey) {
   const _require = storageKey;
-  const InAppFeedbackStates = _require(3862).InAppFeedbackStates;
+  const InAppFeedbackStates = _require(3866).InAppFeedbackStates;
   const tmp3 = InAppFeedbackStates.getSetting()[storageKey.feedbackType];
   let lastImpressionTime;
   if (tmp3 != null) {
@@ -88,7 +88,7 @@ function recencyEligibilityCheck(cooldown, storageKey) {
     isNaNResult = Number.isNaN(tmp7);
   }
   if (!isNaNResult) {
-    const InAppFeedbackStates2 = tmp(3862).InAppFeedbackStates;
+    const InAppFeedbackStates2 = tmp(3866).InAppFeedbackStates;
     InAppFeedbackStates2.updateSetting((arg0) => {
       let obj = {};
       const merged = Object.assign(arg0);
@@ -171,20 +171,14 @@ obj5.storageKey = "searchResultsFeedback";
 obj5.feedbackType = FeedbackType.SEARCH_RESULTS;
 const items1 = [
   function searchResultsEligibilityCheck() {
-    return require(16164) /* useIsSearchResultsFeedbackExperimentEnabled */.getIsSearchResultsFeedbackExperimentEnabled({ location: "FeedbackManager" });
+    return require(16192) /* useIsSearchResultsFeedbackExperimentEnabled */.getIsSearchResultsFeedbackExperimentEnabled({ location: "FeedbackManager" });
   }
 ];
 obj5.eligibilityChecks = items1;
 obj[FeedbackType.SEARCH_RESULTS] = obj5;
-const obj6 = {};
-const merged4 = Object.assign(obj);
-obj6.chance = 0;
-obj6.group = FeedbackGroup.AV;
-obj6.hotspot = require("HotspotStore").HotspotLocations.VOICE_CALL_FEEDBACK;
-obj6.storageKey = "lastVibegrationsFeedback";
-obj6.feedbackType = FeedbackType.VIBEGRATIONS;
-obj[FeedbackType.VIBEGRATIONS] = obj6;
-class FeedbackManager extends tmp8 {
+const obj4 = { cooldown: 172800000, chance: 0.5, group: FeedbackGroup.SAFETY, hotspot: require("HotspotStore").HotspotLocations.IN_APP_REPORTS_FEEDBACK, storageKey: "inAppReportsFeedback", feedbackType: FeedbackType.IN_APP_REPORTS };
+obj[FeedbackType.VIBEGRATIONS] = { cooldown: 3600000, chance: 1, group: FeedbackGroup.BUILDER, hotspot: require("HotspotStore").HotspotLocations.VIBEGRATIONS_FEEDBACK, storageKey: "lastVibegrationsFeedback", feedbackType: FeedbackType.VIBEGRATIONS };
+class FeedbackManager extends tmp7 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
     closure_0 = applyArgumentsResult;
@@ -232,7 +226,7 @@ FeedbackManager.prototype["possiblyShowFeedbackModal"] = function possiblyShowFe
     const result = self.showFeedbackModalDebounced(arg1, arg2);
   }
 };
-const obj4 = { cooldown: 172800000, chance: 0.5, group: FeedbackGroup.SAFETY, hotspot: require("HotspotStore").HotspotLocations.IN_APP_REPORTS_FEEDBACK, storageKey: "inAppReportsFeedback", feedbackType: FeedbackType.IN_APP_REPORTS };
+const obj6 = { cooldown: 3600000, chance: 1, group: FeedbackGroup.BUILDER, hotspot: require("HotspotStore").HotspotLocations.VIBEGRATIONS_FEEDBACK, storageKey: "lastVibegrationsFeedback", feedbackType: FeedbackType.VIBEGRATIONS };
 let result = require("initialize").fileFinishedImporting("modules/feedback/FeedbackManager.tsx");
 
 export default FeedbackManager;

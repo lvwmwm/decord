@@ -1,10 +1,10 @@
-// Module ID: 8097
-// Function ID: 8098
+// Module ID: 8104
+// Function ID: 8105
 // Name: OverrideProfileFrameLayer
-// Dependencies: [19, 17, 8095, 5563, 21, 4189, 5141, 2]
+// Dependencies: [19, 17, 8102, 5567, 21, 4193, 5145, 2]
 // Exports: default
 
-// Module 8097 (OverrideProfileFrameLayer)
+// Module 8104 (OverrideProfileFrameLayer)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO";

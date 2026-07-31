@@ -1,9 +1,9 @@
-// Module ID: 3819
-// Function ID: 3820
+// Module ID: 3823
+// Function ID: 3824
 // Name: storeThread
-// Dependencies: [1376, 1218, 3820, 12, 589, 709, 2]
+// Dependencies: [1376, 1218, 3824, 12, 589, 709, 2]
 
-// Module 3819 (storeThread)
+// Module 3823 (storeThread)
 import { ALL_CHANNEL_TYPES } from "createChannelRecord";
 import fetchFingerprint from "fetchFingerprint";
 import { Store } from "initialize";
@@ -283,7 +283,7 @@ const joinedThreadsStoreClass = new JoinedThreadsStoreClass(require("dispatcher"
         const obj = { threadId: null, guildId: null, flags: 0, muted: true, muteConfig: null, joinTimestamp: null };
         obj[0] = id;
         obj[1] = guildId;
-        obj[4] = { end_time: "Array" };
+        obj[4] = { end_time: "r" };
         const _Date = Date;
         const date = new Date();
         guildId = date;

@@ -1,9 +1,9 @@
-// Module ID: 7042
-// Function ID: 7043
+// Module ID: 7050
+// Function ID: 7051
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7042 (metadata)
+// Module 7050 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FrogIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/385102d94fa38be7dace0345296b21605b729fd043439a849cc66fd45a85344c.png";

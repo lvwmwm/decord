@@ -1,9 +1,9 @@
-// Module ID: 5942
-// Function ID: 5943
+// Module ID: 5948
+// Function ID: 5949
 // Name: recountRelationshipTypes
-// Dependencies: [3826, 676, 3813, 589, 709, 2]
+// Dependencies: [3830, 676, 3817, 589, 709, 2]
 
-// Module 5942 (recountRelationshipTypes)
+// Module 5948 (recountRelationshipTypes)
 import upsertRelationship from "upsertRelationship";
 import { RelationshipTypes } from "ME";
 import { Store } from "initialize";
@@ -34,7 +34,7 @@ function recountRelationshipTypes() {
   let closure_9 = c2;
 }
 function remove(arg0, arg1) {
-  if (typeof GAME_RELATIONSHIP_KEY !== "find") {
+  if (typeof GAME_RELATIONSHIP_KEY !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   secondaryIndexMap.delete("" + arg1 + "-" + arg0);
@@ -53,15 +53,15 @@ function GameRelationshipIndexes_BY_RELATIONSHIP_TYPE(arg0) {
 }
 const secondaryIndexMap = new require("version").SecondaryIndexMap(function gameRelationshipsIndex(applicationId) {
   const items = [];
-  if (typeof GameRelationshipIndexes_BY_APPLICATION_ID !== "find") {
+  if (typeof GameRelationshipIndexes_BY_APPLICATION_ID !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   items.push("application-id-" + applicationId.applicationId);
-  if (typeof GameRelationshipIndexes_BY_USER_ID !== "find") {
+  if (typeof GameRelationshipIndexes_BY_USER_ID !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   items.push("user-id-" + applicationId.id);
-  if (typeof GameRelationshipIndexes_BY_RELATIONSHIP_TYPE !== "find") {
+  if (typeof GameRelationshipIndexes_BY_RELATIONSHIP_TYPE !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   items.push("relationship-type-" + applicationId.type);
@@ -86,14 +86,14 @@ prototype["getGameFriendCount"] = function getGameFriendCount() {
   return c9;
 };
 prototype["getGameFriendsForApplication"] = function getGameFriendsForApplication(arg0) {
-  if (typeof GameRelationshipIndexes_BY_APPLICATION_ID !== "find") {
+  if (typeof GameRelationshipIndexes_BY_APPLICATION_ID !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const values = secondaryIndexMap.values("application-id-" + arg0, true);
   return values.filter((type) => type.type === constants.FRIEND);
 };
 prototype["getGameRelationshipsForUser"] = function getGameRelationshipsForUser(upsertRelationship) {
-  if (typeof GameRelationshipIndexes_BY_USER_ID !== "find") {
+  if (typeof GameRelationshipIndexes_BY_USER_ID !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   return secondaryIndexMap.values("user-id-" + upsertRelationship, true);
@@ -113,7 +113,7 @@ prototype["getGameRelationships"] = function getGameRelationships() {
   return secondaryIndexMap;
 };
 prototype["getGameRelationshipsByType"] = function getGameRelationshipsByType(PENDING_INCOMING) {
-  if (typeof GameRelationshipIndexes_BY_RELATIONSHIP_TYPE !== "find") {
+  if (typeof GameRelationshipIndexes_BY_RELATIONSHIP_TYPE !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   return secondaryIndexMap.values("relationship-type-" + PENDING_INCOMING, true);
@@ -130,7 +130,7 @@ const gameRelationshipStore = new GameRelationshipStore(require("dispatcher"), {
       let applicationId;
       const obj = { id: id.id, applicationId: id.application_id, type: id.type, since: id.since, dmAccessType: id.dm_access_type };
       ({ id, applicationId } = obj);
-      if (typeof c2 !== "find") {
+      if (typeof c2 !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       const result = closure_6.set("" + applicationId + "-" + id, obj);
@@ -164,7 +164,7 @@ const gameRelationshipStore = new GameRelationshipStore(require("dispatcher"), {
     let id;
     gameRelationship = gameRelationship.gameRelationship;
     ({ id, applicationId } = gameRelationship);
-    if (typeof c2 !== "find") {
+    if (typeof c2 !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     const result = secondaryIndexMap.set("" + applicationId + "-" + id, gameRelationship);
@@ -196,7 +196,7 @@ const gameRelationshipStore = new GameRelationshipStore(require("dispatcher"), {
     let applicationId;
     let userId;
     ({ userId, applicationId } = arg0);
-    if (typeof c2 !== "find") {
+    if (typeof c2 !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     secondaryIndexMap.delete("" + applicationId + "-" + userId);

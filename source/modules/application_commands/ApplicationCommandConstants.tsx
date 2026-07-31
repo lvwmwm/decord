@@ -1,10 +1,10 @@
-// Module ID: 4623
-// Function ID: 4624
+// Module ID: 4627
+// Function ID: 4628
 // Name: TRUE_OPTION_NAME
 // Dependencies: [1236, 1906, 2]
 // Exports: getValidationErrorText
 
-// Module 4623 (TRUE_OPTION_NAME)
+// Module 4627 (TRUE_OPTION_NAME)
 const items = [{ name: "True", displayName: "True", value: "true" }, { name: "False", displayName: "False", value: "false" }];
 const frozen = Object.freeze([]);
 const frozen1 = Object.freeze([]);

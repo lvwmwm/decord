@@ -1,10 +1,10 @@
-// Module ID: 15126
-// Function ID: 15127
+// Module ID: 15152
+// Function ID: 15153
 // Name: useIsGuildThemePerkEnabled
-// Dependencies: [1862, 4076, 676, 589, 4080, 2]
+// Dependencies: [1862, 4080, 676, 589, 4084, 2]
 // Exports: default
 
-// Module 15126 (useIsGuildThemePerkEnabled)
+// Module 15152 (useIsGuildThemePerkEnabled)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import calculateAppliedBoosts from "calculateAppliedBoosts";
 import { GuildFeatures } from "ME";

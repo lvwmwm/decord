@@ -1,8 +1,8 @@
-// Module ID: 15215
-// Function ID: 15216
-// Dependencies: [19, 17, 3817, 676, 21, 4189, 4185, 712, 647, 8301, 8273, 14123, 1865, 6782, 15216, 1236, 2969, 7634, 1297, 15217, 4601, 2]
+// Module ID: 15242
+// Function ID: 15243
+// Dependencies: [19, 17, 3821, 676, 21, 4193, 4189, 712, 647, 8308, 8280, 14145, 1865, 6790, 15243, 1236, 2971, 7642, 1297, 15244, 4605, 2]
 
-// Module 15215
+// Module 15242
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "RowButtonWrapper";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -49,30 +49,30 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   const callback1 = importAllResult.useCallback(() => {
     outer1_1(outer1_2[10]).open(null, guild.id, null, null);
   }, items3);
-  let obj1 = guild(14123);
+  let obj1 = guild(14145);
   const youBarTotalHeight = obj1.useYouBarTotalHeight(16);
   let obj2 = guild(1865);
   const isFavoritesGuildIdResult = obj2.isFavoritesGuildId(guild.id);
   if (isFavoritesGuildIdResult) {
-    let tmp9Result = tmp9(tmp2(6782).FavoritesSpotIllustration, { width: 192, height: 108 });
+    let tmp9Result = tmp9(tmp2(6790).FavoritesSpotIllustration, { width: 192, height: 108 });
     let tmp13 = tmp9;
   } else {
     obj = { source: null };
-    obj[0] = importDefault(15216);
+    obj[0] = importDefault(15243);
     tmp9Result = tmp9(closure_5, obj);
     tmp13 = tmp9;
   }
   const intl = tmp2(1236).intl;
   const string = intl.string;
   if (isFavoritesGuildIdResult) {
-    let stringResult = string(importDefault(2969)["wh+Rz1"]);
+    let stringResult = string(importDefault(2971)["wh+Rz1"]);
   } else {
     stringResult = string(tmp2(1236).t.o4s29v);
   }
   const intl2 = tmp2(1236).intl;
   const string2 = intl2.string;
   if (isFavoritesGuildIdResult) {
-    let string2Result = string2(importDefault(2969)["+SuGKb"]);
+    let string2Result = string2(importDefault(2971)["+SuGKb"]);
   } else {
     string2Result = string2(tmp2(1236).t.iypvFu);
   }
@@ -83,12 +83,12 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
     obj1[0] = tmp.personalizeButtonWrapper;
     obj2 = { icon: null, label: null, onPress: null };
     const obj3 = { source: null, disableColor: true };
-    obj3[0] = importDefault(15217);
+    obj3[0] = importDefault(15244);
     obj2[0] = tmp13(tmp2(1297).Icon, obj3);
     const intl3 = tmp2(1236).intl;
     obj2[1] = intl3.string(tmp2(1236).t["Yhi9/N"]);
     obj2[2] = callback;
-    obj1[1] = tmp13(tmp2(7634).RowButton, obj2);
+    obj1[1] = tmp13(tmp2(7642).RowButton, obj2);
     canCustomizeGuild = tmp13(tmp19, obj1);
   }
   const items5 = [canCustomizeGuild, ];
@@ -96,8 +96,8 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   const items6 = [tmp9Result, , , ];
   const items7 = [, ];
   ({ text: arr8[0], headerText: arr8[1] } = tmp);
-  items6[1] = tmp13(guild(4185).Text, { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: items7, children: stringResult });
-  items6[2] = tmp13(guild(4185).Text, { color: "text-default", variant: "text-md/medium", style: tmp.text, children: string2Result });
+  items6[1] = tmp13(guild(4189).Text, { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: items7, children: stringResult });
+  items6[2] = tmp13(guild(4189).Text, { color: "text-default", variant: "text-md/medium", style: tmp.text, children: string2Result });
   if (canCreateChannel) {
     const obj6 = { style: null, children: null };
     obj6[0] = tmp.buttonWrapper;
@@ -106,7 +106,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
     const intl4 = tmp2(1236).intl;
     obj7[3] = intl4.string(tmp2(1236).t["63PyJQ"]);
     obj7[4] = callback1;
-    obj6[1] = tmp13(tmp2(4601).BaseTextButton, obj7);
+    obj6[1] = tmp13(tmp2(4605).BaseTextButton, obj7);
     canCreateChannel = tmp13(tmp19, obj6);
   }
   items6[3] = canCreateChannel;

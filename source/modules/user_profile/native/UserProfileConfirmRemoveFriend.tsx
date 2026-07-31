@@ -1,10 +1,10 @@
-// Module ID: 11711
-// Function ID: 11712
+// Module ID: 11729
+// Function ID: 11730
 // Name: UserProfileConfirmRemoveFriend
-// Dependencies: [19, 21, 4533, 1236, 4533, 2]
+// Dependencies: [19, 21, 4537, 1236, 4537, 2]
 // Exports: default
 
-// Module 11711 (UserProfileConfirmRemoveFriend)
+// Module 11729 (UserProfileConfirmRemoveFriend)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -26,12 +26,12 @@ export default function UserProfileConfirmRemoveFriend(userDisplayName) {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl3.string(require(1236) /* getSystemLocale */.t.cvSt1J);
   obj[2] = userDisplayName.onConfirm;
-  const items = [callback(require(4533) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm-remove"), ];
+  const items = [callback(require(4537) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm-remove"), ];
   const obj1 = { variant: "secondary", text: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t["eN6+rI"]);
-  items[1] = callback(require(4533) /* getAlertModalItemKey */.AlertActionButton, obj1, "nevermind");
+  items[1] = callback(require(4537) /* getAlertModalItemKey */.AlertActionButton, obj1, "nevermind");
   obj[0] = items;
-  obj[2] = callback2(require(4533) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback(require(4533) /* getAlertModalItemKey */.AlertModal, obj);
+  obj[2] = callback2(require(4537) /* getAlertModalItemKey */.AlertActions, obj);
+  return callback(require(4537) /* getAlertModalItemKey */.AlertModal, obj);
 };

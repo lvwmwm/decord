@@ -1,10 +1,10 @@
-// Module ID: 6152
-// Function ID: 6153
+// Module ID: 6158
+// Function ID: 6159
 // Name: logMessageSendFailure
-// Dependencies: [676, 4384, 2]
+// Dependencies: [676, 4388, 2]
 // Exports: getAttachmentMimeTypes, logMessageSendFailure
 
-// Module 6152 (logMessageSendFailure)
+// Module 6158 (logMessageSendFailure)
 import { AnalyticEvents } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/messages/logMessageSendFailure.tsx");
@@ -24,7 +24,7 @@ export const logMessageSendFailure = function logMessageSendFailure(fileItems) {
   }
   const errorMessage = fileItems.errorMessage;
   const failureCode = fileItems.failureCode;
-  require(4384) /* collectGuildAnalyticsMetadata */.trackWithMetadata(AnalyticEvents.SEND_MESSAGE_FAILURE, { failure_code: failureCode, error_message: errorMessage, attachment_mimetypes: mapped });
+  require(4388) /* collectGuildAnalyticsMetadata */.trackWithMetadata(AnalyticEvents.SEND_MESSAGE_FAILURE, { failure_code: failureCode, error_message: errorMessage, attachment_mimetypes: mapped });
 };
 export const getAttachmentMimeTypes = function getAttachmentMimeTypes(items) {
   return items.map((mimeType) => {

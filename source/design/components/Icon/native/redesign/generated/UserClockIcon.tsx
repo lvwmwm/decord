@@ -1,10 +1,10 @@
-// Module ID: 12217
-// Function ID: 12218
+// Module ID: 12243
+// Function ID: 12244
 // Name: UserClockIcon
-// Dependencies: [19, 21, 712, 3892, 12218, 2]
+// Dependencies: [19, 21, 712, 3896, 12244, 2]
 // Exports: UserClockIcon
 
-// Module 12217 (UserClockIcon)
+// Module 12243 (UserClockIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const UserClockIcon = function UserClockIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12218) /* registerAsset */;
+  obj[0] = require(12244) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3892) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3896) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

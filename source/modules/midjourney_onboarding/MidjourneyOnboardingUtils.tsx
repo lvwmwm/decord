@@ -1,10 +1,10 @@
-// Module ID: 12992
-// Function ID: 12993
+// Module ID: 13017
+// Function ID: 13018
 // Name: isMidjourneyOnboardingFlow
-// Dependencies: [1862, 4006, 12993, 589, 2]
+// Dependencies: [1862, 4010, 13018, 589, 2]
 // Exports: hasRedirectedToGuild, isEligibleForMidjourneyRedirect, isMidjourneyOnboardingFlow, useIsMidjourneyOnboardingFlow
 
-// Module 12992 (isMidjourneyOnboardingFlow)
+// Module 13017 (isMidjourneyOnboardingFlow)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleConnectionOpen from "handleConnectionOpen";
 import MIDJOURNEY_GUILD_ID from "MIDJOURNEY_GUILD_ID";

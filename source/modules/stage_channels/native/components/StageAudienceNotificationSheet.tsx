@@ -1,10 +1,10 @@
-// Module ID: 7628
-// Function ID: 7629
+// Module ID: 7636
+// Function ID: 7637
 // Name: handleDismiss
-// Dependencies: [19, 17, 1377, 5004, 1378, 21, 4189, 712, 4157, 1297, 589, 7629, 5141, 7630, 4185, 1236, 7631, 7668, 7669, 7670, 7671, 4600, 2]
+// Dependencies: [19, 17, 1377, 5008, 1378, 21, 4193, 712, 4161, 1297, 589, 7637, 5145, 7638, 4189, 1236, 7639, 7676, 7677, 7678, 7679, 4604, 2]
 // Exports: default
 
-// Module 7628 (handleDismiss)
+// Module 7636 (handleDismiss)
 import "registerAsset";
 import { View } from "registerAsset";
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
@@ -17,7 +17,7 @@ let error;
 let metroImportAll;
 const require = arg1;
 function handleDismiss() {
-  importDefault(4157).hideActionSheet(closure_5);
+  importDefault(4161).hideActionSheet(closure_5);
 }
 function BulletIcon(source) {
   const tmp = createCacheKey();
@@ -54,54 +54,54 @@ export default function StageAudienceNotificationSheet(channelId) {
   obj = { style: tmp.header, children: null };
   const obj1 = { source: null, style: null };
   const tmp7 = importDefault;
-  const tmp8 = importDefault(7629);
-  obj1[0] = importDefault(7630);
+  const tmp8 = importDefault(7637);
+  obj1[0] = importDefault(7638);
   obj1[1] = tmp.headerImage;
-  const items1 = [callback(importDefault(5141), obj1), , ];
+  const items1 = [callback(importDefault(5145), obj1), , ];
   const obj2 = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = tmp2(1236).intl;
   obj2[4] = intl.string(channelId(1236).t.UVuXCs);
-  items1[1] = callback(channelId(4185).Text, obj2);
+  items1[1] = callback(channelId(4189).Text, obj2);
   const obj3 = { style: tmp.headerBulletList, children: null };
   const obj4 = { leading: null, label: null };
   const obj5 = { source: null };
-  obj5[0] = importDefault(7668);
+  obj5[0] = importDefault(7676);
   obj4[0] = callback(BulletIcon, obj5);
   const obj6 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default", children: null };
   const intl2 = tmp2(1236).intl;
   obj6[3] = intl2.string(channelId(1236).t.sBDfo6);
-  obj4[1] = callback(channelId(4185).Text, obj6);
-  const items2 = [callback(channelId(7631).FormRow, obj4), , , ];
+  obj4[1] = callback(channelId(4189).Text, obj6);
+  const items2 = [callback(channelId(7639).FormRow, obj4), , , ];
   const obj7 = { leading: null, label: null };
   const obj8 = { source: null };
-  obj8[0] = importDefault(7669);
+  obj8[0] = importDefault(7677);
   obj7[0] = callback(BulletIcon, obj8);
   const obj9 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default", children: null };
   const intl3 = tmp2(1236).intl;
   obj9[3] = intl3.string(channelId(1236).t.x58YtH);
-  obj7[1] = callback(channelId(4185).Text, obj9);
-  items2[1] = callback(channelId(7631).FormRow, obj7);
+  obj7[1] = callback(channelId(4189).Text, obj9);
+  items2[1] = callback(channelId(7639).FormRow, obj7);
   const obj10 = { leading: null, label: null };
   const obj11 = { source: null };
-  obj11[0] = importDefault(7670);
+  obj11[0] = importDefault(7678);
   obj10[0] = callback(BulletIcon, obj11);
   const obj12 = { style: tmp.headerBullet, variant: "text-md/medium", color: "text-default", children: null };
   const intl4 = tmp2(1236).intl;
   obj12[3] = intl4.string(channelId(1236).t.XtVqla);
-  obj10[1] = callback(channelId(4185).Text, obj12);
-  items2[2] = callback(channelId(7631).FormRow, obj10);
+  obj10[1] = callback(channelId(4189).Text, obj12);
+  items2[2] = callback(channelId(7639).FormRow, obj10);
   let tmp6Result = null;
   if (privacy_level === constants.PUBLIC) {
     const obj13 = { leading: null, label: null };
     const obj14 = { source: null };
-    obj14[0] = tmp7(7671);
+    obj14[0] = tmp7(7679);
     obj13[0] = tmp6(BulletIcon, obj14);
     const obj15 = { style: null, variant: "text-md/medium", color: "text-default", children: null };
     obj15[0] = tmp.headerBullet;
     const intl6 = tmp2(1236).intl;
     obj15[3] = intl6.string(tmp2(1236).t.nDsbJg);
-    obj13[1] = tmp6(tmp2(4185).Text, obj15);
-    tmp6Result = tmp6(tmp2(7631).FormRow, obj13);
+    obj13[1] = tmp6(tmp2(4189).Text, obj15);
+    tmp6Result = tmp6(tmp2(7639).FormRow, obj13);
   }
   const obj16 = { children: null };
   items2[3] = tmp6Result;
@@ -114,7 +114,7 @@ export default function StageAudienceNotificationSheet(channelId) {
   const intl5 = tmp2(1236).intl;
   obj18[0] = intl5.string(channelId(1236).t.obLqZ8);
   obj18[1] = handleDismiss;
-  obj17[1] = callback(channelId(4600).Button, obj18);
+  obj17[1] = callback(channelId(4604).Button, obj18);
   items3[1] = callback(View, obj17);
   obj[1] = items3;
   obj16[0] = closure_8(View, obj);

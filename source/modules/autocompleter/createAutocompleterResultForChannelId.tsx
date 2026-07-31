@@ -1,10 +1,10 @@
-// Module ID: 6171
-// Function ID: 6172
+// Module ID: 6177
+// Function ID: 6178
 // Name: createAutocompleterResultForChannelId
-// Dependencies: [1372, 3826, 1874, 5100, 676, 4380, 2]
+// Dependencies: [1372, 3830, 1874, 5104, 676, 4384, 2]
 // Exports: default
 
-// Module 6171 (createAutocompleterResultForChannelId)
+// Module 6177 (createAutocompleterResultForChannelId)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -31,7 +31,7 @@ export default function createAutocompleterResultForChannelId(arg0, arg1, closur
   if (null == channel) {
     return null;
   } else {
-    const channelName = require(4380) /* computeChannelName */.computeChannelName(channel, obj1, tmp);
+    const channelName = require(4384) /* computeChannelName */.computeChannelName(channel, obj1, tmp);
     const type = channel.type;
     if (ChannelTypes.DM === type) {
       const user = obj1.getUser(channel.getRecipientId());
@@ -66,6 +66,6 @@ export default function createAutocompleterResultForChannelId(arg0, arg1, closur
       obj2[3] = channelName;
       return obj2;
     }
-    const obj8 = require(4380) /* computeChannelName */;
+    const obj8 = require(4384) /* computeChannelName */;
   }
 };

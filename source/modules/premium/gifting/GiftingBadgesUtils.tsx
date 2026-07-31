@@ -1,10 +1,10 @@
-// Module ID: 12598
-// Function ID: 12599
+// Module ID: 12623
+// Function ID: 12624
 // Name: getGiftingBadgeProgressPercent
-// Dependencies: [8106, 1874, 8767, 12599, 589, 4005, 1358, 2]
+// Dependencies: [8113, 1874, 8780, 12624, 589, 4009, 1358, 2]
 // Exports: getGiftingBadgeProgressPercent, getIsGiftingBadgesDesktopEnabled, useIsEligibleToShowGiftingBadgeCoachmark, useIsGiftingBadgesDesktopEnabled
 
-// Module 12598 (getGiftingBadgeProgressPercent)
+// Module 12623 (getGiftingBadgeProgressPercent)
 import { getSingleRequirementThreshold as closure_2 } from "map";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
@@ -29,10 +29,10 @@ export const getGiftingBadgeProgressPercent = function getGiftingBadgeProgressPe
   return Math.min(Math.max(num3, 0), 100);
 };
 export const useIsGiftingBadgesDesktopEnabled = function useIsGiftingBadgesDesktopEnabled(location) {
-  const GiftingBadgeExperiment = require(8767) /* apexExperiment */.GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = require(8780) /* apexExperiment */.GiftingBadgeExperiment;
   let obj = { location };
   const enabled = GiftingBadgeExperiment.useConfig(obj).enabled;
-  const GiftingBadgeDesktopExperiment = require(12599) /* apexExperiment */.GiftingBadgeDesktopExperiment;
+  const GiftingBadgeDesktopExperiment = require(12624) /* apexExperiment */.GiftingBadgeDesktopExperiment;
   let str = "-DISABLED";
   if (enabled) {
     str = "";
@@ -41,11 +41,11 @@ export const useIsGiftingBadgesDesktopEnabled = function useIsGiftingBadgesDeskt
   return GiftingBadgeDesktopExperiment.useConfig(obj).enabled && enabled;
 };
 export const getIsGiftingBadgesDesktopEnabled = function getIsGiftingBadgesDesktopEnabled(location) {
-  const GiftingBadgeExperiment = require(8767) /* apexExperiment */.GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = require(8780) /* apexExperiment */.GiftingBadgeExperiment;
   let obj = { location };
   let enabled = GiftingBadgeExperiment.getConfig(obj).enabled;
   if (enabled) {
-    const GiftingBadgeDesktopExperiment = require(12599) /* apexExperiment */.GiftingBadgeDesktopExperiment;
+    const GiftingBadgeDesktopExperiment = require(12624) /* apexExperiment */.GiftingBadgeDesktopExperiment;
     obj = { location: null };
     obj[0] = location;
     enabled = GiftingBadgeDesktopExperiment.getConfig(obj).enabled;
@@ -54,9 +54,9 @@ export const getIsGiftingBadgesDesktopEnabled = function getIsGiftingBadgesDeskt
 };
 export const useIsEligibleToShowGiftingBadgeCoachmark = function useIsEligibleToShowGiftingBadgeCoachmark(location) {
   const _location = location.location;
-  const GiftingBadgeExperiment = require(8767) /* apexExperiment */.GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = require(8780) /* apexExperiment */.GiftingBadgeExperiment;
   const enabled = GiftingBadgeExperiment.useConfig({ location: _location }).enabled;
-  const GiftingBadgeDesktopExperiment = require(12599) /* apexExperiment */.GiftingBadgeDesktopExperiment;
+  const GiftingBadgeDesktopExperiment = require(12624) /* apexExperiment */.GiftingBadgeDesktopExperiment;
   let str = "-DISABLED";
   if ("web" === location.platform) {
     str = "";
@@ -82,7 +82,7 @@ export const useIsEligibleToShowGiftingBadgeCoachmark = function useIsEligibleTo
     }
     return flag;
   });
-  tmpResult = tmp(4005);
+  tmpResult = tmp(4009);
   const result = tmpResult.useIsDismissibleContentDismissed_UNSAFE(tmp(1358).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK);
   if (tmp4) {
     tmp4 = stateFromStores;

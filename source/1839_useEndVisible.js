@@ -21,8 +21,8 @@ export const useEndVisible = (scroll) => {
   let derivedValue;
   const items = [onEndVisible];
   let tmp = size(() => {
-    let __workletHash = typeof onEndVisible === "find";
-    if (typeof onEndVisible !== "ZodObject") {
+    let __workletHash = typeof onEndVisible === "fileFinishedImporting";
+    if (typeof onEndVisible !== "disabledUntil") {
       __workletHash = onEndVisible.__workletHash;
     }
     return __workletHash;

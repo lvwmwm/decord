@@ -1,10 +1,10 @@
-// Module ID: 8270
-// Function ID: 8271
+// Module ID: 8277
+// Function ID: 8278
 // Name: useGuildEligibleForMediaChannels
 // Dependencies: [676, 2]
 // Exports: useGuildEligibleForMediaChannels
 
-// Module 8270 (useGuildEligibleForMediaChannels)
+// Module 8277 (useGuildEligibleForMediaChannels)
 import { GuildFeatures } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/media_channel/MediaChannelExperimentUtils.tsx");

@@ -1,7 +1,7 @@
 // Module ID: 8627
 // Function ID: 8628
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8536, 8543, 8544, 8550, 8628, 8552]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8549, 8619, 8628, 8554, 8565]
 
 // Module 8627 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -10,9 +10,8 @@ import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
-import extractFont from "extractFont";
 
-const TSpan = arg1;
+const Pattern = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,68 +31,87 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class TSpan {
+class Pattern {
   constructor() {
     self = this;
-    items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
-    items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp = _isNativeReflectConstruct(this, Pattern);
+    tmp2 = __esModule;
+    obj = __esModule(Pattern);
+    tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
-      tmp5 = globalThis;
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items1);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-    tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
-    tmp3Result.setNativeProps = (matrix) => {
-      matrix = matrix.matrix;
-      let tmp = !matrix;
-      if (!matrix) {
-        tmp = outer1_1(outer1_2[7])(matrix);
-      }
-      if (tmp) {
-        matrix.matrix = tmp;
-      }
-      const propsAndStylesResult = _undefined(outer1_2[8]).propsAndStyles(matrix);
-      const obj = _undefined(outer1_2[8]);
-      const merged = Object.assign(propsAndStylesResult, _undefined(outer1_2[9]).pickNotNil(outer1_1(outer1_2[10])(propsAndStylesResult, false)));
-      if (_undefined.root) {
-        const root = _undefined.root;
-        root.setNativeProps(propsAndStylesResult);
-      }
-    };
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-require("_inherits")(TSpan, require("_isNativeReflectConstruct"));
-let items = [
+require("_inherits")(Pattern, require("_isNativeReflectConstruct"));
+const items = [
   {
     key: "render",
     value: function render() {
-      let obj = TSpan(8543);
-      const propsAndStylesResult = obj.propsAndStyles(this.props);
-      obj = {};
-      const merged = Object.assign(propsAndStylesResult);
-      obj.x = null;
-      obj.y = null;
-      const tmp2Result = importDefault(8543)(obj, this);
-      const merged1 = Object.assign(tmp2Result, importDefault(8550)(propsAndStylesResult, false));
-      tmp2Result.ref = this.refMethod;
-      obj = {};
-      const tmp2 = importDefault(8543);
-      const merged2 = Object.assign(tmp2Result);
-      return jsx(importDefault(8628), {});
+      let children;
+      let height;
+      let id;
+      let patternContentUnits;
+      let patternTransform;
+      let patternUnits;
+      let preserveAspectRatio;
+      let transform;
+      let viewBox;
+      let width;
+      let x;
+      let y;
+      const self = this;
+      const props = this.props;
+      ({ patternTransform, patternUnits, patternContentUnits } = props);
+      ({ transform, id, x, y, width, height, children, viewBox, preserveAspectRatio } = props);
+      if (!patternTransform) {
+        patternTransform = transform;
+      }
+      if (!patternTransform) {
+        patternTransform = props;
+      }
+      const tmp3Result = self(8549)(patternTransform);
+      let obj = { x, y, width, height, name: id, matrix: tmp3Result, patternTransform: tmp3Result, patternUnits: null, patternContentUnits: null };
+      let num = patternUnits;
+      if (patternUnits) {
+        num = tmp(8619)[patternUnits];
+      }
+      if (!num) {
+        num = 0;
+      }
+      obj[7] = num;
+      let num2 = 1;
+      if (patternContentUnits) {
+        num2 = tmp(8619)[patternContentUnits];
+      }
+      obj[8] = num2;
+      obj = {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      };
+      const tmp3 = self(8549);
+      const merged = Object.assign(obj);
+      const merged1 = Object.assign(tmp(8554)({ viewBox, preserveAspectRatio }));
+      obj.children = children;
+      return jsx(self(8628), {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      });
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(TSpan, items);
-importDefaultResultResult.displayName = "TSpan";
-extractFont.setTSpan(importDefaultResultResult);
+const importDefaultResultResult = importDefaultResult(Pattern, items);
+importDefaultResultResult.displayName = "Pattern";
+importDefaultResultResult.defaultProps = { x: "0%", y: "0%", width: "100%", height: "100%" };
 
 export default importDefaultResultResult;

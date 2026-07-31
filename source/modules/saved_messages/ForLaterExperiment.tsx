@@ -1,10 +1,10 @@
-// Module ID: 9552
-// Function ID: 9553
+// Module ID: 9567
+// Function ID: 9568
 // Name: ForLaterFreemiumConfig
-// Dependencies: [9553, 1452, 38, 9554, 2]
-// Exports: getForLaterLimit, hasForLaterAccess, isForLaterExperimentOn, useHasForLaterAccess, useIsForLaterExperimentOn
+// Dependencies: [9568, 1452, 38, 9569, 2]
+// Exports: getForLaterLimit, hasForLaterAccess, isForLaterExperimentOn, isForLaterFreemiumExperimentOn, useHasForLaterAccess, useIsForLaterExperimentOn
 
-// Module 9552 (ForLaterFreemiumConfig)
+// Module 9567 (ForLaterFreemiumConfig)
 import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX";
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
@@ -37,7 +37,7 @@ const obj2 = {
   1: null,
   2: (arg0) => {
     const parsed = JSON.parse(arg0);
-    if (typeof ForLaterFreemiumConfig !== "find") {
+    if (typeof ForLaterFreemiumConfig !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     const obj = Object.create(ForLaterFreemiumConfig.prototype);
@@ -50,7 +50,7 @@ const obj2 = {
 };
 obj2[2] = (arg0) => {
   const parsed = JSON.parse(arg0);
-  if (typeof ForLaterFreemiumConfig !== "find") {
+  if (typeof ForLaterFreemiumConfig !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(ForLaterFreemiumConfig.prototype);
@@ -83,6 +83,9 @@ export const isForLaterExperimentOn = function isForLaterExperimentOn(MessageRem
   }
   return enabled;
 };
+export const isForLaterFreemiumExperimentOn = function isForLaterFreemiumExperimentOn(location) {
+  return store2.getConfig({ location }).enabled;
+};
 export const useHasForLaterAccess = function useHasForLaterAccess(ForLaterOpenActionButton) {
   let obj = { location: ForLaterOpenActionButton };
   obj = { location: ForLaterOpenActionButton };
@@ -90,7 +93,7 @@ export const useHasForLaterAccess = function useHasForLaterAccess(ForLaterOpenAc
   if (!enabled) {
     let enabled1 = store.useConfig(obj).enabled;
     if (enabled1) {
-      enabled1 = importDefault(9554)();
+      enabled1 = importDefault(9569)();
     }
     enabled = enabled1;
   }
@@ -103,7 +106,7 @@ export const hasForLaterAccess = function hasForLaterAccess(addOrUpdateSavedMess
   if (!enabled) {
     let enabled1 = store.getConfig(obj).enabled;
     if (enabled1) {
-      enabled1 = importDefault(9554)();
+      enabled1 = importDefault(9569)();
     }
     enabled = enabled1;
   }

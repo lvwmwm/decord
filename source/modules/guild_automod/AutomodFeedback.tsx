@@ -1,10 +1,10 @@
-// Module ID: 5774
-// Function ID: 5775
+// Module ID: 5779
+// Function ID: 5780
 // Name: Feedback
 // Dependencies: [1236, 2]
 // Exports: generateFeedbackOptions, getMostImportantRaidResolutionType
 
-// Module 5774 (Feedback)
+// Module 5779 (Feedback)
 let obj = { BUG: "BUG", ALLOWED: "ALLOWED", MENTION_RAID_REMOVE_RESTRICTION: "MENTION_RAID_REMOVE_RESTRICTION" };
 obj = { LEGITIMATE_ACTIVITY: "LEGITIMATE_ACTIVITY", LEGITIMATE_ACCOUNTS: "LEGITIMATE_ACCOUNTS", LEGITIMATE_DMS: "LEGITIMATE_DMS", DM_SPAM: "DM_SPAM", JOIN_RAID: "JOIN_RAID", OTHER: "OTHER" };
 const result = require("set").fileFinishedImporting("modules/guild_automod/AutomodFeedback.tsx");

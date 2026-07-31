@@ -1,10 +1,10 @@
-// Module ID: 11159
-// Function ID: 11160
+// Module ID: 11177
+// Function ID: 11178
 // Name: useChatInputRefs
-// Dependencies: [19, 5092, 4526, 5964, 5969, 1874, 9306, 676, 4624, 4182, 5503, 4048, 12, 11160, 11164, 11165, 11168, 6179, 6086, 4055, 1579, 1478, 500, 4056, 1844, 698, 9560, 5713, 9562, 11169, 5965, 11170, 4524, 11203, 6741, 2]
+// Dependencies: [19, 5096, 4530, 5970, 5975, 1874, 9321, 676, 4628, 4186, 5507, 4052, 12, 11178, 11182, 11183, 11186, 6185, 6092, 4059, 1579, 1478, 500, 4060, 1844, 698, 9575, 5718, 9577, 11187, 5971, 11188, 4528, 11221, 6747, 2]
 // Exports: default
 
-// Module 11159 (useChatInputRefs)
+// Module 11177 (useChatInputRefs)
 import useKeyboardType from "useKeyboardType";
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import { DraftType } from "handleChanged";
@@ -46,7 +46,7 @@ export default function useChatInputRefs(chatInputProps) {
   mergeGuildAvatar = React.useRef(null);
   closure_9 = React.useRef(null);
   closure_10 = React.useRef(new Map());
-  const tmp2 = chatInputTextFieldHeight(5503)(() => chatInputProps(4048).createInputRefTracker(chatInputProps.channel.id, chatInputProps.screenIndex));
+  const tmp2 = chatInputTextFieldHeight(5507)(() => chatInputProps(4052).createInputRefTracker(chatInputProps.channel.id, chatInputProps.screenIndex));
   c11 = tmp2;
   closure_12 = React.useRef(chatInputProps);
   closure_13 = React.useRef(chatInputProps);
@@ -72,7 +72,7 @@ export default function useChatInputRefs(chatInputProps) {
       closure_11.handleRef(null, channel.channel.id);
     };
   }, items2);
-  closure_14 = React.useRef(chatInputTextFieldHeight(5503)(() => ({ editId: null, focused: false, selectionStart: 0, selectionEnd: 0, text: chatInputProps.defaultValue, textPrev: chatInputProps.defaultValue, textFieldContentSize: 0, textFieldHeight: chatInputTextFieldHeight })));
+  closure_14 = React.useRef(chatInputTextFieldHeight(5507)(() => ({ editId: null, focused: false, selectionStart: 0, selectionEnd: 0, text: chatInputProps.defaultValue, textPrev: chatInputProps.defaultValue, textFieldContentSize: 0, textFieldHeight: chatInputTextFieldHeight })));
   closure_15 = React.useRef({ handledHereMention: false, sending: false });
   const items3 = [tmp2];
   const memo = React.useMemo(() => {
@@ -313,7 +313,7 @@ export default function useChatInputRefs(chatInputProps) {
           threadCreationCallback = outer1_13.current.threadCreationCallback;
           if (null != threadCreationCallback) {
             const text = chatInputTextFieldHeight(ref[13]).getText(outer1_8.current, outer1_10.current, (text) => {
-              let obj = chatInputProps(11170);
+              let obj = chatInputProps(11188);
               obj = { text, params: null };
               obj = {};
               const merged = Object.assign(outer2_13.current);
@@ -324,8 +324,8 @@ export default function useChatInputRefs(chatInputProps) {
                 const obj1 = { text: null, threadCreationCallback: null };
                 obj1[0] = result.content;
                 obj1[1] = threadCreationCallback;
-                const result1 = chatInputProps(11170).chatInputCreateThread(obj1);
-                const tmpResult = chatInputProps(11170);
+                const result1 = chatInputProps(11188).chatInputCreateThread(obj1);
+                const tmpResult = chatInputProps(11188);
               }
             });
             tmp.current.sending = false;
@@ -357,7 +357,7 @@ export default function useChatInputRefs(chatInputProps) {
                   }
                 } else {
                   closure_1.cancel();
-                  let obj = threadCreationCallback(11170);
+                  let obj = threadCreationCallback(11188);
                   obj = { text: null, params: null };
                   obj[0] = arg0;
                   obj = {};
@@ -367,7 +367,7 @@ export default function useChatInputRefs(chatInputProps) {
                   obj[1] = obj;
                   const result = obj.chatInputHandleSendText(obj);
                 }
-                const keyboardType = threadCreationCallback(4055).getKeyboardType();
+                const keyboardType = threadCreationCallback(4059).getKeyboardType();
                 if (keyboardType === threadCreationCallback(1579).KeyboardTypes.SYSTEM) {
                   const current2 = tmp8.current;
                   current2.focus();

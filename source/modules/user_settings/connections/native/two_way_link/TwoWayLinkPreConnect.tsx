@@ -1,10 +1,10 @@
-// Module ID: 8938
-// Function ID: 8939
+// Module ID: 8951
+// Function ID: 8952
 // Name: _authorizeLink
-// Dependencies: [32, 5, 19, 17, 676, 21, 3, 4189, 4995, 8939, 3886, 500, 8934, 4996, 38, 709, 4185, 1236, 5177, 4600, 2]
+// Dependencies: [32, 5, 19, 17, 676, 21, 3, 4193, 4999, 8952, 3890, 500, 8947, 5000, 38, 709, 4189, 1236, 5181, 4604, 2]
 // Exports: TwoWayLinkPreConnect
 
-// Module 8938 (_authorizeLink)
+// Module 8951 (_authorizeLink)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "jsxProd";
 import Button from "Button";
@@ -72,7 +72,7 @@ function _authorizeLink() {
             return obj;
           } else {
             url = body.body.url;
-            const obj5 = callback2(3886);
+            const obj5 = callback2(3890);
             const tmp19 = url;
             let tmp6 = closure_8;
             if (obj6.isAndroid()) {

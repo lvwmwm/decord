@@ -1,10 +1,10 @@
-// Module ID: 13928
-// Function ID: 13929
+// Module ID: 13952
+// Function ID: 13953
 // Name: getCollectibleTypeName
-// Dependencies: [5803, 5804, 1876, 1901, 1236, 2223, 1416, 2]
+// Dependencies: [5808, 5809, 1876, 1901, 1236, 2225, 1416, 2]
 // Exports: getAvatarDecorationPreviewUrl, getProfileEffectPreviewUrl, getPurchaseDisplayInfo, isGuildBoostSubscription
 
-// Module 13928 (getCollectibleTypeName)
+// Module 13952 (getCollectibleTypeName)
 import { isAvatarDecorationRecord } from "fromServer";
 import { isProfileEffectRecord } from "fromServer";
 import GuildFeatures from "GuildFeatures";
@@ -14,19 +14,19 @@ let closure_6;
 function getCollectibleTypeName(type) {
   if (require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
     const intl5 = tmp(1236).intl;
-    return intl5.string(importDefault(2223).obi47v);
+    return intl5.string(importDefault(2225).obi47v);
   } else if (tmp(1901).CollectiblesItemType.PROFILE_EFFECT === type) {
     const intl4 = tmp(1236).intl;
-    return intl4.string(importDefault(2223).RX8BMR);
+    return intl4.string(importDefault(2225).RX8BMR);
   } else if (tmp(1901).CollectiblesItemType.NAMEPLATE === type) {
     const intl3 = tmp(1236).intl;
-    return intl3.string(importDefault(2223).nNGEHk);
+    return intl3.string(importDefault(2225).nNGEHk);
   } else if (tmp(1901).CollectiblesItemType.BUNDLE === type) {
     const intl2 = tmp(1236).intl;
-    return intl2.string(importDefault(2223).VS1fKo);
+    return intl2.string(importDefault(2225).VS1fKo);
   } else if (tmp(1901).CollectiblesItemType.PROFILE_FRAME === type) {
     const intl = tmp(1236).intl;
-    return intl.string(importDefault(2223).JiIY1l);
+    return intl.string(importDefault(2225).JiIY1l);
   } else {
     return "";
   }

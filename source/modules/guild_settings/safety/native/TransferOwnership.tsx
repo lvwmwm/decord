@@ -1,10 +1,10 @@
-// Module ID: 11034
-// Function ID: 11035
+// Module ID: 11052
+// Function ID: 11053
 // Name: TransferOwnership
-// Dependencies: [5, 32, 19, 17, 1874, 11033, 676, 21, 4189, 712, 3893, 1480, 589, 38, 8301, 11031, 3889, 4379, 5566, 4185, 11035, 1297, 1236, 4028, 5554, 9088, 4600, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 11051, 676, 21, 4193, 712, 3897, 1480, 589, 38, 8308, 11049, 3893, 4383, 5570, 4189, 11053, 1297, 1236, 4032, 5558, 9099, 4604, 2]
 // Exports: default
 
-// Module 11034 (TransferOwnership)
+// Module 11052 (TransferOwnership)
 import closure_3 from "TransferOwnershipModalScenes";
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
@@ -99,11 +99,11 @@ export default function TransferOwnership(guild) {
               }
               const obj4 = v0(arr[14]);
               v0(arr[14]).transferOwnership(outer1_0.id, v0.id, MFA).then(() => {
-                v1(11031).close();
-                const obj = v1(11031);
-                v1(8301).close();
-                const obj2 = v1(8301);
-                const result = tmp2(3889).showTransferOwnershipSuccess();
+                v1(11049).close();
+                const obj = v1(11049);
+                v1(8308).close();
+                const obj2 = v1(8308);
+                const result = tmp2(3893).showTransferOwnershipSuccess();
               }, outer1_12);
               arr = 3;
               const transferOwnershipResult = v0(arr[14]).transferOwnership(outer1_0.id, v0.id, MFA);
@@ -163,7 +163,7 @@ export default function TransferOwnership(guild) {
       return tmp2(tmp3, obj1);
     }
   }
-  let obj = guild(3893);
+  let obj = guild(3897);
   const token = obj.useToken(toUser(712).modules.mobile.TABLE_ROW_PADDING);
   let tmp5 = createCacheKey();
   let obj1 = guild(1480);
@@ -176,7 +176,7 @@ export default function TransferOwnership(guild) {
     return currentUser;
   });
   [tmp8, c4] = callback(_handleTransfer.useState(false), 2);
-  let obj3 = toUser(4379);
+  let obj3 = toUser(4383);
   nickname = obj3.getNickname(guild.id, undefined, toUser);
   const hasAvatarForGuildResult = toUser.hasAvatarForGuild(guild.id);
   c7 = hasAvatarForGuildResult;
@@ -185,27 +185,27 @@ export default function TransferOwnership(guild) {
   obj1 = { paddingTop: toUser(712).space.PX_16, paddingHorizontal: token };
   obj[0] = obj1;
   obj2 = { style: tmp5.header, children: null };
-  obj3 = { source: toUser(11035), style: tmp5.arrow };
+  obj3 = { source: toUser(11053), style: tmp5.arrow };
   const items1 = [callback2(c7, obj3), , , ];
   let obj4 = { style: tmp5.avatarsWrapper, children: null };
   const obj5 = { user: stateFromStores, guildId: guild.id, size: null };
   obj5[2] = guild(1297).AvatarSizes.XXLARGE;
   const items2 = [callback2(guild(1297).Avatar, obj5), ];
   const obj6 = { style: tmp5.avatarFauxBorder, children: null };
-  const obj7 = { user: toUser, guildId: "r", size: null, style: null };
+  const obj7 = { user: toUser, guildId: "r", size: "ct", style: null };
   obj7[2] = guild(1297).AvatarSizes.XXLARGE;
   obj7[3] = tmp5.otherUserAvatar;
   obj6[1] = callback2(guild(1297).Avatar, obj7);
   items2[1] = callback2(nickname, obj6);
   obj4[1] = items2;
   items1[1] = callback3(nickname, obj4);
-  items1[2] = callback2(guild(4185).Text, { variant: "text-xs/medium", color: "text-default", children: guild.name });
+  items1[2] = callback2(guild(4189).Text, { variant: "text-xs/medium", color: "text-default", children: guild.name });
   if (null == nickname) {
     if (!hasAvatarForGuildResult) {
       const intl = tmp(1236).intl;
       const obj9 = { GuildHook: null, user: null };
       obj9[0] = GuildWithSmallIcon;
-      let tmp3Result = tmp3(4028);
+      let tmp3Result = tmp3(4032);
       obj9[1] = tmp3Result.getUserTag(toUser);
       let formatResult = intl.format(tmp(1236).t["2XLnG0"], obj9);
     }
@@ -250,14 +250,14 @@ export default function TransferOwnership(guild) {
     obj12[0] = tmp8;
     const intl3 = tmp(1236).intl;
     const obj13 = { username: null };
-    tmp3Result = tmp3(4028);
+    tmp3Result = tmp3(4032);
     obj13[0] = tmp3Result.getUserTag(toUser);
     obj12[1] = intl3.format(tmp(1236).t.xm6ACJ, obj13);
     obj12[2] = function handleConfirmToggle(arg0) {
       _undefined(arg0);
     };
-    obj11[2] = tmp11(tmp(9088).TableCheckboxRow, obj12);
-    items3[1] = tmp11(tmp(5554).TableRowGroup, obj11);
+    obj11[2] = tmp11(tmp(9099).TableCheckboxRow, obj12);
+    items3[1] = tmp11(tmp(5558).TableRowGroup, obj11);
     const obj14 = { onPress: null, text: null, disabled: null };
     obj14[0] = function handleTransfer() {
       const self = this;
@@ -272,7 +272,7 @@ export default function TransferOwnership(guild) {
     const intl4 = tmp(1236).intl;
     obj14[1] = intl4.string(tmp(1236).t.jqqLb6);
     obj14[2] = !tmp8;
-    items3[2] = tmp11(tmp(4600).Button, obj14);
+    items3[2] = tmp11(tmp(4604).Button, obj14);
     obj[1] = items3;
     obj[3] = tmp13(tmp14, obj);
     return tmp11(tmp12, obj);
@@ -282,11 +282,11 @@ export default function TransferOwnership(guild) {
   const obj8 = { variant: "text-xs/medium", color: "text-default", children: guild.name };
   tmp12 = closure_8;
   const tmp7 = callback(_handleTransfer.useState(false), 2);
-  obj15[1] = toUser(4028).getUserTag(toUser);
+  obj15[1] = toUser(4032).getUserTag(toUser);
   obj15[2] = function NicknameAKA() {
     const tmp = outer1_16();
     let obj = { style: tmp.aka, variant: "text-sm/bold", color: "text-default", children: ["AKA", " "] };
-    const items = [outer1_15(guild(4185).Text, obj), , ];
+    const items = [outer1_15(guild(4189).Text, obj), , ];
     let tmp6 = null;
     if (c7) {
       obj = { style: null, user: null, guildId: null, size: null };
@@ -302,7 +302,7 @@ export default function TransferOwnership(guild) {
       str = toUser.toString();
     }
     obj = { children: null };
-    items[2] = outer1_13(guild(4185).Text, { variant: "text-md/medium", children: str });
+    items[2] = outer1_13(guild(4189).Text, { variant: "text-md/medium", children: str });
     obj[0] = items;
     return outer1_15(outer1_14, obj);
   };

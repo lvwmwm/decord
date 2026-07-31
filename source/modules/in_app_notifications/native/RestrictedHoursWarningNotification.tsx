@@ -1,8 +1,8 @@
-// Module ID: 10375
-// Function ID: 10376
-// Dependencies: [19, 17, 10257, 676, 21, 4189, 712, 10376, 4395, 10258, 6608, 10330, 4185, 2]
+// Module ID: 10393
+// Function ID: 10394
+// Dependencies: [19, 17, 10275, 676, 21, 4193, 712, 10394, 4399, 10276, 6614, 10348, 4189, 2]
 
-// Module 10375
+// Module 10393
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { NOTIFICATION_PREVIEW_LINE_CLAMP as closure_5 } from "set";
@@ -26,7 +26,7 @@ const memoResult = importAllResult.memo(function RestrictedHoursWarningNotificat
   let obj = { style: callback().iconContainer, children: null };
   obj = { size: "sm", color: null };
   obj[1] = type(712).colors.WHITE;
-  obj[1] = jsx(notification(10376).ThemeDarkIcon, { size: "sm", color: null });
+  obj[1] = jsx(notification(10394).ThemeDarkIcon, { size: "sm", color: null });
   const items = [notification.title];
   const items1 = [type];
   const memo = importAllResult.useMemo(() => ({ type: "simple", text: notification.title }), items);
@@ -41,10 +41,10 @@ const memoResult = importAllResult.memo(function RestrictedHoursWarningNotificat
     notification(outer1_2[10]).openUserSettings(obj);
   }, items1);
   obj = { icon: <View size="sm" color={null} />, header: memo, children: null, onPress: null, notification: null };
-  obj[2] = jsx(notification(4185).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp: closure_5, children: notification.subtitle });
+  obj[2] = jsx(notification(4189).Text, { variant: "redesign/message-preview/medium", color: "text-subtle", lineClamp: closure_5, children: notification.subtitle });
   obj[3] = callback;
   obj[4] = notification;
-  return jsx(notification(10330).NotificationPressable, { icon: <View size="sm" color={null} />, header: memo, children: null, onPress: null, notification: null });
+  return jsx(notification(10348).NotificationPressable, { icon: <View size="sm" color={null} />, header: memo, children: null, onPress: null, notification: null });
 });
 const result = require("set").fileFinishedImporting("modules/in_app_notifications/native/RestrictedHoursWarningNotification.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 5842
-// Function ID: 5843
+// Module ID: 5847
+// Function ID: 5848
 // Name: map
 // Dependencies: [589, 709, 2]
 
-// Module 5842 (map)
+// Module 5847 (map)
 import { Store } from "initialize";
 
 let closure_0 = [];

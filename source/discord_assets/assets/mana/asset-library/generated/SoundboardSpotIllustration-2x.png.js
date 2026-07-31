@@ -1,9 +1,9 @@
-// Module ID: 7504
-// Function ID: 7505
+// Module ID: 7512
+// Function ID: 7513
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7504 (metadata)
+// Module 7512 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SoundboardSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/229c4dd0953e4f6771055112cd3b4190d56e2cbdbfa0f83b062f548236d951e4.png";

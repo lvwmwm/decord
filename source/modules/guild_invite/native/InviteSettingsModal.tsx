@@ -1,10 +1,10 @@
-// Module ID: 16627
-// Function ID: 16628
+// Module ID: 16656
+// Function ID: 16657
 // Name: AdvancedInstantInviteScreen
-// Dependencies: [32, 19, 1372, 8346, 1862, 3817, 676, 21, 4189, 712, 1480, 589, 38, 12, 16628, 8352, 4528, 1236, 4616, 709, 6749, 7631, 16629, 8347, 503, 5143, 5570, 2]
+// Dependencies: [32, 19, 1372, 8353, 1862, 3821, 676, 21, 4193, 712, 1480, 589, 38, 12, 16657, 8359, 4532, 1236, 4620, 709, 6755, 7639, 16658, 8354, 503, 5147, 5574, 2]
 // Exports: default
 
-// Module 16627 (AdvancedInstantInviteScreen)
+// Module 16656 (AdvancedInstantInviteScreen)
 import _slicedToArray from "_slicedToArray";
 import dispatcher from "dispatcher";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -79,7 +79,7 @@ function AdvancedInstantInviteScreen() {
       }
     }
   }, items1);
-  tmp2Result = tmp2(4616);
+  tmp2Result = tmp2(4620);
   const unmountEffect = tmp2Result.useUnmountEffect(() => {
     channel(tmp10[19]).wait(channel(tmp10[15]).resetSettings);
   });
@@ -146,15 +146,15 @@ function AdvancedInstantInviteScreen() {
   obj = { contentContainerStyle: tmp.formContainer, children: null };
   obj = { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: null, temporary: null, flags: null, roleIds: null, onChangeMaxAge: null, onChangeMaxUses: null, onChangeTemporary: null, onChangeFlags: null, onChangeRoleIds: null };
   let obj2 = navigation(589);
-  obj[5] = channel(8347).getMaxUsesOptions;
+  obj[5] = channel(8354).getMaxUsesOptions;
   ({ temporary: obj7[6], flags: obj7[7], roleIds: obj7[8] } = settings);
   obj[9] = callback2;
   obj[10] = callback1;
   obj[11] = callback3;
   obj[12] = callback4;
   obj[13] = callback5;
-  obj[1] = jsx(channel(16629), { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: null, temporary: null, flags: null, roleIds: null, onChangeMaxAge: null, onChangeMaxUses: null, onChangeTemporary: null, onChangeFlags: null, onChangeRoleIds: null });
-  return jsx(navigation(7631).Form, { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: null, temporary: null, flags: null, roleIds: null, onChangeMaxAge: null, onChangeMaxUses: null, onChangeTemporary: null, onChangeFlags: null, onChangeRoleIds: null });
+  obj[1] = jsx(channel(16658), { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: null, temporary: null, flags: null, roleIds: null, onChangeMaxAge: null, onChangeMaxUses: null, onChangeTemporary: null, onChangeFlags: null, onChangeRoleIds: null });
+  return jsx(navigation(7639).Form, { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: null, temporary: null, flags: null, roleIds: null, onChangeMaxAge: null, onChangeMaxUses: null, onChangeTemporary: null, onChangeFlags: null, onChangeRoleIds: null });
 }
 ({ InviteModalScenes: c9, Permissions: c10 } = ME);
 createCacheKey = { formContainer: null, formContent: null };
@@ -171,12 +171,12 @@ export default function InviteSettingsModal() {
     obj = { impressionName: callback(503).ImpressionNames.GUILD_INVITE_LINK_SETTINGS, title: null, headerLeft: null, render: null };
     const intl = callback(1236).intl;
     obj[1] = intl.string(callback(1236).t.Yx4IiC);
-    obj[2] = callback(5143).getHeaderCloseButton(callback2(8352).close);
+    obj[2] = callback(5147).getHeaderCloseButton(callback2(8359).close);
     obj[3] = function render() {
       return callback(closure_13, {});
     };
     obj[constants.ADVANCED] = obj;
     return obj;
   }, []);
-  return jsx(require(5570) /* NavigationStack */.Navigator, { screens: memo, initialRouteName: constants.ADVANCED });
+  return jsx(require(5574) /* NavigationStack */.Navigator, { screens: memo, initialRouteName: constants.ADVANCED });
 };

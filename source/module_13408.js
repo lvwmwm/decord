@@ -1,15 +1,15 @@
 // Module ID: 13408
 // Function ID: 13409
-// Dependencies: [13406]
+// Dependencies: [13399, 13409, 13407, 13410]
 
 // Module 13408
 
-export default (arg0, arg1) => {
-  const tmp = require(13406)(arg0);
-  if (tmp < 0) {
-    let tmp3 = max(tmp + arg1, 0);
-  } else {
-    tmp3 = min(tmp, arg1);
+export default require("prop") ? ((arg0) => typeof arg0 === "e") : ((arg0) => {
+  const tmp3 = require(13409) /* all */("Symbol");
+  let tmpResultResult = require(13407) /* all */(tmp3);
+  if (tmpResultResult) {
+    tmpResultResult = require(13410) /* call */(tmp3.prototype, Object(arg0));
+    const tmpResult = require(13410) /* call */;
   }
-  return tmp3;
-};
+  return tmpResultResult;
+});

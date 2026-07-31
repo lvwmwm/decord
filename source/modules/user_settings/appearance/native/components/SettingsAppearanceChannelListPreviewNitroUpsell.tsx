@@ -1,9 +1,9 @@
-// Module ID: 14314
-// Function ID: 14315
+// Module ID: 14337
+// Function ID: 14338
 // Name: SettingsAppearanceChannelListPreviewNitroUpsellComponent
-// Dependencies: [19, 17, 4181, 676, 21, 4050, 4611, 4599, 4603, 4189, 712, 5515, 5535, 9317, 9318, 4600, 1236, 1297, 589, 8433, 2]
+// Dependencies: [19, 17, 4185, 676, 21, 4054, 4615, 4603, 4607, 4193, 712, 5519, 5539, 9332, 9333, 4604, 1236, 1297, 589, 8446, 2]
 
-// Module 14314 (SettingsAppearanceChannelListPreviewNitroUpsellComponent)
+// Module 14337 (SettingsAppearanceChannelListPreviewNitroUpsellComponent)
 import importAllResult from "AnimatedRenderItem";
 import get_ActivityIndicator from "Button";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -11,7 +11,7 @@ import ME from "ME";
 import jsxProd from "jsxProd";
 import LinearGradient from "LinearGradient";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4050";
+import importDefaultResult from "module_4054";
 
 let c10;
 let c9;
@@ -23,7 +23,7 @@ function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
   theme = theme.theme;
   let analyticsLocations;
   const tmp = callback3();
-  let obj = theme(4050);
+  let obj = theme(4054);
   const fn = function l() {
     let num = 1;
     if (theme.theme === outer1_9.LIGHT) {
@@ -34,12 +34,12 @@ function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
     obj.opacity = theme(outer1_2[7]).withSpring(num, theme(outer1_2[8]).springStandard);
     return obj;
   };
-  obj = { theme, ThemeTypes: closure_9, StyleSheet, withSpring: theme(4599).withSpring, springStandard: theme(4603).springStandard };
+  obj = { theme, ThemeTypes: closure_9, StyleSheet, withSpring: theme(4603).withSpring, springStandard: theme(4607).springStandard };
   fn.__closure = obj;
   fn.__workletHash = 16911565077998;
   fn.__initData = closure_18;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  analyticsLocations = analyticsLocations(5515)(analyticsLocations(5535).CLIENT_THEMES_EDITOR).analyticsLocations;
+  analyticsLocations = analyticsLocations(5519)(analyticsLocations(5539).CLIENT_THEMES_EDITOR).analyticsLocations;
   const items = [analyticsLocations];
   obj = { style: tmp.nitroUpsell, children: null };
   const callback = importAllResult.useCallback(() => {
@@ -56,7 +56,7 @@ function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
   obj2[0] = intl.string(theme(1236).t.pj0XBN);
   obj2[1] = callback(theme(1297).NitroWheel, { style: tmp.nitroWheelIcon });
   obj2[3] = callback;
-  items1[1] = callback(theme(4600).Button, obj2);
+  items1[1] = callback(theme(4604).Button, obj2);
   obj[1] = items1;
   return callback2(View, obj);
 }
@@ -68,7 +68,7 @@ const View = get_ActivityIndicator.View;
 let closure_13 = ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 1)"];
 function animationEntering(value) {
   const obj = { opacity: null };
-  obj[0] = require(4599) /* CONFIG_NEVER_ANIMATE */.withSpring(value, require(4603) /* SUBTLE_SPRING */.springStandard);
+  obj[0] = require(4603) /* CONFIG_NEVER_ANIMATE */.withSpring(value, require(4607) /* SUBTLE_SPRING */.springStandard);
   return obj;
 }
 let obj = { withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, springStandard: require("SUBTLE_SPRING").springStandard };
@@ -87,7 +87,7 @@ function animationExiting(value, cleanUp) {
   fn.__closure = { cleanUp };
   fn.__workletHash = 15025873527064;
   fn.__initData = closure_15;
-  obj[0] = _require(4599).withSpring(value, _require(4603).springStandard, "respect-motion-settings", fn);
+  obj[0] = _require(4603).withSpring(value, _require(4607).springStandard, "respect-motion-settings", fn);
   return obj;
 }
 obj = { withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, springStandard: require("SUBTLE_SPRING").springStandard };
@@ -133,7 +133,7 @@ const memoResult = importAllResult.memo(function SettingsAppearanceChannelListPr
   obj[2] = animationEntering;
   obj[3] = animationExiting;
   obj[4] = callback;
-  return closure_10(importDefault(8433), obj);
+  return closure_10(importDefault(8446), obj);
 });
 const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceChannelListPreviewNitroUpsell.tsx");
 

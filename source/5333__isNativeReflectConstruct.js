@@ -1,13 +1,12 @@
 // Module ID: 5333
 // Function ID: 5334
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 96, 98, 5312]
+// Dependencies: [41, 42, 93, 95, 98, 5316]
 
 // Module 5333 (_isNativeReflectConstruct)
-import ManualGesture from "_classCallCheck";
+import FlingGesture from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
-import _get from "_get";
 import importDefaultResult from "_createClass";
 
 function _isNativeReflectConstruct() {
@@ -29,18 +28,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-function changeEventCalculator(arg0, arg1) {
-  return arg0;
-}
-changeEventCalculator.__closure = {};
-changeEventCalculator.__workletHash = 12945462865583;
-changeEventCalculator.__initData = { code: "function changeEventCalculator_Pnpm_manualGestureTs1(current,_previous){return current;}" };
-class ManualGesture {
+class FlingGesture {
   constructor() {
     self = this;
-    tmp = ManualGesture(this, ManualGesture);
+    tmp = FlingGesture(this, FlingGesture);
     tmp2 = __esModule;
-    obj = __esModule(ManualGesture);
+    obj = __esModule(FlingGesture);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
@@ -50,26 +43,27 @@ class ManualGesture {
       constructResult = obj.apply(self, undefined);
     }
     tmp3Result = tmp3(self, constructResult);
-    tmp3Result.handlerName = "ManualGestureHandler";
+    tmp3Result.config = {};
+    tmp3Result.handlerName = "FlingGestureHandler";
     return tmp3Result;
   }
 }
-require("_inherits")(ManualGesture, require("_isNativeReflectConstruct").ContinousBaseGesture);
-let items = [
+require("_inherits")(FlingGesture, require("_isNativeReflectConstruct").BaseGesture);
+const items = [
   {
-    key: "onChange",
-    value: function onChange(arg0) {
-      this.handlers.changeEventCalculator = changeEventCalculator;
-      const self = this;
-      let fn;
-      fn = callback2(callback(self.prototype), "onChange", this);
-      if (typeof fn !== "ZodObject") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [arg0];
-      return fn(items);
+    key: "numberOfPointers",
+    value: function numberOfPointers(numberOfPointers) {
+      this.config.numberOfPointers = numberOfPointers;
+      return this;
+    }
+  },
+  {
+    key: "direction",
+    value: function direction(DOWN) {
+      this.config.direction = DOWN;
+      return this;
     }
   }
 ];
 
-export const ManualGesture = importDefaultResult(ManualGesture, items);
+export const FlingGesture = importDefaultResult(FlingGesture, items);

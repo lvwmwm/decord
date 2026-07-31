@@ -1,8 +1,8 @@
-// Module ID: 11522
-// Function ID: 11523
-// Dependencies: [19, 17, 1862, 11151, 676, 21, 4189, 712, 589, 4157, 8450, 1959, 4384, 4717, 5566, 4185, 8461, 1297, 5565, 1236, 11523, 2]
+// Module ID: 11539
+// Function ID: 11540
+// Dependencies: [19, 17, 1862, 11169, 676, 21, 4193, 712, 589, 4161, 8463, 1959, 4388, 4721, 5570, 4189, 8474, 1297, 5569, 1236, 11540, 2]
 
-// Module 11522
+// Module 11539
 import importAllResult from "getSystemLocale";
 import { View } from "Button";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -56,44 +56,44 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurkingPreviewBar
     obj[3] = stateFromStores.name;
     const obj1 = { guild: null, size: null, style: null };
     obj1[0] = stateFromStores;
-    obj1[1] = tmp2(5566).GuildIconSizes.LARGE;
+    obj1[1] = tmp2(5570).GuildIconSizes.LARGE;
     obj1[2] = tmp.guildIcon;
-    const items3 = [callback(importDefault(5566), obj1), ];
+    const items3 = [callback(importDefault(5570), obj1), ];
     const obj2 = { style: null, children: null };
     obj2[0] = tmp.textColumn;
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.nameRow;
     const obj4 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, children: null };
     obj4[3] = stateFromStores.name;
-    const items4 = [callback(tmp2(4185).Text, obj4), , ];
+    const items4 = [callback(tmp2(4189).Text, obj4), , ];
     const obj5 = { size: null, guild: null, style: null };
-    const tmp12 = importDefault(5566);
+    const tmp12 = importDefault(5570);
     obj5[0] = tmp2(1297).Icon.Sizes.SMALL;
     obj5[1] = stateFromStores;
     obj5[2] = tmp.badge;
-    items4[1] = callback(importDefault(8461), obj5);
+    items4[1] = callback(importDefault(8474), obj5);
     const obj6 = { size: "xs", color: null, style: null };
     obj6[1] = importDefault(712).colors.TEXT_MUTED;
     obj6[2] = tmp.chevron;
-    items4[2] = callback(tmp2(5565).ChevronSmallRightIcon, obj6);
+    items4[2] = callback(tmp2(5569).ChevronSmallRightIcon, obj6);
     obj3[1] = items4;
     const items5 = [callback2(View, obj3), ];
     const obj7 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 1, children: null };
     const intl = tmp2(1236).intl;
     obj7[3] = intl.string(tmp2(1236).t.BRSnEj);
-    items5[1] = callback(tmp2(4185).Text, obj7);
+    items5[1] = callback(tmp2(4189).Text, obj7);
     obj2[1] = items5;
     items3[1] = callback2(View, obj2);
     obj[4] = items3;
-    const items6 = [callback2(tmp2(4717).PressableOpacity, obj), ];
+    const items6 = [callback2(tmp2(4721).PressableOpacity, obj), ];
     const obj8 = { guildId: null, joinSource: null, onBeforeJoin: null };
     obj8[0] = guildId;
     obj8[1] = constants.CHAT_INPUT_BLOCKER;
     obj8[2] = tmp6;
-    items6[1] = callback(importDefault(11523), obj8);
+    items6[1] = callback(importDefault(11540), obj8);
     obj[1] = items6;
     tmp7 = callback2(View, obj);
-    const tmp13 = importDefault(8461);
+    const tmp13 = importDefault(8474);
   }
   return tmp7;
 });

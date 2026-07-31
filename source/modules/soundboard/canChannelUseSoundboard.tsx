@@ -1,10 +1,10 @@
-// Module ID: 10779
-// Function ID: 10780
+// Module ID: 10797
+// Function ID: 10798
 // Name: canChannelUseSoundboard
-// Dependencies: [1372, 3817, 1931, 676, 589, 2]
+// Dependencies: [1372, 3821, 1931, 676, 589, 2]
 // Exports: canSelectedVoiceChannelUseSoundboard, default, useCanChannelUseSoundboard
 
-// Module 10779 (canChannelUseSoundboard)
+// Module 10797 (canChannelUseSoundboard)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import handleConnectionOpen from "handleConnectionOpen";

@@ -1,9 +1,9 @@
-// Module ID: 11649
-// Function ID: 11650
+// Module ID: 11667
+// Function ID: 11668
 // Name: handleModifyingAppliedBoostStart
 // Dependencies: [589, 709, 2]
 
-// Module 11649 (handleModifyingAppliedBoostStart)
+// Module 11667 (handleModifyingAppliedBoostStart)
 import { Store } from "initialize";
 
 function handleModifyingAppliedBoostStart() {

@@ -1,14 +1,13 @@
-// Module ID: 4234
-// Function ID: 4235
+// Module ID: 4238
+// Function ID: 4239
 // Name: addSku
-// Dependencies: [4228, 1946, 4221, 589, 709, 2]
+// Dependencies: [4232, 1946, 589, 709, 2]
 
-// Module 4234 (addSku)
+// Module 4238 (addSku)
 import createFromServer from "createFromServer";
 import _getSystemLocale from "_getSystemLocale";
-import gameFromServer from "gameFromServer";
 import { Store } from "initialize";
-import set from "gameFromServer";
+import set from "initialize";
 
 function addSku(sku) {
   let closure_0 = sku;
@@ -43,7 +42,7 @@ function addSku(sku) {
   const bundled_sku_ids = sku.bundled_sku_ids;
   if (bundled_sku_ids != null) {
     const item = bundled_sku_ids.forEach((arg0) => {
-      const result = outer1_4.set(arg0, sku.id);
+      const result = outer1_3.set(arg0, sku.id);
     });
   }
   if (!map2.has(sku.application_id)) {
@@ -113,7 +112,7 @@ class SKUStore extends Store {
 }
 const prototype = SKUStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(_getSystemLocale, gameFromServer);
+  this.waitFor(_getSystemLocale);
   const items = [_getSystemLocale];
   this.syncWith(items, handleUserSettingsStoreUpdate);
   const locale = _getSystemLocale.locale;
@@ -127,7 +126,7 @@ prototype["getForApplication"] = function getForApplication(arg0) {
     let items = [];
   } else {
     const _Array = Array;
-    items = Array.from(value).map((arg0) => closure_7.get(arg0));
+    items = Array.from(value).map((arg0) => closure_6.get(arg0));
     const arr = Array.from(value);
   }
   return items;

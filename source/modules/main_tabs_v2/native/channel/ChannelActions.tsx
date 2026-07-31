@@ -1,10 +1,10 @@
-// Module ID: 9123
-// Function ID: 9124
+// Module ID: 9136
+// Function ID: 9137
 // Name: JoinCallButton
-// Dependencies: [19, 17, 5097, 1376, 1372, 4205, 9124, 676, 9125, 21, 4189, 9079, 712, 9126, 9128, 9129, 9135, 589, 6046, 12, 9136, 9263, 4399, 1236, 10047, 8291, 10048, 9131, 500, 4048, 10096, 10097, 10114, 1231, 4041, 10118, 4688, 10119, 10120, 10121, 4403, 10122, 10124, 2]
+// Dependencies: [19, 17, 5101, 1376, 1372, 4209, 9137, 676, 9138, 21, 4193, 9092, 712, 9139, 9141, 9142, 9148, 589, 6052, 12, 9149, 9276, 4403, 1236, 10064, 8298, 10065, 9144, 500, 4052, 10113, 10114, 10131, 1231, 4045, 10135, 4692, 10136, 10137, 10138, 4407, 10139, 10141, 2]
 // Exports: default
 
-// Module 9123 (JoinCallButton)
+// Module 9136 (JoinCallButton)
 import "apply";
 import { View } from "initialize";
 import handleThreadCreateOrUpdate from "handleThreadCreateOrUpdate";
@@ -25,12 +25,12 @@ const require = arg1;
 function JoinCallButton() {
   const obj = { size: "sm", color: null };
   obj[1] = importDefault(712).unsafe_rawColors.GREEN_360;
-  return jsx(require(9079) /* PhoneCallIcon */.PhoneCallIcon, { size: "sm", color: null });
+  return jsx(require(9092) /* PhoneCallIcon */.PhoneCallIcon, { size: "sm", color: null });
 }
 function EndCallButton() {
   const obj = { size: "sm", color: null };
   obj[1] = importDefault(712).unsafe_rawColors.RED_400;
-  return jsx(require(9126) /* PhoneHangUpIcon */.PhoneHangUpIcon, { size: "sm", color: null });
+  return jsx(require(9139) /* PhoneHangUpIcon */.PhoneHangUpIcon, { size: "sm", color: null });
 }
 function ChannelActionButtons(channel) {
   channel = channel.channel;
@@ -225,7 +225,7 @@ function WrappedChannelNavButtons(channelId) {
   let obj = channelId(589);
   const items = [ensureGuildLoaded];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getChannel(channelId));
-  channelId(4403);
+  channelId(4407);
   let tmp4 = null;
   if (null != stateFromStores) {
     tmp4 = null;
@@ -278,12 +278,12 @@ export default function ChannelActions(channelId) {
     return obj;
   });
   ({ isMultiUserDM, isDM } = stateFromStoresObject);
-  let obj1 = channelId(9129);
+  let obj1 = channelId(9142);
   obj = { style: containerStyle, children: null };
   if (obj1.useHasForumSearchQuery(channelId)) {
     obj = { channelId: null };
     obj[0] = channelId;
-    let tmp4Result = tmp4(channelId(10122).ForumChannelCloseSearchButton, obj);
+    let tmp4Result = tmp4(channelId(10139).ForumChannelCloseSearchButton, obj);
   } else {
     if (!isDM) {
       if (!isMultiUserDM) {
@@ -297,7 +297,7 @@ export default function ChannelActions(channelId) {
     const obj2 = { channelId: null, screenIndex: null };
     obj2[0] = channelId;
     obj2[1] = screenIndex;
-    tmp4Result = tmp4(importDefault(10124), obj2);
+    tmp4Result = tmp4(importDefault(10141), obj2);
   }
   obj[1] = tmp4Result;
   return <View style={containerStyle}>{null}</View>;

@@ -1,10 +1,10 @@
-// Module ID: 15113
-// Function ID: 15114
+// Module ID: 15139
+// Function ID: 15140
 // Name: useStickyServerHeaderSubtitle
-// Dependencies: [4110, 676, 589, 2]
+// Dependencies: [4114, 676, 589, 2]
 // Exports: default
 
-// Module 15113 (useStickyServerHeaderSubtitle)
+// Module 15139 (useStickyServerHeaderSubtitle)
 import handleInviteData from "handleInviteData";
 import { GuildFeatures } from "ME";
 

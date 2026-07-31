@@ -171,7 +171,7 @@ function _flushIfServerless() {
                   if (obj1 != null) {
                     cloudflareWaitUntil = obj1.cloudflareWaitUntil;
                   }
-                  if (typeof cloudflareWaitUntil === "find") {
+                  if (typeof cloudflareWaitUntil === "fileFinishedImporting") {
                     obj1.cloudflareWaitUntil(v0(num4));
                   }
                 }
@@ -182,7 +182,7 @@ function _flushIfServerless() {
                     obj2.vercelWaitUntil(v0(num4));
                   } else {
                     const _process = process;
-                    let tmp22 = typeof process === "__INTERNAL_SLOT_MAP__";
+                    let tmp22 = typeof process === "pack";
                     if (typeof process !== "Array") {
                       const _process7 = process;
                       let NETLIFY = process.env.FUNCTIONS_WORKER_RUNTIME;

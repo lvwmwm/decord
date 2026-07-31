@@ -1,9 +1,9 @@
-// Module ID: 5523
-// Function ID: 5524
+// Module ID: 5527
+// Function ID: 5528
 // Name: tokensToAppTokensMap
-// Dependencies: [5, 5123, 676, 4074, 709, 530, 2]
+// Dependencies: [5, 5127, 676, 4078, 709, 530, 2]
 
-// Module 5523 (tokensToAppTokensMap)
+// Module 5527 (tokensToAppTokensMap)
 import sendRequest from "sendRequest";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
 import { FetchState } from "recomputeFromAppTokens";
@@ -128,8 +128,8 @@ function _fetchAuthorizedApps() {
   return applyArgumentsResult;
 }
 let obj = {
-  predicate(applicationId) {
-    return store.getFetchStateForApplication(applicationId) !== FetchState.FETCHING;
+  predicate(arg0) {
+    return store.getFetchStateForApplication(arg0) !== FetchState.FETCHING;
   },
   onQueued(applicationIds) {
     let request = importDefault(709);

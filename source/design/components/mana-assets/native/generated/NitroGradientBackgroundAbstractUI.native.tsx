@@ -1,10 +1,10 @@
-// Module ID: 7305
-// Function ID: 7306
+// Module ID: 7313
+// Function ID: 7314
 // Name: NitroGradientBackgroundAbstractUI
-// Dependencies: [21, 5141, 7306, 2]
+// Dependencies: [21, 5145, 7314, 2]
 // Exports: NitroGradientBackgroundAbstractUI
 
-// Module 7305 (NitroGradientBackgroundAbstractUI)
+// Module 7313 (NitroGradientBackgroundAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroGradientBackgroundAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const NitroGradientBackgroundAbstractUI = function NitroGradientBackgroun
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7306);
+  obj[0] = importDefault(7314);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const NitroGradientBackgroundAbstractUI = function NitroGradientBackgroun
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
 };

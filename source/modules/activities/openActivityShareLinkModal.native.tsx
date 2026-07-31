@@ -1,10 +1,10 @@
-// Module ID: 13537
-// Function ID: 13538
+// Module ID: 13561
+// Function ID: 13562
 // Name: ACTIVITY_SHARE_LINK_MODAL
-// Dependencies: [4048, 4395, 13538, 1959, 2]
+// Dependencies: [4052, 4399, 13562, 1959, 2]
 // Exports: closeActivityShareLinkModal, openActivityShareLinkModal
 
-// Module 13537 (ACTIVITY_SHARE_LINK_MODAL)
+// Module 13561 (ACTIVITY_SHARE_LINK_MODAL)
 const ACTIVITY_SHARE_LINK_MODAL = "ACTIVITY_SHARE_LINK_MODAL";
 const result = require("ActivityShareLinkModal").fileFinishedImporting("modules/activities/openActivityShareLinkModal.native.tsx");
 
@@ -16,11 +16,11 @@ export const openActivityShareLinkModal = function openActivityShareLinkModal(ar
   let message;
   let onShare;
   ({ applicationId, customId, linkId, message, onShare } = arg0);
-  let obj = require(4048) /* getBestActiveInput */;
+  let obj = require(4052) /* getBestActiveInput */;
   obj.dismissKeyboard();
   obj = { applicationId, customId, linkId, message, onShare };
-  importDefault(4395).pushLazy(require(1959) /* asyncRequireImpl */(13538, dependencyMap.paths), obj, ACTIVITY_SHARE_LINK_MODAL, { presentation: "modal" });
+  importDefault(4399).pushLazy(require(1959) /* asyncRequireImpl */(13562, dependencyMap.paths), obj, ACTIVITY_SHARE_LINK_MODAL, { presentation: "modal" });
 };
 export const closeActivityShareLinkModal = function closeActivityShareLinkModal() {
-  importDefault(4395).popWithKey(ACTIVITY_SHARE_LINK_MODAL);
+  importDefault(4399).popWithKey(ACTIVITY_SHARE_LINK_MODAL);
 };

@@ -1,10 +1,10 @@
-// Module ID: 8901
-// Function ID: 8902
+// Module ID: 8914
+// Function ID: 8915
 // Name: useSecureFramesUserVerifiedKeysCount
-// Dependencies: [19, 8872, 8873, 589, 2]
+// Dependencies: [19, 8885, 8886, 589, 2]
 // Exports: useSecureFramesUserVerifiedKeysCount
 
-// Module 8901 (useSecureFramesUserVerifiedKeysCount)
+// Module 8914 (useSecureFramesUserVerifiedKeysCount)
 import noop from "noop";
 import initialize from "initialize";
 

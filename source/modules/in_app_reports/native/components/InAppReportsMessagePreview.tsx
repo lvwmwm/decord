@@ -1,10 +1,10 @@
-// Module ID: 7709
-// Function ID: 7710
+// Module ID: 7717
+// Function ID: 7718
 // Name: MessagePreview
-// Dependencies: [19, 17, 21, 4189, 712, 7710, 4033, 4185, 1236, 9286, 2]
+// Dependencies: [19, 17, 21, 4193, 712, 7718, 4037, 4189, 1236, 9301, 2]
 // Exports: default
 
-// Module 7709 (MessagePreview)
+// Module 7717 (MessagePreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,15 +27,15 @@ const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/
 
 export default function MessagePreview(message) {
   const tmp = createCacheKey();
-  let obj = require(4033) /* hexToRgba */;
+  let obj = require(4037) /* hexToRgba */;
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.iouM3a);
-  const items = [callback(require(4185) /* Text */.Text, obj), ];
+  const items = [callback(require(4189) /* Text */.Text, obj), ];
   const hexWithOpacityResult = obj.hexWithOpacity(tmp.borderColor.color, 0.08);
   const items1 = [tmp.chatItemContainer, { borderColor: hexWithOpacityResult }];
-  items[1] = callback(View, { style: items1, children: callback(importDefault(9286), obj2) });
+  items[1] = callback(View, { style: items1, children: callback(importDefault(9301), obj2) });
   obj[1] = items;
   return callback2(View, obj);
 };

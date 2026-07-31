@@ -1,9 +1,9 @@
-// Module ID: 16184
-// Function ID: 16185
+// Module ID: 16212
+// Function ID: 16213
 // Name: prototype
-// Dependencies: [1942, 1862, 4006, 676, 3805, 5134, 5110, 1384, 2]
+// Dependencies: [1942, 1862, 4010, 676, 3809, 5138, 5114, 1384, 2]
 
-// Module 16184 (prototype)
+// Module 16212 (prototype)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -64,7 +64,7 @@ let prototype = function GuildOnboardingManager() {
     }
   };
   applyArgumentsResult.handleGuildDelete = function handleGuildDelete(guild) {
-    const result = applyArgumentsResult(5110).discardOnboardingPromise(guild.guild.id);
+    const result = applyArgumentsResult(5114).discardOnboardingPromise(guild.guild.id);
   };
   applyArgumentsResult._openOnboardingIfIncomplete = function _openOnboardingIfIncomplete(outer1_8) {
     guild = guild.getGuild(outer1_8);
@@ -92,7 +92,7 @@ let prototype = function GuildOnboardingManager() {
         if (hasFlagResult) {
           obj = { guildId: null };
           obj[0] = outer1_8;
-          callback(5110)(obj);
+          callback(5114)(obj);
         }
       }
     }

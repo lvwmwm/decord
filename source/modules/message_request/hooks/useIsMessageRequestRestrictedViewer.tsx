@@ -1,17 +1,17 @@
-// Module ID: 11528
-// Function ID: 11529
+// Module ID: 11545
+// Function ID: 11546
 // Name: useIsMessageRequestRestrictedViewer
-// Dependencies: [4405, 3868, 3875, 11529, 2]
+// Dependencies: [4409, 3872, 3879, 11546, 2]
 // Exports: useIsMessageRequestRestrictedViewer
 
-// Module 11528 (useIsMessageRequestRestrictedViewer)
+// Module 11545 (useIsMessageRequestRestrictedViewer)
 const result = require("SettingsDefaultFeature").fileFinishedImporting("modules/message_request/hooks/useIsMessageRequestRestrictedViewer.tsx");
 
 export const useIsMessageRequestRestrictedViewer = function useIsMessageRequestRestrictedViewer(ChatInputGuardMessageRequest) {
-  let obj = require(4405) /* useShouldCallReactiveCheck */;
+  let obj = require(4409) /* useAgeVerificationRunner */;
   const isExplicitlyVerifiedAdult = obj.useIsExplicitlyVerifiedAdult();
-  const isSettingTeenByDefault = require(3868) /* isFeatureAgeGated */.useIsSettingTeenByDefault(require(3875) /* SettingsDefaultFeature */.SettingsDefaultFeature.MESSAGE_REQUEST_RESTRICTIONS);
-  const obj2 = require(3868) /* isFeatureAgeGated */;
+  const isSettingTeenByDefault = require(3872) /* isFeatureAgeGated */.useIsSettingTeenByDefault(require(3879) /* SettingsDefaultFeature */.SettingsDefaultFeature.MESSAGE_REQUEST_RESTRICTIONS);
+  const obj2 = require(3872) /* isFeatureAgeGated */;
   obj = { location: ChatInputGuardMessageRequest };
   let enabled = !isExplicitlyVerifiedAdult;
   if (!isExplicitlyVerifiedAdult) {

@@ -1,10 +1,10 @@
-// Module ID: 8051
-// Function ID: 8052
+// Module ID: 8057
+// Function ID: 8058
 // Name: getCachedSourceFromURI
-// Dependencies: [32, 19, 17, 1386, 4033, 712, 643, 2]
+// Dependencies: [32, 19, 17, 1386, 4037, 712, 643, 2]
 // Exports: getCachedSourceFromURI, useDominantColorFromImage, useDominantRGBFromImage
 
-// Module 8051 (getCachedSourceFromURI)
+// Module 8057 (getCachedSourceFromURI)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -52,8 +52,8 @@ export const useDominantRGBFromImage = function useDominantRGBFromImage(arg0) {
     hexToRgbResult = tmp3.get(arg0);
   }
   if (hexToRgbResult == null) {
-    hexToRgbResult = _require(4033).hexToRgb(importDefault(712).unsafe_rawColors.PRIMARY_800);
-    const obj2 = _require(4033);
+    hexToRgbResult = _require(4037).hexToRgb(importDefault(712).unsafe_rawColors.PRIMARY_800);
+    const obj2 = _require(4037);
   }
   const tmp7 = callback(React.useState(hexToRgbResult), 2);
   const dependencyMap = tmp7[1];
@@ -138,8 +138,8 @@ export const useDominantColorFromImage = function useDominantColorFromImage(arg0
     hexToRgbResult = tmp3.get(arg0);
   }
   if (hexToRgbResult == null) {
-    hexToRgbResult = _require(4033).hexToRgb(importDefault(712).unsafe_rawColors.PRIMARY_800);
-    const obj2 = _require(4033);
+    hexToRgbResult = _require(4037).hexToRgb(importDefault(712).unsafe_rawColors.PRIMARY_800);
+    const obj2 = _require(4037);
   }
   [tmp8, dependencyMap] = callback(React.useState(hexToRgbResult), 2);
   const items = [arg0];

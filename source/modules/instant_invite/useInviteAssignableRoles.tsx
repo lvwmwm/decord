@@ -1,10 +1,10 @@
-// Module ID: 16631
-// Function ID: 16632
+// Module ID: 16660
+// Function ID: 16661
 // Name: useInviteAssignableRoles
-// Dependencies: [19, 1936, 1935, 3817, 1874, 676, 589, 3822, 2]
+// Dependencies: [19, 1936, 1935, 3821, 1874, 676, 589, 3826, 2]
 // Exports: default
 
-// Module 16631 (useInviteAssignableRoles)
+// Module 16660 (useInviteAssignableRoles)
 import noop from "noop";
 import { isEveryoneRole } from "GuildRoleRecordTypeTag";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";

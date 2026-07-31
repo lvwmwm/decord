@@ -1,10 +1,10 @@
-// Module ID: 10256
-// Function ID: 10257
+// Module ID: 10274
+// Function ID: 10275
 // Name: extractMetadataFromNotification
-// Dependencies: [19, 10257, 676, 12, 514, 501, 687, 5882, 4384, 2]
+// Dependencies: [19, 10275, 676, 12, 514, 501, 687, 5887, 4388, 2]
 // Exports: generateInAppNotificationId, getMessagePreviewTextVariant, getNotificationDuration, isReactionMilestoneNotification, trackDismissed, trackInAppNotificationAccessoryClicked, useHasPreviewableMedia
 
-// Module 10256 (extractMetadataFromNotification)
+// Module 10274 (extractMetadataFromNotification)
 import noop from "noop";
 import { REACTION_MILESTONE_COUNTS } from "set";
 import ME from "ME";
@@ -240,7 +240,7 @@ export const trackInAppNotificationAccessoryClicked = function trackInAppNotific
   let guildId;
   let messageId;
   ({ guildId, channelId, messageId } = extractMetadataFromNotification(notification));
-  let obj = importDefault(4384);
+  let obj = importDefault(4388);
   obj = { type: notification.type, in_app_notification_id: notification.inAppNotificationId, notif_guild_id: guildId, notif_channel_id: channelId, message_id: messageId, accessory: REACTION_BUTTON };
   obj.trackWithMetadata(constants.IN_APP_NOTIFICATION_ACCESSORY_CLICKED, obj);
 };
@@ -252,5 +252,5 @@ export const trackDismissed = function trackDismissed(arg0) {
   let messageId;
   let type;
   ({ guildId, channelId, type, dismissReason, inAppNotificationId, messageId } = arg0);
-  importDefault(4384).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, { type, guild_id: guildId, channel_id: channelId, dismiss_reason: dismissReason, in_app_notification_id: inAppNotificationId, message_id: messageId });
+  importDefault(4388).trackWithMetadata(constants.IN_APP_NOTIFICATION_DISMISSED, { type, guild_id: guildId, channel_id: channelId, dismiss_reason: dismissReason, in_app_notification_id: inAppNotificationId, message_id: messageId });
 };

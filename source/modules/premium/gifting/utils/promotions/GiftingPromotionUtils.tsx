@@ -1,10 +1,10 @@
-// Module ID: 8803
-// Function ID: 8804
+// Module ID: 8816
+// Function ID: 8817
 // Name: useFetchClaimableGiftingPromotionRewardSkuIds
-// Dependencies: [32, 19, 6259, 1876, 589, 7954, 8804, 6564, 4005, 1358, 2]
+// Dependencies: [32, 19, 6265, 1876, 589, 7961, 8817, 6570, 4009, 1358, 2]
 // Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useFetchClaimableGiftingPromotionRewardSkuIds, useIsPlanEligibleForGiftingPromotion, useShouldAutoSelectGiftingPromotionReward, useShouldShowSelectFreeSkuStep
 
-// Module 8803 (useFetchClaimableGiftingPromotionRewardSkuIds)
+// Module 8816 (useFetchClaimableGiftingPromotionRewardSkuIds)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import createEmptyPromotionsByType from "createEmptyPromotionsByType";
@@ -174,9 +174,9 @@ export const combinePromotionStyles = function combinePromotionStyles(background
   return tmp;
 };
 export const shouldShowGiftPromotionReminderNotice = function shouldShowGiftPromotionReminderNotice() {
-  const GiftPromotionReminderExperiment = require(8804) /* apexExperiment */.GiftPromotionReminderExperiment;
+  const GiftPromotionReminderExperiment = require(8817) /* apexExperiment */.GiftPromotionReminderExperiment;
   if (GiftPromotionReminderExperiment.getConfig({ location: "shouldShowGiftPromotionReminderNotice" }).enabled) {
-    if (null == marketingComponentByType.getMarketingComponentByType(tmp(6564).MarketingComponentType.GIFT_REMINDER_NAGBAR)) {
+    if (null == marketingComponentByType.getMarketingComponentByType(tmp(6570).MarketingComponentType.GIFT_REMINDER_NAGBAR)) {
       return false;
     } else {
       const giftPromotion = obj.getGiftPromotion();
@@ -186,10 +186,10 @@ export const shouldShowGiftPromotionReminderNotice = function shouldShowGiftProm
       }
       let tmp5 = null != id;
       if (tmp5) {
-        let tmpResult = tmp(4005);
+        let tmpResult = tmp(4009);
         let isDismissed = tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(1358).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
         if (isDismissed) {
-          tmpResult = tmp(4005);
+          tmpResult = tmp(4009);
           isDismissed = !tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(1358).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
         }
         tmp5 = isDismissed;

@@ -104,8 +104,8 @@ function checkRouteForAsyncHandler(item10034, outer1_18) {
         let tmp2 = item10008;
         let tmp3 = arg0.handle[item10008];
         let tmp4 = tmp3;
-        let __sentry_proxied__ = typeof tmp3 === "ZodObject";
-        if (typeof tmp3 !== "ZodObject") {
+        let __sentry_proxied__ = typeof tmp3 === "disabledUntil";
+        if (typeof tmp3 !== "disabledUntil") {
           let tmp18 = tmp3;
           __sentry_proxied__ = tmp4.__sentry_proxied__;
         }

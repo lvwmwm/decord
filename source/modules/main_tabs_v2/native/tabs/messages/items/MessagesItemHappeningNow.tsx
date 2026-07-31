@@ -1,10 +1,10 @@
-// Module ID: 15046
-// Function ID: 15047
+// Module ID: 15072
+// Function ID: 15073
 // Name: HappeningNowItem
-// Dependencies: [19, 17, 14307, 21, 1348, 712, 4189, 3893, 7968, 15047, 2]
+// Dependencies: [19, 17, 14330, 21, 1348, 712, 4193, 3897, 7975, 15073, 2]
 // Exports: getMessagesItemHappeningNowHeight
 
-// Module 15046 (HappeningNowItem)
+// Module 15072 (HappeningNowItem)
 import { View } from "get ActivityIndicator";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
 import { jsx } from "jsxProd";
@@ -28,12 +28,12 @@ let closure_7 = createCacheKey.createStyles((height) => {
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemHappeningNow.tsx");
 
 export default require("noop").memo(function MessagesItemHappeningNow(listRef) {
-  let obj = require(3893) /* map */;
+  let obj = require(3897) /* map */;
   obj = { backgroundColor: null, children: null };
   obj = { style: callback(closure_4 + obj.useToken(importDefault(712).modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM)).container, collapsable: false, children: null };
-  obj[2] = jsx(importDefault(15047), { cards: set, listRef: listRef.listRef });
+  obj[2] = jsx(importDefault(15073), { cards: set, listRef: listRef.listRef });
   obj[1] = <View style={callback(closure_4 + obj.useToken(importDefault(712).modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM)).container} collapsable={false}>{null}</View>;
-  return jsx(require(7968) /* useCutoutBackgroundColor */.CutoutBackgroundProvider, { style: callback(closure_4 + obj.useToken(importDefault(712).modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM)).container, collapsable: false, children: null });
+  return jsx(require(7975) /* useCutoutBackgroundColor */.CutoutBackgroundProvider, { style: callback(closure_4 + obj.useToken(importDefault(712).modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM)).container, collapsable: false, children: null });
 });
 export const getMessagesItemHappeningNowHeight = function getMessagesItemHappeningNowHeight(closure_0) {
   return require(1348) /* useIsMobileVisualRefreshExperimentEnabled */.resolveRefreshToken(importDefault(712).modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM, closure_0) + closure_4;

@@ -1,10 +1,10 @@
-// Module ID: 14876
-// Function ID: 14877
+// Module ID: 14899
+// Function ID: 14900
 // Name: RegisterAccountInformation
-// Dependencies: [5, 32, 19, 17, 5643, 4174, 8350, 14854, 14855, 676, 21, 4189, 712, 4050, 9189, 14852, 589, 14877, 14879, 14862, 1236, 14870, 14853, 14869, 9211, 14880, 14881, 4600, 8995, 5638, 2]
+// Dependencies: [5, 32, 19, 17, 5647, 4178, 8357, 14877, 14878, 676, 21, 4193, 712, 4054, 9202, 14875, 589, 14900, 14902, 14885, 1236, 14893, 14876, 14892, 9224, 14903, 14904, 4604, 9008, 5642, 2]
 // Exports: default
 
-// Module 14876 (RegisterAccountInformation)
+// Module 14899 (RegisterAccountInformation)
 import updateInvite from "updateInvite";
 import _slicedToArray from "_slicedToArray";
 import trackRegTransition from "trackRegTransition";
@@ -17,8 +17,8 @@ import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes
 import { AuthStates } from "ME";
 import jsxProd from "useAuthFlowBackHandler";
 import createCacheKey from "createCacheKey";
-import { LinearTransition } from "module_4050";
-import { Easing } from "module_4050";
+import { LinearTransition } from "module_4054";
+import { Easing } from "module_4054";
 
 let closure_12;
 let closure_14;
@@ -50,7 +50,7 @@ let closure_19 = createCacheKey.createStyles((arg0) => {
 });
 createCacheKey = { layout: null };
 createCacheKey[0] = require("module_300");
-const easingResult = LinearTransition.easing(Easing.inOut(require("module_4050").Easing.quad));
+const easingResult = LinearTransition.easing(Easing.inOut(require("module_4054").Easing.quad));
 let result = require("noop").fileFinishedImporting("modules/auth/native/components/RegisterAccountInformation.tsx");
 
 export default function RegisterAccountInformation() {
@@ -178,10 +178,10 @@ export default function RegisterAccountInformation() {
     }
     return applyArgumentsResult;
   }
-  const tmp3 = importDefault(9189)();
+  const tmp3 = importDefault(9202)();
   const tmp4 = callback4(tmp3);
   let obj = React;
-  context = React.useContext(context(14852).TrackRegistrationContext);
+  context = React.useContext(context(14875).TrackRegistrationContext);
   let tmp8 = callback2((submitting) => submitting.submitting);
   const tmp7 = callback2((registrationOptions) => registrationOptions.registrationOptions);
   [tmp10, importDefault] = callback(React.useState(false), 2);
@@ -199,10 +199,10 @@ export default function RegisterAccountInformation() {
     return invite;
   });
   const ref = React.useRef(null);
-  let obj3 = context(14877);
+  let obj3 = context(14900);
   const passwordRegistrationStep = obj3.usePasswordRegistrationStep();
   ({ password, validatePassword: _slicedToArray, setPassword, passwordScore, preventSubmitPassword } = passwordRegistrationStep);
-  let obj4 = context(14879);
+  let obj4 = context(14902);
   const usernameRegistrationStep = obj4.useUsernameRegistrationStep(AuthStates.REGISTER_ACCOUNT_INFORMATION);
   ({ transitionToNextStepOrSubmit: trackRegTransition, username, preventSubmitUsername, validateUsername: closure_6 } = usernameRegistrationStep);
   obj = {};
@@ -218,7 +218,7 @@ export default function RegisterAccountInformation() {
   let tmp5Result = tmp5(589);
   const items2 = [hasConsented];
   const stateFromStores1 = tmp5Result.useStateFromStores(items2, () => authenticationConsentRequired.getAuthenticationConsentRequired());
-  tmp5Result = tmp5(14862);
+  tmp5Result = tmp5(14885);
   obj = { isConsentRequired: true === stateFromStores1 };
   const result = tmp5Result.hasAllRegistrationFieldsCompleted(obj, obj);
   hasConsented = result;
@@ -240,10 +240,10 @@ export default function RegisterAccountInformation() {
     }
     return applyArgumentsResult;
   }
-  let tmpResult = tmp(14870);
+  let tmpResult = tmp(14893);
   const tmp9 = callback(React.useState(false), 2);
-  tmpResult(context(14853).getPreviousRegistrationTransitionStep(AuthStates.REGISTER_ACCOUNT_INFORMATION));
-  importDefault(14869)(AuthStates.REGISTER_ACCOUNT_INFORMATION);
+  tmpResult(context(14876).getPreviousRegistrationTransitionStep(AuthStates.REGISTER_ACCOUNT_INFORMATION));
+  importDefault(14892)(AuthStates.REGISTER_ACCOUNT_INFORMATION);
   const items3 = [context];
   const effect = obj.useEffect(() => {
     context({ step: outer1_14.ACCOUNT_INFORMATION, actionType: outer1_15.VIEWED });
@@ -255,11 +255,11 @@ export default function RegisterAccountInformation() {
     }
   }, []);
   obj1 = { headerText: null, children: null };
-  tmpResult = tmp(9211);
+  tmpResult = tmp(9224);
   const intl2 = tmp5(1236).intl;
   obj1[0] = intl2.string(context(1236).t.jec90v);
   obj2 = { contentContainerStyle: { flexGrow: 1 }, keyboardShouldPersistTaps: "handled", children: null };
-  obj3 = { style: tmp4.container, children: callback3(tmp5(14880).RegisterUsernameInput, { username, setUsername, onSubmitEditing: callback, usernameStatus, submitBehavior: "submit", autoFocus: true }) };
+  obj3 = { style: tmp4.container, children: callback3(tmp5(14903).RegisterUsernameInput, { username, setUsername, onSubmitEditing: callback, usernameStatus, submitBehavior: "submit", autoFocus: true }) };
   const items4 = [callback3(closure_6, obj3), , ];
   obj4 = { style: tmp4.password };
   const merged1 = Object.assign(createCacheKey);
@@ -269,8 +269,8 @@ export default function RegisterAccountInformation() {
     str = "done";
   }
   obj5[5] = str;
-  obj4.children = callback3(context(14881).RegisterPasswordInput, obj5);
-  items4[1] = callback3(importDefault(4050).View, obj4);
+  obj4.children = callback3(context(14904).RegisterPasswordInput, obj5);
+  items4[1] = callback3(importDefault(4054).View, obj4);
   const obj6 = { style: tmp4.button };
   const merged2 = Object.assign(createCacheKey);
   if (!tmp8) {
@@ -281,7 +281,7 @@ export default function RegisterAccountInformation() {
     preventSubmitUsername = preventSubmitPassword;
   }
   obj7[4] = preventSubmitUsername;
-  const items5 = [callback3(context(4600).Button, obj7), ];
+  const items5 = [callback3(context(4604).Button, obj7), ];
   let tmp27Result = null;
   if (null != tmp11.message) {
     tmp27Result = null;
@@ -289,12 +289,12 @@ export default function RegisterAccountInformation() {
       const obj8 = { style: null, children: null };
       obj8[0] = tmp4.errors;
       obj8[1] = tmp11.message;
-      tmp27Result = tmp27(tmp(8995), obj8);
+      tmp27Result = tmp27(tmp(9008), obj8);
     }
   }
   items5[1] = tmp27Result;
   obj6.children = items5;
-  items4[2] = closure_18(importDefault(4050).View, obj6);
+  items4[2] = closure_18(importDefault(4054).View, obj6);
   obj2[2] = items4;
   obj1[1] = closure_18(obj, obj2);
   tmp27Result = tmp27(tmpResult, obj1);
@@ -303,7 +303,7 @@ export default function RegisterAccountInformation() {
     const obj9 = { style: null, children: null };
     obj9[0] = tmp4.page;
     obj9[1] = tmp27Result;
-    tmp27Result1 = tmp27(tmp(5638), obj9);
+    tmp27Result1 = tmp27(tmp(5642), obj9);
   }
   return tmp27Result1;
 };

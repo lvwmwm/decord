@@ -1,9 +1,9 @@
-// Module ID: 11786
-// Function ID: 11787
+// Module ID: 11804
+// Function ID: 11805
 // Name: SuggestedFriendSource
 // Dependencies: [2]
 
-// Module 11786 (SuggestedFriendSource)
+// Module 11804 (SuggestedFriendSource)
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/FriendsScreenConstants.tsx");
 
 export const SuggestedFriendSource = { USER_SUGGESTIONS: 1, [1]: "USER_SUGGESTIONS", FF_PEOPLE_YOU_MAY_KNOW: 2, [2]: "FF_PEOPLE_YOU_MAY_KNOW" };

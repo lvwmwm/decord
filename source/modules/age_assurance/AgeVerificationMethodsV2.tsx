@@ -1,17 +1,13 @@
-// Module ID: 6777
-// Function ID: 6778
+// Module ID: 6785
+// Function ID: 6786
 // Name: _fetchAgeVerificationMethodsV
-// Dependencies: [5, 6745, 676, 1892, 530, 2]
+// Dependencies: [5, 676, 530, 2]
 // Exports: fetchAgeVerificationMethodsV2
 
-// Module 6777 (_fetchAgeVerificationMethodsV)
-import closure_2 from "set";
-import set from "set";
+// Module 6785 (_fetchAgeVerificationMethodsV)
+import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
-import set from "ME";
 
-let VerificationMethod;
-let VerificationVendorName;
 const require = arg1;
 function _fetchAgeVerificationMethodsV() {
   const self = this;
@@ -43,7 +39,7 @@ function _fetchAgeVerificationMethodsV() {
             return obj;
           } else {
             let closure_0 = tmp2;
-            const HTTP = outer1_0(table[4]).HTTP;
+            const HTTP = outer1_0(table[2]).HTTP;
             const obj1 = { url: null, rejectWithError: true };
             obj1[0] = outer1_3.AGE_VERIFICATION_METHODS_V2;
             table = 1;
@@ -90,13 +86,8 @@ function _fetchAgeVerificationMethodsV() {
   }
   return applyArgumentsResult;
 }
-({ VerificationMethod, VerificationVendorName } = set);
-let obj = { [arg1(1892).AgeAssuranceMethod.FACIAL_AGE_ESTIMATION]: VerificationMethod.FACIAL_AGE_ESTIMATION, [arg1(1892).AgeAssuranceMethod.ID_SELFIE_MATCH]: VerificationMethod.ID_VERIFICATION, [arg1(1892).AgeAssuranceMethod.CREDIT_CARD]: VerificationMethod.CREDIT_CARD };
-obj = { [arg1(1892).AgeAssuranceVendor.K_ID]: VerificationVendorName.K_ID, [arg1(1892).AgeAssuranceVendor.INCODE]: VerificationVendorName.INCODE, [arg1(1892).AgeAssuranceVendor.GOOGLE_WALLET]: VerificationVendorName.GOOGLE_WALLET };
-const result = set.fileFinishedImporting("modules/age_assurance/AgeVerificationMethodsV2.tsx");
+const result = require("sendRequest").fileFinishedImporting("modules/age_assurance/AgeVerificationMethodsV2.tsx");
 
-export const V2_METHOD_TO_VERIFICATION_METHOD = obj;
-export const V2_VENDOR_TO_VERIFICATION_VENDOR = obj;
 export const fetchAgeVerificationMethodsV2 = function fetchAgeVerificationMethodsV2() {
   const self = this;
   const apply = _fetchAgeVerificationMethodsV.apply;

@@ -1,10 +1,10 @@
-// Module ID: 8662
-// Function ID: 8663
+// Module ID: 8675
+// Function ID: 8676
 // Name: getProductNameAndTypeFromSku
-// Dependencies: [1901, 1236, 5810, 8663, 2]
+// Dependencies: [1901, 1236, 5815, 8676, 2]
 // Exports: getProductNameAndTypeFromSku, isWishlistableCollectiblesProduct
 
-// Module 8662 (getProductNameAndTypeFromSku)
+// Module 8675 (getProductNameAndTypeFromSku)
 let result = require("getItemRecordsFromPurchases").fileFinishedImporting("modules/wishlists/CollectiblesWishlistUtils.tsx");
 
 export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSku(sku) {
@@ -40,15 +40,15 @@ export const getProductNameAndTypeFromSku = function getProductNameAndTypeFromSk
   return formatToPlainStringResult;
 };
 export const isWishlistableCollectiblesProduct = function isWishlistableCollectiblesProduct(selectedProduct) {
-  const result = require(5810) /* getItemRecordsFromPurchases */.isPremiumCollectiblesProduct(selectedProduct);
+  const result = require(5815) /* getItemRecordsFromPurchases */.isPremiumCollectiblesProduct(selectedProduct);
   let tmp4 = !result;
   if (!result) {
     let tmp5 = selectedProduct.type !== tmp(1901).CollectiblesItemType.EXTERNAL_SKU;
     if (tmp5) {
       let tmp6 = selectedProduct.type === tmp(1901).CollectiblesItemType.PROFILE_FRAME;
       if (tmp6) {
-        tmp6 = !tmp(8663).getIsProfileFrameGiftingEnabled("isWishlistableCollectiblesProduct");
-        const tmpResult = tmp(8663);
+        tmp6 = !tmp(8676).getIsProfileFrameGiftingEnabled("isWishlistableCollectiblesProduct");
+        const tmpResult = tmp(8676);
       }
       tmp5 = !tmp6;
     }

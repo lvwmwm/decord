@@ -1,8 +1,8 @@
-// Module ID: 11730
-// Function ID: 11731
-// Dependencies: [19, 17, 21, 1297, 4189, 712, 11729, 10094, 2]
+// Module ID: 11748
+// Function ID: 11749
+// Dependencies: [19, 17, 21, 1297, 4193, 712, 11747, 10111, 2]
 
-// Module 11730
+// Module 11748
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -41,7 +41,7 @@ const memoResult = importAllResult.memo(function ChatPlaceholderRow(lines) {
       let items1 = [tmp.placeholderText, tmp.placeholderBody, ];
       obj = { width: null };
       let _HermesInternal = HermesInternal;
-      obj[0] = "" + importDefault(10094)(rounded + num) + "%";
+      obj[0] = "" + importDefault(10111)(rounded + num) + "%";
       items1[2] = obj;
       obj[0] = items1;
       let arr = items.push(callback(View, obj, num));

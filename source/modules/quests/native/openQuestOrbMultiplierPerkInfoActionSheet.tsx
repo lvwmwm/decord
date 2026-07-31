@@ -1,14 +1,14 @@
-// Module ID: 14185
-// Function ID: 14186
+// Module ID: 14207
+// Function ID: 14208
 // Name: openQuestOrbMultiplierPerkInfoActionSheet
-// Dependencies: [4157, 14186, 1959, 2]
+// Dependencies: [4161, 14208, 1959, 2]
 // Exports: default
 
-// Module 14185 (openQuestOrbMultiplierPerkInfoActionSheet)
+// Module 14207 (openQuestOrbMultiplierPerkInfoActionSheet)
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/quests/native/openQuestOrbMultiplierPerkInfoActionSheet.tsx");
 
 export default function openQuestOrbMultiplierPerkInfoActionSheet(multiplier, orbMultiplierEligibility) {
-  let obj = importDefault(4157);
+  let obj = importDefault(4161);
   obj = { multiplier, orbMultiplierEligibility };
-  obj.openLazy(require(1959) /* asyncRequireImpl */(14186, dependencyMap.paths), "QuestOrbMultiplierPerkInfoActionSheet", obj);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(14208, dependencyMap.paths), "QuestOrbMultiplierPerkInfoActionSheet", obj);
 };

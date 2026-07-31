@@ -1,10 +1,10 @@
-// Module ID: 12678
-// Function ID: 12679
+// Module ID: 12703
+// Function ID: 12704
 // Name: PremiumPaymentGuildAnimation
-// Dependencies: [32, 19, 17, 1862, 6224, 21, 4189, 712, 12679, 12680, 589, 4125, 4618, 1236, 4529, 5023, 4611, 691, 4035, 12681, 12682, 4185, 2]
+// Dependencies: [32, 19, 17, 1862, 6230, 21, 4193, 712, 12704, 12705, 589, 4129, 4622, 1236, 4533, 5027, 4615, 691, 4039, 12706, 12707, 4189, 2]
 // Exports: default
 
-// Module 12678 (PremiumPaymentGuildAnimation)
+// Module 12703 (PremiumPaymentGuildAnimation)
 import _slicedToArray from "_slicedToArray";
 import registerAsset from "registerAsset";
 import get_ActivityIndicator from "keys";
@@ -24,7 +24,7 @@ class PremiumPaymentGuildAnimation {
     tmp = jsxs();
     obj = { nextScene, onSceneComplete, loop, sceneSegments: idle, style: tmp.animation, source: null };
     tmp2 = require("componentDidMount");
-    obj[5] = require("module_12680");
+    obj[5] = require("module_12705");
     return jsx(tmp2, obj);
   }
 }
@@ -69,13 +69,13 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const tmp7 = callback(React.useState(false), 2);
   dependencyMap = tmp7[1];
   obj = { style: tmp.wrapper, confirmText: null, onConfirm: null, children: null };
-  const tmp9 = importDefault(4125)();
+  const tmp9 = importDefault(4129)();
   const intl = tmp2(1236).intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.YKxJCI);
   obj[2] = function onConfirm() {
-    callback2(4529).close();
-    const obj = callback2(4529);
-    callback(5023).closeApplyBoostModal();
+    callback2(4533).close();
+    const obj = callback2(4533);
+    callback(5027).closeApplyBoostModal();
   };
   obj = {
     nextScene: tmp6[0],
@@ -90,18 +90,18 @@ export default function SubscribeModalSuccessAlert(arg0) {
   };
   const items1 = [callback2(PremiumPaymentGuildAnimation, obj), ];
   const obj1 = { style: tmp.activated, start: null, end: null, colors: null, children: null };
-  const tmp11 = importDefault(4618);
+  const tmp11 = importDefault(4622);
   obj1[1] = require(691) /* keys */.HorizontalGradient.START;
   obj1[2] = require(691) /* keys */.HorizontalGradient.END;
   obj1[3] = Gradients.PREMIUM_GUILD;
   const obj2 = { style: tmp.activatedBackground, children: null };
   const obj3 = { style: tmp.activatedImage, source: null };
-  const tmp14 = importDefault(4611);
+  const tmp14 = importDefault(4615);
   const tmp15 = closure_6;
   if (tmp2Result.isThemeLight(tmp9)) {
-    let tmp8Result = tmp8(12681);
+    let tmp8Result = tmp8(12706);
   } else {
-    tmp8Result = tmp8(12682);
+    tmp8Result = tmp8(12707);
   }
   obj3[1] = tmp8Result;
   obj2[1] = callback2(tmp15, obj3);
@@ -119,11 +119,11 @@ export default function SubscribeModalSuccessAlert(arg0) {
   }
   const obj6 = { children: null };
   obj5[2] = stringResult;
-  const items3 = [callback2(require(4185) /* Text */.Text, obj5), ];
+  const items3 = [callback2(require(4189) /* Text */.Text, obj5), ];
   const obj7 = { style: tmp.text, variant: "text-sm/medium", children: null };
   const intl3 = tmp2(1236).intl;
   obj7[2] = intl3.format(require(1236) /* getSystemLocale */.t.r0IGsP, { guildName: stateFromStores.name, guildSubscriptionQuantity: num });
-  items3[1] = callback2(require(4185) /* Text */.Text, obj7);
+  items3[1] = callback2(require(4189) /* Text */.Text, obj7);
   obj4[1] = items3;
   items2[1] = closure_10(closure_5, obj4);
   obj6[0] = items2;

@@ -1,10 +1,10 @@
-// Module ID: 6156
-// Function ID: 6157
+// Module ID: 6162
+// Function ID: 6163
 // Name: getChannelIdFromDestinationId
-// Dependencies: [5, 6157, 1372, 3817, 1874, 6173, 676, 4199, 6160, 6171, 1236, 1351, 12, 2]
+// Dependencies: [5, 6163, 1372, 3821, 1874, 6179, 676, 4203, 6166, 6177, 1236, 1351, 12, 2]
 // Exports: default, destinationKey, formatResultsWithHeaders, getDestinationIdFromChannelId, getOrResolveChannelIdFromDestinationId
 
-// Module 6156 (getChannelIdFromDestinationId)
+// Module 6162 (getChannelIdFromDestinationId)
 import ALLOWED_TYPES from "ALLOWED_TYPES";
 import handleConnectionOpen from "handleConnectionOpen";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -123,14 +123,14 @@ function _getOrResolveChannelIdFromDestinationId() {
   return applyArgumentsResult;
 }
 function canShareToChannel(type) {
-  if (type.type === require(6160) /* sortByMatchScore */.AutocompleterResultTypes.USER) {
+  if (type.type === require(6166) /* sortByMatchScore */.AutocompleterResultTypes.USER) {
     let tmp8 = arg1;
     if (!arg1) {
       tmp8 = null != authStore.getDMChannelFromUserId(type.record.id);
     }
     let tmp7 = tmp8;
   } else {
-    tmp7 = type.type === require(6160) /* sortByMatchScore */.AutocompleterResultTypes.GROUP_DM;
+    tmp7 = type.type === require(6166) /* sortByMatchScore */.AutocompleterResultTypes.GROUP_DM;
     if (!tmp7) {
       let tmp4 = type.record.type !== constants2.GUILD_FORUM && type.record.type !== tmp3.GUILD_MEDIA;
       if (tmp4) {
@@ -162,7 +162,7 @@ function mergeAndDedupeResultsWithHeaders(found, items1) {
       let tmp19 = nextResult;
       let tmp20 = require;
       let tmp21 = dependencyMap;
-      if (tmp9.type === require(6160) /* sortByMatchScore */.AutocompleterResultTypes.HEADER) {
+      if (tmp9.type === require(6166) /* sortByMatchScore */.AutocompleterResultTypes.HEADER) {
         let tmp = nextResult;
       } else {
         let tmp10 = nextResult;
@@ -232,25 +232,25 @@ export default function formatResults(hasQuery) {
             let tmp6 = null;
             if (null != user) {
               const obj = { type: null, record: null, score: 0 };
-              obj[0] = includeMissingDMs(6160).AutocompleterResultTypes.USER;
+              obj[0] = includeMissingDMs(6166).AutocompleterResultTypes.USER;
               obj[1] = user;
               tmp6 = obj;
             }
             let tmp3 = tmp6;
           } else {
-            tmp3 = _undefined(6171)(type.id);
+            tmp3 = _undefined(6177)(type.id);
           }
           return tmp3;
         });
       }
       channelHistory = channelHistory.getChannelHistory();
       if (channelHistory.length > 0) {
-        let mapped1 = channelHistory.map((arg0) => _undefined(6171)(arg0));
+        let mapped1 = channelHistory.map((arg0) => _undefined(6177)(arg0));
       } else {
         mapped1 = [];
       }
       if (frequentChannels.length > 0) {
-        let mapped2 = frequentChannels.map((id) => _undefined(6171)(id.id));
+        let mapped2 = frequentChannels.map((id) => _undefined(6177)(id.id));
       } else {
         mapped2 = [];
       }
@@ -301,13 +301,13 @@ export default function formatResults(hasQuery) {
         targetDestination = null;
         if (null != user) {
           let obj = { type: null, record: null, score: 0 };
-          obj[0] = includeMissingDMs(6160).AutocompleterResultTypes.USER;
+          obj[0] = includeMissingDMs(6166).AutocompleterResultTypes.USER;
           obj[1] = user;
           targetDestination = obj;
         }
         let tmp9 = targetDestination;
       } else {
-        tmp9 = importDefault(6171)(targetDestination.id);
+        tmp9 = importDefault(6177)(targetDestination.id);
       }
     }
     mapped = [];
@@ -357,7 +357,7 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(hasNon
     items1 = [];
   }
   const intl = queryMode(1236).intl;
-  const headerResult = queryMode(6160).createHeaderResult(intl.string(queryMode(1236).t.qm9dSj));
+  const headerResult = queryMode(6166).createHeaderResult(intl.string(queryMode(1236).t.qm9dSj));
   if (hasNonEmptyQuery.hasNonEmptyQuery) {
     const items2 = [headerResult];
     HermesBuiltin.arraySpread(mergeAndDedupeResultsWithHeaders(results.filter(isAllowedType), items1), 1);
@@ -372,15 +372,15 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(hasNon
       let items4 = items3;
     } else {
       const intl2 = tmp(1236).intl;
-      items4 = [tmp(6160).createHeaderResult(intl2.string(tmp(1236).t["80lOZ1"])), , ];
+      items4 = [tmp(6166).createHeaderResult(intl2.string(tmp(1236).t["80lOZ1"])), , ];
       let tmp13 = null;
       if (null != selectedChannelId) {
-        const tmp7 = importDefault(6171)(selectedChannelId);
+        const tmp7 = importDefault(6177)(selectedChannelId);
         let tmp8 = null;
         if (null != tmp7) {
           let tmp9 = null;
           if (isAllowedType(tmp7)) {
-            let canResult = tmp7.type === tmp(6160).AutocompleterResultTypes.USER;
+            let canResult = tmp7.type === tmp(6166).AutocompleterResultTypes.USER;
             if (!canResult) {
               canResult = getUncachedChannelPermissions.can(constants.VIEW_CHANNEL, tmp7.record);
             }
@@ -396,9 +396,9 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(hasNon
       items4[1] = tmp13;
       items4[2] = headerResult;
       HermesBuiltin.arraySpread(found1, 3);
-      const tmpResult = tmp(6160);
+      const tmpResult = tmp(6166);
     }
     return mergeAndDedupeResultsWithHeaders(items4, items1);
   }
-  const obj = queryMode(6160);
+  const obj = queryMode(6166);
 };

@@ -1,10 +1,10 @@
-// Module ID: 4695
-// Function ID: 4696
+// Module ID: 4699
+// Function ID: 4700
 // Name: TextIcon
-// Dependencies: [19, 21, 712, 3892, 4654, 2]
+// Dependencies: [19, 21, 712, 3896, 4658, 2]
 // Exports: TextIcon
 
-// Module 4695 (TextIcon)
+// Module 4699 (TextIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const TextIcon = function TextIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4654) /* registerAsset */;
+  obj[0] = require(4658) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3892) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3896) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

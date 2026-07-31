@@ -1,9 +1,9 @@
-// Module ID: 9235
-// Function ID: 9236
+// Module ID: 9248
+// Function ID: 9249
 // Name: SearchField
-// Dependencies: [19, 21, 6730, 1236, 8291, 2]
+// Dependencies: [19, 21, 6736, 1236, 8298, 2]
 
-// Module 9235 (SearchField)
+// Module 9248 (SearchField)
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -17,9 +17,9 @@ const forwardRefResult = require("noop").forwardRef((arg0, arg1) => {
   obj.autoCorrect = false;
   obj.autoCapitalize = "none";
   obj.accessibilityRole = "search";
-  obj.leadingIcon = require(8291) /* MagnifyingGlassIcon */.MagnifyingGlassIcon;
+  obj.leadingIcon = require(8298) /* MagnifyingGlassIcon */.MagnifyingGlassIcon;
   obj.isClearable = true;
-  return jsx(require(6730) /* TextField */.TextField, { placeholder: null, returnKeyType: "search", ref: null });
+  return jsx(require(6736) /* TextField */.TextField, { placeholder: null, returnKeyType: "search", ref: null });
 });
 const result = require("TextField").fileFinishedImporting("design/components/TextField/native/SearchField.native.tsx");
 

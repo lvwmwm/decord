@@ -1,10 +1,10 @@
-// Module ID: 5534
-// Function ID: 5535
+// Module ID: 5538
+// Function ID: 5539
 // Name: useProviderConnection
-// Dependencies: [5, 19, 4869, 589, 4995, 2]
+// Dependencies: [5, 19, 4873, 589, 4999, 2]
 // Exports: useProviderConnection
 
-// Module 5534 (useProviderConnection)
+// Module 5538 (useProviderConnection)
 import set from "set";
 import noop from "noop";
 import closure_5 from "set";

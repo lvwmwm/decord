@@ -1,48 +1,18 @@
-// Module ID: 6094
-// Function ID: 6095
+// Module ID: 6100
+// Function ID: 6101
 // Name: items
-// Dependencies: [5, 6095, 6096, 6097, 6098, 6099, 6100, 6101, 6102, 6103, 6104, 6105, 6106, 6107, 6108, 6109, 6110, 6111, 6112, 6113, 6114, 6115, 6116, 6117, 6118, 6119, 6120, 6121, 6122, 6123, 6124, 6125, 6126, 6127, 6128, 6129, 6130, 6131, 2]
+// Dependencies: [5, 6101, 6102, 6103, 6104, 6105, 6106, 6107, 6108, 6109, 6110, 6111, 6112, 6113, 6114, 6115, 6116, 6117, 6118, 6119, 6120, 6121, 6122, 6123, 6124, 6125, 6126, 6127, 6128, 6129, 6130, 6131, 6132, 6133, 6134, 6135, 6136, 6137, 2]
 // Exports: getBurstAnimation
 
-// Module 6094 (items)
+// Module 6100 (items)
 let closure_0 = arg1;
 let obj = {
   load() {
-    return callback(6095);
+    return callback(6101);
   }
 };
 const items = [
   obj,
-  {
-    load() {
-      return callback(6096);
-    }
-  },
-  {
-    load() {
-      return callback(6097);
-    }
-  },
-  {
-    load() {
-      return callback(6098);
-    }
-  },
-  {
-    load() {
-      return callback(6099);
-    }
-  },
-  {
-    load() {
-      return callback(6100);
-    }
-  },
-  {
-    load() {
-      return callback(6101);
-    }
-  },
   {
     load() {
       return callback(6102);
@@ -97,15 +67,12 @@ const items = [
     load() {
       return callback(6112);
     }
-  }
-];
-obj = {
-  load() {
-    return callback(6113);
-  }
-};
-const items1 = [
-  obj,
+  },
+  {
+    load() {
+      return callback(6113);
+    }
+  },
   {
     load() {
       return callback(6114);
@@ -130,12 +97,15 @@ const items1 = [
     load() {
       return callback(6118);
     }
-  },
-  {
-    load() {
-      return callback(6119);
-    }
-  },
+  }
+];
+obj = {
+  load() {
+    return callback(6119);
+  }
+};
+const items1 = [
+  obj,
   {
     load() {
       return callback(6120);
@@ -190,9 +160,39 @@ const items1 = [
     load() {
       return callback(6130);
     }
+  },
+  {
+    load() {
+      return callback(6131);
+    }
+  },
+  {
+    load() {
+      return callback(6132);
+    }
+  },
+  {
+    load() {
+      return callback(6133);
+    }
+  },
+  {
+    load() {
+      return callback(6134);
+    }
+  },
+  {
+    load() {
+      return callback(6135);
+    }
+  },
+  {
+    load() {
+      return callback(6136);
+    }
   }
 ];
-closure_0 = require("module_6099")((arg0, arg1, arg2) => {
+closure_0 = require("module_6105")((arg0, arg1, arg2) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let closure_2 = arg2;
@@ -269,7 +269,7 @@ closure_0 = require("module_6099")((arg0, arg1, arg2) => {
   iter.next();
   return iter;
 });
-const result = require("module_6096").fileFinishedImporting("modules/messages/getBurstAnimation.native.tsx");
+const result = require("module_6102").fileFinishedImporting("modules/messages/getBurstAnimation.native.tsx");
 
 export const getBurstAnimation = function() {
   const self = this;

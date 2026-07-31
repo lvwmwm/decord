@@ -112,7 +112,7 @@ let items = [
       const tmp = callback3(callback2(self.prototype), "toJSON", this);
       let _classCallCheck = tmp;
       let fn = tmp;
-      if (typeof tmp !== "ZodObject") {
+      if (typeof tmp !== "disabledUntil") {
         fn = (arg0) => tmp.apply(self, arg0);
       }
       const obj = {};

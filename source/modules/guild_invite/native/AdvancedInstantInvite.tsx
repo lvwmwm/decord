@@ -1,10 +1,10 @@
-// Module ID: 16629
-// Function ID: 16630
+// Module ID: 16658
+// Function ID: 16659
 // Name: AdvancedInstantInvite
-// Dependencies: [19, 17, 3826, 1874, 21, 4189, 4650, 4380, 16630, 8349, 16631, 4157, 16632, 1959, 16633, 1236, 5566, 5226, 4598, 712, 5554, 5220, 5555, 1384, 6706, 2]
+// Dependencies: [19, 17, 3830, 1874, 21, 4193, 4654, 4384, 16659, 8356, 16660, 4161, 16661, 1959, 16662, 1236, 5570, 5230, 4602, 712, 5558, 5224, 5559, 1384, 6712, 2]
 // Exports: default
 
-// Module 16629 (AdvancedInstantInvite)
+// Module 16658 (AdvancedInstantInvite)
 import Themes from "Themes";
 import { View } from "TableRowIcon";
 import upsertRelationship from "upsertRelationship";

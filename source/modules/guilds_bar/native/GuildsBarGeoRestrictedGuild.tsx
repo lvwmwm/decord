@@ -1,9 +1,9 @@
-// Module ID: 14998
-// Function ID: 14999
+// Module ID: 15024
+// Function ID: 15025
 // Name: items
-// Dependencies: [19, 14936, 21, 4189, 712, 14950, 1348, 14946, 1416, 5566, 4528, 1236, 8301, 14999, 14967, 5141, 2]
+// Dependencies: [19, 14959, 21, 4193, 712, 14973, 1348, 14969, 1416, 5570, 4532, 1236, 8308, 15025, 14993, 5145, 2]
 
-// Module 14998 (items)
+// Module 15024 (items)
 import importAllResult from "noop";
 import { GUILD_ITEM_BADGE_SIZE } from "GUILD_ITEM_SIZE";
 import { jsx } from "jsxProd";
@@ -20,7 +20,7 @@ let items = [require("computeGuildsBarCutout")({ position: "bottom-right" })];
 const memoResult = importAllResult.memo(function GuildsBarGeoRestrictedGuild(restrictedGuild) {
   restrictedGuild = restrictedGuild.restrictedGuild;
   const tmp4 = callback();
-  let obj = restrictedGuild(14946);
+  let obj = restrictedGuild(14969);
   let animatableSourceWithFallback = null;
   const tmp3 = importDefault(1348)("GuildsBarGeoRestrictedGuild");
   const tmp5 = restrictedGuild;
@@ -54,22 +54,22 @@ const memoResult = importAllResult.memo(function GuildsBarGeoRestrictedGuild(res
       obj.show(obj);
     }
   }), items);
-  obj = { selected: false, unread: false, circle: !tmp3, styles: obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true }), label: restrictedGuild.name, isDragTarget: false, config: memo, cutouts: items, overState: "a", externalChildren: 1, expandedChildren: 2, children: 4 };
-  tmpResult = tmp(14946);
+  obj = { selected: false, unread: false, circle: !tmp3, styles: obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true }), label: restrictedGuild.name, isDragTarget: false, config: memo, cutouts: items, overState: "a", externalChildren: "\u00CE", expandedChildren: "D", children: null };
+  tmpResult = tmp(14969);
   obj = { style: tmp4.geoRestrictedBadge };
-  obj[9] = jsx(importDefault(14999), { style: tmp4.geoRestrictedBadge });
-  obj[10] = jsx(importDefault(14967), { guildId: restrictedGuild.id });
+  obj[9] = jsx(importDefault(15025), { style: tmp4.geoRestrictedBadge });
+  obj[10] = jsx(importDefault(14993), { guildId: restrictedGuild.id });
   if (null != animatableSourceWithFallback) {
     const obj2 = { source: null, style: null, fadeDuration: 0 };
     obj2[0] = animatableSourceWithFallback;
     obj2[1] = tmp4.guildIcon;
-    let tmp9Result = tmp9(tmp(5141), obj2);
+    let tmp9Result = tmp9(tmp(5145), obj2);
   } else {
     const obj3 = { value: null, selected: false, animate: false, size: null };
     obj3[0] = restrictedGuild.name;
-    obj3[3] = tmp5(5566).GuildIconSizes.LARGE;
-    tmp9Result = tmp9(tmp(5566), obj3);
-    const tmpResult1 = tmp(5566);
+    obj3[3] = tmp5(5570).GuildIconSizes.LARGE;
+    tmp9Result = tmp9(tmp(5570), obj3);
+    const tmpResult1 = tmp(5570);
   }
   obj[11] = tmp9Result;
   return <tmpResult style={tmp4.geoRestrictedBadge} />;

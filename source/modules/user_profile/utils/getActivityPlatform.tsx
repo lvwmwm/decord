@@ -1,10 +1,10 @@
-// Module ID: 12003
-// Function ID: 12004
+// Module ID: 12021
+// Function ID: 12022
 // Name: PlatformTypes
-// Dependencies: [676, 12002, 9075, 4871, 8176, 11987, 11988, 12004, 12005, 2]
+// Dependencies: [676, 12020, 9088, 4875, 8183, 12005, 12006, 12022, 12023, 2]
 // Exports: default
 
-// Module 12003 (PlatformTypes)
+// Module 12021 (PlatformTypes)
 import { PlatformTypes } from "ME";
 import set from "isListeningOnSpotify";
 
@@ -15,23 +15,23 @@ const result = set.fileFinishedImporting("modules/user_profile/utils/getActivity
 
 export default function getActivityPlatform(session_id) {
   const importDefault = session_id;
-  const tmp3 = importDefault(12002)(session_id.session_id);
+  const tmp3 = importDefault(12020)(session_id.session_id);
   if (null != tmp3) {
     return tmp3;
-  } else if (tmp(9075)(session_id)) {
-    let tmpResult = tmp(4871);
+  } else if (tmp(9088)(session_id)) {
+    let tmpResult = tmp(4875);
     return tmpResult.get(PlatformTypes.SPOTIFY);
-  } else if (tmp(8176)(session_id)) {
-    tmpResult = tmp(4871);
+  } else if (tmp(8183)(session_id)) {
+    tmpResult = tmp(4875);
     return tmpResult.get(PlatformTypes.CRUNCHYROLL);
-  } else if (tmp(11987)(session_id)) {
-    return tmp(4871).get(PlatformTypes.XBOX);
-  } else if (tmp(11988)(session_id)) {
-    return tmp(4871).get(PlatformTypes.PLAYSTATION);
+  } else if (tmp(12005)(session_id)) {
+    return tmp(4875).get(PlatformTypes.XBOX);
+  } else if (tmp(12006)(session_id)) {
+    return tmp(4875).get(PlatformTypes.PLAYSTATION);
   } else {
-    if (!tmp(12004)(session_id)) {
-      if (!tmp(12005)(session_id)) {
-        const found = tmp(4871).find((name) => name.name === session_id.name);
+    if (!tmp(12022)(session_id)) {
+      if (!tmp(12023)(session_id)) {
+        const found = tmp(4875).find((name) => name.name === session_id.name);
         let tmp5 = null;
         if (null != found) {
           tmp5 = null;
@@ -42,6 +42,6 @@ export default function getActivityPlatform(session_id) {
         return tmp5;
       }
     }
-    return tmp(4871).get(PlatformTypes.META_QUEST_OR_HORIZON);
+    return tmp(4875).get(PlatformTypes.META_QUEST_OR_HORIZON);
   }
 };

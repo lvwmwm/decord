@@ -1,10 +1,10 @@
-// Module ID: 8722
-// Function ID: 8723
+// Module ID: 8735
+// Function ID: 8736
 // Name: getProductName
-// Dependencies: [1236, 5809, 1901, 2]
+// Dependencies: [1236, 5814, 1901, 2]
 // Exports: getProductName, getProductNameAndTypeLabel, getPurchasedProductName
 
-// Module 8722 (getProductName)
+// Module 8735 (getProductName)
 const result = require("CollectiblesItemType").fileFinishedImporting("modules/collectibles/utils/getProductName.tsx");
 
 export const getProductName = function getProductName(product) {
@@ -45,7 +45,7 @@ export const getPurchasedProductName = function getPurchasedProductName(baseVari
 };
 export const getProductNameAndTypeLabel = function getProductNameAndTypeLabel(closure_0) {
   if (null == closure_0) {
-    let obj1 = require(5809) /* getProductOrbPrice */;
+    let obj1 = require(5814) /* getProductOrbPrice */;
     const productType = obj1.getProductType(closure_0);
     if (require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === productType) {
       const intl5 = tmp3(1236).intl;

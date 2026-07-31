@@ -1,10 +1,10 @@
-// Module ID: 13018
-// Function ID: 13019
+// Module ID: 13043
+// Function ID: 13044
 // Name: ActivateDeviceSuccess
-// Dependencies: [19, 17, 21, 4189, 1236, 8946, 5141, 1416, 13017, 4185, 4600, 2]
+// Dependencies: [19, 17, 21, 4193, 1236, 8959, 5145, 1416, 13042, 4189, 4604, 2]
 // Exports: ActivateDeviceSuccess
 
-// Module 13018 (ActivateDeviceSuccess)
+// Module 13043 (ActivateDeviceSuccess)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -39,22 +39,22 @@ export const ActivateDeviceSuccess = function ActivateDeviceSuccess(onComplete) 
     let obj1 = require(1416) /* getAvatarURL */;
     obj[0] = obj1.makeSource(successImage);
     obj[1] = tmp.image;
-    tmp9 = callback(importDefault(5141), obj);
-    const tmp13 = importDefault(5141);
+    tmp9 = callback(importDefault(5145), obj);
+    const tmp13 = importDefault(5145);
   }
   const items = [tmp9, , ];
-  obj = { style: importDefault(13017).innerContent, children: null };
+  obj = { style: importDefault(13042).innerContent, children: null };
   obj = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
-  obj[2] = importDefault(13017).centerText;
+  obj[2] = importDefault(13042).centerText;
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl3.string(require(1236) /* getSystemLocale */.t.qDtJmD);
-  const items1 = [callback(require(4185) /* Text */.Text, obj), ];
+  const items1 = [callback(require(4189) /* Text */.Text, obj), ];
   let tmp18Result = null;
   if (null != stringResult) {
     obj1 = { variant: "text-md/medium", color: "text-default", style: null, children: null };
-    obj1[2] = importDefault(13017).centerText;
+    obj1[2] = importDefault(13042).centerText;
     obj1[3] = stringResult;
-    tmp18Result = tmp18(tmp19(4185).Text, obj1);
+    tmp18Result = tmp18(tmp19(4189).Text, obj1);
   }
   const obj2 = { children: null };
   items1[1] = tmp18Result;
@@ -64,7 +64,7 @@ export const ActivateDeviceSuccess = function ActivateDeviceSuccess(onComplete) 
   const intl4 = tmp19(1236).intl;
   obj3[1] = intl4.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj3[2] = onComplete.onComplete;
-  items[2] = callback(require(4600) /* Button */.Button, obj3);
+  items[2] = callback(require(4604) /* Button */.Button, obj3);
   obj2[0] = items;
   return closure_5(closure_6, obj2);
 };

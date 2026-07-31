@@ -1,9 +1,9 @@
-// Module ID: 3869
-// Function ID: 3870
+// Module ID: 3873
+// Function ID: 3874
 // Name: getRegionalFeatureConfig
-// Dependencies: [3870, 3874, 589, 709, 2]
+// Dependencies: [3874, 3878, 589, 709, 2]
 
-// Module 3869 (getRegionalFeatureConfig)
+// Module 3873 (getRegionalFeatureConfig)
 import DEFAULT_COUNTRY_CODE_NAME from "DEFAULT_COUNTRY_CODE_NAME";
 import { Store } from "initialize";
 
@@ -84,7 +84,7 @@ const regionalFeatureConfigStore = new RegionalFeatureConfigStore(require("dispa
     }
     let fromConnectionOpenResult = null;
     if (null != countryCode.regionalFeatureConfig) {
-      const RegionalFeatureConfig = require(3874) /* isFeatureTeenByDefault */.RegionalFeatureConfig;
+      const RegionalFeatureConfig = require(3878) /* isFeatureTeenByDefault */.RegionalFeatureConfig;
       fromConnectionOpenResult = RegionalFeatureConfig.fromConnectionOpen(countryCode.regionalFeatureConfig);
     }
     let c4 = fromConnectionOpenResult;

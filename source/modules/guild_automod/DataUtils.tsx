@@ -1,10 +1,10 @@
-// Module ID: 11055
-// Function ID: 11056
+// Module ID: 11073
+// Function ID: 11074
 // Name: _transformMetadataToCamelCase
 // Dependencies: [12, 2]
 // Exports: _transformMetadataToCamelCase, _transformMetadataToSnakeCase
 
-// Module 11055 (_transformMetadataToCamelCase)
+// Module 11073 (_transformMetadataToCamelCase)
 const result = require("set").fileFinishedImporting("modules/guild_automod/DataUtils.tsx");
 
 export const _transformMetadataToCamelCase = function _transformMetadataToCamelCase(body) {

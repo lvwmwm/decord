@@ -1,10 +1,10 @@
-// Module ID: 7977
-// Function ID: 7978
+// Module ID: 7984
+// Function ID: 7985
 // Name: useDominantRGBFromImage
-// Dependencies: [32, 19, 17, 676, 21, 4189, 12, 7978, 7979, 4033, 712, 1348, 7980, 7985, 7981, 1297, 4611, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4193, 12, 7985, 7986, 4037, 712, 1348, 7987, 7992, 7988, 1297, 4615, 2]
 // Exports: useDominantColorFromImage
 
-// Module 7977 (useDominantRGBFromImage)
+// Module 7984 (useDominantRGBFromImage)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "set";
@@ -29,15 +29,15 @@ function useDominantRGBFromImage(arg0, arg1) {
     first = arg1[0];
     tmp = first;
   }
-  const tmp5 = first(7978)();
+  const tmp5 = first(7985)();
   const dependencyMap = tmp5;
   let hexToRgbResult;
   if (null != arg0) {
-    hexToRgbResult = tmp3(7979).cachedDominantColors[arg0];
+    hexToRgbResult = tmp3(7986).cachedDominantColors[arg0];
   }
   if (hexToRgbResult == null) {
-    hexToRgbResult = _require(4033).hexToRgb(tmp3(712).unsafe_rawColors.PRIMARY_800);
-    const obj2 = _require(4033);
+    hexToRgbResult = _require(4037).hexToRgb(tmp3(712).unsafe_rawColors.PRIMARY_800);
+    const obj2 = _require(4037);
   }
   const tmp8 = callback(importAllResult.useState(hexToRgbResult), 2);
   callback = tmp8[1];
@@ -94,7 +94,7 @@ class VideoBackground {
     c1 = undefined;
     id = undefined;
     tmp2 = jsxs();
-    tmp3 = f42905(url);
+    tmp3 = f42967(url);
     tmp4 = useDominantRGBFromImage(url, tmp3);
     combined = "rgb(" + tmp4.r + ", " + tmp4.g + ", " + tmp4.b + ")";
     tmp6 = c1;

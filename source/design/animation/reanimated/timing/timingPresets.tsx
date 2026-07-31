@@ -1,9 +1,9 @@
-// Module ID: 4193
-// Function ID: 4194
+// Module ID: 4197
+// Function ID: 4198
 // Name: timingNone
 // Dependencies: [2]
 
-// Module 4193 (timingNone)
+// Module 4197 (timingNone)
 const result = require("set").fileFinishedImporting("design/animation/reanimated/timing/timingPresets.tsx");
 
 export const timingNone = { duration: 0 };

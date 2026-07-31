@@ -1,10 +1,10 @@
-// Module ID: 14069
-// Function ID: 14070
+// Module ID: 14093
+// Function ID: 14094
 // Name: BountiesScrollPromptFooter
-// Dependencies: [17, 21, 4189, 4185, 1236, 2]
+// Dependencies: [17, 21, 4193, 4189, 1236, 2]
 // Exports: default
 
-// Module 14069 (BountiesScrollPromptFooter)
+// Module 14093 (BountiesScrollPromptFooter)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -21,11 +21,11 @@ export default function BountiesScrollPromptFooter() {
   obj = { variant: "text-md/semibold", color: "text-default", style: tmp.titleText, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.H57f41);
-  const items = [callback(require(4185) /* Text */.Text, obj), ];
+  const items = [callback(require(4189) /* Text */.Text, obj), ];
   obj = { variant: "text-xxs/semibold", color: "text-muted", style: tmp.swipeText, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl2.string(require(1236) /* getSystemLocale */.t.tG0zsk);
-  items[1] = callback(require(4185) /* Text */.Text, obj);
+  items[1] = callback(require(4189) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 };

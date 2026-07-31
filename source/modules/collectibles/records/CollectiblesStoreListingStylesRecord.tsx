@@ -1,9 +1,9 @@
-// Module ID: 5818
-// Function ID: 5819
+// Module ID: 5823
+// Function ID: 5824
 // Name: fromServer
-// Dependencies: [1883, 5808, 688, 2]
+// Dependencies: [1883, 5813, 688, 2]
 
-// Module 5818 (fromServer)
+// Module 5823 (fromServer)
 import "toJS";
 
 const require = arg1;
@@ -22,18 +22,18 @@ prototype["fromServer"] = function fromServer(arg0) {
   let confetti_colors;
   ({ background_colors, button_colors, confetti_colors } = arg0);
   const mapped = background_colors.map((color) => {
-    const tmp = callback2(5808);
+    const tmp = callback2(5813);
     return tmp(callback(688).int2hex(color));
   });
   const mapped1 = button_colors.map((color) => {
-    const tmp = callback2(5808);
+    const tmp = callback2(5813);
     return tmp(callback(688).int2hex(color));
   });
   const mapped2 = confetti_colors.map((color) => {
-    const tmp = callback2(5808);
+    const tmp = callback2(5813);
     return tmp(callback(688).int2hex(color));
   });
-  if (typeof prototype !== "find") {
+  if (typeof prototype !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const tmp5 = new prototype("Trying to call a non-function", confetti_colors, prototype, new.target);

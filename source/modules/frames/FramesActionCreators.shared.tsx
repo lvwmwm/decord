@@ -1,10 +1,10 @@
-// Module ID: 5695
-// Function ID: 5696
+// Module ID: 5700
+// Function ID: 5701
 // Name: _launchFrame
-// Dependencies: [5, 5686, 709, 5696, 12606, 10613, 10604, 10634, 2]
+// Dependencies: [5, 5690, 709, 5701, 12631, 10631, 10622, 10652, 2]
 // Exports: launchFrame, refreshProxyTicket, stopFrame, updateFrameLayoutMode, updateFramePanelMode
 
-// Module 5695 (_launchFrame)
+// Module 5700 (_launchFrame)
 import leaveCurrentFrame from "leaveCurrentFrame";
 import map from "map";
 
@@ -75,14 +75,14 @@ function _launchFrame() {
               c5 = 4;
               c6 = 1;
               const obj3 = { value: null, done: false };
-              obj3[0] = callback(5696).createProxyTicket(callback, callback2);
+              obj3[0] = callback(5701).createProxyTicket(callback, callback2);
               return obj3;
             }
           } else if (2 === tmp7) {
             message = 0;
             c5 = leaveCurrentFrame;
-            leaveCurrentFrame = callback2(10604)();
-            let obj4 = callback(10634);
+            leaveCurrentFrame = callback2(10622)();
+            let obj4 = callback(10652);
             c5 = 3;
             c6 = 1;
             obj4 = { value: null, done: false };
@@ -118,10 +118,10 @@ function _launchFrame() {
             return obj;
           } else {
             dependencyMap = arg1;
-            const result = callback(12606).leaveCurrentEmbeddedActivity();
-            const obj11 = callback(12606);
-            callback(10613).leaveCurrentFrame();
-            const obj12 = callback(10613);
+            const result = callback(12631).leaveCurrentEmbeddedActivity();
+            const obj11 = callback(12631);
+            callback(10631).leaveCurrentFrame();
+            const obj12 = callback(10631);
             const obj7 = { type: "FRAME_LAUNCH", applicationId: null, proxyTicket: null, channelId: null };
             obj7[1] = callback;
             obj7[2] = dependencyMap;

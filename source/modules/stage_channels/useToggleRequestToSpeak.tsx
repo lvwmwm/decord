@@ -1,10 +1,10 @@
-// Module ID: 10724
-// Function ID: 10725
+// Module ID: 10742
+// Function ID: 10743
 // Name: useToggleRequestToSpeak
-// Dependencies: [32, 19, 1218, 589, 4374, 5012, 6744, 6746, 6712, 2]
+// Dependencies: [32, 19, 1218, 589, 4378, 5016, 6750, 6752, 6718, 2]
 // Exports: default
 
-// Module 10724 (useToggleRequestToSpeak)
+// Module 10742 (useToggleRequestToSpeak)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import fetchFingerprint from "fetchFingerprint";
@@ -16,9 +16,9 @@ export default function useToggleRequestToSpeak(id) {
   const _require = id;
   const items = [fetchFingerprint];
   const stateFromStores = _require(589).useStateFromStores(items, () => id2.getId());
-  const tmp4 = importDefault(4374)(stateFromStores, id.id);
+  const tmp4 = importDefault(4378)(stateFromStores, id.id);
   importDefault = tmp4;
-  const tmp5 = tmp4 === _require(4374).RequestToSpeakStates.REQUESTED_TO_SPEAK || tmp4 === _require(4374).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+  const tmp5 = tmp4 === _require(4378).RequestToSpeakStates.REQUESTED_TO_SPEAK || tmp4 === _require(4378).RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
   const dependencyMap = tmp5;
   const tmp6 = first(React.useState(tmp5), 2);
   first = tmp6[0];

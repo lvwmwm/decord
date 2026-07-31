@@ -1,10 +1,10 @@
-// Module ID: 9933
-// Function ID: 9934
+// Module ID: 9950
+// Function ID: 9951
 // Name: ForLaterModal
-// Dependencies: [19, 17, 21, 4189, 712, 1236, 9550, 5150, 9114, 500, 5143, 4395, 9934, 2]
+// Dependencies: [19, 17, 21, 4193, 712, 1236, 9565, 5154, 9127, 500, 5147, 4399, 9951, 2]
 // Exports: default
 
-// Module 9933 (ForLaterModal)
+// Module 9950 (ForLaterModal)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ export default function ForLaterModal(type) {
   let _require;
   const tmp = createCacheKey();
   const intl = _require(1236).intl;
-  if (type === _require(9550).SavedMessageSortTypes.REMINDER) {
+  if (type === _require(9565).SavedMessageSortTypes.REMINDER) {
   } else {
   }
   const stringResult = intl.string(_2pAkDA);
@@ -49,13 +49,13 @@ export default function ForLaterModal(type) {
     num = 0;
   }
   obj[3] = num;
-  tmp2Result = tmp2(5143);
-  obj[4] = tmp2Result.getHeaderCloseButton(importDefault(4395).pop);
-  obj[1] = closure_4(_require(5150).Header, obj);
+  tmp2Result = tmp2(5147);
+  obj[4] = tmp2Result.getHeaderCloseButton(importDefault(4399).pop);
+  obj[1] = closure_4(_require(5154).Header, obj);
   const items = [closure_4(View, obj), ];
   const obj1 = { type, onClose: null };
-  obj1[1] = importDefault(4395).pop;
-  items[1] = closure_4(importDefault(9934), obj1, type);
+  obj1[1] = importDefault(4399).pop;
+  items[1] = closure_4(importDefault(9951), obj1, type);
   obj[1] = items;
   return closure_5(View, obj);
 };

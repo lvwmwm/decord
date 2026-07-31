@@ -1,10 +1,10 @@
-// Module ID: 15037
-// Function ID: 15038
+// Module ID: 15063
+// Function ID: 15064
 // Name: useSuggestedFriends
-// Dependencies: [32, 19, 5946, 11786, 647, 12, 4028, 2]
+// Dependencies: [32, 19, 5952, 11804, 647, 12, 4032, 2]
 // Exports: default
 
-// Module 15037 (useSuggestedFriends)
+// Module 15063 (useSuggestedFriends)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import initialize from "initialize";
@@ -40,9 +40,9 @@ export default function useSuggestedFriends(arg0) {
       });
       let obj = first(flag[5]);
       return first(flag[5]).unionBy(found, mapped, (user) => user.user.id).sort((user, user2) => {
-        const name = callback(4028).getName(user.user);
-        const obj = callback(4028);
-        return name.localeCompare(callback(4028).getName(user2.user));
+        const name = callback(4032).getName(user.user);
+        const obj = callback(4032);
+        return name.localeCompare(callback(4032).getName(user2.user));
       });
     } else {
       return [];

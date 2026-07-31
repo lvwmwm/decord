@@ -1,9 +1,9 @@
-// Module ID: 14675
-// Function ID: 14676
+// Module ID: 14698
+// Function ID: 14699
 // Name: toggle
-// Dependencies: [7753, 10116, 1236, 3862, 2]
+// Dependencies: [7761, 10133, 1236, 3866, 2]
 
-// Module 14675 (toggle)
+// Module 14698 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -13,13 +13,13 @@ const toggle = createToggle.createToggle({
   },
   parent: require("MobileSetting").MobileSetting.CHAT,
   useValue() {
-    const DoubleTapReactionEmoji = require(3862) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = require(3866) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     return !DoubleTapReactionEmoji.useSetting().disableDoubleTap;
   },
   onValueChange(disableDoubleTap) {
-    const DoubleTapReactionEmoji = require(3862) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = require(3866) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.getSetting();
-    const DoubleTapReactionEmoji2 = require(3862) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji2 = require(3866) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     const obj = { disableDoubleTap: !disableDoubleTap, emojiId: null, emojiName: null, animated: null };
     let emojiId;
     if (setting != null) {
@@ -46,13 +46,13 @@ let obj = {
   },
   parent: require("MobileSetting").MobileSetting.CHAT,
   useValue() {
-    const DoubleTapReactionEmoji = require(3862) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = require(3866) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     return !DoubleTapReactionEmoji.useSetting().disableDoubleTap;
   },
   onValueChange(disableDoubleTap) {
-    const DoubleTapReactionEmoji = require(3862) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji = require(3866) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.getSetting();
-    const DoubleTapReactionEmoji2 = require(3862) /* explicitContentFromProto */.DoubleTapReactionEmoji;
+    const DoubleTapReactionEmoji2 = require(3866) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     const obj = { disableDoubleTap: !disableDoubleTap, emojiId: null, emojiName: null, animated: null };
     let emojiId;
     if (setting != null) {

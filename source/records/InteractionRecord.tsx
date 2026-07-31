@@ -1,9 +1,9 @@
-// Module ID: 4410
-// Function ID: 4411
+// Module ID: 4414
+// Function ID: 4415
 // Name: createFromServer
 // Dependencies: [1883, 1882, 2]
 
-// Module 4410 (createFromServer)
+// Module 4414 (createFromServer)
 import "toJS";
 import createdAt from "createdAt";
 
@@ -27,7 +27,7 @@ prototype["createFromServer"] = function createFromServer(user) {
   const merged = Object.assign(user);
   let str = user.user;
   obj.user = new createdAt(str);
-  if (typeof prototype !== "find") {
+  if (typeof prototype !== "fileFinishedImporting") {
     str = "Trying to call a non-function";
     HermesBuiltin.throwTypeError();
   }

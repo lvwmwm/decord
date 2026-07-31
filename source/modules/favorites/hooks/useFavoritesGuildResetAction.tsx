@@ -1,30 +1,37 @@
-// Module ID: 15117
-// Function ID: 15118
+// Module ID: 15143
+// Function ID: 15144
 // Name: useFavoritesGuildResetAction
-// Dependencies: [19, 3862, 10211, 10210, 1236, 2969, 2]
+// Dependencies: [19, 4010, 676, 3866, 10228, 1865, 1222, 10227, 1236, 2971, 2]
 // Exports: default
 
-// Module 15117 (useFavoritesGuildResetAction)
+// Module 15143 (useFavoritesGuildResetAction)
 import noop from "noop";
+import handleConnectionOpen from "handleConnectionOpen";
+import { Routes } from "ME";
 
 const require = arg1;
-const result = require("useFavoritesAccess").fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildResetAction.tsx");
+const result = require("ME").fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildResetAction.tsx");
 
 export default function useFavoritesGuildResetAction() {
-  const DeveloperMode = require(3862) /* explicitContentFromProto */.DeveloperMode;
+  const DeveloperMode = require(3866) /* explicitContentFromProto */.DeveloperMode;
   let hasAccess = DeveloperMode.useSetting();
-  let obj = require(10211) /* useFavoritesAccess */;
+  let obj = require(10228) /* useFavoritesAccess */;
   const callback = React.useCallback(() => {
-    callback(table[3]).resetFavoritesGuild();
+    if (obj.isFavoritesGuildId(guildId.getGuildId())) {
+      let tmpResult = tmp(tmp2[6]);
+      tmpResult.transitionTo(constants.ME);
+    }
+    tmpResult = tmp(tmp2[7]);
+    tmpResult.resetFavoritesGuild();
   }, []);
   if (hasAccess) {
     hasAccess = obj.useFavoritesAccess().hasAccess;
   }
   obj = { isAvailable: hasAccess, label: null, subLabel: null, perform: null };
   const intl = tmp(1236).intl;
-  obj[1] = intl.string(importDefault(2969).YkET6R);
+  obj[1] = intl.string(importDefault(2971).YkET6R);
   const intl2 = tmp(1236).intl;
-  obj[2] = intl2.string(importDefault(2969).ZzcwNk);
+  obj[2] = intl2.string(importDefault(2971).ZzcwNk);
   obj[3] = callback;
   return obj;
 };

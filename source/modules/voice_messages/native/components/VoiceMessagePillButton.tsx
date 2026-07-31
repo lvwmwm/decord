@@ -1,8 +1,8 @@
-// Module ID: 11737
-// Function ID: 11738
-// Dependencies: [19, 21, 4189, 712, 4717, 1297, 2]
+// Module ID: 11755
+// Function ID: 11756
+// Dependencies: [19, 21, 4193, 712, 4721, 1297, 2]
 
-// Module 11737
+// Module 11755
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import importAllResult from "noop";
@@ -33,7 +33,7 @@ const forwardRefResult = require("noop").forwardRef((boxSize, ref) => {
   const items = [tmp.icon, { tintColor }];
   obj[2] = items;
   obj[6] = jsx(require(1297) /* Button */.Icon, { source: icon, size: null, style: null });
-  return jsx(require(4717) /* PressableBase */.PressableOpacity, { source: icon, size: null, style: null });
+  return jsx(require(4721) /* PressableBase */.PressableOpacity, { source: icon, size: null, style: null });
 });
 const result = require("createCacheKey").fileFinishedImporting("modules/voice_messages/native/components/VoiceMessagePillButton.tsx");
 

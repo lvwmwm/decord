@@ -1,10 +1,10 @@
-// Module ID: 10859
-// Function ID: 10860
+// Module ID: 10877
+// Function ID: 10878
 // Name: throttleStateFn
 // Dependencies: [19, 12, 2]
 // Exports: useThrottledState
 
-// Module 10859 (throttleStateFn)
+// Module 10877 (throttleStateFn)
 import noop from "noop";
 
 const require = arg1;
@@ -44,7 +44,7 @@ export const useThrottledState = (stateFromStores) => {
   }
   let current2;
   let ref1;
-  if (typeof useThrottledFunction !== "find") {
+  if (typeof useThrottledFunction !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   _require = tmp;

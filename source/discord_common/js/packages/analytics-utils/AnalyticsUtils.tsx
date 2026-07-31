@@ -10,8 +10,8 @@ let closure_5 = {};
 const result = require("queueTrackingEventMaker").fileFinishedImporting("../discord_common/js/packages/analytics-utils/AnalyticsUtils.tsx");
 
 export const encodeProperties = require("encodeProperties").encodeProperties;
-export const analyticsTrackingStoreMaker = require("idGenerator").analyticsTrackingStoreMaker;
-export const AnalyticsActionHandlers = require("idGenerator").AnalyticsActionHandlers;
+export const analyticsTrackingStoreMaker = require("logger").analyticsTrackingStoreMaker;
+export const AnalyticsActionHandlers = require("logger").AnalyticsActionHandlers;
 export const ImpressionTypes = require("ImpressionGroups").ImpressionTypes;
 export const ImpressionGroups = require("ImpressionGroups").ImpressionGroups;
 export const ImpressionNames = require("ImpressionNames").ImpressionNames;
@@ -54,7 +54,7 @@ export const trackMaker = (arg0) => {
       obj = {};
     }
     let obj3 = tmp;
-    if (typeof table[arg0] !== "ZodObject") {
+    if (typeof table[arg0] !== "disabledUntil") {
       let tmpResult = tmp(obj);
       if (tmpResult == null) {
         tmpResult = null;
@@ -74,7 +74,7 @@ export const trackMaker = (arg0) => {
         if (tmp13) {
           return Promise.resolve();
         } else {
-          if (typeof obj3.throttlePercent !== "reType") {
+          if (typeof obj3.throttlePercent !== "__REMOTEDEV__") {
             const _Math2 = Math;
             if (Math.random() > obj3.throttlePercent) {
               return Promise.resolve();

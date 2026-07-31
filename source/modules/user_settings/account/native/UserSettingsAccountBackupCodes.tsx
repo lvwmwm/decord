@@ -1,10 +1,10 @@
-// Module ID: 13769
-// Function ID: 13770
+// Module ID: 13793
+// Function ID: 13794
 // Name: CodeRow
-// Dependencies: [19, 17, 12793, 21, 4189, 712, 5543, 3889, 5220, 5209, 1236, 3893, 589, 13770, 4598, 4185, 5554, 2]
+// Dependencies: [19, 17, 12818, 21, 4193, 712, 5547, 3893, 5224, 5213, 1236, 3897, 589, 13794, 4602, 4189, 5558, 2]
 // Exports: default
 
-// Module 13769 (CodeRow)
+// Module 13793 (CodeRow)
 import noop from "noop";
 import { ScrollView } from "set";
 import getVerificationKey from "getVerificationKey";
@@ -32,10 +32,10 @@ function CodeRow(code) {
   if (showCheckMark) {
     obj = { color: null };
     obj[0] = importDefault(712).colors.TEXT_BRAND;
-    tmp2Result = tmp2(code(5209).CheckmarkSmallIcon, obj);
+    tmp2Result = tmp2(code(5213).CheckmarkSmallIcon, obj);
   }
   obj[2] = tmp2Result;
-  return closure_6(code(5220).TableRow, obj);
+  return closure_6(code(5224).TableRow, obj);
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { generateCode: null };
@@ -53,7 +53,7 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
     headerLabel = intl.format(stateFromStores(1236).t.OhmvYt, {});
   }
   stateFromStores = undefined;
-  let obj = stateFromStores(3893);
+  let obj = stateFromStores(3897);
   const token = obj.useToken(importDefault(712).modules.mobile.TABLE_ROW_PADDING);
   let obj1 = stateFromStores(589);
   const items = [getVerificationKey];
@@ -80,14 +80,14 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
   obj[0] = importDefault(712).space.PX_24;
   obj = { paddingHorizontal: token, paddingTop: importDefault(712).space.PX_16 };
   obj[1] = obj;
-  const items2 = [headerLabel.map((children) => callback2(stateFromStores(4185).Text, { variant: "text-sm/medium", children }, arg1)), , , ];
+  const items2 = [headerLabel.map((children) => callback2(stateFromStores(4189).Text, { variant: "text-sm/medium", children }, arg1)), , , ];
   let tmp10Result = unusedCodes.length > 0;
   if (tmp10Result) {
     obj1 = { title: null, hasIcons: false, children: null };
     const intl2 = tmp3(1236).intl;
     obj1[0] = intl2.string(tmp3(1236).t.zdzyFo);
     obj1[2] = unusedCodes.map((code) => callback2(closure_9, { code: code.code, showCheckMark: false }, arg1));
-    tmp10Result = tmp10(tmp3(5554).TableRowGroup, obj1);
+    tmp10Result = tmp10(tmp3(5558).TableRowGroup, obj1);
   }
   items2[1] = tmp10Result;
   tmp10Result = usedCodes.length > 0;
@@ -96,7 +96,7 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
     const intl3 = tmp3(1236).intl;
     obj2[0] = intl3.string(tmp3(1236).t.FkFLDN);
     obj2[2] = usedCodes.map((code) => callback2(closure_9, { code: code.code, showCheckMark: true }, arg1));
-    tmp10Result = tmp10(tmp3(5554).TableRowGroup, obj2);
+    tmp10Result = tmp10(tmp3(5558).TableRowGroup, obj2);
   }
   items2[2] = tmp10Result;
   let tmp10Result1 = null !== headerLabel.onGenerate;
@@ -107,18 +107,18 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
     obj5[1] = tmp6.generateCode;
     const intl4 = tmp3(1236).intl;
     obj5[2] = intl4.string(tmp3(1236).t.RIThUu);
-    obj4[0] = tmp10(tmp3(4185).Text, obj5);
+    obj4[0] = tmp10(tmp3(4189).Text, obj5);
     obj4[1] = function onPress() {
       const verificationKey = store.getVerificationKey();
-      const result = callback(13770).confirmViewBackupCodes(verificationKey, true);
+      const result = callback(13794).confirmViewBackupCodes(verificationKey, true);
     };
-    obj3[1] = tmp10(tmp3(5220).TableRow, obj4);
-    tmp10Result1 = tmp10(tmp3(5554).TableRowGroup, obj3);
+    obj3[1] = tmp10(tmp3(5224).TableRow, obj4);
+    tmp10Result1 = tmp10(tmp3(5558).TableRowGroup, obj3);
   }
   const tmp11 = ScrollView;
   const tmp12 = closure_7;
   tmp6 = createCacheKey();
   items2[3] = tmp10Result1;
   obj[2] = items2;
-  return closure_6(tmp11, { children: closure_7(stateFromStores(4598).Stack, obj) });
+  return closure_6(tmp11, { children: closure_7(stateFromStores(4602).Stack, obj) });
 };

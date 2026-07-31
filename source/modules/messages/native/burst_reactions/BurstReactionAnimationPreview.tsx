@@ -1,10 +1,10 @@
-// Module ID: 6134
-// Function ID: 6135
+// Module ID: 6140
+// Function ID: 6141
 // Name: BurstReactionAnimationPreview
-// Dependencies: [19, 21, 6072, 6135, 2]
+// Dependencies: [19, 21, 6078, 6141, 2]
 // Exports: default
 
-// Module 6134 (BurstReactionAnimationPreview)
+// Module 6140 (BurstReactionAnimationPreview)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,12 +18,12 @@ export default function BurstReactionAnimationPreview(arg0) {
   let reactionType;
   ({ channelId, emoji, messageId, reactionType } = arg0);
   let tmp2 = null;
-  if (reactionType === require(6072) /* ReactionTypes */.ReactionTypes.BURST) {
+  if (reactionType === require(6078) /* ReactionTypes */.ReactionTypes.BURST) {
     const obj = { isFullscreen: true, channelId: null, messageId: null, emoji: null };
     obj[1] = channelId;
     obj[2] = messageId;
     obj[3] = emoji;
-    tmp2 = jsx(importDefault(6135), { isFullscreen: true, channelId: null, messageId: null, emoji: null });
+    tmp2 = jsx(importDefault(6141), { isFullscreen: true, channelId: null, messageId: null, emoji: null });
   }
   return tmp2;
 };

@@ -1,10 +1,10 @@
-// Module ID: 12609
-// Function ID: 12610
+// Module ID: 12634
+// Function ID: 12635
 // Name: computeHasRoleSubscriptionsInGuild
 // Dependencies: [1218, 1942, 1935, 1862, 676, 589, 2]
 // Exports: default
 
-// Module 12609 (computeHasRoleSubscriptionsInGuild)
+// Module 12634 (computeHasRoleSubscriptionsInGuild)
 import fetchFingerprint from "fetchFingerprint";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";

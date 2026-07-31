@@ -1,9 +1,9 @@
-// Module ID: 11480
-// Function ID: 11481
+// Module ID: 11498
+// Function ID: 11499
 // Name: getStickersItemLayout
-// Dependencies: [32, 19, 17, 6089, 5048, 4865, 5092, 676, 4623, 9576, 4624, 9657, 1877, 21, 4189, 500, 712, 11481, 1474, 5215, 5140, 589, 3893, 9908, 11484, 3862, 5219, 9656, 9658, 11485, 9333, 5702, 1906, 9575, 11165, 1579, 4384, 11486, 1348, 4586, 11487, 6188, 11387, 1297, 4050, 11488, 5704, 11495, 4185, 1236, 7638, 11496, 11497, 2]
+// Dependencies: [32, 19, 17, 6095, 5052, 4869, 5096, 676, 4627, 9591, 4628, 9672, 1877, 21, 4193, 500, 712, 11499, 1474, 5219, 5144, 589, 3897, 9925, 11501, 3866, 5223, 9671, 9673, 11502, 9348, 5707, 1906, 9590, 11183, 1579, 4388, 11503, 1348, 4590, 11504, 6194, 11405, 1297, 4054, 11505, 5709, 11512, 4189, 1236, 7646, 11513, 11514, 2]
 
-// Module 11480 (getStickersItemLayout)
+// Module 11498 (getStickersItemLayout)
 import PermissionOverwriteType from "PermissionOverwriteType";
 import importAllResult from "useSafeAreaInsetsKeyboardAware";
 import get_ActivityIndicator from "AutocompleteLabel";
@@ -38,10 +38,10 @@ let map1;
 let unpackModuleId;
 const require = arg1;
 function getStickersItemLayout(arg0, arg1) {
-  const obj = { length: require(11481) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE, offset: null, index: null };
-  const result = arg1 * (require(11481) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE + require(11481) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN);
+  const obj = { length: require(11499) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE, offset: null, index: null };
+  const result = arg1 * (require(11499) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE + require(11499) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN);
   const diff = arg1 - 1;
-  obj[1] = result + diff * require(11481) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN;
+  obj[1] = result + diff * require(11499) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN;
   obj[2] = arg1;
   return obj;
 }
@@ -70,8 +70,8 @@ let closure_29 = createCacheKey.createStyles((borderRadius, borderWidth, borderT
   obj[5] = obj1;
   obj[6] = { backgroundColor: importDefault(712).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, paddingLeft: 12, marginVertical: 12, justifyContent: "center" };
   const obj2 = { backgroundColor: importDefault(712).colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, paddingLeft: 12, marginVertical: 12, justifyContent: "center" };
-  obj[7] = { paddingLeft: 12 - require(11481) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: require(11481) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 };
-  const obj3 = { paddingLeft: 12 - require(11481) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: require(11481) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 };
+  obj[7] = { paddingLeft: 12 - require(11499) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: require(11499) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 };
+  const obj3 = { paddingLeft: 12 - require(11499) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: require(11499) /* AutocompleteLabel */.AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 };
   obj[8] = { backgroundColor: importDefault(712).colors.BADGE_BACKGROUND_BRAND };
   return obj;
 });

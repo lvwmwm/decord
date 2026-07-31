@@ -1,8 +1,8 @@
-// Module ID: 12303
-// Function ID: 12304
-// Dependencies: [19, 21, 4189, 712, 1581, 3862, 4717, 10894, 4185, 1236, 2]
+// Module ID: 12329
+// Function ID: 12330
+// Dependencies: [19, 21, 4193, 712, 1581, 3866, 4721, 10912, 4189, 1236, 2]
 
-// Module 12303
+// Module 12329
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import importAllResult from "noop";
@@ -20,7 +20,7 @@ const memoResult = require("noop").memo(function MediaModalOverlayAltTextButton(
   if (str == null) {
     str = "";
   }
-  const ViewImageDescriptions = str(3862).ViewImageDescriptions;
+  const ViewImageDescriptions = str(3866).ViewImageDescriptions;
   let tmp4 = null;
   if (ViewImageDescriptions.useSetting()) {
     tmp4 = null;
@@ -37,8 +37,8 @@ const memoResult = require("noop").memo(function MediaModalOverlayAltTextButton(
       obj = { variant: "text-xs/semibold", color: "text-overlay-light", children: null };
       const intl = tmp3(1236).intl;
       obj[2] = intl.string(tmp3(1236).t.Q5VqrN);
-      obj[3] = jsx(tmp3(4185).Text, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
-      tmp4 = jsx(tmp3(4717).PressableOpacity, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
+      obj[3] = jsx(tmp3(4189).Text, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
+      tmp4 = jsx(tmp3(4721).PressableOpacity, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
     }
   }
   return tmp4;

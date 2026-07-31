@@ -1,9 +1,9 @@
-// Module ID: 16144
-// Function ID: 16145
+// Module ID: 16172
+// Function ID: 16173
 // Name: handleChannelSelect
-// Dependencies: [1372, 1931, 10126, 10151, 16145, 5134, 2]
+// Dependencies: [1372, 1931, 10143, 10168, 16173, 5138, 2]
 
-// Module 16144 (handleChannelSelect)
+// Module 16172 (handleChannelSelect)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 import "initialize";
@@ -15,12 +15,12 @@ function handleChannelSelect(channelId) {
     return false;
   } else {
     if (obj6.isEligibleForInappropriateConversationWarning({ location: "channel_select" })) {
-      let tmp4Result = tmp4(10151);
+      let tmp4Result = tmp4(10168);
       if (tmp4Result.getSafetyAlertsSettingOrDefault()) {
         channel = channel.getChannel(channelId);
         if (null != channel) {
           if (channel.isDM()) {
-            tmp4Result = tmp4(10151);
+            tmp4Result = tmp4(10168);
             const inappropriateConversationTakeoverForChannel = tmp4Result.getInappropriateConversationTakeoverForChannel(channelId);
             let flag3 = null != inappropriateConversationTakeoverForChannel;
             if (flag3) {
@@ -28,9 +28,9 @@ function handleChannelSelect(channelId) {
               ({ id: obj5[0], type: obj5[1] } = inappropriateConversationTakeoverForChannel);
               obj[2] = channel.getRecipientId();
               obj[3] = channelId;
-              tmp4(16145).showTakeoverModal(obj);
+              tmp4(16173).showTakeoverModal(obj);
               flag3 = true;
-              const tmp4Result1 = tmp4(16145);
+              const tmp4Result1 = tmp4(16173);
             }
             return flag3;
           }
@@ -42,15 +42,15 @@ function handleChannelSelect(channelId) {
     } else {
       return false;
     }
-    obj6 = require(10126) /* InappropriateConversationExperiment */;
+    obj6 = require(10143) /* InappropriateConversationExperiment */;
   }
 }
 function handleChannelUpdates(channels) {
   channels = channels.channels;
   let currentlySelectedChannelId;
-  let obj = currentlySelectedChannelId(10126);
+  let obj = currentlySelectedChannelId(10143);
   if (obj.isEligibleForInappropriateConversationWarning({ location: "channel_updates" })) {
-    let tmpResult = tmp(10151);
+    let tmpResult = tmp(10168);
     if (tmpResult.getSafetyAlertsSettingOrDefault()) {
       currentlySelectedChannelId = currentlySelectedChannelId.getCurrentlySelectedChannelId();
       if (null == currentlySelectedChannelId) {
@@ -60,7 +60,7 @@ function handleChannelUpdates(channels) {
         if (null == found) {
           return false;
         } else {
-          tmpResult = tmp(10151);
+          tmpResult = tmp(10168);
           const inappropriateConversationTakeoverForChannel = tmpResult.getInappropriateConversationTakeoverForChannel(found.id);
           const tmp6 = null == inappropriateConversationTakeoverForChannel || !found.isDM();
           let flag3 = !tmp6;
@@ -69,9 +69,9 @@ function handleChannelUpdates(channels) {
             ({ id: obj4[0], type: obj4[1] } = inappropriateConversationTakeoverForChannel);
             obj[2] = found.getRecipientId();
             obj[3] = found.id;
-            tmp(16145).showTakeoverModal(obj);
+            tmp(16173).showTakeoverModal(obj);
             flag3 = true;
-            const tmpResult1 = tmp(16145);
+            const tmpResult1 = tmp(16173);
           }
           return flag3;
         }

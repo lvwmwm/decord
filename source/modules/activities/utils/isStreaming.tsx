@@ -1,10 +1,10 @@
-// Module ID: 7975
-// Function ID: 7976
+// Module ID: 7982
+// Function ID: 7983
 // Name: _isStreaming
-// Dependencies: [4214, 676, 2]
+// Dependencies: [4218, 676, 2]
 // Exports: default
 
-// Module 7975 (_isStreaming)
+// Module 7982 (_isStreaming)
 import { validStreamURL } from "items3";
 import { ActivityTypes } from "ME";
 

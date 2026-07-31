@@ -1,9 +1,9 @@
-// Module ID: 7648
-// Function ID: 7649
+// Module ID: 7656
+// Function ID: 7657
 // Name: FormTextColors
-// Dependencies: [19, 21, 4189, 5030, 712, 1297, 2]
+// Dependencies: [19, 21, 4193, 5034, 712, 1297, 2]
 
-// Module 7648 (FormTextColors)
+// Module 7656 (FormTextColors)
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import importAllResult from "noop";
@@ -11,7 +11,7 @@ import importAllResult from "noop";
 const require = arg1;
 let closure_3 = createCacheKey.createStyles((arg0) => {
   let obj = { primary: null, text: null };
-  obj = { color: require(5030) /* result */.DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+  obj = { color: require(5034) /* result */.DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
   obj[0] = obj;
   let num = 16;
   if ("small" === arg0) {

@@ -1,14 +1,14 @@
-// Module ID: 11152
-// Function ID: 11153
+// Module ID: 11170
+// Function ID: 11171
 // Name: FloatingChatInputContainer
-// Dependencies: [32, 19, 21, 4050, 3893, 712, 1595, 4055, 1579, 4190, 4193, 2]
+// Dependencies: [32, 19, 21, 4054, 3897, 712, 1595, 4059, 1579, 4194, 4197, 2]
 // Exports: default
 
-// Module 11152 (FloatingChatInputContainer)
+// Module 11170 (FloatingChatInputContainer)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
-import { Easing } from "module_4050";
+import { Easing } from "module_4054";
 
 const require = arg1;
 let closure_6 = Easing.bezier(0.2, 0, 0, 1);
@@ -26,8 +26,8 @@ export default function FloatingChatInputContainer(arg0) {
   let dependencyMap;
   let sharedValue;
   ({ style, onLayout, children } = arg0);
-  token = token(3893).useToken(importDefault(712).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL);
-  let obj = token(3893);
+  token = token(3897).useToken(importDefault(712).modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL);
+  let obj = token(3897);
   const obj2 = React;
   const tmp3 = importDefault;
   [tmp6, c1] = sharedValue(React.useState(() => {
@@ -64,7 +64,7 @@ export default function FloatingChatInputContainer(arg0) {
     }
     return num > 0;
   }), 2);
-  const obj3 = token(4055);
+  const obj3 = token(4059);
   if (!tmp6) {
     tmp6 = true === obj3.useKeyboardContextForType(token(1579).KeyboardTypes.SYSTEM).keyboardWillOpen;
   }
@@ -72,7 +72,7 @@ export default function FloatingChatInputContainer(arg0) {
     tmp6 = tmp8 !== token(1579).KeyboardTypes.SYSTEM;
   }
   dependencyMap = tmp6;
-  let tmpResult = tmp(4050);
+  let tmpResult = tmp(4054);
   let num = 0;
   if (tmp6) {
     num = token;
@@ -88,7 +88,7 @@ export default function FloatingChatInputContainer(arg0) {
     obj = { duration: token(_undefined[10]).timingStandardDuration, easing: outer1_6 };
     const result = sharedValue.set(obj.withTiming(num, obj));
   }, items);
-  tmpResult = tmp(4050);
+  tmpResult = tmp(4054);
   class FloatingChatInputContainerTsx1 {
     constructor() {
       obj = { paddingBottom: useSharedValue.get() };
@@ -102,5 +102,5 @@ export default function FloatingChatInputContainer(arg0) {
   style = [, ];
   style[0] = style;
   style[1] = animatedStyle;
-  return jsx(tmp3(4050).View, { style, onLayout, children });
+  return jsx(tmp3(4054).View, { style, onLayout, children });
 };

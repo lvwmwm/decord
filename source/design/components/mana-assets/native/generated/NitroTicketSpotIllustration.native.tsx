@@ -1,10 +1,10 @@
-// Module ID: 7337
-// Function ID: 7338
+// Module ID: 7345
+// Function ID: 7346
 // Name: NitroTicketSpotIllustration
-// Dependencies: [21, 5141, 7338, 2]
+// Dependencies: [21, 5145, 7346, 2]
 // Exports: NitroTicketSpotIllustration
 
-// Module 7337 (NitroTicketSpotIllustration)
+// Module 7345 (NitroTicketSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroTicketSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const NitroTicketSpotIllustration = function NitroTicketSpotIllustration(
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7338);
+  obj[0] = importDefault(7346);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const NitroTicketSpotIllustration = function NitroTicketSpotIllustration(
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
 };

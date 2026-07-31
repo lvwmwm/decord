@@ -1,9 +1,9 @@
-// Module ID: 14699
-// Function ID: 14700
+// Module ID: 14722
+// Function ID: 14723
 // Name: get
-// Dependencies: [10117, 13680, 13679, 2]
+// Dependencies: [10134, 13704, 13703, 2]
 
-// Module 14699 (get)
+// Module 14722 (get)
 import { NodeType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
 
 class SettingTreeManagerCache {
@@ -26,7 +26,7 @@ prototype["clear"] = function clear() {
 class SettingTreeManager {
   constructor() {
     tmp = SettingTreeManagerCache;
-    if (typeof SettingTreeManagerCache !== "find") {
+    if (typeof SettingTreeManagerCache !== "fileFinishedImporting") {
       str = "Trying to call a non-function";
       throwTypeErrorResult = HermesBuiltin.throwTypeError();
     }
@@ -34,7 +34,7 @@ class SettingTreeManager {
     obj1 = Object.create(tmp.prototype);
     obj1[0] = {};
     obj[0] = obj1;
-    if (typeof tmp !== "find") {
+    if (typeof tmp !== "fileFinishedImporting") {
       str2 = "Trying to call a non-function";
       throwTypeErrorResult1 = HermesBuiltin.throwTypeError();
     }
@@ -62,13 +62,13 @@ prototype2["validate"] = function validate() {
 prototype2["getAncestors"] = function getAncestors(field) {
   const self = this;
   const items = [];
-  let transformParentResult = this.transformParent(require(13680) /* frozen */.SETTING_RENDERER_CONFIG[field].parent);
+  let transformParentResult = this.transformParent(require(13704) /* frozen */.SETTING_RENDERER_CONFIG[field].parent);
   if (null != transformParentResult) {
     do {
       let arr = items.push(transformParentResult);
       let tmp3 = require;
       let tmp4 = dependencyMap;
-      transformParentResult = self.transformParent(require(13680) /* frozen */.SETTING_RENDERER_CONFIG[transformParentResult].parent);
+      transformParentResult = self.transformParent(require(13704) /* frozen */.SETTING_RENDERER_CONFIG[transformParentResult].parent);
     } while (null != transformParentResult);
   }
   return items;
@@ -97,7 +97,7 @@ prototype2["getHighestLevelAncestor"] = function getHighestLevelAncestor(setting
   }
 };
 prototype2["getNearestRouteAncestorDataOrSelf"] = function getNearestRouteAncestorDataOrSelf(setting) {
-  const tmp = require(13680) /* frozen */.SETTING_RENDERER_CONFIG[setting];
+  const tmp = require(13704) /* frozen */.SETTING_RENDERER_CONFIG[setting];
   if (tmp.type === NodeType.ROUTE) {
     return tmp;
   } else {
@@ -106,7 +106,7 @@ prototype2["getNearestRouteAncestorDataOrSelf"] = function getNearestRouteAncest
     for (const item10013 of ancestors) {
       let tmp3 = require;
       let tmp4 = dependencyMap;
-      let tmp5 = require(13680) /* frozen */.SETTING_RENDERER_CONFIG[item10013];
+      let tmp5 = require(13704) /* frozen */.SETTING_RENDERER_CONFIG[item10013];
       let tmp6 = tmp5;
       let tmp7 = NodeType;
       if (tmp5.type === NodeType.ROUTE) {
@@ -133,7 +133,7 @@ prototype2["getBreadcrumbs"] = function getBreadcrumbs(setting) {
     for (const item10009 of ancestors) {
       let tmp3 = require;
       let tmp4 = dependencyMap;
-      let obj = require(13679) /* map */;
+      let obj = require(13703) /* map */;
       let cachedSettingTitle = obj.getCachedSettingTitle(item10009);
       if (null != cachedSettingTitle) {
         let tmp7 = cachedSettingTitle;

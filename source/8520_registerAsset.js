@@ -1,0 +1,10 @@
+// Module ID: 8520
+// Function ID: 8521
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 8520 (registerAsset)
+import registerAsset from "registerAsset";
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "8490caddc6d6fe2d04f984b90b4d2807", name: "XboxNeutralIcon", type: "png" });

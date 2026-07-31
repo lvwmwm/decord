@@ -5,8 +5,8 @@
 // Module 1522
 
 export default (arr) => {
-  if (typeof arr !== "tee") {
-    if (typeof arg1 !== "tee") {
+  if (typeof arr !== "__FORMATJS_LISTFORMAT_DATA__") {
+    if (typeof arg1 !== "__FORMATJS_LISTFORMAT_DATA__") {
       if ("" === arg1) {
         const items = [arr];
         return items;

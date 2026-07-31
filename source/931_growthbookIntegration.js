@@ -13,7 +13,7 @@ function _wrapAndCaptureBooleanResult(arg0) {
     const first = items[0];
     const applyResult = callback.apply(this, items);
     let tmp3 = typeof first === "y";
-    if (typeof first !== "tee") {
+    if (typeof first !== "__FORMATJS_LISTFORMAT_DATA__") {
       tmp3 = typeof applyResult === "T";
     }
     if (tmp3) {
@@ -33,11 +33,11 @@ export const growthbookIntegration = setupIntegration.defineIntegration((growthb
     name: "GrowthBook",
     setupOnce() {
       const prototype = growthbookClass.prototype;
-      if (typeof prototype.isOn !== "ZodObject") {
+      if (typeof prototype.isOn !== "disabledUntil") {
         growthbookClass(outer1_1[1]).fill(prototype, "isOn", outer1_2);
         const obj = growthbookClass(outer1_1[1]);
       }
-      if (typeof prototype.getFeatureValue !== "ZodObject") {
+      if (typeof prototype.getFeatureValue !== "disabledUntil") {
         growthbookClass(outer1_1[1]).fill(prototype, "getFeatureValue", outer1_2);
         const obj2 = growthbookClass(outer1_1[1]);
       }

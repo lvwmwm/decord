@@ -1,10 +1,10 @@
-// Module ID: 15311
-// Function ID: 15312
+// Module ID: 15339
+// Function ID: 15340
 // Name: ForYouLoadMore
-// Dependencies: [19, 17, 5923, 21, 4189, 647, 4600, 1236, 2]
+// Dependencies: [19, 17, 5929, 21, 4193, 647, 4604, 1236, 2]
 // Exports: ForYouLoadMore
 
-// Module 15311 (ForYouLoadMore)
+// Module 15339 (ForYouLoadMore)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _validate from "_validate";
@@ -29,7 +29,7 @@ export const ForYouLoadMore = function ForYouLoadMore(onPressLoad) {
     const intl = tmp2(1236).intl;
     obj[3] = intl.string(tmp2(1236).t["Q/LSXp"]);
     obj[4] = onPressLoad.onPressLoad;
-    tmp4Result = tmp4(tmp2(4600).Button, obj);
+    tmp4Result = tmp4(tmp2(4604).Button, obj);
   }
   obj[1] = tmp4Result;
   return <closure_3 style={callback().container}>{null}</closure_3>;

@@ -1,10 +1,10 @@
-// Module ID: 4405
-// Function ID: 4406
-// Name: useShouldCallReactiveCheck
-// Dependencies: [5, 32, 19, 4406, 3869, 1218, 4407, 1874, 6776, 6745, 676, 1221, 6713, 6746, 5013, 3868, 1906, 589, 11117, 709, 6751, 6744, 6718, 8122, 1236, 2741, 12815, 2]
-// Exports: ageGateSourceHasLightboxBackdrop, getAgeVerificationGetStartedSubtitle, getAgeVerificationGetStartedTitle, isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithRetryCta, isAgeVerified, isAssignedByDiscord, isFullscreenAgeVerificationEntryPoint, isVerifiedAdult, isVerifiedTeen, maybePerformReactiveCheck, shouldShowTiggerPawtect, useInitiateAgeVerification, useIsAgeVerified, useIsAssignedByDiscord, useIsExplicitlyVerifiedAdult, useIsVerifiedAdult, useIsVerifiedTeen, useMaybePerformReactiveCheckForSource, useShouldShowTiggerPawtect, useShowAssignedAgeGroupSettings, useWatchAgeVerificationStatusChange
+// Module ID: 4409
+// Function ID: 4410
+// Name: useAgeVerificationRunner
+// Dependencies: [5, 32, 19, 4410, 3873, 1218, 4411, 1874, 6784, 6751, 676, 1221, 6719, 6752, 5017, 3872, 1906, 589, 11135, 709, 6750, 6724, 6757, 8129, 1236, 2743, 12840, 2]
+// Exports: ageGateSourceHasLightboxBackdrop, getAgeVerificationGetStartedSubtitle, getAgeVerificationGetStartedTitle, isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithRetryCta, isAgeVerified, isAssignedByDiscord, isFullscreenAgeVerificationEntryPoint, isVerifiedAdult, isVerifiedTeen, maybePerformReactiveCheck, shouldShowTiggerPawtect, useInitiateAgeVerification, useInitiateAgeVerificationV2, useIsAgeVerified, useIsAssignedByDiscord, useIsExplicitlyVerifiedAdult, useIsVerifiedAdult, useIsVerifiedTeen, useMaybePerformReactiveCheckForSource, useShouldShowTiggerPawtect, useShowAssignedAgeGroupSettings, useWatchAgeVerificationStatusChange
 
-// Module 4405 (useShouldCallReactiveCheck)
+// Module 4409 (useAgeVerificationRunner)
 import fetchFingerprint from "fetchFingerprint";
 import _slicedToArray from "_slicedToArray";
 import dispatcher from "dispatcher";
@@ -23,6 +23,152 @@ import set from "noop";
 let AgeGateSource;
 let closure_14;
 let require = arg1;
+function useAgeVerificationRunner(onComplete) {
+  onComplete = onComplete.onComplete;
+  let _require = onComplete;
+  const entryPoint = onComplete.entryPoint;
+  let flag = onComplete.shouldShowExpressiveModal;
+  if (flag === undefined) {
+    flag = false;
+  }
+  let callback;
+  let current;
+  callback = undefined;
+  let obj = callback;
+  const tmp = current(callback.useState(false), 2);
+  callback = tmp[1];
+  const items = [mergeGuildAvatar];
+  const stateFromStores = _require(flag[17]).useStateFromStores(items, () => currentUser.getCurrentUser());
+  let prop;
+  if (stateFromStores != null) {
+    prop = stateFromStores.ageVerificationStatus;
+  }
+  current = callback.useRef(prop).current;
+  const items1 = [current];
+  callback = obj.useCallback(() => {
+    let obj = entryPoint(flag[19]);
+    obj = { type: "CLOSE_AGE_VERIFICATION_MODAL", status: current };
+    obj.dispatch(obj);
+  }, items1);
+  _require = undefined;
+  _require = callback((arg0) => {
+    let closure_0 = arg0;
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (function*(arg0) {
+      if (c6 === 2) {
+        c6 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp8 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === v0) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let closure_2 = tmp4;
+              let closure_1 = tmp6;
+              let lib;
+              outer1_3(true);
+              let c4 = 2;
+              let obj3 = entryPoint(flag[19]);
+              obj3.dispatch({ type: "INITIATE_AGE_VERIFICATION" });
+              v0 = 3;
+              c6 = 1;
+              const obj1 = { value: null, done: false };
+              obj1[0] = lib();
+              return obj1;
+            }
+          } else if (1 === tmp9) {
+            c4 = 0;
+            outer1_3(false);
+            throw fetchFingerprint;
+          } else {
+            if (2 === tmp9) {
+              c4 = 1;
+              let obj2 = entryPoint(flag[21]);
+              obj2.showFailedToast(outer2_15.TIGGER_PAWTECT_ERROR);
+              v0();
+              c4 = 0;
+              outer1_3(false);
+              c6 = 3;
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw arg1;
+            } else if (arg0 !== 2) {
+              lib = arg1;
+              obj2 = { webviewUrl: null, verificationRequestId: null, verificationVendorName: null, incodeParameters: null, onComplete: null, onClose: null, onCancel: null, entryPoint: null, shouldShowExpressiveModal: null };
+              obj2[0] = lib.verification_webview_url;
+              obj2[1] = lib.verification_request_id;
+              obj2[2] = lib.verification_vendor_name;
+              obj2[3] = lib.incode_parameters;
+              obj2[4] = lib;
+              obj2[5] = v0;
+              obj2[6] = v0;
+              obj2[7] = outer1_1;
+              obj2[8] = outer1_2;
+              if (false === obj8.showAgeVerification(obj2)) {
+                obj = entryPoint(flag[21]);
+                obj.showFailedToast(outer2_15.TIGGER_PAWTECT_ERROR);
+                v0();
+              }
+              c4 = 1;
+              obj8 = entryPoint(flag[20]);
+            }
+            c4 = 0;
+            outer1_3(false);
+            c6 = 3;
+            obj3 = { value: null, done: true };
+            obj3[0] = arg1;
+            return obj3;
+          }
+        } catch (tmp42) {
+          fetchFingerprint = tmp42;
+          if (tmp5 === c4) {
+            c6 = tmp3;
+            throw tmp42;
+          } else if (tmp2 === tmp44) {
+            v0 = tmp2;
+          } else {
+            v0 = tmp;
+          }
+        }
+      }
+    })();
+  });
+  const items2 = [onComplete, callback, flag, entryPoint];
+  obj = {
+    loading: tmp[0],
+    startVerification: obj.useCallback(function() {
+      const self = this;
+      const apply = closure_0.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    }, items2)
+  };
+  return obj;
+}
 function useShouldCallReactiveCheck() {
   const items = [mergeGuildAvatar];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
@@ -39,8 +185,8 @@ function useShouldCallReactiveCheck() {
     tmp5 = prop1 !== tmp(1906).AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
   }
   require = tmp5;
-  let tmpResult = tmp(3868);
-  const isFeatureAgeGated = tmpResult.useIsFeatureAgeGated(tmp(5013).AgeGatedFeature.REACTIVE_CHECK);
+  let tmpResult = tmp(3872);
+  const isFeatureAgeGated = tmpResult.useIsFeatureAgeGated(tmp(5017).AgeGatedFeature.REACTIVE_CHECK);
   tmpResult = tmp(589);
   const items1 = [closure_11];
   const items2 = [tmp5, isFeatureAgeGated];
@@ -72,7 +218,7 @@ function shouldCallReactiveCheck() {
   }
   let tmp7 = !tmp5;
   if (!tmp5) {
-    let isFeatureAgeGatedResult = getRegionalFeatureConfig.isFeatureAgeGated(tmp3(5013).AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = getRegionalFeatureConfig.isFeatureAgeGated(tmp3(5017).AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
       isFeatureAgeGatedResult = closure_11.shouldCallReactiveCheck();
     }
@@ -110,7 +256,7 @@ function _maybePerformReactiveCheck() {
             return obj;
           } else {
             let tmp5 = null;
-            if (outer1_21()) {
+            if (outer1_22()) {
               let obj2 = v0(outer1_2[26]);
               c1 = 1;
               v0 = 1;
@@ -171,7 +317,7 @@ export const shouldShowTiggerPawtect = function shouldShowTiggerPawtect() {
   }
   let tmp5 = prop !== require(1906) /* PermissionOverwriteType */.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT;
   if (tmp5) {
-    const isFeatureAgeGatedResult = getRegionalFeatureConfig.isFeatureAgeGated(tmp3(5013).AgeGatedFeature.REACTIVE_CHECK);
+    const isFeatureAgeGatedResult = getRegionalFeatureConfig.isFeatureAgeGated(tmp3(5017).AgeGatedFeature.REACTIVE_CHECK);
     let tmp8 = !isFeatureAgeGatedResult;
     if (isFeatureAgeGatedResult) {
       tmp8 = prop !== tmp3(1906).AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
@@ -184,7 +330,7 @@ export const useShouldShowTiggerPawtect = function useShouldShowTiggerPawtect() 
   const items = [mergeGuildAvatar];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = require(589) /* initialize */;
-  let isFeatureAgeGated = require(3868) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(5013) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
+  let isFeatureAgeGated = require(3872) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(5017) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
   if (isFeatureAgeGated) {
     let prop;
     if (stateFromStores != null) {
@@ -196,7 +342,7 @@ export const useShouldShowTiggerPawtect = function useShouldShowTiggerPawtect() 
   if (stateFromStores != null) {
     prop1 = stateFromStores.ageVerificationStatus;
   }
-  const obj2 = require(3868) /* isFeatureAgeGated */;
+  const obj2 = require(3872) /* isFeatureAgeGated */;
   return prop1 !== require(1906) /* PermissionOverwriteType */.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && !isFeatureAgeGated;
 };
 export const isVerifiedTeen = function isVerifiedTeen() {
@@ -224,8 +370,8 @@ export const isVerifiedAdult = function isVerifiedAdult() {
   }
   let tmp5 = prop === require(1906) /* PermissionOverwriteType */.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT;
   if (!tmp5) {
-    tmp5 = getRegionalFeatureConfig.isFeatureAgeGated(tmp3(5013).AgeGatedFeature.REACTIVE_CHECK) && prop === tmp3(1906).AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
-    const tmp7 = getRegionalFeatureConfig.isFeatureAgeGated(tmp3(5013).AgeGatedFeature.REACTIVE_CHECK) && prop === tmp3(1906).AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
+    tmp5 = getRegionalFeatureConfig.isFeatureAgeGated(tmp3(5017).AgeGatedFeature.REACTIVE_CHECK) && prop === tmp3(1906).AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
+    const tmp7 = getRegionalFeatureConfig.isFeatureAgeGated(tmp3(5017).AgeGatedFeature.REACTIVE_CHECK) && prop === tmp3(1906).AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
   }
   return tmp5;
 };
@@ -233,7 +379,7 @@ export const useIsVerifiedAdult = function useIsVerifiedAdult() {
   const items = [mergeGuildAvatar];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = require(589) /* initialize */;
-  let isFeatureAgeGated = require(3868) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(5013) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
+  let isFeatureAgeGated = require(3872) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(5017) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
   if (isFeatureAgeGated) {
     let prop;
     if (stateFromStores != null) {
@@ -245,7 +391,7 @@ export const useIsVerifiedAdult = function useIsVerifiedAdult() {
   if (stateFromStores != null) {
     prop1 = stateFromStores.ageVerificationStatus;
   }
-  const obj2 = require(3868) /* isFeatureAgeGated */;
+  const obj2 = require(3872) /* isFeatureAgeGated */;
   return prop1 === require(1906) /* PermissionOverwriteType */.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT || isFeatureAgeGated;
 };
 export const useIsExplicitlyVerifiedAdult = function useIsExplicitlyVerifiedAdult() {
@@ -287,8 +433,8 @@ export const useShowAssignedAgeGroupSettings = function useShowAssignedAgeGroupS
     return prop === callback(table[16]).AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
   });
   const obj = require(589) /* initialize */;
-  const obj2 = require(3868) /* isFeatureAgeGated */;
-  return require(3868) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(5013) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK) && stateFromStores;
+  const obj2 = require(3872) /* isFeatureAgeGated */;
+  return require(3872) /* isFeatureAgeGated */.useIsFeatureAgeGated(require(5017) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK) && stateFromStores;
 };
 export const AgeVerificationSystemNotificationEmbedKeys = obj;
 export const AgeVerificationSystemNotificationCtaTypes = obj;
@@ -336,7 +482,7 @@ export const isAgeVerificationMessageWithConnectToTeenCta = function isAgeVerifi
               }
               let enabled = true === hasItem;
               if (enabled) {
-                const FamilyCenterConnectionPrereqExperiment = require(11117) /* apexExperiment */.FamilyCenterConnectionPrereqExperiment;
+                const FamilyCenterConnectionPrereqExperiment = require(11135) /* apexExperiment */.FamilyCenterConnectionPrereqExperiment;
                 enabled = FamilyCenterConnectionPrereqExperiment.getConfig({ location: "isAgeVerificationMessageWithConnectToTeenCta" }).enabled;
               }
               return enabled;
@@ -381,164 +527,51 @@ export const useIsAgeVerified = function useIsAgeVerified() {
   }
   return tmp5;
 };
-export const useInitiateAgeVerification = function useInitiateAgeVerification(onComplete) {
-  onComplete = onComplete.onComplete;
-  let _require = onComplete;
-  const entryPoint = onComplete.entryPoint;
-  let flag = onComplete.shouldShowExpressiveModal;
+export const useInitiateAgeVerification = function useInitiateAgeVerification(shouldShowExpressiveModal) {
+  let entryPoint;
+  let onComplete;
+  let flag = shouldShowExpressiveModal.shouldShowExpressiveModal;
+  ({ onComplete, entryPoint } = shouldShowExpressiveModal);
   if (flag === undefined) {
     flag = false;
   }
-  let classificationId = onComplete.classificationId;
+  let classificationId = shouldShowExpressiveModal.classificationId;
   if (classificationId === undefined) {
     classificationId = null;
   }
-  let callback2;
-  let current;
-  let callback;
-  let obj = current;
-  const tmp2 = callback2(current.useState(false), 2);
-  callback2 = tmp2[1];
-  const items = [mergeGuildAvatar];
-  const stateFromStores = _require(flag[17]).useStateFromStores(items, () => currentUser.getCurrentUser());
-  let prop;
-  if (stateFromStores != null) {
-    prop = stateFromStores.ageVerificationStatus;
-  }
-  current = current.useRef(prop).current;
-  const items1 = [current];
-  callback = obj.useCallback(() => {
-    let obj = entryPoint(flag[19]);
-    obj = { type: "CLOSE_AGE_VERIFICATION_MODAL", status: current };
-    obj.dispatch(obj);
-  }, items1);
-  _require = undefined;
-  _require = classificationId((arg0, arg1) => {
-    let closure_0 = arg0;
-    let closure_1 = arg1;
-    let c7 = 0;
-    let c8 = 0;
-    let c6 = 0;
-    return (function*(arg0, arg1) {
-      if (c8 === 2) {
-        c8 = 3;
-        HermesBuiltin.throwTypeError();
-      } else if (tmp7 === 3) {
-        if (arg0 === 1) {
-          throw arg1;
-        } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c8 = 2;
-          if (0 === c7) {
-            if (arg0 === 1) {
-              c8 = 3;
-              throw arg1;
-            } else if (arg0 === 2) {
-              c8 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            } else {
-              let _slicedToArray = tmp4;
-              let fetchFingerprint = tmp8;
-              let lib;
-              outer1_4(true);
-              let v0 = 2;
-              entryPoint(flag[19]).dispatch({ type: "INITIATE_AGE_VERIFICATION" });
-              const obj9 = entryPoint(flag[19]);
-              const tmp59 = closure_1;
-              const obj1 = { method: null, classificationId: null, vendor: null };
-              obj1[0] = lib;
-              let c2 = outer1_3;
-              if (outer1_3 == null) {
-                c2 = undefined;
-              }
-              obj1[1] = c2;
-              obj1[2] = tmp59;
-              c7 = 3;
-              c8 = 1;
-              let obj2 = { value: null, done: false };
-              obj2[0] = lib(flag[20]).requestAgeVerification(obj1);
-              return obj2;
-            }
-          } else if (1 === tmp8) {
-            v0 = 0;
-            outer1_4(false);
-            throw dispatcher;
-          } else {
-            if (2 === tmp8) {
-              v0 = 1;
-              obj2 = entryPoint(flag[22]);
-              obj2.showFailedToast(outer2_15.TIGGER_PAWTECT_ERROR);
-              v0();
-              v0 = 0;
-              outer1_4(false);
-              c8 = 3;
-            } else if (arg0 === 1) {
-              c8 = 3;
-              throw arg1;
-            } else if (arg0 !== 2) {
-              lib = arg1;
-              const obj3 = { webviewUrl: null, verificationRequestId: null, verificationVendorName: null, incodeParameters: null, onComplete: null, onClose: null, onCancel: null, entryPoint: null, shouldShowExpressiveModal: null };
-              obj3[0] = lib.verification_webview_url;
-              obj3[1] = lib.verification_request_id;
-              obj3[2] = lib.verification_vendor_name;
-              obj3[3] = lib.incode_parameters;
-              obj3[4] = lib;
-              obj3[5] = v0;
-              obj3[6] = v0;
-              obj3[7] = closure_1;
-              obj3[8] = outer1_2;
-              if (false === obj7.showAgeVerification(obj3)) {
-                obj = entryPoint(flag[22]);
-                obj.showFailedToast(outer2_15.TIGGER_PAWTECT_ERROR);
-                v0();
-              }
-              v0 = 1;
-              obj7 = entryPoint(flag[21]);
-            }
-            v0 = 0;
-            outer1_4(false);
-            c8 = 3;
-            const obj4 = { value: null, done: true };
-            obj4[0] = arg1;
-            return obj4;
-          }
-        } catch (tmp36) {
-          dispatcher = tmp36;
-          if (tmp5 === v0) {
-            c8 = tmp3;
-            throw tmp36;
-          } else if (tmp2 === tmp38) {
-            c7 = tmp2;
-          } else {
-            c7 = tmp;
-          }
-        }
-      }
-    })();
-  });
-  const items2 = [onComplete, callback, flag, classificationId, entryPoint];
-  obj = {
-    loading: tmp2[0],
-    initiateAgeVerification: obj.useCallback(function() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    }, items2)
+  let startVerification;
+  const tmp2 = useAgeVerificationRunner({ onComplete, entryPoint, shouldShowExpressiveModal: flag });
+  startVerification = tmp2.startVerification;
+  const items = [startVerification, classificationId];
+  return {
+    loading: tmp2.loading,
+    initiateAgeVerification: React.useCallback((arg0, arg1) => {
+      let closure_0 = arg0;
+      const startVerification = arg1;
+      return startVerification(() => {
+        let obj = classificationId(outer2_2[22]);
+        obj = { method: closure_0, classificationId: null, vendor: null };
+        obj[1] = closure_0;
+        obj[2] = closure_1;
+        return obj.requestAgeVerification(obj);
+      });
+    }, items)
   };
+};
+export const useInitiateAgeVerificationV2 = function useInitiateAgeVerificationV2(onComplete) {
+  let startVerification;
+  let obj = { onComplete: onComplete.onComplete, entryPoint: onComplete.entryPoint, shouldShowExpressiveModal: true };
+  const tmp = useAgeVerificationRunner(obj);
+  startVerification = tmp.startVerification;
+  obj = {
+    loading: tmp.loading,
+    initiateAgeVerificationV2: React.useCallback((arg0, arg1) => {
+      const startVerification = arg0;
+      let closure_1 = arg1;
+      return startVerification(() => callback(outer1_2[22]).initiateAgeVerificationV2(callback, closure_1));
+    }, items)
+  };
+  items = [startVerification];
   return obj;
 };
 export const useWatchAgeVerificationStatusChange = function useWatchAgeVerificationStatusChange(callback1) {
@@ -552,7 +585,7 @@ export const useWatchAgeVerificationStatusChange = function useWatchAgeVerificat
     }
     return prop;
   });
-  const tmp2 = importDefault(8122)(stateFromStores);
+  const tmp2 = importDefault(8129)(stateFromStores);
   const obj = _require(589);
   const items1 = [closure_8];
   const stateFromStores1 = _require(589).useStateFromStores(items1, () => null != closure_8.getSuspendedUserToken());
@@ -612,12 +645,12 @@ export const getAgeVerificationGetStartedSubtitle = function getAgeVerificationG
     let stringResult = intl4.string(require(1236) /* getSystemLocale */.t["S/xS/w"]);
   } else if (flag) {
     const intl3 = require(1236) /* getSystemLocale */.intl;
-    stringResult = intl3.string(importDefault(2741).h7qzoa);
+    stringResult = intl3.string(importDefault(2743).h7qzoa);
   } else if (null != arg1) {
     const intl2 = require(1236) /* getSystemLocale */.intl;
     const obj = { handleOnHelpUrlHook: null };
     obj[0] = arg1;
-    stringResult = intl2.format(importDefault(2741).RpMIT0, obj);
+    stringResult = intl2.format(importDefault(2743).RpMIT0, obj);
   } else {
     const intl = require(1236) /* getSystemLocale */.intl;
     stringResult = intl.string(require(1236) /* getSystemLocale */.t.HxS3oQ);

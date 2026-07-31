@@ -1,10 +1,10 @@
-// Module ID: 7559
-// Function ID: 7560
+// Module ID: 7567
+// Function ID: 7568
 // Name: SwordAndChestSpotIllustration
-// Dependencies: [21, 5141, 7560, 2]
+// Dependencies: [21, 5145, 7568, 2]
 // Exports: SwordAndChestSpotIllustration
 
-// Module 7559 (SwordAndChestSpotIllustration)
+// Module 7567 (SwordAndChestSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SwordAndChestSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const SwordAndChestSpotIllustration = function SwordAndChestSpotIllustrat
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7560);
+  obj[0] = importDefault(7568);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const SwordAndChestSpotIllustration = function SwordAndChestSpotIllustrat
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
 };

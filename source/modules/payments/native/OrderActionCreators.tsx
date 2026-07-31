@@ -1,16 +1,16 @@
-// Module ID: 6220
-// Function ID: 6221
+// Module ID: 6226
+// Function ID: 6227
 // Name: getOrders
-// Dependencies: [5, 4172, 676, 3, 530, 3850, 709, 5678, 2]
+// Dependencies: [5, 4176, 676, 3, 530, 3854, 709, 5682, 2]
 // Exports: cancelSigningAndDiscardOrder, getOrCreateOrder, markOrderAsSigningInProgress, patchOrder, patchOrderLineItem, updateOrder
 
-// Module 6220 (getOrders)
+// Module 6226 (getOrders)
 import _createGatewayCheckoutContext from "_createGatewayCheckoutContext";
 import { OrderStatus } from "CustomCheckoutFlow";
 import { Endpoints } from "ME";
 
 const require = arg1;
-function getOrders() {
+function getOrders(arg0) {
   const self = this;
   const apply = _getOrders.apply;
   if (typeof apply === "unknown") {
@@ -650,7 +650,7 @@ function _patchOrderLineItem() {
           } else if (2 === tmp7) {
             c4 = 0;
             logger = c3;
-            let obj5 = callback(3850);
+            let obj5 = callback(3854);
             obj5 = { tags: null, extra: null };
             obj5[0] = { source: "OrderActionCreators_patchOrderLineItem" };
             const obj6 = { orderId: null, orderLineItemId: null, subscriptionPlanId: null };
@@ -836,7 +836,7 @@ function _patchOrder() {
           } else if (2 === tmp7) {
             c4 = 0;
             let closure_7 = c3;
-            let obj5 = callback(3850);
+            let obj5 = callback(3854);
             obj5 = { tags: null, extra: null };
             obj5[0] = { source: "OrderActionCreators_patchOrder" };
             const obj6 = { orderId: null, orderLineItems: null };
@@ -1033,7 +1033,7 @@ function _updateOrder() {
           } else if (2 === tmp7) {
             c4 = 0;
             logger = obj2;
-            obj5 = callback(3850);
+            obj5 = callback(3854);
             const obj6 = { tags: null, extra: null };
             obj6[0] = { source: "OrderActionCreators_updateOrder" };
             const obj7 = { orderId: null, giftInfo: null };
@@ -1900,7 +1900,7 @@ export const cancelSigningAndDiscardOrder = function cancelSigningAndDiscardOrde
   }
   return applyArgumentsResult;
 };
-export const markOrderAsSigningInProgress = function markOrderAsSigningInProgress(orderId) {
+export const markOrderAsSigningInProgress = function markOrderAsSigningInProgress(closure_8) {
   const self = this;
   const apply = _markOrderAsSigningInProgress.apply;
   if (typeof apply === "unknown") {

@@ -1,9 +1,9 @@
-// Module ID: 16297
-// Function ID: 16298
+// Module ID: 16326
+// Function ID: 16327
 // Name: handleChange
-// Dependencies: [17, 1371, 4208, 4261, 8828, 500, 16298, 8829, 5134, 2]
+// Dependencies: [17, 1371, 4212, 4265, 8841, 500, 16327, 8842, 5138, 2]
 
-// Module 16297 (handleChange)
+// Module 16326 (handleChange)
 import participantFromServer from "participantFromServer";
 import reset from "reset";
 import createRTCConnection from "createRTCConnection";
@@ -17,7 +17,7 @@ function handleChange() {
   currentRouteType = currentRouteType.getCurrentRouteType();
   const tmp3 = null != currentEmbeddedActivity.getCurrentEmbeddedActivity();
   const isConnectedResult = connected.isConnected();
-  let tmp8 = currentRouteType === require(8829) /* RouteTypes */.RouteTypes.RECEIVER && isConnectedResult;
+  let tmp8 = currentRouteType === require(8842) /* RouteTypes */.RouteTypes.RECEIVER && isConnectedResult;
   if (tmp8) {
     let isIOSResult = require(500) /* set */.isIOS();
     if (!isIOSResult) {

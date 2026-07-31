@@ -1,10 +1,10 @@
-// Module ID: 10030
-// Function ID: 10031
+// Module ID: 10047
+// Function ID: 10048
 // Name: GatedContent
-// Dependencies: [19, 21, 4189, 712, 6746, 4598, 4185, 5022, 4600, 2]
+// Dependencies: [19, 21, 4193, 712, 6752, 4602, 4189, 5026, 4604, 2]
 // Exports: default
 
-// Module 10030 (GatedContent)
+// Module 10047 (GatedContent)
 import noop from "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";

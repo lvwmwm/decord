@@ -1,16 +1,37 @@
-// Module ID: 4522
-// Function ID: 4523
-// Name: regExp
-// Dependencies: [676, 4523, 11, 1384, 12, 3771, 688, 4411, 2]
-// Exports: canEmbedLinks, getEffectiveVideoProvider, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
+// Module ID: 4526
+// Function ID: 4527
+// Name: getEffectiveVideoProvider
+// Dependencies: [676, 4527, 11, 1384, 12, 3775, 688, 4415, 2]
+// Exports: canEmbedLinks, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 4522 (regExp)
+// Module 4526 (getEffectiveVideoProvider)
 import ME from "ME";
 import { EMBED_TYPES_WITH_PARSEABLE_FIELDS as closure_6 } from "MessageEmbedTypes";
 
 let c3;
 let c4;
 let c5;
+function getEffectiveVideoProvider(name, url) {
+  if ("YouTube" !== name) {
+    if ("TikTok" !== name) {
+      if (null != url) {
+        try {
+          const _URL = URL;
+          const uRL = new URL(url);
+          const hostname = uRL.hostname;
+          if ("www.youtube.com" === hostname) {
+            return "YouTube";
+          } else if ("www.tiktok.com" === tmp9) {
+            return "TikTok";
+          }
+        } catch (err) {
+        }
+      }
+      return name;
+    }
+  }
+  return name;
+}
 ({ MessageEmbedMediaFlags: c3, MessageEmbedTypes: c4, Permissions: c5 } = ME);
 const re7 = /sketchfab/i;
 const re8 = /^https:\/\/sketchfab\.com/i;
@@ -62,7 +83,7 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
   }
   if (null != footer.timestamp) {
     const _Date = Date;
-    let tmpResult = tmp(3771);
+    let tmpResult = tmp(3775);
     const date = new Date(footer.timestamp);
     obj.timestamp = tmpResult(date);
   }
@@ -229,13 +250,13 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
     obj.fields = [];
   }
   if (null != footer.components) {
-    const transformComponentsResult = obj6(4411).transformComponents(footer.components);
+    const transformComponentsResult = obj6(4415).transformComponents(footer.components);
     let tmp40;
     if (transformComponentsResult.length > 0) {
       tmp40 = transformComponentsResult;
     }
     obj.components = tmp40;
-    const obj17 = obj6(4411);
+    const obj17 = obj6(4415);
   }
   return obj;
 };
@@ -266,27 +287,7 @@ export const mergeEmbedsOnURL = function mergeEmbedsOnURL(mapped) {
   });
   return items;
 };
-export const getEffectiveVideoProvider = function getEffectiveVideoProvider(name, url) {
-  if ("YouTube" !== name) {
-    if ("TikTok" !== name) {
-      if (null != url) {
-        try {
-          const _URL = URL;
-          const uRL = new URL(url);
-          const hostname = uRL.hostname;
-          if ("www.youtube.com" === hostname) {
-            return "YouTube";
-          } else if ("www.tiktok.com" === tmp9) {
-            return "TikTok";
-          }
-        } catch (err) {
-        }
-      }
-      return name;
-    }
-  }
-  return name;
-};
+export { getEffectiveVideoProvider };
 export const isEmbedInline = function isEmbedInline(first1) {
   let author;
   let rawTitle;
@@ -360,19 +361,32 @@ export const isSocialLayerStorefrontArticleEmbed = function isSocialLayerStorefr
 export const getMaxEmbedMediaSize = function getMaxEmbedMediaSize(provider) {
   if (null != arg1) {
     if (null != arg2) {
-      const obj = { maxMediaWidth: null, maxMediaHeight: null };
+      let obj = { maxMediaWidth: null, maxMediaHeight: null };
       obj[0] = arg1;
       obj[1] = arg2;
-      let tmp3 = obj;
     }
-    return tmp3;
+    return obj;
   }
   provider = provider.provider;
   let name;
   if (provider != null) {
     name = provider.name;
   }
-  tmp3 = "TikTok" === name ? { maxMediaWidth: 400, maxMediaHeight: 450 } : { maxMediaWidth: 400, maxMediaHeight: 300 };
+  if ("TikTok" === name) {
+    obj = { maxMediaWidth: 400, maxMediaHeight: 450 };
+  } else {
+    if (null != provider.video) {
+      if (provider.video.height > provider.video.width) {
+        const provider2 = provider.provider;
+        let name1;
+        if (provider2 != null) {
+          name1 = provider2.name;
+        }
+        const tmp3 = getEffectiveVideoProvider;
+      }
+    }
+    obj = { maxMediaWidth: 400, maxMediaHeight: 300 };
+  }
 };
 export const canEmbedLinks = function canEmbedLinks(isPrivate, closure_9) {
   if (isPrivate.isPrivate()) {

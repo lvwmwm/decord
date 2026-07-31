@@ -1,9 +1,9 @@
-// Module ID: 6914
-// Function ID: 6915
+// Module ID: 6922
+// Function ID: 6923
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6914 (metadata)
+// Module 6922 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ChairIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/5bad123b0ca0d675ccf2992bff1ac1b773579b7b4059407a4eb44d65e3103deb.png";

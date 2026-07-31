@@ -1,9 +1,9 @@
-// Module ID: 8673
-// Function ID: 8674
+// Module ID: 8686
+// Function ID: 8687
 // Name: fromServer
-// Dependencies: [1883, 4228, 2]
+// Dependencies: [1883, 4232, 2]
 
-// Module 8673 (fromServer)
+// Module 8686 (fromServer)
 import "toJS";
 import createFromServer from "createFromServer";
 
@@ -39,7 +39,7 @@ prototype["fromServer"] = function fromServer(sku) {
     fromServer = createFromServer.createFromServer(sku);
   }
   obj.sku = fromServer;
-  if (typeof prototype !== "find") {
+  if (typeof prototype !== "fileFinishedImporting") {
     str = "Trying to call a non-function";
     HermesBuiltin.throwTypeError();
   }

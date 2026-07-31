@@ -1,14 +1,14 @@
-// Module ID: 9125
-// Function ID: 9126
+// Module ID: 9138
+// Function ID: 9139
 // Name: SearchEntrypointAnalyticsLocations
-// Dependencies: [9097, 2]
+// Dependencies: [9108, 2]
 
-// Module 9125 (SearchEntrypointAnalyticsLocations)
-import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+// Module 9138 (SearchEntrypointAnalyticsLocations)
+import MessageEmbedTypes from "MessageEmbedTypes";
 
 let SearchHistoryItemTypes;
 let SearchTabs;
-({ SearchHistoryItemTypes, SearchTabs } = SearchAutocompleteSelectAnalyticsActions);
+({ SearchHistoryItemTypes, SearchTabs } = MessageEmbedTypes);
 let obj = { RECENT: "recent", CHANNELS: "channels", MEDIA: "media", PINS: "pins", LINKS: "links", FILES: "files", MESSAGES: "messages", PEOPLE: "people", MEMBERS: "members", THREADS: "threads" };
 obj = { [SearchTabs.RECENT]: obj.RECENT, [SearchTabs.GUILD_CHANNELS]: obj.CHANNELS, [SearchTabs.MEDIA]: obj.MEDIA, [SearchTabs.PINS]: obj.PINS, [SearchTabs.LINKS]: obj.LINKS, [SearchTabs.FILES]: obj.FILES, [SearchTabs.MESSAGES]: obj.MESSAGES, [SearchTabs.PEOPLE]: obj.PEOPLE, [SearchTabs.MEMBERS]: obj.MEMBERS, [SearchTabs.THREADS]: obj.THREADS };
 obj = { GUILD_CHANNEL: "guild_channel", GDM_CHANNEL: "gdm_channel", DM_CHANNEL: "dm_channel", PLAINTEXT: "plaintext" };

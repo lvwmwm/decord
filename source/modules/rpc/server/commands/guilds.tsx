@@ -1,8 +1,8 @@
-// Module ID: 13527
-// Function ID: 13528
-// Dependencies: [1415, 1862, 676, 8171, 10625, 10622, 2]
+// Module ID: 13551
+// Function ID: 13552
+// Dependencies: [1415, 1862, 676, 8178, 10643, 10640, 2]
 
-// Module 13527
+// Module 13551
 import { getGuildIconURL } from "GuildNSFWContentLevel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
@@ -14,7 +14,7 @@ let obj = {};
 obj = {
   scope: require("set").OAuth2Scopes.RPC,
   validation(string) {
-    let obj = importDefault(10625)(string);
+    let obj = importDefault(10643)(string);
     obj = { guild_id: string.string(), timeout: null };
     const requiredResult = obj.required();
     const numberResult = string.number();

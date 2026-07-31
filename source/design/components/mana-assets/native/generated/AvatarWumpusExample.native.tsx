@@ -1,10 +1,10 @@
-// Module ID: 6865
-// Function ID: 6866
+// Module ID: 6873
+// Function ID: 6874
 // Name: AvatarWumpusExample
-// Dependencies: [21, 5141, 6866, 2]
+// Dependencies: [21, 5145, 6874, 2]
 // Exports: AvatarWumpusExample
 
-// Module 6865 (AvatarWumpusExample)
+// Module 6873 (AvatarWumpusExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarWumpusExample.native.tsx");
@@ -28,7 +28,7 @@ export const AvatarWumpusExample = function AvatarWumpusExample(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6866);
+  obj[0] = importDefault(6874);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const AvatarWumpusExample = function AvatarWumpusExample(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
 };

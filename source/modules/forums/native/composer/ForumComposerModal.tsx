@@ -1,10 +1,10 @@
-// Module ID: 9564
-// Function ID: 9565
+// Module ID: 9579
+// Function ID: 9580
 // Name: ForumComposerModal
-// Dependencies: [19, 17, 9565, 1372, 4526, 4525, 6051, 21, 4189, 712, 1844, 4529, 1236, 6086, 6183, 5515, 589, 9566, 9563, 1478, 1579, 11, 6076, 5149, 9567, 2]
+// Dependencies: [19, 17, 9580, 1372, 4530, 4529, 6057, 21, 4193, 712, 1844, 4533, 1236, 6092, 6189, 5519, 589, 9581, 9578, 1478, 1579, 11, 6082, 5153, 9582, 2]
 // Exports: default
 
-// Module 9564 (ForumComposerModal)
+// Module 9579 (ForumComposerModal)
 import "computeEntryState";
 import { View } from "useGetThreadDraftSettings";
 import initialize from "initialize";

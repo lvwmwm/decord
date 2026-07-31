@@ -1,10 +1,10 @@
-// Module ID: 12022
-// Function ID: 12023
+// Module ID: 12040
+// Function ID: 12041
 // Name: isActivityJoinableOnCurrentPlatform
-// Dependencies: [676, 501, 1577, 6023, 2]
+// Dependencies: [676, 501, 1577, 6029, 2]
 // Exports: default, getCurrentActivityGamePlatform, isActivityJoinable
 
-// Module 12022 (isActivityJoinableOnCurrentPlatform)
+// Module 12040 (isActivityJoinableOnCurrentPlatform)
 import ME from "ME";
 
 let c3;
@@ -16,7 +16,7 @@ const result = require("isMetaQuest").fileFinishedImporting("modules/activities/
 export default function isActivityJoinableOnCurrentPlatform(type) {
   let tmp = null == type;
   if (!tmp) {
-    tmp = !importDefault(6023)(type, constants.JOIN);
+    tmp = !importDefault(6029)(type, constants.JOIN);
   }
   if (!tmp) {
     tmp = type.type !== constants3.PLAYING;
@@ -83,7 +83,7 @@ export const getCurrentActivityGamePlatform = function getCurrentActivityGamePla
 export const isActivityJoinable = function isActivityJoinable(type) {
   let tmp = null == type;
   if (!tmp) {
-    tmp = !importDefault(6023)(type, constants.JOIN);
+    tmp = !importDefault(6029)(type, constants.JOIN);
   }
   if (!tmp) {
     tmp = type.type !== constants3.PLAYING;

@@ -1,9 +1,9 @@
-// Module ID: 5778
-// Function ID: 5779
+// Module ID: 5783
+// Function ID: 5784
 // Name: handleReset
-// Dependencies: [1371, 1933, 5779, 5096, 3819, 1340, 1218, 5133, 1372, 5780, 4221, 3817, 4201, 1931, 4385, 685, 5781, 12, 1351, 3807, 11, 589, 709, 2]
+// Dependencies: [1371, 1933, 5784, 5100, 3823, 1340, 1218, 5137, 1372, 5785, 3821, 4205, 1931, 4389, 685, 5786, 12, 1351, 3811, 11, 589, 709, 2]
 
-// Module 5778 (handleReset)
+// Module 5783 (handleReset)
 import participantFromServer from "participantFromServer";
 import isSubscriptionGated from "isSubscriptionGated";
 import scheduledEventSort from "scheduledEventSort";
@@ -14,10 +14,9 @@ import fetchFingerprint from "fetchFingerprint";
 import incrementVersion from "incrementVersion";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
-import gameFromServer from "gameFromServer";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
-import closure_16 from "handleConnectionOpen";
+import closure_15 from "handleConnectionOpen";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { UserSettingsTypes } from "MAX_FAVORITES";
 import { Store } from "initialize";
@@ -59,7 +58,7 @@ function handleChannelSelect() {
     const obj = importDefault(12)(items);
     const item = importDefault(12)(items).uniq().forEach((channelId) => {
       if (null != channelId) {
-        const result = closure_21.nonPositionalChannelIdUpdate(channelId);
+        const result = closure_20.nonPositionalChannelIdUpdate(channelId);
       }
     });
     flag = true;
@@ -86,14 +85,14 @@ function handleRecomputeAllSubtitles() {
 function handleGuildScheduledEventUpdate(guildScheduledEvent) {
   return tmp2.updateSubtitles(guildScheduledEvent.guildScheduledEvent.guild_id);
 }
+let c18 = null;
 let c19 = null;
-let c20 = null;
-let closure_21 = new require("computeSubtitle")();
+let closure_20 = new require("computeSubtitle")();
 class ChannelListStore extends Store {
 }
 const prototype = ChannelListStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(rebuild, fetchFingerprint, incrementVersion, ensureGuildLoaded, handleConnectionOpen, participantFromServer, gameFromServer, isSubscriptionGated, scheduledEventSort, storeThread, getUncachedChannelPermissions, generateOldThreadCutoff, closure_16, updateUserGuildSettingsInternal, handleConnectionClosedOrResumed);
+  this.waitFor(rebuild, fetchFingerprint, incrementVersion, ensureGuildLoaded, handleConnectionOpen, participantFromServer, isSubscriptionGated, scheduledEventSort, storeThread, getUncachedChannelPermissions, generateOldThreadCutoff, closure_15, updateUserGuildSettingsInternal, handleConnectionClosedOrResumed);
 };
 prototype["getGuild"] = function getGuild(arg0, guildActionRows) {
   guildActionRows = undefined;
@@ -148,7 +147,7 @@ const channelListStore = new ChannelListStore(require("dispatcher"), {
     const found = mapped.filter(_require(1351).isNotNullish);
     const arr = importDefault(12)(channels.channels);
     const item = found.uniq().forEach((guildId) => {
-      if (outer1_21.clearGuildId(guildId)) {
+      if (outer1_20.clearGuildId(guildId)) {
         let c0 = true;
       }
     });
@@ -183,7 +182,7 @@ const channelListStore = new ChannelListStore(require("dispatcher"), {
     const mapped = importDefault(12)(channels.channels).map((guild_id) => guild_id.guild_id);
     const arr = importDefault(12)(channels.channels);
     const item = mapped.uniq().forEach((guildId) => {
-      if (outer1_21.clearGuildId(guildId)) {
+      if (outer1_20.clearGuildId(guildId)) {
         let c0 = true;
       }
     });
@@ -200,9 +199,9 @@ const channelListStore = new ChannelListStore(require("dispatcher"), {
   },
   EMBEDDED_ACTIVITY_UPDATE_V2: function handleEmbeddedActivityUpdateV2(instance) {
     instance = instance.instance;
-    const embeddedActivityLocationGuildId = require(3807) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
-    const obj = require(3807) /* getEmbeddedActivityLocationChannelId */;
-    return tmp2.updateSubtitles(embeddedActivityLocationGuildId, require(3807) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(instance.location));
+    const embeddedActivityLocationGuildId = require(3811) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
+    const obj = require(3811) /* getEmbeddedActivityLocationChannelId */;
+    return tmp2.updateSubtitles(embeddedActivityLocationGuildId, require(3811) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(instance.location));
   },
   EMBEDDED_ACTIVITY_LAUNCH_START: function handleEmbeddedActivityLaunchStart() {
     tmp2.updateSubtitles();
@@ -243,7 +242,7 @@ const channelListStore = new ChannelListStore(require("dispatcher"), {
   IMPERSONATE_UPDATE: handleRebuildGuildId,
   LOAD_CHANNELS: function handleLoadChannels(channels) {
     channels = channels.channels;
-    const item = channels.forEach((guildId) => closure_21.clearGuildId(guildId.guildId));
+    const item = channels.forEach((guildId) => closure_20.clearGuildId(guildId.guildId));
   },
   LOAD_MESSAGES_SUCCESS: handleReadStateChange,
   MESSAGE_ACK: handleReadStateChange,
@@ -277,7 +276,7 @@ const channelListStore = new ChannelListStore(require("dispatcher"), {
   USER_GUILD_SETTINGS_CHANNEL_UPDATE: handleRebuildGuildId,
   USER_GUILD_SETTINGS_FULL_UPDATE: function handleUserGuildSettingsFullUpdate(userGuildSettings) {
     userGuildSettings = userGuildSettings.userGuildSettings;
-    const item = userGuildSettings.forEach((guild_id) => closure_21.clearGuildId(guild_id.guild_id));
+    const item = userGuildSettings.forEach((guild_id) => closure_20.clearGuildId(guild_id.guild_id));
   },
   USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: handleRebuildGuildId,
   USER_GUILD_SETTINGS_GUILD_UPDATE: handleRebuildGuildId,
@@ -298,8 +297,8 @@ const channelListStore = new ChannelListStore(require("dispatcher"), {
         const keys = importDefault(11).keys(guilds);
         const item = keys.forEach((arg0) => {
           if (null != guilds[arg0].guildRecentsDismissedAt) {
-            c1 = outer1_21.updateRecentsCategory(arg0) || c1;
-            const tmp2 = outer1_21.updateRecentsCategory(arg0) || c1;
+            c1 = outer1_20.updateRecentsCategory(arg0) || c1;
+            const tmp2 = outer1_20.updateRecentsCategory(arg0) || c1;
           }
         });
         const obj = importDefault(11);
@@ -356,9 +355,9 @@ const channelListStore = new ChannelListStore(require("dispatcher"), {
     return flag;
   },
   WINDOW_FOCUS: function handleCurrentChannelReadStateChange() {
-    let result = null != c19;
+    let result = null != c18;
     if (result) {
-      result = tmp2.nonPositionalChannelIdUpdate(c19);
+      result = tmp2.nonPositionalChannelIdUpdate(c18);
     }
     return result;
   }
@@ -384,7 +383,7 @@ let obj = {
     const found = mapped.filter(_require(1351).isNotNullish);
     const arr = importDefault(12)(channels.channels);
     const item = found.uniq().forEach((guildId) => {
-      if (outer1_21.clearGuildId(guildId)) {
+      if (outer1_20.clearGuildId(guildId)) {
         let c0 = true;
       }
     });
@@ -419,7 +418,7 @@ let obj = {
     const mapped = importDefault(12)(channels.channels).map((guild_id) => guild_id.guild_id);
     const arr = importDefault(12)(channels.channels);
     const item = mapped.uniq().forEach((guildId) => {
-      if (outer1_21.clearGuildId(guildId)) {
+      if (outer1_20.clearGuildId(guildId)) {
         let c0 = true;
       }
     });
@@ -436,9 +435,9 @@ let obj = {
   },
   EMBEDDED_ACTIVITY_UPDATE_V2: function handleEmbeddedActivityUpdateV2(instance) {
     instance = instance.instance;
-    const embeddedActivityLocationGuildId = require(3807) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
-    const obj = require(3807) /* getEmbeddedActivityLocationChannelId */;
-    return tmp2.updateSubtitles(embeddedActivityLocationGuildId, require(3807) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(instance.location));
+    const embeddedActivityLocationGuildId = require(3811) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
+    const obj = require(3811) /* getEmbeddedActivityLocationChannelId */;
+    return tmp2.updateSubtitles(embeddedActivityLocationGuildId, require(3811) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(instance.location));
   },
   EMBEDDED_ACTIVITY_LAUNCH_START: function handleEmbeddedActivityLaunchStart() {
     tmp2.updateSubtitles();
@@ -479,7 +478,7 @@ let obj = {
   IMPERSONATE_UPDATE: handleRebuildGuildId,
   LOAD_CHANNELS: function handleLoadChannels(channels) {
     channels = channels.channels;
-    const item = channels.forEach((guildId) => closure_21.clearGuildId(guildId.guildId));
+    const item = channels.forEach((guildId) => closure_20.clearGuildId(guildId.guildId));
   },
   LOAD_MESSAGES_SUCCESS: handleReadStateChange,
   MESSAGE_ACK: handleReadStateChange,
@@ -513,7 +512,7 @@ let obj = {
   USER_GUILD_SETTINGS_CHANNEL_UPDATE: handleRebuildGuildId,
   USER_GUILD_SETTINGS_FULL_UPDATE: function handleUserGuildSettingsFullUpdate(userGuildSettings) {
     userGuildSettings = userGuildSettings.userGuildSettings;
-    const item = userGuildSettings.forEach((guild_id) => closure_21.clearGuildId(guild_id.guild_id));
+    const item = userGuildSettings.forEach((guild_id) => closure_20.clearGuildId(guild_id.guild_id));
   },
   USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: handleRebuildGuildId,
   USER_GUILD_SETTINGS_GUILD_UPDATE: handleRebuildGuildId,
@@ -534,8 +533,8 @@ let obj = {
         const keys = importDefault(11).keys(guilds);
         const item = keys.forEach((arg0) => {
           if (null != guilds[arg0].guildRecentsDismissedAt) {
-            c1 = outer1_21.updateRecentsCategory(arg0) || c1;
-            const tmp2 = outer1_21.updateRecentsCategory(arg0) || c1;
+            c1 = outer1_20.updateRecentsCategory(arg0) || c1;
+            const tmp2 = outer1_20.updateRecentsCategory(arg0) || c1;
           }
         });
         const obj = importDefault(11);
@@ -592,9 +591,9 @@ let obj = {
     return flag;
   },
   WINDOW_FOCUS: function handleCurrentChannelReadStateChange() {
-    let result = null != c19;
+    let result = null != c18;
     if (result) {
-      result = tmp2.nonPositionalChannelIdUpdate(c19);
+      result = tmp2.nonPositionalChannelIdUpdate(c18);
     }
     return result;
   }

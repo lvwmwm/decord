@@ -1,10 +1,10 @@
-// Module ID: 9227
-// Function ID: 9228
+// Module ID: 9240
+// Function ID: 9241
 // Name: handlePress
-// Dependencies: [19, 17, 9175, 21, 4189, 712, 9173, 9184, 4185, 1236, 4600, 2]
+// Dependencies: [19, 17, 9188, 21, 4193, 712, 9186, 9197, 4189, 1236, 4604, 2]
 // Exports: default
 
-// Module 9227 (handlePress)
+// Module 9240 (handlePress)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { resetChangeEmailStore } from "ChangeEmailFields";
@@ -19,7 +19,7 @@ let metroImportAll;
 const require = arg1;
 function handlePress() {
   resetChangeEmailStore();
-  importDefault(9173).close();
+  importDefault(9186).close();
 }
 ({ View: c3, Image: c4, ScrollView: c5 } = get_ActivityIndicator);
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
@@ -39,28 +39,28 @@ const result = require("ChangeEmailFields").fileFinishedImporting("modules/verif
 export default function ChangeEmailComplete(email) {
   const tmp = createCacheKey();
   let obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer, children: null };
-  obj = { style: tmp.image, source: importDefault(9184) };
+  obj = { style: tmp.image, source: importDefault(9197) };
   const items = [callback(closure_4, obj), , , ];
   obj = { style: tmp.bodyInner, children: null };
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[4] = intl.string(require(1236) /* getSystemLocale */.t["8O+nF7"]);
-  const items1 = [callback(require(4185) /* Text */.Text, obj1), ];
+  const items1 = [callback(require(4189) /* Text */.Text, obj1), ];
   const obj2 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl2.format(require(1236) /* getSystemLocale */.t.Zvx0O3, { email: email.email });
-  items1[1] = callback(require(4185) /* Text */.Text, obj2);
+  items1[1] = callback(require(4189) /* Text */.Text, obj2);
   obj[1] = items1;
   items[1] = callback2(closure_3, obj);
   const obj3 = { style: tmp.tooltip, variant: "text-sm/normal", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj3[2] = intl3.string(require(1236) /* getSystemLocale */.t.yb7itQ);
-  items[2] = callback(require(4185) /* Text */.Text, obj3);
+  items[2] = callback(require(4189) /* Text */.Text, obj3);
   const obj4 = { text: null, onPress: null, grow: true };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj4[0] = intl4.string(require(1236) /* getSystemLocale */.t.BddRzS);
   obj4[1] = handlePress;
-  items[3] = callback(require(4600) /* Button */.Button, obj4);
+  items[3] = callback(require(4604) /* Button */.Button, obj4);
   obj[3] = items;
   return callback2(closure_5, obj);
 };

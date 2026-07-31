@@ -1,9 +1,9 @@
-// Module ID: 12759
-// Function ID: 12760
+// Module ID: 12784
+// Function ID: 12785
 // Name: GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT
 // Dependencies: [1452, 2]
 
-// Module 12759 (GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT)
+// Module 12784 (GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null, 2: { enabled: true, visualVariant: "one-column" } };

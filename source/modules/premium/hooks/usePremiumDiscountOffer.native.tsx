@@ -1,9 +1,9 @@
-// Module ID: 6255
-// Function ID: 6256
+// Module ID: 6261
+// Function ID: 6262
 // Name: set
-// Dependencies: [2, 6256]
+// Dependencies: [2, 6262]
 
-// Module 6255 (set)
+// Module 6261 (set)
 const result = require("set").fileFinishedImporting("modules/premium/hooks/usePremiumDiscountOffer.native.tsx");
 for (const key10018 in require("usePremiumDiscountOffer")) {
   let tmp3 = key10018;

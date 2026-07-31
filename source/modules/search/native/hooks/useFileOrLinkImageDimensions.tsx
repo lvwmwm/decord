@@ -1,18 +1,18 @@
-// Module ID: 15530
-// Function ID: 15531
+// Module ID: 15558
+// Function ID: 15559
 // Name: useFileOrLinkImageDimensions
-// Dependencies: [19, 9097, 2]
+// Dependencies: [19, 9108, 2]
 // Exports: useFileOrLinkImageDimensions
 
-// Module 15530 (useFileOrLinkImageDimensions)
+// Module 15558 (useFileOrLinkImageDimensions)
 import noop from "noop";
-import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import MessageEmbedTypes from "MessageEmbedTypes";
 
 let c3;
 let c4;
 let closure_1;
 let obj1;
-({ FILES_OR_LINKS_GAP_WIDTH: closure_1, FILES_OR_LINKS_NUM_COLUMNS: obj1, FILE_OR_LINK_IMAGE_RATIO: c3, SEARCH_LIST_HORIZONTAL_PADDING: c4 } = SearchAutocompleteSelectAnalyticsActions);
+({ FILES_OR_LINKS_GAP_WIDTH: closure_1, FILES_OR_LINKS_NUM_COLUMNS: obj1, FILE_OR_LINK_IMAGE_RATIO: c3, SEARCH_LIST_HORIZONTAL_PADDING: c4 } = MessageEmbedTypes);
 let result = require("set").fileFinishedImporting("modules/search/native/hooks/useFileOrLinkImageDimensions.tsx");
 
 export const useFileOrLinkImageDimensions = function useFileOrLinkImageDimensions(width) {

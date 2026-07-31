@@ -4,10 +4,12 @@
 
 // Module 4836
 arg5.default = {
-  get() {
-    if (typeof TextDecoder === "__INTERNAL_SLOT_MAP__") {
-      const _TextDecoder = TextDecoder;
-      return TextDecoder;
+  0: {
+    name: "PentaxVersion",
+    description(join) {
+      return join.join(".");
     }
-  }
+  },
+  5: "PentaxModelID",
+  555: "LevelInfo"
 };

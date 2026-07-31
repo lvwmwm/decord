@@ -1,10 +1,10 @@
-// Module ID: 13232
-// Function ID: 13233
+// Module ID: 13256
+// Function ID: 13257
 // Name: IntlLink
-// Dependencies: [19, 21, 4189, 712, 3908, 3886, 3888, 1297, 2]
+// Dependencies: [19, 21, 4193, 712, 3912, 3890, 3892, 1297, 2]
 // Exports: IntlLink
 
-// Module 13232 (IntlLink)
+// Module 13256 (IntlLink)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -38,6 +38,6 @@ export const IntlLink = function IntlLink(children) {
     }
   }
   const tmp = target;
-  const tmp3 = callback(React.useContext(target(3908).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
-  return jsx(tmp(1297).LegacyText, { accessible: true, accessibilityRole: "link", onPress: fn, style: callback(React.useContext(target(3908).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: children.children });
+  const tmp3 = callback(React.useContext(target(3912).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  return jsx(tmp(1297).LegacyText, { accessible: true, accessibilityRole: "link", onPress: fn, style: callback(React.useContext(target(3912).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: children.children });
 };

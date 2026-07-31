@@ -1,9 +1,9 @@
-// Module ID: 8870
-// Function ID: 8871
+// Module ID: 8883
+// Function ID: 8884
 // Name: computeCallVerification
-// Dependencies: [1218, 4261, 4275, 8871, 8872, 676, 8888, 4253, 4286, 589, 709, 2]
+// Dependencies: [1218, 4265, 4279, 8884, 8885, 676, 8901, 4257, 4290, 589, 709, 2]
 
-// Module 8870 (computeCallVerification)
+// Module 8883 (computeCallVerification)
 import fetchFingerprint from "fetchFingerprint";
 import createRTCConnection from "createRTCConnection";
 import initialize from "initialize";
@@ -58,7 +58,7 @@ function handleUserUpdate(userId) {
       }
       flag = isKeyVerifiedResult !== map.get(userId);
       const result = map.set(userId, isKeyVerifiedResult);
-      obj = require(8888) /* getCurrentUserSigningKey */;
+      obj = require(8901) /* getCurrentUserSigningKey */;
     }
     const allActiveStreamKeys = store2.getAllActiveStreamKeys();
     const reduced = allActiveStreamKeys.reduce((arg0, streamKey) => {
@@ -119,14 +119,14 @@ const secureFramesVerifiedStore = new SecureFramesVerifiedStore(require("dispatc
     if (state.state !== RTCConnectionStates.DISCONNECTED) {
       return false;
     } else {
-      if (require(4286) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM === context) {
+      if (require(4290) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM === context) {
         let tmp6 = null != streamKey;
         if (tmp6) {
           map1.delete(streamKey);
           tmp6 = computeCallVerification();
         }
         return tmp6;
-      } else if (tmp10(4286).MediaEngineContextTypes.DEFAULT === context) {
+      } else if (tmp10(4290).MediaEngineContextTypes.DEFAULT === context) {
         map.clear();
         map1.clear();
         let c10 = false;

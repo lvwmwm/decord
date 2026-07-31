@@ -1,9 +1,9 @@
-// Module ID: 16117
-// Function ID: 16118
+// Module ID: 16145
+// Function ID: 16146
 // Name: handlePostConnectionOpen
-// Dependencies: [5, 1372, 1931, 4006, 1221, 676, 5134, 4403, 4395, 16118, 1959, 691, 2]
+// Dependencies: [5, 1372, 1931, 4010, 1221, 676, 5138, 4407, 4399, 16146, 1959, 691, 2]
 
-// Module 16117 (handlePostConnectionOpen)
+// Module 16145 (handlePostConnectionOpen)
 import closure_3 from "ME";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -30,7 +30,7 @@ const prototype = AgeGateManager.prototype;
 prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
   const guildId = store.getGuildId();
   channelId = channelId.getChannelId();
-  require(4403) /* shouldShowAgeGateForVoiceChannel */.maybeShowAgeGate(guildId, channelId);
+  require(4407) /* shouldShowAgeGateForVoiceChannel */.maybeShowAgeGate(guildId, channelId);
 };
 prototype["handleChannelSelect"] = function handleChannelSelect(arg0) {
   let channelId;
@@ -46,13 +46,13 @@ prototype["handleChannelSelect"] = function handleChannelSelect(arg0) {
     tmp2 = type !== constants.GUILD_VOICE;
   }
   if (tmp2) {
-    require(4403) /* shouldShowAgeGateForVoiceChannel */.maybeShowAgeGate(guildId, channelId);
-    const obj = require(4403) /* shouldShowAgeGateForVoiceChannel */;
+    require(4407) /* shouldShowAgeGateForVoiceChannel */.maybeShowAgeGate(guildId, channelId);
+    const obj = require(4407) /* shouldShowAgeGateForVoiceChannel */;
   }
 };
 prototype["handleAgeGateModalOpen"] = function handleAgeGateModalOpen(source) {
   source = source.source;
-  importDefault(4395).pushLazy(callback(function*() {
+  importDefault(4399).pushLazy(callback(function*() {
     if (c3 === 2) {
       c3 = 3;
       HermesBuiltin.throwTypeError();
@@ -116,7 +116,7 @@ prototype["handleAgeGateModalOpen"] = function handleAgeGateModalOpen(source) {
   }), { source }, closure_7);
 };
 prototype["handleAgeGateModalClose"] = function handleAgeGateModalClose() {
-  importDefault(4395).popWithKey(closure_7);
+  importDefault(4399).popWithKey(closure_7);
 };
 prototype["handleGuildUpdate"] = function handleGuildUpdate(guild) {
   guild = guild.guild;
@@ -126,8 +126,8 @@ prototype["handleGuildUpdate"] = function handleGuildUpdate(guild) {
     tmp2 = guild.owner_configured_content_level === constants2.AGE_RESTRICTED;
   }
   if (tmp2) {
-    require(4403) /* shouldShowAgeGateForVoiceChannel */.maybeShowAgeGate(guild.id, null);
-    const obj = require(4403) /* shouldShowAgeGateForVoiceChannel */;
+    require(4407) /* shouldShowAgeGateForVoiceChannel */.maybeShowAgeGate(guild.id, null);
+    const obj = require(4407) /* shouldShowAgeGateForVoiceChannel */;
   }
 };
 const ageGateManager = new AgeGateManager();

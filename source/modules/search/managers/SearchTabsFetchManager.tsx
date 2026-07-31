@@ -1,11 +1,11 @@
-// Module ID: 10107
-// Function ID: 10108
+// Module ID: 10124
+// Function ID: 10125
 // Name: createRequestPayload
-// Dependencies: [109, 9097, 676, 10108, 10109, 2]
+// Dependencies: [109, 9108, 676, 10125, 10126, 2]
 
-// Module 10107 (createRequestPayload)
+// Module 10124 (createRequestPayload)
 import _objectWithoutProperties from "_objectWithoutProperties";
-import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import MessageEmbedTypes from "MessageEmbedTypes";
 import { SearchTypes } from "ME";
 import { AbstractSearchFetchManager } from "cleanUp";
 
@@ -14,7 +14,7 @@ let c5;
 let closure_6;
 const require = arg1;
 let closure_2 = ["include_nsfw", "channel_id"];
-({ SEARCH_FILTERS_BY_TAB: c4, SEARCH_QUERY_BY_SEARCH_FILTER: c5, SEARCH_QUERY_DEFAULT_FILTERS: closure_6 } = SearchAutocompleteSelectAnalyticsActions);
+({ SEARCH_FILTERS_BY_TAB: c4, SEARCH_QUERY_BY_SEARCH_FILTER: c5, SEARCH_QUERY_DEFAULT_FILTERS: closure_6 } = MessageEmbedTypes);
 class SearchTabsFetchManager extends AbstractSearchFetchManager {
 }
 const prototype = SearchTabsFetchManager.prototype;
@@ -57,10 +57,10 @@ prototype["createWithPayload"] = function createWithPayload(searchTabs) {
     if (tmp2.GUILD_CHANNEL !== type) {
       if (tmp2.THREAD !== type) {
         if (tmp2.CHANNEL === type) {
-          const searchTabFetcherImpl = new require(10109) /* fetch */.SearchTabFetcherImpl(searchContext.channelId, searchContext.type, searchQuery, requestPayload);
+          const searchTabFetcherImpl = new require(10126) /* fetch */.SearchTabFetcherImpl(searchContext.channelId, searchContext.type, searchQuery, requestPayload);
           return searchTabFetcherImpl;
         } else if (tmp2.DMS === type) {
-          const searchTabFetcherImpl1 = new require(10109) /* fetch */.SearchTabFetcherImpl(searchContext.type, searchContext.type, searchQuery, requestPayload);
+          const searchTabFetcherImpl1 = new require(10126) /* fetch */.SearchTabFetcherImpl(searchContext.type, searchContext.type, searchQuery, requestPayload);
           return searchTabFetcherImpl1;
         } else {
           const _Error = Error;
@@ -71,7 +71,7 @@ prototype["createWithPayload"] = function createWithPayload(searchTabs) {
       }
     }
   }
-  const searchTabFetcherImpl2 = new require(10109) /* fetch */.SearchTabFetcherImpl(searchContext.guildId, searchContext.type, searchQuery, requestPayload);
+  const searchTabFetcherImpl2 = new require(10126) /* fetch */.SearchTabFetcherImpl(searchContext.guildId, searchContext.type, searchQuery, requestPayload);
   return searchTabFetcherImpl2;
 };
 prototype["create"] = function create(arg0) {

@@ -1,9 +1,9 @@
-// Module ID: 5567
-// Function ID: 5568
+// Module ID: 5571
+// Function ID: 5572
 // Name: getEmojiSourceData
 // Dependencies: [5, 1883, 676, 530, 1416, 1414, 1411, 2]
 
-// Module 5567 (getEmojiSourceData)
+// Module 5571 (getEmojiSourceData)
 import areSetsEqual from "areSetsEqual";
 import "toJS";
 import ME from "ME";
@@ -253,7 +253,7 @@ ExpressionSourceGuildRecord["createFromGuildRecord"] = function createFromGuildR
   obj.presenceCount = null;
   obj.memberCount = null;
   obj.emojis = null;
-  if (typeof ExpressionSourceGuildRecord !== "find") {
+  if (typeof ExpressionSourceGuildRecord !== "fileFinishedImporting") {
     str = "Trying to call a non-function";
     HermesBuiltin.throwTypeError();
   }
@@ -272,7 +272,7 @@ ExpressionSourceGuildRecord["createFromDiscoverableGuild"] = function createFrom
   ({ premiumSubscriptionCount: obj.premiumSubscriberCount, presenceCount: obj.presenceCount, memberCount } = emojis);
   obj.memberCount = memberCount;
   obj.emojis = emojis.emojis;
-  if (typeof ExpressionSourceGuildRecord !== "find") {
+  if (typeof ExpressionSourceGuildRecord !== "fileFinishedImporting") {
     str = "Trying to call a non-function";
     HermesBuiltin.throwTypeError();
   }
@@ -287,7 +287,7 @@ ExpressionSourceGuildRecord["createFromServer"] = function createFromServer(id) 
   let str = obj;
   const merged = Object.assign(_mapCommonResult);
   ({ premium_tier: obj.premiumTier, premium_subscription_count: obj.premiumSubscriberCount, approximate_presence_count: obj.presenceCount, approximate_member_count: obj.memberCount, emojis: obj.emojis } = id);
-  if (typeof ExpressionSourceGuildRecord !== "find") {
+  if (typeof ExpressionSourceGuildRecord !== "fileFinishedImporting") {
     str = "Trying to call a non-function";
     HermesBuiltin.throwTypeError();
   }
@@ -321,7 +321,7 @@ prototype2["createFromServer"] = function createFromServer(arg0) {
   let id;
   let name;
   ({ id, name } = arg0);
-  if (typeof prototype2 !== "find") {
+  if (typeof prototype2 !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const tmp2 = new prototype2("Trying to call a non-function", prototype2, new.target);

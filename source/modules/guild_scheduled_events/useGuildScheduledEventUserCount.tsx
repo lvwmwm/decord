@@ -1,10 +1,10 @@
-// Module ID: 8217
-// Function ID: 8218
+// Module ID: 8224
+// Function ID: 8225
 // Name: useGuildScheduledEventUserCount
-// Dependencies: [19, 5779, 589, 8218, 2]
+// Dependencies: [19, 5784, 589, 8225, 2]
 // Exports: default
 
-// Module 8217 (useGuildScheduledEventUserCount)
+// Module 8224 (useGuildScheduledEventUserCount)
 import { useEffect } from "noop";
 import scheduledEventSort from "scheduledEventSort";
 

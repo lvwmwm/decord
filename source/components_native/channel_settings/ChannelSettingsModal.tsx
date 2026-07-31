@@ -1,14 +1,14 @@
-// Module ID: 15632
-// Function ID: 15633
+// Module ID: 15660
+// Function ID: 15661
 // Name: styles
-// Dependencies: [19, 17, 676, 9097, 21, 4189, 712, 15633, 1236, 10300, 15545, 15641, 15642, 15644, 15649, 15650, 15659, 15662, 15671, 15673, 15674, 15675, 15676, 15677, 2]
+// Dependencies: [19, 17, 676, 9108, 21, 4193, 712, 15661, 1236, 10318, 15573, 15669, 15670, 15672, 15677, 15678, 15687, 15690, 15699, 15701, 15702, 15703, 15704, 15705, 2]
 // Exports: getChannelSettingsScreens
 
-// Module 15632 (styles)
+// Module 15660 (styles)
 import "EditLinkedLobby";
 import { View } from "WebhookItem";
 import ME from "ME";
-import { SearchTabs } from "SearchAutocompleteSelectAnalyticsActions";
+import { SearchTabs } from "MessageEmbedTypes";
 import { jsx } from "handleSetRegion";
 import createCacheKey from "createCacheKey";
 

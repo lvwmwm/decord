@@ -1,9 +1,9 @@
-// Module ID: 9116
-// Function ID: 9117
+// Module ID: 9129
+// Function ID: 9130
 // Name: PressableNavigatorBackIcon
-// Dependencies: [19, 17, 1372, 5919, 1931, 21, 4189, 1297, 712, 1348, 589, 4000, 9117, 4717, 1236, 9118, 9119, 2]
+// Dependencies: [19, 17, 1372, 5925, 1931, 21, 4193, 1297, 712, 1348, 589, 4004, 9130, 4721, 1236, 9131, 9132, 2]
 
-// Module 9116 (PressableNavigatorBackIcon)
+// Module 9129 (PressableNavigatorBackIcon)
 import importAllResult from "noop";
 import get_ActivityIndicator from "set";
 import ensureGuildLoaded from "ensureGuildLoaded";

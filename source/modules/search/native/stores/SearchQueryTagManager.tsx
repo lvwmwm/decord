@@ -1,10 +1,10 @@
-// Module ID: 10111
-// Function ID: 10112
+// Module ID: 10128
+// Function ID: 10129
 // Name: isComplete
-// Dependencies: [9097, 9125, 2]
+// Dependencies: [9108, 9138, 2]
 
-// Module 10111 (isComplete)
-import { SearchQueryTagTypes } from "SearchAutocompleteSelectAnalyticsActions";
+// Module 10128 (isComplete)
+import { SearchQueryTagTypes } from "MessageEmbedTypes";
 import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
 
 function isComplete(type) {

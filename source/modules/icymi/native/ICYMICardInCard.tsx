@@ -1,10 +1,10 @@
-// Module ID: 15357
-// Function ID: 15358
+// Module ID: 15385
+// Function ID: 15386
 // Name: CutoutGuildIconWithUserCustom
-// Dependencies: [19, 17, 1372, 1942, 1862, 676, 21, 15316, 712, 7967, 5566, 1297, 4606, 589, 4419, 8380, 4379, 4185, 4380, 15358, 1236, 4695, 15356, 4717, 5925, 8959, 2]
+// Dependencies: [19, 17, 1372, 1942, 1862, 676, 21, 15344, 712, 7974, 5570, 1297, 4610, 589, 4423, 8393, 4383, 4189, 4384, 15386, 1236, 4699, 15384, 4721, 5931, 8972, 2]
 // Exports: default
 
-// Module 15357 (CutoutGuildIconWithUserCustom)
+// Module 15385 (CutoutGuildIconWithUserCustom)
 import getIconForChannel from "getIconForChannel";
 import { View } from "Text";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -24,13 +24,13 @@ function CutoutGuildIconWithUserCustom(guild) {
   obj = { cutouts: null, children: null };
   obj = { shape: null, x: 18, y: 18, size: 24 };
   const tmp = callback3();
-  obj[0] = require(7967) /* SolidCutout */.CutoutShape.Circle;
+  obj[0] = require(7974) /* SolidCutout */.CutoutShape.Circle;
   const items = [obj];
   obj[0] = items;
   const obj1 = { guild, size: null };
-  const tmp2 = importDefault(7967);
-  obj1[1] = require(5566) /* GuildIconSizes */.GuildIconSizes.SMALL_32;
-  obj[1] = callback(importDefault(5566), obj1);
+  const tmp2 = importDefault(7974);
+  obj1[1] = require(5570) /* GuildIconSizes */.GuildIconSizes.SMALL_32;
+  obj[1] = callback(importDefault(5570), obj1);
   const items1 = [callback(tmp2, obj), ];
   const obj2 = { animate: true, style: tmp.authorAvatar, guildId: guild.id, user: guild.author, size: null };
   obj2[4] = require(1297) /* Button */.AvatarSizes.XSMALL_20;

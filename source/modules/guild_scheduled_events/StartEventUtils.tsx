@@ -1,10 +1,10 @@
-// Module ID: 8334
-// Function ID: 8335
+// Module ID: 8341
+// Function ID: 8342
 // Name: createStageChannelForEvent
-// Dependencies: [5, 1376, 1372, 1862, 1378, 676, 8272, 38, 6720, 8205, 2]
+// Dependencies: [5, 1376, 1372, 1862, 1378, 676, 8279, 38, 6726, 8212, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 8334 (createStageChannelForEvent)
+// Module 8341 (createStageChannelForEvent)
 import ME from "ME";
 import { createChannelRecordFromServer as closure_4 } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";

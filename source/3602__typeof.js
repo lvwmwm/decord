@@ -1,7 +1,7 @@
 // Module ID: 3602
 // Function ID: 3603
 // Name: _typeof
-// Dependencies: [3576, 3577, 3574]
+// Dependencies: [3580, 3578]
 
 // Module 3602 (_typeof)
 import { Parser } from "Parser";
@@ -9,7 +9,7 @@ import { Parser } from "Parser";
 let _createSuperInternal = require;
 let closure_1 = dependencyMap;
 function _typeof(arg0) {
-  if (typeof Symbol !== "ZodObject") {
+  if (typeof Symbol !== "disabledUntil") {
     let _Symbol = Symbol;
     if (typeof Symbol.iterator === "e") {
       function _typeof(arg0) {
@@ -21,7 +21,7 @@ function _typeof(arg0) {
   _typeof = function _typeof(arg0) {
     if (arg0) {
       const _Symbol = Symbol;
-      if (typeof Symbol !== "ZodObject") {
+      if (typeof Symbol !== "disabledUntil") {
         const _Symbol3 = Symbol;
         if (arg0.constructor === Symbol) {
           const _Symbol2 = Symbol;
@@ -33,15 +33,15 @@ function _typeof(arg0) {
     str = typeof arg0;
   };
 }
-function _setPrototypeOf(Hour0To11Parser, Parser) {
+function _setPrototypeOf(AMPMMidnightParser, Parser) {
   let _setPrototypeOf = Object.setPrototypeOf;
   if (!_setPrototypeOf) {
-    _setPrototypeOf = function _setPrototypeOf(Hour0To11Parser, Parser) {
-      Hour0To11Parser.__proto__ = Parser;
-      return Hour0To11Parser;
+    _setPrototypeOf = function _setPrototypeOf(AMPMMidnightParser, Parser) {
+      AMPMMidnightParser.__proto__ = Parser;
+      return AMPMMidnightParser;
     };
   }
-  return _setPrototypeOf(Hour0To11Parser, Parser);
+  return _setPrototypeOf(AMPMMidnightParser, Parser);
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
@@ -60,7 +60,7 @@ function _getPrototypeOf(arg0) {
   return _getPrototypeOf(arg0);
 }
 _createSuperInternal = undefined;
-class Hour0To11Parser {
+class AMPMMidnightParser {
   constructor() {
     if (this instanceof c1) {
       length = arguments.length;
@@ -96,10 +96,10 @@ class Hour0To11Parser {
         str2 = "priority";
         if ("priority" in applyResult) {
           _Object = Object;
-          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 70, enumerable: true, configurable: true, writable: true });
+          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 80, enumerable: true, configurable: true, writable: true });
         } else {
-          num3 = 70;
-          applyResult.priority = 70;
+          num3 = 80;
+          applyResult.priority = 80;
         }
         if (tmp13) {
           _ReferenceError = ReferenceError;
@@ -110,7 +110,7 @@ class Hour0To11Parser {
           tmp19 = referenceError1;
           throw referenceError1;
         } else {
-          items1 = ["h", "H", "k", "t", "T"];
+          items1 = ["a", "B", "H", "k", "t", "T"];
           str3 = "incompatibleTokens";
           if ("incompatibleTokens" in applyResult) {
             _Object2 = Object;
@@ -134,8 +134,8 @@ class Hour0To11Parser {
     }
   }
 }
-closure_1 = Hour0To11Parser;
-if (typeof Parser !== "find") {
+closure_1 = AMPMMidnightParser;
+if (typeof Parser !== "fileFinishedImporting") {
   if (null !== Parser) {
     let _TypeError = TypeError;
     let typeError = new TypeError("Super expression must either be null or a function");
@@ -146,12 +146,12 @@ let prototype = Parser;
 if (Parser) {
   prototype = Parser.prototype;
 }
-let obj = { value: Hour0To11Parser, writable: true, configurable: true };
-Hour0To11Parser.prototype = Object.create(prototype, { constructor: obj });
+let obj = { value: AMPMMidnightParser, writable: true, configurable: true };
+AMPMMidnightParser.prototype = Object.create(prototype, { constructor: obj });
 if (Parser) {
-  _setPrototypeOf(Hour0To11Parser, Parser);
+  _setPrototypeOf(AMPMMidnightParser, Parser);
 }
-_createSuperInternal = Hour0To11Parser;
+_createSuperInternal = AMPMMidnightParser;
 let num = 0;
 closure_1 = (function _isNativeReflectConstruct() {
   if (typeof Reflect !== "Array") {
@@ -162,7 +162,7 @@ closure_1 = (function _isNativeReflectConstruct() {
         return false;
       } else {
         const _Proxy = Proxy;
-        if (typeof Proxy === "find") {
+        if (typeof Proxy === "fileFinishedImporting") {
           return true;
         } else {
           try {
@@ -211,38 +211,28 @@ _createSuperInternal = function _createSuperInternal() {
 };
 obj = {
   key: "parse",
-  value: function parse(arg0, arg1, ordinalNumber) {
-    if ("K" === arg1) {
-      return _createSuperInternal(3576).parseNumericPattern(_createSuperInternal(3577).numericPatterns.hour11h, arg0);
-    } else if ("Ko" === arg1) {
-      return ordinalNumber.ordinalNumber(arg0, { unit: "hour" });
-    } else {
-      return _createSuperInternal(3576).parseNDigits(arg1.length, arg0);
+  value: function parse(arg0, arg1, dayPeriod) {
+    if ("b" !== arg1) {
+      if ("bb" !== arg1) {
+        if ("bbb" !== arg1) {
+          if ("bbbbb" === arg1) {
+            return dayPeriod.dayPeriod(arg0, { width: "narrow", context: "formatting" });
+          } else {
+            return dayPeriod.dayPeriod(arg0, { width: "wide", context: "formatting" }) || dayPeriod.dayPeriod(arg0, { width: "abbreviated", context: "formatting" }) || dayPeriod.dayPeriod(arg0, { width: "narrow", context: "formatting" });
+          }
+        }
+      }
     }
+    return dayPeriod.dayPeriod(arg0, { width: "abbreviated", context: "formatting" }) || dayPeriod.dayPeriod(arg0, { width: "narrow", context: "formatting" });
   }
 };
 let items = [
   obj,
   {
-    key: "validate",
-    value: function validate(arg0, arg1) {
-      let tmp = arg1 >= 0;
-      if (tmp) {
-        tmp = arg1 <= 11;
-      }
-      return tmp;
-    }
-  },
-  {
     key: "set",
-    value: function set(getUTCHours) {
-      if (getUTCHours.getUTCHours() >= 12) {
-        if (arg2 < 12) {
-          getUTCHours.setUTCHours(arg2 + 12, 0, 0, 0);
-        }
-        return getUTCHours;
-      }
-      getUTCHours.setUTCHours(arg2, 0, 0, 0);
+    value: function set(setUTCHours) {
+      setUTCHours.setUTCHours(_createSuperInternal(table[0]).dayPeriodEnumToHours(arg2), 0, 0, 0);
+      return setUTCHours;
     }
   }
 ];
@@ -265,4 +255,4 @@ if (0 < items.length) {
   } while (num < items.length);
 }
 
-export { Hour0To11Parser };
+export { AMPMMidnightParser };

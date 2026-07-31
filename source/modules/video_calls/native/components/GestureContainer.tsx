@@ -1,10 +1,10 @@
-// Module ID: 10811
-// Function ID: 10812
+// Module ID: 10829
+// Function ID: 10830
 // Name: GestureContainer
-// Dependencies: [19, 17, 10231, 10504, 21, 4189, 712, 1474, 4050, 5273, 4395, 4190, 1297, 2]
+// Dependencies: [19, 17, 10249, 10522, 21, 4193, 712, 1474, 4054, 5277, 4399, 4194, 1297, 2]
 // Exports: default
 
-// Module 10811 (GestureContainer)
+// Module 10829 (GestureContainer)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { useChannelCallStore } from "VoiceChatDrawerState";
@@ -30,9 +30,9 @@ export default function GestureContainer(children) {
   let sharedValue;
   const tmp = createCacheKey();
   height = sharedValue(1474)().height;
-  let obj = height(4050);
+  let obj = height(4054);
   sharedValue = obj.useSharedValue(0);
-  const Gesture = height(5273).Gesture;
+  const Gesture = height(5277).Gesture;
   const tmp2 = useChannelCallStore((isGestureEnabled) => isGestureEnabled.isGestureEnabled);
   const PanResult = Gesture.Pan();
   class S {
@@ -57,7 +57,7 @@ export default function GestureContainer(children) {
     }
     height(outer1_2[8]).runOnJS(sharedValue(outer1_2[10]).pop)();
   };
-  obj = { position: sharedValue, THRESHOLD_VELOCITY: 500, runOnJS: height(4050).runOnJS, ModalActionCreators: sharedValue(4395), withTiming: height(4190).withTiming, DECELERATED_EASING: height(1297).DECELERATED_EASING };
+  obj = { position: sharedValue, THRESHOLD_VELOCITY: 500, runOnJS: height(4054).runOnJS, ModalActionCreators: sharedValue(4399), withTiming: height(4194).withTiming, DECELERATED_EASING: height(1297).DECELERATED_EASING };
   fn.__closure = obj;
   fn.__workletHash = 10736744030668;
   fn.__initData = closure_9;
@@ -80,14 +80,14 @@ export default function GestureContainer(children) {
     obj[1] = items1;
     return obj;
   };
-  obj = { interpolate: height(4050).interpolate, position: sharedValue, height };
+  obj = { interpolate: height(4054).interpolate, position: sharedValue, height };
   fn2.__closure = obj;
   fn2.__workletHash = 16049033434372;
   fn2.__initData = closure_11;
   const obj1 = { style: tmp.background, children: null };
-  const animatedStyle = height(4050).useAnimatedStyle(fn2);
+  const animatedStyle = height(4054).useAnimatedStyle(fn2);
   let obj2 = { gesture: failOffsetXResult, children: null };
-  obj2[1] = jsx(sharedValue(4050).View, { style: animatedStyle, children: children.children });
-  obj1[1] = jsx(height(5273).GestureDetector, { gesture: failOffsetXResult, children: null });
+  obj2[1] = jsx(sharedValue(4054).View, { style: animatedStyle, children: children.children });
+  obj1[1] = jsx(height(5277).GestureDetector, { gesture: failOffsetXResult, children: null });
   return <View style={tmp.background}>{null}</View>;
 };

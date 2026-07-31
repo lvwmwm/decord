@@ -1,10 +1,10 @@
-// Module ID: 10638
-// Function ID: 10639
+// Module ID: 10656
+// Function ID: 10657
 // Name: _handleUsePrimaryEntryPointAppCommand
-// Dependencies: [5, 1372, 1874, 10639, 10603, 10604, 10641, 5696, 2]
+// Dependencies: [5, 1372, 1874, 10657, 10621, 10622, 10659, 5701, 2]
 // Exports: default
 
-// Module 10638 (_handleUsePrimaryEntryPointAppCommand)
+// Module 10656 (_handleUsePrimaryEntryPointAppCommand)
 import getEmbeddedActivitiesManager from "getEmbeddedActivitiesManager";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -57,7 +57,7 @@ function _handleUsePrimaryEntryPointAppCommand() {
                 c4 = 2;
                 c5 = 1;
                 let obj1 = { value: null, done: false };
-                obj1[0] = outer1_1(10639)(tmp27.targetApplicationId, tmp27.channelId);
+                obj1[0] = outer1_1(10657)(tmp27.targetApplicationId, tmp27.channelId);
                 return obj1;
               }
             }
@@ -76,10 +76,10 @@ function _handleUsePrimaryEntryPointAppCommand() {
             return obj2;
           } else {
             closure_1 = arg1;
-            obj = lib(10603);
+            obj = lib(10621);
             closure_2 = obj.shouldOpenActivityInPopoutWindow();
             dependencyMap = 0;
-            obj1 = lib(10603);
+            obj1 = lib(10621);
             c5 = 3;
             const obj3 = { value: null, done: true };
             obj3[0] = obj1.wrapPreemptiveActivityPopout(closure_2, () => {
@@ -199,7 +199,7 @@ function _handleUsePrimaryEntryPointAppCommandInternal() {
                 obj1[0] = arg1;
                 return obj1;
               } else {
-                closure_13 = callback(10604)();
+                closure_13 = callback(10622)();
                 currentUser2 = currentUser.getCurrentUser();
                 let tmp17 = null != callback2;
                 if (tmp17) {
@@ -211,9 +211,9 @@ function _handleUsePrimaryEntryPointAppCommandInternal() {
                     }
                     let tmp6 = tmp14;
                     if (tmp14) {
-                      let obj2 = callback2(10641);
+                      let obj2 = callback2(10659);
                       obj2.markActivityUsed(lib.id);
-                      let obj3 = lib(5696);
+                      let obj3 = lib(5701);
                       obj2 = { channelId: null, applicationId: null, isStart: true, embeddedActivitiesManager: null, componentId: null, commandOrigin: null, sectionName: null, locationObject: null, analyticsLocations: null, source: null, onExecutedCallback: null, referrerId: null, customId: null, inviterUserId: null, onConfirmActivityLaunchChecksAlertOpen: null };
                       obj2[0] = callback2;
                       obj2[1] = lib.id;

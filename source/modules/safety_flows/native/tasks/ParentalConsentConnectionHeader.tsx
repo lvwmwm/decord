@@ -1,10 +1,10 @@
-// Module ID: 16711
-// Function ID: 16712
+// Module ID: 16740
+// Function ID: 16741
 // Name: ParentalConsentConnectionNavbar
-// Dependencies: [19, 17, 1874, 21, 4189, 5140, 712, 1581, 589, 4185, 5641, 1236, 2485, 2]
+// Dependencies: [19, 17, 1874, 21, 4193, 5144, 712, 1581, 589, 4189, 5645, 1236, 2487, 2]
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 16711 (ParentalConsentConnectionNavbar)
+// Module 16740 (ParentalConsentConnectionNavbar)
 import "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -48,13 +48,13 @@ export const ParentalConsentConnectionNavbar = function ParentalConsentConnectio
     children: null
   };
   const intl = require(1236) /* getSystemLocale */.intl;
-  obj1[5] = intl.string(importDefault(2485)["3HuGuY"]);
-  const items1 = [callback(require(4185) /* Text */.Text, obj1), ];
+  obj1[5] = intl.string(importDefault(2487)["3HuGuY"]);
+  const items1 = [callback(require(4189) /* Text */.Text, obj1), ];
   let tmp5Result = null != stateFromStores;
   if (tmp5Result) {
     const obj2 = { accessibilityRole: "header", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     obj2[3] = stateFromStores;
-    tmp5Result = tmp5(require(4185) /* Text */.Text, obj2);
+    tmp5Result = tmp5(require(4189) /* Text */.Text, obj2);
   }
   items1[1] = tmp5Result;
   obj[1] = items1;

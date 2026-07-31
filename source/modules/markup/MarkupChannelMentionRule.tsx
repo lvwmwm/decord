@@ -1,10 +1,10 @@
-// Module ID: 4630
-// Function ID: 4631
+// Module ID: 4634
+// Function ID: 4635
 // Name: getChannel
-// Dependencies: [1933, 1372, 1862, 3817, 3826, 1874, 676, 1856, 1416, 1236, 4631, 4372, 4380, 4632, 4381, 4629, 3888, 2]
+// Dependencies: [1933, 1372, 1862, 3821, 3830, 1874, 676, 1856, 1416, 1236, 4635, 4376, 4384, 4636, 4385, 4633, 3892, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 4630 (getChannel)
+// Module 4634 (getChannel)
 import isSubscriptionGated from "isSubscriptionGated";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -19,9 +19,9 @@ const require = arg1;
 function getChannel(id, arr) {
   const _require = id;
   const channel = store.getChannel(id);
-  const isSubscriptionGated = _require(4631).getChannelRoleSubscriptionStatus(id, store, isSubscriptionGated, getUncachedChannelPermissions).isSubscriptionGated;
-  const obj2 = _require(4631);
-  let str = _require(4372).getMentionIconType(channel);
+  const isSubscriptionGated = _require(4635).getChannelRoleSubscriptionStatus(id, store, isSubscriptionGated, getUncachedChannelPermissions).isSubscriptionGated;
+  const obj2 = _require(4635);
+  let str = _require(4376).getMentionIconType(channel);
   if (str == null) {
     str = "text";
   }
@@ -47,18 +47,18 @@ function getChannel(id, arr) {
   if (null != channel) {
     obj = { type: null, id: null, guildId: null, name: null, isDm: null, isForumPost: null, isMentionable: null, canViewChannel: null, roleSubscriptionGated: null, iconType: null, parentId: null };
     ({ type: obj4[0], id: obj4[1], guild_id: obj4[2] } = channel);
-    let tmpResult = tmp(4380);
+    let tmpResult = tmp(4384);
     obj[3] = tmpResult.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
     obj[4] = channel.isPrivate();
     obj[5] = channel.isForumPost();
-    tmpResult = tmp(4632);
+    tmpResult = tmp(4636);
     obj[6] = tmpResult.isChannelTypeMentionable(channel.type);
-    obj[7] = tmp(4381).canViewChannel(channel);
+    obj[7] = tmp(4385).canViewChannel(channel);
     obj[8] = isSubscriptionGated;
     obj[9] = str;
     obj[10] = channel.parent_id;
     tmp4 = obj;
-    const tmpResult1 = tmp(4381);
+    const tmpResult1 = tmp(4385);
   }
   return tmp4;
 }
@@ -126,7 +126,7 @@ function parseChannel(canViewChannel) {
           obj.content = items3;
           let obj6 = obj;
         } else if (null != arg3) {
-          const obj4 = { type: "link", content: null, target: null, title: "call" };
+          const obj4 = { type: "link", content: null, target: null, title: "borderRadius" };
           const obj5 = { type: "text", content: null };
           obj5[1] = arg3;
           const items4 = [obj5];
@@ -170,9 +170,9 @@ function parseChannel(canViewChannel) {
             if (canViewChannel.isForumPost) {
               const channel = store.getChannel(canViewChannel.parentId);
               if (null != channel) {
-                let tmp35Result = tmp35(4380);
+                let tmp35Result = tmp35(4384);
                 const channelName = tmp35Result.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
-                tmp35Result = tmp35(4372);
+                tmp35Result = tmp35(4376);
                 let str3 = tmp35Result.getMentionIconType(channel);
                 if (str3 == null) {
                   str3 = "forum";
@@ -310,7 +310,7 @@ obj = {
   order: require("t").defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
-    const CHANNEL_OR_MESSAGES_URL_RE = require(4381) /* ME */.CHANNEL_OR_MESSAGES_URL_RE;
+    const CHANNEL_OR_MESSAGES_URL_RE = require(4385) /* ME */.CHANNEL_OR_MESSAGES_URL_RE;
     const match = CHANNEL_OR_MESSAGES_URL_RE.exec(arg0);
     if (null != match) {
       if (null != match[2]) {
@@ -335,7 +335,7 @@ obj = {
     let tmp4;
     [tmp, tmp2, tmp3, tmp4] = arg0;
     if (null == tmp3) {
-      let obj = { type: "link", content: null, target: null, title: "call" };
+      let obj = { type: "link", content: null, target: null, title: "borderRadius" };
       obj = { type: "text", content: null };
       obj[1] = tmp;
       const items = [obj];
@@ -370,7 +370,7 @@ obj[2] = {
   order: require("t").defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
-    const MEDIA_POST_URL_RE = require(4381) /* ME */.MEDIA_POST_URL_RE;
+    const MEDIA_POST_URL_RE = require(4385) /* ME */.MEDIA_POST_URL_RE;
     return MEDIA_POST_URL_RE.exec(arg0);
   },
   parse(arg0, arg1, channelId) {
@@ -415,14 +415,14 @@ obj[2] = {
       }
     }
     const content = [{ type: "text", content: target }];
-    return { type: "link", content, target, title: "call" };
+    return { type: "link", content, target, title: "borderRadius" };
   }
 };
 let obj1 = {
   order: require("t").defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
-    const MEDIA_POST_URL_RE = require(4381) /* ME */.MEDIA_POST_URL_RE;
+    const MEDIA_POST_URL_RE = require(4385) /* ME */.MEDIA_POST_URL_RE;
     return MEDIA_POST_URL_RE.exec(arg0);
   },
   parse(arg0, arg1, channelId) {
@@ -467,7 +467,7 @@ let obj1 = {
       }
     }
     const content = [{ type: "text", content: target }];
-    return { type: "link", content, target, title: "call" };
+    return { type: "link", content, target, title: "borderRadius" };
   }
 };
 const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/markup/MarkupChannelMentionRule.tsx");

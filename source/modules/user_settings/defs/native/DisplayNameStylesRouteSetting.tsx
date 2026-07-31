@@ -1,15 +1,15 @@
-// Module ID: 14345
-// Function ID: 14346
+// Module ID: 14368
+// Function ID: 14369
 // Name: route
-// Dependencies: [676, 10116, 1236, 2581, 14346, 2]
+// Dependencies: [676, 10133, 1236, 2583, 14369, 2]
 
-// Module 14345 (route)
+// Module 14368 (route)
 import createToggle from "createToggle";
 
 obj = {
   useTitle() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2581).ZPMAlX);
+    return intl.string(importDefault(2583).ZPMAlX);
   },
   parent: null,
   unsearchable: true,
@@ -21,7 +21,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.DISPLAY_NAME_STYLES,
   getComponent() {
-    return require(14346) /* ApplyButton */.default;
+    return require(14369) /* ApplyButton */.default;
   }
 };
 const route = createToggle.createRoute(obj);

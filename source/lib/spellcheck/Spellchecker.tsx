@@ -1,10 +1,10 @@
-// Module ID: 5193
-// Function ID: 5194
+// Module ID: 5197
+// Function ID: 5198
 // Name: normalizeLocale
-// Dependencies: [5, 32, 1946, 3, 3800, 5194, 5195, 5196, 12, 1859, 1351, 2]
+// Dependencies: [5, 32, 1946, 3, 3804, 5198, 5199, 5200, 12, 1859, 1351, 2]
 // Exports: install
 
-// Module 5193 (normalizeLocale)
+// Module 5197 (normalizeLocale)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import _getSystemLocale from "_getSystemLocale";
@@ -13,11 +13,11 @@ import importDefaultResult1 from "apply";
 
 const require = arg1;
 function normalizeLocale(arg0) {
-  let str = importDefault(5194)[arg0];
+  let str = importDefault(5198)[arg0];
   if (str == null) {
     str = arg0;
   }
-  const parsed = require(5195) /* parse */.parse(str.replace(/[_-]/g, "-"));
+  const parsed = require(5199) /* parse */.parse(str.replace(/[_-]/g, "-"));
   if (null != parsed) {
     if (null != parsed.langtag.language) {
       if (null != parsed.langtag.region) {
@@ -138,7 +138,7 @@ class Spellchecker {
       } else {
         let tmp3 = dependencyMap[arg0];
         if (tmp3 == null) {
-          tmp3 = first(5194)[first];
+          tmp3 = first(5198)[first];
         }
         if (null != tmp3) {
           obj.setLocale(tmp3);

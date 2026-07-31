@@ -1,9 +1,9 @@
-// Module ID: 9810
-// Function ID: 9811
+// Module ID: 9827
+// Function ID: 9828
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 4050, 3908, 4599, 9811, 4185, 2]
+// Dependencies: [32, 19, 21, 4054, 3912, 4603, 9828, 4189, 2]
 
-// Module 9810 (BalanceCounter)
+// Module 9827 (BalanceCounter)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import closure_8 from "noop";
@@ -43,7 +43,7 @@ class BalanceCounter {
     c2 = c6(null);
     tmp2 = c2;
     tmp = closure_0;
-    obj = require("module_4050");
+    obj = require("module_4054");
     sharedValue = require("_slicedToArray");
     c3 = sharedValue;
     clearAnimationTimeout = c6(null);
@@ -111,7 +111,7 @@ class BalanceCounter {
         ref.current = tmp;
       }
     }, items);
-    tmp12 = require("module_4050");
+    tmp12 = require("module_4054");
     class F {
       constructor() {
         if (c8) {
@@ -121,10 +121,10 @@ class BalanceCounter {
           str = Math.round(c3.get());
           tmp3 = value;
           tmp4 = c2;
-          obj = require("module_4050");
+          obj = require("module_4054");
           tmp5 = c6;
           tmp6 = obj.runOnJS(c6)(str);
-          obj2 = require("module_4050");
+          obj2 = require("module_4054");
           tmp7 = c7;
           runOnJSResult = obj2.runOnJS(c7);
           tmp8Result = runOnJSResult(str.toString().length);
@@ -132,7 +132,7 @@ class BalanceCounter {
         return {};
       }
     }
-    obj = { isAnimating: first, animatedValue: sharedValue, runOnJS: require("module_4050").runOnJS, setDisplayValue: tmp5, setMaxDigits: tmp7 };
+    obj = { isAnimating: first, animatedValue: sharedValue, runOnJS: require("module_4054").runOnJS, setDisplayValue: tmp5, setMaxDigits: tmp7 };
     F.__closure = obj;
     F.__workletHash = 4408542396979;
     F.__initData = clearAnimationTimeout;
@@ -152,7 +152,7 @@ class BalanceCounter {
       obj3[1] = style;
       obj3[3] = require("_slicedToArray");
       obj1[1] = c9(require("Text").Text, obj3);
-      tmp14 = c9(require("module_4050").View, obj1);
+      tmp14 = c9(require("module_4054").View, obj1);
     }
     return tmp14;
   }

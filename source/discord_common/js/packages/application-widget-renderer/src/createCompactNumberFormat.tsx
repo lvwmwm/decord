@@ -1,10 +1,10 @@
-// Module ID: 12065
-// Function ID: 12066
+// Module ID: 12083
+// Function ID: 12084
 // Name: toAsciiDigits
 // Dependencies: [2]
 // Exports: createCompactNumberFormat
 
-// Module 12065 (toAsciiDigits)
+// Module 12083 (toAsciiDigits)
 function toAsciiDigits(arg0, get) {
   let str = "";
   const iter = arg0[Symbol.iterator]();

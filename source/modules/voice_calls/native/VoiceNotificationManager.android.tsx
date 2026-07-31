@@ -1,9 +1,9 @@
-// Module ID: 13512
-// Function ID: 13513
+// Module ID: 13536
+// Function ID: 13537
 // Name: processColor
-// Dependencies: [32, 17, 1371, 4226, 4208, 1372, 4236, 4261, 3826, 1874, 676, 712, 6041, 6040, 10828, 9074, 4380, 1236, 4368, 2]
+// Dependencies: [32, 17, 1371, 4230, 4212, 1372, 4240, 4265, 3830, 1874, 676, 712, 6047, 6046, 10846, 9087, 4384, 1236, 4372, 2]
 
-// Module 13512 (processColor)
+// Module 13536 (processColor)
 import _slicedToArray from "_slicedToArray";
 import { processColor } from "getSystemLocale";
 import participantFromServer from "participantFromServer";
@@ -25,7 +25,7 @@ class VoiceNotificationManager {
     obj = Object.create(new.target.prototype);
     VoiceNotificationManager = obj;
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: true, isPushToTalk: "/assets/.cache/intl/ZGVzaWdu", embeddedActivity: null, isStreaming: "8368d48f4b808c5de7fc7ae05463b7de" };
+    obj.state = { channelId: "flex", connectionState: "container", selfMute: false, deafened: true, isPushToTalk: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", embeddedActivity: null, isStreaming: "b4c9ac154b2122e14fc424ce2fde282f" };
     obj.handleVoiceStateChange = function handleVoiceStateChange() {
       const channelId = outer1_9.getChannelId();
       const state = outer1_9.getState();
@@ -230,7 +230,7 @@ prototype["terminate"] = function terminate() {
 };
 let set = Object.create(VoiceNotificationManager.prototype);
 set.voiceServiceHandlerId = 9000;
-set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: true, isPushToTalk: "/assets/.cache/intl/ZGVzaWdu", embeddedActivity: null, isStreaming: "8368d48f4b808c5de7fc7ae05463b7de" };
+set.state = { channelId: "flex", connectionState: "container", selfMute: false, deafened: true, isPushToTalk: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", embeddedActivity: null, isStreaming: "b4c9ac154b2122e14fc424ce2fde282f" };
 set.handleVoiceStateChange = function handleVoiceStateChange() {
   const channelId = outer1_9.getChannelId();
   const state = outer1_9.getState();

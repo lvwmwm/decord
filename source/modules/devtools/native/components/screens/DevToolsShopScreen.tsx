@@ -1,10 +1,10 @@
-// Module ID: 14811
-// Function ID: 14812
+// Module ID: 14834
+// Function ID: 14835
 // Name: DevToolsShopScreen
-// Dependencies: [19, 17, 4188, 21, 4189, 712, 5215, 589, 14710, 1358, 4598, 5554, 5220, 5556, 14784, 5555, 2]
+// Dependencies: [19, 17, 4192, 21, 4193, 712, 5219, 589, 14733, 1358, 4602, 5558, 5224, 5560, 14807, 5559, 2]
 // Exports: default
 
-// Module 14811 (DevToolsShopScreen)
+// Module 14834 (DevToolsShopScreen)
 import "noop";
 import { ScrollView } from "get ActivityIndicator";
 import getUserAgnosticState from "getUserAgnosticState";
@@ -37,48 +37,48 @@ export default function DevToolsShopScreen() {
   const items3 = [getUserAgnosticState];
   const stateFromStores3 = obj3.useStateFromStores(items3, () => store.get("bypass_google_sku_sync"));
   const tmp = createCacheKey();
-  const tmp6 = importDefault(14710);
+  const tmp6 = importDefault(14733);
   obj = { style: tmp.wrap, contentContainerStyle: null, children: null };
-  obj = { paddingVertical: importDefault(712).space.PX_16, paddingBottom: importDefault(712).space.PX_16 + importDefault(5215)({ includeKeyboardHeight: true }).insets.bottom };
-  ({ isDismissed, handleToggleDismissState } = importDefault(14710)(require(1358) /* DismissibleContent */.DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING));
+  obj = { paddingVertical: importDefault(712).space.PX_16, paddingBottom: importDefault(712).space.PX_16 + importDefault(5219)({ includeKeyboardHeight: true }).insets.bottom };
+  ({ isDismissed, handleToggleDismissState } = importDefault(14733)(require(1358) /* DismissibleContent */.DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING));
   obj[1] = obj;
   obj1 = { spacing: 16, children: null };
   obj2 = { title: "Shop Toggles", hasIcons: false, children: null };
   obj3 = { label: "Disable collectibles shop cache", subLabel: "shop_disable_cache", subLabelLineClamp: 1, trailing: null };
-  obj3[3] = callback(require(5556) /* FormSwitch */.FormSwitch, {
+  obj3[3] = callback(require(5560) /* FormSwitch */.FormSwitch, {
     value: stateFromStores,
     onValueChange(arg0) {
-      return callback(14784).toggle("shop_disable_cache", arg0);
+      return callback(14807).toggle("shop_disable_cache", arg0);
     }
   });
-  const items4 = [callback(require(5220) /* TableRowInner */.TableRow, obj3), , , , ];
+  const items4 = [callback(require(5224) /* TableRowInner */.TableRow, obj3), , , , ];
   const obj5 = { label: "Show unpublished items in collectibles shop", subLabel: "shop_include_unpublished", subLabelLineClamp: 1, trailing: null };
-  obj5[3] = callback(require(5556) /* FormSwitch */.FormSwitch, {
+  obj5[3] = callback(require(5560) /* FormSwitch */.FormSwitch, {
     value: stateFromStores1,
     onValueChange(arg0) {
-      return callback(14784).toggle("shop_include_unpublished", arg0);
+      return callback(14807).toggle("shop_include_unpublished", arg0);
     }
   });
-  items4[1] = callback(require(5220) /* TableRowInner */.TableRow, obj5);
-  items4[2] = callback(require(5555) /* TableSwitchRow */.TableSwitchRow, { label: "Collectibles Marketing", subLabel: "COLLECTIBLES_SHOP_ENTRY_MARKETING", subLabelLineClamp: 1, value: isDismissed, onValueChange: handleToggleDismissState });
+  items4[1] = callback(require(5224) /* TableRowInner */.TableRow, obj5);
+  items4[2] = callback(require(5559) /* TableSwitchRow */.TableSwitchRow, { label: "Collectibles Marketing", subLabel: "COLLECTIBLES_SHOP_ENTRY_MARKETING", subLabelLineClamp: 1, value: isDismissed, onValueChange: handleToggleDismissState });
   const obj7 = { label: "Show debug log overlay in collectibles shop", subLabel: "shop_show_debug_overlay", subLabelLineClamp: 1, trailing: null };
-  obj7[3] = callback(require(5556) /* FormSwitch */.FormSwitch, {
+  obj7[3] = callback(require(5560) /* FormSwitch */.FormSwitch, {
     value: stateFromStores2,
     onValueChange(arg0) {
-      return callback(14784).toggle("shop_show_debug_overlay", arg0);
+      return callback(14807).toggle("shop_show_debug_overlay", arg0);
     }
   });
-  items4[3] = callback(require(5220) /* TableRowInner */.TableRow, obj7);
+  items4[3] = callback(require(5224) /* TableRowInner */.TableRow, obj7);
   const obj9 = { label: "[Android] Bypass Google SKU sync in collectibles shop", subLabel: "bypass_google_sku_sync", subLabelLineClamp: 1, trailing: null };
-  obj9[3] = callback(require(5556) /* FormSwitch */.FormSwitch, {
+  obj9[3] = callback(require(5560) /* FormSwitch */.FormSwitch, {
     value: stateFromStores3,
     onValueChange(arg0) {
-      return callback(14784).toggle("bypass_google_sku_sync", arg0);
+      return callback(14807).toggle("bypass_google_sku_sync", arg0);
     }
   });
-  items4[4] = callback(require(5220) /* TableRowInner */.TableRow, obj9);
+  items4[4] = callback(require(5224) /* TableRowInner */.TableRow, obj9);
   obj2[2] = items4;
-  obj1[1] = callback2(require(5554) /* TableRowGroupTitle */.TableRowGroup, obj2);
-  obj[2] = callback(require(4598) /* Stack */.Stack, obj1);
+  obj1[1] = callback2(require(5558) /* TableRowGroupTitle */.TableRowGroup, obj2);
+  obj[2] = callback(require(4602) /* Stack */.Stack, obj1);
   return callback(ScrollView, obj);
 };

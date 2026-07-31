@@ -1,10 +1,10 @@
-// Module ID: 14363
-// Function ID: 14364
+// Module ID: 14386
+// Function ID: 14387
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 1886, 676, 21, 4189, 712, 7950, 8383, 4158, 4157, 13690, 698, 5243, 5242, 1236, 2581, 4600, 12, 688, 1887, 14361, 2]
+// Dependencies: [32, 19, 17, 1886, 676, 21, 4193, 712, 7957, 8396, 4162, 4161, 13714, 698, 5247, 5246, 1236, 2583, 4604, 12, 688, 1887, 14384, 2]
 // Exports: default
 
-// Module 14363 (DisplayNameStylesColorPickerSheet)
+// Module 14386 (DisplayNameStylesColorPickerSheet)
 import _slicedToArray from "_slicedToArray";
 import apply from "apply";
 import get_ActivityIndicator from "messagesProxy";

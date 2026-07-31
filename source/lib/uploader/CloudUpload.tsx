@@ -1,9 +1,9 @@
-// Module ID: 4721
-// Function ID: 4722
+// Module ID: 4725
+// Function ID: 4726
 // Name: set
-// Dependencies: [109, 5, 32, 4188, 1304, 4281, 676, 3, 530, 4722, 4729, 687, 584, 12, 1454, 4731, 4762, 4763, 4767, 4768, 1208, 4730, 4723, 4769, 4770, 1959, 698, 2]
+// Dependencies: [109, 5, 32, 4192, 1304, 4285, 676, 3, 530, 4726, 4733, 687, 584, 12, 1454, 4735, 4766, 4767, 4771, 4772, 1208, 4734, 4727, 4773, 4774, 1959, 698, 2]
 
-// Module 4721 (set)
+// Module 4725 (set)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import _slicedToArray from "_slicedToArray";
@@ -180,7 +180,7 @@ class CloudUpload extends tmp5 {
     tmp5.loaded = 0;
     tmp5.reactNativeFilePrepped = false;
     tmp6 = UploadAnalytics;
-    if (typeof UploadAnalytics !== "find") {
+    if (typeof UploadAnalytics !== "fileFinishedImporting") {
       str = "Trying to call a non-function";
       throwTypeErrorResult = HermesBuiltin.throwTypeError();
     }
@@ -255,7 +255,7 @@ class CloudUpload extends tmp5 {
     this.error = undefined;
     this.startTime = undefined;
     tmp = UploadAnalytics;
-    if (typeof UploadAnalytics !== "find") {
+    if (typeof UploadAnalytics !== "fileFinishedImporting") {
       str = "Trying to call a non-function";
       throwTypeErrorResult = HermesBuiltin.throwTypeError();
     }
@@ -299,7 +299,7 @@ prototype["parseRangeHeader"] = function parseRangeHeader(str) {
   return tmp2;
 };
 prototype["retryOpts"] = function retryOpts() {
-  if (this.item.platform === require(4722) /* cancel */.UploadPlatform.REACT_NATIVE) {
+  if (this.item.platform === require(4726) /* cancel */.UploadPlatform.REACT_NATIVE) {
     let obj = { timeout: null, backoff: null, retries: 12 };
     obj[0] = importDefault(687).Millis.HOUR;
     let tmp8 = importDefault(584);
@@ -316,7 +316,7 @@ prototype["retryOpts"] = function retryOpts() {
 };
 prototype["createAttachmentUrlRetryOpts"] = function createAttachmentUrlRetryOpts() {
   const self = this;
-  if (this.item.platform === require(4722) /* cancel */.UploadPlatform.REACT_NATIVE) {
+  if (this.item.platform === require(4726) /* cancel */.UploadPlatform.REACT_NATIVE) {
     let obj = { timeout: null, backoff: null, retries: 8 };
     obj = { response: null, deadline: null };
     obj[0] = 30 * importDefault(687).Millis.SECOND;
@@ -335,7 +335,7 @@ prototype["createAttachmentUrlRetryOpts"] = function createAttachmentUrlRetryOpt
 prototype["supportsResume"] = function supportsResume() {
   let _libdiscoreEnabled = this._libdiscoreEnabled;
   if (!_libdiscoreEnabled) {
-    _libdiscoreEnabled = this.item.platform !== require(4722) /* cancel */.UploadPlatform.REACT_NATIVE;
+    _libdiscoreEnabled = this.item.platform !== require(4726) /* cancel */.UploadPlatform.REACT_NATIVE;
   }
   return _libdiscoreEnabled;
 };
@@ -2246,7 +2246,7 @@ prototype["delete"] = function delete() {
             obj[0] = arg1;
             return obj;
           } else if (null != v0.uploadedFilename) {
-            let obj1 = v0(4763);
+            let obj1 = v0(4767);
             const uploadTarget = obj1.getUploadTarget(tmp18.item.target);
             let dependencyMap = 1;
             const deleteUploadURL = uploadTarget.getDeleteUploadURL(tmp18.uploadedFilename);

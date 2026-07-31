@@ -1,10 +1,10 @@
-// Module ID: 14322
-// Function ID: 14323
+// Module ID: 14345
+// Function ID: 14346
 // Name: track
 // Dependencies: [709, 2]
 // Exports: track
 
-// Module 14322 (track)
+// Module 14345 (track)
 const result = require("set").fileFinishedImporting("actions/AnalyticsTrackingActionCreators.tsx");
 
 export const track = function track(event, properties) {

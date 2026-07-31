@@ -1,9 +1,9 @@
-// Module ID: 13745
-// Function ID: 13746
+// Module ID: 13769
+// Function ID: 13770
 // Name: PasswordlessUpsell
-// Dependencies: [32, 19, 17, 13746, 7753, 11066, 676, 13747, 21, 4189, 712, 1480, 5222, 5141, 13748, 4185, 1236, 4600, 4395, 13749, 1959, 589, 13771, 9195, 5645, 5554, 10116, 13772, 13673, 13775, 6327, 8221, 698, 8751, 8749, 2]
+// Dependencies: [32, 19, 17, 13770, 7761, 11084, 676, 13771, 21, 4193, 712, 1480, 5226, 5145, 13772, 4189, 1236, 4604, 4399, 13773, 1959, 589, 13795, 9208, 5649, 5558, 10133, 13796, 13697, 13799, 6333, 8228, 698, 8764, 8762, 2]
 
-// Module 13745 (PasswordlessUpsell)
+// Module 13769 (PasswordlessUpsell)
 import expandEventProperties from "expandEventProperties";
 import importAllResult from "UserSettingsWebAuthn";
 import { View } from "Button";
@@ -28,20 +28,20 @@ function PasswordlessUpsell() {
   const obj1 = { style: { flexDirection: "row", gap: 8 }, children: null };
   const obj2 = { style: { width: 70, height: 70 }, children: null };
   const obj3 = { source: null, resizeMode: "contain", style: null };
-  obj3[0] = _require(13748);
+  obj3[0] = _require(13772);
   obj3[2] = tmp.upsellImagePasswordless;
-  obj2[1] = callback2(importDefault(5141), obj3);
+  obj2[1] = callback2(importDefault(5145), obj3);
   const items = [callback2(View, obj2), ];
   const obj4 = { style: { flex: 1 }, children: null };
   const obj5 = { style: { flexShrink: 1, width: "90%", gap: 8 }, children: null };
   const obj6 = { variant: "heading-lg/medium", color: "mobile-text-heading-primary", children: null };
   const intl = _require(1236).intl;
   obj6[2] = intl.string(_require(1236).t["+Svv46"]);
-  const items1 = [callback2(_require(4185).Heading, obj6), , ];
+  const items1 = [callback2(_require(4189).Heading, obj6), , ];
   const obj7 = { variant: "text-md/normal", color: "text-muted", children: null };
   const intl2 = _require(1236).intl;
   obj7[2] = intl2.string(_require(1236).t.S0g2K9);
-  items1[1] = callback2(_require(4185).Text, obj7);
+  items1[1] = callback2(_require(4189).Text, obj7);
   const obj8 = { style: { flexDirection: "row" }, children: null };
   const obj9 = { text: null, onPress: null, size: "sm" };
   const intl3 = _require(1236).intl;
@@ -51,7 +51,7 @@ function PasswordlessUpsell() {
     obj = { navigation: callback, initialRouteName: outer1_10.REGISTER, showNav: true };
     obj.pushLazy(callback(outer1_2[20])(outer1_2[19], outer1_2.paths), obj);
   };
-  const items2 = [callback2(_require(4600).Button, obj9), callback2(View, {})];
+  const items2 = [callback2(_require(4604).Button, obj9), callback2(View, {})];
   obj8[1] = items2;
   items1[2] = callback3(View, obj8);
   obj5[1] = items1;
@@ -59,7 +59,7 @@ function PasswordlessUpsell() {
   items[1] = callback2(View, obj4);
   obj1[1] = items;
   obj[2] = callback3(View, obj1);
-  obj[1] = callback2(_require(5222).Card, obj);
+  obj[1] = callback2(_require(5226).Card, obj);
   return callback2(View, obj);
 }
 function AccountTwoFALabel() {
@@ -102,7 +102,7 @@ function AccountTwoFALabel() {
 }
 function AccountSecurityPage() {
   const node = importAllResult.useMemo(() => {
-    let obj = callback(10116);
+    let obj = callback(10133);
     obj = { sections: null, ListHeaderComponent: null };
     obj = { label: null, settings: null };
     const intl = callback(1236).intl;
@@ -122,13 +122,13 @@ function AccountSecurityPage() {
     obj2[1] = items3;
     items1[2] = obj2;
     obj[0] = items1.filter(Boolean);
-    obj[1] = callback2(13772);
+    obj[1] = callback2(13796);
     return obj.createList(obj);
   }, []);
-  return callback2(importDefault(13673), { node });
+  return callback2(importDefault(13697), { node });
 }
 function AccountStandingPage() {
-  return callback2(require(13775) /* AutomatedUnderageAppealStatus */.default, { visible: true });
+  return callback2(require(13799) /* AutomatedUnderageAppealStatus */.default, { visible: true });
 }
 let c4 = importAllResult;
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = jsxProd);
@@ -150,7 +150,7 @@ const memoResult = importAllResult.memo(() => {
   callback = importAllResult.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let obj = require(6327) /* useSettingNavigationRoute */;
+  let obj = require(6333) /* useSettingNavigationRoute */;
   const params = obj.useSettingNavigationRoute().params;
   let initialTab;
   if (params != null) {
@@ -168,7 +168,7 @@ const memoResult = importAllResult.memo(() => {
   const intl2 = tmp5(1236).intl;
   obj1[0] = intl2.string(require(1236) /* getSystemLocale */.t["00Sfl/"]);
   obj1[1] = AccountSettingsTabs.STANDING;
-  const tmp5Result = require(8221) /* useSegmentedControlState */;
+  const tmp5Result = require(8228) /* useSegmentedControlState */;
   obj1[2] = callback2(View, { style: tmp.standingPage, children: callback2(AccountStandingPage, {}) });
   items[1] = obj1;
   obj[0] = items;
@@ -189,9 +189,9 @@ const memoResult = importAllResult.memo(() => {
   const segmentedControlState = tmp5Result.useSegmentedControlState(obj);
   const obj3 = { children: null };
   const obj2 = { style: tmp.standingPage, children: callback2(AccountStandingPage, {}) };
-  const items1 = [callback2(View, { style: tmp.controlContainer, onLayout: callback, children: callback2(require(8751) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) }), ];
-  const obj4 = { style: tmp.controlContainer, onLayout: callback, children: callback2(require(8751) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) };
-  items1[1] = callback2(View, { style: tmp.pageContainer, children: callback2(require(8749) /* SegmentedControlPage */.SegmentedControlPages, { state: segmentedControlState }) });
+  const items1 = [callback2(View, { style: tmp.controlContainer, onLayout: callback, children: callback2(require(8764) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) }), ];
+  const obj4 = { style: tmp.controlContainer, onLayout: callback, children: callback2(require(8764) /* SegmentedControl */.SegmentedControl, { state: segmentedControlState }) };
+  items1[1] = callback2(View, { style: tmp.pageContainer, children: callback2(require(8762) /* SegmentedControlPage */.SegmentedControlPages, { state: segmentedControlState }) });
   obj3[0] = items1;
   return callback3(closure_13, obj3);
 });

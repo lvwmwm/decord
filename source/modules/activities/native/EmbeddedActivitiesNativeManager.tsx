@@ -1,9 +1,9 @@
-// Module ID: 10605
-// Function ID: 10606
+// Module ID: 10623
+// Function ID: 10624
 // Name: postMessageToWebView
-// Dependencies: [5, 17, 1372, 4261, 1371, 4214, 676, 6756, 500, 10606, 10607, 1208, 10608, 10618, 4529, 1236, 10611, 3807, 698, 709, 10642, 5696, 3890, 10352, 1231, 1351, 514, 2]
+// Dependencies: [5, 17, 1372, 4265, 1371, 4218, 676, 6762, 500, 10624, 10625, 1208, 10626, 10636, 4533, 1236, 10629, 3811, 698, 709, 10660, 5701, 3894, 10370, 1231, 1351, 514, 2]
 
-// Module 10605 (postMessageToWebView)
+// Module 10623 (postMessageToWebView)
 import items3 from "items3";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
@@ -177,24 +177,17 @@ class EmbeddedActivitiesNativeManager extends tmp6 {
         if (selfEmbeddedActivityForLocation != null) {
           const url = selfEmbeddedActivityForLocation.url;
         }
-        const iframeId = self.iframeId;
-        let tmp14 = typeof parsed === "ay";
+        let tmp13 = typeof parsed === "ay";
         if (typeof parsed !== "window") {
-          tmp14 = null != tmp11;
+          tmp13 = null != tmp11;
         }
-        if (tmp14) {
-          tmp14 = null != iframeId;
-        }
-        if (tmp14) {
+        if (tmp13) {
           let obj = outer1_1(outer1_2[13]);
-          obj = { origin: null, iframeId: null };
-          obj[0] = url;
-          obj[1] = iframeId;
-          obj.handleMessage(parsed, obj, outer1_12);
+          obj.handleMessage(parsed, url, outer1_12);
         }
-      } catch (tmp21) {
+      } catch (tmp18) {
         const _SyntaxError = SyntaxError;
-        if (tmp21 instanceof SyntaxError) {
+        if (tmp18 instanceof SyntaxError) {
           if (tmp2.data === outer1_7) {
             const connectedActivityLocation1 = outer1_6.getConnectedActivityLocation();
             if (null != connectedActivityLocation1) {
@@ -204,26 +197,26 @@ class EmbeddedActivitiesNativeManager extends tmp6 {
                 applicationId = selfEmbeddedActivityForLocation1.applicationId;
               }
             }
-            let tmp28 = null != connectedActivityLocation1;
-            if (tmp28) {
-              tmp28 = null != tmp27;
+            let tmp25 = null != connectedActivityLocation1;
+            if (tmp25) {
+              tmp25 = null != tmp24;
             }
-            if (tmp28) {
+            if (tmp25) {
               obj = { location: null, applicationId: null, showFeedback: false };
               obj[0] = connectedActivityLocation1;
-              obj[1] = tmp27;
+              obj[1] = tmp24;
               self.leaveActivity(obj);
-              const obj1 = { body: null, confirmText: null };
+              obj = { body: null, confirmText: null };
               const intl = self(outer1_2[15]).intl;
-              obj1[0] = intl.string(self(outer1_2[15]).t.tYBBWz);
+              obj[0] = intl.string(self(outer1_2[15]).t.tYBBWz);
               const intl2 = self(outer1_2[15]).intl;
-              obj1[1] = intl2.string(self(outer1_2[15]).t.BddRzS);
-              outer1_1(outer1_2[14]).show(obj1);
-              const obj4 = outer1_1(outer1_2[14]);
+              obj[1] = intl2.string(self(outer1_2[15]).t.BddRzS);
+              outer1_1(outer1_2[14]).show(obj);
+              const obj3 = outer1_1(outer1_2[14]);
             }
           }
         } else {
-          throw tmp21;
+          throw tmp18;
         }
       }
     });
@@ -300,7 +293,7 @@ prototype["showErrorModal"] = function showErrorModal(reason, id) {
   let code;
   let message;
   ({ code, message } = reason);
-  let obj = importDefault(4529);
+  let obj = importDefault(4533);
   obj = { title: null, body: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.hbiAO6, { code });
@@ -308,7 +301,7 @@ prototype["showErrorModal"] = function showErrorModal(reason, id) {
   obj.show(obj);
 };
 prototype["showLaunchErrorModal"] = function showLaunchErrorModal(message) {
-  let obj = importDefault(4529);
+  let obj = importDefault(4533);
   obj = { title: null, body: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.PtobXW);
@@ -316,23 +309,23 @@ prototype["showLaunchErrorModal"] = function showLaunchErrorModal(message) {
   obj.show(obj);
 };
 prototype["showDevShelfOverrideEnabled"] = function showDevShelfOverrideEnabled() {
-  let obj = importDefault(3890);
+  let obj = importDefault(3894);
   obj = { key: "EMBEDDED_ACTIVITIES_DEV_SHELF_URL_OVERRIDE_ENABLED", content: null, icon: null, iconColor: "status-positive" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.JfA7IK);
-  obj[2] = importDefault(10352);
+  obj[2] = importDefault(10370);
   obj.open(obj);
 };
 prototype["releaseWebView"] = function releaseWebView() {
-  const releaseIframeIdResult = this.releaseIframeId();
-  if (null != releaseIframeIdResult) {
+  const releaseFrameIdResult = this.releaseFrameId();
+  if (null != releaseFrameIdResult) {
     const ComponentDispatch = require(1231) /* ComponentDispatcher */.ComponentDispatch;
     const obj = { id: null };
-    obj[0] = releaseIframeIdResult;
+    obj[0] = releaseFrameIdResult;
     ComponentDispatch.dispatch(constants.IFRAME_UNMOUNT, obj);
     closure_10.releaseWebView();
   }
-  return releaseIframeIdResult;
+  return releaseFrameIdResult;
 };
 prototype["leaveActivity"] = function leaveActivity(arg0) {
   let _location;
@@ -359,26 +352,26 @@ prototype["hidePIPEmbed"] = function hidePIPEmbed(arg0) {
   }
 };
 prototype["clearEmbeddedActivityState"] = function clearEmbeddedActivityState(_location, applicationId, showFeedback) {
-  let obj = require(5696) /* _runPrimaryAppCommandOrJoinEmbeddedActivity */;
+  let obj = require(5701) /* _runPrimaryAppCommandOrJoinEmbeddedActivity */;
   obj = { location: _location, applicationId, showFeedback };
   obj.stopEmbeddedActivity(obj);
   obj = { type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", applicationId, lockState: null, pictureInPictureLockState: null };
   importDefault(709).dispatch(obj);
 };
-prototype["releaseIframeId"] = function releaseIframeId() {
-  this.iframeId = undefined;
-  return this.iframeId;
+prototype["releaseFrameId"] = function releaseFrameId() {
+  this.frameId = undefined;
+  return this.frameId;
 };
-prototype["hasIframeId"] = function hasIframeId() {
-  return null != this.iframeId;
+prototype["hasFrameId"] = function hasFrameId() {
+  return null != this.frameId;
 };
-prototype["getOrCreateIframeId"] = function getOrCreateIframeId() {
-  const iframeId = this.iframeId;
-  if (null != iframeId) {
-    return iframeId;
+prototype["getOrCreateFrameId"] = function getOrCreateFrameId() {
+  const frameId = this.frameId;
+  if (null != frameId) {
+    return frameId;
   } else {
     const v4Result = require(514) /* v1 */.v4();
-    tmp.iframeId = v4Result;
+    tmp.frameId = v4Result;
     return v4Result;
   }
 };

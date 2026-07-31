@@ -1,10 +1,10 @@
-// Module ID: 12314
-// Function ID: 12315
+// Module ID: 12340
+// Function ID: 12341
 // Name: useMediaViewerPanGestureConfig
-// Dependencies: [19, 4050, 8120, 8116, 4599, 8252, 5273, 2]
+// Dependencies: [19, 4054, 8127, 8123, 4603, 8259, 5277, 2]
 // Exports: useMediaViewerPanGesture, useMediaViewerPanGestureConfig
 
-// Module 12314 (useMediaViewerPanGestureConfig)
+// Module 12340 (useMediaViewerPanGestureConfig)
 import noop from "noop";
 
 const require = arg1;
@@ -20,17 +20,17 @@ export const useMediaViewerPanGestureConfig = function useMediaViewerPanGestureC
   const _require = arg0;
   let closure_1 = swipeVelocityThreshold;
   const dependencyMap = onClose;
-  const sharedValue = _require(4050).useSharedValue(false);
-  let obj = _require(4050);
-  const sharedValue1 = _require(4050).useSharedValue(false);
-  const obj2 = _require(4050);
-  const sharedValue2 = _require(4050).useSharedValue(0);
-  const obj3 = _require(4050);
-  const sharedValue3 = _require(4050).useSharedValue(0);
-  const obj4 = _require(4050);
-  const sharedValue4 = _require(4050).useSharedValue({ y: 0, x: 0 });
-  const obj5 = _require(4050);
-  const sharedValue5 = _require(4050).useSharedValue(true);
+  const sharedValue = _require(4054).useSharedValue(false);
+  let obj = _require(4054);
+  const sharedValue1 = _require(4054).useSharedValue(false);
+  const obj2 = _require(4054);
+  const sharedValue2 = _require(4054).useSharedValue(0);
+  const obj3 = _require(4054);
+  const sharedValue3 = _require(4054).useSharedValue(0);
+  const obj4 = _require(4054);
+  const sharedValue4 = _require(4054).useSharedValue({ y: 0, x: 0 });
+  const obj5 = _require(4054);
+  const sharedValue5 = _require(4054).useSharedValue(true);
   const items = [onClose];
   const callback = sharedValue.useCallback(() => {
     callback(onClose[2]).tryPauseCurrentVideo();

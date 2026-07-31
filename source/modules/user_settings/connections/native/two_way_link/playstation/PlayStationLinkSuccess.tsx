@@ -1,10 +1,10 @@
-// Module ID: 8972
-// Function ID: 8973
+// Module ID: 8985
+// Function ID: 8986
 // Name: PlayStationLinkSuccess
-// Dependencies: [19, 17, 21, 4189, 8934, 8973, 4185, 1236, 5177, 4600, 2]
+// Dependencies: [19, 17, 21, 4193, 8947, 8986, 4189, 1236, 5181, 4604, 2]
 // Exports: PlayStationLinkSuccess
 
-// Module 8972 (PlayStationLinkSuccess)
+// Module 8985 (PlayStationLinkSuccess)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ let closure_8 = createCacheKey.createStyles({ image: { width: 124, height: 160, 
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkSuccess.tsx");
 
 export const PlayStationLinkSuccess = function PlayStationLinkSuccess(onClose) {
-  let obj = require(8934) /* styles */;
+  let obj = require(8947) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   obj = { style: twoWayLinkStyles.container, children: null };
   obj = { style: twoWayLinkStyles.content, children: null };
@@ -30,11 +30,11 @@ export const PlayStationLinkSuccess = function PlayStationLinkSuccess(onClose) {
   const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl.string(require(1236) /* getSystemLocale */.t.e6SOl0);
-  items[1] = callback(require(4185) /* Text */.Text, obj2);
+  items[1] = callback(require(4189) /* Text */.Text, obj2);
   const obj3 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj3[3] = intl2.string(require(1236) /* getSystemLocale */.t.QjAZAQ);
-  items[2] = callback(require(4185) /* Text */.Text, obj3);
+  items[2] = callback(require(4189) /* Text */.Text, obj3);
   obj[1] = items;
   const items1 = [callback2(closure_5, obj), ];
   const obj4 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: null };
@@ -43,9 +43,9 @@ export const PlayStationLinkSuccess = function PlayStationLinkSuccess(onClose) {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj6[1] = intl3.string(require(1236) /* getSystemLocale */.t.i4jeWR);
   obj6[2] = onClose.onClose;
-  obj5[1] = callback(require(4600) /* Button */.Button, obj6);
+  obj5[1] = callback(require(4604) /* Button */.Button, obj6);
   obj4[2] = callback(closure_5, obj5);
-  items1[1] = callback(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
+  items1[1] = callback(require(5181) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
   obj[1] = items1;
   return callback2(closure_5, obj);
 };

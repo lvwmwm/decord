@@ -1,9 +1,9 @@
-// Module ID: 10085
-// Function ID: 10086
+// Module ID: 10102
+// Function ID: 10103
 // Name: renderIcon
-// Dependencies: [19, 17, 1302, 21, 4189, 712, 3901, 4035, 10086, 10087, 4185, 1236, 10088, 10089, 4717, 2]
+// Dependencies: [19, 17, 1302, 21, 4193, 712, 3905, 4039, 10103, 10104, 4189, 1236, 10105, 10106, 4721, 2]
 
-// Module 10085 (renderIcon)
+// Module 10102 (renderIcon)
 import get_ActivityIndicator from "get ActivityIndicator";
 import handleThemeChange from "handleThemeChange";
 import jsxProd from "jsxProd";
@@ -52,9 +52,9 @@ prototype["renderIcon"] = function renderIcon() {
     ({ guildIcon: arr3[0], emptyGuildIcon: arr3[1] } = tmp);
     obj1[0] = items1;
     if (obj6.isThemeDark(theme.theme)) {
-      let tmp13Result = tmp13(10086);
+      let tmp13Result = tmp13(10103);
     } else {
-      tmp13Result = tmp13(10087);
+      tmp13Result = tmp13(10104);
     }
     obj = { source: null };
     obj[0] = tmp13Result;
@@ -62,12 +62,12 @@ prototype["renderIcon"] = function renderIcon() {
     const obj2 = { style: null, variant: "text-xs/bold", color: "text-default", children: null };
     obj2[0] = tmp.emptyGuildIconText;
     const intl = tmp10(1236).intl;
-    obj6 = require(4035) /* AccessibilityAnnouncer */;
+    obj6 = require(4039) /* AccessibilityAnnouncer */;
     const tmp6 = closure_7;
     const tmp7 = closure_3;
     const tmp9 = closure_4;
     obj2[3] = intl.string(require(1236) /* getSystemLocale */.t["3UB9ad"]).toUpperCase();
-    items2[1] = callback(require(4185) /* Text */.Text, obj2);
+    items2[1] = callback(require(4189) /* Text */.Text, obj2);
     obj1[1] = items2;
     tmp6Result = tmp6(tmp7, obj1);
     const str = intl.string(require(1236) /* getSystemLocale */.t["3UB9ad"]);
@@ -93,14 +93,14 @@ prototype["renderUpload"] = function renderUpload() {
     obj3[0] = iconBackgroundColor;
     items1[1] = obj3;
     obj2[0] = items1;
-    obj2[1] = importDefault(10088);
+    obj2[1] = importDefault(10105);
     obj1[1] = tmp2(closure_4, obj2);
     obj[1] = tmp2(tmp3, obj1);
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.emptyIconWrapper;
     const obj4 = { source: null };
-    obj4[0] = importDefault(10089);
+    obj4[0] = importDefault(10106);
     obj[1] = tmp2(closure_4, obj4);
   }
   return closure_6(closure_3, obj);
@@ -126,7 +126,7 @@ prototype["render"] = function render() {
   const items1 = [closure_6(closure_3, obj), self.renderUpload()];
   obj[1] = items1;
   obj[3] = callback2(closure_3, obj);
-  return closure_6(require(4717) /* PressableBase */.PressableOpacity, obj);
+  return closure_6(require(4721) /* PressableBase */.PressableOpacity, obj);
 };
 GuildIconUploader.contextType = require("ManaContext").ThemeContext;
 let obj3 = { borderWidth: 2, borderStyle: "dashed", justifyContent: "center", alignItems: "center", borderColor: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };

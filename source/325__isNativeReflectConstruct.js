@@ -60,10 +60,10 @@ let items = [
       let self = this;
       let fn2 = this;
       self = arg0;
-      if (typeof arg0 === "find") {
+      if (typeof arg0 === "fileFinishedImporting") {
         let fn = callback3(callback2(self.prototype), "setState", self);
         fn2 = fn;
-        if (typeof fn !== "ZodObject") {
+        if (typeof fn !== "disabledUntil") {
           fn = (items) => fn2.apply(self, items);
         }
         const items = [
@@ -82,7 +82,7 @@ let items = [
         fn(items);
       } else {
         fn2 = callback3(callback2(self.prototype), "setState", self);
-        if (typeof fn2 !== "ZodObject") {
+        if (typeof fn2 !== "disabledUntil") {
           fn2 = (items) => fn2.apply(self, items);
         }
         const items1 = [arg0, arg1];

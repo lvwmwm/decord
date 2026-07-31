@@ -1,10 +1,10 @@
-// Module ID: 13946
-// Function ID: 13947
+// Module ID: 13970
+// Function ID: 13971
 // Name: FamilyCenterRequestorDetails
-// Dependencies: [19, 17, 21, 4189, 1297, 712, 6252, 13918, 4185, 2]
+// Dependencies: [19, 17, 21, 4193, 1297, 712, 6258, 13942, 4189, 2]
 // Exports: default
 
-// Module 13946 (FamilyCenterRequestorDetails)
+// Module 13970 (FamilyCenterRequestorDetails)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,14 +27,14 @@ const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/na
 export default function FamilyCenterRequestorDetails(otherUser) {
   otherUser = otherUser.otherUser;
   const tmp = createCacheKey();
-  let obj = require(6252) /* useUserIdsForLinkStatus */;
+  let obj = require(6258) /* useUserIdsForLinkStatus */;
   obj = { style: tmp.container, children: null };
   const linkTimestampText = obj.useLinkTimestampText(otherUser.id, otherUser.status);
-  obj = { avatarStyle: tmp.avatar, user: otherUser, guildId: "HermesInternal", disablePlaceholder: null, avatarDecoration: "Warning" };
+  obj = { avatarStyle: tmp.avatar, user: otherUser, guildId: "HermesInternal", disablePlaceholder: null, avatarDecoration: "Heartbeat" };
   obj[4] = otherUser.avatarDecoration;
   const items = [callback(require(1297) /* Button */.Avatar, obj), ];
   const obj1 = { style: tmp.detailsContainer, children: null };
-  const items1 = [callback(importDefault(13918), { user: otherUser }), callback(require(4185) /* Text */.Text, { variant: "text-xs/semibold", color: "text-muted", children: linkTimestampText })];
+  const items1 = [callback(importDefault(13942), { user: otherUser }), callback(require(4189) /* Text */.Text, { variant: "text-xs/semibold", color: "text-muted", children: linkTimestampText })];
   obj1[1] = items1;
   items[1] = callback2(View, obj1);
   obj[1] = items;

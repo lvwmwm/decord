@@ -1,9 +1,9 @@
-// Module ID: 7022
-// Function ID: 7023
+// Module ID: 7030
+// Function ID: 7031
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7022 (metadata)
+// Module 7030 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ExperimentalMarvelRivalsWidgetAbstractUI-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/767e1e257a96b07892ca89ffa0eb0d7aef886876f61de929702d171976fb2430.png";

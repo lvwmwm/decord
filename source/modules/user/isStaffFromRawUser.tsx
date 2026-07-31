@@ -1,10 +1,10 @@
-// Module ID: 11506
-// Function ID: 11507
+// Module ID: 11523
+// Function ID: 11524
 // Name: isStaff
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 11506 (isStaff)
+// Module 11523 (isStaff)
 import { UserFlags } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/user/isStaffFromRawUser.tsx");

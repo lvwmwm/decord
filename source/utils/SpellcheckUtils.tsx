@@ -1,10 +1,10 @@
-// Module ID: 5192
-// Function ID: 5193
+// Module ID: 5196
+// Function ID: 5197
 // Name: _setEnabled
-// Dependencies: [5, 3800, 500, 5193, 2]
+// Dependencies: [5, 3804, 500, 5197, 2]
 // Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 5192 (_setEnabled)
+// Module 5196 (_setEnabled)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import set from "set";
 import set from "set";
@@ -628,7 +628,7 @@ let c4 = installResult;
 function isSupported() {
   let isDesktopResult = require(500) /* set */.isDesktop();
   if (isDesktopResult) {
-    const tmp4 = importDefault(3800);
+    const tmp4 = importDefault(3804);
     let spellCheck;
     if (tmp4 != null) {
       spellCheck = tmp4.spellCheck;
@@ -711,13 +711,13 @@ export const setAppLocale = function setAppLocale() {
   return applyArgumentsResult;
 };
 export const addResultListener = function addResultListener(arg0) {
-  const tmp3 = importDefault(3800);
+  const tmp3 = importDefault(3804);
   let spellCheck;
   if (tmp3 != null) {
     spellCheck = tmp3.spellCheck;
   }
   if (null != spellCheck) {
-    spellCheck = importDefault(3800).spellCheck;
+    spellCheck = importDefault(3804).spellCheck;
     let fn2 = spellCheck.on("spellcheck-result", arg0);
     if (fn2 == null) {
       fn2 = () => {

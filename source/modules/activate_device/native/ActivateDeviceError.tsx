@@ -1,10 +1,10 @@
-// Module ID: 13019
-// Function ID: 13020
+// Module ID: 13044
+// Function ID: 13045
 // Name: ActivateDeviceError
-// Dependencies: [19, 17, 21, 4189, 8977, 13017, 4185, 1236, 4600, 2]
+// Dependencies: [19, 17, 21, 4193, 8990, 13042, 4189, 1236, 4604, 2]
 // Exports: ActivateDeviceError
 
-// Module 13019 (ActivateDeviceError)
+// Module 13044 (ActivateDeviceError)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -24,27 +24,27 @@ const result = require("jsxProd").fileFinishedImporting("modules/activate_device
 export const ActivateDeviceError = function ActivateDeviceError(onRetry) {
   let obj = { children: null };
   obj = { source: null, style: null };
-  obj[0] = importDefault(8977);
+  obj[0] = importDefault(8990);
   obj[1] = callback3().image;
   const items = [callback(closure_3, obj), , ];
-  obj = { style: importDefault(13017).innerContent, children: null };
+  obj = { style: importDefault(13042).innerContent, children: null };
   const obj1 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
-  obj1[2] = importDefault(13017).centerText;
+  obj1[2] = importDefault(13042).centerText;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl.string(require(1236) /* getSystemLocale */.t["3dgwPD"]);
-  const items1 = [callback(require(4185) /* Text */.Text, obj1), ];
+  const items1 = [callback(require(4189) /* Text */.Text, obj1), ];
   const obj2 = { variant: "text-md/medium", color: "text-default", style: null, children: null };
-  obj2[2] = importDefault(13017).centerText;
+  obj2[2] = importDefault(13042).centerText;
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl2.string(require(1236) /* getSystemLocale */.t["/GAO1P"]);
-  items1[1] = callback(require(4185) /* Text */.Text, obj2);
+  items1[1] = callback(require(4189) /* Text */.Text, obj2);
   obj[1] = items1;
   items[1] = callback2(closure_4, obj);
   const obj3 = { size: "lg", text: null, onPress: null, grow: true };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj3[1] = intl3.string(require(1236) /* getSystemLocale */.t["5911Lb"]);
   obj3[2] = onRetry.onRetry;
-  items[2] = callback(require(4600) /* Button */.Button, obj3);
+  items[2] = callback(require(4604) /* Button */.Button, obj3);
   obj[0] = items;
   return callback2(closure_7, obj);
 };

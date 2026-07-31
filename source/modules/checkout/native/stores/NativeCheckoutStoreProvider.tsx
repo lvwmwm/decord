@@ -1,10 +1,10 @@
-// Module ID: 6662
-// Function ID: 6663
+// Module ID: 6668
+// Function ID: 6669
 // Name: NativeCheckoutStoreProvider
-// Dependencies: [5, 32, 19, 17, 6215, 4172, 21, 4189, 5503, 6663, 6220, 6221, 5637, 514, 1208, 6669, 2]
+// Dependencies: [5, 32, 19, 17, 6221, 4176, 21, 4193, 5507, 6669, 6226, 6227, 5641, 514, 1208, 6675, 2]
 // Exports: default
 
-// Module 6662 (NativeCheckoutStoreProvider)
+// Module 6668 (NativeCheckoutStoreProvider)
 import CustomCheckoutFlow from "CustomCheckoutFlow";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -21,15 +21,16 @@ const require = arg1;
 function NativeCheckoutStoreProvider(children) {
   let CustomCheckoutFlow;
   let _slicedToArray;
+  let noop;
   let dependencyMap;
   let order;
   let require;
   ({ checkoutInitParameters: require, order } = children);
-  ({ paymentGateway: dependencyMap, orderRequired: CustomCheckoutFlow, onOrderRetryCancellation: _slicedToArray } = children);
-  let React;
+  ({ paymentGateway: dependencyMap, orderRequired: CustomCheckoutFlow, onOrderRetryCancellation: _slicedToArray, initialSubscriptionFacet: noop } = children);
+  let closure_6;
   let first;
-  let closure_7;
-  React = order(5503)(() => {
+  let closure_8;
+  closure_6 = order(5507)(() => {
     let id;
     if (order != null) {
       id = order.id;
@@ -43,8 +44,8 @@ function NativeCheckoutStoreProvider(children) {
     obj = { loadId: id, startTime: Date.now() };
     return obj;
   });
-  first = callback(React.useState(() => ref({ order, checkoutInitParameters: closure_0, contextMetadata: noop, paymentGateway: closure_2, orderRequired: CustomCheckoutFlow, onOrderRetryCancellation: _slicedToArray })), 1)[0];
-  closure_7 = React.useRef(null != order);
+  first = callback(React.useState(() => first({ order, checkoutInitParameters: closure_0, contextMetadata: closure_6, paymentGateway: closure_2, orderRequired: CustomCheckoutFlow, onOrderRetryCancellation: _slicedToArray, initialSubscriptionFacet: noop })), 1)[0];
+  closure_8 = React.useRef(null != order);
   const items = [order, first];
   const effect = React.useEffect(() => {
     let current = ref.current;
@@ -370,7 +371,7 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
     obj[1] = tmp13(_require(tmp5[12]).ActivityIndicator, { animating: true, size: "large" });
     let tmp13Result = tmp13(onOrderRetryCancellation, obj);
   } else {
-    obj = { checkoutInitParameters: null, order: null, paymentGateway: null, onOrderRetryCancellation: null, orderRequired: null, children: null };
+    obj = { checkoutInitParameters: null, order: null, paymentGateway: null, onOrderRetryCancellation: null, orderRequired: null, initialSubscriptionFacet: null, children: null };
     obj1 = { skuIds: null, isGift: null, activeSubscription: null, referralTrialOfferId: null };
     obj1[0] = skuIds;
     obj1[1] = isGift;
@@ -380,7 +381,8 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
     obj[2] = paymentGateway;
     obj[3] = onOrderRetryCancellation;
     obj[4] = orderRequired;
-    obj[5] = orderRequired.children;
+    obj[5] = initialSubscriptionFacet;
+    obj[6] = orderRequired.children;
     tmp13Result = tmp13(storeFront, obj);
   }
   return tmp13Result;

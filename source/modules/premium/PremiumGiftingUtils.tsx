@@ -1,10 +1,10 @@
-// Module ID: 7854
-// Function ID: 7855
+// Module ID: 7862
+// Function ID: 7863
 // Name: _sendGiftMessage
-// Dependencies: [5, 1372, 4182, 4199, 38, 4424, 5713, 5965, 2]
+// Dependencies: [5, 1372, 4186, 4203, 38, 4428, 5718, 5971, 2]
 // Exports: sendGiftMessage, unhandledGiftIntent
 
-// Module 7854 (_sendGiftMessage)
+// Module 7862 (_sendGiftMessage)
 import _resolveGiftCode from "_resolveGiftCode";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
@@ -88,15 +88,15 @@ function _sendGiftMessage() {
             return obj3;
           } else {
             lib = arg1;
-            dependencyMap = callback(4424).getGiftCodeURL(callback);
-            const obj9 = lib(5713);
+            dependencyMap = callback(4428).getGiftCodeURL(callback);
+            const obj9 = lib(5718);
             const id = lib.id;
-            const obj8 = callback(4424);
+            const obj8 = callback(4428);
             const obj4 = { isGiftLinkSentOnBehalfOfUser: true, location: null };
             obj4[1] = constants.GIFTING;
             constants = 3;
             obj = { value: null, done: true };
-            obj[0] = obj9.sendMessage(id, lib(5965).parse(lib, dependencyMap), undefined, obj4);
+            obj[0] = obj9.sendMessage(id, lib(5971).parse(lib, dependencyMap), undefined, obj4);
             return obj;
           }
         } catch (tmp18) {

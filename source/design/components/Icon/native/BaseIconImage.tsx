@@ -1,16 +1,16 @@
-// Module ID: 3892
-// Function ID: 3893
+// Module ID: 3896
+// Function ID: 3897
 // Name: BaseIconImage
-// Dependencies: [19, 17, 21, 3893, 2]
+// Dependencies: [19, 17, 21, 3897, 2]
 // Exports: BaseIconImage
 
-// Module 3892 (BaseIconImage)
+// Module 3896 (BaseIconImage)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "Array", height: "ct" }, refresh_sm: { width: 18, height: 18 } };
+let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "Array", height: "HermesInternal" }, refresh_sm: { width: 18, height: 18 } };
 const result = require("jsxProd").fileFinishedImporting("design/components/Icon/native/BaseIconImage.tsx");
 
 export const BaseIconImage = function BaseIconImage(source) {
@@ -24,7 +24,7 @@ export const BaseIconImage = function BaseIconImage(source) {
   }
   const color = source.color;
   ({ resizeMode, style, accessible, accessibilityLabel } = source);
-  let obj = require(3893) /* map */;
+  let obj = require(3897) /* map */;
   const token = obj.useToken(color);
   if (null != token) {
     obj = { tintColor: null };

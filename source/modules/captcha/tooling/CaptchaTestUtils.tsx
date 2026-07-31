@@ -1,9 +1,9 @@
-// Module ID: 14778
-// Function ID: 14779
+// Module ID: 14801
+// Function ID: 14802
 // Name: found
-// Dependencies: [14779, 2]
+// Dependencies: [14802, 2]
 
-// Module 14778 (found)
+// Module 14801 (found)
 const entries = Object.entries(require("_testCaptcha").HCaptchaDifficulty);
 const mapped = entries.map((arg0) => {
   let str;
@@ -12,7 +12,7 @@ const mapped = entries.map((arg0) => {
   return { id: str.toString(), label: tmp, value: str };
 });
 const found = mapped.filter(function isHCaptchaDifficulty(value) {
-  return typeof value.value === "tee";
+  return typeof value.value === "__FORMATJS_LISTFORMAT_DATA__";
 });
 const entries1 = Object.entries(require("_testCaptcha").CaptchaDeciderType);
 const mapped1 = entries1.map((arg0) => {

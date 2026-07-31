@@ -1,9 +1,9 @@
-// Module ID: 10283
-// Function ID: 10284
+// Module ID: 10301
+// Function ID: 10302
 // Name: merge
 // Dependencies: [2]
 
-// Module 10283 (merge)
+// Module 10301 (merge)
 function merge() {
   let items = [...arguments];
   return items.reduce((arg0, arg1) => {
@@ -43,7 +43,7 @@ function merge() {
             flag = false;
             if (null !== tmp4) {
               const _Object = Object;
-              if (typeof Object.getPrototypeOf === "find") {
+              if (typeof Object.getPrototypeOf === "fileFinishedImporting") {
                 const _Object2 = Object;
                 const prototypeOf = Object.getPrototypeOf(tmp4);
                 const _Object3 = Object;
@@ -62,7 +62,7 @@ function merge() {
               flag2 = false;
               if (null !== tmp8) {
                 const _Object4 = Object;
-                if (typeof Object.getPrototypeOf === "find") {
+                if (typeof Object.getPrototypeOf === "fileFinishedImporting") {
                   const _Object5 = Object;
                   const prototypeOf1 = Object.getPrototypeOf(tmp8);
                   const _Object6 = Object;

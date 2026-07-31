@@ -108,7 +108,7 @@ export default function useLinking(arg0, enabled) {
     if (ref.current) {
       const currentResult = ref5.current();
       if (null != currentResult) {
-        if (typeof currentResult === "tee") {
+        if (typeof currentResult === "__FORMATJS_LISTFORMAT_DATA__") {
           return currentResult.then((arg0) => callback(arg0));
         }
       }

@@ -1,9 +1,9 @@
-// Module ID: 5123
-// Function ID: 5124
+// Module ID: 5127
+// Function ID: 5128
 // Name: recomputeFromAppTokens
-// Dependencies: [32, 1372, 5124, 4407, 1351, 589, 709, 2]
+// Dependencies: [32, 1372, 5128, 4411, 1351, 589, 709, 2]
 
-// Module 5123 (recomputeFromAppTokens)
+// Module 5127 (recomputeFromAppTokens)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import isConnected from "isConnected";
@@ -63,10 +63,10 @@ prototype["getNewestTokensForNonChildrenApplications"] = function getNewestToken
 prototype["getFetchState"] = function getFetchState() {
   return NOT_FETCHED;
 };
-prototype["getFetchStateForApplication"] = function getFetchStateForApplication(applicationId) {
+prototype["getFetchStateForApplication"] = function getFetchStateForApplication(arg0) {
   if (NOT_FETCHED !== obj.FETCHING) {
     if (NOT_FETCHED !== tmp.FETCHED) {
-      let value = map1.get(applicationId);
+      let value = map1.get(arg0);
       if (value == null) {
         value = NOT_FETCHED;
       }

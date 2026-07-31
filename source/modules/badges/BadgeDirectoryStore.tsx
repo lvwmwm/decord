@@ -1,10 +1,10 @@
-// Module ID: 8106
-// Function ID: 8107
+// Module ID: 8113
+// Function ID: 8114
 // Name: map
-// Dependencies: [1874, 687, 8107, 584, 8109, 589, 709, 2]
+// Dependencies: [1874, 687, 8114, 584, 8116, 589, 709, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 8106 (map)
+// Module 8113 (map)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Store } from "initialize";
 import set from "set";
@@ -244,8 +244,8 @@ const badgeDirectoryStore = new BadgeDirectoryStore(require("dispatcher"), {
           const _Date2 = Date;
           const timestamp = Date.now();
           const result1 = obj3.set(id, timestamp + value.fail());
-          const badgeDirectory = require(8109) /* urlUserId */.fetchBadgeDirectory(id);
-          const obj5 = require(8109) /* urlUserId */;
+          const badgeDirectory = require(8116) /* urlUserId */.fetchBadgeDirectory(id);
+          const obj5 = require(8116) /* urlUserId */;
           const obj6 = map2;
         }
         obj3 = map3;

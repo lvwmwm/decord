@@ -1,9 +1,9 @@
-// Module ID: 13503
-// Function ID: 13504
+// Module ID: 13527
+// Function ID: 13528
 // Name: _initialize
-// Dependencies: [17, 1212, 11504, 12766, 1218, 13504, 676, 4368, 709, 10690, 13507, 13508, 1208, 1236, 2517, 500, 13509, 698, 11503, 2]
+// Dependencies: [17, 1212, 11521, 12791, 1218, 13528, 676, 4372, 709, 10708, 13531, 13532, 1208, 1236, 2519, 500, 13533, 698, 11520, 2]
 
-// Module 13503 (_initialize)
+// Module 13527 (_initialize)
 import { NativeModules } from "expandEventProperties";
 import initialize from "initialize";
 import closure_5 from "initialize";
@@ -132,17 +132,17 @@ prototype["registerListener"] = function registerListener() {
     throw error;
   } else {
     self.hasRegisterEventListener = true;
-    const result = importDefault(10690).addRegisterEventListener(self.handleToken);
+    const result = importDefault(10708).addRegisterEventListener(self.handleToken);
   }
 };
 prototype["registerNotificationCategories"] = function registerNotificationCategories(arg0) {
-  const declarativeNotifSettingsExperiment = require(13507) /* apexExperiment */.declarativeNotifSettingsExperiment;
+  const declarativeNotifSettingsExperiment = require(13531) /* apexExperiment */.declarativeNotifSettingsExperiment;
   const config = declarativeNotifSettingsExperiment.getConfig({ location: "registerNotificationCategories" });
   let flag = false;
   try {
     if (config.enabled) {
-      flag = importDefault(13508).registerDeclarativeNotificationCategories();
-      const obj = importDefault(13508);
+      flag = importDefault(13532).registerDeclarativeNotificationCategories();
+      const obj = importDefault(13532);
     }
     const self = this;
     if (flag) {
@@ -152,8 +152,8 @@ prototype["registerNotificationCategories"] = function registerNotificationCateg
         if (config.clearDeclarative) {
           importDefault(1208).addBreadcrumb({ message: "Clearing declarative notification categories" });
           const obj3 = importDefault(1208);
-          importDefault(13508).clear();
-          const obj4 = importDefault(13508);
+          importDefault(13532).clear();
+          const obj4 = importDefault(13532);
         }
         const result1 = self.registerLegacyNotificationCategories();
       } catch (tmp12) {
@@ -172,44 +172,44 @@ prototype["registerLegacyNotificationCategories"] = function registerLegacyNotif
   if (null != registerNotificationCategoriesAndGroups) {
     let obj = { calls: null, mediaConnections: null, messages: null, directMessages: null, friendRequests: null, polls: null, social: null, stageLive: null, guildEventLive: null, guildHighlights: null, forumThreadCreated: null, systemMessages: null, other: null, default: null, reactions: null };
     const intl = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl.string(importDefault(2517)["IUH/Oe"]);
+    obj[0] = intl.string(importDefault(2519)["IUH/Oe"]);
     const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl2.string(importDefault(2517).VeBD1N);
+    obj[1] = intl2.string(importDefault(2519).VeBD1N);
     const intl3 = require(1236) /* getSystemLocale */.intl;
-    obj[2] = intl3.string(importDefault(2517)["4qWUAO"]);
+    obj[2] = intl3.string(importDefault(2519)["4qWUAO"]);
     const intl4 = require(1236) /* getSystemLocale */.intl;
-    obj[3] = intl4.string(importDefault(2517).NGdNZb);
+    obj[3] = intl4.string(importDefault(2519).NGdNZb);
     const intl5 = require(1236) /* getSystemLocale */.intl;
-    obj[4] = intl5.string(importDefault(2517).NxgGZA);
+    obj[4] = intl5.string(importDefault(2519).NxgGZA);
     const intl6 = require(1236) /* getSystemLocale */.intl;
-    obj[5] = intl6.string(importDefault(2517).MOjygY);
+    obj[5] = intl6.string(importDefault(2519).MOjygY);
     const intl7 = require(1236) /* getSystemLocale */.intl;
-    obj[6] = intl7.string(importDefault(2517)["UzRF+8"]);
+    obj[6] = intl7.string(importDefault(2519)["UzRF+8"]);
     const intl8 = require(1236) /* getSystemLocale */.intl;
-    obj[7] = intl8.string(importDefault(2517)["4n388K"]);
+    obj[7] = intl8.string(importDefault(2519)["4n388K"]);
     const intl9 = require(1236) /* getSystemLocale */.intl;
-    obj[8] = intl9.string(importDefault(2517)["40TIqW"]);
+    obj[8] = intl9.string(importDefault(2519)["40TIqW"]);
     const intl10 = require(1236) /* getSystemLocale */.intl;
     obj[9] = intl10.string(require(1236) /* getSystemLocale */.t.p5jg9S);
     const intl11 = require(1236) /* getSystemLocale */.intl;
-    obj[10] = intl11.string(importDefault(2517).HibKoy);
+    obj[10] = intl11.string(importDefault(2519).HibKoy);
     const intl12 = require(1236) /* getSystemLocale */.intl;
-    obj[11] = intl12.string(importDefault(2517).zJlwvV);
+    obj[11] = intl12.string(importDefault(2519).zJlwvV);
     const intl13 = require(1236) /* getSystemLocale */.intl;
-    obj[12] = intl13.string(importDefault(2517).kIrLfg);
+    obj[12] = intl13.string(importDefault(2519).kIrLfg);
     const intl14 = require(1236) /* getSystemLocale */.intl;
-    obj[13] = intl14.string(importDefault(2517)["T+79Eo"]);
+    obj[13] = intl14.string(importDefault(2519)["T+79Eo"]);
     const intl15 = require(1236) /* getSystemLocale */.intl;
     obj[14] = intl15.string(require(1236) /* getSystemLocale */.t.gHp0C4);
     obj = { realtime: null, social: null, server: null, other: null };
     const intl16 = require(1236) /* getSystemLocale */.intl;
-    obj[0] = intl16.string(importDefault(2517).S5cB9e);
+    obj[0] = intl16.string(importDefault(2519).S5cB9e);
     const intl17 = require(1236) /* getSystemLocale */.intl;
-    obj[1] = intl17.string(importDefault(2517)["UzRF+8"]);
+    obj[1] = intl17.string(importDefault(2519)["UzRF+8"]);
     const intl18 = require(1236) /* getSystemLocale */.intl;
-    obj[2] = intl18.string(importDefault(2517).zRKbpz);
+    obj[2] = intl18.string(importDefault(2519).zRKbpz);
     const intl19 = require(1236) /* getSystemLocale */.intl;
-    obj[3] = intl19.string(importDefault(2517).q5M7HV);
+    obj[3] = intl19.string(importDefault(2519).q5M7HV);
     const result = registerNotificationCategoriesAndGroups(obj, obj);
   } else if (null != registerNotificationCategories) {
     obj = { calls: null, mediaConnections: null, messages: null, directMessages: null, social: null, gameDetection: null, stageLive: null, guildEventLive: null, guildHighlights: null, forumThreadCreated: null, other: null, otherHighPriority: null };
@@ -245,7 +245,7 @@ prototype["trackDisabledAndroidNotifChannels"] = function trackDisabledAndroidNo
     tmp.hasTrackedDisabledAndroidNotifChannels = true;
     let obj = set(500);
     if (obj.isAndroid()) {
-      const tmp5 = importDefault(13509);
+      const tmp5 = importDefault(13533);
       let prop;
       if (tmp5 != null) {
         prop = tmp5.getAndroidNotifChannelStates;

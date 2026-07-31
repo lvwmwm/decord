@@ -1,10 +1,10 @@
-// Module ID: 5570
-// Function ID: 5571
+// Module ID: 5574
+// Function ID: 5575
 // Name: NavigationStack
-// Dependencies: [32, 19, 17, 21, 4189, 712, 5571, 5143, 3893, 5572, 1581, 500, 1236, 12, 5632, 1481, 4125, 5639, 1209, 2]
+// Dependencies: [32, 19, 17, 21, 4193, 712, 5575, 5147, 3897, 5576, 1581, 500, 1236, 12, 5636, 1481, 4129, 5643, 1209, 2]
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens
 
-// Module 5570 (NavigationStack)
+// Module 5574 (NavigationStack)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import get_ActivityIndicator from "useNavigationTheme";
@@ -241,8 +241,8 @@ function WrappedNavigationStack(arg0) {
     }
     return tmp2;
   }), 1)[0];
-  const tmp4 = navigationContainerRef(4125)();
-  navigationTheme = require(5639) /* useNavigationTheme */.useNavigationTheme(tmp4);
+  const tmp4 = navigationContainerRef(4129)();
+  navigationTheme = require(5643) /* useNavigationTheme */.useNavigationTheme(tmp4);
   obj = { ref: navigationContainerRef, theme: null, initialState: null, onReady: null, onStateChange: null, independent: true, children: null };
   obj[1] = navigationTheme;
   if (null == initialRouteState) {
@@ -280,7 +280,7 @@ export const useNavigatorScreens = function useNavigatorScreens(getNextRenewalDa
   return React.useMemo(getNextRenewalDateLabel, items);
 };
 export const useAccessibilityNativeStackOptions = function useAccessibilityNativeStackOptions() {
-  navigatorShouldCrossfade = navigatorShouldCrossfade(5571).useNavigatorShouldCrossfade();
+  navigatorShouldCrossfade = navigatorShouldCrossfade(5575).useNavigatorShouldCrossfade();
   const items = [navigatorShouldCrossfade];
   return React.useMemo(() => {
     let obj;

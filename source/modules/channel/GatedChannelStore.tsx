@@ -1,7 +1,7 @@
 // Module ID: 1933
 // Function ID: 1934
 // Name: isSubscriptionGated
-// Dependencies: [1934, 1376, 1936, 1372, 1942, 1935, 1862, 1874, 676, 3808, 3809, 3810, 589, 709, 2]
+// Dependencies: [1934, 1376, 1936, 1372, 1942, 1935, 1862, 1874, 676, 3812, 3813, 3814, 589, 709, 2]
 
 // Module 1933 (isSubscriptionGated)
 import initialize from "initialize";
@@ -24,11 +24,11 @@ function isSubscriptionGated(role) {
   let isPreviewingRoles;
   role = role.role;
   ({ guildId, isPreviewingRoles } = role);
-  let isSubscriptionRoleResult = require(3808) /* isSubscriptionRole */.isSubscriptionRole(role);
+  let isSubscriptionRoleResult = require(3812) /* isSubscriptionRole */.isSubscriptionRole(role);
   if (isSubscriptionRoleResult) {
     let tmp4 = isPreviewingRoles;
     if (!tmp4) {
-      let result = require(3808) /* isSubscriptionRole */.isSubscriptionRoleAvailableForPurchase(role);
+      let result = require(3812) /* isSubscriptionRole */.isSubscriptionRoleAvailableForPurchase(role);
       if (!result) {
         let flag = false;
         if (null != role) {
@@ -48,7 +48,7 @@ function isSubscriptionGated(role) {
       }
       tmp4 = result;
       const tmp6 = role;
-      const tmpResult = require(3808) /* isSubscriptionRole */;
+      const tmpResult = require(3812) /* isSubscriptionRole */;
     }
     isSubscriptionRoleResult = tmp4;
   }
@@ -79,7 +79,7 @@ function isChannelSubscriptionGatedInGuild(channel, guild) {
       let tmp9 = nextResult;
       let tmp10 = require;
       let tmp11 = dependencyMap;
-      let obj2 = require(3809) /* hasViewChannelPermission */;
+      let obj2 = require(3813) /* hasViewChannelPermission */;
       if (obj2.isChannelAccessGrantedBy(channel, channel.permissionOverwrites[tmp5])) {
         let tmp12 = iter;
         iter.return();
@@ -106,7 +106,7 @@ function isChannelSubscriptionGatedInGuild(channel, guild) {
         if (isSubscriptionGated(obj)) {
           let tmp21 = require;
           let tmp22 = dependencyMap;
-          let obj7 = require(3809) /* hasViewChannelPermission */;
+          let obj7 = require(3813) /* hasViewChannelPermission */;
           let tmp23 = item10077;
           if (obj7.hasViewChannelPermission(tmp19)) {
             let tmp24 = obj5;

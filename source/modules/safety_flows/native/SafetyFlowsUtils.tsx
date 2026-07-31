@@ -1,11 +1,11 @@
-// Module ID: 16703
-// Function ID: 16704
+// Module ID: 16732
+// Function ID: 16733
 // Name: fetchAndUpdateTask
-// Dependencies: [5, 19, 1874, 16697, 16699, 4395, 16698, 3890, 10352, 1236, 2485, 1480, 16702, 2]
+// Dependencies: [5, 19, 1874, 16726, 16728, 4399, 16727, 3894, 10370, 1236, 2487, 1480, 16731, 2]
 // Exports: getScreensForTaskType, useOnTaskComplete
 
-// Module 16703 (fetchAndUpdateTask)
-import module_4395 from "module_4395";
+// Module 16732 (fetchAndUpdateTask)
+import module_4399 from "module_4399";
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
@@ -98,20 +98,20 @@ function _fetchAndUpdateTask() {
 }
 function navigateToScreenForTask(closure_1, closure_0) {
   if (null == closure_0) {
-    let obj = importDefault(4395);
-    obj.popWithKey(require(16698) /* SAFETY_FLOWS_MODAL_KEY */.SAFETY_FLOWS_MODAL_KEY);
+    let obj = importDefault(4399);
+    obj.popWithKey(require(16727) /* SAFETY_FLOWS_MODAL_KEY */.SAFETY_FLOWS_MODAL_KEY);
     obj = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: null, content: null };
-    obj[1] = importDefault(10352);
+    obj[1] = importDefault(10370);
     const intl = require(1236) /* getSystemLocale */.intl;
-    obj[2] = intl.string(importDefault(2485)["/fHz9S"]);
-    importDefault(3890).open(obj);
+    obj[2] = intl.string(importDefault(2487)["/fHz9S"]);
+    importDefault(3894).open(obj);
   } else {
     const task_type = closure_0.task_type;
-    const tmp16 = require(16697) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
+    const tmp16 = require(16726) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
     let tmp5 = null;
     if (null != tmp16) {
       let tmp = tmp16;
-      if (task_type === tmp14(16697).TaskType.EMAIL_VERIFICATION) {
+      if (task_type === tmp14(16726).TaskType.EMAIL_VERIFICATION) {
         const currentUser = authStore.getCurrentUser();
         let email;
         if (currentUser != null) {
@@ -119,7 +119,7 @@ function navigateToScreenForTask(closure_1, closure_0) {
         }
         tmp = tmp16;
         if (null != email) {
-          const items = [tmp14(16697).SafetyFlowScreens.VERIFY_EMAIL];
+          const items = [tmp14(16726).SafetyFlowScreens.VERIFY_EMAIL];
           tmp = items;
         }
       }
@@ -128,18 +128,18 @@ function navigateToScreenForTask(closure_1, closure_0) {
     if (null != tmp5) {
       closure_1.push(tmp5[0]);
     } else {
-      closure_1.push(tmp14(16697).SafetyFlowScreens.UPDATE_APP);
+      closure_1.push(tmp14(16726).SafetyFlowScreens.UPDATE_APP);
     }
   }
 }
 const result = require("mergeGuildAvatar").fileFinishedImporting("modules/safety_flows/native/SafetyFlowsUtils.tsx");
 
 export const getScreensForTaskType = function getScreensForTaskType(task_type) {
-  const tmp3 = require(16697) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
+  const tmp3 = require(16726) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
   let tmp4 = null;
   if (null != tmp3) {
     let tmp5 = tmp3;
-    if (task_type === tmp(16697).TaskType.EMAIL_VERIFICATION) {
+    if (task_type === tmp(16726).TaskType.EMAIL_VERIFICATION) {
       const currentUser = authStore.getCurrentUser();
       let email;
       if (currentUser != null) {
@@ -147,7 +147,7 @@ export const getScreensForTaskType = function getScreensForTaskType(task_type) {
       }
       tmp5 = tmp3;
       if (null != email) {
-        const items = [tmp(16697).SafetyFlowScreens.VERIFY_EMAIL];
+        const items = [tmp(16726).SafetyFlowScreens.VERIFY_EMAIL];
         tmp5 = items;
       }
     }

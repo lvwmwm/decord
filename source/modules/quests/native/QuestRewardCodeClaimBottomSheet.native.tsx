@@ -1,10 +1,10 @@
-// Module ID: 10960
-// Function ID: 10961
+// Module ID: 10978
+// Function ID: 10979
 // Name: QuestRewardCodeClaimBottomSheet
-// Dependencies: [19, 17, 5983, 5033, 21, 4189, 712, 1581, 589, 10961, 3890, 1236, 9168, 4157, 9480, 5543, 4137, 10963, 5243, 5242, 4185, 4179, 5554, 5220, 4600, 10966, 2]
+// Dependencies: [19, 17, 5989, 5037, 21, 4193, 712, 1581, 589, 10979, 3894, 1236, 9181, 4161, 9495, 5547, 4141, 10981, 5247, 5246, 4189, 4183, 5558, 5224, 4604, 10984, 2]
 // Exports: default
 
-// Module 10960 (QuestRewardCodeClaimBottomSheet)
+// Module 10978 (QuestRewardCodeClaimBottomSheet)
 import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase";
 import get_ActivityIndicator from "_getQuestsInstructionsToWinReward";
 import initializeState from "initializeState";
@@ -112,7 +112,7 @@ function QuestRewardCodeClaimBottomSheet(quest) {
   const callback = obj2.useCallback(() => {
     if (null != rewardCode) {
       quest(hasError[15]).copy(tmp.code, () => {
-        let obj = callback2(3890);
+        let obj = callback2(3894);
         obj = { key: "TOAST_QUEST_REWARD_CODE_COPIED", content: null, icon: null };
         const intl = callback(1236).intl;
         obj[1] = intl.string(callback(1236).t.MSaeTe);

@@ -1,10 +1,11 @@
-// Module ID: 10210
-// Function ID: 10211
+// Module ID: 10227
+// Function ID: 10228
 // Name: getNextPositionFromChannels
-// Dependencies: [1376, 1372, 3817, 1375, 1410, 505, 1306, 1337, 12, 10211, 4528, 1236, 1355, 10215, 1865, 11, 10216, 2]
+// Dependencies: [1364, 1376, 1372, 3821, 1375, 1410, 505, 1306, 1337, 12, 10228, 4532, 1236, 1355, 10232, 1865, 11, 10233, 10234, 2]
 // Exports: addFavoriteCategory, addFavoriteChannel, addFavoriteChannels, removeFavoriteCategory, resetFavoritesGuild, setAllFavoriteCategoriesCollapsed, setFavoriteCategoryCollapsed, setFavoriteChannelNickname, setFavoritesGuildVisibility, toggleFavoriteGuildMuted, updateFavoriteChannelParent, updateFavoriteChannels
 
-// Module 10210 (getNextPositionFromChannels)
+// Module 10227 (getNextPositionFromChannels)
+import { resetFatigueCooldown } from "withContent";
 import { THREAD_CHANNEL_TYPES } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -12,7 +13,7 @@ import initializeFromUserSettings from "initializeFromUserSettings";
 import { Permissions } from "sum";
 import date from "date";
 
-let error;
+let c9;
 let metroImportAll;
 function getNextPositionFromChannels(arg0) {
   let num = 0;
@@ -94,7 +95,7 @@ function cleanFavoriteChannels(obj) {
 }
 function cleanupChannelParentId(arg0, arg1) {
   if (null != arg0[arg1]) {
-    if (tmp.parentId !== closure_7) {
+    if (tmp.parentId !== closure_8) {
       let tmp3 = null;
       if (null != tmp.parentId) {
         tmp3 = arg0[tmp.parentId];
@@ -111,16 +112,16 @@ function cleanupChannelParentId(arg0, arg1) {
 }
 function getReachedLimit(arg0, arg1) {
   cleanFavoriteChannels(arg0);
-  if (obj.size(arg0) >= closure_8) {
-    return closure_8;
+  if (obj.size(arg0) >= closure_9) {
+    return closure_9;
   } else {
-    const favoriteLimit = require(10211) /* useFavoritesAccess */.getFavoritesAccess().favoriteLimit;
+    const favoriteLimit = require(10228) /* useFavoritesAccess */.getFavoritesAccess().favoriteLimit;
     let tmp5 = null;
     if (favoriteLimit > 0) {
       tmp5 = null;
       if (arg1 !== require(1306) /* create */.FavoriteChannelType.CATEGORY) {
         let tmp7 = null;
-        if (tmp2Result.filter(arg0, (type) => type.type !== callback(table[6]).FavoriteChannelType.CATEGORY).length >= favoriteLimit) {
+        if (tmp2Result.filter(arg0, (type) => type.type !== callback(table[7]).FavoriteChannelType.CATEGORY).length >= favoriteLimit) {
           tmp7 = favoriteLimit;
         }
         tmp5 = tmp7;
@@ -133,7 +134,7 @@ function getReachedLimit(arg0, arg1) {
   tmp2 = importDefault;
 }
 function showLimitReachedAlert(count) {
-  let obj = importDefault(4528);
+  let obj = importDefault(4532);
   obj = { title: null, body: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["+XYXtZ"]);
@@ -143,7 +144,7 @@ function showLimitReachedAlert(count) {
   obj.show(obj);
 }
 function onSaveFailed() {
-  let obj = importDefault(4528);
+  let obj = importDefault(4532);
   obj = { title: null, body: null, onCloseCallback: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.iufib1);
@@ -190,7 +191,7 @@ function removeFavoriteChannel(closure_0, arg1) {
     let tmp8 = null;
     if (flag) {
       let tmp4 = null;
-      if (favorite.type !== _require(favorite[6]).FavoriteChannelType.CATEGORY) {
+      if (favorite.type !== _require(favorite[7]).FavoriteChannelType.CATEGORY) {
         const channel = store.getChannel(closure_0);
         let type;
         if (channel != null) {
@@ -204,34 +205,34 @@ function removeFavoriteChannel(closure_0, arg1) {
       tmp8 = tmp4;
     }
     c3 = tmp8;
-    const PreloadedUserSettingsActionCreators = _require(favorite[12]).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = _require(favorite[13]).PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("favorites", (favoriteChannels) => {
       delete tmp2[tmp];
-      if (favorite.type === callback(favorite[6]).FavoriteChannelType.CATEGORY) {
+      if (favorite.type === callback(favorite[7]).FavoriteChannelType.CATEGORY) {
         for (const key10014 in arg0.favoriteChannels) {
           let tmp10 = key10014;
           let tmp11 = callback;
           if (arg0.favoriteChannels[key10014].parentId !== callback) {
             continue;
           } else {
-            let tmp3 = outer1_7;
-            arg0.favoriteChannels[key10014].parentId = outer1_7;
+            let tmp3 = outer1_8;
+            arg0.favoriteChannels[key10014].parentId = outer1_8;
             continue;
           }
           continue;
         }
       }
-      outer1_11(favoriteChannels.favoriteChannels);
+      outer1_12(favoriteChannels.favoriteChannels);
       if (flag) {
         const _Object = Object;
-        const result = callback(favorite[13]).trackFavoritesGuildRemoveFromFavorites(c3, Object.keys(favoriteChannels.favoriteChannels).length);
-        const obj = callback(favorite[13]);
+        const result = callback(favorite[14]).trackFavoritesGuildRemoveFromFavorites(c3, Object.keys(favoriteChannels.favoriteChannels).length);
+        const obj = callback(favorite[14]);
       }
-    }, _require(favorite[12]).UserSettingsDelay.INFREQUENT_USER_ACTION, onSaveFailed);
+    }, _require(favorite[13]).UserSettingsDelay.INFREQUENT_USER_ACTION, onSaveFailed);
   }
 }
-({ FAVORITES_UNCATEGORIZED_PARENT_ID: error, MAX_FAVORITE_CHANNELS: metroImportAll } = require("date"));
-let result = require("getUncachedChannelPermissions").fileFinishedImporting("modules/favorites/FavoritesActionCreators.tsx");
+({ FAVORITES_UNCATEGORIZED_PARENT_ID: metroImportAll, MAX_FAVORITE_CHANNELS: c9 } = require("date"));
+let result = require("ensureGuildLoaded").fileFinishedImporting("modules/favorites/FavoritesActionCreators.tsx");
 
 export const addFavoriteChannel = function addFavoriteChannel(closure_0, arg1, channel_context_menu) {
   let str = channel_context_menu;
@@ -246,21 +247,21 @@ export const addFavoriteChannel = function addFavoriteChannel(closure_0, arg1, c
   let found;
   found = items.filter((arg0) => !favorite.isFavorite(arg0));
   if (0 !== found.length) {
-    const PreloadedUserSettingsActionCreators = _require(found[12]).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = _require(found[13]).PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("favorites", (favoriteChannels) => {
       let flag = false;
       const iter = found[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
         let tmp3 = nextResult;
-        let tmp4 = outer1_13;
+        let tmp4 = outer1_14;
         let tmp5 = callback;
         let tmp6 = found;
-        let tmp7 = outer1_13(favoriteChannels.favoriteChannels, callback(found[6]).FavoriteChannelType.REFERENCE_ORIGINAL);
+        let tmp7 = outer1_14(favoriteChannels.favoriteChannels, callback(found[7]).FavoriteChannelType.REFERENCE_ORIGINAL);
         let tmp8 = tmp7;
         if (null != tmp7) {
-          let tmp23 = outer1_14;
-          let tmp24 = outer1_14(tmp7);
+          let tmp23 = outer1_15;
+          let tmp24 = outer1_15(tmp7);
           if (flag) {
             let tmp26 = iter;
             iter.return();
@@ -271,46 +272,46 @@ export const addFavoriteChannel = function addFavoriteChannel(closure_0, arg1, c
             return false;
           }
         } else {
-          let tmp27 = outer1_4;
+          let tmp27 = outer1_5;
           let tmp28 = nextResult;
-          let channel = outer1_4.getChannel(tmp3);
+          let channel = outer1_5.getChannel(tmp3);
           let tmp30 = channel;
-          let FavoriteChannel = tmp5(tmp6[6]).FavoriteChannel;
+          let FavoriteChannel = tmp5(tmp6[7]).FavoriteChannel;
           let obj = { nickname: "", type: null, channelType: null, position: null, parentId: null };
-          obj[1] = tmp5(tmp6[6]).FavoriteChannelType.REFERENCE_ORIGINAL;
+          obj[1] = tmp5(tmp6[7]).FavoriteChannelType.REFERENCE_ORIGINAL;
           obj = undefined;
           if (null != channel) {
-            let UInt32Value = tmp5(tmp6[7]).UInt32Value;
+            let UInt32Value = tmp5(tmp6[8]).UInt32Value;
             obj = { value: null };
             let tmp9 = channel;
             obj[0] = tmp30.type;
             obj = UInt32Value.create(obj);
           }
           obj[2] = obj;
-          let tmp11 = outer1_10;
-          obj[3] = outer1_10(favoriteChannels.favoriteChannels);
+          let tmp11 = outer1_11;
+          obj[3] = outer1_11(favoriteChannels.favoriteChannels);
           let tmp12 = callback;
           if (callback == null) {
-            tmp12 = outer1_7;
+            tmp12 = outer1_8;
           }
           obj[4] = tmp12;
           favoriteChannels.favoriteChannels[tmp3] = FavoriteChannel.create(obj);
-          let tmp13 = outer1_11;
-          let tmp14 = outer1_11(favoriteChannels.favoriteChannels);
-          let tmp15 = outer1_12;
+          let tmp13 = outer1_12;
+          let tmp14 = outer1_12(favoriteChannels.favoriteChannels);
+          let tmp15 = outer1_13;
           let tmp16 = nextResult;
-          let tmp17 = outer1_12(favoriteChannels.favoriteChannels, tmp3);
+          let tmp17 = outer1_13(favoriteChannels.favoriteChannels, tmp3);
           flag = true;
-          let tmp5Result = tmp5(tmp6[13]);
+          let tmp5Result = tmp5(tmp6[14]);
           let tmp18 = str;
-          let tmp19 = outer1_17;
-          let tmp21 = outer1_16;
-          let tmp20 = outer1_17(tmp3, tmp5(tmp6[6]).FavoriteChannelType.REFERENCE_ORIGINAL);
-          let result = tmp5Result.trackFavoritesGuildAddToFavorites(str, tmp20, outer1_16(favoriteChannels.favoriteChannels));
+          let tmp19 = outer1_18;
+          let tmp21 = outer1_17;
+          let tmp20 = outer1_18(tmp3, tmp5(tmp6[7]).FavoriteChannelType.REFERENCE_ORIGINAL);
+          let result = tmp5Result.trackFavoritesGuildAddToFavorites(str, tmp20, outer1_17(favoriteChannels.favoriteChannels));
           continue;
         }
       }
-    }, _require(found[12]).UserSettingsDelay.FREQUENT_USER_ACTION, onSaveFailed);
+    }, _require(found[13]).UserSettingsDelay.FREQUENT_USER_ACTION, onSaveFailed);
   }
 };
 export const addFavoriteChannels = function addFavoriteChannels(arr, c0, modal) {
@@ -322,21 +323,21 @@ export const addFavoriteChannels = function addFavoriteChannels(arr, c0, modal) 
   let found;
   found = arr.filter((arg0) => !favorite.isFavorite(arg0));
   if (0 !== found.length) {
-    const PreloadedUserSettingsActionCreators = _require(found[12]).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = _require(found[13]).PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("favorites", (favoriteChannels) => {
       let flag = false;
       const iter = found[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
         let tmp3 = nextResult;
-        let tmp4 = outer1_13;
+        let tmp4 = outer1_14;
         let tmp5 = callback;
         let tmp6 = found;
-        let tmp7 = outer1_13(favoriteChannels.favoriteChannels, callback(found[6]).FavoriteChannelType.REFERENCE_ORIGINAL);
+        let tmp7 = outer1_14(favoriteChannels.favoriteChannels, callback(found[7]).FavoriteChannelType.REFERENCE_ORIGINAL);
         let tmp8 = tmp7;
         if (null != tmp7) {
-          let tmp23 = outer1_14;
-          let tmp24 = outer1_14(tmp7);
+          let tmp23 = outer1_15;
+          let tmp24 = outer1_15(tmp7);
           if (flag) {
             let tmp26 = iter;
             iter.return();
@@ -347,46 +348,46 @@ export const addFavoriteChannels = function addFavoriteChannels(arr, c0, modal) 
             return false;
           }
         } else {
-          let tmp27 = outer1_4;
+          let tmp27 = outer1_5;
           let tmp28 = nextResult;
-          let channel = outer1_4.getChannel(tmp3);
+          let channel = outer1_5.getChannel(tmp3);
           let tmp30 = channel;
-          let FavoriteChannel = tmp5(tmp6[6]).FavoriteChannel;
+          let FavoriteChannel = tmp5(tmp6[7]).FavoriteChannel;
           let obj = { nickname: "", type: null, channelType: null, position: null, parentId: null };
-          obj[1] = tmp5(tmp6[6]).FavoriteChannelType.REFERENCE_ORIGINAL;
+          obj[1] = tmp5(tmp6[7]).FavoriteChannelType.REFERENCE_ORIGINAL;
           obj = undefined;
           if (null != channel) {
-            let UInt32Value = tmp5(tmp6[7]).UInt32Value;
+            let UInt32Value = tmp5(tmp6[8]).UInt32Value;
             obj = { value: null };
             let tmp9 = channel;
             obj[0] = tmp30.type;
             obj = UInt32Value.create(obj);
           }
           obj[2] = obj;
-          let tmp11 = outer1_10;
-          obj[3] = outer1_10(favoriteChannels.favoriteChannels);
+          let tmp11 = outer1_11;
+          obj[3] = outer1_11(favoriteChannels.favoriteChannels);
           let tmp12 = callback;
           if (callback == null) {
-            tmp12 = outer1_7;
+            tmp12 = outer1_8;
           }
           obj[4] = tmp12;
           favoriteChannels.favoriteChannels[tmp3] = FavoriteChannel.create(obj);
-          let tmp13 = outer1_11;
-          let tmp14 = outer1_11(favoriteChannels.favoriteChannels);
-          let tmp15 = outer1_12;
+          let tmp13 = outer1_12;
+          let tmp14 = outer1_12(favoriteChannels.favoriteChannels);
+          let tmp15 = outer1_13;
           let tmp16 = nextResult;
-          let tmp17 = outer1_12(favoriteChannels.favoriteChannels, tmp3);
+          let tmp17 = outer1_13(favoriteChannels.favoriteChannels, tmp3);
           flag = true;
-          let tmp5Result = tmp5(tmp6[13]);
+          let tmp5Result = tmp5(tmp6[14]);
           let tmp18 = str;
-          let tmp19 = outer1_17;
-          let tmp21 = outer1_16;
-          let tmp20 = outer1_17(tmp3, tmp5(tmp6[6]).FavoriteChannelType.REFERENCE_ORIGINAL);
-          let result = tmp5Result.trackFavoritesGuildAddToFavorites(str, tmp20, outer1_16(favoriteChannels.favoriteChannels));
+          let tmp19 = outer1_18;
+          let tmp21 = outer1_17;
+          let tmp20 = outer1_18(tmp3, tmp5(tmp6[7]).FavoriteChannelType.REFERENCE_ORIGINAL);
+          let result = tmp5Result.trackFavoritesGuildAddToFavorites(str, tmp20, outer1_17(favoriteChannels.favoriteChannels));
           continue;
         }
       }
-    }, _require(found[12]).UserSettingsDelay.FREQUENT_USER_ACTION, onSaveFailed);
+    }, _require(found[13]).UserSettingsDelay.FREQUENT_USER_ACTION, onSaveFailed);
   }
 };
 export { removeFavoriteChannel };
@@ -418,28 +419,28 @@ export const addFavoriteCategory = function addFavoriteCategory(first, modal) {
     const PreloadedUserSettingsActionCreators = tmp(1355).PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("favorites", (favoriteChannels) => {
       favoriteChannels = favoriteChannels.favoriteChannels;
-      outer1_11(favoriteChannels);
+      outer1_12(favoriteChannels);
       let obj = callback(12);
-      let tmp6 = outer1_8;
-      if (obj.size(favoriteChannels) < outer1_8) {
-        const favoriteLimit = tmp2(10211).getFavoritesAccess().favoriteLimit;
+      let tmp6 = outer1_9;
+      if (obj.size(favoriteChannels) < outer1_9) {
+        const favoriteLimit = tmp2(10228).getFavoritesAccess().favoriteLimit;
         let tmp7 = null;
         if (favoriteLimit > 0) {
           tmp7 = null;
           if (str(1306).FavoriteChannelType.CATEGORY !== tmp2(1306).FavoriteChannelType.CATEGORY) {
             let tmp5Result = tmp5(12);
             let tmp8 = null;
-            if (tmp5Result.filter(favoriteChannels, (type) => type.type !== callback(table[6]).FavoriteChannelType.CATEGORY).length >= favoriteLimit) {
+            if (tmp5Result.filter(favoriteChannels, (type) => type.type !== callback(table[7]).FavoriteChannelType.CATEGORY).length >= favoriteLimit) {
               tmp8 = favoriteLimit;
             }
             tmp7 = tmp8;
           }
         }
         tmp6 = tmp7;
-        const tmp2Result = tmp2(10211);
+        const tmp2Result = tmp2(10228);
       }
       if (null != tmp6) {
-        tmp5Result = tmp5(4528);
+        tmp5Result = tmp5(4532);
         obj = { title: null, body: null };
         const intl = tmp2(1236).intl;
         obj[0] = intl.string(tmp2(1236).t["+XYXtZ"]);
@@ -475,11 +476,11 @@ export const addFavoriteCategory = function addFavoriteCategory(first, modal) {
           }
         }
         obj1[2] = num + 1;
-        obj1[3] = outer1_7;
+        obj1[3] = outer1_8;
         favoriteChannels.favoriteChannels[dependencyMap] = FavoriteChannel.create(obj1);
         let tmp16 = null;
         if (str(1306).FavoriteChannelType.CATEGORY !== str(1306).FavoriteChannelType.CATEGORY) {
-          const channel = outer1_4.getChannel(tmp22);
+          const channel = outer1_5.getChannel(tmp22);
           let type;
           if (channel != null) {
             type = channel.type;
@@ -490,7 +491,7 @@ export const addFavoriteCategory = function addFavoriteCategory(first, modal) {
           tmp16 = type;
         }
         const _Object = Object;
-        const result = str(10215).trackFavoritesGuildAddToFavorites(str, tmp16, Object.keys(favoriteChannels.favoriteChannels).length);
+        const result = str(10232).trackFavoritesGuildAddToFavorites(str, tmp16, Object.keys(favoriteChannels.favoriteChannels).length);
       }
     }, tmp(1355).UserSettingsDelay.FREQUENT_USER_ACTION, onSaveFailed);
     const obj2 = importDefault(11);
@@ -500,18 +501,18 @@ export const removeFavoriteCategory = function removeFavoriteCategory(closure_0)
   removeFavoriteChannel(closure_0);
 };
 export const setFavoriteCategoryCollapsed = function setFavoriteCategoryCollapsed(id, arg1) {
-  let f84212 = id;
+  let f84368 = id;
   let closure_1 = arg1;
   const favorite = store2.getFavorite(id);
   let tmp2 = null != favorite;
   if (tmp2) {
-    tmp2 = favorite.type === f84212(1306).FavoriteChannelType.CATEGORY;
+    tmp2 = favorite.type === f84368(1306).FavoriteChannelType.CATEGORY;
   }
   if (tmp2) {
-    f84212 = (arg0) => {
+    f84368 = (arg0) => {
       let flag = null != tmp;
       if (flag) {
-        flag = tmp.type === f84212(outer1_2[6]).FavoriteChannelType.CATEGORY;
+        flag = tmp.type === f84368(outer1_2[7]).FavoriteChannelType.CATEGORY;
       }
       if (flag) {
         flag = tmp.collapsed !== tmp2;
@@ -522,16 +523,16 @@ export const setFavoriteCategoryCollapsed = function setFavoriteCategoryCollapse
       }
       return flag;
     };
-    const PreloadedUserSettingsActionCreators = f84212(1355).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = f84368(1355).PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("favorites", (arg0) => {
-      if (!f84213(arg0)) {
+      if (!f84369(arg0)) {
         return false;
       }
-    }, f84212(1355).UserSettingsDelay.FREQUENT_USER_ACTION, onSaveFailed);
+    }, f84368(1355).UserSettingsDelay.FREQUENT_USER_ACTION, onSaveFailed);
   }
 };
 export const setAllFavoriteCategoriesCollapsed = function setAllFavoriteCategoriesCollapsed(arg0) {
-  const f84213 = (favoriteChannels) => {
+  const f84369 = (favoriteChannels) => {
     let flag = false;
     let flag2 = false;
     const keys = Object.keys();
@@ -540,12 +541,12 @@ export const setAllFavoriteCategoriesCollapsed = function setAllFavoriteCategori
       while (keys[tmp] !== undefined) {
         let tmp7 = tmp4;
         let tmp8 = favoriteChannels.favoriteChannels[tmp4];
-        let tmp9 = f84213;
+        let tmp9 = f84369;
         let flag3 = null != tmp8;
         if (flag3) {
-          let tmp5 = f84213;
+          let tmp5 = f84369;
           let tmp6 = outer1_2;
-          flag3 = tmp8.type === f84213(outer1_2[6]).FavoriteChannelType.CATEGORY;
+          flag3 = tmp8.type === f84369(outer1_2[7]).FavoriteChannelType.CATEGORY;
         }
         if (flag3) {
           flag3 = tmp8.collapsed !== tmp9;
@@ -565,12 +566,12 @@ export const setAllFavoriteCategoriesCollapsed = function setAllFavoriteCategori
     }
     return flag2;
   };
-  const PreloadedUserSettingsActionCreators = f84213(1355).PreloadedUserSettingsActionCreators;
+  const PreloadedUserSettingsActionCreators = f84369(1355).PreloadedUserSettingsActionCreators;
   PreloadedUserSettingsActionCreators.updateAsync("favorites", (arg0) => {
-    if (!f84213(arg0)) {
+    if (!f84369(arg0)) {
       return false;
     }
-  }, f84213(1355).UserSettingsDelay.FREQUENT_USER_ACTION, onSaveFailed);
+  }, f84369(1355).UserSettingsDelay.FREQUENT_USER_ACTION, onSaveFailed);
 };
 export const updateFavoriteChannels = function updateFavoriteChannels(arg0) {
   const _require = arg0;
@@ -593,16 +594,16 @@ export const updateFavoriteChannels = function updateFavoriteChannels(arg0) {
           let tmp8 = nextResult;
           let parent_id = tmp3.parent_id;
           if (parent_id == null) {
-            parent_id = outer1_7;
+            parent_id = outer1_8;
           }
           favoriteChannels.favoriteChannels[id].parentId = parent_id;
-          let tmp9 = outer1_12;
+          let tmp9 = outer1_13;
           let tmp10 = id;
-          let tmp11 = outer1_12(favoriteChannels.favoriteChannels, id);
+          let tmp11 = outer1_13(favoriteChannels.favoriteChannels, id);
         }
         continue;
       }
-      const result = dependencyMap(outer1_2[13]).trackFavoritesGuildOrderUpdated();
+      const result = dependencyMap(outer1_2[14]).trackFavoritesGuildOrderUpdated();
     }, _require(1355).UserSettingsDelay.FREQUENT_USER_ACTION, onSaveFailed);
   }
 };
@@ -613,19 +614,19 @@ export const updateFavoriteChannelParent = function updateFavoriteChannelParent(
   PreloadedUserSettingsActionCreators.updateAsync("favorites", (favoriteChannels) => {
     let tmp2 = closure_1;
     if (closure_1 == null) {
-      tmp2 = outer1_7;
+      tmp2 = outer1_8;
     }
     favoriteChannels.favoriteChannels[callback].parentId = tmp2;
     favoriteChannels = favoriteChannels.favoriteChannels;
     if (null != favoriteChannels[callback]) {
-      if (tmp3.parentId !== outer1_7) {
+      if (tmp3.parentId !== outer1_8) {
         let tmp5 = null;
         if (null != tmp3.parentId) {
           tmp5 = favoriteChannels[tmp3.parentId];
         }
         let tmp6 = null != tmp5;
         if (tmp6) {
-          tmp6 = tmp5.type === callback(outer1_2[6]).FavoriteChannelType.CATEGORY;
+          tmp6 = tmp5.type === callback(outer1_2[7]).FavoriteChannelType.CATEGORY;
         }
         if (!tmp6) {
           tmp3.parentId = tmp4;
@@ -647,11 +648,13 @@ export const resetFavoritesGuild = function resetFavoritesGuild() {
     arg0.guildVisible = undefined;
     arg0.muted = false;
   }, require(1355) /* updateUserGuildSettings */.UserSettingsDelay.INFREQUENT_USER_ACTION, onSaveFailed);
-  for (const item10022 of tmp2) {
-    let tmp3 = require;
-    let tmp4 = dependencyMap;
-    let obj = require(1355) /* updateUserGuildSettings */;
-    let result = obj.removeDismissedContent(item10022);
+  const result = require(10233) /* handleDCShownToUser */.resetDismissibleContentFrameworkStore();
+  resetFatigueCooldown();
+  for (const item10028 of tmp4) {
+    let tmp5 = require;
+    let tmp6 = dependencyMap;
+    let obj2 = require(1355) /* updateUserGuildSettings */;
+    let result1 = obj2.removeDismissedContent(item10028);
     continue;
   }
 };
@@ -663,8 +666,8 @@ export const setFavoritesGuildVisibility = function setFavoritesGuildVisibility(
   }
   const PreloadedUserSettingsActionCreators = _require(1355).PreloadedUserSettingsActionCreators;
   PreloadedUserSettingsActionCreators.updateAsync("favorites", (arg0) => {
-    const BoolValue = callback(outer1_2[7]).BoolValue;
+    const BoolValue = callback(outer1_2[8]).BoolValue;
     arg0.guildVisible = BoolValue.create({ value: callback });
-    const result = callback(outer1_2[13]).trackFavoritesGuildVisibilitySettingToggled(str, callback);
+    const result = callback(outer1_2[14]).trackFavoritesGuildVisibilitySettingToggled(str, callback);
   }, _require(1355).UserSettingsDelay.INFREQUENT_USER_ACTION, onSaveFailed);
 };

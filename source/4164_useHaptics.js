@@ -1,62 +1,28 @@
 // Module ID: 4164
 // Function ID: 4165
 // Name: useHaptics
-// Dependencies: [19, 4161, 4165]
-// Exports: useHaptics
+// Dependencies: [4165, 4166, 4168, 4170, 4171, 4169, 4172]
 
 // Module 4164 (useHaptics)
-import { useMemo } from "noop";
+for (const key10016 in require("isRingerSilent")) {
+  let tmp2 = key10016;
+  arg5[key10016] = require("isRingerSilent")[key10016];
+  continue;
+}
 
-
-export const useHaptics = function useHaptics(enableVibrateFallback) {
-  let closure_0 = enableVibrateFallback;
-  let prop;
-  if (enableVibrateFallback != null) {
-    prop = enableVibrateFallback.enableVibrateFallback;
-  }
-  let prop1;
-  if (enableVibrateFallback != null) {
-    prop1 = enableVibrateFallback.ignoreAndroidSystemSettings;
-  }
-  const items = [prop, prop1];
-  return useMemo(() => ({
-    trigger(arg0, arg1) {
-      let obj = outer1_1(outer1_2[1]);
-      obj = {};
-      const merged = Object.assign(closure_0);
-      const merged1 = Object.assign(arg1);
-      obj.trigger(arg0, obj);
-    },
-    triggerPattern(arg0, arg1) {
-      let obj = outer1_1(outer1_2[1]);
-      obj = {};
-      const merged = Object.assign(closure_0);
-      const merged1 = Object.assign(arg1);
-      obj.triggerPattern(arg0, obj);
-    },
-    stop() {
-      callback(4161).stop();
-    },
-    isSupported() {
-      return callback(4161).isSupported();
-    },
-    playHaptic(arg0, arg1, arg2) {
-      let obj = outer1_0(outer1_2[2]);
-      obj = {};
-      const merged = Object.assign(closure_0);
-      const merged1 = Object.assign(arg2);
-      return obj.playHaptic(arg0, arg1, obj);
-    },
-    impact(arg0, arg1, arg2) {
-      let obj = outer1_1(outer1_2[1]);
-      obj = {};
-      const merged = Object.assign(closure_0);
-      const merged1 = Object.assign(arg2);
-      obj.impact(arg0, arg1, obj);
-    },
-    setEnabled: outer1_1(outer1_2[1]).setEnabled,
-    isEnabled: outer1_1(outer1_2[1]).isEnabled,
-    getSystemHapticStatus: outer1_1(outer1_2[1]).getSystemHapticStatus,
-    playAHAP: outer1_1(outer1_2[1]).playAHAP
-  }), items);
-};
+export { default } from "setEnabled";
+export const useHaptics = require("useHaptics").useHaptics;
+export const Patterns = require("Patterns").Patterns;
+export const pattern = require("set").pattern;
+export const PATTERN_CHARS = require("set").PATTERN_CHARS;
+export const playHaptic = require("_playHaptic").playHaptic;
+export const TouchableHaptic = require("TouchableHaptic").TouchableHaptic;
+export const trigger = require("setEnabled").trigger;
+export const stop = require("setEnabled").stop;
+export const isSupported = require("setEnabled").isSupported;
+export const triggerPattern = require("setEnabled").triggerPattern;
+export const getSystemHapticStatus = require("setEnabled").getSystemHapticStatus;
+export const setEnabled = require("setEnabled").setEnabled;
+export const isEnabled = require("setEnabled").isEnabled;
+export const impact = require("setEnabled").impact;
+export const playAHAP = require("setEnabled").playAHAP;

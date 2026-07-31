@@ -1,10 +1,10 @@
-// Module ID: 3841
-// Function ID: 3842
+// Module ID: 3845
+// Function ID: 3846
 // Name: reset
-// Dependencies: [3836, 3842, 1218, 676, 589, 709, 2]
+// Dependencies: [3840, 3846, 1218, 676, 589, 709, 2]
 // Exports: getSubscriptionOfType
 
-// Module 3841 (reset)
+// Module 3845 (reset)
 import { isNoneSubscription } from "createFromServer";
 import { SubscriptionRecord } from "createSubscriptionItemFromServer";
 import fetchFingerprint from "fetchFingerprint";

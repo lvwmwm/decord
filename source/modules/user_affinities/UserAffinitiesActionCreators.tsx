@@ -1,10 +1,10 @@
-// Module ID: 8812
-// Function ID: 8813
+// Module ID: 8825
+// Function ID: 8826
 // Name: fetchUserAffinitiesV2
-// Dependencies: [5643, 5943, 676, 709, 530, 2]
+// Dependencies: [5647, 5949, 676, 709, 530, 2]
 // Exports: fetchUserAffinitiesV2
 
-// Module 8812 (fetchUserAffinitiesV2)
+// Module 8825 (fetchUserAffinitiesV2)
 import hasConsented from "hasConsented";
 import recomputeAffinities from "recomputeAffinities";
 import ME from "ME";

@@ -1,9 +1,9 @@
-// Module ID: 4174
-// Function ID: 4175
+// Module ID: 4178
+// Function ID: 4179
 // Name: updateInvite
-// Dependencies: [676, 4175, 589, 709, 2]
+// Dependencies: [676, 4179, 589, 709, 2]
 
-// Module 4174 (updateInvite)
+// Module 4178 (updateInvite)
 import { InviteStates } from "ME";
 import { Store } from "initialize";
 
@@ -12,7 +12,7 @@ function updateInvite(code, arg1) {
   if (code == null) {
     str = "";
   }
-  let obj = require(4175) /* readSnowflake */;
+  let obj = require(4179) /* readSnowflake */;
   const result = obj.parseExtraDataFromInviteKey(str);
   const value = map.get(str);
   if (null != value) {
@@ -76,7 +76,7 @@ InviteStore.displayName = "InviteStore";
 const inviteStore = new InviteStore(require("dispatcher"), {
   INVITE_RESOLVE: function handleInviteResolve(code) {
     code = code.code;
-    let obj = require(4175) /* readSnowflake */;
+    let obj = require(4179) /* readSnowflake */;
     const result = obj.parseExtraDataFromInviteKey(code);
     map = new Map(map);
     obj = { code: result.baseCode, state: InviteStates.RESOLVING };

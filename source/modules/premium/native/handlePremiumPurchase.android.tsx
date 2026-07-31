@@ -1,10 +1,10 @@
-// Module ID: 6248
-// Function ID: 6249
+// Module ID: 6254
+// Function ID: 6255
 // Name: validatePurchase
-// Dependencies: [109, 5, 19, 6249, 1218, 3841, 5672, 676, 505, 530, 6250, 4088, 6251, 1236, 3857, 4528, 5675, 589, 6239, 6255, 6258, 6292, 6293, 6295, 5670, 3850, 6297, 698, 2]
+// Dependencies: [109, 5, 19, 6255, 1218, 3845, 5676, 676, 505, 530, 6256, 4092, 6257, 1236, 3861, 4532, 5679, 589, 6245, 6261, 6264, 6298, 6299, 6301, 5674, 3854, 6303, 698, 2]
 // Exports: useHandlePremiumPurchase
 
-// Module 6248 (validatePurchase)
+// Module 6254 (validatePurchase)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import reset from "reset";
 import set from "set";
@@ -116,7 +116,7 @@ function _validatePurchase() {
           } else if (2 === tmp8) {
             c4 = 0;
             c6 = c3;
-            const tmp18 = new lib(6250)(c6);
+            const tmp18 = new lib(6256)(c6);
             throw tmp18;
           } else if (arg0 === 1) {
             c6 = 3;

@@ -1,9 +1,9 @@
-// Module ID: 15890
-// Function ID: 15891
+// Module ID: 15918
+// Function ID: 15919
 // Name: getSectionLabel
-// Dependencies: [19, 17, 1874, 15885, 21, 4189, 712, 4642, 1236, 9423, 589, 3835, 6206, 9379, 15891, 4606, 12, 5566, 1297, 15897, 9621, 4153, 9378, 7675, 4185, 2]
+// Dependencies: [19, 17, 1874, 15913, 21, 4193, 712, 4646, 1236, 9438, 589, 3839, 6212, 9394, 15919, 4610, 12, 5570, 1297, 15925, 9636, 4157, 9393, 7683, 4189, 2]
 
-// Module 15890 (getSectionLabel)
+// Module 15918 (getSectionLabel)
 import importAllResult from "registerAsset";
 import { View } from "GuildIconSizes";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -20,18 +20,18 @@ let metroImportAll;
 const require = arg1;
 function getSectionLabel(category) {
   const type = category.category.categoryInfo.type;
-  if (require(4642) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.GUILD === type) {
+  if (require(4646) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.GUILD === type) {
     return category.category.categoryInfo.guild.name;
-  } else if (tmp(4642).SoundboardSoundGridSectionType.DEFAULTS === type) {
+  } else if (tmp(4646).SoundboardSoundGridSectionType.DEFAULTS === type) {
     const intl3 = tmp(1236).intl;
     return intl3.string(tmp(1236).t.Rtvk9X);
-  } else if (tmp(4642).SoundboardSoundGridSectionType.FAVORITES === type) {
+  } else if (tmp(4646).SoundboardSoundGridSectionType.FAVORITES === type) {
     const intl2 = tmp(1236).intl;
     return intl2.string(tmp(1236).t.y3LQCG);
-  } else if (tmp(4642).SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
+  } else if (tmp(4646).SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
     const intl = tmp(1236).intl;
     return intl.string(tmp(1236).t["+cGVV6"]);
-  } else if (tmp(4642).SoundboardSoundGridSectionType.SEARCH === type) {
+  } else if (tmp(4646).SoundboardSoundGridSectionType.SEARCH === type) {
     return null;
   }
 }
@@ -50,15 +50,15 @@ function SoundPickerButtonRow(section) {
   } else {
     let result = !stateFromStores;
     if (!stateFromStores) {
-      result = tmp2(6206).isSoundboardSectionNitroLocked(channel.guild_id, section.category.categoryInfo);
-      const tmp2Result = tmp2(6206);
+      result = tmp2(6212).isSoundboardSectionNitroLocked(channel.guild_id, section.category.categoryInfo);
+      const tmp2Result = tmp2(6212);
     }
     c3 = result;
     obj = { style: null, children: null };
     const items1 = [tmp.row];
     obj[0] = items1;
     if (result) {
-      result = callback(tmp2(9379).PremiumUpsellGradientBackground, {});
+      result = callback(tmp2(9394).PremiumUpsellGradientBackground, {});
     }
     const items2 = [
       result,
@@ -162,7 +162,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
     START = END;
   }
   mergeGuildAvatar = callback2();
-  let obj = channel(4606);
+  let obj = channel(4610);
   const fontScale = obj.useFontScale();
   let tmp3 = (function getFastListSectionsFromCategories(categories, c6, fontScale) {
     const items = [];
@@ -171,7 +171,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
     while (iter !== undefined) {
       let tmp2 = callback;
       let tmp3 = dependencyMap;
-      let arr2 = callback(9423)(nextResult.items, c6);
+      let arr2 = callback(9438)(nextResult.items, c6);
       let tmp4 = closure_9;
       let obj = { category: null, height: null, soundsByRow: null };
       obj[0] = nextResult;
@@ -264,7 +264,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
   });
   let obj3 = channel(12);
   const items2 = [mergeGuildAvatar];
-  callback2 = channel(589).useStateFromStores(items2, () => callback(3835).canUseSoundboardEverywhere(currentUser.getCurrentUser()));
+  callback2 = channel(589).useStateFromStores(items2, () => callback(3839).canUseSoundboardEverywhere(currentUser.getCurrentUser()));
   obj = {
     onLayout(nativeEvent) {
       return callback4(0, nativeEvent.nativeEvent.layout.height);
@@ -372,7 +372,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
     optimizeListItemRender: true,
     inActionSheet: true
   };
-  return callback(importDefault(7675), obj);
+  return callback(importDefault(7683), obj);
 });
 let result = require("mergeGuildAvatar").fileFinishedImporting("modules/soundboard/native/SoundboardSoundPickerList.tsx");
 

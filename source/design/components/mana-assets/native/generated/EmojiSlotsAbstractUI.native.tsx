@@ -1,10 +1,10 @@
-// Module ID: 7007
-// Function ID: 7008
+// Module ID: 7015
+// Function ID: 7016
 // Name: EmojiSlotsAbstractUI
-// Dependencies: [21, 5141, 7008, 2]
+// Dependencies: [21, 5145, 7016, 2]
 // Exports: EmojiSlotsAbstractUI
 
-// Module 7007 (EmojiSlotsAbstractUI)
+// Module 7015 (EmojiSlotsAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/EmojiSlotsAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const EmojiSlotsAbstractUI = function EmojiSlotsAbstractUI(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7008);
+  obj[0] = importDefault(7016);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const EmojiSlotsAbstractUI = function EmojiSlotsAbstractUI(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
 };

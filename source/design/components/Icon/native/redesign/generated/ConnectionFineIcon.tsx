@@ -1,10 +1,10 @@
-// Module ID: 15263
-// Function ID: 15264
+// Module ID: 15291
+// Function ID: 15292
 // Name: ConnectionFineIcon
-// Dependencies: [19, 21, 712, 3892, 15264, 2]
+// Dependencies: [19, 21, 712, 3896, 15292, 2]
 // Exports: ConnectionFineIcon
 
-// Module 15263 (ConnectionFineIcon)
+// Module 15291 (ConnectionFineIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ConnectionFineIcon = function ConnectionFineIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(15264) /* registerAsset */;
+  obj[0] = require(15292) /* registerAsset */;
   obj[1] = ICON_FEEDBACK_POSITIVE;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3892) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3896) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

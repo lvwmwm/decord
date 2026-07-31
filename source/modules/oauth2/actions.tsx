@@ -1,10 +1,10 @@
-// Module ID: 8952
-// Function ID: 8953
+// Module ID: 8965
+// Function ID: 8966
 // Name: getLocationContextServer
-// Dependencies: [5, 1372, 1931, 676, 530, 5641, 507, 2]
+// Dependencies: [5, 1372, 1931, 676, 530, 5645, 507, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 8952 (getLocationContextServer)
+// Module 8965 (getLocationContextServer)
 import handleLogout from "handleLogout";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -765,7 +765,7 @@ export const fetchChannels = function fetchChannels(closure_0) {
   return applyArgumentsResult;
 };
 export const logoutWithRedirect = function logoutWithRedirect(pathname, login_required_account_manager) {
-  const obj = importDefault(5641);
+  const obj = importDefault(5645);
   obj.logout(login_required_account_manager, require(507) /* getAuthenticationPath */.getLoginPath(pathname.pathname + pathname.search, false));
 };
 export const verifyUserCode = function verifyUserCode(outer1_0) {

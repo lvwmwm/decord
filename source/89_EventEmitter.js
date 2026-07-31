@@ -21,7 +21,7 @@ const items = [
   {
     key: "addListener",
     value: function addListener(arg0, arg1, arg2) {
-      if (typeof arg1 === "ZodObject") {
+      if (typeof arg1 === "disabledUntil") {
         const _TypeError = TypeError;
         const typeError = new TypeError("EventEmitter.addListener(...): 2nd argument must be a function.");
         throw typeError;

@@ -1,10 +1,10 @@
-// Module ID: 11294
-// Function ID: 11295
+// Module ID: 11312
+// Function ID: 11313
 // Name: getCollectionItemAssetUrl
 // Dependencies: [676, 1450, 1416, 2]
 // Exports: getCollectionItemAssetUrl
 
-// Module 11294 (getCollectionItemAssetUrl)
+// Module 11312 (getCollectionItemAssetUrl)
 import { Endpoints } from "ME";
 
 let c3;
@@ -20,10 +20,10 @@ export const getCollectionItemAssetUrl = function getCollectionItemAssetUrl(arg0
   if (containerWidth === undefined) {
     containerWidth = 1024;
   }
-  let obj = require(1450) /* isAttachmentLadderEnabled */;
-  let str = obj.getBestMediaProxySize(containerWidth * require(1450) /* isAttachmentLadderEnabled */.getDevicePixelRatio());
+  let obj = require(1450) /* handleImageLoad */;
+  let str = obj.getBestMediaProxySize(containerWidth * require(1450) /* handleImageLoad */.getDevicePixelRatio());
   obj = { size: str.toString() };
-  const obj2 = require(1450) /* isAttachmentLadderEnabled */;
+  const obj2 = require(1450) /* handleImageLoad */;
   str = new URLSearchParams(obj).toString();
   let str3 = "png";
   if (require(1416) /* getAvatarURL */.SUPPORTS_WEBP) {

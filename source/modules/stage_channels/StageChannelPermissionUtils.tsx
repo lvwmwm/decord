@@ -1,10 +1,10 @@
-// Module ID: 5005
-// Function ID: 5006
+// Module ID: 5009
+// Function ID: 5010
 // Name: createModeratorOverwrite
-// Dependencies: [3818, 1415, 1218, 1372, 1862, 3817, 1377, 676, 506, 3822, 1380, 589, 2]
+// Dependencies: [3822, 1415, 1218, 1372, 1862, 3821, 1377, 676, 506, 3826, 1380, 589, 2]
 // Exports: canLurkerListen, createModeratorOverwrite, createOrUpdateModeratorOverwrite, isEmptyOverwrite, removeModeratorOverwrite, useCanCreateStageChannelByGuild, useCanModerateRequestToSpeak, useCanUpdateStageChannelModerators
 
-// Module 5005 (createModeratorOverwrite)
+// Module 5009 (createModeratorOverwrite)
 import initialize from "initialize";
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import fetchFingerprint from "fetchFingerprint";
@@ -31,7 +31,7 @@ export const createModeratorOverwrite = function createModeratorOverwrite(id, ME
     deny = tmp.deny;
   }
   if (deny == null) {
-    deny = tmp2(3822).NONE;
+    deny = tmp2(3826).NONE;
   }
   obj[2] = importAll(506).remove(deny, require(1380) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
   const obj2 = importAll(506);
@@ -40,7 +40,7 @@ export const createModeratorOverwrite = function createModeratorOverwrite(id, ME
     allow = tmp.allow;
   }
   if (allow == null) {
-    allow = tmp2(3822).NONE;
+    allow = tmp2(3826).NONE;
   }
   obj[3] = importAll(506).combine(require(1380) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS, allow);
   return obj;
@@ -52,7 +52,7 @@ export const createOrUpdateModeratorOverwrite = function createOrUpdateModerator
     deny = deny.deny;
   }
   if (deny == null) {
-    deny = tmp(3822).NONE;
+    deny = tmp(3826).NONE;
   }
   obj[2] = importAll(506).remove(deny, require(1380) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
   const obj2 = importAll(506);
@@ -61,7 +61,7 @@ export const createOrUpdateModeratorOverwrite = function createOrUpdateModerator
     allow = deny.allow;
   }
   if (allow == null) {
-    allow = tmp(3822).NONE;
+    allow = tmp(3826).NONE;
   }
   obj[3] = importAll(506).combine(require(1380) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS, allow);
   return obj;
@@ -77,7 +77,7 @@ export const removeModeratorOverwrite = function removeModeratorOverwrite(id, ME
     deny = tmp.deny;
   }
   if (deny == null) {
-    deny = importAll(3822).NONE;
+    deny = importAll(3826).NONE;
   }
   obj[2] = deny;
   let allow;
@@ -85,7 +85,7 @@ export const removeModeratorOverwrite = function removeModeratorOverwrite(id, ME
     allow = tmp.allow;
   }
   if (allow == null) {
-    allow = importAll(3822).NONE;
+    allow = importAll(3826).NONE;
   }
   obj[3] = importAll(506).remove(allow, require(1380) /* Permissions */.MODERATE_STAGE_CHANNEL_PERMISSIONS);
   return obj;
@@ -94,9 +94,9 @@ export const isEmptyOverwrite = function isEmptyOverwrite(c2) {
   let allow;
   let deny;
   ({ allow, deny } = c2);
-  let equalsResult = importAll(506).equals(allow, importAll(3822).NONE);
+  let equalsResult = importAll(506).equals(allow, importAll(3826).NONE);
   if (equalsResult) {
-    equalsResult = tmp(506).equals(deny, tmp(3822).NONE);
+    equalsResult = tmp(506).equals(deny, tmp(3826).NONE);
     const tmpResult = tmp(506);
   }
   return equalsResult;

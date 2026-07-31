@@ -1,10 +1,10 @@
-// Module ID: 16709
-// Function ID: 16710
+// Module ID: 16738
+// Function ID: 16739
 // Name: UpdateAppScreen
-// Dependencies: [17, 21, 4189, 712, 4185, 1236, 2485, 4600, 2]
+// Dependencies: [17, 21, 4193, 712, 4189, 1236, 2487, 4604, 2]
 // Exports: default
 
-// Module 16709 (UpdateAppScreen)
+// Module 16738 (UpdateAppScreen)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -28,12 +28,12 @@ export default function UpdateAppScreen() {
   let obj = { style: tmp.container, children: null };
   obj = { variant: "heading-lg/semibold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
-  obj[1] = intl.string(importDefault(2485).yxqMCD);
-  const items = [callback(require(4185) /* Text */.Text, obj), , ];
+  obj[1] = intl.string(importDefault(2487).yxqMCD);
+  const items = [callback(require(4189) /* Text */.Text, obj), , ];
   obj = { variant: "text-md/normal", color: "text-muted", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl2.string(importDefault(2485).VBZJJg);
-  items[1] = callback(require(4185) /* Text */.Text, obj);
+  obj[2] = intl2.string(importDefault(2487).VBZJJg);
+  items[1] = callback(require(4189) /* Text */.Text, obj);
   const obj1 = { style: tmp.buttonContainer, children: null };
   const obj2 = {
     onPress() {
@@ -45,8 +45,8 @@ export default function UpdateAppScreen() {
     size: "md"
   };
   const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj2[1] = intl3.string(importDefault(2485).o4D6fm);
-  obj1[1] = callback(require(4600) /* Button */.Button, obj2);
+  obj2[1] = intl3.string(importDefault(2487).o4D6fm);
+  obj1[1] = callback(require(4604) /* Button */.Button, obj2);
   items[2] = callback(closure_4, obj1);
   obj[1] = items;
   return callback2(closure_4, obj);

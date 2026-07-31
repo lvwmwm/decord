@@ -1,10 +1,10 @@
-// Module ID: 5997
-// Function ID: 5998
+// Module ID: 6003
+// Function ID: 6004
 // Name: questCtaConfigFromServer
 // Dependencies: [2]
 // Exports: questCtaConfigFromServer
 
-// Module 5997 (questCtaConfigFromServer)
+// Module 6003 (questCtaConfigFromServer)
 const result = require("set").fileFinishedImporting("modules/quests/types/v2/CTA.tsx");
 
 export const questCtaConfigFromServer = function questCtaConfigFromServer(cta_config) {

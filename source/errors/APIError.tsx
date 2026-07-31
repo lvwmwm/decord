@@ -1,9 +1,9 @@
-// Module ID: 4089
-// Function ID: 4090
+// Module ID: 4093
+// Function ID: 4094
 // Name: prototype
 // Dependencies: [676, 530, 1236, 2]
 
-// Module 4089 (prototype)
+// Module 4093 (prototype)
 import { Links } from "ME";
 import { V8APIError } from "sendRequest";
 

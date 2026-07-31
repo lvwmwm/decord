@@ -1,9 +1,9 @@
-// Module ID: 8030
-// Function ID: 8031
+// Module ID: 8037
+// Function ID: 8038
 // Name: frozen
-// Dependencies: [1883, 6260, 3836, 1876, 3771, 1384, 2]
+// Dependencies: [1883, 6266, 3840, 1876, 3775, 1384, 2]
 
-// Module 8030 (frozen)
+// Module 8037 (frozen)
 import "toJS";
 import createFromServer from "createFromServer";
 import closure_4 from "createFromServer";
@@ -38,7 +38,7 @@ GiftCodeRecord["createFromServer"] = function createFromServer(user) {
   }
   let tmp4 = null;
   if (null != user.expires_at) {
-    tmp4 = importDefault(3771)(user.expires_at);
+    tmp4 = importDefault(3775)(user.expires_at);
   }
   const redeemed = user.redeemed;
   if (null != user.subscription_plan) {
@@ -73,7 +73,7 @@ GiftCodeRecord["createFromServer"] = function createFromServer(user) {
     fromServer1 = createFromServer.createFromServer(user.promotion);
     const tmp11 = createFromServer;
   }
-  if (typeof GiftCodeRecord !== "find") {
+  if (typeof GiftCodeRecord !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const tmp13 = new GiftCodeRecord("Trying to call a non-function", tmp11, promotion, GiftCodeRecord, new.target, id, code, sku_id, application_id, uses, max_uses, tmp4, redeemed, id1, subscription_plan_id, fromServer, entitlement_branches, num);
@@ -101,8 +101,8 @@ prototype["isExpired"] = function isExpired() {
   const expiresAt = this.expiresAt;
   let isAfterResult = null != expiresAt;
   if (isAfterResult) {
-    isAfterResult = importDefault(3771)().isAfter(expiresAt);
-    const obj = importDefault(3771)();
+    isAfterResult = importDefault(3775)().isAfter(expiresAt);
+    const obj = importDefault(3775)();
   }
   return isAfterResult;
 };

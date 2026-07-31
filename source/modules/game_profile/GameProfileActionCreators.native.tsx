@@ -1,8 +1,8 @@
-// Module ID: 8477
-// Function ID: 8478
-// Dependencies: [38, 4157, 8478, 1959, 709, 2]
+// Module ID: 8490
+// Function ID: 8491
+// Dependencies: [38, 4161, 8491, 1959, 709, 2]
 
-// Module 8477
+// Module 8490
 const result = require("GetButton").fileFinishedImporting("modules/game_profile/GameProfileActionCreators.native.tsx");
 
 export default {
@@ -16,9 +16,9 @@ export default {
     ({ source, sourceUserId, stackingBehavior } = arg0);
     importDefault(38)(gameProfileModalChecks.shouldOpenGameProfile, "Passed a false value for [gameProfileModalChecks]. Are you using the useShouldOpenGameProfile hook correctly?");
     importDefault(38)(gameProfileModalChecks.gameId === gameId, "Passed an unexpected [gameId]. Are you passing a different one than you passed to useShouldOpenGameProfileModal?");
-    let obj = importDefault(4157);
+    let obj = importDefault(4161);
     obj = { gameId, source, sourceUserId };
-    obj.openLazy(require(1959) /* asyncRequireImpl */(8478, dependencyMap.paths), "game-profile-" + gameId, obj, stackingBehavior);
+    obj.openLazy(require(1959) /* asyncRequireImpl */(8491, dependencyMap.paths), "game-profile-" + gameId, obj, stackingBehavior);
   },
   returnToGameProfile(gameId) {
     let initialScrollOffset;
@@ -27,8 +27,8 @@ export default {
     ({ source, initialScrollOffset } = gameId);
     importDefault(709).dispatch({ type: "GAME_PROFILE_CLEAR_PENDING_RETURN", gameId });
     const obj = importDefault(709);
-    const obj2 = importDefault(4157);
-    obj2.openLazy(require(1959) /* asyncRequireImpl */(8478, dependencyMap.paths), "game-profile-" + gameId, { gameId, source, initialScrollOffset });
+    const obj2 = importDefault(4161);
+    obj2.openLazy(require(1959) /* asyncRequireImpl */(8491, dependencyMap.paths), "game-profile-" + gameId, { gameId, source, initialScrollOffset });
   },
   setGameProfilePendingReturn(arg0) {
     let channelId;

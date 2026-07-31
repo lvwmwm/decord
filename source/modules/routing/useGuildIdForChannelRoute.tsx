@@ -1,10 +1,10 @@
-// Module ID: 4198
-// Function ID: 4199
+// Module ID: 4202
+// Function ID: 4203
 // Name: useGuildIdForChannelRoute
-// Dependencies: [1375, 4006, 676, 589, 1865, 2]
+// Dependencies: [1375, 4010, 676, 589, 1865, 2]
 // Exports: default, getGuildIdForGenericRedirect
 
-// Module 4198 (useGuildIdForChannelRoute)
+// Module 4202 (useGuildIdForChannelRoute)
 import initializeFromUserSettings from "initializeFromUserSettings";
 import handleConnectionOpen from "handleConnectionOpen";
 import { FAVORITES } from "ME";

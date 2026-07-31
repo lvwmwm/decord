@@ -1,10 +1,10 @@
-// Module ID: 15610
-// Function ID: 15611
+// Module ID: 15638
+// Function ID: 15639
 // Name: isYouNavFloating
 // Dependencies: [1452, 2]
 // Exports: isYouNavFloating
 
-// Module 15610 (isYouNavFloating)
+// Module 15638 (isYouNavFloating)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

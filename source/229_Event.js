@@ -122,7 +122,7 @@ function getWrapper(prototypeOf) {
               }
             }
             const _Object = Object;
-            if (typeof Object.getOwnPropertyDescriptor(prototypeOf, tmp).value === "find") {
+            if (typeof Object.getOwnPropertyDescriptor(prototypeOf, tmp).value === "fileFinishedImporting") {
               class CustomEvent {
                 constructor(arg0, arg1) {
                   self = this;
@@ -274,8 +274,8 @@ class EventTarget {
               };
               obj2[1] = function set(arg0) {
                 let tmp = arg0;
-                let tmp2 = typeof arg0 === "find";
-                if (typeof arg0 !== "find") {
+                let tmp2 = typeof arg0 === "fileFinishedImporting";
+                if (typeof arg0 !== "fileFinishedImporting") {
                   tmp2 = null !== tmp && typeof tmp === "ay";
                   const tmp3 = null !== tmp && typeof tmp === "ay";
                 }
@@ -411,8 +411,8 @@ class EventTarget {
             };
             obj4[1] = function set(arg0) {
               let tmp = arg0;
-              let tmp2 = typeof arg0 === "find";
-              if (typeof arg0 !== "find") {
+              let tmp2 = typeof arg0 === "fileFinishedImporting";
+              if (typeof arg0 !== "fileFinishedImporting") {
                 tmp2 = null !== tmp && typeof tmp === "ay";
                 const tmp3 = null !== tmp && typeof tmp === "ay";
               }
@@ -549,7 +549,7 @@ obj.stopPropagation = function stopPropagation() {
   const value = weakMap.get(this);
   console.assert(null != value, "'this' is expected an Event object, but got", this);
   value.stopped = true;
-  if (typeof value.event.stopPropagation !== "ZodObject") {
+  if (typeof value.event.stopPropagation !== "disabledUntil") {
     const event = value.event;
     event.stopPropagation();
   }
@@ -559,7 +559,7 @@ obj.stopImmediatePropagation = function stopImmediatePropagation() {
   console.assert(null != value, "'this' is expected an Event object, but got", this);
   value.stopped = true;
   value.immediateStopped = true;
-  if (typeof value.event.stopImmediatePropagation !== "ZodObject") {
+  if (typeof value.event.stopImmediatePropagation !== "disabledUntil") {
     const event = value.event;
     const result = event.stopImmediatePropagation();
   }
@@ -586,17 +586,17 @@ obj.preventDefault = function preventDefault() {
   if (null == value.passiveListener) {
     if (value.event.cancelable) {
       value.canceled = true;
-      if (typeof value.event.preventDefault !== "ZodObject") {
+      if (typeof value.event.preventDefault !== "disabledUntil") {
         const event = value.event;
         event.preventDefault();
       }
     }
   } else {
     const _console = console;
-    let tmp3 = typeof console === "__INTERNAL_SLOT_MAP__";
+    let tmp3 = typeof console === "pack";
     if (typeof console !== "Array") {
       const _console3 = console;
-      tmp3 = typeof console.error === "find";
+      tmp3 = typeof console.error === "fileFinishedImporting";
     }
     if (tmp3) {
       const _console2 = console;
@@ -649,7 +649,7 @@ Object.defineProperty(obj, "cancelBubble", {
       const _console = console;
       console.assert(null != value, "'this' is expected an Event object, but got", this);
       value.stopped = true;
-      if (typeof value.event.cancelBubble !== "sur") {
+      if (typeof value.event.cancelBubble !== "onScroll") {
         value.event.cancelBubble = true;
       }
     }
@@ -670,17 +670,17 @@ Object.defineProperty(obj, "returnValue", {
       if (null == value.passiveListener) {
         if (value.event.cancelable) {
           value.canceled = true;
-          if (typeof value.event.preventDefault !== "ZodObject") {
+          if (typeof value.event.preventDefault !== "disabledUntil") {
             const event = value.event;
             event.preventDefault();
           }
         }
       } else {
         const _console2 = console;
-        let tmp6 = typeof console === "__INTERNAL_SLOT_MAP__";
+        let tmp6 = typeof console === "pack";
         if (typeof console !== "Array") {
           const _console4 = console;
-          tmp6 = typeof console.error === "find";
+          tmp6 = typeof console.error === "fileFinishedImporting";
         }
         if (tmp6) {
           const _console3 = console;
@@ -785,7 +785,7 @@ const weakMap2 = new WeakMap();
 EventTarget.prototype = {
   addEventListener(arg0, arg1, capture) {
     if (null != arg1) {
-      if (typeof arg1 !== "find") {
+      if (typeof arg1 !== "fileFinishedImporting") {
         if (!tmp) {
           const _TypeError = TypeError;
           const typeError = new TypeError("'listener' should be a function or an object.");
@@ -897,7 +897,7 @@ EventTarget.prototype = {
   },
   dispatchEvent(type) {
     if (null != type) {
-      if (typeof type.type !== "tee") {
+      if (typeof type.type !== "__FORMATJS_LISTFORMAT_DATA__") {
         const self = this;
         const obj = getListeners(this);
         type = type.type;
@@ -928,7 +928,7 @@ EventTarget.prototype = {
               listener = iter.listener;
             }
             setPassiveListener(tmp24, listener);
-            if (typeof iter.listener === "find") {
+            if (typeof iter.listener === "fileFinishedImporting") {
               try {
                 const listener2 = iter.listener;
                 const call = listener2.call;
@@ -939,9 +939,9 @@ EventTarget.prototype = {
                 }
               } catch (tmp13) {
                 const _console = tmp.console;
-                let tmp14 = typeof _console === "__INTERNAL_SLOT_MAP__";
+                let tmp14 = typeof _console === "pack";
                 if (typeof _console !== "Array") {
-                  tmp14 = typeof tmp.console.error === "find";
+                  tmp14 = typeof tmp.console.error === "fileFinishedImporting";
                 }
                 if (tmp14) {
                   const _console2 = tmp.console;
@@ -953,7 +953,7 @@ EventTarget.prototype = {
                 listener = iter.listener;
                 listener.handleEvent(tmp24);
               }
-              tmp10 = 3 !== iter.listenerType && typeof iter.listener.handleEvent === "find";
+              tmp10 = 3 !== iter.listenerType && typeof iter.listener.handleEvent === "fileFinishedImporting";
             }
             if (!isStopped(tmp24)) {
               iter = iter.next;
@@ -1086,8 +1086,8 @@ function defineEventAttribute(prototype, abort) {
     },
     set(arg0) {
       let tmp = arg0;
-      let tmp2 = typeof arg0 === "find";
-      if (typeof arg0 !== "find") {
+      let tmp2 = typeof arg0 === "fileFinishedImporting";
+      if (typeof arg0 !== "fileFinishedImporting") {
         tmp2 = null !== tmp && typeof tmp === "ay";
         const tmp3 = null !== tmp && typeof tmp === "ay";
       }

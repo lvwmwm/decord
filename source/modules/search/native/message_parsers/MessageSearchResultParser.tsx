@@ -1,10 +1,11 @@
-// Module ID: 15539
-// Function ID: 15540
+// Module ID: 15567
+// Function ID: 15568
 // Name: prototype
-// Dependencies: [3827, 15540, 10099, 15541, 12, 2]
+// Dependencies: [3831, 9108, 15568, 10116, 15569, 12, 2]
 
-// Module 15539 (prototype)
+// Module 15567 (prototype)
 import hasFlag from "hasFlag";
+import { EMBED_TYPES_WITHOUT_DESCRIPTION as closure_3 } from "MessageEmbedTypes";
 
 let require = arg1;
 require("CachedSearchResultParser").CachedSearchResultParser;
@@ -23,9 +24,9 @@ const prototype = function SearchResultMessageParser(searchQueryString, lineClam
     } else {
       const str4 = content.replace(/(\r\n|\n|\r)/gm, " ");
       const _Set = Set;
-      set = new Set(set(table[3]).analyze(tokenizedQueryContent));
+      set = new Set(set(table[4]).analyze(tokenizedQueryContent));
       const parts = str4.split(/(\W+)/g);
-      const found = parts.find((arg0) => set(outer1_1[3]).shouldHighlight(arg0, set));
+      const found = parts.find((arg0) => set(outer1_1[4]).shouldHighlight(arg0, set));
       if (null == found) {
         return null;
       } else {
@@ -45,46 +46,73 @@ const prototype = function SearchResultMessageParser(searchQueryString, lineClam
           return "" + str2 + str4.substring(bound);
         }
       }
-      const obj = set(table[3]);
+      const obj = set(table[4]);
     }
   };
   tmp4.getSearchResults = function getSearchResults(content) {
+    let obj = tmp4;
     if (null != tmp4.tokenizedQueryContent) {
       if ("" !== obj.tokenizedQueryContent) {
         let truncateMessageResult = obj.truncateMessage(content.content, obj.tokenizedQueryContent, obj.lineClamp);
         if (null != truncateMessageResult) {
-          const tmp14 = new outer1_2(content);
-          tmp14.content = truncateMessageResult;
-          return tmp14;
+          const tmp18 = new outer1_2(content);
+          tmp18.content = truncateMessageResult;
+          return tmp18;
         } else {
-          const obj2 = tmp4(outer1_1[4]);
-          const mapped = tmp4(outer1_1[4]).chain(content.embeds).map((rawTitle) => {
-            let truncateMessageResult = closure_0.truncateMessage(rawTitle.rawTitle, closure_0.tokenizedQueryContent, closure_0.lineClamp);
-            if (truncateMessageResult == null) {
-              truncateMessageResult = obj.truncateMessage(rawTitle.rawDescription, obj.tokenizedQueryContent, obj.lineClamp);
+          const obj5 = tmp4(outer1_1[5]);
+          const mapped = tmp4(outer1_1[5]).chain(content.embeds).map((rawTitle) => {
+            let obj = closure_0;
+            const truncateMessageResult = closure_0.truncateMessage(rawTitle.rawTitle, closure_0.tokenizedQueryContent, closure_0.lineClamp);
+            if (null != truncateMessageResult) {
+              obj = { truncated: null, index: null, contentType: "title" };
+              obj[0] = truncateMessageResult;
+              obj[1] = arg1;
+            } else {
+              let rawDescription;
+              if (!outer1_3.has(rawTitle.type)) {
+                rawDescription = rawTitle.rawDescription;
+              }
+              const truncateMessageResult1 = obj.truncateMessage(rawDescription, obj.tokenizedQueryContent, obj.lineClamp);
+              obj = { truncated: null, index: null, contentType: "description" };
+              obj[0] = truncateMessageResult1;
+              obj[1] = arg1;
             }
-            return truncateMessageResult;
+            return obj;
           });
-          const chainResult = tmp4(outer1_1[4]).chain(content.embeds);
-          const valueResult = mapped.find((arg0) => null != arg0).value();
+          const chainResult = tmp4(outer1_1[5]).chain(content.embeds);
+          const valueResult = mapped.find((truncated) => null != truncated.truncated).value();
           if (null != valueResult) {
-            const tmp8 = new outer1_2(content);
-            tmp8.content = valueResult;
-            return tmp8;
+            const tmp5 = new outer1_2(content);
+            const items = [];
+            HermesBuiltin.arraySpread(tmp5.embeds, 0);
+            tmp5.embeds = items;
+            obj = {};
+            const merged = Object.assign(tmp5.embeds[valueResult.index]);
+            if ("title" === valueResult.contentType) {
+              obj = { rawTitle: null };
+              obj[0] = valueResult.truncated;
+              let obj1 = obj;
+            } else {
+              obj1 = { rawDescription: null };
+              obj1[0] = valueResult.truncated;
+            }
+            const merged1 = Object.assign(obj1);
+            tmp5.embeds[valueResult.index] = obj;
+            return tmp5;
           } else {
             return content;
           }
-          const iter = mapped.find((arg0) => null != arg0);
+          const iter = mapped.find((truncated) => null != truncated.truncated);
         }
       }
     }
     return content;
   };
-  let obj = require(10099) /* SearchTokenTypes */;
-  const tokenizeQueryResult = require(10099) /* SearchTokenTypes */.tokenizeQuery(searchQueryString);
-  const searchQueryFromTokens = require(10099) /* SearchTokenTypes */.getSearchQueryFromTokens(tokenizeQueryResult);
-  let obj2 = require(10099) /* SearchTokenTypes */;
-  const str = require(10099) /* SearchTokenTypes */.getQueryContentString(searchQueryFromTokens);
+  let obj = require(10116) /* SearchTokenTypes */;
+  const tokenizeQueryResult = require(10116) /* SearchTokenTypes */.tokenizeQuery(searchQueryString);
+  const searchQueryFromTokens = require(10116) /* SearchTokenTypes */.getSearchQueryFromTokens(tokenizeQueryResult);
+  const obj2 = require(10116) /* SearchTokenTypes */;
+  const str = require(10116) /* SearchTokenTypes */.getQueryContentString(searchQueryFromTokens);
   let str2;
   if (str != null) {
     str2 = str.trim();
@@ -98,6 +126,6 @@ const prototype = function SearchResultMessageParser(searchQueryString, lineClam
 }.prototype;
 class prototype extends CachedSearchResultParser {
 }
-const result = require("SearchTokenTypes").fileFinishedImporting("modules/search/native/message_parsers/MessageSearchResultParser.tsx");
+const result = require("CachedSearchResultParser").fileFinishedImporting("modules/search/native/message_parsers/MessageSearchResultParser.tsx");
 
 export default prototype;

@@ -1,10 +1,10 @@
-// Module ID: 11825
-// Function ID: 11826
+// Module ID: 11843
+// Function ID: 11844
 // Name: HubEmailConnectionModal
-// Dependencies: [19, 11817, 21, 4189, 5140, 5143, 11826, 503, 11829, 11832, 11834, 11835, 11836, 11840, 5177, 1480, 5503, 11842, 5570, 1236, 2]
+// Dependencies: [19, 11835, 21, 4193, 5144, 5147, 11844, 503, 11847, 11850, 11852, 11853, 11854, 11858, 5181, 1480, 5507, 11860, 5574, 1236, 2]
 // Exports: HubEmailConnectionScreen, default
 
-// Module 11825 (HubEmailConnectionModal)
+// Module 11843 (HubEmailConnectionModal)
 import "getSystemLocale";
 import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
 import { jsx } from "jsxProd";
@@ -28,7 +28,7 @@ export default function HubEmailConnectionModal(arg0) {
   let jsx;
   let obj = require(1480) /* useNavigation */;
   jsx = obj.useNavigation();
-  ({ screens, initialRouteStack } = importDefault(5503)(() => {
+  ({ screens, initialRouteStack } = importDefault(5507)(() => {
     function handleClose() {
       let flag = arg0;
       if (arg0 === undefined) {
@@ -81,7 +81,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(11826), {});
+        return navigation(callback(11844), {});
       }
     };
     obj2[outer1_3.VERIFY_EMAIL] = {
@@ -96,7 +96,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(11829), {});
+        return navigation(callback(11847), {});
       }
     };
     obj2[outer1_3.EMAIL_WAITLIST] = {
@@ -106,7 +106,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(11832), {});
+        return navigation(callback(11850), {});
       }
     };
     obj2[outer1_3.SUBMIT_SCHOOL] = {
@@ -116,7 +116,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(11834), {});
+        return navigation(callback(11852), {});
       }
     };
     obj2[outer1_3.SELECT_SCHOOL] = {
@@ -126,7 +126,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(11835), {});
+        return navigation(callback(11853), {});
       }
     };
     obj2[outer1_3.VERIFY_PIN] = {
@@ -136,7 +136,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(11836), {});
+        return navigation(callback(11854), {});
       }
     };
     obj2[outer1_3.SELECT_SCHOOL_SEARCH] = {
@@ -144,7 +144,7 @@ export default function HubEmailConnectionModal(arg0) {
       headerShown: false,
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(11840), {});
+        return navigation(callback(11858), {});
       }
     };
     obj1[0] = obj2;
@@ -154,9 +154,9 @@ export default function HubEmailConnectionModal(arg0) {
   obj = { screens, initialRouteStack, headerBackTitle: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
-  return jsx(require(5570) /* NavigationStack */.Navigator, { screens, initialRouteStack, headerBackTitle: null });
+  return jsx(require(5574) /* NavigationStack */.Navigator, { screens, initialRouteStack, headerBackTitle: null });
 };
 export const HubEmailConnectionScreen = function HubEmailConnectionScreen(children) {
   const tmp = createCacheKey();
-  return jsx(require(5177) /* SafeAreaPaddingView */.SafeAreaPaddingView, { top: true, style: createCacheKey().safeArea, children: children.children });
+  return jsx(require(5181) /* SafeAreaPaddingView */.SafeAreaPaddingView, { top: true, style: createCacheKey().safeArea, children: children.children });
 };

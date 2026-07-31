@@ -1,9 +1,9 @@
-// Module ID: 16233
-// Function ID: 16234
+// Module ID: 16262
+// Function ID: 16263
 // Name: handleConnectionOpen
-// Dependencies: [1874, 1365, 676, 5134, 6608, 5641, 2]
+// Dependencies: [1874, 1365, 676, 5138, 6614, 5645, 2]
 
-// Module 16233 (handleConnectionOpen)
+// Module 16262 (handleConnectionOpen)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handleUpdateUser from "handleUpdateUser";
 import ME from "ME";
@@ -39,12 +39,12 @@ LoginRequiredActionManager.prototype["handleConnectionOpen"] = function handleCo
             const obj = outer1_1(outer1_2[5]);
           }
         };
-        currentUser(6608).openUserSettings(obj);
-        const obj2 = currentUser(6608);
+        currentUser(6614).openUserSettings(obj);
+        const obj2 = currentUser(6614);
       }
     }
     if (result1) {
-      obj = importDefault(5641);
+      obj = importDefault(5645);
       obj.logout("login_required_account_manager", constants2.LOGIN);
     }
   }

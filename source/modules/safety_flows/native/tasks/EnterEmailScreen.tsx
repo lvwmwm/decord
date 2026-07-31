@@ -1,10 +1,10 @@
-// Module ID: 16705
-// Function ID: 16706
+// Module ID: 16734
+// Function ID: 16735
 // Name: EnterEmailScreen
-// Dependencies: [32, 19, 21, 1480, 16706, 1236, 2485, 16697, 4598, 6724, 2]
+// Dependencies: [32, 19, 21, 1480, 16735, 1236, 2487, 16726, 4602, 6730, 2]
 // Exports: default
 
-// Module 16705 (EnterEmailScreen)
+// Module 16734 (EnterEmailScreen)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
@@ -21,14 +21,14 @@ export default function EnterEmailScreen() {
   obj = { title: null, action: null, onAction: null, children: null };
   const tmp = callback(React.useState(""), 2);
   const intl = _require(1236).intl;
-  obj[0] = intl.string(importDefault(2485).bFbsV6);
+  obj[0] = intl.string(importDefault(2487).bFbsV6);
   const intl2 = _require(1236).intl;
-  obj[1] = intl2.string(importDefault(2485).RRBNpv);
+  obj[1] = intl2.string(importDefault(2487).RRBNpv);
   obj[2] = function onAction() {
     arr = arr.push(arr(outer1_2[7]).SafetyFlowScreens.VERIFY_EMAIL);
   };
   obj = { children: null };
-  obj[0] = jsx(_require(6724).TextInput, { label: "Email", value: tmp2, onChange: tmp3 });
-  obj[3] = jsx(_require(4598).Stack, { children: null });
-  return jsx(importDefault(16706), { children: null });
+  obj[0] = jsx(_require(6730).TextInput, { label: "Email", value: tmp2, onChange: tmp3 });
+  obj[3] = jsx(_require(4602).Stack, { children: null });
+  return jsx(importDefault(16735), { children: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 7345
-// Function ID: 7346
+// Module ID: 7353
+// Function ID: 7354
 // Name: NitroWumpusFlightLeft3dIllustration
-// Dependencies: [21, 5141, 7346, 2]
+// Dependencies: [21, 5145, 7354, 2]
 // Exports: NitroWumpusFlightLeft3dIllustration
 
-// Module 7345 (NitroWumpusFlightLeft3dIllustration)
+// Module 7353 (NitroWumpusFlightLeft3dIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusFlightLeft3dIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const NitroWumpusFlightLeft3dIllustration = function NitroWumpusFlightLef
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7346);
+  obj[0] = importDefault(7354);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const NitroWumpusFlightLeft3dIllustration = function NitroWumpusFlightLef
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
 };

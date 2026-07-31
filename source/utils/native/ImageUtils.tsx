@@ -56,11 +56,12 @@ function getSrcWithWidthAndHeight(animated) {
         return false;
       }
     })("native/ImageUtils.getSrcWithWidthAndHeight")) {
-      obj = { targetWidth: null, targetHeight: null, sourceWidth: null, sourceHeight: null };
+      obj = { targetWidth: null, targetHeight: null, sourceWidth: null, sourceHeight: null, maxUpscale: null };
       obj[0] = targetWidth;
       obj[1] = targetHeight;
       obj[2] = sourceWidth;
       obj[3] = sourceHeight;
+      obj[4] = require(1848) /* items */.ATTACHMENT_LADDER_MAX_UPSCALE;
       let size = require(1848) /* items */.snapAttachmentDimensions(obj);
       const obj2 = require(1848) /* items */;
     } else {

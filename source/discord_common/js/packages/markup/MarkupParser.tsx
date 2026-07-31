@@ -1,9 +1,9 @@
-// Module ID: 7765
-// Function ID: 7766
+// Module ID: 7773
+// Function ID: 7774
 // Name: reactParserFor
-// Dependencies: [7766, 2, 7767, 7768]
+// Dependencies: [7774, 2, 7775, 7776]
 
-// Module 7765 (reactParserFor)
+// Module 7773 (reactParserFor)
 const result = require("collectAst").fileFinishedImporting("../discord_common/js/packages/markup/MarkupParser.tsx");
 for (const key10026 in require("collectAst")) {
   let tmp3 = key10026;

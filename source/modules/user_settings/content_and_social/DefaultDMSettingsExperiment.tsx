@@ -1,15 +1,15 @@
-// Module ID: 14665
-// Function ID: 14666
+// Module ID: 14688
+// Function ID: 14689
 // Name: shouldAgeVerifyForDMDefaultOff
-// Dependencies: [3868, 5013, 4405, 2]
+// Dependencies: [3872, 5017, 4409, 2]
 // Exports: shouldAgeVerifyForDMDefaultOff
 
-// Module 14665 (shouldAgeVerifyForDMDefaultOff)
-const result = require("useShouldCallReactiveCheck").fileFinishedImporting("modules/user_settings/content_and_social/DefaultDMSettingsExperiment.tsx");
+// Module 14688 (shouldAgeVerifyForDMDefaultOff)
+const result = require("useAgeVerificationRunner").fileFinishedImporting("modules/user_settings/content_and_social/DefaultDMSettingsExperiment.tsx");
 
 export const shouldAgeVerifyForDMDefaultOff = function shouldAgeVerifyForDMDefaultOff() {
-  const obj = require(3868) /* isFeatureAgeGated */;
-  const isFeatureAgeGatedResult = require(3868) /* isFeatureAgeGated */.isFeatureAgeGated(require(5013) /* AgeGatedFeature */.AgeGatedFeature.DM_PRIVACY_SETTINGS);
-  const obj2 = require(4405) /* useShouldCallReactiveCheck */;
-  return require(4405) /* useShouldCallReactiveCheck */.shouldShowTiggerPawtect() && isFeatureAgeGatedResult;
+  const obj = require(3872) /* isFeatureAgeGated */;
+  const isFeatureAgeGatedResult = require(3872) /* isFeatureAgeGated */.isFeatureAgeGated(require(5017) /* AgeGatedFeature */.AgeGatedFeature.DM_PRIVACY_SETTINGS);
+  const obj2 = require(4409) /* useAgeVerificationRunner */;
+  return require(4409) /* useAgeVerificationRunner */.shouldShowTiggerPawtect() && isFeatureAgeGatedResult;
 };

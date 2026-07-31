@@ -1,31 +1,31 @@
-// Module ID: 14684
-// Function ID: 14685
+// Module ID: 14707
+// Function ID: 14708
 // Name: useObscuredContentNonFriendsDmSettingValue
-// Dependencies: [5793, 7753, 13850, 5860, 13854, 1236, 13847, 1306, 10116, 2]
+// Dependencies: [5798, 7761, 13874, 5865, 13878, 1236, 13871, 1306, 10133, 2]
 // Exports: onObscuredContentNonFriendsDmOnPress, useObscuredContentNonFriendsDmSettingValue
 
-// Module 14684 (useObscuredContentNonFriendsDmSettingValue)
+// Module 14707 (useObscuredContentNonFriendsDmSettingValue)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import createToggle from "createToggle";
 
 const require = arg1;
 function useObscuredContentNonFriendsDmSettingValue() {
-  const parentalControlledExplicitContentSettings = require(13850) /* useParentalControlledExplicitContentSettings */.useParentalControlledExplicitContentSettings();
+  const parentalControlledExplicitContentSettings = require(13874) /* useParentalControlledExplicitContentSettings */.useParentalControlledExplicitContentSettings();
   let prop;
   if (parentalControlledExplicitContentSettings != null) {
     prop = parentalControlledExplicitContentSettings.explicitContentNonFriendDm;
   }
   let tmp5 = null;
   if (null != prop) {
-    tmp5 = require(5860) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(prop)();
-    const tmpResult = require(5860) /* redactionSettingToRenderedString */;
+    tmp5 = require(5865) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(prop)();
+    const tmpResult = require(5865) /* redactionSettingToRenderedString */;
   }
   return tmp5;
 }
 function onObscuredContentNonFriendsDmOnPress() {
   selectedTeenId = selectedTeenId.getSelectedTeenId();
   if (null != selectedTeenId) {
-    let obj = selectedTeenId(13854);
+    let obj = selectedTeenId(13878);
     const intl = selectedTeenId(1236).intl;
     const stringResult = intl.string(selectedTeenId(1236).t.GYpoAq);
     obj = { title: null, subtitle: null, excluded: null, handlePress: null, currentValue: null };
@@ -40,8 +40,8 @@ function onObscuredContentNonFriendsDmOnPress() {
       const result = obj.updateExplicitContentSetting(selectedTeenId, obj);
     };
     obj[4] = obj.getExplicitContentSettingOrDefault(selectedTeenId).explicitContentNonFriendDm;
-    let result = selectedTeenId(13847).handleSensitiveMediaFilterPress(obj);
-    const obj2 = selectedTeenId(13847);
+    let result = selectedTeenId(13871).handleSensitiveMediaFilterPress(obj);
+    const obj2 = selectedTeenId(13871);
   }
 }
 createToggle = {

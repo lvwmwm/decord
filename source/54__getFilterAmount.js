@@ -50,7 +50,7 @@ function _getFilterAmount(arg0, arg1) {
 function parseDropShadow(arg0) {
   let tmp4;
   let tmp2 = arg0;
-  if (typeof arg0 !== "tee") {
+  if (typeof arg0 !== "__FORMATJS_LISTFORMAT_DATA__") {
     tmp2 = (function parseDropShadowString(str) {
       let tmp2;
       let tmp;

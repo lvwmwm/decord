@@ -1,7 +1,7 @@
 // Module ID: 8588
 // Function ID: 8589
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 8544, 8567]
+// Dependencies: [41, 42, 93, 95, 98, 8557, 8580]
 
 // Module 8588 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -9,7 +9,7 @@ import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
 
-const FeImage = arg1;
+const FeDisplacementMap = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeImage {
+class FeDisplacementMap {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeImage);
+    tmp = _isNativeReflectConstruct(this, FeDisplacementMap);
     tmp2 = __esModule;
-    obj = __esModule(FeImage);
+    obj = __esModule(FeDisplacementMap);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -49,17 +49,17 @@ class FeImage {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeImage, require("_isNativeReflectConstruct"));
+require("_inherits")(FeDisplacementMap, require("_isNativeReflectConstruct"));
 let obj = {
   key: "render",
   value: function render() {
-    const result = FeImage(8544).warnUnimplementedFilter();
+    const result = FeDisplacementMap(8557).warnUnimplementedFilter();
     return null;
   }
 };
 const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeImage, items);
-importDefaultResultResult.displayName = "FeImage";
+const importDefaultResultResult = importDefaultResult(FeDisplacementMap, items);
+importDefaultResultResult.displayName = "FeDisplacementMap";
 obj = {};
 const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
 importDefaultResultResult.defaultProps = obj;

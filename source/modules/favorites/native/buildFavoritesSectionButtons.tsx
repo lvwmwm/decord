@@ -1,12 +1,13 @@
-// Module ID: 10209
-// Function ID: 10210
+// Module ID: 10226
+// Function ID: 10227
 // Name: _addChannelToFavorites
-// Dependencies: [32, 5, 3890, 1236, 9415, 10210, 1959, 10217, 2969, 9417, 2]
+// Dependencies: [32, 5, 21, 3894, 1236, 9430, 10227, 1959, 10235, 2971, 9432, 1297, 2]
 // Exports: default
 
-// Module 10209 (_addChannelToFavorites)
+// Module 10226 (_addChannelToFavorites)
 import _slicedToArray from "_slicedToArray";
-import getNextPositionFromChannels from "getNextPositionFromChannels";
+import StarIcon from "StarIcon";
+import { jsx } from "jsxProd";
 
 const require = arg1;
 function _addChannelToFavorites() {
@@ -48,11 +49,11 @@ function _addChannelToFavorites() {
               dependencyMap = undefined;
               v0 = undefined;
               const obj1 = { key: "FAVORITE_ADDED", content: null, IconComponent: null };
-              const intl = callback(outer1_2[3]).intl;
-              obj1[1] = intl.string(callback(outer1_2[3]).t["4tSWQg"]);
-              obj1[2] = callback(outer1_2[4]).StarIcon;
-              outer1_1(outer1_2[2]).open(obj1);
-              const items = [callback(outer1_2[6])(outer1_2[5], outer1_2.paths), callback(outer1_2[6])(outer1_2[7], outer1_2.paths)];
+              const intl = callback(outer1_2[4]).intl;
+              obj1[1] = intl.string(callback(outer1_2[4]).t["4tSWQg"]);
+              obj1[2] = callback(outer1_2[5]).StarIcon;
+              outer1_1(outer1_2[3]).open(obj1);
+              const items = [callback(outer1_2[7])(outer1_2[6], outer1_2.paths), callback(outer1_2[7])(outer1_2[8], outer1_2.paths)];
               v0 = 1;
               c4 = 1;
               const obj2 = { value: null, done: false };
@@ -131,7 +132,7 @@ function _removeChannelFromFavorites() {
               paths = 1;
               c3 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = callback(paths[6])(paths[5], paths.paths);
+              obj1[0] = callback(paths[7])(paths[6], paths.paths);
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -163,55 +164,65 @@ function _removeChannelFromFavorites() {
   }
   return applyArgumentsResult;
 }
-let result = require("dispatcher").fileFinishedImporting("modules/favorites/native/buildFavoritesSectionButtons.tsx");
+let result = require("jsxProd").fileFinishedImporting("modules/favorites/native/buildFavoritesSectionButtons.tsx");
 
-export default function buildFavoritesSectionButtons(channelId) {
-  channelId = channelId.channelId;
-  let tmp4 = null;
-  if (channelId.hasFavoritesAccess) {
-    tmp4 = null;
+export default function buildFavoritesSectionButtons(hasFavoritesAccess) {
+  let importDefault;
+  let require;
+  ({ channelId: require, dismissBetaTag: importDefault } = hasFavoritesAccess);
+  let tmp5 = null;
+  if (hasFavoritesAccess.hasFavoritesAccess) {
+    tmp5 = null;
     if (tmp) {
       if (tmp2) {
         let obj = { label: null, IconComponent: null, isDestructive: true, onPress: null };
-        const intl2 = channelId(1236).intl;
-        obj[0] = intl2.string(importDefault(2969).TN4nAX);
-        obj[1] = channelId(9415).StarIcon;
+        const intl2 = require(1236) /* getSystemLocale */.intl;
+        obj[0] = intl2.string(importDefault(2971).TN4nAX);
+        obj[1] = require(9430) /* StarIcon */.StarIcon;
         obj[3] = function onPress() {
-          return (function removeChannelFromFavorites(channelId) {
+          return (function removeChannelFromFavorites(closure_0) {
             const self = this;
-            const apply = closure_6.apply;
+            const apply = closure_7.apply;
             if (typeof apply === "unknown") {
               let applyArgumentsResult = HermesBuiltin.applyArguments(self);
             } else {
               applyArgumentsResult = apply(self, arguments);
             }
             return applyArgumentsResult;
-          })(channelId);
+          })(closure_0);
         };
-        let tmp5 = obj;
+        let tmp6 = obj;
       } else {
-        tmp5 = null;
+        tmp6 = null;
         if (!tmp3) {
-          obj = { label: null, IconComponent: null, onPress: null };
-          const intl = channelId(1236).intl;
-          obj[0] = intl.string(importDefault(2969).G9fGlP);
-          obj[1] = channelId(9417).StarOutlineIcon;
-          obj[2] = function onPress() {
-            return (function addChannelToFavorites(channelId) {
+          obj = { label: null, IconComponent: null, trailing: null, onPress: null };
+          const intl = require(1236) /* getSystemLocale */.intl;
+          obj[0] = intl.string(importDefault(2971).G9fGlP);
+          obj[1] = require(9432) /* StarOutlineIcon */.StarOutlineIcon;
+          let tmp10;
+          if (tmp4) {
+            obj = { size: null };
+            obj[0] = tmp7(1297).BetaSizes.SMALL;
+            tmp10 = jsx(tmp7(1297).BetaTag, { size: null });
+          }
+          obj[2] = tmp10;
+          obj[3] = function onPress() {
+            callback();
+            (function addChannelToFavorites(closure_0) {
               const self = this;
-              const apply = closure_5.apply;
+              const apply = closure_6.apply;
               if (typeof apply === "unknown") {
                 let applyArgumentsResult = HermesBuiltin.applyArguments(self);
               } else {
                 applyArgumentsResult = apply(self, arguments);
               }
               return applyArgumentsResult;
-            })(channelId);
+            })(closure_0);
           };
-          tmp5 = obj;
+          tmp6 = obj;
         }
       }
     }
   }
-  return tmp4;
+  return tmp5;
 };

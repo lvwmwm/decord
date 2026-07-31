@@ -1,10 +1,10 @@
-// Module ID: 8042
-// Function ID: 8043
+// Module ID: 8048
+// Function ID: 8049
 // Name: useFetchCollectiblesProduct
-// Dependencies: [32, 19, 4234, 5798, 676, 647, 1901, 5797, 2]
+// Dependencies: [32, 19, 4238, 5803, 676, 647, 1901, 5802, 2]
 // Exports: useFetchCollectiblesProduct
 
-// Module 8042 (useFetchCollectiblesProduct)
+// Module 8048 (useFetchCollectiblesProduct)
 import _slicedToArray from "_slicedToArray";
 import { useEffect } from "noop";
 import addSku from "addSku";

@@ -1,10 +1,10 @@
-// Module ID: 7283
-// Function ID: 7284
+// Module ID: 7291
+// Function ID: 7292
 // Name: NitroBronzeBadgeLargeBadge
-// Dependencies: [21, 5141, 7284, 2]
+// Dependencies: [21, 5145, 7292, 2]
 // Exports: NitroBronzeBadgeLargeBadge
 
-// Module 7283 (NitroBronzeBadgeLargeBadge)
+// Module 7291 (NitroBronzeBadgeLargeBadge)
 import { jsx } from "jsxProd";
 
 const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/NitroBronzeBadgeLargeBadge.native.tsx");
@@ -28,7 +28,7 @@ export const NitroBronzeBadgeLargeBadge = function NitroBronzeBadgeLargeBadge(wi
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7284);
+  obj[0] = importDefault(7292);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const NitroBronzeBadgeLargeBadge = function NitroBronzeBadgeLargeBadge(wi
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
 };

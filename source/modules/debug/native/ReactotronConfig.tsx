@@ -1,9 +1,9 @@
-// Module ID: 13461
-// Function ID: 13462
+// Module ID: 13485
+// Function ID: 13486
 // Name: reactNativeCorePlugins
-// Dependencies: [13462, 2]
+// Dependencies: [13486, 2]
 
-// Module 13461 (reactNativeCorePlugins)
+// Module 13485 (reactNativeCorePlugins)
 import importDefaultResult from "reactNativeCorePlugins";
 
 const reactNative = require("reactNativeCorePlugins").configure({}).useReactNative();

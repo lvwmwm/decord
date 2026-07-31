@@ -1,10 +1,10 @@
-// Module ID: 8664
-// Function ID: 8665
+// Module ID: 8677
+// Function ID: 8678
 // Name: useWishlistNUXActionSheet
-// Dependencies: [19, 5894, 1218, 1369, 589, 4005, 1358, 1360, 4157, 8665, 1959, 2]
+// Dependencies: [19, 5899, 1218, 1369, 589, 4009, 1358, 1360, 4161, 8678, 1959, 2]
 // Exports: default, useHasNeverWishlisted
 
-// Module 8664 (useWishlistNUXActionSheet)
+// Module 8677 (useWishlistNUXActionSheet)
 import noop from "noop";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 import fetchFingerprint from "fetchFingerprint";

@@ -1,9 +1,9 @@
-// Module ID: 10844
-// Function ID: 10845
+// Module ID: 10862
+// Function ID: 10863
 // Name: StreamPreviewTile
-// Dependencies: [19, 17, 4208, 1874, 10231, 4207, 21, 4189, 4033, 712, 5515, 1581, 589, 4383, 8356, 10540, 10814, 10566, 10597, 10845, 10850, 10851, 9029, 9050, 10852, 1297, 10505, 4050, 4190, 10853, 2]
+// Dependencies: [19, 17, 4212, 1874, 10249, 4211, 21, 4193, 4037, 712, 5519, 1581, 589, 4387, 8363, 10558, 10832, 10584, 10615, 10863, 10868, 10869, 9042, 9063, 10870, 1297, 10523, 4054, 4194, 10871, 2]
 
-// Module 10844 (StreamPreviewTile)
+// Module 10862 (StreamPreviewTile)
 import importAllResult from "StreamPreviewContainer";
 import get_ActivityIndicator from "UserTile";
 import reset from "reset";
@@ -36,7 +36,7 @@ class StreamPreviewTile {
     obj = {
       guildId: participant.stream.guildId,
       userId: participant.user.id,
-      style: { aspectRatio: "disabled", borderRadius: false },
+      style: { aspectRatio: "description", borderRadius: false },
       disableTransition: true,
       onPress() {
             return callback();
@@ -49,17 +49,17 @@ class StreamPreviewTile {
 function ParticipantIcon(participant) {
   participant = participant.participant;
   if (participant.type === constants.STREAM) {
-    let tmp3 = importDefault(10850);
+    let tmp3 = importDefault(10868);
   } else if (participant.type === tmp2.USER) {
     const voicePlatform = participant.voicePlatform;
     if (constants2.MOBILE === voicePlatform) {
-      tmp3 = importDefault(10851);
+      tmp3 = importDefault(10869);
     } else if (tmp19.XBOX === voicePlatform) {
-      tmp3 = importDefault(9029);
+      tmp3 = importDefault(9042);
     } else if (tmp19.PLAYSTATION === voicePlatform) {
-      tmp3 = importDefault(9050);
+      tmp3 = importDefault(9063);
     } else if (tmp19.QUEST === voicePlatform) {
-      tmp3 = importDefault(10852);
+      tmp3 = importDefault(10870);
     }
   }
   let tmp14 = null;
@@ -85,7 +85,7 @@ class TileOverlay {
     ({ bottom, left, top, right } = tmp4);
     tmp5 = reveal;
     reveal = defineProperty.useContext(require("useRevealProviderValue").RevealContext).reveal;
-    obj = require("module_4050");
+    obj = require("module_4054");
     class T {
       constructor() {
         tmp = reveal;
@@ -151,7 +151,7 @@ class TileOverlay {
     obj4[1] = tmp7(View, obj5);
     items1[1] = jsx(View, obj4);
     obj2[2] = items1;
-    return tmp7(require("module_4050").View, obj2);
+    return tmp7(require("module_4054").View, obj2);
   }
 }
 let c3 = importAllResult;

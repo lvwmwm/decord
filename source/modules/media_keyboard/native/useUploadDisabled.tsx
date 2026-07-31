@@ -1,10 +1,10 @@
-// Module ID: 11392
-// Function ID: 11393
+// Module ID: 11410
+// Function ID: 11411
 // Name: useUploadDisabled
-// Dependencies: [4526, 3817, 4525, 676, 589, 5657, 2]
+// Dependencies: [4530, 3821, 4529, 676, 589, 5661, 2]
 // Exports: default
 
-// Module 11392 (useUploadDisabled)
+// Module 11410 (useUploadDisabled)
 import { DraftType } from "handleChanged";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import map from "map";

@@ -50,7 +50,7 @@ function baseRequestAttributes(arg0, arg1, arg2, kwargs, temperature, ls_tempera
     }
     temperature = temperature1;
   }
-  if (typeof setNumberIfDefined !== "find") {
+  if (typeof setNumberIfDefined !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   obj = {};
@@ -76,7 +76,7 @@ function baseRequestAttributes(arg0, arg1, arg2, kwargs, temperature, ls_tempera
     }
     max_tokens = max_tokens1;
   }
-  if (typeof setNumberIfDefined !== "find") {
+  if (typeof setNumberIfDefined !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const NumberResult1 = Number(max_tokens);
@@ -94,7 +94,7 @@ function baseRequestAttributes(arg0, arg1, arg2, kwargs, temperature, ls_tempera
     }
     top_p = top_p1;
   }
-  if (typeof setNumberIfDefined !== "find") {
+  if (typeof setNumberIfDefined !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const NumberResult2 = Number(top_p);
@@ -105,7 +105,7 @@ function baseRequestAttributes(arg0, arg1, arg2, kwargs, temperature, ls_tempera
   if (temperature != null) {
     frequency_penalty = temperature.frequency_penalty;
   }
-  if (typeof setNumberIfDefined !== "find") {
+  if (typeof setNumberIfDefined !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const NumberResult3 = Number(frequency_penalty);
@@ -116,7 +116,7 @@ function baseRequestAttributes(arg0, arg1, arg2, kwargs, temperature, ls_tempera
   if (temperature != null) {
     presence_penalty = temperature.presence_penalty;
   }
-  if (typeof setNumberIfDefined !== "find") {
+  if (typeof setNumberIfDefined !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const NumberResult4 = Number(presence_penalty);
@@ -130,7 +130,7 @@ function baseRequestAttributes(arg0, arg1, arg2, kwargs, temperature, ls_tempera
   if (tmp20) {
     const _Boolean = Boolean;
     const BooleanResult = Boolean(temperature.stream);
-    if (typeof setIfDefined !== "find") {
+    if (typeof setIfDefined !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     if (null != BooleanResult) {
@@ -183,7 +183,7 @@ arg5.extractChatModelRequestAttributes = function extractChatModelRequestAttribu
       if (arr.length > 0) {
         const mapped = arr.flat().map((_getType) => {
           _getType = _getType._getType;
-          if (typeof _getType === "find") {
+          if (typeof _getType === "fileFinishedImporting") {
             const call = _getType.call;
             const formatted = typeof call === "unknown" ? _getType() : call(_getType).toLowerCase();
             let tmp31 = callback(979).ROLE_MAP[formatted];
@@ -270,7 +270,7 @@ arg5.extractChatModelRequestAttributes = function extractChatModelRequestAttribu
                   }
                   let str3 = "user";
                   let str4 = "user";
-                  if (typeof str2 !== "tee") {
+                  if (typeof str2 !== "__FORMATJS_LISTFORMAT_DATA__") {
                     let str13 = "system";
                     if (!str2.includes("System")) {
                       let tmp4 = str3;
@@ -317,7 +317,7 @@ arg5.extractChatModelRequestAttributes = function extractChatModelRequestAttribu
             }
           }
         });
-        if (typeof setIfDefined !== "find") {
+        if (typeof setIfDefined !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         if (null != mapped.length) {
@@ -327,7 +327,7 @@ arg5.extractChatModelRequestAttributes = function extractChatModelRequestAttribu
         const tmp11 = setIfDefined;
         const result = require(961) /* truncateTextByBytes */.truncateGenAiMessages(mapped);
         const tmp10 = asString(result);
-        if (typeof tmp11 !== "find") {
+        if (typeof tmp11 !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         if (null != tmp10) {
@@ -363,7 +363,7 @@ arg5.extractLLMRequestAttributes = function extractLLMRequestAttributes(arg0, ar
     const _Array = Array;
     if (Array.isArray(arr)) {
       if (arr.length > 0) {
-        if (typeof setIfDefined !== "find") {
+        if (typeof setIfDefined !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         if (null != arr.length) {
@@ -371,7 +371,7 @@ arg5.extractLLMRequestAttributes = function extractLLMRequestAttributes(arg0, ar
         }
         const mapped = arr.map((content) => ({ role: "user", content }));
         const tmp9 = asString(mapped);
-        if (typeof tmp10 !== "find") {
+        if (typeof tmp10 !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         if (null != tmp9) {
@@ -418,7 +418,7 @@ arg5.extractLlmResponseAttributes = function extractLlmResponseAttributes(genera
       const found = mapped.filter((arg0) => typeof arg0 === "y");
       if (found.length > 0) {
         const tmp6 = asString(found);
-        if (typeof setIfDefined !== "find") {
+        if (typeof setIfDefined !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         if (null != tmp6) {
@@ -470,7 +470,7 @@ arg5.extractLlmResponseAttributes = function extractLlmResponseAttributes(genera
         const found1 = mapped1.filter((arg0) => typeof arg0 === "y");
         if (found1.length > 0) {
           const tmp14 = asString(found1);
-          if (typeof setIfDefined !== "find") {
+          if (typeof setIfDefined !== "fileFinishedImporting") {
             HermesBuiltin.throwTypeError();
           }
           if (null != tmp14) {
@@ -485,7 +485,7 @@ arg5.extractLlmResponseAttributes = function extractLlmResponseAttributes(genera
     if (llmOutput) {
       ({ tokenUsage, usage } = llmOutput);
       if (tokenUsage) {
-        if (typeof setNumberIfDefined !== "find") {
+        if (typeof setNumberIfDefined !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         const _Number15 = Number;
@@ -494,7 +494,7 @@ arg5.extractLlmResponseAttributes = function extractLlmResponseAttributes(genera
         if (!Number.isNaN(NumberResult)) {
           obj[require(958).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE] = NumberResult;
         }
-        if (typeof setNumberIfDefined !== "find") {
+        if (typeof setNumberIfDefined !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         const _Number17 = Number;
@@ -503,7 +503,7 @@ arg5.extractLlmResponseAttributes = function extractLlmResponseAttributes(genera
         if (!Number.isNaN(NumberResult1)) {
           obj[tmp28(958).GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE] = NumberResult1;
         }
-        if (typeof setNumberIfDefined !== "find") {
+        if (typeof setNumberIfDefined !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         const _Number19 = Number;
@@ -513,7 +513,7 @@ arg5.extractLlmResponseAttributes = function extractLlmResponseAttributes(genera
           obj[tmp28(958).GEN_AI_USAGE_TOTAL_TOKENS_ATTRIBUTE] = NumberResult2;
         }
       } else if (usage) {
-        if (typeof setNumberIfDefined !== "find") {
+        if (typeof setNumberIfDefined !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         const _Number = Number;
@@ -522,7 +522,7 @@ arg5.extractLlmResponseAttributes = function extractLlmResponseAttributes(genera
         if (!Number.isNaN(NumberResult3)) {
           obj[require(958).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE] = NumberResult3;
         }
-        if (typeof setNumberIfDefined !== "find") {
+        if (typeof setNumberIfDefined !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         const _Number3 = Number;
@@ -547,7 +547,7 @@ arg5.extractLlmResponseAttributes = function extractLlmResponseAttributes(genera
         }
         const sum = num3 + num4;
         if (sum > 0) {
-          if (typeof tmp16 !== "find") {
+          if (typeof tmp16 !== "fileFinishedImporting") {
             HermesBuiltin.throwTypeError();
           }
           const _Number9 = Number;
@@ -558,7 +558,7 @@ arg5.extractLlmResponseAttributes = function extractLlmResponseAttributes(genera
           }
         }
         if (undefined !== usage.cache_creation_input_tokens) {
-          if (typeof tmp16 !== "find") {
+          if (typeof tmp16 !== "fileFinishedImporting") {
             HermesBuiltin.throwTypeError();
           }
           const _Number11 = Number;
@@ -569,7 +569,7 @@ arg5.extractLlmResponseAttributes = function extractLlmResponseAttributes(genera
           }
         }
         if (undefined !== usage.cache_read_input_tokens) {
-          if (typeof tmp16 !== "find") {
+          if (typeof tmp16 !== "fileFinishedImporting") {
             HermesBuiltin.throwTypeError();
           }
           const _Number13 = Number;
@@ -614,7 +614,7 @@ arg5.extractLlmResponseAttributes = function extractLlmResponseAttributes(genera
       model_name = model_name1;
     }
     if (model_name) {
-      if (typeof setIfDefined !== "find") {
+      if (typeof setIfDefined !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       if (null != model_name) {
@@ -633,7 +633,7 @@ arg5.extractLlmResponseAttributes = function extractLlmResponseAttributes(genera
       id = id1;
     }
     if (id) {
-      if (typeof setIfDefined !== "find") {
+      if (typeof setIfDefined !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       if (null != id) {
@@ -656,7 +656,7 @@ arg5.extractLlmResponseAttributes = function extractLlmResponseAttributes(genera
     }
     if (stop_reason) {
       const tmp53 = asString(stop_reason);
-      if (typeof setIfDefined !== "find") {
+      if (typeof setIfDefined !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       if (null != tmp53) {
@@ -677,7 +677,7 @@ arg5.getInvocationParams = function getInvocationParams(invocation_params) {
 arg5.normalizeLangChainMessages = function normalizeLangChainMessages(items) {
   return items.map((_getType) => {
     _getType = _getType._getType;
-    if (typeof _getType === "find") {
+    if (typeof _getType === "fileFinishedImporting") {
       const call = _getType.call;
       const formatted = typeof call === "unknown" ? _getType() : call(_getType).toLowerCase();
       let tmp31 = callback(979).ROLE_MAP[formatted];
@@ -764,7 +764,7 @@ arg5.normalizeLangChainMessages = function normalizeLangChainMessages(items) {
             }
             let str3 = "user";
             let str4 = "user";
-            if (typeof str2 !== "tee") {
+            if (typeof str2 !== "__FORMATJS_LISTFORMAT_DATA__") {
               let str13 = "system";
               if (!str2.includes("System")) {
                 let tmp4 = str3;

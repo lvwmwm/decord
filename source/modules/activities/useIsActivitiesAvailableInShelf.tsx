@@ -1,10 +1,10 @@
-// Module ID: 10528
-// Function ID: 10529
+// Module ID: 10546
+// Function ID: 10547
 // Name: useIsActivitiesAvailableInShelf
-// Dependencies: [19, 10529, 10530, 5696, 2]
+// Dependencies: [19, 10547, 10548, 5701, 2]
 // Exports: default
 
-// Module 10528 (useIsActivitiesAvailableInShelf)
+// Module 10546 (useIsActivitiesAvailableInShelf)
 import noop from "noop";
 
 const require = arg1;
@@ -12,9 +12,9 @@ const result = require("useIsPrivateChannelWithEnabledActivities").fileFinishedI
 
 export default function useIsActivitiesAvailableInShelf(arg0, arg1) {
   const _require = arg0;
-  const isActivitiesEnabledForCurrentPlatform = _require(10529).useIsActivitiesEnabledForCurrentPlatform();
+  const isActivitiesEnabledForCurrentPlatform = _require(10547).useIsActivitiesEnabledForCurrentPlatform();
   let tmp3 = null != arg0;
-  let obj = _require(10529);
+  let obj = _require(10547);
   if (tmp3) {
     tmp3 = "" !== arg0;
   }

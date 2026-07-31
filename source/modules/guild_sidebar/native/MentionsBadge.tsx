@@ -1,10 +1,10 @@
-// Module ID: 15189
-// Function ID: 15190
+// Module ID: 15215
+// Function ID: 15216
 // Name: MentionsBadge
 // Dependencies: [19, 21, 1297, 2]
 // Exports: default
 
-// Module 15189 (MentionsBadge)
+// Module 15215 (MentionsBadge)
 import "noop";
 import { jsx } from "jsxProd";
 

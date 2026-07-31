@@ -218,6 +218,10 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "ti":
           break;
+          case "ks":
+          break;
+          case "space":
+          break;
           case "apply":
           break;
           case "backgroundColor":
@@ -247,10 +251,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "cix":
           break;
           case "ix":
-          break;
-          case "unicodeVersion":
-          break;
-          case "code":
             obj2 = require;
             let tmp40 = dependencyMap;
             let tmp41 = require(57) /* getValidLengthPercentageSizeOrNull */;
@@ -273,6 +273,10 @@ arg5.default = function getNativeComponentAttributes(arg0) {
             obj2 = { diff: null };
             obj2[0] = _default;
             obj1 = obj2;
+          break;
+          case "unicodeVersion":
+          break;
+          case "code":
           break;
           case "color":
           break;
@@ -335,10 +339,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "duration":
           break;
           case "enabled":
-          break;
-          case "end":
-          break;
-          case "enumerable":
             if (tmp61) {
               let tmp62 = obj10;
               if (obj2) {
@@ -478,6 +478,10 @@ arg5.default = function getNativeComponentAttributes(arg0) {
             }
             viewManagerConfig.directEventTypes = tmp71;
             return viewManagerConfig;
+          case "end":
+          break;
+          case "enumerable":
+          break;
           case "error":
           break;
           case "exports":
@@ -549,10 +553,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "keys":
           break;
           case "kind":
-          break;
-          case "ks":
-          break;
-          case "space":
           break;
           case "label":
           break;
@@ -748,13 +748,7 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "ay":
           break;
-          case "getVoiceSettings":
-          break;
-          case "getVoiceSettingsWithShortcut":
-          break;
-          case "cutout":
-          break;
-          case "cutoutBottomRightInsetX":
+          case "getVoiceStateForUser":
           break;
           case "emojiLineHeight":
           break;
@@ -824,8 +818,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "NSFW_SPACE_WARNING_MODAL_CLICKED":
           break;
-          case "RoleRow":
-          break;
           case "rm":
           break;
           case "m":
@@ -844,11 +836,23 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "al":
           break;
-          case "CardVerticalSeparator":
+          case "CardStyleInterpolators":
           break;
-          case "SeparatorAction":
+          case "pol":
           break;
-          case "onBeforeGoBack":
+          case "ImageLockIcon":
+          break;
+          case "getSpotifyResourceType":
+          break;
+          case "SpotifyResourceTypes":
+          break;
+          case "sourceType":
+          break;
+          case "scalar":
+          break;
+          case "scalarInfo":
+          break;
+          case "forcedTheme":
           break;
           case "getChannelIcon":
           break;
@@ -876,171 +880,167 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "en":
           break;
-          case "componentName":
+          case "useVirtualViewLogging":
           break;
-          case "[[style]]":
+          case "getLottieType":
           break;
-          case "PasswordResetMethods":
-          break;
-          case "sw":
-          break;
-          case "resolved":
-          break;
-          case "resolvedGiftCodes":
-          break;
-          case "total_sound_slots":
-          break;
-          case "makeIAPRequest":
-          break;
-          case "questHomeBounties":
-          break;
-          case "BountiesShopCarouselExperimentVariation":
-          break;
-          case "hop":
-          break;
-          case "aro":
-          break;
-          case "Variation_Type":
-            tmp3 = str2;
-            tmp4 = str;
-            keys3 = str3;
+          case "LottieType":
           break;
           case "USE_APP_COMMAND":
           break;
           case "ANDROID_NOTIFICATION_LIGHTS":
           break;
           case "L":
-            obj2 = require;
-            let tmp52 = dependencyMap;
-            let tmp53 = require(50) /* processColor */;
-            _default1 = tmp53.default;
           break;
           case "LI":
           break;
           case "SAFETY_HUB_GET_SUSPENDED_AGE_VERIFICATION_METHODS":
-            obj2 = require;
-            tmp52 = dependencyMap;
-            tmp53 = require(50) /* processColor */;
-            _default1 = tmp53.default;
           break;
-          case "REQUIRE_REVERIFIED_EMAIL":
+          case "REQUIRE_SAFETY_FLOWS":
           break;
-          case "REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE":
-            obj2 = require;
-            tmp52 = dependencyMap;
-            tmp53 = require(50) /* processColor */;
-            _default1 = tmp53.default;
+          case "SAFETY_FLOWS":
           break;
-          case "PHONE_VERIFY_NO_PASSWORD":
-          break;
-          case "NEUTRAL":
-            obj2 = require;
-            let tmp50 = dependencyMap;
-            let tmp51 = require(80) /* processColorElement */;
-            _default1 = tmp51.default;
-          break;
-          case "NEUTRAL_1":
-          break;
-          case "NEUTRAL_10":
-            obj2 = require;
-            tmp50 = dependencyMap;
-            tmp51 = require(80) /* processColorElement */;
-            _default1 = tmp51.default;
-          break;
-          case "NEUTRAL_100":
-          break;
-          case "qZ+7BA":
-            obj2 = require;
-            tmp50 = dependencyMap;
-            tmp51 = require(80) /* processColorElement */;
-            _default1 = tmp51.default;
-          break;
-          case "BATTLENET_MIGRATION":
-          break;
-          case "MIGRATION_DESTINATION_ORIGIN":
-            obj2 = require;
-            let tmp48 = dependencyMap;
-            let tmp49 = require(81) /* resolveAssetSource */;
-            _default1 = tmp49.default;
-          break;
-          case "INVALID_BILLING_ADDRESS":
-          break;
-          case "ADDRESS_CITY":
-            obj2 = require;
-            tmp48 = dependencyMap;
-            tmp49 = require(81) /* resolveAssetSource */;
-            _default1 = tmp49.default;
-          break;
-          case "TYPOGRAPHY_EXPERIMENT_REMAPS":
+          case "SAFETY_FLOWS_MODAL_KEY":
+            tmp3 = str2;
+            tmp4 = str;
+            keys3 = str3;
           break;
           case "$ZodCheckMaxLength":
-            obj2 = require;
-            tmp48 = dependencyMap;
-            tmp49 = require(81) /* resolveAssetSource */;
-            _default1 = tmp49.default;
           break;
           case "kMaxLength":
           break;
           case "eng":
             obj2 = require;
-            tmp48 = dependencyMap;
-            tmp49 = require(81) /* resolveAssetSource */;
-            _default1 = tmp49.default;
+            let tmp52 = dependencyMap;
+            let tmp53 = require(50) /* processColor */;
+            _default1 = tmp53.default;
           break;
           case "ng":
           break;
           case "el":
-            obj2 = module;
-            let tmp47 = dependencyMap;
-            _default1 = module(55);
+            obj2 = require;
+            tmp52 = dependencyMap;
+            tmp53 = require(50) /* processColor */;
+            _default1 = tmp53.default;
           break;
           case "li":
           break;
           case "lim":
-            obj2 = module;
-            tmp47 = dependencyMap;
-            _default1 = module(55);
+            obj2 = require;
+            tmp52 = dependencyMap;
+            tmp53 = require(50) /* processColor */;
+            _default1 = tmp53.default;
           break;
           case "limited":
           break;
           case "limitedTimeBadge":
             obj2 = require;
-            let tmp45 = dependencyMap;
-            let tmp46 = require(54) /* _getFilterAmount */;
-            _default1 = tmp46.default;
+            let tmp50 = dependencyMap;
+            let tmp51 = require(80) /* processColorElement */;
+            _default1 = tmp51.default;
           break;
           case "mi":
           break;
           case "mit":
             obj2 = require;
-            tmp45 = dependencyMap;
-            tmp46 = require(54) /* _getFilterAmount */;
-            _default1 = tmp46.default;
+            tmp50 = dependencyMap;
+            tmp51 = require(80) /* processColorElement */;
+            _default1 = tmp51.default;
           break;
-          case "getAppVersion":
+          case "getAppealClassificationId":
           break;
-          case "onTapPollAnswer":
+          case "TableSwitchRow":
             obj2 = require;
-            let tmp44 = dependencyMap;
-            _default1 = require(56) /* processColorStops */.default;
+            tmp50 = dependencyMap;
+            tmp51 = require(80) /* processColorElement */;
+            _default1 = tmp51.default;
           break;
           case "$ZodMap":
           break;
           case "ZodMap":
             obj2 = require;
-            let tmp43 = dependencyMap;
-            _default1 = require(58) /* getPositionFromCSSValue */.default;
+            let tmp48 = dependencyMap;
+            let tmp49 = require(81) /* resolveAssetSource */;
+            _default1 = tmp49.default;
           break;
           case "M":
           break;
           case "ap":
             obj2 = require;
-            let tmp42 = dependencyMap;
-            _default1 = require(59) /* isBackgroundRepeatKeyword */.default;
+            tmp48 = dependencyMap;
+            tmp49 = require(81) /* resolveAssetSource */;
+            _default1 = tmp49.default;
           break;
           case "$ZodCheckGreaterThan":
           break;
           case "ToIntlMathematicalValue":
+            obj2 = require;
+            tmp48 = dependencyMap;
+            tmp49 = require(81) /* resolveAssetSource */;
+            _default1 = tmp49.default;
+          break;
+          case "th":
+          break;
+          case "ValueSetter":
+            obj2 = require;
+            tmp48 = dependencyMap;
+            tmp49 = require(81) /* resolveAssetSource */;
+            _default1 = tmp49.default;
+          break;
+          case "$ZodCheckNumberFormat":
+          break;
+          case "N":
+            obj2 = module;
+            let tmp47 = dependencyMap;
+            _default1 = module(55);
+          break;
+          case "NumberFormat":
+          break;
+          case "um":
+            obj2 = module;
+            tmp47 = dependencyMap;
+            _default1 = module(55);
+          break;
+          case "b":
+          break;
+          case "be":
+            obj2 = require;
+            let tmp45 = dependencyMap;
+            let tmp46 = require(54) /* _getFilterAmount */;
+            _default1 = tmp46.default;
+          break;
+          case "$ZodObject":
+          break;
+          case "$ZodObjectJIT":
+            obj2 = require;
+            tmp45 = dependencyMap;
+            tmp46 = require(54) /* _getFilterAmount */;
+            _default1 = tmp46.default;
+          break;
+          case "ZodObject":
+          break;
+          case "O":
+            obj2 = require;
+            let tmp44 = dependencyMap;
+            _default1 = require(56) /* processColorStops */.default;
+          break;
+          case "j":
+          break;
+          case "je":
+            obj2 = require;
+            let tmp43 = dependencyMap;
+            _default1 = require(58) /* getPositionFromCSSValue */.default;
+          break;
+          case "IT":
+          break;
+          case "MEDIA_PICKER_SEND_BUTTON_SPRING":
+            obj2 = require;
+            let tmp42 = dependencyMap;
+            _default1 = require(59) /* isBackgroundRepeatKeyword */.default;
+          break;
+          case "marginHorizontal":
+          break;
+          case "Direction":
             obj2 = require;
             tmp40 = dependencyMap;
             tmp41 = require(57) /* getValidLengthPercentageSizeOrNull */;
@@ -1064,53 +1064,29 @@ arg5.default = function getNativeComponentAttributes(arg0) {
             obj2[0] = _default;
             obj1 = obj2;
           break;
-          case "th":
-          break;
-          case "ValueSetter":
-          break;
-          case "$ZodCheckNumberFormat":
-          break;
-          case "N":
-          break;
-          case "NumberFormat":
-          break;
-          case "um":
-          break;
-          case "b":
-          break;
-          case "be":
-          break;
-          case "$ZodObject":
-          break;
-          case "$ZodObjectJIT":
-          break;
-          case "ZodObject":
-          break;
-          case "O":
-          break;
-          case "j":
-          break;
-          case "je":
-          break;
-          case "IT":
-          break;
-          case "MEDIA_PICKER_SEND_BUTTON_SPRING":
-          break;
-          case "marginHorizontal":
-          break;
-          case "Direction":
-          break;
           case "rect":
           break;
-          case "frr":
+          case "shooting_star":
+          break;
+          case "starIconUnselected":
+          break;
+          case "selectedChannel":
+          break;
+          case "selectedChannelId":
+          break;
+          case "selectedChannelIds":
+          break;
+          case "navBar":
+          break;
+          case "VIDEO_MODAL_ICON_END_CARD":
           break;
           case "PX_80":
           break;
           case "_":
           break;
-          case "useMaxAgeOptions":
+          case "disabledUntil":
           break;
-          case "setVideosMuted":
+          case "setVoiceMessageRecordingId":
           break;
           case "AUTO_MODERATION_REMOVE_REGEX_PATTERNS":
           break;
@@ -1132,11 +1108,9 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "perGuildMaxCount":
           break;
-          case "woman_kneeling_medium_dark_skin_tone":
+          case "_findRegion":
           break;
-          case "man_kneeling_medium_dark_skin_tone":
-          break;
-          case "flag_gn":
+          case "onChannelPress":
           break;
           case "PREMIUM_PLANS":
           break;
@@ -1182,9 +1156,7 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "et":
           break;
-          case "fallen_leaf":
-          break;
-          case "leafless_tree":
+          case "allowUIToHandleError":
           break;
           case "postformat":
           break;
@@ -1218,29 +1190,7 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "tagIconUrl":
           break;
-          case "violin":
-          break;
-          case "noStyleAndInteraction":
-          break;
-          case "actionSheetBackground":
-          break;
-          case "BackgroundBlurFillWithPress":
-          break;
-          case "conversationMetadataById":
-          break;
-          case "displayNameAccessibilityRole":
-          break;
-          case "playWhenInactive":
-          break;
-          case "activeDiscountInfo":
-          break;
-          case "focusTimeout":
-          break;
-          case "_maxSize":
-          break;
-          case "maxSize":
-          break;
-          case "maxSizeCallback":
+          case "blurTextInput":
           break;
           case "$ZodSymbol":
           break;
@@ -1252,9 +1202,15 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "bol":
           break;
-          case "QUEST_BAR_V2":
+          case "QUEST_BAR_VIDEO_QUEST_PREVIEW":
           break;
-          case "fromStorefrontCollectionRecord":
+          case "QUEST_PREVIEW_TOOL":
+          break;
+          case "QUEST_PREVIEW_TOOL_2":
+          break;
+          case "filterAttribute":
+          break;
+          case "from_user_id":
           break;
           case "ActionSheetHeaderPressableText":
           break;
@@ -1264,7 +1220,9 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "ext":
           break;
-          case "isIarUserReportingEnabled":
+          case "isImage":
+          break;
+          case "isImageCaptureIntentSupported":
           break;
           case "AccessibilityFocusView":
           break;
@@ -1279,8 +1237,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "reType":
           break;
           case "pe":
-          break;
-          case "sob":
           break;
           case "maxDynamicContentSize":
           break;
@@ -1354,12 +1310,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "onScroll":
           break;
-          case "woman_judge_tone3":
-          break;
-          case "man_judge_tone3":
-          break;
-          case "judge_tone3":
-          break;
           case "__i":
           break;
           case "__init":
@@ -1413,12 +1363,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "assetContainer":
           break;
           case "ss":
-          break;
-          case "partner_application_timestamp":
-          break;
-          case "timestampLabel":
-          break;
-          case "lastTakenICYMISurvey":
           break;
           case "_w":
           break;
@@ -1486,7 +1430,19 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "bel":
           break;
-          case "VIDEO_SPINNER_SHOWN_V2":
+          case "useNativeGiftContext":
+          break;
+          case "NativeGiftContextProvider":
+          break;
+          case "removeAnalyticsToken":
+          break;
+          case "enableImagePrefetchingAndroid":
+          break;
+          case "fetching":
+          break;
+          case "toAST":
+          break;
+          case "STEAM_ITEM_COUNT_DOTA2":
           break;
           case "Role":
           break;
@@ -1501,8 +1457,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "ble":
           break;
           case "leg_tone1":
-          break;
-          case "captureReplay":
           break;
           case "FAB_BUTTON_SIZE":
           break;
@@ -1526,23 +1480,19 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "paddingVertical":
           break;
-          case "carouselPosition":
+          case "couple_with_heart_person_person_medium_dark_skin_tone_medium_skin_tone":
           break;
-          case "onLongPressItem":
+          case "newPostCount":
           break;
-          case "embedURI":
+          case "CONTROL_CRITICAL_PRIMARY_TEXT_DEFAULT":
           break;
-          case "RIOT_MIGRATION":
+          case "DEFAULT_CATEGORY_ROWS":
           break;
-          case "MIGRATION_SOURCE_ORIGIN":
+          case "WSM":
           break;
-          case "INVALID_CANNOT_FRIEND_SELF":
+          case "SMALL_BUTTON_PADDING":
           break;
-          case "SELF_APPLICATION_IDENTITY_CONFIG":
-          break;
-          case "GUILD_EVENT_EXCEPTION":
-          break;
-          case "GUILD_EVENT_EXCEPTIONS":
+          case "GUILD_EVENT_USER_COUNTS":
           break;
           case "SvgUri":
           break;
@@ -1574,21 +1524,13 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "ms":
           break;
-          case "cY+Oob":
-          break;
-          case "objCreate":
-          break;
-          case "listView":
-          break;
-          case "listViewportHeight":
-          break;
           case "GuildEntityDao":
           break;
           case "EntityDao":
           break;
           case "Dao":
           break;
-          case "couple_with_heart_man_man_tone3_tone2":
+          case "assertInt32":
           break;
           case "merged":
           break;
@@ -1618,13 +1560,19 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "io":
           break;
-          case "showGuildOfficialMessageGradient":
+          case "showGuardCallAlert":
           break;
-          case "setZoomFactor":
+          case "Backspace":
+          break;
+          case "BackspaceIcon":
           break;
           case "_applyCombination":
           break;
           case "ly":
+          break;
+          case "USER_PROFILE_WIDGETS":
+          break;
+          case "USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE":
           break;
           case "foi":
           break;
@@ -1656,19 +1604,15 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "DATE_CONFIG":
           break;
-          case "GUILD_GAME_SHOP":
+          case "GUILD_GETTING_STARTED":
           break;
-          case "GAME_SHOP_NEW_BADGE":
+          case "getOriginApplicationId":
           break;
           case "FormSubmitErrorType":
           break;
-          case "person_walking_facing_right_tone2":
+          case "person_walking_facing_right_tone4":
           break;
-          case "shadowColorIos":
-          break;
-          case "os.version":
-          break;
-          case "notifyStoreCreated":
+          case "numTimesDismissed":
           break;
           case "_bodyArrayBuffer":
           break;
@@ -1704,19 +1648,7 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "shiftLeft":
           break;
-          case "joinedEmojiSourceGuildRecord":
-          break;
-          case "mainSubview":
-          break;
-          case "viewPadding":
-          break;
-          case "getLurkingPreviewExpiry":
-          break;
-          case "componentWidth":
-          break;
-          case "thumbnailPreviewSrc":
-          break;
-          case "classificationDetailContainer":
+          case "closeContainer":
           break;
           case "DynamicallyInjectedByGestureHandler":
           break;
@@ -1746,9 +1678,17 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "_id":
           break;
-          case "inlineImages":
+          case "premiumSubscriberCount":
           break;
-          case "voiceStateChannelIdSummaryForGuild":
+          case "TK":
+          break;
+          case "TKL":
+          break;
+          case "KLOhbO":
+          break;
+          case "OAUTH2_AUTHORIZE_SUCCESS_OPEN_APP_CLICKED":
+          break;
+          case "SEND_REACT_AVATAR":
           break;
           case "family_adult_adult_child":
           break;
@@ -1765,10 +1705,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "dr":
           break;
           case "ren":
-          break;
-          case "woman_in_motorized_wheelchair_facing_right_tone2":
-          break;
-          case "man_in_motorized_wheelchair_facing_right_tone2":
           break;
           case "accessibilityIsModalView":
           break;
@@ -1788,11 +1724,15 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "rs":
           break;
-          case "renderNavigationView":
+          case "audioDevice":
           break;
-          case "onViewAll":
+          case "audioDeviceGuid":
           break;
-          case "onViewAllPerks":
+          case "GuidePreviousDay":
+          break;
+          case "valueOf":
+          break;
+          case "setCommonResponseAttributes":
           break;
           case "activityParticipantIdToApplicationId":
           break;
@@ -1802,9 +1742,9 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "concatSettings":
           break;
-          case "subscription_listings":
+          case "subscriptionStatus":
           break;
-          case "subscription_listings_ids":
+          case "useCanViewArchivedPosts":
           break;
           case "$constructor":
           break;
@@ -1864,19 +1804,21 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "Badge":
           break;
-          case "CustomLinkType":
+          case "QUICKSWITCHER_RESULT_SELECTED":
           break;
-          case "people_holding_hands_tone5_tone2":
-          break;
-          case "generateSessionId":
+          case "generateTraceId":
           break;
           case "cr":
           break;
           case "les":
           break;
-          case "useScreenRecordingStore":
+          case "createAnimatedThemedStyles":
           break;
-          case "recordSuccess":
+          case "supportsFeature":
+          break;
+          case "recomputeViewableItems":
+          break;
+          case "computeViewableItems":
           break;
           case "_$esjava$current":
           break;
@@ -1886,7 +1828,9 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "currentAppIcon":
           break;
-          case "connectionsPromptContainer":
+          case "containerIOS":
+          break;
+          case "IOS_TWO_FA_ADD_SMS":
           break;
           case "message_type":
           break;
@@ -1906,8 +1850,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "dddd":
           break;
-          case "FORUM_CHANNEL_NEW_POST_DRAFT_CREATED":
-          break;
           case "__defaultLocale":
           break;
           case "def":
@@ -1922,6 +1864,8 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "propertyKeyTypes":
           break;
+          case "_formatPaymentResourceData":
+          break;
           case "define":
           break;
           case "efi":
@@ -1930,13 +1874,7 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "fin":
           break;
-          case "_isDSTShifted":
-          break;
-          case "information_desk_person":
-          break;
-          case "information_desk_person_tone1":
-          break;
-          case "person_tone1_white_hair":
+          case "setIncomingVideoEnabled":
           break;
           case "undelete":
           break;
@@ -1952,11 +1890,7 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "startMs":
           break;
-          case "shouldUseAnimatedObjectForTransform":
-          break;
-          case "formTintColor":
-          break;
-          case "eligibleToReceivePremiumRewards":
+          case "shouldTriggerResponderTransferOnScrollAndroid":
           break;
           case "avatar_description":
           break;
@@ -1996,9 +1930,11 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "led":
           break;
-          case "getCurrentReactNativeTracingIntegration":
+          case "user_position":
           break;
-          case "onTapThreadEmbed":
+          case "positionThread":
+          break;
+          case "onThreadCreated":
           break;
           case "_dispatch":
           break;
@@ -2013,8 +1949,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "patch":
           break;
           case "tc":
-          break;
-          case "removeSavedMessage":
           break;
           case "getChannelThreadsVersion":
           break;
@@ -2038,11 +1972,17 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "internalBinaryRead":
           break;
-          case "flag_es":
+          case "flag_fi":
           break;
-          case "userCode":
+          case "_fill":
           break;
-          case "userCodeData":
+          case "_fillMissedErrors":
+          break;
+          case "shouldShowBlurredThumbnailImage":
+          break;
+          case "getAverageRenderTime":
+          break;
+          case "useScaledRowHeightData":
           break;
           case "div":
           break;
@@ -2052,7 +1992,7 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "ver":
           break;
-          case "renderCommonSettingsSection":
+          case "renderCommunicationDisabled":
           break;
           case "LhlgY9":
           break;
@@ -2066,15 +2006,9 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "doneButtonContainer":
           break;
-          case "currencySymbol":
+          case "addVerification":
           break;
-          case "dispose":
-          break;
-          case "models":
-          break;
-          case "applications":
-          break;
-          case "canSeeExperimentEmbeds":
+          case "VerificationCriteria":
           break;
           case "__duration":
           break;
@@ -2090,7 +2024,11 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "ratio":
           break;
-          case "PUSH_NOTIFICATION_REACTIVATION_PROMPT":
+          case "SafetyWarningTypes":
+          break;
+          case "QUEST_CONTENT_CLICKED":
+          break;
+          case "QUEST_ENROLLMENT_BLOCKED_BOTTOM_SHEET":
           break;
           case "app_hardware_acceleration_enabled":
           break;
@@ -2127,10 +2065,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "mer":
           break;
           case "era":
-          break;
-          case "cancelAnimation":
-          break;
-          case "cancelAnimationFrame":
           break;
           case "beforeAddRecordingEvent":
           break;
@@ -2192,15 +2126,11 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "__findAnimatedPropsNodes":
           break;
-          case "accountNotificationSettings":
+          case "GUILD_MOD_DASH_MEMBER_SAFETY":
           break;
-          case "NotificationSettingsChannelPresets":
+          case "MEMBER_SAFETY":
           break;
-          case "GAME_SERVERS_ME":
-          break;
-          case "MEDIA_SINK_WANTS":
-          break;
-          case "MEDIA_SINK_WANTS_PROPERTIES":
+          case "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS":
           break;
           case "system_channel_flags":
           break;
@@ -2222,13 +2152,17 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "oldestUnreadMessageIdStale":
           break;
-          case "setOnNativeMuteChangedCallback":
+          case "IMAGE_ONLY_ANSWERS":
           break;
-          case "NativeMuteChanged":
+          case "isCreatorMonetizationEnabledGuild":
           break;
-          case "backgroundHeroAsset":
+          case "getGuildBannerURL":
           break;
-          case "setVideoDevice":
+          case "GIFTS":
+          break;
+          case "STICKY_HEADER_MARGIN_BOTTOM":
+          break;
+          case "MASTERPASS_POPUP_CLOSED":
           break;
           case "fo":
           break;
@@ -2246,11 +2180,9 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "BadgePacksAbstractUI":
           break;
-          case "woman_judge_medium_skin_tone":
+          case "touchableHandleResponderTerminationRequest":
           break;
-          case "man_judge_medium_skin_tone":
-          break;
-          case "judge_medium_skin_tone":
+          case "onRequestSend":
           break;
           case "getChannelA11yHint":
           break;
@@ -2259,6 +2191,8 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "interpolationIndex":
           break;
           case "exposureType":
+          break;
+          case "allowDevLinks":
           break;
           case "getCurrentUserActiveStream":
           break;
@@ -2282,19 +2216,23 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "constraints":
           break;
-          case "DetectableAppNames":
+          case "+TSRGD":
           break;
-          case "cta":
+          case "SR":
           break;
-          case "carefullyOpenDatabase":
+          case "GD":
           break;
-          case "HeadphonesAndControllerSpotIllustration":
+          case "GDCO":
           break;
-          case "adp":
+          case "COERCE":
           break;
-          case "dp":
+          case "COERCEFULL":
           break;
-          case "ControllerSpotIllustration":
+          case "FULLY_EXPANDED":
+          break;
+          case "FRIENDS_LIST":
+          break;
+          case "FRIENDS_LIST_CLICKED":
           break;
           case "_getGuildState":
           break;
@@ -2304,19 +2242,21 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "Guild":
           break;
+          case "$ZodEncodeError":
+          break;
+          case "ncode":
+          break;
+          case "sessionSampleRate":
+          break;
           case "_guildId":
           break;
           case "gu":
           break;
           case "current_guild_id":
           break;
-          case "getComponentViewTag":
+          case "getConfigFetchState":
           break;
-          case "GUILD_ONBOARDING_QUESTION":
-          break;
-          case "NO_CONNECTION":
-          break;
-          case "NO_CONNECTION_FOUND":
+          case "custom_install_url":
           break;
           case "hasDiversity":
           break;
@@ -2330,9 +2270,13 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "DefaultGuildsRestrictedV2":
           break;
-          case "pool":
+          case "collectionId":
           break;
-          case "poolSize":
+          case "collectionIds":
+          break;
+          case "speechEventCount":
+          break;
+          case "getDropData":
           break;
           case "avatar_hash":
           break;
@@ -2340,31 +2284,13 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "hashKey":
           break;
-          case "wrapMcpServerWithSentry":
-          break;
-          case "[[initializedNumberFormat]]":
-          break;
-          case "NotifTypes":
-          break;
           case "bhd":
           break;
           case "IN_APP_MESSAGE_SOUNDS":
           break;
           case "SOUNDS_PER_ROW":
           break;
-          case "CUSTOM_PROFILE_SETTINGS_BANNER_BUTTON":
-          break;
-          case "BUTTON_PRIMARY_DISABLED_BACKGROUND":
-          break;
-          case "BACKGROUND_CODE":
-          break;
-          case "CODE_BOLD":
-          break;
-          case "BOL":
-          break;
-          case "TEXT_VOICE_CONNECTED":
-          break;
-          case "VOICE_CONNECTED_LAST_SESSION":
+          case "CUW":
           break;
           case "UNSTABLE_headerInsets":
           break;
@@ -2380,9 +2306,27 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "PopoutWindowKeys":
           break;
-          case "wrapHue":
+          case "NOT_SHAREABLE":
           break;
-          case "headerMessages":
+          case "NOT_SHAREABLE_QUEST":
+          break;
+          case "EMBEDDED_RELEASED":
+          break;
+          case "CHECKPOINT_PERSONA_EIGHT_SECONDARY":
+          break;
+          case "SECONDARY_PIP_TOP_MARGIN":
+          break;
+          case "INVALID_ENCODING":
+          break;
+          case "GOTO_IGNORE":
+          break;
+          case "IGNORE_GUILD_IDS":
+          break;
+          case "MEDIA_KEYBOARD_BAR_MARGIN_HORIZONTAL":
+          break;
+          case "AllGuildSettings":
+          break;
+          case "GuildSettings":
           break;
           case "player_height":
           break;
@@ -2395,10 +2339,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "ht":
           break;
           case "withOverlay":
-          break;
-          case "userSearch":
-          break;
-          case "userSearchContext":
           break;
           case "fieldText":
           break;
@@ -2421,8 +2361,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "icons":
           break;
           case "iconsContainer":
-          break;
-          case "rightwards_pushing_hand_medium_dark_skin_tone":
           break;
           case "_include":
           break;
@@ -2466,27 +2404,7 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "onRemoveAnswerImage":
           break;
-          case "getAttachmentPayload":
-          break;
-          case "loadCachedMessages":
-          break;
-          case "mostRecentRawMessage":
-          break;
-          case "getApplicationCommandOptionQueryOptions":
-          break;
-          case "unable_to_sync_deletes":
-          break;
-          case "deletes":
-          break;
-          case "after_message_id":
-          break;
-          case "message_id":
-          break;
-          case "message_identity":
-          break;
-          case "identity":
-          break;
-          case "identityEnabled":
+          case "getAttachmentUrl":
           break;
           case "_isHovered":
           break;
@@ -2498,15 +2416,9 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "tl":
           break;
-          case "getApexExperiments":
+          case "getAppDir":
           break;
-          case "ApexExperiment":
-          break;
-          case "ApexExperimentsMessage":
-          break;
-          case "MessageAttachmentFlags":
-          break;
-          case "getEmoticonByName":
+          case "getCacheKey":
           break;
           case "activity_items":
           break;
@@ -2526,7 +2438,7 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "xs":
           break;
-          case "GUILD_STREAM":
+          case "CLIENT_PORT_ATTRIBUTE":
           break;
           case "isRendered":
           break;
@@ -2550,12 +2462,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "ke":
           break;
-          case "woman_judge_tone5":
-          break;
-          case "man_judge_tone5":
-          break;
-          case "judge_tone5":
-          break;
           case "stringOptionInput":
           break;
           case "put_litter_in_its_place":
@@ -2568,12 +2474,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "kin":
           break;
-          case "BananaSpotIllustration":
-          break;
-          case "Backspace":
-          break;
-          case "BackspaceIcon":
-          break;
           case "aria-label":
           break;
           case "aria-labelledby":
@@ -2583,14 +2483,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "byAppEntry":
           break;
           case "tryGetLayout":
-          break;
-          case "guildOption":
-          break;
-          case "USER_MENTION":
-          break;
-          case "MENTION_CHANNEL_PREV":
-          break;
-          case "CHANNEL_PREV":
           break;
           case "Buf8":
           break;
@@ -2604,9 +2496,21 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "leftActions":
           break;
-          case "CHAT_INPUT_FLOATING_BORDER_RADIUS":
+          case "ALLOW_ANY_VIEWER_CLIPS":
           break;
-          case "USER_DISCOVERY_UPDATED":
+          case "ANY":
+          break;
+          case "CLIPS":
+          break;
+          case "CLIPS_HARDWARE_CLASSIFICATION":
+          break;
+          case "CLIPS_HARDWARE_CLASSIFICATION_VERSION":
+          break;
+          case "NEUTRAL_91":
+          break;
+          case "woman_guard_medium_skin_tone":
+          break;
+          case "man_guard_medium_skin_tone":
           break;
           case "_$esjava$I_length":
           break;
@@ -2624,19 +2528,21 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "MAX_VISIBLE_PAGES":
           break;
-          case "useFocusedInputLayoutHandler":
-          break;
           case "load":
           break;
           case "J":
           break;
           case "setCurrent$esjava$1":
           break;
-          case "expiration":
+          case "Polyline":
           break;
-          case "expirationDate":
+          case "lineBreakMode":
           break;
-          case "onDateChange":
+          case "department_store":
+          break;
+          case "_storeSecureFrameTransitionData":
+          break;
+          case "onDataChange":
           break;
           case "getApplicationSubscriptionSystemMessageASTContent":
           break;
@@ -2670,9 +2576,13 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "maxListeners":
           break;
-          case "shouldShowRaidInAppNotification":
+          case "shouldShowOutboundPromotionOnPlatform":
           break;
-          case "InAppNotificationAccessoryTypes":
+          case "formText":
+          break;
+          case "extractMediaSourcesFromMessage":
+          break;
+          case "getAdminGuildEntryIds":
           break;
           case "__memo":
           break;
@@ -2750,21 +2660,15 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "AuditLogActions":
           break;
-          case "releaseWebView":
-          break;
-          case "errorIds":
-          break;
-          case "nine_thirty":
-          break;
-          case "fod":
-          break;
-          case "guildRecentsDismissedAt":
+          case "handleSetCallNotificationExperiment":
           break;
           case "track_next":
           break;
           case "_nextChannelId":
           break;
           case "diffClamp":
+          break;
+          case "screenListeners":
           break;
           case "requireExact":
           break;
@@ -2775,6 +2679,8 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "mentionBadge":
           break;
           case "imageBanner":
+          break;
+          case "unsafe_getResolvedRawColor":
           break;
           case "$ZodUnknown":
           break;
@@ -2804,7 +2710,17 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "binData":
           break;
-          case "_threadMemberLists":
+          case "endAudioRecording":
+          break;
+          case "getNullTerminatedStringFromDataView":
+          break;
+          case "withManaTextMigrationHighlight":
+          break;
+          case "light_rail":
+          break;
+          case "railroad_track":
+          break;
+          case "_trackRemainingSecureFrameTransitions":
           break;
           case "shouldUseFabricChatInput":
           break;
@@ -2814,21 +2730,7 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "registerUserExperiment":
           break;
-          case "PREFERRED_LOCALE":
-          break;
-          case "E_NOT_PREPARED":
-          break;
-          case "REDESIGN_CHANNEL_NAME_MUTED_TEXT":
-          break;
-          case "TEXT_LIGHTNESS_MULTIPLIER_DARK_THEME":
-          break;
-          case "METRIC_MAP":
-          break;
-          case "APPLICATION_DIRECTORY_COLLECTION_ITEM_IMAGE":
-          break;
-          case "IMAGE_CAROUSEL_EXPERIMENT_TILE_MARGIN":
-          break;
-          case "INPUT_FIELD_TEXT_STYLE_MD":
+          case "polyfillObjectProperty":
           break;
           case "_opacityActive":
           break;
@@ -2857,6 +2759,8 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "parentSpanId":
           break;
           case "differenceInCalendarDays":
+          break;
+          case "longestStallTime":
           break;
           case "hash_mask":
           break;
@@ -2888,11 +2792,7 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "StackRouter":
           break;
-          case "primaryLuminanceWeights":
-          break;
-          case "dragHandlePressableProps":
-          break;
-          case "clearAnalyticsEventsRecording":
+          case "beaconDomain":
           break;
           case "FePointLight":
           break;
@@ -2904,8 +2804,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "prototypeInitialized":
           break;
-          case "GiftReminderCoachmark":
-          break;
           case "getGlobalScope":
           break;
           case "openEndStageModal":
@@ -2913,6 +2811,108 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "_pushCells":
           break;
           case "pus":
+          break;
+          case "badgePill":
+          break;
+          case "badgePillDarkMode":
+          break;
+          case "debugOverlayFrameVis":
+          break;
+          case "rad":
+          break;
+          case "ii":
+          break;
+          case "animateDrawer":
+          break;
+          case "DrawerActions":
+          break;
+          case "aw":
+          break;
+          case "awe":
+          break;
+          case "verifiedBot":
+          break;
+          case "$ZodPrefault":
+          break;
+          case "ZodPrefault":
+          break;
+          case "setOutputDevice":
+          break;
+          case "setOutputDeviceById":
+          break;
+          case "reg":
+          break;
+          case "register":
+          break;
+          case "recipients":
+          break;
+          case "reject":
+          break;
+          case "eject":
+          break;
+          case "ErrorNumber":
+          break;
+          case "__replaceAnimatedNodeWithValues":
+          break;
+          case "place":
+          break;
+          case "lac":
+          break;
+          case "ace":
+          break;
+          case "isCamera":
+          break;
+          case "kiss_person_person_medium_light_skin_tone_light_skin_tone":
+          break;
+          case "_resolve":
+          break;
+          case "_resolveEmpty":
+          break;
+          case "sol":
+          break;
+          case "AppsFlyer":
+          break;
+          case "_$esjava$result":
+          break;
+          case "resultCount":
+          break;
+          case "sul":
+          break;
+          case "getBrightness":
+          break;
+          case "BrightnessDown":
+          break;
+          case "ownerId":
+          break;
+          case "handshake_dark_skin_tone_medium_light_skin_tone":
+          break;
+          case "enrolledQuestUserStatus":
+          break;
+          case "useBoostToUnlockCoachmarkDCF":
+          break;
+          case "DCFEventTypes":
+          break;
+          case "es-CL":
+          break;
+          case "CLAN_TAG":
+          break;
+          case "CLAN_TAG_UPDATE":
+          break;
+          case "UPDATE_VOICE_CHANNEL_STATUS":
+          break;
+          case "VOICE_CHANNEL_STATUS_OUTCOME":
+          break;
+          case "NETWORKING_TOKEN":
+          break;
+          case "unsync":
+          break;
+          case "addFrame":
+          break;
+          case "run":
+          break;
+          case "actionStatusAccessibilityLabel":
+          break;
+          case "scale":
           break;
         }
       }

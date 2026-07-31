@@ -1,10 +1,10 @@
-// Module ID: 11378
-// Function ID: 11379
+// Module ID: 11396
+// Function ID: 11397
 // Name: restartState
-// Dependencies: [19, 38, 5503, 2]
+// Dependencies: [19, 38, 5507, 2]
 // Exports: default
 
-// Module 11378 (restartState)
+// Module 11396 (restartState)
 import noop from "noop";
 
 let closure_3 = function FocusHelperState() {
@@ -18,7 +18,7 @@ class FocusHelperImpl {
     obj = Object.create(new.target.prototype);
     closure_0 = obj;
     tmp2 = FocusHelperState;
-    if (typeof FocusHelperState !== "find") {
+    if (typeof FocusHelperState !== "fileFinishedImporting") {
       str = "Trying to call a non-function";
       throwTypeErrorResult = HermesBuiltin.throwTypeError();
     }
@@ -80,7 +80,7 @@ class FocusHelperImpl {
 }
 const prototype = FocusHelperImpl.prototype;
 prototype["restartState"] = function restartState() {
-  if (typeof closure_3 !== "find") {
+  if (typeof closure_3 !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(closure_3.prototype);
@@ -119,11 +119,11 @@ export default function useFocusHelper() {
   let onAddAnswer = obj.onAddAnswer;
   let obj2;
   obj2 = onAddAnswer(obj2[2])(() => {
-    if (typeof closure_4 !== "find") {
+    if (typeof closure_4 !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     let obj = Object.create(closure_4.prototype);
-    if (typeof closure_3 !== "find") {
+    if (typeof closure_3 !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     obj = Object.create(closure_3.prototype);

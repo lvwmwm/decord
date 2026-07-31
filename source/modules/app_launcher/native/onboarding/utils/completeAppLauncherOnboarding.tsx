@@ -1,18 +1,18 @@
-// Module ID: 11216
-// Function ID: 11217
+// Module ID: 11234
+// Function ID: 11235
 // Name: completeAppLauncherOnboarding
-// Dependencies: [4005, 1358, 2]
+// Dependencies: [4009, 1358, 2]
 // Exports: default
 
-// Module 11216 (completeAppLauncherOnboarding)
+// Module 11234 (completeAppLauncherOnboarding)
 let result = require("set").fileFinishedImporting("modules/app_launcher/native/onboarding/utils/completeAppLauncherOnboarding.tsx");
 
 export default function completeAppLauncherOnboarding(dismissAction) {
-  let obj = require(4005) /* UNSAFE_isDismissibleContentDismissed */;
+  let obj = require(4009) /* UNSAFE_isDismissibleContentDismissed */;
   obj = { dismissAction };
   const result = obj.UNSAFE_markDismissibleContentAsDismissed(require(1358) /* DismissibleContent */.DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, obj);
   obj = { dismissAction };
-  const result1 = require(4005) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1358) /* DismissibleContent */.DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER, obj);
-  const obj3 = require(4005) /* UNSAFE_isDismissibleContentDismissed */;
-  const result2 = require(4005) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1358) /* DismissibleContent */.DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER, { dismissAction });
+  const result1 = require(4009) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1358) /* DismissibleContent */.DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER, obj);
+  const obj3 = require(4009) /* UNSAFE_isDismissibleContentDismissed */;
+  const result2 = require(4009) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1358) /* DismissibleContent */.DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER, { dismissAction });
 };

@@ -1,10 +1,10 @@
-// Module ID: 9132
-// Function ID: 9133
+// Module ID: 9145
+// Function ID: 9146
 // Name: markAnalyticsFeedItemSeen
 // Dependencies: [709, 2]
 // Exports: flushAnalyticsFeedItems, markAnalyticsFeedItemSeen, markAnalyticsFeedItemUnseen
 
-// Module 9132 (markAnalyticsFeedItemSeen)
+// Module 9145 (markAnalyticsFeedItemSeen)
 const result = require("set").fileFinishedImporting("utils/AnalyticsFeedItemSeenActionCreators.tsx");
 
 export const markAnalyticsFeedItemSeen = function markAnalyticsFeedItemSeen(forumPostSeenManagerId, feedItemId, timestampMillis) {

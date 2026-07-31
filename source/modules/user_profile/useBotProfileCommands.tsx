@@ -1,17 +1,17 @@
-// Module ID: 11955
-// Function ID: 11956
+// Module ID: 11973
+// Function ID: 11974
 // Name: useBotProfileCommands
-// Dependencies: [19, 8021, 1906, 2]
+// Dependencies: [19, 8028, 1906, 2]
 // Exports: default
 
-// Module 11955 (useBotProfileCommands)
+// Module 11973 (useBotProfileCommands)
 import noop from "noop";
 
 const require = arg1;
 const result = require("PermissionOverwriteType").fileFinishedImporting("modules/user_profile/useBotProfileCommands.tsx");
 
 export default function useBotProfileCommands(channel) {
-  let obj = importAll(8021);
+  let obj = importAll(8028);
   const accessibleCommandsForApplication = obj.useAccessibleCommandsForApplication(channel, arg1, arg2);
   const commands = accessibleCommandsForApplication.commands;
   obj = {

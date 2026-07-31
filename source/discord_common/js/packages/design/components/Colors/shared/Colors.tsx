@@ -1,10 +1,10 @@
-// Module ID: 3998
-// Function ID: 3999
+// Module ID: 4002
+// Function ID: 4003
 // Name: WCAGContrastRatios
 // Dependencies: [32, 689, 2]
 // Exports: brightenColor, darkenColor, getContrastingColor, setColorOpacity
 
-// Module 3998 (WCAGContrastRatios)
+// Module 4002 (WCAGContrastRatios)
 import _slicedToArray from "_slicedToArray";
 
 let obj = { NonText: 3, Text: 4.5, HighContrastText: 7 };

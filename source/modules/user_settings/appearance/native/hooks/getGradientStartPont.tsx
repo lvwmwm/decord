@@ -1,10 +1,10 @@
-// Module ID: 14313
-// Function ID: 14314
+// Module ID: 14336
+// Function ID: 14337
 // Name: getHorizontalOrVerticalStartPoint
 // Dependencies: [2]
 // Exports: default
 
-// Module 14313 (getHorizontalOrVerticalStartPoint)
+// Module 14336 (getHorizontalOrVerticalStartPoint)
 function getHorizontalOrVerticalStartPoint(arg0, arg1, arg2) {
   if (0 === arg0) {
     const items = [-arg1 / 2, 0];
@@ -50,7 +50,7 @@ const fn = function t(arg0, arg1, arg2) {
     sum = result + 360;
   }
   if (sum % 90 === 0) {
-    if (typeof getHorizontalOrVerticalStartPoint !== "find") {
+    if (typeof getHorizontalOrVerticalStartPoint !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     if (0 === sum) {
@@ -71,7 +71,7 @@ const fn = function t(arg0, arg1, arg2) {
     const _Math2 = Math;
     const tanResult = Math.tan(sum * Math.PI / 180);
     const result1 = -1 / tanResult;
-    if (typeof getStartCornerToIntersect !== "find") {
+    if (typeof getStartCornerToIntersect !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     const result2 = arg1 / 2;

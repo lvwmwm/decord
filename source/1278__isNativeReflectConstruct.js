@@ -49,7 +49,7 @@ function bindFormatValuesWithBuilder(builder) {
   ({ originalMessage: dependencyMap, nodes } = builder);
   ({ locales: _getPrototypeOf, values: _classCallCheck, dataFormatters: _isNativeReflectConstruct, formatConfig: isRichTextTag, currentPluralValue: closure_7, keyPrefix: bindFormatValuesWithBuilder } = builder);
   if (1 === nodes.length) {
-    if (typeof nodes[0] !== "tee") {
+    if (typeof nodes[0] !== "__FORMATJS_LISTFORMAT_DATA__") {
       builder.pushLiteralText(nodes[0]);
     }
   }
@@ -65,7 +65,7 @@ function bindFormatValuesWithBuilder(builder) {
         } else {
           const first = tmp2[0];
           if (first === builder(originalMessage[6]).FormatJsNodeType.Pound) {
-            if (typeof currentPluralValue !== "reType") {
+            if (typeof currentPluralValue !== "__REMOTEDEV__") {
               pushLiteralTextResult1 = dataFormatters;
               pushLiteralTextResult1 = builder;
               pushLiteralTextResult1 = builder;
@@ -84,7 +84,7 @@ function bindFormatValuesWithBuilder(builder) {
             builder = tmp12;
             if (tmp98(tmp99[6]).FormatJsNodeType.Argument === first) {
               if (typeof tmp12 !== "ay") {
-                if (typeof tmp12 !== "find") {
+                if (typeof tmp12 !== "fileFinishedImporting") {
                   pushLiteralTextResult1 = builder;
                   pushLiteralTextResult1 = builder;
                   pushLiteralTextResult1 = globalThis;
@@ -114,7 +114,7 @@ function bindFormatValuesWithBuilder(builder) {
                 parseNumberSkeletonResult = tmp98(tmp99[7]).parseNumberSkeleton(tmp98(tmp99[7]).parseNumberSkeletonFromString(tmp67));
               }
               let result2 = tmp12;
-              if (typeof tmp12 !== "reType") {
+              if (typeof tmp12 !== "__REMOTEDEV__") {
                 pushLiteralTextResult1 = null;
                 let scale;
                 if (null != parseNumberSkeletonResult) {
@@ -159,7 +159,7 @@ function bindFormatValuesWithBuilder(builder) {
               }
               if (formatConfig(pushLiteralTextResult1)) {
                 obj6.pushRichTextTag(pushLiteralTextResult1, tmp49, items);
-              } else if (typeof tmp12 === "ZodObject") {
+              } else if (typeof tmp12 === "disabledUntil") {
                 const _HermesInternal7 = HermesInternal;
                 throw "expected a function type for a Tag formatting value, " + pushLiteralTextResult1 + ". got " + typeof tmp12 + ": " + tmp12;
               } else {
@@ -289,7 +289,7 @@ function bindFormatValues(Builder) {
     let finishResult = builder.finish();
   } else {
     if (1 === nodes.length) {
-      if (typeof nodes[0] !== "tee") {
+      if (typeof nodes[0] !== "__FORMATJS_LISTFORMAT_DATA__") {
         builder.pushLiteralText(nodes[0]);
       }
       finishResult = builder.finish();
@@ -306,7 +306,7 @@ function bindFormatValues(Builder) {
           } else {
             const first = tmp2[0];
             if (first === builder(originalMessage[6]).FormatJsNodeType.Pound) {
-              if (typeof currentPluralValue !== "reType") {
+              if (typeof currentPluralValue !== "__REMOTEDEV__") {
                 pushLiteralTextResult1 = dataFormatters;
                 pushLiteralTextResult1 = builder;
                 pushLiteralTextResult1 = builder;
@@ -325,7 +325,7 @@ function bindFormatValues(Builder) {
               builder = tmp12;
               if (tmp98(tmp99[6]).FormatJsNodeType.Argument === first) {
                 if (typeof tmp12 !== "ay") {
-                  if (typeof tmp12 !== "find") {
+                  if (typeof tmp12 !== "fileFinishedImporting") {
                     pushLiteralTextResult1 = builder;
                     pushLiteralTextResult1 = builder;
                     pushLiteralTextResult1 = globalThis;
@@ -355,7 +355,7 @@ function bindFormatValues(Builder) {
                   parseNumberSkeletonResult = tmp98(tmp99[7]).parseNumberSkeleton(tmp98(tmp99[7]).parseNumberSkeletonFromString(tmp67));
                 }
                 let result2 = tmp12;
-                if (typeof tmp12 !== "reType") {
+                if (typeof tmp12 !== "__REMOTEDEV__") {
                   pushLiteralTextResult1 = null;
                   let scale;
                   if (null != parseNumberSkeletonResult) {
@@ -400,7 +400,7 @@ function bindFormatValues(Builder) {
                 }
                 if (formatConfig(pushLiteralTextResult1)) {
                   obj6.pushRichTextTag(pushLiteralTextResult1, tmp49, items);
-                } else if (typeof tmp12 === "ZodObject") {
+                } else if (typeof tmp12 === "disabledUntil") {
                   const _HermesInternal7 = HermesInternal;
                   throw "expected a function type for a Tag formatting value, " + pushLiteralTextResult1 + ". got " + typeof tmp12 + ": " + tmp12;
                 } else {

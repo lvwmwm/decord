@@ -1,10 +1,10 @@
-// Module ID: 11995
-// Function ID: 11996
+// Module ID: 12013
+// Function ID: 12014
 // Name: ActiveTimestamp
-// Dependencies: [19, 17, 1946, 21, 4189, 712, 11993, 7911, 4185, 589, 8931, 10911, 11996, 1236, 11998, 12000, 11943, 9967, 6646, 687, 2]
+// Dependencies: [19, 17, 1946, 21, 4193, 712, 12011, 7918, 4189, 589, 8944, 10929, 12014, 1236, 12016, 12018, 11961, 9984, 6652, 687, 2]
 // Exports: CustomStatusTimestampBadge, GameTimestampBadge, MarathonBadge, NewGameBadge, ResurrectedBadge, StreakBadge, TopGameBadge, TrendingBadge
 
-// Module 11995 (ActiveTimestamp)
+// Module 12013 (ActiveTimestamp)
 import set from "set";
 import { View } from "RetryIcon";
 import _getSystemLocale from "_getSystemLocale";
@@ -30,7 +30,7 @@ class ActiveTimestamp {
 }
 function ContentTimestamp(entry) {
   entry = entry.entry;
-  let obj = require(7911) /* calculateTimestampDurations */;
+  let obj = require(7918) /* calculateTimestampDurations */;
   const tmp = createCacheKey();
   require(589) /* initialize */;
   [][0] = _getSystemLocale;
@@ -41,9 +41,9 @@ function ContentTimestamp(entry) {
   } else {
     obj = { variant: "text-sm/medium", style: null, children: null };
     obj[1] = tmp.text;
-    obj[2] = tmp2(7911).formatEndedTimestamp(entry, tmp6);
-    tmp7Result = tmp7(tmp2(4185).Text, obj);
-    const tmp2Result = tmp2(7911);
+    obj[2] = tmp2(7918).formatEndedTimestamp(entry, tmp6);
+    tmp7Result = tmp7(tmp2(4189).Text, obj);
+    const tmp2Result = tmp2(7918);
   }
   return tmp7Result;
 }
@@ -57,7 +57,7 @@ function BaseBadge(arg0) {
   obj = { style: tmp.icon, color: iconColor };
   const items = [callback(Icon, obj), ];
   obj = { variant: "text-sm/medium", style: tmp.text, children: text };
-  items[1] = callback(require(4185) /* Text */.Text, obj);
+  items[1] = callback(require(4189) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 }
@@ -74,29 +74,29 @@ export { ActiveTimestamp };
 export const GameTimestampBadge = function GameTimestampBadge(entry) {
   entry = entry.entry;
   const tmp = createCacheKey();
-  let obj = require(7911) /* calculateTimestampDurations */;
+  let obj = require(7918) /* calculateTimestampDurations */;
   const colors = importDefault(712).colors;
   obj = { style: tmp.badgeContainer, children: null };
   const isEntryActiveResult = obj.isEntryActive(entry);
   const tmp2 = require;
   obj = { style: tmp.icon, color: obj.isEntryActive(entry) ? colors.STATUS_POSITIVE : colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY };
-  const items = [callback(tmp2(8931).GameControllerIcon, obj), callback(ContentTimestamp, { entry })];
+  const items = [callback(tmp2(8944).GameControllerIcon, obj), callback(ContentTimestamp, { entry })];
   obj[1] = items;
   return callback2(View, obj);
 };
 export const MarathonBadge = function MarathonBadge(entry) {
   entry = entry.entry;
-  let obj = require(7911) /* calculateTimestampDurations */;
+  let obj = require(7918) /* calculateTimestampDurations */;
   if (obj.isEntryMarathon(entry)) {
-    let tmpResult = tmp(7911);
+    let tmpResult = tmp(7918);
     const colors = importDefault(712).colors;
     const isEntryActiveResult = tmpResult.isEntryActive(entry);
-    tmpResult = tmp(7911);
+    tmpResult = tmp(7918);
     const text = tmpResult.getMarathonDescription(entry).text;
     let tmp7 = null;
     if (null != text) {
       obj = { Icon: null, iconColor: null, text: null };
-      obj[0] = tmp(10911).TimerIcon;
+      obj[0] = tmp(10929).TimerIcon;
       obj[1] = tmp6;
       obj[2] = text;
       tmp7 = callback(BaseBadge, obj);
@@ -107,11 +107,11 @@ export const MarathonBadge = function MarathonBadge(entry) {
   }
 };
 export const NewGameBadge = function NewGameBadge(entry) {
-  let obj = require(7911) /* calculateTimestampDurations */;
+  let obj = require(7918) /* calculateTimestampDurations */;
   let tmp3 = null;
   if (obj.isEntryNew(entry.entry)) {
     obj = { Icon: null, text: null, iconColor: null };
-    obj[0] = tmp(11996).NewUserIcon;
+    obj[0] = tmp(12014).NewUserIcon;
     const intl = tmp(1236).intl;
     obj[1] = intl.string(tmp(1236).t.keY6mW);
     obj[2] = importDefault(712).colors.STATUS_POSITIVE;
@@ -120,14 +120,14 @@ export const NewGameBadge = function NewGameBadge(entry) {
   return tmp3;
 };
 export const StreakBadge = function StreakBadge(entry) {
-  let obj = require(7911) /* calculateTimestampDurations */;
+  let obj = require(7918) /* calculateTimestampDurations */;
   const streakCount = obj.getStreakCount(entry.entry);
   let tmp4 = null;
   if (null != streakCount) {
     tmp4 = null;
     if (streakCount >= 2) {
       obj = { Icon: null, text: null, iconColor: null };
-      obj[0] = tmp(11998).FlashIcon;
+      obj[0] = tmp(12016).FlashIcon;
       const intl = tmp(1236).intl;
       obj = { days: null };
       obj[0] = streakCount;
@@ -139,14 +139,14 @@ export const StreakBadge = function StreakBadge(entry) {
   return tmp4;
 };
 export const TrendingBadge = function TrendingBadge(entry) {
-  let obj = require(7911) /* calculateTimestampDurations */;
+  let obj = require(7918) /* calculateTimestampDurations */;
   const trendingType = obj.getTrendingType(entry.entry);
   let tmp4 = null;
   if (null != trendingType) {
     tmp4 = null;
-    if (trendingType !== tmp(12000).TrendingType.TRENDING_TYPE_UNSPECIFIED) {
+    if (trendingType !== tmp(12018).TrendingType.TRENDING_TYPE_UNSPECIFIED) {
       obj = { Icon: null, text: null, iconColor: null };
-      obj[0] = tmp(11943).FireIcon;
+      obj[0] = tmp(11961).FireIcon;
       const intl = tmp(1236).intl;
       obj[1] = intl.string(tmp(1236).t.TsWCdW);
       obj[2] = importDefault(712).colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY;
@@ -156,11 +156,11 @@ export const TrendingBadge = function TrendingBadge(entry) {
   return tmp4;
 };
 export const ResurrectedBadge = function ResurrectedBadge(entry) {
-  let obj = require(7911) /* calculateTimestampDurations */;
+  let obj = require(7918) /* calculateTimestampDurations */;
   let tmp3 = null;
   if (null != obj.getResurrectedEntryLastPlayTime(entry.entry)) {
     obj = { Icon: null, text: null, iconColor: null };
-    obj[0] = tmp(9967).RetryIcon;
+    obj[0] = tmp(9984).RetryIcon;
     const intl = tmp(1236).intl;
     obj[1] = intl.string(tmp(1236).t.adnLsB);
     obj[2] = importDefault(712).colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY;
@@ -169,13 +169,13 @@ export const ResurrectedBadge = function ResurrectedBadge(entry) {
   return tmp3;
 };
 export const TopGameBadge = function TopGameBadge(entry) {
-  let obj = require(7911) /* calculateTimestampDurations */;
+  let obj = require(7918) /* calculateTimestampDurations */;
   const entryDuration = obj.getEntryDuration(entry.entry);
   if (null == entryDuration) {
     return null;
   } else {
     obj = { Icon: null, text: null, iconColor: null };
-    obj[0] = tmp(6646).TrophyIcon;
+    obj[0] = tmp(6652).TrophyIcon;
     obj = { children: null };
     const intl = tmp(1236).intl;
     const items = [intl.string(tmp(1236).t["/50eHi"]), ": ", ];
@@ -195,7 +195,7 @@ export const CustomStatusTimestampBadge = function CustomStatusTimestampBadge(en
   let obj = { style: tmp.badgeContainer, children: null };
   obj = { style: tmp.icon, color: null };
   obj[1] = importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT;
-  const items = [callback(require(10911) /* TimerIcon */.TimerIcon, obj), callback(ContentTimestamp, { entry: entry.entry })];
+  const items = [callback(require(10929) /* TimerIcon */.TimerIcon, obj), callback(ContentTimestamp, { entry: entry.entry })];
   obj[1] = items;
   return callback2(View, obj);
 };

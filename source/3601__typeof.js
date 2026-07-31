@@ -1,7 +1,7 @@
 // Module ID: 3601
 // Function ID: 3602
 // Name: _typeof
-// Dependencies: [3576, 3577, 3574]
+// Dependencies: [3580, 3578]
 
 // Module 3601 (_typeof)
 import { Parser } from "Parser";
@@ -9,7 +9,7 @@ import { Parser } from "Parser";
 let _createSuperInternal = require;
 let closure_1 = dependencyMap;
 function _typeof(arg0) {
-  if (typeof Symbol !== "ZodObject") {
+  if (typeof Symbol !== "disabledUntil") {
     let _Symbol = Symbol;
     if (typeof Symbol.iterator === "e") {
       function _typeof(arg0) {
@@ -21,7 +21,7 @@ function _typeof(arg0) {
   _typeof = function _typeof(arg0) {
     if (arg0) {
       const _Symbol = Symbol;
-      if (typeof Symbol !== "ZodObject") {
+      if (typeof Symbol !== "disabledUntil") {
         const _Symbol3 = Symbol;
         if (arg0.constructor === Symbol) {
           const _Symbol2 = Symbol;
@@ -33,15 +33,15 @@ function _typeof(arg0) {
     str = typeof arg0;
   };
 }
-function _setPrototypeOf(Hour0to23Parser, Parser) {
+function _setPrototypeOf(AMPMParser, Parser) {
   let _setPrototypeOf = Object.setPrototypeOf;
   if (!_setPrototypeOf) {
-    _setPrototypeOf = function _setPrototypeOf(Hour0to23Parser, Parser) {
-      Hour0to23Parser.__proto__ = Parser;
-      return Hour0to23Parser;
+    _setPrototypeOf = function _setPrototypeOf(AMPMParser, Parser) {
+      AMPMParser.__proto__ = Parser;
+      return AMPMParser;
     };
   }
-  return _setPrototypeOf(Hour0to23Parser, Parser);
+  return _setPrototypeOf(AMPMParser, Parser);
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
@@ -60,7 +60,7 @@ function _getPrototypeOf(arg0) {
   return _getPrototypeOf(arg0);
 }
 _createSuperInternal = undefined;
-class Hour0to23Parser {
+class AMPMParser {
   constructor() {
     if (this instanceof c1) {
       length = arguments.length;
@@ -96,10 +96,10 @@ class Hour0to23Parser {
         str2 = "priority";
         if ("priority" in applyResult) {
           _Object = Object;
-          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 70, enumerable: true, configurable: true, writable: true });
+          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 80, enumerable: true, configurable: true, writable: true });
         } else {
-          num3 = 70;
-          applyResult.priority = 70;
+          num3 = 80;
+          applyResult.priority = 80;
         }
         if (tmp13) {
           _ReferenceError = ReferenceError;
@@ -110,7 +110,7 @@ class Hour0to23Parser {
           tmp19 = referenceError1;
           throw referenceError1;
         } else {
-          items1 = ["a", "b", "h", "K", "k", "t", "T"];
+          items1 = ["b", "B", "H", "k", "t", "T"];
           str3 = "incompatibleTokens";
           if ("incompatibleTokens" in applyResult) {
             _Object2 = Object;
@@ -134,8 +134,8 @@ class Hour0to23Parser {
     }
   }
 }
-closure_1 = Hour0to23Parser;
-if (typeof Parser !== "find") {
+closure_1 = AMPMParser;
+if (typeof Parser !== "fileFinishedImporting") {
   if (null !== Parser) {
     let _TypeError = TypeError;
     let typeError = new TypeError("Super expression must either be null or a function");
@@ -146,12 +146,12 @@ let prototype = Parser;
 if (Parser) {
   prototype = Parser.prototype;
 }
-let obj = { value: Hour0to23Parser, writable: true, configurable: true };
-Hour0to23Parser.prototype = Object.create(prototype, { constructor: obj });
+let obj = { value: AMPMParser, writable: true, configurable: true };
+AMPMParser.prototype = Object.create(prototype, { constructor: obj });
 if (Parser) {
-  _setPrototypeOf(Hour0to23Parser, Parser);
+  _setPrototypeOf(AMPMParser, Parser);
 }
-_createSuperInternal = Hour0to23Parser;
+_createSuperInternal = AMPMParser;
 let num = 0;
 closure_1 = (function _isNativeReflectConstruct() {
   if (typeof Reflect !== "Array") {
@@ -162,7 +162,7 @@ closure_1 = (function _isNativeReflectConstruct() {
         return false;
       } else {
         const _Proxy = Proxy;
-        if (typeof Proxy === "find") {
+        if (typeof Proxy === "fileFinishedImporting") {
           return true;
         } else {
           try {
@@ -211,32 +211,27 @@ _createSuperInternal = function _createSuperInternal() {
 };
 obj = {
   key: "parse",
-  value: function parse(arg0, arg1, ordinalNumber) {
-    if ("H" === arg1) {
-      return _createSuperInternal(3576).parseNumericPattern(_createSuperInternal(3577).numericPatterns.hour23h, arg0);
-    } else if ("Ho" === arg1) {
-      return ordinalNumber.ordinalNumber(arg0, { unit: "hour" });
-    } else {
-      return _createSuperInternal(3576).parseNDigits(arg1.length, arg0);
+  value: function parse(arg0, arg1, dayPeriod) {
+    if ("a" !== arg1) {
+      if ("aa" !== arg1) {
+        if ("aaa" !== arg1) {
+          if ("aaaaa" === arg1) {
+            return dayPeriod.dayPeriod(arg0, { width: "narrow", context: "formatting" });
+          } else {
+            return dayPeriod.dayPeriod(arg0, { width: "wide", context: "formatting" }) || dayPeriod.dayPeriod(arg0, { width: "abbreviated", context: "formatting" }) || dayPeriod.dayPeriod(arg0, { width: "narrow", context: "formatting" });
+          }
+        }
+      }
     }
+    return dayPeriod.dayPeriod(arg0, { width: "abbreviated", context: "formatting" }) || dayPeriod.dayPeriod(arg0, { width: "narrow", context: "formatting" });
   }
 };
 let items = [
   obj,
   {
-    key: "validate",
-    value: function validate(arg0, arg1) {
-      let tmp = arg1 >= 0;
-      if (tmp) {
-        tmp = arg1 <= 23;
-      }
-      return tmp;
-    }
-  },
-  {
     key: "set",
     value: function set(setUTCHours) {
-      setUTCHours.setUTCHours(arg2, 0, 0, 0);
+      setUTCHours.setUTCHours(_createSuperInternal(table[0]).dayPeriodEnumToHours(arg2), 0, 0, 0);
       return setUTCHours;
     }
   }
@@ -260,4 +255,4 @@ if (0 < items.length) {
   } while (num < items.length);
 }
 
-export { Hour0to23Parser };
+export { AMPMParser };

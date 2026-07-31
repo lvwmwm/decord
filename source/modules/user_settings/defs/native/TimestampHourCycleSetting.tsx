@@ -1,9 +1,9 @@
-// Module ID: 14428
-// Function ID: 14429
+// Module ID: 14451
+// Function ID: 14452
 // Name: radio
-// Dependencies: [19, 7753, 3862, 1236, 1306, 10116, 3876, 2]
+// Dependencies: [19, 7761, 3866, 1236, 1306, 10133, 3880, 2]
 
-// Module 14428 (radio)
+// Module 14451 (radio)
 import noop from "noop";
 import createToggle from "createToggle";
 
@@ -16,7 +16,7 @@ createToggle = {
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   useValue: require("explicitContentFromProto").TimestampHourCycle.useSetting,
   onValueChange: function onTimestampHourCycleChange(arg0) {
-    const TimestampHourCycle = require(3862) /* explicitContentFromProto */.TimestampHourCycle;
+    const TimestampHourCycle = require(3866) /* explicitContentFromProto */.TimestampHourCycle;
     TimestampHourCycle.updateSetting(Number(arg0));
   },
   useOptions: function useDMsMessagePreviewsOptions() {

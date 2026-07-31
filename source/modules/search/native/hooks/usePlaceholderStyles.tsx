@@ -1,12 +1,12 @@
-// Module ID: 15478
-// Function ID: 15479
+// Module ID: 15506
+// Function ID: 15507
 // Name: useFullscreenPlaceholderCount
-// Dependencies: [4181, 9097, 1474, 589, 4050, 4190, 1297, 2]
+// Dependencies: [4185, 9108, 1474, 589, 4054, 4194, 1297, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 15478 (useFullscreenPlaceholderCount)
+// Module 15506 (useFullscreenPlaceholderCount)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
-import { FADE_LAYOUT_ANIMATION_DURATION as closure_4 } from "SearchAutocompleteSelectAnalyticsActions";
+import { FADE_LAYOUT_ANIMATION_DURATION as closure_4 } from "MessageEmbedTypes";
 
 const require = arg1;
 let closure_5 = { code: "function usePlaceholderStylesTsx1(){const{useReducedMotion,visible,withRepeat,withSequence,withTiming,STANDARD_EASING,FADE_LAYOUT_ANIMATION_DURATION}=this.__closure;if(useReducedMotion){return{opacity:visible?1:0};}if(visible){return{opacity:withRepeat(withSequence(withTiming(0.5,{duration:0}),withTiming(1,{duration:1300,easing:STANDARD_EASING}),withTiming(0.5,{duration:1300,easing:STANDARD_EASING})),-1)};}return{opacity:withTiming(0,{duration:FADE_LAYOUT_ANIMATION_DURATION})};}" };
@@ -79,9 +79,9 @@ export const usePlaceholderAnimatedStyle = function usePlaceholderAnimatedStyle(
       return tmp5;
     }
   }
-  obj = { useReducedMotion: stateFromStores, visible, withRepeat: _require(4050).withRepeat, withSequence: _require(4050).withSequence, withTiming: _require(4190).withTiming, STANDARD_EASING: _require(1297).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION: closure_4 };
+  obj = { useReducedMotion: stateFromStores, visible, withRepeat: _require(4054).withRepeat, withSequence: _require(4054).withSequence, withTiming: _require(4194).withTiming, STANDARD_EASING: _require(1297).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION: closure_4 };
   A.__closure = obj;
   A.__workletHash = 9750536800906;
   A.__initData = closure_5;
-  return _require(4050).useAnimatedStyle(A);
+  return _require(4054).useAnimatedStyle(A);
 };

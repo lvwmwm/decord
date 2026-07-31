@@ -1,10 +1,10 @@
-// Module ID: 13994
-// Function ID: 13995
+// Module ID: 14018
+// Function ID: 14019
 // Name: PlayStationTwoWayLinkUpsell
-// Dependencies: [19, 676, 21, 4189, 1945, 13992, 1236, 5141, 13995, 1358, 8962, 2]
+// Dependencies: [19, 676, 21, 4193, 1945, 14016, 1236, 5145, 14019, 1358, 8975, 2]
 // Exports: PlayStationTwoWayLinkUpsell
 
-// Module 13994 (PlayStationTwoWayLinkUpsell)
+// Module 14018 (PlayStationTwoWayLinkUpsell)
 import "noop";
 import ME from "ME";
 import { jsx } from "jsxProd";
@@ -28,12 +28,12 @@ export const PlayStationTwoWayLinkUpsell = function PlayStationTwoWayLinkUpsell(
   obj[1] = intl2.format(require(1236) /* getSystemLocale */.t.lTZBit, { help_article: articleURL });
   obj = { style: callback().upsellImage, source: null, resizeMode: "contain" };
   const tmp = callback();
-  obj[1] = importDefault(13995);
-  obj[2] = jsx(importDefault(5141), { style: callback().upsellImage, source: null, resizeMode: "contain" });
+  obj[1] = importDefault(14019);
+  obj[2] = jsx(importDefault(5145), { style: callback().upsellImage, source: null, resizeMode: "contain" });
   obj[3] = require(1358) /* DismissibleContent */.DismissibleContent.PS_ONE_WAY_RECONNECT;
   obj[4] = function onPress() {
     const items = [constants.RELINK_UPSELL];
     return callback(table[10]).showModal(items, constants2.PLAYSTATION);
   };
-  return jsx(require(13992) /* OneWayToTwoWayNewTag */.OneWayToTwoWayLinkUpsell, { style: callback().upsellImage, source: null, resizeMode: "contain" });
+  return jsx(require(14016) /* OneWayToTwoWayNewTag */.OneWayToTwoWayLinkUpsell, { style: callback().upsellImage, source: null, resizeMode: "contain" });
 };

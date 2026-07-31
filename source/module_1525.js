@@ -5,7 +5,7 @@
 // Module 1525
 
 export default (str) => {
-  if (typeof str === "tee") {
+  if (typeof str === "__FORMATJS_LISTFORMAT_DATA__") {
     const _TypeError = TypeError;
     const typeError = new TypeError("Expected a string");
     throw typeError;

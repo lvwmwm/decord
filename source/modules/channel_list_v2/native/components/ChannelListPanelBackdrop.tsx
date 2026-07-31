@@ -1,10 +1,10 @@
-// Module ID: 15200
-// Function ID: 15201
+// Module ID: 15227
+// Function ID: 15228
 // Name: ChannelListPanelBackdrop
-// Dependencies: [19, 17, 676, 21, 4189, 712, 14925, 1581, 14114, 15201, 2]
+// Dependencies: [19, 17, 676, 21, 4193, 712, 14948, 1581, 14136, 15228, 2]
 // Exports: default
 
-// Module 15200 (ChannelListPanelBackdrop)
+// Module 15227 (ChannelListPanelBackdrop)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { DM_WIDTH } from "ME";
@@ -34,7 +34,7 @@ export default function ChannelListPanelBackdrop(children) {
   let mobileQuestDockHeight;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = style(14114);
+  let obj = style(14136);
   mobileQuestDockHeight = obj.useMobileQuestDockHeight();
   let items = [tmp, contentInset, mobileQuestDockHeight, style];
   obj = {
@@ -79,8 +79,8 @@ export default function ChannelListPanelBackdrop(children) {
     }, items),
     children: null
   };
-  obj = { offsetX: DM_WIDTH, offsetY: contentInset(1581)().top, parentSpringTranslateX: mobileQuestDockHeight.useContext(style(14925).HomeDrawerStateContext).panelSpringTranslateX };
-  const items1 = [callback(contentInset(15201), obj), callback(closure_4, { pointerEvents: "none", style: tmp.panelTint }), callback(closure_4, { style: tmp.listWrapper, children: children.children })];
+  obj = { offsetX: DM_WIDTH, offsetY: contentInset(1581)().top, parentSpringTranslateX: mobileQuestDockHeight.useContext(style(14948).HomeDrawerStateContext).panelSpringTranslateX };
+  const items1 = [callback(contentInset(15228), obj), callback(closure_4, { pointerEvents: "none", style: tmp.panelTint }), callback(closure_4, { style: tmp.listWrapper, children: children.children })];
   obj[1] = items1;
   return callback2(closure_4, obj);
 };

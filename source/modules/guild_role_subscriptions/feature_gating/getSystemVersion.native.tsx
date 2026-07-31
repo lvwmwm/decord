@@ -1,12 +1,12 @@
-// Module ID: 5089
-// Function ID: 5090
+// Module ID: 5093
+// Function ID: 5094
 // Name: getSystemVersion
-// Dependencies: [4169, 2]
+// Dependencies: [4173, 2]
 // Exports: getSystemVersion
 
-// Module 5089 (getSystemVersion)
+// Module 5093 (getSystemVersion)
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/feature_gating/getSystemVersion.native.tsx");
 
 export const getSystemVersion = function getSystemVersion() {
-  return require(4169) /* DCDDeviceManager */.getSystemVersion();
+  return require(4173) /* DCDDeviceManager */.getSystemVersion();
 };

@@ -1,10 +1,10 @@
-// Module ID: 15222
-// Function ID: 15223
+// Module ID: 15249
+// Function ID: 15250
 // Name: useCanShowGameClaimCoachmark
-// Dependencies: [3817, 676, 15223, 589, 15156, 2]
+// Dependencies: [3821, 676, 15250, 589, 15182, 2]
 // Exports: useCanShowGameClaimCoachmark
 
-// Module 15222 (useCanShowGameClaimCoachmark)
+// Module 15249 (useCanShowGameClaimCoachmark)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";
 
@@ -13,8 +13,8 @@ const result = require("experiment").fileFinishedImporting("modules/game_claim/u
 
 export const useCanShowGameClaimCoachmark = function useCanShowGameClaimCoachmark(id) {
   const _require = id;
-  let gameClaimCoachmarkEnabled = _require(15223).useGameClaimCoachmarkEnabled(id, "useCanShowGameClaimCoachmark");
-  const obj = _require(15223);
+  let gameClaimCoachmarkEnabled = _require(15250).useGameClaimCoachmarkEnabled(id, "useCanShowGameClaimCoachmark");
+  const obj = _require(15250);
   const tmp = _require;
   const items = [getUncachedChannelPermissions];
   const items1 = [id];

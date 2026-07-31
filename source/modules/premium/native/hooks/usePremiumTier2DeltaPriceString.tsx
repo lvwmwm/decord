@@ -1,31 +1,28 @@
-// Module ID: 12574
-// Function ID: 12575
+// Module ID: 12600
+// Function ID: 12601
 // Name: getViewerProductId
-// Dependencies: [19, 6215, 5672, 1876, 6247, 5675, 500, 5669, 3850, 589, 2]
+// Dependencies: [19, 6221, 5676, 1876, 6253, 5679, 500, 5673, 3854, 589, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 12574 (getViewerProductId)
+// Module 12600 (getViewerProductId)
 import noop from "noop";
 import { useNativeCheckoutStore } from "context";
 import updateProduct from "updateProduct";
-import GuildFeatures from "GuildFeatures";
+import { PremiumTypes } from "GuildFeatures";
 
-let c5;
-let closure_6;
 const require = arg1;
 function getViewerProductId(subscription) {
   if (null == subscription) {
     return null;
   } else {
     try {
-      return require(6247) /* getPremiumBundledItemsFromProductId */.getProductIdFromSubscription(subscription, false);
+      return require(6253) /* getPremiumBundledItemsFromProductId */.getProductIdFromSubscription(subscription, false);
     } catch (err) {
       return tmp;
     }
   }
 }
-({ PremiumTypes: c5, SubscriptionIntervalTypes: closure_6 } = GuildFeatures);
-let closure_7 = { priceString: null, failure: null };
+let closure_6 = { priceString: null, failure: null };
 let result = require("updateProduct").fileFinishedImporting("modules/premium/native/hooks/usePremiumTier2DeltaPriceString.tsx");
 
 export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPriceString(plan, subscription, first, flag3) {
@@ -45,19 +42,16 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
   let flag = false;
   if (flag3) {
     flag = false;
-    if (plan.premiumTier === TIER_2.TIER_2) {
+    if (plan.premiumTier === PremiumTypes.TIER_2) {
       flag = false;
-      if (plan.interval === constants.MONTH) {
-        flag = false;
-        if (plan.numPremiumGuild >= 1) {
-          const tmp2Result = getViewerProductId(subscription);
-          let tmp11 = null;
-          if (null != tmp2Result) {
-            tmp11 = tmp3(tmp4[5]).AppStorePremiumProductIdsToPremiumBundledItems[tmp2Result];
-          }
-          flag = null != tmp11 && tmp11.basePlanId === plan.basePlanId && 0 === tmp11.numPremiumGuild;
-          const tmp12 = null != tmp11 && tmp11.basePlanId === plan.basePlanId && 0 === tmp11.numPremiumGuild;
+      if (plan.numPremiumGuild >= 1) {
+        const tmp2Result = getViewerProductId(subscription);
+        let tmp10 = null;
+        if (null != tmp2Result) {
+          tmp10 = tmp3(tmp4[5]).AppStorePremiumProductIdsToPremiumBundledItems[tmp2Result];
         }
+        flag = null != tmp10 && tmp10.basePlanId === plan.basePlanId && 0 === tmp10.numPremiumGuild;
+        const tmp11 = null != tmp10 && tmp10.basePlanId === plan.basePlanId && 0 === tmp10.numPremiumGuild;
       }
     }
   }
@@ -99,10 +93,10 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
           }
         }
       }
-      obj2 = closure_7;
+      obj2 = closure_6;
     }
     if (null == checkoutContext) {
-      let tmp18 = closure_7;
+      let tmp17 = closure_6;
     } else {
       const availablePlanForItems = checkoutContext.getAvailablePlanForItems(tmp3(tmp4[4]).getSubscriptionItemsForProduct(plan.productId));
       if (null != availablePlanForItems) {
@@ -111,17 +105,17 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
           if (addOnPrice.majorUnits > 0) {
             const obj4 = { priceString: null, failure: null };
             obj4[0] = tmp3(tmp4[7]).formatPrice(addOnPrice.majorUnits, addOnPrice.currency, { convertToMajorUnits: false });
-            tmp18 = obj4;
+            tmp17 = obj4;
             const tmp3Result3 = tmp3(tmp4[7]);
           }
         }
-        tmp18 = closure_7;
+        tmp17 = closure_6;
       }
       const tmp3Result2 = tmp3(tmp4[4]);
     }
-    tmp18 = closure_7;
+    tmp17 = closure_6;
   } else {
-    const failure = tmp13.failure;
+    const failure = tmp12.failure;
     kind = undefined;
     platform = undefined;
     let currencyCode;
@@ -183,6 +177,6 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
         const obj2 = kind(platform[8]);
       }
     }, items1);
-    return closure_7.priceString;
+    return closure_6.priceString;
   }
 };

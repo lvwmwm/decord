@@ -1,10 +1,10 @@
-// Module ID: 11969
-// Function ID: 11970
+// Module ID: 11987
+// Function ID: 11988
 // Name: setCustomStatus
-// Dependencies: [11966, 676, 3862, 3771, 11970, 698, 2]
+// Dependencies: [11984, 676, 3866, 3775, 11988, 698, 2]
 // Exports: default
 
-// Module 11969 (setCustomStatus)
+// Module 11987 (setCustomStatus)
 import { ClearAfterValues } from "StatusTypes";
 import { AnalyticEvents } from "ME";
 
@@ -22,11 +22,11 @@ export default function setCustomStatus(arg0) {
   const trimmed = text.trim();
   if (trimmed.length <= 0) {
     if (null == emojiInfo) {
-      const CustomStatusSetting = require(3862) /* explicitContentFromProto */.CustomStatusSetting;
+      const CustomStatusSetting = require(3866) /* explicitContentFromProto */.CustomStatusSetting;
       return CustomStatusSetting.updateSetting(undefined);
     }
   }
-  const CustomStatusSetting2 = require(3862) /* explicitContentFromProto */.CustomStatusSetting;
+  const CustomStatusSetting2 = require(3866) /* explicitContentFromProto */.CustomStatusSetting;
   let str = "";
   if (trimmed.length > 0) {
     str = trimmed;
@@ -37,10 +37,10 @@ export default function setCustomStatus(arg0) {
     str2 = "0";
     if (clearAfter !== ClearAfterValues.DONT_CLEAR) {
       const _String = String;
-      const obj2 = importDefault(3771)();
-      const addResult = importDefault(3771)().add(importDefault(11970)(clearAfter), "ms");
-      str2 = String(importDefault(3771)().add(importDefault(11970)(clearAfter), "ms").toDate().getTime());
-      const toDateResult = importDefault(3771)().add(importDefault(11970)(clearAfter), "ms").toDate();
+      const obj2 = importDefault(3775)();
+      const addResult = importDefault(3775)().add(importDefault(11988)(clearAfter), "ms");
+      str2 = String(importDefault(3775)().add(importDefault(11988)(clearAfter), "ms").toDate().getTime());
+      const toDateResult = importDefault(3775)().add(importDefault(11988)(clearAfter), "ms").toDate();
     }
   }
   obj[1] = str2;
@@ -58,9 +58,9 @@ export default function setCustomStatus(arg0) {
   }
   obj[3] = str5;
   if (createdAtMs == null) {
-    const obj5 = importDefault(3771)();
-    createdAtMs = importDefault(3771)().toDate().getTime();
-    const toDateResult1 = importDefault(3771)().toDate();
+    const obj5 = importDefault(3775)();
+    createdAtMs = importDefault(3775)().toDate().getTime();
+    const toDateResult1 = importDefault(3775)().toDate();
   }
   obj[4] = String(createdAtMs);
   const updateSettingResult = CustomStatusSetting2.updateSetting(obj);

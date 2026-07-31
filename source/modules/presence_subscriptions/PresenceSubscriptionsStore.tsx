@@ -1,9 +1,9 @@
-// Module ID: 10478
-// Function ID: 10479
+// Module ID: 10495
+// Function ID: 10496
 // Name: handleConnectionOpenOrResumed
-// Dependencies: [32, 4276, 4214, 10479, 4074, 589, 709, 2]
+// Dependencies: [32, 4280, 4218, 10496, 4078, 589, 709, 2]
 
-// Module 10478 (handleConnectionOpenOrResumed)
+// Module 10495 (handleConnectionOpenOrResumed)
 import _slicedToArray from "_slicedToArray";
 import sortActivity from "sortActivity";
 import { INVITE_EXPIRATION_MS } from "items3";
@@ -32,8 +32,8 @@ const delayedCall = new require("start").DelayedCall(3000, function flush() {
     continue;
   }
   if (0 !== items.length) {
-    importDefault(10479).subscribeActivities(items);
-    const obj = importDefault(10479);
+    importDefault(10496).subscribeActivities(items);
+    const obj = importDefault(10496);
   }
 });
 class PresenceSubscriptionsStore extends Store {

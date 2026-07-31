@@ -1,10 +1,10 @@
-// Module ID: 12039
-// Function ID: 12040
+// Module ID: 12057
+// Function ID: 12058
 // Name: _fetchNote
-// Dependencies: [5, 19, 12040, 676, 589, 709, 530, 2]
+// Dependencies: [5, 19, 12058, 676, 589, 709, 530, 2]
 // Exports: default
 
-// Module 12039 (_fetchNote)
+// Module 12057 (_fetchNote)
 import dispatcher from "dispatcher";
 import noop from "noop";
 import getNote from "getNote";

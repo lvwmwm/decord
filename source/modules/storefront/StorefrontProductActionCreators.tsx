@@ -1,10 +1,10 @@
-// Module ID: 14096
-// Function ID: 14097
+// Module ID: 8375
+// Function ID: 8376
 // Name: _maybeFetchProductsWithSkus
-// Dependencies: [5, 1946, 14092, 5819, 676, 687, 709, 4427, 4089, 2]
+// Dependencies: [5, 1946, 8376, 5824, 676, 687, 709, 4431, 4093, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus
 
-// Module 14096 (_maybeFetchProductsWithSkus)
+// Module 8375 (_maybeFetchProductsWithSkus)
 import set from "set";
 import _getSystemLocale from "_getSystemLocale";
 import getFetchState from "getFetchState";
@@ -167,13 +167,13 @@ function _maybeFetchProductsWithSkus() {
   }
   return applyArgumentsResult;
 }
-function shouldFetchProductBySku(arg0) {
-  if (Boolean(arg0)) {
-    fetchStateForSku = fetchStateForSku.getFetchStateForSku(arg0);
+function shouldFetchProductBySku(closure_0) {
+  if (Boolean(closure_0)) {
+    fetchStateForSku = fetchStateForSku.getFetchStateForSku(closure_0);
     if ("loading" === fetchStateForSku) {
       return false;
     } else {
-      const fetchedAtForSku = obj.getFetchedAtForSku(arg0);
+      const fetchedAtForSku = obj.getFetchedAtForSku(closure_0);
       if (null != fetchedAtForSku) {
         const _Date = Date;
         return Date.now() - fetchedAtForSku > ("error" === fetchStateForSku ? closure_9 : closure_8);

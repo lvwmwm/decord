@@ -1,9 +1,9 @@
-// Module ID: 7000
-// Function ID: 7001
+// Module ID: 7008
+// Function ID: 7009
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7000 (metadata)
+// Module 7008 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DogIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/31079822355731624efb55dc9e7883f88670a66033c861ef184a51190318e9b9.png";

@@ -1,10 +1,10 @@
-// Module ID: 14816
-// Function ID: 14817
+// Module ID: 14839
+// Function ID: 14840
 // Name: TakeActionButtons
-// Dependencies: [5, 32, 19, 17, 3826, 1874, 10155, 21, 4189, 712, 589, 10157, 10158, 1480, 8914, 6718, 10152, 7689, 3890, 1236, 4150, 3889, 4600, 10164, 9438, 4669, 7620, 3886, 4185, 2]
+// Dependencies: [5, 32, 19, 17, 3830, 1874, 10172, 21, 4193, 712, 589, 10174, 10175, 1480, 8927, 6724, 10169, 7697, 3894, 1236, 4154, 3893, 4604, 10181, 9453, 4673, 7628, 3890, 4189, 2]
 // Exports: default
 
-// Module 14816 (TakeActionButtons)
+// Module 14839 (TakeActionButtons)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";
@@ -114,23 +114,23 @@ export default function TakeActionButtons(senderId) {
             let closure_0 = tmp4;
             if (null != outer1_9.getUser(outer1_0)) {
               outer1_6(true);
-              let obj2 = outer1_0(7689);
+              let obj2 = outer1_0(7697);
               v0 = 1;
               dependencyMap = 1;
               const obj1 = { value: null, done: false };
               obj1[0] = obj2.submitReportForInappropriateConversationSafetyAlert(outer1_5, () => {
                 dependencyMap(true);
-                let obj = v1(3890);
+                let obj = v1(3894);
                 obj = { key: outer1_13, content: null, IconComponent: null, iconColor: null, containerStyle: null };
                 const intl = tmp4(1236).intl;
                 obj[1] = intl.string(tmp4(1236).t.gn2c6X);
-                obj[2] = tmp4(4150).CircleCheckIcon;
+                obj[2] = tmp4(4154).CircleCheckIcon;
                 obj[3] = outer1_14;
                 obj[4] = toastContainer.toastContainer;
                 obj.open(obj);
               }, () => {
                 const intl = tmp4(1236).intl;
-                tmp4(3889).presentFailedToast(intl.string(tmp4(1236).t["0YV04/"]));
+                tmp4(3893).presentFailedToast(intl.string(tmp4(1236).t["0YV04/"]));
               });
               return obj1;
             } else {
@@ -142,9 +142,9 @@ export default function TakeActionButtons(senderId) {
           throw arg1;
         } else if (arg0 !== 2) {
           callback2(false);
-          obj = v0(6718);
+          obj = v0(6724);
           const result = obj.showReportSuccessToast(closure_0, v0);
-          callback(outer1_0(10152).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
+          callback(outer1_0(10169).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
         }
         dependencyMap = 3;
         obj2 = { value: null, done: true };

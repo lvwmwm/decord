@@ -1,15 +1,15 @@
-// Module ID: 15833
-// Function ID: 15834
+// Module ID: 15861
+// Function ID: 15862
 // Name: useActivityWebViewLockManager
-// Dependencies: [32, 19, 4050, 4534, 2]
+// Dependencies: [32, 19, 4054, 4538, 2]
 // Exports: default, useLockedWebView
 
-// Module 15833 (useActivityWebViewLockManager)
+// Module 15861 (useActivityWebViewLockManager)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
 const require = arg1;
-let result = require("module_4050").fileFinishedImporting("modules/activities/panel/native/useActivityWebViewLockManager.tsx");
+let result = require("module_4054").fileFinishedImporting("modules/activities/panel/native/useActivityWebViewLockManager.tsx");
 
 export default function useActivityWebViewLockManager() {
   return React.useState(() => {

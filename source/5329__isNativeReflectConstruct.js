@@ -1,10 +1,10 @@
 // Module ID: 5329
 // Function ID: 5330
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 5312]
+// Dependencies: [41, 42, 93, 95, 98, 5316]
 
 // Module 5329 (_isNativeReflectConstruct)
-import FlingGesture from "_classCallCheck";
+import TapGesture from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
@@ -28,12 +28,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FlingGesture {
+class TapGesture {
   constructor() {
     self = this;
-    tmp = FlingGesture(this, FlingGesture);
+    tmp = TapGesture(this, TapGesture);
     tmp2 = __esModule;
-    obj = __esModule(FlingGesture);
+    obj = __esModule(TapGesture);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
@@ -44,26 +44,62 @@ class FlingGesture {
     }
     tmp3Result = tmp3(self, constructResult);
     tmp3Result.config = {};
-    tmp3Result.handlerName = "FlingGestureHandler";
+    tmp3Result.handlerName = "TapGestureHandler";
+    result = tmp3Result.shouldCancelWhenOutside(true);
     return tmp3Result;
   }
 }
-require("_inherits")(FlingGesture, require("_isNativeReflectConstruct").BaseGesture);
+require("_inherits")(TapGesture, require("_isNativeReflectConstruct").BaseGesture);
 const items = [
   {
-    key: "numberOfPointers",
-    value: function numberOfPointers(numberOfPointers) {
-      this.config.numberOfPointers = numberOfPointers;
+    key: "minPointers",
+    value: function minPointers(minPointers) {
+      this.config.minPointers = minPointers;
       return this;
     }
   },
   {
-    key: "direction",
-    value: function direction(DOWN) {
-      this.config.direction = DOWN;
+    key: "numberOfTaps",
+    value: function numberOfTaps(numberOfTaps) {
+      this.config.numberOfTaps = numberOfTaps;
+      return this;
+    }
+  },
+  {
+    key: "maxDistance",
+    value: function maxDistance(maxDist) {
+      this.config.maxDist = maxDist;
+      return this;
+    }
+  },
+  {
+    key: "maxDuration",
+    value: function maxDuration(maxDurationMs) {
+      this.config.maxDurationMs = maxDurationMs;
+      return this;
+    }
+  },
+  {
+    key: "maxDelay",
+    value: function maxDelay(maxDelayMs) {
+      this.config.maxDelayMs = maxDelayMs;
+      return this;
+    }
+  },
+  {
+    key: "maxDeltaX",
+    value: function maxDeltaX(maxDeltaX) {
+      this.config.maxDeltaX = maxDeltaX;
+      return this;
+    }
+  },
+  {
+    key: "maxDeltaY",
+    value: function maxDeltaY(maxDeltaY) {
+      this.config.maxDeltaY = maxDeltaY;
       return this;
     }
   }
 ];
 
-export const FlingGesture = importDefaultResult(FlingGesture, items);
+export const TapGesture = importDefaultResult(TapGesture, items);

@@ -1,8 +1,8 @@
-// Module ID: 15859
-// Function ID: 15860
-// Dependencies: [19, 5686, 21, 589, 15860, 15862, 2]
+// Module ID: 15887
+// Function ID: 15888
+// Dependencies: [19, 5690, 21, 589, 15888, 15890, 2]
 
-// Module 15859
+// Module 15887
 import map from "map";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
@@ -14,9 +14,9 @@ const memoResult = require("noop").memo(function FramePanelContainer() {
   let tmp2 = null;
   if (obj.useStateFromStores(items, () => null != connectedFrame.getConnectedFrame())) {
     obj = { children: null };
-    obj[0] = jsx(importDefault(15862), {});
-    tmp2 = jsx(importDefault(15860), { children: null });
-    const tmp5 = importDefault(15860);
+    obj[0] = jsx(importDefault(15890), {});
+    tmp2 = jsx(importDefault(15888), { children: null });
+    const tmp5 = importDefault(15888);
   }
   return tmp2;
 });

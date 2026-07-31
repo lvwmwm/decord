@@ -1,9 +1,9 @@
-// Module ID: 9747
-// Function ID: 9748
+// Module ID: 9764
+// Function ID: 9765
 // Name: handleUserSettingsStoreUpdate
 // Dependencies: [1946, 589, 709, 2]
 
-// Module 9747 (handleUserSettingsStoreUpdate)
+// Module 9764 (handleUserSettingsStoreUpdate)
 import _getSystemLocale from "_getSystemLocale";
 import { Store } from "initialize";
 

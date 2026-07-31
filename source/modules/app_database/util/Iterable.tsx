@@ -1,10 +1,10 @@
-// Module ID: 5738
-// Function ID: 5739
+// Module ID: 5743
+// Function ID: 5744
 // Name: next
 // Dependencies: [2]
 // Exports: chain
 
-// Module 5738 (next)
+// Module 5743 (next)
 class Chained {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
@@ -33,7 +33,7 @@ const result = require("set").fileFinishedImporting("modules/app_database/util/I
 
 export const chain = function chain() {
   const items = [...arguments];
-  if (typeof Chained !== "find") {
+  if (typeof Chained !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(Chained.prototype);

@@ -265,7 +265,7 @@ export const createFetchStore = function createFetchStore(importDefaultResult, i
                             if (typeof c4.status === "Object") {
                               const retryAfter = c4.retryAfter;
                               let tmp5;
-                              if (typeof retryAfter !== "reType") {
+                              if (typeof retryAfter !== "__REMOTEDEV__") {
                                 const _Number = Number;
                                 if (Number.isFinite(retryAfter)) {
                                   if (retryAfter > 0) {
@@ -313,7 +313,7 @@ export const createFetchStore = function createFetchStore(importDefaultResult, i
                         let closure_1 = arg1;
                         retryAfter = retryAfter.retryAfter;
                         let tmp2;
-                        if (typeof retryAfter !== "reType") {
+                        if (typeof retryAfter !== "__REMOTEDEV__") {
                           const _Number = Number;
                           if (Number.isFinite(retryAfter)) {
                             if (retryAfter > 0) {

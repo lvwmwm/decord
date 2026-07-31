@@ -1,8 +1,8 @@
-// Module ID: 15680
-// Function ID: 15681
-// Dependencies: [19, 21, 1481, 4045, 15454, 2]
+// Module ID: 15708
+// Function ID: 15709
+// Dependencies: [19, 21, 1481, 4049, 15482, 2]
 
-// Module 15680
+// Module 15708
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
@@ -16,8 +16,8 @@ const memoResult = importAllResult.memo((navigation) => {
   const callback = importAllResult.useCallback(() => {
     navigation.goBack();
   }, items);
-  obj = { channelId: route.params.channelId, isSearchLocked: true === route.params.search, onBackPress: callback, componentWidth: importDefault(4045)().width, onChannelDeleted: callback, expandTopic: true === route.params.expandTopic };
-  return jsx(importDefault(15454), { channelId: route.params.channelId, isSearchLocked: true === route.params.search, onBackPress: callback, componentWidth: importDefault(4045)().width, onChannelDeleted: callback, expandTopic: true === route.params.expandTopic });
+  obj = { channelId: route.params.channelId, isSearchLocked: true === route.params.search, onBackPress: callback, componentWidth: importDefault(4049)().width, onChannelDeleted: callback, expandTopic: true === route.params.expandTopic };
+  return jsx(importDefault(15482), { channelId: route.params.channelId, isSearchLocked: true === route.params.search, onBackPress: callback, componentWidth: importDefault(4049)().width, onChannelDeleted: callback, expandTopic: true === route.params.expandTopic });
 });
 const result = require("Link").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsScreen.tsx");
 

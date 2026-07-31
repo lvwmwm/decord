@@ -1,10 +1,10 @@
-// Module ID: 6663
-// Function ID: 6664
+// Module ID: 6669
+// Function ID: 6670
 // Name: useNativeIAPPayments
-// Dependencies: [5, 32, 19, 5674, 3840, 3841, 5672, 676, 3, 589, 6328, 6664, 3850, 6665, 5503, 698, 6293, 5675, 38, 4509, 6667, 6668, 2]
+// Dependencies: [5, 32, 19, 5678, 3844, 3845, 5676, 676, 3, 589, 6334, 6670, 3854, 6671, 5507, 698, 6299, 5679, 38, 4513, 6673, 6674, 2]
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useNativeIAPPayments, useResubscribeSubscription
 
-// Module 6663 (useNativeIAPPayments)
+// Module 6669 (useNativeIAPPayments)
 import reset from "reset";
 import _slicedToArray from "_slicedToArray";
 import _deletePaymentSource from "_deletePaymentSource";
@@ -111,7 +111,7 @@ function useCreateSubscription(planId) {
       const obj = first(tmp6[10]);
     }
   }, items1);
-  importDefault(6664)(() => {
+  importDefault(6670)(() => {
     let tmp = memo;
     if (!memo) {
       tmp = outer1_15;
@@ -141,9 +141,9 @@ function useCreateSubscription(planId) {
   const items2 = [callback];
   const items3 = [planId];
   const stateFromStores = first(589).useStateFromStores(items2, () => callback.get(first), items3);
-  const tmp11 = importDefault(6665)(stateFromStores, tmp3[2]);
+  const tmp11 = importDefault(6671)(stateFromStores, tmp3[2]);
   React = tmp11;
-  const tmp12 = importDefault(5503)(() => first(_undefined[15]).getNewAnalyticsLoadId());
+  const tmp12 = importDefault(5507)(() => first(_undefined[15]).getNewAnalyticsLoadId());
   c6 = tmp12;
   const items4 = [tmp12, analyticsLocation, applicationId, planId, skuId];
   callback = React.useCallback(() => {
@@ -364,7 +364,7 @@ function useCancelSubscription(arg0, arg1) {
               dependencyMap = 1;
               c3 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(6328).cancelGenericSubscription(outer1_6.requestIdentifier, outer1_6.subscriptionId, outer1_1);
+              obj1[0] = outer1_0(6334).cancelGenericSubscription(outer1_6.requestIdentifier, outer1_6.subscriptionId, outer1_1);
               return obj1;
             }
           } else if (1 === tmp5) {
@@ -378,7 +378,7 @@ function useCancelSubscription(arg0, arg1) {
               return obj2;
             } else {
               closure_0 = arg1;
-              obj2 = outer1_0(4509);
+              obj2 = outer1_0(4513);
               dependencyMap = 2;
               c3 = 1;
               const obj3 = { value: null, done: false };
@@ -436,7 +436,7 @@ function useResubscribeSubscription(arg0) {
       const obj = first(tmp6[10]);
     }
   }, items1);
-  first(6664)(() => {
+  first(6670)(() => {
     let tmp = memo;
     if (!memo) {
       tmp = outer1_15;
@@ -478,7 +478,7 @@ function useResubscribeSubscription(arg0) {
     }
     return tmp3;
   }, items4);
-  const tmp12 = first(6668)(arg0);
+  const tmp12 = first(6674)(arg0);
   React = tmp12;
   obj = {
     resubscribeSubscription: React.useCallback(stateFromStores(function*() {
@@ -518,7 +518,7 @@ function useResubscribeSubscription(arg0) {
               dependencyMap = 1;
               isACOM = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(6328).resubscribeGenericSubscription(outer1_5, isACOM.isACOM);
+              obj1[0] = outer1_0(6334).resubscribeGenericSubscription(outer1_5, isACOM.isACOM);
               return obj1;
             }
           } else if (1 === tmp5) {
@@ -532,7 +532,7 @@ function useResubscribeSubscription(arg0) {
               return obj2;
             } else {
               closure_0 = arg1;
-              obj2 = outer1_0(4509);
+              obj2 = outer1_0(4513);
               dependencyMap = 2;
               isACOM = 1;
               const obj3 = { value: null, done: false };

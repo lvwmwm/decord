@@ -1,10 +1,10 @@
-// Module ID: 15896
-// Function ID: 15897
+// Module ID: 15924
+// Function ID: 15925
 // Name: SoundboardSoundPreviewActionSheet
-// Dependencies: [109, 19, 17, 1874, 4635, 676, 21, 4189, 712, 500, 589, 5515, 8045, 10772, 4642, 4605, 5551, 5206, 11124, 4185, 4600, 9415, 9417, 1236, 7681, 4050, 2]
+// Dependencies: [109, 19, 17, 1874, 4639, 676, 21, 4193, 712, 500, 589, 5519, 8051, 10790, 4646, 4609, 5555, 5210, 11142, 4189, 4604, 9430, 9432, 1236, 7689, 4054, 2]
 // Exports: default
 
-// Module 15896 (SoundboardSoundPreviewActionSheet)
+// Module 15924 (SoundboardSoundPreviewActionSheet)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import Text from "Text";
 import get_ActivityIndicator from "Emoji";
@@ -65,7 +65,7 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
     }
     return id;
   });
-  analyticsLocations = sound(5515)().analyticsLocations;
+  analyticsLocations = sound(5519)().analyticsLocations;
   let obj1 = channelId(589);
   const items1 = [handleSoundCreateOrUpdate];
   const stateFromStoresObject = obj1.useStateFromStoresObject(items1, () => {
@@ -81,10 +81,10 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   const items3 = [channelId, sound, borderPlaying];
   const callback = isFavorite.useCallback(() => {
     if (isFavorite) {
-      let tmpResult = tmp(8045);
+      let tmpResult = tmp(8051);
       tmpResult.removeFavoriteSound(sound.soundId);
     } else {
-      tmpResult = tmp(10772);
+      tmpResult = tmp(10790);
       let obj = { sound: null, location: null };
       obj[0] = sound;
       obj = {};
@@ -92,17 +92,17 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
       obj.object = outer1_10.SOUNDBOARD_SOUND;
       obj[1] = obj;
       tmpResult.trackSoundFavorited(obj);
-      channelId(8045).addFavoriteSound(sound.soundId);
-      const obj4 = channelId(8045);
+      channelId(8051).addFavoriteSound(sound.soundId);
+      const obj4 = channelId(8051);
     }
   }, items2);
   const callback1 = isFavorite.useCallback(() => {
     if (!borderPlaying) {
-      channelId(8045).playSoundLocally(channelId, sound, channelId(4642).LocalSoundTrigger.SOUNDBOARD);
-      const obj = channelId(8045);
+      channelId(8051).playSoundLocally(channelId, sound, channelId(4646).LocalSoundTrigger.SOUNDBOARD);
+      const obj = channelId(8051);
     }
   }, items3);
-  let obj2 = channelId(4605);
+  let obj2 = channelId(4609);
   const buttonPressAnimationProps = obj2.useButtonPressAnimationProps();
   obj = { fastImageStyle: items4, textEmojiStyle: items5, src: null, name: null };
   items4 = [, ];
@@ -110,20 +110,20 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   items5 = [, ];
   ({ emoji: arr6[0], emojiText: arr6[1] } = tmp);
   const tmp9 = borderPlaying(buttonPressAnimationProps, analyticsLocations);
-  obj[2] = sound(11124)(sound, 64);
+  obj[2] = sound(11142)(sound, 64);
   let str = sound.emojiName;
   if (str == null) {
     str = "";
   }
   obj[3] = str;
-  const items6 = [closure_11(sound(5206), obj), , ];
+  const items6 = [closure_11(sound(5210), obj), , ];
   obj = { style: tmp.text, variant: "heading-lg/extrabold", children: sound.name };
-  items6[1] = closure_11(channelId(4185).Text, obj);
+  items6[1] = closure_11(channelId(4189).Text, obj);
   obj1 = { style: tmp.buttonContainer, children: null };
   if (isFavorite) {
-    let StarOutlineIcon = tmp2(9415).StarIcon;
+    let StarOutlineIcon = tmp2(9430).StarIcon;
   } else {
-    StarOutlineIcon = tmp2(9417).StarOutlineIcon;
+    StarOutlineIcon = tmp2(9432).StarOutlineIcon;
   }
   obj2 = { variant: "primary", icon: tmp10(StarOutlineIcon, obj3), text: null, onPress: null };
   const intl = tmp2(1236).intl;
@@ -136,17 +136,17 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   }
   obj2[2] = stringResult;
   obj2[3] = callback;
-  const items7 = [closure_11(channelId(4600).Button, obj2), ];
+  const items7 = [closure_11(channelId(4604).Button, obj2), ];
   let obj4 = {};
   let merged = Object.assign(tmp9);
   obj4.variant = "secondary";
   obj3 = { style: tmp.star };
-  const tmp13 = sound(5206);
-  obj4.icon = closure_11(closure_7, { style: tmp.star, source: sound(7681) });
+  const tmp13 = sound(5210);
+  obj4.icon = closure_11(closure_7, { style: tmp.star, source: sound(7689) });
   const intl2 = tmp2(1236).intl;
   obj4.text = intl2.string(channelId(1236).t.Kd4uxG);
   obj4.onPress = callback1;
-  const items8 = [closure_11(channelId(4600).Button, obj4), ];
+  const items8 = [closure_11(channelId(4604).Button, obj4), ];
   const items9 = [tmp.border, , ];
   if (borderPlaying) {
     borderPlaying = tmp.borderPlaying;
@@ -156,12 +156,12 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   const obj8 = { children: null };
   items9[1] = borderPlaying;
   items9[2] = buttonPressAnimationProps.style;
-  items8[1] = closure_11(sound(4050).View, { style: items9 });
+  items8[1] = closure_11(sound(4054).View, { style: items9 });
   obj8[0] = items8;
   items7[1] = closure_12(closure_6, obj8);
   obj1[1] = items7;
   items6[2] = closure_12(closure_6, obj1);
   obj7[0] = items6;
   obj6[1] = closure_12(closure_6, obj7);
-  return closure_11(channelId(5551).ActionSheet, obj6);
+  return closure_11(channelId(5555).ActionSheet, obj6);
 };

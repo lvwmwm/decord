@@ -1,22 +1,22 @@
-// Module ID: 15571
-// Function ID: 15572
+// Module ID: 15599
+// Function ID: 15600
 // Name: headerBackground
-// Dependencies: [19, 21, 4719, 8821, 1581, 500, 4169, 2]
+// Dependencies: [19, 21, 4723, 8834, 1581, 500, 4173, 2]
 // Exports: default
 
-// Module 15571 (headerBackground)
+// Module 15599 (headerBackground)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
 let require = arg1;
 function headerBackground(arg0) {
-  return jsx(importDefault(4719), { absolute: true, tall: true, wide: true });
+  return jsx(importDefault(4723), { absolute: true, tall: true, wide: true });
 }
-let closure_5 = { headerBackground: "Array", contentStyle: "ct" };
+let closure_5 = { headerBackground: "Array", contentStyle: "HermesInternal" };
 const result = require("getMixedGradientColor").fileFinishedImporting("modules/client_themes/native/useThemedHeaderOptions.tsx");
 
 export default function useThemedHeaderOptions() {
-  const tmp = top(8821)();
+  const tmp = top(8834)();
   const require = tmp;
   top = top(1581)().top;
   const items = [top, tmp];

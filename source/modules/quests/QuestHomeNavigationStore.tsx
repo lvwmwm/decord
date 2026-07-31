@@ -1,9 +1,9 @@
-// Module ID: 10957
-// Function ID: 10958
+// Module ID: 10975
+// Function ID: 10976
 // Name: zustandStore
-// Dependencies: [4057, 2]
+// Dependencies: [4061, 2]
 
-// Module 10957 (zustandStore)
+// Module 10975 (zustandStore)
 const zustandStore = require("defaultStatesAreEqual").createZustandStore(() => ({ sort: null, filter: null, scrollToQuestId: null }));
 const result = require("set").fileFinishedImporting("modules/quests/QuestHomeNavigationStore.tsx");
 

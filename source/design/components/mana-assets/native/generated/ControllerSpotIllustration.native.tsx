@@ -1,10 +1,10 @@
-// Module ID: 6947
-// Function ID: 6948
+// Module ID: 6955
+// Function ID: 6956
 // Name: ControllerSpotIllustration
-// Dependencies: [21, 5141, 6948, 2]
+// Dependencies: [21, 5145, 6956, 2]
 // Exports: ControllerSpotIllustration
 
-// Module 6947 (ControllerSpotIllustration)
+// Module 6955 (ControllerSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ControllerSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const ControllerSpotIllustration = function ControllerSpotIllustration(wi
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6948);
+  obj[0] = importDefault(6956);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ControllerSpotIllustration = function ControllerSpotIllustration(wi
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
 };

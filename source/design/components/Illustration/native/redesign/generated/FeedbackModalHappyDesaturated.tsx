@@ -1,10 +1,10 @@
-// Module ID: 9533
-// Function ID: 9534
+// Module ID: 9548
+// Function ID: 9549
 // Name: getFeedbackModalHappyDesaturatedSource
-// Dependencies: [19, 17, 21, 6535, 9534, 9535, 9536, 4035, 2]
+// Dependencies: [19, 17, 21, 6541, 9549, 9550, 9551, 4039, 2]
 // Exports: FeedbackModalHappyDesaturated, getFeedbackModalHappyDesaturatedSource, useFeedbackModalHappyDesaturatedSource
 
-// Module 9533 (getFeedbackModalHappyDesaturatedSource)
+// Module 9548 (getFeedbackModalHappyDesaturatedSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -13,50 +13,50 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/FeedbackModalHappyDesaturated.tsx");
 
 export const getFeedbackModalHappyDesaturatedSource = function getFeedbackModalHappyDesaturatedSource(theme) {
-  let obj = require(6535) /* getIllustrationSource */;
+  let obj = require(6541) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(9534);
+      return callback(9549);
     },
     darker() {
-      return callback(9535);
+      return callback(9550);
     },
     light() {
-      return callback(9536);
+      return callback(9551);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 };
 export const useFeedbackModalHappyDesaturatedSource = function useFeedbackModalHappyDesaturatedSource() {
-  let obj = require(4035) /* AccessibilityAnnouncer */;
+  let obj = require(4039) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(9534);
+      return callback(9549);
     },
     darker() {
-      return callback(9535);
+      return callback(9550);
     },
     light() {
-      return callback(9536);
+      return callback(9551);
     }
   };
-  return require(6535) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  return require(6541) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
 };
 export const FeedbackModalHappyDesaturated = function FeedbackModalHappyDesaturated(arg0) {
-  let obj = require(4035) /* AccessibilityAnnouncer */;
+  let obj = require(4039) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(9534);
+      return callback(9549);
     },
     darker() {
-      return callback(9535);
+      return callback(9550);
     },
     light() {
-      return callback(9536);
+      return callback(9551);
     }
   };
   obj = {};
-  const illustrationSource = require(6535) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  const illustrationSource = require(6541) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
   obj.source = illustrationSource;
   return <Image />;

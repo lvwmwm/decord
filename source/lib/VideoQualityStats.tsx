@@ -1,10 +1,10 @@
-// Module ID: 6025
-// Function ID: 6026
+// Module ID: 6031
+// Function ID: 6032
 // Name: parseEncoder
-// Dependencies: [32, 6026, 6032, 4265, 2]
+// Dependencies: [32, 6032, 6038, 4269, 2]
 // Exports: parseCodecType
 
-// Module 6025 (parseEncoder)
+// Module 6031 (parseEncoder)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -63,7 +63,7 @@ RawVideoStats["parseInboundStats"] = function parseInboundStats(found, closure_1
   let framesDecodeErrors;
   let framesDropped;
   let totalDecodeTime;
-  if (typeof RawVideoStats !== "find") {
+  if (typeof RawVideoStats !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(RawVideoStats.prototype);
@@ -183,7 +183,7 @@ RawVideoStats["parseOutboundStats"] = function parseOutboundStats(resolution, cl
   let framesSent;
   let freezeCount;
   let packetsLost;
-  if (typeof RawVideoStats !== "find") {
+  if (typeof RawVideoStats !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   let obj = Object.create(RawVideoStats.prototype);
@@ -499,7 +499,7 @@ prototype["appendAndIncrementStats"] = function appendAndIncrementStats(parseInb
     if (self.statsWindow.length < 2) {
       if (!self.hasSeededAggregation) {
         self.hasSeededAggregation = true;
-        if (typeof RawVideoStats !== "find") {
+        if (typeof RawVideoStats !== "fileFinishedImporting") {
           HermesBuiltin.throwTypeError();
         }
         const obj = Object.create(RawVideoStats.prototype);

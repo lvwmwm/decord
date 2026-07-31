@@ -1,16 +1,16 @@
-// Module ID: 3903
-// Function ID: 3904
+// Module ID: 3907
+// Function ID: 3908
 // Name: updateAccessibilityAnnouncerLiveRegionMessage
-// Dependencies: [19, 17, 21, 3904, 2]
+// Dependencies: [19, 17, 21, 3908, 2]
 // Exports: updateAccessibilityAnnouncerLiveRegionMessage
 
-// Module 3903 (updateAccessibilityAnnouncerLiveRegionMessage)
+// Module 3907 (updateAccessibilityAnnouncerLiveRegionMessage)
 import { Text } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import keys from "keys";
 import importAllResult from "noop";
 
-let closure_2 = keys.create(() => ({ message: "disabled", version: false }));
+let closure_2 = keys.create(() => ({ message: "description", version: false }));
 const memoResult = require("noop").memo(() => {
   const tmp = state();
   return <Text key={tmp.version} accessibilityLiveRegion="polite" style={{ display: "none" }}>{tmp.message}</Text>;

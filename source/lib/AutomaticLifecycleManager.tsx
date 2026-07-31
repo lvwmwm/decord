@@ -1,9 +1,9 @@
-// Module ID: 5134
-// Function ID: 5135
+// Module ID: 5138
+// Function ID: 5139
 // Name: initialize
 // Dependencies: [709, 2]
 
-// Module 5134 (initialize)
+// Module 5138 (initialize)
 const result = require("set").fileFinishedImporting("lib/AutomaticLifecycleManager.tsx");
 class AutomaticLifecycleManager {
   constructor() {
@@ -27,7 +27,7 @@ prototype["initialize"] = function initialize() {
       let tmp2;
       [tmp, tmp2] = arg0;
       let callback = tmp2;
-      if (typeof tmp2 !== "find") {
+      if (typeof tmp2 !== "fileFinishedImporting") {
         callback = tmp2.callback;
       }
       const subscription = callback(table[0]).subscribe(tmp, callback);
@@ -56,7 +56,7 @@ prototype["terminate"] = function terminate(arg0) {
         let tmp2;
         [tmp, tmp2] = arg0;
         let callback = tmp2;
-        if (typeof tmp2 !== "find") {
+        if (typeof tmp2 !== "fileFinishedImporting") {
           callback = tmp2.callback;
         }
         callback(table[0]).unsubscribe(tmp, callback);

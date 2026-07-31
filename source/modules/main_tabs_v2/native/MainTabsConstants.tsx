@@ -1,9 +1,9 @@
-// Module ID: 8763
-// Function ID: 8764
+// Module ID: 8776
+// Function ID: 8777
 // Name: MODE_CHANGE_PHYSICS
 // Dependencies: [2]
 
-// Module 8763 (MODE_CHANGE_PHYSICS)
+// Module 8776 (MODE_CHANGE_PHYSICS)
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/MainTabsConstants.tsx");
 
 export const MODE_CHANGE_PHYSICS = { mass: 0.5, damping: 30, stiffness: 320 };

@@ -1,10 +1,10 @@
-// Module ID: 6931
-// Function ID: 6932
+// Module ID: 6939
+// Function ID: 6940
 // Name: ClydeHologramSpotIllustration
-// Dependencies: [21, 5141, 6932, 2]
+// Dependencies: [21, 5145, 6940, 2]
 // Exports: ClydeHologramSpotIllustration
 
-// Module 6931 (ClydeHologramSpotIllustration)
+// Module 6939 (ClydeHologramSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ClydeHologramSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const ClydeHologramSpotIllustration = function ClydeHologramSpotIllustrat
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6932);
+  obj[0] = importDefault(6940);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ClydeHologramSpotIllustration = function ClydeHologramSpotIllustrat
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5141), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
 };

@@ -1,10 +1,10 @@
-// Module ID: 14439
-// Function ID: 14440
+// Module ID: 14462
+// Function ID: 14463
 // Name: NotificationPermissionSettingsHeader
-// Dependencies: [19, 17, 676, 11501, 21, 4189, 712, 11502, 698, 5222, 10223, 4185, 1236, 4600, 2]
+// Dependencies: [19, 17, 676, 11518, 21, 4193, 712, 11519, 698, 5226, 10241, 4189, 1236, 4604, 2]
 // Exports: default
 
-// Module 14439 (NotificationPermissionSettingsHeader)
+// Module 14462 (NotificationPermissionSettingsHeader)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -37,7 +37,7 @@ const result = require("ME").fileFinishedImporting("modules/user_settings/notifi
 
 export default function NotificationPermissionSettingsHeader() {
   const tmp = createCacheKey();
-  let obj = canSeePushNotificationNudge(11502);
+  let obj = canSeePushNotificationNudge(11519);
   canSeePushNotificationNudge = obj.useCanSeePushNotificationNudge();
   const items = [canSeePushNotificationNudge];
   const effect = React.useEffect(() => {
@@ -60,28 +60,28 @@ export default function NotificationPermissionSettingsHeader() {
     obj2[0] = tmp.iconCircle;
     const obj3 = { size: "md", color: null };
     obj3[1] = importDefault(712).colors.ICON_STRONG;
-    obj2[1] = callback(tmp2(10223).BellSlashIcon, obj3);
+    obj2[1] = callback(tmp2(10241).BellSlashIcon, obj3);
     const items1 = [callback(View, obj2), , , ];
     const obj4 = { variant: "heading-lg/bold", color: "text-default", children: null };
     const intl = tmp2(1236).intl;
     obj4[2] = intl.string(tmp2(1236).t.MUwOvc);
-    items1[1] = callback(tmp2(4185).Text, obj4);
+    items1[1] = callback(tmp2(4189).Text, obj4);
     const obj5 = { variant: "text-sm/medium", style: null, color: "text-muted", children: null };
     obj5[1] = tmp.body;
     const intl2 = tmp2(1236).intl;
     obj5[3] = intl2.string(tmp2(1236).t.G4uKoe);
-    items1[2] = callback(tmp2(4185).Text, obj5);
+    items1[2] = callback(tmp2(4189).Text, obj5);
     const obj6 = { style: null, children: null };
     obj6[0] = { alignSelf: "stretch" };
     const obj7 = { variant: "primary", text: null, onPress: null };
     const intl3 = tmp2(1236).intl;
     obj7[1] = intl3.string(tmp2(1236).t["5xWOXv"]);
     obj7[2] = tmp6;
-    obj6[1] = callback(tmp2(4600).Button, obj7);
+    obj6[1] = callback(tmp2(4604).Button, obj7);
     items1[3] = callback(View, obj6);
     obj1[1] = items1;
     obj[2] = callback2(View, obj1);
-    obj[1] = callback(tmp2(5222).Card, obj);
+    obj[1] = callback(tmp2(5226).Card, obj);
     tmp7 = callback(View, obj);
   }
   return tmp7;

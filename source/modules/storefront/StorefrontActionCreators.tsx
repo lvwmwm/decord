@@ -1,10 +1,10 @@
-// Module ID: 8679
-// Function ID: 8680
+// Module ID: 8692
+// Function ID: 8693
 // Name: shouldFetchStorefrontPromotions
-// Dependencies: [5, 3837, 5667, 6497, 8680, 8681, 676, 687, 709, 530, 5666, 2]
+// Dependencies: [5, 3841, 5671, 6503, 8693, 8694, 676, 687, 709, 530, 5670, 2]
 // Exports: fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 8679 (shouldFetchStorefrontPromotions)
+// Module 8692 (shouldFetchStorefrontPromotions)
 import parseSkuIds from "parseSkuIds";
 import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
 import "resetStoreState";
@@ -458,7 +458,7 @@ function _fetchStorefrontPrices() {
             obj = body(709);
             let obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: null, data: null };
             obj2[1] = callback;
-            obj2 = callback(5666);
+            obj2 = callback(5670);
             obj2[2] = obj2.transformStorefrontPricesServer(body);
             obj.dispatch(obj2);
             dependencyMap = 0;

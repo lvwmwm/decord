@@ -1,10 +1,10 @@
-// Module ID: 11137
-// Function ID: 11138
+// Module ID: 11155
+// Function ID: 11156
 // Name: PrimaryActionButton
-// Dependencies: [32, 19, 17, 3841, 676, 1876, 21, 4189, 712, 698, 11138, 4031, 5243, 5242, 1236, 2421, 4185, 6203, 4600, 589, 3835, 6213, 5535, 1297, 4032, 2]
+// Dependencies: [32, 19, 17, 3845, 676, 1876, 21, 4193, 712, 698, 11156, 4035, 5247, 5246, 1236, 2423, 4189, 6209, 4604, 589, 3839, 6219, 5539, 1297, 4036, 2]
 // Exports: default
 
-// Module 11137 (PrimaryActionButton)
+// Module 11155 (PrimaryActionButton)
 import _slicedToArray from "_slicedToArray";
 import initialize from "initialize";
 import noop from "initialize";
@@ -33,10 +33,10 @@ function PrimaryActionButton(onPressApply) {
     obj[0] = intl2.string(tmp2(1236).t.pj0XBN);
     obj[1] = function onPressSubscribe() {
       const obj = { premiumType: TIER_2.TIER_2, analyticsLocations: null, analyticsLocation: null };
-      const items = [callback(5535).SHARE_CUSTOM_CLIENT_THEME_EMBED];
+      const items = [callback(5539).SHARE_CUSTOM_CLIENT_THEME_EMBED];
       obj[1] = items;
       obj[2] = {};
-      callback(6213)(obj);
+      callback(6219)(obj);
     };
     obj[2] = function renderIcon() {
       const style = [tmp.nitroWheelButton];
@@ -49,7 +49,7 @@ function PrimaryActionButton(onPressApply) {
     const intl = tmp2(1236).intl;
     obj[0] = intl.string(tmp2(1236).t["1Qm822"]);
     obj[1] = onPressApply.onPressApply;
-    tmp6 = callback4(tmp2(4600).Button, obj);
+    tmp6 = callback4(tmp2(4604).Button, obj);
   }
   return tmp6;
 }

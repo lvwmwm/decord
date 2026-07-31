@@ -1,10 +1,10 @@
-// Module ID: 7936
-// Function ID: 7937
+// Module ID: 7943
+// Function ID: 7944
 // Name: ANALYTICS_NAME
 // Dependencies: [676, 687, 1236, 1411, 2]
 // Exports: getFilterMap, getNotificationsInboxGuild
 
-// Module 7936 (ANALYTICS_NAME)
+// Module 7943 (ANALYTICS_NAME)
 import { NOTIFICATIONS_INBOX } from "ME";
 
 let obj = { UNREAD: "UNREAD", TODAY: "TODAY", YESTERDAY: "YESTERDAY", OLDER: "OLDER" };
@@ -37,7 +37,7 @@ export const getNotificationsInboxGuild = function getNotificationsInboxGuild(ar
     const intl = require(1236) /* getSystemLocale */.intl;
     stringResult = intl.string(require(1236) /* getSystemLocale */.t.HcoRu0);
   }
-  obj = { id: NOTIFICATIONS_INBOX, name: stringResult, description: "", icon: "Array", features: "fetched" };
+  obj = { id: NOTIFICATIONS_INBOX, name: stringResult, description: "", icon: "Array", features: "SUBSCRIPTION" };
   obj[4] = [];
   return tmp2(1411).fromGuildBasic(obj);
 };

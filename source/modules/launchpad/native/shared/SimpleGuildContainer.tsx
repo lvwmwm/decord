@@ -1,10 +1,10 @@
-// Module ID: 15792
-// Function ID: 15793
+// Module ID: 15820
+// Function ID: 15821
 // Name: SimpleGuildContainer
-// Dependencies: [19, 17, 21, 4189, 9119, 14985, 712, 15791, 3893, 15793, 4050, 4599, 2]
+// Dependencies: [19, 17, 21, 4193, 9132, 15011, 712, 15819, 3897, 15821, 4054, 4603, 2]
 // Exports: SimpleGuildContainer, SimpleGuildContainerAnimated
 
-// Module 15792 (SimpleGuildContainer)
+// Module 15820 (SimpleGuildContainer)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ let closure_12 = importAllResult.memo((backgroundColor) => {
     obj[0] = badge;
     obj[1] = unread;
     obj[2] = backgroundColor.backgroundColor;
-    obj[1] = callback(importDefault(9119), obj);
+    obj[1] = callback(importDefault(9132), obj);
     let tmp2 = callback(closure_5, obj);
   } else {
     tmp2 = null;
@@ -55,7 +55,7 @@ let closure_13 = importAllResult.memo((arg0) => {
     obj[0] = backgroundColor;
     obj[0] = obj;
     ({ source: obj3[1], IconComponent: obj3[2], isCurrentUserConnected: obj3[3] } = activityIndicatorState);
-    let tmp2 = callback(require(14985) /* getMediaIcon */.GuildsBarActivityIndicatorBase, obj);
+    let tmp2 = callback(require(15011) /* getMediaIcon */.GuildsBarActivityIndicatorBase, obj);
   } else {
     tmp2 = null;
     if (null != guildId) {
@@ -64,7 +64,7 @@ let closure_13 = importAllResult.memo((arg0) => {
       const obj1 = { backgroundColor: null };
       obj1[0] = backgroundColor;
       obj[1] = obj1;
-      tmp2 = callback(importDefault(14985), obj);
+      tmp2 = callback(importDefault(15011), obj);
     }
   }
   return tmp2;

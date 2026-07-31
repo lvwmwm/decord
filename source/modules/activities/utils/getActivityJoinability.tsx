@@ -1,10 +1,10 @@
-// Module ID: 12021
-// Function ID: 12022
+// Module ID: 12039
+// Function ID: 12040
 // Name: getActivityJoinability
-// Dependencies: [676, 10949, 10946, 10600, 10529, 6023, 12022, 500, 10943, 10944, 10945, 2]
+// Dependencies: [676, 10967, 10964, 10618, 10547, 6029, 12040, 500, 10961, 10962, 10963, 2]
 // Exports: default
 
-// Module 12021 (getActivityJoinability)
+// Module 12039 (getActivityJoinability)
 import ME from "ME";
 
 let c3;
@@ -50,14 +50,14 @@ export default function getActivityJoinability(arg0) {
           obj[2] = channelId;
           obj[3] = tmp2;
           obj[4] = tmp;
-          const tmp45 = importDefault(10600);
-          obj[5] = require(10529) /* useIsActivitiesEnabledForCurrentPlatform */.getIsActivitiesEnabledForCurrentPlatform();
+          const tmp45 = importDefault(10618);
+          obj[5] = require(10547) /* useIsActivitiesEnabledForCurrentPlatform */.getIsActivitiesEnabledForCurrentPlatform();
           obj[6] = ChannelStore;
           obj[7] = VoiceStateStore;
           obj[8] = tmp3;
           obj[9] = GuildStore;
-          const obj8 = require(10529) /* useIsActivitiesEnabledForCurrentPlatform */;
-          if (tmp45Result === require(10600) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CAN_JOIN) {
+          const obj8 = require(10547) /* useIsActivitiesEnabledForCurrentPlatform */;
+          if (tmp45Result === require(10618) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CAN_JOIN) {
             let CANNOT_JOIN2 = obj.CAN_JOIN;
           } else {
             CANNOT_JOIN2 = obj.CANNOT_JOIN;
@@ -67,28 +67,28 @@ export default function getActivityJoinability(arg0) {
       }
       if (isEmbedded) {
         if (null == channelId) {
-          if (!importDefault(6023)(activity, constants.CONTEXTLESS)) {
+          if (!importDefault(6029)(activity, constants.CONTEXTLESS)) {
             return obj.CANNOT_JOIN;
           }
         }
       }
       if (!isEmbedded) {
-        if (importDefault(12022)(activity)) {
+        if (importDefault(12040)(activity)) {
           const obj2 = require(500) /* set */;
         }
         return obj.CANNOT_JOIN;
       }
-      const partySize = require(10943) /* getPartySize */.getPartySize(activity);
-      const obj3 = require(10943) /* getPartySize */;
+      const partySize = require(10961) /* getPartySize */.getPartySize(activity);
+      const obj3 = require(10961) /* getPartySize */;
       const tmp27 = require;
       if (obj4.hasPartySize(partySize)) {
         if (!tmp27Result.isPartyFull(partySize)) {
-          if (importDefault(6023)(activity, constants.PARTY_PRIVACY_FRIENDS)) {
+          if (importDefault(6029)(activity, constants.PARTY_PRIVACY_FRIENDS)) {
             if (RelationshipStore.isFriend(user.id)) {
               return obj.CAN_JOIN;
             }
           }
-          if (tmp30(6023)(activity, tmp31.PARTY_PRIVACY_VOICE_CHANNEL)) {
+          if (tmp30(6029)(activity, tmp31.PARTY_PRIVACY_VOICE_CHANNEL)) {
             const channel = ChannelStore.getChannel(SelectedChannelStore.getVoiceChannelId());
             if (null != channel) {
               if (VoiceStateStore.isInChannel(channel.id, user.id)) {
@@ -122,7 +122,7 @@ export default function getActivityJoinability(arg0) {
           tmp30 = importDefault;
           tmp31 = constants;
         }
-        tmp27Result = tmp27(10945);
+        tmp27Result = tmp27(10963);
       }
       return obj.CANNOT_JOIN;
     }
@@ -131,13 +131,13 @@ export default function getActivityJoinability(arg0) {
     if (activity != null) {
       application_id1 = activity.application_id;
     }
-    const tmp8Result = importDefault(10949)(tmp4, tmp5, application_id1);
+    const tmp8Result = importDefault(10967)(tmp4, tmp5, application_id1);
     let isInParty = null != tmp8Result;
     if (isInParty) {
-      obj = require(10946) /* getIsInParty */;
+      obj = require(10964) /* getIsInParty */;
       isInParty = obj.getIsInParty(tmp8Result, activity);
     }
-    const tmp8 = importDefault(10949);
+    const tmp8 = importDefault(10967);
   }
   return obj.JOINED;
 };

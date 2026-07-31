@@ -1,9 +1,9 @@
-// Module ID: 4201
-// Function ID: 4202
+// Module ID: 4205
+// Function ID: 4206
 // Name: generateOldThreadCutoff
-// Dependencies: [5, 32, 1371, 4202, 1933, 4103, 5779, 5655, 5656, 5923, 5097, 3819, 1340, 1376, 1218, 5872, 1372, 4859, 4527, 1862, 5000, 4407, 3817, 3826, 1931, 4385, 1874, 12969, 676, 5688, 1379, 1378, 4386, 1235, 3, 12970, 12971, 11, 687, 709, 4423, 12972, 530, 4074, 9473, 10249, 3825, 12973, 5789, 5919, 12974, 1959, 1384, 3771, 12, 1351, 4863, 4041, 10248, 3824, 1385, 589, 6325, 8201, 2]
+// Dependencies: [5, 32, 1371, 4206, 1933, 4107, 5784, 5659, 5660, 5929, 5101, 3823, 1340, 1376, 1218, 5877, 1372, 4863, 4531, 1862, 5004, 4411, 3821, 3830, 1931, 4389, 1874, 12994, 676, 5692, 1379, 1378, 4390, 1235, 3, 12995, 12996, 11, 687, 709, 4427, 12997, 530, 4078, 9488, 10267, 3829, 12998, 5794, 5925, 12999, 1959, 1384, 3775, 12, 1351, 4867, 4045, 10266, 3828, 1385, 589, 6331, 8208, 2]
 
-// Module 4201 (generateOldThreadCutoff)
+// Module 4205 (generateOldThreadCutoff)
 import getHash from "getHash";
 import ReadStateTypes from "ReadStateTypes";
 import participantFromServer from "participantFromServer";
@@ -108,14 +108,14 @@ function shouldBadgeMessage(channel_id, id) {
       obj[1] = id.id;
       obj[2] = updateUserGuildSettingsInternal.isSuppressEveryoneEnabled(channel.guild_id);
       obj[3] = updateUserGuildSettingsInternal.isSuppressRolesEnabled(channel.guild_id);
-      let tmp8Result = importDefault(4423)(obj);
+      let tmp8Result = importDefault(4427)(obj);
       if (!tmp8Result) {
         tmp8Result = null != channel && channel.isPrivate() && !obj3.isGuildOrCategoryOrChannelMuted(channel.guild_id, channel.id);
         const tmp10 = null != channel && channel.isPrivate() && !obj3.isGuildOrCategoryOrChannelMuted(channel.guild_id, channel.id);
       }
       tmp4 = tmp8Result;
       obj3 = updateUserGuildSettingsInternal;
-      const tmp8 = importDefault(4423);
+      const tmp8 = importDefault(4427);
     }
     tmp = tmp4;
   }
@@ -316,7 +316,7 @@ function shouldAutomaticallyAck(value, arg1) {
           }
           return false;
         }
-        obj5 = importDefault(9473);
+        obj5 = importDefault(9488);
       }
       if (tmp4) {
         if (!value._persisted) {
@@ -376,7 +376,7 @@ function shouldAutomaticallyAck(value, arg1) {
           if (null != messages) {
             if (messages.ready) {
               if (!messages.loadingMore) {
-                const result = require(10249) /* getFocusedChannelId */.isChannelFocusedForReadStateAck(value.channelId, arg1);
+                const result = require(10267) /* getFocusedChannelId */.isChannelFocusedForReadStateAck(value.channelId, arg1);
                 const currentUser9 = obj.getCurrentUser();
                 if (result) {
                   let hasAnyStaffLevelResult9;
@@ -399,7 +399,7 @@ function shouldAutomaticallyAck(value, arg1) {
                     flag6 = false;
                   }
                 }
-                const obj10 = require(10249) /* getFocusedChannelId */;
+                const obj10 = require(10267) /* getFocusedChannelId */;
               }
               return flag6;
             }
@@ -659,7 +659,7 @@ function getThreadAckMessageTimestamp(guildId, channelId) {
           now = isNaN(_Date);
           let joinedAt = _Date;
         } else if (typeof joinedAt2 !== "y") {
-          if (typeof _Date.joinedAt !== "reType") {
+          if (typeof _Date.joinedAt !== "__REMOTEDEV__") {
             const _isNaN6 = isNaN;
             if (!isNaN(_Date.joinedAt)) {
               joinedAt = _Date.joinedAt;
@@ -1089,7 +1089,7 @@ ReadState["get"] = function get(channelId) {
     value = value.get(channelId);
   }
   if (null == value) {
-    if (typeof tmp2 !== "find") {
+    if (typeof tmp2 !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     let CHANNEL2 = CHANNEL;
@@ -1716,8 +1716,8 @@ prototype2["canTrackUnreads"] = function canTrackUnreads() {
         return tmp3;
       } else if ("basicPermissions" in basicPermissions) {
         basicPermissions = basicPermissions.basicPermissions;
-        let hasItem = importDefault(3825).has(basicPermissions, BasicPermissions.VIEW_CHANNEL);
-        const obj = importDefault(3825);
+        let hasItem = importDefault(3829).has(basicPermissions, BasicPermissions.VIEW_CHANNEL);
+        const obj = importDefault(3829);
       } else {
         const isChannelGatedResult = isSubscriptionGated.isChannelGated(self.guildId, self.channelId);
         hasItem = !isChannelGatedResult;
@@ -1751,11 +1751,11 @@ prototype2["canBeUnread"] = function canBeUnread() {
           }
         }
       }
-      tmpResult = tmp(5789);
+      tmpResult = tmp(5794);
     }
     return self.canTrackUnreads();
   }
-  obj = require(12973) /* filterOutMessageRequestsAndSpam */;
+  obj = require(12998) /* filterOutMessageRequestsAndSpam */;
   tmp = require;
 };
 prototype2["canHaveMentions"] = function canHaveMentions() {
@@ -1765,10 +1765,10 @@ prototype2["canHaveMentions"] = function canHaveMentions() {
     let tmp3 = !tmp2;
     if (!(self._isThread && !self._isJoinedThread)) {
       const items = [processChannel, closure_12];
-      const result = require(12973) /* filterOutMessageRequestsAndSpam */.isMessageRequestOrSpamRequest(self.channelId, items);
+      const result = require(12998) /* filterOutMessageRequestsAndSpam */.isMessageRequestOrSpamRequest(self.channelId, items);
       let tmp9 = !result;
       if (!result) {
-        let result1 = tmp4(5789).isOptInEnabledForGuild(self._guildId);
+        let result1 = tmp4(5794).isOptInEnabledForGuild(self._guildId);
         if (result1) {
           result1 = self._lastMessageTimestamp < c71;
         }
@@ -1777,10 +1777,10 @@ prototype2["canHaveMentions"] = function canHaveMentions() {
           canTrackUnreadsResult = self.canTrackUnreads();
         }
         tmp9 = canTrackUnreadsResult;
-        const tmp4Result = tmp4(5789);
+        const tmp4Result = tmp4(5794);
       }
       tmp3 = tmp9;
-      const obj = require(12973) /* filterOutMessageRequestsAndSpam */;
+      const obj = require(12998) /* filterOutMessageRequestsAndSpam */;
       tmp4 = require;
     }
     tmp = tmp3;
@@ -1801,7 +1801,7 @@ prototype2["getGuildChannelUnreadState"] = function getGuildChannelUnreadState(b
     }
   }
   if ("basicPermissions" in basicPermissions) {
-    let obj = importDefault(3825);
+    let obj = importDefault(3829);
     if (!obj.has(basicPermissions.basicPermissions, BasicPermissions.VIEW_CHANNEL)) {
       return { mentionCount: 0, unread: false, isMentionLowImportance: false };
     }
@@ -1868,7 +1868,7 @@ prototype2["ackPins"] = function ackPins() {
         return false;
       } else {
         self._persisted = true;
-        importDefault(12972)(() => {
+        importDefault(12997)(() => {
           const HTTP = self(outer1_2[42]).HTTP;
           return HTTP.post({ url: outer1_39.PINS_ACK(self.channelId), oldFormErrors: true, rejectWithError: true });
         });
@@ -2012,7 +2012,7 @@ prototype2["ack"] = function ack(immediate) {
   }
 };
 prototype2["takeSnapshot"] = function takeSnapshot() {
-  const _default = require(5919) /* updateGuildUnreadSentinel */.default;
+  const _default = require(5925) /* updateGuildUnreadSentinel */.default;
   const guildId = this.guildId;
   const obj = { unread: this.hasUnread(), mentionCount: this.mentionCount, guildUnread: null, guildMentionCount: null, takenAt: null };
   let hasUnreadResult = null;
@@ -2083,7 +2083,7 @@ prototype2["_ack"] = function _ack(closure_1, c0) {
       tmp4 = recalculateFlagsResult;
     }
     const require = tmp4;
-    importDefault(12972)(() => {
+    importDefault(12997)(() => {
       const HTTP = tmp4(530).HTTP;
       obj = { url: outer1_39.MESSAGE_ACK(self.channelId, outgoingAck), body: obj, oldFormErrors: true, rejectWithError: true };
       obj = { token: outer1_63, last_viewed: self.lastViewed, flags: tmp4 };
@@ -2099,20 +2099,20 @@ prototype2["_ack"] = function _ack(closure_1, c0) {
         }
         callback(709).dispatch({ type: "MESSAGE_ACKED" });
         if (dependencyMap) {
-          tmp4(1959)(12974, tmp5.paths).then((arg0) => {
+          tmp4(1959)(12999, tmp5.paths).then((arg0) => {
             let obj = closure_1;
             if (closure_1 == null) {
               obj = {};
             }
             arg0.default(channelId.channelId, obj);
           });
-          const promise = tmp4(1959)(12974, tmp5.paths);
+          const promise = tmp4(1959)(12999, tmp5.paths);
         }
         let obj = callback(709);
         tmp5 = dependencyMap;
       }
     });
-    let promise = importDefault(12972)(() => {
+    let promise = importDefault(12997)(() => {
       const HTTP = tmp4(530).HTTP;
       obj = { url: outer1_39.MESSAGE_ACK(self.channelId, outgoingAck), body: obj, oldFormErrors: true, rejectWithError: true };
       obj = { token: outer1_63, last_viewed: self.lastViewed, flags: tmp4 };
@@ -2149,7 +2149,7 @@ prototype2["_nonChannelAck"] = function _nonChannelAck() {
         }
         self._persisted = true;
         self = importDefault;
-        importDefault(12972)(() => {
+        importDefault(12997)(() => {
           const HTTP = callback(outer1_2[42]).HTTP;
           return HTTP.post({ url: callback, body: {}, oldFormErrors: true, rejectWithError: true });
         });
@@ -2386,7 +2386,7 @@ prototype2["getAckTimestamp"] = function getAckTimestamp() {
               const time1 = date.getTime();
               const _isNaN2 = isNaN;
               joinedAt = time1;
-            } else if (typeof guild.joinedAt !== "reType") {
+            } else if (typeof guild.joinedAt !== "__REMOTEDEV__") {
               const _isNaN5 = isNaN;
               if (!isNaN(guild.joinedAt)) {
                 joinedAt = guild.joinedAt;
@@ -2473,7 +2473,7 @@ class ReadStateStoreClass extends Store {
 const prototype3 = ReadStateStoreClass.prototype;
 prototype3["initialize"] = function initialize() {
   const items = [percentageScrolled, mergeGuildAvatar, createGuildRecordFromRust, handleConnectionOpen, ensureGuildLoaded, closure_32, reinjectEphemerals, getUncachedChannelPermissions, getParticipants, handleThreadCreateOrUpdate, storeThread, handlePermissionsChange, scheduledEventSort, closure_8, isSubscriptionGated, updateUserGuildSettingsInternal, map, _validate, processChannel, handleConnectionClosedOrResumed, closure_12];
-  items.push(require(6325) /* getState */.default);
+  items.push(require(6331) /* getState */.default);
   this.waitFor(handleThreadCreateOrUpdate, fetchFingerprint, getParticipants, handlePermissionsChange, ensureGuildLoaded, percentageScrolled, participantFromServer, isSubscriptionGated, handleConnectionOpen, scheduledEventSort, createGuildRecordFromRust, checkIdleAFK, storeThread, reinjectEphemerals, _validate, getUncachedChannelPermissions, upsertRelationship, closure_32, updateUserGuildSettingsInternal, handleConnectionClosedOrResumed, mergeGuildAvatar, map);
   const items1 = [handlePermissionsChange];
   this.syncWith(items1, handleChannelSectionStoreUpdate);
@@ -2549,7 +2549,7 @@ prototype3["getMentionCount"] = function getMentionCount(arg0) {
     }
     return num;
   }, 0);
-  if (!importDefault(8201)(arg0)) {
+  if (!importDefault(8208)(arg0)) {
     let num = value;
   } else {
     num = 1;
@@ -2687,7 +2687,7 @@ prototype3["isNewForumThread"] = function isNewForumThread(id, parent_id, guild)
               const time1 = date.getTime();
               const _isNaN = isNaN;
               joinedAt = time1;
-            } else if (typeof guild.joinedAt !== "reType") {
+            } else if (typeof guild.joinedAt !== "__REMOTEDEV__") {
               const _isNaN3 = isNaN;
               if (!isNaN(guild.joinedAt)) {
                 joinedAt = guild.joinedAt;
@@ -3163,7 +3163,7 @@ obj = {
     } else {
       return false;
     }
-    obj = require(4863) /* isIOSPushNotificationRawPayloadFixExperimentEnabled */;
+    obj = require(4867) /* isIOSPushNotificationRawPayloadFixExperimentEnabled */;
   },
   MESSAGE_CREATE: function handleIncomingMessage(isPushNotification) {
     let channelId;
@@ -3209,7 +3209,7 @@ obj = {
         }
       }
     }
-    let obj6 = require(4041) /* getRootNavigationRef */;
+    let obj6 = require(4045) /* getRootNavigationRef */;
     const rootNavigationRef = obj6.getRootNavigationRef();
     let isReadyResult;
     if (rootNavigationRef != null) {
@@ -3282,7 +3282,7 @@ obj = {
       if (null != value.oldestUnreadMessageId) {
         if (!value.oldestUnreadMessageIdStale) {
           if (!hasUnreadResult) {
-            let tmp8Result = tmp8(10249);
+            let tmp8Result = tmp8(10267);
             hasUnreadResult = tmp8Result.getFocusedChannelId() === channelId;
           }
           if (!hasUnreadResult) {
@@ -3295,7 +3295,7 @@ obj = {
         if (!upsertRelationship.isBlockedOrIgnoredForMessage(message)) {
           if (message.type !== constants7.RECIPIENT_REMOVE) {
             if (null != currentUser) {
-              tmp8Result = tmp8(4423);
+              tmp8Result = tmp8(4427);
               const obj5 = { rawMessage: null, userId: null, suppressEveryone: null, suppressRoles: null };
               obj5[0] = message;
               obj5[1] = currentUser.id;
@@ -3348,7 +3348,7 @@ obj = {
                     if (tmp8Result1.computeThreadNotificationSetting(channel) === ThreadMemberFlags.ALL_MESSAGES) {
                       obj6 = { shouldMention: true, isMentionLowImportance: true };
                     }
-                    tmp8Result1 = tmp8(10248);
+                    tmp8Result1 = tmp8(10266);
                   } else if (!channel.isVocal()) {
                     if (!obj15.isChannelMuted(channel.guild_id, channel.id)) {
                       if (obj15.resolvedMessageNotifications(channel) === constants10.ALL_MESSAGES) {
@@ -3704,7 +3704,7 @@ obj = {
     return value.syncThreadSettings();
   },
   THREAD_MEMBERS_UPDATE: function handleThreadMembersUpdate(id) {
-    let result = require(3824) /* doesThreadMembersActionAffectMe */.doesThreadMembersActionAffectMe(id);
+    let result = require(3828) /* doesThreadMembersActionAffectMe */.doesThreadMembersActionAffectMe(id);
     if (result) {
       const value = ReadState.get(id.id);
       result = value.syncThreadSettings();
@@ -3774,12 +3774,21 @@ obj = {
     let context;
     let onFinished;
     ({ channels, context, onFinished } = arg0);
-    const found = channels.filter((messageId) => {
-      let hasUnreadOrMentionsResult = null != messageId.messageId;
-      if (hasUnreadOrMentionsResult) {
-        hasUnreadOrMentionsResult = closure_91.hasUnreadOrMentions(messageId.channelId, messageId.readStateType);
+    const found = channels.filter((channelId) => {
+      channel = channel.getChannel(channelId.channelId);
+      let isForumLikeChannelResult;
+      if (channel != null) {
+        isForumLikeChannelResult = channel.isForumLikeChannel();
       }
-      return hasUnreadOrMentionsResult;
+      let tmp2 = true === isForumLikeChannelResult;
+      if (!tmp2) {
+        let hasUnreadOrMentionsResult = null != channelId.messageId;
+        if (hasUnreadOrMentionsResult) {
+          hasUnreadOrMentionsResult = closure_91.hasUnreadOrMentions(channelId.channelId, channelId.readStateType);
+        }
+        tmp2 = hasUnreadOrMentionsResult;
+      }
+      return tmp2;
     });
     const item = found.forEach((messageId) => {
       const value = closure_81.get(messageId.channelId, messageId.readStateType);

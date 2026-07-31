@@ -1,10 +1,10 @@
-// Module ID: 5111
-// Function ID: 5112
+// Module ID: 5115
+// Function ID: 5116
 // Name: shouldShowOnboarding
 // Dependencies: [676, 589, 1865, 709, 2]
 // Exports: isOnboarding
 
-// Module 5111 (shouldShowOnboarding)
+// Module 5115 (shouldShowOnboarding)
 import { ME } from "ME";
 import { Store } from "initialize";
 

@@ -1,10 +1,10 @@
-// Module ID: 8435
-// Function ID: 8436
+// Module ID: 8448
+// Function ID: 8449
 // Name: renderTooltipItem
-// Dependencies: [32, 19, 17, 21, 4050, 8436, 3908, 8432, 8433, 2]
+// Dependencies: [32, 19, 17, 21, 4054, 8449, 3912, 8445, 8446, 2]
 // Exports: AnimatedCoachmark
 
-// Module 8435 (renderTooltipItem)
+// Module 8448 (renderTooltipItem)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
@@ -19,10 +19,10 @@ function renderTooltipItem(arg0, enterExitAnimatedStyles) {
     obj = {};
     const merged = Object.assign(arg0);
     obj.enterExitAnimatedStyles = enterExitAnimatedStyles;
-    tmpResult = tmp(require(8436) /* Coachmark */.CoachmarkContainer, obj);
+    tmpResult = tmp(require(8449) /* Coachmark */.CoachmarkContainer, obj);
   }
   obj[2] = tmpResult;
-  return jsx(importDefault(4050).View, { style: items, pointerEvents: "box-none", children: null });
+  return jsx(importDefault(4054).View, { style: items, pointerEvents: "box-none", children: null });
 }
 let result = require("get ActivityIndicator").fileFinishedImporting("design/components/Coachmark/native/AnimatedCoachmark.native.tsx");
 
@@ -33,13 +33,13 @@ export const AnimatedCoachmark = function AnimatedCoachmark(visible) {
   const merged = Object.assign(visible, Object.create(null));
   let importDefault;
   [tmp3, c1] = callback(React.useState(visible), 2);
-  let obj = visible(8432);
+  let obj = visible(8445);
   const result = obj.tooltipEnterExitAnimation(merged.position);
   const items = [visible];
   const effect = React.useEffect(() => {
     _undefined(visible);
   }, items);
-  obj = { useReducedMotion: React.useContext(visible(3908).AccessibilityPreferencesContext).reducedMotion.enabled, item: null, entering: null, exiting: null, renderItem: null };
+  obj = { useReducedMotion: React.useContext(visible(3912).AccessibilityPreferencesContext).reducedMotion.enabled, item: null, entering: null, exiting: null, renderItem: null };
   let tmp8;
   const tmp2 = callback(React.useState(visible), 2);
   const tmp6 = jsx;
@@ -50,5 +50,5 @@ export const AnimatedCoachmark = function AnimatedCoachmark(visible) {
   obj[2] = result;
   obj[3] = result;
   obj[4] = renderTooltipItem;
-  return tmp6(importDefault(8433), obj);
+  return tmp6(importDefault(8446), obj);
 };

@@ -1,17 +1,15 @@
 // Module ID: 8603
 // Function ID: 8604
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8604, 8605, 8552]
+// Dependencies: [41, 42, 93, 95, 98, 19, 8557]
 
 // Module 8603 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
-import "noop";
-import { jsx } from "jsxProd";
 
-const LinearGradient = importDefault;
+const FePointLight = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class LinearGradient {
+class FePointLight {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, LinearGradient);
+    tmp = _isNativeReflectConstruct(this, FePointLight);
     tmp2 = __esModule;
-    obj = __esModule(LinearGradient);
+    obj = __esModule(FePointLight);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,31 +49,18 @@ class LinearGradient {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(LinearGradient, require("_isNativeReflectConstruct"));
+require("_inherits")(FePointLight, require("noop").Component);
 const items = [
   {
     key: "render",
     value: function render() {
-      const self = this;
-      const props = this.props;
-      let obj = { x1: props.x1, y1: props.y1, x2: props.x2, y2: props.y2 };
-      obj = {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      };
-      const merged = Object.assign(obj);
-      const merged1 = Object.assign(self(8605)(props, this));
-      return jsx(self(8604), {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      });
+      const result = FePointLight(8557).warnUnimplementedFilter();
+      return null;
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(LinearGradient, items);
-importDefaultResultResult.displayName = "LinearGradient";
-importDefaultResultResult.defaultProps = { x1: "0%", y1: "0%", x2: "100%", y2: "0%" };
+const importDefaultResultResult = importDefaultResult(FePointLight, items);
+importDefaultResultResult.displayName = "FePointLight";
+importDefaultResultResult.defaultProps = {};
 
 export default importDefaultResultResult;

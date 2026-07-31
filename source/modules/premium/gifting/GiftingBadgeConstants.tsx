@@ -1,10 +1,10 @@
-// Module ID: 9822
-// Function ID: 9823
+// Module ID: 9839
+// Function ID: 9840
 // Name: getTierForProgress
-// Dependencies: [8106, 2]
+// Dependencies: [8113, 2]
 // Exports: getNextTierForProgress, getRemainingGiftsToNextTier, getTierForProgress
 
-// Module 9822 (getTierForProgress)
+// Module 9839 (getTierForProgress)
 import { getSingleRequirementThreshold as closure_0 } from "map";
 
 const result = require("set").fileFinishedImporting("modules/premium/gifting/GiftingBadgeConstants.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 16699
-// Function ID: 16700
+// Module ID: 16728
+// Function ID: 16729
 // Name: _getCurrentTask
-// Dependencies: [5, 676, 4999, 503, 4089, 2]
+// Dependencies: [5, 676, 5003, 503, 4093, 2]
 // Exports: completeTask, getCurrentTask, resendVerificationCode
 
-// Module 16699 (_getCurrentTask)
+// Module 16728 (_getCurrentTask)
 import set from "set";
 import { Endpoints } from "ME";
 
@@ -48,7 +48,7 @@ function _getCurrentTask() {
             v0 = 1;
             dependencyMap = 1;
             const obj3 = { value: null, done: false };
-            obj3[0] = v0(4999).get(obj1);
+            obj3[0] = v0(5003).get(obj1);
             return obj3;
           }
         } else if (arg0 === 1) {
@@ -127,7 +127,7 @@ function _completeTask() {
               dependencyMap = 1;
               v0 = 1;
               const obj3 = { value: null, done: false };
-              obj3[0] = v0(4999).post(obj1);
+              obj3[0] = v0(5003).post(obj1);
               return obj3;
             }
           } else if (arg0 === 1) {
@@ -254,7 +254,7 @@ function _resendVerificationCode() {
   }
   return applyArgumentsResult;
 }
-const result = require("module_4999").fileFinishedImporting("modules/safety_flows/SafetyFlowsActionCreators.tsx");
+const result = require("module_5003").fileFinishedImporting("modules/safety_flows/SafetyFlowsActionCreators.tsx");
 
 export const getCurrentTask = function getCurrentTask() {
   const self = this;

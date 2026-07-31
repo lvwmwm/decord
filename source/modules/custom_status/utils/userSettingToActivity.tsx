@@ -1,10 +1,10 @@
-// Module ID: 8077
-// Function ID: 8078
+// Module ID: 8084
+// Function ID: 8085
 // Name: _activityFromSetting
-// Dependencies: [19, 5048, 676, 3830, 3862, 589, 2]
+// Dependencies: [19, 5052, 676, 3834, 3866, 589, 2]
 // Exports: getActivityFromCustomStatus, useCustomStatusActivity
 
-// Module 8077 (_activityFromSetting)
+// Module 8084 (_activityFromSetting)
 import { useMemo } from "noop";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import { ActivityTypes } from "ME";
@@ -19,8 +19,8 @@ function _activityFromSetting(emojiName) {
     if (null != emojiName.emojiName) {
       tmp = null;
       if ("" !== emojiName.emojiName) {
-        const obj5 = importDefault(3830);
-        const byName = obj5.getByName(importDefault(3830).convertSurrogateToName(emojiName.emojiName, false));
+        const obj5 = importDefault(3834);
+        const byName = obj5.getByName(importDefault(3834).convertSurrogateToName(emojiName.emojiName, false));
         let tmp2 = null;
         if (null != byName) {
           obj = { id: null, name: null, animated: false };
@@ -28,7 +28,7 @@ function _activityFromSetting(emojiName) {
           tmp2 = obj;
         }
         tmp = tmp2;
-        const obj6 = importDefault(3830);
+        const obj6 = importDefault(3834);
       }
     }
   }

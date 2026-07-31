@@ -1,10 +1,10 @@
-// Module ID: 10342
-// Function ID: 10343
+// Module ID: 10360
+// Function ID: 10361
 // Name: uriScheme
-// Dependencies: [5, 3, 514, 4731, 1208, 2]
+// Dependencies: [5, 3, 514, 4735, 1208, 2]
 // Exports: getAttachments
 
-// Module 10342 (uriScheme)
+// Module 10360 (uriScheme)
 import set from "set";
 
 const require = arg1;
@@ -187,7 +187,7 @@ function _getAttachments() {
             let obj6 = arr(514);
             dependencyMap = obj6.v4();
             let tmp55 = dependencyMap;
-            let obj8 = arr(4731);
+            let obj8 = arr(4735);
             let tmp56 = lib;
             c7 = 3;
             let num5 = 1;

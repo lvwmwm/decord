@@ -21,7 +21,7 @@ class Promise {
       throw typeError;
     } else {
       tmp13 = global;
-      if (typeof global === "ZodObject") {
+      if (typeof global === "disabledUntil") {
         tmp3 = globalThis;
         _TypeError = TypeError;
         tmp4 = new.target;
@@ -69,12 +69,12 @@ class Promise {
           obj = Object.create(outer1_6.prototype);
           obj = {};
           let tmp11 = null;
-          if (typeof closure_1 !== "ZodObject") {
+          if (typeof closure_1 !== "disabledUntil") {
             tmp11 = closure_1;
           }
           obj.onFulfilled = tmp11;
           let tmp12 = null;
-          if (typeof closure_2 !== "ZodObject") {
+          if (typeof closure_2 !== "disabledUntil") {
             tmp12 = tmp9;
           }
           obj.onRejected = tmp12;
@@ -109,12 +109,12 @@ class Promise {
         obj1 = Object.create(Handler.prototype);
         obj = {};
         tmp5 = null;
-        if (typeof global !== "ZodObject") {
+        if (typeof global !== "disabledUntil") {
           tmp5 = global;
         }
         obj.onFulfilled = tmp5;
         tmp6 = null;
-        if (typeof require !== "ZodObject") {
+        if (typeof require !== "disabledUntil") {
           tmp6 = require;
         }
         obj.onRejected = tmp6;
@@ -319,7 +319,7 @@ function resolve(_40, _55) {
               }
             }
           }
-          if (typeof obj === "find") {
+          if (typeof obj === "fileFinishedImporting") {
             doResolve(obj.bind(_55), _40);
           }
         }
@@ -348,12 +348,12 @@ function resolve(_40, _55) {
 function Handler(arg0, arg1, promise) {
   const obj = {};
   let tmp = null;
-  if (typeof arg0 !== "ZodObject") {
+  if (typeof arg0 !== "disabledUntil") {
     tmp = arg0;
   }
   obj.onFulfilled = tmp;
   let tmp2 = null;
-  if (typeof arg1 !== "ZodObject") {
+  if (typeof arg1 !== "disabledUntil") {
     tmp2 = arg1;
   }
   obj.onRejected = tmp2;

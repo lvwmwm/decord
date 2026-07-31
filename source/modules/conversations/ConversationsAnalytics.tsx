@@ -1,9 +1,9 @@
-// Module ID: 9268
-// Function ID: 9269
+// Module ID: 9281
+// Function ID: 9282
 // Name: ConversationsAnalytics
 // Dependencies: [1372, 676, 698, 2]
 
-// Module 9268 (ConversationsAnalytics)
+// Module 9281 (ConversationsAnalytics)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { AnalyticEvents } from "ME";
 

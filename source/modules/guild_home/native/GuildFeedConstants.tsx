@@ -1,9 +1,9 @@
-// Module ID: 15417
-// Function ID: 15418
+// Module ID: 15445
+// Function ID: 15446
 // Name: GUILD_FEED_CARD_MARGIN_HORIZONTAL
 // Dependencies: [2]
 
-// Module 15417 (GUILD_FEED_CARD_MARGIN_HORIZONTAL)
+// Module 15445 (GUILD_FEED_CARD_MARGIN_HORIZONTAL)
 const result = require("set").fileFinishedImporting("modules/guild_home/native/GuildFeedConstants.tsx");
 
 export const GUILD_FEED_CARD_MARGIN_HORIZONTAL = 12;

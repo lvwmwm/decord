@@ -1,9 +1,9 @@
-// Module ID: 7879
-// Function ID: 7880
+// Module ID: 7887
+// Function ID: 7888
 // Name: defineProperty
 // Dependencies: [32, 1307, 1337, 2]
 
-// Module 7879 (defineProperty)
+// Module 7887 (defineProperty)
 import _slicedToArray from "_slicedToArray";
 import { MessageType } from "module_1307";
 import { MessageType as MessageType2 } from "module_1307";
@@ -48,6 +48,7 @@ import { MessageType as MessageType40 } from "module_1307";
 import { MessageType as MessageType41 } from "module_1307";
 import { MessageType as MessageType42 } from "module_1307";
 import { MessageType as MessageType43 } from "module_1307";
+import { MessageType as MessageType44 } from "module_1307";
 
 const require = arg1;
 let obj = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", EXCLUDE: 1, [1]: "EXCLUDE", OVERRIDE: 2, [2]: "OVERRIDE", REQUIRE: 3, [3]: "REQUIRE", ASSIGNMENT: 4, [4]: "ASSIGNMENT" };
@@ -366,10 +367,10 @@ class Filter$Type extends MessageType3 {
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_25;
+            return closure_26;
           }
     };
-    items = [, , , , , , , , , , , , , , , , , , , , , , , , , , , ];
+    items = [, , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
     items[0] = obj;
     items[1] = {
       no: 3,
@@ -377,7 +378,7 @@ class Filter$Type extends MessageType3 {
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_20;
+            return closure_21;
           }
     };
     items[2] = {
@@ -431,7 +432,7 @@ class Filter$Type extends MessageType3 {
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_18;
+            return closure_19;
           }
     };
     items[8] = {
@@ -449,7 +450,7 @@ class Filter$Type extends MessageType3 {
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_31;
+            return closure_32;
           }
     };
     items[10] = {
@@ -458,7 +459,7 @@ class Filter$Type extends MessageType3 {
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_32;
+            return closure_33;
           }
     };
     items[11] = {
@@ -467,7 +468,7 @@ class Filter$Type extends MessageType3 {
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_34;
+            return closure_35;
           }
     };
     items[12] = {
@@ -476,7 +477,7 @@ class Filter$Type extends MessageType3 {
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_35;
+            return closure_36;
           }
     };
     items[13] = {
@@ -485,7 +486,7 @@ class Filter$Type extends MessageType3 {
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_36;
+            return closure_37;
           }
     };
     items[14] = {
@@ -494,7 +495,7 @@ class Filter$Type extends MessageType3 {
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_37;
+            return closure_38;
           }
     };
     items[15] = {
@@ -503,7 +504,7 @@ class Filter$Type extends MessageType3 {
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_38;
+            return closure_39;
           }
     };
     items[16] = {
@@ -521,7 +522,7 @@ class Filter$Type extends MessageType3 {
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_39;
+            return closure_40;
           }
     };
     items[18] = {
@@ -530,7 +531,7 @@ class Filter$Type extends MessageType3 {
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_40;
+            return closure_41;
           }
     };
     items[19] = {
@@ -539,7 +540,7 @@ class Filter$Type extends MessageType3 {
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_41;
+            return closure_42;
           }
     };
     items[20] = {
@@ -548,7 +549,7 @@ class Filter$Type extends MessageType3 {
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_42;
+            return closure_43;
           }
     };
     items[21] = {
@@ -557,7 +558,7 @@ class Filter$Type extends MessageType3 {
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_44;
+            return closure_45;
           }
     };
     items[22] = {
@@ -566,7 +567,7 @@ class Filter$Type extends MessageType3 {
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_43;
+            return closure_44;
           }
     };
     items[23] = {
@@ -575,7 +576,7 @@ class Filter$Type extends MessageType3 {
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_45;
+            return closure_46;
           }
     };
     items[24] = {
@@ -587,24 +588,33 @@ class Filter$Type extends MessageType3 {
             return closure_17;
           }
     };
-    obj = { no: 28, name: "user_ip", kind: "message", oneof: "filter", T: null };
-    class T {
-      constructor() {
-        return closure_19;
-      }
-    }
-    obj[4] = T;
-    items[25] = obj;
-    items[26] = {
-      no: 29,
-      name: "installation_ids",
+    items[25] = {
+      no: 28,
+      name: "user_ip",
       kind: "message",
       oneof: "filter",
       T() {
-            return closure_46;
+            return closure_20;
           }
     };
-    items[27] = { no: 30, name: "negate", kind: "scalar", T: 8 };
+    obj = { no: 29, name: "installation_ids", kind: "message", oneof: "filter", T: null };
+    class T {
+      constructor() {
+        return closure_47;
+      }
+    }
+    obj[4] = T;
+    items[26] = obj;
+    items[27] = {
+      no: 31,
+      name: "user_store_country",
+      kind: "message",
+      oneof: "filter",
+      T() {
+            return closure_18;
+          }
+    };
+    items[28] = { no: 30, name: "negate", kind: "scalar", T: 8 };
     tmp = new tmp("discord_protos.discord_experimentation.v1.Filter", items, T);
     // ThrowIfThisInitialized (0x7c)
     return tmp;
@@ -612,7 +622,7 @@ class Filter$Type extends MessageType3 {
 }
 const prototype3 = Filter$Type.prototype;
 prototype3["create"] = function create(arr) {
-  let obj = { filter: { oneofKind: "Array" }, negate: false };
+  let obj = { filter: { oneofKind: "r" }, negate: false };
   const _Object = Object;
   obj = { enumerable: false, value: this };
   _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);
@@ -643,8 +653,8 @@ prototype3["internalBinaryWrite"] = function internalBinaryWrite(negate, tag, wr
   }
   if ("clientOs" === negate.filter.oneofKind) {
     const tagResult1 = tag.tag(3, require(1307).WireType.LengthDelimited);
-    const joined1 = clientLocation_LocationType3.internalBinaryWrite(negate.filter.clientOs, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult1 = clientLocation_LocationType3.internalBinaryWrite(negate.filter.clientOs, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined1 = clientLocation_LocationType4.internalBinaryWrite(negate.filter.clientOs, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult1 = clientLocation_LocationType4.internalBinaryWrite(negate.filter.clientOs, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("staff" === negate.filter.oneofKind) {
     const tagResult2 = tag.tag(4, require(1307).WireType.LengthDelimited);
@@ -673,8 +683,8 @@ prototype3["internalBinaryWrite"] = function internalBinaryWrite(negate, tag, wr
   }
   if ("clientIp" === negate.filter.oneofKind) {
     const tagResult7 = tag.tag(9, require(1307).WireType.LengthDelimited);
-    const joined7 = clientLocation_LocationType1.internalBinaryWrite(negate.filter.clientIp, tag.tag(9, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult7 = clientLocation_LocationType1.internalBinaryWrite(negate.filter.clientIp, tag.tag(9, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined7 = clientLocation_LocationType2.internalBinaryWrite(negate.filter.clientIp, tag.tag(9, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult7 = clientLocation_LocationType2.internalBinaryWrite(negate.filter.clientIp, tag.tag(9, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("userLocale" === negate.filter.oneofKind) {
     const tagResult8 = tag.tag(10, require(1307).WireType.LengthDelimited);
@@ -762,26 +772,34 @@ prototype3["internalBinaryWrite"] = function internalBinaryWrite(negate, tag, wr
     const internalBinaryWriteResult24 = clientLocation_LocationType.internalBinaryWrite(negate.filter.userLocation, tag.tag(27, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("userIp" === negate.filter.oneofKind) {
-    joined24 = clientLocation_LocationType2;
+    joined24 = clientLocation_LocationType3;
     joined24 = require;
     joined24 = dependencyMap;
     const tagResult25 = tag.tag(28, require(1307).WireType.LengthDelimited);
-    joined24 = clientLocation_LocationType2.internalBinaryWrite(negate.filter.userIp, tag.tag(28, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult25 = clientLocation_LocationType2.internalBinaryWrite(negate.filter.userIp, tag.tag(28, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    joined24 = clientLocation_LocationType3.internalBinaryWrite(negate.filter.userIp, tag.tag(28, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult25 = clientLocation_LocationType3.internalBinaryWrite(negate.filter.userIp, tag.tag(28, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("installationIds" === negate.filter.oneofKind) {
-    joined24 = tmp50;
+    joined24 = tmp51;
     joined24 = require;
     joined24 = dependencyMap;
     const tagResult26 = tag.tag(29, require(1307).WireType.LengthDelimited);
-    joined24 = tmp50.internalBinaryWrite(negate.filter.installationIds, tag.tag(29, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult26 = tmp50.internalBinaryWrite(negate.filter.installationIds, tag.tag(29, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    joined24 = tmp51.internalBinaryWrite(negate.filter.installationIds, tag.tag(29, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult26 = tmp51.internalBinaryWrite(negate.filter.installationIds, tag.tag(29, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+  }
+  if ("userStoreCountry" === negate.filter.oneofKind) {
+    joined24 = clientLocation_LocationType1;
+    joined24 = require;
+    joined24 = dependencyMap;
+    const tagResult27 = tag.tag(31, require(1307).WireType.LengthDelimited);
+    joined24 = clientLocation_LocationType1.internalBinaryWrite(negate.filter.userStoreCountry, tag.tag(31, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult27 = clientLocation_LocationType1.internalBinaryWrite(negate.filter.userStoreCountry, tag.tag(31, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (false !== negate.negate) {
     joined24 = require;
     joined24 = dependencyMap;
     joined24 = tag.tag(30, require(1307).WireType.Varint).bool(negate.negate);
-    const tagResult27 = tag.tag(30, require(1307).WireType.Varint);
+    const tagResult28 = tag.tag(30, require(1307).WireType.Varint);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
@@ -1784,7 +1802,7 @@ class ClientLocation_Location$Type extends MessageType13 {
 }
 const prototype13 = ClientLocation_Location$Type.prototype;
 prototype13["create"] = function create(arr) {
-  let obj = { location: { oneofKind: "Array" } };
+  let obj = { location: { oneofKind: "r" } };
   const _Object = Object;
   obj = { enumerable: false, value: this };
   _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);
@@ -2042,18 +2060,18 @@ const items12 = [
 ];
 const clientLocation_LocationType = new ClientLocation_Location$Type("discord_protos.discord_experimentation.v1.UserLocation", items12, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
 // ThrowIfThisInitialized (0x7c)
-class ClientIP$Type extends MessageType15 {
+class UserStoreCountry$Type extends MessageType15 {
   constructor() {
     items = [];
-    items[0] = { no: 1, name: "blocks", kind: "scalar", repeat: 2, T: 9 };
-    tmp = new tmp("discord_protos.discord_experimentation.v1.ClientIP", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, new.target);
+    items[0] = { no: 1, name: "iso_countries", kind: "scalar", repeat: 2, T: 9 };
+    tmp = new tmp("discord_protos.discord_experimentation.v1.UserStoreCountry", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, new.target);
     // ThrowIfThisInitialized (0x7c)
     return tmp;
   }
 }
-const prototype15 = ClientIP$Type.prototype;
+const prototype15 = UserStoreCountry$Type.prototype;
 prototype15["create"] = function create(arr) {
-  let obj = { blocks: [] };
+  let obj = { isoCountries: [] };
   const _Object = Object;
   obj = { enumerable: false, value: this };
   _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);
@@ -2064,6 +2082,106 @@ prototype15["create"] = function create(arr) {
   return obj;
 };
 prototype15["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+  let tmp5;
+  let tmp6;
+  const self = this;
+  let obj = arg3;
+  if (arg3 == null) {
+    obj = self.create();
+  }
+  const sum = pos.pos + arg1;
+  if (pos.pos < sum) {
+    do {
+      let tmp3 = callback;
+      let tmp4 = callback(pos.tag(), 2);
+      [tmp5, tmp6] = tmp4;
+      if (1 === tmp5) {
+        let isoCountries = obj.isoCountries;
+        let arr = isoCountries.push(pos.string());
+      } else {
+        let onRead = readUnknownField.readUnknownField;
+        if ("throw" === onRead) {
+          let tmp15 = globalThis;
+          let _globalThis = globalThis;
+          let _HermesInternal = HermesInternal;
+          let str = ") for ";
+          let str2 = " (wire type ";
+          let str3 = "Unknown field ";
+          let tmp16 = tmp5;
+          let tmp17 = tmp6;
+          let tmp18 = new.target;
+          let tmp19 = new.target;
+          let error = new Error("Unknown field " + tmp5 + " (wire type " + tmp6 + ") for " + self.typeName);
+          let tmp21 = error;
+          throw error;
+        } else {
+          let skipResult = pos.skip(tmp6);
+          if (false !== onRead) {
+            if (true === onRead) {
+              let tmp8 = require;
+              let tmp9 = dependencyMap;
+              onRead = require(1307).UnknownFieldHandler.onRead;
+            }
+            let tmp10 = obj;
+            let tmp11 = tmp5;
+            let tmp12 = tmp6;
+            let tmp13 = skipResult;
+            let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
+          }
+        }
+      }
+    } while (pos.pos < sum);
+  }
+  return obj;
+};
+prototype15["internalBinaryWrite"] = function internalBinaryWrite(isoCountries, tag, writeUnknownFields) {
+  let length;
+  let num = 0;
+  if (0 < isoCountries.isoCountries.length) {
+    do {
+      let tmp = require;
+      let tmp2 = dependencyMap;
+      let tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
+      let stringResult = tagResult.string(isoCountries.isoCountries[num]);
+      num = num + 1;
+      length = isoCountries.isoCountries.length;
+    } while (num < length);
+  }
+  let onWrite = writeUnknownFields.writeUnknownFields;
+  if (false !== onWrite) {
+    if (1 == onWrite) {
+      onWrite = require(1307).UnknownFieldHandler.onWrite;
+    }
+    const self = this;
+    onWrite(this.typeName, isoCountries, tag);
+  }
+  return tag;
+};
+const items13 = [{ no: 1, name: "iso_countries", kind: "scalar", repeat: 2, T: 9 }];
+const clientLocation_LocationType1 = new ClientLocation_Location$Type("discord_protos.discord_experimentation.v1.UserStoreCountry", items13, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+// ThrowIfThisInitialized (0x7c)
+class ClientIP$Type extends MessageType16 {
+  constructor() {
+    items = [];
+    items[0] = { no: 1, name: "blocks", kind: "scalar", repeat: 2, T: 9 };
+    tmp = new tmp("discord_protos.discord_experimentation.v1.ClientIP", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, new.target);
+    // ThrowIfThisInitialized (0x7c)
+    return tmp;
+  }
+}
+const prototype16 = ClientIP$Type.prototype;
+prototype16["create"] = function create(arr) {
+  let obj = { blocks: [] };
+  const _Object = Object;
+  obj = { enumerable: false, value: this };
+  _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);
+  if (undefined !== arr) {
+    const result = require(1307).reflectionMergePartial(this, obj, arr);
+    const tmpResult = require(1307);
+  }
+  return obj;
+};
+prototype16["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -2116,7 +2234,7 @@ prototype15["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype15["internalBinaryWrite"] = function internalBinaryWrite(blocks, tag, writeUnknownFields) {
+prototype16["internalBinaryWrite"] = function internalBinaryWrite(blocks, tag, writeUnknownFields) {
   let length;
   let num = 0;
   if (0 < blocks.blocks.length) {
@@ -2139,10 +2257,10 @@ prototype15["internalBinaryWrite"] = function internalBinaryWrite(blocks, tag, w
   }
   return tag;
 };
-const items13 = [{ no: 1, name: "blocks", kind: "scalar", repeat: 2, T: 9 }];
-const clientLocation_LocationType1 = new ClientLocation_Location$Type("discord_protos.discord_experimentation.v1.ClientIP", items13, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const items14 = [{ no: 1, name: "blocks", kind: "scalar", repeat: 2, T: 9 }];
+const clientLocation_LocationType2 = new ClientLocation_Location$Type("discord_protos.discord_experimentation.v1.ClientIP", items14, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
 // ThrowIfThisInitialized (0x7c)
-class UserIP$Type extends MessageType16 {
+class UserIP$Type extends MessageType17 {
   constructor() {
     items = [, ];
     items[0] = { no: 1, name: "blocks", kind: "scalar", repeat: 2, T: 9 };
@@ -2152,8 +2270,8 @@ class UserIP$Type extends MessageType16 {
     return tmp;
   }
 }
-const prototype16 = UserIP$Type.prototype;
-prototype16["create"] = function create(arr) {
+const prototype17 = UserIP$Type.prototype;
+prototype17["create"] = function create(arr) {
   let obj = { blocks: [], preferClientIp: false };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -2164,7 +2282,7 @@ prototype16["create"] = function create(arr) {
   }
   return obj;
 };
-prototype16["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype17["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -2219,7 +2337,7 @@ prototype16["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype16["internalBinaryWrite"] = function internalBinaryWrite(blocks, tag, writeUnknownFields) {
+prototype17["internalBinaryWrite"] = function internalBinaryWrite(blocks, tag, writeUnknownFields) {
   let length;
   let num = 0;
   if (0 < blocks.blocks.length) {
@@ -2246,17 +2364,17 @@ prototype16["internalBinaryWrite"] = function internalBinaryWrite(blocks, tag, w
   }
   return tag;
 };
-const items14 = [{ no: 1, name: "blocks", kind: "scalar", repeat: 2, T: 9 }, { no: 2, name: "prefer_client_ip", kind: "scalar", T: 8 }];
-const clientLocation_LocationType2 = new ClientLocation_Location$Type("discord_protos.discord_experimentation.v1.UserIP", items14, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const items15 = [{ no: 1, name: "blocks", kind: "scalar", repeat: 2, T: 9 }, { no: 2, name: "prefer_client_ip", kind: "scalar", T: 8 }];
+const clientLocation_LocationType3 = new ClientLocation_Location$Type("discord_protos.discord_experimentation.v1.UserIP", items15, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
 // ThrowIfThisInitialized (0x7c)
-class ClientOperatingSystem$Type extends MessageType17 {
+class ClientOperatingSystem$Type extends MessageType18 {
   constructor() {
     obj = {
       no: 1,
       name: "ios_version",
       kind: "message",
       T() {
-            return closure_21;
+            return closure_22;
           }
     };
     items = [, , , , , , ];
@@ -2266,7 +2384,7 @@ class ClientOperatingSystem$Type extends MessageType17 {
       name: "android_version",
       kind: "message",
       T() {
-            return closure_21;
+            return closure_22;
           }
     };
     items[2] = {
@@ -2274,7 +2392,7 @@ class ClientOperatingSystem$Type extends MessageType17 {
       name: "macos_version",
       kind: "message",
       T() {
-            return closure_21;
+            return closure_22;
           }
     };
     items[3] = {
@@ -2282,7 +2400,7 @@ class ClientOperatingSystem$Type extends MessageType17 {
       name: "windows_version",
       kind: "message",
       T() {
-            return closure_21;
+            return closure_22;
           }
     };
     items[4] = {
@@ -2290,7 +2408,7 @@ class ClientOperatingSystem$Type extends MessageType17 {
       name: "playstation_version",
       kind: "message",
       T() {
-            return closure_21;
+            return closure_22;
           }
     };
     items[5] = {
@@ -2298,7 +2416,7 @@ class ClientOperatingSystem$Type extends MessageType17 {
       name: "xbox_version",
       kind: "message",
       T() {
-            return closure_21;
+            return closure_22;
           }
     };
     items[6] = {
@@ -2306,7 +2424,7 @@ class ClientOperatingSystem$Type extends MessageType17 {
       name: "linux_version",
       kind: "message",
       T() {
-            return closure_21;
+            return closure_22;
           }
     };
     tmp = new tmp("discord_protos.discord_experimentation.v1.ClientOperatingSystem", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, new.target);
@@ -2314,8 +2432,8 @@ class ClientOperatingSystem$Type extends MessageType17 {
     return tmp;
   }
 }
-const prototype17 = ClientOperatingSystem$Type.prototype;
-prototype17["create"] = function create(arr) {
+const prototype18 = ClientOperatingSystem$Type.prototype;
+prototype18["create"] = function create(arr) {
   let obj = {};
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -2326,7 +2444,7 @@ prototype17["create"] = function create(arr) {
   }
   return obj;
 };
-prototype17["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype18["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -2341,47 +2459,47 @@ prototype17["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
       let tmp4 = callback(pos.tag(), 2);
       [tmp5, tmp6] = tmp4;
       if (1 === tmp5) {
-        let tmp46 = items15;
-        let tmp47 = items15;
+        let tmp46 = items16;
+        let tmp47 = items16;
         let tmp48 = pos;
         let tmp49 = readUnknownField;
-        obj.iosVersion = items15.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.iosVersion);
+        obj.iosVersion = items16.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.iosVersion);
       } else if (2 === tmp5) {
-        let tmp42 = items15;
-        let tmp43 = items15;
+        let tmp42 = items16;
+        let tmp43 = items16;
         let tmp44 = pos;
         let tmp45 = readUnknownField;
-        obj.androidVersion = items15.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.androidVersion);
+        obj.androidVersion = items16.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.androidVersion);
       } else if (3 === tmp5) {
-        let tmp38 = items15;
-        let tmp39 = items15;
+        let tmp38 = items16;
+        let tmp39 = items16;
         let tmp40 = pos;
         let tmp41 = readUnknownField;
-        obj.macosVersion = items15.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.macosVersion);
+        obj.macosVersion = items16.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.macosVersion);
       } else if (4 === tmp5) {
-        let tmp34 = items15;
-        let tmp35 = items15;
+        let tmp34 = items16;
+        let tmp35 = items16;
         let tmp36 = pos;
         let tmp37 = readUnknownField;
-        obj.windowsVersion = items15.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.windowsVersion);
+        obj.windowsVersion = items16.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.windowsVersion);
       } else if (5 === tmp5) {
-        let tmp30 = items15;
-        let tmp31 = items15;
+        let tmp30 = items16;
+        let tmp31 = items16;
         let tmp32 = pos;
         let tmp33 = readUnknownField;
-        obj.playstationVersion = items15.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.playstationVersion);
+        obj.playstationVersion = items16.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.playstationVersion);
       } else if (6 === tmp5) {
-        let tmp26 = items15;
-        let tmp27 = items15;
+        let tmp26 = items16;
+        let tmp27 = items16;
         let tmp28 = pos;
         let tmp29 = readUnknownField;
-        obj.xboxVersion = items15.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.xboxVersion);
+        obj.xboxVersion = items16.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.xboxVersion);
       } else if (7 === tmp5) {
-        let tmp22 = items15;
-        let tmp23 = items15;
+        let tmp22 = items16;
+        let tmp23 = items16;
         let tmp24 = pos;
         let tmp25 = readUnknownField;
-        obj.linuxVersion = items15.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.linuxVersion);
+        obj.linuxVersion = items16.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.linuxVersion);
       } else {
         let onRead = readUnknownField.readUnknownField;
         if ("throw" === onRead) {
@@ -2418,41 +2536,41 @@ prototype17["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype17["internalBinaryWrite"] = function internalBinaryWrite(iosVersion, tag, writeUnknownFields) {
+prototype18["internalBinaryWrite"] = function internalBinaryWrite(iosVersion, tag, writeUnknownFields) {
   if (iosVersion.iosVersion) {
     const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
-    const joined = items15.internalBinaryWrite(iosVersion.iosVersion, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult = items15.internalBinaryWrite(iosVersion.iosVersion, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined = items16.internalBinaryWrite(iosVersion.iosVersion, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult = items16.internalBinaryWrite(iosVersion.iosVersion, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (iosVersion.androidVersion) {
     const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
-    const joined1 = items15.internalBinaryWrite(iosVersion.androidVersion, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult1 = items15.internalBinaryWrite(iosVersion.androidVersion, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined1 = items16.internalBinaryWrite(iosVersion.androidVersion, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult1 = items16.internalBinaryWrite(iosVersion.androidVersion, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (iosVersion.macosVersion) {
     const tagResult2 = tag.tag(3, require(1307).WireType.LengthDelimited);
-    const joined2 = items15.internalBinaryWrite(iosVersion.macosVersion, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult2 = items15.internalBinaryWrite(iosVersion.macosVersion, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined2 = items16.internalBinaryWrite(iosVersion.macosVersion, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult2 = items16.internalBinaryWrite(iosVersion.macosVersion, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (iosVersion.windowsVersion) {
     const tagResult3 = tag.tag(4, require(1307).WireType.LengthDelimited);
-    const joined3 = items15.internalBinaryWrite(iosVersion.windowsVersion, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult3 = items15.internalBinaryWrite(iosVersion.windowsVersion, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined3 = items16.internalBinaryWrite(iosVersion.windowsVersion, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult3 = items16.internalBinaryWrite(iosVersion.windowsVersion, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (iosVersion.playstationVersion) {
     const tagResult4 = tag.tag(5, require(1307).WireType.LengthDelimited);
-    const joined4 = items15.internalBinaryWrite(iosVersion.playstationVersion, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult4 = items15.internalBinaryWrite(iosVersion.playstationVersion, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined4 = items16.internalBinaryWrite(iosVersion.playstationVersion, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult4 = items16.internalBinaryWrite(iosVersion.playstationVersion, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (iosVersion.xboxVersion) {
     const tagResult5 = tag.tag(6, require(1307).WireType.LengthDelimited);
-    const joined5 = items15.internalBinaryWrite(iosVersion.xboxVersion, tag.tag(6, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult5 = items15.internalBinaryWrite(iosVersion.xboxVersion, tag.tag(6, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined5 = items16.internalBinaryWrite(iosVersion.xboxVersion, tag.tag(6, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult5 = items16.internalBinaryWrite(iosVersion.xboxVersion, tag.tag(6, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (iosVersion.linuxVersion) {
     const tagResult6 = tag.tag(7, require(1307).WireType.LengthDelimited);
-    const joined6 = items15.internalBinaryWrite(iosVersion.linuxVersion, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult6 = items15.internalBinaryWrite(iosVersion.linuxVersion, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined6 = items16.internalBinaryWrite(iosVersion.linuxVersion, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult6 = items16.internalBinaryWrite(iosVersion.linuxVersion, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
@@ -2464,13 +2582,13 @@ prototype17["internalBinaryWrite"] = function internalBinaryWrite(iosVersion, ta
   }
   return tag;
 };
-let items15 = [
+let items16 = [
   {
     no: 1,
     name: "ios_version",
     kind: "message",
     T() {
-      return closure_21;
+      return closure_22;
     }
   },
   {
@@ -2478,7 +2596,7 @@ let items15 = [
     name: "android_version",
     kind: "message",
     T() {
-      return closure_21;
+      return closure_22;
     }
   },
   {
@@ -2486,7 +2604,7 @@ let items15 = [
     name: "macos_version",
     kind: "message",
     T() {
-      return closure_21;
+      return closure_22;
     }
   },
   {
@@ -2494,7 +2612,7 @@ let items15 = [
     name: "windows_version",
     kind: "message",
     T() {
-      return closure_21;
+      return closure_22;
     }
   },
   {
@@ -2502,7 +2620,7 @@ let items15 = [
     name: "playstation_version",
     kind: "message",
     T() {
-      return closure_21;
+      return closure_22;
     }
   },
   {
@@ -2510,7 +2628,7 @@ let items15 = [
     name: "xbox_version",
     kind: "message",
     T() {
-      return closure_21;
+      return closure_22;
     }
   },
   {
@@ -2518,14 +2636,14 @@ let items15 = [
     name: "linux_version",
     kind: "message",
     T() {
-      return closure_21;
+      return closure_22;
     }
   }
 ];
 const obj8 = { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" };
-const clientLocation_LocationType3 = new ClientLocation_Location$Type("discord_protos.discord_experimentation.v1.ClientOperatingSystem", items15, obj8, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const clientLocation_LocationType4 = new ClientLocation_Location$Type("discord_protos.discord_experimentation.v1.ClientOperatingSystem", items16, obj8, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
 // ThrowIfThisInitialized (0x7c)
-class SDKVersion$Type extends MessageType18 {
+class SDKVersion$Type extends MessageType19 {
   constructor() {
     obj = {
       no: 1,
@@ -2533,7 +2651,7 @@ class SDKVersion$Type extends MessageType18 {
       kind: "message",
       repeat: 1,
       T() {
-            return closure_22;
+            return closure_23;
           }
     };
     items = [, ];
@@ -2544,8 +2662,8 @@ class SDKVersion$Type extends MessageType18 {
     return tmp;
   }
 }
-const prototype18 = SDKVersion$Type.prototype;
-prototype18["create"] = function create(arr) {
+const prototype19 = SDKVersion$Type.prototype;
+prototype19["create"] = function create(arr) {
   let obj = { ranges: [], workAroundPyotoBug: false };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -2556,7 +2674,7 @@ prototype18["create"] = function create(arr) {
   }
   return obj;
 };
-prototype18["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype19["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -2572,8 +2690,8 @@ prototype18["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
       [tmp5, tmp6] = tmp4;
       if (1 === tmp5) {
         let ranges = obj.ranges;
-        let tmp22 = items151;
-        let arr = ranges.push(items151.internalBinaryRead(pos, pos.uint32(), readUnknownField));
+        let tmp22 = items161;
+        let arr = ranges.push(items161.internalBinaryRead(pos, pos.uint32(), readUnknownField));
       } else if (2 === tmp5) {
         obj.workAroundPyotoBug = pos.bool();
       } else {
@@ -2612,16 +2730,16 @@ prototype18["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype18["internalBinaryWrite"] = function internalBinaryWrite(ranges, tag, writeUnknownFields) {
+prototype19["internalBinaryWrite"] = function internalBinaryWrite(ranges, tag, writeUnknownFields) {
   let length;
   let num = 0;
   if (0 < ranges.ranges.length) {
     do {
-      let tmp = items151;
+      let tmp = items161;
       let tmp2 = require;
       let tmp3 = dependencyMap;
       let tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
-      let internalBinaryWriteResult = items151.internalBinaryWrite(ranges.ranges[num], tagResult.fork(), writeUnknownFields);
+      let internalBinaryWriteResult = items161.internalBinaryWrite(ranges.ranges[num], tagResult.fork(), writeUnknownFields);
       let joined = internalBinaryWriteResult.join();
       num = num + 1;
       length = ranges.ranges.length;
@@ -2641,28 +2759,28 @@ prototype18["internalBinaryWrite"] = function internalBinaryWrite(ranges, tag, w
   }
   return tag;
 };
-const items16 = [
+const items17 = [
   {
     no: 1,
     name: "ranges",
     kind: "message",
     repeat: 1,
     T() {
-      return closure_22;
+      return closure_23;
     }
   },
   { no: 2, name: "work_around_pyoto_bug", kind: "scalar", T: 8 }
 ];
-items15 = new items15("discord_protos.discord_experimentation.v1.SDKVersion", items16, obj8, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+items16 = new items16("discord_protos.discord_experimentation.v1.SDKVersion", items17, obj8, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
 // ThrowIfThisInitialized (0x7c)
-class SDKVersionRange$Type extends MessageType19 {
+class SDKVersionRange$Type extends MessageType20 {
   constructor() {
     obj = {
       no: 1,
       name: "lower_bound",
       kind: "message",
       T() {
-            return closure_23;
+            return closure_24;
           }
     };
     items = [, ];
@@ -2672,7 +2790,7 @@ class SDKVersionRange$Type extends MessageType19 {
       name: "upper_bound",
       kind: "message",
       T() {
-            return closure_23;
+            return closure_24;
           }
     };
     tmp = new tmp("discord_protos.discord_experimentation.v1.SDKVersionRange", items, new.target);
@@ -2680,8 +2798,8 @@ class SDKVersionRange$Type extends MessageType19 {
     return tmp;
   }
 }
-const prototype19 = SDKVersionRange$Type.prototype;
-prototype19["create"] = function create(arr) {
+const prototype20 = SDKVersionRange$Type.prototype;
+prototype20["create"] = function create(arr) {
   let obj = {};
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -2692,7 +2810,7 @@ prototype19["create"] = function create(arr) {
   }
   return obj;
 };
-prototype19["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype20["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -2707,17 +2825,17 @@ prototype19["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
       let tmp4 = callback(pos.tag(), 2);
       [tmp5, tmp6] = tmp4;
       if (1 === tmp5) {
-        let tmp26 = items152;
-        let tmp27 = items152;
+        let tmp26 = items162;
+        let tmp27 = items162;
         let tmp28 = pos;
         let tmp29 = readUnknownField;
-        obj.lowerBound = items152.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.lowerBound);
+        obj.lowerBound = items162.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.lowerBound);
       } else if (2 === tmp5) {
-        let tmp22 = items152;
-        let tmp23 = items152;
+        let tmp22 = items162;
+        let tmp23 = items162;
         let tmp24 = pos;
         let tmp25 = readUnknownField;
-        obj.upperBound = items152.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.upperBound);
+        obj.upperBound = items162.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.upperBound);
       } else {
         let onRead = readUnknownField.readUnknownField;
         if ("throw" === onRead) {
@@ -2754,16 +2872,16 @@ prototype19["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype19["internalBinaryWrite"] = function internalBinaryWrite(lowerBound, tag, writeUnknownFields) {
+prototype20["internalBinaryWrite"] = function internalBinaryWrite(lowerBound, tag, writeUnknownFields) {
   if (lowerBound.lowerBound) {
     const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
-    const joined = items152.internalBinaryWrite(lowerBound.lowerBound, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult = items152.internalBinaryWrite(lowerBound.lowerBound, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined = items162.internalBinaryWrite(lowerBound.lowerBound, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult = items162.internalBinaryWrite(lowerBound.lowerBound, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (lowerBound.upperBound) {
     const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
-    const joined1 = items152.internalBinaryWrite(lowerBound.upperBound, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult1 = items152.internalBinaryWrite(lowerBound.upperBound, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined1 = items162.internalBinaryWrite(lowerBound.upperBound, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult1 = items162.internalBinaryWrite(lowerBound.upperBound, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
@@ -2775,13 +2893,13 @@ prototype19["internalBinaryWrite"] = function internalBinaryWrite(lowerBound, ta
   }
   return tag;
 };
-const items17 = [
+const items18 = [
   {
     no: 1,
     name: "lower_bound",
     kind: "message",
     T() {
-      return closure_23;
+      return closure_24;
     }
   },
   {
@@ -2789,20 +2907,20 @@ const items17 = [
     name: "upper_bound",
     kind: "message",
     T() {
-      return closure_23;
+      return closure_24;
     }
   }
 ];
-const items151 = new items15("discord_protos.discord_experimentation.v1.SDKVersionRange", items17, obj8, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const items161 = new items16("discord_protos.discord_experimentation.v1.SDKVersionRange", items18, obj8, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
 // ThrowIfThisInitialized (0x7c)
-class SDKVersionRangeBound$Type extends MessageType20 {
+class SDKVersionRangeBound$Type extends MessageType21 {
   constructor() {
     obj = {
       no: 1,
       name: "version",
       kind: "message",
       T() {
-            return closure_24;
+            return closure_25;
           }
     };
     items = [, ];
@@ -2813,8 +2931,8 @@ class SDKVersionRangeBound$Type extends MessageType20 {
     return tmp;
   }
 }
-const prototype20 = SDKVersionRangeBound$Type.prototype;
-prototype20["create"] = function create(arr) {
+const prototype21 = SDKVersionRangeBound$Type.prototype;
+prototype21["create"] = function create(arr) {
   let obj = { inclusive: false };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -2825,7 +2943,7 @@ prototype20["create"] = function create(arr) {
   }
   return obj;
 };
-prototype20["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype21["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -2840,11 +2958,11 @@ prototype20["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
       let tmp4 = callback(pos.tag(), 2);
       [tmp5, tmp6] = tmp4;
       if (1 === tmp5) {
-        let tmp22 = items153;
-        let tmp23 = items153;
+        let tmp22 = items163;
+        let tmp23 = items163;
         let tmp24 = pos;
         let tmp25 = readUnknownField;
-        obj.version = items153.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.version);
+        obj.version = items163.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.version);
       } else if (2 === tmp5) {
         obj.inclusive = pos.bool();
       } else {
@@ -2883,11 +3001,11 @@ prototype20["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype20["internalBinaryWrite"] = function internalBinaryWrite(version, tag, writeUnknownFields) {
+prototype21["internalBinaryWrite"] = function internalBinaryWrite(version, tag, writeUnknownFields) {
   if (version.version) {
     const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
-    const joined = items153.internalBinaryWrite(version.version, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult = items153.internalBinaryWrite(version.version, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined = items163.internalBinaryWrite(version.version, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult = items163.internalBinaryWrite(version.version, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (false !== version.inclusive) {
     tag.tag(2, require(1307).WireType.Varint).bool(version.inclusive);
@@ -2903,20 +3021,20 @@ prototype20["internalBinaryWrite"] = function internalBinaryWrite(version, tag, 
   }
   return tag;
 };
-const items18 = [
+const items19 = [
   {
     no: 1,
     name: "version",
     kind: "message",
     T() {
-      return closure_24;
+      return closure_25;
     }
   },
   { no: 2, name: "inclusive", kind: "scalar", T: 8 }
 ];
-const items152 = new items15("discord_protos.discord_experimentation.v1.SDKVersionRangeBound", items18, obj8, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const items162 = new items16("discord_protos.discord_experimentation.v1.SDKVersionRangeBound", items19, obj8, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
 // ThrowIfThisInitialized (0x7c)
-class SDKVersionSpecifier$Type extends MessageType21 {
+class SDKVersionSpecifier$Type extends MessageType22 {
   constructor() {
     items = [];
     items[0] = { no: 1, name: "version", kind: "scalar", T: 5 };
@@ -2925,8 +3043,8 @@ class SDKVersionSpecifier$Type extends MessageType21 {
     return tmp;
   }
 }
-const prototype21 = SDKVersionSpecifier$Type.prototype;
-prototype21["create"] = function create(arr) {
+const prototype22 = SDKVersionSpecifier$Type.prototype;
+prototype22["create"] = function create(arr) {
   let obj = { version: 0 };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -2937,7 +3055,7 @@ prototype21["create"] = function create(arr) {
   }
   return obj;
 };
-prototype21["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype22["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -2989,7 +3107,7 @@ prototype21["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype21["internalBinaryWrite"] = function internalBinaryWrite(version, tag, writeUnknownFields) {
+prototype22["internalBinaryWrite"] = function internalBinaryWrite(version, tag, writeUnknownFields) {
   if (0 !== version.version) {
     tag.tag(1, require(1307).WireType.Varint).int32(version.version);
     const tagResult = tag.tag(1, require(1307).WireType.Varint);
@@ -3004,17 +3122,17 @@ prototype21["internalBinaryWrite"] = function internalBinaryWrite(version, tag, 
   }
   return tag;
 };
-const items19 = [{ no: 1, name: "version", kind: "scalar", T: 5 }];
-const items153 = new items15("discord_protos.discord_experimentation.v1.SDKVersionSpecifier", items19, obj8, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const items20 = [{ no: 1, name: "version", kind: "scalar", T: 5 }];
+const items163 = new items16("discord_protos.discord_experimentation.v1.SDKVersionSpecifier", items20, obj8, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
 // ThrowIfThisInitialized (0x7c)
-class ClientPlatform$Type extends MessageType22 {
+class ClientPlatform$Type extends MessageType23 {
   constructor() {
     obj = {
       no: 1,
       name: "ios_version",
       kind: "message",
       T() {
-            return closure_26;
+            return closure_27;
           }
     };
     items = [, , , , , ];
@@ -3024,7 +3142,7 @@ class ClientPlatform$Type extends MessageType22 {
       name: "android_version",
       kind: "message",
       T() {
-            return closure_26;
+            return closure_27;
           }
     };
     items[2] = {
@@ -3032,7 +3150,7 @@ class ClientPlatform$Type extends MessageType22 {
       name: "web_version",
       kind: "message",
       T() {
-            return closure_26;
+            return closure_27;
           }
     };
     items[3] = {
@@ -3040,7 +3158,7 @@ class ClientPlatform$Type extends MessageType22 {
       name: "native_version",
       kind: "message",
       T() {
-            return closure_26;
+            return closure_27;
           }
     };
     items[4] = { no: 6, name: "allow_non_native_web", kind: "scalar", T: 8 };
@@ -3049,7 +3167,7 @@ class ClientPlatform$Type extends MessageType22 {
       name: "client_required_changes",
       kind: "message",
       T() {
-            return closure_30;
+            return closure_31;
           }
     };
     tmp = new tmp("discord_protos.discord_experimentation.v1.ClientPlatform", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, new.target);
@@ -3057,8 +3175,8 @@ class ClientPlatform$Type extends MessageType22 {
     return tmp;
   }
 }
-const prototype22 = ClientPlatform$Type.prototype;
-prototype22["create"] = function create(arr) {
+const prototype23 = ClientPlatform$Type.prototype;
+prototype23["create"] = function create(arr) {
   let obj = { allowNonNativeWeb: false };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -3069,7 +3187,7 @@ prototype22["create"] = function create(arr) {
   }
   return obj;
 };
-prototype22["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype23["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -3084,37 +3202,37 @@ prototype22["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
       let tmp4 = callback(pos.tag(), 2);
       [tmp5, tmp6] = tmp4;
       if (1 === tmp5) {
-        let tmp38 = items20;
-        let tmp39 = items20;
+        let tmp38 = items21;
+        let tmp39 = items21;
         let tmp40 = pos;
         let tmp41 = readUnknownField;
-        obj.iosVersion = items20.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.iosVersion);
+        obj.iosVersion = items21.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.iosVersion);
       } else if (2 === tmp5) {
-        let tmp34 = items20;
-        let tmp35 = items20;
+        let tmp34 = items21;
+        let tmp35 = items21;
         let tmp36 = pos;
         let tmp37 = readUnknownField;
-        obj.androidVersion = items20.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.androidVersion);
+        obj.androidVersion = items21.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.androidVersion);
       } else if (3 === tmp5) {
-        let tmp30 = items20;
-        let tmp31 = items20;
+        let tmp30 = items21;
+        let tmp31 = items21;
         let tmp32 = pos;
         let tmp33 = readUnknownField;
-        obj.webVersion = items20.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.webVersion);
+        obj.webVersion = items21.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.webVersion);
       } else if (4 === tmp5) {
-        let tmp26 = items20;
-        let tmp27 = items20;
+        let tmp26 = items21;
+        let tmp27 = items21;
         let tmp28 = pos;
         let tmp29 = readUnknownField;
-        obj.nativeVersion = items20.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.nativeVersion);
+        obj.nativeVersion = items21.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.nativeVersion);
       } else if (6 === tmp5) {
         obj.allowNonNativeWeb = pos.bool();
       } else if (5 === tmp5) {
-        let tmp22 = items204;
-        let tmp23 = items204;
+        let tmp22 = items214;
+        let tmp23 = items214;
         let tmp24 = pos;
         let tmp25 = readUnknownField;
-        obj.clientRequiredChanges = items204.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.clientRequiredChanges);
+        obj.clientRequiredChanges = items214.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.clientRequiredChanges);
       } else {
         let onRead = readUnknownField.readUnknownField;
         if ("throw" === onRead) {
@@ -3151,26 +3269,26 @@ prototype22["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype22["internalBinaryWrite"] = function internalBinaryWrite(iosVersion, tag, writeUnknownFields) {
+prototype23["internalBinaryWrite"] = function internalBinaryWrite(iosVersion, tag, writeUnknownFields) {
   if (iosVersion.iosVersion) {
     const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
-    const joined = items20.internalBinaryWrite(iosVersion.iosVersion, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult = items20.internalBinaryWrite(iosVersion.iosVersion, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined = items21.internalBinaryWrite(iosVersion.iosVersion, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult = items21.internalBinaryWrite(iosVersion.iosVersion, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (iosVersion.androidVersion) {
     const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
-    const joined1 = items20.internalBinaryWrite(iosVersion.androidVersion, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult1 = items20.internalBinaryWrite(iosVersion.androidVersion, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined1 = items21.internalBinaryWrite(iosVersion.androidVersion, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult1 = items21.internalBinaryWrite(iosVersion.androidVersion, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (iosVersion.webVersion) {
     const tagResult2 = tag.tag(3, require(1307).WireType.LengthDelimited);
-    const joined2 = items20.internalBinaryWrite(iosVersion.webVersion, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult2 = items20.internalBinaryWrite(iosVersion.webVersion, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined2 = items21.internalBinaryWrite(iosVersion.webVersion, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult2 = items21.internalBinaryWrite(iosVersion.webVersion, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (iosVersion.nativeVersion) {
     const tagResult3 = tag.tag(4, require(1307).WireType.LengthDelimited);
-    const joined3 = items20.internalBinaryWrite(iosVersion.nativeVersion, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult3 = items20.internalBinaryWrite(iosVersion.nativeVersion, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined3 = items21.internalBinaryWrite(iosVersion.nativeVersion, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult3 = items21.internalBinaryWrite(iosVersion.nativeVersion, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (false !== iosVersion.allowNonNativeWeb) {
     tag.tag(6, require(1307).WireType.Varint).bool(iosVersion.allowNonNativeWeb);
@@ -3178,8 +3296,8 @@ prototype22["internalBinaryWrite"] = function internalBinaryWrite(iosVersion, ta
   }
   if (iosVersion.clientRequiredChanges) {
     const tagResult5 = tag.tag(5, require(1307).WireType.LengthDelimited);
-    const joined4 = items204.internalBinaryWrite(iosVersion.clientRequiredChanges, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult4 = items204.internalBinaryWrite(iosVersion.clientRequiredChanges, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined4 = items214.internalBinaryWrite(iosVersion.clientRequiredChanges, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult4 = items214.internalBinaryWrite(iosVersion.clientRequiredChanges, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
@@ -3191,13 +3309,13 @@ prototype22["internalBinaryWrite"] = function internalBinaryWrite(iosVersion, ta
   }
   return tag;
 };
-let items20 = [
+let items21 = [
   {
     no: 1,
     name: "ios_version",
     kind: "message",
     T() {
-      return closure_26;
+      return closure_27;
     }
   },
   {
@@ -3205,7 +3323,7 @@ let items20 = [
     name: "android_version",
     kind: "message",
     T() {
-      return closure_26;
+      return closure_27;
     }
   },
   {
@@ -3213,7 +3331,7 @@ let items20 = [
     name: "web_version",
     kind: "message",
     T() {
-      return closure_26;
+      return closure_27;
     }
   },
   {
@@ -3221,7 +3339,7 @@ let items20 = [
     name: "native_version",
     kind: "message",
     T() {
-      return closure_26;
+      return closure_27;
     }
   },
   { no: 6, name: "allow_non_native_web", kind: "scalar", T: 8 },
@@ -3230,14 +3348,14 @@ let items20 = [
     name: "client_required_changes",
     kind: "message",
     T() {
-      return closure_30;
+      return closure_31;
     }
   }
 ];
 const obj13 = { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" };
-const sDKVersionSpecifierType = new SDKVersionSpecifier$Type("discord_protos.discord_experimentation.v1.ClientPlatform", items20, obj13, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const sDKVersionSpecifierType = new SDKVersionSpecifier$Type("discord_protos.discord_experimentation.v1.ClientPlatform", items21, obj13, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
 // ThrowIfThisInitialized (0x7c)
-class PlatformVersion$Type extends MessageType23 {
+class PlatformVersion$Type extends MessageType24 {
   constructor() {
     obj = {
       no: 1,
@@ -3245,7 +3363,7 @@ class PlatformVersion$Type extends MessageType23 {
       kind: "message",
       repeat: 1,
       T() {
-            return closure_27;
+            return closure_28;
           }
     };
     items = [, ];
@@ -3256,8 +3374,8 @@ class PlatformVersion$Type extends MessageType23 {
     return tmp;
   }
 }
-const prototype23 = PlatformVersion$Type.prototype;
-prototype23["create"] = function create(arr) {
+const prototype24 = PlatformVersion$Type.prototype;
+prototype24["create"] = function create(arr) {
   let obj = { ranges: [], workAroundPyotoBug: false };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -3268,7 +3386,7 @@ prototype23["create"] = function create(arr) {
   }
   return obj;
 };
-prototype23["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype24["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -3284,8 +3402,8 @@ prototype23["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
       [tmp5, tmp6] = tmp4;
       if (1 === tmp5) {
         let ranges = obj.ranges;
-        let tmp22 = items201;
-        let arr = ranges.push(items201.internalBinaryRead(pos, pos.uint32(), readUnknownField));
+        let tmp22 = items211;
+        let arr = ranges.push(items211.internalBinaryRead(pos, pos.uint32(), readUnknownField));
       } else if (2 === tmp5) {
         obj.workAroundPyotoBug = pos.bool();
       } else {
@@ -3324,16 +3442,16 @@ prototype23["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype23["internalBinaryWrite"] = function internalBinaryWrite(ranges, tag, writeUnknownFields) {
+prototype24["internalBinaryWrite"] = function internalBinaryWrite(ranges, tag, writeUnknownFields) {
   let length;
   let num = 0;
   if (0 < ranges.ranges.length) {
     do {
-      let tmp = items201;
+      let tmp = items211;
       let tmp2 = require;
       let tmp3 = dependencyMap;
       let tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
-      let internalBinaryWriteResult = items201.internalBinaryWrite(ranges.ranges[num], tagResult.fork(), writeUnknownFields);
+      let internalBinaryWriteResult = items211.internalBinaryWrite(ranges.ranges[num], tagResult.fork(), writeUnknownFields);
       let joined = internalBinaryWriteResult.join();
       num = num + 1;
       length = ranges.ranges.length;
@@ -3353,28 +3471,28 @@ prototype23["internalBinaryWrite"] = function internalBinaryWrite(ranges, tag, w
   }
   return tag;
 };
-const items21 = [
+const items22 = [
   {
     no: 1,
     name: "ranges",
     kind: "message",
     repeat: 1,
     T() {
-      return closure_27;
+      return closure_28;
     }
   },
   { no: 2, name: "work_around_pyoto_bug", kind: "scalar", T: 8 }
 ];
-items20 = new items20("discord_protos.discord_experimentation.v1.PlatformVersion", items21, obj13, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+items21 = new items21("discord_protos.discord_experimentation.v1.PlatformVersion", items22, obj13, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
 // ThrowIfThisInitialized (0x7c)
-class PlatformVersionRange$Type extends MessageType24 {
+class PlatformVersionRange$Type extends MessageType25 {
   constructor() {
     obj = {
       no: 1,
       name: "lower_bound",
       kind: "message",
       T() {
-            return closure_28;
+            return closure_29;
           }
     };
     items = [, ];
@@ -3384,7 +3502,7 @@ class PlatformVersionRange$Type extends MessageType24 {
       name: "upper_bound",
       kind: "message",
       T() {
-            return closure_28;
+            return closure_29;
           }
     };
     tmp = new tmp("discord_protos.discord_experimentation.v1.PlatformVersionRange", items, new.target);
@@ -3392,8 +3510,8 @@ class PlatformVersionRange$Type extends MessageType24 {
     return tmp;
   }
 }
-const prototype24 = PlatformVersionRange$Type.prototype;
-prototype24["create"] = function create(arr) {
+const prototype25 = PlatformVersionRange$Type.prototype;
+prototype25["create"] = function create(arr) {
   let obj = {};
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -3404,7 +3522,7 @@ prototype24["create"] = function create(arr) {
   }
   return obj;
 };
-prototype24["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype25["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -3419,17 +3537,17 @@ prototype24["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
       let tmp4 = callback(pos.tag(), 2);
       [tmp5, tmp6] = tmp4;
       if (1 === tmp5) {
-        let tmp26 = items202;
-        let tmp27 = items202;
+        let tmp26 = items212;
+        let tmp27 = items212;
         let tmp28 = pos;
         let tmp29 = readUnknownField;
-        obj.lowerBound = items202.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.lowerBound);
+        obj.lowerBound = items212.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.lowerBound);
       } else if (2 === tmp5) {
-        let tmp22 = items202;
-        let tmp23 = items202;
+        let tmp22 = items212;
+        let tmp23 = items212;
         let tmp24 = pos;
         let tmp25 = readUnknownField;
-        obj.upperBound = items202.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.upperBound);
+        obj.upperBound = items212.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.upperBound);
       } else {
         let onRead = readUnknownField.readUnknownField;
         if ("throw" === onRead) {
@@ -3466,16 +3584,16 @@ prototype24["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype24["internalBinaryWrite"] = function internalBinaryWrite(lowerBound, tag, writeUnknownFields) {
+prototype25["internalBinaryWrite"] = function internalBinaryWrite(lowerBound, tag, writeUnknownFields) {
   if (lowerBound.lowerBound) {
     const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
-    const joined = items202.internalBinaryWrite(lowerBound.lowerBound, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult = items202.internalBinaryWrite(lowerBound.lowerBound, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined = items212.internalBinaryWrite(lowerBound.lowerBound, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult = items212.internalBinaryWrite(lowerBound.lowerBound, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (lowerBound.upperBound) {
     const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
-    const joined1 = items202.internalBinaryWrite(lowerBound.upperBound, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult1 = items202.internalBinaryWrite(lowerBound.upperBound, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined1 = items212.internalBinaryWrite(lowerBound.upperBound, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult1 = items212.internalBinaryWrite(lowerBound.upperBound, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
@@ -3487,13 +3605,13 @@ prototype24["internalBinaryWrite"] = function internalBinaryWrite(lowerBound, ta
   }
   return tag;
 };
-const items22 = [
+const items23 = [
   {
     no: 1,
     name: "lower_bound",
     kind: "message",
     T() {
-      return closure_28;
+      return closure_29;
     }
   },
   {
@@ -3501,20 +3619,20 @@ const items22 = [
     name: "upper_bound",
     kind: "message",
     T() {
-      return closure_28;
+      return closure_29;
     }
   }
 ];
-const items201 = new items20("discord_protos.discord_experimentation.v1.PlatformVersionRange", items22, obj13, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const items211 = new items21("discord_protos.discord_experimentation.v1.PlatformVersionRange", items23, obj13, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
 // ThrowIfThisInitialized (0x7c)
-class PlatformVersionRangeBound$Type extends MessageType25 {
+class PlatformVersionRangeBound$Type extends MessageType26 {
   constructor() {
     obj = {
       no: 1,
       name: "version",
       kind: "message",
       T() {
-            return closure_29;
+            return closure_30;
           }
     };
     items = [, ];
@@ -3525,8 +3643,8 @@ class PlatformVersionRangeBound$Type extends MessageType25 {
     return tmp;
   }
 }
-const prototype25 = PlatformVersionRangeBound$Type.prototype;
-prototype25["create"] = function create(arr) {
+const prototype26 = PlatformVersionRangeBound$Type.prototype;
+prototype26["create"] = function create(arr) {
   let obj = { inclusive: false };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -3537,7 +3655,7 @@ prototype25["create"] = function create(arr) {
   }
   return obj;
 };
-prototype25["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype26["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -3552,11 +3670,11 @@ prototype25["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
       let tmp4 = callback(pos.tag(), 2);
       [tmp5, tmp6] = tmp4;
       if (1 === tmp5) {
-        let tmp22 = items203;
-        let tmp23 = items203;
+        let tmp22 = items213;
+        let tmp23 = items213;
         let tmp24 = pos;
         let tmp25 = readUnknownField;
-        obj.version = items203.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.version);
+        obj.version = items213.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.version);
       } else if (2 === tmp5) {
         obj.inclusive = pos.bool();
       } else {
@@ -3595,11 +3713,11 @@ prototype25["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype25["internalBinaryWrite"] = function internalBinaryWrite(version, tag, writeUnknownFields) {
+prototype26["internalBinaryWrite"] = function internalBinaryWrite(version, tag, writeUnknownFields) {
   if (version.version) {
     const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
-    const joined = items203.internalBinaryWrite(version.version, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult = items203.internalBinaryWrite(version.version, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined = items213.internalBinaryWrite(version.version, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult = items213.internalBinaryWrite(version.version, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (false !== version.inclusive) {
     tag.tag(2, require(1307).WireType.Varint).bool(version.inclusive);
@@ -3615,20 +3733,20 @@ prototype25["internalBinaryWrite"] = function internalBinaryWrite(version, tag, 
   }
   return tag;
 };
-const items23 = [
+const items24 = [
   {
     no: 1,
     name: "version",
     kind: "message",
     T() {
-      return closure_29;
+      return closure_30;
     }
   },
   { no: 2, name: "inclusive", kind: "scalar", T: 8 }
 ];
-const items202 = new items20("discord_protos.discord_experimentation.v1.PlatformVersionRangeBound", items23, obj13, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const items212 = new items21("discord_protos.discord_experimentation.v1.PlatformVersionRangeBound", items24, obj13, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
 // ThrowIfThisInitialized (0x7c)
-class PlatformVersionSpecifier$Type extends MessageType26 {
+class PlatformVersionSpecifier$Type extends MessageType27 {
   constructor() {
     items = [, , ];
     items[0] = { no: 1, name: "major", kind: "scalar", T: 13 };
@@ -3653,8 +3771,8 @@ class PlatformVersionSpecifier$Type extends MessageType26 {
     return tmp;
   }
 }
-const prototype26 = PlatformVersionSpecifier$Type.prototype;
-prototype26["create"] = function create(arr) {
+const prototype27 = PlatformVersionSpecifier$Type.prototype;
+prototype27["create"] = function create(arr) {
   let obj = { major: 0 };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -3665,7 +3783,7 @@ prototype26["create"] = function create(arr) {
   }
   return obj;
 };
-prototype26["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype27["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -3733,7 +3851,7 @@ prototype26["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype26["internalBinaryWrite"] = function internalBinaryWrite(major, tag, writeUnknownFields) {
+prototype27["internalBinaryWrite"] = function internalBinaryWrite(major, tag, writeUnknownFields) {
   if (0 !== major.major) {
     tag.tag(1, require(1307).WireType.Varint).uint32(major.major);
     const tagResult = tag.tag(1, require(1307).WireType.Varint);
@@ -3760,7 +3878,7 @@ prototype26["internalBinaryWrite"] = function internalBinaryWrite(major, tag, wr
   }
   return tag;
 };
-const items24 = [
+const items25 = [
   { no: 1, name: "major", kind: "scalar", T: 13 },
   {
     no: 2,
@@ -3779,9 +3897,9 @@ const items24 = [
     }
   }
 ];
-const items203 = new items20("discord_protos.discord_experimentation.v1.PlatformVersionSpecifier", items24, obj13, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const items213 = new items21("discord_protos.discord_experimentation.v1.PlatformVersionSpecifier", items25, obj13, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
 // ThrowIfThisInitialized (0x7c)
-class ClientRequiredChanges$Type extends MessageType27 {
+class ClientRequiredChanges$Type extends MessageType28 {
   constructor() {
     items = [, ];
     items[0] = { no: 1, name: "commit_hashes", kind: "scalar", repeat: 2, T: 9 };
@@ -3791,8 +3909,8 @@ class ClientRequiredChanges$Type extends MessageType27 {
     return tmp;
   }
 }
-const prototype27 = ClientRequiredChanges$Type.prototype;
-prototype27["create"] = function create(arr) {
+const prototype28 = ClientRequiredChanges$Type.prototype;
+prototype28["create"] = function create(arr) {
   let obj = { commitHashes: [], prNumbers: [] };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -3803,7 +3921,7 @@ prototype27["create"] = function create(arr) {
   }
   return obj;
 };
-prototype27["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype28["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -3872,7 +3990,7 @@ prototype27["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype27["internalBinaryWrite"] = function internalBinaryWrite(commitHashes, tag, writeUnknownFields) {
+prototype28["internalBinaryWrite"] = function internalBinaryWrite(commitHashes, tag, writeUnknownFields) {
   let length;
   let length2;
   let num = 0;
@@ -3909,10 +4027,10 @@ prototype27["internalBinaryWrite"] = function internalBinaryWrite(commitHashes, 
   }
   return tag;
 };
-const items25 = [{ no: 1, name: "commit_hashes", kind: "scalar", repeat: 2, T: 9 }, { no: 2, name: "pr_numbers", kind: "scalar", repeat: 1, T: 5 }];
-const items204 = new items20("discord_protos.discord_experimentation.v1.ClientRequiredChanges", items25, obj13, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const items26 = [{ no: 1, name: "commit_hashes", kind: "scalar", repeat: 2, T: 9 }, { no: 2, name: "pr_numbers", kind: "scalar", repeat: 1, T: 5 }];
+const items214 = new items21("discord_protos.discord_experimentation.v1.ClientRequiredChanges", items26, obj13, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
 // ThrowIfThisInitialized (0x7c)
-class UserIsBot$Type extends MessageType28 {
+class UserIsBot$Type extends MessageType29 {
   constructor() {
     items = [];
     items[0] = { no: 1, name: "is_bot", kind: "scalar", T: 8 };
@@ -3921,8 +4039,8 @@ class UserIsBot$Type extends MessageType28 {
     return tmp;
   }
 }
-const prototype28 = UserIsBot$Type.prototype;
-prototype28["create"] = function create(arr) {
+const prototype29 = UserIsBot$Type.prototype;
+prototype29["create"] = function create(arr) {
   let obj = { isBot: false };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -3933,7 +4051,7 @@ prototype28["create"] = function create(arr) {
   }
   return obj;
 };
-prototype28["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype29["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -3985,7 +4103,7 @@ prototype28["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype28["internalBinaryWrite"] = function internalBinaryWrite(isBot, tag, writeUnknownFields) {
+prototype29["internalBinaryWrite"] = function internalBinaryWrite(isBot, tag, writeUnknownFields) {
   if (false !== isBot.isBot) {
     tag.tag(1, require(1307).WireType.Varint).bool(isBot.isBot);
     const tagResult = tag.tag(1, require(1307).WireType.Varint);
@@ -4000,10 +4118,10 @@ prototype28["internalBinaryWrite"] = function internalBinaryWrite(isBot, tag, wr
   }
   return tag;
 };
-const items26 = [{ no: 1, name: "is_bot", kind: "scalar", T: 8 }];
-const clientRequiredChangesType = new ClientRequiredChanges$Type("discord_protos.discord_experimentation.v1.UserIsBot", items26, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const items27 = [{ no: 1, name: "is_bot", kind: "scalar", T: 8 }];
+const clientRequiredChangesType = new ClientRequiredChanges$Type("discord_protos.discord_experimentation.v1.UserIsBot", items27, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
 // ThrowIfThisInitialized (0x7c)
-class UserAgeRange$Type extends MessageType29 {
+class UserAgeRange$Type extends MessageType30 {
   constructor() {
     obj = {
       no: 1,
@@ -4028,8 +4146,8 @@ class UserAgeRange$Type extends MessageType29 {
     return tmp;
   }
 }
-const prototype29 = UserAgeRange$Type.prototype;
-prototype29["create"] = function create(arr) {
+const prototype30 = UserAgeRange$Type.prototype;
+prototype30["create"] = function create(arr) {
   let obj = {};
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -4040,7 +4158,7 @@ prototype29["create"] = function create(arr) {
   }
   return obj;
 };
-prototype29["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype30["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -4106,7 +4224,7 @@ prototype29["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype29["internalBinaryWrite"] = function internalBinaryWrite(minAgeYears, tag, writeUnknownFields) {
+prototype30["internalBinaryWrite"] = function internalBinaryWrite(minAgeYears, tag, writeUnknownFields) {
   if (minAgeYears.minAgeYears) {
     const UInt32Value = require(1337) /* defineProperty */.UInt32Value;
     const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
@@ -4129,7 +4247,7 @@ prototype29["internalBinaryWrite"] = function internalBinaryWrite(minAgeYears, t
   }
   return tag;
 };
-let items27 = [
+let items28 = [
   {
     no: 1,
     name: "min_age_years",
@@ -4148,9 +4266,9 @@ let items27 = [
   }
 ];
 const obj18 = { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" };
-const clientRequiredChangesType1 = new ClientRequiredChanges$Type("discord_protos.discord_experimentation.v1.UserAgeRange", items27, obj18, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const clientRequiredChangesType1 = new ClientRequiredChanges$Type("discord_protos.discord_experimentation.v1.UserAgeRange", items28, obj18, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
 // ThrowIfThisInitialized (0x7c)
-class Fixed64Value$Type extends MessageType30 {
+class Fixed64Value$Type extends MessageType31 {
   constructor() {
     items = [];
     items[0] = { no: 1, name: "value", kind: "scalar", T: 6 };
@@ -4159,8 +4277,8 @@ class Fixed64Value$Type extends MessageType30 {
     return tmp;
   }
 }
-const prototype30 = Fixed64Value$Type.prototype;
-prototype30["create"] = function create(arr) {
+const prototype31 = Fixed64Value$Type.prototype;
+prototype31["create"] = function create(arr) {
   let obj = { value: "0" };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -4171,7 +4289,7 @@ prototype30["create"] = function create(arr) {
   }
   return obj;
 };
-prototype30["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype31["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -4224,7 +4342,7 @@ prototype30["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype30["internalBinaryWrite"] = function internalBinaryWrite(value, tag, writeUnknownFields) {
+prototype31["internalBinaryWrite"] = function internalBinaryWrite(value, tag, writeUnknownFields) {
   if ("0" !== value.value) {
     tag.tag(1, require(1307).WireType.Bit64).fixed64(value.value);
     const tagResult = tag.tag(1, require(1307).WireType.Bit64);
@@ -4239,17 +4357,17 @@ prototype30["internalBinaryWrite"] = function internalBinaryWrite(value, tag, wr
   }
   return tag;
 };
-const items28 = [{ no: 1, name: "value", kind: "scalar", T: 6 }];
-items27 = new items27("discord_protos.discord_experimentation.v1.Fixed64Value", items28, obj18, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
+const items29 = [{ no: 1, name: "value", kind: "scalar", T: 6 }];
+items28 = new items28("discord_protos.discord_experimentation.v1.Fixed64Value", items29, obj18, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
 // ThrowIfThisInitialized (0x7c)
-class UserIDRange$Type extends MessageType31 {
+class UserIDRange$Type extends MessageType32 {
   constructor() {
     obj = {
       no: 1,
       name: "min_id",
       kind: "message",
       T() {
-            return closure_33;
+            return closure_34;
           }
     };
     items = [, ];
@@ -4259,7 +4377,7 @@ class UserIDRange$Type extends MessageType31 {
       name: "max_id",
       kind: "message",
       T() {
-            return closure_33;
+            return closure_34;
           }
     };
     tmp = new tmp("discord_protos.discord_experimentation.v1.UserIDRange", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, new.target);
@@ -4267,8 +4385,8 @@ class UserIDRange$Type extends MessageType31 {
     return tmp;
   }
 }
-const prototype31 = UserIDRange$Type.prototype;
-prototype31["create"] = function create(arr) {
+const prototype32 = UserIDRange$Type.prototype;
+prototype32["create"] = function create(arr) {
   let obj = {};
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -4279,7 +4397,7 @@ prototype31["create"] = function create(arr) {
   }
   return obj;
 };
-prototype31["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype32["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -4294,17 +4412,17 @@ prototype31["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
       let tmp4 = callback(pos.tag(), 2);
       [tmp5, tmp6] = tmp4;
       if (1 === tmp5) {
-        let tmp26 = items27;
-        let tmp27 = items27;
+        let tmp26 = items28;
+        let tmp27 = items28;
         let tmp28 = pos;
         let tmp29 = readUnknownField;
-        obj.minId = items27.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.minId);
+        obj.minId = items28.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.minId);
       } else if (2 === tmp5) {
-        let tmp22 = items27;
-        let tmp23 = items27;
+        let tmp22 = items28;
+        let tmp23 = items28;
         let tmp24 = pos;
         let tmp25 = readUnknownField;
-        obj.maxId = items27.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.maxId);
+        obj.maxId = items28.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.maxId);
       } else {
         let onRead = readUnknownField.readUnknownField;
         if ("throw" === onRead) {
@@ -4341,16 +4459,16 @@ prototype31["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype31["internalBinaryWrite"] = function internalBinaryWrite(minId, tag, writeUnknownFields) {
+prototype32["internalBinaryWrite"] = function internalBinaryWrite(minId, tag, writeUnknownFields) {
   if (minId.minId) {
     const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
-    const joined = items27.internalBinaryWrite(minId.minId, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult = items27.internalBinaryWrite(minId.minId, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined = items28.internalBinaryWrite(minId.minId, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult = items28.internalBinaryWrite(minId.minId, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (minId.maxId) {
     const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
-    const joined1 = items27.internalBinaryWrite(minId.maxId, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult1 = items27.internalBinaryWrite(minId.maxId, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined1 = items28.internalBinaryWrite(minId.maxId, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult1 = items28.internalBinaryWrite(minId.maxId, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
@@ -4362,13 +4480,13 @@ prototype31["internalBinaryWrite"] = function internalBinaryWrite(minId, tag, wr
   }
   return tag;
 };
-const items29 = [
+const items30 = [
   {
     no: 1,
     name: "min_id",
     kind: "message",
     T() {
-      return closure_33;
+      return closure_34;
     }
   },
   {
@@ -4376,13 +4494,13 @@ const items29 = [
     name: "max_id",
     kind: "message",
     T() {
-      return closure_33;
+      return closure_34;
     }
   }
 ];
-const fixed64ValueType = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UserIDRange", items29, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const fixed64ValueType = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UserIDRange", items30, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
 // ThrowIfThisInitialized (0x7c)
-class UserHasFlag$Type extends MessageType32 {
+class UserHasFlag$Type extends MessageType33 {
   constructor() {
     items = [];
     items[0] = { no: 1, name: "mask", kind: "scalar", T: 6 };
@@ -4391,8 +4509,8 @@ class UserHasFlag$Type extends MessageType32 {
     return tmp;
   }
 }
-const prototype32 = UserHasFlag$Type.prototype;
-prototype32["create"] = function create(arr) {
+const prototype33 = UserHasFlag$Type.prototype;
+prototype33["create"] = function create(arr) {
   let obj = { mask: "0" };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -4403,7 +4521,7 @@ prototype32["create"] = function create(arr) {
   }
   return obj;
 };
-prototype32["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype33["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -4456,7 +4574,7 @@ prototype32["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype32["internalBinaryWrite"] = function internalBinaryWrite(mask, tag, writeUnknownFields) {
+prototype33["internalBinaryWrite"] = function internalBinaryWrite(mask, tag, writeUnknownFields) {
   if ("0" !== mask.mask) {
     tag.tag(1, require(1307).WireType.Bit64).fixed64(mask.mask);
     const tagResult = tag.tag(1, require(1307).WireType.Bit64);
@@ -4471,10 +4589,10 @@ prototype32["internalBinaryWrite"] = function internalBinaryWrite(mask, tag, wri
   }
   return tag;
 };
-const items30 = [{ no: 1, name: "mask", kind: "scalar", T: 6 }];
-const fixed64ValueType1 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UserHasFlag", items30, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const items31 = [{ no: 1, name: "mask", kind: "scalar", T: 6 }];
+const fixed64ValueType1 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UserHasFlag", items31, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
 // ThrowIfThisInitialized (0x7c)
-class UnitIdInRangeByHash$Type extends MessageType33 {
+class UnitIdInRangeByHash$Type extends MessageType34 {
   constructor() {
     items = [, , ];
     items[0] = { no: 1, name: "hash_key", kind: "scalar", T: 9 };
@@ -4485,8 +4603,8 @@ class UnitIdInRangeByHash$Type extends MessageType33 {
     return tmp;
   }
 }
-const prototype33 = UnitIdInRangeByHash$Type.prototype;
-prototype33["create"] = function create(arr) {
+const prototype34 = UnitIdInRangeByHash$Type.prototype;
+prototype34["create"] = function create(arr) {
   let obj = { hashKey: "", stopRingPosition: 0, startRingPosition: 0 };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -4497,7 +4615,7 @@ prototype33["create"] = function create(arr) {
   }
   return obj;
 };
-prototype33["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype34["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -4553,7 +4671,7 @@ prototype33["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype33["internalBinaryWrite"] = function internalBinaryWrite(hashKey, tag, writeUnknownFields) {
+prototype34["internalBinaryWrite"] = function internalBinaryWrite(hashKey, tag, writeUnknownFields) {
   if ("" !== hashKey.hashKey) {
     tag.tag(1, require(1307).WireType.LengthDelimited).string(hashKey.hashKey);
     const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
@@ -4576,10 +4694,10 @@ prototype33["internalBinaryWrite"] = function internalBinaryWrite(hashKey, tag, 
   }
   return tag;
 };
-const items31 = [{ no: 1, name: "hash_key", kind: "scalar", T: 9 }, { no: 2, name: "stop_ring_position", kind: "scalar", T: 13 }, { no: 3, name: "start_ring_position", kind: "scalar", T: 13 }];
-const fixed64ValueType2 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UnitIdInRangeByHash", items31, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const items32 = [{ no: 1, name: "hash_key", kind: "scalar", T: 9 }, { no: 2, name: "stop_ring_position", kind: "scalar", T: 13 }, { no: 3, name: "start_ring_position", kind: "scalar", T: 13 }];
+const fixed64ValueType2 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UnitIdInRangeByHash", items32, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
 // ThrowIfThisInitialized (0x7c)
-class ClientReleaseChannel$Type extends MessageType34 {
+class ClientReleaseChannel$Type extends MessageType35 {
   constructor() {
     items = [];
     items[0] = { no: 1, name: "release_channels", kind: "scalar", repeat: 2, T: 9 };
@@ -4588,8 +4706,8 @@ class ClientReleaseChannel$Type extends MessageType34 {
     return tmp;
   }
 }
-const prototype34 = ClientReleaseChannel$Type.prototype;
-prototype34["create"] = function create(arr) {
+const prototype35 = ClientReleaseChannel$Type.prototype;
+prototype35["create"] = function create(arr) {
   let obj = { releaseChannels: [] };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -4600,7 +4718,7 @@ prototype34["create"] = function create(arr) {
   }
   return obj;
 };
-prototype34["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype35["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -4653,7 +4771,7 @@ prototype34["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype34["internalBinaryWrite"] = function internalBinaryWrite(releaseChannels, tag, writeUnknownFields) {
+prototype35["internalBinaryWrite"] = function internalBinaryWrite(releaseChannels, tag, writeUnknownFields) {
   let length;
   let num = 0;
   if (0 < releaseChannels.releaseChannels.length) {
@@ -4676,10 +4794,10 @@ prototype34["internalBinaryWrite"] = function internalBinaryWrite(releaseChannel
   }
   return tag;
 };
-const items32 = [{ no: 1, name: "release_channels", kind: "scalar", repeat: 2, T: 9 }];
-const fixed64ValueType3 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.ClientReleaseChannel", items32, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const items33 = [{ no: 1, name: "release_channels", kind: "scalar", repeat: 2, T: 9 }];
+const fixed64ValueType3 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.ClientReleaseChannel", items33, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
 // ThrowIfThisInitialized (0x7c)
-class Always$Type extends MessageType35 {
+class Always$Type extends MessageType36 {
   constructor() {
     items = [];
     items[0] = { no: 1, name: "value", kind: "scalar", T: 8 };
@@ -4688,8 +4806,8 @@ class Always$Type extends MessageType35 {
     return tmp;
   }
 }
-const prototype35 = Always$Type.prototype;
-prototype35["create"] = function create(arr) {
+const prototype36 = Always$Type.prototype;
+prototype36["create"] = function create(arr) {
   let obj = { value: false };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -4700,7 +4818,7 @@ prototype35["create"] = function create(arr) {
   }
   return obj;
 };
-prototype35["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype36["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -4752,7 +4870,7 @@ prototype35["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype35["internalBinaryWrite"] = function internalBinaryWrite(value, tag, writeUnknownFields) {
+prototype36["internalBinaryWrite"] = function internalBinaryWrite(value, tag, writeUnknownFields) {
   if (false !== value.value) {
     tag.tag(1, require(1307).WireType.Varint).bool(value.value);
     const tagResult = tag.tag(1, require(1307).WireType.Varint);
@@ -4767,10 +4885,10 @@ prototype35["internalBinaryWrite"] = function internalBinaryWrite(value, tag, wr
   }
   return tag;
 };
-const items33 = [{ no: 1, name: "value", kind: "scalar", T: 8 }];
-const fixed64ValueType4 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.Always", items33, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const items34 = [{ no: 1, name: "value", kind: "scalar", T: 8 }];
+const fixed64ValueType4 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.Always", items34, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
 // ThrowIfThisInitialized (0x7c)
-class UnitIdInExperiment$Type extends MessageType36 {
+class UnitIdInExperiment$Type extends MessageType37 {
   constructor() {
     items = [, ];
     items[0] = { no: 1, name: "experiment_id", kind: "scalar", T: 6 };
@@ -4780,8 +4898,8 @@ class UnitIdInExperiment$Type extends MessageType36 {
     return tmp;
   }
 }
-const prototype36 = UnitIdInExperiment$Type.prototype;
-prototype36["create"] = function create(arr) {
+const prototype37 = UnitIdInExperiment$Type.prototype;
+prototype37["create"] = function create(arr) {
   let obj = { experimentId: "0", variationIds: [] };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -4792,7 +4910,7 @@ prototype36["create"] = function create(arr) {
   }
   return obj;
 };
-prototype36["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype37["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -4861,7 +4979,7 @@ prototype36["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype36["internalBinaryWrite"] = function internalBinaryWrite(experimentId, tag, writeUnknownFields) {
+prototype37["internalBinaryWrite"] = function internalBinaryWrite(experimentId, tag, writeUnknownFields) {
   let length;
   if ("0" !== experimentId.experimentId) {
     tag.tag(1, require(1307).WireType.Bit64).fixed64(experimentId.experimentId);
@@ -4890,10 +5008,10 @@ prototype36["internalBinaryWrite"] = function internalBinaryWrite(experimentId, 
   }
   return tag;
 };
-const items34 = [{ no: 1, name: "experiment_id", kind: "scalar", T: 6 }, { no: 2, name: "variation_ids", kind: "scalar", repeat: 1, T: 5 }];
-const fixed64ValueType5 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UnitIdInExperiment", items34, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const items35 = [{ no: 1, name: "experiment_id", kind: "scalar", T: 6 }, { no: 2, name: "variation_ids", kind: "scalar", repeat: 1, T: 5 }];
+const fixed64ValueType5 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UnitIdInExperiment", items35, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
 // ThrowIfThisInitialized (0x7c)
-class UserPremiumType$Type extends MessageType37 {
+class UserPremiumType$Type extends MessageType38 {
   constructor() {
     items = [];
     items[0] = { no: 1, name: "premium_types", kind: "scalar", repeat: 1, T: 5 };
@@ -4902,8 +5020,8 @@ class UserPremiumType$Type extends MessageType37 {
     return tmp;
   }
 }
-const prototype37 = UserPremiumType$Type.prototype;
-prototype37["create"] = function create(arr) {
+const prototype38 = UserPremiumType$Type.prototype;
+prototype38["create"] = function create(arr) {
   let obj = { premiumTypes: [] };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -4914,7 +5032,7 @@ prototype37["create"] = function create(arr) {
   }
   return obj;
 };
-prototype37["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype38["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -4980,7 +5098,7 @@ prototype37["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype37["internalBinaryWrite"] = function internalBinaryWrite(premiumTypes, tag, writeUnknownFields) {
+prototype38["internalBinaryWrite"] = function internalBinaryWrite(premiumTypes, tag, writeUnknownFields) {
   let length;
   if (premiumTypes.premiumTypes.length) {
     tag.tag(1, require(1307).WireType.LengthDelimited).fork();
@@ -5005,10 +5123,10 @@ prototype37["internalBinaryWrite"] = function internalBinaryWrite(premiumTypes, 
   }
   return tag;
 };
-const items35 = [{ no: 1, name: "premium_types", kind: "scalar", repeat: 1, T: 5 }];
-const fixed64ValueType6 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UserPremiumType", items35, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const items36 = [{ no: 1, name: "premium_types", kind: "scalar", repeat: 1, T: 5 }];
+const fixed64ValueType6 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UserPremiumType", items36, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
 // ThrowIfThisInitialized (0x7c)
-class UnitIdMatchesFilterSnapshot$Type extends MessageType38 {
+class UnitIdMatchesFilterSnapshot$Type extends MessageType39 {
   constructor() {
     items = [, ];
     items[0] = { no: 1, name: "filter_snapshot_name", kind: "scalar", T: 9 };
@@ -5018,8 +5136,8 @@ class UnitIdMatchesFilterSnapshot$Type extends MessageType38 {
     return tmp;
   }
 }
-const prototype38 = UnitIdMatchesFilterSnapshot$Type.prototype;
-prototype38["create"] = function create(arr) {
+const prototype39 = UnitIdMatchesFilterSnapshot$Type.prototype;
+prototype39["create"] = function create(arr) {
   let obj = { filterSnapshotName: "", targetFilterValues: [] };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -5030,7 +5148,7 @@ prototype38["create"] = function create(arr) {
   }
   return obj;
 };
-prototype38["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype39["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -5100,7 +5218,7 @@ prototype38["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype38["internalBinaryWrite"] = function internalBinaryWrite(filterSnapshotName, tag, writeUnknownFields) {
+prototype39["internalBinaryWrite"] = function internalBinaryWrite(filterSnapshotName, tag, writeUnknownFields) {
   let length;
   if ("" !== filterSnapshotName.filterSnapshotName) {
     tag.tag(1, require(1307).WireType.LengthDelimited).string(filterSnapshotName.filterSnapshotName);
@@ -5129,10 +5247,10 @@ prototype38["internalBinaryWrite"] = function internalBinaryWrite(filterSnapshot
   }
   return tag;
 };
-const items36 = [{ no: 1, name: "filter_snapshot_name", kind: "scalar", T: 9 }, { no: 2, name: "target_filter_values", kind: "scalar", repeat: 1, T: 6 }];
-const fixed64ValueType7 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UnitIdMatchesFilterSnapshot", items36, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
+const items37 = [{ no: 1, name: "filter_snapshot_name", kind: "scalar", T: 9 }, { no: 2, name: "target_filter_values", kind: "scalar", repeat: 1, T: 6 }];
+const fixed64ValueType7 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UnitIdMatchesFilterSnapshot", items37, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
 // ThrowIfThisInitialized (0x7c)
-class GuildIds$Type extends MessageType39 {
+class GuildIds$Type extends MessageType40 {
   constructor() {
     items = [];
     items[0] = { no: 1, name: "guild_ids", kind: "scalar", repeat: 1, T: 6 };
@@ -5141,8 +5259,8 @@ class GuildIds$Type extends MessageType39 {
     return tmp;
   }
 }
-const prototype39 = GuildIds$Type.prototype;
-prototype39["create"] = function create(arr) {
+const prototype40 = GuildIds$Type.prototype;
+prototype40["create"] = function create(arr) {
   let obj = { guildIds: [] };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -5153,7 +5271,7 @@ prototype39["create"] = function create(arr) {
   }
   return obj;
 };
-prototype39["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype40["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -5221,7 +5339,7 @@ prototype39["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype39["internalBinaryWrite"] = function internalBinaryWrite(guildIds, tag, writeUnknownFields) {
+prototype40["internalBinaryWrite"] = function internalBinaryWrite(guildIds, tag, writeUnknownFields) {
   let length;
   if (guildIds.guildIds.length) {
     tag.tag(1, require(1307).WireType.LengthDelimited).fork();
@@ -5246,10 +5364,10 @@ prototype39["internalBinaryWrite"] = function internalBinaryWrite(guildIds, tag,
   }
   return tag;
 };
-const items37 = [{ no: 1, name: "guild_ids", kind: "scalar", repeat: 1, T: 6 }];
-const fixed64ValueType8 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.GuildIds", items37, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", GuildIds$Type, undefined, tmp, arg1, dependencyMap, obj, obj, obj, obj1, new.target, defineProperty, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items8, items81, items82, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, items15, items151, items152, items153, sDKVersionSpecifierType, items20, items201, items202, items203, items204, clientRequiredChangesType, clientRequiredChangesType1, items27, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, Fixed64Value$Type);
+const items38 = [{ no: 1, name: "guild_ids", kind: "scalar", repeat: 1, T: 6 }];
+const fixed64ValueType8 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.GuildIds", items38, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", GuildIds$Type, undefined, tmp, arg1, dependencyMap, obj, obj, obj, obj1, new.target, defineProperty, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items8, items81, items82, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items16, items161, items162, items163, sDKVersionSpecifierType, items21, items211, items212, items213, items214, clientRequiredChangesType, clientRequiredChangesType1, items28, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, Fixed64Value$Type);
 // ThrowIfThisInitialized (0x7c)
-class GuildMemberCountRange$Type extends MessageType40 {
+class GuildMemberCountRange$Type extends MessageType41 {
   constructor() {
     obj = {
       no: 1,
@@ -5274,8 +5392,8 @@ class GuildMemberCountRange$Type extends MessageType40 {
     return tmp;
   }
 }
-const prototype40 = GuildMemberCountRange$Type.prototype;
-prototype40["create"] = function create(arr) {
+const prototype41 = GuildMemberCountRange$Type.prototype;
+prototype41["create"] = function create(arr) {
   let obj = {};
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -5286,7 +5404,7 @@ prototype40["create"] = function create(arr) {
   }
   return obj;
 };
-prototype40["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype41["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -5352,7 +5470,7 @@ prototype40["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype40["internalBinaryWrite"] = function internalBinaryWrite(minCount, tag, writeUnknownFields) {
+prototype41["internalBinaryWrite"] = function internalBinaryWrite(minCount, tag, writeUnknownFields) {
   if (minCount.minCount) {
     const UInt32Value = require(1337) /* defineProperty */.UInt32Value;
     const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
@@ -5375,7 +5493,7 @@ prototype40["internalBinaryWrite"] = function internalBinaryWrite(minCount, tag,
   }
   return tag;
 };
-const items38 = [
+const items39 = [
   {
     no: 1,
     name: "min_count",
@@ -5393,16 +5511,16 @@ const items38 = [
     }
   }
 ];
-const guildIdsType = new GuildIds$Type("discord_protos.discord_experimentation.v1.GuildMemberCountRange", items38, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_STICKY" }, tmp5, tmp4, GuildMemberCountRange$Type, "create", "internalBinaryRead", "internalBinaryWrite", GuildIds$Type, undefined, tmp, arg1, dependencyMap, obj, obj, obj, obj1, new.target, defineProperty, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items8, items81, items82, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, items15, items151, items152, items153, sDKVersionSpecifierType, items20, items201, items202, items203, items204, clientRequiredChangesType, clientRequiredChangesType1, items27, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, items38, items28, new.target, exports);
+const guildIdsType = new GuildIds$Type("discord_protos.discord_experimentation.v1.GuildMemberCountRange", items39, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_STICKY" }, tmp5, tmp4, GuildMemberCountRange$Type, "create", "internalBinaryRead", "internalBinaryWrite", GuildIds$Type, undefined, tmp, arg1, dependencyMap, obj, obj, obj, obj1, new.target, defineProperty, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items8, items81, items82, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items16, items161, items162, items163, sDKVersionSpecifierType, items21, items211, items212, items213, items214, clientRequiredChangesType, clientRequiredChangesType1, items28, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, items39, items29, new.target, exports);
 // ThrowIfThisInitialized (0x7c)
-class GuildIdRange$Type extends MessageType41 {
+class GuildIdRange$Type extends MessageType42 {
   constructor() {
     obj = {
       no: 1,
       name: "min_id",
       kind: "message",
       T() {
-            return closure_33;
+            return closure_34;
           }
     };
     items = [, ];
@@ -5412,7 +5530,7 @@ class GuildIdRange$Type extends MessageType41 {
       name: "max_id",
       kind: "message",
       T() {
-            return closure_33;
+            return closure_34;
           }
     };
     tmp = new tmp("discord_protos.discord_experimentation.v1.GuildIdRange", items, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, new.target);
@@ -5420,8 +5538,8 @@ class GuildIdRange$Type extends MessageType41 {
     return tmp;
   }
 }
-const prototype41 = GuildIdRange$Type.prototype;
-prototype41["create"] = function create(arr) {
+const prototype42 = GuildIdRange$Type.prototype;
+prototype42["create"] = function create(arr) {
   let obj = {};
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -5432,7 +5550,7 @@ prototype41["create"] = function create(arr) {
   }
   return obj;
 };
-prototype41["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype42["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -5447,17 +5565,17 @@ prototype41["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
       let tmp4 = callback(pos.tag(), 2);
       [tmp5, tmp6] = tmp4;
       if (1 === tmp5) {
-        let tmp26 = items27;
-        let tmp27 = items27;
+        let tmp26 = items28;
+        let tmp27 = items28;
         let tmp28 = pos;
         let tmp29 = readUnknownField;
-        obj.minId = items27.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.minId);
+        obj.minId = items28.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.minId);
       } else if (2 === tmp5) {
-        let tmp22 = items27;
-        let tmp23 = items27;
+        let tmp22 = items28;
+        let tmp23 = items28;
         let tmp24 = pos;
         let tmp25 = readUnknownField;
-        obj.maxId = items27.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.maxId);
+        obj.maxId = items28.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.maxId);
       } else {
         let onRead = readUnknownField.readUnknownField;
         if ("throw" === onRead) {
@@ -5494,16 +5612,16 @@ prototype41["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype41["internalBinaryWrite"] = function internalBinaryWrite(minId, tag, writeUnknownFields) {
+prototype42["internalBinaryWrite"] = function internalBinaryWrite(minId, tag, writeUnknownFields) {
   if (minId.minId) {
     const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
-    const joined = items27.internalBinaryWrite(minId.minId, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult = items27.internalBinaryWrite(minId.minId, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined = items28.internalBinaryWrite(minId.minId, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult = items28.internalBinaryWrite(minId.minId, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (minId.maxId) {
     const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
-    const joined1 = items27.internalBinaryWrite(minId.maxId, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult1 = items27.internalBinaryWrite(minId.maxId, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+    const joined1 = items28.internalBinaryWrite(minId.maxId, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult1 = items28.internalBinaryWrite(minId.maxId, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
@@ -5515,13 +5633,13 @@ prototype41["internalBinaryWrite"] = function internalBinaryWrite(minId, tag, wr
   }
   return tag;
 };
-const items39 = [
+const items40 = [
   {
     no: 1,
     name: "min_id",
     kind: "message",
     T() {
-      return closure_33;
+      return closure_34;
     }
   },
 
@@ -5531,13 +5649,13 @@ const obj22 = {
   name: "max_id",
   kind: "message",
   T() {
-    return closure_33;
+    return closure_34;
   }
 };
-items39[1] = obj22;
-const guildMemberCountRangeType = new GuildMemberCountRange$Type("discord_protos.discord_experimentation.v1.GuildIdRange", items39, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, tmp5, GuildIdRange$Type, GuildMemberCountRange$Type, "create", "internalBinaryRead", "internalBinaryWrite", items39, undefined, tmp, arg1, dependencyMap, obj, obj, obj, obj1, new.target, defineProperty, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items8, items81, items82, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, items15, items151, items152, items153, sDKVersionSpecifierType, items20, items201, items202, items203, items204, clientRequiredChangesType, clientRequiredChangesType1, items27, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, guildIdsType, items28, new.target, exports, obj22);
+items40[1] = obj22;
+const guildMemberCountRangeType = new GuildMemberCountRange$Type("discord_protos.discord_experimentation.v1.GuildIdRange", items40, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, tmp5, GuildIdRange$Type, GuildMemberCountRange$Type, "create", "internalBinaryRead", "internalBinaryWrite", items40, undefined, tmp, arg1, dependencyMap, obj, obj, obj, obj1, new.target, defineProperty, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items8, items81, items82, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items16, items161, items162, items163, sDKVersionSpecifierType, items21, items211, items212, items213, items214, clientRequiredChangesType, clientRequiredChangesType1, items28, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, guildIdsType, items29, new.target, exports, obj22);
 // ThrowIfThisInitialized (0x7c)
-class GuildHasFeature$Type extends MessageType42 {
+class GuildHasFeature$Type extends MessageType43 {
   constructor() {
     items = [];
     items[0] = { no: 1, name: "features", kind: "scalar", repeat: 2, T: 9 };
@@ -5546,8 +5664,8 @@ class GuildHasFeature$Type extends MessageType42 {
     return tmp;
   }
 }
-const prototype42 = GuildHasFeature$Type.prototype;
-prototype42["create"] = function create(arr) {
+const prototype43 = GuildHasFeature$Type.prototype;
+prototype43["create"] = function create(arr) {
   let obj = { features: [] };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -5558,7 +5676,7 @@ prototype42["create"] = function create(arr) {
   }
   return obj;
 };
-prototype42["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype43["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -5611,7 +5729,7 @@ prototype42["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype42["internalBinaryWrite"] = function internalBinaryWrite(features, tag, writeUnknownFields) {
+prototype43["internalBinaryWrite"] = function internalBinaryWrite(features, tag, writeUnknownFields) {
   let length;
   let num = 0;
   if (0 < features.features.length) {
@@ -5634,12 +5752,12 @@ prototype42["internalBinaryWrite"] = function internalBinaryWrite(features, tag,
   }
   return tag;
 };
-const items40 = [];
+const items41 = [];
 const obj23 = { no: 1, name: "features", kind: "scalar", repeat: 2, T: 9 };
-items40[0] = obj23;
-const guildIdRangeType = new GuildIdRange$Type("discord_protos.discord_experimentation.v1.GuildHasFeature", items40, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_STICKY" }, GuildHasFeature$Type, GuildIdRange$Type, items40, "create", "internalBinaryRead", "internalBinaryWrite", items39, undefined, tmp, arg1, dependencyMap, obj, obj, obj, obj1, new.target, defineProperty, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items8, items81, items82, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, items15, items151, items152, items153, sDKVersionSpecifierType, items20, items201, items202, items203, items204, clientRequiredChangesType, clientRequiredChangesType1, items27, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, guildIdsType, guildMemberCountRangeType, new.target, exports, obj23, undefined);
+items41[0] = obj23;
+const guildIdRangeType = new GuildIdRange$Type("discord_protos.discord_experimentation.v1.GuildHasFeature", items41, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_STICKY" }, GuildHasFeature$Type, GuildIdRange$Type, items41, "create", "internalBinaryRead", "internalBinaryWrite", items40, undefined, tmp, arg1, dependencyMap, obj, obj, obj, obj1, new.target, defineProperty, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items8, items81, items82, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items16, items161, items162, items163, sDKVersionSpecifierType, items21, items211, items212, items213, items214, clientRequiredChangesType, clientRequiredChangesType1, items28, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, guildIdsType, guildMemberCountRangeType, new.target, exports, obj23, undefined);
 // ThrowIfThisInitialized (0x7c)
-class InstallationIds$Type extends MessageType43 {
+class InstallationIds$Type extends MessageType44 {
   constructor() {
     items = [];
     items[0] = { no: 1, name: "installation_ids", kind: "scalar", repeat: 1, T: 6 };
@@ -5648,8 +5766,8 @@ class InstallationIds$Type extends MessageType43 {
     return tmp;
   }
 }
-const prototype43 = InstallationIds$Type.prototype;
-prototype43["create"] = function create(arr) {
+const prototype44 = InstallationIds$Type.prototype;
+prototype44["create"] = function create(arr) {
   let obj = { installationIds: [] };
   const _Object = Object;
   obj = { enumerable: false, value: this };
@@ -5660,7 +5778,7 @@ prototype43["create"] = function create(arr) {
   }
   return obj;
 };
-prototype43["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
+prototype44["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnknownField) {
   let tmp5;
   let tmp6;
   const self = this;
@@ -5728,7 +5846,7 @@ prototype43["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readU
   }
   return obj;
 };
-prototype43["internalBinaryWrite"] = function internalBinaryWrite(installationIds, tag, writeUnknownFields) {
+prototype44["internalBinaryWrite"] = function internalBinaryWrite(installationIds, tag, writeUnknownFields) {
   let length;
   if (installationIds.installationIds.length) {
     tag.tag(1, require(1307).WireType.LengthDelimited).fork();
@@ -5753,10 +5871,10 @@ prototype43["internalBinaryWrite"] = function internalBinaryWrite(installationId
   }
   return tag;
 };
-const items41 = [{ no: 1, name: "installation_ids", kind: "scalar", repeat: 1, T: 6 }];
-const tmp50 = new "create"("discord_protos.discord_experimentation.v1.InstallationIds", items41, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, GuildHasFeature$Type, GuildIdRange$Type, InstallationIds$Type, "create", items41, "internalBinaryWrite", new.target, undefined, tmp, arg1, dependencyMap, obj, obj, obj, obj1, new.target, defineProperty, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items8, items81, items82, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, items15, items151, items152, items153, sDKVersionSpecifierType, items20, items201, items202, items203, items204, clientRequiredChangesType, clientRequiredChangesType1, items27, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, guildIdsType, guildMemberCountRangeType, guildIdRangeType, exports);
+const items42 = [{ no: 1, name: "installation_ids", kind: "scalar", repeat: 1, T: 6 }];
+const tmp51 = new "create"("discord_protos.discord_experimentation.v1.InstallationIds", items42, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, GuildHasFeature$Type, GuildIdRange$Type, InstallationIds$Type, "create", items42, "internalBinaryWrite", new.target, undefined, tmp, arg1, dependencyMap, obj, obj, obj, obj1, new.target, defineProperty, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items8, items81, items82, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items16, items161, items162, items163, sDKVersionSpecifierType, items21, items211, items212, items213, items214, clientRequiredChangesType, clientRequiredChangesType1, items28, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, guildIdsType, guildMemberCountRangeType, guildIdRangeType, exports);
 // ThrowIfThisInitialized (0x7c)
-let closure_46 = tmp50;
+let closure_47 = tmp51;
 let result = require("defineProperty").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/discord_experimentation/v1/rules.tsx");
 
 export const Rule_Type = obj;
@@ -5777,22 +5895,23 @@ export const ClientLocation_Place = items8;
 export const ClientLocation_ISORegion = items81;
 export const ClientLocation_Location = items82;
 export const UserLocation = clientLocation_LocationType;
-export const ClientIP = clientLocation_LocationType1;
-export const UserIP = clientLocation_LocationType2;
-export const ClientOperatingSystem = clientLocation_LocationType3;
-export const SDKVersion = items15;
-export const SDKVersionRange = items151;
-export const SDKVersionRangeBound = items152;
-export const SDKVersionSpecifier = items153;
+export const UserStoreCountry = clientLocation_LocationType1;
+export const ClientIP = clientLocation_LocationType2;
+export const UserIP = clientLocation_LocationType3;
+export const ClientOperatingSystem = clientLocation_LocationType4;
+export const SDKVersion = items16;
+export const SDKVersionRange = items161;
+export const SDKVersionRangeBound = items162;
+export const SDKVersionSpecifier = items163;
 export const ClientPlatform = sDKVersionSpecifierType;
-export const PlatformVersion = items20;
-export const PlatformVersionRange = items201;
-export const PlatformVersionRangeBound = items202;
-export const PlatformVersionSpecifier = items203;
-export const ClientRequiredChanges = items204;
+export const PlatformVersion = items21;
+export const PlatformVersionRange = items211;
+export const PlatformVersionRangeBound = items212;
+export const PlatformVersionSpecifier = items213;
+export const ClientRequiredChanges = items214;
 export const UserIsBot = clientRequiredChangesType;
 export const UserAgeRange = clientRequiredChangesType1;
-export const Fixed64Value = items27;
+export const Fixed64Value = items28;
 export const UserIDRange = fixed64ValueType;
 export const UserHasFlag = fixed64ValueType1;
 export const UnitIdInRangeByHash = fixed64ValueType2;
@@ -5805,4 +5924,4 @@ export const GuildIds = fixed64ValueType8;
 export const GuildMemberCountRange = guildIdsType;
 export const GuildIdRange = guildMemberCountRangeType;
 export const GuildHasFeature = guildIdRangeType;
-export const InstallationIds = tmp50;
+export const InstallationIds = tmp51;

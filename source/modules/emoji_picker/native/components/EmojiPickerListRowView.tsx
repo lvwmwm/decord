@@ -1,9 +1,9 @@
-// Module ID: 9383
-// Function ID: 9384
+// Module ID: 9398
+// Function ID: 9399
 // Name: View
-// Dependencies: [17, 500, 9384, 2]
+// Dependencies: [17, 500, 9399, 2]
 
-// Module 9383 (View)
+// Module 9398 (View)
 import { View } from "get ActivityIndicator";
 import set from "set";
 import set from "__INTERNAL_VIEW_CONFIG";

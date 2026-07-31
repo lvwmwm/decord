@@ -1,10 +1,10 @@
-// Module ID: 5719
-// Function ID: 5720
+// Module ID: 5724
+// Function ID: 5725
 // Name: receiveNetworkInfoformation
-// Dependencies: [5, 17, 4865, 5720, 1862, 676, 3, 1456, 1455, 5730, 687, 595, 709, 4047, 5721, 5731, 9, 2]
+// Dependencies: [5, 17, 4869, 5725, 1862, 676, 3, 1456, 1455, 5735, 687, 595, 709, 4051, 5726, 5736, 9, 2]
 // Exports: getSignalStrength, isSlowNetwork
 
-// Module 5719 (receiveNetworkInfoformation)
+// Module 5724 (receiveNetworkInfoformation)
 import ME from "ME";
 import get_ActivityIndicator from "set";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -352,7 +352,7 @@ prototype["getQueuedEvent"] = function getQueuedEvent() {
             return obj2;
           } else {
             callback = arg1;
-            let obj4 = callback(5721);
+            let obj4 = callback(5726);
             c6 = 2;
             guildCount = 1;
             const obj3 = { value: null, done: false };
@@ -372,7 +372,7 @@ prototype["getQueuedEvent"] = function getQueuedEvent() {
           const obj5 = { type: null, properties: null };
           obj5[0] = constants.APP_NETWORK_USAGE;
           const obj6 = {};
-          const merged = Object.assign(callback(5731).getDeviceMetadata());
+          const merged = Object.assign(callback(5736).getDeviceMetadata());
           const _Date = Date;
           obj6.client_track_timestamp = Date.now();
           let uuid;
@@ -380,7 +380,7 @@ prototype["getQueuedEvent"] = function getQueuedEvent() {
             uuid = lib.uuid;
           }
           obj6.client_heartbeat_session_id = uuid;
-          obj = callback(5731);
+          obj = callback(5736);
           obj6.load_id = obj.currentLoadId();
           obj6.num_guilds = guildCount.getGuildCount();
           obj6.was_authenticated = lib(9).wasAuthenticated;
@@ -440,7 +440,7 @@ prototype["getQueuedEvent"] = function getQueuedEvent() {
           obj6.download_bytes_received = closure_10.downloadBytesReceived;
           obj6.download_num_requests = closure_10.downloadNumRequests;
           obj6.media_player_bytes_received = closure_10.mediaPlayerBytesReceived;
-          obj1 = callback(5730);
+          obj1 = callback(5735);
           obj6.rtc_bytes = obj1.getRTCTotalBytes();
           obj6.num_message_sends = closure_15;
           let tmp56;

@@ -1,10 +1,10 @@
-// Module ID: 9901
-// Function ID: 9902
+// Module ID: 9918
+// Function ID: 9919
 // Name: SearchableDestinationListHeader
-// Dependencies: [19, 17, 21, 4189, 712, 5150, 9114, 5143, 500, 6558, 2]
+// Dependencies: [19, 17, 21, 4193, 712, 5154, 9127, 5147, 500, 6564, 2]
 // Exports: default
 
-// Module 9901 (SearchableDestinationListHeader)
+// Module 9918 (SearchableDestinationListHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -39,9 +39,9 @@ export default function SearchableDestinationListHeader(arg0) {
     headerRight: null,
     headerStatusBarHeight: null
   };
-  obj[4] = require(5143) /* HeaderBackImage */.getHeaderCloseButton(onClose);
+  obj[4] = require(5147) /* HeaderBackImage */.getHeaderCloseButton(onClose);
   obj[5] = headerRight;
-  const obj3 = require(5143) /* HeaderBackImage */;
+  const obj3 = require(5147) /* HeaderBackImage */;
   const tmp3 = View;
   const tmp4 = require;
   let num;
@@ -49,10 +49,10 @@ export default function SearchableDestinationListHeader(arg0) {
     if (!tmp4Result.getIsWindowLarge()) {
       num = 0;
     }
-    tmp4Result = tmp4(6558);
+    tmp4Result = tmp4(6564);
   }
   obj[6] = num;
-  obj[1] = jsx(require(5150) /* Background */.Header, {
+  obj[1] = jsx(require(5154) /* Background */.Header, {
     headerStyle: tmp.header,
     title,
     headerTitle(children) {

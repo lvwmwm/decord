@@ -1,10 +1,10 @@
-// Module ID: 15127
-// Function ID: 15128
+// Module ID: 15153
+// Function ID: 15154
 // Name: useGuildThemeNuxTrigger
-// Dependencies: [19, 3882, 589, 15128, 15128, 1959, 4157, 15133, 2]
+// Dependencies: [19, 3886, 589, 15154, 15154, 1959, 4161, 15159, 2]
 // Exports: default
 
-// Module 15127 (useGuildThemeNuxTrigger)
+// Module 15153 (useGuildThemeNuxTrigger)
 import noop from "noop";
 import setContent from "setContent";
 
@@ -22,5 +22,5 @@ export default function useGuildThemeNuxTrigger(arg0) {
     callback2(paths[6]).openLazy(tmp, callback(paths[3]).GUILD_THEME_NUX_ACTION_SHEET_KEY, arg0, "stack");
     return tmp;
   }, []);
-  importDefault(15133)(arg0, { isNuxOpen: stateFromStores, openNux: callback });
+  importDefault(15159)(arg0, { isNuxOpen: stateFromStores, openNux: callback });
 };

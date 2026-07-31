@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset";
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 45.5, height: 8.5, scales: [2, 3], hash: "8d16389f341b45c184ca21d1deb5fd2e", name: "img_logo_discord", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/colored", width: 24, height: 24, scales: [2, 3], hash: "81c4c8246b195a90d6f5bb90212bbc6a", name: "tier_3_32px", type: "png" });

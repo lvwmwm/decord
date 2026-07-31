@@ -1,9 +1,9 @@
-// Module ID: 5780
-// Function ID: 5781
+// Module ID: 5785
+// Function ID: 5786
 // Name: handleConnectionOpen
 // Dependencies: [1372, 11, 589, 709, 2]
 
-// Module 5780 (handleConnectionOpen)
+// Module 5785 (handleConnectionOpen)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { PersistedStore } from "initialize";
 

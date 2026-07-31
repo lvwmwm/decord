@@ -1,10 +1,10 @@
-// Module ID: 10627
-// Function ID: 10628
+// Module ID: 10645
+// Function ID: 10646
 // Name: recurseReplaceContentTree
-// Dependencies: [5, 4226, 4212, 1376, 1882, 1372, 1862, 4236, 4407, 4276, 1874, 4205, 4092, 676, 1467, 4177, 687, 12, 5713, 4179, 4418, 10628, 4379, 1469, 8171, 530, 10622, 5689, 10629, 2]
+// Dependencies: [5, 4230, 4216, 1376, 1882, 1372, 1862, 4240, 4411, 4280, 1874, 4209, 4096, 676, 1467, 4181, 687, 12, 5718, 4183, 4422, 10646, 4383, 1469, 8178, 530, 10640, 5693, 10647, 2]
 // Exports: containsSameValues, getDeprecatedVoiceSettingsWithShortcut, getRemoteIconURL, getVoiceConnectionState, getVoiceSettingsWithShortcut, hasMessageReadPermission, isMatchingOrigin, processSocketThrottlers, transformApplicationRelationship, transformBaseRelationship, transformChannel, transformVoiceState, validateActivityInvite, validateApplication, validateOriginAndUpdateSocket, validatePostMessageTransport, validateSocketApplication
 
-// Module 10627 (recurseReplaceContentTree)
+// Module 10645 (recurseReplaceContentTree)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import addApplication from "addApplication";
 import createExecutable from "createExecutable";
@@ -66,7 +66,7 @@ function validateOrigin(arg0) {
   return items.indexOf(arg0) > -1;
 }
 function transformInternalTextMessage(message) {
-  let obj = importDefault(4179);
+  let obj = importDefault(4183);
   obj = { channelId: message.channel_id };
   const mapped = obj.parseToAST(message.content, true, obj).map(recurseReplaceContentTree);
   let tmp4;
@@ -76,8 +76,8 @@ function transformInternalTextMessage(message) {
   }
   let userAuthor;
   if (null != message.author) {
-    userAuthor = require(4418) /* useNullableMessageAuthor */.getUserAuthor(tmp4, channel);
-    const obj3 = require(4418) /* useNullableMessageAuthor */;
+    userAuthor = require(4422) /* useNullableMessageAuthor */.getUserAuthor(tmp4, channel);
+    const obj3 = require(4422) /* useNullableMessageAuthor */;
   }
   obj = { id: message.id, blocked: message.blocked, bot: message.bot, content: message.content, content_parsed: null, nick: null, author_color: null, edited_timestamp: null, timestamp: null, tts: null, mentions: null, mention_everyone: null, mention_roles: null, embeds: null, attachments: null, author: null, pinned: null, type: null };
   let tmp10;
@@ -102,7 +102,7 @@ function transformInternalTextMessage(message) {
   ({ embeds: obj4[13], attachments: obj4[14] } = message);
   let tmp13;
   if (null != tmp4) {
-    tmp13 = importDefault(10628)(tmp4);
+    tmp13 = importDefault(10646)(tmp4);
   }
   obj[15] = tmp13;
   ({ pinned: obj4[16], type: obj4[17] } = message);
@@ -162,15 +162,15 @@ function _validateSocketApplication() {
               let flags;
               let parentId;
               callback2 = outer1_4.getApplication(callback);
-              if (typeof dependencyMap !== "tee") {
+              if (typeof dependencyMap !== "__FORMATJS_LISTFORMAT_DATA__") {
                 if (tmp67.transport === outer1_16.POST_MESSAGE) {
-                  const tmp21 = callback(5689)(tmp68);
+                  const tmp21 = callback(5693)(tmp68);
                   if (null != tmp21) {
                     const items = [tmp21];
                   }
                   const obj1 = { closeCode: null };
                   obj1[0] = outer1_21.INVALID_ORIGIN;
-                  const tmp52 = new callback(10622)(obj1, "Invalid Origin");
+                  const tmp52 = new callback(10640)(obj1, "Invalid Origin");
                   throw tmp52;
                 } else {
                   name = 1;
@@ -224,7 +224,7 @@ function _validateSocketApplication() {
               if (!callback3(dependencyMap, rpc_origins.rpc_origins)) {
                 const obj6 = { closeCode: null };
                 obj6[0] = constants.INVALID_ORIGIN;
-                const tmp16 = new callback(10622)(obj6, "Invalid Origin");
+                const tmp16 = new callback(10640)(obj6, "Invalid Origin");
                 throw tmp16;
               }
             }
@@ -297,7 +297,7 @@ function _processSocketThrottlers() {
                 if (tmp36) {
                   num5 = 2;
                 }
-                const tmp24 = new callback(10629)(num5, outer1_25);
+                const tmp24 = new callback(10647)(num5, outer1_25);
                 tmp38[tmp35] = tmp24;
                 obj2 = tmp24;
               }
@@ -312,7 +312,7 @@ function _processSocketThrottlers() {
             c6 = 0;
             obj2 = { closeCode: null };
             obj2[0] = constants.CLOSE_ABNORMAL;
-            const tmp16 = new callback(10622)(obj2, "Socket closed during throttle");
+            const tmp16 = new callback(10640)(obj2, "Socket closed during throttle");
             throw tmp16;
           } else if (arg0 === 1) {
             c7 = 3;
@@ -400,7 +400,7 @@ function transformVoiceState(closure_2, id, userId) {
     throw error;
   } else {
     let obj = { nick: null, mute: null, volume: null, pan: null, voice_state: null, user: null };
-    obj[0] = importDefault(4379).getName(closure_2, id, user);
+    obj[0] = importDefault(4383).getName(closure_2, id, user);
     obj[1] = store.isLocalMute(user.id);
     obj[2] = store.getLocalVolume(user.id);
     obj[3] = store.getLocalPan(user.id);
@@ -411,7 +411,7 @@ function transformVoiceState(closure_2, id, userId) {
     obj[3] = selfDeaf;
     obj[4] = suppress;
     obj[4] = obj;
-    obj[5] = importDefault(10628)(user);
+    obj[5] = importDefault(10646)(user);
     return obj;
   }
 }
@@ -506,7 +506,7 @@ export const transformChannel = function transformChannel(channel, arg1) {
 export { transformInternalTextMessage };
 export { transformVoiceState };
 export const transformBaseRelationship = function transformBaseRelationship(relationshipType, user) {
-  let obj = { type: relationshipType, user: importDefault(10628)(user), presence: null };
+  let obj = { type: relationshipType, user: importDefault(10646)(user), presence: null };
   obj = { status: store2.getStatus(user.id, null), activity: null };
   obj[2] = obj;
   return obj;
@@ -572,7 +572,7 @@ export const hasMessageReadPermission = function hasMessageReadPermission(channe
   }
   let tmp2 = application_id === id;
   if (!tmp2) {
-    tmp2 = scopes.indexOf(require(8171) /* set */.OAuth2Scopes.MESSAGES_READ) > -1;
+    tmp2 = scopes.indexOf(require(8178) /* set */.OAuth2Scopes.MESSAGES_READ) > -1;
   }
   return tmp2;
 };
@@ -656,7 +656,7 @@ export const validatePostMessageTransport = function validatePostMessageTranspor
     const obj = { errorCode: null };
     obj[0] = constants4.INVALID_COMMAND;
     const _HermesInternal = HermesInternal;
-    let tmp3 = importDefault(10622);
+    let tmp3 = importDefault(10640);
     tmp3 = new tmp3(obj, "command not available from \"" + transport + " transport");
     throw tmp3;
   }
@@ -665,7 +665,7 @@ export const validateApplication = function validateApplication(application) {
   if (null == application.id) {
     const obj = { errorCode: null };
     obj[0] = constants4.INVALID_COMMAND;
-    const tmp7 = new importDefault(10622)(obj, "Invalid application");
+    const tmp7 = new importDefault(10640)(obj, "Invalid application");
     throw tmp7;
   } else {
     return application.id;

@@ -1,7 +1,7 @@
 // Module ID: 8589
 // Function ID: 8590
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 8544, 8567]
+// Dependencies: [41, 42, 93, 95, 98, 19, 8557]
 
 // Module 8589 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -9,7 +9,7 @@ import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
 
-const FeMorphology = arg1;
+const FeDistantLight = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeMorphology {
+class FeDistantLight {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeMorphology);
+    tmp = _isNativeReflectConstruct(this, FeDistantLight);
     tmp2 = __esModule;
-    obj = __esModule(FeMorphology);
+    obj = __esModule(FeDistantLight);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -49,19 +49,18 @@ class FeMorphology {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeMorphology, require("_isNativeReflectConstruct"));
-let obj = {
-  key: "render",
-  value: function render() {
-    const result = FeMorphology(8544).warnUnimplementedFilter();
-    return null;
+require("_inherits")(FeDistantLight, require("noop").Component);
+const items = [
+  {
+    key: "render",
+    value: function render() {
+      const result = FeDistantLight(8557).warnUnimplementedFilter();
+      return null;
+    }
   }
-};
-const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeMorphology, items);
-importDefaultResultResult.displayName = "FeMorphology";
-obj = {};
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-importDefaultResultResult.defaultProps = obj;
+];
+const importDefaultResultResult = importDefaultResult(FeDistantLight, items);
+importDefaultResultResult.displayName = "FeDistantLight";
+importDefaultResultResult.defaultProps = {};
 
 export default importDefaultResultResult;

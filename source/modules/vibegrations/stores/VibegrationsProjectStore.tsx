@@ -1,9 +1,9 @@
-// Module ID: 5683
-// Function ID: 5684
+// Module ID: 5687
+// Function ID: 5688
 // Name: handleProjectUpsert
 // Dependencies: [32, 589, 709, 2]
 
-// Module 5683 (handleProjectUpsert)
+// Module 5687 (handleProjectUpsert)
 import _slicedToArray from "_slicedToArray";
 import { Store } from "initialize";
 
@@ -22,8 +22,8 @@ const prototype = VibegrationsProjectStore.prototype;
 prototype["getAllProjects"] = function getAllProjects() {
   return Array.from(map.values());
 };
-prototype["getProject"] = function getProject(preview_guild_id) {
-  let value = map.get(preview_guild_id);
+prototype["getProject"] = function getProject(_slicedToArray) {
+  let value = map.get(_slicedToArray);
   if (value == null) {
     value = null;
   }

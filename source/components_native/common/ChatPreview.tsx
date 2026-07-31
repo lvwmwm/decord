@@ -1,10 +1,10 @@
-// Module ID: 9302
-// Function ID: 9303
+// Module ID: 9317
+// Function ID: 9318
 // Name: componentDidMount
-// Dependencies: [19, 17, 4181, 3882, 1372, 1874, 7711, 21, 4189, 712, 3901, 9303, 7710, 9305, 9499, 3859, 1236, 9460, 9461, 12, 4197, 9500, 9542, 9545, 4417, 1844, 9546, 9984, 9308, 6073, 9985, 9986, 10028, 10029, 10031, 10042, 500, 5177, 4717, 4185, 3862, 589, 1474, 7724, 4403, 2]
+// Dependencies: [19, 17, 4185, 3886, 1372, 1874, 7719, 21, 4193, 712, 3905, 9318, 7718, 9320, 9514, 3863, 1236, 9475, 9476, 12, 4201, 9515, 9557, 9560, 4421, 1844, 9561, 10001, 9323, 6079, 10002, 10003, 10045, 10046, 10048, 10059, 500, 5181, 4721, 4189, 3866, 589, 1474, 7732, 4407, 2]
 // Exports: ChatPreview
 
-// Module 9302 (componentDidMount)
+// Module 9317 (componentDidMount)
 import importAllResult from "apply";
 import get_ActivityIndicator from "computeScrollData";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -98,7 +98,7 @@ class ChatPreviewBase extends PureComponent {
           let arr = items;
           const first = items[0];
           if (null != first) {
-            if (messages(9499)(c0, first[first.length - 1], props)) {
+            if (messages(9514)(c0, first[first.length - 1], props)) {
               items = [props];
               arr = arr.unshift(items);
             } else {
@@ -122,7 +122,7 @@ class ChatPreviewBase extends PureComponent {
             isSameDayResult = null == timestamp;
           }
           if (!isSameDayResult) {
-            let obj = _undefined(3859);
+            let obj = _undefined(3863);
             isSameDayResult = obj.isSameDay(tmp.timestamp, timestamp);
           }
           let flag = false;
@@ -202,9 +202,9 @@ class ChatPreviewBase extends PureComponent {
             obj4[0] = roleStyle;
             obj4[1] = outer1_12.DAY;
             obj4[2] = dependencyMap;
-            obj4[3] = _undefined(3859).dateFormat(tmp.timestamp, "LL");
+            obj4[3] = _undefined(3863).dateFormat(tmp.timestamp, "LL");
             arr.push(obj4);
-            const obj8 = _undefined(3859);
+            const obj8 = _undefined(3863);
           }
         });
         for (const item10042 of items1) {
@@ -221,7 +221,7 @@ class ChatPreviewBase extends PureComponent {
         const jumpTargetId = tmp3.jumpTargetId;
         let tmp23;
         if (!tmp7) {
-          obj = { rows: null, scrollToMessageId: null, jumpTargetId: null, jumpType: "PX_16", shouldInitialScroll: "Array", animated: 0.833, scrollPosition: 0.839, focusTargetId: 0.732 };
+          obj = { rows: null, scrollToMessageId: null, jumpTargetId: null, jumpType: "PX_16", shouldInitialScroll: "Array", animated: "2026-06-contextual-opt-in-nudge-holdout", scrollPosition: "user", focusTargetId: null };
           obj[0] = tmp22;
           obj[1] = jumpTargetId;
           obj[2] = jumpTargetId;
@@ -276,7 +276,7 @@ class ChatPreviewBase extends PureComponent {
         }
       }
       let obj = applyArgumentsResult(outer1_3[21]);
-      obj = { allowWithinModal: true, chatInputRef: "a", handleTransitionToThread: "Array", message: 0, messageChannel: "asc", selectedChannelId: "asc", tapLinkData: "isInRestrictedHours" };
+      obj = { allowWithinModal: true, chatInputRef: "a", handleTransitionToThread: "Array", message: 0, messageChannel: 4, selectedChannelId: "staff", tapLinkData: "message" };
       obj[2] = function handleTransitionToThread(arg0, arg1, arg2) {
         const jumpToChatProps = props.props.jumpToChatProps;
         const onBeforeJumpToMessage = jumpToChatProps.onBeforeJumpToMessage;
@@ -483,7 +483,7 @@ prototype["render"] = function render() {
     if (null != guild_id) {
       let obj = { guildId: null, channelId: null };
       ({ guild_id: obj8[0], id: obj8[1] } = channel);
-      let tmp14 = callback(importDefault(10029), obj);
+      let tmp14 = callback(importDefault(10046), obj);
     }
     obj = { style: null, children: null };
     obj[0] = tmp.containerInner;
@@ -499,7 +499,7 @@ prototype["render"] = function render() {
     if (null != guild_id1) {
       let obj1 = { guildId: null, channelId: null };
       ({ guild_id: obj7[0], id: obj7[1] } = channel);
-      tmp14 = callback(importDefault(10031), obj1);
+      tmp14 = callback(importDefault(10048), obj1);
     }
   }
   obj = { ref: self.chatRef, style: tmp.chat, inverted: true, onTapLink: self.handleTapLink, onTapChannel: self.handleTapChannel, onLongPressChannel: self.handleLongPressChannel, onLongPressLink: self.handleLongPressLink, onLongPressMessage: self.handleLongPressMessage, onLongPressReaction: self.handleLongPressReaction, onTapReaction: self.handleTapReaction, onTapImage: self.handleTapImage, onCompleteFirstLayout: null, onFirstLayout: null };
@@ -509,7 +509,7 @@ prototype["render"] = function render() {
     prop = self.handleCompleteFirstLayout;
   }
   obj[11] = prop;
-  const tmp8 = importDefault(10042);
+  const tmp8 = importDefault(10059);
   let prop1;
   if (!tmp9Result.isIOS()) {
     prop1 = self.handleCompleteFirstLayout;
@@ -518,9 +518,9 @@ prototype["render"] = function render() {
   tmp6Result = tmp6(tmp8, obj);
   const obj2 = { bottom: true, style: tmp.jumpToChatButtonContainer, children: null };
   const obj3 = { accessibilityRole: "button", style: tmp.jumpToChatButton, onPress: self.handleJumpToChat, children: null };
-  obj3[3] = callback(require(4185) /* Text */.Text, { style: tmp.jumpToChatText, variant: "text-md/medium", color: "interactive-text-default", children: self.props.jumpToChatProps.jumpToChatText });
-  obj2[2] = callback(require(4717) /* PressableBase */.PressableOpacity, obj3);
-  tmp6Result = tmp6(tmp9(5177).SafeAreaPaddingView, obj2);
+  obj3[3] = callback(require(4189) /* Text */.Text, { style: tmp.jumpToChatText, variant: "text-md/medium", color: "interactive-text-default", children: self.props.jumpToChatProps.jumpToChatText });
+  obj2[2] = callback(require(4721) /* PressableBase */.PressableOpacity, obj3);
+  tmp6Result = tmp6(tmp9(5181).SafeAreaPaddingView, obj2);
   tmp14 = tmp6Result;
 };
 ChatPreviewBase.contextType = require("ManaContext").ThemeContext;
@@ -530,11 +530,11 @@ let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImp
 
 export const ChatPreview = function ChatPreview(channelId) {
   channelId = channelId.channelId;
-  const InlineAttachmentMedia = channelId(3862).InlineAttachmentMedia;
+  const InlineAttachmentMedia = channelId(3866).InlineAttachmentMedia;
   const setting = InlineAttachmentMedia.useSetting();
-  const InlineEmbedMedia = channelId(3862).InlineEmbedMedia;
+  const InlineEmbedMedia = channelId(3866).InlineEmbedMedia;
   const setting1 = InlineEmbedMedia.useSetting();
-  const RenderEmbeds = channelId(3862).RenderEmbeds;
+  const RenderEmbeds = channelId(3866).RenderEmbeds;
   const setting2 = RenderEmbeds.useSetting();
   let obj = channelId(589);
   const items = [maybeApplyNoTextColorForLightCustomTheme];
@@ -542,10 +542,10 @@ export const ChatPreview = function ChatPreview(channelId) {
   const items1 = [ensureGuildLoaded];
   const stateFromStores1 = channelId(589).useStateFromStores(items1, () => outer1_8.getChannel(channelId));
   const obj2 = channelId(589);
-  const isChannelSpoilerGated = channelId(7724).useIsChannelSpoilerGated(stateFromStores1);
-  const obj3 = channelId(7724);
-  const isChannelContentGated = channelId(4403).useIsChannelContentGated(stateFromStores1);
-  const obj4 = channelId(4403);
+  const isChannelSpoilerGated = channelId(7732).useIsChannelSpoilerGated(stateFromStores1);
+  const obj3 = channelId(7732);
+  const isChannelContentGated = channelId(4407).useIsChannelContentGated(stateFromStores1);
+  const obj4 = channelId(4407);
   const items2 = [setContent];
   obj = {};
   const stateFromStores2 = channelId(589).useStateFromStores(items2, () => null != content.getContent());

@@ -21,7 +21,7 @@ export const requestSafeIdleCallback = function requestSafeIdleCallback(arg0, ti
       if (null != obj.cancelIdleCallback) {
         let c2 = false;
         timeout = null;
-        function runOnce(arg0) {
+        let closure_4 = obj.requestIdleCallback(function runOnce(arg0) {
           if (!c2) {
             c2 = true;
             if (null != c3) {
@@ -30,8 +30,7 @@ export const requestSafeIdleCallback = function requestSafeIdleCallback(arg0, ti
             }
             callback();
           }
-        }
-        let closure_5 = obj.requestIdleCallback(runOnce, timeout);
+        }, timeout);
         let num;
         if (timeout != null) {
           num = timeout.timeout;
@@ -41,10 +40,7 @@ export const requestSafeIdleCallback = function requestSafeIdleCallback(arg0, ti
         }
         timeout = obj.setTimeout(() => {
           if (!c2) {
-            closure_1.cancelIdleCallback(closure_5);
-          }
-          if (typeof runOnce !== "find") {
-            HermesBuiltin.throwTypeError();
+            closure_1.cancelIdleCallback(closure_4);
           }
           if (!c2) {
             c2 = true;
@@ -56,7 +52,7 @@ export const requestSafeIdleCallback = function requestSafeIdleCallback(arg0, ti
           }
         }, num);
         return () => {
-          closure_1.cancelIdleCallback(closure_5);
+          closure_1.cancelIdleCallback(closure_4);
           if (null != c3) {
             closure_1.clearTimeout(c3);
             c3 = null;
@@ -67,6 +63,6 @@ export const requestSafeIdleCallback = function requestSafeIdleCallback(arg0, ti
   }
   const timeout2 = obj.setTimeout(arg0, 0);
   return () => {
-    closure_1.clearTimeout(closure_6);
+    closure_1.clearTimeout(closure_5);
   };
 };

@@ -1,10 +1,10 @@
-// Module ID: 12954
-// Function ID: 12955
+// Module ID: 12979
+// Function ID: 12980
 // Name: _queryAudioEffects
 // Dependencies: [5, 676, 4, 501, 709, 698, 2]
 // Exports: default
 
-// Module 12954 (_queryAudioEffects)
+// Module 12979 (_queryAudioEffects)
 import expandEventProperties from "expandEventProperties";
 import { AnalyticEvents } from "ME";
 

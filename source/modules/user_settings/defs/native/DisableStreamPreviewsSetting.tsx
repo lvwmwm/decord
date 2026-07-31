@@ -1,9 +1,9 @@
-// Module ID: 14649
-// Function ID: 14650
+// Module ID: 14672
+// Function ID: 14673
 // Name: toggle
-// Dependencies: [7753, 3862, 10116, 1236, 2]
+// Dependencies: [7761, 3866, 10133, 1236, 2]
 
-// Module 14649 (toggle)
+// Module 14672 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -17,7 +17,7 @@ const toggle = createToggle.createToggle({
   },
   parent: require("MobileSetting").MobileSetting.VOICE,
   useValue() {
-    const DisableStreamPreviews = require(3862) /* explicitContentFromProto */.DisableStreamPreviews;
+    const DisableStreamPreviews = require(3866) /* explicitContentFromProto */.DisableStreamPreviews;
     let flag = DisableStreamPreviews.useSetting();
     if (flag == null) {
       flag = false;
@@ -37,7 +37,7 @@ const obj = {
   },
   parent: require("MobileSetting").MobileSetting.VOICE,
   useValue() {
-    const DisableStreamPreviews = require(3862) /* explicitContentFromProto */.DisableStreamPreviews;
+    const DisableStreamPreviews = require(3866) /* explicitContentFromProto */.DisableStreamPreviews;
     let flag = DisableStreamPreviews.useSetting();
     if (flag == null) {
       flag = false;

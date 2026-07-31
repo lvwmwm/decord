@@ -1,10 +1,10 @@
-// Module ID: 6139
-// Function ID: 6140
+// Module ID: 6145
+// Function ID: 6146
 // Name: updatePoggermodeSettings
-// Dependencies: [1218, 5961, 6140, 709, 6142, 2]
+// Dependencies: [1218, 5967, 6146, 709, 6148, 2]
 // Exports: clearMessageCombo, updateCombo, updateComboOnMessageSend, updatePoggermodeSettings
 
-// Module 6139 (updatePoggermodeSettings)
+// Module 6145 (updatePoggermodeSettings)
 import fetchFingerprint from "fetchFingerprint";
 import initialize from "initialize";
 import updateCombo from "updateCombo";
@@ -18,7 +18,7 @@ export const updatePoggermodeSettings = function updatePoggermodeSettings(settin
   obj = {};
   const merged = Object.assign(state.getState());
   const merged1 = Object.assign(settings);
-  importDefault(6142)(obj);
+  importDefault(6148)(obj);
 };
 export const updateCombo = function updateCombo(arg0) {
   let obj = importDefault(709);

@@ -1,10 +1,10 @@
-// Module ID: 6062
-// Function ID: 6063
+// Module ID: 6068
+// Function ID: 6069
 // Name: loadForumPostData
-// Dependencies: [5, 1372, 6063, 6051, 6067, 676, 12, 11, 589, 530, 709, 2]
+// Dependencies: [5, 1372, 6069, 6057, 6073, 676, 12, 11, 589, 530, 709, 2]
 // Exports: preloadForumThreads, useFirstForumPostMessage, useMostRecentForumMessage
 
-// Module 6062 (loadForumPostData)
+// Module 6068 (loadForumPostData)
 import ME from "ME";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { computeThreadIdsSnapshot } from "maybeRebuildState";
@@ -264,7 +264,7 @@ prototype["next"] = function next() {
 class RequestQueue {
   constructor() {
     tmp = DefaultDict;
-    if (typeof DefaultDict !== "find") {
+    if (typeof DefaultDict !== "fileFinishedImporting") {
       str = "Trying to call a non-function";
       throwTypeErrorResult = HermesBuiltin.throwTypeError();
     }

@@ -1,9 +1,9 @@
-// Module ID: 5827
-// Function ID: 5828
+// Module ID: 5832
+// Function ID: 5833
 // Name: fromServer
-// Dependencies: [5799, 5828, 5830, 5833, 5834, 5835, 5836, 5837, 5838, 5839, 5840, 5829, 2]
+// Dependencies: [5804, 5833, 5835, 5838, 5839, 5840, 5841, 5842, 5843, 5844, 5845, 5834, 2]
 
-// Module 5827 (fromServer)
+// Module 5832 (fromServer)
 import fromServer from "fromServer";
 import { CountdownTimerBlockRecord } from "fromServer";
 import { FeaturedBlockRecord } from "fromServer";
@@ -51,7 +51,7 @@ prototype = function CollectiblesShopHomeRecord(shop_blocks) {
   return obj;
 }.prototype;
 prototype["fromServer"] = function fromServer(shop_blocks) {
-  if (typeof prototype !== "find") {
+  if (typeof prototype !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);

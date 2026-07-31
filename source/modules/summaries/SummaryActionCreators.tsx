@@ -1,10 +1,10 @@
-// Module ID: 9544
-// Function ID: 9545
+// Module ID: 9559
+// Function ID: 9560
 // Name: fetchSummary
-// Dependencies: [5, 19, 4865, 1372, 9501, 676, 687, 709, 530, 4088, 12, 9503, 647, 2]
+// Dependencies: [5, 19, 4869, 1372, 9516, 676, 687, 709, 530, 4092, 12, 9518, 647, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries, useMaybeFetchChannelAffinitiesAndSummaries
 
-// Module 9544 (fetchSummary)
+// Module 9559 (fetchSummary)
 import ME from "ME";
 import noop from "noop";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -217,7 +217,7 @@ function _fetchSummaries() {
           } else {
             if (1 === dispatchResult1) {
               c6 = 0;
-              const aPIError = new callback(4088).APIError(_handleConnectionOpen);
+              const aPIError = new callback(4092).APIError(_handleConnectionOpen);
               dependencyMap = aPIError;
             } else if (arg0 === 1) {
               c8 = 3;
@@ -609,7 +609,7 @@ function _fetchSummariesBulk() {
             if (2 === tmp7) {
               summaries = 0;
               c7 = body;
-              aPIError = new substr(4088).APIError(c7);
+              aPIError = new substr(4092).APIError(c7);
             } else if (arg0 === 1) {
               constants = 3;
               throw arg1;
@@ -844,7 +844,7 @@ function _deleteSummary() {
           } else if (1 === tmp7) {
             c4 = 0;
             callback = ME;
-            const aPIError = new lib(4088).APIError(callback);
+            const aPIError = new lib(4092).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c6 = 3;

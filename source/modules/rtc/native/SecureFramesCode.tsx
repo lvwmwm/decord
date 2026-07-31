@@ -1,10 +1,10 @@
-// Module ID: 8902
-// Function ID: 8903
+// Module ID: 8915
+// Function ID: 8916
 // Name: SecureFramesCodeGrid
-// Dependencies: [19, 17, 505, 21, 4189, 712, 4185, 2]
+// Dependencies: [19, 17, 505, 21, 4193, 712, 4189, 2]
 // Exports: default
 
-// Module 8902 (SecureFramesCodeGrid)
+// Module 8915 (SecureFramesCodeGrid)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -76,7 +76,7 @@ export default function SecureFramesCode(chunks) {
   ({ title, trailing, columns } = chunks);
   const tmp = createCacheKey();
   let obj = { style: tmp.codeHeader, children: null };
-  const items = [callback(require(4185) /* Text */.Text, { color: "mobile-text-heading-primary", variant: "heading-md/semibold", children: title }), trailing];
+  const items = [callback(require(4189) /* Text */.Text, { color: "mobile-text-heading-primary", variant: "heading-md/semibold", children: title }), trailing];
   obj[1] = items;
   const items1 = [callback2(closure_4, obj), ];
   obj = { style: tmp.code, children: null };

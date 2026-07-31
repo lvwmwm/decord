@@ -1,10 +1,10 @@
-// Module ID: 15616
-// Function ID: 15617
+// Module ID: 15644
+// Function ID: 15645
 // Name: useHasNewAdContent
-// Dependencies: [32, 14108, 5983, 5033, 687, 10490, 589, 5981, 6011, 8438, 1358, 2]
+// Dependencies: [32, 14130, 5989, 5037, 687, 10512, 589, 5987, 6017, 8451, 1358, 2]
 // Exports: default
 
-// Module 15616 (useHasNewAdContent)
+// Module 15644 (useHasNewAdContent)
 import _slicedToArray from "_slicedToArray";
 import getOrCreateSet from "getOrCreateSet";
 import initializeState from "initializeState";

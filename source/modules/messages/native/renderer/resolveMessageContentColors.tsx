@@ -1,24 +1,24 @@
-// Module ID: 7733
-// Function ID: 7734
+// Module ID: 7741
+// Function ID: 7742
 // Name: result
-// Dependencies: [4189, 4035, 712, 2]
+// Dependencies: [4193, 4039, 712, 2]
 // Exports: default
 
-// Module 7733 (result)
+// Module 7741 (result)
 import createCacheKey from "createCacheKey";
 import createCacheKey from "createCacheKey";
 import createCacheKey from "createCacheKey";
 
 const result = createCacheKey.experimental_createToken((theme) => {
-  const obj = require(4035) /* AccessibilityAnnouncer */;
+  const obj = require(4039) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
-  return require(4035) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_300 : unsafe_rawColors.PRIMARY_630;
+  return require(4039) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_300 : unsafe_rawColors.PRIMARY_630;
 });
 let obj = { textColor: null, linkColor: null, timestampColor: null, highlightColor: null, unsupportedColor: null, embedProviderColor: null, embedBorderLeftColor: null, embedBodyTextColor: null, embedHeaderTextColor: null, opTagTextColor: null, opTagBackgroundColor: null, failedMessageBodyTextColor: null, automodBlockedBodyTextColor: null, aiBotTagColor: null, editedColor: null, defaultUsernameColor: null, feedbackColor: null, reportFpTextColor: null, reportFpBackgroundColor: null, retryTextColor: null, retryBackgroundColor: null, clipTagBackgroundColor: null, clipTagTextColor: null };
 const result1 = createCacheKey.experimental_createToken((theme) => {
-  const obj = require(4035) /* AccessibilityAnnouncer */;
+  const obj = require(4039) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
-  return require(4035) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.BRAND_260 : unsafe_rawColors.BRAND_200;
+  return require(4039) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.BRAND_260 : unsafe_rawColors.BRAND_200;
 });
 obj[0] = require("Themes").colors.TEXT_STRONG;
 obj[1] = require("Themes").colors.TEXT_LINK;

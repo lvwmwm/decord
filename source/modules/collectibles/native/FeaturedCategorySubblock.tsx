@@ -1,10 +1,10 @@
-// Module ID: 14619
-// Function ID: 14620
+// Module ID: 14642
+// Function ID: 14643
 // Name: subblock
-// Dependencies: [19, 17, 5798, 678, 676, 21, 4189, 1480, 8660, 589, 11912, 11915, 4717, 1236, 712, 698, 5797, 5535, 5810, 7964, 2]
+// Dependencies: [19, 17, 5803, 678, 676, 21, 4193, 1480, 8673, 589, 11930, 11933, 4721, 1236, 712, 698, 5802, 5539, 5815, 7971, 2]
 // Exports: default
 
-// Module 14619 (subblock)
+// Module 14642 (subblock)
 import "NewBadge";
 import { Image } from "QUICK_SWITCHER";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
@@ -31,13 +31,13 @@ export default function _default(subblock) {
   const tmp = callback();
   let obj = subblock(1480);
   importDefault = obj.useNavigation();
-  let obj1 = subblock(8660);
+  let obj1 = subblock(8673);
   dependencyMap = obj1.useCollectiblesAnalyticsContext();
   const assetUrl = subblock.assetUrl;
   let obj2 = subblock(589);
   let items = [updateCategoriesAndProducts];
   stateFromStores = obj2.useStateFromStores(items, () => outer1_4.getCategoryByStoreListingId(subblock.categoryStoreListingId));
-  let obj3 = subblock(11912);
+  let obj3 = subblock(11930);
   let unpublishedAt = subblock.unpublishedAt;
   if (unpublishedAt == null) {
     unpublishedAt = undefined;
@@ -110,16 +110,16 @@ export default function _default(subblock) {
     tmp11Result = tmp11(stateFromStores, obj3);
   }
   const items1 = [tmp11Result, ];
-  const tmp12 = importDefault(11915);
+  const tmp12 = importDefault(11933);
   const tmp13 = closure_9;
-  let result = subblock(5810).shouldShowLimitedTimeBadge(date);
+  let result = subblock(5815).shouldShowLimitedTimeBadge(date);
   if (result) {
     const obj5 = { style: null };
     obj5[0] = tmp.limitedTimeBadge;
-    result = tmp11(tmp2(7964).LimitedTimeBadge, obj5);
+    result = tmp11(tmp2(7971).LimitedTimeBadge, obj5);
   }
   items1[1] = result;
   obj[8] = items1;
-  obj[1] = tmp13(subblock(4717).PressableOpacity, obj);
+  obj[1] = tmp13(subblock(4721).PressableOpacity, obj);
   return closure_8(tmp12, obj);
 };

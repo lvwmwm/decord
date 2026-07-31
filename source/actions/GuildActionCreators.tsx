@@ -1,9 +1,9 @@
-// Module ID: 5105
-// Function ID: 5106
+// Module ID: 5109
+// Function ID: 5110
 // Name: showTooManyUserGuildsAlert
-// Dependencies: [109, 5, 5106, 1218, 5028, 1932, 1862, 1931, 4006, 1874, 676, 1221, 4528, 1236, 709, 5107, 530, 1222, 5110, 1959, 5640, 5648, 5653, 5679, 11525, 4999, 503, 12621, 3822, 506, 7685, 3858, 698, 12622, 4403, 7724, 2]
+// Dependencies: [109, 5, 5110, 1218, 5032, 1932, 1862, 1931, 4010, 1874, 676, 1221, 4532, 1236, 709, 5111, 530, 1222, 5114, 1959, 5644, 5652, 5657, 5683, 11542, 5003, 503, 12646, 3826, 506, 7693, 3862, 698, 12647, 4407, 7732, 2]
 
-// Module 5105 (showTooManyUserGuildsAlert)
+// Module 5109 (showTooManyUserGuildsAlert)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import comparator from "comparator";
 import set from "set";
@@ -27,7 +27,7 @@ let closure_21;
 let closure_22;
 const require = arg1;
 function showTooManyUserGuildsAlert(quantity) {
-  let obj = importDefault(4528);
+  let obj = importDefault(4532);
   obj = { title: null, body: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.cTaRxF);
@@ -577,7 +577,7 @@ export default {
   },
   deleteGuild,
   selectGuild(guildId) {
-    require(11525) /* stopLurkingAll */.stopLurking(guildId);
+    require(11542) /* stopLurkingAll */.stopLurking(guildId);
   },
   createGuild(guild) {
     let obj = importDefault(709);
@@ -632,7 +632,7 @@ export default {
     let reason;
     let userId;
     ({ guildId, userId, communicationDisabledUntilTimestamp, duration, reason, location: _location } = moderator_report_id);
-    let obj = importDefault(4999);
+    let obj = importDefault(5003);
     obj = { url: closure_16.GUILD_MEMBER(guildId, userId), reason, body: { communication_disabled_until: communicationDisabledUntilTimestamp, moderator_report_id: moderator_report_id.moderatorReportId }, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_COMMUNICATION_DISABLED_UPDATE, properties: null };
     const obj1 = { guild_id: guildId, target_user_id: userId, duration: null, reason: null, communication_disabled_until: null, location: null };
@@ -1008,7 +1008,7 @@ export default {
             return obj4;
           } else {
             closure_0 = arg1;
-            obj = outer1_1(7685);
+            obj = outer1_1(7693);
             const result = obj.checkGuildTemplateDirty(closure_0);
             dependencyMap = 3;
             obj5 = { value: null, done: true };
@@ -1091,7 +1091,7 @@ export default {
             return obj3;
           } else {
             closure_0 = arg1;
-            obj = outer1_1(7685);
+            obj = outer1_1(7693);
             const result = obj.checkGuildTemplateDirty(closure_0);
             dependencyMap = 3;
             const obj4 = { value: null, done: true };
@@ -1159,7 +1159,7 @@ export default {
             return obj3;
           } else {
             closure_0 = arg1;
-            obj = outer1_1(7685);
+            obj = outer1_1(7693);
             const result = obj.checkGuildTemplateDirty(closure_0);
             dependencyMap = 3;
             const obj4 = { value: null, done: true };
@@ -1296,19 +1296,19 @@ export default {
     obj.dispatch(obj);
   },
   nsfwReturnToSafety(guildId) {
-    const tmp2 = importDefault(12622)(guildId);
+    const tmp2 = importDefault(12647)(guildId);
     if (null == tmp2) {
       if (null != guildId) {
         const defaultChannel = store.getDefaultChannel(guildId);
         if (null != defaultChannel) {
           if (!obj3.isChannelContentGated(defaultChannel)) {
-            let tmp11Result = tmp11(7724);
+            let tmp11Result = tmp11(7732);
             if (!tmp11Result.isChannelSpoilerGated(defaultChannel)) {
               tmp11Result = tmp11(1222);
               tmp11Result.transitionTo(closure_21.CHANNEL(guildId, defaultChannel.id));
             }
           }
-          obj3 = require(4403) /* shouldShowAgeGateForVoiceChannel */;
+          obj3 = require(4407) /* shouldShowAgeGateForVoiceChannel */;
         }
         require(1222) /* transitionTo */.transitionTo(closure_21.FRIENDS, { navigationReplace: false, openChannel: true });
         const obj6 = require(1222) /* transitionTo */;

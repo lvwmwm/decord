@@ -1,10 +1,10 @@
-// Module ID: 4231
-// Function ID: 4232
+// Module ID: 4235
+// Function ID: 4236
 // Name: transformProfileEffectKeyFrameFromServer
 // Dependencies: [1901, 2]
 // Exports: default
 
-// Module 4231 (transformProfileEffectKeyFrameFromServer)
+// Module 4235 (transformProfileEffectKeyFrameFromServer)
 function transformProfileEffectKeyFrameFromServer(src) {
   let randomizedSources;
   const obj = { src: src.src, loop: src.loop, height: src.height, width: src.width, duration: null, start: null, loopDelay: null, position: null, zIndex: null, randomizedSources: null };

@@ -1,10 +1,10 @@
-// Module ID: 15594
-// Function ID: 15595
+// Module ID: 15622
+// Function ID: 15623
 // Name: IncomingRequestRow
-// Dependencies: [19, 4181, 4226, 8809, 676, 21, 4050, 647, 1236, 4028, 15035, 11717, 8825, 15306, 15595, 2]
+// Dependencies: [19, 4185, 4230, 8822, 676, 21, 4054, 647, 1236, 4032, 15061, 11735, 8838, 15334, 15623, 2]
 // Exports: ConnectedIncomingGameFriendRequestRow, IncomingFriendRequestRow
 
-// Module 15594 (IncomingRequestRow)
+// Module 15622 (IncomingRequestRow)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import addApplication from "addApplication";
@@ -120,7 +120,7 @@ function IncomingGameFriendRequestRow(arg0) {
   let user;
   ({ user, application } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = importDefault(4028);
+  let obj = importDefault(4032);
   const userTag = obj.useUserTag(user);
   obj = { user, applicationId: application.id, accessibilityLabel: null, acceptedRequestLabel: null, acceptedRequestAccessibilityLabel: null, acceptRequestAccessibilityLabel: null, ignoreRequestAccessibilityLabel: null };
   const intl = application(1236).intl;
@@ -149,7 +149,7 @@ let result = require("addApplication").fileFinishedImporting("modules/main_tabs_
 export const IncomingFriendRequestRow = function IncomingFriendRequestRow(user) {
   user = user.user;
   const merged = Object.assign(user, Object.create(null));
-  let obj = importDefault(4028);
+  let obj = importDefault(4032);
   const userTag = obj.useUserTag(user);
   obj = { user, accessibilityLabel: null, acceptedRequestLabel: null, acceptedRequestAccessibilityLabel: null, acceptRequestAccessibilityLabel: null, ignoreRequestAccessibilityLabel: null };
   const intl = require(1236) /* getSystemLocale */.intl;

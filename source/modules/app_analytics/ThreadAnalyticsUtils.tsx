@@ -1,10 +1,10 @@
-// Module ID: 6083
-// Function ID: 6084
+// Module ID: 6089
+// Function ID: 6090
 // Name: collectThreadMetadata
-// Dependencies: [6079, 6064, 1376, 3817, 676, 1222, 11, 2]
+// Dependencies: [6085, 6070, 1376, 3821, 676, 1222, 11, 2]
 // Exports: collectThreadMetadata
 
-// Module 6083 (collectThreadMetadata)
+// Module 6089 (collectThreadMetadata)
 import updateFromGuild from "updateFromGuild";
 import updateState from "updateState";
 import { THREAD_CHANNEL_TYPES } from "createChannelRecord";

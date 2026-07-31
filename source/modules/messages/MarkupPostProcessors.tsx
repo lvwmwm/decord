@@ -1,10 +1,10 @@
-// Module ID: 7874
-// Function ID: 7875
+// Module ID: 7882
+// Function ID: 7883
 // Name: checkSpoilerEmbeds
-// Dependencies: [676, 4522, 4105, 7875, 4173, 1208, 2]
+// Dependencies: [676, 4526, 4109, 7883, 4177, 1208, 2]
 // Exports: checkForSimpleEmbedMessage, convertNewlinesInContent, removeBuildOverrideLinks, removeExperimentLinks, removeGameServerShareLinks, removeQuestsEmbedLinks, runMessageMarkupPostProcessors
 
-// Module 7874 (checkSpoilerEmbeds)
+// Module 7882 (checkSpoilerEmbeds)
 import ME from "ME";
 import set from "Version";
 
@@ -39964,7 +39964,7 @@ export const checkForSimpleEmbedMessage = function checkForSimpleEmbedMessage(ar
           if (obj.isEmbedInline(first1)) {
             items = [];
           }
-          obj = require(4522) /* regExp */;
+          obj = require(4526) /* getEffectiveVideoProvider */;
         }
       } else {
         items = arg0;
@@ -39978,8 +39978,8 @@ export const removeBuildOverrideLinks = function removeBuildOverrideLinks(arr) {
   return arr.filter((type) => {
     let tmp = "link" !== type.type;
     if (!tmp) {
-      tmp = !callback(4105).isBuildOverrideLink(type.target);
-      const obj = callback(4105);
+      tmp = !callback(4109).isBuildOverrideLink(type.target);
+      const obj = callback(4109);
     }
     return tmp;
   });
@@ -39988,8 +39988,8 @@ export const removeExperimentLinks = function removeExperimentLinks(arr) {
   return arr.filter((type) => {
     let tmp = "link" !== type.type;
     if (!tmp) {
-      tmp = !callback(7875).isExperimentEmbedURL(type.target);
-      const obj = callback(7875);
+      tmp = !callback(7883).isExperimentEmbedURL(type.target);
+      const obj = callback(7883);
     }
     return tmp;
   });
@@ -40153,7 +40153,7 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
             if (obj3.isEmbedInline(first1)) {
               items2 = [];
             }
-            obj3 = _require(4522);
+            obj3 = _require(4526);
           }
         } else {
           items2 = arr;
@@ -40176,8 +40176,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
         }
         if (tmp) {
           const content = type.content;
-          let tmp2 = typeof content === "tee";
-          if (typeof content !== "tee") {
+          let tmp2 = typeof content === "__FORMATJS_LISTFORMAT_DATA__";
+          if (typeof content !== "__FORMATJS_LISTFORMAT_DATA__") {
             tmp2 = "" !== type.content.trim();
             const str2 = type.content;
           }
@@ -40220,8 +40220,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
           }
           if (tmp) {
             const content = type.content;
-            let tmp2 = typeof content === "tee";
-            if (typeof content !== "tee") {
+            let tmp2 = typeof content === "__FORMATJS_LISTFORMAT_DATA__";
+            if (typeof content !== "__FORMATJS_LISTFORMAT_DATA__") {
               tmp2 = "" !== type.content.trim();
               const str2 = type.content;
             }
@@ -40257,16 +40257,16 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
     const found = arr4.filter((type) => {
       let tmp = "link" !== type.type;
       if (!tmp) {
-        tmp = !callback(4105).isBuildOverrideLink(type.target);
-        const obj = callback(4105);
+        tmp = !callback(4109).isBuildOverrideLink(type.target);
+        const obj = callback(4109);
       }
       return tmp;
     });
     found1 = found.filter((type) => {
       let tmp = "link" !== type.type;
       if (!tmp) {
-        tmp = !callback(7875).isExperimentEmbedURL(type.target);
-        const obj = callback(7875);
+        tmp = !callback(7883).isExperimentEmbedURL(type.target);
+        const obj = callback(7883);
       }
       return tmp;
     });

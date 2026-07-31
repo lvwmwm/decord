@@ -1,10 +1,10 @@
-// Module ID: 3822
-// Function ID: 3823
+// Module ID: 3826
+// Function ID: 3827
 // Name: applyOverwrites
-// Dependencies: [1934, 3818, 3819, 1376, 1415, 1936, 1218, 1372, 1942, 1935, 1862, 1874, 676, 506, 12, 3823, 3806, 11, 1939, 1906, 2]
+// Dependencies: [1934, 3822, 3823, 1376, 1415, 1936, 1218, 1372, 1942, 1935, 1862, 1874, 676, 506, 12, 3827, 3810, 11, 1939, 1906, 2]
 // Exports: areChannelsLocked, can, canEveryone, canEveryoneRole, canManageACategory, getGuildVisualOwnerId, getHighestHoistedRole, getHighestRole, isRoleHigher, makeEveryoneOverwrite
 
-// Module 3822 (applyOverwrites)
+// Module 3826 (applyOverwrites)
 import initialize from "initialize";
 import closure_5 from "initialize";
 import storeThread from "storeThread";
@@ -90,7 +90,7 @@ function applyOverwrites(id, member, closure_23, overwrites) {
     const hasItem = importAll(506).has(addResult4, Permissions.ADMINISTRATOR);
     const tmp19Result1 = importAll(506);
     const tmp28 = require;
-    const result = require(3823) /* GuildMemberFlags */.hasAutomodQuarantinedProfile(member);
+    const result = require(3827) /* GuildMemberFlags */.hasAutomodQuarantinedProfile(member);
     let tmp31 = result;
     if (result) {
       tmp31 = !hasItem;
@@ -100,14 +100,14 @@ function applyOverwrites(id, member, closure_23, overwrites) {
       found = tmp19(506).filter(addResult4, closure_29);
       const tmp19Result2 = tmp19(506);
     }
-    const obj10 = require(3823) /* GuildMemberFlags */;
-    const tmp28Result = tmp28(3806);
+    const obj10 = require(3827) /* GuildMemberFlags */;
+    const tmp28Result = tmp28(3810);
     found1 = found;
     if (tmp34) {
       found1 = tmp19(506).filter(found, closure_28);
       const tmp19Result3 = tmp19(506);
     }
-    tmp34 = tmp28(3806).isMemberCommunicationDisabled(member) && !hasItem;
+    tmp34 = tmp28(3810).isMemberCommunicationDisabled(member) && !hasItem;
   }
   return found1;
 }

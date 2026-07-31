@@ -1,8 +1,8 @@
-// Module ID: 9680
-// Function ID: 9681
-// Dependencies: [676, 644, 698, 705, 9681, 500, 2]
+// Module ID: 9697
+// Function ID: 9698
+// Dependencies: [676, 644, 698, 705, 9698, 500, 2]
 
-// Module 9680
+// Module 9697
 import { AnalyticEvents } from "ME";
 import keys from "keys";
 
@@ -94,14 +94,14 @@ export default {
             obj = { page: table, has_reached_end: tmp12 };
             lastAssetIndex(table[2]).track(outer1_3.MEDIA_PICKER_INFINITE_SCROLL_PAGED, obj);
           };
-          lastAssetIndex(9681)(obj);
+          lastAssetIndex(9698)(obj);
         }
       }
     }
   },
   refreshAssets(batchSize) {
     batchSize = batchSize.batchSize;
-    importDefault(9681)({
+    importDefault(9698)({
       batchSize,
       extensions: batchSize.extensions,
       onFetched(edges) {

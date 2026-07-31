@@ -1,10 +1,10 @@
-// Module ID: 15048
-// Function ID: 15049
+// Module ID: 15074
+// Function ID: 15075
 // Name: convertNullableArrayToItemAndItemIndex
 // Dependencies: [32, 1218, 11, 2]
 // Exports: getAffinityProperties
 
-// Module 15048 (convertNullableArrayToItemAndItemIndex)
+// Module 15074 (convertNullableArrayToItemAndItemIndex)
 import _slicedToArray from "_slicedToArray";
 import fetchFingerprint from "fetchFingerprint";
 

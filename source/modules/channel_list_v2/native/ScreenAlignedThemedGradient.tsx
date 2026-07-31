@@ -1,10 +1,10 @@
-// Module ID: 15201
-// Function ID: 15202
+// Module ID: 15228
+// Function ID: 15229
 // Name: ScreenAlignedThemedGradient
-// Dependencies: [19, 17, 21, 8822, 4050, 9910, 4719, 2]
+// Dependencies: [19, 17, 21, 8835, 4054, 9927, 4723, 2]
 // Exports: default
 
-// Module 15201 (ScreenAlignedThemedGradient)
+// Module 15228 (ScreenAlignedThemedGradient)
 import "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

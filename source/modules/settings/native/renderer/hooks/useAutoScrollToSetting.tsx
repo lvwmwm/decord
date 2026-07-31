@@ -1,10 +1,10 @@
-// Module ID: 14702
-// Function ID: 14703
+// Module ID: 14725
+// Function ID: 14726
 // Name: useAutoScrollToSearchResultSetting
-// Dependencies: [19, 13675, 10117, 13680, 13678, 1480, 2]
+// Dependencies: [19, 13699, 10134, 13704, 13702, 1480, 2]
 // Exports: useAutoScrollToSearchResultSetting
 
-// Module 14702 (useAutoScrollToSearchResultSetting)
+// Module 14725 (useAutoScrollToSearchResultSetting)
 import noop from "noop";
 import zustandStore from "zustandStore";
 import { NodeType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
@@ -24,14 +24,14 @@ export const useAutoScrollToSearchResultSetting = function useAutoScrollToSearch
   let flag = false;
   if (null != current) {
     flag = false;
-    if (tmp(13680).SETTING_RENDERER_CONFIG[current].type !== current.ROUTE) {
-      let initialScrollIndex = tmp(13678).getInitialScrollIndex(current, memo);
+    if (tmp(13704).SETTING_RENDERER_CONFIG[current].type !== current.ROUTE) {
+      let initialScrollIndex = tmp(13702).getInitialScrollIndex(current, memo);
       let tmp7 = 0 !== initialScrollIndex;
       if (tmp7) {
         tmp7 = 1 !== initialScrollIndex;
       }
       flag = tmp7;
-      const tmpResult = tmp(13678);
+      const tmpResult = tmp(13702);
     }
   }
   const items = [memo, flag, ref, navigation, current];

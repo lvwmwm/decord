@@ -1,9 +1,9 @@
-// Module ID: 10519
-// Function ID: 10520
+// Module ID: 10537
+// Function ID: 10538
 // Name: updateSpeaker
-// Dependencies: [4208, 1218, 4236, 5009, 4202, 4207, 4253, 12, 589, 709, 2]
+// Dependencies: [4212, 1218, 4240, 5013, 4206, 4211, 4257, 12, 589, 709, 2]
 
-// Module 10519 (updateSpeaker)
+// Module 10537 (updateSpeaker)
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -65,7 +65,7 @@ function updateSpeaker(arg0) {
     if (null != lastActiveStream) {
       tmp21 = tmp20;
       if (null == tmp20) {
-        const participant1 = obj.getParticipant(closure_2, require(4253) /* isStreamKey */.encodeStreamKey(lastActiveStream));
+        const participant1 = obj.getParticipant(closure_2, require(4257) /* isStreamKey */.encodeStreamKey(lastActiveStream));
         let id;
         if (participant1 != null) {
           id = participant1.id;
@@ -78,7 +78,7 @@ function updateSpeaker(arg0) {
         if (!result1) {
           tmp21 = id;
         }
-        const obj2 = require(4253) /* isStreamKey */;
+        const obj2 = require(4257) /* isStreamKey */;
       }
     }
     tmp2 = tmp21;

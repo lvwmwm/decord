@@ -1,10 +1,10 @@
-// Module ID: 16525
-// Function ID: 16526
+// Module ID: 16554
+// Function ID: 16555
 // Name: EligibilityChecklistRow
-// Dependencies: [19, 17, 21, 4189, 5141, 16526, 16527, 4185, 4600, 1297, 14230, 2]
+// Dependencies: [19, 17, 21, 4193, 5145, 16555, 16556, 4189, 4604, 1297, 14253, 2]
 // Exports: default
 
-// Module 16525 (EligibilityChecklistRow)
+// Module 16554 (EligibilityChecklistRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -26,20 +26,20 @@ function EligibilityChecklistRow(item) {
   items[1] = eligibleRow;
   obj = { style: tmp.rowStatusIcon, source: null };
   if (item.checked) {
-    let tmp6Result = tmp6(16526);
+    let tmp6Result = tmp6(16555);
   } else {
-    tmp6Result = tmp6(16527);
+    tmp6Result = tmp6(16556);
   }
   obj[1] = tmp6Result;
-  const items1 = [closure_4(importDefault(5141), obj), ];
+  const items1 = [closure_4(importDefault(5145), obj), ];
   obj = { style: tmp.rowTextColumn, children: null };
-  const items2 = [closure_4(require(4185) /* Text */.Text, { style: tmp.rowLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: item.checked ? item.checkedLabel : item.uncheckedLabel }), closure_4(require(4185) /* Text */.Text, { variant: "text-sm/normal", color: "interactive-text-default", children: item.description }), ];
+  const items2 = [closure_4(require(4189) /* Text */.Text, { style: tmp.rowLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: item.checked ? item.checkedLabel : item.uncheckedLabel }), closure_4(require(4189) /* Text */.Text, { variant: "text-sm/normal", color: "interactive-text-default", children: item.description }), ];
   let tmp5Result = null != item.actionHandler && null != item.actionLabel;
   if (tmp5Result) {
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.actionButtonWrapper;
     ({ actionLabel: obj7[0], actionHandler: obj7[1] } = item);
-    obj3[1] = tmp5(tmp10(4600).Button, { text: null, onPress: null, grow: true });
+    obj3[1] = tmp5(tmp10(4604).Button, { text: null, onPress: null, grow: true });
     tmp5Result = tmp5(tmp4, obj3);
     const obj4 = { text: null, onPress: null, grow: true };
   }
@@ -53,7 +53,7 @@ function EligibilityChecklistRow(item) {
   } else {
     const obj5 = { style: null };
     obj5[0] = tmp.divider;
-    tmp5Result = tmp5(tmp6(14230), obj5);
+    tmp5Result = tmp5(tmp6(14253), obj5);
   }
   children[1] = tmp5Result;
   return closure_5(closure_6, { children });

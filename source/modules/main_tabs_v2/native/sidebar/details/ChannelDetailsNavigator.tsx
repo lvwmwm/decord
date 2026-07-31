@@ -1,9 +1,9 @@
-// Module ID: 15631
-// Function ID: 15632
+// Module ID: 15659
+// Function ID: 15660
 // Name: ConnectedCreateThreadHeaderButton
-// Dependencies: [19, 17, 1372, 9096, 676, 15475, 21, 9105, 647, 6046, 9826, 9114, 1236, 11868, 698, 15632, 5570, 5149, 4041, 1581, 15680, 500, 15681, 15682, 15683, 15684, 15532, 2]
+// Dependencies: [19, 17, 1372, 9107, 676, 15503, 21, 9118, 647, 6052, 9843, 9127, 1236, 11886, 698, 15660, 5574, 5153, 4045, 1581, 15708, 500, 15709, 15710, 15711, 15712, 15560, 2]
 
-// Module 15631 (ConnectedCreateThreadHeaderButton)
+// Module 15659 (ConnectedCreateThreadHeaderButton)
 import importAllResult from "useSafeAreaInsets";
 import { View } from "useNavigatorBackPressHandler";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -31,7 +31,7 @@ function ConnectedCreateThreadHeaderButton(channelId) {
 }
 function CreateThreadHeaderButton(channel) {
   channel = channel.channel;
-  let obj = channel(6046);
+  let obj = channel(6052);
   [][0] = channel;
   const canStartThread = obj.useCanStartThread(channel);
   let tmp5 = null;
@@ -40,8 +40,8 @@ function CreateThreadHeaderButton(channel) {
     const intl = tmp(1236).intl;
     obj[0] = intl.string(tmp(1236).t.rBIGBL);
     obj[1] = tmp4;
-    obj[2] = importDefault(11868);
-    tmp5 = callback(tmp(9114).HeaderIconButton, obj);
+    obj[2] = importDefault(11886);
+    tmp5 = callback(tmp(9127).HeaderIconButton, obj);
   }
   return tmp5;
 }
@@ -140,7 +140,7 @@ const memoResult = importAllResult.memo((route) => {
         route = route.route;
         let obj = {
           header(arg0) {
-            let obj = route(9114);
+            let obj = route(9127);
             obj = {};
             const merged = Object.assign(arg0);
             obj.shouldHandleSafeArea = route(500).isAndroid();

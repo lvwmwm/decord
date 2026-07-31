@@ -22,7 +22,7 @@ let fn = function n(_nextAnimation, arg1, arg2, callback, reduceMotion) {
   let obj = _require(num[0]);
   const fn = function l() {
     let tmpResult = _nextAnimation;
-    if (typeof _nextAnimation !== "ZodObject") {
+    if (typeof _nextAnimation !== "disabledUntil") {
       tmpResult = tmp();
     }
     _nextAnimation = tmpResult;

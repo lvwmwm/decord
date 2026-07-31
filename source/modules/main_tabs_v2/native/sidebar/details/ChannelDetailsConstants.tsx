@@ -1,10 +1,10 @@
-// Module ID: 9096
-// Function ID: 9097
+// Module ID: 9107
+// Function ID: 9108
 // Name: ChannelDetailsNavigatorScreens
-// Dependencies: [9097, 2]
+// Dependencies: [9108, 2]
 
-// Module 9096 (ChannelDetailsNavigatorScreens)
-const sum = require("SearchAutocompleteSelectAnalyticsActions").SEARCH_BAR_HEIGHT + 40;
+// Module 9107 (ChannelDetailsNavigatorScreens)
+const sum = require("MessageEmbedTypes").SEARCH_BAR_HEIGHT + 40;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsConstants.tsx");
 
 export const ChannelDetailsNavigatorScreens = { DETAILS: "root", MUTE: "mute", THREADS: "threads", SETTINGS: "settings", PINNED_MESSAGES: "pinned-messages" };

@@ -1,9 +1,9 @@
-// Module ID: 15360
-// Function ID: 15361
+// Module ID: 15388
+// Function ID: 15389
 // Name: ICYMIMessageRowPreview
-// Dependencies: [19, 676, 21, 8189, 3867, 7712, 5882, 4125, 4189, 712, 3862, 7710, 9286, 7902, 1236, 2]
+// Dependencies: [19, 676, 21, 8196, 3871, 7720, 5887, 4129, 4193, 712, 3866, 7718, 9301, 7910, 1236, 2]
 
-// Module 15360 (ICYMIMessageRowPreview)
+// Module 15388 (ICYMIMessageRowPreview)
 import importAllResult from "noop";
 import { MessageEmbedTypes } from "ME";
 import { jsx } from "jsxProd";
@@ -25,14 +25,14 @@ function ICYMIMessageRowPreview(pointerEvents) {
   let setting;
   let setting1;
   let setting2;
-  let obj = require(4189) /* createCacheKey */;
+  let obj = require(4193) /* createCacheKey */;
   obj = { seeMoreLabelColor: messageOptions(712).colors.TEXT_DEFAULT };
-  dependencyMap = obj.createNativeStyleProperties(obj)(messageOptions(4125)());
-  const RenderEmbeds = require(3862) /* explicitContentFromProto */.RenderEmbeds;
+  dependencyMap = obj.createNativeStyleProperties(obj)(messageOptions(4129)());
+  const RenderEmbeds = require(3866) /* explicitContentFromProto */.RenderEmbeds;
   setting = RenderEmbeds.getSetting();
-  const InlineEmbedMedia = require(3862) /* explicitContentFromProto */.InlineEmbedMedia;
+  const InlineEmbedMedia = require(3866) /* explicitContentFromProto */.InlineEmbedMedia;
   setting1 = InlineEmbedMedia.getSetting();
-  const InlineAttachmentMedia = require(3862) /* explicitContentFromProto */.InlineAttachmentMedia;
+  const InlineAttachmentMedia = require(3866) /* explicitContentFromProto */.InlineAttachmentMedia;
   setting2 = InlineAttachmentMedia.getSetting();
   const items = [setting, setting1, setting2, messageOptions];
   const memo = setting.useMemo(() => {
@@ -61,7 +61,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
     messageSizeCacheRef,
     maxHeight
   };
-  return setting2(messageOptions(9286), obj);
+  return setting2(messageOptions(9301), obj);
 }
 let c3 = importAllResult;
 const memoResult = importAllResult.memo((message) => {
@@ -168,11 +168,11 @@ const memoResult2 = importAllResult.memo((message) => {
     obj[4] = merged.pointerEvents;
     return obj;
   }, items);
-  const tmp3 = merged(5882)(message);
+  const tmp3 = merged(5887)(message);
   let obj = {};
   const merged1 = Object.assign(memo);
   obj = {};
-  const merged2 = Object.assign(message(7712).DEFAULT_OPTIONS);
+  const merged2 = Object.assign(message(7720).DEFAULT_OPTIONS);
   obj.ignoreMentioned = true;
   obj.renderReplies = false;
   obj.renderThreadEmbeds = false;

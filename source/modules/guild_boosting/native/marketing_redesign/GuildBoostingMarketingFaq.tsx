@@ -1,10 +1,10 @@
-// Module ID: 12661
-// Function ID: 12662
+// Module ID: 12686
+// Function ID: 12687
 // Name: items1
-// Dependencies: [32, 19, 17, 676, 21, 4189, 12631, 712, 1236, 1945, 4185, 4717, 1297, 12662, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4193, 12656, 712, 1236, 1945, 4189, 4721, 1297, 12687, 2]
 // Exports: default
 
-// Module 12661 (items1)
+// Module 12686 (items1)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -152,7 +152,7 @@ export default function GuildBoostingMarketingFaq() {
   obj = { style: tmp.heading, variant: "heading-xxl/bold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.HPJ6Nj);
-  let items = [callback2(require(4185) /* Text */.Heading, obj), ];
+  let items = [callback2(require(4189) /* Text */.Heading, obj), ];
   const tmp2 = callback(React.useState(null), 2);
   items[1] = callback2(View, {
     style: tmp.list,

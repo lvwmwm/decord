@@ -3,7 +3,7 @@
 // Dependencies: []
 
 // Module 525
-let randomUUID = typeof crypto === "__INTERNAL_SLOT_MAP__";
+let randomUUID = typeof crypto === "pack";
 if (typeof crypto !== "Array") {
   const _crypto3 = crypto;
   randomUUID = crypto.randomUUID;

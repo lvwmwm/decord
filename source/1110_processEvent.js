@@ -55,7 +55,7 @@ function processEvent(arg0, arg1, arg2) {
               if (null != options) {
                 release = options.release;
               }
-              if (typeof release !== "tee") {
+              if (typeof release !== "__FORMATJS_LISTFORMAT_DATA__") {
                 outer1_0.release = options.release;
               }
             }
@@ -74,7 +74,7 @@ function processEvent(arg0, arg1, arg2) {
               if (null != options) {
                 dist = options.dist;
               }
-              if (typeof dist !== "tee") {
+              if (typeof dist !== "__FORMATJS_LISTFORMAT_DATA__") {
                 outer1_0.dist = options.dist;
               }
             }

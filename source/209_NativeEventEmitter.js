@@ -11,8 +11,8 @@ let NativeEventEmitter = importDefault;
 class NativeEventEmitter {
   constructor(arg0) {
     tmp = outer1_2(this, NativeEventEmitter);
-    tmp2 = global && typeof global.addListener === "find";
-    tmp3 = global && typeof global.removeListeners === "find";
+    tmp2 = global && typeof global.addListener === "fileFinishedImporting";
+    tmp3 = global && typeof global.removeListeners === "fileFinishedImporting";
     if (global) {
       if (tmp2) {
         if (tmp3) {

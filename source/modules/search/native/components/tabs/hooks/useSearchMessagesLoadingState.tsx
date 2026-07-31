@@ -1,16 +1,16 @@
-// Module ID: 15523
-// Function ID: 15524
+// Module ID: 15551
+// Function ID: 15552
 // Name: useSearchMessagesLoadingState
-// Dependencies: [5873, 10098, 9097, 15478, 589, 10099, 2]
+// Dependencies: [5878, 10115, 9108, 15506, 589, 10116, 2]
 // Exports: useSearchMessagesLoadingState
 
-// Module 15523 (useSearchMessagesLoadingState)
+// Module 15551 (useSearchMessagesLoadingState)
 import handleReaction from "handleReaction";
 import prototype from "prototype";
-import { SEARCH_TABS_TO_SEARCH_QUERY_LIMITS as closure_4 } from "SearchAutocompleteSelectAnalyticsActions";
+import { SEARCH_TABS_TO_SEARCH_QUERY_LIMITS as closure_4 } from "MessageEmbedTypes";
 
 const require = arg1;
-const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedImporting("modules/search/native/components/tabs/hooks/useSearchMessagesLoadingState.tsx");
+const result = require("MessageEmbedTypes").fileFinishedImporting("modules/search/native/components/tabs/hooks/useSearchMessagesLoadingState.tsx");
 
 export const useSearchMessagesLoadingState = function useSearchMessagesLoadingState(arg0) {
   let dependencyMap;
@@ -20,8 +20,8 @@ export const useSearchMessagesLoadingState = function useSearchMessagesLoadingSt
   ({ searchContext: require, tab: dependencyMap } = arg0);
   let handleReaction;
   ({ placeholderHeight, numColumns } = arg0);
-  handleReaction = require(15478) /* useFullscreenPlaceholderCount */.useFullscreenPlaceholderCount({ placeholderHeight, numColumns });
-  let obj = require(15478) /* useFullscreenPlaceholderCount */;
+  handleReaction = require(15506) /* useFullscreenPlaceholderCount */.useFullscreenPlaceholderCount({ placeholderHeight, numColumns });
+  let obj = require(15506) /* useFullscreenPlaceholderCount */;
   const items = [prototype, handleReaction];
   return require(589) /* initialize */.useStateFromStoresObject(items, () => {
     let obj = outer1_0(outer1_1[5]);

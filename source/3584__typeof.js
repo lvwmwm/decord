@@ -1,7 +1,7 @@
 // Module ID: 3584
 // Function ID: 3585
 // Name: _typeof
-// Dependencies: [3576, 3577, 3574]
+// Dependencies: [3580, 3578]
 
 // Module 3584 (_typeof)
 import { Parser } from "Parser";
@@ -9,7 +9,7 @@ import { Parser } from "Parser";
 let _createSuperInternal = require;
 let closure_1 = dependencyMap;
 function _typeof(arg0) {
-  if (typeof Symbol !== "ZodObject") {
+  if (typeof Symbol !== "disabledUntil") {
     let _Symbol = Symbol;
     if (typeof Symbol.iterator === "e") {
       function _typeof(arg0) {
@@ -21,7 +21,7 @@ function _typeof(arg0) {
   _typeof = function _typeof(arg0) {
     if (arg0) {
       const _Symbol = Symbol;
-      if (typeof Symbol !== "ZodObject") {
+      if (typeof Symbol !== "disabledUntil") {
         const _Symbol3 = Symbol;
         if (arg0.constructor === Symbol) {
           const _Symbol2 = Symbol;
@@ -33,15 +33,15 @@ function _typeof(arg0) {
     str = typeof arg0;
   };
 }
-function _setPrototypeOf(StandAloneMonthParser, Parser) {
+function _setPrototypeOf(ExtendedYearParser, Parser) {
   let _setPrototypeOf = Object.setPrototypeOf;
   if (!_setPrototypeOf) {
-    _setPrototypeOf = function _setPrototypeOf(StandAloneMonthParser, Parser) {
-      StandAloneMonthParser.__proto__ = Parser;
-      return StandAloneMonthParser;
+    _setPrototypeOf = function _setPrototypeOf(ExtendedYearParser, Parser) {
+      ExtendedYearParser.__proto__ = Parser;
+      return ExtendedYearParser;
     };
   }
-  return _setPrototypeOf(StandAloneMonthParser, Parser);
+  return _setPrototypeOf(ExtendedYearParser, Parser);
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
@@ -60,7 +60,7 @@ function _getPrototypeOf(arg0) {
   return _getPrototypeOf(arg0);
 }
 _createSuperInternal = undefined;
-class StandAloneMonthParser {
+class ExtendedYearParser {
   constructor() {
     if (this instanceof c1) {
       length = arguments.length;
@@ -96,10 +96,10 @@ class StandAloneMonthParser {
         str2 = "priority";
         if ("priority" in applyResult) {
           _Object = Object;
-          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 110, enumerable: true, configurable: true, writable: true });
+          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 130, enumerable: true, configurable: true, writable: true });
         } else {
-          num3 = 110;
-          applyResult.priority = 110;
+          num3 = 130;
+          applyResult.priority = 130;
         }
         if (tmp13) {
           _ReferenceError = ReferenceError;
@@ -110,7 +110,7 @@ class StandAloneMonthParser {
           tmp19 = referenceError1;
           throw referenceError1;
         } else {
-          items1 = ["Y", "R", "q", "Q", "M", "w", "I", "D", "i", "e", "c", "t", "T"];
+          items1 = ["G", "y", "Y", "R", "w", "I", "i", "e", "c", "t", "T"];
           str3 = "incompatibleTokens";
           if ("incompatibleTokens" in applyResult) {
             _Object2 = Object;
@@ -134,8 +134,8 @@ class StandAloneMonthParser {
     }
   }
 }
-closure_1 = StandAloneMonthParser;
-if (typeof Parser !== "find") {
+closure_1 = ExtendedYearParser;
+if (typeof Parser !== "fileFinishedImporting") {
   if (null !== Parser) {
     let _TypeError = TypeError;
     let typeError = new TypeError("Super expression must either be null or a function");
@@ -146,12 +146,12 @@ let prototype = Parser;
 if (Parser) {
   prototype = Parser.prototype;
 }
-let obj = { value: StandAloneMonthParser, writable: true, configurable: true };
-StandAloneMonthParser.prototype = Object.create(prototype, { constructor: obj });
+let obj = { value: ExtendedYearParser, writable: true, configurable: true };
+ExtendedYearParser.prototype = Object.create(prototype, { constructor: obj });
 if (Parser) {
-  _setPrototypeOf(StandAloneMonthParser, Parser);
+  _setPrototypeOf(ExtendedYearParser, Parser);
 }
-_createSuperInternal = StandAloneMonthParser;
+_createSuperInternal = ExtendedYearParser;
 let num = 0;
 closure_1 = (function _isNativeReflectConstruct() {
   if (typeof Reflect !== "Array") {
@@ -162,7 +162,7 @@ closure_1 = (function _isNativeReflectConstruct() {
         return false;
       } else {
         const _Proxy = Proxy;
-        if (typeof Proxy === "find") {
+        if (typeof Proxy === "fileFinishedImporting") {
           return true;
         } else {
           try {
@@ -211,43 +211,23 @@ _createSuperInternal = function _createSuperInternal() {
 };
 obj = {
   key: "parse",
-  value: function parse(arg0, arg1, ordinalNumber) {
-    function valueCallback(arg0) {
-      return arg0 - 1;
-    }
-    if ("L" === arg1) {
-      return _createSuperInternal(3576).mapValue(_createSuperInternal(3576).parseNumericPattern(_createSuperInternal(3577).numericPatterns.month, arg0), valueCallback);
-    } else if ("LL" === arg1) {
-      return _createSuperInternal(3576).mapValue(_createSuperInternal(3576).parseNDigits(2, arg0), valueCallback);
-    } else if ("Lo" === arg1) {
-      return _createSuperInternal(3576).mapValue(ordinalNumber.ordinalNumber(arg0, { unit: "month" }), valueCallback);
-    } else if ("LLL" === arg1) {
-      return ordinalNumber.month(arg0, { width: "abbreviated", context: "standalone" }) || ordinalNumber.month(arg0, { width: "narrow", context: "standalone" });
-    } else if ("LLLLL" === arg1) {
-      return ordinalNumber.month(arg0, { width: "narrow", context: "standalone" });
+  value: function parse(arg0, arg1) {
+    if ("u" === arg1) {
+      let parseNDigitsSignedResult = _createSuperInternal(3580).parseNDigitsSigned(4, arg0);
     } else {
-      return ordinalNumber.month(arg0, { width: "wide", context: "standalone" }) || ordinalNumber.month(arg0, { width: "abbreviated", context: "standalone" }) || ordinalNumber.month(arg0, { width: "narrow", context: "standalone" });
+      parseNDigitsSignedResult = _createSuperInternal(3580).parseNDigitsSigned(arg1.length, arg0);
     }
+    return parseNDigitsSignedResult;
   }
 };
 let items = [
   obj,
   {
-    key: "validate",
-    value: function validate(arg0, arg1) {
-      let tmp = arg1 >= 0;
-      if (tmp) {
-        tmp = arg1 <= 11;
-      }
-      return tmp;
-    }
-  },
-  {
     key: "set",
-    value: function set(setUTCMonth) {
-      setUTCMonth.setUTCMonth(arg2, 1);
-      setUTCMonth.setUTCHours(0, 0, 0, 0);
-      return setUTCMonth;
+    value: function set(setUTCFullYear) {
+      setUTCFullYear.setUTCFullYear(arg2, 0, 1);
+      setUTCFullYear.setUTCHours(0, 0, 0, 0);
+      return setUTCFullYear;
     }
   }
 ];
@@ -270,4 +250,4 @@ if (0 < items.length) {
   } while (num < items.length);
 }
 
-export { StandAloneMonthParser };
+export { ExtendedYearParser };

@@ -1,10 +1,10 @@
-// Module ID: 15182
-// Function ID: 15183
+// Module ID: 15208
+// Function ID: 15209
 // Name: useTotalPossibleBoostCount
-// Dependencies: [19, 4077, 676, 2]
+// Dependencies: [19, 4081, 676, 2]
 // Exports: default
 
-// Module 15182 (useTotalPossibleBoostCount)
+// Module 15208 (useTotalPossibleBoostCount)
 import { useMemo } from "noop";
 import BoostedGuildTiers from "BoostedGuildTiers";
 import ME from "ME";

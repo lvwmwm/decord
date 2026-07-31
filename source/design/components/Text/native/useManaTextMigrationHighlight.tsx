@@ -1,10 +1,10 @@
-// Module ID: 4187
-// Function ID: 4188
+// Module ID: 4191
+// Function ID: 4192
 // Name: useManaTextMigrationHighlight
-// Dependencies: [17, 4188, 1302, 4189, 712, 589, 4035, 2]
+// Dependencies: [17, 4192, 1302, 4193, 712, 589, 4039, 2]
 // Exports: useManaTextMigrationHighlight, withManaTextMigrationHighlight
 
-// Module 4187 (useManaTextMigrationHighlight)
+// Module 4191 (useManaTextMigrationHighlight)
 import { StyleSheet } from "get ActivityIndicator";
 import importDefaultResult from "getUserAgnosticState";
 import handleThemeChange from "handleThemeChange";
@@ -60,7 +60,7 @@ export const withManaTextMigrationHighlight = function withManaTextMigrationHigh
     let obj = { get: null };
     obj[0] = function get(arg0, arg1, arg2) {
       const value = Reflect.get(arg0, arg1, arg2);
-      if (typeof arg1 !== "tee") {
+      if (typeof arg1 !== "__FORMATJS_LISTFORMAT_DATA__") {
         if (null != value) {
           let obj = callback(table[6]);
           const tmp5 = obj.isThemeLight(theme.theme) ? closure_8 : closure_7;

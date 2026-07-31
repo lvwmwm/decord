@@ -1,10 +1,10 @@
-// Module ID: 4099
-// Function ID: 4100
+// Module ID: 4103
+// Function ID: 4104
 // Name: gameServerResponseToInstance
 // Dependencies: [2]
 // Exports: default
 
-// Module 4099 (gameServerResponseToInstance)
+// Module 4103 (gameServerResponseToInstance)
 const result = require("set").fileFinishedImporting("modules/game_server/utils/gameServerResponseToInstance.tsx");
 
 export default function gameServerResponseToInstance(id) {

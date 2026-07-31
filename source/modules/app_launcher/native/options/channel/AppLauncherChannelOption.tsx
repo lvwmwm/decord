@@ -1,10 +1,10 @@
-// Module ID: 11360
-// Function ID: 11361
+// Module ID: 11378
+// Function ID: 11379
 // Name: AppLauncherChannelOption
-// Dependencies: [32, 19, 1372, 21, 589, 4380, 11349, 11361, 4157, 11361, 1959, 2]
+// Dependencies: [32, 19, 1372, 21, 589, 4384, 11367, 11379, 4161, 11379, 1959, 2]
 // Exports: default
 
-// Module 11360 (AppLauncherChannelOption)
+// Module 11378 (AppLauncherChannelOption)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";

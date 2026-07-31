@@ -1,10 +1,10 @@
-// Module ID: 15637
-// Function ID: 15638
+// Module ID: 15665
+// Function ID: 15666
 // Name: getSecondsSliderLabel
-// Dependencies: [1236, 3771, 2]
+// Dependencies: [1236, 3775, 2]
 // Exports: getSecondsSliderLabel
 
-// Module 15637 (getSecondsSliderLabel)
+// Module 15665 (getSecondsSliderLabel)
 const result = require("set").fileFinishedImporting("utils/SecondsSliderUtils.tsx");
 
 export const getSecondsSliderLabel = function getSecondsSliderLabel(rateLimitPerUser, arg1, intl) {
@@ -17,7 +17,7 @@ export const getSecondsSliderLabel = function getSecondsSliderLabel(rateLimitPer
     intl = require(1236) /* getSystemLocale */.intl;
     stringResult = intl.string(require(1236) /* getSystemLocale */.t.Yl1D84);
   }
-  const durationResult = importDefault(3771).duration(rateLimitPerUser, "seconds");
+  const durationResult = importDefault(3775).duration(rateLimitPerUser, "seconds");
   if (durationResult.days() > 0) {
     const intl6 = require(1236) /* getSystemLocale */.intl;
     let t = require(1236) /* getSystemLocale */.t;

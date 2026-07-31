@@ -1,10 +1,10 @@
-// Module ID: 4078
-// Function ID: 4079
+// Module ID: 4082
+// Function ID: 4083
 // Name: str11
-// Dependencies: [1881, 4079, 2]
+// Dependencies: [1881, 4083, 2]
 // Exports: GAME_SERVER_SURVEY_URL
 
-// Module 4078 (str11)
+// Module 4082 (str11)
 let obj = { SELECT_GAME: "select-game", SERVER_SETTINGS: "server-settings" };
 obj = { type: "go-to-step", step: obj.SERVER_SETTINGS };
 obj = { type: "go-to-step", step: obj.SELECT_GAME };
@@ -68,7 +68,7 @@ export const GAME_SERVER_SLIDE_PADDING = 24;
 export const GAME_SERVER_SLIDE_WIDTH = 680;
 export const GAME_SERVER_SLIDE_CONTENT_WIDTH = 632;
 export const GAME_SERVER_MAX_INSTANCES = 10;
-export const GAME_SERVER_MAX_SERVERS_PER_USER = 5;
+export const GAME_SERVER_SHOP_MAX_INSTANCES = 5;
 export const GAME_SERVER_MAX_NAME_LENGTH = 32;
 export const GAME_SERVER_MIN_DELAY_TIME_MS = 1000;
 export const GAME_SERVER_COLLECTION_ID = str;
@@ -78,6 +78,6 @@ export const HYTALE_GAME_ID = str8;
 export { NewGamesCoachmarkContent };
 export const GameServerGameProvider = { SHOCKBYTE: 0, [0]: "SHOCKBYTE" };
 export const GAME_SERVER_SUPPORT_URLS = obj1;
-export const GAME_SERVER_TOS = { [require(4079).GameServerProviderType.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy" };
+export const GAME_SERVER_TOS = { [require(4083).GameServerProviderType.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy" };
 export const GAME_SERVER_SURVEY_URL = (arg0, arg1) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=" + arg0 + "&guild_id=" + arg1;
 export const GAME_SERVER_POWERUP_SKU_ID = "0";

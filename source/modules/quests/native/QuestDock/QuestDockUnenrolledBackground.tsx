@@ -1,9 +1,9 @@
-// Module ID: 14214
-// Function ID: 14215
+// Module ID: 14239
+// Function ID: 14240
 // Name: QUEST_DOCK_EXPANDED_HEIGHT
-// Dependencies: [32, 19, 17, 4181, 5033, 14118, 676, 21, 4189, 14200, 14114, 14119, 14122, 8115, 589, 3893, 712, 689, 4050, 4599, 500, 10956, 7676, 8139, 5141, 4611, 2]
+// Dependencies: [32, 19, 17, 4185, 5037, 14140, 676, 21, 4193, 14223, 14136, 14141, 14144, 8122, 589, 3897, 712, 689, 4054, 4603, 500, 14222, 10974, 7684, 8146, 5145, 4615, 2]
 
-// Module 14214 (QUEST_DOCK_EXPANDED_HEIGHT)
+// Module 14239 (QUEST_DOCK_EXPANDED_HEIGHT)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "CONFIG_NEVER_ANIMATE";
 import get_ActivityIndicator from "n";
@@ -11,7 +11,7 @@ import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLi
 import { QuestDockMode } from "QuestsExperimentLocations";
 import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT";
 import { VerticalGradient } from "ME";
-import jsxProd from "openRewardClaimBottomSheet";
+import jsxProd from "context";
 import createCacheKey from "createCacheKey";
 
 let QUEST_DOCK_EXPANDED_HEIGHT;
@@ -51,22 +51,24 @@ let closure_15 = { code: "function QuestDockUnenrolledBackgroundTsx2(){const{wit
 const memoResult = importAllResult.memo(function QuestDockUnenrolledBackground() {
   let closure_4;
   let staticUrl;
-  let tmp17;
+  let tmp18;
   let videoAsset;
-  let obj = importAllResult;
-  let tmp3 = callback2();
+  let obj = activeQuestDockMode(setRestingQuestDockMode[9]);
+  const questCreative = obj.useQuestCreative();
+  const tmp4 = callback2();
   let obj1 = activeQuestDockMode(setRestingQuestDockMode[10]);
-  const questDockHeroAsset = obj1.useQuestDockHeroAsset(importAllResult.useContext(windowDimensions(setRestingQuestDockMode[9])).quest);
+  const questDockHeroAsset = obj1.useQuestDockHeroAsset(questCreative);
   ({ staticUrl, videoAsset } = questDockHeroAsset);
+  let obj2 = importAllResult;
   const context = importAllResult.useContext(activeQuestDockMode(setRestingQuestDockMode[11]).QuestDockGestureContext);
   activeQuestDockMode = context.activeQuestDockMode;
-  windowDimensions = context.windowDimensions;
+  const windowDimensions = context.windowDimensions;
   setRestingQuestDockMode = importAllResult.useContext(activeQuestDockMode(setRestingQuestDockMode[12]).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  let obj2 = activeQuestDockMode(setRestingQuestDockMode[14]);
+  let obj3 = activeQuestDockMode(setRestingQuestDockMode[14]);
   let items = [maybeApplyNoTextColorForLightCustomTheme];
-  const stateFromStores = obj2.useStateFromStores(items, () => lib.useReducedMotion);
-  let obj3 = activeQuestDockMode(setRestingQuestDockMode[15]);
-  const token = obj3.useToken(windowDimensions(setRestingQuestDockMode[16]).colors.CARD_BACKGROUND_DEFAULT);
+  const stateFromStores = obj3.useStateFromStores(items, () => lib.useReducedMotion);
+  let obj4 = activeQuestDockMode(setRestingQuestDockMode[15]);
+  const token = obj4.useToken(windowDimensions(setRestingQuestDockMode[16]).colors.CARD_BACKGROUND_DEFAULT);
   const items1 = [token];
   const memo = importAllResult.useMemo(() => {
     const obj = windowDimensions(setRestingQuestDockMode[17])(token);
@@ -80,7 +82,7 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBackground()
     return items;
   }, items1);
   const memo1 = importAllResult.useMemo(() => [0, 0.33, 0.76, 1], []);
-  let obj4 = activeQuestDockMode(setRestingQuestDockMode[18]);
+  let obj5 = activeQuestDockMode(setRestingQuestDockMode[18]);
   const fn = function s() {
     let obj = activeQuestDockMode(setRestingQuestDockMode[19]);
     let obj1 = activeQuestDockMode;
@@ -105,11 +107,11 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBackground()
   fn.__closure = obj;
   fn.__workletHash = 3565242281634;
   fn.__initData = closure_14;
-  const animatedStyle = obj4.useAnimatedStyle(fn);
-  const tmp13 = closure_8;
-  const tmp15 = token;
-  const tmp7 = windowDimensions(setRestingQuestDockMode[13])(activeQuestDockMode);
-  [tmp17, closure_4] = token(importAllResult.useState("active" !== first.currentState), 2);
+  const animatedStyle = obj5.useAnimatedStyle(fn);
+  const tmp14 = closure_8;
+  const tmp16 = token;
+  const tmp8 = windowDimensions(setRestingQuestDockMode[13])(activeQuestDockMode);
+  [tmp18, closure_4] = token(importAllResult.useState("active" !== first.currentState), 2);
   const items2 = [activeQuestDockMode, setRestingQuestDockMode];
   const effect = importAllResult.useEffect(() => {
     let closure_0 = first.addEventListener("change", (arg0) => {
@@ -126,9 +128,9 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBackground()
       lib.remove();
     };
   }, items2);
-  let isRendered = !tmp17;
-  if (!tmp17) {
-    isRendered = importAllResult.useContext(windowDimensions(setRestingQuestDockMode[9])).isRendered;
+  let isRendered = !tmp18;
+  if (!tmp18) {
+    isRendered = importAllResult.useContext(windowDimensions(setRestingQuestDockMode[21])).isRendered;
   }
   if (isRendered) {
     isRendered = !stateFromStores;
@@ -137,20 +139,20 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBackground()
     isRendered = null != videoAsset;
   }
   if (isRendered) {
-    let tmp4Result = tmp4(tmp2[20]);
-    isRendered = !tmp4Result.isAndroid();
+    let tmpResult = tmp(tmp2[20]);
+    isRendered = !tmpResult.isAndroid();
   }
   if (isRendered) {
-    tmp4Result = tmp4(tmp2[21]);
-    isRendered = tmp4Result.isHeroVideoSupported(videoAsset);
+    tmpResult = tmp(tmp2[22]);
+    isRendered = tmpResult.isHeroVideoSupported(videoAsset);
   }
-  const tmp15Result = tmp15(obj.useState(false), 2);
-  first = tmp15Result[0];
-  maybeApplyNoTextColorForLightCustomTheme = tmp15Result[1];
-  const callback = obj.useCallback(() => {
+  const tmp16Result = tmp16(obj2.useState(false), 2);
+  first = tmp16Result[0];
+  maybeApplyNoTextColorForLightCustomTheme = tmp16Result[1];
+  const callback = obj2.useCallback(() => {
     lib(true);
   }, []);
-  const tmp16 = token(importAllResult.useState("active" !== first.currentState), 2);
+  const tmp17 = token(importAllResult.useState("active" !== first.currentState), 2);
   class G {
     constructor() {
       obj = activeQuestDockMode(setRestingQuestDockMode[19]);
@@ -166,49 +168,49 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBackground()
       return obj;
     }
   }
-  obj = { withSpring: tmp4(tmp2[19]).withSpring, activeQuestDockMode, QuestDockMode: tmp12, videoLoaded: first, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED: tmp13 };
+  obj = { withSpring: tmp(tmp2[19]).withSpring, activeQuestDockMode, QuestDockMode: tmp13, videoLoaded: first, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED: tmp14 };
   G.__closure = obj;
   G.__workletHash = 13084905891385;
   G.__initData = closure_15;
   const animatedStyle1 = activeQuestDockMode(setRestingQuestDockMode[18]).useAnimatedStyle(G);
   obj1 = { style: items3, children: null };
-  items3 = [tmp3.backgroundWrapper, animatedStyle];
-  let tmpResult = tmp(tmp2[22]);
+  items3 = [tmp4.backgroundWrapper, animatedStyle];
+  let tmp7Result = tmp7(tmp2[23]);
   if (isRendered) {
     obj2 = { children: null };
     obj3 = { style: null, onLoad: null, source: null, paused: null, resizeMode: "cover", muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false };
-    obj3[0] = tmp3.backgroundHeroAssetVideo;
+    obj3[0] = tmp4.backgroundHeroAssetVideo;
     obj3[1] = callback;
     obj4 = { uri: null };
     obj4[0] = videoAsset.url;
     obj3[2] = obj4;
-    obj3[3] = tmp7 !== tmp12.EXPANDED;
-    const items4 = [callback(tmp4(tmp2[23]).VideoComponent, obj3), ];
-    const obj5 = { style: null, children: null };
+    obj3[3] = tmp8 !== tmp13.EXPANDED;
+    const items4 = [callback(tmp(tmp2[24]).VideoComponent, obj3), ];
+    obj5 = { style: null, children: null };
     obj5[0] = animatedStyle1;
-    tmpResult = tmp(tmp2[22]);
+    tmp7Result = tmp7(tmp2[23]);
     const obj6 = { style: null, source: null };
-    obj6[0] = tmp3.backgroundHeroAsset;
+    obj6[0] = tmp4.backgroundHeroAsset;
     const obj7 = { uri: null };
     obj7[0] = staticUrl;
     obj6[1] = obj7;
-    obj5[1] = callback(tmp(tmp2[24]), obj6);
-    items4[1] = callback(tmpResult, obj5);
+    obj5[1] = callback(tmp7(tmp2[25]), obj6);
+    items4[1] = callback(tmp7Result, obj5);
     obj2[0] = items4;
-    let tmp24Result = tmp24(obj.Fragment, obj2);
-    let tmp26 = callback;
+    let tmp25Result = tmp25(obj2.Fragment, obj2);
+    let tmp27 = callback;
   } else {
-    tmp26 = callback;
+    tmp27 = callback;
     const obj8 = { style: null, source: null };
-    obj8[0] = tmp3.backgroundHeroAsset;
+    obj8[0] = tmp4.backgroundHeroAsset;
     const obj9 = { uri: null };
     obj9[0] = staticUrl;
     obj8[1] = obj9;
-    tmp24Result = callback(tmp(tmp2[24]), obj8);
+    tmp25Result = callback(tmp7(tmp2[25]), obj8);
   }
-  const items5 = [tmp24Result, tmp26(windowDimensions(setRestingQuestDockMode[25]), { locations: memo1, style: tmp3.backgroundGradient, start: VerticalGradient.START, end: VerticalGradient.END, colors: memo })];
+  const items5 = [tmp25Result, tmp27(windowDimensions(setRestingQuestDockMode[26]), { locations: memo1, style: tmp4.backgroundGradient, start: VerticalGradient.START, end: VerticalGradient.END, colors: memo })];
   obj1[1] = items5;
-  return closure_12(tmpResult, obj1);
+  return closure_12(tmp7Result, obj1);
 });
 let obj2 = {};
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockUnenrolledBackground.tsx");

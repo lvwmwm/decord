@@ -7,4 +7,4 @@
 import registerAsset from "registerAsset";
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/channel_following/dark", width: 280, height: 120, scales: [2, 3], hash: "f4a21afba818bb68082403a24e97a617", name: "channel_following_success_1", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [1, 2, 3], hash: "0cbd606a7d77f46a42c156cab0771b02", name: "ic_mention_24px", type: "png" });

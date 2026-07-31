@@ -1,10 +1,10 @@
-// Module ID: 8098
-// Function ID: 8099
+// Module ID: 8105
+// Function ID: 8106
 // Name: UserProfileBanner
-// Dependencies: [32, 19, 17, 676, 21, 4189, 689, 712, 3862, 7976, 1416, 8099, 4717, 1236, 8100, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4193, 689, 712, 3866, 7983, 1416, 8106, 4721, 1236, 8107, 2]
 // Exports: default
 
-// Module 8098 (UserProfileBanner)
+// Module 8105 (UserProfileBanner)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

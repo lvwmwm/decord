@@ -1,9 +1,9 @@
-// Module ID: 13825
-// Function ID: 13826
+// Module ID: 13849
+// Function ID: 13850
 // Name: route
-// Dependencies: [19, 13746, 1874, 7753, 676, 4528, 1236, 5645, 589, 10116, 13749, 2]
+// Dependencies: [19, 13770, 1874, 7761, 676, 4532, 1236, 5649, 589, 10133, 13773, 2]
 
-// Module 13825 (route)
+// Module 13849 (route)
 import noop from "noop";
 import hasFetchedCredentials from "hasFetchedCredentials";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -27,7 +27,7 @@ createToggle = {
         flag = false;
       }
       if (!flag) {
-        let obj = callback2(4528);
+        let obj = callback2(4532);
         obj = { title: null, body: null };
         const intl = callback(1236).intl;
         obj[0] = intl.string(callback(1236).t.v740sh);
@@ -40,8 +40,8 @@ createToggle = {
   },
   useTrailing: function useAccountSecurityKeysSettingTrailing() {
     if (!hasFetchedCredentials.hasFetchedCredentials()) {
-      const webAuthnCredentials = require(5645) /* _fetchWebAuthnConditionalChallenge */.fetchWebAuthnCredentials();
-      let obj = require(5645) /* _fetchWebAuthnConditionalChallenge */;
+      const webAuthnCredentials = require(5649) /* _fetchWebAuthnConditionalChallenge */.fetchWebAuthnCredentials();
+      let obj = require(5649) /* _fetchWebAuthnConditionalChallenge */;
     }
     const items = [hasFetchedCredentials];
     return require(589) /* initialize */.useStateFromStores(items, () => {
@@ -57,7 +57,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.WEBAUTHN_VIEW,
   getComponent() {
-    return require(13749) /* UserSettingsWebAuthn */.default;
+    return require(13773) /* UserSettingsWebAuthn */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

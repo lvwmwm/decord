@@ -1,10 +1,10 @@
-// Module ID: 15203
-// Function ID: 15204
+// Module ID: 15230
+// Function ID: 15231
 // Name: GuildRoleSubscriptionsUpsellActionSheet
-// Dependencies: [19, 17, 676, 1369, 21, 4189, 5243, 5141, 15204, 4185, 1236, 4600, 8301, 2]
+// Dependencies: [19, 17, 676, 1369, 21, 4193, 5247, 5145, 15231, 4189, 1236, 4604, 8308, 2]
 // Exports: default
 
-// Module 15203 (GuildRoleSubscriptionsUpsellActionSheet)
+// Module 15230 (GuildRoleSubscriptionsUpsellActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { GuildSettingsSections } from "ME";
@@ -32,16 +32,16 @@ export default function GuildRoleSubscriptionsUpsellActionSheet(arg0) {
     children: null
   };
   obj = { source: null };
-  obj[0] = importDefault(15204);
-  const items = [callback(importDefault(5141), obj), , , , ];
+  obj[0] = importDefault(15231);
+  const items = [callback(importDefault(5145), obj), , , , ];
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.C0m4rQ);
-  items[1] = callback(require(4185) /* Text */.Text, obj);
+  items[1] = callback(require(4189) /* Text */.Text, obj);
   const obj1 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl2.string(require(1236) /* getSystemLocale */.t.zOHfEX);
-  items[2] = callback(require(4185) /* Text */.Text, obj1);
+  items[2] = callback(require(4189) /* Text */.Text, obj1);
   const obj2 = {
     onPress() {
       callback(outer1_5.UNKNOWN);
@@ -51,7 +51,7 @@ export default function GuildRoleSubscriptionsUpsellActionSheet(arg0) {
   };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[1] = intl3.string(require(1236) /* getSystemLocale */.t.OgQQbG);
-  items[3] = callback(require(4600) /* Button */.Button, obj2);
+  items[3] = callback(require(4604) /* Button */.Button, obj2);
   const obj3 = { style: tmp.dismissButton, children: null };
   const obj4 = {
     onPress() {
@@ -62,8 +62,8 @@ export default function GuildRoleSubscriptionsUpsellActionSheet(arg0) {
   };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj4[1] = intl4.string(require(1236) /* getSystemLocale */.t.WAI6xu);
-  obj3[1] = callback(require(4600) /* Button */.Button, obj4);
+  obj3[1] = callback(require(4604) /* Button */.Button, obj4);
   items[4] = callback(View, obj3);
   obj[2] = items;
-  return callback2(require(5243) /* Background */.BottomSheet, obj);
+  return callback2(require(5247) /* Background */.BottomSheet, obj);
 };

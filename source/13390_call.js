@@ -1,21 +1,10 @@
 // Module ID: 13390
 // Function ID: 13391
 // Name: call
-// Dependencies: [13365]
+// Dependencies: [13388]
 
 // Module 13390 (call)
-if (require("module_13365")) {
-  let fn = call.bind(call);
-} else {
-  fn = () => {
-    const apply = call.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(tmp);
-    } else {
-      applyArgumentsResult = apply(tmp, arguments);
-    }
-    return applyArgumentsResult;
-  };
-}
+let closure_0 = require("call")({}.toString);
+let closure_1 = require("call")("".slice);
 
-export default fn;
+export default (arg0) => callback2(callback(arg0), 8, -1);

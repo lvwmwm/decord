@@ -1,10 +1,10 @@
-// Module ID: 6658
-// Function ID: 6659
+// Module ID: 6664
+// Function ID: 6665
 // Name: BuyNitroPurchaseButtonCrossfadeLayer
-// Dependencies: [32, 19, 17, 21, 4050, 4190, 4193, 4600, 2]
+// Dependencies: [32, 19, 17, 21, 4054, 4194, 4197, 4604, 2]
 // Exports: default, useBuyNitroButtonCrossfade
 
-// Module 6658 (BuyNitroPurchaseButtonCrossfadeLayer)
+// Module 6664 (BuyNitroPurchaseButtonCrossfadeLayer)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
@@ -20,7 +20,7 @@ export default function BuyNitroPurchaseButtonCrossfadeLayer(arg0) {
   let snapshot;
   ({ snapshot, onDone } = arg0);
   let sharedValue;
-  let obj = onDone(4050);
+  let obj = onDone(4054);
   sharedValue = obj.useSharedValue(1);
   let fn = function _() {
     return { opacity: sharedValue.get() };
@@ -29,7 +29,7 @@ export default function BuyNitroPurchaseButtonCrossfadeLayer(arg0) {
   fn.__workletHash = 10244393639035;
   fn.__initData = closure_7;
   const items = [sharedValue, onDone];
-  const animatedStyle = onDone(4050).useAnimatedStyle(fn);
+  const animatedStyle = onDone(4054).useAnimatedStyle(fn);
   const effect = React.useEffect(() => {
     let obj = onDone(outer1_2[5]);
     const fn = function t(arg0) {
@@ -49,8 +49,8 @@ export default function BuyNitroPurchaseButtonCrossfadeLayer(arg0) {
   obj = { style: items1, pointerEvents: "none", children: null };
   items1 = [StyleSheet.absoluteFill, animatedStyle];
   obj = { text: snapshot.ctaText, variant: snapshot.variant, size: "lg", grow: true, onPress: "a" };
-  obj[2] = jsx(onDone(4600).Button, { text: snapshot.ctaText, variant: snapshot.variant, size: "lg", grow: true, onPress: "a" });
-  return jsx(sharedValue(4050).View, { text: snapshot.ctaText, variant: snapshot.variant, size: "lg", grow: true, onPress: "a" });
+  obj[2] = jsx(onDone(4604).Button, { text: snapshot.ctaText, variant: snapshot.variant, size: "lg", grow: true, onPress: "a" });
+  return jsx(sharedValue(4054).View, { text: snapshot.ctaText, variant: snapshot.variant, size: "lg", grow: true, onPress: "a" });
 };
 export const useBuyNitroButtonCrossfade = function useBuyNitroButtonCrossfade(variant, stringResult) {
   let obj = React;

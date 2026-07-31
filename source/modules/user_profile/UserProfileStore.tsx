@@ -1,9 +1,9 @@
-// Module ID: 5894
-// Function ID: 5895
+// Module ID: 5899
+// Function ID: 5900
 // Name: createUserWidgetFromServer
-// Dependencies: [1946, 1882, 1218, 1862, 1220, 4276, 5027, 676, 5895, 12, 5896, 5916, 5902, 4074, 1901, 1853, 5917, 1236, 5918, 4871, 1351, 2]
+// Dependencies: [1946, 1882, 1218, 1862, 1220, 4280, 5031, 676, 5900, 12, 5901, 5922, 5907, 4078, 1901, 1853, 5923, 1236, 5924, 4875, 1351, 2]
 
-// Module 5894 (createUserWidgetFromServer)
+// Module 5899 (createUserWidgetFromServer)
 import _getSystemLocale from "_getSystemLocale";
 import createdAt from "createdAt";
 import fetchFingerprint from "fetchFingerprint";
@@ -17,30 +17,24 @@ import set from "fetchFingerprint";
 const require = arg1;
 function createUserWidgetFromServer(data) {
   const type = data.data.type;
-  if (require(5895) /* WidgetType */.WidgetType.CURRENT_GAMES !== type) {
-    if (tmp2(5895).WidgetType.FAVORITE_GAMES !== type) {
-      if (tmp2(5895).WidgetType.PLAYED_GAMES !== type) {
-        if (tmp2(5895).WidgetType.WANT_TO_PLAY_GAMES !== type) {
-          if (tmp2(5895).WidgetType.APPLICATION === type) {
+  if (require(5900) /* WidgetType */.WidgetType.CURRENT_GAMES !== type) {
+    if (tmp(5900).WidgetType.FAVORITE_GAMES !== type) {
+      if (tmp(5900).WidgetType.PLAYED_GAMES !== type) {
+        if (tmp(5900).WidgetType.WANT_TO_PLAY_GAMES !== type) {
+          if (tmp(5900).WidgetType.APPLICATION === type) {
             let obj = { id: null, applicationId: null };
             obj[0] = data.id;
             obj[1] = data.data.application_id;
-            const applicationWidget = new tmp2(5916).ApplicationWidget(obj);
+            const applicationWidget = new tmp(5922).ApplicationWidget(obj);
             return applicationWidget;
-          } else if (tmp2(5895).WidgetType.PERSONAL === type) {
-            if (null != data.data.title) {
-              try {
-                const _JSON = JSON;
-                const parsed = JSON.parse(data.data.title);
-                obj = { id: null, header: null, top: null, bottom: null };
-                obj[0] = data.id;
-                ({ header: obj[1], top: obj[2], bottom: obj[3] } = parsed);
-                const userProfilePersonalWidget = new tmp2(5902).UserProfilePersonalWidget(obj);
-                return userProfilePersonalWidget;
-              } catch (err) {
-                return tmp;
-              }
-            }
+          } else if (tmp(5900).WidgetType.PERSONAL === type) {
+            obj = { id: null, header: null, sections: null };
+            obj[0] = data.id;
+            const header = data.data.header;
+            obj[1] = header;
+            obj[2] = tmp(5907).parsePersonalWidgetSections(data.data.sections);
+            const userProfilePersonalWidget = new tmp(5907).UserProfilePersonalWidget(obj);
+            return userProfilePersonalWidget;
           }
         }
       }
@@ -48,9 +42,9 @@ function createUserWidgetFromServer(data) {
   }
   const games = data.data.games;
   const mapped = games.map((applicationId) => ({ applicationId: applicationId.game_id, comment: applicationId.comment, tags: applicationId.tags }));
-  const obj3 = importDefault(12);
+  const obj4 = importDefault(12);
   obj = { id: data.id, type, games: importDefault(12).uniqBy(mapped, "applicationId") };
-  const baseGameWidget = new tmp2(5896).BaseGameWidget(obj);
+  const baseGameWidget = new tmp(5901).BaseGameWidget(obj);
   return baseGameWidget;
 }
 function checkUserProfileCollectiblesExpiration(id, guild_id) {
@@ -486,7 +480,7 @@ function handleProfileFetchFailure(arg0) {
   set.delete(userId);
   value = map1.get(userId);
   if (value == null) {
-    const obj = { connectedAccounts: null, applicationRoleConnections: null, premiumSince: null, premiumGuildSince: null, application: null, legacyUsername: null, userId: null, banner: null, accentColor: null, bio: "", pronouns: "", premiumType: null, fetchStartedAt: 0, fetchEndedAt: 0, fetchError: "channel" };
+    const obj = { connectedAccounts: null, applicationRoleConnections: null, premiumSince: null, premiumGuildSince: null, application: null, legacyUsername: null, userId: null, banner: null, accentColor: null, bio: "", pronouns: "", premiumType: null, fetchStartedAt: 0, fetchEndedAt: 0, fetchError: "bottom" };
     obj[0] = [];
     obj[1] = [];
     obj[6] = userId;
@@ -551,7 +545,7 @@ function handleProfileUpdateSuccess(guild_id) {
           const merged = Object.assign(value);
           obj = { collectibles: null };
           obj[0] = collectibles;
-          const merged1 = Object.assign(importDefault(5918)(obj));
+          const merged1 = Object.assign(importDefault(5924)(obj));
           obj.accentColor = accent_color;
           obj.banner = banner;
           obj.bio = bio;
@@ -572,7 +566,7 @@ function handleProfileUpdateSuccess(guild_id) {
       const merged2 = Object.assign(value1);
       const obj2 = { collectibles: null };
       obj2[0] = collectibles2;
-      const merged3 = Object.assign(importDefault(5918)(obj2));
+      const merged3 = Object.assign(importDefault(5924)(obj2));
       obj1.accentColor = accent_color2;
       obj1.banner = banner2;
       obj1.bio = bio2;

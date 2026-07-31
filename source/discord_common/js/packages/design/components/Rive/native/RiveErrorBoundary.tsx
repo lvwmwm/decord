@@ -1,9 +1,9 @@
-// Module ID: 3969
-// Function ID: 3970
+// Module ID: 3973
+// Function ID: 3974
 // Name: getDerivedStateFromError
-// Dependencies: [19, 3965, 2]
+// Dependencies: [19, 3969, 2]
 
-// Module 3969 (getDerivedStateFromError)
+// Module 3973 (getDerivedStateFromError)
 import { Component } from "noop";
 
 class RiveErrorBoundary extends Component {

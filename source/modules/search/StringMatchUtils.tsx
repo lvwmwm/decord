@@ -1,10 +1,10 @@
-// Module ID: 14705
-// Function ID: 14706
+// Module ID: 14728
+// Function ID: 14729
 // Name: calculateJaroWinklerDistance
 // Dependencies: [2]
 // Exports: calculateJaroWinklerSimilarity
 
-// Module 14705 (calculateJaroWinklerDistance)
+// Module 14728 (calculateJaroWinklerDistance)
 function calculateJaroWinklerDistance(formatted, arg1) {
   const diff = Math.floor(Math.max(formatted.length, arg1.length) / 2) - 1;
   const items = [];

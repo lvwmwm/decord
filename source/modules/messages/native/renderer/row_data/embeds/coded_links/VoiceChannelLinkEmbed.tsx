@@ -1,10 +1,10 @@
-// Module ID: 12360
-// Function ID: 12361
+// Module ID: 12386
+// Function ID: 12387
 // Name: createVoiceChannelLinkEmbed
-// Dependencies: [32, 17, 1415, 1372, 1862, 3817, 3826, 1874, 676, 6019, 7722, 1416, 500, 1236, 4650, 4380, 2]
+// Dependencies: [32, 17, 1415, 1372, 1862, 3821, 3830, 1874, 676, 6025, 7730, 1416, 500, 1236, 4654, 4384, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 12360 (createVoiceChannelLinkEmbed)
+// Module 12386 (createVoiceChannelLinkEmbed)
 import _slicedToArray from "_slicedToArray";
 import { Image } from "get ActivityIndicator";
 import { getGuildAcronym } from "GuildNSFWContentLevel";
@@ -30,7 +30,7 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
       if (null != guild) {
         if (getUncachedChannelPermissions.can(Permissions.VIEW_CHANNEL, channel)) {
           if (obj9.can(tmp26.CONNECT, channel)) {
-            ({ colors, baseColors } = importDefault(7722)(closure_2));
+            ({ colors, baseColors } = importDefault(7730)(closure_2));
             let icon;
             if (guild != null) {
               icon = guild.icon;
@@ -55,7 +55,7 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             obj = {};
             const merged = Object.assign(baseColors);
             tmp4 = importDefault;
-            const tmp6 = importDefault(7722)(closure_2);
+            const tmp6 = importDefault(7730)(closure_2);
             let str;
             if (obj5.isAndroid()) {
               str = "";
@@ -74,14 +74,14 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             obj.acceptLabelText = stringResult;
             obj.onlineText = undefined;
             obj.memberText = undefined;
-            let tmp16Result = tmp16(4650);
+            let tmp16Result = tmp16(4654);
             const assetSource = Image.resolveAssetSource(tmp16Result.getChannelIcon(channel));
             let uri;
             if (assetSource != null) {
               uri = assetSource.uri;
             }
             obj.channelIcon = uri;
-            tmp16Result = tmp16(4380);
+            tmp16Result = tmp16(4384);
             obj.titleText = tmp16Result.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
             obj.titleColor = colors.titleColor;
             let tmp24;

@@ -1,10 +1,10 @@
-// Module ID: 6544
-// Function ID: 6545
+// Module ID: 6550
+// Function ID: 6551
 // Name: createSubscriptionInvoicePreview
-// Dependencies: [109, 32, 5, 19, 3844, 676, 3835, 530, 709, 4088, 38, 4427, 2]
+// Dependencies: [109, 32, 5, 19, 3848, 676, 3839, 530, 709, 4092, 38, 4431, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchGenericInvoicePreview, useFetchSubscriptionGiftInvoicePreview, useFetchSubscriptionInvoicePreview, useGetSubscriptionInvoice
 
-// Module 6544 (createSubscriptionInvoicePreview)
+// Module 6550 (createSubscriptionInvoicePreview)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
@@ -105,7 +105,7 @@ function _createSubscriptionInvoicePreview() {
               return obj1;
             } else {
               obj2 = { items: null, payment_source_id: null, trial_id: null, code: null, apply_entitlements: null, currency: null, renewal: null, metadata: null, load_id: null };
-              const result = callback(3835).coerceExistingItemsToNewItemInterval(callback);
+              const result = callback(3839).coerceExistingItemsToNewItemInterval(callback);
               callback = result;
               obj2[0] = result.map((planId) => {
                 const obj = {};
@@ -135,7 +135,7 @@ function _createSubscriptionInvoicePreview() {
           } else if (2 === tmp7) {
             c4 = 0;
             constants = c3;
-            const billingError = new callback(4088).BillingError(constants);
+            const billingError = new callback(4092).BillingError(constants);
             throw billingError;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -280,7 +280,7 @@ function _updateSubscriptionInvoicePreview() {
               return obj1;
             } else {
               if (null != callback2) {
-                let obj4 = callback(3835);
+                let obj4 = callback(3839);
                 callback2 = obj4.coerceExistingItemsToNewItemInterval(callback2);
               }
               let mapped;
@@ -318,7 +318,7 @@ function _updateSubscriptionInvoicePreview() {
           } else if (2 === tmp7) {
             c4 = 0;
             let closure_13 = c3;
-            const billingError = new callback(4088).BillingError(closure_13);
+            const billingError = new callback(4092).BillingError(closure_13);
             throw billingError;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -467,7 +467,7 @@ function _createOneTimePurchaseInvoicePreview() {
                 c6.quantity = c5;
               }
               c4 = 1;
-              let obj3 = callback(4427);
+              let obj3 = callback(4431);
               obj3 = { url: null, query: null, oldFormErrors: true, rejectWithError: false };
               obj3[0] = closure_12.STORE_SKU_PURCHASE(callback2);
               obj3[1] = c6;
@@ -480,7 +480,7 @@ function _createOneTimePurchaseInvoicePreview() {
           } else if (2 === tmp7) {
             c4 = 0;
             let closure_8 = c3;
-            const billingError = new callback(4088).BillingError(closure_8);
+            const billingError = new callback(4092).BillingError(closure_8);
             throw billingError;
           } else if (arg0 === 1) {
             c6 = 3;

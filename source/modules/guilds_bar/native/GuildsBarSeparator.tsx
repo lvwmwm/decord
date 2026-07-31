@@ -1,8 +1,8 @@
-// Module ID: 14996
-// Function ID: 14997
-// Dependencies: [19, 21, 4189, 712, 3893, 14925, 4050, 4599, 7676, 2]
+// Module ID: 15022
+// Function ID: 15023
+// Dependencies: [19, 21, 4193, 712, 3897, 14948, 4054, 4603, 7684, 2]
 
-// Module 14996
+// Module 15022
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -15,9 +15,9 @@ obj[0] = obj;
 let closure_5 = createCacheKey.createStyles(obj);
 let closure_6 = { code: "function GuildsBarSeparatorTsx1(){const{withSpring,guildItemSize,panelX,HOME_DRAWER_FLING_PHYSICS}=this.__closure;return{maxWidth:withSpring(Math.max(guildItemSize,panelX.get()+guildItemSize),HOME_DRAWER_FLING_PHYSICS)};}" };
 const memoResult = importAllResult.memo(function GuildsBarSeparator() {
-  let obj = token(3893);
+  let obj = token(3897);
   token = obj.useToken(panelX(712).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  panelX = importAllResult.useContext(token(14925).HomeDrawerStateContext).panelX;
+  panelX = importAllResult.useContext(token(14948).HomeDrawerStateContext).panelX;
   const tmp = callback();
   const fn = function l() {
     const obj = { maxWidth: null };
@@ -25,13 +25,13 @@ const memoResult = importAllResult.memo(function GuildsBarSeparator() {
     obj[0] = token(outer1_2[7]).withSpring(bound, token(outer1_2[5]).HOME_DRAWER_FLING_PHYSICS);
     return obj;
   };
-  obj = { withSpring: token(4599).withSpring, guildItemSize: token, panelX, HOME_DRAWER_FLING_PHYSICS: token(14925).HOME_DRAWER_FLING_PHYSICS };
+  obj = { withSpring: token(4603).withSpring, guildItemSize: token, panelX, HOME_DRAWER_FLING_PHYSICS: token(14948).HOME_DRAWER_FLING_PHYSICS };
   fn.__closure = obj;
   fn.__workletHash = 1425261651828;
   fn.__initData = closure_6;
-  const animatedStyle = token(4050).useAnimatedStyle(fn);
+  const animatedStyle = token(4054).useAnimatedStyle(fn);
   const style = [tmp.separator, animatedStyle];
-  return jsx(panelX(7676), { style });
+  return jsx(panelX(7684), { style });
 });
 const result = require("createCacheKey").fileFinishedImporting("modules/guilds_bar/native/GuildsBarSeparator.tsx");
 

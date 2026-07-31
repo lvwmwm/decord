@@ -1,9 +1,9 @@
-// Module ID: 3874
-// Function ID: 3875
+// Module ID: 3878
+// Function ID: 3879
 // Name: isFeatureTeenByDefault
 // Dependencies: [2]
 
-// Module 3874 (isFeatureTeenByDefault)
+// Module 3878 (isFeatureTeenByDefault)
 class SettingsConfig {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
@@ -78,22 +78,22 @@ prototype3["shouldCollectAppStoreSignal"] = function shouldCollectAppStoreSignal
   return this.appStore.shouldCollectSignal;
 };
 RegionalFeatureConfig["fromConnectionOpen"] = function fromConnectionOpen(regionalFeatureConfig) {
-  if (typeof SettingsConfig !== "find") {
+  if (typeof SettingsConfig !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   let obj = Object.create(SettingsConfig.prototype);
   obj.teenByDefault = regionalFeatureConfig.teen_by_default_settings;
-  if (typeof AgeVerificationConfig !== "find") {
+  if (typeof AgeVerificationConfig !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   obj = Object.create(AgeVerificationConfig.prototype);
   obj.gatedFeatures = regionalFeatureConfig.age_gated_features;
-  if (typeof AppStoreConfig !== "find") {
+  if (typeof AppStoreConfig !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const obj1 = Object.create(AppStoreConfig.prototype);
   obj1.shouldCollectSignal = true === regionalFeatureConfig.should_collect_app_store_signal;
-  if (typeof RegionalFeatureConfig !== "find") {
+  if (typeof RegionalFeatureConfig !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const obj2 = Object.create(RegionalFeatureConfig.prototype);

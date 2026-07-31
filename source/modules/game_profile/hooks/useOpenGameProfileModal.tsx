@@ -1,10 +1,10 @@
-// Module ID: 8472
-// Function ID: 8473
+// Module ID: 8485
+// Function ID: 8486
 // Name: useOpenGameProfileModal
-// Dependencies: [8473, 8477, 2]
+// Dependencies: [8486, 8490, 2]
 // Exports: default
 
-// Module 8472 (useOpenGameProfileModal)
+// Module 8485 (useOpenGameProfileModal)
 const result = require("set").fileFinishedImporting("modules/game_profile/hooks/useOpenGameProfileModal.tsx");
 
 export default function useOpenGameProfileModal(arg0) {

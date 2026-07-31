@@ -1,10 +1,10 @@
-// Module ID: 12390
-// Function ID: 12391
+// Module ID: 12416
+// Function ID: 12417
 // Name: WidgetPreview
-// Dependencies: [19, 17, 21, 4189, 712, 8076, 5896, 4185, 1236, 12052, 2]
+// Dependencies: [19, 17, 21, 4193, 712, 8083, 5901, 4189, 1236, 12070, 2]
 // Exports: default
 
-// Module 12390 (WidgetPreview)
+// Module 12416 (WidgetPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/
 export default function WidgetPreview(widget) {
   widget = widget.widget;
   const tmp = createCacheKey();
-  let obj = require(5896) /* items */;
+  let obj = require(5901) /* items */;
   let tmp5 = null;
   if (obj.isGameWidget(widget)) {
     tmp5 = null;
@@ -34,13 +34,13 @@ export default function WidgetPreview(widget) {
       obj[0] = tmp.title;
       const intl = tmp4(1236).intl;
       obj[3] = intl.string(tmp4(1236).t.SpsnDY).toUpperCase();
-      const items = [callback(tmp4(4185).Text, obj), ];
+      const items = [callback(tmp4(4189).Text, obj), ];
       const obj1 = { userId: null, widget: null, disableInteraction: true, cardStyle: null };
       obj1[0] = widget.userId;
       obj1[1] = widget;
       const items1 = [tmp3.card, tmp.card];
       obj1[3] = items1;
-      items[1] = callback(tmp4(12052).WidgetSection, obj1);
+      items[1] = callback(tmp4(12070).WidgetSection, obj1);
       obj[1] = items;
       tmp5 = callback2(View, obj);
       const str = intl.string(tmp4(1236).t.SpsnDY);

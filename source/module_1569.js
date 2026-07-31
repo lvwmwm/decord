@@ -23,7 +23,7 @@ export default importAllResult.forwardRef(function ServerContainer(arg0, arg1) {
     obj[0] = function getCurrentOptions() {
       return obj.options;
     };
-    if (typeof arg1 === "find") {
+    if (typeof arg1 === "fileFinishedImporting") {
       arg1(obj);
     } else {
       arg1.current = obj;

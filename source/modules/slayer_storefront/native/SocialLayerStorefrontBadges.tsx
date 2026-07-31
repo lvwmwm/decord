@@ -1,10 +1,10 @@
-// Module ID: 9758
-// Function ID: 9759
+// Module ID: 9775
+// Function ID: 9776
 // Name: ExclusiveBadge
-// Dependencies: [19, 17, 21, 4189, 712, 500, 9759, 4185, 1236, 2]
+// Dependencies: [19, 17, 21, 4193, 712, 500, 9776, 4189, 1236, 2]
 // Exports: ExclusiveBadge
 
-// Module 9758 (ExclusiveBadge)
+// Module 9775 (ExclusiveBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,11 +32,11 @@ export const ExclusiveBadge = function ExclusiveBadge() {
   let obj = { style: tmp.exclusiveBadge, children: null };
   obj = { size: "xs", color: null };
   obj[1] = importDefault(712).colors.WHITE;
-  const items = [callback(require(9759) /* ClydeIcon */.ClydeIcon, obj), ];
+  const items = [callback(require(9776) /* ClydeIcon */.ClydeIcon, obj), ];
   obj = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp.exclusiveBadgeText, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.RiDMFz);
-  items[1] = callback(require(4185) /* Text */.Text, obj);
+  items[1] = callback(require(4189) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 };

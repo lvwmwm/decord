@@ -1,10 +1,10 @@
-// Module ID: 10308
-// Function ID: 10309
+// Module ID: 10326
+// Function ID: 10327
 // Name: useChannelPresetSettings
-// Dependencies: [32, 1372, 4385, 676, 4386, 685, 647, 4388, 10306, 5135, 10309, 5130, 2]
+// Dependencies: [32, 1372, 4389, 676, 4390, 685, 647, 4392, 10324, 5139, 10327, 5134, 2]
 // Exports: updateChannelNotificationSetting, updateChannelPreset, updateChannelToGuildDefault, updateChannelUnreadSetting, useChannelPresetInheritance, useChannelPresetSettings
 
-// Module 10308 (useChannelPresetSettings)
+// Module 10326 (useChannelPresetSettings)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
@@ -24,7 +24,7 @@ export const useChannelPresetSettings = function useChannelPresetSettings(channe
   const stateFromStores1 = _require(647).useStateFromStores(items1, () => outer1_5.resolvedMessageNotifications(closure_0));
   obj = { unread: stateFromStores, notification: stateFromStores1, preset: null };
   const obj2 = _require(647);
-  obj[2] = _require(4388).presetFromSettings(stateFromStores, stateFromStores1);
+  obj[2] = _require(4392).presetFromSettings(stateFromStores, stateFromStores1);
   return obj;
 };
 export const useChannelPresetInheritance = function useChannelPresetInheritance(channel) {
@@ -60,50 +60,50 @@ export const useChannelPresetInheritance = function useChannelPresetInheritance(
 };
 export const updateChannelPreset = function updateChannelPreset(guild_id, id, arg2) {
   const channelIdFlags = store.getChannelIdFlags(guild_id, id);
-  if (arg2 === require(4388) /* Presets */.Presets.ALL_MESSAGES) {
-    const obj4 = importDefault(5135);
+  if (arg2 === require(4392) /* Presets */.Presets.ALL_MESSAGES) {
+    const obj4 = importDefault(5139);
     let obj = { message_notifications: null, flags: null };
     obj[0] = UserNotificationSettings.ALL_MESSAGES;
-    let tmp2Result = tmp2(10309);
+    let tmp2Result = tmp2(10327);
     obj[1] = tmp2Result.withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ALL_MESSAGES);
-    const result = obj4.updateChannelOverrideSettings(guild_id, id, obj, tmp2(5130).NotificationLabels.PresetAll);
-  } else if (arg2 === tmp2(4388).Presets.MENTIONS) {
-    obj = importDefault(5135);
+    const result = obj4.updateChannelOverrideSettings(guild_id, id, obj, tmp2(5134).NotificationLabels.PresetAll);
+  } else if (arg2 === tmp2(4392).Presets.MENTIONS) {
+    obj = importDefault(5139);
     obj = { message_notifications: null, flags: null };
     obj[0] = UserNotificationSettings.ONLY_MENTIONS;
-    tmp2Result = tmp2(10309);
+    tmp2Result = tmp2(10327);
     obj[1] = tmp2Result.withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ONLY_MENTIONS);
-    const result1 = obj.updateChannelOverrideSettings(guild_id, id, obj, tmp2(5130).NotificationLabels.PresetMentions);
-  } else if (arg2 === tmp2(4388).Presets.NOTHING) {
-    const obj7 = importDefault(5135);
+    const result1 = obj.updateChannelOverrideSettings(guild_id, id, obj, tmp2(5134).NotificationLabels.PresetMentions);
+  } else if (arg2 === tmp2(4392).Presets.NOTHING) {
+    const obj7 = importDefault(5139);
     const obj1 = { message_notifications: null, flags: null };
     obj1[0] = UserNotificationSettings.NO_MESSAGES;
-    obj1[1] = tmp2(10309).withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ONLY_MENTIONS);
-    const result2 = obj7.updateChannelOverrideSettings(guild_id, id, obj1, tmp2(5130).NotificationLabels.PresetNothing);
-    const tmp2Result1 = tmp2(10309);
+    obj1[1] = tmp2(10327).withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ONLY_MENTIONS);
+    const result2 = obj7.updateChannelOverrideSettings(guild_id, id, obj1, tmp2(5134).NotificationLabels.PresetNothing);
+    const tmp2Result1 = tmp2(10327);
   }
 };
 export const updateChannelToGuildDefault = function updateChannelToGuildDefault(guild_id, id) {
-  let obj = importDefault(5135);
+  let obj = importDefault(5139);
   obj = { message_notifications: UserNotificationSettings.NULL, flags: null };
-  obj[1] = require(10309) /* resetGuildUnreadFlags */.resetChannelUnreadFlags(store.getChannelIdFlags(guild_id, id));
-  const result = obj.updateChannelOverrideSettings(guild_id, id, obj, require(5130) /* UserNotificationSettings */.NotificationLabels.PresetDefault);
+  obj[1] = require(10327) /* resetGuildUnreadFlags */.resetChannelUnreadFlags(store.getChannelIdFlags(guild_id, id));
+  const result = obj.updateChannelOverrideSettings(guild_id, id, obj, require(5134) /* UserNotificationSettings */.NotificationLabels.PresetDefault);
 };
 export const updateChannelUnreadSetting = function updateChannelUnreadSetting(guild_id, id, ALL_MESSAGES) {
   const channelIdFlags = store.getChannelIdFlags(guild_id, id);
-  let obj = importDefault(5135);
+  let obj = importDefault(5139);
   if (ALL_MESSAGES === UnreadSetting.ALL_MESSAGES) {
     let UNREADS_ONLY_MENTIONS = constants.UNREADS_ALL_MESSAGES;
   } else {
     UNREADS_ONLY_MENTIONS = constants.UNREADS_ONLY_MENTIONS;
   }
-  obj = { flags: require(10309) /* resetGuildUnreadFlags */.withChannelUnreadFlags(channelIdFlags, UNREADS_ONLY_MENTIONS) };
-  const NotificationLabel = require(5130) /* UserNotificationSettings */.NotificationLabel;
+  obj = { flags: require(10327) /* resetGuildUnreadFlags */.withChannelUnreadFlags(channelIdFlags, UNREADS_ONLY_MENTIONS) };
+  const NotificationLabel = require(5134) /* UserNotificationSettings */.NotificationLabel;
   const result = obj.updateChannelOverrideSettings(guild_id, id, obj, NotificationLabel.unreads(ALL_MESSAGES));
 };
 export const updateChannelNotificationSetting = function updateChannelNotificationSetting(guildId, id, message_notifications) {
-  let obj = importDefault(5135);
+  let obj = importDefault(5139);
   obj = { message_notifications };
-  const NotificationLabel = require(5130) /* UserNotificationSettings */.NotificationLabel;
+  const NotificationLabel = require(5134) /* UserNotificationSettings */.NotificationLabel;
   const result = obj.updateChannelOverrideSettings(guildId, id, obj, NotificationLabel.notifications(message_notifications));
 };

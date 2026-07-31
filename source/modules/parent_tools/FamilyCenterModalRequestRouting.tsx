@@ -1,10 +1,10 @@
-// Module ID: 11105
-// Function ID: 11106
+// Module ID: 11123
+// Function ID: 11124
 // Name: getConnectionPrereqTarget
-// Dependencies: [5, 5794, 5795, 2]
+// Dependencies: [5, 5799, 5800, 2]
 // Exports: resolveConnectionPrereqTarget
 
-// Module 11105 (getConnectionPrereqTarget)
+// Module 11123 (getConnectionPrereqTarget)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 function getConnectionPrereqTarget(teen_identity) {

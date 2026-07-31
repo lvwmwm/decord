@@ -1,9 +1,9 @@
-// Module ID: 9637
-// Function ID: 9638
+// Module ID: 9652
+// Function ID: 9653
 // Name: StandardStickerDetail
-// Dependencies: [5, 32, 19, 17, 1862, 1874, 5092, 9586, 676, 5244, 21, 4189, 500, 712, 9616, 9415, 9417, 4157, 4185, 1236, 9617, 3890, 589, 1474, 698, 9631, 4600, 9636, 9619, 9624, 3835, 5542, 3862, 4524, 9638, 1959, 4384, 5105, 9639, 6608, 9632, 8959, 8424, 9640, 7631, 9421, 5243, 2]
+// Dependencies: [5, 32, 19, 17, 1862, 1874, 5096, 9601, 676, 5248, 21, 4193, 500, 712, 9631, 9430, 9432, 4161, 4189, 1236, 9632, 3894, 589, 1474, 698, 9646, 4604, 9651, 9634, 9639, 3839, 5546, 3866, 4528, 9653, 1959, 4388, 5109, 9654, 6614, 9647, 8972, 8437, 9655, 7639, 9436, 5247, 2]
 
-// Module 9637 (StandardStickerDetail)
+// Module 9652 (StandardStickerDetail)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import explicitContentFromProto from "explicitContentFromProto";
 import importAllResult from "getSystemLocale";
@@ -117,20 +117,20 @@ function StandardStickerDetail(chatInputRef) {
       const intl = tmp2(tmp3[19]).intl;
       obj6[1] = intl.string(tmp2(tmp3[19]).t.GPy3Ar);
       obj6[2] = function onPress() {
-        let obj = require(9636) /* hideStickerDetailActionSheet */;
+        let obj = require(9651) /* hideStickerDetailActionSheet */;
         const result = obj.hideStickerDetailActionSheet();
         if (null != stateFromStores) {
           if (stateFromStores1) {
             if (null != chatInputRef) {
-              const result1 = tmp(9619).openStickerPickerToPackId(tmp6, pack_id);
-              const tmpResult = tmp(9619);
+              const result1 = tmp(9634).openStickerPickerToPackId(tmp6, pack_id);
+              const tmpResult = tmp(9634);
             }
           }
         }
         obj = { analyticsLocation: memo, analyticsPopoutType: null, stickerPack: null };
-        obj[1] = require(9624) /* openStickerPackDetailActionSheet */.AnalyticsPopoutType.STICKER_PACK_UPSELL;
+        obj[1] = require(9639) /* openStickerPackDetailActionSheet */.AnalyticsPopoutType.STICKER_PACK_UPSELL;
         obj[2] = stateFromStores;
-        importDefault(9624)(obj);
+        importDefault(9639)(obj);
       };
       tmp15Result = tmp15(tmp2(tmp3[26]).Button, obj6);
     }
@@ -696,7 +696,7 @@ export default importAllResult.memo(function StickerDetailActionSheet(chatInputR
   let channel;
   let renderableSticker;
   ({ renderableSticker, channel } = chatInputRef);
-  let obj = require(9616) /* useStickerPackCategories */;
+  let obj = require(9631) /* useStickerPackCategories */;
   const tmp4 = callback(obj.useStickerForRenderableSticker(renderableSticker, true), 2);
   const first = tmp4[0];
   let tmp6Result = callback2(closure_7, { size: "large" });
@@ -712,10 +712,10 @@ export default importAllResult.memo(function StickerDetailActionSheet(chatInputR
     obj1[0] = tmp.content;
     obj1[1] = tmp6Result;
     obj[1] = tmp6(closure_6, obj1);
-    return tmp6(tmp2(5243).BottomSheet, obj);
+    return tmp6(tmp2(5247).BottomSheet, obj);
   }
   if (null != first) {
-    let tmp2Result = tmp2(4524);
+    let tmp2Result = tmp2(4528);
     if (tmp2Result.isStandardSticker(first)) {
       const obj2 = { sticker: null, channel: null, chatInputRef: null };
       obj2[0] = first;
@@ -723,7 +723,7 @@ export default importAllResult.memo(function StickerDetailActionSheet(chatInputR
       obj2[2] = chatInputRef.chatInputRef;
       tmp6Result = tmp6(StandardStickerDetail, obj2);
     } else {
-      tmp2Result = tmp2(4524);
+      tmp2Result = tmp2(4528);
       if (tmp2Result.isGuildSticker(first)) {
         const obj3 = { sticker: null, channel: null };
         obj3[0] = first;

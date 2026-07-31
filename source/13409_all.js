@@ -1,15 +1,24 @@
 // Module ID: 13409
 // Function ID: 13410
 // Name: all
-// Dependencies: [13382]
+// Dependencies: [13407, 13381]
 
 // Module 13409 (all)
 
-export default (arg0) => {
-  if (require(13382) /* all */(arg0)) {
-    return arg0;
+export default (arg0, arg1) => {
+  if (arguments.length < 2) {
+    const tmp7 = require(13381)[arg0];
+    let tmp8;
+    if (require(13407) /* all */(tmp7)) {
+      tmp8 = tmp7;
+    }
+    let tmp3 = tmp8;
   } else {
-    const tmp5 = new TypeError(String(arg0) + " is not an object");
-    throw tmp5;
+    tmp3 = require(13381)[arg0];
+    if (tmp3) {
+      tmp3 = tmp(13381)[arg0][arg1];
+    }
+    tmp = require;
   }
+  return tmp3;
 };

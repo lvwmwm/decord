@@ -73,7 +73,7 @@ class TableTransaction {
 }
 const prototype = TableTransaction.prototype;
 TableTransaction["fromDatabaseTransaction"] = function fromDatabaseTransaction(prefix, tableId, transaction) {
-  if (typeof TableTransaction !== "find") {
+  if (typeof TableTransaction !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(TableTransaction.prototype);
@@ -472,7 +472,7 @@ prototype2["transaction"] = function transaction(arg0, arg1) {
     let prefix;
     let tableId;
     ({ prefix, tableId } = self);
-    if (typeof outer1_3 !== "find") {
+    if (typeof outer1_3 !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     let obj = Object.create(outer1_3.prototype);
@@ -539,7 +539,7 @@ prototype2["upgradeTransaction"] = function upgradeTransaction(transaction) {
   let prefix;
   let tableId;
   ({ prefix, tableId } = this);
-  if (typeof TableTransaction !== "find") {
+  if (typeof TableTransaction !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(TableTransaction.prototype);

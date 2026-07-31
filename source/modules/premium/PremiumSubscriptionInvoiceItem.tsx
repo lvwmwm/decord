@@ -1,10 +1,10 @@
-// Module ID: 3845
-// Function ID: 3846
+// Module ID: 3849
+// Function ID: 3850
 // Name: coalesceInvoiceItems
 // Dependencies: [12, 2]
 // Exports: coalesceInvoiceItems, createInvoiceItemFromServer
 
-// Module 3845 (coalesceInvoiceItems)
+// Module 3849 (coalesceInvoiceItems)
 const result = require("set").fileFinishedImporting("modules/premium/PremiumSubscriptionInvoiceItem.tsx");
 
 export const coalesceInvoiceItems = function coalesceInvoiceItems(arr) {

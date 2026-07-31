@@ -1,9 +1,9 @@
-// Module ID: 12859
-// Function ID: 12860
+// Module ID: 12884
+// Function ID: 12885
 // Name: noop
-// Dependencies: [706, 4236, 4250, 687, 4289, 584, 3, 4265, 12860, 500, 38, 2]
+// Dependencies: [706, 4240, 4254, 687, 4293, 584, 3, 4269, 12885, 500, 38, 2]
 
-// Module 12859 (noop)
+// Module 12884 (noop)
 import refreshSourceMapCookie from "refreshSourceMapCookie";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import DesktopSources from "DesktopSources";
@@ -19,7 +19,7 @@ function noop() {
 }
 ({ Features: c5, MediaEngineContextTypes: closure_6, MediaTypes: error, SpeakingFlags: metroImportAll } = DesktopSources);
 let obj = { IDENTIFY: 0, [0]: "IDENTIFY", SELECT_PROTOCOL: 1, [1]: "SELECT_PROTOCOL", READY: 2, [2]: "READY", HEARTBEAT: 3, [3]: "HEARTBEAT", SELECT_PROTOCOL_ACK: 4, [4]: "SELECT_PROTOCOL_ACK", SPEAKING: 5, [5]: "SPEAKING", HEARTBEAT_ACK: 6, [6]: "HEARTBEAT_ACK", RESUME: 7, [7]: "RESUME", HELLO: 8, [8]: "HELLO", RESUMED: 9, [9]: "RESUMED", CLIENT_CONNECT: 11, [11]: "CLIENT_CONNECT", VIDEO: 12, [12]: "VIDEO", CLIENT_DISCONNECT: 13, [13]: "CLIENT_DISCONNECT", SESSION_UPDATE: 14, [14]: "SESSION_UPDATE", MEDIA_SINK_WANTS: 15, [15]: "MEDIA_SINK_WANTS", VOICE_BACKEND_VERSION: 16, [16]: "VOICE_BACKEND_VERSION", CHANNEL_OPTIONS_UPDATE: 17, [17]: "CHANNEL_OPTIONS_UPDATE", FLAGS: 18, [18]: "FLAGS", PLATFORM: 20, [20]: "PLATFORM", DAVE_PROTOCOL_PREPARE_TRANSITION: 21, [21]: "DAVE_PROTOCOL_PREPARE_TRANSITION", DAVE_PROTOCOL_EXECUTE_TRANSITION: 22, [22]: "DAVE_PROTOCOL_EXECUTE_TRANSITION", DAVE_PROTOCOL_READY_FOR_TRANSITION: 23, [23]: "DAVE_PROTOCOL_READY_FOR_TRANSITION", DAVE_PROTOCOL_PREPARE_EPOCH: 24, [24]: "DAVE_PROTOCOL_PREPARE_EPOCH", MLS_EXTERNAL_SENDER_PACKAGE: 25, [25]: "MLS_EXTERNAL_SENDER_PACKAGE", MLS_KEY_PACKAGE: 26, [26]: "MLS_KEY_PACKAGE", MLS_PROPOSALS: 27, [27]: "MLS_PROPOSALS", MLS_COMMIT_WELCOME: 28, [28]: "MLS_COMMIT_WELCOME", MLS_PREPARE_COMMIT_TRANSITION: 29, [29]: "MLS_PREPARE_COMMIT_TRANSITION", MLS_WELCOME: 30, [30]: "MLS_WELCOME", MLS_INVALID_COMMIT_WELCOME: 31, [31]: "MLS_INVALID_COMMIT_WELCOME", CLIENT_CANNOT_REACH_RTC_SERVER: 32, [32]: "CLIENT_CANNOT_REACH_RTC_SERVER", SFU_UPDATE: 33, [33]: "SFU_UPDATE" };
-let closure_11 = { AUTHENTICATION_FAILED: 4004, [4004]: "AUTHENTICATION_FAILED", INVALID_SESSION: 4006, [4006]: "INVALID_SESSION", SERVER_NOT_FOUND: 4011, [4011]: "SERVER_NOT_FOUND", SERVER_CRASH: 4015, [4015]: "SERVER_CRASH", CANCELED: 4016, [4016]: "CANCELED", HEARTBEAT_TIMEOUT: 4800, [4800]: "HEARTBEAT_TIMEOUT", UNRESUMABLE: 4801, [4801]: "UNRESUMABLE", RESET_BACKOFF: 4802, [4802]: "RESET_BACKOFF" };
+obj = { AUTHENTICATION_FAILED: 4004, [4004]: "AUTHENTICATION_FAILED", INVALID_SESSION: 4006, [4006]: "INVALID_SESSION", SERVER_NOT_FOUND: 4011, [4011]: "SERVER_NOT_FOUND", SERVER_CRASH: 4015, [4015]: "SERVER_CRASH", CANCELED: 4016, [4016]: "CANCELED", HEARTBEAT_TIMEOUT: 4800, [4800]: "HEARTBEAT_TIMEOUT", UNRESUMABLE: 4801, [4801]: "UNRESUMABLE", RESET_BACKOFF: 4802, [4802]: "RESET_BACKOFF", REPEATED_MLS_INVALID_MESSAGES: 4803, [4803]: "REPEATED_MLS_INVALID_MESSAGES" };
 let closure_12 = { DISCONNECTED: 0, [0]: "DISCONNECTED", CONNECTING: 1, [1]: "CONNECTING", IDENTIFYING: 2, [2]: "IDENTIFYING", RESUMING: 3, [3]: "RESUMING", CONNECTED: 4, [4]: "CONNECTED", RECONNECTING: 5, [5]: "RECONNECTING" };
 let closure_13 = 20 * require("set").Millis.SECOND;
 const MINUTE = require("set").Millis.MINUTE;
@@ -44,7 +44,7 @@ class RTCControlSocket extends tmp3 {
     logger = tmp6.logger;
     enableNativeLoggerResult = logger.enableNativeLogger(true);
     tmp6.webSocket = null;
-    tmp6.connectionState = SFU_UPDATE.DISCONNECTED;
+    tmp6.connectionState = REPEATED_MLS_INVALID_MESSAGES.DISCONNECTED;
     tmp6.helloTimeout = null;
     tmp6.lastHeartbeatAckTime = null;
     tmp6.heartbeatInterval = null;
@@ -73,13 +73,13 @@ prototype["createWebSocket"] = function createWebSocket() {
     logger2.error("Connect called with already existing websocket");
     self.cleanupWebSocket((close) => close.close(4000));
   }
-  let obj = self(4265);
+  let obj = self(4269);
   self.connectionStartTime = obj.now();
   self.helloTimeout = setTimeout(() => {
     self.handleClose(false, 0, "The connection timed out after " + self(outer1_2[7]).now() - self.connectionStartTime + " ms - did not receive OP_HELLO in time.");
   }, closure_13);
   obj = { location: "RTCControlSocket", supportsSfuUpdate: _detectH265HardwareDecode.supports(constants.UDP_ENDPOINT_UPDATE) };
-  const webSocket = new WebSocket("" + self.url + "?v=" + self(12860).getVoiceGatewayProtocolVersion(obj));
+  const webSocket = new WebSocket("" + self.url + "?v=" + self(12885).getVoiceGatewayProtocolVersion(obj));
   self.webSocket = webSocket;
   webSocket.binaryType = "arraybuffer";
   webSocket.onopen = () => {
@@ -157,7 +157,7 @@ prototype["createWebSocket"] = function createWebSocket() {
       obj.resumable = true;
     } else if (tmp10.SPEAKING === op) {
       const speaking = d.speaking;
-      if (typeof speaking === "sur") {
+      if (typeof speaking === "onScroll") {
         obj.emit(tmp2.Speaking, d.user_id, d.ssrc, tmp61);
       }
     } else if (tmp10.HEARTBEAT === op) {
@@ -312,7 +312,8 @@ prototype["sendBinary"] = function sendBinary(MLS_COMMIT_WELCOME, uint8Array) {
 };
 prototype["doResumeOrClose"] = function doResumeOrClose() {
   const self = this;
-  const nowResult = require(4265) /* sleep */.now();
+  const obj = require(4269) /* sleep */;
+  const nowResult = obj.now();
   if (null !== this.serverId) {
     if (null !== self.channelId) {
       if (null !== self.token) {
@@ -325,7 +326,7 @@ prototype["doResumeOrClose"] = function doResumeOrClose() {
       }
     }
   }
-  self.disconnect(false, constants3.UNRESUMABLE, "Cannot resume connection.");
+  self.disconnect(false, obj.UNRESUMABLE, "Cannot resume connection.");
 };
 prototype["doResume"] = function doResume() {
   let logger;
@@ -349,7 +350,7 @@ prototype["doResume"] = function doResume() {
   }
   logger.info("[RESUME] resuming session. serverId=" + serverId + " channelId=" + str + " sessionId=" + str2 + " seqAck=" + num);
   self.emit(obj.Resuming);
-  self.connectionState = constants4.RESUMING;
+  self.connectionState = constants3.RESUMING;
   obj = { token: self.token, session_id: self.sessionId, server_id: self.serverId, channel_id: self.channelId, seq_ack: num };
   self.send(obj.RESUME, obj);
 };
@@ -386,7 +387,7 @@ prototype["handleHello"] = function handleHello(d) {
     tmp = require;
     const tmp2 = dependencyMap;
   }
-  const diff = tmp4(4265).now() - self.connectionStartTime;
+  const diff = tmp4(4269).now() - self.connectionStartTime;
   ({ logger, heartbeatInterval } = self);
   if (heartbeatInterval == null) {
     heartbeatInterval = "??";
@@ -403,7 +404,7 @@ prototype["handleReady"] = function handleReady(experiments) {
   const self = this;
   const backoff = this.backoff;
   backoff.succeed();
-  const obj = require(4265) /* sleep */;
+  const obj = require(4269) /* sleep */;
   const logger = this.logger;
   logger.info("[READY] took " + obj.now() - this.connectionStartTime + " ms");
   if (this.serverVersion >= 6) {
@@ -457,12 +458,12 @@ prototype["handleClose"] = function handleClose(arg0, arg1, arg2) {
   flag = arg0;
   let closure_2 = arg1;
   let closure_0 = arg2;
-  this.connectionState = constants4.DISCONNECTED;
+  this.connectionState = constants3.DISCONNECTED;
   if (!arg0) {
     flag = false;
   }
   self.cleanupWebSocket();
-  if (arg1 !== constants3.AUTHENTICATION_FAILED) {
+  if (arg1 !== obj.AUTHENTICATION_FAILED) {
     if (arg1 !== tmp2.SERVER_CRASH) {
       if (arg1 !== tmp2.SERVER_NOT_FOUND) {
         if (arg1 !== tmp2.INVALID_SESSION) {
@@ -490,14 +491,14 @@ prototype["disconnect"] = function disconnect(arg0, arg1, arg2) {
   logger.warn("[DISCONNECT] (" + arg0.toString() + ", " + arg1 + ", " + arg2 + ")");
   this.cleanupWebSocket();
   this.cleanupState();
-  this.connectionState = constants4.DISCONNECTED;
+  this.connectionState = constants3.DISCONNECTED;
   this.emit(obj.Disconnect, arg0, arg1, arg2);
 };
 prototype["reconnect"] = function reconnect(arg0, arg1, arg2) {
   const logger = this.logger;
   logger.info("[RECONNECT] wasClean=" + arg0.toString() + " code=" + arg1 + " reason=" + arg2);
   this.cleanupWebSocket((close) => close.close(4000));
-  this.connectionState = constants4.RECONNECTING;
+  this.connectionState = constants3.RECONNECTING;
   const webSocket = this.createWebSocket();
 };
 prototype["cleanupWebSocket"] = function cleanupWebSocket(arg0) {
@@ -566,9 +567,9 @@ prototype["handleHeartbeatAck"] = function handleHeartbeatAck(d) {
   if (this.serverVersion >= 8) {
     t = d.t;
   }
-  const obj = require(4265) /* sleep */;
+  const obj = require(4269) /* sleep */;
   self.emit(obj.Ping, obj.now() - t);
-  self.lastHeartbeatAckTime = require(4265) /* sleep */.now();
+  self.lastHeartbeatAckTime = require(4269) /* sleep */.now();
   self.heartbeatAck = true;
   if (null !== self.expeditedHeartbeatTimeout) {
     const _clearTimeout = clearTimeout;
@@ -618,14 +619,14 @@ prototype["sendHeartbeat"] = function sendHeartbeat() {
     const _HermesInternal = HermesInternal;
     logger2.info("Sending heartbeat with last received sequence number: " + num);
     let obj = { t: null, seq_ack: null };
-    obj[0] = require(4265) /* sleep */.now();
+    obj[0] = require(4269) /* sleep */.now();
     obj[1] = num;
     self.send(obj.HEARTBEAT, obj);
-    const obj3 = require(4265) /* sleep */;
+    const obj3 = require(4269) /* sleep */;
   } else {
     const logger = self.logger;
     logger.info("Sending heartbeat");
-    obj = require(4265) /* sleep */;
+    obj = require(4269) /* sleep */;
     self.send(obj.HEARTBEAT, obj.now());
   }
 };
@@ -644,7 +645,7 @@ prototype["stopHeartbeater"] = function stopHeartbeater() {
 };
 prototype["connect"] = function connect() {
   const self = this;
-  if (this.connectionState !== constants4.DISCONNECTED) {
+  if (this.connectionState !== constants3.DISCONNECTED) {
     const logger = self.logger;
     logger.error("Cannot start a new connection, connection state is not disconnected");
     let flag = false;
@@ -674,7 +675,7 @@ prototype["identify"] = function identify(streamParameters, arg1, arg2) {
   this.channelId = channelId;
   this.sessionId = sessionId;
   this.token = token;
-  this.connectionState = constants4.IDENTIFYING;
+  this.connectionState = constants3.IDENTIFYING;
   const obj = { server_id: serverId, channel_id: channelId, user_id: userId, session_id: sessionId, token, max_dave_protocol_version: maxDaveProtocolVersion, video, streams: null };
   let mapped;
   if (streamParameters != null) {
@@ -757,7 +758,7 @@ prototype["resetBackoff"] = function resetBackoff() {
     logger.info(`Connection backoff reset ${str2}`);
     const backoff = self.backoff;
     backoff.succeed();
-    self.reconnect(false, constants3.RESET_BACKOFF, "Reset backoff.");
+    self.reconnect(false, obj.RESET_BACKOFF, "Reset backoff.");
     flag = true;
   }
   return flag;
@@ -767,7 +768,7 @@ prototype["close"] = function close() {
   logger.info("CLOSE");
   this.cleanupWebSocket((close) => close.close(4000));
   this.cleanupState();
-  this.connectionState = constants4.DISCONNECTED;
+  this.connectionState = constants3.DISCONNECTED;
   this.emit(obj.Disconnect, true, 1000, "Force Close");
 };
 prototype["destroy"] = function destroy() {
@@ -891,6 +892,12 @@ prototype["flagMLSInvalidCommitWelcome"] = function flagMLSInvalidCommitWelcome(
   const obj = { transition_id };
   this.send(obj.MLS_INVALID_COMMIT_WELCOME, obj);
 };
+prototype["disconnectForRepeatedMLSInvalidMessages"] = function disconnectForRepeatedMLSInvalidMessages(arg0) {
+  const logger = this.logger;
+  logger.warn("[MLS] " + arg0 + " consecutive invalid commit/welcome messages.");
+  this.cleanupWebSocket((close) => close.close(constants.REPEATED_MLS_INVALID_MESSAGES));
+  this.disconnect(false, obj.REPEATED_MLS_INVALID_MESSAGES, "Repeated invalid MLS commit/welcome messages.");
+};
 prototype["noRoute"] = function noRoute() {
   this.send(obj.CLIENT_CANNOT_REACH_RTC_SERVER, {});
 };
@@ -901,4 +908,5 @@ let result = require("DesktopSources").fileFinishedImporting("lib/RTCControlSock
 
 export default RTCControlSocket;
 export const RTCSocketOpcode = obj;
+export const RTCSocketCloseCode = obj;
 export const SocketEvent = obj;

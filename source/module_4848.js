@@ -1,93 +1,173 @@
 // Module ID: 4848
 // Function ID: 4849
-// Dependencies: [4819]
+// Dependencies: [4806]
 
 // Module 4848
-const module = arg2;
+const require = arg1;
 const dependencyMap = arg6;
-arg5.default = {
-  read(byteLength, sum) {
-    let tmp;
-    if (sum + 4 <= byteLength.byteLength) {
-      let obj = module(4819);
-      const longAt = obj.getLongAt(byteLength, sum);
-      obj = { value: null, description: null };
-      obj[0] = longAt;
-      const _HermesInternal = HermesInternal;
-      obj[1] = "" + longAt + "px";
-      tmp = obj;
-    }
-    obj = { "Image Width": tmp, "Image Height": null, "Bit Depth": null, "Color Type": null, Compression: null, Filter: null, Interlace: null };
-    let tmp6;
-    if (sum + 4 + 4 <= byteLength.byteLength) {
-      let obj3 = module(4819);
-      const longAt1 = obj3.getLongAt(byteLength, sum + 4);
-      const obj1 = { value: null, description: null };
-      obj1[0] = longAt1;
-      const _HermesInternal2 = HermesInternal;
-      obj1[1] = "" + longAt1 + "px";
-      tmp6 = obj1;
-    }
-    obj[1] = tmp6;
-    let tmp11;
-    if (sum + 8 + 1 <= byteLength.byteLength) {
-      let obj5 = module(4819);
-      const byteAt = obj5.getByteAt(byteLength, sum + 8);
-      const obj2 = { value: null, description: null };
-      obj2[0] = byteAt;
-      const _HermesInternal3 = HermesInternal;
-      obj2[1] = "" + byteAt;
-      tmp11 = obj2;
-    }
-    obj[2] = tmp11;
-    let tmp16;
-    if (sum + 9 + 1 <= byteLength.byteLength) {
-      const byteAt1 = module(4819).getByteAt(byteLength, sum + 9);
-      obj3 = { value: null, description: null };
-      obj3[0] = byteAt1;
-      obj3[1] = { 0: "Grayscale", 2: "RGB", 3: "Palette", 4: "Grayscale with Alpha", 6: "RGB with Alpha" }[byteAt1] || "Unknown";
-      tmp16 = obj3;
-      const obj8 = module(4819);
-    }
-    obj[3] = tmp16;
-    let tmp20;
-    if (sum + 10 + 1 <= byteLength.byteLength) {
-      const byteAt2 = module(4819).getByteAt(byteLength, sum + 10);
-      const obj4 = { value: null, description: null };
-      obj4[0] = byteAt2;
-      let str6 = "Unknown";
-      if (0 === byteAt2) {
-        str6 = "Deflate/Inflate";
+obj = { 4: null, 8: null, 12: null, 16: null, 20: obj, 24: null, 36: null, 40: null, 48: obj, 52: null, 64: null, 80: null };
+obj = {
+  name: "Preferred CMM type",
+  value(dataView, sum) {
+    return require(4806) /* getDataView */.getStringFromDataView(dataView, sum, 4);
+  },
+  description(str) {
+    if (null === str) {
+      return "";
+    } else {
+      const formatted = str.toLowerCase();
+      if ("appl" === formatted) {
+        let str6 = "Apple";
+      } else if ("adbe" === formatted) {
+        str6 = "Adobe";
+      } else if ("msft" === formatted) {
+        str6 = "Microsoft";
+      } else {
+        if ("sunw" === formatted) {
+          str6 = "Sun Microsystems";
+        } else if ("sgi" !== formatted) {
+          str6 = "Taligent";
+          if ("tgnt" !== formatted) {
+            str6 = str;
+          }
+        }
+        str6 = "Silicon Graphics";
       }
-      obj4[1] = str6;
-      tmp20 = obj4;
-      const obj10 = module(4819);
     }
-    obj[4] = tmp20;
-    let tmp24;
-    if (sum + 11 + 1 <= byteLength.byteLength) {
-      const byteAt3 = module(4819).getByteAt(byteLength, sum + 11);
-      obj5 = { value: null, description: null };
-      obj5[0] = byteAt3;
-      let str7 = "Unknown";
-      if (0 === byteAt3) {
-        str7 = "Adaptive";
-      }
-      obj5[1] = str7;
-      tmp24 = obj5;
-      const obj12 = module(4819);
-    }
-    obj[5] = tmp24;
-    let tmp28;
-    if (sum + 12 + 1 <= byteLength.byteLength) {
-      const byteAt4 = module(4819).getByteAt(byteLength, sum + 12);
-      const obj6 = { value: null, description: null };
-      obj6[0] = byteAt4;
-      obj6[1] = { 0: "Noninterlaced", 1: "Adam7 Interlace" }[byteAt4] || "Unknown";
-      tmp28 = obj6;
-      const obj14 = module(4819);
-    }
-    obj[6] = tmp28;
-    return obj;
   }
 };
+obj = {
+  name: "Profile Version",
+  value(getUint8, sum) {
+    const str = getUint8.getUint8(sum);
+    const text = `${str.toString(10)}.`;
+    const str2 = getUint8.getUint8(sum + 1) >> 4;
+    const text1 = `${str.toString(10)}.${str2.toString(10)}`;
+    return `${str.toString(10)}.${str2.toString(10)}` + "." + getUint8.getUint8(sum + 1) % 16.toString(10);
+  }
+};
+obj[12] = {
+  name: "Profile/Device class",
+  value(dataView, sum) {
+    return require(4806) /* getDataView */.getStringFromDataView(dataView, sum, 4);
+  },
+  description(arg0) {
+    return "MultiplexVisualization profile";
+  }
+};
+obj[16] = {
+  name: "Color Space",
+  value(dataView, sum) {
+    return require(4806) /* getDataView */.getStringFromDataView(dataView, sum, 4);
+  }
+};
+obj[20] = {
+  name: "Connection Space",
+  value(dataView, sum) {
+    return require(4806) /* getDataView */.getStringFromDataView(dataView, sum, 4);
+  }
+};
+obj[24] = {
+  name: "ICC Profile Date",
+  value(getUint16, sum) {
+    const uint16 = getUint16.getUint16(sum);
+    const diff = getUint16.getUint16(sum + 2) - 1;
+    const uint161 = getUint16.getUint16(sum + 4);
+    const uint162 = getUint16.getUint16(sum + 6);
+    const uint163 = getUint16.getUint16(sum + 8);
+    return new Date(Date.UTC(uint16, diff, uint161, uint162, uint163, getUint16.getUint16(sum + 10))).toISOString();
+  }
+};
+obj[36] = {
+  name: "ICC Signature",
+  value(buffer) {
+    buffer = buffer.buffer;
+    const uint8Array = new Uint8Array(buffer.slice(arg1, arg1 + 4));
+    return fromCharCode.apply(null, uint8Array);
+  }
+};
+obj[40] = {
+  name: "Primary Platform",
+  value(dataView, sum) {
+    return require(4806) /* getDataView */.getStringFromDataView(dataView, sum, 4);
+  },
+  description(str) {
+    const formatted = str.toLowerCase();
+    if ("appl" === formatted) {
+      let str5 = "Apple";
+    } else if ("adbe" === formatted) {
+      str5 = "Adobe";
+    } else if ("msft" === formatted) {
+      str5 = "Microsoft";
+    } else if ("sunw" === formatted) {
+      str5 = "Sun Microsystems";
+    } else if ("sgi" === formatted) {
+      str5 = "Silicon Graphics";
+    } else {
+      str5 = "Taligent";
+      if ("tgnt" !== formatted) {
+        str5 = str;
+      }
+    }
+    return str5;
+  }
+};
+obj[48] = {
+  name: "Device Manufacturer",
+  value(dataView, sum) {
+    return require(4806) /* getDataView */.getStringFromDataView(dataView, sum, 4);
+  },
+  description(str) {
+    const formatted = str.toLowerCase();
+    if ("appl" === formatted) {
+      let str5 = "Apple";
+    } else if ("adbe" === formatted) {
+      str5 = "Adobe";
+    } else if ("msft" === formatted) {
+      str5 = "Microsoft";
+    } else if ("sunw" === formatted) {
+      str5 = "Sun Microsystems";
+    } else if ("sgi" === formatted) {
+      str5 = "Silicon Graphics";
+    } else {
+      str5 = "Taligent";
+      if ("tgnt" !== formatted) {
+        str5 = str;
+      }
+    }
+    return str5;
+  }
+};
+obj[52] = {
+  name: "Device Model Number",
+  value(dataView, sum) {
+    return require(4806) /* getDataView */.getStringFromDataView(dataView, sum, 4);
+  }
+};
+obj[64] = {
+  name: "Rendering Intent",
+  value(getUint32, sum) {
+    return getUint32.getUint32(sum);
+  },
+  description(arg0) {
+    if (0 === arg0) {
+      return "Perceptual";
+    } else if (1 === arg0) {
+      return "Relative Colorimetric";
+    } else if (2 === arg0) {
+      return "Saturation";
+    } else if (3 === arg0) {
+      return "Absolute Colorimetric";
+    } else {
+      return arg0;
+    }
+  }
+};
+obj[80] = {
+  name: "Profile Creator",
+  value(dataView, sum) {
+    return require(4806) /* getDataView */.getStringFromDataView(dataView, sum, 4);
+  }
+};
+arg5.iccTags = { desc: { name: "ICC Description" }, cprt: { name: "ICC Copyright" }, dmdd: { name: "ICC Device Model Description" }, vued: { name: "ICC Viewing Conditions Description" }, dmnd: { name: "ICC Device Manufacturer for Display" }, tech: { name: "Technology" } };
+arg5.iccProfile = obj;

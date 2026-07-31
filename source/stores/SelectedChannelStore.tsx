@@ -1,7 +1,7 @@
 // Module ID: 1931
 // Function ID: 1932
 // Name: handleConnectionOpen
-// Dependencies: [1376, 1218, 1372, 1932, 1862, 4236, 3817, 4006, 676, 1379, 595, 12, 1351, 506, 589, 709, 2]
+// Dependencies: [1376, 1218, 1372, 1932, 1862, 4240, 3821, 4010, 676, 1379, 595, 12, 1351, 506, 589, 709, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
 // Module 1931 (handleConnectionOpen)

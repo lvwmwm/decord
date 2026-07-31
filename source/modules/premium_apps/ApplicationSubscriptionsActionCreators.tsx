@@ -1,10 +1,10 @@
-// Module ID: 13547
-// Function ID: 13548
+// Module ID: 13571
+// Function ID: 13572
 // Name: transformSubscriptionListingToSku
-// Dependencies: [5, 676, 709, 10640, 6298, 2]
+// Dependencies: [5, 676, 709, 10658, 6304, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 13547 (transformSubscriptionListingToSku)
+// Module 13571 (transformSubscriptionListingToSku)
 import set from "set";
 import ME from "ME";
 

@@ -1,11 +1,11 @@
-// Module ID: 11081
-// Function ID: 11082
+// Module ID: 11099
+// Function ID: 11100
 // Name: items
-// Dependencies: [19, 17, 11068, 6753, 21, 4189, 712, 1236, 589, 1581, 11080, 6744, 6746, 4157, 5243, 5245, 4185, 5554, 5220, 3886, 4600, 11074, 2]
+// Dependencies: [19, 17, 11086, 6759, 21, 4193, 712, 1236, 589, 1581, 11098, 6750, 6752, 4161, 5247, 5249, 4189, 5558, 5224, 3890, 4604, 11092, 2]
 // Exports: default
 
-// Module 11081 (items)
-import module_3886 from "module_3886";
+// Module 11099 (items)
+import module_3890 from "module_3890";
 import { View } from "TableRowGroupTitle";
 import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
 import SafetyHubView from "SafetyHubView";
@@ -111,11 +111,11 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   const obj4 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
   const intl = onClose(1236).intl;
   obj4[2] = intl.string(onClose(1236).t["9SDLnj"]);
-  const items5 = [callback(onClose(4185).Text, obj4), ];
+  const items5 = [callback(onClose(4189).Text, obj4), ];
   const obj5 = { variant: "heading-md/medium", color: "text-default", children: null };
   const intl2 = onClose(1236).intl;
   obj5[2] = intl2.string(onClose(1236).t["yvx//1"]);
-  items5[1] = callback(onClose(4185).Text, obj5);
+  items5[1] = callback(onClose(4189).Text, obj5);
   obj3[1] = items5;
   const items6 = [callback2(callback, obj3), , , ];
   const obj6 = { children: null };
@@ -131,7 +131,7 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
     obj[2] = outer1_8(callback, obj);
     return outer1_8(onClose(_undefined[18]).TableRow, obj, arg1);
   });
-  obj6[0] = callback(onClose(5554).TableRowGroup, obj7);
+  obj6[0] = callback(onClose(5558).TableRowGroup, obj7);
   items6[1] = callback(callback, obj6);
   const obj8 = { style: tmp.moreInfo, children: null };
   const obj9 = { title: null, hasIcons: false, children: null };
@@ -145,8 +145,8 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   obj10[2] = function onPress() {
     return classificationId(_undefined[19]).openURL(constants.AGE_VERIFICATION_LINK);
   };
-  obj9[2] = callback(onClose(5220).TableRow, obj10);
-  obj8[1] = callback(onClose(5554).TableRowGroup, obj9);
+  obj9[2] = callback(onClose(5224).TableRow, obj10);
+  obj8[1] = callback(onClose(5558).TableRowGroup, obj9);
   items6[2] = callback(callback, obj8);
   const obj11 = { style: tmp.footer, children: null };
   const obj12 = {
@@ -159,15 +159,15 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   };
   const intl6 = onClose(1236).intl;
   obj12[3] = intl6.string(onClose(1236).t["54b8V0"]);
-  const items7 = [callback(onClose(4600).Button, obj12), ];
+  const items7 = [callback(onClose(4604).Button, obj12), ];
   const obj13 = { variant: "heading-sm/medium", color: "text-subtle", style: tmp.learnMore, children: null };
   const intl7 = onClose(1236).intl;
   obj13[3] = intl7.format(onClose(1236).t.ZbWsOF, { learnMoreLink: constants.LEARN_MORE_UU_APPEAL_LINK });
-  items7[1] = callback(onClose(4185).Text, obj13);
+  items7[1] = callback(onClose(4189).Text, obj13);
   obj11[1] = items7;
   items6[3] = callback2(callback, obj11);
   obj1[1] = items6;
   obj[1] = callback2(callback, obj1);
-  obj[2] = callback(onClose(5245).BottomSheetScrollView, obj);
-  return callback(onClose(5243).BottomSheet, obj);
+  obj[2] = callback(onClose(5249).BottomSheetScrollView, obj);
+  return callback(onClose(5247).BottomSheet, obj);
 };

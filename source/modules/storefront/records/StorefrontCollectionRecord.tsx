@@ -1,9 +1,9 @@
-// Module ID: 5817
-// Function ID: 5818
+// Module ID: 5822
+// Function ID: 5823
 // Name: fromServer
-// Dependencies: [5818, 5811, 5819, 2]
+// Dependencies: [5823, 5816, 5824, 2]
 
-// Module 5817 (fromServer)
+// Module 5822 (fromServer)
 import fromServer from "fromServer";
 import { AssetDisplayConfigRecord } from "fromServer";
 import closure_2 from "fromServer";

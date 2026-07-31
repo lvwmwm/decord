@@ -1,10 +1,10 @@
-// Module ID: 10790
-// Function ID: 10791
+// Module ID: 10808
+// Function ID: 10809
 // Name: VoiceChatCallScreenHeaderIconInner
-// Dependencies: [19, 17, 4201, 676, 21, 4189, 712, 5140, 589, 10718, 12, 3901, 4717, 1297, 2]
+// Dependencies: [19, 17, 4205, 676, 21, 4193, 712, 5144, 589, 10736, 12, 3905, 4721, 1297, 2]
 // Exports: VoiceChatCallScreenHeaderIcon, default, useVoiceChatMentions
 
-// Module 10790 (VoiceChatCallScreenHeaderIconInner)
+// Module 10808 (VoiceChatCallScreenHeaderIconInner)
 import "noop";
 import { View } from "get ActivityIndicator";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
@@ -29,7 +29,7 @@ function VoiceChatCallScreenHeaderIconInner(onPress) {
   }
   obj[3] = noop;
   obj[4] = children;
-  obj[1] = closure_6(importDefault(10718), obj);
+  obj[1] = closure_6(importDefault(10736), obj);
   return closure_6(View, obj);
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -64,7 +64,7 @@ export default function VoiceChatHeaderIcon(disabled) {
   obj[2] = require(1297) /* Button */.Icon.Sizes.SMALL_20;
   const items1 = [callback(require(1297) /* Button */.Icon, obj), children];
   obj[6] = items1;
-  return closure_7(require(4717) /* PressableBase */.PressableOpacity, obj);
+  return closure_7(require(4721) /* PressableBase */.PressableOpacity, obj);
 };
 export const useVoiceChatMentions = function useVoiceChatMentions(arg0) {
   const _require = arg0;
@@ -77,5 +77,5 @@ export const VoiceChatCallScreenHeaderIcon = function VoiceChatCallScreenHeaderI
   obj = {};
   const merged = Object.assign(arg0);
   obj[1] = callback(VoiceChatCallScreenHeaderIconInner, obj);
-  return callback(require(3901) /* ManaContext */.ThemeContextProvider, obj);
+  return callback(require(3905) /* ManaContext */.ThemeContextProvider, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 11815
-// Function ID: 11816
+// Module ID: 11833
+// Function ID: 11834
 // Name: getInviteState
-// Dependencies: [32, 19, 17, 676, 21, 4189, 712, 1351, 3893, 5217, 11816, 11819, 1416, 1450, 11824, 1474, 5222, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4193, 712, 1351, 3897, 5221, 11834, 11837, 1416, 1450, 11842, 1474, 5226, 2]
 // Exports: default
 
-// Module 11815 (getInviteState)
+// Module 11833 (getInviteState)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "set";
@@ -65,7 +65,7 @@ function getInviteState(invite) {
   return constants.LOADING;
 }
 function InviteResolving() {
-  let obj = require(3893) /* map */;
+  let obj = require(3897) /* map */;
   obj = { style: createCacheKey().resolvingContainer, children: null };
   obj = { color: obj.useToken(importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT), size: "large" };
   obj[1] = callback2(closure_5, obj);
@@ -80,9 +80,9 @@ function AcceptInviteCardComponent(invite) {
   const effect = React.useEffect(() => {
     const tmp = outer1_13(invite);
     if (tmp !== first) {
-      const result = invite(5217).DeprecatedLayoutAnimation();
+      const result = invite(5221).DeprecatedLayoutAnimation();
       dependencyMap(tmp);
-      const obj = invite(5217);
+      const obj = invite(5221);
     }
   }, items);
   if (null == invite) {
@@ -91,12 +91,12 @@ function AcceptInviteCardComponent(invite) {
     let obj = {};
     const merged = Object.assign(invite);
     obj.invite = invite;
-    return callback2(first(11816), obj);
+    return callback2(first(11834), obj);
   } else if (tmp22.ERROR === first) {
     obj = {};
     const merged1 = Object.assign(invite);
     obj.invite = invite;
-    return callback2(first(11819), obj);
+    return callback2(first(11837), obj);
   } else {
     return callback2(InviteResolving, {});
   }
@@ -132,11 +132,11 @@ export default function AcceptInvite(invite) {
     splash = guild.splash;
   }
   if (null == splash) {
-    let guildSplashSource = tmp3(11824);
+    let guildSplashSource = tmp3(11842);
   } else {
     obj = { id: null, splash: null, size: null };
     ({ id: obj3[0], splash: obj3[1] } = guild);
-    let obj3 = require(1450) /* isAttachmentLadderEnabled */;
+    let obj3 = require(1450) /* handleImageLoad */;
     obj[2] = width * obj3.getDevicePixelRatio();
     guildSplashSource = tmp3(1416).getGuildSplashSource(obj);
     const tmp3Result = tmp3(1416);
@@ -149,7 +149,7 @@ export default function AcceptInvite(invite) {
   const merged1 = Object.assign(merged);
   obj3[1] = callback2(AcceptInviteCardComponent, { invite });
   obj2[1] = callback2(closure_7, obj3);
-  items1[1] = callback2(require(5222) /* PressableCard */.Card, obj2);
+  items1[1] = callback2(require(5226) /* PressableCard */.Card, obj2);
   obj[1] = items1;
   return callback3(closure_7, obj);
 };

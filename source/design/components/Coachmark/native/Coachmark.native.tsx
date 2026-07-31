@@ -1,17 +1,17 @@
-// Module ID: 8436
-// Function ID: 8437
+// Module ID: 8449
+// Function ID: 8450
 // Name: Coachmark
-// Dependencies: [109, 32, 19, 17, 21, 4050, 4189, 712, 8431, 4605, 6655, 1348, 4596, 4185, 4600, 1236, 5175, 8233, 6654, 500, 3901, 2]
+// Dependencies: [109, 32, 19, 17, 21, 4054, 4193, 712, 8444, 4609, 6661, 1348, 4600, 4189, 4604, 1236, 5179, 8240, 6660, 500, 3905, 2]
 // Exports: CoachmarkContainer
 
-// Module 8436 (Coachmark)
+// Module 8449 (Coachmark)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import get_ActivityIndicator from "TwinButtons";
 import jsxProd from "set";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4050";
+import importDefaultResult from "module_4054";
 
 let Pressable;
 let c10;
@@ -29,7 +29,8 @@ class Coachmark {
     }
     graphic = global.graphic;
     imgSource = global.imgSource;
-    ({ position, onDismiss, buttonLabel, buttonVariant, onButtonPress, gradientColor, experimental_withBlurBackground, renderImgComponent } = global);
+    ({ position, onDismiss, buttonLabel, buttonVariant, buttonIcon, onButtonPress, gradientColor, experimental_withBlurBackground, renderImgComponent } = global);
+    ({ buttonShiny, enterExitAnimatedStyles } = global);
     tmp = createAnimatedComponent();
     Cursor = tmp;
     ref = set.useRef(null);
@@ -42,7 +43,7 @@ class Coachmark {
     adjustmentX = tmp7.adjustmentX;
     tmp8 = graphic;
     ({ tooltipX, tooltipY } = tmp7);
-    obj = require("module_4050");
+    obj = require("module_4054");
     sharedValue = require("_objectWithoutProperties");
     set = sharedValue;
     items = [];
@@ -162,23 +163,26 @@ class Coachmark {
         items7 = [, ];
         items7[0] = tmp20(tmp18, obj4);
         if (experimental_withBlurBackground) {
-          obj5 = { variant: "secondary-overlay", size: "lg", text: null, onPress: null, grow: true };
-          obj5[2] = buttonLabel;
-          obj5[3] = onButtonPress;
+          obj5 = { variant: "secondary-overlay", size: "lg", icon: null, text: null, onPress: null, grow: true };
+          obj5[2] = buttonIcon;
+          obj5[3] = buttonLabel;
+          obj5[4] = onButtonPress;
           obj6 = obj5;
         } else {
           if (buttonVariant == null) {
             buttonVariant = "secondary";
           }
-          obj6 = { variant: null, size: null, text: null, onPress: null, grow: true };
+          obj6 = { variant: null, size: null, icon: null, text: null, onPress: null, shiny: null, grow: true };
           obj6[0] = buttonVariant;
           str3 = "lg";
           if (tmp15) {
             str3 = "sm";
           }
           obj6[1] = str3;
-          obj6[2] = buttonLabel;
-          obj6[3] = onButtonPress;
+          obj6[2] = buttonIcon;
+          obj6[3] = buttonLabel;
+          obj6[4] = onButtonPress;
+          obj6[5] = buttonShiny;
         }
         obj7 = { children: null };
         items7[1] = tmp20(require("Button").Button, obj6);
@@ -278,7 +282,7 @@ class Coachmark {
     if (tmp8Result1.isAndroid()) {
       items13 = [, ];
       items13[0] = tmp.shadow;
-      items13[1] = global.enterExitAnimatedStyles;
+      items13[1] = enterExitAnimatedStyles;
       items14 = items13;
     } else {
       items14 = [];
@@ -321,7 +325,7 @@ let closure_3 = ["style"];
 ({ View: error, Pressable } = get_ActivityIndicator);
 const Image = get_ActivityIndicator.Image;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = jsxProd);
-let closure_13 = require("module_4050").createAnimatedComponent(Pressable);
+let closure_13 = require("module_4054").createAnimatedComponent(Pressable);
 let obj = { container: { position: "absolute", alignItems: "center" }, shadow: null, body: null, textGap: null, textOnlyPadding: null, bodyBgColor: null, gradient: null, bodyContainer: null, center: null, buttonSpacing: null, text: null, cursorContainer: null, cursorHead: null, cursorSpine: null, image: null, bottomMargin: null, closeButton: null };
 obj = {};
 let merged = Object.assign(require("Themes").shadows.SHADOW_BUTTON_OVERLAY);
@@ -357,7 +361,7 @@ let result = require("noop").fileFinishedImporting("design/components/Coachmark/
 
 export { Coachmark };
 export const CoachmarkContainer = function CoachmarkContainer(experimental_withBlurBackground) {
-  let obj = require(3901) /* ManaContext */;
+  let obj = require(3905) /* ManaContext */;
   let str = "dark";
   if (!experimental_withBlurBackground.experimental_withBlurBackground) {
     str = obj.useThemeContext().theme;
@@ -366,5 +370,5 @@ export const CoachmarkContainer = function CoachmarkContainer(experimental_withB
   obj = {};
   const merged = Object.assign(experimental_withBlurBackground);
   obj[1] = callback2(Coachmark, obj);
-  return callback2(require(3901) /* ManaContext */.ThemeContextProvider, obj);
+  return callback2(require(3905) /* ManaContext */.ThemeContextProvider, obj);
 };

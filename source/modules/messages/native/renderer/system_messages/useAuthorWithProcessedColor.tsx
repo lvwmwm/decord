@@ -1,10 +1,10 @@
-// Module ID: 7740
-// Function ID: 7741
+// Module ID: 7748
+// Function ID: 7749
 // Name: getMessageAuthorWithProcessedColor
-// Dependencies: [17, 4418, 7741, 2]
+// Dependencies: [17, 4422, 7749, 2]
 // Exports: getMessageAuthorWithProcessedColor, getUserAuthorWithProcessedColor
 
-// Module 7740 (getMessageAuthorWithProcessedColor)
+// Module 7748 (getMessageAuthorWithProcessedColor)
 import { processColor } from "get ActivityIndicator";
 
 const result = require("processColorStrings").fileFinishedImporting("modules/messages/native/renderer/system_messages/useAuthorWithProcessedColor.tsx");
@@ -12,7 +12,7 @@ const result = require("processColorStrings").fileFinishedImporting("modules/mes
 export const getMessageAuthorWithProcessedColor = function getMessageAuthorWithProcessedColor(message) {
   let colorStrings;
   let guildId;
-  let obj = require(4418) /* useNullableMessageAuthor */;
+  let obj = require(4422) /* useNullableMessageAuthor */;
   const messageAuthor = obj.getMessageAuthor(message);
   const colorString = messageAuthor.colorString;
   obj = { nick: messageAuthor.nick, colorString: null, colorStrings: null, guildId: null };
@@ -22,14 +22,14 @@ export const getMessageAuthorWithProcessedColor = function getMessageAuthorWithP
     tmp4 = processColor(colorString);
   }
   obj[1] = tmp4;
-  obj[2] = require(7741) /* processColorStrings */.processColorStrings(colorStrings);
+  obj[2] = require(7749) /* processColorStrings */.processColorStrings(colorStrings);
   obj[3] = guildId;
   return obj;
 };
 export const getUserAuthorWithProcessedColor = function getUserAuthorWithProcessedColor(user, channel) {
   let colorStrings;
   let guildId;
-  let obj = require(4418) /* useNullableMessageAuthor */;
+  let obj = require(4422) /* useNullableMessageAuthor */;
   const userAuthor = obj.getUserAuthor(user, channel);
   const colorString = userAuthor.colorString;
   obj = { nick: userAuthor.nick, colorString: null, colorStrings: null, guildId: null };
@@ -39,7 +39,7 @@ export const getUserAuthorWithProcessedColor = function getUserAuthorWithProcess
     tmp4 = processColor(colorString);
   }
   obj[1] = tmp4;
-  obj[2] = require(7741) /* processColorStrings */.processColorStrings(colorStrings);
+  obj[2] = require(7749) /* processColorStrings */.processColorStrings(colorStrings);
   obj[3] = guildId;
   return obj;
 };

@@ -1,9 +1,9 @@
-// Module ID: 5919
-// Function ID: 5920
+// Module ID: 5925
+// Function ID: 5926
 // Name: updateGuildUnreadSentinel
-// Dependencies: [5920, 5923, 5096, 3819, 1376, 1218, 1372, 1862, 1220, 3817, 4201, 1931, 4385, 1874, 676, 1379, 4386, 5789, 11, 1865, 12, 3824, 2]
+// Dependencies: [5926, 5929, 5100, 3823, 1376, 1218, 1372, 1862, 1220, 3821, 4205, 1931, 4389, 1874, 676, 1379, 4390, 5794, 11, 1865, 12, 3828, 2]
 
-// Module 5919 (updateGuildUnreadSentinel)
+// Module 5925 (updateGuildUnreadSentinel)
 import findOrCreateMessageRecord from "findOrCreateMessageRecord";
 import _validate from "_validate";
 import rebuild from "rebuild";
@@ -97,7 +97,7 @@ function isCountableChannel(channel, mentionCount, arg2) {
         }
       }
       if (!channel.isPrivate()) {
-        let result1 = require(5789) /* useOptInEnabledForGuild */.isOptInEnabledForGuild(channel.guild_id);
+        let result1 = require(5794) /* useOptInEnabledForGuild */.isOptInEnabledForGuild(channel.guild_id);
         let tmp11 = null != channel.guild_id;
         if (tmp11) {
           if (result1) {
@@ -117,7 +117,7 @@ function isCountableChannel(channel, mentionCount, arg2) {
         } else if (!getUncachedChannelPermissions.can(channel.accessPermissions, channel)) {
           return false;
         }
-        const obj = require(5789) /* useOptInEnabledForGuild */;
+        const obj = require(5794) /* useOptInEnabledForGuild */;
       }
       let tmp16 = num > 0;
       if (!tmp16) {
@@ -462,7 +462,7 @@ function recountGuild(guildId) {
       }
       const mutedChannels = obj11.getMutedChannels(tmp2);
       const channelOverrides = obj11.getChannelOverrides(tmp2);
-      let obj2 = require(5789) /* useOptInEnabledForGuild */;
+      let obj2 = require(5794) /* useOptInEnabledForGuild */;
       const result = obj2.isOptInEnabledForGuild(tmp2);
       const mutableBasicGuildChannelsForGuild = store2.getMutableBasicGuildChannelsForGuild(tmp2);
       for (const key10034 in mutableBasicGuildChannelsForGuild) {
@@ -955,7 +955,7 @@ function handleThreadMemberUpdate(id) {
   return recountChannels(id.guildId, items);
 }
 function handleThreadMembersUpdate(id) {
-  let result = require(3824) /* doesThreadMembersActionAffectMe */.doesThreadMembersActionAffectMe(id);
+  let result = require(3828) /* doesThreadMembersActionAffectMe */.doesThreadMembersActionAffectMe(id);
   if (result) {
     const items = [id.id];
     result = recountChannels(id.guildId, items);

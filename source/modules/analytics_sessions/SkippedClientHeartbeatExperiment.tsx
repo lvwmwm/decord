@@ -1,10 +1,10 @@
-// Module ID: 5728
-// Function ID: 5729
+// Module ID: 5733
+// Function ID: 5734
 // Name: shouldLogClientHeartbeatSkipped
 // Dependencies: [1452, 2]
 // Exports: shouldLogClientHeartbeatSkipped
 
-// Module 5728 (shouldLogClientHeartbeatSkipped)
+// Module 5733 (shouldLogClientHeartbeatSkipped)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

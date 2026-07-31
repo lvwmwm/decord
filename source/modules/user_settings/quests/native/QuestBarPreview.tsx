@@ -1,16 +1,17 @@
-// Module ID: 14199
-// Function ID: 14200
+// Module ID: 14221
+// Function ID: 14222
 // Name: QuestBarPreview
-// Dependencies: [19, 17, 21, 4189, 712, 14122, 14200, 14201, 2]
+// Dependencies: [19, 17, 21, 4193, 712, 14144, 14222, 14223, 14224, 2]
 // Exports: QuestBarPreview
 
-// Module 14199 (QuestBarPreview)
+// Module 14221 (QuestBarPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 
 const require = arg1;
+let closure_5 = { isRendered: true, isVisibleToUser: true };
 createCacheKey = { overlay: { position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 1000, elevation: 1000, pointerEvents: "box-none" }, questDockContainer: null };
 createCacheKey = { position: "absolute", bottom: 0, left: require("Themes").space.PX_16, right: require("Themes").space.PX_16, zIndex: 1001, elevation: 1001 };
 createCacheKey[1] = createCacheKey;
@@ -30,12 +31,13 @@ export const QuestBarPreview = function QuestBarPreview(quest) {
       obj[0] = tmp.questDockContainer;
       obj = { children: null };
       const obj1 = { value: null, children: null };
-      const obj2 = { isRendered: true, isVisibleToUser: true, quest: null };
-      obj2[2] = quest;
-      obj1[0] = obj2;
-      obj1[1] = jsx(require(14201) /* QuestDockWithGestureAnimation */.QuestDockWithEntranceAnimation, {});
-      obj[0] = jsx(importDefault(14200).Provider, { value: null, children: null });
-      obj[1] = jsx(require(14122) /* QuestDockMode */.QuestDockExternalCoordinationContextProvider, { children: null });
+      obj1[0] = closure_5;
+      const obj2 = { quest: null, children: null };
+      obj2[0] = quest;
+      obj2[1] = jsx(require(14224) /* QuestDockWithGestureAnimation */.QuestDockWithEntranceAnimation, {});
+      obj1[1] = jsx(require(14223) /* getDeliveredQuest */.QuestDockQuestProvider, { quest: null, children: null });
+      obj[0] = jsx(importDefault(14222).Provider, { value: null, children: null });
+      obj[1] = jsx(require(14144) /* QuestDockMode */.QuestDockExternalCoordinationContextProvider, { children: null });
       obj[1] = <View>{null}</View>;
       tmp2 = <View>{null}</View>;
     }

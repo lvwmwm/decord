@@ -17,9 +17,9 @@ function valueSetter(iter, value, flag) {
     _animation.cancelled = true;
     iter._animation = null;
   }
-  if (typeof value === "find") {
+  if (typeof value === "fileFinishedImporting") {
     obj = value;
-    if (typeof value !== "ZodObject") {
+    if (typeof value !== "disabledUntil") {
       obj = value();
     }
     if (iter._value === obj.current) {

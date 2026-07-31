@@ -1,21 +1,21 @@
-// Module ID: 15481
-// Function ID: 15482
+// Module ID: 15509
+// Function ID: 15510
 // Name: MessageVerticalSeparator
-// Dependencies: [19, 17, 9097, 21, 4189, 2]
+// Dependencies: [19, 17, 9108, 21, 4193, 2]
 // Exports: CardVerticalSeparator, MediaVerticalSeparator, MessageVerticalSeparator
 
-// Module 15481 (MessageVerticalSeparator)
+// Module 15509 (MessageVerticalSeparator)
 import "noop";
 import { View } from "get ActivityIndicator";
-import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+import MessageEmbedTypes from "MessageEmbedTypes";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 
 let FILES_OR_LINKS_GAP_WIDTH;
 let MEDIA_ITEM_GAP_WIDTH;
-({ MEDIA_ITEM_GAP_WIDTH, FILES_OR_LINKS_GAP_WIDTH } = SearchAutocompleteSelectAnalyticsActions);
+({ MEDIA_ITEM_GAP_WIDTH, FILES_OR_LINKS_GAP_WIDTH } = MessageEmbedTypes);
 let closure_2 = createCacheKey.createStyles({ filesOrLinksSeparator: { height: FILES_OR_LINKS_GAP_WIDTH }, mediaSeparator: { height: MEDIA_ITEM_GAP_WIDTH }, messageSeparator: { height: 4 } });
-const result = require("SearchAutocompleteSelectAnalyticsActions").fileFinishedImporting("modules/search/native/components/list/rows/Separators.tsx");
+const result = require("MessageEmbedTypes").fileFinishedImporting("modules/search/native/components/list/rows/Separators.tsx");
 
 export const MessageVerticalSeparator = function MessageVerticalSeparator() {
   return <View style={callback().messageSeparator} />;

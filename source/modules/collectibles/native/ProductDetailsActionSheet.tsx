@@ -1,18 +1,19 @@
-// Module ID: 8728
-// Function ID: 8729
+// Module ID: 8741
+// Function ID: 8742
 // Name: PreviewProfileTrigger
-// Dependencies: [32, 19, 17, 678, 676, 505, 21, 4189, 712, 4604, 3901, 4035, 1236, 8729, 1901, 8661, 8356, 8727, 6499, 8731, 5515, 5535, 5809, 8732, 8733, 8660, 8423, 503, 8043, 698, 8696, 8734, 8735, 7964, 8698, 8701, 3848, 8736, 5243, 5245, 8703, 8737, 8753, 8759, 1297, 8760, 6662, 4157, 8762, 500, 2]
+// Dependencies: [32, 19, 17, 5803, 678, 676, 505, 21, 4193, 712, 4608, 3905, 4039, 1236, 8742, 1901, 8674, 8363, 8740, 6505, 8744, 5519, 5539, 5814, 8745, 8746, 8673, 8436, 503, 8049, 698, 8709, 589, 8747, 8748, 7971, 8711, 5815, 8713, 8714, 3852, 8749, 5247, 5249, 8716, 8750, 8766, 8772, 1297, 8773, 6668, 4161, 8775, 500, 2]
 // Exports: default
 
-// Module 8728 (PreviewProfileTrigger)
-import DynamicBadgeTooltip from "DynamicBadgeTooltip";
+// Module 8741 (PreviewProfileTrigger)
+import initialize from "initialize";
 import apexExperiment from "apexExperiment";
 import noop from "apexExperiment";
-import get_ActivityIndicator from "PRODUCT_DETAILS_ACTION_SHEET_KEY";
+import get_ActivityIndicator from "showUserProfileActionSheet";
+import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import { ShopCtaEnum } from "items";
 import { AnalyticEvents } from "ME";
 import sum from "sum";
-import jsxProd from "QUICK_SWITCHER";
+import jsxProd from "context";
 import createCacheKey from "createCacheKey";
 import ManaContext from "ManaContext";
 import ManaContext from "ManaContext";
@@ -20,25 +21,25 @@ import ManaContext from "ManaContext";
 let c5;
 let closure_12;
 let closure_14;
+let closure_15;
 let closure_6;
 let error;
 let map1;
 let metroImportAll;
-let unpackModuleId;
 let require = arg1;
 function PreviewProfileTrigger(handlePreviewPress) {
   handlePreviewPress = handlePreviewPress.handlePreviewPress;
   const onTrackPress = handlePreviewPress.onTrackPress;
   let dependencyMap;
-  let DynamicBadgeTooltip;
+  let initialize;
   let React;
   let closure_5;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = handlePreviewPress(3901);
+  let obj = handlePreviewPress(3905);
   const theme = obj.useThemeContext().theme;
-  const isThemeLightResult = handlePreviewPress(4035).isThemeLight(theme);
-  DynamicBadgeTooltip = theme === constants2.MIDNIGHT;
+  const isThemeLightResult = handlePreviewPress(4039).isThemeLight(theme);
+  initialize = theme === constants2.MIDNIGHT;
   React = isThemeLightResult ? tmp.previewProfileButtonLight : tmp.previewProfileButtonDark;
   closure_5 = isThemeLightResult ? tmp.previewProfileButtonLightPressed : tmp.previewProfileButtonDarkPressed;
   let items = [handlePreviewPress, onTrackPress];
@@ -46,8 +47,8 @@ function PreviewProfileTrigger(handlePreviewPress) {
     style(pressed) {
       pressed = pressed.pressed;
       const items = [_undefined.previewProfileButton, apexExperiment, , ];
-      let previewProfileButtonMidnight = DynamicBadgeTooltip;
-      if (DynamicBadgeTooltip) {
+      let previewProfileButtonMidnight = initialize;
+      if (initialize) {
         previewProfileButtonMidnight = _undefined.previewProfileButtonMidnight;
       }
       items[2] = previewProfileButtonMidnight;
@@ -58,7 +59,7 @@ function PreviewProfileTrigger(handlePreviewPress) {
       return items;
     },
     onPress: React.useCallback(() => {
-      onTrackPress(outer1_9.FULL_PROFILE_PREVIEW_BUTTON);
+      onTrackPress(outer1_10.FULL_PROFILE_PREVIEW_BUTTON);
       handlePreviewPress();
     }, items),
     accessibilityRole: "button",
@@ -69,7 +70,7 @@ function PreviewProfileTrigger(handlePreviewPress) {
   obj[3] = intl.string(handlePreviewPress(1236).t["3Qcx6K"]);
   obj = { size: "md", color: null };
   obj[1] = onTrackPress(712).colors.INTERACTIVE_ICON_DEFAULT;
-  obj[4] = callback3(handlePreviewPress(8729).EyeIcon, obj);
+  obj[4] = callback3(handlePreviewPress(8742).EyeIcon, obj);
   return callback3(closure_7, obj);
 }
 function ProductDetailsActionSheetInner(product) {
@@ -97,8 +98,8 @@ function ProductDetailsActionSheetInner(product) {
   let callback2;
   let c7;
   let c8;
-  const OTPACOMOrderExperiment = require(analyticsLocations[18]).OTPACOMOrderExperiment;
-  let obj = require(analyticsLocations[19]);
+  const OTPACOMOrderExperiment = require(analyticsLocations[19]).OTPACOMOrderExperiment;
+  let obj = require(analyticsLocations[20]);
   const androidShopOrdersEnabled = obj.useAndroidShopOrdersEnabled({ location: "ProductDetailsActionSheetInner" });
   const tmp4 = createCacheKey();
   let obj1 = trackPdpClick;
@@ -106,19 +107,19 @@ function ProductDetailsActionSheetInner(product) {
   analyticsLocations = ref1;
   const items = [];
   const ref = trackPdpClick.useRef(null);
-  const tmp8 = analyticsLocations(analyticsLocations[20]);
-  items[HermesBuiltin.arraySpread(analyticsLocations, 0)] = analyticsLocations(analyticsLocations[21]).COLLECTIBLES_SHOP_PROFILE_PREVIEW;
+  const tmp8 = analyticsLocations(analyticsLocations[21]);
+  items[HermesBuiltin.arraySpread(analyticsLocations, 0)] = analyticsLocations(analyticsLocations[22]).COLLECTIBLES_SHOP_PROFILE_PREVIEW;
   analyticsLocations = tmp8(items).analyticsLocations;
   const tmp11 = callback(trackPdpClick.useState(true), 2);
   callback = tmp12;
   const items1 = [product];
-  const tmp13 = callback2(() => product(analyticsLocations[22]).getProductSkuIds(closure_0), items1);
+  const tmp13 = callback2(() => product(analyticsLocations[23]).getProductSkuIds(closure_0), items1);
   const arraySpreadResult = HermesBuiltin.arraySpread(analyticsLocations, 0);
   const tmp10 = callback;
   [tmp15, tmp16] = callback(trackPdpClick.useState(num), 2);
-  let obj2 = require(analyticsLocations[22]);
+  let obj2 = require(analyticsLocations[23]);
   const selectedProduct = obj2.getSelectedProduct(product, tmp15);
-  let obj3 = require(analyticsLocations[23]);
+  let obj3 = require(analyticsLocations[24]);
   obj = { skuId: selectedProduct.skuId, productSkuIds: tmp13, analyticsLocations };
   trackPdpClick = obj3.useTrackPdpClick(obj);
   const tmp14 = callback(trackPdpClick.useState(num), 2);
@@ -129,14 +130,14 @@ function ProductDetailsActionSheetInner(product) {
     tmp23(selectedProduct.skuId);
     tmp21(undefined);
   }
-  let tmpResult = tmp(tmp2[24]);
+  let tmpResult = tmp(tmp2[25]);
   const previewCollectibleProduct = tmpResult.usePreviewCollectibleProduct(selectedProduct, tmp11[0], tmp20);
-  tmpResult = tmp(tmp2[25]);
+  tmpResult = tmp(tmp2[26]);
   const collectiblesAnalyticsContext = tmpResult.useCollectiblesAnalyticsContext();
   obj = { type: null, name: null, properties: null };
-  let tmp7Result = tmp7(tmp2[26]);
-  obj[0] = require(analyticsLocations[27]).ImpressionTypes.HALFSHEET;
-  obj[1] = require(analyticsLocations[27]).ImpressionNames.SHOP_PRODUCT_DETAIL;
+  let tmp7Result = tmp7(tmp2[27]);
+  obj[0] = require(analyticsLocations[28]).ImpressionTypes.HALFSHEET;
+  obj[1] = require(analyticsLocations[28]).ImpressionNames.SHOP_PRODUCT_DETAIL;
   obj1 = { sku_id: selectedProduct.skuId, location_stack: analyticsLocations, card_id: null, position_in_section: null, shop_session_id: null, product_sku_ids: null };
   let cardId;
   if (collectiblesAnalyticsContext != null) {
@@ -161,34 +162,34 @@ function ProductDetailsActionSheetInner(product) {
   callback = tmp33;
   trackPdpClick = tmp12;
   tmp22 = callback(trackPdpClick.useState(selectedProduct.skuId), 2);
-  currentUser = require(analyticsLocations[15]).useCurrentUser();
+  currentUser = require(analyticsLocations[16]).useCurrentUser();
   const items2 = [product, tmp15, tmp11[1], currentUser.id, analyticsLocations, collectiblesAnalyticsContext];
   callback = obj1.useCallback(() => {
     trackPdpClick(false);
-    analyticsLocations(analyticsLocations[16])({
+    analyticsLocations(analyticsLocations[17])({
       userId: currentUser.id,
       isPreviewingChanges: true,
       sourceAnalyticsLocations: analyticsLocations,
       onClose() {
-        let obj = outer1_0(outer1_2[17]);
-        obj = { product: closure_0, initialVariantIndex: closure_1, analyticsLocations: closure_2, shopAnalyticsContext: DynamicBadgeTooltip };
+        let obj = outer1_0(outer1_2[18]);
+        obj = { product: closure_0, initialVariantIndex: closure_1, analyticsLocations: closure_2, shopAnalyticsContext: initialize };
         return obj.openProductDetailsActionSheet(obj);
       }
     });
   }, items2);
-  const tmpResult1 = require(analyticsLocations[15]);
-  callback2 = require(analyticsLocations[28]).useShopProductItems(product);
-  const tmp36 = product.type === require(analyticsLocations[14]).CollectiblesItemType.BUNDLE;
+  const tmpResult1 = require(analyticsLocations[16]);
+  callback2 = require(analyticsLocations[29]).useShopProductItems(product);
+  const tmp36 = product.type === require(analyticsLocations[15]).CollectiblesItemType.BUNDLE;
   c7 = tmp36;
-  const tmpResult2 = require(analyticsLocations[28]);
+  const tmpResult2 = require(analyticsLocations[29]);
   [type, tmp38] = tmp10(obj1.useState(() => {
     if (c7) {
       if (null != firstProfileEffect.firstProfileEffect) {
-        let NAMEPLATE = product(analyticsLocations[14]).CollectiblesItemType.PROFILE_EFFECT;
+        let NAMEPLATE = product(analyticsLocations[15]).CollectiblesItemType.PROFILE_EFFECT;
       } else if (null != tmp.firstAvatarDecoration) {
-        NAMEPLATE = product(analyticsLocations[14]).CollectiblesItemType.AVATAR_DECORATION;
+        NAMEPLATE = product(analyticsLocations[15]).CollectiblesItemType.AVATAR_DECORATION;
       } else if (null != tmp.firstNameplate) {
-        NAMEPLATE = product(analyticsLocations[14]).CollectiblesItemType.NAMEPLATE;
+        NAMEPLATE = product(analyticsLocations[15]).CollectiblesItemType.NAMEPLATE;
       }
       return NAMEPLATE;
     }
@@ -197,11 +198,11 @@ function ProductDetailsActionSheetInner(product) {
   const tmp10Result = tmp10(obj1.useState(() => {
     if (c7) {
       if (null != firstProfileEffect.firstProfileEffect) {
-        let NAMEPLATE = product(analyticsLocations[14]).CollectiblesItemType.PROFILE_EFFECT;
+        let NAMEPLATE = product(analyticsLocations[15]).CollectiblesItemType.PROFILE_EFFECT;
       } else if (null != tmp.firstAvatarDecoration) {
-        NAMEPLATE = product(analyticsLocations[14]).CollectiblesItemType.AVATAR_DECORATION;
+        NAMEPLATE = product(analyticsLocations[15]).CollectiblesItemType.AVATAR_DECORATION;
       } else if (null != tmp.firstNameplate) {
-        NAMEPLATE = product(analyticsLocations[14]).CollectiblesItemType.NAMEPLATE;
+        NAMEPLATE = product(analyticsLocations[15]).CollectiblesItemType.NAMEPLATE;
       }
       return NAMEPLATE;
     }
@@ -210,10 +211,10 @@ function ProductDetailsActionSheetInner(product) {
   if (!tmp36) {
     type = selectedProduct.type;
   }
-  let tmp57Result = null != type;
-  if (tmp57Result) {
-    tmp57Result = type === tmp(tmp2[14]).CollectiblesItemType.PROFILE_EFFECT || type === tmp(tmp2[14]).CollectiblesItemType.PROFILE_FRAME || type === tmp(tmp2[14]).CollectiblesItemType.AVATAR_DECORATION;
-    const tmp42 = type === tmp(tmp2[14]).CollectiblesItemType.PROFILE_EFFECT || type === tmp(tmp2[14]).CollectiblesItemType.PROFILE_FRAME || type === tmp(tmp2[14]).CollectiblesItemType.AVATAR_DECORATION;
+  let tmp59Result = null != type;
+  if (tmp59Result) {
+    tmp59Result = type === tmp(tmp2[15]).CollectiblesItemType.PROFILE_EFFECT || type === tmp(tmp2[15]).CollectiblesItemType.PROFILE_FRAME || type === tmp(tmp2[15]).CollectiblesItemType.AVATAR_DECORATION;
+    const tmp42 = type === tmp(tmp2[15]).CollectiblesItemType.PROFILE_EFFECT || type === tmp(tmp2[15]).CollectiblesItemType.PROFILE_FRAME || type === tmp(tmp2[15]).CollectiblesItemType.AVATAR_DECORATION;
   }
   const items3 = [product, tmp11[1]];
   const items4 = [analyticsLocations, product.skuId];
@@ -222,63 +223,83 @@ function ProductDetailsActionSheetInner(product) {
     _undefined2(type.type);
   }, []);
   const effect = obj1.useEffect(() => {
-    let obj = analyticsLocations(analyticsLocations[29]);
+    let obj = analyticsLocations(analyticsLocations[30]);
     obj = { type: "Collectibles Shop Details Modal", location_stack: analyticsLocations, sku_id: product.skuId };
-    obj.track(outer1_10.OPEN_MODAL, obj);
+    obj.track(outer1_11.OPEN_MODAL, obj);
   }, items4);
   const hideBadge = product.hideBadge;
   const tmp39Result = tmp39(() => {
-    if (product.type === product(analyticsLocations[14]).CollectiblesItemType.BUNDLE) {
+    if (product.type === product(analyticsLocations[15]).CollectiblesItemType.BUNDLE) {
       _undefined(false);
     }
   }, items3);
-  const isProfileFramesEarlyAccessPhase = require(analyticsLocations[30]).useIsProfileFramesEarlyAccessPhase("ProductDetailsActionSheet");
-  const tmpResult3 = require(analyticsLocations[30]);
-  const tmp46 = selectedProduct.type === require(analyticsLocations[14]).CollectiblesItemType.PROFILE_FRAME && isProfileFramesEarlyAccessPhase && !hideBadge;
-  const tmpResult4 = require(analyticsLocations[10]);
-  const isThemeDarkResult = require(analyticsLocations[11]).isThemeDark(tmpResult4.useThemeContext().theme);
-  let tmp48 = selectedProduct;
+  const isProfileFramesEarlyAccessPhase = require(analyticsLocations[31]).useIsProfileFramesEarlyAccessPhase("ProductDetailsActionSheet");
+  const tmpResult3 = require(analyticsLocations[31]);
+  const tmp46 = selectedProduct.type === require(analyticsLocations[15]).CollectiblesItemType.PROFILE_FRAME && isProfileFramesEarlyAccessPhase && !hideBadge;
+  const tmpResult4 = require(analyticsLocations[11]);
+  const isThemeDarkResult = require(analyticsLocations[12]).isThemeDark(tmpResult4.useThemeContext().theme);
+  const tmpResult5 = require(analyticsLocations[12]);
+  const items5 = [updateCategoriesAndProducts];
+  const stateFromStores = require(analyticsLocations[32]).useStateFromStores(items5, () => {
+    const category = outer1_9.getCategory(product.categorySkuId);
+    let unpublishedAt;
+    if (category != null) {
+      unpublishedAt = category.unpublishedAt;
+    }
+    return unpublishedAt;
+  });
+  let tmp49 = selectedProduct;
   if (tmp36) {
-    tmp48 = selectedProduct;
+    tmp49 = selectedProduct;
     if (null != tmp20) {
       obj2 = { skuId: null, type: null, items: null };
-      ({ skuId: obj15[0], type: obj15[1] } = tmp20);
-      const items5 = [tmp20];
-      obj2[2] = items5;
-      tmp48 = obj2;
+      ({ skuId: obj16[0], type: obj16[1] } = tmp20);
+      const items6 = [tmp20];
+      obj2[2] = items6;
+      tmp49 = obj2;
     }
   }
   if (tmp46) {
-    let tmp49 = callback3(tmp7(tmp2[31]), { location: "ProductDetailsActionSheet", disablePressable: true });
+    let tmp50 = callback3(tmp7(tmp2[33]), { location: "ProductDetailsActionSheet", disablePressable: true });
   } else {
-    tmp49 = null;
+    tmp50 = null;
     if (null == product.badgeOverride) {
-      if (tmpResult6.isDynamicProduct(tmp48)) {
+      if (tmpResult7.isDynamicProduct(tmp49)) {
         if (!hideBadge) {
           obj3 = { accessibilityLabel: null, children: null };
-          const intl = tmp(tmp2[12]).intl;
-          obj3[0] = intl.string(tmp(tmp2[12]).t["+drfVi"]);
+          const intl = tmp(tmp2[13]).intl;
+          obj3[0] = intl.string(tmp(tmp2[13]).t["+drfVi"]);
           const obj4 = { icon: null, label: null, isDark: null };
-          obj4[0] = tmp(tmp2[34]).DiceIcon;
-          const intl2 = tmp(tmp2[12]).intl;
-          obj4[1] = intl2.string(tmp(tmp2[12]).t["+drfVi"]);
+          obj4[0] = tmp(tmp2[36]).DiceIcon;
+          const intl2 = tmp(tmp2[13]).intl;
+          obj4[1] = intl2.string(tmp(tmp2[13]).t["+drfVi"]);
           obj4[2] = isThemeDarkResult;
-          obj3[1] = callback3(tmp(tmp2[33]).IconTextBadge, obj4);
-          tmp49 = callback3(tmp(tmp2[32]).DynamicBadgeTooltip, obj3);
+          obj3[1] = callback3(tmp(tmp2[35]).IconTextBadge, obj4);
+          tmp50 = callback3(tmp(tmp2[34]).DynamicBadgeTooltip, obj3);
         }
       }
-      tmpResult6 = tmp(tmp2[22]);
-      const tmpResult7 = tmp(tmp2[22]);
-      tmp49 = null;
-      if (tmp51) {
-        const obj5 = { icon: null, label: null, isDark: null };
-        obj5[0] = tmp(tmp2[35]).OrbsIcon;
-        const intl3 = tmp(tmp2[12]).intl;
-        obj5[1] = intl3.string(tmp(tmp2[12]).t["0TmQRG"]);
-        obj5[2] = isThemeDarkResult;
-        tmp49 = callback3(tmp(tmp2[33]).IconTextBadge, obj5);
+      if (null != stateFromStores) {
+        if (tmpResult8.shouldShowLimitedTimeBadge(stateFromStores)) {
+          if (!hideBadge) {
+            const obj5 = { unpublishedAt: null };
+            obj5[0] = stateFromStores;
+            tmp50 = callback3(tmp7(tmp2[38]), obj5);
+          }
+        }
+        tmpResult8 = tmp(tmp2[37]);
       }
-      tmp51 = tmp(tmp2[22]).isOrbsExclusiveProduct(selectedProduct) && !hideBadge;
+      tmpResult7 = tmp(tmp2[23]);
+      const tmpResult9 = tmp(tmp2[23]);
+      tmp50 = null;
+      if (tmp53) {
+        const obj6 = { icon: null, label: null, isDark: null };
+        obj6[0] = tmp(tmp2[39]).OrbsIcon;
+        const intl3 = tmp(tmp2[13]).intl;
+        obj6[1] = intl3.string(tmp(tmp2[13]).t["0TmQRG"]);
+        obj6[2] = isThemeDarkResult;
+        tmp50 = callback3(tmp(tmp2[35]).IconTextBadge, obj6);
+      }
+      tmp53 = tmp(tmp2[23]).isOrbsExclusiveProduct(selectedProduct) && !hideBadge;
     }
   }
   let enabled = paymentGateway === constants.APPLE_ADVANCED_COMMERCE;
@@ -286,20 +307,20 @@ function ProductDetailsActionSheetInner(product) {
     enabled = OTPACOMOrderExperiment.useConfig({ location: "ProductDetailsActionSheetInner" }).enabled;
   }
   if (!enabled) {
-    let result = paymentGateway === tmp54.GOOGLE;
+    let result = paymentGateway === tmp56.GOOGLE;
     if (result) {
-      result = tmp(tmp2[36]).isGooglePlayBillingSupported();
-      const tmpResult8 = tmp(tmp2[36]);
+      result = tmp(tmp2[40]).isGooglePlayBillingSupported();
+      const tmpResult10 = tmp(tmp2[40]);
     }
     if (result) {
       result = androidShopOrdersEnabled;
     }
     enabled = result;
   }
-  tmp54 = constants;
-  const tmpResult5 = require(analyticsLocations[11]);
-  const obj6 = { value: analyticsLocations, children: null };
-  const obj7 = {
+  tmp56 = constants;
+  const tmpResult6 = require(analyticsLocations[32]);
+  const obj7 = { value: analyticsLocations, children: null };
+  const obj8 = {
     scrollable: true,
     startExpanded: true,
     onExpand(arg0) {
@@ -311,72 +332,72 @@ function ProductDetailsActionSheetInner(product) {
       return scrollToEndResult;
     },
     onDismiss() {
-      return trackPdpClick(outer1_9.CLOSE_DETAIL);
+      return trackPdpClick(outer1_10.CLOSE_DETAIL);
     },
     ref,
     children: null
   };
-  const obj8 = { scrollsToTop: false, style: tmp4.container, ref: ref1, children: null };
-  const obj9 = { style: tmp4.actionButtons, children: null };
-  if (tmp57Result) {
-    const obj10 = { handlePreviewPress: null, onTrackPress: null };
-    obj10[0] = callback;
-    obj10[1] = trackPdpClick;
-    tmp57Result = tmp57(PreviewProfileTrigger, obj10);
+  const obj9 = { scrollsToTop: false, style: tmp4.container, ref: ref1, children: null };
+  const obj10 = { style: tmp4.actionButtons, children: null };
+  if (tmp59Result) {
+    const obj11 = { handlePreviewPress: null, onTrackPress: null };
+    obj11[0] = callback;
+    obj11[1] = trackPdpClick;
+    tmp59Result = tmp59(PreviewProfileTrigger, obj11);
   }
-  const items6 = [tmp57Result, callback3(analyticsLocations(analyticsLocations[40]), { selectedProduct, size: "md", onTrackPress: trackPdpClick })];
-  obj9[1] = items6;
-  const items7 = [closure_14(c8, obj9), , , , , ];
-  tmp57Result = null != tmp49;
-  if (tmp57Result) {
-    const obj11 = { style: null, children: null };
-    obj11[0] = tmp4.badgeWrapper;
-    obj11[1] = tmp49;
-    tmp57Result = tmp57(tmp59, obj11);
+  const items7 = [tmp59Result, callback3(analyticsLocations(analyticsLocations[44]), { selectedProduct, size: "md", onTrackPress: trackPdpClick })];
+  obj10[1] = items7;
+  const items8 = [closure_15(c8, obj10), , , , , ];
+  tmp59Result = null != tmp50;
+  if (tmp59Result) {
+    const obj12 = { style: null, children: null };
+    obj12[0] = tmp4.badgeWrapper;
+    obj12[1] = tmp50;
+    tmp59Result = tmp59(tmp61, obj12);
   }
-  items7[1] = tmp57Result;
-  items7[2] = callback3(analyticsLocations(analyticsLocations[41]), { product: selectedProduct, handlePreviewPress: callback, onTrackPress: trackPdpClick, onBundleActiveItemTypeChange: tmp38, onBundleActiveItemChange: tmp40 });
-  items7[3] = callback3(analyticsLocations(analyticsLocations[42]), { product: selectedProduct, onTrackPress: trackPdpClick });
-  items7[4] = callback3(analyticsLocations(analyticsLocations[43]), { product, selectedVariantIndex: tmp15, onVariantSelect: tmp16 });
-  const obj12 = { size: null };
-  obj12[0] = analyticsLocations(analyticsLocations[8]).space.PX_16;
-  items7[5] = callback3(require(analyticsLocations[44]).Spacer, obj12);
-  obj8[3] = items7;
-  const items8 = [closure_14(require(analyticsLocations[39]).BottomSheetScrollView, obj8), ];
-  const obj13 = { skuIDs: [], activeSubscription: null, children: null };
-  const obj14 = {
+  items8[1] = tmp59Result;
+  items8[2] = callback3(analyticsLocations(analyticsLocations[45]), { product: selectedProduct, handlePreviewPress: callback, onTrackPress: trackPdpClick, onBundleActiveItemTypeChange: tmp38, onBundleActiveItemChange: tmp40 });
+  items8[3] = callback3(analyticsLocations(analyticsLocations[46]), { product: selectedProduct, onTrackPress: trackPdpClick });
+  items8[4] = callback3(analyticsLocations(analyticsLocations[47]), { product, selectedVariantIndex: tmp15, onVariantSelect: tmp16 });
+  const obj13 = { size: null };
+  obj13[0] = analyticsLocations(analyticsLocations[9]).space.PX_16;
+  items8[5] = callback3(require(analyticsLocations[48]).Spacer, obj13);
+  obj9[3] = items8;
+  const items9 = [closure_15(require(analyticsLocations[43]).BottomSheetScrollView, obj9), ];
+  const obj14 = { skuIDs: [], activeSubscription: null, children: null };
+  const obj15 = {
     paymentGateway,
     orderRequired: enabled,
-    skuIds: items9,
+    skuIds: items10,
     isGift: false,
     activeSubscription: null,
-    initialExternalGatewayFacet: analyticsLocations(analyticsLocations[37])(selectedProduct),
+    initialExternalGatewayFacet: analyticsLocations(analyticsLocations[41])(selectedProduct),
     onOrderRetryCancellation() {
-      return analyticsLocations(analyticsLocations[47]).hideActionSheet(product(analyticsLocations[17]).PRODUCT_DETAILS_ACTION_SHEET_KEY);
+      return analyticsLocations(analyticsLocations[51]).hideActionSheet(product(analyticsLocations[18]).PRODUCT_DETAILS_ACTION_SHEET_KEY);
     },
     children: null
   };
-  items9 = [selectedProduct.skuId];
-  tmp7Result = tmp7(tmp2[46]);
-  obj14[7] = callback3(analyticsLocations(analyticsLocations[48]), { onBuy: tmp39Result, product: selectedProduct, analyticsLocations, onTrackPress: trackPdpClick });
-  obj13[2] = callback3(tmp7Result, obj14, selectedProduct.skuId);
-  items8[1] = callback3(require(analyticsLocations[45]).NativePaymentContextProvider, obj13);
-  obj7[5] = items8;
-  obj6[1] = closure_14(require(analyticsLocations[38]).BottomSheet, obj7);
-  return callback3(require(analyticsLocations[20]).AnalyticsLocationProvider, obj6);
+  items10 = [selectedProduct.skuId];
+  tmp7Result = tmp7(tmp2[50]);
+  obj15[7] = callback3(analyticsLocations(analyticsLocations[52]), { onBuy: tmp39Result, product: selectedProduct, analyticsLocations, onTrackPress: trackPdpClick });
+  obj14[2] = callback3(tmp7Result, obj15, selectedProduct.skuId);
+  items9[1] = callback3(require(analyticsLocations[49]).NativePaymentContextProvider, obj14);
+  obj8[5] = items9;
+  obj7[1] = closure_15(require(analyticsLocations[42]).BottomSheet, obj8);
+  return callback3(require(analyticsLocations[21]).AnalyticsLocationProvider, obj7);
 }
 function ProductDetailsActionSheetWithOrderCTX(arg0) {
   let obj = require(500) /* set */;
   obj = {};
   const merged = Object.assign(arg0);
-  obj.paymentGateway = obj.isIOS() ? closure_11.APPLE_ADVANCED_COMMERCE : closure_11.GOOGLE;
+  obj.paymentGateway = obj.isIOS() ? closure_12.APPLE_ADVANCED_COMMERCE : closure_12.GOOGLE;
   return callback3(ProductDetailsActionSheetInner, obj);
 }
 ({ useCallback: c5, useMemo: closure_6 } = noop);
 ({ Pressable: error, View: metroImportAll } = get_ActivityIndicator);
-({ PaymentGateways: unpackModuleId, ThemeTypes: closure_12 } = sum);
-({ jsx: map1, jsxs: closure_14 } = jsxProd);
-let closure_15 = {};
+({ PaymentGateways: closure_12, ThemeTypes: map1 } = sum);
+({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
+let closure_16 = {};
 createCacheKey = { container: { position: "relative", flex: 1 }, actionButtons: null, previewProfileButton: null, previewProfileButtonLight: null, previewProfileButtonLightPressed: null, previewProfileButtonDark: null, previewProfileButtonDarkPressed: null, previewProfileButtonMidnight: null, badgeWrapper: null };
 createCacheKey = { position: "absolute", top: 0, right: require("Themes").space.PX_16, zIndex: 2, flexDirection: "row", gap: require("Themes").space.PX_8 };
 createCacheKey[1] = createCacheKey;
@@ -402,12 +423,12 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/col
 export default function ProductDetailsActionSheet(shopAnalyticsContext) {
   shopAnalyticsContext = shopAnalyticsContext.shopAnalyticsContext;
   if (shopAnalyticsContext === undefined) {
-    shopAnalyticsContext = closure_15;
+    shopAnalyticsContext = closure_16;
   }
   const merged = Object.assign(shopAnalyticsContext, Object.create(null));
   let obj = { newValue: shopAnalyticsContext, children: null };
   obj = {};
   const merged1 = Object.assign(merged);
   obj[1] = callback3(ProductDetailsActionSheetWithOrderCTX, obj);
-  return callback3(require(8660) /* context */.CollectiblesAnalyticsProvider, obj);
+  return callback3(require(8673) /* context */.CollectiblesAnalyticsProvider, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 5202
-// Function ID: 5203
+// Module ID: 5206
+// Function ID: 5207
 // Name: PromptOptionButton
-// Dependencies: [32, 19, 17, 4181, 5048, 1877, 21, 4189, 712, 589, 4050, 4190, 4599, 5203, 3902, 1236, 3893, 3907, 4717, 5206, 1416, 4185, 5209, 1297, 2]
+// Dependencies: [32, 19, 17, 4185, 5052, 1877, 21, 4193, 712, 589, 4054, 4194, 4603, 5207, 3906, 1236, 3897, 3911, 4721, 5210, 1416, 4189, 5213, 1297, 2]
 // Exports: default
 
-// Module 5202 (PromptOptionButton)
+// Module 5206 (PromptOptionButton)
 import _slicedToArray from "_slicedToArray";
 import Emoji from "Emoji";
 import { View } from "useCheckboxA11yNative";
@@ -88,7 +88,7 @@ export default function PromptOptionButton(option) {
   let obj1 = option(589);
   const items1 = [num];
   stateFromStores1 = obj1.useStateFromStores(items1, () => num.useReducedMotion);
-  let obj2 = option(4050);
+  let obj2 = option(4054);
   class R {
     constructor() {
       num = 0;
@@ -123,12 +123,12 @@ export default function PromptOptionButton(option) {
       return obj1;
     }
   }
-  obj = { selected, withTiming: option(4190).withTiming, Easing: option(4050).Easing, useReducedMotion: stateFromStores1, withSequence: option(4050).withSequence, withSpring: option(4599).withSpring };
+  obj = { selected, withTiming: option(4194).withTiming, Easing: option(4054).Easing, useReducedMotion: stateFromStores1, withSequence: option(4054).withSequence, withSpring: option(4603).withSpring };
   R.__closure = obj;
   R.__workletHash = 8281627194581;
   R.__initData = isUnseen;
   const animatedStyle = obj2.useAnimatedStyle(R);
-  const tmp8 = selected(5203)(option.guildId);
+  const tmp8 = selected(5207)(option.guildId);
   c5 = tmp8;
   num = 0;
   if (null != tmp8) {
@@ -182,7 +182,7 @@ export default function PromptOptionButton(option) {
       ref.current = false;
     }
   }, items4);
-  let tmp2Result = tmp2(4050);
+  let tmp2Result = tmp2(4054);
   class G {
     constructor() {
       tmp = withSpring;
@@ -226,12 +226,12 @@ export default function PromptOptionButton(option) {
       return obj1;
     }
   }
-  obj = { showMemberCount: first, withDelay: tmp2(4050).withDelay, withTiming: tmp2(4190).withTiming, Easing: tmp2(4050).Easing, useReducedMotion: stateFromStores1 };
+  obj = { showMemberCount: first, withDelay: tmp2(4054).withDelay, withTiming: tmp2(4194).withTiming, Easing: tmp2(4054).Easing, useReducedMotion: stateFromStores1 };
   G.__closure = obj;
   G.__workletHash = 9518487706997;
   G.__initData = c13;
   const animatedStyle1 = tmp2Result.useAnimatedStyle(G);
-  tmp2Result = tmp2(4050);
+  tmp2Result = tmp2(4054);
   sharedValue = tmp2Result.useSharedValue(1);
   isUnseen = canBeNew;
   if (canBeNew) {
@@ -303,14 +303,14 @@ export default function PromptOptionButton(option) {
       title = tmp.title;
     }
   }, items5);
-  token = option(3893).useToken(tmp7(712).colors.BACKGROUND_BRAND);
-  let tmp2Result1 = option(3893);
-  token1 = option(3893).useToken(tmp7(712).colors.BORDER_SUBTLE);
-  const tmp2Result2 = option(3893);
-  token2 = option(3893).useToken(tmp7(712).colors.BORDER_STRONG);
-  const tmp2Result3 = option(3893);
-  token3 = option(3893).useToken(tmp7(712).colors.BACKGROUND_BASE_LOWEST);
-  const tmp2Result4 = option(3893);
+  token = option(3897).useToken(tmp7(712).colors.BACKGROUND_BRAND);
+  let tmp2Result1 = option(3897);
+  token1 = option(3897).useToken(tmp7(712).colors.BORDER_SUBTLE);
+  const tmp2Result2 = option(3897);
+  token2 = option(3897).useToken(tmp7(712).colors.BORDER_STRONG);
+  const tmp2Result3 = option(3897);
+  token3 = option(3897).useToken(tmp7(712).colors.BACKGROUND_BASE_LOWEST);
+  const tmp2Result4 = option(3897);
   class H {
     constructor() {
       if (c4) {
@@ -342,12 +342,12 @@ export default function PromptOptionButton(option) {
       return obj;
     }
   }
-  obj1 = { useReducedMotion: stateFromStores1, Easing: tmp2(4050).Easing, withTiming: tmp2(4190).withTiming, selected, selectedBorderColor: token2, isNew: isUnseen, unselectedBrandBorderColor: token, unselectedBorderColor: token1, selectedBackgroundColor: token3 };
+  obj1 = { useReducedMotion: stateFromStores1, Easing: tmp2(4054).Easing, withTiming: tmp2(4194).withTiming, selected, selectedBorderColor: token2, isNew: isUnseen, unselectedBrandBorderColor: token, unselectedBorderColor: token1, selectedBackgroundColor: token3 };
   H.__closure = obj1;
   H.__workletHash = 17180171486485;
   H.__initData = token;
-  const animatedStyle2 = option(4050).useAnimatedStyle(H);
-  const tmp2Result5 = option(4050);
+  const animatedStyle2 = option(4054).useAnimatedStyle(H);
+  const tmp2Result5 = option(4054);
   const fn = function q() {
     if (stateFromStores1) {
       let obj = {};
@@ -363,9 +363,9 @@ export default function PromptOptionButton(option) {
   fn.__closure = { useReducedMotion: stateFromStores1, scale: sharedValue };
   fn.__workletHash = 319662489785;
   fn.__initData = token1;
-  const animatedStyle3 = option(4050).useAnimatedStyle(fn);
-  const tmp2Result6 = option(4050);
-  const checkboxA11yNative = option(3907).useCheckboxA11yNative({ checked: selected });
+  const animatedStyle3 = option(4054).useAnimatedStyle(fn);
+  const tmp2Result6 = option(4054);
+  const checkboxA11yNative = option(3911).useCheckboxA11yNative({ checked: selected });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
   obj2 = { style: items6, children: null };
   items6 = [animatedStyle3, animatedStyle2, tmp.container];
@@ -424,7 +424,7 @@ export default function PromptOptionButton(option) {
     const obj5 = { textEmojiStyle: null, fastImageStyle: null, src: null, name: null };
     ({ optionTextEmoji: obj20[0], optionImageEmoji: obj20[1] } = tmp);
     let emojiURL;
-    let tmp7Result = tmp7(5206);
+    let tmp7Result = tmp7(5210);
     if (null != stateFromStores) {
       tmp7Result = tmp7(1416);
       const obj6 = { id: null, animated: null, size: null };
@@ -450,18 +450,18 @@ export default function PromptOptionButton(option) {
   }
   const items8 = [tmp36Result, ];
   const obj7 = { style: tmp.optionText, children: null };
-  const items9 = [callback2(option(4185).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: option.title }), ];
+  const items9 = [callback2(option(4189).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: option.title }), ];
   let tmp42Result = null != option.description && option.description.length > 0;
   if (tmp42Result) {
     const obj9 = { variant: "text-xs/medium", color: "text-default", children: null };
     obj9[2] = option.description;
-    tmp42Result = tmp42(tmp2(4185).Text, obj9);
+    tmp42Result = tmp42(tmp2(4189).Text, obj9);
   }
   items9[1] = tmp42Result;
   obj7[1] = items9;
   items8[1] = closure_10(c5, obj7);
   obj3[8] = items8;
-  const items10 = [closure_10(option(4717).PressableOpacity, obj3), , , ];
+  const items10 = [closure_10(option(4721).PressableOpacity, obj3), , , ];
   tmp42Result = null;
   if (num > 0) {
     const obj10 = { accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, style: null, children: null };
@@ -472,16 +472,16 @@ export default function PromptOptionButton(option) {
     const obj12 = { memberCount: null };
     obj12[0] = num;
     obj11[2] = intl.format(tmp2(1236).t.EgKsZA, obj12);
-    obj10[4] = tmp42(tmp2(4185).Text, obj11);
-    tmp42Result = tmp42(tmp7(4050).View, obj10);
+    obj10[4] = tmp42(tmp2(4189).Text, obj11);
+    tmp42Result = tmp42(tmp7(4054).View, obj10);
   }
   items10[1] = tmp42Result;
   const obj13 = { style: items12, children: null };
   items12 = [tmp.checkIcon, animatedStyle];
   const obj14 = { size: "xs", color: null };
   obj14[1] = selected(712).colors.WHITE;
-  obj13[1] = callback2(option(5209).CheckmarkSmallIcon, obj14);
-  items10[2] = callback2(selected(4050).View, obj13);
+  obj13[1] = callback2(option(5213).CheckmarkSmallIcon, obj14);
+  items10[2] = callback2(selected(4054).View, obj13);
   if (canBeNew) {
     canBeNew = !selected;
   }
@@ -498,5 +498,5 @@ export default function PromptOptionButton(option) {
   }
   items10[3] = canBeNew;
   obj2[1] = items10;
-  return closure_10(selected(4050).View, obj2);
+  return closure_10(selected(4054).View, obj2);
 };

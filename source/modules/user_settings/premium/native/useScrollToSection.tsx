@@ -1,10 +1,10 @@
-// Module ID: 12461
-// Function ID: 12462
+// Module ID: 12487
+// Function ID: 12488
 // Name: useScrollToSection
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 12461 (useScrollToSection)
+// Module 12487 (useScrollToSection)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/user_settings/premium/native/useScrollToSection.tsx");

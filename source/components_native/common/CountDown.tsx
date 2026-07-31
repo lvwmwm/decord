@@ -1,9 +1,9 @@
-// Module ID: 10185
-// Function ID: 10186
+// Module ID: 10202
+// Function ID: 10203
 // Name: componentDidMount
-// Dependencies: [19, 21, 1236, 687, 4185, 2]
+// Dependencies: [19, 21, 1236, 687, 4189, 2]
 
-// Module 10185 (componentDidMount)
+// Module 10202 (componentDidMount)
 import { jsx } from "jsxProd";
 import { Component } from "noop";
 import importAllResult from "noop";
@@ -110,7 +110,7 @@ prototype["render"] = function render() {
     const NumberResult = Number(deadline);
     tmp2 = null != freezeAtRemainingSeconds && result <= freezeAtRemainingSeconds;
   }
-  return jsx(require(4185) /* Text */.Text, { tabularNumbers: true, variant: "text-md/semibold", style: style.style, children });
+  return jsx(require(4189) /* Text */.Text, { tabularNumbers: true, variant: "text-md/semibold", style: style.style, children });
 };
 let result = require("getSystemLocale").fileFinishedImporting("components_native/common/CountDown.tsx");
 

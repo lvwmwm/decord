@@ -1,13 +1,13 @@
-// Module ID: 15487
-// Function ID: 15488
+// Module ID: 15515
+// Function ID: 15516
 // Name: GuildVoiceChannelSubtitle
-// Dependencies: [19, 17, 1377, 9097, 21, 10281, 4028, 1236, 4189, 589, 15488, 5020, 5014, 15489, 15491, 11440, 2]
+// Dependencies: [19, 17, 1377, 9108, 21, 10299, 4032, 1236, 4193, 589, 15516, 5024, 5018, 15517, 15519, 11458, 2]
 
-// Module 15487 (GuildVoiceChannelSubtitle)
+// Module 15515 (GuildVoiceChannelSubtitle)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
-import { CHANNEL_LIST_SEARCH_LAYOUT as closure_6 } from "SearchAutocompleteSelectAnalyticsActions";
+import { CHANNEL_LIST_SEARCH_LAYOUT as closure_6 } from "MessageEmbedTypes";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 
@@ -281,7 +281,7 @@ function GuildVoiceChannelExtras(arg0) {
   let users;
   ({ channel, users } = arg0);
   const tmp = callback();
-  require(5020) /* useStageParticipants */;
+  require(5024) /* useStageParticipants */;
   let obj = { style: tmp.subtitle, children: null };
   let tmp5Result = 0 !== users.length;
   if (tmp5Result) {
@@ -292,7 +292,7 @@ function GuildVoiceChannelExtras(arg0) {
     obj[2] = channel.guild_id;
     obj[3] = closure_6;
     obj[4] = tmp4;
-    obj[1] = tmp5(importDefault(15489), obj);
+    obj[1] = tmp5(importDefault(15517), obj);
     tmp5Result = tmp5(tmp6, obj);
   }
   obj[1] = tmp5Result;
@@ -323,12 +323,12 @@ const memoResult = importAllResult.memo(function GuildVoiceChannelRow(channel) {
     obj = { channel: null, voiceStates: null };
     obj[0] = channel;
     obj[1] = voiceStates;
-    obj[1] = tmp4(channel(11440).VocalChannelJoinButton, obj);
+    obj[1] = tmp4(channel(11458).VocalChannelJoinButton, obj);
     trailing = tmp4(View, obj);
   }
   obj[4] = trailing;
   obj[5] = <GuildVoiceChannelExtras channel={channel} voiceStates={voiceStates} users={mapped} />;
-  return jsx(onPress(15491), { onPress: callback, voiceStates, channel, subtitle: null, trailing: null, extras: null });
+  return jsx(onPress(15519), { onPress: callback, voiceStates, channel, subtitle: null, trailing: null, extras: null });
 });
 const result = require("handleStageInstanceCreateOrUpdate").fileFinishedImporting("modules/search/native/components/list/rows/GuildVoiceOrStageChannelRow.tsx");
 

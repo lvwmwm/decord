@@ -1,9 +1,9 @@
-// Module ID: 6082
-// Function ID: 6083
+// Module ID: 6088
+// Function ID: 6089
 // Name: handleThreadCreate
-// Dependencies: [5097, 1218, 1372, 5134, 11, 6065, 2]
+// Dependencies: [5101, 1218, 1372, 5138, 11, 6071, 2]
 
-// Module 6082 (handleThreadCreate)
+// Module 6088 (handleThreadCreate)
 import handleThreadCreateOrUpdate from "handleThreadCreateOrUpdate";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";

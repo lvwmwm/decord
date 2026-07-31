@@ -1,10 +1,10 @@
-// Module ID: 13243
-// Function ID: 13244
+// Module ID: 13267
+// Function ID: 13268
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: isZoomedExperimentEnabled
 
-// Module 13243 (apexExperiment)
+// Module 13267 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

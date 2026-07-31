@@ -138,9 +138,9 @@ let obj = {
     const timer = importDefault(185).createTimer(tmp, 1, timestamp, false);
     return +closure_12;
   },
-  requestIdleCallback(runOnce, timeout) {
-    let fn = runOnce;
-    let closure_0 = runOnce;
+  requestIdleCallback(arg0, timeout) {
+    let fn = arg0;
+    let closure_0 = arg0;
     if (0 === arr3.length) {
       require(38)(importDefault(185), "NativeTiming is available");
       let obj = importDefault(185);
@@ -187,9 +187,9 @@ let obj = {
     }
     return +closure_12;
   },
-  cancelIdleCallback(closure_5) {
-    if (null != closure_5) {
-      const index = closure_7.indexOf(closure_5);
+  cancelIdleCallback(closure_4) {
+    if (null != closure_4) {
+      const index = closure_7.indexOf(closure_4);
       if (-1 !== index) {
         tmp22[index] = null;
         closure_5[index] = null;
@@ -202,17 +202,17 @@ let obj = {
         if (tmp3) {
           require(38)(importDefault(185), "NativeTiming is available");
           const obj = importDefault(185);
-          obj.deleteTimer(closure_5);
+          obj.deleteTimer(closure_4);
           const tmp6 = require(38);
         }
       }
       tmp22 = closure_7;
     }
-    const index1 = arr3.indexOf(closure_5);
+    const index1 = arr3.indexOf(closure_4);
     if (-1 !== index1) {
       arr3.splice(index1, 1);
     }
-    if (table2[closure_5]) {
+    if (table2[closure_4]) {
       obj.clearTimeout(tmp13);
       delete tmp[tmp2];
     }

@@ -1,10 +1,10 @@
-// Module ID: 4294
-// Function ID: 4295
+// Module ID: 4298
+// Function ID: 4299
 // Name: pollConnectionStats
-// Dependencies: [5, 4286, 4295, 2]
+// Dependencies: [5, 4290, 4299, 2]
 // Exports: default
 
-// Module 4294 (pollConnectionStats)
+// Module 4298 (pollConnectionStats)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -148,9 +148,9 @@ export default function pollConnectionStats(on) {
     return applyArgumentsResult;
   }
   const dependencyMap = false;
-  on.on(_require(4286).MediaEngineEvent.Destroy, () => {
+  on.on(_require(4290).MediaEngineEvent.Destroy, () => {
     let c1 = true;
     return true;
   });
-  let timerId = setTimeout(pollStats, _require(4295).STATS_INTERVAL);
+  let timerId = setTimeout(pollStats, _require(4299).STATS_INTERVAL);
 };

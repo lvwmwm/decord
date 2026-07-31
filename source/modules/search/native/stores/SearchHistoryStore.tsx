@@ -1,15 +1,15 @@
-// Module ID: 15473
-// Function ID: 15474
+// Module ID: 15501
+// Function ID: 15502
 // Name: deserialize
-// Dependencies: [9097, 1385, 12, 589, 709, 2]
+// Dependencies: [9108, 1385, 12, 589, 709, 2]
 
-// Module 15473 (deserialize)
-import SearchAutocompleteSelectAnalyticsActions from "SearchAutocompleteSelectAnalyticsActions";
+// Module 15501 (deserialize)
+import MessageEmbedTypes from "MessageEmbedTypes";
 import { PersistedStore } from "initialize";
 
 let NATIVE_SEARCH_HISTORY_STORAGE_KEY;
 let NATIVE_SEARCH_HISTORY_STORE_DISPLAY_NAME;
-const SearchHistoryItemTypes = SearchAutocompleteSelectAnalyticsActions.SearchHistoryItemTypes;
+const SearchHistoryItemTypes = MessageEmbedTypes.SearchHistoryItemTypes;
 class SearchHistory {
   constructor() {
     obj = Object.create(new.target.prototype);
@@ -64,7 +64,7 @@ prototype["remove"] = function remove(arg0) {
   this.items = items.filter((arg0) => !callback(outer1_1[2]).isEqual(arg0, callback));
 };
 let closure_4 = {};
-({ NATIVE_SEARCH_HISTORY_STORAGE_KEY, NATIVE_SEARCH_HISTORY_STORE_DISPLAY_NAME } = SearchAutocompleteSelectAnalyticsActions);
+({ NATIVE_SEARCH_HISTORY_STORAGE_KEY, NATIVE_SEARCH_HISTORY_STORE_DISPLAY_NAME } = MessageEmbedTypes);
 class SearchHistoryStore extends PersistedStore {
 }
 const prototype2 = SearchHistoryStore.prototype;
@@ -88,7 +88,7 @@ prototype2["initialize"] = function initialize(searchHistories) {
   }
   if (null != searchHistories) {
     let closure_4 = require(12) /* apply */.mapValues(searchHistories, (arg0) => {
-      if (typeof closure_3 !== "find") {
+      if (typeof closure_3 !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       const obj = Object.create(closure_3.prototype);
@@ -102,7 +102,7 @@ prototype2["initialize"] = function initialize(searchHistories) {
 prototype2["getSearchHistory"] = function getSearchHistory(handleChange) {
   let obj = dependencyMap[handleChange];
   if (obj == null) {
-    if (typeof SearchHistory !== "find") {
+    if (typeof SearchHistory !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     obj = Object.create(SearchHistory.prototype);
@@ -122,7 +122,7 @@ const searchHistoryStore = new SearchHistoryStore(require("dispatcher"), {
     id = id.id;
     let obj = dependencyMap[id];
     if (obj == null) {
-      if (typeof SearchHistory !== "find") {
+      if (typeof SearchHistory !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchHistory.prototype);
@@ -136,7 +136,7 @@ const searchHistoryStore = new SearchHistoryStore(require("dispatcher"), {
     id = id.id;
     let obj = dependencyMap[id];
     if (obj == null) {
-      if (typeof SearchHistory !== "find") {
+      if (typeof SearchHistory !== "fileFinishedImporting") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchHistory.prototype);

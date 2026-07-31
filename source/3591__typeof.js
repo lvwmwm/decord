@@ -1,14 +1,17 @@
 // Module ID: 3591
 // Function ID: 3592
 // Name: _typeof
-// Dependencies: [3592, 3574]
+// Dependencies: [3592, 3509, 3580, 3581, 3578]
 
 // Module 3591 (_typeof)
-import setUTCDay from "setUTCDay";
+import setUTCISOWeek from "setUTCISOWeek";
+import startOfUTCISOWeek from "startOfUTCISOWeek";
 import { Parser } from "Parser";
 
-let _createSuperInternal = function _typeof(arg0) {
-  if (typeof Symbol !== "ZodObject") {
+let _createSuperInternal = require;
+let closure_1 = dependencyMap;
+function _typeof(arg0) {
+  if (typeof Symbol !== "disabledUntil") {
     let _Symbol = Symbol;
     if (typeof Symbol.iterator === "e") {
       function _typeof(arg0) {
@@ -20,7 +23,7 @@ let _createSuperInternal = function _typeof(arg0) {
   _typeof = function _typeof(arg0) {
     if (arg0) {
       const _Symbol = Symbol;
-      if (typeof Symbol !== "ZodObject") {
+      if (typeof Symbol !== "disabledUntil") {
         const _Symbol3 = Symbol;
         if (arg0.constructor === Symbol) {
           const _Symbol2 = Symbol;
@@ -31,16 +34,16 @@ let _createSuperInternal = function _typeof(arg0) {
     }
     str = typeof arg0;
   };
-};
-function _setPrototypeOf(DayParser, Parser) {
+}
+function _setPrototypeOf(ISOWeekParser, Parser) {
   let _setPrototypeOf = Object.setPrototypeOf;
   if (!_setPrototypeOf) {
-    _setPrototypeOf = function _setPrototypeOf(DayParser, Parser) {
-      DayParser.__proto__ = Parser;
-      return DayParser;
+    _setPrototypeOf = function _setPrototypeOf(ISOWeekParser, Parser) {
+      ISOWeekParser.__proto__ = Parser;
+      return ISOWeekParser;
     };
   }
-  return _setPrototypeOf(DayParser, Parser);
+  return _setPrototypeOf(ISOWeekParser, Parser);
 }
 function _getPrototypeOf(arg0) {
   if (Object.setPrototypeOf) {
@@ -58,16 +61,24 @@ function _getPrototypeOf(arg0) {
   }
   return _getPrototypeOf(arg0);
 }
-if (!setUTCDay) {
+if (!setUTCISOWeek) {
   let obj = { default: null };
-  obj[0] = setUTCDay;
+  obj[0] = setUTCISOWeek;
   let tmp3 = obj;
 } else {
-  tmp3 = setUTCDay;
+  tmp3 = setUTCISOWeek;
 }
-let closure_1 = tmp3;
+let c3 = tmp3;
+if (!startOfUTCISOWeek) {
+  obj = { default: null };
+  obj[0] = startOfUTCISOWeek;
+  let tmp5 = obj;
+} else {
+  tmp5 = startOfUTCISOWeek;
+}
+let c4 = tmp5;
 _createSuperInternal = undefined;
-class DayParser {
+class ISOWeekParser {
   constructor() {
     if (this instanceof c1) {
       length = arguments.length;
@@ -103,10 +114,10 @@ class DayParser {
         str2 = "priority";
         if ("priority" in applyResult) {
           _Object = Object;
-          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 90, enumerable: true, configurable: true, writable: true });
+          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 100, enumerable: true, configurable: true, writable: true });
         } else {
-          num3 = 90;
-          applyResult.priority = 90;
+          num3 = 100;
+          applyResult.priority = 100;
         }
         if (tmp13) {
           _ReferenceError = ReferenceError;
@@ -117,7 +128,7 @@ class DayParser {
           tmp19 = referenceError1;
           throw referenceError1;
         } else {
-          items1 = ["D", "i", "e", "c", "t", "T"];
+          items1 = ["y", "Y", "u", "q", "Q", "M", "L", "w", "d", "D", "e", "c", "t", "T"];
           str3 = "incompatibleTokens";
           if ("incompatibleTokens" in applyResult) {
             _Object2 = Object;
@@ -141,8 +152,8 @@ class DayParser {
     }
   }
 }
-closure_1 = DayParser;
-if (typeof Parser !== "find") {
+closure_1 = ISOWeekParser;
+if (typeof Parser !== "fileFinishedImporting") {
   if (null !== Parser) {
     let _TypeError = TypeError;
     let typeError = new TypeError("Super expression must either be null or a function");
@@ -153,12 +164,12 @@ let prototype = Parser;
 if (Parser) {
   prototype = Parser.prototype;
 }
-obj = { value: DayParser, writable: true, configurable: true };
-DayParser.prototype = Object.create(prototype, { constructor: obj });
+obj = { value: ISOWeekParser, writable: true, configurable: true };
+ISOWeekParser.prototype = Object.create(prototype, { constructor: obj });
 if (Parser) {
-  _setPrototypeOf(DayParser, Parser);
+  _setPrototypeOf(ISOWeekParser, Parser);
 }
-_createSuperInternal = DayParser;
+_createSuperInternal = ISOWeekParser;
 let num = 0;
 closure_1 = (function _isNativeReflectConstruct() {
   if (typeof Reflect !== "Array") {
@@ -169,7 +180,7 @@ closure_1 = (function _isNativeReflectConstruct() {
         return false;
       } else {
         const _Proxy = Proxy;
-        if (typeof Proxy === "find") {
+        if (typeof Proxy === "fileFinishedImporting") {
           return true;
         } else {
           try {
@@ -210,69 +221,59 @@ _createSuperInternal = function _createSuperInternal() {
     }
   } else {
     tmp8 = constructResult;
-    if ("object" !== _createSuperInternal(constructResult)) {
+    if ("object" !== _typeof(constructResult)) {
       tmp8 = constructResult;
     }
   }
   return tmp8;
 };
-obj = {
-  key: "parse",
-  value: function parse(arg0, arg1, day) {
-    if ("E" !== arg1) {
-      if ("EE" !== arg1) {
-        if ("EEE" !== arg1) {
-          if ("EEEEE" === arg1) {
-            return day.day(arg0, { width: "narrow", context: "formatting" });
-          } else if ("EEEEEE" === arg1) {
-            return day.day(arg0, { width: "short", context: "formatting" }) || day.day(arg0, { width: "narrow", context: "formatting" });
-          } else {
-            return day.day(arg0, { width: "wide", context: "formatting" }) || day.day(arg0, { width: "abbreviated", context: "formatting" }) || day.day(arg0, { width: "short", context: "formatting" }) || day.day(arg0, { width: "narrow", context: "formatting" });
-          }
-        }
+let items = [
+  {
+    key: "parse",
+    value: function parse(arg0, arg1, ordinalNumber) {
+      if ("I" === arg1) {
+        return _createSuperInternal(3580).parseNumericPattern(_createSuperInternal(3581).numericPatterns.week, arg0);
+      } else if ("Io" === arg1) {
+        return ordinalNumber.ordinalNumber(arg0, { unit: "week" });
+      } else {
+        return _createSuperInternal(3580).parseNDigits(arg1.length, arg0);
       }
     }
-    return day.day(arg0, { width: "abbreviated", context: "formatting" }) || day.day(arg0, { width: "short", context: "formatting" }) || day.day(arg0, { width: "narrow", context: "formatting" });
-  }
-};
-let items = [
-  obj,
+  },
   {
     key: "validate",
     value: function validate(arg0, arg1) {
-      let tmp = arg1 >= 0;
+      let tmp = arg1 >= 1;
       if (tmp) {
-        tmp = arg1 <= 6;
+        tmp = arg1 <= 53;
       }
       return tmp;
     }
   },
   {
     key: "set",
-    value: function set(arg0, arg1, arg2, arg3) {
-      const defaultResult = closure_1.default(arg0, arg2, arg3);
-      defaultResult.setUTCHours(0, 0, 0, 0);
-      return defaultResult;
+    value: function set(arg0, arg1, arg2) {
+      return tmp5.default(tmp3.default(arg0, arg2));
     }
   }
 ];
 if (0 < items.length) {
   do {
-    let tmp7 = items[num];
-    let flag = tmp7.enumerable;
-    let tmp8 = num;
+    let tmp9 = items[num];
+    let flag = tmp9.enumerable;
+    let tmp10 = num;
     if (!flag) {
       flag = false;
     }
-    tmp7.enumerable = flag;
-    tmp7.configurable = true;
-    if ("value" in tmp7) {
-      tmp7.writable = true;
+    tmp9.enumerable = flag;
+    tmp9.configurable = true;
+    if ("value" in tmp9) {
+      tmp9.writable = true;
     }
     let _Object = Object;
-    let definePropertyResult1 = Object.defineProperty(tmp6, tmp7.key, tmp7);
+    let definePropertyResult1 = Object.defineProperty(tmp8, tmp9.key, tmp9);
     num = num + 1;
   } while (num < items.length);
 }
 
-export { DayParser };
+export { ISOWeekParser };

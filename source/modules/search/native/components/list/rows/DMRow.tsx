@@ -1,9 +1,9 @@
-// Module ID: 15483
-// Function ID: 15484
+// Module ID: 15511
+// Function ID: 15512
 // Name: FriendPresence
-// Dependencies: [5, 32, 19, 17, 4181, 4276, 3826, 676, 21, 4189, 712, 4185, 4028, 9058, 589, 8387, 1297, 8284, 12526, 15484, 2]
+// Dependencies: [5, 32, 19, 17, 4185, 4280, 3830, 676, 21, 4193, 712, 4189, 4032, 9071, 589, 8400, 1297, 8291, 12552, 15512, 2]
 
-// Module 15483 (FriendPresence)
+// Module 15511 (FriendPresence)
 import sortActivity from "sortActivity";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "SearchListRow";
@@ -30,16 +30,16 @@ function FriendPresence(user) {
   ({ type, animate, guildId } = user);
   if (type === constants.PENDING_INCOMING) {
     let obj = { lineClamp: 1, variant: "text-sm/medium", color: "text-default", children: null };
-    obj[3] = require(4028) /* nameFromUser */.getUserTag(user);
-    let tmp5 = callback(require(4185) /* Text */.Text, obj);
-    const obj3 = require(4028) /* nameFromUser */;
+    obj[3] = require(4032) /* nameFromUser */.getUserTag(user);
+    let tmp5 = callback(require(4189) /* Text */.Text, obj);
+    const obj3 = require(4032) /* nameFromUser */;
   } else {
     obj = { userId: null, guildId: null, iconStyle: null, textStyle: null, emojiSize: 16, animate: null };
     obj[0] = user.id;
     obj[1] = guildId;
     ({ activityStatusIcon: obj[2], activityStatusText: obj[3] } = tmp);
     obj[5] = animate;
-    tmp5 = callback(importDefault(9058), obj);
+    tmp5 = callback(importDefault(9071), obj);
   }
   return tmp5;
 }

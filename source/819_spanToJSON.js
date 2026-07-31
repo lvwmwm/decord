@@ -14,7 +14,7 @@ function spanToJSON(getSpanJSON) {
   let startTime;
   let status;
   let traceId;
-  if (typeof getSpanJSON.getSpanJSON === "find") {
+  if (typeof getSpanJSON.getSpanJSON === "fileFinishedImporting") {
     return getSpanJSON.getSpanJSON();
   } else {
     ({ spanId, traceId } = getSpanJSON.spanContext());

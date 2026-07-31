@@ -1,14 +1,14 @@
-// Module ID: 9916
-// Function ID: 9917
+// Module ID: 9933
+// Function ID: 9934
 // Name: useForwardPreviewContent
-// Dependencies: [3817, 589, 4522, 2]
+// Dependencies: [3821, 589, 4526, 2]
 // Exports: useForwardPreviewContent
 
-// Module 9916 (useForwardPreviewContent)
+// Module 9933 (useForwardPreviewContent)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 
 const require = arg1;
-let result = require("regExp").fileFinishedImporting("modules/forwarding/ForwardPreviewUtils.tsx");
+let result = require("getEffectiveVideoProvider").fileFinishedImporting("modules/forwarding/ForwardPreviewUtils.tsx");
 
 export const useForwardPreviewContent = function useForwardPreviewContent(message) {
   let dependencyMap;

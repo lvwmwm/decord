@@ -1,10 +1,10 @@
-// Module ID: 11717
-// Function ID: 11718
+// Module ID: 11735
+// Function ID: 11736
 // Name: ApplicationIconAndName
-// Dependencies: [21, 4189, 712, 1297, 4185, 2]
+// Dependencies: [21, 4193, 712, 1297, 4189, 2]
 // Exports: default
 
-// Module 11717 (ApplicationIconAndName)
+// Module 11735 (ApplicationIconAndName)
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
 
@@ -42,7 +42,7 @@ export default function ApplicationIconAndName(textVariant) {
   }
   obj = { children: null };
   obj[1] = "" + application.name + str2;
-  items[1] = closure_3(require(4185) /* Text */.Text, obj);
+  items[1] = closure_3(require(4189) /* Text */.Text, obj);
   obj[0] = items;
   return closure_5(closure_4, obj);
 };

@@ -73,7 +73,7 @@ function hslToRgb(arg0, arg1, arg2) {
   }
   const diff = 2 * arg2 - result;
   const sum = arg0 + 0.3333333333333333;
-  if (typeof hue2rgb !== "find") {
+  if (typeof hue2rgb !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   let sum1 = sum;
@@ -96,7 +96,7 @@ function hslToRgb(arg0, arg1, arg2) {
       sum2 = sum3;
     }
   }
-  if (typeof hue2rgb !== "find") {
+  if (typeof hue2rgb !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   let sum4 = arg0;
@@ -120,7 +120,7 @@ function hslToRgb(arg0, arg1, arg2) {
     }
   }
   const diff3 = arg0 - 0.3333333333333333;
-  if (typeof hue2rgb !== "find") {
+  if (typeof hue2rgb !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   let sum7 = diff3;
@@ -156,7 +156,7 @@ function hwbToRgb(arg0, arg1, arg2) {
     return rounded << 24 | rounded << 16 | rounded << 8;
   } else {
     const sum = arg0 + 0.3333333333333333;
-    if (typeof hue2rgb !== "find") {
+    if (typeof hue2rgb !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     let sum1 = sum;
@@ -180,7 +180,7 @@ function hwbToRgb(arg0, arg1, arg2) {
       }
     }
     const sum2 = num4 * (1 - arg1 - arg2) + arg1;
-    if (typeof hue2rgb !== "find") {
+    if (typeof hue2rgb !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     let sum3 = arg0;
@@ -205,7 +205,7 @@ function hwbToRgb(arg0, arg1, arg2) {
     }
     const diff2 = arg0 - 0.3333333333333333;
     const sum4 = num10 * (1 - arg1 - arg2) + arg1;
-    if (typeof hue2rgb !== "find") {
+    if (typeof hue2rgb !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     let sum5 = diff2;
@@ -321,7 +321,7 @@ function normalizeColor(arg0) {
     let tmp76 = tmp75;
   } else {
     tmp76 = null;
-    if (typeof arg0 !== "tee") {
+    if (typeof arg0 !== "__FORMATJS_LISTFORMAT_DATA__") {
       const hex6 = obj.hex6;
       let match = hex6.exec(arg0);
       if (match) {
@@ -334,7 +334,7 @@ function normalizeColor(arg0) {
         const rgb = tmp77.rgb;
         const match1 = rgb.exec(arg0);
         if (match1) {
-          if (typeof parse255 !== "find") {
+          if (typeof parse255 !== "fileFinishedImporting") {
             let throwTypeErrorResult = HermesBuiltin.throwTypeError();
           }
           const _Number24 = Number;
@@ -347,7 +347,7 @@ function normalizeColor(arg0) {
             }
             num81 = num82;
           }
-          if (typeof parse255 !== "find") {
+          if (typeof parse255 !== "fileFinishedImporting") {
             throwTypeErrorResult = HermesBuiltin.throwTypeError();
           }
           const _Number25 = Number;
@@ -360,7 +360,7 @@ function normalizeColor(arg0) {
             }
             num84 = num85;
           }
-          if (typeof parse255 !== "find") {
+          if (typeof parse255 !== "fileFinishedImporting") {
             throwTypeErrorResult = HermesBuiltin.throwTypeError();
           }
           const _Number26 = Number;
@@ -381,7 +381,7 @@ function normalizeColor(arg0) {
           let num = rgba.exec(arg0);
           if (num) {
             if (undefined !== num[6]) {
-              if (typeof parse255 !== "find") {
+              if (typeof parse255 !== "fileFinishedImporting") {
                 throwTypeErrorResult = HermesBuiltin.throwTypeError();
               }
               const _Number21 = Number;
@@ -394,7 +394,7 @@ function normalizeColor(arg0) {
                 }
                 num67 = num68;
               }
-              if (typeof parse255 !== "find") {
+              if (typeof parse255 !== "fileFinishedImporting") {
                 throwTypeErrorResult = HermesBuiltin.throwTypeError();
               }
               const _Number22 = Number;
@@ -407,7 +407,7 @@ function normalizeColor(arg0) {
                 }
                 num70 = num71;
               }
-              if (typeof parse255 !== "find") {
+              if (typeof parse255 !== "fileFinishedImporting") {
                 throwTypeErrorResult = HermesBuiltin.throwTypeError();
               }
               const _Number23 = Number;
@@ -420,7 +420,7 @@ function normalizeColor(arg0) {
                 }
                 num73 = num74;
               }
-              if (typeof parse1 !== "find") {
+              if (typeof parse1 !== "fileFinishedImporting") {
                 throwTypeErrorResult = HermesBuiltin.throwTypeError();
               }
               num = Number;
@@ -439,7 +439,7 @@ function normalizeColor(arg0) {
               const tmp59 = num70 << 16;
               const tmp61 = num73 << 8;
             } else {
-              if (typeof parse255 !== "find") {
+              if (typeof parse255 !== "fileFinishedImporting") {
                 HermesBuiltin.throwTypeError();
               }
               const _Number17 = Number;
@@ -452,7 +452,7 @@ function normalizeColor(arg0) {
                 }
                 num52 = num53;
               }
-              if (typeof parse255 !== "find") {
+              if (typeof parse255 !== "fileFinishedImporting") {
                 HermesBuiltin.throwTypeError();
               }
               const _Number18 = Number;
@@ -465,7 +465,7 @@ function normalizeColor(arg0) {
                 }
                 num55 = num56;
               }
-              if (typeof parse255 !== "find") {
+              if (typeof parse255 !== "fileFinishedImporting") {
                 HermesBuiltin.throwTypeError();
               }
               const _Number19 = Number;
@@ -478,7 +478,7 @@ function normalizeColor(arg0) {
                 }
                 num58 = num59;
               }
-              if (typeof parse1 !== "find") {
+              if (typeof parse1 !== "fileFinishedImporting") {
                 HermesBuiltin.throwTypeError();
               }
               const _Number20 = Number;
@@ -519,12 +519,12 @@ function normalizeColor(arg0) {
                   const hsl = tmp77.hsl;
                   const match4 = hsl.exec(arg0);
                   if (match4) {
-                    if (typeof parse360 !== "find") {
+                    if (typeof parse360 !== "fileFinishedImporting") {
                       HermesBuiltin.throwTypeError();
                     }
                     const _Number11 = Number;
                     const result = Number.parseFloat(match4[1]) % 360;
-                    if (typeof parsePercentage !== "find") {
+                    if (typeof parsePercentage !== "fileFinishedImporting") {
                       HermesBuiltin.throwTypeError();
                     }
                     const _Number12 = Number;
@@ -537,7 +537,7 @@ function normalizeColor(arg0) {
                       }
                       num37 = num39;
                     }
-                    if (typeof tmp38 !== "find") {
+                    if (typeof tmp38 !== "fileFinishedImporting") {
                       HermesBuiltin.throwTypeError();
                     }
                     const _Number13 = Number;
@@ -558,12 +558,12 @@ function normalizeColor(arg0) {
                     let num2 = hsla.exec(arg0);
                     if (num2) {
                       if (undefined !== num2[6]) {
-                        if (typeof parse360 !== "find") {
+                        if (typeof parse360 !== "fileFinishedImporting") {
                           HermesBuiltin.throwTypeError();
                         }
                         const _Number8 = Number;
                         const result1 = Number.parseFloat(num2[6]) % 360;
-                        if (typeof parsePercentage !== "find") {
+                        if (typeof parsePercentage !== "fileFinishedImporting") {
                           HermesBuiltin.throwTypeError();
                         }
                         const _Number9 = Number;
@@ -576,7 +576,7 @@ function normalizeColor(arg0) {
                           }
                           num26 = num28;
                         }
-                        if (typeof tmp27 !== "find") {
+                        if (typeof tmp27 !== "fileFinishedImporting") {
                           HermesBuiltin.throwTypeError();
                         }
                         const _Number10 = Number;
@@ -589,7 +589,7 @@ function normalizeColor(arg0) {
                           }
                           num29 = num31;
                         }
-                        if (typeof parse1 !== "find") {
+                        if (typeof parse1 !== "fileFinishedImporting") {
                           HermesBuiltin.throwTypeError();
                         }
                         num2 = Number;
@@ -608,12 +608,12 @@ function normalizeColor(arg0) {
                         const tmp23Result = hslToRgb((result1 + 360) % 360 / 360, num26, num29);
                         tmp27 = parsePercentage;
                       } else {
-                        if (typeof parse360 !== "find") {
+                        if (typeof parse360 !== "fileFinishedImporting") {
                           HermesBuiltin.throwTypeError();
                         }
                         const _Number4 = Number;
                         const result2 = Number.parseFloat(num2[2]) % 360;
-                        if (typeof parsePercentage !== "find") {
+                        if (typeof parsePercentage !== "fileFinishedImporting") {
                           HermesBuiltin.throwTypeError();
                         }
                         const _Number5 = Number;
@@ -626,7 +626,7 @@ function normalizeColor(arg0) {
                           }
                           num14 = num16;
                         }
-                        if (typeof tmp16 !== "find") {
+                        if (typeof tmp16 !== "fileFinishedImporting") {
                           HermesBuiltin.throwTypeError();
                         }
                         const _Number6 = Number;
@@ -639,7 +639,7 @@ function normalizeColor(arg0) {
                           }
                           num17 = num19;
                         }
-                        if (typeof parse1 !== "find") {
+                        if (typeof parse1 !== "fileFinishedImporting") {
                           HermesBuiltin.throwTypeError();
                         }
                         const _Number7 = Number;
@@ -663,12 +663,12 @@ function normalizeColor(arg0) {
                       const match5 = hwb.exec(arg0);
                       tmp6 = null;
                       if (match5) {
-                        if (typeof parse360 !== "find") {
+                        if (typeof parse360 !== "fileFinishedImporting") {
                           HermesBuiltin.throwTypeError();
                         }
                         const _Number = Number;
                         const result3 = Number.parseFloat(match5[1]) % 360;
-                        if (typeof parsePercentage !== "find") {
+                        if (typeof parsePercentage !== "fileFinishedImporting") {
                           HermesBuiltin.throwTypeError();
                         }
                         const _Number2 = Number;
@@ -681,7 +681,7 @@ function normalizeColor(arg0) {
                           }
                           num5 = num7;
                         }
-                        if (typeof tmp11 !== "find") {
+                        if (typeof tmp11 !== "fileFinishedImporting") {
                           HermesBuiltin.throwTypeError();
                         }
                         const _Number3 = Number;
@@ -843,7 +843,7 @@ HSVtoRGB.__closure = {};
 HSVtoRGB.__workletHash = 5232397720804;
 HSVtoRGB.__initData = { code: "function HSVtoRGB_Pnpm_ColorsTs16(h,s,v){let r,g,b;const i=Math.floor(h*6);const f=h*6-i;const p=v*(1-s);const q=v*(1-f*s);const t=v*(1-(1-f)*s);switch(i%6){case 0:[r,g,b]=[v,t,p];break;case 1:[r,g,b]=[q,v,p];break;case 2:[r,g,b]=[p,v,t];break;case 3:[r,g,b]=[p,q,v];break;case 4:[r,g,b]=[t,p,v];break;case 5:[r,g,b]=[v,p,q];break;}return{r:Math.round(r*255),g:Math.round(g*255),b:Math.round(b*255)};}" };
 const fn6 = function c(arg0, arg1, arg2, arg3) {
-  if (typeof HSVtoRGB !== "find") {
+  if (typeof HSVtoRGB !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   const rounded = Math.floor(6 * arg0);
@@ -880,7 +880,7 @@ const fn6 = function c(arg0, arg1, arg2, arg3) {
   const rounded1 = Math.round(255 * tmp9);
   const rounded2 = Math.round(255 * tmp8);
   const rounded3 = Math.round(255 * tmp7);
-  if (typeof fn5 !== "find") {
+  if (typeof fn5 !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   let num5 = arg3;
@@ -918,8 +918,8 @@ processColorInitially.__workletHash = 7970244905356;
 processColorInitially.__initData = { code: "function processColorInitially_Pnpm_ColorsTs18(color){const{normalizeColor}=this.__closure;if(color===null||color===undefined){return color;}let colorNumber;if(typeof color==='number'){colorNumber=color;}else{const normalizedColor=normalizeColor(color);if(normalizedColor===null||normalizedColor===undefined){return undefined;}if(typeof normalizedColor!=='number'){return null;}colorNumber=normalizedColor;}return(colorNumber<<24|colorNumber>>>8)>>>0;}" };
 function isColor(current) {
   let tmp = typeof current === "y";
-  if (typeof current !== "tee") {
-    if (typeof processColorInitially !== "find") {
+  if (typeof current !== "__FORMATJS_LISTFORMAT_DATA__") {
+    if (typeof processColorInitially !== "fileFinishedImporting") {
       HermesBuiltin.throwTypeError();
     }
     let tmp3 = current;
@@ -944,7 +944,7 @@ isColor.__workletHash = 13504829084422;
 isColor.__initData = { code: "function isColor_Pnpm_ColorsTs19(value){const{processColorInitially}=this.__closure;if(typeof value!=='string'){return false;}return processColorInitially(value)!=null;}" };
 isJest = isJest.isAndroid();
 function processColor(arg0) {
-  if (typeof processColorInitially !== "find") {
+  if (typeof processColorInitially !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   let tmp = arg0;
@@ -962,7 +962,7 @@ function processColor(arg0) {
   }
   if (null != tmp) {
     let tmp3 = null;
-    if (typeof tmp !== "reType") {
+    if (typeof tmp !== "__REMOTEDEV__") {
       let tmp4 = tmp;
       if (isJest) {
         tmp4 = tmp | 0;
@@ -984,10 +984,10 @@ function processColorsInProps(obj) {
       if (Array.isArray(arg0[key10007])) {
         let arr = arg0[key10007];
         arg0[key10007] = arr.map((arg0) => {
-          if (typeof closure_16 !== "find") {
+          if (typeof closure_16 !== "fileFinishedImporting") {
             HermesBuiltin.throwTypeError();
           }
-          if (typeof closure_14 !== "find") {
+          if (typeof closure_14 !== "fileFinishedImporting") {
             HermesBuiltin.throwTypeError();
           }
           let tmp = arg0;
@@ -1006,7 +1006,7 @@ function processColorsInProps(obj) {
           let tmp3;
           if (null != tmp) {
             let tmp4 = null;
-            if (typeof tmp !== "reType") {
+            if (typeof tmp !== "__REMOTEDEV__") {
               let tmp5 = tmp;
               if (closure_15) {
                 tmp5 = tmp | 0;
@@ -1055,7 +1055,7 @@ processColorsInProps.__closure = { ColorProperties: shareable1, processColor, Ne
 processColorsInProps.__workletHash = 978448002474;
 processColorsInProps.__initData = { code: "function processColorsInProps_Pnpm_ColorsTs21(props){const{ColorProperties,processColor,NestedColorProperties}=this.__closure;for(const key in props){if(ColorProperties.includes(key)){if(Array.isArray(props[key])){props[key]=props[key].map(function(color){return processColor(color);});}else{props[key]=processColor(props[key]);}}else if(NestedColorProperties[key]){const propGroupList=props[key];for(const propGroup of propGroupList){const nestedPropertyName=NestedColorProperties[key];if(propGroup[nestedPropertyName]!==undefined){propGroup[nestedPropertyName]=processColor(propGroup[nestedPropertyName]);}}}}}" };
 function convertToRGBA(current) {
-  if (typeof processColorInitially !== "find") {
+  if (typeof processColorInitially !== "fileFinishedImporting") {
     HermesBuiltin.throwTypeError();
   }
   let tmp = current;

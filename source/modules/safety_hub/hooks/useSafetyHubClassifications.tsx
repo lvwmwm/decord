@@ -1,10 +1,10 @@
-// Module ID: 11073
-// Function ID: 11074
+// Module ID: 11091
+// Function ID: 11092
 // Name: useSafetyHubClassifications
-// Dependencies: [19, 11068, 6753, 589, 11, 6752, 6754, 11074, 2]
+// Dependencies: [19, 11086, 6759, 589, 11, 6758, 6760, 11092, 2]
 // Exports: useActiveSafetyHubClassifications, useExpiredSafetyHubClassifications, useSafetyHubAppealSignal, useSafetyHubClassification, useSafetyHubClassifications
 
-// Module 11073 (useSafetyHubClassifications)
+// Module 11091 (useSafetyHubClassifications)
 import noop from "noop";
 import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
 import { ViolationType } from "SafetyHubView";
@@ -42,7 +42,7 @@ export const useSafetyHubClassification = function useSafetyHubClassification(cl
     if (guild_metadata != null) {
       member_type = guild_metadata.member_type;
     }
-    if (member_type === tmp(6754).MemberType.OWNER) {
+    if (member_type === tmp(6760).MemberType.OWNER) {
       let GUILD_MEMBER = ViolationType.GUILD_OWNER;
     } else {
       GUILD_MEMBER = ViolationType.GUILD_MEMBER;

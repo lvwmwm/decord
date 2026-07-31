@@ -1,9 +1,9 @@
-// Module ID: 4283
-// Function ID: 4284
+// Module ID: 4287
+// Function ID: 4288
 // Name: traceEvent
 // Dependencies: [2]
 
-// Module 4283 (traceEvent)
+// Module 4287 (traceEvent)
 const result = require("set").fileFinishedImporting("lib/SoundshareStatsAggregator.tsx");
 class SoundshareStatsAggregator {
   constructor() {

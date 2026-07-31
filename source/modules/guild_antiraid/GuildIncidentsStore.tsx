@@ -1,9 +1,9 @@
-// Module ID: 10240
-// Function ID: 10241
+// Module ID: 10258
+// Function ID: 10259
 // Name: computeAlertSettings
-// Dependencies: [4103, 1340, 1862, 3817, 7794, 589, 709, 2]
+// Dependencies: [4107, 1340, 1862, 3821, 7802, 589, 709, 2]
 
-// Module 10240 (computeAlertSettings)
+// Module 10258 (computeAlertSettings)
 import getHash from "getHash";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -80,11 +80,11 @@ const guildIncidentsStore = new GuildIncidentsStore(require("dispatcher"), {
       if (tmp7) {
         let tmp8 = require;
         let tmp9 = dependencyMap;
-        let obj = require(7794) /* DATE_CONFIG */;
+        let obj = require(7802) /* DATE_CONFIG */;
         let tmp10 = tmp3Result;
         let hasDetectedActivityResult = obj.hasDetectedActivity(tmp6);
         if (!hasDetectedActivityResult) {
-          let tmp8Result = tmp8(7794);
+          let tmp8Result = tmp8(7802);
           let tmp12 = tmp3Result;
           hasDetectedActivityResult = tmp8Result.isUnderLockdown(tmp6);
         }
@@ -118,13 +118,13 @@ const guildIncidentsStore = new GuildIncidentsStore(require("dispatcher"), {
     }
     let tmp4 = null != tmp2;
     if (tmp4) {
-      let hasDetectedActivityResult = require(7794) /* DATE_CONFIG */.hasDetectedActivity(tmp2);
+      let hasDetectedActivityResult = require(7802) /* DATE_CONFIG */.hasDetectedActivity(tmp2);
       if (!hasDetectedActivityResult) {
-        hasDetectedActivityResult = tmp5(7794).isUnderLockdown(tmp2);
-        const tmp5Result = tmp5(7794);
+        hasDetectedActivityResult = tmp5(7802).isUnderLockdown(tmp2);
+        const tmp5Result = tmp5(7802);
       }
       tmp4 = hasDetectedActivityResult;
-      const obj2 = require(7794) /* DATE_CONFIG */;
+      const obj2 = require(7802) /* DATE_CONFIG */;
       tmp5 = require;
     }
     if (tmp4) {
@@ -149,10 +149,10 @@ const guildIncidentsStore = new GuildIncidentsStore(require("dispatcher"), {
       delete tmp2[tmp];
     } else {
       if (!obj2.hasDetectedActivity(tmp3)) {
-        const tmp5Result = tmp5(7794);
+        const tmp5Result = tmp5(7802);
       }
       closure_6[guild.id] = tmp3;
-      obj2 = require(7794) /* DATE_CONFIG */;
+      obj2 = require(7802) /* DATE_CONFIG */;
       tmp5 = require;
     }
   },

@@ -1,15 +1,17 @@
 // Module ID: 8593
 // Function ID: 8594
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 8544, 8567]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8594, 8579, 8580]
 
 // Module 8593 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
+import "noop";
+import { jsx } from "jsxProd";
 
-const FeTile = arg1;
+const FeOffset = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeTile {
+class FeOffset {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeTile);
+    tmp = _isNativeReflectConstruct(this, FeOffset);
     tmp2 = __esModule;
-    obj = __esModule(FeTile);
+    obj = __esModule(FeOffset);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -49,19 +51,33 @@ class FeTile {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeTile, require("_isNativeReflectConstruct"));
+require("_inherits")(FeOffset, require("_isNativeReflectConstruct"));
 let obj = {
   key: "render",
   value: function render() {
-    const result = FeTile(8544).warnUnimplementedFilter();
-    return null;
+    const self = this;
+    const merged = Object.assign(this.props);
+    const obj = {
+      ref(arg0) {
+        return self.refMethod(arg0);
+      }
+    };
+    const tmp = importDefault(8594);
+    const merged1 = Object.assign(self(8579).extractFilter(this.props));
+    const obj2 = self(8579);
+    const merged2 = Object.assign(self(8579).extractIn(this.props));
+    return <tmp ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
   }
 };
 const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeTile, items);
-importDefaultResultResult.displayName = "FeTile";
+const importDefaultResultResult = importDefaultResult(FeOffset, items);
+importDefaultResultResult.displayName = "FeOffset";
 obj = {};
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+obj.dx = 0;
+obj.dy = 0;
 importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

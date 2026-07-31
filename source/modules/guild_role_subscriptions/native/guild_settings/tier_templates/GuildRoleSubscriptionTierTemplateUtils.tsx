@@ -1,26 +1,26 @@
-// Module ID: 16621
-// Function ID: 16622
+// Module ID: 16650
+// Function ID: 16651
 // Name: getPrivateChannelIconComponent
-// Dependencies: [692, 4693, 4712, 4710, 4700, 4699, 4707, 2]
+// Dependencies: [692, 4697, 4716, 4714, 4704, 4703, 4711, 2]
 // Exports: getPrivateChannelIconComponent
 
-// Module 16621 (getPrivateChannelIconComponent)
+// Module 16650 (getPrivateChannelIconComponent)
 const result = require("VoiceLockIcon").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildRoleSubscriptionTierTemplateUtils.tsx");
 
 export const getPrivateChannelIconComponent = function getPrivateChannelIconComponent(type) {
   if (require(692) /* set */.ChannelTypes.GUILD_TEXT === type) {
-    return tmp(4693).TextLockIcon;
+    return tmp(4697).TextLockIcon;
   } else if (tmp(692).ChannelTypes.GUILD_VOICE === type) {
-    return tmp(4712).VoiceLockIcon;
+    return tmp(4716).VoiceLockIcon;
   } else if (tmp(692).ChannelTypes.GUILD_STAGE_VOICE === type) {
-    return tmp(4710).StageLockIcon;
+    return tmp(4714).StageLockIcon;
   } else if (tmp(692).ChannelTypes.GUILD_FORUM === type) {
-    return tmp(4700).ForumLockIcon;
+    return tmp(4704).ForumLockIcon;
   } else if (tmp(692).ChannelTypes.GUILD_MEDIA === type) {
-    return tmp(4699).ImageLockIcon;
+    return tmp(4703).ImageLockIcon;
   } else if (tmp(692).ChannelTypes.GUILD_ANNOUNCEMENT === type) {
-    return tmp(4707).AnnouncementsLockIcon;
+    return tmp(4711).AnnouncementsLockIcon;
   } else {
-    return tmp(4693).TextLockIcon;
+    return tmp(4697).TextLockIcon;
   }
 };

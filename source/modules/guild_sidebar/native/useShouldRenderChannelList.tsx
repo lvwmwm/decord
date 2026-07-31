@@ -1,10 +1,10 @@
-// Module ID: 15224
-// Function ID: 15225
+// Module ID: 15251
+// Function ID: 15252
 // Name: useShouldRenderChannelList
-// Dependencies: [32, 19, 5732, 4865, 676, 4040, 4041, 1231, 2]
+// Dependencies: [32, 19, 5737, 4869, 676, 4044, 4045, 1231, 2]
 // Exports: useShouldRenderChannelList
 
-// Module 15224 (useShouldRenderChannelList)
+// Module 15251 (useShouldRenderChannelList)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import handleClearCaches from "handleClearCaches";
@@ -54,7 +54,7 @@ export const useShouldRenderChannelList = function useShouldRenderChannelList() 
       let result1 = outer1_4.addReactChangeListener(handleCacheChange);
       let ComponentDispatch = first(1231).ComponentDispatch;
       const subscription = ComponentDispatch.subscribe(outer1_6.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
-      let rootNavigationRef = first(4041).getRootNavigationRef();
+      let rootNavigationRef = first(4045).getRootNavigationRef();
       if (rootNavigationRef != null) {
         rootNavigationRef.addListener("state", handleNavigationChange);
       }

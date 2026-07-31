@@ -1,11 +1,11 @@
-// Module ID: 15365
-// Function ID: 15366
+// Module ID: 15393
+// Function ID: 15394
 // Name: items
-// Dependencies: [19, 17, 1874, 21, 11995, 7911, 12000, 15316, 712, 589, 4419, 8380, 5521, 7909, 8472, 8483, 7906, 15366, 1959, 8182, 4395, 15370, 1236, 15372, 4185, 4028, 5925, 11, 689, 4717, 5141, 15373, 2]
+// Dependencies: [19, 17, 1874, 21, 12013, 7918, 12018, 15344, 712, 589, 4423, 8393, 5525, 7916, 8485, 8496, 7914, 15394, 1959, 8189, 4399, 15398, 1236, 15400, 4189, 4032, 5931, 11, 689, 4721, 5145, 15401, 2]
 // Exports: default
 
-// Module 15365 (items)
-import module_8182 from "module_8182";
+// Module 15393 (items)
+import module_8189 from "module_8189";
 import { View } from "Screenshot";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "useReplyActions";
@@ -21,7 +21,7 @@ let items = [obj, , , , ];
 obj = {
   Badge: require("ActiveTimestamp").StreakBadge,
   predicate(entry) {
-    let num = require(7911) /* calculateTimestampDurations */.getStreakCount(entry);
+    let num = require(7918) /* calculateTimestampDurations */.getStreakCount(entry);
     if (num == null) {
       num = 0;
     }
@@ -32,10 +32,10 @@ items[1] = obj;
 obj = {
   Badge: require("ActiveTimestamp").TrendingBadge,
   predicate(entry) {
-    const trendingType = require(7911) /* calculateTimestampDurations */.getTrendingType(entry);
-    const obj = require(7911) /* calculateTimestampDurations */;
+    const trendingType = require(7918) /* calculateTimestampDurations */.getTrendingType(entry);
+    const obj = require(7918) /* calculateTimestampDurations */;
     const tmp = require;
-    return null != trendingType && trendingType !== require(12000) /* TrendingType */.TrendingType.TRENDING_TYPE_UNSPECIFIED;
+    return null != trendingType && trendingType !== require(12018) /* TrendingType */.TrendingType.TRENDING_TYPE_UNSPECIFIED;
   }
 };
 items[2] = obj;
@@ -54,7 +54,7 @@ let obj1 = {
 items[4] = {
   Badge: require("ActiveTimestamp").MarathonBadge,
   predicate(entry) {
-    return true === require(7911) /* calculateTimestampDurations */.isEntryMarathon(entry);
+    return true === require(7918) /* calculateTimestampDurations */.isEntryMarathon(entry);
   }
 };
 let closure_11 = createICYMIStyles.createICYMIStyles((gap) => {
@@ -73,7 +73,7 @@ let closure_11 = createICYMIStyles.createICYMIStyles((gap) => {
 let obj2 = {
   Badge: require("ActiveTimestamp").MarathonBadge,
   predicate(entry) {
-    return true === require(7911) /* calculateTimestampDurations */.isEntryMarathon(entry);
+    return true === require(7918) /* calculateTimestampDurations */.isEntryMarathon(entry);
   }
 };
 const result = require("mergeGuildAvatar").fileFinishedImporting("modules/icymi/native/content_inventory/GamingLikeEntryRow.tsx");

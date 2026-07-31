@@ -1,10 +1,10 @@
-// Module ID: 15866
-// Function ID: 15867
+// Module ID: 15894
+// Function ID: 15895
 // Name: FrameWebView
-// Dependencies: [19, 21, 10658, 10615, 2]
+// Dependencies: [19, 21, 10676, 10633, 2]
 // Exports: default
 
-// Module 15866 (FrameWebView)
+// Module 15894 (FrameWebView)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -37,14 +37,14 @@ export default function FrameWebView(applicationId) {
     }
   }, items);
   obj = {
-    hasIframeId() {
-      return hasInvalidUrlError(hadInvalidUrlError[3]).hasIframeId();
+    hasFrameId() {
+      return hasInvalidUrlError(hadInvalidUrlError[3]).hasFrameId();
     },
-    getOrCreateIframeId() {
-      return hasInvalidUrlError(hadInvalidUrlError[3]).getOrCreateIframeId();
+    getOrCreateFrameId() {
+      return hasInvalidUrlError(hadInvalidUrlError[3]).getOrCreateFrameId();
     },
-    releaseIframeId() {
-      return hasInvalidUrlError(hadInvalidUrlError[3]).releaseIframeId();
+    releaseFrameId() {
+      return hasInvalidUrlError(hadInvalidUrlError[3]).releaseFrameId();
     },
     hasInvalidUrlError,
     setHasInvalidUrlError: hasInvalidUrlErrorState.setHasInvalidUrlError,
@@ -53,14 +53,14 @@ export default function FrameWebView(applicationId) {
   };
   const merged1 = Object.assign(merged);
   return jsx(applicationId(hadInvalidUrlError[2]).BaseActivityWebView, {
-    hasIframeId() {
-      return hasInvalidUrlError(hadInvalidUrlError[3]).hasIframeId();
+    hasFrameId() {
+      return hasInvalidUrlError(hadInvalidUrlError[3]).hasFrameId();
     },
-    getOrCreateIframeId() {
-      return hasInvalidUrlError(hadInvalidUrlError[3]).getOrCreateIframeId();
+    getOrCreateFrameId() {
+      return hasInvalidUrlError(hadInvalidUrlError[3]).getOrCreateFrameId();
     },
-    releaseIframeId() {
-      return hasInvalidUrlError(hadInvalidUrlError[3]).releaseIframeId();
+    releaseFrameId() {
+      return hasInvalidUrlError(hadInvalidUrlError[3]).releaseFrameId();
     },
     hasInvalidUrlError,
     setHasInvalidUrlError: hasInvalidUrlErrorState.setHasInvalidUrlError,

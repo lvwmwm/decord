@@ -1,10 +1,10 @@
-// Module ID: 15727
-// Function ID: 15728
+// Module ID: 15755
+// Function ID: 15756
 // Name: SettingsOverviewScreen
-// Dependencies: [19, 7753, 21, 1236, 1351, 3835, 10116, 13674, 2]
+// Dependencies: [19, 7761, 21, 1236, 1351, 3839, 10133, 13698, 2]
 // Exports: default
 
-// Module 15727 (SettingsOverviewScreen)
+// Module 15755 (SettingsOverviewScreen)
 import noop from "noop";
 import { MobileSetting } from "MobileSetting";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/overview/native/SettingsOverviewScreen.tsx");
 
 export default function SettingsOverviewScreen() {
-  hasPremiumSubscriptionToDisplay = hasPremiumSubscriptionToDisplay(3835).useHasPremiumSubscriptionToDisplay();
+  hasPremiumSubscriptionToDisplay = hasPremiumSubscriptionToDisplay(3839).useHasPremiumSubscriptionToDisplay();
   let items = [hasPremiumSubscriptionToDisplay];
   const node = React.useMemo(() => {
     let obj = hasPremiumSubscriptionToDisplay(outer1_1[6]);
@@ -87,5 +87,5 @@ export default function SettingsOverviewScreen() {
     obj1[0] = items1;
     return obj.createList(obj1);
   }, items);
-  return jsx(hasPremiumSubscriptionToDisplay(13674).SearchableSettingsList, { node });
+  return jsx(hasPremiumSubscriptionToDisplay(13698).SearchableSettingsList, { node });
 };

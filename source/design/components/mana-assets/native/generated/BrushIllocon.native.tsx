@@ -1,10 +1,10 @@
-// Module ID: 6891
-// Function ID: 6892
+// Module ID: 6899
+// Function ID: 6900
 // Name: BrushIllocon
-// Dependencies: [21, 5141, 6892, 2]
+// Dependencies: [21, 5145, 6900, 2]
 // Exports: BrushIllocon
 
-// Module 6891 (BrushIllocon)
+// Module 6899 (BrushIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BrushIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const BrushIllocon = function BrushIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6892);
+  obj[0] = importDefault(6900);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5141), { uri: null });
+  return jsx(importDefault(5145), { uri: null });
 };

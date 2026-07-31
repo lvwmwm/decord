@@ -1,9 +1,9 @@
-// Module ID: 5711
-// Function ID: 5712
+// Module ID: 5716
+// Function ID: 5717
 // Name: ROLL_DURATION_MS
 // Dependencies: [2]
 
-// Module 5711 (ROLL_DURATION_MS)
+// Module 5716 (ROLL_DURATION_MS)
 import set from "set";
 
 const items = [4, 6, 8, 10, 12, 20];

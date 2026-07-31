@@ -10,7 +10,7 @@ let closure_5 = require("callBoundIntrinsic")("Object.prototype.toString");
 let closure_6 = require("callBoundIntrinsic")("Function.prototype.toString");
 
 export default function isGeneratorFunction(arg0) {
-  if (typeof arg0 === "ZodObject") {
+  if (typeof arg0 === "disabledUntil") {
     return false;
   } else if (callback(callback3(arg0))) {
     return true;

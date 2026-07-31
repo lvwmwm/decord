@@ -1,9 +1,9 @@
-// Module ID: 10514
-// Function ID: 10515
+// Module ID: 10532
+// Function ID: 10533
 // Name: initialize
-// Dependencies: [1931, 10232, 8164, 659, 589, 709, 2]
+// Dependencies: [1931, 10250, 8171, 659, 589, 709, 2]
 
-// Module 10514 (initialize)
+// Module 10532 (initialize)
 import handleConnectionOpen from "handleConnectionOpen";
 import { VoiceCallOverlayType } from "BOX_MODE_ACTIONSHEET_WIDTH";
 import { Store } from "initialize";
@@ -13,9 +13,11 @@ let c5 = false;
 let c6 = false;
 let c7 = false;
 let obj = {};
-obj = { x: "Array", y: "flex", width: "y", height: "HermesInternal", screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: "progressbar", isVisible: null };
+obj = { x: "Array", y: "flex", width: "borderRadius", height: "label", screenOrientation: "<string:822483025>", hasUserInteractedSinceOrientationChange: "<string:3951369912>", isInitialized: "<string:1069463633>", isVisible: "ip" };
+obj[4] = require("handleOrientationChange").OrientationType.PORTRAIT;
 obj[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = obj;
-obj = { x: "Array", y: "flex", width: "y", height: "HermesInternal", screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: "progressbar", isVisible: null };
+obj = { x: "Array", y: "flex", width: "borderRadius", height: "label", screenOrientation: "<string:822483025>", hasUserInteractedSinceOrientationChange: "<string:3951369912>", isInitialized: "<string:1069463633>", isVisible: "ip" };
+obj[4] = require("handleOrientationChange").OrientationType.PORTRAIT;
 obj[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = obj;
 let c10 = true;
 class ChannelCallLifecycleStore extends Store {

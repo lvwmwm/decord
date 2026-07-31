@@ -1,10 +1,10 @@
-// Module ID: 10261
-// Function ID: 10262
+// Module ID: 10279
+// Function ID: 10280
 // Name: canReportRaid
-// Dependencies: [3817, 10240, 676, 589, 7794, 10262, 2]
+// Dependencies: [3821, 10258, 676, 589, 7802, 10280, 2]
 // Exports: canEnableRaidAlerts, canReportRaid, useCanEnableRaidAlerts, useCanReportRaid, useShowMentionRaidLimitUpsell
 
-// Module 10261 (canReportRaid)
+// Module 10279 (canReportRaid)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import computeAlertSettings from "computeAlertSettings";
 import ME from "ME";
@@ -54,8 +54,8 @@ export const useCanReportRaid = function useCanReportRaid(guild) {
   }, items3);
   let hasDetectedActivityResult = null != stateFromStores1;
   if (hasDetectedActivityResult) {
-    hasDetectedActivityResult = tmp(7794).hasDetectedActivity(stateFromStores1);
-    const tmpResult = tmp(7794);
+    hasDetectedActivityResult = tmp(7802).hasDetectedActivity(stateFromStores1);
+    const tmpResult = tmp(7802);
   }
   let tmp6 = !hasDetectedActivityResult;
   if (!hasDetectedActivityResult) {
@@ -97,6 +97,6 @@ export const useShowMentionRaidLimitUpsell = function useShowMentionRaidLimitUps
   if (id == null) {
     id = closure_4;
   }
-  const obj2 = _require(10262);
-  return _require(10262).useIsMentionRaidExperimentEnabled(id, false) && stateFromStores;
+  const obj2 = _require(10280);
+  return _require(10280).useIsMentionRaidExperimentEnabled(id, false) && stateFromStores;
 };

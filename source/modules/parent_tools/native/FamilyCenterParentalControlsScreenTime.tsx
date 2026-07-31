@@ -1,10 +1,10 @@
-// Module ID: 13958
-// Function ID: 13959
+// Module ID: 13982
+// Function ID: 13983
 // Name: ScheduleRuleRow
-// Dependencies: [17, 676, 21, 4189, 712, 10243, 5220, 4185, 1236, 2223, 13919, 1480, 5554, 2]
+// Dependencies: [17, 676, 21, 4193, 712, 10261, 5224, 4189, 1236, 2225, 13943, 1480, 5558, 2]
 // Exports: default
 
-// Module 13958 (ScheduleRuleRow)
+// Module 13982 (ScheduleRuleRow)
 import { View } from "get ActivityIndicator";
 import { UserSettingsSections } from "ME";
 import jsxProd from "jsxProd";
@@ -21,19 +21,19 @@ function ScheduleRuleRow(rule) {
   if (readOnly === undefined) {
     readOnly = false;
   }
-  let obj = rule(10243);
+  let obj = rule(10261);
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
-  const obj2 = rule(10243);
-  obj = { label: scheduleRuleDateRange, subLabel: rule(10243).formatDays(rule.days), trailing: null, arrow: null, onPress: null };
+  const obj2 = rule(10261);
+  obj = { label: scheduleRuleDateRange, subLabel: rule(10261).formatDays(rule.days), trailing: null, arrow: null, onPress: null };
   const intl = rule(1236).intl;
   const string = intl.string;
-  const tmp4 = importDefault(2223);
+  const tmp4 = importDefault(2225);
   if (rule.enabled) {
     let stringResult = string(tmp4["8vDHRq"]);
   } else {
     stringResult = string(tmp4["4z9fN+"]);
   }
-  obj[2] = closure_5(rule(4185).Text, { variant: "text-sm/medium", color: "text-subtle", children: stringResult });
+  obj[2] = closure_5(rule(4189).Text, { variant: "text-sm/medium", color: "text-subtle", children: stringResult });
   obj[3] = !readOnly;
   let fn;
   if (!readOnly) {
@@ -46,7 +46,7 @@ function ScheduleRuleRow(rule) {
     };
   }
   obj[4] = fn;
-  return closure_5(rule(5220).TableRow, obj);
+  return closure_5(rule(5224).TableRow, obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let obj = { header: null, container: null };

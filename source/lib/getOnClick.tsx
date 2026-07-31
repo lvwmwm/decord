@@ -1,10 +1,10 @@
-// Module ID: 8204
-// Function ID: 8205
+// Module ID: 8211
+// Function ID: 8212
 // Name: openInviteModal
-// Dependencies: [32, 5, 4226, 5779, 5664, 1218, 1942, 1862, 4174, 4407, 1931, 4006, 5027, 676, 678, 5665, 709, 4175, 6690, 8205, 1959, 5105, 5679, 8214, 4173, 4178, 5973, 3880, 698, 10604, 11132, 12274, 5696, 4199, 10638, 12278, 9751, 10489, 1467, 10956, 5038, 12279, 5797, 4384, 4381, 7903, 12280, 2]
+// Dependencies: [32, 5, 4230, 5784, 5668, 1218, 1942, 1862, 4178, 4411, 1931, 4010, 5031, 676, 678, 5669, 709, 4179, 6696, 8212, 1959, 5109, 5683, 8221, 4177, 4182, 5979, 3884, 698, 10622, 11150, 12300, 5701, 4203, 10656, 12304, 9768, 10506, 1467, 10974, 5042, 12305, 5802, 4388, 4385, 7911, 12306, 2]
 // Exports: default
 
-// Module 8204 (openInviteModal)
+// Module 8211 (openInviteModal)
 import _runPrimaryAppCommandOrJoinEmbeddedActivity from "_runPrimaryAppCommandOrJoinEmbeddedActivity";
 import fetchFingerprint from "fetchFingerprint";
 import addApplication from "addApplication";
@@ -76,7 +76,7 @@ function _openInviteModal() {
               return obj;
             } else {
               let obj1 = callback(table[16]);
-              obj1 = { type: "DISPLAYED_INVITE_SHOW", code: null, username: "Array", deeplinkAttemptId: "accessibilityRole", invite_instance_id: true };
+              obj1 = { type: "DISPLAYED_INVITE_SHOW", code: null, username: "Array", deeplinkAttemptId: "padding", invite_instance_id: "ct" };
               obj1[1] = closure_0;
               obj1[4] = callback;
               c3 = 1;
@@ -312,7 +312,7 @@ export default function getOnClick(url) {
   let c3;
   pathname = undefined;
   obj = undefined;
-  obj = _require(4173);
+  obj = _require(4177);
   const findCodedLinkResult = obj.findCodedLink(url);
   c3 = findCodedLinkResult;
   if (null != findCodedLinkResult) {
@@ -345,7 +345,7 @@ export default function getOnClick(url) {
         if (_undefined.type !== tmp3(tmp4[25]).CodedLinkType.APP_DIRECTORY_STOREFRONT) {
           let result = tmp3(tmp4[26]).parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "Array", skuId: "ct" };
+            result = { applicationId: "Array", skuId: "HermesInternal" };
           }
           const tmp3Result = tmp3(tmp4[26]);
         }
@@ -362,11 +362,11 @@ export default function getOnClick(url) {
         outer1_1(tmp4[27])(url);
         return true;
       }
-      result = { applicationId: code, skuId: "a" };
+      result = { applicationId: code, skuId: "Array" };
     };
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4178).CodedLinkType.ACTIVITY_BOOKMARK) {
+    if (findCodedLinkResult.type === tmp2(4182).CodedLinkType.ACTIVITY_BOOKMARK) {
       return (preventDefault) => {
         let isCurrentlyInInstance;
         let obj;
@@ -623,7 +623,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4178).CodedLinkType.GUILD_PRODUCT) {
+    if (findCodedLinkResult.type === tmp2(4182).CodedLinkType.GUILD_PRODUCT) {
       return (preventDefault) => {
         let closure_0;
         let closure_1;
@@ -641,7 +641,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4178).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
+    if (findCodedLinkResult.type === tmp2(4182).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
       return (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -654,7 +654,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4178).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+    if (findCodedLinkResult.type === tmp2(4182).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
       return (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -667,8 +667,8 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4178).CodedLinkType.QUESTS_EMBED) {
-      let tmp2Result = tmp2(10489);
+    if (findCodedLinkResult.type === tmp2(4182).CodedLinkType.QUESTS_EMBED) {
+      let tmp2Result = tmp2(10506);
       if (tmp2Result.getIsEligibleForQuests()) {
         return (preventDefault) => {
           if (preventDefault != null) {
@@ -707,7 +707,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4178).CodedLinkType.COLLECTIBLES_SHOP) {
+    if (findCodedLinkResult.type === tmp2(4182).CodedLinkType.COLLECTIBLES_SHOP) {
       return (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -794,7 +794,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4178).CodedLinkType.APP_OAUTH2_LINK) {
+    if (findCodedLinkResult.type === tmp2(4182).CodedLinkType.APP_OAUTH2_LINK) {
       let fn = (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -808,7 +808,7 @@ export default function getOnClick(url) {
     }
     return fn;
   }
-  tmp2Result = tmp2(4381);
+  tmp2Result = tmp2(4385);
   let result = tmp2Result.tryParseEventDetailsPath(pathname);
   if (!tmp.skipExtensionCheck) {
     if (null != tmp2Result1.isSuspiciousDownload(url)) {
@@ -820,6 +820,6 @@ export default function getOnClick(url) {
         return true;
       };
     }
-    tmp2Result1 = tmp2(7903);
+    tmp2Result1 = tmp2(7911);
   }
 };

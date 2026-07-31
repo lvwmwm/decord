@@ -77,9 +77,9 @@ let fn = function n(userConfig, callback) {
       callback: table,
       velocity: null,
       initialVelocity: 0,
-      current: "sa",
+      current: "ip",
       lastTimestamp: null,
-      startTimestamp: "-1",
+      startTimestamp: "union",
       reduceMotion: null
     };
     let num = obj.velocity;

@@ -1,10 +1,10 @@
-// Module ID: 8271
-// Function ID: 8272
+// Module ID: 8278
+// Function ID: 8279
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 676, 1906, 506, 8272, 4035, 1236, 2]
+// Dependencies: [5, 32, 19, 676, 1906, 506, 8279, 4039, 1236, 2]
 // Exports: default
 
-// Module 8271 (useCreateChannelSubmit)
+// Module 8278 (useCreateChannelSubmit)
 import fromString from "fromString";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

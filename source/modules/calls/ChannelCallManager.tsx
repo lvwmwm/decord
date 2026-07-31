@@ -1,9 +1,9 @@
-// Module ID: 16142
-// Function ID: 16143
+// Module ID: 16170
+// Function ID: 16171
 // Name: _initialize
-// Dependencies: [10268, 4866, 1372, 10241, 1931, 4029, 4205, 4262, 4202, 10267, 5134, 2]
+// Dependencies: [10286, 4870, 1372, 10259, 1931, 4033, 4209, 4266, 4206, 10285, 5138, 2]
 
-// Module 16142 (_initialize)
+// Module 16170 (_initialize)
 import importDefaultResult from "Soundpacks";
 import callConnect from "callConnect";
 import ensureGuildLoaded from "ensureGuildLoaded";

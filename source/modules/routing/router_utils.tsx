@@ -11,28 +11,28 @@ import _extends from "_extends";
 let c5;
 let closure_6;
 let error;
-function transitionTo(CHANNELResult, closure_1) {
-  let closure_0 = CHANNELResult;
-  let tmp = typeof CHANNELResult === "tee";
-  if (typeof CHANNELResult !== "tee") {
+function transitionTo(ME, closure_1) {
+  let closure_0 = ME;
+  let tmp = typeof ME === "__FORMATJS_LISTFORMAT_DATA__";
+  if (typeof ME !== "__FORMATJS_LISTFORMAT_DATA__") {
     tmp = !items.some((arg0) => ME.startsWith(arg0));
   }
   let flag = !tmp;
   if (!tmp) {
     const _HermesInternal = HermesInternal;
-    globalThis.log("" + "assign" + " - route to external path " + CHANNELResult);
+    globalThis.log("" + "assign" + " - route to external path " + ME);
     const _window = window;
     const _Event = Event;
     const event = new Event("beforeunload");
     window.dispatchEvent(event);
     const _window2 = window;
     const _location = window.location;
-    let obj = _location.assign(CHANNELResult);
+    let obj = _location.assign(ME);
     flag = true;
   }
   if (!flag) {
     const _HermesInternal2 = HermesInternal;
-    tmp3.log("transitionTo - Transitioning to " + CHANNELResult);
+    tmp3.log("transitionTo - Transitioning to " + ME);
     let source;
     if (closure_1 != null) {
       source = closure_1.source;
@@ -42,12 +42,12 @@ function transitionTo(CHANNELResult, closure_1) {
       sourceLocationStack = closure_1.sourceLocationStack;
     }
     if (null == closure_1) {
-      _extends.push(CHANNELResult);
+      _extends.push(ME);
     } else {
       const _URL = URL;
       const _window3 = window;
       const _HermesInternal3 = HermesInternal;
-      const uRL = new URL(CHANNELResult, "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT);
+      const uRL = new URL(ME, "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT);
       obj = { pathname: null, search: null, hash: null };
       ({ pathname: obj[0], search: obj[1], hash: obj[2] } = uRL);
       const merged = Object.assign(closure_1);
@@ -86,8 +86,8 @@ export const currentRouteHasBackNavigation = function currentRouteHasBackNavigat
 };
 export const replaceWith = function replaceWith(ME, state) {
   let closure_0 = ME;
-  let tmp = typeof ME === "tee";
-  if (typeof ME !== "tee") {
+  let tmp = typeof ME === "__FORMATJS_LISTFORMAT_DATA__";
+  if (typeof ME !== "__FORMATJS_LISTFORMAT_DATA__") {
     tmp = !items.some((arg0) => ME.startsWith(arg0));
   }
   let flag = !tmp;

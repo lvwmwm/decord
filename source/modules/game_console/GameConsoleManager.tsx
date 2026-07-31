@@ -1,9 +1,9 @@
-// Module ID: 16180
-// Function ID: 16181
+// Module ID: 16208
+// Function ID: 16209
 // Name: syncLocalState
-// Dependencies: [5, 1218, 4236, 4261, 4204, 4205, 4203, 8941, 4250, 3, 38, 8834, 10799, 5134, 4074, 9035, 1351, 4528, 1236, 16181, 9038, 2]
+// Dependencies: [5, 1218, 4240, 4265, 4208, 4209, 4207, 8954, 4254, 3, 38, 8847, 10817, 5138, 4078, 9048, 1351, 4532, 1236, 16209, 9051, 2]
 
-// Module 16180 (syncLocalState)
+// Module 16208 (syncLocalState)
 import updateVoiceState from "updateVoiceState";
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -108,9 +108,9 @@ function _syncLocalState() {
 let prototype = function GameConsoleManager() {
   let applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   const require = applyArgumentsResult;
-  const timeout = new require(4074) /* start */.Timeout();
+  const timeout = new require(4078) /* start */.Timeout();
   applyArgumentsResult.rollbackCommandTimeout = timeout;
-  const timeout1 = new require(4074) /* start */.Timeout();
+  const timeout1 = new require(4078) /* start */.Timeout();
   applyArgumentsResult.awaitRemoteTimeout = timeout1;
   applyArgumentsResult.actions = {
     WAIT_FOR_REMOTE_SESSION() {
@@ -238,14 +238,14 @@ let prototype = function GameConsoleManager() {
   applyArgumentsResult.handleWaitForRemoteSession = function handleWaitForRemoteSession() {
     const awaitRemoteTimeout = applyArgumentsResult.awaitRemoteTimeout;
     awaitRemoteTimeout.start(60000, () => {
-      let obj = callback(9035);
+      let obj = callback(9048);
       obj.disconnectRemote();
       obj = { title: null, body: null };
       const intl = callback(1236).intl;
       obj[0] = intl.string(callback(1236).t.wGMxr3);
       const intl2 = callback(1236).intl;
       obj[1] = intl2.string(callback(1236).t.i5k8b5);
-      callback2(4528).show(obj);
+      callback2(4532).show(obj);
     });
   };
   applyArgumentsResult.handleConsoleCommandUpdate = function handleConsoleCommandUpdate(arg0) {

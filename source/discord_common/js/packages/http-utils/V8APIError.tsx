@@ -122,7 +122,7 @@ prototype["hasFieldErrors"] = function hasFieldErrors() {
 };
 prototype["getFieldErrors"] = function getFieldErrors(ASSET) {
   let arr = ASSET;
-  if (typeof ASSET !== "tee") {
+  if (typeof ASSET !== "__FORMATJS_LISTFORMAT_DATA__") {
     const items = [ASSET];
     arr = items;
   }

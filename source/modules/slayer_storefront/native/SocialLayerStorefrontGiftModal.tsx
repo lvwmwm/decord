@@ -1,10 +1,10 @@
-// Module ID: 9763
-// Function ID: 9764
+// Module ID: 9780
+// Function ID: 9781
 // Name: SocialLayerStorefrontGiftModal
-// Dependencies: [19, 4234, 676, 21, 589, 5515, 5535, 500, 6499, 4616, 698, 9751, 3848, 8768, 1236, 8760, 6662, 8769, 9764, 9765, 2]
+// Dependencies: [19, 4238, 676, 21, 589, 5519, 5539, 500, 6505, 4620, 698, 9768, 3852, 8781, 1236, 8773, 6668, 8782, 9781, 9782, 2]
 // Exports: default
 
-// Module 9763 (SocialLayerStorefrontGiftModal)
+// Module 9780 (SocialLayerStorefrontGiftModal)
 import "SocialLayerStorefrontGiftPurchaseSection";
 import addSku from "addSku";
 import ME from "ME";

@@ -49,11 +49,11 @@ export const parseServerUserCollectibles = function parseServerUserCollectibles(
                   tmp6 = null;
                   if ("label" in nameplate) {
                     tmp6 = null;
-                    if (typeof nameplate.label !== "tee") {
+                    if (typeof nameplate.label !== "__FORMATJS_LISTFORMAT_DATA__") {
                       tmp6 = null;
                       if ("palette" in nameplate) {
                         tmp6 = null;
-                        if (typeof nameplate.palette !== "tee") {
+                        if (typeof nameplate.palette !== "__FORMATJS_LISTFORMAT_DATA__") {
                           let obj = { skuId: null, label: null, palette: null };
                           obj[0] = StringResult;
                           ({ label: obj2[1], palette: obj2[2] } = nameplate);

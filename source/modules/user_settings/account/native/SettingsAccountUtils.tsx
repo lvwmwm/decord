@@ -1,10 +1,10 @@
-// Module ID: 13771
-// Function ID: 13772
+// Module ID: 13795
+// Function ID: 13796
 // Name: useIs2FAEnabled
 // Dependencies: [1218, 1874, 647, 2]
 // Exports: useIs2FAEnabled, useIsTOTPEnabled, useIsUserVerified
 
-// Module 13771 (useIs2FAEnabled)
+// Module 13795 (useIs2FAEnabled)
 import fetchFingerprint from "fetchFingerprint";
 import mergeGuildAvatar from "mergeGuildAvatar";
 

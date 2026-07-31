@@ -1,7 +1,7 @@
 // Module ID: 8584
 // Function ID: 8585
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8585, 8566, 8567]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8585, 8579, 8580]
 
 // Module 8584 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const FeMerge = arg1;
+const FeComposite = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeMerge {
+class FeComposite {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeMerge);
+    tmp = _isNativeReflectConstruct(this, FeComposite);
     tmp2 = __esModule;
-    obj = __esModule(FeMerge);
+    obj = __esModule(FeComposite);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,7 +51,7 @@ class FeMerge {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeMerge, require("_isNativeReflectConstruct"));
+require("_inherits")(FeComposite, require("_isNativeReflectConstruct"));
 let obj = {
   key: "render",
   value: function render() {
@@ -62,19 +62,23 @@ let obj = {
       }
     };
     const tmp = importDefault(8585);
-    const merged = Object.assign(self(8566).extractFilter(this.props));
-    const obj2 = self(8566);
-    const merged1 = Object.assign(self(8566).extractFeMerge(this.props, this));
+    const merged = Object.assign(self(8579).extractFilter(this.props));
+    const obj2 = self(8579);
+    const merged1 = Object.assign(self(8579).extractFeComposite(this.props));
     return <tmp ref={function ref(arg0) {
       return self.refMethod(arg0);
     }} />;
   }
 };
 const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeMerge, items);
-importDefaultResultResult.displayName = "FeMerge";
+const importDefaultResultResult = importDefaultResult(FeComposite, items);
+importDefaultResultResult.displayName = "FeComposite";
 obj = {};
 let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+obj.k1 = 0;
+obj.k2 = 0;
+obj.k3 = 0;
+obj.k4 = 0;
 importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

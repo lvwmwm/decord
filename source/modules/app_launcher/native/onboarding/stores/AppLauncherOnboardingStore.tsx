@@ -1,9 +1,9 @@
-// Module ID: 11215
-// Function ID: 11216
+// Module ID: 11233
+// Function ID: 11234
 // Name: initialize
-// Dependencies: [1874, 11, 11213, 5704, 589, 709, 2]
+// Dependencies: [1874, 11, 11231, 5709, 589, 709, 2]
 
-// Module 11215 (initialize)
+// Module 11233 (initialize)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Store } from "initialize";
 
@@ -27,7 +27,7 @@ const appLauncherOnboardingStore = new AppLauncherOnboardingStore(require("dispa
     let commandOrigin;
     context = context.context;
     ({ command, commandOrigin } = context);
-    let tmp = commandOrigin !== require(5704) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER;
+    let tmp = commandOrigin !== require(5709) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER;
     if (tmp) {
       tmp = null != context.channel;
     }
@@ -59,7 +59,7 @@ const appLauncherOnboardingStore = new AppLauncherOnboardingStore(require("dispa
             const extractTimestampResult = obj.extractTimestamp(message.id);
             const _Date = Date;
             const timestamp = Date.now();
-            if (timestamp <= extractTimestampResult + require(11213) /* result */.RECENT_MESSAGE_MS) {
+            if (timestamp <= extractTimestampResult + require(11231) /* result */.RECENT_MESSAGE_MS) {
               obj = { timeMs: null, guildId: null, channelId: null };
               obj[0] = extractTimestampResult;
               obj[1] = guildId;

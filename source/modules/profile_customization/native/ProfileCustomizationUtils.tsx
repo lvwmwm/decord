@@ -1,10 +1,10 @@
-// Module ID: 7976
-// Function ID: 7977
+// Module ID: 7983
+// Function ID: 7984
 // Name: useEditBannerSource
-// Dependencies: [7977, 1416, 688, 2]
+// Dependencies: [7984, 1416, 688, 2]
 // Exports: getAvatarSource, useEditBannerSource, useUserProfileBannerBackgroundColor
 
-// Module 7976 (useEditBannerSource)
+// Module 7983 (useEditBannerSource)
 let result = require("int2hslRaw").fileFinishedImporting("modules/profile_customization/native/ProfileCustomizationUtils.tsx");
 
 export const useEditBannerSource = function useEditBannerSource(arg0) {
@@ -12,7 +12,7 @@ export const useEditBannerSource = function useEditBannerSource(arg0) {
   let pendingBanner;
   ({ displayProfile, pendingBanner } = arg0);
   if (null != pendingBanner) {
-    return require(7977) /* useDominantRGBFromImage */.memoizedImageSource(pendingBanner);
+    return require(7984) /* useDominantRGBFromImage */.memoizedImageSource(pendingBanner);
   } else {
     if (null === pendingBanner) {
       let result;
@@ -54,11 +54,11 @@ export const useUserProfileBannerBackgroundColor = function useUserProfileBanner
   let user;
   ({ user, pendingAvatarSrc, displayProfile } = arg0);
   if (null == user) {
-    const obj3 = require(7977) /* useDominantRGBFromImage */;
-    const memoizedImageSourceResult = require(7977) /* useDominantRGBFromImage */.memoizedImageSource(null);
+    const obj3 = require(7984) /* useDominantRGBFromImage */;
+    const memoizedImageSourceResult = require(7984) /* useDominantRGBFromImage */.memoizedImageSource(null);
     const obj4 = require(688) /* int2hslRaw */;
     let primaryColor;
-    const obj5 = require(7977) /* useDominantRGBFromImage */;
+    const obj5 = require(7984) /* useDominantRGBFromImage */;
     if (displayProfile != null) {
       primaryColor = displayProfile.primaryColor;
     }
@@ -82,11 +82,11 @@ export const getAvatarSource = function getAvatarSource(getAvatarURL) {
   } else {
     let userAvatarURL = arg2;
     if (undefined === arg2) {
-      let memoizedImageSourceResult = require(7977) /* useDominantRGBFromImage */.memoizedImageSource(getAvatarURL.getAvatarURL(arg1, 80, !arg3));
-      const obj4 = require(7977) /* useDominantRGBFromImage */;
+      let memoizedImageSourceResult = require(7984) /* useDominantRGBFromImage */.memoizedImageSource(getAvatarURL.getAvatarURL(arg1, 80, !arg3));
+      const obj4 = require(7984) /* useDominantRGBFromImage */;
       const tmp2 = !arg3;
     } else {
-      let obj = require(7977) /* useDominantRGBFromImage */;
+      let obj = require(7984) /* useDominantRGBFromImage */;
       if (userAvatarURL == null) {
         obj = {};
         const merged = Object.assign(getAvatarURL);

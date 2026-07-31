@@ -1,0 +1,10 @@
+// Module ID: 14552
+// Function ID: 14553
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 14552 (registerAsset)
+import registerAsset from "registerAsset";
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "1c2e533ca379db7ea82903ea36d239f5", name: "FileWarningIcon", type: "png" });

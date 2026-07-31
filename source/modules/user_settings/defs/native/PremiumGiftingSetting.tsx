@@ -1,9 +1,9 @@
-// Module ID: 14018
-// Function ID: 14019
+// Module ID: 14042
+// Function ID: 14043
 // Name: route
-// Dependencies: [19, 676, 21, 6288, 6353, 12492, 1297, 10116, 1236, 8764, 3848, 12579, 2]
+// Dependencies: [19, 676, 21, 6294, 6359, 12518, 1297, 10133, 1236, 8777, 3852, 12604, 2]
 
-// Module 14018 (route)
+// Module 14042 (route)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
@@ -17,7 +17,7 @@ createToggle = {
   parent: null,
   IconComponent: require("GiftIcon").GiftIcon,
   usePredicate() {
-    return require(3848) /* isPremiumGiftingSupported */.isPremiumGiftingSupported();
+    return require(3852) /* isPremiumGiftingSupported */.isPremiumGiftingSupported();
   },
   usePreNavigationAction: function useCanNavigateToPaymentSetting() {
     return React.useCallback(() => {
@@ -31,7 +31,7 @@ createToggle = {
     }, []);
   },
   useTrailing: function usePremiumGiftingSettingTrailing() {
-    let obj = require(12492) /* useEligibleActiveOutboundPromotions */;
+    let obj = require(12518) /* useEligibleActiveOutboundPromotions */;
     const unseenOutboundPromotions = obj.useUnseenOutboundPromotions();
     obj = { value: unseenOutboundPromotions.length };
     return jsx(require(1297) /* Button */.Badge, { value: unseenOutboundPromotions.length });
@@ -42,7 +42,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.PREMIUM_GIFTING,
   getComponent() {
-    return require(12579) /* GiftingSectionTitle */.default;
+    return require(12604) /* GiftingSectionTitle */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

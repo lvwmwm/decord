@@ -224,7 +224,7 @@ obj = {
         return null;
       } else {
         let tmp8 = null;
-        if (typeof currentProps[eventTypePropName] !== "ZodObject") {
+        if (typeof currentProps[eventTypePropName] !== "disabledUntil") {
           tmp8 = tmp7;
         }
         return tmp8;

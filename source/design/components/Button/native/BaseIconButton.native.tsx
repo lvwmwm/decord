@@ -1,31 +1,31 @@
-// Module ID: 6680
-// Function ID: 6681
+// Module ID: 6686
+// Function ID: 6687
 // Name: BaseIconButton
-// Dependencies: [19, 21, 4189, 4604, 4050, 4602, 4605, 4607, 4609, 2]
+// Dependencies: [19, 21, 4193, 4608, 4054, 4606, 4609, 4611, 4613, 2]
 
-// Module 6680 (BaseIconButton)
+// Module 6686 (BaseIconButton)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import IconSizes from "IconSizes";
-import importDefaultResult from "module_4050";
+import importDefaultResult from "module_4054";
 
 const require = arg1;
 let closure_4 = createCacheKey.createStyles((arg0, arg1) => {
   if ("sm" === arg1) {
     let obj = { paddingHorizontal: null, paddingVertical: null };
-    obj[0] = require(4604) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_PADDING;
-    obj[1] = require(4604) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_PADDING;
+    obj[0] = require(4608) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_PADDING;
+    obj[1] = require(4608) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_PADDING;
   } else if ("md" === arg1) {
     obj = { paddingHorizontal: null, paddingVertical: null };
-    obj[0] = require(4604) /* MINIMUM_HIT_AREA */.MEDIUM_BUTTON_PADDING;
-    obj[1] = require(4604) /* MINIMUM_HIT_AREA */.MEDIUM_BUTTON_PADDING;
+    obj[0] = require(4608) /* MINIMUM_HIT_AREA */.MEDIUM_BUTTON_PADDING;
+    obj[1] = require(4608) /* MINIMUM_HIT_AREA */.MEDIUM_BUTTON_PADDING;
   } else {
     obj = {};
     if ("lg" === arg1) {
       const obj1 = { paddingHorizontal: null, paddingVertical: null };
-      obj1[0] = require(4604) /* MINIMUM_HIT_AREA */.LARGE_BUTTON_PADDING;
-      obj1[1] = require(4604) /* MINIMUM_HIT_AREA */.LARGE_BUTTON_PADDING;
+      obj1[0] = require(4608) /* MINIMUM_HIT_AREA */.LARGE_BUTTON_PADDING;
+      obj1[1] = require(4608) /* MINIMUM_HIT_AREA */.LARGE_BUTTON_PADDING;
       obj = obj1;
     }
   }
@@ -49,7 +49,7 @@ const forwardRefResult = importAllResult.forwardRef((variant, ref) => {
   }
   let DEFAULT_BUTTON_SIZE = variant.size;
   if (undefined === DEFAULT_BUTTON_SIZE) {
-    DEFAULT_BUTTON_SIZE = require(4604) /* MINIMUM_HIT_AREA */.DEFAULT_BUTTON_SIZE;
+    DEFAULT_BUTTON_SIZE = require(4608) /* MINIMUM_HIT_AREA */.DEFAULT_BUTTON_SIZE;
   }
   ({ icon, scaleAmountInPx } = variant);
   let num = 4;
@@ -58,18 +58,18 @@ const forwardRefResult = importAllResult.forwardRef((variant, ref) => {
     num = scaleAmountInPx;
   }
   const tmp3 = callback(str, DEFAULT_BUTTON_SIZE);
-  let obj = require(4050);
+  let obj = require(4054);
   const sharedValue = obj.useSharedValue(0);
-  let obj1 = require(4605) /* styleProperties */;
+  let obj1 = require(4609) /* styleProperties */;
   const iconTintStyles = obj1.useIconTintStyles(str);
-  const iconSizeStyles = require(4605) /* styleProperties */.useIconSizeStyles(DEFAULT_BUTTON_SIZE, true, maxFontSizeMultiplier);
-  let MEDIUM_BUTTON_HEIGHT = require(4604) /* MINIMUM_HIT_AREA */.LARGE_BUTTON_HEIGHT;
+  const iconSizeStyles = require(4609) /* styleProperties */.useIconSizeStyles(DEFAULT_BUTTON_SIZE, true, maxFontSizeMultiplier);
+  let MEDIUM_BUTTON_HEIGHT = require(4608) /* MINIMUM_HIT_AREA */.LARGE_BUTTON_HEIGHT;
   if ("sm" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp4(4604).SMALL_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp4(4608).SMALL_BUTTON_HEIGHT;
   } else if ("md" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp4(4604).MEDIUM_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp4(4608).MEDIUM_BUTTON_HEIGHT;
   }
-  const bound = Math.max((tmp4(4604).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
+  const bound = Math.max((tmp4(4608).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
   obj = {};
   const merged = Object.assign(variant);
   obj.ref = ref;
@@ -95,8 +95,8 @@ const forwardRefResult = importAllResult.forwardRef((variant, ref) => {
     tmp10Result = tmp10(IconSizes, obj1);
   }
   obj[6] = tmp10Result;
-  obj.children = jsx(require(4609) /* PillWrapper */.ButtonPill, { style: items1, variant: str, size: DEFAULT_BUTTON_SIZE, loading, loaderSize: null, pressed: null, children: null });
-  return jsx(require(4607) /* BaseButton */.BaseButton, { style: items1, variant: str, size: DEFAULT_BUTTON_SIZE, loading, loaderSize: null, pressed: null, children: null });
+  obj.children = jsx(require(4613) /* PillWrapper */.ButtonPill, { style: items1, variant: str, size: DEFAULT_BUTTON_SIZE, loading, loaderSize: null, pressed: null, children: null });
+  return jsx(require(4611) /* BaseButton */.BaseButton, { style: items1, variant: str, size: DEFAULT_BUTTON_SIZE, loading, loaderSize: null, pressed: null, children: null });
 });
 const result = require("createCacheKey").fileFinishedImporting("design/components/Button/native/BaseIconButton.native.tsx");
 

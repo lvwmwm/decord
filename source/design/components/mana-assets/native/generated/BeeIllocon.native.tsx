@@ -1,10 +1,10 @@
-// Module ID: 6873
-// Function ID: 6874
+// Module ID: 6881
+// Function ID: 6882
 // Name: BeeIllocon
-// Dependencies: [21, 5141, 6874, 2]
+// Dependencies: [21, 5145, 6882, 2]
 // Exports: BeeIllocon
 
-// Module 6873 (BeeIllocon)
+// Module 6881 (BeeIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BeeIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const BeeIllocon = function BeeIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6874);
+  obj[0] = importDefault(6882);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5141), { uri: null });
+  return jsx(importDefault(5145), { uri: null });
 };

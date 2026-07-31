@@ -1,10 +1,10 @@
-// Module ID: 8362
-// Function ID: 8363
+// Module ID: 8369
+// Function ID: 8370
 // Name: UseAnimatedPosition
-// Dependencies: [32, 19, 17, 1372, 1942, 1874, 7935, 5563, 676, 5244, 21, 4189, 5245, 4050, 1581, 589, 7980, 5515, 5535, 7950, 3862, 8104, 4720, 8079, 8363, 8094, 8085, 8063, 8074, 8364, 1474, 5140, 8093, 4125, 3893, 712, 8359, 8365, 7982, 1929, 7981, 698, 4041, 4157, 8356, 1480, 5243, 1297, 8366, 1236, 3901, 8370, 500, 6608, 8372, 11957, 12047, 8056, 5499, 12222, 1306, 2]
+// Dependencies: [32, 19, 17, 1372, 1942, 1874, 7942, 5567, 676, 5248, 21, 4193, 5249, 4054, 1581, 589, 7987, 5519, 5539, 7957, 3866, 8111, 4724, 8086, 8370, 8371, 8372, 8101, 8092, 8070, 8081, 8377, 1474, 5144, 8100, 4129, 3897, 712, 8366, 8378, 7989, 1929, 7988, 698, 4045, 4161, 8363, 1480, 5247, 1297, 8379, 1236, 3905, 8383, 500, 6614, 8385, 11975, 12065, 8063, 5503, 12248, 1306, 2]
 
-// Module 8362 (UseAnimatedPosition)
-import scaleProfileFrame from "scaleProfileFrame";
+// Module 8369 (UseAnimatedPosition)
+import useWindowDimensions from "useWindowDimensions";
 import importAllResult from "useBottomSheetRef";
 import get_ActivityIndicator from "context";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -28,8 +28,8 @@ const require = arg1;
 function UseAnimatedPosition(animatedPosition) {
   animatedPosition = animatedPosition.animatedPosition;
   let animatedPosition2;
-  animatedPosition2 = animatedPosition(5245).useBottomSheet().animatedPosition;
-  const obj = animatedPosition(5245);
+  animatedPosition2 = animatedPosition(5249).useBottomSheet().animatedPosition;
+  const obj = animatedPosition(5249);
   const fn = function n() {
     return animatedPosition2.get();
   };
@@ -42,7 +42,7 @@ function UseAnimatedPosition(animatedPosition) {
   fn2.__closure = { animatedPosition };
   fn2.__workletHash = 15360670503044;
   fn2.__initData = closure_20;
-  const animatedReaction = animatedPosition(4050).useAnimatedReaction(fn, fn2);
+  const animatedReaction = animatedPosition(4054).useAnimatedReaction(fn, fn2);
   return null;
 }
 function ActionSheetAlignedView(children) {
@@ -130,7 +130,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
   function handleUserSettingsClose() {
     navigation.goBack();
     const merged = Object.assign(createUserProfileAnalyticsContext);
-    channelId(onClose[44])({ sourceAnalyticsLocations: analyticsLocations });
+    channelId(onClose[46])({ sourceAnalyticsLocations: analyticsLocations });
   }
   let tmp = pendingAvatarDecoration();
   const tmp3 = onClose;
@@ -281,6 +281,15 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
     obj[2] = createUserProfileAnalyticsContext;
     obj[3] = analyticsLocations;
     tmp6(tmp3[24])(obj);
+    const tmp6Result2 = tmp6(tmp3[24]);
+    const isShopThisLookMobileEnabled = tmp2(tmp3[25]).useIsShopThisLookMobileEnabled("UserProfileActionSheet");
+    let tmp39;
+    const tmp2Result6 = tmp2(tmp3[25]);
+    if (flag) {
+      tmp39 = guild_id;
+      const tmp40 = guild_id;
+    }
+    tmp6(tmp3[26])(userId, tmp39, isShopThisLookMobileEnabled);
     const items7 = [tmp6Result2Result, sharedValue, top, sharedValue1, first1];
     const memo1 = obj7.useMemo(() => {
       let tmp2 = null;
@@ -291,12 +300,12 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         obj[2] = sharedValue1;
         obj = { frame: null, frameOrder: null, profileThemeType: null, containerWidth: null };
         obj[0] = tmp;
-        obj[1] = userId(onClose[26]).ProfileFrameLayerOrder.BACK;
+        obj[1] = userId(onClose[28]).ProfileFrameLayerOrder.BACK;
         obj[2] = _undefined.ACTION_SHEET;
         obj[3] = first1;
-        obj[3] = first1(channelId(onClose[25]), obj);
+        obj[3] = first1(channelId(onClose[27]), obj);
         tmp2 = first1(width, obj);
-        const tmp10 = channelId(onClose[25]);
+        const tmp10 = channelId(onClose[27]);
       }
       return tmp2;
     }, items7);
@@ -308,7 +317,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         }
         let skuId2 = skuId1;
       }
-      const tmp38Result = tmp38(skuId2);
+      const tmp43Result = tmp43(skuId2);
       obj = { user: null, displayProfile: null, pendingThemeColors: null };
       obj[0] = stateFromStores;
       obj[1] = tmp6ResultResult;
@@ -317,26 +326,26 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         pendingThemeColors = stateFromStoresObject.pendingThemeColors;
       }
       obj[2] = pendingThemeColors;
-      const tmp6Result3 = tmp6(tmp3[28]);
-      ({ theme, primaryColor, secondaryColor } = tmp6(tmp3[28])(obj));
-      const tmp6Result4Result = tmp6(tmp3[28])(obj);
-      const size = tmp6(tmp3[30])();
+      const tmp6Result4 = tmp6(tmp3[30]);
+      ({ theme, primaryColor, secondaryColor } = tmp6(tmp3[30])(obj));
+      const tmp6Result5Result = tmp6(tmp3[30])(obj);
+      const size = tmp6(tmp3[32])();
       width = size.width;
-      const diff = size.height - tmp2(tmp3[31]).NAV_BAR_HEIGHT_MULTILINE - top;
+      const diff = size.height - tmp2(tmp3[33]).NAV_BAR_HEIGHT_MULTILINE - top;
       const items8 = [isPreviewingChanges, tmp6Result2Result, width];
       const memo2 = obj7.useMemo(() => {
         if (isPreviewingChanges) {
           if (null != c22) {
             const _Math = Math;
             const bound = Math.min(width, closure_15);
-            return channelId(onClose[32])(tmp, bound).overflowTop;
+            return channelId(onClose[34])(tmp, bound).overflowTop;
           }
         }
         return 0;
       }, items8);
-      const tmp45 = tmp6(tmp3[29])(closure_15);
-      const tmp48 = tmp6(tmp3[33])();
-      const token = tmp2(tmp3[34]).useToken(tmp6(tmp3[35]).colors.INTERACTIVE_TEXT_HOVER, theme);
+      const tmp50 = tmp6(tmp3[31])(closure_15);
+      const tmp53 = tmp6(tmp3[35])();
+      const token = tmp2(tmp3[36]).useToken(tmp6(tmp3[37]).colors.INTERACTIVE_TEXT_HOVER, theme);
       obj1 = { userId: null, user: null, channelId: null, guildId: null, displayProfile: null, guildMember: null };
       obj1[0] = userId;
       obj1[1] = stateFromStores;
@@ -344,22 +353,22 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
       obj1[3] = guild_id;
       obj1[4] = tmp6ResultResult;
       obj1[5] = stateFromStores2;
-      const tmp50 = tmp6(tmp3[36])(obj1);
-      c24 = tmp50;
+      const tmp55 = tmp6(tmp3[38])(obj1);
+      c24 = tmp55;
       const items9 = [stateFromStores, channelId];
       const items10 = [stateFromStores, userId];
       const memo3 = obj7.useMemo(() => {
         let result = null != stateFromStores;
         if (result) {
-          result = userId(onClose[37]).shouldDisableUserPresenceInChannel(tmp, channelId);
-          const obj = userId(onClose[37]);
+          result = userId(onClose[39]).shouldDisableUserPresenceInChannel(tmp, channelId);
+          const obj = userId(onClose[39]);
         }
         return result;
       }, items9);
       const effect = obj7.useEffect(() => {
         if (null == stateFromStores) {
-          const user = userId(onClose[38]).getUser(userId);
-          const obj = userId(onClose[38]);
+          const user = userId(onClose[40]).getUser(userId);
+          const obj = userId(onClose[40]);
         }
       }, items10);
       const items11 = [stateFromStores, guild_id, channelId];
@@ -369,7 +378,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         if (!tmp) {
           let isNonUserBotResult = obj.isNonUserBot();
           if (isNonUserBotResult) {
-            isNonUserBotResult = !channelId(onClose[39])(obj.id);
+            isNonUserBotResult = !channelId(onClose[41])(obj.id);
           }
           tmp = isNonUserBotResult;
         }
@@ -378,12 +387,12 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
           obj[4] = guild_id;
           const avatarURL = obj.getAvatarURL(guild_id, 80);
           obj[5] = channelId;
-          channelId(onClose[40])(obj.id, avatarURL, obj);
+          channelId(onClose[42])(obj.id, avatarURL, obj);
           const tmp10 = channelId;
-          const tmp7 = channelId(onClose[40]);
+          const tmp7 = channelId(onClose[42]);
         }
       }, items11);
-      const items12 = [tmp50, tmp6ResultResult, guild_id, first, stateFromStores2];
+      const items12 = [tmp55, tmp6ResultResult, guild_id, first, stateFromStores2];
       const effect2 = obj7.useEffect(() => {
         let tmp = first;
         if (!first) {
@@ -399,9 +408,9 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
             tmp6 = null != prop;
           }
           if (tmp6) {
-            channelId(onClose[41]).track(analyticsLocations.OPEN_POPOUT, c24);
+            channelId(onClose[43]).track(analyticsLocations.OPEN_POPOUT, c24);
             callback(true);
-            const obj = channelId(onClose[41]);
+            const obj = channelId(onClose[43]);
           }
         }
       }, items12);
@@ -444,8 +453,8 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
             skuId = skuId2;
           }
           obj[2] = skuId;
-          channelId(onClose[41]).track(analyticsLocations.OPEN_MODAL, obj);
-          const tmp3Result = channelId(onClose[41]);
+          channelId(onClose[43]).track(analyticsLocations.OPEN_MODAL, obj);
+          const tmp3Result = channelId(onClose[43]);
         }
       }, items13);
       const items14 = [onClose];
@@ -465,12 +474,12 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
             }
           }
           if (key !== key) {
-            const obj2 = channelId(onClose[43]);
-            obj2.hideActionSheet(userId(onClose[44]).getUserProfileActionSheetKey(rootNavigationRef));
-            const obj3 = userId(onClose[44]);
+            const obj2 = channelId(onClose[45]);
+            obj2.hideActionSheet(userId(onClose[46]).getUserProfileActionSheetKey(rootNavigationRef));
+            const obj3 = userId(onClose[46]);
           }
         }
-        const rootNavigationRef = userId(onClose[42]).getRootNavigationRef();
+        const rootNavigationRef = userId(onClose[44]).getRootNavigationRef();
         if (null != rootNavigationRef) {
           if (rootNavigationRef.isReady()) {
             let currentRoute = rootNavigationRef.getCurrentRoute();
@@ -485,8 +494,8 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
           }
         }
       }, items15);
-      const tmp2Result6 = tmp2(tmp3[34]);
-      closure_25 = tmp2(tmp3[45]).useNavigation();
+      const tmp2Result7 = tmp2(tmp3[36]);
+      closure_25 = tmp2(tmp3[47]).useNavigation();
       if (null == stateFromStores) {
         obj2 = { value: null, children: null };
         obj2[0] = analyticsLocations;
@@ -511,13 +520,13 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         obj4 = { children: null };
         const obj5 = { style: null, Illustration: null, body: null };
         obj5[0] = { marginTop: 42 };
-        obj5[1] = tmp2(tmp3[48]).NoResults;
-        const intl2 = tmp2(tmp3[49]).intl;
-        obj5[2] = intl2.string(tmp2(tmp3[49]).t.eAn6z2);
-        obj4[0] = first1(tmp2(tmp3[47]).EmptyState, obj5);
-        obj3[5] = first1(tmp2(tmp3[46]).BottomSheet, obj4);
+        obj5[1] = tmp2(tmp3[50]).NoResults;
+        const intl2 = tmp2(tmp3[51]).intl;
+        obj5[2] = intl2.string(tmp2(tmp3[51]).t.eAn6z2);
+        obj4[0] = first1(tmp2(tmp3[49]).EmptyState, obj5);
+        obj3[5] = first1(tmp2(tmp3[48]).BottomSheet, obj4);
         obj2[1] = first1(tmp2(tmp3[21]).UserProfileAnalyticsProvider, obj3);
-        let tmp94Result3 = tmp90(tmp2(tmp3[17]).AnalyticsLocationProvider, obj2);
+        let tmp99Result3 = tmp95(tmp2(tmp3[17]).AnalyticsLocationProvider, obj2);
       } else {
         const obj6 = { theme: null, primaryColor: null, secondaryColor: null, children: null };
         obj6[0] = theme;
@@ -525,6 +534,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         obj6[2] = secondaryColor;
         obj7 = { value: null, children: null };
         obj7[0] = analyticsLocations;
+        tmp = closure_17;
         const obj8 = { value: null, openedAt: null, fetchStartedAt: null, fetchEndedAt: null, isLoaded: null, children: null };
         obj8[0] = createUserProfileAnalyticsContext;
         obj8[1] = openedAt;
@@ -549,17 +559,17 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         obj9[5] = tmp.noPadding;
         obj9[6] = memo1;
         obj9[7] = sharedValue1;
-        let tmp94Result = null != tmp6Result2Result;
-        if (tmp94Result) {
+        let tmp99Result = null != tmp6Result2Result;
+        if (tmp99Result) {
           const obj10 = { animatedPosition: null };
           obj10[0] = sharedValue;
-          tmp94Result = tmp94(createUserProfileAnalyticsContext, obj10);
+          tmp99Result = tmp99(createUserProfileAnalyticsContext, obj10);
         }
-        const items16 = [tmp94Result, , , ];
+        const items16 = [tmp99Result, , , ];
         const obj11 = { gradientHeight: null, bannerHeight: null };
         obj11[0] = diff;
-        obj11[1] = tmp45;
-        items16[1] = first1(tmp6(tmp3[51]), obj11);
+        obj11[1] = tmp50;
+        items16[1] = first1(tmp6(tmp3[53]), obj11);
         const obj12 = { scrollsToTop: false, style: null, contentContainerStyle: null, scrollEventsHandlersHook: null, ref: null, children: null };
         obj12[1] = tmp.container;
         let str2;
@@ -569,11 +579,11 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         const obj13 = { pointerEvents: null };
         obj13[0] = str2;
         obj12[2] = obj13;
-        let tmp66;
-        if (tmp2Result8.isIOS()) {
-          tmp66 = memo;
+        let tmp71;
+        if (tmp2Result9.isIOS()) {
+          tmp71 = memo;
         }
-        obj12[3] = tmp66;
+        obj12[3] = tmp71;
         obj12[4] = ref;
         const obj14 = { style: null, onLayout: null, children: null };
         obj14[0] = tmp.profileContainer;
@@ -590,45 +600,45 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         obj15[8] = ref;
         obj15[9] = isPreviewingChanges;
         obj15[10] = function navigateToShop(initialTab, arg1) {
-          let obj = userId(onClose[53]);
+          let obj = userId(onClose[55]);
           obj = { screen: first.COLLECTIBLES_SHOP, onClose: handleUserSettingsClose };
           return obj.openUserSettings(obj);
         };
         obj15[11] = function navigateToPremium(arg0) {
-          let obj = userId(onClose[53]);
+          let obj = userId(onClose[55]);
           obj = { screen: first.PREMIUM, onClose: handleUserSettingsClose };
           return obj.openUserSettings(obj);
         };
         obj15[12] = function showUserProfileActionSheetWithParams() {
           const merged = Object.assign(createUserProfileAnalyticsContext);
-          channelId(onClose[44])({ sourceAnalyticsLocations: analyticsLocations });
+          channelId(onClose[46])({ sourceAnalyticsLocations: analyticsLocations });
         };
         obj15[13] = userId.initialSection;
-        tmp2Result8 = tmp2(tmp3[52]);
-        let tmp68;
-        if (tmp2Result9.isIOS()) {
-          tmp68 = sharedValue2;
+        tmp2Result9 = tmp2(tmp3[54]);
+        let tmp73;
+        if (tmp2Result10.isIOS()) {
+          tmp73 = sharedValue2;
         }
-        obj15[14] = tmp68;
+        obj15[14] = tmp73;
         if (stateFromStores.isNonUserBot()) {
           const obj16 = {};
           let merged = Object.assign(obj15);
-          tmp94Result = tmp94(tmp6(tmp3[54]), obj16);
-          const tmp6Result4 = tmp6(tmp3[54]);
+          tmp99Result = tmp99(tmp6(tmp3[56]), obj16);
+          const tmp6Result5 = tmp6(tmp3[56]);
         } else if (stateFromStores.bot) {
           const obj17 = {};
           const merged1 = Object.assign(obj15);
-          tmp94Result = tmp94(tmp6(tmp3[55]), obj17);
-          const tmp6Result5 = tmp6(tmp3[55]);
+          tmp99Result = tmp99(tmp6(tmp3[57]), obj17);
+          const tmp6Result6 = tmp6(tmp3[57]);
         } else {
           const obj18 = {};
           const merged2 = Object.assign(obj15);
-          tmp94Result = tmp94(tmp6(tmp3[56]), obj18);
-          const tmp6Result6 = tmp6(tmp3[56]);
+          tmp99Result = tmp99(tmp6(tmp3[58]), obj18);
+          const tmp6Result7 = tmp6(tmp3[58]);
         }
-        const items17 = [tmp94Result, ];
-        let tmp94Result1 = null != tmp38Result;
-        if (tmp94Result1) {
+        const items17 = [tmp99Result, ];
+        let tmp99Result1 = null != tmp43Result;
+        if (tmp99Result1) {
           const obj19 = { style: null, pointerEvents: "none", children: null };
           const items18 = [tmp.profileEffect, , ];
           const obj20 = { height: null };
@@ -637,30 +647,30 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
           items18[2] = animatedStyle;
           obj19[0] = items18;
           const obj21 = { skuId: null, bannerAdjustment: 0 };
-          obj21[0] = tmp38Result.skuId;
-          obj19[2] = tmp94(tmp6(tmp3[57]), obj21);
-          tmp94Result1 = tmp94(tmp6(tmp3[13]).View, obj19);
+          obj21[0] = tmp43Result.skuId;
+          obj19[2] = tmp99(tmp6(tmp3[59]), obj21);
+          tmp99Result1 = tmp99(tmp6(tmp3[13]).View, obj19);
         }
         const obj22 = { children: null };
-        items17[1] = tmp94Result1;
+        items17[1] = tmp99Result1;
         obj14[2] = items17;
-        obj22[0] = closure_17(sharedValue1, obj14);
+        obj22[0] = tmp(sharedValue1, obj14);
         obj12[5] = first1(sharedValue1, obj22);
         items16[2] = first1(tmp2(tmp3[12]).BottomSheetScrollView, obj12);
-        let tmp94Result2 = null == tmp6Result2Result;
-        if (tmp94Result2) {
+        let tmp99Result2 = null == tmp6Result2Result;
+        if (tmp99Result2) {
           const obj23 = { variant: "floating", tabStyle: null, onPress: null };
           const obj24 = { backgroundColor: null };
           obj24[0] = token;
           obj23[1] = obj24;
           obj23[2] = bottomSheetClose;
-          tmp94Result2 = tmp94(tmp2(tmp3[58]).ActionSheetHeaderBar, obj23);
+          tmp99Result2 = tmp99(tmp2(tmp3[60]).ActionSheetHeaderBar, obj23);
         }
-        items16[3] = tmp94Result2;
+        items16[3] = tmp99Result2;
         obj9[8] = items16;
-        const items19 = [closure_17(tmp2(tmp3[46]).BottomSheet, obj9), , ];
-        let tmp95Result = null != tmp6Result2Result;
-        if (tmp95Result) {
+        const items19 = [tmp(tmp2(tmp3[48]).BottomSheet, obj9), , ];
+        let tmpResult = null != tmp6Result2Result;
+        if (tmpResult) {
           const obj25 = { animatedPosition: null, safeAreaTop: null, animatedIndex: null, children: null };
           obj25[0] = sharedValue;
           obj25[1] = top;
@@ -668,43 +678,43 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
           const obj26 = { frame: null, profileThemeType: null, frameOrder: null, containerWidth: null };
           obj26[0] = tmp6Result2Result;
           obj26[1] = UserProfileThemeTypes.ACTION_SHEET;
-          obj26[2] = tmp2(tmp3[26]).ProfileFrameLayerOrder.FRONT;
+          obj26[2] = tmp2(tmp3[28]).ProfileFrameLayerOrder.FRONT;
           obj26[3] = first1;
-          const items20 = [tmp94(tmp6(tmp3[25]), obj26), ];
+          const items20 = [tmp99(tmp6(tmp3[27]), obj26), ];
           const obj27 = { variant: "floating", tabStyle: null, onPress: null };
           const obj28 = { backgroundColor: null };
           obj28[0] = token;
           obj27[1] = obj28;
           obj27[2] = bottomSheetClose;
-          items20[1] = tmp94(tmp2(tmp3[58]).ActionSheetHeaderBar, obj27);
+          items20[1] = tmp99(tmp2(tmp3[60]).ActionSheetHeaderBar, obj27);
           obj25[3] = items20;
-          tmp95Result = tmp95(width, obj25);
-          const tmp6Result7 = tmp6(tmp3[25]);
+          tmpResult = tmp(width, obj25);
+          const tmp6Result8 = tmp6(tmp3[27]);
         }
-        items19[1] = tmp95Result;
+        items19[1] = tmpResult;
         if (!isPreviewingChanges) {
           items19[2] = isPreviewingChanges;
           obj8[5] = items19;
-          obj7[1] = tmp95(tmp2(tmp3[21]).UserProfileAnalyticsProvider, obj8);
-          obj6[3] = tmp94(tmp2(tmp3[17]).AnalyticsLocationProvider, obj7);
-          tmp94Result3 = tmp94(tmp2(tmp3[50]).ThemeContextProvider, obj6);
+          obj7[1] = tmp(tmp2(tmp3[21]).UserProfileAnalyticsProvider, obj8);
+          obj6[3] = tmp99(tmp2(tmp3[17]).AnalyticsLocationProvider, obj7);
+          tmp99Result3 = tmp99(tmp2(tmp3[52]).ThemeContextProvider, obj6);
         } else {
           const obj29 = { theme: null, primaryColor: null, secondaryColor: null, children: null };
-          obj29[0] = tmp48;
-          const intl = tmp2(tmp3[49]).intl;
-          if (setting === tmp2(tmp3[60]).ProfileVisibility.FRIENDS_ONLY) {
-            wSnI_0 = tmp2(tmp3[49]).t.mNZcD8;
+          obj29[0] = tmp53;
+          const intl = tmp2(tmp3[51]).intl;
+          if (setting === tmp2(tmp3[62]).ProfileVisibility.FRIENDS_ONLY) {
+            wSnI_0 = tmp2(tmp3[51]).t.mNZcD8;
           } else {
-            wSnI_0 = tmp2(tmp3[49]).t["wSnI/0"];
+            wSnI_0 = tmp2(tmp3[51]).t["wSnI/0"];
           }
           const obj30 = { text: null, isExpanded: true };
           obj30[0] = intl.string(wSnI_0);
-          obj29[3] = tmp94(tmp2(tmp3[59]).ActionSheetBackdropToast, obj30);
-          tmp94(tmp2(tmp3[50]).ThemeContextProvider, obj29);
+          obj29[3] = tmp99(tmp2(tmp3[61]).ActionSheetBackdropToast, obj30);
+          tmp99(tmp2(tmp3[52]).ThemeContextProvider, obj29);
         }
-        tmp2Result9 = tmp2(tmp3[52]);
+        tmp2Result10 = tmp2(tmp3[54]);
       }
-      return tmp94Result3;
+      return tmp99Result3;
     }
     if (tmp6ResultResult != null) {
       const profileEffect = tmp6ResultResult.profileEffect;
@@ -712,7 +722,7 @@ const memoResult = importAllResult.memo(function UserProfileActionSheet(userId) 
         skuId2 = profileEffect.skuId;
       }
     }
-    const tmp6Result2 = tmp6(tmp3[24]);
+    const tmp6Result3 = tmp6(tmp3[26]);
   }
   if (tmp6ResultResult != null) {
     const profileFrame = tmp6ResultResult.profileFrame;

@@ -1,9 +1,9 @@
-// Module ID: 5737
-// Function ID: 5738
+// Module ID: 5742
+// Function ID: 5743
 // Name: length
 // Dependencies: [2]
 
-// Module 5737 (length)
+// Module 5742 (length)
 class Lru {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);

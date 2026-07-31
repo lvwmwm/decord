@@ -1,10 +1,10 @@
-// Module ID: 16616
-// Function ID: 16617
+// Module ID: 16645
+// Function ID: 16646
 // Name: TierTemplatesRenderer
-// Dependencies: [32, 19, 17, 14247, 16563, 676, 21, 4189, 712, 4185, 16617, 647, 14225, 14226, 11373, 16623, 1581, 1480, 698, 4384, 16573, 9098, 1236, 5143, 8423, 503, 16558, 1297, 2]
+// Dependencies: [32, 19, 17, 14270, 16592, 676, 21, 4193, 712, 4189, 16646, 647, 14248, 14249, 11391, 16652, 1581, 1480, 698, 4388, 16602, 9111, 1236, 5147, 8436, 503, 16587, 1297, 2]
 // Exports: default
 
-// Module 16616 (TierTemplatesRenderer)
+// Module 16645 (TierTemplatesRenderer)
 import _slicedToArray from "_slicedToArray";
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata";
 import get_ActivityIndicator from "useNavigation";
@@ -39,7 +39,7 @@ function TierTemplatesRenderer(groupListingId) {
     obj = { variant: "text-xs/normal", color: "text-feedback-critical", children: null };
     const items = ["Error: ", error.message];
     obj[2] = items;
-    tmp3 = callback2(guildId(4185).Text, obj);
+    tmp3 = callback2(guildId(4189).Text, obj);
   } else {
     tmp3 = null;
     if (null != templates) {
@@ -58,7 +58,7 @@ function TierTemplatesRenderer(groupListingId) {
           const style = { height: "100%", width: closure_16 };
           return callback(closure_8, { style });
         };
-        obj[6] = guildId(16617).CARD_WIDTH + c16;
+        obj[6] = guildId(16646).CARD_WIDTH + c16;
         obj[7] = function renderItem(item) {
           return outer1_14(groupListingId(outer1_3[10]), { template: item.item, priceTiers: tiers, guildId, groupListingId, editGroupId: guildId });
         };
@@ -218,5 +218,5 @@ export default function GuildSettingsRoleSubscriptionTierTemplateSelection(guild
   obj = {};
   const merged = Object.assign(guildId);
   obj[1] = callback(GuildSettingsRoleSubscriptionTierTemplateSelectionComponent, obj);
-  return callback(require(14226) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, obj);
+  return callback(require(14249) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, obj);
 };

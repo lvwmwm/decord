@@ -1,10 +1,10 @@
-// Module ID: 8287
-// Function ID: 8288
+// Module ID: 8294
+// Function ID: 8295
 // Name: BottomSheetTextInput
-// Dependencies: [19, 21, 6742, 6740, 8288, 2]
+// Dependencies: [19, 21, 6748, 6746, 8295, 2]
 // Exports: BottomSheetTextInput
 
-// Module 8287 (BottomSheetTextInput)
+// Module 8294 (BottomSheetTextInput)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -21,13 +21,13 @@ export const BottomSheetTextInput = function BottomSheetTextInput(ref) {
   ref = undefined;
   const merged = Object.assign(ref, Object.create(null));
   ref = React.useRef(null);
-  ({ onFocus: onFocus2, onBlur: onBlur2 } = ref(6742)({ onFocus, onBlur }));
-  let obj = ref(6740);
+  ({ onFocus: onFocus2, onBlur: onBlur2 } = ref(6748)({ onFocus, onBlur }));
+  let obj = ref(6746);
   const keyboardBlurring = obj.useKeyboardBlurring(ref);
   obj = {
     ref(current) {
       ref.current = current;
-      if (typeof ref === "find") {
+      if (typeof ref === "fileFinishedImporting") {
         tmp(current);
       } else if (null != tmp) {
         tmp.current = current;
@@ -36,12 +36,12 @@ export const BottomSheetTextInput = function BottomSheetTextInput(ref) {
     onFocus: onFocus2,
     onBlur: onBlur2
   };
-  const tmp3 = ref(6742)({ onFocus, onBlur });
+  const tmp3 = ref(6748)({ onFocus, onBlur });
   const merged1 = Object.assign(merged);
-  return jsx(ref(8288), {
+  return jsx(ref(8295), {
     ref(current) {
       ref.current = current;
-      if (typeof ref === "find") {
+      if (typeof ref === "fileFinishedImporting") {
         tmp(current);
       } else if (null != tmp) {
         tmp.current = current;
