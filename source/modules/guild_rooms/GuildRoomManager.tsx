@@ -1,9 +1,9 @@
-// Module ID: 16214
-// Function ID: 16215
+// Module ID: 16278
+// Function ID: 16279
 // Name: isExperimentEnabled
-// Dependencies: [1218, 1372, 16215, 5138, 16216, 16217, 2]
+// Dependencies: [1218, 1372, 16279, 5200, 16280, 16281, 2]
 
-// Module 16214 (isExperimentEnabled)
+// Module 16278 (isExperimentEnabled)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleSelectedChannelStoreChange from "handleSelectedChannelStoreChange";
@@ -29,7 +29,7 @@ class GuildRoomManager extends tmp2 {
 }
 const prototype = GuildRoomManager.prototype;
 prototype["isExperimentEnabled"] = function isExperimentEnabled(guildId, VOICE_STATE_UPDATE) {
-  let obj = importDefault(16216);
+  let obj = importDefault(16280);
   obj = { guildId, location: VOICE_STATE_UPDATE };
   return obj.getCurrentConfig(obj).enabled;
 };
@@ -62,7 +62,7 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates(arg0) {
           if (isExperimentEnabledResult) {
             let tmp16 = require;
             let tmp17 = dependencyMap;
-            let obj3 = require(16217) /* _guildRoomConnect */;
+            let obj3 = require(16281) /* _guildRoomConnect */;
             let tmp18 = guildId;
             let tmp19 = channelId;
             let guildRoomDisconnectResult = obj3.guildRoomDisconnect(guildId, channelId);
@@ -77,7 +77,7 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates(arg0) {
               if (self.isExperimentEnabled(guildId, "VOICE_STATE_UPDATE")) {
                 let tmp26 = require;
                 let tmp27 = dependencyMap;
-                let obj4 = require(16217) /* _guildRoomConnect */;
+                let obj4 = require(16281) /* _guildRoomConnect */;
                 let tmp28 = guildId;
                 let tmp29 = channelId;
                 let tmp30 = pendingPosition;
@@ -100,7 +100,7 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates(arg0) {
       if (tmp4) {
         let tmp7 = require;
         let tmp8 = dependencyMap;
-        let obj2 = require(16217) /* _guildRoomConnect */;
+        let obj2 = require(16281) /* _guildRoomConnect */;
         let tmp9 = userId;
         let tmp10 = oldChannelId;
         let result = obj2.guildRoomLocalDisconnect(tmp2, oldChannelId);
@@ -121,8 +121,8 @@ prototype["handleEmbeddedActivityLaunchSuccess"] = function handleEmbeddedActivi
       isExperimentEnabledResult = handleSelectedChannelStoreChange.isVisible(channelId.channelId);
     }
     if (isExperimentEnabledResult) {
-      const result = require(16217) /* _guildRoomConnect */.guildRoomToggleLayout(channelId.channelId, true);
-      const obj = require(16217) /* _guildRoomConnect */;
+      const result = require(16281) /* _guildRoomConnect */.guildRoomToggleLayout(channelId.channelId, true);
+      const obj = require(16281) /* _guildRoomConnect */;
     }
   }
 };

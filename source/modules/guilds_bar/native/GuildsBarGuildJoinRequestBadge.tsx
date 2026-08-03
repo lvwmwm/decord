@@ -1,10 +1,10 @@
-// Module ID: 14974
-// Function ID: 14975
+// Module ID: 15263
+// Function ID: 15264
 // Name: GuildsBarGuildJoinRequestBadge
-// Dependencies: [19, 17, 21, 4193, 712, 5034, 4013, 14975, 14976, 14977, 11456, 5145, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 5096, 4075, 15264, 15265, 15266, 11566, 5207, 2]
 // Exports: default
 
-// Module 14974 (GuildsBarGuildJoinRequestBadge)
+// Module 15263 (GuildsBarGuildJoinRequestBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -22,16 +22,16 @@ const result = require("jsxProd").fileFinishedImporting("modules/guilds_bar/nati
 export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {
   joinRequestState = joinRequestState.joinRequestState;
   const tmp = createCacheKey();
-  if (require(4013) /* MAX_RESULTS_PER_PAGE */.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
-    let tmp4 = importDefault(14975);
-  } else if (tmp2(4013).GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
-    tmp4 = importDefault(14976);
-  } else if (tmp2(4013).GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
-    tmp4 = importDefault(14977);
+  if (require(4075) /* MAX_RESULTS_PER_PAGE */.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
+    let tmp4 = importDefault(15264);
+  } else if (tmp2(4075).GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
+    tmp4 = importDefault(15265);
+  } else if (tmp2(4075).GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
+    tmp4 = importDefault(15266);
   } else {
     tmp4 = null;
-    if (tmp2(4013).GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
-      tmp4 = importDefault(11456);
+    if (tmp2(4075).GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
+      tmp4 = importDefault(11566);
     }
   }
   let tmp9 = null;
@@ -42,7 +42,7 @@ export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {
     obj = { source: null, style: null };
     obj[0] = tmp4;
     obj[1] = tmp.badgeImage;
-    obj[2] = jsx(importDefault(5145), { source: null, style: null });
+    obj[2] = jsx(importDefault(5207), { source: null, style: null });
     tmp9 = <View source={null} style={null} />;
   }
   return tmp9;

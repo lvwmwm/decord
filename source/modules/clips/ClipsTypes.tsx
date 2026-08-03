@@ -1,10 +1,10 @@
-// Module ID: 4250
-// Function ID: 4251
+// Module ID: 4312
+// Function ID: 4313
 // Name: ClipSignalTypes
 // Dependencies: [2]
 // Exports: getClipCropAspectRatio, getClipCropBounds
 
-// Module 4250 (ClipSignalTypes)
+// Module 4312 (ClipSignalTypes)
 let obj = { ORIGINAL: "original", PORTRAIT_9_16: "9:16", LANDSCAPE_16_9: "16:9" };
 const result = require("set").fileFinishedImporting("modules/clips/ClipsTypes.tsx");
 

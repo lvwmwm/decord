@@ -1,10 +1,10 @@
-// Module ID: 4034
-// Function ID: 4035
+// Module ID: 4096
+// Function ID: 4097
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: getOverlayChatConfig, getOverlayDefaultKeybind, getOverlayStreamerModeConfig, trackOverlayInitializedExperiments, useOverlayChat, useOverlayStreamerMode
 
-// Module 4034 (apexExperiment)
+// Module 4096 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";

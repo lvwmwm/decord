@@ -1,10 +1,10 @@
-// Module ID: 9337
-// Function ID: 9338
+// Module ID: 8308
+// Function ID: 8309
 // Name: PremiumFeaturesLogo
-// Dependencies: [19, 1876, 21, 9338, 6235, 5145, 3839, 2]
+// Dependencies: [19, 1876, 21, 8309, 6798, 5207, 3901, 2]
 // Exports: default
 
-// Module 9337 (PremiumFeaturesLogo)
+// Module 8308 (PremiumFeaturesLogo)
 import "noop";
 import { PremiumTypes } from "GuildFeatures";
 import { jsx } from "jsxProd";
@@ -15,15 +15,15 @@ const result = require("jsxProd").fileFinishedImporting("modules/user_settings/p
 export default function PremiumFeaturesLogo(premiumType) {
   premiumType = premiumType.premiumType;
   if (premiumType === PremiumTypes.TIER_0) {
-    let tmp3 = importDefault(9338);
+    let tmp3 = importDefault(8309);
     let tmp = importDefault;
   } else {
     tmp = importDefault;
-    tmp3 = importDefault(6235);
+    tmp3 = importDefault(6798);
   }
   const obj = { accessible: true, accessibilityLabel: null, accessibilityRole: "header", style: null, resizeMode: "contain", source: null };
-  const tmpResult = tmp(5145);
-  obj[1] = require(3839) /* getPremiumPlanItem */.getPremiumTypeDisplayName(premiumType);
+  const tmpResult = tmp(5207);
+  obj[1] = require(3901) /* getPremiumPlanItem */.getPremiumTypeDisplayName(premiumType);
   obj[3] = premiumType.style;
   obj[5] = tmp3;
   return <tmpResult accessible accessibilityLabel={null} accessibilityRole="header" style={null} resizeMode="contain" source={null} />;

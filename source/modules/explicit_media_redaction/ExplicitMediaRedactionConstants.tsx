@@ -1,9 +1,9 @@
-// Module ID: 5868
-// Function ID: 5869
+// Module ID: 6957
+// Function ID: 6958
 // Name: USER_SETTING_ACTION_SHEET_KEY
 // Dependencies: [693, 2]
 
-// Module 5868 (USER_SETTING_ACTION_SHEET_KEY)
+// Module 6957 (USER_SETTING_ACTION_SHEET_KEY)
 import set from "set";
 
 const items = [require("MessageEmbedTypes").MessageEmbedTypes.IMAGE, require("MessageEmbedTypes").MessageEmbedTypes.VIDEO, require("MessageEmbedTypes").MessageEmbedTypes.GIFV];

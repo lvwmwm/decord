@@ -1,10 +1,10 @@
-// Module ID: 11978
-// Function ID: 11979
+// Module ID: 12074
+// Function ID: 12075
 // Name: experiment
-// Dependencies: [4105, 2]
+// Dependencies: [4167, 2]
 // Exports: isIarUserReportingEnabled, useIsIarUserReportingEnabled
 
-// Module 11978 (experiment)
+// Module 12074 (experiment)
 import createExperiment from "createExperiment";
 
 const items = [{ id: 1, label: "Enabled", config: { enabled: true } }];

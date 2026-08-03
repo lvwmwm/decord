@@ -1,10 +1,10 @@
-// Module ID: 11105
-// Function ID: 11106
+// Module ID: 11221
+// Function ID: 11222
 // Name: AppealIngestionPolicySummary
-// Dependencies: [19, 17, 21, 4193, 712, 6758, 4037, 4189, 1236, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 7715, 4099, 4251, 1236, 2]
 // Exports: default
 
-// Module 11105 (AppealIngestionPolicySummary)
+// Module 11221 (AppealIngestionPolicySummary)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,21 +25,21 @@ const result = require("jsxProd").fileFinishedImporting("modules/safety_hub/nati
 export default function AppealIngestionPolicySummary(classification) {
   classification = classification.classification;
   const tmp = createCacheKey();
-  let obj = require(6758) /* parseMessageEmbedForProps */;
+  let obj = require(7715) /* parseMessageEmbedForProps */;
   let description;
   if (classification != null) {
     description = classification.description;
   }
   const capitalizeTextResult = obj.capitalizeText(description);
   obj = { style: tmp.policy, children: null };
-  const tmp2Result = require(4037) /* hexToRgba */;
+  const tmp2Result = require(4099) /* hexToRgba */;
   obj = { style: tmp.sectionTitle, variant: "text-sm/bold", children: null };
   const intl = tmp2(1236).intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.xsdcxh);
-  const items = [callback(require(4189) /* Text */.Text, obj), ];
-  const hexWithOpacityResult = require(4037) /* hexToRgba */.hexWithOpacity(tmp.borderColor.color, 0.08);
+  const items = [callback(require(4251) /* Text */.Text, obj), ];
+  const hexWithOpacityResult = require(4099) /* hexToRgba */.hexWithOpacity(tmp.borderColor.color, 0.08);
   const items1 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
-  items[1] = callback(View, { style: items1, children: callback(require(4189) /* Text */.Text, { variant: "text-md/semibold", children: capitalizeTextResult }) });
+  items[1] = callback(View, { style: items1, children: callback(require(4251) /* Text */.Text, { variant: "text-md/semibold", children: capitalizeTextResult }) });
   obj[1] = items;
   return callback2(View, obj);
 };

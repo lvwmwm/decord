@@ -1,8 +1,8 @@
-// Module ID: 11377
-// Function ID: 11378
-// Dependencies: [19, 1372, 3830, 1874, 676, 21, 5519, 589, 12, 1351, 10922, 1236, 8363, 8829, 2]
+// Module ID: 11487
+// Function ID: 11488
+// Dependencies: [19, 1372, 3892, 1874, 676, 21, 5581, 589, 12, 1351, 11044, 1236, 8668, 9006, 2]
 
-// Module 11377
+// Module 11487
 import importAllResult from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import upsertRelationship from "upsertRelationship";

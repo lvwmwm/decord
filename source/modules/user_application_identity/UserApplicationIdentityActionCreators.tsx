@@ -1,9 +1,9 @@
-// Module ID: 12178
-// Function ID: 12179
+// Module ID: 12274
+// Function ID: 12275
 // Name: fetchStore
-// Dependencies: [5, 12177, 676, 709, 530, 1208, 589, 2]
+// Dependencies: [5, 12273, 676, 709, 530, 1208, 589, 2]
 
-// Module 12178 (fetchStore)
+// Module 12274 (fetchStore)
 import module_1208 from "module_1208";
 import importDefaultResult from "map";
 import ME from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 4036
-// Function ID: 4037
+// Module ID: 4098
+// Function ID: 4099
 // Name: getThemeForColor
-// Dependencies: [4006, 1305, 505, 711, 2]
+// Dependencies: [4068, 1305, 505, 711, 2]
 // Exports: areThemesEqualForGradientThemes, getBaseTheme, getLinearGradientForBackgroundGradient, getThemeForColor, getThemeName
 
-// Module 4036 (getThemeForColor)
+// Module 4098 (getThemeForColor)
 import items1 from "items1";
 import SystemThemeState from "SystemThemeState";
 import { ThemeTypes } from "sum";

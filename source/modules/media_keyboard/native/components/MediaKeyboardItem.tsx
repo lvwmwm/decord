@@ -1,17 +1,17 @@
-// Module ID: 9701
-// Function ID: 9702
+// Module ID: 9846
+// Function ID: 9847
 // Name: NewCaption
-// Dependencies: [19, 17, 4529, 9702, 21, 4054, 4193, 712, 4037, 1297, 9642, 4189, 589, 4733, 9703, 1236, 4765, 4735, 8107, 9704, 4194, 1474, 9705, 4705, 9691, 2]
+// Dependencies: [19, 17, 4591, 9847, 21, 4116, 4255, 712, 4099, 1297, 9789, 4251, 589, 4795, 9848, 1236, 4827, 4797, 8438, 9849, 4256, 1474, 9850, 4767, 9836, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 9701 (NewCaption)
+// Module 9846 (NewCaption)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "openImagePickerUnhandled";
 import map from "map";
 import frozen from "frozen";
 import jsxProd from "useWindowDimensions";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4054";
+import importDefaultResult from "module_4116";
 import hexToRgba from "hexToRgba";
 import hexToRgba from "hexToRgba";
 import hexToRgba from "hexToRgba";
@@ -33,9 +33,9 @@ function NewCaption(arg0) {
   let obj = { style: items, children: null };
   items = [tmp.labelContainer, style];
   obj = { source: null, style: null };
-  obj[0] = importDefault(9642);
+  obj[0] = importDefault(9789);
   obj[1] = tmp.icon;
-  const items1 = [callback(require(1297) /* Button */.Icon, obj), callback(require(4189) /* Text */.Text, { style: textStyle, color: "text-overlay-light", variant: "text-xs/bold", children: label })];
+  const items1 = [callback(require(1297) /* Button */.Icon, obj), callback(require(4251) /* Text */.Text, { style: textStyle, color: "text-overlay-light", variant: "text-xs/bold", children: label })];
   obj[1] = items1;
   return callback2(closure_4, obj);
 }
@@ -385,7 +385,7 @@ let c3 = importAllResult;
 ({ View: c4, Pressable } = get_ActivityIndicator);
 ({ ALAssetsType: error, DeviceMediaType: metroImportAll } = frozen);
 ({ jsx: c9, jsxs: c10 } = jsxProd);
-let closure_11 = require("module_4054").createAnimatedComponent(Pressable);
+let closure_11 = require("module_4116").createAnimatedComponent(Pressable);
 let obj = { container: { flexDirection: "row", paddingHorizontal: 12, alignItems: "center" }, image: null, imageContainer: null, labelContainer: null, mediaKeyboardItemLabelContainer: null, icon: null, checkIcon: null, checkIconContainer: null, selectedOverlay: null, specialButton: null, disabled: null, imageDisabled: null };
 obj = { backgroundColor: require("Themes").colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
 obj[1] = obj;
@@ -438,13 +438,13 @@ const memoResult = importAllResult.memo((arg0) => {
   ({ handleCameraPress, handleAttachPress, handleViewAllPhotosPress } = arg0);
   closure_11 = (importDefault(1474)().width - (24 + 4 * (numPerRow - 1))) / numPerRow;
   obj = { camera: null, allphotos: null, attach: null };
-  obj = { text: require(1236) /* getSystemLocale */.t.uje3P9, onPress: handleCameraPress, Icon: require(9705) /* CameraIcon */.CameraIcon };
+  obj = { text: require(1236) /* getSystemLocale */.t.uje3P9, onPress: handleCameraPress, Icon: require(9850) /* CameraIcon */.CameraIcon };
   obj[0] = obj;
-  obj = { text: require(1236) /* getSystemLocale */.t.Zmm6dN, onPress: handleViewAllPhotosPress, Icon: require(4705) /* ImageIcon */.ImageIcon };
+  obj = { text: require(1236) /* getSystemLocale */.t.Zmm6dN, onPress: handleViewAllPhotosPress, Icon: require(4767) /* ImageIcon */.ImageIcon };
   obj[1] = obj;
   const tmp = obj();
-  obj[2] = { text: require(1236) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9691) /* AttachmentIcon */.AttachmentIcon };
-  let obj1 = { text: require(1236) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9691) /* AttachmentIcon */.AttachmentIcon };
+  obj[2] = { text: require(1236) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9836) /* AttachmentIcon */.AttachmentIcon };
+  let obj1 = { text: require(1236) /* getSystemLocale */.t["8Hvr3+"], onPress: handleAttachPress, Icon: require(9836) /* AttachmentIcon */.AttachmentIcon };
   return callback(closure_4, {
     style: tmp.container,
     children: items.map((type) => {

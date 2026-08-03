@@ -1,9 +1,9 @@
-// Module ID: 7774
-// Function ID: 7775
+// Module ID: 7893
+// Function ID: 7894
 // Name: saferParse
-// Dependencies: [7775, 3892, 2]
+// Dependencies: [7894, 3954, 2]
 
-// Module 7774 (saferParse)
+// Module 7893 (saferParse)
 function saferParse(arg0, arg1, inline) {
   let ast;
   let hasBailedAst;
@@ -19,10 +19,10 @@ function saferParse(arg0, arg1, inline) {
   `;
     }
     const tmp8 = arg0(text, inline);
-    const flattenAstResult = require(7775) /* collectAst */.flattenAst(inline, tmp8);
-    const obj = require(7775) /* collectAst */;
-    const obj2 = require(7775) /* collectAst */;
-    ({ hasBailedAst, ast } = require(7775) /* collectAst */.constrainAst(flattenAstResult));
+    const flattenAstResult = require(7894) /* collectAst */.flattenAst(inline, tmp8);
+    const obj = require(7894) /* collectAst */;
+    const obj2 = require(7894) /* collectAst */;
+    ({ hasBailedAst, ast } = require(7894) /* collectAst */.constrainAst(flattenAstResult));
     if (tmp6) {
       ast = tmp6(ast, inline.inline, hasBailedAst);
     }
@@ -40,7 +40,7 @@ const result = require("set").fileFinishedImporting("../discord_common/js/packag
 
 export default {
   astParserFor(importDefaultResultResult) {
-    let closure_0 = importDefault(3892).parserFor(importDefaultResultResult);
+    let closure_0 = importDefault(3954).parserFor(importDefaultResultResult);
     return (arg0, inline) => {
       let str = arg0;
       if (arg0 === undefined) {
@@ -60,10 +60,10 @@ export default {
     };
   },
   reactParserFor(defaultRules) {
-    let closure_0 = importDefault(3892).parserFor(defaultRules);
-    let obj = importDefault(3892);
-    const obj2 = importDefault(3892);
-    importDefault = obj2.reactFor(importDefault(3892).ruleOutput(defaultRules, "react"));
+    let closure_0 = importDefault(3954).parserFor(defaultRules);
+    let obj = importDefault(3954);
+    const obj2 = importDefault(3954);
+    importDefault = obj2.reactFor(importDefault(3954).ruleOutput(defaultRules, "react"));
     return () => {
       let str = arg0;
       if (arg0 === undefined) {

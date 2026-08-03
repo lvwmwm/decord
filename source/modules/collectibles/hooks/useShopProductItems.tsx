@@ -1,10 +1,10 @@
-// Module ID: 8049
-// Function ID: 8050
+// Module ID: 8382
+// Function ID: 8383
 // Name: firstAvatarDecoration
 // Dependencies: [19, 1901, 1236, 2]
 // Exports: getBundleItemNames, useShopProductItems
 
-// Module 8049 (firstAvatarDecoration)
+// Module 8382 (firstAvatarDecoration)
 import noop from "noop";
 
 const require = arg1;
@@ -68,7 +68,7 @@ export const useShopProductItems = function useShopProductItems(product) {
   let closure_0 = product;
   const items = [product];
   return React.useMemo(() => {
-    if (typeof outer1_3 !== "fileFinishedImporting") {
+    if (typeof outer1_3 !== "error") {
       HermesBuiltin.throwTypeError();
     }
     let obj = Object.create(outer1_3.prototype);

@@ -1,9 +1,9 @@
-// Module ID: 6170
-// Function ID: 6171
+// Module ID: 7222
+// Function ID: 7223
 // Name: getTransformedUser
-// Dependencies: [1376, 1882, 1372, 1942, 3830, 1874, 676, 4032, 1384, 514, 5138, 6171, 1351, 1208, 12, 11, 2]
+// Dependencies: [1376, 1882, 1372, 1942, 3892, 1874, 676, 4094, 1384, 514, 5200, 7223, 1351, 1208, 12, 11, 2]
 
-// Module 6170 (getTransformedUser)
+// Module 7222 (getTransformedUser)
 import { isPrivate } from "createChannelRecord";
 import createdAt from "createdAt";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -922,7 +922,7 @@ prototype2["rebootWebworker"] = function rebootWebworker() {
     _worker.terminate();
     self._worker = null;
   }
-  self._worker = require(6171) /* UserSearchWorkerManager */;
+  self._worker = require(7223) /* UserSearchWorkerManager */;
 };
 prototype2["updateUsers"] = function updateUsers(arr) {
   const _worker = this._worker;
@@ -998,7 +998,7 @@ prototype2["getUserSearchContext"] = function getUserSearchContext(handleUserSea
     const error = new Error("SearchContextManager: No webworker initialized");
     throw error;
   } else {
-    if (typeof UserSearchContext !== "fileFinishedImporting") {
+    if (typeof UserSearchContext !== "error") {
       HermesBuiltin.throwTypeError();
     }
     if (num === undefined) {

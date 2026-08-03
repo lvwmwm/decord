@@ -1,10 +1,10 @@
-// Module ID: 4774
-// Function ID: 4775
+// Module ID: 4836
+// Function ID: 4837
 // Name: _shouldConvertToWebP
-// Dependencies: [5, 3, 4775, 1217, 2]
+// Dependencies: [5, 3, 4837, 1217, 2]
 // Exports: maybeConvertToWebP
 
-// Module 4774 (_shouldConvertToWebP)
+// Module 4836 (_shouldConvertToWebP)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -66,7 +66,7 @@ function _shouldConvertToWebP2() {
                 const items = ["image/png"];
                 if (items.includes(obj18.type)) {
                   c4 = 1;
-                  if (typeof obj18.arrayBuffer === "fileFinishedImporting") {
+                  if (typeof obj18.arrayBuffer === "error") {
                     c5 = 4;
                     c6 = 1;
                     const obj2 = { value: null, done: false };

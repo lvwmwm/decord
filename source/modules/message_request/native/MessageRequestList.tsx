@@ -1,10 +1,10 @@
-// Module ID: 15724
-// Function ID: 15725
+// Module ID: 15789
+// Function ID: 15790
 // Name: PendingMessageRequestRow
-// Dependencies: [19, 17, 676, 21, 4193, 712, 1236, 3894, 9181, 4201, 4399, 11547, 698, 4721, 15725, 1297, 10370, 13973, 7639, 1581, 15730, 15732, 11545, 15735, 500, 4189, 2]
+// Dependencies: [19, 17, 676, 21, 4255, 712, 1236, 3956, 9354, 4263, 4461, 11654, 698, 4783, 15790, 1297, 10509, 14040, 7765, 1581, 15795, 15797, 11652, 15800, 500, 4251, 2]
 // Exports: default
 
-// Module 15724 (PendingMessageRequestRow)
+// Module 15789 (PendingMessageRequestRow)
 import useSafeAreaInsets from "useSafeAreaInsets";
 import get_ActivityIndicator from "registerAsset";
 import { AnalyticEvents } from "ME";

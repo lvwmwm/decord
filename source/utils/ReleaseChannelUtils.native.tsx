@@ -1,9 +1,9 @@
-// Module ID: 5871
-// Function ID: 5872
+// Module ID: 6959
+// Function ID: 6960
 // Name: isStable
 // Dependencies: [1578, 500, 2]
 
-// Module 5871 (isStable)
+// Module 6959 (isStable)
 import set from "set";
 import set from "set";
 

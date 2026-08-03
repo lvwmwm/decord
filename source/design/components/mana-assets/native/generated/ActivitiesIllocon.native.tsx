@@ -1,10 +1,10 @@
-// Module ID: 6833
-// Function ID: 6834
+// Module ID: 5969
+// Function ID: 5970
 // Name: ActivitiesIllocon
-// Dependencies: [21, 5145, 6834, 2]
+// Dependencies: [21, 5207, 5970, 2]
 // Exports: ActivitiesIllocon
 
-// Module 6833 (ActivitiesIllocon)
+// Module 5969 (ActivitiesIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ActivitiesIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const ActivitiesIllocon = function ActivitiesIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6834);
+  obj[0] = importDefault(5970);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5145), { uri: null });
+  return jsx(importDefault(5207), { uri: null });
 };

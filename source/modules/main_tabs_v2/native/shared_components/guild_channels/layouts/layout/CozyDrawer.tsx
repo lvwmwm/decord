@@ -1,9 +1,9 @@
-// Module ID: 10300
-// Function ID: 10301
+// Module ID: 10439
+// Function ID: 10440
 // Name: importDefaultResult1
-// Dependencies: [10301, 10302, 712, 1297, 5570, 5529, 2]
+// Dependencies: [10440, 10441, 712, 1297, 5632, 5591, 2]
 
-// Module 10300 (importDefaultResult1)
+// Module 10439 (importDefaultResult1)
 import importDefaultResult from "merge";
 import importDefaultResult1 from "merge";
 

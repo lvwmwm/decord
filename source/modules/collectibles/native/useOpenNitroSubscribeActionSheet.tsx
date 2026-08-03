@@ -1,10 +1,10 @@
-// Module ID: 8769
-// Function ID: 8770
+// Module ID: 8946
+// Function ID: 8947
 // Name: useOpenNitroSubscribeActionSheet
-// Dependencies: [19, 676, 1876, 5519, 6219, 2]
+// Dependencies: [19, 676, 1876, 5581, 6783, 2]
 // Exports: default
 
-// Module 8769 (useOpenNitroSubscribeActionSheet)
+// Module 8946 (useOpenNitroSubscribeActionSheet)
 import noop from "noop";
 import ME from "ME";
 import { PremiumTypes } from "GuildFeatures";

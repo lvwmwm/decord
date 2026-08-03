@@ -1,10 +1,10 @@
-// Module ID: 9598
-// Function ID: 9599
+// Module ID: 9745
+// Function ID: 9746
 // Name: RoleLabel
-// Dependencies: [19, 17, 4185, 21, 4193, 589, 1297, 7639, 2]
+// Dependencies: [19, 17, 4247, 21, 4255, 589, 1297, 7765, 2]
 // Exports: RoleLabel
 
-// Module 9598 (RoleLabel)
+// Module 9745 (RoleLabel)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -47,7 +47,7 @@ export const RoleLabel = function RoleLabel(color) {
     obj1[2] = tmp.roleDot;
     tmp10 = callback(tmp2(1297).RoleDot, obj1);
   }
-  const items1 = [tmp10, callback(require(7639) /* Form */.FormLabel, { style: {}, text: name })];
+  const items1 = [tmp10, callback(require(7765) /* Form */.FormLabel, { style: {}, text: name })];
   obj[1] = items1;
   return closure_5(View, obj);
 };

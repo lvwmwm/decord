@@ -1,10 +1,10 @@
-// Module ID: 10297
-// Function ID: 10298
+// Module ID: 10436
+// Function ID: 10437
 // Name: defaultReactFn
-// Dependencies: [19, 10298, 21, 4188, 10004, 10299, 5568, 4624, 4626, 10304, 5145, 501, 10305, 10306, 1297, 4057, 9691, 4673, 10307, 2]
+// Dependencies: [19, 10437, 21, 4250, 10147, 10438, 5630, 4686, 4688, 10443, 5207, 501, 10444, 10445, 1297, 4119, 9836, 4735, 10446, 2]
 // Exports: default
 
-// Module 10297 (defaultReactFn)
+// Module 10436 (defaultReactFn)
 import "set";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import jsxProd from "jsxProd";
@@ -16,8 +16,8 @@ function defaultReactFn(content, output, state) {
   if (typeof content.content === "y") {
     content = content.content;
   } else {
-    content = require(10004) /* smartOutput */.smartOutput(content, output, state);
-    const obj = require(10004) /* smartOutput */;
+    content = require(10147) /* smartOutput */.smartOutput(content, output, state);
+    const obj = require(10147) /* smartOutput */;
   }
   return content;
 }
@@ -235,7 +235,7 @@ const regExp = new RegExp(require("regExp").ANSI_CONTROL_SEQUENCE_RE, "g");
 const result = require("jsxProd").fileFinishedImporting("modules/markup/native/MarkupMessagePreviewReactRules.tsx");
 
 export default function createChannelListMessagePreviewReactRules(layout, iconColor) {
-  let obj = require(10299) /* getLayoutStyles */;
+  let obj = require(10438) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout);
   let bound = arg2;
   if (null != arg3) {
@@ -243,7 +243,7 @@ export default function createChannelListMessagePreviewReactRules(layout, iconCo
     bound = Math.min(arg2, arg3);
   }
   obj = { iconColor, iconSize: layoutStyles.messagePreview.messageTypeIconSizeNew, channelIconSize: layoutStyles.messagePreview.messageTypeIconSize, customEmojiSize: null };
-  let num = require(5568) /* ICON_SIZE */.ICON_SIZE[layoutStyles.messagePreview.messageTypeIconSizeNew];
+  let num = require(5630) /* ICON_SIZE */.ICON_SIZE[layoutStyles.messagePreview.messageTypeIconSizeNew];
   if (num == null) {
     num = 0;
   }

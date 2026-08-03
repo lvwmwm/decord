@@ -1,9 +1,9 @@
-// Module ID: 5654
-// Function ID: 5655
+// Module ID: 5716
+// Function ID: 5717
 // Name: set
-// Dependencies: [683, 589, 4738, 709, 2]
+// Dependencies: [683, 589, 4800, 709, 2]
 
-// Module 5654 (set)
+// Module 5716 (set)
 import { CONFERENCE_MODE_ENABLED } from "CONFERENCE_MODE_ENABLED";
 import { PersistedStore } from "initialize";
 import set from "get";
@@ -36,7 +36,7 @@ prototype["hasHotspot"] = function hasHotspot(LIVE_STAGE_NOTIFICATION_BADGE) {
   }
   let tmp3 = !CONFERENCE_MODE_ENABLED;
   if (!CONFERENCE_MODE_ENABLED) {
-    const ProcessArgs = require(4738) /* get */.ProcessArgs;
+    const ProcessArgs = require(4800) /* get */.ProcessArgs;
     const isDisallowPopupsSetResult = ProcessArgs.isDisallowPopupsSet();
     let tmp7 = !isDisallowPopupsSetResult;
     if (!isDisallowPopupsSetResult) {

@@ -1,9 +1,9 @@
-// Module ID: 5969
-// Function ID: 5970
+// Module ID: 7048
+// Function ID: 7049
 // Name: getState
-// Dependencies: [32, 1372, 4411, 11, 589, 709, 2]
+// Dependencies: [32, 1372, 4473, 11, 589, 709, 2]
 
-// Module 5969 (getState)
+// Module 7048 (getState)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -47,8 +47,8 @@ prototype["initialize"] = function initialize(arg0) {
 prototype["getPendingReply"] = function getPendingReply(id) {
   return dependencyMap[id];
 };
-prototype["getPendingReplyActionSource"] = function getPendingReplyActionSource(message) {
-  return table[message];
+prototype["getPendingReplyActionSource"] = function getPendingReplyActionSource(pendingReplyActionSource) {
+  return table[pendingReplyActionSource];
 };
 PendingReplyStore.displayName = "PendingReplyStore";
 PendingReplyStore.persistKey = "PendingReplyStore";

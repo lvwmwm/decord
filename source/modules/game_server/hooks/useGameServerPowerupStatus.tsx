@@ -1,10 +1,10 @@
-// Module ID: 11680
-// Function ID: 11681
+// Module ID: 11785
+// Function ID: 11786
 // Name: useGameServerPowerupStatus
-// Dependencies: [19, 4101, 589, 11664, 1236, 2257, 2]
+// Dependencies: [19, 4163, 589, 11769, 1236, 2287, 2]
 // Exports: default
 
-// Module 11680 (useGameServerPowerupStatus)
+// Module 11785 (useGameServerPowerupStatus)
 import noop from "noop";
 import handleGameServerInstanceCreated from "handleGameServerInstanceCreated";
 
@@ -23,7 +23,7 @@ export default function useGameServerPowerupStatus(arg0) {
     }
     return entitlements;
   }, items1);
-  const tmp2 = stateFromStores(11664)(arg0);
+  const tmp2 = stateFromStores(11769)(arg0);
   const dependencyMap = tmp2;
   const items2 = [tmp2, stateFromStores];
   return React.useMemo(() => {

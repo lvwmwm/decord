@@ -1,10 +1,10 @@
-// Module ID: 7201
-// Function ID: 7202
+// Module ID: 6337
+// Function ID: 6338
 // Name: GiftingTier2LargeBadge
-// Dependencies: [21, 5145, 7202, 2]
+// Dependencies: [21, 5207, 6338, 2]
 // Exports: GiftingTier2LargeBadge
 
-// Module 7201 (GiftingTier2LargeBadge)
+// Module 6337 (GiftingTier2LargeBadge)
 import { jsx } from "jsxProd";
 
 const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/GiftingTier2LargeBadge.native.tsx");
@@ -16,7 +16,7 @@ export const GiftingTier2LargeBadge = function GiftingTier2LargeBadge(width) {
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
-    num = 100;
+    num = 96;
   }
   let num2 = width.height;
   if (num2 === undefined) {
@@ -28,7 +28,7 @@ export const GiftingTier2LargeBadge = function GiftingTier2LargeBadge(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7202);
+  obj[0] = importDefault(6338);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GiftingTier2LargeBadge = function GiftingTier2LargeBadge(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5207), { width: num * num3, height: num2 * num3 });
 };

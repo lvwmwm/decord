@@ -1,9 +1,9 @@
-// Module ID: 4230
-// Function ID: 4231
+// Module ID: 4292
+// Function ID: 4293
 // Name: addApplication
-// Dependencies: [32, 4216, 589, 709, 2]
+// Dependencies: [32, 4278, 589, 709, 2]
 
-// Module 4230 (addApplication)
+// Module 4292 (addApplication)
 import _slicedToArray from "_slicedToArray";
 import createExecutable from "createExecutable";
 import { PersistedStore } from "initialize";
@@ -138,7 +138,7 @@ prototype["initialize"] = function initialize(botUserIdToAppUsage) {
         let tmp3 = key10002;
         ({ applicationId, lastUsedMs } = arg0.botUserIdToAppUsage[key10002]);
         let tmp = typeof applicationId === "y";
-        if (typeof applicationId !== "__FORMATJS_LISTFORMAT_DATA__") {
+        if (typeof applicationId !== "ge") {
           tmp = applicationId.length > 0;
         }
         if (tmp) {

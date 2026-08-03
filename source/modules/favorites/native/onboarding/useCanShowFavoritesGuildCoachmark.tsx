@@ -1,10 +1,10 @@
-// Module ID: 14988
-// Function ID: 14989
+// Module ID: 15201
+// Function ID: 15202
 // Name: useCanShowFavoritesGuildCoachmark
-// Dependencies: [3886, 1931, 589, 4044, 2]
+// Dependencies: [3948, 1931, 589, 4106, 2]
 // Exports: default
 
-// Module 14988 (useCanShowFavoritesGuildCoachmark)
+// Module 15201 (useCanShowFavoritesGuildCoachmark)
 import setContent from "setContent";
 import handleConnectionOpen from "handleConnectionOpen";
 
@@ -19,7 +19,7 @@ export default function useCanShowFavoritesGuildCoachmark() {
   const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => open.isOpen());
   const obj2 = require(589) /* initialize */;
   let tmp4 = !stateFromStores;
-  const isModalOpen = require(4044) /* navigationToRootTabHelper */.useIsModalOpen();
+  const isModalOpen = require(4106) /* navigationToRootTabHelper */.useIsModalOpen();
   if (!stateFromStores) {
     tmp4 = !stateFromStores1;
   }

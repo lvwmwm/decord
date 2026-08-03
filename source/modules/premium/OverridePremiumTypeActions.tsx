@@ -1,10 +1,10 @@
-// Module ID: 14798
-// Function ID: 14799
+// Module ID: 14865
+// Function ID: 14866
 // Name: updateClientPremiumTypeOverride
-// Dependencies: [1874, 709, 6042, 2]
+// Dependencies: [1874, 709, 7120, 2]
 // Exports: updateClientCreatedAtOverride, updateClientPremiumTypeOverride
 
-// Module 14798 (updateClientPremiumTypeOverride)
+// Module 14865 (updateClientPremiumTypeOverride)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -25,9 +25,9 @@ export const updateClientPremiumTypeOverride = function updateClientPremiumTypeO
     tmp2Result.dispatch(obj);
     tmp2Result = tmp2(709);
     const obj1 = { type: "CURRENT_USER_UPDATE", user: null };
-    obj1[1] = require(6042) /* createMessage */.userRecordToServer(currentUser);
+    obj1[1] = require(7120) /* createMessage */.userRecordToServer(currentUser);
     tmp2Result.dispatch(obj1);
-    const obj7 = require(6042) /* createMessage */;
+    const obj7 = require(7120) /* createMessage */;
   }
 };
 export const updateClientCreatedAtOverride = function updateClientCreatedAtOverride(createdAt) {

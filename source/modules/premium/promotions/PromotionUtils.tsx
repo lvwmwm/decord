@@ -1,10 +1,10 @@
-// Module ID: 6569
-// Function ID: 6570
+// Module ID: 7555
+// Function ID: 7556
 // Name: claimedOutboundPromotionCodeFromServer
-// Dependencies: [5, 1340, 6266, 6265, 1876, 676, 4218, 4039, 530, 500, 698, 1384, 1358, 11, 1360, 6267, 2]
+// Dependencies: [5, 1340, 7255, 7254, 1876, 676, 4280, 4101, 530, 500, 698, 1384, 1358, 11, 1360, 7256, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 6569 (claimedOutboundPromotionCodeFromServer)
+// Module 7555 (claimedOutboundPromotionCodeFromServer)
 import closure_3 from "ME";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import createFromServer from "createFromServer";
@@ -288,7 +288,7 @@ export const shouldShowOutboundPromotionNotice = function shouldShowOutboundProm
 export const isDedicatedSurfacePromotion = function isDedicatedSurfacePromotion(promotion) {
   let hasItem = null != promotion.partnerId;
   if (hasItem) {
-    const DEDICATED_SURFACE_PARTNER_IDS = require(6267) /* CountryListMode */.DEDICATED_SURFACE_PARTNER_IDS;
+    const DEDICATED_SURFACE_PARTNER_IDS = require(7256) /* CountryListMode */.DEDICATED_SURFACE_PARTNER_IDS;
     hasItem = DEDICATED_SURFACE_PARTNER_IDS.has(promotion.partnerId);
   }
   return hasItem;
@@ -341,5 +341,5 @@ export const getClaimedEndedOutboundPromotions = function getClaimedEndedOutboun
   });
 };
 export const isRecurringPromotion = function isRecurringPromotion(promotionType) {
-  return promotionType.promotionType === require(6267) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING;
+  return promotionType.promotionType === require(7256) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING;
 };

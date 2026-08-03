@@ -1,8 +1,8 @@
-// Module ID: 7958
-// Function ID: 7959
-// Dependencies: [19, 4185, 678, 1576, 21, 4193, 1581, 589, 7959, 4054, 4603, 3839, 5815, 1236, 4162, 7960, 5802, 4161, 4604, 2]
+// Module ID: 8075
+// Function ID: 8076
+// Dependencies: [19, 4247, 678, 1576, 21, 4255, 1581, 589, 8076, 4116, 4665, 3901, 6910, 1236, 4224, 8077, 6897, 4223, 4666, 2]
 
-// Module 7958
+// Module 8075
 import importAllResult from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { CollectiblesMobileShopScreen as closure_5 } from "items";

@@ -1,10 +1,10 @@
-// Module ID: 7415
-// Function ID: 7416
+// Module ID: 6551
+// Function ID: 6552
 // Name: PuzzleCubeSpotIllustration
-// Dependencies: [21, 5145, 7416, 2]
+// Dependencies: [21, 5207, 6552, 2]
 // Exports: PuzzleCubeSpotIllustration
 
-// Module 7415 (PuzzleCubeSpotIllustration)
+// Module 6551 (PuzzleCubeSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PuzzleCubeSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const PuzzleCubeSpotIllustration = function PuzzleCubeSpotIllustration(wi
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7416);
+  obj[0] = importDefault(6552);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const PuzzleCubeSpotIllustration = function PuzzleCubeSpotIllustration(wi
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5207), { width: num * num3, height: num2 * num3 });
 };

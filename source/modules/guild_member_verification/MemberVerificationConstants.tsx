@@ -1,9 +1,9 @@
-// Module ID: 4682
-// Function ID: 4683
+// Module ID: 4744
+// Function ID: 4745
 // Name: items
-// Dependencies: [4013, 2]
+// Dependencies: [4075, 2]
 
-// Module 4682 (items)
+// Module 4744 (items)
 import set from "set";
 
 const items = [{ field_type: require("MAX_RESULTS_PER_PAGE").VerificationFormFieldTypes.VERIFICATION }];

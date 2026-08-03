@@ -1,13 +1,13 @@
-// Module ID: 10636
-// Function ID: 10637
-// Dependencies: [3, 10637, 10638, 10644, 10648, 2]
+// Module ID: 10689
+// Function ID: 10690
+// Dependencies: [3, 10690, 10691, 10697, 10701, 2]
 
-// Module 10636
+// Module 10689
 import importDefaultResult from "map";
 
 importDefaultResult = new importDefaultResult(require("validateSocketClient").validateSocketClient, new require("validateSocketClient")("RPCServer:PostMessage"), require("logger"), (arg0, info, id) => {
   const combined = "Socket Message: " + id.id;
-  info.info(combined, importDefault(10637)(arg0));
+  info.info(combined, importDefault(10690)(arg0));
 });
 const tmp2 = new require("validateSocketClient")("RPCServer:PostMessage");
 const result = require("map").fileFinishedImporting("modules/rpc/native/server/transports/WebViewPostMessageTransport.tsx");

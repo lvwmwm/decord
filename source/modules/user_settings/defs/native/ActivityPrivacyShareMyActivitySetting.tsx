@@ -1,19 +1,19 @@
-// Module ID: 14714
-// Function ID: 14715
+// Module ID: 14781
+// Function ID: 14782
 // Name: toggle
-// Dependencies: [7761, 10133, 1236, 2359, 3866, 2]
+// Dependencies: [7880, 10272, 1236, 2389, 3928, 2]
 
-// Module 14714 (toggle)
+// Module 14781 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
   useTitle() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2359).WhdCGP);
+    return intl.string(importDefault(2389).WhdCGP);
   },
   useDescription() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2359).UQ9RHJ);
+    return intl.string(importDefault(2389).UQ9RHJ);
   },
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useValue: require("explicitContentFromProto").ShowCurrentGame.useSetting,
@@ -22,11 +22,11 @@ const toggle = createToggle.createToggle({
 const obj = {
   useTitle() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2359).WhdCGP);
+    return intl.string(importDefault(2389).WhdCGP);
   },
   useDescription() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2359).UQ9RHJ);
+    return intl.string(importDefault(2389).UQ9RHJ);
   },
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useValue: require("explicitContentFromProto").ShowCurrentGame.useSetting,

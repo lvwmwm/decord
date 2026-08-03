@@ -1,10 +1,10 @@
-// Module ID: 12330
-// Function ID: 12331
+// Module ID: 12428
+// Function ID: 12429
 // Name: clamp
-// Dependencies: [32, 19, 17, 21, 4193, 712, 4054, 10914, 4194, 1297, 12331, 5277, 4055, 5181, 5503, 12332, 12322, 2]
+// Dependencies: [32, 19, 17, 21, 4255, 712, 4116, 11036, 4256, 1297, 12429, 5339, 4117, 5243, 5565, 12430, 12420, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 12330 (clamp)
+// Module 12428 (clamp)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "set";
@@ -300,7 +300,7 @@ export const MediaModalOverlayFooter = function MediaModalOverlayFooter(channelI
       if (translationY > 0) {
         const _Math3 = Math;
         const diff = 1 - translationY / Math.abs(closure_10 - (_slicedToArray + closure_8));
-        if (typeof outer1_10 !== "fileFinishedImporting") {
+        if (typeof outer1_10 !== "error") {
           HermesBuiltin.throwTypeError();
         }
         const _Math4 = Math;
@@ -313,7 +313,7 @@ export const MediaModalOverlayFooter = function MediaModalOverlayFooter(channelI
         }
       } else {
         const result2 = -translationY / 3;
-        if (typeof outer1_10 !== "fileFinishedImporting") {
+        if (typeof outer1_10 !== "error") {
           HermesBuiltin.throwTypeError();
         }
         const _Math = Math;

@@ -1,9 +1,9 @@
-// Module ID: 7418
-// Function ID: 7419
+// Module ID: 6554
+// Function ID: 6555
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7418 (metadata)
+// Module 6554 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/QrCodeLoginSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/3d63fa03e0ee03454a118207a740abe0565c9ab263b12bfeeba4ebde1df5417a.png";

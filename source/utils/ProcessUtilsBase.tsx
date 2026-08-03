@@ -1,9 +1,9 @@
-// Module ID: 5965
-// Function ID: 5966
+// Module ID: 7044
+// Function ID: 7045
 // Name: ElectronProcessType
 // Dependencies: [2]
 
-// Module 5965 (ElectronProcessType)
+// Module 7044 (ElectronProcessType)
 const result = require("set").fileFinishedImporting("utils/ProcessUtilsBase.tsx");
 class ProcessUtils {
 }

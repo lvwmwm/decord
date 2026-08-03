@@ -1,9 +1,9 @@
-// Module ID: 13907
-// Function ID: 13908
+// Module ID: 13974
+// Function ID: 13975
 // Name: toggle
-// Dependencies: [5647, 7761, 676, 13874, 589, 4532, 1236, 4622, 13905, 13906, 10133, 2]
+// Dependencies: [5709, 7880, 676, 13941, 589, 4594, 1236, 4684, 13972, 13973, 10272, 2]
 
-// Module 13907 (toggle)
+// Module 13974 (toggle)
 import hasConsented from "hasConsented";
 import { Consents } from "ME";
 import createToggle from "createToggle";
@@ -22,11 +22,11 @@ createToggle = {
   onValueChange: function handlePersonalizationChange(arg0) {
     if (arg0) {
       let items = [Consents.PERSONALIZATION];
-      const obj3 = require(13905) /* handleRequestSuccess */;
-      require(13905) /* handleRequestSuccess */.setConsents(items, []).catch((message) => callback(13906).showDataPrivacyRateLimitAlert(message.message));
-      const setConsentsResult = require(13905) /* handleRequestSuccess */.setConsents(items, []);
+      const obj3 = require(13972) /* handleRequestSuccess */;
+      require(13972) /* handleRequestSuccess */.setConsents(items, []).catch((message) => callback(13973).showDataPrivacyRateLimitAlert(message.message));
+      const setConsentsResult = require(13972) /* handleRequestSuccess */.setConsents(items, []);
     } else {
-      let obj = importDefault(4532);
+      let obj = importDefault(4594);
       obj = { title: null, body: null, confirmText: null, cancelText: null, confirmColor: null, onConfirm: null };
       const intl = require(1236) /* getSystemLocale */.intl;
       obj[0] = intl.string(require(1236) /* getSystemLocale */.t["9SNpzv"]);
@@ -36,16 +36,16 @@ createToggle = {
       obj[2] = intl3.string(require(1236) /* getSystemLocale */.t["9g5UGw"]);
       const intl4 = require(1236) /* getSystemLocale */.intl;
       obj[3] = intl4.string(require(1236) /* getSystemLocale */.t["+ZLPw9"]);
-      obj[4] = importDefault(4622).Colors.RED;
+      obj[4] = importDefault(4684).Colors.RED;
       obj[5] = function onConfirm() {
         const items = [constants.PERSONALIZATION];
-        return callback(13905).setConsents([], items);
+        return callback(13972).setConsents([], items);
       };
       obj.show(obj);
     }
   },
   useIsDisabled() {
-    return require(13874) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    return require(13941) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
   }
 };
 createToggle = createToggle.createToggle(createToggle);

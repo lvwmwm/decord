@@ -1,9 +1,9 @@
-// Module ID: 12393
-// Function ID: 12394
+// Module ID: 12491
+// Function ID: 12492
 // Name: updateParty
-// Dependencies: [1218, 3830, 4871, 676, 12, 589, 709, 2]
+// Dependencies: [1218, 3892, 4933, 676, 12, 589, 709, 2]
 
-// Module 12393 (updateParty)
+// Module 12491 (updateParty)
 import fetchFingerprint from "fetchFingerprint";
 import upsertRelationship from "upsertRelationship";
 import filterPlayingActivities from "filterPlayingActivities";

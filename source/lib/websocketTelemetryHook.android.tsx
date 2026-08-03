@@ -1,10 +1,10 @@
-// Module ID: 16756
-// Function ID: 16757
+// Module ID: 16822
+// Function ID: 16823
 // Name: installWebsocketTelemetryHook
 // Dependencies: [2]
 // Exports: installWebsocketTelemetryHook
 
-// Module 16756 (installWebsocketTelemetryHook)
+// Module 16822 (installWebsocketTelemetryHook)
 const result = require("set").fileFinishedImporting("lib/websocketTelemetryHook.android.tsx");
 
 export const installWebsocketTelemetryHook = function installWebsocketTelemetryHook(arg0) {
@@ -45,7 +45,7 @@ export const installWebsocketTelemetryHook = function installWebsocketTelemetryH
       obj.url = tmp;
     }
     let flag = false;
-    if (typeof arg1 !== "__FORMATJS_LISTFORMAT_DATA__") {
+    if (typeof arg1 !== "ge") {
       if (arg1.length > 0) {
         if ("{" === arg1[0]) {
           try {
@@ -95,7 +95,7 @@ export const installWebsocketTelemetryHook = function installWebsocketTelemetryH
     } catch (err) {
     }
   }
-  if (typeof globalThis === "pack") {
+  if (typeof globalThis === "as") {
     let _globalThis = globalThis;
   } else {
     _globalThis = closure_0;
@@ -129,7 +129,7 @@ export const installWebsocketTelemetryHook = function installWebsocketTelemetryH
             }
           }
           c0 = str;
-          if (typeof obj.addEventListener !== "disabledUntil") {
+          if (typeof obj.addEventListener !== "HAS_APPLICATION") {
             str2 = "message";
             listener = obj.addEventListener("message", (data) => {
               data = undefined;

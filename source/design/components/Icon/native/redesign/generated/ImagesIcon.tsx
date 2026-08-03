@@ -1,10 +1,10 @@
-// Module ID: 9937
-// Function ID: 9938
+// Module ID: 10080
+// Function ID: 10081
 // Name: ImagesIcon
-// Dependencies: [19, 21, 712, 3896, 9938, 2]
+// Dependencies: [19, 21, 712, 3958, 10081, 2]
 // Exports: ImagesIcon
 
-// Module 9937 (ImagesIcon)
+// Module 10080 (ImagesIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ImagesIcon = function ImagesIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9938) /* registerAsset */;
+  obj[0] = require(10081) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3896) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 16398
-// Function ID: 16399
+// Module ID: 16464
+// Function ID: 16465
 // Name: withEqualityFn
-// Dependencies: [32, 5, 19, 11067, 676, 700, 16399, 705, 11072, 4092, 3806, 2]
+// Dependencies: [32, 5, 19, 11183, 676, 700, 16465, 705, 11188, 4154, 3868, 2]
 // Exports: getRuleCountByTriggerType, useAutomodRulesList, useSyncAutomodRules, useSyncAutomodRulesEffect
 
-// Module 16398 (withEqualityFn)
+// Module 16464 (withEqualityFn)
 import _slicedToArray from "_slicedToArray";
 import closure_3 from "identity";
 import noop from "noop";
@@ -239,7 +239,7 @@ export const useSyncAutomodRules = function useSyncAutomodRules(arg0) {
     const items = [, ];
     ({ syncRules: arr[0], fetching: arr[1] } = arg0);
     return items;
-  }, _require(3806).shallow), 2);
+  }, _require(3868).shallow), 2);
   first = tmp2[0];
   const callback = tmp4;
   const items = [tmp[0], ];
@@ -323,7 +323,7 @@ export const useSyncAutomodRulesEffect = function useSyncAutomodRulesEffect(arg0
     const items = [, ];
     ({ syncRules: arr[0], fetching: arr[1] } = arg0);
     return items;
-  }, _require(3806).shallow), 2);
+  }, _require(3868).shallow), 2);
   first = tmp2[0];
   const callback = tmp4;
   let items = [tmp[0], ];
@@ -469,5 +469,5 @@ export const useAutomodRulesList = function useAutomodRulesList(arg0) {
     }
     obj = { rulesByTriggerType: obj, updateRule: updateRule.updateRule, removeRule: updateRule.removeRule };
     return obj;
-  }, _require(3806).shallow);
+  }, _require(3868).shallow);
 };

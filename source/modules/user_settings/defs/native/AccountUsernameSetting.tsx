@@ -1,9 +1,9 @@
-// Module ID: 13807
-// Function ID: 13808
+// Module ID: 13874
+// Function ID: 13875
 // Name: route
-// Dependencies: [19, 1874, 7761, 676, 21, 589, 4032, 11076, 4189, 10133, 1236, 13808, 2]
+// Dependencies: [19, 1874, 7880, 676, 21, 589, 4094, 11192, 4251, 10272, 1236, 13875, 2]
 
-// Module 13807 (route)
+// Module 13874 (route)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
@@ -21,7 +21,7 @@ createToggle = {
     return require(589) /* initialize */.useStateFromStores(items, () => callback(table[6]).getUserTag(currentUser.getCurrentUser(), { decoration: "never" }));
   },
   useDescription: function useAccountUsernameSettingDescription() {
-    let obj = require(11076) /* useCurrentUserHasAutomodQuarantinedProfile */;
+    let obj = require(11192) /* useCurrentUserHasAutomodQuarantinedProfile */;
     const guildAutomodProfileQuarantineErrors = obj.useGuildAutomodProfileQuarantineErrors();
     let first;
     if (guildAutomodProfileQuarantineErrors != null) {
@@ -34,7 +34,7 @@ createToggle = {
     if (null != first) {
       obj = { variant: "text-xs/medium", color: "text-feedback-warning", children: null };
       obj[2] = first;
-      tmp5 = jsx(require(4189) /* Text */.Text, { variant: "text-xs/medium", color: "text-feedback-warning", children: null });
+      tmp5 = jsx(require(4251) /* Text */.Text, { variant: "text-xs/medium", color: "text-feedback-warning", children: null });
     }
     return tmp5;
   },
@@ -43,7 +43,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.ACCOUNT_CHANGE_USERNAME,
   getComponent() {
-    return require(13808) /* UsernameStatusMessage */.default;
+    return require(13875) /* UsernameStatusMessage */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

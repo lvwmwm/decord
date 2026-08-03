@@ -1,10 +1,10 @@
-// Module ID: 15303
-// Function ID: 15304
+// Module ID: 15370
+// Function ID: 15371
 // Name: YouBarNavigatorScreens
-// Dependencies: [32, 19, 17, 5925, 4205, 1874, 5929, 15304, 676, 8776, 4390, 21, 5930, 1481, 4044, 3866, 1474, 3871, 15305, 589, 15307, 15063, 4407, 11, 5931, 4174, 691, 12, 698, 15306, 15308, 8436, 503, 15309, 15310, 2]
+// Dependencies: [32, 19, 17, 7005, 4267, 1874, 7008, 15371, 676, 8953, 4452, 21, 7009, 1481, 4106, 3928, 1474, 3933, 15372, 589, 15374, 15043, 4469, 11, 7010, 4236, 691, 12, 698, 15373, 15375, 8741, 503, 15376, 15377, 2]
 // Exports: NotificationCenterForYou
 
-// Module 15303 (YouBarNavigatorScreens)
+// Module 15370 (YouBarNavigatorScreens)
 import encodeProperties from "encodeProperties";
 import initialize from "initialize";
 import { View } from "ChannelListLayoutTypes";

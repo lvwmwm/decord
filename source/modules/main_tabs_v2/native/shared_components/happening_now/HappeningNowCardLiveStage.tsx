@@ -1,9 +1,9 @@
-// Module ID: 15085
-// Function ID: 15086
+// Module ID: 15065
+// Function ID: 15066
 // Name: HappeningNowLiveStageContent
-// Dependencies: [19, 17, 14330, 676, 21, 4193, 712, 698, 10893, 1959, 15086, 15087, 15088, 14331, 4715, 1297, 15097, 4384, 1236, 4383, 2]
+// Dependencies: [19, 17, 14397, 676, 21, 4255, 712, 698, 10993, 1959, 15066, 15067, 15068, 14398, 4777, 1297, 15077, 4446, 1236, 4445, 2]
 
-// Module 15085 (HappeningNowLiveStageContent)
+// Module 15065 (HappeningNowLiveStageContent)
 import importAllResult from "getNickname";
 import { View } from "computeChannelName";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
@@ -115,19 +115,19 @@ function getUsersSubtitle(arg0) {
     if (constants.LISTENING === action) {
       const intl9 = require(1236) /* getSystemLocale */.intl;
       let obj = { name: null };
-      obj[0] = importDefault(4383).getName(guildId, null, first);
+      obj[0] = importDefault(4445).getName(guildId, null, first);
       let str3 = intl9.formatToPlainString(require(1236) /* getSystemLocale */.t.lJXKtO, obj);
-      const obj14 = importDefault(4383);
+      const obj14 = importDefault(4445);
     } else if (tmp16.WATCHING === action) {
       const intl8 = require(1236) /* getSystemLocale */.intl;
       obj = { name: null };
-      obj[0] = importDefault(4383).getName(guildId, null, first);
+      obj[0] = importDefault(4445).getName(guildId, null, first);
       str3 = intl8.formatToPlainString(require(1236) /* getSystemLocale */.t.iWY9wg, obj);
-      const obj12 = importDefault(4383);
+      const obj12 = importDefault(4445);
     } else if (tmp16.ON_STAGE === action) {
       const intl7 = require(1236) /* getSystemLocale */.intl;
       const obj1 = { name: null };
-      let obj9 = importDefault(4383);
+      let obj9 = importDefault(4445);
       obj1[0] = obj9.getName(guildId, null, first);
       str3 = intl7.formatToPlainString(require(1236) /* getSystemLocale */.t["5uJ3+u"], obj1);
     } else {
@@ -135,17 +135,17 @@ function getUsersSubtitle(arg0) {
       if (tmp16.SHARING === action) {
         const intl12 = require(1236) /* getSystemLocale */.intl;
         const obj2 = { name: null };
-        obj2[0] = importDefault(4383).getName(guildId, null, first);
+        obj2[0] = importDefault(4445).getName(guildId, null, first);
         str3 = intl12.formatToPlainString(require(1236) /* getSystemLocale */.t["5oa7dX"], obj2);
-        const obj19 = importDefault(4383);
+        const obj19 = importDefault(4445);
       }
     }
     return str3;
   } else if (2 === length) {
     [tmp4, tmp5] = users;
-    let obj3 = importDefault(4383);
+    let obj3 = importDefault(4445);
     const name = obj3.getName(guildId, null, tmp4);
-    let obj4 = importDefault(4383);
+    let obj4 = importDefault(4445);
     const name1 = obj4.getName(guildId, null, tmp5);
     if (constants.LISTENING === action) {
       const intl6 = require(1236) /* getSystemLocale */.intl;
@@ -179,7 +179,7 @@ function getUsersSubtitle(arg0) {
   } else {
     let str = "";
     if (0 !== users.length) {
-      const name2 = importDefault(4383).getName(guildId, null, users[0]);
+      const name2 = importDefault(4445).getName(guildId, null, users[0]);
       const diff = users.length - 1;
       if (constants.LISTENING === action) {
         const intl3 = require(1236) /* getSystemLocale */.intl;
@@ -209,7 +209,7 @@ function getUsersSubtitle(arg0) {
           str = intl10.formatToPlainString(require(1236) /* getSystemLocale */.t["m+NEcC"], obj9);
         }
       }
-      const obj15 = importDefault(4383);
+      const obj15 = importDefault(4445);
     }
     return str;
   }

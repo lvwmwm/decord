@@ -1,9 +1,9 @@
-// Module ID: 6301
-// Function ID: 6302
+// Module ID: 7286
+// Function ID: 7287
 // Name: handleConnectionStateUpdated
-// Dependencies: [109, 5, 19, 17, 6302, 6228, 1218, 3845, 5676, 6255, 5677, 676, 4176, 1876, 21, 3, 709, 6303, 1217, 5679, 3775, 6226, 3854, 4513, 698, 4533, 1236, 6305, 1959, 4399, 6329, 2]
+// Dependencies: [109, 5, 19, 17, 6781, 6782, 1218, 3907, 5738, 7244, 5739, 676, 4238, 1876, 21, 3, 709, 7287, 1217, 5741, 3837, 6790, 3916, 4575, 698, 4595, 1236, 7288, 1959, 4461, 6771, 2]
 
-// Module 6301 (handleConnectionStateUpdated)
+// Module 7286 (handleConnectionStateUpdated)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import closure_5 from "usePremiumPlanPurchasedStore";
 import "SubscriptionPlans";
@@ -35,9 +35,9 @@ function handleConnectionStateUpdated(connectionState) {
   connectionState = connectionState.connectionState;
   importDefault(709).dispatch({ type: "GPLAY_UPDATE_CONNECTION_STATE", connectionState });
   if (connectionState === constants.CONNECTED) {
-    const userCountry = require(6303) /* getPlanIdForProduct */.loadUserCountry();
+    const userCountry = require(7287) /* getPlanIdForProduct */.loadUserCountry();
     userCountry.finally(() => callback(table[17]).loadSkus());
-    const obj2 = require(6303) /* getPlanIdForProduct */;
+    const obj2 = require(7287) /* getPlanIdForProduct */;
   }
 }
 function handlePurchaseStateUpdated(arg0) {
@@ -183,7 +183,7 @@ function _handlePurchaseUpdated() {
                     throwTypeErrorResult = callback(709).dispatch(obj4);
                     throwTypeErrorResult = lib;
                     throwTypeErrorResult = dependencyMap;
-                    const IAPProductIds = lib(5679).IAPProductIds;
+                    const IAPProductIds = lib(5741).IAPProductIds;
                     throwTypeErrorResult = lib;
                     if (IAPProductIds.includes(lib.productId)) {
                       throwTypeErrorResult = dependencyMap;
@@ -193,13 +193,13 @@ function _handlePurchaseUpdated() {
                       throwTypeErrorResult = dependencyMap;
                       throwTypeErrorResult = lib;
                       throwTypeErrorResult = dependencyMap;
-                      const obj48 = callback(3775)();
-                      callback2 = callback(3775)().subtract(lib(6226).DRAFT_ORDER_LOOKBACK_DAYS, "days").toISOString();
+                      const obj48 = callback(3837)();
+                      callback2 = callback(3837)().subtract(lib(6790).DRAFT_ORDER_LOOKBACK_DAYS, "days").toISOString();
                       throwTypeErrorResult = lib;
                       throwTypeErrorResult = dependencyMap;
-                      const subtractResult = callback(3775)().subtract(lib(6226).DRAFT_ORDER_LOOKBACK_DAYS, "days");
+                      const subtractResult = callback(3837)().subtract(lib(6790).DRAFT_ORDER_LOOKBACK_DAYS, "days");
                       throwTypeErrorResult = lib;
-                      planIdForGift = lib(5679).getPlanIdForGift(lib.productId);
+                      planIdForGift = lib(5741).getPlanIdForGift(lib.productId);
                       throwTypeErrorResult = planIdForGift;
                       throwTypeErrorResult = undefined;
                       if (null != planIdForGift) {
@@ -218,7 +218,7 @@ function _handlePurchaseUpdated() {
                       giftOptionsForKey = throwTypeErrorResult;
                       throwTypeErrorResult = lib;
                       throwTypeErrorResult = dependencyMap;
-                      const obj50 = lib(5679);
+                      const obj50 = lib(5741);
                       const obj5 = { status: null, createdAfter: null, skuId: null, paymentGateway: null, isGift: true };
                       throwTypeErrorResult = constants4;
                       obj5[0] = constants4.DRAFT;
@@ -231,7 +231,7 @@ function _handlePurchaseUpdated() {
                       giftOptionsForKey = 5;
                       length = 1;
                       let obj6 = { value: null, done: false };
-                      obj6[0] = lib(6226).getOrders(obj5);
+                      obj6[0] = lib(6790).getOrders(obj5);
                       return obj6;
                     } else {
                       throwTypeErrorResult = dependencyMap;
@@ -260,7 +260,7 @@ function _handlePurchaseUpdated() {
                         giftOptionsForKey = 7;
                         length = 1;
                         const obj8 = { value: null, done: false };
-                        obj8[0] = lib(6303).verifyPurchase(lib, dependencyMap);
+                        obj8[0] = lib(7287).verifyPurchase(lib, dependencyMap);
                         return obj8;
                       }
                     }
@@ -291,7 +291,7 @@ function _handlePurchaseUpdated() {
                 let closure_13 = callback2;
                 throwTypeErrorResult = lib;
                 throwTypeErrorResult = dependencyMap;
-                let obj28 = lib(3854);
+                let obj28 = lib(3916);
                 throwTypeErrorResult = closure_13;
                 let obj10 = { tags: null };
                 const obj11 = { productId: null };
@@ -355,7 +355,7 @@ function _handlePurchaseUpdated() {
               case 4:
                 planIdForGift = 2;
                 state = callback2;
-                let obj25 = lib(3854);
+                let obj25 = lib(3916);
                 const obj15 = { tags: null, extra: null };
                 obj15[0] = { source: "GPlayManager_handlePurchaseUpdated_sign" };
                 const obj16 = { productId: null };
@@ -390,7 +390,7 @@ function _handlePurchaseUpdated() {
                     obj19[1] = lib.productId;
                     obj19[2] = giftOptionsForKey;
                     logger.info("[handlePurchaseUpdated] Signing order from backend query", obj19);
-                    let obj20 = lib(6226);
+                    let obj20 = lib(6790);
                     giftOptionsForKey = 6;
                     length = 1;
                     obj20 = { value: null, done: false };
@@ -466,10 +466,10 @@ function _handlePurchaseUpdated() {
                     throwTypeErrorResult = closure_3;
                     throwTypeErrorResult = lib;
                     throwTypeErrorResult = dependencyMap;
-                    const SubscriptionProductIds = lib(5679).SubscriptionProductIds;
+                    const SubscriptionProductIds = lib(5741).SubscriptionProductIds;
                     throwTypeErrorResult = lib;
                     if (!SubscriptionProductIds.includes(lib.productId)) {
-                      obj6 = lib(6303);
+                      obj6 = lib(7287);
                       const result1 = obj6.sendPaymentCompleteAnalytics(lib);
                       const _HermesInternal = HermesInternal;
                       logger.info("[handlePurchaseUpdated] One Time Purchase verified and consumed: " + lib.productId);
@@ -482,7 +482,7 @@ function _handlePurchaseUpdated() {
                       obj28 = { type: "GPLAY_UPDATE_PENDING_DOWNGRADE", pendingDowngrade: null };
                       obj28[1] = fetchFingerprint.pendingDowngrade;
                       obj10.dispatch(obj28);
-                      obj12 = lib(4513);
+                      obj12 = lib(4575);
                       giftOptionsForKey = 8;
                       length = 1;
                       const obj29 = { value: null, done: false };
@@ -497,7 +497,7 @@ function _handlePurchaseUpdated() {
                     obj30[0] = callback3();
                     return obj30;
                   } else {
-                    obj7 = lib(4513);
+                    obj7 = lib(4575);
                     giftOptionsForKey = 9;
                     length = 1;
                     obj31 = { value: null, done: false };
@@ -725,9 +725,9 @@ function _executePendingDowngrade() {
           if (2 === tmp8) {
             c3 = 1;
             lib = dependencyMap;
-            let obj5 = pendingDowngrade(3854);
+            let obj5 = pendingDowngrade(3916);
             const result = obj5.captureBillingException(lib);
-            let obj6 = lib(4533);
+            let obj6 = lib(4595);
             const obj2 = { title: null, body: null };
             const intl = pendingDowngrade(1236).intl;
             obj2[0] = intl.string(pendingDowngrade(1236).t["U+H+kd"]);
@@ -856,7 +856,7 @@ function _fetchAndAlertActiveSubscription() {
             let closure_1 = tmp5;
             let callback = tmp2;
             callback = undefined;
-            let obj1 = outer1_0(4513);
+            let obj1 = outer1_0(4575);
             dependencyMap = 1;
             c3 = 1;
             obj1 = { value: null, done: false };

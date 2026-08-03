@@ -1,10 +1,10 @@
-// Module ID: 6055
-// Function ID: 6056
+// Module ID: 5773
+// Function ID: 5774
 // Name: useAvailableTags
-// Dependencies: [19, 1372, 3821, 505, 589, 1351, 6056, 2]
+// Dependencies: [19, 1372, 3883, 505, 589, 1351, 5774, 2]
 // Exports: useAppliedTags, useAvailableTags, useSomeAppliedTags, useVisibleAppliedForumTags, useVisibleForumTags
 
-// Module 6055 (useAvailableTags)
+// Module 5773 (useAvailableTags)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

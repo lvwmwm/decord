@@ -1,10 +1,10 @@
-// Module ID: 10283
-// Function ID: 10284
+// Module ID: 10422
+// Function ID: 10423
 // Name: playInAppMessageSound
-// Dependencies: [10259, 10284, 676, 1577, 10285, 2]
+// Dependencies: [10398, 10423, 676, 1577, 10424, 2]
 // Exports: playInAppMessageSound
 
-// Module 10283 (playInAppMessageSound)
+// Module 10422 (playInAppMessageSound)
 import DesktopNotificationTypes from "DesktopNotificationTypes";
 import { isInAppMessageSoundsEnabled as closure_3 } from "isInAppMessageSoundsEnabled";
 import { InAppNotificationTypes } from "ME";
@@ -22,8 +22,8 @@ export const playInAppMessageSound = function playInAppMessageSound(notification
           const _Date = Date;
           const timestamp = Date.now();
           if (timestamp - timestamp >= 1000) {
-            tmp8(10285).playSound(tmp3, 0.4);
-            const tmp8Result = tmp8(10285);
+            tmp8(10424).playSound(tmp3, 0.4);
+            const tmp8Result = tmp8(10424);
           }
         }
         tmp3 = message1;

@@ -1,9 +1,9 @@
-// Module ID: 11816
-// Function ID: 11817
+// Module ID: 11918
+// Function ID: 11919
 // Name: GUILD_TEMPLATE_ICONS
-// Dependencies: [10091, 10095, 10093, 10094, 10096, 10097, 10092, 6790, 2]
+// Dependencies: [10233, 10237, 10235, 10236, 10238, 10239, 10234, 5926, 2]
 
-// Module 11816 (GUILD_TEMPLATE_ICONS)
+// Module 11918 (GUILD_TEMPLATE_ICONS)
 let obj = { CREATE: require("registerAsset"), GAMING: require("registerAsset"), FRIENDS: require("registerAsset"), STUDY: require("registerAsset"), CLUBS: require("registerAsset"), CREATORS: require("registerAsset"), LOCAL_COMMUNITY: require("registerAsset"), SCHOOL_CLUB: require("registerAsset") };
 obj = { CREATE: require("AccountAgeTier10LargeBadge").PencilIllocon, GAMING: require("AccountAgeTier10LargeBadge").ControllerIllocon, FRIENDS: require("AccountAgeTier10LargeBadge").HeartIllocon, STUDY: require("AccountAgeTier10LargeBadge").AppleIllocon, CLUBS: require("AccountAgeTier10LargeBadge").BookIllocon, CREATORS: require("AccountAgeTier10LargeBadge").PaintIllocon, LOCAL_COMMUNITY: require("AccountAgeTier10LargeBadge").LeafIllocon, SCHOOL_CLUB: require("AccountAgeTier10LargeBadge").BookIllocon };
 const result = require("registerAsset").fileFinishedImporting("modules/create_guild/native/CreateGuildIcons.tsx");

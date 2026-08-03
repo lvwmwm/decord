@@ -1,10 +1,10 @@
-// Module ID: 10651
-// Function ID: 10652
+// Module ID: 10676
+// Function ID: 10677
 // Name: tryLaunchAsFrame
-// Dependencies: [4230, 10519, 5698, 2]
+// Dependencies: [4292, 10660, 10661, 2]
 // Exports: tryLaunchAsFrame
 
-// Module 10651 (tryLaunchAsFrame)
+// Module 10676 (tryLaunchAsFrame)
 import addApplication from "addApplication";
 
 const require = arg1;
@@ -15,16 +15,16 @@ export const tryLaunchAsFrame = function tryLaunchAsFrame(applicationId) {
   application = application.getApplication(applicationId);
   let tmp2 = null == application;
   if (!tmp2) {
-    let obj = require(10519) /* canLaunchFrame */;
+    let obj = require(10660) /* canLaunchFrame */;
     tmp2 = !obj.canLaunchFrame(application);
   }
   let flag = !tmp2;
   if (!tmp2) {
     obj = { applicationId: null };
     obj[0] = applicationId;
-    importDefault(5698).launchFrame(obj);
+    importDefault(10661).launchFrame(obj);
     flag = true;
-    const obj2 = importDefault(5698);
+    const obj2 = importDefault(10661);
   }
   return flag;
 };

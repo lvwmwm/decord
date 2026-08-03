@@ -1,10 +1,10 @@
-// Module ID: 12885
-// Function ID: 12886
+// Module ID: 12948
+// Function ID: 12949
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: getVoiceGatewayProtocolVersion
 
-// Module 12885 (apexExperiment)
+// Module 12948 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { 1: null };

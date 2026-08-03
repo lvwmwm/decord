@@ -1,9 +1,9 @@
-// Module ID: 7804
-// Function ID: 7805
+// Module ID: 7922
+// Function ID: 7923
 // Name: GuildIncidentActionSources
 // Dependencies: [2]
 
-// Module 7804 (GuildIncidentActionSources)
+// Module 7922 (GuildIncidentActionSources)
 const result = require("set").fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidTypes.tsx");
 
 export const GuildIncidentActionSources = { MESSAGE: "message", NAGBAR: "nagbar", GUILD_SETTINGS: "guild_settings", CONTEXT_MENU: "context_menu", GUILD_PROFILE: "guild_profile", MEMBER_SAFETY_PAGE: "member_safety_page" };

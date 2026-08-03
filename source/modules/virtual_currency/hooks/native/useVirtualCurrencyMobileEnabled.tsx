@@ -1,10 +1,10 @@
-// Module ID: 12305
-// Function ID: 12306
+// Module ID: 12403
+// Function ID: 12404
 // Name: isVirtualCurrencyEnabled
 // Dependencies: [1577, 2]
 // Exports: isVirtualCurrencyEnabled, useVirtualCurrencyMobileEnabled
 
-// Module 12305 (isVirtualCurrencyEnabled)
+// Module 12403 (isVirtualCurrencyEnabled)
 const result = require("set").fileFinishedImporting("modules/virtual_currency/hooks/native/useVirtualCurrencyMobileEnabled.tsx");
 
 export const isVirtualCurrencyEnabled = function isVirtualCurrencyEnabled() {

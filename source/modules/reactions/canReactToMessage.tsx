@@ -1,10 +1,10 @@
-// Module ID: 7757
-// Function ID: 7758
+// Module ID: 7876
+// Function ID: 7877
 // Name: canReactToMessageInternal
-// Dependencies: [1942, 5007, 3821, 1874, 676, 1384, 3810, 589, 2]
+// Dependencies: [1942, 5069, 3883, 1874, 676, 1384, 3872, 589, 2]
 // Exports: canReactToMessage, useCanReactToMessage
 
-// Module 7757 (canReactToMessageInternal)
+// Module 7876 (canReactToMessageInternal)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import recomputeGuild from "recomputeGuild";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -56,8 +56,8 @@ function canReactToMessageInternal(state, getGuildId, items) {
     const obj5 = require(1384) /* hasFlag */;
   }
   if (canResult) {
-    canResult = !require(3810) /* isCommunicationDisabled */.isMemberCommunicationDisabled(member);
-    const obj6 = require(3810) /* isCommunicationDisabled */;
+    canResult = !require(3872) /* isCommunicationDisabled */.isMemberCommunicationDisabled(member);
+    const obj6 = require(3872) /* isCommunicationDisabled */;
   }
   return canResult;
 }

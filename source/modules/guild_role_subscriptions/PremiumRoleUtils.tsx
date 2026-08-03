@@ -1,10 +1,10 @@
-// Module ID: 3812
-// Function ID: 3813
+// Module ID: 3874
+// Function ID: 3875
 // Name: isSubscriptionRole
 // Dependencies: [2]
 // Exports: isSubscriptionRole, isSubscriptionRoleAvailableForPurchase
 
-// Module 3812 (isSubscriptionRole)
+// Module 3874 (isSubscriptionRole)
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/PremiumRoleUtils.tsx");
 
 export const isSubscriptionRole = function isSubscriptionRole(role) {

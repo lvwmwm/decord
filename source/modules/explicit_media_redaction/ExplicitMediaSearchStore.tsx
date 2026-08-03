@@ -1,9 +1,9 @@
-// Module ID: 5879
-// Function ID: 5880
+// Module ID: 6965
+// Function ID: 6966
 // Name: handleSearchMessagesSuccess
-// Dependencies: [4413, 5865, 589, 709, 2]
+// Dependencies: [4475, 6956, 589, 709, 2]
 
-// Module 5879 (handleSearchMessagesSuccess)
+// Module 6965 (handleSearchMessagesSuccess)
 import { Store } from "initialize";
 
 const require = arg1;
@@ -38,7 +38,7 @@ const explicitMediaSearchStore = new ExplicitMediaSearchStore(require("dispatche
         const combined = "" + message.channel_id + ":" + message.id;
         let flag = null != tmp7;
         if (flag) {
-          let obj = require(4413) /* createMinimalMessageRecord */;
+          let obj = require(4475) /* createMinimalMessageRecord */;
           obj = { attachments: null, embeds: null };
           ({ attachments: obj2[0], embeds: obj2[1] } = message);
           dependencyMap[combined] = obj.updateMessageRecord(tmp7, obj);
@@ -58,8 +58,8 @@ const explicitMediaSearchStore = new ExplicitMediaSearchStore(require("dispatche
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: function handleScanTimeout(channelId) {
     const combined = "" + channelId.channelId + ":" + channelId.messageId;
     if (null != dependencyMap[combined]) {
-      dependencyMap[combined] = require(5865) /* redactionSettingToRenderedString */.handleExplicitMediaScanTimeoutForMessage(tmp2);
-      const obj = require(5865) /* redactionSettingToRenderedString */;
+      dependencyMap[combined] = require(6956) /* redactionSettingToRenderedString */.handleExplicitMediaScanTimeoutForMessage(tmp2);
+      const obj = require(6956) /* redactionSettingToRenderedString */;
     }
   }
 });

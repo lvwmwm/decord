@@ -1,10 +1,10 @@
-// Module ID: 12920
-// Function ID: 12921
+// Module ID: 12983
+// Function ID: 12984
 // Name: getAudioFidelityExperimentConfig
 // Dependencies: [1452, 1351, 2]
 // Exports: getAudioFidelityExperimentConfig, getVoiceFidelityCaps
 
-// Module 12920 (getAudioFidelityExperimentConfig)
+// Module 12983 (getAudioFidelityExperimentConfig)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { 1: null, 2: { capSampleRate: true, capChannelCount: false, condition: "krisp" }, 3: { capSampleRate: true, capChannelCount: false, condition: "noiseSuppression" }, 4: { capSampleRate: true, capChannelCount: false, condition: "echoCancellation" }, 5: { capSampleRate: true, capChannelCount: false, condition: "any" }, 6: { capSampleRate: true, capChannelCount: true, condition: "krisp" }, 7: { capSampleRate: true, capChannelCount: true, condition: "noiseSuppression" }, 8: { capSampleRate: true, capChannelCount: true, condition: "echoCancellation" } };

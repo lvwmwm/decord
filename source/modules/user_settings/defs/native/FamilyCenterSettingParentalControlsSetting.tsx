@@ -1,15 +1,15 @@
-// Module ID: 13978
-// Function ID: 13979
+// Module ID: 14045
+// Function ID: 14046
 // Name: route
-// Dependencies: [7761, 676, 10133, 1236, 2225, 13979, 2]
+// Dependencies: [7880, 676, 10272, 1236, 2255, 14046, 2]
 
-// Module 13978 (route)
+// Module 14045 (route)
 import createToggle from "createToggle";
 
 obj = {
   useTitle() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2225).ahKIJO);
+    return intl.string(importDefault(2255).ahKIJO);
   },
   parent: require("MobileSetting").MobileSetting.FAMILY_CENTER,
   unsearchable: true,
@@ -18,7 +18,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.FAMILY_CENTER_PARENTAL_CONTROLS,
   getComponent() {
-    return require(13979) /* FamilyCenterParentalControlsSettings */.default;
+    return require(14046) /* FamilyCenterParentalControlsSettings */.default;
   }
 };
 const route = createToggle.createRoute(obj);

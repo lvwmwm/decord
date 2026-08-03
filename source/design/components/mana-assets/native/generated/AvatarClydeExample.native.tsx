@@ -1,10 +1,10 @@
-// Module ID: 6849
-// Function ID: 6850
+// Module ID: 5985
+// Function ID: 5986
 // Name: AvatarClydeExample
-// Dependencies: [21, 5145, 6850, 2]
+// Dependencies: [21, 5207, 5986, 2]
 // Exports: AvatarClydeExample
 
-// Module 6849 (AvatarClydeExample)
+// Module 5985 (AvatarClydeExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarClydeExample.native.tsx");
@@ -28,7 +28,7 @@ export const AvatarClydeExample = function AvatarClydeExample(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6850);
+  obj[0] = importDefault(5986);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const AvatarClydeExample = function AvatarClydeExample(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5207), { width: num * num3, height: num2 * num3 });
 };

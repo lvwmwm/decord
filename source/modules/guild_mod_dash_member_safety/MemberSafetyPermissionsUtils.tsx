@@ -1,10 +1,10 @@
-// Module ID: 6066
-// Function ID: 6067
+// Module ID: 5765
+// Function ID: 5766
 // Name: getContextForPermission
-// Dependencies: [32, 1415, 1862, 3821, 1874, 3825, 676, 506, 3826, 589, 2]
+// Dependencies: [32, 1415, 1862, 3883, 1874, 3887, 676, 506, 3888, 589, 2]
 // Exports: canAccessMemberSafetyPage, canBulkBanUser, canPruneGuildMembers, getContextForPermission, hasBulkBanningPermissions, useCanAccessBulkBanningFeature, useCanAccessInviteCodeFeature, useCanAccessMemberSafetyPage, useCanBulkBanUser
 
-// Module 6066 (getContextForPermission)
+// Module 5765 (getContextForPermission)
 import _slicedToArray from "_slicedToArray";
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

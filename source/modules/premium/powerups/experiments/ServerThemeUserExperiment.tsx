@@ -1,10 +1,10 @@
-// Module ID: 4122
-// Function ID: 4123
+// Module ID: 4184
+// Function ID: 4185
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: getServerThemeUserEnabled, useServerThemeUserEnabled
 
-// Module 4122 (apexExperiment)
+// Module 4184 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

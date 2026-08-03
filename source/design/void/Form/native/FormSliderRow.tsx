@@ -1,10 +1,10 @@
-// Module ID: 7663
-// Function ID: 7664
+// Module ID: 7786
+// Function ID: 7787
 // Name: FormSliderRow
-// Dependencies: [19, 17, 21, 4193, 5223, 5226, 4189, 7664, 5217, 2]
+// Dependencies: [19, 17, 21, 4255, 5285, 5288, 4251, 7787, 5279, 2]
 // Exports: default
 
-// Module 7663 (FormSliderRow)
+// Module 7786 (FormSliderRow)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ export default function FormSliderRow(arg0) {
   let trailing;
   ({ label, trailing } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  const context = React.useContext(require(5223) /* context */.RedesignCompatContext);
+  const context = React.useContext(require(5285) /* context */.RedesignCompatContext);
   const tmp5 = callback2();
   if (context) {
     let obj = { children: null };
@@ -31,28 +31,28 @@ export default function FormSliderRow(arg0) {
     obj[0] = tmp5.labels;
     const obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     obj1[2] = label;
-    const items = [callback(tmp2(4189).Text, obj1), trailing];
+    const items = [callback(tmp2(4251).Text, obj1), trailing];
     obj[1] = items;
     const items1 = [tmp6(View, obj), ];
     const obj2 = {};
     const merged1 = Object.assign(merged);
     obj2.style = tmp5.slider;
-    items1[1] = callback(importDefault(7664), obj2);
+    items1[1] = callback(importDefault(7787), obj2);
     obj[0] = items1;
-    let tmp6Result = tmp6(tmp2(5226).Card, obj);
-    const tmp18 = importDefault(7664);
+    let tmp6Result = tmp6(tmp2(5288).Card, obj);
+    const tmp18 = importDefault(7787);
   } else {
     obj = { children: null };
     const obj3 = { label: null, trailing: null };
     obj3[0] = label;
     obj3[1] = trailing;
-    const items2 = [callback(importDefault(5217), obj3), ];
+    const items2 = [callback(importDefault(5279), obj3), ];
     const obj4 = {};
     const merged2 = Object.assign(merged);
-    items2[1] = callback(importDefault(7664), obj4);
+    items2[1] = callback(importDefault(7787), obj4);
     obj[0] = items2;
     tmp6Result = tmp6(closure_7, obj);
-    const tmp10 = importDefault(7664);
+    const tmp10 = importDefault(7787);
   }
   return tmp6Result;
 };

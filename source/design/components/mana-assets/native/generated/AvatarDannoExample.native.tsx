@@ -1,10 +1,10 @@
-// Module ID: 6851
-// Function ID: 6852
+// Module ID: 5987
+// Function ID: 5988
 // Name: AvatarDannoExample
-// Dependencies: [21, 5145, 6852, 2]
+// Dependencies: [21, 5207, 5988, 2]
 // Exports: AvatarDannoExample
 
-// Module 6851 (AvatarDannoExample)
+// Module 5987 (AvatarDannoExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarDannoExample.native.tsx");
@@ -28,7 +28,7 @@ export const AvatarDannoExample = function AvatarDannoExample(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6852);
+  obj[0] = importDefault(5988);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const AvatarDannoExample = function AvatarDannoExample(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5207), { width: num * num3, height: num2 * num3 });
 };

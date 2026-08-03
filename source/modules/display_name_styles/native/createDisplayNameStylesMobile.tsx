@@ -1,10 +1,10 @@
-// Module ID: 12412
-// Function ID: 12413
+// Module ID: 12510
+// Function ID: 12511
 // Name: createDisplayNameStylesMobile
-// Dependencies: [4185, 1874, 2]
+// Dependencies: [4247, 1874, 2]
 // Exports: createDisplayNameStylesMobile
 
-// Module 12412 (createDisplayNameStylesMobile)
+// Module 12510 (createDisplayNameStylesMobile)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import mergeGuildAvatar from "mergeGuildAvatar";
 

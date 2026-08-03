@@ -1,10 +1,10 @@
-// Module ID: 9901
-// Function ID: 9902
+// Module ID: 10046
+// Function ID: 10047
 // Name: useRedactableMediaAttachmentsForMessage
-// Dependencies: [4411, 647, 9902, 5880, 5883, 2]
+// Dependencies: [4473, 647, 10047, 5789, 5794, 2]
 // Exports: useRedactableMediaAttachmentsForMessage, useRedactableMediaEmbedsForMessage
 
-// Module 9901 (useRedactableMediaAttachmentsForMessage)
+// Module 10046 (useRedactableMediaAttachmentsForMessage)
 import reinjectEphemerals from "reinjectEphemerals";
 
 const require = arg1;
@@ -17,7 +17,7 @@ export const useRedactableMediaAttachmentsForMessage = function useRedactableMed
   const items = [reinjectEphemerals];
   const stateFromStores = _require(647).useStateFromStores(items, () => attachmentId.getMessage(closure_0, closure_1));
   let obj = _require(647);
-  let closure_3 = _require(9902).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
+  let closure_3 = _require(10047).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
   if (null == stateFromStores) {
     return [];
   } else {
@@ -33,7 +33,7 @@ export const useRedactableMediaAttachmentsForMessage = function useRedactableMed
     }
     return found;
   }
-  const obj2 = _require(9902);
+  const obj2 = _require(10047);
 };
 export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmbedsForMessage(channelId, messageId, embedId) {
   const _require = channelId;
@@ -42,7 +42,7 @@ export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmb
   const items = [reinjectEphemerals];
   const stateFromStores = _require(647).useStateFromStores(items, () => embedId.getMessage(closure_0, closure_1));
   let obj = _require(647);
-  let closure_3 = _require(9902).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
+  let closure_3 = _require(10047).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
   if (null == stateFromStores) {
     return [];
   } else {
@@ -58,5 +58,5 @@ export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmb
     }
     return found;
   }
-  const obj2 = _require(9902);
+  const obj2 = _require(10047);
 };

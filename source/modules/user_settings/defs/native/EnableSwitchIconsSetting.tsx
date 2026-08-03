@@ -1,10 +1,10 @@
-// Module ID: 14390
-// Function ID: 14391
+// Module ID: 14457
+// Function ID: 14458
 // Name: useEnableSwitchIconsSettingValue
-// Dependencies: [4185, 7761, 589, 1348, 10133, 1236, 13521, 2]
+// Dependencies: [4247, 7880, 589, 1348, 10272, 1236, 13584, 2]
 // Exports: useEnableSwitchIconsSettingValue
 
-// Module 14390 (useEnableSwitchIconsSettingValue)
+// Module 14457 (useEnableSwitchIconsSettingValue)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createToggle from "createToggle";
 

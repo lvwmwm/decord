@@ -1,10 +1,10 @@
-// Module ID: 11206
-// Function ID: 11207
+// Module ID: 11318
+// Function ID: 11319
 // Name: ForumPostNewTag
-// Dependencies: [19, 21, 4193, 712, 1297, 2]
+// Dependencies: [19, 21, 4255, 712, 1297, 2]
 // Exports: default
 
-// Module 11206 (ForumPostNewTag)
+// Module 11318 (ForumPostNewTag)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

@@ -1,10 +1,10 @@
-// Module ID: 9590
-// Function ID: 9591
+// Module ID: 9737
+// Function ID: 9738
 // Name: AutocompleteFormDivider
-// Dependencies: [19, 17, 1376, 1932, 3830, 1874, 676, 9591, 4628, 21, 4193, 712, 4384, 5035, 4032, 7646, 2]
+// Dependencies: [19, 17, 1376, 1932, 3892, 1874, 676, 9738, 4690, 21, 4255, 712, 4446, 5097, 4094, 7318, 2]
 // Exports: getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 9590 (AutocompleteFormDivider)
+// Module 9737 (AutocompleteFormDivider)
 import "noop";
 import { isGuildSelectableChannelType as closure_3 } from "createChannelRecord";
 import comparator from "comparator";
@@ -27,7 +27,7 @@ let unpackModuleId;
 const require = arg1;
 function AutocompleteFormDivider() {
   const tmp = createCacheKey();
-  return jsx(importDefault(7646), { style: createCacheKey().itemDivider });
+  return jsx(importDefault(7318), { style: createCacheKey().itemDivider });
 }
 ({ AutoCompleteResultTypes: error, WHITESPACE_RE: metroImportAll } = ME);
 ({ AUTOCOMPLETE_EMOJI_ROW_HEIGHT: c9, AUTOCOMPLETE_ROW_HEIGHT: c10 } = AUTOCOMPLETE_ROW_HEIGHT);
@@ -64,8 +64,8 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
       let combined = "" + tmp34 + user.tag;
     } else {
       const _HermesInternal8 = HermesInternal;
-      combined = "" + tmp34 + importDefault(4032).getUserTag(user);
-      const tmp32Result = importDefault(4032);
+      combined = "" + tmp34 + importDefault(4094).getUserTag(user);
+      const tmp32Result = importDefault(4094);
     }
     return combined;
   } else if (tmp.GLOBAL === type) {
@@ -76,9 +76,9 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
   } else if (tmp.CHANNEL === type) {
     channel = type.channel;
     if (channel.isThread()) {
-      const obj3 = require(4384) /* computeChannelName */;
+      const obj3 = require(4446) /* computeChannelName */;
       const _HermesInternal6 = HermesInternal;
-      return "#\"" + obj3.escapeChannelName(require(4384) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, upsertRelationship)) + "\"";
+      return "#\"" + obj3.escapeChannelName(require(4446) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, upsertRelationship)) + "\"";
     } else {
       channel2 = type.channel;
       const guildId = channel2.getGuildId();
@@ -90,15 +90,15 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
             name = tmp16.name;
           }
           if (name == null) {
-            name = require(4384) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, upsertRelationship);
-            const obj2 = require(4384) /* computeChannelName */;
+            name = require(4446) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, upsertRelationship);
+            const obj2 = require(4446) /* computeChannelName */;
           }
           const _HermesInternal5 = HermesInternal;
           return "" + closure_11 + name;
         }
       }
       const _HermesInternal4 = HermesInternal;
-      return "" + closure_11 + require(4384) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, upsertRelationship);
+      return "" + closure_11 + require(4446) /* computeChannelName */.computeChannelName(type.channel, mergeGuildAvatar, upsertRelationship);
     }
   } else if (tmp.GAME_MENTION === type) {
     const _HermesInternal3 = HermesInternal;
@@ -126,8 +126,8 @@ export const getMentionTextWithUser = function getMentionTextWithUser(messageCha
     let combined = "" + tmp3 + user.tag;
   } else {
     const _HermesInternal = HermesInternal;
-    combined = "" + tmp3 + importDefault(4032).getUserTag(user);
-    const tmpResult = importDefault(4032);
+    combined = "" + tmp3 + importDefault(4094).getUserTag(user);
+    const tmpResult = importDefault(4094);
   }
   return combined;
 };

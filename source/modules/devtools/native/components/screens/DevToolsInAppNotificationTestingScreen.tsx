@@ -1,10 +1,10 @@
-// Module ID: 14842
-// Function ID: 14843
+// Module ID: 14909
+// Function ID: 14910
 // Name: handleResetInAppNotificationExpandNux
-// Dependencies: [19, 17, 5096, 1376, 3831, 1372, 1862, 1931, 1874, 676, 21, 4193, 712, 3894, 7634, 10274, 10276, 1355, 1358, 10350, 4860, 11, 1581, 5558, 5224, 13663, 5231, 1297, 2]
+// Dependencies: [19, 17, 5158, 1376, 3893, 1372, 1862, 1931, 1874, 676, 21, 4255, 712, 3956, 7760, 10413, 10415, 1355, 1358, 10489, 4922, 11, 1581, 5620, 5286, 13726, 5293, 1297, 2]
 // Exports: default
 
-// Module 14842 (handleResetInAppNotificationExpandNux)
+// Module 14909 (handleResetInAppNotificationExpandNux)
 import MAX_TIMES_SHOWN from "MAX_TIMES_SHOWN";
 import { ScrollView } from "updateUserGuildSettings";
 import loadSavedGuildStickers from "loadSavedGuildStickers";
@@ -26,7 +26,7 @@ const require = arg1;
 function handleResetInAppNotificationExpandNux() {
   const result = require(1355) /* updateUserGuildSettings */.removeDismissedContent(require(1358) /* DismissibleContent */.DismissibleContent.IN_APP_NOTIFICATION_EXPAND_NUX);
   const obj = require(1355) /* updateUserGuildSettings */;
-  require(10350) /* MAX_TIMES_SHOWN */.resetExpandNUXState();
+  require(10489) /* MAX_TIMES_SHOWN */.resetExpandNUXState();
 }
 function getSelectedGuildChannel() {
   const channelId = store3.getChannelId();
@@ -35,7 +35,7 @@ function getSelectedGuildChannel() {
     channel = store.getChannel(channelId);
   }
   if (null == channel) {
-    let obj1 = importDefault(3894);
+    let obj1 = importDefault(3956);
     let obj = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon: null, content: "Select a channel first", toastDurationMs: 4000 };
     obj[1] = function icon() {
       return callback2(callback(table[14]).WarningIcon, {});
@@ -59,9 +59,9 @@ function getSelectedGuildChannel() {
     obj[1] = function icon() {
       return callback2(callback(table[14]).WarningIcon, {});
     };
-    importDefault(3894).open(obj);
+    importDefault(3956).open(obj);
     obj1 = null;
-    const obj5 = importDefault(3894);
+    const obj5 = importDefault(3956);
   } else {
     obj1 = { channel: null, guild: null };
     ({ channel: obj4[0], guild: obj4[1] } = obj);
@@ -78,7 +78,7 @@ function buildTestMessageData(arg0, items) {
     channel = store.getChannel(channelId);
   }
   if (null == channel) {
-    let obj1 = importDefault(3894);
+    let obj1 = importDefault(3956);
     let obj = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon: null, content: "Select a channel first", toastDurationMs: 4000 };
     obj[1] = function icon() {
       return callback2(callback(table[14]).WarningIcon, {});
@@ -97,7 +97,7 @@ function buildTestMessageData(arg0, items) {
   }
   let currentUser = authStore.getCurrentUser();
   if (null == currentUser) {
-    let obj3 = importDefault(3894);
+    let obj3 = importDefault(3956);
     obj = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon: null, content: "Current user is null", toastDurationMs: 4000 };
     obj[1] = function icon() {
       return callback2(callback(table[14]).WarningIcon, {});
@@ -119,7 +119,7 @@ function buildTestMessageData(arg0, items) {
         } else {
           obj3 = { id: null, format_type: null, name: "Cheer" };
           obj3[0] = tmp20;
-          obj3[1] = require(4860) /* StickerFormat */.StickerFormat.APNG;
+          obj3[1] = require(4922) /* StickerFormat */.StickerFormat.APNG;
         }
         const items1 = [obj3];
         obj1[2] = items1;
@@ -208,13 +208,13 @@ function buildReactionNotification(arg0, items) {
     obj[6] = closure_22;
     obj = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
     obj[0] = message.id;
-    obj[1] = require(10274) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.REACTION);
+    obj[1] = require(10413) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.REACTION);
     obj[2] = function onDismiss() {
       return callback(table[16]).clearNotification();
     };
-    const obj2 = require(10274) /* extractMetadataFromNotification */;
+    const obj2 = require(10413) /* extractMetadataFromNotification */;
     const tmp12 = InAppNotificationTypes;
-    obj[3] = require(10274) /* extractMetadataFromNotification */.generateInAppNotificationId();
+    obj[3] = require(10413) /* extractMetadataFromNotification */.generateInAppNotificationId();
     const merged = Object.assign(obj);
     return obj;
   }
@@ -255,13 +255,13 @@ let items2 = [
         obj[4] = message;
         obj = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
         obj[0] = message.id;
-        obj[1] = require(10274) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE);
+        obj[1] = require(10413) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE);
         obj[2] = function onDismiss() {
           return callback(table[16]).clearNotification();
         };
-        const obj2 = require(10274) /* extractMetadataFromNotification */;
+        const obj2 = require(10413) /* extractMetadataFromNotification */;
         const tmp9 = InAppNotificationTypes;
-        obj[3] = require(10274) /* extractMetadataFromNotification */.generateInAppNotificationId();
+        obj[3] = require(10413) /* extractMetadataFromNotification */.generateInAppNotificationId();
         const merged = Object.assign(obj);
         return obj;
       }
@@ -302,12 +302,12 @@ let items2 = [
         obj[3] = obj;
         const obj1 = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
         obj1[0] = message.id;
-        obj1[1] = require(10274) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE_REMINDER);
+        obj1[1] = require(10413) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE_REMINDER);
         obj1[2] = function onDismiss() {
           return callback(table[16]).clearNotification();
         };
-        const obj5 = require(10274) /* extractMetadataFromNotification */;
-        obj1[3] = require(10274) /* extractMetadataFromNotification */.generateInAppNotificationId();
+        const obj5 = require(10413) /* extractMetadataFromNotification */;
+        obj1[3] = require(10413) /* extractMetadataFromNotification */.generateInAppNotificationId();
         const merged = Object.assign(obj1);
         return obj;
       }
@@ -344,7 +344,7 @@ const items3 = [
         channel = store.getChannel(channelId);
       }
       if (null == channel) {
-        let obj1 = importDefault(3894);
+        let obj1 = importDefault(3956);
         let obj = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon: null, content: "Select a channel first", toastDurationMs: 4000 };
         obj[1] = function icon() {
           return callback2(callback(table[14]).WarningIcon, {});
@@ -374,12 +374,12 @@ const items3 = [
         obj1 = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
         obj1[0] = castResult;
         const obj5 = importDefault(11);
-        obj1[1] = require(10274) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE_FAILED_TO_SEND);
+        obj1[1] = require(10413) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE_FAILED_TO_SEND);
         obj1[2] = function onDismiss() {
           return callback(table[16]).clearNotification();
         };
-        const obj8 = require(10274) /* extractMetadataFromNotification */;
-        obj1[3] = require(10274) /* extractMetadataFromNotification */.generateInAppNotificationId();
+        const obj8 = require(10413) /* extractMetadataFromNotification */;
+        obj1[3] = require(10413) /* extractMetadataFromNotification */.generateInAppNotificationId();
         const merged = Object.assign(obj1);
         return obj;
       }
@@ -393,7 +393,7 @@ const items3 = [
       const tmp = getSelectedGuildChannel();
       let currentUser = authStore.getCurrentUser();
       if (null == currentUser) {
-        let obj = importDefault(3894);
+        let obj = importDefault(3956);
         obj = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon: null, content: "Current user is null", toastDurationMs: 4000 };
         obj[1] = function icon() {
           return callback2(callback(table[14]).WarningIcon, {});
@@ -422,12 +422,12 @@ const items3 = [
           const obj2 = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
           obj2[0] = tmp11.id;
           const obj5 = importDefault(11);
-          obj2[1] = require(10274) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.FORUM_THREAD_CREATED);
+          obj2[1] = require(10413) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.FORUM_THREAD_CREATED);
           obj2[2] = function onDismiss() {
             return callback(table[16]).clearNotification();
           };
-          const obj8 = require(10274) /* extractMetadataFromNotification */;
-          obj2[3] = require(10274) /* extractMetadataFromNotification */.generateInAppNotificationId();
+          const obj8 = require(10413) /* extractMetadataFromNotification */;
+          obj2[3] = require(10413) /* extractMetadataFromNotification */.generateInAppNotificationId();
           const merged = Object.assign(obj2);
           return obj1;
         }
@@ -442,12 +442,12 @@ const items3 = [
     build: function buildBugReporterNotification() {
       let obj = { type: InAppNotificationTypes.BUG_REPORTER, image: null };
       obj = { key: "dev-tools-bug-reporter-test", duration: null, onDismiss: null, inAppNotificationId: null };
-      obj[1] = require(10274) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.BUG_REPORTER);
+      obj[1] = require(10413) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.BUG_REPORTER);
       obj[2] = function onDismiss() {
         return callback(table[16]).clearNotification();
       };
-      const obj3 = require(10274) /* extractMetadataFromNotification */;
-      obj[3] = require(10274) /* extractMetadataFromNotification */.generateInAppNotificationId();
+      const obj3 = require(10413) /* extractMetadataFromNotification */;
+      obj[3] = require(10413) /* extractMetadataFromNotification */.generateInAppNotificationId();
       const merged = Object.assign(obj);
       return obj;
     }
@@ -465,15 +465,15 @@ const items3 = [
         ({ channel: obj[1], guild: obj[2] } = tmp);
         obj = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
         obj[0] = tmp.guild.id;
-        obj[1] = require(10274) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.ALERT);
+        obj[1] = require(10413) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.ALERT);
         obj[2] = function onDismiss() {
           return callback(table[16]).clearNotification();
         };
-        const obj3 = require(10274) /* extractMetadataFromNotification */;
-        obj[3] = require(10274) /* extractMetadataFromNotification */.generateInAppNotificationId();
+        const obj3 = require(10413) /* extractMetadataFromNotification */;
+        obj[3] = require(10413) /* extractMetadataFromNotification */.generateInAppNotificationId();
         const merged = Object.assign(obj);
         tmp2 = obj;
-        const obj4 = require(10274) /* extractMetadataFromNotification */;
+        const obj4 = require(10413) /* extractMetadataFromNotification */;
       }
       return tmp2;
     }
@@ -485,7 +485,7 @@ const items3 = [
     build: function buildMessageRequestNotification() {
       let currentUser = authStore.getCurrentUser();
       if (null == currentUser) {
-        let obj = importDefault(3894);
+        let obj = importDefault(3956);
         obj = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon: null, content: "Current user is null", toastDurationMs: 4000 };
         obj[1] = function icon() {
           return callback2(callback(table[14]).WarningIcon, {});
@@ -501,15 +501,15 @@ const items3 = [
         const _HermesInternal = HermesInternal;
         const obj1 = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
         obj1[0] = "dev-tools-message-request-" + currentUser.id;
-        obj1[1] = require(10274) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE_REQUEST);
+        obj1[1] = require(10413) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE_REQUEST);
         obj1[2] = function onDismiss() {
           return callback(table[16]).clearNotification();
         };
-        const obj5 = require(10274) /* extractMetadataFromNotification */;
-        obj1[3] = require(10274) /* extractMetadataFromNotification */.generateInAppNotificationId();
+        const obj5 = require(10413) /* extractMetadataFromNotification */;
+        obj1[3] = require(10413) /* extractMetadataFromNotification */.generateInAppNotificationId();
         const merged = Object.assign(obj1);
         tmp5 = obj;
-        const obj6 = require(10274) /* extractMetadataFromNotification */;
+        const obj6 = require(10413) /* extractMetadataFromNotification */;
       }
       return tmp5;
     }
@@ -521,12 +521,12 @@ const items3 = [
     build: function buildRestrictedHoursWarningNotification() {
       let obj = { type: InAppNotificationTypes.RESTRICTED_HOURS_WARNING, title: "Restricted Hours Warning", subtitle: "Test restricted hours warning." };
       obj = { key: "dev-tools-restricted-hours-warning", duration: null, onDismiss: null, inAppNotificationId: null };
-      obj[1] = require(10274) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.RESTRICTED_HOURS_WARNING);
+      obj[1] = require(10413) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.RESTRICTED_HOURS_WARNING);
       obj[2] = function onDismiss() {
         return callback(table[16]).clearNotification();
       };
-      const obj3 = require(10274) /* extractMetadataFromNotification */;
-      obj[3] = require(10274) /* extractMetadataFromNotification */.generateInAppNotificationId();
+      const obj3 = require(10413) /* extractMetadataFromNotification */;
+      obj[3] = require(10413) /* extractMetadataFromNotification */.generateInAppNotificationId();
       const merged = Object.assign(obj);
       return obj;
     }
@@ -538,12 +538,12 @@ const items3 = [
     build: function buildRestrictedScheduleUpdatedNotification() {
       let obj = { type: InAppNotificationTypes.RESTRICTED_SCHEDULE_UPDATED, title: "Restricted Schedule Updated", subtitle: "Test restricted schedule update." };
       obj = { key: "dev-tools-restricted-schedule-updated", duration: null, onDismiss: null, inAppNotificationId: null };
-      obj[1] = require(10274) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.RESTRICTED_SCHEDULE_UPDATED);
+      obj[1] = require(10413) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.RESTRICTED_SCHEDULE_UPDATED);
       obj[2] = function onDismiss() {
         return callback(table[16]).clearNotification();
       };
-      const obj3 = require(10274) /* extractMetadataFromNotification */;
-      obj[3] = require(10274) /* extractMetadataFromNotification */.generateInAppNotificationId();
+      const obj3 = require(10413) /* extractMetadataFromNotification */;
+      obj[3] = require(10413) /* extractMetadataFromNotification */.generateInAppNotificationId();
       const merged = Object.assign(obj);
       return obj;
     }
@@ -573,13 +573,13 @@ let obj2 = {
       obj[4] = message;
       obj = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
       obj[0] = message.id;
-      obj[1] = require(10274) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE);
+      obj[1] = require(10413) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE);
       obj[2] = function onDismiss() {
         return callback(table[16]).clearNotification();
       };
-      const obj2 = require(10274) /* extractMetadataFromNotification */;
+      const obj2 = require(10413) /* extractMetadataFromNotification */;
       const tmp9 = InAppNotificationTypes;
-      obj[3] = require(10274) /* extractMetadataFromNotification */.generateInAppNotificationId();
+      obj[3] = require(10413) /* extractMetadataFromNotification */.generateInAppNotificationId();
       const merged = Object.assign(obj);
       return obj;
     }
@@ -596,7 +596,7 @@ let obj3 = {
       channel = store.getChannel(channelId);
     }
     if (null == channel) {
-      let obj1 = importDefault(3894);
+      let obj1 = importDefault(3956);
       let obj = { key: "DEV_IN_APP_NOTIF_TEST_ERROR", icon: null, content: "Select a channel first", toastDurationMs: 4000 };
       obj[1] = function icon() {
         return callback2(callback(table[14]).WarningIcon, {});
@@ -626,12 +626,12 @@ let obj3 = {
       obj1 = { key: null, duration: null, onDismiss: null, inAppNotificationId: null };
       obj1[0] = castResult;
       const obj5 = importDefault(11);
-      obj1[1] = require(10274) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE_FAILED_TO_SEND);
+      obj1[1] = require(10413) /* extractMetadataFromNotification */.getNotificationDuration(InAppNotificationTypes.MESSAGE_FAILED_TO_SEND);
       obj1[2] = function onDismiss() {
         return callback(table[16]).clearNotification();
       };
-      const obj8 = require(10274) /* extractMetadataFromNotification */;
-      obj1[3] = require(10274) /* extractMetadataFromNotification */.generateInAppNotificationId();
+      const obj8 = require(10413) /* extractMetadataFromNotification */;
+      obj1[3] = require(10413) /* extractMetadataFromNotification */.generateInAppNotificationId();
       const merged = Object.assign(obj1);
       return obj;
     }
@@ -652,10 +652,10 @@ export default function DevToolsInAppNotificationTestingScreen() {
   items = [tmp.content, { paddingBottom: tmp.content.padding + importDefault(1581)().bottom }];
   obj = { title: "Expand NUX", hasIcons: true, children: null };
   obj = { label: "Reset Expand NUX", subLabel: "Resets in app notification expand NUX dismissible content.", onPress: handleResetInAppNotificationExpandNux, icon: null, trailing: null };
-  obj[3] = callback(_require(13663).BeakerIcon, {});
-  obj[4] = callback(_require(5231).TableRowArrow, {});
-  obj[2] = callback(_require(5224).TableRow, obj);
-  const items1 = [callback(_require(5558).TableRowGroup, obj), , , ];
+  obj[3] = callback(_require(13726).BeakerIcon, {});
+  obj[4] = callback(_require(5293).TableRowArrow, {});
+  obj[2] = callback(_require(5286).TableRow, obj);
+  const items1 = [callback(_require(5620).TableRowGroup, obj), , , ];
   const obj1 = { size: null };
   obj1[0] = importDefault(712).space.PX_16;
   items1[1] = callback(_require(1297).Spacer, obj1);
@@ -691,7 +691,7 @@ export default function DevToolsInAppNotificationTestingScreen() {
     obj[4] = outer1_14(callback(outer1_2[26]).TableRowArrow, {});
     return outer1_14(callback(outer1_2[24]).TableRow, obj, label.label);
   });
-  items1[3] = callback(_require(5558).TableRowGroup, obj2);
+  items1[3] = callback(_require(5620).TableRowGroup, obj2);
   obj[2] = items1;
   return callback2(ScrollView, obj);
 };

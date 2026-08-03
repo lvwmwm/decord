@@ -1,10 +1,10 @@
-// Module ID: 7765
-// Function ID: 7766
+// Module ID: 7884
+// Function ID: 7885
 // Name: createCallSystemMessage
-// Dependencies: [4206, 1218, 4209, 676, 4211, 7766, 7767, 1236, 1419, 3863, 7751, 2]
+// Dependencies: [4268, 1218, 4271, 676, 4273, 7885, 7886, 1236, 1419, 3925, 7870, 2]
 // Exports: createCallSystemMessage
 
-// Module 7765 (createCallSystemMessage)
+// Module 7884 (createCallSystemMessage)
 import getParticipants from "getParticipants";
 import fetchFingerprint from "fetchFingerprint";
 import updateVoiceState from "updateVoiceState";
@@ -20,9 +20,9 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
   const channelId = message.getChannelId();
   const call = message.call;
   userVoiceChannelId = userVoiceChannelId.getUserVoiceChannelId(ME, id);
-  const tmp6 = importDefault(7766)(message);
+  const tmp6 = importDefault(7885)(message);
   participants = participants.getParticipants(channelId);
-  let obj = require(7767) /* useIsCallActive */;
+  let obj = require(7886) /* useIsCallActive */;
   const checkIsCallActiveResult = obj.checkIsCallActive(channelId, message.id);
   let tmp9 = !checkIsCallActiveResult;
   if (!checkIsCallActiveResult) {
@@ -63,11 +63,11 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
       const intl2 = tmp7(1236).intl;
       obj = { duration: null, timestamp: null };
       obj[0] = tmp6;
-      let tmp7Result = tmp7(3863);
+      let tmp7Result = tmp7(3925);
       obj[1] = tmp7Result.calendarFormat(message.timestamp);
       formatToPlainStringResult = intl2.formatToPlainString(tmp7(1236).t.SBDnp1, obj);
     } else {
-      tmp7Result = tmp7(3863);
+      tmp7Result = tmp7(3925);
       formatToPlainStringResult = tmp7Result.calendarFormat(message.timestamp);
     }
     const author = message.author;
@@ -76,6 +76,6 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
   }
   obj = { title: stringResult1, description: formatToPlainStringResult, isCallActive: checkIsCallActiveResult, missed: tmp9, avatarURLs: mapped, rawMilliseconds: timestamp.valueOf() };
   timestamp = message.timestamp;
-  const merged = Object.assign(importDefault(7751)(message));
+  const merged = Object.assign(importDefault(7870)(message));
   return obj;
 };

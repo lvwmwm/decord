@@ -1,9 +1,9 @@
-// Module ID: 11223
-// Function ID: 11224
+// Module ID: 11334
+// Function ID: 11335
 // Name: KEYBOARD_ANIMATION_DURATION
-// Dependencies: [5249, 2]
+// Dependencies: [5311, 2]
 
-// Module 11223 (KEYBOARD_ANIMATION_DURATION)
+// Module 11334 (KEYBOARD_ANIMATION_DURATION)
 import BottomSheetModal from "BottomSheetModal";
 
 const keyboardAnimationConfigs = BottomSheetModal.getKeyboardAnimationConfigs("keyboard", 250);

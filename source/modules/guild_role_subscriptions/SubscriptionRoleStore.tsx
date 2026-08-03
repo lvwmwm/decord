@@ -1,9 +1,9 @@
-// Module ID: 5053
-// Function ID: 5054
+// Module ID: 5115
+// Function ID: 5116
 // Name: computeRolesForGuild
-// Dependencies: [1415, 1936, 1942, 1935, 1862, 1874, 676, 3812, 589, 709, 2]
+// Dependencies: [1415, 1936, 1942, 1935, 1862, 1874, 676, 3874, 589, 709, 2]
 
-// Module 5053 (computeRolesForGuild)
+// Module 5115 (computeRolesForGuild)
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import { hasPermission } from "GuildRoleRecordTypeTag";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -46,11 +46,11 @@ function computeRolesForGuild(guildId) {
           let tmp15 = nextResult;
           let tmp16 = require;
           let tmp17 = dependencyMap;
-          let obj2 = require(3812) /* isSubscriptionRole */;
+          let obj2 = require(3874) /* isSubscriptionRole */;
           if (obj2.isSubscriptionRole(nextResult)) {
             let tmp18 = nextResult;
             let addResult = set.add(tmp15.id);
-            let tmp16Result = tmp16(3812);
+            let tmp16Result = tmp16(3874);
             if (tmp16Result.isSubscriptionRoleAvailableForPurchase(tmp15)) {
               let tmp20 = nextResult;
               let addResult1 = set1.add(tmp15.id);

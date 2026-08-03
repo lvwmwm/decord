@@ -1,8 +1,8 @@
-// Module ID: 15025
-// Function ID: 15026
-// Dependencies: [19, 17, 21, 4193, 712, 5034, 5145, 11438, 2]
+// Module ID: 15312
+// Function ID: 15313
+// Dependencies: [19, 17, 21, 4255, 712, 5096, 5207, 11548, 2]
 
-// Module 15025
+// Module 15312
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -19,9 +19,9 @@ const memoResult = require("noop").memo(function GuildsBarGeoRestrictedBadge(sty
   let obj = { style: items, pointerEvents: "none", children: null };
   items = [tmp.badgeImageContainer, style.style];
   obj = { source: null, style: null };
-  obj[0] = importDefault(11438);
+  obj[0] = importDefault(11548);
   obj[1] = tmp.badgeImage;
-  obj[2] = jsx(importDefault(5145), { source: null, style: null });
+  obj[2] = jsx(importDefault(5207), { source: null, style: null });
   return <View source={null} style={null} />;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/guilds_bar/native/GuildsBarGeoRestrictedBadge.tsx");

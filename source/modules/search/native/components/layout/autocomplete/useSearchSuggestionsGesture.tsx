@@ -1,10 +1,10 @@
-// Module ID: 15483
-// Function ID: 15484
+// Module ID: 15550
+// Function ID: 15551
 // Name: inBoundingBox
-// Dependencies: [19, 4054, 11466, 1581, 500, 5277, 2]
+// Dependencies: [19, 4116, 11576, 1581, 500, 5339, 2]
 // Exports: useSearchSuggestionsGesture
 
-// Module 15483 (inBoundingBox)
+// Module 15550 (inBoundingBox)
 import noop from "noop";
 
 const require = arg1;
@@ -56,7 +56,7 @@ export const useSearchSuggestionsGesture = function useSearchSuggestionsGesture(
       const rect = closure_2.get();
       let tmp2 = null == rect;
       if (!tmp2) {
-        if (typeof outer1_4 !== "fileFinishedImporting") {
+        if (typeof outer1_4 !== "error") {
           HermesBuiltin.throwTypeError();
         }
         const first = arg0.allTouches[0];

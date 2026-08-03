@@ -1,10 +1,10 @@
-// Module ID: 11894
-// Function ID: 11895
+// Module ID: 11990
+// Function ID: 11991
 // Name: useFavoritesGuildCategoryAddAction
-// Dependencies: [5, 19, 676, 11895, 1959, 1865, 1236, 2971, 2]
+// Dependencies: [5, 19, 676, 11991, 1959, 1865, 1236, 3001, 2]
 // Exports: default
 
-// Module 11894 (useFavoritesGuildCategoryAddAction)
+// Module 11990 (useFavoritesGuildCategoryAddAction)
 import getFavoritesAwareGuildName from "getFavoritesAwareGuildName";
 import noop from "noop";
 import { ChannelTypes } from "ME";
@@ -77,7 +77,7 @@ export default function useFavoritesGuildCategoryAddAction(id) {
     if (id.type === ChannelTypes.GUILD_CATEGORY) {
       obj = { label: null, perform: null };
       const intl = _require(1236).intl;
-      obj[0] = intl.string(importDefault(2971)["1QJmIL"]);
+      obj[0] = intl.string(importDefault(3001)["1QJmIL"]);
       obj[1] = callback;
       tmp4 = obj;
     }

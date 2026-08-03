@@ -1,9 +1,9 @@
-// Module ID: 13819
-// Function ID: 13820
+// Module ID: 13886
+// Function ID: 13887
 // Name: route
-// Dependencies: [7761, 676, 10133, 1236, 2743, 4409, 13820, 2]
+// Dependencies: [7880, 676, 10272, 1236, 2773, 4471, 13887, 2]
 
-// Module 13819 (route)
+// Module 13886 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -15,7 +15,7 @@ obj = {
   useTrailing() {
     const intl = require(1236) /* getSystemLocale */.intl;
     const intl2 = require(1236) /* getSystemLocale */.intl;
-    return "" + intl.string(require(1236) /* getSystemLocale */.t.XxRj7f) + " \u2022 " + intl2.string(importDefault(2743).FTawSP);
+    return "" + intl.string(require(1236) /* getSystemLocale */.t.XxRj7f) + " \u2022 " + intl2.string(importDefault(2773).FTawSP);
   },
   usePredicate: require("useAgeVerificationRunner").useShowAssignedAgeGroupSettings,
   screen: obj
@@ -23,7 +23,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.AGE_GROUP,
   getComponent() {
-    return require(13820) /* SettingsAgeGroupHeader */.default;
+    return require(13887) /* SettingsAgeGroupHeader */.default;
   }
 };
 const route = createToggle.createRoute(obj);

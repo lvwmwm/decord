@@ -1,9 +1,9 @@
-// Module ID: 5690
-// Function ID: 5691
+// Module ID: 10657
+// Function ID: 10658
 // Name: map
-// Dependencies: [5691, 5692, 5693, 589, 709, 2]
+// Dependencies: [10658, 10404, 10659, 589, 709, 2]
 
-// Module 5690 (map)
+// Module 10657 (map)
 import { FrameLayoutModes } from "FrameLayoutModes";
 import { ActivityPanelModes } from "ActivityPanelModes";
 import { Store } from "initialize";
@@ -75,7 +75,7 @@ const framesStoreClass = new FramesStoreClass(require("dispatcher"), {
     let proxyTicket;
     applicationId = applicationId.applicationId;
     ({ proxyTicket, channelId } = applicationId);
-    const tmp = importDefault(5693)(applicationId);
+    const tmp = importDefault(10659)(applicationId);
     if (null != tmp) {
       map.delete(applicationId);
       const obj = { applicationId: null, url: null, connectedSince: null, layoutMode: null, activityPanelMode: null, proxyTicket: null, channelId: null };

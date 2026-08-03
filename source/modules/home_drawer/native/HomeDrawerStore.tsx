@@ -1,10 +1,10 @@
-// Module ID: 14949
-// Function ID: 14950
+// Module ID: 15021
+// Function ID: 15022
 // Name: withEqualityFn
-// Dependencies: [676, 700, 4054, 3806, 2]
+// Dependencies: [676, 700, 4116, 3868, 2]
 // Exports: computeMaxX
 
-// Module 14949 (withEqualityFn)
+// Module 15021 (withEqualityFn)
 import { DM_WIDTH } from "ME";
 import identity from "identity";
 
@@ -12,12 +12,12 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   const _require = arg0;
   const dependencyMap = arg1;
   let obj = { panelX: null, gestureState: null, maxX: 0, lastInteractionAt: null, isPanelTouchActive: null, setPanelX: null, updateMaxX: null, noteInteraction: null };
-  obj[0] = _require(4054).makeMutable(0);
-  const obj2 = _require(4054);
-  obj[1] = _require(4054).makeMutable({ active: false, initialX: 0, initialY: 0, panelX: 0 });
+  obj[0] = _require(4116).makeMutable(0);
+  const obj2 = _require(4116);
+  obj[1] = _require(4116).makeMutable({ active: false, initialX: 0, initialY: 0, panelX: 0 });
   obj[3] = { current: 0 };
-  const obj3 = _require(4054);
-  obj[4] = _require(4054).makeMutable(false);
+  const obj3 = _require(4116);
+  obj[4] = _require(4116).makeMutable(false);
   obj[5] = function setPanelX(arg0) {
     let gestureState;
     let panelX;
@@ -35,12 +35,12 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   obj[6] = function updateMaxX(width, left) {
     callback({ maxX: width.width - left.left - left.right - outer1_2 - 8 + 8 });
   };
-  obj[7] = function noteInteraction(arg0, arg1) {
+  obj[7] = function noteInteraction() {
     callback2().lastInteractionAt.current = Date.now();
   };
   return obj;
 }, require("isIterable").shallow);
-let result = require("module_4054").fileFinishedImporting("modules/home_drawer/native/HomeDrawerStore.tsx");
+let result = require("module_4116").fileFinishedImporting("modules/home_drawer/native/HomeDrawerStore.tsx");
 
 export default withEqualityFn;
 export const computeMaxX = function computeMaxX(width, left) {

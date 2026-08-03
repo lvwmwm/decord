@@ -1,10 +1,10 @@
-// Module ID: 4102
-// Function ID: 4103
+// Module ID: 4164
+// Function ID: 4165
 // Name: getPowerupEntitlementPrice
 // Dependencies: [2]
 // Exports: default
 
-// Module 4102 (getPowerupEntitlementPrice)
+// Module 4164 (getPowerupEntitlementPrice)
 const result = require("set").fileFinishedImporting("modules/premium/powerups/utils/getPowerupEntitlementPrice.tsx");
 
 export default function getPowerupEntitlementPrice(tenant_metadata) {

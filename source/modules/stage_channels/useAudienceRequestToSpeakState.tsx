@@ -1,10 +1,10 @@
-// Module ID: 4378
-// Function ID: 4379
+// Module ID: 4440
+// Function ID: 4441
 // Name: useAudienceRequestToSpeakState
-// Dependencies: [4209, 589, 2]
+// Dependencies: [4271, 589, 2]
 // Exports: default, getAudienceRequestToSpeakState
 
-// Module 4378 (useAudienceRequestToSpeakState)
+// Module 4440 (useAudienceRequestToSpeakState)
 import updateVoiceState from "updateVoiceState";
 
 const require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 15185
-// Function ID: 15186
+// Module ID: 15166
+// Function ID: 15167
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 
-// Module 15185 (apexExperiment)
+// Module 15166 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { MEDIUM: "medium", LARGE: "large" };

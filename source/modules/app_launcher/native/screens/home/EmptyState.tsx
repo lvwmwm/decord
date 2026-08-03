@@ -1,10 +1,10 @@
-// Module ID: 11298
-// Function ID: 11299
+// Module ID: 11409
+// Function ID: 11410
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4193, 712, 11239, 8021, 11299, 4189, 1236, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 11350, 8358, 11410, 4251, 1236, 2]
 // Exports: default
 
-// Module 11298 (EmptyState)
+// Module 11409 (EmptyState)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,14 +23,14 @@ const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/na
 
 export default function EmptyState() {
   const tmp = createCacheKey();
-  let obj = require(11239) /* handleApplicationSelected */;
-  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(require(8021) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.HOME_EMPTY);
+  let obj = require(11350) /* handleApplicationSelected */;
+  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(require(8358) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.HOME_EMPTY);
   obj = { style: tmp.container, children: null };
-  const items = [callback(importDefault(11299), {}), ];
+  const items = [callback(importDefault(11410), {}), ];
   obj = { style: tmp.textContainer, variant: "text-md/semibold", color: "text-default", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t["V7+xhH"]);
-  items[1] = callback(require(4189) /* Text */.Text, obj);
+  items[1] = callback(require(4251) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 };

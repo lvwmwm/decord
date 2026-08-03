@@ -1,10 +1,10 @@
-// Module ID: 10275
-// Function ID: 10276
+// Module ID: 10414
+// Function ID: 10415
 // Name: set
-// Dependencies: [712, 4054, 2]
+// Dependencies: [712, 4116, 2]
 
-// Module 10275 (set)
-import { Easing } from "module_4054";
+// Module 10414 (set)
+import { Easing } from "module_4116";
 import set from "set";
 
 let set = new Set([10, 25]);

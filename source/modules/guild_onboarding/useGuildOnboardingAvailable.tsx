@@ -1,10 +1,10 @@
-// Module ID: 10006
-// Function ID: 10007
+// Module ID: 5849
+// Function ID: 5850
 // Name: useGuildOnboardingAvailable
 // Dependencies: [1934, 676, 589, 2]
 // Exports: default, isGuildOnboardingAvailable
 
-// Module 10006 (useGuildOnboardingAvailable)
+// Module 5849 (useGuildOnboardingAvailable)
 import initialize from "initialize";
 import { GuildFeatures } from "ME";
 

@@ -1,10 +1,10 @@
-// Module ID: 5800
-// Function ID: 5801
+// Module ID: 6895
+// Function ID: 6896
 // Name: maybeFetchCollectiblesForInvoices
-// Dependencies: [5, 5801, 5799, 676, 5802, 709, 530, 698, 1356, 1306, 1342, 2]
+// Dependencies: [5, 6896, 6894, 676, 6897, 709, 530, 698, 1356, 1306, 1342, 2]
 // Exports: getLinkCodeForCurrentUser, removeLinkForUserId, shareIarWithParents, updateLinkForUserId
 
-// Module 5800 (maybeFetchCollectiblesForInvoices)
+// Module 6895 (maybeFetchCollectiblesForInvoices)
 import dispatcher from "dispatcher";
 import getSettings from "getSettings";
 import { FamilyCenterAction } from "items";

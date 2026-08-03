@@ -1,10 +1,10 @@
-// Module ID: 10712
-// Function ID: 10713
+// Module ID: 10820
+// Function ID: 10821
 // Name: useCanShowTooltip
-// Dependencies: [19, 10713, 589, 9616, 2]
+// Dependencies: [19, 10821, 589, 9764, 2]
 // Exports: useCanShowTooltip
 
-// Module 10712 (useCanShowTooltip)
+// Module 10820 (useCanShowTooltip)
 import noop from "noop";
 import set from "set";
 

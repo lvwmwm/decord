@@ -1,10 +1,10 @@
-// Module ID: 11737
-// Function ID: 11738
+// Module ID: 11840
+// Function ID: 11841
 // Name: useProvisionalAccountApplication
-// Dependencies: [5948, 589, 5525, 2]
+// Dependencies: [7027, 589, 5587, 2]
 // Exports: default
 
-// Module 11737 (useProvisionalAccountApplication)
+// Module 11840 (useProvisionalAccountApplication)
 import recountRelationshipTypes from "recountRelationshipTypes";
 
 const require = arg1;
@@ -18,5 +18,5 @@ export default function useProvisionalAccountApplication(arg0) {
     return 0 !== gameRelationshipsForUser.length ? gameRelationshipsForUser[0].applicationId : undefined;
   });
   const obj = _require(589);
-  return _require(5525).useGetOrFetchApplication(stateFromStores);
+  return _require(5587).useGetOrFetchApplication(stateFromStores);
 };

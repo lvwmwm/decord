@@ -1,9 +1,9 @@
-// Module ID: 13536
-// Function ID: 13537
+// Module ID: 13599
+// Function ID: 13600
 // Name: processColor
-// Dependencies: [32, 17, 1371, 4230, 4212, 1372, 4240, 4265, 3830, 1874, 676, 712, 6047, 6046, 10846, 9087, 4384, 1236, 4372, 2]
+// Dependencies: [32, 17, 1371, 4292, 4274, 1372, 4302, 4327, 3892, 1874, 676, 712, 7125, 7124, 10946, 9260, 4446, 1236, 4434, 2]
 
-// Module 13536 (processColor)
+// Module 13599 (processColor)
 import _slicedToArray from "_slicedToArray";
 import { processColor } from "getSystemLocale";
 import participantFromServer from "participantFromServer";
@@ -25,7 +25,7 @@ class VoiceNotificationManager {
     obj = Object.create(new.target.prototype);
     VoiceNotificationManager = obj;
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "flex", connectionState: "container", selfMute: false, deafened: true, isPushToTalk: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", embeddedActivity: null, isStreaming: "b4c9ac154b2122e14fc424ce2fde282f" };
+    obj.state = { channelId: "flex", connectionState: "concat", selfMute: false, deafened: true, isPushToTalk: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", embeddedActivity: null, isStreaming: "f5469f13388be946fb11fec06ad032e5" };
     obj.handleVoiceStateChange = function handleVoiceStateChange() {
       const channelId = outer1_9.getChannelId();
       const state = outer1_9.getState();
@@ -230,7 +230,7 @@ prototype["terminate"] = function terminate() {
 };
 let set = Object.create(VoiceNotificationManager.prototype);
 set.voiceServiceHandlerId = 9000;
-set.state = { channelId: "flex", connectionState: "container", selfMute: false, deafened: true, isPushToTalk: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", embeddedActivity: null, isStreaming: "b4c9ac154b2122e14fc424ce2fde282f" };
+set.state = { channelId: "flex", connectionState: "concat", selfMute: false, deafened: true, isPushToTalk: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", embeddedActivity: null, isStreaming: "f5469f13388be946fb11fec06ad032e5" };
 set.handleVoiceStateChange = function handleVoiceStateChange() {
   const channelId = outer1_9.getChannelId();
   const state = outer1_9.getState();

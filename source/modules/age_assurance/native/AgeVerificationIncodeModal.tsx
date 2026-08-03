@@ -1,10 +1,10 @@
-// Module ID: 6754
-// Function ID: 6755
+// Module ID: 7712
+// Function ID: 7713
 // Name: AgeVerificationIncodeModal
-// Dependencies: [19, 21, 4193, 712, 4399, 1236, 6755, 6756, 6761, 5574, 2]
+// Dependencies: [19, 21, 4255, 712, 4461, 1236, 5907, 7713, 7718, 5636, 2]
 // Exports: default
 
-// Module 6754 (AgeVerificationIncodeModal)
+// Module 7712 (AgeVerificationIncodeModal)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -32,7 +32,7 @@ export default function AgeVerificationIncodeModal(webviewUrl) {
   const memo = React.useMemo(() => {
     function handleClose() {
       dependencyMap();
-      let arr = callback2(4399);
+      let arr = callback2(4461);
       arr = arr.pop();
     }
     const uRL = new URL(closure_0);
@@ -45,11 +45,11 @@ export default function AgeVerificationIncodeModal(webviewUrl) {
       const obj = { onPress: handleClose, text: null };
       const intl = callback(1236).intl;
       obj[1] = intl.string(callback(1236).t.cpT0Cq);
-      return handleClose(callback(6755).HeaderActionButton, obj);
+      return handleClose(callback(5907).HeaderActionButton, obj);
     };
     obj[3] = function render(arg0, arg1) {
       let closure_0 = arg1;
-      return handleClose(callback2(6756), {
+      return handleClose(callback2(7713), {
         onClose: handleClose,
         trustedOrigin: origin,
         onMethodSelected(injectedJavaScriptBeforeContentLoaded) {
@@ -65,10 +65,10 @@ export default function AgeVerificationIncodeModal(webviewUrl) {
         const obj = { onPress: handleClose, text: null };
         const intl = callback(1236).intl;
         obj[1] = intl.string(callback(1236).t.cpT0Cq);
-        return handleClose(callback(6755).HeaderActionButton, obj);
+        return handleClose(callback(5907).HeaderActionButton, obj);
       },
       render(injectedJavaScriptBeforeContentLoaded) {
-        return handleClose(callback2(6761), { webviewUrl: closure_0, onComplete: callback2, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded });
+        return handleClose(callback2(7718), { webviewUrl: closure_0, onComplete: callback2, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded });
       }
     };
     return obj;

@@ -1,10 +1,10 @@
-// Module ID: 11283
-// Function ID: 11284
+// Module ID: 11394
+// Function ID: 11395
 // Name: TrackSectionHeader
-// Dependencies: [8020, 8436, 503, 2]
+// Dependencies: [8357, 8741, 503, 2]
 // Exports: default
 
-// Module 11283 (TrackSectionHeader)
+// Module 11394 (TrackSectionHeader)
 import handleDismissWithDismissed from "handleDismissWithDismissed";
 
 const require = arg1;
@@ -24,6 +24,6 @@ export default function TrackSectionHeader(viewed) {
   obj[2] = obj;
   obj = { disableTrack: !viewed };
   const items = [viewed];
-  importDefault(8436)(obj, obj, items);
+  importDefault(8741)(obj, obj, items);
   return children;
 };

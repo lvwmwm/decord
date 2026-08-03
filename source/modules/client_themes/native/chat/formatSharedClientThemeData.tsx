@@ -1,10 +1,10 @@
-// Module ID: 8009
-// Function ID: 8010
+// Module ID: 8127
+// Function ID: 8128
 // Name: formatSharedClientThemeData
-// Dependencies: [17, 6631, 1236, 2423, 2]
+// Dependencies: [17, 7614, 1236, 2453, 2]
 // Exports: formatSharedClientThemeData
 
-// Module 8009 (formatSharedClientThemeData)
+// Module 8127 (formatSharedClientThemeData)
 import { Image } from "get ActivityIndicator";
 
 const result = require("getSystemLocale").fileFinishedImporting("modules/client_themes/native/chat/formatSharedClientThemeData.tsx");
@@ -20,14 +20,14 @@ export const formatSharedClientThemeData = function formatSharedClientThemeData(
       str2 = ensureAvatarSourceResult.uri;
     }
     obj[3] = str2;
-    obj[4] = Image.resolveAssetSource(importDefault(6631)).uri;
+    obj[4] = Image.resolveAssetSource(importDefault(7614)).uri;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[5] = intl.string(require(1236) /* getSystemLocale */.t.SKNnqq);
     const intl2 = require(1236) /* getSystemLocale */.intl;
-    obj[6] = intl2.string(importDefault(2423).yl1iMm);
+    obj[6] = intl2.string(importDefault(2453).yl1iMm);
     const intl3 = require(1236) /* getSystemLocale */.intl;
     const _HermesInternal = HermesInternal;
-    obj[7] = "" + intl3.format(importDefault(2423).fQPSEf, { username: "__USERNAME__" });
+    obj[7] = "" + intl3.format(importDefault(2453).fQPSEf, { username: "__USERNAME__" });
     return obj;
   }
 };

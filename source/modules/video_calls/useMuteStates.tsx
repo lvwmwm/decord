@@ -1,10 +1,10 @@
-// Module ID: 10791
-// Function ID: 10792
+// Module ID: 5859
+// Function ID: 5860
 // Name: getMuteStates
-// Dependencies: [1934, 1218, 4240, 3821, 4209, 676, 589, 2]
+// Dependencies: [1934, 1218, 4302, 3883, 4271, 676, 589, 2]
 // Exports: default
 
-// Module 10791 (getMuteStates)
+// Module 5859 (getMuteStates)
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";

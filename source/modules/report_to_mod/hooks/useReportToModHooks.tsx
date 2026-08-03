@@ -1,10 +1,10 @@
-// Module ID: 9574
-// Function ID: 9575
+// Module ID: 9721
+// Function ID: 9722
 // Name: useIsReportToModEnabled
-// Dependencies: [19, 1862, 4411, 589, 5796, 5795, 6056, 5718, 7989, 2]
+// Dependencies: [19, 1862, 4473, 589, 5766, 5787, 5774, 6814, 8107, 2]
 // Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId
 
-// Module 9574 (useIsReportToModEnabled)
+// Module 9721 (useIsReportToModEnabled)
 import { useEffect } from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -50,10 +50,10 @@ export const useReportToModChannelId = function useReportToModChannelId(arg0) {
   });
 };
 export const useIsModeratorReportOrPostChannel = function useIsModeratorReportOrPostChannel(isModeratorReportChannel) {
-  return require(6056) /* canReportMessageToMods */.isModeratorReportOrPostChannel(isModeratorReportChannel);
+  return require(5774) /* canReportMessageToMods */.isModeratorReportOrPostChannel(isModeratorReportChannel);
 };
 export const useIsModeratorReportPostChannel = function useIsModeratorReportPostChannel(isModeratorReportChannel) {
-  return require(6056) /* canReportMessageToMods */.isModeratorReportPostChannel(isModeratorReportChannel);
+  return require(5774) /* canReportMessageToMods */.isModeratorReportPostChannel(isModeratorReportChannel);
 };
 export const useLoadReportedMessage = function useLoadReportedMessage(messageReference) {
   messageReference = messageReference.messageReference;
@@ -94,7 +94,7 @@ export const loadOriginalAuthorFromSnapshot = function loadOriginalAuthorFromSna
     }
   }
   if (null != reported_user_id) {
-    const user = require(7989) /* _fetchProfile */.getUser(reported_user_id);
-    const obj = require(7989) /* _fetchProfile */;
+    const user = require(8107) /* _fetchProfile */.getUser(reported_user_id);
+    const obj = require(8107) /* _fetchProfile */;
   }
 };

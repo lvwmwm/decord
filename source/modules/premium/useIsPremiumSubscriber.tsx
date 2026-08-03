@@ -1,10 +1,10 @@
-// Module ID: 8406
-// Function ID: 8407
+// Module ID: 8711
+// Function ID: 8712
 // Name: useIsPremiumSubscriber
 // Dependencies: [1874, 1876, 589, 1897, 2]
 // Exports: useIsPremiumSubscriber
 
-// Module 8406 (useIsPremiumSubscriber)
+// Module 8711 (useIsPremiumSubscriber)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { PremiumTypes } from "GuildFeatures";
 

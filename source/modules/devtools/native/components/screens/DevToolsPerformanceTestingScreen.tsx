@@ -1,8 +1,8 @@
-// Module ID: 14841
-// Function ID: 14842
-// Dependencies: [19, 17, 21, 4193, 712, 1480, 1581, 5558, 13655, 5224, 13652, 2]
+// Module ID: 14908
+// Function ID: 14909
+// Dependencies: [19, 17, 21, 4255, 712, 1480, 1581, 5620, 13718, 5286, 13715, 2]
 
-// Module 14841
+// Module 14908
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -21,7 +21,7 @@ const memoResult = require("noop").memo(function DevToolsPerformanceTestingScree
   obj[0] = importDefault(1581)().bottom + importDefault(712).space.PX_16;
   obj[1] = obj;
   const obj1 = { hasIcons: true, children: null };
-  const entries = Object.entries(_require(13655).PerformanceTestingScreens);
+  const entries = Object.entries(_require(13718).PerformanceTestingScreens);
   obj1[1] = entries.map((arg0) => {
     let tmp;
     [tmp, ] = arg0;
@@ -40,7 +40,7 @@ const memoResult = require("noop").memo(function DevToolsPerformanceTestingScree
     };
     return outer1_4(callback(outer1_2[9]).TableRow, obj, tmp);
   });
-  obj[2] = jsx(_require(5558).TableRowGroup, { hasIcons: true, children: null });
+  obj[2] = jsx(_require(5620).TableRowGroup, { hasIcons: true, children: null });
   return <ScrollView paddingBottom={null} />;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsPerformanceTestingScreen.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 15214
-// Function ID: 15215
+// Module ID: 15195
+// Function ID: 15196
 // Name: ChannelBadge
-// Dependencies: [19, 17, 1946, 21, 4193, 647, 15215, 11463, 4189, 1851, 2]
+// Dependencies: [19, 17, 1946, 21, 4255, 647, 15196, 11573, 4251, 1851, 2]
 // Exports: default
 
-// Module 15214 (ChannelBadge)
+// Module 15195 (ChannelBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import _getSystemLocale from "_getSystemLocale";
@@ -34,7 +34,7 @@ export default function ChannelBadge(arg0) {
       obj = { mentionsCount: null, isMentionLowImportance: null };
       obj[0] = mentionCount;
       obj[1] = isMentionLowImportance;
-      obj[1] = jsx(importDefault(15215), { mentionsCount: null, isMentionLowImportance: null });
+      obj[1] = jsx(importDefault(15196), { mentionsCount: null, isMentionLowImportance: null });
       let tmp5 = <View mentionsCount={null} isMentionLowImportance={null} />;
     }
     return tmp5;
@@ -42,7 +42,7 @@ export default function ChannelBadge(arg0) {
   if (isNewChannel) {
     const obj1 = { style: null, children: null };
     obj1[0] = tmp.channelInfoContainer;
-    obj1[1] = jsx(importDefault(11463), {});
+    obj1[1] = jsx(importDefault(11573), {});
     tmp5 = <View style={null}>{null}</View>;
   } else {
     tmp5 = null;
@@ -57,7 +57,7 @@ export default function ChannelBadge(arg0) {
             obj2[0] = tmp.channelInfoContainer;
             const obj3 = { variant: "text-xs/semibold", color: "text-muted", children: null };
             obj3[2] = tmp2(1851).humanizeValue(postsWithUnreadsCount, stateFromStores);
-            obj2[1] = jsx(tmp2(4189).Text, { variant: "text-xs/semibold", color: "text-muted", children: null });
+            obj2[1] = jsx(tmp2(4251).Text, { variant: "text-xs/semibold", color: "text-muted", children: null });
             tmp5 = <View style={null}>{null}</View>;
             const tmp2Result = tmp2(1851);
           }

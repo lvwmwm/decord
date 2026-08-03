@@ -1,9 +1,9 @@
-// Module ID: 5667
-// Function ID: 5668
+// Module ID: 5729
+// Function ID: 5730
 // Name: fromServer
-// Dependencies: [1883, 4232, 4216, 2]
+// Dependencies: [1883, 4294, 4278, 2]
 
-// Module 5667 (fromServer)
+// Module 5729 (fromServer)
 import "toJS";
 import createFromServer from "createFromServer";
 import createExecutable from "createExecutable";
@@ -29,7 +29,7 @@ prototype = function WishlistRecommendationRecord(skus) {
 class prototype extends tmp2 {
 }
 prototype["fromServer"] = function fromServer(skus) {
-  if (typeof prototype !== "fileFinishedImporting") {
+  if (typeof prototype !== "error") {
     HermesBuiltin.throwTypeError();
   }
   const tmp4 = new prototype("Trying to call a non-function", tmp3, tmp2, tmp);

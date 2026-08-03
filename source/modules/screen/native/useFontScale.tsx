@@ -1,10 +1,10 @@
-// Module ID: 4610
-// Function ID: 4611
+// Module ID: 4672
+// Function ID: 4673
 // Name: getFontScale
 // Dependencies: [19, 1475, 1477, 2]
 // Exports: getFontScale, useFontScale
 
-// Module 4610 (getFontScale)
+// Module 4672 (getFontScale)
 import noop from "noop";
 import getDimensionsStoreStateForEntry from "getDimensionsStoreStateForEntry";
 

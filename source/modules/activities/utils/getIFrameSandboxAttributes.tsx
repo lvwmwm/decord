@@ -1,10 +1,10 @@
-// Module ID: 10679
-// Function ID: 10680
+// Module ID: 10787
+// Function ID: 10788
 // Name: getIFrameSandboxAttributes
 // Dependencies: [2]
 // Exports: default
 
-// Module 10679 (getIFrameSandboxAttributes)
+// Module 10787 (getIFrameSandboxAttributes)
 let closure_0 = ["allow-pointer-lock", "allow-scripts", "allow-same-origin", "allow-forms"];
 const result = require("set").fileFinishedImporting("modules/activities/utils/getIFrameSandboxAttributes.tsx");
 

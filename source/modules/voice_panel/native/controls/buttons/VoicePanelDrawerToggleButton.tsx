@@ -1,10 +1,10 @@
-// Module ID: 16046
-// Function ID: 16047
+// Module ID: 16110
+// Function ID: 16111
 // Name: VoicePanelDrawerToggleButton
-// Dependencies: [19, 21, 4193, 712, 16027, 16014, 16028, 5572, 8402, 12625, 2]
+// Dependencies: [19, 21, 4255, 712, 16091, 16078, 16092, 5634, 8707, 12718, 2]
 // Exports: default
 
-// Module 16046 (VoicePanelDrawerToggleButton)
+// Module 16110 (VoicePanelDrawerToggleButton)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -29,23 +29,23 @@ export default function VoicePanelDrawerToggleButton(arg0) {
   let wrapperSpecs;
   ({ props, openTab, wrapperSpecs } = arg0);
   const tmp = createCacheKey();
-  let obj = require(16027) /* useVoicePanelButtonStyles */;
+  let obj = require(16091) /* useVoicePanelButtonStyles */;
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
-  ({ isDrawerOpen, handlePress, accessibilityLabel } = importDefault(16014)(openTab));
+  ({ isDrawerOpen, handlePress, accessibilityLabel } = importDefault(16078)(openTab));
   obj = { onPress: handlePress, props, accessibilityLabel, children: null };
-  const tmp5 = importDefault(16014)(openTab);
+  const tmp5 = importDefault(16078)(openTab);
   const tmp6 = closure_4;
   const items = [tmp.circle, { backgroundColor: voicePanelButtonStyles.iconBg.backgroundColor }];
-  const items1 = [callback(importDefault(5572), { style: items }), ];
+  const items1 = [callback(importDefault(5634), { style: items }), ];
   obj = { style: tmp.iconContainer, children: null };
-  const tmp7 = importDefault(16028);
+  const tmp7 = importDefault(16092);
   if (isDrawerOpen) {
-    let ChevronSmallUpIcon = tmp2(8402).ChevronSmallDownIcon;
+    let ChevronSmallUpIcon = tmp2(8707).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp2(12625).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp2(12718).ChevronSmallUpIcon;
   }
   obj[1] = callback(ChevronSmallUpIcon, { color: voicePanelButtonStyles.iconFill.color });
-  items1[1] = callback(importDefault(5572), obj);
+  items1[1] = callback(importDefault(5634), obj);
   obj[3] = items1;
   return tmp6(tmp7, obj);
 };

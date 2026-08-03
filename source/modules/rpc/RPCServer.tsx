@@ -1,9 +1,9 @@
-// Module ID: 13600
-// Function ID: 13601
+// Module ID: 13663
+// Function ID: 13664
 // Name: registerTransport
-// Dependencies: [5, 4096, 676, 12, 10646, 10640, 13578, 698, 38, 687, 2]
+// Dependencies: [5, 4158, 676, 12, 10699, 10693, 13641, 698, 38, 687, 2]
 
-// Module 13600 (registerTransport)
+// Module 13663 (registerTransport)
 import prototype from "prototype";
 import { TransportTypes } from "RPC_SCOPE_CONFIG";
 import ME from "ME";
@@ -59,7 +59,7 @@ prototype["handleConnect"] = function handleConnect(v) {
     if (null == currentUser) {
       v.close(constants2.CLOSE_NORMAL, "User logged out");
     } else {
-      obj.user = importDefault(10646)(currentUser);
+      obj.user = importDefault(10699)(currentUser);
     }
   }
   self.dispatch(v, null, constants3.DISPATCH, constants5.READY, obj);
@@ -687,8 +687,8 @@ prototype["dispatchToSubscriptions"] = function dispatchToSubscriptions(RELATION
     const subscriptions = this.subscriptions;
     const item = subscriptions.forEach((evt) => {
       if (evt.evt === RELATIONSHIP_UPDATE) {
-        let tmp5 = typeof prototype === "fileFinishedImporting";
-        if (typeof prototype !== "disabledUntil") {
+        let tmp5 = typeof prototype === "error";
+        if (typeof prototype !== "HAS_APPLICATION") {
           tmp5 = !tmp13(evt);
         }
         if (!tmp5) {
@@ -706,7 +706,7 @@ prototype["dispatchToSubscriptions"] = function dispatchToSubscriptions(RELATION
           tmp5 = tmp;
         }
         if (!tmp5) {
-          if (typeof callback !== "disabledUntil") {
+          if (typeof callback !== "HAS_APPLICATION") {
             callback = tmp6(evt);
           }
           self.dispatch(evt.socket, null, outer1_6.DISPATCH, evt.evt, callback);
@@ -739,7 +739,7 @@ prototype["storeWait"] = function storeWait(socket, arg1, timeout) {
         let closure_0 = arg0;
         const socket = closure_1;
         const timeout = setTimeout(() => {
-          if (typeof closure_0 !== "fileFinishedImporting") {
+          if (typeof closure_0 !== "error") {
             HermesBuiltin.throwTypeError();
           }
           outer1_5.removeSubscription(callback2, outer1_9, { uniqueId: outer1_4 });
@@ -756,7 +756,7 @@ prototype["storeWait"] = function storeWait(socket, arg1, timeout) {
         });
       });
       return promise.then((arg0) => {
-        if (typeof removeSubscription !== "fileFinishedImporting") {
+        if (typeof removeSubscription !== "error") {
           HermesBuiltin.throwTypeError();
         }
         self.removeSubscription(closure_1, outer1_9, { uniqueId: closure_4 });

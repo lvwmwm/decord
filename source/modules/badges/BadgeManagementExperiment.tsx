@@ -1,0 +1,18 @@
+// Module ID: 13803
+// Function ID: 13804
+// Name: apexExperiment
+// Dependencies: [1452, 2]
+// Exports: useIsBadgeManagementEnabled
+
+// Module 13803 (apexExperiment)
+import ApexExperiment from "ApexExperiment";
+
+const obj = { 1: null, 2: { enabled: true, tenureBadgeHideable: true } };
+obj[2] = { enabled: true, tenureBadgeHideable: false };
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-08-badge-management", kind: "user", defaultConfig: { enabled: false, tenureBadgeHideable: false }, variations: obj });
+const result = require("set").fileFinishedImporting("modules/badges/BadgeManagementExperiment.tsx");
+
+export default apexExperiment;
+export const useIsBadgeManagementEnabled = function useIsBadgeManagementEnabled(location) {
+  return apexExperiment.useConfig({ location: location.location }).enabled;
+};

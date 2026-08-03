@@ -1,9 +1,9 @@
-// Module ID: 14444
-// Function ID: 14445
+// Module ID: 14511
+// Function ID: 14512
 // Name: toggle
-// Dependencies: [1304, 7761, 589, 14442, 3866, 10133, 1236, 2]
+// Dependencies: [1304, 7880, 589, 14509, 3928, 10272, 1236, 2]
 
-// Module 14444 (toggle)
+// Module 14511 (toggle)
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import createToggle from "createToggle";
 
@@ -19,9 +19,9 @@ createToggle = {
     return require(589) /* initialize */.useStateFromStores(items, () => dataSavingMode.dataSavingMode);
   },
   onValueChange: function onDataSavingModeSettingValueChange(arg0) {
-    let obj = require(14442) /* UserSettingsText */;
+    let obj = require(14509) /* UserSettingsText */;
     obj = { videoUploadQuality: CHANNEL_SIDEBAR_WIDTH.videoUploadQuality, viewImageDescriptions: null, lowQualityImageMode: null, dataSavingMode: null };
-    const ViewImageDescriptions = require(3866) /* explicitContentFromProto */.ViewImageDescriptions;
+    const ViewImageDescriptions = require(3928) /* explicitContentFromProto */.ViewImageDescriptions;
     obj[1] = ViewImageDescriptions.getSetting();
     obj[2] = CHANNEL_SIDEBAR_WIDTH.lowQualityImageMode;
     obj[3] = arg0;

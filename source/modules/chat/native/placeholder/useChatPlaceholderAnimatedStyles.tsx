@@ -1,10 +1,10 @@
-// Module ID: 11746
-// Function ID: 11747
+// Module ID: 11849
+// Function ID: 11850
 // Name: useChatPlaceholderAnimatedStyles
-// Dependencies: [4185, 1297, 589, 4054, 4194, 4197, 2]
+// Dependencies: [4247, 1297, 589, 4116, 4256, 4259, 2]
 // Exports: default
 
-// Module 11746 (useChatPlaceholderAnimatedStyles)
+// Module 11849 (useChatPlaceholderAnimatedStyles)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 
 const require = arg1;

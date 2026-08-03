@@ -1,8 +1,8 @@
-// Module ID: 15966
-// Function ID: 15967
-// Dependencies: [109, 19, 17, 15967, 4207, 15968, 8841, 1372, 4208, 676, 21, 15970, 15943, 8840, 9064, 8938, 647, 9062, 8937, 15974, 500, 8865, 8842, 1236, 8862, 8864, 15975, 8939, 4009, 1358, 5572, 15883, 13195, 2]
+// Module ID: 16030
+// Function ID: 16031
+// Dependencies: [109, 19, 17, 16031, 4269, 16032, 9018, 1372, 4270, 676, 21, 16034, 16007, 9017, 9237, 9115, 647, 9235, 9114, 16038, 500, 9042, 9019, 1236, 9039, 9041, 16039, 9116, 4071, 1358, 5634, 15947, 13258, 2]
 
-// Module 15966
+// Module 16030
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "useCanConnect";
 import { NativeModules } from "getConsoleIcon";
@@ -27,7 +27,7 @@ let closure_18 = importAllResult.memo((arg0) => {
   let canShowTooltip;
   let targetRef;
   ({ targetRef, canShowTooltip } = arg0);
-  importDefault(15970)(targetRef, canShowTooltip);
+  importDefault(16034)(targetRef, canShowTooltip);
   return null;
 });
 const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConnectedToVoiceChannel) {

@@ -1,9 +1,9 @@
-// Module ID: 10203
-// Function ID: 10204
+// Module ID: 10342
+// Function ID: 10343
 // Name: GroupDMInviteManagement
-// Dependencies: [5, 32, 19, 17, 6700, 7692, 676, 21, 4193, 4620, 530, 12, 712, 10204, 5640, 1297, 10222, 10223, 1236, 5147, 503, 5574, 2]
+// Dependencies: [5, 32, 19, 17, 7671, 7815, 676, 21, 4255, 4682, 530, 12, 712, 10343, 5702, 1297, 10361, 10362, 1236, 5209, 503, 5636, 2]
 
-// Module 10203 (GroupDMInviteManagement)
+// Module 10342 (GroupDMInviteManagement)
 import closure_3 from "normalizeChannelPropertyForCompare";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "HeaderBackImage";
@@ -31,7 +31,7 @@ function GroupDMInviteManagement(channelId) {
   dependencyMap = tmp2[1];
   const tmp3 = callback(importAllResult.useState(true), 2);
   closure_3 = tmp3[1];
-  first(4620)(() => {
+  first(4682)(() => {
     function _fetchInvites() {
       const self = this;
       const tmp = callback(function*() {
@@ -144,11 +144,11 @@ function GroupDMInviteManagement(channelId) {
   [][0] = first;
   callback = importAllResult.useCallback((code) => code.code, []);
   if (tmp3[0]) {
-    let tmp14 = jsx(channelId(5640).SceneLoadingIndicator, {});
+    let tmp14 = jsx(channelId(5702).SceneLoadingIndicator, {});
   } else if (0 === first.length) {
     let obj = { lightSource: null, darkSource: null, title: null, body: null };
-    obj[0] = tmp4(10222);
-    obj[1] = tmp4(10223);
+    obj[0] = tmp4(10361);
+    obj[1] = tmp4(10362);
     const intl = channelId(1236).intl;
     obj[2] = intl.string(channelId(1236).t["+nLJkZ"]);
     const intl2 = channelId(1236).intl;
@@ -186,7 +186,7 @@ const memoResult = importAllResult.memo(function GroupDMInviteManagementScreen(c
     obj[outer1_9.INSTANT_INVITES_MANAGEMENT] = obj;
     return obj;
   }, items);
-  return jsx(channelId(5574).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
+  return jsx(channelId(5636).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
 });
 const result = require("noop").fileFinishedImporting("modules/instant_invite/native/components/GroupDMInviteManagementScreen.tsx");
 

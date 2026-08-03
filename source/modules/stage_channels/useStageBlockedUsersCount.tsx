@@ -1,10 +1,10 @@
-// Module ID: 7682
-// Function ID: 7683
+// Module ID: 7805
+// Function ID: 7806
 // Name: useStageBlockedUsersCount
-// Dependencies: [5012, 589, 5018, 2]
+// Dependencies: [5074, 589, 5080, 2]
 // Exports: getStageBlockedUsersCount, getStageIgnoredUsersCount, useStageBlockedUsers, useStageBlockedUsersCount, useStageIgnoredUsers, useStageIgnoredUsersCount
 
-// Module 7682 (useStageBlockedUsersCount)
+// Module 7805 (useStageBlockedUsersCount)
 import getActiveStageChannelIds from "getActiveStageChannelIds";
 
 const require = arg1;
@@ -35,14 +35,14 @@ export const useStageIgnoredUsersCount = function useStageIgnoredUsersCount(id1)
   }, items1);
 };
 export const getStageBlockedUsersCount = function getStageBlockedUsersCount(id) {
-  let num = store.getParticipantCount(id, require(5018) /* sortKey */.StageChannelParticipantNamedIndex.BLOCKED);
+  let num = store.getParticipantCount(id, require(5080) /* sortKey */.StageChannelParticipantNamedIndex.BLOCKED);
   if (num == null) {
     num = 0;
   }
   return num;
 };
 export const getStageIgnoredUsersCount = function getStageIgnoredUsersCount(id) {
-  let num = store.getParticipantCount(id, require(5018) /* sortKey */.StageChannelParticipantNamedIndex.IGNORED);
+  let num = store.getParticipantCount(id, require(5080) /* sortKey */.StageChannelParticipantNamedIndex.IGNORED);
   if (num == null) {
     num = 0;
   }

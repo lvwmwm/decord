@@ -1,10 +1,10 @@
-// Module ID: 14198
-// Function ID: 14199
+// Module ID: 14265
+// Function ID: 14266
 // Name: useVideoQuestClickCtaAndMaybeCloseModal
-// Dependencies: [19, 10508, 1467, 9500, 10510, 5040, 6016, 2]
+// Dependencies: [19, 10646, 1467, 9647, 10648, 5102, 7095, 2]
 // Exports: useVideoQuestClickCtaAndMaybeCloseModal
 
-// Module 14198 (useVideoQuestClickCtaAndMaybeCloseModal)
+// Module 14265 (useVideoQuestClickCtaAndMaybeCloseModal)
 import noop from "noop";
 
 const require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 4284
-// Function ID: 4285
+// Module ID: 4346
+// Function ID: 4347
 // Name: getHookError
 // Dependencies: [676, 589, 709, 2]
 
-// Module 4284 (getHookError)
+// Module 4346 (getHookError)
 import { MediaEngineHookTypes } from "ME";
 import { Store } from "initialize";
 

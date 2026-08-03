@@ -1,10 +1,10 @@
-// Module ID: 16448
-// Function ID: 16449
+// Module ID: 16514
+// Function ID: 16515
 // Name: GuildSettingsServerTagPickerCell
-// Dependencies: [19, 17, 21, 4193, 712, 3911, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 3973, 2]
 // Exports: default
 
-// Module 16448 (GuildSettingsServerTagPickerCell)
+// Module 16514 (GuildSettingsServerTagPickerCell)
 import "noop";
 import { Pressable } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -31,7 +31,7 @@ export default function GuildSettingsServerTagPickerCell(accessibilityLabel) {
   }
   ({ onPress, children } = accessibilityLabel);
   const tmp = createCacheKey();
-  let obj = require(3911) /* useCheckboxA11yNative */;
+  let obj = require(3973) /* useCheckboxA11yNative */;
   let radioA11yNative = obj.useRadioA11yNative({ selected });
   if ("button" === accessibilityRole) {
     obj = { accessibilityRole: "button", accessibilityState: null };

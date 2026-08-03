@@ -1,9 +1,9 @@
-// Module ID: 15023
-// Function ID: 15024
-// Dependencies: [19, 4011, 1415, 4010, 5031, 21, 4193, 712, 14969, 3897, 589, 5570, 15007, 14971, 4013, 9157, 14984, 15015, 14960, 4054, 14993, 5145, 2]
+// Module ID: 15310
+// Function ID: 15311
+// Dependencies: [19, 4073, 1415, 4072, 5093, 21, 4255, 712, 15258, 3959, 589, 5632, 15294, 15260, 4075, 9330, 15273, 15302, 15249, 4116, 15280, 5207, 2]
 
-// Module 15023
-import importAllResult from "module_4054";
+// Module 15310
+import importAllResult from "module_4116";
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 import GuildNSFWContentLevel from "GuildNSFWContentLevel";
 import handleConnectionOpen from "handleConnectionOpen";

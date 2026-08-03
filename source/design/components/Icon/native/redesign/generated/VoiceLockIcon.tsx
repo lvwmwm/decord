@@ -1,10 +1,10 @@
-// Module ID: 4716
-// Function ID: 4717
+// Module ID: 4778
+// Function ID: 4779
 // Name: VoiceLockIcon
-// Dependencies: [19, 21, 712, 3896, 4665, 2]
+// Dependencies: [19, 21, 712, 3958, 4727, 2]
 // Exports: VoiceLockIcon
 
-// Module 4716 (VoiceLockIcon)
+// Module 4778 (VoiceLockIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const VoiceLockIcon = function VoiceLockIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4665) /* registerAsset */;
+  obj[0] = require(4727) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3896) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

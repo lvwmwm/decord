@@ -1,10 +1,10 @@
-// Module ID: 4247
-// Function ID: 4248
+// Module ID: 4309
+// Function ID: 4310
 // Name: result
 // Dependencies: [687, 3, 2]
 // Exports: CLIP_NAME_TEMPLATE
 
-// Module 4247 (result)
+// Module 4309 (result)
 const obj = {};
 const result = 30 * require("set").Millis.SECOND;
 obj.SECONDS_30 = result;

@@ -1,10 +1,10 @@
-// Module ID: 14364
-// Function ID: 14365
+// Module ID: 14431
+// Function ID: 14432
 // Name: SettingsAccessibilityScreen
-// Dependencies: [19, 3867, 7761, 676, 21, 1236, 1945, 2583, 6614, 5639, 14365, 1480, 647, 10133, 13697, 2]
+// Dependencies: [19, 3929, 7880, 676, 21, 1236, 1945, 2613, 5915, 5701, 14432, 1480, 647, 10272, 13760, 2]
 // Exports: default
 
-// Module 14364 (SettingsAccessibilityScreen)
+// Module 14431 (SettingsAccessibilityScreen)
 import noop from "noop";
 import updateExistingSettings from "updateExistingSettings";
 import { MobileSetting } from "MobileSetting";

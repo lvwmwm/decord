@@ -1,9 +1,9 @@
-// Module ID: 8128
-// Function ID: 8129
+// Module ID: 8459
+// Function ID: 8460
 // Name: nativeEventEmitter
 // Dependencies: [17, 644, 705, 2]
 
-// Module 8128 (nativeEventEmitter)
+// Module 8459 (nativeEventEmitter)
 import get_ActivityIndicator from "get ActivityIndicator";
 import keys from "keys";
 

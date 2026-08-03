@@ -1,10 +1,10 @@
-// Module ID: 13596
-// Function ID: 13597
+// Module ID: 13659
+// Function ID: 13660
 // Name: transformApplication
 // Dependencies: [2]
 // Exports: default
 
-// Module 13596 (transformApplication)
+// Module 13659 (transformApplication)
 const result = require("set").fileFinishedImporting("modules/rpc/helpers/transformApplication.tsx");
 
 export default function transformApplication(name) {

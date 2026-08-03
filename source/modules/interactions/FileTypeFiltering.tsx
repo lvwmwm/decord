@@ -1,10 +1,10 @@
-// Module ID: 11349
-// Function ID: 11350
+// Module ID: 11459
+// Function ID: 11460
 // Name: fileTypesFormattedStringHelper
-// Dependencies: [32, 19, 1946, 500, 1236, 589, 4532, 2]
+// Dependencies: [32, 19, 1946, 500, 1236, 589, 4594, 2]
 // Exports: getFileTypeFiltering, useFileTypeFiltering, useFileTypesFormattedString
 
-// Module 11349 (fileTypesFormattedStringHelper)
+// Module 11459 (fileTypesFormattedStringHelper)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import _getSystemLocale from "_getSystemLocale";

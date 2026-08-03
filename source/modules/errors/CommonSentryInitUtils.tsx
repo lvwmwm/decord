@@ -1,10 +1,10 @@
-// Module ID: 13276
-// Function ID: 13277
+// Module ID: 13339
+// Function ID: 13340
 // Name: IGNORE_ANALYTICS_BREADCRUMB_EVENTS
 // Dependencies: [2]
 // Exports: filterThrottle
 
-// Module 13276 (IGNORE_ANALYTICS_BREADCRUMB_EVENTS)
+// Module 13339 (IGNORE_ANALYTICS_BREADCRUMB_EVENTS)
 const result = require("set").fileFinishedImporting("modules/errors/CommonSentryInitUtils.tsx");
 
 export const IGNORE_ANALYTICS_BREADCRUMB_EVENTS = ["notification_clicked", "experiment_user_triggered", "experiment_dm_triggered", "experiment_guild_triggered", "device_event", "react_soft_exception", "network_capabilities_changed", "foreground_service", "app_lifecycle", "ui_lifecycle", "touch_event", "http_request", "websocket_message_received"];

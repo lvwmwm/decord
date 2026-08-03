@@ -1,9 +1,9 @@
-// Module ID: 7953
-// Function ID: 7954
+// Module ID: 8071
+// Function ID: 8072
 // Name: fromBlob
-// Dependencies: [5, 4754, 7954, 2]
+// Dependencies: [5, 4816, 8072, 2]
 
-// Module 7953 (fromBlob)
+// Module 8071 (fromBlob)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -19,10 +19,10 @@ class InlineUploader {
 }
 const prototype = InlineUploader.prototype;
 InlineUploader["fromBlob"] = function fromBlob(surface) {
-  let obj = importDefault(4754);
+  let obj = importDefault(4816);
   const fromBlobResult = obj.fromBlob(arg1);
   const tmp = InlineUploader;
-  if (typeof InlineUploader !== "fileFinishedImporting") {
+  if (typeof InlineUploader !== "error") {
     HermesBuiltin.throwTypeError();
   }
   obj = Object.create(tmp.prototype);
@@ -98,7 +98,7 @@ InlineUploader["buildHeadersForMd5"] = function buildHeadersForMd5(originalMd5, 
   if (null != tmp) {
     const obj = {};
     const merged = Object.assign(buildHeadersForMd5);
-    obj[require(7954) /* ORIGINAL_MD5_HEADER */.ORIGINAL_MD5_HEADER] = tmp;
+    obj[require(8072) /* ORIGINAL_MD5_HEADER */.ORIGINAL_MD5_HEADER] = tmp;
     tmp2 = obj;
   }
   return tmp2;

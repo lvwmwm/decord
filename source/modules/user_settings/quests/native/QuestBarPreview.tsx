@@ -1,10 +1,10 @@
-// Module ID: 14221
-// Function ID: 14222
+// Module ID: 14288
+// Function ID: 14289
 // Name: QuestBarPreview
-// Dependencies: [19, 17, 21, 4193, 712, 14144, 14222, 14223, 14224, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 14211, 14289, 14290, 14291, 2]
 // Exports: QuestBarPreview
 
-// Module 14221 (QuestBarPreview)
+// Module 14288 (QuestBarPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -34,10 +34,10 @@ export const QuestBarPreview = function QuestBarPreview(quest) {
       obj1[0] = closure_5;
       const obj2 = { quest: null, children: null };
       obj2[0] = quest;
-      obj2[1] = jsx(require(14224) /* QuestDockWithGestureAnimation */.QuestDockWithEntranceAnimation, {});
-      obj1[1] = jsx(require(14223) /* getDeliveredQuest */.QuestDockQuestProvider, { quest: null, children: null });
-      obj[0] = jsx(importDefault(14222).Provider, { value: null, children: null });
-      obj[1] = jsx(require(14144) /* QuestDockMode */.QuestDockExternalCoordinationContextProvider, { children: null });
+      obj2[1] = jsx(require(14291) /* QuestDockWithGestureAnimation */.QuestDockWithEntranceAnimation, {});
+      obj1[1] = jsx(require(14290) /* getDeliveredQuest */.QuestDockQuestProvider, { quest: null, children: null });
+      obj[0] = jsx(importDefault(14289).Provider, { value: null, children: null });
+      obj[1] = jsx(require(14211) /* QuestDockMode */.QuestDockExternalCoordinationContextProvider, { children: null });
       obj[1] = <View>{null}</View>;
       tmp2 = <View>{null}</View>;
     }

@@ -1,9 +1,9 @@
-// Module ID: 11568
-// Function ID: 11569
+// Module ID: 11675
+// Function ID: 11676
 // Name: clearGuildMemberTimeout
-// Dependencies: [1942, 1874, 3810, 709, 5138, 2]
+// Dependencies: [1942, 1874, 3872, 709, 5200, 2]
 
-// Module 11568 (clearGuildMemberTimeout)
+// Module 11675 (clearGuildMemberTimeout)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import closure_5 from "trackCommunicationDisabled";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -54,7 +54,7 @@ function clearGuildMemberTimeout(closure_2, closure_1) {
         importDefault(709).dispatch(obj1);
         const obj4 = importDefault(709);
       }
-      obj6 = require(3810) /* isCommunicationDisabled */;
+      obj6 = require(3872) /* isCommunicationDisabled */;
     }
   }
 }

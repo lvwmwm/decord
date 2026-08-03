@@ -1,10 +1,10 @@
-// Module ID: 6263
-// Function ID: 6264
+// Module ID: 7252
+// Function ID: 7253
 // Name: useDiscountOffer
-// Dependencies: [32, 19, 1874, 6214, 1876, 589, 3839, 4078, 2]
+// Dependencies: [32, 19, 1874, 6811, 1876, 589, 3901, 4140, 2]
 // Exports: default
 
-// Module 6263 (useDiscountOffer)
+// Module 7252 (useDiscountOffer)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";

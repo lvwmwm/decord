@@ -1,9 +1,9 @@
-// Module ID: 14181
-// Function ID: 14182
+// Module ID: 14248
+// Function ID: 14249
 // Name: generateSessionId
 // Dependencies: [2]
 
-// Module 14181 (generateSessionId)
+// Module 14248 (generateSessionId)
 const result = require("set").fileFinishedImporting("modules/video-qoe/utils/SessionManager.tsx");
 const prototype = function SessionManager() {
   return Object.create(new.target.prototype);

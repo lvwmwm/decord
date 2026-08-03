@@ -1,10 +1,10 @@
-// Module ID: 12873
-// Function ID: 12874
+// Module ID: 12936
+// Function ID: 12937
 // Name: OnGoingCallTimer
-// Dependencies: [19, 4870, 21, 589, 11, 12874, 2]
+// Dependencies: [19, 4932, 21, 589, 11, 12937, 2]
 // Exports: default
 
-// Module 12873 (OnGoingCallTimer)
+// Module 12936 (OnGoingCallTimer)
 import "noop";
 import callConnect from "callConnect";
 import { jsx } from "jsxProd";
@@ -29,5 +29,5 @@ export default function OnGoingCallTimer(style) {
     timestamp = importDefault(11).extractTimestamp(stateFromStores);
     const obj2 = importDefault(11);
   }
-  return jsx(importDefault(12874), { style: style.style, timestamp });
+  return jsx(importDefault(12937), { style: style.style, timestamp });
 };

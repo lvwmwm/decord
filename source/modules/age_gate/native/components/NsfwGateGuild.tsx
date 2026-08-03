@@ -1,10 +1,10 @@
-// Module ID: 9370
-// Function ID: 9371
+// Module ID: 9529
+// Function ID: 9530
 // Name: NsfwGateGuild
-// Dependencies: [19, 17, 1942, 1874, 9371, 676, 21, 4193, 712, 1236, 1945, 698, 5711, 9227, 9372, 4189, 4604, 2]
+// Dependencies: [19, 17, 1942, 1874, 9530, 676, 21, 4255, 712, 1236, 1945, 698, 8144, 9400, 9531, 4251, 4666, 2]
 // Exports: default
 
-// Module 9370 (NsfwGateGuild)
+// Module 9529 (NsfwGateGuild)
 import noop from "noop";
 import get_ActivityIndicator from "set";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -73,19 +73,19 @@ export default function NsfwGateGuild(guildId) {
     obj.track(outer1_9.GUILD_NSFW_GATE_VIEWED, obj);
   }, items);
   obj = { style: tmp.container, children: null };
-  const items1 = [callback(currentUser(9227), {}), , , , , ];
-  obj = { source: currentUser(9372), style: tmp.image };
+  const items1 = [callback(currentUser(9400), {}), , , , , ];
+  obj = { source: currentUser(9531), style: tmp.image };
   items1[1] = callback(closure_5, obj);
   obj1 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult };
-  items1[2] = callback(guildId(4189).Text, obj1);
-  items1[3] = callback(guildId(4189).Text, { style: tmp.description, variant: "text-md/normal", color: "text-default", children: stringResult1 });
+  items1[2] = callback(guildId(4251).Text, obj1);
+  items1[3] = callback(guildId(4251).Text, { style: tmp.description, variant: "text-md/normal", color: "text-default", children: stringResult1 });
   const formatResult = intl3.format(guildId(1236).t.Z12LNW, obj);
   const obj2 = { style: tmp.description, variant: "text-md/normal", color: "text-default", children: stringResult1 };
-  items1[4] = callback(guildId(4189).Text, { style: tmp.description, variant: "text-md/normal", color: "text-default", children: intl3.format(guildId(1236).t.Z12LNW, obj) });
+  items1[4] = callback(guildId(4251).Text, { style: tmp.description, variant: "text-md/normal", color: "text-default", children: intl3.format(guildId(1236).t.Z12LNW, obj) });
   const obj4 = { onPress: guildId.onClose, size: "md", text: null };
   const intl4 = guildId(1236).intl;
   obj4[2] = intl4.string(guildId(1236).t.gRqiWV);
-  items1[5] = callback(guildId(4604).Button, obj4);
+  items1[5] = callback(guildId(4666).Button, obj4);
   obj[1] = items1;
   return callback2(closure_4, obj);
 };

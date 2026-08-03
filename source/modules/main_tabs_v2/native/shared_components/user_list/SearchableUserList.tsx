@@ -1,13 +1,13 @@
-// Module ID: 8823
-// Function ID: 8824
+// Module ID: 9000
+// Function ID: 9001
 // Name: SearchableUserList
-// Dependencies: [32, 19, 17, 1874, 8822, 21, 4193, 712, 8824, 1351, 8826, 4039, 1236, 8827, 8829, 9928, 4723, 8293, 2]
+// Dependencies: [32, 19, 17, 1874, 8999, 21, 4255, 712, 9001, 1351, 9003, 4101, 1236, 9004, 9006, 10071, 4785, 8600, 2]
 // Exports: default
 
-// Module 8823 (SearchableUserList)
+// Module 9000 (SearchableUserList)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
-import { View } from "module_8293";
+import { View } from "module_8600";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserRowModes } from "UserRowModes";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ const require = arg1;
 createCacheKey = { searchBarContainer: null, searchBar: null, searchBarRowContainer: null, noResults: null };
 createCacheKey = { paddingHorizontal: require("Themes").space.PX_16, paddingBottom: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createCacheKey[0] = createCacheKey;
-createCacheKey[1] = { height: "description", minHeight: false };
+createCacheKey[1] = { height: "op", minHeight: false };
 createCacheKey[2] = { paddingTop: require("Themes").space.PX_8 };
 let obj1 = { paddingTop: require("Themes").space.PX_8 };
 createCacheKey[3] = { flex: 1, backgroundColor: require("Themes").colors.MOBILE_ACTIONSHEET_BACKGROUND };

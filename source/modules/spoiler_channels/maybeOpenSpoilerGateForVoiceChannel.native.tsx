@@ -1,10 +1,10 @@
-// Module ID: 12442
-// Function ID: 12443
+// Module ID: 12540
+// Function ID: 12541
 // Name: maybeOpenSpoilerGateForVoiceChannel
-// Dependencies: [1372, 21, 7732, 4534, 12443, 2]
+// Dependencies: [1372, 21, 5842, 4596, 12541, 2]
 // Exports: maybeOpenSpoilerGateForVoiceChannel
 
-// Module 12442 (maybeOpenSpoilerGateForVoiceChannel)
+// Module 12540 (maybeOpenSpoilerGateForVoiceChannel)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { jsx } from "jsxProd";
 
@@ -15,16 +15,16 @@ export const maybeOpenSpoilerGateForVoiceChannel = function maybeOpenSpoilerGate
   channel = channel.getChannel(id);
   let tmp2 = null == channel;
   if (!tmp2) {
-    let obj = require(7732) /* isChannelSpoilerGated */;
+    let obj = require(5842) /* isChannelSpoilerGated */;
     tmp2 = !obj.shouldShowSpoilerGateForChannelId(id);
   }
   let flag = !tmp2;
   if (!tmp2) {
     obj = { channelId: null };
     obj[0] = channel.id;
-    require(4534) /* useAlertStore */.openAlert(require(12443) /* VoicePanelSpoilerAlert */.VOICE_PANEL_SPOILER_KEY, jsx(importDefault(12443), { channelId: null }));
+    require(4596) /* useAlertStore */.openAlert(require(12541) /* VoicePanelSpoilerAlert */.VOICE_PANEL_SPOILER_KEY, jsx(importDefault(12541), { channelId: null }));
     flag = true;
-    const obj2 = require(4534) /* useAlertStore */;
+    const obj2 = require(4596) /* useAlertStore */;
   }
   return flag;
 };

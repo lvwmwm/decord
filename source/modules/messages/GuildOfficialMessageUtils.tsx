@@ -1,10 +1,10 @@
-// Module ID: 6050
-// Function ID: 6051
+// Module ID: 5767
+// Function ID: 5768
 // Name: useCanManageGuildOfficialMessages
-// Dependencies: [1862, 3821, 4186, 676, 688, 689, 4037, 4039, 6051, 589, 6052, 5927, 2]
+// Dependencies: [1862, 3883, 4248, 676, 688, 689, 4099, 4101, 5768, 589, 5769, 5770, 2]
 // Exports: canManageGuildOfficialMessages, canSendGuildOfficialMessages, getAccessibleGuildOfficialTextColor, isGuildOfficialMessagesEnabled, showGuildOfficialMessageGradient, showGuildOfficialMessageTextColor, useCanToggleGuildOfficialMessages, useIsGuildOfficialMessagesEnabled
 
-// Module 6050 (useCanManageGuildOfficialMessages)
+// Module 5767 (useCanManageGuildOfficialMessages)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { GUILD_OFFICIAL_HIGHLIGHT_ALPHA as closure_5 } from "MESSAGE_GROUP_SPACING";
@@ -36,7 +36,7 @@ function useCanManageGuildOfficialMessages(arg0, arg1, location) {
   if (enabled) {
     enabled = obj2.useExperiment(obj).enabled;
   }
-  obj2 = importDefault(6051);
+  obj2 = importDefault(5768);
   const tmp = arg0;
   const tmp2 = _require;
   const items2 = [getUncachedChannelPermissions];
@@ -70,8 +70,8 @@ export const getAccessibleGuildOfficialTextColor = function getAccessibleGuildOf
     tmp5 = mixResult;
   }
   obj4 = importDefault(689);
-  obj = { foreground: tmp6, background: tmp5, ratio: tmp2(4039).WCAGContrastRatios.Text, saturationFactor: num };
-  return require(4037) /* hexToRgba */.getAccessibleForegroundColor(obj);
+  obj = { foreground: tmp6, background: tmp5, ratio: tmp2(4101).WCAGContrastRatios.Text, saturationFactor: num };
+  return require(4099) /* hexToRgba */.getAccessibleForegroundColor(obj);
 };
 export function showGuildOfficialMessageGradient(officialMessageStyle) {
   let tmp = "no_gradient" !== officialMessageStyle;
@@ -94,7 +94,7 @@ export const isGuildOfficialMessagesEnabled = function isGuildOfficialMessagesEn
     enabled = features.has(constants2.VERIFIED);
   }
   if (enabled) {
-    let obj = importDefault(6051);
+    let obj = importDefault(5768);
     obj = { guildId: null, location: null };
     obj[0] = guild.id;
     obj[1] = GuildSettingsModalLanding;
@@ -132,7 +132,7 @@ export const canManageGuildOfficialMessages = function canManageGuildOfficialMes
     enabled = features.has(constants2.VERIFIED);
   }
   if (enabled) {
-    let obj = importDefault(6051);
+    let obj = importDefault(5768);
     obj = { guildId: null, location: null };
     obj[0] = features.id;
     obj[1] = arg2;
@@ -149,18 +149,18 @@ export const useCanToggleGuildOfficialMessages = function useCanToggleGuildOffic
   const tmpResult = useCanManageGuildOfficialMessages(guild_id, channel, LongPressMessageActionSheet);
   let tmp3 = !tmpResult;
   if (tmpResult) {
-    tmp3 = importDefault(5927)(message);
+    tmp3 = importDefault(5770)(message);
   }
   if (tmp3) {
     return !tmp3;
   } else if (message.hasFlag(constants3.IS_GUILD_OFFICIAL)) {
-    let isActiveChannelOrUnarchivableThread = require(6052) /* useCanUnarchiveThread */.getIsActiveChannelOrUnarchivableThread(channel);
-    const obj2 = require(6052) /* useCanUnarchiveThread */;
+    let isActiveChannelOrUnarchivableThread = require(5769) /* useCanUnarchiveThread */.getIsActiveChannelOrUnarchivableThread(channel);
+    const obj2 = require(5769) /* useCanUnarchiveThread */;
   } else {
     isActiveChannelOrUnarchivableThread = null != channel && !channel.isPrivate();
     if (isActiveChannelOrUnarchivableThread) {
-      isActiveChannelOrUnarchivableThread = require(6052) /* useCanUnarchiveThread */.getIsActiveChannelOrUnarchivableThread(channel);
-      const obj = require(6052) /* useCanUnarchiveThread */;
+      isActiveChannelOrUnarchivableThread = require(5769) /* useCanUnarchiveThread */.getIsActiveChannelOrUnarchivableThread(channel);
+      const obj = require(5769) /* useCanUnarchiveThread */;
     }
     if (isActiveChannelOrUnarchivableThread) {
       isActiveChannelOrUnarchivableThread = channel.type !== constants.GUILD_VOICE;
@@ -177,7 +177,7 @@ export const canSendGuildOfficialMessages = function canSendGuildOfficialMessage
     enabled = features.has(constants2.VERIFIED);
   }
   if (enabled) {
-    let obj = importDefault(6051);
+    let obj = importDefault(5768);
     obj = { guildId: null, location: null };
     obj[0] = guild.id;
     obj[1] = _sendMessage;
@@ -189,8 +189,8 @@ export const canSendGuildOfficialMessages = function canSendGuildOfficialMessage
   if (enabled) {
     let isActiveChannelOrUnarchivableThread = null != channel && !channel.isPrivate();
     if (isActiveChannelOrUnarchivableThread) {
-      isActiveChannelOrUnarchivableThread = require(6052) /* useCanUnarchiveThread */.getIsActiveChannelOrUnarchivableThread(channel);
-      const obj3 = require(6052) /* useCanUnarchiveThread */;
+      isActiveChannelOrUnarchivableThread = require(5769) /* useCanUnarchiveThread */.getIsActiveChannelOrUnarchivableThread(channel);
+      const obj3 = require(5769) /* useCanUnarchiveThread */;
     }
     if (isActiveChannelOrUnarchivableThread) {
       isActiveChannelOrUnarchivableThread = channel.type !== constants.GUILD_VOICE;

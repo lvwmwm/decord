@@ -1,16 +1,16 @@
-// Module ID: 10660
-// Function ID: 10661
+// Module ID: 10704
+// Function ID: 10705
 // Name: useThermalState
-// Dependencies: [500, 10629, 2]
+// Dependencies: [500, 10674, 2]
 // Exports: default, getThermalState
 
-// Module 10660 (useThermalState)
+// Module 10704 (useThermalState)
 let obj = { UNHANDLED: -1, [-1]: "UNHANDLED", NOMINAL: 0, [0]: "NOMINAL", FAIR: 1, [1]: "FAIR", SERIOUS: 2, [2]: "SERIOUS", CRITICAL: 3, [3]: "CRITICAL" };
 obj = { NONE: 0, [0]: "NONE", LIGHT: 1, [1]: "LIGHT", MODERATE: 2, [2]: "MODERATE", SEVERE: 3, [3]: "SEVERE", CRITICAL: 4, [4]: "CRITICAL", EMERGENCY: 5, [5]: "EMERGENCY", SHUTDOWN: 6, [6]: "SHUTDOWN" };
 const result = require("set").fileFinishedImporting("modules/device/useThermalState.tsx");
 
 export default function useThermalState() {
-  const obj = importDefault(10629);
+  const obj = importDefault(10674);
   const rawThermalState = obj.useRawThermalState();
   if (null == rawThermalState) {
     let UNHANDLED = obj.UNHANDLED;
@@ -52,7 +52,7 @@ export default function useThermalState() {
 export const ThermalStates = obj;
 export const AndroidThermalStates = obj;
 export const getThermalState = function getThermalState() {
-  const obj = importDefault(10629);
+  const obj = importDefault(10674);
   const rawThermalState = obj.getRawThermalState();
   if (null == rawThermalState) {
     let UNHANDLED = obj.UNHANDLED;

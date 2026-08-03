@@ -1,12 +1,12 @@
-// Module ID: 3864
-// Function ID: 3865
+// Module ID: 3926
+// Function ID: 3927
 // Name: onTimezoneChange
-// Dependencies: [3865, 2]
+// Dependencies: [3927, 2]
 // Exports: default
 
-// Module 3864 (onTimezoneChange)
+// Module 3926 (onTimezoneChange)
 const result = require("set").fileFinishedImporting("modules/date/onTimezoneChange.android.tsx");
 
 export default function onTimezoneChange(arg0) {
-  importDefault(3865).onTimezoneChange(arg0);
+  importDefault(3927).onTimezoneChange(arg0);
 };

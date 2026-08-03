@@ -1,10 +1,10 @@
-// Module ID: 12005
-// Function ID: 12006
+// Module ID: 12101
+// Function ID: 12102
 // Name: isOnXbox
-// Dependencies: [4218, 676, 2]
+// Dependencies: [4280, 676, 2]
 // Exports: default
 
-// Module 12005 (isOnXbox)
+// Module 12101 (isOnXbox)
 import { XBOX_ACTIVITY_APPLICATION_ID as closure_0 } from "items3";
 import { ActivityGamePlatforms } from "ME";
 

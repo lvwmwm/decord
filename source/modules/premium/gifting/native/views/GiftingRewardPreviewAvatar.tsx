@@ -1,10 +1,10 @@
-// Module ID: 9798
-// Function ID: 9799
+// Module ID: 9943
+// Function ID: 9944
 // Name: GiftingRewardPreviewAvatar
-// Dependencies: [19, 4185, 1874, 21, 589, 1297, 2]
+// Dependencies: [19, 4247, 1874, 21, 589, 1297, 2]
 // Exports: default
 
-// Module 9798 (GiftingRewardPreviewAvatar)
+// Module 9943 (GiftingRewardPreviewAvatar)
 import "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import mergeGuildAvatar from "mergeGuildAvatar";

@@ -1,15 +1,15 @@
-// Module ID: 9609
-// Function ID: 9610
+// Module ID: 9756
+// Function ID: 9757
 // Name: doSearchRequest
-// Dependencies: [1946, 9608, 676, 685, 4388, 9610, 530, 709, 12, 514, 1467, 9611, 1355, 1341, 4532, 1236, 698, 2]
+// Dependencies: [1946, 9755, 676, 685, 4450, 9757, 9758, 530, 709, 12, 514, 1467, 9759, 1355, 1341, 4594, 1236, 698, 2]
 // Exports: addFavoriteGIF, fetchSuggestions, fetchTrending, fetchTrendingGIFs, fetchTrendingSearchTerms, gifUrlKey, initializeSearch, removeFavoriteGIF, resetSearch, search, trackSearchResultViewed, trackSearchStart, trackSelectGIF
 
-// Module 9609 (doSearchRequest)
+// Module 9756 (doSearchRequest)
 import _getSystemLocale from "_getSystemLocale";
 import getFormatFromUrl from "getFormatFromUrl";
 import ME from "ME";
 import MAX_FAVORITES from "MAX_FAVORITES";
-import importDefaultResult from "updateUserGuildSettings";
+import importDefaultResult from "shouldRefreshAttachmentUrl";
 
 let c10;
 let c5;
@@ -29,8 +29,8 @@ function doSearchRequest(q, arg1, limit) {
   } else {
     obj = {};
   }
-  let obj2 = importDefault(4388);
-  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: klipy };
+  let obj2 = importDefault(4450);
+  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: _require(9757).GIF_PROVIDER };
   obj2.trackWithMetadata(constants.SEARCH_STARTED, obj);
   const HTTP = _require(530).HTTP;
   let obj1 = { url: constants2.GIFS_SEARCH, query: null, oldFormErrors: true, rejectWithError: true };
@@ -43,7 +43,7 @@ function doSearchRequest(q, arg1, limit) {
     const startTime = obj.startTime;
     const merged = Object.assign(obj, Object.create(null));
     obj = { offset: 0, limit: null, totalResults: body.length };
-    let obj2 = q(limit[5]);
+    let obj2 = q(limit[6]);
     obj = {};
     const analyticsID = outer1_4.getAnalyticsID();
     const merged1 = Object.assign(obj);
@@ -60,12 +60,13 @@ function doSearchRequest(q, arg1, limit) {
     obj2 = {};
     const merged3 = Object.assign(result);
     const merged4 = Object.assign(obj1);
-    obj2.gif_provider = outer1_12;
+    obj2.gif_provider = q(limit[5]).GIF_PROVIDER;
     callback(limit[4]).trackWithMetadata(outer1_5.SEARCH_RESULT_VIEWED, obj2);
     const obj6 = callback(limit[4]);
-    callback(limit[7]).dispatch({ type: "GIF_PICKER_QUERY_SUCCESS", query: q, items: body });
+    const tmp2 = q;
+    callback(limit[8]).dispatch({ type: "GIF_PICKER_QUERY_SUCCESS", query: q, items: body });
   }, () => {
-    let obj = callback(limit[7]);
+    let obj = callback(limit[8]);
     obj = { type: "GIF_PICKER_QUERY_FAILURE", query: closure_0 };
     return obj.dispatch(obj);
   });
@@ -73,9 +74,8 @@ function doSearchRequest(q, arg1, limit) {
 ({ AnalyticEvents: c5, Endpoints: closure_6, SearchTypes: error, GIFPickerResultTypes: metroImportAll } = ME);
 ({ MAX_FAVORITE_GIFS_SIZE: c9, UserSettingsDelay: c10 } = MAX_FAVORITES);
 const re11 = /-/g;
-const klipy = "klipy";
-let closure_14 = require("updateUserGuildSettings").debounce(doSearchRequest, 250);
-const re15 = /\.(webp|avif|gif)(\?|$)/i;
+let closure_13 = require("shouldRefreshAttachmentUrl").debounce(doSearchRequest, 250);
+const re14 = /\.(webp|avif|gif)(\?|$)/i;
 let result = require("ME").fileFinishedImporting("actions/GIFPickerActionCreators.tsx");
 
 export const trackSearchStart = function trackSearchStart(arg0) {
@@ -85,8 +85,8 @@ export const trackSearchStart = function trackSearchStart(arg0) {
   } else {
     obj = {};
   }
-  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: klipy };
-  importDefault(4388).trackWithMetadata(constants.SEARCH_STARTED, obj);
+  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: require(9757) /* GIF_PROVIDER */.GIF_PROVIDER };
+  importDefault(4450).trackWithMetadata(constants.SEARCH_STARTED, obj);
 };
 export const trackSearchResultViewed = function trackSearchResultViewed(totalResults, TRENDING_GIFS) {
   let obj = arg2;
@@ -96,7 +96,7 @@ export const trackSearchResultViewed = function trackSearchResultViewed(totalRes
   const startTime = obj.startTime;
   const merged = Object.assign(obj, Object.create(null));
   obj = { offset: 0, limit: null, totalResults: totalResults.length };
-  let obj2 = require(9610) /* isKlipyProvider */;
+  let obj2 = require(9758) /* isKlipyProvider */;
   obj = {};
   const analyticsID = store.getAnalyticsID();
   const merged1 = Object.assign(obj);
@@ -113,8 +113,8 @@ export const trackSearchResultViewed = function trackSearchResultViewed(totalRes
   obj2 = {};
   const merged3 = Object.assign(result);
   const merged4 = Object.assign(obj1);
-  obj2.gif_provider = klipy;
-  importDefault(4388).trackWithMetadata(constants.SEARCH_RESULT_VIEWED, obj2);
+  obj2.gif_provider = require(9757) /* GIF_PROVIDER */.GIF_PROVIDER;
+  importDefault(4450).trackWithMetadata(constants.SEARCH_RESULT_VIEWED, obj2);
 };
 export const search = function search(q, arg1, arg2, limit) {
   let flag = arg2;
@@ -152,7 +152,7 @@ export const fetchSuggestions = function fetchSuggestions(arg0) {
     obj[1] = obj;
     const value = HTTP.get(obj);
     value.then((body) => {
-      let obj = outer1_1(outer1_2[7]);
+      let obj = outer1_1(outer1_2[8]);
       obj = { type: "GIF_PICKER_SUGGESTIONS_SUCCESS", query: closure_0, items: body.body };
       obj.dispatch(obj);
     });
@@ -172,9 +172,9 @@ export const trackSelectGIF = function trackSelectGIF(arg0) {
   let type;
   ({ query, gifId } = arg0);
   ({ type, index, offset, limit, results, totalResults } = arg0);
-  let obj = require(9610) /* isKlipyProvider */;
+  let obj = require(9758) /* isKlipyProvider */;
   const result = obj.calculateAnalyticsMetadata(store.getAnalyticsID(), type, { offset, limit, results, totalResults });
-  let obj1 = importDefault(4388);
+  let obj1 = importDefault(4450);
   obj = {};
   const merged = Object.assign(result);
   obj.index_num = index;
@@ -197,10 +197,10 @@ export const initializeSearch = function initializeSearch() {
   replaced = obj.v4().replace(closure_11, "");
   const str = obj.v4();
   obj = { search_type: constants3.GIF, load_id: replaced };
-  importDefault(4388).trackWithMetadata(constants.SEARCH_OPENED, obj);
-  const obj2 = importDefault(4388);
+  importDefault(4450).trackWithMetadata(constants.SEARCH_OPENED, obj);
+  const obj2 = importDefault(4450);
   importDefault(709).wait(() => {
-    let obj = outer1_1(outer1_2[7]);
+    let obj = outer1_1(outer1_2[8]);
     obj = { type: "GIF_PICKER_INITIALIZE", analyticsID: replaced };
     obj.dispatch(obj);
   });
@@ -215,7 +215,7 @@ export const fetchTrending = function fetchTrending() {
     let categories;
     let gifs;
     ({ categories, gifs } = body.body);
-    let obj = callback(table[7]);
+    let obj = callback(table[8]);
     obj = { type: "GIF_PICKER_TRENDING_FETCH_SUCCESS", trendingCategories: categories, trendingGIFPreview: gifs[0] };
     obj.dispatch(obj);
   });
@@ -230,8 +230,8 @@ export const fetchTrendingGIFs = function fetchTrendingGIFs(closure_10) {
   } else {
     obj = {};
   }
-  let obj2 = importDefault(4388);
-  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: klipy };
+  let obj2 = importDefault(4450);
+  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: _require(9757).GIF_PROVIDER };
   obj2.trackWithMetadata(constants.SEARCH_STARTED, obj);
   const HTTP = _require(530).HTTP;
   let obj1 = { url: constants2.GIFS_TRENDING_GIFS, query: null, oldFormErrors: true, rejectWithError: true };
@@ -244,7 +244,7 @@ export const fetchTrendingGIFs = function fetchTrendingGIFs(closure_10) {
     const startTime = obj.startTime;
     const merged = Object.assign(obj, Object.create(null));
     obj = { offset: 0, limit: null, totalResults: body.length };
-    let obj2 = callback(outer1_2[5]);
+    let obj2 = callback(outer1_2[6]);
     obj = {};
     const analyticsID = outer1_4.getAnalyticsID();
     const merged1 = Object.assign(obj);
@@ -261,12 +261,13 @@ export const fetchTrendingGIFs = function fetchTrendingGIFs(closure_10) {
     obj2 = {};
     const merged3 = Object.assign(result);
     const merged4 = Object.assign(obj1);
-    obj2.gif_provider = outer1_12;
+    obj2.gif_provider = callback(outer1_2[5]).GIF_PROVIDER;
     callback2(outer1_2[4]).trackWithMetadata(outer1_5.SEARCH_RESULT_VIEWED, obj2);
     const obj6 = callback2(outer1_2[4]);
-    callback2(outer1_2[7]).dispatch({ type: "GIF_PICKER_QUERY_SUCCESS", items: body });
+    const tmp2 = callback;
+    callback2(outer1_2[8]).dispatch({ type: "GIF_PICKER_QUERY_SUCCESS", items: body });
   }, () => {
-    callback2(table[7]).dispatch({ type: "GIF_PICKER_QUERY_FAILURE" });
+    callback2(table[8]).dispatch({ type: "GIF_PICKER_QUERY_FAILURE" });
   });
 };
 export const gifUrlKey = function gifUrlKey(uri) {
@@ -275,12 +276,12 @@ export const gifUrlKey = function gifUrlKey(uri) {
   let tmp4 = uri;
   if (null != toURLSafeResult) {
     if (obj2.isAttachmentUrl(toURLSafeResult)) {
-      str = tmp5(9611).removeSignedUrlParameters(toURLSafeResult);
+      str = tmp5(9759).removeSignedUrlParameters(toURLSafeResult);
       str = str.toString();
-      const tmp5Result = tmp5(9611);
+      const tmp5Result = tmp5(9759);
     }
     tmp4 = str;
-    obj2 = require(9611) /* shouldRefreshAttachmentUrl */;
+    obj2 = require(9759) /* shouldRefreshAttachmentUrl */;
     tmp5 = require;
   }
   return tmp4;
@@ -289,7 +290,7 @@ export const addFavoriteGIF = function addFavoriteGIF(item) {
   const _require = item;
   const FrecencyUserSettingsActionCreators = _require(1355).FrecencyUserSettingsActionCreators;
   FrecencyUserSettingsActionCreators.updateAsync("favoriteGifs", (gifs) => {
-    let obj = outer1_1(outer1_2[8]);
+    let obj = outer1_1(outer1_2[9]);
     const values = Object.values(gifs.gifs);
     let num = obj.max(values.map((order) => order.order));
     if (num == null) {
@@ -299,24 +300,24 @@ export const addFavoriteGIF = function addFavoriteGIF(item) {
     if (obj1.test(item.src)) {
       if (null != tmp3.gifSrc) {
         if ("" !== tmp3.gifSrc) {
-          let tmpResult = tmp(tmp2[10]);
+          let tmpResult = tmp(tmp2[11]);
           const toURLSafeResult = tmpResult.toURLSafe(tmp3.src);
           let tmp9 = null != toURLSafeResult;
           if (tmp9) {
-            let result = item(tmp2[11]).isExternalProxiedAttachmentUrl(toURLSafeResult);
+            let result = item(tmp2[12]).isExternalProxiedAttachmentUrl(toURLSafeResult);
             if (!result) {
-              result = tmp10(tmp2[11]).isAttachmentUrl(toURLSafeResult);
-              const tmp10Result = tmp10(tmp2[11]);
+              result = tmp10(tmp2[12]).isAttachmentUrl(toURLSafeResult);
+              const tmp10Result = tmp10(tmp2[12]);
             }
             tmp9 = result;
-            const obj7 = item(tmp2[11]);
+            const obj7 = item(tmp2[12]);
             tmp10 = item;
           }
           let obj9 = src;
           if (tmp9) {
             obj9 = src;
-            if (outer1_15.test(src)) {
-              tmpResult = tmp(tmp2[10]);
+            if (outer1_14.test(src)) {
+              tmpResult = tmp(tmp2[11]);
               const str2 = tmpResult.toURLSafe(src);
               let tmp13 = src;
               if (null != str2) {
@@ -347,22 +348,22 @@ export const addFavoriteGIF = function addFavoriteGIF(item) {
             const _HermesInternal = HermesInternal;
             combined = "https:" + obj9;
           }
-          if (outer1_15.test(combined)) {
-            let format = item(tmp2[13]).GIFType.IMAGE;
+          if (outer1_14.test(combined)) {
+            let format = item(tmp2[14]).GIFType.IMAGE;
           } else {
             format = tmp3.format;
           }
           let url = tmp3.url;
-          const toURLSafeResult1 = tmp(tmp2[10]).toURLSafe(url);
+          const toURLSafeResult1 = tmp(tmp2[11]).toURLSafe(url);
           let tmp23 = url;
           if (null != toURLSafeResult1) {
             if (obj12.isAttachmentUrl(toURLSafeResult1)) {
-              const tmp24Result = tmp24(tmp2[11]);
-              url = tmp24(tmp2[11]).removeSignedUrlParameters(toURLSafeResult1).toString();
-              const str9 = tmp24(tmp2[11]).removeSignedUrlParameters(toURLSafeResult1);
+              const tmp24Result = tmp24(tmp2[12]);
+              url = tmp24(tmp2[12]).removeSignedUrlParameters(toURLSafeResult1).toString();
+              const str9 = tmp24(tmp2[12]).removeSignedUrlParameters(toURLSafeResult1);
             }
             tmp23 = url;
-            obj12 = item(tmp2[11]);
+            obj12 = item(tmp2[12]);
             tmp24 = item;
           }
           obj = {};
@@ -371,40 +372,40 @@ export const addFavoriteGIF = function addFavoriteGIF(item) {
           obj.format = format;
           obj.order = num + 1;
           gifs.gifs[tmp23] = obj;
-          const FavoriteGIFs = item(tmp2[13]).FavoriteGIFs;
+          const FavoriteGIFs = item(tmp2[14]).FavoriteGIFs;
           if (FavoriteGIFs.toBinary(gifs).length > outer1_9) {
             obj = { title: null, body: null };
-            const intl = tmp28(tmp2[15]).intl;
-            obj[0] = intl.string(tmp28(tmp2[15]).t["+XYXtZ"]);
-            const intl2 = tmp28(tmp2[15]).intl;
-            obj[1] = intl2.string(tmp28(tmp2[15]).t.YSDH9n);
-            tmp(tmp2[14]).show(obj);
+            const intl = tmp28(tmp2[16]).intl;
+            obj[0] = intl.string(tmp28(tmp2[16]).t["+XYXtZ"]);
+            const intl2 = tmp28(tmp2[16]).intl;
+            obj[1] = intl2.string(tmp28(tmp2[16]).t.YSDH9n);
+            tmp(tmp2[15]).show(obj);
             return false;
           } else {
-            const sizeResult = tmp(tmp2[8]).size(gifs.gifs);
+            const sizeResult = tmp(tmp2[9]).size(gifs.gifs);
             if (sizeResult > 2) {
               gifs.hideTooltip = true;
             }
-            const tmpResult3 = tmp(tmp2[8]);
+            const tmpResult3 = tmp(tmp2[9]);
             obj1 = { total_num_favorited: null };
             obj1[0] = sizeResult;
-            tmp(tmp2[16]).track(outer1_5.GIF_FAVORITED, obj1);
+            tmp(tmp2[17]).track(outer1_5.GIF_FAVORITED, obj1);
           }
-          const tmpResult1 = tmp(tmp2[10]);
+          const tmpResult1 = tmp(tmp2[11]);
         }
         src = tmp3.gifSrc;
       }
     }
-    const toURLSafeResult2 = outer1_1(outer1_2[10]).toURLSafe(item.src);
+    const toURLSafeResult2 = outer1_1(outer1_2[11]).toURLSafe(item.src);
     let tmp5 = null != toURLSafeResult2;
     if (tmp5) {
-      let result3 = item(tmp2[11]).isExternalProxiedAttachmentUrl(toURLSafeResult2);
+      let result3 = item(tmp2[12]).isExternalProxiedAttachmentUrl(toURLSafeResult2);
       if (!result3) {
-        result3 = tmp6(tmp2[11]).isAttachmentUrl(toURLSafeResult2);
-        const tmp6Result = tmp6(tmp2[11]);
+        result3 = tmp6(tmp2[12]).isAttachmentUrl(toURLSafeResult2);
+        const tmp6Result = tmp6(tmp2[12]);
       }
       tmp5 = result3;
-      const obj4 = item(tmp2[11]);
+      const obj4 = item(tmp2[12]);
       tmp6 = item;
     }
     src = tmp3.src;
@@ -417,23 +418,23 @@ export const removeFavoriteGIF = function removeFavoriteGIF(uri) {
     if (uri in gifs.gifs) {
       delete tmp[tmp2];
     } else {
-      let obj = outer1_1(outer1_2[10]);
+      let obj = outer1_1(outer1_2[11]);
       const toURLSafeResult = obj.toURLSafe(tmp4);
       if (null != toURLSafeResult) {
         let str = tmp4;
         if (obj2.isAttachmentUrl(toURLSafeResult)) {
-          str = tmp10(tmp6[11]).removeSignedUrlParameters(toURLSafeResult);
+          str = tmp10(tmp6[12]).removeSignedUrlParameters(toURLSafeResult);
           str = str.toString();
-          const tmp10Result = tmp10(tmp6[11]);
+          const tmp10Result = tmp10(tmp6[12]);
         }
-        obj2 = uri(tmp6[11]);
+        obj2 = uri(tmp6[12]);
         tmp10 = uri;
       }
       delete tmp[tmp3];
     }
     obj = { total_num_favorited: null };
-    const obj4 = outer1_1(outer1_2[16]);
-    obj[0] = outer1_1(outer1_2[8]).size(gifs.gifs);
+    const obj4 = outer1_1(outer1_2[17]);
+    obj[0] = outer1_1(outer1_2[9]).size(gifs.gifs);
     obj4.track(outer1_5.GIF_UNFAVORITED, obj);
   }, constants5.INFREQUENT_USER_ACTION);
 };
@@ -443,6 +444,6 @@ export const fetchTrendingSearchTerms = function fetchTrendingSearchTerms() {
   obj = { limit: 5, locale: _getSystemLocale.locale };
   const value = HTTP.get(obj);
   value.then((items) => {
-    callback(table[7]).dispatch({ type: "GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS", items: items.body });
+    callback(table[8]).dispatch({ type: "GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS", items: items.body });
   });
 };

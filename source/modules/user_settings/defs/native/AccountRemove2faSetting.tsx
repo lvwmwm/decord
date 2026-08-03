@@ -1,9 +1,9 @@
-// Module ID: 13843
-// Function ID: 13844
+// Module ID: 13910
+// Function ID: 13911
 // Name: pressable
-// Dependencies: [7761, 13844, 4532, 1236, 13794, 10133, 13795, 2]
+// Dependencies: [7880, 13911, 4594, 1236, 13861, 10272, 13862, 2]
 
-// Module 13843 (pressable)
+// Module 13910 (pressable)
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
@@ -13,7 +13,7 @@ const pressable = createToggle.createPressable({
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT,
   onPress: function remove2FA() {
-    let obj = importDefault(4532);
+    let obj = importDefault(4594);
     obj = { title: null, body: null, cancelText: null, onConfirm: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t["D+aE7g"]);
@@ -27,7 +27,7 @@ const pressable = createToggle.createPressable({
     obj.show(obj);
   },
   useIsDisabled() {
-    return null !== require(13844) /* getSMSBackupDisabledMessage */.use2FARemoveDisableReason();
+    return null !== require(13911) /* getSMSBackupDisabledMessage */.use2FARemoveDisableReason();
   },
   useDescription: require("getSMSBackupDisabledMessage").use2FARemoveDisableReason,
   usePredicate: require("useIs2FAEnabled").useIsTOTPEnabled
@@ -39,7 +39,7 @@ let obj = {
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT,
   onPress: function remove2FA() {
-    let obj = importDefault(4532);
+    let obj = importDefault(4594);
     obj = { title: null, body: null, cancelText: null, onConfirm: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t["D+aE7g"]);
@@ -53,7 +53,7 @@ let obj = {
     obj.show(obj);
   },
   useIsDisabled() {
-    return null !== require(13844) /* getSMSBackupDisabledMessage */.use2FARemoveDisableReason();
+    return null !== require(13911) /* getSMSBackupDisabledMessage */.use2FARemoveDisableReason();
   },
   useDescription: require("getSMSBackupDisabledMessage").use2FARemoveDisableReason,
   usePredicate: require("useIs2FAEnabled").useIsTOTPEnabled

@@ -1,10 +1,10 @@
-// Module ID: 10801
-// Function ID: 10802
+// Module ID: 10901
+// Function ID: 10902
 // Name: handleAutomaticGainControlChange
-// Dependencies: [4240, 676, 8847, 10802, 589, 2]
+// Dependencies: [4302, 676, 9024, 10902, 589, 2]
 // Exports: getSelectedNoiseSuppressionOption, handleAutomaticGainControlChange, handleEchoCancellationChange, handleNoiseSuppressionChange, useSelectedNoiseSuppressionOption
 
-// Module 10801 (handleAutomaticGainControlChange)
+// Module 10901 (handleAutomaticGainControlChange)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import ME from "ME";
 
@@ -16,12 +16,12 @@ let obj = { NONE: "NONE", STANDARD: "STANDARD", KRISP: "KRISP" };
 let result = require("trackDeviceChanged").fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceUtils.tsx");
 
 export const handleAutomaticGainControlChange = function handleAutomaticGainControlChange(arg0) {
-  let obj = importDefault(8847);
+  let obj = importDefault(9024);
   obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
   const result = obj.setAutomaticGainControl(arg0, obj);
 };
 export const handleEchoCancellationChange = function handleEchoCancellationChange(arg0) {
-  let obj = importDefault(8847);
+  let obj = importDefault(9024);
   obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
   obj.setEchoCancellation(arg0, obj);
 };
@@ -29,11 +29,11 @@ export const handleNoiseSuppressionChange = function handleNoiseSuppressionChang
   let KRISP;
   let STANDARD;
   ({ KRISP, STANDARD } = obj);
-  obj = importDefault(8847);
+  obj = importDefault(9024);
   obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
   obj.setNoiseCancellation(arg0 === KRISP, obj);
   obj = { page: constants.USER_SETTINGS, section: constants2.SETTINGS_VOICE_AND_VIDEO };
-  importDefault(8847).setNoiseSuppression(arg0 === STANDARD, obj);
+  importDefault(9024).setNoiseSuppression(arg0 === STANDARD, obj);
 };
 export const NoiseSuppressionOpt = obj;
 export const getSelectedNoiseSuppressionOption = function getSelectedNoiseSuppressionOption(_detectH265HardwareDecode) {

@@ -1,9 +1,9 @@
-// Module ID: 5964
-// Function ID: 5965
+// Module ID: 7043
+// Function ID: 7044
 // Name: getHermesInstrumentedStatsSummary
-// Dependencies: [17, 5965, 2]
+// Dependencies: [17, 7044, 2]
 
-// Module 5964 (getHermesInstrumentedStatsSummary)
+// Module 7043 (getHermesInstrumentedStatsSummary)
 import { NativeModules } from "get ActivityIndicator";
 import { ProcessUtils } from "ElectronProcessType";
 
@@ -12,7 +12,7 @@ let c1 = function getHermesInstrumentedStatsSummary() {
   if (null != _HermesInternal) {
     if (typeof _HermesInternal !== "window") {
       const getInstrumentedStats = _HermesInternal.getInstrumentedStats;
-      if (typeof getInstrumentedStats === "fileFinishedImporting") {
+      if (typeof getInstrumentedStats === "error") {
         try {
           const instrumentedStats = getInstrumentedStats();
           if (null != instrumentedStats) {
@@ -23,7 +23,7 @@ let c1 = function getHermesInstrumentedStatsSummary() {
                 let tmp;
                 [, tmp] = arg0;
                 let isFiniteResult = typeof tmp === "Object";
-                if (typeof tmp !== "__REMOTEDEV__") {
+                if (typeof tmp !== "SENTRY_RELEASE") {
                   const _Number = Number;
                   isFiniteResult = Number.isFinite(tmp);
                 }

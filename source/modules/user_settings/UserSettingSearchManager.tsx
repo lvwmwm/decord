@@ -1,9 +1,9 @@
-// Module ID: 14727
-// Function ID: 14728
+// Module ID: 14794
+// Function ID: 14795
 // Name: search
-// Dependencies: [5106, 14728, 2]
+// Dependencies: [5168, 14795, 2]
 
-// Module 14727 (search)
+// Module 14794 (search)
 let result = require("set").fileFinishedImporting("modules/user_settings/UserSettingSearchManager.tsx");
 class SettingSearchManager {
   constructor(arg0) {

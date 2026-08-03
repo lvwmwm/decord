@@ -1,10 +1,10 @@
-// Module ID: 15945
-// Function ID: 15946
+// Module ID: 16009
+// Function ID: 16010
 // Name: VoicePanelAccessibilityView
-// Dependencies: [19, 15936, 21, 4587, 15940, 2]
+// Dependencies: [19, 16000, 21, 4649, 16004, 2]
 // Exports: default
 
-// Module 15945 (VoicePanelAccessibilityView)
+// Module 16009 (VoicePanelAccessibilityView)
 import { VoicePanelPIPModes } from "VoicePanelPIPModes";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
@@ -23,7 +23,7 @@ export default function VoicePanelAccessibilityView(pointerEvents) {
   let accessibilityViewIsModal = pointerEvents.accessibilityViewIsModal;
   ({ nativeID, onAccessibilityEscape } = pointerEvents);
   const merged = Object.assign(pointerEvents, Object.create(null));
-  let obj = require(15940) /* context */;
+  let obj = require(16004) /* context */;
   obj = { style: pointerEvents.style, pointerEvents: str, nativeID, accessibilityViewIsModal: null, onAccessibilityEscape: null };
   if (accessibilityViewIsModal) {
     accessibilityViewIsModal = obj.usePIPState().mode !== VoicePanelPIPModes.IN_APP;

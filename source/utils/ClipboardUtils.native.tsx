@@ -1,10 +1,10 @@
-// Module ID: 5547
-// Function ID: 5548
+// Module ID: 5609
+// Function ID: 5610
 // Name: _copy
-// Dependencies: [5, 5548, 2]
+// Dependencies: [5, 5610, 2]
 // Exports: copy, getString
 
-// Module 5547 (_copy)
+// Module 5609 (_copy)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 function _copy() {
@@ -94,5 +94,5 @@ export const copy = function copy() {
   return applyArgumentsResult;
 };
 export const getString = function getString() {
-  return importDefault(5548).getString();
+  return importDefault(5610).getString();
 };

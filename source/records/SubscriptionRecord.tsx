@@ -1,9 +1,9 @@
-// Module ID: 3846
-// Function ID: 3847
+// Module ID: 3908
+// Function ID: 3909
 // Name: createSubscriptionItemFromServer
-// Dependencies: [1883, 3847, 3848, 676, 3850, 1876, 3851, 38, 500, 3852, 1897, 2]
+// Dependencies: [1883, 3909, 3910, 676, 3912, 1876, 3913, 38, 500, 3914, 1897, 2]
 
-// Module 3846 (createSubscriptionItemFromServer)
+// Module 3908 (createSubscriptionItemFromServer)
 import "toJS";
 import createFromServer from "createFromServer";
 import closure_4 from "createFromServer";
@@ -242,8 +242,8 @@ Object.defineProperty(prototype, "isOnPlatformMatchingExternalPaymentGateway", {
     if (!isPurchasedViaApple) {
       let isPurchasedViaGoogle = this.isPurchasedViaGoogle;
       if (isPurchasedViaGoogle) {
-        isPurchasedViaGoogle = require(3852) /* isPremiumGiftingSupported */.isGooglePlayBillingSupported();
-        const obj2 = require(3852) /* isPremiumGiftingSupported */;
+        isPurchasedViaGoogle = require(3914) /* isPremiumGiftingSupported */.isGooglePlayBillingSupported();
+        const obj2 = require(3914) /* isPremiumGiftingSupported */;
       }
       isPurchasedViaApple = isPurchasedViaGoogle;
     }

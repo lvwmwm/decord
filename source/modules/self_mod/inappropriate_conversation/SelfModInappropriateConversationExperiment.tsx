@@ -1,10 +1,10 @@
-// Module ID: 10143
-// Function ID: 10144
+// Module ID: 10282
+// Function ID: 10283
 // Name: InappropriateConversationExperiment
 // Dependencies: [1349, 2]
 // Exports: isEligibleForInappropriateConversationWarning, useIsEligibleForInappropriateConversationWarning
 
-// Module 10143 (InappropriateConversationExperiment)
+// Module 10282 (InappropriateConversationExperiment)
 const tmp2 = require("getUnitId")({ name: "2026-04-inappropriate-conversations-prescan", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 let c0 = tmp2;
 const result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/SelfModInappropriateConversationExperiment.tsx");

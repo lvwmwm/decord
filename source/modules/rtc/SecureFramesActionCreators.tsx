@@ -1,9 +1,9 @@
-// Module ID: 8904
-// Function ID: 8905
+// Module ID: 9081
+// Function ID: 9082
 // Name: savePersistentCodesEnabled
-// Dependencies: [5, 1218, 1372, 4209, 8903, 676, 709, 8901, 4092, 4532, 1236, 8905, 5005, 2]
+// Dependencies: [5, 1218, 1372, 4271, 9080, 676, 709, 9078, 4154, 4594, 1236, 9082, 5067, 2]
 
-// Module 8904 (savePersistentCodesEnabled)
+// Module 9081 (savePersistentCodesEnabled)
 import ME from "ME";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -80,10 +80,10 @@ function _savePersistentCodesEnabled() {
             if (1 === tmp8) {
               c6 = 0;
               let dependencyMap = ensureGuildLoaded;
-              aPIError = new callback(4092).APIError(dependencyMap);
+              aPIError = new callback(4154).APIError(dependencyMap);
               obj1 = aPIError(709);
               obj1.dispatch({ type: "SECURE_FRAMES_SETTINGS_UPDATE", persistentCodesEnabled: false });
-              obj2 = aPIError(4532);
+              obj2 = aPIError(4594);
               const obj3 = { title: null, body: null };
               const intl = callback(1236).intl;
               obj3[0] = intl.string(callback(1236).t.R0RpRX);
@@ -191,7 +191,7 @@ function _updatePersistentCodesEnabled() {
               })();
               dependencyMap = tmp19;
               if (null != tmp19) {
-                let obj2 = v0(8905);
+                let obj2 = v0(9082);
                 const intl = callback(1236).intl;
                 const string = intl.string;
                 const t = callback(1236).t;

@@ -1,9 +1,9 @@
-// Module ID: 4214
-// Function ID: 4215
+// Module ID: 4276
+// Function ID: 4277
 // Name: map
-// Dependencies: [4215, 589, 1467, 709, 2]
+// Dependencies: [4277, 589, 1467, 709, 2]
 
-// Module 4214 (map)
+// Module 4276 (map)
 import applicationId from "applicationId";
 import { Store } from "initialize";
 import set from "isDiscordProxiedAssetUrl";

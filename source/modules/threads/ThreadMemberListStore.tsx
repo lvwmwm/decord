@@ -1,9 +1,9 @@
-// Module ID: 6168
-// Function ID: 6169
+// Module ID: 7220
+// Function ID: 7221
 // Name: handleUserUpdate
-// Dependencies: [32, 1372, 1942, 6058, 4280, 4871, 1874, 676, 12, 11, 3826, 4032, 1351, 589, 709, 2]
+// Dependencies: [32, 1372, 1942, 5776, 4342, 4933, 1874, 676, 12, 11, 3888, 4094, 1351, 589, 709, 2]
 
-// Module 6168 (handleUserUpdate)
+// Module 7220 (handleUserUpdate)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -280,7 +280,7 @@ prototype["calculateNewState"] = function calculateNewState(userId, channel) {
   }
   let canResult = null != user && null != channel;
   if (canResult) {
-    let obj = importAll(3826);
+    let obj = importAll(3888);
     obj = { permission: null, user: null, context: null };
     obj[0] = constants2.VIEW_CHANNEL;
     obj[1] = user;
@@ -306,8 +306,8 @@ prototype["calculateNewState"] = function calculateNewState(userId, channel) {
     nick = member.nick;
   }
   if (nick == null) {
-    nick = importDefault(4032).getName(user);
-    const obj3 = importDefault(4032);
+    nick = importDefault(4094).getName(user);
+    const obj3 = importDefault(4094);
   }
   const items = [str, , ];
   let formatted;
@@ -488,7 +488,7 @@ const threadMemberListStore = new ThreadMemberListStore(require("dispatcher"), {
       parent_id = channel.parent_id;
     }
     if (null != parent_id) {
-      if (typeof MemberList !== "fileFinishedImporting") {
+      if (typeof MemberList !== "error") {
         HermesBuiltin.throwTypeError();
       }
       let obj = Object.create(MemberList.prototype);

@@ -1,10 +1,10 @@
-// Module ID: 14491
-// Function ID: 14492
+// Module ID: 14558
+// Function ID: 14559
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: isEligibleForUpcomingServerEventNotifications, useUpcomingServerEventExperiment
 
-// Module 14491 (apexExperiment)
+// Module 14558 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null, 2: { showSettingsToggle: true }, 3: { showSettingsToggle: true } };

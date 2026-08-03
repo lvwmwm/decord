@@ -1,10 +1,10 @@
-// Module ID: 6772
-// Function ID: 6773
+// Module ID: 7729
+// Function ID: 7730
 // Name: AgeVerifyScreen
-// Dependencies: [19, 6751, 21, 6758, 4044, 4409, 6762, 4193, 712, 4399, 6755, 1236, 5574, 2]
+// Dependencies: [19, 7709, 21, 7715, 4106, 4471, 7719, 4255, 712, 4461, 5907, 1236, 5636, 2]
 // Exports: default
 
-// Module 6772 (AgeVerifyScreen)
+// Module 7729 (AgeVerifyScreen)
 import noop from "noop";
 import { AGE_VERIFICATION_MODAL_KEY as closure_4 } from "set";
 import { jsx } from "jsxProd";
@@ -79,7 +79,7 @@ export default function AgeVerificationModal(webviewUrl) {
   const memo = React.useMemo(() => {
     function handleClose() {
       dependencyMap();
-      let arr = callback2(4399);
+      let arr = callback2(4461);
       arr = arr.pop();
     }
     return {
@@ -90,7 +90,7 @@ export default function AgeVerificationModal(webviewUrl) {
           const obj = { onPress: handleClose, text: null };
           const intl = callback(1236).intl;
           obj[1] = intl.string(callback(1236).t.cpT0Cq);
-          return outer1_5(callback(6755).HeaderActionButton, obj);
+          return outer1_5(callback(5907).HeaderActionButton, obj);
         },
         render() {
           return outer1_5(outer1_7, { webviewUrl: closure_0, onComplete: closure_1, onClose: handleClose });

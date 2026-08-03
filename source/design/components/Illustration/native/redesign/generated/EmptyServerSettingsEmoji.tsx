@@ -1,10 +1,10 @@
-// Module ID: 16426
-// Function ID: 16427
+// Module ID: 16492
+// Function ID: 16493
 // Name: getEmptyServerSettingsEmojiSource
-// Dependencies: [19, 17, 21, 6541, 16427, 16428, 16429, 4039, 2]
+// Dependencies: [19, 17, 21, 7532, 16493, 16494, 16495, 4101, 2]
 // Exports: EmptyServerSettingsEmoji, getEmptyServerSettingsEmojiSource, useEmptyServerSettingsEmojiSource
 
-// Module 16426 (getEmptyServerSettingsEmojiSource)
+// Module 16492 (getEmptyServerSettingsEmojiSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -13,50 +13,50 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/EmptyServerSettingsEmoji.tsx");
 
 export const getEmptyServerSettingsEmojiSource = function getEmptyServerSettingsEmojiSource(theme) {
-  let obj = require(6541) /* getIllustrationSource */;
+  let obj = require(7532) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(16427);
+      return callback(16493);
     },
     darker() {
-      return callback(16428);
+      return callback(16494);
     },
     light() {
-      return callback(16429);
+      return callback(16495);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 };
 export const useEmptyServerSettingsEmojiSource = function useEmptyServerSettingsEmojiSource() {
-  let obj = require(4039) /* AccessibilityAnnouncer */;
+  let obj = require(4101) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(16427);
+      return callback(16493);
     },
     darker() {
-      return callback(16428);
+      return callback(16494);
     },
     light() {
-      return callback(16429);
+      return callback(16495);
     }
   };
-  return require(6541) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  return require(7532) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
 };
 export const EmptyServerSettingsEmoji = function EmptyServerSettingsEmoji(arg0) {
-  let obj = require(4039) /* AccessibilityAnnouncer */;
+  let obj = require(4101) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(16427);
+      return callback(16493);
     },
     darker() {
-      return callback(16428);
+      return callback(16494);
     },
     light() {
-      return callback(16429);
+      return callback(16495);
     }
   };
   obj = {};
-  const illustrationSource = require(6541) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  const illustrationSource = require(7532) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
   obj.source = illustrationSource;
   return <Image />;

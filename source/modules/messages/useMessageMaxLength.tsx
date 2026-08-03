@@ -1,10 +1,10 @@
-// Module ID: 6185
-// Function ID: 6186
+// Module ID: 8152
+// Function ID: 8153
 // Name: useMessageMaxLength
-// Dependencies: [1874, 676, 3839, 589, 2]
+// Dependencies: [1874, 676, 3901, 589, 2]
 // Exports: default, getMaxMessageLength
 
-// Module 6185 (useMessageMaxLength)
+// Module 8152 (useMessageMaxLength)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
@@ -19,5 +19,5 @@ export default function useMessageMaxLength() {
   return require(589) /* initialize */.useStateFromStores(items, () => callback(table[2]).canUseIncreasedMessageLength(currentUser.getCurrentUser()) ? closure_4 : closure_5);
 };
 export const getMaxMessageLength = function getMaxMessageLength() {
-  return importDefault(3839).canUseIncreasedMessageLength(currentUser.getCurrentUser()) ? closure_4 : closure_5;
+  return importDefault(3901).canUseIncreasedMessageLength(currentUser.getCurrentUser()) ? closure_4 : closure_5;
 };

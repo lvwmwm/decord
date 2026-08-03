@@ -1,10 +1,10 @@
-// Module ID: 13979
-// Function ID: 13980
+// Module ID: 14046
+// Function ID: 14047
 // Name: FamilyCenterParentalControlsSettings
-// Dependencies: [32, 19, 17, 676, 5799, 21, 4193, 712, 1480, 5519, 5539, 6333, 5859, 13943, 13961, 1236, 2225, 9127, 13980, 13981, 8228, 5800, 5181, 13982, 8764, 8762, 2]
+// Dependencies: [32, 19, 17, 676, 6894, 21, 4255, 712, 1480, 5581, 5601, 6775, 6950, 14010, 14028, 1236, 2255, 9300, 14047, 14048, 8535, 6895, 5243, 14049, 8941, 8939, 2]
 // Exports: default
 
-// Module 13979 (FamilyCenterParentalControlsSettings)
+// Module 14046 (FamilyCenterParentalControlsSettings)
 import _slicedToArray from "_slicedToArray";
 import FamilyCenterParentalControlsDataAndPrivacy from "FamilyCenterParentalControlsDataAndPrivacy";
 import get_ActivityIndicator from "GenericHeaderTitle";
@@ -110,7 +110,7 @@ export default function FamilyCenterParentalControlsSettings() {
         }
       }
     }
-    stackNavigation.setOptions({ title: "Array", headerRight: "HermesInternal" });
+    stackNavigation.setOptions({ title: "Array", headerRight: "ct" });
   }, items1);
   if (isFamilyCenterV3Enabled) {
     isFamilyCenterV3Enabled = selectedSubPage === items2.SCREEN_TIME_CONTROLS;

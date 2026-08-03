@@ -1,10 +1,10 @@
-// Module ID: 14139
-// Function ID: 14140
+// Module ID: 14206
+// Function ID: 14207
 // Name: QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED
-// Dependencies: [17, 14140, 687, 4603, 2]
+// Dependencies: [17, 14207, 687, 4665, 2]
 // Exports: dimensionsLayoutTransition, getQuestDockClosedWidth, getQuestDockCollapsedWidth, getQuestDockExpandedHeightLimits, getQuestDockExpandedWidth, isSoftDismissed, roundToNearestPixel
 
-// Module 14139 (QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED)
+// Module 14206 (QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED)
 import { PixelRatio } from "get ActivityIndicator";
 import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT";
 
@@ -49,13 +49,13 @@ function dimensionsLayoutTransition(currentOriginX) {
   obj = { initialValues: obj, animations: null };
   obj = { originX: currentOriginX.currentOriginX, originY: currentOriginX.currentOriginY, width: currentOriginX.currentWidth, height: currentOriginX.currentHeight };
   obj = { originX: null, originY: null, height: null, width: null };
-  obj[0] = require(4603) /* CONFIG_NEVER_ANIMATE */.withSpring(currentOriginX.targetOriginX, QUEST_DOCK_MODE_CHANGE_PHYSICS);
-  const obj4 = require(4603) /* CONFIG_NEVER_ANIMATE */;
-  obj[1] = require(4603) /* CONFIG_NEVER_ANIMATE */.withSpring(currentOriginX.targetOriginY, QUEST_DOCK_MODE_CHANGE_PHYSICS);
-  const obj5 = require(4603) /* CONFIG_NEVER_ANIMATE */;
-  obj[2] = require(4603) /* CONFIG_NEVER_ANIMATE */.withSpring(currentOriginX.targetHeight, QUEST_DOCK_MODE_CHANGE_PHYSICS);
-  const obj6 = require(4603) /* CONFIG_NEVER_ANIMATE */;
-  obj[3] = require(4603) /* CONFIG_NEVER_ANIMATE */.withSpring(currentOriginX.targetWidth, QUEST_DOCK_MODE_CHANGE_PHYSICS);
+  obj[0] = require(4665) /* CONFIG_NEVER_ANIMATE */.withSpring(currentOriginX.targetOriginX, QUEST_DOCK_MODE_CHANGE_PHYSICS);
+  const obj4 = require(4665) /* CONFIG_NEVER_ANIMATE */;
+  obj[1] = require(4665) /* CONFIG_NEVER_ANIMATE */.withSpring(currentOriginX.targetOriginY, QUEST_DOCK_MODE_CHANGE_PHYSICS);
+  const obj5 = require(4665) /* CONFIG_NEVER_ANIMATE */;
+  obj[2] = require(4665) /* CONFIG_NEVER_ANIMATE */.withSpring(currentOriginX.targetHeight, QUEST_DOCK_MODE_CHANGE_PHYSICS);
+  const obj6 = require(4665) /* CONFIG_NEVER_ANIMATE */;
+  obj[3] = require(4665) /* CONFIG_NEVER_ANIMATE */.withSpring(currentOriginX.targetWidth, QUEST_DOCK_MODE_CHANGE_PHYSICS);
   obj[1] = obj;
   return obj;
 }

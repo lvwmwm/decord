@@ -1,10 +1,10 @@
-// Module ID: 8058
-// Function ID: 8059
+// Module ID: 8389
+// Function ID: 8390
 // Name: InfoBox
-// Dependencies: [19, 17, 21, 4193, 712, 4149, 6733, 4189, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 4211, 7704, 4251, 2]
 // Exports: default
 
-// Module 8058 (InfoBox)
+// Module 8389 (InfoBox)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -39,16 +39,16 @@ export default function InfoBox(look) {
   let obj = {};
   obj = { color: null };
   obj[0] = importDefault(712).colors.TEXT_LINK;
-  obj[obj2.INFO] = callback(require(4149) /* CircleInformationIcon */.CircleInformationIcon, obj);
+  obj[obj2.INFO] = callback(require(4211) /* CircleInformationIcon */.CircleInformationIcon, obj);
   obj = { color: null };
   obj[0] = importDefault(712).colors.ICON_FEEDBACK_WARNING;
-  obj[obj2.WARNING] = callback(require(6733) /* CircleErrorIcon */.CircleErrorIcon, obj);
+  obj[obj2.WARNING] = callback(require(7704) /* CircleErrorIcon */.CircleErrorIcon, obj);
   const obj1 = { style: null, children: null };
   const items2 = [style, ...{ [closure_7.INFO]: items, [closure_7.WARNING]: items1 }[INFO]];
   obj1[0] = items2;
   const items3 = [obj[INFO], ];
   obj2 = { style: tmp2.infoText, variant: "text-sm/semibold", children };
-  items3[1] = callback(require(4189) /* Text */.Text, obj2);
+  items3[1] = callback(require(4251) /* Text */.Text, obj2);
   obj1[1] = items3;
   return callback2(View, obj1);
 };

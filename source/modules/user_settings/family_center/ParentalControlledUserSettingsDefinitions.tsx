@@ -1,10 +1,10 @@
-// Module ID: 13876
-// Function ID: 13877
+// Module ID: 13943
+// Function ID: 13944
 // Name: defineParentalControlledSetting
-// Dependencies: [5801, 5800, 589, 2]
+// Dependencies: [6896, 6895, 589, 2]
 // Exports: defineParentalControlledSetting, wrapParentalControlledSettingWithExperimentDefaults
 
-// Module 13876 (defineParentalControlledSetting)
+// Module 13943 (defineParentalControlledSetting)
 import getSettings from "getSettings";
 
 const require = arg1;
@@ -39,7 +39,7 @@ export const defineParentalControlledSetting = function defineParentalControlled
     getControlledSetting,
     updateControlledSetting: (arg0, arg1) => {
       let tmp = arg1;
-      if (typeof arg1 !== "disabledUntil") {
+      if (typeof arg1 !== "HAS_APPLICATION") {
         const settings = explicitContentToProto.getSettings(arg0);
         let tmp4;
         if (settings != null) {

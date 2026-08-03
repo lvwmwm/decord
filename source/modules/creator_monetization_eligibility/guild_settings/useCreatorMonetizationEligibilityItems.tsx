@@ -1,10 +1,10 @@
-// Module ID: 16550
-// Function ID: 16551
+// Module ID: 16616
+// Function ID: 16617
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 19, 676, 16551, 16552, 1236, 1945, 3884, 16553, 2]
+// Dependencies: [5, 19, 676, 16617, 16618, 1236, 1945, 3946, 16619, 2]
 // Exports: default
 
-// Module 16550 (useCreatorMonetizationEligibilityItems)
+// Module 16616 (useCreatorMonetizationEligibilityItems)
 import getSystemLocale from "getSystemLocale";
 import noop from "noop";
 import { HelpdeskArticles } from "ME";
@@ -147,7 +147,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
       let fn;
       if (!noRecentViolations) {
         fn = () => {
-          const tmp = callback(3884);
+          const tmp = callback(3946);
           return tmp(callback(1945).getSubmitRequestURL());
         };
       }

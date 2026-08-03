@@ -1,9 +1,9 @@
-// Module ID: 3856
-// Function ID: 3857
+// Module ID: 3918
+// Function ID: 3919
 // Name: getClient
 // Dependencies: [676, 500, 530, 589, 709, 2]
 
-// Module 3856 (getClient)
+// Module 3918 (getClient)
 import ME from "ME";
 import set from "set";
 import { Store } from "initialize";
@@ -63,7 +63,7 @@ obj = {
     if (paymentSourceType.paymentSourceType === constants2.PAYPAL) {
       if (tmp === closure_2) {
         const _window = window;
-        if (typeof onComplete !== "disabledUntil") {
+        if (typeof onComplete !== "HAS_APPLICATION") {
           const obj = { path: null, queryItems: null };
           obj[0] = tmp2;
           obj[1] = tmp3;

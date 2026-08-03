@@ -1,10 +1,10 @@
-// Module ID: 4388
-// Function ID: 4389
+// Module ID: 4450
+// Function ID: 4451
 // Name: collectGuildAnalyticsMetadata
-// Dependencies: [1376, 1218, 1372, 1932, 4114, 1942, 1935, 1862, 4240, 3821, 4280, 4265, 4205, 3830, 1931, 4010, 4389, 1874, 4209, 676, 1379, 3826, 506, 4391, 698, 687, 4392, 4394, 12, 2]
+// Dependencies: [1376, 1218, 1372, 1932, 4176, 1942, 1935, 1862, 4302, 3883, 4342, 4327, 4267, 3892, 1931, 4072, 4451, 1874, 4271, 676, 1379, 3888, 506, 4453, 698, 687, 4454, 4456, 12, 2]
 // Exports: collectChannelAnalyticsMetadataFromId, collectStaticChannelRouteAnalyticsMetadata, collectVoiceAnalyticsMetadata, getChannelOpenedMetadata, getCustomStatusMetadata, getVoiceStateMetadata, trackWithMetadata
 
-// Module 4388 (collectGuildAnalyticsMetadata)
+// Module 4450 (collectGuildAnalyticsMetadata)
 import { THREAD_CHANNEL_TYPES } from "createChannelRecord";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -60,7 +60,7 @@ function collectGuildAnalyticsMetadata(guildId) {
       obj[6] = num;
       let NONE = store3.getGuildPermissions(guild);
       if (NONE == null) {
-        NONE = importAll(3826).NONE;
+        NONE = importAll(3888).NONE;
       }
       obj[7] = String(NONE);
       const features = guild.features;
@@ -97,11 +97,11 @@ function collectChannelAnalyticsMetadata(channel) {
       if (null != guildId) {
         let NONE2 = store3.getChannelPermissions(channel);
         if (NONE2 == null) {
-          NONE2 = importAll(3826).NONE;
+          NONE2 = importAll(3888).NONE;
         }
         let NONE = NONE2;
       } else {
-        NONE = importAll(3826).NONE;
+        NONE = importAll(3888).NONE;
       }
       obj[3] = String(NONE);
       obj[4] = false;
@@ -286,7 +286,7 @@ export const collectVoiceAnalyticsMetadata = function collectVoiceAnalyticsMetad
       });
       const merged = Object.assign(obj);
       const tmp9Result = obj(12)(store4.getVoiceStates(guildId));
-      const merged1 = Object.assign(id(4391).getVoiceAnalyticsMetadataAdditional());
+      const merged1 = Object.assign(id(4453).getVoiceAnalyticsMetadataAdditional());
       return obj;
     }
   }
@@ -340,17 +340,17 @@ export const getChannelOpenedMetadata = function getChannelOpenedMetadata(select
         obj3[5] = channel.isSpoilerChannel();
         obj3[6] = updateUserGuildSettingsInternal.resolveUnreadSetting(channel);
         const unreadSetting = updateUserGuildSettingsInternal.resolveUnreadSetting(channel);
-        obj3[7] = require(4392) /* Presets */.presetFromSettings(unreadSetting, updateUserGuildSettingsInternal.resolvedMessageNotifications(channel));
+        obj3[7] = require(4454) /* Presets */.presetFromSettings(unreadSetting, updateUserGuildSettingsInternal.resolvedMessageNotifications(channel));
         obj3[8] = channel.guild_id;
         ({ guildUnread: obj6[9], guildMentionCount: obj6[10] } = snapshot);
         obj3[11] = updateUserGuildSettingsInternal.isMuted(channel.guild_id);
         obj3[12] = updateUserGuildSettingsInternal.resolveGuildUnreadSetting(guild);
-        const obj7 = require(4392) /* Presets */;
+        const obj7 = require(4454) /* Presets */;
         const guildUnreadSetting = updateUserGuildSettingsInternal.resolveGuildUnreadSetting(guild);
-        obj3[13] = require(4392) /* Presets */.presetFromSettings(guildUnreadSetting, updateUserGuildSettingsInternal.getMessageNotifications(channel.guild_id));
+        obj3[13] = require(4454) /* Presets */.presetFromSettings(guildUnreadSetting, updateUserGuildSettingsInternal.getMessageNotifications(channel.guild_id));
         ({ parent_id: obj6[14], parentChannelThreadType: obj6[15] } = channel);
-        const obj8 = require(4392) /* Presets */;
-        obj3[16] = require(4394) /* hasPendingMemberAction */.hasPendingMemberAction(channel.guild_id, selectedChannelId);
+        const obj8 = require(4454) /* Presets */;
+        obj3[16] = require(4456) /* hasPendingMemberAction */.hasPendingMemberAction(channel.guild_id, selectedChannelId);
         obj3[17] = store3.can(constants3.SEND_MESSAGES, channel);
         return obj3;
       }

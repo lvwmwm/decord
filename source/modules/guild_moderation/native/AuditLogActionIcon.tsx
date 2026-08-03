@@ -1,10 +1,10 @@
-// Module ID: 16404
-// Function ID: 16405
+// Module ID: 16470
+// Function ID: 16471
 // Name: AuditIcons
-// Dependencies: [19, 17, 16394, 676, 21, 4193, 712, 16405, 16378, 6579, 4149, 14004, 4137, 9452, 4707, 15583, 4715, 8331, 4692, 6632, 10936, 6635, 16407, 9834, 4690, 9035, 16409, 16410, 16411, 1297, 2]
+// Dependencies: [19, 17, 16460, 676, 21, 4255, 712, 16471, 16444, 7564, 4211, 14071, 4199, 9599, 4769, 15650, 4777, 8636, 4754, 7615, 11058, 7618, 16473, 9979, 4752, 9210, 16475, 16476, 16477, 1297, 2]
 // Exports: default
 
-// Module 16404 (AuditIcons)
+// Module 16470 (AuditIcons)
 import "StickerIcon";
 import { View } from "CalendarIcon";
 import getTargetType from "getTargetType";
@@ -51,17 +51,17 @@ function AuditIcons(action) {
   const tmp = createCacheKey();
   const tmp2 = callback(action);
   if (constants.CREATE === tmp2) {
-    let tmp4 = importDefault(16409);
+    let tmp4 = importDefault(16475);
   } else if (tmp3.UPDATE === tmp2) {
-    tmp4 = importDefault(16410);
+    tmp4 = importDefault(16476);
   } else {
     tmp4 = null;
     if (tmp3.DELETE === tmp2) {
-      tmp4 = importDefault(16411);
+      tmp4 = importDefault(16477);
     }
   }
   if (action === constants2.MESSAGE_DELETE) {
-    let RobotIcon = require(4690) /* ChatIcon */.ChatIcon;
+    let RobotIcon = require(4752) /* ChatIcon */.ChatIcon;
   } else {
     if (action !== tmp12.AUTO_MODERATION_BLOCK_MESSAGE) {
       if (action !== tmp12.AUTO_MODERATION_FLAG_TO_CHANNEL) {
@@ -72,7 +72,7 @@ function AuditIcons(action) {
         }
       }
     }
-    RobotIcon = require(9035) /* RobotIcon */.RobotIcon;
+    RobotIcon = require(9210) /* RobotIcon */.RobotIcon;
   }
   let obj = { style: tmp.actionImageContainer, children: null };
   obj = { size: "custom", style: tmp.iconComponent };

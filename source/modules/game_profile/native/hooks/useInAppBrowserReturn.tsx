@@ -1,10 +1,10 @@
-// Module ID: 8498
-// Function ID: 8499
+// Module ID: 8787
+// Function ID: 8788
 // Name: useInAppBrowserReturn
-// Dependencies: [19, 8492, 501, 4159, 8490, 8496, 2]
+// Dependencies: [19, 8781, 501, 4221, 8779, 8785, 2]
 // Exports: default
 
-// Module 8498 (useInAppBrowserReturn)
+// Module 8787 (useInAppBrowserReturn)
 import noop from "noop";
 import getSimilarGames from "getSimilarGames";
 

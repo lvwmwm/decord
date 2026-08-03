@@ -1,10 +1,10 @@
-// Module ID: 9200
-// Function ID: 9201
+// Module ID: 9373
+// Function ID: 9374
 // Name: LinkButton
-// Dependencies: [5, 32, 19, 17, 9201, 1218, 676, 21, 4193, 4721, 4189, 4533, 1236, 500, 4745, 9202, 1480, 589, 1483, 5645, 9203, 4534, 9204, 9205, 9206, 4092, 9207, 9211, 9212, 9214, 9208, 4604, 9215, 1577, 9217, 9219, 6730, 9223, 8742, 9224, 4602, 9231, 9008, 2]
+// Dependencies: [5, 32, 19, 17, 9374, 1218, 676, 21, 4255, 4783, 4251, 4595, 1236, 500, 4807, 9375, 1480, 589, 1483, 5707, 9376, 4596, 9377, 9378, 9379, 4154, 9380, 9384, 9385, 9387, 9381, 4666, 9388, 1577, 9390, 9392, 7701, 9396, 8919, 9397, 4664, 9404, 9185, 2]
 // Exports: default
 
-// Module 9200 (LinkButton)
+// Module 9373 (LinkButton)
 import fetchFingerprint from "fetchFingerprint";
 import KeyIcon from "KeyIcon";
 import handleLogout from "handleLogout";
@@ -37,7 +37,7 @@ class LinkButton {
   }
 }
 function handlePressPasswordManagerHint() {
-  let obj = importDefault(4533);
+  let obj = importDefault(4595);
   obj = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.lzsy7t);

@@ -1,9 +1,9 @@
-// Module ID: 8225
-// Function ID: 8226
+// Module ID: 8532
+// Function ID: 8533
 // Name: getGuildEventsForCurrentUser
-// Dependencies: [5, 4010, 5784, 8212, 5138, 2]
+// Dependencies: [5, 4072, 6882, 8519, 5200, 2]
 
-// Module 8225 (getGuildEventsForCurrentUser)
+// Module 8532 (getGuildEventsForCurrentUser)
 import closure_2 from "set";
 import handleConnectionOpen from "handleConnectionOpen";
 import scheduledEventSort from "scheduledEventSort";
@@ -230,7 +230,7 @@ prototype["getGuildEventUserCounts"] = function getGuildEventUserCounts(guild_id
   })();
 };
 prototype["getGuildEventUsers"] = function getGuildEventUsers(id, arg1, guild_id) {
-  return importDefault(8212).fetchUsersForGuildEvent(id, arg1, guild_id);
+  return importDefault(8519).fetchUsersForGuildEvent(id, arg1, guild_id);
 };
 prototype["getGuildEventsForCurrentUser"] = function getGuildEventsForCurrentUser(arg0) {
   return getGuildEventsForCurrentUser(arg0);

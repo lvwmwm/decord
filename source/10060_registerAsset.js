@@ -1,0 +1,10 @@
+// Module ID: 10060
+// Function ID: 10061
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 10060 (registerAsset)
+import registerAsset from "registerAsset";
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d25dc6aac0ffe1d35c3be44e5c9ce017", name: "ArrowAngleRightUpIcon", type: "png" });

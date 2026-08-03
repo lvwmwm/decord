@@ -1,10 +1,10 @@
-// Module ID: 7181
-// Function ID: 7182
+// Module ID: 6317
+// Function ID: 6318
 // Name: GiftCardRedeem3dIllustration
-// Dependencies: [21, 5145, 7182, 2]
+// Dependencies: [21, 5207, 6318, 2]
 // Exports: GiftCardRedeem3dIllustration
 
-// Module 7181 (GiftCardRedeem3dIllustration)
+// Module 6317 (GiftCardRedeem3dIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GiftCardRedeem3dIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const GiftCardRedeem3dIllustration = function GiftCardRedeem3dIllustratio
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7182);
+  obj[0] = importDefault(6318);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GiftCardRedeem3dIllustration = function GiftCardRedeem3dIllustratio
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5207), { width: num * num3, height: num2 * num3 });
 };

@@ -1,9 +1,9 @@
-// Module ID: 4737
-// Function ID: 4738
+// Module ID: 4799
+// Function ID: 4800
 // Name: isEnabled
-// Dependencies: [4406, 676, 4372, 500, 4738, 709, 4736, 2]
+// Dependencies: [4468, 676, 4434, 500, 4800, 709, 4798, 2]
 
-// Module 4737 (isEnabled)
+// Module 4799 (isEnabled)
 import { NativePermissionTypes } from "NativePermissionStatus";
 import { InputModes } from "ME";
 import "initialize";
@@ -18,7 +18,7 @@ prototype["isEnabled"] = function isEnabled() {
     const tmpResult = tmp(500);
   }
   if (isDesktopResult) {
-    const ProcessArgs = tmp(4738).ProcessArgs;
+    const ProcessArgs = tmp(4800).ProcessArgs;
     isDesktopResult = !ProcessArgs.isDiscordTestSet();
   }
   return isDesktopResult;
@@ -37,8 +37,8 @@ prototype["_terminate"] = function _terminate() {
 };
 prototype["handleAudioSetMode"] = function handleAudioSetMode(mode) {
   if (mode.mode === InputModes.PUSH_TO_TALK) {
-    const permission = require(4736) /* NativePermissionsRequestOptions */.default.requestPermission(NativePermissionTypes.INPUT_MONITORING);
-    const _default = require(4736) /* NativePermissionsRequestOptions */.default;
+    const permission = require(4798) /* NativePermissionsRequestOptions */.default.requestPermission(NativePermissionTypes.INPUT_MONITORING);
+    const _default = require(4798) /* NativePermissionsRequestOptions */.default;
   }
 };
 const nativePermissionManager = new NativePermissionManager();

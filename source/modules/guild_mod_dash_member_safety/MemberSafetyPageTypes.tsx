@@ -1,9 +1,9 @@
-// Module ID: 15462
-// Function ID: 15463
+// Module ID: 15529
+// Function ID: 15530
 // Name: SUBMITTED
-// Dependencies: [4013, 2]
+// Dependencies: [4075, 2]
 
-// Module 15462 (SUBMITTED)
+// Module 15529 (SUBMITTED)
 const obj = { ALL_MEMBERS: "ALL_MEMBERS" };
 const SUBMITTED = require("MAX_RESULTS_PER_PAGE").GuildJoinRequestApplicationStatuses.SUBMITTED;
 obj.PENDING = SUBMITTED;

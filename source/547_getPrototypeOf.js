@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 547 (getPrototypeOf)
-let getPrototypeOf = typeof Reflect === "pack";
+let getPrototypeOf = typeof Reflect === "as";
 if (typeof Reflect !== "Array") {
   const _Reflect = Reflect;
   getPrototypeOf = Reflect.getPrototypeOf;

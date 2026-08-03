@@ -1,10 +1,10 @@
-// Module ID: 13756
-// Function ID: 13757
+// Module ID: 13823
+// Function ID: 13824
 // Name: UserProfileLegacyUsernameSwitch
-// Dependencies: [19, 21, 3866, 13736, 1236, 9235, 7945, 2]
+// Dependencies: [19, 21, 3928, 13799, 1236, 9408, 8063, 2]
 // Exports: default
 
-// Module 13756 (UserProfileLegacyUsernameSwitch)
+// Module 13823 (UserProfileLegacyUsernameSwitch)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -14,7 +14,7 @@ let result = require("explicitContentFromProto").fileFinishedImporting("modules/
 export default function UserProfileLegacyUsernameSwitch(username) {
   const pendingLegacyUsernameDisabled = username.pendingLegacyUsernameDisabled;
   let setting;
-  const LegacyUsernameDisabled = setting(3866).LegacyUsernameDisabled;
+  const LegacyUsernameDisabled = setting(3928).LegacyUsernameDisabled;
   setting = LegacyUsernameDisabled.useSetting();
   let tmp4 = setting;
   if (undefined !== pendingLegacyUsernameDisabled) {
@@ -36,5 +36,5 @@ export default function UserProfileLegacyUsernameSwitch(username) {
       obj.setPendingChanges(obj);
     }
   };
-  return jsx(setting(13736).UserProfileEditFormSwitch, { value: !tmp4, label: null, subLabel: null, onValueChange: null });
+  return jsx(setting(13799).UserProfileEditFormSwitch, { value: !tmp4, label: null, subLabel: null, onValueChange: null });
 };

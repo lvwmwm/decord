@@ -1,8 +1,8 @@
-// Module ID: 9117
-// Function ID: 9118
-// Dependencies: [19, 21, 9118, 5574, 9127, 10197, 500, 2]
+// Module ID: 9290
+// Function ID: 9291
+// Dependencies: [19, 21, 9291, 5636, 9300, 10336, 500, 2]
 
-// Module 9117
+// Module 9290
 import { jsx } from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
 import importAllResult from "noop";
@@ -15,7 +15,7 @@ const memoResult = require("noop").memo(function ModalStackNavigator(children) {
   let screenKey;
   ({ screenKey, title: require, titleIcon: importDefault } = children);
   let dependencyMap;
-  let obj = require(5574) /* NavigationStack */;
+  let obj = require(5636) /* NavigationStack */;
   dependencyMap = obj.useAccessibilityNativeStackOptions();
   obj = {
     initialRouteName: screenKey,
@@ -29,9 +29,9 @@ const memoResult = require("noop").memo(function ModalStackNavigator(children) {
         headerLeft: null,
         headerTitleAlign: "center"
       };
-      obj[1] = outer1_0(9127).getRenderModalCloseImage(navigation.navigation);
+      obj[1] = outer1_0(9300).getRenderModalCloseImage(navigation.navigation);
       let merged = Object.assign(dependencyMap);
-      let merged1 = Object.assign(outer1_1(10197)());
+      let merged1 = Object.assign(outer1_1(10336)());
       return obj;
     },
     children: <createNativeStackNavigator.Screen {...obj} />

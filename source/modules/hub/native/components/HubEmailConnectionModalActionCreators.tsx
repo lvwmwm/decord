@@ -1,8 +1,8 @@
-// Module ID: 11860
-// Function ID: 11861
-// Dependencies: [5, 4399, 11843, 1959, 2]
+// Module ID: 11956
+// Function ID: 11957
+// Dependencies: [5, 4461, 11939, 1959, 2]
 
-// Module 11860
+// Module 11956
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -12,7 +12,7 @@ const result = require("HubEmailConnectionModal").fileFinishedImporting("modules
 export default {
   open(closure_0) {
     closure_0 = arg1;
-    importDefault(4399).pushLazy(callback(function*() {
+    importDefault(4461).pushLazy(callback(function*() {
       if (c3 === 2) {
         c3 = 3;
         HermesBuiltin.throwTypeError();
@@ -76,6 +76,6 @@ export default {
     }), closure_0, HUB_EMAIL_CONNECTION_MODAL_KEY);
   },
   close() {
-    importDefault(4399).popWithKey(HUB_EMAIL_CONNECTION_MODAL_KEY);
+    importDefault(4461).popWithKey(HUB_EMAIL_CONNECTION_MODAL_KEY);
   }
 };

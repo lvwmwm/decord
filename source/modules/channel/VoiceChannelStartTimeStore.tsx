@@ -1,9 +1,9 @@
-// Module ID: 9510
-// Function ID: 9511
+// Module ID: 9657
+// Function ID: 9658
 // Name: _toTimestampMs
-// Dependencies: [4869, 687, 589, 692, 709, 2]
+// Dependencies: [4931, 687, 589, 692, 709, 2]
 
-// Module 9510 (_toTimestampMs)
+// Module 9657 (_toTimestampMs)
 import _handleConnectionOpen from "_handleConnectionOpen";
 import { Store } from "initialize";
 import set from "initialize";

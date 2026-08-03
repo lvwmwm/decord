@@ -1,10 +1,10 @@
-// Module ID: 15418
-// Function ID: 15419
+// Module ID: 15485
+// Function ID: 15486
 // Name: PostCallDisconnectNudge
-// Dependencies: [32, 19, 1931, 4209, 11517, 11518, 21, 15417, 1236, 14460, 11519, 589, 8451, 1358, 11520, 4161, 15418, 1959, 2]
+// Dependencies: [32, 19, 1931, 4271, 11627, 11628, 21, 15484, 1236, 14527, 11629, 589, 5921, 1358, 11630, 4223, 15485, 1959, 2]
 // Exports: default, usePostCallDisconnectNudge
 
-// Module 15418 (PostCallDisconnectNudge)
+// Module 15485 (PostCallDisconnectNudge)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -34,14 +34,14 @@ export default function PostCallDisconnectNudge(arg0) {
   obj[3] = constants2.CALL_DISCONNECT_BOTTOM_SHEET;
   obj[4] = markAsDismissed;
   obj[5] = onHide;
-  return jsx(importDefault(15417), { title: null, body: null, actionLocation: null, surface: null, markAsDismissed: null, onHide: null });
+  return jsx(importDefault(15484), { title: null, body: null, actionLocation: null, surface: null, markAsDismissed: null, onHide: null });
 };
 export const POST_CALL_DISCONNECT_NUDGE_KEY = "post-call-disconnect-nudge-key";
 export const usePostCallDisconnectNudge = function usePostCallDisconnectNudge() {
-  let obj = stateFromStores1(14460);
+  let obj = stateFromStores1(14527);
   let tmp2 = stateFromStores;
-  const canSeePushNotificationNudge = stateFromStores(11519).useCanSeePushNotificationNudge();
-  let obj2 = stateFromStores(11519);
+  const canSeePushNotificationNudge = stateFromStores(11629).useCanSeePushNotificationNudge();
+  let obj2 = stateFromStores(11629);
   const items = [updateVoiceState];
   stateFromStores = stateFromStores(589).useStateFromStores(items, () => currentClientVoiceChannelId.getCurrentClientVoiceChannelId(null));
   const obj3 = stateFromStores(589);
@@ -76,7 +76,7 @@ export const usePostCallDisconnectNudge = function usePostCallDisconnectNudge() 
       }
     }
   }
-  const tmp6Result = tmp6(stateFromStores(8451).useSelectedTimeRecurringDismissibleContent(prop, closure_12), 2);
+  const tmp6Result = tmp6(stateFromStores(5921).useSelectedTimeRecurringDismissibleContent(prop, closure_12), 2);
   first = tmp6Result[0];
   handleConnectionOpen = tmp12;
   const items3 = [first, tmp6Result[1]];

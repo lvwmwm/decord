@@ -1,9 +1,9 @@
-// Module ID: 5816
-// Function ID: 5817
+// Module ID: 6911
+// Function ID: 6912
 // Name: fromServer
 // Dependencies: [2]
 
-// Module 5816 (fromServer)
+// Module 6911 (fromServer)
 let AssetDisplayConfigRecord;
 class AssetDisplayConfigRecord {
   constructor(arg0) {
@@ -14,7 +14,7 @@ class AssetDisplayConfigRecord {
 }
 const prototype = AssetDisplayConfigRecord.prototype;
 AssetDisplayConfigRecord["fromServer"] = function fromServer(arg0) {
-  if (typeof AssetDisplayConfigRecord !== "fileFinishedImporting") {
+  if (typeof AssetDisplayConfigRecord !== "error") {
     HermesBuiltin.throwTypeError();
   }
   ({ desktop_max_height: tmp2.desktopMaxHeight, mobile_max_height: tmp2.mobileMaxHeight, responsive: tmp2.responsive, background_style: tmp2.backgroundStyle } = arg0);

@@ -1,10 +1,10 @@
-// Module ID: 11019
-// Function ID: 11020
+// Module ID: 11136
+// Function ID: 11137
 // Name: GiftIntentType
 // Dependencies: [1876, 676, 2]
 // Exports: getGiftIntentTypeForLocation, getPremiumGiftingIntentAnalyticsLocation, parseGiftIntentType
 
-// Module 11019 (GiftIntentType)
+// Module 11136 (GiftIntentType)
 import { GiftIntentType } from "GuildFeatures";
 import { AnalyticsLocations } from "ME";
 
@@ -35,7 +35,7 @@ export const getGiftIntentTypeForLocation = function getGiftIntentTypeForLocatio
 };
 export const parseGiftIntentType = function parseGiftIntentType(giftIntentType) {
   let tmp = null;
-  if (typeof giftIntentType !== "__REMOTEDEV__") {
+  if (typeof giftIntentType !== "SENTRY_RELEASE") {
     tmp = null;
     if (giftIntentType in GiftIntentType) {
       tmp = null;

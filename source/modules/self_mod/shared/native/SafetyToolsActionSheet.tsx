@@ -1,11 +1,11 @@
-// Module ID: 10173
-// Function ID: 10174
+// Module ID: 10312
+// Function ID: 10313
 // Name: SafetyToolsActionSheet
-// Dependencies: [19, 17, 3830, 10172, 21, 4193, 712, 10174, 10175, 10166, 589, 10169, 5569, 1236, 8682, 8681, 4161, 10178, 1959, 3890, 8743, 8368, 8742, 9223, 8927, 10181, 6739, 6724, 4533, 10182, 9453, 9452, 7697, 9084, 9083, 4399, 10184, 10189, 10190, 10191, 9038, 9037, 10193, 10179, 5558, 5224, 5230, 2]
+// Dependencies: [19, 17, 3892, 10311, 21, 4255, 712, 10313, 10314, 10305, 589, 10308, 5631, 1236, 8859, 8858, 4223, 10317, 1959, 3952, 8920, 8673, 8919, 9396, 9104, 10320, 5895, 7695, 4595, 10321, 9600, 9599, 7818, 9257, 9256, 4461, 10323, 10328, 10329, 10330, 8349, 8350, 10332, 10318, 5620, 5286, 5292, 2]
 // Exports: default
 
-// Module 10173 (SafetyToolsActionSheet)
-import module_3890 from "module_3890";
+// Module 10312 (SafetyToolsActionSheet)
+import module_3952 from "module_3952";
 import { View } from "SafetyToolsCrisisTextLineActionSheet";
 import upsertRelationship from "upsertRelationship";
 import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE";
@@ -80,7 +80,7 @@ export default function SafetyToolsActionSheet(channelId) {
       closure_0 = outer1_7(closure_0);
       let obj = outer1_1(outer1_2[16]);
       obj = {
-        recipientId: module_3890,
+        recipientId: module_3952,
         channelId: closure_0,
         warningId: closure_1,
         warningType: closure_2,
@@ -140,10 +140,10 @@ export default function SafetyToolsActionSheet(channelId) {
     obj2[5] = function onPress() {
       const obj = outer1_1(outer1_2[24]);
       if (closure_11) {
-        obj.unignoreUser(module_3890, outer1_6, closure_0);
+        obj.unignoreUser(module_3952, outer1_6, closure_0);
         callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_UNIGNORE);
       } else {
-        obj.ignoreUser(module_3890, outer1_6, closure_0);
+        obj.ignoreUser(module_3952, outer1_6, closure_0);
         callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_IGNORE);
       }
     };
@@ -167,8 +167,8 @@ export default function SafetyToolsActionSheet(channelId) {
         let tmpResult = tmp(tmp2[24]);
         let obj = { location: null };
         obj[0] = outer1_6;
-        tmpResult.unblockUser(module_3890, obj);
-        const result = outer1_1(outer1_2[27]).showUnblockSuccessToast(module_3890, closure_0);
+        tmpResult.unblockUser(module_3952, obj);
+        const result = outer1_1(outer1_2[27]).showUnblockSuccessToast(module_3952, closure_0);
         callback2(outer1_0(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_UNBLOCK);
         const obj5 = outer1_1(outer1_2[27]);
       } else {
@@ -231,7 +231,7 @@ export default function SafetyToolsActionSheet(channelId) {
       closure_0 = outer1_7(closure_0);
       let obj = outer1_1(outer1_2[16]);
       obj = {
-        recipientId: module_3890,
+        recipientId: module_3952,
         channelId: closure_0,
         warningId: closure_1,
         warningType: closure_2,
@@ -262,7 +262,7 @@ export default function SafetyToolsActionSheet(channelId) {
       closure_0 = outer1_7(closure_0);
       let obj = outer1_1(outer1_2[16]);
       obj = {
-        recipientId: module_3890,
+        recipientId: module_3952,
         channelId: closure_0,
         warningId: closure_1,
         warningType: closure_2,
@@ -303,8 +303,8 @@ export default function SafetyToolsActionSheet(channelId) {
         let trailing;
         ({ label, subLabel, IconComponent, icon, trailing, onPress, disabled } = arg0);
         const obj = { label, subLabel, onPress, trailing, disabled, icon: null };
-        obj[5] = callback2(callback(5230).TableRowIcon, { source: icon, IconComponent });
-        return callback2(callback(5224).TableRow, obj, arg1);
+        obj[5] = callback2(callback(5292).TableRowIcon, { source: icon, IconComponent });
+        return callback2(callback(5286).TableRow, obj, arg1);
       });
       obj[1] = stateFromStores1(channelId(warningType[44]).TableRowGroup, obj);
       return stateFromStores1(onClose, obj, buttons.sectionKey);

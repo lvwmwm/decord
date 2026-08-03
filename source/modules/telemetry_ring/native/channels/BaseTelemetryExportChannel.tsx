@@ -1,9 +1,9 @@
-// Module ID: 13268
-// Function ID: 13269
+// Module ID: 13331
+// Function ID: 13332
 // Name: getIntervalMs
-// Dependencies: [5, 13269, 3, 595, 2]
+// Dependencies: [5, 13332, 3, 595, 2]
 
-// Module 13268 (getIntervalMs)
+// Module 13331 (getIntervalMs)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import "append";
 
@@ -130,7 +130,7 @@ prototype["_readAckedEndOffset"] = function _readAckedEndOffset() {
   const Storage = require(595) /* Storage */.Storage;
   const value = Storage.get(this.getAckedEndOffsetStorageKey());
   let num = -1;
-  if (typeof value !== "__REMOTEDEV__") {
+  if (typeof value !== "SENTRY_RELEASE") {
     const _Number = Number;
     num = -1;
     if (Number.isFinite(value)) {
@@ -246,7 +246,7 @@ prototype["_drainOnce"] = function _drainOnce(arg0) {
               maxReturnedEndOffset = closure_0[0].maxReturnedEndOffset;
               if (!maxReturnedEndOffset._resetting) {
                 let isFiniteResult = typeof maxReturnedEndOffset === "Object";
-                if (typeof maxReturnedEndOffset !== "__REMOTEDEV__") {
+                if (typeof maxReturnedEndOffset !== "SENTRY_RELEASE") {
                   const _Number = Number;
                   isFiniteResult = Number.isFinite(maxReturnedEndOffset);
                 }

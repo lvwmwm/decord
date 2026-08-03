@@ -1,8 +1,8 @@
-// Module ID: 12313
-// Function ID: 12314
-// Dependencies: [19, 21, 12314, 1959, 4534, 2]
+// Module ID: 12411
+// Function ID: 12412
+// Dependencies: [19, 21, 12412, 1959, 4596, 2]
 
-// Module 12313
+// Module 12411
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -18,6 +18,6 @@ export default {
     onCancel = onCancel.onCancel;
     ({ url, trustUrl, onConfirm, isProtocol } = onCancel);
     const lazyResult = React.lazy(() => callback(paths[3])(paths[2], paths.paths));
-    require(4534) /* useAlertStore */.openAlert("masked-link", <lazyResult url={url} trustUrl={trustUrl} onConfirm={onConfirm} onCancel={onCancel} isProtocol={isProtocol} />, onCancel);
+    require(4596) /* useAlertStore */.openAlert("masked-link", <lazyResult url={url} trustUrl={trustUrl} onConfirm={onConfirm} onCancel={onCancel} isProtocol={isProtocol} />, onCancel);
   }
 };

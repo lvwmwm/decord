@@ -1,0 +1,6 @@
+// Module ID: 5347
+// Function ID: 5348
+// Dependencies: []
+
+// Module 5347
+arg5.TouchEventType = { UNDETERMINED: 0, TOUCHES_DOWN: 1, TOUCHES_MOVE: 2, TOUCHES_UP: 3, TOUCHES_CANCELLED: 4 };

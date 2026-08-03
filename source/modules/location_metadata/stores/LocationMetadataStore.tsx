@@ -1,9 +1,9 @@
-// Module ID: 12787
-// Function ID: 12788
+// Module ID: 12850
+// Function ID: 12851
 // Name: handleSetLocationMetadata
-// Dependencies: [3874, 589, 709, 2]
+// Dependencies: [3936, 589, 709, 2]
 
-// Module 12787 (handleSetLocationMetadata)
+// Module 12850 (handleSetLocationMetadata)
 import DEFAULT_COUNTRY_CODE_NAME from "DEFAULT_COUNTRY_CODE_NAME";
 import { Store } from "initialize";
 

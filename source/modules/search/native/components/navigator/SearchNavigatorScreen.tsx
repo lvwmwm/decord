@@ -1,10 +1,10 @@
-// Module ID: 15714
-// Function ID: 15715
+// Module ID: 15779
+// Function ID: 15780
 // Name: SearchNavigatorScreen
-// Dependencies: [19, 17, 21, 4193, 712, 15483, 4049, 15715, 4721, 1236, 5151, 4723, 14954, 15485, 15496, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 15550, 4111, 15780, 4783, 1236, 5213, 4785, 15327, 15552, 15563, 2]
 // Exports: default
 
-// Module 15714 (SearchNavigatorScreen)
+// Module 15779 (SearchNavigatorScreen)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,7 +35,7 @@ export default function SearchNavigatorScreen(navigation) {
   let importDefault;
   const tmp = createCacheKey();
   importDefault = tmp;
-  let obj = navigation(15483);
+  let obj = navigation(15550);
   const searchSuggestionsGesture = obj.useSearchSuggestionsGesture(searchContext);
   ({ gesture, dismissed, setDismissed, onLayoutMeasure } = searchSuggestionsGesture);
   const items = [navigation.goBack, tmp.back];
@@ -52,16 +52,16 @@ export default function SearchNavigatorScreen(navigation) {
     obj[0] = outer1_5(navigation(outer1_2[8]).PressableOpacity, obj);
     return outer1_5(outer1_4, obj);
   }, items);
-  const items1 = [callback(importDefault(4723), { absolute: true, wide: true, tall: true }), ];
+  const items1 = [callback(importDefault(4785), { absolute: true, wide: true, tall: true }), ];
   obj = { gesture, children: null };
   const obj1 = { style: items2, children: null };
-  items2 = [tmp.wrapper, { paddingTop: importDefault(15715)() }];
-  const items3 = [callback(importDefault(15485), { searchContext, suggestionsDismissed: dismissed, setSuggestionsDismissed: setDismissed, onSuggestionsLayoutMesure: onLayoutMeasure, backButton: memo }), ];
-  const tmp3 = importDefault(15715)();
-  items3[1] = callback(View, { style: tmp.tabs, children: callback(importDefault(15496), { searchContext, width: importDefault(4049)().width }) });
+  items2 = [tmp.wrapper, { paddingTop: importDefault(15780)() }];
+  const items3 = [callback(importDefault(15552), { searchContext, suggestionsDismissed: dismissed, setSuggestionsDismissed: setDismissed, onSuggestionsLayoutMesure: onLayoutMeasure, backButton: memo }), ];
+  const tmp3 = importDefault(15780)();
+  items3[1] = callback(View, { style: tmp.tabs, children: callback(importDefault(15563), { searchContext, width: importDefault(4111)().width }) });
   obj1[1] = items3;
   obj[1] = callback2(View, obj1);
-  items1[1] = callback(navigation(14954).NonCollapsableGestureDetector, obj);
+  items1[1] = callback(navigation(15327).NonCollapsableGestureDetector, obj);
   obj[0] = items1;
   return callback2(closure_7, obj);
 };

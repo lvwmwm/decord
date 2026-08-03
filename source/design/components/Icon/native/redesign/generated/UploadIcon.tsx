@@ -1,10 +1,10 @@
-// Module ID: 6582
-// Function ID: 6583
+// Module ID: 7567
+// Function ID: 7568
 // Name: UploadIcon
-// Dependencies: [19, 21, 712, 3896, 6583, 2]
+// Dependencies: [19, 21, 712, 3958, 7568, 2]
 // Exports: UploadIcon
 
-// Module 6582 (UploadIcon)
+// Module 7567 (UploadIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const UploadIcon = function UploadIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(6583) /* registerAsset */;
+  obj[0] = require(7568) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3896) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

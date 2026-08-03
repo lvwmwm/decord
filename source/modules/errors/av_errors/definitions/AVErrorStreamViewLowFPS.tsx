@@ -1,9 +1,9 @@
-// Module ID: 16699
-// Function ID: 16700
+// Module ID: 16765
+// Function ID: 16766
 // Name: AVErrorStreamViewLowFPSDefinition
-// Dependencies: [4206, 4212, 1218, 4279, 676, 16700, 4257, 8860, 8861, 16697, 2]
+// Dependencies: [4268, 4274, 1218, 4341, 676, 16766, 4319, 9037, 9038, 16763, 2]
 
-// Module 16699 (AVErrorStreamViewLowFPSDefinition)
+// Module 16765 (AVErrorStreamViewLowFPSDefinition)
 import getParticipants from "getParticipants";
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";

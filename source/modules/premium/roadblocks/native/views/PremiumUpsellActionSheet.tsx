@@ -1,10 +1,10 @@
-// Module ID: 6203
-// Function ID: 6204
+// Module ID: 8170
+// Function ID: 8171
 // Name: AlwaysCompressImagesSwitch
-// Dependencies: [32, 19, 17, 4185, 1302, 1304, 4010, 1874, 1876, 676, 4248, 21, 4193, 712, 3897, 3839, 6204, 4772, 4731, 1236, 3890, 1945, 6205, 6206, 6207, 6208, 691, 589, 6209, 5559, 4189, 500, 6210, 5145, 6194, 6212, 5519, 698, 6213, 4052, 4161, 6202, 5555, 4615, 12626, 4604, 6631, 2]
+// Dependencies: [32, 19, 17, 4247, 1302, 1304, 4072, 1874, 1876, 676, 4310, 21, 4255, 712, 3959, 3901, 8171, 4834, 4793, 1236, 3952, 1945, 8172, 8173, 8174, 7538, 691, 589, 8175, 5621, 4251, 500, 8176, 5207, 8161, 8177, 5581, 698, 8178, 4114, 4223, 8169, 5617, 4677, 8179, 4666, 7614, 2]
 // Exports: default
 
-// Module 6203 (AlwaysCompressImagesSwitch)
+// Module 8170 (AlwaysCompressImagesSwitch)
 import useAPNGPlayerControls from "useAPNGPlayerControls";
 import getSystemLocale from "getSystemLocale";
 import { View } from "getKestrelConfig";
@@ -55,8 +55,8 @@ function AlwaysCompressImagesSwitch(isKestrelTreatment) {
       obj1[0] = tmp.compressionHint;
       const intl2 = tmp2(1236).intl;
       obj1[2] = intl2.string(tmp2(1236).t["wC0+Ph"]);
-      obj[5] = callback2(tmp2(4189).Text, obj1);
-      obj[1] = callback2(tmp2(5559).TableSwitchRow, obj);
+      obj[5] = callback2(tmp2(4251).Text, obj1);
+      obj[1] = callback2(tmp2(5621).TableSwitchRow, obj);
       tmp6 = callback2(View, obj);
     }
   }
@@ -74,13 +74,13 @@ function PremiumUpsellImage(arg0) {
         obj = { url: null, style: null, autoplay: true };
         obj[0] = image.uri;
         obj[1] = style;
-        let tmp5 = callback2(require(6210) /* useAPNGPlayerControls */.APNGPlayer, obj);
+        let tmp5 = callback2(require(8176) /* useAPNGPlayerControls */.APNGPlayer, obj);
       }
       return tmp5;
     }
   }
   obj = { source: image, resizeMode: "contain", style, enableAnimation: !useReducedMotion, accessible: false };
-  tmp5 = callback2(importDefault(5145), obj);
+  tmp5 = callback2(importDefault(5207), obj);
 }
 ({ PremiumSubscriptionSKUs: unpackModuleId, PremiumTypes: closure_12, PremiumUpsellTypes: map1 } = GuildFeatures);
 ({ AnalyticEvents: closure_14, AnalyticsPages: closure_15, HelpdeskArticles: closure_16, ThemeTypes: closure_17 } = ME);

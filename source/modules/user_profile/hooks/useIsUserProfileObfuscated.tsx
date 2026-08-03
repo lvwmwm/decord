@@ -1,10 +1,10 @@
-// Module ID: 11998
-// Function ID: 11999
+// Module ID: 12094
+// Function ID: 12095
 // Name: useIsUserProfileObfuscated
-// Dependencies: [5899, 589, 2]
+// Dependencies: [6977, 589, 2]
 // Exports: default
 
-// Module 11998 (useIsUserProfileObfuscated)
+// Module 12094 (useIsUserProfileObfuscated)
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 
 const require = arg1;

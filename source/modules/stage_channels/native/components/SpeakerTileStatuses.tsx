@@ -1,10 +1,10 @@
-// Module ID: 10856
-// Function ID: 10857
+// Module ID: 10956
+// Function ID: 10957
 // Name: VoiceStatus
-// Dependencies: [19, 17, 4240, 4209, 5015, 21, 4193, 712, 589, 10815, 10610, 10611, 1297, 10857, 10858, 8368, 2]
+// Dependencies: [19, 17, 4302, 4271, 5077, 21, 4255, 712, 589, 10915, 10770, 10771, 1297, 10957, 10958, 8673, 2]
 // Exports: BlockedStatus, IgnoredStatus
 
-// Module 10856 (VoiceStatus)
+// Module 10956 (VoiceStatus)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -48,15 +48,15 @@ const memoResult = importAllResult.memo((userId) => {
     flag2 = false;
   }
   if (stateFromStores) {
-    let tmp5 = channelId(10815);
+    let tmp5 = channelId(10915);
     let flag3 = true;
   } else if (flag2) {
-    tmp5 = channelId(10610);
+    tmp5 = channelId(10770);
     flag3 = false;
   } else {
     flag3 = false;
     if (flag) {
-      tmp5 = channelId(10611);
+      tmp5 = channelId(10771);
       flag3 = false;
     }
   }
@@ -83,7 +83,7 @@ const memoResult1 = importAllResult.memo((userId) => {
   const items1 = [channelId, userId];
   let tmp4;
   if (obj.useStateFromStores(items, () => outer1_6.isModerator(userId, channelId), items1)) {
-    tmp4 = channelId(10857);
+    tmp4 = channelId(10957);
   }
   let tmp6 = null;
   if (null != tmp4) {
@@ -105,14 +105,14 @@ export const VoiceStatus = memoResult;
 export const ModeratorStatus = memoResult1;
 export const BlockedStatus = function BlockedStatus() {
   const obj = { style: callback().restricted, source: null, size: null, color: null };
-  obj[1] = importDefault(10858);
+  obj[1] = importDefault(10958);
   obj[2] = require(1297) /* Button */.Icon.Sizes.EXTRA_SMALL;
   obj[3] = importDefault(712).unsafe_rawColors.RED_400;
   return jsx(require(1297) /* Button */.Icon, { style: callback().restricted, source: null, size: null, color: null });
 };
 export const IgnoredStatus = function IgnoredStatus() {
   const obj = { style: callback().restricted, source: null, size: null };
-  obj[1] = importDefault(8368);
+  obj[1] = importDefault(8673);
   obj[2] = require(1297) /* Button */.Icon.Sizes.EXTRA_SMALL;
   return jsx(require(1297) /* Button */.Icon, { style: callback().restricted, source: null, size: null });
 };

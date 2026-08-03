@@ -1,8 +1,8 @@
-// Module ID: 11560
-// Function ID: 11561
-// Dependencies: [19, 3822, 1372, 11169, 676, 21, 589, 1222, 4388, 10411, 10108, 1306, 6692, 5109, 11553, 1236, 2]
+// Module ID: 11667
+// Function ID: 11668
+// Dependencies: [19, 3884, 1372, 11281, 676, 21, 589, 1222, 4450, 10550, 5832, 1306, 5855, 5171, 11660, 1236, 2]
 
-// Module 11560
+// Module 11667
 import importAllResult from "noop";
 import initialize from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -90,8 +90,8 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurking(channel) 
     const intl8 = tmp2(1236).intl;
     obj[4] = intl8.string(tmp2(1236).t.RLch70);
     obj[5] = callback2;
-    let tmp15Result = jsx(guildId(11553), { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null });
-    const tmp14 = guildId(11553);
+    let tmp15Result = jsx(guildId(11660), { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null });
+    const tmp14 = guildId(11660);
   } else {
     if (channel.isReadonlyAnnouncementsChannel) {
       obj = { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null };
@@ -120,9 +120,9 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurking(channel) 
       obj1[2] = intl2.string(tmp2(1236).t.RLch70);
       obj1[3] = callback2;
     }
-    tmp15Result = jsx(guildId(11553), obj1);
+    tmp15Result = jsx(guildId(11660), obj1);
     const tmp15 = jsx;
-    const tmp17 = guildId(11553);
+    const tmp17 = guildId(11660);
   }
   return tmp15Result;
 });

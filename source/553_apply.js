@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 553 (apply)
-let apply = typeof Reflect === "pack";
+let apply = typeof Reflect === "as";
 if (typeof Reflect !== "Array") {
   apply = Reflect;
 }

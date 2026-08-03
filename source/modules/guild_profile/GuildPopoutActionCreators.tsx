@@ -1,10 +1,10 @@
-// Module ID: 13127
-// Function ID: 13128
+// Module ID: 13190
+// Function ID: 13191
 // Name: _fetchGuildForPopout
 // Dependencies: [5, 676, 709, 530, 2]
 // Exports: fetchGuildForPopout
 
-// Module 13127 (_fetchGuildForPopout)
+// Module 13190 (_fetchGuildForPopout)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 

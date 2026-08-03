@@ -1,9 +1,9 @@
-// Module ID: 4768
-// Function ID: 4769
+// Module ID: 4830
+// Function ID: 4831
 // Name: getCreateAttachmentURL
-// Dependencies: [4769, 676, 2]
+// Dependencies: [4831, 676, 2]
 
-// Module 4768 (getCreateAttachmentURL)
+// Module 4830 (getCreateAttachmentURL)
 import GUILD_PRODUCT_EDIT_MODAL_KEY from "GUILD_PRODUCT_EDIT_MODAL_KEY";
 import { Endpoints } from "ME";
 

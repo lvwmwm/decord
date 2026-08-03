@@ -1,9 +1,9 @@
-// Module ID: 12815
-// Function ID: 12816
+// Module ID: 12878
+// Function ID: 12879
 // Name: stopActivity
-// Dependencies: [4213, 1340, 1218, 4225, 4228, 4265, 1931, 676, 687, 595, 4237, 10496, 4078, 4363, 589, 709, 2]
+// Dependencies: [4275, 1340, 1218, 4287, 4290, 4327, 1931, 676, 687, 595, 4299, 10634, 4140, 4425, 589, 709, 2]
 
-// Module 12815 (stopActivity)
+// Module 12878 (stopActivity)
 import initialize from "initialize";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import fetchFingerprint from "fetchFingerprint";
@@ -46,7 +46,7 @@ function updateActivity(applicationId) {
   if (num > closure_12 + closure_13) {
     num = 0;
   }
-  let obj = _require(4237);
+  let obj = _require(4299);
   const result = obj.shouldShareApplicationActivity(applicationId.applicationId, setLibraryApplications);
   voiceChannelId = voiceChannelId.getVoiceChannelId();
   sessionId = sessionId.getSessionId();
@@ -66,10 +66,10 @@ function updateActivity(applicationId) {
   obj[7] = voiceChannelId;
   obj[8] = sessionId;
   obj[9] = mediaSessionId;
-  importDefault(10496).updateActivity(obj);
+  importDefault(10634).updateActivity(obj);
   applicationId.updatedAt = timestamp;
   if (null == dependencyMap[applicationId.applicationId]) {
-    const interval = new tmp3(4078).Interval();
+    const interval = new tmp3(4140).Interval();
     tmp11[applicationId.applicationId] = interval;
     interval.start(closure_12, () => {
       outer1_18(closure_0);
@@ -110,7 +110,7 @@ function handleRunningGamesChange(flag) {
         obj[2] = tmp3.distributor;
         let tmp10 = require;
         let tmp11 = dependencyMap;
-        let obj3 = require(4363) /* removeExecutablePathPrefix */;
+        let obj3 = require(4425) /* removeExecutablePathPrefix */;
         let str = tmp3.exePath;
         if (str == null) {
           str = "";

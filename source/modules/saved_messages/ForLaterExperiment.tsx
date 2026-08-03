@@ -1,10 +1,10 @@
-// Module ID: 9567
-// Function ID: 9568
+// Module ID: 9714
+// Function ID: 9715
 // Name: ForLaterFreemiumConfig
-// Dependencies: [9568, 1452, 38, 9569, 2]
+// Dependencies: [9715, 1452, 38, 9716, 2]
 // Exports: getForLaterLimit, hasForLaterAccess, isForLaterExperimentOn, isForLaterFreemiumExperimentOn, useHasForLaterAccess, useIsForLaterExperimentOn
 
-// Module 9567 (ForLaterFreemiumConfig)
+// Module 9714 (ForLaterFreemiumConfig)
 import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX";
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
@@ -37,7 +37,7 @@ const obj2 = {
   1: null,
   2: (arg0) => {
     const parsed = JSON.parse(arg0);
-    if (typeof ForLaterFreemiumConfig !== "fileFinishedImporting") {
+    if (typeof ForLaterFreemiumConfig !== "error") {
       HermesBuiltin.throwTypeError();
     }
     const obj = Object.create(ForLaterFreemiumConfig.prototype);
@@ -50,7 +50,7 @@ const obj2 = {
 };
 obj2[2] = (arg0) => {
   const parsed = JSON.parse(arg0);
-  if (typeof ForLaterFreemiumConfig !== "fileFinishedImporting") {
+  if (typeof ForLaterFreemiumConfig !== "error") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(ForLaterFreemiumConfig.prototype);
@@ -93,7 +93,7 @@ export const useHasForLaterAccess = function useHasForLaterAccess(ForLaterOpenAc
   if (!enabled) {
     let enabled1 = store.useConfig(obj).enabled;
     if (enabled1) {
-      enabled1 = importDefault(9569)();
+      enabled1 = importDefault(9716)();
     }
     enabled = enabled1;
   }
@@ -106,7 +106,7 @@ export const hasForLaterAccess = function hasForLaterAccess(addOrUpdateSavedMess
   if (!enabled) {
     let enabled1 = store.getConfig(obj).enabled;
     if (enabled1) {
-      enabled1 = importDefault(9569)();
+      enabled1 = importDefault(9716)();
     }
     enabled = enabled1;
   }

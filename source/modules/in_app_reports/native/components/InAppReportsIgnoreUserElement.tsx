@@ -1,10 +1,10 @@
-// Module ID: 12423
-// Function ID: 12424
+// Module ID: 12521
+// Function ID: 12522
 // Name: IgnoreUserElement
-// Dependencies: [19, 1372, 3830, 676, 21, 589, 4383, 4388, 8927, 12424, 1236, 9223, 2]
+// Dependencies: [19, 1372, 3892, 676, 21, 589, 4445, 4450, 9104, 12522, 1236, 9396, 2]
 // Exports: default
 
-// Module 12423 (IgnoreUserElement)
+// Module 12521 (IgnoreUserElement)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import upsertRelationship from "upsertRelationship";

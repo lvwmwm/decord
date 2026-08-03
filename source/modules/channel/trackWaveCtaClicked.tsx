@@ -1,10 +1,10 @@
-// Module ID: 11439
-// Function ID: 11440
+// Module ID: 11549
+// Function ID: 11550
 // Name: getDmHasMessageHistory
 // Dependencies: [1372, 676, 698, 2]
 // Exports: getDmHasMessageHistory, trackWaveCtaClicked
 
-// Module 11439 (getDmHasMessageHistory)
+// Module 11549 (getDmHasMessageHistory)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { AnalyticEvents } from "ME";
 

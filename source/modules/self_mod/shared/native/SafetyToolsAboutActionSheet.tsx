@@ -1,10 +1,10 @@
-// Module ID: 10193
-// Function ID: 10194
+// Module ID: 10332
+// Function ID: 10333
 // Name: SafetyToolsAboutScreen
-// Dependencies: [32, 19, 17, 10172, 676, 21, 4193, 712, 10166, 4161, 10169, 10170, 10194, 1236, 3893, 10179, 4189, 1945, 4604, 2]
+// Dependencies: [32, 19, 17, 10311, 676, 21, 4255, 712, 10305, 4223, 10308, 10309, 10333, 1236, 3955, 10318, 4251, 1945, 4666, 2]
 // Exports: default
 
-// Module 10193 (SafetyToolsAboutScreen)
+// Module 10332 (SafetyToolsAboutScreen)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "combined";

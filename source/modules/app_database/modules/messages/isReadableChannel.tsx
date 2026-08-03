@@ -1,10 +1,10 @@
-// Module ID: 5745
-// Function ID: 5746
+// Module ID: 6840
+// Function ID: 6841
 // Name: isReadableChannel
-// Dependencies: [1376, 1372, 3821, 676, 2]
+// Dependencies: [1376, 1372, 3883, 676, 2]
 // Exports: isReadableChannel, isReadableChannelId
 
-// Module 5745 (isReadableChannel)
+// Module 6840 (isReadableChannel)
 import { isTextChannel } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

@@ -1,10 +1,10 @@
-// Module ID: 12429
-// Function ID: 12430
+// Module ID: 12527
+// Function ID: 12528
 // Name: LeaveGuildElement
-// Dependencies: [32, 19, 676, 21, 8308, 4388, 12424, 1236, 4533, 4622, 10724, 2]
+// Dependencies: [32, 19, 676, 21, 8613, 4450, 12522, 1236, 4595, 4684, 10832, 2]
 // Exports: default
 
-// Module 12429 (LeaveGuildElement)
+// Module 12527 (LeaveGuildElement)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { AnalyticEvents } from "ME";

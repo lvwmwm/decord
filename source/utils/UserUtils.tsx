@@ -1,10 +1,10 @@
-// Module ID: 4032
-// Function ID: 4033
+// Module ID: 4094
+// Function ID: 4095
 // Name: nameFromUser
-// Dependencies: [4033, 1874, 676, 589, 1236, 2]
+// Dependencies: [4095, 1874, 676, 589, 1236, 2]
 // Exports: accountAgeInRange, ageEligibleForPremiumUpsell, getFormattedName, getGlobalName, getName, getUserIsStaff, getUserTag, humanizeStatus, isNewUser, useDirectMessageRecipient, useName, useUserTag
 
-// Module 4032 (nameFromUser)
+// Module 4094 (nameFromUser)
 import initialize from "initialize";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";

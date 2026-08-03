@@ -1,10 +1,10 @@
-// Module ID: 15569
-// Function ID: 15570
+// Module ID: 15636
+// Function ID: 15637
 // Name: stripPossessive
-// Dependencies: [12, 15570, 15572, 2]
+// Dependencies: [12, 15637, 15639, 2]
 // Exports: analyze, createASTHighlighter
 
-// Module 15569 (stripPossessive)
+// Module 15636 (stripPossessive)
 import set from "MAX_MESSAGE_SEARCH_RESULTS_OFFSET";
 
 function stripPossessive(str) {
@@ -30,7 +30,7 @@ function shouldHighlight(arg0, set) {
   } else if (isStopWord(tmp)) {
     return false;
   } else {
-    const snowballStemResult = require(15570) /* snowballStem */.snowballStem(tmp);
+    const snowballStemResult = require(15637) /* snowballStem */.snowballStem(tmp);
     if (flag) {
       const values = set.values();
       for (const item10025 of values) {
@@ -45,7 +45,7 @@ function shouldHighlight(arg0, set) {
     } else {
       return set.has(snowballStemResult);
     }
-    const obj = require(15570) /* snowballStem */;
+    const obj = require(15637) /* snowballStem */;
   }
 }
 function highlightAST(content, arg1, arg2) {
@@ -63,7 +63,7 @@ function highlightAST(content, arg1, arg2) {
       return arg0;
     });
   } else {
-    if (typeof content.content !== "__FORMATJS_LISTFORMAT_DATA__") {
+    if (typeof content.content !== "ge") {
       if ("codeBlock" !== content.type) {
         const items1 = [];
         const parts = content.content.split(/(\W+)/g);
@@ -117,7 +117,7 @@ export const analyze = function analyze(str) {
   const mapped1 = mapped.reject(isBlank).map(lowercase);
   const rejectResult = mapped.reject(isBlank);
   const rejectResult1 = mapped1.reject(isStopWord);
-  return mapped1.reject(isStopWord).map(require(15570) /* snowballStem */.snowballStem).value();
+  return mapped1.reject(isStopWord).map(require(15637) /* snowballStem */.snowballStem).value();
 };
 export { shouldHighlight };
 export { highlightAST };

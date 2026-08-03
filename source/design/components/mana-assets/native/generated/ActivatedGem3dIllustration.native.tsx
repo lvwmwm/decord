@@ -1,10 +1,10 @@
-// Module ID: 6831
-// Function ID: 6832
+// Module ID: 5967
+// Function ID: 5968
 // Name: ActivatedGem3dIllustration
-// Dependencies: [21, 5145, 6832, 2]
+// Dependencies: [21, 5207, 5968, 2]
 // Exports: ActivatedGem3dIllustration
 
-// Module 6831 (ActivatedGem3dIllustration)
+// Module 5967 (ActivatedGem3dIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ActivatedGem3dIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const ActivatedGem3dIllustration = function ActivatedGem3dIllustration(wi
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6832);
+  obj[0] = importDefault(5968);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ActivatedGem3dIllustration = function ActivatedGem3dIllustration(wi
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5207), { width: num * num3, height: num2 * num3 });
 };

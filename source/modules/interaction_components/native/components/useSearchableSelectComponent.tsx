@@ -1,10 +1,10 @@
-// Module ID: 11028
-// Function ID: 11029
+// Module ID: 11145
+// Function ID: 11146
 // Name: useSearchableSelectComponent
-// Dependencies: [32, 19, 7904, 4161, 2]
+// Dependencies: [32, 19, 8022, 4223, 2]
 // Exports: default
 
-// Module 11028 (useSearchableSelectComponent)
+// Module 11145 (useSearchableSelectComponent)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

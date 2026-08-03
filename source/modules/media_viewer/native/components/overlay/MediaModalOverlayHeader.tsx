@@ -1,10 +1,10 @@
-// Module ID: 12324
-// Function ID: 12325
+// Module ID: 12422
+// Function ID: 12423
 // Name: MediaModalOverlayHeader
-// Dependencies: [19, 17, 21, 4193, 5144, 12321, 8173, 9570, 4054, 5181, 12325, 1236, 5179, 1297, 712, 4189, 12326, 9310, 500, 12327, 8972, 2]
+// Dependencies: [19, 17, 21, 4255, 5206, 12419, 8480, 9717, 4116, 5243, 12423, 1236, 5241, 1297, 712, 4251, 12424, 9482, 500, 12425, 9149, 2]
 // Exports: MediaModalOverlayHeader
 
-// Module 12324 (MediaModalOverlayHeader)
+// Module 12422 (MediaModalOverlayHeader)
 import "MoreVerticalIcon";
 import get_ActivityIndicator from "ContextMenu";
 import jsxProd from "set";
@@ -42,11 +42,11 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   ({ source, contextName, contextIcon } = arg0);
   ({ onClose, disableDownload, disableMediaOverlayButton, shareable, animationDriver, channelId } = arg0);
   const tmp = createCacheKey();
-  let obj = require(12321) /* useOverlayLayoutDriver */;
+  let obj = require(12419) /* useOverlayLayoutDriver */;
   const headerLayoutAnimation = obj.useHeaderLayoutAnimation(animationDriver);
-  let obj1 = require(8173) /* useMediaShareActions */;
+  let obj1 = require(8480) /* useMediaShareActions */;
   const mediaShareActions = obj1.useMediaShareActions({ source, disableDownload, shareable });
-  const tmp7 = importDefault(9570)(channelId);
+  const tmp7 = importDefault(9717)(channelId);
   obj = { style: null, children: null };
   obj = {};
   let merged = Object.assign(absoluteFillObject.absoluteFillObject);
@@ -58,9 +58,9 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   const obj3 = { accessibilityLabel: null, icon: null, onPress: null };
   let intl = require(1236) /* getSystemLocale */.intl;
   obj3[0] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
-  obj3[1] = callback(require(5179) /* XSmallIcon */.XSmallIcon, { size: "md", color: "interactive-text-active" });
+  obj3[1] = callback(require(5241) /* XSmallIcon */.XSmallIcon, { size: "md", color: "interactive-text-active" });
   obj3[2] = onClose;
-  const items1 = [callback(importDefault(12325), obj3), ];
+  const items1 = [callback(importDefault(12423), obj3), ];
   let tmp8Result = null != contextName;
   if (tmp8Result) {
     const obj4 = { style: null, children: null };
@@ -81,7 +81,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
     obj7[0] = tmp.navbarNameShrinkWrapper;
     const obj8 = { accessibilityRole: "header", variant: "heading-md/medium", lineClamp: 1, ellipsizeMode: "tail", color: "text-overlay-light", children: null };
     obj8[5] = contextName;
-    obj7[1] = tmp8(tmp2(4189).Text, obj8);
+    obj7[1] = tmp8(tmp2(4251).Text, obj8);
     items2[1] = tmp8(tmp11, obj7);
     obj5[1] = items2;
     obj4[1] = tmp10(tmp11, obj5);
@@ -96,7 +96,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
     obj9[0] = tmp.navbarRight;
     const obj10 = { source: null };
     obj10[0] = source;
-    const items4 = [tmp8(tmp6(12326), obj10), ];
+    const items4 = [tmp8(tmp6(12424), obj10), ];
     let tmp8Result1 = null;
     if (!disableMediaOverlayButton) {
       const obj11 = { items: null, children: null };
@@ -106,26 +106,26 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
         const obj = { accessibilityLabel: null, icon: null, ref: null };
         const intl = callback(1236).intl;
         obj[0] = intl.string(callback(1236).t.PdRCRg);
-        const tmp4 = callback2(12325);
+        const tmp4 = callback2(12423);
         if (obj2.isAndroid()) {
-          let tmp2Result = tmp2(tmp5(12327).MoreVerticalIcon, { size: "md", color: "interactive-text-active" });
+          let tmp2Result = tmp2(tmp5(12425).MoreVerticalIcon, { size: "md", color: "interactive-text-active" });
         } else {
-          tmp2Result = tmp2(tmp5(8972).MoreHorizontalIcon, { size: "md", color: "interactive-text-active" });
+          tmp2Result = tmp2(tmp5(9149).MoreHorizontalIcon, { size: "md", color: "interactive-text-active" });
         }
         obj[1] = tmp2Result;
         obj[2] = ref.ref;
         const merged1 = Object.assign(merged);
         return closure_5(tmp4, obj);
       };
-      tmp8Result1 = tmp8(tmp2(9310).ContextMenu, obj11);
+      tmp8Result1 = tmp8(tmp2(9482).ContextMenu, obj11);
     }
     items4[1] = tmp8Result1;
     obj9[1] = items4;
     tmp10Result = tmp10(tmp11, obj9);
   }
-  const tmp12 = importDefault(12325);
+  const tmp12 = importDefault(12423);
   items3[1] = tmp10Result;
   obj1[2] = items3;
-  obj[1] = callback(require(5181) /* SafeAreaPaddingView */.SafeAreaPaddingView, { top: true, left: true, right: true, pointerEvents: "box-none", children: closure_6(closure_4, obj1) });
-  return callback(importDefault(4054).View, obj);
+  obj[1] = callback(require(5243) /* SafeAreaPaddingView */.SafeAreaPaddingView, { top: true, left: true, right: true, pointerEvents: "box-none", children: closure_6(closure_4, obj1) });
+  return callback(importDefault(4116).View, obj);
 };

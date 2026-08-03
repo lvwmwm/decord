@@ -1,10 +1,10 @@
-// Module ID: 10682
-// Function ID: 10683
+// Module ID: 10790
+// Function ID: 10791
 // Name: allowPopups
-// Dependencies: [4218, 2]
+// Dependencies: [4280, 2]
 // Exports: allowPopups
 
-// Module 10682 (allowPopups)
+// Module 10790 (allowPopups)
 import { APPLICATIONS_WITH_ALLOWED_POPUPS as closure_0 } from "items3";
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/allowPopups.tsx");

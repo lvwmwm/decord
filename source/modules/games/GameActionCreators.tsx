@@ -1,10 +1,10 @@
-// Module ID: 5911
-// Function ID: 5912
+// Module ID: 6991
+// Function ID: 6992
 // Name: requestGames
-// Dependencies: [5, 4214, 676, 530, 709, 4078, 12, 2]
+// Dependencies: [5, 4276, 676, 530, 709, 4140, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 5911 (requestGames)
+// Module 6991 (requestGames)
 import importDefaultResult from "start";
 import map from "map";
 import { Endpoints } from "ME";

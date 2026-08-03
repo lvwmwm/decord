@@ -1,10 +1,10 @@
-// Module ID: 11537
-// Function ID: 11538
+// Module ID: 11647
+// Function ID: 11648
 // Name: useChangelogRenderedAnalytics
-// Dependencies: [19, 1946, 4205, 4204, 676, 11538, 589, 8208, 7872, 698, 2]
+// Dependencies: [19, 1946, 4267, 4266, 676, 11648, 589, 8515, 7990, 698, 2]
 // Exports: default
 
-// Module 11537 (useChangelogRenderedAnalytics)
+// Module 11647 (useChangelogRenderedAnalytics)
 import noop from "noop";
 import _getSystemLocale from "_getSystemLocale";
 import generateOldThreadCutoff from "generateOldThreadCutoff";

@@ -1,9 +1,9 @@
-// Module ID: 4010
-// Function ID: 4011
+// Module ID: 4072
+// Function ID: 4073
 // Name: handleConnectionOpen
-// Dependencies: [4011, 1218, 4014, 1862, 676, 1222, 589, 4015, 4028, 709, 2]
+// Dependencies: [4073, 1218, 4076, 1862, 676, 1222, 589, 4077, 4090, 709, 2]
 
-// Module 4010 (handleConnectionOpen)
+// Module 4072 (handleConnectionOpen)
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 import fetchFingerprint from "fetchFingerprint";
 import initialize from "initialize";
@@ -72,9 +72,9 @@ prototype["initialize"] = function initialize(selectedGuildTimestampMillis) {
     lastSelectedGuildId = null;
   }
   const obj = { path: null };
-  const RouteParam = require(4028) /* RouteParam */.RouteParam;
+  const RouteParam = require(4090) /* RouteParam */.RouteParam;
   obj[0] = closure_7.CHANNEL(RouteParam.guildId());
-  const matchPathResult = require(4015) /* matchPath */.matchPath(initialize.lastNonVoiceRoute, obj);
+  const matchPathResult = require(4077) /* matchPath */.matchPath(initialize.lastNonVoiceRoute, obj);
   let guildId;
   if (matchPathResult != null) {
     const params = matchPathResult.params;

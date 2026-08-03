@@ -1,10 +1,10 @@
-// Module ID: 16020
-// Function ID: 16021
+// Module ID: 16084
+// Function ID: 16085
 // Name: getConsoleColor
 // Dependencies: [676, 712, 2]
 // Exports: default
 
-// Module 16020 (getConsoleColor)
+// Module 16084 (getConsoleColor)
 let PLAYSTATION;
 let PLAYSTATION_STAGING;
 let XBOX;

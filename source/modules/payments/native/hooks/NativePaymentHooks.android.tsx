@@ -1,10 +1,10 @@
-// Module ID: 6575
-// Function ID: 6576
+// Module ID: 7560
+// Function ID: 7561
 // Name: notSupported
-// Dependencies: [5, 32, 19, 5676, 3, 589, 12, 6303, 3854, 2]
+// Dependencies: [5, 32, 19, 5738, 3, 589, 12, 7287, 3916, 2]
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useNativeIAPPayments, useResubscribeSubscription
 
-// Module 6575 (notSupported)
+// Module 7560 (notSupported)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

@@ -76,7 +76,7 @@ let items = [
     value: function stopPropagation() {
       const self = this;
       let fn = callback2(callback(self.prototype), "stopPropagation", this);
-      if (typeof fn !== "disabledUntil") {
+      if (typeof fn !== "HAS_APPLICATION") {
         fn = (arg0) => fn.apply(self, arg0);
       }
       fn([]);
@@ -88,7 +88,7 @@ let items = [
     value: function stopImmediatePropagation() {
       const self = this;
       let fn = callback2(callback(self.prototype), "stopImmediatePropagation", this);
-      if (typeof fn !== "disabledUntil") {
+      if (typeof fn !== "HAS_APPLICATION") {
         fn = (arg0) => fn.apply(self, arg0);
       }
       fn([]);

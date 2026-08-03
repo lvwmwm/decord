@@ -1,12 +1,12 @@
-// Module ID: 16159
-// Function ID: 16160
+// Module ID: 16223
+// Function ID: 16224
 // Name: setAudioInputEnabled
-// Dependencies: [4245, 2]
+// Dependencies: [4307, 2]
 // Exports: default
 
-// Module 16159 (setAudioInputEnabled)
+// Module 16223 (setAudioInputEnabled)
 const result = require("set").fileFinishedImporting("modules/voice_calls/utils/setAudioInputEnabled.android.tsx");
 
 export default function setAudioInputEnabled(arg0) {
-  importDefault(4245).setAudioInputEnabled(arg0);
+  importDefault(4307).setAudioInputEnabled(arg0);
 };

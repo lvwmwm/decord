@@ -1,10 +1,10 @@
-// Module ID: 7039
-// Function ID: 7040
+// Module ID: 6175
+// Function ID: 6176
 // Name: FileUploadSpotIllustration
-// Dependencies: [21, 5145, 7040, 2]
+// Dependencies: [21, 5207, 6176, 2]
 // Exports: FileUploadSpotIllustration
 
-// Module 7039 (FileUploadSpotIllustration)
+// Module 6175 (FileUploadSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/FileUploadSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const FileUploadSpotIllustration = function FileUploadSpotIllustration(wi
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7040);
+  obj[0] = importDefault(6176);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const FileUploadSpotIllustration = function FileUploadSpotIllustration(wi
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5207), { width: num * num3, height: num2 * num3 });
 };

@@ -1,9 +1,9 @@
-// Module ID: 16694
-// Function ID: 16695
+// Module ID: 16760
+// Function ID: 16761
 // Name: setDifference
-// Dependencies: [109, 4212, 1931, 4209, 10560, 3, 16695, 5138, 8861, 709, 16715, 2]
+// Dependencies: [109, 4274, 1931, 4271, 10744, 3, 16761, 5200, 9038, 709, 16781, 2]
 
-// Module 16694 (setDifference)
+// Module 16760 (setDifference)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import reset from "reset";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -27,7 +27,7 @@ function setDifference(set, set2) {
   return set;
 }
 function makeErrorKey(item10044) {
-  const obj = require(16695) /* ErrorDefinitions */.ErrorDefinitions[item10044.type];
+  const obj = require(16761) /* ErrorDefinitions */.ErrorDefinitions[item10044.type];
   let errorContextKey;
   if (obj != null) {
     errorContextKey = obj.makeErrorContextKey(item10044);
@@ -60,7 +60,7 @@ prototype["updateActiveErrors"] = function updateActiveErrors() {
   }
   allActiveStreams = allActiveStreams.getAllActiveStreams();
   const map = new Map();
-  const values = Object.values(require(16695) /* ErrorDefinitions */.ErrorDefinitions);
+  const values = Object.values(require(16761) /* ErrorDefinitions */.ErrorDefinitions);
   const iter = values[Symbol.iterator]();
   while (iter !== undefined) {
     let obj = { voiceChannelId: null, voiceState: null, activeStreams: null };
@@ -93,7 +93,7 @@ prototype["updateActiveErrors"] = function updateActiveErrors() {
           if (null != value) {
             let tmp29 = require;
             let tmp30 = dependencyMap;
-            let obj5 = require(8861) /* mapped */;
+            let obj5 = require(9038) /* mapped */;
             let tmp31 = value;
             let reportAVErrorResult = obj5.reportAVError(tmp28);
           }
@@ -134,7 +134,7 @@ prototype["handleReportAVError"] = function handleReportAVError(arg0) {
   let context;
   let error;
   ({ error, context } = arg0);
-  const result = require(16715) /* getCurrentScreenshareCaptureMethod */.sendAVErrorAnalyticsEvent(error, context);
+  const result = require(16781) /* getCurrentScreenshareCaptureMethod */.sendAVErrorAnalyticsEvent(error, context);
 };
 const aVErrorManager = new AVErrorManager();
 let tmp2 = new require("updateVoiceState")("AVErrorManager");

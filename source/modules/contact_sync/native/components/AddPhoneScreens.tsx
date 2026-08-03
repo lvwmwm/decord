@@ -1,10 +1,10 @@
-// Module ID: 11808
-// Function ID: 11809
+// Module ID: 11910
+// Function ID: 11911
 // Name: AddPhoneScreen
-// Dependencies: [5, 32, 19, 17, 1874, 11782, 21, 4193, 5144, 712, 1480, 4189, 1236, 9243, 9244, 11781, 647, 5639, 38, 9268, 9238, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 11884, 21, 4255, 5206, 712, 1480, 4251, 1236, 9416, 9417, 11883, 647, 5701, 38, 9440, 9411, 2]
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 11808 (AddPhoneScreen)
+// Module 11910 (AddPhoneScreen)
 import ContactSyncModes from "ContactSyncModes";
 import _slicedToArray from "_slicedToArray";
 import VerifyPhone from "VerifyPhone";
@@ -37,20 +37,20 @@ export const AddPhoneScreen = function AddPhoneScreen() {
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = _require(1236).intl;
   obj[4] = intl.string(_require(1236).t.Xgb497);
-  const items = [callback2(_require(4189).Text, obj), ];
+  const items = [callback2(_require(4251).Text, obj), ];
   const obj1 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = _require(1236).intl;
   obj1[3] = intl2.string(_require(1236).t.qFmzyo);
-  items[1] = callback2(_require(4189).Text, obj1);
+  items[1] = callback2(_require(4251).Text, obj1);
   obj[1] = items;
   const obj2 = { style: tmp.container, reason: null, header: null, onComplete: null };
   const tmp2 = callback3(View, obj);
-  obj2[1] = _require(9244).ChangePhoneReason.CONTACT_SYNC;
+  obj2[1] = _require(9417).ChangePhoneReason.CONTACT_SYNC;
   obj2[2] = tmp2;
   obj2[3] = function onComplete(arg0) {
     return callback(outer1_2[15]).submitPhone(arg0, callback);
   };
-  return callback2(importDefault(9243), obj2);
+  return callback2(importDefault(9416), obj2);
 };
 export const VerifyPhoneScreen = function VerifyPhoneScreen() {
   let require;

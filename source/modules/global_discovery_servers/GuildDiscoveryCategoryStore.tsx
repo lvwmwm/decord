@@ -1,10 +1,10 @@
-// Module ID: 15362
-// Function ID: 15363
+// Module ID: 15429
+// Function ID: 15430
 // Name: getPrimaryCategories
-// Dependencies: [8310, 12, 589, 1351, 1236, 709, 2]
+// Dependencies: [8615, 12, 589, 1351, 1236, 709, 2]
 // Exports: areDiscoveryCategoriesEqual
 
-// Module 15362 (getPrimaryCategories)
+// Module 15429 (getPrimaryCategories)
 import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID";
 import { Store } from "initialize";
 

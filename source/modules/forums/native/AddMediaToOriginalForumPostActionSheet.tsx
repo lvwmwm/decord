@@ -1,10 +1,10 @@
-// Module ID: 11189
-// Function ID: 11190
+// Module ID: 11301
+// Function ID: 11302
 // Name: _upload2
-// Dependencies: [32, 5, 19, 17, 1372, 4530, 1862, 4411, 676, 21, 4193, 712, 6154, 4772, 4731, 4161, 6191, 6189, 11, 4727, 6190, 6080, 530, 11190, 5718, 5865, 4533, 1236, 589, 5519, 6082, 4735, 5247, 11191, 4189, 4605, 2]
+// Dependencies: [32, 5, 19, 17, 1372, 4592, 1862, 4473, 676, 21, 4255, 712, 7206, 4834, 4793, 4223, 8158, 8156, 11, 4789, 8157, 7132, 530, 11302, 6814, 6956, 4595, 1236, 589, 5581, 7134, 4797, 5309, 11303, 4251, 4667, 2]
 // Exports: default
 
-// Module 11189 (_upload2)
+// Module 11301 (_upload2)
 import Background from "Background";
 import handleChanged from "handleChanged";
 import items from "items";
@@ -96,7 +96,7 @@ function _upload2() {
               onResult = dependencyMap;
               onResult = new.target;
               onResult = new.target;
-              onResult = new callback2(6154)();
+              onResult = new callback2(7206)();
               const outer1_5 = onResult;
               onResult = outer1_5;
               onResult = outer1_5.on("start", () => {
@@ -104,37 +104,37 @@ function _upload2() {
               });
               onResult = outer1_5;
               onResult = outer1_5.on("progress", (currentSize) => {
-                let obj = _undefined(4772);
+                let obj = _undefined(4834);
                 const kestrelConfig = obj.getKestrelConfig({ location: "native.AddMediaToOriginalForumPostActionSheet" });
-                const maxFileSizeResult = _undefined(4731).maxFileSize(message.id);
-                const obj2 = _undefined(4731);
+                const maxFileSizeResult = _undefined(4793).maxFileSize(message.id);
+                const obj2 = _undefined(4793);
                 const tmp3 = message;
-                const effectiveKestrelLimit = _undefined(4772).getEffectiveKestrelLimit(kestrelConfig, maxFileSizeResult);
+                const effectiveKestrelLimit = _undefined(4834).getEffectiveKestrelLimit(kestrelConfig, maxFileSizeResult);
                 if (currentSize.currentSize > effectiveKestrelLimit) {
                   _undefined2.cancel();
                   dependencyMap(false);
-                  callback(4161).hideActionSheet();
+                  callback(4223).hideActionSheet();
                   obj = { file: null, maxSize: null, baseMaxSize: null, guildId: null, analyticsLocations: null };
                   obj[0] = currentSize;
                   obj[1] = effectiveKestrelLimit;
                   obj[2] = maxFileSizeResult;
                   obj[3] = tmp3.id;
                   obj[4] = c4;
-                  callback(6191)(obj);
-                  const obj4 = callback(4161);
+                  callback(8158)(obj);
+                  const obj4 = callback(4223);
                 }
               });
               onResult = outer1_5;
               onResult = outer1_5.on("error", () => {
                 dependencyMap(false);
-                callback(4161).hideActionSheet();
+                callback(4223).hideActionSheet();
               });
               onResult = outer1_5;
               onResult = outer1_5.on("complete", () => {
                 dependencyMap(false);
-                callback(6189).clearAll(c0, ChannelMessage.ChannelMessage);
-                const obj = callback(6189);
-                callback(4161).hideActionSheet();
+                callback(8156).clearAll(c0, ChannelMessage.ChannelMessage);
+                const obj = callback(8156);
+                callback(4223).hideActionSheet();
               });
               onResult = store;
               onResult = callback;
@@ -202,7 +202,7 @@ function _upload2() {
               onResult = items;
               callback2 = HermesBuiltin.arraySpread(c8, 0);
               onResult = c9;
-              onResult = c9.map((closure_0, closure_1) => _undefined(4727).getAttachmentPayload(closure_0, closure_1));
+              onResult = c9.map((closure_0, closure_1) => _undefined(4789).getAttachmentPayload(closure_0, closure_1));
               dependencyMap = onResult;
               if (onResult == null) {
                 dependencyMap = [];
@@ -210,7 +210,7 @@ function _upload2() {
               callback2 = HermesBuiltin.arraySpread(dependencyMap, callback2);
               const outer1_6 = items;
               attachments = 2;
-              obj5 = callback2(6080);
+              obj5 = callback2(7132);
               c8 = 6;
               c9 = 1;
               const obj6 = { value: null, done: false };
@@ -222,13 +222,13 @@ function _upload2() {
               attachments = 0;
               let closure_12 = c6;
               dependencyMap(false);
-              obj3 = callback2(4161);
+              obj3 = callback2(4223);
               obj3.hideActionSheet();
-              const tmp24 = new callback2(11190)(closure_12);
+              const tmp24 = new callback2(11302)(closure_12);
               store = tmp24;
               if (store.code === closure_11.EXPLICIT_CONTENT) {
-                obj4 = callback2(5718);
-                const result1 = obj4.sendExplicitMediaClydeError(callback, store.attachments, callback(5865).TrackMediaRedactionContext.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED);
+                obj4 = callback2(6814);
+                const result1 = obj4.sendExplicitMediaClydeError(callback, store.attachments, callback(6956).TrackMediaRedactionContext.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED);
               } else {
                 onResult = c5;
                 onResult = callback2;
@@ -247,8 +247,8 @@ function _upload2() {
                   message = store.message;
                 }
                 obj7[1] = message;
-                callback2(4533).show(obj7);
-                const obj21 = callback2(4533);
+                callback2(4595).show(obj7);
+                const obj21 = callback2(4595);
               }
               c9 = 3;
             } else if (6 === tmp9) {

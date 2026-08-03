@@ -1,10 +1,10 @@
-// Module ID: 15695
-// Function ID: 15696
+// Module ID: 15760
+// Function ID: 15761
 // Name: getWebhookEmptySource
-// Dependencies: [19, 17, 21, 6541, 15696, 15697, 15698, 4039, 2]
+// Dependencies: [19, 17, 21, 7532, 15761, 15762, 15763, 4101, 2]
 // Exports: WebhookEmpty, getWebhookEmptySource, useWebhookEmptySource
 
-// Module 15695 (getWebhookEmptySource)
+// Module 15760 (getWebhookEmptySource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -13,50 +13,50 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/WebhookEmpty.tsx");
 
 export const getWebhookEmptySource = function getWebhookEmptySource(theme) {
-  let obj = require(6541) /* getIllustrationSource */;
+  let obj = require(7532) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(15696);
+      return callback(15761);
     },
     darker() {
-      return callback(15697);
+      return callback(15762);
     },
     light() {
-      return callback(15698);
+      return callback(15763);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 };
 export const useWebhookEmptySource = function useWebhookEmptySource() {
-  let obj = require(4039) /* AccessibilityAnnouncer */;
+  let obj = require(4101) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(15696);
+      return callback(15761);
     },
     darker() {
-      return callback(15697);
+      return callback(15762);
     },
     light() {
-      return callback(15698);
+      return callback(15763);
     }
   };
-  return require(6541) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  return require(7532) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
 };
 export const WebhookEmpty = function WebhookEmpty(arg0) {
-  let obj = require(4039) /* AccessibilityAnnouncer */;
+  let obj = require(4101) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(15696);
+      return callback(15761);
     },
     darker() {
-      return callback(15697);
+      return callback(15762);
     },
     light() {
-      return callback(15698);
+      return callback(15763);
     }
   };
   obj = {};
-  const illustrationSource = require(6541) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  const illustrationSource = require(7532) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
   obj.source = illustrationSource;
   return <Image />;

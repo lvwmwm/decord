@@ -1,10 +1,10 @@
-// Module ID: 14503
-// Function ID: 14504
+// Module ID: 14570
+// Function ID: 14571
 // Name: DismissibleNewTag
-// Dependencies: [19, 6230, 21, 4193, 712, 9676, 500, 1297, 4615, 691, 2]
+// Dependencies: [19, 6793, 21, 4255, 712, 9821, 500, 1297, 4677, 691, 2]
 // Exports: default
 
-// Module 14503 (DismissibleNewTag)
+// Module 14570 (DismissibleNewTag)
 import "noop";
 import { Gradients } from "items";
 import { jsx } from "jsxProd";
@@ -28,7 +28,7 @@ export default function DismissibleNewTag(dismissibleContent) {
   let closure_6;
   closure_6 = createCacheKey();
   let items = [dismissibleContent];
-  return jsx(importDefault(9676), {
+  return jsx(importDefault(9821), {
     contentTypes: items,
     children(visibleContent) {
       if (visibleContent.visibleContent !== dismissibleContent) {

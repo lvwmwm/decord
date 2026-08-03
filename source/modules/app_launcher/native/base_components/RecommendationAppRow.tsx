@@ -1,10 +1,10 @@
-// Module ID: 11280
-// Function ID: 11281
+// Module ID: 11391
+// Function ID: 11392
 // Name: RecommendationAppRow
-// Dependencies: [19, 21, 1416, 11270, 2]
+// Dependencies: [19, 21, 1416, 11381, 2]
 // Exports: default
 
-// Module 11280 (RecommendationAppRow)
+// Module 11391 (RecommendationAppRow)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -29,5 +29,5 @@ export default function RecommendationAppRow(onPress) {
   let obj = importDefault(1416);
   obj = { id: application.id, icon: application.icon, bot: application.bot, botIconFirst: true };
   const iconSource = obj.getApplicationIconSource(obj);
-  return jsx(require(11270) /* AppRowLabel */.BaseAppRow, { application, iconSource, onPress: onPress.onPress, isFirstRow, isLastRow, showsPromoted });
+  return jsx(require(11381) /* AppRowLabel */.BaseAppRow, { application, iconSource, onPress: onPress.onPress, isFirstRow, isLastRow, showsPromoted });
 };

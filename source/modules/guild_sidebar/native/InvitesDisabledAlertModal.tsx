@@ -1,10 +1,10 @@
-// Module ID: 11465
-// Function ID: 11466
+// Module ID: 11575
+// Function ID: 11576
 // Name: InvitesDisabledAlertModal
-// Dependencies: [19, 21, 4537, 1236, 4537, 2]
+// Dependencies: [19, 21, 4599, 1236, 4599, 2]
 // Exports: default
 
-// Module 11465 (InvitesDisabledAlertModal)
+// Module 11575 (InvitesDisabledAlertModal)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -21,7 +21,7 @@ export default function InvitesDisabledAlertModal() {
   obj = { text: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.BddRzS);
-  obj[0] = jsx(require(4537) /* getAlertModalItemKey */.AlertActionButton, { text: null }, "okay");
-  obj[2] = jsx(require(4537) /* getAlertModalItemKey */.AlertActions, { text: null });
-  return jsx(require(4537) /* getAlertModalItemKey */.AlertModal, { text: null });
+  obj[0] = jsx(require(4599) /* getAlertModalItemKey */.AlertActionButton, { text: null }, "okay");
+  obj[2] = jsx(require(4599) /* getAlertModalItemKey */.AlertActions, { text: null });
+  return jsx(require(4599) /* getAlertModalItemKey */.AlertModal, { text: null });
 };

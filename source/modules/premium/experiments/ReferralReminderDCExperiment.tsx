@@ -1,10 +1,10 @@
-// Module ID: 7847
-// Function ID: 7848
+// Module ID: 7965
+// Function ID: 7966
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: useIsReferralReminderDCExperimentEnabled
 
-// Module 7847 (apexExperiment)
+// Module 7965 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

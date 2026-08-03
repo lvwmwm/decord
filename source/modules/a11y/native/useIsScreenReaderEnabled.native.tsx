@@ -1,10 +1,10 @@
-// Module ID: 4590
-// Function ID: 4591
+// Module ID: 4652
+// Function ID: 4653
 // Name: SCREEN_READER_ENABLED_GETTER
 // Dependencies: [17, 595, 644, 705, 2]
 // Exports: addScreenReaderEnabledListener, getIsScreenReaderEnabled, useIsScreenReaderEnabled
 
-// Module 4590 (SCREEN_READER_ENABLED_GETTER)
+// Module 4652 (SCREEN_READER_ENABLED_GETTER)
 import { AccessibilityInfo } from "get ActivityIndicator";
 import keys from "keys";
 

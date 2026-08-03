@@ -1,10 +1,10 @@
-// Module ID: 6771
-// Function ID: 6772
+// Module ID: 7728
+// Function ID: 7729
 // Name: useIsAgeVerificationIncodeEnabled
 // Dependencies: [1452, 2]
 // Exports: isAgeVerificationIncodeEnabled, useIsAgeVerificationIncodeEnabled
 
-// Module 6771 (useIsAgeVerificationIncodeEnabled)
+// Module 7728 (useIsAgeVerificationIncodeEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

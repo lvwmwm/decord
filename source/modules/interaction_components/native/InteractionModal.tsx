@@ -1,10 +1,10 @@
-// Module ID: 16239
-// Function ID: 16240
+// Module ID: 16303
+// Function ID: 16304
 // Name: onClose
-// Dependencies: [19, 17, 13481, 21, 4193, 712, 4399, 16240, 5219, 1297, 1416, 4189, 4721, 1236, 5179, 7896, 16241, 4604, 2]
+// Dependencies: [19, 17, 13544, 21, 4255, 712, 4461, 16304, 5281, 1297, 1416, 4251, 4783, 1236, 5241, 8014, 16305, 4666, 2]
 // Exports: openInteractionModal
 
-// Module 16239 (onClose)
+// Module 16303 (onClose)
 import "noop";
 import get_ActivityIndicator from "Button";
 import { InteractionModalState } from "getModalState";
@@ -17,7 +17,7 @@ let closure_6;
 let error;
 const require = arg1;
 function onClose() {
-  return importDefault(4399).popWithKey(interaction_modal);
+  return importDefault(4461).popWithKey(interaction_modal);
 }
 class InteractionModal {
   constructor(arg0) {
@@ -127,6 +127,6 @@ const result = require("getModalState").fileFinishedImporting("modules/interacti
 
 export default InteractionModal;
 export const openInteractionModal = function openInteractionModal(closure_0) {
-  let arr = importDefault(4399);
+  let arr = importDefault(4461);
   arr = arr.push(InteractionModal, closure_0, interaction_modal);
 };

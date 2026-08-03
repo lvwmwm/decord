@@ -1,10 +1,10 @@
-// Module ID: 15539
-// Function ID: 15540
+// Module ID: 15606
+// Function ID: 15607
 // Name: MemberRowPlaceholderItem
-// Dependencies: [19, 21, 4193, 15533, 2]
+// Dependencies: [19, 21, 4255, 15600, 2]
 // Exports: default
 
-// Module 15539 (MemberRowPlaceholderItem)
+// Module 15606 (MemberRowPlaceholderItem)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -14,5 +14,5 @@ const result = require("createCacheKey").fileFinishedImporting("modules/search/n
 
 export default function MemberRowPlaceholderItem() {
   const tmp = callback();
-  return jsx(importDefault(15533), { style: callback().container });
+  return jsx(importDefault(15600), { style: callback().container });
 };

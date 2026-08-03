@@ -1,10 +1,10 @@
-// Module ID: 5112
-// Function ID: 5113
+// Module ID: 5174
+// Function ID: 5175
 // Name: QuarantineModeInfoAlert
-// Dependencies: [19, 676, 21, 4193, 5113, 712, 4622, 1297, 1236, 4189, 2]
+// Dependencies: [19, 676, 21, 4255, 5175, 712, 4684, 1297, 1236, 4251, 2]
 // Exports: default
 
-// Module 5112 (QuarantineModeInfoAlert)
+// Module 5174 (QuarantineModeInfoAlert)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -34,7 +34,7 @@ export default function QuarantineModeInfoAlert(onClose) {
   obj = { style: tmp.text, variant: "text-md/medium", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.zNPBMA);
-  items[1] = callback(require(4189) /* Text */.Text, obj);
+  items[1] = callback(require(4251) /* Text */.Text, obj);
   obj[1] = items;
-  return callback2(importDefault(4622), obj);
+  return callback2(importDefault(4684), obj);
 };

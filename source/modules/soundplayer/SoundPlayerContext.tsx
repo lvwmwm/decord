@@ -1,9 +1,9 @@
-// Module ID: 15922
-// Function ID: 15923
+// Module ID: 15986
+// Function ID: 15987
 // Name: context
 // Dependencies: [19, 2]
 
-// Module 15922 (context)
+// Module 15986 (context)
 import importAllResult from "noop";
 
 const context = importAllResult.createContext({ audioRef: importAllResult.createRef() });

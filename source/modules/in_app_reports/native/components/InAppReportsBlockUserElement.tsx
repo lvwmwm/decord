@@ -1,10 +1,10 @@
-// Module ID: 12426
-// Function ID: 12427
+// Module ID: 12524
+// Function ID: 12525
 // Name: BlockUserElement
-// Dependencies: [19, 1372, 3830, 676, 21, 589, 4383, 4388, 8927, 6724, 12424, 1236, 9299, 2]
+// Dependencies: [19, 1372, 3892, 676, 21, 589, 4445, 4450, 9104, 7695, 12522, 1236, 9471, 2]
 // Exports: default
 
-// Module 12426 (BlockUserElement)
+// Module 12524 (BlockUserElement)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import upsertRelationship from "upsertRelationship";

@@ -1,10 +1,10 @@
-// Module ID: 16640
-// Function ID: 16641
+// Module ID: 16706
+// Function ID: 16707
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
-// Dependencies: [19, 17, 1369, 21, 4193, 712, 1581, 5247, 5249, 4189, 1236, 1297, 4605, 2]
+// Dependencies: [19, 17, 1369, 21, 4255, 712, 1581, 5309, 5311, 4251, 1236, 1297, 4667, 2]
 // Exports: default
 
-// Module 16640 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 16706 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -38,11 +38,11 @@ export default function GuildRoleSubscriptionTierTemplateSelectedActionSheet(mar
   const obj1 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = markAsDismissed(1236).intl;
   obj1[2] = intl.string(markAsDismissed(1236).t.Y0PTc0);
-  const items = [callback(markAsDismissed(4189).Text, obj1), callback(markAsDismissed(1297).Spacer, { size: 12 }), , , ];
+  const items = [callback(markAsDismissed(4251).Text, obj1), callback(markAsDismissed(1297).Spacer, { size: 12 }), , , ];
   const obj2 = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = markAsDismissed(1236).intl;
   obj2[2] = intl2.string(markAsDismissed(1236).t["YSI/1/"]);
-  items[2] = callback(markAsDismissed(4189).Text, obj2);
+  items[2] = callback(markAsDismissed(4251).Text, obj2);
   items[3] = callback(markAsDismissed(1297).Spacer, { size: 48 });
   const obj3 = { text: null, pillStyle: null, onPress: null, grow: true };
   const intl3 = markAsDismissed(1236).intl;
@@ -51,9 +51,9 @@ export default function GuildRoleSubscriptionTierTemplateSelectedActionSheet(mar
   obj3[2] = function onPress() {
     return markAsDismissed(outer1_4.UNKNOWN);
   };
-  items[4] = callback(markAsDismissed(4605).BaseTextButton, obj3);
+  items[4] = callback(markAsDismissed(4667).BaseTextButton, obj3);
   obj[1] = items;
-  obj[1] = callback2(markAsDismissed(5249).BottomSheetScrollView, obj);
+  obj[1] = callback2(markAsDismissed(5311).BottomSheetScrollView, obj);
   obj[2] = callback(View, obj);
-  return callback(markAsDismissed(5247).BottomSheet, obj);
+  return callback(markAsDismissed(5309).BottomSheet, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 10113
-// Function ID: 10114
+// Module ID: 10252
+// Function ID: 10253
 // Name: useGuildSearchContext
 // Dependencies: [19, 1372, 676, 38, 647, 2]
 // Exports: getChannelDetailsSearchContext, useChannelDetailsSearchContext, useGuildChannelSearchContext, useGuildSearchContext
 
-// Module 10113 (useGuildSearchContext)
+// Module 10252 (useGuildSearchContext)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { SearchTypes } from "ME";

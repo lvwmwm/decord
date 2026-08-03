@@ -1,9 +1,9 @@
-// Module ID: 5668
-// Function ID: 5669
+// Module ID: 5730
+// Function ID: 5731
 // Name: handleUserSettingsStoreUpdate
 // Dependencies: [1946, 1218, 589, 709, 2]
 
-// Module 5668 (handleUserSettingsStoreUpdate)
+// Module 5730 (handleUserSettingsStoreUpdate)
 import _getSystemLocale from "_getSystemLocale";
 import fetchFingerprint from "fetchFingerprint";
 import { Store } from "initialize";
@@ -58,6 +58,9 @@ prototype["getStorefrontData"] = function getStorefrontData(arg0) {
 };
 prototype["getStorefrontDataForApplicationId"] = function getStorefrontDataForApplicationId(arg0) {
   return dependencyMap2[arg0];
+};
+prototype["getLoadedStorefrontApplicationIds"] = function getLoadedStorefrontApplicationIds() {
+  return Object.keys(closure_5);
 };
 prototype["getStorefrontFetchState"] = function getStorefrontFetchState(closure_0) {
   if ("guild" === closure_0.type) {

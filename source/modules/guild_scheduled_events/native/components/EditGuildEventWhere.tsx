@@ -1,10 +1,10 @@
-// Module ID: 8271
-// Function ID: 8272
+// Module ID: 8578
+// Function ID: 8579
 // Name: EditGuildEventWhere
-// Dependencies: [32, 19, 1372, 3821, 5784, 1378, 676, 21, 4193, 1236, 8217, 589, 1480, 8272, 8239, 4189, 4604, 1844, 8213, 3906, 8237, 8306, 3775, 8307, 8308, 2]
+// Dependencies: [32, 19, 1372, 3883, 6882, 1378, 676, 21, 4255, 1236, 8524, 589, 1480, 8579, 8546, 4251, 4666, 1844, 8520, 3968, 8544, 8611, 3837, 8612, 8613, 2]
 // Exports: default
 
-// Module 8271 (EditGuildEventWhere)
+// Module 8578 (EditGuildEventWhere)
 import _slicedToArray from "_slicedToArray";
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -122,7 +122,7 @@ export default function EditGuildEventWhere(guild) {
               const error1 = new Error(intl2.string(tmp3(1236).t.q91szp));
               throw error1;
             }
-            obj = callback(8217);
+            obj = callback(8524);
           }
           if (null == tmp) {
             if (entityType !== tmp2.EXTERNAL) {

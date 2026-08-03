@@ -1,9 +1,9 @@
-// Module ID: 14452
-// Function ID: 14453
+// Module ID: 14519
+// Function ID: 14520
 // Name: route
-// Dependencies: [7761, 676, 3866, 1306, 1236, 10133, 14453, 2]
+// Dependencies: [7880, 676, 3928, 1306, 1236, 10272, 14520, 2]
 
-// Module 14452 (route)
+// Module 14519 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -13,7 +13,7 @@ obj = {
   },
   parent: require("MobileSetting").MobileSetting.CHAT,
   useTrailing: function useSwipeRightToLeftSettingTrailing() {
-    const SwipeRightToLeftModeSetting = require(3866) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
+    const SwipeRightToLeftModeSetting = require(3928) /* explicitContentFromProto */.SwipeRightToLeftModeSetting;
     const setting = SwipeRightToLeftModeSetting.useSetting();
     if (setting === require(1306) /* create */.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY) {
       const intl2 = tmp(1236).intl;
@@ -32,7 +32,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.SWIPE_RIGHT_TO_LEFT,
   getComponent() {
-    return require(14453) /* UserSettingsSwipeRightToLeft */.default;
+    return require(14520) /* UserSettingsSwipeRightToLeft */.default;
   }
 };
 const route = createToggle.createRoute(obj);

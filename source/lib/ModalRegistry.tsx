@@ -1,9 +1,9 @@
-// Module ID: 15765
-// Function ID: 15766
+// Module ID: 15830
+// Function ID: 15831
 // Name: getStores
 // Dependencies: [2]
 
-// Module 15765 (getStores)
+// Module 15830 (getStores)
 class ModalRegistry {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);

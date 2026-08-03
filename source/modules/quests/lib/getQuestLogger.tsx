@@ -1,10 +1,10 @@
-// Module ID: 5995
-// Function ID: 5996
+// Module ID: 7074
+// Function ID: 7075
 // Name: getQuestLogger
 // Dependencies: [706, 505, 3, 2]
 // Exports: getQuestLogger
 
-// Module 5995 (getQuestLogger)
+// Module 7074 (getQuestLogger)
 import refreshSourceMapCookie from "refreshSourceMapCookie";
 import { NOOP } from "sum";
 

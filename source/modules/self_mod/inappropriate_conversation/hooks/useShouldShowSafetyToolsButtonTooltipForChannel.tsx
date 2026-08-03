@@ -1,10 +1,10 @@
-// Module ID: 10166
-// Function ID: 10167
+// Module ID: 10305
+// Function ID: 10306
 // Name: useSafetyToolsButtonTooltipForChannel
-// Dependencies: [9106, 687, 10142, 10146, 10167, 10168, 2]
+// Dependencies: [9279, 687, 10281, 10285, 10306, 10307, 2]
 // Exports: useSafetyToolsButtonTooltipForChannel
 
-// Module 10166 (useSafetyToolsButtonTooltipForChannel)
+// Module 10305 (useSafetyToolsButtonTooltipForChannel)
 import { SafetyWarningTypes } from "handleConnectionOpen";
 
 const HOUR = require("set").Millis.HOUR;
@@ -12,11 +12,11 @@ let closure_4 = 12 * require("set").Millis.HOUR;
 const result = require("useInappropriateConversationSafetyToolsWarningForChannel").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useShouldShowSafetyToolsButtonTooltipForChannel.tsx");
 
 export const useSafetyToolsButtonTooltipForChannel = function useSafetyToolsButtonTooltipForChannel(channelId) {
-  const inappropriateConversationSafetyToolsWarningForChannel = require(10142) /* useInappropriateConversationSafetyToolsWarningForChannel */.useInappropriateConversationSafetyToolsWarningForChannel(channelId);
-  const obj = require(10142) /* useInappropriateConversationSafetyToolsWarningForChannel */;
+  const inappropriateConversationSafetyToolsWarningForChannel = require(10281) /* useInappropriateConversationSafetyToolsWarningForChannel */.useInappropriateConversationSafetyToolsWarningForChannel(channelId);
+  const obj = require(10281) /* useInappropriateConversationSafetyToolsWarningForChannel */;
   const tmp = require;
-  const inappropriateConversationWarningsForChannel = require(10146) /* useInappropriateConversationWarningsForChannel */.useInappropriateConversationWarningsForChannel(channelId);
-  const obj2 = require(10146) /* useInappropriateConversationWarningsForChannel */;
+  const inappropriateConversationWarningsForChannel = require(10285) /* useInappropriateConversationWarningsForChannel */.useInappropriateConversationWarningsForChannel(channelId);
+  const obj2 = require(10285) /* useInappropriateConversationWarningsForChannel */;
   if (null != inappropriateConversationSafetyToolsWarningForChannel) {
     if (!obj3.useShouldShowInitialSafetyToolsButtonTooltip(channelId)) {
       if (!tmpResult.shouldShowTakeoverForWarnings(inappropriateConversationWarningsForChannel)) {
@@ -55,7 +55,7 @@ export const useSafetyToolsButtonTooltipForChannel = function useSafetyToolsButt
           }
         }
       }
-      tmpResult = tmp(10168);
+      tmpResult = tmp(10307);
     }
   }
 };

@@ -1,23 +1,23 @@
-// Module ID: 11179
-// Function ID: 11180
+// Module ID: 11291
+// Function ID: 11292
 // Name: useShouldUseFabricChatInput
-// Dependencies: [500, 4057, 11180, 2]
+// Dependencies: [500, 4119, 11292, 2]
 // Exports: shouldUseFabricChatInput, useShouldUseFabricChatInput
 
-// Module 11179 (useShouldUseFabricChatInput)
+// Module 11291 (useShouldUseFabricChatInput)
 const chat_input = "chat_input";
 const result = require("apexExperiment").fileFinishedImporting("modules/chat_input/native/useShouldUseFabricChatInput.tsx");
 
 export const useShouldUseFabricChatInput = function useShouldUseFabricChatInput() {
-  importDefault(11180);
+  importDefault(11292);
   if (null != closure_3) {
     let isAndroidResult = closure_3;
   } else {
     isAndroidResult = require(500) /* set */.isAndroid();
     if (!isAndroidResult) {
-      const tmp4Result = tmp4(4057);
-      isAndroidResult = tmp4(4057).isIosFabric() && tmp3;
-      const tmp6 = tmp4(4057).isIosFabric() && tmp3;
+      const tmp4Result = tmp4(4119);
+      isAndroidResult = tmp4(4119).isIosFabric() && tmp3;
+      const tmp6 = tmp4(4119).isIosFabric() && tmp3;
     }
     closure_3 = isAndroidResult;
     const obj = require(500) /* set */;
@@ -32,7 +32,7 @@ export const shouldUseFabricChatInput = function shouldUseFabricChatInput() {
     isAndroidResult = require(500) /* set */.isAndroid();
     let enabled = !isAndroidResult;
     if (!isAndroidResult) {
-      let obj = importDefault(11180);
+      let obj = importDefault(11292);
       obj = { location: null };
       obj[0] = chat_input;
       enabled = obj.getConfig(obj).enabled;
@@ -43,7 +43,7 @@ export const shouldUseFabricChatInput = function shouldUseFabricChatInput() {
       let tmp6Result = tmp6(500);
       isAndroidResult = tmp6Result.isAndroid();
       if (!isAndroidResult) {
-        tmp6Result = tmp6(4057);
+        tmp6Result = tmp6(4119);
         isAndroidResult = tmp6Result.isIosFabric() && enabled;
         const tmp5 = tmp6Result.isIosFabric() && enabled;
       }

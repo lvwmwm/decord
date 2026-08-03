@@ -1,9 +1,9 @@
-// Module ID: 6169
-// Function ID: 6170
+// Module ID: 7221
+// Function ID: 7222
 // Name: fromPath
 // Dependencies: [1883, 676, 2]
 
-// Module 6169 (fromPath)
+// Module 7221 (fromPath)
 import "toJS";
 import { Routes } from "ME";
 
@@ -17,7 +17,7 @@ prototype = function LinkRecord(arg0) {
 class prototype extends tmp2 {
 }
 prototype["fromPath"] = function fromPath(pathname) {
-  if (typeof prototype !== "fileFinishedImporting") {
+  if (typeof prototype !== "error") {
     HermesBuiltin.throwTypeError();
   }
   const tmp2 = new prototype("Trying to call a non-function", prototype);
@@ -27,7 +27,7 @@ prototype["fromPath"] = function fromPath(pathname) {
 };
 prototype["fromInviteCode"] = function fromInviteCode(code) {
   const combined = "invite:" + code;
-  if (typeof prototype !== "fileFinishedImporting") {
+  if (typeof prototype !== "error") {
     HermesBuiltin.throwTypeError();
   }
   const tmp4 = new prototype("Trying to call a non-function", prototype, new.target, combined);

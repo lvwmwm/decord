@@ -1,10 +1,10 @@
-// Module ID: 10512
-// Function ID: 10513
+// Module ID: 10650
+// Function ID: 10651
 // Name: apexExperiment
-// Dependencies: [1452, 9497, 9498, 10513, 2]
+// Dependencies: [1452, 9644, 9645, 10651, 2]
 // Exports: useQuestOrbsMultiplierMarketing
 
-// Module 10512 (apexExperiment)
+// Module 10650 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
@@ -54,9 +54,9 @@ export const MutedVideoQuestNewDefaultsVariant = obj2;
 export const MutedVideoQuestNewDefaultsExperiment = apexExperiment4;
 export const useQuestOrbsMultiplierMarketing = function useQuestOrbsMultiplierMarketing(location) {
   let obj = { location };
-  const questOrbMultiplierEligibility = require(9497) /* getQuestOrbMultiplierEligibilityForUser */.useQuestOrbMultiplierEligibility();
-  const obj2 = require(9497) /* getQuestOrbMultiplierEligibilityForUser */;
-  obj = { shouldShowBonusOrbsUX: questOrbMultiplierEligibility !== require(9498) /* items */.QuestOrbMultiplierEligibilityType.INELIGIBLE && questOrbMultiplierEligibility !== require(9498) /* items */.QuestOrbMultiplierEligibilityType.CREPE && closure_2.useConfig(obj).enabled, multiplier: tmp(10513).QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100 };
+  const questOrbMultiplierEligibility = require(9644) /* getQuestOrbMultiplierEligibilityForUser */.useQuestOrbMultiplierEligibility();
+  const obj2 = require(9644) /* getQuestOrbMultiplierEligibilityForUser */;
+  obj = { shouldShowBonusOrbsUX: questOrbMultiplierEligibility !== require(9645) /* items */.QuestOrbMultiplierEligibilityType.INELIGIBLE && questOrbMultiplierEligibility !== require(9645) /* items */.QuestOrbMultiplierEligibilityType.CREPE && closure_2.useConfig(obj).enabled, multiplier: tmp(10651).QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100 };
   return obj;
 };
 export const VideoQuestPlayerRefactorExperiment = apexExperiment5;

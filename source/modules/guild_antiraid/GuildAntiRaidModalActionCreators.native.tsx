@@ -1,21 +1,21 @@
-// Module ID: 13121
-// Function ID: 13122
+// Module ID: 13184
+// Function ID: 13185
 // Name: openReportRaidModal
-// Dependencies: [7803, 4399, 13122, 1959, 2]
+// Dependencies: [7921, 4461, 13185, 1959, 2]
 // Exports: openReportRaidModal
 
-// Module 13121 (openReportRaidModal)
+// Module 13184 (openReportRaidModal)
 import { GUILD_REPORT_RAID_MOBILE_KEY as closure_3 } from "GUILD_REPORT_RAID_MOBILE_KEY";
 
 const result = require("ReportModal").fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidModalActionCreators.native.tsx");
 
 export const openReportRaidModal = function openReportRaidModal(id) {
-  let obj = importDefault(4399);
+  let obj = importDefault(4461);
   obj = {
     onCloseModal() {
       callback(table[1]).popWithKey(closure_3);
     },
     guildId: id
   };
-  obj.pushLazy(require(1959) /* asyncRequireImpl */(13122, dependencyMap.paths), obj, closure_3);
+  obj.pushLazy(require(1959) /* asyncRequireImpl */(13185, dependencyMap.paths), obj, closure_3);
 };

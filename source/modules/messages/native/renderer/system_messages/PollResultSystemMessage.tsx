@@ -1,30 +1,30 @@
-// Module ID: 7828
-// Function ID: 7829
+// Module ID: 7946
+// Function ID: 7947
 // Name: createPollResultSystemMessage
-// Dependencies: [1877, 7748, 7750, 1236, 1416, 3834, 7829, 7751, 2]
+// Dependencies: [1877, 7867, 7869, 1236, 1416, 3896, 7947, 7870, 2]
 // Exports: createPollResultSystemMessage
 
-// Module 7828 (createPollResultSystemMessage)
+// Module 7946 (createPollResultSystemMessage)
 import { EMOJI_URL_BASE_SIZE } from "set";
 
 const result = require("formatUsernameOnClick").fileFinishedImporting("modules/messages/native/renderer/system_messages/PollResultSystemMessage.tsx");
 
 export const createPollResultSystemMessage = function createPollResultSystemMessage(message) {
-  const tmp3 = importDefault(7829)(message.message.embeds[0]);
+  const tmp3 = importDefault(7947)(message.message.embeds[0]);
   if (null == tmp3) {
     return null;
   } else if (null == message.message.messageReference) {
     return null;
   } else {
     message = message.message;
-    const messageAuthorWithProcessedColor = obj6(7748).getMessageAuthorWithProcessedColor(message);
+    const messageAuthorWithProcessedColor = obj6(7867).getMessageAuthorWithProcessedColor(message);
     let obj = { username: null, usernameOnClick: null, title: null, titleOnClick: null };
     obj[0] = messageAuthorWithProcessedColor.nick;
     obj = { message: null, author: null, roleStyle: null };
     obj[0] = message;
     obj[1] = messageAuthorWithProcessedColor;
     obj[2] = message.roleStyle;
-    obj[1] = tmp(7750)(obj);
+    obj[1] = tmp(7869)(obj);
     obj[2] = tmp3.questionText;
     const obj1 = { action: "bindJumpToMessage", targetChannelId: null, targetMessageId: null, medium: true };
     obj1[1] = message.messageReference.channel_id;
@@ -80,17 +80,17 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
             items.push(obj7);
           } else {
             obj = { type: "emoji", content: null, surrogate: null };
-            obj[1] = tmp(3834).convertSurrogateToName(id.name, false);
+            obj[1] = tmp(3896).convertSurrogateToName(id.name, false);
             obj[2] = id.name;
             items.push(obj);
-            const tmpResult1 = tmp(3834);
+            const tmpResult1 = tmp(3896);
           }
           items.push({ type: "text", content: " " });
         }
       }
     }
     const obj10 = {};
-    const merged3 = Object.assign(tmp(7751)(message));
+    const merged3 = Object.assign(tmp(7870)(message));
     obj10.content = formatToPartsResult;
     return obj10;
   }

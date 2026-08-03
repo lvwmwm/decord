@@ -1,10 +1,10 @@
-// Module ID: 11434
-// Function ID: 11435
+// Module ID: 11544
+// Function ID: 11545
 // Name: getChatInputPositionStyle
 // Dependencies: [17, 500, 2]
 // Exports: default
 
-// Module 11434 (getChatInputPositionStyle)
+// Module 11544 (getChatInputPositionStyle)
 let obj = {};
 const merged = Object.assign(require("get ActivityIndicator").StyleSheet.absoluteFillObject);
 obj.top = undefined;

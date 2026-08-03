@@ -1,9 +1,9 @@
-// Module ID: 4740
-// Function ID: 4741
+// Module ID: 4802
+// Function ID: 4803
 // Name: requestAuthorization
-// Dependencies: [5, 4741, 4406, 676, 698, 4742, 1236, 2]
+// Dependencies: [5, 4803, 4468, 676, 698, 4804, 1236, 2]
 
-// Module 4740 (requestAuthorization)
+// Module 4802 (requestAuthorization)
 import setPermission from "setPermission";
 import initialize from "initialize";
 import NativePermissionStatus from "NativePermissionStatus";
@@ -61,7 +61,7 @@ prototype["requestAuthorization"] = function requestAuthorization(arg0, hasPermi
             closure_0 = undefined;
             c1 = undefined;
             obj = undefined;
-            if (typeof outer1_1 === "disabledUntil") {
+            if (typeof outer1_1 === "HAS_APPLICATION") {
               const _Error = Error;
               const _HermesInternal = HermesInternal;
               const error = new Error("requestAuthorization: Was provided with not a function for " + outer1_0 + ".");

@@ -1,10 +1,10 @@
-// Module ID: 10914
-// Function ID: 10915
+// Module ID: 11036
+// Function ID: 11037
 // Name: useMessagePreviewHeightStore
 // Dependencies: [644, 705, 2]
 // Exports: setMesssagePreviewCollapsedHeight, setMesssagePreviewExpandedHeight, setMesssagePreviewHeight, useMessagePreviewCollapsedheight, useMessagePreviewExpandedHeight
 
-// Module 10914 (useMessagePreviewHeightStore)
+// Module 11036 (useMessagePreviewHeightStore)
 import keys from "keys";
 
 const obj = keys.create(() => ({ collapsedHeight: 0, expandedHeight: 0 }));

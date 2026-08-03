@@ -1,10 +1,10 @@
-// Module ID: 14112
-// Function ID: 14113
+// Module ID: 14179
+// Function ID: 14180
 // Name: BountiesNuxPromoSheet
-// Dependencies: [19, 17, 21, 4193, 712, 4161, 14111, 6659, 1236, 6895, 4604, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 4223, 14178, 7642, 1236, 6031, 4666, 2]
 // Exports: default
 
-// Module 14112 (BountiesNuxPromoSheet)
+// Module 14179 (BountiesNuxPromoSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -19,19 +19,19 @@ const result = require("jsxProd").fileFinishedImporting("modules/quests/native/B
 
 export default function BountiesNuxPromoSheet() {
   const callback = React.useCallback(() => {
-    callback2(4161).hideActionSheet(callback(14111).PROMO_SHEET_KEY);
+    callback2(4223).hideActionSheet(callback(14178).PROMO_SHEET_KEY);
   }, []);
   let obj = { gradientColor: "purple", title: null, description: null, illustration: null, actions: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.DDpHZG);
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl2.string(require(1236) /* getSystemLocale */.t["LY+igv"]);
-  obj = { style: createCacheKey().illustrationContainer, children: jsx(require(6895) /* BountiesPosterSpotIllustration */.BountiesPosterSpotIllustration, { width: 273, height: 205 }) };
-  obj[3] = <View style={createCacheKey().illustrationContainer}>{jsx(require(6895) /* BountiesPosterSpotIllustration */.BountiesPosterSpotIllustration, { width: 273, height: 205 })}</View>;
+  obj = { style: createCacheKey().illustrationContainer, children: jsx(require(6031) /* BountiesPosterSpotIllustration */.BountiesPosterSpotIllustration, { width: 273, height: 205 }) };
+  obj[3] = <View style={createCacheKey().illustrationContainer}>{jsx(require(6031) /* BountiesPosterSpotIllustration */.BountiesPosterSpotIllustration, { width: 273, height: 205 })}</View>;
   obj = { grow: true, size: "lg", variant: "primary", text: null, onPress: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl3.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj[4] = callback;
-  obj[4] = jsx(require(4604) /* Button */.Button, { grow: true, size: "lg", variant: "primary", text: null, onPress: null });
-  return jsx(require(6659) /* PromoSheet */.PromoSheet, { grow: true, size: "lg", variant: "primary", text: null, onPress: null });
+  obj[4] = jsx(require(4666) /* Button */.Button, { grow: true, size: "lg", variant: "primary", text: null, onPress: null });
+  return jsx(require(7642) /* PromoSheet */.PromoSheet, { grow: true, size: "lg", variant: "primary", text: null, onPress: null });
 };

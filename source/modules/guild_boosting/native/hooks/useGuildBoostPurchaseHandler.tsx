@@ -1,10 +1,10 @@
-// Module ID: 11641
-// Function ID: 11642
+// Module ID: 11748
+// Function ID: 11749
 // Name: useGuildBoostPurchaseHandler
-// Dependencies: [5, 19, 676, 3, 6557, 6298, 6556, 698, 4533, 1236, 5027, 2]
+// Dependencies: [5, 19, 676, 3, 6765, 7283, 6764, 698, 4595, 1236, 5089, 2]
 // Exports: default
 
-// Module 11641 (useGuildBoostPurchaseHandler)
+// Module 11748 (useGuildBoostPurchaseHandler)
 import PaymentFlowStep from "PaymentFlowStep";
 import noop from "noop";
 import { AnalyticEvents } from "ME";
@@ -16,7 +16,7 @@ let result = require("ME").fileFinishedImporting("modules/guild_boosting/native/
 
 export default function useGuildBoostPurchaseHandler(arg0) {
   let _require = arg0;
-  let obj = _require(6557);
+  let obj = _require(6765);
   _require = undefined;
   const result = obj.isMobileWebRedirectCheckoutEnabled();
   _require = callback((arg0, arg1) => {

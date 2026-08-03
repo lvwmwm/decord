@@ -1,10 +1,10 @@
-// Module ID: 10525
-// Function ID: 10526
+// Module ID: 10710
+// Function ID: 10711
 // Name: sortKey
-// Dependencies: [1371, 4212, 1218, 4870, 1372, 4240, 5013, 1874, 10526, 4209, 4211, 676, 4254, 5021, 3817, 10527, 12, 10528, 10529, 4383, 8373, 4257, 2]
+// Dependencies: [1371, 4274, 1218, 4932, 1372, 4302, 5075, 1874, 10711, 4271, 4273, 676, 4316, 5083, 3879, 10712, 12, 10713, 10714, 4445, 8678, 4319, 2]
 // Exports: activityParticipantIdToApplicationId, areParticipantsEqual, getEmbeddedActivityParticipantId
 
-// Module 10525 (sortKey)
+// Module 10710 (sortKey)
 import participantFromServer from "participantFromServer";
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";
@@ -51,7 +51,7 @@ function sortKey(type) {
             }
           }
           const _HermesInternal = HermesInternal;
-          return "" + str + importDefault(5021)(type.userNick, type.user);
+          return "" + str + importDefault(5083)(type.userNick, type.user);
         }
       }
     }
@@ -60,7 +60,7 @@ function sortKey(type) {
       str4 = "\u0002";
     }
     const _HermesInternal2 = HermesInternal;
-    return "" + str4 + importDefault(5021)(type.userNick, type.user) + "\u0003";
+    return "" + str4 + importDefault(5083)(type.userNick, type.user) + "\u0003";
   }
 }
 ({ isStreamParticipant: map1, ParticipantTypes: closure_14 } = ParticipantTypes);
@@ -220,11 +220,11 @@ prototype["updateParticipant"] = function updateParticipant(arg0) {
   }
   return flag;
 };
-prototype["updateParticipantSpeaking"] = function updateParticipantSpeaking(f73941) {
+prototype["updateParticipantSpeaking"] = function updateParticipantSpeaking(f74123) {
   const self = this;
-  let closure_0 = f73941;
+  let closure_0 = f74123;
   let flag;
-  if (this.participants[f73941] != null) {
+  if (this.participants[f74123] != null) {
     flag = arr.reduce((arg0, type) => {
       let flag = arg0;
       if (type.type === outer1_14.USER) {
@@ -264,11 +264,11 @@ prototype["updateParticipantSpeaking"] = function updateParticipantSpeaking(f739
   }
   return flag;
 };
-prototype["updateParticipantQuality"] = function updateParticipantQuality(f73948, closure_1, closure_2) {
+prototype["updateParticipantQuality"] = function updateParticipantQuality(f74130, closure_1, closure_2) {
   const self = this;
   let closure_0 = closure_2;
   let flag;
-  if (this.participants[f73948] != null) {
+  if (this.participants[f74130] != null) {
     flag = arr.reduce((arg0, type) => {
       let flag = arg0;
       if (type.type === outer1_14.STREAM) {
@@ -314,7 +314,7 @@ prototype["_getEmbeddedActivities"] = function _getEmbeddedActivities() {
     uniqByResult = require(12) /* apply */.uniqBy(items, (compositeInstanceId) => compositeInstanceId.compositeInstanceId);
     const obj = require(12) /* apply */;
   }
-  const ContentClassificationEmbeddedActivityFilterExperiment = require(10528) /* apexExperiment */.ContentClassificationEmbeddedActivityFilterExperiment;
+  const ContentClassificationEmbeddedActivityFilterExperiment = require(10713) /* apexExperiment */.ContentClassificationEmbeddedActivityFilterExperiment;
   const currentUser = authStore2.getCurrentUser();
   let nsfwAllowed;
   if (currentUser != null) {
@@ -403,7 +403,7 @@ prototype["_getParticipantsForUser"] = function _getParticipantsForUser(userId) 
       obj.id = user.id;
       obj.voiceState = voiceStateForChannel;
       obj.voicePlatform = voicePlatformForChannel;
-      let obj1 = require(10527) /* useIsSpeaking */;
+      let obj1 = require(10712) /* useIsSpeaking */;
       obj = { userId: null, checkIsMuted: true };
       obj[0] = userId;
       obj.speaking = obj1.getIsSpeaking(obj);
@@ -414,15 +414,15 @@ prototype["_getParticipantsForUser"] = function _getParticipantsForUser(userId) 
       obj.lastSpoke = num;
       obj.soundsharing = soundSharing.isSoundSharing(userId);
       obj.ringing = flag;
-      obj.userNick = importDefault(4383).getName(guildId, self.channelId, user);
-      const obj4 = importDefault(4383);
+      obj.userNick = importDefault(4445).getName(guildId, self.channelId, user);
+      const obj4 = importDefault(4445);
       const tmp8 = require;
-      obj.userAvatarDecoration = require(8373) /* useAvatarDecoration */.getAvatarDecoration(user, guildId);
+      obj.userAvatarDecoration = require(8678) /* useAvatarDecoration */.getAvatarDecoration(user, guildId);
       obj.localVideoDisabled = localVideoDisabled.isLocalVideoDisabled(user.id);
       const poppedOutParticipants = self.poppedOutParticipants;
       obj.isPoppedOut = poppedOutParticipants.has(user.id);
       items.push(obj);
-      const tmp8Result = require(8373) /* useAvatarDecoration */;
+      const tmp8Result = require(8678) /* useAvatarDecoration */;
     }
     let streamForUser = authStore.getStreamForUser(userId, guildId);
     if (streamForUser == null) {
@@ -430,9 +430,9 @@ prototype["_getParticipantsForUser"] = function _getParticipantsForUser(userId) 
     }
     if (null != streamForUser) {
       if (streamForUser.channelId === self.channelId) {
-        const encodeStreamKeyResult = require(4257) /* isStreamKey */.encodeStreamKey(streamForUser);
+        const encodeStreamKeyResult = require(4319) /* isStreamKey */.encodeStreamKey(streamForUser);
         const participant = self.getParticipant(encodeStreamKeyResult);
-        const obj12 = require(4257) /* isStreamKey */;
+        const obj12 = require(4319) /* isStreamKey */;
         let type;
         if (participant != null) {
           type = participant.type;
@@ -465,12 +465,12 @@ prototype["_getParticipantsForUser"] = function _getParticipantsForUser(userId) 
         obj2.userVideo = flag2;
         obj2.user = user;
         const tmp15 = streamForUser.ownerId === store2.getId() && obj6.isSelfStreamHidden(self.channelId);
-        obj2.userNick = importDefault(4383).getName(guildId, self.channelId, user);
+        obj2.userNick = importDefault(4445).getName(guildId, self.channelId, user);
         obj2.stream = streamForUser;
         const poppedOutParticipants2 = self.poppedOutParticipants;
         obj2.isPoppedOut = poppedOutParticipants2.has(encodeStreamKeyResult);
         items.push(obj2);
-        const obj10 = importDefault(4383);
+        const obj10 = importDefault(4445);
       }
     }
     return items;

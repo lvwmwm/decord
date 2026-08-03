@@ -1,9 +1,9 @@
-// Module ID: 13520
-// Function ID: 13521
+// Module ID: 13583
+// Function ID: 13584
 // Name: A11Y_FEATURE_MAP
-// Dependencies: [13278, 2, 13190]
+// Dependencies: [13341, 2, 13253]
 
-// Module 13520 (A11Y_FEATURE_MAP)
+// Module 13583 (A11Y_FEATURE_MAP)
 import { AccessibilityFeatureFlags } from "AccessibilityFeatureFlags";
 
 const result = require("AccessibilityAnnouncer").fileFinishedImporting("modules/a11y/native/AccessibilityPreferencesSharedValue.tsx");

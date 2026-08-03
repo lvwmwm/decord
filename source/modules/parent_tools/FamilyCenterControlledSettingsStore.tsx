@@ -1,9 +1,9 @@
-// Module ID: 5801
-// Function ID: 5802
+// Module ID: 6896
+// Function ID: 6897
 // Name: getSettings
 // Dependencies: [1342, 1306, 589, 709, 2]
 
-// Module 5801 (getSettings)
+// Module 6896 (getSettings)
 import { Store } from "initialize";
 
 const require = arg1;

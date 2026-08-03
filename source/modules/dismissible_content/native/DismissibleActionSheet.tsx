@@ -1,17 +1,17 @@
-// Module ID: 9677
-// Function ID: 9678
+// Module ID: 9822
+// Function ID: 9823
 // Name: DismissibleActionSheet
-// Dependencies: [19, 4620, 4161, 2]
+// Dependencies: [19, 4682, 4223, 2]
 // Exports: DismissibleActionSheet
 
-// Module 9677 (DismissibleActionSheet)
+// Module 9822 (DismissibleActionSheet)
 import noop from "noop";
 
 const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/dismissible_content/native/DismissibleActionSheet.tsx");
 
 export const DismissibleActionSheet = function DismissibleActionSheet(arg0) {
   const importDefault = arg0;
-  importDefault(4620)(() => {
+  importDefault(4682)(() => {
     let obj = lib(outer1_1[2]);
     obj = {};
     const merged = Object.assign(lib);

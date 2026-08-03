@@ -1,10 +1,10 @@
-// Module ID: 4352
-// Function ID: 4353
+// Module ID: 4414
+// Function ID: 4415
 // Name: formatSinkWantStat
 // Dependencies: [2]
 // Exports: formatSinkWantAsInt, formatSinkWantStat
 
-// Module 4352 (formatSinkWantStat)
+// Module 4414 (formatSinkWantStat)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/utils/transformStatsUtils.tsx");
 
 export const formatSinkWantStat = function formatSinkWantStat(id, ssrc, arg2) {

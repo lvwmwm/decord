@@ -1,10 +1,10 @@
-// Module ID: 9762
-// Function ID: 9763
+// Module ID: 9907
+// Function ID: 9908
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 5667, 1876, 676, 678, 8109, 21, 712, 4193, 8670, 8683, 9763, 9767, 5519, 5539, 698, 8363, 9716, 9768, 4045, 3894, 1236, 5802, 8778, 4032, 4189, 9785, 9790, 2]
+// Dependencies: [5, 19, 17, 5729, 1876, 676, 678, 8440, 21, 712, 4255, 8847, 8860, 9908, 9912, 5581, 5601, 698, 8668, 9861, 9913, 4107, 3956, 1236, 6897, 8955, 4094, 4251, 9930, 9935, 2]
 // Exports: PremiumGiftWishlistBanner
 
-// Module 9762 (PremiumGiftWishlistBanner)
+// Module 9907 (PremiumGiftWishlistBanner)
 import closure_3 from "ME";
 import useSelectPremiumGift from "useSelectPremiumGift";
 import get_ActivityIndicator from "expandEventProperties";

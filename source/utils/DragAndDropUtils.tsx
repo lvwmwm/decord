@@ -1,10 +1,10 @@
-// Module ID: 11524
-// Function ID: 11525
+// Module ID: 11634
+// Function ID: 11635
 // Name: calculatePositionDeltas
 // Dependencies: [3, 12, 2]
 // Exports: getPositionUpdates, moveItemFromTo
 
-// Module 11524 (calculatePositionDeltas)
+// Module 11634 (calculatePositionDeltas)
 function calculatePositionDeltas(arg0) {
   let ascending;
   let existingPositionGetter;

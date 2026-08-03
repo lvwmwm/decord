@@ -1,10 +1,10 @@
-// Module ID: 5679
-// Function ID: 5680
+// Module ID: 5741
+// Function ID: 5742
 // Name: SubscriptionPlans
 // Dependencies: [1876, 1577, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 5679 (SubscriptionPlans)
+// Module 5741 (SubscriptionPlans)
 import GuildFeatures from "GuildFeatures";
 import isMetaQuest from "isMetaQuest";
 

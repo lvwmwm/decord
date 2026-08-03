@@ -1,10 +1,10 @@
-// Module ID: 13070
-// Function ID: 13071
+// Module ID: 13133
+// Function ID: 13134
 // Name: ServerTagPreviewActionSheet
-// Dependencies: [19, 17, 8285, 21, 4193, 712, 8286, 8287, 13071, 4161, 4189, 1236, 4604, 5640, 5555, 5246, 2]
+// Dependencies: [19, 17, 8592, 21, 4255, 712, 8593, 8594, 13134, 4223, 4251, 1236, 4666, 5702, 5617, 5308, 2]
 // Exports: default
 
-// Module 13070 (ServerTagPreviewActionSheet)
+// Module 13133 (ServerTagPreviewActionSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { GuildProfileFetchStatus } from "handleUpdateStart";
@@ -23,7 +23,7 @@ const result = require("handleUpdateStart").fileFinishedImporting("modules/guild
 
 export default function ServerTagPreviewActionSheet(guildId) {
   guildId = guildId.guildId;
-  let obj = guildId(8286);
+  let obj = guildId(8593);
   let guildProfile = obj.useGuildProfile(guildId);
   guildProfile = guildProfile.guildProfile;
   const items = [guildId];
@@ -37,7 +37,7 @@ export default function ServerTagPreviewActionSheet(guildId) {
     obj[7] = function onAdopted(arg0) {
       return callback(table[9]).hideActionSheet();
     };
-    let tmp7 = callback(importDefault(13071), obj);
+    let tmp7 = callback(importDefault(13134), obj);
     let tmp8 = callback;
   } else if (guildProfile.fetchStatus === GuildProfileFetchStatus.FETCHED) {
     obj = { style: null, children: null };
@@ -45,26 +45,26 @@ export default function ServerTagPreviewActionSheet(guildId) {
     const obj1 = { variant: "text-md/medium", color: "text-muted", children: null };
     const intl = tmp2(1236).intl;
     obj1[2] = intl.string(tmp2(1236).t.tmGHjc);
-    const items1 = [callback(tmp2(4189).Text, obj1), ];
+    const items1 = [callback(tmp2(4251).Text, obj1), ];
     const obj2 = { variant: "secondary", text: null, onPress: null };
     const intl2 = tmp2(1236).intl;
     obj2[1] = intl2.string(tmp2(1236).t["5911Lb"]);
     obj2[2] = function onPress() {
       return guildId(outer1_2[7]).getGuildProfile(guildId, true);
     };
-    items1[1] = callback(tmp2(4604).Button, obj2);
+    items1[1] = callback(tmp2(4666).Button, obj2);
     obj[1] = items1;
     tmp7 = callback2(View, obj);
     tmp8 = callback;
   } else {
-    tmp7 = callback(tmp2(5640).SceneLoadingIndicator, {});
+    tmp7 = callback(tmp2(5702).SceneLoadingIndicator, {});
     tmp8 = callback;
   }
   const obj3 = { children: null };
   const obj4 = { title: null };
   const intl3 = tmp2(1236).intl;
   obj4[0] = intl3.string(guildId(1236).t["2QmKZ2"]);
-  const items2 = [tmp8(guildId(5246).BottomSheetTitleHeader, obj4), tmp7];
+  const items2 = [tmp8(guildId(5308).BottomSheetTitleHeader, obj4), tmp7];
   obj3[0] = items2;
-  return callback2(guildId(5555).ActionSheet, obj3);
+  return callback2(guildId(5617).ActionSheet, obj3);
 };

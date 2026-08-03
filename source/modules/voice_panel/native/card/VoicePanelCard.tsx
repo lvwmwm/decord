@@ -1,9 +1,9 @@
-// Module ID: 15980
-// Function ID: 15981
+// Module ID: 16044
+// Function ID: 16045
 // Name: SelfStreamCard
-// Dependencies: [32, 19, 17, 4212, 4265, 5013, 10051, 10049, 15936, 10054, 676, 4211, 10052, 21, 4054, 4189, 1297, 4193, 712, 4373, 4257, 5572, 1236, 4604, 10050, 589, 10559, 4290, 12043, 10561, 10558, 15981, 10571, 8057, 1348, 7987, 7992, 7988, 4194, 4603, 7684, 4615, 5145, 3897, 15982, 9927, 9458, 4538, 5519, 15940, 15952, 15935, 15983, 15984, 8363, 5277, 15985, 10053, 15986, 15987, 15988, 15989, 15990, 16000, 2]
+// Dependencies: [32, 19, 17, 4274, 4327, 5075, 10193, 10191, 16000, 10196, 676, 4273, 10194, 21, 4116, 4251, 1297, 4255, 712, 4435, 4319, 5634, 1236, 4666, 10192, 589, 10743, 4352, 12139, 10745, 10742, 16045, 10755, 8388, 1348, 8105, 8110, 8106, 4256, 4665, 7807, 4677, 5207, 3959, 16046, 10070, 9605, 4600, 5581, 16004, 16016, 15999, 16047, 16048, 8668, 5339, 16049, 10195, 16050, 16051, 16052, 16053, 16054, 16064, 2]
 
-// Module 15980 (SelfStreamCard)
+// Module 16044 (SelfStreamCard)
 import map from "map";
 import importAllResult from "watchStream";
 import { StyleSheet } from "createCacheKey";
@@ -19,7 +19,7 @@ import { ParticipantTypes } from "ParticipantTypes";
 import { SCALE_PHYSICS } from "MIN_PAN_GESTURE_MOVE";
 import jsxProd from "set";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4054";
+import importDefaultResult from "module_4116";
 
 let c10;
 let c9;
@@ -819,7 +819,7 @@ let c4 = importAllResult;
 ({ VoicePanelCTACard: c9, VoicePanelModes: c10, MODE_CHANGE_PHYSICS: unpackModuleId, SPEAKING_PHYSICS: closure_12, VoicePanelCardItemType: map1 } = VoicePanelModes);
 ({ ApplicationStreamStates: closure_17, EMPTY_STRING_SNOWFLAKE_ID: closure_18 } = ME);
 ({ jsx: closure_21, Fragment: closure_22, jsxs: closure_23 } = jsxProd);
-let closure_24 = require("module_4054").createAnimatedComponent(require("Text").Text);
+let closure_24 = require("module_4116").createAnimatedComponent(require("Text").Text);
 const tmp5 = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.XXLARGE];
 let obj = {};
 let merged = Object.assign(SCALE_PHYSICS);
@@ -1209,20 +1209,20 @@ function layoutTransitionFunction(originX, SUBTLE_SPRING) {
   if (arg2 === undefined) {
     flag = false;
   }
-  let obj = require(4603) /* CONFIG_NEVER_ANIMATE */;
+  let obj = require(4665) /* CONFIG_NEVER_ANIMATE */;
   let str = "animate-always";
   let str2 = "animate-always";
   if (flag) {
     str2 = "animate-never";
   }
   obj = { originX: obj.withSpring(originX.targetOriginX, SUBTLE_SPRING, str2), originY: null, width: null, height: null };
-  let tmpResult = tmp(4603);
+  let tmpResult = tmp(4665);
   let str3 = str;
   if (flag) {
     str3 = "animate-never";
   }
   obj[1] = tmpResult.withSpring(originX.targetOriginY, SUBTLE_SPRING, str3);
-  tmpResult = tmp(4603);
+  tmpResult = tmp(4665);
   let str4 = str;
   if (flag) {
     str4 = "animate-never";
@@ -1232,7 +1232,7 @@ function layoutTransitionFunction(originX, SUBTLE_SPRING) {
     str = "animate-never";
   }
   obj = { animations: null, initialValues: null };
-  obj[3] = require(4603) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetHeight, SUBTLE_SPRING, str);
+  obj[3] = require(4665) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetHeight, SUBTLE_SPRING, str);
   obj[0] = obj;
   obj[1] = { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight };
   return obj;
@@ -1502,10 +1502,7 @@ const memoResult = importAllResult.memo(function VoicePanelCard(cleanUp) {
       tmp25 = callback;
     }
   }
-  const obj8 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "borderRadius", layout: "isArrayBuffer", layoutPhysics: "ZodDate" };
-  obj8[3] = layoutTransition;
-  obj8[4] = physics;
-  tmp26Result = callback(closure_37, obj8);
+  tmp26Result = callback(closure_37, { isRinging: tmp8, avatarURI: "r", avatarDecoration: "ip", layout: layoutTransition, layoutPhysics: physics });
   tmp25 = callback;
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/card/VoicePanelCard.tsx");

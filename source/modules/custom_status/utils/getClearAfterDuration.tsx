@@ -1,10 +1,10 @@
-// Module ID: 11988
-// Function ID: 11989
+// Module ID: 12084
+// Function ID: 12085
 // Name: getClearAfterDuration
-// Dependencies: [11984, 687, 38, 2]
+// Dependencies: [12080, 687, 38, 2]
 // Exports: default
 
-// Module 11988 (getClearAfterDuration)
+// Module 12084 (getClearAfterDuration)
 import { ClearAfterValues } from "StatusTypes";
 
 const result = require("module_38").fileFinishedImporting("modules/custom_status/utils/getClearAfterDuration.tsx");

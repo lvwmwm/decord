@@ -1,9 +1,9 @@
-// Module ID: 16332
-// Function ID: 16333
+// Module ID: 16398
+// Function ID: 16399
 // Name: _terminate
-// Dependencies: [4240, 4286, 4254, 687, 3, 5138, 16333, 500, 2]
+// Dependencies: [4302, 4348, 4316, 687, 3, 5200, 16399, 500, 2]
 
-// Module 16332 (_terminate)
+// Module 16398 (_terminate)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import initialize from "initialize";
 import { Features } from "DesktopSources";

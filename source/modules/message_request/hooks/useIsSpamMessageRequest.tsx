@@ -1,10 +1,10 @@
-// Module ID: 10446
-// Function ID: 10447
+// Module ID: 10584
+// Function ID: 10585
 // Name: useIsSpamMessageRequest
-// Dependencies: [5660, 589, 2]
+// Dependencies: [5722, 589, 2]
 // Exports: useIsSpamMessageRequest
 
-// Module 10446 (useIsSpamMessageRequest)
+// Module 10584 (useIsSpamMessageRequest)
 import processChannel from "processChannel";
 
 const require = arg1;

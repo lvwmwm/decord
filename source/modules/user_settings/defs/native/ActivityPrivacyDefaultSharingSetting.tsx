@@ -1,9 +1,9 @@
-// Module ID: 14715
-// Function ID: 14716
+// Module ID: 14782
+// Function ID: 14783
 // Name: radio
-// Dependencies: [19, 7761, 1306, 1236, 3866, 14716, 13901, 4161, 14717, 1959, 10133, 2]
+// Dependencies: [19, 7880, 1306, 1236, 3928, 14783, 13968, 4223, 14784, 1959, 10272, 2]
 
-// Module 14715 (radio)
+// Module 14782 (radio)
 import noop from "noop";
 import createToggle from "createToggle";
 
@@ -15,7 +15,7 @@ createToggle = {
   },
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   usePredicate() {
-    return require(14716) /* useIsInActivityPrivacyCopyExperiment */.useIsInActivityPrivacyCopyExperiment("ActivityPrivacyDefaultSharingSetting");
+    return require(14783) /* useIsInActivityPrivacyCopyExperiment */.useIsInActivityPrivacyCopyExperiment("ActivityPrivacyDefaultSharingSetting");
   },
   useOptions() {
     return React.useMemo(() => {
@@ -39,27 +39,27 @@ createToggle = {
     }, []);
   },
   useValue() {
-    const DefaultGuildsActivityRestrictedV2 = require(3866) /* explicitContentFromProto */.DefaultGuildsActivityRestrictedV2;
+    const DefaultGuildsActivityRestrictedV2 = require(3928) /* explicitContentFromProto */.DefaultGuildsActivityRestrictedV2;
     return DefaultGuildsActivityRestrictedV2.useSetting();
   },
   onValueChange(arg0) {
     const NumberResult = Number(arg0);
-    const DefaultGuildsActivityRestrictedV2 = require(3866) /* explicitContentFromProto */.DefaultGuildsActivityRestrictedV2;
+    const DefaultGuildsActivityRestrictedV2 = require(3928) /* explicitContentFromProto */.DefaultGuildsActivityRestrictedV2;
     const setting = DefaultGuildsActivityRestrictedV2.getSetting();
-    const DefaultGuildsActivityRestrictedV22 = require(3866) /* explicitContentFromProto */.DefaultGuildsActivityRestrictedV2;
+    const DefaultGuildsActivityRestrictedV22 = require(3928) /* explicitContentFromProto */.DefaultGuildsActivityRestrictedV2;
     DefaultGuildsActivityRestrictedV22.updateSetting(NumberResult);
-    let obj = require(14716) /* useIsInActivityPrivacyCopyExperiment */;
+    let obj = require(14783) /* useIsInActivityPrivacyCopyExperiment */;
     if (obj.getIsInActivityPrivacyUpsellExperiment("ActivityPrivacyDefaultSharingSetting")) {
-      let tmp2Result = tmp2(13901);
+      let tmp2Result = tmp2(13968);
       const affectedGuilds = tmp2Result.computeAffectedGuilds(setting, NumberResult);
       if (null != affectedGuilds) {
-        tmp2Result = tmp2(13901);
+        tmp2Result = tmp2(13968);
         const activityRestrictionSettingName = tmp2Result.getActivityRestrictionSettingName(NumberResult);
         obj = { direction: null, affectedGuildIds: null, settingName: null };
         ({ direction: obj5[0], affectedGuildIds: obj5[1] } = affectedGuilds);
         obj[2] = activityRestrictionSettingName;
-        importDefault(4161).openLazy(tmp2(1959)(14717, dependencyMap.paths), "ActivityPrivacyUpsellActionSheet", obj);
-        const obj4 = importDefault(4161);
+        importDefault(4223).openLazy(tmp2(1959)(14784, dependencyMap.paths), "ActivityPrivacyUpsellActionSheet", obj);
+        const obj4 = importDefault(4223);
       }
     }
   }

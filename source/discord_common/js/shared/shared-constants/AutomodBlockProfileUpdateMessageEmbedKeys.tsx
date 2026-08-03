@@ -1,9 +1,9 @@
-// Module ID: 5772
-// Function ID: 5773
+// Module ID: 6867
+// Function ID: 6868
 // Name: AutomodBlockProfileUpdateMessageEmbedKeys
 // Dependencies: [2]
 
-// Module 5772 (AutomodBlockProfileUpdateMessageEmbedKeys)
+// Module 6867 (AutomodBlockProfileUpdateMessageEmbedKeys)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodBlockProfileUpdateMessageEmbedKeys.tsx");
 
 export const AutomodBlockProfileUpdateMessageEmbedKeys = { NICKNAME_UPDATE: "nickname_update", NICKNAME_RESET: "nickname_reset" };

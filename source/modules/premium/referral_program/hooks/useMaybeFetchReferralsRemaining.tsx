@@ -1,10 +1,10 @@
-// Module ID: 7843
-// Function ID: 7844
+// Module ID: 7961
+// Function ID: 7962
 // Name: useMaybeFetchReferralsRemaining
-// Dependencies: [19, 1874, 6215, 1876, 589, 7844, 7845, 5851, 1897, 2]
+// Dependencies: [19, 1874, 6812, 1876, 589, 7962, 7963, 6757, 1897, 2]
 // Exports: useMaybeFetchReferralsRemaining
 
-// Module 7843 (useMaybeFetchReferralsRemaining)
+// Module 7961 (useMaybeFetchReferralsRemaining)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import emitChanges from "emitChanges";
@@ -25,10 +25,10 @@ export const useMaybeFetchReferralsRemaining = function useMaybeFetchReferralsRe
   const stateFromStores = flag(589).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = flag(589);
   let tmp = flag;
-  const hasDiscountApplied = flag(7844).useHasDiscountApplied();
-  const obj2 = flag(7844);
-  const hasActiveTrial = flag(7845).useHasActiveTrial();
-  const tmp6 = fetched(5851)();
+  const hasDiscountApplied = flag(7962).useHasDiscountApplied();
+  const obj2 = flag(7962);
+  const hasActiveTrial = flag(7963).useHasActiveTrial();
+  const tmp6 = fetched(6757)();
   let verified;
   if (stateFromStores != null) {
     verified = stateFromStores.verified;

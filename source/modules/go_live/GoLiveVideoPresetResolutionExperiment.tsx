@@ -1,8 +1,8 @@
-// Module ID: 10762
-// Function ID: 10763
-// Dependencies: [4248, 1349, 2]
+// Module ID: 10870
+// Function ID: 10871
+// Dependencies: [4310, 1349, 2]
 
-// Module 10762
+// Module 10870
 import { ApplicationStreamResolutions } from "RESOLUTION_720";
 import importDefaultResult from "getUnitId";
 

@@ -1,10 +1,10 @@
-// Module ID: 15474
-// Function ID: 15475
+// Module ID: 15541
+// Function ID: 15542
 // Name: useOtherGuildJoinRequestsForUser
-// Dependencies: [19, 5719, 589, 9165, 2]
+// Dependencies: [19, 6815, 589, 9338, 2]
 // Exports: useOtherGuildJoinRequestsForUser
 
-// Module 15474 (useOtherGuildJoinRequestsForUser)
+// Module 15541 (useOtherGuildJoinRequestsForUser)
 import noop from "noop";
 import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";
 

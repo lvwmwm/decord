@@ -1,9 +1,9 @@
-// Module ID: 5720
-// Function ID: 5721
+// Module ID: 6816
+// Function ID: 6817
 // Name: handleGuildTemplateResolveSuccess
-// Dependencies: [5721, 5722, 589, 709, 2]
+// Dependencies: [5839, 5838, 589, 709, 2]
 
-// Module 5720 (handleGuildTemplateResolveSuccess)
+// Module 6816 (handleGuildTemplateResolveSuccess)
 import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
 import { Store } from "initialize";
 
@@ -20,7 +20,7 @@ function handleGuildTemplateResolveSuccess(guildTemplate) {
       obj[0] = code;
       obj[1] = GuildTemplateStates.RESOLVING;
     }
-    const tmp7 = importDefault(5722)(guildTemplate);
+    const tmp7 = importDefault(5838)(guildTemplate);
     for (const key10019 in tmp7) {
       let tmp17 = key10019;
       obj[key10019] = tmp7[key10019];

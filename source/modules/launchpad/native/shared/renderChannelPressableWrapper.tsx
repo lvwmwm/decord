@@ -1,10 +1,10 @@
-// Module ID: 15826
-// Function ID: 15827
+// Module ID: 15890
+// Function ID: 15891
 // Name: items
-// Dependencies: [19, 17, 21, 15825, 2]
+// Dependencies: [19, 17, 21, 15889, 2]
 // Exports: default
 
-// Module 15826 (items)
+// Module 15890 (items)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

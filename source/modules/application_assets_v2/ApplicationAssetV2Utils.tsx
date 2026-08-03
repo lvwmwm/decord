@@ -1,10 +1,10 @@
-// Module ID: 12182
-// Function ID: 12183
+// Module ID: 12278
+// Function ID: 12279
 // Name: getApplicationAssetUrl
 // Dependencies: [530, 1450, 2]
 // Exports: getApplicationAssetUrl
 
-// Module 12182 (getApplicationAssetUrl)
+// Module 12278 (getApplicationAssetUrl)
 let result = require("set").fileFinishedImporting("modules/application_assets_v2/ApplicationAssetV2Utils.tsx");
 
 export const getApplicationAssetUrl = function getApplicationAssetUrl(closure_1, asset_id, width) {

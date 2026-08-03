@@ -1,10 +1,10 @@
-// Module ID: 8906
-// Function ID: 8907
+// Module ID: 9083
+// Function ID: 9084
 // Name: SecureFramesUserVerificationModal
-// Dependencies: [32, 19, 17, 1372, 1874, 8903, 676, 1301, 21, 4193, 712, 589, 4383, 8907, 8908, 8882, 8909, 8901, 4399, 3894, 4154, 1236, 8910, 8911, 8200, 5519, 8363, 8912, 1297, 5181, 4721, 5151, 4189, 4602, 8913, 8915, 4604, 2]
+// Dependencies: [32, 19, 17, 1372, 1874, 9080, 676, 1301, 21, 4255, 712, 589, 4445, 9084, 9085, 9059, 9086, 9078, 4461, 3956, 4216, 1236, 9087, 9088, 8507, 5581, 8668, 9089, 1297, 5243, 4783, 5213, 4251, 4664, 9090, 9092, 4666, 2]
 // Exports: default
 
-// Module 8906 (SecureFramesUserVerificationModal)
+// Module 9083 (SecureFramesUserVerificationModal)
 import Text from "Text";
 import dispatcher from "dispatcher";
 import get_ActivityIndicator from "getCurrentUserSigningKey";

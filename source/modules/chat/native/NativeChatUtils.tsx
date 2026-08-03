@@ -1,9 +1,9 @@
-// Module ID: 9476
-// Function ID: 9477
+// Module ID: 9623
+// Function ID: 9624
 // Name: ChatScrollPosition
-// Dependencies: [17, 500, 9477, 1208, 4057, 9478, 9479, 2]
+// Dependencies: [17, 500, 9624, 1208, 4119, 9625, 9626, 2]
 
-// Module 9476 (ChatScrollPosition)
+// Module 9623 (ChatScrollPosition)
 import get_ActivityIndicator from "get ActivityIndicator";
 
 let c3;
@@ -30,7 +30,7 @@ obj = {
           DCDChatManager.scrollTo(tmp15, arg1, tmp, tmp2, TOP);
         }
       } else {
-        const Commands = tmp5(9477).Commands;
+        const Commands = tmp5(9624).Commands;
         Commands.scrollTo(arg0, arg1, tmp, tmp2, TOP);
       }
       obj2 = require(500) /* set */;
@@ -46,7 +46,7 @@ obj = {
           DCDChatManager.scrollToBottom(tmp6, arg1);
         }
       } else {
-        const Commands = tmp2(9477).Commands;
+        const Commands = tmp2(9624).Commands;
         Commands.scrollToBottom(arg0, arg1);
       }
       obj = require(500) /* set */;
@@ -92,7 +92,7 @@ obj = {
           DCDChatManager.scrollIntoView(tmp13, arg1, tmp, tmp2);
         }
       } else {
-        const Commands = tmp4(9477).Commands;
+        const Commands = tmp4(9624).Commands;
         Commands.scrollIntoView(arg0, arg1, tmp, tmp2);
       }
       obj2 = require(500) /* set */;
@@ -103,9 +103,9 @@ obj = {
     let forceReload;
     if (null != arg0) {
       if (obj7.isIOS()) {
-        let tmp35Result = tmp35(4057);
+        let tmp35Result = tmp35(4119);
         if (tmp35Result.isFabric()) {
-          tmp35Result = tmp35(9478);
+          tmp35Result = tmp35(9625);
           const andIncrementChangesetIdForChat = tmp35Result.getAndIncrementChangesetIdForChat(arg0);
           ({ rows, forceReload } = rows);
           if (forceReload == null) {
@@ -121,7 +121,7 @@ obj = {
           obj[3] = forceReload;
           obj[2] = obj;
           importDefault(1208).addBreadcrumb(obj);
-          const Commands = tmp35(9477).Commands;
+          const Commands = tmp35(9624).Commands;
           const _JSON3 = JSON;
           const json = JSON.stringify(rows.rows);
           const isLoadingAtTop2 = rows.isLoadingAtTop;
@@ -151,7 +151,7 @@ obj = {
         if (tmp35Result1.isIOS()) {
           let DCDChatManager = closure_3.DCDChatManager;
         } else {
-          DCDChatManager = importDefault(9479);
+          DCDChatManager = importDefault(9626);
         }
         const _JSON = JSON;
         const json1 = JSON.stringify(rows.rows);
@@ -162,7 +162,7 @@ obj = {
           json2 = JSON.stringify(rows.scrollData);
         }
         tmp35Result1 = tmp35(500);
-        const andIncrementChangesetIdForChat1 = tmp35(9478).getAndIncrementChangesetIdForChat(arg0);
+        const andIncrementChangesetIdForChat1 = tmp35(9625).getAndIncrementChangesetIdForChat(arg0);
         let flag = rows.HACK_iOSForceAnimations;
         if (flag == null) {
           flag = false;
@@ -176,7 +176,7 @@ obj = {
           flag3 = true;
         }
         DCDChatManager.updateRows(tmp2, json1, isLoadingAtTop, json2, andIncrementChangesetIdForChat1, flag, flag2, flag3);
-        const tmp35Result2 = tmp35(9478);
+        const tmp35Result2 = tmp35(9625);
       }
       obj7 = require(500) /* set */;
     }
@@ -184,10 +184,10 @@ obj = {
   clearRows(arg0) {
     if (null != arg0) {
       if (obj5.isIOS()) {
-        let tmp7Result = tmp7(4057);
+        let tmp7Result = tmp7(4119);
         if (tmp7Result.isFabric()) {
-          const Commands = tmp7(9477).Commands;
-          tmp7Result = tmp7(9478);
+          const Commands = tmp7(9624).Commands;
+          tmp7Result = tmp7(9625);
           Commands.clearRows(arg0, tmp7Result.getAndIncrementChangesetIdForChat(arg0));
         }
       }
@@ -196,11 +196,11 @@ obj = {
         if (tmp7Result1.isIOS()) {
           let DCDChatManager = closure_3.DCDChatManager;
         } else {
-          DCDChatManager = importDefault(9479);
+          DCDChatManager = importDefault(9626);
         }
         tmp7Result1 = tmp7(500);
-        DCDChatManager.clearRows(tmp2, tmp7(9478).getAndIncrementChangesetIdForChat(arg0));
-        const tmp7Result2 = tmp7(9478);
+        DCDChatManager.clearRows(tmp2, tmp7(9625).getAndIncrementChangesetIdForChat(arg0));
+        const tmp7Result2 = tmp7(9625);
       }
       obj5 = require(500) /* set */;
     }
@@ -209,7 +209,7 @@ obj = {
     if (null != arg0) {
       if (obj.isIOS()) {
         if (tmpResult.isFabric()) {
-          const Commands = tmp(9477).Commands;
+          const Commands = tmp(9624).Commands;
           Commands.fadeIn(arg0);
         } else {
           const tmp4 = callback(arg0);
@@ -218,7 +218,7 @@ obj = {
             DCDChatManager.fadeIn(tmp4);
           }
         }
-        tmpResult = tmp(4057);
+        tmpResult = tmp(4119);
       }
       obj = require(500) /* set */;
     }

@@ -1,9 +1,9 @@
-// Module ID: 7522
-// Function ID: 7523
+// Module ID: 6658
+// Function ID: 6659
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7522 (metadata)
+// Module 6658 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/StreamSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/49508dd2dc801ebb475f171f86821edddada6d4f0c43c131bc6006f7d05b5057.png";

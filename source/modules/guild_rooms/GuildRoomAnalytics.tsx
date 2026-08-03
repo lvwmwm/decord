@@ -1,10 +1,10 @@
-// Module ID: 16219
-// Function ID: 16220
+// Module ID: 16283
+// Function ID: 16284
 // Name: trackGuildRoomObjectInteracted
-// Dependencies: [1218, 1372, 4265, 4209, 16215, 16220, 676, 4388, 2]
+// Dependencies: [1218, 1372, 4327, 4271, 16279, 16284, 676, 4450, 2]
 // Exports: trackGuildRoomInteracted, trackGuildRoomLayoutToggled, trackGuildRoomObjectInteracted, trackGuildRoomOpened, trackGuildRoomSeatSelected, trackGuildRoomUserConnected, trackGuildRoomUserDisconnected, trackGuildRoomUserInteracted, trackGuildRoomUserUpdated
 
-// Module 16219 (trackGuildRoomObjectInteracted)
+// Module 16283 (trackGuildRoomObjectInteracted)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
@@ -382,19 +382,17 @@ export const trackGuildRoomSeatSelected = function trackGuildRoomSeatSelected(ar
     fn(obj);
   }
 };
-export const trackGuildRoomUserInteracted = function trackGuildRoomUserInteracted(arg0) {
-  let channelId;
-  let fn;
-  ({ targetUserId: channelId, interactionType: fn } = arg0);
-  let merged = Object.assign(arg0, Object.create(null));
-  let timeout = merged;
+export const trackGuildRoomUserInteracted = function trackGuildRoomUserInteracted(interactionType) {
+  let channelId = interactionType.interactionType;
+  let merged = Object.assign(interactionType, Object.create(null));
+  let fn = merged;
   channelId = merged.channelId;
   fn = (arg0) => {
     let channelId;
     let guildId;
     let userId;
     let obj = channelId(fn[7]);
-    ({ userId, guildId, channelId } = id);
+    ({ userId, guildId, channelId } = fn);
     if (userId == null) {
       userId = id.getId();
     }
@@ -413,12 +411,11 @@ export const trackGuildRoomUserInteracted = function trackGuildRoomUserInteracte
     obj[3] = roomUsers.size;
     obj[4] = roomUsers.has(userId);
     const merged = Object.assign(obj);
-    obj.target_user_id = channelId;
-    obj.interaction_type = fn;
+    obj.interaction_type = channelId;
     const merged1 = Object.assign(arg0);
     obj.trackWithMetadata(outer1_8.GUILD_ROOM_USER_INTERACTED, obj);
   };
-  timeout = undefined;
+  let timeout;
   function onChange() {
     let obj = outer1_4;
     const mediaSessionId = outer1_4.getMediaSessionId();
@@ -516,7 +513,7 @@ export const trackGuildRoomUserConnected = function trackGuildRoomUserConnected(
 export const trackGuildRoomUserDisconnected = function trackGuildRoomUserDisconnected(channelId) {
   let guildId;
   let userId;
-  let obj = importDefault(4388);
+  let obj = importDefault(4450);
   ({ userId, guildId, channelId } = channelId);
   if (userId == null) {
     userId = id.getId();

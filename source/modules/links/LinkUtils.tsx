@@ -1,10 +1,10 @@
-// Module ID: 4385
-// Function ID: 4386
+// Module ID: 4447
+// Function ID: 4448
 // Name: ME
-// Dependencies: [1372, 1862, 3821, 676, 1379, 4181, 2]
+// Dependencies: [1372, 1862, 3883, 676, 1379, 4243, 2]
 // Exports: canViewChannel, isAccessibleChannelPath, tryParseChannelPath, tryParseDiceRollLink, tryParseEventDetailsPath
 
-// Module 4385 (ME)
+// Module 4447 (ME)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -12,7 +12,7 @@ import ME from "ME";
 
 ME = ME.ME;
 const Permissions = ME.Permissions;
-const mapped = Array.from(require("set").StaticChannelRoutes).map((arg0) => importDefault(4181).escape(arg0));
+const mapped = Array.from(require("set").StaticChannelRoutes).map((arg0) => importDefault(4243).escape(arg0));
 const joined = mapped.join("|");
 const regExp = new RegExp("^/channels/(\\d+|" + ME + ")(?:/)?(\\d+|" + joined + ")?");
 const regExp1 = new RegExp("^/channels/(\\d+|" + ME + ")(?:/)(\\d+|" + joined + ")(?:/)(\\d+)");

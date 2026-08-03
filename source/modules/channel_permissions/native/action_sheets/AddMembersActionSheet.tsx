@@ -1,10 +1,10 @@
-// Module ID: 8288
-// Function ID: 8289
+// Module ID: 8595
+// Function ID: 8596
 // Name: _toPropertyKey
-// Dependencies: [5, 109, 32, 19, 17, 1942, 1935, 1862, 1874, 6721, 505, 21, 4193, 712, 3826, 5219, 4181, 589, 8281, 3906, 1236, 1297, 4189, 8289, 5249, 6679, 8293, 5108, 8300, 4384, 4376, 8282, 3893, 4161, 5247, 5246, 4604, 2]
+// Dependencies: [5, 109, 32, 19, 17, 1942, 1935, 1862, 1874, 7692, 505, 21, 4255, 712, 3888, 5281, 4243, 589, 8588, 3968, 1236, 1297, 4251, 8596, 5311, 7654, 8600, 5170, 8605, 4446, 4438, 8589, 3955, 4223, 5309, 5308, 4666, 2]
 // Exports: default
 
-// Module 8288 (_toPropertyKey)
+// Module 8595 (_toPropertyKey)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import _objectWithoutProperties from "_objectWithoutProperties";
 import presentAddedFriendToast from "presentAddedFriendToast";
@@ -216,7 +216,7 @@ class AddMembersBody {
     tmp33 = Fragment;
     tmp35 = length;
     obj4 = { accessibilityLabel: null, placeholder: null, tags: null, onChangeText: null, onRemove: null };
-    tmp8Result = require("module_8293");
+    tmp8Result = require("module_8600");
     intl5 = require("getSystemLocale").intl;
     obj4[0] = intl5.string(require("getSystemLocale").t["5h0QOP"]);
     intl6 = require("getSystemLocale").intl;
@@ -434,12 +434,12 @@ export default function AddMembersActionSheet(channel) {
                 if (tmp) {
                   if (row.rowType === outer2_14.ROLE) {
                     closure_2 = closure_2 + 1;
-                    items.push(outer2_0(4376).permissionOverwriteForRole(row.id, items.type));
-                    const obj = outer2_0(4376);
+                    items.push(outer2_0(4438).permissionOverwriteForRole(row.id, items.type));
+                    const obj = outer2_0(4438);
                   } else if (row.rowType === tmp2.MEMBER) {
                     closure_1 = closure_1 + 1;
-                    items.push(outer2_0(4376).permissionOverwriteForUser(row.id, items.type));
-                    const obj2 = outer2_0(4376);
+                    items.push(outer2_0(4438).permissionOverwriteForUser(row.id, items.type));
+                    const obj2 = outer2_0(4438);
                   }
                 }
               });
@@ -447,7 +447,7 @@ export default function AddMembersActionSheet(channel) {
               c4 = 2;
               c5 = 1;
               let obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(8282).savePermissionUpdates(outer1_0.id, items);
+              obj1[0] = outer1_0(8589).savePermissionUpdates(outer1_0.id, items);
               return obj1;
             }
           } else {
@@ -458,9 +458,9 @@ export default function AddMembersActionSheet(channel) {
               c5 = 3;
               throw arg1;
             } else if (arg0 !== 2) {
-              obj = outer1_0(3893);
+              obj = outer1_0(3955);
               const result = obj.memberOrRoleAddedToast(c2, c1);
-              obj1 = outer1_1(4161);
+              obj1 = outer1_1(4223);
               obj1.hideActionSheet();
               dependencyMap = 0;
             }
@@ -501,7 +501,7 @@ export default function AddMembersActionSheet(channel) {
     }
     return outer1_12.getGuild(guildId);
   });
-  let str = first(4384)(channel, true);
+  let str = first(4446)(channel, true);
   if (str == null) {
     str = "";
   }
@@ -526,7 +526,7 @@ export default function AddMembersActionSheet(channel) {
       }
       let obj1 = { scrollable: true, header: null, startExpanded: true, children: null };
       obj[2] = tmp11(tmp12, obj4);
-      obj1[1] = tmp11(tmp4(5246).BottomSheetTitleHeader, obj);
+      obj1[1] = tmp11(tmp4(5308).BottomSheetTitleHeader, obj);
       let obj2 = { style: null, children: null };
       obj2[0] = tmp.container;
       const obj3 = { channel: null, guild: null, permission: null, pendingAdditions: null, setPendingAdditions: null, inActionSheet: true };
@@ -537,7 +537,7 @@ export default function AddMembersActionSheet(channel) {
       obj3[4] = tmp2[1];
       obj2[1] = tmp11(AddMembersBody, obj3);
       obj1[3] = tmp11(closure_8, obj2);
-      return tmp11(tmp4(5247).BottomSheet, obj1);
+      return tmp11(tmp4(5309).BottomSheet, obj1);
     }
     obj4 = { size: "sm", text: null, onPress: null, variant: null, disabled: null };
     const intl = tmp4(1236).intl;

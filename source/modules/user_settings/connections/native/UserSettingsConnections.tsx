@@ -1,10 +1,10 @@
-// Module ID: 14008
-// Function ID: 14009
+// Module ID: 14075
+// Function ID: 14076
 // Name: ADD_CONNECTIONS_SHEET_SENTINEL
-// Dependencies: [19, 17, 5127, 1218, 4873, 1946, 676, 21, 4193, 712, 4129, 589, 12201, 5527, 4999, 4161, 14007, 1959, 8974, 14009, 7639, 14012, 4602, 14013, 2]
+// Dependencies: [19, 17, 5189, 1218, 4935, 1946, 676, 21, 4255, 712, 4191, 589, 12297, 5589, 5061, 4223, 14074, 1959, 9151, 14076, 7765, 14079, 4664, 14080, 2]
 // Exports: UserSettingsConnections
 
-// Module 14008 (ADD_CONNECTIONS_SHEET_SENTINEL)
+// Module 14075 (ADD_CONNECTIONS_SHEET_SENTINEL)
 import EmptyStateCard from "EmptyStateCard";
 import { ActivityIndicator } from "asyncRequireImpl";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
@@ -36,7 +36,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
   let authorizedAppsFetchState;
   let authorizedApps;
   const tmp = createCacheKey();
-  importDefault = importDefault(4129)();
+  importDefault = importDefault(4191)();
   let obj = selectedPlatformType(589);
   const items = [_getSystemLocale];
   dependencyMap = obj.useStateFromStores(items, () => locale.locale);
@@ -50,7 +50,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
   authorizedApps = stateFromStoresObject1.authorizedApps;
   const obj3 = selectedPlatformType(589);
   const tmp2 = importDefault;
-  const tmp7Result = importDefault(12201)(id.getId(), { includeHidden: true });
+  const tmp7Result = importDefault(12297)(id.getId(), { includeHidden: true });
   const prop = tmp7Result.filteredAppIdentities;
   const items3 = [authorizedAppsFetchState];
   const effect = authorizedAppsFetchState.useEffect(() => {
@@ -80,7 +80,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
     if (!tmp7Result.isLoading) {
       if (0 === accounts.length) {
         if (0 === prop.length) {
-          let tmp14 = callback(tmp2(14009), {});
+          let tmp14 = callback(tmp2(14076), {});
         }
       }
       obj = { style: null, children: null };
@@ -96,9 +96,9 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
       ];
       obj = { spacing: 16, children: null };
       obj[1] = accounts.map((account) => outer1_11(callback(paths[23]), { theme: callback, locale: paths, account }, account.id));
-      items5[1] = callback(tmp4(4602).Stack, obj);
+      items5[1] = callback(tmp4(4664).Stack, obj);
       obj[1] = items5;
-      tmp14 = callback2(tmp4(7639).Form, obj);
+      tmp14 = callback2(tmp4(7765).Form, obj);
     }
     return tmp14;
   }

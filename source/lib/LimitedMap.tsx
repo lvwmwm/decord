@@ -1,9 +1,9 @@
-// Module ID: 7898
-// Function ID: 7899
+// Module ID: 8016
+// Function ID: 8017
 // Name: LimitedMap
 // Dependencies: [2]
 
-// Module 7898 (LimitedMap)
+// Module 8016 (LimitedMap)
 class LimitedMap extends Map {
   constructor(arg0) {
     tmp = new LimitedMap(new.target);

@@ -1,9 +1,9 @@
-// Module ID: 6047
-// Function ID: 6048
+// Module ID: 7125
+// Function ID: 7126
 // Name: ServiceNotificationPriority
 // Dependencies: [2]
 
-// Module 6047 (ServiceNotificationPriority)
+// Module 7125 (ServiceNotificationPriority)
 const result = require("set").fileFinishedImporting("modules/foreground_service/mobile/ForegroundServiceManagerTypes.tsx");
 
 export const ServiceNotificationPriority = { HIGH: 0, [0]: "HIGH", MEDIUM: 1, [1]: "MEDIUM", LOW: 2, [2]: "LOW" };

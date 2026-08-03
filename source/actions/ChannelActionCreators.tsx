@@ -1,8 +1,8 @@
-// Module ID: 4203
-// Function ID: 4204
-// Dependencies: [32, 5, 4204, 1376, 1372, 4205, 676, 8926, 530, 5111, 4045, 4201, 5005, 709, 8208, 698, 1222, 4039, 1236, 7693, 4431, 2]
+// Module ID: 4265
+// Function ID: 4266
+// Dependencies: [32, 5, 4266, 1376, 1372, 4267, 676, 9103, 530, 5173, 4107, 4263, 5067, 709, 8515, 698, 1222, 4101, 1236, 5836, 4493, 2]
 
-// Module 4203
+// Module 4265
 import _slicedToArray from "_slicedToArray";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
@@ -289,15 +289,15 @@ export default {
           c4();
         }
         if (null != obj2.getRootNavigationRef()) {
-          tmp6(4201).transitionToChannel(channel.id, { navigationReplace: true });
+          tmp6(4263).transitionToChannel(channel.id, { navigationReplace: true });
           tmp3 = channel;
-          const tmp6Result = tmp6(4201);
+          const tmp6Result = tmp6(4263);
         } else {
-          const privateChannel = importDefault(5005).selectPrivateChannel(channel.id);
+          const privateChannel = importDefault(5067).selectPrivateChannel(channel.id);
           tmp3 = channel;
-          const obj3 = importDefault(5005);
+          const obj3 = importDefault(5067);
         }
-        obj2 = require(4045) /* getRootNavigationRef */;
+        obj2 = require(4107) /* getRootNavigationRef */;
         tmp6 = require;
       }
     }
@@ -529,11 +529,11 @@ export default {
     const tmp2 = importDefault;
     const tmp5 = require;
     if (null != obj2.getRootNavigationRef()) {
-      tmp5(4201).transitionToChannel(tmp.id, { navigationReplace: true });
-      const tmp5Result = tmp5(4201);
+      tmp5(4263).transitionToChannel(tmp.id, { navigationReplace: true });
+      const tmp5Result = tmp5(4263);
     } else {
-      const privateChannel = tmp2(5005).selectPrivateChannel(tmp.id);
-      const tmp2Result = tmp2(5005);
+      const privateChannel = tmp2(5067).selectPrivateChannel(tmp.id);
+      const tmp2Result = tmp2(5067);
     }
     return tmp;
   },
@@ -546,7 +546,7 @@ export default {
     if (arg2 === undefined) {
       flag2 = false;
     }
-    if (importDefault(8208)(id)) {
+    if (importDefault(8515)(id)) {
       let tmpResult = tmp(698);
       let obj = { last_changelog_id: null, unread_count: null };
       obj[0] = handleUserSettingsProtoStoreChange.latestChangelogId();
@@ -554,7 +554,7 @@ export default {
       tmpResult.track(constants.CHANGE_LOG_DM_REMOVED, obj);
     }
     tmpResult = tmp(709);
-    obj = { id, guild_id: "Array", parent_id: "padding" };
+    obj = { id, guild_id: "Array", parent_id: "isArray" };
     tmpResult.dispatch({ type: "CHANNEL_DELETE", channel: obj, silent: flag2 });
     if (flag) {
       require(1222) /* transitionTo */.transitionTo(constants2.FRIENDS);
@@ -566,14 +566,20 @@ export default {
     const obj7 = require(530) /* sendRequest */;
     const delResult = HTTP.del(obj1);
     return HTTP.del(obj1).then(() => {
-      const AccessibilityAnnouncer = callback(4039).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = callback(4101).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t.nRbucl));
     }).catch(() => {
-      const AccessibilityAnnouncer = callback(4039).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = callback(4101).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t.ndXVI5));
     });
+  },
+  bulkLeaveGroupDMs(channel_ids) {
+    const HTTP = require(530) /* sendRequest */.HTTP;
+    obj = { url: closure_11.USER_CHANNELS_BULK_LEAVE, body: obj, oldFormErrors: true, rejectWithError: true };
+    obj = { channel_ids };
+    return HTTP.post(obj);
   },
   updatePermissionOverwrite(id, arr) {
     let closure_0 = id;
@@ -835,7 +841,7 @@ export default {
               tmp10 = isThreadResult;
             }
             if (!tmp10) {
-              obj1 = outer1_1(7693);
+              obj1 = outer1_1(5836);
               const result = obj1.checkGuildTemplateDirty(guildId);
             }
             c3 = 3;
@@ -1171,7 +1177,7 @@ export default {
     } else {
       result = closure_11.CHANNEL_STORE_LISTING(arg0);
     }
-    const result1 = _require(4431).httpGetWithCountryCodeQuery(result);
+    const result1 = _require(4493).httpGetWithCountryCodeQuery(result);
     return result1.then((body) => {
       let obj = outer1_1(outer1_2[13]);
       obj = { type: "STORE_LISTING_FETCH_SUCCESS", channelId: closure_0, storeListing: body.body };
@@ -1245,7 +1251,7 @@ export default {
             return obj4;
           } else {
             closure_0 = arg1;
-            obj = outer1_1(7693);
+            obj = outer1_1(5836);
             const result = obj.checkGuildTemplateDirty(closure_0);
             c3 = 3;
             const obj5 = { value: null, done: true };

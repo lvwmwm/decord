@@ -1,10 +1,10 @@
-// Module ID: 5901
-// Function ID: 5902
+// Module ID: 6979
+// Function ID: 6980
 // Name: items
-// Dependencies: [5900, 5902, 5903, 2]
+// Dependencies: [6978, 6980, 6981, 2]
 // Exports: isGameWidget, isGameWidgetType
 
-// Module 5901 (items)
+// Module 6979 (items)
 const items = [require("WidgetType").WidgetType.CURRENT_GAMES, require("WidgetType").WidgetType.FAVORITE_GAMES, require("WidgetType").WidgetType.WANT_TO_PLAY_GAMES, require("WidgetType").WidgetType.PLAYED_GAMES];
 let BaseGameWidget;
 class BaseGameWidget {
@@ -32,7 +32,7 @@ prototype["isValid"] = function isValid() {
   const self = this;
   let tmp = this.games.length > 0;
   if (tmp) {
-    tmp = self.games.length <= require(5902) /* GAME_WIDGET_LIMITS_BY_TYPE */.GAME_WIDGET_LIMITS_BY_TYPE[self.type];
+    tmp = self.games.length <= require(6980) /* GAME_WIDGET_LIMITS_BY_TYPE */.GAME_WIDGET_LIMITS_BY_TYPE[self.type];
   }
   return tmp;
 };
@@ -42,8 +42,8 @@ prototype["isEqual"] = function isEqual(type) {
     const self = this;
     let areWidgetGamesEqualResult = type.type === this.type;
     if (areWidgetGamesEqualResult) {
-      areWidgetGamesEqualResult = require(5903) /* findGameWidget */.areWidgetGamesEqual(self.games, type.games, self.type);
-      const obj = require(5903) /* findGameWidget */;
+      areWidgetGamesEqualResult = require(6981) /* findGameWidget */.areWidgetGamesEqual(self.games, type.games, self.type);
+      const obj = require(6981) /* findGameWidget */;
     }
     tmp = areWidgetGamesEqualResult;
   }

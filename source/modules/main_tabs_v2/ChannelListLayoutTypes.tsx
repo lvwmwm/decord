@@ -1,9 +1,9 @@
-// Module ID: 3871
-// Function ID: 3872
+// Module ID: 3933
+// Function ID: 3934
 // Name: ChannelListLayoutTypes
 // Dependencies: [2]
 
-// Module 3871 (ChannelListLayoutTypes)
+// Module 3933 (ChannelListLayoutTypes)
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/ChannelListLayoutTypes.tsx");
 
 export const ChannelListLayoutTypes = { COZY: "cozy", COZY_DRAWER: "cozy-drawer", COZY_DRAWER_SMOL: "cozy-drawer-smol", COMPACT: "compact", MINIMAL: "minimal" };

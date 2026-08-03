@@ -1,10 +1,10 @@
-// Module ID: 8345
-// Function ID: 8346
+// Module ID: 8650
+// Function ID: 8651
 // Name: useCanSendStageStartNotification
-// Dependencies: [4114, 3821, 505, 589, 2]
+// Dependencies: [4176, 3883, 505, 589, 2]
 // Exports: useCanSendStageStartNotification, useDefaultSendStartStageNotificationToggle
 
-// Module 8345 (useCanSendStageStartNotification)
+// Module 8650 (useCanSendStageStartNotification)
 import handleInviteData from "handleInviteData";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "sum";

@@ -1,10 +1,10 @@
-// Module ID: 13791
-// Function ID: 13792
+// Module ID: 13858
+// Function ID: 13859
 // Name: WebAuthnNameStep
-// Dependencies: [5, 32, 19, 17, 13771, 21, 4193, 1480, 5649, 3894, 1236, 9704, 4154, 7639, 1297, 4604, 2]
+// Dependencies: [5, 32, 19, 17, 13838, 21, 4255, 1480, 5711, 3956, 1236, 9849, 4216, 7765, 1297, 4666, 2]
 // Exports: default
 
-// Module 13791 (WebAuthnNameStep)
+// Module 13858 (WebAuthnNameStep)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -147,7 +147,7 @@ export default function WebAuthnNameStep(arg0) {
   obj[6] = intl2.string(require(1236) /* getSystemLocale */.t["I/sJtJ"]);
   obj[7] = tmp6[0];
   obj[8] = require(1297) /* Button */.ClearButtonVisibility.WITH_CONTENT;
-  const items = [callback2(require(7639) /* Form */.FormInput, obj), callback2(require(7639) /* Form */.FormDivider, {}), ];
+  const items = [callback2(require(7765) /* Form */.FormInput, obj), callback2(require(7765) /* Form */.FormDivider, {}), ];
   let obj1 = { style: tmp.margin, children: null };
   let obj2 = {
     onPress() {
@@ -167,8 +167,8 @@ export default function WebAuthnNameStep(arg0) {
   const intl3 = tmp2(1236).intl;
   obj2[1] = intl3.string(require(1236) /* getSystemLocale */.t["5dyZ1S"]);
   obj2[2] = "" === first;
-  obj1[1] = callback2(require(4604) /* Button */.Button, obj2);
+  obj1[1] = callback2(require(4666) /* Button */.Button, obj2);
   items[2] = callback2(_onPress, obj1);
   obj[0] = items;
-  return callback3(require(7639) /* Form */.Form, obj);
+  return callback3(require(7765) /* Form */.Form, obj);
 };

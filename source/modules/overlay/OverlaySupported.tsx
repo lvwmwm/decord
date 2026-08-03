@@ -1,9 +1,9 @@
-// Module ID: 12995
-// Function ID: 12996
+// Module ID: 13058
+// Function ID: 13059
 // Name: IS_OVERLAY_DEV_ENV
 // Dependencies: [500, 2]
 
-// Module 12995 (IS_OVERLAY_DEV_ENV)
+// Module 13058 (IS_OVERLAY_DEV_ENV)
 import { isPlatformEmbedded as flag } from "set";
 
 if (flag) {

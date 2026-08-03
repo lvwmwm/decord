@@ -1,10 +1,10 @@
-// Module ID: 6671
-// Function ID: 6672
+// Module ID: 7325
+// Function ID: 7326
 // Name: useCreateSubscriptionParams
-// Dependencies: [19, 6672, 514, 2]
+// Dependencies: [19, 7326, 514, 2]
 // Exports: default
 
-// Module 6671 (useCreateSubscriptionParams)
+// Module 7325 (useCreateSubscriptionParams)
 import noop from "noop";
 
 const require = arg1;
@@ -13,7 +13,7 @@ const result = require("v1").fileFinishedImporting("modules/billing/native/subsc
 export default function useCreateSubscriptionParams(arg0, arg1) {
   let closure_0 = arg0;
   const importDefault = arg1;
-  const tmp = importDefault(6672)();
+  const tmp = importDefault(7326)();
   const dependencyMap = tmp;
   let items = [arg0, arg1, tmp];
   return React.useMemo(() => {

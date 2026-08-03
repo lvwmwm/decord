@@ -1,10 +1,10 @@
-// Module ID: 12189
-// Function ID: 12190
+// Module ID: 12285
+// Function ID: 12286
 // Name: useProfileTabIndices
-// Dependencies: [32, 19, 8109, 2]
+// Dependencies: [32, 19, 8440, 2]
 // Exports: useProfileSectionTabs, useProfileTabIndices
 
-// Module 12189 (useProfileTabIndices)
+// Module 12285 (useProfileTabIndices)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY";

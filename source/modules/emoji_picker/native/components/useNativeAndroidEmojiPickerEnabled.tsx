@@ -1,10 +1,10 @@
-// Module ID: 9366
-// Function ID: 9367
+// Module ID: 9525
+// Function ID: 9526
 // Name: useNativeAndroidEmojiPickerEnabled
 // Dependencies: [1218, 500, 1923, 2]
 // Exports: default
 
-// Module 9366 (useNativeAndroidEmojiPickerEnabled)
+// Module 9525 (useNativeAndroidEmojiPickerEnabled)
 import fetchFingerprint from "fetchFingerprint";
 
 const require = arg1;

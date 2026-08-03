@@ -1,10 +1,10 @@
-// Module ID: 6680
-// Function ID: 6681
+// Module ID: 7655
+// Function ID: 7656
 // Name: BuyNitroMarketingHeader
-// Dependencies: [19, 17, 6230, 21, 712, 4193, 4054, 4196, 4194, 4129, 6681, 500, 6682, 6678, 691, 5145, 6232, 6251, 4615, 1236, 6684, 4189, 6685, 6687, 2]
+// Dependencies: [19, 17, 6793, 21, 712, 4255, 4116, 4258, 4256, 4191, 7656, 500, 7657, 7653, 691, 5207, 6795, 7241, 4677, 1236, 7659, 4251, 7660, 7662, 2]
 // Exports: default
 
-// Module 6680 (BuyNitroMarketingHeader)
+// Module 7655 (BuyNitroMarketingHeader)
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "registerAsset";
 import { Gradients } from "items";
@@ -65,8 +65,8 @@ let closure_11 = createCacheKey.createStyles((arg0, arg1, arg2) => {
   obj[1] = obj;
   const tmp3 = -importDefault(712).space.PX_16;
   const tmp5 = absoluteFillObject;
-  obj[2] = { position: "absolute", top: -importDefault(712).space.PX_16, right: "borderRadius", left: "__esModule", alignSelf: 16125688919116202000000000000000000000000000000000000000000000000000000000000000000 };
-  const obj1 = { position: "absolute", top: -importDefault(712).space.PX_16, right: "borderRadius", left: "__esModule", alignSelf: 16125688919116202000000000000000000000000000000000000000000000000000000000000000000 };
+  obj[2] = { position: "absolute", top: -importDefault(712).space.PX_16, right: "borderRadius", left: "Number", alignSelf: -2368620536874309500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  const obj1 = { position: "absolute", top: -importDefault(712).space.PX_16, right: "borderRadius", left: "Number", alignSelf: -2368620536874309500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
   obj[3] = { position: "absolute", top: arg0 + importDefault(712).space.PX_20, right: importDefault(712).space.PX_4 };
   const obj3 = { height: null };
   obj3[0] = importDefault(712).space.PX_80 + importDefault(712).space.PX_4;

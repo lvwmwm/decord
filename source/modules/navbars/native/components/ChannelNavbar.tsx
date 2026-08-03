@@ -1,10 +1,10 @@
-// Module ID: 11887
-// Function ID: 11888
+// Module ID: 11983
+// Function ID: 11984
 // Name: ChannelTitleContent
-// Dependencies: [19, 17, 4869, 1376, 1372, 1862, 4280, 3830, 1874, 676, 1379, 1369, 21, 4193, 5113, 712, 589, 1236, 4654, 4384, 9071, 11888, 11889, 1297, 10153, 11890, 5145, 10151, 9369, 4721, 4189, 4032, 7982, 8344, 4009, 1358, 9676, 11891, 2]
+// Dependencies: [19, 17, 4931, 1376, 1372, 1862, 4342, 3892, 1874, 676, 1379, 1369, 21, 4255, 5175, 712, 589, 1236, 4716, 4446, 9244, 11984, 11985, 1297, 10292, 11986, 5207, 10290, 9528, 4783, 4251, 4094, 8100, 8649, 4071, 1358, 9821, 11987, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 11887 (ChannelTitleContent)
+// Module 11983 (ChannelTitleContent)
 import importAllResult from "computeChannelName";
 import { View } from "getSystemLocale";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -58,7 +58,7 @@ function ChannelTitleContent(arg0) {
     obj[0] = tmp.channelName;
     obj[4] = accessibleTitle;
     obj[7] = title;
-    obj[1] = callback(require(4189) /* Text */.Text, obj);
+    obj[1] = callback(require(4251) /* Text */.Text, obj);
     tmp8 = callback(View, obj);
   }
   const obj1 = { style: tmp.flexRow, children: null };
@@ -77,11 +77,11 @@ function ParentChannelSubTitle(parentChannel) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { channelName: null };
   const tmp = callback3();
-  obj[0] = require(4384) /* computeChannelName */.computeChannelName(parentChannel, mergeGuildAvatar, upsertRelationship);
+  obj[0] = require(4446) /* computeChannelName */.computeChannelName(parentChannel, mergeGuildAvatar, upsertRelationship);
   obj[2] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.BjYvHO, obj);
-  const obj3 = require(4384) /* computeChannelName */;
-  obj[6] = require(4384) /* computeChannelName */.computeChannelName(parentChannel, mergeGuildAvatar, upsertRelationship, true);
-  return callback(require(4189) /* Text */.Text, obj);
+  const obj3 = require(4446) /* computeChannelName */;
+  obj[6] = require(4446) /* computeChannelName */.computeChannelName(parentChannel, mergeGuildAvatar, upsertRelationship, true);
+  return callback(require(4251) /* Text */.Text, obj);
 }
 function DMChannelName(style) {
   const userId = style.userId;
@@ -167,7 +167,7 @@ function ChannelTitleWrapper(arg0) {
       return null;
     };
     obj[4] = children;
-    tmp5 = callback(require(4721) /* PressableBase */.PressableOpacity, obj);
+    tmp5 = callback(require(4783) /* PressableBase */.PressableOpacity, obj);
   }
   return tmp5;
 }
@@ -437,12 +437,12 @@ export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) 
   }
   let channelIcon = null;
   if (null != stateFromStores) {
-    let tmp2Result = tmp2(4654);
+    let tmp2Result = tmp2(4716);
     channelIcon = tmp2Result.getChannelIcon(stateFromStores);
   }
   let channelName = null;
   if (null != stateFromStores) {
-    tmp2Result = tmp2(4384);
+    tmp2Result = tmp2(4446);
     channelName = tmp2Result.computeChannelName(stateFromStores, mergeGuildAvatar, upsertRelationship);
   }
   let isDMResult;
@@ -471,7 +471,7 @@ export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) 
     obj3[0] = callback(DMChannelName, obj);
     obj3[1] = channelIcon;
     obj3[2] = tmp16Result;
-    obj3[3] = callback(importDefault(9071), obj1);
+    obj3[3] = callback(importDefault(9244), obj1);
     obj2[1] = callback(ChannelTitleContent, obj3);
     return callback(ChannelTitleWrapper, obj2);
   } else {

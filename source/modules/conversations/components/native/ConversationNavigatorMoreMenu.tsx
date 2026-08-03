@@ -1,10 +1,10 @@
-// Module ID: 9305
-// Function ID: 9306
+// Module ID: 9477
+// Function ID: 9478
 // Name: ConversationNavigatorMoreMenu
-// Dependencies: [19, 17, 21, 4193, 712, 1236, 9306, 9279, 9281, 3893, 9308, 9310, 6685, 8972, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 1236, 9478, 9451, 9453, 3955, 9480, 9482, 7660, 9149, 2]
 // Exports: default
 
-// Module 9305 (ConversationNavigatorMoreMenu)
+// Module 9477 (ConversationNavigatorMoreMenu)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 11794
-// Function ID: 11795
+// Module ID: 11896
+// Function ID: 11897
 // Name: ContactSyncLandingImage
-// Dependencies: [19, 17, 21, 4193, 11795, 11796, 2]
+// Dependencies: [19, 17, 21, 4255, 11897, 11898, 2]
 // Exports: default
 
-// Module 11794 (ContactSyncLandingImage)
+// Module 11896 (ContactSyncLandingImage)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -24,11 +24,11 @@ export default function ContactSyncLandingImage() {
   const tmp = callback3();
   let obj = { children: null };
   obj = { style: tmp.leftContainer, children: null };
-  obj = { resizeMode: "contain", style: tmp.landingImageLeft, source: importDefault(11795) };
+  obj = { resizeMode: "contain", style: tmp.landingImageLeft, source: importDefault(11897) };
   obj[1] = callback(closure_2, obj);
   const items = [callback(closure_3, obj), ];
   const obj1 = { style: tmp.rightContainer, children: null };
-  obj1[1] = callback(closure_2, { resizeMode: "contain", style: tmp.landingImageRight, source: importDefault(11796) });
+  obj1[1] = callback(closure_2, { resizeMode: "contain", style: tmp.landingImageRight, source: importDefault(11898) });
   items[1] = callback(closure_3, obj1);
   obj[0] = items;
   return callback2(closure_5, obj);

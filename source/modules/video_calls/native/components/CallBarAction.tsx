@@ -1,10 +1,10 @@
-// Module ID: 10542
-// Function ID: 10543
+// Module ID: 10727
+// Function ID: 10728
 // Name: ActionButton
-// Dependencies: [19, 17, 10249, 21, 4037, 712, 4193, 10543, 4721, 10544, 4189, 2]
+// Dependencies: [19, 17, 10388, 21, 4099, 712, 4255, 10728, 4783, 10729, 4251, 2]
 // Exports: NotifiedActionButton, PrimaryActionButton, ToggledActionButton
 
-// Module 10542 (ActionButton)
+// Module 10727 (ActionButton)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { resetFocusTimer } from "VoiceChatDrawerState";
@@ -225,7 +225,7 @@ export const NotifiedActionButton = function NotifiedActionButton(isMentioned) {
     const obj1 = { style: null, variant: "text-xs/semibold", color: "text-overlay-light", children: null };
     obj1[0] = tmp2.notificationText;
     obj1[3] = isMentioned.notifications;
-    obj[1] = tmp3(require(4189) /* Text */.Text, obj1);
+    obj[1] = tmp3(require(4251) /* Text */.Text, obj1);
     obj.children = tmp3(tmp4, obj);
     obj[0] = tmp3(ActionButton, obj);
     return tmp3(tmp4, obj);

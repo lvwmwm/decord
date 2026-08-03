@@ -1,10 +1,10 @@
-// Module ID: 11711
-// Function ID: 11712
+// Module ID: 11814
+// Function ID: 11815
 // Name: UserProfileStackedActionSheet
-// Dependencies: [19, 17, 21, 4193, 712, 1581, 5249, 7639, 500, 5247, 4721, 1236, 5151, 4189, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 1581, 5311, 7765, 500, 5309, 4783, 1236, 5213, 4251, 2]
 // Exports: UserProfileStackedActionSheetList, UserProfileStackedActionSheetSectionList, default
 
-// Module 11711 (UserProfileStackedActionSheet)
+// Module 11814 (UserProfileStackedActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -48,10 +48,10 @@ export default function UserProfileStackedActionSheet(onBack) {
     const intl = tmp5(1236).intl;
     obj[1] = intl.string(tmp5(1236).t["13/7kX"]);
     obj[2] = onBack;
-    obj[3] = tmp4(tmp5(5151).ArrowLargeLeftIcon, { size: "md" });
-    tmp4Result = tmp4(tmp5(4721).PressableOpacity, obj);
+    obj[3] = tmp4(tmp5(5213).ArrowLargeLeftIcon, { size: "md" });
+    tmp4Result = tmp4(tmp5(4783).PressableOpacity, obj);
   }
-  const items1 = [tmp4Result, closure_4(require(4189) /* Text */.Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title }), ];
+  const items1 = [tmp4Result, closure_4(require(4251) /* Text */.Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title }), ];
   if (tmp4Result) {
     const obj1 = { style: null };
     obj1[0] = tmp2.headerSpacer;
@@ -61,7 +61,7 @@ export default function UserProfileStackedActionSheet(onBack) {
   obj[1] = items1;
   obj.header = closure_5(View, obj);
   obj.children = children;
-  return closure_4(require(5247) /* Background */.BottomSheet, obj);
+  return closure_4(require(5309) /* Background */.BottomSheet, obj);
 };
 export const UserProfileStackedActionSheetList = function UserProfileStackedActionSheetList(data) {
   data = data.data;
@@ -89,7 +89,7 @@ export const UserProfileStackedActionSheetList = function UserProfileStackedActi
     index = index.index;
     return renderItem({ item: index.item, index, start: 0 === index, end: index === data.length - 1 });
   };
-  return closure_4(data(5249).BottomSheetFlatList, obj);
+  return closure_4(data(5311).BottomSheetFlatList, obj);
 };
 export const UserProfileStackedActionSheetSectionList = function UserProfileStackedActionSheetSectionList(renderItem) {
   renderItem = renderItem.renderItem;
@@ -106,5 +106,5 @@ export const UserProfileStackedActionSheetSectionList = function UserProfileStac
   obj.ItemSeparatorComponent = function ItemSeparatorComponent() {
     return outer1_4(renderItem(outer1_2[7]).FormDivider, { style: divider.divider });
   };
-  return callback(renderItem(5249).BottomSheetSectionList, obj);
+  return callback(renderItem(5311).BottomSheetSectionList, obj);
 };

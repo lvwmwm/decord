@@ -1,10 +1,10 @@
-// Module ID: 11355
-// Function ID: 11356
+// Module ID: 11465
+// Function ID: 11466
 // Name: AppLauncherChoicesOption
-// Dependencies: [32, 19, 21, 4193, 712, 1844, 4161, 11356, 1959, 11360, 7639, 4189, 2]
+// Dependencies: [32, 19, 21, 4255, 712, 1844, 4223, 11466, 1959, 11470, 7765, 4251, 2]
 // Exports: default
 
-// Module 11355 (AppLauncherChoicesOption)
+// Module 11465 (AppLauncherChoicesOption)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";

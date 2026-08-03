@@ -1,10 +1,10 @@
-// Module ID: 16063
-// Function ID: 16064
+// Module ID: 16127
+// Function ID: 16128
 // Name: MediaPlaybackPanelController
-// Dependencies: [32, 19, 4185, 1371, 4404, 13610, 5692, 10052, 21, 4054, 1581, 15858, 13609, 589, 16064, 2]
+// Dependencies: [32, 19, 4247, 1371, 4466, 13673, 10404, 10194, 21, 4116, 1581, 15922, 13672, 589, 16128, 2]
 // Exports: default
 
-// Module 16063 (MediaPlaybackPanelController)
+// Module 16127 (MediaPlaybackPanelController)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

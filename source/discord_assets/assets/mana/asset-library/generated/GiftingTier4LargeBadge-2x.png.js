@@ -1,11 +1,11 @@
-// Module ID: 7210
-// Function ID: 7211
+// Module ID: 6346
+// Function ID: 6347
 // Name: vanityUrl
 // Dependencies: [2]
 
-// Module 7210 (vanityUrl)
+// Module 6346 (vanityUrl)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GiftingTier4LargeBadge-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/5f2f51478e299a8fcc4e0c7f207a49994725e079f95ed5ed6be996ec3edb792c.png";
+export default "https://cdn.discordapp.com/assets/content/8b214675c5028fccee894283c71278820724ebe15676e61d87c7b74b98b800cc.png";
 export const vanityUrl = "https://cdn.discordapp.com/assets/mana/asset-library/generated/GiftingTier4LargeBadge-2x.png";
-export const metadata = { fileBytes: 21085 };
+export const metadata = { fileBytes: 33873 };

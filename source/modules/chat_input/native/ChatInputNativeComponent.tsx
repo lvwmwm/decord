@@ -1,9 +1,9 @@
-// Module ID: 11425
-// Function ID: 11426
+// Module ID: 11535
+// Function ID: 11536
 // Name: ChatInputNativeComponent
-// Dependencies: [32, 19, 17, 4005, 21, 4193, 712, 1236, 4129, 4039, 4037, 500, 11173, 11179, 11181, 2]
+// Dependencies: [32, 19, 17, 4067, 21, 4255, 712, 1236, 4191, 4101, 4099, 500, 11285, 11291, 11293, 2]
 
-// Module 11425 (ChatInputNativeComponent)
+// Module 11535 (ChatInputNativeComponent)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
@@ -47,10 +47,10 @@ const forwardRefResult = importAllResult.forwardRef((markAsSpoilerTitle, ref) =>
   _require = undefined;
   ({ setNoExtractUI, shouldShowCursor, onBeginFocus, onEndBlur, onChangeContentSize, onMaxHeightChanged, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, verticalInset } = markAsSpoilerTitle);
   const tmp3 = callback2();
-  let obj = _require(4129);
+  let obj = _require(4191);
   const theme = obj.useTheme();
-  const isThemeDarkResult = _require(4039).isThemeDark(theme);
-  const obj2 = _require(4039);
+  const isThemeDarkResult = _require(4101).isThemeDark(theme);
+  const obj2 = _require(4101);
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
   if (isThemeDarkResult) {
     let PRIMARY_500 = unsafe_rawColors.WHITE;
@@ -63,7 +63,7 @@ const forwardRefResult = importAllResult.forwardRef((markAsSpoilerTitle, ref) =>
   if (null != gradientPreset.gradientPreset) {
     num = 0.8;
   }
-  const obj3 = _require(4037);
+  const obj3 = _require(4099);
   let tmp4Result = tmp4(500);
   let tmp11;
   if (!tmp4Result.isAndroid()) {
@@ -74,14 +74,14 @@ const forwardRefResult = importAllResult.forwardRef((markAsSpoilerTitle, ref) =>
   if (!tmp4Result.isAndroid()) {
     tmp12 = customKeyboard;
   }
-  const hexWithOpacityResult = _require(4037).hexWithOpacity(PRIMARY_500, num);
+  const hexWithOpacityResult = _require(4099).hexWithOpacity(PRIMARY_500, num);
   let num2 = 2;
   if (isThemeDarkResult) {
     num2 = 1;
   }
   const tmp4Result1 = _require(500);
-  const tmp13 = tmp9(11173)(onMaxHeightChanged);
-  _require = _require(11179).useShouldUseFabricChatInput();
+  const tmp13 = tmp9(11285)(onMaxHeightChanged);
+  _require = _require(11291).useShouldUseFabricChatInput();
   obj = { accessibilityLabel: tmp11, children: tmp12, editable, keyboardAppearance: num2, keyboardType: str, markAsSpoilerTitle, maxHeight: tmp13, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: tmp3.placeholderColor.color, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style: tmp3.style, textColor: tmp3.textColor.color, verticalInset };
   return jsx(callback(importAllResult.useState(() => {
     if (callback) {

@@ -1,10 +1,10 @@
-// Module ID: 8200
-// Function ID: 8201
+// Module ID: 8507
+// Function ID: 8508
 // Name: showShareActionSheet
-// Dependencies: [17, 501, 8201, 8202, 1208, 2]
+// Dependencies: [17, 501, 8508, 8509, 1208, 2]
 // Exports: showShareActionSheet
 
-// Module 8200 (showShareActionSheet)
+// Module 8507 (showShareActionSheet)
 import PlatformTypes from "PlatformTypes";
 
 if (PlatformTypes.isAndroid()) {
@@ -13,7 +13,7 @@ if (PlatformTypes.isAndroid()) {
     let _location;
     let app;
     ({ app, location: _location } = arg0);
-    const result = require(8202) /* trackAppClickInNativeShareSheet */.trackAppClickInNativeShareSheet(app, _location);
+    const result = require(8509) /* trackAppClickInNativeShareSheet */.trackAppClickInNativeShareSheet(app, _location);
   });
 }
 let result = require("enforcing").fileFinishedImporting("modules/action_sheet/native/showShareActionSheet.tsx");
@@ -25,10 +25,10 @@ export const showShareActionSheet = function showShareActionSheet(source, SECURE
   let tmp = SECURE_FRAMES_STREAM_BOTTOM_SHEET;
   const importDefault = SECURE_FRAMES_STREAM_BOTTOM_SHEET;
   if (null != source.source) {
-    let mediaShareParams = _require(8202).getMediaShareParams(source.source);
-    const obj2 = _require(8202);
+    let mediaShareParams = _require(8509).getMediaShareParams(source.source);
+    const obj2 = _require(8509);
   } else {
-    mediaShareParams = { mediaFallbackUrl: "Array", mediaStagingOptions: "HermesInternal" };
+    mediaShareParams = { mediaFallbackUrl: "Array", mediaStagingOptions: "ct" };
   }
   ({ mediaFallbackUrl, mediaStagingOptions } = mediaShareParams);
   if (null == source.source) {
@@ -51,9 +51,9 @@ export const showShareActionSheet = function showShareActionSheet(source, SECURE
   if (mediaStagingOptions == null) {
     mediaStagingOptions = null;
   }
-  const obj3 = importDefault(8201);
-  const shareResult = importDefault(8201).share(message, mediaFallbackUrl, subject, tmp, mediaStagingOptions);
-  importDefault(8201).share(message, mediaFallbackUrl, subject, tmp, mediaStagingOptions).then((method) => {
+  const obj3 = importDefault(8508);
+  const shareResult = importDefault(8508).share(message, mediaFallbackUrl, subject, tmp, mediaStagingOptions);
+  importDefault(8508).share(message, mediaFallbackUrl, subject, tmp, mediaStagingOptions).then((method) => {
     if (null != method) {
       method = method.method;
       if (source.iOSOnlyShareCallback != null) {

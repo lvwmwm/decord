@@ -1,9 +1,9 @@
-// Module ID: 11588
-// Function ID: 11589
+// Module ID: 11695
+// Function ID: 11696
 // Name: handleGameServerUpsert
-// Dependencies: [4082, 589, 709, 2]
+// Dependencies: [4144, 589, 709, 2]
 
-// Module 11588 (handleGameServerUpsert)
+// Module 11695 (handleGameServerUpsert)
 import { GAME_SERVER_SHOP_MAX_INSTANCES } from "str11";
 import { Store } from "initialize";
 

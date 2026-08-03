@@ -1,10 +1,10 @@
-// Module ID: 11113
-// Function ID: 11114
+// Module ID: 11229
+// Function ID: 11230
 // Name: AppealIngestionThanks
-// Dependencies: [19, 17, 21, 4193, 11101, 5181, 1297, 2]
+// Dependencies: [19, 17, 21, 4255, 11217, 5243, 1297, 2]
 // Exports: default
 
-// Module 11113 (AppealIngestionThanks)
+// Module 11229 (AppealIngestionThanks)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -20,7 +20,7 @@ export default function AppealIngestionThanks() {
   obj = { style: tmp.container, children: null };
   obj = { bottom: true, style: tmp.container, children: null };
   obj[2] = jsx(require(1297) /* Button */.LegacyText, { children: "TODO - Thanks" });
-  obj[1] = jsx(require(5181) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true, style: tmp.container, children: null });
+  obj[1] = jsx(require(5243) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true, style: tmp.container, children: null });
   obj[0] = <View bottom style={tmp.container}>{null}</View>;
-  return jsx(require(11101) /* AppealIngestionModal */.AppealIngestionModalScreen, { bottom: true, style: tmp.container, children: null });
+  return jsx(require(11217) /* AppealIngestionModal */.AppealIngestionModalScreen, { bottom: true, style: tmp.container, children: null });
 };

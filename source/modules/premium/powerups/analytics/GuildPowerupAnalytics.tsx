@@ -1,10 +1,10 @@
-// Module ID: 11648
-// Function ID: 11649
+// Module ID: 11753
+// Function ID: 11754
 // Name: ModalType
 // Dependencies: [19, 676, 698, 2]
 // Exports: useLogPowerupModalOpened
 
-// Module 11648 (ModalType)
+// Module 11753 (ModalType)
 import noop from "noop";
 import { AnalyticEvents } from "ME";
 

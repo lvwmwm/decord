@@ -1,10 +1,10 @@
-// Module ID: 15810
-// Function ID: 15811
+// Module ID: 15874
+// Function ID: 15875
 // Name: setLaunchPadPullTabExclusionRect
-// Dependencies: [10492, 595, 500, 4745, 1474, 2]
+// Dependencies: [10630, 595, 500, 4807, 1474, 2]
 // Exports: clearLaunchPadPullTabExclusionRect, getLaunchPadPullTabPositionCached, persistLaunchPadPullTabPosition, setLaunchPadPullTabPositionCached
 
-// Module 15810 (setLaunchPadPullTabExclusionRect)
+// Module 15874 (setLaunchPadPullTabExclusionRect)
 import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG";
 
 let c3;
@@ -60,8 +60,8 @@ function setLaunchPadPullTabExclusionRect() {
       obj[2] = tmp;
       obj[3] = sum;
       const items = [obj];
-      const result = importDefault(4745).setSystemGestureExclusionRects(items);
-      const obj5 = importDefault(4745);
+      const result = importDefault(4807).setSystemGestureExclusionRects(items);
+      const obj5 = importDefault(4807);
     }
   }
 }
@@ -101,8 +101,8 @@ export const clearLaunchPadPullTabExclusionRect = function clearLaunchPadPullTab
   }
   if (isAndroidResult) {
     c8 = undefined;
-    const result = importDefault(4745).setSystemGestureExclusionRects([]);
-    const obj2 = importDefault(4745);
+    const result = importDefault(4807).setSystemGestureExclusionRects([]);
+    const obj2 = importDefault(4807);
   }
 };
 export { setLaunchPadPullTabExclusionRect };

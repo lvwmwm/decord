@@ -1,10 +1,10 @@
-// Module ID: 16743
-// Function ID: 16744
+// Module ID: 16809
+// Function ID: 16810
 // Name: AgeUpdateFooter
-// Dependencies: [19, 21, 4193, 4189, 1236, 2487, 6750, 6752, 2]
+// Dependencies: [19, 21, 4255, 4251, 1236, 2517, 7708, 7710, 2]
 // Exports: default
 
-// Module 16743 (AgeUpdateFooter)
+// Module 16809 (AgeUpdateFooter)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -18,16 +18,16 @@ export default function AgeUpdateFooter() {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = {
     handleAgeVerifyHook() {
-      let obj = callback2(6750);
-      obj = { entryPoint: callback(6752).AgeVerificationModalEntryPoint.PARENTAL_CONSENT_LOCKOUT };
+      let obj = callback2(7708);
+      obj = { entryPoint: callback(7710).AgeVerificationModalEntryPoint.PARENTAL_CONSENT_LOCKOUT };
       return obj.showAgeVerificationGetStartedModal(obj);
     }
   };
-  obj[3] = intl.format(importDefault(2487).ifObbX, obj);
-  return jsx(require(4189) /* Text */.Text, {
+  obj[3] = intl.format(importDefault(2517).ifObbX, obj);
+  return jsx(require(4251) /* Text */.Text, {
     handleAgeVerifyHook() {
-      let obj = callback2(6750);
-      obj = { entryPoint: callback(6752).AgeVerificationModalEntryPoint.PARENTAL_CONSENT_LOCKOUT };
+      let obj = callback2(7708);
+      obj = { entryPoint: callback(7710).AgeVerificationModalEntryPoint.PARENTAL_CONSENT_LOCKOUT };
       return obj.showAgeVerificationGetStartedModal(obj);
     }
   });

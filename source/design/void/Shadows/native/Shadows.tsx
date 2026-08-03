@@ -1,10 +1,10 @@
-// Module ID: 13186
-// Function ID: 13187
+// Module ID: 13249
+// Function ID: 13250
 // Name: generateBoxShadowStyle
 // Dependencies: [500, 2]
 // Exports: generateBoxShadowStyle
 
-// Module 13186 (generateBoxShadowStyle)
+// Module 13249 (generateBoxShadowStyle)
 const result = require("set").fileFinishedImporting("design/void/Shadows/native/Shadows.tsx");
 
 export const generateBoxShadowStyle = (arg0) => {

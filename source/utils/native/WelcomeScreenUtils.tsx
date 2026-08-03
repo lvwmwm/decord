@@ -1,10 +1,10 @@
-// Module ID: 11761
-// Function ID: 11762
+// Module ID: 11863
+// Function ID: 11864
 // Name: useShowWelcomeModal
-// Dependencies: [19, 11762, 1932, 1862, 4021, 11763, 589, 11764, 4161, 11765, 1959, 2]
+// Dependencies: [19, 11864, 1932, 1862, 4083, 11865, 589, 11866, 4223, 11867, 1959, 2]
 // Exports: openWelcomeActionSheet, useShowWelcomeModal
 
-// Module 11761 (useShowWelcomeModal)
+// Module 11863 (useShowWelcomeModal)
 import noop from "noop";
 import handleInviteData from "handleInviteData";
 import { NO_WELCOME_SCREEN } from "handleInviteData";
@@ -77,6 +77,6 @@ export const useShowWelcomeModal = function useShowWelcomeModal(guildId, channel
 };
 export const openWelcomeActionSheet = function openWelcomeActionSheet(onHide) {
   const guildId = onHide.guildId;
-  const obj = importDefault(4161);
-  obj.openLazy(require(1959) /* asyncRequireImpl */(11765, dependencyMap.paths), "GuildWelcomeActionSheet" + guildId, { guildId, onHide: onHide.onHide });
+  const obj = importDefault(4223);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(11867, dependencyMap.paths), "GuildWelcomeActionSheet" + guildId, { guildId, onHide: onHide.onHide });
 };

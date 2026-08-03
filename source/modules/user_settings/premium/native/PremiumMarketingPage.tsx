@@ -1,13 +1,13 @@
-// Module ID: 12514
-// Function ID: 12515
+// Module ID: 12607
+// Function ID: 12608
 // Name: PremiumMarketingPage
-// Dependencies: [32, 19, 17, 676, 1369, 1876, 21, 4193, 712, 5034, 12460, 12461, 1480, 5519, 6563, 1581, 12515, 4054, 6566, 6570, 4009, 1358, 1360, 12516, 1236, 6687, 3839, 5851, 12517, 9239, 698, 12522, 4189, 12524, 6688, 9333, 12525, 12526, 12543, 12546, 2]
+// Dependencies: [32, 19, 17, 676, 1369, 1876, 21, 4255, 712, 5096, 12557, 12558, 1480, 5581, 7549, 1581, 12608, 4116, 7552, 7556, 4071, 1358, 1360, 12609, 1236, 7662, 3901, 6757, 12610, 9412, 698, 12615, 4251, 12617, 7663, 8192, 12618, 12619, 12636, 12639, 2]
 // Exports: default
 
-// Module 12514 (PremiumMarketingPage)
+// Module 12607 (PremiumMarketingPage)
 import Text from "Text";
 import MarketingComponentType from "MarketingComponentType";
-import get_ActivityIndicator from "module_4054";
+import get_ActivityIndicator from "module_4116";
 import { AnalyticEvents } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";
 import { FractionalPremiumStates } from "GuildFeatures";

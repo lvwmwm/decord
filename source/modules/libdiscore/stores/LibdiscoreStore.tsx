@@ -114,14 +114,14 @@ class KKVDatabase {
 }
 const prototype3 = KKVDatabase.prototype;
 prototype3["addSecondaryKVIndex"] = function addSecondaryKVIndex(id) {
-  if (typeof KKVDatabase !== "fileFinishedImporting") {
+  if (typeof KKVDatabase !== "error") {
     HermesBuiltin.throwTypeError();
   }
   let obj = Object.create(KKVDatabase.prototype);
   obj[0] = [];
   obj.nextVersion = this.nextVersion;
   obj.state = obj.emptyState();
-  if (typeof SecondaryIndexMetadata !== "fileFinishedImporting") {
+  if (typeof SecondaryIndexMetadata !== "error") {
     HermesBuiltin.throwTypeError();
   }
   obj = Object.create(SecondaryIndexMetadata.prototype);
@@ -135,14 +135,14 @@ prototype3["addSecondaryKVIndex"] = function addSecondaryKVIndex(id) {
   return obj.intoKV();
 };
 prototype3["addSecondaryKKVIndex"] = function addSecondaryKKVIndex(k1key, k2key, shouldIndex) {
-  if (typeof KKVDatabase !== "fileFinishedImporting") {
+  if (typeof KKVDatabase !== "error") {
     HermesBuiltin.throwTypeError();
   }
   let obj = Object.create(KKVDatabase.prototype);
   obj[0] = [];
   obj.nextVersion = this.nextVersion;
   obj.state = obj.emptyState();
-  if (typeof SecondaryIndexMetadata !== "fileFinishedImporting") {
+  if (typeof SecondaryIndexMetadata !== "error") {
     HermesBuiltin.throwTypeError();
   }
   obj = Object.create(SecondaryIndexMetadata.prototype);
@@ -160,7 +160,7 @@ prototype3["intoKV"] = function intoKV(arg0) {
   if (arg0 == null) {
     str = "0";
   }
-  if (typeof KVDatabase !== "fileFinishedImporting") {
+  if (typeof KVDatabase !== "error") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(KVDatabase.prototype);
@@ -734,7 +734,7 @@ prototype4["setupDualReadValidation"] = function setupDualReadValidation() {
 prototype4["addKKVDatabase"] = function addKKVDatabase(guildStickers, createGuildRoleRecordFromRust) {
   const self = this;
   const nextVersion = this.nextVersion;
-  if (typeof KKVDatabase !== "fileFinishedImporting") {
+  if (typeof KKVDatabase !== "error") {
     HermesBuiltin.throwTypeError();
   }
   let tmp3 = createGuildRoleRecordFromRust;
@@ -751,7 +751,7 @@ prototype4["addKKVDatabase"] = function addKKVDatabase(guildStickers, createGuil
   const result = recordCreators.set(guildStickers, tmp4);
   if (null != self.shadowDatabases) {
     const nextVersion2 = self.nextVersion;
-    if (typeof tmp !== "fileFinishedImporting") {
+    if (typeof tmp !== "error") {
       HermesBuiltin.throwTypeError();
     }
     obj = Object.create(tmp.prototype);
@@ -771,7 +771,7 @@ prototype4["addKKVDatabase"] = function addKKVDatabase(guildStickers, createGuil
 prototype4["addKVDatabase"] = function addKVDatabase(guilds, createGuildRecordFromRust) {
   const self = this;
   const nextVersion = this.nextVersion;
-  if (typeof KKVDatabase !== "fileFinishedImporting") {
+  if (typeof KKVDatabase !== "error") {
     HermesBuiltin.throwTypeError();
   }
   let tmp3 = createGuildRecordFromRust;
@@ -789,7 +789,7 @@ prototype4["addKVDatabase"] = function addKVDatabase(guilds, createGuildRecordFr
   const result = recordCreators.set(guilds, tmp5);
   if (null != self.shadowDatabases) {
     const nextVersion2 = self.nextVersion;
-    if (typeof tmp !== "fileFinishedImporting") {
+    if (typeof tmp !== "error") {
       HermesBuiltin.throwTypeError();
     }
     obj = Object.create(tmp.prototype);

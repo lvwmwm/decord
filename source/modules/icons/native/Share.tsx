@@ -1,8 +1,8 @@
-// Module ID: 10950
-// Function ID: 10951
-// Dependencies: [500, 10951, 10952, 2]
+// Module ID: 11072
+// Function ID: 11073
+// Dependencies: [500, 11073, 11074, 2]
 
-// Module 10950
+// Module 11072
 import set from "set";
 import set from "registerAsset";
 

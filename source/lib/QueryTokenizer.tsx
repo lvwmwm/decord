@@ -1,9 +1,9 @@
-// Module ID: 10122
-// Function ID: 10123
+// Module ID: 10261
+// Function ID: 10262
 // Name: getMatch
 // Dependencies: [2]
 
-// Module 10122 (getMatch)
+// Module 10261 (getMatch)
 function getMatch(str, arg1, index) {
   let tmp3;
   if (null == arg1) {
@@ -42,7 +42,7 @@ function getMatch(str, arg1, index) {
               let type = obj.type;
               let tmp33 = new.target;
               let tmp32 = Token;
-              if (typeof Token !== "fileFinishedImporting") {
+              if (typeof Token !== "error") {
                 let str2 = "Trying to call a non-function";
                 let throwTypeErrorResult = HermesBuiltin.throwTypeError();
               }
@@ -99,7 +99,7 @@ function getMatch(str, arg1, index) {
         }
         num10 = num10 + 1;
       }
-      if (typeof Token !== "fileFinishedImporting") {
+      if (typeof Token !== "error") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(Token.prototype);
@@ -246,7 +246,7 @@ prototype["tokenize"] = function tokenize(errorcode) {
       _data = items1;
     }
     _data = self._nonTokenType;
-    if (typeof Token !== "fileFinishedImporting") {
+    if (typeof Token !== "error") {
       HermesBuiltin.throwTypeError();
     }
     arr = Object.create(tmp32.prototype);
@@ -291,7 +291,7 @@ prototype["tokenize"] = function tokenize(errorcode) {
       _data1 = items4;
     }
     _data2 = self._nonTokenType;
-    if (typeof Token !== "fileFinishedImporting") {
+    if (typeof Token !== "error") {
       HermesBuiltin.throwTypeError();
     }
     let obj = Object.create(tmp36.prototype);

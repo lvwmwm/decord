@@ -1,9 +1,9 @@
-// Module ID: 10305
-// Function ID: 10306
+// Module ID: 10444
+// Function ID: 10445
 // Name: render
-// Dependencies: [19, 17, 676, 10298, 21, 4193, 500, 712, 3905, 1297, 2]
+// Dependencies: [19, 17, 676, 10437, 21, 4255, 500, 712, 3967, 1297, 2]
 
-// Module 10305 (render)
+// Module 10444 (render)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { EMOJI_CHAT_SIZE } from "ME";

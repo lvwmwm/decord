@@ -1,9 +1,9 @@
-// Module ID: 10713
-// Function ID: 10714
+// Module ID: 10821
+// Function ID: 10822
 // Name: set
 // Dependencies: [676, 595, 589, 709, 2]
 
-// Module 10713 (set)
+// Module 10821 (set)
 import { StorageKeys } from "ME";
 import { Store } from "initialize";
 import set from "initialize";

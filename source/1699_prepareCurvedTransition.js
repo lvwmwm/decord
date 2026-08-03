@@ -45,7 +45,7 @@ arg5.prepareCurvedTransition = function prepareCurvedTransition(cloneNode, durat
   };
   animationCancelCallback = function animationCancelCallback() {
     let length;
-    if (typeof onFinalize !== "fileFinishedImporting") {
+    if (typeof onFinalize !== "error") {
       HermesBuiltin.throwTypeError();
     }
     if (cloneNode.contains(dummy)) {
@@ -65,7 +65,7 @@ arg5.prepareCurvedTransition = function prepareCurvedTransition(cloneNode, durat
   };
   animationEndCallback = function animationEndCallback() {
     let length;
-    if (typeof onFinalize !== "fileFinishedImporting") {
+    if (typeof onFinalize !== "error") {
       HermesBuiltin.throwTypeError();
     }
     if (cloneNode.contains(dummy)) {

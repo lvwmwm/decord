@@ -1,10 +1,10 @@
-// Module ID: 5869
-// Function ID: 5870
+// Module ID: 5788
+// Function ID: 5789
 // Name: isCurrentUserTeen
 // Dependencies: [1874, 2]
 // Exports: isCurrentUserTeen
 
-// Module 5869 (isCurrentUserTeen)
+// Module 5788 (isCurrentUserTeen)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const result = require("set").fileFinishedImporting("modules/self_mod/SelfModUtils.tsx");

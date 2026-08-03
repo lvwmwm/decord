@@ -1,10 +1,10 @@
-// Module ID: 5143
-// Function ID: 5144
+// Module ID: 5205
+// Function ID: 5206
 // Name: _getBackgroundGradientColor
-// Dependencies: [32, 5, 19, 17, 4185, 5142, 1372, 1862, 1931, 5119, 5120, 5116, 676, 21, 1222, 4193, 5144, 712, 1471, 4037, 5145, 4615, 691, 589, 1581, 1480, 4054, 5124, 5126, 1416, 1849, 698, 4388, 4194, 5147, 5181, 5183, 1351, 5510, 4189, 1236, 2]
+// Dependencies: [32, 5, 19, 17, 4247, 5204, 1372, 1862, 1931, 5181, 5182, 5178, 676, 21, 1222, 4255, 5206, 712, 1471, 4099, 5207, 4677, 691, 589, 1581, 1480, 4116, 5186, 5188, 1416, 1849, 698, 4450, 4256, 5209, 5243, 5245, 1351, 5572, 4251, 1236, 2]
 // Exports: default
 
-// Module 5143 (_getBackgroundGradientColor)
+// Module 5205 (_getBackgroundGradientColor)
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata";
 import get from "get";
 import hexToRgba from "hexToRgba";
@@ -117,12 +117,12 @@ function BackgroundImageGradient(uri) {
   const tmp = createCacheKey();
   let obj = { children: null };
   const items = [tmp.backgroundImage];
-  const items1 = [callback2(importDefault(5145), { source: { uri: uri.splashUrl }, style: items, resizeMode: "cover" }), ];
+  const items1 = [callback2(importDefault(5207), { source: { uri: uri.splashUrl }, style: items, resizeMode: "cover" }), ];
   obj = { style: tmp.backgroundColorGradient, start: null, end: null, colors: null };
   obj[1] = require(691) /* keys */.VerticalGradient.START;
   obj[2] = require(691) /* keys */.VerticalGradient.END;
-  const tmp2 = importDefault(4615);
-  const items2 = [require(4037) /* hexToRgba */.hexWithOpacity(color, 0.16), color];
+  const tmp2 = importDefault(4677);
+  const items2 = [require(4099) /* hexToRgba */.hexWithOpacity(color, 0.16), color];
   obj[3] = items2;
   items1[1] = callback2(tmp2, obj);
   obj[0] = items1;

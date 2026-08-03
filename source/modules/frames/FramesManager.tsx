@@ -1,9 +1,9 @@
-// Module ID: 10634
-// Function ID: 10635
+// Module ID: 10670
+// Function ID: 10671
 // Name: prototype
-// Dependencies: [5690, 676, 5138, 10626, 10635, 698, 2]
+// Dependencies: [10657, 676, 5200, 10671, 10677, 698, 2]
 
-// Module 10634 (prototype)
+// Module 10670 (prototype)
 import map from "map";
 import ME from "ME";
 import "initialize";
@@ -20,13 +20,13 @@ const prototype = function FramesManager() {
       applyArgumentsResult.handleRPCDisconnect(arg0);
     },
     FRAME_LAUNCH(applicationId) {
-      const result = applyArgumentsResult(10626).trackFrameSessionStart(applicationId.applicationId);
+      const result = applyArgumentsResult(10671).trackFrameSessionStart(applicationId.applicationId);
     },
     FRAME_LAUNCH_FAIL(applicationId) {
-      const result = applyArgumentsResult(10635).discardPendingFrameLaunch(applicationId.applicationId);
+      const result = applyArgumentsResult(10677).discardPendingFrameLaunch(applicationId.applicationId);
     },
     FRAME_STOP(applicationId) {
-      applyArgumentsResult(10626).trackFrameSessionEnd(applicationId.applicationId);
+      applyArgumentsResult(10671).trackFrameSessionEnd(applicationId.applicationId);
     }
   };
   applyArgumentsResult.handleRPCDisconnect = function handleRPCDisconnect(reason) {

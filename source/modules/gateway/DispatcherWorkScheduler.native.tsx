@@ -1,10 +1,10 @@
-// Module ID: 12721
-// Function ID: 12722
+// Module ID: 12784
+// Function ID: 12785
 // Name: _queueIdleCallback
-// Dependencies: [12720, 676, 12722, 709, 2]
+// Dependencies: [12783, 676, 12785, 709, 2]
 // Exports: createDispatcherWorkScheduler
 
-// Module 12721 (_queueIdleCallback)
+// Module 12784 (_queueIdleCallback)
 import DISPATCHER_STANDARD_TIMEOUT_MS from "DISPATCHER_STANDARD_TIMEOUT_MS";
 import { AppStates } from "ME";
 import { BasicWorkScheduler } from "_trackAppBackgrounded";
@@ -57,7 +57,7 @@ prototype["_clearIdleCallback"] = function _clearIdleCallback() {
 let result = require("_trackAppBackgrounded").fileFinishedImporting("modules/gateway/DispatcherWorkScheduler.native.tsx");
 
 export const createDispatcherWorkScheduler = function createDispatcherWorkScheduler() {
-  if (typeof DispatcherWorkScheduler !== "fileFinishedImporting") {
+  if (typeof DispatcherWorkScheduler !== "error") {
     HermesBuiltin.throwTypeError();
   }
   let importDefault;

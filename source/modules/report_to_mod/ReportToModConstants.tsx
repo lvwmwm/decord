@@ -1,9 +1,9 @@
-// Module ID: 6064
-// Function ID: 6065
+// Module ID: 5785
+// Function ID: 5786
 // Name: ReportToModPermissions
 // Dependencies: [676, 506, 2]
 
-// Module 6064 (ReportToModPermissions)
+// Module 5785 (ReportToModPermissions)
 import { Permissions } from "ME";
 import importAllResult from "fromString";
 

@@ -1,10 +1,10 @@
-// Module ID: 7944
-// Function ID: 7945
+// Module ID: 8062
+// Function ID: 8063
 // Name: useTrackCollectiblesItemTryOut
-// Dependencies: [19, 5803, 676, 1876, 1901, 647, 698, 5815, 2]
+// Dependencies: [19, 6898, 676, 1876, 1901, 647, 698, 6910, 2]
 // Exports: default
 
-// Module 7944 (useTrackCollectiblesItemTryOut)
+// Module 8062 (useTrackCollectiblesItemTryOut)
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import { AnalyticEvents } from "ME";
 import GuildFeatures from "GuildFeatures";

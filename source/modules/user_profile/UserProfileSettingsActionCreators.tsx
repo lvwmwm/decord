@@ -1,10 +1,10 @@
-// Module ID: 7945
-// Function ID: 7946
+// Module ID: 8063
+// Function ID: 8064
 // Name: setPendingChanges
-// Dependencies: [1942, 1874, 5899, 4353, 7946, 709, 2]
+// Dependencies: [1942, 1874, 6977, 4415, 8064, 709, 2]
 // Exports: setPendingChanges
 
-// Module 7945 (setPendingChanges)
+// Module 8063 (setPendingChanges)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
@@ -69,8 +69,8 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       if (displayNameStyles1 == null) {
         displayNameStyles1 = null;
       }
-      obj.pendingDisplayNameStyles = importDefault(4353)(tmp13, displayNameStyles1) ? undefined : displayNameStyles;
-      const tmp12 = importDefault(4353);
+      obj.pendingDisplayNameStyles = importDefault(4415)(tmp13, displayNameStyles1) ? undefined : displayNameStyles;
+      const tmp12 = importDefault(4415);
     }
     if ("pronouns" in merged) {
       let pronouns;
@@ -274,7 +274,7 @@ export const setPendingChanges = function setPendingChanges(guildId) {
           if (themeColors == null) {
             themeColors = null;
           }
-          if (importDefault(4353)(tmp36, themeColors)) {
+          if (importDefault(4415)(tmp36, themeColors)) {
             obj.pendingThemeColors = undefined;
           } else {
             obj.pendingThemeColors = merged.themeColors;
@@ -299,7 +299,7 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       }
     }
     if ("primaryGuildId" in merged) {
-      guildId = require(7946) /* guildHasTag */.getUserPrimaryGuild(currentUser.primaryGuild).guildId;
+      guildId = require(8064) /* guildHasTag */.getUserPrimaryGuild(currentUser.primaryGuild).guildId;
       if (guildId == null) {
         guildId = null;
       }
@@ -308,7 +308,7 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       } else {
         obj.pendingPrimaryGuildId = merged.primaryGuildId;
       }
-      const obj2 = require(7946) /* guildHasTag */;
+      const obj2 = require(8064) /* guildHasTag */;
     }
     if ("legacyUsernameDisabled" in merged) {
       obj.pendingLegacyUsernameDisabled = merged.legacyUsernameDisabled;

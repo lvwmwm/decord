@@ -1,10 +1,10 @@
-// Module ID: 9053
-// Function ID: 9054
+// Module ID: 9226
+// Function ID: 9227
 // Name: SelfDismissibleAlertBody
-// Dependencies: [19, 17, 4207, 21, 4193, 589, 4189, 2]
+// Dependencies: [19, 17, 4269, 21, 4255, 589, 4251, 2]
 // Exports: SelfDismissibleAlertBody
 
-// Module 9053 (SelfDismissibleAlertBody)
+// Module 9226 (SelfDismissibleAlertBody)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import set from "set";

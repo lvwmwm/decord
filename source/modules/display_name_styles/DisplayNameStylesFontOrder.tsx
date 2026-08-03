@@ -1,10 +1,10 @@
-// Module ID: 14372
-// Function ID: 14373
+// Module ID: 14439
+// Function ID: 14440
 // Name: items
-// Dependencies: [19, 1886, 1888, 8392, 2]
+// Dependencies: [19, 1886, 1888, 8697, 2]
 // Exports: useVisibleFontOrder
 
-// Module 14372 (items)
+// Module 14439 (items)
 import noop from "noop";
 
 const require = arg1;
@@ -13,7 +13,7 @@ const items1 = [...require("items3").FLYWHEEL_FONTS];
 const result = require("DisplayNameFont").fileFinishedImporting("modules/display_name_styles/DisplayNameStylesFontOrder.tsx");
 
 export const useVisibleFontOrder = function useVisibleFontOrder() {
-  isDisplayNameStylesFlywheelSettersEnabled = isDisplayNameStylesFlywheelSettersEnabled(8392).useIsDisplayNameStylesFlywheelSettersEnabled("font-order");
+  isDisplayNameStylesFlywheelSettersEnabled = isDisplayNameStylesFlywheelSettersEnabled(8697).useIsDisplayNameStylesFlywheelSettersEnabled("font-order");
   const items = [isDisplayNameStylesFlywheelSettersEnabled];
   return React.useMemo(() => isDisplayNameStylesFlywheelSettersEnabled ? outer1_4 : outer1_3, items);
 };

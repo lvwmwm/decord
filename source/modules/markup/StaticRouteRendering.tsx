@@ -1,10 +1,10 @@
-// Module ID: 4649
-// Function ID: 4650
+// Module ID: 4711
+// Function ID: 4712
 // Name: staticRouteToTranslation
 // Dependencies: [1935, 1236, 2]
 // Exports: staticRouteToItemString, staticRouteToTranslation
 
-// Module 4649 (staticRouteToTranslation)
+// Module 4711 (staticRouteToTranslation)
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 
 const require = arg1;

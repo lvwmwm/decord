@@ -1,10 +1,10 @@
-// Module ID: 10794
-// Function ID: 10795
+// Module ID: 5886
+// Function ID: 5887
 // Name: trackSoundPlayed
-// Dependencies: [4213, 1372, 4265, 1931, 4640, 676, 1876, 698, 2]
+// Dependencies: [4275, 1372, 4327, 1931, 4702, 676, 1876, 698, 2]
 // Exports: default
 
-// Module 10794 (trackSoundPlayed)
+// Module 5886 (trackSoundPlayed)
 import initialize from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";

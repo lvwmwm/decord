@@ -1,9 +1,9 @@
-// Module ID: 7490
-// Function ID: 7491
+// Module ID: 6626
+// Function ID: 6627
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7490 (metadata)
+// Module 6626 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ShieldSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/0e27ab3b47e19bf08de06978e6c664451b756e88e044dae1e24f438b0c8f4bc7.png";

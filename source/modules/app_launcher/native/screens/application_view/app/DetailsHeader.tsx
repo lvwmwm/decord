@@ -1,8 +1,8 @@
-// Module ID: 9015
-// Function ID: 9016
-// Dependencies: [32, 19, 17, 21, 4193, 712, 4054, 8019, 9016, 4724, 8129, 5182, 4189, 1236, 4194, 4197, 5169, 4615, 691, 2]
+// Module ID: 9192
+// Function ID: 9193
+// Dependencies: [32, 19, 17, 21, 4255, 712, 4116, 8137, 9193, 4786, 8460, 5244, 4251, 1236, 4256, 4259, 5231, 4677, 691, 2]
 
-// Module 9015
+// Module 9192
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "set";
 import get_ActivityIndicator from "LinearGradient";
@@ -56,7 +56,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   let isScreenLandscape;
   let c18;
   let tmp = callback();
-  let obj = sharedValue(8019);
+  let obj = sharedValue(8137);
   let obj1 = importAllResult;
   const ref = importAllResult.useRef(null);
   sharedValue = ref;
@@ -68,9 +68,9 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   importAllResult = tmp9[1];
   closure_5 = importAllResult.useRef(true);
   sharedValue = undefined;
-  let obj2 = sharedValue(4054);
+  let obj2 = sharedValue(4116);
   sharedValue = obj2.useSharedValue(null);
-  let obj3 = sharedValue(4054);
+  let obj3 = sharedValue(4116);
   let fn = function t() {
     return { height: sharedValue.get() };
   };
@@ -78,9 +78,9 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   fn.__workletHash = 23826674246;
   fn.__initData = closure_13;
   const animatedStyle = obj3.useAnimatedStyle(fn);
-  let obj4 = sharedValue(8019);
+  let obj4 = sharedValue(8137);
   const sectionName = obj4.getSectionName(application);
-  let obj5 = sharedValue(8019);
+  let obj5 = sharedValue(8137);
   str = obj5.getSectionDescription(application);
   let tmp28Result1 = null != str;
   if (tmp28Result1) {
@@ -103,14 +103,14 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   const memo = obj1.useMemo(() => {
     let result = null;
     if (null != str) {
-      result = sharedValue(9016).parseBioReactWithCachedAST(tmp);
-      const obj = sharedValue(9016);
+      result = sharedValue(9193).parseBioReactWithCachedAST(tmp);
+      const obj = sharedValue(9193);
     }
     return result;
   }, items);
   const tmp6Result1 = first1(obj1.useState(false), 2);
-  isScreenLandscape = sharedValue(4724).useIsScreenLandscape();
-  const tmp24 = first(8129)(isScreenLandscape);
+  isScreenLandscape = sharedValue(4786).useIsScreenLandscape();
+  const tmp24 = first(8460)(isScreenLandscape);
   c18 = tmp24;
   const items1 = [isScreenLandscape, tmp24];
   const effect = obj1.useEffect(() => {
@@ -121,7 +121,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     }
   }, items1);
   let tmp27 = first;
-  const tmp2Result = sharedValue(4724);
+  const tmp2Result = sharedValue(4786);
   if (first) {
     tmp27 = !first1;
   }
@@ -149,7 +149,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     obj2 = { style: null, variant: "heading-lg/bold", color: "text-default", lineClamp: 1, children: null };
     obj2[0] = tmp.nameText;
     obj2[4] = sectionName;
-    tmp30Result = tmp30(tmp2(4189).Heading, obj2);
+    tmp30Result = tmp30(tmp2(4251).Heading, obj2);
   }
   const items4 = [tmp30Result, ];
   tmp30Result = null;
@@ -159,7 +159,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     obj4 = { variant: "text-xs/medium", color: "text-default", children: null };
     const intl = tmp2(1236).intl;
     obj4[2] = intl.string(tmp2(1236).t.LO4f0P);
-    obj3[1] = tmp30(tmp2(4189).Text, obj4);
+    obj3[1] = tmp30(tmp2(4251).Text, obj4);
     tmp30Result = tmp30(tmp31, obj3);
   }
   items4[1] = tmp30Result;
@@ -177,22 +177,22 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
       if (first) {
         closure_5.current = false;
         if (first1) {
-          const obj2 = sharedValue(4194);
+          const obj2 = sharedValue(4256);
           const current = ref.current;
           const fn = function t() {
             outer1_0(outer1_2[6]).runOnJS(closure_14)(true);
           };
           let obj = { runOnJS: null, setShouldLineClamp: null };
-          obj[0] = sharedValue(4054).runOnJS;
+          obj[0] = sharedValue(4116).runOnJS;
           obj[1] = _undefined;
           fn.__closure = obj;
           fn.__workletHash = 6050776164847;
           fn.__initData = _undefined;
-          const result = sharedValue.set(obj2.withTiming(current, sharedValue(4197).timingStandard, "respect-motion-settings", fn));
+          const result = sharedValue.set(obj2.withTiming(current, sharedValue(4259).timingStandard, "respect-motion-settings", fn));
         } else {
           _undefined(false);
-          obj = sharedValue(4194);
-          const result1 = sharedValue.set(obj.withTiming(ref2.current, sharedValue(4197).timingStandard));
+          obj = sharedValue(4256);
+          const result1 = sharedValue.set(obj.withTiming(ref2.current, sharedValue(4259).timingStandard));
         }
         callback(!first1);
         const tmp2 = first1;
@@ -200,7 +200,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     };
     const obj6 = { style: null };
     const absoluteFill = str.absoluteFill;
-    let tmp23Result = tmp23(5169);
+    let tmp23Result = tmp23(5231);
     if (tmp27) {
       const obj7 = { style: null, children: null };
       obj7[0] = absoluteFill;
@@ -219,7 +219,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
       obj10[0] = tmp.maskFill;
       const items8 = [tmp30(tmp31, obj10), , ];
       const obj11 = { start: null, end: null, colors: null, style: null };
-      tmp23Result = tmp23(4615);
+      tmp23Result = tmp23(4677);
       obj11[0] = tmp2(691).HorizontalGradient.START;
       obj11[1] = tmp2(691).HorizontalGradient.END;
       obj11[2] = closure_11;
@@ -247,7 +247,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     const obj15 = { variant: "text-sm/medium", color: "text-default", lineClamp: null, children: null };
     obj15[2] = num4;
     obj15[3] = memo;
-    obj14[1] = tmp30(tmp2(4189).Text, obj15);
+    obj14[1] = tmp30(tmp2(4251).Text, obj15);
     const items10 = [tmp30(tmp23Result, obj14), , ];
     let tmp30Result2 = null;
     if (tmp27) {
@@ -262,7 +262,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
       const intl2 = tmp2(1236).intl;
       const items11 = ["\u2026 ", intl2.string(tmp2(1236).t["OBCR+p"])];
       obj17[3] = items11;
-      obj16[1] = tmp28(tmp2(4189).Text, obj17);
+      obj16[1] = tmp28(tmp2(4251).Text, obj17);
       tmp30Result2 = tmp30(tmp31, obj16);
     }
     items10[1] = tmp30Result2;
@@ -274,7 +274,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
         obj18[2] = tmp.collapseDescriptionCTA;
         const intl3 = tmp2(1236).intl;
         obj18[3] = intl3.string(tmp2(1236).t.D5xGUK);
-        tmp30Result3 = tmp30(tmp2(4189).Text, obj18);
+        tmp30Result3 = tmp30(tmp2(4251).Text, obj18);
       }
     }
     items10[2] = tmp30Result3;
@@ -285,7 +285,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
   items5[1] = tmp28Result;
   obj[2] = items5;
   obj[1] = closure_9(closure_5, obj);
-  const children = [num2(first(4054).View, obj), ];
+  const children = [num2(first(4116).View, obj), ];
   let tmp28Result2 = !first2;
   if (!first2) {
     const obj19 = { style: null, onLayout: null, children: null };
@@ -305,7 +305,7 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
     if (!hideName) {
       const obj20 = { variant: "heading-lg/bold", color: "text-default", children: null };
       obj20[2] = sectionName;
-      tmp30Result4 = tmp30(tmp2(4189).Heading, obj20);
+      tmp30Result4 = tmp30(tmp2(4251).Heading, obj20);
     }
     const items14 = [tmp30Result4, ];
     if (tmp28Result1) {
@@ -330,12 +330,12 @@ const memoResult = importAllResult.memo(function DetailsHeader(viewContainerStyl
         }
       };
       obj22[3] = memo;
-      const items15 = [tmp30(tmp2(4189).Text, obj22), ];
+      const items15 = [tmp30(tmp2(4251).Text, obj22), ];
       const obj23 = { variant: "text-sm/medium", color: "text-brand", style: null, children: null };
       obj23[2] = tmp.collapseDescriptionCTA;
       const intl4 = tmp2(1236).intl;
       obj23[3] = intl4.string(tmp2(1236).t.D5xGUK);
-      items15[1] = tmp30(tmp2(4189).Text, obj23);
+      items15[1] = tmp30(tmp2(4251).Text, obj23);
       obj21[1] = items15;
       tmp28Result1 = tmp28(tmp31, obj21);
     }

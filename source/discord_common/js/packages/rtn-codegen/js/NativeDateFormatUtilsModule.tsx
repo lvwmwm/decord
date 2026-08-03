@@ -1,9 +1,9 @@
-// Module ID: 3881
-// Function ID: 3882
+// Module ID: 3943
+// Function ID: 3944
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 3881 (enforcing)
+// Module 3943 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeDateFormatUtilsModule");

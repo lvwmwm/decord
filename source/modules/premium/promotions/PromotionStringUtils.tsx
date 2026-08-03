@@ -1,10 +1,10 @@
-// Module ID: 12451
-// Function ID: 12452
+// Module ID: 12549
+// Function ID: 12550
 // Name: useFormatStringWithCommonPremiumParams
-// Dependencies: [3844, 1876, 589, 3839, 5673, 1236, 1945, 2]
+// Dependencies: [3906, 1876, 589, 3901, 5735, 1236, 1945, 2]
 // Exports: getHelpArticleLinkProps, useFormatStringWithCommonPremiumParams
 
-// Module 12451 (useFormatStringWithCommonPremiumParams)
+// Module 12549 (useFormatStringWithCommonPremiumParams)
 import addSubscriptionPlan from "addSubscriptionPlan";
 import GuildFeatures from "GuildFeatures";
 
@@ -21,10 +21,10 @@ export const useFormatStringWithCommonPremiumParams = function useFormatStringWi
   if (-1 !== body.indexOf("{price}")) {
     if (stateFromStores) {
       try {
-        const defaultPrice = importDefault(3839).getDefaultPrice(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
-        const obj2 = importDefault(3839);
-        str = require(5673) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency);
-        const tmpResult = require(5673) /* formatSingleCurrencyPrice */;
+        const defaultPrice = importDefault(3901).getDefaultPrice(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
+        const obj2 = importDefault(3901);
+        str = require(5735) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency);
+        const tmpResult = require(5735) /* formatSingleCurrencyPrice */;
       } catch (err) {
       }
     }

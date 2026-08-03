@@ -1,16 +1,16 @@
-// Module ID: 14441
-// Function ID: 14442
+// Module ID: 14508
+// Function ID: 14509
 // Name: onImageDescriptionSettingValueChange
-// Dependencies: [1304, 7761, 3866, 14442, 10133, 1236, 2]
+// Dependencies: [1304, 7880, 3928, 14509, 10272, 1236, 2]
 // Exports: onImageDescriptionSettingValueChange
 
-// Module 14441 (onImageDescriptionSettingValueChange)
+// Module 14508 (onImageDescriptionSettingValueChange)
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import createToggle from "createToggle";
 
 const require = arg1;
 function onImageDescriptionSettingValueChange(viewImageDescriptions) {
-  let obj = require(14442) /* UserSettingsText */;
+  let obj = require(14509) /* UserSettingsText */;
   obj = { videoUploadQuality: CHANNEL_SIDEBAR_WIDTH.videoUploadQuality, viewImageDescriptions, lowQualityImageMode: CHANNEL_SIDEBAR_WIDTH.lowQualityImageMode, dataSavingMode: CHANNEL_SIDEBAR_WIDTH.dataSavingMode };
   obj.setImageDescriptions(obj);
 }
@@ -21,7 +21,7 @@ createToggle = {
   },
   parent: require("MobileSetting").MobileSetting.CHAT,
   useValue: function useImageDescriptionSettingValue() {
-    const ViewImageDescriptions = require(3866) /* explicitContentFromProto */.ViewImageDescriptions;
+    const ViewImageDescriptions = require(3928) /* explicitContentFromProto */.ViewImageDescriptions;
     return ViewImageDescriptions.useSetting();
   },
   onValueChange: onImageDescriptionSettingValueChange

@@ -1,10 +1,10 @@
-// Module ID: 11875
-// Function ID: 11876
+// Module ID: 11971
+// Function ID: 11972
 // Name: GuildDirectoryCategorySelector
-// Dependencies: [32, 19, 17, 10077, 10070, 21, 4193, 712, 1236, 3897, 689, 589, 8228, 10081, 11723, 11876, 2]
+// Dependencies: [32, 19, 17, 10219, 10212, 21, 4255, 712, 1236, 3959, 689, 589, 8535, 10223, 11826, 11972, 2]
 // Exports: default
 
-// Module 11875 (GuildDirectoryCategorySelector)
+// Module 11971 (GuildDirectoryCategorySelector)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

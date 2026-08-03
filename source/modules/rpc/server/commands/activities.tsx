@@ -1,8 +1,8 @@
-// Module ID: 13584
-// Function ID: 13585
-// Dependencies: [5, 676, 13554, 13542, 10645, 5696, 10640, 13546, 5701, 2]
+// Module ID: 13647
+// Function ID: 13648
+// Dependencies: [5, 676, 13617, 13605, 10698, 7498, 10693, 13609, 10664, 2]
 
-// Module 13584
+// Module 13647
 import getApplicationFlags from "getApplicationFlags";
 import ME from "ME";
 import createRPCCommand from "createRPCCommand";
@@ -17,9 +17,9 @@ let obj = {};
 obj = {
   scope: require("activityInstanceConnectedParticipants").activityInstanceConnectedParticipantsScope,
   handler(socket) {
-    const result = require(10645) /* recurseReplaceContentTree */.validatePostMessageTransport(socket.socket.transport);
-    const obj = require(10645) /* recurseReplaceContentTree */;
-    return require(13542) /* activityInstanceConnectedParticipants */.activityInstanceConnectedParticipants();
+    const result = require(10698) /* recurseReplaceContentTree */.validatePostMessageTransport(socket.socket.transport);
+    const obj = require(10698) /* recurseReplaceContentTree */;
+    return require(13605) /* activityInstanceConnectedParticipants */.activityInstanceConnectedParticipants();
   }
 };
 obj[RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS] = createRPCCommand.createRPCCommand(RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS, obj);

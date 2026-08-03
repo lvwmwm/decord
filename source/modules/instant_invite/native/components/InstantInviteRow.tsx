@@ -1,8 +1,8 @@
-// Module ID: 11820
-// Function ID: 11821
-// Dependencies: [19, 17, 1372, 8353, 1862, 10100, 1874, 11819, 6025, 21, 4193, 712, 589, 4384, 8354, 11821, 4721, 1297, 9465, 4032, 1236, 1416, 1856, 4189, 5224, 11822, 2]
+// Module ID: 11922
+// Function ID: 11923
+// Dependencies: [19, 17, 1372, 8658, 1862, 10242, 1874, 11921, 7104, 21, 4255, 712, 589, 4446, 8659, 11923, 4783, 1297, 9612, 4094, 1236, 1416, 1856, 4251, 5286, 11924, 2]
 
-// Module 11820
+// Module 11922
 import { View } from "Button";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import updateWithLatestInvite from "updateWithLatestInvite";

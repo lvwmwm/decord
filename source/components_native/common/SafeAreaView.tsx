@@ -1,10 +1,10 @@
-// Module ID: 5181
-// Function ID: 5182
+// Module ID: 5243
+// Function ID: 5244
 // Name: SafeAreaPaddingView
-// Dependencies: [19, 17, 21, 1581, 5182, 659, 2]
+// Dependencies: [19, 17, 21, 1581, 5244, 659, 2]
 // Exports: SafeAreaPaddingView
 
-// Module 5181 (SafeAreaPaddingView)
+// Module 5243 (SafeAreaPaddingView)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

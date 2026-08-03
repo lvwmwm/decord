@@ -1,20 +1,20 @@
-// Module ID: 9687
-// Function ID: 9688
+// Module ID: 9832
+// Function ID: 9833
 // Name: hideMediaKeyboardActionSheet
-// Dependencies: [17, 4161, 9688, 1959, 2]
+// Dependencies: [17, 4223, 9833, 1959, 2]
 // Exports: hideMediaKeyboardActionSheet, presentLimitedLibraryPicker, showMediaKeyboardActionSheet
 
-// Module 9687 (hideMediaKeyboardActionSheet)
+// Module 9832 (hideMediaKeyboardActionSheet)
 import { NativeModules } from "get ActivityIndicator";
 
 const MEDIA_KEYBOARD_ACTION_SHEET = "MEDIA_KEYBOARD_ACTION_SHEET";
 let result = require("MediaKeyboardActionSheet").fileFinishedImporting("modules/media_keyboard/native/showMediaKeyboardActionSheet.tsx");
 
 export const hideMediaKeyboardActionSheet = function hideMediaKeyboardActionSheet() {
-  importDefault(4161).hideActionSheet(MEDIA_KEYBOARD_ACTION_SHEET);
+  importDefault(4223).hideActionSheet(MEDIA_KEYBOARD_ACTION_SHEET);
 };
 export const showMediaKeyboardActionSheet = function showMediaKeyboardActionSheet(arg0) {
-  importDefault(4161).openLazy(require(1959) /* asyncRequireImpl */(9688, dependencyMap.paths), MEDIA_KEYBOARD_ACTION_SHEET, arg0);
+  importDefault(4223).openLazy(require(1959) /* asyncRequireImpl */(9833, dependencyMap.paths), MEDIA_KEYBOARD_ACTION_SHEET, arg0);
 };
 export const presentLimitedLibraryPicker = function presentLimitedLibraryPicker() {
   const NativePermissionManager = NativeModules.NativePermissionManager;

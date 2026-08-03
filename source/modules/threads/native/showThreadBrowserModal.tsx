@@ -1,19 +1,19 @@
-// Module ID: 10136
-// Function ID: 10137
+// Module ID: 10275
+// Function ID: 10276
 // Name: showThreadBrowserModal
-// Dependencies: [9107, 6096, 4045, 2]
+// Dependencies: [9280, 7148, 4107, 2]
 // Exports: default
 
-// Module 10136 (showThreadBrowserModal)
+// Module 10275 (showThreadBrowserModal)
 import { ChannelDetailsNavigatorScreens as closure_2 } from "ChannelDetailsNavigatorScreens";
 
 let result = require("getRootNavigationRef").fileFinishedImporting("modules/threads/native/showThreadBrowserModal.tsx");
 
 export default function showThreadBrowserModal(id) {
-  let obj = require(6096) /* getAccessibilityLabelFormatter */;
+  let obj = require(7148) /* getAccessibilityLabelFormatter */;
   const result = obj.trackThreadBrowserOpened();
-  const rootNavigationRef = require(4045) /* getRootNavigationRef */.getRootNavigationRef();
-  const obj2 = require(4045) /* getRootNavigationRef */;
+  const rootNavigationRef = require(4107) /* getRootNavigationRef */.getRootNavigationRef();
+  const obj2 = require(4107) /* getRootNavigationRef */;
   if (tmp2) {
     obj = { channelId: null, initialRouteName: null };
     obj[0] = id.id;

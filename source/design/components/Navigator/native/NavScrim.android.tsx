@@ -1,9 +1,9 @@
-// Module ID: 5505
-// Function ID: 5506
+// Module ID: 5567
+// Function ID: 5568
 // Name: NavScrim
-// Dependencies: [19, 17, 21, 4193, 712, 5219, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 5281, 2]
 
-// Module 5505 (NavScrim)
+// Module 5567 (NavScrim)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -20,7 +20,7 @@ obj.top = undefined;
 obj[0] = obj;
 let closure_4 = createCacheKey.createStyles(obj);
 const memoResult = require("noop").memo(() => {
-  const insets = importDefault(5219)({ includeCustomKeyboardHeight: false }).insets;
+  const insets = importDefault(5281)({ includeCustomKeyboardHeight: false }).insets;
   let tmp2 = null;
   if (0 !== insets.bottom) {
     let obj = { style: null, pointerEvents: "none" };

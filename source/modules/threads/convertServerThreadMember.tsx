@@ -1,10 +1,10 @@
-// Module ID: 6097
-// Function ID: 6098
+// Module ID: 7149
+// Function ID: 7150
 // Name: convertServerThreadMember
 // Dependencies: [2]
 // Exports: default
 
-// Module 6097 (convertServerThreadMember)
+// Module 7149 (convertServerThreadMember)
 const result = require("set").fileFinishedImporting("modules/threads/convertServerThreadMember.tsx");
 
 export default function convertServerThreadMember(id) {

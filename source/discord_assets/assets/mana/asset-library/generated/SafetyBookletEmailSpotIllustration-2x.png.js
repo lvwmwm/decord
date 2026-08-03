@@ -1,9 +1,9 @@
-// Module ID: 7432
-// Function ID: 7433
+// Module ID: 6568
+// Function ID: 6569
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7432 (metadata)
+// Module 6568 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SafetyBookletEmailSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/67fc914edcde92ddb3635443484bf4e8d34b1166384ec1c1f2d30ab3235499af.png";

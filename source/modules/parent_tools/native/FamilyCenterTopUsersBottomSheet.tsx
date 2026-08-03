@@ -1,10 +1,10 @@
-// Module ID: 13947
-// Function ID: 13948
+// Module ID: 14014
+// Function ID: 14015
 // Name: UserRow
-// Dependencies: [19, 1874, 21, 4193, 5858, 5224, 4032, 1297, 5555, 4189, 1236, 2225, 5558, 2]
+// Dependencies: [19, 1874, 21, 4255, 6949, 5286, 4094, 1297, 5617, 4251, 1236, 2255, 5620, 2]
 // Exports: default
 
-// Module 13947 (UserRow)
+// Module 14014 (UserRow)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
@@ -19,16 +19,16 @@ function UserRow(userActivity) {
   if (null == user) {
     return null;
   } else {
-    let obj = require(5858) /* getEmptyActivityFormatter */;
+    let obj = require(6949) /* getEmptyActivityFormatter */;
     const topUserOrGuildDescription = obj.getTopUserOrGuildDescription(userActivity.dms_sent, userActivity.call_count);
     obj = { label: null, subLabel: null, icon: null };
-    obj[0] = importDefault(4032).getName(user);
+    obj[0] = importDefault(4094).getName(user);
     obj[1] = topUserOrGuildDescription;
     obj = { size: null, user: null, guildId: "Array" };
     obj[0] = require(1297) /* Button */.AvatarSizes.SMALL;
     obj[1] = user;
     obj[2] = callback(require(1297) /* Button */.Avatar, obj);
-    return callback(require(5224) /* TableRowInner */.TableRow, obj);
+    return callback(require(5286) /* TableRowInner */.TableRow, obj);
   }
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
@@ -40,11 +40,11 @@ export default function FamilyCenterTopUsersBottomSheet(topUserActivities) {
   let obj = { children: null };
   obj = { variant: "text-md/bold", style: callback3().header, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
-  obj[2] = intl.string(importDefault(2225).BxbvS7);
-  const items = [callback(require(4189) /* Text */.Text, obj), ];
+  obj[2] = intl.string(importDefault(2255).BxbvS7);
+  const items = [callback(require(4251) /* Text */.Text, obj), ];
   obj = { hasIcons: true, children: null };
   obj[1] = topUserActivities.map((userActivity) => callback(closure_7, { userActivity }, userActivity.user_id));
-  items[1] = callback(require(5558) /* TableRowGroupTitle */.TableRowGroup, obj);
+  items[1] = callback(require(5620) /* TableRowGroupTitle */.TableRowGroup, obj);
   obj[0] = items;
-  return callback2(require(5555) /* ActionSheet */.ActionSheet, obj);
+  return callback2(require(5617) /* ActionSheet */.ActionSheet, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 14730
-// Function ID: 14731
+// Module ID: 14797
+// Function ID: 14798
 // Name: SettingSearchBar
-// Dependencies: [19, 17, 13699, 21, 4193, 712, 1844, 6511, 9248, 2]
+// Dependencies: [19, 17, 13762, 21, 4255, 712, 1844, 5914, 5891, 2]
 // Exports: default
 
-// Module 14730 (SettingSearchBar)
+// Module 14797 (SettingSearchBar)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import zustandStore from "zustandStore";
@@ -25,7 +25,7 @@ export default function SettingSearchBar() {
     const result = callback(1844).dismissGlobalKeyboard();
   }, []);
   const callback1 = React.useCallback(() => {
-    const result = callback(6511).trackSettingSearchInputFocused();
+    const result = callback(5914).trackSettingSearchInputFocused();
     store.setState({ isActive: true, isFocused: true });
   }, []);
   const callback2 = React.useCallback(() => {
@@ -38,6 +38,6 @@ export default function SettingSearchBar() {
   obj = { ref: React.useRef(null), size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: null, onChange: null };
   obj[5] = field.getField("query");
   obj[6] = callback3;
-  obj[1] = jsx(require(9248) /* SearchField */.SearchField, { ref: React.useRef(null), size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: null, onChange: null });
+  obj[1] = jsx(require(5891) /* SearchField */.SearchField, { ref: React.useRef(null), size: "md", onFocus: callback1, onBlur: callback2, onClear: callback, defaultValue: null, onChange: null });
   return <View ref={React.useRef(null)} size="md" onFocus={callback1} onBlur={callback2} onClear={callback} defaultValue={null} onChange={null} />;
 };

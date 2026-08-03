@@ -1,10 +1,10 @@
-// Module ID: 8026
-// Function ID: 8027
+// Module ID: 8363
+// Function ID: 8364
 // Name: toChoiceBooleanValue
-// Dependencies: [6094, 4627, 2]
+// Dependencies: [7146, 4689, 2]
 // Exports: findAutocompleteChoiceNumberValue, findAutocompleteChoiceStringValue, findChoiceNumberValue, findChoiceStringValue, toChoiceBooleanValue
 
-// Module 8026 (toChoiceBooleanValue)
+// Module 8363 (toChoiceBooleanValue)
 import handleInit from "handleInit";
 import TRUE_OPTION_NAME from "TRUE_OPTION_NAME";
 
@@ -52,7 +52,7 @@ export const findAutocompleteChoiceStringValue = function findAutocompleteChoice
     }
   }
   let tmp2;
-  if (typeof value !== "__FORMATJS_LISTFORMAT_DATA__") {
+  if (typeof value !== "ge") {
     tmp2 = value;
   }
   return tmp2;
@@ -68,7 +68,7 @@ export const findAutocompleteChoiceNumberValue = function findAutocompleteChoice
     }
   }
   let tmp2;
-  if (typeof value !== "__REMOTEDEV__") {
+  if (typeof value !== "SENTRY_RELEASE") {
     tmp2 = value;
   }
   return tmp2;

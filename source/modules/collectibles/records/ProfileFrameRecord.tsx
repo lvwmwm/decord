@@ -1,10 +1,10 @@
-// Module ID: 5810
-// Function ID: 5811
+// Module ID: 6905
+// Function ID: 6906
 // Name: fromServer
 // Dependencies: [1900, 1901, 2]
 // Exports: isProfileFrameRecord
 
-// Module 5810 (fromServer)
+// Module 6905 (fromServer)
 import "fromServer";
 
 const require = arg1;
@@ -34,7 +34,7 @@ prototype["fromServer"] = function fromServer(arg0) {
   obj.overflowTop = overflow_top;
   obj.overflowBottom = overflow_bottom;
   obj.overflowHorizontal = overflow_horizontal;
-  if (typeof prototype !== "fileFinishedImporting") {
+  if (typeof prototype !== "error") {
     HermesBuiltin.throwTypeError();
   }
   tmp3 = new tmp3(obj, merged, obj, this);

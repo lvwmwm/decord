@@ -1,10 +1,10 @@
-// Module ID: 6773
-// Function ID: 6774
+// Module ID: 7730
+// Function ID: 7731
 // Name: useIsExpressiveModalV2Enabled
 // Dependencies: [1452, 2]
 // Exports: isExpressiveModalV2Enabled, useIsExpressiveModalV2Enabled
 
-// Module 6773 (useIsExpressiveModalV2Enabled)
+// Module 7730 (useIsExpressiveModalV2Enabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

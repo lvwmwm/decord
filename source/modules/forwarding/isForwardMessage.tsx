@@ -1,10 +1,10 @@
-// Module ID: 5887
-// Function ID: 5888
+// Module ID: 5798
+// Function ID: 5799
 // Name: isForwardMessage
 // Dependencies: [676, 2]
 // Exports: default, isForwardServerMessage
 
-// Module 5887 (isForwardMessage)
+// Module 5798 (isForwardMessage)
 import { MessageReferenceTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/forwarding/isForwardMessage.tsx");

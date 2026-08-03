@@ -1,10 +1,10 @@
-// Module ID: 6193
-// Function ID: 6194
+// Module ID: 8160
+// Function ID: 8161
 // Name: sum
 // Dependencies: [2]
 // Exports: getUploaderChannelId, getUploaderFileSizeMetrics
 
-// Module 6193 (sum)
+// Module 8160 (sum)
 function sum(arg0) {
 
 }
@@ -41,7 +41,7 @@ export const getUploaderFileSizeMetrics = function getUploaderFileSizeMetrics(it
   if (items.totalPreCompressionSize > 0) {
     let totalPreCompressionSize = items.totalPreCompressionSize;
   } else {
-    if (typeof sum !== "fileFinishedImporting") {
+    if (typeof sum !== "error") {
       HermesBuiltin.throwTypeError();
     }
     totalPreCompressionSize = mapped.reduce((arg0, arg1) => arg0 + arg1, 0);
@@ -55,7 +55,7 @@ export const getUploaderFileSizeMetrics = function getUploaderFileSizeMetrics(it
     obj[4] = items.attachmentsCount > 0 ? items.attachmentsCount : items.length;
     return obj;
   }
-  if (typeof sum !== "fileFinishedImporting") {
+  if (typeof sum !== "error") {
     HermesBuiltin.throwTypeError();
   }
   totalPostCompressionSize = mapped1.reduce((arg0, arg1) => arg0 + arg1, 0);

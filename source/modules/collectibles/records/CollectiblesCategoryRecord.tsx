@@ -1,9 +1,9 @@
-// Module ID: 5804
-// Function ID: 5805
+// Module ID: 6899
+// Function ID: 6900
 // Name: fromServer
-// Dependencies: [5805, 5812, 1901, 5814, 5815, 2]
+// Dependencies: [6900, 6907, 1901, 6909, 6910, 2]
 
-// Module 5804 (fromServer)
+// Module 6899 (fromServer)
 import fromServer from "fromServer";
 import "fromServer";
 
@@ -76,10 +76,10 @@ prototype["fromServer"] = function fromServer(arg0) {
   obj.pdpBgUrl = pdp_bg_url;
   obj.mobileBannerUrl = mobile_banner_url;
   obj.mobileBgUrl = mobile_bg_url;
-  obj.heroLogoDisplayConfig = require(5815) /* getItemRecordsFromPurchases */.getAssetDisplayConfig(hero_logo_display_config);
-  const obj2 = require(5815) /* getItemRecordsFromPurchases */;
+  obj.heroLogoDisplayConfig = require(6910) /* getItemRecordsFromPurchases */.getAssetDisplayConfig(hero_logo_display_config);
+  const obj2 = require(6910) /* getItemRecordsFromPurchases */;
   const tmp2 = prototype;
-  obj.heroBannerDisplayConfig = require(5815) /* getItemRecordsFromPurchases */.getAssetDisplayConfig(hero_banner_display_config);
+  obj.heroBannerDisplayConfig = require(6910) /* getItemRecordsFromPurchases */.getAssetDisplayConfig(hero_banner_display_config);
   return new tmp2(obj);
 };
 prototype["fromStorefrontCollectionRecord"] = function fromStorefrontCollectionRecord(id) {

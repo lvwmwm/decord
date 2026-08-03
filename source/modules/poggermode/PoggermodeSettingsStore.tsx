@@ -1,9 +1,9 @@
-// Module ID: 5967
-// Function ID: 5968
+// Module ID: 7046
+// Function ID: 7047
 // Name: initialize
-// Dependencies: [5968, 12, 589, 709, 2]
+// Dependencies: [7047, 12, 589, 709, 2]
 
-// Module 5967 (initialize)
+// Module 7046 (initialize)
 import ConfettiLocation from "ConfettiLocation";
 import apply from "apply";
 import { DeviceSettingsStore } from "initialize";

@@ -1,10 +1,10 @@
-// Module ID: 9252
-// Function ID: 9253
+// Module ID: 9424
+// Function ID: 9425
 // Name: useFastestListComputedStyles
 // Dependencies: [19, 17, 2]
 // Exports: default
 
-// Module 9252 (useFastestListComputedStyles)
+// Module 9424 (useFastestListComputedStyles)
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 
@@ -81,8 +81,8 @@ export default function useFastestListComputedStyles(style) {
     if (num2 == null) {
       num2 = 0;
     }
-    if (typeof num !== "__REMOTEDEV__") {
-      if (typeof num2 !== "__REMOTEDEV__") {
+    if (typeof num !== "SENTRY_RELEASE") {
+      if (typeof num2 !== "SENTRY_RELEASE") {
         let num3;
         if (flattenResult != null) {
           num3 = flattenResult.marginEnd;
@@ -139,8 +139,8 @@ export default function useFastestListComputedStyles(style) {
         if (num4 == null) {
           num4 = 0;
         }
-        if (typeof num3 !== "__REMOTEDEV__") {
-          if (typeof num4 !== "__REMOTEDEV__") {
+        if (typeof num3 !== "SENTRY_RELEASE") {
+          if (typeof num4 !== "SENTRY_RELEASE") {
             obj = { style: null, marginEnd: null, marginStart: null };
             obj[0] = flattenResult;
             obj[1] = num3 + num4;

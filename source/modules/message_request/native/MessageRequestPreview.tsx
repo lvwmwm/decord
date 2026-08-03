@@ -1,8 +1,8 @@
-// Module ID: 15727
-// Function ID: 15728
-// Dependencies: [19, 17, 3830, 676, 21, 4193, 5113, 712, 11702, 589, 698, 1236, 7881, 4528, 1297, 2]
+// Module ID: 15792
+// Function ID: 15793
+// Dependencies: [19, 17, 3892, 676, 21, 4255, 5175, 712, 11805, 589, 698, 1236, 7999, 4590, 1297, 2]
 
-// Module 15727
+// Module 15792
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import upsertRelationship from "upsertRelationship";
@@ -36,7 +36,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
   channel = channel.channel;
   let message;
   const tmp = callback();
-  let obj = channel(11702);
+  let obj = channel(11805);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -94,7 +94,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(7881)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(7999)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
@@ -131,7 +131,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
         }
         stringResult = stringResult1;
         flag = false;
-        tmp2Result = tmp2(4528);
+        tmp2Result = tmp2(4590);
       } else {
         const intl = tmp2(1236).intl;
         stringResult = intl.string(tmp2(1236).t["0KfDxM"]);

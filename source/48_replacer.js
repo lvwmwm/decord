@@ -80,7 +80,7 @@ arg5.default = function stringifySafe(name) {
     return "undefined";
   } else if (null === name) {
     return "null";
-  } else if (typeof name === "fileFinishedImporting") {
+  } else if (typeof name === "error") {
     try {
       return name.toString();
     } catch (err) {
@@ -101,7 +101,7 @@ arg5.default = function stringifySafe(name) {
         }
         return combined;
       } catch (err) {
-        if (typeof str.toString === "disabledUntil") {
+        if (typeof str.toString === "HAS_APPLICATION") {
           return "[\"" + typeof str + "\" failed to stringify]";
         } else {
           try {
@@ -204,7 +204,7 @@ arg5.createStringifySafeWithLimits = function createStringifySafeWithLimits(maxD
       return "undefined";
     } else if (null === name) {
       return "null";
-    } else if (typeof name === "fileFinishedImporting") {
+    } else if (typeof name === "error") {
       try {
         return name.toString();
       } catch (err) {
@@ -225,7 +225,7 @@ arg5.createStringifySafeWithLimits = function createStringifySafeWithLimits(maxD
           }
           return combined;
         } catch (err) {
-          if (typeof str.toString === "disabledUntil") {
+          if (typeof str.toString === "HAS_APPLICATION") {
             return "[\"" + typeof str + "\" failed to stringify]";
           } else {
             try {

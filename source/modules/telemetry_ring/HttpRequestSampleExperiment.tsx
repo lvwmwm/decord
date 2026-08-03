@@ -1,10 +1,10 @@
-// Module ID: 16125
-// Function ID: 16126
+// Module ID: 16189
+// Function ID: 16190
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: getHttpRequestSampleRate
 
-// Module 16125 (apexExperiment)
+// Module 16189 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

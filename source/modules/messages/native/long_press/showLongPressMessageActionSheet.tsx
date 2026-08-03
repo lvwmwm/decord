@@ -1,12 +1,12 @@
-// Module ID: 9561
-// Function ID: 9562
+// Module ID: 9708
+// Function ID: 9709
 // Name: showLongPressMessageActionSheet
-// Dependencies: [4161, 9562, 1959, 2]
+// Dependencies: [4223, 9709, 1959, 2]
 // Exports: showLongPressMessageActionSheet
 
-// Module 9561 (showLongPressMessageActionSheet)
+// Module 9708 (showLongPressMessageActionSheet)
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/messages/native/long_press/showLongPressMessageActionSheet.tsx");
 
 export const showLongPressMessageActionSheet = function showLongPressMessageActionSheet(closure_0) {
-  importDefault(4161).openLazy(require(1959) /* asyncRequireImpl */(9562, dependencyMap.paths), "MessageLongPressActionSheet", closure_0);
+  importDefault(4223).openLazy(require(1959) /* asyncRequireImpl */(9709, dependencyMap.paths), "MessageLongPressActionSheet", closure_0);
 };

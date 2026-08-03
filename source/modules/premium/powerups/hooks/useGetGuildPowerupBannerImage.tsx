@@ -1,10 +1,10 @@
-// Module ID: 11625
-// Function ID: 11626
+// Module ID: 11732
+// Function ID: 11733
 // Name: useGetGuildPowerupBannerImage
-// Dependencies: [4185, 589, 2]
+// Dependencies: [4247, 589, 2]
 // Exports: default, getGuildPowerupBannerImage
 
-// Module 11625 (useGetGuildPowerupBannerImage)
+// Module 11732 (useGetGuildPowerupBannerImage)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 
 const require = arg1;

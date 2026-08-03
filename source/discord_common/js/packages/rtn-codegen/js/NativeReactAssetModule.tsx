@@ -1,9 +1,9 @@
-// Module ID: 16764
-// Function ID: 16765
+// Module ID: 16830
+// Function ID: 16831
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 16764 (enforcing)
+// Module 16830 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeReactAssetModule");

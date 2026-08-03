@@ -1,10 +1,10 @@
-// Module ID: 9427
-// Function ID: 9428
+// Module ID: 9574
+// Function ID: 9575
 // Name: useEmojiAndSource
-// Dependencies: [5, 32, 19, 1862, 5052, 5571, 676, 3837, 647, 2]
+// Dependencies: [5, 32, 19, 1862, 5114, 5633, 676, 3899, 647, 2]
 // Exports: useEmojiAndSource
 
-// Module 9427 (useEmojiAndSource)
+// Module 9574 (useEmojiAndSource)
 import closure_2 from "getEmojiSourceData";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

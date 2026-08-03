@@ -1,8 +1,8 @@
-// Module ID: 11098
-// Function ID: 11099
-// Dependencies: [5, 6759, 6751, 21, 709, 4161, 11099, 1959, 4399, 7623, 6752, 11092, 2]
+// Module ID: 11214
+// Function ID: 11215
+// Dependencies: [5, 7716, 7709, 21, 709, 4223, 11215, 1959, 4461, 7749, 7710, 11208, 2]
 
-// Module 11098
+// Module 11214
 import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
 import SafetyHubView from "SafetyHubView";
 import { AGE_VERIFICATION_GET_STARTED_MODAL_KEY as closure_6 } from "set";
@@ -17,7 +17,7 @@ let obj = {
     let obj = importDefault(709);
     obj.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     obj = { classificationId, onClose };
-    importDefault(4161).openLazy(require(1959) /* asyncRequireImpl */(11099, dependencyMap.paths), closure_4, obj);
+    importDefault(4223).openLazy(require(1959) /* asyncRequireImpl */(11215, dependencyMap.paths), closure_4, obj);
   },
   openV2(arg0, onClose) {
     let closure_0 = arg0;
@@ -25,7 +25,7 @@ let obj = {
     let obj = importDefault(709);
     obj.dispatch({ type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN" });
     obj = { onClose };
-    importDefault(4399).pushLazy(callback(function*() {
+    importDefault(4461).pushLazy(callback(function*() {
       if (paths === 2) {
         paths = 3;
         HermesBuiltin.throwTypeError();

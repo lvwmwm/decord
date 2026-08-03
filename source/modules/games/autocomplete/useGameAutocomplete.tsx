@@ -1,10 +1,10 @@
-// Module ID: 6173
-// Function ID: 6174
+// Module ID: 7225
+// Function ID: 7226
 // Name: fetchStore
-// Dependencies: [32, 19, 6164, 676, 589, 6165, 6174, 2]
+// Dependencies: [32, 19, 7216, 676, 589, 7217, 7226, 2]
 // Exports: useDebouncedGameAutocomplete
 
-// Module 6173 (fetchStore)
+// Module 7225 (fetchStore)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import importDefaultResult from "set";
@@ -15,7 +15,7 @@ let require = arg1;
 let c4 = importDefaultResult;
 initialize = {
   getQueryId(c0) {
-    return QueryIds.GAME_AUTOCOMPLETE(require(6165) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */.normalizeGameAutocompleteQuery(c0));
+    return QueryIds.GAME_AUTOCOMPLETE(require(7217) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */.normalizeGameAutocompleteQuery(c0));
   },
   get(arg0) {
     let results = importDefaultResult.getResults(arg0);
@@ -25,7 +25,7 @@ initialize = {
     return results;
   },
   load(arg0) {
-    return require(6174) /* _fetchGameAutocomplete */.fetchGameAutocomplete(arg0);
+    return require(7226) /* _fetchGameAutocomplete */.fetchGameAutocomplete(arg0);
   },
   getIsLoading(arg0) {
     return importDefaultResult.isFetching(arg0);
@@ -65,7 +65,7 @@ export const useDebouncedGameAutocomplete = function useDebouncedGameAutocomplet
   let tmp3;
   let tmp7;
   let tmp8;
-  let obj = require(6165) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */;
+  let obj = require(7217) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */;
   const result = obj.normalizeGameAutocompleteQuery(c0);
   require = result;
   let dependencyMap;

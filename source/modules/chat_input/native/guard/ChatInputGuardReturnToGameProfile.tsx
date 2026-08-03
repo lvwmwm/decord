@@ -1,8 +1,8 @@
-// Module ID: 11559
-// Function ID: 11560
-// Dependencies: [19, 17, 21, 4193, 712, 11553, 1416, 1236, 10032, 2]
+// Module ID: 11666
+// Function ID: 11667
+// Dependencies: [19, 17, 21, 4255, 712, 11660, 1416, 1236, 10174, 2]
 
-// Module 11559
+// Module 11666
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -32,9 +32,9 @@ const memoResult = require("noop").memo(function ChatInputGuardReturnToGameProfi
   obj[3] = intl2.string(require(1236) /* getSystemLocale */.t.DjifDP);
   obj1 = { color: null };
   obj1[0] = tmp3(712).colors.WHITE;
-  obj[4] = jsx(require(10032) /* ArrowSmallLeftIcon */.ArrowSmallLeftIcon, { color: null });
+  obj[4] = jsx(require(10174) /* ArrowSmallLeftIcon */.ArrowSmallLeftIcon, { color: null });
   obj[5] = pendingGameProfileReturn.pendingGameProfileReturn.onReturnToGameProfile;
-  return jsx(importDefault(11553), { gameName: pendingGameProfileReturn.gameName });
+  return jsx(importDefault(11660), { gameName: pendingGameProfileReturn.gameName });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardReturnToGameProfile.tsx");
 

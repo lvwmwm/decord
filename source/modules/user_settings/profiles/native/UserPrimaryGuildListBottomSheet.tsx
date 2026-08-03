@@ -1,10 +1,10 @@
-// Module ID: 13755
-// Function ID: 13756
+// Module ID: 13822
+// Function ID: 13823
 // Name: UserPrimaryGuildListBottomSheet
-// Dependencies: [19, 17, 7729, 21, 4193, 500, 712, 7946, 5224, 4161, 1236, 5570, 8462, 7661, 12, 5247, 4189, 6679, 7639, 2]
+// Dependencies: [19, 17, 7850, 21, 4255, 500, 712, 8064, 5286, 4223, 1236, 5632, 8763, 7784, 12, 5309, 4251, 7654, 7765, 2]
 // Exports: default
 
-// Module 13755 (UserPrimaryGuildListBottomSheet)
+// Module 13822 (UserPrimaryGuildListBottomSheet)
 import importAllResult from "set";
 import { View } from "noop";
 import { GuildTagBadgeSize } from "items";
@@ -128,9 +128,9 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
   obj = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
   const intl = availableGuilds(1236).intl;
   obj[3] = intl.string(availableGuilds(1236).t.Fo0g9x);
-  obj[1] = callback(availableGuilds(4189).Text, obj);
+  obj[1] = callback(availableGuilds(4251).Text, obj);
   obj[2] = callback(memo, obj);
-  obj[3] = callback(availableGuilds(6679).BottomSheetFlashList, {
+  obj[3] = callback(availableGuilds(7654).BottomSheetFlashList, {
     ItemSeparatorComponent() {
       return outer1_6(availableGuilds(outer1_2[18]).FormDivider, { iconPush: true, style: _undefined.divider });
     },
@@ -161,5 +161,5 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
       return outer1_6(outer1_9, obj);
     }
   });
-  return callback(availableGuilds(5247).BottomSheet, obj);
+  return callback(availableGuilds(5309).BottomSheet, obj);
 };

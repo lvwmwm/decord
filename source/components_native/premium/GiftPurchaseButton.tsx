@@ -1,10 +1,10 @@
-// Module ID: 12619
-// Function ID: 12620
+// Module ID: 12712
+// Function ID: 12713
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 3845, 5676, 21, 4609, 4189, 589, 5679, 6335, 5519, 9717, 4533, 1236, 3839, 9713, 4605, 12620, 2]
+// Dependencies: [5, 19, 17, 3907, 5738, 21, 4671, 4251, 589, 5741, 7330, 5581, 9862, 4595, 1236, 3901, 9858, 4667, 12713, 2]
 // Exports: default
 
-// Module 12619 (GiftPurchaseButton)
+// Module 12712 (GiftPurchaseButton)
 import jsxProd from "jsxProd";
 import set from "set";
 import { View } from "CollapsingText";
@@ -101,7 +101,7 @@ export default function GiftPurchaseButton(style) {
           }
         } else if (1 === tmp7) {
           premiumType = 0;
-          obj1 = outer1_1(4533);
+          obj1 = outer1_1(4595);
           const obj3 = { title: null, body: null };
           const intl = outer1_0(1236).intl;
           obj3[0] = intl.string(outer1_0(1236).t.R0RpRX);
@@ -124,10 +124,10 @@ export default function GiftPurchaseButton(style) {
         } else {
           closure_0 = arg1;
           premiumType = 0;
-          premiumTypeFromPlanId = outer1_0(3839).getPremiumTypeFromPlanId(closure_0);
+          premiumTypeFromPlanId = outer1_0(3901).getPremiumTypeFromPlanId(closure_0);
           premiumType = premiumTypeFromPlanId.premiumType;
           planInterval = premiumTypeFromPlanId.planInterval;
-          const obj9 = outer1_0(3839);
+          const obj9 = outer1_0(3901);
           const obj5 = { recipientUserId: null, premiumType: null, planInterval: null, analyticsLocation: null, analyticsLocations: null, order: null };
           obj5[0] = premiumType;
           obj5[1] = premiumType;
@@ -135,7 +135,7 @@ export default function GiftPurchaseButton(style) {
           obj5[3] = premiumTypeFromPlanId;
           obj5[4] = c4;
           obj5[5] = closure_0;
-          outer1_0(9713).openGiftModal(obj5);
+          outer1_0(9858).openGiftModal(obj5);
           c4 = 3;
           return { value: "HermesInternal", done: null };
         }

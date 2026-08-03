@@ -1,14 +1,14 @@
-// Module ID: 11852
-// Function ID: 11853
+// Module ID: 11948
+// Function ID: 11949
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 11835, 676, 21, 4193, 712, 1480, 5219, 11848, 4092, 11843, 1297, 1236, 4189, 9004, 4604, 2]
+// Dependencies: [5, 32, 19, 17, 11931, 676, 21, 4255, 712, 1480, 5281, 11944, 4154, 11939, 1297, 1236, 4251, 9181, 4666, 2]
 // Exports: default
 
-// Module 11852 (HubEmailConnectionSubmitSchool)
+// Module 11948 (HubEmailConnectionSubmitSchool)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
-import get_ActivityIndicator from "module_9004";
+import get_ActivityIndicator from "module_9181";
 import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -151,7 +151,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
   obj = { ref, contentContainerStyle: null, children: null };
   const items = [tmp.scrollViewContainer, ];
   obj = { paddingBottom: null };
-  obj[0] = importDefault(5219)().insets.bottom + importDefault(712).space.PX_16;
+  obj[0] = importDefault(5281)().insets.bottom + importDefault(712).space.PX_16;
   items[1] = obj;
   obj[1] = items;
   let obj1 = { style: tmp.container, children: null };
@@ -162,7 +162,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
   const obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj3[3] = intl2.string(require(1236) /* getSystemLocale */.t["/4y6ox"]);
-  items1[1] = callback2(require(4189) /* Text */.Text, obj3);
+  items1[1] = callback2(require(4251) /* Text */.Text, obj3);
   const obj4 = { label: null, placeholder: null, value: null, onChangeText: null, style: null, textStyle: null, clearButtonVisibility: null, error: null, onFocus: null, onBlur: null };
   const tmp11 = _submitWaitlist;
   const tmp5 = callback(ref.useState(null), 2);
@@ -196,7 +196,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
       }
     }, 100);
   };
-  items1[2] = callback2(importDefault(9004), obj4);
+  items1[2] = callback2(importDefault(9181), obj4);
   obj1[1] = items1;
   const items2 = [closure_10(first, obj1), callback2(first, { style: tmp.redesignGrowSpacing }), ];
   const obj7 = { style: tmp.redesignSubmit, children: null };
@@ -213,9 +213,9 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
     }
     return applyArgumentsResult;
   };
-  obj7[1] = callback2(require(4604) /* Button */.Button, obj8);
+  obj7[1] = callback2(require(4666) /* Button */.Button, obj8);
   items2[2] = callback2(first, obj7);
   obj[2] = items2;
   obj5[0] = closure_10(tmp11, obj);
-  return callback2(require(11843) /* HubEmailConnectionModal */.HubEmailConnectionScreen, obj5);
+  return callback2(require(11939) /* HubEmailConnectionModal */.HubEmailConnectionScreen, obj5);
 };

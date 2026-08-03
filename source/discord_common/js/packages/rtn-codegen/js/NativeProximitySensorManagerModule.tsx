@@ -1,9 +1,9 @@
-// Module ID: 16327
-// Function ID: 16328
+// Module ID: 16393
+// Function ID: 16394
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 16327 (enforcing)
+// Module 16393 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeProximitySensorManagerModule");

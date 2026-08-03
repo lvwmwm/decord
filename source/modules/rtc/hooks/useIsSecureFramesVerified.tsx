@@ -1,10 +1,10 @@
-// Module ID: 8882
-// Function ID: 8883
+// Module ID: 9059
+// Function ID: 9060
 // Name: useIsUserSecureFramesVerified
-// Dependencies: [1218, 4265, 8883, 8920, 589, 8923, 4257, 2]
+// Dependencies: [1218, 4327, 9060, 9097, 589, 9100, 4319, 2]
 // Exports: useIsCallSecureFramesVerified, useIsStreamSecureFramesVerified, useIsUserSecureFramesVerified
 
-// Module 8882 (useIsUserSecureFramesVerified)
+// Module 9059 (useIsUserSecureFramesVerified)
 import fetchFingerprint from "fetchFingerprint";
 import createRTCConnection from "createRTCConnection";
 import computeCallVerification from "computeCallVerification";

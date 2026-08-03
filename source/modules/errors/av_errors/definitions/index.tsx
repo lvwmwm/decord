@@ -1,9 +1,9 @@
-// Module ID: 16695
-// Function ID: 16696
+// Module ID: 16761
+// Function ID: 16762
 // Name: ErrorDefinitions
-// Dependencies: [8861, 16696, 16698, 16699, 16701, 16702, 16703, 16704, 16705, 16706, 16707, 16708, 16709, 16710, 16711, 16712, 16713, 16714, 2]
+// Dependencies: [9038, 16762, 16764, 16765, 16767, 16768, 16769, 16770, 16771, 16772, 16773, 16774, 16775, 16776, 16777, 16778, 16779, 16780, 2]
 
-// Module 16695 (ErrorDefinitions)
+// Module 16761 (ErrorDefinitions)
 const obj = {};
 obj[require("mapped").AVError.NO_AUDIO_INPUT_DETECTED] = require("AVErrorNoAudioInputDetectedDefinition").AVErrorNoAudioInputDetectedDefinition;
 obj[require("mapped").AVError.NO_INPUT_DEVICES] = require("AVErrorNoInputDevicesDefinition").AVErrorNoInputDevicesDefinition;

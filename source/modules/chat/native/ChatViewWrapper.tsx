@@ -1,8 +1,8 @@
-// Module ID: 10432
-// Function ID: 10433
-// Dependencies: [10433, 10434, 10443, 2]
+// Module ID: 10570
+// Function ID: 10571
+// Dependencies: [10571, 10572, 10581, 2]
 
-// Module 10432
+// Module 10570
 import apexExperiment from "apexExperiment";
 
 if (apexExperiment.isAnimatedAndroidKeyboard()) {

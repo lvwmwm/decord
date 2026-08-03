@@ -1,10 +1,10 @@
-// Module ID: 13858
-// Function ID: 13859
+// Module ID: 13925
+// Function ID: 13926
 // Name: IgnoredUsersList
-// Dependencies: [19, 17, 3830, 21, 4193, 712, 5519, 5539, 1297, 13852, 1236, 5181, 4189, 5558, 13859, 589, 2]
+// Dependencies: [19, 17, 3892, 21, 4255, 712, 5581, 5601, 1297, 13919, 1236, 5243, 4251, 5620, 13926, 589, 2]
 // Exports: default
 
-// Module 13858 (IgnoredUsersList)
+// Module 13925 (IgnoredUsersList)
 import "noop";
 import { ScrollView } from "get ActivityIndicator";
 import upsertRelationship from "upsertRelationship";
@@ -17,10 +17,10 @@ const require = arg1;
 function IgnoredUsersList(userIds) {
   userIds = userIds.userIds;
   const tmp = createCacheKey();
-  importDefault(5519);
+  importDefault(5581);
   if (0 === userIds.length) {
     let obj = { Illustration: null, body: null };
-    obj[0] = require(13852) /* getBlockedSource */.Blocked;
+    obj[0] = require(13919) /* getBlockedSource */.Blocked;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[1] = intl.string(require(1236) /* getSystemLocale */.t.PYrWFW);
     let tmp7 = callback(require(1297) /* Button */.EmptyState, obj);
@@ -36,15 +36,15 @@ function IgnoredUsersList(userIds) {
     const obj3 = { numberOfIgnoredUsers: null };
     obj3[0] = userIds.length;
     obj2[3] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.iNKUhU, obj3);
-    const items = [callback(require(4189) /* Text */.Text, obj2), ];
+    const items = [callback(require(4251) /* Text */.Text, obj2), ];
     const obj4 = { hasIcons: true, children: null };
     obj4[1] = userIds.map((userId) => callback2(callback(table[14]), { userId }, userId));
     const intl3 = require(1236) /* getSystemLocale */.intl;
-    items[1] = callback(require(5558) /* TableRowGroupTitle */.TableRowGroup, obj4, intl3.string(require(1236) /* getSystemLocale */.t["93ZDWE"]));
+    items[1] = callback(require(5620) /* TableRowGroupTitle */.TableRowGroup, obj4, intl3.string(require(1236) /* getSystemLocale */.t["93ZDWE"]));
     obj1[0] = items;
     obj[2] = callback2(ScrollView, obj1);
-    obj[1] = callback(require(5181) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
-    tmp7 = callback(require(5519) /* context */.AnalyticsLocationProvider, obj);
+    obj[1] = callback(require(5243) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+    tmp7 = callback(require(5581) /* context */.AnalyticsLocationProvider, obj);
   }
   return tmp7;
 }

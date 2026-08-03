@@ -1,10 +1,10 @@
-// Module ID: 11166
-// Function ID: 11167
+// Module ID: 11278
+// Function ID: 11279
 // Name: INITIAL_STATE
 // Dependencies: [644, 2]
 // Exports: useDiceRollState
 
-// Module 11166 (INITIAL_STATE)
+// Module 11278 (INITIAL_STATE)
 import keys from "keys";
 
 let obj = { channelId: null, rolling: false, dismissing: false, diceCount: 1, diceSides: 6, results: null };

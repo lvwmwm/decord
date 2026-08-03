@@ -1,9 +1,9 @@
-// Module ID: 9608
-// Function ID: 9609
+// Module ID: 9755
+// Function ID: 9756
 // Name: getFormatFromUrl
 // Dependencies: [676, 1341, 1236, 589, 709, 2]
 
-// Module 9608 (getFormatFromUrl)
+// Module 9755 (getFormatFromUrl)
 import { GIFType } from "create";
 import { Store } from "initialize";
 

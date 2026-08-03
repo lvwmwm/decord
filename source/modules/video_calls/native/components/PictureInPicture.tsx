@@ -1,9 +1,9 @@
-// Module ID: 10534
-// Function ID: 10535
+// Module ID: 10719
+// Function ID: 10720
 // Name: PictureInPicturePositions
-// Dependencies: [32, 19, 17, 10249, 676, 21, 4193, 1297, 10535, 1474, 5219, 10538, 4054, 4603, 10539, 10540, 5277, 500, 2]
+// Dependencies: [32, 19, 17, 10388, 676, 21, 4255, 1297, 10720, 1474, 5281, 10723, 4116, 4665, 10724, 10725, 5339, 500, 2]
 
-// Module 10534 (PictureInPicturePositions)
+// Module 10719 (PictureInPicturePositions)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "set";
@@ -66,7 +66,7 @@ const memoResult = importAllResult.memo((preferredPosition) => {
   let obj3 = insets(ref[12]);
   const fn = function w() {
     const obj = { marginTop: insets.top, marginBottom: null };
-    if (typeof outer1_10 !== "fileFinishedImporting") {
+    if (typeof outer1_10 !== "error") {
       HermesBuiltin.throwTypeError();
     }
     obj[1] = insets(ref[13]).withSpring(insets.bottom, { mass: 0.2, damping: 7.5, stiffness: 100, restDisplacementThreshold: 0.1, restSpeedThreshold: 0.1, overshootClamping: true, velocity: undefined });

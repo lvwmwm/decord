@@ -1,9 +1,9 @@
-// Module ID: 4091
-// Function ID: 4092
+// Module ID: 4153
+// Function ID: 4154
 // Name: createFromServer
 // Dependencies: [1883, 2]
 
-// Module 4091 (createFromServer)
+// Module 4153 (createFromServer)
 import "toJS";
 
 let GuildBoostSlotRecord;
@@ -30,7 +30,7 @@ GuildBoostSlotRecord["createFromServer"] = function createFromServer(premium_gui
     tmp2 = obj;
   }
   ({ canceled, cooldown_ends_at } = premium_guild_subscription);
-  if (typeof GuildBoostSlotRecord !== "fileFinishedImporting") {
+  if (typeof GuildBoostSlotRecord !== "error") {
     HermesBuiltin.throwTypeError();
   }
   const tmp3 = new GuildBoostSlotRecord("Trying to call a non-function", GuildBoostSlotRecord, new.target, id, subscription_id, tmp2, canceled, cooldown_ends_at);

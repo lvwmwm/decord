@@ -1,9 +1,9 @@
-// Module ID: 6189
-// Function ID: 6190
+// Module ID: 8156
+// Function ID: 8157
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 6189 (dispatcher)
+// Module 8156 (dispatcher)
 const result = require("set").fileFinishedImporting("actions/UploadAttachmentActionCreators.tsx");
 
 export default {

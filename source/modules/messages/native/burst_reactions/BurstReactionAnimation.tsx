@@ -1,10 +1,10 @@
-// Module ID: 6141
-// Function ID: 6142
+// Module ID: 7193
+// Function ID: 7194
 // Name: BurstReactionAnimation
-// Dependencies: [19, 4185, 21, 4193, 6099, 589, 6142, 5510, 2]
+// Dependencies: [19, 4247, 21, 4255, 7151, 589, 7194, 5572, 2]
 // Exports: default
 
-// Module 6141 (BurstReactionAnimation)
+// Module 7193 (BurstReactionAnimation)
 import "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
@@ -27,7 +27,7 @@ export default function BurstReactionAnimation(arg0) {
     withFadeOut = true;
   }
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = require(6099) /* _generateAnimationSource */;
+  let obj = require(7151) /* _generateAnimationSource */;
   const burstReactionAnimationSource = obj.useBurstReactionAnimationSource({ emoji, messageId, channelId, isFullscreen });
   require(589) /* initialize */;
   [][0] = maybeApplyNoTextColorForLightCustomTheme;
@@ -51,7 +51,7 @@ export default function BurstReactionAnimation(arg0) {
     const merged1 = Object.assign(merged);
     const merged2 = Object.assign(obj);
     obj1.source = burstReactionAnimationSource;
-    return jsx(importDefault(withFadeOut ? 6142 : 5510), { style: null, loop: false, speed: null });
+    return jsx(importDefault(withFadeOut ? 7194 : 5572), { style: null, loop: false, speed: null });
   }
   tmp2 = callback();
 };

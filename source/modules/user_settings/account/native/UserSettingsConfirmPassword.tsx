@@ -1,14 +1,14 @@
-// Module ID: 9238
-// Function ID: 9239
+// Module ID: 9411
+// Function ID: 9412
 // Name: UserSettingsConfirmPasswordWrapped
-// Dependencies: [5, 32, 19, 17, 1874, 676, 21, 4193, 712, 6333, 589, 6509, 4092, 1208, 1236, 9239, 4189, 9004, 9008, 4604, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 676, 21, 4255, 712, 6775, 589, 5912, 4154, 1208, 1236, 9412, 4251, 9181, 9185, 4666, 2]
 // Exports: UserSettingsConfirmPasswordWrapped
 
-// Module 9238 (UserSettingsConfirmPasswordWrapped)
+// Module 9411 (UserSettingsConfirmPasswordWrapped)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "Button";
-import get_ActivityIndicator from "module_9004";
+import get_ActivityIndicator from "module_9181";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserSettingsSections } from "ME";
 import jsxProd from "jsxProd";
@@ -201,7 +201,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
     obj[0] = items1;
     let tmp15 = null;
     if (!hideUnverifiedBanner) {
-      tmp15 = callback(importDefault(9239), {});
+      tmp15 = callback(importDefault(9412), {});
     }
     function handleSubmit() {
       const self = this;
@@ -220,12 +220,12 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
     obj1[0] = tmp.title;
     let intl = tmp3(1236).intl;
     obj1[4] = intl.string(tmp3(1236).t["x+d9t3"]);
-    const items3 = [callback(tmp3(4189).Text, obj1), , , , ];
+    const items3 = [callback(tmp3(4251).Text, obj1), , , , ];
     obj2 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
     obj2[0] = tmp.prompt;
     const intl2 = tmp3(1236).intl;
     obj2[3] = intl2.string(tmp3(1236).t.vaZmAx);
-    items3[1] = callback(tmp3(4189).Text, obj2);
+    items3[1] = callback(tmp3(4251).Text, obj2);
     let obj3 = { style: null, textStyle: null, label: null, textContentType: "password", keyboardType: "default", secureTextEntry: true, value: null, onChangeText: null, onSubmitEditing: null, error: null, returnKeyType: "done", autoCapitalize: "none", autoFocus: true };
     ({ input: obj7[0], redesignInput: obj7[1] } = tmp);
     const intl3 = tmp3(1236).intl;
@@ -238,7 +238,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
       fieldMessage = obj1.getFieldMessage("password");
     }
     obj3[9] = fieldMessage;
-    items3[2] = callback(importDefault(9004), obj3);
+    items3[2] = callback(importDefault(9181), obj3);
     let tmp19Result = null;
     if (null != obj1) {
       tmp19Result = null;
@@ -246,7 +246,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
         const obj4 = { style: null, children: null };
         obj4[0] = tmp.hint;
         obj4[1] = obj1.message;
-        tmp19Result = tmp19(tmp20(9008), obj4);
+        tmp19Result = tmp19(tmp20(9185), obj4);
       }
     }
     items3[3] = tmp19Result;
@@ -257,7 +257,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
     obj6[2] = intl4.string(tmp3(1236).t.i4jeWR);
     obj6[3] = handleSubmit;
     obj6[4] = tmp7;
-    obj5[1] = callback(tmp3(4604).Button, obj6);
+    obj5[1] = callback(tmp3(4666).Button, obj6);
     items3[4] = callback(_handleSubmit, obj5);
     obj[1] = items3;
     items2[1] = closure_11(_handleSubmit, obj);
@@ -265,7 +265,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
     tmp13Result = tmp13(closure_7, obj);
     const tmp14 = closure_7;
     tmp20 = importDefault;
-    const tmp21 = importDefault(9004);
+    const tmp21 = importDefault(9181);
   }
   return tmp13Result;
 });
@@ -274,7 +274,7 @@ let result = require("noop").fileFinishedImporting("modules/user_settings/accoun
 
 export default forwardRefResult;
 export const UserSettingsConfirmPasswordWrapped = function UserSettingsConfirmPasswordWrapped() {
-  let obj = require(6333) /* useSettingNavigationRoute */;
+  let obj = require(6775) /* useSettingNavigationRoute */;
   obj = {};
   const merged = Object.assign(obj.useSettingNavigationRoute().params);
   return callback(closure_13, obj);

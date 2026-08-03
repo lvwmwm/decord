@@ -1,10 +1,10 @@
-// Module ID: 8284
-// Function ID: 8285
+// Module ID: 8591
+// Function ID: 8592
 // Name: CreateChannelTypeDescription
-// Dependencies: [19, 17, 8285, 676, 21, 8286, 5191, 4189, 1236, 2]
+// Dependencies: [19, 17, 8592, 676, 21, 8593, 5253, 4251, 1236, 2]
 // Exports: default
 
-// Module 8284 (CreateChannelTypeDescription)
+// Module 8591 (CreateChannelTypeDescription)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { GuildProfileFetchStatus } from "handleUpdateStart";
@@ -19,12 +19,12 @@ export default function CreateChannelTypeDescription(guildId) {
   let guildProfile;
   guildId = guildId.guildId;
   fetchGuildProfile = undefined;
-  let obj = fetchGuildProfile(8286);
+  let obj = fetchGuildProfile(8593);
   guildProfile = obj.useGuildProfile(guildId);
   ({ guildProfile, fetchGuildProfile } = guildProfile);
   let hasItem = null != guildProfile;
   if (hasItem) {
-    const VISIBLE = tmp(5191).GuildProfileVisibilitySets.VISIBLE;
+    const VISIBLE = tmp(5253).GuildProfileVisibilitySets.VISIBLE;
     hasItem = VISIBLE.has(guildProfile.visibility);
   }
   let tmp6 = !tmp5;
@@ -44,7 +44,7 @@ export default function CreateChannelTypeDescription(guildId) {
     obj = { variant: "text-sm/normal", color: "text-subtle", children: null };
     const intl = tmp(1236).intl;
     obj[2] = intl.string(tmp(1236).t["2Ab4Id"]);
-    obj[0] = jsx(tmp(4189).Text, { variant: "text-sm/normal", color: "text-subtle", children: null });
+    obj[0] = jsx(tmp(4251).Text, { variant: "text-sm/normal", color: "text-subtle", children: null });
     tmp9 = <View variant="text-sm/normal" color="text-subtle">{null}</View>;
   }
   return tmp9;

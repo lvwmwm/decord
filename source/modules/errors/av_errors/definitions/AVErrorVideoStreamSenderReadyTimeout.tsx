@@ -1,9 +1,9 @@
-// Module ID: 16710
-// Function ID: 16711
+// Module ID: 16776
+// Function ID: 16777
 // Name: AVErrorVideoStreamSenderReadyTimeoutDefinition
-// Dependencies: [1218, 10526, 8861, 2]
+// Dependencies: [1218, 10711, 9038, 2]
 
-// Module 16710 (AVErrorVideoStreamSenderReadyTimeoutDefinition)
+// Module 16776 (AVErrorVideoStreamSenderReadyTimeoutDefinition)
 import fetchFingerprint from "fetchFingerprint";
 import makeTimeoutKey from "makeTimeoutKey";
 

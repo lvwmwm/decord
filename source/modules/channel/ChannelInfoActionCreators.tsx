@@ -1,10 +1,10 @@
-// Module ID: 10499
-// Function ID: 10500
+// Module ID: 10637
+// Function ID: 10638
 // Name: fetchChannelInfo
-// Dependencies: [4869, 5787, 709, 2]
+// Dependencies: [4931, 6885, 709, 2]
 // Exports: fetchChannelInfo
 
-// Module 10499 (fetchChannelInfo)
+// Module 10637 (fetchChannelInfo)
 import _handleConnectionOpen from "_handleConnectionOpen";
 import handleConnectionReset from "handleConnectionReset";
 

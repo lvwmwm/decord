@@ -1,10 +1,10 @@
-// Module ID: 8501
-// Function ID: 8502
+// Module ID: 8790
+// Function ID: 8791
 // Name: buildSteamStoreUrl
-// Dependencies: [4214, 676, 589, 8502, 8500, 1856, 2]
+// Dependencies: [4276, 676, 589, 8791, 8789, 1856, 2]
 // Exports: buildSteamStoreUrl, useSteamWebsiteUrl
 
-// Module 8501 (buildSteamStoreUrl)
+// Module 8790 (buildSteamStoreUrl)
 import map from "map";
 import { Distributors } from "ME";
 
@@ -30,7 +30,7 @@ export const useSteamWebsiteUrl = function useSteamWebsiteUrl(id) {
           return null;
         } else {
           const websites = game.websites;
-          const found = websites.find((category) => category.category === callback(8500).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+          const found = websites.find((category) => category.category === callback(8789).ThirdPartyGameApplicationWebsiteCategory.STEAM);
           if (found != null) {
             const url = found.url;
           }

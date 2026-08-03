@@ -1,10 +1,10 @@
-// Module ID: 14250
-// Function ID: 14251
+// Module ID: 14317
+// Function ID: 14318
 // Name: getRoleSubscriptionPlanId
 // Dependencies: [38, 2]
 // Exports: getRoleSubscriptionMutationPlanId, getRoleSubscriptionPlanId
 
-// Module 14250 (getRoleSubscriptionPlanId)
+// Module 14317 (getRoleSubscriptionPlanId)
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/subscriptionUtils.tsx");
 
 export const getRoleSubscriptionPlanId = function getRoleSubscriptionPlanId(items) {

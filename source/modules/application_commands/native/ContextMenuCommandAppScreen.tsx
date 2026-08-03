@@ -1,10 +1,10 @@
-// Module ID: 15719
-// Function ID: 15720
+// Module ID: 15784
+// Function ID: 15785
 // Name: ContextMenuCommandAppScreen
-// Dependencies: [19, 21, 4193, 712, 5219, 8836, 15718, 9250, 2]
+// Dependencies: [19, 21, 4255, 712, 5281, 9013, 15783, 9422, 2]
 // Exports: default
 
-// Module 15719 (ContextMenuCommandAppScreen)
+// Module 15784 (ContextMenuCommandAppScreen)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

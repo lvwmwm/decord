@@ -1,10 +1,10 @@
-// Module ID: 3832
-// Function ID: 3833
+// Module ID: 3894
+// Function ID: 3895
 // Name: MAX_REACTIONS
-// Dependencies: [1218, 676, 3833, 3834, 1236, 3866, 698, 2]
-// Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, getReactionEmojiName, isCustomReactionEmojiId, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
+// Dependencies: [1218, 676, 3895, 3896, 1236, 7130, 3928, 698, 2]
+// Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, getReactionEmojiName, isCustomReactionEmojiId, isMeReaction, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
 
-// Module 3832 (MAX_REACTIONS)
+// Module 3894 (MAX_REACTIONS)
 import fetchFingerprint from "fetchFingerprint";
 import ME from "ME";
 import { NotificationSettingsUpdateType as closure_6 } from "AccountNotificationFlags";
@@ -18,8 +18,8 @@ let result = require("AccountNotificationFlags").fileFinishedImporting("modules/
 export const MAX_REACTIONS = 20;
 export const getReactionEmojiName = function getReactionEmojiName(emoji) {
   if (null == emoji.id) {
-    let result = importDefault(3834).convertSurrogateToName(emoji.name);
-    const obj = importDefault(3834);
+    let result = importDefault(3896).convertSurrogateToName(emoji.name);
+    const obj = importDefault(3896);
   } else {
     const _HermesInternal = HermesInternal;
     result = ":" + emoji.name + ":";
@@ -52,8 +52,8 @@ export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayN
     const obj = { reactions: null, emojiName: null };
     obj[0] = count;
     if (null == emoji.id) {
-      let str2 = importDefault(3834).convertSurrogateToName(emoji.name);
-      const obj2 = importDefault(3834);
+      let str2 = importDefault(3896).convertSurrogateToName(emoji.name);
+      const obj2 = importDefault(3896);
     } else {
       const _HermesInternal = HermesInternal;
       str2 = ":" + emoji.name + ":";
@@ -71,6 +71,20 @@ export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayN
     obj[1] = str3;
     return intl.formatToPlainString(PirBBE, obj);
   }
+};
+export const isMeReaction = function isMeReaction(me, me_burst, arg2) {
+  let tmp3 = arg2 === require(7130) /* ReactionTypes */.ReactionTypes.BURST;
+  if (tmp3) {
+    tmp3 = true === me_burst;
+  }
+  if (!tmp3) {
+    let tmp5 = arg2 === require(7130) /* ReactionTypes */.ReactionTypes.NORMAL;
+    if (tmp5) {
+      tmp5 = true === me;
+    }
+    tmp3 = tmp5;
+  }
+  return tmp3;
 };
 export const toReactionEmoji = function toReactionEmoji(byName) {
   let id = byName.id;
@@ -135,7 +149,7 @@ export const shouldApplyReaction = function shouldApplyReaction(optimistic) {
   return !optimistic;
 };
 export const updateReactionNotificationsSetting = function updateReactionNotificationsSetting(NumberResult, setting) {
-  const ReactionNotifications = require(3866) /* explicitContentFromProto */.ReactionNotifications;
+  const ReactionNotifications = require(3928) /* explicitContentFromProto */.ReactionNotifications;
   ReactionNotifications.updateSetting(NumberResult);
   let obj = importDefault(698);
   obj = { update_type: constants3.ACCOUNT, reaction_notifications: NumberResult, reaction_notifications_old: setting };

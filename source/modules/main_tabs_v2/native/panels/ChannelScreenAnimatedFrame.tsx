@@ -1,10 +1,10 @@
-// Module ID: 14940
-// Function ID: 14941
+// Module ID: 15007
+// Function ID: 15008
 // Name: ChannelScreenAnimatedFrame
-// Dependencies: [19, 17, 9128, 676, 21, 4193, 712, 4129, 1348, 4054, 4194, 1297, 14938, 8833, 5181, 2]
+// Dependencies: [19, 17, 9301, 676, 21, 4255, 712, 4191, 1348, 4116, 4256, 1297, 15005, 9010, 5243, 2]
 // Exports: default
 
-// Module 14940 (ChannelScreenAnimatedFrame)
+// Module 15007 (ChannelScreenAnimatedFrame)
 import "noop";
 import { View } from "get ActivityIndicator";
 import MIN_HEADER_HEIGHT from "MIN_HEADER_HEIGHT";

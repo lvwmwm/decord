@@ -1,10 +1,10 @@
-// Module ID: 6959
-// Function ID: 6960
+// Module ID: 6095
+// Function ID: 6096
 // Name: CrosshairIllocon
-// Dependencies: [21, 5145, 6960, 2]
+// Dependencies: [21, 5207, 6096, 2]
 // Exports: CrosshairIllocon
 
-// Module 6959 (CrosshairIllocon)
+// Module 6095 (CrosshairIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CrosshairIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const CrosshairIllocon = function CrosshairIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6960);
+  obj[0] = importDefault(6096);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5145), { uri: null });
+  return jsx(importDefault(5207), { uri: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 7629
-// Function ID: 7630
+// Module ID: 7755
+// Function ID: 7756
 // Name: GetStartedScreen
-// Dependencies: [5, 19, 17, 676, 6759, 21, 4193, 712, 4409, 6752, 7625, 1236, 6750, 500, 6790, 4189, 5558, 5224, 1945, 2]
+// Dependencies: [5, 19, 17, 676, 7716, 21, 4255, 712, 4471, 7710, 7751, 1236, 7708, 500, 5926, 4251, 5620, 5286, 1945, 2]
 // Exports: default
 
-// Module 7629 (GetStartedScreen)
+// Module 7755 (GetStartedScreen)
 import closure_3 from "jsxProd";
 import set from "set";
 import get_ActivityIndicator from "TableRowInner";

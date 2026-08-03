@@ -1,9 +1,9 @@
-// Module ID: 15753
-// Function ID: 15754
+// Module ID: 15818
+// Function ID: 15819
 // Name: commonTriggerPointConfiguration
-// Dependencies: [4108, 6300, 2]
+// Dependencies: [4170, 7285, 2]
 
-// Module 15753 (commonTriggerPointConfiguration)
+// Module 15818 (commonTriggerPointConfiguration)
 const commonTriggerPointConfiguration = new require("registeredExperimentIds").CommonTriggerPointConfiguration([], require("ExperimentBuckets").CommonTriggerPoints.OPEN_USER_SETTINGS, { location: "open user settings" });
 const result = require("set").fileFinishedImporting("modules/experiments/trigger_points/OpenUserSettingsTriggerPoint.tsx");
 

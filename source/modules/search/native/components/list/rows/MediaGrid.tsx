@@ -1,10 +1,10 @@
-// Module ID: 15528
-// Function ID: 15529
+// Module ID: 15595
+// Function ID: 15596
 // Name: MediaGrid
-// Dependencies: [19, 17, 9108, 21, 4193, 15524, 11466, 6679, 15509, 2]
+// Dependencies: [19, 17, 9281, 21, 4255, 15591, 11576, 7654, 15576, 2]
 // Exports: default
 
-// Module 15528 (MediaGrid)
+// Module 15595 (MediaGrid)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import MessageEmbedTypes from "MessageEmbedTypes";

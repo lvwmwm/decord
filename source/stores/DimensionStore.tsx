@@ -1,9 +1,9 @@
-// Module ID: 4863
-// Function ID: 4864
+// Module ID: 4925
+// Function ID: 4926
 // Name: percentageScrolled
 // Dependencies: [643, 589, 709, 2]
 
-// Module 4863 (percentageScrolled)
+// Module 4925 (percentageScrolled)
 import { Store } from "initialize";
 
 let closure_2 = {};

@@ -1,9 +1,9 @@
-// Module ID: 16174
-// Function ID: 16175
+// Module ID: 16238
+// Function ID: 16239
 // Name: handleVoiceChannelSelect
-// Dependencies: [5138, 16175, 15753, 2]
+// Dependencies: [5200, 16239, 15818, 2]
 
-// Module 16174 (handleVoiceChannelSelect)
+// Module 16238 (handleVoiceChannelSelect)
 import "initialize";
 
 const require = arg1;
@@ -18,18 +18,18 @@ const prototype = CommonTriggerPointManager.prototype;
 prototype["handleVoiceChannelSelect"] = function handleVoiceChannelSelect(guildId) {
   guildId = guildId.guildId;
   if (null != guildId.channelId) {
-    const VoiceCallTriggerPoint = require(16175) /* commonTriggerPointConfiguration */.VoiceCallTriggerPoint;
+    const VoiceCallTriggerPoint = require(16239) /* commonTriggerPointConfiguration */.VoiceCallTriggerPoint;
     const obj = { guildId: null };
     obj[0] = guildId;
     VoiceCallTriggerPoint.trigger(obj);
   }
 };
 prototype["handleCallCreate"] = function handleCallCreate() {
-  const VoiceCallTriggerPoint = require(16175) /* commonTriggerPointConfiguration */.VoiceCallTriggerPoint;
+  const VoiceCallTriggerPoint = require(16239) /* commonTriggerPointConfiguration */.VoiceCallTriggerPoint;
   VoiceCallTriggerPoint.trigger();
 };
 prototype["handleUserSettingsModalOpen"] = function handleUserSettingsModalOpen() {
-  const OpenUserSettingsTriggerPoint = require(15753) /* commonTriggerPointConfiguration */.OpenUserSettingsTriggerPoint;
+  const OpenUserSettingsTriggerPoint = require(15818) /* commonTriggerPointConfiguration */.OpenUserSettingsTriggerPoint;
   OpenUserSettingsTriggerPoint.trigger();
 };
 const commonTriggerPointManager = new CommonTriggerPointManager();

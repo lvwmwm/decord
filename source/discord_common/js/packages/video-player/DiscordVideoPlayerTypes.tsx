@@ -1,9 +1,9 @@
-// Module ID: 5992
-// Function ID: 5993
+// Module ID: 7071
+// Function ID: 7072
 // Name: DEFAULT_VIDEO_VOLUME
 // Dependencies: [2]
 
-// Module 5992 (DEFAULT_VIDEO_VOLUME)
+// Module 7071 (DEFAULT_VIDEO_VOLUME)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/video-player/DiscordVideoPlayerTypes.tsx");
 
 export const DEFAULT_VIDEO_VOLUME = 0.3;

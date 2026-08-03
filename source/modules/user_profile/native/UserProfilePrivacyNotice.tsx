@@ -1,10 +1,10 @@
-// Module ID: 12194
-// Function ID: 12195
+// Module ID: 12290
+// Function ID: 12291
 // Name: UserProfilePrivacyNotice
-// Dependencies: [32, 19, 17, 676, 1369, 21, 4193, 712, 1306, 1236, 12195, 7713, 3866, 1358, 8451, 4189, 6614, 4149, 4721, 5179, 2]
+// Dependencies: [32, 19, 17, 676, 1369, 21, 4255, 712, 1306, 1236, 12291, 7834, 3928, 1358, 5921, 4251, 5915, 4211, 4783, 5241, 2]
 // Exports: default, useIsPrivacyNoticeVisible
 
-// Module 12194 (UserProfilePrivacyNotice)
+// Module 12290 (UserProfilePrivacyNotice)
 import _slicedToArray from "_slicedToArray";
 import XSmallIcon from "XSmallIcon";
 import { View } from "CircleInformationIcon";

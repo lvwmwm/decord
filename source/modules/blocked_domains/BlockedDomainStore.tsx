@@ -1,9 +1,9 @@
-// Module ID: 8205
-// Function ID: 8206
+// Module ID: 8512
+// Function ID: 8513
 // Name: isBlockedDomain
 // Dependencies: [676, 1869, 698, 2]
 
-// Module 8205 (isBlockedDomain)
+// Module 8512 (isBlockedDomain)
 import { AnalyticEvents } from "ME";
 
 const prototype = function BlockedDomainStore() {

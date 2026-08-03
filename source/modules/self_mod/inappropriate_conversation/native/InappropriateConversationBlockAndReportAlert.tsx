@@ -1,9 +1,9 @@
-// Module ID: 10182
-// Function ID: 10183
+// Module ID: 10321
+// Function ID: 10322
 // Name: InappropriateConversationBlockAndReportAlert
-// Dependencies: [19, 21, 10169, 10183, 1236, 2]
+// Dependencies: [19, 21, 10308, 10322, 1236, 2]
 
-// Module 10182 (InappropriateConversationBlockAndReportAlert)
+// Module 10321 (InappropriateConversationBlockAndReportAlert)
 import noop from "noop";
 import { jsx } from "jsxProd";
 

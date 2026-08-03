@@ -1,9 +1,9 @@
-// Module ID: 11165
-// Function ID: 11166
+// Module ID: 11277
+// Function ID: 11278
 // Name: ChatInput
-// Dependencies: [5, 32, 19, 17, 6095, 11166, 9580, 5969, 11167, 4530, 5970, 3821, 4529, 9321, 11169, 676, 1479, 1877, 1576, 21, 4193, 712, 500, 1348, 4004, 3897, 11170, 11171, 589, 6052, 5519, 6076, 11173, 4054, 4059, 8018, 11175, 11176, 11177, 5661, 1231, 1580, 4735, 6189, 4726, 514, 4162, 698, 1579, 4388, 5701, 11222, 11384, 9686, 4052, 1843, 11385, 9348, 9311, 11405, 9703, 6185, 11408, 11409, 3852, 11425, 11426, 11427, 11428, 11434, 11435, 688, 11436, 11437, 11441, 11443, 11450, 11454, 11457, 11496, 11498, 11516, 10403, 11529, 11531, 11532, 11365, 11533, 2]
+// Dependencies: [5, 32, 19, 17, 7147, 11278, 9727, 7048, 11279, 4592, 7049, 3883, 4591, 9493, 11281, 676, 1479, 1877, 1576, 21, 4255, 712, 500, 1348, 4066, 3959, 11282, 11283, 589, 5769, 5581, 7128, 11285, 4116, 4121, 8136, 11287, 11288, 11289, 5723, 1231, 1580, 4797, 8156, 4788, 514, 4224, 698, 1579, 4450, 10664, 11333, 11494, 9831, 4114, 1843, 11495, 9507, 9483, 11515, 9848, 8152, 11518, 11519, 3914, 11535, 11536, 11537, 11538, 11544, 11545, 688, 11546, 11547, 11551, 11553, 11560, 11564, 11567, 11606, 11608, 11626, 10542, 11639, 11641, 11642, 11475, 11643, 2]
 
-// Module 11165 (ChatInput)
+// Module 11277 (ChatInput)
 import INITIAL_STATE from "INITIAL_STATE";
 import getChatInputMaxHeight from "getChatInputMaxHeight";
 import importAllResult from "jsxProd";
@@ -737,7 +737,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
           obj6[0] = getState.props.current.channel;
           obj6[1] = outer1_28;
           obj6[2] = function onDismissKeyboard() {
-            return callback(4052).dismissKeyboard();
+            return callback(4114).dismissKeyboard();
           };
           obj6[3] = function onRestoreKeyboard() {
             return closure_12.handleToggleKeyboard({ type: outer1_0(outer1_3[48]).KeyboardTypes.SYSTEM });
@@ -756,7 +756,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
           obj7[0] = getState.props.current.channel;
           obj7[1] = outer1_32.CAMERA_BUTTON;
           obj7[2] = function onDismissKeyboard() {
-            return callback(4052).dismissKeyboard();
+            return callback(4114).dismissKeyboard();
           };
           obj7[3] = function onRestoreKeyboard() {
             return closure_12.handleToggleKeyboard({ type: outer1_0(outer1_3[48]).KeyboardTypes.SYSTEM });

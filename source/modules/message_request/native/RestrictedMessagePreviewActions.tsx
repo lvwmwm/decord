@@ -1,10 +1,10 @@
-// Module ID: 15746
-// Function ID: 15747
+// Module ID: 15811
+// Function ID: 15812
 // Name: RestrictedMessagePreviewActions
-// Dependencies: [19, 17, 3830, 676, 10462, 21, 4193, 712, 11700, 589, 8927, 9065, 11727, 4032, 4161, 10463, 1959, 7697, 4203, 4604, 1236, 4189, 2]
+// Dependencies: [19, 17, 3892, 676, 10600, 21, 4255, 712, 11803, 589, 9104, 9238, 11830, 4094, 4223, 10601, 1959, 7818, 4265, 4666, 1236, 4251, 2]
 // Exports: default
 
-// Module 15746 (RestrictedMessagePreviewActions)
+// Module 15811 (RestrictedMessagePreviewActions)
 import Button from "Button";
 import { View } from "_submitHamReportForFirstDM";
 import upsertRelationship from "upsertRelationship";

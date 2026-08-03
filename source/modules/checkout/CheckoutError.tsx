@@ -1,9 +1,9 @@
-// Module ID: 8045
-// Function ID: 8046
+// Module ID: 8378
+// Function ID: 8379
 // Name: prototype
-// Dependencies: [8046, 2]
+// Dependencies: [8379, 2]
 
-// Module 8045 (prototype)
+// Module 8378 (prototype)
 import { RevenueError } from "prototype";
 
 const prototype = function CheckoutError(arg0) {

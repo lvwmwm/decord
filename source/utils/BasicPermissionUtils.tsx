@@ -1,9 +1,9 @@
-// Module ID: 3829
-// Function ID: 3830
+// Module ID: 3891
+// Function ID: 3892
 // Name: has
 // Dependencies: [506, 2]
 
-// Module 3829 (has)
+// Module 3891 (has)
 const result = require("set").fileFinishedImporting("utils/BasicPermissionUtils.tsx");
 const prototype = function BasicPermissionUtils() {
   return Object.create(new.target.prototype);

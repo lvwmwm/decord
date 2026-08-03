@@ -1,10 +1,10 @@
-// Module ID: 12441
-// Function ID: 12442
+// Module ID: 12539
+// Function ID: 12540
 // Name: deferJoinActivityApplication
 // Dependencies: [709, 2]
 // Exports: default
 
-// Module 12441 (deferJoinActivityApplication)
+// Module 12539 (deferJoinActivityApplication)
 const result = require("set").fileFinishedImporting("modules/activities/utils/deferJoinActivityInChannel.tsx");
 
 export default function deferJoinActivityApplication(arg0) {

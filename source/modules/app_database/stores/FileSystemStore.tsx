@@ -1,9 +1,9 @@
-// Module ID: 5740
-// Function ID: 5741
+// Module ID: 6835
+// Function ID: 6836
 // Name: result
 // Dependencies: [5, 3, 687, 589, 709, 1907, 2]
 
-// Module 5740 (result)
+// Module 6835 (result)
 import items from "items";
 import { Store } from "initialize";
 

@@ -1,10 +1,10 @@
-// Module ID: 8657
-// Function ID: 8658
+// Module ID: 8834
+// Function ID: 8835
 // Name: GameProfileCommunityServer
-// Dependencies: [5, 32, 19, 17, 1374, 21, 4193, 712, 8500, 4177, 4182, 8658, 589, 8496, 6693, 8659, 1411, 4189, 1236, 5145, 1416, 5570, 8474, 1297, 4604, 2]
+// Dependencies: [5, 32, 19, 17, 1374, 21, 4255, 712, 8789, 4239, 4244, 8835, 589, 8785, 5856, 8836, 1411, 4251, 1236, 5207, 1416, 5632, 5820, 1297, 4666, 2]
 // Exports: default
 
-// Module 8657 (GameProfileCommunityServer)
+// Module 8834 (GameProfileCommunityServer)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import preload from "preload";

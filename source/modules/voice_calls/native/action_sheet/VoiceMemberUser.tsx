@@ -1,9 +1,9 @@
-// Module ID: 12862
-// Function ID: 12863
+// Module ID: 12925
+// Function ID: 12926
 // Name: StreamingUserRow
-// Dependencies: [19, 17, 1302, 1218, 4870, 1372, 1942, 4240, 4280, 676, 21, 4193, 712, 10527, 589, 4039, 12863, 12864, 1297, 12865, 12866, 12867, 12868, 8350, 4189, 1236, 7639, 6027, 10863, 4044, 4403, 4161, 4721, 8926, 4383, 8924, 4032, 2]
+// Dependencies: [19, 17, 1302, 1218, 4932, 1372, 1942, 4302, 4342, 676, 21, 4255, 712, 10712, 589, 4101, 12926, 12927, 1297, 12928, 12929, 12930, 12931, 8655, 4251, 1236, 7765, 7106, 10963, 4106, 4465, 4223, 4783, 9103, 4445, 9101, 4094, 2]
 
-// Module 12862 (StreamingUserRow)
+// Module 12925 (StreamingUserRow)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "registerAsset";
 import handleThemeChange from "handleThemeChange";
@@ -50,7 +50,7 @@ function StreamingUserRow(user) {
       labelCallScreen = tmp2.labelCallScreen;
     }
     obj[1] = labelCallScreen;
-    obj.subLabel = closure_11(tmp3(7639).FormSubLabel, obj);
+    obj.subLabel = closure_11(tmp3(7765).FormSubLabel, obj);
     const items1 = [closure_11(closure_16, obj), ];
     let tmp10Result = user.id !== store.getId();
     if (tmp10Result) {
@@ -76,10 +76,10 @@ function StreamingUserRow(user) {
           const obj4 = user(outer1_2[30]);
         }
       };
-      obj1[1] = tmp10(channel(10863), obj2);
+      obj1[1] = tmp10(channel(10963), obj2);
       tmp10Result = tmp10(closure_3, obj1);
       const tmp18 = closure_3;
-      const tmp20 = channel(10863);
+      const tmp20 = channel(10963);
     }
     let obj3 = { children: null };
     items1[1] = tmp10Result;
@@ -111,7 +111,7 @@ function RingButton(channelId) {
       obj[1] = stringResult;
       tmp4Result = tmp4(tmp5(1297).LegacyText, obj);
       obj[3] = tmp4Result;
-      tmp4Result = tmp4(channelId(4721).PressableOpacity, obj);
+      tmp4Result = tmp4(channelId(4783).PressableOpacity, obj);
     }
   }
   return tmp3;
@@ -140,7 +140,7 @@ function StopRingButton(channelId) {
       obj[1] = stringResult;
       tmp4Result = tmp4(tmp5(1297).LegacyText, obj);
       obj[3] = tmp4Result;
-      tmp4Result = tmp4(channelId(4721).PressableOpacity, obj);
+      tmp4Result = tmp4(channelId(4783).PressableOpacity, obj);
     }
   }
   return tmp3;
@@ -286,7 +286,7 @@ let closure_16 = importAllResult.memo((user) => {
   }
   obj1[1] = guild_id;
   obj1[2] = user(1297).AvatarSizes.REFRESH_MEDIUM_32;
-  obj1[3] = channel(10527)(obj);
+  obj1[3] = channel(10712)(obj);
   obj[2] = closure_11(user(1297).Avatar, obj1);
   let tmp23Result = null;
   if (flag3) {
@@ -298,7 +298,7 @@ let closure_16 = importAllResult.memo((user) => {
       if (user.isSpectating) {
         obj3 = { size: null, source: null, style: null };
         obj3[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-        obj3[1] = tmp5(12868);
+        obj3[1] = tmp5(12931);
         obj3[2] = tmp19;
         tmp20Result = tmp20(tmp8(1297).Icon, obj3);
       }
@@ -309,7 +309,7 @@ let closure_16 = importAllResult.memo((user) => {
         if (tmp14) {
           obj4 = { size: null, source: null, style: null };
           obj4[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-          obj4[1] = tmp5(12865);
+          obj4[1] = tmp5(12928);
           obj4[2] = tmp19;
           tmp20Result = tmp20(tmp8(1297).Icon, obj4);
         }
@@ -329,22 +329,22 @@ let closure_16 = importAllResult.memo((user) => {
           if (localVideoDisabled) {
             const obj6 = { size: null, source: null, style: null, disableColor: true };
             obj6[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-            obj6[1] = tmp5(12866);
+            obj6[1] = tmp5(12929);
             obj6[2] = tmp2.voiceStatusIconMargin;
             let obj7 = obj6;
           } else {
             obj7 = { size: null, source: null, style: null };
             obj7[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-            obj7[1] = tmp5(12867);
+            obj7[1] = tmp5(12930);
             obj7[2] = tmp19;
           }
           tmp20(tmp8(1297).Icon, obj7);
         }
       } else {
         if (tmp8Result.isThemeDark(stateFromStores)) {
-          let tmp5Result = tmp5(12863);
+          let tmp5Result = tmp5(12926);
         } else {
-          tmp5Result = tmp5(12864);
+          tmp5Result = tmp5(12927);
         }
         const obj8 = { size: null, source: null, style: null, color: null, disableColor: null };
         obj8[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
@@ -353,7 +353,7 @@ let closure_16 = importAllResult.memo((user) => {
         obj8[3] = tmp19.tintColor;
         obj8[4] = localMute;
         tmp20(tmp8(1297).Icon, obj8);
-        tmp8Result = tmp8(4039);
+        tmp8Result = tmp8(4101);
       }
       tmp23 = callback;
       tmp24 = id;
@@ -371,7 +371,7 @@ let closure_16 = importAllResult.memo((user) => {
     const intl = tmp8(1236).intl;
     const items5 = ["\u00A0", intl.string(tmp8(1236).t["pFO/Ph"])];
     obj11[3] = items5;
-    items4[1] = callback(tmp8(4189).Text, obj11);
+    items4[1] = callback(tmp8(4251).Text, obj11);
     obj10[0] = items4;
     tmp35 = callback(closure_13, obj10);
   }
@@ -381,19 +381,19 @@ let closure_16 = importAllResult.memo((user) => {
     labelCallScreen = tmp3.labelCallScreen;
   }
   obj12[1] = labelCallScreen;
-  obj9.label = closure_11(user(7639).FormRow.Label, obj12);
+  obj9.label = closure_11(user(7765).FormRow.Label, obj12);
   if (localVideoAutoDisabled) {
     const obj13 = { style: null, children: null };
     obj13[0] = tmp2.autoDisabledVideo;
     const obj14 = { source: null, size: null, disableColor: true };
-    obj14[0] = tmp5(8350);
+    obj14[0] = tmp5(8655);
     obj14[1] = tmp8(1297).Icon.Sizes.EXTRA_SMALL;
     const items6 = [tmp20(tmp8(1297).Icon, obj14), ];
     const obj15 = { variant: "text-xs/medium", color: "text-default", style: null, children: null };
     obj15[2] = tmp2.autoDisabledVideoLabel;
     const intl3 = tmp8(1236).intl;
     obj15[3] = intl3.string(tmp8(1236).t.m2Hyj0);
-    items6[1] = tmp20(tmp8(4189).Text, obj15);
+    items6[1] = tmp20(tmp8(4251).Text, obj15);
     obj13[1] = items6;
     let stringResult = callback(id, obj13);
   } else {
@@ -404,7 +404,7 @@ let closure_16 = importAllResult.memo((user) => {
     }
   }
   obj9.subLabel = stringResult;
-  return closure_11(user(7639).FormRow, obj9);
+  return closure_11(user(7765).FormRow, obj9);
 });
 let obj7 = { fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 14, lineHeight: 18, marginHorizontal: 16, color: require("Themes").colors.INTERACTIVE_TEXT_ACTIVE };
 const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
@@ -425,9 +425,9 @@ const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
     }
     return hasItem;
   }, items1);
-  let obj1 = id2(4383);
+  let obj1 = id2(4445);
   const name = obj1.getName(id2.guild_id, id2.id, id);
-  let obj2 = id(8924);
+  let obj2 = id(9101);
   obj = {
     onPress() {
       return callback(id);
@@ -443,7 +443,7 @@ const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
     labelCallScreen = tmp.labelCallScreen;
   }
   obj[1] = labelCallScreen;
-  obj[1] = closure_11(id(7639).FormRow.Label, obj);
+  obj[1] = closure_11(id(7765).FormRow.Label, obj);
   obj1 = { user: id, guildId: id2.guild_id, size: null };
   obj1[2] = id(1297).AvatarSizes.REFRESH_MEDIUM_32;
   obj[2] = closure_11(id(1297).Avatar, obj1);
@@ -451,7 +451,7 @@ const memoResult = importAllResult.memo(function DisconnectedUserRow(user) {
     obj[3] = null;
     obj2 = {};
     const merged = Object.assign(obj);
-    return tmp7(tmp2(7639).FormRow, obj2);
+    return tmp7(tmp2(7765).FormRow, obj2);
   } else {
     const obj3 = { channelId: null, userId: null, isActionSheet: null };
     id2 = id2.id;
@@ -474,7 +474,7 @@ const memoResult1 = importAllResult.memo(function VoiceMemberUser(voiceState) {
     }
     return outer1_7.getChannel(channelId);
   });
-  const name = importDefault(4032).useName(voiceState.user);
+  const name = importDefault(4094).useName(voiceState.user);
   if (null != voiceState) {
     if (voiceState.selfStream) {
       obj = {};

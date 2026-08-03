@@ -1,10 +1,10 @@
-// Module ID: 12376
-// Function ID: 12377
+// Module ID: 12474
+// Function ID: 12475
 // Name: createFriendInvite
-// Dependencies: [17, 3830, 6025, 7730, 1236, 4032, 1416, 2]
+// Dependencies: [17, 3892, 7104, 7851, 1236, 4094, 1416, 2]
 // Exports: createFriendInvite
 
-// Module 12376 (createFriendInvite)
+// Module 12474 (createFriendInvite)
 import { Image } from "get ActivityIndicator";
 import upsertRelationship from "upsertRelationship";
 import { InviteTypes } from "InviteSendStates";
@@ -18,7 +18,7 @@ export const createFriendInvite = function createFriendInvite(inviter) {
   let acceptLabelGreenColor;
   let baseColors;
   let colors;
-  ({ colors, baseColors } = importDefault(7730)(arg3));
+  ({ colors, baseColors } = importDefault(7851)(arg3));
   const intl = require(1236) /* getSystemLocale */.intl;
   const string = intl.string;
   const t = require(1236) /* getSystemLocale */.t;
@@ -35,7 +35,7 @@ export const createFriendInvite = function createFriendInvite(inviter) {
   }
   let str3 = "";
   if (null != inviter.inviter) {
-    let tmpResult = tmp(4032);
+    let tmpResult = tmp(4094);
     str3 = tmpResult.getUserTag(inviter.inviter);
   }
   let isFriendResult = null != inviter.inviter;

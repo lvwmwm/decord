@@ -1,10 +1,10 @@
-// Module ID: 10736
-// Function ID: 10737
+// Module ID: 10844
+// Function ID: 10845
 // Name: ChannelCallNavigatorIcon
-// Dependencies: [19, 17, 10249, 676, 21, 4193, 712, 4721, 4039, 4594, 1297, 2]
+// Dependencies: [19, 17, 10388, 676, 21, 4255, 712, 4783, 4101, 4656, 1297, 2]
 // Exports: default
 
-// Module 10736 (ChannelCallNavigatorIcon)
+// Module 10844 (ChannelCallNavigatorIcon)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { resetFocusTimer } from "VoiceChatDrawerState";
@@ -76,7 +76,7 @@ export default function ChannelCallNavigatorIcon(disableBackground) {
     if (!flag) {
       const obj1 = { blurTheme: "dark", style: null };
       obj1[1] = absoluteFill.absoluteFill;
-      tmp2Result = tmp2(importDefault(4594), obj1);
+      tmp2Result = tmp2(importDefault(4656), obj1);
     }
   }
   const items1 = [tmp2Result, , ];
@@ -106,6 +106,6 @@ export default function ChannelCallNavigatorIcon(disableBackground) {
   obj[1] = items1;
   const items2 = [closure_7(closure_3, obj), children];
   obj[5] = items2;
-  obj[1] = closure_7(require(4721) /* PressableBase */.PressableOpacity, obj);
+  obj[1] = closure_7(require(4783) /* PressableBase */.PressableOpacity, obj);
   return closure_6(closure_3, obj);
 };

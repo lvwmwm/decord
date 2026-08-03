@@ -1,10 +1,10 @@
-// Module ID: 4088
-// Function ID: 4089
+// Module ID: 4150
+// Function ID: 4151
 // Name: formatSize
 // Dependencies: [1236, 2]
 // Exports: formatKbSize
 
-// Module 4088 (formatSize)
+// Module 4150 (formatSize)
 function formatSize(result, arg1) {
   let tmp = arg1;
   if (arg1 === undefined) {

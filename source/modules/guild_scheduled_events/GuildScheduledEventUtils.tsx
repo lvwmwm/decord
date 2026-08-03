@@ -1,10 +1,10 @@
-// Module ID: 8327
-// Function ID: 8328
+// Module ID: 8632
+// Function ID: 8633
 // Name: getNextShownUpcomingEventNoticeType
-// Dependencies: [1378, 3775, 11, 2]
+// Dependencies: [1378, 3837, 11, 2]
 // Exports: getNextShownUpcomingEventNoticeType
 
-// Module 8327 (getNextShownUpcomingEventNoticeType)
+// Module 8632 (getNextShownUpcomingEventNoticeType)
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
 
 let c3;
@@ -15,12 +15,12 @@ let obj1;
 const result = require("DISCORD_EPOCH").fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventUtils.tsx");
 
 export const getNextShownUpcomingEventNoticeType = function getNextShownUpcomingEventNoticeType(guildScheduledEvent, arg1, arg2, flag) {
-  const obj = importDefault(3775)();
+  const obj = importDefault(3837)();
   const time = new Date(guildScheduledEvent.scheduled_start_time).getTime();
   const diff = time - closure_4;
   if (obj.isBetween(diff, time)) {
     if (null != arg1) {
-      const obj4 = tmp(3775)(arg1);
+      const obj4 = tmp(3837)(arg1);
       const isBetweenResult = obj4.isBetween(diff, time);
       let EVENT_STARTING_SOON;
       if (!isBetweenResult) {

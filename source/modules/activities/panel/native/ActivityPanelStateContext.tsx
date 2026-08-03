@@ -1,9 +1,9 @@
-// Module ID: 15863
-// Function ID: 15864
+// Module ID: 15927
+// Function ID: 15928
 // Name: useActivityWebViewLock
-// Dependencies: [19, 5692, 7685, 2]
+// Dependencies: [19, 10404, 7808, 2]
 
-// Module 15863 (useActivityWebViewLock)
+// Module 15927 (useActivityWebViewLock)
 import createFakeSharedValue from "createFakeSharedValue";
 import createFakeSharedValue from "createFakeSharedValue";
 import createFakeSharedValue from "createFakeSharedValue";

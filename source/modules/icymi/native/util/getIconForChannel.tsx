@@ -1,10 +1,10 @@
-// Module ID: 15386
-// Function ID: 15387
+// Module ID: 15453
+// Function ID: 15454
 // Name: getIconForChannel
-// Dependencies: [676, 4712, 4719, 4715, 4699, 4706, 4705, 2]
+// Dependencies: [676, 4774, 4781, 4777, 4761, 4768, 4767, 2]
 // Exports: getIconForChannel
 
-// Module 15386 (getIconForChannel)
+// Module 15453 (getIconForChannel)
 import { ChannelTypes } from "ME";
 
 const result = require("VoiceNormalIcon").fileFinishedImporting("modules/icymi/native/util/getIconForChannel.tsx");
@@ -12,18 +12,18 @@ const result = require("VoiceNormalIcon").fileFinishedImporting("modules/icymi/n
 export const getIconForChannel = function getIconForChannel(type) {
   type = type.type;
   if (ChannelTypes.GUILD_ANNOUNCEMENT === type) {
-    return require(4712) /* AnnouncementsIcon */.AnnouncementsIcon;
+    return require(4774) /* AnnouncementsIcon */.AnnouncementsIcon;
   } else if (tmp.GUILD_VOICE === type) {
-    return require(4719) /* VoiceNormalIcon */.VoiceNormalIcon;
+    return require(4781) /* VoiceNormalIcon */.VoiceNormalIcon;
   } else if (tmp.GUILD_STAGE_VOICE === type) {
-    return require(4715) /* StageIcon */.StageIcon;
+    return require(4777) /* StageIcon */.StageIcon;
   } else if (tmp.GUILD_TEXT === type) {
-    return require(4699) /* TextIcon */.TextIcon;
+    return require(4761) /* TextIcon */.TextIcon;
   } else if (tmp.GUILD_FORUM === type) {
-    return require(4706) /* ForumIcon */.ForumIcon;
+    return require(4768) /* ForumIcon */.ForumIcon;
   } else if (tmp.GUILD_MEDIA === type) {
-    return require(4705) /* ImageIcon */.ImageIcon;
+    return require(4767) /* ImageIcon */.ImageIcon;
   } else {
-    return require(4699) /* TextIcon */.TextIcon;
+    return require(4761) /* TextIcon */.TextIcon;
   }
 };

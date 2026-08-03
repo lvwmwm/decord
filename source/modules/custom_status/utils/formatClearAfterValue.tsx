@@ -1,10 +1,10 @@
-// Module ID: 11995
-// Function ID: 11996
+// Module ID: 12091
+// Function ID: 12092
 // Name: formatClearAfterValue
-// Dependencies: [11984, 3863, 1236, 687, 1351, 2]
+// Dependencies: [12080, 3925, 1236, 687, 1351, 2]
 // Exports: default
 
-// Module 11995 (formatClearAfterValue)
+// Module 12091 (formatClearAfterValue)
 import { ClearAfterValues } from "StatusTypes";
 
 let result = require("getSystemLocale").fileFinishedImporting("modules/custom_status/utils/formatClearAfterValue.tsx");
@@ -17,7 +17,7 @@ export default function formatClearAfterValue(arg0) {
     const date = new Date();
     const _Date12 = Date;
     const date1 = new Date(sum);
-    const obj8 = require(3863) /* resetCache */;
+    const obj8 = require(3925) /* resetCache */;
     const intl5 = require(1236) /* getSystemLocale */.intl;
     if (isSameDayResult) {
       const data8 = intl5.data;
@@ -37,7 +37,7 @@ export default function formatClearAfterValue(arg0) {
     const date2 = new Date();
     const _Date9 = Date;
     const date3 = new Date(sum1);
-    const obj6 = require(3863) /* resetCache */;
+    const obj6 = require(3925) /* resetCache */;
     const intl4 = require(1236) /* getSystemLocale */.intl;
     if (isSameDayResult1) {
       const data6 = intl4.data;
@@ -56,7 +56,7 @@ export default function formatClearAfterValue(arg0) {
     const date4 = new Date();
     const _Date6 = Date;
     const date5 = new Date(sum2);
-    const obj4 = require(3863) /* resetCache */;
+    const obj4 = require(3925) /* resetCache */;
     const intl3 = require(1236) /* getSystemLocale */.intl;
     if (isSameDayResult2) {
       const data4 = intl3.data;
@@ -72,7 +72,7 @@ export default function formatClearAfterValue(arg0) {
     const _Date = Date;
     const result1 = 30 * importDefault(687).Millis.MINUTE;
     const sum3 = Date.now() + result1;
-    obj1 = require(3863) /* resetCache */;
+    obj1 = require(3925) /* resetCache */;
     const _Date2 = Date;
     const date6 = new Date();
     const _Date3 = Date;

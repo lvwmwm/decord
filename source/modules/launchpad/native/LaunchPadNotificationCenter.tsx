@@ -1,8 +1,8 @@
-// Module ID: 15844
-// Function ID: 15845
-// Dependencies: [19, 21, 4193, 15293, 2]
+// Module ID: 15908
+// Function ID: 15909
+// Dependencies: [19, 21, 4255, 15360, 2]
 
-// Module 15844
+// Module 15908
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import importAllResult from "noop";
@@ -10,7 +10,7 @@ import importAllResult from "noop";
 let closure_3 = createCacheKey.createStyles({ wrapper: { height: "100%" } });
 const memoResult = require("noop").memo(function NotificationsContent() {
   const tmp = callback();
-  return jsx(importDefault(15293), { style: callback().wrapper, nestedInLaunchPad: true });
+  return jsx(importDefault(15360), { style: callback().wrapper, nestedInLaunchPad: true });
 });
 const result = require("createCacheKey").fileFinishedImporting("modules/launchpad/native/LaunchPadNotificationCenter.tsx");
 

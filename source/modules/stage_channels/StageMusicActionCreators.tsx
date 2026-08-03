@@ -1,10 +1,10 @@
-// Module ID: 10723
-// Function ID: 10724
+// Module ID: 10831
+// Function ID: 10832
 // Name: updateStageMusicMuted
 // Dependencies: [709, 2]
 // Exports: updateStageMusicMuted, updateStageMusicShouldPlay
 
-// Module 10723 (updateStageMusicMuted)
+// Module 10831 (updateStageMusicMuted)
 const result = require("set").fileFinishedImporting("modules/stage_channels/StageMusicActionCreators.tsx");
 
 export const updateStageMusicMuted = function updateStageMusicMuted(muted) {

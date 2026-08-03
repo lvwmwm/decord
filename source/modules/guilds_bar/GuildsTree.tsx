@@ -1,10 +1,10 @@
-// Module ID: 5033
-// Function ID: 5034
+// Module ID: 5095
+// Function ID: 5096
 // Name: GuildsNodeType
 // Dependencies: [38, 12, 2]
 // Exports: createFolderNode, createGuildNode
 
-// Module 5033 (GuildsNodeType)
+// Module 5095 (GuildsNodeType)
 let obj = { ROOT: "root", FOLDER: "folder", GUILD: "guild" };
 const result = require("set").fileFinishedImporting("modules/guilds_bar/GuildsTree.tsx");
 class GuildsTree {

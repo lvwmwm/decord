@@ -1,10 +1,10 @@
-// Module ID: 11613
-// Function ID: 11614
+// Module ID: 11720
+// Function ID: 11721
 // Name: useIsNewGamesCoachmarkEnabled
 // Dependencies: [1452, 2]
 // Exports: useIsNewGamesCoachmarkEnabled
 
-// Module 11613 (useIsNewGamesCoachmarkEnabled)
+// Module 11720 (useIsNewGamesCoachmarkEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

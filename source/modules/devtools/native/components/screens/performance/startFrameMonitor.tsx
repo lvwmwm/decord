@@ -1,10 +1,10 @@
-// Module ID: 14846
-// Function ID: 14847
+// Module ID: 14913
+// Function ID: 14914
 // Name: FRAME_BUDGET_MS
 // Dependencies: [2]
 // Exports: startFrameMonitor
 
-// Module 14846 (FRAME_BUDGET_MS)
+// Module 14913 (FRAME_BUDGET_MS)
 let c0 = 16.666666666666668;
 const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/performance/startFrameMonitor.tsx");
 

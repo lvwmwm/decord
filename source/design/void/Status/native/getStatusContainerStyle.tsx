@@ -1,10 +1,10 @@
-// Module ID: 13166
-// Function ID: 13167
+// Module ID: 13229
+// Function ID: 13230
 // Name: STATUS_PADDING
 // Dependencies: [1298, 2]
 // Exports: default
 
-// Module 13166 (STATUS_PADDING)
+// Module 13229 (STATUS_PADDING)
 import STATUS_PADDING from "STATUS_PADDING";
 
 STATUS_PADDING = STATUS_PADDING.STATUS_PADDING;

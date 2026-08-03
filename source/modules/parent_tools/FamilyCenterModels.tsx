@@ -29,7 +29,7 @@ ScheduleRuleRecord["fromServer"] = function fromServer(end_time) {
   ({ rule_id, label, start_time } = end_time);
   end_time = end_time.end_time;
   ({ days, enabled } = end_time);
-  if (typeof ScheduleRuleRecord !== "fileFinishedImporting") {
+  if (typeof ScheduleRuleRecord !== "error") {
     HermesBuiltin.throwTypeError();
   }
   const tmp2 = new ScheduleRuleRecord("Trying to call a non-function", ScheduleRuleRecord, new.target, rule_id, label, start_time, end_time, days, enabled);
@@ -43,7 +43,7 @@ ScheduleRuleRecord["fromServer"] = function fromServer(end_time) {
   return tmp2;
 };
 ScheduleRuleRecord["fromCache"] = function fromCache(arg0) {
-  if (typeof ScheduleRuleRecord !== "fileFinishedImporting") {
+  if (typeof ScheduleRuleRecord !== "error") {
     HermesBuiltin.throwTypeError();
   }
   const tmp2 = new ScheduleRuleRecord("Trying to call a non-function", ScheduleRuleRecord);
@@ -125,7 +125,7 @@ RestrictedScheduleRecord["fromServer"] = function fromServer(rules) {
   if (null != rules) {
     rules = rules.rules;
     const mapped = rules.map(ScheduleRuleRecord.fromServer);
-    if (typeof RestrictedScheduleRecord !== "fileFinishedImporting") {
+    if (typeof RestrictedScheduleRecord !== "error") {
       HermesBuiltin.throwTypeError();
     }
     const tmp9 = new RestrictedScheduleRecord("Trying to call a non-function", rules, RestrictedScheduleRecord, new.target);
@@ -141,7 +141,7 @@ RestrictedScheduleRecord["fromCache"] = function fromCache(rules) {
   if (null != rules) {
     rules = rules.rules;
     const mapped = rules.map(ScheduleRuleRecord.fromCache);
-    if (typeof RestrictedScheduleRecord !== "fileFinishedImporting") {
+    if (typeof RestrictedScheduleRecord !== "error") {
       HermesBuiltin.throwTypeError();
     }
     const tmp9 = new RestrictedScheduleRecord("Trying to call a non-function", rules, RestrictedScheduleRecord, new.target);
@@ -314,7 +314,7 @@ export const ensureRestrictedScheduleRecord = function ensureRestrictedScheduleR
     } else {
       let length = restrictedSchedule.rules.length;
       if (0 === length) {
-        if (typeof obj !== "fileFinishedImporting") {
+        if (typeof obj !== "error") {
           HermesBuiltin.throwTypeError();
         }
         const items = [];

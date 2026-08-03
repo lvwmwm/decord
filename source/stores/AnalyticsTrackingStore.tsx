@@ -1,9 +1,9 @@
-// Module ID: 5725
-// Function ID: 5726
+// Module ID: 6819
+// Function ID: 6820
 // Name: result
-// Dependencies: [1218, 676, 503, 709, 5726, 698, 696, 2]
+// Dependencies: [1218, 676, 503, 709, 6820, 698, 696, 6829, 2]
 
-// Module 5725 (result)
+// Module 6819 (result)
 import importDefaultResult from "fetchFingerprint";
 import encodeProperties from "encodeProperties";
 
@@ -15,7 +15,7 @@ encodeProperties = {
   waitFor: items,
   getFingerprint: importDefaultResult.getFingerprint,
   getSessionId() {
-    const session = require(5726) /* trackHeartbeat */.getSession();
+    const session = require(6820) /* trackHeartbeat */.getSession();
     return session.then((uuid) => {
       let sessionId;
       if (uuid != null) {
@@ -27,7 +27,8 @@ encodeProperties = {
   getLaunchSignature() {
     return require(698) /* expandEventProperties */.launchSignature;
   },
-  scheduleWhenIdle: require("setOriginWindow").requestSafeIdleCallback
+  scheduleWhenIdle: require("setOriginWindow").requestSafeIdleCallback,
+  sendUnloadRequest: require("sendUnloadRequest").sendUnloadRequest
 };
 encodeProperties = {
   CONNECTION_OPEN(arg0) {

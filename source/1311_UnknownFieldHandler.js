@@ -15,7 +15,7 @@ if (!UnknownFieldHandler) {
 }
 UnknownFieldHandler.symbol = Symbol.for("protobuf-ts/unknown");
 UnknownFieldHandler.onRead = (arg0, arg1, no, wireType, data) => {
-  if (typeof is !== "fileFinishedImporting") {
+  if (typeof is !== "error") {
     HermesBuiltin.throwTypeError();
   }
   let isArray = arg1;
@@ -40,7 +40,7 @@ UnknownFieldHandler.onWrite = (arg0, arg1, tag) => {
   }
 };
 UnknownFieldHandler.list = (arg0, arg1) => {
-  if (typeof is !== "fileFinishedImporting") {
+  if (typeof is !== "error") {
     HermesBuiltin.throwTypeError();
   }
   let isArray = arg0;

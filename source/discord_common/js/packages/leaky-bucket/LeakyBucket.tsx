@@ -1,9 +1,9 @@
-// Module ID: 10647
-// Function ID: 10648
+// Module ID: 10700
+// Function ID: 10701
 // Name: _processQueue
 // Dependencies: [2]
 
-// Module 10647 (_processQueue)
+// Module 10700 (_processQueue)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/leaky-bucket/LeakyBucket.tsx");
 class LeakyBucket {
   constructor(arg0, arg1) {

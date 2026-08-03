@@ -1,10 +1,10 @@
-// Module ID: 14681
-// Function ID: 14682
+// Module ID: 14748
+// Function ID: 14749
 // Name: useAuthorizedSlayerApplications
-// Dependencies: [19, 5127, 589, 10909, 5527, 2]
+// Dependencies: [19, 5189, 589, 11031, 5589, 2]
 // Exports: default
 
-// Module 14681 (useAuthorizedSlayerApplications)
+// Module 14748 (useAuthorizedSlayerApplications)
 import noop from "noop";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
 import { FetchState } from "recomputeFromAppTokens";

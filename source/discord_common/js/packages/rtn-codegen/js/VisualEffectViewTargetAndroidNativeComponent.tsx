@@ -1,9 +1,9 @@
-// Module ID: 15652
-// Function ID: 15653
+// Module ID: 15717
+// Function ID: 15718
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [65, 2]
 
-// Module 15652 (__INTERNAL_VIEW_CONFIG)
+// Module 15717 (__INTERNAL_VIEW_CONFIG)
 import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 const obj = { uiViewClassName: "DCDVisualEffectViewTarget", validAttributes: {} };

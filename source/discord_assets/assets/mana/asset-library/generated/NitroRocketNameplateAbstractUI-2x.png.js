@@ -1,9 +1,9 @@
-// Module ID: 7330
-// Function ID: 7331
+// Module ID: 6466
+// Function ID: 6467
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7330 (metadata)
+// Module 6466 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroRocketNameplateAbstractUI-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/3628d7213d3484d71f41db462124058d9b184a242c0ce28a05f34072168958bb.png";

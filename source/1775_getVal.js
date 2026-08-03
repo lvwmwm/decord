@@ -34,7 +34,7 @@ function validateType(extrapolateLeft) {
   obj = { extrapolateLeft: obj.EXTEND, extrapolateRight: obj.EXTEND };
   if (extrapolateLeft) {
     if (typeof extrapolateLeft === "y") {
-      if (typeof isExtrapolate !== "fileFinishedImporting") {
+      if (typeof isExtrapolate !== "error") {
         HermesBuiltin.throwTypeError();
       }
       if (tmp15) {
@@ -50,7 +50,7 @@ function validateType(extrapolateLeft) {
       if (!extrapolateLeft.extrapolateLeft) {
         if (extrapolateLeft.extrapolateRight) {
           const extrapolateRight = extrapolateLeft.extrapolateRight;
-          if (typeof isExtrapolate !== "fileFinishedImporting") {
+          if (typeof isExtrapolate !== "error") {
             HermesBuiltin.throwTypeError();
           }
           const tmp5 = extrapolateRight === tmp.EXTEND || extrapolateRight === tmp.CLAMP || extrapolateRight === tmp.IDENTITY;
@@ -60,7 +60,7 @@ function validateType(extrapolateLeft) {
         return obj;
       } else {
         extrapolateLeft = extrapolateLeft.extrapolateLeft;
-        if (typeof isExtrapolate !== "fileFinishedImporting") {
+        if (typeof isExtrapolate !== "error") {
           HermesBuiltin.throwTypeError();
         }
         const tmp3 = extrapolateLeft === tmp.EXTEND || extrapolateLeft === tmp.CLAMP || extrapolateLeft === tmp.IDENTITY;
@@ -92,7 +92,7 @@ function internalInterpolate(arg0, arg1, extrapolateLeft) {
     }
     if (num * sum < num * leftEdgeOutput) {
       extrapolateLeft = extrapolateLeft.extrapolateLeft;
-      if (typeof getVal !== "fileFinishedImporting") {
+      if (typeof getVal !== "error") {
         HermesBuiltin.throwTypeError();
       }
       if (obj.IDENTITY !== extrapolateLeft) {
@@ -111,7 +111,7 @@ function internalInterpolate(arg0, arg1, extrapolateLeft) {
       return sum;
     } else {
       const extrapolateRight = extrapolateLeft.extrapolateRight;
-      if (typeof getVal !== "fileFinishedImporting") {
+      if (typeof getVal !== "error") {
         HermesBuiltin.throwTypeError();
       }
       let tmp5 = tmp10;

@@ -1,10 +1,10 @@
-// Module ID: 12232
-// Function ID: 12233
+// Module ID: 12329
+// Function ID: 12330
 // Name: _maybeFetchCollectionsWithProducts
-// Dependencies: [5, 1946, 12230, 5822, 676, 687, 709, 4431, 4093, 2]
+// Dependencies: [5, 1946, 12327, 6917, 676, 687, 709, 4493, 4155, 2]
 // Exports: maybeFetchCollectionsForApplication, maybeFetchCollectionsWithProducts
 
-// Module 12232 (_maybeFetchCollectionsWithProducts)
+// Module 12329 (_maybeFetchCollectionsWithProducts)
 import set from "set";
 import _getSystemLocale from "_getSystemLocale";
 import getFetchState from "getFetchState";

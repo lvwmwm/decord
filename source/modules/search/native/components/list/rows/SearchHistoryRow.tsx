@@ -1,9 +1,9 @@
-// Module ID: 15514
-// Function ID: 15515
+// Module ID: 15581
+// Function ID: 15582
 // Name: SearchHistoryRemoveIcon
-// Dependencies: [5, 19, 17, 1372, 4205, 1874, 9108, 21, 4193, 712, 11474, 4721, 5179, 15502, 10114, 15512, 4189, 8298, 647, 15513, 7989, 4203, 15511, 15515, 15523, 1236, 2]
+// Dependencies: [5, 19, 17, 1372, 4267, 1874, 9281, 21, 4255, 712, 11584, 4783, 5241, 15569, 10253, 15579, 4251, 5905, 647, 15580, 8107, 4265, 15578, 15582, 15590, 1236, 2]
 
-// Module 15514 (SearchHistoryRemoveIcon)
+// Module 15581 (SearchHistoryRemoveIcon)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import importAllResult from "GroupDMRow";
 import { View } from "MagnifyingGlassIcon";
@@ -11,7 +11,7 @@ import ensureGuildLoaded from "ensureGuildLoaded";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import closure_8 from "mergeGuildAvatar";
 import { SearchHistoryItemTypes } from "MessageEmbedTypes";
-import jsxProd from "module_4203";
+import jsxProd from "module_4265";
 import createCacheKey from "createCacheKey";
 
 let c10;
@@ -25,8 +25,8 @@ function SearchHistoryRemoveIcon(searchContext) {
     const result = searchHistoryItem(outer1_2[10]).removeSearchHistoryItem(searchContext, searchHistoryItem);
   }, items);
   const obj = { onPress: callback, accessibilityRole: "button", unstable_pressDelay: 130, style: { marginLeft: 16 }, hitSlop: { bottom: 16, left: 16, right: 16, top: 16 }, children: null };
-  obj[5] = callback2(searchContext(5179).XSmallIcon, { size: "sm", color: "interactive-text-default" });
-  return callback2(searchContext(4721).PressableHighlight, obj);
+  obj[5] = callback2(searchContext(5241).XSmallIcon, { size: "sm", color: "interactive-text-default" });
+  return callback2(searchContext(4783).PressableHighlight, obj);
 }
 function SearchHistoryTextRow(searchContext) {
   searchContext = searchContext.searchContext;
@@ -35,7 +35,7 @@ function SearchHistoryTextRow(searchContext) {
   let onPressSearchHistoryText;
   const tmp = callback3();
   dependencyMap = tmp;
-  let obj = searchContext(15502);
+  let obj = searchContext(15569);
   onPressSearchHistoryText = obj.useOnPressSearchHistoryText({ searchContext });
   const items = [onPressSearchHistoryText, searchContext, , , ];
   ({ tags: arr[2], text: arr[3], type: arr[4] } = searchHistoryItem);
@@ -56,14 +56,14 @@ function SearchHistoryTextRow(searchContext) {
     });
   }
   obj = { label: null, onPress: null, trailing: null, iconContainerStyle: null, icon: null };
-  const items1 = [mapped, closure_10(searchContext(4189).Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: searchHistoryItem.text })];
+  const items1 = [mapped, closure_10(searchContext(4251).Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: searchHistoryItem.text })];
   obj[1] = items1;
   obj[0] = closure_11(View, obj);
   obj[1] = callback;
   obj[2] = closure_10(SearchHistoryRemoveIcon, { searchContext, searchHistoryItem });
   obj[3] = tmp.textIconContainer;
-  obj[4] = closure_10(View, { style: tmp.iconContainer, children: closure_10(searchContext(8298).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) });
-  return closure_10(searchContext(15512).SearchListRow, obj);
+  obj[4] = closure_10(View, { style: tmp.iconContainer, children: closure_10(searchContext(5905).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) });
+  return closure_10(searchContext(15579).SearchListRow, obj);
 }
 function SearchHistoryGroupDMRow(searchContext) {
   searchContext = searchContext.searchContext;

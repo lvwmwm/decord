@@ -1,9 +1,9 @@
-// Module ID: 6990
-// Function ID: 6991
+// Module ID: 6126
+// Function ID: 6127
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6990 (metadata)
+// Module 6126 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DiscordShopLockupLogo-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/3b0cd1cd7092b4920ff25c1612af89c97b34092e2760747bfa00128db8f0e4fe.png";

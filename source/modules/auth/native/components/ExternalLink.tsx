@@ -1,10 +1,10 @@
-// Module ID: 14912
-// Function ID: 14913
+// Module ID: 14979
+// Function ID: 14980
 // Name: ExternalLink
-// Dependencies: [19, 17, 21, 4193, 712, 9202, 1480, 9226, 1236, 4189, 5026, 4604, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 9375, 1480, 9399, 1236, 4251, 5088, 4666, 2]
 // Exports: default
 
-// Module 14912 (ExternalLink)
+// Module 14979 (ExternalLink)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

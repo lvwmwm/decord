@@ -1,10 +1,10 @@
-// Module ID: 15426
-// Function ID: 15427
+// Module ID: 15493
+// Function ID: 15494
 // Name: UnavailableNotice
-// Dependencies: [19, 17, 21, 4193, 712, 5145, 15231, 4189, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 5207, 15214, 4251, 2]
 // Exports: default
 
-// Module 15426 (UnavailableNotice)
+// Module 15493 (UnavailableNotice)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,15 +37,15 @@ export default function UnavailableNotice(brightTitle) {
   ({ container: arr[0], unavailableContainer: arr[1] } = tmp);
   obj = { style: tmp.unavailableInfo, children: null };
   obj = { source: null };
-  obj[0] = importDefault(15231);
-  const items1 = [callback(importDefault(5145), obj), , ];
+  obj[0] = importDefault(15214);
+  const items1 = [callback(importDefault(5207), obj), , ];
   const items2 = [tmp.joinCtaTitle, ];
   if (brightTitle) {
     brightTitle = tmp.brightTitle;
   }
   items2[1] = brightTitle;
-  items1[1] = callback(require(4189) /* Text */.Text, { variant: "heading-lg/extrabold", color: "text-default", style: items2, children: title });
-  items1[2] = callback(require(4189) /* Text */.Text, { style: tmp.unavailableDescription, variant: "text-sm/medium", color: "text-default", children: description });
+  items1[1] = callback(require(4251) /* Text */.Text, { variant: "heading-lg/extrabold", color: "text-default", style: items2, children: title });
+  items1[2] = callback(require(4251) /* Text */.Text, { style: tmp.unavailableDescription, variant: "text-sm/medium", color: "text-default", children: description });
   obj[1] = items1;
   obj[1] = closure_5(View, obj);
   return callback(View, obj);

@@ -1,10 +1,10 @@
-// Module ID: 7731
-// Function ID: 7732
+// Module ID: 7852
+// Function ID: 7853
 // Name: _formatMessageCountLabel
 // Dependencies: [1235, 11, 1236, 2]
 // Exports: formatMessageCountLabel, formatMobileMessageCountLabel, getMessageCountText, shouldUseOldMaxMessageCount
 
-// Module 7731 (_formatMessageCountLabel)
+// Module 7852 (_formatMessageCountLabel)
 import AbortCodes from "AbortCodes";
 
 let c3;

@@ -1,9 +1,9 @@
-// Module ID: 5529
-// Function ID: 5530
+// Module ID: 5591
+// Function ID: 5592
 // Name: GameIcon
-// Dependencies: [19, 17, 1876, 21, 4193, 712, 5530, 5531, 5532, 5533, 2]
+// Dependencies: [19, 17, 1876, 21, 4255, 712, 5592, 5593, 5594, 5595, 2]
 
-// Module 5529 (GameIcon)
+// Module 5591 (GameIcon)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PremiumSubscriptionSKUs } from "GuildFeatures";

@@ -1,10 +1,10 @@
-// Module ID: 12422
-// Function ID: 12423
+// Module ID: 12520
+// Function ID: 12521
 // Name: RemediationsElement
-// Dependencies: [19, 17, 21, 4193, 712, 5558, 1236, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 5620, 1236, 2]
 // Exports: default
 
-// Module 12422 (RemediationsElement)
+// Module 12520 (RemediationsElement)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -23,6 +23,6 @@ export default function RemediationsElement(children) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["k+QA9N"]);
   obj[2] = children.children;
-  obj[1] = jsx(require(5558) /* TableRowGroupTitle */.TableRowGroup, { title: null, hasIcons: true, children: null });
+  obj[1] = jsx(require(5620) /* TableRowGroupTitle */.TableRowGroup, { title: null, hasIcons: true, children: null });
   return <View title={null} hasIcons>{null}</View>;
 };

@@ -1,9 +1,9 @@
-// Module ID: 8321
-// Function ID: 8322
+// Module ID: 8626
+// Function ID: 8627
 // Name: guildEventDetailsParser
-// Dependencies: [2, 4183]
+// Dependencies: [2, 4245]
 
-// Module 8321 (guildEventDetailsParser)
+// Module 8626 (guildEventDetailsParser)
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/guildEventDetailsParser.native.tsx");
 
 export const guildEventDetailsParser = require("get defaultRules").parseGuildEventDescription;

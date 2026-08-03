@@ -1,13 +1,13 @@
-// Module ID: 5826
-// Function ID: 5827
+// Module ID: 6921
+// Function ID: 6922
 // Name: fromServer
-// Dependencies: [5827, 2]
+// Dependencies: [6922, 2]
 
-// Module 5826 (fromServer)
+// Module 6921 (fromServer)
 let prototype;
 prototype = function CollectiblesMarketingBadgeRecord(arg0) {
   const obj = Object.create(new.target.prototype);
-  obj.type = require(5827) /* CollectiblesMarketingType */.CollectiblesMarketingType.BADGE;
+  obj.type = require(6922) /* CollectiblesMarketingType */.CollectiblesMarketingType.BADGE;
   ({ dismissibleContent: tmp.dismissibleContent, version: tmp.version, refTargetBackground: tmp.refTargetBackground, badgeIcon: tmp.badgeIcon, badgeText: tmp.badgeText, showHoverGradient: tmp.showHoverGradient } = arg0);
   return obj;
 }.prototype;
@@ -15,11 +15,11 @@ prototype["fromServer"] = function fromServer(arg0) {
   let obj = {};
   const merged = Object.assign(arg0);
   ({ dismissible_content: obj.dismissibleContent, ref_target_background: obj.refTargetBackground, badge_icon: obj.badgeIcon, badge_text: obj.badgeText, show_hover_gradient: obj.showHoverGradient } = arg0);
-  if (typeof prototype !== "fileFinishedImporting") {
+  if (typeof prototype !== "error") {
     HermesBuiltin.throwTypeError();
   }
   obj = Object.create(prototype.prototype);
-  obj.type = require(5827) /* CollectiblesMarketingType */.CollectiblesMarketingType.BADGE;
+  obj.type = require(6922) /* CollectiblesMarketingType */.CollectiblesMarketingType.BADGE;
   ({ dismissibleContent: tmp3.dismissibleContent, version: tmp3.version, refTargetBackground: tmp3.refTargetBackground, badgeIcon: tmp3.badgeIcon, badgeText: tmp3.badgeText, showHoverGradient: tmp3.showHoverGradient } = obj);
   return obj;
 };

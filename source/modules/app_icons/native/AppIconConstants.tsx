@@ -1,10 +1,10 @@
-// Module ID: 6586
-// Function ID: 6587
+// Module ID: 7571
+// Function ID: 7572
 // Name: items
-// Dependencies: [6587, 6588, 1236, 6589, 6590, 6591, 6592, 6593, 6594, 6595, 6596, 6597, 6598, 6599, 6600, 6601, 6602, 6603, 6604, 6605, 6606, 6607, 6608, 6609, 6610, 6611, 6612, 2]
+// Dependencies: [7572, 7573, 1236, 7574, 7575, 7576, 7577, 7578, 7579, 7580, 7581, 7582, 7583, 7584, 7585, 7586, 7587, 7588, 7589, 7590, 7591, 7592, 7593, 7594, 7595, 7596, 7597, 2]
 // Exports: getDefaultIcon, getIconById, getIcons, getLimitedAlternateIcons, getOfficialAlternateIcons, isIconExpired
 
-// Module 6586 (items)
+// Module 7571 (items)
 import { intl } from "getSystemLocale";
 import { intl as intl2 } from "getSystemLocale";
 import { intl as intl3 } from "getSystemLocale";
@@ -106,7 +106,7 @@ let closure_4 = [];
 const result = require("getSystemLocale").fileFinishedImporting("modules/app_icons/native/AppIconConstants.tsx");
 
 export const getDefaultIcon = function getDefaultIcon() {
-  const obj = { id: require(6587) /* FreemiumAppIconIds */.FreemiumAppIconIds.DEFAULT, iconSource: importDefault(6588), name: null, isPremium: false };
+  const obj = { id: require(7572) /* FreemiumAppIconIds */.FreemiumAppIconIds.DEFAULT, iconSource: importDefault(7573), name: null, isPremium: false };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.ANxkLy);
   return obj;
@@ -140,7 +140,7 @@ export const getLimitedAlternateIcons = function getLimitedAlternateIcons() {
   });
 };
 export const getIcons = function getIcons() {
-  const obj = { id: require(6587) /* FreemiumAppIconIds */.FreemiumAppIconIds.DEFAULT, iconSource: importDefault(6588), name: null, isPremium: false };
+  const obj = { id: require(7572) /* FreemiumAppIconIds */.FreemiumAppIconIds.DEFAULT, iconSource: importDefault(7573), name: null, isPremium: false };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.ANxkLy);
   items = [
@@ -166,7 +166,7 @@ export const getIcons = function getIcons() {
 };
 export const getIconById = function getIconById(currentAppIcon) {
   const _require = currentAppIcon;
-  let obj = { id: _require(6587).FreemiumAppIconIds.DEFAULT, iconSource: importDefault(6588), name: null, isPremium: false };
+  let obj = { id: _require(7572).FreemiumAppIconIds.DEFAULT, iconSource: importDefault(7573), name: null, isPremium: false };
   const intl = _require(1236).intl;
   obj[2] = intl.string(_require(1236).t.ANxkLy);
   items = [
@@ -191,8 +191,8 @@ export const getIconById = function getIconById(currentAppIcon) {
   let found = items.find((id) => id.id === closure_0);
   if (null == found) {
     obj = { id: null, iconSource: null, name: null, isPremium: false };
-    obj[0] = tmp(6587).FreemiumAppIconIds.DEFAULT;
-    obj[1] = importDefault(6588);
+    obj[0] = tmp(7572).FreemiumAppIconIds.DEFAULT;
+    obj[1] = importDefault(7573);
     const intl2 = tmp(1236).intl;
     obj[2] = intl2.string(tmp(1236).t.ANxkLy);
     found = obj;

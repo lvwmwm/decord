@@ -1,10 +1,10 @@
-// Module ID: 5130
-// Function ID: 5131
+// Module ID: 5192
+// Function ID: 5193
 // Name: ack
-// Dependencies: [5100, 1376, 1372, 5131, 1874, 676, 709, 11, 2]
+// Dependencies: [5162, 1376, 1372, 5193, 1874, 676, 709, 11, 2]
 // Exports: ackChannel, ackGuildFeature, ackUserFeature, bulkAck, clearOldestUnreadMessageId, disableAutomaticAck, enableAutomaticAck, localAck
 
-// Module 5130 (ack)
+// Module 5192 (ack)
 import rebuild from "rebuild";
 import { isReadableType } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";

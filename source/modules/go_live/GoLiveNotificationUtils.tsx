@@ -1,17 +1,17 @@
-// Module ID: 14476
-// Function ID: 14477
+// Module ID: 14543
+// Function ID: 14544
 // Name: onGoLiveNotificationSettingsChanged
-// Dependencies: [676, 3833, 3866, 698, 2]
+// Dependencies: [676, 3895, 3928, 698, 2]
 // Exports: onGoLiveNotificationSettingsChanged
 
-// Module 14476 (onGoLiveNotificationSettingsChanged)
+// Module 14543 (onGoLiveNotificationSettingsChanged)
 import { AnalyticEvents } from "ME";
 import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags";
 
 const result = require("explicitContentFromProto").fileFinishedImporting("modules/go_live/GoLiveNotificationUtils.tsx");
 
 export const onGoLiveNotificationSettingsChanged = function onGoLiveNotificationSettingsChanged(go_live_notifications) {
-  const StreamNotificationsEnabled = require(3866) /* explicitContentFromProto */.StreamNotificationsEnabled;
+  const StreamNotificationsEnabled = require(3928) /* explicitContentFromProto */.StreamNotificationsEnabled;
   StreamNotificationsEnabled.updateSetting(go_live_notifications);
   let obj = importDefault(698);
   obj = { update_type: constants.ACCOUNT, go_live_notifications };

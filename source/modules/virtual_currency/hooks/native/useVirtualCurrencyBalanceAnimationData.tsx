@@ -1,10 +1,10 @@
-// Module ID: 9820
-// Function ID: 9821
+// Module ID: 9965
+// Function ID: 9966
 // Name: useVirtualCurrencyBalanceAnimationData
-// Dependencies: [32, 19, 4185, 589, 8129, 2]
+// Dependencies: [32, 19, 4247, 589, 8460, 2]
 // Exports: useVirtualCurrencyBalanceAnimationData
 
-// Module 9820 (useVirtualCurrencyBalanceAnimationData)
+// Module 9965 (useVirtualCurrencyBalanceAnimationData)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

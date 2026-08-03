@@ -1,10 +1,10 @@
-// Module ID: 12513
-// Function ID: 12514
+// Module ID: 12606
+// Function ID: 12607
 // Name: LargeCountDownPill
-// Dependencies: [17, 21, 4193, 712, 3894, 1236, 4149, 4189, 2]
+// Dependencies: [17, 21, 4255, 712, 3956, 1236, 4211, 4251, 2]
 // Exports: default
 
-// Module 12513 (LargeCountDownPill)
+// Module 12606 (LargeCountDownPill)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -47,10 +47,10 @@ export default function LargeCountDownPill(countdownText) {
   obj = { style: tmp.largeCountdownPill, children: null };
   obj = { variant: "text-xs/bold", style: tmp.largeCountdownPillText, children: null };
   obj[2] = countdownText.countdownText.toUpperCase();
-  const items = [callback(_require(4189).Text, obj), ];
+  const items = [callback(_require(4251).Text, obj), ];
   const obj1 = { style: tmp.iconStyle, color: null };
   obj1[1] = importDefault(712).colors.TEXT_STATUS_IDLE;
-  items[1] = callback(_require(4149).CircleInformationIcon, obj1);
+  items[1] = callback(_require(4211).CircleInformationIcon, obj1);
   obj[1] = items;
   obj[1] = callback2(closure_4, obj);
   return callback(closure_3, obj);

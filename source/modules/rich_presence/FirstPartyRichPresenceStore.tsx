@@ -1,9 +1,9 @@
-// Module ID: 10486
-// Function ID: 10487
+// Module ID: 10624
+// Function ID: 10625
 // Name: updateActivities
-// Dependencies: [10487, 659, 589, 709, 2]
+// Dependencies: [10625, 659, 589, 709, 2]
 
-// Module 10486 (updateActivities)
+// Module 10624 (updateActivities)
 import { Store } from "initialize";
 
 function updateActivities() {

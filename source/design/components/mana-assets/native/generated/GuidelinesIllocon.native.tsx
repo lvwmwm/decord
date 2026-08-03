@@ -1,10 +1,10 @@
-// Module ID: 7225
-// Function ID: 7226
+// Module ID: 6361
+// Function ID: 6362
 // Name: GuidelinesIllocon
-// Dependencies: [21, 5145, 7226, 2]
+// Dependencies: [21, 5207, 6362, 2]
 // Exports: GuidelinesIllocon
 
-// Module 7225 (GuidelinesIllocon)
+// Module 6361 (GuidelinesIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GuidelinesIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const GuidelinesIllocon = function GuidelinesIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7226);
+  obj[0] = importDefault(6362);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5145), { uri: null });
+  return jsx(importDefault(5207), { uri: null });
 };

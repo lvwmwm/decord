@@ -1,10 +1,10 @@
-// Module ID: 15530
-// Function ID: 15531
+// Module ID: 15597
+// Function ID: 15598
 // Name: useSearchMessageTimestamp
-// Dependencies: [19, 11, 5931, 2]
+// Dependencies: [19, 11, 7010, 2]
 // Exports: useSearchMessageTimestamp
 
-// Module 15530 (useSearchMessageTimestamp)
+// Module 15597 (useSearchMessageTimestamp)
 import noop from "noop";
 
 const require = arg1;

@@ -1,8 +1,8 @@
-// Module ID: 13911
-// Function ID: 13912
-// Dependencies: [19, 17, 21, 4193, 712, 13912, 2]
+// Module ID: 13978
+// Function ID: 13979
+// Dependencies: [19, 17, 21, 4255, 712, 13979, 2]
 
-// Module 13911
+// Module 13978
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -16,7 +16,7 @@ obj = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj[0] = obj;
 let closure_4 = createCacheKey.createStyles(obj);
-const memoResult = require("noop").memo(() => <closure_2 style={callback().container}>{jsx(importDefault(13912), {})}</closure_2>);
+const memoResult = require("noop").memo(() => <closure_2 style={callback().container}>{jsx(importDefault(13979), {})}</closure_2>);
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/privacy_and_safety/native/RequestDataScreen.tsx");
 
 export default memoResult;

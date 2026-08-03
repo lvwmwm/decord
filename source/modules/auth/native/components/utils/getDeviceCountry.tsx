@@ -1,10 +1,10 @@
-// Module ID: 14896
-// Function ID: 14897
+// Module ID: 14963
+// Function ID: 14964
 // Name: getDeviceCountry
 // Dependencies: [17, 500, 666, 2]
 // Exports: getDeviceCountry
 
-// Module 14896 (getDeviceCountry)
+// Module 14963 (getDeviceCountry)
 import { NativeModules } from "get ActivityIndicator";
 
 const result = require("enforcing").fileFinishedImporting("modules/auth/native/components/utils/getDeviceCountry.tsx");

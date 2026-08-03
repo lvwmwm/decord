@@ -1,10 +1,10 @@
-// Module ID: 10078
-// Function ID: 10079
+// Module ID: 10220
+// Function ID: 10221
 // Name: GuildDirectoryMoreMenu
-// Dependencies: [19, 21, 10072, 10079, 4533, 1236, 10081, 1297, 7697, 9111, 4152, 9452, 9310, 6685, 8972, 712, 2]
+// Dependencies: [19, 21, 10214, 10221, 4595, 1236, 10223, 1297, 7818, 9284, 4214, 9599, 9482, 7660, 9149, 712, 2]
 // Exports: default
 
-// Module 10078 (GuildDirectoryMoreMenu)
+// Module 10220 (GuildDirectoryMoreMenu)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -15,14 +15,14 @@ export default function GuildDirectoryMoreMenu(entry) {
   let canRemove;
   let isEntryAdmin;
   entry = entry.entry;
-  const tmp2 = importDefault(10072)(entry);
+  const tmp2 = importDefault(10214)(entry);
   const items = [];
   ({ isEntryAdmin, canRemove } = tmp2);
   if (tmp2.canEdit) {
     let obj = { label: null, IconComponent: null, action: null };
     let intl = entry(1236).intl;
     obj[0] = intl.string(entry(1236).t.XnuOvN);
-    obj[1] = entry(9111).PencilIcon;
+    obj[1] = entry(9284).PencilIcon;
     obj[2] = function handleEdit() {
       let obj = outer1_1(outer1_3[3]);
       obj = { entry };
@@ -34,7 +34,7 @@ export default function GuildDirectoryMoreMenu(entry) {
     obj = { label: null, IconComponent: null, variant: "destructive", action: null };
     let intl2 = entry(1236).intl;
     obj[0] = intl2.string(entry(1236).t.KUxYWH);
-    obj[1] = entry(4152).TrashIcon;
+    obj[1] = entry(4214).TrashIcon;
     obj[3] = function handleRemove() {
       let obj = outer1_1(outer1_3[4]);
       obj = { title: null, body: null, onConfirm: null, confirmColor: null, confirmText: null, cancelText: null, onCancel: null };
@@ -62,7 +62,7 @@ export default function GuildDirectoryMoreMenu(entry) {
     obj = { label: null, IconComponent: null, variant: "destructive", action: null };
     let intl3 = entry(1236).intl;
     obj[0] = intl3.string(entry(1236).t.Aen9eh);
-    obj[1] = entry(9452).FlagIcon;
+    obj[1] = entry(9599).FlagIcon;
     obj[3] = function handleReport() {
       const result = entry(outer1_3[8]).showReportModalForGuildDirectoryEntry(entry);
     };
@@ -82,10 +82,10 @@ export default function GuildDirectoryMoreMenu(entry) {
       obj.accessibilityLabel = intl.string(entry(1236).t.PdRCRg);
       obj = { size: "sm", color: null };
       obj[1] = callback(712).colors.WHITE;
-      obj.icon = callback2(entry(8972).MoreHorizontalIcon, obj);
-      return callback2(entry(6685).IconButton, obj);
+      obj.icon = callback2(entry(9149).MoreHorizontalIcon, obj);
+      return callback2(entry(7660).IconButton, obj);
     };
-    tmp9 = jsx(entry(9310).ContextMenu, { items: null, children: null });
+    tmp9 = jsx(entry(9482).ContextMenu, { items: null, children: null });
   }
   return tmp9;
 };

@@ -1,14 +1,14 @@
-// Module ID: 6357
-// Function ID: 6358
+// Module ID: 7352
+// Function ID: 7353
 // Name: items
-// Dependencies: [6358, 2]
+// Dependencies: [7353, 2]
 
-// Module 6357 (items)
+// Module 7352 (items)
 const result = require("set").fileFinishedImporting("utils/native/IAPUtils.mock.tsx");
 
 export default {
   loadProducts() {
-    return Promise.resolve(require(6358) /* items */.copiedIAPProducts);
+    return Promise.resolve(require(7353) /* items */.copiedIAPProducts);
   },
   purchaseProduct() {
     const error = new Error("IAPUtils is mocked \u2014 purchases cannot be completed in this build.");

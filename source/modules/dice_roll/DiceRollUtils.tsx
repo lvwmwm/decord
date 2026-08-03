@@ -1,10 +1,10 @@
-// Module ID: 11497
-// Function ID: 11498
+// Module ID: 11607
+// Function ID: 11608
 // Name: getBarText
 // Dependencies: [1236, 2]
 // Exports: getBarText
 
-// Module 11497 (getBarText)
+// Module 11607 (getBarText)
 const result = require("set").fileFinishedImporting("modules/dice_roll/DiceRollUtils.tsx");
 
 export const getBarText = function getBarText(flag, results) {

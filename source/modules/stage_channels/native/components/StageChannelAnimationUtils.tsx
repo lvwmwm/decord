@@ -1,11 +1,11 @@
-// Module ID: 10848
-// Function ID: 10849
+// Module ID: 10948
+// Function ID: 10949
 // Name: useStageActionBarAnimation
-// Dependencies: [4054, 10700, 10698, 1581, 4194, 2]
+// Dependencies: [4116, 10808, 10806, 1581, 4256, 2]
 // Exports: useStageActionBarAnimation
 
-// Module 10848 (useStageActionBarAnimation)
-import { Easing } from "module_4054";
+// Module 10948 (useStageActionBarAnimation)
+import { Easing } from "module_4116";
 
 let obj = { duration: 250, easing: null };
 obj[1] = Easing.bezier(0.66, 0, 0.2, 1);

@@ -18,6 +18,6 @@ export default function _isNativeFunction(arg0) {
     str = "[native code]";
     const index = strResult.indexOf("[native code]");
   } catch (err) {
-    return typeof tmp === "fileFinishedImporting";
+    return typeof tmp === "error";
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 15380
-// Function ID: 15381
+// Module ID: 15447
+// Function ID: 15448
 // Name: useICYMIEmptyLoadingAnalytics
-// Dependencies: [19, 8198, 2]
+// Dependencies: [19, 8505, 2]
 // Exports: useICYMIEmptyLoadingAnalytics
 
-// Module 15380 (useICYMIEmptyLoadingAnalytics)
+// Module 15447 (useICYMIEmptyLoadingAnalytics)
 import noop from "noop";
 
 const require = arg1;

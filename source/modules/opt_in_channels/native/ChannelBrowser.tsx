@@ -1,10 +1,10 @@
-// Module ID: 10013
-// Function ID: 10014
+// Module ID: 10155
+// Function ID: 10156
 // Name: keyExtractor
-// Dependencies: [32, 19, 17, 5790, 5131, 1932, 1862, 4389, 676, 1369, 21, 4193, 712, 5219, 10014, 589, 10016, 4009, 1358, 10012, 9248, 6679, 5226, 4721, 1236, 6739, 5145, 10018, 4189, 4384, 3911, 5558, 7641, 3897, 4654, 9099, 5230, 1297, 4183, 2]
+// Dependencies: [32, 19, 17, 6888, 5193, 1932, 1862, 4451, 676, 1369, 21, 4255, 712, 5281, 10156, 589, 10158, 4071, 1358, 10154, 5891, 7654, 5288, 4783, 1236, 5895, 5207, 10160, 4251, 4446, 3973, 5620, 7767, 3959, 4716, 9272, 5292, 1297, 4245, 2]
 // Exports: default
 
-// Module 10013 (keyExtractor)
+// Module 10155 (keyExtractor)
 import FormCheckbox from "FormCheckbox";
 import importAllResult from "optIntoAllChannelsForExistingMember";
 import { View } from "UNSAFE_isDismissibleContentDismissed";
@@ -53,7 +53,7 @@ let closure_17 = importAllResult.memo((channel) => {
   let obj = channel(589);
   const items = [updateUserGuildSettingsInternal];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_10.isChannelOptedIn(channel.guild_id, channel.id));
-  let obj1 = channel(3911);
+  let obj1 = channel(3973);
   const checkboxA11yNative = obj1.useCheckboxA11yNative({ checked: stateFromStores });
   obj = {
     style: tmp.categoryContainer,
@@ -74,8 +74,8 @@ let closure_17 = importAllResult.memo((channel) => {
     accessibilityState = checkboxA11yNative.accessibilityState;
   }
   obj[3] = accessibilityState;
-  obj = { style: tmp.categoryTitle, title: onChannelClick(4384)(channel), lineClamp: 1 };
-  const items1 = [closure_12(channel(5558).TableRowGroupTitle, obj), ];
+  obj = { style: tmp.categoryTitle, title: onChannelClick(4446)(channel), lineClamp: 1 };
+  const items1 = [closure_12(channel(5620).TableRowGroupTitle, obj), ];
   let tmp10Result = null;
   if ("null" !== channel.id) {
     obj1 = { style: null, accessibilityRole: null, accessibilityState: null, children: null };
@@ -85,18 +85,18 @@ let closure_17 = importAllResult.memo((channel) => {
     obj2[0] = tmp.selectAllCheckbox;
     const obj3 = { checked: null };
     obj3[0] = stateFromStores;
-    obj2[1] = tmp8(tmp4(7641).FormCheckbox, obj3);
+    obj2[1] = tmp8(tmp4(7767).FormCheckbox, obj3);
     const items2 = [tmp8(View, obj2), ];
     const obj4 = { variant: "text-xs/semibold", color: "interactive-text-default", children: null };
     const intl = tmp4(1236).intl;
     obj4[2] = intl.string(tmp4(1236).t.mSQwnW);
-    items2[1] = tmp8(tmp4(4189).Text, obj4);
+    items2[1] = tmp8(tmp4(4251).Text, obj4);
     obj1[3] = items2;
     tmp10Result = tmp10(View, obj1);
   }
   items1[1] = tmp10Result;
   obj[4] = closure_13(closure_14, { children: items1 });
-  return closure_12(channel(4721).PressableOpacity, obj);
+  return closure_12(channel(4783).PressableOpacity, obj);
 });
 let closure_18 = importAllResult.memo((channel) => {
   let c3;

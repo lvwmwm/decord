@@ -1,10 +1,10 @@
-// Module ID: 13675
-// Function ID: 13676
+// Module ID: 13738
+// Function ID: 13739
 // Name: CarIcon
-// Dependencies: [19, 21, 712, 3896, 13676, 2]
+// Dependencies: [19, 21, 712, 3958, 13739, 2]
 // Exports: CarIcon
 
-// Module 13675 (CarIcon)
+// Module 13738 (CarIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const CarIcon = function CarIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(13676) /* registerAsset */;
+  obj[0] = require(13739) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3896) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

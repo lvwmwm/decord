@@ -1,10 +1,10 @@
-// Module ID: 15227
-// Function ID: 15228
+// Module ID: 15210
+// Function ID: 15211
 // Name: ChannelListPanelBackdrop
-// Dependencies: [19, 17, 676, 21, 4193, 712, 14948, 1581, 14136, 15228, 2]
+// Dependencies: [19, 17, 676, 21, 4255, 712, 15020, 1581, 14203, 15211, 2]
 // Exports: default
 
-// Module 15227 (ChannelListPanelBackdrop)
+// Module 15210 (ChannelListPanelBackdrop)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { DM_WIDTH } from "ME";
@@ -34,8 +34,10 @@ export default function ChannelListPanelBackdrop(children) {
   let mobileQuestDockHeight;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = style(14136);
-  mobileQuestDockHeight = obj.useMobileQuestDockHeight();
+  let obj = style(15020);
+  const isHomeDrawerEnabled = obj.useIsHomeDrawerEnabled();
+  let obj1 = style(14203);
+  mobileQuestDockHeight = obj1.useMobileQuestDockHeight();
   let items = [tmp, contentInset, mobileQuestDockHeight, style];
   obj = {
     style: mobileQuestDockHeight.useMemo(() => {
@@ -79,8 +81,16 @@ export default function ChannelListPanelBackdrop(children) {
     }, items),
     children: null
   };
-  obj = { offsetX: DM_WIDTH, offsetY: contentInset(1581)().top, parentSpringTranslateX: mobileQuestDockHeight.useContext(style(14948).HomeDrawerStateContext).panelSpringTranslateX };
-  const items1 = [callback(contentInset(15228), obj), callback(closure_4, { pointerEvents: "none", style: tmp.panelTint }), callback(closure_4, { style: tmp.listWrapper, children: children.children })];
+  if (isHomeDrawerEnabled) {
+    let ScreenAlignedThemedGradientSliding = style(tmp9).ScreenAlignedThemedGradientSliding;
+  } else {
+    ScreenAlignedThemedGradientSliding = contentInset(tmp9);
+  }
+  obj = { offsetX: DM_WIDTH, offsetY: contentInset(1581)().top };
+  const items1 = [closure_6(ScreenAlignedThemedGradientSliding, obj), , ];
+  obj1 = { pointerEvents: "none", style: tmp.panelTint };
+  items1[1] = closure_6(closure_4, obj1);
+  items1[2] = closure_6(closure_4, { style: tmp.listWrapper, children: children.children });
   obj[1] = items1;
-  return callback2(closure_4, obj);
+  return closure_7(closure_4, obj);
 };

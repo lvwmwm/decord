@@ -1,10 +1,10 @@
-// Module ID: 8231
-// Function ID: 8232
+// Module ID: 8538
+// Function ID: 8539
 // Name: canViewInviteModal
 // Dependencies: [676, 2]
 // Exports: canViewInviteModal
 
-// Module 8231 (canViewInviteModal)
+// Module 8538 (canViewInviteModal)
 import { Permissions } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/instant_invite/canViewInviteModal.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 9716
-// Function ID: 9717
+// Module ID: 9861
+// Function ID: 9862
 // Name: useSelectPremiumGift
-// Dependencies: [5, 19, 1480, 8813, 9717, 3839, 5679, 4533, 1236, 9714, 2]
+// Dependencies: [5, 19, 1480, 8990, 9862, 3901, 5741, 4595, 1236, 9859, 2]
 // Exports: useSelectPremiumGift
 
-// Module 9716 (useSelectPremiumGift)
+// Module 9861 (useSelectPremiumGift)
 import getPremiumPlanItem from "getPremiumPlanItem";
 import noop from "noop";
 

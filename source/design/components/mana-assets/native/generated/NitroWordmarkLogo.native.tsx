@@ -1,10 +1,10 @@
-// Module ID: 7349
-// Function ID: 7350
+// Module ID: 6485
+// Function ID: 6486
 // Name: NitroWordmarkLogo
-// Dependencies: [17, 21, 712, 3897, 7350, 2]
+// Dependencies: [17, 21, 712, 3959, 6486, 2]
 // Exports: NitroWordmarkLogo
 
-// Module 7349 (NitroWordmarkLogo)
+// Module 6485 (NitroWordmarkLogo)
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -31,7 +31,7 @@ export const NitroWordmarkLogo = function NitroWordmarkLogo(color) {
   if (num3 === undefined) {
     num3 = 1;
   }
-  let obj = require(3897) /* map */;
+  let obj = require(3959) /* map */;
   const token = obj.useToken(ICON_STRONG);
   if (null != token) {
     obj = { tintColor: null };
@@ -46,7 +46,7 @@ export const NitroWordmarkLogo = function NitroWordmarkLogo(color) {
     tmp5 = null != ICON_STRONG && typeof ICON_STRONG === "y";
   }
   const obj1 = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj1[1] = { uri: importDefault(7350) };
+  obj1[1] = { uri: importDefault(6486) };
   const items = [{ width: num * num3, height: num2 * num3 }, tmp6];
   obj1[2] = items;
   obj1[3] = accessible;

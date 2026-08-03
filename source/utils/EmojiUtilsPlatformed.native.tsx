@@ -1,9 +1,9 @@
-// Module ID: 6098
-// Function ID: 6099
+// Module ID: 7150
+// Function ID: 7151
 // Name: getURL
-// Dependencies: [32, 5, 17, 3835, 4173, 500, 12, 1416, 6099, 1471, 4037, 6138, 6143, 2]
+// Dependencies: [32, 5, 17, 3897, 4235, 500, 12, 1416, 7151, 1471, 4099, 7190, 7195, 2]
 
-// Module 6098 (getURL)
+// Module 7150 (getURL)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -147,9 +147,9 @@ obj[1] = function filterUnsupportedEmojis(emojis) {
   if (!obj.isAndroid()) {
     found = importDefault(12).filter(emojis, (unicodeVersion) => {
       unicodeVersion = unicodeVersion.unicodeVersion;
-      const systemVersionMajor = callback(4173).getSystemVersionMajor();
-      const obj = callback(4173);
-      const systemVersionMinor = callback(4173).getSystemVersionMinor();
+      const systemVersionMajor = callback(4235).getSystemVersionMajor();
+      const obj = callback(4235);
+      const systemVersionMinor = callback(4235).getSystemVersionMinor();
       let flag = true;
       if (unicodeVersion > 8) {
         if (9 === unicodeVersion) {
@@ -345,7 +345,7 @@ obj[4] = function triggerFullscreenAnimation(arg0) {
   let emoji;
   let messageId;
   ({ channelId, messageId, emoji } = arg0);
-  const result = require(6138) /* onDismiss */.openBurstReactionFirstSendActionSheet({ channelId, messageId, emoji });
+  const result = require(7190) /* onDismiss */.openBurstReactionFirstSendActionSheet({ channelId, messageId, emoji });
 };
 let result = require("get ActivityIndicator").fileFinishedImporting("utils/EmojiUtilsPlatformed.native.tsx");
 

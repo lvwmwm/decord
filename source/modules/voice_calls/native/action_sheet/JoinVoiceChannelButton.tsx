@@ -1,10 +1,10 @@
-// Module ID: 12859
-// Function ID: 12860
+// Module ID: 12922
+// Function ID: 12923
 // Name: JoinVoiceChannelButton
-// Dependencies: [19, 17, 3821, 676, 21, 4193, 10749, 589, 1236, 1844, 5005, 4604, 2]
+// Dependencies: [19, 17, 3883, 676, 21, 4255, 10857, 589, 1236, 1844, 5067, 4666, 2]
 // Exports: default
 
-// Module 12859 (JoinVoiceChannelButton)
+// Module 12922 (JoinVoiceChannelButton)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -44,6 +44,6 @@ export default function JoinVoiceChannelButton(channel) {
     const obj = outer1_2(outer1_3[9]);
     const voiceChannel = outer1_1(outer1_3[10]).selectVoiceChannel(channel.id);
   }, items1);
-  obj[1] = jsx(channel(4604).Button, { disabled: flag, text: stringResult, onPress: callback });
+  obj[1] = jsx(channel(4666).Button, { disabled: flag, text: stringResult, onPress: callback });
   return <View style={items2}>{null}</View>;
 };

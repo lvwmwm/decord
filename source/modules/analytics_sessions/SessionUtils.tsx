@@ -1,10 +1,10 @@
-// Module ID: 5734
-// Function ID: 5735
+// Module ID: 6828
+// Function ID: 6829
 // Name: result
 // Dependencies: [687, 2]
 // Exports: isSessionExpired, timestampOrZero
 
-// Module 5734 (result)
+// Module 6828 (result)
 const result = 30 * require("set").Millis.MINUTE;
 let c0 = result;
 const result1 = require("set").fileFinishedImporting("modules/analytics_sessions/SessionUtils.tsx");

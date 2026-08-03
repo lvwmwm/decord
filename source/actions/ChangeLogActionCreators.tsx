@@ -1,9 +1,9 @@
-// Module ID: 7872
-// Function ID: 7873
+// Module ID: 7990
+// Function ID: 7991
 // Name: cacheBustParam
-// Dependencies: [5, 4204, 676, 1930, 709, 3866, 530, 2]
+// Dependencies: [5, 4266, 676, 1930, 709, 3928, 530, 2]
 
-// Module 7872 (cacheBustParam)
+// Module 7990 (cacheBustParam)
 import explicitContentFromProto from "explicitContentFromProto";
 import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
 import { Endpoints } from "ME";
@@ -30,7 +30,7 @@ export default {
     let obj = importDefault(709);
     obj = { type: "CHANGE_LOG_MARK_SEEN", changelogId: id, changelogDate: date };
     obj.dispatch(obj);
-    const LastReceivedChangelogId = require(3866) /* explicitContentFromProto */.LastReceivedChangelogId;
+    const LastReceivedChangelogId = require(3928) /* explicitContentFromProto */.LastReceivedChangelogId;
     LastReceivedChangelogId.updateSetting(id);
   },
   setChangelogOverride(id) {

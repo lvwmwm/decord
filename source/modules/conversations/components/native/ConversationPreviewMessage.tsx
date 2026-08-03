@@ -1,10 +1,10 @@
-// Module ID: 9300
-// Function ID: 9301
+// Module ID: 9472
+// Function ID: 9473
 // Name: modifyRow
-// Dependencies: [19, 17, 4185, 1942, 21, 7718, 7910, 4193, 712, 589, 4383, 7749, 3866, 3863, 1297, 4189, 9301, 2]
+// Dependencies: [19, 17, 4247, 1942, 21, 7839, 8028, 4255, 712, 589, 4445, 7868, 3928, 3925, 1297, 4251, 9473, 2]
 // Exports: default
 
-// Module 9300 (modifyRow)
+// Module 9472 (modifyRow)
 import noop from "noop";
 import { View } from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -16,7 +16,7 @@ let error;
 let metroImportAll;
 const require = arg1;
 function modifyRow(arg0) {
-  arg0.contextType = require(7910) /* MediaGalleryItemType */.MessageContextType.SEARCH;
+  arg0.contextType = require(8028) /* MediaGalleryItemType */.MessageContextType.SEARCH;
   arg0.renderContentOnly = true;
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);

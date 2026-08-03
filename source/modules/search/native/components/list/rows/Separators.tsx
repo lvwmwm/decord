@@ -1,10 +1,10 @@
-// Module ID: 15509
-// Function ID: 15510
+// Module ID: 15576
+// Function ID: 15577
 // Name: MessageVerticalSeparator
-// Dependencies: [19, 17, 9108, 21, 4193, 2]
+// Dependencies: [19, 17, 9281, 21, 4255, 2]
 // Exports: CardVerticalSeparator, MediaVerticalSeparator, MessageVerticalSeparator
 
-// Module 15509 (MessageVerticalSeparator)
+// Module 15576 (MessageVerticalSeparator)
 import "noop";
 import { View } from "get ActivityIndicator";
 import MessageEmbedTypes from "MessageEmbedTypes";

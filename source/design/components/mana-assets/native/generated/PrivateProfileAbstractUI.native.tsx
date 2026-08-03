@@ -1,10 +1,10 @@
-// Module ID: 7409
-// Function ID: 7410
+// Module ID: 6545
+// Function ID: 6546
 // Name: PrivateProfileAbstractUI
-// Dependencies: [21, 5145, 7410, 2]
+// Dependencies: [21, 5207, 6546, 2]
 // Exports: PrivateProfileAbstractUI
 
-// Module 7409 (PrivateProfileAbstractUI)
+// Module 6545 (PrivateProfileAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PrivateProfileAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const PrivateProfileAbstractUI = function PrivateProfileAbstractUI(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(7410);
+  obj[0] = importDefault(6546);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const PrivateProfileAbstractUI = function PrivateProfileAbstractUI(width)
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5145), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5207), { width: num * num3, height: num2 * num3 });
 };

@@ -1,10 +1,10 @@
-// Module ID: 12193
-// Function ID: 12194
+// Module ID: 12289
+// Function ID: 12290
 // Name: UserProfileDismissibleUpsells
-// Dependencies: [19, 17, 1874, 8109, 6230, 1369, 21, 4193, 712, 12194, 8111, 589, 3839, 9676, 1358, 1297, 4189, 1236, 4721, 5179, 4604, 6630, 11329, 2]
+// Dependencies: [19, 17, 1874, 8440, 6793, 1369, 21, 4255, 712, 12290, 8442, 589, 3901, 9821, 1358, 1297, 4251, 1236, 4783, 5241, 4666, 7613, 11439, 2]
 // Exports: default
 
-// Module 12193 (UserProfileDismissibleUpsells)
+// Module 12289 (UserProfileDismissibleUpsells)
 import XSmallIcon from "XSmallIcon";
 import { View } from "getSystemLocale";
 import mergeGuildAvatar from "mergeGuildAvatar";

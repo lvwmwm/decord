@@ -1,10 +1,10 @@
-// Module ID: 9792
-// Function ID: 9793
+// Module ID: 9937
+// Function ID: 9938
 // Name: GiftingSKUSelectScreen
-// Dependencies: [32, 19, 17, 21, 4193, 712, 1581, 4189, 1236, 9793, 4604, 2]
+// Dependencies: [32, 19, 17, 21, 4255, 712, 1581, 4251, 1236, 9938, 4666, 2]
 // Exports: default
 
-// Module 9792 (GiftingSKUSelectScreen)
+// Module 9937 (GiftingSKUSelectScreen)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";

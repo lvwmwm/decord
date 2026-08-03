@@ -1,10 +1,10 @@
-// Module ID: 16733
-// Function ID: 16734
+// Module ID: 16799
+// Function ID: 16800
 // Name: LogOutDisclaimer
-// Dependencies: [21, 13238, 4189, 1236, 2487, 5645, 2]
+// Dependencies: [21, 13301, 4251, 1236, 2517, 5707, 2]
 // Exports: default
 
-// Module 16733 (LogOutDisclaimer)
+// Module 16799 (LogOutDisclaimer)
 import { jsx } from "jsxProd";
 
 const result = require("Text").fileFinishedImporting("modules/safety_flows/native/LogOutDisclaimer.tsx");
@@ -18,13 +18,13 @@ export default function LogOutDisclaimer() {
       callback(table[5]).logout("safety_flows_enter_email_screen");
     }
   };
-  obj[1] = intl.format(importDefault(2487)["0DHxym"], obj);
-  obj[0] = jsx(require(4189) /* Text */.Text, {
+  obj[1] = intl.format(importDefault(2517)["0DHxym"], obj);
+  obj[0] = jsx(require(4251) /* Text */.Text, {
     handleLogOut() {
       callback(table[5]).logout("safety_flows_enter_email_screen");
     }
   });
-  return jsx(require(13238) /* ModalDisclaimer */.ModalDisclaimer, {
+  return jsx(require(13301) /* ModalDisclaimer */.ModalDisclaimer, {
     handleLogOut() {
       callback(table[5]).logout("safety_flows_enter_email_screen");
     }

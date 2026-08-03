@@ -1,10 +1,10 @@
-// Module ID: 11687
-// Function ID: 11688
+// Module ID: 11792
+// Function ID: 11793
 // Name: BOOST_EXPIRING_DISPLAY_WINDOW_DAYS
 // Dependencies: [11, 2]
 // Exports: getBoostLifecycleInfo, getBoostLifecycleTimestamp
 
-// Module 11687 (BOOST_EXPIRING_DISPLAY_WINDOW_DAYS)
+// Module 11792 (BOOST_EXPIRING_DISPLAY_WINDOW_DAYS)
 let c2 = 259200000;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/utils/getBoostLifecyclePhase.tsx");
 

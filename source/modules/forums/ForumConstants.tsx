@@ -1,9 +1,9 @@
-// Module ID: 6072
-// Function ID: 6073
+// Module ID: 5804
+// Function ID: 5805
 // Name: FORUM_GUIDELINES_ACTION_SHEET
 // Dependencies: [2]
 
-// Module 6072 (FORUM_GUIDELINES_ACTION_SHEET)
+// Module 5804 (FORUM_GUIDELINES_ACTION_SHEET)
 const result = require("set").fileFinishedImporting("modules/forums/ForumConstants.tsx");
 
 export const FORUM_GUIDELINES_ACTION_SHEET = "forum-guidelines-action-sheet";

@@ -1,10 +1,10 @@
-// Module ID: 16557
-// Function ID: 16558
+// Module ID: 16623
+// Function ID: 16624
 // Name: HowItWorksCard
-// Dependencies: [19, 17, 21, 4193, 712, 4189, 5145, 1236, 16558, 1297, 16559, 16560, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 4251, 5207, 1236, 16624, 1297, 16625, 16626, 2]
 // Exports: default
 
-// Module 16557 (HowItWorksCard)
+// Module 16623 (HowItWorksCard)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -20,10 +20,10 @@ function HowItWorksCard(iconSource) {
   const tmp = createCacheKey();
   let obj = { style: tmp.card, accessible: true, accessibilityLabel: "" + cardNumber + " - " + description, children: null };
   obj = { style: tmp.cardNumber, variant: "text-xs/bold", color: "text-overlay-light", children: cardNumber };
-  const items = [callback(require(4189) /* Text */.Text, obj), , ];
-  obj = { style: tmp.container, children: callback(importDefault(5145), obj1) };
+  const items = [callback(require(4251) /* Text */.Text, obj), , ];
+  obj = { style: tmp.container, children: callback(importDefault(5207), obj1) };
   items[1] = callback(View, obj);
-  items[2] = callback(require(4189) /* Text */.Text, { style: tmp.howItWorksCardDescription, variant: "text-sm/normal", color: "mobile-text-heading-primary", children: description });
+  items[2] = callback(require(4251) /* Text */.Text, { style: tmp.howItWorksCardDescription, variant: "text-sm/normal", color: "mobile-text-heading-primary", children: description });
   obj[3] = items;
   return callback2(View, obj);
 }
@@ -46,19 +46,19 @@ export default function HowItWorksSection() {
   obj = { cardNumber: 1, description: null, iconSource: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.lT0ZNS);
-  obj[2] = importDefault(16558);
+  obj[2] = importDefault(16624);
   const items = [callback(HowItWorksCard, obj), callback(require(1297) /* Button */.Spacer, { size: 12 }), ];
   const obj1 = { cardNumber: 2, description: null, iconSource: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t.ihN2Wb);
-  obj1[2] = importDefault(16559);
+  obj1[2] = importDefault(16625);
   items[2] = callback(HowItWorksCard, obj1);
   obj[1] = items;
   const items1 = [callback2(View, obj), ];
   const obj2 = { cardNumber: 3, description: null, iconSource: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[1] = intl3.string(require(1236) /* getSystemLocale */.t.c8krDQ);
-  obj2[2] = importDefault(16560);
+  obj2[2] = importDefault(16626);
   items1[1] = callback(HowItWorksCard, obj2);
   obj[1] = items1;
   return callback2(View, obj);

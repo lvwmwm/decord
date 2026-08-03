@@ -1,10 +1,10 @@
-// Module ID: 4606
-// Function ID: 4607
+// Module ID: 4668
+// Function ID: 4669
 // Name: IconSizes
-// Dependencies: [19, 17, 21, 4193, 712, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 2]
 // Exports: getIconSize, getIconStyle
 
-// Module 4606 (IconSizes)
+// Module 4668 (IconSizes)
 import importAllResult from "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

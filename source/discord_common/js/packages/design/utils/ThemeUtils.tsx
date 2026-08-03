@@ -1,10 +1,10 @@
-// Module ID: 3914
-// Function ID: 3915
+// Module ID: 3976
+// Function ID: 3977
 // Name: isThemeLight
 // Dependencies: [713, 2]
 // Exports: isThemeDark, isThemeLight
 
-// Module 3914 (isThemeLight)
+// Module 3976 (isThemeLight)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/utils/ThemeUtils.tsx");
 
 export const isThemeLight = function isThemeLight(arg0) {

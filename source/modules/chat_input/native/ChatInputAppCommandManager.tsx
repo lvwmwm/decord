@@ -1,9 +1,9 @@
-// Module ID: 11529
-// Function ID: 11530
+// Module ID: 11639
+// Function ID: 11640
 // Name: areResolvedGamesEqual
-// Dependencies: [32, 19, 6094, 6095, 4214, 6164, 5970, 1874, 4628, 4193, 712, 11184, 12, 5910, 589, 8497, 11185, 11183, 8028, 1906, 11530, 2]
+// Dependencies: [32, 19, 7146, 7147, 4276, 7216, 7049, 1874, 4690, 4255, 712, 11296, 12, 6990, 589, 8786, 11297, 11295, 8365, 1906, 11640, 2]
 
-// Module 11529 (areResolvedGamesEqual)
+// Module 11639 (areResolvedGamesEqual)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "PermissionOverwriteType";
 import handleInit from "handleInit";

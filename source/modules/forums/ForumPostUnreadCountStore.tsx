@@ -1,9 +1,9 @@
-// Module ID: 9143
-// Function ID: 9144
+// Module ID: 9316
+// Function ID: 9317
 // Name: set
-// Dependencies: [5101, 1372, 4205, 589, 38, 709, 2]
+// Dependencies: [5163, 1372, 4267, 589, 38, 709, 2]
 
-// Module 9143 (set)
+// Module 9316 (set)
 import handleThreadCreateOrUpdate from "handleThreadCreateOrUpdate";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import generateOldThreadCutoff from "generateOldThreadCutoff";

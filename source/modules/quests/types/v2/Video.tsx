@@ -1,10 +1,10 @@
-// Module ID: 6000
-// Function ID: 6001
+// Module ID: 7079
+// Function ID: 7080
 // Name: videoAssetFromServer
 // Dependencies: [2]
 // Exports: desktopVideoAssetsFromServer, desktopVideoMessagesFromServer, mobileVideoAssetsFromServer, mobileVideoMessagesFromServer, videoAssetFromServer
 
-// Module 6000 (videoAssetFromServer)
+// Module 7079 (videoAssetFromServer)
 const result = require("set").fileFinishedImporting("modules/quests/types/v2/Video.tsx");
 
 export const videoAssetFromServer = function videoAssetFromServer(url) {

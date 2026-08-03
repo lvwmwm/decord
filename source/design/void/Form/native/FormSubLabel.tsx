@@ -1,10 +1,10 @@
-// Module ID: 5238
-// Function ID: 5239
+// Module ID: 5300
+// Function ID: 5301
 // Name: FormSubLabel
-// Dependencies: [19, 21, 4189, 2]
+// Dependencies: [19, 21, 4251, 2]
 // Exports: default
 
-// Module 5238 (FormSubLabel)
+// Module 5300 (FormSubLabel)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -21,5 +21,5 @@ export default function FormSubLabel(color) {
   if (color === undefined) {
     color = "text-subtle";
   }
-  return jsx(require(4189) /* Text */.Text, { color, variant: "text-xs/normal", lineClamp, style, accessible, children });
+  return jsx(require(4251) /* Text */.Text, { color, variant: "text-xs/normal", lineClamp, style, accessible, children });
 };

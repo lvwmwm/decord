@@ -1,9 +1,9 @@
-// Module ID: 9516
-// Function ID: 9517
+// Module ID: 9663
+// Function ID: 9664
 // Name: handleQuickSwitcherUpdate
-// Dependencies: [32, 4107, 6163, 1372, 1862, 4205, 1931, 4389, 1874, 9517, 6166, 589, 11, 687, 9518, 709, 9519, 12, 2]
+// Dependencies: [32, 4169, 7215, 1372, 1862, 4267, 1931, 4451, 1874, 9664, 7218, 589, 11, 687, 9665, 709, 9666, 12, 2]
 
-// Module 9516 (handleQuickSwitcherUpdate)
+// Module 9663 (handleQuickSwitcherUpdate)
 import _slicedToArray from "_slicedToArray";
 import getHash from "getHash";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -184,7 +184,7 @@ prototype["shouldFetch"] = function shouldFetch(arg0, arg1) {
   } else {
     return false;
   }
-  obj = require(9518) /* canSeeChannelSummaries */;
+  obj = require(9665) /* canSeeChannelSummaries */;
 };
 prototype["channelAffinities"] = function channelAffinities() {
   return closure_21;
@@ -277,7 +277,7 @@ obj = {
     if (null != summary) {
       const _Object = Object;
       if (Object.keys(summary).length > 0) {
-        let obj = summaryFromServer(9519);
+        let obj = summaryFromServer(9666);
         summaryFromServer = obj.createSummaryFromServer(summary, channelId);
         let items = dependencyMap2[channelId];
         if (items == null) {

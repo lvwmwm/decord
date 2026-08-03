@@ -1,10 +1,10 @@
-// Module ID: 14585
-// Function ID: 14586
+// Module ID: 14652
+// Function ID: 14653
 // Name: DemoModal
-// Dependencies: [5, 19, 17, 21, 4537, 4534, 4193, 4604, 2]
+// Dependencies: [5, 19, 17, 21, 4599, 4596, 4255, 4666, 2]
 // Exports: default
 
-// Module 14585 (DemoModal)
+// Module 14652 (DemoModal)
 import useAlertStore from "useAlertStore";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -68,12 +68,12 @@ function DemoModal() {
     }
   }), []);
   let obj = { title: "Are you sure?", content: "This will clear 3 incoming friend requests. The users who sent them won\u2019t be informed.", actions: null };
-  const items = [jsx(require(4537) /* getAlertModalItemKey */.AlertActionButton, { variant: "destructive", onPress: callback, text: "Clear" }, "clear"), jsx(require(4537) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary", onPress: callback, text: "Cancel" }, "cancel")];
+  const items = [jsx(require(4599) /* getAlertModalItemKey */.AlertActionButton, { variant: "destructive", onPress: callback, text: "Clear" }, "clear"), jsx(require(4599) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary", onPress: callback, text: "Cancel" }, "cancel")];
   obj[2] = items;
-  return jsx(require(4537) /* getAlertModalItemKey */.AlertModal, { title: "Are you sure?", content: "This will clear 3 incoming friend requests. The users who sent them won\u2019t be informed.", actions: null });
+  return jsx(require(4599) /* getAlertModalItemKey */.AlertModal, { title: "Are you sure?", content: "This will clear 3 incoming friend requests. The users who sent them won\u2019t be informed.", actions: null });
 }
 function openDemoModal() {
-  require(4534) /* useAlertStore */.openAlert("demo-1", <DemoModal />);
+  require(4596) /* useAlertStore */.openAlert("demo-1", <DemoModal />);
 }
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
 let closure_9 = createCacheKey.createStyles({ container: { padding: 16, flex: 1, alignItems: "center" } });
@@ -81,7 +81,7 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/u
 
 export default function UserSettingsDesignSystemAlertModal() {
   let obj = { children: null };
-  obj = { style: callback2().container, children: jsx(require(4604) /* Button */.Button, { children: null }) };
+  obj = { style: callback2().container, children: jsx(require(4666) /* Button */.Button, { children: null }) };
   obj = { onPress: openDemoModal, text: "Show Alert" };
   obj[0] = <closure_4 onPress={openDemoModal} text="Show Alert" />;
   return <closure_5 onPress={openDemoModal} text="Show Alert" />;

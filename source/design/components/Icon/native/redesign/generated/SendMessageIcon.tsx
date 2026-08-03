@@ -1,10 +1,10 @@
-// Module ID: 4139
-// Function ID: 4140
+// Module ID: 4201
+// Function ID: 4202
 // Name: SendMessageIcon
-// Dependencies: [19, 21, 712, 3896, 4140, 2]
+// Dependencies: [19, 21, 712, 3958, 4202, 2]
 // Exports: SendMessageIcon
 
-// Module 4139 (SendMessageIcon)
+// Module 4201 (SendMessageIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const SendMessageIcon = function SendMessageIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4140) /* registerAsset */;
+  obj[0] = require(4202) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3896) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

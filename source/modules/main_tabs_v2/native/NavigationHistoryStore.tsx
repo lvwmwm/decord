@@ -1,10 +1,10 @@
-// Module ID: 10268
-// Function ID: 10269
+// Module ID: 5841
+// Function ID: 5842
 // Name: getIdFromHistoryItem
-// Dependencies: [1372, 589, 709, 4045, 4044, 4047, 2]
+// Dependencies: [1372, 589, 709, 4107, 4106, 4109, 2]
 // Exports: getNavigationHistory, handleHistoryStoreNavigationChange
 
-// Module 10268 (getIdFromHistoryItem)
+// Module 5841 (getIdFromHistoryItem)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { PersistedStore } from "initialize";
 
@@ -122,15 +122,15 @@ export const CHANNEL_PREFIX = "channel-";
 export const GUILD_PREFIX = "guild-";
 export { getIdFromHistoryItem };
 export const handleHistoryStoreNavigationChange = function handleHistoryStoreNavigationChange() {
-  const rootNavigationRef = combined2(4045).getRootNavigationRef();
+  const rootNavigationRef = combined2(4107).getRootNavigationRef();
   if (null != rootNavigationRef) {
     const currentRoute = rootNavigationRef.getCurrentRoute();
     if (null != currentRoute) {
       if (null != currentRoute.params) {
-        let tmpResult = tmp(4044);
+        let tmpResult = tmp(4106);
         const coerceChannelRouteResult = tmpResult.coerceChannelRoute(currentRoute);
         if (null == coerceChannelRouteResult) {
-          tmpResult = tmp(4044);
+          tmpResult = tmp(4106);
           const coerceGuildsRouteResult = tmpResult.coerceGuildsRoute(currentRoute);
           if (null != coerceGuildsRouteResult) {
             if (tmpResult1.getChatLayout().isChatLockedOpen) {
@@ -181,7 +181,7 @@ export const handleHistoryStoreNavigationChange = function handleHistoryStoreNav
               }
               navigationHistoryStore.emitChange();
             }
-            tmpResult1 = tmp(4047);
+            tmpResult1 = tmp(4109);
           }
         } else {
           const _HermesInternal2 = HermesInternal;

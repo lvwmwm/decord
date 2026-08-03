@@ -1,18 +1,18 @@
-// Module ID: 9373
-// Function ID: 9374
-// Dependencies: [19, 21, 4533, 9374, 1959, 2]
+// Module ID: 9532
+// Function ID: 9533
+// Dependencies: [19, 21, 4595, 9533, 1959, 2]
 
-// Module 9373
+// Module 9532
 import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("module_4533").fileFinishedImporting("modules/guild_role_subscriptions/native/RoleSubscriptionUpsellUtils.tsx");
+const result = require("module_4595").fileFinishedImporting("modules/guild_role_subscriptions/native/RoleSubscriptionUpsellUtils.tsx");
 
 export default {
   handleShowEmojiUpsellAlert(guildId) {
     guildId = guildId.guildId;
-    let obj = importDefault(4533);
+    let obj = importDefault(4595);
     obj = {
       importer() {
         return guildId(outer1_2[4])(outer1_2[3], outer1_2.paths).then((arg0) => {

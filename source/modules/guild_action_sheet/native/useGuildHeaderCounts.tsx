@@ -1,10 +1,10 @@
-// Module ID: 13128
-// Function ID: 13129
+// Module ID: 13191
+// Function ID: 13192
 // Name: useGuildHeaderCounts
-// Dependencies: [19, 4114, 13129, 12, 709, 589, 2]
+// Dependencies: [19, 4176, 13192, 12, 709, 589, 2]
 // Exports: useGuildHeaderCounts
 
-// Module 13128 (useGuildHeaderCounts)
+// Module 13191 (useGuildHeaderCounts)
 import noop from "noop";
 import handleInviteData from "handleInviteData";
 import initialize from "initialize";

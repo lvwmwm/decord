@@ -1,9 +1,9 @@
-// Module ID: 5527
-// Function ID: 5528
+// Module ID: 5589
+// Function ID: 5590
 // Name: tokensToAppTokensMap
-// Dependencies: [5, 5127, 676, 4078, 709, 530, 2]
+// Dependencies: [5, 5189, 676, 4140, 709, 530, 2]
 
-// Module 5527 (tokensToAppTokensMap)
+// Module 5589 (tokensToAppTokensMap)
 import sendRequest from "sendRequest";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
 import { FetchState } from "recomputeFromAppTokens";

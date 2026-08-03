@@ -1,10 +1,10 @@
-// Module ID: 8463
-// Function ID: 8464
+// Module ID: 8764
+// Function ID: 8765
 // Name: GuildProfileActionSheet
-// Dependencies: [32, 19, 17, 3822, 8285, 8464, 676, 21, 4193, 712, 1474, 4129, 8286, 589, 3897, 7957, 5519, 5539, 6694, 8287, 8465, 4604, 1236, 11967, 8466, 11968, 689, 5247, 4615, 5249, 5503, 2]
+// Dependencies: [32, 19, 17, 3884, 8592, 8765, 676, 21, 4255, 712, 1474, 4191, 8593, 589, 3959, 7313, 5581, 5601, 5817, 8594, 8766, 4666, 1236, 12063, 8767, 12064, 689, 5309, 4677, 5311, 5565, 2]
 // Exports: default
 
-// Module 8463 (GuildProfileActionSheet)
+// Module 8764 (GuildProfileActionSheet)
 import _slicedToArray from "_slicedToArray";
 import _fetchGuildTopGames from "_fetchGuildTopGames";
 import get_ActivityIndicator from "QUICK_SWITCHER";

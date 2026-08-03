@@ -1,9 +1,9 @@
-// Module ID: 5825
-// Function ID: 5826
+// Module ID: 6920
+// Function ID: 6921
 // Name: fromServer
-// Dependencies: [5826, 5828, 5829, 5830, 5827, 2]
+// Dependencies: [6921, 6923, 6924, 6925, 6922, 2]
 
-// Module 5825 (fromServer)
+// Module 6920 (fromServer)
 import { CollectiblesMarketingBadgeRecord as closure_2 } from "fromServer";
 import { CollectiblesMarketingBannerRecord as closure_3 } from "fromServer";
 import { CollectiblesMarketingCoachmarkRecord as closure_4 } from "fromServer";
@@ -24,7 +24,7 @@ prototype["fromServer"] = function fromServer(marketings) {
     marketings = {};
   }
   const entries = Object.entries(marketings);
-  if (typeof prototype !== "fileFinishedImporting") {
+  if (typeof prototype !== "error") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);

@@ -1,9 +1,9 @@
-// Module ID: 14669
-// Function ID: 14670
+// Module ID: 14736
+// Function ID: 14737
 // Name: toggle
-// Dependencies: [7761, 14670, 13874, 3866, 10133, 1236, 2]
+// Dependencies: [7880, 14737, 13941, 3928, 10272, 1236, 2]
 
-// Module 14669 (toggle)
+// Module 14736 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -13,16 +13,16 @@ const toggle = createToggle.createToggle({
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   useValue: function useDataToSupportQuestsSettingValue() {
-    const DropsOptedOut = require(3866) /* explicitContentFromProto */.DropsOptedOut;
+    const DropsOptedOut = require(3928) /* explicitContentFromProto */.DropsOptedOut;
     return !DropsOptedOut.useSetting();
   },
   onValueChange: function onDataToSupportQuestsSettingValueChange(arg0) {
-    const DropsOptedOut = require(3866) /* explicitContentFromProto */.DropsOptedOut;
+    const DropsOptedOut = require(3928) /* explicitContentFromProto */.DropsOptedOut;
     DropsOptedOut.updateSetting(!arg0);
   },
   useIsDisabled() {
-    let adPersonalizationTogglesDisabled = require(14670) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
-    const obj = require(14670) /* useAdPersonalizationTogglesDisabled */;
+    let adPersonalizationTogglesDisabled = require(14737) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
+    const obj = require(14737) /* useAdPersonalizationTogglesDisabled */;
     if (!adPersonalizationTogglesDisabled) {
       adPersonalizationTogglesDisabled = obj2.useIsParentallyControlled();
     }
@@ -36,16 +36,16 @@ let obj = {
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   useValue: function useDataToSupportQuestsSettingValue() {
-    const DropsOptedOut = require(3866) /* explicitContentFromProto */.DropsOptedOut;
+    const DropsOptedOut = require(3928) /* explicitContentFromProto */.DropsOptedOut;
     return !DropsOptedOut.useSetting();
   },
   onValueChange: function onDataToSupportQuestsSettingValueChange(arg0) {
-    const DropsOptedOut = require(3866) /* explicitContentFromProto */.DropsOptedOut;
+    const DropsOptedOut = require(3928) /* explicitContentFromProto */.DropsOptedOut;
     DropsOptedOut.updateSetting(!arg0);
   },
   useIsDisabled() {
-    let adPersonalizationTogglesDisabled = require(14670) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
-    const obj = require(14670) /* useAdPersonalizationTogglesDisabled */;
+    let adPersonalizationTogglesDisabled = require(14737) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
+    const obj = require(14737) /* useAdPersonalizationTogglesDisabled */;
     if (!adPersonalizationTogglesDisabled) {
       adPersonalizationTogglesDisabled = obj2.useIsParentallyControlled();
     }

@@ -1,10 +1,10 @@
-// Module ID: 9905
-// Function ID: 9906
+// Module ID: 10048
+// Function ID: 10049
 // Name: longPressMessageHandleReply
-// Dependencies: [5970, 1874, 5969, 676, 698, 9575, 5718, 9577, 4388, 2]
+// Dependencies: [7049, 1874, 7048, 676, 698, 9722, 6814, 9724, 4450, 2]
 // Exports: default
 
-// Module 9905 (longPressMessageHandleReply)
+// Module 10048 (longPressMessageHandleReply)
 import initialize from "initialize";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import getState from "getState";
@@ -30,12 +30,12 @@ export default function longPressMessageHandleReply(arg0) {
     obj[0] = message.id;
     ({ id: obj11[1], guild_id: obj11[2] } = channel);
     const obj10 = importDefault(698);
-    obj[4] = require(9575) /* handleEdit */.getContextBarCancelReason("edit", actionSource);
+    obj[4] = require(9722) /* handleEdit */.getContextBarCancelReason("edit", actionSource);
     obj[5] = null != currentUser && currentUser.id === editingMessage.author.id;
     obj10.track(AnalyticEvents.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
-    const obj12 = require(9575) /* handleEdit */;
+    const obj12 = require(9722) /* handleEdit */;
   }
-  obj = importDefault(5718);
+  obj = importDefault(6814);
   obj.endEditMessage(channel.id);
   pendingReply = pendingReply.getPendingReply(channel.id);
   if (invertible) {
@@ -53,7 +53,7 @@ export default function longPressMessageHandleReply(arg0) {
           }
           obj[5] = tmp18;
           tmp3Result.track(AnalyticEvents.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
-          require(9577) /* createPendingReply */.deletePendingReply(channel.id);
+          require(9724) /* createPendingReply */.deletePendingReply(channel.id);
           let text;
           if (chatInputRef != null) {
             const current = chatInputRef.current;
@@ -69,17 +69,17 @@ export default function longPressMessageHandleReply(arg0) {
               }
             }
           }
-          const obj9 = require(9577) /* createPendingReply */;
+          const obj9 = require(9724) /* createPendingReply */;
         }
       }
     }
   }
   tmp3Result = tmp3(698);
-  const merged = Object.assign(require(4388) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(channel.guild_id));
+  const merged = Object.assign(require(4450) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(channel.guild_id));
   const obj1 = { source: actionSource };
-  const obj4 = require(4388) /* collectGuildAnalyticsMetadata */;
+  const obj4 = require(4450) /* collectGuildAnalyticsMetadata */;
   const tmp7 = require;
-  const merged1 = Object.assign(require(4388) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadata(channel));
+  const merged1 = Object.assign(require(4450) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadata(channel));
   tmp3Result.track(AnalyticEvents.REPLY_MESSAGE_STARTED, obj1);
   const currentUser2 = authStore.getCurrentUser();
   const isDMResult = channel.isDM();
@@ -90,8 +90,8 @@ export default function longPressMessageHandleReply(arg0) {
   if (tmp13) {
     tmp13 = message.author.id !== currentUser2.id;
   }
-  const obj5 = require(4388) /* collectGuildAnalyticsMetadata */;
-  const pendingReply1 = tmp7(9577).createPendingReply({ message, channel, shouldMention: tmp13, source: actionSource });
+  const obj5 = require(4450) /* collectGuildAnalyticsMetadata */;
+  const pendingReply1 = tmp7(9724).createPendingReply({ message, channel, shouldMention: tmp13, source: actionSource });
   if (chatInputRef != null) {
     const current3 = chatInputRef.current;
     if (current3 != null) {

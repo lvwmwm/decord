@@ -1,9 +1,9 @@
-// Module ID: 9779
-// Function ID: 9780
+// Module ID: 9924
+// Function ID: 9925
 // Name: StorefrontPlatform
 // Dependencies: [2]
 
-// Module 9779 (StorefrontPlatform)
+// Module 9924 (StorefrontPlatform)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/StorefrontPlatform.tsx");
 
 export const StorefrontPlatform = { DESKTOP: "desktop", XBOX: "xbox", PLAYSTATION: "playstation", SWITCH: "switch", APPLE_ARCADE: "apple arcade", NETFLIX: "netflix", AMAZON_KIDS_PLUS: "amazon kids+" };

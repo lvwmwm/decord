@@ -1,10 +1,10 @@
-// Module ID: 9161
-// Function ID: 9162
+// Module ID: 9334
+// Function ID: 9335
 // Name: MemberVerificationAlert
-// Dependencies: [19, 17, 21, 4193, 712, 4622, 4189, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 4684, 4251, 2]
 // Exports: default
 
-// Module 9161 (MemberVerificationAlert)
+// Module 9334 (MemberVerificationAlert)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -44,16 +44,16 @@ export default function MemberVerificationAlert(arg0) {
   }
   const items = [tmp7, , , ];
   obj = { style: tmp2.header, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: header };
-  items[1] = callback(require(4189) /* Text */.Heading, obj);
+  items[1] = callback(require(4251) /* Text */.Heading, obj);
   let tmp10Result = null;
   if (null != subtitle) {
     const obj1 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
     obj1[0] = tmp2.subtitle;
     obj1[3] = subtitle;
-    tmp10Result = tmp10(require(4189) /* Text */.Text, obj1);
+    tmp10Result = tmp10(require(4251) /* Text */.Text, obj1);
   }
   items[2] = tmp10Result;
   items[3] = callback(View, { style: tmp2.buttons, children: buttons });
   obj.children = items;
-  return closure_5(importDefault(4622), obj);
+  return closure_5(importDefault(4684), obj);
 };

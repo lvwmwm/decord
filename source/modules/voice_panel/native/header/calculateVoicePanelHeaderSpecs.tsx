@@ -1,10 +1,10 @@
-// Module ID: 10057
-// Function ID: 10058
+// Module ID: 10199
+// Function ID: 10200
 // Name: t
 // Dependencies: [2]
 // Exports: default
 
-// Module 10057 (t)
+// Module 10199 (t)
 const fn = function t(top) {
   const bound = Math.max(arg1, top.top);
   return { height: 44 + bound, paddingTop: bound, paddingLeft: Math.max(arg1, top.left), paddingRight: Math.max(arg1, top.right) };

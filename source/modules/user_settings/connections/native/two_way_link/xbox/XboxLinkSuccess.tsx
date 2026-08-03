@@ -1,10 +1,10 @@
-// Module ID: 9040
-// Function ID: 9041
+// Module ID: 9213
+// Function ID: 9214
 // Name: XboxLinkDiscordSuccess
-// Dependencies: [32, 19, 17, 8942, 8954, 21, 4193, 712, 8947, 500, 1480, 9041, 4189, 1236, 9042, 9043, 1297, 9044, 5181, 4604, 2]
+// Dependencies: [32, 19, 17, 9119, 9131, 21, 4255, 712, 9124, 500, 1480, 9214, 4251, 1236, 9215, 9216, 1297, 9217, 5243, 4666, 2]
 // Exports: default
 
-// Module 9040 (XboxLinkDiscordSuccess)
+// Module 9213 (XboxLinkDiscordSuccess)
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
 import get_ActivityIndicator from "registerAsset";

@@ -1,10 +1,10 @@
-// Module ID: 5683
-// Function ID: 5684
+// Module ID: 5745
+// Function ID: 5746
 // Name: _safeTransitionTo
-// Dependencies: [5, 1862, 676, 4385, 5684, 1222, 5685, 4533, 1236, 6056, 2325, 11827, 2]
+// Dependencies: [5, 1862, 676, 4447, 5746, 1222, 5747, 4595, 1236, 5774, 2355, 5810, 2]
 // Exports: default
 
-// Module 5683 (_safeTransitionTo)
+// Module 5745 (_safeTransitionTo)
 import transitionTo from "transitionTo";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { Routes } from "ME";

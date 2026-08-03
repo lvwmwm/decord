@@ -1,9 +1,9 @@
-// Module ID: 12774
-// Function ID: 12775
+// Module ID: 12837
+// Function ID: 12838
 // Name: initialize
-// Dependencies: [5949, 5647, 3830, 1874, 589, 709, 2]
+// Dependencies: [7028, 5709, 3892, 1874, 589, 709, 2]
 
-// Module 12774 (initialize)
+// Module 12837 (initialize)
 import recomputeAffinities from "recomputeAffinities";
 import hasConsented from "hasConsented";
 import upsertRelationship from "upsertRelationship";

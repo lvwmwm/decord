@@ -1,10 +1,10 @@
-// Module ID: 15361
-// Function ID: 15362
+// Module ID: 15428
+// Function ID: 15429
 // Name: _maybeFetchGuildDiscoveryCategories
-// Dependencies: [5, 1946, 15362, 676, 530, 709, 2]
+// Dependencies: [5, 1946, 15429, 676, 530, 709, 2]
 // Exports: addGuildCategory, deleteGuildCategory, fetchMetadataForGuild, fetchSlugForGuild, maybeFetchGuildDiscoveryCategories, saveGuildMetadata, updateGuildDiscoveryMetadataAbout, updateGuildDiscoveryMetadataIsPublished, updateGuildDiscoveryMetadataReasonsToJoin, updateGuildDiscoveryMetadataSocialLinks, updateGuildEmojiDiscoverabilityEnabled, updateGuildKeywords, updateGuildPrimaryCategory
 
-// Module 15361 (_maybeFetchGuildDiscoveryCategories)
+// Module 15428 (_maybeFetchGuildDiscoveryCategories)
 import dispatcher from "dispatcher";
 import _getSystemLocale from "_getSystemLocale";
 import getPrimaryCategories from "getPrimaryCategories";

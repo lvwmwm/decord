@@ -1,10 +1,10 @@
-// Module ID: 10849
-// Function ID: 10850
+// Module ID: 10949
+// Function ID: 10950
 // Name: StageChannelBackground
-// Dependencies: [19, 17, 21, 4193, 712, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 2]
 // Exports: default
 
-// Module 10849 (StageChannelBackground)
+// Module 10949 (StageChannelBackground)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

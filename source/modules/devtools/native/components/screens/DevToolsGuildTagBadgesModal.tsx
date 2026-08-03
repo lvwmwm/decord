@@ -1,8 +1,8 @@
-// Module ID: 14820
-// Function ID: 14821
-// Dependencies: [19, 21, 9118, 5574, 9127, 10197, 14821, 2]
+// Module ID: 14887
+// Function ID: 14888
+// Dependencies: [19, 21, 9291, 5636, 9300, 10336, 14888, 2]
 
-// Module 14820
+// Module 14887
 import { jsx } from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
 import importAllResult from "noop";
@@ -12,7 +12,7 @@ createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigat
 const memoResult = require("noop").memo(function DevToolsGuildTagBadgesModal() {
   let Navigator;
   let Screen;
-  let obj = _require(5574);
+  let obj = _require(5636);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions(navigation) {
@@ -37,15 +37,15 @@ const memoResult = require("noop").memo(function DevToolsGuildTagBadgesModal() {
     options() {
       return { title: "Guild Tag Badges" };
     },
-    component: importDefault(14821)
+    component: importDefault(14888)
   };
   ({ Navigator, Screen } = createNativeStackNavigator);
   obj[1] = <Screen name="DevToolsGuildTagBadges" options={function options() {
     return { title: "Guild Tag Badges" };
-  }} component={importDefault(14821)} />;
+  }} component={importDefault(14888)} />;
   return <Navigator name="DevToolsGuildTagBadges" options={function options() {
     return { title: "Guild Tag Badges" };
-  }} component={importDefault(14821)} />;
+  }} component={importDefault(14888)} />;
 });
 const result = require("createNativeStackNavigator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildTagBadgesModal.tsx");
 

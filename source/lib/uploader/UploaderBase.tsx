@@ -1,9 +1,9 @@
-// Module ID: 6155
-// Function ID: 6156
+// Module ID: 7207
+// Function ID: 7208
 // Name: _fileSize
-// Dependencies: [5, 676, 4186, 3, 652, 12, 4767, 4772, 4733, 4734, 2]
+// Dependencies: [5, 676, 4248, 3, 652, 12, 4829, 4834, 4795, 4796, 2]
 
-// Module 6155 (_fileSize)
+// Module 7207 (_fileSize)
 import apply from "apply";
 import { AbortCodes } from "ME";
 import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING";
@@ -83,7 +83,7 @@ class UploaderBase extends EventEmitter {
     };
     obj = require("apply");
     tmp3.id = obj.uniqueId("Uploader");
-    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "bottom" };
+    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "accessibilityRole" };
     return tmp3;
   }
 }

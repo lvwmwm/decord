@@ -1,10 +1,10 @@
-// Module ID: 12003
-// Function ID: 12004
+// Module ID: 12099
+// Function ID: 12100
 // Name: useEntryActivityAndApplication
-// Dependencies: [32, 1371, 12004, 589, 5525, 2]
+// Dependencies: [32, 1371, 12100, 589, 5587, 2]
 // Exports: default
 
-// Module 12003 (useEntryActivityAndApplication)
+// Module 12099 (useEntryActivityAndApplication)
 import _slicedToArray from "_slicedToArray";
 import participantFromServer from "participantFromServer";
 import entryToKey from "entryToKey";
@@ -27,11 +27,11 @@ export default function useEntryActivityAndApplication(extra) {
     application_id1 = extra.extra.application_id;
   }
   items1[1] = application_id1;
-  const tmp7 = callback(first(5525)(items1), 2);
+  const tmp7 = callback(first(5587)(items1), 2);
   first = tmp7[0];
   obj = { activity: stateFromStores, embeddedActivity: null, anyMatchingApplication: null, activityApplication: null, fallbackApplication: null };
   const tmp = _require;
-  const tmp4 = first(5525);
+  const tmp4 = first(5587);
   const items2 = [participantFromServer];
   obj[1] = _require(589).useStateFromStores(items2, () => {
     let id;

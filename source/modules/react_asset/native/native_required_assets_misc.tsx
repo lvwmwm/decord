@@ -1,9 +1,9 @@
-// Module ID: 16773
-// Function ID: 16774
+// Module ID: 16839
+// Function ID: 16840
 // Name: NATIVE_REQUIRED_ASSETS_MISC
-// Dependencies: [1420, 1421, 1422, 1423, 1424, 1438, 1439, 1440, 1441, 1442, 1443, 1444, 1445, 16774, 16775, 16776, 16777, 16778, 16779, 16780, 2]
+// Dependencies: [1420, 1421, 1422, 1423, 1424, 1438, 1439, 1440, 1441, 1442, 1443, 1444, 1445, 16840, 16841, 16842, 16843, 16844, 16845, 16846, 2]
 
-// Module 16773 (NATIVE_REQUIRED_ASSETS_MISC)
+// Module 16839 (NATIVE_REQUIRED_ASSETS_MISC)
 const obj = { DefaultAvatar0: require("registerAsset"), DefaultAvatar1: require("registerAsset"), DefaultAvatar2: require("registerAsset"), DefaultAvatar3: require("registerAsset"), DefaultAvatar4: require("registerAsset"), DefaultGroup0: require("registerAsset"), DefaultGroup1: require("registerAsset"), DefaultGroup2: require("registerAsset"), DefaultGroup3: require("registerAsset"), DefaultGroup4: require("registerAsset"), DefaultGroup5: require("registerAsset"), DefaultGroup6: require("registerAsset"), DefaultGroup7: require("registerAsset"), PoopDark: require("registerAsset"), PoopLight: require("registerAsset"), RoleSubscriptionBadge: require("registerAsset"), RoleSubscriptionLanyard: require("registerAsset"), RoleSubscriptionPurchaseCard: require("registerAsset"), SummaryIndicatorEnd: require("registerAsset"), SummaryIndicatorStart: require("registerAsset") };
 const result = require("registerAsset").fileFinishedImporting("modules/react_asset/native/native_required_assets_misc.tsx");
 

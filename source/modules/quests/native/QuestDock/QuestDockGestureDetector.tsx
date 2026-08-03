@@ -1,9 +1,9 @@
-// Module ID: 14226
-// Function ID: 14227
+// Module ID: 14293
+// Function ID: 14294
 // Name: useQuestDockSwipeGesture
-// Dependencies: [19, 5037, 14140, 21, 14141, 10436, 14144, 14222, 4054, 14145, 14142, 5277, 14139, 4162, 2]
+// Dependencies: [19, 5099, 14207, 21, 14208, 10574, 14211, 14289, 4116, 14212, 14209, 5339, 14206, 4224, 2]
 
-// Module 14226 (useQuestDockSwipeGesture)
+// Module 14293 (useQuestDockSwipeGesture)
 import importAllResult from "noop";
 import { QuestDockMode } from "QuestsExperimentLocations";
 import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT";
@@ -385,7 +385,7 @@ let closure_22 = { code: "function QuestDockGestureDetectorTsx5(){const{activeQu
 let closure_23 = { code: "function QuestDockGestureDetectorTsx6(current,previous){const{QuestDockMode,runOnJS,triggerHapticFeedback,HapticFeedbackTypes}=this.__closure;if(current.mode===(previous===null||previous===void 0?void 0:previous.mode)||current.mode===QuestDockMode.CLOSED||(previous===null||previous===void 0?void 0:previous.mode)===QuestDockMode.CLOSED||!current.isVisible){return;}runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_MEDIUM);}" };
 const memoResult = importAllResult.memo(function QuestDockGestureDetector(children) {
   const tmp = useQuestDockSwipeGesture();
-  return jsx(require(5277) /* Directions */.GestureDetector, { gesture: useQuestDockSwipeGesture(), children: children.children });
+  return jsx(require(5339) /* Directions */.GestureDetector, { gesture: useQuestDockSwipeGesture(), children: children.children });
 });
 let result = require("QUEST_DOCK_COLLAPSED_HEIGHT").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockGestureDetector.tsx");
 

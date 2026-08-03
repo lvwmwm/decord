@@ -1,10 +1,10 @@
-// Module ID: 10005
-// Function ID: 10006
+// Module ID: 10148
+// Function ID: 10149
 // Name: ChannelsAndRolesScreen
-// Dependencies: [32, 19, 17, 1862, 5120, 21, 4193, 712, 647, 10006, 8228, 1236, 8764, 10007, 10013, 9117, 2]
+// Dependencies: [32, 19, 17, 1862, 5182, 21, 4255, 712, 647, 5849, 8535, 1236, 8941, 10149, 10155, 9290, 2]
 // Exports: default
 
-// Module 10005 (ChannelsAndRolesScreen)
+// Module 10148 (ChannelsAndRolesScreen)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -97,7 +97,7 @@ export default function ChannelsAndRolesModal(arg0) {
   let obj = require(647) /* defaultAreStatesEqual */;
   const items = [createGuildRecordFromRust];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getGuild(closure_0));
-  const tmp2 = importDefault(10006)(stateFromStores);
+  const tmp2 = importDefault(5849)(stateFromStores);
   const tmp3 = closure_8;
   const intl = require(1236) /* getSystemLocale */.intl;
   const string = intl.string;
@@ -114,5 +114,5 @@ export default function ChannelsAndRolesModal(arg0) {
       return outer1_8(outer1_11, { guildId: closure_0, defaultTab: closure_1 });
     }
   };
-  return tmp3(importDefault(9117), obj);
+  return tmp3(importDefault(9290), obj);
 };

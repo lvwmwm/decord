@@ -1,17 +1,17 @@
-// Module ID: 12486
-// Function ID: 12487
+// Module ID: 12583
+// Function ID: 12584
 // Name: usePremiumPrimaryGradientColors
-// Dependencies: [3897, 712, 2]
+// Dependencies: [3959, 712, 2]
 // Exports: default
 
-// Module 12486 (usePremiumPrimaryGradientColors)
+// Module 12583 (usePremiumPrimaryGradientColors)
 const result = require("set").fileFinishedImporting("modules/premium/native/usePremiumPrimaryGradientColors.tsx");
 
 export default function usePremiumPrimaryGradientColors() {
-  const items = [require(3897) /* map */.useToken(importDefault(712).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT), , ];
-  const obj = require(3897) /* map */;
-  items[1] = require(3897) /* map */.useToken(importDefault(712).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2);
-  const obj2 = require(3897) /* map */;
-  items[2] = require(3897) /* map */.useToken(importDefault(712).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PINK_FOR_GRADIENT);
+  const items = [require(3959) /* map */.useToken(importDefault(712).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT), , ];
+  const obj = require(3959) /* map */;
+  items[1] = require(3959) /* map */.useToken(importDefault(712).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2);
+  const obj2 = require(3959) /* map */;
+  items[2] = require(3959) /* map */.useToken(importDefault(712).colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PINK_FOR_GRADIENT);
   return items;
 };

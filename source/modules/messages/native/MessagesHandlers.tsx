@@ -1,9 +1,9 @@
-// Module ID: 10918
-// Function ID: 10919
+// Module ID: 11040
+// Function ID: 11041
 // Name: items
-// Dependencies: [109, 5, 32, 6784, 4230, 5521, 10258, 5784, 7858, 5989, 5860, 9516, 3823, 5949, 1218, 1372, 8036, 1942, 1862, 4178, 10485, 4411, 3821, 4280, 1931, 4010, 4871, 6153, 1874, 7719, 676, 6025, 1876, 6759, 1235, 5539, 9522, 10002, 1959, 9560, 10003, 10045, 10919, 7767, 4403, 5552, 1236, 9092, 6640, 10935, 4161, 10940, 5709, 10942, 9520, 4174, 6024, 9521, 9515, 9320, 9323, 9651, 500, 7823, 6052, 9590, 7821, 10943, 8463, 8363, 11, 10945, 10946, 9559, 4421, 9561, 10001, 4162, 4163, 9905, 1222, 9575, 10000, 5027, 4388, 5769, 7755, 10953, 10954, 1384, 10959, 10967, 10968, 10969, 10970, 10971, 10972, 3890, 10973, 10759, 10496, 4179, 8233, 6048, 1577, 5987, 10974, 5042, 9480, 6016, 4182, 9508, 9509, 6696, 10994, 9768, 6693, 10997, 10999, 7883, 11006, 11014, 698, 4407, 7732, 6713, 5005, 9369, 5652, 6194, 9186, 6359, 4399, 8041, 11018, 6219, 6614, 11019, 9713, 11020, 8436, 503, 3894, 11022, 9322, 11023, 5718, 4415, 1906, 4532, 7900, 11025, 11027, 11031, 7788, 11032, 6718, 7804, 7802, 11033, 11037, 11065, 11066, 4201, 5547, 3893, 11077, 11078, 11079, 4385, 6692, 11080, 11081, 5865, 4409, 6750, 6752, 11083, 9970, 8121, 8119, 11116, 11118, 11121, 7754, 9112, 9524, 11137, 11138, 11139, 9906, 11140, 11143, 11146, 11147, 11154, 11157, 2]
+// Dependencies: [109, 5, 32, 7741, 4292, 5583, 10397, 6882, 7976, 7068, 6951, 9663, 3885, 7028, 1218, 1372, 8369, 1942, 1862, 4240, 10623, 4473, 3883, 4342, 1931, 4072, 4933, 7205, 1874, 7840, 676, 7104, 1876, 7716, 1235, 5601, 9669, 10145, 1959, 9707, 10146, 10187, 11041, 7886, 4465, 5614, 1236, 9265, 7623, 11057, 4223, 11062, 6879, 11064, 9667, 4236, 7103, 9668, 9662, 9492, 9495, 9798, 500, 7941, 5769, 9737, 7939, 11065, 8764, 8668, 11, 11067, 11068, 9706, 4483, 9708, 10144, 4224, 4225, 10048, 1222, 9722, 10143, 5089, 4450, 6864, 7874, 11075, 11076, 1384, 11081, 11089, 11090, 11091, 11092, 11093, 11007, 3952, 11094, 10867, 10634, 4241, 8540, 7126, 1577, 7066, 11095, 5104, 9627, 7095, 4244, 9655, 9656, 7667, 11115, 9913, 5856, 11118, 11120, 8001, 11127, 11010, 698, 4469, 5842, 7684, 5067, 9528, 5714, 8161, 9359, 7354, 4461, 8374, 11135, 6783, 5915, 11136, 9858, 11137, 8741, 503, 3956, 11139, 9494, 11140, 6814, 4477, 1906, 4594, 8018, 11142, 11144, 11148, 7906, 11149, 7689, 7922, 7920, 11150, 11154, 11181, 11182, 4263, 5609, 3955, 11193, 11194, 11195, 4447, 5855, 11196, 11197, 6956, 4471, 7708, 7710, 11199, 10113, 8452, 8450, 11232, 8320, 11234, 7873, 9285, 9671, 11250, 11251, 11252, 10049, 11253, 11256, 11259, 11260, 11266, 11269, 2]
 
-// Module 10918 (items)
+// Module 11040 (items)
 import getQuestContentName from "getQuestContentName";
 import set from "set";
 import closure_8 from "GuildFeatures";
@@ -74,7 +74,7 @@ let result = require("_slicedToArray").fileFinishedImporting("modules/messages/n
 class MessagesHandlers {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
-    f107781 = obj;
+    f108037 = obj;
     obj.getMessageData = function getMessageData(messageId) {
       if (null == messageId) {
         return null;
@@ -2262,8 +2262,8 @@ class MessagesHandlers {
       obj[2] = callback(closure_3[144]);
       callback(closure_3[142]).open(obj);
     };
-    f107781 = undefined;
-    f107781 = set((arg0) => {
+    f108037 = undefined;
+    f108037 = set((arg0) => {
       let closure_0 = arg0;
       let c2 = 0;
       let c1 = 0;
@@ -2385,7 +2385,7 @@ class MessagesHandlers {
       const obj = uiStore(closure_3[39]);
       callback(closure_3[50]).openLazy(uiStore(closure_3[38])(closure_3[172], closure_3.paths), "ExplicitMediaLearnMore", { messageId, channelId, attachmentId, embedId });
     };
-    f107781 = set((arg0) => {
+    f108037 = set((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;
@@ -2425,25 +2425,25 @@ class MessagesHandlers {
                 let closure_1 = tmp2;
                 isReveal = undefined;
                 closure_1 = undefined;
-                const nativeSyntheticEventData = callback(9560).getNativeSyntheticEventData(isReveal);
+                const nativeSyntheticEventData = callback(9707).getNativeSyntheticEventData(isReveal);
                 ({ messageId, channelId, isReveal } = nativeSyntheticEventData);
                 ({ attachmentId, embedId } = nativeSyntheticEventData);
-                const obj10 = callback(9560);
+                const obj10 = callback(9707);
                 if (isReveal) {
                   if (obj11.shouldAgeVerifyForExplicitMedia()) {
                     dependencyMap = 1;
                     c4 = 1;
                     const obj1 = { value: null, done: false };
-                    obj1[0] = callback(4409).maybePerformReactiveCheck();
+                    obj1[0] = callback(4471).maybePerformReactiveCheck();
                     return obj1;
                   }
                 }
-                let obj3 = callback(5865);
+                let obj3 = callback(6956);
                 const obj2 = { obscure: null };
                 obj2[0] = isReveal;
                 const result = obj3.trackToggleMediaObscurityV2(obj2);
                 c4 = 3;
-                obj11 = callback(5865);
+                obj11 = callback(6956);
               }
             } else if (arg0 === 1) {
               c4 = 3;
@@ -2456,9 +2456,9 @@ class MessagesHandlers {
                 reactiveCheckPassed = outer1_9.getReactiveCheckPassed();
               }
               if (!reactiveCheckPassed) {
-                obj = outer1_1(6750);
+                obj = outer1_1(7708);
                 obj3 = { entryPoint: null };
-                obj3[0] = callback(6752).AgeVerificationModalEntryPoint.OBSCURED_MEDIA;
+                obj3[0] = callback(7710).AgeVerificationModalEntryPoint.OBSCURED_MEDIA;
                 const result1 = obj.showAgeVerificationGetStartedModal(obj3);
               }
             }

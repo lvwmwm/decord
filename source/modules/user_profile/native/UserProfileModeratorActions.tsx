@@ -1,10 +1,10 @@
-// Module ID: 12053
-// Function ID: 12054
+// Module ID: 12149
+// Function ID: 12150
 // Name: ModeratorActionRow
-// Dependencies: [19, 5015, 1372, 1932, 1942, 1862, 3821, 4209, 676, 3809, 21, 4193, 1348, 5224, 5566, 4189, 8111, 4161, 9074, 589, 6052, 11039, 1380, 11040, 4384, 4378, 4376, 3826, 1236, 10729, 6718, 10731, 7639, 4719, 10416, 1959, 5109, 9020, 4399, 11041, 1384, 9994, 3810, 11058, 11044, 8878, 10813, 8874, 11633, 9139, 4135, 11060, 9033, 11062, 12054, 11727, 6080, 5558, 2]
+// Dependencies: [19, 5077, 1372, 1932, 1942, 1862, 3883, 4271, 676, 3871, 21, 4255, 1348, 5286, 5628, 4251, 8442, 4223, 9247, 589, 5769, 11156, 1380, 8351, 4446, 4440, 4438, 3888, 1236, 10837, 7689, 10839, 7765, 4781, 10555, 1959, 5171, 5910, 4461, 11157, 1384, 10137, 3872, 11174, 11160, 9055, 10913, 9051, 11740, 9312, 4197, 11176, 9208, 11178, 12150, 11830, 7132, 5620, 2]
 // Exports: default
 
-// Module 12053 (ModeratorActionRow)
+// Module 12149 (ModeratorActionRow)
 import "initialize";
 import buildStageChannelUserRoles from "buildStageChannelUserRoles";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -42,7 +42,7 @@ function ModeratorActionRow(arg0) {
     obj = { IconComponent: null, variant: null };
     obj[0] = icon;
     obj[1] = str;
-    obj[2] = jsx(require(5224) /* TableRowInner */.TableRow.Icon, { IconComponent: null, variant: null });
+    obj[2] = jsx(require(5286) /* TableRowInner */.TableRow.Icon, { IconComponent: null, variant: null });
     obj[3] = null != hint;
     obj[4] = str;
     obj[5] = disabled;
@@ -53,7 +53,7 @@ function ModeratorActionRow(arg0) {
       combined = "" + label + ", " + sublabel;
     }
     obj[7] = combined;
-    return jsx(require(5224) /* TableRowInner */.TableRow, { IconComponent: null, variant: null });
+    return jsx(require(5286) /* TableRowInner */.TableRow, { IconComponent: null, variant: null });
   } else {
     obj = { label: null, sublabel: null, icon: null, hint: null, disabled: null, isDestructive: null, onPress: null };
     obj[0] = label;
@@ -61,7 +61,7 @@ function ModeratorActionRow(arg0) {
     if (null != sublabel) {
       const obj1 = { variant: "text-xs/normal", color: "text-subtle", children: null };
       obj1[2] = sublabel;
-      tmp2Result = tmp2(require(4189) /* Text */.Text, obj1);
+      tmp2Result = tmp2(require(4251) /* Text */.Text, obj1);
     }
     obj[1] = tmp2Result;
     obj[2] = icon;
@@ -69,7 +69,7 @@ function ModeratorActionRow(arg0) {
     obj[4] = disabled;
     obj[5] = isDestructive;
     obj[6] = onPress;
-    return jsx(require(5566) /* Divider */.UserProfileFormRow, { label: null, sublabel: null, icon: null, hint: null, disabled: null, isDestructive: null, onPress: null });
+    return jsx(require(5628) /* Divider */.UserProfileFormRow, { label: null, sublabel: null, icon: null, hint: null, disabled: null, isDestructive: null, onPress: null });
   }
 }
 ({ GuildFeatures: closure_12, Permissions: map1 } = ME);
@@ -397,7 +397,7 @@ export default function UserProfileModeratorActions(user) {
               dependencyMap();
             },
             onRemove() {
-              let arr = callback(4399);
+              let arr = callback(4461);
               arr = arr.pop();
             }
           };

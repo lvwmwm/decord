@@ -1,10 +1,10 @@
-// Module ID: 11939
-// Function ID: 11940
+// Module ID: 12035
+// Function ID: 12036
 // Name: GameUpdatePlatformIcon
-// Dependencies: [19, 21, 8181, 11940, 8519, 11942, 11944, 9217, 11946, 2]
+// Dependencies: [19, 21, 8488, 12036, 8808, 12038, 12040, 9390, 12042, 2]
 // Exports: GameUpdatePlatformIcon
 
-// Module 11939 (GameUpdatePlatformIcon)
+// Module 12035 (GameUpdatePlatformIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -19,36 +19,36 @@ export const GameUpdatePlatformIcon = function GameUpdatePlatformIcon(color) {
     size = "xs";
   }
   color = color.color;
-  if (require(8181) /* PlatformType */.PlatformType.DESKTOP === platform) {
+  if (require(8488) /* PlatformType */.PlatformType.DESKTOP === platform) {
     let obj = { size: null, color: null };
     obj[0] = size;
     obj[1] = color;
-    return jsx(tmp(11940).ScreenIcon, { size: null, color: null });
-  } else if (tmp(8181).PlatformType.XBOX === platform) {
+    return jsx(tmp(12036).ScreenIcon, { size: null, color: null });
+  } else if (tmp(8488).PlatformType.XBOX === platform) {
     obj = { size: null, color: null };
     obj[0] = size;
     obj[1] = color;
-    return jsx(tmp(8519).XboxNeutralIcon, { size: null, color: null });
-  } else if (tmp(8181).PlatformType.PLAYSTATION === platform) {
+    return jsx(tmp(8808).XboxNeutralIcon, { size: null, color: null });
+  } else if (tmp(8488).PlatformType.PLAYSTATION === platform) {
     const obj1 = { size: null, color: null };
     obj1[0] = size;
     obj1[1] = color;
-    return jsx(tmp(11942).PlaystationNeutralIcon, { size: null, color: null });
-  } else if (tmp(8181).PlatformType.NINTENDO === platform) {
+    return jsx(tmp(12038).PlaystationNeutralIcon, { size: null, color: null });
+  } else if (tmp(8488).PlatformType.NINTENDO === platform) {
     const obj2 = { size: null, color: null };
     obj2[0] = size;
     obj2[1] = color;
-    return jsx(tmp(11944).NintendoSwitchNeutralIcon, { size: null, color: null });
-  } else if (tmp(8181).PlatformType.ANDROID === platform) {
+    return jsx(tmp(12040).NintendoSwitchNeutralIcon, { size: null, color: null });
+  } else if (tmp(8488).PlatformType.ANDROID === platform) {
     const obj3 = { size: null, color: null };
     obj3[0] = size;
     obj3[1] = color;
-    return jsx(tmp(9217).MobilePhoneIcon, { size: null, color: null });
-  } else if (tmp(8181).PlatformType.IOS === platform) {
+    return jsx(tmp(9390).MobilePhoneIcon, { size: null, color: null });
+  } else if (tmp(8488).PlatformType.IOS === platform) {
     obj = { size: null, color: null };
     obj[0] = size;
     obj[1] = color;
-    return jsx(tmp(11946).AppleNeutralIcon, { size: null, color: null });
+    return jsx(tmp(12042).AppleNeutralIcon, { size: null, color: null });
   } else {
     return null;
   }

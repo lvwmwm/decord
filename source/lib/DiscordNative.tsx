@@ -1,9 +1,9 @@
-// Module ID: 3804
-// Function ID: 3805
+// Module ID: 3866
+// Function ID: 3867
 // Name: set
 // Dependencies: [2]
 
-// Module 3804 (set)
+// Module 3866 (set)
 const result = require("set").fileFinishedImporting("lib/DiscordNative.tsx");
 
 export default window.DiscordNative;

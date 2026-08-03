@@ -1,10 +1,10 @@
-// Module ID: 11079
-// Function ID: 11080
+// Module ID: 11195
+// Function ID: 11196
 // Name: logMediaAttachmentPlaybackStarted
 // Dependencies: [676, 698, 2]
 // Exports: logMediaAttachmentPlaybackEnded, logMediaAttachmentPlaybackStarted
 
-// Module 11079 (logMediaAttachmentPlaybackStarted)
+// Module 11195 (logMediaAttachmentPlaybackStarted)
 import { AnalyticEvents } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/media/MediaAnalytics.tsx");

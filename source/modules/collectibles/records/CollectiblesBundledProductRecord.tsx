@@ -1,9 +1,9 @@
-// Module ID: 5806
-// Function ID: 5807
+// Module ID: 6901
+// Function ID: 6902
 // Name: fromServer
-// Dependencies: [4234, 2]
+// Dependencies: [4296, 2]
 
-// Module 5806 (fromServer)
+// Module 6901 (fromServer)
 let prototype;
 prototype = function CollectiblesBundledProductRecord(arg0) {
   ({ prices: tmp.prices, type: tmp.type, premiumType: tmp.premiumType, name: tmp.name, skuId: tmp.skuId, summary: tmp.summary } = arg0);
@@ -17,11 +17,11 @@ prototype["fromServer"] = function fromServer(arg0) {
   let summary;
   let type;
   ({ prices, type, premium_type, name, sku_id, summary } = arg0);
-  if (typeof prototype !== "fileFinishedImporting") {
+  if (typeof prototype !== "error") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);
-  obj.prices = importDefault(4234)(prices);
+  obj.prices = importDefault(4296)(prices);
   obj.type = type;
   obj.premiumType = premium_type;
   obj.name = name;

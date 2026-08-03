@@ -1,10 +1,10 @@
-// Module ID: 14998
-// Function ID: 14999
+// Module ID: 15285
+// Function ID: 15286
 // Name: VoiceUsers
-// Dependencies: [19, 17, 1932, 3830, 4389, 4266, 676, 21, 4193, 712, 12032, 1297, 4189, 1236, 10867, 5145, 4615, 14997, 589, 12, 14999, 2]
+// Dependencies: [19, 17, 1932, 3892, 4451, 4328, 676, 21, 4255, 712, 12128, 1297, 4251, 1236, 10967, 5207, 4677, 15284, 589, 12, 15286, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 14998 (VoiceUsers)
+// Module 15285 (VoiceUsers)
 import apply from "apply";
 import { View } from "useIsHomeDrawerChannelInChannelList";
 import comparator from "comparator";
@@ -43,7 +43,7 @@ function VoiceUsers(arg0) {
       obj[2] = closure_0;
       return outer1_11(outer1_0(outer1_2[11]).Avatar, obj, id.id);
     });
-    obj[1] = callback(require(12032) /* AvatarPile */.AvatarPile, obj);
+    obj[1] = callback(require(12128) /* AvatarPile */.AvatarPile, obj);
     tmp = callback(View, obj);
   }
   return tmp;
@@ -54,7 +54,7 @@ function LiveTag() {
   obj = { variant: "text-xxs/bold", style: tmp.tagText, lineClamp: 1, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.dI3q4h).toUpperCase();
-  obj[1] = callback(require(4189) /* Text */.Text, obj);
+  obj[1] = callback(require(4251) /* Text */.Text, obj);
   return callback(View, obj);
 }
 ({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
@@ -88,7 +88,7 @@ export const GuildVoiceState = function GuildVoiceState(arg0) {
   if (streamingUser != null) {
     id = streamingUser.id;
   }
-  const previewUrl = importDefault(10867)(guildId, streamingChannelId, id).previewUrl;
+  const previewUrl = importDefault(10967)(guildId, streamingChannelId, id).previewUrl;
   if (!tmp2) {
     return null;
   } else {
@@ -117,19 +117,19 @@ export const GuildVoiceState = function GuildVoiceState(arg0) {
       const obj4 = { uri: null };
       obj4[0] = previewUrl;
       obj3[1] = obj4;
-      const items1 = [tmp7(tmp3(5145), obj3), , , , ];
+      const items1 = [tmp7(tmp3(5207), obj3), , , , ];
       const obj5 = { colors: null, start: null, end: null, style: null, pointerEvents: "none" };
       obj5[0] = ["rgba(0, 0, 0, 1)", "rgba(0, 0, 0, 0)"];
       obj5[1] = { x: 0, y: 0 };
       obj5[2] = { x: 0, y: 1 };
       obj5[3] = tmp.streamPreviewDarkGradient;
-      items1[1] = tmp7(tmp3(4615), obj5);
+      items1[1] = tmp7(tmp3(4677), obj5);
       const obj6 = { colors: null, start: null, end: null, style: null, pointerEvents: "none" };
       obj6[0] = ["rgba(255, 255, 255, 1)", "rgba(255, 255, 255, 0)"];
       obj6[1] = { x: 0, y: 0 };
       obj6[2] = { x: 1, y: 1 };
       obj6[3] = tmp.streamPreviewGradient;
-      items1[2] = tmp7(tmp3(4615), obj6);
+      items1[2] = tmp7(tmp3(4677), obj6);
       const obj7 = { style: null, pointerEvents: "none" };
       obj7[0] = tmp.streamPreviewBorder;
       items1[3] = tmp7(tmp8, obj7);

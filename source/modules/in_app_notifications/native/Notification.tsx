@@ -1,10 +1,10 @@
-// Module ID: 10348
-// Function ID: 10349
+// Module ID: 10487
+// Function ID: 10488
 // Name: NOTIFICATION_MAX_WIDTH
-// Dependencies: [19, 10275, 676, 21, 4193, 712, 10274, 10316, 4054, 4603, 10291, 4194, 4388, 4721, 10349, 10352, 2]
+// Dependencies: [19, 10414, 676, 21, 4255, 712, 10413, 10455, 4116, 4665, 10430, 4256, 4450, 4783, 10488, 10491, 2]
 // Exports: NotificationPressable
 
-// Module 10348 (NOTIFICATION_MAX_WIDTH)
+// Module 10487 (NOTIFICATION_MAX_WIDTH)
 import noop from "noop";
 import set from "set";
 import { AnalyticEvents } from "ME";

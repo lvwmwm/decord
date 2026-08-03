@@ -1,10 +1,10 @@
-// Module ID: 9358
-// Function ID: 9359
+// Module ID: 9517
+// Function ID: 9518
 // Name: useEmojiPickerSearchState
-// Dependencies: [32, 19, 5052, 705, 1355, 2]
+// Dependencies: [32, 19, 5114, 705, 1355, 2]
 // Exports: default
 
-// Module 9358 (useEmojiPickerSearchState)
+// Module 9517 (useEmojiPickerSearchState)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getEmojiToGroupId from "getEmojiToGroupId";

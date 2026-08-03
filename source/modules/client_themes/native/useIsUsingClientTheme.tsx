@@ -1,12 +1,12 @@
-// Module ID: 8834
-// Function ID: 8835
+// Module ID: 9011
+// Function ID: 9012
 // Name: useIsUsingClientTheme
-// Dependencies: [8835, 2]
+// Dependencies: [9012, 2]
 // Exports: default
 
-// Module 8834 (useIsUsingClientTheme)
+// Module 9011 (useIsUsingClientTheme)
 const result = require("set").fileFinishedImporting("modules/client_themes/native/useIsUsingClientTheme.tsx");
 
 export default function useIsUsingClientTheme() {
-  return require(8835) /* useActiveThemeType */.useIsClientThemeOrCustomThemeActive();
+  return require(9012) /* useActiveThemeType */.useIsClientThemeOrCustomThemeActive();
 };

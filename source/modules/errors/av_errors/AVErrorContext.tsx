@@ -1,10 +1,10 @@
-// Module ID: 16697
-// Function ID: 16698
+// Module ID: 16763
+// Function ID: 16764
 // Name: getVoiceChannelErrorContext
-// Dependencies: [4240, 4265, 1931, 4279, 4290, 4257, 2]
+// Dependencies: [4302, 4327, 1931, 4341, 4352, 4319, 2]
 // Exports: getCommonErrorContext, getStreamErrorContext, getVoiceChannelErrorContext
 
-// Module 16697 (getVoiceChannelErrorContext)
+// Module 16763 (getVoiceChannelErrorContext)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createRTCConnection from "createRTCConnection";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -19,7 +19,7 @@ export const getVoiceChannelErrorContext = function getVoiceChannelErrorContext(
   mediaSessionId = mediaSessionId.getMediaSessionId();
   obj[1] = mediaSessionId;
   obj[2] = mediaSessionId.getRTCConnectionId();
-  obj[3] = require(4290) /* BaseConnectionEvent */.MediaEngineContextTypes.DEFAULT;
+  obj[3] = require(4352) /* BaseConnectionEvent */.MediaEngineContextTypes.DEFAULT;
   const videoDevices = store.getVideoDevices();
   const tmp4 = videoDevices[store.getVideoDeviceId(store)];
   let name;
@@ -47,7 +47,7 @@ export const getVoiceChannelErrorContext = function getVoiceChannelErrorContext(
 export const getStreamErrorContext = function getStreamErrorContext(streamKey) {
   let channelId;
   let ownerId;
-  let obj = require(4257) /* isStreamKey */;
+  let obj = require(4319) /* isStreamKey */;
   ({ channelId, ownerId } = obj.decodeStreamKey(streamKey));
   rTCConnection = rTCConnection.getRTCConnection(streamKey);
   obj = { channelId, mediaSessionId: null, rtcConnectionId: null, mediaContext: null, streamKey: null, userId: null };
@@ -61,7 +61,7 @@ export const getStreamErrorContext = function getStreamErrorContext(streamKey) {
     rTCConnectionId = rTCConnection.getRTCConnectionId();
   }
   obj[2] = rTCConnectionId;
-  obj[3] = require(4290) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM;
+  obj[3] = require(4352) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM;
   obj[4] = streamKey;
   obj[5] = ownerId;
   const videoDevices = store.getVideoDevices();

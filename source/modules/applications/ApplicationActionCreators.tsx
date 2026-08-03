@@ -1,10 +1,10 @@
-// Module ID: 5520
-// Function ID: 5521
+// Module ID: 5582
+// Function ID: 5583
 // Name: fetchApplication
-// Dependencies: [5, 5521, 4216, 4230, 676, 709, 530, 589, 2]
+// Dependencies: [5, 5583, 4278, 4292, 676, 709, 530, 589, 2]
 // Exports: useApplicationWithLoggedOutContext
 
-// Module 5520 (fetchApplication)
+// Module 5582 (fetchApplication)
 import dispatcher from "dispatcher";
 import set from "set";
 import createExecutable from "createExecutable";

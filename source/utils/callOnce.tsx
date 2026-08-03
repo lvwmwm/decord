@@ -1,10 +1,10 @@
-// Module ID: 5958
-// Function ID: 5959
+// Module ID: 7037
+// Function ID: 7038
 // Name: callOnce
 // Dependencies: [2]
 // Exports: callOnce
 
-// Module 5958 (callOnce)
+// Module 7037 (callOnce)
 const result = require("set").fileFinishedImporting("utils/callOnce.tsx");
 
 export function callOnce(outer1_1) {

@@ -1,10 +1,10 @@
-// Module ID: 15683
-// Function ID: 15684
+// Module ID: 15748
+// Function ID: 15749
 // Name: getGuildPermissionSpec
 // Dependencies: [505, 1236, 1351, 2]
 // Exports: generateChannelAppsSection, generateChannelEventsSection, generateChannelGeneralSection, generateChannelMembershipSection, generateChannelStageSection, generateChannelStageVoiceSection, generateChannelTextSection, generateChannelVoiceChatSection, generateChannelVoiceSection, generateGuildPermissionSpec, renderDescription
 
-// Module 15683 (getGuildPermissionSpec)
+// Module 15748 (getGuildPermissionSpec)
 import { Permissions } from "sum";
 
 function getGuildPermissionSpec(permissionOptions) {
@@ -686,7 +686,7 @@ export const renderDescription = function renderDescription(str) {
     let trimmed = str.trim();
   } else {
     trimmed = str;
-    if (typeof str !== "disabledUntil") {
+    if (typeof str !== "HAS_APPLICATION") {
       const intl = require(1236) /* getSystemLocale */.intl;
       trimmed = intl.format(str, {});
     }

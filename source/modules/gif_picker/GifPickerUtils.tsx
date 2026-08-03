@@ -1,16 +1,12 @@
-// Module ID: 9615
-// Function ID: 9616
-// Name: getSearchPlaceholder
-// Dependencies: [1236, 2]
-// Exports: filterFavoriteGIFsByQuery, getSearchPlaceholder
+// Module ID: 9763
+// Function ID: 9764
+// Name: filterFavoriteGIFsByQuery
+// Dependencies: [2]
+// Exports: filterFavoriteGIFsByQuery
 
-// Module 9615 (getSearchPlaceholder)
+// Module 9763 (filterFavoriteGIFsByQuery)
 const result = require("set").fileFinishedImporting("modules/gif_picker/GifPickerUtils.tsx");
 
-export const getSearchPlaceholder = function getSearchPlaceholder() {
-  const intl = require(1236) /* getSystemLocale */.intl;
-  return intl.string(require(1236) /* getSystemLocale */.t.T1Frnm);
-};
 export const filterFavoriteGIFsByQuery = function filterFavoriteGIFsByQuery(favorites, first2) {
   if ("" === first2) {
     return favorites;

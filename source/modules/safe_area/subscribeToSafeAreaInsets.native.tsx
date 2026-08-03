@@ -1,10 +1,10 @@
-// Module ID: 10437
-// Function ID: 10438
+// Module ID: 10575
+// Function ID: 10576
 // Name: subscribeToSafeAreaInsets
 // Dependencies: [1477, 1582, 2]
 // Exports: default
 
-// Module 10437 (subscribeToSafeAreaInsets)
+// Module 10575 (subscribeToSafeAreaInsets)
 const result = require("set").fileFinishedImporting("modules/safe_area/subscribeToSafeAreaInsets.native.tsx");
 
 export default function subscribeToSafeAreaInsets(arg0) {

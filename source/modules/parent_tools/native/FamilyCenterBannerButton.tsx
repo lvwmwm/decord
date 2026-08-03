@@ -1,10 +1,10 @@
-// Module ID: 13926
-// Function ID: 13927
+// Module ID: 13993
+// Function ID: 13994
 // Name: FamilyCenterTeenQRCodeButtonInner
-// Dependencies: [19, 17, 1874, 5798, 5799, 676, 4406, 21, 4193, 712, 6258, 3893, 1236, 11124, 647, 13927, 698, 13928, 4161, 13929, 1959, 4602, 4604, 12316, 2225, 13932, 4399, 1467, 11121, 1577, 4736, 13026, 2]
+// Dependencies: [19, 17, 1874, 6893, 6894, 676, 4468, 21, 4255, 712, 7247, 3955, 1236, 11237, 647, 13994, 698, 13995, 4223, 13996, 1959, 4664, 4666, 12414, 2255, 13999, 4461, 1467, 11234, 1577, 4798, 13089, 2]
 // Exports: FamilyCenterParentQRCodeButton, FamilyCenterTeenQRCodeButton
 
-// Module 13926 (FamilyCenterTeenQRCodeButtonInner)
+// Module 13993 (FamilyCenterTeenQRCodeButtonInner)
 import ConnectGuardianBottomSheet from "ConnectGuardianBottomSheet";
 import { View } from "shareGuardianConnectLink";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -134,7 +134,7 @@ export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeB
   function handleQrCodeScanSucess(url) {
     let hostname;
     let pathname;
-    let arr = callback(4399);
+    let arr = callback(4461);
     arr = arr.pop();
     let toURLSafeResult = callback(1467).toURLSafe(url);
     if (toURLSafeResult == null) {
@@ -148,8 +148,8 @@ export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeB
         tmp4 = null;
         if (tmpResult.isDiscordHostname(hostname)) {
           if (null !== pathname.match(closure_8)) {
-            const result = handleQrCodeScanSucess(11121).handleFamilyCenterQRCodeScan(pathname, "FamilyCenterQRCodeScan");
-            const obj4 = handleQrCodeScanSucess(11121);
+            const result = handleQrCodeScanSucess(11234).handleFamilyCenterQRCodeScan(pathname, "FamilyCenterQRCodeScan");
+            const obj4 = handleQrCodeScanSucess(11234);
           }
           tmp4 = tmp6;
         }
@@ -158,13 +158,13 @@ export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeB
     }
     return tmp4;
   }
-  let obj = handleQrCodeScanSucess(6258);
+  let obj = handleQrCodeScanSucess(7247);
   if (obj.useHasMaxConnections()) {
     return null;
   } else {
     obj = { text: null, onPress: null };
     const intl = tmp(1236).intl;
-    obj[0] = intl.string(importDefault(2225).z4a9HP);
+    obj[0] = intl.string(importDefault(2255).z4a9HP);
     obj[1] = function onPress() {
       let obj = outer1_1(outer1_2[16]);
       obj = { action: outer1_9.ScanQRCodeButton };

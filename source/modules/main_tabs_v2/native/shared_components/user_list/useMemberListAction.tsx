@@ -1,10 +1,10 @@
-// Module ID: 10922
-// Function ID: 10923
+// Module ID: 11044
+// Function ID: 11045
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 1372, 3821, 3830, 1874, 8830, 676, 21, 4193, 1348, 647, 8281, 8836, 4044, 10923, 10924, 1236, 10237, 10236, 4009, 1358, 10926, 10931, 9020, 10932, 1844, 8352, 7642, 5224, 2]
+// Dependencies: [32, 19, 17, 1372, 3883, 3892, 1874, 9007, 676, 21, 4255, 1348, 647, 8588, 9013, 4106, 11045, 11046, 1236, 10376, 10375, 4071, 1358, 11048, 11053, 5910, 11054, 1844, 8657, 7768, 5286, 2]
 // Exports: default
 
-// Module 10922 (useMemberListAction)
+// Module 11044 (useMemberListAction)
 import _slicedToArray from "_slicedToArray";
 import registerAsset from "registerAsset";
 import { View } from "ChatPlusIcon";
@@ -21,7 +21,7 @@ let closure_12;
 let unpackModuleId;
 const require = arg1;
 ({ Permissions: c10, AnalyticsSections: unpackModuleId, InstantInviteSources: closure_12 } = ME);
-let closure_14 = { listActionRenderer: "Array", listActionHeight: "HermesInternal" };
+let closure_14 = { listActionRenderer: "Array", listActionHeight: "ct" };
 let closure_15 = createCacheKey.createStyles({ wrapper: { paddingTop: require("PX_24").USERS_LIST_PADDING_BETWEEN_SECTIONS } });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");
 
@@ -67,8 +67,8 @@ export default function useMemberListAction(channel) {
   });
   let canResult = flag3.can(first.MANAGE_ROLES, channel);
   if (canResult) {
-    canResult = channel(8281).isPrivateGuildChannel(channel);
-    const tmp5Result = channel(8281);
+    canResult = channel(8588).isPrivateGuildChannel(channel);
+    const tmp5Result = channel(8588);
   }
   React = canResult;
   let tmp9 = null != channel && !flag;
@@ -100,7 +100,7 @@ export default function useMemberListAction(channel) {
   if (channel != null) {
     id = channel.id;
   }
-  const tmp15 = importDefault(8836)();
+  const tmp15 = importDefault(9013)();
   c9 = tmp15;
   const tmp16 = stateFromStores(React.useState(undefined), 2);
   first = tmp16[0];

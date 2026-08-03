@@ -1,10 +1,10 @@
-// Module ID: 11119
-// Function ID: 11120
+// Module ID: 8321
+// Function ID: 8322
 // Name: disableFalsePositiveButton
 // Dependencies: [709, 2]
 // Exports: disableFalsePositiveButton
 
-// Module 11119 (disableFalsePositiveButton)
+// Module 8321 (disableFalsePositiveButton)
 function disableFalsePositiveButton(channelId, messageId) {
   let obj = importDefault(709);
   obj = { type: "MESSAGE_EXPLICIT_CONTENT_FP_SUBMIT", messageId, channelId };

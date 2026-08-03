@@ -1,9 +1,9 @@
-// Module ID: 10272
-// Function ID: 10273
+// Module ID: 10411
+// Function ID: 10412
 // Name: NativeEventEmitter
 // Dependencies: [17, 2]
 
-// Module 10272 (NativeEventEmitter)
+// Module 10411 (NativeEventEmitter)
 import get_ActivityIndicator from "get ActivityIndicator";
 
 const NativeEventEmitter = get_ActivityIndicator.NativeEventEmitter;

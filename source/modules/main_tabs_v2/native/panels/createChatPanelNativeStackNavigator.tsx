@@ -1,9 +1,9 @@
-// Module ID: 14874
-// Function ID: 14875
+// Module ID: 14941
+// Function ID: 14942
 // Name: navigatorFactory
-// Dependencies: [19, 21, 1481, 4044, 13235, 9118, 2]
+// Dependencies: [19, 21, 1481, 4106, 13298, 9291, 2]
 
-// Module 14874 (navigatorFactory)
+// Module 14941 (navigatorFactory)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import Link from "Link";

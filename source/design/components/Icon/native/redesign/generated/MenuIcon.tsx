@@ -1,10 +1,10 @@
-// Module ID: 14652
-// Function ID: 14653
+// Module ID: 14719
+// Function ID: 14720
 // Name: MenuIcon
-// Dependencies: [19, 21, 712, 3896, 14653, 2]
+// Dependencies: [19, 21, 712, 3958, 14720, 2]
 // Exports: MenuIcon
 
-// Module 14652 (MenuIcon)
+// Module 14719 (MenuIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const MenuIcon = function MenuIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14653) /* registerAsset */;
+  obj[0] = require(14720) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3896) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };
